@@ -39,12 +39,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 7e46e2253c5664fff9cf456250d375993a0a0c9a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 70f047fa84513821812a13f7dee3136d2d431d9a
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150634"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240239"
 ---
 # <a name="how-to-use-native-run-time-checks"></a>如何：使用本机运行时检查
 在 Visual Studio C++ 项目中，可以使用本机 [runtime_checks](/cpp/preprocessor/runtime-checks) 捕获常见的运行时错误，例如：
@@ -68,8 +68,6 @@ ms.locfileid: "98150634"
   本节的其他主题提供了有关以下方面的信息：
 
 - [用 C 运行库自定义运行时检查](../debugger/native-run-time-checks-customization.md)
-
-- [使用无 C 运行库的运行时检查](../debugger/using-run-time-checks-without-the-c-run-time-library.md)
 
 ### <a name="to-enable-native-run-time-checks-in-a-debug-build"></a>在调试版本中启用本机运行时检查
 

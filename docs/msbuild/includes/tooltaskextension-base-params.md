@@ -3,12 +3,12 @@ author: ghogen
 ms.author: ghogen
 ms.topic: include
 ms.date: 4/23/2020
-ms.openlocfilehash: 6fd0fc6fd4f2e54c0d15f649139b649797f8336f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d7d4027c53f599b4a17d267d5ebf72eee1ed296b
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89042934"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98535298"
 ---
 ### <a name="tooltaskextension-parameters"></a>ToolTaskExtension 参数
 
@@ -21,7 +21,6 @@ ms.locfileid: "89042934"
 | <xref:Microsoft.Build.Utilities.ToolTask.EchoOff%2A> | 可选 `bool` 参数。<br /><br /> 设置为 `true` 时，此任务会将 /Q  传递到 cmd.exe  命令行，以便命令行不会复制到 stdout。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.EnvironmentVariables%2A> | 可选的 `String` 数组参数。<br /><br /> 环境变量定义的数组，用分号分隔。 每个定义都应指定用等号分隔的环境变量名称和值。 这些变量会传递到生成的可执行文件以及（有选择地重写）常规环境块。 例如，`Variable1=Value1;Variable2=Value2`。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.ExitCode%2A> | 可选 `Int32` 输出只读参数。<br /><br /> 指定执行的命令提供的退出代码。 如果任务记录了任何错误，但进程的退出代码为 0（成功），则这设置为 -1。 |
-| <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 选项 `bool` 参数。<br /><br /> 如果是 `true`，则在标准错误流上收到的所有消息都记录为错误。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.LogStandardErrorAsError%2A> | 可选 `bool` 参数。<br /><br /> 如果是 `true`，则在标准错误流上收到的所有消息都记录为错误。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardErrorImportance%2A> | 可选 `String` 参数。<br /><br /> 用于从标准输出流记录文本的重要性。 |
 | <xref:Microsoft.Build.Utilities.ToolTask.StandardOutputImportance%2A> | 可选 `String` 参数。<br /><br /> 用于从标准输出流记录文本的重要性。 |

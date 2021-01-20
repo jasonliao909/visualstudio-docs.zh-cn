@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 208bb463b99fd8835329e86a88d20aabb94a544d
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 548116fc3c9b360a866f14e32074111dfdc872d9
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796805"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533870"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -141,3 +141,4 @@ ms.locfileid: "92796805"
 - [常用的 MSBuild 项目项](../msbuild/common-msbuild-project-items.md)
 - [通用 MSBuild 项元数据](common-msbuild-item-metadata.md)
 - [MSBuild 保留属性和已知属性](msbuild-reserved-and-well-known-properties.md)
+- [.NET SDK 项目的 MSBuild 引用](/dotnet/core/project-sdk/msbuild-props)
