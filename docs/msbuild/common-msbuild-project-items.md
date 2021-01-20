@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 638f67575a7214047cdb917c994179ac144e60b2
-ms.sourcegitcommit: 49c959911128a733ed2858db7c0e3b565f934b1a
+ms.openlocfilehash: ea072cf3e9a236fdc6a4ad66b1c0cf7ddcda1550
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93238618"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533440"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 
@@ -189,5 +189,4 @@ ms.locfileid: "93238618"
 ## <a name="see-also"></a>请参阅
 
 - [常用的 MSBuild 项目属性](../msbuild/common-msbuild-project-properties.md)
-- [.NET Core SDK 项目的 MSBuild 属性](/dotnet/core/project-sdk/msbuild-props)
 - [通用 MSBuild 项元数据](common-msbuild-item-metadata.md)
