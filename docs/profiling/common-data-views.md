@@ -1,5 +1,7 @@
 ---
 title: 公共数据视图 | Microsoft Docs
+description: 查看本部分，获取各种分析方法公用的探查器数据文件的视图和报表的相关参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 39af1975dc3bcb0f5df729579ca1af38fa60160f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 69f68bec998108869676946e2995e45b2f662169
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777824"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533532"
 ---
 # <a name="common-data-views"></a>公共数据视图
 本部分包含有关所有分析方法公用的探查器数据文件的视图和报告的有关参考信息。

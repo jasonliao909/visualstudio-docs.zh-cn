@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 独立应用的计时数据详细信息
+description: 了解如何从命令行使用检测方法收集独立组件的详细性能数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f088a0da0e8525189e4e2addf1464b30e1e98d06
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d93673080acd36f4195fb9b19382c9f0152f51f5
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331824"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533831"
 ---
 # <a name="collect-detailed-timing-data-for-a-stand-alone-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的详细计时数据
 本部分介绍从命令行使用检测方法收集客户端（独立）组件的详细性能数据的步骤和选项。

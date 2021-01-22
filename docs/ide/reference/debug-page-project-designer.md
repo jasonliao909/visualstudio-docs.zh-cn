@@ -1,5 +1,7 @@
 ---
 title: “项目设计器”->“调试”页
+description: 使用项目设计器的“调试”页面在 Visual Basic 或 C# 项目中设置调试属性。 有关设置的说明，请参阅此文。
+ms.custom: SEO-VS-2020
 ms.date: 06/27/2018
 ms.technology: vs-ide-debug
 ms.topic: reference
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 406b3ecdc0e4e3f0d45c22fc9201bd37c6031152
-ms.sourcegitcommit: 9e15138a34532b222e80f6b42b1a9de7b2fe0175
+ms.openlocfilehash: 8567b762e9858205e3ca8d6aafa8a3dba17a90fe
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2020
-ms.locfileid: "85418738"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205770"
 ---
 # <a name="debug-page-project-designer"></a>“项目设计器”->“调试”页
 

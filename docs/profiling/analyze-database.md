@@ -1,5 +1,7 @@
 ---
 title: 分析 .NET Core 项目的数据库使用情况 | Microsoft Docs
+description: 使用数据库工具记录应用的数据库查询，然后分析这些查询来找到提高性能的方法。
+ms.custom: SEO-VS-2020
 ms.date: 5/5/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0aeb2341d905be8f34d47c477f35861b8575dc69
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352311"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205458"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用数据库工具分析数据库性能
 
@@ -38,7 +40,7 @@ ms.locfileid: "91352311"
 
 1. 选择“开始”按钮以运行该工具。
 
-1. 该工具开始运行后，请完成要在应用中分析的方案。 然后选择“停止收集”或关闭应用以查看数据。
+1. 在此工具开始运行后，在应用中完成要探查的方案。 然后选择“停止收集”或关闭应用以查看数据。
 
 1. 收集停止后，会看到一个表，其中显示了在分析会话期间运行的查询。
 

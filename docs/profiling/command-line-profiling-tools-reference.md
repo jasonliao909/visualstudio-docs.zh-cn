@@ -1,5 +1,7 @@
 ---
 title: 命令行分析工具参考 | Microsoft Docs
+description: 程序员可使用命令行性能工具在命令提示符处分析应用程序。 查看工具概述，其中有指向详细信息的链接。
+ms.custom: SEO-VS-2020.
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: a34ba40e-01b1-4386-90b1-c8e628a8c527
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 65eabb7a95afa04542bc4f2202b71ccc5aa71648
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2c0bffb825b06b6fd807f08542e2c591aa87ad07
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772748"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533506"
 ---
 # <a name="command-line-profiling-tools-reference"></a>命令行分析工具参考
 程序员通过命令行性能工具可在命令提示符处分析应用程序。 通过以下命令行分析工具可在命令提示符处分析代码。

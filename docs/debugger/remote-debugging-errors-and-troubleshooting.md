@@ -1,5 +1,7 @@
 ---
 title: 远程调试错误和疑难解答 | Microsoft Docs
+description: 查看 Visual Studio 中指向常见远程调试错误的链接。 了解如何以管理员身份运行远程调试器。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -20,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b413ce193e6761d515de5bc5ef30fae8e18a3a3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0260f939c8f6b7e5bed77ec42a4720adf0a4c720
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89316132"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205653"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>远程调试错误和疑难解答
 

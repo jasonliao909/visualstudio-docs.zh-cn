@@ -9,12 +9,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e6433d665157c186a390e2963ef7ad1447b2f982
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9a5fbd9f396dfe0ed92c0590712f9fddb84c27a0
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329973"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240304"
 ---
 # <a name="install-unit-test-frameworks"></a>安装单元测试框架
 
@@ -23,7 +23,7 @@ Visual Studio 测试资源管理器可从任何针对该资源管理器开发了
 Visual Studio 解决方案可以包含使用不同框架和面向不同语言的单元测试项目。
 
 ::: moniker range=">=vs-2019"
-对于 .NET，[MSTest、NUnit 和 xUnit](getting-started-with-unit-testing.md) 是 Visual Studio 提供的默认安装的测试框架。
+对于 .NET，[MSTest、NUnit 和 xUnit](getting-started-with-unit-testing.md) 是 Visual Studio 提供的默认安装的测试框架。 对于 C++，提供了一组不同的测试框架，例如 CTest。
 ::: moniker-end
 ::: moniker range="vs-2017"
 [MSTest](getting-started-with-unit-testing.md) 是 Visual Studio 提供的测试框架并默认安装。

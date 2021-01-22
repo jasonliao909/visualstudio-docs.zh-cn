@@ -1,5 +1,7 @@
 ---
 title: CommentMarkAtProfile | Microsoft Docs
+description: 使用 CommentMarkAtProfile 方法将时间戳值、数值标记和注释字符串插入到 .vsp 文件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ee9eb5353109bcf5df6903e7e607a11b8bfd0536
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 43e8f9806c724da414940c92b6609846486a49c0
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545608"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533519"
 ---
 # <a name="commentmarkatprofile"></a>CommentMarkAtProfile
 `CommentMarkAtProfile` 方法在 .vsp 文件中插入时间戳值、数值标记和注释字符串。 时间戳值可用于同步外部事件。 为了插入标记和注释，对包含 CommentMarkAtProfile 函数的线程进行的分析必须为 ON（启用状态）。
@@ -25,7 +27,7 @@ ms.locfileid: "85545608"
 ## <a name="syntax"></a>语法
 
 ```cpp
-PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
+PROFILE_COMMAND_STATUS PROFILERAPI CommentMarkAtProfile (
                                    __int64 dnTimestamp,
                                    long lMarker,
                                    LPCTSTR szComment);

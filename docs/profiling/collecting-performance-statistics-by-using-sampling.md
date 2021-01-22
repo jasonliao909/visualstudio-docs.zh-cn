@@ -1,5 +1,6 @@
 ---
 title: 使用采样收集性能统计信息
+description: 使用分析工具采样方法查找处理器利用率问题。 这是启动大多数性能调查的建议方法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9729bf46b58a9591df7b6470acde0c54ef23f531
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e5a58ec02fa6bff0dd06ce08b933a381bca37a80
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810726"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533727"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>通过采样收集性能统计信息
 
@@ -45,7 +46,7 @@ ms.locfileid: "90810726"
 |在“常规”  页上，添加 .NET 内存分配和生存时间数据集合，并为生成的分析数据 (.vsp) 文件指定命名详细信息。|- [收集 .NET 内存分配数据和生存期数据](../profiling/collecting-dotnet-memory-allocation-and-lifetime-data.md)<br />- [如何：设置性能数据文件名选项](../profiling/how-to-set-performance-data-file-name-options.md)|
 |在“采样”  页上，更改抽样率、将采样事件从处理器时钟周期更改为另一个处理器性能计数器，或同时进行两项更改...|- [如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)|
 |在“启动”  页上，如果代码解决方案中具有多个 .exe 项目，请指定要启动的应用程序及其启动顺序。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
-|在“层交互”  页上，将 ADO.NET 调用信息添加到分析运行期间收集的数据中。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
+|在“层交互”页面上，将 ADO.NET 调用信息添加到分析运行期间收集的数据中。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
 |在“Windows 事件”  页上，指定一个或多个与采样数据一同收集的“Windows 事件跟踪 (ETW)”事件。|- [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |在“Windows 计数器”  页上，指定要作为标记添加到分析数据的一个或多个操作系统性能计数器。|- [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)|
-|如果应用程序模块使用多个版本，请在**高级**页上指定要分析的 .NET Framework 运行时的版本。 默认情况下会分析加载的第一个版本。|- [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|如果应用程序模块使用多个版本，请在 **高级** 页上指定要分析的 .NET Framework 运行时的版本。 默认情况下会分析加载的第一个版本。|- [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|

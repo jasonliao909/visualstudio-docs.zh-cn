@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 98d58b745b35870d287b6e81aa0a14fcdaeac921
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 0dc266b43d9a4634fe8cfbc05a3a070ae72cdaa9
+ms.sourcegitcommit: 1ceb58e3a1afa80a3211911ada4e5adaa1b1d439
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598518"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192858"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -44,7 +44,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 |**/InIsolation**|在隔离的进程中运行测试。<br />这种隔离使 vstest.console.exe 进程不太可能在测试出错时停止，但测试的运行速度可能较慢。|
 |**/UseVsixExtensions**|此选项使 vstest.console.exe 进程使用或跳过在测试运行中安装的 VSIX 扩展（如果有）。<br />此选项已弃用。 从 Visual Studio 的下一个主版本开始，此选项可能会删除。 转为作为 NuGet 包提供的使用扩展。<br />示例：`/UseVsixExtensions:true`|
 |**/TestAdapterPath:[路径]**|强制 vstest.console.exe 进程使用测试运行中指定路径（如果有）内的自定义测试适配器。<br />示例：`/TestAdapterPath:[pathToCustomAdapters]`|
-|**/Platform:[平台类型]**|将用来执行测试的目标平台体系结构。<br />有效值为 x86、x64 和 ARM。|
+|**/Platform:[平台类型]**|强制使用给定的平台，而不是根据当前运行时确定的平台。 在 Windows 上，此选项强制只能使用 x86 和 x64 平台。 ARM 选项会中断，并将导致大多数系统上使用 x64。<br />若要在有效值（例如 ARM64）的列表中未列出的运行时上运行，请勿指定此选项。<br />有效值为 x86、x64 和 ARM。<br /> 
 |**/Framework: [Framework 版本]**|要用于执行测试的目标 .NET 版本。<br />示例值有 `Framework35`、`Framework40`、`Framework45`、`FrameworkUap10`、`.NETCoreApp,Version=v1.1`。<br />TargetFrameworkAttribute 用于从程序集中自动检测此选项，并在属性不存在时默认为 `Framework40`。 如果从 .NET Core 程序集删除 [TargetFrameworkAttribute](/dotnet/api/system.runtime.versioning.targetframeworkattribute)，则必须显式指定此选项。<br />如果将目标框架指定为 Framework35，则测试在 CLR 4.0“兼容模式”下运行。<br />示例：`/Framework:framework40`|
 |**/TestCaseFilter:[表达式]**|运行与给定表达式匹配的测试。<br /><Expression\> 的格式为 <property\>=<value\>[\|<Expression\>]。<br />示例：`/TestCaseFilter:"Priority=1"`<br />示例：`/TestCaseFilter:"TestCategory=Nightly|FullyQualifiedName=Namespace.ClassName.MethodName"`<br />/TestCaseFilter 命令行选项不能与 /Tests 命令行选项一起使用 。 <br />有关创建和使用表达式的信息，请参阅 [TestCase 筛选](https://github.com/Microsoft/vstest-docs/blob/master/docs/filter.md)。|
 |**/?**|显示使用情况信息。|

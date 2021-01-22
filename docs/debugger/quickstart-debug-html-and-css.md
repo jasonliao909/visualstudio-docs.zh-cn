@@ -1,5 +1,7 @@
 ---
 title: 调试 UWP 应用中的 HTML 和 CSS | Microsoft Docs
+description: 了解如何在 Visual Studio 中调试通用 Windows 平台 (UWP) 应用中的 HTML 和 CSS。 UWP 应用支持 JavaScript 调试功能。
+ms.custom: SEO-VS-2020
 ms.date: 07/17/2018
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +19,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 5e270956fc6c8f1d7432cb65e1eaf37fdc58907c
-ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+ms.openlocfilehash: fafab7a2cbf660987de0365549aaa823a4e3445d
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2020
-ms.locfileid: "91211084"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205471"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中调试 UWP 应用中的 HTML 和 CSS
 

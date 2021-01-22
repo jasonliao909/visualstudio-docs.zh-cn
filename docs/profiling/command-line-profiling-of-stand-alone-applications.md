@@ -1,5 +1,7 @@
 ---
 title: 从命令行分析独立应用程序 | Microsoft Docs
+description: 了解如何从命令行使用分析工具收集客户端（独立）应用程序的性能数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f80f3e65969973202af08299b07ebfa420f3bd2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 876c2a72f0929cffa3613026fa56a17d82786854
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "77557851"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533636"
 ---
 # <a name="command-line-profiling-of-stand-alone-applications"></a>通过命令行分析独立应用程序
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集独立（客户端）应用程序的性能数据的步骤和选项。

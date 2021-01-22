@@ -1,5 +1,6 @@
 ---
 title: 收集 .NET 内存分配和生存期数据
+description: 为帮助检测 .NET 应用程序中与内存相关的性能问题，请使用分析工具收集内存分配和对象生存期数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1354fb95b543e73a67d19204871f3b79aec9ece9
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: a9321ce83f65d5a7cac95d793d5f635651bef0e7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809422"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533792"
 ---
 # <a name="collect-net-framework-memory-allocation-and-lifetime-data"></a>收集 .NET Framework 内存分配和生存期数据
 
@@ -66,7 +67,7 @@ Visual Studio 分析工具支持收集 .NET Framework 内存分配和对象生�
 |在“层交互”  页上，将 ADO.NET 调用数据添加到分析运行中。|- [收集层交互数据](../profiling/collecting-tier-interaction-data.md)|
 |在“Windows 事件”  页上，指定一个或多个与采样数据一同收集的“Windows 事件跟踪 (ETW)”事件。|- [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)|
 |在“Windows 计数器”  页上，指定要作为标记添加到分析数据的一个或多个操作系统性能计数器。|- [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)|
-|如果应用程序模块使用多个版本，请在**高级**页上指定要分析的 .NET Framework 运行时的版本。 默认情况下会分析加载的第一个版本。|- [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
+|如果应用程序模块使用多个版本，请在 **高级** 页上指定要分析的 .NET Framework 运行时的版本。 默认情况下会分析加载的第一个版本。|- [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)|
 
 ## <a name="instrumentation-tasks"></a>检测任务
 

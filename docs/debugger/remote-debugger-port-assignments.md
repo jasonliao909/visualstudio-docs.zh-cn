@@ -1,6 +1,7 @@
 ---
 title: 远程调试器端口分配 | Microsoft Docs
-ms.custom: ''
+description: 了解 32 位操作系统、64 位操作系统和 Azure 上的 Visual Studio 远程调试程序端口分配情况。 了解发现端口。
+ms.custom: SEO-VS-2020
 ms.date: 05/18/2018
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
@@ -9,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fcd0159e5bd315009c1c468dc7a19b5ba5a9c61
-ms.sourcegitcommit: d97d72308ef306e7f28c3a76913caee4ff450bbb
+ms.openlocfilehash: 40081f276dc9649cf448bf00e80d11fc80f58f47
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/17/2020
-ms.locfileid: "90713498"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204821"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：

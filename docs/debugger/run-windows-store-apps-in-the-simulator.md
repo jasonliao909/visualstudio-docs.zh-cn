@@ -1,5 +1,7 @@
 ---
 title: 在模拟器中运行 UWP 应用 | Microsoft Docs
+description: 了解如何在 Visual Studio 模拟器中运行通用 Windows 平台 (UWP) 应用，其中该模拟器是一款用于模拟 UWP 应用的桌面应用程序。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -13,12 +15,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - uwp
-ms.openlocfilehash: 9b46abc4d22ddfdc551669d3bcd4cba5acf7cce4
-ms.sourcegitcommit: ed4372bb6f4ae64f1fd712b2b253bf91d9ff96bf
+ms.openlocfilehash: 12d2fed62e1a4762c9b92304ff1acfe8374ab976
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2020
-ms.locfileid: "89599521"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205627"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 
@@ -96,7 +98,7 @@ Visual Studio 的 UWP 应用模拟器并非运行在本地计算机上的某个�
 ## <a name="change-the-simulated-screen-size-and-resolution"></a><a name="BKMK_Change_the_simulated_screen_size_and_resolution"></a> 更改模拟屏幕的大小和分辨率
  若要更改模拟屏幕的大小和分辨率，请选择调色板上的  “更改分辨率”按钮，然后从列表中选择新的大小和分辨率。
 
- 屏幕的大小和分辨率以 *屏幕宽度（以英寸为单位）、像素宽度 X 像素高度*形式列出。 注意，同时模拟屏幕大小和分辨率。 模拟器上的位置坐标将转换为所选设备大小和分辨率。
+ 屏幕的大小和分辨率以 *屏幕宽度（以英寸为单位）、像素宽度 X 像素高度* 形式列出。 注意，同时模拟屏幕大小和分辨率。 模拟器上的位置坐标将转换为所选设备大小和分辨率。
 
 > [!NOTE]
 > 可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参阅[设计和 UI 简介](/windows/uwp/layout/design-and-ui-intro)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。
@@ -135,7 +137,7 @@ Visual Studio 的 UWP 应用模拟器并非运行在本地计算机上的某个�
 
 6. 从  “漫游状态”列表中，设置 [Roaming](/uwp/api/windows.networking.connectivity.connectioncost) 属性。
 
-7. 选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 事件和 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 类型的后台 **SystemTrigger**来模拟网络属性。
+7. 选择“设置属性”  ，通过触发前台 [NetworkStatusChanged](/uwp/api/windows.networking.connectivity.networkinformation) 事件和 [NetworkStateChange](/uwp/api/windows.applicationmodel.background.systemtrigger) 类型的后台 **SystemTrigger** 来模拟网络属性。
 
 有关管理网络连接的详细信息，请参阅：
 

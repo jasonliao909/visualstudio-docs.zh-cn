@@ -1,5 +1,7 @@
 ---
 title: 服务的命令行分析 | Microsoft Docs
+description: 了解如何从命令行使用分析工具收集 Windows 服务的性能数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b20835eaf8b81bd64bd90aa75d2efb32975a7c53
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f05ca0a11060e2a9009b38b0caf7ce9172773f36
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772826"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533649"
 ---
 # <a name="command-line-profiling-of-services"></a>通过命令行分析服务
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 Windows 服务的性能数据的步骤和选项。

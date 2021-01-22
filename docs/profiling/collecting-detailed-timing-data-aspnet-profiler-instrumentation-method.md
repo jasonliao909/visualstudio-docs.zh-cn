@@ -1,5 +1,6 @@
 ---
 title: 使用检测收集 ASP.NET 的计时数据
+description: 了解如何使用 VSPerfCmd 收集 ASP.NET Web 应用程序的详细性能数据。 它提供对分析工具功能的完全访问。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: a73d81eaaef45a9ae97e733a8ae94805106a9ef8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1001e10d80b39df5072a6524f445c97418aa603b
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809630"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205744"
 ---
 # <a name="collect-detailed-timing-data-for-an-aspnet-web-application-using-the-profiler-instrumentation-method-from-the-command-line"></a>使用探查器检测方法通过命令行收集 ASP.NET Web 应用程序的详细计时数据
 本部分介绍通过 VSPerfCmd 命令行工具和检测方法来收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序的详细性能数据的步骤和选项。

@@ -1,5 +1,7 @@
 ---
 title: Spy++ 视图的搜索工具 | Microsoft Docs
+description: 查看指定“Spy++ 视图”窗口将显示的具体数据的对话框。 对话框包括“查找窗口”、“窗口搜索”、“消息搜索”、“进程搜索”和“线程搜索”。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7df3b27164eab0b78cdce72a8f938cb6e9743bcf
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 1e302e9d5e9cc90a03afa5b7f0f6cc6e800287c7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62902643"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204841"
 ---
 # <a name="search-tools-for-spy-views"></a>Spy++ 视图的搜索工具
 使用以下对话框指定 Spy++ 视图窗口将显示哪些数据：

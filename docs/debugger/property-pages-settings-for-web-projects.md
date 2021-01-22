@@ -1,6 +1,7 @@
 ---
 title: Web 项目的属性设置 | Microsoft Docs
-ms.custom: seodec18
+description: 了解如何在 Visual Studio 的“属性页”对话框中更改网站调试配置的属性设置。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: reference
 dev_langs:
@@ -21,12 +22,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b7daa58004b118d46a8248428e9a9d242dfccef8
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 86f15a6fa622bf7938740111705a295e09f3e443
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72730600"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205549"
 ---
 # <a name="property-pages-settings-for-web-projects"></a>Web 项目的属性页设置
 如[调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)中所述，可以在“属性页”对话框中更改网站调试配置的属性设置。 下表显示“属性页”对话框中与调试器有关的设置的位置。

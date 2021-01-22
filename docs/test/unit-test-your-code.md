@@ -13,12 +13,12 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: ba3db5b74a415d3736c37f54fdb708fde3436d92
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: dc82d72d7c0a333fc28146746a473ed359857490
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756586"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240278"
 ---
 # <a name="unit-test-tools-and-tasks"></a>单元测试工具和任务
 
@@ -36,7 +36,7 @@ ms.locfileid: "97756586"
 
 * **Microsoft Fakes 隔离框架** &mdash; Microsoft Fakes 隔离框架可以为创建所测试代码中的依赖关系的产品和系统 .NET 代码创建替代类和方法。 通过实施函数的假委托，可以控制依赖对象的行为和输出。
 
-还可以使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 浏览 .NET 代码，以生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。
+对于 .NET，还可使用 [IntelliTest](../test/generate-unit-tests-for-your-code-with-intellitest.md) 浏览代码并生成测试数据和单元测试套件。 对于代码中的每个语句，将生成执行该语句的测试输入。 为代码中的每个条件分支执行案例分析。
 
 ## <a name="key-tasks"></a>关键任务
 

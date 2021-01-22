@@ -13,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b51504d029c1e723321c8c92df28a2ecad1fd1a
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150907"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98204795"
 ---
 # <a name="callercallee-view----contention-data"></a>“调用方/被调用方”视图 - 争用数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的争用信息。 “调用方/被调用方”视图包含三个网格。

@@ -1,5 +1,7 @@
 ---
 title: 分析 UWP 应用中的能量使用 | Microsoft Docs
+description: 使用 Visual Studio 能耗探查器分析在电池供电的设备上运行的 UWP 应用的能量和电量需求。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -14,12 +16,12 @@ manager: jillfra
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: 2945ef9879e83567f37ebe410ba9f265bfd64760
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: cf55035ba5a05917334b2192067a3273f4930775
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075452"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205783"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 
@@ -34,7 +36,7 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 >
 > 虽然该模型可提供多种低功率设备的合理估计值，但你分析的设备的实际值可能不同。 使用这些值来查找相对于其他资源使用消耗能量多的显示器、CPU 和网络活动，因此这些活动可能是最适合优化的部分。
 
-“能量消耗”探查器使用下面 *功率* 和 *能量*的定义：
+“能量消耗”探查器使用下面 *功率* 和 *能量* 的定义：
 
 - 功率 用于衡量一段时间内做功而用力的速率。 在电力学中，功率的标准单位是瓦特 ，其定义为一安培电流流经一伏特的电位差时做功的速率。 在“电源使用”  关系图中，单位显示为毫瓦“mW”  ，这是一瓦的千分之一。
 
@@ -126,7 +128,7 @@ if (performance && performance.mark) {
 
 |图像|描述|
 |-|-|
-|![步骤 1](../profiling/media/procguid_1.png "ProcGuid_1")|报告文件名为 Report*YYYYMMDD-HHMM*.diagsession。 如果你决定保存此报告，可以更改此名称。|
+|![步骤 1](../profiling/media/procguid_1.png "ProcGuid_1")|报告文件名为 Report *YYYYMMDD-HHMM*.diagsession。 如果你决定保存此报告，可以更改此名称。|
 |![步骤 2](../profiling/media/procguid_2.png "ProcGuid_2")|时间线显示分析会话的长度、应用程序生命周期激活事件以及用户标记。|
 |![步骤 3](../profiling/media/procguid_3.png "ProcGuid_3")|你可以通过拖动蓝色条选择时间线的一个区域，将报告限制到这一部分时间线内。|
 |![步骤 4](../profiling/media/procguid_4.png "ProcGuid_4")|**“电源使用”** 图是一个多线图，显示分析会话期间由设备资源导致的功率输出的变化。 “能量消耗”探查器可跟踪 CPU、网络活动和屏幕显示所使用的功率。|

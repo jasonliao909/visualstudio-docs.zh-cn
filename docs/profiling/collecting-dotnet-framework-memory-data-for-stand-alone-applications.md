@@ -1,5 +1,6 @@
 ---
 title: 探查器命令行 - 获取 .NET 内存数据
+description: 了解如何从命令行使用采样方法收集独立 .NET 客户端的内存分配和对象生存期数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2d8c6b588552c2a4b4a93c2dbdbeb998eb94d7af
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f21974ad59951290123a3a89f68b6f326a6e2057
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90810739"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533805"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用探查器命令行收集 .NET Framework 内存数据
 
@@ -50,5 +51,5 @@ ms.locfileid: "90810739"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>分析 .NET 内存数据视图和报告
 - [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 - [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)

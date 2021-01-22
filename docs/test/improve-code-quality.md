@@ -12,19 +12,19 @@ manager: jillfra
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0029321ddfc3ff12bb9c40dac9de64a9eb067a95
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: cc5a1a7b72dcbdba8b874958bbef47ac4b98e936
+ms.sourcegitcommit: 993fca11dc373a10150751bc2a045a9701a9db2f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756638"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98240317"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 
 Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的代码卓越性。
 
 > [!NOTE]
-> Visual Studio 的所有版本均提供单元测试。 其他测试工具（如 Live Unit Testing、IntelliTest 和编码的 UI 测试）仅在 Visual Studio Enterprise 版中提供。 有关版本的详细信息，请参阅[比较 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
+> Visual Studio 的所有版本均提供单元测试。 其他测试工具（例如 Live Unit Testing 和 IntelliTest）仅可在 Visual Studio Enterprise 版本中可用。 有关版本的详细信息，请参阅[比较 Visual Studio IDE](https://visualstudio.microsoft.com/vs/compare/)。
 
 ## <a name="test-explorer"></a>测试资源管理器
 
