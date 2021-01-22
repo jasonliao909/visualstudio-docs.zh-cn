@@ -1,5 +1,6 @@
 ---
 title: 探查器命令行 - 获取 ASP.NET Web 应用内存数据
+description: 了解如何使用 VSPerfCmd 命令行工具收集 ASP.NET Web 应用程序的内存分配和对象生存期数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,18 +14,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 690b3cd03d245281b488f2bb2b77ebdebedd00c2
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: b2cb0e199e543152b9d11da4b4de014c9465c1b7
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809409"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533766"
 ---
 # <a name="collect-memory-data-from-an-aspnet-web-application-by-using-the-profiler-command-line"></a>使用探查器命令行收集 ASP.NET Web 应用程序的内存数据
-本部分介绍使用 VSPerfCmd  命令行工具收集 ASP.NET Web 应用程序的内存分配数据和对象生存期数据的过程和选项。
+本部分介绍使用 VSPerfCmd 命令行工具收集 ASP.NET Web 应用程序的内存分配和对象生存期数据的过程和选项。
 
 > [!NOTE]
-> 使用 VSPerfCmd  工具可完全访问分析工具功能，包括暂停和继续分析，以及从处理器和 Windows 性能计数器收集其他数据。 如果不需要此功能，也可以使用 VSPerfASPNETCmd  命令行工具。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，无需设置任何环境变量，也不需要重启计算机。 有关详细信息，请参阅[使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
+> 使用 VSPerfCmd 工具可完全访问分析工具功能，包括暂停和继续分析，以及从处理器和 Windows 性能计数器收集其他数据。 如果不需要此功能，也可以使用 VSPerfASPNETCmd  命令行工具。 与 [VSPerfCmd](../profiling/vsperfcmd.md) 命令行工具相比，无需设置任何环境变量，也不需要重启计算机。 有关详细信息，请参阅[使用 VSPerfASPNETCmd 进行快速网站分析](../profiling/rapid-web-site-profiling-with-vsperfaspnetcmd.md)。
 
 ## <a name="common-tasks"></a>常见任务
 
@@ -54,5 +55,5 @@ ms.locfileid: "90809409"
 ### <a name="analyze-net-memory-data-views-and-reports"></a>分析 .NET 内存数据视图和报告
 - [.NET 内存数据视图](../profiling/dotnet-memory-data-views.md)
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 - [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)

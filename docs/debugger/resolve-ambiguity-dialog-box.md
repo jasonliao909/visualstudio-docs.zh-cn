@@ -1,5 +1,7 @@
 ---
 title: “解析多义性”对话框 | Microsoft Docs
+description: 查看 Visual Studio 的“解析多义性”对话框，该框在调试器无法选择要显示的位置时出现。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -19,12 +21,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 4257fd213d6401de381e25c74c126b8468b76057
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: c6f7156a43bc8c5c60415680b4380600e9e695cc
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729844"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205601"
 ---
 # <a name="resolve-ambiguity-dialog-box"></a>“解析多义性”对话框
 当调试器无法选择要显示的位置时，将显示 `Resolve Ambiguity` 对话框。 例如，如果正在使用 C++ 模板，则可以从一个函数模板中创建多个函数。 如果调试器在模板的源位置停止，并且选择了 `Go To Disassembly`，则调试器会有多个选项。 从模板创建的每个函数都有它自己的反汇编代码，而调试器不知道需要查看哪些代码。 利用 `Resolve Ambiguity` 对话框，您可以从所有对应位置的列表中选择所需的位置。

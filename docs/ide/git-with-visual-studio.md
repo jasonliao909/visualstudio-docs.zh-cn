@@ -2,18 +2,18 @@
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 11/16/2020
+ms.date: 01/15/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 7eed02ffda47de9c6a788d186d41dcc087852e64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524082"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597414"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -92,7 +92,7 @@ Visual Studio 将根据你在解决方案资源管理器中加载的视图文件
 
 准备暂存更改时，请单击要暂存的每个文件上的“+”（加号）按钮，或右键单击文件，然后选择“暂存” 。 还可以使用“更改”部分顶部的暂存全部 +（加号）按钮，一键暂存所有已修改的文件 。
 
-暂存更改时，Visual Studio 将创建“已暂存的更改”部分。 只有“已暂存的更改”部分的更改会添加到下一次提交中，可以通过选择“提交暂存内容”来执行此操作 。 还可以通过单击“–”（减号）按钮来取消暂存更改。 此操作的等效命令是 `git commit -m "Your commit message"`。
+暂存更改时，Visual Studio 将创建“已暂存的更改”部分。 只有“已暂存的更改”部分的更改会添加到下一次提交中，可以通过选择“提交暂存内容”来执行此操作 。 此操作的等效命令是 `git commit -m "Your commit message"`。 还可单击“–”（减号）按钮来取消暂存更改。 此操作的等效命令是 `git reset <file_path>`（用于取消暂存一个文件）或 `git reset <directory_path>`（用于取消暂存目录中的所有文件）。
 
 也可以通过跳过暂存区域来选择不暂存已修改的文件。 在这种情况下，Visual Studio 允许直接提交更改，而无需暂存更改。 只需输入提交消息，然后选择“全部提交”。 此操作的等效命令是 `git commit -a`。
 

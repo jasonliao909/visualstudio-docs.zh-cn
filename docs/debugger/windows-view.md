@@ -1,5 +1,7 @@
 ---
 title: 窗口视图 | Microsoft Docs
+description: 窗口视图显示了由所有窗口和控件构成的树。 以它为起点，可获得感兴趣的窗口的相关信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fef652cbaa83fde61f098fb8fcef9558473fe19a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 717c0f18d5443f712151a2f8318c56a8e738f6d7
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "62900849"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205367"
 ---
 # <a name="windows-view"></a>窗口视图
 首次打开 Spy++ 时，窗口视图将显示系统中所有窗口和控件的树。 显示窗口句柄和类名称。 当前桌面窗口位于树的顶部。 所有其他窗口均为桌面的子级，并且根据标准窗口层次结构列出。 同级窗口显示在其父项下缩进的可扩展列表中。

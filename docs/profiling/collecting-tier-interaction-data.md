@@ -1,5 +1,7 @@
 ---
 title: 收集层交互数据 | Microsoft Docs
+description: 了解如何收集通过 ADO.NET 服务与数据库通信的多层应用程序的层级分析信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f7b2a2bb5efd86d052247825a29a06c7f5ad109
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 768cb173bca578c440e3209fe7b7a1df60fab1be
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331594"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533675"
 ---
 # <a name="collect-tier-interaction-data"></a>收集层交互数据
 
@@ -40,11 +42,11 @@ ms.locfileid: "85331594"
 
 ## <a name="to-add-tier-interaction-data-to-a-profiling-run-by-using-the-performance-session-property-pages"></a>使用性能会话属性页将层交互数据添加到分析运行中
 
-1. 在“性能资源管理器”中，从上下文菜单中选择“属性”  。
+1. 在“性能资源管理器”中，从上下文菜单中选择“属性”。
 
-2. 选择“层交互”  页，然后选中“启用层交互分析”  复选框。
+2. 选择“层交互”页，然后选中“启用层交互分析”复选框。
 
-3. 在“性能资源管理器”中，选择“目标”  节点，然后指定要分析的项目、可执行文件或网站。
+3. 在“性能资源管理器”中，选择“目标”节点，然后指定要分析的项目、可执行文件或网站。
 
 ## <a name="see-also"></a>另请参阅
 

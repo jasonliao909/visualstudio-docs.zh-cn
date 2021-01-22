@@ -1,5 +1,7 @@
 ---
 title: 报表挂钩函数 | Microsoft Docs
+description: 在 Visual Studio 中查看报表挂钩函数。 每次 _CrtDbgReport 生成调试报告时都会调用报告挂钩函数（使用 _CrtSetReportHook 安装）。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -23,12 +25,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a0bb14b47fb17c4d59089aafa123115b85ab9342
-ms.sourcegitcommit: 5f6ad1cefbcd3d531ce587ad30e684684f4c4d44
+ms.openlocfilehash: 8dea558d2f125c1e64f46bb4fbf738434eda2394
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2019
-ms.locfileid: "72729862"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205614"
 ---
 # <a name="report-hook-functions"></a>报表挂钩函数
 每次 [_CrtDbgReport](/cpp/c-runtime-library/reference/crtsetreporthook) 生成调试报告时都会调用报告挂钩函数（使用 [_CrtSetReportHook](/cpp/c-runtime-library/reference/crtdbgreport-crtdbgreportw) 安装）。 可以使用报告挂钩函数以及其他项筛选报告以集中于特定类型的分配。 报告挂钩函数应具有如下原型：

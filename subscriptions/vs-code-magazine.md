@@ -2,17 +2,17 @@
 title: Visual Studio 订阅中的 CODE 杂志权益 | Microsoft 文档
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 12/02/2020
+ms.date: 01/19/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 CODE 杂志权益。
-ms.openlocfilehash: ff65a47df129eaf59d1404335cd8fd98df7474d6
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
+ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538106"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98597393"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CODE 杂志权益
 
@@ -49,15 +49,16 @@ CODE 杂志是领先的独立软件开发人员杂志，涵盖所有平台中的
 ## <a name="eligibility"></a>资格
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
-| Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  否          |
+| Visual Studio Enterprise（标准）   | VL、Azure、零售| 可用       |  否          |
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL| 可用       |  否          |
 | Visual Studio Professional（标准） | VL、Azure、零售                                       | 可用                                                            |  否          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL                                      | 可用                                                            |  否          |
 | Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  否          |
 | MSDN 平台（标准）                                          | VL、零售                                              | 可用                                              |  否          |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
+| Visual Studio Enterprise NFR<sup>1</sup> | NFR | 不可用 | 不可用 |
 
-<sup>1</sup>  包括：*限制转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、Imagine Premium。不包括：Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域主管 (RD)、MCT 软件和服务开发人员、MCT 软件和服务、Imagine。
+<sup>1</sup>  包括：*不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务开发人员、MCT 软件和服务。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。

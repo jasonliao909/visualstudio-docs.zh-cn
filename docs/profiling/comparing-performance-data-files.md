@@ -1,5 +1,7 @@
 ---
 title: 比较性能数据文件 | Microsoft Docs
+description: 使用分析工具比较两个报表文件（.vsp 或 .vsps）。 比较结果会显示差异、性能回归和改进。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,18 +14,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 64842c5b4f622a1f76aa528360f79403ec92cb42
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8d1c57c6c3dd8d7d01e37eae374c547e074d62e6
+ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777850"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98533493"
 ---
 # <a name="compare-performance-data-files"></a>比较性能数据文件
 
-凭借分析工具数据文件比较功能，可以选择两个报表文件（.vsp 或 .vsp 文件）并生成报告，显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进   。
+借助分析工具数据文件比较功能，可选择两个报表文件（.vsp 或 .vsp 文件）并生成报告，显示从一个分析会话到另一个分析会话出现的差异、性能回归和改进 。
 
-来自 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具中的数据文件比较报告将一个分析数据文件中的分析结果与另一个数据文件中的基线分析的结果进行比较。 必须已使用同一分析方法生成了这两个数据文件。 将分析的比较报告另存为 .vsps 文件  。
+来自 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具中的数据文件比较报告将一个分析数据文件中的分析结果与另一个数据文件中的基线分析的结果进行比较。 必须已使用同一分析方法生成了这两个数据文件。 将分析的比较报告另存为 .vsps 文件。
 
 比较报告视图呈现已更改数据的表视图。 该表呈现增量，或基线中的更改。 增量是通过确定旧值、基线值和新分析中的结果值之间的差异来计算的。
 

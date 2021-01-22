@@ -1,5 +1,7 @@
 ---
 title: 伪变量 | Microsoft Docs
+description: 查看 Visual Studio 调试程序中的伪变量。 伪变量是用于在变量窗口或“快速监视”对话框中显示某些数据的术语。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -17,12 +19,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b5b0369a30e69fc69782bbc4a0f5b0c4518cac07
-ms.sourcegitcommit: 10d16e18c5f5e482c4c2856e6cacaad283463b65
+ms.openlocfilehash: c5a76bf799eabd29b778c2dec867cc7e50aa45ee
+ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/09/2020
-ms.locfileid: "75776089"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205523"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的伪变量
 伪变量是用于在变量窗口或“快速监视”对话框中显示某些信息的术语。 你可以像输入普通变量那样输入伪变量。 但伪变量不是变量，它不与程序中的变量名相对应。
