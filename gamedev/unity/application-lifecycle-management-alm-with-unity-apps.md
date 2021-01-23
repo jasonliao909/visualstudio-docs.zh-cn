@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 9c078f3500a5a00edadae73f04f04e60d7c199d6
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341114"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722979"
 ---
 # <a name="devops-with-unity-apps"></a>适用于 Unity 应用的 DevOps
 
@@ -61,8 +61,8 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
-|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts) 或 Azure Repos|是|Unity项目是一个文件集合，可以像任何其他项目一样放置到版本控制系统中，但有几点需要特别注意，请参见此表后内容。|
-|[Azure Repos 中的 Git 入门](/azure/devops/repos/git/gitquickstart?view=vsts&tabs=visual-studio)|是|请参阅表后的注释。|
+|[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 或 Azure Repos|是|Unity项目是一个文件集合，可以像任何其他项目一样放置到版本控制系统中，但有几点需要特别注意，请参见此表后内容。|
+|[Azure Repos 中的 Git 入门](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|是|请参阅表后的注释。|
 |[提高代码质量](/test/improve-code-quality.md)|是||
 |[查找代码更改和其他历史记录](/ide/find-code-changes-and-other-history-with-codelens.md)|是||
 |[使用代码图调试应用程序](/modeling/use-code-maps-to-debug-your-applications.md)|是||
