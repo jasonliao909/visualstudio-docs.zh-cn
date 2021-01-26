@@ -40,8 +40,8 @@
   items:
     - name: 使用云服务项目
       items:
-        - name: 访问私有 Azure 云
-          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
+        - name: 使用云服务（外延支持）（预览）
+          href: cloud-services-extended-support.md
         - name: 创建 Azure 云服务项目
           href: vs-azure-tools-azure-project-create.md
         - name: 管理 Azure 云服务中的角色
@@ -60,6 +60,8 @@
           href: vs-azure-tools-multiple-services-project-configurations.md
         - name: 如何将项目升级到 Azure Tools 的当前版本
           href: vs-azure-tools-upgrade-projects-to-the-current-version-of-the-azure-tools.md
+        - name: 访问私有 Azure 云
+          href: vs-azure-tools-access-private-azure-clouds-with-visual-studio.md
     - name: 测试和调试云服务
       items:
         - name: 在 Visual Studio 中调试 Azure 云服务或虚拟机
