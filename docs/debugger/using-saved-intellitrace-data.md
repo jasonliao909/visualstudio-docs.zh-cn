@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 42f355a0a8d04e48a2b9d14d0d62edf2cd949a87
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 070bcc04d79231d074e30d1e87d3ad512ce5dca1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150933"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723031"
 ---
 # <a name="using-saved-intellitrace-data-c-visual-basic-c"></a>使用保存的 IntelliTrace 数据（C#、Visual Basic、C++）
 
@@ -261,7 +261,7 @@ ms.locfileid: "98150933"
 
  [IntelliTrace 功能](../debugger/intellitrace-features.md)
 
- [在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts)
+ [在手动测试中收集更多诊断数据](/azure/devops/test/mtm/collect-more-diagnostic-data-in-manual-tests?view=vsts&preserve-view=true)
 
  [IntelliTrace](../debugger/intellitrace.md)
 

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d7fe5a8b2275248c0fc68f9237e9e259973c567b
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 8cb9143057bf0cfda85c835131204c6641199b48
+ms.sourcegitcommit: 10cb0b68f8cef219ea08eff9bc5f0afe1545c825
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801719"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699325"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -32,7 +32,7 @@ ms.locfileid: "88801719"
     # Create a string with spaces proportional to a cosine of x in degrees
     def make_dot_string(x):
         rad = radians(x)                             # cos works with radians
-        numspaces = int(20 * cos(radians(x)) + 20)   # scale to 0-40 spaces
+        numspaces = int(20 * cos(rad) + 20)          # scale to 0-40 spaces
         st = ' ' * numspaces + 'o'                   # place 'o' after the spaces
         return st
 
@@ -71,9 +71,9 @@ ms.locfileid: "88801719"
     - 显示下一语句 (Alt+Num &#42;)：切换到下一行要运行的代码     。 在调试会话期间在代码内导航，并且想要快速返回到调试器的暂停点时，此按钮最有用。
     - 单步执行(进入过程)  (F11  )：运行下一行代码，并进入被调用的函数。
     - 单步执行(跳过过程)  (F10  )：运行下一行代码，但不进入被调用的函数。
-    - 单步执行(跳出过程)  (Shift**Shift**+F11  )：运行当前函数的其余部分，并在调用代码中暂停。
+    - 单步执行(跳出过程)  (Shift **Shift**+F11  )：运行当前函数的其余部分，并在调用代码中暂停。
 
-1. 使用“单步执行(跳过过程)”  单步执行（跳过过程）`for` 语句。 *单步执行*是指调试器运行当前代码行，包括所有函数调用，然后立即再次暂停。 注意变量 `i` 现在在“局部变量”  和“自动”  窗口中是如何定义的。
+1. 使用“单步执行(跳过过程)”  单步执行（跳过过程）`for` 语句。 *单步执行* 是指调试器运行当前代码行，包括所有函数调用，然后立即再次暂停。 注意变量 `i` 现在在“局部变量”  和“自动”  窗口中是如何定义的。
 
 1. 单步执行（跳过过程）下一行代码，该命令将调用 `make_dot_string` 并暂停。 确切来说，此处的单步执行(跳过过程)  是指调试器运行整个 `make_dot_string` 并在它返回时暂停。 调试器不在该函数内停止，除非其中存在单独的断点。
 
@@ -89,7 +89,7 @@ ms.locfileid: "88801719"
 
 1. 若要继续运行程序直到下一个断点，请使用“继续”  (F5  )。 因为 `for` 循环中有断点，所以下一次迭代将中断。
 
-1. 单步调试某个循环的数百次迭代是一个很枯燥的过程，因此，Visual Studio 允许用户对断点添加*条件*。 仅当满足该条件时，调试器才会在断点处暂停程序。 例如，可以对 `for` 语句上的断点使用条件，使其仅在 `i` 值超过 1600 时暂停。 若要设置此条件，请右键单击红色断点，选择“条件”  (Alt  +F9   > C  )。 在随即显示的“断点设置”  弹出窗口中，输入 `i > 1600` 作为表达式，选择“关闭”  。 按 F5  继续，注意程序在下一次中断前会运行多次迭代。
+1. 单步调试某个循环的数百次迭代是一个很枯燥的过程，因此，Visual Studio 允许用户对断点添加 *条件*。 仅当满足该条件时，调试器才会在断点处暂停程序。 例如，可以对 `for` 语句上的断点使用条件，使其仅在 `i` 值超过 1600 时暂停。 若要设置此条件，请右键单击红色断点，选择“条件”  (Alt  +F9   > C  )。 在随即显示的“断点设置”  弹出窗口中，输入 `i > 1600` 作为表达式，选择“关闭”  。 按 F5  继续，注意程序在下一次中断前会运行多次迭代。
 
     ![设定断点条件](media/vs-getting-started-python-21-debugging4.png)
 
