@@ -2,7 +2,7 @@
 title: Visual Studio Tools for Unity 入门 | Microsoft Docs
 description: 了解如何安装和设置 Visual Studio for Unity 开发。
 ms.custom: ''
-ms.date: 07/13/2020
+ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: how-to
@@ -13,17 +13,17 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 1f8cbe1629aab6a177a46888fe25cf8e3565d91d
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e05a94ecf9cf690f46299684c82f2b3961a783c8
+ms.sourcegitcommit: 585547ea7363ab1b6bb9d41f6d008cbe478d1a3b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903748"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98912563"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio 和 Unity 入门
 
 > [!NOTE]
-> 本指南假定你已使用 Unity 中心程序安装了 Unity。 如果你不熟悉 Unity，我们建议先访问 Unity 了解并 [通过 unity 教程完成入门](https://learn.unity.com/course/getting-started-with-unity) 。
+> 本指南假定你已使用 Unity 中心程序安装了 Unity。 如果你不熟悉 Unity，我们建议先访问 Unity 学习并完成 [Unity Essentials 学习路径](https://learn.unity.com/pathway/unity-essentials) 。
 
 ## <a name="install-unity-support-for-visual-studio"></a>安装适用于 Visual Studio 的 Unity 支持
 
