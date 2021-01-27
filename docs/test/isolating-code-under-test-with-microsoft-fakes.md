@@ -12,12 +12,12 @@ author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: aa1f0505d37059ce65da80fcf483473610cf2f6d
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329531"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719651"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -255,11 +255,11 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ## <a name="using-microsoft-fakes-in-the-ci"></a>在 CI 中使用 Microsoft Fakes
 
 ### <a name="microsoft-fakes-assembly-generation"></a>Microsoft Fakes 程序集生成
-由于 Microsoft Fakes 需要 Visual Studio Enterprise，因此 Fakes 程序集的生成需要使用 [Visual Studio 生成任务](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops)来生成项目。
+由于 Microsoft Fakes 需要 Visual Studio Enterprise，因此 Fakes 程序集的生成需要使用 [Visual Studio 生成任务](/azure/devops/pipelines/tasks/build/visual-studio-build?view=azure-devops&preserve-view=true)来生成项目。
 
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> 另一种方法是将 Fakes 程序集签入 CI，并使用 [MSBuild 任务](../msbuild/msbuild-task.md?view=vs-2019)。 这样做时，你需要确保有对测试项目中生成的 Fakes 程序集的程序集引用，类似于下面的代码片段：
+> 另一种方法是将 Fakes 程序集签入 CI，并使用 [MSBuild 任务](../msbuild/msbuild-task.md?view=vs-2019&preserve-view=true)。 这样做时，你需要确保有对测试项目中生成的 Fakes 程序集的程序集引用，类似于下面的代码片段：
 
 ```xml
 <Project Sdk="Microsoft.NET.Sdk">
@@ -273,10 +273,10 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>运行 Microsoft Fakes 测试
-只要在配置的 `FakesAssemblies` 目录（默认为 `$(ProjectDir)FakesAssemblies`）中有 Microsoft Fakes 程序集，就可以使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)来运行测试。
+只要在配置的 `FakesAssemblies` 目录（默认为 `$(ProjectDir)FakesAssemblies`）中有 Microsoft Fakes 程序集，就可以使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)来运行测试。
 
 ::: moniker range=">=vs-2019"
-使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops)对使用 Microsoft Fakes 的 .NET Core 项目进行分布式测试需要 Visual Studio 2019 Update 9 Preview `20201020-06` 及更高版本。
+使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)对使用 Microsoft Fakes 的 .NET Core 项目进行分布式测试需要 Visual Studio 2019 Update 9 Preview `20201020-06` 及更高版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
