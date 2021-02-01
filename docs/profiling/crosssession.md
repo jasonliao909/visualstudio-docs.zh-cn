@@ -1,5 +1,7 @@
 ---
 title: CrossSession | Microsoft Docs
+description: 了解如何使用 VSPerfCmd.exe“CrossSession”选项来允许探查器从任何控制台会话收集数据。 还必须指定“Start”选项。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 019a7b74deb70176f214aefdcec4db86cec86829
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a20ada8a7ca8d0ca8c34c2c6d730c37cdca09b7
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331170"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686203"
 ---
 # <a name="crosssession"></a>CrossSession
-VSPerfCmd.exe“CrossSession”选项使探查器可以从任何控制台会话收集数据   。  “CrossSession”选项必须与“Start”  选项一起使用。
+通过 VSPerfCmd.exe“CrossSession”选项，探查器可从任何控制台会话收集数据 。 “CrossSession”选项必须与“Start”选项一起使用。
 
- 可以使用缩写 CS  代替 CrossSession  。
+ 可以使用缩写 CS 代替 CrossSession。
 
 ## <a name="syntax"></a>语法
 
@@ -31,16 +33,16 @@ VSPerfCmd.exe /Start:Method /CrossSession [Options]
  None
 
 ## <a name="valid-options"></a>有效选项
- 若要在另一个会话中启用分析，必须使用“Start”  选项指定“CrossSession”  选项。 “CrossSession”  还必须在任何后续“VSPerfCmd Attach”  和“Detach”  命令中进行指定。
+ 若要在另一个会话中启用分析，必须使用“Start”选项指定“CrossSession”选项。 “CrossSession”还必须在任何后续“VSPerfCmd Attach”和“Detach”命令中进行指定。
 
- **Start:** `Method`“Start”选项可将探查器初始化为指定的分析方法  。
+ **Start:** `Method`“Start”选项可将探查器初始化为指定的分析方法。
 
- **Attach：** PID[,PID] 开始分析指定进程    。
+ **Attach：** PID[,PID] 开始分析指定进程。
 
- **Detach**[ **:** PID[,PID]] 停止分析指定进程   。
+ **Detach**[**:** PID[,PID]] 停止分析指定进程。
 
 ## <a name="example"></a>示例
- 在此示例中，  “CrossSession”选项用于附加到在另一个控制台会话中启动的应用程序。
+ 在此示例中，“CrossSession”选项用于附加到在另一个控制台会话中启动的应用程序。
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp /CrossSession

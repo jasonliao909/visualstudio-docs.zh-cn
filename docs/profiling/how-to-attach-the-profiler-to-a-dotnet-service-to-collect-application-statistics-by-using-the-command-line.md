@@ -1,6 +1,7 @@
 ---
 title: 将探查器附加到 .NET 服务以收集应用统计信息
-ms.custom: seodec18
+description: 使用 Visual Studio 分析工具命令行工具将探查器附加 .NET Framework 服务，以及使用采样方法获取性能统计信息。
+ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a0046c47-26c8-4bec-96a0-81da05e5104a
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac59e0e08894ca143df6a68c49e5f5f8b24ebc50
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c91fef6cc98ae270420354a1287c05e78b38ac3e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328714"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801118"
 ---
 # <a name="how-to-attach-the-profiler-to-a-net-service-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 .NET 服务，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加到 .NET Framework 服务，以及如何使用采样方法收集性能统计信息。
@@ -92,7 +93,7 @@ ms.locfileid: "85328714"
    - targetclr: `Version` 指定应用程序中加载运行时的多个版本时要分析的公共语言运行时 (CLR) 的版本  。 可选。
 
 ## <a name="control-data-collection"></a>控制数据收集
- 服务运行时，可使用 VSPerfCmd.exe  选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
+ 服务运行时，可使用 VSPerfCmd.exe 选项开始或停止将数据写入到探查器数据文件。 通过控制数据收集，可以针对程序执行的特定部分（如启动或关闭应用程序）进行数据收集。
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
@@ -105,7 +106,7 @@ ms.locfileid: "85328714"
     |**/attach:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[:{`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID 或进程名称指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|
 
 ## <a name="end-the-profiling-session"></a>结束分析会话
- 若要结束分析会话，必须将探查器与所有被分析进程分离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 VSPerfCmd /detach  选项从使用采样方法分析的应用程序拆离探查器。 然后，调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。
+ 若要结束分析会话，必须将探查器与所有被分析进程分离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 VSPerfCmd /detach 选项从使用采样方法分析的应用程序拆离探查器。 然后，调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。
 
  **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。
 

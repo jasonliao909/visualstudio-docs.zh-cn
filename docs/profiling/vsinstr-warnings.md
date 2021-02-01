@@ -1,6 +1,7 @@
 ---
 title: VSInstr 警告 | Microsoft Docs
 ms.date: 11/04/2016
+description: 了解 VSInstr.exe 工具发出的警告，以及如何使用 NOWARN 选项和警告编号来禁止出现警告。
 ms.topic: reference
 helpviewer_keywords:
 - instrumentation, VSInstr tool
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3af98372102da49e7553d2f2992f3804cf0a619e
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: d5510c475ab566e65d2bd152136535fde62f257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330546"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723122"
 ---
 # <a name="vsinstr-warnings"></a>VSInstr 警告
 下表列出了由 VSInstr.exe 工具发出的警告。 可使用 NOWARN 选项及警告编号来禁止显示警告。

@@ -1,5 +1,6 @@
 ---
 title: “进程”视图 - 争用数据 | Microsoft Docs
+description: 了解“进程”视图如何显示在分析运行期间执行的进程和线程的争用数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 30c938088538bcecc71e3a7e37d5ae403dd476e1
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f3eb95c5ba8bb9f519623d4b43bc80d37919305d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778396"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719461"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 “进程”视图显示在分析运行期间执行的进程和线程的争用数据。
@@ -25,7 +26,7 @@ ms.locfileid: "74778396"
 
  下表说明“进程”视图表中各列的值。
 
-|列|描述|
+|列|说明|
 |------------|-----------------|
 |**开始时间**|从分析开始到进程或线程启动的毫秒数或处理器周期数。|
 |**阻塞的时间**|在此期间阻止进程或线程的函数执行的总时间。|
@@ -36,9 +37,9 @@ ms.locfileid: "74778396"
 |**ID**|进程或线程的系统生成的标识符。|
 |**生存时间**|从进程或线程启动到进程或线程结束或分析结束的毫秒数或处理器周期数。|
 |**Type**|行的类型（进程或线程）。<br /><br /> 仅在 **VSReport** 命令行报表中。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。|
-|**Name**|进程或线程的名称。|
+|**名称**|进程或线程的名称。|
 |**唯一 ID**|探查器生成的标识符，对进程或线程是唯一的。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)
 - [“进程”视图](../profiling/process-view.md)

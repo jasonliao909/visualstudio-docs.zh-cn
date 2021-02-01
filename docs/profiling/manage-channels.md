@@ -1,5 +1,6 @@
 ---
 title: 管理通道 | Microsoft Docs
+description: 了解如何在并发可视化工具的“线程视图”中整理进程的各个通道，以便查看特定模式。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1480bab2f52383a8ca3a5b0ac22fd56acb5e01
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0dd8643f63a7a3e67400f09f00b999fff33f09e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64779251"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721263"
 ---
 # <a name="manage-channels"></a>管理通道
-在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式  。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。
+在并发可视化工具的“线程视图”中，可以整理进程的各个通道，以便查看特定模式。 您可以将通道排序、上下移动，以及隐藏或显示这些通道。
 
 ## <a name="sort-by"></a>排序依据
  基于当前的缩放级别，您可以使用“排序依据”控件按不同的条件对线程排序。 在查找特定模式时，这特别有用。 您可以按照以下条件排序：
@@ -32,8 +33,8 @@ ms.locfileid: "64779251"
 |执行|按执行所用的时间百分比对线程排序。|
 |同步|按同步所用的时间百分比对线程排序。|
 |I/O|按 I/O（读取和写入数据）所用的时间百分比对线程排序。|
-|休眠|按休眠所用的时间百分比对线程排序。|
-|分页|按分页所用的时间百分比对线程排序。|
+|睡眠状态|按休眠所用的时间百分比对线程排序。|
+|Paging|按分页所用的时间百分比对线程排序。|
 |优先|按抢占所用的时间百分比对线程排序。|
 |UI 处理|按用户界面处理所用的时间百分比对线程排序。|
 
@@ -61,4 +62,4 @@ ms.locfileid: "64779251"
 ## <a name="see-also"></a>另请参阅
 - [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)
 - [打开/关闭度量模式](../profiling/measure-mode-on-off.md)
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+- [线程视图](../profiling/threads-view-parallel-performance.md)

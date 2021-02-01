@@ -1,5 +1,6 @@
 ---
 title: 概述（性能工具）| Microsoft Docs
+description: 了解 Visual Studio 分析工具的概念和术语。 使用该信息度量正在开发的应用程序的性能特征。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b877802d-c736-4047-821a-bd7733fff6de
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d284ffc6b850a9746cf1442f35400a18045bbe18
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d27f777b660b2ffc94c4b9b6f0b6ba55816d626b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772662"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722823"
 ---
 # <a name="overviews-performance-tools"></a>概述（性能工具）
 本节提供 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的概念和术语概述，这些工具可以用于度量正在开发的应用程序的性能特征。
@@ -36,7 +37,7 @@ ms.locfileid: "74772662"
 
  了解使用检测分析方法时报告的数据值。
 
-- [了解内存分配和对象生存期数据值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
+- [了解内存分配数据值和对象生存期数据值](../profiling/understanding-memory-allocation-and-object-lifetime-data-values.md)
 
  了解使用 .NET 内存分析方法时报告的数据值。
 
@@ -56,7 +57,7 @@ ms.locfileid: "74772662"
 
  了解在 [!INCLUDE[wiprlhext](../debugger/includes/wiprlhext_md.md)] 上收集采样数据和分析跨会话应用程序所需的问题和步骤。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [入门](../profiling/getting-started-with-performance-tools.md)
 - [性能资源管理器](../profiling/performance-explorer.md)

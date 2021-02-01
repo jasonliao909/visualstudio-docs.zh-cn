@@ -1,5 +1,7 @@
 ---
 title: “核心”视图图例 | Microsoft Docs
+description: 了解“内核视图”图例，它提供表格上下文切换数据和线程选择。 还将了解上下文切换和性能。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ea3184fbcd3561b88521f7dbdf4bf44c925150d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 043f056587856b5c5774a3a15b3542437e0d4eb7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62553158"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720821"
 ---
 # <a name="cores-view-legend"></a>“核心”视图图例
 “核心”视图图例按颜色和名称标识每个线程。 它包括一些列，分别显示跨核心上下文切换数、上下文切换总数以及跨越核心的上下文切换所占的百分比。 图例中的行按跨核心上下文切换数以降序排序。
@@ -36,4 +38,4 @@ ms.locfileid: "62553158"
 |跨越核心的上下文切换所占的百分比|通过跨核心上下文切换数除以上下文切换总数计算出的百分比。 此百分比越高，此特定线程的性能上的跨核心上下文切换的开销的整体效果越大。|
 
 ## <a name="see-also"></a>另请参阅
-- [“核心”视图](../profiling/cores-view.md)
+- [内核视图](../profiling/cores-view.md)

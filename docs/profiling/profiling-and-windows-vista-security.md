@@ -1,5 +1,6 @@
 ---
 title: 分析和 Windows Vista 安全性 | Microsoft Docs
+description: 根据可用的用户访问权限设置，单个用户可能会具有在该计算机上分析进程的安全权限。
 ms.date: 11/02/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a74862d59fe402cbfd9e6bfa804d62ca4c8310b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0bfd12808a4639f44a3a5075a4b474012ab2c2fa
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778370"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719404"
 ---
 # <a name="profiling-and-windows-vista-security"></a>分析和 Windows Vista 安全性
 
@@ -33,9 +34,9 @@ ms.locfileid: "74778370"
 
 ## <a name="cross-session-profiling"></a>跨会话分析
 
-跨会话分析是分析在不同用户会话中运行的进程的能力  。 例如，大多数服务在会话 0 中运行，而用户无法直接在会话 0 中运行。 使用性能资源管理器工具栏上的“附加到进程”按钮或 VSPerfCmd 命令行工具的 `/attach` 选项可以分析不同用户会话中的大多数进程。
+跨会话分析是分析在不同用户会话中运行的进程的能力。 例如，大多数服务在会话 0 中运行，而用户无法直接在会话 0 中运行。 使用性能资源管理器工具栏上的“附加到进程”按钮或 VSPerfCmd 命令行工具的 `/attach` 选项可以分析不同用户会话中的大多数进程。
 
-可以通过设置跨进程分析可见性选项来查看可用进程的列表。 在选择“附加到进程”时显示的“附加到进程”窗口中提供了这些选项   ：
+可以通过设置跨进程分析可见性选项来查看可用进程的列表。 在选择“附加到进程”时显示的“附加到进程”窗口中提供了这些选项：
 
 - **显示所有用户的进程**
 

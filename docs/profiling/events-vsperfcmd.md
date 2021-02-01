@@ -1,5 +1,7 @@
 ---
 title: Events (VSPerfCmd) | Microsoft Docs
+description: 使用 VSPerfCmd.exe 命令行工具中的“事件”选项控制 Windows 事件跟踪 (ETW) 日志记录。 查看语法参数。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: eb139327-4783-4f2a-874c-efad377a7be4
@@ -9,17 +11,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 46b47f9b615c824d25e931cd3d05f5d2a04257ba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 614ac24e38966c1d09df91d6771cab2b3914454d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777316"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801391"
 ---
 # <a name="events-vsperfcmd"></a>Events (VSPerfCmd)
-VSPerfCmd.exe“Events”选项控制 Windows 事件跟踪 (ETW) 日志记录   。 会将 ETW 数据保存到独立于探查器数据文件的 .etl 文件中。 可以使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令在报告中查看这些数据。
+VSPerfCmd.exe“Events”选项控制 Windows 事件跟踪 (ETW) 日志记录 。 会将 ETW 数据保存到独立于探查器数据文件的 .etl 文件中。 可以使用 [VSPerfReport](../profiling/vsperfreport.md) /summary:etw 命令在报告中查看这些数据。
 
- 在调用 VSPerfCmd Shutdown  命令停止分析之前，可以随时调用“Events”  选项。
+ 在调用 VSPerfCmd Shutdown 命令停止分析之前，可以随时调用“Events”选项。
 
 ## <a name="syntax"></a>语法
 
@@ -38,7 +40,7 @@ VSPerfCmd.exe /events {On|Off} {Guid|ProviderName} [,Flags[,Level]
 
  `Level` 指定收集的数据量。 `Level` 由事件提供程序定义。
 
-  “Events”选项将以下内核关键字识别为提供程序名称：
+ “Events”选项将以下内核关键字识别为提供程序名称：
 
  **Process** 进程事件
 

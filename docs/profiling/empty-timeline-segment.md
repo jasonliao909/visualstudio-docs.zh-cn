@@ -1,5 +1,7 @@
 ---
 title: 空时间线分段 | Microsoft Docs
+description: 在 Visual Studio 并发可视化工具中，了解时间线的一部分对于某种通道可能为空（具有白色背景）的原因。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a96cdc7ae4edc7ea7193d5b95dfc73fa1747c1fb
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 15dc4526ce101e21c00fe083b85f81db92bcd609
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970104"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801435"
 ---
 # <a name="empty-timeline-segment"></a>空时间线分段
 在并发可视化工具中，时间线部分为空（具有白色背景）的原因取决于通道的种类。
@@ -30,6 +32,6 @@ ms.locfileid: "62970104"
 
 - 对于标记通道，这意味着未生成任何标记。
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)
 - [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)

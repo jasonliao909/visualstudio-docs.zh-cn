@@ -1,5 +1,6 @@
 ---
 title: “对象生存期”视图 | Microsoft Docs
+description: 了解在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -17,15 +18,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d4ea486930d0ea9f266b4ee57b69a50f7c570651
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9405b66c7412d65402a5572dcb5c71b232341b22
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772619"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722862"
 ---
 # <a name="object-lifetime-view"></a>“对象生存期”视图
-在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图   。
+在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。
 
  .NET Framework 的垃圾回收器会为应用程序管理内存的分配和释放。 为优化垃圾回收器的性能，将托管堆分为三代：第 0 代、第 1 代和第 2 代。 运行时的垃圾回收器将新对象存储在第 0 代中。 未回收的对象将会升级并存储在第 1 代和第 2 代中。
 
@@ -33,7 +34,7 @@ ms.locfileid: "74772619"
 
 ## <a name="general"></a>常规
 
-|列|说明|
+|列|描述|
 |------------|-----------------|
 |**类名**|所分配类型的类名。|
 |**进程 ID**|分析运行的进程 ID。|
@@ -46,7 +47,7 @@ ms.locfileid: "74772619"
 
 |列|说明|
 |------------|-----------------|
-|**实例数**|此类型对象的分配数。|
+|**实例**|此类型对象的分配数。|
 |**总实例数百分比**|在分析运行期间进行的分配总数的百分比。|
 |**已收集的第 0 代实例数**|在垃圾回收算法的第 0 代中，已解除分配的类型实例数。|
 |**已收集的第 1 代实例数**|在垃圾回收算法的第 1 代中，已解除分配的类型实例数。|

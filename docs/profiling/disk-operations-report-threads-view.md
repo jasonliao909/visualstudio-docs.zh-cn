@@ -1,5 +1,7 @@
 ---
 title: 磁盘操作报告（“线程”视图）| Microsoft Docs
+description: 磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。 查看为每个磁盘访问报告的信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 69cbef53bcca74cceba4f9409b578fca45a58806
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 44975999c71b1c331d90aa10f709071cef466cb1
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62970065"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686527"
 ---
 # <a name="disk-operations-report-threads-view"></a>磁盘操作报告（线程视图）
 磁盘操作报告显示磁盘通道中的磁盘 I/O 操作。
@@ -42,5 +44,5 @@ ms.locfileid: "62970065"
 
 - 写入延迟时间（以毫秒为单位）
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

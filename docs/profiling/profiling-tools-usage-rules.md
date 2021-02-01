@@ -1,5 +1,6 @@
 ---
 title: 分析工具使用规则 | Microsoft Docs
+description: 了解分析工具使用类别中的性能规则如何提供有关最有效地使用探查器收集数据的指南。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1aeeb7e0a9061d72a07b718acde70b00dfcbba89
-ms.sourcegitcommit: d281d2a04a5bc302650eebf369946d8f101e59dd
+ms.openlocfilehash: 8eba05a40e108d2fd1ba5107160088c5c30da299
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2020
-ms.locfileid: "88144670"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720470"
 ---
 # <a name="profiling-tools-usage-rules"></a>分析工具使用规则
 分析工具使用类别中的性能规则提供有关最有效地使用探查器收集数据的指南。

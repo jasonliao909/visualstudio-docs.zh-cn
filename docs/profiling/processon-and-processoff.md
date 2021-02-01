@@ -1,5 +1,6 @@
 ---
 title: ProcessOn 和 ProcessOff | Microsoft Docs
+description: 了解 VSPerfCmd.exe ProcessOff 和 ProcessOn 子命令如何暂停和继续对命令行分析会话中指定进程的分析。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: d3dc6a7e-bc0f-48a6-a4ec-f386348bb296
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c16c2d578a38187b4a58958466597a5e4d297d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ae4b5e95636894ddc2d0c4799308afb057145747
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778383"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719443"
 ---
 # <a name="processon-and-processoff"></a>ProcessOn 和 ProcessOff
 VSPerfCmd.exe **ProcessOff** 和 **ProcessOn** 子命令可暂停和继续对命令行分析会话中指定进程的分析。 **ProcessOff** 停止进程分析，而 **ProcessOn** 启动进程分析。
@@ -39,7 +40,7 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 ```
 
 #### <a name="parameters"></a>参数
- `PID` 要启动或停止的进程的整数标识符。 Windows 任务管理器的“进程”选项卡上列出了进程 ID  。
+ `PID` 要启动或停止的进程的整数标识符。 Windows 任务管理器的“进程”选项卡上列出了进程 ID。
 
 ## <a name="required-subcommands"></a>需要的子命令
  None
@@ -49,11 +50,11 @@ VSPerfCmd.exe /{ProcessOff|ProcessOn}:PID [Options]
 
  **Start:** `Method` 初始化命令行分析会话并设置指定的分析方法。
 
- **Launch：** `AppName` 启动指定的应用程序并开始使用采样方法进行分析。
+ **Launch:** `AppName` 启动指定的应用程序并开始使用采样方法进行分析。
 
  **Attach：** `PID` 开始分析指定的进程。
 
- GlobalOff&#124;GlobalOn 停止或启动对命令行分析会话中所有进程的分析   。
+ GlobalOff&#124;GlobalOn 停止或启动对命令行分析会话中所有进程的分析。
 
  {**ThreadOff**|**ThreadOn**} **:** `TID`停止或启动对指定线程的分析（仅限检测方法）。
 

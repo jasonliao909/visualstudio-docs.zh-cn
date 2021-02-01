@@ -1,5 +1,6 @@
 ---
 title: “模块”视图：争用数据 | Microsoft Docs
+description: 了解争用数据的“模块”视图如何显示按分析数据中采样的模块分组的并发数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2de844867e9c0a8d95abdaa13f860a6487254bfe
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 0640bc238bc300868d42aedc8905da8ffc97f65e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780008"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723317"
 ---
 # <a name="modules-view---contention-data"></a>“模块”视图 - 争用数据
 争用数据的“模块”视图显示按分析数据中采样的模块分组的并发数据。 每个模块都是一个层次结构树的根。 模块节点下列出其中发生争用事件的模块的函数。
@@ -38,7 +39,7 @@ ms.locfileid: "74780008"
 |**函数行号**|此函数在源文件中的起始行号。|
 |**模块名**|包含函数、行或指令指针的模块的名称。|
 |**模块路径**|包含模块、函数、行或指令指针的模块的路径。|
-|**Name**|模块或函数的名称。|
+|**名称**|模块或函数的名称。|
 |**进程 ID**|分析运行的进程 ID (PID)。|
 |**进程名**|进程的名称。|
 |**源文件**|此函数的定义所在的源文件。|

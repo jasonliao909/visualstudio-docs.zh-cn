@@ -1,5 +1,6 @@
 ---
 title: 探查器采样方法数据视图 | Microsoft Docs
+description: 了解使用采样方法生成的探查器数据文件的视图和报表的参考信息。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d845d84d421ca44f5b936df0a7138fefa848d8d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b88abc935ca9eaef0a22230d427817756629bcb
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772151"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719430"
 ---
 # <a name="profiler-sampling-method-data-views"></a>探查器采样方法数据视图
 本节包含有关使用采样方法生成的探查器数据文件的视图和报告的参考信息。
@@ -54,7 +55,7 @@ ms.locfileid: "74772151"
 
  列出收集样本时执行的源代码行。
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 - [“进程”视图](../profiling/process-view.md)
 
  列出进程和线程的开始和结束时间。

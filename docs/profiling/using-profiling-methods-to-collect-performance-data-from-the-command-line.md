@@ -1,5 +1,6 @@
 ---
 title: 使用命令行分析方法获取性能数据
+description: 了解 Visual Studio 分析工具命令行工具和选项的选择取决于要分析的应用程序类型等因素。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5613fafc-f298-4e7a-9a2d-a853b61cdf9c
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b30aa723ea3014aec2bd05d4bd204b9427b3c218
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1796fad03d04ffb79ca1c8aeccc241ee3698f9f1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779969"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723239"
 ---
 # <a name="use-profiling-methods-to-collect-performance-data-from-the-command-line"></a>使用分析方法通过命令行收集性能数据
 选择的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具和选项取决于各种因素，如要分析的应用程序的类型、要使用的分析方法以及是以本机还是 .NET Framework 代码编写目标应用程序。
@@ -74,7 +75,7 @@ ms.locfileid: "74779969"
 ## <a name="add-tier-interaction-data-to-a-profiling-run"></a>将层交互数据添加到分析运行
  若要将层交互数据添加到分析运行，需要使用命令行分析工具执行特定的步骤。 请参阅[收集层交互数据](../profiling/adding-tier-interaction-data-from-the-command-line.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)
 - [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)
 - [分析服务](../profiling/command-line-profiling-of-services.md)

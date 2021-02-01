@@ -1,5 +1,6 @@
 ---
 title: 标记报告 | Microsoft Docs
+description: 了解“标记报告”如何列出显示的时间范围内的标记，以及平移或缩放如何使标记出现或消失。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 9502d2cf0081985cfbee2283af820c06d681ad9f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 7e95cf3b14f804c481ff03ec6fbf72b360efedc7
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "64808275"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722108"
 ---
 # <a name="markers-report"></a>标记报告
 标记报告列出所显示时间范围内的标记。  平移、缩放或隐藏通道，可能会导致标记显示或消失。 报告中包含有关各个标记的以下信息：
@@ -38,7 +39,7 @@ ms.locfileid: "64808275"
 
 - 有关标记所代表的内容的简略说明。
 
-  选择“导出”按钮，将标记报告保存为 CSV 文件  。 可以将 CSV 文件中的数据与其他应用或工具一起使用。
+  选择“导出”按钮，将标记报告保存为 CSV 文件。 可以将 CSV 文件中的数据与其他应用或工具一起使用。
 
 > [!NOTE]
 > 标记报告可显示 1,000 个标记。 若要查看全部标记，请将整个报告导出到 CSV 文件。

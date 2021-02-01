@@ -1,5 +1,7 @@
 ---
 title: CvReleaseProvider 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvReleaseProvider（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 0347d3e2345defb13a67e0e0d730e010be618a21
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5175f7f649dad3feed9f93a6e34ae5986ecda11b
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332185"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686410"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函数
 发布标记提供程序。 发布标记提供程序不会影响此提供程序以前创建的标记系列。 标记系列必须由 CvReleaseMarkerSeries 调用单独发布。 提供程序发布失败会导致内存泄漏。
@@ -37,7 +39,7 @@ HRESULT CvReleaseProvider(
  成功发布提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

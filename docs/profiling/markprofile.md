@@ -1,5 +1,6 @@
 ---
 title: MarkProfile | Microsoft Docs
+description: MarkProfile 方法可在 .vsp 文件中插入配置文件标记。 包含 MarkProfile 函数的线程的分析必须处于开启状态，才能插入标记。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,15 +12,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f53b51f9e78e2cb5d327abd3a79ebf2faa3a9204
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ecf676c58d8850834ec0c3333196dfb7144f885e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778565"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718858"
 ---
 # <a name="markprofile"></a>MarkProfile
-`MarkProfile` 方法可在 .vsp 文件中插入配置文件标记  。 包含 `MarkProfile` 函数的线程的分析必须处于开启状态，才能插入标记。
+`MarkProfile` 方法可在 .vsp 文件中插入配置文件标记。 包含 `MarkProfile` 函数的线程的分析必须处于开启状态，才能插入标记。
 
 ## <a name="syntax"></a>语法
 
@@ -35,7 +36,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 ## <a name="property-valuereturn-value"></a>属性值/返回值
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：
 
-|枚举器|说明|
+|枚举器|描述|
 |----------------|-----------------|
 |MARK_ERROR_MARKER_RESERVED|参数小于或等于零。 这些值将保留。 不会记录标记和注释。|
 |MARK_ERROR_MODE_NEVER|调用函数时，分析模式设置为“从不”。 不会记录标记和注释。|
@@ -46,9 +47,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 |MARK_OK|返回 MARK_OK 以指示成功。|
 
 ## <a name="remarks"></a>备注
- 如果正在分析包含 MarkProfile 函数的线程，则每次运行代码时，都会向 .vsp 文件插入标记值  。 可多次调用 MarkProfile。
+ 如果正在分析包含 MarkProfile 函数的线程，则每次运行代码时，都会向 .vsp 文件插入标记值。 可多次调用 MarkProfile。
 
- 配置文件标记具有全局范围。 例如，在一个线程中插入的配置文件标记可用于标记 .vsp 文件中任何线程的数据段的开头或结尾  。
+ 配置文件标记具有全局范围。 例如，在一个线程中插入的配置文件标记可用于标记 .vsp 文件中任何线程的数据段的开头或结尾。
 
  当使用 Mark 命令或 API 函数（CommentMarkAtProfile、CommentMarkProfile 或 MarkProfile）插入标记和注释时，包含标记配置文件函数的线程的分析状态必须为“开”。
 
@@ -56,12 +57,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI MarkProfile( long lMarker );
 > MarkProfile 方法仅能与检测分析一起使用。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 等效项
- Microsoft.VisualStudio.Profiler.dll 
+ Microsoft.VisualStudio.Profiler.dll
 
 ## <a name="function-information"></a>函数信息
- 标头：在 VSPerf.h 中声明 
+ 标头：在 VSPerf.h 中声明
 
- 导入库：VSPerf.lib 
+ 导入库：VSPerf.lib
 
 ## <a name="example"></a>示例
  下面的代码阐释了 MarkProfile 函数。
@@ -98,5 +99,5 @@ void ExerciseMarkProfile()
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)

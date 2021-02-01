@@ -1,5 +1,6 @@
 ---
 title: 分析工具 API | Microsoft Docs
+description: 了解如何插入 Visual Studio 分析工具 API 的托管或本机方法，以便在运行分析时控制数据收集。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ed4fef32c04d68f37df71101447a4e24f39eecba
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b0b62f88903cab7ce3fcf9117e7159256d7adaf5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772072"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720496"
 ---
 # <a name="profiling-tools-apis"></a>分析工具 API
 

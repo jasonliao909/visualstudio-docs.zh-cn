@@ -1,5 +1,7 @@
 ---
 title: CvLeaveSpan 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvLeaveSpan（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 113d6aafbd09f6b726613405a8c1eb82f9e202e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d1dcd98a8233f8080d03650c3989805ee9ec7289
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330041"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686579"
 ---
 # <a name="cvleavespan-function"></a>CvLeaveSpan 函数
 标记范围的结束位置。
@@ -37,7 +39,7 @@ HRESULT CvLeaveSpan(
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

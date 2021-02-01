@@ -1,5 +1,7 @@
 ---
 title: CPU 和 Windows 计数器 | Microsoft Docs
+description: CPU（硬件）和 Windows（软件）计数器提供性能数据。 了解如何查看这些计数器，以及如何从中收集数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9accd3d0ab5ff1f7a3084d5973cace08e66396b9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c3657f3558a688232424b868d0e93b8c056467c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74779544"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719157"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 
@@ -130,7 +132,7 @@ Visual Studio 探查器继续支持特定平台的特定事件。 例如，Penti
 
 ## <a name="see-also"></a>请参阅
 
-[概述](../profiling/overviews-performance-tools.md)
-[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)
-[如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)
-[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)
+- [概述](../profiling/overviews-performance-tools.md)
+- [如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)
+- [如何：收集 CPU 计数器数据](../profiling/how-to-collect-cpu-counter-data.md)
+- [如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)

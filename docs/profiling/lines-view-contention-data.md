@@ -1,5 +1,6 @@
 ---
 title: “行”视图 — 争用数据 | Microsoft Docs
+description: 了解争用数据的“行”视图如何列出分析运行期间收集样本时所执行语句的性能数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1dfcdf67c897c0c1565e536a69cc940b9df83390
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 50a314d5ba0a5dd907da3a915835f1410894ee7a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778591"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721341"
 ---
 # <a name="lines-view---contention-data"></a>“行”视图 - 争用数据
 争用数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。 在源文件中，一个语句可分散在多行中，而一行也可包括多个语句。
@@ -63,7 +64,7 @@ ms.locfileid: "74778591"
 |**源行开始**|该语句在源文件中的起始行号。|
 |**源行结束**|该语句在源文件中的结束行号。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)
 - [“行”视图](../profiling/lines-view.md)
 - [“行”视图 - 采样](../profiling/lines-view-dotnet-memory-sampling-data.md)

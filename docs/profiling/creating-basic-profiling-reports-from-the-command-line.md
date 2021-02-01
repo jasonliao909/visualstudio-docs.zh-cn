@@ -1,5 +1,6 @@
 ---
 title: 分析命令行 - 创建基础报告
+description: 了解 VSPerfReport.exe 的“摘要”和“CallTrace”选项，可使用这些选项基于 .vsp 或 .vsps 分析数据文件创建 .csv（逗号分隔值）报表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c9ee74732c917ee4267e08f7ff1c60715971ed71
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 86c72f0281f459852b878f17687411ce87eb6978
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808846"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718936"
 ---
 # <a name="create-basic-profiling-reports-from-the-command-line"></a>从命令行创建基本分析报告
 本文介绍从 .vsp 或 .vsps 分析数据文件生成逗号分隔值 (.csv) 报告的基本 VSPerfReport 命令    。 有关所有报告选项的介绍，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。

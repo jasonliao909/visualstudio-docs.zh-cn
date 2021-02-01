@@ -1,5 +1,6 @@
 ---
 title: 指定分析命令行工具的路径
+description: 如果分析工具的命令行工具的路径未添加到 PATH 环境变量，请指定分析工具命令行工具的路径。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb445e23b5d507bafb7fece40bf606bbfb76c370
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa1cb81d46f0977de2db9d78c6db53f542faa70f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809180"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720028"
 ---
 # <a name="specify-the-path-to-profiling-tools-command-line-tools"></a>指定分析工具命令行工具的路径
 

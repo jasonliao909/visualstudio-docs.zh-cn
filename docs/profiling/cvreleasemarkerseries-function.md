@@ -1,5 +1,7 @@
 ---
 title: CvReleaseMarkerSeries 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvReleaseMarkerSeries（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 84db5dac77fbbc51c9f1c0e24173dcc8ca1d68c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a69f60a991b9d88e6969992edbfe8eabdb7bd116
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332196"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686449"
 ---
 # <a name="cvreleasemarkerseries-function"></a>CvReleaseMarkerSeries 函数
 发布标记系列。 在发布之后请勿使用标记系列对象，否则应用程序可能会崩溃。 标记系列发布失败会导致内存泄漏。
@@ -37,7 +39,7 @@ HRESULT CvReleaseMarkerSeries(
  成功发布标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

@@ -1,5 +1,7 @@
 ---
 title: .NET 内存“分配”视图 | Microsoft Docs
+description: 了解 .NET 内存分配视图，该视图列出在分析运行期间创建的类型。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -16,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ce16f65947fd69b5a54e564ba6bec061bc68e328
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f52a30eef50c783ea96d403c25837f9bf2515a52
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74777372"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801286"
 ---
 # <a name="net-memory-allocations-view"></a>.NET 内存分配视图
 “分配”视图列出在分析运行期间创建的类型。 每个类型都是一个调用树的根节点，该调用树显示导致分配该类型的函数执行路径。
@@ -37,11 +39,11 @@ ms.locfileid: "74777372"
 ## <a name="highlight-the-execution-hot-path"></a>突出显示执行热路径
  可以找到调用树中创建了最多父类型对象的执行路径。
 
-- 若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”  。
+- 若要显示最活跃的路径，请右键单击类型或函数，再单击“展开热路径”。
 
 |列|说明|
 |------------|-----------------|
-|**Name**|已分配类型或函数的名称。|
+|**名称**|已分配类型或函数的名称。|
 |**进程 ID**|分析运行的进程 ID (PID)。|
 |**进程名**|进程的名称。|
 |**模块名**|类型或函数所在模块的名称。|

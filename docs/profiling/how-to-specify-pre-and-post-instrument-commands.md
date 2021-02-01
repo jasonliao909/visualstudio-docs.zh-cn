@@ -1,5 +1,6 @@
 ---
 title: 指定检测前和检测后命令 | Microsoft Docs
+description: 了解如何指定在检测性能会话中的二进制文件之前或之后运行的命令。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 904a5086af4fbbd9c1ef174cae63013cb8c96ad9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 172ca7a478dcc34443d2edf15186d9c040a04837
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851796"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721887"
 ---
 # <a name="how-to-specify-pre--and-post-instrument-commands"></a>如何：指定检测前和检测后命令
 

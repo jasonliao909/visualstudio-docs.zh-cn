@@ -1,5 +1,6 @@
 ---
 title: Sys (VSPerfCmd) | Microsoft Docs
+description: 了解 VSPerfCmd.exe Sys 选项如何设置采样到系统调用事件的分析事件。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 435393ac536eb70f2f3f6d38b16eaab645848704
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5e8090a39426455e0f6d877c26a7f0a50f00f10c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778175"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719755"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
-VSPerfCmd.exe“Sys”选项将采样的分析事件设置为系统调用事件（被分析的应用程序中对操作系统的函数调用），还可以选择将采样间隔内的系统调用数从默认值 10 改为其他值   。
+VSPerfCmd.exe Sys 选项将采样的分析事件设置为系统调用事件（被分析的应用程序中对操作系统的函数调用），还可以选择将采样间隔内的系统调用数从默认值 10 改为其他值 。
 
  只能在包含 **Launch** 或 **Attach** 选项的命令行中使用 **Sys**。
 
@@ -50,7 +51,7 @@ VSPerfCmd.exe {/Launch:AppName|Attach:PID} /Sys[:Events] [Options]
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] 将采样事件设置为 `Name` 指定的 CPU 性能计数器，并将采样间隔设置为 `Reload`。
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据  。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据  。
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据。
 
 ## <a name="example"></a>示例
  本示例演示如何将探查器采样事件设置为系统调用，以及如何将采样间隔设置为每个样本 20 次调用。

@@ -1,5 +1,6 @@
 ---
 title: 同时使用多个探查器工具 | Microsoft Docs
+description: 了解性能探查器的设计理念是，可以在同一会话中使用多个工具来帮助了解性能问题。
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: f72757d46496c3990c0a0d4205753d185078eac7
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 5a4c4658282f15b6b34562e51be94d9f2be195a8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85332040"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721172"
 ---
 # <a name="using-multiple-profiler-tools-simultaneously"></a>同时使用多个探查器工具
 

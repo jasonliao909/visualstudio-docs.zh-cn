@@ -1,5 +1,6 @@
 ---
 title: PF | Microsoft Docs
+description: 了解 VSPerfCmd.exe“PF”选项如何将采样的分析事件设置为页面错误，以及如何将采样间隔内的页面错误数改为其他值。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: cdc0a094-a986-4629-bd1c-dd5fdca323dc
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ec6d636ec087386fdc9462ae09db55400957a9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: b920b641a7bfc4583af7b0ec5a9692a25c19adb5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778409"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719547"
 ---
 # <a name="pf"></a>PF
-VSPerfCmd.exe“PF”选项将采样的分析事件设置为页面错误，还可以选择将采样间隔内的页面错误数从默认值 10 改为其他值   。
+VSPerfCmd.exe PF 选项将采样的分析事件设置为页面错误，还可选择性地将采样间隔内的页面错误数从默认值 10 改为其他值 。
 
 > [!NOTE]
 > **PF** 不能用于 64 位系统。
@@ -53,7 +54,7 @@ VSPerfCmd.exe {/Launch:AppName|/Attach:PID} /PF[:Events] [Options]
 
  **Counter:** `Name`[`,Reload`[`,FriendlyName`]] 将采样事件设置为 `Name` 指定的 CPU 性能计数器，并将采样间隔设置为 `Reload`。
 
- **GC**[ **:** {**Allocation**&#124;**Lifetime**}] 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据  。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据  。
+ **GC**[**:**{**Allocation**&#124;**Lifetime**}] 收集 .NET 内存数据。 默认情况 (Allocation) 下，每次发生内存分配事件时都收集数据。 如果指定 Lifetime 参数，则每次发生垃圾回收事件时也收集数据。
 
 ## <a name="example"></a>示例
  本示例演示如何将分析样本事件设置为页面错误，以及如何将采样间隔设置为 20 个页面错误。

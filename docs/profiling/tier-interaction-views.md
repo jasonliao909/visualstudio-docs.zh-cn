@@ -1,5 +1,6 @@
 ---
 title: “层交互”视图 | Microsoft Docs
+description: 了解层交互分析提供有关多层应用程序函数执行时间的信息，这些应用程序与数据库进行通信。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96b5fed31238fbc0e46d9982080b3acb1082e9f9
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9b358409b83a924672880cef5972ffbd3bd9a17f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778123"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722537"
 ---
 # <a name="tier-interaction-views"></a>层交互视图
 

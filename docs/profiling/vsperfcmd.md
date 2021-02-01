@@ -1,5 +1,6 @@
 ---
 title: VSPerfCmd | Microsoft Docs
+description: 了解 VSPerfCmd.exe 工具如何用于启动和停止性能数据收集。 还将了解各种 VSPerfCmd 工具选项。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: caf145213c41215d518cf42d0a69975c8580e817
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 90d263052c543cbf7e0f3207d9980bd04c13e990
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85330007"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719183"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 VSPerfCmd.exe 工具用于启动和停止性能数据收集。 它使用以下语法：

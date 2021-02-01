@@ -1,5 +1,7 @@
 ---
 title: diagnostic 命名空间 | Microsoft Docs
+description: 使用诊断命名空间发出并行可视化工具标记。 诊断命名空间隶属于并行命名空间。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 680d304a8e4d21365d82f654265ae2f34582b636
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 20b25e2974f4b0e4a6bbf6cf02c411fde3f3de1a
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330251"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686540"
 ---
 # <a name="diagnostic-namespace"></a>diagnostic 命名空间
 `diagnostics` 命名空间提供用于发出并行可视化工具标记的功能。
@@ -32,21 +34,21 @@ namespace diagnostic;
 
 ### <a name="classes"></a>类
 
-|“属性”|描述|
+|“属性”|说明|
 |----------|-----------------|
 |[marker_series 类](../profiling/marker-series-class.md)|表示由单个提供程序生成的一系列事件通道。|
 |[span 类](../profiling/span-class.md)|定义应用程序的一个阶段。|
 
 ### <a name="enumerations"></a>枚举
 
-|“属性”|描述|
+|名称|说明|
 |----------|-----------------|
 |[marker_importance 枚举](../profiling/marker-importance-enumeration.md)|表示并发可视化工具标记的重要性级别。|
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** 并发
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)

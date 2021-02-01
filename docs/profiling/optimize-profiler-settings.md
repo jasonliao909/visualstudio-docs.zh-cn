@@ -1,5 +1,6 @@
 ---
 title: 优化探查器设置 | Microsoft Docs
+description: 了解 Visual Studio 中的“性能探查器”和“诊断工具”窗口有许多不同的设置，这些设置会影响工具的总体性能。
 ms.date: 4/29/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +10,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f0629228c2fcad1f8ea36db2e4d0c67a68715e4
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 482ee640f4b84348e00f2f3da42a4dbe13f73460
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93400306"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722836"
 ---
 # <a name="optimizing-profiler-settings"></a>优化探查器设置
 

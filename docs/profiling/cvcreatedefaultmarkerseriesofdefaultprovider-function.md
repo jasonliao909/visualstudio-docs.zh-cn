@@ -1,5 +1,7 @@
 ---
 title: CvCreateDefaultMarkerSeriesOfDefaultProvider 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvCreateDefaultMarkerSeriesOfDefaultProvider（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 560ecc3d66dc2bc84d2ef301654b392aee6a42b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0802b91bb9cbbbe31cb156104bb7b5df3fda1282
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332217"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686176"
 ---
 # <a name="cvcreatedefaultmarkerseriesofdefaultprovider-function"></a>CvCreateDefaultMarkerSeriesOfDefaultProvider 函数
 创建默认提供程序的默认标记系列。
@@ -40,7 +42,7 @@ HRESULT CvCreateDefaultMarkerSeriesOfDefaultProvider(
  成功创建提供程序和标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

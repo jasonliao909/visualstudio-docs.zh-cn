@@ -1,5 +1,6 @@
 ---
 title: Start | Microsoft Docs
+description: 了解 Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: df3ccda9730be02bafb7f7d069a26193a4528d1e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: aea1032f709d2f8cebf105bce14dc081fe3b74da
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778266"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719989"
 ---
-# <a name="start"></a>Start
-Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法   。
+# <a name="start"></a>开始
+Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法。
 
 ## <a name="syntax"></a>语法
 
@@ -48,17 +49,17 @@ VSPerfCmd.exe /Start:Method /Output:FileName [Options]
 
  **User:** [`domain\`]`username` 使客户端可以用指定帐户访问监视器。
 
- **WinCounter:** `Path` [**Automark**:`n`] WinCounter 指定要作为标记包含在分析数据文件中的 Windows 性能计数器  。 **AutoMark** 以毫秒为单位指定数据文件的收集之间的间隔。
+ **WinCounter:** `Path` [**Automark**:`n`] WinCounter 指定要作为标记包含在分析数据文件中的 Windows 性能计数器。 **AutoMark** 以毫秒为单位指定数据文件的收集之间的间隔。
 
 ## <a name="invalid-options"></a>无效选项
  以下选项不能在命令行上与 **Start** 选项一起使用。
 
- **Status** **Status** 应用于进行分析的进程。 它列出进程和线程及其当前分析状态 (On/Off)。 例如，如果某个进程已停止，则 **Status** 不会在报告中对此进行指示。 **Status** 会显示该进程是否进行分析。
+ **Status Status 适用于用于被分析的进程** 。 它列出进程和线程及其当前分析状态 (On/Off)。 例如，如果某个进程已停止，则 **Status** 不会在报告中对此进行指示。 **Status** 会显示该进程是否进行分析。
 
  **Shutdown**[ **:** `Timeout`] 关闭探查器。
 
 ## <a name="example"></a>示例
- 以下示例演示如何使用 *VSPerfCmd.exe* **Start** 选项来初始化探查器。
+ 以下示例演示如何使用 VSPerfCmd.exe Start 选项来初始化探查器 。
 
 ```cmd
 VSPerfCmd.exe /Start:Sample /Output:TestApp.exe.vsp

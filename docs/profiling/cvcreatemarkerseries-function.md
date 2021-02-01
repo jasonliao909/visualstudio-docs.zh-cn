@@ -1,5 +1,7 @@
 ---
 title: CvCreateMarkerSeries 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvCreateMarkerSeries（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fc44e9e1a9a1d17d3f5b0f31515e2402e9512c55
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a80d833396644fa6c2a025dc24b6db473b2b393
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332201"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686163"
 ---
 # <a name="cvcreatemarkerseries-function"></a>CvCreateMarkerSeries 函数
 为给定提供程序创建标记系列。
@@ -49,11 +51,11 @@ _Check_return_ HRESULT CvCreateMarkerSeriesA(
  成功创建标记系列时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
  **Unicode：** CvCreateMarkerSeriesW
 
  **ANSI：** CvCreateMarkerSeriesA
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

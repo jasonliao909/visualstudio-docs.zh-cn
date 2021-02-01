@@ -1,5 +1,6 @@
 ---
 title: 了解检测数据值 | Microsoft Docs
+description: 了解检测分析方法如何记录所分析应用程序中函数调用、行和指令的详细计时信息。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,16 +12,16 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dace7b13816c63664ccb4dabfed52d1c5fb7523
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2f049ccb40d2d34c22fddbf841e36bd513db80f
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778071"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722342"
 ---
 # <a name="understand-instrumentation-data-values"></a>了解检测数据值
 
-Visual Studio 的检测  分析方法会记录所分析应用程序中函数调用、行和指令的详细计时信息
+Visual Studio 的检测分析方法会记录所分析应用程序中函数调用、行和指令的详细计时信息
 
 检测方法会在所分析二进制文件中的目标函数开头和末尾注入代码，并且是在这些函数每次调用到其他函数之前和之后注入。 注入的代码会记录以下信息：
 
@@ -32,11 +33,11 @@ Visual Studio 的检测  分析方法会记录所分析应用程序中函数调�
 
 对于记录间隔时调用堆栈中的每个函数，探查器分析会将间隔添加到函数的四个数据值中的一个或多个。 分析基于两个条件将间隔添加到函数的数据值：
 
-- 间隔是在函数的代码中还是在子函数  （函数调用的函数）中出现。
+- 间隔是在函数的代码中还是在子函数（函数调用的函数）中出现。
 
 - 在间隔中是否发生了操作系统事件。
 
-函数或数据范围的间隔的数据值称为已用非独占  、已用独占  、应用程序非独占  和应用程序独占  ：
+函数或数据范围的间隔的数据值称为已用非独占、已用独占、应用程序非独占和应用程序独占：
 
 - 函数的所有间隔都会添加到已用非独占数据值。
 
@@ -96,7 +97,7 @@ Visual Studio 的检测  分析方法会记录所分析应用程序中函数调�
 
 100 * 函数应用程序独占值/会话应用程序非独占值
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [分析性能工具数据](../profiling/analyzing-performance-tools-data.md)
 [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)

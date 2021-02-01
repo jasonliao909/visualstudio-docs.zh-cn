@@ -1,5 +1,7 @@
 ---
 title: CvWriteMessage 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvWriteMessage（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,12 +28,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 66fb584090a0b6483c18f8254eb4a96b6186d51e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 92d6b3bb37937e010bc10a685f958063e7cc3358
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332134"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686423"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函数
 向并发可视化工具跟踪文件写入一条消息。
@@ -107,11 +109,11 @@ HRESULT CvWriteMessageExVA(
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
  **Unicode：** CvWriteMessageW、CvWriteMessageVW、CvWriteMessageExW、CvWriteMessageExVW
 
  **ANSI：** CvWriteMessageA、CvWriteMessageVA、CvWriteMessageExA、CvWriteMessageExVA
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)
