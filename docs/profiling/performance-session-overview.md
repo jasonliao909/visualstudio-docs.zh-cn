@@ -1,5 +1,6 @@
 ---
 title: 性能会话概述 | Microsoft Docs
+description: 了解如何使用性能工具快速提高工作效率并提高代码的性能。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e7b23a7cbefeace19a3deaa5c1bfc05580081d39
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1fcccf6a68afa26d8fe9ab5e5a4f40466822c689
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778461"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723265"
 ---
 # <a name="performance-session-overview"></a>性能会话概述
 本概述说明分析的基础知识。 刚接触性能工作的开发者会了解 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具如何帮助他们快速提高工作效率以及提高其代码的性能。 在分析方面经验丰富的开发者可以获得特定分析工具功能和过程的概述。
@@ -41,7 +42,7 @@ ms.locfileid: "74778461"
    若要使用分析提供的信息，应具有可用于要分析的二进制文件和 Windows 操作系统的二进制文件的符号信息。
 
 ## <a name="configure-the-performance-session"></a>配置性能会话
- 若要配置分析会话，请选择要使用的分析方法和要收集的数据。 分析工具**性能向导**可以引导你完成基本配置，你可以使用性能会话属性页添加更多选项：
+ 若要配置分析会话，请选择要使用的分析方法和要收集的数据。 分析工具 **性能向导** 可以引导你完成基本配置，你可以使用性能会话属性页添加更多选项：
 
 - 分析方法包括采样、跟踪和内存分配。
 
@@ -50,14 +51,14 @@ ms.locfileid: "74778461"
   可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目中配置性能会话作为项目解决方案的一部分，也可以通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 分析任意二进制文件。 可以在性能会话属性页中指定会话属性，也可以使用分析向导。
 
 ## <a name="collect-profiling-data"></a>收集分析数据
- 从“性能资源管理器”  开始收集分析数据。 可以暂停和恢复分析以限制收集的数据量。 还可以附加到已在运行的进程。
+ 从“性能资源管理器”开始收集分析数据。 可以暂停和恢复分析以限制收集的数据量。 还可以附加到已在运行的进程。
 
- 应用程序启动之后，“数据收集控件”  窗口会立即出现在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中。 从“数据收集控件”  窗口，可以通过暂停和恢复收集过程来分析应用程序的特定部分。 还可以使用“数据收集控件”  窗口将标记插入到收集的数据中。 标记是用户定义的数据点，在配置文件视图中显示，可以用于筛选分析数据。
+ 应用程序启动之后，“数据收集控件”窗口会立即出现在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中。 从“数据收集控件”窗口，可以通过暂停和恢复收集过程来分析应用程序的特定部分。 还可以使用“数据收集控件”窗口将标记插入到收集的数据中。 标记是用户定义的数据点，在配置文件视图中显示，可以用于筛选分析数据。
 
  当目标应用程序关闭时，分析工具会生成分析数据文件 (*.vsp)，并在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 中显示“摘要报告”视图。
 
 ## <a name="analyze-the-data-and-identify-performance-issues"></a>分析数据并确定性能问题
- 结束分析运行时，数据会进行分析，摘要会显示在分析工具“性能报告”  视图窗口中。 会为目标应用程序的调用堆栈和各个函数收集分析数据。 报告视图显示应用程序的进程、线程、模块、函数和源代码行的数据范围的性能分析。 函数的分析数据值包括以下这些：
+ 结束分析运行时，数据会进行分析，摘要会显示在分析工具“性能报告”视图窗口中。 会为目标应用程序的调用堆栈和各个函数收集分析数据。 报告视图显示应用程序的进程、线程、模块、函数和源代码行的数据范围的性能分析。 函数的分析数据值包括以下这些：
 
 - 在函数以及函数调用的子函数中所用的总时间（非独占值）。
 

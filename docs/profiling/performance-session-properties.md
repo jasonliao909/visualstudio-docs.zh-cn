@@ -1,5 +1,6 @@
 ---
 title: 性能会话属性 | Microsoft Docs
+description: 了解如何通过性能会话配置用于确定如何分析应用程序的设置。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,20 +13,20 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b3bafa976c8e57f468a3f3f59a3b6b19308fd1b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 02ddf15251cf40dd340465563068b114940f9318
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74772197"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721224"
 ---
 # <a name="performance-session-properties"></a>性能会话属性
 
-通过**性能会话**可以配置用于确定如何分析应用程序的设置。 它还存储为分析会话生成的报告。
+通过 **性能会话** 可以配置用于确定如何分析应用程序的设置。 它还存储为分析会话生成的报告。
 
-可通过运行**性能向导**或通过手动创建会话来创建**性能会话**。 **性能会话**创建之后，**性能会话**会显示在“性能资源管理器”中。
+可通过运行 **性能向导** 或通过手动创建会话来创建 **性能会话**。 **性能会话** 创建之后，**性能会话** 会显示在“性能资源管理器”中。
 
-若要查看**性能会话**属性，请在“性能资源管理器”  中选择会话名，右键单击它，然后选择“属性”  。
+若要查看 **性能会话** 属性，请在“性能资源管理器”中选择会话名，右键单击它，然后选择“属性”。
 
 性能会话具有以下属性页：
 
@@ -33,7 +34,7 @@ ms.locfileid: "74772197"
 
 这些设置使您能够选择分析方法、添加 .NET 对象集合和生存期数据，以及指定默认报告位置和命名约定。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 [如何：选择收集方法](../profiling/how-to-choose-collection-methods.md)
 
@@ -60,7 +61,7 @@ ms.locfileid: "74772197"
 有关详细信息，请参阅[如何：选择采样事件](../profiling/how-to-choose-sampling-events.md)
 
 ## <a name="binary"></a>二进制
-通过这些设置可以指定是否要将检测的二进制文件重新定位到另一个位置。 例如，如果在分析 My.DLL 并且未选择重新定位检测的二进制文件，则会创建名为 My.Orig.DLL 的 My.DLL 备份副本    。 随后，会通过插入探测以收集数据来修改 My.DLL  。 如果决定重新定位检测的二进制文件，则原始二进制文件不会重命名，并且检测的二进制文件会复制到指定位置以供在检测过程中使用。
+通过这些设置可以指定是否要将检测的二进制文件重新定位到另一个位置。 例如，如果在分析 My.DLL 并且未选择重新定位检测的二进制文件，则会创建名为 My.Orig.DLL 的 My.DLL 备份副本。 随后，会通过插入探测以收集数据来修改 My.DLL。 如果决定重新定位检测的二进制文件，则原始二进制文件不会重命名，并且检测的二进制文件会复制到指定位置以供在检测过程中使用。
 
 有关详细信息，请参阅[如何：指定要启动的二进制文件](../profiling/how-to-specify-the-binary-to-start.md)
 
@@ -70,9 +71,9 @@ ms.locfileid: "74772197"
 
 ## <a name="instrumentation"></a>检测
 
-通过这些设置可以收集为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 网页中的 JScript 代码收集性能数据，并指定要在检测过程之前或之后发生的任何**检测前**和**检测后**事件。
+通过这些设置可以收集为 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 网页中的 JScript 代码收集性能数据，并指定要在检测过程之前或之后发生的任何 **检测前** 和 **检测后** 事件。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 [如何：分析网页中的 JavaScript 代码](../profiling/how-to-profile-javascript-code-in-web-pages.md)
 
@@ -88,7 +89,7 @@ ms.locfileid: "74772197"
 
 在分析过程中，可以从事件跟踪提供程序收集数据。 可以使用 VSPerfReport.exe 命令行工具 `/calltrace` 选项查看数据。 有关 Windows 事件跟踪 (ETW) 的详细信息，请参阅[关于事件跟踪](/windows/win32/etw/about-event-tracing)。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 [如何：收集 Windows 事件跟踪 (ETW) 数据](../profiling/how-to-collect-event-tracing-for-windows-etw-data.md)
 
@@ -96,7 +97,7 @@ ms.locfileid: "74772197"
 
 ## <a name="windows-counters"></a>Windows 计数器
 
-通过此选项可以从 Windows 性能监视器计数器收集数据。 若要收集此数据，请选中标记为“收集 Windows 性能计数器”  的复选框。 收集间隔可以在“收集间隔”  框中设置。 还可以使用“计数器类别”  和“实例”  。 提供了一些默认 Windows 性能监视器计数器。
+通过此选项可以从 Windows 性能监视器计数器收集数据。 若要收集此数据，请选中标记为“收集 Windows 性能计数器”的复选框。 收集间隔可以在“收集间隔”框中设置。 还可以使用“计数器类别”和“实例”。 提供了一些默认 Windows 性能监视器计数器。
 
  有关详细信息，请参阅[如何：收集 Windows 计数器数据](../profiling/how-to-collect-windows-counter-data.md)。
 
@@ -104,7 +105,7 @@ ms.locfileid: "74772197"
 
 通过这些设置可以指定 [VSInstr](../profiling/vsinstr.md) 命令行分析工具的一个或多个选项，从而将选项添加到检测过程。 应用程序使用多个版本时，还可以指定要分析的公共运行时版本。
 
-有关详情，请参阅：
+有关详细信息，请参阅：
 
 [如何：指定 .NET Framework 运行时](../profiling/how-to-specify-the-dotnet-framework-runtime.md)
 

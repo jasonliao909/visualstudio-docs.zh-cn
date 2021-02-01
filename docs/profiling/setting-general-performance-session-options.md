@@ -1,5 +1,6 @@
 ---
 title: 设置性能会话的常规选项 | Microsoft Docs
+description: 了解如何为分析工具性能会话设置收集方法和分析数据命名约定。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 698905f5e924bd8ddd424207a508ceaa4562ec57
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 2691d9d8868343291f3be4d9f5b3002e24605b85
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85544464"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720184"
 ---
 # <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 

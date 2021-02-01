@@ -1,5 +1,6 @@
 ---
 title: VSPerfCLREnv | Microsoft Docs
+description: 了解 VSPerfCLREnv 工具如何用于设置配置 .NET Framework 应用程序所需的环境变量。
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 828768b59e4ab465e4723d399d406b994fa8c8ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1aa0d4a476c64ec20f0a378398cfb95e364a07e3
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330424"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719209"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 
@@ -101,7 +102,7 @@ VSPerfCmd /Attach:MyService.exe
 
 |选项|说明|
 |------------|-----------------|
-|**Off**|删除用于标准 .NET 分析的环境变量。 在使用了非全局的 VSPerfClrEnv 选项设置探查器环境变量后，使用此选项。|
+|关闭|删除用于标准 .NET 分析的环境变量。 在使用了非全局的 VSPerfClrEnv 选项设置探查器环境变量后，使用此选项。|
 |**GlobalOff**|删除用于全局 .NET 分析的环境变量。 当应用程序由操作系统而非探查器启动时，使用此选项。|
 
 ## <a name="remarks"></a>备注
@@ -110,6 +111,6 @@ VSPerfCmd /Attach:MyService.exe
 
 如果在分析期间未设置正确的环境，在分析期间将报告警告，并且将无法正确地解析托管函数名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [通过命令行分析](../profiling/using-the-profiling-tools-from-the-command-line.md)

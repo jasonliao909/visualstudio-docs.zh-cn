@@ -18,18 +18,18 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: f8c0cf21d6d9055f183d15728fb63118ffb87e9c
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9e0348c1f6c51f0a82328814be671d8f44e3d4a7
+ms.sourcegitcommit: 3922edfe67063e1ede418cdbf6aa6293117c4855
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903996"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98773347"
 ---
 # <a name="class-view-and-object-browser-icons"></a>“类视图”和“对象浏览器”图标
 
 “类视图”和“对象浏览器”显示表示代码实体的图标，如命名空间、类、函数和变量 。 下表展示和描述了图标。
 
-|图标|描述|图标|描述|
+|图标|说明|图标|描述|
 |----------|-----------------|----------|-----------------|
 |![命名空间符号](../ide/media/vxnamespace_icon.gif)|命名空间|![声明符号](../ide/media/vxmethod_icon.gif)|方法或函数|
 |![“类”图标](../ide/media/vxclass_icon.gif)|类|![运算符符号](../ide/media/vxoperator_icon.gif)|运算符|
@@ -65,6 +65,9 @@ ms.locfileid: "94903996"
 
 > [!NOTE]
 > 如果项目包含在源代码管理数据库中，则可能会显示更多信号图标来指示源代码管理状态，如签入或签出状态。
+
+> [!TIP]
+> 若要查看 Visual Studio 中显示的应用程序图像和图标的详细信息，请下载 [Visual Studio 图像库](https://www.microsoft.com/download/details.aspx?id=35825)。
 
 ## <a name="see-also"></a>请参阅
 

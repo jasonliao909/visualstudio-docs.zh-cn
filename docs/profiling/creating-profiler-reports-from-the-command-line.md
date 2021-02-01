@@ -1,5 +1,6 @@
 ---
 title: 分析命令行 - 创建报告
+description: 了解如何使用 VSPerfReport 命令行工具从分析数据文件创建 .xml 或 .csv（逗号分隔值）报告。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5eb0f1fa0f9bbe760b1ea89074d02044cf26ab7d
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 1f57e372ec4fa3215a9f553403f513dc91b43016
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808820"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686241"
 ---
 # <a name="create-profiler-reports-from-the-command-line"></a>通过命令行创建探查器报告
 使用 VSPerfReport 命令行工具可从分析数据 (.vsp) 文件创建 .xml 或逗号分隔值 (.csv) 报告     。 VSPerfReport 报告类型非常类似基于表的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面视图。 可以筛选报告，使之仅显示您的代码以及分析数据文件中的一段。 有关详细信息，请参阅 [VSPerfReport](../profiling/vsperfreport.md)。

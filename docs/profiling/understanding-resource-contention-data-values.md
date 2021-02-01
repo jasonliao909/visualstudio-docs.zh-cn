@@ -1,5 +1,6 @@
 ---
 title: 了解资源争用数据值 | Microsoft Docs
+description: 了解资源争用分析如何收集当应用程序中的争用线程访问共享资源时被强制等待的详细信息。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f522d1854cae86d9dc6e757ef0c9a62f4511800
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1a724c360641926bcb64552f6f26e92d3c524011
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779982"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722199"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解资源争用数据值
 

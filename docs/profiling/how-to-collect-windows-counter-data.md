@@ -1,5 +1,7 @@
 ---
 title: 收集 Windows 计数器数据 | Microsoft Docs
+description: Windows 计数器用于检测分析。 了解如何收集 Windows 计数器数据，以及如何将分析限制为单个收集间隔。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 79ab9869f71fa8630b070c03d21ea4f9a6113622
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ccbdf9afb843c8bdac2d904dc22375a4a69e733a
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852636"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801045"
 ---
 # <a name="how-to-collect-windows-counter-data"></a>如何：收集 Windows 计数器数据
 

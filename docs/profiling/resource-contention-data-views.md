@@ -1,5 +1,6 @@
 ---
 title: 资源争用数据视图 | Microsoft Docs
+description: 了解有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e30589a7c58a756a981ed8a690afe4b052aeaf0b
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25dc334819c4b32bf74822e46dd3251919f621bf
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771525"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720327"
 ---
 # <a name="resource-contention-data-views"></a>资源争用数据视图
 本节介绍有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。
@@ -27,7 +28,7 @@ ms.locfileid: "74771525"
 
  显示分析数据的图形时间线，并列出参与大多数阻止事件的函数和资源。
 
-- [“调用树”视图](../profiling/call-tree-view-contention-data.md)
+- [“调用关系树”视图](../profiling/call-tree-view-contention-data.md)
 
  显示表示执行路径的层次结构树和分析运行期间函数的资源争用数据。
 
@@ -67,7 +68,7 @@ ms.locfileid: "74771525"
 
  按进程和线程列出资源争用。
 
-## <a name="reference"></a>引用
-- [“函数详细信息”视图](../profiling/function-details-view.md)
+## <a name="reference"></a>参考
+- [函数详细信息视图](../profiling/function-details-view.md)
 
  显示所选函数和调用所选函数及被所选函数调用的函数之间的关系图形图表。

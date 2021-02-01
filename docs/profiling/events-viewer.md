@@ -1,5 +1,7 @@
 ---
 title: 事件查看器 | Microsoft Docs
+description: 了解通用事件查看器，它有助于在 Visual Studio 探查器中更好地诊断应用的运行情况。
+ms.custom: SEO-VS-2020
 ms.date: 4/30/2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -9,12 +11,12 @@ ms.author: sashe
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: 0be00f2333a2e732d9ba4472004c383b132c0bf2
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 6aef8e72f416923aa647a8b3a412ee701ece18dd
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075060"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801408"
 ---
 # <a name="events-viewer"></a>事件查看器
 

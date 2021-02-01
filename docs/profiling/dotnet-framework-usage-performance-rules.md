@@ -1,5 +1,7 @@
 ---
 title: .NET Framework 使用性能规则 | Microsoft Docs
+description: 了解 .NET Framework 使用情况类别中的性能规则。 确定可优化的特定方法，并确定更通用的使用模式。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ab573755-6370-48aa-853d-a7321c424c79
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac78ffb3455940cf2379af44ff5c2bc5870dc684
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: cb6bb10f948e7aa9d97491949222c3cb0d15ba66
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85531997"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801301"
 ---
 # <a name="net-framework-usage-performance-rules"></a>.NET Framework 使用情况性能规则
 .Net Framework 使用类别中的性能规则标识可以优化的特定方法，并且还标识可调查性能问题的更为通用的使用模式，例如垃圾回收和锁争用。

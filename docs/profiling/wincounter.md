@@ -1,5 +1,6 @@
 ---
 title: WinCounter | Microsoft Docs
+description: 了解 WinCounter 选项，尤其是它指定了在分析运行过程中以设定间隔收集的 Windows 性能计数器或应用程序性能计数器。
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: ff319ffc-f249-4c3f-9eb2-06e392e3ae80
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 672d472d4e592782f7ae06920c518b154fba6cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 595a8003992c92871a8476743288d3072aff63c8
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329883"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723044"
 ---
 # <a name="wincounter"></a>WinCounter
 **WinCounter** 选项指定在分析运行过程中以设定时间间隔收集的 Windows 性能计数器或应用程序性能计数器。 Windows 性能计数器和应用程序性能计数器在分析数据文件中列为标记。 可以用单独的选项指定多个要收集的性能计数器。
@@ -37,7 +38,7 @@ VSPerfCmd.exe /Start:Method /Wincounter:Path [/WinCounter:Path] [AutoMark:Millis
 ## <a name="required-options"></a>必需选项
  **WinCounter** 选项只能与 **Start** 选项一起使用。
 
- **Start:** `Method` “Start”选项可将探查器初始化为指定的分析方法  。
+ **Start:** `Method` “Start”选项可将探查器初始化为指定的分析方法。
 
 ## <a name="exclusive-options"></a>独占选项
  **AutoMark** 选项只能与 **WinCounter** 选项一起使用。

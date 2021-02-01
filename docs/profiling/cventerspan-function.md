@@ -1,5 +1,7 @@
 ---
 title: CvEnterSpan 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvEnterSpan（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -24,12 +26,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a5bb034d4a2501175d117256364082966a97af8a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50a68d58d6a9b2564c732605075811e8bc99721f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328964"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686514"
 ---
 # <a name="cventerspan-function"></a>CvEnterSpan 函数
 标记新范围的起始位置。
@@ -118,11 +120,11 @@ HRESULT CvEnterSpanExVA(
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
  **Unicode：** CvEnterSpanW、CvEnterSpanVW、CvEnterSpanExW、CvEnterSpanExVW
 
  **ANSI：** CvEnterSpanA、CvEnterSpanVA、CvEnterSpanExA、CvEnterSpanExVW
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

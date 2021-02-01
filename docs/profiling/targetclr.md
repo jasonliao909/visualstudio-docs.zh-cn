@@ -1,5 +1,6 @@
 ---
 title: TargetCLR | Microsoft Docs
+description: 了解“TargetCLR”选项如何指定应用程序中加载 CLR 的多个版本时要分析的公共语言运行时 (CLR) 的版本。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: f9732480-287f-40f1-a4ff-b112e143b940
@@ -9,15 +10,15 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fffcab1d841840c15957e8dae0ff0f87b20de28d
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dff098dc5b893ce394698118d53ae6a96fc8b28a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74771578"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719794"
 ---
 # <a name="targetclr"></a>TargetCLR
-“TargetCLR”  选项指定应用程序中加载 CLR 的多个版本时要分析的公共语言运行时 (CLR) 的版本。
+“TargetCLR”选项指定应用程序中加载 CLR 的多个版本时要分析的公共语言运行时 (CLR) 的版本。
 
  默认情况下，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具以应用程序加载的第一个 CLR 版本为目标。
 
@@ -28,10 +29,10 @@ VSPerfCmd.exe {/Launch:AppName | /Attach:PID} /TargetCLR[:ClrVersion] [Options]
 ```
 
 #### <a name="parameters"></a>参数
- `ClrVersion` CLR 的版本号。 使用版本格式 vN.N.NNNNN  。
+ `ClrVersion` CLR 的版本号。 使用版本格式 vN.N.NNNNN。
 
 ## <a name="required-options"></a>必需选项
-  “TargetCLR”选项只能与“启动”  或“附加”  选项一起使用。
+ “TargetCLR”选项只能与“启动”或“附加”选项一起使用。
 
  **Launch:** `AppName` 启动指定的应用程序并开始分析。
 

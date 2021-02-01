@@ -1,5 +1,6 @@
 ---
 title: StopProfile | Microsoft Docs
+description: 了解 StopProfile 函数，以及该函数如何将指定分析级别的计数器设置为 0（关闭）。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a5492d2bbd33e6b250b564532c929234d748506c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f2cfffe78264f5721bbf3f3434199a542ec1ce14
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778227"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722680"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函数将指定分析级别的计数器设置为 0（关闭）。
@@ -32,9 +33,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 #### <a name="parameters"></a>参数
  `Level`
 
- 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一  ：
+ 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一：
 
-|枚举器|说明|
+|枚举器|描述|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程包含的所有线程。|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StopProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：
 
-|枚举器|说明|
+|枚举器|描述|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|分析元素 ID 不存在。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析级别不存在。|
@@ -107,5 +108,5 @@ void ExerciseStopProfile()
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)

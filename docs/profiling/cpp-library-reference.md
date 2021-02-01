@@ -1,5 +1,7 @@
 ---
 title: C++ 库参考 | Microsoft Docs
+description: 请参阅此部分获取并行可视化工具 SDK 参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,12 +12,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d15b749d0564010cf6a67527f456a76a9db885cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: efe02bbd2e31792e1feb306ba331fa3bc4f736f9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329188"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723005"
 ---
 # <a name="c-library-reference"></a>C++ 库参考
 
@@ -28,6 +30,6 @@ ms.locfileid: "85329188"
 
 [Concurrency 命名空间（并发可视化工具）](../profiling/concurrency-namespace-concurrency-visualizer.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [并发可视化工具 SDK](../profiling/concurrency-visualizer-sdk.md)

@@ -1,5 +1,7 @@
 ---
 title: 自定义报表视图列 | Microsoft Docs
+description: 你可以在 Visual Studio 性能工具视图中添加、删除和重新排列列，例如在“函数”视图、“进程”视图和“调用方/被调用方”视图中。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: edc58c74daf3cdd1e80256f9915936f4cef6d3fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 23b12ca396a91fad440dc057b67e258194732236
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851172"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800440"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自定义报表视图列
 Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：

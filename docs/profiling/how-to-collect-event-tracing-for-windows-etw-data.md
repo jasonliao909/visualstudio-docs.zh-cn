@@ -1,5 +1,7 @@
 ---
 title: 收集 Windows 事件跟踪 (ETW) 数据 | Microsoft Docs
+description: 了解如何使用 Windows 事件跟踪 (ETW) 来确定应用程序中出现性能问题的位置。 可以通过 VSPerfReport.exe 查看数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc5f1877ff6530dbe0bbc888824a6ae60215eca1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 853e27c51b626ef63a7e0924d4c0164a6386cda2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851263"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801544"
 ---
 # <a name="how-to-collect-event-tracing-for-windows-etw-data"></a>如何：收集 Windows 事件跟踪 (ETW) 数据
 

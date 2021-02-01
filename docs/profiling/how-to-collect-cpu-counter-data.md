@@ -1,5 +1,7 @@
 ---
 title: 收集 CPU 计数器数据 | Microsoft Docs
+description: 了解如何使用 CPU（硬件）事件计数器来收集特定于硬件的性能数据。 本文列出了各种类型的事件。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -13,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 96934250bc00b02630b60e83d50ed4b274db0323
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: e59214640ab3048f94b2801ad6b6b2d7e12d2e25
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851276"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801563"
 ---
 # <a name="how-to-collect-cpu-counter-data"></a>如何：收集 CPU 计数器数据
 
@@ -30,9 +32,9 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如
 
 - 平台事件 - 耦合到特定 CPU 的 CPU 事件。
 
-  可移植事件包括常规事件，如已撤回指令和非终止的周期、CPU 缓冲区事件、分支的事件和 L2 缓存事件。 可用的平台事件计数器由处理器制造商确定。
+可移植事件包括常规事件，如已撤回指令和非终止的周期、CPU 缓冲区事件、分支的事件和 L2 缓存事件。 可用的平台事件计数器由处理器制造商确定。
 
-  可在可移植计数器和平台计数器之间共享事件的类别。 例如，以下类别的数据经常适用于这两种类型：
+可在可移植计数器和平台计数器之间共享事件的类别。 例如，以下类别的数据经常适用于这两种类型：
 
 - 内存事件。
 
@@ -40,7 +42,7 @@ CPU 事件计数器用于收集特定于硬件的性能数据。 本文演示如
 
 - 分支事件。
 
-  可以在探查器中通过两种方式收集性能计数器数据：
+可以在探查器中通过两种方式收集性能计数器数据：
 
 - 通过检测进行分析时，从一个或多个计数器中收集数据。
 

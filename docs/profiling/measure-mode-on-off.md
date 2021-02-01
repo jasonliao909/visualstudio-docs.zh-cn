@@ -1,5 +1,6 @@
 ---
 title: 开启/关闭度量模式 | Microsoft Docs
+description: 了解如何使用“打开/关闭度量模式”工具精确测量时间线中的时间长度。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: fd3eaf1df585ac9c95355c0677934bee1ba3c09a
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: dbe8ea27f16dc8b120380989c15b1838ea9260d0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62830819"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718988"
 ---
 # <a name="measure-mode-onoff"></a>打开/关闭度量模式
 通过使用此工具，可以精确地测量时间线中的时间长度。 若要启用度量模式，请单击“度量”按钮（它具有一个标尺图标），然后在时间线中拖动。 注意在拖动时，指针下面的区域会用黄色突出显示，度量的时间显示在工具栏中该按钮的右侧。 拖动时动态计算此值，以便能够立即看到特定事件占用的时间。 释放鼠标按钮后，时间值保持可见。
@@ -27,4 +28,4 @@ ms.locfileid: "62830819"
 ## <a name="see-also"></a>另请参阅
 - [管理通道](../profiling/manage-channels.md)
 - [缩放控件（线程视图）](../profiling/zoom-control-threads-view.md)
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+- [线程视图](../profiling/threads-view-parallel-performance.md)

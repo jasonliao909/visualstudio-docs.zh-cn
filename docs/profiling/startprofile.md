@@ -1,5 +1,6 @@
 ---
 title: StartProfile | Microsoft Docs
+description: 了解 StartProfile 函数，以及该函数如何将指定分析级别的计数器设置为 1（开启）。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ff4b4973bff395cea6b73219a2098543ee6819e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 1522cdfadb5de20a2413f584c710baca15883f9c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778253"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719833"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 函数将指定分析级别的计数器设置为 1（开启）。
@@ -32,9 +33,9 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 #### <a name="parameters"></a>参数
  `Level`
 
- 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一  ：
+ 指示性能数据集合可应用到的分析级别。 以下 PROFILE_CONTROL_LEVEL 枚举器可用于指示性能数据集合可应用到的三个级别之一：
 
-|枚举器|说明|
+|枚举器|描述|
 |----------------|-----------------|
 |PROFILE_GLOBALLEVEL|全局级别设置影响分析运行中的所有进程和线程。|
 |PROFILE_PROCESSLEVEL|进程级别设置影响指定进程中的所有线程。|
@@ -47,7 +48,7 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
 ## <a name="property-valuereturn-value"></a>属性值/返回值
  函数通过使用 **PROFILE_COMMAND_STATUS** 枚举来指示成功或失败。 返回值可以是下列值之一：
 
-|枚举器|说明|
+|枚举器|描述|
 |----------------|-----------------|
 |PROFILE_ERROR_ID_NOEXIST|分析元素 ID 不存在。|
 |PROFILE_ERROR_LEVEL_NOEXIST|指定的分析级别不存在。|
@@ -63,12 +64,12 @@ PROFILE_COMMAND_STATUS PROFILERAPI StartProfile(
  当启动/停止状态和挂起/继续状态都为 ON 时，该级别的分析状态为 ON。 对于要分析的线程，该线程的全局、进程和线程级别状态都必须为 ON。
 
 ## <a name="net-framework-equivalent"></a>.NET Framework 等效项
- Microsoft.VisualStudio.Profiler.dll 
+ Microsoft.VisualStudio.Profiler.dll
 
 ## <a name="function-information"></a>函数信息
- 标头：在 VSPerf.h 中声明 
+ 标头：在 VSPerf.h 中声明
 
- 导入库：VSPerf.lib 
+ 导入库：VSPerf.lib
 
 ## <a name="example"></a>示例
  以下示例演示 StartProfile 函数调用。
@@ -107,5 +108,5 @@ void ExerciseStartProfile()
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 探查器 API 参考（本机）](../profiling/visual-studio-profiler-api-reference-native.md)

@@ -1,5 +1,6 @@
 ---
 title: 分析 ASP.NET 负载测试 | Microsoft Docs
+description: 了解如何从在 ASP.NET 网站项目上运行的自动 Microsoft 测试管理器 Web 测试收集分析数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 455ca0d2032e1f30fc5f70eaac9518b2774b03c7
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 7ade0fc4b83832145132d925fe43feb6b3b0ef10
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90038395"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723252"
 ---
 # <a name="profile-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：

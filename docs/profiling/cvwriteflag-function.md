@@ -1,5 +1,7 @@
 ---
 title: CvWriteFlag 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvWriteFlag（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +20,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 396edc736f61ae76aab7263bcd15bb0bfad13204
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7b3c82a84e9a6523a0a969639f26b28d64cdfc9e
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85332154"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686462"
 ---
 # <a name="cvwriteflag-function"></a>CvWriteFlag 函数
 向并发可视化工具跟踪文件写入一个标志。
@@ -77,11 +79,11 @@ HRESULT CvWriteFlagExVA(
  成功写入消息时返回 S_OK。 出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
  **Unicode：** CvWriteFlagExW、CvWriteFlagExVW
 
  <strong>ANSI：</strong>CvWriteFlagExA、CvWriteFlagExVA
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

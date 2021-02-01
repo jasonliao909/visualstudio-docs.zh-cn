@@ -1,5 +1,7 @@
 ---
 title: “函数”视图 - .NET 内存检测数据 | Microsoft Docs
+description: 获取有关使用检测方法收集的 .NET 内存分配分析数据的“函数”视图的信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: eba1f0d1434d253aaca698d3ae582e3c507c2d23
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5a245ebffc0aa0efaec8df1ec0c5b93b2d99228d
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779228"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801537"
 ---
 # <a name="functions-view---net-memory-instrumentation-data"></a>“函数”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配分析数据的“函数”视图会列出分析运行期间分配内存的函数。 函数行报告分配的大小和数量，以及函数的计时数据。
@@ -97,7 +99,7 @@ ms.locfileid: "74779228"
 |**最长应用程序独占时间**|对此函数的调用的最长应用程序独占时间。|
 |**最短应用程序独占时间**|对此函数的调用的最短应用程序独占时间。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)
 - [“函数”视图 - 采样](../profiling/functions-view-dotnet-memory-sampling-data.md)
 - [“函数”视图](../profiling/functions-view-instrumentation-data.md)

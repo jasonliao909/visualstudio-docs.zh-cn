@@ -1,5 +1,6 @@
 ---
 title: 不显示磁盘活动（线程视图）| Microsoft Docs
+description: 了解无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: a88679d5423fc0ed2340638e5e1634bb3c81a20c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 25ef8fd7d149a489458f28a7e276476c8fa09776
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794449"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722888"
 ---
 # <a name="no-disk-activity-to-show-threads-view"></a>没有要显示的磁盘活动（线程视图）
 无法显示磁盘 I/O 通道中当前时间范围的磁盘活动。 如果缩小或滚动，可能会显示磁盘活动。 此外，请确保没有磁盘通道处于隐藏状态。
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

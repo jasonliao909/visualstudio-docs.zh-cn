@@ -1,5 +1,7 @@
 ---
 title: “函数”视图 — 争用数据 | Microsoft Docs
+description: 获取争用数据的“函数”报告视图的详细信息，该视图列出了分析运行期间阻止执行的函数。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5874ffc7b4d304d1eaacd78032d657fe6ff31d94
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74780047"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801662"
 ---
 # <a name="functions-view---contention-data"></a>“函数”视图 - 争用数据
 争用数据的“函数”报告视图列出了分析运行期间阻止执行的函数。

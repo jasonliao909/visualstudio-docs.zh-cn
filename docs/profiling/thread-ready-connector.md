@@ -1,5 +1,6 @@
 ---
 title: 线程就绪连接器 | Microsoft Docs
+description: 了解在单击阻塞段以查看调用堆栈及其取消阻塞的堆栈时，还可能会显示线程就绪连接器。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 20842cc277246bba6c9e05c6c59a937a89b5f6bc
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 789c60be4f31d053c4ff9f95121bf8f0e0d4689e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62943498"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718780"
 ---
 # <a name="thread-ready-connector"></a>线程就绪连接器
 单击阻止段以查看调用堆栈及其解除阻止的堆栈时，还可能会显示线程就绪连接器。 如果解除阻止的事件在当前进程中的另一个线程上发生，则线程就绪连接器可直观地标识允许阻止的线程继续执行的线程和执行段。

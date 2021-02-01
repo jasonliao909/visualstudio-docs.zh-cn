@@ -1,5 +1,6 @@
 ---
 title: “模块”视图 | Microsoft Docs
+description: 了解“模块”视图如何列出分析数据的模块。 每个模块是一个层次结构树的根节点。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -15,19 +16,19 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d9146b3f724b4883f21a43689a495eef252777
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d0ff17c128af78c1772ad85597153332a0848062
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778513"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722940"
 ---
 # <a name="modules-view"></a>“模块”视图
 “模块”视图列出分析数据的模块。 每个模块是一个层次结构树的根节点。 模块的分析函数在模块节点下列出。 如果分析数据是使用采样方法收集的，则行信息在函数节点下列出，指令指针数据在行节点下列出。
 
  展开或折叠模块名称可显示或关闭模块性能数据的视图。
 
- 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”  。 可以通过单击列名对数据进行排序。 有关详细信息，请参阅[如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)。
+ 若要添加和删除列，请在报告窗口中单击鼠标右键，然后选择“添加/删除列”。 可以通过单击列名对数据进行排序。 有关详细信息，请参阅[如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)。
 
  “模块”视图中的可用列取决于用于收集数据的分析方法（采样法或检测法）以及是否在分析运行期间收集 .NET 内存数据。
 

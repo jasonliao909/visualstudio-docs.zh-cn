@@ -1,5 +1,6 @@
 ---
 title: 设置当前会话 | Microsoft Docs
+description: 了解如何在“性能资源管理器”中打开多个性能会话，然后选择一个可见性能会话，将其设置为当前会话。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -16,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c729a9e8de7a27da5f5c81260c505bc654c33344
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 4a704b88f40f5d89b6bcdcccd7e4158411d9999c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851731"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721861"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：设置当前会话
 

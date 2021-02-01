@@ -1,5 +1,6 @@
 ---
 title: 从命令行使用分析工具 | Microsoft Docs
+description: 使用 Visual Studio 分析工具的命令行工具分析应用程序，以及使用批处理文件和脚本自动执行分析。
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +16,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: dea893340c038909057dd652472c10c8264786a5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9d6e159e28a1401548f0cda7b795a5bbe70a257b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85328351"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723226"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>通过命令行使用分析工具
 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具在命令提示符处分析应用程序，以及使用批处理文件和脚本自动执行分析。 还可以在命令提示符处生成报告文件。 可以使用轻量级独立探查器在未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上收集数据。
@@ -32,12 +33,12 @@ ms.locfileid: "85328351"
 
 | 任务 | 相关内容 |
 | - | - |
-| **设置符号的位置：** 若要显示函数和参数的名称，探查器必须可以访问分析的二进制文件的符号 (.pdb) 文件  。 这些文件应包括用于 Microsoft 操作系统以及要在分析中查看的应用程序的符号文件。 可以使用公共 Microsoft 符号服务器确保具有用于 Microsoft 二进制文件的正确 .pdb 文件  。 | -   [如何：通过命令行指定符号文件位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
+| **设置符号的位置：** 要显示函数和参数的名称，探查器必须可以访问分析的二进制文件的符号 (.pdb) 文件。 这些文件应包括用于 Microsoft 操作系统以及要在分析中查看的应用程序的符号文件。 可以使用公共 Microsoft 符号服务器确保具有用于 Microsoft 二进制文件的正确 .pdb 文件。 | -   [如何：通过命令行指定符号文件位置](../profiling/how-to-specify-symbol-file-locations-from-the-command-line.md) |
 | **分析应用程序：** 用于分析目标应用程序的命令行工具和选项取决于应用程序的类型、分析方法以及目标是托管还是本机应用程序。 | -   [通过命令行使用分析方法](../profiling/using-profiling-methods-to-collect-performance-data-from-the-command-line.md)<br />-   [分析独立应用程序](../profiling/command-line-profiling-of-stand-alone-applications.md)<br />-   [分析 ASP.NET Web 应用程序](../profiling/command-line-profiling-of-aspnet-web-applications.md)<br />-   [分析服务](../profiling/command-line-profiling-of-services.md) |
-| **创建 .xml 和 .csv 报告：** 在命令提示符处进行分析会创建可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面中查看的数据文件。 还可以使用 VSPerfReport 命令行工具生成数据的 .xml 或逗号分隔值 (.csv) 文件   。 | -   [通过命令行创建探查器报告](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
+| **创建 .xml 和 .csv 报告：** 在命令提示符处进行分析会创建可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 界面中查看的数据文件。 还可以使用 VSPerfReport 命令行工具生成数据的 .xml 或逗号分隔值 (.csv) 文件 。 | -   [通过命令行创建探查器报告](../profiling/creating-profiler-reports-from-the-command-line.md)<br />-   [VSPerfReport](../profiling/vsperfreport.md) |
 | **在没有 Visual Studio 的计算机上分析代码：** 可以使用分析工具独立探查器在未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上为应用程序收集数据。 | -   [如何：安装独立探查器](../profiling/how-to-install-the-stand-alone-profiler.md) |
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 - [命令行分析工具参考](../profiling/command-line-profiling-tools-reference.md)
 
 ## <a name="see-also"></a>另请参阅

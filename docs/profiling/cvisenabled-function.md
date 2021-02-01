@@ -1,5 +1,7 @@
 ---
 title: CvIsEnabled 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvIsEnabled（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +16,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 53de9ee136c9bd12c732339b4c1c8a223fe1a3ac
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 57f1bb96480fe054c729b11a3fabd311407fa858
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85330068"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686475"
 ---
 # <a name="cvisenabled-function"></a>CvIsEnabled 函数
 确定是否有任何会话启用了指定的 ETW 提供程序。
@@ -48,7 +50,7 @@ HRESULT CvIsEnabledEx(
  如果提供程序当前已启用，则返回 S_OK。 如果提供程序当前已禁用，则返回 S_FALSE。 出现任何错误时返回错误代码。 使用 FAILED 宏检查错误条件，然后检查 S_OK/S_FALSE。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

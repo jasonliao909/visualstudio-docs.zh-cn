@@ -1,5 +1,7 @@
 ---
 title: 分析性能探查器中的 CPU 使用情况
+description: 了解“CPU 使用情况”性能工具如何显示 C++、C#、Visual Basic 以及 JavaScript 应用中执行代码所花费的 CPU 时间和百分比。
+ms.custom: SEO-VS-2020
 ms.date: 04/02/2020
 ms.topic: how-to
 ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
@@ -8,12 +10,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 706ffa8d17974894403c22a559edad4c2e4b4ef8
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: 902974c195cabf09abf5f29334a1e28316da54e5
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007094"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719352"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在不进行调试的情况下分析性能探查器中的 CPU 使用情况
 

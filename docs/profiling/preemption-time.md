@@ -1,5 +1,6 @@
 ---
 title: 抢占时间 | Microsoft Docs
+description: 了解抢占时间，时间线中的这些段与归类为“抢占”的阻塞时间关联。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: de7a02f7247e09876bc4598d44fc1c395161ebc2
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a102b11fdc7608b94b97105b061e28860f41a9a1
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62935888"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719508"
 ---
 # <a name="preemption-time"></a>抢占时间
 时间线中的这些段与归类为“抢占”的阻塞时间关联。 此类别表示由于以下原因之一断开线程：
@@ -30,5 +31,5 @@ ms.locfileid: "62935888"
 
   抢占段的工具提示会显示导致抢占的进程或线程的名称。 然而，这并不表示接管的进程或线程在抢占期间内会实际运行。
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

@@ -1,5 +1,6 @@
 ---
 title: 设置性能数据文件名选项 | Microsoft Docs
+description: 了解如何在性能会话属性对话框的“常规”页上更改任意命名参数。
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d7a8d6b9-ab23-46fb-98ed-774781157860
@@ -9,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bba5677c491e77e6f1c2758e64cec1b598c9b627
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 6dce666121214bef7d844bae2735a284589463ee
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851562"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722043"
 ---
 # <a name="how-to-set-performance-data-file-name-options"></a>如何：设置性能数据文件名选项
 

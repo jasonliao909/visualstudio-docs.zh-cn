@@ -1,5 +1,6 @@
 ---
 title: “指令指针”(IP) 视图 — 争用数据 | Microsoft Docs
+description: 了解争用数据的 IP 视图如何列出分析运行期间被阻止执行的程序集指令的数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f37fb451238ec7ce6f48d8a4d3b91efa9ce04db7
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3877afb4beb48259d737112d61a36edc7a4fd4d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74774307"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721588"
 ---
 # <a name="instruction-pointers-ips-view---contention-data"></a>“指令指针”(IP) 视图 — 争用数据
 争用数据的 IP 视图列出分析运行期间被阻止执行的程序集指令的数据。

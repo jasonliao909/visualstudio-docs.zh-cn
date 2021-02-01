@@ -1,5 +1,6 @@
 ---
 title: “资源争用”视图 - 争用数据 | Microsoft Docs
+description: 了解“资源争用”视图如何列出作为争用事件源的资源的争用数据。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1607e594b6456d4da4396069d589160230b39680
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fc8e6c39efea24ac8a4a493099f3bcdb39dc4fe6
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778331"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720340"
 ---
 # <a name="resource-contentions-view---contention-data"></a>“资源争用”视图 - 争用数据
 “资源争用”视图列出作为争用事件源的资源的争用数据。 如果由于另一个线程中的函数已获取对资源的独占访问权限，因此线程中的函数被迫等待获取对资源的访问权限，则会发生争用事件。 每个资源都是显示争用事件中产生的函数执行路径的调用树的根节点。
@@ -42,7 +43,7 @@ ms.locfileid: "74778331"
 
 |列|说明|
 |------------|-----------------|
-|**Name**|资源或函数的名称。|
+|**名称**|资源或函数的名称。|
 |**独占阻塞的时间**|-   对于资源，是阻止访问资源并导致线程等待的总时间。<br />-   对于函数，是此函数在函数体中执行代码时阻止此函数的这些实例访问父资源的时间。 不包含此函数调用的函数中的阻塞时间。|
 |**独占阻塞的时间百分比**|-   对于资源，是此资源的阻塞时间占分析数据中的所有阻塞时间的百分比<br />-   对于函数，是这些函数实例的独占阻塞时间占分析数据中的所有阻塞时间的百分比。|
 |**独占争用**|-   对于资源，是阻止访问资源并导致线程等待的总次数。<br />-   对于函数，是此函数在函数体中执行代码时阻止此函数的这些实例访问父资源的次数。 不包含此函数调用的函数中的阻塞事件。|

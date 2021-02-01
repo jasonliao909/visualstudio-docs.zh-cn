@@ -1,5 +1,7 @@
 ---
 title: “导出”按钮（并发可视化工具）| Microsoft Docs
+description: 查看并发可视化工具中的“导出”按钮。 使用“导出”按钮，你可以将调用堆栈导出为 .csv 文件并用作你自己的记录。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,16 +14,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 50c5aed4f12cc5bef9bc50c2a41009de4e6ad811
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: ec5395dccaf3d97d7b2b517cbecfec12826594e2
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62969896"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801455"
 ---
 # <a name="export-button-concurrency-visualizer"></a>“导出”按钮（并发可视化工具）
-通过“导出”按钮，可以将调用堆栈作为 .csv 文件导出，以用于自己的记录或与其他工具（如 Microsoft Excel）一起使用   。
+通过“导出”按钮，可以将调用堆栈作为 .csv 文件导出，以用于自己的记录或与其他工具（如 Microsoft Excel）一起使用。
 
 ## <a name="see-also"></a>另请参阅
 - [并发可视化工具](../profiling/concurrency-visualizer.md)
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+- [线程视图](../profiling/threads-view-parallel-performance.md)

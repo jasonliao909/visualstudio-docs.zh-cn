@@ -1,5 +1,7 @@
 ---
 title: CvInitProvider 函数 | Microsoft Docs
+description: 请参阅并发可视化工具 SDK 函数 CvInitProvider（C 库）的参考信息。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,12 +14,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: b06190568454977bfcb54d65db9011fc979f7591
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0d1b41d9d62bbf5a159ec3a9d60f4e2edf5cc115
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85329566"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686501"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函数
 初始化标记提供程序。 必须在任何其他并发可视化工具 SDK 函数之前调用。
@@ -40,7 +42,7 @@ HRESULT CvInitProvider(
  成功初始化提供程序时返回 S_OK，出现任何错误时返回错误代码。 使用 SUCCEEDED/FAILED 宏检查错误条件。
 
 ## <a name="requirements"></a>要求
- **Header:** cvmarkers.h 
+ **Header:** cvmarkers.h
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [C++ 库参考](../profiling/cpp-library-reference.md)

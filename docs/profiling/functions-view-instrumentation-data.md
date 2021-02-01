@@ -1,5 +1,7 @@
 ---
 title: “函数”视图 - 检测数据 | Microsoft Docs
+description: 阅读“函数”报告视图中分析数据列的说明，该视图按函数名称列出分析数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 423b6d61af93c37e6fa83549ed3fa5d422128165
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 2b12fc05f9eeb9b77e982c62ae52bfbbe784f5e6
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779215"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801361"
 ---
 # <a name="functions-view---instrumentation-data"></a>“函数”视图 - 检测数据
 函数报表视图按函数名称列出分析数据。
@@ -82,7 +84,7 @@ ms.locfileid: "74779215"
 |**最长应用程序独占时间**|对此函数的调用的最长应用程序独占时间。|
 |**最短应用程序独占时间**|对此函数的调用的最短应用程序独占时间。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：自定义报表视图列](../profiling/how-to-customize-report-view-columns.md)
 - [“函数”视图](../profiling/functions-view-sampling-data.md)
 - [“函数”视图 - 采样](../profiling/functions-view-dotnet-memory-sampling-data.md)

@@ -1,5 +1,6 @@
 ---
 title: 分析 UWP 应用中的 HTML UI 响应能力 | Microsoft Docs
+description: 了解如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。
 ms.custom: ''
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,12 +18,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 9fdc2b7fc459d655748444759913cab903dfe782
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6545fb206096c7b74a7016b506ae3bcade7f136c
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85331418"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721874"
 ---
 # <a name="analyze-html-ui-responsiveness-in-universal-windows-apps"></a>分析中通用 Windows 应用中的 HTML UI 响应能力
 本主题介绍如何使用 UI 响应能力探查器（一种可用于 Windows 通用应用的性能工具）隔离应用中的性能问题。
@@ -38,11 +39,11 @@ ms.locfileid: "85331418"
 ## <a name="run-the-html-ui-responsiveness-tool"></a>运行 HTML UI 响应能力工具
  在 Visual Studio 中打开有效 UWP 应用时，可以使用“HTML UI 响应能力”工具。
 
-1. 如果是通过 Visual Studio 运行应用，请在“标准”  工具栏上的“开始调试”  列表中，选择部署目标，即“本地计算机”  或“设备”  。
+1. 如果是通过 Visual Studio 运行应用，请在“标准”工具栏上的“开始调试”列表中，选择部署目标，即“本地计算机”或“设备”。
 
-2. 在“调试”  菜单上，选择“性能探查器”  。
+2. 在“调试”菜单上，选择“性能探查器”。
 
-     如果要更改探查器的分析目标，请选择“更改目标”  。
+     如果要更改探查器的分析目标，请选择“更改目标”。
 
      ![更改分析目标](../profiling/media/js_tools_target.png "JS_Tools_Target")
 
@@ -58,7 +59,7 @@ ms.locfileid: "85331418"
 
          当你无权访问源代码时，可以使用此选项分析在计算机上安装的应用程序的性能。 如果要分析你自己的应用程序开发之外的任何应用程序的性能，也可使用此选项。
 
-3. 从 **“可用工具”** 中，选择 **“HTML UI 响应能力”** ，然后选择 **“启动”** 。
+3. 从 **“可用工具”** 中，选择 **“HTML UI 响应能力”**，然后选择 **“启动”**。
 
 4. 启动 UI 响应能力探查器时，可能会显示一个用户帐户控制窗口，要求您提供运行 Visual Studio ETW Collector.exe 的权限。 选择 **“是”** 。
 
@@ -66,7 +67,7 @@ ms.locfileid: "85331418"
 
 5. 按 Alt+Tab 切换到 Visual Studio。
 
-6. 若要停止分析探查器收集的应用程序和视图数据，请选择 **“停止收集”** 。
+6. 若要停止分析探查器收集的应用程序和视图数据，请选择 **“停止收集”**。
 
 ## <a name="isolate-an-issue"></a>隔离问题
  下一节会提供帮助你隔离性能问题的建议。 有关如何通过使用样本性能测试应用来标识和修复性能问题的分步说明，请参阅[演练：改进 UI 响应能力 (HTML)](html-ui-responsiveness.md)。
@@ -76,11 +77,11 @@ ms.locfileid: "85331418"
 
 1. 在 Visual Studio 中打开应用程序。
 
-2. 测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用而不进行调试。）
+2. 测试应用程序的 UI 响应能力问题。 （按 Ctrl+F5 以启动应用而不进行调试 。）
 
      如果发现问题，请继续测试以尝试缩小发生问题的时间范围，或尝试确定导致该行为的触发器。
 
-3. 切换回 Visual Studio（按 Alt+Tab），并停止应用 (Shift+F5)。
+3. 切换回 Visual Studio（按 Alt+Tab），并停止应用 (Shift+F5)   。
 
 4. 或者，使用 performance.mark [标记要分析的代码](#ProfileMark)。
 
@@ -188,7 +189,7 @@ if (performance.mark && performance.measure) {
 - 导航事件，在导航到其他页面时发生。 此事件的工具提示显示目标页面 URL。
 
 ### <a name="view-cpu-utilization"></a><a name="CPUUtilization"></a> 查看 CPU 使用率
- 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”** 、 **“脚本”** 、垃圾回收（ **“GC”** ）、 **“样式”** 、 **“呈现”** 和 **“图像解码”** 。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。
+ 通过“CPU 使用率”图可确定 CPU 活动过多的时间段。 该图提供一段时间内应用程序的 CPU 平均消耗量信息。 信息使用了彩色编码来表示以下具体类别： **“加载”**、 **“脚本”**、垃圾回收（**“GC”**）、 **“样式”**、 **“呈现”** 和 **“图像解码”**。 有关这些类别的详细信息，请参阅本主题后面部分的 [Profiler event reference](#profiler-event-reference) 。
 
  “CPU 使用率”图显示在所有应用程序线程上花费的时间，它将一个或多个 CPU 的 CPU 使用率值合并为一个百分比值。 当多个 CPU 正在使用时，CPU 使用率值可能超过 100%。
 
@@ -242,7 +243,7 @@ if (performance.mark && performance.measure) {
 
  下例显示了选择 DOM Click 事件的事件侦听器后，“时间线详细信息”图的外观：
 
- ![时间线详细信息图](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
+ ![timeline details graph](../profiling/media/js_htmlvizprof_timelinedet.png "JS_HTMLVizProf_TimelineDet")
 
  在此图中， **“事件名称”** 列中的 **“spinAction”** 事件处理程序是一个链接，选择该链接后，将转至源代码中的事件处理程序。 在右窗格中， **“回调函数”** 属性提供源代码的相同链接。 其他属性也提供了有关此事件的信息，例如，关联的 DOM 元素。
 
@@ -293,7 +294,7 @@ if (performance.mark && performance.measure) {
  若要筛选出用户度量，请清除 **“用户测量”** 选项。 用户测量是无子项的顶级事件。
 
 ### <a name="group-events-by-frame"></a><a name="GroupFrames"></a> 通过框为事件分组
- 你可以将时间线详细信息视图中显示的事件分组为单个帧。 这些帧事件是工具生成的事件，并且代表所有在绘制事件之间发生的 UI 线程工作的顶级事件容器。 若要启用此视图，请选择 **“按帧为顶级事件分组”** 。
+ 你可以将时间线详细信息视图中显示的事件分组为单个帧。 这些帧事件是工具生成的事件，并且代表所有在绘制事件之间发生的 UI 线程工作的顶级事件容器。 若要启用此视图，请选择 **“按帧为顶级事件分组”**。
 
  ![按帧为顶级事件分组](../profiling/media/js_htmlvizprofiler_frame_grouping_button.png "JS_HTMLVizProfiler_Frame_Grouping_Button")
 
@@ -325,26 +326,26 @@ if (performance.mark && performance.measure) {
 
   下表显示了事件及其说明：
 
-|ㄆン|事件类别|在出现以下情况时发生|
+|事件|事件类别|发生条件|
 |-----------|--------------------|-----------------|
-|CSS 解析|“加载”|发现了新 CSS 内容，而且尝试解析 CSS 内容。|
-|HTML 解析|“加载”|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|
-|HTTP 请求|“加载”|在 DOM 中找到了远程资源，或者创建了生成 HTTP 请求的 XMLHttpRequest。|
-|推理下载|“加载”|已在页面的 HTML 内容中搜索所需的资源，以便快速调度对资源的后续 HTTP 请求。|
-|动画帧回调函数|脚本|浏览器即将呈现另一个帧，这触发了应用程序提供的回调函数。|
-|DOM 事件|脚本|已发生并执行 DOM 事件。<br /><br /> DOM 事件的 `context` 属性（例如  `DOMContentLoaded` 或 `click`）显示在括号中。|
-|事件侦听器|脚本|已调用并执行事件侦听器。|
-|媒体查询侦听器|脚本|已注册的媒体查询无效化，这导致了其关联的侦听器的执行。|
-|转变观察器|脚本|已修改一个或多个观察到的 DOM 元素，这导致执行与 MutationObserver 关联的回调。|
-|脚本计算|脚本|在 DOM 中找到了新的脚本元素，并且尝试解析和执行此脚本。|
-|计时器|脚本|计划的计时器过时，从而导致执行其关联的回调函数。|
-|Windows 运行时异步回调函数|脚本|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|
-|Windows 运行时事件|脚本|Windows 运行时对象上发生的事件触发了注册侦听器。|
-|垃圾回收|“GC”|收集不再使用的对象的内存所用的时间。|
+|CSS 解析|加载|发现了新 CSS 内容，而且尝试解析 CSS 内容。|
+|HTML 解析|加载|发现了新 HTML 内容，而且尝试将此内容解析到节点并将内容插入到 DOM 树。|
+|HTTP 请求|加载|在 DOM 中找到了远程资源，或者创建了生成 HTTP 请求的 XMLHttpRequest。|
+|推理下载|加载|已在页面的 HTML 内容中搜索所需的资源，以便快速调度对资源的后续 HTTP 请求。|
+|动画帧回调函数|脚本编写|浏览器即将呈现另一个帧，这触发了应用程序提供的回调函数。|
+|DOM 事件|脚本编写|已发生并执行 DOM 事件。<br /><br /> DOM 事件的 `context` 属性（例如  `DOMContentLoaded` 或 `click`）显示在括号中。|
+|事件侦听器|脚本编写|已调用并执行事件侦听器。|
+|媒体查询侦听器|脚本编写|已注册的媒体查询无效化，这导致了其关联的侦听器的执行。|
+|转变观察器|脚本编写|已修改一个或多个观察到的 DOM 元素，这导致执行与 MutationObserver 关联的回调。|
+|脚本计算|脚本编写|在 DOM 中找到了新的脚本元素，并且尝试解析和执行此脚本。|
+|计时器|脚本编写|计划的计时器过时，从而导致执行其关联的回调函数。|
+|Windows 运行时异步回调函数|脚本编写|Windows 运行时对象完成了触发 `Promise` 回调函数的异步操作。|
+|Windows 运行时事件|脚本编写|Windows 运行时对象上发生的事件触发了注册侦听器。|
+|垃圾回收|GC|收集不再使用的对象的内存所用的时间。|
 |CSS 计算|“样式”|已对 DOM 进行更改，要求重新计算所有受影响的元素的样式属性。|
 |布局|“样式”|已对 DOM 进行更改，要求重新计算所有受影响的元素的大小和/或位置。|
-|画图|“呈现”|已对 DOM 进行可视更改，并且尝试重新呈现页面的各部分。|
-|呈现层|“呈现”|已对 DOM 的独立呈现片段（称为层）进行可视更改，这些更改要求呈现此页面的一个部分。|
+|画图|渲染|已对 DOM 进行可视更改，并且尝试重新呈现页面的各部分。|
+|呈现层|渲染|已对 DOM 的独立呈现片段（称为层）进行可视更改，这些更改要求呈现此页面的一个部分。|
 |“图像解码”|“图像解码”|向 DOM 中加入了一个图像，并且尝试将该图像从其原始格式解压缩并解码成位图。|
 |Frame|不适用|对需要重新提取页面的所有受影响部分的 DOM 进行了可视更改。 这是用于分组的工具生成的事件。|
 |“用户测量”|不适用|使用 `performance.measure` 方法测量应用特定的方案。 这是用于分析代码的工具生成的事件。|

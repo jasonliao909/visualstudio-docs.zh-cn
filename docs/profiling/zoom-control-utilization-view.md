@@ -1,5 +1,6 @@
 ---
 title: 缩放控件（使用率视图）| Microsoft Docs
+description: 了解缩放控件如何帮助你放大 CPU 使用率图表，从而使你能够关注特定的感兴趣区域。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 7c7f50a3117daeee0ec1727adbcdcc5ca710be36
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 5f28a0f8bd60ad169715ba72b6fab957e7699a5b
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62960102"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723018"
 ---
 # <a name="zoom-control-utilization-view"></a>缩放控件（“使用率”视图）
 缩放控件可帮助您放大 CPU 使用率图表，从而使您能够关注特定的感兴趣区域。 此控件可在视图的中心区域放大。 所以在放大之前将感兴趣的区域移到中心位置。

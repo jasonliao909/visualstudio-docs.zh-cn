@@ -1,5 +1,6 @@
 ---
 title: ThreadOn 和 ThreadOff | Microsoft Docs
+description: 了解 VSPerfCmd.exe ThreadOff 和 ThreadOn 子命令如何只能在使用检测方法的命令行分析会话中使用。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
@@ -9,17 +10,17 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 906629eb24f6be097f3e24dfca3e6a231f42357f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: f8b2e51857fc799c7b60f7650b823b77c9c6a283
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778149"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98718767"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
-VSPerfCmd.exe ThreadOff 和 ThreadOn 子命令只能在使用检测方法的命令行分析会话中使用    。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。
+VSPerfCmd.exe ThreadOff 和 ThreadOn 子命令只能在使用检测方法的命令行分析会话中使用 。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。
 
- 大多数情况下，可指定 ThreadOn 或 ThreadOff 作为 VSPerfCmd.exe 命令行中唯一的选项，但它们也可与 GlobalOn、GlobalOff、ProcessOn 和 ProcessOff 子命令组合使用        。
+ 大多数情况下，可指定 ThreadOn 或 ThreadOff 作为 VSPerfCmd.exe 命令行中唯一的选项，但它们也可与 GlobalOn、GlobalOff、ProcessOn 和 ProcessOff 子命令组合使用    。
 
  **ThreadOn** 和 **ThreadOff** 子命令与控制命令行分析会话中所有进程的数据收集的 **GlobalOn** 和 **GlobalOff** 子命令交互，并与控制指定进程的数据收集的 **ProcessOn** 和 **ProcessOff** 子命令交互。
 
@@ -46,7 +47,7 @@ VSPerfCmd.exe /{ThreadOff|ThreadOn}:TID [Options]
 
  **Start:** `Method` 初始化命令行分析会话并设置指定的分析方法。
 
- GlobalOff&#124;GlobalOn 停止或启动对命令行分析会话中所有进程的分析   。
+ GlobalOff&#124;GlobalOn 停止或启动对命令行分析会话中所有进程的分析。
 
  {**ProcessOff**|**ProcessOn**} **:** `TID`停止或启动对指定进程的分析。
 

@@ -1,5 +1,6 @@
 ---
 title: “层交互”视图 | Microsoft Docs
+description: 了解层交互分析如何提供有关多层应用程序函数执行时间的信息，这些应用程序与数据库进行通信。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,18 +13,18 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d188d6c3268c8ee9f066eba1b6a57e469f34a78e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 9021f814f093151c6d65beaececc0fa99a662d44
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74778136"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722511"
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 
 层交互分析提供有关多层应用程序函数执行时间的附加信息，这些应用程序通过 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] 服务与数据库进行通信。 仅针对同步函数调用收集数据。
 
-**惠?**
+**要求**
 
 - Visual Studio Enterprise
 
@@ -33,15 +34,15 @@ ms.locfileid: "74778136"
 
 - 在主窗格中单击某个数据库调用节点时，该数据库调用的实例的数据会显示在详细信息窗格中。
 
-  时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”  菜单，单击“选项”  ，然后选择“将时间值显示为”  选项中的一个。
+  时间显示为毫秒数或 CPU 时钟计时周期数。 若要更改显示的时间单位，请单击“工具”菜单，单击“选项”，然后选择“将时间值显示为”选项中的一个。
 
 ## <a name="master-pane"></a>主窗格
 
 |列|说明|
 |------------|-----------------|
-|**Name**|- 对于顶层行，是分析的进程或网页的名称。<br />- 对于数据库连接行，是承载数据库的服务器的名称。|
+|**名称**|- 对于顶层行，是分析的进程或网页的名称。<br />- 对于数据库连接行，是承载数据库的服务器的名称。|
 |**数据库**|数据库的名称（仅限数据库连接行）。|
-|**计数**|进程、网页或数据库连接生成的请求的总数。|
+|“计数”|进程、网页或数据库连接生成的请求的总数。|
 |**总运行时间**|执行来自进程、网页或数据库连接的任何一个请求所用的总时间。|
 |**最大运行时间**|执行来自进程、网页或数据库连接的任何一个请求所用的最大时间。|
 |**最小运行时间**|执行来自进程、网页或数据库连接的任何一个请求所用的最小时间。|

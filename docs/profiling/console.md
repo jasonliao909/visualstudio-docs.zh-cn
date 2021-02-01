@@ -1,5 +1,7 @@
 ---
 title: 控制台 | Microsoft Docs
+description: 使用 VSPerfCmd.exe 的“Console”选项在新的命令提示符窗口中启动指定的应用程序。 必须将它与“Launch”选项一起使用。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b70c44f72d8f9d8fb25eb1c459946797cfb97913
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 93c39bfb503bec9858e33b7acf04e0f0433264b9
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331566"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720899"
 ---
 # <a name="console"></a>控制台
 VSPerfCmd.exe“Console”选项在新的命令提示符窗口中启动指定的应用程序。 “Console”只能与 VSPerfCmd“Launch”选项一起使用。 如果应用程序不是命令行应用程序，“Console”不起作用。

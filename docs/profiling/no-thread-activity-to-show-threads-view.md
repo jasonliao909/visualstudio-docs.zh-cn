@@ -1,5 +1,6 @@
 ---
 title: 不显示线程活动（线程视图）| Microsoft Docs
+description: 了解“线程”视图，其中当前可见时间范围内没有要显示的活动。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 91cc840a69135edf59603ba62d15985eb541df0e
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 27298b03a03edf99a12a6d067a22ca8ba17faef0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62794462"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722875"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>没有要显示的线程活动（线程视图）
 此区域显示有关当前可见时间范围内的非隐藏线程的数据。
@@ -28,9 +29,9 @@ ms.locfileid: "62794462"
 
 - 是否隐藏太多线程？ 如果是这样，请尝试显示所有线程
 
-- 如果选择了“仅我的代码”  ，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。
+- 如果选择了“仅我的代码”，则只能查看有关你的代码的数据。 尝试清除设置以确定是否有任何系统线程活动。
 
 - 确保“降噪”设置为低阈值。
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

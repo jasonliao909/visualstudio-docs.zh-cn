@@ -1,5 +1,6 @@
 ---
 title: 时间线插入符号 | Microsoft Docs
+description: 了解插入符号如何显示调用堆栈的确切位置，即距离用户选择的位置最近的调用堆栈。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 370e19757890d6d9f56fad4e7b89b2197e515d9c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 85ead5e0292815e92de587e90e0fd2cab92cb485
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62999667"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98722485"
 ---
 # <a name="timeline-caret"></a>时间线插入符号
-当在执行线程段的时间线上选择一个点时，它的上方将显示时间线插入符号。 在当前堆栈选项卡上显示的调用堆栈是在时间上与单击段的位置最接近的调用堆栈。 此插入符号用于将调用堆栈（显示在“当前”  选项卡下方）与其采样时刻相关联。 插入符号显示调用堆栈的确切位置，即距离用户选择的位置最近的调用堆栈。
+当在执行线程段的时间线上选择一个点时，它的上方将显示时间线插入符号。 在当前堆栈选项卡上显示的调用堆栈是在时间上与单击段的位置最接近的调用堆栈。 此插入符号用于将调用堆栈（显示在“当前”选项卡下方）与其采样时刻相关联。 插入符号显示调用堆栈的确切位置，即距离用户选择的位置最近的调用堆栈。
 
-## <a name="see-also"></a>另请参阅
-- [“线程”视图](../profiling/threads-view-parallel-performance.md)
+## <a name="see-also"></a>请参阅
+- [线程视图](../profiling/threads-view-parallel-performance.md)

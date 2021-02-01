@@ -1,5 +1,6 @@
 ---
 title: 保存和导出性能工具数据 | Microsoft Docs
+description: 了解如何将分析数据 (.vsp) 文件的筛选后/未筛选视图另存为已分析的报告 (.vsps) 文件。
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -11,12 +12,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 729dc2e28446420dd2590e132b7ec8a5444fcb9c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0b340abd81cef7183c2ba25af58ae432d8c80e6a
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74773894"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98720146"
 ---
 # <a name="save-and-export-performance-tools-data"></a>保存和导出性能工具数据
 本文介绍如何保存和导出性能数据文件。

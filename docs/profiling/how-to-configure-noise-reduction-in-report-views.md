@@ -1,5 +1,7 @@
 ---
 title: 在报表视图中配置降噪 | Microsoft Docs
+description: 使用剪裁和折叠（默认情况下启用）可降低噪音，使性能问题在报告中更加突出。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 71065ac66fff972e5b6e9cf2c397a75b97e4d02f
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 324c00c869e335fe6fc9504b461e6fc7f85bab98
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851224"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98800431"
 ---
 # <a name="how-to-configure-noise-reduction-in-report-views"></a>如何：在报表视图中配置降噪
 通过限制“调用关系树”视图和“分配”视图中显示的数据量，可针对降噪配置性能报表。 通过使用降噪，性能问题能够更加醒目。 分析性能报告时，这非常有用。

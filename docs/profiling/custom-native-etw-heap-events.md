@@ -1,5 +1,7 @@
 ---
 title: 自定义本机 ETW 堆事件 | Microsoft Docs
+description: 了解如何使用自定义堆来减少分配开销，但仍向内存探查器提供分配信息以进行分配分析。
+ms.custom: SEO-VS-2020
 ms.date: 02/24/2017
 ms.topic: conceptual
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
@@ -10,12 +12,12 @@ dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 1bb6f906cbfb715d67f6e10ddcecf094bc25821f
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 61005bf108d0dab16ec419e942e3da97e02cdc7f
+ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62552929"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98686319"
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 
@@ -51,7 +53,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 通过执行以下步骤，我们可以使用同一工具跟踪自定义堆中的内存使用情况。
 
-## <a name="how-to-use"></a>使用方法
+## <a name="how-to-use"></a>如何使用
 
 可以在 C 和 C++ 中轻松使用此库。
 
@@ -61,7 +63,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    #include <VSCustomNativeHeapEtwProvider.h>
    ```
 
-1. 将 `__declspec(allocator)` 装饰器添加到自定义堆管理器的任何函数中，该函数向新分配的堆内存返回指针。  使用此装饰器可正确标识将返回的内存类型。  例如:
+1. 将 `__declspec(allocator)` 装饰器添加到自定义堆管理器的任何函数中，该函数向新分配的堆内存返回指针。  使用此装饰器可正确标识将返回的内存类型。  例如：
 
    ```cpp
    __declspec(allocator) void *MyMalloc(size_t size);
@@ -105,7 +107,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->DeallocateEvent(memPtr);
    ```
 
-   或：
+   或者：
 
    ```C
    VSHeapTrackerDeallocateEvent(hHeapTracker, memPtr);
@@ -117,7 +119,7 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    pHeapTracker->ReallocateEvent(memPtrNew, size, memPtrOld);
    ```
 
-   或：
+   或者：
 
    ```C
    VSHeapTrackerReallocateEvent(hHeapTracker, memPtrNew, size, memPtrOld);
@@ -129,14 +131,14 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
    delete pHeapTracker;
    ```
 
-   或：
+   或者：
 
    ```C
    CloseHeapTracker(hHeapTracker);
    ```
 
 ## <a name="track-memory-usage"></a>跟踪内存使用情况
-随着这些调用就位，现可使用 Visual Studio 中的标准**内存使用量**工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。
+随着这些调用就位，现可使用 Visual Studio 中的标准 **内存使用量** 工具跟踪自定义堆使用情况。  有关如何使用此工具的详细信息，请参阅[内存使用量](../profiling/memory-usage.md)文档。 确保已通过快照启用堆分析，否则你的自定义堆使用情况将不会显示。
 
 ![启用堆分析](media/heap-enable-heap.png)
 
@@ -146,11 +148,11 @@ Foo* pFoo3 = (Foo*)mPool.allocate();
 
 通过上面的代码示例，当 `MemoryPool` 创建 `VSHeapTracker::CHeapTracker` 对象，并且我们自己的 `allocate` 方法在调用 `AllocateEvent` 方法时，你可以查看该自定义分配的结果，结果显示三个实例，合计 24 个字节，均为类型 `Foo`。
 
-默认的 NT 堆  看起来与前面的相同，同时添加了 `CHeapTracker` 对象。
+默认的 NT 堆看起来与前面的相同，同时添加了 `CHeapTracker` 对象。
 
 ![带跟踪器的 NT 堆](media/heap-example-windows-heap.png)
 
-如[内存使用量](../profiling/memory-usage.md)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
+如[](../profiling/memory-usage.md)文档中所述，与标准的 Windows 堆一样，你还可使用此工具比较快照，并查找自定义堆中的泄漏和损坏。
 
 > [!TIP]
 > Visual Studio 在性能分析工具集中还包含内存使用情况工具，可在“调试” > “性能探查器”菜单选项或通过 Alt+F2 组合键启用该工具。  此功能不包含堆跟踪，并且不会按如下所述显示你的自定义堆。  只有“诊断工具”窗口包含此功能，可通过选择“调试” > “Windows” > “显示诊断工具”菜单或 Ctrl+Alt+F2 组合键来启用此窗口。

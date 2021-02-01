@@ -1,5 +1,7 @@
 ---
 title: .NET 内存数据视图 | Microsoft Docs
+description: 查看有关探查器数据文件的视图和报告的参考信息，这些文件包含 .NET 内存分析数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e74027512eba0d64593133a3bbe758570cbf567
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 8a4a6143127a2e55bf5c13cf6606bfe00de5cd9e
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779267"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801275"
 ---
 # <a name="net-memory-data-views"></a>.NET 内存数据视图
 本部分包含有关视图的参考信息以及包含 .NET 内存分析数据的探查器数据文件的报告。
@@ -75,8 +77,8 @@ ms.locfileid: "74779267"
 
  列出分析运行期间检测函数的内存分配数据。
 
-## <a name="reference"></a>引用
-- [“函数详细信息”视图](../profiling/function-details-view.md)
+## <a name="reference"></a>参考
+- [函数详细信息视图](../profiling/function-details-view.md)
 
  显示所选函数和调用所选函数及被所选函数调用的函数之间的关系图形图表。
 

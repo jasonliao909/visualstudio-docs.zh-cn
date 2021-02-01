@@ -1,5 +1,6 @@
 ---
 title: 使用率视图 | Microsoft Docs
+description: 了解“使用率”视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息。
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -12,15 +13,15 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: 926c67261f91aa8787d9be4a33dadbd3a890c568
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: 047c9ef9d5bb03546eb88372ae43a51c7c8e4d32
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "62823514"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723200"
 ---
 # <a name="utilization-view"></a>“使用率”视图
-“使用率”视图  显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析”   > “并发可视化工具”  来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。
+“使用率”视图显示有关当前进程所使用的 CPU、GPU 和其他系统资源的信息（选择“分析” > “并发可视化工具”来启动并发可视化工具）。 它显示随着时间的推移，在系统上运行的分析的进程、空闲进程、系统进程和其他进程的平均核心使用率。 它不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。 通过将分析时间分成较短的时间段生成此视图。 对于每个时间段，此图绘制出该间隔期间内在逻辑核心上执行的进程线程的平均数量。
 
  ![CPU 使用率视图](../profiling/media/vsts_ppacpuutil.png "VSTS_PPAcpuUtil")
 
@@ -30,7 +31,7 @@ ms.locfileid: "62823514"
 
  GPU 活动关系图显示随着时间的推移，使用中的 DirectX 引擎数。  如果引擎正在处理 DMA 数据包，它则正在使用中。  该关系图不会显示特定的 DirectX 引擎（例如，3D 引擎、视频引擎等）。
 
-## <a name="purpose"></a>目标
+## <a name="purpose"></a>用途
  我们建议在使用并发可视化工具时，将使用率视图作为性能调查的起点。 因为它概述了随着时间的推移，应用中的并发程，因此，可使用它快速识别需要进行性能调整或并行化的区域。
 
  如果对性能调整感兴趣，则可尝试识别不满足你期望的行为。 还可查找逻辑 CPU 核心使用率低的区域及原因。 此外，也可以查找 CPU 和 GPU 之间的使用模式。
@@ -45,9 +46,9 @@ ms.locfileid: "62823514"
 
  如果是通过 C++ AMP 或 DirectX 使用 GPU，则可能会对识别使用中的 GPU 引擎数或 GPU 在其中意外处于空闲状态的区域感兴趣。
 
-## <a name="zoom"></a>缩放
- 若要在 CPU 使用率关系图或 GPU 活动关系图上放大，请选择某个节，或使用关系图顶部的缩放滑块工具。 当切换到其他视图时，缩放设置仍然存在。 若要再次缩小，请使用缩放滑块工具。 还可以使用 Ctrl+滚动条进行缩放。  
+## <a name="zoom"></a>Zoom
+ 若要在 CPU 使用率关系图或 GPU 活动关系图上放大，请选择某个节，或使用关系图顶部的缩放滑块工具。 当切换到其他视图时，缩放设置仍然存在。 若要再次缩小，请使用缩放滑块工具。 还可以使用 Ctrl+滚动条进行缩放。 
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [并发可视化工具](../profiling/concurrency-visualizer.md)
 - [“核心”视图](../profiling/cores-view.md)

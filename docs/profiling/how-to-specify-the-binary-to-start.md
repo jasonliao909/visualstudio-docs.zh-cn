@@ -1,5 +1,6 @@
 ---
 title: 指定要启动的二进制文件 | Microsoft Docs
+description: 了解如何在“<Target> 属性页”对话框中输入信息来分析二进制文件，如 DLL。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b3aec9448c6493350683dc9f0bec0cc2d60fa82
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 715c92a26ae33a4e909ec737c866be1cdc15251e
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851328"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721835"
 ---
 # <a name="how-to-specify-the-binary-to-start"></a>如何：指定要启动的二进制文件
 

@@ -1,5 +1,7 @@
 ---
-title: 为 Web 站点收集性能数据 | Microsoft Docs
+title: 为 Web 站点收集性能数据 | Microsoft
+description: 了解如何使用性能向导为 ASP.NET Web 应用收集性能数据。 该应用在本地计算机上运行，并可在 Visual Studio 中打开。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +20,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea4e3309fc003a4fc4fc73377e8b2bbe12cd567
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92e70ff7c6d10ad060086230955c27b781dd73be
+ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851471"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98801056"
 ---
 # <a name="how-to-collect-performance-data-for-a-web-site"></a>如何：收集网站性能数据
 
