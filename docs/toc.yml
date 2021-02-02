@@ -188,7 +188,9 @@
           href: ide/create-new-project.md
         - name: 使用解决方案和项目
           href: ide/creating-solutions-and-projects.md
-        - name: 打开存储库中的项目
+        - name: 在 Visual Studio 2017 中打开存储库中的项目
+          href: get-started/tutorial-open-project-from-repo-visual-studio-2017.md
+        - name: 在 Visual Studio 中打开存储库中的项目
           href: get-started/tutorial-open-project-from-repo.md
         - name: 移植、迁移和升级项目
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md

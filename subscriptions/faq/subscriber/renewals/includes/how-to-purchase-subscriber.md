@@ -1,20 +1,21 @@
 ---
 title: 如何购买 Visual Studio 订阅？
 description: 了解 Visual Studio 订阅的各种购买方式
-ms.faqid: group4_1
+ms.faqid: q4_1
 ms.topic: include
-ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
+ms.assetid: 5b27454c-f036-4f4d-9d67-54d1fc775f72
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
+ms.date: 01/12/2021
+ms.openlocfilehash: bb436cfdff0f6783d041858430b4fd9864ceb569
 ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104402"
+ms.locfileid: "99104486"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何购买 Visual Studio 订阅？
+
 Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https://www.microsoft.com/licensing/default)、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 和 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)。  
 
 [比较订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/) ，了解每种 Visual Studio 订阅的优点。 查看[订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)，获取更多帮助来确定适合自己的订阅。   
@@ -35,4 +36,4 @@ Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https:
 [阅读更多](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)有关每月 Visual Studio 订阅计费的信息。 
 
 ### <a name="volume-licensing"></a>批量许可 
-当组织需要购买大量订阅时，可以使用批量许可订阅。 [详细了解](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)如何通过批量许可进行购买。  
+当组织需要购买大量订阅时，可以使用批量许可订阅。 [详细了解](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)如何通过批量许可进行购买。
