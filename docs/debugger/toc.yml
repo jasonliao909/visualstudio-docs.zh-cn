@@ -338,8 +338,6 @@
       items:
         - name: 使用调试器附加到运行的进程
           href: attach-to-running-processes-with-the-visual-studio-debugger.md
-        - name: 调试 Linux 上的 .NET Core
-          href: remote-debugging-dotnet-core-linux-with-ssh.md
         - name: 附加到在 Docker 容器上运行的进程
           href: attach-to-process-running-in-docker-container.md
     - name: 多线程应用调试
@@ -422,6 +420,14 @@
           href: debug-live-azure-apps-troubleshooting.md
         - name: “按时间顺序查看调试”实时 Azure 虚拟机应用
           href: debug-live-azure-virtual-machines-time-travel-debugging.md
+    - name: Linux 调试
+      items:
+        - name: 在 WSL 2 中调试 .NET Core 应用
+          href: debug-dotnet-core-in-wsl-2.md
+        - name: 使用 SSH 调试 Linux 上的 .NET Core
+          href: remote-debugging-dotnet-core-linux-with-ssh.md
+        - name: 使用容器工具调试 >>
+          href: ../containers/edit-and-refresh.md
     - name: 应用程序类型
       items:
         - name: 调试特定应用程序类型
