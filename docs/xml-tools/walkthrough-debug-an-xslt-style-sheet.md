@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: c69f93aca88cb8e83417a370de7113640d3ae38c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3a6f1efc85366bc74206dc8637c992f249c4eb44
+ms.sourcegitcommit: e443866e3468f838bc3655ad56a83a552013ceed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351331"
+ms.lasthandoff: 01/28/2021
+ms.locfileid: "98925892"
 ---
 # <a name="walkthrough-debug-an-xslt-style-sheet"></a>演练：调试 XSLT 样式表
 
@@ -24,7 +24,7 @@ ms.locfileid: "94351331"
 若要为此演练做好准备，请先将两个[示例文件](#sample-files)复制到本地计算机上。 一个文件是样式表，另一个是将用作样式表的输入的 XML 文件。 在此演练中，我们使用的样式表会查找成本低于平均书价的所有书籍。
 
 > [!NOTE]
-> XSLT 调试器仅适用于 Visual Studio 企业版。
+> XSLT 调试器仅在 Visual Studio Professional 和 Enterprise 版本中提供。
 
 ## <a name="start-debugging"></a>“启动调试”
 
