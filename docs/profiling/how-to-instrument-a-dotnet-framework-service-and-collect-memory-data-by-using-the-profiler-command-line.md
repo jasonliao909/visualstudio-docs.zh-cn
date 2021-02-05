@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测 .NET 服务，获取内存数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集 .NET Framework 服务的内存分配数据和对象生存期数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2fa072fc-05fe-4420-99c0-51d2ea3ac4ce
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff00f9a8a79dadc0cc037b707db057610b904e8
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: 28d17a80a04ad7ecd8e7dcb35226b3b1815db4bb
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809604"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883652"
 ---
 # <a name="how-to-instrument-a-net-framework-service-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET Framework 服务，并收集内存数据
 
@@ -82,7 +84,7 @@ ms.locfileid: "90809604"
    | [/counter](../profiling/counter.md) **:** `Config` | 从 Config 中所指定的处理器性能计数器收集信息。计数器信息将添加到在每个分析事件中收集的数据中。 |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |
-   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中。 |
+   | [/events](../profiling/events-vsperfcmd.md) **:** `Config` | 指定要在分析期间收集的 Windows 事件跟踪 (ETW) 事件。 ETW 事件收集在单独的 (.etl) 文件中  。 |
 
 8. 必要时，请启动该服务。
 

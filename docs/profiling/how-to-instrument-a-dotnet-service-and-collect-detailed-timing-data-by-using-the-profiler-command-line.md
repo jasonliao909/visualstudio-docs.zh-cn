@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测 .NET 服务，获取计时详细信息
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集 .NET Framework 服务的详细计时数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mikejo5000
@@ -8,12 +10,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 62303ab2ea7296ca5093636efcf97ea7a3c540c1
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 6002af64474c6ed15aa9807b804c588f20f1443b
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85331481"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883600"
 ---
 # <a name="how-to-instrument-a-net-service-and-collect-detailed-timing-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测 .NET 服务，并收集详细计时数据
 
@@ -63,7 +65,7 @@ ms.locfileid: "85331481"
 
      | 选项 | 描述 |
      | - | - |
-     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出 。 |
+     | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定拥有所分析进程的帐户的域和用户名。 仅在进程以已登录用户外的用户身份运行时才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出   。 |
      | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话 ID 位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中 。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
      | [/waitstart](../profiling/waitstart.md)[ **:** `Interval`] | 指定探查器返回错误前，等待探查器初始化的秒数。 如果未指定 `Interval`，则探查器将无限期等待。 默认情况下，/start 将立即返回。 |
      | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要启动探查器而暂停数据收集，请将 **/globaloff** 选项添加到 **/start** 命令行。 使用 **/globalon** 可恢复分析。 |

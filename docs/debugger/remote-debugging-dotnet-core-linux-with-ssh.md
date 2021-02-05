@@ -11,16 +11,16 @@ ms.author: mikejo
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: bde5bb8722e0f95a10991019bdc9cba9c8a48ec3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 599ebe86867e78d17029b2787b9f35b6755c3040
+ms.sourcegitcommit: 586369f5aa61d4a0330802f718f0ceaa55d7e9c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204886"
+ms.lasthandoff: 02/01/2021
+ms.locfileid: "99224348"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>在 Linux 上使用 SSH 通过附加到进程调试 .NET Core
 
-自 Visual Studio 2017 起，可以通过 SSH 附加到在本地或远程 Linux 部署上运行的 .NET Core 进程。 本文介绍调试的设置方法和调试方法。 有关使用 Docker 容器的调试方案，请参阅[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md)。
+自 Visual Studio 2017 起，可以通过 SSH 附加到在本地或远程 Linux 部署上运行的 .NET Core 进程。 本文介绍调试的设置方法和调试方法。 有关使用 Docker 容器的调试场景，请转而参阅文档[附加到在 Docker 容器上运行的进程](../debugger/attach-to-process-running-in-docker-container.md)和[容器工具](../containers/edit-and-refresh.md)。 若要通过 Visual Studio（而不使用“附加到进程”操作）在 WSL 2 上调试 Linux，请参阅[使用 Visual Studio 在 WSL 2 中调试 .NET Core 应用](../debugger/debug-dotnet-core-in-wsl-2.md)。
 
 ## <a name="prerequisites"></a>先决条件
 

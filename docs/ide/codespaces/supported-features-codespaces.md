@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 68fbdef0e86b125971480ae1bd6a7ba6d3108cd8
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 994ac7b759b943a2076c4e8f401d757258e782ab
+ms.sourcegitcommit: 0e91210421974ad08189919495a7327e60be93bb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696536"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99251435"
 ---
 # <a name="supported-visual-studio-features-preview"></a>受支持的 Visual Studio 功能（预览）
 
@@ -73,6 +73,7 @@ ms.locfileid: "97696536"
 以下内容尚不可用：
 
 * UI 设计器 - WinForms、WPF 和资源设计器
+* WinForms 和 WPF 项目应用强制转换只能在功能标志下使用
 * Visual Basic 和 F# 项目
 * 目标是 .NET Framework 的项目
 * Docker Compose 项目
@@ -108,7 +109,7 @@ ms.locfileid: "97696536"
 
 使用连接到 codespace 的 Visual Studio 时，可以获取与在本地使用时相同的辅助功能。
 
-* 源代码管理 - 通过新的[集成 Git 体验](../git-with-visual-studio.md)完全支持 Git。
+* 源代码管理 - 通过新的[集成 Git 体验](../git-with-visual-studio.md)完全支持 Git。 若要在 codespace 中克隆 git 子模块，可能需要从终端运行 `git submodule update`。
 * 辅助功能 - 辅助技术存在一个已知问题，即无法访问已调试应用的应用广播。 除此限制外，我们认为本地 Visual Studio 体验中还会存在其他兼容性问题。 如果你发现了 bug，请在[开发者社区](https://aka.ms/feedback/report?space=8)上提交问题以告知我们。
 * 发布 - 支持通过 GitHub 操作发布到 Azure。
 * 连接服务 - 部分支持应用见解、KeyVault、存储、SQL、Redis、Cosmos、openAPI 和 gRPC。

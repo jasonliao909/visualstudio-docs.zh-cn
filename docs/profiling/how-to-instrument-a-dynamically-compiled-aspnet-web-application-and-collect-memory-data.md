@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测动态 ASP.NET 应用，获取内存数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集动态编译的 ASP.NET 应用程序的详细内存活动数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 2cdd9903-39db-47e8-93dd-5e6a21bc3435
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 7c1fafd3b21dd40da1215e7864c6d66090589d03
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: c26342fb956aa5043f316015f05e18ef70d20559
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328070"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883587"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET web 应用程序，并收集内存数据
 本主题介绍如何使用检测分析方法和 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具为动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细的 .NET 内存分配和对象生存期数据。

@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 打开客户端 .NET 应用，获取并发数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具启动 .NET 独立应用并收集进程和线程并发数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: e2c1b0a52429e74ad35cf0cad3acc44d064c9672
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 01356e2fe8693e39ef06fc1620cabbb2cb608a43
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327899"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883425"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
 本主题介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据
@@ -72,7 +74,7 @@ ms.locfileid: "85327899"
 
 #### <a name="to-start-and-stop-data-collection"></a>启动和停止数据收集
 
-1. 以下 VSPerfCmd.exe 选项对可启动和停止数据收集。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
+1. 以下 VSPerfCmd.exe 选项对可启动和停止数据收集  。 在单独的命令行上指定每个选项。 可多次打开和关闭数据收集。
 
     |选项|描述|
     |------------|-----------------|

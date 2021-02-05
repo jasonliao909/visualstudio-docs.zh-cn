@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测本机组件，获取计时数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集本机组件（如 C++ .exe 或 .dll 文件）的详细计时数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36883074-9be8-4e90-a66f-7e87f21fcd30
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9436487655e04649228a1bdb60c5d48138f13842
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 0f9deae5372b6fdc22728fbf7df0c678ffb39c45
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327828"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883574"
 ---
 # <a name="how-to-instrument-a-native-stand-alone-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：使用探查器命令行检测本机独立组件，并收集计时数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 C++、.exe 或 .dll 文件等本机组件并收集详细的计时数据 。
@@ -47,7 +49,7 @@ ms.locfileid: "85327828"
    | 选项 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定拥有所分析进程的帐户的域和用户名。 仅当运行进程的用户不是已登录用户时，才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出 。 |
-   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话标识符位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
+   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话标识符列于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 在暂停数据收集的情况下启动探查器。 使用 [/globalon](../profiling/globalon-and-globaloff.md) 可恢复分析。 |
    | [/counter](../profiling/counter.md) **:** `Config` | 从 `Config` 中所指定的处理器性能计数器收集信息。 计数器信息将添加到在每个分析事件中收集的数据中。 |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |

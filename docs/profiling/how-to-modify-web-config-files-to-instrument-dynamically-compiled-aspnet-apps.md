@@ -1,5 +1,6 @@
 ---
 title: Web.Config 文件 - 检测和分析动态 ASP.NET 应用
+description: 了解如何使用 Visual Studio 分析工具收集动态编译的 ASP.NET Web 应用程序的计时数据和内存活动数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 9682fe820e34e8e30a3c57670f5e5fbc7eae2153
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: e08732689d11cd7de70df1e93d1d1110a35baa6d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809591"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883426"
 ---
 # <a name="how-to-modify-webconfig-files-to-instrument-and-profile-dynamically-compiled-aspnet-web-applications"></a>如何：修改 Web.Config 文件以检测和分析动态编译的 ASP.NET Web 应用程序
 使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具检测方法，可以从动态编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序收集详细计时数据、.NET 内存分配数据和 .NET 对象生存期数据。

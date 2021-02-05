@@ -1,5 +1,7 @@
 ---
 title: 将检测限定为特定函数 | Microsoft Docs
+description: 了解如何通过设置“高级”页或目标二进制文件属性页中的选项，将检测和数据收集限定到一个或多个函数。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -11,12 +13,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b2316c0c3fe0b74bbd7b3e80324284f37dff0e64
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90850990"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883327"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数 ：
@@ -42,10 +44,10 @@ ms.locfileid: "90850990"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。
+    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\ 指定 MyNS 命名空间中的所有函数。
 
    > [!NOTE]
-   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**
+   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 vsinstr /DumpFuncs*
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>将检测限定为二进制文件中的特定函数
 
@@ -61,10 +63,10 @@ ms.locfileid: "90850990"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。
+    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\ 指定 MyNS 命名空间中的所有函数。
 
    > [!NOTE]
-   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**
+   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 vsinstr /DumpFuncs*
 
 ## <a name="see-also"></a>请参阅
 - [控制数据收集](../profiling/controlling-data-collection.md)

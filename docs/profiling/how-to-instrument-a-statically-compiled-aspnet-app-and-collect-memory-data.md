@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测静态 ASP.NET 应用，获取内存数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集预编译 ASP.NET Web 组件或网站的内存数据和计时数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ea1dcb7c-1dc3-49ff-9418-8795b5b3d3bc
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 427ece50dc2e8add6cc05e944907a9e0e1a890ae
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: 51523991ece7322eef6db38a7b5738ce07a471ea
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327929"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883427"
 ---
 # <a name="how-to-instrument-a-statically-compiled-aspnet-web-application-and-collect-memory-data-by-using-the-profiler-command-line"></a>如何：使用探查器命令行检测静态编译的 ASP.NET Web 应用程序，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具检测预编译的 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 组件或网站，以及如何收集 .NET 内存分配、对象生存期和详细的计时数据。

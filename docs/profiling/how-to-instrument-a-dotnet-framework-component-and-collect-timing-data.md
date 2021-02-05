@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测客户端 .NET 组件，获取时间数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集独立应用程序的 .NET Framework 组件的计时数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: b7dcc27b-45c6-4302-9552-6fa5b1e94b56
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 64c69a8f38e7b0e4705fb8cca187936b96264f55
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: e6296dea0314ac6f279e5a74dd40515674bc9e65
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85328027"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883665"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-timing-data-with-the-profiler-from-the-command-line"></a>如何：使用探查器命令行检测独立 .NET Framework 组件，并收集计时数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测 .NET Framework 组件（比如 exe 或 .dll 文件）并收集详细的计时数据 。

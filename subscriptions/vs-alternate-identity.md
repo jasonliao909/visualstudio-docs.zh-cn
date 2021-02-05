@@ -2,17 +2,17 @@
 title: Visual Studio 订阅者标识
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 10/21/2019
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: d7820707758cd06209a412b2a860de81cb08c054
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
+ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353169"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99488660"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
@@ -25,9 +25,10 @@ ms.locfileid: "92353169"
 在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)中，除激活过程中使用的标识外，还可添加“备用标识”  。 如果使用 Microsoft 帐户激活订阅，则可添加备用标识。 这样，你还能添加工作或学校帐户（登录 Visual Studio、Microsoft 365 或公司/学校网络时使用的帐户），以使用个人帐户和工作或学校帐户访问 Azure DevOps。
 
 ## <a name="add-an-alternate-account-to-your-subscription"></a>向订阅添加备用帐户
-在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。 我们已经将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。
+向 Visual Studio 订阅添加备用帐户后，可享受某些订阅权益（如 Azure DevOps 和 Azure），或者可使用与订阅分配到的标识不同的标识登录到 Visual Studio IDE。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。 我们已经将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。
 
-这不会向另一个帐户提供订阅副本，而是仅提供可使用备用帐户来享受这两项权益的功能。
+> [!NOTE]
+> 备用 ID 只允许你使用第二个 ID 激活 Azure 额度和 Azure DevOps，并登录到 Visual Studio IDE。  不能使用它在 <https://my.visualstudio.com> 登录到订阅门户。  你仍需要使用订阅分配到的 ID 登录到该门户。 
 
 对于所有订阅，都可添加“工作或学校帐户”，从而使用此帐户享受需要登录的权益（VS IDE、Azure DevOps 和 Azure）。
 
