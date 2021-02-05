@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 检测独立 .NET 组件，获取内存数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具收集独立应用程序的 .NET Framework 组件的内存数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: d09cc46a-70f5-48f9-aa24-89913e67b359
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 57ee3a8d3c94fcd5f3c4b77bddc2fab9710a3caa
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c82f6306dbcfd462862c4d68b9a6fa142ff069a0
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809617"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883678"
 ---
 # <a name="how-to-instrument-a-stand-alone-net-framework-component-and-collect-memory-data-with-the-profiler-by-using-the-command-line"></a>如何：使用探查器命令行检测独立 .NET Framework 组件，并收集内存数据
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具检测独立应用程序的 .NET Framework 组件（如 .exe 或 .dll 文件）以及如何使用探查器收集内存信息。
@@ -60,7 +62,7 @@ ms.locfileid: "90809617"
    | 选项 | 描述 |
    | - | - |
    | [/user](../profiling/user-vsperfcmd.md) **:** [`Domain` **\\** ]`UserName` | 指定拥有所分析进程的帐户的域和用户名。 仅当运行进程的用户不是已登录用户时，才需要此选项。 进程所有者在 Windows 任务管理器的“进程”选项卡上的“用户名”列中列出。 |
-   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话标识符在 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中列出 。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
+   | [/crosssession](../profiling/crosssession.md) | 启用其他会话中的进程分析。 如果应用程序在其他会话中运行，则需要此选项。 会话标识符位于 Windows 任务管理器的“进程”选项卡上的“会话 ID”列中 。 可以将 **/CS** 指定为 **/crosssession** 的缩写。 |
    | [/globaloff](../profiling/globalon-and-globaloff.md) | 若要启动探查器而暂停数据收集，请将 **/globaloff** 选项添加到 **/start** 命令行。 使用 **/globalon** 可恢复分析。 |
    | [/wincounter](../profiling/wincounter.md) **:** `WinCounterPath` | 指定要在分析期间收集的 Windows 性能计数器。 |
    | [/automark](../profiling/automark.md) **:** `Interval` | 仅与 **/wincounter** 一起使用。 指定两次 Windows 性能计数器收集事件相隔的毫秒数。 默认值为 500 毫秒。 |

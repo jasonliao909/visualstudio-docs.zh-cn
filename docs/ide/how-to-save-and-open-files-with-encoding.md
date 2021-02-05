@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jillfra
 ms.workload:
 - multiple
-ms.openlocfilehash: cfec7d31e6fc2c120ef42dc9de2a5a7eea4132e0
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 909e15a3acdc6725556c8d5121a363d1754a74be
+ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597088"
+ms.lasthandoff: 01/30/2021
+ms.locfileid: "99104274"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 
@@ -39,6 +39,9 @@ ms.locfileid: "95597088"
      如果要与使用不同操作系统的用户交换文件，此选项很有用。
 
      如果要使用已知通过特定方式编码的文件，则可以让 Visual Studio 在打开该文件时使用相应编码。 所使用的方法取决于文件是否是项目的一部分。
+
+> [!NOTE]
+> 如果要以编码的方式保存项目文件，则“文件另存为”选项在你卸载该项目之前不会启用。
 
 ## <a name="to-open-an-encoded-file-that-is-part-of-a-project"></a>打开属于项目一部分的编码文件
 

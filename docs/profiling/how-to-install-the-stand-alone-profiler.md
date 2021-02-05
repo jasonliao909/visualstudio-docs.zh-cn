@@ -1,5 +1,7 @@
 ---
 title: 安装独立探查器 | Microsoft Docs
+description: 了解如何安装可在未安装 Visual Studio 的情况下运行的独立探查器。 在某些情况下，不应安装 Visual Studio。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
@@ -12,12 +14,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4005a7af5af1582f31b6c706be150a504355f3d2
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 8f13edc60a2c05d50e2118e24344bf9d475e3f5f
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851146"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883613"
 ---
 # <a name="how-to-install-the-stand-alone-profiler"></a>如何：安装独立探查器
 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供了一个基于命令行的独立探查器，它可在没有安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的情况下运行。 当计算机没有安装或无法安装开发环境时会发生这种情况。 例如，不应在生产 Web 服务器上安装开发环境。

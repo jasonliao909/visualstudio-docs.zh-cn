@@ -1,5 +1,7 @@
 ---
 title: 手动创建性能会话 | Microsoft Docs
+description: 了解如何在不在 Visual Studio 中打开项目的情况下手动创建性能会话。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -15,12 +17,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b918c201509829ad4194da415441ddd9506638a1
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1a368da7a69d921c7e7a55922fb89774ce192b08
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851003"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883423"
 ---
 # <a name="how-to-manually-create-performance-sessions"></a>如何：手动创建性能会话
 可以手动创建性能会话。 不需要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中打开项目，就可以执行该操作。 有关详细信息，请参阅[配置性能会话](../profiling/configuring-performance-sessions.md)。

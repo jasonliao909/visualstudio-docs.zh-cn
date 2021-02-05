@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 打开客户端 .NET Framework 应用，获取内存数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具启动 .NET Framework 独立应用并收集内存活动数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 3bc53041-91b7-4ad0-8413-f8bf2c4b3f5e
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6378ea021d089027c19d28e927d5772ef5f35e0f
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: a0df21a4d34d3d3f889442046b594ff63f01bcb6
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327700"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883424"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-memory-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，以使用命令行收集内存数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序以及收集内存数据。
@@ -87,7 +89,7 @@ ms.locfileid: "85327700"
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 ( **/processon**) 或停止 ( **/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
     |[/attach](../profiling/attach.md) **:** `PID` [/detach](../profiling/detach.md)|**/attach** 将启动由 `PID`（进程 ID）指定的进程的数据收集。 **/detach** 将停止所有进程的数据收集。|
 
-- 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选数据。
+- 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark** 命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选数据。
 
 ## <a name="end-the-profiling-session"></a>结束分析会话
  若要结束分析会话，必须将探查器与所有被分析进程分离，并且必须显式关闭探查器。 可通过关闭应用程序或调用 **VSPerfCmd /detach** 选项从使用采样方法分析的应用程序分离探查器。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。 **VSPerfClrEnv /off** 命令会清除分析环境变量。

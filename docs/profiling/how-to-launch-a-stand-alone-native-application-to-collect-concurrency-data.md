@@ -1,5 +1,7 @@
 ---
 title: 探查器命令行 - 打开本机客户端应用，获取并发数据
+description: 了解如何使用 Visual Studio 分析工具命令行工具启动本机独立客户端应用并收集进程和线程并发数据。
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: e5aed651-afed-4b70-9a7e-1a6032cc614f
@@ -9,12 +11,12 @@ manager: jillfra
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0aeebe82e3c7b574b65ab463a7bfd986d43d46ef
-ms.sourcegitcommit: 57d96de120e0574e506dfd80bb7adfbac73f96be
+ms.openlocfilehash: ce8c16c3c895c0538f91bdb27af08e003b1450cf
+ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2020
-ms.locfileid: "85327660"
+ms.lasthandoff: 01/27/2021
+ms.locfileid: "98883428"
 ---
 # <a name="how-to-launch-a-stand-alone-native-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立本机应用程序，并通过命令行收集并发数据
 本主题介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动本机独立（客户端）应用程序以及收集进程和线程并发数据。
@@ -74,7 +76,7 @@ ms.locfileid: "85327660"
     |[/processon](../profiling/processon-and-processoff.md) **:** `PID` [/processoff](../profiling/processon-and-processoff.md) **:** `PID`|启动 ( **/processon**) 或停止 ( **/processoff**) 由进程 ID (`PID`) 指定的进程的数据收集。|
     |[/attach](../profiling/attach.md) **:** {`PID`&#124;`ProcName`} [/detach](../profiling/detach.md)[ **:** {`PID`&#124;`ProcName`}]|**/attach** 将启动由进程 ID (`PID`) 或进程名称 (*ProcName*) 指定的进程的数据收集。 **/detach** 将停止指定进程或所有进程（未指定任何特定进程时）的数据收集。|
 
-- 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark**命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选探查器报告和数据视图中的数据。
+- 还可以使用 **VSPerfCmd.exe**[/mark](../profiling/mark.md) 选项将分析标记插入数据文件。 **/mark** 命令可添加标识符、时间戳和（可选）用户定义的文本字符串。 标记可用于筛选探查器报告和数据视图中的数据。
 
 ## <a name="end-the-profiling-session"></a>结束分析会话
  若要结束分析会话，探查器不得再收集数据。 可以通过关闭所分析的应用程序或调用 **VSPerfCmd /detach** 选项来停止收集并发数据。 然后，可以调用 **VSPerfCmd /shutdown** 选项关闭探查器和分析数据文件。
