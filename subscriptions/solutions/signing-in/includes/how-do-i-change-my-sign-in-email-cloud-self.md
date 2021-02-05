@@ -10,12 +10,12 @@ user.type: subscriber
 tags: sign-in
 subscription.type: cloud,
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: e3f76bcfe227ecb4093650c99d179a05b1581a03
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: acd8d4c766dab444f316a534056d89cc37419651
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915861"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541037"
 ---
 ## <a name="how-can-i-change-the-sign-in-address-on-my-visual-studio-cloud-subscription"></a>如何更改 Visual Studio 云订阅的登录地址？
 
@@ -27,5 +27,4 @@ ms.locfileid: "96915861"
 0. 根据需要更改电子邮件地址。
 0. 单击“保存”。
 
-> [!NOTE]
-> 这不会更改用于登录到管理门户的电子邮件地址。
+注意：这不会更改用于登录到管理门户的电子邮件地址。
