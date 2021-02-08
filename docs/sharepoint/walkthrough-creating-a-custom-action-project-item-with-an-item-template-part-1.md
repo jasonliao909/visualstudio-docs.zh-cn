@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d9d1d2cca8f8ffaec67c92b44e7a621d08ad673
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839118"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练：使用项模板创建自定义操作项目项（第1部分）
   你可以通过创建自己的项目项类型，在 Visual Studio 中扩展 SharePoint 项目系统。 在本演练中，您将创建一个可以添加到 SharePoint 项目中以在 SharePoint 站点上创建自定义操作的项目项。 自定义操作将菜单项添加到 SharePoint 网站的 " **网站操作** " 菜单。
@@ -49,12 +49,12 @@ ms.locfileid: "96915266"
 > [!NOTE]
 > 可以从 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下载示例，其中演示了如何为工作流创建自定义活动。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要完成本演练，开发计算机上需要以下组件：
 
 - 支持的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
   以下概念的知识非常有用，但不是必需的，无法完成本演练：
 
@@ -181,7 +181,7 @@ ms.locfileid: "96915266"
 
 7. 在出现的列表中，选择 " **嵌入的资源**"。
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>检查点
  在本演练的此时，项目项的所有代码现在都在项目中。 生成项目以验证它是否编译而不发生错误。
 
 #### <a name="to-build-your-project"></a>若要生成你的项目
@@ -332,7 +332,7 @@ ms.locfileid: "96915266"
 
 12. 在 " **项目** " 列表中，选择 " **ProjectItemDefinition**"。
 
-13. 选择 **“确定”** 按钮。
+13. 选择“确定”  按钮。
 
 14. 在菜单栏上，选择 "**生成**" "生成  >  **解决方案**"，然后确保项目编译时不会出错。
 

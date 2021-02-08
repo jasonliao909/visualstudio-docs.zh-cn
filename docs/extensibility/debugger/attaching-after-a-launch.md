@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5a3600a1-dc20-4e55-b2a4-809736a6ae65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e19d9090126a13b657f53c20d7ec44a793d5376
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 22ce6497b820e1dcd37315f9d74cb97de4cc34e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913888"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837731"
 ---
 # <a name="attach-after-a-launch"></a>启动后附加
 在程序启动后，调试会话已准备好将调试引擎附加 (DE) 。
@@ -39,7 +39,7 @@ ms.locfileid: "96913888"
 
  但是，如果在 SDM 的地址空间中运行的 DE 为，则该 `IDebugProgramNodeAttach2::OnAttach` 方法返回 `S_OK` ，或 [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) 接口根本不是在与要调试的程序关联的 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 对象上实现的。 在这种情况下，将最终调用 [attach](../../extensibility/debugger/reference/idebugengine2-attach.md) 方法来完成附加操作。
 
- 在后一种情况下，您必须[GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)对 `IDebugProgram2` 传递给方法的对象调用 GetProgramId 方法 `IDebugEngine2::Attach` ，将存储 `GUID` 在本地程序对象中，并在 `GUID` `IDebugProgram2::GetProgramId` 随后对此对象调用方法时返回此方法。 `GUID`用于跨各种调试组件唯一标识程序。
+ 在后一种情况下，您必须[](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)对 `IDebugProgram2` 传递给方法的对象调用 GetProgramId 方法 `IDebugEngine2::Attach` ，将存储 `GUID` 在本地程序对象中，并在 `GUID` `IDebugProgram2::GetProgramId` 随后对此对象调用方法时返回此方法。 `GUID`用于跨各种调试组件唯一标识程序。
 
  在方法返回的情况下 `IDebugProgramNodeAttach2::OnAttach` `S_FALSE` ，要用于该程序的将 `GUID` 传递到该方法，并且它是在 `IDebugProgramNodeAttach2::OnAttach` `GUID` 本地程序对象上设置的方法。
 

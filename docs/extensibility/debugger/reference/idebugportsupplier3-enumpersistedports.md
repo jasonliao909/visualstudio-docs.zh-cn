@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 92b31a6b6898b0031e4a01d5a6433d0ce77e64f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 09b1fabaeb5bf887eedaa53d57bdeb3604bf2257
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724453"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840322"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 此方法检索允许枚举持久端口列表的对象。
@@ -28,20 +28,20 @@ ms.locfileid: "80724453"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnumPersistedPorts(
-   BSTR_ARRAY         PortNames,
-   IEnumDebugPorts2** ppEnum
+HRESULT EnumPersistedPorts(
+   BSTR_ARRAY         PortNames,
+   IEnumDebugPorts2** ppEnum
 );
 ```
 
 ```csharp
-int EnumPersistedPorts(
-   BSTR_ARRAY           PortNames,
-   out IEnumDebugPorts2 ppEnum
+int EnumPersistedPorts(
+   BSTR_ARRAY           PortNames,
+   out IEnumDebugPorts2 ppEnum
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `PortNames`\
 中一个 [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md) 结构，它包含要在持久端口中查找和返回的端口名称的列表。 仅返回具有这些名称的已保留端口。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13cfa6ebb8cae645202339c511f15ca15e2b3490
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: c23271596353ae289e1b7507b90b40095ca82c15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839880"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
 IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 到嵌套项目，也可以使用父项目来筛选或重写命令。
@@ -53,7 +53,7 @@ IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.S
 
     父项目不需要将命令路由到子项目。 IDE 将执行此任务。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>
 - [命令、菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)
 - [嵌套项目](../../extensibility/internals/nesting-projects.md)

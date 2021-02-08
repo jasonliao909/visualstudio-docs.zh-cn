@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7d21fe48-489a-4f55-acb5-73da64c4e155
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76f0bd737eff52706cf73c9a1105b79e08c556f0
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 0784b16acd00e354c8ecf36f34d6b05c750f6bec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837198"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 必须注册源代码管理 VSPackage，才能将其公开给 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如果注册了多个源代码管理 VSPackage，则用户可以选择要在适当的时间加载的 VSPackage。 有关更多详细信息，请参阅 [vspackage](../../extensibility/internals/vspackages.md) 和注册方式。
@@ -41,7 +41,7 @@ ms.locfileid: "97877346"
 
   以下注册表项必须由源代码管理 VSPackage 生成：
 
-| 项名称 | 项 |
+| 项名 | 项 |
 | - | - |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\` |  (默认值) = rg_sz： {ID_SccProvider} |
 | `HKEY_LOCAL_MACHINE\   SOFTWARE\     Microsoft\       VisualStudio\         X.Y\           SourceControlProviders\             {ID_SccProvider}\` |  (默认值) = rg_sz：\<Friendly name of Package><br /><br /> 服务 = rg_sz： {SID_SccPkgService} |

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 03b2d507-f463-417e-bc22-bdac68eeda52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb694389bbf6f913db084dca29f7787c6283d3ad
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 8f6010ffdf6873073eded63c75475115391a3964
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839594"
 ---
 # <a name="legacy-language-service-interfaces"></a>旧版语言服务接口
 对于任何特定的编程语言，一次只能有一个语言服务的实例。 不过，一种语言服务可为多个编辑器提供服务。
@@ -43,7 +43,7 @@ ms.locfileid: "98205016"
 ## <a name="additional-language-service-interfaces"></a>其他语言服务接口
  其他接口可与你的语言服务一起提供。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 为文本缓冲区的每个实例请求这些接口的单独实例。 因此，应在其自己的对象上实现每个接口。 下表显示了每个文本缓冲区实例需要一个实例的接口。
 
-|接口|描述|
+|接口|说明|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>|管理代码窗口装饰，如下拉栏。 可以使用方法获取此接口 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetCodeWindowManager%2A> 。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindowManager>每个代码窗口都有一个。|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer>|着色语言关键字和分隔符。 可以使用方法获取此接口 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo.GetColorizer%2A> 。 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 在绘制时调用。 避免计算密集型工作发生 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> ，或性能可能会降低。|

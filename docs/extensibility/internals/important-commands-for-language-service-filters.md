@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13014d61450897897029750b012833cf93a57729
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204613"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839828"
 ---
 # <a name="important-commands-for-language-service-filters"></a>语言服务筛选器的重要命令
 如果要创建功能齐全的语言服务筛选器，请考虑处理以下命令。 命令标识符的完整列表在 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 托管代码的枚举和非托管代码的 Stdidcmd 头文件中定义 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 可在 *Visual STUDIO SDK 安装路径*\VisualStudioIntegration\Common\Inc. 中找到 Stdidcmd 文件。
@@ -28,7 +28,7 @@ ms.locfileid: "98204613"
 > [!NOTE]
 > 不强制筛选下表中的每个命令。
 
-|命令|描述|
+|命令|说明|
 |-------------|-----------------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|当用户单击鼠标右键时发送。 此命令指示提供快捷菜单的时间。 如果不处理此命令，文本编辑器会提供默认快捷菜单，没有任何特定于语言的命令。 若要在此菜单中包含自己的命令，请自行处理命令并显示快捷菜单。|
 |<xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID>|通常在用户键入 CTRL + J 时发送。 对调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 以显示语句完成框。|

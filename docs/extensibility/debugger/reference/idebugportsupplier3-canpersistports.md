@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bf436d788b517300bee9a13b66b0ca3747bcc43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2914d56f2d74629a30bc63bad281bb0cdcdc0de8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724459"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840335"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 此方法确定端口供应商是否可以通过将端口写入) 在调试器调用之间 (来持久保存端口。
@@ -28,14 +28,14 @@ ms.locfileid: "80724459"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CanPersistPorts();
+HRESULT CanPersistPorts();
 ```
 
 ```csharp
-int CanPersistPorts();
+int CanPersistPorts();
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
  无。
 
 ## <a name="return-value"></a>返回值

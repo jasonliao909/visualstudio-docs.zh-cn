@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: a646e4f0-767d-4cd1-8e1a-9a2aa210a1b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e099798ff5fcc96e798742b16ba88e522a4bc0b
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: d34ce48d9543107831ec358a9cf7eeed74d2787b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839659"
 ---
 # <a name="legacy-language-service-features-1"></a>旧版语言服务功能1
 管理包框架 (MPF) 语言服务可以支持一个或多个 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能，例如语法突出显示、IntelliSense 和断点验证。 每个功能都可以独立于其他功能来实现，但除语法突出显示之外，还需要一个分析器和一个扫描程序，这只需要一个扫描程序。

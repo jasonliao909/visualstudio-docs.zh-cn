@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6b909f93-d7f5-4aec-81c6-ee9ff0f31638
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 999b435719113883201b7619daca9a84d095294e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cc268236a10ab3f6be660b0e69a82a8f656f8910
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837233"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 项目类型必须注册其项目和项目项模板所在的目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用与你的项目类型关联的注册信息来确定要在 " **添加新项目** " 和 " **添加新项** " 对话框中显示的内容。
@@ -43,7 +43,7 @@ ms.locfileid: "97875266"
 |----------|----------|-----------------|
 |@|REG_SZ|此类型的项目的默认名称。|
 |DisplayName|REG_SZ|要从在包下注册的附属 DLL 检索的名称的资源 ID。|
-|包|REG_SZ|包中注册的包的类 ID。|
+|程序包|REG_SZ|包中注册的包的类 ID。|
 |ProjectTemplatesDir|REG_SZ|项目模板文件的默认路径。 项目模板文件由 **新项目** 模板显示。|
 
 ### <a name="registering-item-templates"></a>注册项模板

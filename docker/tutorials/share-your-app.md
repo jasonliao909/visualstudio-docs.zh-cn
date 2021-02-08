@@ -4,17 +4,17 @@ description: 介绍如何使用 Docker Hub 注册表共享 Docker 映像。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 46f91b3bf163f3847492a7727fa72a39908d441c
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841700"
 ---
 # <a name="share-your-app"></a>共享应用
 

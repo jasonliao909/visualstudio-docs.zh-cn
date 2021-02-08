@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c8c58a98887e5509026641ba0295fc167435e3
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204600"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839555"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要语言分析器来选择要显示的代码的相关信息。 分析器将文本分为词法标记，然后按类型和功能标识这些标记。
@@ -46,8 +46,8 @@ namespace MyNamespace
 |namespace、class、public、void、int|关键字 (keyword)|
 |=|operator|
 |{ } ( ) ;|delimiter|
-|MyNamespace、MyClass、MyFunction、arg1、var1|标识符 (identifier)|
-|MyNamespace|namespace|
+|MyNamespace、MyClass、MyFunction、arg1、var1|标识符|
+|MyNamespace|命名空间|
 |MyClass|class|
 |MyFunction|method|
 |arg1|参数|

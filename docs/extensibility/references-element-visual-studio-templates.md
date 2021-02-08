@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1969146d-46bf-422d-8d46-0e9493925003
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2576a56bf223fd1b3a1ba4903595cc25144011ec
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6a9c2cc5d8827f6419472e5fd84add4d9c9f5228
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837172"
 ---
 # <a name="references-element-visual-studio-templates"></a>Visual Studio 模板 (引用元素) 
 将模板添加到项目的程序集引用分组。
@@ -47,17 +47,17 @@ ms.locfileid: "94903739"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[引用](../extensibility/reference-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定向项目添加项时要添加的程序集引用。 元素中必须有一个或多个 `Reference` 元素 `References` 。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|指定模板的内容。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `References` 是 `TemplateContent` 的可选子元素。
 
  `Reference`和 `References` 元素只能在属性值为的 *.vstemplate* 文件中使用 `Type` `Item` 。
