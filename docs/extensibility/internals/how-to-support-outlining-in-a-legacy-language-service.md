@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9d1d7b7a74b6565c666e4d5e3293caaef3c7732
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: a7d2dc2b12ee20b96cad27cb56bf0e4552e3f7c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761317"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844588"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 大纲用于展开或折叠不同的文本区域。 使用大纲显示的方式可以通过不同的语言以不同的方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。
@@ -47,6 +47,6 @@ ms.locfileid: "96761317"
 > [!NOTE]
 > 请小心隐藏新行字符。 隐藏的文本应该从第一行的开头到节中最后一行的最后一个字符，并使最后的新行字符可见。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在旧版语言服务中提供隐藏的文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [如何：提供旧版语言服务中的扩展大纲支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

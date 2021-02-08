@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cd83a111-bfd5-4eae-b576-526466c6b6ec
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1f9dea8706b8075b460b813d2dc58a916198d37
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a8ed073d873ecb0d46b85d37c355d6c374a7eabc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844783"
 ---
 # <a name="idebugportex2getprogram"></a>IDebugPortEx2::GetProgram
 获取与程序节点关联的程序。
@@ -28,20 +28,20 @@ ms.locfileid: "80725087"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetProgram( 
+HRESULT GetProgram( 
    IDebugProgramNode2* pProgramNode,
    IDebugProgram2**    ppProgram
 );
 ```
 
 ```csharp
-int GetProgram( 
+int GetProgram( 
    IDebugProgramNode2 pProgramNode,
    out IDebugProgram2 ppProgram
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProgramNode` 中表示程序节点的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象。
 
 `ppProgram` 弄返回一个 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，该对象表示与程序节点关联的程序。

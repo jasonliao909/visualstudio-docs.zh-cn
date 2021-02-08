@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40d21dcc9b1da0e1e2250adcfad59b3ef46a2113
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b10a09aeab6012981fd464694c641aaf6bba4951
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842233"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -47,7 +47,7 @@ IEEVisualizerService : IUnknown
 |[GetValueDisplayStringCount](../../../extensibility/debugger/reference/ieevisualizerservice-getvaluedisplaystringcount.md)|检索要为指定的属性或字段显示的值字符串的数目。|
 
 ## <a name="remarks"></a>备注
- IDE 使用 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 接口来确定属性是否有任何自定义查看器或类型可视化工具。 通过使用[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) 创建可视化工具服务 (，EE 可以向和 IPropertyProxyEESide (提供该功能，该功能 `IDebugProperty3` 支持) 接口查看和更改属性值，从而支持类型可视化工具。 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
+ IDE 使用 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 接口来确定属性是否有任何自定义查看器或类型可视化工具。 通过使用[CreateVisualizerService](../../../extensibility/debugger/reference/ieevisualizerserviceprovider-createvisualizerservice.md)) 创建可视化工具服务 (，EE 可以向和 IPropertyProxyEESide (提供该功能，该功能 `IDebugProperty3` 支持) 接口查看和更改属性值，从而支持类型可视化工具。 [](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 
  如果 EE 具有自身实现的自定义查看器，则 EE 可以将 `CLSID` 这些自定义查看器的添加到 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)返回的列表的末尾。 这允许 EE 同时支持类型可视化工具和自己的自定义查看器。 只需确保 [GetCustomViewerCount](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 反映了所有自定义查看器的添加。
 

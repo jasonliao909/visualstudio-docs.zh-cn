@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a7da218a9ada593731e6205e017861084e73adc
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: f870da49cdf82203e7dd435601f93a75cb16dccd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839958"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>实现旧版语言服务2
 若要使用托管包框架 (MPF) 实现语言服务，必须从类派生一个类 <xref:Microsoft.VisualStudio.Package.LanguageService> ，并实现以下抽象方法和属性：
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>在 LanguageService 类中
 
-|方法|返回的类|描述|
+|方法|返回的类|说明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|支持对文本视图进行自定义添加。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|支持自定义文档属性。|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>在源类中
 
-|方法|返回的类|描述|
+|方法|返回的类|说明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|为了自定义 IntelliSense 完成列表的显示 (通常不会) 重写此方法。|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|错误列表任务列表中的支持标记;具体而言，支持除打开文件并跳转到导致错误的行以外的功能。|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>在 AuthoringScope 类中
 
-|方法|返回的类|描述|
+|方法|返回的类|说明|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供一个声明列表，如成员或类型。 必须实现此方法，但可以返回 null 值。 如果此方法返回有效的对象，则该对象必须是您的类版本的实例 <xref:Microsoft.VisualStudio.Package.Declarations> 。|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|提供给定上下文的方法签名列表。 必须实现此方法，但可以返回 null 值。 如果此方法返回有效的对象，则该对象必须是您的类版本的实例 <xref:Microsoft.VisualStudio.Package.Methods> 。|
@@ -360,7 +360,7 @@ public enum IconImageIndex
         }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [旧版语言服务概述](../../extensibility/internals/legacy-language-service-overview.md)
 - [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

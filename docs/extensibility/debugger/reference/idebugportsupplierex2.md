@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: dae0050a-a50a-4f35-bfbd-e538f537b20f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26387618b320ed56ce754e64698fbb1c4223f2f6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a9a0958614c8df326c20ad8030bb798447a5e62a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724320"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840153"
 ---
 # <a name="idebugportsupplierex2"></a>IDebugPortSupplierEx2
 提供对端口提供程序的支持，以便选择核心服务器并与之进行交互。
@@ -30,7 +30,7 @@ IDebugPortSupplierEx2 : IUnknown
  自定义端口供应商实现此接口，以便可以选择要使用的核心服务器。
 
 ## <a name="methods"></a>方法
- 下表显示了 **IDebugPortSupplierEx2**的方法。
+ 下表显示了 **IDebugPortSupplierEx2** 的方法。
 
 |方法|说明|
 |------------|-----------------|

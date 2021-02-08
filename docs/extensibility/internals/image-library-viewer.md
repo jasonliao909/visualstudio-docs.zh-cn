@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae9090604a16196c43b80140395eb3401215d665
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: dc0acd64a61acac2cb30b9251bcb4e528c08f227
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840114"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用户能够以与 Visual Studio 相同的方式对其进行操作。 用户可以更改背景、大小、DPI、高对比度和其他设置。 该工具还显示每个映像清单的加载信息，并显示映像清单中每个映像的源信息。 此工具适用于：
@@ -75,7 +75,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用
 |导入|导入给定清单文件的符号，以便在当前清单中使用。|
 |Guid|符号表示 GUID 并且必须与 GUID 格式匹配。|
 |ID|符号表示 ID，必须为非负整数。|
-|String|符号表示任意字符串值。|
+|字符串|符号表示任意字符串值。|
 
  符号区分大小写，并使用 $ (符号名) 语法进行引用：
 
@@ -116,7 +116,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用
 |ID|请求图像名字对象的 ID 部分|
 |AllowColorInversion|[可选，默认值为 true]指示在深色背景上使用时，图像是否可以通过编程方式进行反转。|
 
- **源**
+ **Source**
 
  \<Source>元素定义单个图像源资产 (XAML 和 PNG) 。
 

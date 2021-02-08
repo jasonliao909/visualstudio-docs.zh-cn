@@ -2,17 +2,17 @@
 title: Publish-WebApplicationVM | Microsoft Docs
 description: 了解如何将 Web 应用程序部署到虚拟机。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 61055a21e3360419639494ee6dcd47f88440f94e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 6bd9659adec2d1d88a7a02c7985fc0f823c5d811
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902176"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844003"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM（Windows PowerShell 脚本）
 将 Web 应用程序部署到虚拟机。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。
@@ -33,7 +33,7 @@ Publish-WebApplicationVM
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |true |
+| 必需？ |是 |
 | 位置 |所指定位置 |
 | 默认值 |无 |
 | 接受管道输入？ |false |
@@ -44,7 +44,7 @@ Publish-WebApplicationVM
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |使用订阅文件中的第一个订阅 |
 | 接受管道输入？ |false |
@@ -55,7 +55,7 @@ Publish-WebApplicationVM
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |无 |
 | 接受管道输入？ |false |
@@ -66,7 +66,7 @@ Publish-WebApplicationVM
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |false |
 | 接受管道输入？ |false |
@@ -77,7 +77,7 @@ Publish-WebApplicationVM
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |无 |
 | 接受管道输入？ |false |
@@ -88,7 +88,7 @@ Azure 中的 SQL 数据库的凭据。 示例：-DatabaseServerPassword @{Name =
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |无 |
 | 接受管道输入？ |false |
@@ -99,13 +99,13 @@ Azure 中的 SQL 数据库的凭据。 示例：-DatabaseServerPassword @{Name =
 
 | 别名 | 无 |
 | --- | --- |
-| 是否必需？ |false |
+| 必需？ |false |
 | 位置 |所指定位置 |
 | 默认值 |false |
 | 接受管道输入？ |false |
 | 接受通配符？ |false |
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 有关如何使用脚本创建开发和测试环境的完整说明，请参阅[使用 Windows PowerShell 脚本发布到开发和测试环境](vs-azure-tools-publishing-using-powershell-scripts.md)。
 
 JSON 配置文件指定要部署的内容的详细信息。 它包括创建项目时指定的信息，如名称、地缘组、VHD 映像和虚拟机的大小。 它还包括虚拟机上的终结点、要预配的数据库（如果有的话）和 Web 部署参数。 以下代码显示一个示例 JSON 配置文件：
