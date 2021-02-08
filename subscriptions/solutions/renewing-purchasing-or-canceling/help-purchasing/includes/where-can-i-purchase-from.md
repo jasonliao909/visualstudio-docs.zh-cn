@@ -10,12 +10,12 @@ user.type: subscriber
 tags: purchasing
 subscription.type: vl, cloud, retail, partner
 sap.id: c374762c-640b-8b2c-d049-bda9545e903c
-ms.openlocfilehash: e79c8a818b4e2bf787225342c9ad2c344cfbc74c
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: be2c22f6ea8bb9b6b98823b8adbe763137fdec1a
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915912"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541231"
 ---
 ## <a name="where-to-purchase-subscriptions"></a>订阅购买渠道 
 
@@ -42,8 +42,8 @@ Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https:
 * [Visual Studio Professional - 月度订阅](https://marketplace.visualstudio.com/items?itemName=ms.vs-professional-monthly) 
 * [Visual Studio Enterprise - 月度订阅](https://marketplace.visualstudio.com/items?itemName=ms.vs-enterprise-monthly) 
 
-[阅读更多](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)有关每月 Visual Studio 订阅计费的信息。 
+详细了解有关[每月 Visual Studio 订阅计费](https://docs.microsoft.com/visualstudio/subscriptions/vscloud-billing-faq)的信息。 
 
 ## <a name="volume-licensing"></a>批量许可 
 
-当组织需要购买大量订阅时，可以使用批量许可订阅。 [详细了解](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)如何通过批量许可进行购买。
+当组织需要购买大量订阅时，可以使用批量许可订阅。 详细了解有关[如何通过批量许可进行购买](https://www.microsoft.com/licensing/how-to-buy/how-to-buy)的信息。

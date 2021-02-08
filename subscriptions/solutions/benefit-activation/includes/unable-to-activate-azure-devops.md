@@ -1,5 +1,5 @@
 ---
-title: 无法激活 Azure DevOps 权益。
+title: 无法激活 Azure DevOps 权益
 description: 无法激活 Visual Studio 订阅附带的 Azure DevOps 权益。
 ms.topic: include
 ms.assetid: 3ec2a8c1-07e0-45cd-808c-c354b9e26fb4
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure-devops
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7bd0cf67d86062b73bfdfe2461ace98e8ef43639
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 7803b30fc189b29b58a1642dc8b86cd5d7b8a526
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147629"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541061"
 ---
 ## <a name="im-unable-to-activate-my-azure-devops-benefit"></a>无法激活 Azure DevOps 权益。
 
@@ -27,4 +27,4 @@ ms.locfileid: "98147629"
 1. 使用用于登录 Visual Studio 订阅的电子邮件登录到 Azure DevOps。 如果希望使用其他电子邮件登录，可以[创建备用帐户](https://docs.microsoft.com/visualstudio/subscriptions/vs-alternate-identity)来链接订阅，以便使用这两个电子邮件访问 Azure DevOps。 
 
 ## <a name="more-information-about-subscription-eligibility"></a>有关订阅资格的详细信息 
-[详细了解](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops)各订阅级别的资格。
+详细了解[各订阅级别资格](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure-devops)的信息。
