@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7b2be4b9-e3fe-4412-874f-ae72ebc84c4b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d99b1b0f5ba0f80af3aadcff0404357b57fbe265
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4466a180923c85461ede59102b346caf70fd064b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99842183"
 ---
 # <a name="extend-menus-and-commands"></a>扩展菜单和命令
 命令是向 Visual Studio 添加操作和过程的方式。 在大多数情况下，会在菜单或工具栏上显示命令。 VSPackage 项目模板演示如何实现一个非常基本的命令。 对于稍长但仍是基本实现的，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
@@ -30,7 +30,7 @@ ms.locfileid: "96994597"
 
  以下主题介绍如何添加不同种类的命令、菜单和工具栏。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [将菜单添加到 Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 说明如何向 Visual Studio 的顶部菜单栏添加菜单。
 
 - [将键盘快捷方式绑定到菜单项](../extensibility/binding-keyboard-shortcuts-to-menu-items.md) 说明如何将键盘快捷方式 (如 CTRL + 3) 添加到菜单项。

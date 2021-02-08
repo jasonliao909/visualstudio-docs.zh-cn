@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9214d1ce4a873d6caea98b814e8d489f544944c5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: eceb0776fd1cb5e850dab2b97ab6e7e56a684ebd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838017"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活动设计器
 
@@ -37,17 +37,17 @@ ms.locfileid: "96996287"
 
 下表列出 <xref:System.ServiceModel.Activities.TransactedReceiveScope> 属性并说明如何在设计器中使用它们。 这些 <xref:System.Activities.Activity.DisplayName%2A> 属性可以在属性网格中或工作流设计器图面上进行编辑，但其他属性必须在设计图面上进行编辑。
 
-|属性名称|必选|用法|
+|属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活动的可选友好名称。 默认值为 TransactedReceiveScope。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 名称不是绝对必需的，但最好使用显示名称。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|正确|<xref:System.ServiceModel.Activities.Receive>将活动放置在活动设计器图面上的 **请求** 块中。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|错误|将拖 <xref:System.Activities.Activity> 放到活动设计器图面上的 **主体** 块中。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活动的可选友好名称。 默认值为 TransactedReceiveScope。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 名称不是绝对必需的，但最好使用显示名称。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|<xref:System.ServiceModel.Activities.Receive>将活动放置在活动设计器图面上的 **请求** 块中。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|将拖 <xref:System.Activities.Activity> 放到活动设计器图面上的 **主体** 块中。|
 
 ## <a name="see-also"></a>另请参阅
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
-- [接收](../workflow-designer/receive-activity-designer.md)
+- [收](../workflow-designer/receive-activity-designer.md)
 - [ReceiveAndSendReply](../workflow-designer/receiveandsendreply-template-designer.md)
 - 发送
 - [SendAndReceiveReply](../workflow-designer/sendandreceivereply-template-designer.md)

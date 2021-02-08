@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c15e0ccb-e7c5-4dbb-affb-fe3d3244debe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffa21b619ef17be3fa649732a2b6e3bcd700dda6
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: a96b17fbb4caca92124732593da8982f07349155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205133"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839685"
 ---
 # <a name="legacy-language-service-essentials"></a>旧版语言服务基础知识
 必须提供语言服务才能将编程语言集成到 Visual Studio 中。 本主题介绍旧版语言服务中的可用功能。
@@ -32,7 +32,7 @@ ms.locfileid: "98205133"
 
  旧版语言服务提供以下功能：
 
-|Feature|描述|
+|功能|说明|
 |-------------|-----------------|
 |语法着色|使编辑器视图为语言的不同元素显示不同的颜色和字体样式。 这种差异可以更轻松地读取和编辑文件。<br /><br /> 有关一般信息，请参阅 [旧版语言服务中的语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)。<br /><br /> 有关 (MPF) 的托管包框架中此功能的信息，请参阅 [旧版语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。|
 |语句结束|完成用户已开始键入的语句或关键字。 语句完成可帮助用户更轻松地输入困难的语句，但键入的内容更少，并且出错的几率更少。<br /><br /> 有关一般信息，请参阅 [旧版语言服务中的语句完成](../../extensibility/internals/statement-completion-in-a-legacy-language-service.md)。<br /><br /> 有关 MPF 中此功能的信息，请参阅 [旧版语言服务中的 Word 完成](../../extensibility/internals/word-completion-in-a-legacy-language-service.md)。|
@@ -44,7 +44,7 @@ ms.locfileid: "98205133"
 
  以下功能与对编程语言的支持相关，但并不是语言服务的一部分：
 
-| Feature | 描述 |
+| 功能 | 说明 |
 |-----------------------| - |
 | 表达式计算器 | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过验证断点并提供要在 "自动调试" 窗口中显示的表达式的列表来支持调试器。<br /><br /> 有关详细信息，请参阅 [语言服务支持以进行调试](../../extensibility/internals/language-service-support-for-debugging.md)。 |
 | 符号浏览工具 | 支持 **对象浏览器**、 **类视图**、 **调用浏览器** 和 **查找符号结果**。 |

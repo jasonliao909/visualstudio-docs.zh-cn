@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: fc6e047e-ad94-44e8-8ff5-b6d1f4ca7735
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c87b0f6ded2960054cb553dbeb85681aa447668b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: fe8312a4dcaa2efb0b783e89540e5ff9f71f15e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837796"
 ---
 # <a name="application-deployment-prerequisites"></a>应用程序部署必备
 
@@ -69,7 +69,7 @@ ms.locfileid: "94383243"
  作为引导的替代方法，你可以使用电子软件分发系统（如 Microsoft Systems Management Server (SMS)）预先部署组件。
 
 ## <a name="bootstrapper-setupexe-command-line-arguments"></a>引导程序 (Setup.exe) 命令行参数
- 由 *Setup.exe* [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MSBuild 任务生成的Setup.exe支持下面的一组命令行参数。 任何其他参数都将转发到应用程序安装程序。
+ 由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 和 MSBuild 任务生成的Setup.exe支持下面的一组命令行参数。 任何其他参数都将转发到应用程序安装程序。
 
  如果更改了任何引导程序选项，则必须更改未签名的引导程序，然后对引导程序文件进行签名。
 
@@ -84,6 +84,6 @@ ms.locfileid: "94383243"
 ## <a name="operating-system-support"></a>操作系统支持
  Windows Server 2008 Server Core 或 Windows Server 2008 R2 Server Core 上不支持 Visual Studio 引导程序，因为它们提供的低维护服务器环境的功能有限。 例如，"服务器核心" 安装选项仅支持 .NET Framework 3.5 Server Core 配置文件，此配置文件无法运行依赖于完整 .NET Framework 的 Visual Studio 功能。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b07e72c7-60d3-4b30-8e3f-6db83454c348
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97fb2c11b94a97a5c7a00083aa61877bb68d377b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 34367b836e766754ce5e274698eb4f5a5d407760
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840608"
 ---
 # <a name="evaluate-a-watch-window-expression"></a>计算监视窗口表达式
 > [!IMPORTANT]
@@ -49,7 +49,7 @@ ms.locfileid: "96915643"
 > [!NOTE]
 > 尽管 Visual Studio 假定这样做，但不需要将 EE 与此两步过程保持不一样：调用 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 时，EE 可以在同一步骤中分析和评估 (这是 MyCEE 示例的工作方式，例如) 。 如果你的语言可以构成复杂的表达式，你可能需要将分析步骤与评估步骤分离。 当显示许多监视表达式时，这可能会提高 Visual Studio 调试器的性能。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [表达式计算的示例实现](../../extensibility/debugger/sample-implementation-of-expression-evaluation.md) 使用 MyCEE 示例逐步完成表达式计算的过程。
 
  [计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md) 说明成功的表达式分析后会发生的情况。

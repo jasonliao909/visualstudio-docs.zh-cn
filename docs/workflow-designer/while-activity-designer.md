@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: ea008091-2e4c-4f64-bfa5-afb919552446
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e78d4f2e6aa332c9dfd5faebf834e4f5015c454
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9447d32f17283e7123e2f99490acc49c1613360d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837991"
 ---
 # <a name="while-activity-designer"></a>While 活动设计器
 
@@ -29,9 +29,9 @@ ms.locfileid: "94433695"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.While> 活动设计器在标头中的友好名称。 默认值为 While。 该值可以在 " **属性** " 窗口中编辑，也可以直接在活动设计器标头中编辑。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.While.Body%2A>|错误|包含 <xref:System.Activities.Statements.While.Condition%2A> 计算结果为 **true** 时要执行的活动。|
-|<xref:System.Activities.Statements.While.Condition%2A>|正确|包含计算以确定是否要执行中的活动的 Visual Basic 表达式 <xref:System.Activities.Statements.While.Body%2A> 。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.While> 活动设计器在标头中的友好名称。 默认值为 While。 该值可以在 " **属性** " 窗口中编辑，也可以直接在活动设计器标头中编辑。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Statements.While.Body%2A>|False|包含 <xref:System.Activities.Statements.While.Condition%2A> 计算结果为 **true** 时要执行的活动。|
+|<xref:System.Activities.Statements.While.Condition%2A>|True|包含计算以确定是否要执行中的活动的 Visual Basic 表达式 <xref:System.Activities.Statements.While.Body%2A> 。|
 
 ## <a name="see-also"></a>另请参阅
 

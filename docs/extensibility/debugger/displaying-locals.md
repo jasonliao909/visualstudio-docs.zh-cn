@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62264cec-845b-4233-aed7-0b038fa79250
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddc7bc564e4e294144eeb3fa34db8bdf73971053
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 31e0ebeb4155fef551f98a81f93e02ecdf2ecb9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915539"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840764"
 ---
 # <a name="display-locals"></a>显示局部变量
 > [!IMPORTANT]
@@ -33,7 +33,7 @@ ms.locfileid: "96915539"
 > [!NOTE]
 > " **快速监视** " 和 " **监视** " 窗口还显示具有相同格式的名称、值和类型的变量。 不过，这些值通过调用 [GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 而不是获得 `IDebugProperty2::EnumChildren` 。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [局部变量的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md) 使用示例逐步完成实现局部变量的过程。
 
 ## <a name="related-sections"></a>相关章节

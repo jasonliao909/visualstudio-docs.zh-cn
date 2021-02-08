@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], adding controls at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf6313f4788a0bd224d04639d3ab588a6469842
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 3cc88b5ee48241a15a66144c992936b55fb2acf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526287"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838082"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>演练：在运行时在 VSTO 外接程序中将控件添加到文档
   您可以通过使用 VSTO 外接程序向任何打开的 Microsoft Office Word 文档中添加控件。 本演练演示如何使用功能区来允许用户向 <xref:Microsoft.Office.Tools.Word.Controls.Button> 文档添加或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。
@@ -80,14 +80,14 @@ ms.locfileid: "97526287"
 
 8. 在 **“属性”** 窗口中，更改下列属性。
 
-   | properties | 值 |
+   | 属性 | 值 |
    |-----------|-----------------------|
    | **名称** | **addButtonCheckBox** |
    | **Label** | **添加按钮** |
 
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。
 
-   | properties | 值 |
+   | 属性 | 值 |
    |-----------|---------------------------|
    | **名称** | **addRichTextCheckBox** |
    | **Label** | **添加 RTF 控件** |

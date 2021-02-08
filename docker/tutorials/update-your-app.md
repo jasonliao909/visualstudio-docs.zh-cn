@@ -4,17 +4,17 @@ description: 介绍如何更新 Docker 应用。
 ms.date: 08/04/2020
 author: nebuk89
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: e8f17047902ccf6c7fad164e788e64fe0b17cf14
-ms.sourcegitcommit: fb8babf5cd72f1fc2f97ffe4ad7b62d91f325f61
+ms.openlocfilehash: df2102c38250aa5c1bda52b4324cba808501db3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/04/2020
-ms.locfileid: "89485423"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841739"
 ---
 # <a name="update-the-app"></a>更新应用
 

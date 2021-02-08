@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a2604e6a-502d-473b-868f-b11ac64c7a35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb1a075d04ed53fdbe2181975a56eddfcbc3b683
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f82d76bb47c22ef77ba14e0a1ad64fa0404a6585
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719751"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837499"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 获取堆栈帧和线程的当前上下文中的表达式计算的计算上下文。
@@ -28,18 +28,18 @@ ms.locfileid: "80719751"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetExpressionContext ( 
+HRESULT GetExpressionContext ( 
    IDebugExpressionContext2** ppExprCxt
 );
 ```
 
 ```csharp
-int GetExpressionContext ( 
+int GetExpressionContext ( 
    out IDebugExpressionContext2 ppExprCxt
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppExprCxt`\
 弄返回一个 [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 对象，该对象表示表达式计算的上下文。
 

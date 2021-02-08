@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 61d24820-0cd9-48b6-8674-6813f7493237
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac9a43a0ec539dd978710c23c9b44f27eac81799
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 9dd31a9ff81493d0a315efc0ce0b607af0c6e422
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840660"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>启用要调试的程序
 在调试引擎 (DE) 可以调试程序之前，必须先启动 DE，或将其附加到现有的程序。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [获取端口](../../extensibility/debugger/getting-a-port.md) 讨论如何获取端口，作为实现程序调试的第一步。
 
  [注册程序](../../extensibility/debugger/registering-the-program.md) 说明启用要调试的程序的下一步：使用端口注册程序。 注册后，程序可通过附加或实时 (JIT) 调试的过程进行调试。

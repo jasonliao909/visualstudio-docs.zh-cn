@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1adcbb47e9fce7037fe8942326e8836ade51e3eb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 33ef775f33194a616d93478aecfdcceec446ebe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700314"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836691"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制源代码管理插件的行为的选项。
@@ -32,7 +32,7 @@ SCCRTN SccSetOption(
 );
 ```
 
-#### <a name="parameters"></a>参数
+#### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件上下文结构。
@@ -66,7 +66,7 @@ SCCRTN SccSetOption(
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指示 IDE 当前是否支持取消操作。|
 |`SCC_OPT_NAMECHANGEPFN`|指向 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回调函数的指针|设置指向名称更改回调函数的指针。|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|指示 IDE 是否允许通过源代码管理用户界面手动签出其文件 () 或是否必须仅通过源代码管理插件将其签出。|
-|`SCC_OPT_SHARESUBPROJ`|空值|如果源代码管理插件允许 IDE 指定本地项目文件夹，则插件将返回 `SCC_I_SHARESUBPROJOK` 。|
+|`SCC_OPT_SHARESUBPROJ`|不可用|如果源代码管理插件允许 IDE 指定本地项目文件夹，则插件将返回 `SCC_I_SHARESUBPROJOK` 。|
 
 ## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE
  如果 `nOption` 为 `SCC_OPT_EVENTQUEUE` ，则 IDE 正在禁用 (或重新启用) 后台处理。 例如，在编译期间，IDE 可能会指示源代码管理插件停止任意类型的空闲处理。 编译完成后，它将重新启用后台处理，以使插件的事件队列保持最新。 对应于的 `SCC_OPT_EVENTQUEUE` 值 `nOption` ，有两个可能的值 `dwVal` ，即 `SCC_OPT_EQ_ENABLE` 和 `SCC_OPT_EQ_DISABLE` 。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 02c2fa04-1424-4bca-9936-feaecd2afab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa98107ada265d232647d27b4050b507d4581df7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d1a38b6c6b519b28f6094bced51a84a4b730f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837536"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
 获取堆栈帧的属性的说明。
@@ -28,18 +28,18 @@ ms.locfileid: "80719782"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetDebugProperty ( 
+HRESULT GetDebugProperty ( 
    IDebugProperty2** ppDebugProp
 );
 ```
 
 ```csharp
-int GetDebugProperty ( 
+int GetDebugProperty ( 
    out IDebugProperty2 ppDebugProp
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppDebugProp`\
 弄返回描述此堆栈帧的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - local data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1a3166a88080eaee1042187c171c4938d236058a
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 857038700a29f423250f006e743152bceea43c14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838225"
 ---
 # <a name="use-local-database-files-in-office-solutions-overview"></a>在 Office 解决方案中使用本地数据库文件概述
   你可以在 Office 解决方案中包括数据库文件，如 SQL Server Express (*.mdf*) 文件或 Microsoft Office *访问 (文件。* 这使最终用户能够在不需要维护集中数据库的情况下维护本地数据库，例如，在仅在一台计算机上使用的本地清单解决方案中。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c368ab-640d-4b5b-9f74-810dc9364d8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24eac6d1dee8e76caf70fed9071bd1ae7412fdc6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 181197e99e33be7ac07514ad1a67dac72335a374
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840374"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 获取端口供应商名称。
@@ -28,18 +28,18 @@ ms.locfileid: "80724575"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetPortSupplierName( 
+HRESULT GetPortSupplierName( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetPortSupplierName( 
+int GetPortSupplierName( 
    out string pbstrName
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrName`\
 弄返回端口供应商的名称。
 

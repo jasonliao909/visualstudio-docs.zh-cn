@@ -14,22 +14,22 @@ helpviewer_keywords:
 ms.assetid: 8457e615-e3b6-4990-8dcf-11bc590e4e9b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47589b909ee2b7ee367c81684ac53e2b5e4e7d70
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: c3e8737a29fed109e82240a74569011be60a586c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840855"
 ---
 # <a name="clickonce-deployment-manifest"></a>ClickOnce 部署清单
 部署清单是一个 XML 文件，用于描述 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，包括要部署的当前 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序版本的标识。
 
  部署清单具有下列元素和特性。
 
-| 元素 | 说明 | 特性 |
+| 元素 | 说明 | 属性 |
 | - | - | - |
 | [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md) | 必需。 顶级元素。 | `manifestVersion` |
 | [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md) | 必需。 标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单。 | `name`<br /><br /> `version`<br /><br /> `publicKeyToken`<br /><br /> `processorArchitecture`<br /><br /> `culture` |
@@ -41,7 +41,7 @@ ms.locfileid: "94383087"
 | [\<Signature> 元素](../deployment/signature-element-clickonce-deployment.md) | 可选。 包含对此部署清单进行数字签名所需的信息。 | 无 |
 | [\<customErrorReporting> 元素](../deployment/customerrorreporting-element-clickonce-deployment.md) | 可选。 指定发生错误时所显示的 URI。 | Uri |
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  部署清单文件标识 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序部署，包括当前版本和其他部署设置。 该文件引用应用程序清单，该清单描述了应用程序的当前版本以及部署中包含的所有文件。
 
  有关详细信息，请参阅 [ClickOnce Security and Deployment](../deployment/clickonce-security-and-deployment.md)。
@@ -119,5 +119,5 @@ ms.locfileid: "94383087"
 </Signature></asmv1:assembly>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

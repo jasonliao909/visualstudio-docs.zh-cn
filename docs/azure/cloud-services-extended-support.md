@@ -1,24 +1,24 @@
 ---
-title: '使用云服务 (扩展支持)  (预览) '
+title: 使用云服务（外延支持）（预览）
 description: 立即了解如何使用 Azure 资源管理器与 Visual Studio 来创建和部署云服务 (扩展) 支持
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: ff45cf05a6811c02881c26f76193d4c1f5a5e735
-ms.sourcegitcommit: 7d34ab111614ae6bde5fb3c2bb91dd79e29a0a78
+ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98750217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841128"
 ---
 # <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>在 Visual Studio () 预览中创建和部署到云服务 (扩展支持) 
 
-从 [Visual Studio 2019 16.9 版](https://visualstudio.microsoft.com/vs/preview) 开始， (当前在预览版) 中，你可以使用 Azure 资源管理器来使用云服务，这大大简化了 azure 资源的维护和港务局的维护和管理。 这是由称为 *云服务 (扩展支持)* 的新 Azure 服务启用的。 可以 (扩展支持) 将现有的云服务发布到云服务。 有关此 Azure 服务的信息，请参阅 [云服务 (扩展支持) 文档](/azure/cloud-services-extended-support/overview)。
+从 [Visual Studio 2019 16.9 版](https://visualstudio.microsoft.com/vs/preview) 开始， (当前在预览版) 中，你可以使用 Azure 资源管理器来使用云服务，这大大简化了 azure 资源的维护和港务局的维护和管理。 这是由称为 *云服务 (扩展支持)* 的新 Azure 服务启用的。 可以将现有的云服务发布到云服务（外延支持）。 有关此 Azure 服务的信息，请参阅[云服务（外延支持）文档](/azure/cloud-services-extended-support/overview)。
 
 ## <a name="publish-to-cloud-services-extended-support"></a>发布到云服务 (扩展支持) 
 
@@ -30,7 +30,7 @@ ms.locfileid: "98750217"
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>若要将经典 Azure 云服务项目发布到云服务 (扩展支持) 
 
-1. 云服务 (扩展支持) 目前为预览版。 为订阅注册此功能，如下所示：
+1. 云服务（外延支持）目前以预览版提供。 为订阅注册此功能，如下所示：
 
    ```azurepowershell-interactive
    Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
@@ -48,7 +48,7 @@ ms.locfileid: "98750217"
 
 1. **选择订阅** - 选择要用于部署的订阅。
 
-1. 选择 " **下一步** " 转到 " **设置** " 页。
+1. 选择“下一步”，移动到“设置”页 。
 
    ![通用设置](./media/cloud-services-extended-support/publish-settings.png)
 
@@ -62,7 +62,7 @@ ms.locfileid: "98750217"
 
 1. **服务配置** - 选择“云”或“本地”。
 
-1. **存储帐户** -选择要用于此部署的存储帐户，或 **创建 "新建** " 以创建存储帐户。 对于每个存储帐户，区域都显示在括号中。 建议存储帐户的数据中心位置与云服务的数据中心位置相同（常用设置）。
+1. **存储帐户** - 选择要用于此部署的存储帐户，或者单击“新建”以创建一个存储帐户。 每个存储帐户的区域均显示在括号中。 建议存储帐户的数据中心位置与云服务的数据中心位置相同（常用设置）。
 
    Azure 存储帐户将存储应用程序部署的包。
 
@@ -72,24 +72,24 @@ ms.locfileid: "98750217"
 
    ![远程桌面设置](./media/cloud-services-extended-support/remote-desktop-configuration.png)
 
-1. 选择 " **下一步** " 转到 " **诊断设置** " 页。
+1. 选择“下一步”，移动到“诊断设置”页面 。
 
    ![诊断设置](./media/cloud-services-extended-support/diagnostics-settings.png)
 
    通过诊断，可以对 Azure 云服务 (扩展支持) 进行故障排除。 有关诊断的详细信息，请参阅 [Configuring Diagnostics for Azure Cloud Services and Virtual Machines](./vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)（为 Azure 云服务和虚拟机配置诊断）。 有关 Application Insights 的信息，请参阅[什么是 Application Insights？](/azure/application-insights/app-insights-overview)。
 
-1. 选择 " **下一步** " 转到 " **摘要** " 页。
+1. 选择“下一步”，移动到“摘要”页面 。
 
    ![总结](./media/cloud-services-extended-support/publish-summary.png)
 
-1. **目标配置文件** - 可以选择基于所选的设置创建发布配置文件。 例如，可以创建一个配置文件用于测试环境，并创建另一个配置文件用于生产环境。 要保存此配置文件，请选择 **“保存”** 图标。 向导将创建配置文件并将它保存在 Visual Studio 项目中。 若要修改配置文件名称，请打开 " **目标配置文件** " 列表，然后选择 " **管理 ...**"。
+1. **目标配置文件** - 可以选择基于所选的设置创建发布配置文件。 例如，可以创建一个配置文件用于测试环境，并创建另一个配置文件用于生产环境。 要保存此配置文件，请选择 **“保存”** 图标。 向导将创建配置文件并将它保存在 Visual Studio 项目中。 要修改配置文件名称，请打开“目标配置文件”列表，并选择“管理…” 。
 
    > [!Note]
    > 发布配置文件显示在 Visual Studio 解决方案资源管理器中，配置文件设置将写入扩展名为 *.azurepubxml* 的文件中。 设置将保存为 XML 标记的属性。
 
-1. 配置项目部署的所有设置后，请选择对话框底部的“发布”。 你可以在 Visual Studio 的 " **Azure 活动日志** " "输出" 窗口中监视进程状态。 选择 " **在门户中打开** " 链接到 
+1. 配置项目部署的所有设置后，请选择对话框底部的“发布”。 可以在 Visual Studio 的“Azure 活动日志”输出窗口中监视过程状态。 选择 " **在门户中打开** " 链接到 
 
-恭喜！ 已将云服务 (扩展支持) 项目发布到 Azure。 若要再次使用相同的设置进行发布，可以重复使用发布配置文件，或重复这些步骤来创建新的配置文件。 用于部署的 Azure 资源管理器 (ARM) 模板和参数保存在 *bin/ \<configuration\> /Publish* 文件夹中。
+祝贺！ 已将云服务 (扩展支持) 项目发布到 Azure。 若要使用相同设置再次进行发布，可以重复使用发布配置文件，或重复这些步骤来创建新的配置文件。 用于部署的 Azure 资源管理器 (ARM) 模板和参数保存在 *bin/ \<configuration\> /Publish* 文件夹中。
 
 ## <a name="clean-up-azure-resources"></a>清理 Azure 资源
 
@@ -97,4 +97,4 @@ ms.locfileid: "98750217"
 
 ## <a name="next-steps"></a>后续步骤
 
-使用 "**发布**" 屏幕上的 "**配置**" 按钮设置 CI)  (的持续集成。 有关详细信息，请参阅 [Azure Pipelines 文档](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)。
+使用“发布”屏幕上的“配置”按钮设置持续集成 (CI) 。 有关详细信息，请参阅 [Azure Pipelines 文档](/azure/devops/pipelines/?view=azure-devops&preserve-view=true)。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9432e1fc7bd592b38afe3ba62b4f57063d7f2807
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05b226afa482e195600ac073b1f77e49790ec9cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99837484"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 获取堆栈帧的名称。
@@ -28,18 +28,18 @@ ms.locfileid: "80719678"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetName ( 
+HRESULT GetName ( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName ( 
+int GetName ( 
    out string pbstrName
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrName`\
 弄返回堆栈帧的名称。
 

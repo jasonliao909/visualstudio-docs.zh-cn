@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 8d7ebfc6-7478-4888-b3b0-b14f296096af
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1fde6dabb372bfa20f55335008ce91e8de2481a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 234e6c2d0349cf610d9ba22d53ce59e3768ad64e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838004"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活动设计器
 
@@ -29,7 +29,7 @@ ms.locfileid: "94433578"
 
 ### <a name="using-the-transactionscope-activity-designer"></a>使用 TransactionScope 活动设计器
 
-访问 " **工具箱** " 的 " **事务** " 类别中的 " **TransactionScope** " 活动设计器。 可以将 " **TransactionScope** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 TransactionScope 的默认 <xref:System.Activities.Statements.TransactionScope> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 " **TransactionScope** " 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑值。
+访问 "**工具箱**" 的 "**事务**" 类别中的 " **TransactionScope** " 活动设计器。 可以将 " **TransactionScope** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 TransactionScope 的默认 <xref:System.Activities.Statements.TransactionScope> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 " **TransactionScope** " 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑值。
 
 ### <a name="the-transactionscope-properties"></a>TransactionScope 属性
 
@@ -37,11 +37,11 @@ ms.locfileid: "94433578"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.TransactionScope> 活动的可选友好名称。 默认值为 TransactionScope。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.TransactionScope.Body%2A>|正确|指定要在单个事务中执行的活动。 若要添加 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活动，请将活动从 " **工具箱** " 拖放到 " **TransactionScope** " 活动设计器上的 " **正文** " 框中，其中包含提示文本 "将活动放在此处"。|
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|正确|指定此 <xref:System.Transactions.IsolationLevel> 的 <xref:System.Activities.Statements.TransactionScope>。|
-|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|错误|指定必须在其间完成事务的时间间隔（格式为 00:00:00，表示小时:分钟:秒）。 默认值为 1 分钟 (00:01:00)。|
-|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|正确|指定指示在事务中止的情况下是否应中止工作流的值。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TransactionScope> 活动的可选友好名称。 默认值为 TransactionScope。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.TransactionScope.Body%2A>|True|指定要在单个事务中执行的活动。 若要添加 <xref:System.Activities.Statements.TransactionScope.Body%2A> 活动，请将活动从 "**工具箱**" 拖放到 " **TransactionScope** " 活动设计器上的 "**正文**" 框中，其中包含提示文本 "将活动放在此处"。|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|指定此 <xref:System.Transactions.IsolationLevel> 的 <xref:System.Activities.Statements.TransactionScope>。|
+|<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|False|指定必须在其间完成事务的时间间隔（格式为 00:00:00，表示小时:分钟:秒）。 默认值为 1 分钟 (00:01:00)。|
+|<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|True|指定指示在事务中止的情况下是否应中止工作流的值。|
 
 ## <a name="see-also"></a>另请参阅
 
@@ -49,4 +49,4 @@ ms.locfileid: "94433578"
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)
 - [CompensableActivity](../workflow-designer/compensableactivity-activity-designer.md)
 - [Compensate](../workflow-designer/compensate-activity-designer.md)
-- [逐条](../workflow-designer/confirm-activity-designer.md)
+- [确认](../workflow-designer/confirm-activity-designer.md)

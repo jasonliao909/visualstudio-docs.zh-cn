@@ -12,20 +12,20 @@ helpviewer_keywords:
 - reference [Office development in Visual Studio], user interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc58e106a24b857f4702876085a8ab986b6c5c92
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 19bbf3b0a2f58cbb410c695cfbb869469a7421c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526548"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838251"
 ---
 # <a name="user-interface-reference-office-development-in-visual-studio"></a> (Visual Studio 中的 Office 开发的用户界面参考) 
   以下用户界面元素是 Visual Studio 中的 Office 项目的一部分。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [发布页，项目设计器 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/publish-page-project-designer-office-development-in-visual-studio.md)
 
  描述用于配置属性以部署 Office 解决方案的属性页。

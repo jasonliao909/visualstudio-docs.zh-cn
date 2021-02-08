@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a021d5dfdff5058211f5bafdfd7854611f977c27
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0957a204a83ab72aabe14fe4a70d8e758e83a08f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914512"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99840582"
 ---
 # <a name="evaluation-context"></a>评估上下文
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "96914512"
 
  当调试引擎 (DE) 调用表达式计算器 (EE) 时，三个传递给 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 的参数将确定用于查找和计算符号的上下文，如下表所示。
 
-## <a name="arguments"></a>参数
+## <a name="arguments"></a>自变量
 
 |参数|说明|
 |--------------|-----------------|
