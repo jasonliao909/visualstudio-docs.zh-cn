@@ -1,5 +1,5 @@
 ---
-title: 我无法下载或激活软件（Visual Studio 系列除外）
+title: 无法下载或激活软件（Visual Studio 系列除外）
 description: 我无法下载或激活 Visual Studio 订阅随附的软件（Visual Studio 系列除外）。
 ms.topic: include
 ms.assetid: 4e67a935-40f9-4c26-b836-e06aa8582bad
@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate
 subscription.type: vl, cloud, retail, partner
 sap.id: 53a7a6d4-7755-352a-5a65-715d78af84bf
-ms.openlocfilehash: 81c9013c59ffa8fc503e71202941b044f90b139a
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 477753ab93205aa838389313a0ad2c96487aacc3
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147668"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541134"
 ---
 ## <a name="im-unable-to-download-or-activate-software-excluding-visual-studio-family"></a>我无法下载或激活软件（Visual Studio 系列除外）
 
@@ -34,4 +34,4 @@ ms.locfileid: "98147668"
 还可访问[产品密钥](https://my.visualstudio.com/productkeys) 页，其中显示的所有密钥都可用于聚合。 你可以编辑“说明”列，以确定声明密钥的时间及原因。 
 
 ## <a name="more-information-about-downloads"></a>有关下载项的详细信息 
-[详细了解](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)如何查找和索取产品密钥和下载项。  
+详细了解[如何查找和声明产品密钥和下载项](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)。  

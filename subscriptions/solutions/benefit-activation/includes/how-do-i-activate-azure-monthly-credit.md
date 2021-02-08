@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: ae31e9d40dd0d399a4272eeb3ec28692d01a99b3
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: a5ec356513122752486a197fbe5bb420d6f4a6c9
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147336"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541178"
 ---
 ## <a name="how-do-i-activate-my-monthly-azure-devtest-individual-credit"></a>如何激活每月 Azure 开发/测试个人信用额度？ 
 
@@ -33,6 +33,6 @@ ms.locfileid: "98147336"
 通过 Visual Studio 订阅权益创建的 Azure 订阅可能会受到一些限制的影响，而付费订阅却不适用这些限制。 某些地域可能无法创建 VM 和 Azure 服务，也可能无法提供某些服务类型。 默认配额可能低于付费订阅。  
 
 ## <a name="more-information-about-azure-credits"></a>有关 Azure 额度的详细信息
-[详细了解](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)有关激活、资格和其他支持资源的信息。  
+详细了解[有关激活、资格和其他支持资源](https://docs.microsoft.com/visualstudio/subscriptions/vs-azure)的信息。  
 
-[了解如何](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)使用 Visual Studio 订阅中包含的 Azure 信用额度。  
+了解如何使用 Visual Studio 订阅中包含的 [Azure 信用额度](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/#azure-credits)。  

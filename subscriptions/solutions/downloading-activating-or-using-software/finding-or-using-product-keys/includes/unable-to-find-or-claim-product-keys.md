@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate, product-key
 subscription.type: vl, cloud, retail, partner
 sap.id: 631f9455-a027-34d0-12c8-c2b37d2c42cb
-ms.openlocfilehash: 88ecaf869f7cd593876dacaa21926913e192dc14
-ms.sourcegitcommit: cd7f122c6850cf442a4ca42d51d05c7a8fe9038d
+ms.openlocfilehash: 8e8747f2b7f46778cc5e4a1069941ff264781f66
+ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98147429"
+ms.lasthandoff: 02/04/2021
+ms.locfileid: "99541147"
 ---
 ## <a name="im-unable-to-find-or-claim-a-product-key"></a>我无法找到或声明产品密钥。
 
@@ -29,4 +29,4 @@ ms.locfileid: "98147429"
 
 ## <a name="more-information-on-product-key-types"></a>有关产品密钥类型的详细信息
 
-[详细了解](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)产品密钥类型以及如何声明产品密钥。  
+详细了解[产品密钥类型以及如何声明产品密钥](https://docs.microsoft.com/visualstudio/subscriptions/find-keys)的信息。  
