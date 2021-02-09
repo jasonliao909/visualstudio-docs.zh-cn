@@ -21,15 +21,15 @@ helpviewer_keywords:
 - dependency graphs, browsing
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ace2095e98bc7d7425f518249a754fcbed07a02
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e579f62c24795ad99939fe10f68c42acaaa89b60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363609"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861929"
 ---
 # <a name="browse-and-rearrange-code-maps"></a>浏览和重新排列代码图
 
@@ -187,7 +187,7 @@ ms.locfileid: "97363609"
 
 3. 选择目标代码元素。 链接将出现在两个代码元素之间。
 
-**OR**
+**或者**
 
 1. 在代码图上选择源代码元素。
 
@@ -231,7 +231,7 @@ ms.locfileid: "97363609"
 
 3. 当编辑框在代码图中出现时，重合名代码元素或链接。
 
-**OR**
+**或者**
 
 1. 打开快捷菜单，然后选择 "**编辑**  >  **属性**"。
 
@@ -284,7 +284,7 @@ ms.locfileid: "97363609"
     |-|-|
     |背景色|**背景**|
     |轮廓颜色|**绘制**|
-    |显示结果的文本颜色 (显示字母 "f") |**Foreground**|
+    |显示结果的文本颜色 (显示字母 "f") |**后台**|
     |图标|**图标**|
 
      此时将显示 " **颜色集选取器** " 或 " **图标集选取器** " 对话框，你可以在其中选择颜色或图标。
@@ -309,7 +309,7 @@ ms.locfileid: "97363609"
 
     |**To**|**Choose**|
     |-|-|
-    |停用代码元素|**禁用**|
+    |停用代码元素|**Disable**|
     |删除代码元素|**删除**|
     |将样式上移|**上移**|
     |将代码元素下移|**“下移”**|

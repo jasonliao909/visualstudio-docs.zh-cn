@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 113c81e95e7384be04b7e02a5c58cd2cad7c9c6b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ef9379edc9e02e8bed6761abf0aa4a2830fc415
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723394"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861083"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
 此方法为 (DE) 指定的每个调试引擎添加一个程序节点。
@@ -43,7 +43,7 @@ int AddImplicitProgramNodes(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidLaunchingEngine`\
 中 `GUID` 用于启动 (的程序的 DE 的，假定将其自己的程序节点添加) 。
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab7156635914d46dfc1849717d29ac0416e2d9fa
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351214"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861226"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要为应用程序部署必备组件，可以创建一个引导程序包。 引导程序包包含单个产品清单文件，但每个区域设置都包含包清单。 包清单包含包的特定于本地化的方面。 这包括字符串、最终用户许可协议和语言包。
@@ -56,7 +56,7 @@ ms.locfileid: "94351214"
       </RelatedProducts>
     ```
 
-5. 添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件名 *CorePackage.msi* 。
+5. 添加 XML 以列出引导程序包中的所有文件。 此示例使用包文件名 *CorePackage.msi*。
 
     ```xml
     <PackageFiles>
@@ -66,7 +66,7 @@ ms.locfileid: "94351214"
 
 6. 将 *CorePackage.msi* 文件复制或移动到 *C:\package* 文件夹。
 
-7. 添加 XML 以便使用引导程序命令安装包。 引导程序自动将 **/qn** 标志添加到 *.msi* 文件中，该文件将以无提示方式进行安装。 如果文件是 *.exe* ，则引导程序将使用 shell 运行 *.exe* 文件。 以下 XML 不显示 *CorePackage.msi* 的任何参数，但你可以将命令行参数放入 `Arguments` 属性。
+7. 添加 XML 以便使用引导程序命令安装包。 引导程序自动将 **/qn** 标志添加到 *.msi* 文件中，该文件将以无提示方式进行安装。 如果文件是 *.exe*，则引导程序将使用 shell 运行 *.exe* 文件。 以下 XML 不显示 *CorePackage.msi* 的任何参数，但你可以将命令行参数放入 `Arguments` 属性。
 
     ```xml
     <Commands>
@@ -160,5 +160,5 @@ ms.locfileid: "94351214"
 </Product>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
