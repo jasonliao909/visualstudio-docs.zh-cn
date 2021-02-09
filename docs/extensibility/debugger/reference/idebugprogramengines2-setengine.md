@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c05857ee-89cf-455e-8f1e-300cce4a2eab
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 226f5bbf11627a3171641806a673eaa15b614572
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5ecdf136e40dc4227b8f6378409cb7fe43f6659d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898891"
 ---
 # <a name="idebugprogramengines2setengine"></a>IDebugProgramEngines2::SetEngine
 告诉程序或程序节点哪个调试引擎 (DE) 用于调试此程序。
@@ -28,18 +28,18 @@ ms.locfileid: "80722407"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetEngine( 
+HRESULT SetEngine( 
    REFGUID guidEngine
 );
 ```
 
 ```csharp
-int SetEngine( 
+int SetEngine( 
    ref Guid guidEngine
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidEngine`\
 中DE 的 GUID。
 

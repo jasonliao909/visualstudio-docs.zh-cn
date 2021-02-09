@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 993d70a4-f6a5-4e47-a603-0b162b9fde00
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 45916edbef4368c58f83426d6c73f3c692236cb9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899001"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 返回可调试此程序的所有可能的调试引擎 (DE) 的 Guid。
@@ -28,7 +28,7 @@ ms.locfileid: "80722441"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnumPossibleEngines( 
+HRESULT EnumPossibleEngines( 
    DWORD  celtBuffer,
    GUID*  rgguidEngines,
    DWORD* pceltEngines
@@ -36,14 +36,14 @@ HRESULT EnumPossibleEngines( 
 ```
 
 ```csharp
-int EnumPossibleEngines( 
+int EnumPossibleEngines( 
    uint      celtBuffer,
    GUID[]    rgguidEngines,
    ref DWORD pceltEngines
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celtBuffer`\
 中要返回的已释放 Guid 的数目。 这还指定数组的最大大小 `rgguidEngines` 。
 
