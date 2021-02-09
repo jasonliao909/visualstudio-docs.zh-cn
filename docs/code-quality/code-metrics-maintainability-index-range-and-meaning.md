@@ -5,15 +5,15 @@ description: 了解 Visual Studio 中的代码度量的可维护性索引范围�
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 14bee6dcb522b7c1dd0475ca309b829a09c0d4ec
-ms.sourcegitcommit: b1f7e7d7a0550d5c6f46adff3bddd44bc1d6ee1c
+ms.openlocfilehash: aa825b439b75606da136635d5816ac3e19ea8392
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/11/2021
-ms.locfileid: "98069517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860459"
 ---
 # <a name="code-metrics---maintainability-index-range-and-meaning"></a>代码度量-可维护性索引范围和含义
 

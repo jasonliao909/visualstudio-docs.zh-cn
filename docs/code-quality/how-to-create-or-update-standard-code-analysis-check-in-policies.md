@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code analysis, migrating check-in policy
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f03cbd78944d49301362c07d01497abb22734c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 3d46ed89880c41cbcaa6982c386e2ff8f115f8de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348757"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860108"
 ---
 # <a name="how-to-create-or-update-standard-code-analysis-check-in-policies"></a>如何：创建或更新标准代码分析签入策略
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348757"
 
 ## <a name="to-open-the-check-in-policy-editor"></a>打开签入策略编辑器
 
-1. 在团队资源管理器中，右键单击项目名称，指向 " **项目设置** "，然后单击 " **源代码管理** "。
+1. 在团队资源管理器中，右键单击项目名称，指向 " **项目设置**"，然后单击 " **源代码管理**"。
 
 1. 在 " **源代码管理** " 对话框中，选择 " **签入策略** " 选项卡。
 
@@ -45,7 +45,7 @@ ms.locfileid: "94348757"
 
     - 单击 " **添加** " 以创建新的签入策略。
 
-    - 双击 " **策略类型** " 列表中的 "现有 **代码分析** " 项来更改策略。
+    - 双击 "**策略类型**" 列表中的 "现有 **代码分析**" 项来更改策略。
 
 ## <a name="to-set-policy-options"></a>设置策略选项
 
@@ -69,6 +69,6 @@ ms.locfileid: "94348757"
 
 有关如何创建和实现自定义签入策略规则集的详细信息，请参阅 [为托管代码实现自定义签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [实现托管代码的自定义代码分析签入策略](../code-quality/implementing-custom-code-analysis-check-in-policies-for-managed-code.md)

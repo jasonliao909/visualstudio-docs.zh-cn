@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1f221cd-68c0-4277-9397-b76ad0dbae77
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43dae5ec9ca68c746b914ad0a75b792f2a6e6b43
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 5fdd14b394bca495b38f408be94b46a4b9a68c01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860550"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -31,7 +31,7 @@ ms.locfileid: "94349095"
 
 - 未对解决方案中所有项目的生成版本启用代码分析。
 
-- Visual studio 中项目的本地规则集的 **操作** 设置与项目规则集的限制更小，例如，服务器上设置为 **操作** = **错误** 的规则的 **操作** 设置为 " **警告** " 或 " **无** " （在 Visual studio 中运行的规则集）) 中。
+- Visual studio 中项目的本地规则集的 **操作** 设置与项目规则集的限制更小，例如，服务器上设置为 **操作** = **错误** 的规则的 **操作** 设置为 "**警告**" 或 "**无**" （在 Visual studio 中运行的规则集）) 中。
 
 - 在 Visual Studio 中指定的规则集不包含在项目的代码分析签入策略中指定的规则集中指定的所有规则。
 
@@ -75,6 +75,6 @@ ms.locfileid: "94349095"
 
 此错误适用于非托管项目。 代码分析策略需要适用于 C/c + + 的代码分析，但在客户端上的当前项目中未启用它。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码分析应用程序错误](../code-quality/code-analysis-application-errors.md)

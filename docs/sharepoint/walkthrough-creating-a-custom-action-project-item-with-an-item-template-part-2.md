@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fe283da2c2a81827ca70414315278cebd775873a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc1474d1c7aeabb9b3e9ecbbe6b42931d44c59c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839079"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-2"></a>演练：使用项模板创建自定义操作项目项（第2部分）
   在定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项模板关联后，你可能还需要为模板提供向导。 当用户使用模板向项目添加项目项的新实例时，可以使用该向导收集用户的信息。 你收集的信息可用于初始化项目项。
@@ -39,7 +39,7 @@ ms.locfileid: "96915201"
 > [!NOTE]
 > 可以从 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下载示例，其中演示了如何为工作流创建自定义活动。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要执行本演练，必须先完成 [演练：使用项模板创建自定义操作项目项（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)，以创建 CustomActionProjectItem 解决方案。
 
  在开发计算机上还需要以下组件来完成本演练：
@@ -105,7 +105,7 @@ ms.locfileid: "96915201"
 9. 在 " **属性** " 窗口中，将 " **嵌入互操作类型** " 属性的值更改为 " **False**"。
 
 ## <a name="define-the-default-location-and-id-strings-for-custom-actions"></a>定义自定义操作的默认位置和 ID 字符串
- 每个自定义操作都有一个在Elements.xml文件中的 `GroupID` 元素的和属性中指定的位置和 ID `Location` `CustomAction` 。 *Elements.xml* 在此步骤中，将为 ItemTemplateWizard 项目中的这些属性定义一些有效的字符串。 完成本演练后，当用户在向导中指定位置和 ID 时，这些字符串将写入自定义操作项目项中的 *Elements.xml* 文件。
+ 每个自定义操作都有一个在Elements.xml文件中的 `GroupID` 元素的和属性中指定的位置和 ID `Location` `CustomAction` 。  在此步骤中，将为 ItemTemplateWizard 项目中的这些属性定义一些有效的字符串。 完成本演练后，当用户在向导中指定位置和 ID 时，这些字符串将写入自定义操作项目项中的 *Elements.xml* 文件。
 
  为简单起见，此示例仅支持部分可用的默认位置和 Id。 有关完整列表，请参阅 [默认自定义操作位置和 id](/previous-versions/office/developer/sharepoint-2010/bb802730(v=office.14))。
 
@@ -156,12 +156,12 @@ ms.locfileid: "96915201"
      [!code-csharp[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/CSharp/customactionprojectitem/itemtemplatewizard/customactionwizard.cs#8)]
      [!code-vb[SPExtensibility.ProjectItem.CustomAction#8](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/itemtemplatewizard/customactionwizard.vb#8)]
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>检查点
  在本演练的这一阶段，向导的所有代码现在都在项目中。 生成项目以确保它在编译时不会出错。
 
 #### <a name="to-build-your-project"></a>若要生成你的项目
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 ## <a name="associate-the-wizard-with-the-item-template"></a>将向导与项模板关联
  现在，你已经实现了向导，你必须完成三个主要步骤，才能将它与 **自定义操作** 项模板关联：
@@ -182,7 +182,7 @@ ms.locfileid: "96915201"
 
 4. 在 " **创建强名称密钥** " 对话框中，输入名称，清除 " **使用密码保护密钥文件** " 复选框，然后选择 **"确定"** 按钮。
 
-5. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+5. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 #### <a name="to-get-the-public-key-token-for-the-wizard-assembly"></a>获取向导程序集的公钥标记
 
@@ -294,7 +294,7 @@ ms.locfileid: "96915201"
 
 8. 验证 Visual Studio 的另一个实例中的代码是否在您之前在方法中设置的断点处停止 `RunStarted` 。
 
-9. 通过选择 **F5** 键，或在菜单栏上选择 "**调试** 继续"，继续调试项目  >  **Continue**。
+9. 通过选择 **F5** 键，或在菜单栏上选择 "**调试** 继续"，继续调试项目  >  。
 
      “SharePoint 自定义向导”随即出现。
 

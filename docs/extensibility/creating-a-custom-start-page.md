@@ -7,16 +7,16 @@ ms.topic: how-to
 ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: b7e4c9690e573d2807eb3ad9d842921ee08417d8
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 65415c22da2815650278ac1190e7d19f54b96063
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974559"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853080"
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 
@@ -26,7 +26,7 @@ ms.locfileid: "94974559"
 
 首先，创建一个包含 Visual Studio 将识别的标记结构的 *.xaml* 文件，从而创建一个空白起始页。 然后，添加标记和代码隐藏以生成所需的外观和功能。
 
-1. 在 **Visual c #** Windows Desktop) 中创建 " **WPF 应用程序**" 类型的新项目 ( >  **Windows Desktop** 。
+1. 在 **Visual c #** Windows Desktop) 中创建 " **WPF 应用程序**" 类型的新项目 ( >   。
 
 2. 添加对 `Microsoft.VisualStudio.Shell.14.0` 的引用。
 
@@ -87,7 +87,7 @@ ms.locfileid: "94974559"
 
 - 在测试起始页并发现它稳定后，使用 "**选项**" 对话框中的 "**自定义起始页**" 选项将其选择为 Visual Studio 主实例中的起始页
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [演练：将自定义 XAML 添加到起始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

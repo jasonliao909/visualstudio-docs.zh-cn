@@ -6,13 +6,13 @@ ms.custom: SEO-VS-2020
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
-ms.openlocfilehash: 582d0e0d86909b266bbb18f83745b1b2261f0d10
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+manager: jmartens
+ms.openlocfilehash: c10aa602c2c9af3c51812073d62d5bd9bff06664
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860069"
 ---
 # <a name="how-to-enable-and-disable-binary-code-analysis-for-managed-code"></a>如何：启用和禁用托管代码的二进制代码分析
 
@@ -23,7 +23,7 @@ ms.locfileid: "94348744"
 
 启用或禁用旧代码分析：
 
-1. 在 **解决方案资源管理器** 中，选择并按住 (或右键单击项目) ，然后选择 " **属性** "。
+1. 在 **解决方案资源管理器** 中，选择并按住 (或右键单击项目) ，然后选择 " **属性**"。
 
 2. 在项目的 "属性" 对话框中，请参阅 " **代码分析** " 选项卡。
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348744"
 
 ::: moniker range=">=vs-2019"
 
-4. 若要启用或禁用自动代码分析，请在 **二进制分析器** 部分中选中或清除 " **生成时运行** " 复选框。
+4. 若要启用或禁用自动代码分析，请在 **二进制分析器** 部分中选中或清除 "**生成时运行**" 复选框。
 
    ![在 Visual Studio 中对生成选项运行二进制代码分析](media/run-on-build-binary-analyzers.png)
 

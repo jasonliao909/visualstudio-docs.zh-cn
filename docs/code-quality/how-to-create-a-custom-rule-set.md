@@ -10,15 +10,15 @@ helpviewer_keywords:
 - rule sets
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 69af1534740ddec2c804f0b7dafec61d985a4b24
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97667879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860147"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -63,7 +63,7 @@ ms.locfileid: "97667879"
 
 2. 在 " **新建文件** " 对话框中，选择左侧的 " **常规** " 类别，然后选择 " **代码分析规则集**"。
 
-3. 选择“打开”。
+3. 选择“打开”  。
 
    *新的* 文件组文件将在规则集编辑器中打开。
 
@@ -100,7 +100,7 @@ ms.locfileid: "97667879"
 
 ## <a name="rule-precedence"></a>规则优先级
 
-- 如果在具有不同严重性的规则集中多次列出相同的规则，则编译器将生成错误。 例如：
+- 如果在具有不同严重性的规则集中多次列出相同的规则，则编译器将生成错误。 例如： 。
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -115,7 +115,7 @@ ms.locfileid: "97667879"
 
    **CA0063：无法加载规则集文件 " \[ 你的]. 规则集" 或其依赖规则集文件之一。此文件不符合规则集架构。**
 
-- 如果规则集包括使用 **包含** 标记的子规则集，并且子规则和父规则集都列出相同的规则但严重性不同，则父规则集中的严重性优先。 例如：
+- 如果规则集包括使用 **包含** 标记的子规则集，并且子规则和父规则集都列出相同的规则但严重性不同，则父规则集中的严重性优先。 例如： 。
 
    ```xml
    <!-- Parent rule set -->

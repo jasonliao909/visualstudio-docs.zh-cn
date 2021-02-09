@@ -9,15 +9,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96f536b3ab8e28b87a59a637fcf6dbaadeb21bf7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b089f954c59219461c8e267ee6e88e47015fc794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860615"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 函数
   此 API 支持 Office 基础结构，不应在代码中直接使用。
@@ -31,9 +31,9 @@ HRESULT WINAPI GetValidCompatibleFramework(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |*lpwszCompatibleFrameworksXML*|请勿使用。|
 |*pbstrValidFrameworkTag*|请勿使用。|

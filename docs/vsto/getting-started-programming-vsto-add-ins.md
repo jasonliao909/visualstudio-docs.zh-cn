@@ -14,15 +14,15 @@ helpviewer_keywords:
 - add-ins [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be4e129de68d2a7f7690ba24acc92fb09400cfb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d7e6f891f8485d4e08734e59a11db8018eaa07b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860629"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 外接程序编程入门
   你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 有关 VSTO 外接程序如何与可以使用 Visual Studio 创建的其他类型的 Office 解决方案进行比较的信息，请参阅 [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -35,7 +35,7 @@ ms.locfileid: "96845110"
  有关如何创建 VSTO 外接程序项目的详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。 有关项目模板的详细信息，请参阅 [Office 项目模板概述](../vsto/office-project-templates-overview.md)。
 
 ## <a name="develop-vsto-add-in-projects"></a>开发 VSTO 外接程序项目
- 创建 VSTO 外接程序项目时，Visual Studio 会自动在 *ThisAddIn.vb* [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] c # ) 代码文件的) 或 *ThisAddIn.cs* (中创建 ThisAddIn (。 此文件包含 `ThisAddIn` 类，该类为 VSTO 外接程序提供基础。 在加载或卸载 VSTO 外接程序时，可以使用此类的成员运行代码，以访问主机应用程序的对象模型，以及扩展应用程序的功能。 有关详细信息，请参阅 [PROGRAM VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
+ 创建 VSTO 外接程序项目时，Visual Studio 会自动在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] c # ) 代码文件的) 或 *ThisAddIn.cs* (中创建 ThisAddIn (。 此文件包含 `ThisAddIn` 类，该类为 VSTO 外接程序提供基础。 在加载或卸载 VSTO 外接程序时，可以使用此类的成员运行代码，以访问主机应用程序的对象模型，以及扩展应用程序的功能。 有关详细信息，请参阅 [PROGRAM VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
 
 ## <a name="automate-applications-by-using-the-object-models"></a>使用对象模型自动执行应用程序
  Microsoft Office 应用程序的对象模型公开许多类型，可在 VSTO 外接程序中依据这些类型进行编程。 可以使用这些类型来实现应用程序自动化。 例如，可以通过编程方式在 Outlook 中创建和发送电子邮件，也可以在 Word 中打开文档和添加内容。 有关如何在代码中访问主机应用程序的对象模型的详细信息，请参阅 [PROGRAM VSTO 外](../vsto/programming-vsto-add-ins.md)接程序。
@@ -88,7 +88,7 @@ ms.locfileid: "96845110"
 
   有关指导你完成 Office 项目中某些常见任务的主题列表，请参阅 [office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [开始 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)
