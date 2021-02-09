@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ee9b2a12c9eaa168f0223dff29a3379a12b3d691
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: eec1468fc2e0c51d7dea7aa5f3ffa808b484ec87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915344"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923566"
 ---
 # <a name="how-to-add-and-remove-features-and-items-to-a-package-by-using-the-packaging-explorer"></a>如何：使用打包资源管理器在包中添加和移除功能和项
   若要将包配置为部署 SharePoint 项和功能，可以使用 "打包资源管理器"。 可以在 .wsp 文件中调整 SharePoint 项目项和功能。

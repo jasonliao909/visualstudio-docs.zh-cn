@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom directive hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: a98e432c7eb9508d32f52e51acc1447035b9058b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a815718f099b024708b86658e10fc0e85c087b4c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362491"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924124"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到生成的指令处理器
 
@@ -74,7 +74,7 @@ ms.locfileid: "97362491"
    > [!IMPORTANT]
    > 此步骤将生成指令处理器，并在注册表中为其添加密钥。
 
-3. 在 **“调试”** 菜单中，单击 **“启动调试”** 。
+3. 在“调试”菜单上，单击“启动调试”。
 
     此时将打开 Visual Studio 的第二个实例。
 
@@ -320,7 +320,7 @@ ms.locfileid: "97362491"
 
 ### <a name="test-the-custom-host"></a>测试自定义主机
 
-1. 打开命令提示符窗口。
+1. 打开一个命令提示符窗口。
 
 2. 为自定义宿主键入可执行文件的路径，但暂不要按 Enter。
 
@@ -362,6 +362,6 @@ ms.locfileid: "97362491"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)

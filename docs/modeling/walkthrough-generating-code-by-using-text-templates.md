@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [text templates]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39630f8a12ad2c1d7d2bc89f6830fc694e89087
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 7e6b824d53c37ef922b8c9580c87a478aef93586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360983"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924066"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 
@@ -430,7 +430,7 @@ namespace MyProject
 
 若在“错误列表”中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)

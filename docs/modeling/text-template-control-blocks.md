@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, template code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11cc289f668a674707c584396998ea7abb9e7ea9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ff6d09cae433cab0a5411350970325c6ec659184
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363583"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924588"
 ---
 # <a name="text-template-control-blocks"></a>文本模板控制块
 控制块可使你在文本模板中编写代码以便改变输出。 有三种类型的控制块，通过其左大括号来区分：
@@ -147,7 +147,7 @@ Some text.
 
  在使用控制块时，请记住考虑以下事项：
 
-- **语言.** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。  (有关指令的详细信息 `template` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。 ) 
+- **语言。** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。  (有关指令的详细信息 `template` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。 ) 
 
      控制块中使用的语言与文本模板中生成的文本的语言或格式无关。 你可以使用 Visual Basic 代码生成 C#，反之亦然。
 

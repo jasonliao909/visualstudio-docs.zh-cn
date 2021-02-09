@@ -5,16 +5,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cb5065ed50afe3b9ee31b361be88c1b5c18138af
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 394fe7b1a368d3d4c6a47fd4350ac6644112aa57
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100782"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924113"
 ---
 # <a name="walkthrough-debugging-a-text-template-that-accesses-a-model"></a>演练：调试访问模型的文本模板
 在域特定语言解决方案中修改或添加文本模板时，当引擎将模板转换为源代码或编译生成的代码时，可能会出现错误。 以下演练演示了调试文本模板时可以执行的一些操作。
@@ -22,7 +22,7 @@ ms.locfileid: "90100782"
 > [!NOTE]
 > 有关一般文本模板的详细信息，请参阅 [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。 有关调试文本模板的详细信息，请参阅 [演练：调试文本模板](debugging-a-t4-text-template.md)。
 
-## <a name="creating-a-domain-specific-language-solution"></a>创建域特定语言解决方案
+## <a name="creating-a-domain-specific-language-solution"></a>创建 Domain-Specific 语言解决方案
  在此过程中，您将创建一个具有以下特征的域特定语言解决方案：
 
 - 名称： DebuggingTestLanguage
@@ -33,7 +33,7 @@ ms.locfileid: "90100782"
 
 - 公司名称： Fabrikam
 
-  有关创建域特定语言解决方案的详细信息，请参阅 [如何：创建特定于域的语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
+  有关创建域特定语言解决方案的详细信息，请参阅 [如何：创建 Domain-Specific 语言解决方案](../modeling/how-to-create-a-domain-specific-language-solution.md)。
 
 ## <a name="creating-a-text-template"></a>创建文本模板
  向解决方案添加文本模板。
@@ -89,7 +89,7 @@ ms.locfileid: "90100782"
     #>
     ```
 
-2. 在 **解决方案资源管理器**中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
+2. 在 **解决方案资源管理器** 中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
 
      " **错误列表** " 窗口显示此错误：
 
@@ -111,7 +111,7 @@ ms.locfileid: "90100782"
     <#@ DebuggingTestLanguage processor="DebuggingTestLanguageDirectiveProcessor" requires="fileName='Sample.ddd'" provides="ExampleModel=ExampleModel" #>
     ```
 
-5. 在 **解决方案资源管理器**中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
+5. 在 **解决方案资源管理器** 中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
 
      系统现在会转换文本模板并生成相应的输出文件。 " **错误列表** " 窗口中将不会显示任何错误。
 
@@ -153,7 +153,7 @@ ms.locfileid: "90100782"
     #>
     ```
 
-2. 在 **解决方案资源管理器**中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
+2. 在 **解决方案资源管理器** 中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
 
      此时将显示 " **错误列表** " 窗口，并显示以下错误之一：
 
@@ -208,6 +208,6 @@ ms.locfileid: "90100782"
     #>
     ```
 
-5. 在 **解决方案资源管理器**中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
+5. 在 **解决方案资源管理器** 中，右键单击 DebugTest.tt，然后单击 " **运行自定义工具**"。
 
      系统现在会转换文本模板并生成相应的输出文件。 " **错误列表** " 窗口中将不会显示任何错误。

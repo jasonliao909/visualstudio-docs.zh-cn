@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d912e98d01448a378acbed79e2278f70f62436e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: da5817711c7131868c4bad22bbe93447119d19d8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362686"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924512"
 ---
 # <a name="understanding-models-classes-and-relationships"></a>了解模型、类和关系
 域特定语言 (DSL) 由其 DSL 定义文件定义，以及你可能编写的任何自定义程序代码。 DSL 解决方案中的大多数程序代码都是通过此文件生成的。
@@ -134,7 +134,7 @@ ms.locfileid: "97362686"
 
  通过在关系图上键入或在 `Multiplicity` " **属性** " 窗口中修改属性来配置角色的重数。 下表描述了此属性的设置。
 
-|多重性类型|描述|
+|多重性类型|说明|
 |-|-|
 |0 ... * (零到多个) |域类的每个实例都可以具有关系的多个实例或没有关系的实例。|
 |0 .0 (零到一) |域类的每个实例都不能有多个关系实例，也不能有关系的实例。|
@@ -150,6 +150,6 @@ ms.locfileid: "97362686"
 
  派生关系专门用于其基本关系。 它链接的域类应派生自或与基关系链接的类相同。 在模型中创建派生关系的链接时，它是派生关系和基关系的实例。 在程序代码中，可以使用由基类或派生类生成的属性，导航到链接的另一端。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

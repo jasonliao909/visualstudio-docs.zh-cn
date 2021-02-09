@@ -16,13 +16,13 @@ description: 了解如何使用 Visual Studio 中的免费 Dotfuscator Community
 ms.assetid: d9550502-0a82-49a6-b005-2caa791fbe02
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 7a8602dc99ba63e6cba5035636af0fbd47263e58
-ms.sourcegitcommit: f27084e64c79e6428746a20dda92795df996fb31
+manager: jmartens
+ms.openlocfilehash: ce0f7cb1b5f970da7b6e47797dd4c59012a46892
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/01/2020
-ms.locfileid: "85769490"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924781"
 ---
 # <a name="dotfuscator-community"></a>Dotfuscator Community
 
@@ -40,7 +40,7 @@ Dotfuscator 无需进行其他编程，甚至无需访问源代码，即可处�
 用户可以通过中断和阻止实施反向工程，防止未经授权的 IP 泄漏，并说明该代码包含了商业机密。
 Dotfuscator 可以对 .NET 程序集[进行模糊处理][obfuscation]，以阻止实施反向工程，并保持原有的应用程序行为。
 
-**保护应用程序的完整性**也很重要。
+**保护应用程序的完整性** 也很重要。
 不良分子除实施反向工程外，还可能尝试盗版应用程序、更改应用程序在运行时的行为，或操作数据。
 Dotfuscator 可以向应用程序注入[检测和响应未经授权使用][checks]（包括篡改、第三方调试和取得 root 权限的设备）的功能。
 

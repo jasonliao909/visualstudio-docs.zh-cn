@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Bring Tree Here
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d489bfde8b095e35bc652f1cdb7588b07458e48e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 705134b5dfa31bb317360073e336abebcefdb13d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923966"
 ---
 # <a name="working-with-the-dsl-definition-diagram"></a>使用 DSL 定义图表
 定义关系图 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 是用于定义域特定语言的重要工具。 你可以将元素添加到域模型并定义关系图上的关系，也可以修改关系图的布局以使其更具可读性。
@@ -72,6 +72,6 @@ ms.locfileid: "97362829"
 ### <a name="show-as-class"></a>显示为类
  如果域关系具有派生关系，或者它具有与其他域关系的嵌入或引用关系，则可以通过右键单击该关系，然后单击 " **显示为类**"，将该关系显示为类。 将显示 " **域属性** " 隔离舱的关系，并显示继承和关系树。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

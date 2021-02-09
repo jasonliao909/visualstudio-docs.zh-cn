@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, adding items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4471f6a593e9349f32e4837da15df2e3e952d227
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 4a32d38b20b93cf215cb53c2c2d2b8767418de24
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923497"
 ---
 # <a name="how-to-add-items-to-a-sharepoint-project"></a>如何：向 SharePoint 项目添加项
   SharePoint 解决方案包含一个或多个项目，每个项目都包含多个 SharePoint 项目项。 打开或创建 SharePoint 解决方案后，可以将新项或现有项添加到这些项目。 例如，新的工作流项目附带了一个名为 default.aspx 的默认窗体，但您可以将该窗体替换为新的或不同的窗体，或添加另一个 ASPX 窗体。
@@ -30,7 +30,7 @@ ms.locfileid: "94850723"
 
 2. 在 **解决方案资源管理器** 中，选择项目的节点。
 
-3. 在菜单栏上，选择 **Project**  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
+3. 在菜单栏上，选择  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
 
 4. 在 " **已安装的模板** " 列表中，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 - code, exploring
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b522ae21de3d0ea115bc83446f0585e1dc9ab1e7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a261589af027c76708a70631426d8033eb2ada63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924235"
 ---
 # <a name="visualize-code"></a>可视化代码
 
@@ -42,7 +42,7 @@ ms.locfileid: "97362504"
 |**了解类结构：**<br /><br /> 通过从代码创建类关系图，在项目中查看类的结构。|[如何：向项目添加类图（类设计器）](../ide/class-designer/how-to-add-class-diagrams-to-projects.md)|
 |**描述高级系统设计，并对此设计进行代码验证：**<br /><br /> 通过创建依赖关系图来描述高级系统设计及其预期的依赖关系。 对此设计进行代码验证，以确保代码中的依赖项与设计保持一致。|- [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)<br />- [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)<br />- [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)<br />- [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [方案：使用可视化和建模更改设计](../modeling/scenario-change-your-design-using-visualization-and-modeling.md)
 - [分析和模型体系结构](../modeling/analyze-and-model-your-architecture.md)

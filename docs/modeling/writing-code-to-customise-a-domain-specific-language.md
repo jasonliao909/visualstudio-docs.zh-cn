@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31b97b113b763a8f294386d4fa5fe66233a3f980
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3363857d9a953b61e18eb4b0cb891b20dbed1eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923957"
 ---
 # <a name="write-code-to-customize-a-domain-specific-language"></a>编写代码以自定义域特定语言
 
@@ -74,6 +74,6 @@ ms.locfileid: "97360450"
 
 - **序列化**。 存储提供了一种标准方式来将其包含的对象序列化到文件中。 您可以自定义用于序列化和反序列化的规则。 有关详细信息，请参阅 [自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

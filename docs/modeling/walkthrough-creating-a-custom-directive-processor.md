@@ -9,18 +9,18 @@ helpviewer_keywords:
 - walkthroughs [text templates], directive processor
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: efe32db6f8d5aadb815d845bdc9f06be36ec06c9
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 718ca7b5abf2a7730470475caf2cdf5c200b23b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924102"
 ---
 # <a name="walkthrough-create-a-custom-directive-processor"></a>演练：创建自定义指令处理器
 
@@ -668,9 +668,9 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\VisualStudio\*.0\TextTemplatin
    |-|-|-|
    | （默认值） | REG_SZ | (未设置值) |
    | 类 | REG_SZ | CustomDP.CustomDirectiveProcessor |
-   | 程序集 | REG_SZ | CustomDP.dll |
+   | Assembly | REG_SZ | CustomDP.dll |
 
-6. 重新启动 Visual Studio。
+6. 重启 Visual Studio。
 
 ## <a name="test-the-directive-processor"></a>测试指令处理器
 

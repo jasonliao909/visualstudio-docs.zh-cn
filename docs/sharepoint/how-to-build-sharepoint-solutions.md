@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, building
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4e878221f3b6989a87fa3c9e36be1018d34d4af
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 3be11b730f3cc809a6d1a8ead6724a69be5f136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923422"
 ---
 # <a name="how-to-build-sharepoint-solutions"></a>如何：生成 SharePoint 解决方案
 
@@ -33,7 +33,7 @@ ms.locfileid: "94850684"
 
 2. 选择相应的选项来生成或重新生成解决方案或项目。 有关详细信息，请参阅 [在 Visual Studio 中编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
 
-3. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+3. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 ## <a name="see-also"></a>另请参阅
 
