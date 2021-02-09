@@ -13,21 +13,21 @@ helpviewer_keywords:
 ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5da9819cd3df667be5e8fa04372684f82762c037
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383061"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881173"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署的 compatibleFrameworks 元素) 
 标识此应用程序可在其上安装和运行的 .NET Framework 版本。
 
 > [!NOTE]
-> [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` 使用 [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)保存已使用证书签名的应用程序清单时，MageUI.exe不支持元素。 相反，您必须使用 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
+> [](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client) `compatibleFrameworks` 使用 [*MageUI.exe*](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)保存已使用证书签名的应用程序清单时，MageUI.exe不支持元素。 相反，您必须使用 [*Mage.exe*](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)。
 
 ## <a name="syntax"></a>语法
 
@@ -47,14 +47,14 @@ ms.locfileid: "94383061"
 
  下表列出了元素支持的属性 `compatibleFrameworks` 。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`S` `upportUrl`|可选。 指定可在其中下载首选兼容 .NET Framework 版本的 URL。|
 
 ## <a name="framework"></a>框架
  必需。 下表列出了元素支持的属性 `framework` 。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`targetVersion`|必需。 指定目标 .NET Framework 的版本号。|
 |`profile`|必需。 指定目标 .NET Framework 的配置文件。|
@@ -74,5 +74,5 @@ ms.locfileid: "94383061"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
