@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <postActions> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: eb716c3d9a20b6bda2cadff178a5126d6815ac00
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: da0c3ee640d7ae4ec1b61df7a60893a7e1428cd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583705"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879431"
 ---
 # <a name="ltpostactionsgt-element-office-development"></a>&lt;postActions &gt; 元素 (Office 开发) 
   `postActions` 命名空间的 `vstav3` 元素包含描述部署后操作（在安装 Office 解决方案后运行）的 `postAction` 所有元素。

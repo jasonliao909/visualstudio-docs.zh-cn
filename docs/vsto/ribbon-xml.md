@@ -22,15 +22,15 @@ helpviewer_keywords:
 - customizing the Ribbon, displaying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c9e1cf4c6af266495b3d85d96aa8cce1697cca7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879288"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能区 (XML) 项使你可以通过使用 XML 来自定义功能区。 如果要以功能区 (可视化设计器) 项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可对每个项执行的操作的比较，请参阅 [功能区概述](../vsto/Ribbon-overview.md)。
