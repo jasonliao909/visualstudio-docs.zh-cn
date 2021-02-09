@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], creating a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8f95533a5ad3955ee00829194bc4da1498baace0
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 77ffd8b6cd913b79249862a875b6267848a131af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923356"
 ---
 # <a name="how-to-create-a-bdc-model"></a>如何：创建 BDC 模型
   您可以通过使用此类项的模板，然后将该模型添加到任何 SharePoint 项目，创建 (BDC) 模型的业务数据连接。 有关详细信息，请参阅[创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。 有关如何设计模型的详细信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -49,7 +49,7 @@ ms.locfileid: "94850671"
 
      将创建一个空 SharePoint 项目。
 
-5. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+5. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 6. 在 " **添加新项** " 对话框中，选择 " **Office/SharePoint** " 节点。
 

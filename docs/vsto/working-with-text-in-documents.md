@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], text
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8314752b5d1be6d1d86dcf35cf78851bcb45cb3c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 07b3ed9cc39e4eb23bec587516786cf28a940e40
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920233"
 ---
 # <a name="work-with-text-in-documents"></a>处理文档中的文本
   本部分中的主题提供有关使用 Microsoft Office Word 的对象模型处理 Office 项目中的文本的分步过程和代码示例。

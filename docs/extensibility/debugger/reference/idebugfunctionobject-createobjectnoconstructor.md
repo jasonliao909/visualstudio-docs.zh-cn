@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4e2bd6d5-f4bd-4c10-a998-3db451c9a0c8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad95f9273276830b59ebc77214f3920a687d41ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c47f51fb0ddc47218b11fe5673e0ede8362ff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921073"
 ---
 # <a name="idebugfunctionobjectcreateobjectnoconstructor"></a>IDebugFunctionObject::CreateObjectNoConstructor
 创建不包含构造函数的对象。
@@ -28,7 +28,7 @@ ms.locfileid: "80728572"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CreateObjectNoConstructor( 
+HRESULT CreateObjectNoConstructor( 
    IDebugField*   pClassObject,
    IDebugObject** ppObject
 );
@@ -41,7 +41,7 @@ int CreateObjectNoConstructor(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pClassObject`\
 中一个 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象，表示要创建的对象的类型。
 

@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: fe2970ab-d4c5-4355-a8e4-772ee0a57178
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 866a53fae7bb2cc5325112b84d992da6f95af246
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: edb0e11f80743289f8318c9fe7d331e6528f8107
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921618"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 结构-内部成员
 本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 参考主题。
@@ -37,7 +37,7 @@ ms.locfileid: "80739299"
 
 ## <a name="internal-members"></a>内部成员
 
-|名称|说明|
+|“属性”|说明|
 |----------|-----------------|
 |[ObjectIdForDebugger 属性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
 |[m_objectIdForDebugger 字段](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示调试器用来唯一标识此生成器的延迟初始化的对象。|

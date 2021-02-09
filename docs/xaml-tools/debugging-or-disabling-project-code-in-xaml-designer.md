@@ -7,13 +7,13 @@ ms.topic: how-to
 ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: 8a5db556bfc9106bb18a6ef9d4d5e3e1aa893cc3
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+manager: jmartens
+ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921761"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -37,7 +37,7 @@ ms.locfileid: "92796740"
 
 1. 在未处理的异常对话框中，选择“单击此处重载设计器”  链接。
 
-2. 在菜单栏上，选择 " **调试** " "  >  **开始调试** " 以生成和运行应用程序。
+2. 在菜单栏上，选择 "**调试**" "  >  **开始调试**" 以生成和运行应用程序。
 
      如果应用程序成功生成和运行，则设计时异常可能由设计器中运行的项目代码引起。
 
@@ -55,15 +55,15 @@ ms.locfileid: "92796740"
 
 5. 在项目代码中设置断点。
 
-6. 在 Visual Studio 的新实例中，在菜单栏上选择 " **调试** " "  >  **附加到进程** "。
+6. 在 Visual Studio 的新实例中，在菜单栏上选择 "**调试**" "  >  **附加到进程**"。
 
-7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe”  ，然后选择“附加”  按钮。
+7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe” ，然后选择“附加”  按钮。
 
      ![XAML 设计器进程](media/xaml_attach.png)
 
      这是 Visual Studio 的第一个实例中 XAML 设计器的进程。
 
-8. 在 Visual Studio 的第一个实例中，在菜单栏上选择 " **调试** " "  >  **启动调试** "。
+8. 在 Visual Studio 的第一个实例中，在菜单栏上选择 "**调试**" "  >  **启动调试**"。
 
      现即可单步执行设计器中运行的代码。
 
@@ -88,15 +88,15 @@ ms.locfileid: "92796740"
 ## <a name="control-display-options"></a>控件显示选项
 
 > [!NOTE]
-> “控件显示选项”  仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”  功能。
+> “控件显示选项”仅适用于定目标到 Windows 10 Fall Creators Update（生成号 16299）或更高版本的通用 Windows 平台应用程序。 Visual Studio 2017 版本 15.9 或更高版本提供“控件显示选项”功能。
 
 在 XAML 设计器中，可以将“控件显示选项”更改为，仅显示 Windows SDK 中的平台控件。 这可能会提升 XAML 设计器的可靠性。
 
-若要更改“控件显示选项”，请单击设计器窗口左下角的图标，再选择“控件显示选项”  下的选项：
+若要更改“控件显示选项”，请单击设计器窗口左下角的图标，再选择“控件显示选项”下的选项：
 
 ![控件显示选项](media/control_display_options.png)
 
-当你选中“仅显示平台控件”  后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
+当你选中“仅显示平台控件”后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
 
 ## <a name="see-also"></a>另请参阅
 

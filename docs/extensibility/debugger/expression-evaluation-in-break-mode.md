@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e73d98e9fff713258f4797577fd8402932fe266
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559631"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921507"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断模式下的表达式计算
 以下部分介绍调试器处于中断模式时，必须执行表达式计算的过程。

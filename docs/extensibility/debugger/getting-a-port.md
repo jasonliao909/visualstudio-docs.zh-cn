@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd86d84ba4187df70d2aa02181249336c38dda41
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 1f3ee9c145a4c6275f64d357d87ac1cc284bfac6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560043"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921294"
 ---
 # <a name="get-a-port"></a>获取端口
 端口表示到运行进程的计算机的连接。 该计算机可以是本地计算机或远程计算机， (可能运行非基于 Windows 的操作系统;) 的详细信息，请参阅 [端口](../../extensibility/debugger/ports.md) 。

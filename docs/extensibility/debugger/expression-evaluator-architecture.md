@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aad7c4c6-1dc1-4d32-b975-f1fdf76bdeda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 216bf2f19d528084685a2361a158e105e2284010
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ac81d386f0e1104879701faba230d5384259fa25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921409"
 ---
 # <a name="expression-evaluator-architecture"></a>表达式计算器体系结构
 > [!IMPORTANT]
@@ -48,7 +48,7 @@ ms.locfileid: "96560156"
 
  有关显示变量值的此过程的更多详细信息，请参阅 [显示局部变量](../../extensibility/debugger/displaying-locals.md) 。 有关如何更改变量的值的更多详细信息，请参阅 [更改本地的值](../../extensibility/debugger/changing-the-value-of-a-local.md) 。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [计算上下文](../../extensibility/debugger/evaluation-context.md) 提供在 DE 调用 EE 时传递的参数。
 
  [键表达式计算器接口](../../extensibility/debugger/key-expression-evaluator-interfaces.md) 介绍编写 EE 时所需的关键接口以及计算上下文。

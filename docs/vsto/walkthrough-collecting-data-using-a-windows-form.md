@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets [Office development in Visual Studio], collecting data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 58d6f58f732d4a52aade6ff3678842900f1c29cd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e8c88bbf529da8e07976c012d40ca59e5f1e5626
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920365"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>演练：使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。

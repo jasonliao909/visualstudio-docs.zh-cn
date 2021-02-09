@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c86482bb-9ce5-4e63-bbe0-969b50169424
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b90547709e5524ce005b0598b0b8d482cfecf173
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c0baed5d7c0717f1bb8fd1a999f767d9e59abbae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920888"
 ---
 # <a name="idebugmoduleloadevent2getmodule"></a>IDebugModuleLoadEvent2::GetModule
 获取正在加载或卸载的模块。
@@ -28,7 +28,7 @@ ms.locfileid: "80726721"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetModule( 
+HRESULT GetModule( 
    IDebugModule2** pModule,
    BSTR*           pbstrDebugMessage,
    BOOL*           pbLoad
@@ -36,14 +36,14 @@ HRESULT GetModule( 
 ```
 
 ```csharp
-int GetModule( 
+int GetModule( 
    out IDebugModule2 pModule,
    ref string        pbstrDebugMessage,
    ref int           pbLoad
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pModule`\
 弄返回一个 [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md) 对象，该对象表示正在加载或卸载的模块。
 
