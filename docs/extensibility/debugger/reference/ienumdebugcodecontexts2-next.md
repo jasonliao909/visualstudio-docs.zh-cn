@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0d8aa2db-0994-4166-b364-2e25d936fffc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6e54b44d9e0ece42b65bf12412d6906158bc7fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1391ab12d3f362a3e3c7e6841fe627f403f0e38b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717289"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929480"
 ---
 # <a name="ienumdebugcodecontexts2next"></a>IEnumDebugCodeContexts2::Next
 返回枚举中的下一个元素集。
@@ -43,7 +43,7 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celt`\
 中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
 

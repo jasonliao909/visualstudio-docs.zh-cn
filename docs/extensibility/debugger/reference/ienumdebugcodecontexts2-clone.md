@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 22c98975-4294-4fbd-a345-16f65fe1200d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e860ec7f20e6578c9d43fa5483f4aea8b8867678
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a877fcda76cca704e12d228cf4e51ab070aa5c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717364"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929506"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -39,7 +39,7 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppEnum`\
 弄以单独的对象的形式返回此枚举的副本。
 

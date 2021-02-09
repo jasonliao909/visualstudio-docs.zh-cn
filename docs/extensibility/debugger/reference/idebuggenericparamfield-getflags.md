@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: adcbbca1-8960-4c88-86b0-8b9467056c97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d131a5dc4a1fd64f2a82bff4f51f7cbc4a905a8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: be9f842db6b322ffb9bdc76ebd2a954d849e5d65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929818"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 检索此泛型参数的标志。
@@ -38,7 +38,7 @@ int GetFlags(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwFlags`\
 弄返回此泛型参数的标志。
 
@@ -49,7 +49,7 @@ int GetFlags(
 这些标志包含有关各种特殊约束的信息。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的**CDebugGenericParamFieldType**对象实现此方法。
+下面的示例演示如何为公开 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的 **CDebugGenericParamFieldType** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetFlags(DWORD *pdwFlags)

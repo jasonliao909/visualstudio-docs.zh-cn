@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c394fe4d-eeb6-4feb-828c-098d84a6f1ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ebcf24ee39505091ff79c1f2f31d505217f77efb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 29a8e22301cbcd074c12d100d13601b57871a91a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930403"
 ---
 # <a name="idebugexpressionevaluatorgetmethodproperty"></a>IDebugExpressionEvaluator::GetMethodProperty
 此方法获取包含方法的局部变量、参数和其他属性的属性对象。
@@ -28,7 +28,7 @@ ms.locfileid: "80729506"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMethodProperty( 
+HRESULT GetMethodProperty( 
    IDebugSymbolProvider* pSymbolProvider,
    IDebugAddress*        pAddress,
    IDebugBinder*         pBinder,
@@ -47,7 +47,7 @@ int GetMethodProperty(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pSymbolProvider`\
 中要使用的符号提供程序，以 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 对象的形式表示。
 

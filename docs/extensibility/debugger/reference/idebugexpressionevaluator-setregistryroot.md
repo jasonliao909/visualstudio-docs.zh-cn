@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 790886d8-1975-4d3c-9a75-cd86c1faf4ca
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11e7cd69ed3f1e1b23cc0f2f03f3fd2cf912d308
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b5151d337618409970b61e515cd4428467a7fe25
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729412"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930338"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 此方法设置注册表根。 用于并行调试。
@@ -28,7 +28,7 @@ ms.locfileid: "80729412"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetRegistryRoot ( 
+HRESULT SetRegistryRoot ( 
    LPCOLESTR ustrRegistryRoot
 );
 ```
@@ -39,7 +39,7 @@ int SetRegistryRoot(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ustrRegistryRoot`\
 中新的注册表根目录。
 
@@ -47,7 +47,7 @@ int SetRegistryRoot(
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 指定的注册表根通常在表达式计算器首次实例化时设置，指向特定版本的 Visual Studio (的注册表项 HKEY_LOCAL_MACHINE \SOFTWARE\Microsoft\VisualStudio \\ *X. y*，其中， *x*是) 版本号。
+ 指定的注册表根通常在表达式计算器首次实例化时设置，指向特定版本的 Visual Studio 的注册表项 ( # B0 \\ *X. y*，其中， *X* 是版本号) 。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

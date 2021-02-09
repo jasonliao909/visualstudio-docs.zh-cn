@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35e57e361b59e76e187617b5e528b219e8e47897
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 74e31339b48e49869ce76ce9a3b20a14dcb0acf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930455"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 当异步表达式计算完成时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
@@ -45,7 +45,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 ## <a name="remarks"></a>备注
  DE 必须发送此事件，计算是否成功。
 
- 如果计算不成功，则不会 `DEBUG_PROPINFO_VALUE` `DEBUG_PROPINFO_ATTRIB` 在 GetPropertyInfo 返回的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构中设置和标志， [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象由 ([GetPropertyInfo](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)创建， `IDebugExpressionEvaluationCompleteEvent2` 如果计算失败) ，则在事件中返回。
+ 如果计算不成功，则不会 `DEBUG_PROPINFO_VALUE` `DEBUG_PROPINFO_ATTRIB` 在 GetPropertyInfo 返回的[DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构中设置和标志， [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)对象由 ([](../../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)创建， `IDebugExpressionEvaluationCompleteEvent2` 如果计算失败) ，则在事件中返回。
 
 ## <a name="requirements"></a>要求
  标头： msdbg

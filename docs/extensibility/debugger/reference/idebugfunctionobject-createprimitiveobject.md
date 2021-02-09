@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24b26a072a3bebda2d01a89baaf2910de96e77d1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad4328d2ae94a23ebaa9fb4fd0aa0d2cff7c74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929975"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 创建一个基元数据对象，如简单整数。
@@ -28,7 +28,7 @@ ms.locfileid: "80728529"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CreatePrimitiveObject( 
+HRESULT CreatePrimitiveObject( 
    OBJECT_TYPE    ot,
    IDebugObject** ppObject
 );
@@ -41,7 +41,7 @@ int CreatePrimitiveObject(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ot`\
 中 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 枚举中的一个值，表示要创建的基元类型。
 
