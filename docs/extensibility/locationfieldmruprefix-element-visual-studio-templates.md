@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 03443691-9eb5-46f4-9169-cc2552a04bcb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd3eca6297430e574435f92d4b58cfbb51be805c
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 674773d25e4842aec649fc57daa4972530832f71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924969"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a> (Visual Studio 模板的 LocationFieldMRUPrefix 元素) 
 
@@ -52,7 +52,7 @@ ms.locfileid: "94672504"
 |-------------|-----------------|
 |[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
  此元素只应用于通过生成的模板 [!INCLUDE[vsipprvsip](../extensibility/includes/vsipprvsip_md.md)] 。
 

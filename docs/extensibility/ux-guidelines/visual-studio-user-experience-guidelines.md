@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8200d5d0dbb18240f67214abecca4d066ce6270
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 5afe5df8808ee8b0c8ad13c494e58aea903fff89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926050"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
 如果为 Visual Studio 设计新功能，请遵循 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，以便新用户界面的设计器 (UI) 可以创建在开发环境中无缝且一致的用户体验。

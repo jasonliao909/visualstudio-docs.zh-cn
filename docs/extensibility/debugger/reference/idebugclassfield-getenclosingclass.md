@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a0c12e3c-9ea0-4dfb-9e45-8cea18725022
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e5a68e32da370d6881eb2b74cbca157f7b899329
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 91a4e04e26a57247a541c565ea4f0f392a413d39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925054"
 ---
 # <a name="idebugclassfieldgetenclosingclass"></a>IDebugClassField::GetEnclosingClass
 获取包含此类的类。
@@ -39,7 +39,7 @@ int GetEnclosingClass(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppClassField`\
 弄返回表示封闭类的 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 对象。 如果没有封闭类，则返回 null 值。
 

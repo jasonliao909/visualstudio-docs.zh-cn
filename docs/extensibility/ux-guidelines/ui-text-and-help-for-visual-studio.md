@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2795d766c43d6119fa50a12c4dcd1e2c72d79186
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 0b0da682f8403890e57118384b7d979f8760d62f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668594"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926149"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio 的 UI 文本和帮助
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文本和术语
@@ -156,7 +156,7 @@ ms.locfileid: "97668594"
 
 ### <a name="common-terminology"></a>常见术语
 
-|术语|说明|评论|
+|术语|说明|注释|
 |----------|-----------------|-------------|
 |登录/注销|谓词使用同义词将身份验证表示为 web 属性。 在客户端中，我们使用这一一次，作为用于登录和退出 IDE 用户连接的顶级概念，此类代表提供高级功能（如漫游和许可）的顶级标识，这些功能在所有其他连接中都不可用。|IDE 用户是唯一应该表示登录/注销谓词的功能，因为它表示顶级 IDE 用户。|
 |连接/断开连接|在功能维护与联机服务的单一连接的位置使用。|服务器资源管理器，一次只能有一个活动的 Azure 连接，这是一个连接/断开连接的示例。|

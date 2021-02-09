@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data caching [Office development in Visual Studio], Master/Detail Relation
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de7bf3ba34a2a7dd3e7db9ff549e4a839800d524
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925512"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：使用缓存的数据集创建主/从关系
   本演练演示如何在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。
@@ -81,7 +81,7 @@ ms.locfileid: "97524870"
 
 8. 选择 " **订单** " 表和 " **订单详细信息** " 表。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
    向导将两个表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 

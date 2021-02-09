@@ -14,15 +14,15 @@ helpviewer_keywords:
 - complex data [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 573f15001dcbd678c576512349c36ae9594e10e8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b15343c69c3c656d42300e15aab4946860de8926
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527093"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925515"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
@@ -80,7 +80,7 @@ ms.locfileid: "97527093"
 
 6. 在“选择数据库对象”  页中展开“表”  ，再选择“Address (SalesLT)” 。
 
-7. 单击“完成”。
+7. 单击“完成” 。
 
     将 *adventureworksltdataset.xsd* 文件添加到 **解决方案资源管理器**。 此文件定义以下各项：
 
