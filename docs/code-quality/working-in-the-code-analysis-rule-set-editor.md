@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 370c97bf-bb29-4b2f-b9ae-ba125bce7b2d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d2703972658aace438ab235d469eed3e0644c06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ba8ecdd3a1aae382d1b74d75e26e614ba07e6a66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436818"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867602"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 
@@ -76,7 +76,7 @@ ms.locfileid: "94436818"
 |**名称**|规则的标题。|
 |**命名空间**|规则的命名空间。|
 |**目标类型**|指示规则是适用于本机、托管代码还是数据库代码。|
-|**Action**|代码分析运行中违反规则时执行的操作。 可以编辑 " **操作** " 字段。|
+|**操作**|代码分析运行中违反规则时执行的操作。 可以编辑 " **操作** " 字段。|
 |**源规则集**|包含规则的规则集。|
 
 ## <a name="sort-and-filter-rule-sets"></a>排序和筛选规则集

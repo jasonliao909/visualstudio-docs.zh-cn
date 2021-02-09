@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 9748815e-3556-49e8-86b1-c6aa593c6163
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 10ea349186aa46bfb58f4b9ceeaab2c8ac3edd81
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ce969ddab5e48ac495754369e980747332f9b0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867368"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到数据库中的图片
 
@@ -41,13 +41,13 @@ ms.locfileid: "94518565"
 2. 在 " **数据源** " 窗口中，展开所需的表或对象以显示其列或属性。
 
    > [!TIP]
-   > 如果 " **数据源** " 窗口未打开，请选择 " **查看**  >  **其他 Windows**  >  **数据源** " 将其打开。
+   > 如果 "**数据源**" 窗口未打开，请选择 "**查看**  >  **其他 Windows**  >  **数据源**" 将其打开。
 
 3. 选择包含图像数据的列或属性，并从其下拉控件列表中选择以下控件之一：
 
-    - 如果 WPF 设计器处于打开状态，请选择 " **图像** "。
+    - 如果 WPF 设计器处于打开状态，请选择 " **图像**"。
 
-    - 如果 Windows 窗体设计器处于打开状态，请选择 **PictureBox** 。
+    - 如果 Windows 窗体设计器处于打开状态，请选择 **PictureBox**。
 
     - 此外，还可以选择支持数据绑定的其他控件，并可以显示图像。 如果要使用的控件不在可用控件列表中，则可以将其添加到列表中，然后选择它。 有关详细信息，请参阅 [将自定义控件添加到 "数据源" 窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 

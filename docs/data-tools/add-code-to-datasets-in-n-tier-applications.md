@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a02edd3f0e34b0315e9b583c509cda4eb0287bf1
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518682"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867524"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 
@@ -28,7 +28,7 @@ ms.locfileid: "94518682"
 
 每次对数据集定义进行更改时，都会生成定义数据集的代码，) 中的数据集定义 (。 当你在运行任何修改数据集配置的向导期间进行更改时，也会生成此代码。 若要防止在重新生成数据集的过程中删除代码，请将代码添加到数据集的分部类文件中。
 
-默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs* ) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* (或 *DatasetName.DataSet.Designer.cs* ) 的文件。此文件包含数据集代码。
+默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs*) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* (或 *DatasetName.DataSet.Designer.cs*) 的文件。此文件包含数据集代码。
 
 > [!NOTE]
 > 通过将 **数据集项目** 属性)  (分离数据集和 tableadapter 时，项目中的现有部分数据集类将不会自动移动。 必须将现有数据集分部类手动移动到 dataset 项目。
@@ -42,7 +42,7 @@ ms.locfileid: "94518682"
 
 2. 选择 **.xsd** 文件以打开数据集。
 
-3. 右键单击要向其添加代码的数据表 (标题栏中的表名) ，然后选择 " **查看代码** "。
+3. 右键单击要向其添加代码的数据表 (标题栏中的表名) ，然后选择 " **查看代码**"。
 
      将创建一个分部类并在代码编辑器中打开它。
 
