@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: fdaa553f-a27e-44eb-a4e2-08c122105a87
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 54deb51714183497173c7df4e346bb65613366a2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 59c468e28321c01993cd2f4b119218fb29bc6020
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917310"
 ---
 # <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：通过 ClickOnce 部署 API 按需下载附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。
@@ -56,7 +56,7 @@ ms.locfileid: "94349290"
 
 4. 单击“文件”  选项卡。
 
-5. 单击“省略号”按钮 (...)，然后选择包含所有应用程序的程序集和文件（包括使用 Resgen.exe 生成的附属程序集）的目录。 附属程序集 ( *\<isoCode>\ApplicationName.resources.dll* 格式的名称，其中 \<isoCode> 是 RFC 1766 格式的语言标识符。 ) 
+5. 单击“省略号”按钮 (...)，然后选择包含所有应用程序的程序集和文件（包括使用 Resgen.exe 生成的附属程序集）的目录。 附属程序集 (*\<isoCode>\ApplicationName.resources.dll* 格式的名称，其中 \<isoCode> 是 RFC 1766 格式的语言标识符。 ) 
 
 6. 单击“填充”  将文件添加到部署。
 
@@ -67,5 +67,5 @@ ms.locfileid: "94349290"
 ## <a name="next-steps"></a>后续步骤
  在生产环境中，可能需要删除将 <xref:System.Threading.Thread.CurrentUICulture%2A> 设置为特定值的代码示例中的行，因为客户端计算机将以默认方式设置正确值。 例如，当在日语客户端计算机上运行应用程序时，默认情况下， <xref:System.Threading.Thread.CurrentUICulture%2A> 将设置为 `ja-JP` 。 以编程方式设置此值是在部署应用程序之前测试附属程序集的一个很好的方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)

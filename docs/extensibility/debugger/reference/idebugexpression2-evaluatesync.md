@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306ed6af2a0a0b8fdb4525a112e680e289e6e6df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5adb5d6fc38a06054d6273f5b0493bae5bed77df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916204"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 此方法同步计算表达式。
@@ -45,7 +45,7 @@ int EvaluateSync(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFlags`\
 中用于控制表达式计算的 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举中的标志的组合。
 

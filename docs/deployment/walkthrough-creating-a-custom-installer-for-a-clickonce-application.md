@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: fb222cc5-8aeb-4b94-8c49-b93e342f5f69
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 08b4adbaa7e7e25041f90628695de729aaff0d0d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 748d9f5932f93261bc991f0d8af43728b8e5ce02
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349199"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917295"
 ---
 # <a name="walkthrough-create-a-custom-installer-for-a-clickonce-application"></a>演练：为 ClickOnce 应用程序创建自定义安装程序
 任何基于 *.exe* 文件的 ClickOnce 应用程序都可以由自定义安装程序进行静默安装和更新。 自定义安装程序可以在安装过程中实现自定义用户体验，包括安全和维护操作的自定义对话框。 若要执行安装操作，自定义安装程序使用 <xref:System.Deployment.Application.InPlaceHostingManager> 类。 本演练演示如何创建一个无提示安装 ClickOnce 应用程序的自定义安装程序。
@@ -77,6 +77,6 @@ ms.locfileid: "94349199"
 ## <a name="next-steps"></a>后续步骤
  ClickOnce 应用程序还可以添加自定义的更新逻辑，包括要在更新过程中显示的自定义用户界面。 有关详细信息，请参阅 <xref:System.Deployment.Application.UpdateCheckInfo>。 ClickOnce 应用程序还可以通过使用元素禁止显示标准的 "开始" 菜单项、快捷方式和 "添加或删除程序" 项 `<customUX>` 。 有关详细信息，请参阅[ \<entryPoint> 元素](../deployment/entrypoint-element-clickonce-application.md)和 <xref:System.Deployment.Application.DownloadApplicationCompletedEventArgs.ShortcutAppId%2A> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
-- [\<entryPoint> element](../deployment/entrypoint-element-clickonce-application.md)
+- [\<entryPoint> 元素](../deployment/entrypoint-element-clickonce-application.md)

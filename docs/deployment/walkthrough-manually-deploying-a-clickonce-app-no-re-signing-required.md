@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: c21822fb-d4ee-42e4-b72d-41ee9786efe5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 29bdd080e87e8fad44c7b8943d0d017749b8c30b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c0e8895f45524526fc8007ff909a9c541e9899b3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917261"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application-that-does-not-require-re-signing-and-that-preserves-branding-information"></a>演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序
 当你创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序并将其提供给客户进行发布和部署时，客户通常必须更新部署清单并对其进行重新签名。 虽然这在大多数情况下仍是首选方法，但 .NET Framework 3.5 使你可以创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可由客户部署的部署，而无需重新生成新的部署清单。 有关详细信息，请参阅 [部署 ClickOnce 应用程序用于测试和生产服务器而无需让步](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "94350304"
 ## <a name="prerequisites"></a>先决条件
  若要执行本演练中的步骤，需要以下各项：
 
-- 准备好部署的 Windows 窗体应用程序。 此应用程序将被称为 *WindowsFormsApp1* 。
+- 准备好部署的 Windows 窗体应用程序。 此应用程序将被称为 *WindowsFormsApp1*。
 
 - Visual Studio 或 Windows SDK。
 
@@ -50,7 +50,7 @@ ms.locfileid: "94350304"
 
 1. 打开 Visual Studio 命令提示符或 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 命令提示符，并更改为要在其中存储文件的目录 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
-2. 在部署的当前版本后创建一个名为的目录。 如果这是你首次部署应用程序，则可能会选择 " **1.0.0.0** "。
+2. 在部署的当前版本后创建一个名为的目录。 如果这是你首次部署应用程序，则可能会选择 " **1.0.0.0**"。
 
    > [!NOTE]
    > 部署版本可能与应用程序文件的版本不同。
@@ -100,7 +100,7 @@ ms.locfileid: "94350304"
 
 2. 创建一个名为 **bin** 的子目录，并将所有应用程序文件（包括可执行文件、程序集、资源和数据文件）复制到此处。
 
-3. 在部署的当前版本后创建一个名为的子目录。 如果这是你首次部署应用程序，则可能会选择 " **1.0.0.0** "。
+3. 在部署的当前版本后创建一个名为的子目录。 如果这是你首次部署应用程序，则可能会选择 " **1.0.0.0**"。
 
    > [!NOTE]
    > 部署版本可能与应用程序文件的版本不同。
@@ -113,31 +113,31 @@ ms.locfileid: "94350304"
    MageUI.exe
    ```
 
-6. 通过从菜单中选择 " **文件** "、" **新建** "、" **应用程序清单** " 来创建新的应用程序清单。
+6. 通过从菜单中选择 " **文件**"、" **新建**"、" **应用程序清单** " 来创建新的应用程序清单。
 
 7. 在 "默认 **名称** " 选项卡上，输入此部署的名称和版本号。 此外，为 **Publisher** 提供一个值，它将在部署时用作 "开始" 菜单中的应用程序快捷方式链接的文件夹名称。
 
-8. 选择 " **应用程序选项** " 选项卡，然后单击 " **为信任信息使用应用程序清单** "。 这将为此应用程序启用第三方品牌标记 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
+8. 选择 " **应用程序选项** " 选项卡，然后单击 " **为信任信息使用应用程序清单**"。 这将为此应用程序启用第三方品牌标记 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
-9. 选择 " **文件** " 选项卡，然后单击 " **应用程序目录** " 文本框旁边的 " **浏览** " 按钮。
+9. 选择 "**文件**" 选项卡，然后单击 "**应用程序目录**" 文本框旁边的 "**浏览**" 按钮。
 
 10. 选择包含在步骤2中创建的应用程序文件的目录，然后在 "文件夹选择" 对话框中单击 **"确定"** 。
 
-11. 单击 " **填充** " 按钮，将所有应用程序文件添加到文件列表。 如果你的应用程序包含多个可执行文件，则通过从 " **文件类型** " 下拉列表中选择 " **入口点** "，将此部署的主要可执行文件标记为启动应用程序。  (如果你的应用程序只包含一个可执行文件， *MageUI.exe* 会将其标记为你。 ) 
+11. 单击 " **填充** " 按钮，将所有应用程序文件添加到文件列表。 如果你的应用程序包含多个可执行文件，则通过从 "**文件类型**" 下拉列表中选择 "**入口点**"，将此部署的主要可执行文件标记为启动应用程序。  (如果你的应用程序只包含一个可执行文件， *MageUI.exe* 会将其标记为你。 ) 
 
-12. 选择 " **所需权限** " 选项卡，并选择需要应用程序断言的信任级别。 默认值为 " **完全信任** "，这将适用于大多数应用程序。
+12. 选择 " **所需权限** " 选项卡，并选择需要应用程序断言的信任级别。 默认值为 " **完全信任**"，这将适用于大多数应用程序。
 
-13. 从菜单中选择 " **文件** "、" **保存** "，并保存应用程序清单。 保存应用程序清单时，系统将提示您对应用程序清单进行签名。
+13. 从菜单中选择 " **文件**"、" **保存** "，并保存应用程序清单。 保存应用程序清单时，系统将提示您对应用程序清单进行签名。
 
-14. 如果你的证书作为文件存储在文件系统中，请使用 " **签名为证书文件** " 选项，然后使用省略号 ( **...** ) "按钮从文件系统中选择该证书。
+14. 如果你的证书作为文件存储在文件系统中，请使用 " **签名为证书文件** " 选项，然后使用省略号 (**...**) "按钮从文件系统中选择该证书。
 
-     - 或 -
+     -或-
 
-     如果证书保存在可从计算机访问的证书存储中，请选择 " **使用存储的证书签名" 选项** ，然后从提供的列表中选择证书。
+     如果证书保存在可从计算机访问的证书存储中，请选择 " **使用存储的证书签名" 选项**，然后从提供的列表中选择证书。
 
-15. 从菜单中选择 " **文件** "、" **新建** "、" **部署清单** " 以创建部署清单，然后在 " **名称** " 选项卡上，在此示例) 中提供 ( **1.0.0.0** 的名称和版本号。
+15. 从菜单中选择 " **文件**"、" **新建**"、" **部署清单** " 以创建部署清单，然后在 " **名称** " 选项卡上，在此示例) 中提供 (**1.0.0.0** 的名称和版本号。
 
-16. 切换到 " **更新** " 选项卡，指定要更新此应用程序的频率。 如果应用程序使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署 API 来检查更新本身，请清除标签为 " **此应用程序应检查更新** " 的复选框。
+16. 切换到 " **更新** " 选项卡，指定要更新此应用程序的频率。 如果应用程序使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署 API 来检查更新本身，请清除标签为 " **此应用程序应检查更新**" 的复选框。
 
 17. 切换到 " **应用程序引用** " 选项卡。您可以通过单击 " **选择清单** " 按钮，然后选择在前面的步骤中创建的应用程序清单，预先填充此选项卡上的所有值。
 
@@ -156,7 +156,7 @@ ms.locfileid: "94350304"
 
 22. 客户向其用户部署应用程序。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [MakeCert](/windows/desktop/SecCrypto/makecert)

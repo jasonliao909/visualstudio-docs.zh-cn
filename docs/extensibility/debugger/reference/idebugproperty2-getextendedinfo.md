@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34d6cd880ccae520bf000ad01b52223857f4f10f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721487"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916050"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取属性的扩展信息。
@@ -28,25 +28,25 @@ ms.locfileid: "80721487"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetExtendedInfo ( 
+HRESULT GetExtendedInfo ( 
    REFGUID* guidExtendedInfo,
    VARIANT* pExtendedInfo
 );
 ```
 
 ```csharp
-int GetExtendedInfo ( 
+int GetExtendedInfo ( 
    ref Guid guidExtendedInfo,
    out object pExtendedInfo
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidExtendedInfo`\
-中确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅备注。
+中确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅“备注”。
 
 `pExtendedInfo`\
-弄返回 `VARIANT` (c + +) 或对象 (c # ) ，该对象可用于检索扩展属性信息。 例如，此参数可能会返回一个 `IUnknown` 接口，该接口可用于查询 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 接口。 有关详细信息，请参阅备注。
+弄返回 `VARIANT` (c + +) 或对象 (c # ) ，该对象可用于检索扩展属性信息。 例如，此参数可能会返回一个 `IUnknown` 接口，该接口可用于查询 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 接口。 有关详细信息，请参阅“备注”。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 `S_GETEXTENDEDINFO_NO_EXTENDEDINFO`如果没有要检索的扩展信息，则返回。
@@ -56,7 +56,7 @@ int GetExtendedInfo ( 
 
  此方法通常会识别以下 Guid (为 c # 指定了 GUID 值，因为该名称在任何程序集) 中都不可用。 可以创建其他 Guid 供内部使用。
 
-|名称|GUID|描述|
+|“属性”|GUID|描述|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|返回 `IUnknown` 文档的接口。 通常，可从此接口获取 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 接口 `IUnknown` 。|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|返回 `IUnknown` 文档上下文的接口。 通常，可从此接口获取 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 接口 `IUnknown` 。|

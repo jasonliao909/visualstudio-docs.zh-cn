@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 59a0dd5f-1cab-4f2f-b780-0ab7399905d5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 597f633c1f92b09add06909b8cb626262de1156f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0c2ced89c73d39fecb6b6cee80a8fddb0a8c2391
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917333"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -39,7 +39,7 @@ ms.locfileid: "94350343"
 
 ### <a name="to-create-a-project-that-uses-an-on-demand-assembly-with-visual-studio"></a>通过 Visual Studio 创建使用按需程序集的项目
 
-1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中创建新的 Windows 窗体项目。 在 **“文件”** 菜单上，指向 **“添加”** ，再单击 **“新建项目”** 。 在对话框中选择“类库”  项目，并将它命名为 `ClickOnceLibrary`。
+1. 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]中创建新的 Windows 窗体项目。 在 **“文件”** 菜单上，指向 **“添加”**，再单击 **“新建项目”**。 在对话框中选择“类库”  项目，并将它命名为 `ClickOnceLibrary`。
 
    > [!NOTE]
    > 在 Visual Basic 中，我们建议修改项目属性以将此项目的根命名空间更改为 `Microsoft.Samples.ClickOnceOnDemand` 或更改为所选的命名空间。 为简单起见，此演练中的两个项目处于同一个命名空间中。
@@ -99,6 +99,6 @@ ms.locfileid: "94350343"
 
 2. 在主窗体显示时按 <xref:System.Windows.Forms.Button>。 你应在消息框窗口中看到一个显示为“Hello, World!”的字符串
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

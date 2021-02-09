@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e48b8cfbcf4ee1c7340aef4cd59e09698f89412
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4fd82cf9d8d5cb15215bf7ecbfa51c735ef52a0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917397"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：向工作表添加图表控件
   您可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 设计时和运行时在文档级自定义项中将控件添加到 Microsoft Office Excel 工作表。 你还可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 运行时在 VSTO 外接程序中添加控件。
@@ -84,7 +84,7 @@ ms.locfileid: "96845461"
 
 - 制成图表并存储在工作表中 A5 到 D8 范围内的数据。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [图表控件](../vsto/chart-control.md)
