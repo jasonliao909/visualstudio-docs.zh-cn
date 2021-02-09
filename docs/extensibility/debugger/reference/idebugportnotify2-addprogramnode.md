@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 34c0e949-1eb9-4108-9cb8-a3eb87fcf190
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9090c39d85519435d17c940ad21fd55d26904765
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bfafb48aea95cd3ea79997fb2c84621396af210c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724988"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919832"
 ---
 # <a name="idebugportnotify2addprogramnode"></a>IDebugPortNotify2::AddProgramNode
 注册一个程序，该程序可以使用其运行所在的端口进行调试。
@@ -28,18 +28,18 @@ ms.locfileid: "80724988"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT AddProgramNode( 
+HRESULT AddProgramNode( 
    IDebugProgramNode2* pProgramNode
 );
 ```
 
 ```csharp
-int AddProgramNode( 
+int AddProgramNode( 
    IDebugProgramNode2 pProgramNode
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProgramNode`\
 中表示要注册的程序的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象。
 

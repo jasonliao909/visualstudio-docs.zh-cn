@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 144724d0-38ee-4c9b-87ca-8a504371182b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5789681b0da70f46dadac1e29d0d6bb9dc905d1a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2ff055f730d193b5294b98129e073a21428f8ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724997"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919897"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 此接口使会话调试管理器 (SDM) 控制端口上运行的程序和进程。
@@ -32,7 +32,7 @@ IDebugPortEx2 : IUnknown
  自定义端口提供程序在实现 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)的同一对象上实现此接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
- SDM 在接口[QueryInterface](/cpp/atl/queryinterface)上调用 QueryInterface `IDebugPort2` 以获取此接口。
+ SDM 在接口[](/cpp/atl/queryinterface)上调用 QueryInterface `IDebugPort2` 以获取此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IDebugPortEx2` 。

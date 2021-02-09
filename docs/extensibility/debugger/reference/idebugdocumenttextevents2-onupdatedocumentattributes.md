@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5ed964905db6aa591252018b408cf67fa43d310
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3e73b4c071f28abf80e9d35da05b0b49c96af265
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731392"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919966"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 通知接收方事件已更新文档属性。
@@ -28,18 +28,18 @@ ms.locfileid: "80731392"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT onUpdateDocumentAttributes( 
+HRESULT onUpdateDocumentAttributes( 
    TEXT_DOC_ATTR_2 textdocattr
 );
 ```
 
 ```csharp
-int onUpdateDocumentAttributes( 
+int onUpdateDocumentAttributes( 
    enum_TEXT_DOC_ATTR_2 textdocattr
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `textdocattr`\
 中 [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) 枚举中的标志的组合，该枚举指定文档的更新特性。
 
