@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 74490fd8-6f44-4618-beea-dab64961bb8a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 212f8d251232d35ee7d9cc46074a21239eea29f4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bdabe777bf2147dee2b98ca552183ae0e14d16f1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888207"
 ---
 # <a name="idebugproperty3getcustomviewerlist"></a>IDebugProperty3::GetCustomViewerList
 获取与此属性关联的自定义查看器的列表。
@@ -45,7 +45,7 @@ int GetCustomViewerList(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celtSkip`\
 中要跳过的查看器数量。
 
@@ -67,7 +67,7 @@ int GetCustomViewerList(
 有关类型可视化工具和自定义查看器之间的差异的详细信息，请参阅 [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的**CProperty**对象实现此方法。
+下面的示例演示如何为公开 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的 **CProperty** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CProperty::GetCustomViewerList(ULONG celtSkip, ULONG celtRequested, DEBUG_CUSTOM_VIEWER* prgViewers, ULONG* pceltFetched)

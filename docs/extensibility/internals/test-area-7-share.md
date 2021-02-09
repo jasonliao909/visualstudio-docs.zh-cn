@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02593af854a9e68e7f4a6cc66f54452d3c3d3f94
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888129"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 此测试区域涉及到通过 **Share** 命令在位置之间共享项。
@@ -60,5 +60,5 @@ ms.locfileid: "97487603"
 |在加载的项目中共享文件夹-递归|1. 创建一个新项目。<br />2. 将解决方案添加到源代码管理。<br />3. 选择项目。<br />4. 打开 "**共享**" 对话框 (**文件**  ->  **源控制**  ->  **共享**) 。<br />5. 选择一个文件夹。<br />6. 以递归方式将文件夹共享到项目。|常见的预期行为。|
 |将多个文件从一个项目共享到另一个项目|1. 创建一个新项目，其中包含多个文件。<br />2. 将解决方案添加到源代码管理。<br />3. 关闭解决方案。<br />4. 在新的解决方案中创建新项目。<br />5. 将解决方案添加到源代码管理。<br />6. 选择该项目。<br />7. 打开 "**共享**" 对话框 (**文件**  ->  **源控制**  ->  **共享**) 。<br />8. 将以前创建的项目中的多个文件共享到当前打开的项目。|常见的预期行为。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

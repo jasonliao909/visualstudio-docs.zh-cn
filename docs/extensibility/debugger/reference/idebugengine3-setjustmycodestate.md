@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8ec17fbf-df93-424a-b2ed-fd1e5ee51256
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9930f8ecf0c2f9b6fff4ce1c9e3edb935c5a7912
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2e706d0fd23bc0c5388ee3bd6bb82323309725c1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730683"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887180"
 ---
 # <a name="idebugengine3setjustmycodestate"></a>IDebugEngine3::SetJustMyCodeState
 此方法告知调试引擎 JustMyCode 状态信息。
@@ -28,10 +28,10 @@ ms.locfileid: "80730683"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetJustMyCodeState(
-   BOOL           fUpdate,
-   DWORD          dwModules,
-   JMC_CODE_SPEC* rgJMCSpec
+HRESULT SetJustMyCodeState(
+   BOOL           fUpdate,
+   DWORD          dwModules,
+   JMC_CODE_SPEC* rgJMCSpec
 );
 ```
 
@@ -43,7 +43,7 @@ int SetJustMyCodeState(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `fUpdate`\
 中非零 (`TRUE`) 更新当前信息，零 (`FALSE`) 重置所有信息 (忽略之前设置) 的任何信息。
 

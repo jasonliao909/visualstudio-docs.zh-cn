@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 6c552700-dda3-49fe-af98-4717344fda07
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb659b2191e156aac303678374fe726856d9a77
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 50f3e5d8500e57dd336919a5da58af094db97169
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349589"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887414"
 ---
 # <a name="how-to-specify-where-visual-studio-copies-the-files"></a>如何：指定 Visual Studio 复制文件的位置
 使用 ClickOnce 发布应用程序时，“`Publish Location`”属性指定放置应用程序文件和清单的位置。 这可以是文件路径或 FTP 服务器的路径。
@@ -42,12 +42,12 @@ ms.locfileid: "94349589"
 
 3. 在“发布位置”字段中，使用以下格式之一输入发布位置：
 
-   - 若要发布到文件共享或磁盘路径，请使用 UNC 路径 ( *\\ \Server\ApplicationName* ) 或 ( *C:\Deploy\ApplicationName* ) 的文件路径输入路径。
+   - 若要发布到文件共享或磁盘路径，请使用 UNC 路径 (*\\ \Server\ApplicationName*) 或 (*C:\Deploy\ApplicationName*) 的文件路径输入路径。
 
    - 若要发布到 FTP 服务器，请使用格式<em>ftp://ftp.microsoft.com/ \<ApplicationName> </em>输入路径。
 
-     请注意，“发布位置”框中必须存在文本才能使浏览（“...”）按钮正常工作。
+     请注意，" **发布位置** " 框中必须存在文本才能使 "浏览 (**...**) " 按钮正常工作。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c202aa9e76f568db9394625485282345ea3222c1
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887362"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第1部分
 在 Visual Studio 中，项目是开发人员用来组织源代码文件和其他资产的容器。 项目在 **解决方案资源管理器** 中显示为解决方案的子项目。 项目使你可以组织、构建、调试和部署源代码，并创建对 Web 服务、数据库和其他资源的引用。
@@ -638,4 +638,4 @@ Templates
 
     ![简单项目命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   恭喜！ 您已经实现了一个基本的托管项目系统。
+   祝贺！ 您已经实现了一个基本的托管项目系统。

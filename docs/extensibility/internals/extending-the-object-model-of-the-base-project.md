@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4e3d7ad3f19aedc59288d6799e97d91499939c9
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 23541124e48df0c3760d38ff8205f086281034fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887037"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>扩展基项目的对象模型
 
@@ -33,6 +33,6 @@ ms.locfileid: "96479454"
 
 - 配置属性：对于特定的配置，此集合显示项目的依赖于配置的属性 (例如，调试) 。 有关详细信息，请参阅 <xref:EnvDTE.Configuration>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 <xref:EnvDTE80.IInternalExtenderProvider>在主项目子类型聚合器上实现的接口为 `VSHPROPID_CfgBrowseObjectCATID` 与 VSITEMID 值对应的 CATID (提供其对象 `itemid` [。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>接口用于区分一个配置浏览对象和另一个。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>
