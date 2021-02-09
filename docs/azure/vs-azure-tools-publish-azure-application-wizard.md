@@ -2,17 +2,17 @@
 title: 发布 Azure 云服务
 description: 了解如何在 Visual Studio“发布 Azure 应用程序”向导中配置各种设置
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 87082a0d4df4542f36b1ce95cba92d261a2b4d9e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: f965d8e7f71ba34be9901d77fa4f0af881805bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844055"
 ---
 # <a name="using-the-visual-studio-publish-azure-application-wizard"></a>使用 Visual Studio“发布 Azure 应用程序”向导 | Microsoft Docs
 
@@ -51,7 +51,7 @@ ms.locfileid: "94902306"
 
 ![通用设置](./media/vs-azure-tools-publish-azure-application-wizard/settings-common-settings.png)
 
-**云服务** - 使用下拉列表选择现有的云服务，或者选择“&lt;新建>”创建一个云服务。 每个云服务的数据中心均显示在括号中。 建议云服务的数据中心位置与存储帐户的数据中心位置相同（高级设置）。
+**云服务**-使用下拉列表选择现有的云服务，或选择 " **&lt; 创建新的>**"，然后创建云服务。 每个云服务的数据中心均显示在括号中。 建议云服务的数据中心位置与存储帐户的数据中心位置相同（高级设置）。
 
 **环境** - 选择“生产”或“过渡”。 如果要在测试环境中部署应用程序，请选择过渡环境。
 

@@ -3,17 +3,17 @@ title: 使用 PowerShell 发布到开发和测试环境
 description: 了解如何使用 Windows PowerShell 脚本通过 Visual Studio 发布到开发和测试环境。
 ms.custom: SEO-VS-2020
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 97c337adabc5ce22ce92c720a3a4d776eaecf867
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e0486e3a13b1c6b6ba421c5c0a97788f514413e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843951"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 脚本发布到开发和测试环境
 

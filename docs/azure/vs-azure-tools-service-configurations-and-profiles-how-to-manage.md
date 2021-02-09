@@ -2,17 +2,17 @@
 title: 如何管理服务配置和配置文件 | Microsoft Docs
 description: 了解如何使用服务配置和配置文件，这两种配置文件将存储云服务的部署环境设置和发布设置。
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 751214a99c7724c83f01226164202f90425ebf65
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902073"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99843808"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服务配置和配置文件
 ## <a name="overview"></a>概述
@@ -41,7 +41,7 @@ ms.locfileid: "94902073"
 
     此时将出现 **“管理服务配置”** 对话框。
 2. 要删除服务配置，请从“名称”列表中选择要删除的配置，并选择“删除”。 此时会显示一个对话框框以确认要删除此配置。
-3. 选择“删除” 。
+3. 选择“删除”。
 
      此时该服务配置文件将从解决方案资源管理器的 Azure 项目中删除。
 
