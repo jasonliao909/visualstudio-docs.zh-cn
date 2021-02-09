@@ -13,15 +13,15 @@ helpviewer_keywords:
 - text files, opening as workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5f471161a8563718f69f14ea341ab099fbf138d8
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 47582718128fc9818bb42571e3f33c0190a32d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888740"
 ---
 # <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式将文本文件作为工作簿打开
   您可以将文本文件作为工作簿打开。 必须传入要打开的文本文件的名称。 您可以指定多个可选参数，如开始分析的行号以及文件中数据的列格式。

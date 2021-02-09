@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f1396a60cda1e4e1ad372a73b9c2130d450d746
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889299"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 
@@ -29,13 +29,13 @@ ms.locfileid: "94433565"
 
 ### <a name="using-the-trycatch-activity-designer"></a>使用 TryCatch 活动设计器
 
-访问 " **工具箱** " 的 " **错误处理** " 类别中的 " **TryCatch** " 活动设计器。
+访问 "**工具箱**" 的 "**错误处理**" 类别中的 " **TryCatch** " 活动设计器。
 
 可以将 " **TryCatch** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 TryCatch 的默认 <xref:System.Activities.Statements.TryCatch> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 " **TryCatch** " 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑值。 其他属性必须在 **TryCatch** 活动设计器的图面上进行编辑。
 
-单击 **TryCatch** 设计器右上角的展开按钮，查看展开视图中的 **Try** "Try **"、"catch" 和** " **Finally** " 框。 若要添加 catch，请在 **TryCatch** 设计器中单击 " **添加新的 catch** " 按钮。 该按钮将变为类型组合框。 选择一个异常类型，然后按 Enter 键添加该 catch。 添加 **catch** 后，catch 区域将展开，并且可以将活动拖放到捕获中，以定义捕获的执行逻辑。 请注意，在展开的 catch 区域右侧有一个文本框。 可以使用此文本框为异常变量命名。 异常变量仅可用于同一 **捕获** 中的活动。
+单击 **TryCatch** 设计器右上角的展开按钮，查看展开视图中的"Try **"、"catch" 和**" **Finally** " 框。 若要添加 catch，请在 **TryCatch** 设计器中单击 "**添加新的 catch** " 按钮。 该按钮将变为类型组合框。 选择一个异常类型，然后按 Enter 键添加该 catch。 添加 **catch** 后，catch 区域将展开，并且可以将活动拖放到捕获中，以定义捕获的执行逻辑。 请注意，在展开的 catch 区域右侧有一个文本框。 可以使用此文本框为异常变量命名。 异常变量仅可用于同一 **捕获** 中的活动。
 
-**TryCatch** 设计器不支持编辑 **捕获** 。 如果要更改异常类型，则必须删除 **Catch** 并添加一个新的。 可以通过选择并删除捕获，或在通过右键单击访问的上下文菜单上选择 " **删除** " 来删除 **捕获** 。
+**TryCatch** 设计器不支持编辑 **捕获**。 如果要更改异常类型，则必须删除 **Catch** 并添加一个新的。 可以通过选择并删除捕获，或在通过右键单击访问的上下文菜单上选择 "**删除**" 来删除 **捕获**。
 
 ### <a name="the-trycatch-properties"></a>TryCatch 属性
 
@@ -43,13 +43,13 @@ ms.locfileid: "94433565"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.TryCatch> 活动的可选友好名称。 默认值是 TryCatch。|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|错误|在 <xref:System.Activities.Statements.TryCatch> 执行时首先执行的活动。|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|错误|活动引发异常时要检查的 **捕获** 元素的集合 <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|错误|执行完 <xref:System.Activities.Statements.TryCatch.Try%2A> 以及 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活动时要执行的活动。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.TryCatch> 活动的可选友好名称。 默认值是 TryCatch。|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|在 <xref:System.Activities.Statements.TryCatch> 执行时首先执行的活动。|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|活动引发异常时要检查的 **捕获** 元素的集合 <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|执行完 <xref:System.Activities.Statements.TryCatch.Try%2A> 以及 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活动时要执行的活动。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
 
 ## <a name="see-also"></a>另请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)
-- [Throw](../workflow-designer/throw-activity-designer.md)
+- [放弃](../workflow-designer/throw-activity-designer.md)

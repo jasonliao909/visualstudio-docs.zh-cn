@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 673b08bf5680e04c90376c9eb3d63f6f03df9723
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 7c0aa8550bc402520052003b59cf4ab1deaad7b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888961"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
  (DE) 的调试引擎是允许调试特定运行时体系结构的组件。 每个运行时环境通常只有一个 DE 实现。
@@ -41,7 +41,7 @@ ms.locfileid: "96914187"
 
 5. 设置终止和分离
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md) 说明向 Visual Studio 注册调试引擎以使其可供使用所需的步骤。
 
  [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) 说明在您的 DE 可以调试程序之前，必须先启动 DE，或将其附加到现有的程序。

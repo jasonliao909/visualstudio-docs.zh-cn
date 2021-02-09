@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38d855ebe34c54d06159ecd958a8b1d31ae0131f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888909"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练：在编辑器扩展中使用 shell 命令
 从 VSPackage 中，你可以向编辑器添加功能，如菜单命令。 本演练演示如何通过调用菜单命令向编辑器中的文本视图添加修饰。
