@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d42a912761f04fb122551dc14ec077f1869f6bf
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883150"
 ---
 # <a name="upgrading-projects"></a>升级项目
 
@@ -181,6 +181,6 @@ ms.locfileid: "97487577"
 
 2. 当项目项收到项目升级通知时，仍然会显示 **Visual Studio 转换向导** 。 因此，应使用接口的方法向 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 向导 UI 提供升级消息。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [项目](../../extensibility/internals/projects.md)
