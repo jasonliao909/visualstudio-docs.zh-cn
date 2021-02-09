@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: ce877a6a-9bba-4fd9-92fb-0a8dfec9e75b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07230c3a9b76be8d78e22acaa83addd0fa21005a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: e9509d7bc0f8141b01ed1a0a600fa5d77a6d6916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839371"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 元素（Visual Studio 模板）
 指定是否在 "**添加新项**" 对话框中启用 "**选择母版页**" 复选框。
@@ -55,8 +55,8 @@ ms.locfileid: "94903827"
 
  文本必须是 `true` 或 `false` ，指示是否在 "**添加新项**" 对话框中启用了 "**选择母版页**" 复选框。
 
-## <a name="remarks"></a>注解
- `SupportsMasterPage` 是可选元素。 默认值为 `false`。
+## <a name="remarks"></a>备注
+ `SupportsMasterPage` 是可选元素。 默认值是 `false`。
 
  `SupportsMasterPage`元素仅适用于 Web 项模板。
 

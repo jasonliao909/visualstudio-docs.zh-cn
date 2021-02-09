@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ab3531e67be540f7c66da52b7e5152a510fa27
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: b00eb3e410c7fd3d10d2aef7fcfbf637ea04e41a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839568"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 
@@ -28,7 +28,7 @@ ms.locfileid: "98204639"
 
 ## <a name="the-services"></a>服务
 
-| 服务 | 接口 | Visual Studio | Visual Studio 2005 | 描述 |
+| 服务 | 接口 | Visual Studio | Visual Studio 2005 | 说明 |
 | - | - |---------------|--------------------| - |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 由 Vspackage 用来 <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> 从 ActiveX 控件获取接口，以便于异步数据传输。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化 (DTE) 对象的设计时扩展性。<br /><br /> C/C + + ID： SID_SDTE |
