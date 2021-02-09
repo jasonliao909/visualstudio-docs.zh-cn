@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], parameter types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8044f04902e74b2597d6cf331e54eb4a6138817a
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 9dac5aa82b03887a11ba9ed3c76fe03fd85174cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913708"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定义参数的类型描述符
   类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。
@@ -119,7 +119,7 @@ ms.locfileid: "94903593"
 
     新的类型描述符将作为子类型描述符添加到集合类型描述符中。 将此类型描述符配置为实体。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)
 - [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)

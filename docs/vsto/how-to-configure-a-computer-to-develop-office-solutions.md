@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d6504ac9682c4cd4e7691c651f1ee5c2b3818bf2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: eeb5deffd0d6dbfb39da22db993bdb201bac5e17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913478"
 ---
 # <a name="how-to-configure-a-computer-to-develop-office-solutions"></a>如何：将计算机配置为开发 Office 解决方案
   若要配置开发计算机以便可以使用 Visual Studio 中的 Microsoft Office 开发人员工具，请按照本主题中的说明进行操作。 必须在本地计算机上具有管理特权才能执行这些步骤。
@@ -36,7 +36,7 @@ ms.locfileid: "96844304"
 
 3. 如果使用的是英文版的 Visual Studio，但使用非英语的 Windows 设置，则可以安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 语言包，以便以与 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] windows 相同的语言查看消息。 Visual Studio 的非英语版本将自动安装该语言包。 可从 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=54246)获取该语言包。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [开始 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [如何：安装 Visual Studio Tools for Office 运行时可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3865c11c67fd826e0ce914b6aeb88364da3212b7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 4a3c427f207f6aac9f6a827eb6c24b799d635b46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305201"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913592"
 ---
 # <a name="how-to-localize-a-feature"></a>如何：本地化功能
   默认情况下，功能标题和说明使用硬编码的字符串值。 若要本地化功能标题和说明，请将字符串替换为引用本地化资源的表达式。

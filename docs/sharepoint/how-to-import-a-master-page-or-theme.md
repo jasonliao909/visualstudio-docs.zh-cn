@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c17f4e7477a20ea245eaa359a6f9611a8dc4ece6
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903489"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913675"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
   您可以通过创建和使用母版页和主题，为您的 SharePoint 站点上的页面指定一致的外观。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供这些元素的模板，但您可以在 SharePoint Designer 中创建模板，然后将其导入到中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 Microsoft 网站上的 [构建基块：页面和用户界面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 。
@@ -31,7 +31,7 @@ ms.locfileid: "94903489"
 
      有关如何创建 SharePoint 项目的信息，请参阅 [sharepoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
-2. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+2. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 3. 在 " **添加新项** " 对话框中，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 

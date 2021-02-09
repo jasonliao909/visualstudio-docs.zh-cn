@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6aaaa155-6ce0-4f7f-aa50-8d63d7a7c992
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f3febc5a47288225d1780ba4579dad243c1ea45
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cbd0d6ee6ede29be35437125f614512ff3bbeab3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671267"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915188"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素 (Visual Studio 项目模板) 
 指定是否为项目模板启用、禁用或隐藏 "**新项目**" 对话框中的 "**位置**" 文本框。
@@ -61,8 +61,8 @@ ms.locfileid: "94671267"
 
 - `Hidden`，它指定 "**新建项目**" 对话框的 "**位置**" 框处于隐藏状态。
 
-## <a name="remarks"></a>注解
- 默认值为 `Enabled`。
+## <a name="remarks"></a>备注
+ 默认值是 `Enabled`。
 
  通过 "**新建项目**" 对话框中的 "**位置**" 文本框，用户可以更改保存新项目的默认目录。
 

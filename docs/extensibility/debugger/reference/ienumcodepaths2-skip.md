@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 356472d8-68b2-4b7e-b5f0-1f16d4ee80af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c552e57c43b5abc1a41ecd468747b4ce32241a6f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 75b5e75362330def308bc3b0b836d22807aea66a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717749"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912723"
 ---
 # <a name="ienumcodepaths2skip"></a>IEnumCodePaths2::Skip
 跳过指定数目的元素。
@@ -39,7 +39,7 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celt`\
 中要跳过的元素数。
 
