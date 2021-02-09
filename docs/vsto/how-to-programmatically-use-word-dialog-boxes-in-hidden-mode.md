@@ -14,15 +14,15 @@ helpviewer_keywords:
 - dialog boxes, hidden mode in Word
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 263041fe15f07e8041bb771a6f3abd8b3311b0f2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0977e7241920ad23a6248bb2349ddaeb10a5e931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931235"
 ---
 # <a name="how-to-programmatically-use-word-dialog-boxes-in-hidden-mode"></a>如何：以编程方式在隐藏模式下使用 Word 对话框
   您可以通过调用 Microsoft Office Word 中的内置对话框而不向用户显示这些对话框，使用一个方法调用执行复杂的操作。 可以通过使用 <xref:Microsoft.Office.Interop.Word.Dialog.Execute%2A> 对象的方法 <xref:Microsoft.Office.Interop.Word.Dialog> 而不调用方法来执行此操作 <xref:Microsoft.Office.Interop.Word.Dialog.Display%2A> 。

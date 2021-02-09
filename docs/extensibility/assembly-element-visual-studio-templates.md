@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4115e999cc061be53ba437a090f207046f71ef8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d7891687a76d0023b54be2c44c3b5fc09c97f010
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932790"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Visual Studio 模板 (Assembly 元素) 
 指定有关程序集的信息，模板使用该程序集将该程序集的引用添加到项目。
@@ -58,7 +58,7 @@ ms.locfileid: "94671641"
 
  此文本指定在实例化项模板时要添加到项目的程序集。 必须通过以下方式之一指定此程序集名称：
 
-- 作为完整的程序集名称。 例如：
+- 作为完整的程序集名称。 例如： 。
 
     ```
     <Assembly>
@@ -75,7 +75,7 @@ ms.locfileid: "94671641"
 ## <a name="remarks"></a>备注
  `Assembly` 是 `Reference` 的必需子元素。
 
- `Reference` `References,` `Assembly` *.vstemplate* 只有 `Type` 属性值为的 .vstemplate 文件中才能使用、和元素 `Item` 。
+ `Reference` `References,` `Assembly` 只有 `Type` 属性值为的 .vstemplate 文件中才能使用、和元素 `Item` 。
 
 ## <a name="example"></a>示例
  下面的示例演示 `TemplateContent` 项模板的元素。 此 XML 添加对 *System.dll* 和 *System.Data.dll* 程序集的引用。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], printing Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 46babb5c989f647706bcbe87412adcdeeb0476d7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: df2cd5137f05caaf7b8437fb2d903aeecc7d3e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523781"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933032"
 ---
 # <a name="how-to-programmatically-print-visio-documents"></a>如何：以编程方式打印 Visio 文档
   你可以打印完整的 Microsoft Office Visio 文档或仅打印某一特定页。

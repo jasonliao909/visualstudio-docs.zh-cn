@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8407d3df-d38a-4328-82d1-98084bef43ec
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08f366162f4031b9cc7aa651bf9eca7aab55a15a
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f11be641cb77b6b27b735b7a4f66d45e11d7a193
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914330"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930676"
 ---
 # <a name="change-the-value-of-a-local"></a>更改本地的值
 > [!IMPORTANT]
@@ -44,7 +44,7 @@ ms.locfileid: "96914330"
 
    此过程还用于更改 " **监视** " 窗口中变量的值，只不过它是 `IDebugProperty2` 与使用的本地值（而不是 `IDebugProperty2` 与本地关联的对象关联）关联的对象。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [更改值的示例实现](../../extensibility/debugger/sample-implementation-of-changing-values.md) 使用 MyCEE 示例来逐步完成更改值的过程。
 
 ## <a name="see-also"></a>另请参阅

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88adaad3092e084841c40b5e04d45f94985a2ee8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: b00e0529c1d2ac7224881067628618251ba03898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930507"
 ---
 # <a name="control-of-execution"></a>控制执行
 调试引擎 (DE) 通常会将以下事件之一作为上一个启动事件发送：
@@ -59,7 +59,7 @@ ms.locfileid: "96913875"
 
    如果调试包要忽略特定的停止事件，则调试包将调用 SDM，这将调用 [IDebugProgram2：： Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)。 如果程序在遇到停止条件时进入、锁定或跳出某个函数，则会继续执行此步骤。 这意味着程序将保留单步执行状态，以便它知道如何继续。
 
-   SDM 进行的调用（即 `Step` **Execute** 和 **Continue** ）是异步的，这意味着 sdm 需要调用快速返回。 如果在执行、执行或继续返回之前，取消在同一线程上向 SDM 发送停止事件， `Step` 则 sdm 将停止响应。 **Execute** **Continue**
+   SDM 进行的调用（即 `Step` **Execute** 和 **Continue** ）是异步的，这意味着 sdm 需要调用快速返回。 如果在执行、执行或继续返回之前，取消在同一线程上向 SDM 发送停止事件， `Step` 则 sdm 将停止响应。  
 
 ## <a name="see-also"></a>另请参阅
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)
