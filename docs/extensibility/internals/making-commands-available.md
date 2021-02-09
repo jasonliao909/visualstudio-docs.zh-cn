@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d17fd0b63438183b10b1ecb0e5eb6abb9f5d7f46
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 4bb44fbb263bb12aba04c06f1248ae25aa9d546f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204529"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839540"
 ---
 # <a name="making-commands-available"></a>使命令可用
 
@@ -57,7 +57,7 @@ ms.locfileid: "98204529"
 
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 监视用户操作（例如加载项目或从编辑到生成）所产生的更改。 发生更改时，IDE 的外观会自动修改。 下表显示了监视器的四个主要的 IDE 更改上下文 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-| 上下文类型 | 描述 |
+| 上下文类型 | 说明 |
 |-------------------------| - |
 | 活动项目类型 | 对于大多数项目类型，此 `GUID` 值与实现项目的 VSPackage 的 GUID 相同。 但是， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目使用项目类型 `GUID` 作为值。 |
 | 活动窗口 | 通常，这是为键绑定建立当前 UI 上下文的最后一个活动文档窗口。 不过，它也可以是具有类似于内部 Web 浏览器的键绑定表的工具窗口。 对于多选项卡式文档窗口（如 HTML 编辑器），每个选项卡都有不同的命令上下文 `GUID` 。 |

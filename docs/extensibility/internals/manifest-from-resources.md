@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52eee4fa826d92e7de389627a3d7a2afddcc9156
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99839423"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest from Resources 工具是一个控制台应用程序，它获取) 的图像 ( 资源的列表，并生成一个 imagemanifest 文件，该文件允许将这些图像与 Visual Studio 映像服务一起使用。 此外，此工具可用于将图像添加到现有的 imagemanifest。 此工具可用于将图像的高 DPI 和主题支持添加到 Visual Studio 扩展。 生成的 imagemanifest 文件应包含在中，并部署为 Visual Studio 扩展 () 的一部分。
@@ -27,7 +27,7 @@ Manifest from Resources 工具是一个控制台应用程序，它获取) 的图
 
  **参数**
 
-|**交换机名称**|**备注**|**必需或可选**|
+|**交换机名称**|**备注**|**必需还是可选**|
 |-|-|-|
 |/resources|以分号分隔的图像或目录的列表。 此列表应始终包含清单中将包含的映像的完整列表。 如果只提供了部分列表，则不包含的项将丢失。<br /><br /> 如果给定的资源文件是图像条，则该工具会将其拆分为单独的映像，然后将每个 subimage 添加到清单中。<br /><br /> 如果图像是 .png 文件，我们建议您将此名称设置为如下格式，以便该工具可以填充图像的正确属性： \<Name> ... \<Width> \<Height>png.|必需|
 |/assembly|托管程序集的名称 (不包括扩展) ，或承载资源的本机程序集的运行时路径 (相对于清单的运行时位置) 。|必需|
@@ -50,7 +50,7 @@ Manifest from Resources 工具是一个控制台应用程序，它获取) 的图
 
 - ManifestFromResources/resources:D:\Images\Image1.png;D： \Images\Image1.xaml/assembly：/guidName： MyImages/newGuids/newIds
 
-## <a name="notes"></a>备注
+## <a name="notes"></a>说明
 
 - 该工具仅支持 .png 和 .xaml 文件。 任何其他图像或文件类型将被忽略。 对于分析资源时遇到的所有不支持的类型，将生成一个警告。 如果在工具完成对资源的分析后找不到支持的映像，则会生成错误
 
