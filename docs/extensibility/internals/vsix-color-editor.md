@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 70879c5d-e0f0-4845-993c-2f4229869706
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66cb163a1943df9deb27ab4fa691b71ee116735e
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 1bf699a5dcb7f14c2a0ac88943b94d9e65c86450
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488058"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900079"
 ---
 # <a name="vsix-color-editor"></a>VSIX 颜色编辑器
 Visual Studio 扩展颜色编辑器工具可为 Visual Studio 创建和编辑自定义颜色。 该工具还可以生成主题资源键，以便可以在代码中使用这些颜色。 此工具适用于为支持主题的 Visual Studio 扩展创建颜色。 此工具可以打开 .pkgdef 和 .xml 文件。 可以通过将文件扩展名更改为 .xml，将 visual Studio 主题 ( vstheme 文件) 可与 Visual Studio 扩展颜色编辑器一起使用。 此外，vstheme 文件可以导入到当前的 .xml 文件中。

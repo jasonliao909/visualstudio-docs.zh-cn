@@ -9,15 +9,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ecf972974ff2c84cb47cd93d944aced4758d1cb7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e12dcd1fcb9119aa65811fc149d86150a8b084e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899788"
 ---
 # <a name="share-models-and-exporting-diagrams"></a>共享模型和导出关系图
 在 Visual Studio 中，你可以通过多种方式与同事共享模型和关系图。
@@ -45,12 +45,12 @@ ms.locfileid: "97363739"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|描述|
+|Title|说明|
 |-|-|
 |[安排你的建模解决方案](../modeling/structure-your-modeling-solution.md)|共享大型或中型项目的模型。|
 |[将关系图导出为图像](../modeling/export-diagrams-as-images.md)|你可以将部分关系图复制到 PowerPoint 或 Word 等应用程序，或将关系图打印到 XPS 文件。|
 |[体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)|模型和关系图概述|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)

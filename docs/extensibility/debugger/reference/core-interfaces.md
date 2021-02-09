@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 666b9116-8550-4bdd-bc15-55fc57de87df
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf01ffceb122ad99d5ecca8fabfaa102a8fc505
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee2f44e5d75d44cfc1c903d462e7a1df360eeefa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899167"
 ---
 # <a name="core-interfaces"></a>核心接口
 下面的接口是用于通过使用扩展调试器的核心接口 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
@@ -23,7 +23,7 @@ ms.locfileid: "80737577"
 ## <a name="discussion"></a>讨论 (Discussion)
  这些接口主要用于创建 (DE) 的调试引擎。 它们按类别划分：
 
-- [“断点”](#Breakpoints)
+- [断点](#Breakpoints)
 
 - [上下文](#Contexts)
 
@@ -45,7 +45,7 @@ ms.locfileid: "80737577"
 
 - [进程](#Processes)
 
-- [计划](#Programs)
+- Programs 
 
 - [属性](#Properties)
 
@@ -303,6 +303,6 @@ ms.locfileid: "80737577"
 |[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)|EE|提供用于访问要传递给类型可视化工具的数据的方法。|
 |[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)|EE|表示一个属性，该属性提供对 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 实现的访问。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 - [创建自定义调试引擎](../../../extensibility/debugger/creating-a-custom-debug-engine.md)

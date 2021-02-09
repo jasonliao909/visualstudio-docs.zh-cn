@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <application> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 37ab88939b6a5a753f67621697a63903c5a35eb2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847034"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900918"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的应用程序元素 (Office 开发) 
   `application` 命名空间的 `vstav3` 元素包装 Office 解决方案的描述。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。
@@ -67,7 +67,7 @@ ms.locfileid: "96847034"
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>描述
+### <a name="description"></a>说明
  下面的代码示例演示使用 `application` 部署的文档级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。
 
 ### <a name="code"></a>代码
@@ -86,7 +86,7 @@ ms.locfileid: "96847034"
 
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
 
-### <a name="description"></a>描述
+### <a name="description"></a>说明
  以下代码示例演示使用 `application` 部署的应用程序级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。
 
 ### <a name="code"></a>代码

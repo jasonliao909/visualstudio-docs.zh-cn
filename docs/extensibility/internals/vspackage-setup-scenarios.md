@@ -8,15 +8,15 @@ helpviewer_keywords:
 - VSPackages, deployment considerations
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97538be6c174f76072a6ca006db6443aa3fcdb57
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 81e298229bb12d906a3061e0b547553518cce204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900003"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 
@@ -78,7 +78,7 @@ ms.locfileid: "97487967"
 
 有关部署并行程序集的详细信息，请参阅 [使用 .NET Framework 简化部署和解决 DLL Hell](/previous-versions/dotnet/articles/ms973843(v=msdn.10))。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [支持多个版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

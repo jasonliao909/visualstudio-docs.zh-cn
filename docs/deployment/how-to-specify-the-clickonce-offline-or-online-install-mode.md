@@ -17,20 +17,20 @@ helpviewer_keywords:
 ms.assetid: 0aee5fc1-e966-4bda-9b8f-d9997aeaa779
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5236d73bb965d4f25634ad9e61a52608c9030146
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 918cb7e60f4e3fed2beee024d51b94499b14b632
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900420"
 ---
 # <a name="how-to-specify-the-clickonce-offline-or-online-install-mode"></a>如何：指定 ClickOnce 脱机或联机安装模式
-`Install Mode` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的将确定应用程序是脱机还是联机使用。 当你选择 **"应用程序只能联机使用** " 时，用户必须有权访问 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (网页或文件共享) 的发布位置，才能运行该应用程序。 当你选择 **"该应用程序也可以脱机使用** " 时，应用程序会将条目添加到 " **开始** " 菜单和 " **添加或删除程序** " 对话框中。当应用程序未连接时，用户可以运行该应用程序。
+`Install Mode` [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的将确定应用程序是脱机还是联机使用。 当你选择 **"应用程序只能联机使用**" 时，用户必须有权访问 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] (网页或文件共享) 的发布位置，才能运行该应用程序。 当你选择 **"该应用程序也可以脱机使用**" 时，应用程序会将条目添加到 " **开始** " 菜单和 " **添加或删除程序** " 对话框中。当应用程序未连接时，用户可以运行该应用程序。
 
-`Install Mode`可以在 " **项目设计器** " 的 " **发布** " 页上进行设置。
+`Install Mode`可以在 "**项目设计器**" 的 "**发布**" 页上进行设置。
 
 > [!NOTE]
 > `Install Mode`还可以使用发布向导设置。 有关详细信息，请参阅 [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
@@ -53,7 +53,7 @@ ms.locfileid: "94350928"
 
      安装后，应用程序会将条目添加到 " **开始** " 菜单和 "控制面板" 的 " **添加或删除程序** "。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)
 - [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)
 - [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)

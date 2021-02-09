@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: c66bf0a5-8c93-4e68-a224-3b29ac36fe4d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e9199bb720cb94bc949a04bd59d5d3b6527108ed
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: e7791308de670b209433708e69ec473780342858
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900626"
 ---
 # <a name="how-to-include-prerequisites-with-a-clickonce-application"></a>如何：将必备组件与 ClickOnce 应用程序包括在一起
 你必须先将必备软件的安装程序包下载到开发计算机上，然后才能使用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序分发这些软件。 发布应用程序并选择“从与我的应用程序相同的位置下载系统必备组件”时，如果安装程序包不在“包”文件夹中，则将发生错误。
@@ -51,5 +51,5 @@ ms.locfileid: "94351188"
 
     现在你可以将安装程序包与你的应用程序一起分发。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：将必备组件与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
