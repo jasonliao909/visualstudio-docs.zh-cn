@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a4fcf724a8ae1586354f620a68b32e9f281b545
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 1876e06348d60f8a960b352525fd72ad06795101
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931729"
 ---
 # <a name="how-to-localize-aspx-markup"></a>如何：本地化 ASPX 标记
   [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] ( .aspx) 页通常使用硬编码的字符串值。 若要对这些字符串进行本地化，请将其替换为引用本地化资源的表达式。
@@ -62,7 +62,7 @@ ms.locfileid: "96304661"
     </asp:Content>
     ```
 
-     to
+     设置为
 
     ```aspx-csharp
     <asp:Content ID="Main" ContentPlaceHolderID="PlaceHolderMain" runat="server">

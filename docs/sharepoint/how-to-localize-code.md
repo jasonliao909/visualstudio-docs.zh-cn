@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, localizing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2cbe38c55b92514954cc3487544fed89d68cc4dc
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e76b8cfb2e9fcb513905918bd4ae87524078f6c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304587"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931638"
 ---
 # <a name="how-to-localize-code"></a>如何：本地化代码
   未本地化代码使用硬编码的字符串值。 若要对代码字符串进行本地化，请将其替换为对的调用 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ，这是一个引用本地化资源的方法。

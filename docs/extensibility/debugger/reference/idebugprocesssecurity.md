@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 8a52ddca-bd99-49c0-9778-469dce7abd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c81cda3a27cfe1ef0fecfefc9bbb790d4d5217
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7c6807ff64d8acf44551fa12fcb79199d3817373
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933019"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` 由端口供应商实现，以警告附加到进程的用户不安全。
@@ -29,7 +29,7 @@ IDebugProcessSecurity : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IDebugProcessSecurity` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[GetUserName](../../../extensibility/debugger/reference/idebugprocesssecurity-getusername.md)|获取端口提供商提供的用户名。|
 |[QueryCanSafelyAttach](../../../extensibility/debugger/reference/idebugprocesssecurity-querycansafelyattach.md)|警告附加到调试过程的用户不安全。|
@@ -44,7 +44,7 @@ IDebugProcessSecurity : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [端口](../../../extensibility/debugger/ports.md)
 - [端口提供程序](../../../extensibility/debugger/port-suppliers.md)
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
