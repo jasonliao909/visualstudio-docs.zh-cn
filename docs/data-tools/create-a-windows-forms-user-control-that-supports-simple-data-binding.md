@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: b1488366-6dfb-454e-9751-f42fd3f3ddfb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4ba2010b33b1defa6ef7dcb601fde9417fa47f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 30f6d338b4e27677c14dfa4e5ff8793e67f4c6ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867108"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建支持简单数据绑定的 Windows 窗体用户控件
 
@@ -41,7 +41,7 @@ ms.locfileid: "94436740"
 
 在本演练中，你将学会如何执行以下任务：
 
-- 创建新的 **Windows 窗体应用程序** 。
+- 创建新的 **Windows 窗体应用程序**。
 
 - 将新的“用户控件”添加到项目中。
 
@@ -63,7 +63,7 @@ ms.locfileid: "94436740"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -75,15 +75,15 @@ ms.locfileid: "94436740"
 
 ## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-第一步是创建 **Windows 窗体应用程序** ：
+第一步是创建 **Windows 窗体应用程序**：
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **SimpleControlWalkthrough** ，然后选择 **"确定"** 。
+4. 将项目命名为 **SimpleControlWalkthrough**，然后选择 **"确定"**。
 
      创建“SimpleControlWalkthrough”项目并将其添加到“解决方案资源管理器”中。
 
@@ -124,7 +124,7 @@ ms.locfileid: "94436740"
 
 此步骤使用 " **数据源配置** 向导" 创建基于 `Customers` Northwind 示例数据库中的表的数据源。 你必须具有对 Northwind 示例数据库的访问权限，才能创建连接。 有关设置 Northwind 示例数据库的信息，请参阅 [如何：安装示例数据库](../data-tools/installing-database-systems-tools-and-samples.md)。
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源**"。
 
 2. 在 " **数据源** " 窗口中，选择 " **添加新数据源** " 以启动 " **数据源配置** 向导"。
 
@@ -138,13 +138,13 @@ ms.locfileid: "94436740"
 
 5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步**"。
 
 7. 在“选择数据库对象”页上，展开“表”节点。
 
 8. 选择 `Customers` 表，然后单击“完成”。
 
-     **NorthwindDataSet** 将添加到项目中，并且 `Customers` 该表会出现在 " **数据源** " 窗口中。
+     **NorthwindDataSet** 将添加到项目中，并且 `Customers` 该表会出现在 "**数据源**" 窗口中。
 
 ## <a name="set-the-phone-column-to-use-the-phonenumberbox-control"></a>将 "电话" 列设置为使用 PhoneNumberBox 控件
 
@@ -170,7 +170,7 @@ ms.locfileid: "94436740"
 
 带有描述性标签的数据绑定控件将显示在窗体上，同时还显示一个工具条 (<xref:System.Windows.Forms.BindingNavigator>)，用于在记录间进行导航。 组件栏中显示[“NorthwindDataSet”](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-application"></a>运行应用程序
 
 按 **F5** 运行该应用程序。
 

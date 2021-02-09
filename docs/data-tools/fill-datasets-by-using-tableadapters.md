@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 55f3bfbe-db78-4486-add3-c62f49e6b9a0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e6a10eb996acbdbf5411688860ce2ec8b00da1f6
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436454"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866900"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -54,7 +54,7 @@ Tableadapter 是由设计器生成的组件，用于连接到数据库、运行�
 
 ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
-尽管 Tableadapter 是用 **数据集设计器** 设计的，但 TableAdapter 类不会生成为的嵌套类  <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的不同命名空间中。 例如，如果你有一个名为的数据集 `NorthwindDataSet` ，则与中的关联的 tableadapter 将  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定 TableAdapter，必须声明 TableAdapter 的新实例。 例如：
+尽管 Tableadapter 是用 **数据集设计器** 设计的，但 TableAdapter 类不会生成为的嵌套类  <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的不同命名空间中。 例如，如果你有一个名为的数据集 `NorthwindDataSet` ，则与中的关联的 tableadapter 将  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定 TableAdapter，必须声明 TableAdapter 的新实例。 例如： 。
 
 [!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
 [!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
@@ -83,11 +83,11 @@ Tableadapter 可包含多个查询来填充关联的数据表。 您可以根据
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter 继承
 
-Tableadapter 通过封装配置的类来扩展标准数据适配器的功能 <xref:System.Data.Common.DataAdapter> 。 默认情况下，TableAdapter 从类继承 <xref:System.ComponentModel.Component> ，不能转换为 <xref:System.Data.Common.DataAdapter> 类。 将 TableAdapter 转换为 <xref:System.Data.Common.DataAdapter> 类会导致 <xref:System.InvalidCastException> 错误。 若要更改 TableAdapter 的基类，可以指定从 <xref:System.ComponentModel.Component> **数据集设计器** 中的 Tableadapter 的 " **基类** " 属性派生的类。
+Tableadapter 通过封装配置的类来扩展标准数据适配器的功能 <xref:System.Data.Common.DataAdapter> 。 默认情况下，TableAdapter 从类继承 <xref:System.ComponentModel.Component> ，不能转换为 <xref:System.Data.Common.DataAdapter> 类。 将 TableAdapter 转换为 <xref:System.Data.Common.DataAdapter> 类会导致 <xref:System.InvalidCastException> 错误。 若要更改 TableAdapter 的基类，可以指定从 <xref:System.ComponentModel.Component> **数据集设计器** 中的 Tableadapter 的 "**基类**" 属性派生的类。
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和属性
 
-TableAdapter 类不是 .NET 类型。 这意味着不能在文档或 **对象浏览器** 中查找。 它在设计时使用前面提到的向导之一创建。 根据所使用的表的名称，在创建时分配给 TableAdapter 的名称。 例如，基于名为的数据库中的表创建 TableAdapter 时 `Orders` ，tableadapter 的名称为 `OrdersTableAdapter` 。 可以使用 **数据集设计器** 中的 " **名称** " 属性更改 TableAdapter 的类名。
+TableAdapter 类不是 .NET 类型。 这意味着不能在文档或 **对象浏览器** 中查找。 它在设计时使用前面提到的向导之一创建。 根据所使用的表的名称，在创建时分配给 TableAdapter 的名称。 例如，基于名为的数据库中的表创建 TableAdapter 时 `Orders` ，tableadapter 的名称为 `OrdersTableAdapter` 。 可以使用 **数据集设计器** 中的 "**名称**" 属性更改 TableAdapter 的类名。
 
 下面是 Tableadapter 的常用方法和属性：
 
@@ -112,7 +112,7 @@ Tableadapter 使用数据命令从数据库中读取和写入数据。 使用 Ta
 
 除了 `InsertCommand` 、和以外 `UpdateCommand` ，还 `DeleteCommand` 可以通过对数据库直接运行的方法创建 tableadapter。 可以直接调用这些方法 (`TableAdapter.Insert` 、 `TableAdapter.Update` 和 `TableAdapter.Delete`) ，以操作数据库中的数据。 这意味着你可以从代码中调用这些单独的方法，而不是调用 `TableAdapter.Update` 来处理为关联数据表挂起的插入、更新和删除操作。
 
-如果不想创建这些直接方法，请在 "属性" 窗口中将 TableAdapter 的 **GenerateDbDirectMethods** 属性设置为 `false` () 。 **Properties** 添加到 TableAdapter 的其他查询是独立查询，它们不会生成这些方法。
+如果不想创建这些直接方法，请在 "属性" 窗口中将 TableAdapter 的 **GenerateDbDirectMethods** 属性设置为 `false` () 。  添加到 TableAdapter 的其他查询是独立查询，它们不会生成这些方法。
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 支持可以为 null 的类型
 
@@ -133,7 +133,7 @@ TableAdapterManager 类不是 .NET 类型。 因此，您不能在文档中查�
 |`UpdateAll` 方法|保存所有数据表中的所有数据。|
 |`BackUpDataSetBeforeUpdate` 属性|确定在执行方法之前是否创建数据集的备份副本 `TableAdapterManager.UpdateAll` 。变量.|
 |*tableName* `TableAdapter` 知识产权|表示 TableAdapter。 生成的 TableAdapterManager 包含其管理的每个属性的属性 `TableAdapter` 。 例如，具有 Customers 和 Orders 表的数据集将生成包含和属性的 TableAdapterManager `CustomersTableAdapter` `OrdersTableAdapter` 。|
-|`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete** 。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
+|`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete**。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
 
 ## <a name="security"></a>安全性
 

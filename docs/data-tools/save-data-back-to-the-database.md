@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: afe6cb8a-dc6a-428b-b07b-903ac02c890b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 77f6a837fcc88c7154978e8031b17febaa0fcd39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: bdbfba867fd1fa898ff376d3d1e60f33f58c32a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866588"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 

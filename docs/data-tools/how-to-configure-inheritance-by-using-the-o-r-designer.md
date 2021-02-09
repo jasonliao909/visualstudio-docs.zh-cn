@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4bc36bca3cc5bd13b3dcfad5ebed66eca7eeb019
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436328"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866822"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：通过 O/R 设计器配置继承
-**对象关系设计器** ( **O/R 设计器** ) 支持单表继承的概念，因为它通常在关系系统中实现。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
+**对象关系设计器** (**O/R 设计器**) 支持单表继承的概念，因为它通常在关系系统中实现。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
 
 例如，请考虑一个 `Persons` 表，其中包含公司所采用的所有人。 一些人是员工，一些人是经理。 `Persons`表中包含一个名为的列 `EmployeeType` ，其值为1（对于经理），值为2表示员工; 这是鉴别器列。 在此应用场景中，可以创建一个员工子类，并仅使用 `EmployeeType` 值为 2 的记录来填充该类。 还可以从每个类中移除不适用的列。
 
@@ -26,7 +26,7 @@ ms.locfileid: "94436328"
 
 ## <a name="to-create-inherited-data-classes"></a>创建继承的数据类
 
-1. 通过将 **LINQ to SQL 类** 项添加到现有 Visual Basic 或 c # 项目中，打开 **O/R 设计器** 。
+1. 通过将 **LINQ to SQL 类** 项添加到现有 Visual Basic 或 c # 项目中，打开 **O/R 设计器**。
 
 2. 将要用作基类的表拖到 **O/R 设计器** 上。
 

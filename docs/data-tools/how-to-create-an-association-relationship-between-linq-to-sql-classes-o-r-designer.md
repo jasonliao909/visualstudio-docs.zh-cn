@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 56133e65-81f3-44c3-bc28-ffdd0671a0d2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 96932dca3d7f8799c316e05dc36c3f38a0e8110f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a4a13de7c6d9f9627332852be26356f26109c92d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866835"
 ---
 # <a name="how-to-create-an-association-between-linq-to-sql-classes-or-designer"></a>如何：在 LINQ to SQL 类之间创建关联 (O/R 设计器) 
 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 中实体类之间的关联类似于数据库中表之间的关系。 可以使用“关联编辑器”对话框创建实体类之间的关联。
@@ -23,7 +23,7 @@ ms.locfileid: "94436315"
 使用“关联编辑器”对话框创建关联时，必须选择父类和子类。 父类是包含主键的实体类；子类是包含外键的实体类。 例如，如果创建了映射到和表的实体类 `Northwind Customers` `Orders` ，则类将 `Customer` 成为父类， `Order` 类将为子类。
 
 > [!NOTE]
-> 将表从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **对象关系设计器** ( **O/R 设计器** ) 时，将根据数据库中的现有外键关系自动创建关联。
+> 将表从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **对象关系设计器** (**O/R 设计器**) 时，将根据数据库中的现有外键关系自动创建关联。
 
 ## <a name="association-properties"></a>关联属性
 创建关联后，在 O/R 设计器中选择该关联时，“属性”窗口中将有一些可配置属性。  (关联是相关类之间的连线。 ) 下表提供关联的属性的说明。
@@ -31,7 +31,7 @@ ms.locfileid: "94436315"
 |属性|说明|
 |--------------|-----------------|
 |**基数**|控制关联是一对多关系还是一对一关系。|
-|**子属性**|指定是否在父类上创建一个属性，作为关联关系外键一方上的子记录的集合或对这些子记录的引用。 例如，在和之间的关联中， `Customer` `Order` 如果 **子属性** 设置为 **True** ，则 `Orders` 会在父类上创建一个名为的属性。|
+|**子属性**|指定是否在父类上创建一个属性，作为关联关系外键一方上的子记录的集合或对这些子记录的引用。 例如，在和之间的关联中， `Customer` `Order` 如果 **子属性** 设置为 **True**，则 `Orders` 会在父类上创建一个名为的属性。|
 |**Parent 属性**|子类上引用关联父类的属性。 例如，在和之间的关联中，在 `Customer` `Order` 类上创建一个名为的属性，该属性 `Customer` 引用订单的关联客户 `Order` 。|
 |**参与的属性**|显示关联属性，并提供一个省略号按钮 (...)，该按钮可重新打开“关联编辑器”对话框。|
 |**唯一**|指定外目标列是否具有唯一性约束。|

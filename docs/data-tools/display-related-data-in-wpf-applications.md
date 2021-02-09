@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 3aa80194-0191-474d-9d28-5ec05654b426
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a9604ac7c0083bc40edb17b19d4de608eb7366b1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 3467b2a3c4f49b22ab36b44ff0d3ea47d143e971
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866952"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 
@@ -53,7 +53,7 @@ ms.locfileid: "94436493"
 
      Visual Studio 将生成 XAML，为拖动的每个项创建新的数据绑定控件。 XAML 还会将 <xref:System.Windows.Data.CollectionViewSource> 子表或对象的新添加到拖放目标的资源。 此新 <xref:System.Windows.Data.CollectionViewSource> 绑定到刚拖到设计器中的父表或对象的属性。 对于某些数据源，Visual Studio 还会生成代码，以便将数据加载到子表或对象。
 
-     下图演示了 " **数据源** " 窗口中的数据集的 " **Customers** " 表的相关 " **Orders** " 表。
+     下图演示了 "**数据源**" 窗口中的数据集的 " **Customers** " 表的相关 " **Orders** " 表。
 
      ![显示关系的数据源窗口](../data-tools/media/datasources2.gif)
 

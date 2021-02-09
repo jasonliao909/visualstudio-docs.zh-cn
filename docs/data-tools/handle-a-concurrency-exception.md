@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5fcd8bb06cf9c88466b4dfa3cfaf2dfd8093bd3d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c410d9290b7e377654a9cff87f8df7524a1b7149
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866874"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 
@@ -41,7 +41,7 @@ ms.locfileid: "94436441"
 
 4. 使用 Northwind 数据库的 Customers 表中的数据填充数据集。
 
-5. 使用 **服务器资源管理器** 中的 " **显示表数据** " 功能可访问客户表的数据和更改记录。
+5. 使用 **服务器资源管理器** 中的 "**显示表数据**" 功能可访问客户表的数据和更改记录。
 
 6. 将相同的记录更改为其他值，更新数据集，并尝试将更改写入数据库，这将导致引发并发错误。
 
@@ -55,7 +55,7 @@ ms.locfileid: "94436441"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -71,34 +71,34 @@ ms.locfileid: "94436441"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **ConcurrencyWalkthrough** ，然后选择 **"确定"** 。
+4. 将项目命名为 **ConcurrencyWalkthrough**，然后选择 **"确定"**。
 
-     将创建 **ConcurrencyWalkthrough** 项目并将其添加到 **解决方案资源管理器** ，并在设计器中打开新窗体。
+     将创建 **ConcurrencyWalkthrough** 项目并将其添加到 **解决方案资源管理器**，并在设计器中打开新窗体。
 
 ## <a name="create-the-northwind-dataset"></a>创建 Northwind 数据集
 
 接下来，创建一个名为 **NorthwindDataSet** 的数据集：
 
-1. 在 " **数据** " 菜单上，选择 " **添加新数据源** "。
+1. 在 " **数据** " 菜单上，选择 " **添加新数据源**"。
 
    “数据源配置”向导随即打开。
 
-2. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库** "。
+2. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库**"。
 
    ![Visual Studio 中的数据源配置向导](media/data-source-configuration-wizard.png)
 
-3. 从可用连接的列表中选择与 Northwind 示例数据库的连接。 如果连接列表中的连接不可用，请选择 " **新建连接** "。
+3. 从可用连接的列表中选择与 Northwind 示例数据库的连接。 如果连接列表中的连接不可用，请选择 " **新建连接**"。
 
     > [!NOTE]
     > 如果要连接到本地数据库文件，请在询问是否要将文件添加到项目时，选择 " **否** "。
 
-4. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步** "。
+4. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步**"。
 
-5. 展开 " **表** " 节点，然后选择 " **Customers** " 表。 数据集的默认名称应为 **NorthwindDataSet** 。
+5. 展开 " **表** " 节点，然后选择 " **Customers** " 表。 数据集的默认名称应为 **NorthwindDataSet**。
 
 6. 选择 " **完成** " 将数据集添加到项目。
 
@@ -106,7 +106,7 @@ ms.locfileid: "94436441"
 
 在本部分中，将 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 通过将 " **客户** " 项从 " **数据源** " 窗口拖到 Windows 窗体来创建。
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上，选择 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上，选择 " **显示数据源**"。
 
 2. 在 " **数据源** " 窗口中，展开 " **NorthwindDataSet** " 节点，然后选择 " **Customers** " 表。
 
@@ -178,7 +178,7 @@ ms.locfileid: "94436441"
 
 ### <a name="process-the-users-response"></a>处理用户的响应
 
-还需要代码来处理用户对消息框的响应。 这些选项可以用建议的更改覆盖数据库中的当前记录，也可以放弃本地更改并刷新包含数据库中当前记录的数据表。 如果用户选择 **"是"** ，则 <xref:System.Data.DataTable.Merge%2A> 会调用方法，并将 *preserveChanges* 参数设置为 **true** 。 这会导致更新尝试成功，因为原始版本的记录现在与数据库中的记录匹配。
+还需要代码来处理用户对消息框的响应。 这些选项可以用建议的更改覆盖数据库中的当前记录，也可以放弃本地更改并刷新包含数据库中当前记录的数据表。 如果用户选择 **"是"**，则 <xref:System.Data.DataTable.Merge%2A> 会调用方法，并将 *preserveChanges* 参数设置为 **true**。 这会导致更新尝试成功，因为原始版本的记录现在与数据库中的记录匹配。
 
 在上一部分中添加的代码下面添加以下代码：
 
@@ -197,16 +197,16 @@ ms.locfileid: "94436441"
 
 4. 在 **服务器资源管理器** 中，展开应用程序正在使用的连接，然后展开 " **表** " 节点。
 
-5. 右键单击 **Customers** 表，然后选择 " **显示表数据** "。
+5. 右键单击 **Customers** 表，然后选择 " **显示表数据**"。
 
-6. 在第一条记录 ( **ALFKI** ) 中，将 " **联系人姓名** " 改为 " **Maria Anders2** "。
+6. 在第一条记录 (**ALFKI**) 中，将 " **联系人姓名** " 改为 " **Maria Anders2**"。
 
     > [!NOTE]
     > 导航到不同的行以提交更改。
 
 7. 切换到 ConcurrencyWalkthrough 的运行形式。
 
-8. 在表单 ( **ALFKI** ) 的第一条记录中，将 " **联系人姓名** " 改为 " **Maria Anders1** "。
+8. 在表单 (**ALFKI**) 的第一条记录中，将 " **联系人姓名** " 改为 " **Maria Anders1**"。
 
 9. 选择“保存”按钮。
 

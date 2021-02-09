@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 03ff1146-706e-4780-91cb-56a83df63eea
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cac9f27263fc7d316d308f1f8d906751f419f104
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1aba3b1f00ce65b90f61077673a0b88a3bab0f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866133"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练：自定义实体类的插入、更新和删除行为
 
@@ -87,7 +87,7 @@ ms.locfileid: "94997922"
 
 5. 单击“LINQ to SQL 类”模板，然后在“名称”框中键入 Northwind.dbml。
 
-6. 单击“添加”。
+6. 单击 **添加**。
 
      将向项目中添加一个空的 LINQ to SQL 类文件 (**Northwind**) ，并打开 **O/R 设计器** 。
 

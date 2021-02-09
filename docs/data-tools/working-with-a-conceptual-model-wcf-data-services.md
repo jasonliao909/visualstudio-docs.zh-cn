@@ -1,6 +1,6 @@
 ---
 title: 使用概念模型（WCF 数据服务）
-description: 使用 WCF 数据服务中的概念模型。 通过对象查询数据，而不是在数据库架构和对象模型之间来回转换。
+description: 使用 WCF Data Services 中的概念模型。 通过对象查询数据，而不是在数据库架构和对象模型之间来回转换。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 ms.assetid: 2cd873cf-b010-49f2-a278-bb1277aaa934
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2aa79ca10729b9c36437fe30072328838de5dda4
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ef5745f974848da75b4dcc0c42b59b38aa61cd0b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94997870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866107"
 ---
-# <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用 WCF 数据服务的概念模型 () 
+# <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用 WCF Data Services 的概念模型 () 
 
 当您使用概念模型来描述数据库中的数据时，您可以通过对象查询数据，而不必在数据库架构和对象模型之间来回转换。
 
@@ -49,5 +49,5 @@ ms.locfileid: "94997870"
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Visual Studio 中 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [查询数据服务](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

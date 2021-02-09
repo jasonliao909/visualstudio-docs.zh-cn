@@ -7,21 +7,21 @@ ms.topic: error-reference
 ms.assetid: 487dafe4-d57c-4be1-9e3a-bb0a8699b2fa
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f83462328897a8a02b068507d0fa6903bad49367
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 244fbcc21c062c50b2f61940a1b43cf17c22761f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434826"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866432"
 ---
 # <a name="the-designer-cannot-be-modified-while-debugging"></a>调试时无法修改设计器
 
 应用程序以调试模式运行时，如果试图对 O/R 设计器中的项进行修改，则会出现此消息。 应用程序以调试模式运行时，O/R 设计器是只读的。
 
-若要更正此错误，请在 " **调试** " 菜单中选择 " **停止调试** "。 应用程序停止调试，你可以在 **O/R 设计器** 中修改项。
+若要更正此错误，请在 "**调试**" 菜单中选择 "**停止调试**"。 应用程序停止调试，你可以在 **O/R 设计器** 中修改项。
 
 ## <a name="see-also"></a>另请参阅
 

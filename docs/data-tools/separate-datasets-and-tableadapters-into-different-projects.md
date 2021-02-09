@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f66a3940-6227-46af-a930-9177f425f4fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f039dc445acd9032a5fe6862e78e5c28ec67bf5d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9463fe0371ee3184fd78684e7fe0565820ab3bf0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435998"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866536"
 ---
 # <a name="separate-datasets-and-tableadapters-into-different-projects"></a>将数据集和 TableAdapter 分离到不同的项目中
 已对类型化的数据集进行了增强，以便可以将 [tableadapter](create-and-configure-tableadapters.md) 和 dataset 类生成到单独的项目中。 这使你能够快速分离应用程序层并生成 n 层数据应用程序。
@@ -26,18 +26,18 @@ ms.locfileid: "94435998"
 下面的过程介绍使用 **数据集设计器** 将数据集代码生成到与包含生成的 TableAdapter 代码的项目不同的项目中的过程。
 
 ## <a name="separate-datasets-and-tableadapters"></a>单独的数据集和 Tableadapter
-将数据集代码与 TableAdapter 代码分离时，包含数据集代码的项目必须位于当前解决方案中。 如果此项目不在当前解决方案中，则它将不会出现在 " **属性** " 窗口的 " **数据集项目** " 列表中。
+将数据集代码与 TableAdapter 代码分离时，包含数据集代码的项目必须位于当前解决方案中。 如果此项目不在当前解决方案中，则它将不会出现在 "**属性**" 窗口的 "**数据集项目**" 列表中。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 #### <a name="to-separate-the-dataset-into-a-different-project"></a>将数据集分隔到不同的项目中
 
-1. 打开包含数据集 ( *.xsd* 文件) 的解决方案。
+1. 打开包含数据集 (*.xsd* 文件) 的解决方案。
 
     > [!NOTE]
     > 如果解决方案不包含要将数据集代码分离到其中的项目，请创建项目，或者将现有项目添加到解决方案中。
 
-2. 双击 **解决方案资源管理器** 中)  ( *.xsd* 文件的类型化数据集，以便在 **数据集设计器** 中打开数据集。
+2. 双击 **解决方案资源管理器** 中)  (*.xsd* 文件的类型化数据集，以便在 **数据集设计器** 中打开数据集。
 
 3. 选择 **数据集设计器** 的空白区域。
 
@@ -54,10 +54,10 @@ ms.locfileid: "94435998"
 
      数据集代码生成到 **数据集项目** 属性中的选定项目，并且 **TableAdapter** 代码生成到当前项目中。
 
-默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs* ) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* 的文件 (或包含数据集代码的 *DatasetName.DataSet.Designer.cs* ) 。
+默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs*) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* 的文件 (或包含数据集代码的 *DatasetName.DataSet.Designer.cs*) 。
 
 > [!NOTE]
-> 若要查看生成的类文件，请选择数据集或 TableAdapter 项目。 然后，在 **解决方案资源管理器** 中，选择 " **显示所有文件** "。
+> 若要查看生成的类文件，请选择数据集或 TableAdapter 项目。 然后，在 **解决方案资源管理器** 中，选择 " **显示所有文件**"。
 
 ## <a name="see-also"></a>另请参阅
 

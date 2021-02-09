@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5915de290a84429878eccb4eae17821f8ac27f70
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866848"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储流程来执行更新、插入和删除操作（O/R 设计器）
 
@@ -58,10 +58,10 @@ ms.locfileid: "94436408"
     > [!NOTE]
     > 默认情况下，名称匹配时方法自变量映射到类属性。 如果更改的属性名称在表和实体类之间不再匹配，而设计器无法确定正确的映射，您可能需要选择等效的类属性进行映射。
 
-10. 单击“ **确定** ”或“ **应用** ”。
+10. 单击“**确定**”或“**应用**”。
 
     > [!NOTE]
-    > 只要在每次更改后单击 " **应用** "，就可以继续为每个类和行为组合配置行为。 如果在单击 " **应用** " 之前更改类或行为，则会出现一个警告对话框，并提供应用更改的机会。
+    > 只要在每次更改后单击 " **应用** "，就可以继续为每个类和行为组合配置行为。 如果在单击 " **应用**" 之前更改类或行为，则会出现一个警告对话框，并提供应用更改的机会。
 
 若要恢复为使用默认运行时更新逻辑，请单击“属性”窗口中“插入”、“更新”或“删除”命令旁边的省略号，然后在“配置行为”对话框中选择“使用运行时”。
 
