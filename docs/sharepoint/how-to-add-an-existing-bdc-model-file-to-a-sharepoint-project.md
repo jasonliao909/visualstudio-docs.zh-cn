@@ -17,15 +17,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], remove a model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce65f286c3de760ff74e5ef7239aac54d760f003
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: af0768b4834eb1cad3654b6d74ee8f02cf464245
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882669"
 ---
 # <a name="how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project"></a>如何：将现有 BDC 模型文件添加到 SharePoint 项目
   您可以使用 Visual Studio 自定义、打包和重新部署业务数据连接 (BDC) 模型，以便将模型文件 (*bdcm*) 添加到任何 SharePoint 场项目。 有关详细信息，请参阅[创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)。

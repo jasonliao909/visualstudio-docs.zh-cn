@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f18de66a524fbc652b8153c5b34b4464cda60f5
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 10fbc46ad66ec6265bac0a3f2fc7c9b2994915d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883618"
 ---
 # <a name="task-class---internal-members"></a>任务类-内部成员
 本文介绍 <xref:System.Threading.Tasks.Task?displayProperty=fullName> 可帮助你实现自定义调试器的类的内部成员。 有关此类的常规信息，请参阅 <xref:System.Threading.Tasks.Task> 参考文章。

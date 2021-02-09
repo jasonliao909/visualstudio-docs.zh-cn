@@ -14,15 +14,15 @@ helpviewer_keywords:
 - application page [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c862c1de3b0630b3a5144f821e6266c34a88a5db
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915656"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99882656"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：将应用程序页添加到工作流
   本演练演示如何将显示从工作流派生的数据的应用程序页添加到工作流项目中。 它基于主题 [演练：创建具有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)中所述的项目。
@@ -72,7 +72,7 @@ ms.locfileid: "96915656"
 
 #### <a name="to-add-an-application-page-to-the-project"></a>向项目添加应用程序页
 
-1. 选择 ExpenseReport 项目，然后在菜单栏上选择 "项目" " **Project**  >  **添加新项**"。
+1. 选择 ExpenseReport 项目，然后在菜单栏上选择 "项目" "   >  **添加新项**"。
 
 2. 在 " **模板** " 窗格中，选择 " **应用程序" 页** 模板，使用项目 **项 ("**) " 的默认名称，然后选择 " **添加** " 按钮。
 

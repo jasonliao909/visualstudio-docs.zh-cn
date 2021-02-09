@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: bb3d3322-0e5e-4dd5-b93a-24d5fbcd2ffd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2796b8537c0f94c02c91fddc73f6d913ba1b0c4c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6f2fa3bec68a40ca2157281205781900b6f4d050
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883345"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 Vspackage 可以将消息写入活动日志。 此功能对于在零售环境中调试 Vspackage 特别有用。
@@ -66,7 +66,7 @@ Vspackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 ## <a name="see-also"></a>另请参阅
 
-- [/Log (devenv.exe)](../ide/reference/log-devenv-exe.md)
+- [/Log ( # A0) ](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>
 - <xref:Microsoft.VisualStudio.Shell.Interop.__ACTIVITYLOG_ENTRYTYPE>
 - [VSPackages 故障排除](../extensibility/troubleshooting-vspackages.md)

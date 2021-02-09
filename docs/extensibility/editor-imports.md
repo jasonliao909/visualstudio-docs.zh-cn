@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4e3a128f0f2873ad1946788b34761aadd1e7021
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: aef66be9797967b8c551ad4d1674c0b7be7aad81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883475"
 ---
 # <a name="editor-imports"></a>编辑器导入
 你可以导入多个编辑器服务、工厂和代理，它们为你的扩展提供对核心编辑器的不同类型的访问。 例如，你可以导入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以便为你提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 给定内容类型的。  (此导航器可对文本缓冲区执行不同种类的搜索。 ) 
@@ -96,7 +96,7 @@ internal SVsServiceProvider ServiceProvider = null;
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|的 <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndent> <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|
 |<xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentationService>|通过对象获取自动缩进 <xref:Microsoft.VisualStudio.Text.Editor.ISmartIndentProvider> 。|
 |<xref:Microsoft.VisualStudio.Text.Editor.ITextEditorFactoryService>|管理的 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> 。|
-|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|一个 <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>。|
+|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedTextSourceFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource>。|
 |<xref:Microsoft.VisualStudio.Text.Formatting.IRtfBuilderService>|从一组快照范围生成 RTF 格式的文本。|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencerFactoryService>|<xref:Microsoft.VisualStudio.Text.Formatting.ITextAndAdornmentSequencer>的 <xref:Microsoft.VisualStudio.Text.Editor.ITextView> 。|
 |<xref:Microsoft.VisualStudio.Text.Formatting.ITextParagraphPropertiesFactoryService>|<xref:System.Windows.Media.TextFormatting.TextParagraphProperties>用于设置视图中的文本行格式的。|

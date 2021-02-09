@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 760cfd20-3c06-422c-9103-98bfa1f387f8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4feb477f8507bc3fe57e6db355538ab98ceeeaa
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 830324e708ff83fbcbbbdb98d261130e92c7ba00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995533"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883189"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
 `IDSymbol`元素包含表示菜单、组或命令的 GUID： id 对的 id。 GUID 来自父 `GuidSymbol` 元素。 `IDSymbol`元素具有一个 `name` 属性，该属性提供 ID 的友好名称，该名称包含在属性中 `value` 。
@@ -37,7 +37,7 @@ ms.locfileid: "96995533"
 |特性|说明|
 |---------------|-----------------|
 |name|必需。 ID 符号的名称。|
-|值|必需。 ID 符号的数字 ID 值。|
+|value|必需。 ID 符号的数字 ID 值。|
 
 ### <a name="child-elements"></a>子元素
  无。

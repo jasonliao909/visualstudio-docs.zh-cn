@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: a12d10d8-af49-482a-af77-e084fd07a47d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 463219218994c9ec1e0f8a5be6e43a0bfd3f5d49
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: d909e70f38800bdbeb873ad3fd9bff1d55132825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671254"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883423"
 ---
 # <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a> (Visual Studio 模板的 EnableLocationBrowseButton 元素) 
 指定 "**新建项目**" 对话框中的 "**浏览**" 按钮是否可用，以便用户可以轻松地修改保存新项目的默认目录。
@@ -55,7 +55,7 @@ ms.locfileid: "94671254"
 
  文本必须是 `true` 或 `false` ，指示是否在 "**新建项目**" 对话框中显示 "**浏览**" 按钮。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `EnableLocationBrowseButton` 是可选元素。 默认值为 `true` ，它显示 "**新建项目**" 对话框中的 "**浏览**" 按钮。
 
  在 " **新建项目** " 对话框中，" **位置** " 文本框指定用于保存新项目的目录。 " **浏览** " 按钮可帮助您通过显示 " **项目位置** " 对话框来修改此目录，该对话框使您可以轻松地导航到您的计算机上提供的不同目录，然后选择它作为新项目的保存目录。

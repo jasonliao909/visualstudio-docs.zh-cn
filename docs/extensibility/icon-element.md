@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ed5a4f64a2c80cfdc61b37a6a8bac72adc97a33
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: c4e68889ae6ea8396795137243cf732a9b028931
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993596"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883267"
 ---
 # <a name="icon-element"></a>Icon 元素
 图标标记的 guid 属性是定义的位图的 guid。 该 `id` 属性在位图条带中选择槽。 此元素为可选元素。 如果此元素不包含在 **guidOfficeIcon： msotcidNoIcon** ，则将隐式赋值。
