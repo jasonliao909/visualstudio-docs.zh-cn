@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], document common tasks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8a8b994ed88c6499d17cc0cf241e60a17f235b97
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527029"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920219"
 ---
 # <a name="work-with-documents"></a>使用文档
   本部分中的主题提供了如何使用 Microsoft Office Word 对象模型来处理 Office 项目中的文档的分步过程和代码示例。

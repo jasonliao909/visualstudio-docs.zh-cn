@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d6ce6f43-1409-4bf7-93cd-f3464ca23504
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6949b9b8a9168915c64bc6183f6b1391a1c79220
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 2c3861527a3b049f4c72803f9ef40fe7b4bf0778
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560030"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921242"
 ---
 # <a name="get-started-with-debugger-extensibility"></a>调试器扩展性入门
 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供在环境中创建和自定义用于调试程序的调试器组件所需的信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -36,7 +36,7 @@ ms.locfileid: "96560030"
 
 - ATL COM
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [扩展调试器的路线图](../../extensibility/debugger/roadmap-for-extending-the-debugger.md) 概述在您的产品中实现调试的过程，具体取决于您的编译器及其输出。
 
  [调试器组件](../../extensibility/debugger/debugger-components.md) 概述 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试组件，其中包括调试引擎 (DE) 、expression 计算器 (EE) 以及符号处理程序 (SH) 。

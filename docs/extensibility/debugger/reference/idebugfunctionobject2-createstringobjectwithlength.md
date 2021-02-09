@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 937d325f8637a3260121def189d472dcfb3e1309
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6dd46d7cc2d142b3c62ab7b1b2b9eb65b92d6754
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728469"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921038"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 创建一个具有指定长度的字符串对象。
@@ -42,7 +42,7 @@ int CreateStringObjectWithLength (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pcstrString`\
 中字符串对象的字符串值。
 

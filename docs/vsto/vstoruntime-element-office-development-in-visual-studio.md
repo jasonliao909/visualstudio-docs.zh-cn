@@ -12,15 +12,15 @@ helpviewer_keywords:
 - vstoRuntime element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffebff9e5cee8666d1b178fca09262ecd45c99b1
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921746"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 v 元素 (Office 开发) 
   `vstoRuntime` 命名空间的 `vstav3` 元素包含针对特定 Office 解决方案的受支持的 Visual Studio Tools for Office Runtime 版本。

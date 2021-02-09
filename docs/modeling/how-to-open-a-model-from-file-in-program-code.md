@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f854edc45724f0e1f3db5bda22cb6aa006d77e60
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99922670"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
 
@@ -22,7 +22,7 @@ ms.locfileid: "97363869"
 
 在 Visual Studio 扩展中，你可以使用 ModelBus 来实现此目的。 ModelBus 提供了用于引用模型或模型中的元素的标准机制，并用于查找模型（如果该模型已移动）。 有关详细信息，请参阅 [使用 Visual Studio 集成模型 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
-## <a name="target-framework"></a>目标框架
+## <a name="target-framework"></a>目标 Framework
 
 将应用程序项目的 **目标框架** 设置为 .NET Framework 4 或更高版本。
 
@@ -35,7 +35,7 @@ ms.locfileid: "97363869"
 > [!NOTE]
 > 目标框架不 **.NET Framework 4 客户端配置文件**。
 
-## <a name="references"></a>参考资料
+## <a name="references"></a>参考
 
 将这些引用添加到你的 Visual Studio 应用程序项目：
 

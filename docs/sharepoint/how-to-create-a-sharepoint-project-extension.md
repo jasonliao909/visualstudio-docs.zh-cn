@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ad8ee37cba6f6f85e480fc0fe3ccaef081cefae4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 88d2a7b411097bdf2a90ec04456bfc4419e31c30
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923338"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>如何：创建 SharePoint 项目扩展
   若要向在 Visual Studio 中打开的任何 SharePoint 项目添加功能，请创建项目扩展。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。

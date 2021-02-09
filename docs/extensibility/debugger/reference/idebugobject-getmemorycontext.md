@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6760a0d3-a898-4e81-b68f-c45c584b225b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 16427685765c1471fba3993743efc204cb99c367
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a2c7dbdace7c40ccba25cdce0306e6f0998489f4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726667"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920791"
 ---
 # <a name="idebugobjectgetmemorycontext"></a>IDebugObject::GetMemoryContext
 获取表示对象的值地址的内存上下文。
@@ -28,7 +28,7 @@ ms.locfileid: "80726667"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMemoryContext( 
+HRESULT GetMemoryContext( 
    IDebugMemoryContext2** pContext
 );
 ```
@@ -39,7 +39,7 @@ int GetMemoryContext(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pContext`\
 弄返回一个 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，该对象表示对象的值的地址。
 

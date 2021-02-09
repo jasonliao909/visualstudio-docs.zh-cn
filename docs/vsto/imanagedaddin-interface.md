@@ -9,15 +9,15 @@ helpviewer_keywords:
 - IManagedAddin interface
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b436d76164b1744cffe16593149f64d219d04bf1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85541123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920434"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 接口
   实现 IManagedAddin 接口可创建加载托管 VSTO 外接程序的组件。此接口已添加到 2007 Microsoft Office 系统中。
@@ -43,7 +43,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>方法
  下表列出了由 IManagedAddin 接口定义的方法。
 
-|名称|说明|
+|“属性”|说明|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|在 Microsoft Office 应用程序加载托管 VSTO 外接程序时调用。|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|在 Microsoft Office 应用程序即将卸载 VSTO 托管外接程序时调用。|
@@ -56,13 +56,13 @@ interface IManagedAddin : IUnknown
 
 1. 应用程序通过在以下注册表项下查找项来发现 VSTO 外接程序：
 
-    **HKEY_CURRENT_USER \Software\Microsoft\Office \\ *\<application name>* \Addins\\**
+    **HKEY_CURRENT_USER\Software\Microsoft\Office\\ *\<application name>* \Addins\\**
 
     此注册表项下的每一项都是 VSTO 外接程序的唯一 ID。 通常情况下，这是 VSTO 外接程序程序集的名称。
 
 2. 应用程序在每个 VSTO 外接程序的注册表项下查找 `Manifest` 项。
 
-    托管 VSTO 外接程序可以在 `Manifest` **HKEY_CURRENT_USER \software\microsoft\office \\ _\<application name>_ \Addins \\ _\<add-in ID>_ **下的条目中存储清单的完整路径。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
+    托管的 VSTO 外接程序可以将清单的完整路径存储在 `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \Addins \\ _\<add-in ID>_** 下的项中。 清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。
 
 3. 如果应用程序找到 `Manifest` 项，便会尝试加载托管 VSTO 外接程序加载程序组件。 应用程序通过尝试创建一个实现 IManagedAddin 接口的 COM 对象来实现此功能。
 

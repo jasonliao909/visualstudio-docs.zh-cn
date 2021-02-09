@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], tabs
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21fd7f17f7a990f95ce5c8b781e85807a10608c4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99921918"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：更改功能区上选项卡的位置
   您可以使用 " **Tab 集合编辑器**" 更改功能区上自定义选项卡的顺序。 可以在功能区上的内置选项卡之前或之后放置自定义选项卡。 内置选项卡是 Microsoft Office 应用程序的功能区上已经存在的选项卡。 例如，" **数据** " 选项卡是 Excel 中的内置选项卡。
@@ -58,7 +58,7 @@ ms.locfileid: "96846761"
 
      有关控件 Id 的列表，请参阅 [office 2010 帮助文件： office 熟知用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)
