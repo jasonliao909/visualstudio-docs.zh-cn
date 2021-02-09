@@ -12,15 +12,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], extending ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 61ed056b5cebcebb6fe2dffd66dc374e4e1f9205
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b3236a6303f25d8d24fe77c434a60d31aa572aa7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525738"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885438"
 ---
 # <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以编程方式在文档中扩展范围
   定义 Microsoft Office Word 文档中的 <xref:Microsoft.Office.Interop.Word.Range> 对象后，可以通过使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法来更改其起点和终点。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法采用相同的两个参数： *Unit* 和 *Count*。 *Count* 参数是要移动的单位数， *Unit* 参数可以是以下 <xref:Microsoft.Office.Interop.Word.WdUnits> 值之一：

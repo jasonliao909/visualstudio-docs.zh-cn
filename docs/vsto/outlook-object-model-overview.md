@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83ada85ba346e83e5bc5ebc01e91b11be0e844e1
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 316ead76be1f84fccc6f675b204587008e8a194a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885295"
 ---
 # <a name="outlook-object-model-overview"></a>Outlook 对象模型概述
   若要开发 Microsoft Office Outlook 的 VSTO 外接程序，可以与 Outlook 对象模型提供的对象进行交互。 Outlook 对象模型提供表示用户界面中的项的类和接口。 例如， <xref:Microsoft.Office.Interop.Outlook.Application> 对象表示整个应用程序， <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件或其他项的文件夹， <xref:Microsoft.Office.Interop.Outlook.MailItem> 对象表示电子邮件。
@@ -92,7 +92,7 @@ ms.locfileid: "97528050"
 ### <a name="folder-object"></a>Folder 对象
  <xref:Microsoft.Office.Interop.Outlook.Folder> 对象表示包含电子邮件、联系人、任务和其他项的文件夹。 Outlook 提供了 16 个默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象。
 
- 默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，应用于对象的
+ 默认的 <xref:Microsoft.Office.Interop.Outlook.Folder> 对象由 <xref:Microsoft.Office.Interop.Outlook.OlDefaultFolders> 枚举值定义。 例如，
 
  OlDefaultFolders olFolderInbox 对应于 Outlook 中的 **收件箱** 文件夹。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab43da108a8d4a3339c54973f60bf1bef6a74780
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884606"
 ---
 # <a name="contribute-to-the-automation-model"></a>参与自动化模型
 Visual Studio 提供了一组用于自定义环境的自动化接口。 自动化模型是使最终用户能够创建 Visual Studio 外接程序和扩展的对象模型。
@@ -26,7 +26,7 @@ Visual Studio 提供了一组用于自定义环境的自动化接口。 自动�
 
  为了使最终用户体验保持一致，你可以在设计 VSPackage 时遵循一组指导原则，以便 VSPackage 的自动化模型遵循中的观点 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [自动化模型概述](../../extensibility/internals/automation-model-overview.md)
 
  将自动化模型定义为一组相关对象，这些对象控制常见环境的主要方面。 此对象集在自动化模型的关系图中进行了图示。
@@ -67,5 +67,5 @@ Visual Studio 提供了一组用于自定义环境的自动化接口。 自动�
 
  提供有关 Configuration 和 SelectedItems 对象的自动化的信息。
 
-## <a name="reference"></a>参考
+## <a name="reference"></a>引用
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 提供一个代码示例，该示例演示 VSPackage 如何参与 DTE 自动化对象模型。 列出参数、返回值和所选的备注。

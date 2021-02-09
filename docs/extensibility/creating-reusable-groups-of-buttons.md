@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0c561617-fb86-476d-8bd1-c6e5e7464c65
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b9d1d8b985f7184ffdfbf083dc3f6b8ab03d894
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 62873d57da04f94ce1cdda16c5fe4801af5d19c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884918"
 ---
 # <a name="create-reusable-groups-of-buttons"></a>创建可重用的按钮组
 命令组是始终在菜单或工具栏上一起显示的命令的集合。 可以通过在 *.vsct* 文件的 CommandPlacements 节中将命令组分配给不同的父菜单来重新使用该命令组。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6beaf85000438846e5d440e48c9722b9660f9bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2cc320baf310af0ec2b4cdd84fabff951b2a9cb2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528070"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885282"
 ---
 # <a name="password-protection-on-office-documents"></a>Office 文档上的密码保护
   可以设置 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿的密码，使不知道密码的人无法打开这些工作簿。 此选项 **在 Open** 时称为 Password。

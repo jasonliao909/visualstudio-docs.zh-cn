@@ -15,15 +15,15 @@ helpviewer_keywords:
 - paragraphs, controlling structure
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 57e6f6ed2a71c026589d56088f94c8bf1a523ea2
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 898eae77928908dfc077ddf80d2659328ec6475d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885477"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以编程方式在创建范围时排除段落标记
   当你创建基于段落的 <xref:Microsoft.Office.Interop.Word.Range> 对象时，所有非打印字符（如段落标记）都将纳入范围。 可将源段落的文本插入到目标段落。 如果不希望将目标段落拆分为单独的段落，则必须先从源段落中删除段落标记。 此外，由于段落标记中存储着段落格式设置信息，所以当你将范围插入到现有段落时可能需要删除它。
