@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fcc4004542f9a566d6c6bfa820cbb8c2e1846fa
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899910"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管包框架 (MPF) 语言类实现中的语言服务 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 非常简单。 你需要一个 VSPackage 来托管语言服务、语言服务本身和语言分析器。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅 [Visual STUDIO SDK](../../extensibility/visual-studio-sdk.md)。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板的位置
@@ -132,5 +132,5 @@ ms.locfileid: "97487928"
 
      例如，键入 `public override` 可以查看可在该类中重写的所有方法的列表。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)

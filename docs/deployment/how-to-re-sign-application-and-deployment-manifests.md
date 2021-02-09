@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a17902451c931bd37a92158a3b5c3838ed91ed4
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900432"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：为应用程序和部署清单重新签名
 对 Windows 窗体应用程序的应用程序清单中的部署属性进行更改后，Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案，则必须使用证书对应用程序清单和部署清单进行重新签名。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。
@@ -69,7 +69,7 @@ ms.locfileid: "94351123"
     mage -update WpfBrowserApplication1.xbap -appmanifest WpfBrowserApplication1.exe.manifest -CertFile ..\WpfBrowserApplication1_TemporaryKey.pfx
     ```
 
-5. （可选）将主部署清单 ( *publish \\ \<appname>* ) 复制到版本部署目录 ( *publish\Application Files \\ \<appname> _ \<version>* ) 。
+5. （可选）将主部署清单 (*publish \\ \<appname>*) 复制到版本部署目录 (*publish\Application Files \\ \<appname> _ \<version>*) 。
 
 ## <a name="update-and-re-sign-the-application-and-deployment-manifests"></a>更新和重新签名应用程序和部署清单
  此过程假定你已对应用程序清单 *文件 ()* 进行了更改，但有其他已更新的文件。 更新文件后，还必须更新表示该文件的哈希。
@@ -112,9 +112,9 @@ ms.locfileid: "94351123"
 
 6. 将 *.deploy* 文件扩展名添加回文件（应用程序和部署清单文件除外）。
 
-7. （可选）将主部署清单 ( *publish \\ \<appname>* ) 复制到版本部署目录 ( *publish\Application Files \\ \<appname> _ \<version>* ) 。
+7. （可选）将主部署清单 (*publish \\ \<appname>*) 复制到版本部署目录 (*publish\Application Files \\ \<appname> _ \<version>*) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)

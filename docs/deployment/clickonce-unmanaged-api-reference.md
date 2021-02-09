@@ -27,15 +27,15 @@ helpviewer_keywords:
 ms.assetid: ec002138-4054-456d-bcc1-79ac2f4a4fd7
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b5ca8c18c0ed69080a14ba31d4da6d80fa9ae6d4
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 88d8147dded05c6bec54682e76c6a8c1826b43e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382606"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900796"
 ---
 # <a name="clickonce-unmanaged-api-reference"></a>ClickOnce 非托管 API 参考
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] dfshim.dll 中的非托管公共 Api。
@@ -46,13 +46,13 @@ ms.locfileid: "94382606"
 ### <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回表示失败的 HRESULT。 如果发生托管异常，则返回 0x80020009 (DISP_E_EXCEPTION) 。
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>备注
  如果调用 CleanOnlineAppCache，将启动该 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 服务（如果尚未运行）。
 
 ## <a name="getdeploymentdatafrommanifest"></a>GetDeploymentDataFromManifest
  检索清单和激活 URL 中的部署信息。
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
 
 |参数|说明|类型|
 |---------------|-----------------|----------|
@@ -70,7 +70,7 @@ ms.locfileid: "94382606"
 ### <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回表示失败的 HRESULT。 如果缓冲区太小，则返回 HRESULTFROMWIN32 (ERROR_INSUFFICIENT_BUFFER) 。
 
-### <a name="remarks"></a>注解
+### <a name="remarks"></a>备注
  指针不能为 null。 `pcwzActivationUrl` 和 `pcwzPathToDeploymentManifest` 不得为空。
 
  调用方负责清理激活 URL。 例如，在需要时添加转义符或删除查询字符串。
@@ -80,7 +80,7 @@ ms.locfileid: "94382606"
 ## <a name="launchapplication"></a>LaunchApplication
  使用部署 URL 启动或安装应用程序。
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
 
 |参数|说明|类型|
 |---------------|-----------------|----------|
@@ -91,5 +91,5 @@ ms.locfileid: "94382606"
 ### <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回表示失败的 HRESULT。 如果发生托管异常，则返回 0x80020009 (DISP_E_EXCEPTION) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:System.Deployment.Application.DeploymentServiceCom.CleanOnlineAppCache%2A>

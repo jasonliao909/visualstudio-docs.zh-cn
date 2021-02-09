@@ -6,15 +6,15 @@ ms.date: 05/16/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9898b720e51c2750b67054d1f095200372f426da
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324f8fe7ee34f469d31ad1ce6cf6bd25ab97f225
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899826"
 ---
 # <a name="share-code-maps"></a>共享代码图
 
@@ -59,6 +59,6 @@ Visual Studio 将映射保存为 *.dgml* 文件，您可以与 Visual Studio Ent
 
 3. 对代码图命名。 请确保将 " **保存类型** " 框设置为 " **xps 文件 (.xps \*)**。 选择 **“保存”** 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [映射与代码图的依赖项](../modeling/map-dependencies-across-your-solutions.md)

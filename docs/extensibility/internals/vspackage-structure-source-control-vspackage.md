@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 92722be7-b397-48c3-a7a7-0b931a341961
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5850dfb2448364124c8f1778eac48ac9c653269
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 886ff7112a5e455bfc07e51b30f4ac60eb10136a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487954"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899949"
 ---
 # <a name="vspackage-structure-source-control-vspackage"></a>VSPackage 结构（源代码管理 VSPackage）
 
@@ -74,7 +74,7 @@ Visual Studio 中的每个项目都必须实现 <xref:Microsoft.VisualStudio.She
 
 有关源代码管理 VSPackage 必须考虑的接口的完整列表，请参阅 [相关服务和接口](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [设计元素](../../extensibility/internals/source-control-vspackage-design-elements.md)
 - [相关服务和接口](../../extensibility/internals/related-services-and-interfaces-source-control-vspackage.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 301b7a75-ecfa-46f1-9131-66cf3e4be147
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce15f389f22513e08b06c0d097cdac4aec3c35bf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b09fb8c644adb5464519f0f30bd8deff0be821ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720902"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900092"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 当要销毁与特定文档关联的属性时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

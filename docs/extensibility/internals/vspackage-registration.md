@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ecd20da8-b04b-4141-a8f4-a2ef91dd597a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c8294042bb61939a52f4053f5b27ae915e01df
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 5ed2dfccb47c980852bcdda423871f7517ef785a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487980"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900041"
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 Vspackage 必须建议 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 安装并加载它们。 此过程是通过在注册表中写入信息来完成的。 这是安装程序的典型作业。
@@ -57,6 +57,6 @@ Vspackage 必须建议 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.m
 
 - 如果某个组件同时指定为 "从源运行" 并在 SelfReg 表中列出，则可以拒绝自注册代码访问网络资源（例如类型库）。 这可能会导致在管理安装过程中组件安装失败。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [托管包注册](/previous-versions/bb166783(v=vs.100))

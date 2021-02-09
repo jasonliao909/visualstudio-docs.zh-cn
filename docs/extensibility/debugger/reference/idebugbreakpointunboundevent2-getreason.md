@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0f8a4fec-d3eb-417d-8516-4f7b51904033
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9830309f0a40aee37982554e8920a95d289eb74c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900221"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 获取取消绑定断点的原因。
@@ -39,7 +39,7 @@ int GetReason(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwUnboundReason`\
 弄从 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 枚举返回一个值，该值指定未绑定断点的原因。
 
@@ -50,7 +50,7 @@ int GetReason(
 原因包括在执行 "编辑并继续" 操作后要重新绑定到另一个位置的断点，或确定错误绑定了某个断点。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)接口的**CBreakpointUnboundDebugEventBase**对象实现此方法。
+下面的示例演示如何为公开 [IDebugBreakpointUnboundEvent2](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2.md)接口的 **CBreakpointUnboundDebugEventBase** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CBreakpointUnboundDebugEventBase::GetReason(

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6dc136b1c58f9c627787045b1259d07e27a6b8ad
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 43104ad8b26045056ca8d8d653fcb9625734f7eb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527865"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899434"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练：创建您的第一个 Word VSTO 外接程序
   本介绍性演练说明如何创建 Microsoft Office Word 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的文档无关。
@@ -64,7 +64,7 @@ ms.locfileid: "97527865"
 
 6. 在 " **名称** " 框中，键入 **FirstWordAddIn**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstWordAddIn** 项目，并在编辑器中打开 ThisAddIn 代码文件。
 

@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9849a326549aa534d9cd558337b825b7e0b8d1f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 58e7c255d767e9b35764e03a76f9cda516dbe606
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363635"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99899596"
 ---
 # <a name="t4-output-directive"></a>T4 输出指令
 
@@ -52,7 +52,7 @@ ms.locfileid: "97363635"
  可接受的值：任何有效的文件扩展名。
 
 ## <a name="encoding-attribute"></a>编码属性
- 指定生成输出文件时要使用的编码。 例如：
+ 指定生成输出文件时要使用的编码。 例如： 。
 
  `<#@ output encoding="utf-8"#>`
 

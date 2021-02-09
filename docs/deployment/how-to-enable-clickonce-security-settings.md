@@ -15,28 +15,28 @@ helpviewer_keywords:
 ms.assetid: 73cd3e9d-cd72-4ad2-8cae-94d6bb6b01e0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: db31d0182c598b32933cf2d4260706a2252a9b6f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 758aecc4f2bf280fd7ff5ca7ca482ee6a3e3d68d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99900648"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>如何：启用 ClickOnce 安全设置
 必须启用 ClickOnce 应用程序的代码访问安全性才能发布应用程序。 使用发布向导发布应用程序时，会自动执行此操作。
 
  在某些情况下，启用代码访问安全性会影响生成或调试应用程序时的性能;在这些情况下，你可能希望暂时禁用安全设置。
 
- 可以在 " **项目设计器** " 的 " **安全** " 页上启用或禁用 ClickOnce 安全设置。
+ 可以在 "**项目设计器**" 的 "**安全**" 页上启用或禁用 ClickOnce 安全设置。
 
 ### <a name="to-enable-clickonce-security-settings"></a>启用 ClickOnce 安全设置
 
 1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2. 单击“安全”选项卡。 
+2. 单击 **“安全”** 选项卡。
 
 3. 选中“启用 ClickOnce 安全设置”  复选框。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94351162"
 
 1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2. 单击“安全”选项卡。 
+2. 单击 **“安全”** 选项卡。
 
 3. 清除 " **启用 ClickOnce 安全设置** " 复选框。
 
@@ -58,6 +58,6 @@ ms.locfileid: "94351162"
     > [!NOTE]
     > 每次用发布向导发布应用程序时，都将选中此复选框;你必须在每次成功发布后再次将其清除。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0be8eed2dc41ad433c0e0514dfd34e3c6e3d7193
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: c70a3458a8f54cc4437e00517445917cf92f6aa1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970429"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901030"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>演练：部署项目任务列表定义
 
@@ -158,11 +158,11 @@ Visual Studio 将回收 IIS 应用程序池，收回解决方案的任何现有�
 
 5. 使用 PowerShell `Add-SPUserSolution` 命令在远程 SharePoint 安装上安装包。  (场解决方案，请使用 `Add-SPSolution` 命令。 ) 
 
-     例如 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
+     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp` 。
 
 6. 使用 PowerShell `Install-SPUserSolution` 命令来部署解决方案。  (场解决方案，请使用 `Install-SPSolution` 命令。 ) 
 
-     例如 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
+     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName` 。
 
      有关远程部署的详细信息，请参阅在 SharePoint 2010 中 [使用解决方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) 以及使用 [PowerShell 添加和部署解决方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
 
