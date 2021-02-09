@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc300ac83674b8faf2bd4c0fc6128f60c28ee92b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8fc6a37a327c26ec46777575c3976c227e2d1de9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881485"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>信息权限管理和托管代码扩展概述
   Microsoft Office Word 和 Microsoft Office Excel 提供 Rights Management (IRM) 的信息，这是一项功能，可帮助防止未经授权的人员查看或更改敏感信息。 有关信息 Rights Management 工作原理的详细信息，请参阅特定 Office 应用程序中的帮助。

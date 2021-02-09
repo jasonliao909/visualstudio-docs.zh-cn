@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9070fcfbf79fb96ecff87a793c221f3e7a65c2ae
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 736ef56a67247bac53f1f27f84c994a1bf117b9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80713290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880068"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 此结构表示物理地址。
@@ -44,7 +44,7 @@ public struct UNMANAGED_ADDRESS_PHYSICAL {
  物理地址空间的64位偏移量。
 
 ## <a name="remarks"></a>备注
- 当结构的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_UNMANAGED_PHYSICAL` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+ 当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_UNMANAGED_PHYSICAL` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
 
 ## <a name="requirements"></a>要求
  标头： sh。h

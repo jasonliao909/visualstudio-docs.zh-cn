@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0e46f765c8e4c0e12c3bb9447e0713919fae7b8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 959d909d0c777110905aff3b11c8c29d27d628dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731893"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880757"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 将此文档上下文与给定的文档上下文数组进行比较。
@@ -28,7 +28,7 @@ ms.locfileid: "80731893"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Compare( 
+HRESULT Compare( 
    DOCCONTEXT_COMPARE       compare,
    IDebugDocumentContext2** rgpDocContextSet,
    DWORD                    dwDocContextSetLen,
@@ -37,7 +37,7 @@ HRESULT Compare( 
 ```
 
 ```csharp
-int Compare( 
+int Compare( 
    enum_ DOCCONTEXT_COMPARE compare,
    IDebugDocumentContext2[] rgpDocContextSet,
    uint                     dwDocContextSetLen,
@@ -45,7 +45,7 @@ int Compare( 
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `compare`\
 中 [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) 枚举中的一个值，该值指定比较的类型。
 

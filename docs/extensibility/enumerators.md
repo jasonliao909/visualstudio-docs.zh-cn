@@ -9,20 +9,20 @@ helpviewer_keywords:
 ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e124ce3d36e2b23ef53c376b660de05cd87043
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 28de569ea19feff0a81a81d072575dfb89610e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995806"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880744"
 ---
 # <a name="enumerators"></a>枚举器
 本节列出源代码管理插件必须知道的源代码管理插件 API 中的枚举器数据类型。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [命令代码](../extensibility/command-code-enumerator.md) 枚举 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) 和 [SccPopulateList](../extensibility/sccpopulatelist-function.md) 函数的选项。
 
 - [消息](../extensibility/message-enumerator.md) 枚举用于打印回调的标志 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)。

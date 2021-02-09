@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 6d22fa94-21aa-46cb-b5b5-32a6399ebb20
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03cfb29cc54a2f0ab18bce3ec0761cfab62e20df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8a33626ad68dcac690ca288d4bc375679a4e3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880770"
 ---
 # <a name="idebugdocumentchecksum2"></a>IDebugDocumentChecksum2
 表示调试文档的校验和，并允许传递组件之间的校验和。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2af7f4dc01ee3a2fe3fb5026602a0b5d4f766b17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0609ef6d3cfea28f955815f5e7137d3e62d3e6af
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880796"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 获取文档的名称，格式为多个窗体中的一种。
@@ -28,20 +28,20 @@ ms.locfileid: "80731969"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetName( 
+HRESULT GetName( 
    GETNAME_TYPE gnType,
    BSTR*        pbstrFileName
 );
 ```
 
 ```csharp
-int GetName( 
+int GetName( 
    enum_GETNAME_TYPE gnType,
    out string        pbstrFileName
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `gnType`\
 中 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举中的一个值，该值确定要返回的名称的类型。
 

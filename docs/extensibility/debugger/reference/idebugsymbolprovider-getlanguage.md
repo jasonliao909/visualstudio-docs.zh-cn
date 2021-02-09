@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 876466d3617131815f6aa48b8b7dfb68b645ecb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 120434e44819d4c503336dffeaa1c255626270d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719241"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880224"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取在调试地址编译代码所用的语言。
@@ -28,7 +28,7 @@ ms.locfileid: "80719241"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetLanguage( 
+HRESULT GetLanguage( 
    IDebugAddress* pAddress,
    GUID*          pguidLanguage,
    GUID*          pguidLanguageVendor
@@ -43,7 +43,7 @@ int GetLanguage(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pAddress`\
 中由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示的地址对象。
 

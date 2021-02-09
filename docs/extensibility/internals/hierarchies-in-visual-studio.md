@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a7126f52517b1028cf878750294f1d4c7dbfe26
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 826ef8f7836aaea0b934bb2a7fa8f568492f0b1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880003"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 将项目显示为 *层次结构*。 在 IDE 中，层次结构是节点的树，其中每个节点都有一组关联的属性。 *项目层次结构* 是一个容器，用于保存项目的项、项的关系以及项的关联属性和命令。
@@ -34,7 +34,7 @@ ms.locfileid: "96480351"
 
  当用户在编辑器中打开某一项时，将选择控制该项的层次结构，并成为活动层次结构。 所选层次结构确定可对该项执行操作的命令集。 以这种方式跟踪用户焦点使层次结构能够反映用户的当前上下文。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [项目类型](../../extensibility/internals/project-types.md)
 - [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [VSSDK 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)

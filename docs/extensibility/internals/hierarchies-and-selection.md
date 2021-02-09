@@ -11,20 +11,20 @@ helpviewer_keywords:
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04f433e3da45e10d2b1721ac13254856489d2d0a
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 98f3dcfa73387f2b90ed829df198d3e9f0ccb2ed
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99880043"
 ---
 # <a name="hierarchies-and-selection"></a>层次结构和选择
 自定义时 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，应了解如何 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 处理项目的层次结构，以及如何使用选择上下文来确定向用户显示的内容。 本部分讨论 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 层次结构和选择的概念。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
 
  描述项目层次结构和层次结构的一般概念。
