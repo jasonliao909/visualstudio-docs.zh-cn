@@ -16,15 +16,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, workflow initiation forms
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62501a23695b81ee0437d3210dced7c81f9b054e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970443"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847734"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和启动窗体创建工作流
   本演练演示如何创建包含关联和初始窗体使用的基本顺序工作流。 这是一种 ASPX 窗体，当在工作流第一次与 SharePoint 管理员 (关联窗体) 时，以及当用户 (启动窗体) 启动工作流时，将参数添加到工作流。
@@ -84,7 +84,7 @@ ms.locfileid: "95970443"
 
 6. 在 **“解决方案资源管理器”** 中，选择项目节点。
 
-7. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+7. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 8. 在 " **Visual c #** " 或 " **Visual Basic** 下，展开" **SharePoint** "节点，然后选择" **2010** "节点。
 
@@ -107,7 +107,7 @@ ms.locfileid: "95970443"
 
 1. 在 **解决方案资源管理器** 中选择 " **workflow1.xaml** " 节点。
 
-2. 在菜单栏上，选择 **Project**  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
+2. 在菜单栏上，选择  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
 
 3. 在 "对话框" 树视图中，展开 " **Visual c #** " 或 " **Visual Basic** (具体取决于你的项目语言) ，展开" **SharePoint** "节点，然后选择" **2010** "节点。
 

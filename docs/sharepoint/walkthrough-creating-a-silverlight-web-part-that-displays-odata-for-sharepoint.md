@@ -12,15 +12,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fdfd510aaea8d09ac20546344f4bbba18bd5f99b
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: ee35ecc9cfa49f445e93677df9d2917150bc1e74
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914785"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847825"
 ---
 # <a name="walkthrough-create-a-silverlight-web-part-that-displays-odata-for-sharepoint"></a>演练：创建显示 OData for SharePoint 的 Silverlight web 部件
   SharePoint 2010 通过 OData 公开其列表数据。 在 SharePoint 中，OData 服务由 RESTful 服务 ListData 实现。 本演练演示如何创建承载 Silverlight 应用程序的 SharePoint web 部件。 Silverlight 应用程序使用 ListData 显示 SharePoint 公告列表信息。 有关详细信息，请参阅 [SharePoint FOUNDATION REST 接口](/previous-versions/office/developer/sharepoint-2010/ff521587(v=office.14)) 和 [Open Data Protocol](https://www.odata.org/)。
@@ -84,7 +84,7 @@ ms.locfileid: "96914785"
 
 4. 选择 " **确定"** 按钮以将服务引用添加到项目，并使用默认服务名称 ServiceReference1。
 
-5. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+5. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 6. 将新数据源添加到基于 SharePoint 服务的项目。 为此，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **数据源**"。
 
