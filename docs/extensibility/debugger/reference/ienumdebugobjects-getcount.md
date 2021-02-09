@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9cbc5db4-03ae-479f-a664-13cad66ad210
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1475652e340ff793dc900ab11563c0c1ad82c9b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3f657bdeeb8f4f355bc8a6cafaaf79b1218dbbc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890768"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 此方法返回枚举中的元素数。
@@ -39,7 +39,7 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pcelt`\
 弄返回枚举中的元素数。
 

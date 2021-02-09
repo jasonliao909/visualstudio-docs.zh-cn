@@ -23,15 +23,15 @@ helpviewer_keywords:
 - safe controls [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f73d8727fb960cf519d368d928aa20cae38ae1a9
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f05e2035338ea4c2d0e45bb9d135d618b938e4ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889533"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>在项目项中提供打包和部署信息
   中的所有 SharePoint 项目项 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 都具有一些属性，可用于在将项目部署到 SharePoint 时提供附加数据。 这些属性如下所示：

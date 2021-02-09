@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 8ebc256b-5428-4ed6-a505-6aedc8242b8e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a07f2808c1aaeca3c1631fce658fdf6e8da32d60
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890274"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 当 DE 完成对截获事件的处理时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

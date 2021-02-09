@@ -14,14 +14,14 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, replaceable parameters
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload: office
-ms.openlocfilehash: 1cd44b3edfaeae376e5a4a9698d138bd75c03bf8
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 3eb6e737a1f939e05e6a6be7f2c9ba950fc411d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889494"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可替换参数（或 *标记*）可用于项目文件中，以提供在设计时实际值未知的 SharePoint 解决方案项的值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板标记。 有关详细信息，请参阅 [模板参数](../ide/template-parameters.md)。
@@ -50,7 +50,7 @@ ms.locfileid: "95970255"
 ## <a name="tokens-list"></a>标记列表
  下表列出了可用标记。
 
-|名称|说明|
+|“属性”|说明|
 |----------|-----------------|
 |$SharePoint. FileName $|包含项目文件的名称，如 *NewProj*。|
 |$SharePoint FileNameWithoutExtension $|不包含文件扩展名的包含项目文件的名称。 例如 "NewProj"。|

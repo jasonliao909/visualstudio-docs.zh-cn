@@ -14,15 +14,15 @@ helpviewer_keywords:
 - exposing code to VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a830ec75e3997bee8d4bed9e275fc6229fec3405
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1df1eed4edec3efdbf93f4effc352b3d02656d04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889403"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：在 Visual c # 项目中向 VBA 公开代码
   如果希望两种类型的代码彼此交互，可以在 Visual c # 项目中公开代码，以 Visual Basic for Applications (的 VBA) 代码。
@@ -102,7 +102,7 @@ ms.locfileid: "96846592"
 
 12. 生成项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)

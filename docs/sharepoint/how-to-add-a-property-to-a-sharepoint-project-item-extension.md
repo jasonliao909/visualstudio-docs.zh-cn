@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae43eb1fd2c20fde6e7b1ad503b87a5d1cb367b1
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 3d721c8d4f381e99a814852839de0e808d326b3a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850164"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889637"
 ---
 # <a name="how-to-add-a-property-to-a-sharepoint-project-item-extension"></a>如何：向 SharePoint 项目项扩展添加属性
   可以使用项目项扩展将属性添加到已在 Visual Studio 中安装的任何 SharePoint 项目项。 在 **解决方案资源管理器** 中选择项目项时，属性将显示在 "**属性**" 窗口中。

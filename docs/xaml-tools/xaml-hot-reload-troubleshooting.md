@@ -8,15 +8,15 @@ helpviewer_keywords:
 - xaml hot reload, troubleshooting
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 03c5dca96b4e20e36bc6c69b907423f27ac4af71
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 4e13fd71c9d53ef49d7f7372986bfabc29c62747
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890443"
 ---
 # <a name="troubleshooting-xaml-hot-reload"></a>排查 XAML 热重载问题
 
@@ -51,7 +51,7 @@ XAML 热重载要求在 `ENABLE_XAML_DIAGNOSTICS_SOURCE_INFO` 应用程序启动
 
 ## <a name="verify-that-your-msbuild-properties-are-correct"></a>验证 MSBuild 属性是否正确
 
-默认情况下，调试配置中包含源信息。 它由项目文件中的 MSBuild 属性控制 (如 * .csproj) 。 对于 WPF，属性是 `XamlDebuggingInformation` ，它必须设置为 `True` 。 对于 UWP，属性为 `DisableXbfLineInfo` ，它必须设置为 `False` 。 例如：
+默认情况下，调试配置中包含源信息。 它由项目文件中的 MSBuild 属性控制 (如 * .csproj) 。 对于 WPF，属性是 `XamlDebuggingInformation` ，它必须设置为 `True` 。 对于 UWP，属性为 `DisableXbfLineInfo` ，它必须设置为 `False` 。 例如： 。
 
 WPF：
 

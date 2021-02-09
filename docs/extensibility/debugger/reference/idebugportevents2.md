@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c611eb531bdabb633b11ac2e8ca2d0d11f52005
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ba68608e09405265940686bbb235a41c53959943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725184"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891184"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此接口在特定端口上通知侦听器 (通常是会话调试管理器 [SDM] 或调试引擎) 进程和程序创建和销毁。 此信息可用于显示在端口上运行的进程和程序的实时视图。
