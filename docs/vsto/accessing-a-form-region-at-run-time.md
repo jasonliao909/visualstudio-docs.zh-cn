@@ -13,15 +13,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], accessing at run time
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d0276405c023717c88f334d6231939d59f79ee4e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 62d8236b987afbb7dc9d5e4462b79ffb4fe00bc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928869"
 ---
 # <a name="access-a-form-region-at-run-time"></a>在运行时访问窗体区域
 
@@ -74,7 +74,7 @@ ms.locfileid: "96847411"
 
  有关如何在 Visual Basic 中创建属性的详细信息，请参阅 [如何： Visual Basic) 创建属性 (](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建 Outlook 窗体区域的准则](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

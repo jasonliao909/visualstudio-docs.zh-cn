@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extensibility features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40cd7132888d8b19d8e2a2818ec9a299b465e786
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 14358b5cc84f63227fd5001731c261002a324492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928934"
 ---
 # <a name="call-into-the-sharepoint-object-models"></a>调入 SharePoint 对象模型
   在 Visual Studio 中创建 SharePoint 工具扩展时，可能需要调用 SharePoint Api 才能执行某些任务。 例如，如果为 SharePoint 项目创建自定义部署步骤，则可能必须调用 SharePoint Api 来执行某些任务来部署解决方案。

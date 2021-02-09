@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40b91ae695a5e78745c01c5ac974411ac924f8f0
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: b9f8bc85672fc89205ab25fa9954e1c28e10f859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926391"
 ---
 # <a name="launch-the-debugger"></a>启动调试程序
 启动调试器要求发送正确的方法和事件顺序及其正确的特性。
@@ -33,7 +33,7 @@ ms.locfileid: "96606653"
 
      如果 `S_FALSE` 返回，将在虚拟机的进程中加载 (DE) 调试引擎。
 
-     \- 或 -
+     -或-
 
      如果 `S_OK` 返回，则将在 SDM 的进程中加载 DE。 然后，SDM 会执行以下任务：
 
@@ -53,6 +53,6 @@ ms.locfileid: "96606653"
 
 8. DE 使用特性向 SDM 发送 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) `EVENT_SYNC` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
 - [启动程序](../../extensibility/debugger/launching-a-program.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd3222e24c6e90380ec9c5836bed583ba95eaa68
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: e71e16f5104423c5cd7301055c9c471b5bf51262
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974577"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927387"
 ---
 # <a name="bitmaps-element"></a>位图元素
 组 [位图元素](../extensibility/bitmap-element.md) 元素。
@@ -37,7 +37,7 @@ ms.locfileid: "94974577"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
@@ -64,6 +64,6 @@ ms.locfileid: "94974577"
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

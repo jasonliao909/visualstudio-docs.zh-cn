@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3670439e-2171-405d-9d77-dedb0f1cba93
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 778602cc29049d855c418fd8fa416feb1ad8e9fe
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f03bef276d4f4aada1a173c45defd100e4becbf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734208"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928683"
 ---
 # <a name="idebugcodecontext2"></a>IDebugCodeContext2
 此接口表示代码指令的起始位置。 对于今天的大多数运行时体系结构，可以将代码上下文视为程序的执行流中的地址。
@@ -25,7 +25,7 @@ ms.locfileid: "80734208"
 ## <a name="syntax"></a>语法
 
 ```
-IDebugCodeContext2 : IDebugMemoryContext2
+IDebugCodeContext2 : IDebugMemoryContext2
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项

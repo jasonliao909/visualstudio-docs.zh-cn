@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f13ca62f841525ef91ac7d66b67c09da54cabeb3
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 368d55db8e52d2797041e420d109960c88d96cb6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927179"
 ---
 # <a name="ports"></a>端口
 在调试程序体系结构中， *端口*：
@@ -33,7 +33,7 @@ ms.locfileid: "96606550"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供一个默认端口，用于处理所有基于 Windows 的进程，包括本机和托管。 必须为不是基于 Windows 的外部设备的连接设置自定义端口。 若要提供此类自定义端口，还必须设置自定义端口供应商。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [进程](../../extensibility/debugger/processes.md)
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)

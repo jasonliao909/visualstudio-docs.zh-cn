@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 43790914be67ddaf2e82f1bb411180d5643ebcbe
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350044"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927556"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要为应用程序部署先决条件，可以使用引导程序包。 引导程序包包含单个产品清单文件，但每个区域设置都包含包清单。 不同本地化版本间的共享功能应进入产品清单。
@@ -36,7 +36,7 @@ ms.locfileid: "94350044"
 
 #### <a name="to-create-the-package-manifest"></a>创建包清单
 
-1. 为引导程序包创建目录。 此示例使用 *C:\package* 。
+1. 为引导程序包创建目录。 此示例使用 *C:\package*。
 
 2. 使用区域设置的名称创建一个子目录 *，如英语* 。
 
@@ -100,5 +100,5 @@ installing this package.</String>
 </Package>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

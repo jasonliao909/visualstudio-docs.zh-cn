@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d22527644edbf1697112f5cf8b73b8a3f72b774
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701290"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926841"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将源代码管理中的文件列表添加到当前打开的项目中。
@@ -38,7 +38,7 @@ SCCRTN SccAddFilesFromSCC(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pContext
 
 中源代码管理插件上下文指针。

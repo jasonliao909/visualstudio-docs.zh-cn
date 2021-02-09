@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: fb057052-ee16-4272-8e16-a4da5dda0ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5bce26a00a525ed93e27b531b36aca1fc04dce4
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: d5639c45fd6dff6702ebc197d46c2eafe482e1d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926368"
 ---
 # <a name="implement-and-register-a-port-supplier"></a>实现并注册端口供应商
 端口供应商的角色是跟踪和提供端口，进而管理进程。 需要创建端口时，将使用共同 iopalisserverextension 和端口供应商的 GUID 来实例化端口供应商 (会话调试管理器 [SDM] 将使用用户选择的端口供应商或由项目系统) 指定的端口供应商。 然后，SDM 调用 [CanAddPort](../../extensibility/debugger/reference/idebugportsupplier2-canaddport.md) 来查看是否可以添加任何端口。 如果可以添加某个端口，则通过调用 [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md) 并向其传递描述该端口的 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 来请求一个新端口。 `AddPort` 返回由 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 接口表示的新端口。

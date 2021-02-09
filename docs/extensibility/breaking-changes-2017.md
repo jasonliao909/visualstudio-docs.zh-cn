@@ -8,15 +8,15 @@ ms.topic: conceptual
 ms.assetid: 54d5af60-0b44-4ae1-aa57-45aa03f89f3d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3121189b1d73543d2a01bbf0b149c6a98eab6909
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: e8c6febd609695be49fe868041faea25af70fed5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973750"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927374"
 ---
 # <a name="changes-in-visual-studio-2017-extensibility"></a>Visual Studio 2017 扩展性中的更改
 
@@ -72,7 +72,7 @@ Visual Studio 2017 中提供了用于创作新的 VSIX v3 清单格式的设计�
   * GAC 中的副本已从安装程序中删除。
   * 添加了 *.pkgdef* 文件以指定程序集的基本代码项。
 
-    例如：
+    例如： 。
 
     ```
     [$RootKey$\RuntimeConfiguration\dependentAssembly\codeBase\{UniqueGUID}]

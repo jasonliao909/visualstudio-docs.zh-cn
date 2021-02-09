@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 907fdaa928b3f84f6ff37490d5c54a9d48515053
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c9411bc7c3963636c8ad80e5a2bf94dd49bf3e5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729343"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926276"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
 使表达式计算器 (EE) 指定调试器引擎 (解除) 将用于读取指标设置的回调接口。
@@ -38,7 +38,7 @@ int SetCallback (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pCallback`\
 中用于设置回调的接口。
 
@@ -49,7 +49,7 @@ int SetCallback (
 此方法为会话调试管理器提供一个接口，表达式计算器可以使用该接口来读取指标设置。 这对于在计算机上读取度量值非常有用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口的**CEE**对象实现此方法。
+下面的示例演示如何为公开 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口的 **CEE** 对象实现此方法。
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)

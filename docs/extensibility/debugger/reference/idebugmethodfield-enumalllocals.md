@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0bc7cc13-2628-4bd8-8c06-4d2aa6755ea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 50da5af616c56276a0299a0d08e6eeb0b88181cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c10de4db63a7706326ff6f387366c75f860408bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727342"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928154"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 创建方法的所有局部变量的枚举数，包括编译器在内部生成的变量。
@@ -28,7 +28,7 @@ ms.locfileid: "80727342"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnumAllLocals( 
+HRESULT EnumAllLocals( 
    IDebugAddress*     pAddress,
    IEnumDebugFields** ppLocals
 );
@@ -41,7 +41,7 @@ int EnumAllLocals(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pAddress`\
 中 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 对象，表示方法中的调试地址，指向特定范围或上下文。
 

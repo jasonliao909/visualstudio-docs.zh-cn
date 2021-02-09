@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data binding [Office development in Visual Studio], multiple columns
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 988394595e8aa4710a22e1fedf22a921481c7396
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527111"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927660"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：文档级项目中的复杂数据绑定
   本演练演示文档级项目中的复杂数据绑定的基本知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
@@ -83,7 +83,7 @@ ms.locfileid: "97527111"
 
 8. 选中 " **Employees** " 表旁边的复选框。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
    向导将 " **Employees** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -177,17 +177,17 @@ ms.locfileid: "97527111"
 
 1. 选择列表对象内的单元格。
 
-    新行显示在列表的底部， *\** 在新行的第一个单元格中，星号 ( * _) 。
+    新行显示在列表的底部， **\*** 在新行的第一个单元格中) 星号 (。
 
 2. 在空行中添加以下信息。
 
-   |EmployeeID|LastName|FirstName|Title|
+   |EmployeeID|LastName|FirstName|标题|
    |----------------|--------------|---------------|-----------|
    |10|Ito|Shu|销售经理|
 
 ### <a name="to-delete-rows"></a>删除行
 
-- 右键单击工作表最左侧第16行 (第16行) ，然后单击 "_" "删除"。
+- 右键单击工作表最左侧第16行 (第16行) ，然后单击 " **删除**"。
 
 ### <a name="to-sort-the-rows-in-the-list"></a>对列表中的行进行排序
 

@@ -9,22 +9,22 @@ helpviewer_keywords:
 ms.assetid: 4b0536dd-4f92-4ef2-9031-4548281f37aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 114862bb3358cc2a5400d6f40031deb030e4e4df
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 8df7a4be9c8a270feebd7e27d25c006eb4dc5817
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927933"
 ---
 # <a name="source-control-plug-in-api-functions"></a>源代码管理插件 API 函数
 源代码管理插件 API 提供以下函数，这些函数必须根据此 API 由源代码管理插件实现。 此参考中详细介绍了每个函数的签名以及与位标志和其他参数关联的语义。
 
 ## <a name="initialization-and-housekeeping-functions"></a>初始化和内务处理功能
 
-|函数|说明|
+|功能|说明|
 |--------------|-----------------|
 |[SccCloseProject](../extensibility/scccloseproject-function.md)|关闭项目。|
 |[SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md)|提示用户输入给定命令的高级选项。|
@@ -36,7 +36,7 @@ ms.locfileid: "97715985"
 
 ## <a name="core-source-control-functions"></a>核心源代码管理函数
 
-|函数|说明|
+|功能|说明|
 |--------------|-----------------|
 |[SccAdd](../extensibility/sccadd-function.md)|将由完全限定的路径名称指定的文件数组添加到源代码管理系统中。|
 |[SccAddFromScc](../extensibility/sccaddfromscc-function.md)|允许用户浏览源控制系统中已存在的文件，然后将这些文件设置为当前项目的一部分。|
@@ -58,7 +58,7 @@ ms.locfileid: "97715985"
 ## <a name="functions-that-support-additional-capability-version-12-of-the-source-control-plug-in-api"></a>支持其他功能 (源代码管理插件 API 版本1.2 的函数) 
  此组函数定义源代码管理插件 API 版本1.2 中包含的附加功能。 它们提供对更高级源代码管理特性和功能的访问。
 
-|函数|说明|
+|功能|说明|
 |--------------|-----------------|
 |[SccBeginBatch](../extensibility/sccbeginbatch-function.md)|启动批处理操作。|
 |[SccCreateSubProject](../extensibility/scccreatesubproject-function.md)|在现有父项目下创建具有给定名称的子项目。|
@@ -72,7 +72,7 @@ ms.locfileid: "97715985"
 ## <a name="functions-that-support-advanced-capability-version-13-of-the-source-control-plug-in-api"></a>支持高级功能 (源代码管理插件 API 版本1.3 的函数) 
  此组函数定义源代码管理插件 API 版本1.3 中包含的附加功能。 它们提供对更高级源代码管理特性和功能的访问。
 
-|函数|说明|
+|功能|说明|
 |--------------|-----------------|
 |[SccAddFilesFromSCC](../extensibility/sccaddfilesfromscc-function.md)|将源代码管理中的文件列表添加到当前项目中。|
 |[SccBackgroundGet](../extensibility/sccbackgroundget-function.md)|在没有用户界面的情况下从源控件中检索文件的列表。|

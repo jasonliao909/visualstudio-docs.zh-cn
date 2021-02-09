@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 8e4317b8-8255-486c-a896-a68ed94f8aa1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20e4bbc32aef11c91e4f5c642bb48acb26633fe1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: df4b3097407f007c6763eb512066e6154436306f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734207"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928674"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 检索对调试模块的接口的引用。
@@ -37,7 +37,7 @@ public int GetModule(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppModule`\
 弄对调试模块接口的引用。
 
@@ -45,7 +45,7 @@ public int GetModule(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的**CDebugCodeContext**对象实现此方法。
+下面的示例演示如何为公开 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的 **CDebugCodeContext** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugCodeContext::GetModule(IDebugModule2** ppModule)

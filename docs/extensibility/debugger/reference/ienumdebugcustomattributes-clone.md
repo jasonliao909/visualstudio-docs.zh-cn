@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e6825000-e195-42b4-b296-bfe1e533d79b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3c6cd55293bf34b0c2780dd76eaf8f4ee81bb69
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1680c2e68a72c985236e501281100fa4e8b7d1f7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929376"
 ---
 # <a name="ienumdebugcustomattributesclone"></a>IEnumDebugCustomAttributes::Clone
 创建与当前枚举数包含相同枚举状态的枚举数。
@@ -28,7 +28,7 @@ ms.locfileid: "80717258"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Clone ( 
+HRESULT Clone ( 
    IEnumCustomAttributes** ppEnum
 );
 ```
@@ -39,7 +39,7 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppEnum`\
 弄以单独的对象的形式返回此枚举的副本。
 

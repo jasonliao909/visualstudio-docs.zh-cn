@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a16f2c39fa2d53ffc4d113666ef7630557e61861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b65d8a3171de6ac33526bafadbe04254ce58855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723563"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926258"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 此方法设置将承载进程的语言。 然后，调试引擎可以使用此语言 (DE) 加载相应的表达式计算器。
@@ -28,8 +28,8 @@ ms.locfileid: "80723563"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetHostingProcessLanguage(
-   REFGUID guidLang
+HRESULT SetHostingProcessLanguage(
+   REFGUID guidLang
 );
 ```
 
@@ -39,7 +39,7 @@ int SetHostingProcessLanguage(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidLang`\
 [in] `GUID` 应使用的语言。 指定 `GUID_NULL` (c + +) 或 `Guid.Empty` (c # ) ，使 DE 使用默认语言。
 
