@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], InfoPath
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: baf5a7edbdd9452c4b7ce55e109eee9c79798b5e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0bc66a9266baf865e2efb87497361bc0c525e55a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844162"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849887"
 ---
 # <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：
@@ -63,7 +63,7 @@ ms.locfileid: "96844162"
  [!code-csharp[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs#1)]
  [!code-vb[Trin_RibbonInfoPathBasic#1](../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb#1)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)

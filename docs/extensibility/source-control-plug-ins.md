@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 964980ca-21c5-4706-8535-6ea23e1c9cc9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 617b06e46bb150026f49af3e23761dfd6cb4e902
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab076cef7aaab96779e303ee7b85c8047eb6b52e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848112"
 ---
 # <a name="source-control-plug-ins"></a>源代码管理插件
 源代码管理插件 SDK 参考部分包含完整的接口规范，使源代码管理系统能够与进行集成 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 它指定源代码管理插件必须实现的各种函数和数据类型的语法和语义，以与 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (IDE) 的集成开发环境交互。

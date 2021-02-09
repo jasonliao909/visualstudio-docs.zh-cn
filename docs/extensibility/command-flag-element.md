@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5ef63399-d2db-4dc1-97ce-be1bd4ef4e39
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15dbf960aebc543b71ff282e525476583bdeba3d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: f328f2112073c082e276683d32d6ca06276b9829
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974195"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848190"
 ---
 # <a name="command-flag-eelement"></a>命令标志 Eelement
 修改其父元素。
@@ -76,5 +76,5 @@ ms.locfileid: "94974195"
 |[按钮元素](../extensibility/buttons-element.md)|为 [Button 元素](../extensibility/button-element.md) 元素提供组。|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 命令表 (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

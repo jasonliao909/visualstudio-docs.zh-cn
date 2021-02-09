@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d5ce10f9-047a-4b74-aa1d-295128898b89
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff03ed508fc11377861556bc27bdc33aaa1ec069
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 163d042ffb08a60d5673e64cf6bab94f7a2f1d63
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993765"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850450"
 ---
 # <a name="how-to-open-standard-editors"></a>如何：打开标准编辑器
 打开标准编辑器时，可以让 IDE 为指定的文件类型确定标准编辑器，而不是为文件指定特定于项目的编辑器。

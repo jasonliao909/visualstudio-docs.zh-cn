@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24e6536dc5fdc62bb3b1c32bbd7c379fcef1f8cd
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 3362606a7e8c5f2278c2ebfb973321e5b8f3157e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304482"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850134"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在部署或收回 SharePoint 项目时运行代码
   如果要在部署或收回 SharePoint 项目时执行其他任务，可以处理由 Visual Studio 引发的事件。 有关详细信息，请参阅 [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。

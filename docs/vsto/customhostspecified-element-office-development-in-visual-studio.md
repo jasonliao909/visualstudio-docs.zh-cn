@@ -14,15 +14,15 @@ helpviewer_keywords:
 - customHostSpecified element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e8327c6e154f051f5ce79d41ceaa696e330c794f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ba5ce54e862862c1e6750c78416fec4d5cf51cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849978"
 ---
 # <a name="ltcustomhostspecifiedgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 d 元素 (Office 开发) 
   `customHostSpecified`元素指示此解决方案不是独立应用程序。 Office 解决方案包含 Microsoft Office 应用程序内部承载的组件。
@@ -49,7 +49,7 @@ ms.locfileid: "96848126"
 </entryPoint>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
 - [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
