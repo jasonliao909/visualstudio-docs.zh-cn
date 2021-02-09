@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, escape sequences
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b007a9b5ccf41a27cda7d9833064eb60394c4dc
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 126fe3f4e42c9c6cf0b75bf740e1e7e2c4b269ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924341"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
 
@@ -38,6 +38,6 @@ ms.locfileid: "97361321"
 
 - 如果转义 (\\) 字符出现在除在 c) # 中转义控制字符或引用 (引号以外的任何其他序列中的其他任何位置，则将直接输出该字符。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：使用转义序列基于模板生成模板](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

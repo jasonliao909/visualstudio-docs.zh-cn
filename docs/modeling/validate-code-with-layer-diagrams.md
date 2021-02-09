@@ -18,15 +18,15 @@ helpviewer_keywords:
 - MSBuild, validating code
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bc8b36768cbac4249b964b167988119b5700d5c7
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: e330b95d2de6da53d9d1bd0f3d553ab8319bdd04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924317"
 ---
 # <a name="validate-code-with-dependency-diagrams"></a>使用依赖项关系图验证代码
 
@@ -202,7 +202,7 @@ ms.locfileid: "97362543"
 
 下表描述了层验证问题及其解决方法。 这些问题不同于代码与设计发生冲突而导致出现的错误。 有关这些错误的详细信息，请参阅 [排除层验证问题](#troubleshoot-layer-validation-issues)。
 
-|**问题**|**可能的原因**|**解决方法**|
+|**问题**|**可能的原因**|**分辨率**|
 |-|-|-|
 |验证错误不按预期发生。|验证不适用于从解决方案资源管理器中的其他依赖关系图复制到同一建模项目中的依赖关系图。 以这种方式复制的依赖项关系图包含与原始依赖关系图相同的引用。|将新的依赖关系图添加到建模项目。<br /><br /> 将源依赖关系图中的元素复制到新关系图中。|
 
@@ -236,7 +236,7 @@ ms.locfileid: "97362543"
 | DV3001： **缺少链接** | 层 "*LayerName*" 链接到了找不到的 "*项目*"。 是否缺少程序集引用? |
 | DV9001： **体系结构分析找到内部错误** | 结果可能不完整。 有关详细信息，请参阅详细的生成事件日志或输出窗口。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的实时依赖项验证](https://devblogs.microsoft.com/devops/live-dependency-validation-in-visual-studio-2017/)
 - [在开发过程中验证系统](../modeling/validate-your-system-during-development.md)

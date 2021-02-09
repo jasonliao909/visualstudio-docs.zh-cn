@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint Connections [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b898dd0f9327c7589d0dac3436aec0299009221d
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 57ff132274ba7f720a845078b0424fe235d9c31e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923449"
 ---
 # <a name="how-to-add-or-remove-sharepoint-connections"></a>如何：添加或删除 SharePoint 连接
   服务器资源管理器使你可以浏览 SharePoint 站点以及数据连接。 但是，必须先将 SharePoint 站点的内容添加到 **sharepoint "连接** " 节点中，然后才能浏览该站点的内容。
@@ -40,7 +40,7 @@ ms.locfileid: "94850710"
 
 2. 展开 " **Sharepoint 连接** " 节点以显示要从 **服务器资源管理器** 中删除的 sharepoint 站点。
 
-3. 选择站点，然后在菜单栏上选择 "编辑" " **Edit**  >  **删除**"。
+3. 选择站点，然后在菜单栏上选择 "编辑" "   >  **删除**"。
 
     > [!NOTE]
     > 此步骤不会删除基础站点;它仅删除 **服务器资源管理器** 的连接。

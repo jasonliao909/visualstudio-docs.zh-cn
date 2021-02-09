@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 616837c358c804198818df659cb7b7ee76716305
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97864041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926128"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 用户体验基础知识
 
-## <a name="best-practices"></a>最佳做法
+## <a name="best-practices"></a>最佳实践
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. 在 Visual Studio 环境中保持一致。
 
@@ -87,7 +87,7 @@ ms.locfileid: "97864041"
 
  ![默认情况下，将 UI 置于错误状态是 Visual Studio 的反模式。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-模式")<br />默认情况下，将 UI 置于错误状态是 Visual Studio 的反模式。
 
-#### <a name="alternatives"></a>备选项
+#### <a name="alternatives"></a>备选方法
 
 此问题的更好解决方案是：
 

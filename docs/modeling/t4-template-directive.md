@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75001da1829f6dafdac68359d1b0f6c7c14ed266
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: ccb5a216aa9a43581327b04d4b6b56f49f9b2bae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363661"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924651"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 
@@ -98,7 +98,7 @@ hostspecific="true"
 
 因为此属性的类型取决于宿主的类型，所以仅当编写只适用于特定宿主的文本模板时才有用。 它适用于 [设计时模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)，但不适用于 [运行时模板](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-当 `hostspecific` 为 `true` 并且你使用的是 visual studio 时，你可以强制转换 `this.Host` 为 IServiceProvider，以访问 visual studio 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如：
+当 `hostspecific` 为 `true` 并且你使用的是 visual studio 时，你可以强制转换 `this.Host` 为 IServiceProvider，以访问 visual studio 功能。 还可以使用 `Host.ResolvePath(filename)` 来获得项目中文件的绝对路径。 例如： 。
 
 ```csharp
 <#@ template debug="false" hostspecific="true" language="C#" #>
@@ -136,7 +136,7 @@ Content of myFile is:
 
 `language`特性指定 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 要用于语句和表达式块中的源代码的语言 (或) 。 从中生成输出的中间代码文件将使用此语言。 此语言与您的模板生成的语言无关，它可以是任何类型的文本。
 
-例如：
+例如： 。
 
 ```vb
 <#@ template language="VB" #>

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, definition file
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db379447f39ed3d0c2b82aee23c1ac94aad34d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362777"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924488"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 
@@ -180,7 +180,7 @@ Root 元素的子元素 \<Dsl> 如下所示：
 
 - **HasCustomConstructor**。 如果将此特性设置为 true，则从生成的代码中忽略构造函数，以便你可以编写自己的版本。
 
-- **属性**。 此特性包含生成的类的 CLR Attributes。
+- **特性**。 此特性包含生成的类的 CLR Attributes。
 
 - **BaseClass**。 如果指定基类，它必须属于同一类型。 例如，域类必须具有另一个域类作为其基类，而隔离舱形状也必须具有一个隔离舱形状。 如果没有指定基类，则生成的代码中的类派生自标准框架类。 例如，域类派生自 `ModelElement`。
 
@@ -579,7 +579,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 连接符映射还可以包含修饰器映射。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f9f51e9380585d4191c5969d96fbb3a93ea42a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863726"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925750"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>.VSCT XML 架构条件特性
 你可以将条件属性应用于所有列表和项。 逻辑运算符和符号扩展表达式的计算结果为 true 或 false。 如果为 true，则在生成的输出中包含关联的列表或项。
@@ -37,8 +37,8 @@ ms.locfileid: "97863726"
 |(,)|分组|
 |!|逻辑“非”|
 |\<, >, \<=, >=, ==, !=|关系式与等式|
-|和|Boolean|
-|或|Boolean|
+|and|布尔|
+|或|布尔|
 
 ## <a name="examples"></a>示例
 

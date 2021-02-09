@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, custom host walkthrough
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1cc1681d7c761aca123217cbf28cc33b0dbb584c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3e24c46e576ab6125c3152989c568a704a33b2d2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924136"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>演练：创建自定义文本模板主机
 
@@ -823,6 +823,6 @@ ms.locfileid: "97361048"
 
 在本演练中，你创建了一个支持基本转换功能的文本模板转换主机。 您可以对该宿主进行扩展，以支持可调用自定义或生成的指令处理器的文本模板。 有关详细信息，请参阅 [演练：将主机连接到生成的指令处理器](../modeling/walkthrough-connecting-a-host-to-a-generated-directive-processor.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

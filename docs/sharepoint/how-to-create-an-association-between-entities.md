@@ -20,15 +20,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], associate external content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e736e0befe8aaf9a6c090615d0c43bb3f3116dbf
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: e726e8b5702a656b340401c9a2db26e40be1a37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925571"
 ---
 # <a name="how-to-create-an-association-between-entities"></a>如何：创建实体之间的关联
   可以通过创建关联来定义业务数据连接中的实体之间的关系 (BDC) 模型。 Visual Studio 生成的方法为模型的使用者提供有关每个关联的信息。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。
@@ -51,7 +51,7 @@ ms.locfileid: "94849839"
 
 4. 如果要创建外部无键关联，请清除 " **为外键关联** " 复选框。
 
-5. 选择 **“确定”** 按钮。
+5. 选择“确定”  按钮。
 
 6. 在 BDC 设计器中，表示关联的行出现在源实体和目标实体之间。
 

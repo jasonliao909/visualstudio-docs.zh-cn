@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 3ea252d7-18a3-47d8-af83-47feebcfe82b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60d6491101bef33f1d8c91d4f7640be9d7277da0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0fbf76fec604819d7944a7b54fa4b2421e37c111
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349537"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925362"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 元素 (引导程序) 
 `PackageFiles`元素包含 `PackageFile` 元素，这些元素定义作为元素的结果执行的安装包 `Command` 。
@@ -46,7 +46,7 @@ ms.locfileid: "94349537"
 ## <a name="elements-and-attributes"></a>元素和属性
  `PackageFiles` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`CopyAllPackageFiles`|可选。 如果设置为 `false` ，则安装程序将仅下载从元素引用的文件 `Command` 。 如果设置为 `true` ，则将下载所有文件。<br /><br /> 如果设置为 `IfNotHomesite` ，则该安装程序的行为将与 `False` 如果 `ComponentsLocation` 设置为相同， `HomeSite` 否则将表现为与 if 相同 `True` 。 此设置可用于允许自身引导程序的包在 HomeSite 方案中执行其自身的行为。<br /><br /> 默认值为 `true`。|
 
@@ -55,7 +55,7 @@ ms.locfileid: "94349537"
 
  `PackageFile` 具有以下属性。
 
-| 特性 | 说明 |
+| Attribute | 说明 |
 |---------------| - |
 | `Name` | 必需。 包文件的名称。 这是在 `Command` 定义包安装条件时，元素将引用的名称。 此值还用作表中的键， `Strings` 以检索 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将用于描述包的工具（如）的本地化名称。 |
 | `HomeSite` | 可选。 包在远程服务器上的位置（如果安装程序未附带）。 |
@@ -75,7 +75,7 @@ ms.locfileid: "94349537"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>请参阅
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
-- [\<Package> element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>另请参阅
+- [\<Product> 元素](../deployment/product-element-bootstrapper.md)
+- [\<Package> 元素](../deployment/package-element-bootstrapper.md)
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

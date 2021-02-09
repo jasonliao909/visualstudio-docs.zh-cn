@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0932f551-972d-4194-84bb-426e3e4375e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 637fea7d203e58c59f85794eeb0f8894eb62e777
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926020"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素确定命令和工具栏的静态可见性。 每个条目标识一个命令或菜单，以及一个关联的命令 UI 上下文。 Visual Studio 会检测命令、菜单和工具栏及其可见性，而无需加载定义它们的 Vspackage。 IDE 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 方法来确定命令用户界面上下文是否处于活动状态。
@@ -43,7 +43,7 @@ ms.locfileid: "97863896"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |guid|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|

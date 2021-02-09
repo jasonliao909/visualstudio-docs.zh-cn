@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Domain-Specific Language, validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb9baced0a4cc38ae175146d3f3779c5b9c28dd2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 44ee0d9e10a4f96979362d8613dc6ca949ff2fd7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924257"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -146,7 +146,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>验证类别
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 特性中，指定应何时执行验证方法。
 
-|类别|执行|
+|Category|执行|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|当用户调用验证菜单命令时。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|当打开模型文件时。|
@@ -195,7 +195,7 @@ if (erroneousLinks.Count < 5) { context.LogError( ... ); }
 
  如果你将域关系的角色的重数设置为 1..* 或 1..1，但用户未创建此关系的链接，则将显示验证错误消息。
 
- 例如，如果 DSL 具有类 Person 和城镇，并具有关系 **1 \\** 的关系 PersonLivesInTown。_ 在镇角色中，对于每个没有城镇的人，将显示一条错误消息。
+ 例如，如果 DSL 具有类 Person 和城镇，并具有关系 **1 \\** 的关系 PersonLivesInTown。* 在市政角色中，将显示一条错误消息。
 
 ## <a name="running-validation-from-program-code"></a>从程序代码运行验证
  通过访问或创建 ValidationController，可运行验证。 如果要在错误窗口中向用户显示错误，请使用附加到关系图的 DocData 的 ValidationController。 例如，如果你要编写菜单命令，则命令集类中提供了 `CurrentDocData.ValidationController`：
@@ -235,7 +235,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>当发生更改时运行验证
  如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的详细信息，请参阅 [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了验证代码外，还将自定义代码文件添加到 _ *DslPackage** 项目，其中包含类似于以下示例的内容。 此代码使用附加到文档的 `ValidationController`。 此控制器在 Visual Studio 错误列表中显示验证错误。
+ 除了验证代码外，还应将自定义代码文件添加到 **DslPackage** 项目，其中包含类似于以下示例的内容。 此代码使用附加到文档的 `ValidationController`。 此控制器在 Visual Studio 错误列表中显示验证错误。
 
 ```csharp
 using System;
@@ -336,7 +336,7 @@ validationController.ValidateCustom
 > [!WARNING]
 > 请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)

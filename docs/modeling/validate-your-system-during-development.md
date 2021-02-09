@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a803b2fb7eb7c682e29ae0d17698ef673927d751
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bac26664a2ef98cffbd60eee0647b39dd1108675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361399"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99924307"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 
@@ -40,7 +40,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 |**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [通道9： Doug 7：代码理解和 Visual Studio 2010 的系统设计](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [通道9：构建应用程序](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)) |
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 扩展性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [建立用户需求模型](../modeling/model-user-requirements.md)
 - [对体系结构进行分析和建模](../modeling/analyze-and-model-your-architecture.md)

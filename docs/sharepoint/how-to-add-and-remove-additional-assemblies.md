@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packages
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 41b41ccd5eda2a44457adf23302a833574dade9e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: cc672a8a0ff7edd66504b5ecbf48e622fad085ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923619"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>如何：添加和移除附加程序集
   如果 SharePoint 包依赖于其他程序集以获取功能或数据，则您可以将这些程序集添加到您的解决方案包 ( .wsp) 。 这样一来，SharePoint server 便可确保使用包安装自定义程序集。
