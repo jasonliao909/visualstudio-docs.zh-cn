@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3899dea7c33946588de4308f42b948ede703361a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6156becc782adb054af37cf24efd64915729149c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718685"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893719"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
 继续执行线程。
@@ -28,18 +28,18 @@ ms.locfileid: "80718685"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Resume ( 
+HRESULT Resume ( 
    DWORD *pdwSuspendCount
 );
 ```
 
 ```csharp
-int Resume ( 
+int Resume ( 
    out uint pdwSuspendCount
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwSuspendCount`\
 弄返回恢复操作后的挂起计数。
 

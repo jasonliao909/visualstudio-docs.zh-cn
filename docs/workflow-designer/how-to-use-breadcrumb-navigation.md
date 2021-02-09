@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a688056-37dc-406a-9071-be2141e192fe
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a15f44b33e7109b126b091dcbf7102aa86a649a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4e33ea580f46f09ab3bd4d75ba58a35518c3583c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437887"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894135"
 ---
 # <a name="how-to-use-breadcrumb-navigation"></a>如何：使用痕迹导航
 
@@ -44,12 +44,12 @@ ms.locfileid: "94437887"
 
 ## <a name="expanding-all-or-collapsing-all-activities"></a>展开或折叠所有活动
 
-1. 使用用户界面中的 " **全部展开** " 和 " **全部折叠** " 按钮可展开或折叠当前痕迹根下的所有活动。 请注意，全部展开和全部折叠是全局状态。 这意味着，当你使用痕迹导航更改根活动时，"全部展开" 或 "全部折叠" 状态将保持不变，直到你单击 " **还原** "。
+1. 使用用户界面中的 " **全部展开** " 和 " **全部折叠** " 按钮可展开或折叠当前痕迹根下的所有活动。 请注意，全部展开和全部折叠是全局状态。 这意味着，当你使用痕迹导航更改根活动时，"全部展开" 或 "全部折叠" 状态将保持不变，直到你单击 " **还原**"。
 
 2. 应用 "全部展开" 或 "全部折叠" 状态后，可以单击显示的 " **还原** " 按钮，返回到之前应用于每个活动的状态。
 
     > [!WARNING]
-    > 如果某个活动（如 <xref:System.Activities.Statements.Flowchart> ）已取消就地展开，则在 **流程图** 设计器中将禁用与 " **全部展开** " 和 " **全部折叠** " 按钮相关联的功能。 有关 **流程图** 设计器的详细信息，请参阅 [流程图](../workflow-designer/flowchart-activity-designer.md) 主题。
+    > 如果某个活动（如 <xref:System.Activities.Statements.Flowchart> ）已取消就地展开，则在 **流程图** 设计器中将禁用与 "**全部展开**" 和 "**全部折叠**" 按钮相关联的功能。 有关 **流程图** 设计器的详细信息，请参阅 [流程图](../workflow-designer/flowchart-activity-designer.md) 主题。
 
     > [!WARNING]
-    > 全部展开还会在 **Switch** 和 **TryCatch** 活动设计器中产生特殊影响。 单击 " **全部展开** " 时，将显示所有的开关事例和所有 try/catch/finally 块。 单击 " **还原** " 或 " **全部折叠** " 会将这些设计器恢复为其默认状态，从中可以单击单个 case/块来查看其内容。
+    > 全部展开还会在 **Switch** 和 **TryCatch** 活动设计器中产生特殊影响。 单击 " **全部展开**" 时，将显示所有的开关事例和所有 try/catch/finally 块。 单击 " **还原** " 或 " **全部折叠** " 会将这些设计器恢复为其默认状态，从中可以单击单个 case/块来查看其内容。

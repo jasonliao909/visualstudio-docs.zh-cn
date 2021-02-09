@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d04b8329d425df53c5414f593393e86a3be73c47
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 80a944c077d520d6d9ecac9557179311ecf20281
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893069"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>实现源代码管理插件的最佳实践
 以下技术详细信息可帮助你在中可靠地实现源代码管理插件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -50,7 +50,7 @@ ms.locfileid: "94974639"
 ## <a name="the-context-structure"></a>上下文结构
  调用 [SccInitialize](../extensibility/sccinitialize-function.md)时，调用方传递 `ppvContext` 参数，该参数是 void 的未初始化句柄。 源代码管理插件可以忽略此参数，也可以分配任意类型的结构，并将该结构的指针放入传递的指针。 IDE 不了解此结构，但它会将指向此结构的指针传递到插件中的其他每个调用。 这为插件提供有价值的上下文缓存信息，该插件可用于维护在不使用全局变量的情况下在函数调用中保持的全局状态信息。 此插件负责在对 [SccUninitialize](../extensibility/sccuninitialize-function.md)的调用上释放结构。
 
- 如果插件在 SccInitialize 中设置 `SCC_CAP_REENTRANT` ([SccInitialize](../extensibility/sccinitialize-function.md) ，则在 `lpSccCaps` 参数) 中，将使用多个上下文结构来跟踪所有打开的项目。
+ 如果插件在 SccInitialize 中设置 `SCC_CAP_REENTRANT` ([](../extensibility/sccinitialize-function.md) ，则在 `lpSccCaps` 参数) 中，将使用多个上下文结构来跟踪所有打开的项目。
 
 ## <a name="bitflags-and-other-command-options"></a>Bitflags 和其他命令选项
  对于每个命令（如 [SccGet](../extensibility/sccget-function.md)），IDE 可以指定多个更改命令行为的选项。
@@ -59,6 +59,6 @@ ms.locfileid: "94974639"
 
  大多数用户可配置的设置选项不是以这种方式定义的，因为它们在源代码管理插件之间存在很大的差异。因此，建议的机制是 " **高级** " 按钮。 例如，在 " **获取** " 对话框中，IDE 只显示它理解的信息，如果该插件具有此命令的选项，它还会显示 " **高级** " 按钮。 当用户单击 " **高级** " 按钮时，IDE 将调用 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) ，以使源代码管理插件可以提示用户输入信息，如 bitflags 或日期/时间。 此插件在命令期间传递回的结构中返回此信息 `SccGet` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)
 - [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)

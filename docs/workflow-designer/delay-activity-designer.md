@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: f51742a8-2c9a-47d1-8a23-18459d03ae19
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e6bbadcbabbe1dbd274c48f2325217c17d3933d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 1b661dddf6c07bca34e5ea044fd1338da68f4e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438082"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894304"
 ---
 # <a name="delay-activity-designer"></a>Delay 活动设计器
 
@@ -29,9 +29,9 @@ ms.locfileid: "94438082"
 
 ### <a name="use-the-delay-activity-designer"></a>使用 Delay 活动设计器
 
-" **延迟** " 活动设计器可在 " **工具箱** " 的 " **基元** " 类别中找到，可通过单击工作流设计器的 " **工具箱** " 选项卡进行访问。 或者，从 " **视图** " 菜单中选择 **"工具箱** "，或按 **Ctrl** + **Alt** + **X** 。
+"**延迟**" 活动设计器可在 "**工具箱**" 的 "**基元**" 类别中找到，可通过单击工作流设计器的 "**工具箱**" 选项卡进行访问。 或者，从 "**视图**" 菜单中选择 **"工具箱**"，或按 **Ctrl** + **Alt** + **X**。
 
-可以将 " **延迟** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器将创建一个 <xref:System.Activities.Statements.Delay> 活动，其默认值为 " <xref:System.Activities.Activity.DisplayName%2A> 延迟"。 <xref:System.Activities.Activity.DisplayName%2A>可以在 " **延迟** " 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑。
+可以将 " **延迟** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器将创建一个 <xref:System.Activities.Statements.Delay> 活动，其默认值为 " <xref:System.Activities.Activity.DisplayName%2A> 延迟"。 <xref:System.Activities.Activity.DisplayName%2A>可以在 "**延迟**" 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑。
 
 ### <a name="the-delay-properties"></a>延迟属性
 
@@ -39,8 +39,8 @@ ms.locfileid: "94438082"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Delay> 活动的友好名称。 默认值为 Delay。 尽管 <xref:System.Activities.Activity.DisplayName%2A> 不是严格要求的值，但最好使用一种方法。|
-|<xref:System.Activities.Statements.Delay.Duration%2A>|正确|将工作流延迟的时长。 此属性在属性网格中设置。 键入 00:00:00 格式的文本 <xref:System.TimeSpan> 或 Visual Basic 表达式来指定时长。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Delay> 活动的友好名称。 默认值为 Delay。 尽管 <xref:System.Activities.Activity.DisplayName%2A> 不是严格要求的值，但最好使用一种方法。|
+|<xref:System.Activities.Statements.Delay.Duration%2A>|True|将工作流延迟的时长。 此属性在属性网格中设置。 键入 00:00:00 格式的文本 <xref:System.TimeSpan> 或 Visual Basic 表达式来指定时长。|
 
 ## <a name="see-also"></a>另请参阅
 

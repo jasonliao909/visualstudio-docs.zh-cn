@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f42d3115-2ed2-4941-8f1e-92dac41c30fa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dadaf6ce4728dfac8d4052804cbed70ee7cefcd
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6fb30d4846c24638f87989d2a7a716df06b0523b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437900"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894109"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 
@@ -29,15 +29,15 @@ ms.locfileid: "94437900"
 
 - 变量
 
-- 参数
+- 自变量
 
 - 表达式
 
 ### <a name="use-quick-find"></a>使用快速查找
 
-1. 打开工作流设计器后，按 **Ctrl + F** ，或选择 " **编辑**  >  **查找并替换**  >  **快速查找** "。
+1. 打开工作流设计器后，按 **Ctrl + F**，或选择 "**编辑**  >  **查找并替换**  >  **快速查找**"。
 
-2. 在 " **查找内容** " 文本框中输入搜索词，然后单击 " **查找下一个** "。
+2. 在 " **查找内容** " 文本框中输入搜索词，然后单击 " **查找下一个**"。
 
 3. 搜索词位于当前工作流中。 下图显示了位于设计器中的活动显示名称：
 
@@ -49,7 +49,7 @@ ms.locfileid: "94437900"
 
 ### <a name="use-find-in-files"></a>使用 "在文件中查找"
 
-1. 在 Visual Studio 中，按 **Ctrl** + **Shift** + **F** ，或选择 " **编辑**  >  **查找并替换**  >  **在文件中查找** "。
+1. 在 Visual Studio 中，按 **Ctrl** + **Shift** + **F**，或选择 "**编辑**  >  **查找并替换**  >  **在文件中查找**"。
 
 2. 在 " **查找内容** " 文本框中输入搜索项，并单击 " **查找所有** 内容"。
 
