@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5254d30ed1a656bfd357fca822efa554d895807e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8a82e729f3811f63a11aa8476ad23b566521c8cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915524"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
 给定符号提供程序和计算帧的地址，将表达式字符串转换为分析的表达式。
@@ -51,7 +51,7 @@ HRESULT Parse2 (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `upstrExpression`\
 中要分析的表达式字符串。
 
@@ -83,7 +83,7 @@ HRESULT Parse2 (
 此方法生成一个分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)接口的**CEE**对象实现此方法。
+下面的示例演示如何为公开 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)接口的 **CEE** 对象实现此方法。
 
 ```cpp
 HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,

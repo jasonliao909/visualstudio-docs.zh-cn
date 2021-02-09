@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c03482ff489c356ddcbe28ccc26c69c5936be6c5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 1e4de5f46746f79e1c7598e1c2a2a6af6ae1d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877671"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912682"
 ---
 # <a name="source-control-vspackage-architecture"></a>源代码管理 VSPackage 体系结构
 源代码管理包是使用 IDE 提供的服务的 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 在返回时，源代码管理包将其功能作为源代码管理服务提供。 此外，源代码管理包的替代方法比用于将源代码管理集成到的源代码管理插件更通用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

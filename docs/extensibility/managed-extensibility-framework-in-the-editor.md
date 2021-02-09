@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3f59a285-6c33-4ae3-a4fb-ec1f5aa21bd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd6ed0e495056bf2924e46bfdfcd074daf1faf87
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: 5965ca211710b0710626118f016b2cb3fec116b2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915139"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>编辑器中的 Managed Extensibility Framework
 编辑器是通过使用 Managed Extensibility Framework (MEF) 组件生成的。 您可以构建自己的 MEF 组件来扩展编辑器，代码还可以使用编辑器组件。

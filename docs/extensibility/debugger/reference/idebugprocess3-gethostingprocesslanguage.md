@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 52fca002-a9ef-43b1-9192-afbe7bb59ad4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b27be0850755a1a2808c8c5c758a3ad59b41d7e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9743b03af9bf795d5f058a14e3f0d5981657e461
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915262"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 此方法返回一个， `GUID` 它表示由对 [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)的调用设置的此进程的语言。
@@ -28,8 +28,8 @@ ms.locfileid: "80723619"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetHostingProcessLanguage(
-   GUID* pguidLang
+HRESULT GetHostingProcessLanguage(
+   GUID* pguidLang
 );
 ```
 
@@ -39,7 +39,7 @@ int GetHostingProcessLanguage(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pguidLang`\
 弄 `GUID` 此进程的语言的。 `GUID_NULL` (c + +) 或 `Guid.Empty` (c # ) 意味着未设置该语言。
 

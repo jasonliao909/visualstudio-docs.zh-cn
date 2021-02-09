@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41adcbe97f9d0779fbad465bac673a3f7cf086c7
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96993531"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912739"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 本指南包含的指南和最佳实践适用于 Visual studio 2015 中引入的 Visual Studio 映像服务和映像目录。
@@ -149,7 +149,7 @@ ms.locfileid: "96993531"
 |ID|请求图像名字对象的 ID 部分|
 |AllowColorInversion|[可选，默认值为 true]指示在深色背景上使用时，图像是否可以通过编程方式进行反转。|
 
- **源**
+ **Source**
 
  \<Source>元素定义单个图像源资产 (XAML 和 PNG) 。
 
@@ -1011,7 +1011,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||参考|
+    |GlyphAssembly||引用|
     |GlyphLibrary||库|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

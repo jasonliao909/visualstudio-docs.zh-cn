@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2496de5d1139d66e4ae9072b551ada990cf856dd
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: ad5b77176d05c28b3ba938a1255de6e10fcd7094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761213"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912755"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安装源代码管理插件
 创建源代码管理插件涉及三个步骤：
@@ -37,7 +37,7 @@ ms.locfileid: "96761213"
 
 #### <a name="to-register-the-source-control-plug-in-dll"></a>注册源代码管理插件 DLL
 
-1. 在指定你的公司名称子密钥后跟产品名称子项的 **软件** 子项中 **HKEY_LOCAL_MACHINE** ，添加两个条目。 模式 **\\ \<company name>HKEY_LOCAL_MACHINE\SOFTWARE\\ \<product name> 值 \\ 。 \<entry>**  =  *value* 这两个条目始终称为 **SCCServerName** 和 **SCCServerPath**。 每个都是一个常规字符串。
+1. 在指定你的公司名称子密钥后跟产品名称子项的 **软件** 子项中 **HKEY_LOCAL_MACHINE** ，添加两个条目。 模式 **\\ \<company name>HKEY_LOCAL_MACHINE\SOFTWARE\\ \<product name> 值 \\ 。 \<entry>**  =   这两个条目始终称为 **SCCServerName** 和 **SCCServerPath**。 每个都是一个常规字符串。
 
     例如，如果你的公司名称为 Microsoft，并且你的源代码管理产品名为 SourceSafe，则将 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SourceSafe** 此注册表路径。 在此子项中，第一项 **SCCServerName** 是用户可读的用于命名产品的字符串。 第二个条目 **SCCServerPath** 是 IDE 应连接到的源代码管理插件 DLL 的完整路径。 下面提供了示例注册表项：
 
@@ -114,9 +114,9 @@ ms.locfileid: "96761213"
 
  首先， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 检查通过调用 [SccGetVersion](../../extensibility/sccgetversion-function.md)返回的值。 它必须大于或等于1.2。
 
- 接下来， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过检查 SccInitialize 的参数来确定是否支持特定的新功能 `lpSccCaps` 。 [SccInitialize](../../extensibility/sccinitialize-function.md)
+ 接下来， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过检查 SccInitialize 的参数来确定是否支持特定的新功能 `lpSccCaps` 。 [](../../extensibility/sccinitialize-function.md)
 
  如果同时满足这两个条件，则可以调用版本1.2 和1.3 中支持的新函数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件入门](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

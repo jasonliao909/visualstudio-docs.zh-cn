@@ -12,15 +12,15 @@ helpviewer_keywords:
 - modules [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 381cb529db3f4116a9c42041c26e0e1e242073df
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e83a1474c7dfe6385c36cc13646bfe40fc897640
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305417"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913627"
 ---
 # <a name="how-to-include-files-by-using-a-module"></a>如何：使用模块包括文件
   *模块* (不会与模块混淆 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 为容器，使你能够将 ASPX 母版页、文本文件或图像等文件部署到 SharePoint。
@@ -37,7 +37,7 @@ ms.locfileid: "96305417"
 
 2. 在 **解决方案资源管理器** 中，选择 "项目" 节点，然后在菜单栏上选择 "**项目**" "  >  **添加新项**"。
 
-     此时将打开“添加新项”  对话框。
+     此时将打开“添加新项”对话框。
 
 3. 在 SharePoint 模板列表中，选择 " **模块** " 模板，然后选择 " **添加** " 按钮。
 
