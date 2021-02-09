@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 33ffd197-1221-41bc-a9f6-f133ebdcb783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a062056f4a61521966417e9923a17f6d85b991a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909431"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 检索有关指定调试地址处的方法的信息。
@@ -50,7 +50,7 @@ int GetMethodFromAddress(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pAddress`\
 中调试地址由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示。
 

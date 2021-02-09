@@ -18,15 +18,15 @@ helpviewer_keywords:
 - Office object models
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fb3134b7656fc5156554e60fc88d16e6c2b58120
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910297"
 ---
 # <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：
@@ -116,7 +116,7 @@ ms.locfileid: "96847684"
 
 ### <a name="related-topics"></a>相关主题
 
-|Title|描述|
+|Title|说明|
 |-----------|-----------------|
 |[Excel 解决方案](../vsto/excel-solutions.md)|说明可以如何创建 Microsoft Office excel 的文档级自定义项和 VSTO 外接程序。|
 |[使用范围](../vsto/working-with-ranges.md)|提供演示如何使用范围执行常见任务的示例。|

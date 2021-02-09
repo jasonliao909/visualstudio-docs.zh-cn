@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a1e9b1f853ad540f65101bffabea922f8fdcef1
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 144e8f965a456c4763a74daa2cedeb8c571e518f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908971"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 
@@ -64,7 +64,7 @@ DSL 的典型应用是生成程序代码或其他项目。 定义 DSL 时，可�
 
 图形域特定语言必须包含以下功能：
 
-- 表示法
+- Notation
 
 - 域模型
 
@@ -74,7 +74,7 @@ DSL 的典型应用是生成程序代码或其他项目。 定义 DSL 时，可�
 
 - 与 Visual Studio 的集成
 
-### <a name="notation"></a>表示法
+### <a name="notation"></a>Notation
 
 域特定语言必须具有一组合理的元素，这些元素可以很容易地定义和扩展以表示特定于域的构造。 表示法由图形组成，表示元素和连接线，它们表示图形图面上元素之间的关系。 在中 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] ，可以对形状进行扩展和优化，以表示域特定语言的元素。
 

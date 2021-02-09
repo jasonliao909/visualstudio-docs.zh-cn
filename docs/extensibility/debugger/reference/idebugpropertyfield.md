@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b50edb2c-fb8d-4def-993d-17d23d2027c1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a3f3c2dca16cd2c28c9d1727e4ac145c91c482
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 303ff1820d0213766ec5ad186ce7b9a3483c0bfa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720693"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909852"
 ---
 # <a name="idebugpropertyfield"></a>IDebugPropertyField
 此接口提供允许获取和设置属性的函数。
@@ -25,7 +25,7 @@ ms.locfileid: "80720693"
 ## <a name="syntax"></a>语法
 
 ```
-IDebugPropertyField : IDebugContainerField
+IDebugPropertyField : IDebugContainerField
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项

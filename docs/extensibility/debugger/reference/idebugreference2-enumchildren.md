@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 35b3c2f3-69f4-4013-b555-f847221f62e8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96b2fec782ce88dfb2200df35f56b35b304beda5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d142f6c3715e2c3888c7ce60f349c50e84f7f16b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720630"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909696"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 获取引用的选定子级的列表。 留待将来使用。
@@ -28,7 +28,7 @@ ms.locfileid: "80720630"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnumChildren ( 
+HRESULT EnumChildren ( 
    DEBUGREF_INFO_FLAGS        dwFields,
    DWORD                      dwRadix,
    DBG_ATTRIB_FLAGS           dwAttribFilter,
@@ -39,7 +39,7 @@ HRESULT EnumChildren ( 
 ```
 
 ```csharp
-int EnumChildren ( 
+int EnumChildren ( 
    enum_DEBUGREF_INFO_FLAGS     dwFields,
    uint                         dwRadix,
    enum_DBG_ATTRIB_FLAGS        dwAttribFilter,
@@ -49,7 +49,7 @@ int EnumChildren ( 
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 枚举中的标志的组合，用于指定要在枚举的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构中填充的字段。
 

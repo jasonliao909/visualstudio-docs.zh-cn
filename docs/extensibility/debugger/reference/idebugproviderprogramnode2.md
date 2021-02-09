@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 815a945f6fb591960ebf0bf4b4fcd9d842ffefd3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e11472c2c883705c36ab71a37b1af10eb1cb5b10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720677"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909817"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 此接口将跨进程边界封送程序相关的接口。

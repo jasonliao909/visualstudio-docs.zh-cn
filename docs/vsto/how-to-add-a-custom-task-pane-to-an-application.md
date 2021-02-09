@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom task panes [Office development in Visual Studio], adding to application
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1e8056eddef6329aeb10ed5545c4146f0af0f167
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: b0bac1f14994dea73526aa3684851412ad2cf1b5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845045"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910207"
 ---
 # <a name="how-to-add-a-custom-task-pane-to-an-application"></a>如何：向应用程序添加自定义任务窗格
   你可以通过使用 VSTO 外接程序向上面列出的应用程序添加自定义任务窗格。 有关详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
@@ -59,7 +59,7 @@ ms.locfileid: "96845045"
     > [!NOTE]
     > 此代码将自定义任务窗格与应用程序中的活动窗口关联。 对于某些应用程序，你可能想要修改此代码以确保任务窗格与应用程序中的其他文档或项目一起显示。 有关详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office UI 自定义](../vsto/office-ui-customization.md)
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

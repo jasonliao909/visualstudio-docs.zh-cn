@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 147bacfa-f66c-43e0-8a72-e601058dc57f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fbac2e234cfc991f27e08dc33bdc895c22d501fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: db92e63ecf6f9fe929fe7a2a398d5e99613f84d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718939"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909410"
 ---
 # <a name="idebugsymbolproviderdirectgetsymunmanagedreader"></a>IDebugSymbolProviderDirect::GetSymUnmanagedReader
 检索非托管代码的符号读取器。
@@ -42,7 +42,7 @@ int GetSymUnmanagedReader (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ulAppDomainID`\
 中应用程序域的标识符。
 
