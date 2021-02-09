@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 936a6c4e-30c5-4c7e-9ad5-910cc605a4b5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3dc5e4bd7144db7fa94425371488bfd8c0e57ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 477cc4d83b48e87d63f7ddff5cef53b53f0050ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734552"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903260"
 ---
 # <a name="idebugcanstopevent2getdocumentcontext"></a>IDebugCanStopEvent2::GetDocumentContext
 获取描述此事件位置的文档上下文。
@@ -28,18 +28,18 @@ ms.locfileid: "80734552"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetDocumentContext ( 
+HRESULT GetDocumentContext ( 
    IDebugDocumentContext2** ppDocCxt
 );
 ```
 
 ```csharp
-int GetDocumentContext ( 
+int GetDocumentContext ( 
    out IDebugDocumentContext2 ppDocCxt
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppDocCxt`\
 弄返回 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 接口，该接口表示源文件文档中与当前代码位置对应的位置。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e65da2b50984b0259079a1693dd31d400e1e12e3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903148"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>为解决方案创建父容器文件夹
 在源代码管理插件 API 版本1.2 中，用户可以为解决方案中的所有 web 项目指定一个根源代码管理目标。 此单个根称为超级统一根 (.SUR) 。
@@ -66,5 +66,5 @@ ms.locfileid: "96329934"
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl] DoNotCreateSolutionRootFolderInSourceControl**  = *dword： 00000001*
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 版本1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

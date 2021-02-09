@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 15a11ad7-0fcc-4e80-ae34-8a7dd7bae3c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7a783025c96053a89956a1c77d46b5e417938a2b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8ee9f303223da15bc75adbf31d533848fb017bb1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901904"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 此方法获取包含符号当前值的内存上下文或对象。
@@ -28,7 +28,7 @@ ms.locfileid: "80736017"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Bind( 
+HRESULT Bind( 
    IDebugObject*  pContainer,
    IDebugField*   pField,
    IDebugObject** ppObject
@@ -43,7 +43,7 @@ int Bind(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pContainer`\
 中包含由引用的子级的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) `pField` 。
 

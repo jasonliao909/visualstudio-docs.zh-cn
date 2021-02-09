@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8dd62c01bad3ac50a57062729fe96588a7ef5be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801862"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902190"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 
@@ -26,7 +26,7 @@ Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控�
 
 ## <a name="prerequisites"></a>先决条件
 
-从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 你还可以在以后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-toolbox-control"></a>创建工具箱控件
 
@@ -36,9 +36,9 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 1. 创建一个名为的 VSIX 项目 `MyWinFormsControl` 。 通过搜索 "vsix"，可以在 " **新建项目** " 对话框中找到 vsix 项目模板。
 
-2. 项目打开时，添加一个名为的 **Windows 窗体工具箱控件** 项模板 `Counter` 。 在**解决方案资源管理器**中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 **"Windows 窗体工具箱控件**
+2. 项目打开时，添加一个名为的 **Windows 窗体工具箱控件** 项模板 `Counter` 。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 **"Windows 窗体工具箱控件**
 
-3. 这将添加一个用户控件，将控件放置在 "工具箱" 中，将 " `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **VisualStudio. ToolboxControl** " 资产条目添加到部署的 VSIX 清单中。 **Toolbox**
+3. 这将添加一个用户控件，将控件放置在 "工具箱" 中，将 " `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> **VisualStudio. ToolboxControl** " 资产条目添加到部署的 VSIX 清单中。 
 
 ### <a name="build-a-user-interface-for-the-control"></a>为控件生成用户界面
 
@@ -46,7 +46,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 #### <a name="to-build-the-user-interface"></a>构建用户界面
 
-1. 在 **解决方案资源管理器**中，双击 *Counter.cs* 以在设计器中将其打开。
+1. 在 **解决方案资源管理器** 中，双击 *Counter.cs* 以在设计器中将其打开。
 
 2. 删除 **单击此处！** 添加 Windows 窗体工具箱控件项模板时默认包含的按钮。
 
@@ -80,16 +80,16 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 3. 创建以下公共属性声明。
 
     ```csharp
-    public int Value {
+    public int Value {
         get { return currentValue; }
     }
 
-    public string Message {
+    public string Message {
         get { return displayText; }
         set { displayText = value; }
     }
 
-    public bool ShowReset {
+    public bool ShowReset {
         get { return btnReset.Visible; }
         set { btnReset.Visible = value; }
     }
@@ -101,7 +101,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 4. 在控件的事件中添加以下代码 `Load` 。
 
     ```csharp
-    private void Counter_Load(object sender, EventArgs e)
+    private void Counter_Load(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = Message + Value;
@@ -114,7 +114,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 5. 创建以下公共方法以递增计数器。
 
     ```csharp
-    public void Increment()
+    public void Increment()
     {
         currentValue++;
         label1.Text = displayText + Value;
@@ -126,7 +126,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 6. 将事件的声明添加 `Incremented` 到 control 类。
 
     ```csharp
-    public event EventHandler Incremented;
+    public event EventHandler Incremented;
     ```
 
     调用方可以向此事件添加处理程序，以响应计数器值的更改。
@@ -134,7 +134,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 7. 返回到 "设计" 视图，然后双击 " **重置** " 按钮以生成 `btnReset_Click` 事件处理程序。 然后，填写它，如下面的示例中所示。
 
     ```csharp
-    private void btnReset_Click(object sender, EventArgs e)
+    private void btnReset_Click(object sender, EventArgs e)
     {
         currentValue = 0;
         label1.Text = displayText + Value;
@@ -142,13 +142,13 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
     ```
 
-8. 在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱” **** 中托管控件的项组名称。
+8. 在类定义正上方的 `ProvideToolboxControl` 特性声明中，将第一个参数的值从 `"MyWinFormsControl.Counter"` 改为 `"General"`。 这会设置将在“工具箱” 中托管控件的项组名称。
 
     以下示例演示了 `ProvideToolboxControl` 特性和调整后的类定义。
 
     ```csharp
     [ProvideToolboxControl("General", false)]
-    public partial class Counter : UserControl
+    public partial class Counter : UserControl
     ```
 
 ### <a name="test-the-control"></a>测试控件
@@ -163,7 +163,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 2. 在 Visual Studio 的实验实例中，创建一个 **Windows 窗体应用程序** 项目。
 
-3. 在 **解决方案资源管理器**中，双击 " *Form1.cs* " 以在设计器中将其打开（如果尚未打开）。
+3. 在 **解决方案资源管理器** 中，双击 " *Form1.cs* " 以在设计器中将其打开（如果尚未打开）。
 
 4. 在 " **工具箱**" 中， `Counter` 控件应显示在 " **常规** " 部分中。
 
@@ -190,7 +190,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
     else counter1.ShowReset = true;
     ```
 
-13. 按 **F5**。
+13. 按 F5 。
 
     此时将打开窗体。 `Counter`控件将显示以下文本。
 
@@ -206,15 +206,15 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 16. 选择 " **测试** "，直到每次计数器变为 **5** 时关闭消息框。
 
-    **重新设置**按钮将再次出现。
+    **重新设置** 按钮将再次出现。
 
-17. 选择“重置”****。
+17. 选择“重置”。
 
     计数器将重置为 **0**。
 
 ## <a name="next-steps"></a>后续步骤
 
-生成 **"工具箱** " 控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称 .vsix* 的文件。 可以通过将 *.vsix* 文件上载到网络或网站来部署此控件。 当用户打开 *.vsix* 文件时，控件将安装并添加到用户计算机上的 Visual Studio **工具箱** 中。 或者，你可以将 *.vsix*文件上载到[Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，以便用户可以通过在 "**工具**" "  >  **扩展和更新**" 对话框中浏览来查找它。
+生成 **"工具箱** " 控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称 .vsix* 的文件。 可以通过将 *.vsix* 文件上载到网络或网站来部署此控件。 当用户打开 *.vsix* 文件时，控件将安装并添加到用户计算机上的 Visual Studio **工具箱** 中。 或者，你可以将 *.vsix* 文件上载到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，以便用户可以通过在 "**工具**" "  >  **扩展和更新**" 对话框中浏览来查找它。
 
 ## <a name="see-also"></a>另请参阅
 

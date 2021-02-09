@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Visio [Office development in Visual Studio], opening Visio documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ec46f4fd7be136d16e15e9fa366b7a4cb921b62e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cb24851562beec0b40a8e66a38db202745f4771e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523843"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903663"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   可以通过两种方法打开现有 Microsoft Office Visio 文档： Open 和 Microsoft.office.interop.visio.documents.open。 Microsoft.office.interop.visio.documents.open 方法与 Open 方法相同，不同之处在于它提供调用方可以在其中指定文档打开方式的参数。
