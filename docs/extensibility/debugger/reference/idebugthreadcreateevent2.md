@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1aaa25e719f17701344d821759a0dac06aa88698
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d39b7f1120f2ee4d0548e2c8a0b9a75f2fe0bd56
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901610"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 当在正在调试的程序中创建线程时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
@@ -25,7 +25,7 @@ ms.locfileid: "80718535"
 ## <a name="syntax"></a>语法
 
 ```
-IDebugThreadCreateEvent2 : IUnknown
+IDebugThreadCreateEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项

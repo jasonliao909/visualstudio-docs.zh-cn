@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 222a3b2c6110f1998a4848f382694b6b999cd632
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28c0d07dd389814c0aa06792f4509ed9da1b4ef9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901684"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 获取反汇编流的作用域。
@@ -28,18 +28,18 @@ ms.locfileid: "80732138"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetScope( 
+HRESULT GetScope( 
    DISASSEMBLY_STREAM_SCOPE* pdwScope
 );
 ```
 
 ```csharp
-int GetScope( 
+int GetScope( 
    out enum_ DISASSEMBLY_STREAM_SCOPE pdwScope
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwScope`\
 弄返回 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 枚举中的一个值，该值描述此反汇编流的作用域。
 

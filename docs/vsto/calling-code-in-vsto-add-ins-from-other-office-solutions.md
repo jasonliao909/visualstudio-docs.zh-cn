@@ -16,15 +16,15 @@ helpviewer_keywords:
 - calling code from VBA
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fad3f107487e4736ccd0a6aa59ea5a801b5f72e5
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: deb8fec9212c686bce670df6bab23ed56e51741f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847840"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903803"
 ---
 # <a name="call-code-in-vsto-add-ins-from-other-office-solutions"></a>从其他 Office 解决方案调用 VSTO 外接程序中的代码
   可以向其他解决方案（包括其他 Microsoft Office 解决方案）公开 VSTO 外接程序中的对象。 如果 VSTO 外接程序提供了你希望使其他解决方案能够使用的服务，这一点非常有用。 例如，如果您有 Microsoft Office Excel 的 VSTO 外接程序从 Web 服务中执行财务数据计算，则其他解决方案可以通过在运行时调用 Excel VSTO 外接程序来执行这些计算。
@@ -84,7 +84,7 @@ ms.locfileid: "96847840"
 ### <a name="expose-classes-to-vba"></a>向 VBA 公开类
  执行上述步骤时，VBA 代码只能调用在接口中声明的方法。 VBA 代码无法调用类中的任何其他方法，包括类从基类（如 <xref:System.Object>）中获取的方法。
 
- 也可以通过将属性[IDispatch](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)设置 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 为枚举的 AutoDispatch 或 AutoDual 值，来公开 IDispatch 接口 <xref:System.Runtime.InteropServices.ClassInterfaceType> 。 如果公开接口，则不必在单独的接口中声明方法。 不过，VBA 代码可以调用类中的任何公共方法和非静态方法，包括从基类（如 <xref:System.Object>）获取的方法。 此外，使用早期绑定的进程外客户端不能调用你的类。
+ 也可以通过将属性[](/previous-versions/windows/desktop/api/oaidl/nn-oaidl-idispatch)设置 <xref:System.Runtime.InteropServices.ClassInterfaceAttribute> 为枚举的 AutoDispatch 或 AutoDual 值，来公开 IDispatch 接口 <xref:System.Runtime.InteropServices.ClassInterfaceType> 。 如果公开接口，则不必在单独的接口中声明方法。 不过，VBA 代码可以调用类中的任何公共方法和非静态方法，包括从基类（如 <xref:System.Object>）获取的方法。 此外，使用早期绑定的进程外客户端不能调用你的类。
 
 ### <a name="expose-classes-to-out-of-process-clients"></a><a name="outofproc"></a> 向进程外客户端公开类
  如果要向进程外客户端公开 VSTO 外接程序中的类，则应从 <xref:System.Runtime.InteropServices.StandardOleMarshalObject> 派生该类，以确保进程外客户端可以调用公开的 VSTO 外接程序对象。 否则，尝试在进程外客户端中获取已公开对象的实例可能会意外失败。
@@ -144,7 +144,7 @@ utilities.ImportData();
 
  在此示例中，如果尝试将 COMAddIn 属性的值强制转换为 `AddInUtilities` 类而不是 `IAddInUtilities` 接口，则代码将引发 <xref:System.InvalidCastException> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)

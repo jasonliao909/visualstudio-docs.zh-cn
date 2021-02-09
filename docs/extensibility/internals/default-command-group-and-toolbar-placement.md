@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cacf8db933c7d56d44351da11b7b310bc0bdb8aa
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902952"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>默认命令、组和工具栏位置
 对于产品一致性和稳定性，UI 默认显示特定的命令组，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供命令和命令组的定义。 Vspackage 还可以使用标准命令和命令组。
@@ -42,6 +42,6 @@ ms.locfileid: "96329875"
 
  编辑器工具栏应放置在 IDE 和 product 工具栏下方。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

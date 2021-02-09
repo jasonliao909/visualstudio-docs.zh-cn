@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2fd2ba746f10094a79f1b37e57ba4ca90ff117b
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99902972"
 ---
 # <a name="custom-parameters"></a>自定义参数
 自定义参数用于在向导启动之后控制向导的操作。 相关的 *.vsz* 文件提供一个用户定义参数数组，这些参数由集成开发环境打包 (IDE) 并在启动向导时作为字符串数组传递到向导。 然后，该向导会分析字符串数组，并使用该信息来控制向导的实际操作。 通过这种方式，向导可以根据 *.vsz* 文件的内容自定义功能。
@@ -43,7 +43,7 @@ Param="PROJECT_TYPE = CSPROJ"
 
  有关详细信息，请参阅 [向导 ( .vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - [上下文参数](../../extensibility/internals/context-parameters.md)
 - [向导](../../extensibility/internals/wizards.md)

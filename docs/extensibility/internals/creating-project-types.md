@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4038a122c6d2ec5f6ed29df6e529b2bff2e2bb71
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 26e616ac9862f6a077115c23bef426a94ab3ecbf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903031"
 ---
 # <a name="create-project-types"></a>创建项目类型
 可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过创建新的项目类型来扩展。 若要创建新的项目类型，您必须了解若干概念并完成多个步骤。 以下主题概述了如何创建项目类型。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)
 
  讨论了在创建新的项目类型之前必须做出的项目、项目文件持久性和承诺 mechanic 设计决策。

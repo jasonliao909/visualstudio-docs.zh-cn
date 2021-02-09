@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b4d0ddee-c04b-48dc-ba82-f6068570cef0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 648a8e45b5b472ccc1a37cd69e2043f0bb5b9aa3
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 7df029be478fef3cf1e9b6138456986016465d5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903006"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 可以通过将自定义可着色项作为语言服务的一部分实现，来重写着色的类型列表，如关键字和注释。
@@ -66,7 +66,7 @@ ms.locfileid: "96328530"
 
     有关如何实现 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorableItem> 和接口的示例 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> ，请参见 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiColorItem> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务的模型](../../extensibility/internals/model-of-a-legacy-language-service.md)
 - [自定义编辑器中的语法着色](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [旧版语言服务中的语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

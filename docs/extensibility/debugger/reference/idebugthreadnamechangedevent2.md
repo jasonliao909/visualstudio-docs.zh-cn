@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 34c1652e-f019-48ba-8b26-ace20f8a158c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e218fc2ed99e0f180421aede1fc3aa212dcfa993
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cdb65d73db0e506e5cba89834c0c7e90fdf6e8f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718457"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901585"
 ---
 # <a name="idebugthreadnamechangedevent2"></a>IDebugThreadNameChangedEvent2
 当正在调试的程序中的线程名称更改时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
@@ -25,7 +25,7 @@ ms.locfileid: "80718457"
 ## <a name="syntax"></a>语法
 
 ```
-IDebugThreadNameChangedEvent2 : IUnknown
+IDebugThreadNameChangedEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
