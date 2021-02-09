@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad763e748fc20a9704df48b17a5d3d8d40c3883c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 49ae9c27b27a1b3e32338521315007903d9e6825
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884762"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、菜单和工具栏
 菜单和工具栏是用户访问 VSPackage 中的命令的方式。 命令是完成任务（如打印文档、刷新视图或创建新文件）的函数。 菜单和工具栏是用于向用户呈现命令的方便图形方式。 通常，相关命令在相同菜单或工具栏上聚集在一起。
@@ -36,7 +36,7 @@ ms.locfileid: "96304798"
 
   本节中的主题介绍如何在 Vspackage 中使用命令、菜单和工具栏。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
  命令表格格式规范的详细说明。

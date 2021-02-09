@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64eda9c95b9c469d8defc8ab0318031e9e43172a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305036"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884723"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果通过 *.msi* 文件部署扩展，则必须在安装过程中运行 **Devenv/Setup** ，Visual Studio 才能发现扩展。
@@ -26,7 +26,7 @@ ms.locfileid: "96305036"
 > 本主题中的信息适用于通过 Visual Studio 2008 和更早版本查找 *devenv.exe* 。 有关如何发现更高版本的 Visual Studio *devenv.exe* 的信息，请参阅 [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
 
 ## <a name="find-devenvexe"></a>查找 devenv.exe
- 您可以 *devenv.exe* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 RegLocator 表和 AppSearch 表将注册表值存储为属性，从安装程序编写的注册表值中查找每个版本的devenv.exe。 有关详细信息，请参阅 [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
+ 您可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 RegLocator 表和 AppSearch 表将注册表值存储为属性，从安装程序编写的注册表值中查找每个版本的devenv.exe。 有关详细信息，请参阅 [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)。
 
 ### <a name="reglocator-table-rows-to-locate-devenvexe-from-different-versions-of-visual-studio"></a>RegLocator 表行，用于从不同版本的 Visual Studio 查找 devenv.exe
 

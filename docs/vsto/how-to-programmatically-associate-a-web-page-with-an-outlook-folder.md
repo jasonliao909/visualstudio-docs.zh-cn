@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web pages [Office development in Visual Studio], Outlook folders
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4c2ee5e6494023ee3d5bca97f96ad3c8fe35517
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 35fad43f78d654cfaf9e06c1f432c620da830dd4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885568"
 ---
 # <a name="associate-a-web-page-with-an-outlook-folder"></a>将网页与 Outlook 文件夹关联
 
@@ -32,7 +32,7 @@ ms.locfileid: "96847502"
 ## <a name="example"></a>示例
  [!code-csharp[Trin_OL_HTMLFolder#1](../vsto/codesnippet/CSharp/Trin_OL_HTMLFolder/thisaddin.cs#1)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用文件夹](../vsto/working-with-folders.md)
 - [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)
 - [如何：以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)

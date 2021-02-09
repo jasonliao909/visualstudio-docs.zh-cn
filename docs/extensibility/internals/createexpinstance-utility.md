@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02e85a96d59645787d3018100949369d52c8980
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305358"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884580"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
 使用 **CreateExpInstance** 实用工具可以创建、重置或删除 Visual Studio 的实验实例。 您可以使用实验实例来调试和测试 Visual Studio 扩展，而无需更改基础产品。
@@ -32,7 +32,7 @@ ms.locfileid: "96305358"
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
  **/Create** 创建实验实例。
 
  **/Reset** 删除实验实例，然后创建一个新实例。
@@ -43,7 +43,7 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/RootSuffix** 要追加到实验实例目录的名称的后缀。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  当你使用 Visual Studio 扩展时，可以按 F5 打开默认实验实例，并安装当前扩展。 如果没有可用的实验实例，Visual Studio 会创建一个具有默认设置的。
 
  实验实例的默认位置取决于 Visual Studio 版本号。 例如，对于 Visual Studio 2015，此位置是 *%localappdata%\Microsoft\VisualStudio\14.0Exp \\*。 目录位置中的所有文件都被视为该实例的一部分。 Visual Studio 不会加载任何其他实验实例，除非将目录名称更改为默认位置。

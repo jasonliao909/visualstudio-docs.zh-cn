@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1371472a4dec265b5e476d96a32cb725e91ce7fe
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487551"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884476"
 ---
 # <a name="test-area-6-delete"></a>测试区域 6：删除
 此源代码管理插件测试区域包含删除操作。
@@ -54,5 +54,5 @@ ms.locfileid: "97487551"
 |删除文件系统 Web 项目|1. 创建文件系统 Web 项目 (使用 "浏览" 按钮指定 UNC 路径) 。<br />2. 将解决方案添加到源代码管理。<br />3. 从解决方案中删除整个项目。<br />4. 为本地 Web 项目重复步骤1到 3 (在代码中执行不同的路径，但具有相同的外部接口和行为) 。|常见的预期行为。|
 |从文件系统 Web 项目中删除文件|1. 创建文件系统 Web 项目。<br />2. 将解决方案添加到源代码管理。<br />3. 从项目中删除文件。<br />4. 为本地 Web 项目重复步骤1到 3 (在代码中执行不同的路径，但具有相同的外部接口和行为) 。|常见的预期行为。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

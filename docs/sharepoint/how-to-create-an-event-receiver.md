@@ -16,15 +16,15 @@ helpviewer_keywords:
 - event receivers [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2e94bd1594f94f43c82eed5033d6ec2660905c18
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94849878"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885698"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
   通过创建 *事件接收器*，你可以在用户与 SharePoint 项（如列表或列表项）交互时做出响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过遵循本主题，可以了解如何将事件接收器添加到列表实例。
@@ -40,7 +40,7 @@ ms.locfileid: "94849878"
 
 2. 在 **解决方案资源管理器** 中，选择名为 " **诊所**" 的 SharePoint 项目节点。
 
-3. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+3. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 4. 在 **Visual c #** 或 **Visual Basic** 下，展开 " **SharePoint** " 节点，然后选择 **2010** 项。
 

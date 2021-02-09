@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa0b0e3e8ea59ce1d41f9d8a6c056239f2bc0e9a
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305545"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884528"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
 将 Visual Studio 扩展的 .dll 文件作为参数，并创建 *.pkgdef* 文件以伴随 *.dll* 文件。 *.Pkgdef* 文件包含在安装扩展后将写入系统注册表的所有信息。
@@ -47,7 +47,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 **&lt;AssemblyPath&gt;**\
 要从中生成 *. .pkgdef* 的 *.dll* 文件的路径。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 使用 *.pkgdef* 文件的扩展部署将替换 Visual Studio 早期版本的注册表要求。
 
 ::: moniker range=">=vs-2019"

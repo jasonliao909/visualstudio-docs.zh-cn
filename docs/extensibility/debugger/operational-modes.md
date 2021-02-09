@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf32dcbe8b4d2e925bcfd48635063ecd0a5b74
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: e0187a02dd14966ee9354d8865991531f1d66ae6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606601"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884892"
 ---
 # <a name="operational-modes"></a>操作模式
 IDE 可在三种模式下运行，如下所示：
@@ -56,5 +56,5 @@ IDE 可在三种模式下运行，如下所示：
 
  当程序成功地执行下一行代码或进入函数时，或者运行到游标或设置断点时，将自动转换回中断模式。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [控制执行](../../extensibility/debugger/control-of-execution.md)
