@@ -22,15 +22,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], designer
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b6e78b6809d3136c0db1f558d175706dc0ecd75b
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851681"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   您可以通过使用 "bdc 设计器"、" **Bdc 方法详细信息** " 窗口和 " **Bdc 资源管理器**" (bdc) 模型中设计业务数据连接。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8fa610af3ae00d30462c1a3a0c825e5a85722cdc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c170c647878088a84dd14ce658bd738d3c6733b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721456"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851005"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 获取属性值的内存上下文。
@@ -28,7 +28,7 @@ ms.locfileid: "80721456"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMemoryContext ( 
+HRESULT GetMemoryContext ( 
    IDebugMemoryContext2** ppMemory
 );
 ```
@@ -39,7 +39,7 @@ int GetMemoryContext(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppMemory`\
 弄返回 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，该对象表示与此属性关联的内存。
 

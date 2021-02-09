@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 654ebf68efebaa44766079c172e87396134805e3
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852617"
 ---
 # <a name="context-parameters"></a>上下文参数
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境中 (IDE) ，你可以将向导添加到 " **新建项目**"、" **添加新项**" 或 " **添加子项目** " 对话框。 添加的向导位于 " **文件** " 菜单上，或右键单击 " **解决方案资源管理器** 中的项目。 IDE 将上下文参数传递到向导实现。 上下文参数定义在 IDE 调用向导时项目的状态。
@@ -27,7 +27,7 @@ ms.locfileid: "96304709"
 
 ## <a name="context-parameters-for-new-project"></a>新项目的上下文参数
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |-------------------------| - |
 | `WizardType` | 已注册向导类型 (<xref:EnvDTE.Constants.vsWizardNewProject>) 或指示向导类型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 实现中，向导的 GUID 为 {0F90E1D0-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 作为唯一项目名称的字符串 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
@@ -39,7 +39,7 @@ ms.locfileid: "96304709"
 
 ## <a name="context-parameters-for-add-new-item"></a>添加新项的上下文参数
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |-------------------------| - |
 | `WizardType` | 已注册向导类型 (<xref:EnvDTE.Constants.vsWizardAddItem>) 或指示向导类型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 实现中，向导的 GUID 为 {0F90E1D1-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 作为唯一项目名称的字符串 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
@@ -50,7 +50,7 @@ ms.locfileid: "96304709"
 
 ## <a name="context-parameters-for-add-sub-project"></a>添加子项目的上下文参数
 
-| 参数 | 描述 |
+| 参数 | 说明 |
 |-------------------------| - |
 | `WizardType` | 已注册向导类型 (<xref:EnvDTE.Constants.vsWizardAddSubProject>) 或指示向导类型的 GUID。 在 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 实现中，向导的 GUID 为 {0F90E1D2-4999-11D1-B6D1-00A0C90F2744}。 |
 | `ProjectName` | 作为唯一项目名称的字符串 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |

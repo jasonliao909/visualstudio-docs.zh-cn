@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 650e4bc5cb88800ffd7c61693118c3c2081877c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed7a3b72f35c21c61bd805a45307a98556208d72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852796"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
 返回此对象的初始数据。
@@ -39,7 +39,7 @@ int GetInitialData(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dataOut`\
 弄返回一个 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象，该对象包含此对象的初始数据。
 

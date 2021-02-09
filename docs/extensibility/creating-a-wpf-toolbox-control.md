@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6dbe9ed00223fa549420537579d39a4c88cf37cb
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973969"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851434"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 
@@ -102,4 +102,4 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许您创建在安�
 
 3. 将 *.vsix* 文件上载到网络或网站。
 
-    如果将文件上传到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站，则其他用户可以使用 **Tools**  >  Visual Studio 中的工具 **扩展和更新** 来联机查找控件并安装。
+    如果将文件上传到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站，则其他用户可以使用  >  Visual Studio 中的工具 **扩展和更新** 来联机查找控件并安装。

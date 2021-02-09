@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 09b237704a5b42f75c2239bd6d159e3d58e3025e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 14f6add337ecfae3ab0dc5aa77a72962f2a0a915
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851590"
 ---
 # <a name="how-to-create-a-sharepoint-web-part-by-using-a-designer"></a>如何：使用设计器创建 SharePoint Web 部件
   您可以通过向任何 SharePoint 项目添加 " **可视 Web 部件** " 项来创建 web 部件。 这会打开 visual Studio 中的 Visual Web Developer 设计器，你可以在其中向 Web 部件添加控件和代码。 可视化 web 部件的工作方式与 web 部件的工作方式相同。 唯一的区别是，在 Visual Web Developer 设计器中设计可视 web 部件。
@@ -45,7 +45,7 @@ ms.locfileid: "94903710"
 
 ### <a name="to-add-a-visual-web-part-to-an-existing-sharepoint-project"></a>向现有 SharePoint 项目添加可视 web 部件
 
-1. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+1. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 2. 在 " **添加新项** " 对话框中，选择 " **Office/SharePoint** " 节点。
 
