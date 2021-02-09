@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 40d78417-fde2-45c3-96c9-16e06bd9008d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb6ea896285c784021402400597ba168f6ccf716
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874173"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 将 (SDM) 的会话调试管理器附加到进程。
@@ -28,29 +28,29 @@ ms.locfileid: "80724191"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Attach( 
-   IDebugEventCallback2* pCallback,
-   GUID*                 rgguidSpecificEngines,
-   DWORD                 celtSpecificEngines,
-   HRESULT*              rghrEngineAttach
+HRESULT Attach( 
+   IDebugEventCallback2* pCallback,
+   GUID*                 rgguidSpecificEngines,
+   DWORD                 celtSpecificEngines,
+   HRESULT*              rghrEngineAttach
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugEventCallback2 pCallback,
-   Guid[]               rgguidSpecificEngines,
-   uint                 celtSpecificEngines,
-   int[]                rghrEngineAttach
+int Attach( 
+   IDebugEventCallback2 pCallback,
+   Guid[]               rgguidSpecificEngines,
+   uint                 celtSpecificEngines,
+   int[]                rghrEngineAttach
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pCallback`\
 中用于调试事件通知的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 对象。
 
 `rgguidSpecificEngines`\
-中用于调试进程中运行的程序的调试引擎的 Guid 数组。 此参数可以为 null 值。 有关详细信息，请参阅备注。
+中用于调试进程中运行的程序的调试引擎的 Guid 数组。 此参数可以为 null 值。 有关详细信息，请参阅“备注”。
 
 `celtSpecificEngines`\
 中数组中的调试引擎数 `rgguidSpecificEngines` 和 `rghrEngineAttach` 数组大小。

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6ad0befdfc656233373e8c79d14495aa3f7fa21e
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850645"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873601"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何：创建 SharePoint 项目项扩展
   如果要向已安装在 Visual Studio 中的 SharePoint 项目项添加功能，请创建项目项扩展。 有关详细信息，请参阅 [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。

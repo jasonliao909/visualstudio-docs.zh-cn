@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: f3152c4e-7673-4047-a079-2326941d1c83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: d05d33074f48e59e365792fda63897b1d38cd585
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 95c797de1e68b275fa1a36ec8fa1f97f665cfd18
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873913"
 ---
 # <a name="walkthrough-display-statement-completion"></a>演练：显示语句完成
 您可以通过定义要为其提供完成的标识符，然后触发完成会话来实现基于语言的语句完成。 您可以在语言服务的上下文中定义语句结束，定义自己的文件扩展名和内容类型，然后仅为该类型显示完成。 或者，可以触发现有内容类型（例如，"纯文本"）的完成。 本演练演示如何为 "纯文本" 内容类型（文本文件的内容类型）触发语句结束。 "Text" 内容类型是所有其他内容类型（包括代码和 XML 文件）的上级。

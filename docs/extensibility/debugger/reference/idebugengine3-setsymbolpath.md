@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fbe5128900fa10147c747cbcba4129e96d4c4ce
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aee3b02acfa54cbe9d947be8cb781725ebb4d071
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730664"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874291"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 设置要为调试符号搜索的一个或哪些路径。
@@ -43,7 +43,7 @@ int SetSymbolPath(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 
 `szSymbolSearchPath`\
 中包含符号搜索路径的字符串。 有关详细信息，请参阅 "备注"。 不能为 null。
@@ -60,7 +60,7 @@ int SetSymbolPath(
 ## <a name="remarks"></a>备注
  字符串 `szSymbolSearchPath` 是用分号分隔的一个或多个路径的列表，用于搜索符号。 这些路径可以是本地路径、UNC 样式路径或 URL。 这些路径也可以是不同类型的混合。 如果路径为 UNC (例如， \\ \Symserver\Symbols) ，则调试引擎应确定该路径是否指向符号服务器，并应能够从该服务器加载符号，并将它们缓存到指定的路径中 `szSymbolCachePath` 。
 
- 符号路径还可以包含一个或多个缓存位置。 缓存按优先级顺序列出，最高优先级缓存优先，并用 * 符号分隔。 例如：
+ 符号路径还可以包含一个或多个缓存位置。 缓存按优先级顺序列出，最高优先级缓存优先，并用 * 符号分隔。 例如： 。
 
 ```
 \\symbols\symbols;\\someotherserver\symbols;c:\symbols\httpsymbols*https://msdl.microsoft.com

@@ -9,16 +9,16 @@ f1_keywords:
 - System.Activities.Statements.StateMachine.UI
 ms.assetid: 474d5fb3-1049-4b3f-bc6b-7524dbbe1672
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: dacb6dfa5c30ce174c64accfedf82f1c288c734d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 7fe26f8d0ea127189d115692bd01fa538bf8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873497"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活动设计器
 
@@ -26,7 +26,7 @@ ms.locfileid: "94433942"
 
 ## <a name="using-the-statemachine-activity-designer"></a>使用 StateMachine 活动设计器
 
-若要添加 <xref:System.Activities.Statements.StateMachine> 活动，请将 " **StateMachine** " 活动设计器从 " **工具箱** " 的 " **状态机** " 部分拖放到工作流设计器图面上。 若要将子状态添加到此 <xref:System.Activities.Statements.StateMachine> 活动，请 <xref:System.Activities.Statements.State> 从 "工具箱" 中将或拖 <xref:System.Activities.Core.Presentation.FinalState> 放到 **StateMachine** 上。 **Toolbox**
+若要添加 <xref:System.Activities.Statements.StateMachine> 活动，请将 " **StateMachine** " 活动设计器从 "**工具箱**" 的 "**状态机**" 部分拖放到工作流设计器图面上。 若要将子状态添加到此 <xref:System.Activities.Statements.StateMachine> 活动，请 <xref:System.Activities.Statements.State> 从 "工具箱" 中将或拖 <xref:System.Activities.Core.Presentation.FinalState> 放到 **StateMachine** 上。 
 
 ### <a name="statemachine-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 StateMachine 活动属性
 
@@ -34,7 +34,7 @@ ms.locfileid: "94433942"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.StateMachine> 活动设计器在标头中的友好名称。 默认值为 **StateMachine** 。 可以在属性网格或直接在活动设计器的标头中编辑该值。 <xref:System.Activities.Activity.DisplayName%2A> 用于痕迹导航，后者显示在工作流设计器顶部。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.StateMachine> 活动设计器在标头中的友好名称。 默认值为 **StateMachine**。 可以在属性网格或直接在活动设计器的标头中编辑该值。 <xref:System.Activities.Activity.DisplayName%2A> 用于痕迹导航，后者显示在工作流设计器顶部。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
 ## <a name="see-also"></a>另请参阅
 
