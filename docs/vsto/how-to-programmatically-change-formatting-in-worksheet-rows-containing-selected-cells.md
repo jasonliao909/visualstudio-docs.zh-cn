@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, changing formatting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 088b24a93cb82cc7807a996c26c9b2bbbabec04e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 62b9f94bfa423b149fef6abb984a03536d0e3d8c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875310"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何：以编程方式在包含选定单元格的工作表行中更改格式设置
   您可以更改包含选定单元格的整行的字体，使文本为粗体。
@@ -72,7 +72,7 @@ ms.locfileid: "96847944"
  [!code-csharp[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#36)]
  [!code-vb[Trin_VstcoreExcelAutomation#36](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#36)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [如何：以编程方式在工作表之间复制数据和格式设置](../vsto/how-to-programmatically-copy-data-and-formatting-across-worksheets.md)

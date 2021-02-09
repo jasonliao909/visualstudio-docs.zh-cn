@@ -9,19 +9,19 @@ f1_keywords:
 ms.assetid: 63cdea6b-bca2-4c06-b8b4-c8faabd40726
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e58655f9baf91766fc9b8ff15afe708f1069a565
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: b8f194ee792f2a60df71a78af6f41e45aaac91da
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94433669"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875258"
 ---
 # <a name="type-collection-editor-dialog-box"></a>“类型集合编辑器”对话框
 
-" **类型集合编辑器** " 对话框用于向 **发送** 和 **接收** 活动添加已知类型。 此对话框还用于将泛型类型参数添加到 **InvokeMethod** 活动。 当用于 **发送** 和 **接收** 活动以添加已知类型时，" **类型集合编辑器** " 对话框要求类型添加项是唯一的。 如果添加了重复类型并且通过单击 **"确定** " 来提交更改，则返回一条错误消息。 当用于 **InvokeMethod** 活动以添加泛型类型参数时，" **类型集合编辑器** " 对话框允许添加重复的类型。
+" **类型集合编辑器** " 对话框用于向 **发送** 和 **接收** 活动添加已知类型。 此对话框还用于将泛型类型参数添加到 **InvokeMethod** 活动。 当用于 **发送** 和 **接收** 活动以添加已知类型时，" **类型集合编辑器** " 对话框要求类型添加项是唯一的。 如果添加了重复类型并且通过单击 **"确定**" 来提交更改，则返回一条错误消息。 当用于 **InvokeMethod** 活动以添加泛型类型参数时，" **类型集合编辑器** " 对话框允许添加重复的类型。
 
 有关详细信息，请参阅 [数据协定已知类型](/dotnet/framework/wcf/feature-details/data-contract-known-types)。
 

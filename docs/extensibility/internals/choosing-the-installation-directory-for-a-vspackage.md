@@ -9,27 +9,27 @@ helpviewer_keywords:
 ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cfb7f339ca9832db8fdfea47a5bc1aa940534823
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: ea697e6e445eeae117bb6bf1d1603220ec0c0675
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189974"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99874069"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>选择 VSPackage 的安装目录
 VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是托管的还是非托管的、并排版本控制方案和用户选择。
 
 ## <a name="unmanaged-vspackages"></a>非托管 Vspackage
- 非托管 VSPackage 是可以安装在任何位置的 COM 服务器。 其注册信息必须准确反映其位置。 安装程序用户界面 (UI) 应提供 Windows Installer 属性值的子目录的默认位置 `ProgramFilesFolder` 。 例如：
+ 非托管 VSPackage 是可以安装在任何位置的 COM 服务器。 其注册信息必须准确反映其位置。 安装程序用户界面 (UI) 应提供 Windows Installer 属性值的子目录的默认位置 `ProgramFilesFolder` 。 例如： 。
 
 *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \V1。0\\*
 
  应该允许用户更改默认目录，以适应保留小型启动分区并更喜欢在另一卷上安装应用程序和工具的用户。
 
- 如果并排方案使用了版本控制的 VSPackage，则可以使用子目录来存储不同的版本。 例如：
+ 如果并排方案使用了版本控制的 VSPackage，则可以使用子目录来存储不同的版本。 例如： 。
 
  *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2002\\*
 
@@ -61,7 +61,7 @@ VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决
 
 如果 VSPackage DLL 包含资源，并且 **SatelliteDll\DllName** 注册表项指向它，则 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会尝试按上述顺序加载它们。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在共享和版本控制之间进行选择 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [管理 VSPackage](../../extensibility/managing-vspackages.md)
 - [管理包注册](/previous-versions/bb166783(v=vs.100))
