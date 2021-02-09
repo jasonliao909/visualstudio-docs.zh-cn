@@ -22,15 +22,15 @@ helpviewer_keywords:
 - solutions [Office development in Visual Studio], deploying Office solutions (2007 system)
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e10e922e346dc2ff1d289de94b398b7afd8f3f18
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 07e4734916f312f40def034a78dd007310e96d9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846306"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888896"
 ---
 # <a name="deploy-an-office-solution"></a>部署 Office 解决方案
   可以使用 ClickOnce 或 Windows Installer 来部署 Office 解决方案。 通过使用 ClickOnce，可以减少部署和更新解决方案所需的步骤数。 如果使用 Windows Installer，可以控制解决方案的安装方式，以及在用户安装解决方案时，安装程序显示的页。
@@ -43,7 +43,7 @@ ms.locfileid: "96846306"
 ## <a name="deploy-a-solution-by-using-windows-installer"></a>使用 Windows Installer 部署解决方案
  使用 Windows Installer 部署解决方案时，可将安装程序分发给用户，用户将使用此程序安装解决方案。 安装程序可以同时为一台计算机上的所有用户安装解决方案，而非仅当前用户。 还可以更好地控制在用户安装解决方案时显示给用户的选项。 例如，可以显示许可协议或者使用户安装解决方案的特定组件。 不过，如果更新解决方案，必须分发一个新的安装程序。 请参阅 [使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)
 - [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 - [使用 Windows Installer 部署 Office 解决方案](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)

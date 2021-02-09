@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], object model
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f97bbbab4b867f503e5b5befff27844df8a4b4bc
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527993"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888688"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开了一个强类型对象模型，可用于在运行时获取和设置功能区控件的属性。 例如，可以动态填充菜单控件，或显示和隐藏控件根据上下文。 你还可以将选项卡、组和控件添加到功能区，但在 Office 应用程序加载功能区之前。 有关信息，请参阅 [设置变成只读属性](#SettingReadOnlyProperties)。
@@ -56,7 +56,7 @@ ms.locfileid: "97527993"
 |**ComboBox**|<xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox>|
 |**DropDown**|<xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown>|
 |**"编辑框**|<xref:Microsoft.Office.Tools.Ribbon.RibbonEditBox>|
-|**库**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
+|**图库**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGallery>|
 |**组**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**菜单**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
@@ -134,7 +134,7 @@ ms.locfileid: "97527993"
 > [!NOTE]
 > 你可以随时在动态菜单上设置控件的属性。 此表不适用于这种情况。
 
-|properties|功能区控件类|
+|属性|功能区控件类|
 |--------------|--------------------------|
 |**BoxStyle**|<xref:Microsoft.Office.Tools.Ribbon.RibbonBox>|
 |**ButtonType**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|

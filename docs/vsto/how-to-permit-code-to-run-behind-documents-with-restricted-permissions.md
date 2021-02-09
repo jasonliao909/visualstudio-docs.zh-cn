@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Office documents [Office development in Visual Studio, restricted permissions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ac15302e81a68d8866c69a30a8368d36648ef1d9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1a65e99712658567996598d2190447ff09cf9b05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888883"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码在具有受限权限的文档的后台运行
   您可以使用 Microsoft Office 的 Rights Management (IRM) 功能的信息来限制对文档或工作簿的权限。 默认情况下，不允许运行受限 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的隐藏代码。 你可以更改默认值，以便托管代码扩展可以访问对象模型，你的解决方案将工作。
@@ -49,7 +49,7 @@ ms.locfileid: "96844889"
 
    Word 或 Excel 将允许以编程方式访问对象模型。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [信息权限管理和托管代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)
 - [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)

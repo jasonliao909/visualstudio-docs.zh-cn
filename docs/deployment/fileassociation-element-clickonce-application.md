@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8f951b4f-54f9-412e-a9e5-af4e379fcf08
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f1908b4f63edcf90643c28523c0c6ed0d0e11a97
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 7435a4e4973ee0a000555e9508328a76f7aa59a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889143"
 ---
 # <a name="ltfileassociationgt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 应用程序的 fileAssociation 元素) 
 标识与应用程序关联的文件扩展名。
@@ -42,14 +42,14 @@ ms.locfileid: "94382723"
 ## <a name="elements-and-attributes"></a>元素和属性
  `fileAssociation` 元素是可选的。 元素具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`extension`|必需。 要与应用程序关联的文件扩展名。|
 |`description`|必需。 Shell 使用的文件类型的说明。|
 |`progid`|必需。 唯一标识文件类型的名称。|
 |`defaultIcon`|必需。 指定用于具有此扩展的文件的图标。 必须在包含此元素的[ \<assembly> 元素](../deployment/assembly-element-clickonce-application.md)内使用[ \<file> 元素](../deployment/file-element-clickonce-application.md)指定图标文件。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  此元素必须包含对 "urn：架构-microsoft com： clickonce. v1" 的 XML 命名空间引用。 如果 `<fileAssociation>` 使用了元素，则它必须位于 `<application>` 其父[ \<assembly> 元素](../deployment/assembly-element-clickonce-application.md)中的元素之后。
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 不会覆盖现有文件关联。 但是，ClickOnce 应用程序只能重写当前用户的文件扩展名。 卸载 ClickOnce 应用程序之后，ClickOnce 将删除该用户的文件关联，并再次激活每台计算机的关联。
@@ -80,5 +80,5 @@ ms.locfileid: "94382723"
 <fileAssociation xmlns="urn:schemas-microsoft-com:clickonce.v1" extension=".writing" description="Writings (ClickOnce)" progid="Writing.Document" defaultIcon="writing.ico" />
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

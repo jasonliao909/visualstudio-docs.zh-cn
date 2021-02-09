@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01a46f54bfbce6126c16fa418d5c4bef53afd09b
-ms.sourcegitcommit: 7a5c4f60667b5792f876953d55192b49a73f5fe9
+ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98533889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889000"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -92,7 +92,7 @@ ms.locfileid: "98533889"
 
     * **支持的 Visual studio 版本** 允许选择你的扩展将使用的 visual studio 版本。 你的扩展仅安装到这些版本。
 
-    * **Type**。 最常见的扩展类型是 **工具**。
+    * **类型**。 最常见的扩展类型是 **工具**。
 
     * **类别**。 最多可选择三个最适合你的扩展。
 
@@ -160,7 +160,7 @@ ms.locfileid: "98533889"
 
     - **支持的 Visual Studio 版本** \*允许您选择扩展将使用的 Visual Studio 版本。 你的扩展仅在这些版本上安装。
 
-    - **Type**。 最常见的扩展类型是 **工具**。
+    - **类型**。 最常见的扩展类型是 **工具**。
 
     - **类别**。 最多可选择三个最适合你的扩展。
 
@@ -206,7 +206,7 @@ Visual Studio Marketplace 支持向其他用户授予访问和管理发布者帐
 
 2. 单击 " **联机** "，然后搜索 " **TestPublish**"。
 
-3. 单击“下载”。 然后计划安装该扩展。
+3. 单击“下载”  。 然后计划安装该扩展。
 
 4. 若要完成安装，请关闭 Visual Studio 的所有实例。
 
@@ -220,7 +220,7 @@ Visual Studio Marketplace 支持向其他用户授予访问和管理发布者帐
 
 2. 在右上角，单击 " **发布** 扩展"。 选择发布 **TestPublish** 时所用的发布服务器。 此时将显示 **TestPublish** 的列表。
 
-3. 右键单击该扩展条目，然后单击 " **删除**"。 系统会要求确认是否要删除该扩展。 单击 **“确定”** 。
+3. 右键单击该扩展条目，然后单击 " **删除**"。 系统会要求确认是否要删除该扩展。 单击“确定”。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>从计算机中删除扩展
 
