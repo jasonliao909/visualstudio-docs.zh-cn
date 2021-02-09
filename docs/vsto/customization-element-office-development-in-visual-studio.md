@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <customization> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f50b441393e9d07dcd0b409248f199484022654
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e63b93728f41dcff360da8ee9d14e2830d216be5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99849939"
 ---
 # <a name="ltcustomizationgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 (Office 开发的自定义元素) 
   `customization` 命名空间的 `vstov4` 元素描述特定 Office 解决方案。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。
@@ -58,7 +58,7 @@ ms.locfileid: "96844109"
 
  `customization` 元素具有以下属性。
 
-|Attribute|描述|
+|Attribute|说明|
 |---------------|-----------------|
 |`id`|对于多项目部署是必需的。 `id` 元素唯一地标识 Office 解决方案。|
 
@@ -76,7 +76,7 @@ ms.locfileid: "96844109"
 
 ## <a name="example-of-a-document-level-customization"></a>文档级自定义项示例
 
-### <a name="description"></a>描述
+### <a name="description"></a>说明
  下面的代码示例演示了文档级自定义项的 `customization` 元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
@@ -90,7 +90,7 @@ ms.locfileid: "96844109"
 
 ## <a name="example-of-a-vsto-add-in"></a>VSTO 外接程序示例
 
-### <a name="description"></a>描述
+### <a name="description"></a>说明
  下面的代码示例演示了 `customization` VSTO 外接程序的元素。 这是一个包含窗体区域的 Outlook VSTO 外接程序。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码

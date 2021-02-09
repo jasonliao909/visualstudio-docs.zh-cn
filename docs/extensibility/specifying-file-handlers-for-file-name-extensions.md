@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 421244cd88af43e7602298e7384a632c8aa51833
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: d897cb9bb4697a687bd06eeb02c779e133090e33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848092"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 可以通过多种方式来确定处理具有特定文件扩展名的文件的应用程序。 OpenWithList 和 OpenWithProgids 谓词是在文件扩展名的注册表项下指定文件处理程序的两种方法。
@@ -65,7 +65,7 @@ HKEY_CLASSES_ROOT\
          otherprogid   REG_NONE (zero-length binary value)
 ```
 
- 指定为文件扩展名默认值的 ProgID 是默认文件处理程序。 如果修改了以前版本的提供的文件扩展名的 ProgID， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或可以被其他应用程序使用，则必须 `OpenWithProgids` 为文件扩展名注册密钥，并在列表中指定新的 progid 以及所支持的旧 progid。 例如：
+ 指定为文件扩展名默认值的 ProgID 是默认文件处理程序。 如果修改了以前版本的提供的文件扩展名的 ProgID， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或可以被其他应用程序使用，则必须 `OpenWithProgids` 为文件扩展名注册密钥，并在列表中指定新的 progid 以及所支持的旧 progid。 例如： 。
 
 ```
 HKEY_CLASSES_ROOT\

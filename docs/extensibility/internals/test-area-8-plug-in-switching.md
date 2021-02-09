@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 01370792-b5da-4e46-9ce2-7dd326587141
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6c3a25aa9312073d3ce4a60752d41585fcee7b3
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 50cbf92b8214e605976aec58aaea984276ca8cc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487642"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99848203"
 ---
 # <a name="test-area-8-plug-in-switching"></a>测试区域 8：插件切换
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 使用户界面 (UI) 以更改当前源代码管理插件。 此测试区域为选择用于解决方案源代码管理的插件提供了测试用例。
@@ -54,5 +54,5 @@ ms.locfileid: "97487642"
 |----------------------------------| - | - |
 | 更改解决方案的插件 | 1. 选择 "测试" 下的插件作为当前 (**工具**  ->  **选项**  ->  **源代码管理**  ->  **插件选择**) 。<br />2. 创建新的项目和解决方案。<br />3. 将解决方案添加到源代码管理。<br />4. 使用 " **更改源代码管理** " 对话框) 将解决方案从源代码管理取消绑定 (。<br />5. 选择另一个插件 (例如 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)]) 。<br />6. 如果卸载，请从磁盘重新加载解决方案。<br />7. 将解决方案添加到源代码管理。<br />8. 使用 " **更改源代码管理** " 对话框) 将解决方案从源控件取消绑定 (。<br />9. 再次选择 "测试"。<br />10. 如果卸载，请从磁盘重载解决方案。<br />11. 使用 " **更改源代码管理** " 对话框) 将解决方案绑定到原始位置 (。 | 使用所选插件将解决方案添加到源代码管理。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

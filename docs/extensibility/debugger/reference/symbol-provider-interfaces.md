@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a24baec6738382f93dee5d8b7843d624eea80890
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f5c2204a1f8c4bef17256e98ed04dcf4b195c3aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845786"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850816"
 ---
 # <a name="symbol-provider-interfaces"></a>符号提供程序接口
 下面是的符号处理接口 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
@@ -27,7 +27,7 @@ ms.locfileid: "96845786"
 ## <a name="discussion"></a>讨论 (Discussion)
  这些接口用于在中断模式期间计算调用堆栈中的变量。 它们仅实现公共语言运行时符号提供程序 (SP) 。
 
-|接口|实现者|描述|
+|接口|实现者|说明|
 |---------------|--------------------|-----------------|
 |[IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)|SP|表示项的地址。|
 |[IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)|SP|表示项的地址，提供对进程 ID 的访问。|
@@ -60,5 +60,5 @@ ms.locfileid: "96845786"
 |[IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)|SP|表示 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 对象的集合。|
 |[IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)|SP|表示 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象的集合。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
