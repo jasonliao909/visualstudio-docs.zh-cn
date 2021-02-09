@@ -16,15 +16,15 @@ dev_langs:
 - CSharp
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62477f7cd37a7d5a416e8f42fb7eb2d2a8e43828
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ef68ffccd7a048cd0591ee0bf1aa511fe0489c92
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910522"
 ---
 # <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 的访问以创建或打开 Microsoft Office 系统项目的 Visual Studio Tools
 
@@ -59,7 +59,7 @@ ms.locfileid: "96846124"
 
 5. 选中或取消选中 **"信任对 VBA 项目对象模型的访问权限"** 以启用或禁用对 Visual Basic 项目的访问。
 
-6. 单击 **“确定”** 。
+6. 单击“确定”。
 
 ### <a name="to-enable-or-disable-access-to-visual-basic-projects-with-the-2007-microsoft-office-system"></a>使用 2007 Microsoft Office 系统启用或禁用对 Visual Basic 项目的访问
 
@@ -69,7 +69,7 @@ ms.locfileid: "96846124"
 
 3. 选择 "启用" 或 "清除" 以禁用， **信任对 Visual Basic 项目的访问**。
 
-4. 单击 **“确定”** 。
+4. 单击“确定”。
 
 ## <a name="to-set-your-office-macro-security-level"></a>设置 Office 宏安全级别
 
@@ -83,7 +83,7 @@ ms.locfileid: "96846124"
 
 5. 在 " **宏设置** " 部分中，选择所需的设置。
 
-6. 单击 **“确定”** 。
+6. 单击“确定”。
 
 ### <a name="to-set-your-office-macro-security-level-with-the-2007-microsoft-office-system"></a>将 Office 宏安全级别设置为 2007 Microsoft Office 系统
 
@@ -111,7 +111,7 @@ ms.locfileid: "96846124"
 
 8. 单击“继续” 。
 
-9. 单击“关闭”  。
+9. 单击 **“关闭”** 。
 
 ## <a name="to-repair-your-installation-of-office"></a>修复 Office 安装
 
@@ -125,5 +125,5 @@ ms.locfileid: "96846124"
 
 5. 选择 " **检测并修复 Office 安装中的错误**"，然后单击 " **安装**"。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)

@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 1218a98d-1ad5-4eef-95dd-0e0b3c44168c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5644a890a8705c68852cb5f67e4d998e12338dc
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 4d5d7244f70852dee29813834fc427c888df9c1c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912158"
 ---
 # <a name="deploy-clickonce-applications-for-testing-and-production-servers-without-resigning"></a>部署用于测试和生产服务器的 ClickOnce 应用程序而无需让步
 本文介绍 .NET Framework 版本3.5 中引入的 ClickOnce 功能，该功能允许从多个网络位置部署 ClickOnce 应用程序，而无需重新签名或更改 ClickOnce 清单。
@@ -45,7 +45,7 @@ ms.locfileid: "94382931"
 
  随着对 .NET Framework 3.5 中的 ClickOnce 所做的更改，第三方可以向另一个组织提供 ClickOnce 应用程序，然后将该应用程序部署在其自己的网络上。
 
- 为了利用此功能，ClickOnce 应用程序的开发人员必须 `deploymentProvider` 从其部署清单中排除。 此要求意味着， `-providerUrl` 当你创建具有 Mage.exe 的部署清单时，必须排除参数。 或者，如果您正在 MageUI.exe 生成部署清单，则必须确保 " **应用程序清单** " 选项卡上的 " **启动位置** " 文本框留空。
+ 为了利用此功能，ClickOnce 应用程序的开发人员必须 `deploymentProvider` 从其部署清单中排除。 此要求意味着， `-providerUrl` 当你创建具有 Mage.exe 的部署清单时，必须排除参数。 或者，如果您正在 MageUI.exe 生成部署清单，则必须确保 "**应用程序清单**" 选项卡上的 "**启动位置**" 文本框留空。
 
 ## <a name="deploymentprovider-and-application-updates"></a>deploymentProvider 和应用程序更新
  从 .NET Framework 3.5 开始，你无需在部署清单中指定，就可以 `deploymentProvider` 部署 ClickOnce 应用程序以实现联机和脱机使用。 此更改支持这样的方案：需要自行打包和签名部署，但允许其他公司通过其网络部署应用程序。
@@ -63,6 +63,6 @@ ms.locfileid: "94382931"
 ## <a name="create-a-deployment"></a>创建部署
  有关创建可从不同网络位置部署的部署的分步指导，请参阅 [演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [*Mage.exe* (清单生成和编辑工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [*MageUI.exe* (清单生成和编辑工具，图形客户端)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

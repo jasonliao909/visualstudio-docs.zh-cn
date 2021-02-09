@@ -13,15 +13,15 @@ helpviewer_keywords:
 - entryPoint element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 17f57b90b7c6aa4c254b2b55ee838a3086193ef7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543593"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910466"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点 &gt; 元素 (Visual Studio 中的 Office 开发) 
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。
@@ -41,7 +41,7 @@ ms.locfileid: "85543593"
 
  `entryPoint` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`class`|必需。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|
 

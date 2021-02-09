@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a97ed69d37330132196f0334f5684c0704c5fd2
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 515422266ce3d719319c4ba9717106af16e84f9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876072"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910992"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供的服务（源代码管理 VSPackage）
 服务是一种主要机制，通过该机制，Vspackage 和 Visual Studio 集成开发环境 (IDE) 及其安装的 Vspackage 之间共享功能。 有关服务及其在 Visual Studio IDE 中的重要性的详细说明，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。
