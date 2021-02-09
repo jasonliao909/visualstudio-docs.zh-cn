@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 617711a611e6eb1ea162c3abd8ad2b793b4756cb
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9b502b83ec793733ef642585b6ded260f72aa1be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869656"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 此方法返回此指针对象指向的对象的类型。
@@ -39,7 +39,7 @@ int GetDereferencedField(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppField`\
 弄返回描述目标对象类型的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
 

@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 86a78b5a-ee0f-4999-a0ba-919d3dc7d969
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a078beaac1cf9ef0255ff7b8d0bcbc4f568fdb8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b32fcb5beae3ca00324f2b2606b5eebae51af5fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869734"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 检索与此泛型参数关联的约束。
@@ -42,7 +42,7 @@ int GetConstraints(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `cConstraints`\
 中约束的数目。
 
@@ -56,7 +56,7 @@ int GetConstraints(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的**CDebugGenericParamFieldType**对象实现此方法。
+下面的示例演示如何为公开 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的 **CDebugGenericParamFieldType** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetConstraints(

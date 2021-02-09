@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7d508200-89ce-400f-a8ea-f28e7610cb2b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b3251db3426f87901ca0768800feaa36fef5373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 21d80f222bdea8a8e17a9b74eefb7885cab0c289
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728841"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869903"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 此方法获取有关字段的可显示信息。
@@ -28,7 +28,7 @@ ms.locfileid: "80728841"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    FIELD_INFO_FIELDS dwFields,
    FIELD_INFO* pFieldInfo
 );
@@ -41,7 +41,7 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中选择要显示的信息 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 常量的组合。 如果字段表示符号，则这通常是符号名称和类型。
 

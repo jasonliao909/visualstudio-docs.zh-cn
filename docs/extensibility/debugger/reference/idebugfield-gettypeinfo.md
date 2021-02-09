@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: bb5acfa3-04c3-4088-be84-9ff8926cd16f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: faa3464f0396999f36604aa88c429235d4849688
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0f74cc24d7698c3d83991c7f338bd2ef155ee1ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728776"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869786"
 ---
 # <a name="idebugfieldgettypeinfo"></a>IDebugField::GetTypeInfo
 此方法获取有关符号或类型的与类型无关的信息。
@@ -28,7 +28,7 @@ ms.locfileid: "80728776"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetTypeInfo( 
+HRESULT GetTypeInfo( 
    TYPE_INFO* pTypeInfo
 );
 ```
@@ -39,7 +39,7 @@ int GetTypeInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pTypeInfo`\
 弄返回所提供的 [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md) 结构中的类型信息。
 

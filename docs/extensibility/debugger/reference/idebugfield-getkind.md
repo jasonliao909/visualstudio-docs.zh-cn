@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e7c9c60a-8e55-4ecc-aa63-0c814a1e92cc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 807b4ecab517e151c87bfc5daab3e94a1e7d5f22
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4d0f69d95aaf5313e2d2140b90339e23852ba1a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869877"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
 此方法获取字段的类型。
@@ -28,7 +28,7 @@ ms.locfileid: "80728817"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetKind( 
+HRESULT GetKind( 
    FIELD_KIND* pdwKind
 );
 ```
@@ -39,7 +39,7 @@ int GetKind(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwKind`\
 弄以 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 常数的组合形式返回字段的类型。
 

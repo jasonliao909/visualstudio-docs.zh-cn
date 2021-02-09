@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f4ca1908fbd54c0e8d12212bed19fc77e1dff51
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487772"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869487"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows Installer 将在用户计算机上安装和卸载应用程序或软件产品，以 Windows Installer 组件的单元执行这些任务， (有时称为 WICs 或只是组件) 。 GUID 标识每个 WIC，这是使用 Windows Installer 安装程序的基本安装和引用计数。
@@ -69,5 +69,5 @@ Windows Installer 将在用户计算机上安装和卸载应用程序或软件�
 
 - 不应在多个 WIC 中交付版本控制资源。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如果组件规则中断，会发生什么情况？](/windows/desktop/Msi/what-happens-if-the-component-rules-are-broken)
