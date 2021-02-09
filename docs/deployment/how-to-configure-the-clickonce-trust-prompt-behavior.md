@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 68d39bed64ff1392c83d6fc2be0de936ac1b00d2
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890300"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
 您可以配置 ClickOnce 信任提示，以控制最终用户是否提供安装 ClickOnce 应用程序的选项，例如 Windows 窗体应用程序、Windows Presentation Foundation 应用程序、控制台应用程序、WPF 浏览器应用程序和 Office 解决方案。 可以通过在每个最终用户的计算机上设置注册表项来配置信任提示。
@@ -59,7 +59,7 @@ ms.locfileid: "94350057"
 
     1. 单击 **“启动”** ，再单击 **“运行”** 。
 
-    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"** 。
+    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"**。
 
 2. 找到以下注册表项：
 
@@ -67,9 +67,9 @@ ms.locfileid: "94350057"
 
      如果该键不存在，请创建它。
 
-3. 将以下子项添加为 **字符串值** （如果它们尚不存在），其中包含下表中所示的关联值。
+3. 将以下子项添加为 **字符串值**（如果它们尚不存在），其中包含下表中所示的关联值。
 
-    |字符串值子项|“值”|
+    |字符串值子项|值|
     |-------------------------|-----------|
     |`Internet`|`Enabled`|
     |`UntrustedSites`|`Disabled`|
@@ -83,7 +83,7 @@ ms.locfileid: "94350057"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs *Program.vb* 文件进行编辑并 *Program.cs* 添加以下代码。
+2. 打开 Program.cs 文件进行编辑并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -118,7 +118,7 @@ ms.locfileid: "94350057"
 
     1. 单击 **“启动”** ，再单击 **“运行”** 。
 
-    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"** 。
+    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"**。
 
 2. 找到以下注册表项：
 
@@ -126,9 +126,9 @@ ms.locfileid: "94350057"
 
      如果该键不存在，请创建它。
 
-3. 将以下子项添加为 **字符串值** （如果它们尚不存在），其中包含下表中所示的关联值。
+3. 将以下子项添加为 **字符串值**（如果它们尚不存在），其中包含下表中所示的关联值。
 
-    |字符串值子项|“值”|
+    |字符串值子项|值|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`AuthenticodeRequired`|
@@ -140,7 +140,7 @@ ms.locfileid: "94350057"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs *Program.vb* 文件进行编辑并 *Program.cs* 添加以下代码。
+2. 打开 Program.cs 文件进行编辑并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -175,7 +175,7 @@ ms.locfileid: "94350057"
 
     1. 单击 **“启动”** ，再单击 **“运行”** 。
 
-    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"** 。
+    2. 在 " **打开** " 框中键入 `regedit` ，然后单击 **"确定"**。
 
 2. 找到以下注册表项：
 
@@ -183,9 +183,9 @@ ms.locfileid: "94350057"
 
      如果该键不存在，请创建它。
 
-3. 将以下子项添加为 **字符串值** （如果它们尚不存在），其中包含下表中所示的关联值。
+3. 将以下子项添加为 **字符串值**（如果它们尚不存在），其中包含下表中所示的关联值。
 
-    |字符串值子项|“值”|
+    |字符串值子项|值|
     |-------------------------|-----------|
     |`UntrustedSites`|`Disabled`|
     |`Internet`|`Disabled`|
@@ -197,7 +197,7 @@ ms.locfileid: "94350057"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs *Program.vb* 文件进行编辑并 *Program.cs* 添加以下代码。
+2. 打开 Program.cs 文件进行编辑并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -224,7 +224,7 @@ ms.locfileid: "94350057"
 
 3. 生成并运行应用程序。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)

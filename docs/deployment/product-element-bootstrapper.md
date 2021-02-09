@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a46f24adde12415acc20a6afd7298c491a3188c0
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6424c2280f3f5eaaedadc6a2f1afebfd1109f1c3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349472"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891301"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt; (引导程序的产品 &gt; 元素) 
 `Product`元素是产品文件内的顶级 XML 元素。
@@ -142,7 +142,7 @@ ProductCode
 ## <a name="elements-and-attributes"></a>元素和属性
  `Product`元素在产品文件中是必需的。 它具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`ProductCode`|产品的唯一标识符。|
 
@@ -251,5 +251,5 @@ ProductCode
 </Product>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

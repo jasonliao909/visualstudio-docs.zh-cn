@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SafeControls element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c3423d1b6efd106ef7f947bd8573dcd1aa548a66
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 23e31e3df59d6d580ac94ffcb83f7a17e186a267
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889442"
 ---
 # <a name="safecontrols-element"></a>SafeControls 元素
   ASPX 控件和 Web 部件的集合，指定为任何用户在 SharePoint 站点上的任何 ASPX 页上访问的安全。
@@ -50,7 +50,7 @@ ms.locfileid: "95440670"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是 *spdata* 文件必需的根元素。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  有关安全控件的详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。
 
 ## <a name="element-information"></a>元素信息

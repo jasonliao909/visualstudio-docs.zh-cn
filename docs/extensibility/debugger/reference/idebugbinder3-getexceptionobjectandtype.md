@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2a313fe1-4ee1-4f01-af86-382d6c661a8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e25a0f7b4e1713a072359f1efdd962f36c50b774
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ee86b12b16cc76b8e2c06ede5ec0110322b515ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735748"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891223"
 ---
 # <a name="idebugbinder3getexceptionobjectandtype"></a>IDebugBinder3::GetExceptionObjectAndType
 此方法检索与对象关联的异常（如果有）。
@@ -28,20 +28,20 @@ ms.locfileid: "80735748"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetExceptionObjectAndType(
-   IDebugObject** ppException,
-   IDebugField**  ppField
+HRESULT GetExceptionObjectAndType(
+   IDebugObject** ppException,
+   IDebugField**  ppField
 );
 ```
 
 ```csharp
-int GetExceptionObjectAndType(
-   out IDebugObject ppException,
-   out IDebugField  ppField
+int GetExceptionObjectAndType(
+   out IDebugObject ppException,
+   out IDebugField  ppField
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppException`\
 弄返回表示异常的对象。
 

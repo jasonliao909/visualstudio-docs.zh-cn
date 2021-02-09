@@ -13,15 +13,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], document properties
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 78e9968970406cd176a2f5f27305ca0346cf85bf
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 16f295963a875bf13024106ad4b78bb38e3fcd55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523784"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889377"
 ---
 # <a name="how-to-programmatically-populate-word-tables-with-document-properties"></a>如何：以编程方式用文档属性填充 Word 表
   下面的示例在文档的顶部创建 Microsoft Office Word 表格，并使用主机文档的属性填充它。

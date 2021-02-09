@@ -11,21 +11,21 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5fcc1117c88f19eaae7633698dee1698a8108fdb
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: bd996539e5f0291bb31e153771735399a8874701
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889507"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>SharePoint 工具扩展性 (引用) 
 
 本部分包含有关在 Visual Studio 中扩展 SharePoint 工具的参考文档。
 
-## <a name="in-this-section"></a>在此部分中
+## <a name="in-this-section"></a>本节内容
 
 [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)
 

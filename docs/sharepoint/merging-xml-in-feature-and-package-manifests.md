@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, packaging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 16305ed63f48d9f14e35aeb8d37e35f23f40be25
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 8be6adfedeabaea236e4dcb2cd969e6023a7f3ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889559"
 ---
 # <a name="merge-xml-in-feature-and-package-manifests"></a>合并功能和包清单中的 XML
   功能和包是由 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 清单文件定义的。 这些打包的清单是由设计器生成的数据和 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 由用户在清单模板中输入的自定义数据的组合。 打包时，会 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将自定义 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 语句与提供程序合并， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 以形成打包的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 清单文件。 在将 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 文件部署到 SharePoint 并使清单文件更小且更有效的情况下，将合并类似元素，其中包含在合并异常之后的异常。
@@ -37,7 +37,7 @@ ms.locfileid: "96304230"
 
  下面是功能和包清单文件的合并异常列表 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 。
 
-|设计器|XML 元素|
+|Designer|XML 元素|
 |--------------|-----------------|
 |功能设计器|ActivationDependency|
 |功能设计器|UpgradeAction|
@@ -53,8 +53,8 @@ ms.locfileid: "96304230"
 |ElementFile|位置|
 |ElementManifests/ElementManifest|位置|
 |属性/属性|键|
-|CustomUpgradeAction|名称|
-|CustomUpgradeActionParameter|名称|
+|CustomUpgradeAction|“属性”|
+|CustomUpgradeActionParameter|“属性”|
 
 > [!NOTE]
 > 由于修改 CustomUpgradeAction 元素的唯一方法是在自定义编辑器中进行 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] ，因此不合并的效果很低。

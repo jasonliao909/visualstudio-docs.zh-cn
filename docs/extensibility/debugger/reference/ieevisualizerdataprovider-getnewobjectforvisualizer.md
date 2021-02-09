@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c478ca3fc913f5ab79f37a957b05ff1d665f8aa5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 98566507b3fdc3f519cc645991807c1d437bbcfe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890963"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 此方法获取可视化工具的新对象。 此方法将始终基于现有对象创建一个新的对象。
@@ -28,18 +28,18 @@ ms.locfileid: "80718112"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetNewObjectForVisualizer(
-   IDebugObject** ppObject
+HRESULT GetNewObjectForVisualizer(
+   IDebugObject** ppObject
 );
 ```
 
 ```csharp
-int GetNewObjectForVisualizer(
-   out IDebugObject ppObject
+int GetNewObjectForVisualizer(
+   out IDebugObject ppObject
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppObject`\
 弄新的对象。
 

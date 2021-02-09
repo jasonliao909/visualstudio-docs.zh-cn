@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1717397d9ff073642c7b6bc25ad85babe76d684c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 04566b4a8dae7f25f799d08780c93936009adef8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715573"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890742"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 此接口枚举当前调试会话中正在运行的程序。
@@ -48,9 +48,9 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="remarks"></a>备注
  Visual Studio 使用此接口来执行以下操作：
 
-- 通过调用[EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)并在每个程序) 上调用[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)来填充 "**模块**" 窗口 (。
+- 通过调用 [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)并在每个程序) 上调用 [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)来填充 "**模块**" 窗口 (。
 
-- 通过调用**Attach to Process** `IDebugProcess2::EnumPrograms` 并在每个[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)来填充 "附加到进程" 列表 (，以获取[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)接口) 。
+- 通过调用 `IDebugProcess2::EnumPrograms` 并在每个[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)来填充 "附加到进程" 列表 (，以获取[IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)接口) 。
 
 - 生成一个 DEs 列表，以使用 [GetEngineInfo](../../../extensibility/debugger/reference/idebugprogram2-getengineinfo.md)) 在进程 (调试每个程序。
 
