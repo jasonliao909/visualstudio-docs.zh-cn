@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, unit testing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ce891e40552c0f8927bfd4ce006b750b6e5f8a54
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d406afbc0a8506262f1bdc17310802b7f41a931a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914499"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892133"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>验证和调试 SharePoint 代码
 通过使用 IntelliTrace 和单元测试，您可以更轻松地调试 SharePoint 解决方案，并确保解决方案中的每个方法都正常运行。 可以遵循与其他类型的项目相同的过程，在 Visual Studio 中将这些功能用于 SharePoint 项目。

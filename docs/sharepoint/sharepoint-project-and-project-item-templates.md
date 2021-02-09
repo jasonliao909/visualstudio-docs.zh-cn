@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, templates
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6cbcc4d0bc99ce7ab495e0a24591b145c58f377
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 8482a6185f670ce1bb340ff40fe277b751a39c06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892328"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint 项目和项目项模板
   以下各节描述了可用的 SharePoint 项目和项目项模板以及如何使用它们。
@@ -104,11 +104,11 @@ ms.locfileid: "95970376"
 
   事件接收器项目项使用单个类文件创建一个 **事件接收器** 文件夹，其中包含你在 **SharePoint 自定义向导** 中创建项目时指定的所有事件的事件处理程序。 当添加、更新、删除或删除项目（例如文件、字段、项、列表、附件、web 部件和工作流）时，事件接收器类可以处理 SharePoint 站点上发生的事件。 有关详细信息，请参阅 [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md) 和 [构建块：事件处理](/previous-versions/office/developer/sharepoint-2010/ee535057(v=office.14))。
 
-### <a name="list"></a>列出
+### <a name="list"></a>列表
  列表是可重用的基本 SharePoint 列表定义的实例，如日历或任务列表。 将列表添加到解决方案后，可通过列表设计器将网站列添加到列表中，并创建自定义列表列。 这包括内容类型中的网站列。 您可以指定列表的视图，该 *视图* 确定将出现在列表中的列。 有关详细信息，请参阅 [演练：创建网站栏、内容类型和 SharePoint](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 和 [构建基块的列表：列表和文档库](/previous-versions/office/developer/sharepoint-2010/ee534985(v=office.14))。
 
 ### <a name="module"></a>模块
- *模块* (不会与模块混淆 [!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 包含要部署到 SharePoint 服务器的任何文件，例如图像或注释。 模块项目项包含 **module** 节点。 Module 节点包含两个项目项模板：一个 XML 定义文件，用作模块的清单，一个 *sample.txt* 文件，即一个占位符文件。 有关详细信息，请参阅[使用模块在解决方案和模块中包含文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。 [Modules](/previous-versions/office/developer/sharepoint-2010/ms453137(v=office.14))
+ *模块* (不会与模块混淆 [!include[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 包含要部署到 SharePoint 服务器的任何文件，例如图像或注释。 模块项目项包含 **module** 节点。 Module 节点包含两个项目项模板：一个 XML 定义文件，用作模块的清单，一个 *sample.txt* 文件，即一个占位符文件。 有关详细信息，请参阅[使用模块在解决方案和模块中包含文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)。 [](/previous-versions/office/developer/sharepoint-2010/ms453137(v=office.14))
 
 ### <a name="sequential-workflow-farm-solution-only"></a>顺序工作流 (场解决方案仅) 
  *顺序工作流* 是一系列按顺序执行的业务逻辑步骤，直到完成最后一个步骤。 顺序工作流用于管理涉及 SharePoint 项（如列表和文档）的进程。 你可以创建网站级 (全局) 工作流或列表级别 (本地) 工作流，并且可以选择工作流是自动启动还是手动启动。 此项目项只能用于场解决方案。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅 [创建 sharepoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [sharepoint Server 2010 中的工作流](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))和 [新增功能：工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Office projects [Office development in Visual Studio], PowerPoint
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e297b0d269d5ff0bff0deeadd6bd346de00a324
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4033c3fbae9aaefdc094d94d3a4ba70b67d40bf5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528038"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891899"
 ---
 # <a name="powerpoint-solutions"></a>PowerPoint 解决方案
   Visual Studio 提供可用于创建 Microsoft Office PowerPoint 的 VSTO 外接程序的项目模板。 可使用 VSTO 外接程序自动化 PowerPoint、扩展 PowerPoint 功能或自定义 PowerPoint 用户界面 (UI)。

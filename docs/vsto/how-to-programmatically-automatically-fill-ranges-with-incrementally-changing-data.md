@@ -15,15 +15,15 @@ helpviewer_keywords:
 - workbooks, filling ranges
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dc80b4b589eb46aefa9ef6d75384ed17bb1b7c8c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847203"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892068"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>使用对象的方法， <xref:Microsoft.Office.Interop.Excel.Range> 可以在工作表中自动填充值。 最常见的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是使用方法存储范围中递增或递减的值。 可以通过从枚举提供一个可选常量来指定行为 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。
@@ -54,7 +54,7 @@ ms.locfileid: "96847203"
 
 - 列 D 将包含一系列数字，每行递增2。 对于初始值，在单元格 D2 的单元格 D1 和 **6** 中键入 **4** 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [如何：以编程方式在代码中引用工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b70922a3-1313-409a-b3b7-50c7cd13e394
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf0474d527b7c6f1d180201a463f52a0b17d18fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8168b0813eb99f4f70c8a5d8ffbdae4f6fce2094
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892614"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
 监视执行 (或停止监视执行) 在给定线程上发生。
@@ -28,7 +28,7 @@ ms.locfileid: "80730355"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT WatchForThreadStep( 
+HRESULT WatchForThreadStep( 
    IDebugProgram2* pOriginatingProgram,
    DWORD           dwTid,
    BOOL            fWatch,
@@ -37,7 +37,7 @@ HRESULT WatchForThreadStep( 
 ```
 
 ```csharp
-int WatchForThreadStep( 
+int WatchForThreadStep( 
    IDebugProgram2 pOriginatingProgram,
    uint           dwTid,
    int            fWatch,
@@ -45,7 +45,7 @@ int WatchForThreadStep( 
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pOriginatingProgram`\
 中表示正在进行的程序的 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象。
 

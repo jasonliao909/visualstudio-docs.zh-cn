@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5de59c573f7e233ea2aacb0dfa38826051c59373
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03c2ab7b701163e22a5cc3ff386f447c5199ff15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730284"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892562"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 此方法获取给定其值的枚举常量的名称。
@@ -41,7 +41,7 @@ int GetStringFromValue(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `value`\
 中要为其获取枚举常量名称的值。
 
