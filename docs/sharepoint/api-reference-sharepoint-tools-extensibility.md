@@ -11,20 +11,20 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, reference for project and tools extensibility
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4599a2c305558f2ef551d19abac210bdf05269f3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: ec07272ede6c957afb43c29342e8479e67d1dd0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850385"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851710"
 ---
 # <a name="api-reference-sharepoint-tools-extensibility"></a> (SharePoint 工具扩展性的 API 参考) 
   本部分包含有关在 Visual Studio 中扩展 SharePoint 工具的 API 参考文档。
 
-## <a name="in-this-section"></a>在此部分中
+## <a name="in-this-section"></a>本节内容
  <xref:Microsoft.VisualStudio.SharePoint>
 
  包含用于扩展 SharePoint 项目系统的类型。 例如，你可以扩展内置 SharePoint 项目和项目项，也可以创建自己的项目项。

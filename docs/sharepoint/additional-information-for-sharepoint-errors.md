@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 240913e93dc1945846613ac1ecc8d0141368f7b3
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 5ce41bdf53ee55bfcbcec0cc2a2271ba9914aed8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850424"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851733"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
   你可以在疑难解答 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 主题和公共论坛中查找有关排查 SharePoint 工具错误和警告的帮助。

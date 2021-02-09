@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 0cfe79b8-c3f1-48b0-a225-e39dee2c92fe
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f449a505c56c180f1bab021007f1b635a2461996
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852825"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 创建特定于表达式计算器 (EE) 的数据对象的副本。
@@ -28,20 +28,20 @@ ms.locfileid: "80715042"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CreateReplacementObject(
-   IEEDataStorage*  dataIn,
-   IEEDataStorage** dataOut
+HRESULT CreateReplacementObject(
+   IEEDataStorage*  dataIn,
+   IEEDataStorage** dataOut
 );
 ```
 
 ```csharp
-int CreateReplacementObject(
-   IEEDataStorage     dataIn,
-   out IEEDataStorage dataOut
+int CreateReplacementObject(
+   IEEDataStorage     dataIn,
+   out IEEDataStorage dataOut
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dataIn`\
 中包含要复制的数据的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象。
 

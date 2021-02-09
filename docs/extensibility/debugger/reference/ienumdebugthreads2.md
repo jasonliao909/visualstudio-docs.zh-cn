@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbbe047c08f8e91264163d028c1b40d94cde97fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6e3771545d4a5fe545382344d17ed5ea929999d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80715092"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852773"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 此接口枚举当前调试会话中正在运行的线程。

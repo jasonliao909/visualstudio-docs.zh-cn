@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 3a544c8b-11dc-46bb-8549-261e4ac5bbc4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d20a1180e1162e7de3aee1c5d69facf8c193910
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 12016ae7d03913d1880015a6b8cf318b14c94af5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727427"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851070"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 此接口表示运行正在调试的程序的计算机的地址空间中的位置。
@@ -42,7 +42,7 @@ IDebugMemoryContext2 : IUnknown
 |[GetName](../../../extensibility/debugger/reference/idebugmemorycontext2-getname.md)|获取此上下文的用户可显示名称。|
 |[GetInfo](../../../extensibility/debugger/reference/idebugmemorycontext2-getinfo.md)|获取描述此上下文的信息。|
 |[添加](../../../extensibility/debugger/reference/idebugmemorycontext2-add.md)|将指定的值添加到当前上下文的地址，以创建新的上下文。|
-|[减去](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|从当前上下文的地址减去指定的值以创建新的上下文。|
+|[减](../../../extensibility/debugger/reference/idebugmemorycontext2-subtract.md)|从当前上下文的地址减去指定的值以创建新的上下文。|
 |[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|按比较标志所指示的方式对两个上下文进行比较。|
 
 ## <a name="remarks"></a>备注

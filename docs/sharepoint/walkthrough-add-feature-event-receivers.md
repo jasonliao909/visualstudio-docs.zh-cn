@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, feature event receivers
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98b85222fca4da6dfca653ad74e1315801798d83
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99851525"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>演练：添加功能事件接收器
 功能事件接收器是在 SharePoint 中发生以下与功能相关的事件之一时执行的方法：
