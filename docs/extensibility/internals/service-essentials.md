@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: fbe84ad9-efe1-48b1-aba3-b50b90424d47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54d785d665122fd5c5fa1709aa9348777e3c730b
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 145097b9e012d8c09df1424747d04148df3cae8f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911016"
 ---
 # <a name="service-essentials"></a>服务基础知识
 服务是两个 Vspackage 之间的协定。 一个 VSPackage 为其他要使用的 VSPackage 提供一组特定的接口。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 本身是 Vspackage 的集合，可向其他 Vspackage 提供服务。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 7b0e7b20-fd6b-42e2-81d0-e5100cea0528
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7732c6f02ae5ec086a89bd9ade5c00ea533a68f2
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 7f207a4c86a9c76f009341f96a7d562da1e8fb33
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910963"
 ---
 # <a name="providedefaultname-element-visual-studio-templates"></a> (Visual Studio 模板的 ProvideDefaultName 元素) 
 指定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 项目系统是否会在 " **添加新项** " 或 " **新建项目** " 对话框中生成模板的默认名称。
@@ -54,8 +54,8 @@ ms.locfileid: "94903801"
 
  文本必须是 `true` 或 `false` ，指示是否在 " **添加新项** " 或 " **新建项目** " 对话框中生成模板的默认名称。
 
-## <a name="remarks"></a>注解
- `ProvideDefaultName` 是可选元素。 默认值为 `true`。
+## <a name="remarks"></a>备注
+ `ProvideDefaultName` 是可选元素。 默认值是 `true`。
 
  如果 `ProvideDefaultName` 元素为 `false` ，则 "**添加新项**" 和 "**新建项目**" 对话框的 "**名称**" 框中将包含值 `<Enter_name>` 。
 

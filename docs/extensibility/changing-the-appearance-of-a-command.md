@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0f79ac7873a1746e0b14db51ba864e94f6bbfa1e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911234"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 可以通过更改命令的外观向用户提供反馈。 例如，你可能希望某个命令在不可用时的外观有所不同。 您可以使命令可用或不可用、隐藏或显示它们，或在菜单中选中或取消选中它们。
@@ -86,7 +86,7 @@ ms.locfileid: "94974411"
 
 8. 此时，你应该会看到 " **工具** " 菜单上的 " **新文本**"。 单击 " **新文本**"。 该命令现在应显示为灰色。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)

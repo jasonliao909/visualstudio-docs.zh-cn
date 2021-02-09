@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf5e54f00ecbac03eaebe68c6fb4de410987b63f
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: c8fa0303d752351efd87847941037a36f2f90f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911107"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 使用全局选择上下文对象来确定应在 IDE 中显示的内容。 IDE 中的每个窗口都可以有自己的选择上下文对象，并将其推送到全局选择上下文。 IDE 使用窗口中的值从窗口中的值更新全局选择上下文。 有关详细信息，请参阅 [向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。

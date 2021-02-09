@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: fa934121-3f58-44dc-9c30-d3f752e44c8b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3d39c99049c4c4583fbda466712c5b216137316
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7f49a15486551a91538bebe8fa900d165fdbb78b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911878"
 ---
 # <a name="idebugthread2setthreadname"></a>IDebugThread2::SetThreadName
 设置线程的名称。
@@ -28,18 +28,18 @@ ms.locfileid: "80718663"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetThreadName ( 
+HRESULT SetThreadName ( 
    LPCOLESTR pszName
 );
 ```
 
 ```csharp
-int SetThreadName ( 
+int SetThreadName ( 
    string pszName
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszName`\
 中线程的名称。
 

@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: ba1a785b-693d-446b-bcae-b88cadee73d1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ffa19de6abff0bb73c91c4a8e79d707d0941e00
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 04cbb0db729d39295ee9c608a19302a109980f10
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383009"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912219"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
 安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  ClickOnce 的 " **必备** 组件" 对话框中显示的每个可再发行组件（即必备组件）都是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。
@@ -111,7 +111,7 @@ CustomBootstrapperPackage
 
 `%ProgramFiles%\Microsoft.NET\RedistList`
 
-可再发行组件列表是一个 XML 文件，应使用以下格式命名： *\<Company Name> . \<Component Name>.RedistList.xml* 。 举例来说，如果组件名为 DataWidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml。 可再发行文件列表的内容的示例可能像下面这样：
+可再发行组件列表是一个 XML 文件，应使用以下格式命名： *\<Company Name> . \<Component Name>.RedistList.xml*。 举例来说，如果组件名为 DataWidgets 且由 Acme 开发，则使用 Acme.DataWidgets.RedistList.xml。 可再发行文件列表的内容的示例可能像下面这样：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -120,7 +120,7 @@ CustomBootstrapperPackage
 </FileList>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：将必备组件与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - ["必备组件" 对话框](../ide/reference/prerequisites-dialog-box.md)
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

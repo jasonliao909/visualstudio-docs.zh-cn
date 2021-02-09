@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <entryPoints> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8e735cfabcc02a46ca83759a7ad53877bfb05f0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0cd5b49183bc4754e894caf898f6ca6a0c0e5440
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910448"
 ---
 # <a name="ltentrypointsgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 s 元素 (Office 开发) 
   `entryPoints` 命名空间的 `vstav3` 元素包含与 Office 解决方案关联的所有 `entryPoint` 元素。
@@ -42,7 +42,7 @@ ms.locfileid: "85543567"
 
  `entryPoints` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |id|对于多项目部署是必需的。 Office 解决方案的名称。 ID 不能包含等号 (=)。|
 

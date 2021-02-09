@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f48e9531-efac-4d11-8166-f63a5ece1ac5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c86d5d1fd1e25b498405197b68efd9553ed64f16
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 92b5c1d323634bbb242cdccb54890908d5668803
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911383"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 应用程序的 assemblyIdentity 元素) 
 标识部署中部署的应用程序 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
@@ -44,7 +44,7 @@ ms.locfileid: "94383204"
 ## <a name="elements-and-attributes"></a>元素和属性
  `assemblyIdentity` 元素是必需的。 它不包含任何子元素，并且具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Name`|必需。 标识应用程序的名称。<br /><br /> 如果 `Name` 包含特殊字符（如单引号或双引号），则应用程序可能无法激活。|
 |`Version`|必需。 按以下格式指定应用程序的版本号： `major.minor.build.revision`|
@@ -71,4 +71,4 @@ ms.locfileid: "94383204"
 
 ## <a name="see-also"></a>请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
-- [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+- [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: f4a3bb83-c800-47d0-9905-9a5ae2486838
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a692d37771070f1835fc791515d5dbc24ce6b1b
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: bc689c80d033c6b92178f020c0d3273f6ec86ca7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911351"
 ---
 # <a name="ltassemblyidentitygt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署的 assemblyIdentity 元素) 
 标识应用程序的主要程序集 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
@@ -44,7 +44,7 @@ ms.locfileid: "94383178"
 ## <a name="elements-and-attributes"></a>元素和属性
  `assemblyIdentity` 元素是必需的。 它不包含任何子元素，并且具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`name`|必需。 标识用于提供信息的部署的用户可读名称。<br /><br /> 如果 `name` 包含特殊字符（如单引号或双引号），则应用程序可能无法激活。|
 |`version`|必需。 用以下格式指定程序集的版本号： `major.minor.build.revision` 。<br /><br /> 此值必须在更新的清单中递增才能触发应用程序更新。|
@@ -68,6 +68,6 @@ ms.locfileid: "94383178"
   xmlns="urn:schemas-microsoft-com:asm.v1" />
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
-- [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-application.md)
+- [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-application.md)

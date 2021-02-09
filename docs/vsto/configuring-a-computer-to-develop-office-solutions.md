@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, installing tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3658f655c50c9d1a0775a8cc69dd65baf32d1408
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ee8f840aa81d3decfdb96dd2658b758704443347
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910567"
 ---
 # <a name="configure-a-computer-to-develop-office-solutions"></a>将计算机配置为开发 Office 解决方案
 
@@ -49,7 +49,7 @@ ms.locfileid: "96847255"
 
 如果继续遇到问题，请参阅 [Office 解决方案中的错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [开始 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [如何：将计算机配置为开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [如何：安装 Visual Studio Tools for Office 运行时可再发行组件](../vsto/how-to-install-the-visual-studio-tools-for-office-runtime-redistributable.md)

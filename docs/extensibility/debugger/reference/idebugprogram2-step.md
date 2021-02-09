@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6a70a96014ebf18984c75df60cfeb75ba0d0577
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 544ca22d263a3fca47f9484ac126031e83cde4e0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86387234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911910"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 执行步骤。
@@ -31,7 +31,7 @@ ms.locfileid: "86387234"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Step( 
+HRESULT Step( 
    IDebugThread2*  pThread,
    STEPKIND        sk,
    STEPUNIT        step
@@ -39,14 +39,14 @@ HRESULT Step( 
 ```
 
 ```csharp
-int Step( 
+int Step( 
    IDebugThread2  pThread,
    enum_STEPKIND  sk,
    enum_STEPUNIT  step
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pThread`\
 中一个 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象，该对象表示正在逐步进行的线程。
 

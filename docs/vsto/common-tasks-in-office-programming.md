@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, frequently asked questions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4f6fae2b7d446035a08e3fcb77bcffaaed6de3a9
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 67b09d3881dcde1d404b7ff0c1096ced1ecb50ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910605"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常见任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。
@@ -232,7 +232,7 @@ ms.locfileid: "96846293"
 
 - [如何：更改 Office 解决方案的安装路径](/previous-versions/bb608626(v=vs.110))。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [开始 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)

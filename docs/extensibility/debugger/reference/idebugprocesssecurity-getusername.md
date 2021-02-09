@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c73c60ac-da6e-45ae-8f04-95353a24ca3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef00a0b7489c3e5cb709520546f3d3f26c8a4eba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 075cc96866a2b7b4a987c04c6cb78dcd22da2b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912030"
 ---
 # <a name="idebugprocesssecuritygetusername"></a>IDebugProcessSecurity::GetUserName
 获取端口提供商提供的用户名。
@@ -37,7 +37,7 @@ int GetUserName (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrUserName`\
 弄一个包含用户名的字符串。
 
