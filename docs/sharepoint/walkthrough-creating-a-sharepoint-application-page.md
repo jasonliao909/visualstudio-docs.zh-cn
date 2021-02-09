@@ -12,15 +12,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 95addb145312de85a3525c228297e7ff9636ea0d
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: def9407d309e5f673d0a7a2cdc3710fae557be50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914876"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847838"
 ---
 # <a name="walkthrough-create-a-sharepoint-application-page"></a>演练：创建 SharePoint 应用程序页
 
@@ -39,7 +39,7 @@ ms.locfileid: "96914876"
 > [!NOTE]
 > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - 支持的 Windows 和 SharePoint 版本。
 

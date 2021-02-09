@@ -2,17 +2,17 @@
 title: 为表设计器构造筛选字符串 | Microsoft Docs
 description: 为表设计器构造筛选字符串
 author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: 288e4256a472eb7bbc692758ad81df68be507676
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901916"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99846200"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>为表设计器构造筛选字符串
 ## <a name="overview"></a>概述
@@ -23,17 +23,17 @@ WCF 数据服务基于[开放数据协议](https://www.odata.org/) (OData)。 �
 ## <a name="comparison-operators"></a>比较运算符
 所有属性类型都支持以下逻辑运算符：
 
-| 逻辑运算符 | 描述 | 示例筛选器字符串 |
+| 逻辑运算符 | 说明 | 示例筛选器字符串 |
 | --- | --- | --- |
-| eq |等于 |City eq 'Redmond' |
+| eq |Equal |City eq 'Redmond' |
 | gt |大于 |Price gt 20 |
 | ge |大于或等于 |Price ge 10 |
 | lt |小于 |Price lt 20 |
 | le |小于或等于 |Price le 100 |
 | ne |不等于 |City ne 'London' |
-| 和 |且 |Price le 200 and Price gt 3.5 |
+| and |And |Price le 200 and Price gt 3.5 |
 | 或 |或 |Price le 3.5 or Price gt 200 |
-| not |非 |not isAvailable |
+| not |Not |not isAvailable |
 
 构造筛选器字符串时，以下规则非常重要：
 

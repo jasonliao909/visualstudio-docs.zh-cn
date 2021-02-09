@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc214e98b2ec0ed6feb31c9aaa6e8170b3ddd2c8
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 02a0eb7c9279aef1fd2821d44a6f3cc4a0008356
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913979"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847747"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>演练：使用设计器为 SharePoint 创建 Web 部件
 
@@ -53,7 +53,7 @@ ms.locfileid: "96913979"
 
 2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-     此时将出现“新建项目”  对话框。
+     将显示“新建项目”对话框。
 
 3. 在 " **新建项目** " 对话框中的 " **Visual c #** " 或 " **Visual Basic**" 下，展开 " **Office/SharePoint**"，然后选择 " **SharePoint 解决方案** " 类别。
 

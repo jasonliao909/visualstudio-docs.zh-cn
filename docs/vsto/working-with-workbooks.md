@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], workbooks
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6e328d48873c30626e2b661ede23b3d91066a0e5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 856f48b4d40dbae13112dc605d0b1f2c9ac4de52
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99847396"
 ---
 # <a name="work-with-workbooks"></a>使用工作簿
   <xref:Microsoft.Office.Tools.Excel.Workbook> 和 <xref:Microsoft.Office.Interop.Excel.Workbooks> 类包含用于执行工作簿相关任务的方法和属性。
