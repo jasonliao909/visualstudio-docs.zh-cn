@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 79b9424e-7e9b-4fc8-9b9f-00212674573c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae4d7ae70766b7e0d2d8eedb5d79d97159839146
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 111debccd1623901790c83e743469327ffdd667e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875110"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905837"
 ---
 # <a name="registering-vspackages"></a>注册 VSPackage
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 依赖 .pkgdef 文件来描述和查找 VSPackage。 .Pkgdef 文件包含其他将被添加到系统注册表中的注册信息。 托管 Vspackage 通过向源代码添加特性，然后在生成的程序集上运行 [CreatePkgDef 实用工具](../../extensibility/internals/createpkgdef-utility.md) 来注册 .pkgdef 文件。

@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 78338537-b451-4655-9f04-a21f6fe197a3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776fb53c4e1290f4b8dbef89a1e195462168b0e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8e3e34d0811d2111dfff6c19b1605b78286bcc3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904806"
 ---
 # <a name="asynctaskmethodbuilderobjectidfordebugger-property"></a>AsyncTaskMethodBuilder. ObjectIdForDebugger 属性
 获取一个对象，该对象可用于将此生成器唯一标识到调试器。

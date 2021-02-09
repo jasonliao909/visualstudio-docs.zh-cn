@@ -18,15 +18,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: daf25a1e2e80d2c5918d0d11c4b31c75a2e40c87
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527297"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906482"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>演练：在 Visual c # 项目中调用 VBA 中的代码
   此演练演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Microsoft Office Excel 文档级自定义项中的方法。 该过程包括三个基本步骤：向 `Sheet1` 主机项类添加方法、向工作簿中的 VBA 代码公开方法，然后从工作簿的 VBA 代码中调用该方法。
@@ -109,13 +109,13 @@ ms.locfileid: "97527297"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
 8. 选择 **“复制现有文档”**，然后在 **“现有文档的完整路径”** 框中，指定先前创建的 **WorkbookWithVBA** 工作薄的位置。 如果正在使用自己的启用宏的工作簿，则改为指定此工作簿的位置。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **WorkbookWithVBA** 工作簿，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
 
@@ -182,7 +182,7 @@ ms.locfileid: "97527297"
 
 3. 在 **“提取接口”** 对话框中，在 **“选择构成接口的公共成员”** 框中，单击 `CreateVstoNamedRange` 方法项。
 
-4. 单击“确定”  。
+4. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会生成名为 `ISheet1`的新接口，并修改 `Sheet1` 的定义，以便实现 `ISheet1` 接口。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 还将在代码编辑器中打开 **ISheet1.cs** 文件。
 

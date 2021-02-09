@@ -32,15 +32,15 @@ helpviewer_keywords:
 - managed code extensions [Office development in Visual Studio], writing code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 40ea589cb4406a383876b1f16721f18fc48ebadd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b0f72e859e0847b5035e99146ef6c0435ef299d6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526028"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904456"
 ---
 # <a name="write-code-in-office-solutions"></a>在 Office 解决方案中编写代码
   编写 Office 项目代码与编写 Visual Studio 中其他类型的代码在某些方面存在不同。 其中许多差异与 Office 对象模型公开给托管代码的方式相关。 其他差异与 Office 项目的设计相关。

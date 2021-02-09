@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e39b6e5a-64eb-48cf-a53d-da4fdb968e2d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ea4d888c1e83e90882e2f42d8ef54ba8f6e34ed
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cfc4c4e0f12400ff0fe07b24acaed0b80039f94
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723914"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907853"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 获取进程正在其上运行的端口。
@@ -28,18 +28,18 @@ ms.locfileid: "80723914"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetPort( 
-   IDebugPort2** ppPort
+HRESULT GetPort( 
+   IDebugPort2** ppPort
 );
 ```
 
 ```csharp
-int GetPort( 
-   out IDebugPort2 ppPort
+int GetPort( 
+   out IDebugPort2 ppPort
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppPort`\
 弄返回一个 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 对象，该对象表示启动进程的端口。
 

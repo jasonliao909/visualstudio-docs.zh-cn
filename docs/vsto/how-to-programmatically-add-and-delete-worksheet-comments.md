@@ -14,15 +14,15 @@ helpviewer_keywords:
 - comments, worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f845197de6664728a812e2795e51605ed962c575
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: ec70c03dfdce05c7445762e2cfd452f3fdf90775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844603"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904495"
 ---
 # <a name="how-to-programmatically-add-and-delete-worksheet-comments"></a>如何：以编程方式添加和删除工作表注释
   可以以编程方式在 Microsoft Office Excel 工作表中添加和删除注释。 可以仅向单个单元格而非多单元格区域添加注释。
@@ -63,7 +63,7 @@ ms.locfileid: "96844603"
      [!code-csharp[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#19)]
      [!code-vb[Trin_VstcoreExcelAutomationAddIn#19](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#19)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式显示工作表注释](../vsto/how-to-programmatically-display-worksheet-comments.md)
 - [NamedRange 控件](../vsto/namedrange-control.md)

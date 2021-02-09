@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 5a691e77-cf91-430d-90ea-361d9031ef83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6323b4330279848bc0453bdc7413904e2582d13a
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: c053b5f7fe2962e683621ad834cac0815eee7d3b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863965"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905739"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，该文件用于为 Visual Studio 扩展设置安装行为。

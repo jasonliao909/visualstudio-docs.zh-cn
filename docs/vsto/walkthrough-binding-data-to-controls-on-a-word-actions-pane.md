@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 76dffda9b332b9b76d6c0e0a423073959bcc7a56
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906591"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到 Word 操作窗格上的控件
   本演练演示如何将数据绑定到 Word 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -89,7 +89,7 @@ ms.locfileid: "97526204"
 
 4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
 
-5. 单击 **下一步**。
+5. 单击 **“下一步”** 。
 
 6. 清除 "保存连接" 选项，然后单击 " **下一步**"。
 
@@ -97,7 +97,7 @@ ms.locfileid: "97526204"
 
 8. 选中 " **供应商** " 和 " **产品** " 表旁边的复选框。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
    向导将 " **供应商** 表和 **产品** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -132,10 +132,10 @@ ms.locfileid: "97526204"
 
 11. 右键单击 <xref:System.Windows.Forms.Button> ，然后单击快捷菜单上的 " **属性** "，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
-    |**名称**|插入|
-    |**文本**|插入|
+    |**名称**|**插入**|
+    |**Text**|**插入**|
 
 12. 调整用户控件的大小以适应控件。
 

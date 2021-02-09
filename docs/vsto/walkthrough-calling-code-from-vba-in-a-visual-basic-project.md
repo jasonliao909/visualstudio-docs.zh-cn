@@ -19,15 +19,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], calling code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6016dbf53413f6e55c88edfe930af677472bdaf5
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527378"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906551"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中调用 VBA 中的代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。
@@ -108,13 +108,13 @@ ms.locfileid: "97527378"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
 8. 选择 **“复制现有文档”**，然后在 **“现有文档的完整路径”** 框中，指定先前创建的 **DocumentWithVBA** 文档的位置。 如果使用你自己的启用宏的文档，请改为指定此文档的位置。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **DocumentWithVBA** 文档，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
 

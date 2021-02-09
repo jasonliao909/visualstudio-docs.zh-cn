@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 744a6c769673acdc383999392cde88d255ad8142
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: abe3942ec83136aca313562bc45e156b123fdf19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731414"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903992"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 通知调试包文本已从文档中删除。
@@ -28,20 +28,20 @@ ms.locfileid: "80731414"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT onRemoveText( 
+HRESULT onRemoveText( 
    TEXT_POSITION pos,
    DWORD         dwNumToRemove
 );
 ```
 
 ```csharp
-int onRemoveText( 
+int onRemoveText( 
    enum_TEXT_POSITION pos,
    uint               dwNumToRemove
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pos`\
 中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，它指示删除文本的位置。
 

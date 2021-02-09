@@ -16,15 +16,15 @@ helpviewer_keywords:
 - DatePickerContentControl, binding to a custom XML part
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a82a8fd98bbf1a735661f3e1cf01e2452eb7ee58
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 8e5e3d58ac858afe905aae38c84e6403b43fb789
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527967"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906625"
 ---
 # <a name="walkthrough-bind-content-controls-to-custom-xml-parts"></a>演练：将内容控件绑定到自定义 XML 部件
   本演练演示如何将对 Word 的文档级自定义项中的内容控件绑定到存储在文档中的 XML 数据。

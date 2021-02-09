@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b0b20425cd1508db29932e9687d00055e4db58c
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: bebaf35fc19cbad86a1e1ee4c8bbeddef0259cb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190013"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905877"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用于扩展项目的对象的 Catid
 下表列出了用于扩展 `Project` `ProjectItem` [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 、 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和项目的和自动化对象的 catid [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 这些 Catid 在 *VSLangProj* 中定义。
@@ -95,6 +95,6 @@ const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B6
 | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] | {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} |
 | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] | {F184B08F-C81C-45F6-A57F-5ABD9991F28F} |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)

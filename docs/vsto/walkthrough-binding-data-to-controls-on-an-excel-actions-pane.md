@@ -17,15 +17,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], data binding
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6c53f4c1dfe9838fe4522dcc71b675a7f6b868d4
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524976"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906567"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>演练：将数据绑定到 Excel 操作窗格上的控件
   本演练演示如何将数据绑定到 Microsoft Office Excel 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -77,7 +77,7 @@ ms.locfileid: "97524976"
 
 4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
 
-5. 单击 **下一步**。
+5. 单击 **“下一步”** 。
 
 6. 清除该选项以保存连接（如果已选中），然后单击 " **下一步**"。
 
@@ -87,7 +87,7 @@ ms.locfileid: "97524976"
 
 9. 展开 **Products** 表，并选择 " **ProductName**"、" **供应商**"、" **QuantityPerUnit**" 和 " **单价**"。
 
-10. 单击“完成”。
+10. 单击“完成” 。
 
     向导将 " **供应商** 表和 **产品** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8fa1a1d3-9fcb-4fb3-bf4e-e7172ac08d77
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9411c296f396043a63eee6e4254a35d5c2c35884
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f90e8f97b020f746f6caa4807fe8ed063d613001
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904152"
 ---
 # <a name="idebugcoreserver2getmachineinfo"></a>IDebugCoreServer2::GetMachineInfo
 检索核心服务器正在其上运行的计算机的说明。
@@ -28,20 +28,20 @@ ms.locfileid: "80733161"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMachineInfo( 
-   MACHINE_INFO_FIELDS Fields,
-   MACHINE_INFO*       pMachineInfo
+HRESULT GetMachineInfo( 
+   MACHINE_INFO_FIELDS Fields,
+   MACHINE_INFO*       pMachineInfo
 );
 ```
 
 ```csharp
-int GetMachineInfo( 
-   enum_ MACHINE_INFO_FIELDS  Fields,
-   MACHINE_INFO[]             pMachineInfo
+int GetMachineInfo( 
+   enum_ MACHINE_INFO_FIELDS  Fields,
+   MACHINE_INFO[]             pMachineInfo
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `Fields`\
 中 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 枚举中的标志的组合，用于指定 `pMachineInfo` 要填写的字段。
 

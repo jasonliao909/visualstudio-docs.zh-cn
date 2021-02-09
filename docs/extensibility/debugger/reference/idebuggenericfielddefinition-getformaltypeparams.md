@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4926d94e4ba032f3ff10ca8fdf7027ac6f6e751c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aa1401181f844be2e1fa3dfd9e45b627e2daae19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904588"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 根据参数的数量检索类型参数。
@@ -42,7 +42,7 @@ int GetFormalTypeParams(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `cParams`\
 中参数的数目。
 

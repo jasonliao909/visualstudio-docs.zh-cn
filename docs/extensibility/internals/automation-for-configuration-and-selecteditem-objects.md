@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bc4b23662efe688146a7266d1b061d2d9611a45
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 4a1316115ca3ebbd0f78249d1a73310fc06de688
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906085"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 对象的自动化
 
@@ -34,7 +34,7 @@ ms.locfileid: "96190065"
 
 不需要为对象提供实现， `SelectedItem` 因为 Visual Studio 包含标准实现。 不过，您可以 `SelectedItem` 根据需要实现对象。 必须实现一个包含接口的对象 `SelectedItem` ，并返回对方法的调用的响应，并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> `VSITEMID` 将设置为 [__VSHPROPID。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A>
 - [参与自动化模型](../../extensibility/internals/contributing-to-the-automation-model.md)

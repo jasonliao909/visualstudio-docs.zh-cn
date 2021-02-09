@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 249d26ca-914f-43af-a400-8162477223f4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3808ad6fb511270ee3825601c476f10a8b77124
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718014"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907804"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 此方法返回此服务了解的可视化工具类型的列表。
@@ -28,24 +28,24 @@ ms.locfileid: "80718014"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetCustomViewerList(
-   ULONG                celtSkip,
-   ULONG                celtRequested,
-   DEBUG_CUSTOM_VIEWER* rgViewers,
-   ULONG*               pceltFetched
+HRESULT GetCustomViewerList(
+   ULONG                celtSkip,
+   ULONG                celtRequested,
+   DEBUG_CUSTOM_VIEWER* rgViewers,
+   ULONG*               pceltFetched
 );
 ```
 
 ```csharp
-int GetCustomViewerList(
-   uint                  celtSkip,
-   uint                  celtRequested,
-   DEBUG_CUSTOM_VIEWER[] rgViewers,
-   out uint              pceltFetched
+int GetCustomViewerList(
+   uint                  celtSkip,
+   uint                  celtRequested,
+   DEBUG_CUSTOM_VIEWER[] rgViewers,
+   out uint              pceltFetched
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celtSkip`\
 中要跳过的可视化工具的数目。
 
