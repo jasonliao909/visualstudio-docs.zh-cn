@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 65ca79a9-7458-466c-af55-978cd24c549e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00b492c7aec41d30e972df93206f9e597ea82eb3
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: eb6e5a1ba304627c08828b6ad7bff7f6accd3980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435282"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859107"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 
@@ -53,7 +53,7 @@ ms.locfileid: "94435282"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -65,17 +65,17 @@ ms.locfileid: "94435282"
 
 ## <a name="create-the-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-为 c # 或 Visual Basic 创建新的 **Windows 窗体应用程序** 项目。 将该项目命名为 **WindowsSearchForm** 。
+为 c # 或 Visual Basic 创建新的 **Windows 窗体应用程序** 项目。 将该项目命名为 **WindowsSearchForm**。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
 此步骤使用“数据源配置向导”从数据库创建一个数据源：
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源**"。
 
 2. 在 " **数据源** " 窗口中，选择 " **添加新数据源** " 以启动 " **数据源配置** 向导"。
 
-3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”** 。
+3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
 4. 在“选择数据连接”页面上，执行以下操作之一：
 
@@ -85,7 +85,7 @@ ms.locfileid: "94435282"
 
 5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步**"。
 
 7. 在“选择数据库对象”页上，展开“表”节点。
 
@@ -109,7 +109,7 @@ ms.locfileid: "94435282"
 
 1. 选择 <xref:System.Windows.Forms.DataGridView> 控件，然后在“数据”菜单上选择“添加查询”。
 
-2. 在 " **搜索标准生成器** " 对话框中的 " **新查询名称** " 区域中键入 **FillByCity** 。
+2. 在 "**搜索标准生成器**" 对话框中的 "**新查询名称**" 区域中键入 **FillByCity** 。
 
 3. 将 `WHERE City = @City` 添加到“查询文本”区域的查询中。
 

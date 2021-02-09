@@ -8,19 +8,19 @@ dev_langs:
 - CSharp
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7aad99392db33256e991e731770266c1a53dec50
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859185"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
-本演练演示如何在 Visual Studio 中创建基本的 "窗体 over 数据" 应用程序。 应用使用 SQL Server LocalDB、Northwind 数据库、实体框架 6 (不 Entity Framework Core) 和 Windows Presentation Foundation .NET Framework (.NET Core) 。 它演示了如何使用大纲-详细信息视图进行基本数据绑定，还提供了一个自定义绑定导航器，其中包含用于 **移动** 的按钮、" **上** 移"、"移 **至开头** "、" **结束** "、" **更新** " 和 " **删除** "。
+本演练演示如何在 Visual Studio 中创建基本的 "窗体 over 数据" 应用程序。 应用使用 SQL Server LocalDB、Northwind 数据库、实体框架 6 (不 Entity Framework Core) 和 Windows Presentation Foundation .NET Framework (.NET Core) 。 它演示了如何使用大纲-详细信息视图进行基本数据绑定，还提供了一个自定义绑定导航器，其中包含用于 **移动** 的按钮、" **上** 移"、"移 **至开头**"、" **结束**"、" **更新** " 和 " **删除**"。
 
 本文重点介绍如何在 Visual Studio 中使用数据工具，并且不会尝试深入了解底层技术。 假设您基本熟悉 XAML、实体框架和 SQL。 此示例还不演示模型-视图-ViewModel (MVVM) 体系结构，这是 WPF 应用程序的标准。 不过，你可以将此代码复制到你自己的 MVVM 应用程序中，只需修改少量内容。
 
@@ -32,7 +32,7 @@ ms.locfileid: "94435488"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  ( **SQL Server 对象资源管理器** 在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (**SQL Server 对象资源管理器** 在 **Visual Studio 安装程序** 的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -48,7 +48,7 @@ ms.locfileid: "94435488"
 
 1. 在 Visual Studio 中，创建一个新的 c # **WPF 应用程序** 项目。
 
-2. 为实体框架6添加 NuGet 包。 在 **解决方案资源管理器** 中，选择 "项目" 节点。 在主菜单中，选择 " **项目** " "  >  **管理 NuGet 包** "。
+2. 为实体框架6添加 NuGet 包。 在 **解决方案资源管理器** 中，选择 "项目" 节点。 在主菜单中，选择 "**项目**" "  >  **管理 NuGet 包**"。
 
      !["管理 NuGet 包" 菜单项](../data-tools/media/raddata_vs2015_manage_nuget_packages.png)
 
@@ -60,17 +60,17 @@ ms.locfileid: "94435488"
 
 ## <a name="create-the-model"></a>创建模型
 
-1. 右键单击 " **解决方案资源管理器** 中的项目节点，然后选择" **添加**  >  **新项** "。 在左窗格中的 "c #" 节点下，选择 " **数据** "，然后在中间窗格中选择 " **ADO.NET 实体数据模型** "。
+1. 右键单击 "**解决方案资源管理器** 中的项目节点，然后选择"**添加**  >  **新项**"。 在左窗格中的 "c #" 节点下，选择 " **数据** "，然后在中间窗格中选择 " **ADO.NET 实体数据模型**"。
 
    ![实体框架为新项建模](../data-tools/media/raddata-ef-new-project-item.png)
 
-2. 调用模型 `Northwind_model` ，然后选择 **"确定"** 。 **实体数据模型向导** 将打开。 **从数据库中选择 EF 设计器** ，然后单击 " **下一步** "。
+2. 调用模型 `Northwind_model` ，然后选择 **"确定"**。 **实体数据模型向导** 将打开。 **从数据库中选择 EF 设计器**，然后单击 "**下一步**"。
 
    ![数据库中的 EF 模型](../data-tools/media/raddata-ef-model-from-database.png)
 
-3. 在下一个屏幕中，输入或选择 LocalDB Northwind 连接 (例如， (LocalDB) \MSSQLLocalDB) ，指定 Northwind 数据库，然后单击 " **下一步** "。
+3. 在下一个屏幕中，输入或选择 LocalDB Northwind 连接 (例如， (LocalDB) \MSSQLLocalDB) ，指定 Northwind 数据库，然后单击 " **下一步**"。
 
-4. 在向导的下一页上，选择要包含在实体框架模型中的表、存储过程和其他数据库对象。 展开树视图中的 "dbo" 节点，然后选择 " **客户** "、" **订单** " 和 " **订单详细信息** "。 保留默认选中状态，并单击 " **完成** "。
+4. 在向导的下一页上，选择要包含在实体框架模型中的表、存储过程和其他数据库对象。 展开树视图中的 "dbo" 节点，然后选择 " **客户**"、" **订单**" 和 " **订单详细信息**"。 保留默认选中状态，并单击 " **完成**"。
 
     ![为模型选择数据库对象](../data-tools/media/raddata-choose-ef-objects.png)
 
@@ -96,15 +96,15 @@ ms.locfileid: "94435488"
 
 可以编写自己的数据绑定代码，但使 Visual Studio 可以更轻松地为你执行此操作。
 
-1. 从主菜单中，选择 " **项目**  >  " " **添加新数据源** " 以打开 " **数据源配置向导** "。 选择 " **对象** "，因为您要绑定到模型类，而不是绑定到数据库：
+1. 从主菜单中，选择 "**项目**  >  " "**添加新数据源**" 以打开 "**数据源配置向导**"。 选择 " **对象** "，因为您要绑定到模型类，而不是绑定到数据库：
 
      ![具有对象源的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-object-source.png)
 
-2. 展开项目的节点，然后选择 " **客户** "。 订单的 (源自动从 Customer 的 Orders 导航属性生成 ) 
+2. 展开项目的节点，然后选择 " **客户**"。 订单的 (源自动从 Customer 的 Orders 导航属性生成 ) 
 
      ![添加实体类作为数据源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. 单击“完成”。
+3. 单击“完成” 。
 
 4. 在代码视图中导航到 *mainwindow.xaml* 。 出于本示例的目的，我们将保持 XAML 简单。 将 Mainwindow.xaml 的标题更改为更具描述性的名称，并将其高度和宽度增加为 600 x 800。 以后随时可以更改它。 现在，将这三个行定义添加到主网格，一行用于导航按钮，一个用于客户的详细信息，一个用于显示其订单的网格：
 
@@ -116,7 +116,7 @@ ms.locfileid: "94435488"
         </Grid.RowDefinitions>
     ```
 
-5. 现在打开 *mainwindow.xaml* ，以便在设计器中查看它。 这会导致 " **数据源** " 窗口在 " **工具箱** " 旁边的 Visual Studio 窗口边距中显示为一个选项。 单击该选项卡以打开窗口，或者按 **Shift** + **Alt** + **D** 或选择 " **查看**  >  **其他 Windows**  >  **数据源** "。 我们会将 Customers 类中的每个属性都显示在单独的文本框中。 首先，单击 " **客户** " 组合框中的箭头，然后选择 " **详细信息** "。 然后，将节点拖动到设计图面的中间部分，以便设计器知道您希望它进入中间行。 如果丢失，则可以在 XAML 中以后手动指定该行。 默认情况下，控件在网格元素中垂直放置，但此时，您可以在窗体上对其进行排列。 例如，将 " **名称** " 文本框放在地址上方时，可能有意义。 本文的示例应用程序将对字段重新排序，并将其重新排列为两列。
+5. 现在打开 *mainwindow.xaml* ，以便在设计器中查看它。 这会导致 " **数据源** " 窗口在 " **工具箱**" 旁边的 Visual Studio 窗口边距中显示为一个选项。 单击该选项卡以打开窗口，或者按 **Shift** + **Alt** + **D** 或选择 "**查看**  >  **其他 Windows**  >  **数据源**"。 我们会将 Customers 类中的每个属性都显示在单独的文本框中。 首先，单击 " **客户** " 组合框中的箭头，然后选择 " **详细信息**"。 然后，将节点拖动到设计图面的中间部分，以便设计器知道您希望它进入中间行。 如果丢失，则可以在 XAML 中以后手动指定该行。 默认情况下，控件在网格元素中垂直放置，但此时，您可以在窗体上对其进行排列。 例如，将 " **名称** " 文本框放在地址上方时，可能有意义。 本文的示例应用程序将对字段重新排序，并将其重新排列为两列。
 
      ![客户数据源绑定到各个控件](../data-tools/media/raddata-customers-data-source-binding-to-individual-controls.png)
 
@@ -144,7 +144,7 @@ ms.locfileid: "94435488"
 
      [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
 
-8. 按 **F5** 。 应会看到检索到 CollectionViewSource 中的第一个客户的详细信息。 还应在数据网格中看到它们的顺序。 格式设置不是很好，因此让我们来解决这个问题。 您还可以创建一种方法来查看其他记录并执行基本的 CRUD 操作。
+8. 按 F5 。 应会看到检索到 CollectionViewSource 中的第一个客户的详细信息。 还应在数据网格中看到它们的顺序。 格式设置不是很好，因此让我们来解决这个问题。 您还可以创建一种方法来查看其他记录并执行基本的 CRUD 操作。
 
 ## <a name="adjust-the-page-design-and-add-grids-for-new-customers-and-orders"></a>调整页面设计并为新客户和订单添加网格
 
@@ -425,7 +425,7 @@ Visual Studio 生成的默认布局并非适用于你的应用程序，因此我
 
 [!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-application"></a>运行应用程序
 
 若要启用调试，请按 F5。 应会看到 "客户" 和 "订单" 数据已填充到网格中，导航按钮应按预期方式工作。 在输入数据后，单击 " **提交** " 将新客户或订单添加到模型。 单击 " **取消** " 以从新客户或新订单窗体中返回，而不保存数据。 您可以直接在文本框中编辑现有客户和订单，这些更改会自动写入到模型中。
 

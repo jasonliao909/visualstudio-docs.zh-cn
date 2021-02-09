@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2eb4beff76d602bb4ce6182fab6091c7cd2a0096
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 997fc6f6ecb8ffbd8c48e2352dcc9ae2f6092211
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860017"
 ---
 # <a name="run-code-analysis-manually-for-net"></a>针对 .NET 手动运行代码分析
 默认情况下，.NET Compiler Platform ( "Roslyn" ) 分析器在进行实时分析时以及在生成期间，分析 c # 或 Visual Basic 代码。 因此，您通常不需要手动触发代码分析。 但是，在某些情况下，你可能需要手动触发代码分析：
@@ -33,6 +33,6 @@ ms.locfileid: "94348718"
 
 1. 在 **解决方案资源管理器** 中，选择项目。
 
-2. 在 " **分析** " 菜单上，选择 "对 *项目名称***运行代码分析** "。
+2. 在 "**分析**" 菜单上，选择 "对 *项目名称***运行代码分析**"。
 
-代码分析将开始在后台执行。 你应在 Visual Studio 状态栏中看到消息 " **正在运行代码分析 \<project> ...** "。 完成代码分析后，状态消息将更改为 " **已完成 \<project> 代码分析** "。 将立即刷新错误列表，并将进行所有代码分析诊断。
+代码分析将开始在后台执行。 你应在 Visual Studio 状态栏中看到消息 " **正在运行代码分析 \<project> ...** "。 完成代码分析后，状态消息将更改为 "**已完成 \<project> 代码分析**"。 将立即刷新错误列表，并将进行所有代码分析诊断。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 6d4d15f8-4d78-42fd-af64-779ae98d62c8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 65c0f1146549dfbee6f84fab06be12053b174aeb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: be9a6840c3b41b442e5019e08c4d2f4d2fa5c3dd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436623"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858990"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 
@@ -28,13 +28,13 @@ ms.locfileid: "94436623"
 
 ::: moniker range="vs-2017"
 
-可以通过在 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** 注册表项中设置 **SmartCaptionExpression** 、 **SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建这些标签的方式。
+可以通过在 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers** 注册表项中设置 **SmartCaptionExpression**、 **SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建这些标签的方式。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-可以通过在 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** 注册表项中设置 **SmartCaptionExpression** 、 **SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建这些标签的方式。
+可以通过在 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers** 注册表项中设置 **SmartCaptionExpression**、 **SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建这些标签的方式。
 
 ::: moniker-end
 
@@ -66,21 +66,21 @@ ms.locfileid: "94436623"
 
 ## <a name="modify-the-smart-captioning-behavior-of-the-data-sources-window"></a>修改 "数据源" 窗口的智能标题行为
 
-1. 通过单击 " **开始** "，然后单击 " **运行** " 打开命令窗口。
+1. 通过单击 " **开始** "，然后单击 " **运行**" 打开命令窗口。
 
-2. `regedit`在 " **运行** " 对话框中键入，然后单击 **"确定"** 。
+2. `regedit`在 "**运行**" 对话框中键入，然后单击 **"确定"**。
 
 3. 展开 " **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** " 节点。
 
 ::: moniker range="vs-2017"
 
-4. 右键单击 **15.0** 节点，并创建一个名为的 **Key** 新密钥 `Data Designers` 。
+4. 右键单击 **15.0** 节点，并创建一个名为的新密钥 `Data Designers` 。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 右键单击 **16.0** 节点，并创建一个名为的 **Key** 新密钥 `Data Designers` 。
+4. 右键单击 **16.0** 节点，并创建一个名为的新密钥 `Data Designers` 。
 
 ::: moniker-end
 
@@ -90,15 +90,15 @@ ms.locfileid: "94436623"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. 右键单击 " **SmartCaptionExpression** " 值，然后选择 " **修改** "。
+6. 右键单击 " **SmartCaptionExpression** " 值，然后选择 " **修改**"。
 
 7. 输入希望 " **数据源** " 窗口使用的正则表达式。
 
-8. 右键单击 " **SmartCaptionReplacement** " 值，然后选择 " **修改** "。
+8. 右键单击 " **SmartCaptionReplacement** " 值，然后选择 " **修改**"。
 
 9. 输入用来显示正则表达式中匹配模式的格式的替换字符串。
 
-10. 右键单击 " **SmartCaptionSuffix** " 值，然后选择 " **修改** "。
+10. 右键单击 " **SmartCaptionSuffix** " 值，然后选择 " **修改**"。
 
 11. 输入要在标题末尾显示的任何字符。
 
@@ -106,21 +106,21 @@ ms.locfileid: "94436623"
 
 ## <a name="turn-off-the-smart-captioning-feature"></a>关闭智能字幕功能
 
-1. 通过单击 " **开始** "，然后单击 " **运行** " 打开命令窗口。
+1. 通过单击 " **开始** "，然后单击 " **运行**" 打开命令窗口。
 
-2. `regedit`在 " **运行** " 对话框中键入，然后单击 **"确定"** 。
+2. `regedit`在 "**运行**" 对话框中键入，然后单击 **"确定"**。
 
 3. 展开 " **HKEY_CURRENT_USER**  >  **Software**  >  **Microsoft**  >  **VisualStudio** " 节点。
 
 ::: moniker range="vs-2017"
 
-4. 右键单击 **15.0** 节点，并创建一个名为的 **Key** 新密钥 `Data Designers` 。
+4. 右键单击 **15.0** 节点，并创建一个名为的新密钥 `Data Designers` 。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 右键单击 **16.0** 节点，并创建一个名为的 **Key** 新密钥 `Data Designers` 。
+4. 右键单击 **16.0** 节点，并创建一个名为的新密钥 `Data Designers` 。
 
 ::: moniker-end
 
@@ -130,11 +130,11 @@ ms.locfileid: "94436623"
     - `SmartCaptionReplacement`
     - `SmartCaptionSuffix`
 
-6. 右键单击 " **SmartCaptionExpression** " 项，然后选择 " **修改** "。
+6. 右键单击 " **SmartCaptionExpression** " 项，然后选择 " **修改**"。
 
 7. 输入 `(.*)` 作为值。 这将匹配整个字符串。
 
-8. 右键单击 " **SmartCaptionReplacement** " 项，然后选择 " **修改** "。
+8. 右键单击 " **SmartCaptionReplacement** " 项，然后选择 " **修改**"。
 
 9. 输入 `$1` 作为值。 这会将字符串替换为匹配的值，这是整个字符串，因此它将保持不变。
 

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: c48b4d75-ccfc-4950-8b14-ff8adbfe4208
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de89839dd85f0f330356e1ade7d4658428ea3d3e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 0eeb3e768370066bf93afc766d4d7f67d8d39a1d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435269"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859068"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-lookup-data-binding"></a>创建支持查找数据绑定的 Windows 窗体用户控件
 
@@ -42,7 +42,7 @@ ms.locfileid: "94435269"
 
 在本演练中，您将学习如何：
 
-- 创建新的 **Windows 窗体应用程序** 。
+- 创建新的 **Windows 窗体应用程序**。
 
 - 将新的“用户控件”添加到项目中。
 
@@ -64,7 +64,7 @@ ms.locfileid: "94435269"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -80,11 +80,11 @@ ms.locfileid: "94435269"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **LookupControlWalkthrough** ，然后选择 **"确定"** 。
+4. 将项目命名为 **LookupControlWalkthrough**，然后选择 **"确定"**。
 
      创建“LookupControlWalkthrough”项目并添加到“解决方案资源管理器”中。
 
@@ -94,7 +94,7 @@ ms.locfileid: "94435269"
 
 1. 从“项目”菜单中，选择“添加用户控件”。
 
-2. `LookupBox`在 " **名称** " 区域中键入，然后单击 " **添加** "。
+2. `LookupBox`在 "**名称**" 区域中键入，然后单击 "**添加**"。
 
      将“LookupBox”控件添加到“解决方案资源管理器”中，并在设计器中打开该控件。
 
@@ -119,11 +119,11 @@ ms.locfileid: "94435269"
 
 此步骤根据 Northwind 示例数据库中的 `Customers` 和 `Orders` 表，使用“数据源配置”向导创建数据源。
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源**"。
 
 2. 在 " **数据源** " 窗口中，选择 " **添加新数据源** " 以启动 " **数据源配置** 向导"。
 
-3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”** 。
+3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
 4. 在“选择数据连接”页面上，执行以下操作之一：
 
@@ -133,13 +133,13 @@ ms.locfileid: "94435269"
 
 5. 如果数据库需要密码，请选择该选项以包括敏感数据，再单击“下一步”。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步**"。
 
 7. 在“选择数据库对象”页上，展开“表”节点。
 
 8. 选择 `Customers` 和 `Orders` 表，然后单击“完成”。
 
-     **NorthwindDataSet** 将添加到项目中， `Customers` 并且和表将 `Orders` 显示在 " **数据源** " 窗口中。
+     **NorthwindDataSet** 将添加到项目中， `Customers` 并且和表将 `Orders` 显示在 "**数据源**" 窗口中。
 
 ## <a name="set-the-customerid-column-of-the-orders-table-to-use-the-lookupbox-control"></a>将 Orders 表的 CustomerID 列设置为使用 LookupBox 控件
 
@@ -169,11 +169,11 @@ ms.locfileid: "94435269"
 
 ## <a name="bind-the-control-to-look-up-companyname-from-the-customers-table"></a>绑定控件以从 Customers 表中查找公司名称
 
-若要设置查找绑定，请在 " **数据源** " 窗口中选择 "主要 **客户** " 节点，并将其拖到 " **CustomerIDLookupBox** on **Form1** " 中的组合框上。
+若要设置查找绑定，请在 "**数据源**" 窗口中选择 "主要 **客户**" 节点，并将其拖到 " **CustomerIDLookupBox** on **Form1**" 中的组合框上。
 
 此操作对数据绑定进行设置，使其显示 `Customers` 表中的 `CompanyName`同时保留 `Orders` 表中的 `CustomerID` 值。
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-application"></a>运行应用程序
 
 - 按 **F5** 运行该应用程序。
 

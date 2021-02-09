@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d1b3b04f-4dd9-40e6-b2d4-b414d33fb647
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fa97f52f67e08b2ccf0843e5b5400680ed1c020
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9f061d9d10d66857a0b2506d13d6d6671f7df401
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434813"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860031"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制实现代码的可维护性
 
@@ -29,21 +29,21 @@ Team Foundation 版本控制的管理员可以将代码分析可维护性规则�
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>打开代码分析策略编辑器
 
-1. 在 **团队资源管理器** 中，右键单击项目，单击 " **项目设置** "，然后单击 " **源代码管理** "。
+1. 在 **团队资源管理器** 中，右键单击项目，单击 " **项目设置**"，然后单击 " **源代码管理**"。
 
      此时将显示 " **源代码管理** " 对话框。
 
-2. 在 " **签入策略** " 选项卡上，单击 " **添加** "。
+2. 在 " **签入策略** " 选项卡上，单击 " **添加**"。
 
      此时将显示 " **添加签入策略** " 对话框。
 
-3. 在 " **签入策略** " 列表中，选择 " **代码分析** " 复选框，然后单击 **"确定"** 。
+3. 在 " **签入策略** " 列表中，选择 " **代码分析** " 复选框，然后单击 **"确定"**。
 
      此时将显示 " **代码分析策略编辑器** " 对话框。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>启用代码分析可维护性规则
 
-1. 在 " **代码分析策略编辑器** " 对话框中的 " **规则设置** " 下，展开 "可 **维护性规则** " 节点。
+1. 在 " **代码分析策略编辑器** " 对话框中的 " **规则设置**" 下，展开 "可 **维护性规则** " 节点。
 
 2. 选中以下规则的复选框：
 

@@ -11,21 +11,21 @@ helpviewer_keywords:
 ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33a552cfe918ef75257a4d23391535622560661c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348731"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860095"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 
 代码分析使用内置字典检查代码中的标识符，以了解 .NET 设计准则的拼写、语法用例和其他命名约定中的错误。 您可以创建自定义字典 Xml 文件，以添加、删除或修改内置字典的术语、缩写和首字母缩写词。
 
-例如，假设代码包含一个名为 **DoorKnokker** 的类。 代码分析会将名称标识为两个词的组合： **门** 和 **knokker** 。 然后，它会发出警告，指出 **knokker** 拼写不正确。 若要强制代码分析识别拼写，可以将字词 **knokker** 添加到自定义字典中。
+例如，假设代码包含一个名为 **DoorKnokker** 的类。 代码分析会将名称标识为两个词的组合： **门** 和 **knokker**。 然后，它会发出警告，指出 **knokker** 拼写不正确。 若要强制代码分析识别拼写，可以将字词 **knokker** 添加到自定义字典中。
 
 ## <a name="to-create-a-custom-dictionary"></a>创建自定义字典
 
@@ -268,12 +268,12 @@ ms.locfileid: "94348731"
 
 1. 在 **解决方案资源管理器** 中，使用以下过程之一：
 
-    - 若要将字典添加到单个项目中，请右键单击项目名称，然后单击 " **添加现有项** "。 在 " **添加现有项** " 对话框中指定该文件。
+    - 若要将字典添加到单个项目中，请右键单击项目名称，然后单击 " **添加现有项**"。 在 " **添加现有项** " 对话框中指定该文件。
   
-    - 若要添加两个或多个项目之间共享的字典，请在 " **添加现有项** " 对话框中找到要共享的文件，单击 " **添加** " 按钮上的向下箭头，然后单击 " **添加为链接** "。
+    - 若要添加两个或多个项目之间共享的字典，请在 " **添加现有项** " 对话框中找到要共享的文件，单击 " **添加** " 按钮上的向下箭头，然后单击 " **添加为链接**"。
 
-2. 在 **解决方案资源管理器** 中，右键单击 **CustomDictionary.xml** 的文件名，然后单击 " **属性** "。
+2. 在 **解决方案资源管理器** 中，右键单击 **CustomDictionary.xml** 的文件名，然后单击 " **属性**"。
 
-3. 从 " **生成操作** " 列表中，选择 " **CodeAnalysisDictionary** "。
+3. 从 " **生成操作** " 列表中，选择 " **CodeAnalysisDictionary**"。
 
-4. 从 " **复制到输出目录** " 列表中，选择 "不 **复制** "。
+4. 从 " **复制到输出目录** " 列表中，选择 "不 **复制**"。

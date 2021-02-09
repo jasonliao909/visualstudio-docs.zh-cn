@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dccefdb0325cfd96024923c77d03565f904ea49
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348497"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860576"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 
@@ -41,12 +41,12 @@ ms.locfileid: "94348497"
 |[CA0058](ca0058.md)|无法加载引用的程序集。|
 |[CA0059](ca0059.md)|命令行开关错误。|
 |[CA0060](ca0060.md)|无法加载间接引用的程序集。|
-|[CA0061](ca0061.md)|未能找到规则 " *RuleId* "。|
-|[CA0062](ca0062.md)|未能找到规则集 " *RuleSetName* " 中引用的规则 " *RuleId* "。|
+|[CA0061](ca0061.md)|未能找到规则 "*RuleId*"。|
+|[CA0062](ca0062.md)|未能找到规则集 "*RuleSetName*" 中引用的规则 "*RuleId*"。|
 |[CA0063](ca0063.md)|未能加载规则集文件或其从属规则集文件之一。|
 |[CA0064](ca0064.md)|未执行任何分析，因为指定的规则集不包含任何 FxCop 规则。|
-|[CA0065](ca0065.md)|不支持的元数据构造：类型 " *TypeName* " 同时包含具有相同名称 " *PropertyFieldName* " 的属性和字段|
-|[CA0066](ca0066.md)|为 **/targetframeworkversion** 提供的值 " *VersionID* " 不是已识别的版本。|
+|[CA0065](ca0065.md)|不支持的元数据构造：类型 "*TypeName*" 同时包含具有相同名称 "*PropertyFieldName*" 的属性和字段|
+|[CA0066](ca0066.md)|为 **/targetframeworkversion** 提供的值 "*VersionID*" 不是已识别的版本。|
 |[CA0067](ca0067.md)|找不到目录。|
 |[CA0068](ca0068.md)|找不到目标程序集 *"AssemblyName"* 的调试信息。|
 |[CA0069](ca0069.md)|使用备用平台。 找不到 *FrameworkVersion1* 。 改为使用 *FrameworkVersion2* 。 为了获得最佳的分析结果，请确保已安装正确的框架版本。|
