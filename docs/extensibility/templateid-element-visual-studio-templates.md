@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 734af9de80da5f095f9ad7f0e52023659fea6b67
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 26a0b3ef90eab7cef51e5ca65032f2f4f68acd42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903177"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895318"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 元素（Visual Studio 模板）
 指定由 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) 元素分类到一组项模板的项模板的标识符。
@@ -53,7 +53,7 @@ ms.locfileid: "94903177"
 ## <a name="text-value"></a>文本值
  一个 `string` ，它表示由元素分类到一组项模板中的项模板的标识符 `TemplateGroupID` 。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `TemplateID` 是可选元素。
 
  如果 .vstemplate 文件省略了 `TemplateID` 元素，则 [Name](../extensibility/name-element-visual-studio-templates.md) 元素将用作模板的标识符。

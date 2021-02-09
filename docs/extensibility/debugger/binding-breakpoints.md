@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 606c1f4cb5559722028b78ef4ef21c41c0ba5556
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895006"
 ---
 # <a name="bind-breakpoints"></a>绑定断点
 如果用户通过按 **F9** 设置断点，则 IDE 会形成请求，并提示调试会话创建断点。

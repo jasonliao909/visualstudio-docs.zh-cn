@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 617439dc-3f0e-4e5f-b346-3e4e7fcf3c1b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1534c6ba029cf47cb637e958422efeecb970f35
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 815b47a700e87852596d7a65e341953f65b66cf9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894824"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>旧版语言服务中的语句完成
 语句完成是语言服务帮助用户完成在核心编辑器中键入的语言关键字或元素的过程。 本主题讨论语句完成的工作原理以及如何在语言服务中实现它。

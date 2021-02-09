@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f231f3426821b7f3148d3e6c268234f125f88f0
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895071"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。
@@ -36,7 +36,7 @@ ms.locfileid: "94437599"
 > 应用程序更新需要网络连接。 如果不存在网络连接，则应用程序会在不检查更新的情况下运行，而无论选择的是何种更新策略。
 
 > [!NOTE]
-> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 \<xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider`元素对应于 Visual Studio 中 " **发布** " 选项卡的 " **更新** " 对话框上的 " **更新位置** " 字段。此规则在 .NET Framework 3.5 中非常宽松。 有关详细信息，请参阅 [部署 ClickOnce 应用程序用于测试和生产服务器而无需让步](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 \<xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider`元素对应于 Visual Studio 中 "**发布**" 选项卡的 "**更新**" 对话框上的 "**更新位置**" 字段。此规则在 .NET Framework 3.5 中非常宽松。 有关详细信息，请参阅 [部署 ClickOnce 应用程序用于测试和生产服务器而无需让步](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
 
 ## <a name="check-for-updates-after-application-startup"></a>在应用程序启动后检查更新
  通过使用此策略，应用程序会在运行期间尝试在后台查找并读取部署清单文件。 如果有某个更新可用，则当用户下一次运行应用程序时，会提示用户下载并安装该更新。
@@ -122,7 +122,7 @@ ms.locfileid: "94437599"
 
 ## <a name="see-also"></a>另请参阅
 - <xref:System.Deployment.Application>
-- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 如何执行应用程序更新](../deployment/how-clickonce-performs-application-updates.md)

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - <addin> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cf922799301aef67ee70c480dd9e0823382cbd47
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 71fa31122432f4894bfca59929ee5eb127b7cad2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85543762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896722"
 ---
 # <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt; (Visual Studio 中的 Office 开发) 的 addin 元素
   命名空间的 **addin** 元素 `vstav3` 包含特定于在 Visual Studio 中开发的 Microsoft Office VSTO 外接程序和文档级自定义项的信息。
@@ -57,16 +57,16 @@ ms.locfileid: "85543762"
  `addin` 元素具有以下子元素。
 
 ### <a name="entrypoints"></a>entryPoints
- 必需。 [&#60;s&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)中介绍了**s**元素。
+ 必需。 [&#60;s&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)中介绍了 **s** 元素。
 
 ### <a name="update"></a>update
- 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;更新&#62; 元素](../vsto/update-element-office-development-in-visual-studio.md)中介绍了**update**元素。
+ 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;更新&#62; 元素](../vsto/update-element-office-development-in-visual-studio.md)中介绍了 **update** 元素。
 
 ### <a name="postactions"></a>postActions
- 可选。 [&#60;postActions&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)中介绍了**postActions**元素。
+ 可选。 [&#60;postActions&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)中介绍了 **postActions** 元素。
 
 ### <a name="application"></a>application
- 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;应用程序&#62; 元素](../vsto/application-element-office-development-in-visual-studio.md)中描述了**应用程序**元素。
+ 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;应用程序&#62; 元素](../vsto/application-element-office-development-in-visual-studio.md)中描述了 **应用程序** 元素。
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 

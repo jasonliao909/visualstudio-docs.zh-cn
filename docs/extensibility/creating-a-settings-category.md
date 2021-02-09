@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 468b1a44fb4754f86b31992e2c6d96bf6380592d
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896255"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
@@ -39,7 +39,7 @@ ms.locfileid: "94974543"
 
 2. 打开 *VSPackage* 文件并添加以下三个字符串资源：
 
-    |名称|值|
+    |“属性”|值|
     |----------|-----------|
     |106|我的类别|
     |107|我的设置|
@@ -116,7 +116,7 @@ ms.locfileid: "94974543"
 
      显示 **设置文件** 页的名称。
 
-9. 将新的设置文件命名为 *mysetting* ，并将其保存到相应的目录中。 单击“完成”。
+9. 将新的设置文件命名为 *mysetting* ，并将其保存到相应的目录中。 单击“完成” 。
 
      " **导出完成** " 页将报告你的设置已成功导出。
 
@@ -149,7 +149,7 @@ ms.locfileid: "94974543"
 
      此时将显示 " **选择要导入的设置集合** " 页。
 
-15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击“下一步”。
+15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击 **“下一步”** 。
 
      此时将显示 " **选择要导入的设置** " 对话框。
 

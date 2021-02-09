@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec16895e71788f160e0ce6025f35b4dff02d7d2f
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668880"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895773"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 您是否曾经想过如何创建您自己的项目类型呢？ 想知道创建新项目时究竟发生了什么情况？ 让我们看一下这一幕后，看看究竟会发生什么。
@@ -54,7 +54,7 @@ ms.locfileid: "97668880"
 devenv /setup
 ```
 
- or
+ 或
 
 ```
 devenv /installvstemplates
@@ -89,7 +89,7 @@ devenv /installvstemplates
  优先级越低，树中的位置越高。
 
 ##### <a name="developeractivity"></a>DeveloperActivity
- 如果此子项存在，则 "开发人员设置" 对话框控制根节点的位置。 例如，应用于对象的
+ 如果此子项存在，则 "开发人员设置" 对话框控制根节点的位置。 例如，
 
  DeveloperActivity REG_SZ VC#
 

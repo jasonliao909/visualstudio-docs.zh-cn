@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: db17ec9b-bfdf-46b1-bbe7-5ccc140056e2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc0edf82421ba41198480e6c105dd56c02bd0f7e
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 423bcc7b3d902488f268b2d0706cb5126125f37d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903255"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895383"
 ---
 # <a name="templatedata-element-visual-studio-templates"></a>TemplateData 元素（Visual Studio 模板）
 将此模板分类并定义此模板在 **“新建项目”** 或 **“添加新项”** 对话框中的显示方式。
@@ -47,9 +47,9 @@ ms.locfileid: "94903255"
 
 ### <a name="child-elements"></a>子元素
 
-| 元素 | 描述 |
+| 元素 | 说明 |
 | - | - |
-| [Name](../extensibility/name-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定模板在 " **新建项目** " 或 " **添加新项** " 对话框中显示的名称。 |
+| [名称](../extensibility/name-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定模板在 " **新建项目** " 或 " **添加新项** " 对话框中显示的名称。 |
 | [说明](../extensibility/description-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定在 " **新建项目** " 或 " **添加新项** " 对话框中显示的模板的说明。 |
 | [图标](../extensibility/icon-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 指定图像文件的路径和文件名，该图像文件将显示在模板的 " **新建项目** " 或 " **添加新项** " 对话框中。 |
 | [ProjectType](../extensibility/projecttype-element-visual-studio-templates.md) | 必需的元素。<br /><br /> 对项目模板进行分类，使其显示在 " **新建项目** " 对话框中的指定组下。 |
@@ -74,11 +74,11 @@ ms.locfileid: "94903255"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必需的元素。<br /><br /> 包含项目模板、项模板或初学者工具包的所有元数据。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `TemplateData` 是必需的元素。
 
  如果不包含可选元素，则使用该元素的默认值。

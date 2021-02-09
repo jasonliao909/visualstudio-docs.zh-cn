@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d9bc6212-c584-4f72-88c9-9a4b998c555e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b719f9609dfb2feb432f4692b31e820d806ff92
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 13b057f0a688c3a1ae855215ac226a4d31993ea1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437718"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895149"
 ---
 # <a name="build-clickonce-applications-from-the-command-line"></a>从命令行生成 ClickOnce 应用程序
 
@@ -33,7 +33,7 @@ ms.locfileid: "94437718"
 
  调用 msbuild/target：在命令行中发布时，它会告知 MSBuild 系统生成项目并 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在 "发布" 文件夹中创建应用程序。 这等效于在 IDE 中选择 " **发布** " 命令。
 
- 此命令执行 *msbuild.exe* ，该路径位于 Visual Studio 命令提示符环境的路径中。
+ 此命令执行 *msbuild.exe*，该路径位于 Visual Studio 命令提示符环境的路径中。
 
  "目标" 是有关如何处理命令的 MSBuild 的指示器。 键目标为 "生成" 目标和 "发布" 目标。 生成目标等效于在 IDE 中选择 "生成" 命令 (或按 F5) 。 如果只想生成项目，则可以通过键入来实现 `msbuild` 。 此命令有效，因为生成目标是生成的所有项目的默认目标 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 。 这意味着你不需要显式指定生成目标。 因此，键入与 `msbuild` 键入内容相同 `msbuild /target:build` 。
 
@@ -55,7 +55,7 @@ ms.locfileid: "94437718"
 
     出现“发布向导”。
 
-1. 在发布向导中，单击 " **完成** "。
+1. 在发布向导中，单击 " **完成**"。
 
     Visual Studio 将生成并显示名为 *Publish.htm* 的默认网页。
 
@@ -67,9 +67,9 @@ ms.locfileid: "94437718"
 
 1. 退出 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)]。
 
-2. 在 Windows 的 " **开始** " 菜单中，依次单击 " **所有程序** "、 **Microsoft Visual Studio** "、" **Visual Studio Tools** "、" **Visual Studio 命令提示** "。 这应该会在当前用户的根文件夹中打开一个命令提示符。
+2. 在 Windows 的 " **开始** " 菜单中，依次单击 " **所有程序**"、 **Microsoft Visual Studio**"、" **Visual Studio Tools**"、" **Visual Studio 命令提示**"。 这应该会在当前用户的根文件夹中打开一个命令提示符。
 
-3. 在 **Visual Studio 命令提示符下** ，将当前目录更改为刚才生成的项目的位置。 例如，键入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。
+3. 在 **Visual Studio 命令提示符下**，将当前目录更改为刚才生成的项目的位置。 例如，键入 `chdir My Documents\Visual Studio\Projects\CmdLineDemo`。
 
 4. 若要删除 "创建和发布项目" 中生成的现有文件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，请键入 `rmdir /s publish` 。
 
@@ -88,7 +88,7 @@ ms.locfileid: "94437718"
 
 从命令行生成 .NET ClickOnce 应用程序是类似的体验，但你需要在 MSBuild 命令行上为发布配置文件提供附加属性。 创建发布配置文件的最简单方法是使用 Visual Studio。  有关详细信息，请参阅 [使用 ClickOnce 部署 .Net Windows 应用程序](quickstart-deploy-using-clickonce-folder.md) 。
 
-创建发布配置文件后，可以在 msbuild 命令行中提供 .pubxml 文件作为属性。 例如：
+创建发布配置文件后，可以在 msbuild 命令行中提供 .pubxml 文件作为属性。 例如： 。
 
 ```cmd
     msbuild /t:publish /p:PublishProfile=<pubxml file> /p:PublishDir="<specific location>"
@@ -99,7 +99,7 @@ ms.locfileid: "94437718"
 
  在上述过程中发布应用程序时，发布向导或 .NET Core 3.1 或更高版本项目的发布配置文件中会将以下属性插入到项目文件中。 这些属性会直接影响 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的生成方式。
 
- *CmdLineDemo. .vbproj*  /  *CmdLineDemo* ：
+ *CmdLineDemo. .vbproj*  /  *CmdLineDemo*：
 
 ```xml
 <AssemblyOriginatorKeyFile>WindowsApplication3.snk</AssemblyOriginatorKeyFile>
@@ -130,13 +130,13 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 ::: moniker range=">=vs-2019"
 对于 .NET Core 3.1 或更高版本，将在 .pubxml 文件中提供这些设置。
 
- 发布属性在 " [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **项目设计器** " 的 " **发布** "、" **安全性** " 和 " **签名** " 属性页中进行控制。 下面是发布属性的说明，以及如何在应用程序设计器的各种属性页中设置每个属性的说明：
+ 发布属性在 " [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] **项目设计器**" 的 "**发布**"、"**安全性**" 和 "**签名**" 属性页中进行控制。 下面是发布属性的说明，以及如何在应用程序设计器的各种属性页中设置每个属性的说明：
 
 > [!NOTE]
 > 对于 .NET Windows 桌面项目，这些设置现在位于发布向导中
 ::: moniker-end
 
-- `AssemblyOriginatorKeyFile` 确定用于对应用程序清单进行签名的密钥文件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此相同键还可用于为程序集分配强名称。 此属性在 " **项目设计器** " 的 " **签名** " 页上设置。
+- `AssemblyOriginatorKeyFile` 确定用于对应用程序清单进行签名的密钥文件 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此相同键还可用于为程序集分配强名称。 此属性在 "**项目设计器**" 的 "**签名**" 页上设置。
 ::: moniker range=">=vs-2019"
 对于 .NET windows 应用程序，此设置保留在项目文件中
 ::: moniker-end
@@ -214,5 +214,5 @@ msbuild /target:publish /property:BootstrapperEnabled=false
 - <xref:Microsoft.Build.Tasks.GenerateBootstrapper>
 - <xref:Microsoft.Build.Tasks.GenerateApplicationManifest>
 - <xref:Microsoft.Build.Tasks.GenerateDeploymentManifest>
-- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
+- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

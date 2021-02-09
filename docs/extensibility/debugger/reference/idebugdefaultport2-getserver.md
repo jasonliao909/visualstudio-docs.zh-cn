@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cacb4b74-0f39-471c-af38-54b73f5b2868
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3dbe6d813b85865b0fdbc20296473684203a3f1e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e046dbad9329ae377cef6864b7bc71b2ea6a538b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894941"
 ---
 # <a name="idebugdefaultport2getserver"></a>IDebugDefaultPort2::GetServer
 此方法获取此端口所在的服务器的接口。
@@ -28,18 +28,18 @@ ms.locfileid: "80732380"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetServer(
-   IDebugCoreServer3** ppServer
+HRESULT GetServer(
+   IDebugCoreServer3** ppServer
 );
 ```
 
 ```csharp
-int GetServer(
-   out IDebugCoreServer3 ppServer
+int GetServer(
+   out IDebugCoreServer3 ppServer
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppServer`\
 弄返回实现 [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md) 接口的对象。
 

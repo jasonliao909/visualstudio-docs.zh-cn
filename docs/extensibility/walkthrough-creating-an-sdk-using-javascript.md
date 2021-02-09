@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd138638a1f8bb4c0fe8dc73504059f0c9dd4023
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895188"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练：使用 JavaScript 创建 SDK
 本演练介绍了如何使用 JavaScript 来创建简单的数学 SDK，作为 Visual Studio 扩展 (VSIX) 。  本演练分为以下几个部分：
@@ -138,7 +138,7 @@ ms.locfileid: "97862917"
 
 20. 选择 " **安装** " 按钮，让安装完成。
 
-21. 重新启动 Visual Studio。
+21. 重启 Visual Studio。
 
 ## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> 创建使用 SDK 的示例应用
 

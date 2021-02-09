@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab29fbe79b474aa7b640faf81de812b7571de861
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d1b051abfede6ec90350878f669ed32e7e26b299
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896757"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 在创建新的项目类型之前，必须对项目类型做出多种设计决策。 您必须确定您的项目将包含哪些类型的项、如何保存项目文件以及将使用哪种提交模型。

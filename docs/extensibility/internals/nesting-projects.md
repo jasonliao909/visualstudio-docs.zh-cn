@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 12cce037-9840-4761-845e-5abd5fb317b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 464538d7f7be68737715cb6fd10fda4017a5556a
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 306099f1fc65a211943e4fb25a5cd73ad6195ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876657"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895669"
 ---
 # <a name="nesting-projects"></a>嵌套项目
 使用 VS 包的企业应用程序开发人员可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过使用 *项目嵌套*，在中轻松地将相似类型的项目组合在一起。 例如，企业模板项目使用嵌套项目将项目分组到类别中。 业务外观项目、Web UI 项目等在一个类别中组合在一起。

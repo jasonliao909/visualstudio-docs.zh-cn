@@ -13,20 +13,20 @@ helpviewer_keywords:
 - troubleshooting [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3ee25ea397af3805ac88b51d12a862bffdb20a00
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: ae7ddc628d364fb57e835af63c595d416fdf688e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522830"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895175"
 ---
 # <a name="troubleshoot-office-solutions"></a>排查 Office 解决方案问题
   本部分包含用于解决常见问题的提示，你在通过使用 Visual Studio 中的 Office 开发工具创建解决方案时可能会遇到这些问题。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [排查 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)
 
  描述你在 Visual Studio 中设计、运行和测试 Office 解决方案时可能会产生的常见问题。

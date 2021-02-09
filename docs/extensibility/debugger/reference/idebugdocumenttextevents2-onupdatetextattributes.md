@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eb68d69a-1ad9-4ce4-84e1-40979ef16634
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82cda44c50319ef76efbc8fa3ae2712c3a4ae8f2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f663f6dc2de0a0c471587ecb19bfb3fade31e943
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731375"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896183"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 通知调试包文本属性已在文档中更新。
@@ -28,20 +28,20 @@ ms.locfileid: "80731375"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT onUpdateTextAttributes( 
+HRESULT onUpdateTextAttributes( 
    TEXT_POSITION pos,
    DWORD         dwNumToUpdate
 );
 ```
 
 ```csharp
-int onUpdateTextAttributes( 
+int onUpdateTextAttributes( 
    enum_TEXT_POSITION pos,
    uint               dwNumToUpdate
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pos`\
 中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，它指示文本特性的更新位置。
 

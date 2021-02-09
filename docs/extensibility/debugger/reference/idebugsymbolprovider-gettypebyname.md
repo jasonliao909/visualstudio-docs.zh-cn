@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b9d88d3b-8b75-484a-b9cc-dc8c0fbb4bc8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce4dfab898190eb89c58503e378b410ddfc240de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 565a202d3b63a8c501864099940f5ca16da96077
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894863"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 此方法将符号名称映射到符号类型。
@@ -28,7 +28,7 @@ ms.locfileid: "80719188"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetTypeByName( 
+HRESULT GetTypeByName( 
    LPCOLESTR     pszClassName,
    NAME_MATCH    nameMatch,
    IDebugField** ppField
@@ -43,7 +43,7 @@ int GetTypeByName(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszClassName`\
 中符号名称。
 
