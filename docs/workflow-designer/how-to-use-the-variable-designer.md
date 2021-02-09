@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e8dc5e402fcf3bedabe2b0f7fe606dfe807525ab
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a427b14db5be8081352ce54bf13900fa826202b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437822"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894005"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 
@@ -33,7 +33,7 @@ ms.locfileid: "94437822"
 
 3. 通过单击设计画布左下角的 " **变量** " 按钮打开变量设计器。 此时将显示变量设计器。
 
-4. 单击标记为 " **创建变量** " 的空行。 这会使用以下默认值添加一个具有新变量的新行： variablex 作为 **名称** ，其中 x 是一个整数，其初始值为1，其初始值为1，该值将自动递增，以创建唯一的变量名称、 **变量类型** 的 **字符串** 和 **作用域** 的 **序列** 。 不会添加 **默认** 值。 可以在工作流设计过程中随时更改这些值。
+4. 单击标记为 " **创建变量**" 的空行。 这会使用以下默认值添加一个具有新变量的新行： variablex 作为 **名称**，其中 x 是一个整数，其初始值为1，其初始值为1，该值将自动递增，以创建唯一的变量名称、**变量类型** 的 **字符串** 和 **作用域** 的 **序列**。 不会添加 **默认** 值。 可以在工作流设计过程中随时更改这些值。
 
     > [!NOTE]
     > 若要删除某个变量，请单击该变量，然后按 **delete** 键。

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 235a125e-ebe7-4a98-bf77-86c8558728fb
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df3a1b4ead644058147473a4f95cf16fe6fc5cc
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cf8c0fe0b716cecee19c00bb0b300d4ffdc99355
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438095"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894356"
 ---
 # <a name="workflow-project-templates"></a>工作流项目模板
 
@@ -38,14 +38,14 @@ Visual Studio 提供了四种不同的工作流项目模板：
 
 若要访问这些模板，请首先安装 Visual Studio 的 **Windows Workflow Foundation** 组件。 有关详细说明，请参阅 [安装 Windows Workflow Foundation](developing-applications-with-the-workflow-designer.md#install-windows-workflow-foundation)。
 
-1. 安装 **Windows Workflow Foundation** 组件后，请选择 " **文件** " "  >  **新建**  >  **项目** "。
+1. 安装 **Windows Workflow Foundation** 组件后，请选择 "**文件**" "  >  **新建**  >  **项目**"。
 
 1. 搜索并选择一个工作流项目模板，例如 " **工作流控制台应用程序** " 模板。
 
 1. 继续创建项目。
 
    > [!NOTE]
-   > 如果要向现有解决方案中添加新项目，请在 Visual Studio 中打开该解决方案，在 **解决方案资源管理器** 中右键单击该解决方案，然后选择 " **添加**  >  **新项目** "。
+   > 如果要向现有解决方案中添加新项目，请在 Visual Studio 中打开该解决方案，在 **解决方案资源管理器** 中右键单击该解决方案，然后选择 "**添加**  >  **新项目**"。
 
 ## <a name="workflow-console-app"></a>工作流控制台应用
 

@@ -17,15 +17,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef77fb280021fcfb701a677bc9ce17ec26e39516
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 799589f5eba901a6fa82191507af1397ab1d323a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96304521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893342"
 ---
 # <a name="import-items-from-an-existing-sharepoint-site"></a>从现有的 SharePoint 网站导入项
   利用“导入 SharePoint 解决方案包”项目模板，你可以在新的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 解决方案中重用现有 SharePoint 网站中的元素，例如，内容类型和字段。 虽然无需修改即可运行大多数导入的解决方案，但需要考虑一些限制和问题，尤其是在导入任何项后对这些项进行修改的情况下。

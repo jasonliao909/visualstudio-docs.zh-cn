@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cb405bd0cf6f3ec846e3b146e4fd02399d583fb7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 53d0f3ae185a8f13a76547b5afdad1e3b6558918
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733771"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892861"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 检索具有指定模块的给定父属性的调试符号。
@@ -50,7 +50,7 @@ int GetSymAttribute (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ulAppDomainID`\
 中应用程序域的标识符。
 
@@ -76,7 +76,7 @@ int GetSymAttribute (
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的**CDebugSymbolProvider**对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetSymAttribute(

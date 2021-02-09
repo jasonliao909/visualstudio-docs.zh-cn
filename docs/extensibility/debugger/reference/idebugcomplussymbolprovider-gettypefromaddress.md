@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 01f21ff9-e8a5-4e5f-9f7b-1b6de8b1432f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87dfa102916b55c8445ecbf99d7033c0391ec254
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 65b94be12bab00b44f12bc23239de90f5e8c0ddc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733739"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892835"
 ---
 # <a name="idebugcomplussymbolprovidergettypefromaddress"></a>IDebugComPlusSymbolProvider::GetTypeFromAddress
 根据给定的调试地址检索到符号类型。
@@ -40,7 +40,7 @@ int GetTypeFromAddress(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pAddress`\
 中由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示的调试地址。
 
@@ -51,7 +51,7 @@ int GetTypeFromAddress(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的**CDebugSymbolProvider**对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromAddress(

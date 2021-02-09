@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d4828b573585969154f2ad1d484c9fcdf767417
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7a8a7a4f041e2a38cf1e24e8cf156d3e595010b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718769"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893849"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 获取线程的名称。
@@ -28,18 +28,18 @@ ms.locfileid: "80718769"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetName ( 
+HRESULT GetName ( 
    BSTR* pbstrName
 );
 ```
 
 ```csharp
-int GetName ( 
+int GetName ( 
    out string pbstrName
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrName`\
 弄返回线程的名称。
 

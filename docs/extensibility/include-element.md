@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: c923dfe6-084a-4105-aec1-f0a3f8399c54
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71da1241863e41529af33bdd5e45dcf0a8bfbdb1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 6d718178bf7490d29c0668d892add4c302b8925a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996339"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893628"
 ---
 # <a name="include-element"></a>Include 元素
 Include 元素指定一个文件，该文件可位于提供的包含路径上，用于插入当前文件。  所有定义的符号和类型将成为编译结果的一部分。

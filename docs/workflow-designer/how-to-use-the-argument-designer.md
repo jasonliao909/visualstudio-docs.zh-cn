@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 64813fd5-1ea1-499a-98b4-ab2a44b7ee5e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aca39eaf94e5dca3159a9f3740dae0f87257d9c1
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9b97368a942747046aa7641771f84a9f2ed41e11
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437861"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99894096"
 ---
 # <a name="how-to-use-the-argument-designer"></a>如何：使用自变量设计器
 
@@ -30,7 +30,7 @@ ms.locfileid: "94437861"
 
 2. 通过单击设计画布左下角的 " **参数** " 按钮打开参数设计器。 此时将显示参数设计器。
 
-3. 单击标记为 " **创建参数** " 的行。 这会使用以下默认值添加一个具有新自变量的新行： argumentx 作为 **名称** ，其中 x 是一个整数，其初始值为1，其初始值为1，自动递增以创建唯一的参数名称， **在中** 为 **方向** ， **字符串** 用于 **参数类型** 。 不会为 **默认值** 添加值。 可以在工作流设计过程中随时更改这些值。
+3. 单击标记为 " **创建参数**" 的行。 这会使用以下默认值添加一个具有新自变量的新行： argumentx 作为 **名称** ，其中 x 是一个整数，其初始值为1，其初始值为1，自动递增以创建唯一的参数名称， **在中** 为 **方向**， **字符串** 用于 **参数类型**。 不会为 **默认值** 添加值。 可以在工作流设计过程中随时更改这些值。
 
     > [!NOTE]
     > 若要删除某个参数，请单击该参数，然后按 **delete** 键。

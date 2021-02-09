@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 9640e121-1da1-41f9-8e66-76efca36baf2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c686659d2a3d5e81e8e466bf1707337842cf8317
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b42475afc8a9b5e2f86b2892a091efb738dd8d88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892887"
 ---
 # <a name="idebugcomplussymbolprovidergetentrypoint"></a>IDebugComPlusSymbolProvider::GetEntryPoint
 检索应用程序入口点。
@@ -42,7 +42,7 @@ int GetEntryPoint(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ulAppDomainID`\
 中应用程序域的标识符。
 
@@ -56,7 +56,7 @@ int GetEntryPoint(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的**CDebugSymbolProvider**对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetEntryPoint(

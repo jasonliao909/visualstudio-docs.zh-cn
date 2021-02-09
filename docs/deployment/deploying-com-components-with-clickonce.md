@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 1a4c7f4c-7a41-45f2-9af4-8b1666469b89
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fc6ef0e4d682f0f712eefc4c139895331c31688
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: e2285706f2d15c5497a83d27c95cd613191e0fe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94382918"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99893966"
 ---
 # <a name="deploy-com-components-with-clickonce"></a>使用 ClickOnce 部署 COM 组件
 传统的 COM 组件的部署通常是一件很困难的任务。 组件需要全局注册，因此可能会导致重叠应用程序之间的不良副作用。 这种情况通常并不是 .NET Framework 应用程序中的问题，因为组件完全独立于应用程序或并行兼容。 Visual Studio 允许你在 Windows XP 或更高版本的操作系统上部署隔离的 COM 组件。
@@ -37,7 +37,7 @@ ms.locfileid: "94382918"
 ## <a name="registration-free-com"></a>免注册 COM
  免费注册 COM 是一种用于部署和激活隔离的 COM 组件的新技术。 它的工作方式是将所有组件的类型库和注册信息（通常安装在系统注册表中）放到称为清单的 XML 文件中，该文件存储在与应用程序相同的文件夹中。
 
- 隔离 COM 组件要求在开发人员的计算机上注册该组件，但不需要在最终用户的计算机上注册该组件。 若要隔离 COM 组件，只需将其引用的 **独立** 属性设置为 **True** 。 默认情况下，此属性设置为 **False** ，表示它应被视为已注册的 COM 引用。 如果此属性为 **True** ，则会在生成时为此组件生成清单。 它还会在安装过程中将相应的文件复制到应用程序文件夹。
+ 隔离 COM 组件要求在开发人员的计算机上注册该组件，但不需要在最终用户的计算机上注册该组件。 若要隔离 COM 组件，只需将其引用的 **独立** 属性设置为 **True**。 默认情况下，此属性设置为 **False**，表示它应被视为已注册的 COM 引用。 如果此属性为 **True**，则会在生成时为此组件生成清单。 它还会在安装过程中将相应的文件复制到应用程序文件夹。
 
  当清单生成器遇到独立的 COM 引用时，它会枚举 `CoClass` 组件类型库中的所有条目，将每个条目与其相应的注册数据相匹配，并为类型库文件中的所有 COM 类生成清单定义。
 
@@ -59,7 +59,7 @@ ms.locfileid: "94382918"
 
 ##### <a name="to-create-a-native-com-component"></a>创建本机 COM 组件
 
-1. 使用 Visual Basic 6.0，在 " **文件** " 菜单中依次单击 " **新建** "、" **项目** "。
+1. 使用 Visual Basic 6.0，在 " **文件** " 菜单中依次单击 " **新建**"、" **项目**"。
 
 2. 在 " **新建项目** " 对话框中，选择 " **Visual Basic** " 节点，然后选择 **ActiveX DLL** 项目。 在“名称”框中键入 `VB6Hello`。
 
@@ -85,9 +85,9 @@ ms.locfileid: "94382918"
 
 ##### <a name="to-create-a-windows-based-application-using-a-com-component"></a>使用 COM 组件创建基于 Windows 的应用程序
 
-1. 使用 Visual Basic，在 " **文件** " 菜单中依次单击 " **新建** "、" **项目** "。
+1. 使用 Visual Basic，在 " **文件** " 菜单中依次单击 " **新建**"、" **项目**"。
 
-2. 在 " **新建项目** " 对话框中，选择 " **Visual Basic** " 节点，然后选择 " **Windows 应用程序** "。 在“名称”框中键入 `RegFreeComDemo`。
+2. 在 " **新建项目** " 对话框中，选择 " **Visual Basic** " 节点，然后选择 " **Windows 应用程序**"。 在“名称”框中键入 `RegFreeComDemo`。
 
 3. 在 **解决方案资源管理器** 中，单击 " **显示所有文件** " 按钮以显示项目引用。
 
@@ -97,9 +97,9 @@ ms.locfileid: "94382918"
 
     "引用" 列表中将出现一个 **VB6Hello** 引用。
 
-6. 指向 " **工具箱** "，选择一个 " **按钮** " 控件，然后将其拖到 " **Form1** " 窗体。
+6. 指向 " **工具箱**"，选择一个 " **按钮** " 控件，然后将其拖到 " **Form1** " 窗体。
 
-7. 在 " **属性** " 窗口中，将按钮的 **Text** 属性设置为 " **Hello** "。
+7. 在 " **属性** " 窗口中，将按钮的 **Text** 属性设置为 " **Hello**"。
 
 8. 双击该按钮添加处理程序代码，然后在代码文件中添加代码，使处理程序按如下所示进行读取：
 
@@ -112,7 +112,7 @@ ms.locfileid: "94382918"
 
 9. 运行应用程序。 在“调试”菜单中，单击“开始调试” 。
 
-   接下来，需要隔离控件。 您的应用程序使用的每个 COM 组件都在您的项目中表示为 COM 引用。 这些引用在 " **解决方案资源管理器** " 窗口中的 " **引用** " 节点下可见。  (请注意，你可以直接使用 " **项目** " 菜单上的 " **添加引用** " 命令来添加引用，或通过将 ActiveX 控件拖到窗体上来间接添加引用。 ) 
+   接下来，需要隔离控件。 您的应用程序使用的每个 COM 组件都在您的项目中表示为 COM 引用。 这些引用在 "**解决方案资源管理器**" 窗口中的 "**引用**" 节点下可见。  (请注意，你可以直接使用 "**项目**" 菜单上的 "**添加引用**" 命令来添加引用，或通过将 ActiveX 控件拖到窗体上来间接添加引用。 ) 
 
    以下步骤演示如何隔离 COM 组件和发布包含独立控件的更新应用程序：
 
@@ -120,7 +120,7 @@ ms.locfileid: "94382918"
 
 1. 在 **解决方案资源管理器** 的 " **引用** " 节点中，选择 **VB6Hello** 引用。
 
-2. 在 " **属性** " 窗口中，将 **隔离** 属性的值从 **False** 更改为 **True** 。
+2. 在 " **属性** " 窗口中，将 **隔离** 属性的值从 **False** 更改为 **True**。
 
 3. 在“生成”菜单中，单击“生成解决方案”。
 
@@ -133,7 +133,7 @@ ms.locfileid: "94382918"
 
 ##### <a name="to-publish-an-application-update-with-an-isolated-com-component"></a>使用独立的 COM 组件发布应用程序更新
 
-1. 在 " **生成** " 菜单中，单击 " **发布 RegFreeComDemo** "。
+1. 在 " **生成** " 菜单中，单击 " **发布 RegFreeComDemo**"。
 
     出现“发布向导”。
 
@@ -144,7 +144,7 @@ ms.locfileid: "94382918"
    如果检查已发布的文件，则会注意到包含 sysmon 文件。 此控件完全独立于此应用程序，这意味着，如果最终用户的计算机使用其他版本的控件，则它不能干扰此应用程序。
 
 ## <a name="reference-native-assemblies"></a>引用本机程序集
- Visual Studio 支持对本机 Visual Basic 6.0 或 c + + 程序集的引用;此类引用称为本机引用。 可以通过验证引用是否设置为 **本机** 或 **ActiveX** 来判断 **File Type** 引用是否为本机引用。
+ Visual Studio 支持对本机 Visual Basic 6.0 或 c + + 程序集的引用;此类引用称为本机引用。 可以通过验证引用是否设置为 **本机** 或 **ActiveX** 来判断引用是否为本机引用。
 
  若要添加本机引用，请使用 " **添加引用** " 命令，然后浏览到该清单。 某些组件将清单置于 DLL 中。 在这种情况下，只需选择 DLL 本身，Visual Studio 就会将其添加为本机引用（如果它检测到组件包含嵌入的清单）。 如果清单中列出的所有依赖文件或程序集位于与引用组件相同的文件夹中，则它也会自动包括这些文件或程序集。
 
@@ -173,5 +173,5 @@ ms.locfileid: "94382918"
 
   开发人员的计算机上需要进行 COM 注册，即使应用程序的部署不需要注册也是如此。 `Isolated`属性要求在开发人员的计算机上注册 COM 组件，以便在生成过程中自动生成清单。 无注册捕获功能可在生成过程中调用自注册。 此外，类型库中未显式定义的任何类将不会反映在清单中。 将 COM 组件与预先存在的清单（如本机引用）结合使用时，可能不需要在开发时注册该组件。 但是，如果组件是 ActiveX 控件并且你想要将其包含在 " **工具箱** " 和 "Windows 窗体设计器" 中，则需要注册。
 
-## <a name="see-also"></a>请参阅
-- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
+## <a name="see-also"></a>另请参阅
+- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

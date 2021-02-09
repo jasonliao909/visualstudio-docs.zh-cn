@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 18f91e8df525cb861c9d1053b1f944352944a355
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: d2e9c5b6738d328c92393f2f7487b980de3e50cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90037374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892926"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 检索具有指定的特性（在指定的编程语言中实现）的类。
@@ -44,7 +44,7 @@ int GetAttributedClassesForLanguage (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidLanguage`\
 中语言的唯一标识符。
 
@@ -58,7 +58,7 @@ int GetAttributedClassesForLanguage (
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的**CDebugSymbolProvider**对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetAttributedClassesForLanguage(
