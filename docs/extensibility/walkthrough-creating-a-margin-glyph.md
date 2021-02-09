@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8a2ac481ebf76fc2b34be841cd20d15b97fcfa9
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: a2a1857edb8032d12cd23da5e2686ad90f15b574
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892458"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>演练：创建边距标志符号
 您可以使用自定义编辑器扩展自定义编辑器边距的外观。 此演练在代码注释中出现 "todo" 一词时，将自定义标志符号放置在指示器边距上。

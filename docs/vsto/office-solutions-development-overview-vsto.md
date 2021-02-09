@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office development in Visual Studio, about developing solutions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9bb964e90c44c4e0b41e0f09df8931665426dc70
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 03da1c8052140bbe23ce4d99c12d72baef18898f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891951"
 ---
 # <a name="office-solutions-development-overview-vsto"></a>Office 解决方案开发概述 (VSTO) 
   通过将 Microsoft Office 用作解决方案的前端，你可以利用熟悉的 Microsoft Office 用户界面和工具，例如 Word 中的文字处理功能、Excel 的数据分析功能、数据分析功能和 Outlook 的电子邮件管理功能。 你可以在 Visual Studio 中开发解决方案以自定义 Office 应用程序并添加业务流程所需的特定功能。 例如，你可以将 Word 转化为协定生成器，收集可进行编辑或不可编辑的预存在部件外部的协定。 通过使用 Excel，你可以为不同项目创建定制的自动化预算工作表。 你的用户也可以脱机使用 Office 解决方案，使复杂的解决方案比起在使用基于 Web 的体系结构时更简单实用。
@@ -81,7 +81,7 @@ ms.locfileid: "97527720"
 ### <a name="deployment-options"></a>部署选项
  使用 ClickOnce 或 Windows Installer 部署通过使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 开发工具创建的解决方案。 通过 ClickOnce 部署，你可以创建自行更新解决方案，以最少的用户交互进行安装和运行。 Windows Installer (*.msi*) 文件可以轻松分发给最终用户计算机，或通过使用 Systems Management SERVER (SMS) 分发。 有关部署 VSTO Office 解决方案的详细信息，请参阅 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
-### <a name="install-prerequisites"></a>安装必备组件
+### <a name="install-prerequisites"></a>安装先决条件
  在最终用户可以运行你通过使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]中的 Office 开发工具创建的解决方案之前，必须在其计算机上安装某些必备组件。 如果通过使用 ClickOnce 或通过创建 Windows Installer 文件部署解决方案，则可以使用你的解决方案安装这些必备组件。 有关详细信息，请参阅 [部署的 Office 解决方案必备组件](/previous-versions/bb608617(v=vs.110)) 以及 [如何：在最终用户计算机上安装必备组件以运行 Office 解决方案](/previous-versions/bb608608(v=vs.110))。
 
 ### <a name="security"></a>安全性

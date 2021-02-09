@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e5ccf2327e660a983bcb3032363a92ac8a6f71d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f630614dbe49e87b5a9905ceabbf717269c98ea2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730295"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892601"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 此接口提供多线程调试支持。
@@ -39,7 +39,7 @@ IDebugEngineProgram2 : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止在此程序中运行的所有线程。|
+|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止在此程序中运行的所有线程。|
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|监视执行 (或停止监视执行) 在给定线程上发生。|
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|允许 (或不允许) 表达式计算在给定线程上发生，即使程序已停止也是如此。|
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 4a2df0a3-42da-4f7b-996f-ee16a35ac922
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2108abe89a47fa276da53a14439a52451d936eea
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d9bf88212ccc6e00dfbca14912eb15e17d106a49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892445"
 ---
 # <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练：创建 "视图修饰"、"命令" 和 "设置" ("列参考线") 
 您可以通过命令和查看效果来扩展 Visual Studio 文本/代码编辑器。 本文介绍了如何开始使用常见的扩展功能（列指南）。 列参考线是在文本编辑器的视图上绘制的细线，可帮助您将代码管理到特定列宽。 具体而言，格式代码对于包含在文档、博客文章或 bug 报表中的示例非常重要。

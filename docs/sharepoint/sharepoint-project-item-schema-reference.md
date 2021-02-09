@@ -22,15 +22,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bd425111e7e3d69e381e69e60daf914f74cd2d11
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892276"
 ---
 # <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
   Visual Studio 使用 SharePoint 项目项架构来验证 *spdata* 文件的内容。 *Spdata* 文件指定 SharePoint 项目项的内容和行为。 有关 SharePoint 项目项的内容的详细信息，请参阅 [为 sharepoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。

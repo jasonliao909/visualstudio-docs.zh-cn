@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a9ef5e7d47f72b82e7a8fab52cc2f1f8716c83bf
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: c6b0e031e96d2543ae0bb109f243824125f431a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95970283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892289"
 ---
 # <a name="troubleshoot-sharepoint-solutions"></a>SharePoint 解决方案疑难解答
   使用调试器调试 SharePoint 解决方案时，可能会出现以下问题或警报 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 [调试 SharePoint 2007 工作流解决方案](/previous-versions/bb386166(v=vs.100))。
@@ -60,7 +60,7 @@ ms.locfileid: "95970283"
 
 - 逗号 (,)
 
-- 下划线 (_) 
+- 下划线 (_)
 
 - 短划线 (-) 
 
@@ -259,7 +259,7 @@ ms.locfileid: "95970283"
 ### <a name="resolution"></a>解决方法
  发生这种情况的原因是，在关闭 SharePoint 解决方案的调试会话之后，自动收回功能将收回解决方案。 收回操作会从 SharePoint 中删除列表定义，但不会删除列表的实例。 列表实例需要基础列表定义。
 
- 若要解决此问题，请通过在菜单栏上选择 "**生成** 部署" 来部署解决方案  >  **Deploy**。  (不要通过选择 **F5** 键调试解决方案。 ) 然后在 SharePoint 中删除列表实例。
+ 若要解决此问题，请通过在菜单栏上选择 "**生成** 部署" 来部署解决方案  >  。  (不要通过选择 **F5** 键调试解决方案。 ) 然后在 SharePoint 中删除列表实例。
 
 ## <a name="original-sharepoint-solution-is-replaced-by-an-exported-version"></a>原始 SharePoint 解决方案替换为导出版本
  如果导出 SharePoint 解决方案，则将解决方案导入到 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，然后将其部署到从中导出解决方案的同一站点，将替换原始 SharePoint 解决方案。 如果将解决方案部署到的服务器上未激活原始解决方案，则不会出现此问题。

@@ -22,15 +22,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deployment conflict resolution
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 07ce649a22573041768bfc316f65bfcdf7577b98
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: f3ef56ba868700699eaaeb8ec88291fd6f8d8d32
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95969936"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892302"
 ---
 # <a name="troubleshoot-sharepoint-packaging-and-deployment"></a>SharePoint 打包和部署疑难解答
   本主题论述了您在打包和部署 SharePoint 解决方案时可能遇到的各种问题。
@@ -52,7 +52,7 @@ ms.locfileid: "95969936"
 |值|说明|
 |-----------|-----------------|
 |自动|自动检测冲突和解决冲突。|
-|Prompt|检测冲突并在解决冲突之前向开发人员报告冲突。|
+|提示|检测冲突并在解决冲突之前向开发人员报告冲突。|
 |无|不检测冲突。|
 
 ## <a name="differences-between-f5-deployment"></a>F5 部署之间的差异

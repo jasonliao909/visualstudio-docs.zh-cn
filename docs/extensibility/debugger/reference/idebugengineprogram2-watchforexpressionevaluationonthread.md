@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f36431ef7a190e98d35e795ffd8213781553dfc
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: ae9e10da02ab0bbef6be0fed5b9d505bf1b3e268
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99892666"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 允许 (或不允许) 表达式计算在给定线程上发生，即使程序已停止也是如此。
@@ -30,7 +30,7 @@ ms.locfileid: "90036114"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT WatchForExpressionEvaluationOnThread( 
+HRESULT WatchForExpressionEvaluationOnThread( 
    IDebugProgram2*       pOriginatingProgram,
    DWORD                 dwTid,
    DWORD                 dwEvalFlags,
@@ -40,7 +40,7 @@ HRESULT WatchForExpressionEvaluationOnThread( 
 ```
 
 ```csharp
-int WatchForExpressionEvaluationOnThread( 
+int WatchForExpressionEvaluationOnThread( 
    IDebugProgram2       pOriginatingProgram,
    uint                  dwTid,
    uint                  dwEvalFlags,
@@ -49,7 +49,7 @@ int WatchForExpressionEvaluationOnThread( 
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pOriginatingProgram`\
 中表示计算表达式的程序的 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象。
 
