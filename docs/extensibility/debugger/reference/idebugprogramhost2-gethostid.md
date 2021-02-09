@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7702e221-feb1-446b-a224-cb46c420987e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e02a78350fead837d4540c435b97a423dfdd471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d9fb207539cdc6a12819fad4f87c6da3540f1aba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722318"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898845"
 ---
 # <a name="idebugprogramhost2gethostid"></a>IDebugProgramHost2::GetHostId
 获取承载此程序的进程的进程标识符。
@@ -28,18 +28,18 @@ ms.locfileid: "80722318"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetHostId( 
+HRESULT GetHostId( 
    AD_PROCESS_ID* pdwId
 );
 ```
 
 ```csharp
-int GetHostId( 
+int GetHostId( 
    AD_PROCESS_ID[] pdwId
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwId`\
 [in，out]使用进程标识符信息填充的 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 结构。
 

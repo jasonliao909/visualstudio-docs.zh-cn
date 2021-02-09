@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b02e4b88b22257e7187e334f8c1064b68c6ef49d
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94901721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898090"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
 
@@ -61,9 +61,9 @@ ms.locfileid: "94901721"
 
  文本必须是 `true` 或 `false` ，指示是否可从 "**添加新项**" 对话框中使用 "**语言**" 选项。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
- `SupportsLanguageDropDown` 是可选元素。 默认值为 `false`。
+ `SupportsLanguageDropDown` 是可选元素。 默认值是 `false`。
 
  `SupportsLanguageDropDown`元素仅适用于 Web 项模板。
 

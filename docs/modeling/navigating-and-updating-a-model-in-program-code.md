@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, programming domain models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb7c78351ccd03247d458ca403c81d379ec18d29
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897865"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
@@ -86,7 +86,7 @@ ms.locfileid: "97362205"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- 还有其他用于访问链接的方法。 例如：
+ 还有其他用于访问链接的方法。 例如： 。
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -110,7 +110,7 @@ ms.locfileid: "97362205"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> 访问类信息
- 可以获取有关 DSL 定义的类、关系和其他方面的信息。 例如：
+ 可以获取有关 DSL 定义的类、关系和其他方面的信息。 例如： 。
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -201,13 +201,13 @@ using (Transaction t =
 
  可以通过三种方式创建关系的实例。 这三种方法都具有相同的效果：
 
-- 设置源角色扮演者的属性。 例如：
+- 设置源角色扮演者的属性。 例如： 。
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- 设置目标角色扮演者的属性。 例如：
+- 设置目标角色扮演者的属性。 例如： 。
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -217,7 +217,7 @@ using (Transaction t =
 
        此角色的重数为 `0..*` ，因此我们将添加到集合中。
 
-- 显式构造关系的实例。 例如：
+- 显式构造关系的实例。 例如： 。
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -484,7 +484,7 @@ partial class MyDiagram
 ## <a name="store-partitions"></a>存储分区
  加载模型时，将同时加载随附的关系图。 通常情况下，模型会加载到 DefaultPartition 中，关系图内容会加载到另一个分区中。 通常会加载每个分区的内容并将其保存到单独的文件中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Modeling.ModelElement>
 - [域特定语言中的验证](../modeling/validation-in-a-domain-specific-language.md)

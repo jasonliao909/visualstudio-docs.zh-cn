@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c2e74ba3c0f826314818bc883778a6364ff3fb6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b337d9c6742c1c3b0379a757761955151cc6dc6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898648"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 获取 (DE) 运行程序的调试引擎的名称和标识符。
@@ -28,7 +28,7 @@ ms.locfileid: "80722098"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetEngineInfo ( 
+HRESULT GetEngineInfo ( 
    BSTR* pbstrEngine,
    GUID* pguidEngine
 );
@@ -41,7 +41,7 @@ int GetEngineInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrEngine`\
 弄返回正在运行的程序的名称 (c + + 特定的：这可以是 null 指针，指示调用方不会对引擎名称) 感兴趣。
 

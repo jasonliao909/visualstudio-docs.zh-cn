@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Office project types in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 191de013c94bfede7d1ddac5f3dd0392143e08dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: df634a7c242819e4f41a6fddeae4099a3d25fae2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847528"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897635"
 ---
 # <a name="design-and-create-office-solutions"></a>设计和创建 Office 解决方案
 
@@ -93,7 +93,7 @@ Visual Studio 提供可用于创建几种不同类型的 Office 解决方案的�
 ## <a name="referenced-assemblies"></a>引用的程序集
  该程序集可以引用项目引用中列出的其他程序集。 但是，一个文档级项目程序集不能引用另一个文档级项目程序集。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 项目模板概述](../vsto/office-project-templates-overview.md)
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)

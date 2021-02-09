@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 510c7f5d-48ff-4d9f-ad79-fbad9f15239d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9af930716725a62fff5ea3d1635b506b06b26086
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2b8c84f90373743fb94fa0fe7115656642e0384a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898514"
 ---
 # <a name="idebugprogramnode2getprogramname"></a>IDebugProgramNode2::GetProgramName
 获取程序的名称。
@@ -39,7 +39,7 @@ int GetProgramName (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrProgramName`\
 弄返回程序的名称。
 
