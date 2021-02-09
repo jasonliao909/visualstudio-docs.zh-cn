@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9c479cbad884a8a21197c945f8f6f1ae13947991
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875297"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
@@ -65,11 +65,11 @@ ms.locfileid: "96995481"
 
 键入更多字符以查找匹配项时，" **类型名称** " 框中的类型列表将变短。 只有其 fullyqualified 名称以您键入的字符串开头的类型或其短名称以您键入的字符串开头的类型才会显示在筛选列表中。
 
-例如：
+例如： 。
 
 1. 键入 **操作** 匹配 <xref:System.OperationCanceledException> ，但不匹配 <xref:System.InvalidOperationException> 。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。
 
-2. 键入 **Generic** <xref:System.GenericUriParser> 命名空间中的泛型匹配项，而不是类型 <xref:System.Collections.Generic> 。 若要在命名空间中搜索类型 <xref:System.Collections.Generic> ，请键入命名空间的完全限定名称。
+2. 键入 <xref:System.GenericUriParser> 命名空间中的泛型匹配项，而不是类型 <xref:System.Collections.Generic> 。 若要在命名空间中搜索类型 <xref:System.Collections.Generic> ，请键入命名空间的完全限定名称。
 
 ## <a name="selecting-a-service-contract-using-the-type-browser-dialog"></a>使用类型浏览器对话框选择服务协定
 

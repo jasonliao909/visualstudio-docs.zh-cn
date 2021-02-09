@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92c831ad3d2f4d75d57c48cfc7ba666d19b7a5e
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: a0db784bacf27a6354d5861de7bf9e2ebeb64a5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875570"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>注册旧版语言服务1
 在 (MPF) 的托管包框架中，语言服务由 VSPackage (请参阅 [vspackage](../../extensibility/internals/vspackages.md)) ，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过添加注册表项和条目向注册。 此注册过程是在安装过程中的一部分执行的，并且在运行时部分完成。
