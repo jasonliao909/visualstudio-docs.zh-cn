@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 08511ef5-be64-4069-b169-a569cc94bc64
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0a02169b37bba804034990ed5d972f973244769
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49cc4500e887a3fbfcd8f6da8a62c42c75ef56aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80724889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929532"
 ---
 # <a name="idebugportpickerdisplayportpicker"></a>IDebugPortPicker::DisplayPortPicker
 显示允许用户选择端口的指定对话框。
@@ -40,7 +40,7 @@ public int DisplayPortPicker(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `hwndParentDialog`\
 中父对话框的句柄。
 

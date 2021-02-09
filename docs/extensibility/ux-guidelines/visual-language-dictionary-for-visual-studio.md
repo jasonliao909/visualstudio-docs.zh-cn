@@ -6,19 +6,19 @@ ms.reviewer: Jamie.Young
 ms.topic: conceptual
 ms.assetid: d20a30c0-0dcc-4e2c-a809-31c8ea28c7df
 ms.author: brgeorge
-manager: jillfra
-ms.openlocfilehash: 18a9a5309cd174c2c2aa648ad37259a052496704
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+manager: jmartens
+ms.openlocfilehash: b6bae4d0dbece80cff10b15e84e57dfaa9d1db9e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668919"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930039"
 ---
 # <a name="visual-language-dictionary"></a>视觉语言词典
 
 Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像的构建基块的概念。 设计新图标时，请使用此字典来确定要在自己的映像中传达的概念。
 
-## <a name="general-guidelines"></a>一般性指导
+## <a name="general-guidelines"></a>一般指南
 
 - 这些视觉概念必须在其字典定义中一致地使用。 否则，你可能会对用户造成混乱，这些用户希望常见元素具有一致的含义。
 
@@ -39,7 +39,7 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="a"></a><a name="BKMK_VLDConceptsA"></a> 的
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | - | - | - | - |
 | **辅助功能** | ![“可访问性”图标](../../extensibility/ux-guidelines/media/vld_c_accessibility.png "VLD_C_Accessibility") | | |
 | **操作** | ![“操作”图标](../../extensibility/ux-guidelines/media/vld_c_action.png "VLD_C_Action") | ![操作图标和记录图标，指示日志记录的操作。](../../extensibility/ux-guidelines/media/vld_c_action_actionlog.png "VLD_C_Action_ActionLog")<br />操作日志 | **操作** 图标还可以用作批注，以指示将使用自动设置来执行基本操作。 |
@@ -58,13 +58,13 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 | **是非** | ![“不对称”图标](../../extensibility/ux-guidelines/media/vld_c_asymmetric.png "VLD_C_Asymmetric") | | **非对称** 概念由 juxtaposition 的相对图像 (例如，浅/深色或左/右) 。 |
 | **附加** | ![“附加”图标](../../extensibility/ux-guidelines/media/vld_c_attach.png "VLD_C_Attach") | ![附加图标并添加表示添加附件的图标](../../extensibility/ux-guidelines/media/vld_c_attach_addattachment.png "VLD_C_Attach_AddAttachment")<br />添加附件<br />![附加图标并打开指示打开附件的图标。](../../extensibility/ux-guidelines/media/vld_c_attach_openattachment.png "VLD_C_Attach_OpenAttachment")<br />打开附件 | |
 | **Attribute**<br />变量，参数 | ![属性图标](../../extensibility/ux-guidelines/media/vld_c_attribute.png "VLD_C_Attribute") | ![“帐户属性”图标](../../extensibility/ux-guidelines/media/vld_c_attribute_accountattribute.png "VLD_C_Attribute_AccountAttribute")<br />帐户属性<br />![“添加参数”图标](../../extensibility/ux-guidelines/media/vld_c_attribute_addparameter.png "VLD_C_Attribute_AddParameter")<br />添加参数<br />![指示成员变量的属性图标和成员图标。](../../extensibility/ux-guidelines/media/vld_c_attribute_membervariable.png "VLD_C_Attribute_MemberVariable")<br />成员变量 | |
-| **音频：** | ![“音频”图标](../../extensibility/ux-guidelines/media/vld_c_audio.png "VLD_C_Audio") | ![音频扬声器图标，无图标指示音频静音。](../../extensibility/ux-guidelines/media/vld_c_audio_audiomute.png "VLD_C_Audio_AudioMute")<br />音频静音<br />![“音频播放”图标](../../extensibility/ux-guidelines/media/vld_c_audio_audioplayback.png "VLD_C_Audio_AudioPlayback")<br />音频播放<br />![“声音文件”图标](../../extensibility/ux-guidelines/media/vld_c_audio_soundfile.png "VLD_C_Audio_SoundFile")<br />声音文件 | |
+| **音频** | ![“音频”图标](../../extensibility/ux-guidelines/media/vld_c_audio.png "VLD_C_Audio") | ![音频扬声器图标，无图标指示音频静音。](../../extensibility/ux-guidelines/media/vld_c_audio_audiomute.png "VLD_C_Audio_AudioMute")<br />音频静音<br />![“音频播放”图标](../../extensibility/ux-guidelines/media/vld_c_audio_audioplayback.png "VLD_C_Audio_AudioPlayback")<br />音频播放<br />![“声音文件”图标](../../extensibility/ux-guidelines/media/vld_c_audio_soundfile.png "VLD_C_Audio_SoundFile")<br />声音文件 | |
 | **录音** | ![“音频录制”图标](../../extensibility/ux-guidelines/media/vld_c_audiorecording.png "VLD_C_AudioRecording") | ![“录制静音”图标](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordmute.png "VLD_C_AudioRecording_RecordMute")<br />录制静音<br />![“录制屏幕和语音”图标](../../extensibility/ux-guidelines/media/vld_c_audiorecording_recordscreenandvoice.png "VLD_C_AudioRecording_RecordScreenAndVoice")<br />录制屏幕和语音 | |
 | **求和** | ![“自动求和”图标](../../extensibility/ux-guidelines/media/vld_c_autosum.png "VLD_C_Autosum") | | |
 
 ### <a name="b"></a><a name="BKMK_VLDConceptsB"></a> B
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **双向** | ![“双向”图标](../../extensibility/ux-guidelines/media/vld_c_bidirectional.png "VLD_C_Bidirectional") |||
 | **二进制** | ![“二进制”图标](../../extensibility/ux-guidelines/media/vld_c_binary.png "VLD_C_Binary") | ![“启动检测目标二进制”图标](../../extensibility/ux-guidelines/media/vld_c_binary_launchinstrumentationtargetbinary.png "VLD_C_Binary_LaunchInstrumentationTargetBinary")<br />启动检测目标二进制文件 ||
@@ -80,10 +80,10 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="c"></a><a name="BKMK_VLDConceptsC"></a> Ansi-c
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **缓存** | ![“缓存”图标](../../extensibility/ux-guidelines/media/vld_c_cache.png "VLD_C_Cache") | ![“缓存确定”图标](../../extensibility/ux-guidelines/media/vld_c_cache_cacheok.png "VLD_C_Cache_CacheOK")<br />缓存正常<br />![“缓存刷新”图标](../../extensibility/ux-guidelines/media/vld_c_cache_cacherefresh.png "VLD_C_Cache_CacheRefresh")<br />缓存刷新 ||
-| **日历** | ![日历图标](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | !["日期&#47;时间轴" 图标](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />日期/时间轴<br />![“全局日历”图标](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />全局日历 ||
+| **日程表** | ![日历图标](../../extensibility/ux-guidelines/media/vld_c_calendar.png "VLD_C_Calendar") | !["日期&#47;时间轴" 图标](../../extensibility/ux-guidelines/media/vld_c_calendar_datetimeaxis.png "VLD_C_Calendar_DateTimeAxis")<br />日期/时间轴<br />![“全局日历”图标](../../extensibility/ux-guidelines/media/vld_c_calendar_globalcalendar.png "VLD_C_Calendar_GlobalCalendar")<br />全局日历 ||
 | **调用** | ![“调用”图标](../../extensibility/ux-guidelines/media/vld_c_call.png "VLD_C_Call") | ![“调用浏览器”图标](../../extensibility/ux-guidelines/media/vld_c_call_callbrowser.png "VLD_C_Call_CallBrowser")<br />调用浏览器<br />![调用图标和设置图标，指示调用浏览器设置。](../../extensibility/ux-guidelines/media/vld_c_call_callbrowsersettings.png "VLD_C_Call_CallBrowserSettings") <br />调用浏览器设置<br />![“调用方或被调用方视图”图标](../../extensibility/ux-guidelines/media/vld_c_call_callerorcalleeview.png "VLD_C_Call_CallerOrCalleeView") <br />调用方或被调用方视图 ||
 | **取消**<br />与 "Clear" 和 "Delete" 相同 | ![“取消”图标](../../extensibility/ux-guidelines/media/vld_c_cancel.png "VLD_C_Cancel") | ![用于指示取消生成的 "取消" 图标和 "生成" 图标。](../../extensibility/ux-guidelines/media/vld_c_cancel_cancelbuild.png "VLD_C_Cancel_CancelBuild")<br />取消生成 ||
 | **捕获** |![“捕获”图标](../../extensibility/ux-guidelines/media/vld_c_capture.png "VLD_C_Capture") | ![“捕获帧”图标](../../extensibility/ux-guidelines/media/vld_c_capture_captureframe.png "VLD_C_Capture_CaptureFrame")<br />捕获帧<br />![捕获图标和显示 (或监视指示完整屏幕截图的) 图标。](../../extensibility/ux-guidelines/media/vld_c_capture_fullscreenshot.png "VLD_C_Capture_FullScreenshot") <br />完整屏幕截图<br />![“开始捕获图形诊断”图标](../../extensibility/ux-guidelines/media/vld_c_capture_startcapturinggraphicdiagnostics.png "VLD_C_Capture_StartCapturingGraphicDiagnostics")<br />开始捕获图形诊断 ||
@@ -102,13 +102,13 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 | **注释**<br />反馈，批注 | ![&#40;气泡&#41; 图标注释](../../extensibility/ux-guidelines/media/vld_c_comment_bubble.png "VLD_C_Comment_bubble") | ![“添加注释”图标](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_addcomment.png "VLD_C_Comment_bubble_AddComment")<br />添加注释<br />![“标注”图标](../../extensibility/ux-guidelines/media/vld_c_comment_bubble_callout.png "VLD_C_Comment_bubble_Callout")<br />标注 ||
 | **“注释(代码)”图标** | ![注释 &#40;代码&#41;](../../extensibility/ux-guidelines/media/vld_c_comment_lines.png "VLD_C_Comment_lines") | ![注释图标和 "撤消" 图标，指示对代码取消注释。](../../extensibility/ux-guidelines/media/vld_c_comment_lines_uncomment.png "VLD_C_Comment_lines_Uncomment") <br />取消注释 ||
 | **比较** | ![“比较”图标](../../extensibility/ux-guidelines/media/vld_c_compare.png "VLD_C_Compare") | ![“比较数据”图标](../../extensibility/ux-guidelines/media/vld_c_compare_comparedata.png "VLD_C_Compare_CompareData")<br />比较数据<br />![“比较文件夹”图标](../../extensibility/ux-guidelines/media/vld_c_compare_comparefolders.png "VLD_C_Compare_CompareFolders")<br />比较文件夹<br />![“比较性能报告”图标](../../extensibility/ux-guidelines/media/vld_c_compare_compareperformancereports.png "VLD_C_Compare_ComparePerformanceReports")<br />比较性能报告 ||
-| 组件  | ![“组件”图标](../../extensibility/ux-guidelines/media/vld_c_component.png "VLD_C_Component") | ![“添加组件”图标](../../extensibility/ux-guidelines/media/vld_c_component_addcomponent.png "VLD_C_Component_AddComponent")<br />添加组件<br />![“组件图”图标](../../extensibility/ux-guidelines/media/vld_c_component_componentdiagram.png "VLD_C_Component_ComponentDiagram")<br />组件图<br />![“Windows Phone 运行时组件”图标](../../extensibility/ux-guidelines/media/vld_c_component_phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent")<br />Windows Phone RT 组件 ||
+| **组件** | ![“组件”图标](../../extensibility/ux-guidelines/media/vld_c_component.png "VLD_C_Component") | ![“添加组件”图标](../../extensibility/ux-guidelines/media/vld_c_component_addcomponent.png "VLD_C_Component_AddComponent")<br />添加组件<br />![“组件图”图标](../../extensibility/ux-guidelines/media/vld_c_component_componentdiagram.png "VLD_C_Component_ComponentDiagram")<br />组件图<br />![“Windows Phone 运行时组件”图标](../../extensibility/ux-guidelines/media/vld_c_component_phonewindowsrtcomponent.png "VLD_C_Component_PhoneWindowsRTComponent")<br />Windows Phone RT 组件 ||
 | **“连接”** | ![“连接”图标](../../extensibility/ux-guidelines/media/vld_c_connect.png "VLD_C_Connect") | ![“添加连接”图标](../../extensibility/ux-guidelines/media/vld_c_connect_addconnection.png "VLD_C_Connect_AddConnection")<br />添加连接<br />![指示连接测试计划的连接图标和日志图标。](../../extensibility/ux-guidelines/media/vld_c_connect_connecttestplan.png "VLD_C_Connect_ConnectTestPlan") <br />连接测试计划<br />![连接图标和环境图标，指示连接到环境。](../../extensibility/ux-guidelines/media/vld_c_connect_connecttoenvironment.png "VLD_C_Connect_ConnectToEnvironment")<br />连接到环境 ||
-| **控制台** | ![控制台图标](../../extensibility/ux-guidelines/media/vld_c_console.png "VLD_C_Console") | ![“控制台测试”图标](../../extensibility/ux-guidelines/media/vld_c_console_consoletest.png "VLD_C_Console_ConsoleTest")<br />控制台测试 ||
+| **Console** | ![控制台图标](../../extensibility/ux-guidelines/media/vld_c_console.png "VLD_C_Console") | ![“控制台测试”图标](../../extensibility/ux-guidelines/media/vld_c_console_consoletest.png "VLD_C_Console_ConsoleTest")<br />控制台测试 ||
 | **协定 (名词)** | ![协定 &#40;名词&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_contract_noun.png "VLD_C_Contract_noun") | ![“协定错误”图标](../../extensibility/ux-guidelines/media/vld_c_contract_noun_contracterror.png "VLD_C_Contract_noun_ContractError")<br />协定错误<br />![“协定警告”图标](../../extensibility/ux-guidelines/media/vld_c_contract_noun_contractwarning.png "VLD_C_Contract_noun_ContractWarning")<br />协定警告 | **协定 (名词)** 图标用于指示应用程序和操作系统之间的协议。 |
 | **协定/展开** | ![协定 &#40;谓词&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract")![展开图标，两个箭头反面一起显示，并与 "协定" 图标一起显示，两个箭头分别为打印头。](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") || 在布局情况下使用 **协定/展开** 图标来指示将压缩两个元素之间的空间。 |
 | **对比度** | ![“对比度”图标](../../extensibility/ux-guidelines/media/vld_c_contrast.png "VLD_C_Contrast") |||
-| **控件** | ![控件图标](../../extensibility/ux-guidelines/media/vld_c_control.png "VLD_C_Control") | ![“添加控件”图标](../../extensibility/ux-guidelines/media/vld_c_control_addcontrol.png "VLD_C_Control_AddControl")<br />添加控件<br />![“添加自定义控件”图标](../../extensibility/ux-guidelines/media/vld_c_control_addcustomcontrol.png "VLD_C_Control_AddCustomControl") <br />添加自定义控件<br />![控件图标、添加图标和派生的继承图标，表示添加继承的控件。](../../extensibility/ux-guidelines/media/vld_c_control_addinheritedcontrol.png "VLD_C_Control_AddInheritedControl")<br />添加继承的控件 ||
+| **控制** | ![控件图标](../../extensibility/ux-guidelines/media/vld_c_control.png "VLD_C_Control") | ![“添加控件”图标](../../extensibility/ux-guidelines/media/vld_c_control_addcontrol.png "VLD_C_Control_AddControl")<br />添加控件<br />![“添加自定义控件”图标](../../extensibility/ux-guidelines/media/vld_c_control_addcustomcontrol.png "VLD_C_Control_AddCustomControl") <br />添加自定义控件<br />![控件图标、添加图标和派生的继承图标，表示添加继承的控件。](../../extensibility/ux-guidelines/media/vld_c_control_addinheritedcontrol.png "VLD_C_Control_AddInheritedControl")<br />添加继承的控件 ||
 | **转换** | ![“转换”图标](../../extensibility/ux-guidelines/media/vld_c_convert.png "VLD_C_Convert") | ![“将分支转换为文件夹”图标](../../extensibility/ux-guidelines/media/vld_c_convert_convertbranchtofolder.png "VLD_C_Convert_ConvertBranchToFolder")<br />将分支转换为文件夹<br />![“转换分区”图标](../../extensibility/ux-guidelines/media/vld_c_convert_convertpartition.png "VLD_C_Convert_ConvertPartition") <br />转换分区<br />![转换图标、代码图标和指示转换为编码的 web 测试的测试电子管图标。](../../extensibility/ux-guidelines/media/vld_c_convert_converttocodedwebtest.png "VLD_C_Convert_ConvertToCodedWebTest")<br />转换为编码的 web 测试 ||
 | **Copy** | ![“复制”图标](../../extensibility/ux-guidelines/media/vld_c_copy.png "VLD_C_Copy") | ![“复制聚合”图标](../../extensibility/ux-guidelines/media/vld_c_copy_copyaggregation`.png "VLD_C_Copy_CopyAggregation "")<br />“复制聚合”图标<br />![“复制网站”图标](../../extensibility/ux-guidelines/media/vld_c_copy_copywebsite.png "VLD_C_Copy_CopyWebsite")<br />复制网站 | 复制和堆叠对象表示 **复制** 操作。 |
 | **计数器** | ![“计数器”图标](../../extensibility/ux-guidelines/media/vld_c_counter.png "VLD_C_Counter") |||
@@ -119,7 +119,7 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="d"></a><a name="BKMK_VLDConceptsD"></a> 2-d
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **深色主题** | ![“深色主题”图标](../../extensibility/ux-guidelines/media/vld_c_darktheme.png "VLD_C_DarkTheme") | ![“打开深色主题”图标](../../extensibility/ux-guidelines/media/vld_c_darktheme_darkthemeon.png "VLD_C_DarkTheme_DarkThemeOn")<br />深色主题 ||
 | 数据 | ![数据图标](../../extensibility/ux-guidelines/media/vld_c_data.png "VLD_C_Data") | ![“比较两个数据库”图标](../../extensibility/ux-guidelines/media/vld_c_data_comparebothdatabases.png "VLD_C_Data_CompareBothDatabases")<br />比较两个数据库<br />![“数据库审核规范”图标](../../extensibility/ux-guidelines/media/vld_c_data_databaseauditspecification.png "VLD_C_Data_DatabaseAuditSpecification")<br />数据库审核规范<br />![“数据库项目”图标](../../extensibility/ux-guidelines/media/vld_c_data_databaseproject.png "VLD_C_Data_DatabaseProject")<br />数据库项目 ||
@@ -141,13 +141,13 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="e"></a><a name="BKMK_VLDConceptsE"></a> 电邮
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **编辑** | ![编辑图标](../../extensibility/ux-guidelines/media/vld_c_edit.png "VLD_C_Edit") | ![“地址编辑器”图标](../../extensibility/ux-guidelines/media/vld_c_edit_addresseditor.png "VLD_C_Edit_AddressEditor")<br />地址编辑器<br />!["小编辑" 图标和表示 "编辑查询" 的查询图标。](../../extensibility/ux-guidelines/media/vld_c_edit_editquery.png "VLD_C_Edit_EditQuery")<br />编辑查询<br />![“编辑关系”图标](../../extensibility/ux-guidelines/media/vld_c_edit_editrelation.png "VLD_C_Edit_EditRelation")<br />编辑关系 | **编辑** 批注向左或向右面根据基图标的外观。 选择最适合你的整体图标设计的方向。 |
 | **效果**<br />*与 "函数" 相同，"变量 (全局) "* | ![“效果”图标](../../extensibility/ux-guidelines/media/vld_c_effects.png "VLD_C_Effects") |||
 | **Empty** | ![“空”图标](../../extensibility/ux-guidelines/media/vld_c_empty.png "VLD_C_Empty") | ![“空白页”图标](../../extensibility/ux-guidelines/media/vld_c_empty_blankpage.png "VLD_C_Empty_BlankPage")<br />空页面<br />!["&#43;&#43; 空项目" 图标](../../extensibility/ux-guidelines/media/vld_c_empty_cppemptyproject.png "VLD_C_Empty_CPPEmptyProject")<br />C + + 空项目<br />!["&#35; 空网站项目" 图标](../../extensibility/ux-guidelines/media/vld_c_empty_fsemptywebsiteproject.png "VLD_C_Empty_FSEmptyWebsiteProject")<br />F # 空白网站项目 ||
 | **枚举器** | ![“枚举器”图标](../../extensibility/ux-guidelines/media/vld_c_enumerator.png "VLD_C_Enumerator") | ![“创建枚举器”图标](../../extensibility/ux-guidelines/media/vld_c_enumerator_createenumerator.png "VLD_C_Enumerator_CreateEnumerator")<br />创建枚举器 ||
-| **环境** | ![“环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment.png "VLD_C_Environment") | ![环境图标和连接图标，指示连接到环境。](../../extensibility/ux-guidelines/media/vld_c_environment_connecttoenvironment.png "VLD_C_Environment_ConnectToEnvironment")<br />连接到环境<br />![“创建库环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment_createlibraryenvironment.png "VLD_C_Environment_CreateLibraryEnvironment")<br />创建库环境<br />![“库环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment_libraryenvironment.png "VLD_C_Environment_LibraryEnvironment")<br />库环境 ||
+| **ServiceDefinition.csdef** | ![“环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment.png "VLD_C_Environment") | ![环境图标和连接图标，指示连接到环境。](../../extensibility/ux-guidelines/media/vld_c_environment_connecttoenvironment.png "VLD_C_Environment_ConnectToEnvironment")<br />连接到环境<br />![“创建库环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment_createlibraryenvironment.png "VLD_C_Environment_CreateLibraryEnvironment")<br />创建库环境<br />![“库环境”图标](../../extensibility/ux-guidelines/media/vld_c_environment_libraryenvironment.png "VLD_C_Environment_LibraryEnvironment")<br />库环境 ||
 | **事件**<br />触发器 | ![“事件”图标](../../extensibility/ux-guidelines/media/vld_c_event.png "VLD_C_Event") | ![“添加事件”图标](../../extensibility/ux-guidelines/media/vld_c_event_addevent.png "VLD_C_Event_AddEvent")<br />添加事件<br />![“事件日志”图标](../../extensibility/ux-guidelines/media/vld_c_event_eventlog.png "VLD_C_Event_EventLog")<br />事件日志 ||
 | **展开** | ![展开图标，黑色框内的蓝色加号，指示扩展的值。](../../extensibility/ux-guidelines/media/vld_c_expand.png "VLD_C_Expand") | ![“返回值展开”图标](../../extensibility/ux-guidelines/media/vld_c_expand_returnvalueexpanded.png "VLD_C_Expand_ReturnValueExpanded")<br />返回扩展值 ||
 | **展开/收缩** | ![展开图标，将两个箭头与反面一起，表示两个元素之间的空间扩展。](../../extensibility/ux-guidelines/media/vld_c_contractexpand_expand.png "VLD_C_ContractExpand_expand") ![协定 &#40;谓词&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_contractexpand_contract.png "VLD_C_ContractExpand_contract") || **展开/协定** 图标用于布局环境，以指示将在两个元素之间进行收缩。 |
@@ -155,7 +155,7 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="f"></a><a name="BKMK_VLDConceptsF"></a> 果
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **收藏夹**<br />受保护，评级 | ![“收藏”图标](../../extensibility/ux-guidelines/media/vld_c_favorite.png "VLD_C_Favorite") | ![“添加到收藏夹”图标](../../extensibility/ux-guidelines/media/vld_c_favorite_addtofavorites.png "VLD_C_Favorite_AddToFavorites")<br />添加到收藏夹<br />![“评级”图标](../../extensibility/ux-guidelines/media/vld_c_favorite_rating.png "VLD_C_Favorite_Rating")<br />评级 ||
 | **字段** | ![字段图标](../../extensibility/ux-guidelines/media/vld_c_field.png "VLD_C_Field") | ![“添加字段”图标](../../extensibility/ux-guidelines/media/vld_c_field_addfield.png "VLD_C_Field_AddField")<br />添加字段<br />![“编辑字段”图标](../../extensibility/ux-guidelines/media/vld_c_field_editfield.png "VLD_C_Field_EditField")<br />编辑字段 ||
@@ -168,11 +168,11 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 | **字体** | ![字体图标](../../extensibility/ux-guidelines/media/vld_c_font.png "VLD_C_Font") | ![“字体颜色”图标](../../extensibility/ux-guidelines/media/vld_c_font_fontcolor.png "VLD_C_Font_FontColor")<br />字体颜色<br />![“字号”图标](../../extensibility/ux-guidelines/media/vld_c_font_fontsize.png "VLD_C_Font_FontSize")<br />字体大小<br />![“衬线”图标](../../extensibility/ux-guidelines/media/vld_c_font_serif.png "VLD_C_Font_Serif")<br />衬 ||
 | **Frame** | ![“帧”图标](../../extensibility/ux-guidelines/media/vld_c_frame.png "VLD_C_Frame") |||
 | **Friend** | ![“友元”图标](../../extensibility/ux-guidelines/media/vld_c_friend.png "VLD_C_Friend") |||
-| **Function**<br />表达式<br />*与 "效果" 和 "变量 (全局) " 相同* | ![函数图标](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![“函数警告”图标](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />函数警告<br />![“页函数”图标](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />WPF 页函数 ||
+| **Function**<br />Expression<br />*与 "效果" 和 "变量 (全局) " 相同* | ![函数图标](../../extensibility/ux-guidelines/media/vld_c_function.png "VLD_C_Function") | ![“函数警告”图标](../../extensibility/ux-guidelines/media/vld_c_function_functionwarning.png "VLD_C_Function_FunctionWarning")<br />函数警告<br />![“页函数”图标](../../extensibility/ux-guidelines/media/vld_c_function_wpfpagefunction.png "VLD_C_Function_WPFPageFunction")<br />WPF 页函数 ||
 
 ### <a name="g"></a><a name="BKMK_VLDConceptsG"></a> G
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **Get**<br />下载 | ![“获取”图标](../../extensibility/ux-guidelines/media/vld_c_get.png "VLD_C_Get") | ![获取表示下载文件夹的图标和文件夹图标。](../../extensibility/ux-guidelines/media/vld_c_get_downloadfolder.png "VLD_C_Get_DownloadFolder")<br />获取下载文件夹<br />![“获取词典值”图标](../../extensibility/ux-guidelines/media/vld_c_get_getdictionaryvalue.png "VLD_C_Get_GetDictionaryValue")<br />获取字典值<br />![“从集合中获取项”图标](../../extensibility/ux-guidelines/media/vld_c_get_getitemfromcollection.png "VLD_C_Get_GetItemFromCollection")<br />从集合中获取项 ||
 | **图表**<br />条形图 | ![“图形”图标](../../extensibility/ux-guidelines/media/vld_c_graph.png "VLD_C_Graph") | ![“HPC 性能会话”图标](../../extensibility/ux-guidelines/media/vld_c_graph_hpcperformancesessionwizard.png "VLD_C_Graph_HPCPerformanceSessionWizard")<br />HPC 性能会话 ||
@@ -183,18 +183,18 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="h"></a><a name="BKMK_VLDConceptsH"></a> 高
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **层次结构** | ![层次结构图标](../../extensibility/ux-guidelines/media/vld_c_hierarchy.png "VLD_C_Hierarchy") | ![“层次结构变量”图标](../../extensibility/ux-guidelines/media/vld_c_hierarchy_hierarchyvariable.png "VLD_C_Hierarchy_HierarchyVariable")<br />层次结构变量<br />![“调用层次结构”图标](../../extensibility/ux-guidelines/media/vld_c_hierarchy_callhierarchy.png "VLD_C_Hierarchy_CallHierarchy") <br />调用层次结构 ||
-| **History** | ![“历史记录”图标](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
+| **History** | ![历史记录图标](../../extensibility/ux-guidelines/media/vld_c_history.png "VLD_C_History") |||
 | **主页** | ![主页图标](../../extensibility/ux-guidelines/media/vld_c_home.png "VLD_C_Home") | ![“LightSwitch 主屏幕”图标](../../extensibility/ux-guidelines/media/vld_c_home_lightswitchhomescreen.png "VLD_C_Home_LightSwitchHomeScreen")<br />LightSwitch 主屏幕 ||
 
 ### <a name="i"></a><a name="BKMK_VLDConceptsI"></a> 看到
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **Idea** | ![“创意”图标](../../extensibility/ux-guidelines/media/vld_c_idea.png "VLD_C_Idea") |||
-| **映像**<br />资产，资源 | ![图像图标](../../extensibility/ux-guidelines/media/vld_c_image.png "VLD_C_Image") | ![“图像加载程序”图标](../../extensibility/ux-guidelines/media/vld_c_image_imageloader.png "VLD_C_Image_ImageLoader")<br />图像加载程序<br />![图像图标作为图像图标的示例。](../../extensibility/ux-guidelines/media/vld_c_image_imagebutton.png "VLD_C_Image_ImageButton")<br />图像按钮<br />![“图像列表控件”图标](../../extensibility/ux-guidelines/media/vld_c_image_imagelistcontrol.png "VLD_C_Image_ImageListControl") <br />图像列表控件 ||
+| **图像**<br />资产，资源 | ![图像图标](../../extensibility/ux-guidelines/media/vld_c_image.png "VLD_C_Image") | ![“图像加载程序”图标](../../extensibility/ux-guidelines/media/vld_c_image_imageloader.png "VLD_C_Image_ImageLoader")<br />图像加载程序<br />![图像图标作为图像图标的示例。](../../extensibility/ux-guidelines/media/vld_c_image_imagebutton.png "VLD_C_Image_ImageButton")<br />图像按钮<br />![“图像列表控件”图标](../../extensibility/ux-guidelines/media/vld_c_image_imagelistcontrol.png "VLD_C_Image_ImageListControl") <br />图像列表控件 ||
 | **重要说明**<br />注意，热路径 | ![“重要事项”图标](../../extensibility/ux-guidelines/media/vld_c_important.png "VLD_C_Important") | ![“显示热行”图标](../../extensibility/ux-guidelines/media/vld_c_important_showhotlines.png "VLD_C_Important_ShowHotLines")<br />显示热行<br />![“热点”图标](../../extensibility/ux-guidelines/media/vld_c_important_hotspot.png "VLD_C_Important_Hotspot")<br />热点 ||
 | **索引器** | ![“索引器”图标](../../extensibility/ux-guidelines/media/vld_c_indexer.png "VLD_C_Indexer") | ![“添加索引器”图标](../../extensibility/ux-guidelines/media/vld_c_indexer_addindexer.png "VLD_C_Indexer_AddIndexer")<br />添加索引器 ||
 | **继承** | ![具有指示派生继承的点划线的继承图标。](../../extensibility/ux-guidelines/media/vld_c_inheritance.png "VLD_C_Inheritance") | !["派生继承" 图标、控件图标和 "添加" 图标指示添加继承的控件。](../../extensibility/ux-guidelines/media/vld_c_inheritance_addinheritedcontrol.png "VLD_C_Inheritance_AddInheritedControl")<br />添加继承的控件<br />![“添加继承窗体”图标](../../extensibility/ux-guidelines/media/vld_c_inheritance_addinheritedform.png "VLD_C_Inheritance_AddInheritedForm")<br />添加继承的窗体<br />![“继承控件”图标](../../extensibility/ux-guidelines/media/vld_c_inheritance_inheritedcontrol.png "VLD_C_Inheritance_InheritedControl")<br />继承的控件 | 派生 **继承** 的概念由点分角表示。 另请参阅 "Nonsubstantive (隐藏或模板) " 和 "虚拟"。 |
@@ -204,14 +204,14 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="k"></a><a name="BKMK_VLDConceptsK"></a> 温度
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **键**<br />权限，ID | ![关键图标](../../extensibility/ux-guidelines/media/vld_c_key.png "VLD_C_Key") | ![“新建键”图标](../../extensibility/ux-guidelines/media/vld_c_key_newkey.png "VLD_C_Key_NewKey")<br />新建密钥<br />![“权限”图标](../../extensibility/ux-guidelines/media/vld_c_key_permission.png "VLD_C_Key_Permission")<br />权限<br />![“获取当前项 ID”图标](../../extensibility/ux-guidelines/media/vld_c_key_getcurrentitemid.png "VLD_C_Key_GetCurrentItemID")<br />获取当前项 ID ||
 | **关键绩效指标 (KPI)** | ![KPI 图标](../../extensibility/ux-guidelines/media/vld_c_kpi.png "VLD_C_KPI") | ![“删除 KPI”图标](../../extensibility/ux-guidelines/media/vld_c_kpi_deletekpi.png "VLD_C_KPI_DeleteKPI")<br />删除 KPI<br />![“KPI 浏览器视图”图标](../../extensibility/ux-guidelines/media/vld_c_kpi_kpibrowserview.png "VLD_C_KPI_KPIBrowserView")<br />KPI 浏览器视图<br />![“有错误的 KPI”图标](../../extensibility/ux-guidelines/media/vld_c_kpi_kpiwitherror.png "VLD_C_KPI_KPIWithError")<br />具有错误的 KPI ||
 
 ### <a name="l"></a><a name="BKMK_VLDConceptsL"></a> L
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **Library** | ![“库”图标](../../extensibility/ux-guidelines/media/vld_c_library.png "VLD_C_Library") | ![C&#43;&#43; 类库项目图标](../../extensibility/ux-guidelines/media/vld_c_library_cppclasslibraryproject.png "VLD_C_Library_CPPClassLibraryProject")<br />C + + 类库项目<br />![“导出库”图标](../../extensibility/ux-guidelines/media/vld_c_library_exportslibrary.png "VLD_C_Library_ExportsLibrary")<br />导出库<br />![F&#35; Windows 窗体控件库图标](../../extensibility/ux-guidelines/media/vld_c_library_fswindowsformcontrollibrary.png "VLD_C_Library_FSWindowsFormControlLibrary")<br />F # Windows 窗体控件库 ||
 | **链接** | ![链接图标](../../extensibility/ux-guidelines/media/vld_c_link.png "VLD_C_Link") | ![“转换为超链接”图标](../../extensibility/ux-guidelines/media/vld_c_link_converttohyperlink.png "VLD_C_Link_ConvertToHyperlink")<br />转换为超链接<br />![“创建链接表”图标](../../extensibility/ux-guidelines/media/vld_c_link_createlinkedtable.png "VLD_C_Link_CreateLinkedTable")<br />创建链接表<br />![“编辑链接”图标](../../extensibility/ux-guidelines/media/vld_c_link_editlink.png "VLD_C_Link_EditLink")<br />编辑链接 ||
@@ -221,11 +221,11 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="m"></a><a name="BKMK_VLDConceptsM"></a> 年
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
-| **邮件**<br />消息 | ![“邮件”图标](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![“消息队列”图标](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />消息队列<br />![“接收的消息跟踪”图标](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />已接收消息的跟踪<br />![“电子邮件地址查看器”图标](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />电子邮件地址查看器 ||
+| **信**<br />Message | ![“邮件”图标](../../extensibility/ux-guidelines/media/vld_c_mail.png "VLD_C_Mail") | ![“消息队列”图标](../../extensibility/ux-guidelines/media/vld_c_mail_messagequeue.png "VLD_C_Mail_MessageQueue")<br />消息队列<br />![“接收的消息跟踪”图标](../../extensibility/ux-guidelines/media/vld_c_mail_messagereceivedtrace.png "VLD_C_Mail_MessageReceivedTrace")<br />已接收消息的跟踪<br />![“电子邮件地址查看器”图标](../../extensibility/ux-guidelines/media/vld_c_mail_emailaddressviewer.png "VLD_C_Mail_EmailAddressViewer")<br />电子邮件地址查看器 ||
 | **Manifest** | ![“清单”图标](../../extensibility/ux-guidelines/media/vld_c_manifest.png "VLD_C_Manifest") | ![“编辑清单”图标](../../extensibility/ux-guidelines/media/vld_c_manifest_editmanifest.png "VLD_C_Manifest_EditManifest")<br />编辑清单<br />![“扩展管理器清单”图标](../../extensibility/ux-guidelines/media/vld_c_manifest_extensionmanagermanifest.png "VLD_C_Manifest_ExtensionManagerManifest")<br />扩展管理器清单<br />![“新建应用程序清单”图标](../../extensibility/ux-guidelines/media/vld_c_manifest_newapplicationmanifest.png "VLD_C_Manifest_NewApplicationManifest")<br />新应用程序清单 ||
-| **标记** | ![“标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup.png "VLD_C_Markup") | ![“标记错误”图标](../../extensibility/ux-guidelines/media/vld_c_markup_markuperror.png "VLD_C_Markup_MarkupError")<br />标记错误<br />![“标记标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup_tag.png "VLD_C_Markup_Tag")<br />标记标记<br />![两个标记图标，其中蓝色箭头向下和向右箭头，指示标记或事件片段。](../../extensibility/ux-guidelines/media/vld_c_markup_tagoreventsnippet.png "VLD_C_Markup_TagOrEventSnippet")<br />标记或事件片段<br />![“匹配标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup_matchtag.png "VLD_C_Markup_MatchTag")<br />匹配标记<br />![“编辑标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup_edittag.png "VLD_C_Markup_EditTag")<br />编辑标记 | **标记** 概念还可用作多个复合概念中的元素。 |
+| **标记** | ![“标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup.png "VLD_C_Markup") | ![“标记错误”图标](../../extensibility/ux-guidelines/media/vld_c_markup_markuperror.png "VLD_C_Markup_MarkupError")<br />标记错误<br />![“标记标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup_tag.png "VLD_C_Markup_Tag")<br />标记标记<br />![两个标记图标，其中蓝色箭头向下和向右箭头，指示标记或事件片段。](../../extensibility/ux-guidelines/media/vld_c_markup_tagoreventsnippet.png "VLD_C_Markup_TagOrEventSnippet")<br />标记或事件片段<br />![“匹配标记”图标](../../extensibility/ux-guidelines/media/vld_c_markup_matchtag.png "VLD_C_Markup_MatchTag")<br />匹配标记<br />![编辑标记图标](../../extensibility/ux-guidelines/media/vld_c_markup_edittag.png "VLD_C_Markup_EditTag")<br />编辑标记 | **标记** 概念还可用作多个复合概念中的元素。 |
 | **标记： HTML (web)** | ![标记： HTML &#40;web&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_markuphtml_web.png "VLD_C_MarkupHTML_web") | ![“HTML文件”图标](../../extensibility/ux-guidelines/media/vld_c_markuphtml_web_htmlfile.png "VLD_C_MarkupHTML_web_HTMLFile")<br />HTML 文件 ||
 | **标记： XAML (WPF)** | ![标记： XAML &#40;WPF&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_markupxaml_wpf.png "VLD_C_MarkupXAML_wpf") | ![“WPF 应用程序”图标](../../extensibility/ux-guidelines/media/vld_c_markupxaml_wpf_wpfapplication.png "VLD_C_MarkupXAML_wpf_WPFApplication")<br />WPF 应用程序<br />![“WPF 浏览器应用程序 VB”图标](../../extensibility/ux-guidelines/media/vld_c_markupxaml_wpf_wpfbrowserapplicationvb.png "VLD_C_MarkupXAML_wpf_WPFBrowserApplicationVB")<br />WPF 浏览器应用程序 VB<br />![“WPF 控件库”图标](../../extensibility/ux-guidelines/media/vld_c_markupxaml_wpf_wpfcontrollibrary.png "VLD_C_MarkupXAML_wpf_WPFControlLibrary")<br />WPF 控件库 ||
 | **标记： XML** | ![“标记: XML 标记”图标](../../extensibility/ux-guidelines/media/vld_c_markupxml.png "VLD_C_MarkupXML") | ![“重新加载 XML”图标](../../extensibility/ux-guidelines/media/vld_c_markupxml_reloadxml.png "VLD_C_MarkupXML_ReloadXML")<br />重载 XML<br />![“XML 文件”图标](../../extensibility/ux-guidelines/media/vld_c_markupxml_xmlfile.png "VLD_C_MarkupXML_XMLFile")<br />XML 文件 |
@@ -244,7 +244,7 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="n"></a><a name="BKMK_VLDConceptsN"></a> N
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **命名空间** | ![命名空间图标](../../extensibility/ux-guidelines/media/vld_c_namespace.png "VLD_C_Namespace") | ![“删除 using 命名空间”图标](../../extensibility/ux-guidelines/media/vld_c_namespace_removeusingnamespace.png "VLD_C_Namespace_RemoveUsingNamespace")<br />使用命名空间删除<br />![“排列 using 命名空间”图标](../../extensibility/ux-guidelines/media/vld_c_namespace_sortusingnamespace.png "VLD_C_Namespace_SortUsingNamespace")<br />使用命名空间排序<br />![“添加 using 命名空间”图标](../../extensibility/ux-guidelines/media/vld_c_namespace_addusingnamespace.png "VLD_C_Namespace_AddUsingNamespace")<br />添加 using 命名空间 ||
 | **Network**<br />连接 | ![“网络”图标](../../extensibility/ux-guidelines/media/vld_c_network.png "VLD_C_Network") | ![“网络驱动程序包模板”图标](../../extensibility/ux-guidelines/media/vld_c_network_networkdriverpackagetemplate.png "VLD_C_Network_NetworkDriverPackageTemplate")<br />网络驱动程序包模板<br />![连接图标和 "删除 (" 脱机 "或" 严重) 状态指示器 "图标指示连接脱机。](../../extensibility/ux-guidelines/media/vld_c_network_connectionoffline.png "VLD_C_Network_ConnectionOffline")<br />脱机连接<br />![“连接未知”图标](../../extensibility/ux-guidelines/media/vld_c_network_connectionunknown.png "VLD_C_Network_ConnectionUnknown")<br />未知连接 ||
@@ -254,21 +254,21 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="o"></a><a name="BKMK_VLDConceptsO"></a> I/o
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **打开**<br />*与 "Export" 相同* | ![“打开”图标](../../extensibility/ux-guidelines/media/vld_c_open.png "VLD_C_Open") | ![打开图标并附加表明打开附件的图标。](../../extensibility/ux-guidelines/media/vld_c_open_openattachment.png "VLD_C_Open_OpenAttachment")<br />打开附件<br />![打开指示打开比较结果的图标和图像图标。](../../extensibility/ux-guidelines/media/vld_c_open_opencomparisonresult.png "VLD_C_Open_OpenComparisonResult")<br />打开比较结果<br />![打开指示打开文件对话框的图标和应用程序图标。](../../extensibility/ux-guidelines/media/vld_c_open_openfiledialog.png "VLD_C_Open_OpenFileDialog")<br />"打开文件" 对话框 ||
 | **输出** | ![“输出”图标](../../extensibility/ux-guidelines/media/vld_c_output.png "VLD_C_Output") |||
 
 ### <a name="p"></a><a name="BKMK_VLDConceptsP"></a> H-p
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **包** | ![包图标](../../extensibility/ux-guidelines/media/vld_c_package.png "VLD_C_Package") | ![表示云包的包图标和云图标。](../../extensibility/ux-guidelines/media/vld_c_package_cloudpackage.png "VLD_C_Package_CloudPackage")<br />云包<br />![“创建包”图标](../../extensibility/ux-guidelines/media/vld_c_package_createpackage.png "VLD_C_Package_CreatePackage")<br />创建包<br />![包图标和驱动程序图标，指示驱动程序包模板。](../../extensibility/ux-guidelines/media/vld_c_package_driverpackagetemplate.png "VLD_C_Package_DriverPackageTemplate")<br />驱动程序包模板 ||
 | **Parallel** | ![“并行”图标](../../extensibility/ux-guidelines/media/vld_c_parallel.png "VLD_C_Parallel") | ![“相互并行”图标](../../extensibility/ux-guidelines/media/vld_c_parallel_parallelforeach.png "VLD_C_Parallel_ParallelForEach")<br />每个的并行 ||
 | 分区 | ![“分区”图标](../../extensibility/ux-guidelines/media/vld_c_partition.png "VLD_C_Partition") | ![“分区方案”图标](../../extensibility/ux-guidelines/media/vld_c_partition_partitionscheme.png "VLD_C_Partition_PartitionScheme")<br />分区方案<br />![“新建分区”图标](../../extensibility/ux-guidelines/media/vld_c_partition_newpartition.png "VLD_C_Partition_NewPartition")<br />新建分区<br />![“分区函数”图标](../../extensibility/ux-guidelines/media/vld_c_partition_partitionfunction.png "VLD_C_Partition_PartitionFunction")<br />分区函数 ||
 | **组成部分** | ![“部件”图标](../../extensibility/ux-guidelines/media/vld_c_parts.png "VLD_C_Parts") | ![“已分配部件”图标](../../extensibility/ux-guidelines/media/vld_c_parts_assignedpart.png "VLD_C_Parts_AssignedPart")<br />已分配部件<br />![“错误分配的部件”图标](../../extensibility/ux-guidelines/media/vld_c_parts_misassignedpart.png "VLD_C_Parts_MisassignedPart")<br />Misassigned 部分 |
 | **“性能”** | ![“性能”图标](../../extensibility/ux-guidelines/media/vld_c_performance.png "VLD_C_Performance") |||
-| **Pin** | ![固定图标](../../extensibility/ux-guidelines/media/vld_c_pin.png "VLD_C_Pin") | ![“取消固定”图标](../../extensibility/ux-guidelines/media/vld_c_pin_unpin.png "VLD_C_Pin_Unpin")<br />Unpin ||
+| **附加** | ![固定图标](../../extensibility/ux-guidelines/media/vld_c_pin.png "VLD_C_Pin") | ![“取消固定”图标](../../extensibility/ux-guidelines/media/vld_c_pin_unpin.png "VLD_C_Pin_Unpin")<br />Unpin ||
 | **规划** | ![“规划”图标](../../extensibility/ux-guidelines/media/vld_c_planning.png "VLD_C_Planning") || **规划** 图标用于在设计图面上指示工作流的一部分。 |
 | **策略** | ![“策略”图标](../../extensibility/ux-guidelines/media/vld_c_policy.png "VLD_C_Policy") | ![“Visual Studio 策略缓存”图标](../../extensibility/ux-guidelines/media/vld_c_policy_visualstudiopolicycache.png "VLD_C_Policy_VisualStudioPolicyCache")<br />Visual Studio 策略缓存<br />![“Visual Studio 策略说明语言”图标](../../extensibility/ux-guidelines/media/vld_c_policy_visualstudiopolicydescriptionlanguage.png "VLD_C_Policy_VisualStudioPolicyDescriptionLanguage")<br />Visual Studio 策略描述语言 ||
 | **弹出** | ![“弹出”图标](../../extensibility/ux-guidelines/media/vld_c_popout.png "VLD_C_PopOut") | ![“弹入”图标](../../extensibility/ux-guidelines/media/vld_c_popout_popin.png "VLD_C_PopOut_PopIn")<br />弹出窗口 ||
@@ -280,31 +280,31 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="q"></a><a name="BKMK_VLDConceptsQ"></a> ：
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **查询** | ![查询图标](../../extensibility/ux-guidelines/media/vld_c_query.png "VLD_C_Query") | ![查询图标和一个表示 "编辑查询" 的小蓝色编辑图标。](../../extensibility/ux-guidelines/media/vld_c_query_editquery.png "VLD_C_Query_EditQuery")<br />编辑查询<br />![“查询扩展程序”图标](../../extensibility/ux-guidelines/media/vld_c_query_queryextender.png "VLD_C_Query_QueryExtender")<br />查询扩展器<br />![“快速查询”图标](../../extensibility/ux-guidelines/media/vld_c_query_quickquery.png "VLD_C_Query_QuickQuery")<br />快速查询 ||
 
 ### <a name="r"></a><a name="BKMK_VLDConceptsR"></a> 迅驰
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **记录** | ![“记录”图标](../../extensibility/ux-guidelines/media/vld_c_record.png "VLD_C_Record") | ![“记录屏幕”图标](../../extensibility/ux-guidelines/media/vld_c_record_recordscreen.png "VLD_C_Record_RecordScreen")<br />录制屏幕<br />![“转到记录的测试会话”图标](../../extensibility/ux-guidelines/media/vld_c_record_gotorecordedtestsession.png "VLD_C_Record_GoToRecordedTestSession")<br />中转到记录的测试会话 ||
 | **重做** | ![“重做”图标](../../extensibility/ux-guidelines/media/vld_c_redo.png "VLD_C_Redo") |||
 | **引用** | ![“引用”图标](../../extensibility/ux-guidelines/media/vld_c_reference.png "VLD_C_Reference") | ![“损坏的引用”图标](../../extensibility/ux-guidelines/media/vld_c_reference_brokenreference.png "VLD_C_Reference_BrokenReference")<br />损坏的引用<br />![“转到引用”图标](../../extensibility/ux-guidelines/media/vld_c_reference_gotoreference.png "VLD_C_Reference_GoToReference")<br />中转到引用<br />![引用 "合并模块引用" 的 "引用" 图标和 "合并" 图标。](../../extensibility/ux-guidelines/media/vld_c_reference_mergemodulereference.png "VLD_C_Reference_MergeModuleReference")<br />合并模块引用 ||
 | **刷新** | ![“刷新”图标](../../extensibility/ux-guidelines/media/vld_c_refresh.png "VLD_C_Refresh") | ![“刷新云服务”图标](../../extensibility/ux-guidelines/media/vld_c_refresh_refreshcloudservice.png "VLD_C_Refresh_RefreshCloudService")<br />刷新云服务<br />![“缓存刷新”图标](../../extensibility/ux-guidelines/media/vld_c_refresh_cacherefreshing.png "VLD_C_Refresh_CacheRefreshing")<br />缓存刷新 ||
-| **Relationship**<br />分支 | ![“关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship.png "VLD_C_Relationship") | ![“定义关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship_definerelationship.png "VLD_C_Relationship_DefineRelationship")<br />定义关系<br />![“添加关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship_addrelationship.png "VLD_C_Relationship_AddRelationship")<br />添加关系<br />![父&#45;子图标](../../extensibility/ux-guidelines/media/vld_c_relationship_parentchild.png "VLD_C_Relationship_ParentChild")<br />父子 ||
+| **关系**<br />分支 | ![“关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship.png "VLD_C_Relationship") | ![“定义关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship_definerelationship.png "VLD_C_Relationship_DefineRelationship")<br />定义关系<br />![“添加关系”图标](../../extensibility/ux-guidelines/media/vld_c_relationship_addrelationship.png "VLD_C_Relationship_AddRelationship")<br />添加关系<br />![父&#45;子图标](../../extensibility/ux-guidelines/media/vld_c_relationship_parentchild.png "VLD_C_Relationship_ParentChild")<br />父子 ||
 | **远程** | ![“远程”图标](../../extensibility/ux-guidelines/media/vld_c_remote.png "VLD_C_Remote") | ![远程 "图标" 和 "分支" 图标指示远程分支。](../../extensibility/ux-guidelines/media/vld_c_remote_remotebranch.png "VLD_C_Remote_RemoteBranch")<br />远程分支<br />![远程桌面图标](../../extensibility/ux-guidelines/media/vld_c_remote_remotedesktop.png "VLD_C_Remote_RemoteDesktop")<br />远程桌面 |
-| **移除** | ![“删除”图标](../../extensibility/ux-guidelines/media/vld_c_remove.png "VLD_C_Remove") |||
+| **删除** | ![“删除”图标](../../extensibility/ux-guidelines/media/vld_c_remove.png "VLD_C_Remove") |||
 | **重命名** | ![“重命名”图标](../../extensibility/ux-guidelines/media/vld_c_rename.png "VLD_C_Rename") |||
 | **安排** | ![“重新排序”图标](../../extensibility/ux-guidelines/media/vld_c_reorder.png "VLD_C_Reorder") | ![重新排列图标和属性图标，指示重新排列参数。](../../extensibility/ux-guidelines/media/vld_c_reorder_reorderparameters.png "VLD_C_Reorder_ReorderParameters")<br />重新排列参数 ||
-| **Repair** | ![“修复”图标](../../extensibility/ux-guidelines/media/vld_c_repair.png "VLD_C_Repair") |||
+| **修正** | ![“修复”图标](../../extensibility/ux-guidelines/media/vld_c_repair.png "VLD_C_Repair") |||
 | **Report** | ![Report icon](../../extensibility/ux-guidelines/media/vld_c_report.png "VLD_C_Report") | ![“文件对话框报表”图标](../../extensibility/ux-guidelines/media/vld_c_report_filedialogreport.png "VLD_C_Report_FileDialogReport")<br />文件对话框报表<br />![“检测性能报表”图标](../../extensibility/ux-guidelines/media/vld_c_report_instrumentationperformancereport.png "VLD_C_Report_InstrumentationPerformanceReport")<br />检测性能报表<br />![“报表项目向导”图标](../../extensibility/ux-guidelines/media/vld_c_report_reportprojectwizard.png "VLD_C_Report_ReportProjectWizard")<br />报表项目向导 ||
 | **规则** | ![“规则”图标](../../extensibility/ux-guidelines/media/vld_c_rule.png "VLD_C_Rule") | ![“新建提取规则”图标](../../extensibility/ux-guidelines/media/vld_c_rule_newextractionrule.png "VLD_C_Rule_NewExtractionRule")<br />新提取规则<br />![“新建阈值规则”图标](../../extensibility/ux-guidelines/media/vld_c_rule_newthresholdrule.png "VLD_C_Rule_NewThresholdRule")<br />新建阈值规则<br />![“新建验证规则”图标](../../extensibility/ux-guidelines/media/vld_c_rule_newvalidationrule.png "VLD_C_Rule_NewValidationRule")<br />新验证规则 ||
 | **标尺**<br />度量值、指南 | ![“标尺”图标](../../extensibility/ux-guidelines/media/vld_c_ruler.png "VLD_C_Ruler") | ![“打开度量模式”图标](../../extensibility/ux-guidelines/media/vld_c_ruler_measuremodeon.png "VLD_C_Ruler_MeasureModeOn")<br />度量模式开启<br />![“度量单位”图标](../../extensibility/ux-guidelines/media/vld_c_ruler_unitsofmeasure.png "VLD_C_Ruler_UnitsOfMeasure")<br />度量单位 ||
 
 ### <a name="s"></a><a name="BKMK_VLDConceptsS"></a> 些
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **保存** | ![“保存”图标](../../extensibility/ux-guidelines/media/vld_c_save.png "VLD_C_Save") | ![“全部保存”图标](../../extensibility/ux-guidelines/media/vld_c_save_saveall.png "VLD_C_Save_SaveAll")<br />全部保存<br />![“保存并关闭”图标](../../extensibility/ux-guidelines/media/vld_c_save_saveandclose.png "VLD_C_Save_SaveAndClose")<br />保存并关闭<br />![“保存文件对话框控件”图标](../../extensibility/ux-guidelines/media/vld_c_save_savefiledialogcontrol.png "VLD_C_Save_SaveFileDialogControl")<br />"保存文件" 对话框控件 ||
 | **架构** | ![“架构”图标](../../extensibility/ux-guidelines/media/vld_c_schema.png "VLD_C_Schema") | ![“创建架构”图标](../../extensibility/ux-guidelines/media/vld_c_schema_createschema.png "VLD_C_Schema_CreateSchema")<br />创建架构<br />![“数据库架构”图标](../../extensibility/ux-guidelines/media/vld_c_schema_databaseschema.png "VLD_C_Schema_DatabaseSchema")<br />数据库架构<br />![“XML 架构”图标](../../extensibility/ux-guidelines/media/vld_c_schema_xmlschema.png "VLD_C_Schema_XMLSchema")<br />XML 架构 ||
@@ -325,14 +325,14 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="t"></a><a name="BKMK_VLDConceptsT"></a> 关心
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
-| **表格** | ![“表”图标](../../extensibility/ux-guidelines/media/vld_c_table.png "VLD_C_Table") | ![“表警告”图标](../../extensibility/ux-guidelines/media/vld_c_table_tablewarning.png "VLD_C_Table_TableWarning")<br />表警告<br />![“云存储表集合”图标](../../extensibility/ux-guidelines/media/vld_c_table_cloudstoragetablecollection.png "VLD_C_Table_CloudStorageTableCollection")<br />云存储表集合 ||
+| **表** | ![“表”图标](../../extensibility/ux-guidelines/media/vld_c_table.png "VLD_C_Table") | ![“表警告”图标](../../extensibility/ux-guidelines/media/vld_c_table_tablewarning.png "VLD_C_Table_TableWarning")<br />表警告<br />![“云存储表集合”图标](../../extensibility/ux-guidelines/media/vld_c_table_cloudstoragetablecollection.png "VLD_C_Table_CloudStorageTableCollection")<br />云存储表集合 ||
 | **平板电脑** | ![“平板电脑”图标](../../extensibility/ux-guidelines/media/vld_c_tablet.png "VLD_C_Tablet") | ![“平板电脑设置”图标](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletsettings.png "VLD_C_Tablet_TabletSettings")<br />Tablet 设置<br />![“平板电脑警告”图标](../../extensibility/ux-guidelines/media/vld_c_tablet_tabletwarning.png "VLD_C_Tablet_TabletWarning")<br />平板电脑警告 ||
 | **标记**<br />标记系统 | ![标记系统&#41; 图标 &#40;标记](../../extensibility/ux-guidelines/media/vld_c_tag_tagging_system.png "VLD_C_Tag_tagging_system") |||
 | **任务** | ![“任务”图标](../../extensibility/ux-guidelines/media/vld_c_task.png "VLD_C_Task") | ![“已链接任务”图标](../../extensibility/ux-guidelines/media/vld_c_task_linkedtask.png "VLD_C_Task_LinkedTask")<br />链接任务<br />![任务列表图标](../../extensibility/ux-guidelines/media/vld_c_task_tasklist.png "VLD_C_Task_TaskList")<br />任务列表 ||
 | **团队** | ![由两个用户图标组成的团队图标。](../../extensibility/ux-guidelines/media/vld_c_team.png "VLD_C_Team") | ![“新建项目”图标](../../extensibility/ux-guidelines/media/vld_c_team_newteamproject.png "VLD_C_Team_NewTeamProject")<br />新建项目<br />!["添加项目" 图标](../../extensibility/ux-guidelines/media/vld_c_team_addteamproject.png "VLD_C_Team_AddTeamProject")<br />添加项目<br />![“Team Foundation Server”图标](../../extensibility/ux-guidelines/media/vld_c_team_teamfoundationserver.png "VLD_C_Team_TeamFoundationServer")<br />Team Foundation Server ||
-| **文本** | ![文本图标](../../extensibility/ux-guidelines/media/vld_c_text.png "VLD_C_Text") | ![“图片和文本”图标](../../extensibility/ux-guidelines/media/vld_c_text_pictureandtext.png "VLD_C_Text_PictureAndText")<br />图片和文本<br />![“RTF 文本框”图标](../../extensibility/ux-guidelines/media/vld_c_text_richtextbox.png "VLD_C_Text_RichTextBox")<br />格式文本框<br />!["文本 &#45; 第一次缩进" 图标](../../extensibility/ux-guidelines/media/vld_c_text_textfirstindenton.png "VLD_C_Text_TextFirstIndentOn")<br />文本 &mdash; 首次缩进 ||
+| **Text** | ![文本图标](../../extensibility/ux-guidelines/media/vld_c_text.png "VLD_C_Text") | ![“图片和文本”图标](../../extensibility/ux-guidelines/media/vld_c_text_pictureandtext.png "VLD_C_Text_PictureAndText")<br />图片和文本<br />![“RTF 文本框”图标](../../extensibility/ux-guidelines/media/vld_c_text_richtextbox.png "VLD_C_Text_RichTextBox")<br />格式文本框<br />!["文本 &#45; 第一次缩进" 图标](../../extensibility/ux-guidelines/media/vld_c_text_textfirstindenton.png "VLD_C_Text_TextFirstIndentOn")<br />文本 &mdash; 首次缩进 ||
 | **线程** | ![“线程”图标](../../extensibility/ux-guidelines/media/vld_c_thread.png "VLD_C_Thread") | ![“多个线程已停止”图标](../../extensibility/ux-guidelines/media/vld_c_thread_manythreadsstopped.png "VLD_C_Thread_ManyThreadsStopped")<br />已停止的多个线程<br />![“隐藏所选线程之外的所有线程”图标](../../extensibility/ux-guidelines/media/vld_c_thread_hideallexceptselectedthreads.png "VLD_C_Thread_HideAllExceptSelectedThreads")<br />隐藏所选线程之外的所有线程<br />![“隐藏所选线程”图标](../../extensibility/ux-guidelines/media/vld_c_thread_hideselectedthreads.png "VLD_C_Thread_HideSelectedThreads")<br />隐藏所选线程 |
 | **时间**<br />挂起的 | ![时间图标](../../extensibility/ux-guidelines/media/vld_c_time.png "VLD_C_Time") | ![“时间加减”图标](../../extensibility/ux-guidelines/media/vld_c_time_timeupordown.png "VLD_C_Time_TimeUpOrDown")<br />时间增加或减少<br />![“打开时间选取器”图标](../../extensibility/ux-guidelines/media/vld_c_time_timepickeron.png "VLD_C_Time_TimePickerOn")<br />时间选取器开启 ||
 | **计时器** | ![“计时器”图标](../../extensibility/ux-guidelines/media/vld_c_timer.png "VLD_C_Timer") | ![“完成时间”图标](../../extensibility/ux-guidelines/media/vld_c_timer_timefinish.png "VLD_C_Timer_TimeFinish")<br />完成时间<br />![“开始时间”图标](../../extensibility/ux-guidelines/media/vld_c_timer_timestart.png "VLD_C_Timer_TimeStart")<br />开始时间 ||
@@ -341,27 +341,27 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="u"></a><a name="BKMK_VLDConceptsU"></a> 形
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **撤消**<br />还原，还原 | ![“撤消”图标](../../extensibility/ux-guidelines/media/vld_c_undo.png "VLD_C_Undo") | ![用于指示图像还原的撤消图标和图像图标。](../../extensibility/ux-guidelines/media/vld_c_undo_imagerestore.png "VLD_C_Undo_ImageRestore")<br />映像还原<br />![“撤消签出项”图标](../../extensibility/ux-guidelines/media/vld_c_undo_undocheckoutitem.png "VLD_C_Undo_UndoCheckOutItem")<br />撤消签出项 ||
-| **Up**<br />上载 | ![向上图标](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![指示文件上传参数的图标和属性或参数图标。](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />文件上传参数<br />![指示向上一级的图标和文件夹图标。](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />向上一级 ||
-| **User**<br />角色、配置文件 | ![“用户”图标](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![“添加用户”图标](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />添加用户<br />![“添加 Web 用户控件”图标](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />添加 web 用户控件<br />![SQL 用户&#45;定义类型 "图标](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />SQL 用户定义类型 ||
+| **Up**<br />上传 | ![向上图标](../../extensibility/ux-guidelines/media/vld_c_up.png "VLD_C_Up") | ![指示文件上传参数的图标和属性或参数图标。](../../extensibility/ux-guidelines/media/vld_c_up_fileuploadparameter.png "VLD_C_Up_FileUploadParameter")<br />文件上传参数<br />![指示向上一级的图标和文件夹图标。](../../extensibility/ux-guidelines/media/vld_c_up_onelevelup.png "VLD_C_Up_OneLevelUp")<br />向上一级 ||
+| **用户**<br />角色、配置文件 | ![“用户”图标](../../extensibility/ux-guidelines/media/vld_c_user.png "VLD_C_User") | ![“添加用户”图标](../../extensibility/ux-guidelines/media/vld_c_user_adduser.png "VLD_C_User_AddUser")<br />添加用户<br />![“添加 Web 用户控件”图标](../../extensibility/ux-guidelines/media/vld_c_user_addwebusercontrol.png "VLD_C_User_AddWebUserControl")<br />添加 web 用户控件<br />![SQL 用户&#45;定义类型 "图标](../../extensibility/ux-guidelines/media/vld_c_user_sqluserdefinedtype.png "VLD_C_User_SQLUserDefinedType")<br />SQL 用户定义类型 ||
 | **User interface**（用户界面）<br />UI | ![“用户界面”图标](../../extensibility/ux-guidelines/media/vld_c_userinterface.png "VLD_C_UserInterface") |||
 
 ### <a name="v"></a><a name="BKMK_VLDConceptsV"></a> 向量
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **变量 (本地)** | ![变量 &#40;本地&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_variable_local.png "VLD_C_Variable_local") | ![“新建变量”图标](../../extensibility/ux-guidelines/media/vld_c_variable_local_newvariable.png "VLD_C_Variable_local_NewVariable")<br />新变量<br />![变量 &#40;两个方括号内的本地&#41; 图标，指示局部变量。](../../extensibility/ux-guidelines/media/vld_c_variable_local_localvariable.png "VLD_C_Variable_local_LocalVariable")<br />局部变量<br />![“SQL 变量”图标](../../extensibility/ux-guidelines/media/vld_c_variable_local_sqlvariable.png "VLD_C_Variable_local_SQLVariable")<br />SQL 变量 ||
 | **变量 (全局)**<br />*与 "效果" 和 "函数" 相同* | ![变量 &#40;全局&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_variable_fx.png "VLD_C_Variable_fx") | ![“变量属性”图标](../../extensibility/ux-guidelines/media/vld_c_variable_fx_variableproperties.png "VLD_C_Variable_fx_VariableProperties")<br />变量属性<br />![“全局变量”图标](../../extensibility/ux-guidelines/media/vld_c_variable_fx_globalvariable.png "VLD_C_Variable_fx_GlobalVariable")<br />全局变量<br />![“删除变量”图标](../../extensibility/ux-guidelines/media/vld_c_variable_fx_deletevariable.png "VLD_C_Variable_fx_DeleteVariable")<br />删除变量 ||
-| **视图** | ![“查看”图标](../../extensibility/ux-guidelines/media/vld_c_view.png "VLD_C_View") | ![“高级视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_advancedview.png "VLD_C_View_AdvancedView")<br />高级视图<br />![“数据源视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_datasourceview.png "VLD_C_View_DataSourceView")<br />数据源视图 ||
-| **视图**<br />审核 | ![查看 &#40;审核&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_view_audit.png "VLD_C_View_audit") | ![“资源视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_resourceview.png "VLD_C_View_audit_ResourceView")<br />资源视图<br />![“在浏览器中查看”图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_viewinbrowser.png "VLD_C_View_audit_ViewInBrowser")<br />在浏览器中查看<br />![X&#45;ray 视图图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_xrayview.png "VLD_C_View_audit_XRayView")<br />X 光视图 ||
+| **查看** | ![“查看”图标](../../extensibility/ux-guidelines/media/vld_c_view.png "VLD_C_View") | ![“高级视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_advancedview.png "VLD_C_View_AdvancedView")<br />高级视图<br />![“数据源视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_datasourceview.png "VLD_C_View_DataSourceView")<br />数据源视图 ||
+| **查看**<br />审核 | ![查看 &#40;审核&#41; 图标](../../extensibility/ux-guidelines/media/vld_c_view_audit.png "VLD_C_View_audit") | ![“资源视图”图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_resourceview.png "VLD_C_View_audit_ResourceView")<br />资源视图<br />![“在浏览器中查看”图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_viewinbrowser.png "VLD_C_View_audit_ViewInBrowser")<br />在浏览器中查看<br />![X&#45;ray 视图图标](../../extensibility/ux-guidelines/media/vld_c_view_audit_xrayview.png "VLD_C_View_audit_XRayView")<br />X 光视图 ||
 | **虚拟**<br />*与 "Nonsubstantive (隐藏或模板) " 相同 "* | ![“虚拟”图标](../../extensibility/ux-guidelines/media/vld_c_virtual.png "VLD_C_Virtual") | ![“虚拟环境”图标](../../extensibility/ux-guidelines/media/vld_c_virtual_virtualenvironment.png "VLD_C_Virtual_VirtualEnvironment")<br />虚拟环境 ||
 | **Visible** | ![“可见”图标](../../extensibility/ux-guidelines/media/vld_c_visible.png "VLD_C_Visible") | ![“掩蔽或隐藏”图标](../../extensibility/ux-guidelines/media/vld_c_visible_cloakorhide.png "VLD_C_Visible_CloakOrHide")<br />遮盖或隐藏 ||
 
 ### <a name="w"></a><a name="BKMK_VLDConceptsW"></a> 水平
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **观看** | ![“监视”图标](../../extensibility/ux-guidelines/media/vld_c_watch.png "VLD_C_Watch") | ![“文件系统观察程序”图标](../../extensibility/ux-guidelines/media/vld_c_watch_filesystemwatcher.png "VLD_C_Watch_FileSystemWatcher")<br />文件系统观察程序 ||
 | **Web** | ![“Web”图标](../../extensibility/ux-guidelines/media/vld_c_web.png "VLD_C_Web") | ![“发布到 Web”图标](../../extensibility/ux-guidelines/media/vld_c_web_publishtoweb.png "VLD_C_Web_PublishToWeb")<br />发布到 Web<br />![带有 "设置" 图标和 "下载" 图标的 web 图标，表示下载 web 设置。](../../extensibility/ux-guidelines/media/vld_c_web_downloadwebsettings.png "VLD_C_Web_DownloadWebSettings")<br />下载 web 设置<br />![“新建网站”图标](../../extensibility/ux-guidelines/media/vld_c_web_newwebsite.png "VLD_C_Web_NewWebsite")<br />新建网站 ||
@@ -370,13 +370,13 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 
 ### <a name="y"></a><a name="BKMK_VLDConceptsY"></a> 误差
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **产生** | ![“收益”图标](../../extensibility/ux-guidelines/media/vld_c_yield.png "VLD_C_Yield") |||
 
 ### <a name="z"></a><a name="BKMK_VLDConceptsZ"></a> Z
 
-| 概念 | 主图标 | 其他示例 | 注意 |
+| 概念 | 主图标 | 其他示例 | 说明 |
 | --- | --- | --- | --- |
 | **缩放** | ![缩放图标](../../extensibility/ux-guidelines/media/vld_c_zoom.png "VLD_C_Zoom") | ![“放大”图标](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomin.png "VLD_C_Zoom_ZoomIn")<br />放大<br />![“缩小”图标](../../extensibility/ux-guidelines/media/vld_c_zoom_zoomout.png "VLD_C_Zoom_ZoomOut")<br />缩小 ||
 
@@ -434,9 +434,9 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 | **上一页** | !["上一个" 图标作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_previous.png "VLD_A_Previous") | ![上一个图标和书签图标，用于指示上一个书签作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_previous_previousbookmark.png "VLD_A_Previous_PreviousBookmark")<br />上一个书签<br />![上一个图标和搜索图标，指示 "查找上一个" 作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_previous_findprevious.png "VLD_A_Previous_FindPrevious")<br />查找上一个 |
 | **重做** | !["重做" 图标，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_redo.png "VLD_A_Redo") ||
 | **安排** | ![重新排列图标作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_reorder.png "VLD_A_Reorder") | ![重新排列图标和属性或参数图标，指示重新排序参数作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_reorder_reorderparameters.png "VLD_A_Reorder_ReorderParameters")<br />重新排列参数 |
-| **同步** | !["同步" 图标作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![“同步内容”图标](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />同步内容 |
+| **Sync** | !["同步" 图标作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_sync.png "VLD_A_Sync") | ![“同步内容”图标](../../extensibility/ux-guidelines/media/vld_a_sync_synccontents.png "VLD_A_Sync_SyncContents")<br />同步内容 |
 | **撤消**<br />还原，还原 | !["撤消" 图标，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_undo.png "VLD_A_Undo") | ![用于指示图像还原的撤消图标和图像图标，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_undo_imagerestore.png "VLD_A_Undo_ImageRestore")<br />映像还原<br />![撤消图标和注释图标，用于指示取消注释作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_undo_uncomment.png "VLD_A_Undo_Uncomment")<br />取消注释 |
-| **Up**<br />上载 | !Up 图标作为使用箭头的图标的示例。] (.。/../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up" )  | !["上移" 图标和 "属性" 或 "参数" 图标指示文件上传参数，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />文件上传参数<br />![向上的图标和文件夹图标指示向上一级，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />向上一级 |
+| **Up**<br />上传 | !Up 图标作为使用箭头的图标的示例。] (.。/../extensibility/ux-guidelines/media/vld_a_up.png "VLD_A_Up" )  | !["上移" 图标和 "属性" 或 "参数" 图标指示文件上传参数，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_up_fileuploadparameter.png "VLD_A_Up_FileUploadParameter")<br />文件上传参数<br />![向上的图标和文件夹图标指示向上一级，作为使用箭头的图标的示例。](../../extensibility/ux-guidelines/media/vld_a_up_onelevelup.png "VLD_A_Up_OneLevelUp")<br />向上一级 |
 
 ## <a name="status-indicators"></a><a name="BKMK_VLDStatus"></a> 状态指示器
 
@@ -459,8 +459,8 @@ Visual Studio 使用常见的视觉语言来说明作为其插图和其他图像
 | **信息** | ![“信息”图标](../../extensibility/ux-guidelines/media/vld_s_information.png "VLD_S_Information") | ![“刚性信息关系”图标](../../extensibility/ux-guidelines/media/vld_s_information_rigidinforelationship.png "VLD_S_Information_RigidInfoRelationship")<br />严格的信息关系<br />![“系统信息”图标](../../extensibility/ux-guidelines/media/vld_s_information_systeminfo.png "VLD_S_Information_SystemInfo")<br />系统信息 |
 | **信息工具提示** | ![信息工具提示图标](../../extensibility/ux-guidelines/media/vld_s_informationtooltip.png "VLD_S_InformationTooltip") ||
 | **无效** | ![无效图标](../../extensibility/ux-guidelines/media/vld_s_invalid.png "VLD_S_Invalid") ||
-| **否**<br />静音，不适用 | ![无图标](../../extensibility/ux-guidelines/media/vld_s_no.png "VLD_S_No") | ![“麦克风静音”图标](../../extensibility/ux-guidelines/media/vld_s_no_microphonemute.png "VLD_S_No_MicrophoneMute")<br />麦克风静音<br />![音频扬声器图标和无状态指示器图标，指示音频静音。](../../extensibility/ux-guidelines/media/vld_s_no_audiomute.png "VLD_S_No_AudioMute")<br />音频静音 |
-| **移除**<br />脱机、关键 | ![删除 "脱机" 或 "严重) 状态指示器" 图标 (。](../../extensibility/ux-guidelines/media/vld_s_remove.png "VLD_S_Remove") | ![删除状态指示器图标和指示连接脱机的连接图标。](../../extensibility/ux-guidelines/media/vld_s_remove_connectionoffline.png "VLD_S_Remove_ConnectionOffline")<br />脱机连接<br />![“文件夹脱机”图标](../../extensibility/ux-guidelines/media/vld_s_remove_folderoffline.png "VLD_S_Remove_FolderOffline")<br />文件夹脱机<br />![“停止查询”图标](../../extensibility/ux-guidelines/media/vld_s_remove_stopquery.png "VLD_S_Remove_StopQuery")<br />停止查询 |
+| 否<br />静音，不适用 | ![无图标](../../extensibility/ux-guidelines/media/vld_s_no.png "VLD_S_No") | ![“麦克风静音”图标](../../extensibility/ux-guidelines/media/vld_s_no_microphonemute.png "VLD_S_No_MicrophoneMute")<br />麦克风静音<br />![音频扬声器图标和无状态指示器图标，指示音频静音。](../../extensibility/ux-guidelines/media/vld_s_no_audiomute.png "VLD_S_No_AudioMute")<br />音频静音 |
+| **删除**<br />脱机、关键 | ![删除 "脱机" 或 "严重) 状态指示器" 图标 (。](../../extensibility/ux-guidelines/media/vld_s_remove.png "VLD_S_Remove") | ![删除状态指示器图标和指示连接脱机的连接图标。](../../extensibility/ux-guidelines/media/vld_s_remove_connectionoffline.png "VLD_S_Remove_ConnectionOffline")<br />脱机连接<br />![“文件夹脱机”图标](../../extensibility/ux-guidelines/media/vld_s_remove_folderoffline.png "VLD_S_Remove_FolderOffline")<br />文件夹脱机<br />![“停止查询”图标](../../extensibility/ux-guidelines/media/vld_s_remove_stopquery.png "VLD_S_Remove_StopQuery")<br />停止查询 |
 | **必需** | ![必需图标](../../extensibility/ux-guidelines/media/vld_s_required.png "VLD_S_Required") | ![“测试套件需求”图标](../../extensibility/ux-guidelines/media/vld_s_required_testsuiterequirement.png "VLD_S_Required_TestSuiteRequirement")<br />测试套件要求 |
 | **安全盾牌警报** | ![“安全防火墙警报”图标](../../extensibility/ux-guidelines/media/vld_s_securityshieldalert.png "VLD_S_SecurityShieldAlert") ||
 | **安全盾牌完成，正常** | ![“安全防火墙完成并确定”图标](../../extensibility/ux-guidelines/media/vld_s_securityshieldcompleteandok.png "VLD_S_SecurityShieldCompleteAndOK") ||

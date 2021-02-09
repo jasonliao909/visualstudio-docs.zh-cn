@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: be85be66-47e6-415f-b0ca-24599aa5f13c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae974461e312c68e6fcc14150a08879ac7709950
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5a5648fa4b251e96327a35ecf29c2684a312fa99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725135"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929649"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 获取端口本身的进程 ID。
@@ -28,18 +28,18 @@ ms.locfileid: "80725135"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetPortProcessId ( 
+HRESULT GetPortProcessId ( 
    DWORD* pdwProcessId
 );
 ```
 
 ```csharp
-int GetPortProcessId ( 
+int GetPortProcessId ( 
    out uint pdwProcessId
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwProcessId`\
 弄返回端口本身的物理进程 ID。
 

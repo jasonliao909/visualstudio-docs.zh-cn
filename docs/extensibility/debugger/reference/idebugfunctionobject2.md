@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4150480d2e6686992d78727b6fed817da270145
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 304269ba2a4f556cfe931157c445d7b4fc86f489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929935"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
@@ -35,11 +35,11 @@ IDebugFunctionObject2 : IUnknown
 ## <a name="notes-for-callers"></a>调用方说明
  此接口的方法通过以下方式将 **IDebugFunctionObject** 的方法延迟：
 
-- **IDebugEvaluate**方法采用标志。
+- **IDebugEvaluate** 方法采用标志。
 
-- **CreateObject**方法采用标志和超时。
+- **CreateObject** 方法采用标志和超时。
 
-- **CreateStringObjectWithLength**方法使用长度。
+- **CreateStringObjectWithLength** 方法使用长度。
 
 ## <a name="methods"></a>方法
  此接口实现以下方法：
