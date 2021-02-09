@@ -14,15 +14,15 @@ helpviewer_keywords:
 - user controls [Office development in Visual Studio], actions panes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d03ba8968b08fb07eb2cc9c17839af57cf06eca
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896770"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是附加到特定 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的可自定义的 **文档操作** 任务窗格。 操作窗格与其他内置任务窗格（如 Excel 中的 " **XML 源** " 任务窗格或 Word 中的 " **样式和格式** " 任务窗格）一起托管在 Office 任务窗格中。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -150,7 +150,7 @@ ms.locfileid: "96844824"
  [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
  [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在 Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office UI 自定义](../vsto/office-ui-customization.md)
 - [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)

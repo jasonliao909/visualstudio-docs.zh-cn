@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 252c5221-2e64-461c-8dcf-b622e400e0be
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bd0b48292a448d70b266e598df561fdff2e8ab4
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: de9bc6e4b742326e979c2701bb5792127539274a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895461"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示和隐藏文本
 大纲显示可将一系列文本行折叠成一行。 例如，在 c + + 中，所有方法都可以折叠为单个行，只显示方法签名。 隐藏文本是可以显示或隐藏的文本行的序列。

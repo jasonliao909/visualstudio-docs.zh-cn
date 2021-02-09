@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 93a278a8-d4f4-400b-8945-4f1b0a2b5bac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a963b4d452a5d8ea9e0556b232f488e93dc0a29c
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: e22ff1c0f95c78e7e19f8e309d1c37f85c7b9aa5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895695"
 ---
 # <a name="miscellaneous-files-project"></a>杂项文件项目
 当用户打开项目项时，IDE 会将所有不属于解决方案中项目的成员的项分配给杂项文件项目。

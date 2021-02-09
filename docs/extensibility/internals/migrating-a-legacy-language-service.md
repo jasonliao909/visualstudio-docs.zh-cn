@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced200ff24b17f312e63642c8083f038a6fc6a4d
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877827"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895682"
 ---
 # <a name="migrating-a-legacy-language-service"></a>迁移旧版语言服务
 你可以通过更新项目并将 source.extension.vsixmanifest 文件添加到项目中，将旧版语言服务迁移到更高版本的 Visual Studio。 语言服务本身将像以前一样继续工作，因为 Visual Studio 编辑器会改编它。

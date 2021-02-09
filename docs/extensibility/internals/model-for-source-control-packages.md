@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ece2a7df1aeb2ec44f7b21075d2945a93d51838
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876684"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895656"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源代码管理实现的示例。 在模型中，可以看到必须实现的接口和必须调用的环境服务。 与所有服务一样，实际调用通过服务获取的特定接口的方法。 标识类的名称，以便更轻松地查看源代码管理的执行方式。

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5f7d30036f0f25d1f81b690168675d74fc36bbd
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903216"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895357"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 元素（Visual Studio 模板）
 指定项模板将显示在哪种项目类型中。 当 [ShowByDefault (Visual Studio 模板) ](../extensibility/showbydefault-visual-studio-templates.md) 设置为时，此元素很重要 `false` 。 当 [ShowByDefault (Visual Studio 模板) ](../extensibility/showbydefault-visual-studio-templates.md) 设置为时 `true` ，将在所有项目类型中提供项模板。
@@ -55,7 +55,7 @@ ms.locfileid: "94903216"
 
  此文本指定项模板类别的标识符。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `TemplateGroupID` 是一个元素。
 
  元素的值 `TemplateGroupID` 与项目系统注册一起使用 ( # B0 \\ *\<version number>* \Projects \\) 来筛选在 "**添加新项**" 对话框中显示的模板。

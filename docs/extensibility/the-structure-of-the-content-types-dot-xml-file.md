@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7117845e4756f8b0e09a8fa603e66448e705b903
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: 38348661946be3894332d49177f972410563b716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895202"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 文件的结构
 包含有关 VSIX 包中的内容种类的信息。 Visual Studio 使用 [Content_Types] .xml 文件来安装包，但不会安装文件本身。
@@ -39,7 +39,7 @@ ms.locfileid: "97715218"
 
 ### <a name="attributes"></a>属性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |`Xmlns`| (必需。 ) 用于此 [Content_Types] .xml 文件的架构位置。|
 
@@ -58,7 +58,7 @@ ms.locfileid: "97715218"
 
 ### <a name="attributes"></a>属性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |`Extension`|VSIX 包中文件的文件扩展名。|
 |`ContentType`|描述与文件扩展名关联的内容类型。|
@@ -66,7 +66,7 @@ ms.locfileid: "97715218"
 ### <a name="attribute-name-attribute"></a>{Attribute name}Attribute
  Visual Studio 可识别 `ContentType` 相关类型的以下值 `Extension` 。
 
-|分机|ContentType|
+|扩展名|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
 |.pkgdef|text/plain|

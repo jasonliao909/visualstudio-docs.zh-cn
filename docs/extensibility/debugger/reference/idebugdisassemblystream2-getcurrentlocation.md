@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 512302f1-12b1-4107-8a6e-c5bc878ce1c3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 440afc26688522da5cc8b6c20b2712872b4ce6b3
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 25570442402db11c4f8eb499ecf33ea3ae82b54b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896209"
 ---
 # <a name="idebugdisassemblystream2getcurrentlocation"></a>IDebugDisassemblyStream2::GetCurrentLocation
 返回表示当前代码位置的代码位置标识符。
@@ -28,18 +28,18 @@ ms.locfileid: "80732220"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetCurrentLocation( 
+HRESULT GetCurrentLocation( 
    UINT64* puCodeLocationId
 );
 ```
 
 ```csharp
-int GetCurrentLocation( 
+int GetCurrentLocation( 
    out ulong puCodeLocationId
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `puCodeLocationId`\
 弄返回代码位置标识符。 有关代码位置标识符的说明，请参阅 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 方法的 "备注" 部分。
 

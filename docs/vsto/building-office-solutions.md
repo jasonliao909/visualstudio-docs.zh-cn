@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Office solutions [Office development in Visual Studio], debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d942a7818c3c71e0859c9271b329688734682f2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 31cb28ad2c332d0afea9bef8cbe1c979b58536e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896719"
 ---
 # <a name="build-office-solutions"></a>构建 Office 解决方案
   通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的一般信息，请参阅 [在 Visual Studio 中编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
@@ -107,7 +107,7 @@ ms.locfileid: "96847931"
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|描述|
+|Title|说明|
 |-----------|-----------------|
 |[调试 Office 项目](../vsto/debugging-office-projects.md)|存在涉及调试 Office 项目的问题。|
 |[演练：创建您的第一个 Excel 文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|

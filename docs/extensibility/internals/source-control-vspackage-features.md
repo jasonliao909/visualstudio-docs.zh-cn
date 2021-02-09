@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c3ffda-22b8-4345-9fb6-2883f37699aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8dd887488adc5813ad51c9fa2a25648e25ab4876
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a29b1b3af1e92ee6f247ba07e3b4e468401415e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99895422"
 ---
 # <a name="source-control-vspackage-features"></a>源代码管理 VSPackage 功能
 本部分介绍源代码管理 VSPackage 的各种功能。 其中概述了此类 VSPackage 的注册和选择详细信息，并讨论了三个源代码管理相关的功能：处理 Query-Edit Query-Save (QEQS) 事件、符号替换和自定义用户界面 (UI) 用于源代码管理函数。
