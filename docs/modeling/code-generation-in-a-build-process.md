@@ -9,18 +9,18 @@ helpviewer_keywords:
 - text templates, transforming by using msbuild
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 3000a02621f7e2c274522a199cfe499e2335c4c2
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: a785bf0fc337d1934efe4f47adaac7efe7f1f1b1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363557"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861798"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在生成过程中调用文本转换
 
@@ -301,7 +301,7 @@ Visual Studio 宏（如 **$ (SolutionDir)** 在 MSBuild 中不起作用。 你�
 
 - [运行时文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md) 在运行时在应用程序中转换。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 ::: moniker range="vs-2017"
 

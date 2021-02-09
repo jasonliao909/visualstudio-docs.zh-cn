@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Excel projects [Office development in Visual Studio], getting started
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1fb048fd015126e5438a007be1950cddffbac9e1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: de5d7529e0bd8bc99eb4f375a31dab9ea9520234
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846033"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860719"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>开始编程 Excel 文档级自定义项
   如果只是开始使用 Visual Studio 创建 Microsoft Office Excel 的文档级自定义项，则需要了解以下内容。
@@ -66,7 +66,7 @@ ms.locfileid: "96846033"
 
  有关演练 Excel 项目中的一些常见任务的主题列表，请参阅 [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [Excel 解决方案](../vsto/excel-solutions.md)

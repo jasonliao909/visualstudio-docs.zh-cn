@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: c7f6d166-a69e-40c4-bd0b-1a1fdf9aaacf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 040b8cf21cda1a0634c1c423516109b1ef214f01
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4914a61430d5f64b5e7b590749317c2cfe721b96
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727869"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99838959"
 ---
 # <a name="idebuggenericparamfieldgetowner"></a>IDebugGenericParamField::GetOwner
 检索此泛型参数的类型或方法所有者。
@@ -37,7 +37,7 @@ int GetOwner(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppOwner`\
 弄返回拥有此泛型参数的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 
@@ -45,7 +45,7 @@ int GetOwner(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的**CDebugGenericParamFieldType**对象实现此方法。
+下面的示例演示如何为公开 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的 **CDebugGenericParamFieldType** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugGenericParamFieldType::GetOwner(IDebugField** ppOwner)

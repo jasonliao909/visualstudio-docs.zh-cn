@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 995272ccfd7a2bcac5c7c934413d6be0197de17d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a327207f5fde99aac482cf0b77d29af04b082524
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734947"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862137"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 获取描述此断点请求的断点请求信息。
@@ -28,20 +28,20 @@ ms.locfileid: "80734947"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetRequestInfo( 
+HRESULT GetRequestInfo( 
    BPREQI_FIELDS    dwFields,
    BP_REQUEST_INFO* pBPRequestInfo
 );
 ```
 
 ```csharp
-int GetRequestInfo( 
+int GetRequestInfo( 
    eunm_BPREQI_FIELDS  dwFields,
    BP_REQUEST_INFO[]   pBPRequestInfo
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 枚举中的标志的组合，用于确定要填充参数中的哪些字段 `pBPRequestInfo` 。
 

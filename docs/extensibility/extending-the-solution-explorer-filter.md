@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cde3377582c3bac0c27371e25f28e5151d641db1
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862117"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展 **解决方案资源管理器** 筛选器功能以显示或隐藏不同文件。 例如，可以创建一个筛选器，该筛选器仅显示 **解决方案资源管理器** 中的 c # 类工厂文件，如本演练中所示。

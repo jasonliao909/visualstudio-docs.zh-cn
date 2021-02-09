@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 564d975a60c54a074d830742eb0ab6133fdbfe4e
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974614"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99853147"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第2部分
 本系列中的第一个演练是 [创建一个基本项目系统，第1部分](../extensibility/creating-a-basic-project-system-part-1.md)显示了如何创建基本的项目系统。 本演练通过添加 Visual Studio 模板、属性页和其他功能来构建在基本项目系统上。 开始此演练之前，必须先完成第一个演练。
@@ -154,7 +154,7 @@ ms.locfileid: "94974614"
 ## <a name="examine-the-visual-studio-template-build-steps"></a>检查 Visual Studio 模板生成步骤
  如果更改 *.vstemplate* 文件或重新生成包含 *.vstemplate* 文件的项目，VSPackage 项目生成系统通常会在安装模式下运行 Visual Studio。 可以通过将 MSBuild 的详细级别设置为 "正常" 或 "更高" 来执行此操作。
 
-1. 在“工具”  菜单上，单击“选项” 。
+1. 在 **“工具”** 菜单上，单击 **“选项”** 。
 
 2. 展开 " **项目和解决方案** " 节点，然后选择 " **生成并运行**"。
 
@@ -281,7 +281,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
 - $safeprojectname $ 是用户在 " **新建项目** " 对话框中提供的名称，将修改为删除所有不安全字符和空格。
 
-  有关模板参数的完整列表，请参阅 [模板参数](../ide/template-parameters.md)。
+  有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。
 
 ### <a name="to-substitute-project-template-parameters"></a>替换项目模板参数
 

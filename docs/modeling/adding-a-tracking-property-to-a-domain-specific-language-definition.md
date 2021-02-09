@@ -10,15 +10,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6709ede3de16a78e0042d035a87a715b9ce4c80c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c58e01fa5da5608b183827e366c115c214aa483d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862006"
 ---
 # <a name="add-a-tracking-property-to-a-domain-specific-language-definition"></a>向域特定语言定义中添加跟踪属性
 
@@ -56,7 +56,7 @@ ms.locfileid: "97361204"
 
 ## <a name="create-the-project"></a>创建项目
 
-1. 创建 Domain-Specific 语言设计器项目。 将其命名为 `TrackingPropertyDSL`。
+1. 创建 Domain-Specific 语言设计器项目。 将它命名为 `TrackingPropertyDSL`。
 
 2. 在 **特定于域的语言设计器向导** 中，设置以下选项：
 
@@ -720,7 +720,7 @@ ms.locfileid: "97361204"
 
 1. 在“生成”菜单上，单击“重新生成解决方案” 。
 
-2. 在 **“调试”** 菜单中，单击 **“启动调试”** 。
+2. 在“调试”菜单上，单击“启动调试”。
 
     的实验性生成 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 将打开包含空测试文件的 **调试** 解决方案。
 
@@ -756,7 +756,7 @@ ms.locfileid: "97361204"
 
 如果计划使用多个跟踪属性，或在多个 DSL 中实现跟踪属性，则可以创建一个文本模板来生成支持每个跟踪属性的通用代码。 有关文本模板的详细信息，请参阅 [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Modeling.Design.TrackingPropertyDescriptor>
 - <xref:Microsoft.VisualStudio.Modeling.Design.ElementTypeDescriptor>

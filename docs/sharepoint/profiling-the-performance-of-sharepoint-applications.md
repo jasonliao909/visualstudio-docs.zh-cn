@@ -17,15 +17,15 @@ helpviewer_keywords:
 - profiling [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ecdacce58e17c616b22c9a6a8ba6fce9d5cf272c
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d59f5b472f791f9774515cdb3e92cc4cf7f9f55b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860732"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析 SharePoint 应用程序的性能
 
@@ -61,7 +61,7 @@ Web 性能测试模拟最终用户可能与 SharePoint 应用程序交互的方�
 
 ## <a name="related-topics"></a>相关主题
 
-|Title|描述|
+|Title|说明|
 |-----------|-----------------|
 |[演练：分析 SharePoint 应用程序](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|演示如何对 SharePoint 应用程序执行采样分析分析。|
 |[发布前对应用进行性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|介绍如何创建负载测试，从而帮助你对 SharePoint 应用程序进行压力测试。|

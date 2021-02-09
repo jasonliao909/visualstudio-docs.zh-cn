@@ -1,5 +1,5 @@
 ---
-title: AsyncTaskMethodBuilder m_builder 字段 |Microsoft Docs
+title: AsyncTaskMethodBuilder.m_builder 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -7,17 +7,17 @@ helpviewer_keywords:
 ms.assetid: bfaf25a2-0f08-413f-b474-9ce0d97c0eeb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dd8bd1215700b8387f420e3aaec7e2ce73d9fec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 911b094c991e041a3f6a1a466d587294c6a09b4e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80739401"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99862183"
 ---
-# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder 字段 m_builder
+# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder 字段
 表示此非泛型实例委托的泛型生成器对象。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
