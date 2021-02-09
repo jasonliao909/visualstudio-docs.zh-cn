@@ -7,19 +7,19 @@ ms.topic: conceptual
 ms.assetid: af32653c-f4e6-4217-8c5a-e32b322b4918
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: aba03be7014880618d32be250e08c735622d8c4d
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4fed8d57359a6b4f7b6f64b283ed30c824ae32de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436571"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867056"
 ---
 # <a name="data-class-inheritance-or-designer"></a>数据类继承（O/R 设计器）
 
-像其他对象一样，LINQ to SQL 类可以使用继承，并可从其他类派生。 在代码中，可以通过声明一个类继承自另一个类来指定对象间的继承关系。 在数据库中，可通过多种方式创建继承关系。 **对象关系设计器** ( **O/R 设计器** ) 支持单表继承的概念，因为它通常在关系系统中实现。
+像其他对象一样，LINQ to SQL 类可以使用继承，并可从其他类派生。 在代码中，可以通过声明一个类继承自另一个类来指定对象间的继承关系。 在数据库中，可通过多种方式创建继承关系。 **对象关系设计器** (**O/R 设计器**) 支持单表继承的概念，因为它通常在关系系统中实现。
 
 在单表继承中，一个数据库表同时包含基类和派生类的列。 使用关系数据时，一个鉴别器列包含的值确定任意给定的记录属于哪个类。 例如，请考虑一个 `Persons` 表，其中包含公司所采用的所有人。 一些人是员工，一些人是经理。 `Persons`表中包含一个名为 `Type` 的列，其值为1（对于经理），值为2。 `Type`列是鉴别器列。 在这种情况下，你可以创建一个员工子类，并仅使用 `Type` 值为2的记录来填充该类。
 

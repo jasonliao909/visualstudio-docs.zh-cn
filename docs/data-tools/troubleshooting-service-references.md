@@ -1,6 +1,6 @@
 ---
 title: 服务引用疑难解答
-description: 查看在 Visual Studio 中使用 Windows Communication Foundation (WCF) 或 WCF 数据服务引用时可能出现的常见问题。
+description: 查看在 Visual Studio 中使用 Windows Communication Foundation (WCF) 或 WCF Data Services 引用时可能出现的常见问题。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 7d1a1f0efc21f1f612d85725358555fcb0cb8245
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998065"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866354"
 ---
 # <a name="troubleshoot-service-references"></a>服务引用疑难解答
 
-本主题列出了在 Visual Studio 中使用 Windows Communication Foundation (WCF) 或 WCF 数据服务引用时可能出现的常见问题。
+本主题列出了在 Visual Studio 中使用 Windows Communication Foundation (WCF) 或 WCF Data Services 引用时可能出现的常见问题。
 
 ## <a name="error-returning-data-from-a-service"></a>从服务返回数据时出错
 
@@ -76,7 +76,7 @@ ms.locfileid: "94998065"
 
 若要修复此错误，你必须手动重新生成服务项目：
 
-1. 在“工具”  菜单上，单击“选项” 。
+1. 在 **“工具”** 菜单上，单击 **“选项”** 。
 
 2. 在 " **选项** " 对话框中，展开 " **项目和解决方案**"，然后选择 " **常规**"。
 
@@ -90,7 +90,7 @@ ms.locfileid: "94998065"
 
 7. 在 " **生成** " 菜单上，单击 " **重新生成** " 以重新生成 WCF 服务项目。
 
-## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF 数据服务不会在浏览器中显示
+## <a name="wcf-data-services-do-not-display-in-the-browser"></a>WCF Data Services 不会在浏览器中显示
 
 当尝试查看中数据的 XML 表示形式时 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)] ，Internet Explorer 可能会将数据误认为为 rss 源。 请确保已禁用用于显示 RSS 源的选项。
 
@@ -106,4 +106,4 @@ ms.locfileid: "94998065"
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Visual Studio 中 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

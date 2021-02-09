@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e31be90ff24f110fda66449187d3372976f269a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85282717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867199"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>在 Visual Studio 中创建一个数据库并添加表
 
@@ -26,14 +26,14 @@ ms.locfileid: "85282717"
 
 ## <a name="prerequisites"></a>先决条件
 
-若要完成本演练，你需要安装在 Visual Studio 中的 **.net 桌面开发** 和 **数据存储和处理** 工作负荷。 若要进行安装，请打开**Visual Studio 安装程序**，然后选择 "**修改**" (或**更多**"修改") ，使其与  >  **Modify**要修改的 Visual Studio 的版本相邻。
+若要完成本演练，你需要安装在 Visual Studio 中的 **.net 桌面开发** 和 **数据存储和处理** 工作负荷。 若要进行安装，请打开 **Visual Studio 安装程序**，然后选择 "**修改**" (或 **更多**"修改") ，使其与  >  要修改的 Visual Studio 的版本相邻。
 
 > [!NOTE]
 > 本文中的过程仅适用于 .NET Framework Windows 窗体项目，不适用于 .NET Core Windows 窗体项目。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>创建一个项目及本地数据库文件
 
-1.  ( .NET Framework) 项目创建新的 **Windows 窗体应用程序 ** ，并将其命名为 **SampleDatabaseWalkthrough**。
+1.  ( .NET Framework) 项目创建新的 **Windows 窗体应用程序** ，并将其命名为 **SampleDatabaseWalkthrough**。
 
 2. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
 
@@ -45,7 +45,7 @@ ms.locfileid: "85282717"
 
 ### <a name="add-a-data-source"></a>添加数据源
 
-1. 如果 "**数据源**" 窗口未打开，请按**Shift** + **Alt** + **D**或选择**View**  >  菜单栏上的 "查看**其他 Windows**  >  **数据源**" 来打开它。
+1. 如果 "**数据源**" 窗口未打开，请按 **Shift** + **Alt** + **D** 或选择  >  菜单栏上的 "查看 **其他 Windows**  >  **数据源**" 来打开它。
 
 1. 在 " **数据源** " 窗口中，选择 " **添加新数据源**"。
 
@@ -67,7 +67,7 @@ ms.locfileid: "85282717"
 
 可以通过打开数据连接的属性窗口，查看 *sampledatabase.mdf* 文件的连接字符串：
 
-- 选择 "**查看**  >  **SQL Server 对象资源管理器**" 以打开 " **SQL Server 对象资源管理器**" 窗口。 展开** (localdb) \mssqllocaldb**  >  **数据库**，然后右键单击*sampledatabase.mdf* ，然后选择 "**属性**"。
+- 选择 "**查看**  >  **SQL Server 对象资源管理器**" 以打开 " **SQL Server 对象资源管理器**" 窗口。 展开 **(localdb) \mssqllocaldb**  >  **数据库**，然后右键单击 *sampledatabase.mdf* ，然后选择 "**属性**"。
 
 - 或者，如果该窗口尚未打开，还可以选择 "**查看**  >  **服务器资源管理器**"。 展开 "**数据连接**" 节点，右键单击 sampledatabase.mdf，然后选择 "**属性**"，以打开属性窗口 *。*
 
@@ -80,7 +80,7 @@ ms.locfileid: "85282717"
 
 ### <a name="create-the-customers-table"></a>创建 Customers 表
 
-1. 在 **服务器资源管理器**中，展开 " **数据连接** " 节点，然后展开 " **sampledatabase.mdf** " 节点。
+1. 在 **服务器资源管理器** 中，展开 " **数据连接** " 节点，然后展开 " **sampledatabase.mdf** " 节点。
 
    如果无法展开 "数据连接" 节点，或未列出 Sampledatabase.mdf 连接，请在服务器资源管理器工具栏中选择 " **连接到数据库** " 按钮。 在 "**添加连接**" 对话框中，确保在 "**数据源**" 下选择 " **Microsoft SQL Server 数据库文件**"，然后浏览到并选择 sampledatabase.mdf 文件。 通过选择 **"确定"** 完成添加连接。
 
@@ -111,7 +111,7 @@ ms.locfileid: "85282717"
 
    ![表设计器](../data-tools/media/table-designer.png)
 
-7. 在 **表设计器**的左上角，选择 " **更新**"。
+7. 在 **表设计器** 的左上角，选择 " **更新**"。
 
 8. 在 " **预览数据库更新** " 对话框中，选择 " **更新数据库**"。
 
@@ -136,7 +136,7 @@ ms.locfileid: "85282717"
    CREATE TABLE [dbo].[Orders]
    ```
 
-4. 在 **表设计器**的左上角，选择 " **更新**"。
+4. 在 **表设计器** 的左上角，选择 " **更新**"。
 
 5. 在 " **预览数据库更新** " 对话框中，选择 " **更新数据库**"。
 
@@ -158,7 +158,7 @@ ms.locfileid: "85282717"
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])
    ```
 
-4. 在 **表设计器**的左上角，选择 " **更新**"。
+4. 在 **表设计器** 的左上角，选择 " **更新**"。
 
 5. 在 " **预览数据库更新** " 对话框中，选择 " **更新数据库**"。
 
@@ -166,7 +166,7 @@ ms.locfileid: "85282717"
 
 ## <a name="populate-the-tables-with-data"></a>用数据填充表
 
-1. 在 **服务器资源管理器** 或 **SQL Server 对象资源管理器**中，展开示例数据库的节点。
+1. 在 **服务器资源管理器** 或 **SQL Server 对象资源管理器** 中，展开示例数据库的节点。
 
 2. 打开 " **表** " 节点的快捷菜单，选择 " **刷新**"，然后展开 " **表** " 节点。
 
@@ -185,6 +185,6 @@ ms.locfileid: "85282717"
 
 7. 在菜单栏上，选择 "**文件**" "  >  **全部保存**"。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中访问数据](accessing-data-in-visual-studio.md)

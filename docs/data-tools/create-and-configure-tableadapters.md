@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 08630d69-0d6c-4e8f-b42d-2922f45f8415
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6c976f06f105969f1eaa91022607d61251a56008
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a9ab54b358125e45cfb0d6a4df30989cf679ab2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436753"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867134"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 
@@ -51,7 +51,7 @@ Tableadapter 提供应用程序和数据库之间的通信。 它们连接到数
 
 - 如果对数据库具有正确的权限，则可以选择在基础数据库中创建新的存储过程。 如果没有这些权限，则无法选择此选项。
 
-- 你还可以选择为 TableAdapter 的 **SELECT** 、 **INSERT** 、 **UPDATE** 和 **DELETE** 命令运行现有的存储过程。 例如，当调用方法时，将运行分配给 **Update** 命令的存储过程 `TableAdapter.Update()` 。
+- 你还可以选择为 TableAdapter 的 **SELECT**、 **INSERT**、 **UPDATE** 和 **DELETE** 命令运行现有的存储过程。 例如，当调用方法时，将运行分配给 **Update** 命令的存储过程 `TableAdapter.Update()` 。
 
 将参数从选中的存储过程映射到数据表中相应的列。 例如，如果您的存储过程接受一个名为的参数，该参数 `@CompanyName` 传递到 `CompanyName` 表中的列，则将参数的 **源列** 设置 `@CompanyName` 为 `CompanyName` 。
 
@@ -84,7 +84,7 @@ Tableadapter 提供应用程序和数据库之间的通信。 它们连接到数
 
 1. 在“数据集设计器”中打开数据集。
 
-2. 如果要创建新查询，请将 "工具箱" 的 " **查询** " 对象从 " **工具箱** " 的 " **数据集** " 选项卡拖到上 <xref:System.Data.DataTable> ，或从 TableAdapter 的快捷菜单中选择 " **添加查询** "。 还可以将 **查询** 对象拖动到 **数据集设计器** 的空白区域，这将创建一个不带关联的 TableAdapter <xref:System.Data.DataTable> 。 这些查询只能返回单一 (标量) 值，或对数据库运行 UPDATE、INSERT 或 DELETE 命令。
+2. 如果要创建新查询，请将 "工具箱" 的 "**查询**" 对象从 "**工具箱**" 的 "**数据集**" 选项卡拖到上 <xref:System.Data.DataTable> ，或从 TableAdapter 的快捷菜单中选择 "**添加查询**"。 还可以将 **查询** 对象拖动到 **数据集设计器** 的空白区域，这将创建一个不带关联的 TableAdapter <xref:System.Data.DataTable> 。 这些查询只能返回单一 (标量) 值，或对数据库运行 UPDATE、INSERT 或 DELETE 命令。
 
 3. 在 " **选择你的数据连接** " 屏幕上，选择或创建查询将使用的连接。
 
@@ -95,7 +95,7 @@ Tableadapter 提供应用程序和数据库之间的通信。 它们连接到数
 
     - **使用 sql 语句** 可以键入 SQL 语句，以从数据库中选择数据。
 
-    - 使用 " **创建新存储过程** "，您可以让向导根据指定的 SELECT 语句在数据库) 中创建新的存储过程 (。
+    - 使用 "**创建新存储过程**"，您可以让向导根据指定的 SELECT 语句在数据库) 中创建新的存储过程 (。
 
     - **使用现有的存储过程** 可以在运行查询时运行现有的存储过程。
 
@@ -110,7 +110,7 @@ Tableadapter 提供应用程序和数据库之间的通信。 它们连接到数
 
 - 全局查询是指返回单个 (标量) 值或没有值的 SQL 查询。 通常，全局函数执行数据库操作，例如插入、更新和删除。 它们还聚合信息，例如表中客户的计数或按特定顺序排列的所有项的总费用。
 
-     您可以通过将 **查询** 对象从 " **工具箱** " 的 " **数据集** " 选项卡拖到 **数据集设计器** 的空白区域来添加全局查询。
+     您可以通过将 **查询** 对象从 "**工具箱**" 的 "**数据集**" 选项卡拖到 **数据集设计器** 的空白区域来添加全局查询。
 
 - 提供执行所需任务的查询，例如 `SELECT COUNT(*) AS CustomerCount FROM Customers` 。
 

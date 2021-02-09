@@ -13,22 +13,22 @@ helpviewer_keywords:
 ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 76bf07e99f9965e88804c51663bcc37053bf74d6
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866146"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
 
 在 N 层应用程序中，分离各层的一种方法是为要包括在应用程序中的每一层创建相互独立的项目。 类型化数据集包含一个 `DataSet Project` 属性，该属性决定了生成的数据集和 `TableAdapter` 代码应归属到哪些项目中。
 
-本演练演示如何使用“数据集设计器”将数据集和 `TableAdapter` 代码分离到相互独立的类库项目中。 分离数据集和 TableAdapter 代码后，将 [在 Visual Studio 服务中创建 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以调入数据访问层。 最后，将 Windows 窗体应用程序创建为表示层。 该层将访问数据服务中的数据。
+本演练演示如何使用“数据集设计器”将数据集和 `TableAdapter` 代码分离到相互独立的类库项目中。 分离数据集和 TableAdapter 代码后，将 [在 Visual Studio 服务中创建 Windows Communication Foundation 服务和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以调入数据访问层。 最后，将 Windows 窗体应用程序创建为表示层。 该层将访问数据服务中的数据。
 
 在本演练中，你将执行以下步骤：
 
@@ -124,7 +124,7 @@ ms.locfileid: "94998078"
 
      如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-     - 或 -
+     -或-
 
      选择 " **新建连接** " 以打开 " **添加连接** " 对话框。
 
@@ -191,7 +191,7 @@ ms.locfileid: "94998078"
 
 6. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetCustomers”。
 
-7. 单击“完成”。
+7. 单击“完成” 。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>在数据访问层中创建返回 Orders 表的方法
 
@@ -205,7 +205,7 @@ ms.locfileid: "94998078"
 
 5. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetOrders”。
 
-6. 单击“完成”。
+6. 单击“完成” 。
 
 7. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 

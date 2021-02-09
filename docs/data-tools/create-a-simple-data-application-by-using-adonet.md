@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 44205f7f8f12d453a7c1d93ec8fee6ed1a3c1765
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 71e6c03c4ed0319b45c5b6ef0b79f65abbfc9f73
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867186"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
@@ -45,15 +45,15 @@ ms.locfileid: "94436792"
 
 1. 在 Visual Studio 中，打开 " **服务器资源管理器** " 窗口。
 
-2. 右键单击 " **数据连接** "，然后选择 " **新建 SQL Server 数据库** "。
+2. 右键单击 " **数据连接** "，然后选择 " **新建 SQL Server 数据库**"。
 
-3. 在 " **服务器名称** " 文本框中，输入 **(localdb) \mssqllocaldb** 。
+3. 在 " **服务器名称** " 文本框中，输入 **(localdb) \mssqllocaldb**。
 
-4. 在 " **新数据库名称** " 文本框中，输入 **Sales** ，然后选择 **"确定"** 。
+4. 在 " **新数据库名称** " 文本框中，输入 **Sales**，然后选择 **"确定"**。
 
      将创建空的 **销售** 数据库并将其添加到服务器资源管理器中的 "数据连接" 节点。
 
-5. 右键单击 " **销售** " 数据连接，然后选择 " **新建查询** "。
+5. 右键单击 " **销售** " 数据连接，然后选择 " **新建查询**"。
 
      此时将打开查询编辑器窗口。
 
@@ -88,9 +88,9 @@ ms.locfileid: "94436792"
 
 |Navigation 窗体的控件|属性|
 | - |----------------|
-|按钮|Name = btnGoToAdd|
-|按钮|Name = btnGoToFillOrCancel|
-|按钮|Name = btnExit|
+|Button|Name = btnGoToAdd|
+|Button|Name = btnGoToFillOrCancel|
+|Button|Name = btnExit|
 
 **NewCustomer 窗体**
 
@@ -100,12 +100,12 @@ ms.locfileid: "94436792"
 | - |----------------|
 |TextBox|Name = txtCustomerName|
 |TextBox|Name = txtCustomerID<br /><br /> Readonly = True|
-|按钮|Name = btnCreateAccount|
+|Button|Name = btnCreateAccount|
 |NumericUpdown|DecimalPlaces = 0<br /><br /> Maximum = 5000<br /><br /> Name = numOrderAmount|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpOrderDate|
-|按钮|Name = btnPlaceOrder|
-|按钮|Name = btnAddAnotherAccount|
-|按钮|Name = btnAddFinish|
+|Button|Name = btnPlaceOrder|
+|Button|Name = btnAddAnotherAccount|
+|Button|Name = btnAddFinish|
 
 **FillOrCancel 窗体**
 
@@ -114,26 +114,26 @@ ms.locfileid: "94436792"
 |FillOrCancel 窗体的控件|属性|
 | - |----------------|
 |TextBox|Name = txtOrderID|
-|按钮|Name = btnFindByOrderID|
+|Button|Name = btnFindByOrderID|
 |DateTimePicker|Format = Short<br /><br /> Name = dtpFillDate|
 |DataGridView|Name = dgvCustomerOrders<br /><br /> Readonly = True<br /><br /> RowHeadersVisible = False|
-|按钮|Name = btnCancelOrder|
-|按钮|Name = btnFillOrder|
-|按钮|Name = btnFinishUpdates|
+|Button|Name = btnCancelOrder|
+|Button|Name = btnFillOrder|
+|Button|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>存储连接字符串
 当应用程序尝试打开数据库的连接时，应用程序必须能够访问连接字符串。 若要避免在每个窗体上手动输入字符串，请将该字符串存储在项目中的 *App.config* 文件中，并创建一个方法，该方法在从应用程序中的任何窗体中调用方法时返回字符串。
 
-您可以通过在 **服务器资源管理器** 中右键单击 **Sales** 数据连接，然后选择 " **属性** " 来查找连接字符串。 找到 **ConnectionString** 属性，然后使用 **ctrl** + **A** 、 **ctrl** + **C** 选择字符串并将其复制到剪贴板。
+您可以通过在 **服务器资源管理器** 中右键单击 **Sales** 数据连接，然后选择 "**属性**" 来查找连接字符串。 找到 **ConnectionString** 属性，然后使用 **ctrl** + **A**、 **ctrl** + **C** 选择字符串并将其复制到剪贴板。
 
 1. 如果使用的是 c #，请在 **解决方案资源管理器** 中，展开项目下的 " **属性** " 节点，然后打开 " **设置** " 文件。
-    如果使用的是 Visual Basic，请在 **解决方案资源管理器** 中单击 " **显示所有文件** "，展开 " **我的项目** " 节点，然后打开 " **设置** " 文件。
+    如果使用的是 Visual Basic，请在 **解决方案资源管理器** 中单击 " **显示所有文件**"，展开 " **我的项目** " 节点，然后打开 " **设置** " 文件。
 
 2. 在 " **名称** " 列中，输入 `connString` 。
 
-3. 在 " **类型** " 列表中，选择 **(连接字符串 ")** 。
+3. 在 " **类型** " 列表中，选择 **(连接字符串 ")**。
 
-4. 在 " **作用域** " 列表中，选择 " **应用程序** "。
+4. 在 " **作用域** " 列表中，选择 " **应用程序**"。
 
 5. 在 " **值** " 列中，输入你的连接字符串， (不) 任何外引号，然后保存所做的更改。
 
@@ -152,7 +152,7 @@ ms.locfileid: "94436792"
 
 如果使用 C#，则在“解决方案资源管理器”中，打开 Program.cs，然后将 `Application.Run` 行更改为 `Application.Run(new Navigation());`
 
-如果使用 Visual Basic，请在 **解决方案资源管理器** 中打开 " **属性** " 窗口，选择 " **应用程序** " 选项卡，然后在 " **启动窗体** " 列表中选择 " **simpledataapp.navigation** "。
+如果使用 Visual Basic，请在 **解决方案资源管理器** 中打开 "**属性**" 窗口，选择 "**应用程序**" 选项卡，然后在 "**启动窗体**" 列表中选择 " **simpledataapp.navigation** "。
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 

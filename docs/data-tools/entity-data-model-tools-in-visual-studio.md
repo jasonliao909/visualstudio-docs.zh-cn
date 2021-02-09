@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1cc1aa43945ceee19b70a037b1c865c67539fb61
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: ee4bb5e56c5ae9ffb5f5266c8ef80804c8e96597
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866978"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 Entity Framework Tools
 
@@ -32,7 +32,7 @@ Entity Framework Tools 旨在帮助您生成实体框架 (EF) 应用程序。 �
 
 这些是在 Visual Studio 中构成实体框架工具的特定工具：
 
-- 您可以使用 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 设计器** ( **Entity Designer** ) 以直观方式创建和修改实体、关联、映射以及继承关系。 **Entity Designer** 还生成 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 对象层代码。
+- 您可以使用 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 设计器** (**Entity Designer**) 以直观方式创建和修改实体、关联、映射以及继承关系。 **Entity Designer** 还生成 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 对象层代码。
 
 - 您可以使用该 **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 向导** 从现有数据库生成概念模型，并将数据库连接信息添加到您的应用程序。
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 892ebf37-3af4-472e-8744-92837677d611
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6e6c289038c3f8cb9d1586ae4a1f7a84b563239f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8d728df5f8af5dff5a7ea2456e1d40d47ddc7f76
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866887"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 
@@ -29,7 +29,7 @@ ms.locfileid: "94436428"
 *服务引用* 允许项目访问一个或多个 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 。 使用 " **添加服务引用** " 对话框可以在本地 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 、在本地网络或 Internet 上搜索当前解决方案。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-您可以使用 **解决方案资源管理器** 中的 " **连接的服务** " 节点访问 **Microsoft WCF Web Service Reference Provider** ，这使您可以管理 Windows Communication Foundation (WCF) 数据服务引用。
+您可以使用 **解决方案资源管理器** 中的 "**连接的服务**" 节点访问 **Microsoft WCF Web Service Reference Provider**，这使您可以管理 Windows Communication Foundation (WCF) 数据服务引用。
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -40,7 +40,7 @@ ms.locfileid: "94436428"
 
 ::: moniker range="vs-2017"
 
-1. 在 **解决方案资源管理器** 中，右键单击要向其添加服务的项目的名称，然后单击 " **添加服务引用** "。
+1. 在 **解决方案资源管理器** 中，右键单击要向其添加服务的项目的名称，然后单击 " **添加服务引用**"。
 
    此时将出现“添加服务引用”对话框。
 
@@ -51,7 +51,7 @@ ms.locfileid: "94436428"
 
      你还可以从 "地址" 列表中选择 URL，该 **地址** 将存储找到了有效服务元数据的前15个 url。
 
-     执行搜索时，将显示一个进度栏。 您可以随时通过单击 " **停止** " 来停止搜索。
+     执行搜索时，将显示一个进度栏。 您可以随时通过单击 " **停止**" 来停止搜索。
 
 1. 在 " **服务** " 列表中，展开要使用的服务的节点，然后选择实体集。
 
@@ -66,7 +66,7 @@ ms.locfileid: "94436428"
 
    此时将打开 " **配置服务** " 选项卡。
 
-1. 选择 **Microsoft WCF Web Service Reference Provider** 。
+1. 选择 **Microsoft WCF Web Service Reference Provider**。
 
    此时将显示 " **配置 WCF Web 服务引用** " 对话框。
 
@@ -80,7 +80,7 @@ ms.locfileid: "94436428"
 
      你还可以从 **URI** 列表中选择 URL，其中存储了以前15个 url，其中找到了有效的服务元数据。
 
-     执行搜索时，将显示一个进度栏。 您可以随时通过单击 " **停止** " 来停止搜索。
+     执行搜索时，将显示一个进度栏。 您可以随时通过单击 " **停止**" 来停止搜索。
 
 1. 在 " **服务** " 列表中，展开要使用的服务的节点，然后选择实体集。
 
@@ -96,11 +96,11 @@ ms.locfileid: "94436428"
 
 ::: moniker range="vs-2017"
 
-1. 在 **解决方案资源管理器** 中，右键单击要向其添加服务的项目的名称，然后单击 " **添加服务引用** "。
+1. 在 **解决方案资源管理器** 中，右键单击要向其添加服务的项目的名称，然后单击 " **添加服务引用**"。
 
     此时将出现“添加服务引用”对话框。
 
-1. 单击 " **发现** "。
+1. 单击 " **发现**"。
 
     [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]当前解决方案中 (和 WCF 服务) 的所有服务都将添加到 **服务** 列表中。
 
@@ -117,11 +117,11 @@ ms.locfileid: "94436428"
 
    此时将打开 " **配置服务** " 选项卡。
 
-1. 选择 **Microsoft WCF Web Service Reference Provider** 。
+1. 选择 **Microsoft WCF Web Service Reference Provider**。
 
    此时将显示 " **配置 WCF Web 服务引用** " 对话框。
 
-1. 单击 " **发现** "。
+1. 单击 " **发现**"。
 
     [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]当前解决方案中 (和 WCF 服务) 的所有服务都将添加到 **服务** 列表中。
 
@@ -141,7 +141,7 @@ ms.locfileid: "94436428"
 
 ### <a name="to-update-a-service-reference"></a>更新服务引用
 
-- 在 **解决方案资源管理器** 中，右键单击服务引用，然后单击 " **更新服务引用** "。
+- 在 **解决方案资源管理器** 中，右键单击服务引用，然后单击 " **更新服务引用**"。
 
      当引用从其原始位置更新时，将显示一个进度对话框，然后重新生成服务客户端以反映元数据中的任何更改。
 
@@ -151,7 +151,7 @@ ms.locfileid: "94436428"
 
 ### <a name="to-remove-a-service-reference"></a>删除服务引用
 
-- 在 **解决方案资源管理器** 中，右键单击服务引用，然后单击 " **删除** "。
+- 在 **解决方案资源管理器** 中，右键单击服务引用，然后单击 " **删除**"。
 
      将从解决方案中删除服务客户端，并将从 *app.config* 文件中删除描述该服务的元数据。
 

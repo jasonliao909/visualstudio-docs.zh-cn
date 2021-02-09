@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 821de34b-eaa9-40af-b9aa-b8305de16899
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 598d48d560db58a40b04e9d7684e98df22291a6a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 41cf31c6cae310eb151969df0776788d6ea5b1e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434844"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866692"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>适用于 Visual Studio 的兼容数据库系统
 
@@ -41,15 +41,15 @@ SQL Server 是 Microsoft 旗舰数据库产品/服务。 SQL Server 2016 提供�
 
 ## <a name="mysql"></a>MySQL
 
-MySQL 是一种常用的开源数据库系统，广泛用于企业和网站。 Mysql、Visual Studio 和相关产品的下载在 [Windows 上的 mysql](https://www.mysql.com/why-mysql/windows/)中。 第三方提供各种 Visual Studio 扩展和 MySQL 独立管理应用程序。 可以在 nuget 包管理器中浏览产品 ( **工具** "  >  **nuget 包管理器** " "  >  **管理解决方案) 的 NuGet 包** "。
+MySQL 是一种常用的开源数据库系统，广泛用于企业和网站。 Mysql、Visual Studio 和相关产品的下载在 [Windows 上的 mysql](https://www.mysql.com/why-mysql/windows/)中。 第三方提供各种 Visual Studio 扩展和 MySQL 独立管理应用程序。 可以在 nuget 包管理器中浏览产品 (**工具**"  >  **nuget 包管理器**" "  >  **管理解决方案) 的 NuGet 包**"。
 
 ## <a name="postgresql"></a>PostgreSQL
 
-PostgreSQL 是一个免费的开源对象关系数据库系统。 若要在 Windows 上安装，可以从 [PostgreSQL 下载页](https://www.postgresql.org/download/windows/)下载。 还可以从源代码生成 PostgreSQL。 PostgreSQL 核心系统包含 C 语言接口。 许多第三方提供了用于从 .NET 应用程序使用 PostgreSQL 的 NuGet 包。 可以在 nuget 包管理器中浏览产品 ( **工具** "  >  **nuget 包管理器** " "  >  **管理解决方案) 的 NuGet 包** "。 大多数情况下， [npgsql.org](http://www.npgsql.org)提供最常用的包。
+PostgreSQL 是一个免费的开源对象关系数据库系统。 若要在 Windows 上安装，可以从 [PostgreSQL 下载页](https://www.postgresql.org/download/windows/)下载。 还可以从源代码生成 PostgreSQL。 PostgreSQL 核心系统包含 C 语言接口。 许多第三方提供了用于从 .NET 应用程序使用 PostgreSQL 的 NuGet 包。 可以在 nuget 包管理器中浏览产品 (**工具**"  >  **nuget 包管理器**" "  >  **管理解决方案) 的 NuGet 包**"。 大多数情况下， [npgsql.org](http://www.npgsql.org)提供最常用的包。
 
 ## <a name="sqlite"></a>SQLite
 
-SQLite 是在应用程序自身的进程中运行的嵌入式 SQL 数据库引擎。 可以从 [SQLite 下载页面](https://www.sqlite.org/download.html)下载。 还提供了许多用于 SQLite 的第三方 NuGet 包。 可以在 nuget 包管理器中浏览产品 ( **工具** "  >  **nuget 包管理器** " "  >  **管理解决方案) 的 NuGet 包** "。
+SQLite 是在应用程序自身的进程中运行的嵌入式 SQL 数据库引擎。 可以从 [SQLite 下载页面](https://www.sqlite.org/download.html)下载。 还提供了许多用于 SQLite 的第三方 NuGet 包。 可以在 nuget 包管理器中浏览产品 (**工具**"  >  **nuget 包管理器**" "  >  **管理解决方案) 的 NuGet 包**"。
 
 ## <a name="firebird"></a>Firebird
 

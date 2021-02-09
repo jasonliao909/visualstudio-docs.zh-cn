@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1020581d-eaaa-41a2-aca4-bf4c212895f6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ea1ab222868df6ff1b22eee7827e1edd3978a88e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c4a25cc340216e3410e0ca4b6cfabec77a73662e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866679"
 ---
 # <a name="n-tier-data-applications-overview"></a>N 层数据应用程序概述
 N 层数据应用程序是分为多个层的数据应用程序 。 n 层应用程序亦称为“分散式应用程序”和“多层应用程序”，可以将处理操作分离到独立的层中，这些层分散在客户端和服务器之间。 开发访问数据的应用程序时，应在构成应用程序的各个层之间进行明确的分离。

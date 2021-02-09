@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2f6401fedc3158e2743f08775da93faf2ddfee73
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 75800c5a2b5ff62addec3c914905ae67ac171b95
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866575"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -51,7 +51,7 @@ ms.locfileid: "94436037"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -63,7 +63,7 @@ ms.locfileid: "94436037"
 
 ## <a name="create-the-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-为 c # 或 Visual Basic 创建新的 **Windows 窗体应用程序** 项目。 将项目命名为 **UpdateMultipleTablesWalkthrough** 。
+为 c # 或 Visual Basic 创建新的 **Windows 窗体应用程序** 项目。 将项目命名为 **UpdateMultipleTablesWalkthrough**。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
@@ -75,23 +75,23 @@ ms.locfileid: "94436037"
 
 2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库** "，然后选择 " **下一步** "。
+3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库**"，然后选择 " **下一步**"。
 
 4. 在 " **选择你的数据连接** " 屏幕上，执行以下操作之一：
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         - 或 -
+         -或-
 
     - 选择“新建连接”，打开“添加/修改连接”对话框。
 
-5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步** "。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步**"。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 中，选择 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件**" 中，选择 " **下一步**"。
 
 7. 在 " **选择数据库对象** " 屏幕上，展开 " **表** " 节点。
 
-8. 选择 " **Customers** " 和 " **Orders** " 表，然后选择 " **完成** "。
+8. 选择 " **Customers** " 和 " **Orders** " 表，然后选择 " **完成**"。
 
      “NorthwindDataSet”将添加到项目，这些表将显示在“数据源”窗口中。
 
@@ -138,7 +138,7 @@ ms.locfileid: "94436037"
 
 ## <a name="test-the-application"></a>测试应用程序
 
-1. 按 **F5** 。
+1. 按 F5 。
 
 2. 对每个表中的一条或多条记录的数据执行一些更改。
 

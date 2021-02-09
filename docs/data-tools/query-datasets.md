@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8ccf228b147301eb9fccf41da98f8cc5204971a9
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 4342af681f8e2cc38855bec6041e8b4cd83dcf5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866614"
 ---
 # <a name="query-datasets"></a>查询数据集
 若要搜索数据集中的特定记录，请使用 `FindBy` DataTable 上的方法，编写自己的 foreach 语句来循环遍历表的 Rows 集合，或使用 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
