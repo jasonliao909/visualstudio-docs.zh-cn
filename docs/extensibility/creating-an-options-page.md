@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41102dfbbf1e49dadb1360ab0182810a47651dca
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94973719"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877481"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 
@@ -192,7 +192,7 @@ ms.locfileid: "94973719"
     }
     ```
 
-     `optionsPage`字段保存对父实例的引用 `OptionPageCustom` 。 `Initialize`方法 `OptionString` 在 **文本框** 中显示。 **TextBox** `OptionString` 当焦点离开 **textbox** 时，事件处理程序会将文本框的当前值写入。
+     `optionsPage`字段保存对父实例的引用 `OptionPageCustom` 。 `Initialize`方法 `OptionString` 在 **文本框** 中显示。  `OptionString` 当焦点离开 **textbox** 时，事件处理程序会将文本框的当前值写入。
 
 9. 在包代码文件中，将属性的替代添加 `OptionPageCustom.Window` 到类， `OptionPageCustom` 以创建、初始化和返回的实例 `MyUserControl` 。 该类现在应如下所示：
 
@@ -268,6 +268,6 @@ ms.locfileid: "94973719"
 
      将显示一个消息框，其中显示的当前值 `OptionInteger` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [选项和选项页](../extensibility/internals/options-and-options-pages.md)

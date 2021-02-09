@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: e69a3469-a049-420c-b918-c48a1e7b9baf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc205392f325a014bfe07b02b64cd8b0050ce079
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7fafd813a569c02af356fee9213ed4c1fdc8751e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875947"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 根据给定的指标名称检索表达式计算器本地对象。
@@ -43,7 +43,7 @@ private int GetEELocalObject(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidLang`\
 中编程语言的唯一标识符。
 

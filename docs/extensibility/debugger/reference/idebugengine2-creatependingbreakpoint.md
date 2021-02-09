@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92e85b90-a931-48d9-89a7-a6edcb83ae5a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f88cae3610487b92fed0d8390d44c55d3f536c4b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 93534a40d523c7b67a769ebea319463cf59e4b7a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879015"
 ---
 # <a name="idebugengine2creatependingbreakpoint"></a>IDebugEngine2::CreatePendingBreakpoint
  (DE) ，在调试引擎中创建挂起断点。
@@ -41,7 +41,7 @@ int CreatePendingBreakpoint(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pBPRequest`\
 中描述要创建的挂起断点的 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 对象。
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 - FeatureProperties element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ee2bddec02263a889fb1f69088a8a50b3d8b57d
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8756feaf08de9b01904309177f5e19c122da714d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672595"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876714"
 ---
 # <a name="featureproperties-element"></a>FeatureProperties 元素
   在将功能部署到 SharePoint 时包含的属性值的集合。 部署功能后，可以在代码中访问属性值。
@@ -50,7 +50,7 @@ ms.locfileid: "94672595"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是文件必需的根元素 `.spdata` 。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  有关功能属性的详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。
 
 ## <a name="element-information"></a>元素信息

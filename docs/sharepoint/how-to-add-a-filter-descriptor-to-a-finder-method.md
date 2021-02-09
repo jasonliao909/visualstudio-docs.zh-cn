@@ -14,15 +14,15 @@ helpviewer_keywords:
 - BDC [SharePoint development in Visual Studio], filter descriptors
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ff312753be07867d8978dc4d5f60d5dfc0eee557
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4fe2da1bc6aefefb92fbd6f7d11613372b8b7742
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915422"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879691"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：向 Finder 方法添加筛选器描述符
   筛选器描述符允许模型的使用者在执行之前将值传递给方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

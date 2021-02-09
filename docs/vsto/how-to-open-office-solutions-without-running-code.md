@@ -17,15 +17,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], opening without running code
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8339f21fbf7add4335941360b73d42700ef6e635
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844915"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876584"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
   即使最终用户的 Office 应用程序中的安全设置设置为 "高"，使用托管代码扩展创建的 Microsoft Office 解决方案也会运行。 这是因为，.NET 程序集代码安全由 Microsoft .NET 框架管理，而不是 Microsoft Office。
@@ -51,7 +51,7 @@ ms.locfileid: "96844915"
 
      如果该解决方案由多个用户使用，则此方法会阻止解决方案运行。 如果在代码或引用的服务器中发现问题并且你想要阻止所有用户执行该问题，则这会很有用。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

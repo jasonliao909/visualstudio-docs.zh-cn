@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af912503ddc1e87f14756a1041e9fa4d8aac505b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350941"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876311"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以测试客户端计算机上必须提供的用于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 运行应用程序的多个先决条件。 这些依赖项包括所需的最低版本的 .NET Framework、操作系统的版本，以及必须在全局程序集缓存中预安装的任何程序集 (GAC) 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，不能自行安装任何这些必备组件;如果找不到先决条件，它只是暂停安装并显示一个对话框，说明安装失败的原因。
@@ -67,7 +67,7 @@ ms.locfileid: "94350941"
      </dependency>
    ```
 
-5. 可选。 对于面向 .NET Framework 4 的应用程序，请 *.application* [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在文本编辑器中打开应用程序 (应用程序文件) 的部署清单。
+5. 可选。 对于面向 .NET Framework 4 的应用程序，请 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在文本编辑器中打开应用程序 (应用程序文件) 的部署清单。
 
 6. 对于 .NET Framework 4 必备项，请将 `supportUrl` 属性添加到 `compatibleFrameworks` 元素：
 
@@ -83,9 +83,9 @@ ms.locfileid: "94350941"
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  如果将应用程序标记为在部分信任环境中运行，则不会在对话框中显示支持 URL。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
-- [\<compatibleFrameworks> element](../deployment/compatibleframeworks-element-clickonce-deployment.md)
+- [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)
 - [应用程序部署必备](../deployment/application-deployment-prerequisites.md)

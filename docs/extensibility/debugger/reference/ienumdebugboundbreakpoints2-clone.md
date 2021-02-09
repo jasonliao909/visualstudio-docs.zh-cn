@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c6ce01a2-7da3-46ec-9837-855042fa7244
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b10289a713642960b03c1a51775148357b8a3c08
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e91efb24fec454b509d64decb6b9fd3954c1c9d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80717572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99875778"
 ---
 # <a name="ienumdebugboundbreakpoints2clone"></a>IEnumDebugBoundBreakpoints2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -39,7 +39,7 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppEnum`\
 弄以单独的对象的形式返回此枚举的副本。
 

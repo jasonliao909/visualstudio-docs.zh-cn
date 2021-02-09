@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 09608f4b182d72b0b86b69df7df0b37d019ddf45
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99877468"
 ---
 # <a name="ltstringsgt-element-bootstrapper"></a>&lt; (引导程序的字符串 &gt; 元素) 
 定义产品名称、包名称和安装错误消息的本地化字符串。
@@ -49,7 +49,7 @@ ms.locfileid: "94350473"
 
  `String` 具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Name`|必需。 字符串的名称。|
 
@@ -75,5 +75,5 @@ ms.locfileid: "94350473"
 </Strings>
 ```
 
-## <a name="see-also"></a>请参阅
-- [\<Package> element](../deployment/package-element-bootstrapper.md)
+## <a name="see-also"></a>另请参阅
+- [\<Package> 元素](../deployment/package-element-bootstrapper.md)

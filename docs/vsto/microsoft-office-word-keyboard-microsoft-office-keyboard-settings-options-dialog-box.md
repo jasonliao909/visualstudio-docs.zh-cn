@@ -16,15 +16,15 @@ helpviewer_keywords:
 - keyboard shortcuts, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bf4cfbaf23ad9c1e545af25614722cd52c493df7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0138fcd73ddf07202a9111ec2b3d17dcc0fb7a0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99879418"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft Office Word 键盘、"设置"、"选项" 对话框
   Microsoft Office Word 和 Visual Studio 均处理快捷键。 同一快捷键组合可用于 Word 和 Visual Studio 中的不同命令。 在 Visual Studio 中的文档级项目中打开 Word 时，一次只能有一个应用程序收到快捷键命令。 默认情况下，Visual Studio 会接收所有快捷键命令，但你可以通过选择 " **动态键盘方案**" 使 Word 在文档具有焦点时接收这些命令。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 52939fe00dcbca1cfd633c81d4b0a00ea6b517b9
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: adf5de014c7921130bd6f3ecd3cf8c5bb5daa92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915500"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876675"
 ---
 # <a name="form-support-in-workflows"></a>工作流中的窗体支持
   可以在工作流中使用四种类型的窗体：关联、启动、任务和修改。 这些窗体类型可以基于 ASPX 窗体或 InfoPath 窗体。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]为特定窗体提供的支持级别取决于若干因素，如下表中所述。 有关工作流窗体类型的详细信息，请参阅 [工作流窗体概述](/previous-versions/office/developer/sharepoint-2010/ms457061(v=office.14))。

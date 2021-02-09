@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ExtensionData element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3131aca3664e37198b0a32bdc0ade0499c12a1e6
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: cd82aaec96eff3cf3d20fd9d0607ac5aae6b3472
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672530"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876831"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 元素
   表示与 SharePoint 项目项关联的自定义数据项的集合。
@@ -50,7 +50,7 @@ ms.locfileid: "94672530"
 |-------------|-----------------|
 |[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是文件必需的根元素 `.spdata` 。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  使用对象的属性将自定义数据与 SharePoint 项目项相关联时 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ，Visual Studio 会将数据保存到项目项的文件中的 **ExtensionData** 元素 `.spdata` 。 有关详细信息，请参阅 [在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ## <a name="element-information"></a>元素信息
