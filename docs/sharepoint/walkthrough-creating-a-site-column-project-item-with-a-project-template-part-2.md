@@ -11,15 +11,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e6e5c9a0bb461f6b81b9cb7e1aa5f0134a7bdcbd
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: bc664a50fc307c59d5c168b26c8af1bc6181ebad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915136"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918722"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建网站栏项目项（第2部分）
   在定义自定义类型的 SharePoint 项目项并将其与 Visual Studio 中的项目模板关联后，你可能还需要为模板提供向导。 当用户使用模板创建包含项目项的新项目时，可以使用该向导收集用户的信息。 你收集的信息可用于初始化项目项。
@@ -43,7 +43,7 @@ ms.locfileid: "96915136"
 > [!NOTE]
 > 有关一系列示例工作流，请参阅 [SharePoint 工作流示例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要执行本演练，必须先通过完成 [演练：使用项目模板创建网站栏项目项（第1部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)创建 SiteColumnProjectItem 解决方案。
 
  在开发计算机上还需要以下组件来完成本演练：
@@ -179,7 +179,7 @@ ms.locfileid: "96915136"
 
 5. 在 **SharePointCommands** 项目中，添加另一个名为命令的代码文件。
 
-6. 选择 SharePointCommands 项目，然后在菜单栏上选择 "项目" " **Project**  >  **添加引用**"。
+6. 选择 SharePointCommands 项目，然后在菜单栏上选择 "项目" "   >  **添加引用**"。
 
 7. 展开 " **程序集** " 节点，选择 " **扩展** " 节点，然后选中以下程序集旁的复选框：
 
@@ -315,12 +315,12 @@ ms.locfileid: "96915136"
      [!code-vb[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/sharepointcommands/commands.vb#9)]
      [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#9](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs#9)]
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>检查点
  在本演练的这一阶段，向导的所有代码现在都在项目中。 生成项目以确保它在编译时不会出错。
 
 #### <a name="to-build-your-project"></a>若要生成你的项目
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 ## <a name="removing-the-keysnk-file-from-the-project-template"></a>从项目模板删除密钥 .snk 文件
  [演练：使用项目模板创建网站栏项目项（第1部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)）你创建的项目模板包含一个用于对每个网站列项目实例进行签名的 .snk 文件。 此密钥 .snk 文件不再是必需的，因为向导现在为每个项目生成新的密钥 .snk 文件。 从项目模板中删除密钥 .snk 文件，并删除对此文件的引用。
@@ -493,7 +493,7 @@ ms.locfileid: "96915136"
 
 4. 验证 Visual Studio 的另一个实例中的代码是否在您之前在方法中设置的断点处停止 `RunStarted` 。
 
-5. 通过选择 **F5** 键，或在菜单栏上选择 "**调试** 继续"，继续调试项目  >  **Continue**。
+5. 通过选择 **F5** 键，或在菜单栏上选择 "**调试** 继续"，继续调试项目  >  。
 
 6. 在 " **SharePoint 自定义向导**" 中，输入要用于调试的站点的 URL，然后选择 " **下一步** " 按钮。
 

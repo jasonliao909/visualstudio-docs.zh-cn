@@ -13,15 +13,15 @@ helpviewer_keywords:
 - smart documents [Office development in Visual Studio], control layout
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbee49a97ab6cb3e6084950e53f30b3cb6ce1b7c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918595"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理操作窗格上的控件布局
   默认情况下，操作窗格停靠在文档或工作表的右侧;但是，可以将其停靠在左侧、顶部或底部。 如果使用多个用户控件，则可以编写代码以正确地在操作窗格上堆叠用户控件。 有关详细信息，请参阅 [操作窗格概述](../vsto/actions-pane-overview.md)。
@@ -67,7 +67,7 @@ ms.locfileid: "96848243"
 
 - 带有操作窗格的 Word 文档级项目，其中包含多个用户控件或嵌套操作窗格控件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)

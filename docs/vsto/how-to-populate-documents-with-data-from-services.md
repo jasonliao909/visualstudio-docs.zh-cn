@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4d8fb377896762672574c6ef5ff15b4e12b9e59
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 57fdbcef1aaf9c0903a21a2eeb6436ce1fce25d0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845825"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918545"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>如何：用服务中的数据填充文档
 
@@ -51,7 +51,7 @@ ms.locfileid: "96845825"
 
 运行项目时，控件显示数据源中的第一条记录。 可以通过使用 <xref:System.Windows.Forms.BindingSource>中的对象处理货币事件，从而滚动记录。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b815f8ea4656cc5a144f8cf12396391e55123ece
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914863"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918754"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目的扩展。 您可以使用项目扩展来响应项目级别的事件，例如，在添加、删除或重命名项目时。 还可以添加自定义属性，或在属性值更改时进行响应。 与项目项扩展不同，项目扩展不能与特定的 SharePoint 项目类型相关联。 当你创建项目扩展时，将在中打开任何类型的 SharePoint 项目时加载该扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -42,12 +42,12 @@ ms.locfileid: "96914863"
 
 - 调试和测试项目属性。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要完成本演练，开发计算机上需要以下组件：
 
 - 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 、SharePoint 和版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用中的 **Vsix 项目** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用中的 **Vsix 项目** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，您必须创建两个项目：
@@ -121,7 +121,7 @@ ms.locfileid: "96914863"
 
 #### <a name="to-build-the-solution"></a>生成解决方案
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-property-extension"></a>创建 VSIX 包以部署项目属性扩展
  若要部署项目扩展，请使用解决方案中的 VSIX 项目创建 VSIX 包。 首先，通过修改 VSIX 项目中包含的 source.extension.vsixmanifest 文件来配置 VSIX 包。 然后，通过生成解决方案创建 VSIX 包。

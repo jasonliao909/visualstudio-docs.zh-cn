@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b21a0ebc-0ff6-4f49-8993-7d1ad3f8cac2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e09225339a87c55c31d27d26b129e199385e99
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: ccac1cd234a0f83810ff2596e1763209d95a8325
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918449"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 上的 ClickOnce 部署
 
@@ -42,7 +42,7 @@ Visual Studio 提供了以下用于生成清单的选项：
 
 - 不使用清单。 创建不带清单的应用程序。
 
-   此方法也称为 *虚拟化* 。 使用此选项与 Visual Studio 早期版本中的现有应用程序兼容。
+   此方法也称为 *虚拟化*。 使用此选项与 Visual Studio 早期版本中的现有应用程序兼容。
 
   新属性在 "项目设计器" 的 "应用程序" 页上可用于 Visual c # 项目的 " **应用程序** " 页 (仅) 和 MSBuild 项目文件格式。
 
@@ -52,8 +52,8 @@ Visual Studio 提供了以下用于生成清单的选项：
 
   * 有关为清单生成配置 Visual Basic 项目的信息，请参阅 " [应用程序" 页，"项目设计器" (Visual Basic) ](../ide/reference/application-page-project-designer-visual-basic.md)。
 
-## <a name="see-also"></a>请参阅
-- [ClickOnce 安全和部署](../deployment/clickonce-security-and-deployment.md)
-- [用户权限和 Visual Studio](/previous-versions/ms165100(v=vs.100))
+## <a name="see-also"></a>另请参阅
+- [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
+- [用户权限与 Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)
 - [“项目设计器”->“应用程序”页 (Visual Basic)](../ide/reference/application-page-project-designer-visual-basic.md)
