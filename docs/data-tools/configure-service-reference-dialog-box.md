@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1dc1d82b0267e5e0655f3ebef8eb08806ad319a8
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859211"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
@@ -93,7 +93,7 @@ ms.locfileid: "94518721"
 
 **引用的程序集列表**
 
-包含项目或网站的被引用程序集的列表。 选择 " **在指定的引用程序集中重用类型** " 时，可以选择或清除各个程序集。
+包含项目或网站的被引用程序集的列表。 选择 " **在指定的引用程序集中重用类型**" 时，可以选择或清除各个程序集。
 
 **添加 Web 引用**
 
@@ -103,7 +103,7 @@ ms.locfileid: "94518721"
 > 此选项应仅用于面向 .NET Framework 版本2.0 的项目。
 >
 > [!NOTE]
-> 只有在 " **添加服务引用" 对话框** 中显示 " **配置服务引用** " 对话框时，" **添加 Web 引用** " 按钮才可用。
+> 只有在 "**添加服务引用" 对话框** 中显示 "**配置服务引用**" 对话框时，"**添加 Web 引用**" 按钮才可用。
 
 ## <a name="see-also"></a>另请参阅
 

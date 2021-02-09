@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 78bf038b-9296-4fbf-b0e8-d881d1aff0df
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e740483a855bbfd736810dd4d41e3f4d01b7dd60
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9aad1bff0b70f87ff271f6d09cc7f8d34179136d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434670"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858561"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 
@@ -57,7 +57,7 @@ ms.locfileid: "94434670"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -71,21 +71,21 @@ ms.locfileid: "94434670"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **PassingDataBetweenForms** ，然后选择 **"确定"** 。
+4. 将项目命名为 **PassingDataBetweenForms**，然后选择 **"确定"**。
 
      创建“PassingDataBetweenForms”项目并添加到“解决方案资源管理器”中。
 
 ## <a name="create-the-data-source"></a>创建数据源
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上单击 " **显示数据源**"。
 
 2. 在 " **数据源** " 窗口中，选择 " **添加新数据源** " 以启动 " **数据源配置** 向导"。
 
-3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”** 。
+3. 在 **“选择数据源类型”** 页上选择 **“数据库”** ，然后单击 **“下一步”**。
 
 4. 在“选择数据库模型”页面上，确认已指定“数据集”，然后单击“下一步”。
 
@@ -97,7 +97,7 @@ ms.locfileid: "94434670"
 
 6. 如果数据库需要密码并且已启用含有敏感数据的选项，请选择该选项，然后单击“下一步”。
 
-7. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步** "。
+7. 在 "将 **连接字符串保存到应用程序配置文件** " 页上，单击 " **下一步**"。
 
 8. 在“选择数据库对象”页上，展开“表”节点。
 
@@ -154,13 +154,13 @@ ms.locfileid: "94434670"
     > [!NOTE]
     > 验证数据库的参数语法是否正确。 例如，在 Microsoft Access 中，WHERE 子句应当如下：`WHERE CustomerID = ?`。
 
-6. 单击“下一步”。
+6. 单击 **“下一步”** 。
 
-7. 对于 " **DataTableMethod 名称** "，请键入 `FillByCustomerID` 。
+7. 对于 " **DataTableMethod 名称**"，请键入 `FillByCustomerID` 。
 
 8. 清除“返回 DataTable”选项，然后单击“下一步”。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>在 Form2 上创建用于将数据传递到的方法
 

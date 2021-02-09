@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1cd112a1960078c72c575542525a5ecf6571b06
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c633ed01821f500e958d3c7549febc23cf33c09d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858483"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：通过使用事务来保存数据
 
@@ -41,7 +41,7 @@ ms.locfileid: "94434579"
 
 1. 在“项目”菜单中，选择“添加引用”。
 
-2. 在 " **.net** " 选项卡上 (SQL Server) 项目 **SQL Server** "选项卡，选择" **系统** "，然后选择 **" 确定 "** 。
+2. 在 " **.net** " 选项卡上 (SQL Server) 项目 **SQL Server** "选项卡，选择" **系统**"，然后选择 **" 确定 "**。
 
      对 *System.Transactions.dll* 的引用将添加到项目。
 

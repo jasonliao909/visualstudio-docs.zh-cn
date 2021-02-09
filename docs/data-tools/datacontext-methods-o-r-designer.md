@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: c149f4e5-3b61-4c33-892e-3e26d47f3eeb
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 30091a5bfd613ba9bd3738731e23153565ec4c8e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 64b5643704024ee689a011f5285b41be818dc5cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858964"
 ---
 # <a name="datacontext-methods-or-designer"></a>DataContext 方法（O/R 设计器）
 
@@ -25,10 +25,10 @@ ms.locfileid: "94436584"
 
 ## <a name="methods-pane"></a>方法窗格
 
-<xref:System.Data.Linq.DataContext>映射到存储过程和函数的方法将显示在 **O/R 设计器** 的 " **方法** " 窗格中。 “方法”窗格位于“实体”窗格（主设计图面）的旁边。 " **方法** " 窗格列出了 <xref:System.Data.Linq.DataContext> 通过使用 **O/R 设计器** 创建的所有方法。 默认情况下， **方法** 窗格为空;将存储过程或函数从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **O/R 设计器** 上，以创建 <xref:System.Data.Linq.DataContext> 方法并填充 **方法** 窗格。 有关详细信息，请参阅 [如何：创建可映射到存储过程和函数的 DataContext 方法 (O/R 设计器) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)。
+<xref:System.Data.Linq.DataContext>映射到存储过程和函数的方法将显示在 **O/R 设计器** 的 "**方法**" 窗格中。 “方法”窗格位于“实体”窗格（主设计图面）的旁边。 " **方法** " 窗格列出了 <xref:System.Data.Linq.DataContext> 通过使用 **O/R 设计器** 创建的所有方法。 默认情况下， **方法** 窗格为空;将存储过程或函数从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **O/R 设计器** 上，以创建 <xref:System.Data.Linq.DataContext> 方法并填充 **方法** 窗格。 有关详细信息，请参阅 [如何：创建可映射到存储过程和函数的 DataContext 方法 (O/R 设计器) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)。
 
 > [!NOTE]
-> 打开并关闭方法窗格，方法是右键单击 **O/R 设计器** ，然后单击 **"隐藏方法窗格** " 或 " **显示方法窗格** "，或使用键盘快捷方式 **CTRL** + **1** 。
+> 打开并关闭方法窗格，方法是右键单击 **O/R 设计器**，然后单击 **"隐藏方法窗格**" 或 "**显示方法窗格**"，或使用键盘快捷方式 **CTRL** + **1**。
 
 ## <a name="two-types-of-datacontext-methods"></a>DataContext 方法的两种类型
 

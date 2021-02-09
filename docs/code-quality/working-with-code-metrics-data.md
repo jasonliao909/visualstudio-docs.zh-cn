@@ -12,15 +12,15 @@ helpviewer_keywords:
 - results window, code metrics
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d29109811c3dd5f354b510d046b33b0ba31d60e5
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859562"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用 "代码度量结果" 窗口
 
@@ -32,9 +32,9 @@ ms.locfileid: "94436805"
 
 您可以使用以下菜单序列之一显示 "代码度量结果" 窗口：
 
-- 在 " **分析** " 菜单上，选择 " **Windows**  >  **代码度量值结果** "。
+- 在 "**分析**" 菜单上，选择 " **Windows**  >  **代码度量值结果**"。
 
-- 在 " **视图** " 菜单上，选择 " **其他 Windows**  >  **代码度量值结果** "。
+- 在 "**视图**" 菜单上，选择 "**其他 Windows**  >  **代码度量值结果**"。
 
 " **代码度量值" 结果** 窗口将打开，即使它不包含任何结果。
 
@@ -66,9 +66,9 @@ ms.locfileid: "94436805"
 
 ### <a name="add-or-remove-a-column"></a>添加或删除列
 
-1. 单击 " **添加/删除列** " 按钮，或右键单击任意列标题，然后单击 " **添加/删除列** "。
+1. 单击 " **添加/删除列** " 按钮，或右键单击任意列标题，然后单击 " **添加/删除列**"。
 
-1. 在 " **添加/删除列** " 对话框中，选中或清除要添加或删除的列的复选框，然后选择 **"确定"** 。
+1. 在 " **添加/删除列** " 对话框中，选中或清除要添加或删除的列的复选框，然后选择 **"确定"**。
 
 ### <a name="rearrange-columns"></a>重新排列列
 
@@ -76,7 +76,7 @@ ms.locfileid: "94436805"
 
 1. 在 " **添加/删除列** " 对话框中，选择要移动的列，然后选择向上箭头或向下箭头。
 
-1. 将列定位到所需位置后，选择 **"确定"** 。
+1. 将列定位到所需位置后，选择 **"确定"**。
 
 ## <a name="copy-data-to-the-clipboard-or-excel"></a>将数据复制到剪贴板或 Excel
 
@@ -84,7 +84,7 @@ ms.locfileid: "94436805"
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>基于代码度量结果创建工作项
 
-你可以创建基于 " **代码度量结果** " 窗口中的结果的 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作项。 创建工作项后，Visual Studio 会自动在 " **历史记录** " 选项卡下的 " **标题** " 字段和代码度量数据中输入一个标题。
+你可以创建基于 "**代码度量结果**" 窗口中的结果的 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作项。 创建工作项后，Visual Studio 会自动在 "**历史记录**" 选项卡下的 "**标题**" 字段和代码度量数据中输入一个标题。
 
 有关 Azure Boards 工作项的详细信息，请参阅 [工作项](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
 
@@ -92,7 +92,7 @@ ms.locfileid: "94436805"
 
 1. 右键单击结果。
 
-2. 指向 " **创建工作项** "，然后单击要创建的工作项类型 ( **Bug** 、 **任务** 等) 。
+2. 指向 " **创建工作项**"，然后单击要创建的工作项类型 (**Bug**、 **任务** 等) 。
 
 3. 填写所有必填字段，完成工作项窗体。
 

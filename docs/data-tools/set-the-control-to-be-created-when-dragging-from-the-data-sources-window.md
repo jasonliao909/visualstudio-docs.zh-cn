@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 20597ff8-0c98-43ec-8fb1-05376804ba48
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8a81ecb35c37dbef6d48227c27ed877c64e6e26f
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6b4d1782a82a1eb2147d540b1799f5152c4f2308
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434462"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858431"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 
@@ -39,15 +39,15 @@ ms.locfileid: "94434462"
 2. 在 " **数据源** " 窗口中，选择表示要设置的数据表或对象的项。
 
    > [!TIP]
-   > 如果 " **数据源** " 窗口未打开，可以通过选择 " **查看**  >  **其他 Windows**  >  **数据源** " 来打开它。
+   > 如果 "**数据源**" 窗口未打开，可以通过选择 "**查看**  >  **其他 Windows**  >  **数据源**" 来打开它。
 
 3. 单击该项的下拉菜单，然后在菜单中单击以下项之一：
 
-    - 若要在单独的控件中显示每个数据字段，请单击 " **详细信息** "。 将数据项拖到设计器中时，此操作将为父数据表或对象的每个列或属性以及每个控件的标签创建一个不同的数据绑定控件。
+    - 若要在单独的控件中显示每个数据字段，请单击 " **详细信息**"。 将数据项拖到设计器中时，此操作将为父数据表或对象的每个列或属性以及每个控件的标签创建一个不同的数据绑定控件。
 
     - 若要在单个控件中显示所有数据，请在列表中选择一个不同的控件，例如 WPF 应用程序中的 **DataGrid** 或 **列表** ，或 Windows 窗体应用程序中的 **DataGridView** 。
 
-    可用控件的列表取决于你已打开的设计器、你的项目面向的 .NET 版本，以及你是否已将支持数据绑定的自定义控件添加到 " **工具箱** "。 如果您要创建的控件不在可用控件列表中，则可以将该控件添加到该列表中。 有关详细信息，请参阅 [将自定义控件添加到 "数据源" 窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
+    可用控件的列表取决于你已打开的设计器、你的项目面向的 .NET 版本，以及你是否已将支持数据绑定的自定义控件添加到 " **工具箱**"。 如果您要创建的控件不在可用控件列表中，则可以将该控件添加到该列表中。 有关详细信息，请参阅 [将自定义控件添加到 "数据源" 窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
     若要了解如何创建自定义 Windows 窗体控件，该控件可以添加到 " **数据源** " 窗口中的数据表或对象的控件列表中，请参阅 [创建支持复杂数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。
 

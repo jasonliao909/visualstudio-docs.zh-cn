@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ADO.NET, data access
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: a5458ffca549026c99c8faedc8f47d3f3285a7ca
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: b5e3d8b8cf0b2c74a5b5a862539bbf3b201b4ffd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859432"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中处理数据
 
@@ -72,13 +72,13 @@ ms.locfileid: "94518734"
 
 ::: moniker range="vs-2017"
 
-许多数据库供应商和第三方支持通过 NuGet 包与 Visual Studio 集成。 你可以在 nuget.org 上浏览产品或通过 Visual Studio 中的 nuget 包管理器 ( **工具** "  >  **nuget 包管理器** "  >  **管理解决方案) 的 nuget 包** 。 其他数据库产品与 Visual Studio 集成以作为扩展。 可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品/服务，或者导航到 " **工具** "  >  " **扩展和更新** "，然后在对话框的左窗格中选择 " **联机** "。 有关详细信息，请参阅 [Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
+许多数据库供应商和第三方支持通过 NuGet 包与 Visual Studio 集成。 你可以在 nuget.org 上浏览产品或通过 Visual Studio 中的 nuget 包管理器 (**工具**"  >  **nuget 包管理器**"  >  **管理解决方案) 的 nuget 包**。 其他数据库产品与 Visual Studio 集成以作为扩展。 可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品/服务，或者导航到 "**工具**"  >  "**扩展和更新**"，然后在对话框的左窗格中选择 "**联机**"。 有关详细信息，请参阅 [Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-许多数据库供应商和第三方支持通过 NuGet 包与 Visual Studio 集成。 你可以在 nuget.org 上浏览产品或通过 Visual Studio 中的 nuget 包管理器 ( **工具** "  >  **nuget 包管理器** "  >  **管理解决方案) 的 nuget 包** 。 其他数据库产品与 Visual Studio 集成以作为扩展。 你可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品，或者导航到 " **扩展** " "  >  **管理扩展** "，然后在对话框的左窗格中选择 " **联机** "。 有关详细信息，请参阅 [Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
+许多数据库供应商和第三方支持通过 NuGet 包与 Visual Studio 集成。 你可以在 nuget.org 上浏览产品或通过 Visual Studio 中的 nuget 包管理器 (**工具**"  >  **nuget 包管理器**"  >  **管理解决方案) 的 nuget 包**。 其他数据库产品与 Visual Studio 集成以作为扩展。 你可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)中浏览这些产品，或者导航到 "**扩展**" "  >  **管理扩展**"，然后在对话框的左窗格中选择 "**联机**"。 有关详细信息，请参阅 [Visual Studio 的兼容数据库系统](../data-tools/installing-database-systems-tools-and-samples.md)。
 
 ::: moniker-end
 
@@ -151,7 +151,7 @@ ms.locfileid: "94518734"
 
 [ADO.NET 实体框架](/ef/ef6/) &mdash;介绍如何创建允许开发人员针对概念模型而不是直接针对关系数据库进行编程的数据应用程序。
 
-[WCF 数据服务 4.5](/dotnet/framework/data/wcf/index) &mdash;描述如何使用 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 在实现[Open Data Protocol (OData) ](https://www.odata.org/)的 web 或 intranet 上部署数据服务。
+[WCF Data Services 4.5](/dotnet/framework/data/wcf/index) &mdash;描述如何使用 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 在实现[Open Data Protocol (OData) ](https://www.odata.org/)的 web 或 intranet 上部署数据服务。
 
 [Office 解决方案](../vsto/data-in-office-solutions.md) &mdash; 中的数据包含指向一些主题的链接，这些主题说明了如何在 Office 解决方案中使用数据。 这包括有关面向架构的编程、数据缓存和服务器端数据访问的信息。
 

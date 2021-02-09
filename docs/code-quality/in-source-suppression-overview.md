@@ -9,19 +9,19 @@ helpviewer_keywords:
 - code analysis, source suppression
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: b7a0820404047d123350a27950c5aee254af306f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: c61803c21832367ede01817029b8d0318ac741a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94348692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859900"
 ---
 # <a name="suppress-code-analysis-violations"></a>禁止显示代码分析违规情况
 
@@ -37,7 +37,7 @@ ms.locfileid: "94348692"
 ::: moniker range="vs-2017"
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 " **分析** " "  >  **运行代码分析" 并取消 "活动问题** " 来取消所有这些警告。
+> 如果将项目迁移到 Visual Studio 2017，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 "**分析**" "  >  **运行代码分析" 并取消 "活动问题**" 来取消所有这些警告。
 >
 > ![在 Visual Studio 中运行代码分析并取消问题](media/suppress-active-issues.png)
 
@@ -46,13 +46,13 @@ ms.locfileid: "94348692"
 ::: moniker range=">=vs-2019"
 
 > [!NOTE]
-> 如果将项目迁移到 Visual Studio 2019，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 " **分析**  >  **生成并取消活动问题** " 来禁止显示这些警告。
+> 如果将项目迁移到 Visual Studio 2019，可能会突然遇到大量代码分析警告。 如果尚未准备好修复警告，则可以通过选择 "**分析**  >  **生成并取消活动问题**" 来禁止显示这些警告。
 
 ::: moniker-end
 
 ## <a name="suppressmessage-attribute"></a>SuppressMessage 特性
 
-如果从 **错误列表** 中的 "代码分析" 警告的上下文或右键单击菜单中选择 " **隐藏** "，则 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 会在代码或项目的全局禁止显示文件中添加特性。
+如果从 **错误列表** 中的 "代码分析" 警告的上下文或右键单击菜单中选择 "**隐藏**"，则 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 会在代码或项目的全局禁止显示文件中添加特性。
 
 该 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 属性具有以下格式：
 
@@ -100,11 +100,11 @@ CA_SUPPRESS_MESSAGE("Rule Category", "Rule Id", Justification = "Justification",
 
 代码分析警告会在属性应用到的级别上取消 <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute> 。 例如，可以将属性应用于程序集、模块、类型、成员或参数级别。 这样做的目的是将抑制信息紧密地耦合到发生冲突的代码中。
 
-禁止显示的一般形式包括规则类别和规则标识符，其中包含规则名称的可选可读表示形式。 例如：
+禁止显示的一般形式包括规则类别和规则标识符，其中包含规则名称的可选可读表示形式。 例如： 。
 
 `[SuppressMessage("Microsoft.Design", "CA1039:ListsAreStrongTyped")]`
 
-如果由于最大程度地减少了源中禁止显示元数据的性能原因，则可以省略规则名称。 规则类别及其规则 ID 共同构成了一个足够唯一的规则标识符。 例如：
+如果由于最大程度地减少了源中禁止显示元数据的性能原因，则可以省略规则名称。 规则类别及其规则 ID 共同构成了一个足够唯一的规则标识符。 例如： 。
 
 `[SuppressMessage("Microsoft.Design", "CA1039")]`
 
@@ -171,7 +171,7 @@ public class Animal
 
 ### <a name="global-suppression-file"></a>全局禁止显示文件
 
-全局禁止显示文件维护全局级禁止显示或未指定目标的禁止显示的禁止显示。 例如，程序集级别的冲突的禁止显示存储在此文件中。 此外，某些 ASP.NET 禁止显示文件存储在此文件中，因为项目级设置不适用于窗体的代码。 第一次在 " **错误列表** " 窗口中的 " **禁止显示** " 命令的 " **项目禁止显示文件** " 选项中，会创建全局禁止显示文件并将其添加到项目。
+全局禁止显示文件维护全局级禁止显示或未指定目标的禁止显示的禁止显示。 例如，程序集级别的冲突的禁止显示存储在此文件中。 此外，某些 ASP.NET 禁止显示文件存储在此文件中，因为项目级设置不适用于窗体的代码。 第一次在 "**错误列表**" 窗口中的 "**禁止显示**" 命令的 "**项目禁止显示文件**" 选项中，会创建全局禁止显示文件并将其添加到项目。
 
 ### <a name="module-suppression-scope"></a>模块禁止显示范围
 
@@ -192,7 +192,7 @@ public class Animal
 > [!NOTE]
 > `GeneratedCodeAttribute`当应用于整个程序集或单个参数时，代码分析将忽略。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.Diagnostics.CodeAnalysis.SuppressMessageAttribute.Scope>
 - <xref:System.Diagnostics.CodeAnalysis>

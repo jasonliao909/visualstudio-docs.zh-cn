@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 5d79b2081e2d30d77ae3507884b44421f0f14bae
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434566"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858444"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 
@@ -31,7 +31,7 @@ ms.locfileid: "94434566"
 
 在本演练中，你将学会如何执行以下任务：
 
-- 创建新的 **Windows 窗体应用程序** 。
+- 创建新的 **Windows 窗体应用程序**。
 
 - 使用 " [数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)" 创建和配置数据集。
 
@@ -49,7 +49,7 @@ ms.locfileid: "94434566"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -61,15 +61,15 @@ ms.locfileid: "94434566"
 
 ## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-第一步是创建 **Windows 窗体应用程序** 。
+第一步是创建 **Windows 窗体应用程序**。
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **TableAdapterDbDirectMethodsWalkthrough** ，然后选择 **"确定"** 。
+4. 将项目命名为 **TableAdapterDbDirectMethodsWalkthrough**，然后选择 **"确定"**。
 
      创建“TableAdapterDbDirectMethodsWalkthrough”项目并将其添加到“解决方案资源管理器”中。
 
@@ -85,23 +85,23 @@ ms.locfileid: "94434566"
 
 2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库** "，然后选择 " **下一步** "。
+3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库**"，然后选择 " **下一步**"。
 
 4. 在 " **选择你的数据连接** " 屏幕上，执行以下操作之一：
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         - 或 -
+         -或-
 
     - 选择“新建连接”以启动“添加/修改连接”对话框。
 
-5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步** "。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步**"。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步**"。
 
 7. 在 " **选择数据库对象** " 屏幕上，展开 " **表** " 节点。
 
-8. 选择 `Region` 该表，然后选择 " **完成** "。
+8. 选择 `Region` 该表，然后选择 " **完成**"。
 
      将“NorthwindDataSet”添加到项目后，“数据源”窗口中即会显示 `Region` 表。
 
@@ -121,7 +121,7 @@ ms.locfileid: "94434566"
 
     |“属性”|文本|
     |----------|----------|
-    |`InsertButton`|插入 |
+    |`InsertButton`|**插入**|
     |`UpdateButton`|**更新**|
     |`DeleteButton`|**删除**|
 
@@ -152,7 +152,7 @@ ms.locfileid: "94434566"
      [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
      [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-application"></a>运行应用程序
 
 - 选择 **F5** 以运行应用程序。
 

@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e462281686236f809fbd88588df5ad8fd832dbde
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: a149511b447f1f21d180eaf526ebc3d991c95997
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435542"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859939"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：取消生成的代码的代码分析警告
 
@@ -28,7 +28,7 @@ ms.locfileid: "94435542"
 
 ### <a name="to-suppress-warnings-for-generated-code-in-a-project"></a>禁止显示项目中生成的代码的警告
 
-1. 右键单击 " **解决方案资源管理器** 中的项目，然后单击" **属性** "。
+1. 右键单击 " **解决方案资源管理器** 中的项目，然后单击" **属性**"。
 
 2. 选择 " **代码分析** " 选项卡。
 

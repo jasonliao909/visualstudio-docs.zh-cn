@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1b48c2e8b557a47c1ed795b6f9d3c3ced6247a43
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859341"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将控件绑定到数据
 
@@ -38,7 +38,7 @@ ms.locfileid: "94518617"
 | 实体数据模型 | 是<sup>1</sup> | 是 | 是 |
 | LINQ to SQL 类 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
 | 服务（包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服务和 Web 服务） | 是 | 是 | 是 |
-| Object | 是 | 是 | 是 |
+| 对象 | 是 | 是 | 是 |
 | SharePoint | 是 | 是 | 是 |
 
 1. 使用 **实体数据模型** 向导生成模型，然后将这些对象拖到设计器中。
@@ -47,7 +47,7 @@ ms.locfileid: "94518617"
 
 ## <a name="data-sources-window"></a>“数据源”窗口
 
-数据源以“数据源”窗口中的项的形式提供给项目。 当窗体设计图面是您的项目中的活动窗口时，或者您 (可以通过选择 " **查看**  >  **其他 Windows**  >  **数据源** ") 打开项目时，将显示此窗口。 您可以从此窗口拖动项来创建绑定到基础数据的控件，还可以通过右键单击来配置数据源。
+数据源以“数据源”窗口中的项的形式提供给项目。 当窗体设计图面是您的项目中的活动窗口时，或者您 (可以通过选择 "**查看**  >  **其他 Windows**  >  **数据源**") 打开项目时，将显示此窗口。 您可以从此窗口拖动项来创建绑定到基础数据的控件，还可以通过右键单击来配置数据源。
 
 ![“数据源”窗口](../data-tools/media/raddata-data-sources-window.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "94518617"
 
 |任务|详细信息|
 |----------| - |
-|打开“数据源”窗口。|在编辑器中打开设计图面，然后选择 " **查看**  >  **数据源** "。|
+|打开“数据源”窗口。|在编辑器中打开设计图面，然后选择 "**查看**  >  **数据源**"。|
 |将数据源添加到项目中。|[添加新数据源](../data-tools/add-new-data-sources.md)|
 |设置在将项从“数据源”窗口拖到设计器时创建的控件。|[设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)|
 |修改与“数据源”窗口中的项关联的控件的列表。|[向“数据源”窗口添加自定义控件](../data-tools/add-custom-controls-to-the-data-sources-window.md)|

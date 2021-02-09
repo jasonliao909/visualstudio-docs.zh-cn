@@ -10,15 +10,15 @@ dev_langs:
 ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4f367cf799dd00b8b442870554e499e5405865cb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435099"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858808"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：向实体类添加验证
 验证实体类是指确认输入到数据对象中的值是否符合对象架构内的约束，以及是否符合为应用程序所建立的规则的过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。
@@ -35,7 +35,7 @@ ms.locfileid: "94435099"
 
 ### <a name="to-validate-data-during-a-columns-value-change"></a>在列值更改过程中验证数据
 
-1. 在 **O/R 设计器** 中打开或创建一个新的 LINQ to SQL 类文件 ( **.dbml** 文件) 。 （在“解决方案资源管理器”中双击“.dbml”文件。）
+1. 在 **O/R 设计器** 中打开或创建一个新的 LINQ to SQL 类文件 (**.dbml** 文件) 。 （在“解决方案资源管理器”中双击“.dbml”文件。）
 
 2. 在 O/R 设计器中，右键单击要为其添加验证的类，然后单击“查看代码”。
 
@@ -81,7 +81,7 @@ ms.locfileid: "94435099"
 
 ### <a name="to-validate-data-during-an-update-to-an-entity-class"></a>在实体类更新过程中验证数据
 
-1. 在 **O/R 设计器** 中打开或创建一个新的 LINQ to SQL 类文件 ( **.dbml** 文件) 。 （在“解决方案资源管理器”中双击“.dbml”文件。）
+1. 在 **O/R 设计器** 中打开或创建一个新的 LINQ to SQL 类文件 (**.dbml** 文件) 。 （在“解决方案资源管理器”中双击“.dbml”文件。）
 
 2. 右键单击 O/R 设计器上的空白区域，然后单击“查看代码”。
 
