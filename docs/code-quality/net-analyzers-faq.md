@@ -8,15 +8,15 @@ helpviewer_keywords:
 - code analysis FAQ
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d581ef60ebfe9ff5aeceae4c16ee4294eae5d850
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 951e9b951f1d90077fe29506e9c288fb19f2d5ff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96112160"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867758"
 ---
 # <a name="frequently-asked-questions-about-legacy-fxcop-and-net-analyzers"></a>有关旧版 FxCop 和 .NET 分析器的常见问题
 
@@ -38,7 +38,7 @@ FxCop 分析器和 .NET 分析器都是指 FxCop CA 规则 ) 分析器实现的 
 
 ## <a name="does-the-runcodeanalysis-msbuild-project-property-run-analyzers"></a>RunCodeAnalysis msbuild 项目属性是否运行分析器？
 
-不是。 项目文件（例如 .csproj）中的 RunCodeAnalysis 属性仅用于执行旧版 FxCop。 它将运行调用 FxCopCmd.exe 的生成后 msbuild 任务。
+否。 项目文件（例如 .csproj）中的 RunCodeAnalysis 属性仅用于执行旧版 FxCop。 它将运行调用 FxCopCmd.exe 的生成后 msbuild 任务。
 
 ## <a name="so-how-do-i-run-net-analyzers-then"></a>那么，如何运行 .NET 分析器呢？
 
@@ -60,7 +60,7 @@ FxCop 分析器和 .NET 分析器都是指 FxCop CA 规则 ) 分析器实现的 
 
 如果你的项目使用 "生成" 选项将警告视为错误，则分析器警告可能会显示为错误。 若要防止代码分析警告被视为错误，请按照 [代码分析常见问题解答](../code-quality/analyzers-faq.md#treat-warnings-as-errors)中的步骤进行操作。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [.NET Compiler Platform 分析器概述](roslyn-analyzers-overview.md)
 - [迁移到 .NET 分析器](migrate-from-legacy-analysis-to-net-analyzers.md)

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 458ca77ebcd8017b9834a8925edec255ca04cc13
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869513"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 创建新的项目类型提供了为用户自定义的基础 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，对于所有自定义项，不需要创建新的项目类型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 以下准则可帮助您确定方案是否需要新的项目类型。
@@ -59,7 +59,7 @@ ms.locfileid: "97487824"
 ## <a name="create-a-project-subtype"></a>创建项目子类型
  您可以使用项目子类型扩展托管项目类型，而不必创建新的项目类型。 项目子类型使用 COM 聚合来扩展以 Microsoft 或编写的托管项目 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 。 使用 COM 聚合，你可以重复使用多个托管项目系统实现，并且仍可通过聚合和使用支持接口自定义特定方案。 有关项目子类型的详细信息，请参阅 [项目子类型](../../extensibility/internals/project-subtypes.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [文档窗口和编辑器](/previous-versions/bb165691(v=vs.100))
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

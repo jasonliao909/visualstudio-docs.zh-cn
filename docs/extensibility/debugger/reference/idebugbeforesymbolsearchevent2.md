@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 679fd7b1-765a-41a8-a046-63240c09a499
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d6f3f78e165ba2f4453131b7b459e3061243ff6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eb185e098d76184d3a74df380eb8a5e66bc699df
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80736109"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869955"
 ---
 # <a name="idebugbeforesymbolsearchevent2"></a>IDebugBeforeSymbolSearchEvent2
 调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) ，以便在符号加载过程中设置状态栏消息。
@@ -27,7 +27,7 @@ IDebugBeforeSymbolSearchEvent2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
- 当在符号加载过程中必须设置状态栏消息时，将实现此接口。 此接口仅由使用或是脚本解释器一部分的调试引擎实现。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须在与此接口相同的对象上实现 (SDM 使用**QueryInterface**访问**IDebugEvent2**接口) 。
+ 当在符号加载过程中必须设置状态栏消息时，将实现此接口。 此接口仅由使用或是脚本解释器一部分的调试引擎实现。 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口必须在与此接口相同的对象上实现 (SDM 使用 **QueryInterface** 访问 **IDebugEvent2** 接口) 。
 
 ## <a name="notes-for-callers"></a>调用方说明
  如果在符号加载过程中必须设置状态栏消息，则 DE 将创建并发送此事件对象。 使用 SDM 在附加到正在调试的程序时提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回调函数发送事件。

@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 420d46ea-2470-4da9-ad8e-95165588a920
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51348e8304b67314ffd19d0aec15d43d904ee651
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: fa138923f8d23c59613ce1bbc51460fd3c8c9acb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671977"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870332"
 ---
 # <a name="createinplace-element-visual-studio-templates"></a> (Visual Studio 模板的 CreateInPlace 元素) 
 指定是在指定位置创建项目并执行参数替换，还是在临时位置中执行参数替换，并将项目保存到指定位置。
@@ -55,7 +55,7 @@ ms.locfileid: "94671977"
 
  文本必须为 `true` 或 `false`。 如果为 `true` ，则创建项目并在 " **新建项目** " 对话框中指定的位置执行参数替换。 如果为 `false` ，则在临时位置执行参数替换，然后将该项目复制到指定位置。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `CreateInPlace` 是可选元素。 默认值为 `true`。
 
 ## <a name="example"></a>示例

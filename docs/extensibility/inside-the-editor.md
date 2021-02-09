@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 822cbb8d-7ab4-40ee-bd12-44016ebcce81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14193c0806c4b45f721ee97b101969de8437448d
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: c0d9d20000781980535259c0a739e03a47ae53e1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487525"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869539"
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 
@@ -320,7 +320,7 @@ IntelliSense 支持语句完成、签名帮助 (也称为参数信息) 、快速
 
 语句完成为方法名称、XML 元素以及其他编码或标记元素提供可能的完成的弹出列表。 通常，用户笔势调用完成会话。 该会话将显示可能的完成的列表，用户可以选择一个列表或取消列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> 。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算会话的 <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 完成项的。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)
 - [编辑器导入](../extensibility/editor-imports.md)
