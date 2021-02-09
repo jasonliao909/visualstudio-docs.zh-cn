@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 6981bf03-66ef-4bf9-87ea-f6c9624486cb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1be3d839cabe3fce07cdd42720306bdac47282f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5939f0ffd3a975c5fd3286045573fbf0da8006e3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729001"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915430"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 此方法获取字段的调试地址。
@@ -28,7 +28,7 @@ ms.locfileid: "80729001"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetAddress( 
+HRESULT GetAddress( 
    IDebugAddress** ppAddress
 );
 ```
@@ -39,7 +39,7 @@ int GetAddress(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppAddress`\
 弄将地址作为 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 对象返回。
 

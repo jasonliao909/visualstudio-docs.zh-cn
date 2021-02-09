@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 159ccb0b-f5d6-4912-b88b-e9612924ed5e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 255022c2722104d3790d1c417eee644730ddc1e8
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 6a2798f54bc89b9dddea3e3727084bae0086fab0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875071"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915248"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>旧版语言服务中的快速信息
 IntelliSense "快速信息" 显示有关源中的标识符的信息。当用户将插入符号置于标识符中，并从 **IntelliSense** 菜单选择 "**快速信息**" 或将鼠标光标停留在标识符上时，将显示有关源中的标识符的信息。 这会导致出现一个工具提示，其中包含有关标识符的信息。 此信息通常由标识符类型组成。 当调试引擎处于活动状态时，此信息可能包含当前值。 调试引擎提供表达式值，而语言服务仅处理标识符。
