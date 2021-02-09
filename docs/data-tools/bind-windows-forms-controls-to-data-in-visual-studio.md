@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 243338ef-41af-4cc5-aff7-1e830236f0ec
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee50a01093ff83faba17ec6fd59f4ddc1101012a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 3da0c4e9835c9b6f6498aa28b82f2e631d1717ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518643"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867407"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 Windows 窗体控件绑定到数据
 
@@ -33,7 +33,7 @@ ms.locfileid: "94518643"
 ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 如果 " **数据源** " 窗口不可见，可以通过选择 " **查看**  >  **其他 Windows**  >  **数据源** " 或按 **Shift** + **Alt** + **D** 打开它。 若要查看 " **数据源** " 窗口，必须在 Visual Studio 中打开一个项目。
+> 如果 "**数据源**" 窗口不可见，可以通过选择 "**查看**  >  **其他 Windows**  >  **数据源**" 或按 **Shift** + **Alt** + **D** 打开它。 若要查看 " **数据源** " 窗口，必须在 Visual Studio 中打开一个项目。
 
 在拖动项之前，您可以设置要绑定到的控件的类型。 显示不同的值，具体取决于您选择的是表本身还是单独的列。  还可以设置自定义值。 对于表， **详细信息** 意味着每个列绑定到一个单独的控件。
 
@@ -76,7 +76,7 @@ ms.locfileid: "94518643"
 > [!IMPORTANT]
 > 请注意，在上图中，从 Customers 表的 Orders 属性中进行拖动，而不是从 Orders 表中进行拖动。 绑定到 `Customer.Orders` 属性后， **DataGridView** 中生成的导航命令会立即反映在详细信息控件中。 如果从 Orders 表中拖动，控件仍将绑定到数据集，但不会与 **DataGridView** 同步。
 
-下图显示了在 Customers 表中的 Orders 属性绑定到 " **数据源** " 窗口中的 " **详细信息** " 之后，添加到窗体中的默认数据绑定控件。
+下图显示了在 Customers 表中的 Orders 属性绑定到 "**数据源**" 窗口中的 "**详细信息**" 之后，添加到窗体中的默认数据绑定控件。
 
 ![绑定到详细信息的订单表](../data-tools/media/raddata-orders-table-bound-to-details.png)
 

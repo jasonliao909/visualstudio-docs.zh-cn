@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4368c9134539202b1bde2be7a2d8c39e5ebc3e74
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518517"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99867355"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -52,7 +52,7 @@ ms.locfileid: "94518517"
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 
-- [WCF 数据服务](/dotnet/framework/data/wcf/wcf-data-services-overview)。
+- [WCF Data Services](/dotnet/framework/data/wcf/wcf-data-services-overview)。
 
 - [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 中的数据模型。
 
@@ -62,7 +62,7 @@ ms.locfileid: "94518517"
 
 ## <a name="create-the-service-project"></a>创建服务项目
 
-1. 通过创建 c # 或 Visual Basic **ASP.NET Web 应用程序** 项目开始本演练。 将项目命名为 **AdventureWorksService** 。
+1. 通过创建 c # 或 Visual Basic **ASP.NET Web 应用程序** 项目开始本演练。 将项目命名为 **AdventureWorksService**。
 
 2. 在“解决方案资源管理器”中，右键单击“Default.aspx”，然后选择“删除”。 本演练不需要此文件。
 
@@ -70,11 +70,11 @@ ms.locfileid: "94518517"
 
 若要使用 WCF 数据服务向应用程序公开数据，您必须为该服务定义一个数据模型。 WCF 数据服务支持两种类型的数据模型：实体数据模型，以及通过使用公共语言运行时 (CLR) 实现接口的对象定义的自定义数据模型 <xref:System.Linq.IQueryable%601> 。 在本演练中，你将为该数据模型创建一个实体数据模型。
 
-1. 在 **“项目”** 菜单上，单击 **“添加新项”** 。
+1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
 2. 在“已安装的模板”列表中，单击“数据”，然后选择“ADO.NET 实体数据模型”项目项。
 
-3. 将名称更改为 `AdventureWorksModel.edmx` ，然后单击 " **添加** "。
+3. 将名称更改为 `AdventureWorksModel.edmx` ，然后单击 " **添加**"。
 
      “实体数据模型”向导随即打开。
 
@@ -90,7 +90,7 @@ ms.locfileid: "94518517"
 
 7. 在“选择数据库对象”页面上，展开“表”，然后选择“SalesOrderHeader”表。
 
-8. 单击“完成”。
+8. 单击“完成” 。
 
 ## <a name="create-the-service"></a>创建服务
 
@@ -100,7 +100,7 @@ ms.locfileid: "94518517"
 
 2. 在“已安装的模板”列表中，单击“Web”，然后选择“WCF Data Service”项目项。
 
-3. 在 " **名称** " 框中键入 `AdventureWorksService.svc` ，然后单击 " **添加** "。
+3. 在 " **名称** " 框中键入 `AdventureWorksService.svc` ，然后单击 " **添加**"。
 
      Visual Studio 将添加 `AdventureWorksService.svc` 到项目。
 
@@ -131,17 +131,17 @@ ms.locfileid: "94518517"
 
    Visual Studio 会将 `AdventureWorksSalesEditor` 项目添加到解决方案中。
 
-5. 在 **“数据”** 菜单上，单击 **“显示数据源”** 。
+5. 在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
    “数据源”窗口随即打开。
 
-6. 在 **“数据源”** 窗口中，单击 **“添加新数据源”** 。
+6. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
    " **数据源配置** 向导" 将打开。
 
 7. 在该向导的“选择数据源类型”页面上，选择“服务”，然后单击“下一步”。
 
-8. 在 **“添加服务引用”** 对话框中，单击 **“发现”** 。
+8. 在 **“添加服务引用”** 对话框中，单击 **“发现”**。
 
    Visual Studio 会在当前解决方案中搜索可用服务，并将添加 `AdventureWorksService.svc` 到 " **服务** " 框中的可用服务列表。
 
@@ -159,7 +159,7 @@ ms.locfileid: "94518517"
 
 通过在 WPF 设计器中修改 XAML，将多个按钮添加到该窗口中。 在本演练后面的部分中，你将添加可让用户通过使用这些按钮来查看和更新销售记录的代码。
 
-1. 在 **解决方案资源管理器** 中，双击 " **mainwindow.xaml** "。
+1. 在 **解决方案资源管理器** 中，双击 " **mainwindow.xaml**"。
 
    将在 WPF 设计器中打开相应的窗口。
 
@@ -219,7 +219,7 @@ ms.locfileid: "94518517"
 
 使用服务代理对象从服务中加载销售数据。 然后，将返回的数据分配给 <xref:System.Windows.Data.CollectionViewSource> WPF 窗口中的数据源。
 
-1. 在设计器创建`Window_Loaded`事件处理程序中，双击读取的文本： **MainWindow**
+1. 在设计器创建`Window_Loaded`事件处理程序中，双击读取的文本：**MainWindow**
 
 2. 将该事件处理程序替换为以下代码。 确保将此代码中的“localhost”地址替换为你的开发计算机上的本地主机地址。
 
@@ -265,15 +265,15 @@ ms.locfileid: "94518517"
 
 生成并运行应用程序，以验证你是否可以查看和更新客户记录：
 
-1. 在 " **生成** " 菜单上，单击 " **生成解决方案** "。 验证解决方案已生成且未发生错误。
+1. 在 " **生成** " 菜单上，单击 " **生成解决方案**"。 验证解决方案已生成且未发生错误。
 
-2. 按 **Ctrl** + **F5** 。
+2. 按 **Ctrl** + **F5**。
 
      Visual Studio 启动“AdventureWorksService”项目，但不对其进行调试。
 
 3. 在“解决方案资源管理器”中，右键单击“AdventureWorksSalesEditor”项目。
 
-4. 在右击菜单上 (上下文菜单 ") 上的" **调试** "下，单击" **启动新实例** "。
+4. 在右击菜单上 (上下文菜单 ") 上的" **调试**"下，单击" **启动新实例**"。
 
      将运行应用程序。 检查下列各项：
 
