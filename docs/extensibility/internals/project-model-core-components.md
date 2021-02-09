@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6aeb24b2aee5b0abb3e5d803004ba97725bb707
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896894"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表在项目模型上展开。 这些表显示了模型中标识的接口和服务的简短说明，以及与特定对象关联的接口和服务。 此外，这些表详细说明了在创建和维护项目时可以选择的其他接口，具体取决于特定的项目类型的要求。

@@ -10,21 +10,21 @@ helpviewer_keywords:
 ms.assetid: 049c68f4-a041-4f24-8575-4837e7f5cf3f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e444b73dce312625c7f86eda2930ba683e504f2
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 56854cbd5e81b913971c64540db8d7e732b622bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480481"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898339"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>源代码管理 Vspackage 入门
 
 源代码管理 VSPackage 是源代码管理插件的更高级的替代方法。 有关源代码管理插件的详细信息，请参阅 [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)。 源代码管理 VSPackage 可以完全控制源代码管理模型、功能和用户界面 (UI) ，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以 VSPackage 的形式集成到环境中。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 
 [确定是否实现源代码管理 VSPackage](../../extensibility/internals/determining-whether-to-implement-a-source-control-vspackage.md)
 

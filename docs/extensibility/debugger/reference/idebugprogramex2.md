@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 663359ed-635a-4539-addb-0cc52f19d1bd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8961ea105779674aab0b67c9ad6339ce1c282f9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f206de825d021d8daa2977a839f96fabd5e9db7f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722329"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898859"
 ---
 # <a name="idebugprogramex2"></a>IDebugProgramEx2
 此接口使会话调试管理器 (SDM) 附加到程序并获取与程序关联的程序节点。
@@ -32,7 +32,7 @@ IDebugProgramEx2 : IUnknown
  自定义端口提供程序在与 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口相同的对象上实现此接口，以便使 SDM 附加到某个程序，同时允许该端口供应商跟踪附加到该程序的所有会话。 自定义端口供应商可以在选择的情况下实现此接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
- SDM 调用接口[QueryInterface](/cpp/atl/queryinterface)上的 QueryInterface `IDebugProgram2` 以获取此接口以跟踪已附加到程序的会话。
+ SDM 调用接口[](/cpp/atl/queryinterface)上的 QueryInterface `IDebugProgram2` 以获取此接口以跟踪已附加到程序的会话。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IDebugProgramEx2` 。

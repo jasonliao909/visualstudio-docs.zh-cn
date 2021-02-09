@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fb3441dabba1ff13600a9e505eeaec5ae93acd8e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4139d3c254c6d824c28e7ceb7fd5fe29b47a3737
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99897305"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 如果需要，设置此属性的值并返回错误消息。
@@ -45,7 +45,7 @@ int SetValueAsStringWithError(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszValue`\
 中要设置的值。
 
@@ -65,7 +65,7 @@ int SetValueAsStringWithError(
 传入值可以是要计算的表达式。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的**CProperty**对象实现此方法。
+下面的示例演示如何为公开 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的 **CProperty** 对象实现此方法。
 
 ```cpp
 HRESULT CProperty::SetValueAsStringWithError(

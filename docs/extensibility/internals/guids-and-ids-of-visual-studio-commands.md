@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cabf5c9452cf0a6809673d488f9cf01252d7b0ef
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898269"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 Guid 和 Id
 Visual Studio 集成开发环境中包含的命令的 GUID 和 ID 值 (IDE) 在作为 Visual Studio SDK 的一部分安装的 .vsct 文件中进行定义。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -33,7 +33,7 @@ Visual Studio 集成开发环境中包含的命令的 GUID 和 ID 值 (IDE) 在�
 
 ### <a name="to-locate-a-command-definition"></a>查找命令定义
 
-1. 在 Visual Studio 中，打开 *<Visual STUDIO SDK 安装路径 \> \VisualStudioIntegration\Common\Inc \\* 文件夹： *SharedCmdDef，.vsct*， *ShellCmdDef*，.vsct，VsDbgCmdUsed，.vsct 中 *VsDbgCmdUsed.vsct* 的以下 *文件。*
+1. 在 Visual Studio 中，打开 *<Visual STUDIO SDK 安装路径 \> \VisualStudioIntegration\Common\Inc \\* 文件夹： *SharedCmdDef，.vsct*， *ShellCmdDef*，.vsct，VsDbgCmdUsed，.vsct 中的以下 *文件。*
 
     大多数 Visual Studio 命令是在 *SharedCmdDef. .vsct* 和 *ShellCmdDef* 中定义的。 *VsDbgCmdUsed* 定义了与调试器相关的命令，而 *Venusmenu* 定义了特定于 Web 开发的命令。
 
@@ -62,7 +62,7 @@ Visual Studio 集成开发环境中包含的命令的 GUID 和 ID 值 (IDE) 在�
 
      没有可靠的方法可对动态文本进行搜索。 相反，请通过咨询 [Visual studio 菜单的 guid 和 id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md) 和 [visual Studio 工具栏的 guid 和](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)id，并搜索该组的 id 来查找托管所需命令的组。 如果命令定义没有组作为其 [父元素](../../extensibility/parent-element.md)，则在用于设置命令父的元素) 中搜索 *.vsct* 和 *ShellCmdPlace* (或 *VsDbgCmdPlace* for 调试器命令 `<CommandPlacement>` 。 *\<Visual Studio SDK installation path\> VsDbgCmdPlace \\* 文件夹中 *SharedCmdPlace .vsct*、 *ShellCmdPlace* 和 .vsct *。*
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [.VSCT XML 架构引用](../../extensibility/vsct-xml-schema-reference.md)

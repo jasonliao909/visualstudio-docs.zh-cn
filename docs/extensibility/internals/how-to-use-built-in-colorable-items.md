@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5e5f3436-6bad-4fd2-8823-6a30353ba648
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 926cb77fe9477b7dc78c35c2ab58f9b73530e4fa
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: 64738bfe67ccc53970087100cd6c37a9881e6b2a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99898314"
 ---
 # <a name="how-to-use-built-in-colorable-items"></a>如何：使用内置可着色项
 使用内置的可着色项之前，必须首先向集成开发环境发出信号， (IDE) 不提供自己的自定义可着色项，在本例中为 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 对象。 为此，可设置语言服务的注册表项。
@@ -34,7 +34,7 @@ ms.locfileid: "96761005"
    > [!NOTE]
    > 如果提供自定义可着色项，请不要设置此注册表项。 有关详细信息，请参阅 [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [自定义编辑器中的语法着色](../../extensibility/syntax-coloring-in-custom-editors.md)
 - [旧版语言服务中的语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)
 - [实现语法着色](../../extensibility/internals/implementing-syntax-coloring.md)
