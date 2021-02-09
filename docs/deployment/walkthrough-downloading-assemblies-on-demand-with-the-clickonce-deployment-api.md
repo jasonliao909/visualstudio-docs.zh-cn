@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: d20e2789-8621-4806-b5b7-841122da1456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb74d7fd5ad388b9b3dc217bae8782b24517c13b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349239"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917337"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：通过 ClickOnce 部署 API 按需下载程序集
 默认情况下，应用程序中包含的所有程序集 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都会在应用程序首次运行时下载。 但是，你的应用程序的某些部分可能由一小部分用户使用。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时 (CLR) 需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -86,7 +86,7 @@ ms.locfileid: "94349239"
 
 11. 设置 `PublicKeyToken` 为之前检索到的值。
 
-12. 将该文件另存 *Form1.cs* 为 Form1.cs *或 node.js。*
+12. 将该文件另存为 Form1.cs *或 node.js。*
 
 13. 使用以下命令将其编译为可执行文件。
 
@@ -106,7 +106,7 @@ ms.locfileid: "94349239"
 
     - 命名应用程序清单 `ClickOnceOnDemand` 。
 
-    - 在 " **文件** " 页上的 " *ClickOnceLibrary.dll* " 行中，将 " **文件类型** " 列设置为 " **无** "。
+    - 在 " **文件** " 页上的 " *ClickOnceLibrary.dll* " 行中，将 " **文件类型** " 列设置为 " **无**"。
 
     - 在 " **文件** " 页上的 " *ClickOnceLibrary.dll* " 行中，在 `ClickOnceLibrary.dll` " **组** " 列中键入。
 
@@ -128,5 +128,5 @@ ms.locfileid: "94349239"
 
 3. 在主窗体显示时按 <xref:System.Windows.Forms.Button>。 应在消息框窗口中看到一个显示为“Hello, World!”的字符串。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:System.Deployment.Application.ApplicationDeployment>

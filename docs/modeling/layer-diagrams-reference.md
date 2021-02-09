@@ -19,15 +19,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 265bb31dd95aa3a84bdb497a3306278acfd8838e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f173e27588538c806d075e0a6b010fbd848f2690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360567"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917008"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图：参考
 
@@ -96,8 +96,8 @@ ms.locfileid: "97360567"
 |**类别**|项目种类，例如类、命名空间、源文件等|
 |**层**|链接到该项目的层|
 |**支持验证**|如果 **为 True**，则层验证过程可以验证项目是否符合与此元素的依赖关系。<br /><br /> 如果 **为 False**，则链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅 [依赖关系图：准则](../modeling/layer-diagrams-guidelines.md)。|
-|**标识符**|对链接的项目的引用|
+|标识符|对链接的项目的引用|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

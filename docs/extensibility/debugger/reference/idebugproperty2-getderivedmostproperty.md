@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc86b461-62d1-4340-8209-c65037fd8b02
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2086aded4361049d722ec36ba1d470ed8f7ac6e5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f91b00d2f448aea2f187e37813782ce568ad859
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721501"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99916046"
 ---
 # <a name="idebugproperty2getderivedmostproperty"></a>IDebugProperty2::GetDerivedMostProperty
 获取属性的派生程度最大的属性。
@@ -28,18 +28,18 @@ ms.locfileid: "80721501"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetDerivedMostProperty ( 
+HRESULT GetDerivedMostProperty ( 
    IDebugProperty2** ppDerivedMost
 );
 ```
 
 ```csharp
-int GetDerivedMostProperty ( 
+int GetDerivedMostProperty ( 
    out IDebugProperty2 ppDerivedMost
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppDerivedMost`\
 弄返回表示最常派生的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 

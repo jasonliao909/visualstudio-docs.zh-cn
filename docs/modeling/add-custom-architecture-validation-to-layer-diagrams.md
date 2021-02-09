@@ -8,16 +8,16 @@ helpviewer_keywords:
 - dependency diagrams, adding custom validation
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: ea168744427469d1d08dd78bc1a23d79d577604f
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: bd5f17e7e8c12da1d4e01738c26650a3df4760fa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100521"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919323"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
@@ -62,13 +62,13 @@ ms.locfileid: "90100521"
 
 ::: moniker range="vs-2017"
 
-4. 若要在 Visual Studio 的主实例中或另一台计算机上安装扩展，请在*bin*目录中找到 *.vsix*文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请在 "**工具**" 菜单上选择 "**扩展和更新**"。
+4. 若要在 Visual Studio 的主实例中或另一台计算机上安装扩展，请在 *bin* 目录中找到 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请在 "**工具**" 菜单上选择 "**扩展和更新**"。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 若要在 Visual Studio 的主实例中或另一台计算机上安装扩展，请在*bin*目录中找到 *.vsix*文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 "**扩展**" 菜单上的 "**管理扩展**"。
+4. 若要在 Visual Studio 的主实例中或另一台计算机上安装扩展，请在 *bin* 目录中找到 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 "**扩展**" 菜单上的 "**管理扩展**"。
 
 ::: moniker-end
 
@@ -80,15 +80,15 @@ ms.locfileid: "90100521"
 
 1. 创建新的“类库”项目。 此项目将包含层验证类。
 
-2. 在解决方案中查找或创建 **VSIX 项目** 。 VSIX 项目包含名为 **source.extension.vsixmanifest**的文件。
+2. 在解决方案中查找或创建 **VSIX 项目** 。 VSIX 项目包含名为 **source.extension.vsixmanifest** 的文件。
 
-3. 在 **解决方案资源管理器**中，在 VSIX 项目的右键单击菜单上，选择 " **设为启动项目**"。
+3. 在 **解决方案资源管理器** 中，在 VSIX 项目的右键单击菜单上，选择 " **设为启动项目**"。
 
-4. 在 **source.extension.vsixmanifest**中的“资产” **** 下，将层验证项目添加为 MEF 组件：
+4. 在 **source.extension.vsixmanifest** 中的“资产” 下，将层验证项目添加为 MEF 组件：
 
-    1. 选择“新建”。****
+    1. 选择“新建”。
 
-    2. 在“添加新资产” **** 对话框中，进行如下设置：
+    2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型**  = **VisualStudio. microsoft.visualstudio.mefcomponent**
 
@@ -98,9 +98,9 @@ ms.locfileid: "90100521"
 
 5. 还必须将其添加为层验证：
 
-    1. 选择“新建”。****
+    1. 选择“新建”。
 
-    2. 在“添加新资产” **** 对话框中，进行如下设置：
+    2. 在“添加新资产”  对话框中，进行如下设置：
 
          **类型**  = **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**。 这并不是下拉列表中的选项。 必须从键盘输入。
 
@@ -126,7 +126,7 @@ ms.locfileid: "90100521"
     > [!NOTE]
     > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
-9. 若要在 Visual Studio 的主实例中或另一台计算机上安装 VSIX，请在 VSIX 项目的**bin**目录中找到 **.vsix**文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
+9. 若要在 Visual Studio 的主实例中或另一台计算机上安装 VSIX，请在 VSIX 项目的 **bin** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
 ## <a name="programming-validation"></a><a name="programming"></a> 验证编程
 
@@ -156,7 +156,7 @@ ms.locfileid: "90100521"
   > [!WARNING]
   > 不要使用 `LogValidationError`的可选参数。
 
-用户调用“验证体系结构” **** 菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
+用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
 
 - 表示为图形中的节点和链接的 Visual Studio 解决方案的层模型。
 
@@ -213,7 +213,7 @@ ms.locfileid: "90100521"
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案
 
-每当你更新验证代码时，请先在实验解决方案中的“生成” **** 菜单上使用“清理解决方案” **** 命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果尚未更新测试依赖关系图或其代码，则不会执行验证方法。
+每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果尚未更新测试依赖关系图或其代码，则不会执行验证方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器
 
@@ -221,9 +221,9 @@ ms.locfileid: "90100521"
 
 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当 "调试" 对话框出现时，选择 Visual Studio 的主实例。
 
-或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 当消息框出现时，请前往 Visual Studio 的主实例，并在 " **调试** " 菜单上单击 " **附加到进程**"。 选择名为 **Graphcmd.exe**的进程。
+或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 当消息框出现时，请前往 Visual Studio 的主实例，并在 " **调试** " 菜单上单击 " **附加到进程**"。 选择名为 **Graphcmd.exe** 的进程。
 
-始终通过按 Ctrl + F5（“开始执行(不调试)”****）启动实验实例。
+始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
 
 ### <a name="deploying-a-validation-extension"></a>部署验证扩展
 

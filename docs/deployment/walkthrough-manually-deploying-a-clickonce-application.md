@@ -19,23 +19,23 @@ helpviewer_keywords:
 ms.assetid: ccee6551-a1b9-4ca2-8845-9c1cf4ac2560
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9767820889548f134c018df28ee3180088f5dc01
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: d1555a7ef1f942e4be0b7cf929e0e1730f99d1d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349243"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917275"
 ---
 # <a name="walkthrough-manually-deploy-a-clickonce-application"></a>演练：手动部署 ClickOnce 应用程序
-如果无法使用 Visual Studio 来部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，或者需要使用高级部署功能（如受信任的应用程序部署），则应使用 *Mage.exe* 命令行工具来创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单。 本演练介绍如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用MageUI.exe *) 清单生成和编辑工具* 的命令行版本 ( *Mage.exe* ) 或图形 (版本来创建部署。
+如果无法使用 Visual Studio 来部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序，或者需要使用高级部署功能（如受信任的应用程序部署），则应使用 *Mage.exe* 命令行工具来创建 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单。 本演练介绍如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用MageUI.exe *) 清单生成和编辑工具* 的命令行版本 (*Mage.exe*) 或图形 (版本来创建部署。
 
 ## <a name="prerequisites"></a>先决条件
  在生成部署之前，此演练具有一些需要选择的先决条件和选项。
 
-- 安装 *Mage.exe* 和 *MageUI.exe* 。
+- 安装 *Mage.exe* 和 *MageUI.exe*。
 
    *Mage.exe* 和 *MageUI.exe* 均为的一部分 [!INCLUDE[winsdklong](../deployment/includes/winsdklong_md.md)] 。 你必须已 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 安装或 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] 与 Visual Studio 一起提供的版本。 有关详细信息，请参阅 MSDN 上的 [Windows SDK](https://www.microsoft.com/download/details.aspx?id=8279) 。
 
@@ -62,17 +62,17 @@ ms.locfileid: "94349243"
 
    你需要确定你的应用程序是否包含具有用户帐户控制的清单 (UAC) 信息，如 `<dependentAssembly>` 元素。 若要检查应用程序清单，可以使用 Windows Sysinternals [Sigcheck](/sysinternals/downloads/sigcheck) 实用程序。
 
-   如果你的应用程序包含具有 UAC 详细信息的清单，则必须在不使用 UAC 信息的情况下重新生成它。 对于 Visual Studio 中的 c # 项目，请打开项目属性，然后选择 "应用程序" 选项卡。在 " **清单** " 下拉列表中，选择 " **创建不带清单的应用程序** "。 对于 Visual Studio 中的 Visual Basic 项目，请打开项目属性，选择 "应用程序" 选项卡，然后单击 " **查看 UAC 设置** "。 在打开的清单文件中，删除单个元素中的所有元素 `<asmv1:assembly>` 。
+   如果你的应用程序包含具有 UAC 详细信息的清单，则必须在不使用 UAC 信息的情况下重新生成它。 对于 Visual Studio 中的 c # 项目，请打开项目属性，然后选择 "应用程序" 选项卡。在 " **清单** " 下拉列表中，选择 " **创建不带清单的应用程序**"。 对于 Visual Studio 中的 Visual Basic 项目，请打开项目属性，选择 "应用程序" 选项卡，然后单击 " **查看 UAC 设置**"。 在打开的清单文件中，删除单个元素中的所有元素 `<asmv1:assembly>` 。
 
 - 确定应用程序是否需要客户端计算机上的必备组件。
 
-   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从 Visual Studio 部署的应用程序可以包含先决条件安装引导程序 ( *setup.exe* 与部署) 。 本演练将创建部署所需的两个清单 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 可以使用 [GenerateBootstrapper 任务](../msbuild/generatebootstrapper-task.md)创建必备组件引导程序。
+   [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从 Visual Studio 部署的应用程序可以包含先决条件安装引导程序 (*setup.exe* 与部署) 。 本演练将创建部署所需的两个清单 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 可以使用 [GenerateBootstrapper 任务](../msbuild/generatebootstrapper-task.md)创建必备组件引导程序。
 
 ### <a name="to-deploy-an-application-with-the-mageexe-command-line-tool"></a>使用 Mage.exe 命令行工具部署应用程序
 
 1. 创建一个将在其中存储 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署文件的目录。
 
-2. 在刚创建的部署目录中，创建版本子目录。 如果这是你首次部署应用程序，请将版本命名为 "子目录 **1.0.0.0** "。
+2. 在刚创建的部署目录中，创建版本子目录。 如果这是你首次部署应用程序，请将版本命名为 "子目录 **1.0.0.0**"。
 
    > [!NOTE]
    > 部署版本可能与应用程序的版本不同。
@@ -120,7 +120,7 @@ ms.locfileid: "94349243"
 
 1. 创建一个将在其中存储 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署文件的目录。
 
-2. 在刚创建的部署目录中，创建版本子目录。 如果这是你首次部署应用程序，请将版本命名为 "子目录 **1.0.0.0** "。
+2. 在刚创建的部署目录中，创建版本子目录。 如果这是你首次部署应用程序，请将版本命名为 "子目录 **1.0.0.0**"。
 
    > [!NOTE]
    > 部署的版本可能与应用程序的版本不同。
@@ -133,39 +133,39 @@ ms.locfileid: "94349243"
    MageUI.exe
    ```
 
-5. 通过从菜单中选择 " **文件** "、" **新建** "、" **应用程序清单** " 来创建新的应用程序清单。
+5. 通过从菜单中选择 " **文件**"、" **新建**"、" **应用程序清单** " 来创建新的应用程序清单。
 
 6. 在 "默认 **名称** " 选项卡上，键入此部署的名称和版本号。 还要指定为其生成应用程序的 **处理器** ，如 x86。
 
-7. 选择 " **文件** " 选项卡，然后选择 " **应用程序目录** " 文本框旁边的 **省略号 ("** ) " 按钮。 此时将显示 " **浏览文件夹** " 对话框。
+7. 选择 "**文件**" 选项卡，然后选择 "**应用程序目录**" 文本框旁边的 **省略号 ("**) " 按钮。 此时将显示 " **浏览文件夹** " 对话框。
 
-8. 选择包含应用程序文件的版本子目录，然后选择 **"确定"** 。
+8. 选择包含应用程序文件的版本子目录，然后选择 **"确定"**。
 
 9. 如果要从 Internet Information Services (IIS) 进行部署，请选中 " **填充时将 .deploy 扩展名添加到任何不具有此功能的文件** " 复选框。
 
-10. 进入 " **填充** " 按钮，将所有应用程序文件添加到文件列表。 如果你的应用程序包含多个可执行文件，则通过从 " **文件类型** " 下拉列表中选择 " **入口点** "，将此部署的主要可执行文件标记为启动应用程序。  (如果你的应用程序只包含一个可执行文件， *MageUI.exe* 会将其标记为你。 ) 
+10. 进入 " **填充** " 按钮，将所有应用程序文件添加到文件列表。 如果你的应用程序包含多个可执行文件，则通过从 "**文件类型**" 下拉列表中选择 "**入口点**"，将此部署的主要可执行文件标记为启动应用程序。  (如果你的应用程序只包含一个可执行文件， *MageUI.exe* 会将其标记为你。 ) 
 
-11. 选择 " **所需权限** " 选项卡，然后选择你需要应用程序断言的信任级别。 默认值为 **FullTrust** ，适用于大多数应用程序。
+11. 选择 " **所需权限** " 选项卡，然后选择你需要应用程序断言的信任级别。 默认值为 **FullTrust**，适用于大多数应用程序。
 
-12. 从菜单中选择 " **文件** "、" **另存为** "。 此时会显示 "签名选项" 对话框，提示您对应用程序清单进行签名。
+12. 从菜单中选择 " **文件**"、" **另存为** "。 此时会显示 "签名选项" 对话框，提示您对应用程序清单进行签名。
 
-13. 如果你的证书作为文件存储在文件系统中，请使用 " **使用证书文件签名** " 选项，然后使用省略号 ( **...** ) "按钮从文件系统中选择该证书。 然后键入证书密码。
+13. 如果你的证书作为文件存储在文件系统中，请使用 " **使用证书文件签名** " 选项，然后使用省略号 (**...**) "按钮从文件系统中选择该证书。 然后键入证书密码。
 
-     - 或 -
+     -或-
 
      如果证书保存在可从计算机访问的证书存储中，请选择 " **使用存储的证书签名** " 选项，然后从提供的列表中选择证书。
 
 14. 选择 **"确定"** 以对你的应用程序清单进行签名。 将显示 **“另存为”** 对话框。
 
-15. 在 " **另存为** " 对话框中，指定版本目录，然后选择 " **保存** "。
+15. 在 " **另存为** " 对话框中，指定版本目录，然后选择 " **保存**"。
 
-16. 从菜单中选择 " **文件** "、" **新建** "、" **部署清单** " 以创建部署清单。
+16. 从菜单中选择 " **文件**"、" **新建**"、" **部署清单** " 以创建部署清单。
 
-17. 在 " **名称** " 选项卡上，在此示例中为此部署指定名称和版本号 ( **1.0.0.0** ) 。 还要指定为其生成应用程序的 **处理器** ，如 x86。
+17. 在 " **名称** " 选项卡上，在此示例中为此部署指定名称和版本号 (**1.0.0.0**) 。 还要指定为其生成应用程序的 **处理器** ，如 x86。
 
-18. 选择 " **描述** " 选项卡，然后指定 " **发布者** " 和 " **产品** " 的值。  ( **产品** 是在客户端计算机上安装应用程序以供脱机使用时在 Windows "开始" 菜单上为应用程序指定的名称。 ) 
+18. 选择 " **描述** " 选项卡，然后指定 " **发布者** " 和 " **产品**" 的值。  (**产品** 是在客户端计算机上安装应用程序以供脱机使用时在 Windows "开始" 菜单上为应用程序指定的名称。 ) 
 
-19. 选择 " **部署选项** " 选项卡，并在 " **启动位置** " 文本框中指定应用程序清单在 Web 服务器或共享上的位置。 例如， *\\ \myServer\myShare\AppToDeploy.application* 。
+19. 选择 " **部署选项** " 选项卡，并在 " **启动位置** " 文本框中指定应用程序清单在 Web 服务器或共享上的位置。 例如， *\\ \myServer\myShare\AppToDeploy.application*。
 
 20. 如果在上一步中添加了 *.deploy* 扩展，请在此处选择 " **使用文件扩展名** "。
 
@@ -173,28 +173,28 @@ ms.locfileid: "94349243"
 
 22. 选择 " **应用程序引用** " 选项卡，然后选择 " **选择清单** " 按钮。 此时将显示 "打开" 对话框。
 
-23. 选择前面创建的应用程序清单，然后选择 " **打开** "。
+23. 选择前面创建的应用程序清单，然后选择 " **打开**"。
 
-24. 从菜单中选择 " **文件** "、" **另存为** "。 此时会显示 " **签名选项** " 对话框，提示您对部署清单进行签名。
+24. 从菜单中选择 " **文件**"、" **另存为** "。 此时会显示 " **签名选项** " 对话框，提示您对部署清单进行签名。
 
-25. 如果你的证书作为文件存储在文件系统中，请使用 " **使用证书文件签名** " 选项，然后使用省略号 ( **...** ) "按钮从文件系统中选择该证书。 然后键入证书密码。
+25. 如果你的证书作为文件存储在文件系统中，请使用 " **使用证书文件签名** " 选项，然后使用省略号 (**...**) "按钮从文件系统中选择该证书。 然后键入证书密码。
 
-     - 或 -
+     -或-
 
      如果证书保存在可从计算机访问的证书存储中，请选择 " **使用存储的证书签名** " 选项，然后从提供的列表中选择证书。
 
 26. 请参阅 **"确定"** 以对你的部署清单进行签名。 将显示 **“另存为”** 对话框。
 
-27. 在 " **另存为** " 对话框中，将一个目录移到部署的根目录，然后选择 " **保存** "。
+27. 在 " **另存为** " 对话框中，将一个目录移到部署的根目录，然后选择 " **保存**"。
 
 28. 将部署目录中的所有文件复制到部署目标或媒体。 这可能是网站或 FTP 站点、文件共享或 cd-rom 上的文件夹。
 
 29. 为用户提供安装应用程序所需的 URL、UNC 或物理介质。 如果提供 URL 或 UNC，则必须为用户提供部署清单的完整路径。 例如，如果 AppToDeploy 部署到 http://webserver01/ AppToDeploy 目录中，则完整的 URL 路径将为 http://webserver01/AppToDeploy/AppToDeploy.application 。
 
 ## <a name="next-steps"></a>后续步骤
- 当需要部署应用程序的新版本时，请创建一个名为的新目录（例如1.0.0.1），并将新的应用程序文件复制到新目录中。 接下来，需要按照前面的步骤创建新的应用程序清单并对其进行签名，并对部署清单进行更新和签名。 请注意，在 *Mage.exe* 和调用中指定相同的更高版本 `-New` `-Update` ，只是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新较高版本，最左端的整数最重要。 如果你使用 *MageUI.exe* ，则可以通过打开部署清单、选择 " **应用程序引用** " 选项卡、" **选择清单** " 按钮，然后选择更新的应用程序清单来更新部署清单。
+ 当需要部署应用程序的新版本时，请创建一个名为的新目录（例如1.0.0.1），并将新的应用程序文件复制到新目录中。 接下来，需要按照前面的步骤创建新的应用程序清单并对其进行签名，并对部署清单进行更新和签名。 请注意，在 *Mage.exe* 和调用中指定相同的更高版本 `-New` `-Update` ，只是 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 更新较高版本，最左端的整数最重要。 如果你使用 *MageUI.exe*，则可以通过打开部署清单、选择 " **应用程序引用** " 选项卡、" **选择清单** " 按钮，然后选择更新的应用程序清单来更新部署清单。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [MageUI.exe（图形化客户端中的清单生成和编辑工具）](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

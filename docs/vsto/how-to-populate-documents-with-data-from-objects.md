@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 73cc795b5476f312f5fc80ba76dc383175596b64
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 5bebc21fb02f6b5441c597fcfd25364991829e71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848048"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918582"
 ---
 # <a name="how-to-populate-documents-with-data-from-objects"></a>如何：用对象中的数据填充文档
 
@@ -68,7 +68,7 @@ ms.locfileid: "96848048"
 
 4. 将数据源作为数据绑定添加到控件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

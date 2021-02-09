@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 5a74878f-b896-4cca-b968-98d00fe78fb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5810fa3bdd6d479c1df4c484960fd923b0ed59
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 1e409ba89a9ca472f0025ddcf81383ed83641db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918364"
 ---
 # <a name="product-and-package-schema-reference"></a>产品和包架构引用
 *产品文件* 是 XML 清单，描述应用程序所需的所有外部依赖项 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 外部依赖项的示例包括 .NET Framework 和 Microsoft 数据访问组件 (MDAC) 。 包文件类似于产品文件，但用于安装依赖项的区域性相关组件，如本地化程序集、许可协议和文档。
@@ -41,12 +41,12 @@ ms.locfileid: "94350707"
 
 |元素|说明|属性|
 |-------------|-----------------|----------------|
-|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|产品文件必需的顶级元素。|None|
+|[\<Product> 元素](../deployment/product-element-bootstrapper.md)|产品文件必需的顶级元素。|无|
 |[\<Package> 元素](../deployment/package-element-bootstrapper.md)|包文件所需的顶级元素。|`Culture`<br /><br /> `Name`<br /><br /> `EULA`|
-|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 此产品安装或依赖的其他产品。|None|
-|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出要在安装过程中在本地计算机上执行的依赖项检查。|None|
-|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查（如所述 `InstallChecks` ），并指示在检查失败时要安装的程序包。|None|
-|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出此安装过程可能安装的包。|None|
+|[\<RelatedProducts> 元素](../deployment/relatedproducts-element-bootstrapper.md)|产品文件的可选元素。 此产品安装或依赖的其他产品。|无|
+|[\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)|必需的元素。 列出要在安装过程中在本地计算机上执行的依赖项检查。|无|
+|[\<Commands> 元素](../deployment/commands-element-bootstrapper.md)|必需的元素。  执行一个或多个安装检查（如所述 `InstallChecks` ），并指示在检查失败时要安装的程序包。|无|
+|[\<PackageFiles> 元素](../deployment/packagefiles-element-bootstrapper.md)|必需的元素。 列出此安装过程可能安装的包。|无|
 |[\<Strings> 元素](../deployment/strings-element-bootstrapper.md)|必需的元素。 存储产品名称和错误字符串的本地化版本。|无|
 
 ## <a name="remarks"></a>备注
@@ -159,6 +159,6 @@ ms.locfileid: "94350707"
 </Product>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

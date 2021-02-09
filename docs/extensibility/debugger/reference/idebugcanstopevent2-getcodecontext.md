@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: eecf08b6-f9b7-4358-941b-3a448a92ac62
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94c129d7d50bc747291d8a178d73c06655e65414
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: aefce11ba82cae7529ed1127784d70771add8302
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99919980"
 ---
 # <a name="idebugcanstopevent2getcodecontext"></a>IDebugCanStopEvent2::GetCodeContext
 获取描述此事件位置的代码上下文。
@@ -28,18 +28,18 @@ ms.locfileid: "80734562"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetCodeContext( 
+HRESULT GetCodeContext( 
    IDebugCodeContext2** ppCodeContext
 );
 ```
 
 ```csharp
-int GetCodeContext( 
+int GetCodeContext( 
    out IDebugCodeContext2 ppCodeContext
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppCodeContext`\
 弄返回表示当前代码位置的 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 对象。
 

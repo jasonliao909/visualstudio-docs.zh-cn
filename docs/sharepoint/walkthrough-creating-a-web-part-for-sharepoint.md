@@ -13,15 +13,15 @@ helpviewer_keywords:
 - Web Parts [SharePoint development in Visual Studio], designing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 98e0c21fa4e3f119b32e19dd1be6e7d9148a17f4
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914655"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918626"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>演练：为 SharePoint 创建 Web 部件
 
@@ -44,7 +44,7 @@ Web 部件显示数据网格中的雇员。 用户指定包含员工数据的文
     > [!NOTE]
     > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - 支持的 Microsoft Windows 和 SharePoint 版本。
 
