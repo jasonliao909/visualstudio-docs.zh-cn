@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: ea118fff-69b1-4675-b79a-e33374377f04
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3586cf45e152cd8a0149140556916b11544a00bb
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 8b5228d463bebf7ed57c68cbcf16a1d767d94917
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94436271"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858665"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 
@@ -36,7 +36,7 @@ ms.locfileid: "94436271"
 
 如果你的应用程序使用对象存储数据，或如果你想要更好地控制在数据库中创建新记录，请使用 `TableAdapter.Insert` 方法。
 
-如果 TableAdapter 没有 `Insert` 方法，这意味着 tableadapter 配置为使用存储过程，或者其 `GenerateDBDirectMethods` 属性设置为 `false` 。 尝试在数据集设计器中将 TableAdapter 的 `GenerateDBDirectMethods` 属性设置为 `true` ，然后保存该数据集。 **Dataset Designer** 这将重新生成 TableAdapter。 如果 TableAdapter 仍没有 `Insert` 方法，则表可能没有提供足够的架构信息来区分单个行 (例如，表中可能没有设置) 的主键。
+如果 TableAdapter 没有 `Insert` 方法，这意味着 tableadapter 配置为使用存储过程，或者其 `GenerateDBDirectMethods` 属性设置为 `false` 。 尝试在数据集设计器中将 TableAdapter 的 `GenerateDBDirectMethods` 属性设置为 `true` ，然后保存该数据集。  这将重新生成 TableAdapter。 如果 TableAdapter 仍没有 `Insert` 方法，则表可能没有提供足够的架构信息来区分单个行 (例如，表中可能没有设置) 的主键。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>使用 Tableadapter 插入新记录
 

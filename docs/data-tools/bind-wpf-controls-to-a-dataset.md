@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: de0a155d675f85e10cdf38969dd6eb59a3762770
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518513"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859276"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -68,7 +68,7 @@ ms.locfileid: "94518513"
 
 4. 选择 " **WPF 应用程序** " 项目模板。
 
-5. 在 " **名称** " 框中，输入 **AdventureWorksProductsEditor** ，然后选择 **"确定"** 。
+5. 在 " **名称** " 框中，输入 **AdventureWorksProductsEditor** ，然后选择 **"确定"**。
 
 ::: moniker-end
 
@@ -76,9 +76,9 @@ ms.locfileid: "94518513"
 
 1. 打开 Visual Studio。
 
-2. 在“开始”窗口上，选择“创建新项目”。
+2. 在“开始”窗口上，选择“创建新项目”  。
 
-3. 搜索 c # **WPF 应用程序** 项目模板，然后按照步骤创建项目，将项目命名为 **AdventureWorksProductsEditor** 。
+3. 搜索 c # **WPF 应用程序** 项目模板，然后按照步骤创建项目，将项目命名为 **AdventureWorksProductsEditor**。
 
 ::: moniker-end
 
@@ -88,11 +88,11 @@ ms.locfileid: "94518513"
 
 必须先为应用程序定义数据模型并将此模型添加到“数据源”窗口中，然后才能创建数据绑定控件。 在本演练中，你将创建要用作数据模型的数据集。
 
-1. 在 **“数据”** 菜单上，单击 **“显示数据源”** 。
+1. 在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
    “数据源”窗口随即打开。
 
-2. 在 **“数据源”** 窗口中，单击 **“添加新数据源”** 。
+2. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
    " **数据源配置** 向导" 将打开。
 
@@ -110,7 +110,7 @@ ms.locfileid: "94518513"
 
 7. 在“选择数据库对象”页面上，展开“表”，然后选择“Product (SalesLT)”表。
 
-8. 单击“完成”。
+8. 单击“完成” 。
 
    Visual Studio 会向项目中添加一个新 `AdventureWorksLTDataSet.xsd` 文件，并将相应的 **adventureworksltdataset.xsd** 项添加到 " **数据源** " 窗口中。 `AdventureWorksLTDataSet.xsd`文件定义名为的类型化数据集 `AdventureWorksLTDataSet` 和名为的 TableAdapter `ProductTableAdapter` 。 在本演练后面的部分中，你将使用 `ProductTableAdapter` 向数据集填充数据，并将更改保存回数据库中。
 
@@ -134,13 +134,13 @@ ms.locfileid: "94518513"
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. 单击“完成”。
+4. 单击“完成” 。
 
 ## <a name="define-the-user-interface"></a>定义用户界面
 
 通过在 WPF 设计器中修改 XAML，将多个按钮添加到该窗口中。 在本演练后面的部分中，你将添加可让用户通过使用这些按钮来滚动和保存对产品记录所做的更改的代码。
 
-1. 在 **解决方案资源管理器** 中，双击 " *mainwindow.xaml* "。
+1. 在 **解决方案资源管理器** 中，双击 " *mainwindow.xaml*"。
 
     窗口将在 **WPF 设计器** 中打开。
 
@@ -236,7 +236,7 @@ ms.locfileid: "94518513"
 
 生成并运行应用程序。 验证你是否可以查看和更新产品记录。
 
-1. 按 **F5** 。
+1. 按 F5 。
 
      这将生成并运行应用程序。 检查下列各项：
 

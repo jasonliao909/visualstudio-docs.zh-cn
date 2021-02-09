@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4c7891df6de9f12df324c8d79eed5dda0e091d9a
-ms.sourcegitcommit: 63ff7cb85b3baeeb713240d17bb2a18497f3741d
+ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94518747"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859354"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 向分隔到 n 层解决方案中的数据集添加验证与将验证添加到单个项目)  (数据集的方式基本相同。 对数据执行验证的建议位置是在表的 <xref:System.Data.DataTable.ColumnChanging> 和/或 <xref:System.Data.DataTable.RowChanging> 事件中。

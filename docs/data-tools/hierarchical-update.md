@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 68bae3f6-ec9b-45ee-a33a-69395029f54c
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: bfc0c1ca96f5bf6ce58a1b7df9ad0ea10f283e1e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858834"
 ---
 # <a name="hierarchical-update"></a>分层更新
 
@@ -40,13 +40,13 @@ ms.locfileid: "94435151"
 
 ## <a name="enable-hierarchical-update-in-a-dataset"></a>在数据集中启用分层更新
 
-默认情况下，将为在项目中添加或创建的所有新数据集启用分层更新。 通过将数据集中的类型化数据集的 " **分层更新** " 属性设置为 " **True** " 或 " **False** "，打开或关闭层次结构更新：
+默认情况下，将为在项目中添加或创建的所有新数据集启用分层更新。 通过将数据集中的类型化数据集的 " **分层更新** " 属性设置为 " **True** " 或 " **False**"，打开或关闭层次结构更新：
 
 ![分层更新设置](../data-tools/media/hierarchical-update-setting.png)
 
 ## <a name="create-a-new-relation-between-tables"></a>在表之间创建新关系
 
-若要在两个表之间创建新关系，请在数据集设计器中选择每个表的标题栏，然后右键单击并选择 " **添加关系** "。
+若要在两个表之间创建新关系，请在数据集设计器中选择每个表的标题栏，然后右键单击并选择 " **添加关系**"。
 
 ![分层更新添加关系菜单](../data-tools/media/hierarchical-update-add-relation-menu.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "94435151"
 
 1. 为 `OrdersBindingSource.AddingNew` 事件创建一个事件处理程序。
 
-    - 在 "设计" 视图中打开 " **Form1** "，在组件栏中选择 " **OrdersBindingSource** "，在 " **属性** " 窗口中选择 " **事件** "，然后双击 " **system.windows.forms.bindingsource.addingnew>** " 事件。
+    - 在 "设计" 视图中打开 " **Form1** "，在组件栏中选择 " **OrdersBindingSource** "，在 "**属性**" 窗口中选择 "**事件**"，然后双击 " **system.windows.forms.bindingsource.addingnew>** " 事件。
 
 2. 向调用方法的事件处理程序添加一行代码 `CustomersBindingSource.EndEdit` 。 `OrdersBindingSource_AddingNew` 事件处理程序中的代码应如下所示：
 
@@ -125,7 +125,7 @@ ms.locfileid: "94435151"
 |`UpdateAll` 方法|保存所有数据表中的所有数据。|
 |`BackUpDataSetBeforeUpdate` 属性|确定在执行方法之前是否创建数据集的备份副本 `TableAdapterManager.UpdateAll` 。变量.|
 |*tableName* `TableAdapter` 知识产权|表示 `TableAdapter` 。 生成的 `TableAdapterManager` 包含它管理的每个的属性 `TableAdapter` 。 例如，具有 Customers 和 Orders 表的数据集使用 `TableAdapterManager` 包含 `CustomersTableAdapter` 和属性的生成 `OrdersTableAdapter` 。|
-|`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete** 。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
+|`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete**。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
 
 ## <a name="see-also"></a>另请参阅
 

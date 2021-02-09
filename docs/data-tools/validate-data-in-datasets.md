@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 79500596-1e4d-478e-a991-a636fd73a622
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: cde45c4086b93713fe6e5223c1725538c0880491
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998299"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858236"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是确认输入到数据对象中的值是否符合数据集架构中的约束的过程。 验证过程还会确认这些值遵循了已为应用程序建立的规则。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法。 这可以减少错误，以及应用程序和数据库之间可能出现的往返次数。

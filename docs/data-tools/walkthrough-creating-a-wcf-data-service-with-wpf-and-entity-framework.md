@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: da66ad1b-a25d-485c-af13-2d18f0422e3d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: c8c9ced0b589b28f1cd21de4a862c6f11dc6e03e
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 54699947588e29da7312c0574833a13bbc3c8cfd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998260"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858184"
 ---
 # <a name="walkthrough-creating-a-wcf-data-service-with-wpf-and-entity-framework"></a>演练：使用 WPF 和 Entity Framework 创建 WCF Data Service
 本演练演示如何创建一个承载于 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序中的简单 [!INCLUDE[ss_data_service](../data-tools/includes/ss_data_service_md.md)]，然后从 Windows 窗体应用程序中访问它。
@@ -80,7 +80,7 @@ ms.locfileid: "94998260"
 
 ### <a name="to-create-the-entity-data-model"></a>创建实体数据模型
 
-1. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+1. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 2. 在“添加新项”对话框中，选择“数据”节点，然后选择“ADO.NET 实体数据模型”项。
 
@@ -94,7 +94,7 @@ ms.locfileid: "94998260"
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         - 或 -
+         -或-
 
     - 选择“新建连接”按钮来配置新数据连接。 有关详细信息，请参阅 [添加新连接](../data-tools/add-new-connections.md)。
 
@@ -106,7 +106,7 @@ ms.locfileid: "94998260"
 7. 在“选择版本”页上，选择“Entity Framework 5.0”选项按钮，然后选择“下一步”按钮。
 
     > [!NOTE]
-    > 为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，需要安装 WCF Data Services Entity Framework Provider NuGet 包。 请参阅将 [WCF 数据服务5.6.0 与实体框架 6 + 配合使用](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
+    > 为了使用具有 WCF 服务的 Entity Framework 6 的最新版本，需要安装 WCF Data Services Entity Framework Provider NuGet 包。 请参阅将 [WCF Data Services 5.6.0 与实体框架 6 + 配合使用](https://devblogs.microsoft.com/odata/using-wcf-data-services-5-6-0-with-entity-framework-6/)。
 
 8. 在“选择数据库对象”页上，展开“表”节点、选中“客户”复选框，然后选择“完成”按钮。
 
@@ -116,7 +116,7 @@ ms.locfileid: "94998260"
 
 ### <a name="to-create-the-data-service"></a>创建数据服务
 
-1. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+1. 在菜单栏上，依次选择“项目” > “添加新项”。
 
 2. 在“添加新项”对话框中，选择“Web”节点，然后选择“WCF Data Service 5.6”项。
 
@@ -290,5 +290,5 @@ ms.locfileid: "94998260"
 
 ## <a name="see-also"></a>另请参阅
 
-- [在 Visual Studio 中 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)

@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 5e32e10e-9bac-4969-9bdd-b8f6919d3516
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 049137d85429d720024fa9ce075f6a102f8d7c91
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.openlocfilehash: 5d03a6dbe728d77fb9158ec02e1f59016e7c4a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858275"
 ---
 # <a name="update-data-by-using-a-tableadapter"></a>使用 TableAdapter 更新数据
 
-修改并验证数据集中的数据后，可以通过调用 TableAdapter 的方法将更新后的数据发回数据库 `Update` 。 [TableAdapter](../data-tools/create-and-configure-tableadapters.md) `Update`方法更新单个数据表，并根据 <xref:System.Data.DataRow.RowState%2A> 表中每个数据行的， (插入、更新或删除) 运行正确的命令。 当数据集具有相关表时，Visual Studio 将生成用于执行更新的 TableAdapterManager 类。 TableAdapterManager 类确保按在数据库中定义的外键约束按照正确顺序进行更新。 使用数据绑定控件时，数据绑定体系结构会创建名为 tableAdapterManager 的 TableAdapterManager 类的成员变量。
+修改并验证数据集中的数据后，可以通过调用 TableAdapter 的方法将更新后的数据发回数据库 `Update` 。 [](../data-tools/create-and-configure-tableadapters.md) `Update`方法更新单个数据表，并根据 <xref:System.Data.DataRow.RowState%2A> 表中每个数据行的， (插入、更新或删除) 运行正确的命令。 当数据集具有相关表时，Visual Studio 将生成用于执行更新的 TableAdapterManager 类。 TableAdapterManager 类确保按在数据库中定义的外键约束按照正确顺序进行更新。 使用数据绑定控件时，数据绑定体系结构会创建名为 tableAdapterManager 的 TableAdapterManager 类的成员变量。
 
 > [!NOTE]
 > 尝试使用数据集的内容更新数据源时，可能会出现错误。 若要避免错误，建议您将调用适配器的方法的代码放在 `Update` `try` / `catch` 块内。

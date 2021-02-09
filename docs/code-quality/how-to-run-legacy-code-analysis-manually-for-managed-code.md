@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5086d228-f92e-4515-9708-c5b89b9e9a03
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f61f0823c33478b4482f00541bbfe778fe72ed7e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 45f201e2c647a1b1074585d59c7618e1ddeb9084
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99859991"
 ---
 # <a name="how-to-run-legacy-code-analysis-manually-for-managed-code"></a>如何：手动运行托管代码的旧式代码分析
 
@@ -33,4 +33,4 @@ set EnableLegacyCodeAnalysis = true
 
 2. 在 **解决方案资源管理器** 中，单击该项目。
 
-3. 在 " **分析** " 菜单上，单击 "对 *项目名称***运行代码分析** "。
+3. 在 "**分析**" 菜单上，单击 "对 *项目名称***运行代码分析**"。

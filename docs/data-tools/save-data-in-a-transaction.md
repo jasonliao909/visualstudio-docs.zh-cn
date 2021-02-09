@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 80260118-08bc-4b37-bfe5-9422ee7a1e4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1bb0262139e2096cf55ae7581ef854a57c67d22a
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 62175e33949b2c6311fba8e9255b237cd8b43e01
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94434540"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858470"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>演练：在事务中保存数据
 
@@ -38,7 +38,7 @@ ms.locfileid: "94434540"
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询** "。
+    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
 
        此时将打开查询编辑器窗口。
 
@@ -50,15 +50,15 @@ ms.locfileid: "94434540"
 
 ## <a name="create-a-windows-forms-application"></a>创建 Windows 窗体应用程序
 
-第一步是创建 **Windows 窗体应用程序** 。
+第一步是创建 **Windows 窗体应用程序**。
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面** "。
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
 3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
 
-4. 将项目命名为 **SavingDataInATransactionWalkthrough** ，然后选择 **"确定"** 。
+4. 将项目命名为 **SavingDataInATransactionWalkthrough**，然后选择 **"确定"**。
 
      创建“SavingDataInATransactionWalkthrough”项目并将其添加到“解决方案资源管理器”中。
 
@@ -66,27 +66,27 @@ ms.locfileid: "94434540"
 
 此步骤使用 " **数据源配置向导** " 创建基于 `Customers` `Orders` Northwind 示例数据库中的和表的数据源。
 
-1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上选择 " **显示数据源** "。
+1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上选择 " **显示数据源**"。
 
 2. 在“数据源”窗口，选择“添加新数据源”以启动“数据源配置”向导。
 
-3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库** "，然后选择 " **下一步** "。
+3. 在 " **选择数据源类型** " 屏幕上，选择 " **数据库**"，然后选择 " **下一步**"。
 
 4. 在 " **选择你的数据连接** " 屏幕上，执行以下操作之一：
 
     - 如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-         - 或 -
+         -或-
 
     - 选择“新建连接”以启动“添加/修改连接”对话框，并创建到 Northwind 数据库的连接。
 
-5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步** "。
+5. 如果数据库需要密码，请选择该选项以包括敏感数据，然后选择 " **下一步**"。
 
-6. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步** "。
+6. 在 "将 **连接字符串保存到应用程序配置文件** " 屏幕上，选择 " **下一步**"。
 
 7. 在 " **选择数据库对象** " 屏幕上，展开 " **表** " 节点。
 
-8. 选择 `Customers` 和 `Orders` 表，然后选择 " **完成** "。
+8. 选择 `Customers` 和 `Orders` 表，然后选择 " **完成**"。
 
      将“NorthwindDataSet”添加到项目后，“数据源”窗口即会显示 `Customers` 和 `Orders` 表。
 
@@ -112,7 +112,7 @@ ms.locfileid: "94434540"
 
 1. 在“项目”菜单中，选择“添加引用”。
 
-2. 选择 " **.net** " 选项卡上的 **" ("** ) ，然后选择 **"确定"** 。
+2. 选择 " **.net** " 选项卡上的 **" ("**) ，然后选择 **"确定"**。
 
      将“System.Transactions”的引用添加到项目。
 
@@ -122,9 +122,9 @@ ms.locfileid: "94434540"
 
 ### <a name="to-modify-the-auto-generated-save-code"></a>修改自动生成的保存代码
 
-1. 选择 **CustomersBindingNavigator** 上的 " **保存** " 按钮，将 "软盘" 图标)  (按钮。
+1. 选择 **CustomersBindingNavigator** 上的 "**保存**" 按钮，将 "软盘" 图标)  (按钮。
 
-2. 将 `CustomersBindingNavigatorSaveItem_Click`方法替换为以下代码：
+2. 将 `CustomersBindingNavigatorSaveItem_Click` 方法替换为以下代码：
 
      [!code-vb[VbRaddataSaving#4](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_1.vb)]
      [!code-csharp[VbRaddataSaving#4](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_1.cs)]
@@ -167,7 +167,7 @@ ms.locfileid: "94434540"
      [!code-vb[VbRaddataSaving#8](../data-tools/codesnippet/VisualBasic/save-data-in-a-transaction_5.vb)]
      [!code-csharp[VbRaddataSaving#8](../data-tools/codesnippet/CSharp/save-data-in-a-transaction_5.cs)]
 
-## <a name="run-the-application"></a>运行此应用程序
+## <a name="run-the-application"></a>运行应用程序
 
 按 **F5** 运行该应用程序。
 

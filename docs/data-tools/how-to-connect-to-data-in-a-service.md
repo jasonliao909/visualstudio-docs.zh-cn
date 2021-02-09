@@ -15,19 +15,19 @@ helpviewer_keywords:
 ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3c565f7238edf9126dd651fa567de82aed7b8d21
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94435008"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99858756"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 
-通过运行 " [数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)" 并在 " **选择数据源类型** " 页上选择 " **服务** "，将应用程序连接到从服务返回的数据。
+通过运行 "[数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)" 并在 "**选择数据源类型**" 页上选择 "**服务**"，将应用程序连接到从服务返回的数据。
 
 完成向导后，服务引用将添加到项目中，并在 " [数据源" 窗口](add-new-data-sources.md#data-sources-window)中立即可用。
 
@@ -38,11 +38,11 @@ ms.locfileid: "94435008"
 
 ## <a name="to-connect-your-application-to-a-service"></a>将应用程序连接到服务
 
-1. 在 **“数据”** 菜单上，单击 **“添加新数据源”** 。
+1. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。
 
-2. 选择 " **选择数据源类型** " 页上的 " **服务** "，然后单击 " **下一步** "。
+2. 选择 "**选择数据源类型**" 页上的 "**服务**"，然后单击 "**下一步**"。
 
-3. 输入要使用的服务的地址，或单击 " **发现** " 以定位当前解决方案中的服务，然后单击 " **开始** "。
+3. 输入要使用的服务的地址，或单击 " **发现** " 以定位当前解决方案中的服务，然后单击 " **开始**"。
 
 4. 或者，您可以键入一个新的 **命名空间** 来代替默认值。
 
@@ -51,7 +51,7 @@ ms.locfileid: "94435008"
 
 5. 单击 **"确定"** 将服务引用添加到项目。
 
-6. 单击“完成”。
+6. 单击“完成” 。
 
      数据源随即添加到“数据源”窗口中。
 
