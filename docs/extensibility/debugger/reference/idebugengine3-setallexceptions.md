@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 8f03a6ac-a854-42f7-933c-a2df1b351975
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b2913756c30bf3b1c8436434da71337a2100aa8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63af55f55dbeb43bfa30aaca5354c4d4fa8afc06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730789"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887232"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 此方法设置所有未处理异常的状态。
@@ -28,8 +28,8 @@ ms.locfileid: "80730789"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetAllExceptions(
-   EXCEPTION_STATE dwState
+HRESULT SetAllExceptions(
+   EXCEPTION_STATE dwState
 );
 ```
 
@@ -39,7 +39,7 @@ int SetAllExceptions(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwState`\
 中 [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md) 值之一。
 

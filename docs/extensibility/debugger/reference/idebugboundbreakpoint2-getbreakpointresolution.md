@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 4479ac61-18a9-4a30-b213-9921c5af9a26
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab88009eb1c1bbbd59bbad2dfcbf62567db3941f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 51912fce3bf98502be7ae05f815fce60e595e89c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887336"
 ---
 # <a name="idebugboundbreakpoint2getbreakpointresolution"></a>IDebugBoundBreakpoint2::GetBreakpointResolution
 获取描述此断点的断点解析。
@@ -29,18 +29,18 @@ ms.locfileid: "80735574"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetBreakpointResolution( 
+HRESULT GetBreakpointResolution( 
     IDebugBreakpointResolution2** ppBPResolution
 );
 ```
 
 ```csharp
-int GetBreakpointResolution( 
+int GetBreakpointResolution( 
     out IDebugBreakpointResolution2 ppBPResolution
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppBPResolution`\
 弄返回表示以下内容之一的 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 接口：
 

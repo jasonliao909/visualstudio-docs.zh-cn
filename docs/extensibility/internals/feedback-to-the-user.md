@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8f3f79a61729a641ee7c046ddd196a648469fb3
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 33e52a277f621c80773518ae4b9606d7a2c222db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480520"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886985"
 ---
 # <a name="feedback-to-the-user"></a>向用户提供反馈
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 上，有关可用功能的视觉反馈基于用户的当前选择和全局选择上下文。 下表列出了在不同选择上下文中可用的功能。
@@ -59,7 +59,7 @@ ms.locfileid: "96480520"
 
 - 活动层次结构窗口通常是 **解决方案资源管理器** 的，其标题栏更新将反映当前上下文，并且上下文相关 **项目** 菜单命令现在适用于活动 Web 应用程序项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)
 - [选择上下文对象](../../extensibility/internals/selection-context-objects.md)
 - [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)

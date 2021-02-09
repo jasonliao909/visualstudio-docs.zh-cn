@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: 2f5211e3-7a3f-47bf-9595-dfc8b4895d0d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 201c08352bc5b616298349c52197529ef3f1a7d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722659"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887063"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 执行调试程序。 返回线程，以便在执行程序时为调试器信息指定用户正在查看哪个线程。
@@ -36,7 +36,7 @@ int ExecuteOnThread(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pThread`\
 中一个 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象。
 

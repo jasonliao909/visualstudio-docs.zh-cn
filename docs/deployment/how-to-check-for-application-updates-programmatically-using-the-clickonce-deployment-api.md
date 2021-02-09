@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 1a886310-67c8-44e5-a382-c2f0454f887d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f00bd8aaa5db8ab72e6b6286763fd89fc900599f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 6e7168b78303f93ccf89fad324992dd580481ac2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888441"
 ---
 # <a name="how-to-check-for-application-updates-programmatically-using-the-clickonce-deployment-api"></a>如何：使用 ClickOnce 部署 API 以编程方式检查应用程序更新
 ClickOnce 提供了两种方法，用于在部署应用程序后对其进行更新。 在第一种方法中，可以将 ClickOnce 部署配置为在特定的时间间隔自动检查更新。 在第二种方法中，可以编写使用类的代码 <xref:System.Deployment.Application.ApplicationDeployment> ，以根据事件（例如用户请求）检查更新。
@@ -61,7 +61,7 @@ ClickOnce 提供了两种方法，用于在部署应用程序后对其进行更�
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  应用程序必须具有完全信任权限才能使用编程更新。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：指定部署更新的备用位置](../deployment/how-to-specify-an-alternate-location-for-deployment-updates.md)
 - [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 390f8e7030d0e758eb27fce4e83a30e30fbf64af
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 537793165f3a3b46d7f00c19dd2f093f0442326d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487889"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886920"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取包含已安装的代码片段的列表（旧版实现）
 代码段是一段代码，可以使用菜单命令将其插入到源缓冲区中 (这允许在已安装的代码段列表中进行选择) 或从 IntelliSense 完成列表中选择代码段快捷方式。
@@ -178,5 +178,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

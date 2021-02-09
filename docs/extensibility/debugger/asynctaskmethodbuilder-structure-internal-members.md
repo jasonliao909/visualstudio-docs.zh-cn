@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: f32f5857-7ef8-45fd-8b5a-7f644eb98b11
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f79ee4c717774ef61fc0aa07fe7ecf2c5c216c04
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888428"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 结构-内部成员
 本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 参考主题。
@@ -39,7 +39,7 @@ ms.locfileid: "90036881"
 
 ## <a name="internal-members"></a>内部成员
 
-|名称|说明|
+|“属性”|说明|
 |----------|-----------------|
 |[ObjectIdForDebugger 属性](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
 |[m_builder 字段](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|表示此非泛型实例委托的泛型生成器对象。|

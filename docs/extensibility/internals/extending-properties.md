@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 721f45ebe83e0edb7bf7a182ea71b2181593ad6e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: b9a777bf11f388873978f450184f1455236e9ff9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479526"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887076"
 ---
 # <a name="extend-properties"></a>扩展属性
 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性** " 窗口是 COM 和 com + 组件的通用属性浏览器，支持所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 产品。 " **属性** " 窗口与 `ITypeInfo` 类型信息和 com + 元数据一起使用，以便在集成开发环境 (IDE) 的任何其他窗口中列出当前所选对象的设计时属性。
@@ -28,7 +28,7 @@ ms.locfileid: "96479526"
 
  本节提供的详细信息与 " **属性** " 窗口的各个区域以及您必须实现并调用以填充窗口的接口相关。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [属性窗口概述](../../extensibility/internals/properties-window-overview.md)
 
  说明 " **属性** " 窗口相对于工具窗口和文档窗口的用途。

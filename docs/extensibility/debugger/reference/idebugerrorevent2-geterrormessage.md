@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9e3b0d74-a2dd-4eaa-bd95-21b2f9c79409
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ff1da2f2a2d24b958a613e6fe5cb58c0081ed3e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80730041"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888350"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 返回允许构造用户可读错误消息的信息。
@@ -28,28 +28,28 @@ ms.locfileid: "80730041"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetErrorMessage(
-   MESSAGETYPE* pMessageType,
-   BSTR*        pbstrErrorFormat,
-   HRESULT*     hrErrorReason,
-   DWORD*       pdwType,
-   BSTR*        pbstrHelpFileName,
-   DWORD*       pdwHelpId
+HRESULT GetErrorMessage(
+   MESSAGETYPE* pMessageType,
+   BSTR*        pbstrErrorFormat,
+   HRESULT*     hrErrorReason,
+   DWORD*       pdwType,
+   BSTR*        pbstrHelpFileName,
+   DWORD*       pdwHelpId
 );
 ```
 
 ```csharp
 int GetErrorMessage(
-   out enum_MESSAGETYPE   pMessageType,
-   out string             pbstrErrorFormat,
-   out int                phrErrorReason,
-   out uint               pdwType,
-   out string             pbstrHelpFileName,
-   out uint               pdwHelpId
+   out enum_MESSAGETYPE   pMessageType,
+   out string             pbstrErrorFormat,
+   out int                phrErrorReason,
+   out uint               pdwType,
+   out string             pbstrHelpFileName,
+   out uint               pdwHelpId
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pMessageType`\
 弄从 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 枚举返回一个值，用于描述消息的类型。
 
