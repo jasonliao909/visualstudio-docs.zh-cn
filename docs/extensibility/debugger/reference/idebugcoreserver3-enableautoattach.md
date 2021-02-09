@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 06aa633b-263b-4e08-8844-9a52d5120b94
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d529bb80f79a3f2972e9349a2679bb528cc10463
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7873480c979bba4f52203c02864d24aa88cf06cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907986"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 为指定的调试引擎启用自动附加。
@@ -28,24 +28,24 @@ ms.locfileid: "80732912"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnableAutoAttach(
-   GUID*     rgguidSpecificEngines,
-   DWORD     celtSpecificEngines,
-   LPCOLESTR pszStartPageUrl,
-   BSTR*     pbstrSessionId
+HRESULT EnableAutoAttach(
+   GUID*     rgguidSpecificEngines,
+   DWORD     celtSpecificEngines,
+   LPCOLESTR pszStartPageUrl,
+   BSTR*     pbstrSessionId
 );
 ```
 
 ```csharp
-int EnableAutoAttach(
-   Guid[]     rgguidSpecificEngines,
-   uint       celtSpecificEngines,
-   string     pszStartPageUrl,
-   out string pbstrSessionId
+int EnableAutoAttach(
+   Guid[]     rgguidSpecificEngines,
+   uint       celtSpecificEngines,
+   string     pszStartPageUrl,
+   out string pbstrSessionId
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `rgguidSpecificEngines`\
 中用于标记为自动附加的每个调试引擎的 Guid 数组。
 

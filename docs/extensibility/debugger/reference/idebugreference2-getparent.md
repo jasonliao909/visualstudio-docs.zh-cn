@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af5f08ae0b06e508794851ff0fff238f19519b4
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c4ed767023fc8d1de65f75c8fb73e31004319024
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909613"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 获取引用的父引用。 留待将来使用。
@@ -28,18 +28,18 @@ ms.locfileid: "80720439"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetParent ( 
+HRESULT GetParent ( 
    IDebugReference2** ppParent
 );
 ```
 
 ```csharp
-int GetParent ( 
+int GetParent ( 
    out IDebugReference2 ppParent
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppParent`\
 弄返回一个 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象，该对象表示此属性的父级。
 

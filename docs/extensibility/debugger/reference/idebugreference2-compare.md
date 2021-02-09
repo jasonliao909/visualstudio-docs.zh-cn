@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 3361c495-2673-4b7c-82e3-dee74e1fa58d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d293fcb89c92a19acc4f5a3910015914ef4231a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cebc34bdd1515ad632a0165fcdc900999b383fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720636"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909732"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 将一个引用与另一个引用进行比较。 留待将来使用。
@@ -28,20 +28,20 @@ ms.locfileid: "80720636"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Compare ( 
+HRESULT Compare ( 
    REFERENCE_COMPARE dwCompare,
    IDebugReference2* pReference
 );
 ```
 
 ```csharp
-int Compare ( 
+int Compare ( 
    enum_REFERENCE_COMPARE dwCompare,
    IDebugReference2       pReference
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwCompare`\
 中 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) 枚举中的一个值，该值指定比较运算，例如等于、小于或大于。
 

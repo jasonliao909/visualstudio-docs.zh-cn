@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9d91a86f8596e0ed7a04ae68099c7c9ab6099a40
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e2871741d7297b6efabf53bb6f258355c41cac49
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910258"
 ---
 # <a name="grant-trust-to-documents"></a>向文档授予信任
   文档级项目与应用程序级项目具有相同的安全要求：使用证书对清单进行签名，或单击信任提示。 此外，文档或工作簿必须位于指定为受信任位置的目录中。
@@ -45,7 +45,7 @@ ms.locfileid: "96847736"
 
 - 可以在与程序集相同或不同的目录中存储文档级解决方案的文档或工作薄。 例如，文档可以位于 SharePoint 服务器，而程序集可以位于网络文件共享中。 有关详细信息，请参阅 [如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](/previous-versions/bb608595(v=vs.110))。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)
 - [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)

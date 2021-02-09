@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: ed84aa98-7ec7-48f3-97ae-821090bc3664
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82f3214783a35e668bf3164c8659f60f863e9a43
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720663"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909793"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 获取 (DE) 接口的自定义调试引擎。
@@ -28,18 +28,18 @@ ms.locfileid: "80720663"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetEngineInterface( 
+HRESULT GetEngineInterface( 
    IUnknown** ppUnk
 );
 ```
 
 ```csharp
-int GetEngineInterface( 
+int GetEngineInterface( 
    out object ppUnk
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppUnk`\
 弄返回一个 `IUnknown` 对象，该对象表示 (DE) 调试引擎，并可查询与 DE (相关联的任何其他有效接口，例如 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 或 [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)) 。
 

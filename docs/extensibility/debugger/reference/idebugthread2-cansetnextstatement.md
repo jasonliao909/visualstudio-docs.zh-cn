@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 7014af80-ff4f-4790-a34b-0528918d1fa3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4232c25bfe9acd7f17c88c28aa4211a9c62175f8
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ce1d04303edb34de98ead8d416221e7f71338ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718854"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909282"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 确定当前指令指针是否可以设置为给定的堆栈帧。
@@ -28,20 +28,20 @@ ms.locfileid: "80718854"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CanSetNextStatement ( 
+HRESULT CanSetNextStatement ( 
    IDebugStackFrame2*  pStackFrame,
    IDebugCodeContext2* pCodeContext
 );
 ```
 
 ```csharp
-int CanSetNextStatement ( 
+int CanSetNextStatement ( 
    IDebugStackFrame2  pStackFrame,
    IDebugCodeContext2 pCodeContext
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pStackFrame`\
 保留以供将来使用;设置为 null 值。 如果这是空值，请使用当前堆栈帧。
 

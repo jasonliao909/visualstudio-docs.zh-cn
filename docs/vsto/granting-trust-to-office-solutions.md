@@ -14,15 +14,15 @@ helpviewer_keywords:
 - granting trust [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f0b81c034ed0f8934da378dc214191d3be1f4506
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f98f3154a0708ce7a01603968f0f5774dd86f40e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848321"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910229"
 ---
 # <a name="grant-trust-to-office-solutions"></a>向 Office 解决方案授予信任
   向 Office 解决方案授予信任意味着修改每台目标计算机的安全策略，以信任解决方案程序集、应用程序清单、部署清单和文档。 你或最终用户可以向 Office 解决方案授予信任。
@@ -47,7 +47,7 @@ ms.locfileid: "96848321"
 
  管理员可以禁用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示，或要求仅对使用 Authenticode 证书签名的解决方案发出提示。 有关如何更改 MyComputer、LocalIntranet、Internet、TrustedSites 和 UntrustedSites 区域的这些设置的详细信息，请参阅 [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)
 - [向文档授予信任](../vsto/granting-trust-to-documents.md)

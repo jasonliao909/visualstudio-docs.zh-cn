@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 368ced5b-c5d9-4090-a5b4-26ff400d1a55
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d60bb8eb333e117290c710e03faafc51f4e31a7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2c8f9ad40c4c4ae61ea676755a6fa97849b6bda6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732897"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907961"
 ---
 # <a name="idebugcoreserver3getconnectionprotocol"></a>IDebugCoreServer3::GetConnectionProtocol
 返回一个值，该值指示用于在服务器和调试包之间进行通信的协议。
@@ -28,18 +28,18 @@ ms.locfileid: "80732897"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetConnectionProtocol(
-   CONNECTION_PROTOCOL* pProtocol
+HRESULT GetConnectionProtocol(
+   CONNECTION_PROTOCOL* pProtocol
 );
 ```
 
 ```csharp
-int GetConnectionProtocol(
-   CONNECTION_PROTOCOL[] pProtocol
+int GetConnectionProtocol(
+   CONNECTION_PROTOCOL[] pProtocol
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProtocol`\
 弄返回 [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md) 枚举中的一个值。
 

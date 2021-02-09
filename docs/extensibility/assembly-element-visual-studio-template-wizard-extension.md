@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 0c3dc280-1753-4ea2-a13c-d31d13b935b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4807014a99fd479a126481db910097ceefd5f806
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: ffc20d0156aeb04131e19c25fef8ab4455b7ab0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671716"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908138"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a> (Visual Studio 模板向导扩展的 Assembly 元素) 
 指定实现接口的程序集的名称或强名称 `IWizard` 。

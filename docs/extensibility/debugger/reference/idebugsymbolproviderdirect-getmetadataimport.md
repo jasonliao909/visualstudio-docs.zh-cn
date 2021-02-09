@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: b51a492c-af00-4b08-93fb-6c19ee4916aa
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 475ffab931445718d27ae6e1fe1242f6a5a76512
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 7028d6e958de0d1c15d0e0c7c40a78e29a815736
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718962"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909471"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 检索元数据导入信息。
@@ -42,7 +42,7 @@ int GetMetaDataImport (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guid`\
 中模块的唯一标识符。
 
