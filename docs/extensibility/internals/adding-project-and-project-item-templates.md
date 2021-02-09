@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e97b04294f0545c378210d39f343f3b009b6d15
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 8ff54e24408577ba8bfbf553a5c641eab2d15814
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906228"
 ---
 # <a name="add-project-and-project-item-templates"></a>添加项目和项目项模板
 创建自己的项目类型时，必须通过使用标准 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) "对话框提供对添加新项目和项目项的支持。 以下主题介绍添加项目和项目项的不同方法。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [项目上下文](../../extensibility/internals/project-context.md)
 
  说明项目为环境中的发生提供了大部分上下文信息。

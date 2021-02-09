@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0aeb601449ffcc47b7f7786825ee222b8b6ac5b
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190078"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906068"
 ---
 # <a name="author-vsct-files"></a>创作 .vsct 文件
 本文档演示如何创作 *.vsct* 文件，以将 (UI) 元素添加到 Visual Studio 集成开发环境 (IDE) 中的菜单项、工具栏和其他用户界面。 将 UI 元素添加到 Visual Studio 包时，请使用以下步骤 (VSPackage) ，该文件还没有 *.vsct* 文件。
@@ -62,7 +62,7 @@ ms.locfileid: "96190078"
    有关如何查找 Visual Studio 命令的 Guid 和 Id 的详细信息，请参阅 [Visual studio 命令的 guid 和 id](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)。 若要从其他包调用命令，请使用这些包的 *.vsct* 文件中定义的 GUID 和命令 ID。
 
 ### <a name="declare-ui-elements"></a>声明 UI 元素
- 在 .vsct 文件的节中声明所有新的 UI 元素 `Symbols` 。 *.vsct*
+ 在 .vsct 文件的节中声明所有新的 UI 元素 `Symbols` 。 
 
 #### <a name="to-declare-ui-elements"></a>声明 UI 元素
 
@@ -235,7 +235,7 @@ ms.locfileid: "96190078"
 
    - 菜单控制器：菜单控制器是一个按钮，该按钮旁有一个箭头。 单击箭头将打开一个列表。 若要将菜单控制器添加到 UI，请创建一个 `Menu` 元素，并将其 `type` 属性设置为 `MenuController` 或 `MenuControllerLatched` ，具体取决于所需的行为。 若要填充菜单控制器，请将其设置为元素的父项 `Group` 。 菜单控制器会在其下拉列表中显示该组的所有子级。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [.VSCT XML 架构引用](../../extensibility/vsct-xml-schema-reference.md)

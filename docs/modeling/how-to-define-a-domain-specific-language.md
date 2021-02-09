@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40dcba1cb83e695f2b02468bdd83a5faa8c25a38
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 440d2f42fb7967ebbcb97433c3faa55e2d91ca0e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363310"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903938"
 ---
 # <a name="how-to-define-a-domain-specific-language"></a>如何定义域特定语言
 若要定义域特定语言 (DSL) ，请从模板创建 Visual Studio 解决方案。 解决方案的重要组成部分是 DSL 定义关系图，它存储在 DslDefinition.dsl 中。 DSL 定义将定义 DSL 的类和形状。 在进行修改并将所做修改添加到这些元素后，可以添加程序代码以更详细地自定义 DSL。
@@ -82,7 +82,7 @@ ms.locfileid: "97363310"
 
 4. 可以调整其他页面上的设置，或保留默认值。
 
-5. 单击“完成”。
+5. 单击“完成” 。
 
     该向导将创建包含两个或三个项目的解决方案，并从 DSL 定义生成代码。
 
@@ -622,7 +622,7 @@ ms.locfileid: "97363310"
 | 在更改程序集名称后，不会显示 DSL 的工具箱。 | 检查并更新 **DslPackage\GeneratedCode\Package.tt** 有关详细信息，请参阅 [如何：更改 Domain-Specific 语言的命名空间](../modeling/how-to-change-the-namespace-of-a-domain-specific-language.md)。 |
 | 不会显示 DSL 的工具箱，但并未更改程序集名称。<br /><br /> 或者，显示一个报告加载扩展失败的消息框。 | 重置实验实例，并重新生成解决方案。<br /><br /> 1. 在 Windows "开始" 菜单的 " **所有程序**" 下，依次展开 [!INCLUDE[vssdk_current_long](../misc/includes/vssdk_current_long_md.md)] "工具" 和 " **工具**"，然后单击 **"重置 Microsoft Visual Studio 实验实例"**。<br />2. 在 " **生成** " 菜单上，单击 " **重新生成解决方案**"。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言入门](../modeling/getting-started-with-domain-specific-languages.md)
 - [创建基于 Windows 窗体的域特定语言](../modeling/creating-a-windows-forms-based-domain-specific-language.md)

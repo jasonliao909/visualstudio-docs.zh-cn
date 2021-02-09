@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0b25b82c-7432-4e0a-9e84-350269ba8260
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e15b1f8bdd27e013e1ef2060d9867a81e8ddde3
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 532568dc0e4d181dfe3de56151096565bf9ff771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905974"
 ---
 # <a name="automation-support-for-options-pages"></a>"选项" 页的自动化支持
 Vspackage 可以) 中的 "**工具**" 菜单 ("工具"**选项** 页提供自定义 **选项** 对话框 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，并使它们可用于自动化模型。
@@ -38,5 +38,5 @@ Vspackage 可以) 中的 "**工具**" 菜单 ("工具"**选项** 页提供自定
 
    有关实现自定义 **工具选项** 页的示例，请参阅 [VSSDK 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [公开项目对象](../../extensibility/internals/exposing-project-objects.md)

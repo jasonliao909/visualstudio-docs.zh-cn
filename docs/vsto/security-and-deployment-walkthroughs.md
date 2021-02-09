@@ -14,15 +14,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], deployment
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0a750aa97c371ce25c7b6797ee773e82d8ab8eb6
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 9101c59dddd0f5c3488c91c0ac7054ebb56cc2f8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906572"
 ---
 # <a name="security-and-deployment-walkthroughs"></a>安全和部署演练
   以下主题演示了如何设置安全策略以允许解决方案运行，以及如何部署 Office 解决方案。

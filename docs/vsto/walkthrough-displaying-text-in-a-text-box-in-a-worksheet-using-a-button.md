@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text [Office development in Visual Studio], text boxes
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c499800efa783ce252dbf925f307bc64e814420f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906465"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
   本演练演示了在 Microsoft Office Excel 工作表上使用按钮和文本框的基础知识，以及如何使用 Visual Studio 中的 Office 开发工具创建 Excel 项目。 若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
@@ -71,10 +71,10 @@ ms.locfileid: "97522651"
 
 5. 将一个 " **按钮** " 控件拖到上 `Sheet1` ，然后更改以下属性：
 
-   |properties|值|
+   |属性|值|
    |--------------|-----------|
    |**名称**|**insertText**|
-   |**文本**|**插入文本**|
+   |**Text**|**插入文本**|
 
    现在，编写在单击按钮时要运行的代码。
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79eba6889583f1dfa482dab107ad31eaaacdbcc2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3572390f6e047d0e06b645b6a364971fe4557ea8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80733150"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904055"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 此方法获取服务器的计算机实用程序。
@@ -31,18 +31,18 @@ ms.locfileid: "80733150"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMachineUtilities_V7(
-   IDebugMDMUtil2_V7** ppUtil
+HRESULT GetMachineUtilities_V7(
+   IDebugMDMUtil2_V7** ppUtil
 );
 ```
 
 ```csharp
-int GetMachineUtilities_V7(
-   out IDebugMDMUtil2_V7 ppUtil
+int GetMachineUtilities_V7(
+   out IDebugMDMUtil2_V7 ppUtil
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppUtil`\
 弄返回 `IDebugMDMUtil2_V7` 表示计算机实用工具信息的接口。
 

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2cc0be42ace78dbd46fd64ce42f446a9449998b0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 279333dc85a225a679efd205805ccee282b11260
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80722808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906221"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 检索程序占用的内存字节数。
@@ -28,18 +28,18 @@ ms.locfileid: "80722808"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetMemoryBytes( 
+HRESULT GetMemoryBytes( 
    IDebugMemoryBytes2** ppMemoryBytes
 );
 ```
 
 ```csharp
-int GetMemoryBytes( 
+int GetMemoryBytes( 
    out IDebugMemoryBytes2 ppMemoryBytes
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppMemoryBytes`\
 弄返回一个 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 对象，该对象表示程序的内存字节。
 

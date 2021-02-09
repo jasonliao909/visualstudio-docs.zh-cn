@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 4e3d0a70-f22f-49dd-92d8-edf48ab62b52
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d9f93f0081d45e986ab6845cdaee53209b84e13
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 2bfcb9fdd7eff132d02c7d14be729cd871c8dd8e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905921"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧版语言服务中的大括号匹配
 大括号匹配有助于开发人员跟踪需要同时出现的语言元素，如括号和大括号。 当开发人员输入右大括号时，将突出显示左大括号。
@@ -42,7 +42,7 @@ ms.locfileid: "96190000"
 ## <a name="enable-support-for-brace-matching"></a>启用对大括号匹配的支持
  <xref:Microsoft.VisualStudio.Shell.ProvideLanguageServiceAttribute>属性可以设置 **MatchBraces**、 **MatchBracesAtCaret** 和 **ShowMatchingBrace** 注册表项，这些项可设置类的相应属性 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 。 还可以由用户设置语言首选项属性。
 
-|注册表项|Property|描述|
+|注册表项|属性|说明|
 |--------------------|--------------|-----------------|
 |MatchBraces|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBraces%2A>|启用大括号匹配。|
 |MatchBracesAtCaret|<xref:Microsoft.VisualStudio.Package.LanguagePreferences.EnableMatchBracesAtCaret%2A>|启用与插入符号移动的大括号匹配。|
@@ -137,6 +137,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [旧版语言服务分析器和扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)

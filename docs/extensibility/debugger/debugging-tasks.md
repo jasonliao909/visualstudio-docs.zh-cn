@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 5d60e9e8-305e-4a48-829f-b9440fc8af7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 83d351e2b995922d1a8257f7ea9fc0cdad67ab3e
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f27bc3f261e66791f41034923989b2cd61e09db6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915565"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904777"
 ---
 # <a name="debug-tasks"></a>调试任务
 要调试程序，必须启动该程序，并将调试引擎 (DE) 附加到该程序，否则 DE 必须附加到先前启动的程序。 附加后，DE 必须生成特定的启动事件。 作为响应，调试包将尝试绑定 IDE 中设置的断点。 当程序命中绑定断点时，它会暂停并等待用户输入。

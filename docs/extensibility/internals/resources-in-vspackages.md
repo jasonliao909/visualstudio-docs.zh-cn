@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2693d25e0b175a075bcc644077895076b75b7578
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 48f88f48f62818882dd15889cdfa1bd2a48d9808
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875721"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905817"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的资源
 可以将本地化的资源嵌入到本机附属 UI Dll、托管的附属 Dll 或托管的 VSPackage 本身中。
@@ -89,4 +89,4 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
 ## <a name="see-also"></a>另请参阅
 - [管理 VSPackages](../../extensibility/managing-vspackages.md)
-- [MFC 应用程序中已本地化的资源：附属 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
+- [MFC 应用程序中已本地化的资源：附属 Dll](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)
