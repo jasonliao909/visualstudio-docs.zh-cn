@@ -19,15 +19,15 @@ helpviewer_keywords:
 - examples [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5b5b1c34ef295558c42d181032dcf3dd7c456289
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 1762fcd07e42c8af5d51d31e9ab1f455d6f5d6bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527732"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99926581"
 ---
 # <a name="office-development-samples-and-walkthroughs"></a>Office 开发示例和演练
   本部分包含示例应用程序、示例代码和分步演练，它们阐释了用于构建 Microsoft Office 解决方案的语法、结构和技术。

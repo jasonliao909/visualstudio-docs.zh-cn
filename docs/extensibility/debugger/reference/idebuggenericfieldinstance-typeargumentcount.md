@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: e662c5ea-a5c1-478e-a268-5980dadffcd1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0f0272e86f5c1bbbd840ee222b2048440338302d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b811780bf135a700f0ea451ef148598fe621e4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80728154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928349"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 返回此实例的类型参数参数的数目。
@@ -38,7 +38,7 @@ int TypeArgumentCount(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pcArgs`\
 [in，out]此实例的类型参数参数的数目。
 

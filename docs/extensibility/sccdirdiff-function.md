@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1bb592a1174a91480ed76ef818733c288c5273c0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 8b7f045669a0d4b7e4e206c6ad8e85db55edc4ef
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701017"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929207"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函数
 此函数显示客户端磁盘上的当前本地目录与源代码管理下的相应项目之间的差异。
@@ -34,7 +34,7 @@ SCCRTN SccDirDiff(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pContext
 
 中源代码管理插件上下文结构。

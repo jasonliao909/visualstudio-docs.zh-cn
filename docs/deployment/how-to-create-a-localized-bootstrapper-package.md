@@ -11,18 +11,18 @@ helpviewer_keywords:
 ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4858a9efdad747293a94563196108d895c40880b
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94351240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927582"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
-创建引导程序包后，您可以通过为每个区域设置创建两个文件来创建每个区域设置的本地化版本的引导程序包：软件许可条款文件 (例如 *eula* ) 和包清单 ( *package.xml* ) 。
+创建引导程序包后，您可以通过为每个区域设置创建两个文件来创建每个区域设置的本地化版本的引导程序包：软件许可条款文件 (例如 *eula*) 和包清单 (*package.xml*) 。
 
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。
 
@@ -88,11 +88,11 @@ ms.locfileid: "94351240"
 
 4. 更新包清单的 `<Strings>` 部分，以便用法语表示错误字符串。
 
-5. 将 `<String Name="Culture">` 值更改为 *fr* 。
+5. 将 `<String Name="Culture">` 值更改为 *fr*。
 
 6. 保存 *package.xml* 文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建引导程序包](../deployment/creating-bootstrapper-packages.md)
 - [应用程序部署必备](../deployment/application-deployment-prerequisites.md)
 - [如何：创建程序包清单](../deployment/how-to-create-a-package-manifest.md)

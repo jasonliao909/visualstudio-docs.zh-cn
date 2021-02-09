@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 621ebf3949a273e06053ced67209aa052c25bce0
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: fe0db0267898b54837cd9d05e39b0ddce97d21cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80732796"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928453"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 获取作为字节 blob 的属性信息。
@@ -28,7 +28,7 @@ ms.locfileid: "80732796"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetAttributeBytes( 
+HRESULT GetAttributeBytes( 
    BYTE*  ppBlob,
    DWORD* pdwLen
 );
@@ -41,7 +41,7 @@ int GetAttributeBytes(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppBlob`\
 [in，out]用属性字节填充的数组。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2db20bb3298a7b849e8bc4a261987c5314a29841
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: b03b5fce58795488f6c379fcf93e5f7fea074e13
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974463"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927166"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此字段允许指定在各种菜单中显示的文本。 默认情况下，该 `ButtonText` 元素显示在菜单控制器中。 `ButtonText`如果其他文本字段为空，则元素也会成为默认值。 `ButtonText`即使指定了其他文本字段，元素也不能为空。
@@ -47,5 +47,5 @@ ms.locfileid: "94974463"
 ## <a name="text-value"></a>文本值
  元素的文本值提供了为 `ButtonText` 菜单项、combos 和其他用户界面显示的文本， (UI) 具有可见文本的元素。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

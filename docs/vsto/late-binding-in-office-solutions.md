@@ -14,15 +14,15 @@ helpviewer_keywords:
 - casting, object to specific type
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 201b850d8a577f8cc76aff97e2370998b6f885ed
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523570"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927647"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能获得的功能。 例如，某些方法和属性可以根据 Office 应用程序的上下文返回不同类型的对象，并且某些类型可以在不同的上下文中公开不同的方法或属性。

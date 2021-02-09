@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8d169f86548e97d4bb745e1ba91f39782de97cbc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ca8fb9bb69e98b907ef48620149a0a3fd16dbe53
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734169"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99928700"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 检索对调试进程的接口的引用。
@@ -37,7 +37,7 @@ public int GetProcess(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppProcess`\
 弄对调试过程接口的引用。
 
@@ -45,7 +45,7 @@ public int GetProcess(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的**CDebugCodeContext**对象实现此方法。
+下面的示例演示如何为公开 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的 **CDebugCodeContext** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugCodeContext::GetProcess(IDebugProcess2** ppProcess)

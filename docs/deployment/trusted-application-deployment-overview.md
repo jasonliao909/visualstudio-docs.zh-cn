@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: b24a1702-8fbe-45b1-87a0-9618a0708f1d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 96dfb98b468782f771d866b33b94b2c18de6276f
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 76f8aec5cec1d06b3c6162524e02ae1bb2faefc0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350486"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927400"
 ---
 # <a name="trusted-application-deployment-overview"></a>受信任的应用程序部署概述
 本主题概述了如何通过使用受信任的应用程序部署技术部署具有提升权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。
@@ -103,6 +103,6 @@ ms.locfileid: "94350486"
 ## <a name="limitations-of-trusted-application-deployment"></a>受信任的应用程序部署的限制
  可以使用受信任的应用程序部署通过 Web 或企业文件共享将提升的信任授予 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 无需对 CD 上分布的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序使用受信任的应用程序部署，因为默认情况下，以向这些应用程序授予完全信任。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)

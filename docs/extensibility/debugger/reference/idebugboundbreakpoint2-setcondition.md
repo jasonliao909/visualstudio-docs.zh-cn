@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f23fbe1b353378ca521fa802bdeae25fd12476df
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e4c90c75d1ddfe4edaeb47e132f5b049ee8d29a4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735461"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927101"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 设置或更改与此绑定断点关联的条件。
@@ -29,18 +29,18 @@ ms.locfileid: "80735461"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetCondition( 
+HRESULT SetCondition( 
    BP_CONDITION bpCondition
 );
 ```
 
 ```csharp
-int SetCondition( 
+int SetCondition( 
    enum_BP_CONDITION bpCondition
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `bpCondition`\
 中用于描述条件的 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 枚举中的一个值。
 
