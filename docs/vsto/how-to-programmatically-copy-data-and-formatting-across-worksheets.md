@@ -15,15 +15,15 @@ helpviewer_keywords:
 - copying data, Office development in Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cdcae80148e54f2e1adb09d4c69b2dc3268b7428
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: d768eb086707af2eeddeb18a77bad1ef1f101839
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97523196"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964233"
 ---
 # <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以编程方式在工作表之间复制数据和格式设置
   您可以使用方法将数据从一个工作表中的一个范围复制到工作簿中的所有其他表 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> 。 指定一个范围，以及是要复制数据、设置格式还是同时复制两者。

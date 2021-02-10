@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac8502b3d5058294efe102564453bb23a3eb3b98
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049236"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971604"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 
@@ -75,6 +75,6 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
 3. 修改该资源的选项。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 XAML 设计器创建 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - coded UI tests, data-driven
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d9c4deb02bea8bf6e3dc3615ba9c5f0eddc6c877
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: eadba1454e04c95bf1e2b3610a019e3503ec3af3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442672"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964480"
 ---
 # <a name="create-a-data-driven-coded-ui-test"></a>创建数据驱动的编码的 UI 测试
 
