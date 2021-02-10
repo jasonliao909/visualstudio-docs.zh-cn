@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 13b74765-0b7c-418e-8cd9-5f2e8db51ae5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a288beb618b0b539f53270928366349f47aee9e9
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 951b83f425f1e7171c519fced3fa3a4644279621
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934137"
 ---
 # <a name="test-guide-for-source-control-plug-ins"></a>源代码管理插件的测试指南
 本节提供使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 测试源代码管理插件的指南。 概述性介绍了最常见的测试区域以及可能存在问题的一些更复杂的区域。 此概述并未提供测试用例的详尽列表。

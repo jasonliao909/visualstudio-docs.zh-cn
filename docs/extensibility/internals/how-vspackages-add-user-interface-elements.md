@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3e2fe51c365e3e6936a73aef9d4de9d52024d47
-ms.sourcegitcommit: 2f964946d7044cc7d49b3fc10b413ca06cb2d11b
+ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761083"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934113"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏和工具窗口）添加到 Visual Studio 的用户界面。
@@ -109,7 +109,7 @@ VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏�
 ```
 
 #### <a name="groups"></a>组
-组是在 .vsct 文件的部分中定义的项 `Groups` 。 *.vsct* 组只是容器。 它们不会在 IDE 中显示，除非是菜单上的分隔线。 因此， [Group 元素](../../extensibility/group-element.md) 仅由其签名、优先级和父项定义。
+组是在 .vsct 文件的部分中定义的项 `Groups` 。  组只是容器。 它们不会在 IDE 中显示，除非是菜单上的分隔线。 因此， [Group 元素](../../extensibility/group-element.md) 仅由其签名、优先级和父项定义。
 
 一个组可以有一个菜单、另一个组或其本身作为父项。 但是，父级通常是菜单或工具栏。 前面示例中的菜单是组的子级 `IDG_VS_MM_TOOLSADDINS` ，该组是 Visual Studio 菜单栏的子组。 以下示例中的组是前面示例中的菜单的子组。
 
@@ -187,9 +187,9 @@ Combos 在部分中定义 `Combos` 。 每个 `Combo` 元素都表示 IDE 中的
 
 |元素|在命令表的此部分中定义|可以 (作为父项，也可以在节中放置 `CommandPlacements` ，或同时包含这两种) |可能包含被称为父级)  (|
 |-------------| - | - | - |
-|组|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|菜单、组、项本身|菜单、组和命令|
+|Group|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|菜单、组、项本身|菜单、组和命令|
 |菜单|[菜单元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|1到 *n* 组|0到 *n* 组|
-|Toolbar|[菜单元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|项本身|0到 *n* 组|
+|工具栏|[菜单元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|项本身|0到 *n* 组|
 |菜单项|[按钮元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 组，项本身|-0 到 *n* 组|
 |Button|[按钮元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 组，项本身||
 |组合图|[Combos 元素](../../extensibility/combos-element.md)，IDE，其他 vspackage|1到 *n* 组，项本身||
@@ -290,5 +290,5 @@ Combos 在部分中定义 `Combos` 。 每个 `Combo` 元素都表示 IDE 中的
 
 - 若要使某些 UI 元素在 IDE 中显示，您必须实现一个或多个接口或编写一些代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

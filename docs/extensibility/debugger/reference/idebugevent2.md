@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: de3d714d-96fb-4e12-b66b-a75391472153
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6341f8003b962a7f45420b076b23623ebdaf861
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6ff87d79d45c90a3307d5f28a2aa6109033f4a59
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933331"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 此接口用于传达关键调试信息，例如在断点处停止，以及非关键信息，如调试消息。

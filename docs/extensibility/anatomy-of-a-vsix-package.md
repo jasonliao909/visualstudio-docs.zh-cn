@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b86d62f-c274-4e91-82e0-38cdb9a423d5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fc65cda5eb969e361e90771e0245fdaeaeebcd1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 8d25430206129f0236661222b92cefdbe538a7ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598154"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933565"
 ---
 # <a name="anatomy-of-a-vsix-package"></a>VSIX 包的解析
 VSIX 包是一个 *.vsix* 文件，其中包含一个或多个 visual studio 扩展，以及 visual studio 用来分类和安装扩展的元数据。 该元数据包含在 VSIX 清单和 *[Content_Types] .xml* 文件中。 VSIX 包还可以包含一个或多个 *vsixlangpack* 文件以提供本地化的设置文本，并可能包含用于安装依赖项的其他 VSIX 包。
