@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5262d8b1-2648-429e-85d5-90fcaadfb362
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8d6df020694bb10fe4f3f051551056549d5673
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5b934c0e9532bd3bc1f53d9b00d1cc8273f4120
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315052"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872984"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 
@@ -51,11 +51,11 @@ ms.locfileid: "89315052"
 
 1. 右键单击断点图标（红色球），然后选择“条件”。
 
-2. 在**断点设置**窗口中，键入一个表达式。
+2. 在 **断点设置** 窗口中，键入一个表达式。
 
     ![条件断点](../debugger/media/dbg-multithreaded-conditional-breakpoint.png "ConditionalBreakpoint")
 
-3. 如果你对另一种类型的条件感兴趣，请在**断点设置**对话框中选择**筛选器**，而不是**条件表达式**，然后按照筛选器的提示操作。
+3. 如果你对另一种类型的条件感兴趣，请在 **断点设置** 对话框中选择 **筛选器**，而不是 **条件表达式**，然后按照筛选器的提示操作。
 
 ## <a name="configure-the-data-to-show-in-the-debugger"></a>配置要在调试器中显示的数据
 
@@ -102,7 +102,7 @@ ms.locfileid: "89315052"
 
 ![即时窗口](../debugger/media/dbg-tips-immediate-window.png "ImmediateWindow")
 
-此外，还可以在**监视**和**即时**窗口中使用[伪变量](../debugger/pseudovariables.md)，如 `$ReturnValue`。
+此外，还可以在 **监视** 和 **即时** 窗口中使用 [伪变量](../debugger/pseudovariables.md)，如 `$ReturnValue`。
 
 ## <a name="inspect-strings-in-a-visualizer"></a><a name="string_visualizer"></a>在可视化工具中检查字符串
 
@@ -110,7 +110,7 @@ ms.locfileid: "89315052"
 
 ![打开字符串可视化工具](../debugger/media/dbg-tips-string-visualizers.png "OpenStringVisualizer")
 
-字符串可视化工具可以帮你确定字符串的格式是否正确，具体取决于字符串的类型。 例如，如果**值**字段为空，表明可视化工具类型未识别出该字符串。 有关详细信息，请参阅[“字符串可视化工具”对话框](../debugger/string-visualizer-dialog-box.md)。
+字符串可视化工具可以帮你确定字符串的格式是否正确，具体取决于字符串的类型。 例如，如果 **值** 字段为空，表明可视化工具类型未识别出该字符串。 有关详细信息，请参阅[“字符串可视化工具”对话框](../debugger/string-visualizer-dialog-box.md)。
 
 ![JSON 字符串可视化工具](../debugger/media/dbg-tips-string-visualizer-json.png "JSONStringVisualizer")
 
@@ -120,13 +120,13 @@ ms.locfileid: "89315052"
 
 调试器会在发生未经处理的异常时中断代码。 不过，已处理的异常（例如，发生在 `try/catch` 块中的异常）也可能是 bug 的来源，你可能希望调查它们的发生时间。 可以通过配置“异常设置”对话框中的选项，将调试器配置为在发生已处理的异常时也中断代码。 通过选择“调试”>“窗口”>“异常设置”打开此对话框。
 
-通过**异常设置**对话框，你可以让调试器在特定异常处中断代码。 在下图中，调试器会在发生 `System.NullReferenceException` 时中断代码。 有关详细信息，请参阅[管理异常](../debugger/managing-exceptions-with-the-debugger.md)。
+通过 **异常设置** 对话框，你可以让调试器在特定异常处中断代码。 在下图中，调试器会在发生 `System.NullReferenceException` 时中断代码。 有关详细信息，请参阅[管理异常](../debugger/managing-exceptions-with-the-debugger.md)。
 
 ![“异常设置”对话框](../debugger/media/dbg-tips-exception-settings.png "ExceptionSettingsDialogBox")
 
 ## <a name="debug-deadlocks-and-race-conditions"></a>调试死锁和争用条件
 
-如果需要调试的问题对于多线程应用程序很常见，在调试时查看线程的位置，通常会有所帮助。 可使用**源中显示线程**按钮轻松完成此操作。
+如果需要调试的问题对于多线程应用程序很常见，在调试时查看线程的位置，通常会有所帮助。 可使用 **源中显示线程** 按钮轻松完成此操作。
 
 #### <a name="to-show-threads-in-your-source-code"></a>在源代码中显示线程
 
@@ -156,13 +156,13 @@ ms.locfileid: "89315052"
 
 ## <a name="get-more-familiar-with-how-the-debugger-attaches-to-your-app-c-c-visual-basic-f"></a><a name="modules_window"></a> 进一步了解调试器如何附加到应用（C#、C++、Visual Basic、F#）
 
-若要附加到正在运行的应用，调试器将加载为想要调试的应用的相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，了解符号文件的一些知识非常有用。 你可在**模块**窗口中检查 Visual Studio 如何加载符号文件。
+若要附加到正在运行的应用，调试器将加载为想要调试的应用的相同内部版本生成的符号 (.pdb) 文件。 在某些情况下，了解符号文件的一些知识非常有用。 你可在 **模块** 窗口中检查 Visual Studio 如何加载符号文件。
 
 调试时，通过选择“调试”>“窗口”>“模块”来打开“模块”窗口。 “模块”窗口可以告诉你调试器将哪些模块视为用户代码或[我的代码](../debugger/just-my-code.md)，以及模块的符号加载状态。 在大多数情况下，调试器会自动查找用户代码的符号文件，但是如果你想要单步执行（或调试）.NET 代码、系统代码或第三方库代码，则需要执行额外的步骤来获取正确的符号文件。
 
 ![在“模块”窗口中查看符号信息](../debugger/media/dbg-tips-modules-window.png "ViewSymbolInformation")
 
-你可以直接在**模块**窗口中右键单击并选择**加载符号**来加载符号信息。
+你可以直接在 **模块** 窗口中右键单击并选择 **加载符号** 来加载符号信息。
 
 有时，应用开发人员发布的应用不包含匹配的符号文件 （为了减少占用的空间），但会为内部版本保留一份匹配的符号文件，用于以后调试发布版本。
 

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d930ed8d918a08503a6eaa6b60848abeec7683a
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796831"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99878430"
 ---
 # <a name="cl-task"></a>CL 任务
 
@@ -66,7 +66,7 @@ ms.locfileid: "92796831"
 
    可选 String 参数。
 
-   一个始终在命令行上发出的字符串。 其默认值为“ **/c** ”。
+   一个始终在命令行上发出的字符串。 其默认值为“ **/c**”。
 
 - **AssemblerListingLocation**
 
@@ -140,7 +140,7 @@ ms.locfileid: "92796831"
 
    可选的布尔参数。
 
-   如果为 `true`，则指示 **MSBuild** 由 IDE 调用。 否则，在命令行上调用 **MSBuild** 。
+   如果为 `true`，则指示 **MSBuild** 由 IDE 调用。 否则，在命令行上调用 **MSBuild**。
 
 - **CallingConvention**
 
@@ -222,7 +222,7 @@ ms.locfileid: "92796831"
 
    可选的布尔参数。
 
-   如果为 **true** ，则告知编译器发出不与 ANSI C 或 ANSI C++ 兼容的语言构造错误。
+   如果为 **true**，则告知编译器发出不与 ANSI C 或 ANSI C++ 兼容的语言构造错误。
 
    有关详细信息，请参阅 [/Za、/Ze（禁用语言扩展）](/cpp/build/reference/za-ze-disable-language-extensions)的 /Za 选项  。
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 14c2a786-c23a-4b2d-acad-8c32a856c70d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 692902b2d2b612c71c2d1dc0f936c7550f430847
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: e20d3f83d6e68211d1b48f63747bea80ee6b25d9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903398"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99876324"
 ---
 # <a name="messages-view"></a>消息视图
 每个窗口都有一个关联的消息流。 消息视图窗口显示此消息流。 窗口句柄、消息代码和消息会进行显示。 也可以为线程或进程创建消息视图。 这使你可以查看发送到特定进程或线程所拥有的所有窗口的消息，这对于捕获窗口初始化消息特别有用。

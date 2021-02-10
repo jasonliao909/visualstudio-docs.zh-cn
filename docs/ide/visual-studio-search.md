@@ -16,15 +16,15 @@ ms.assetid: 3870a8fd-4afa-4f1e-a811-9fdf41a9e82d
 monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9f8182646af4facb0f2f86c74f95dff091d55d1
-ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92199678"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873900"
 ---
 # <a name="use-visual-studio-search"></a>使用 Visual Studio 搜索
 
@@ -43,28 +43,28 @@ Visual Studio 集成开发环境 (IDE) 提供了许多菜单、选项和功能�
 
 你可以使用 Visual Studio 搜索框来查找设置、选项和类似的配置项目。 例如，搜索“更改主题”，以快速查找并打开对话框，使用该对话框可更改 Visual Studio 颜色主题，如以下屏幕截图所示：
 
-:::image type="content" source="media/visual-studio-search-options.png" alt-text="Visual Studio 搜索框":::
+:::image type="content" source="media/visual-studio-search-options.png" alt-text="搜索 Visual Studio 设置和选项":::
 
 > [!TIP]
 > 在大多数情况下，Visual Studio 搜索还会提供结果中每个项的菜单、快捷键和位置。
 
 你可以使用 Visual Studio 搜索框来查找菜单项和命令。 例如，搜索“clean sol”，可快速查找并执行“清理解决方案”命令。 搜索结果还会提示如何在菜单中找到此命令，如以下屏幕截图所示：
 
-:::image type="content" source="media/visual-studio-search-menu.png" alt-text="Visual Studio 搜索框":::
+:::image type="content" source="media/visual-studio-search-menu.png" alt-text="搜索 Visual Studio 菜单项和命令":::
 
 最后，还可以搜索意外关闭的窗口或面板。 例如，搜索“测试”，以查找并打开“测试资源管理器”窗口：
 
-:::image type="content" source="media/visual-studio-search-window.png" alt-text="Visual Studio 搜索框":::
+:::image type="content" source="media/visual-studio-search-window.png" alt-text="搜索 Visual Studio 窗口和面板":::
 
 ## <a name="search-files-and-code"></a>搜索文件和代码
 
 Visual Studio 搜索还会在解决方案项中搜索文件名、代码、方法和其他匹配项。 在以下屏幕截图中，针对 markdown 的搜索过程在解决方案中找到了 MarkdownMetaExtractor.cs 文件、`MarkdownMetaExtractor` 类和两个方法：
 
-:::image type="content" source="media/visual-studio-search-files.png" alt-text="Visual Studio 搜索框":::
+:::image type="content" source="media/visual-studio-search-files.png" alt-text="使用 Visual Studio 搜索来搜索文件":::
 
 你还可以进行“驼峰大小写”搜索。 在以下屏幕截图中，针对 FSS 的搜索过程找到了 FolderSizeScanner 文件、类和方法  ：
 
-:::image type="content" source="media/visual-studio-search-camel.png" alt-text="Visual Studio 搜索框":::
+:::image type="content" source="media/visual-studio-search-camel.png" alt-text="使用 Visual Studio 搜索进行驼峰搜索":::
 
 ## <a name="see-also"></a>请参阅
 
