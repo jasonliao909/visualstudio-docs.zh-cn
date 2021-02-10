@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: aa6824d5-c932-42ba-8713-950e7d1fb42f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 53c72182b497e2b24d41a784c405d169c3db195f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2f2fa330b98a37f3946ef19bc2f5641b5b525d88
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726283"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953482"
 ---
 # <a name="idebugobject2getalias"></a>IDebugObject2::GetAlias
 获取与此对象关联的别名（如果有）。
@@ -28,18 +28,18 @@ ms.locfileid: "80726283"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetAlias(
-   IDebugAlias** ppAlias
+HRESULT GetAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int GetAlias(
-   out IDebugAlias ppAlias
+int GetAlias(
+   out IDebugAlias ppAlias
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppAlias`\
 弄返回表示此对象的别名的 [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md) 对象;否则，返回 null 值。
 

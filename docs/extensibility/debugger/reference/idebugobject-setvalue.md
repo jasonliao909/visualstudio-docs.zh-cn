@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e4652eb3c77a1871063dfa71b464fb1f7c43f94
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c282e5682cb01da56407cbbcb91a69984ded85de
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726366"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953586"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 从连续的字节序列中设置对象的值。
@@ -28,7 +28,7 @@ ms.locfileid: "80726366"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetValue( 
+HRESULT SetValue( 
    BYTE* pValue,
    UINT  nSize
 );
@@ -41,7 +41,7 @@ int SetValue(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pValue`\
 中表示新值的字节数组。
 
