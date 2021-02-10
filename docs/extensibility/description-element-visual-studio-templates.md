@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f244fb6d681c9cc22416422be3ade098c67deea
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671280"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968328"
 ---
 # <a name="description-element-visual-studio-templates"></a>Visual Studio 模板 (Description 元素) 
 指定在 " **新建项目** " 或 " **添加新项** " 对话框中显示的模板的说明。
@@ -43,7 +43,7 @@ ms.locfileid: "94671280"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |`Package`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 包 ID 的 GUID。|
 |`ID`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 资源 ID。|
@@ -62,7 +62,7 @@ ms.locfileid: "94671280"
 
  此文本提供模板的说明。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `Description` 是元素的必需子元素 `TemplateData` 。
 
 ## <a name="example"></a>示例

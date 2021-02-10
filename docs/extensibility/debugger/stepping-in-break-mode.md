@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80273bf470a3ed0c342e781085de6e991508451c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4f284fecf32a94f7187ecd34798f9ac21f476804
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960671"
 ---
 # <a name="stepping-in-break-mode"></a>中断模式下的单步执行
 以下部分介绍调试器处于中断模式下时所发生的过程，并且必须单步执行代码：
@@ -30,5 +30,5 @@ ms.locfileid: "96845188"
 
 2. 步骤完成后，发送 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 作为停止事件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

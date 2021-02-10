@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 08319157-43fb-44a9-9a63-50b919fe1377
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49c85e3d371bfd729d55e9d17a6c8de61924e35f
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a056f3a7d986ca9abcf82edd3a77aac013665976
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845305"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960814"
 ---
 # <a name="send-the-required-events"></a>发送所需的事件
 使用此过程来发送所需的事件。
@@ -38,5 +38,5 @@ ms.locfileid: "96845305"
 > [!NOTE]
 > 许多语言使用 (从 CRT 库中的全局初始值设定项或外部预编译函数，或 _Main) 在其代码的开头。 如果正在调试的程序的语言在初始入口点之前包含这两种类型的元素，则会运行此代码，并在达到用户入口点（如 **main** 或）时发送入口点事件 `WinMain` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: fbb1928d-dddc-43d1-98a4-e23b0ecbae09
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2c51b1fd345789cabbb9735621626ab7c2db993
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d67716f78249bda5d316ffde175b80f4ef1c1e45
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845279"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960775"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 会话调试管理器 (SDM) 管理任意数量的调试引擎)  (用于在多个进程中调试任意数量的程序的调试引擎。 除了成为调试引擎多路复用器外，SDM 还为 IDE 提供了一个统一的调试会话视图。
@@ -38,7 +38,7 @@ ms.locfileid: "96845279"
 
  SDM 不跟踪当前程序、线程或堆栈帧。 进程、程序和线程信息与特定的调试事件一起发送到 SDM。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调试引擎](../../extensibility/debugger/debug-engine.md)
 - [调试器组件](../../extensibility/debugger/debugger-components.md)
 - [调试器上下文](../../extensibility/debugger/debugger-contexts.md)
