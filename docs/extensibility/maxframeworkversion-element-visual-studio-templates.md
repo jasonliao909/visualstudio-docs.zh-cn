@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f732a9d3-fc29-405b-9298-01ea83fc58b8
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44345b712f448bd7eedf288d7c58cb4193e1b020
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 09ddccece8261a331277d1c143054305f0d08d7e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672420"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943200"
 ---
 # <a name="maxframeworkversion-element-visual-studio-templates"></a> (Visual Studio 模板的 MaxFrameworkVersion 元素) 
 
@@ -57,7 +57,7 @@ ms.locfileid: "94672420"
 
  文本必须是模板允许的 .NET Framework 的最高版本号。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `MaxFrameworkVersion` 是可选元素。 `MaxFrameworkVersion`除非需要，否则应省略元素，以免无意中限制模板 .NET Framework 版本的支持范围。 如果 .NET Framework 不适用于模板，也应该省略此方法。
 

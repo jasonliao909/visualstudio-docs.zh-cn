@@ -5,15 +5,15 @@ ms.date: 11/13/2017
 ms.topic: overview
 author: kraigb
 ms.author: kraigb
-manager: jillfra
+manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 89aa8b9d1b1f288e19252b8a111666f5b4e3e087
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.openlocfilehash: 76230555defd9367800f6c3c4e5ea0fe24a5195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946340"
 ---
 # <a name="work-with-r-in-visual-studio"></a>在 Visual Studio 中使用 R
 
@@ -49,8 +49,8 @@ R 是用于统计计算和图形的高度可扩展语言和环境。 它是使�
 
 ## <a name="send-us-your-feedback"></a>向我们发送反馈！
 
-1. GitHub 问题****：联系 RTVS 团队的最佳方式是[在 GitHub 中上报问题](https://github.com/Microsoft/RTVS/issues)或使用“R 工具”**** > “反馈”**** 菜单。
+1. GitHub 问题：联系 RTVS 团队的最佳方式是[在 GitHub 中上报问题](https://github.com/Microsoft/RTVS/issues)或使用“R 工具” > “反馈”菜单。
 
-1. 发送笑脸/哭脸：使用“R 工具” > “反馈”菜单，可以快速发送反馈，并附加 RTVS 日志文件，以帮助我们诊断所遇到的问题************。 （如果要单独发送，请将日志写入 %temp%/RTVSlogs.zip。）如果已使用“帮助” > “反馈” > “设置”菜单命令或在安装期间选择禁用了 Visual Studio 遥测，日志记录也会被禁用  。
+1. 发送笑脸/哭脸：使用“R 工具” > “反馈”菜单，可以快速发送反馈，并附加 RTVS 日志文件，以帮助我们诊断所遇到的问题。 （如果要单独发送，请将日志写入 %temp%/RTVSlogs.zip。）如果已使用“帮助” > “反馈” > “设置”菜单命令或在安装期间选择禁用了 Visual Studio 遥测，日志记录也会被禁用  。
 
-1. 电子邮件：可以直接向团队发送反馈，地址是 rtvsuserfeedback@microsoft.com******。
+1. 电子邮件：可以直接向团队发送反馈，地址是 rtvsuserfeedback@microsoft.com。

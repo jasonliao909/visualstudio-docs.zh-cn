@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dce13e49eeadf4dc02fec07707bebcfe164ed9c
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: de29b012914ac9997a78674fd3215f2c15d43c6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945911"
 ---
 # <a name="launch-a-program"></a>启动程序
 要调试程序的用户可以按 **F5** 从 IDE 中运行调试器。 这将开始一系列事件，这些事件最终会导致 IDE 连接到调试引擎， (DE) ，然后将其连接或附加到程序，如下所示：
@@ -27,7 +27,7 @@ ms.locfileid: "96606692"
 
 2. 如果指定了 DE，则 DE 会调用操作系统来启动程序。 作为启动程序的结果，程序的运行时环境将加载。 例如，如果使用 MSIL 编写程序，则将调用公共语言运行时来运行程序。
 
-    \- 或 -
+    -或-
 
     如果未指定 DE，端口将调用操作系统来启动程序，这会导致程序的运行时环境加载。
 
@@ -51,7 +51,7 @@ ms.locfileid: "96606692"
 
    如果 `GUID_NULL` 传递了，则端口启动程序。 程序运行后，运行时环境将创建一个 `IDebugProgramNode2` 接口，用于描述程序并将其传递给 `IDebugPortNotify2::AddProgramNode` 。 这会通知端口该程序正在运行。 然后，SDM 将调试引擎附加到正在运行的程序。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [通知端口](../../extensibility/debugger/notifying-the-port.md) 说明启动程序并通知端口后会发生的情况。
 
  [启动后附加](../../extensibility/debugger/attaching-after-a-launch.md) 当调试会话准备好将 DE 附加到程序时进行记录。

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8e846354b2d48b2f7866daa14987e757f41779c8
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480507"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946678"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 文件
 在源代码管理插件 API 1.2 中， *~ SAK* 文件已替换为功能标志和新函数，这些函数可检测源代码管理插件是否支持 *mssccprj.scc* 文件和共享签出。
@@ -52,5 +52,5 @@ Visual Studio .NET 2003 创建了前缀为 *~ SAK* 的临时文件。 这些文�
 > [!NOTE]
 > 如果此注册表项设置为 *dword： 00000000*，则等效于不存在的键，并且 Visual Studio 仍将尝试创建临时文件。 但是，如果注册表项设置为 *dword： 00000001*，则 Visual Studio 不会尝试创建临时文件。 而是假定源代码管理插件不支持 *mssccprj.scc* 文件，并且不支持共享签出。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 版本1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

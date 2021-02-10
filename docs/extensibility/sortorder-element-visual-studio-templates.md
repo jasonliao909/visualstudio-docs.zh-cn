@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f07c3b62d1412564fd74c420b31b2a9fed41d1fa
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 2a086f2ae678541ce28e9ede874c4198e349f438
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903736"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942914"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
 指定一个值，该值用于在同一类别中的其他模板之间进行排列，如在 " **新建项目** " 或 " **添加新项** " 对话框中显示的模板。
@@ -55,7 +55,7 @@ ms.locfileid: "94903736"
 
  一个 `integer` ，它表示排序顺序值。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `SortOrder` 是可选元素。 默认值为100，所有值都必须是10的倍数。
 
  `SortOrder`对于用户创建的模板，将忽略元素。 所有用户创建的模板都按字母顺序排序。

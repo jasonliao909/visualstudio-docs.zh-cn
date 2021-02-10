@@ -20,15 +20,15 @@ helpviewer_keywords:
 - Office, development with Visual Studio
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: abd9d3aac289df702554790673cb6561a6e2488d
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: cebcb16708e42f8102e2dc235b52a81e16c588c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940899"
 ---
 # <a name="office-and-sharepoint-development-in-visual-studio"></a>Visual Studio 中的 Office 和 SharePoint 开发
   可以通过创建用户从 [Office 应用商店](https://store.office.com/) 或组织目录中下载的轻量级应用程序或外接程序来扩展 Microsoft Office 和 SharePoint，或者通过创建用户在计算机上安装的基于 .NET Framework 的解决方案来扩展。
@@ -59,7 +59,7 @@ ms.locfileid: "97525338"
 
  ![适用于 Office 的内容应用程序](../vsto/media/appforoffice.png "适用于 Office 的内容应用程序")
 
- **了解详细信息**
+ **了解更多信息**
 
 |功能|查看|
 |--------|---------|
@@ -75,7 +75,7 @@ ms.locfileid: "97525338"
 
  ![适用于 SharePoint 的商务联系人管理器应用程序](../vsto/media/appforsharepoint.png "适用于 SharePoint 的商务联系人管理器应用程序")
 
- **了解详细信息**
+ **了解更多信息**
 
 |功能|查看|
 |--------|---------|
@@ -90,7 +90,7 @@ ms.locfileid: "97525338"
 
  ![PowerPoint 外接程序解决方案](../vsto/media/powerpointaddin.png "PowerPoint 外接程序解决方案")
 
- **了解详细信息**
+ **了解更多信息**
 
 |功能|读取|
 |--------|----------|
@@ -102,7 +102,7 @@ ms.locfileid: "97525338"
 
  SharePoint 解决方案需要内部部署的 SharePoint 场服务器。 管理员必须安装它们，而且由于是在 SharePoint 中执行解决方案，因此可能会影响服务器性能。 但是，解决方案提供了对 SharePoint 对象更深层次的访问。 此外，当你构建 SharePoint 解决方案时，你可以借助 .NET Framework 并使用 C# 和 Visual Basic 与 SharePoint 对象进行交互。
 
- **了解详细信息**
+ **了解更多信息**
 
 |功能|查看|
 |--------|---------|

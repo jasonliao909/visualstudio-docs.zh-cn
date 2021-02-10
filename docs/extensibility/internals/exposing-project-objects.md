@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5bb24967-434a-4ef4-87a0-2f3250c9e22d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d93b1bf414a9e58f8311a1f1d7066a789ef8c6b6
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 86b6151878f4d437013196fe738c457bbd188fc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946600"
 ---
 # <a name="expose-project-objects"></a>公开项目对象
 
@@ -93,6 +93,6 @@ ms.locfileid: "96479506"
 
      `Projects`对于项目自动化模型的其余部分，自定义集合对象是一个便捷入口点。 你的项目对象也可以从 <xref:EnvDTE.Solution> 项目集合进行访问。 创建了为使用者提供集合对象的相应代码和注册表项后 `Projects` ，实现必须为项目模型提供剩余的标准对象。 有关详细信息，请参阅 [项目建模](../../extensibility/internals/project-modeling.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

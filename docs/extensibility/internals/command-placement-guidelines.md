@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11a1619eaa625e086ac93bfa0f9e208239f8c844
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 37779a8c790e50e63f70dfd9023d3ba6a84d0170
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305247"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940144"
 ---
 # <a name="command-placement-guidelines"></a>命令放置准则
 在 Visual Studio 集成开发环境中定位命令的最佳做法 (IDE) 不同，具体取决于命令集的大小。 命令根据 *.vsct* 文件中的信息进行定义和定位。

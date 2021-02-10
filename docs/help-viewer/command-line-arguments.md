@@ -6,15 +6,15 @@ ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 24011c50cf6f8d2204abdaa8b6119f7873470bcf
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 905284d69d23971771eecd9da6cef5c5051f36ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879042"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944272"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行参数
 
@@ -47,7 +47,7 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 
 下表定义了可以用于 Help Content Manager 的命令行工具的开关和参数：
 
-|开关|必需？|参数|
+|交换机|必需？|自变量|
 |------------|---------------|---------------|
 |/operation|是|-   **Install** -- 将书籍从指定安装源添加到本地内容存储区。<br />     此开关需要 /booklist 自变量、/sourceURI 自变量或两者。 如果未指定 /sourceURI 参数，则默认 Visual Studio URI 用作安装源。 如果未指定 /booklist 变量，则会安装 /sourceUri 上的所有书籍。<br />-   **Uninstall** -- 从本地内容存储区中删除指定的书籍。<br />     此开关需要 /booklist 自变量或 /sourceURI 自变量。  如果指定 /sourceURI 自变量，则会移除所有书籍，并且会忽略 /booklist 自变量。<br />-   **Move** -- 将本地存储区移动到指定的路径。 默认本地存储区路径设置为 *% ProgramData%* 下的目录<br />     此开关需要 /locationPath 和 /catalogName 自变量。 如果指定的路径无效或驱动器未包含足够的可用空间来存放内容，则会在事件日志中记录错误消息。<br />-   **Refresh** -- 更新自安装或最近更新以来已更改的主题。<br />     此开关需要 /sourceURI 自变量。|
 |/catalogName|是|指定内容目录的名称。 对于 Visual Studio 2017 和 Visual Studio 2019，这是 VisualStudio15。|
@@ -61,8 +61,8 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 |/membership|否|-   **Minimum** -- 基于使用 /skuId 开关指定的 SKU 安装最小帮助内容集。 SKU 与内容集之间的映射在服务 API 中进行公开。<br />-   **Recommended** -- 针对使用 /skuId 参数指定的 SKU 安装一组推荐书籍。 安装源是服务 API 或 *。.MSHA*。<br />-   **Full** -- 针对使用 /skuId 参数指定的 SKU 安装整套书籍。 安装源是服务 API 或 *。.MSHA*。|
 |/locationpath|否|指定本地帮助内容的默认文件夹。 必须仅使用此开关安装或移动内容。 如果指定此开关，则还必须指定 /silent 开关。|
 |/silent|否|安装或移除帮助内容，而不提示用户或显示任何 UI（包括状态通知区域中的图标）。 输出记录到 *% Temp%* 目录中的文件。 **重要提示：**  若要以无提示方式安装内容，必须使用经过数字签名的 *.cab* 文件，而不是 *.mshc* 文件。|
-|/launchingApp|否|当在没有父应用程序的情况下启动帮助查看器时，定义应用程序和目录上下文。 此开关的参数是 CompanyName、ProductName 和 VersionNumber（例如 `/launchingApp Microsoft,VisualStudio,16.0`）******。<br /><br /> 使用 /silent 参数安装内容时需要此开关。|
-|/wait Seconds**|否|暂停安装、卸载和刷新操作。 如果操作已在对目录进行，则进程会等待给定秒数，然后继续。 使用 0 表示无限期等待。|
+|/launchingApp|否|当在没有父应用程序的情况下启动帮助查看器时，定义应用程序和目录上下文。 此开关的参数是 CompanyName、ProductName 和 VersionNumber（例如 `/launchingApp Microsoft,VisualStudio,16.0`）。<br /><br /> 使用 /silent 参数安装内容时需要此开关。|
+|/wait Seconds|否|暂停安装、卸载和刷新操作。 如果操作已在对目录进行，则进程会等待给定秒数，然后继续。 使用 0 表示无限期等待。|
 |/?|否|列出 Help Content Manager 的命令行工具的开关及其说明。|
 
 ### <a name="exit-codes"></a>退出代码
@@ -91,7 +91,7 @@ OnlineHelpPreferenceDisabled = 1201
 UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because another was in progress.)
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Help Viewer 管理员指南](../help-viewer/administrator-guide.md)
 - [Help Content Manager 替代](../help-viewer/behavior-overrides.md)

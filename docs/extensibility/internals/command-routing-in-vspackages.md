@@ -10,20 +10,20 @@ helpviewer_keywords:
 ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8168fbe3ad5ba9b1b332aebc4675ecd8e752ee7e
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: d05612f9d15c3670411a7901157570fbb3e315a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305220"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939989"
 ---
 # <a name="command-routing-in-vspackages"></a>Vspackage 中的命令传送
 命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据执行它的上下文进行路由。 它从初始上下文到全局上下文的外部路由。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [命令传送算法](../../extensibility/internals/command-routing-algorithm.md)
 
  描述命令路由解决方案的顺序。

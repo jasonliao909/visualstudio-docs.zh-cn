@@ -14,15 +14,15 @@ helpviewer_keywords:
 - collaborative development [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d30f28b3e97469bc9e0bf921438960206b4f89c0
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 028530014afdc78ab6c9c0483c3d443195383793
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845799"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942303"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>开发 Office 解决方案的协作开发
   多个开发人员可以采用与在其他 Visual Studio 项目上协作的相同方式来处理 Office 项目。 即使 Office 安装在不同的位置，Visual Studio 也会正确地在每台计算机上查找 Microsoft Office 安装。 但是，需要注意一些重要的注意事项。
@@ -40,11 +40,11 @@ ms.locfileid: "96845799"
  进行更改后，请重新检查所有文件。 有关项目中隐藏代码文件的详细信息，请参阅 [Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)。
 
 ## <a name="security-for-informal-collaboration-on-a-network"></a>网络上的非正式协作的安全性
- 对于位于网络位置 (例如 Servername 共享) 中的所有文档级解决方案 \\ \\ *Servername* \\ *Sharename* ，必须将完全限定的位置添加到正在使用的 Microsoft Office 应用程序中的受信任文件夹列表。 选择此选项以在主文件夹下包含子目录，或者将调试文件夹和生成文件夹专门添加到受信任文件夹列表。 有关如何执行此操作的详细信息，请参阅 [向文档授予信任](../vsto/granting-trust-to-documents.md)。
+ 对于位于网络位置 (例如 Servername 共享) 中的所有文档级解决方案 \\ \\  \\  ，必须将完全限定的位置添加到正在使用的 Microsoft Office 应用程序中的受信任文件夹列表。 选择此选项以在主文件夹下包含子目录，或者将调试文件夹和生成文件夹专门添加到受信任文件夹列表。 有关如何执行此操作的详细信息，请参阅 [向文档授予信任](../vsto/granting-trust-to-documents.md)。
 
  在生成时自动生成的临时证书不受密码保护。 证书包含开发人员的登录名和其他个人信息。 如果部署由临时证书签名的自定义项，则其他人可以访问此信息。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 Office 解决方案](../vsto/securing-office-solutions.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [构建 Office 解决方案](../vsto/building-office-solutions.md)

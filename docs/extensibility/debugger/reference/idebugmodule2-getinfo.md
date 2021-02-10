@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c68c583702d7def5a7bff3ee40a9b8b2c537bb31
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 205a32c0c7c6bb10b8b0a58e62f5d6ba5cdca91f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941695"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 获取有关此模块的信息。
@@ -29,20 +29,20 @@ ms.locfileid: "80726960"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetInfo( 
+HRESULT GetInfo( 
    MODULE_INFO_FIELDS dwFields,
    MODULE_INFO*       pInfo
 );
 ```
 
 ```cpp
-int GetInfo( 
+int GetInfo( 
    enum_MODULE_INFO_FIELDS dwFields,
    MODULE_INFO[]           pInfo
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中 [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md) 枚举中的标志的组合，用于指定 `pInfo` 要填写的字段。
 

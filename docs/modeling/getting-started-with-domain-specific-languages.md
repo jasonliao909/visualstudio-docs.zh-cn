@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eaab198edae66fc334e854ae1f47dae313dce76b
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 8fe531b127d657228ed68fa79358ef5df69ff17c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363479"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941484"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -63,7 +63,7 @@ Dsl 的一个主体应用程序是生成程序代码、配置文件和其他项�
 
      ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
-4. 在 " **名称** " 框中，键入 **FamilyTree**。 单击 **“确定”** 。
+4. 在 " **名称** " 框中，键入 **FamilyTree**。 单击“确定”。
 
      " **域特定语言向导** " 将打开，并显示模板 DSL 解决方案列表。
 
@@ -409,7 +409,7 @@ DSL 生成一个 API，该 API 允许你读取和更新作为 DSL 实例的模�
 
 2. 重新生成仍想要使用的任何实验性 Dsl 或其他实验性 Visual Studio 扩展。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

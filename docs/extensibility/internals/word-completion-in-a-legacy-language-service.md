@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489b43c825e3512e1bd33bc732833de84aed54c3
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616270"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943363"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>旧版语言服务中的文字完成
 单词完成填写部分类型的单词上缺少的字符。 如果只有一个可能的完成，则在输入完成字符时将完成单词。 如果部分单词匹配多个可能的完成，则会显示一个可能的完成列表。 完成字符可以是任何不用于标识符的字符。

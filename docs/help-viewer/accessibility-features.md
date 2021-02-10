@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 94a3225c-d2cb-4565-8453-855d1cdc1acf
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 359a1c4c87a139c35bf38d36edc6a53b2147dd98
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 7ada860eb82b6c391e04e7431d6625c876174654
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879068"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944350"
 ---
 # <a name="accessibility-features-of-the-help-viewer"></a>Help Viewer 的辅助功能
 Microsoft 致力于使其产品和服务更便于每个人使用。 本主题包含有关功能、产品和服务的信息，有助于让用户可以使用 Microsoft Help Viewer 的丰富功能。
@@ -34,7 +34,7 @@ Microsoft 致力于使其产品和服务更便于每个人使用。 本主题包
 ## <a name="help-viewer-position"></a>帮助查看器位置
 可以通过将帮助查看器的标题栏拖到其他位置来重新定位帮助查看器。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [快捷键 (帮助查看器) ](../help-viewer/shortcut-keys.md)

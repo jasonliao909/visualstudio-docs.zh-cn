@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ce08d475c75f197180417dcf94f9d52f59fb2e7b
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133931"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844887"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 

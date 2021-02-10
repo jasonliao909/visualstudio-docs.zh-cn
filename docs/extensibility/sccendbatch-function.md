@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51fe7e0bc0d417ffa182fbc68fd2779ed0b625d9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 85d49fcd9920c442aa1736f1fb0f3e46ccd4eba0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943044"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
 此函数将结束一批源代码管理操作。 这些批处理不能嵌套。
@@ -28,7 +28,7 @@ ms.locfileid: "80700925"
 SCCRTN SccEndBatch(void);
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
  无。
 
 ## <a name="return-value"></a>返回值

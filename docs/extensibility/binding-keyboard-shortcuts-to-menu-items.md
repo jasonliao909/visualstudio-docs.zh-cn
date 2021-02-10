@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 112089581965b96133f2160341a13efe23329934
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974626"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941926"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 若要将键盘快捷方式绑定到自定义菜单命令，只需将条目添加到包的 *.vsct* 文件。 本主题说明如何将键盘快捷方式映射到自定义按钮、菜单项或工具栏命令，以及如何在默认编辑器中应用键盘映射或将其限制为自定义编辑器。
@@ -101,11 +101,11 @@ ms.locfileid: "94974626"
 ```
 
 ## <a name="example-2"></a>示例 2
- 此示例将键盘快捷方式 **Ctrl +** 绑定 + **B** 到名为的项目中名为的命令 `cmdidBold` `TestEditor` 。 命令仅在自定义编辑器中可用，在其他编辑器中不可用。
+ 此示例将键盘快捷方式 **Ctrl +** 绑定 + 到名为的项目中名为的命令 `cmdidBold` `TestEditor` 。 命令仅在自定义编辑器中可用，在其他编辑器中不可用。
 
 ```xml
 <KeyBinding guid="guidVSStd97" id="cmdidBold" editor="guidTestEditorEditorFactory" key1="B" mod1="Control" />
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)

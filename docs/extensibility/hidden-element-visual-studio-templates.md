@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f37406b0-52e7-4f2c-aacf-bc8d7a4117b3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 04cb966f21bbb501545f1a203297d06f8e852793
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 476e187a0e4c3cefde7f09124fbbd21374e2175c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672695"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945690"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Visual Studio 模板 (隐藏元素) 
 
@@ -63,7 +63,7 @@ ms.locfileid: "94672695"
 
 文本必须是 `true` 或 `false` ，指示模板是否将出现在 " **新建项目** " 或 " **添加新项** " 对话框中。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
 
 `Hidden` 是可选元素。
 

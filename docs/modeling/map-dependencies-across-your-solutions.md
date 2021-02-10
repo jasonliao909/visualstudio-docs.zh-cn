@@ -15,15 +15,15 @@ helpviewer_keywords:
 - dependency graphs
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 39b34bb124d663d81769c6d3086d6b36803d60eb
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362231"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946522"
 ---
 # <a name="map-dependencies-with-code-maps"></a>映射与代码图的依赖项
 
@@ -187,11 +187,11 @@ ms.locfileid: "97362231"
 
    若要查看代码中的成员，但不显示在地图上，请单击组左上角的 " **重新提取子级** " 图标 ![ 重新提取儿童图标 ](../modeling/media/dependencygraph_deletednodesicon.png) 。
 
-6. 若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后为要添加到映射的相关项的类型选择 " **显示** " 选项。 例如：
+6. 若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后为要添加到映射的相关项的类型选择 " **显示** " 选项。 例如： 。
 
     对于 **程序集**，请选择：
 
-    |选项|描述|
+    |选项|说明|
     |-|-|
     |**显示此项引用的程序集**|添加此程序集引用的程序集。 外部程序集将显示在“外部”  组中。|
     |**显示引用此项的程序集**|在解决方案中添加引用此程序集的程序集。|
@@ -213,7 +213,7 @@ ms.locfileid: "97362231"
 
      对于 **方法**，请选择：
 
-    |选项|描述|
+    |选项|说明|
     |-|-|
     |**显示此项调用的方法**|添加此方法调用的方法。|
     |**显示此项引用的字段**|添加此方法引用的字段。|
@@ -223,7 +223,7 @@ ms.locfileid: "97362231"
 
      对于 **字段** 或 **属性**，请选择：
 
-    |选项|描述|
+    |选项|说明|
     |-|-|
     |**显示包含类型**|添加父类型。|
     |**显示包含类型、包含命名空间和包含程序集**|添加父容器的层次结构。|
@@ -238,7 +238,7 @@ ms.locfileid: "97362231"
 
    ![使用“筛选器”窗格以简化显示](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [视频：通过 Visual Studio 2015 代码图从代码中了解设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)

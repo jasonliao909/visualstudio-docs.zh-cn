@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66a250b2-75a0-45aa-8d58-40f91cc4bf7b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 607f4f4af3021389628fcc1be446ebbe95628b7c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 05226572d7f1b708745887338c654674e71d0f5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80734465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947077"
 ---
 # <a name="idebugclassfieldenumconstructors"></a>IDebugClassField::EnumConstructors
 为此类的构造函数创建一个枚举器。
@@ -28,7 +28,7 @@ ms.locfileid: "80734465"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT EnumConstructors( 
+HRESULT EnumConstructors( 
    CONSTRUCTOR_ENUM   cMatch,
    IEnumDebugFields** ppEnum
 );
@@ -41,7 +41,7 @@ int EnumConstructors(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `cMatch`\
 中 [CONSTRUCTOR_ENUM](../../../extensibility/debugger/reference/constructor-enum.md) 枚举中的一个值，该值指定要枚举的构造函数的类型。
 

@@ -12,22 +12,22 @@ helpviewer_keywords:
 - Office development in Visual Studio, reference
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c47f4360f63640f869231bc21929c43543d5c72e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 2d1b2a8b4599b091bdd829d10ed9c2c1b486d6ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947783"
 ---
 # <a name="general-reference-office-development-in-visual-studio"></a>Visual Studio 中的常规参考 (Office 开发) 
   本部分包含有关 Visual Studio 中的 Microsoft Office 项目的技术详细信息。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)
 
  列出可与 Office 一起安装的主互操作程序集，并提供每个程序集的简短说明。

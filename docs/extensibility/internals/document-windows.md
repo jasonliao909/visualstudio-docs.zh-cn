@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f39c02ece35a36ceb763a2a5b84f8431043a1b50
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: f62a6cc4f7b217bbcf8c94b437bcd7ce9d0d1b2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480000"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946730"
 ---
 # <a name="document-windows"></a>文档窗口
 在 Visual Studio 中， *文档窗口* 是一个带边框的子窗口，该窗口与多文档界面 (MDI) 窗口相关联。 文档窗口通常用于显示和修改源代码或文本，但它们也可以承载其他功能类型。 文档窗口：
@@ -43,5 +43,5 @@ ms.locfileid: "96480000"
 ## <a name="the-running-document-table"></a>正在运行的文档表
  IDE 使用正在运行的文档表 (RDT) 跟踪每个文档窗口的状态。 RDT 是一种机制，通过该机制可以通知文档窗口事件，例如关闭解决方案或编辑文件时。 有关详细信息，请参阅 [运行文档表](../../extensibility/internals/running-document-table.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [延迟的文档加载](../../extensibility/internals/delayed-document-loading.md)

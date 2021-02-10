@@ -4,18 +4,18 @@ description: 了解如何使用 Visual Studio Tools for AI 通过各种模板创
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 28eccd9c564b7d368e823288311a823fdff86fb3
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: dbef3f71678f899a41e7b4db7e1d8123952d4f75
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726393"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841479"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>从 Visual Studio 中的模板创建 AI 项目
 

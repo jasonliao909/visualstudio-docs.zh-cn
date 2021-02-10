@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 397e5e44-4bbe-4289-94d1-642b466c9111
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b578e914c6fa099528008090646372c7d9ef26b1
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: e9a90198ce4cf3dc54eedbf80bbf4ffbad634cbc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95871348"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836483"
 ---
 # <a name="autorecover-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“自动恢复”
 
@@ -38,10 +38,10 @@ ms.locfileid: "95871348"
 
 ::: moniker range="vs-2019"
 
-使用此选项可以自定义在编辑器中自动保存文件的频率。 对于以前保存的文件，Visual Studio 2019 版本 16.2 及更高版本会在 %LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname]*_ 中保存文件副本。 如果文件是新文件但尚未保存，则 Visual Studio 会使用一个随机生成的文件名自动保存它。
+使用此选项可以自定义在编辑器中自动保存文件的频率。 对于以前保存的文件，Visual Studio 2019 版本 16.2 及更高版本会在 %LocalAppData%\Microsoft\VisualStudio\BackupFiles\\[projectname] 中保存文件副本。 如果文件是新文件但尚未保存，则 Visual Studio 会使用一个随机生成的文件名自动保存它。
 
 > [!NOTE]
-> 如果使用的是 Visual Studio 2019 版本 16.1 或更早版本，则文件位于 _%USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]*。 有关详细信息，请参阅 [Visual Studio 2019 发行说明历史记录](/visualstudio/releases/2019/release-notes-history/)页面。
+> 如果使用的是 Visual Studio 2019 版本 16.1 或更早版本，则文件位于 %USERPROFILE%\Documents\Visual Studio [version]\Backup Files\\[projectname]。 有关详细信息，请参阅 [Visual Studio 2019 发行说明历史记录](/visualstudio/releases/2019/release-notes-history/)页面。
 
 ::: moniker-end
 

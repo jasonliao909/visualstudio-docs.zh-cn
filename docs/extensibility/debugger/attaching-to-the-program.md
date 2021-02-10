@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 030ee19e7e9e9e52140fb41da78f766978e18d3f
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 5b1f411b6ca79fec85f4557ce379c341942e0b84
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913758"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943469"
 ---
 # <a name="attach-to-the-program"></a>附加到程序
 使用适当的端口注册程序后，必须将调试器附加到要调试的程序。
@@ -25,7 +25,7 @@ ms.locfileid: "96913758"
 ## <a name="choose-how-to-attach"></a>选择附加方法
  会话调试管理器 (SDM) 尝试附加到正在调试的程序的方法有三种。
 
-1. 对于通过 LaunchSuspended 方法通过[LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法启动的程序 (典型的已解释语言（例如) ），SDM 从与附加到的程序相关联的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)对象获取[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)接口。 如果 SDM 可以获取 `IDebugProgramNodeAttach2` 接口，则 sdm 将调用 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 方法。 `IDebugProgramNodeAttach2::OnAttach`方法返回， `S_OK` 指示它未附加到程序，并且可以进行其他尝试附加到程序。
+1. 对于通过 LaunchSuspended 方法通过[](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)方法启动的程序 (典型的已解释语言（例如) ），SDM 从与附加到的程序相关联的[IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md)对象获取[IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md)接口。 如果 SDM 可以获取 `IDebugProgramNodeAttach2` 接口，则 sdm 将调用 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 方法。 `IDebugProgramNodeAttach2::OnAttach`方法返回， `S_OK` 指示它未附加到程序，并且可以进行其他尝试附加到程序。
 
 2. 如果 SDM 可以从附加到的程序获取 [IDebugProgramEx2](../../extensibility/debugger/reference/idebugprogramex2.md) 接口，则 sdm 将调用 [Attach](../../extensibility/debugger/reference/idebugprogramex2-attach.md) 方法。 此方法对于由端口提供程序远程启动的程序是典型的。
 

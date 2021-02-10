@@ -6,15 +6,15 @@ ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eb9c21b5bc6f7d0a577b85d043933b48bf60bc
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878990"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944129"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 
@@ -29,7 +29,7 @@ ms.locfileid: "91878990"
 2. 在搜索查询中，指定要应用于搜索的逻辑或高级搜索运算符（如果有）。 若要搜索所有可用帮助，请勿使用运算符。
 
     > [!NOTE]
-    > 在“Viewer 选项”**** 对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。
+    > 在“Viewer 选项”对话框中，可以指定附加首选项，比如一次显示的搜索结果最大数量，以及主要区域设置不是英语时是否包含英语内容。
 
 3. 选择 **Enter** 键。
 
@@ -41,7 +41,7 @@ ms.locfileid: "91878990"
 
 了解语法对查询的影响后，可以让搜索目的性更强，仅返回你感兴趣的主题。 语法包括特殊字符、保留字和筛选器。 本主题提供提示、过程和详细的语法信息，帮助你更好地利用查询。
 
-### <a name="general-guidelines"></a>一般性指导
+### <a name="general-guidelines"></a>一般指南
 
 下表包括在帮助中进行搜索查询的一些基本规则和指南。
 
@@ -77,7 +77,7 @@ ms.locfileid: "91878990"
 
 全文索引搜索期间，会自动忽略经常出现的单词或数字（有时也称停用字）。 例如，如果搜索短语“pass through”，搜索结果将显示包含“pass”而非“through”的主题。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [逻辑运算符和高级运算符](../help-viewer/logical-operators-search-expressions.md)
 - [如何：在索引中查找主题](../help-viewer/find-topics-index.md)

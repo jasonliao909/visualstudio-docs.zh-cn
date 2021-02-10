@@ -5,18 +5,18 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e4c712eed732830da4bc1b158c8ad53a65a45d8
-ms.sourcegitcommit: a18c7e9b367c2f92f6e54c3eaef442775d457667
+ms.openlocfilehash: 41c3ba299df1e6f9ce0e2848f7ffad59e5b3fbea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/15/2020
-ms.locfileid: "90100448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945404"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的域特定语言
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建基于 Windows 窗体的 Domain-Specific 语言
 
 您可以使用 Windows 窗体显示特定于域的语言 (DSL) 模型的状态，而不是使用 DSL 关系图。 本主题介绍如何使用 Visual Studio 可视化和建模 SDK 将 Windows 窗体绑定到 DSL。
 
@@ -26,7 +26,7 @@ ms.locfileid: "90100448"
 
 ## <a name="create-a-windows-forms-dsl"></a>创建 Windows 窗体 DSL
 
-**最小 WinForm 设计器**DSL 模板会创建最小的 DSL，你可以根据自己的要求进行修改。
+**最小 WinForm 设计器** DSL 模板会创建最小的 DSL，你可以根据自己的要求进行修改。
 
 1. 使用 **最小 WinForm 设计器** 模板创建 DSL。
 
@@ -53,7 +53,7 @@ ms.locfileid: "90100448"
 
 - `DslDefinition.dsl` 不包含任何关系图元素。 这是因为不会使用 DSL 关系图来查看此 DSL 的实例模型。 相反，将 Windows 窗体绑定到模型，窗体上的元素将显示该模型。
 
-- 除 `Dsl` 和 `DslPackage` 项目外，解决方案还包含名为 UI 项目的第三个项目 `UI.` **UI**包含 Windows 窗体控件的定义。 `DslPackage` 依赖于 `UI` ，并 `UI` 依赖于 `Dsl` 。
+- 除 `Dsl` 和 `DslPackage` 项目外，解决方案还包含名为 UI 项目的第三个项目 `UI.` 包含 Windows 窗体控件的定义。 `DslPackage` 依赖于 `UI` ，并 `UI` 依赖于 `Dsl` 。
 
 - 在 `DslPackage` 项目中， `UI\DocView.cs` 包含显示在项目中定义的 Windows 窗体控件的代码 `UI` 。
 
@@ -61,7 +61,7 @@ ms.locfileid: "90100448"
 
   - 一个名为的 Windows 窗体类 `ModelViewControl` 。
 
-  - 一个名为 `DataBinding.cs` 的文件，其中包含的其他部分定义 `ModelViewControl` 。 若要查看其内容，请在 **解决方案资源管理器**中打开该文件的快捷菜单，然后选择 " **查看代码**"。
+  - 一个名为 `DataBinding.cs` 的文件，其中包含的其他部分定义 `ModelViewControl` 。 若要查看其内容，请在 **解决方案资源管理器** 中打开该文件的快捷菜单，然后选择 " **查看代码**"。
 
 ### <a name="about-the-ui-project"></a>关于 UI 项目
 
@@ -79,10 +79,10 @@ ms.locfileid: "90100448"
 
 3. 将 **位于 examplemodel.store** 域类重命名为 `Farm` 。
 
-     为它指定类型为 `Size` **Int32**且 `IsOrganic` 类型为 **Boolean**的其他域属性。
+     为它指定类型为 `Size` **Int32** 且 `IsOrganic` 类型为 **Boolean** 的其他域属性。
 
     > [!NOTE]
-    > 如果删除根域类，然后创建新的根，则必须重置编辑器的根类属性。 在 **DSL 资源管理器**中，选择 " **编辑器**"。 然后在属性窗口中，将 **根类** 设置为 `Farm` 。
+    > 如果删除根域类，然后创建新的根，则必须重置编辑器的根类属性。 在 **DSL 资源管理器** 中，选择 " **编辑器**"。 然后在属性窗口中，将 **根类** 设置为 `Farm` 。
 
 4. 使用 **指定的域类** 工具创建以下域类：
 
@@ -102,7 +102,7 @@ ms.locfileid: "90100448"
 
 8. 您可能想要整理关系图。 若要减少重复元素的数目，请使用叶元素的快捷菜单上的 "将 **子树置于此处** " 命令。
 
-9. 转换解决方案资源管理器的工具栏中的**所有模板**。
+9. 转换解决方案资源管理器的工具栏中的 **所有模板**。
 
 10. 构建 **Dsl** 项目。
 
@@ -117,7 +117,7 @@ ms.locfileid: "90100448"
 
 1. 在 " **数据** " 菜单上，选择 " **显示数据源**"。
 
-     “数据源”窗口随即打开****。
+     “数据源”窗口随即打开。
 
      选择 " **添加新数据源**"。 " **数据源配置向导** " 将打开。
 
@@ -135,7 +135,7 @@ ms.locfileid: "90100448"
 
 1. 在 **UI** 项目中，删除所有现有的 .cs 文件。
 
-2. 向 UI 项目添加一个名为的新**用户控件**文件 `FarmControl` 。 **UI**
+2. 向 UI 项目添加一个名为的新 **用户控件** 文件 `FarmControl` 。 
 
 3. 在 " **数据源** " 窗口中的 " **服务器场**" 下拉菜单上，选择 " **详细信息**"。
 
@@ -149,16 +149,16 @@ ms.locfileid: "90100448"
 
 5. 删除 **farmBindingNavigator**。 这也是在设计器中自动生成的 `FarmControl` ，但它对于此应用程序不起作用。
 
-6. 使用工具箱创建两个 **DataGridView**实例，并将它们命名为 `AnimalGridView` 和 `FieldGridView` 。
+6. 使用工具箱创建两个 **DataGridView** 实例，并将它们命名为 `AnimalGridView` 和 `FieldGridView` 。
 
    > [!NOTE]
    > 另一步是将 "动物" 和 "字段" 项从 "数据源" 窗口拖到控件上。 此操作会自动创建网格视图和数据源之间的数据网格和绑定。 但是，此绑定不适用于 Dsl。 因此，最好手动创建数据网格和绑定。
 
 7. 如果工具箱中不包含 **ModelingBindingSource** 工具，请添加它。 在 " **数据** " 选项卡的快捷菜单上，选择 " **选择项**"。 在 "**选择工具箱项**" 对话框中，从 " **.NET Framework** " 选项卡中选择 " **ModelingBindingSource** "。
 
-8. 使用工具箱创建两个 **ModelingBindingSource**实例，并将它们命名为 `AnimalBinding` 和 `FieldBinding` 。
+8. 使用工具箱创建两个 **ModelingBindingSource** 实例，并将它们命名为 `AnimalBinding` 和 `FieldBinding` 。
 
-9. 将每个**ModelingBindingSource**的**DataSource**属性设置为**farmBindingSource**。
+9. 将每个 **ModelingBindingSource** 的 **DataSource** 属性设置为 **farmBindingSource**。
 
      将 **DataMember** 属性设置为 **动物** 或 **字段**。
 
@@ -166,7 +166,7 @@ ms.locfileid: "90100448"
 
 11. 根据自己的喜好调整场控件的布局。
 
-    **ModelingBindingSource**是一种适配器，它执行特定于 dsl 的多个函数：
+    **ModelingBindingSource** 是一种适配器，它执行特定于 dsl 的多个函数：
 
 - 它在 VMSDK 存储事务中包装更新。
 
@@ -220,7 +220,7 @@ ms.locfileid: "90100448"
 
 2. 在 Visual Studio 的实验实例中，打开 **示例** 文件。
 
-3. 在 **FarmApp 资源管理器**中，打开 **场** 根节点上的快捷菜单，然后选择 " **添加新 Goat**"。
+3. 在 **FarmApp 资源管理器** 中，打开 **场** 根节点上的快捷菜单，然后选择 " **添加新 Goat**"。
 
      `Goat1` 显示在 " **动物** " 视图中。
 
@@ -239,7 +239,7 @@ ms.locfileid: "90100448"
 
 1. 在 FarmControl.cs 的 "设计" 视图中，选择 "名称"、"大小" 或 "IsOrganic" 等简单字段。
 
-2. 在属性窗口中 **，展开 "** databinding" 并打开 ** (高级) **"。
+2. 在属性窗口中 **，展开 "** databinding" 并打开 **(高级)**"。
 
      在 " **格式设置和高级绑定** " 对话框的 " **数据源更新模式**" 下，选择 " **OnPropertyChanged**"。
 
@@ -325,6 +325,6 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 
 ## <a name="see-also"></a>另请参阅
 
-- [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
-- [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [如何定义 Domain-Specific 语言](../modeling/how-to-define-a-domain-specific-language.md)
+- [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

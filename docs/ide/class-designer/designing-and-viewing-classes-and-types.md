@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 40ed2c9d-0ce0-4b95-ad78-5dec2065ccea
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 72d646150baafb7e7169a3c0a2452da6aec5df9b
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94902982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850290"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用类设计器设计和查看类和类型
 

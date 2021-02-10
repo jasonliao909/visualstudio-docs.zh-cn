@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: ef48d2d2-0c47-4f93-8cfe-52026b6c463e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eba7b40a6e770c5076a4d1aa89bf6196f7ef8684
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 38383882005e3a19b1a31709fb5656caf2a7d788
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974245"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938364"
 ---
 # <a name="combos-element"></a>Combos 元素
 组 [组合元素](../extensibility/combo-element.md) 元素。
@@ -37,7 +37,7 @@ ms.locfileid: "94974245"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
@@ -78,6 +78,6 @@ ms.locfileid: "94974245"
 </Combos>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

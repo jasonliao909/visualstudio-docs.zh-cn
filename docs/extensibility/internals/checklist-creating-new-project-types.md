@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20579422e8253b2c0cff7961a91395b5e44137ab
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 0a8cdeb250b81a39a5d9350da61a872ef43ae23b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944493"
 ---
 # <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
 若要创建新的项目类型，必须完成多个任务。 以下清单提供了这些任务的指南：
@@ -59,7 +59,7 @@ ms.locfileid: "96189961"
 
 8. 创建 Microsoft Installer (*.msi*) 文件以安装 vspackage。 有关详细信息，请参阅 [使用 Windows Installer 安装 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [注册项目类型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [何时创建项目类型](../../extensibility/internals/when-to-create-project-types.md)
 - [创建项目类型](../../extensibility/internals/creating-project-types.md)

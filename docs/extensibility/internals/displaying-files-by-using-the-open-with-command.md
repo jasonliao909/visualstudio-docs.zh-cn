@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2cb6bd44148d470cac68addc09db9e9207e9d70
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329687"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946717"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>使用 "打开方式" 命令显示文件
 项目可以要求 IDE 显示 " **打开方式** " 对话框。 此请求将提示用户打开具有选定标准编辑器的文件。 以下步骤描述了此过程：
@@ -33,7 +33,7 @@ ms.locfileid: "96329687"
 
 3. 一旦用户从 " **打开方式** " 对话框中选择一个项，IDE 就会通过调用方法打开该文档 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 。 有关详细信息，请参阅 [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打开并保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)
 - [使用 "打开文件" 命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-file-command.md)
 - [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)

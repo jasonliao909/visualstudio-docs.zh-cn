@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 283f2122c05a91a5e677293f59e3f6e02d43f63a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: bf17d2a7e3b38e267f0353f71c7cd83826b141bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363416"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945326"
 ---
 # <a name="create-custom-t4-text-template-directive-processors"></a>创建自定义 T4 文本模板指令处理器
 
@@ -66,7 +66,7 @@ ms.locfileid: "97363416"
 
 - 有关详细信息，请参阅 [演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [部署自定义指令处理器](../modeling/deploying-a-custom-directive-processor.md) 介绍了如何注册自定义指令处理器。
 - [演练：创建自定义指令处理器](../modeling/walkthrough-creating-a-custom-directive-processor.md) 介绍了如何创建自定义指令处理器，如何注册和测试指令处理器，以及如何将输出文件的格式设置为 HTML。

@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ed4fdbfe7090a66d955461f2c3a394f6fb661c5a
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 74259a6e15446d8ca0b07f3b694d0285427f8d9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "62430701"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861551"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
@@ -36,7 +36,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
 ## <a name="step-1-create-a-new-python-project"></a>步骤 1：创建新的 Python 项目
 
-*项目*是 Visual Studio 管理所有文件（包括源代码、资源、配置等等）的一种方式，这些文件结合在一起可生成单个应用程序。 项目可规范和维护其所有文件以及由多个项目共享的外部资源之间的关系。 比起在临时文件夹、脚本、文本文件中甚至完全按自己的想法简单地管理项目关系，这样做让应用程序能够更轻松地扩展和增长。
+*项目* 是 Visual Studio 管理所有文件（包括源代码、资源、配置等等）的一种方式，这些文件结合在一起可生成单个应用程序。 项目可规范和维护其所有文件以及由多个项目共享的外部资源之间的关系。 比起在临时文件夹、脚本、文本文件中甚至完全按自己的想法简单地管理项目关系，这样做让应用程序能够更轻松地扩展和增长。
 
 本教程将从一个包含单一空代码文件的简单项目开始。
 
@@ -60,7 +60,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .pyproj 文件表示。
 
-    (2) 顶层是一个*解决方案*，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
+    (2) 顶层是一个 *解决方案*，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
 
     (3) 在项目下方可以看到源文件，在本例中，只有一个 .py 文件。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
 

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 9dc6c33f-e6cf-4cf2-9b05-e8f7bfac1cfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d60b248a4941d176ac6ba4e808a94dbc67efbe7
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 53e50e408166eb2d2e1545549cdd6c72018c9553
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97488006"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938780"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 编译器命令行标志
 Visual Studio 命令表 (.VSCT) 编译器提供了命令行开关，以确保成功编译 .vsct 文件。
@@ -30,7 +30,7 @@ Visual Studio 命令表 (.VSCT) 编译器提供了命令行开关，以确保成
 vsct /?
 ```
 
- 这样会返回：
+ 这将返回以下内容：
 
 ```
 Microsoft (R) Visual Studio (R) Command Table Compiler Version 3.00.2000
@@ -76,7 +76,7 @@ Syntax: vsct <infile> [<outfile>] [-S[symbols file]] [-D<preprocessor-define>]*
 
  .VSCT 编译器还可以反编译以前生成的二进制文件。 为此，请为提供一个二进制文件 \<infile> 。   如果二进制文件是由 .VSCT 编译器生成的，则它的符号将已嵌入，并且将生成输出中包含符号名称的输出 \<Symbols> 。 如果二进制文件是由 .CTC 编译器生成的，则输出将包含实际的 Guid 和 Id。 如果 Ctc.exe 的当前版本生成的 *. .ctsym 文件与二进制输入文件位于同一文件夹中，则将从该文件中加载符号，并将其用于输出。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 命令表格 (.Vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)
 - [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: ecd06658-ad02-4440-bccd-88437b7fb816
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7645731cf5b955601541a122f2fdb3fa3d794cc3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 2ddb1feb3e5234b26e2ebceb9f899554d55b3015
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350733"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940340"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt; (引导程序的包 &gt; 元素) 
 `Package`元素是包文件内的顶级 XML 元素。
@@ -145,11 +145,11 @@ ms.locfileid: "94350733"
 ## <a name="elements-and-attributes"></a>元素和属性
  `Package` 元素是必需的。 它具有以下属性。
 
-| 特性 | 说明 |
+| Attribute | 说明 |
 |--------------------| - |
 | `Culture` | 必需。 定义此包的区域性，它确定要使用的语言。 此属性是元素中的一个键，用于在 `Strings` 安装过程中为产品名称和错误消息列出特定于区域性的字符串。 |
 | `Name` | 必需。 在工具（如）中向开发人员显示的包的名称 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 此特性是元素中的一个键 `Strings` ，它应包含一个 `String` 元素，其 `Name` 和 `Culture` 属性设置为与的 `Name` 和 `Culture` 属性匹配 `Package` 。 |
-| `LicenseAgreement` | 可选。 指定分发包中的文件的名称，该文件包含 (EULA) End-User 许可协议。  此文件可以是纯文本 ( *.txt* ) 或 rtf 格式。  ( *.rtf* )  |
+| `LicenseAgreement` | 可选。 指定分发包中的文件的名称，该文件包含 (EULA) End-User 许可协议。  此文件可以是纯文本 (*.txt*) 或 rtf 格式。  (*.rtf*)  |
 
 ## <a name="example"></a>示例
  下面的代码示例演示了用于重新分发 .NET Framework 2.0 的完整包文件。
@@ -189,5 +189,5 @@ ms.locfileid: "94350733"
 </Package>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

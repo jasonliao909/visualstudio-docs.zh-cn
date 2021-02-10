@@ -8,16 +8,16 @@ helpviewer_keywords:
 - debugging, Docker container
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: f6e2b851057d924353e6e1e9a211fcbb294353c8
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761259"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99857924"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加到在 Docker 容器上运行的进程 
 
@@ -52,13 +52,13 @@ ms.locfileid: "97761259"
     > [!NOTE]
     > 可通过两个选项远程连接到 Docker 容器中正在运行的进程。 第一个选项是使用 SSH，它适用于未在本地计算机上安装 Docker 工具的情况。  如果在本地安装了 Docker 工具，并且具有配置为接受远程请求的 Docker 守护程序，请尝试第二个选项 - 使用 Docker 守护程序。
 
-    1. 若要通过 SSH 连接到远程计算机，请执行以下操作：*_
-        1. 选择“添加...”_*，以连接到远程系统。<br/>
+    1. ***通过 SSH 连接到远程计算机：***
+        1. 选择“添加...”以连接到远程系统。<br/>
         ![连接到远程系统](../debugger/media/connect-remote-system.png "连接到远程系统")
         1. 成功连接到 SSH 或守护程序后，选择要附加到的正在运行的容器，然后点击“确定”。
 
-    1. 若要通过 [Docker 守护程序](https://docs.docker.com/engine/reference/commandline/dockerd/)将目标设置为正在运行进程的远程容器，请执行以下操作：*_
-        1. 在“Docker 主机(可选)”_*下，指定守护程序地址（即通过 TCP、IP 等），然后单击刷新链接。
+    1. ***通过 [Docker 守护程序](https://docs.docker.com/engine/reference/commandline/dockerd/)将目标设置为正在运行进程的远程容器***
+        1. 在“Docker 主机(可选)”下指定守护程序地址（即通过 TCP、IP 等），然后单击刷新链接。
         1. 成功连接到守护程序后，选择要附加到的正在运行的容器，然后点击“确定”。
 
 4. 从“可用进程”列表中选择相应的容器进程并选择“附加”，开始在 Visual Studio 中调试 C# 容器进程！
@@ -86,8 +86,8 @@ ms.locfileid: "97761259"
 
    当前无法通过 SSH 将目标设置为远程容器，而只能使用 Docker 守护程序来完成。
 
-    若要通过 [Docker 守护程序](https://docs.docker.com/engine/reference/commandline/dockerd/)将目标设置为正在运行进程的远程容器，请执行以下操作：*_
-    1. 在“Docker 主机(可选)”_*下，指定守护程序地址（即通过 TCP、IP 等），然后单击刷新链接。
+    ***通过 [Docker 守护程序](https://docs.docker.com/engine/reference/commandline/dockerd/)将目标设置为正在运行进程的远程容器***
+    1. 在“Docker 主机(可选)”下指定守护程序地址（即通过 TCP、IP 等），然后单击刷新链接。
 
     1. 成功连接到守护程序后，选择要附加到的正在运行的容器，然后选择“确定”。
 

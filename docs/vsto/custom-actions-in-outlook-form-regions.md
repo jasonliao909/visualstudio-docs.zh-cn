@@ -12,15 +12,15 @@ helpviewer_keywords:
 - custom actions [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4fe77cddcfe810e73d13de81cc7280969c1d1b1c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848191"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947875"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
   操作显示使用户能够响应 Microsoft Office Outlook 项目的按钮。 例如，若要对邮件项做出响应，用户可单击 " **答复**"、" **全部答复**" 或 " **转发** " 操作按钮。 其中每个操作都将创建一个新的邮件项，并使用原始项中的信息填充该项的字段。
@@ -38,11 +38,11 @@ ms.locfileid: "96848191"
 
  下表介绍了 " **自定义操作** " 对话框中可用的属性。
 
-|properties|描述|
+|属性|说明|
 |--------------|-----------------|
 |**AddressLike**|指定将如何处理目标窗体。|
 |**正文**|指定将原始项的正文追加到目标窗体的方式。|
-|**已启用**|指示是否已启用自定义操作。 如果将此属性设置为 **false**，则禁用自定义操作。|
+|**Enabled**|指示是否已启用自定义操作。 如果将此属性设置为 **false**，则禁用自定义操作。|
 |**方法**|指定执行自定义操作时可用的响应类型。 自定义操作可以发送窗体，打开窗体，或提示用户是否要发送或打开窗体。|
 |**名称**|指定可用于在代码中引用此自定义操作的内部名称。|
 |**ShowOnRibbon**|指示是否在原始项的功能区中显示自定义操作。|
@@ -53,7 +53,7 @@ ms.locfileid: "96848191"
 ## <a name="customize-a-custom-action-at-run-time"></a>在运行时自定义自定义操作
  你还可以使用代码将行为添加到自定义操作。 例如，你可以添加采用电子邮件收件人名称的代码，并在新约会项中将这些姓名添加为与会者。 为此，请处理[MailItem 对象](/office/vba/api/Outlook.MailItem)的[CustomAction](/office/vba/api/Outlook.MailItem.CustomAction)事件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

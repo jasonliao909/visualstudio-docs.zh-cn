@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99e33ae67e0fd18ecd9a1a40a8b8075cd22d4bf7
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715660"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942901"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -309,7 +309,7 @@ Windows 使用多个高对比度系统级主题，这些主题提高了文本、
 
 许多常见 UI 元素已经定义高对比度颜色。 选择自己的系统颜色名称时，可以引用这些使用模式，以便您的 UI 元素与类似的组件一致。
 
-| 系统颜色 | 用法 |
+| 系统颜色 | 使用情况 |
 | --- | --- |
 | ActiveCaption | -悬停并按下时的活动 IDE 和 rafted 窗口按钮字形<br />-IDE 和 rafted 窗口的标题栏背景<br />-默认状态栏背景 |
 | ActiveCaptionText | -用于标题栏前景 (文本和字形的活动 IDE 和 rafted 窗口) <br />-悬停并按下活动窗口按钮的背景和边框 |
@@ -363,7 +363,7 @@ VSPackage 可以通过自定义类别和 "字体和颜色" 属性页上的 "显�
 | 名称 | 类型 | 数据 | 说明 |
 | --- | --- | --- | --- |
 | Category | REG_SZ | GUID | 为标识类别而创建的 GUID |
-| 包 | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
+| Package | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
 
  注册表中指定的服务必须为相应的类别提供 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 的实现。
 
@@ -376,7 +376,7 @@ VSPackage 可以通过自定义类别和 "字体和颜色" 属性页上的 "显�
 | 名称 | 类型 | 数据 | 说明 |
 |--- | --- | --- | --- |
 | Category | REG_SZ | GUID | 为标识类别而创建的 GUID |
-| 包 | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
+| Package | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
 
 注册表中指定的服务必须 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 为相应组提供的实现。
 
