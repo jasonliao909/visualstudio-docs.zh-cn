@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b44cda401faa0d7e34bf9ce7579aa3cca026fa13
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480377"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970213"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具栏的 Guid 和 Id
 本主题枚举 Visual Studio 集成开发环境中包含的工具栏的 GUID 和 ID 值 (IDE) 以及它们所包含的组。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -40,7 +40,7 @@ ms.locfileid: "96480377"
 
  只有组才能直接从工具栏中进行。 若要添加组，请将其父级设置为工具栏的 GUID 和 ID。 若要将按钮添加到工具栏，请在工具栏上将其父项设置为组。
 
-|Toolbar|ID|
+|工具栏|ID|
 |-------------|--------|
 |标准|IDM_VS_TOOL_STANDARD|
 |生成|IDM_VS_TOOL_BUILD|
@@ -51,7 +51,7 @@ ms.locfileid: "96480377"
 ### <a name="special-toolbars"></a>特殊工具栏
  这些工具栏是由 Visual Studio IDE 定义的，但它们提供专用函数，并且不托管命令组。
 
-|Toolbar|ID|
+|工具栏|ID|
 |-------------|--------|
 |Add 命令|IDM_VS_TOOL_ADDCOMMAND|
 |Undefined|IDM_VS_TOOL_UNDEFINED|
@@ -88,7 +88,7 @@ ms.locfileid: "96480377"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |缩进|IDG_VS_EDITTOOLBAR_INDENT|
-|备注|IDG_VS_EDITTOOLBAR_COMMENT|
+|注释|IDG_VS_EDITTOOLBAR_COMMENT|
 |书签|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>调试工具栏组
@@ -112,7 +112,7 @@ ms.locfileid: "96480377"
 > [!NOTE]
 > `guidSHLMainMenu`除了使用 guid： ID 语法指定的情况外，工具栏和组使用 guid。 如果为工具栏指定了 GUID，它也适用于从该工具栏中继承的组。
 
-|工具窗口|Toolbar|组|
+|工具窗口|工具栏|组|
 |-----------------|-------------|------------|
 |解决方案资源管理器|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.。5|
 |服务器资源管理器|guid_SE_MenuGroup： IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
@@ -136,7 +136,7 @@ ms.locfileid: "96480377"
 |内存1-4|guidVSDebugGroup： IDM_MEMORY_WINDOW_TOOLBAR1 .。。4|IDG_MEMORY_EXPRESSION1.。4<br /><br /> IDG_MEMORY_COLUMNS1.。4|
 |进程|guidVSDebugGroup： IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [向工具栏添加菜单控制器](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
 - [将工具栏添加到工具窗口](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
 - [Visual Studio 菜单的 Guid 和 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

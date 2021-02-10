@@ -19,15 +19,15 @@ helpviewer_keywords:
 - form regions [Office development in Visual Studio], features available
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 24db499602642f6ec980628d290ec8b5dd07fed3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 05a17b373f409e91f9360cbd3ba92f88bd3f48e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847801"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970384"
 ---
 # <a name="features-available-by-office-application-and-project-type"></a>按 Office 应用程序和项目类型提供的功能
   Visual Studio 具有几种类型的项目模板，它们支持 Microsoft Office 应用程序的不同业务方案，包括以下类型：
@@ -52,7 +52,7 @@ ms.locfileid: "96847801"
 ## <a name="features-available-in-different-project-types"></a>不同项目类型中的可用功能
  下表显示了提供每项功能的项目类型。
 
-|功能|提供该功能的项目类型|延伸阅读|
+|功能|提供该功能的项目类型|进一步阅读|
 |-------------|--------------------------------------------|---------------------|
 |操作窗格。|文档级项目。|[操作窗格概述](../vsto/actions-pane-overview.md)|
 |ClickOnce 部署。|VS 与文档级项目。|[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)|
@@ -68,7 +68,7 @@ ms.locfileid: "96847801"
 |功能区自定义。|文档级项目。<br /><br /> 以下应用程序的 VSTO 外接程序项目：<br /><br /> -Excel<br />-InfoPath (仅限 InfoPath 2013 和 InfoPath 2010) <br />-Outlook<br />-PowerPoint<br />-项目<br />-Visio<br />-Word|[功能区概述](../vsto/ribbon-overview.md)|
 |可视化文档设计器。|文档级项目。|[Visual Studio 环境中的 Office 项目](../vsto/office-projects-in-the-visual-studio-environment.md)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [开始 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [操作窗格概述](../vsto/actions-pane-overview.md)

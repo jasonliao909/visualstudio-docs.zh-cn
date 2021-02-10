@@ -12,15 +12,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7e807a5673f27da6a852fd2c83347d1348f1f6fd
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 065a904047630d15a8e9ed167a6a4a2764858387
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970317"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
   将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动将 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控件添加到工作表中。
@@ -62,7 +62,7 @@ ms.locfileid: "96844408"
     > [!NOTE]
     > 如果从 " **XML 源** " 任务窗格中拖动父元素， <xref:Microsoft.Office.Tools.Excel.ListObject> 则会创建一个控件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
 - [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)

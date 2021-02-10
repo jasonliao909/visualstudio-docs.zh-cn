@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0203c8b7028fb170ae2ba4d2cc9d6f1825414f64
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: bd2bdc047ddd5a568aca01ed99b6148b0f288faa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480403"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970265"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 菜单的 Guid 和 Id
 本文枚举 Visual Studio 菜单栏上的菜单和组的 GUID 和 ID 值。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -38,7 +38,7 @@ ms.locfileid: "96480403"
 |-----------|--------|
 |文件/编辑/查看|IDG_VS_MM_FILEEDITVIEW|
 |重构|IDG_VS_MM_REFACTORING：|
-|项目|IDG_VS_MM_PROJECT|
+|Project|IDG_VS_MM_PROJECT|
 |生成|IDG_VS_MM_BUILDDEBUGRUN|
 |格式/工具|IDG_VS_MM_TOOLSADDINS|
 |窗口/帮助/社区|IDG_VS_MM_WINDOWHELP|
@@ -52,9 +52,9 @@ ms.locfileid: "96480403"
 |----------|--------|
 |文件|IDM_VS_MENU_FILE|
 |编辑|IDM_VS_MENU_EDIT|
-|视图|IDM_VS_MENU_VIEW|
+|查看|IDM_VS_MENU_VIEW|
 |重构|IDM_VS_MENU_REFACTORING|
-|项目|IDM_VS_MENU_PROJECT|
+|Project|IDM_VS_MENU_PROJECT|
 |生成|IDM_VS_MENU_BUILD|
 |格式|IDM_VS_MENU_FORMAT|
 |工具|IDM_VS_MENU_TOOLS|
@@ -77,7 +77,7 @@ ms.locfileid: "96480403"
 |杂项|IDG_VS_FILE_MISC|
 |保存|IDG_VS_FILE_SAVE|
 |重命名|IDG_VS_FILE_RENAME|
-|浏览者|IDG_VS_FILE_BROWSER|
+|浏览器|IDG_VS_FILE_BROWSER|
 |打印|IDG_VS_FILE_PRINT|
 |最近使用的|IDG_VS_FILE_MRU|
 |移动|IDG_VS_FILE_MOVE|
@@ -108,7 +108,7 @@ ms.locfileid: "96480403"
 |Group|ID|
 |-----------|--------|
 |表单代码|IDG_VS_VIEW_FORMCODE|
-|浏览者|IDG_VS_VIEW_BROWSER|
+|浏览器|IDG_VS_VIEW_BROWSER|
 |定义视图|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
 |架构师窗口|IDG_VS_VIEW_ARCH_WINDOWS|
@@ -132,7 +132,7 @@ ms.locfileid: "96480403"
 |添加|IDG_VS_PROJ_ADD|
 |文件夹|IDG_VS_PROJ_FOLDER|
 |卸载/重载|IDG_VS_PROJ_UNLOADRELOAD|
-|参考|IDG_VS_PROJ_REFERENCE|
+|引用|IDG_VS_PROJ_REFERENCE|
 |选项|IDG_VS_PROJ_OPTIONS|
 |设置|IDG_VS_PROJ_SETTINGS|
 
@@ -143,7 +143,7 @@ ms.locfileid: "96480403"
 |解决方案|IDG_VS_BUILD_SOLUTION|
 |选择|IDG_VS_BUILD_SELECTION|
 |按配置优化|IDG_VS_PGO_SELECTION|
-|杂项|IDG_VS_BUILD_MISC|
+|其他|IDG_VS_BUILD_MISC|
 |取消|IDG_VS_BUILD_CANCEL|
 
 ### <a name="tools-menu-groups"></a>工具菜单组
@@ -167,7 +167,7 @@ ms.locfileid: "96480403"
 |停靠/隐藏|IDG_VS_DOCKHIDE|
 |排列|IDG_VS_WINDOW_ARRANGE|
 |导航|IDG_VS_WINDOW_NAVIGATION|
-|列出|IDG_VS_WINDOW_LIST|
+|列表|IDG_VS_WINDOW_LIST|
 
 ### <a name="help-menu-groups"></a>帮助菜单组
 
@@ -215,7 +215,7 @@ ms.locfileid: "96480403"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 工具栏的 Guid 和 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [Visual Studio 命令的 Guid 和 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
