@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 4f8cfba8-0653-4ccc-a2da-acf064c83aa7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55e808e6f472c48dcd14aac2d81b4cd3f615397f
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 12fd6e336631eeabe1761276442df993d44affe8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597712"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939209"
 ---
 # <a name="add-commands-to-toolbars"></a>将命令添加到工具栏
 工具栏是包含绑定到命令的按钮的水平或垂直条带。 您可以在 Visual Studio 中的许多不同窗口上向工具栏添加您自己的命令： Visual studio 的主窗口、解决方案资源管理器，以及您自己的自定义工具窗口。

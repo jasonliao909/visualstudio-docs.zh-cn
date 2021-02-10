@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e3adf9ca5f679c7a526f10b1ee6c91d50dac52d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d5d4e9ee9808c25bb0df570ac451c061067904c2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714478"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938751"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -59,7 +59,7 @@ public struct METADATA_ADDRESS_LOCAL {
 
 ## <a name="remarks"></a>备注
 
-当结构的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_LOCAL` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_LOCAL` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
 
 > [!WARNING]
 > [仅限 c + +]如果不为 `pLocal` null，则必须 `Release` 在令牌指针上调用， (`addr` 是 [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md) 结构中的字段) ：

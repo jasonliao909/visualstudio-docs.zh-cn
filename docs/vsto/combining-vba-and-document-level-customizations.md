@@ -23,15 +23,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], Visual Basic for Applications and
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 59d0e9122bf35ac6f40799d91d3b52614d027f50
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c5f66042dad7051c856aa6158ea0a666a81e9b4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846397"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938520"
 ---
 # <a name="combine-vba-and-document-level-customizations"></a>合并 VBA 和文档级自定义项
   在属于 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的文档中，可以使用 Visual Basic for Applications (VBA) 代码。 可以从自定义程序集调用文档中的 VBA 代码，也可以将项目配置为使文档中的 VBA 代码能够调用自定义程序集中的代码。
@@ -251,7 +251,7 @@ GetManagedClass(pdispInteropObject Object) As Object
 |设置了 **“属性”** 或 **ReferenceAssemblyFromVbaProject** 属性后，一条错误消息指明 <xref:System.Reflection.AssemblyVersionAttribute> 指定的版本号无效。|确保 <xref:System.Reflection.AssemblyVersionAttribute> 项目中的 *AssemblyInfo.cs* 或 *AssemblyInfo* 文件中的声明设置为有效的程序集版本号。 有关有效的程序集版本号的信息，请参见 <xref:System.Reflection.AssemblyVersionAttribute> 类。|
 |重命名自定义程序集后，调入自定义程序集的 VBA 代码将停止工作。|如果在向 VBA 代码公开自定义程序集之后更改其名称，则文档中的 VBA 项目与自定义程序集之间的链接将断开。 若要修复此问题，请将项目中的 **ReferenceFromVbaAssembly** 属性更改为 **False** ，并随后更改回 **True**，然后将 VBA 代码中对旧程序集名称的任何引用替换为新程序集名称。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Basic 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [如何：在 Visual C&#35; 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
 - [演练：在 Visual Basic 项目中调用 VBA 中的代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

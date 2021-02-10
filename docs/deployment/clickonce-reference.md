@@ -14,21 +14,21 @@ helpviewer_keywords:
 ms.assetid: 2a7d5704-5e8c-452c-9ef3-5e8ec5e952fe
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f852182baec22915f412a3753755b129053e0ad
-ms.sourcegitcommit: 0893244403aae9187c9375ecf0e5c221c32c225b
+ms.openlocfilehash: 6f71f042df1ef683ed48e2389e2c781dfb22bff1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94383022"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939248"
 ---
 # <a name="clickonce-reference"></a>ClickOnce 参考
 以下页面描述用于表示 ClickOnce 应用程序的 XML 文件的结构。
 
 ## <a name="in-this-section"></a>本节内容
- [ndptecclick](../deployment/clickonce-application-manifest.md)
+ [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
 
  列出并描述组成应用程序清单的元素和属性。
 
@@ -44,7 +44,7 @@ ms.locfileid: "94383022"
 
  列出 dfshim.dll 中的非托管公共 Api。
 
-## <a name="reference"></a>参考
+## <a name="reference"></a>引用
 
 ## <a name="related-sections"></a>相关章节
  [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)

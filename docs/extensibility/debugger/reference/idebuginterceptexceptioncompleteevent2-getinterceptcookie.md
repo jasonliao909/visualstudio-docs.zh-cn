@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: 07b20866-e598-4783-9ecc-6aa8625c8804
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9d5b333b060fb49e71b803eb5744a57863e51581
-ms.sourcegitcommit: 2a201c93ed526b0f7e5848657500f1111b08ac2a
+ms.openlocfilehash: e578c6d6bd197cbb121edf4cce554cedd91d47ce
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/10/2020
-ms.locfileid: "89738365"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939001"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 当处理截获的异常已完成时调用。
@@ -40,7 +40,7 @@ int GetInterceptCookie(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pqwCookie`\
 弄与被截获的异常关联的唯一值。
 
@@ -50,6 +50,6 @@ int GetInterceptCookie(
 ## <a name="remarks"></a>备注
  [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法完成截获的异常处理后，它将发送[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)事件。 处理程序可以使用 `GetInterceptCookie` 方法检索与异常相关联的唯一值 (传递给方法) 相同的值 `InterceptCurrentException` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

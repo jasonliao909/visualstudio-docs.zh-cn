@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 67e39eb8b03dd6f75ac39155bd744e03084beb0b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: eef5b203c65ca85cfd9b20e613f53128803e088b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80714555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938741"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -53,7 +53,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 此元素在数组中的索引。
 
 ## <a name="remarks"></a>备注
-当结构的[DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_ARRAYELEM` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_ARRAYELEM` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
 
 ## <a name="requirements"></a>要求
 标头： sh。h

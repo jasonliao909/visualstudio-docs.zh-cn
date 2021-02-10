@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 8bbbd87e-76fe-4fb5-8ef9-65f5e31967cf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0eefb532380badcf917f6d512bc5b41ebb96b1d1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: fa38e508c087d61ad5ea1762e3e3cc33d6d4f538
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597725"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939222"
 ---
 # <a name="add-command-line-switches"></a>添加命令行开关
 执行 *devenv.exe* 时，可以添加适用于 VSPackage 的命令行开关。 使用 <xref:Microsoft.VisualStudio.Shell.ProvideAppCommandLineAttribute> 声明开关的名称及其属性。 在此示例中，为名为 **AddCommandSwitchPackage** 的 VSPackage 的子类添加了 MySwitch 开关，其中不包含参数，并且 VSPackage 会自动加载。
@@ -31,12 +31,12 @@ ms.locfileid: "95597725"
 
  以下说明显示了命名参数。
 
-|名称|说明|
+|“属性”|说明|
 |-|-|
 | 参数 | 开关的参数数目。 可以是 "*"，也可以是参数列表。 |
 | DemandLoad | 如果此设置为1，则自动加载 VSPackage，否则设置为0。 |
 | HelpString | 要用 **devenv/？** 显示的字符串的帮助字符串或资源 ID。 |
-| 名称 | 开关。 |
+| “属性” | 开关。 |
 | PackageGuid | 包的 GUID。 |
 
  参数的第一个值通常为0或1。 特殊值 "*" 可用于指示命令行的整个余数是参数。 这对于调试用户必须传入调试器命令字符串的方案非常有用。
@@ -74,4 +74,4 @@ cmdline.GetOption("MySwitch", out isPresent, out optionValue);
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>
 - [Devenv 命令行开关](../ide/reference/devenv-command-line-switches.md)
 - [CreatePkgDef 实用程序](../extensibility/internals/createpkgdef-utility.md)
-- [.Pkgdef 文件](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)
+- [..Pkgdef 文件](https://devblogs.microsoft.com/visualstudio/whats-a-pkgdef-and-why/)

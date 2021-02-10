@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97c4fe8d72cc8e2216ee8f5057d032c071974bf3
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350798"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99938494"
 ---
 # <a name="localize-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。
@@ -80,7 +80,7 @@ ms.locfileid: "94350798"
 
 - 可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）
 
-## <a name="see-also"></a>请参阅
-- [\<assemblyIdentity> element](../deployment/assemblyidentity-element-clickonce-deployment.md)
+## <a name="see-also"></a>另请参阅
+- [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

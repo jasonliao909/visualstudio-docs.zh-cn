@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fa7e4a498188dc91f2a47b3ccf27f367f15ec77b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 745ecf4efa661c31e230a25d23cfd66cb5d5bb51
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737404"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939118"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 指定要检索的有关调试属性对象的信息。
@@ -93,7 +93,7 @@ public enum enum_DEBUGPROP_INFO_FLAGS {
 指定值字段应包含此类型的对象的自动扩展值（如果可用）。
 
 `DEBUGPROP_INFO_VALUE_NOFUNCEVAL`\
-已否决。
+已弃用。
 
 `DEBUGPROP_INFO_VALUE_RAW`\
 不要返回任何 beautified 值或成员 (即，不要) 设置值的格式。
