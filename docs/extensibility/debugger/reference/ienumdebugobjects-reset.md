@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 4a245e47-cc39-4177-b83d-083ea0e3190f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9302330ac67cba4a9a68cacb7bc8f91aff7ad3ba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 39f2949a0c3b0c7009b17c8ceee09eee210c61cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80716327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957096"
 ---
 # <a name="ienumdebugobjectsreset"></a>IEnumDebugObjects::Reset
 此方法将枚举重置为第一个元素。
@@ -35,8 +35,8 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-## <a name="parameters"></a>参数
- None
+## <a name="parameters"></a>parameters
+ 无
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。

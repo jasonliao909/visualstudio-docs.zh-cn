@@ -11,15 +11,15 @@ helpviewer_keywords:
 - constraints, architectural
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bfef2f9397fbe8dfeceaa8789cf8d118315b26d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 06f4baed4851681065f3f7ccafecd3af339398f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363960"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957369"
 ---
 # <a name="dependency-diagrams-guidelines"></a>依赖项关系图：准则
 
@@ -174,7 +174,7 @@ ms.locfileid: "97363960"
 
 若要确保以后代码中的更改符合依赖关系图，请在解决方案的标准生成过程中包括层验证。 当其他团队成员生成解决方案时，代码中的依赖关系和依赖关系关系图中的任何差异将报告为生成错误。 有关在生成过程中包括层验证的详细信息，请参阅 [通过依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
 - [从代码创建依赖项关系图](../modeling/create-layer-diagrams-from-your-code.md)

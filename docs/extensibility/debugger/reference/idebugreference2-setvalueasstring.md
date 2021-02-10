@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 9a508ced-fd54-44f5-bb42-ec15c80384d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8414ce5f53acec2a30ff681ff0bab8ddc919310
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b0a2e481df64aeb4d5193ed011dc9f5cc669799b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720293"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956543"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 设置字符串的引用值。 留待将来使用。
@@ -28,7 +28,7 @@ ms.locfileid: "80720293"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetValueAsString ( 
+HRESULT SetValueAsString ( 
    LPCOLESTR pszValue,
    DWORD     dwRadix,
    DWORD     dwTimeout
@@ -36,14 +36,14 @@ HRESULT SetValueAsString ( 
 ```
 
 ```csharp
-int SetValueAsString ( 
+int SetValueAsString ( 
    string pszValue,
    uint   dwRadix,
    uint   dwTimeout
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszValue`\
 中字符串形式的值。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0694fd6b4ba82faf8b05354765fc5734efe2ef4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700202"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956862"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函数
 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
@@ -33,7 +33,7 @@ SCCRTN SccWillCreateSccFile(
 );
 ```
 
-#### <a name="parameters"></a>参数
+#### <a name="parameters"></a>parameters
  pContext
 
 中源代码管理插件上下文指针。

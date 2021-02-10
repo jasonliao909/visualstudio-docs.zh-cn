@@ -7,18 +7,18 @@ helpviewer_keywords:
 ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0388e4a1916a16f7e429fa4f32c45ed62fdb02e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719926"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956511"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 检索源服务器信息的数组。
@@ -39,7 +39,7 @@ public int GetSourceServerData(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pDataByteCount`\
 弄数据数组中的字节数。
 
@@ -50,7 +50,7 @@ public int GetSourceServerData(
 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)接口的**CModule**对象实现此方法。
+下面的示例演示如何为公开 [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)接口的 **CModule** 对象实现此方法。
 
 ```cpp
 HRESULT CModule::GetSourceServerData(ULONG* pDataByteCount, BYTE** ppData)
