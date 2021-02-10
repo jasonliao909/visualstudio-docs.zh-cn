@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 30306970-b861-4315-acf8-f86a43d4e73b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3449abf5ff1b9bdb4d4873a0cf3beb0b184734fc
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: c0051a17d3a2360776f48cee2bd7f1d2f11a2492
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148502"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920092"
 ---
 # <a name="how-to-search-for-a-window-in-windows-view"></a>如何：在窗口视图中搜索窗口
 可以通过使用句柄、标题、类别或标题和类别的组合作为搜索条件，在窗口视图中搜索特定窗口。 还可以指定搜索的初始方向。 对话框中的字段将显示窗口树中所选窗口的属性。

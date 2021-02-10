@@ -5,23 +5,23 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 032732f19855b9ba5c97c2e5281e8385f9ace3be
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85535316"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920678"
 ---
 ## <a name="discover-and-view-tests"></a>发现和查看测试
 
 根据惯例，Visual Studio 将测试标识为名称以“`test`”开头的方法。 若要查看此行为，请执行以下操作：
 
-1. 打开一个 Visual Studio 中加载的 [Python 项目](../../managing-python-projects-in-visual-studio.md)，右键单击该项目，选择“添加”**** > “新建项”****，然后选择其后有“添加”**** 的“Python 单元测试”**** 。
+1. 打开一个 Visual Studio 中加载的 [Python 项目](../../managing-python-projects-in-visual-studio.md)，右键单击该项目，选择“添加” > “新建项”，然后选择其后有“添加”的“Python 单元测试” 。
 
 1. 如果直接运行脚本，此操作将创建具有导入标准 `unittest` 模块的代码的 test1.py 文件，从 `unittest.TestCase` 派生一个测试类，并调用 `unittest.main()`：
 
@@ -37,7 +37,7 @@ ms.locfileid: "85535316"
         unittest.main()
     ```
 
-1. 根据需要保存该文件，然后通过“测试”**** > “窗口”**** > “测试资源管理器”**** 菜单命令打开“测试资源管理器”****。
+1. 根据需要保存该文件，然后通过“测试” > “窗口” > “测试资源管理器”菜单命令打开“测试资源管理器”。
 
 1. “测试资源管理器”会搜索要测试的项目并进行显示，如下所示。 双击测试打开其源文件。
 
@@ -65,7 +65,7 @@ ms.locfileid: "85535316"
 
     ![test_A 通过状态](../../media/unit-test-A-pass.png)
 
-- 失败的测试将显示带有**输出**链接的红叉，该链接显示控制台输出和测试运行中的 `unittest` 输出：
+- 失败的测试将显示带有 **输出** 链接的红叉，该链接显示控制台输出和测试运行中的 `unittest` 输出：
 
     ![test_A 失败状态](../../media/unit-test-A-fail.png)
 

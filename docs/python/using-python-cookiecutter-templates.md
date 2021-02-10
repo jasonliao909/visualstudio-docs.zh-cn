@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2d58462b90039e14ae98fe450812ca4cfdb6cbbd
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801576"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920624"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -39,7 +39,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 | --- | --- |
 | **已安装** | 已安装到本地计算机的模板。 使用联机模板时，其存储库自动克隆到 ~/.cookiecutters  的子文件夹。 可以通过按“删除”  ，删除所选的已安装模板。 |
 | **建议** | 从建议源加载的模板。 默认源由 Microsoft 策划。 有关自定义源的详细信息，请参阅下文中的 [Cookiecutter 选项](#cookiecutter-options)。 |
-| **GitHub** | GitHub cookiecutter 关键字的搜索结果。 分页显示从 GitHub 返回的结果，如果存在更多结果，列表末尾将出现**加载更多**。 |
+| **GitHub** | GitHub cookiecutter 关键字的搜索结果。 分页显示从 GitHub 返回的结果，如果存在更多结果，列表末尾将出现 **加载更多**。 |
 | **自定义** | 如果在搜索框中输入自定义位置，该位置将出现在此组。 可键入到 GitHub 存储库的完整路径，或者到本地磁盘上的文件夹的完整路径。 |
 
 ### <a name="cloning"></a>克隆

@@ -5,17 +5,17 @@ ms.date: 09/18/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6b611657db104a4b74e784df8925627ff41f3c33
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85535315"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920677"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>选择适用于 Python 项目的测试框架
 
@@ -119,7 +119,7 @@ Visual Studio 支持两种适用于 Python 的测试框架，即 [unittest](http
 
     ![test_A 通过状态](../../media/unit-test-A-pass.png)
 
-- 失败的测试将显示带有**输出**链接的红叉，该链接显示控制台输出和测试运行中的 `unittest` 输出：
+- 失败的测试将显示带有 **输出** 链接的红叉，该链接显示控制台输出和测试运行中的 `unittest` 输出：
 
     ![test_A 失败状态](../../media/unit-test-A-fail.png)
 
