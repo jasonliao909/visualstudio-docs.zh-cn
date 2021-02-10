@@ -17,15 +17,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], updating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2246dcdca1e754c885dd610f98986306a256228c
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526050"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937181"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>演练：在运行时更新功能区上的控件
 
@@ -160,7 +160,7 @@ ms.locfileid: "97526050"
 
     4. **产品**
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>在运行时更新自定义组中的控件
 

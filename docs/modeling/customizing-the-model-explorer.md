@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, Domain-Specific Language Explorer
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7d4bdfcea6cbc54fd620e9aacbdc6250493ca426
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: b3ae5ea3c24ea72c911f686c7a0a92191785d9d5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935373"
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 可以按如下所示更改域特定语言设计器的资源管理器的外观和行为：
@@ -113,6 +113,6 @@ ms.locfileid: "97362885"
 
      "资源管理器" 应仅显示 " **参与者** " 节点，不应显示 " **注释** " 节点。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

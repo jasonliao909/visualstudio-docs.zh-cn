@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 20dc9b6ac1bd4e565fd10793889c611f9b039778
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 324037010e642ab4e96f6efea5da0f232c9bd530
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363167"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935061"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -131,7 +131,7 @@ DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证�
 
    - 此程序集通常具有以 ".Dsl.dll" 结尾的名称。
 
-   - 如果有权访问 DSL 项目，可以在目录 **DSL \\ 箱 \\ \** _ 下找到程序集文件
+   - 如果有权访问 DSL 项目，可以在目录 **DSL \\ 箱 \\ \*** 下找到程序集文件
 
    - 如果有权访问 DSL VSIX 文件，可以通过将 VSIX 文件的文件扩展名更改为 ".zip" 来找到该程序集。 解压缩 .zip 文件。
 
@@ -147,7 +147,7 @@ DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证�
 
    - System.Windows.Forms.dll
 
-4. 创建新的 _ *VSIX 项目** 项目。
+4. 创建新的 **VSIX 项目** 项目。
 
 5. 在 **解决方案资源管理器** 中，右键单击 VSIX 项目，然后选择 " **设为启动项目**"。
 
@@ -159,11 +159,11 @@ DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证�
 
    1. 在 **source.extension.vsixmanifest** 中，单击 "**添加引用**"
 
-   2. 在对话框中，单击 " **添加有效负载** "，然后找到 DSL 的 VSIX 文件。 VSIX 文件是在 DSL 解决方案中构建的，位于 **DslPackage \\ bin \\ \** _ 中。
+   2. 在对话框中，单击 " **添加有效负载** "，然后找到 DSL 的 VSIX 文件。 VSIX 文件是在 DSL 解决方案的 **DslPackage \\ bin \\ \*** 中生成的。
 
        这允许用户同时安装 DSL 和你的扩展。 如果用户已安装 DSL，则仅安装你的扩展。
 
-9. 查看并更新 _ * source.extension.vsixmanifest * * 的其他字段。 单击 " **选择版本** "，并验证是否设置了正确的 Visual Studio 版本。
+9. 查看并更新 **source.extension.vsixmanifest** 的其他字段。 单击 " **选择版本** "，并验证是否设置了正确的 Visual Studio 版本。
 
 10. 将代码添加到类库项目。 使用下一部分中的示例作为指南。
 
@@ -374,7 +374,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

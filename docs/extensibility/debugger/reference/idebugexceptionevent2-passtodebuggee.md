@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aec6f460295b59b2b5455b83d5b0be554bca24fa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729832"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933255"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定是否应在执行恢复时将异常传递给正在调试的程序，或是否应丢弃异常。
@@ -28,18 +28,18 @@ ms.locfileid: "80729832"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT PassToDebuggee(
-   BOOL fPass
+HRESULT PassToDebuggee(
+   BOOL fPass
 );
 ```
 
 ```csharp
-int PassToDebuggee(
-   int fPass
+int PassToDebuggee(
+   int fPass
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `fPass`\
 中 `TRUE` 如果异常应传递到执行恢复时正在调试的程序，则为非零 () 如果应丢弃异常，则为零 (`FALSE`) 。
 

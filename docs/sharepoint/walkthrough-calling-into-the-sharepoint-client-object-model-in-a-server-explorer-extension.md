@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint commands [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c323f05d341af810eecafae43e8d04d3cba29054
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: a095e9d1e8fc48500bceac06732150a3067e2dd2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913940"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937675"
 ---
 # <a name="walkthrough-calling-into-the-sharepoint-client-object-model-in-a-server-explorer-extension"></a>演练：在服务器资源管理器扩展中调入 SharePoint 客户端对象模型
   本演练演示如何从 **服务器资源管理器** 中的 " **sharepoint 连接**" 节点的扩展调用 sharepoint 客户端对象模型。 有关如何使用 SharePoint 客户端对象模型的详细信息，请参阅 [调入 sharepoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
@@ -41,7 +41,7 @@ ms.locfileid: "96913940"
 > [!NOTE]
 > 你在本演练中创建的扩展类似于你在演练中创建的扩展 [： "扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。 该演练使用 SharePoint server 对象模型，但本演练使用客户端对象模型完成相同的任务。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要完成本演练，开发计算机上需要以下组件：
 
 - 支持的 Windows、SharePoint 和 Visual Studio 版本。
@@ -181,7 +181,7 @@ ms.locfileid: "96913940"
      [!code-csharp[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/CSharp/webpartnode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
      [!code-vb[SPExtensibility.SPExplorer.WebPartNode#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnode.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
 
-## <a name="checkpoint"></a>Checkpoint
+## <a name="checkpoint"></a>检查点
  在本演练的这一时间点， **Web 部件库** 节点的所有代码现在都在项目中。 生成 **WebPartNodeExtension** 项目以确保它在编译时不会出错。
 
 #### <a name="to-build-the-project"></a>生成项目

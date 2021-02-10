@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating code for your application
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698dde24cb66d27a12a0f8785c8ac97e4cfb0eb0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363804"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935295"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 
@@ -64,7 +64,7 @@ ms.locfileid: "97363804"
 
 5. 保存文件。
 
-    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击 **“确定”** 。
+    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击“确定”。
 
 6. 在 **解决方案资源管理器** 中，展开 "模板文件" 节点，将会找到扩展名为 **.txt** 的文件。 该文件包含从该模板生成的文本。
 
@@ -125,7 +125,7 @@ ms.locfileid: "97363804"
 
 创建文本模板：
 
-- 将 `debug="true"` 插入 `template` 指令。 例如：
+- 将 `debug="true"` 插入 `template` 指令。 例如： 。
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -274,7 +274,7 @@ ms.locfileid: "97363804"
 
 ### <a name="getting-data-from-visual-studio"></a>从 Visual Studio 获取数据
 
-若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 导入 `Microsoft.VisualStudio.TextTemplating` ，其中包含 `GetCOMService()` 扩展方法。  然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如：
+若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 导入 `Microsoft.VisualStudio.TextTemplating` ，其中包含 `GetCOMService()` 扩展方法。  然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如： 。
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -355,7 +355,7 @@ Warning("A warning message");
    | | |
    |-|-|
    | **自定义工具 =** | **TextTemplatingFileGenerator** |
-   | **生成操作 =** | 无 |
+   | **生成操作 =** | **无** |
 
 5. 在文件开头插入以下行：
 
@@ -382,7 +382,7 @@ Warning("A warning message");
 
 ## <a name="next-steps"></a>后续步骤
 
-|下一步|主题|
+|后续步骤|主题|
 |-|-|
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|
@@ -390,6 +390,6 @@ Warning("A warning message");
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)

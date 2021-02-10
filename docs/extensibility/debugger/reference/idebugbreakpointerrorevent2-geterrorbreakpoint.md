@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e5acfd19-ac17-47f3-a31a-b2aa8baca36d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe22f18d4574ffde48cea975bff8d8f5801ca465
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e81cf833ea6e03a79d359144fa3e7e9a7024b74e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80735070"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936114"
 ---
 # <a name="idebugbreakpointerrorevent2geterrorbreakpoint"></a>IDebugBreakpointErrorEvent2::GetErrorBreakpoint
 获取一个 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 对象，该对象描述未绑定断点的原因。
@@ -28,18 +28,18 @@ ms.locfileid: "80735070"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetErrorBreakpoint( 
+HRESULT GetErrorBreakpoint( 
     IDebugErrorBreakpoint2** ppErrorBP
 );
 ```
 
 ```csharp
-int GetErrorBreakpoint( 
+int GetErrorBreakpoint( 
     out IDebugErrorBreakpoint2 ppErrorBP
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppErrorBP`\
 弄返回描述警告或错误的 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 对象。
 
@@ -50,7 +50,7 @@ int GetErrorBreakpoint( 
 `IDebugErrorBreakpoint2`获取接口后，调用[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md)方法以获取[IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)对象。 然后，可以使用 [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md) 方法来确定无效的位置、无效的表达式或挂起断点未绑定的原因（例如，未加载代码）等。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)接口的**CBreakpointSetDebugEventBase**对象实现此方法。
+下面的示例演示如何为公开 [IDebugBreakpointErrorEvent2](../../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md)接口的 **CBreakpointSetDebugEventBase** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CBreakpointErrorDebugEventBase::GetErrorBreakpoint(

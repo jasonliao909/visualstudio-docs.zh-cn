@@ -13,15 +13,15 @@ helpviewer_keywords:
 - worksheets, using radio buttons
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4e375f394cd3d8be35ace8e3df07920fb824a07e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937311"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练演示如何在 Microsoft Office Excel 工作表上使用单选按钮，以使用户能够在两个选项之间快速切换。 在这种情况下，选项更改图表的样式。
@@ -99,7 +99,7 @@ ms.locfileid: "97526064"
 
 2. 单击 " **浏览** " 按钮，浏览到本演练前面部分创建的工作簿。
 
-3. 单击“确定”  。
+3. 单击“确定”。
 
      Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 **我的 Excel 图表** 项目添加到 **解决方案资源管理器**。
 
@@ -110,7 +110,7 @@ ms.locfileid: "97526064"
 
 1. <xref:Microsoft.Office.Tools.Excel.Chart>在设计器中选择控件，并在 "**属性**" 窗口中更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**dataChart**|
     |**HasLegend**|**false**|
@@ -134,31 +134,31 @@ ms.locfileid: "97526064"
 
 2. 从 "**工具箱**" 的 "**公共控件**" 选项卡中，将 **单选按钮** 控件拖到用户控件，并更改以下属性。
 
-   | properties | 值 |
+   | 属性 | 值 |
    |----------|------------------|
    | **名称** | **columnChart** |
-   | **文本** | **柱形图** |
+   | **Text** | **柱形图** |
 
 3. 将第二个单选按钮添加到用户控件，并更改以下属性。
 
-   | properties | 值 |
+   | 属性 | 值 |
    |----------|---------------|
    | **名称** | **barChart** |
-   | **文本** | **条形图** |
+   | **Text** | **条形图** |
 
 4. 将第三个单选按钮添加到用户控件，并更改以下属性。
 
-   | properties | 值 |
+   | 属性 | 值 |
    |----------|----------------|
    | **名称** | **lineChart** |
-   | **文本** | **折线图** |
+   | **Text** | **折线图** |
 
 5. 将第四个单选按钮添加到用户控件，并更改以下属性。
 
-   |properties|值|
+   |属性|值|
    |--------------|-----------|
    |**名称**|**areaBlockChart**|
-   |**文本**|**面积图**|
+   |**Text**|**面积图**|
 
    接下来，在单击单选按钮时编写代码以更新图表。
 

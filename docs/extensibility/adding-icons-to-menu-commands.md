@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf0a089c10c850c14b9ba2f807a69eada5d04b9
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b9f37bd14ed43ab0e165346f8ce09512c3981177
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934359"
 ---
 # <a name="add-icons-to-menu-commands"></a>向菜单命令添加图标
 菜单和工具栏上都可以出现命令。 在工具栏上，通常只显示一个图标 (来保存) 空间，而在菜单上，命令通常同时出现同时包含图标和文本。

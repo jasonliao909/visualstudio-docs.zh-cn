@@ -14,15 +14,15 @@ helpviewer_keywords:
 - text templates, generating files at run time
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fcb7048b4319d1edb46911a74e96f440540e4299
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363934"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937948"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -64,7 +64,7 @@ This report is Company Confidential.
     > [!NOTE]
     > 模板文件名将用作生成的代码中的类名。 因此，它不应包含空格或标点。
 
-4. 选择“添加”  。
+4. 选择“添加”。
 
     将创建一个扩展名为 **tt** 的新文件。 其 " **自定义工具** " 属性设置为 " **TextTemplatingFilePreprocessor**"。 它包含以下行：
 
@@ -109,7 +109,7 @@ Language 参数将取决于项目的语言。
 
 ### <a name="plain-content"></a>纯内容
 
-编辑 **tt** 文件以包含你希望应用程序生成的文本。 例如：
+编辑 **tt** 文件以包含你希望应用程序生成的文本。 例如： 。
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>嵌入的程序代码
 
-您可以在和之间插入程序代码 `<#` `#>` 。 例如：
+您可以在和之间插入程序代码 `<#` `#>` 。 例如： 。
 
 ```csharp
 <table>
@@ -435,7 +435,7 @@ End material for DerivedTemplate1.
 
 可在编译时确定模板及其内容的任何应用程序中使用运行时模板。 但是，如果想要编写一个 Visual Studio 扩展，以便从运行时更改的模板生成文本，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)

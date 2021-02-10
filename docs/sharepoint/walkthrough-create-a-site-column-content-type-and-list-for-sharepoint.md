@@ -19,15 +19,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, content types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1670dfa3c7202e8ebbdb28396f161daeffac491
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: d205203797d8bd50c7b3132df86fbff9dbad1771
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914005"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937688"
 ---
 # <a name="walkthrough-create-a-site-column-content-type-and-list-for-sharepoint"></a>演练：创建 SharePoint 的站点栏、内容类型和列表
   下面的过程演示如何创建自定义 SharePoint 网站列（或 *字段*）以及使用网站列的内容类型。 它还演示如何创建使用新内容类型的列表。
@@ -64,7 +64,7 @@ ms.locfileid: "96914005"
 
 4. 将项目名称更改为 " **诊所**"，然后选择 **"确定"** 按钮。
 
-5. 在 "**指定用于调试的站点和安全级别**" 对话框中，输入要向其添加新的自定义字段项的本地 SharePoint 站点的 URL，或使用 (SystemName 的默认位置 `http://<` *SystemName* `>/)` 。
+5. 在 "**指定用于调试的站点和安全级别**" 对话框中，输入要向其添加新的自定义字段项的本地 SharePoint 站点的 URL，或使用 (SystemName 的默认位置 `http://<`  `>/)` 。
 
 6. 在 " **此 SharePoint 解决方案的信任级别是什么？** " 部分中，使用 " **部署为沙盒解决方案** 的默认值"。
 
@@ -78,7 +78,7 @@ ms.locfileid: "96914005"
 
 3. 将项目名称更改为 " **诊所**"，然后选择 " **创建** " 按钮。
 
-4. 在 "**指定用于调试的站点和安全级别**" 对话框中，输入要向其添加新的自定义字段项的本地 SharePoint 站点的 URL，或使用 (SystemName 的默认位置 `http://<` *SystemName* `>/)` 。
+4. 在 "**指定用于调试的站点和安全级别**" 对话框中，输入要向其添加新的自定义字段项的本地 SharePoint 站点的 URL，或使用 (SystemName 的默认位置 `http://<`  `>/)` 。
 
 5. 在 " **此 SharePoint 解决方案的信任级别是什么？** " 部分中，使用 " **部署为沙盒解决方案** 的默认值"。
 

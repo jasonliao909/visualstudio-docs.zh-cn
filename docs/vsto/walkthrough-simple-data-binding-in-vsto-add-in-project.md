@@ -14,15 +14,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], simple binding data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc0b4f18e0f9a45f19148fde9e3d289ccad9e73f
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: e6162c8cc508c1eaada6c2be90bd28d430779cb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97526159"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937363"
 ---
 # <a name="walkthrough-simple-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的简单数据绑定
 
@@ -88,7 +88,7 @@ ms.locfileid: "97526159"
 
 6. 在“选择数据库对象”  页中展开“表”  ，再选择“Customer (SalesLT)” 。
 
-7. 单击“完成”。
+7. 单击“完成” 。
 
     将 *adventureworksltdataset.xsd* 文件添加到 **解决方案资源管理器**。 此文件定义以下各项：
 

@@ -16,15 +16,15 @@ helpviewer_keywords:
 - simple data binding [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 868a120baa8207d922d3dee55e10c8e903381e19
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 31084703a581999a1f25bfc82db6c36d9e2cbf6c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524103"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937402"
 ---
 # <a name="walkthrough-simple-data-binding-in-a-document-level-project"></a>演练：文档级项目中的简单数据绑定
   本演练演示了文档级项目中的数据绑定基础知识。 SQL Server 数据库中的单个数据字段绑定到 Microsoft Office Excel 中的命名范围。 本演练还演示如何添加控件，使您可以滚动浏览表中的所有记录。
@@ -82,7 +82,7 @@ ms.locfileid: "97524103"
 
 8. 选中 " **Customers** " 表旁边的复选框。
 
-9. 单击“完成”。
+9. 单击“完成” 。
 
    向导会将 **Customers** 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - icons [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aaf6b96548a9856833fcd1768764ed914da30a07
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: a3a2fab671d6302583f1207f5756118c548bd8a9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96848087"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933604"
 ---
 # <a name="guidelines-to-create-outlook-form-regions"></a>创建 Outlook 窗体区域的准则
   以下信息可以帮助优化窗体区域和避免潜在问题。
@@ -42,7 +42,7 @@ ms.locfileid: "96848087"
 ## <a name="use-form-region-names"></a><a name="UsingFormRegions"></a> 使用窗体区域名称
  用来描述窗体区域的名称有多个。 请务必了解这些名称之间的区别以及它们如何影响窗体区域。 下表对每个名称进行了描述。
 
-|窗体区域名称|描述|
+|窗体区域名称|说明|
 |----------------------|-----------------|
 |窗体区域项名称|你在“添加新项”  对话框中为“Outlook 窗体区域”  项指定的名称。 这是将在“解决方案资源管理器” 中显示的窗体区域代码文件的名称。|
 |<xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> 属性|你在  “新建 Outlook 窗体区域”向导的  “提供说明性文本并选择显示首选项”页中指定此名称。 此名称作为  “属性”窗口中的 **FormRegionName** 属性显示。<br /><br /> 使用 <xref:Microsoft.Office.Tools.Outlook.FormRegionManifest.FormRegionName%2A> 属性指定用于在 Outlook 用户界面 (UI) 标识窗体区域的标签。 对于单独的窗体区域，此名称显示为 Outlook 项目功能区上的按钮。<br /><br /> 对于相邻的窗体区域，此名称显示为窗体区域上方的标题文本。|
@@ -88,7 +88,7 @@ ms.locfileid: "96848087"
 
   **窗口** 图标将出现在通知区域 **和 "替换** + **选项卡**" 对话框中，用于显示替换或全部替换窗体区域的打开项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)

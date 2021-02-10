@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a76ae38b686e1c77acd9561e9c48fd3444565b0a
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935412"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 Visual Studio 可视化和建模 SDK 的永久性 API 允许程序锁定部分或全部域特定语言 (DSL) 模型，以便可以读取但不能更改它。 例如，可以使用此只读选项，以便用户可以要求同事批注和查看 DSL 模型，但可以禁止它们更改原始模型。
@@ -80,7 +80,7 @@ partition.SetLocks(Locks.Delete);
 |值|如果 `IsLocked(Value)` 为 true，则表示|
 |-|-|
 |无|无限制。|
-|Property|无法更改元素的域属性。 这不适用于由关系中的域类的角色生成的属性。|
+|属性|无法更改元素的域属性。 这不适用于由关系中的域类的角色生成的属性。|
 |添加|无法在分区或存储区中创建新的元素和链接。<br /><br /> 不适用于 `ModelElement` 。|
 |移动|如果为 true，则不能在分区之间移动元素; `element.IsLocked(Move)` 如果为 true，则为 `targetPartition.IsLocked(Move)` 。|
 |删除|如果此锁是在元素本身上设置的，或者是在删除操作将传播到的任何元素（如嵌入元素和形状）上，则不能删除元素。<br /><br /> 您可以使用 `element.CanDelete()` 来发现是否可以删除某个元素。|
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  当对 `SetLocks()` 存储区、分区或 ModelElement 调用时，将调用这些方法。 每种方法都提供一组建议的锁。 可以返回建议的集，也可以添加和减去锁。
 
- 例如：
+ 例如： 。
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

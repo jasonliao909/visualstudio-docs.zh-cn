@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 62766b704d140805a3b76dbc3c00acaf6257f5e5
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850151"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934866"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：向 SharePoint 项目添加属性
   可以使用项目扩展将属性添加到任何 SharePoint 项目。 在 **解决方案资源管理器** 中选择项目时，属性将显示在 "**属性**" 窗口中。

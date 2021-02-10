@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Office primary interop assemblies, installing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 15a55650f2e4a434343c9128cc8f28117b54288e
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 432b2a74eb7ea4753cd110956c9dc9313e1a5d6e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845877"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934814"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。
@@ -36,7 +36,7 @@ ms.locfileid: "96845877"
     > [!WARNING]
     > 默认情况下，当你生成 PIA 时，PIA 嵌入到你的解决方案中，因此你不必将 Pia 分发给用户作为使用 VSTO 外接程序或自定义项的先决条件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)
 - [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [如何：将计算机配置为开发 Office 解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
