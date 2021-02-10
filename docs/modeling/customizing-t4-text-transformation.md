@@ -9,15 +9,15 @@ helpviewer_keywords:
 - text templates, custom hosts
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b168e0e66b7704c3e78a241f76ee4122278c9ed
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 4565e710d1b3172507cb3f966cd2a920d3b3aaa8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362907"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935399"
 ---
 # <a name="customize-t4-text-transformation"></a>自定义 T4 文本转换
 
@@ -35,6 +35,6 @@ ms.locfileid: "97362907"
 
  如果要编写 Visual Studio 扩展，请考虑使用现有的文本转换服务，而不是编写自己的主机。 有关详细信息，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="reference"></a>参考
+## <a name="reference"></a>引用
 
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md) 提供文本模板指令和控制块的语法。

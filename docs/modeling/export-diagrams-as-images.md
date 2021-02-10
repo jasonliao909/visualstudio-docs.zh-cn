@@ -10,15 +10,15 @@ helpviewer_keywords:
 - UML diagrams, saving
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 12e0036377ed5b67e092ff0cf4588acc39c23525
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: df0ecb55e72683a09bb68ec61410271b8c6a8774
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361633"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935100"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 
@@ -42,7 +42,7 @@ ms.locfileid: "97361633"
 
 3. 在 "将 **文件另存为"** 对话框中，将该文件保存为 **xps 文档 (\* .xps)** file。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)
 - [共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)

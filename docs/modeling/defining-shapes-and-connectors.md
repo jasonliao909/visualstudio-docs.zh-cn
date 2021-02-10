@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fd98e449f674d2841dd41aa88e320468698f4736
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 898bb0f3a923cfeac863b365e4746a63ccbc4c91
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363817"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935321"
 ---
 # <a name="define-shapes-and-connectors"></a>定义形状和连接线
 
@@ -36,7 +36,7 @@ DSL 关系图显示按线条或 *连接符* 了的 *形状* 集合。 通常情�
 
 提供以下类型的形状：
 
-|形状类型|描述|
+|形状类型|说明|
 |-|-|
 |几何形状|通用矩形或椭圆形形状。 可在相对于形状边界的特定位置中显示文本和图标修饰器。 您还可以将形状嵌套在 geometry 形状中。|
 |隔离舱形状|包含标头和隔离舱的矩形（如 UML 类）。 每个隔离舱都可包含文本行列表。<br /><br /> 这些行通常表示嵌入在由形状表示的元素下方的元素。 有关示例，请从类关系图解决方案模板中创建 DSL。|

@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Domain-Specific Language, toolbox
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f02254cc1229ab069277b0fe46a6b825393f682f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 40341a0c74b371c4c84429474e58c7d338bb8059
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935425"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 
@@ -234,7 +234,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 
  您可以使用自定义代码应用 "硬" 约束，但应考虑用户是否应该能够暂时建立无效的连接。 如果他们应能够如此，你可以修改约束以使连接不进行验证，直到用户尝试保存更改。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)

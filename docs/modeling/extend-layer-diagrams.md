@@ -9,15 +9,15 @@ helpviewer_keywords:
 - layer models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d78b7005875f0544354c845cd27d187bdbf40d6d
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 10e0e07b6a8ee4245e19628e03bfdf484f94d34c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361620"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935139"
 ---
 # <a name="extend-dependency-diagrams"></a>扩展依赖项关系图
 
@@ -37,7 +37,7 @@ ms.locfileid: "97361620"
 
 你必须在要运行层扩展的计算机上安装合适版本的 Visual Studio。 若要查看支持依赖关系图的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
 - [依赖项关系图：指南](../modeling/layer-diagrams-guidelines.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - text templates, custom directive processors
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 638367f2c3a1238edc257a255280c5197e11d3f0
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: dc839d4d859a8dd1dcc82774c466d6d103e4e7a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363921"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935334"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -109,7 +109,7 @@ ms.locfileid: "97363921"
 
 3. 双击 .vsix 文件。 此时将显示 Visual Studio 扩展安装程序。
 
-4. 重新启动 Visual Studio。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：
+4. 重启 Visual Studio。 现在，可以运行包含引用自定义指令处理器的指令的文本模板。 每个指令的形式如下：
 
      `<#@ CustomDirective Processor="CustomDirectiveProcessorName" parameter1="value1" ... #>`
 
@@ -196,8 +196,8 @@ ms.locfileid: "97363921"
 |-|-|-|
 |（默认值）|REG_SZ|(未设置值)|
 |类|REG_SZ|\<**Your Fully Qualified Class Name**>|
-|程序集|REG_SZ|\<**Your Assembly Name in the GAC**>|
+|Assembly|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

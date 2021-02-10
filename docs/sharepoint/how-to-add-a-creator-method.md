@@ -16,15 +16,15 @@ helpviewer_keywords:
 - Business Data Connectivity service [SharePoint development in Visual Studio], Creator
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 790b4265b232c71ff3e0613cffcb45e710081fa3
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915448"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934879"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
   Creator 方法将新数据添加到实体的数据源。 当用户在基于模型的列表的 **功能区** 上选择 "**新建项**" 按钮时， (BDC) 服务的业务数据连接将调用此方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。

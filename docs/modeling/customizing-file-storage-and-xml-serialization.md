@@ -10,15 +10,15 @@ helpviewer_keywords:
 - Domain-Specific Language, serialization
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e889bb81b4c13d003beb15f733d053ef159b197f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97362933"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935529"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
@@ -103,7 +103,7 @@ ms.locfileid: "97362933"
 
 名字对象用于表示在模型和关系图文件的不同部分之间进行交叉引用。 它们还在文件中用于 `.diagram` 引用模型文件中的节点。 名字对象有两种形式：
 
-- *Id 名字对象* 引用目标元素的 GUID。 例如：
+- *Id 名字对象* 引用目标元素的 GUID。 例如： 。
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -268,37 +268,37 @@ ms.locfileid: "97362933"
 
 这些元素可在 DSL 资源管理器中的 " **Xml 序列化 Behavior\Class 数据**" 下找到。
 
-|Property|描述|
+|属性|说明|
 |-|-|
 |具有自定义元素架构|如果为 True，则指示域类具有自定义元素架构|
 |为自定义|如果要为此域类编写自己的序列化和反序列化代码，请将此值设置为 **True** 。<br /><br /> 构建解决方案并调查错误以发现详细说明。|
 |域类|此类数据节点适用的域类。 只读。|
 |元素名称|此类的元素的 Xml 节点名称。 默认值为域类名称的小写形式。|
 |名字对象特性名称|用于包含引用的名字对象元素中的属性的名称。 如果为空，则使用键属性或 id 的名称。<br /><br /> 在此示例中，为 "name"：  `<personMoniker name="/Mike Nash"/>`|
-|名字对象元素名称|用于引用此类的元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是类名以 "名字对象" 作为后缀的小写形式。 例如 `personMoniker`。|
+|名字对象元素名称|用于引用此类的元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是类名以 "名字对象" 作为后缀的小写形式。 例如，`personMoniker` 。|
 |名字对象类型名称|为此类的元素的名字对象生成的 xsd 类型的名称。 XSD 在 **Dsl\Generated 代码架构中 \\ \* 。 xsd**|
 |序列化 Id|如果为 True，则元素 GUID 包含在文件中。 如果没有标记 **为名字对象键** 的属性，并且 DSL 定义了此类的引用关系，则必须为 true。|
 |类型名称|在指定域类的 xsd 中生成的 xml 类型的名称。|
-|注释|与此元素关联的非正式说明|
+|说明|与此元素关联的非正式说明|
 
 ### <a name="xml-property-data"></a>Xml 属性数据
 
 Xml 属性节点位于类节点下。
 
-|Property|描述|
+|属性|说明|
 |-|-|
 |域属性|Xml 序列化配置数据应用到的属性。 只读。|
 |是名字对象键|如果为 True，则将属性用作创建引用此域类的实例的名字对象的键。|
 |是名字对象限定符|如果为 True，则该属性用于在名字对象中创建限定符。 如果为 false，并且对于此域类，如果 SerializeId 不为 true，则名字对象由嵌入树中父元素的名字对象限定。|
 |表示形式|如果特性，则将属性序列化为 xml 特性;如果为元素，则序列化为元素;如果为 Ignore，则不序列化。|
 |Xml 名称|用于表示属性的 xml 特性或元素的名称。 默认情况下，这是域属性名称的小写形式。|
-|注释|与此元素关联的非正式说明|
+|说明|与此元素关联的非正式说明|
 
 ### <a name="xml-role-data"></a>Xml 角色数据
 
 角色数据节点可在源类节点下找到。
 
-|Property|描述|
+|属性|说明|
 |-|-|
 |具有自定义名字对象|如果要提供自己的代码来生成和解析遍历此关系的名字对象，请将此值设置为 true。<br /><br /> 有关详细说明，请生成解决方案，然后双击错误消息。|
 |域关系|指定应用这些选项的关系。 只读。|
@@ -306,7 +306,7 @@ Xml 属性节点位于类节点下。
 |角色元素名称|指定从源角色派生的 XML 元素的名称。 默认值为角色属性名称。|
 |使用完整形式|如果为 true，则每个目标元素或名字对象都包含在表示关系的 XML 节点中。 如果关系具有其自己的域属性，则应将其设置为 true。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

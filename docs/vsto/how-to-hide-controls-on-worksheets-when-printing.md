@@ -14,15 +14,15 @@ helpviewer_keywords:
 - worksheets, hiding controls when printing
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: acc90986dd394e69de12893aac01e0a4f662b1a3
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d87da5c22969fc355fe473e9505c61429b8023f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846488"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934801"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：在打印时隐藏工作表上的控件
   打印 Microsoft Office 包含 Windows 窗体控件的 Excel 文档时，这些控件在打印的工作表中可见。 打印工作表时，可以隐藏控件。
@@ -43,7 +43,7 @@ ms.locfileid: "96846488"
 
 3. 在 " **属性** " 窗口中，将 <xref:Microsoft.Office.Tools.Excel.Controls.Button.PrintObject%2A> 属性设置为 **False**。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

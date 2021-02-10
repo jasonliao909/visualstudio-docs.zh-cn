@@ -10,18 +10,18 @@ helpviewer_keywords:
 ms.assetid: cb1e36aa-4302-455c-98fb-6638a1ef5c46
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5440db69a3ceb763fb3e64e07d04a1e4f67f822a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbe9f8e5e5f4b6d416b3179aadf25e89543cdba3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80725814"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934261"
 ---
 # <a name="idebugpendingbreakpoint2getbreakpointrequest"></a>IDebugPendingBreakpoint2::GetBreakpointRequest
 获取用于创建此挂起断点的断点请求。
@@ -29,18 +29,18 @@ ms.locfileid: "80725814"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetBreakpointRequest( 
+HRESULT GetBreakpointRequest( 
    IDebugBreakpointRequest2** ppBPRequest
 );
 ```
 
 ```csharp
-int GetBreakpointRequest( 
+int GetBreakpointRequest( 
    out IDebugBreakpointRequest2 ppBPRequest
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppBPRequest`\
 弄返回一个 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 对象，该对象表示用于创建此挂起断点的断点请求。
 

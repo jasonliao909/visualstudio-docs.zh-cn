@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0636d8c3-625a-49fa-94b6-516f22b7e1bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e8dd910e4edc110abb40dde14b4cb85ff54a70a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3c12dc405f08851e55040c3097e5d7f409030f61
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729384"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934326"
 ---
 # <a name="idebugexpressionevaluator"></a>IDebugExpressionEvaluator
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IDebugExpressionEvaluator : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|Parse|将表达式字符串转换为分析的表达式。|
+|[Parse](../../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md)|将表达式字符串转换为分析的表达式。|
 |[GetMethodProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)|获取方法的局部变量、参数和其他属性。|
 |[GetMethodLocationProperty](../../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodlocationproperty.md)|将方法位置和偏移量转换为内存地址。|
 |[SetLocale](../../../extensibility/debugger/reference/idebugexpressionevaluator-setlocale.md)|确定要使用哪种语言创建可打印结果。|

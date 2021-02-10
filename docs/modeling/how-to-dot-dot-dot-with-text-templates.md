@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 50844ce8c6943fcf6b2a0b91c7fd2cfcb6184094
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c5b5e1f4e7488253112eb33905fe534be3591782
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363180"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99934892"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 Visual Studio 中的文本模板提供了一种有用的方式来生成任何类型的文本。 您可以使用文本模板，在运行时生成文本作为应用程序的一部分，并在设计时生成某些项目代码。 本主题概述最常问的 "如何实现 ..." 怀疑.
@@ -73,14 +73,14 @@ Visual Studio 中的文本模板提供了一种有用的方式来生成任何类
 
 ### <a name="generate-files-from-a-complex-model"></a>从复杂模型生成文件
 
-- 请考虑创建特定于域的语言 (DSL) 来表示模型。 这使得编写模板更为容易，因为您使用的类型和属性反映了模型中元素的名称。 您不必分析文件或导航 XML 节点。 例如：
+- 请考虑创建特定于域的语言 (DSL) 来表示模型。 这使得编写模板更为容易，因为您使用的类型和属性反映了模型中元素的名称。 您不必分析文件或导航 XML 节点。 例如： 。
 
      `foreach (Book book in this.Library) { ... }`
 
      有关详细信息，请参阅 [使用 Domain-Specific 语言入门](../modeling/getting-started-with-domain-specific-languages.md) 和 [从 Domain-Specific 语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="get-data-from-visual-studio"></a>从 Visual Studio 获取数据
- 若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 例如：
+ 若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 例如： 。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>

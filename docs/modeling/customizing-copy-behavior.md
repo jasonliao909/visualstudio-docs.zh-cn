@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8eee81440c0dda7f193d3e37eab700ada3ff259f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 93a32ed2bb4f375e8938c9a3b9ff34c7af47e0e2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935594"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
 在使用 Visual Studio 可视化和建模 SDK 创建的域特定语言 (DSL) ，你可以更改用户复制和粘贴元素时所发生的情况。
@@ -554,7 +554,7 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)
 - [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
