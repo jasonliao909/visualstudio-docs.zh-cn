@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 33968183-2e15-4e0d-955b-ca12212d1c25
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6c7982d8c8c0d71f8c79e9b808be5453d384882d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701197"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952130"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
 此函数启动源代码管理操作的批处理序列。 将调用 [SccEndBatch](../extensibility/sccendbatch-function.md) 以结束批处理。 这些批处理不能嵌套。
@@ -28,13 +28,13 @@ ms.locfileid: "80701197"
 SCCRTN SccBeginBatch(void);
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  无。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|成功的批处理操作。|
 |SCC_E_UNKNOWNERROR|非特定故障。|

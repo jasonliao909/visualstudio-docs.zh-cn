@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 093db17990d538bf72ddeab9ba9da2b8db30d8f0
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ca17eae2b4f21e9705788faa1a2371a066be6475
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97616352"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952156"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 Visual Studio 解决方案可以包含大量项目。 默认的 Visual Studio 行为是在解决方案打开时加载解决方案中的所有项目，而不允许用户访问任何项目，直到所有项目都完成加载。 当项目加载过程的持续时间超过两分钟时，将显示一个进度栏，其中显示了已加载的项目数和项目总数。 在包含多个项目的解决方案中工作时，用户可以卸载项目，但此过程存在一些缺点：卸载的项目不是作为 "重新生成解决方案" 命令的一部分生成的，并且不会显示类型和关闭项目的成员的 IntelliSense 说明。

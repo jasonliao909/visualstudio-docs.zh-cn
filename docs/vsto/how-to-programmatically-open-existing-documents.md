@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Word [Office development in Visual Studio], opening documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 994afc6f0d8d9bb76aff56097d0a18b8c3f940d9
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 81d134c88d93b3da3b0f0e6c3ded3cbe0d6d3f89
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951675"
 ---
 # <a name="how-to-programmatically-open-existing-documents"></a>如何：以编程方式打开现有文档
   <xref:Microsoft.Office.Interop.Word.Documents.Open%2A>方法打开由完全限定的路径和文件名指定的现有 Microsoft Office Word 文档。 此方法返回一个 <xref:Microsoft.Office.Interop.Word.Document> 表示打开的文档的。

@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a04f47a6500c0cd2174d0567029a4f5c86d9f62d
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615722"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952169"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -41,7 +41,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 
 display_string
 
@@ -51,7 +51,7 @@ mesg_type
 
 消息的类型。 下表列出了此参数支持的值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息被视为信息、警告或错误。|
 |`SCC_MSG_STATUS`|此消息显示状态，并且可以显示在状态栏中。|
@@ -65,7 +65,7 @@ mesg_type
 
 ## <a name="return-value"></a>返回值
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|字符串已显示或操作已成功完成。|
 |SCC_MSG_RTN_CANCEL|用户要取消该操作。|
