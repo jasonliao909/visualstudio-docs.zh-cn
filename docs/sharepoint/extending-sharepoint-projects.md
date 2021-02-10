@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint projects, extending
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae4c3c1e606fd436725ef9f54a4568b754b048af
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 8efeb704bb247e653af0ee062efcc71ad390c5ea
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672634"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948656"
 ---
 # <a name="extend-sharepoint-projects"></a>扩展 SharePoint 项目
   若要自定义 SharePoint 项目的项目级功能，请创建项目扩展。 例如，你可以添加自定义项目属性，或响应用户在 Visual Studio 中开发 SharePoint 解决方案时引发的项目级事件。

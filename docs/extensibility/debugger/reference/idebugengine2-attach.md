@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 173dcbda-5019-4c5e-bca9-a071838b5739
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93890885dbbdfd3cc26984590955681487977200
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80731217"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948304"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到程序或程序。 当 DE 正在进程内运行到 SDM 时，由会话调试管理器调用 (SDM) 。
@@ -28,26 +28,26 @@ ms.locfileid: "80731217"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Attach( 
-   IDebugProgram2**      pProgram,
-   IDebugProgramNode2**  rgpProgramNodes,
-   DWORD                 celtPrograms,
-   IDebugEventCallback2* pCallback,
-   ATTACH_REASON         dwReason
+HRESULT Attach( 
+   IDebugProgram2**      pProgram,
+   IDebugProgramNode2**  rgpProgramNodes,
+   DWORD                 celtPrograms,
+   IDebugEventCallback2* pCallback,
+   ATTACH_REASON         dwReason
 );
 ```
 
 ```csharp
-int Attach( 
-   IDebugProgram2[]     pProgram,
-   IDebugProgramNode2[] rgpProgramNodes,
-   uint                 celtPrograms,
-   IDebugEventCallback2 pCallback,
-   Enum_ATTACH_REASON   dwReason
+int Attach( 
+   IDebugProgram2[]     pProgram,
+   IDebugProgramNode2[] rgpProgramNodes,
+   uint                 celtPrograms,
+   IDebugEventCallback2 pCallback,
+   Enum_ATTACH_REASON   dwReason
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProgram`\
 中 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象的数组，这些对象表示要附加到的程序。 这些是端口程序。
 
@@ -61,7 +61,7 @@ int Attach( 
 中要用于向 SDM 发送调试事件的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 对象。
 
 `dwReason`\
-中 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 枚举中的一个值，该值指定附加这些程序的原因。 有关详细信息，请参阅“备注”部分。
+中 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 枚举中的一个值，该值指定附加这些程序的原因。 有关详细信息，请参见“备注”部分。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 743c4489-74ac-403a-bbaa-eed7d785a3ac
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61c118bbc85064beb10b99641f0803af7af12d56
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 98f7df8593b09acb2fa4db81ebfa734aeb1ddcaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947731"
 ---
 # <a name="customparameter-element-visual-studio-templates"></a> (Visual Studio 模板的 CustomParameter 元素) 
 包含从模板创建项目或项时要使用的自定义参数名和值。
@@ -36,7 +36,7 @@ ms.locfileid: "94671944"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |`Name`|必需。 参数的名称。 参数的格式为 $*name*$。|
 |`Value`|必需。 参数的替换值。|
@@ -50,7 +50,7 @@ ms.locfileid: "94671944"
 |-------------|-----------------|
 |[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|在向导进行参数替换时，将要传递给模板向导的自定义参数分组。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  如果模板包含 `CustomParameter` 元素，则每个实例都会将 `Name` 属性替换为 `Value` 所创建项目或项文件中的属性。
 
 ## <a name="example"></a>示例

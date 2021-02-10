@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2f3694eff6cd48cc01c0e244d3a068f3bb13fda
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 65a97a32baab159ad2c0bd1ac189dedbf09fe98e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606484"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948434"
 ---
 # <a name="program-nodes"></a>程序节点
 在调试程序体系结构中， *程序节点*：
@@ -35,7 +35,7 @@ ms.locfileid: "96606484"
 
   将程序附加到之前，IDE 只需要程序的轻型说明。 可以从程序节点获取此信息。 将程序附加到后，IDE 将显示更多详细信息，如程序中运行的所有线程的列表。 此信息是从程序本身获取的。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - Programs 
 - [进程](../../extensibility/debugger/processes.md)
 - [调试引擎](../../extensibility/debugger/debug-engine.md)
