@@ -10,19 +10,19 @@ helpviewer_keywords:
 ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bfa869bed2bc4462c050ac77e08665958f60598
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91878925"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944077"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜索表达式中的逻辑和高级运算符
 
-可以使用逻辑运算符和高级搜索运算符优化 **帮助查看器**中的帮助内容的搜索。
+可以使用逻辑运算符和高级搜索运算符优化 **帮助查看器** 中的帮助内容的搜索。
 
 ## <a name="logical-operators"></a>逻辑运算符
 
@@ -31,7 +31,7 @@ ms.locfileid: "91878925"
 |要搜索|用途|示例|结果|
 |-------------------|---------|-------------|------------|
 |同一文章中的两个词|AND|dib AND palette|包含“dib”和“palette”的主题。|
-|文章中的任一个词|OR|raster OR vector|包含“raster”或“vector”的主题|
+|文章中的任一个词|或|raster OR vector|包含“raster”或“vector”的主题|
 |同一文章中包含第一个词，而不包含第二个词|NOT|"operating system" NOT DOS|包含“operating system”但不包含“DOS”的主题。|
 |文章中两个词相互靠近|NEAR|user NEAR kernel|包含与“kernel”靠近的“user”的主题。|
 
@@ -68,7 +68,7 @@ ms.locfileid: "91878925"
 > [!NOTE]
 > `code:` 运算符仅查找标记有编程语言标签的内容，而不查找一般标记为代码的内容。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：搜索主题](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

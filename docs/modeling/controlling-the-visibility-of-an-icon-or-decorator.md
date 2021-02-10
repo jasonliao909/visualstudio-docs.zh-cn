@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bdf97cc10543f066665506d3e238386dc39f0d4f
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363492"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942797"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 *修饰* 器是在特定于域的语言 (DSL) 的形状上显示的图标或文本行。 您可以根据模型中属性的状态，使修饰器出现和消失。 例如，在代表人员的形状上，可能会根据人员的性别、子女数等显示不同的图标。
@@ -90,7 +90,7 @@ ms.locfileid: "97363492"
 
 6. 请注意缺少的命名空间、类和方法。  例如，FamilyTree. GetDecoratorControlValue ( # A1。
 
-7. 在单独的代码文件中，编写包含缺少的方法的分部类定义。 例如：
+7. 在单独的代码文件中，编写包含缺少的方法的分部类定义。 例如： 。
 
     ```
     namespace Company.FamilyTree
@@ -105,7 +105,7 @@ ms.locfileid: "97363492"
 
 8. 重新生成并运行解决方案。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)
 - [在图表上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)

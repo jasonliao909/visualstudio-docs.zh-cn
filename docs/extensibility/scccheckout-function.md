@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ed809e33a80bf2903c88550e97b28b1e0178bcd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701105"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99943135"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 提供完全限定的文件名的列表后，此函数会将其签出到本地驱动器。 注释适用于所有正在签出的文件。Comment 参数可以是一个 `null` 字符串。
@@ -36,7 +36,7 @@ SCCRTN SccCheckout (
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件上下文结构。

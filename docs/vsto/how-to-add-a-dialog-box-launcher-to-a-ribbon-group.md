@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], dialog box launcher
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 85b5d6f127c6f8b2b8140e778792aa1088efe05c
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d8e04b7549d1b6a458f0993804946502f55f0165
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844928"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942277"
 ---
 # <a name="how-to-add-a-dialog-box-launcher-to-a-ribbon-group"></a>如何：向功能区组添加对话框启动器
   您可以向功能区上的任何组添加对话框启动器。 对话框启动器是出现在组中的小图标。 用户单击此图标可打开相关对话框或任务窗格，其中提供了与组相关的更多选项。
@@ -37,7 +37,7 @@ ms.locfileid: "96844928"
 
      将代码添加到 <xref:Microsoft.Office.Tools.Ribbon.RibbonGroup.DialogLauncherClick> 组的事件，以打开自定义或内置对话框。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)

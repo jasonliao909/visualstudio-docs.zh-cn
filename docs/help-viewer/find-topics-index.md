@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 695bcabc195b97551b2943a557d591bdfb85c991
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879016"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944219"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用 Help Viewer 索引查找主题
 
@@ -29,14 +29,14 @@ ms.locfileid: "91879016"
 
 ## <a name="to-find-a-topic-by-using-the-index"></a>要使用索引查找主题
 
-在“索引”选项卡上，执行以下任一任务：****
+在“索引”选项卡上，执行以下任一任务：
 
 - 在文本框中指定要搜索的关键字。 例如，指定“更新”来查找具有关键字如“更新”、“已更新”和“正在更新”的主题。
 
     通过选择选项卡顶部附近的筛选器按钮，可以显示包含你指定的文本的所有条目，或者仅显示以指定的文本开头的条目。
 
     > [!NOTE]
-    > 当筛选器按钮显示在带有边框的较暗的背景上时，条目必须包含__ 你指定的文本。 如果没有显示背景和边框，则条目必须以你指定的文本开头__。
+    > 当筛选器按钮显示在带有边框的较暗的背景上时，条目必须包含你指定的文本。 如果没有显示背景和边框，则条目必须以你指定的文本开头。
 
 - 滚动索引，选择一个关键字。
 
@@ -46,7 +46,7 @@ ms.locfileid: "91879016"
 
 使用索引是一个简单的过程；但是，了解如何以最佳方式输入关键字可以使索引搜索更高效。
 
-### <a name="general-guidelines"></a>一般性指导
+### <a name="general-guidelines"></a>一般指南
 
 - 滚动浏览索引条目。 并非所有主题的索引编制方式都相同，最能为用户提供帮助的主题在列表中的排名可能会高于或低于预期。
 
@@ -56,7 +56,7 @@ ms.locfileid: "91879016"
 
     例如，如果“debugging inline assembly code”没有显示任何相关条目，请尝试键入“assembly code, debugging inline”。
 
-- 使用带“索引”**** 选项卡的筛选器可以减少结果数。
+- 使用带“索引”选项卡的筛选器可以减少结果数。
 
 ### <a name="syntax-tips"></a>语法提示
 
@@ -78,7 +78,7 @@ ms.locfileid: "91879016"
 
     例如，如果输入了“building”一词，请尝试改用“creating”。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：在 TOC 中查找主题](../help-viewer/find-topics-toc.md)
 - [如何：搜索主题](../help-viewer/find-topics.md)

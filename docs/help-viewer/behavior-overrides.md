@@ -6,15 +6,15 @@ ms.topic: conceptual
 ms.assetid: 95fe6396-276b-4ee5-b03d-faacec42765f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f4e46d8c43c90759c964dbf01145d876a9f413
-ms.sourcegitcommit: dfbbf041e68ec3a4cd97196b19c9226a4793e702
+ms.openlocfilehash: f9c9a950156f29bda68a134af2eb299b3431445f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91879055"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944285"
 ---
 # <a name="help-content-manager-overrides"></a>Help Content Manager 重写
 
@@ -34,11 +34,11 @@ ms.locfileid: "91879055"
 
 |注册表项值|类型|数据|说明|
 |------------------|----|----|-----------|
-|NewContentAndUpdateService|字符串|\<http URL for service endpoint\>|定义唯一的服务终结点|
+|NewContentAndUpdateService|string|\<http URL for service endpoint\>|定义唯一的服务终结点|
 |UseOnlineHelp|dword|`0` 指定本地帮助，`1` 指定联机帮助|定义联机或脱机帮助（默认）|
-|OnlineBaseUrl|字符串|\<http URL for service endpoint\>|定义唯一的 F1 终结点|
+|OnlineBaseUrl|string|\<http URL for service endpoint\>|定义唯一的 F1 终结点|
 |OnlineHelpPreferenceDisabled|dword|`0` 启用或 `1` 禁用联机帮助首选项|禁用联机帮助首选项|
-|DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”**** 选项卡|禁用 " **管理内容** " 选项卡|
+|DisableManageContent|dword|`0` 启用或 `1` 禁用 Help Viewer 中的“管理内容”选项卡|禁用 " **管理内容** " 选项卡|
 |DisableFirstRunHelpSelection|dword|`0` 启用或 `1` 禁用在 Visual Studio 首次启动时配置的帮助功能|禁用首次启动 Visual Studio 时的内容安装|
 
 ### <a name="example-pkgdef-file-contents"></a>示例 .pkgdef 文件内容
@@ -62,7 +62,7 @@ ms.locfileid: "91879055"
 |替代 BITS 作业优先级|HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node（64 位计算机上）\Microsoft\Help\v2.3|BITSPriority|**foreground**、**high**、**normal** 或 **low**|
 |指向网络共享上的本地内容存储区|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Help\ v2.3\Catalogs\VisualStudio15|LocationPath|“*ContentStoreNetworkShare*”|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Help Viewer 管理员指南](../help-viewer/administrator-guide.md)
 - [Help Content Manager 的命令行参数](../help-viewer/command-line-arguments.md)
