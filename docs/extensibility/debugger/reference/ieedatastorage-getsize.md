@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7d9000889d082826f46bdceb0476dd5d06c24d2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 2a18ae08500bd457f6e9ab316514836a30538a42
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718193"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965507"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 返回此对象中包含的字节数。
@@ -39,7 +39,7 @@ int GetSize(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `size`\
 弄此对象中包含的字节数。
 

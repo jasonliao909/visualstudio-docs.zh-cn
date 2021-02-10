@@ -20,15 +20,15 @@ helpviewer_keywords:
 - extensibility interfaces [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 436f426eee6c90476997f416bab907c8e17f94cc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: f84a694c9a18b6ec1c64204c8150ff721633278d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845617"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962465"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用扩展性接口自定义 UI 功能
   Visual Studio 中的 Office 开发工具提供了一些类和设计器，使用它们在 VSTO 外接程序中创建自定义任务窗格、功能区自定义项和 Outlook 窗体区域时可处理许多实现细节。 不过，如果你有特殊要求，也可以自己为每项功能实现 *扩展性接口* 。
@@ -45,7 +45,7 @@ ms.locfileid: "96845617"
 ## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>可在 VSTO 外接程序中实现的扩展性接口
  下表列出了你可以实现的扩展性接口以及支持这些接口的应用程序。
 
-|接口|描述|应用程序|
+|接口|说明|应用程序|
 |---------------|-----------------|------------------|
 |<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：**  可以将 **功能区 (XML)** 项添加到项目，以便 <xref:Microsoft.Office.Core.IRibbonExtensibility> 在 VSTO 外接程序中生成默认实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
@@ -79,7 +79,7 @@ ms.locfileid: "96845617"
  [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
  [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ec7390acf753af20bc0edbe20194ba17c2d9d80
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: d5b58c5885f4fc9bd3765c818ea414bee0dbf3c4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863496"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961854"
 ---
 # <a name="private-galleries"></a>专用库
 你可以共享你开发的控件、模板和工具，方法是将其发布到组织 intranet 上的 *专用库* ，如下所示：

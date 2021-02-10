@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e46252cea550a2caaa81c92853220db4fa2b5b1a
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328374"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963440"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>使用互操作程序集确定命令状态
 VSPackage 必须跟踪它可以处理的命令的状态。 环境无法确定在 VSPackage 中处理的命令何时启用或禁用。 VSPackage 负责通知环境有关命令状态的信息，例如， **剪切**、 **复制** 和 **粘贴** 等常规命令的状态。
@@ -35,6 +35,6 @@ VSPackage 必须跟踪它可以处理的命令的状态。 环境无法确定在
 ## <a name="status-notification-failure"></a>状态通知失败
  如果 VSPackage 无法通知环境的命令状态更改，则可能会将 UI 置于不一致的状态。 请记住，用户可以将任何菜单或上下文菜单命令放置在工具栏上。 因此，仅当菜单或上下文菜单打开时，才更新 UI。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [实现](../../extensibility/internals/command-implementation.md)

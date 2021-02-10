@@ -7,18 +7,18 @@ ms.topic: how-to
 ms.assetid: adbc5382-d170-441c-9fd0-80faa1816478
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a36590c0e56f1e1a2c01f8e084f0b95442607a5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: cd01ba1196c75589c0f8844c6bfccab88772ffe4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877112"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961711"
 ---
 # <a name="walkthrough-implement-code-snippets"></a>演练：实现代码片段
 你可以创建代码片段并将它们包含在编辑器扩展中，以便扩展的用户可以将其添加到自己的代码中。

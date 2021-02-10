@@ -4,15 +4,15 @@ description: 有关在 Visual Studio 中提交性能问题的其他信息和最�
 ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
-manager: jillfra
+manager: jmartens
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: 57009326857672ea648bdf8f531f9509cf8487ff
-ms.sourcegitcommit: 8a0d0f4c4910e2feb3bc7bd19e8f49629df78df5
+ms.openlocfilehash: d3db409c67ab961adfceaeb8e3236cd964f95399
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97668439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962894"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高解决性能问题的几率
 

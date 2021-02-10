@@ -8,18 +8,18 @@ helpviewer_keywords:
 ms.assetid: 654910b2-c239-44c8-92fc-317680a5672f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 420e963b70846b4d7251c3f1b6c7f5b224c9fdb2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80718258"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965611"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 检索有关正在运行调试器的计算机的信息。
@@ -38,7 +38,7 @@ public int GetComputerInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pInfo`\
 弄对包含计算机信息的结构的引用。
 

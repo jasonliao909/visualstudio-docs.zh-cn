@@ -12,15 +12,15 @@ helpviewer_keywords:
 - walkthroughs [Office development in Visual Studio], data
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 25bf42015dcc60014012faf0254d4b6d02c30d56
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4736b357017f5ff5244af8f078457b0289994e98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845578"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962412"
 ---
 # <a name="data-in-office-solutions-walkthroughs"></a>Office 解决方案演练中的数据
   下列演练演示了如何将文档级自定义项和 VSTO 外接程序中的数据用于 Microsoft Office Word 和 Microsoft Office Excel。
@@ -49,7 +49,7 @@ ms.locfileid: "96845578"
 
 - [演练：更改服务器上的工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md) 演示如何修改在不启动 Excel 的情况下在 Microsoft Office Excel 工作簿中缓存的数据集。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用 Word 的演练](../vsto/walkthroughs-using-word.md)
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
 - [Office UI 自定义演练](../vsto/office-ui-customization-walkthroughs.md)

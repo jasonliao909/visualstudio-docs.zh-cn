@@ -9,15 +9,15 @@ helpviewer_keywords:
 - walkthroughs [Domain-Specific Language Tools]
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7dc51de28162471262d8c4bd35ddd09bc156896e
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363336"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963297"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -141,7 +141,7 @@ ms.locfileid: "97363336"
 
 2. 查找 `ProvideMenuResource` 特性。
 
-3. 递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如：
+3. 递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如： 。
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,7 +161,7 @@ DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部
 
 2. 在 **DslPackage** 中，创建一个名为 " **自定义代码**" 的文件夹。 在此文件夹中，创建一个名为的新类文件 `CommandSet.cs` 。
 
-3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
+3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如： 。
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -331,7 +331,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. 在关系图中右键单击各种项，以验证命令是否根据所选择的项正确启用或禁用，以及是否相应地显示或隐藏。
 
-## <a name="troubleshoot"></a>疑难解答
+## <a name="troubleshoot"></a>故障排除
 
 **命令未显示在菜单中：**
 
@@ -359,7 +359,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 确保已卸载早期版本的程序包。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
