@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Outlook [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7950858d3205cf910eb09e5b0a99b5f67c71c4bd
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 16f735e2902527307ac812922495a2a0cb3b377e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524230"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966586"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-outlook"></a>演练：创建您的第一个 Outlook VSTO 外接程序
   本演练显示如何为 Microsoft Office Outlook 创建 VSTO 外接程序。 在此类解决方案中创建的功能可用于应用程序本身，而与所打开的 Outlook 项无关。 有关详细信息，请参阅 [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -66,7 +66,7 @@ ms.locfileid: "97524230"
 
 6. 在 **“名称”** 框中，键入 **FirstOutlookAddIn**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **firstexceladdin** 项目，并在编辑器中打开 **ThisAddIn** 代码文件。
 

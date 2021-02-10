@@ -11,15 +11,15 @@ helpviewer_keywords:
 - application manifests [Office development in Visual Studio], <update> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 241bddb8c79a01bb1ba6921486a4dc46d99940cc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5712be9e12ede3338856955e00a34a7565d733ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85537379"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968757"
 ---
 # <a name="ltupdategt-element-office-development-in-visual-studio"></a>&lt;&gt; (Visual Studio 中的 Office 开发更新元素) 
   `update`元素指定解决方案检查更新的时间间隔。
@@ -41,7 +41,7 @@ ms.locfileid: "85537379"
 
  `update` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`enabled`|必需。 将 "启用" 设置为以下值之一：<br /><br /> -   若要检查更新，**则为 true** 。<br />-   若要防止检查更新，**则为 false** 。|
 
@@ -52,7 +52,7 @@ ms.locfileid: "85537379"
 
  `expiration` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`maximumAge`| 必需。 将此设置为等于整数。|
 |`unit`|必需。 设置 `unit` 为以下值之一：<br /><br /> -   **小时**<br />-   **天数**<br />-   **周**|

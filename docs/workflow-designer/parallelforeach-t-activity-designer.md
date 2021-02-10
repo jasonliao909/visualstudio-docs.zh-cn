@@ -9,15 +9,15 @@ f1_keywords:
 ms.assetid: e93a4843-aef2-4d3e-9a0a-a2d3d1411aa7
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e732c6d9d791d789471c49a319ab9945fdd5dc06
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 4b35bcb6fcd1dc2ac3826d5dccb17ff764979321
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968744"
 ---
 # <a name="parallelforeach-activity-designer"></a>ParallelForEach 活动设计器
 
@@ -43,12 +43,12 @@ ms.locfileid: "96996170"
 
 下表列出最有用的 <xref:System.Activities.Statements.ParallelForEach%601> 活动属性并说明如何在设计器中使用它们。
 
-|属性名称|必选|用法|
+|属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定活动设计器在标头中的友好显示名称。 默认值为 **ParallelForEach \<Int32>**。 可以在 " **属性** " 网格中或直接在活动设计器标头中编辑该值。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|错误|要为集合中的每一项执行的活动。 若要添加 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 活动，请将活动从 "工具箱" 拖放到 " **\<T> ParallelForEach** " 活动设计器上的 "**正文**" 框中，其中包含提示文本 "将活动放在此处"。|
-|**TypeArgument**|正确|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>由泛型参数 *T* 指定的集合中的项的类型。默认情况下， **TypeArgument** 设置为 **Int32**。 若要更改 **ParallelForEach<T \>** 活动设计器中的类型 T，请在属性网格中更改 " **TypeArgument** " 组合框的值。|
-|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|正确|要循环访问的项的集合。 若要设置 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> ，请在 " **\> ForEach<T** " 活动设计器的 "**值**" 框中，在 "**属性**" 窗口的提示文本 "输入 VB 表达式" 或 "**值**" 框中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活动设计器在标头中的友好显示名称。 默认值为 **ParallelForEach \<Int32>**。 可以在 " **属性** " 网格中或直接在活动设计器标头中编辑该值。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Body%2A>|False|要为集合中的每一项执行的活动。 若要添加 <xref:System.Activities.Statements.ParallelForEach%601.Body%2A> 活动，请将活动从 "工具箱" 拖放到 " **\<T> ParallelForEach** " 活动设计器上的 "**正文**" 框中，其中包含提示文本 "将活动放在此处"。|
+|**TypeArgument**|True|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>由泛型参数 *T* 指定的集合中的项的类型。默认情况下， **TypeArgument** 设置为 **Int32**。 若要更改 **ParallelForEach<T \>** 活动设计器中的类型 T，请在属性网格中更改 " **TypeArgument** " 组合框的值。|
+|<xref:System.Activities.Statements.ParallelForEach%601.Values%2A>|True|要循环访问的项的集合。 若要设置 <xref:System.Activities.Statements.ParallelForEach%601.Values%2A> ，请在 " **\> ForEach<T** " 活动设计器的 "**值**" 框中，在 "**属性**" 窗口的提示文本 "输入 VB 表达式" 或 "**值**" 框中键入 Visual Basic 表达式。|
 |<xref:System.Activities.Statements.ParallelForEach%601.CompletionCondition%2A>||在每个迭代完成后计算。 如果其计算结果为 true，则取消已安排的挂起的迭代。 如果未设置此属性，则所有安排的语句都将执行，直至完成为止。|
 
 默认情况下，循环迭代器是命名项。 可以在 " **ParallelForEach \<T>** " 活动设计器的 " **ForEach** " 框中更改迭代器变量的名称。 循环迭代器可在 <xref:System.Activities.Statements.ParallelForEach%601> 活动的子级中的表达式中使用。
