@@ -10,15 +10,15 @@ helpviewer_keywords:
 - build environment, MSBuild
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c8fa7756763a668f6e97d90d8a405c660519189
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3ae0e5f2516dd1f78aea880289f549ca3a44f3bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136948"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881953"
 ---
 # <a name="walkthrough-create-a-multiple-computer-build-environment"></a>演练：创建多计算机生成环境
 
@@ -388,9 +388,9 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
 6. 更改命令行环境，如下所示：
 
-    - 设置 Depot= *在第 1 步中创建的 Depot 目录的位置*
+    - 设置 Depot=*在第 1 步中创建的 Depot 目录的位置*
 
-    - 设置 path=%path%; *计算机上的 MSBuild 位置* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
+    - 设置 path=%path%;*计算机上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 15.0\Common7\IDE\
 
        对于本机 64 位生成，请指向 64 位版本的 MSBuild。
 
@@ -400,9 +400,9 @@ MSBuild 需要在生成计算机的 GAC 上安装一些附加程序集。
 
 6. 更改命令行环境，如下所示：
 
-    - 设置 Depot= *在第 1 步中创建的 Depot 目录的位置*
+    - 设置 Depot=*在第 1 步中创建的 Depot 目录的位置*
 
-    - 设置 path=%path%; *计算机上的 MSBuild 位置* ;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
+    - 设置 path=%path%;*计算机上的 MSBuild 位置*;%Depot%\Windows\System32;%Depot%\Windows\SysWOW64;%Depot%\Microsoft Visual Studio 16.0\Common7\IDE\
 
        对于本机 64 位生成，请指向 64 位版本的 MSBuild。
 

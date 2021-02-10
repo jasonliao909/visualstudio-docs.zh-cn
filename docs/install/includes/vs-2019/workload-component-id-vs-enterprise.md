@@ -5,17 +5,17 @@ description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: eb817e15ebffbe75f9b003abe1fe0560a5236293
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: cecadf43e7f54f5ad0954acfc725f5e48a2a69cf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437438"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881827"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-enterprise-2019"></a>Visual Studio 核心编辑器（Visual Studio Enterprise 2019 随附）
 
