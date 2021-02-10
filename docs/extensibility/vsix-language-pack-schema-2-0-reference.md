@@ -12,13 +12,13 @@ helpviewer_keywords:
 ms.assetid: 2a2932bc-cdbe-4d32-91fa-a3e0474f9098
 author: acangialosi
 ms.author: anthc
-manager: jillfra
-ms.openlocfilehash: fc9c3c1aa7f8cf77ebf165a3e10a67ccbd5887f7
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+manager: jmartens
+ms.openlocfilehash: 5a12fe1be4030332e804f38cee1e0eb646356d79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97863824"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971864"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构2.0 引用
 
@@ -32,7 +32,7 @@ VSIX 语言包架构为 VSIX 包提供本地化的安装信息。 此架构的�
 
 在 `<PackageLanguagePackManifest>` 元素中，以下元素必须存在：
 
-|Title|说明|
+|标题|说明|
 |-----------|-----------------|
 |`<Metadata>`| 所有本地化包元数据的包含元素
 
@@ -40,7 +40,7 @@ VSIX 语言包架构为 VSIX 包提供本地化的安装信息。 此架构的�
 
 在 `<Metadata>` 元素中，可以包含以下元素：
 
-|Title|说明|
+|标题|说明|
 |-----------|-----------------|
 |`<DisplayName>`|要安装的扩展的本地化名称|
 |`<Description>`|要安装的扩展的本地化说明|

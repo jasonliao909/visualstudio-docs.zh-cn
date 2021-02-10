@@ -15,15 +15,15 @@ helpviewer_keywords:
 - Options dialog box, Project Upgrade page
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75bf6d5f7a3a6d45ba4313bbe70f8595f65c4632
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c33a8f1b42cd359e96b4c5d7c8f394e9ec0e1ee4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97525051"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971799"
 ---
 # <a name="project-upgrade-options-dialog-box"></a>项目升级，"选项" 对话框
   使用“项目升级”  页可指定 Visual Studio 是否将自动更改 VSTO 外接程序项目以面向开发计算机上安装的 Office 版本。
