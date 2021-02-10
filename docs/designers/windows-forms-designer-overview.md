@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: f43b3e529d7e56af7639df1118baa64f0d594e6c
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+manager: jmartens
+ms.openlocfilehash: 768c19f78102bf19346867beda967a069c1d182e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99844952"
 ---
 # <a name="windows-forms-designer-overview"></a>Windows 窗体设计器概述
 

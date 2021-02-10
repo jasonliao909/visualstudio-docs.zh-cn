@@ -4,18 +4,18 @@ description: 了解 GPU 使用率。 具体而言，了解如何监视远程 Lin
 ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d23e5890942943219990b1244c99f7b2c208dec
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: f033b968b0e32454a22c59db09146c761ed758a6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841401"
 ---
 # <a name="monitoring-gpu-utilization"></a>监视 GPU 使用率
 

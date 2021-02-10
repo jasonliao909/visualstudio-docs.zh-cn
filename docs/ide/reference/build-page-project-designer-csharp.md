@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 77ff1bfc-d633-4634-ba29-9afdb6d7e362
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8c3409c7ba62f1deb628645b624a40de4cbeaff
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 95404beb5c2be5363c9ef91e770237b453970429
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136870"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836443"
 ---
 # <a name="build-page-project-designer-c"></a>“项目设计器”->“生成”页 (C#)
 
@@ -50,7 +50,7 @@ ms.locfileid: "92136870"
 
 通过以下选项，可配置多个 C# 编译器设置。
 
-“条件编译符” **号**
+“条件编译符”**号**
 
 指定要在其上执行条件编译的符号。 用分号 (“;”) 分隔符号。 有关详细信息，请参阅 [/define（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/define-compiler-option)。
 

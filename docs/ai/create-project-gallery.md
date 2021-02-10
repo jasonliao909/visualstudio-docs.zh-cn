@@ -4,18 +4,18 @@ description: 使用 Azure 机器学习库中的示例创建项目
 keywords: ai, visual studio, azure 机器学习
 author: jillre
 ms.author: jillfra
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: a6813e834af00330b4018f16d4a19be945be2be9
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: e6c5b8201b39f82e4c4645196ca543e2567b6e19
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726639"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99841544"
 ---
 # <a name="create-an-ai-project-from-the-azure-machine-learning-gallery-in-visual-studio"></a>在 Visual Studio 中通过 Azure 机器学习库创建 AI 项目
 

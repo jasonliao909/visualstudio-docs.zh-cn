@@ -8,12 +8,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: bf4db1c01fc79d32f7e498c265b74dec34f67e48
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6cf29d16432b677c6e83ba4cbaedb39f0a8d1ed2
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85287241"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572988"
 ---
 # <a name="how-to-use-google-test-for-c-in-visual-studio"></a>如何在 Visual Studio 中使用适用于 C++ 的 Google Test
 
@@ -65,7 +65,7 @@ ms.locfileid: "85287241"
 
 ## <a name="write-and-run-tests"></a>编写和运行测试
 
-现在已准备就绪，可以编写和运行 Google Test。 有关测试宏的信息，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
+现在已准备就绪，可以编写和运行 Google Test。 有关测试宏的信息，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/docs/primer.md)。 有关使用“测试资源管理器”发现、运行和分组测试的信息，请参阅[使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)。
 
 ## <a name="see-also"></a>请参阅
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 - Diagnostics Tools, CPU Usage
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7d3cdb022dce8a9f4b7037e3770cb0ae46c6863c
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: 582a412dbcac043e4a77c1508d385cc8caa4c64c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90074886"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861641"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（C#、Visual Basic）
 
@@ -240,10 +240,10 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
     此视图显示总时间及函数完成执行所用的总体应用运行时间的百分比。
 
-    **函数体**还显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 （在此图中，共花费 2863 毫秒，函数体内花费 2856 毫秒，其余时间（<20 毫秒）花费在此函数调用的外部代码中）。 环境不同，实际值也不同。
+    **函数体** 还显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 （在此图中，共花费 2863 毫秒，函数体内花费 2856 毫秒，其余时间（<20 毫秒）花费在此函数调用的外部代码中）。 环境不同，实际值也不同。
 
     > [!TIP]
-    > **函数体**中的较高值可能指示函数自身内部的性能瓶颈。
+    > **函数体** 中的较高值可能指示函数自身内部的性能瓶颈。
 
 ## <a name="next-steps"></a>后续步骤
 

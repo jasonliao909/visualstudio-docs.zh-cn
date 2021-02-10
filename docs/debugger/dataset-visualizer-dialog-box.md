@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: dfbede03-805b-4f88-a645-b479450e6cb0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f57247d23a318da6bf492534c1ff060bb4116bb
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: ca676ec343588d3e473da2ddbf37dd814e29b73d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865717"
 ---
 # <a name="dataset-visualizer-dialog-box"></a>“数据集可视化工具”对话框
 使用 DataSet 可视化工具可以查看 DataSet、DataTable、DataView 或 DataViewManager 对象的内容。 通过在调试器变量窗口或 DataTip 中，单击一个对象的值旁边显示的放大镜图标，即可访问该可视化工具。

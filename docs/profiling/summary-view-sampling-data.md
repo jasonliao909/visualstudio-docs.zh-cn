@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 79056873-2985-40be-9112-cdbc26a65156
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5d75574e29118beacb6312d2dd013a19894a176
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 681e86a8483790a91a6a7e75eef95b5033042e5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98718949"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99861538"
 ---
 # <a name="summary-view---sampling-data"></a>“摘要”视图 - 采样数据
 “摘要”视图显示有关分析运行中性能开销最大的函数的信息。 有关详细信息（包括通知链接和报告列表的说明），请参阅[“摘要”视图](../profiling/summary-view.md)。

@@ -22,15 +22,15 @@ helpviewer_keywords:
 ms.assetid: 710891fd-379e-42c2-a84b-44a7af694ca0
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d2ab8a723b69f4c5930c91a10719a2107ad83003
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136792"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99850381"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 
