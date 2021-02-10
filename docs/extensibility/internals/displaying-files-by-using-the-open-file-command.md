@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a932a9b56a63069e010cb2b945de25564c2d135
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 96f92aa921c7bb78511ed685d846e288518258fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328326"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946821"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用 "打开文件" 命令显示文件
 以下步骤介绍了 IDE 如何处理 **打开文件** 命令，该命令可在中的 " **文件** " 菜单上找到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 这些步骤还说明了项目应如何响应源自此命令的调用。
@@ -53,7 +53,7 @@ ms.locfileid: "96328326"
 
 5. 然后，该项目可以选择使用特定于项目的编辑器或标准编辑器打开文件。 有关详细信息，请参阅 [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md) 和 [如何：打开标准编辑器](../../extensibility/how-to-open-standard-editors.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用 "打开方式" 命令显示文件](../../extensibility/internals/displaying-files-by-using-the-open-with-command.md)
 - [打开并保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)
 - [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - dependency diagrams, adding custom properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d3073a42faf0dcc6fbf586847382ba3a83d88ed4
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d63c6793290786499dd75ffd139f9905f46e7ab1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99946457"
 ---
 # <a name="add-custom-properties-to-dependency-diagrams"></a>向依赖项关系图添加自定义属性
 
@@ -45,7 +45,7 @@ ms.locfileid: "97360762"
 >      `devenv /rootSuffix /updateConfiguration`
 >
 >      `devenv /rootSuffix Exp /updateConfiguration`
-> 4. 重新启动 Visual Studio。
+> 4. 重启 Visual Studio。
 
 **确保你的代码在 VSIX 项目中**
 
@@ -162,6 +162,6 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [扩展依赖项关系图](../modeling/extend-layer-diagrams.md)

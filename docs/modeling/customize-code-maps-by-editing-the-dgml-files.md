@@ -19,15 +19,15 @@ helpviewer_keywords:
 - dependency graphs, assigning categories and properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e9b1126b258e36c0aeffd18b9319b15da2b4639
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 47613a2f74ce1c89a6b032e46fa18b978c1c5f0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945287"
 ---
 # <a name="customize-code-maps-by-editing-the-dgml-files"></a>Customize code maps by editing the DGML files
 
@@ -49,7 +49,7 @@ ms.locfileid: "97363415"
 
     若要添加新组，请查找 `<Nodes>` 部分。 创建新的 `<Node/>` 元素。
 
-3. 在 `<Node/>` 元素中，添加一个 `Group` 特性以指定组显示为展开状态还是折叠状态。 例如：
+3. 在 `<Node/>` 元素中，添加一个 `Group` 特性以指定组显示为展开状态还是折叠状态。 例如： 。
 
    ```xml
    <Nodes>
@@ -66,7 +66,7 @@ ms.locfileid: "97363415"
 
    - 指定组代码元素与其子代码元素之间的 `Category` 关系的 `Contains` 特性
 
-     例如：
+     例如： 。
 
    ```xml
    <Links>
@@ -98,7 +98,7 @@ ms.locfileid: "97363415"
     Stroke="StrokeValue"
     ```
 
-     例如：
+     例如： 。
 
     ```xml
     <DirectedGraph Background="Green" xmlns="http://schemas.microsoft.com/vs/2009/dgml" >
@@ -203,7 +203,7 @@ ms.locfileid: "97363415"
     Shape="ShapeFilePathLocation"
     ```
 
-     例如：
+     例如： 。
 
     ```xml
     <Nodes>
@@ -238,7 +238,7 @@ ms.locfileid: "97363415"
     StrokeDashArray="StrokeArrayValues"
     ```
 
-     例如：
+     例如： 。
 
     ```xml
     <Links>
@@ -268,7 +268,7 @@ ms.locfileid: "97363415"
 
 2. 在 `<Style/>` 元素中，添加一个包含 `<Condition/>` 特性的 `Expression` 元素，以指定返回布尔值的表达式。
 
-    例如：
+    例如： 。
 
    ```xml
    <Condition Expression="MyCategory"/>
@@ -316,7 +316,7 @@ ms.locfileid: "97363415"
 
 3. 在 `<Condition/>` 元素后的下一行上，添加一个或多个 `<Setter/>` 元素，以指定要应用于满足条件的代码图、代码元素或链接的 `Property` 特性和固定 `Value` 特性或者计算所得的 `Expression` 特性。
 
-    例如：
+    例如： 。
 
    ```xml
    <Setter Property="BackGround" Value="Green"/>
@@ -444,7 +444,7 @@ ms.locfileid: "97363415"
 
 1. 在文本编辑器或 XML 编辑器中打开 .dgml 文件。
 
-2. 查找该代码元素的 `<Node/>` 元素。 指定属性的名称和属性的值。 例如：
+2. 查找该代码元素的 `<Node/>` 元素。 指定属性的名称和属性的值。 例如： 。
 
     ```xml
     <Nodes>
@@ -466,7 +466,7 @@ ms.locfileid: "97363415"
 
 2. 查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。
 
-3. 在 `<Node/>` 元素中，指定属性的名称和属性的值。 例如：
+3. 在 `<Node/>` 元素中，指定属性的名称和属性的值。 例如： 。
 
     ```xml
     <Links>
@@ -491,7 +491,7 @@ ms.locfileid: "97363415"
 
 - 查找所需代码元素的 `<Node/>` 元素。
 
-- 在 `<Node/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：
+- 在 `<Node/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如： 。
 
     ```xml
     <Nodes>
@@ -513,7 +513,7 @@ ms.locfileid: "97363415"
 
 2. 查找包含源代码元素名称和目标代码元素名称的 `<Link/>` 元素。
 
-3. 在 `<Link/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如：
+3. 在 `<Link/>` 元素中，添加一个 `Category` 特性以指定类别的名称。 例如： 。
 
     ```xml
     <Links>
@@ -535,7 +535,7 @@ ms.locfileid: "97363415"
 
 2. 为父类别添加一个 `<Category/>` 元素，然后将 `BasedOn` 特性添加到子类别的 `<Category/>` 元素。
 
-     例如：
+     例如： 。
 
     ```xml
     <Nodes>
@@ -584,7 +584,7 @@ ms.locfileid: "97363415"
      > [!NOTE]
      > 每个元素只能具有一个 `Reference` 特性。
 
-     例如：
+     例如： 。
 
    ```xml
    <Nodes>
@@ -609,7 +609,7 @@ ms.locfileid: "97363415"
 
       4. 使用 `Label` 特性指定代码元素的 " **跳到引用** " 快捷菜单上的显示文本。
 
-      例如：
+      例如： 。
 
    ```xml
    <Nodes>

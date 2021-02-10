@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e041c692a833b7d0a1891c078388a3f5b2d11e4
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 1f898bcb040b5b46144fd7c4f3fc2260b480872d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606666"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945937"
 ---
 # <a name="launch-based-attachment"></a>基于启动的附件
 程序的基于启动的附件是自动的。 当由 SDM 启动托管程序的进程时，基于启动的附件将遵循与手动附件方法类似的路径。 有关信息，请参阅 [附加到计划](../../extensibility/debugger/attaching-to-the-program.md)。
@@ -34,6 +34,6 @@ ms.locfileid: "96606666"
 
 4. 发送 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 事件对象来通知 SDM，为启动的进程创建新线程。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [发送所需的事件](../../extensibility/debugger/sending-the-required-events.md)
 - [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)
