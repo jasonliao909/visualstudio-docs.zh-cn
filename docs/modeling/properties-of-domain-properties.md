@@ -8,15 +8,15 @@ helpviewer_keywords:
 - Domain-Specific Language, domain properties
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97bfbcf73a950692d5736b7a6e0b529cfe658caa
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: f9cca8468e99d41d879bee02dded8538e5fa9c5c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361516"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941354"
 ---
 # <a name="properties-of-domain-properties"></a>域属性的属性
 *域属性* 是可以保存值的模型元素的一项功能。 例如，`Person` 域类可以具有属性 `Name` 和 `BirthDate`。 在 DSL 定义中，域属性列出在关系图上的域类框中以及 DSL 资源管理器中的域类下。 有关详细信息，请参阅 [如何定义 Domain-Specific 语言](../modeling/how-to-define-a-domain-specific-language.md)。
@@ -34,7 +34,7 @@ ms.locfileid: "97361516"
 
   当在关系图或 DSL 资源管理器中选择域属性时，可以在“属性”窗口中查看以下项。 有关如何使用这些项的详细信息，请参阅 [自定义和扩展 Domain-Specific 语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-|Property|说明|默认值|
+|属性|说明|默认值|
 |-|-|-|
 |**说明**|用于记录已生成设计器的用户界面 (UI) 的说明。|\<none>|
 |**显示名称**|将针对此域属性在生成的设计器中显示的名称。 它可以包含空格和标点，例如“Song Title”。|\<none>|
@@ -50,6 +50,6 @@ ms.locfileid: "97361516"
 |**Setter 访问修饰符**|用于 Setter 的访问修饰符。 这将控制程序代码可设置属性的范围。|`public`|
 |**类型**|属性的类型。 要添加到可用类型列表，请在 DSL 资源管理器中右键单击 DSL 的根，然后单击 " **添加外部类型**"。|`String`|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

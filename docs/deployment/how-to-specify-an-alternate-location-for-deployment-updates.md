@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 7faacd35-2638-492d-80f6-6b57e5f820de
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 698ca2c97bcc4699d2c836eff9fefa371481c9cc
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: f0832105ccc203dd046461e40d27f8d50efc3009
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349641"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940366"
 ---
 # <a name="how-to-specify-an-alternate-location-for-deployment-updates"></a>如何：指定部署更新的备用位置
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]最初可以通过 CD 或文件共享安装应用程序，但应用程序必须在 Web 上检查定期更新。 您可以在部署清单中指定更新的备用位置，以便您的应用程序在初始安装后可以从 Web 进行自我更新。
@@ -40,7 +40,7 @@ ms.locfileid: "94349641"
 
 3. 选择“部署选项”选项卡。
 
-4. 在名为 " **启动位置** " 的文本框中，输入将包含应用程序更新的部署清单的目录的 URL。
+4. 在名为 " **启动位置**" 的文本框中，输入将包含应用程序更新的部署清单的目录的 URL。
 
 5. 保存部署清单。
 
@@ -52,7 +52,7 @@ ms.locfileid: "94349641"
 
     **Mage-Update HelloWorld.exe ProviderUrl http： \/ /adatum.com/Update/Path**
 
-3. 保存该文件。
+3. 保存文件。
 
    > [!NOTE]
    > 你现在需要用 *Mage.exe* 对文件进行重新签名。 有关详细信息，请参阅 [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
@@ -62,7 +62,7 @@ ms.locfileid: "94349641"
 
  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]使用的所有应用程序 `<deploymentProvider>` 应在其应用程序清单中显式声明所需的权限，以便应用程序不会在不同的计算机上收到不同的信任级别。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

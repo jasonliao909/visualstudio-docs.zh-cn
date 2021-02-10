@@ -14,15 +14,15 @@ helpviewer_keywords:
 - object models [Office development in Visual Studio], threading support
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5d44c86e17b5df79c44f85cd555b3036e925ae61
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524188"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940795"
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
   本文提供了有关 Microsoft Office 对象模型中如何支持线程处理的信息。 Office 对象模型不是线程安全的，但可以在 Office 解决方案中使用多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于非线程安全的 COM 服务器，COM 提供一种机制来序列化并发调用，以便在服务器上随时只执行一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 由于调用是序列化的，因此在服务器繁忙或正在处理后台线程上的其他调用时，调用方可能会被阻止一段时间。

@@ -25,15 +25,15 @@ helpviewer_keywords:
 - Ribbon [Office development in Visual Studio], shortcut keys
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b72270da75d27ed2837540369f74e9c5e87b417b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 06211bb22ae071132b4cfad67352daa46182d366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527996"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940912"
 ---
 # <a name="ribbon-designer"></a>功能区设计器
   功能区设计器是一个可视化设计画布。 使用功能区设计器将自定义选项卡、组和控件添加到 Microsoft Office 应用程序的功能区。
@@ -147,7 +147,7 @@ ms.locfileid: "97527996"
 |**ComboBox**|已附加列表框的编辑框。 用户可以键入或选择其选择。 该框显示当前选定内容。 使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonComboBox.Items%2A> 属性可以在功能区加载到 Office 应用程序中之前或之后在运行时添加和移除项。|
 |**DropDown**|用户可以选择的项的列表。 用户不能在下拉列表中键入新项。<br /><br /> 使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Items%2A> 属性可向列表中添加项。 您可以在运行时添加和移除项。<br /><br /> 使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown.Buttons%2A> 属性可向列表中添加按钮。 但是，在功能区加载到 Office 应用程序中之后，不能在运行时添加和删除按钮。|
 |**"编辑框**|一个框，用户可以在其中键入文本。|
-|**库**|一个菜单，该菜单显示用户可从中选择的可视化选项的数组或网格。 可以在菜单中控制选择的布局。 使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> 和 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> 属性来指定将显示库的项和按钮的行数和列数。|
+|**图库**|一个菜单，该菜单显示用户可从中选择的可视化选项的数组或网格。 可以在菜单中控制选择的布局。 使用 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.ColumnCount%2A> 和 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery.RowCount%2A> 属性来指定将显示库的项和按钮的行数和列数。|
 |**Label**|可以用来标识功能区上控件的文本。|
 |**菜单**|一个下拉列表，其中可以包含以下任何控件：<br /><br /> -按钮<br />-复选框<br />-库<br />-菜单<br />-拆分按钮<br />-切换按钮<br />-分隔符<br /><br /> 若要将控件添加到功能区设计器中的菜单，请单击菜单中的向下箭头以显示菜单设计图面。 然后，您可以将功能区控件从 **工具箱** 拖至菜单上。 若要排列控件，请将其拖到所需的位置。<br /><br /> 若要在 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu> 功能区加载到 Office 应用程序中之后将控件添加到中，则必须在 <xref:Microsoft.Office.Tools.Ribbon.RibbonMenu.Dynamic%2A> 加载功能区之前将属性设置为 **true** 。 有关如何执行此操作的信息，请参阅 [功能区对象模型概述](../vsto/ribbon-object-model-overview.md)。|
 |**Separator**|用于分隔列表中的项的窄条。 添加到组时，条形是垂直的。 添加到菜单时，条形是水平的。|

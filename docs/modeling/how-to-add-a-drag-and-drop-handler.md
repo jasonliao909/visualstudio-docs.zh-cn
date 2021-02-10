@@ -6,15 +6,15 @@ ms.date: 11/04/2016
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 337fd73dbe46a97b6f154dfba1714ede834f1e69
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: c9e6960cdd84e518b2d58eb77c25278bd52475d7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97363323"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941432"
 ---
 # <a name="how-to-add-a-drag-and-drop-handler"></a>如何：添加拖放处理程序
 
@@ -130,7 +130,7 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
   - diagramEventArgs. GetDataFormats ( # A1-列出可用于解码拖动对象的格式。 例如，如果用户从桌面拖动文件，则可用的格式包括文件名（“`FileNameW`”）。
 
-  - `diagramEventArgs.Data.GetData(format)` -以指定格式对拖动的对象进行解码。 将该对象转换为相应的类型。 例如：
+  - `diagramEventArgs.Data.GetData(format)` -以指定格式对拖动的对象进行解码。 将该对象转换为相应的类型。 例如： 。
 
     `string fileName = diagramEventArgs.Data.GetData("FileNameW") as string;`
 
@@ -162,7 +162,7 @@ MEF (Managed Extensibility Framework) 允许定义可使用最小配置安装的
 
 使源 DSL 可供 Visual Studio 模型总线访问：
 
-1. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击 " **启用 Modelbus**"。 在该对话框中，选择一个或两个选项。  单击 **“确定”** 。 新项目“ModelBus”随即添加到 DSL 解决方案中。
+1. 在 DSL 设计器中打开源 DSL 的 DSL 定义文件。 右键单击设计图面，然后单击 " **启用 Modelbus**"。 在该对话框中，选择一个或两个选项。  单击“确定”。 新项目“ModelBus”随即添加到 DSL 解决方案中。
 
 2. 单击 " **转换所有模板** "，然后重新生成解决方案。
 
@@ -407,7 +407,7 @@ namespace Company.CompartmentDrag  // EDIT.
 
  /// <summary>
  /// Override some methods of the compartment shape.
- /// **_ GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. _***
+ /// *** GenerateDoubleDerived must be set for this shape in DslDefinition.dsl. ****
  /// </summary>
  public partial class ClassShape
  {
@@ -571,7 +571,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)
 - [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26f78be8708e61370be3256c8cde481d5c61c89d
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598141"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939287"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -45,7 +45,7 @@ ms.locfileid: "95598141"
 
 下表显示了 Visual Studio 中支持的 LSP 功能：
 
-消息 | 在 Visual Studio 中具有支持
+Message | 在 Visual Studio 中具有支持
 --- | ---
 初始化 | 是
 已初始化 | 是
@@ -294,7 +294,7 @@ namespace MockLanguageExtension
 
 请按照下面的步骤将对设置的支持添加到 LSP 语言服务扩展：
 
-1. 将 JSON 文件 (例如，) *上的MockLanguageExtensionSettings.js* 添加到包含设置及其默认值的项目。 例如：
+1. 将 JSON 文件 (例如，) *上的MockLanguageExtensionSettings.js* 添加到包含设置及其默认值的项目。 例如： 。
 
     ```json
     {
@@ -344,7 +344,7 @@ namespace MockLanguageExtension
 
 1. 用户打开包含您的服务器拥有的文件的工作区。
 2. 用户在 *. vs* 文件夹中添加了一个文件，该文件在 *上称为VSWorkspaceSettings.js*。
-3. 用户为该服务器提供的设置向文件 *VSWorkspaceSettings.js* 添加一行。 例如：
+3. 用户为该服务器提供的设置向文件 *VSWorkspaceSettings.js* 添加一行。 例如： 。
 
     ```json
     {
@@ -482,7 +482,7 @@ public class MockLanguageClient: ILanguageClient, ILanguageClientCustomMessage
 
 若要在 Visual Studio 中使用 LSP 客户端 API 查看示例扩展的源代码，请参阅 VSSDK 的可扩展性 [示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples/tree/master/LanguageServerProtocol)。
 
-## <a name="faq"></a>常见问题
+## <a name="faq"></a>常见问题解答
 
 **我要构建一个自定义项目系统来补充我的 LSP 语言服务器，以在 Visual Studio 中提供更丰富的功能支持，如何实现此目的？**
 
