@@ -16,15 +16,15 @@ helpviewer_keywords:
 - _AssemblyName property
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8c30e0b3253e19316eed24fa26500cd55a3dd515
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 51039c71c97614cb9e43df263b3d7155c9cb86f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847788"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947796"
 ---
 # <a name="custom-document-properties-overview"></a>自定义文档属性概述
 
@@ -52,7 +52,7 @@ ms.locfileid: "96847788"
 
   *SolutionID* 是用于标识解决方案的 GUID [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 生成项目时，会自动生成 *SolutionID* 。 **Vstolocal** 项指示 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 程序集应与文档从同一文件夹中加载。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中 Office 解决方案的体系结构](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
