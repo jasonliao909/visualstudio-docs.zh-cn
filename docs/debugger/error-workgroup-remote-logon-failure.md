@@ -15,15 +15,15 @@ helpviewer_keywords:
 - remote debugging, logon failure
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 36f6c236d306d952785e4d1974b5a31e8040e74b
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1f56c8d8e0113b400e9d9cd072ba16f304cd6192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851653"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870839"
 ---
 # <a name="error-workgroup-remote-logon-failure"></a>错误：工作组远程登录失败
 此错误显示如下：
@@ -36,7 +36,7 @@ ms.locfileid: "90851653"
 
 - 远程计算机上没有匹配用户名和密码的帐户。
 
-- 如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认**本地安全策略**设置可能导致此错误。 **本地安全策略**默认设置为**仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为**经典-本地用户以自己的身份验证**。
+- 如果 Visual Studio 计算机和远程计算机都在工作组上，远程计算机的默认 **本地安全策略** 设置可能导致此错误。 **本地安全策略** 默认设置为 **仅来宾-本地用户以来宾身份验证**。 要在此设置上调试，必须在远程计算机上将设置更改为 **经典-本地用户以自己的身份验证**。
 
 > [!NOTE]
 > 你必须是管理员才能执行以下任务。
@@ -53,7 +53,7 @@ ms.locfileid: "90851653"
 
 3. 单击“用户权限分配”。
 
-4. 在**策略**列中，双击**调试程序**，以在**本地安全策略设置**对话框中查看当前本地组策略分配。
+4. 在 **策略** 列中，双击 **调试程序**，以在 **本地安全策略设置** 对话框中查看当前本地组策略分配。
 
      ![本地安全策略用户权限](../debugger/media/dbg_err_localsecuritypolicy_userrightsdebugprograms.png "DBG_ERR_LocalSecurityPolicy_UserRightsDebugPrograms")
 

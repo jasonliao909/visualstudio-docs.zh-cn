@@ -8,15 +8,15 @@ helpviewer_keywords:
 ms.assetid: 19142c60-9b32-46ba-a556-b62fd77568c1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 125420655af4fb021e264c3885a739fc90cfff59
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 1aa19ad99629f5106ee89876f347dfafd7520d26
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862745"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870501"
 ---
 # <a name="general-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“常规”选项卡
 使用“常规”选项卡来显示所选窗口的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

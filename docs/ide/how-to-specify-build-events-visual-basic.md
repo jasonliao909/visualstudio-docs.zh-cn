@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 40dc83bf-a7c5-4a14-816a-fa0980b6e4c3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00655d1f30d18da4170782384c634ff189b104ee
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 426b387603fbe7bca29f2ad4f507f2e517cac9bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136922"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869253"
 ---
 # <a name="how-to-specify-build-events-visual-basic"></a>如何：指定生成事件 (Visual Basic)
 

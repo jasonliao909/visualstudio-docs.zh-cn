@@ -11,17 +11,17 @@ helpviewer_keywords:
 - command-line
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecdda55bbe4e79af01f8fb9a9a2b77f775548b10
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "76115234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868721"
 ---
 # <a name="how-to-define-settings-in-a-response-file"></a>如何在响应文件中定义设置
 
@@ -41,7 +41,7 @@ vs_enterprise.exe --in customInstall.json
 
 创建布局的管理员可以修改布局中的 `response.json` 文件，以控制用户通过此布局安装 Visual Studio 时看到的默认设置。  例如，如果管理员希望默认安装特定工作负载和组件，可以配置 `response.json` 文件来添加这些设置。
 
-如果 Visual Studio 安装程序从布局文件夹运行，则会_自动_使用相应布局文件夹中的响应文件。  不必局限于使用 `--in` 选项。
+如果 Visual Studio 安装程序从布局文件夹运行，则会 _自动_ 使用相应布局文件夹中的响应文件。  不必局限于使用 `--in` 选项。
 
 可以更新在脱机布局文件夹中创建的 `response.json` 文件，以定义用户通过此布局进行安装时看到的默认设置。
 

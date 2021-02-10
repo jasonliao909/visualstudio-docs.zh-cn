@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ae81d7503ef325da24db7d553a98837f97a96168
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852688"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871619"
 ---
 # <a name="error-kerberos-authentication-failed"></a>错误：Kerberos 身份验证失败
 当尝试进行远程调试时，可能会收到以下错误消息：

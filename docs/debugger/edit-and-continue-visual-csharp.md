@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 591bd1b7-ef10-4d10-817b-3f92ca4be006
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 55406001e4017c853895002445d9bd5d614b4b20
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 375e1db598f925a193def159203ccb7e5c5fdf05
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96862875"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871853"
 ---
 # <a name="edit-and-continue-visual-c"></a>编辑并继续 (Visual C#)
  使用 C# 的“编辑并继续”，可以一边进行调试一边在中断模式下更改代码。 不必停止并重新启动调试会话即可应用更改。 在运行模式下，源编辑器是只读的。

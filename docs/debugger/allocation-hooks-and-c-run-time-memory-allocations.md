@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: cc34ee96-3d91-41bd-a019-aa3759139e7e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c9225281952700b118f13b20a11f7619307b8e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 49739a0c07426329dc20f7fd459febcc70866ec9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729166"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866055"
 ---
 # <a name="allocation-hooks-and-c-run-time-memory-allocations"></a>分配挂钩和 C 运行时内存分配
 对分配挂钩函数的一个很重要的限制是，该函数必须显式忽略 `_CRT_BLOCK` 块。 这些块是 C 运行时库函数在内部进行的内存分配的结果（前提是调用分配内部内存的 C 运行时库函数）。 将以下代码添加到分配挂钩函数开始处即可忽略 `_CRT_BLOCK` 块：

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 306bd176-0ce9-4a10-89ca-20b043d37d4e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c846910da4dec636c073446ae63cffb7cb2a682
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 815c6c0fc3eec3678f878e081d76c95cb7e8fc78
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150790"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99860836"
 ---
 # <a name="call-tree-view---instrumentation-data"></a>“调用树”视图 - 检测数据
 “调用树”视图中的函数值表示调用树中父函数所调用的函数实例的时间。 通过将函数实例值与分析运行期间所有函数的总已用非独占时间进行对比来得出百分比值。

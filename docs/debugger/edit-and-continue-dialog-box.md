@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ed625d98cc4f3fe793ba0982771b0a57ff189526
-ms.sourcegitcommit: 47da50a74fcd3db66d97cb20accac983bc41912f
+ms.openlocfilehash: 44855237adb4eb9edfb7d4ee383ff5777cf4b6b6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96863096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99872009"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
 （仅限本机）当你在调试过程中编辑了代码并且 **编辑并继续** 识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。

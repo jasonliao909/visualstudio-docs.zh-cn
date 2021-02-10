@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: f0c705dc-2b97-423d-abbf-5584d4827208
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886695cea38909a8efa74797391adb1b6dd97d19
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: e28062f54426e2810acf29bdd64955998ea088cd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305400"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99852539"
 ---
 # <a name="find-command"></a>查找命令
 要搜索文件，请使用“查找和替换”窗口的“在文件中查找”选项卡上的可用选项子集。

@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 141f2dee-1563-4ce6-ba37-32920b082519
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 145fc1ad1dddfa4d0648e2ecc7a8d85263744d49
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 8569231ee1b9f19752bf58691b41ec74789bb761
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136740"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868993"
 ---
 # <a name="advanced-build-settings-dialog-box-c"></a>“高级生成设置”对话框 (C#)
 
@@ -90,7 +90,7 @@ ms.locfileid: "92136740"
 
 **文件对齐**
 
-指定输出文件中各节的大小。 有效值为 **512** 、 **1024** 、 **2048** 、 **4096** 和 **8192** 。 这些值以字节为单位。 每一节都在边界（此值的倍数）上对齐，这会影响输出文件的大小。 有关详细信息，请参阅 [/filealign（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)。
+指定输出文件中各节的大小。 有效值为 **512**、**1024**、**2048**、**4096** 和 **8192**。 这些值以字节为单位。 每一节都在边界（此值的倍数）上对齐，这会影响输出文件的大小。 有关详细信息，请参阅 [/filealign（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)。
 
 **库基址**
 

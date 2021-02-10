@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: 6fe97aac-2131-4615-bd92-d3afee741558
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7475dff2618a1dfcce598f35b57dbe67d80d254
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.openlocfilehash: 9af71aba1b26c3d8160af229d8c050038800106a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96559376"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99865808"
 ---
 # <a name="continuing-execution-after-an-exception"></a>在出现异常之后继续执行
 当调试器因异常而中断执行时，默认情况下，你将看到 **异常帮助器**。 如果你已在 **选项** 对话框中禁用了 **异常帮助器**，将看到 **异常助手**（C# 或 Visual Basic）或 **异常** 对话框 (C++)。

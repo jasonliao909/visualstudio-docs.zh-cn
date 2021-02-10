@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 42e1d08c-7b2e-4efd-9f47-85d6206afe35
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fc61a59d1e04d96fb36e7a7e4cd1304e2057adb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: c6a4c2ce57e231cb174bb14a1a15e9089db8e6ad
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868759"
 ---
 # <a name="step-7-keep-pairs-visible"></a>步骤 7：保持对可见
 只要玩家仅选择不匹配的图标对，游戏即可顺畅地运行。 但是，请考虑玩家选择匹配对时发生的情况。 游戏不是通过打开计时器（使用 <xref:System.Windows.Forms.Timer.Start> 方法）来使图标消失，而应当进行重置，这样游戏就不再使用 `firstClicked` 和 `secondClicked` 引用变量跟踪任何标签，而且无需重置选择的两个标签的颜色。

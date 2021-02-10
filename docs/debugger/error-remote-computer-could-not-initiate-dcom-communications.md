@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 92a03c89cfd1bf0e0772d1a1728ffb9b0754d089
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: ecc23af6335aa29adcad6dbe9e7869ab26cc0bc6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852584"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871476"
 ---
 # <a name="error-remote-computer-could-not-initiate-dcom-communications"></a>错误：远程计算机无法启动 DCOM 通信
 当远程计算机尝试与本地计算机通信时，发生 DCOM 错误。 本地计算机是
