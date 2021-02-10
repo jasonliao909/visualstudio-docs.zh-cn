@@ -9,15 +9,15 @@ ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8a3520220da15ef771c8cecbd7962e4448727910
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815706"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908311"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 若要调试已部署到 IIS 的 ASP.NET 应用程序，请在部署了应用的计算机上安装并运行远程工具，然后从 Visual Studio 附加到正在运行的应用。

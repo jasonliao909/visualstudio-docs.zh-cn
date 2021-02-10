@@ -14,15 +14,15 @@ helpviewer_keywords:
 - outlining code
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e45d7192c35ed60442fadf1a3eb302997fbaf381
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99909065"
 ---
 # <a name="outlining"></a>大纲显示
 
@@ -35,7 +35,7 @@ ms.locfileid: "92136662"
 
 当处理以大纲方式显示的代码时，可以展开要处理的部分，完成后将其折叠，然后移到其他部分。 如果不希望使用大纲显示方式，可以使用 **停止大纲显示** 命令删除大纲信息，但是不会影响基础代码。
 
-“编辑”菜单上的“撤消”和“重做”命令会影响这些操作。 **复制** 、 **剪切** 、 **粘贴** 和拖放操作可保留大纲信息，但是不保留可折叠区域的状态。 例如，如果复制处于折叠状态的区域，那么 **粘贴** 操作将把复制的文本作为展开的区域进行粘贴。
+“编辑”菜单上的“撤消”和“重做”命令会影响这些操作。 **复制**、**剪切**、**粘贴** 和拖放操作可保留大纲信息，但是不保留可折叠区域的状态。 例如，如果复制处于折叠状态的区域，那么 **粘贴** 操作将把复制的文本作为展开的区域进行粘贴。
 
 > [!CAUTION]
 > 如果更改大纲显示区域，那么大纲显示可能失效。 例如，删除或“查找和替换”操作可能删除区域的结尾标记。

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - MSBuild, SDKs, SDK
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bddf5e46fe066a79beb64570d6bf6ec1fedda68c
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6303efce016a9e678e4c9e8aa62c91aa116e44f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914218"
 ---
 # <a name="how-to-use-msbuild-project-sdks"></a>如何：使用 MSBuild 项目 SDK
 
@@ -123,9 +123,9 @@ MSBuild 15.0 引入了“项目 SDK”的概念，它可让你更轻松地使用
 }
 ```
 
-在生成期间，只能使用每个项目 SDK 的一个版本。 如果你引用同一项目 SDK 的两个不同版本，MSBuild 会发出警告。 如果在 global.json 文件中指定了版本，则不建议在项目中指定版本  。
+在生成期间，只能使用每个项目 SDK 的一个版本。 如果你引用同一项目 SDK 的两个不同版本，MSBuild 会发出警告。 如果在 global.json 文件中指定了版本，则不建议在项目中指定版本   。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)
 - [自定义生成](../msbuild/customize-your-build.md)

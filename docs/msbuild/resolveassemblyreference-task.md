@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: 4d56d848-b29b-4dff-86a2-0a96c9e4a170
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bccdc376079c4d9e0efb2a2724831e0fd2d0ae14
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9209fcffed9a15ce51e1aa079bd3efd5ff0bb384
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912660"
 ---
 # <a name="resolveassemblyreference-task"></a>ResolveAssemblyReference 任务
 

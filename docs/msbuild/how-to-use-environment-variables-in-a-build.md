@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 7f9e4469-8865-4b59-aab3-3ff26bd36e77
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ac100427c653a785d1e562b807f7bd4a001ae6ff
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: c7c81f36d37d071593a013067f661451b8916caa
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436178"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914178"
 ---
 # <a name="how-to-use-environment-variables-in-a-build"></a>如何：在生成中使用环境变量
 
@@ -42,7 +42,7 @@ ms.locfileid: "92436178"
 
 #### <a name="to-provide-a-default-value-for-a-property"></a>提供属性的默认值
 
-- 仅当某属性不具有任何值时，使用该属性上的 `Condition` 特性来设置值。 例如，仅在未设置 `ToolsPath` 环境变量时，以下代码才将 `ToolsPath` 属性设置为 c:\tools  ：
+- 仅当某属性不具有任何值时，使用该属性上的 `Condition` 特性来设置值。 例如，仅在未设置 `ToolsPath` 环境变量时，以下代码才将 `ToolsPath` 属性设置为 c:\tools：
 
      `<ToolsPath Condition="'$(TOOLSPATH)' == ''">c:\tools</ToolsPath>`
 

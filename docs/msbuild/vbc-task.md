@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 595278b1-2782-4577-b1ba-b4b5ab5625a3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0177467677c9aef1f41b006bb9b1ddfaed408e40
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: d6596dd0893d0ab302a738cb12856fc6758df039
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908870"
 ---
 # <a name="vbc-task"></a>Vbc 任务
 

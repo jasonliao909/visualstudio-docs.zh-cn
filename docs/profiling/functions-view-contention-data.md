@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 208773b0-1a54-4b7a-ad37-2b6fd4f731d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07f23e38a0d2bc7b538bbe42818ce8a8a2f3d2c1
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 6392263e7e30790ff09340bffebed8f921e24765
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801662"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907420"
 ---
 # <a name="functions-view---contention-data"></a>“函数”视图 - 争用数据
 争用数据的“函数”报告视图列出了分析运行期间阻止执行的函数。

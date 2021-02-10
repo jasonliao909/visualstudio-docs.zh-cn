@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: 5d9c6302-2ffd-430e-9535-13ce795f9f7c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2fe4f011a88ab4cf293626fe01f708b3cf5bc68f
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: 2c0bfd4c3355e6e4371fbec443ee38d7ba6e1da7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98801523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907327"
 ---
 # <a name="functions-view---net-memory-sampling-data"></a>“函数”视图 - .NET 内存采样数据
 使用采样方法收集的 .NET 内存分配分析数据的“函数”视图会列出分析运行期间分配内存的函数，并报告分配的大小和数量。

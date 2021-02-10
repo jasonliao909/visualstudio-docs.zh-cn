@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cc2f459fa3455d3f02953c42ad06e7f2647c79c6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134715"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99908155"
 ---
 # <a name="work-with-textures-and-images"></a>使用纹理和图像
 
@@ -48,7 +48,7 @@ ms.locfileid: "93134715"
 
 ### <a name="cube-maps"></a>立方体图
 
-立方体图可能包含不同类型的数据（例如，颜色或法线），但是已在立方体的表面组织成六个纹理。 因此，对立方体图进行采样的方式不是通过提供纹理坐标，而是提供原点在立方体中心的向量；样本是取自向量与立方体交集的点。 使用立方体图可以提供用于计算反射的环境近似值（称为 *环境映射* ），或者提供失真度比基本、二维纹理低的纹理给球面对象。
+立方体图可能包含不同类型的数据（例如，颜色或法线），但是已在立方体的表面组织成六个纹理。 因此，对立方体图进行采样的方式不是通过提供纹理坐标，而是提供原点在立方体中心的向量；样本是取自向量与立方体交集的点。 使用立方体图可以提供用于计算反射的环境近似值（称为 *环境映射*），或者提供失真度比基本、二维纹理低的纹理给球面对象。
 
 ## <a name="related-topics"></a>相关主题
 

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: bd98d6bf-2560-4eba-b063-2facb09f87c4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 92825f77b1c94a7545b399dbc1cb35ecefb8218d
-ms.sourcegitcommit: 8e15b434bf5db3e0f719320ca82682df1a3da110
+ms.openlocfilehash: 2b1ce5af864a87691fab5b4026e797dc6eb970bb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98883327"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99907263"
 ---
 # <a name="how-to-limit-instrumentation-to-specific-functions"></a>如何：将检测限定为特定函数
 通过在“性能会话”属性页的“高级”页或目标二进制文件的属性页中设置选项，可以将检测和数据收集限定为一个或多个函数 ：
@@ -44,10 +44,10 @@ ms.locfileid: "98883327"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\ 指定 MyNS 命名空间中的所有函数。
+    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。
 
    > [!NOTE]
-   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 vsinstr /DumpFuncs*
+   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见 [指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**
 
 ### <a name="to-limit-instrumentation-to-specific-functions-in-a-binary"></a>将检测限定为二进制文件中的特定函数
 
@@ -63,10 +63,10 @@ ms.locfileid: "98883327"
 
     **/include:** `FuncSpec` **[;** `FuncSpec` **]** `...`
 
-    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\ 指定 MyNS 命名空间中的所有函数。
+    `FuncSpec` 是命名空间和函数名。 其格式为 `Namespace` **::** `FunctionName`。 可使用分号分隔多个函数。 可使用星号 (\*) 指定一个或多个字符的通配符。 例如，/include:MyNS::\\* 指定 MyNS 命名空间中的所有函数。
 
    > [!NOTE]
-   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（请参阅[指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 vsinstr /DumpFuncs*
+   > 若要列出二进制文件中的函数，请在分析工具安装目录中打开命令提示符窗口（参见 [指定命令行工具的路径](../profiling/specifying-the-path-to-profiling-tools-command-line-tools.md)），然后键入 **vsinstr /DumpFuncs**
 
 ## <a name="see-also"></a>请参阅
 - [控制数据收集](../profiling/controlling-data-collection.md)

@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: dd359707-245a-4a36-8305-2e980b9edd53
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe6a56101e7fc00d69ed21240fe5a79b298174f2
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 3f021ebfa21604b13e7e5536b504c6868205ecdb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99910724"
 ---
 # <a name="call-tree-view---net-memory-instrumentation-data"></a>“调用树”视图 - .NET 内存检测数据
 使用检测方法收集的 .NET 内存分配分析数据的“调用树”视图显示在所分析的应用程序中遍历的函数执行路径。 树的根是应用程序或组件的入口点。 每个函数节点列出它调用的所有函数以及该函数的 .NET 内存和计时数据。

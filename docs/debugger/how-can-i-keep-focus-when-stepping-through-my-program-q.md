@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 11a30580-3a1a-4be8-a241-0abdc758302e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d533d524effe5ba055116d926d7cc5ba9632a6b
-ms.sourcegitcommit: 40d758f779d42c66cb02ae7face8a62763a8662b
+ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97398319"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911445"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>如何在逐句执行应用代码时保持焦点？
 ## <a name="description"></a>描述

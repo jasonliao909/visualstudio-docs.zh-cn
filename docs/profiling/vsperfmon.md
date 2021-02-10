@@ -14,16 +14,16 @@ helpviewer_keywords:
 ms.assetid: 37052afb-7a58-441f-bb17-f1587cc57068
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 919153699299c2f39ad0353ed484a9f9c9f46846
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 663bb5d1e126aa7ebc17f6720d81ac8eafd1e265
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99911461"
 ---
 # <a name="vsperfmon"></a>VSPerfMon
 可以使用 VSPerfMon 工具收集应用程序的性能数据；通常，由 VSPerfCmd.exe 启动该工具。 VSPerfMon 显示有关进程附加或分离的其他详细信息，而使用 VSPerfCmd 工具则无法获取这些信息。 若要查看此信息，请在单独的窗口中启动 VSPerfMon。 若要调用 VSPerfMon，请使用以下语法：

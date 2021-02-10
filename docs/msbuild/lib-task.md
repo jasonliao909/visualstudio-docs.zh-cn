@@ -24,15 +24,15 @@ helpviewer_keywords:
 ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bf1029d42ce40d33e6eea1fcbe5e6434ff85a36
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 2141818c13a187b8afddf337aa11677097940f23
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904445"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913746"
 ---
 # <a name="lib-task"></a>LIB 任务
 

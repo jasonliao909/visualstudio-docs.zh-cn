@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: aac894e3-a9f1-4bbc-a796-6ef07001f35b
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f4397415e684b9603dd662e409590e88e86034b
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: eff27467aeea5068f3ec086b490ca9c735861549
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903616"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99913842"
 ---
 # <a name="itemgroup-element-msbuild"></a>ItemGroup 元素 (MSBuild)
 
@@ -50,7 +50,7 @@ ms.locfileid: "92903616"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|特性|描述|
 |---------------|-----------------|
 |`Condition`|可选特性。 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 |`Label`|可选特性。 标识 `ItemGroup`。 |
