@@ -15,15 +15,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 931e9554a10e0e1525d9ee4a10505633b211610b
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4d83fb8fad6de0c932d371f7f874cea0ff9a8f80
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527253"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958656"
 ---
 # <a name="walkthrough-change-document-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改文档格式
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中使用 Windows 窗体控件来更改文本格式。
@@ -69,28 +69,28 @@ ms.locfileid: "97527253"
 
 3. 在 **“属性”** 窗口中，更改下列属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyBoldFont**|
-    |**文本**|**加粗**|
+    |**Text**|**加粗**|
 
 4. 按 **enter** 将插入点移动到第一个复选框下。
 
 5. 将第二个复选框添加到该复选框下的文档中 `ApplyBoldFont` ，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyItalicFont**|
-    |**文本**|**斜体**|
+    |**Text**|**斜体**|
 
 6. 按 **enter** 将插入点移动到第二个复选框下。
 
 7. 将第三个复选框添加到该复选框下的文档中 `ApplyItalicFont` ，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyUnderlineFont**|
-    |**文本**|**下划线**|
+    |**Text**|**划线**|
 
 ### <a name="add-text-and-a-bookmark-control"></a>添加文本和书签控件
 

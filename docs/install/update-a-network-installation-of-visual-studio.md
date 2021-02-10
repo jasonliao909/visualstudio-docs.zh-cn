@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 1AF69C0E-0AC9-451B-845D-AE4EDBCEA65C
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f54ee1191dd998d34e46a442debafc175ce98c8b
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85545426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959150"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -35,7 +35,7 @@ ms.locfileid: "85545426"
 
 ::: moniker range="vs-2017"
 
-**15.3 中的新增功能**：如果你在[首次创建网络布局](create-a-network-installation-of-visual-studio.md)时选择了部分布局，这些设置将被保存。 此后一切布局命令都将使用先前的选项以及任何指定的新选项。 但是，如果正在使用早期版本的布局，则应使用与首次创建网络安装布局相同的命令行参数（即相同的工作负载和语言）来更新其内容。
+**15.3 中的新增功能**：如果你在 [首次创建网络布局](create-a-network-installation-of-visual-studio.md)时选择了部分布局，这些设置将被保存。 此后一切布局命令都将使用先前的选项以及任何指定的新选项。 但是，如果正在使用早期版本的布局，则应使用与首次创建网络安装布局相同的命令行参数（即相同的工作负载和语言）来更新其内容。
 
 ::: moniker-end
 

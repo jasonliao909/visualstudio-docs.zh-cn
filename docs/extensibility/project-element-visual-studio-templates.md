@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 652d438d6a0fdf0c42648ded7d3dc9c18b0212ff
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672380"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959449"
 ---
 # <a name="project-element-visual-studio-templates"></a>Visual Studio 模板 (项目元素) 
 指定要添加到项目中的文件或目录。
@@ -44,9 +44,9 @@ ms.locfileid: "94672380"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>特性
+### <a name="attributes"></a>属性
 
-|属性|描述|
+|特性|描述|
 |---------------|-----------------|
 |`File`|必需的特性。<br /><br /> 指定模板 *.zip* 文件中的项目文件的名称。|
 |`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时，项目文件是否具有必须替换的参数值。 默认值为 `false`。|
@@ -66,7 +66,7 @@ ms.locfileid: "94672380"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `Project` 是 `TemplateContent` 的可选子元素。
 
  `Project`元素用于指定项目，因此仅在项目模板中有效。

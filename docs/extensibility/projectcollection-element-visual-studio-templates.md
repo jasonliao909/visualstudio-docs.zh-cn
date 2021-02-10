@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: deb27180-2035-49ed-b835-c47bb3cd2f8f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d9da3dbe92bdde8b0c19495e73cdbf2660ef3b4
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 29a73f1e0c7a39bb5ffaa1877cbaff7aa54c3930
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671228"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959397"
 ---
 # <a name="projectcollection-element-visual-studio-templates"></a> (Visual Studio 模板的 ProjectCollection 元素) 
 指定多项目模板的组织和内容。
@@ -57,7 +57,7 @@ ms.locfileid: "94671228"
 |-------------|-----------------|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的内容。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  多项目模板用作两个或多个项目的容器。 `ProjectCollection`元素用于指定要包含在模板中的项目。 有关多项目模板的详细信息，请参阅 [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)。
 
 ## <a name="example"></a>示例

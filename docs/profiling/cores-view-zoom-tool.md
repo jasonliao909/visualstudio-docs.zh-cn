@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f7d48602-ba32-4487-b51a-89e596124108
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: df2ffebee150ae106003ed5113e4c7354458143c
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 9556e2e4551761c7fbf0cd81ff422f43dcdc2a12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720717"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959007"
 ---
 # <a name="cores-view-zoom-tool"></a>内核视图缩放工具
 缩放控件是一个滑块，允许在时间线上进行放大和缩小操作，便于你关注特定的感兴趣的区域。 此控件以当前视图的中心为缩放点，因此放大前请先调整视图。

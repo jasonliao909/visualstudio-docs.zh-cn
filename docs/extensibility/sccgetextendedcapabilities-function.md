@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5247f2de7ffc63db7235f915c72b3274b8fee5f5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700723"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958409"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函数
 此函数返回源代码管理插件支持的其他功能。
@@ -32,7 +32,7 @@ SCCRTN SccGetExtendedCapabilities(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pContext
 
 中源代码管理插件上下文指针。
@@ -48,7 +48,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|获取功能操作已成功完成。|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|出现未知或未指定的错误。|
