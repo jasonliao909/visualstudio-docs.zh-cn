@@ -9,15 +9,15 @@ helpviewer_keywords:
 - stories
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 40418b2d188ac5482a12dd4ffdddd221bf5d2f97
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361958"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970577"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
@@ -62,7 +62,7 @@ ms.locfileid: "97361958"
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。
 
-许多业务规则受概念类间关系的约束。 您可以编写这些 *静态业务规则* 作为与概念类图上的相关类关联的注释。 例如：
+许多业务规则受概念类间关系的约束。 您可以编写这些 *静态业务规则* 作为与概念类图上的相关类关联的注释。 例如： 。
 
 ![附加到 Order 类的注释中的规则。](../modeling/media/uml_reqmcd2.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "97361958"
 
 有关如何开发符合服务质量要求的代码，请参阅为 [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)

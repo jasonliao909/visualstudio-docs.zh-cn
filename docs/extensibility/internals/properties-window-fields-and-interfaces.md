@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21bc3a7f1d46a1afe579a67afa09097fd04458ff
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: eb1f0a0f78b935a3b61596e4dd0b595030640b00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97875760"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970005"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
 用于确定在 " **属性** " 窗口中显示哪些信息的选择模型基于 IDE 中具有焦点的窗口。 所选窗口中的每个窗口和对象都可以将其选择上下文对象推送到全局选择上下文。 当窗口具有焦点时，环境将使用窗口框架中的值更新全局选择上下文。 焦点发生变化时，选择上下文。

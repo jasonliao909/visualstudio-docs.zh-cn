@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 62d1717acee9b8935f176bc10191f044b28a660d
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 4a867146d48b5ba6c4bfb2ac33b45c505b6f6c37
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047266"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971045"
 ---
 # <a name="xdcmake-task"></a>XDCMake 任务
 

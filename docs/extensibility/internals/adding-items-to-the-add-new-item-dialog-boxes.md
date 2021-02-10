@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 2f70863b-425b-4e65-86b4-d6a898e29dc7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99377db0e835de8d84485d0254d84892a360f5f0
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 1dbdb2f04ad5038941eeb9790efa9e05781def3f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96190156"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969004"
 ---
 # <a name="add-items-to-the-add-new-item-dialog-box"></a>向 "添加新项" 对话框添加项
 将项添加到 " **添加新项** " 对话框的过程从注册表项开始。 如以下注册表项中所示， **AddItemTemplates** 部分包含在 " **添加新项** " 对话框中提供了项的目录的路径和名称。
@@ -33,11 +33,11 @@ ms.locfileid: "96190156"
 
  **@** = #6
 
- **TemplatesDir**  =  \\ TemplatesDir &lt;Visual Studio SDK 安装路径 &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
+   =  \\ TemplatesDir &lt;Visual Studio SDK 安装路径 &gt; \\ VSIntegration \\ &lt; SomeFolder &gt; \\ &lt; SomePackage &gt; \\ &lt; SomeProject &gt; \\ &lt; SomeProjectItems&gt;
 
  **SortPriority** = dword：00000064
 
-| 名称 | 类型 | 从 *.rgs* 文件 (的数据)  | 描述 |
+| 名称 | 类型 | 从 *.rgs* 文件 (的数据)  | 说明 |
 |------------------|-----------| - | - |
 | @ (默认值)  | REG_SZ | #% IDS_ADDITEM_TEMPLATES_ENTRY% | **添加项** 模板的资源 ID。 |
 | Val TemplatesDir | REG_SZ | % TEMPLATE_PATH% \\ &lt; SomeProjectItems&gt; | 显示在 " **添加新项** " 向导的对话框中的项目项的路径。 |
@@ -79,7 +79,7 @@ ms.locfileid: "96190156"
 
   如果实现此筛选器功能，则不必映射应隐藏的每个项的表。 您可以简单地将项分类为类型，并将分类置于 *vsdir* 文件中。 然后，可以通过实现接口来隐藏具有特定分类的任何项。 通过这种方式，您可以基于项目中的状态，使 " **添加新项** " 对话框中的项成为动态的。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsFilterAddProjectItemDlg2>
 - [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)
 - [通常用于扩展项目的对象的 Catid](../../extensibility/internals/catids-for-objects-that-are-typically-used-to-extend-projects.md)

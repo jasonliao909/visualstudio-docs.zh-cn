@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending tools
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 67e0f4ae5b06e96747a7257b2b9b444566235877
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: b823aecff4f05208094bd98b559a661c7f23fc5b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305124"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970525"
 ---
 # <a name="overview-of-the-programming-model-of-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程模型概述
   在 Visual Studio 中创建 SharePoint 工具扩展时，首先将实现由 SharePoint 工具公开的一个或多个扩展性接口。 在大多数情况下，你还将使用 SharePoint 工具提供的其他类型来实现扩展中的功能。 在某些方案中，你还可以使用 Visual Studio 和 SharePoint 提供的其他对象模型中的类型。 你必须了解每个对象模型的用途以及如何将这些对象模型结合使用，以创建 SharePoint 工具扩展。
@@ -32,7 +32,7 @@ ms.locfileid: "96305124"
 
  若要扩展 SharePoint 工具，请实现由 Visual Studio 公开的一个或多个扩展性接口。 必要时，你还必须将 <xref:System.ComponentModel.Composition.ExportAttribute> 和其他特定于 SharePoint 工具的特性应用于接口实现。 下表列出了一些接口，可实现这些接口以扩展 SharePoint 工具。
 
-|接口|描述|
+|接口|说明|
 |---------------|-----------------|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeProvider>|实现此接口可定义新类型的 SharePoint 项目项。 有关示例，请参阅 [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。|
 |<xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension>|实现此接口可扩展已在 Visual Studio 中安装的 SharePoint 项目项类型。 有关示例，请参阅 [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。|
@@ -93,7 +93,7 @@ ms.locfileid: "96305124"
 ### <a name="visual-studio-integration-object-model"></a>Visual Studio 集成对象模型
  集成对象模型提供的 Api 可用于通过创建 *VSPackage* 将功能添加到 Visual Studio。 VSPackage 是一个模块，它通过提供自定义功能（如工具窗口、编辑器、设计器、服务和项目）来扩展 Visual Studio IDE。
 
- 若要添加将用于内置 SharePoint 工具的新 Visual Studio 功能，则可以使用集成对象模型。 例如，如果创建一个表示 SharePoint 站点的自定义操作的自定义 SharePoint 项目项，则也可以创建一个实现该自定义操作的设计器的 VSPackage。 可以通过将快捷菜单项添加到表示 **解决方案资源管理器** 中的自定义操作的项目项，将设计器与自定义操作相关联。 可以通过以下方式打开设计器：打开其快捷菜单 (方法：右键单击 "自定义操作" 项目项，或选择该项目，然后选择 " **Shift**" + **F10** 键) 然后选择 "**打开**"。
+ 若要添加将用于内置 SharePoint 工具的新 Visual Studio 功能，则可以使用集成对象模型。 例如，如果创建一个表示 SharePoint 站点的自定义操作的自定义 SharePoint 项目项，则也可以创建一个实现该自定义操作的设计器的 VSPackage。 可以通过将快捷菜单项添加到表示 **解决方案资源管理器** 中的自定义操作的项目项，将设计器与自定义操作相关联。 可以通过以下方式打开设计器：打开其快捷菜单 (方法：右键单击 "自定义操作" 项目项，或选择该项目，然后选择 " **Shift**" + 键) 然后选择 "**打开**"。
 
  Visual Studio SDK 附带的一组程序集中定义了此对象模型。 此对象模型中的某些主要程序集包括 *Microsoft.VisualStudio.Shell.11.0.dll*、 *Microsoft.VisualStudio.Shell.Interop.dll* 和 *Microsoft.VisualStudio.OLE.Interop.dll*。
 
@@ -104,7 +104,7 @@ ms.locfileid: "96305124"
 
  可以在 SharePoint 工具扩展中使用任一对象模型中的 API，但在 SharePoint 工具扩展的上下文中，每个对象模型均有各自的优点和缺点。 有关详细信息，请参阅 [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
-|对象模型|描述|
+|对象模型|说明|
 |------------------|-----------------|
 |服务器对象模型|通过服务器对象模型，可以访问 [!INCLUDE[wss_14_long](../sharepoint/includes/wss-14-long-md.md)] 和 [!INCLUDE[moss_14_long](../sharepoint/includes/moss-14-long-md.md)] 以编程方式公开的所有功能。 此对象模型旨在供在 SharePoint Server 上运行的 SharePoint 解决方案使用。 此对象模型的大多数是在 *Microsoft.SharePoint.dll* 程序集中定义的。 有关服务器对象模型的详细信息，请参阅 [使用 SharePoint Foundation Server-Side 对象模型](/previous-versions/office/developer/sharepoint-2010/ee538251(v=office.14))。|
 |客户端对象模型|客户端对象模型是服务器对象模型的子集，可用于从远程客户端或服务器与 SharePoint 数据进行互操作。 它旨在将执行常见任务时必须执行的往返次数减至最小。 大多数客户端对象模型是在 *Microsoft.SharePoint.Client.dll* 和 *Microsoft.SharePoint.Client.Runtime.dll* 程序集中定义的。 有关客户端对象模型的详细信息，请参阅 [托管客户端对象模型](/previous-versions/office/developer/sharepoint-2010/ee537247(v=office.14))。|

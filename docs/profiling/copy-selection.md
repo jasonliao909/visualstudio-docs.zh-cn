@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 645d9bd3-0a17-4a09-9b25-b37ae3ff484a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: da16256579f414d33434295fc355f368597d868d
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 23f5a3bd275ecd3666ce1a6642b5c3a27072ac60
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98720860"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969355"
 ---
 # <a name="copy-selection"></a>复制选择
 若要从“报告”选项卡复制整个调用堆栈，请单击“复制”。 然后，可以在任何支持该操作的程序中粘贴该调用堆栈。
