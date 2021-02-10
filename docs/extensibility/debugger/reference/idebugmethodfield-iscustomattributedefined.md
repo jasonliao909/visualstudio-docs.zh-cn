@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d60e7a451a18ff8efbf47a008831109cd7f747c9
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 63351a106497121c40fa7fb04d95b59494e4575e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727115"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941822"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 确定是否已定义了特定的自定义特性。
@@ -28,7 +28,7 @@ ms.locfileid: "80727115"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT IsCustomAttributeDefined( 
+HRESULT IsCustomAttributeDefined( 
    LPCOLESTR pszCustomAttributeName
 );
 ```
@@ -39,7 +39,7 @@ int IsCustomAttributeDefined(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszCustomAttributeName`\
 中一个字符串，其中包含要查找的自定义特性的名称。
 

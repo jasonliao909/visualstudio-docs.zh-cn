@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd30cb2d09d042e70b5fc142ac220f2356962146
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974591"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941861"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定义位图。 位图是从资源或从文件加载的。
@@ -34,7 +34,7 @@ ms.locfileid: "94974591"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |guid|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应该是位图定义的唯一，不能用于任何其他目的。|
 |Resid 标识|GUID/ID 命令标识符的 ID。 Resid 标识或 href 属性是必需的。<br /><br /> Resid 标识属性是一个整数资源 ID，用于确定在命令表合并期间要加载的位图条带。  加载命令表时，将从同一个模块的资源加载资源 ID 指定的位图。|
@@ -59,5 +59,5 @@ ms.locfileid: "94974591"
   usedList="1, 2, 3, 4"/>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
