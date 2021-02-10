@@ -14,15 +14,15 @@ helpviewer_keywords:
 - menus, creating in Office applications
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8b018687ec10eb725ece7d776277ea1c699dbbec
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524218"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937407"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何 <xref:Microsoft.Office.Tools.Word.Bookmark> 在 Word 的文档级自定义项中创建控件的快捷菜单。 当用户右键单击书签中的文本时，将出现一个快捷菜单，并为用户提供用于设置文本格式的选项。

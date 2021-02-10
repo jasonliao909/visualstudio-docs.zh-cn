@@ -16,15 +16,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], server-side data access
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f32ad4ffe44eb725953bc664acf4c4c38da4b11e
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524839"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937434"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>演练：从服务器上的工作簿中检索缓存的数据
   本演练演示如何从 Microsoft Office Excel 工作簿中缓存的数据集检索数据，而无需通过使用类启动 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -80,7 +80,7 @@ ms.locfileid: "97524839"
 
 7. 在 " **新建项目** " 对话框中，确保未选中 " **创建解决方案的目录** " 复选框。
 
-8. 单击“确定”  。
+8. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目添加到 **解决方案资源管理器** ，并打开 *Class1.cs* 或 *Class1* 代码文件。
 
@@ -109,7 +109,7 @@ ms.locfileid: "97524839"
 
 7. 在 " **选择数据库对象** " 页上，展开 " **表** "，然后选择 " **Product (SalesLT)**"。
 
-8. 单击“完成”。
+8. 单击“完成” 。
 
     *Adventureworksltdataset.xsd* 文件将添加到 **AdventureWorksDataSet** 项目中。 此文件定义以下各项：
 
@@ -138,7 +138,7 @@ ms.locfileid: "97524839"
 
 5. 在 " **名称** " 框中，键入 **AdventureWorksReport**。 请勿修改位置。
 
-6. 单击“确定”  。
+6. 单击“确定”。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -227,7 +227,7 @@ ms.locfileid: "97524839"
 
 4. 在 " **名称** " 框中，键入 **DataReader**。 请勿修改位置。
 
-5. 单击“确定”  。
+5. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataReader** 项目添加到 **解决方案资源管理器** 并打开 *Program.cs* 或 *Module1* 代码文件。
 
@@ -240,7 +240,7 @@ ms.locfileid: "97524839"
 
 2. 在 " **.net** " 选项卡上，选择 " **VisualStudio**"。
 
-3. 单击“确定”  。
+3. 单击“确定”。
 
 4. 在 **解决方案资源管理器** 中，右键单击 **DataReader** 项目，然后单击 " **添加引用**"。
 

@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, site workflows
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 86302a0b8eef4344a909ae3b8fb2c513c86c4ad6
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96913951"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937714"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义站点工作流活动
   本演练演示如何使用为站点级工作流创建自定义活动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (站点级工作流适用于整个站点，而不只是网站上的列表。 ) 自定义活动将创建备份公告列表，然后将 "公告" 列表中的内容复制到其中。
@@ -85,7 +85,7 @@ ms.locfileid: "96913951"
 
 #### <a name="to-add-a-custom-workflow-activity-class"></a>添加自定义工作流活动类
 
-1. 在菜单栏上，选择 **Project**  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
+1. 在菜单栏上，选择  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
 
 2. 在 " **已安装的模板** " 树视图中，选择 " **代码** " 节点，然后选择项目项模板列表中的 " **类** " 模板。 使用默认名称 Class1。 选择“添加”按钮。
 

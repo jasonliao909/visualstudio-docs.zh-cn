@@ -15,15 +15,15 @@ helpviewer_keywords:
 - actions panes [Office development in Visual Studio], adding controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 44fd876dfad99e1a1320a5e5d743ea8e30dfdb98
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97524170"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937376"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练：将文本从操作窗格插入到文档中
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件，这些控件收集输入，然后将文本发送到文档。
@@ -112,28 +112,28 @@ ms.locfileid: "97524170"
 
 4. 向操作窗格控件添加 **Textbox** 控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**getName**|
-    |**Size**|**130, 20**|
+    |**大小**|**130, 20**|
 
 5. 将第二个 " **标签** " 控件添加到 "操作" 窗格控件，并将 " **Text** " 属性更改为 " **Address**"。
 
 6. 将第二个 **Textbox** 控件添加到操作窗格控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**getAddress**|
     |**接受返回**|**True**|
     |**多行**|**True**|
-    |**Size**|**130, 40**|
+    |**大小**|**130, 40**|
 
 7. 向 "操作" 窗格控件添加 " **按钮** " 控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**Shapes.addtext**|
-    |**文本**|插入|
+    |**Text**|**插入**|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>添加代码以在文档中插入文本
  在 "操作" 窗格中，编写将文本框中的文本插入 <xref:Microsoft.Office.Tools.Word.Bookmark> 文档中相应控件的代码。 您可以使用 `Globals` 类从 "操作" 窗格上的控件访问文档上的控件。 有关详细信息，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。

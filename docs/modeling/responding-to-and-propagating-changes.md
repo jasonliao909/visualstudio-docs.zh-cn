@@ -8,21 +8,21 @@ helpviewer_keywords:
 - Domain-Specific Language, events
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e44def032854e46b00638cff77c8bea91eb0f09
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 3a6066a40ea09698bec6caba38d5d55aa8b269e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97360607"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937935"
 ---
 # <a name="respond-to-and-propagate-changes"></a>响应并传播更改
 
 创建、删除或更新元素时，您可以编写将更改传播到模型的其他部分的代码，或者编写为外部资源（如文件、数据库或其他组件）的代码。
 
-## <a name="reference"></a>参考
+## <a name="reference"></a>引用
 
 作为指导原则，请按以下顺序考虑这些技术：
 
@@ -54,7 +54,7 @@ ms.locfileid: "97360607"
 
 - **将事件参数传递到规则和事件** 事件和规则都被传递了一个 `EventArgs` 参数，该参数包含有关模型如何更改的信息。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

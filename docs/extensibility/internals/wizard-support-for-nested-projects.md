@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 1b496acc-b326-4cdb-bb48-e3b5c6f12e05
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b3c6dee712f79648eba203650cc70f76fcea657
-ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
+ms.openlocfilehash: f2cd84379ead1cd45296ae370aab215a37cf4b50
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97615611"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935866"
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套项目的向导支持
 IDE 运行可实现嵌套项目的父项目的两个向导： " **新建项目** " 向导和 " **添加项** 向导"。

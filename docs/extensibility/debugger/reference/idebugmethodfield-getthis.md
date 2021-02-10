@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cc235bea-e909-4d8c-ab54-936736c803fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b29252d1586d039084ec1d21f1fc4967aea68baf
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1893ffac03aba345589274475f81abd44b5b7b5f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80727163"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936816"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 获取 `this` `Me` [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 包含方法的对象) 指针中的 (。
@@ -28,7 +28,7 @@ ms.locfileid: "80727163"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetThis( 
+HRESULT GetThis( 
    IDebugClassField** ppClass
 );
 ```
@@ -39,7 +39,7 @@ int GetThis(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppClass`\
 弄返回表示 "this" 指针的 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 对象。
 

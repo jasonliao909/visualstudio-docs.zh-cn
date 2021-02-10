@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32d0dd7dbeee70b8c4eb566a07cf9a44d40d4f49
-ms.sourcegitcommit: 42981ace63c0f2b087de5703ca76b8dcdd93a719
+ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96606536"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935997"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是用于实现 c + + 中的调试引擎、表达式计算器和符号提供程序的全局帮助器函数。
@@ -49,7 +49,7 @@ HRESULT GetMetric(
 );
 ```
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |pszMachine|中可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
 |pszType|中度量值类型之一。|
@@ -72,7 +72,7 @@ HRESULT SetMetric(
 );
 ```
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |pszType|中度量值类型之一。|
 |guidSection|中特定引擎、计算器、异常等的 GUID。这会为特定元素指定指标类型下的子节。|
@@ -93,7 +93,7 @@ HRESULT RemoveMetric(
 );
 ```
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |pszType|中度量值类型之一。|
 |guidSection|中特定引擎、计算器、异常等的 GUID。这会为特定元素指定指标类型下的子节。|
@@ -113,7 +113,7 @@ HRESULT EnumMetricSections(
 );
 ```
 
-|参数|描述|
+|参数|说明|
 |---------------|-----------------|
 |pszMachine|中可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
 |pszType|中度量值类型之一。|
@@ -123,7 +123,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="expression-evaluator-functions"></a>表达式计算器函数
 
-|函数|描述|
+|功能|说明|
 |--------------|-----------------|
 |GetEEMetric|从注册表检索指标值。|
 |SetEEMetric|在注册表中设置指定的指标值。|
@@ -132,7 +132,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="exception-functions"></a>异常函数
 
-|函数|描述|
+|功能|说明|
 |--------------|-----------------|
 |GetExceptionMetric|从注册表检索指标值。|
 |SetExceptionMetric|在注册表中设置指定的指标值。|
@@ -141,7 +141,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="symbol-provider-functions"></a>符号提供程序函数
 
-|函数|描述|
+|功能|说明|
 |--------------|-----------------|
 |GetSPMetric|从注册表检索指标值。|
 |SetSPMetric|在注册表中设置指定的指标值。|
@@ -149,7 +149,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>枚举函数
 
-|函数|描述|
+|功能|说明|
 |--------------|-----------------|
 |EnumMetricSections|枚举指定指标类型的所有指标。|
 |EnumDebugEngine|枚举已注册的调试引擎。|
@@ -166,7 +166,7 @@ HRESULT EnumMetricSections(
 |metrictypeException|所有异常指标。|
 |metricttypeEEExtension|所有表达式计算器扩展。|
 
-|调试引擎属性|描述|
+|调试引擎属性|说明|
 |-----------------------------|-----------------|
 |metricAddressBP|设置为非零值表示支持地址断点。|
 |metricAlwaysLoadLocal|设置为非零值，以便始终在本地加载调试引擎。|
@@ -202,13 +202,13 @@ HRESULT EnumMetricSections(
 |metricIncompatibleList|包含一些项的注册表项，这些项指定与此调试引擎不兼容的调试引擎的 Guid。|
 |metricDisableJITOptimization|将此项设置为非零值，以指示应在调试过程中禁用托管代码) 的实时优化 (。|
 
-|表达式计算器属性|描述|
+|表达式计算器属性|说明|
 |-------------------------------------|-----------------|
 |metricEngine|这会保留支持指定表达式计算器的调试引擎的数量。|
 |metricPreloadModules|将此值设置为非零值，指示在对程序启动表达式计算器时应预加载模块。|
 |metricThisObjectName|将此设置为 "this" 对象名称。|
 
-|表达式计算器扩展属性|描述|
+|表达式计算器扩展属性|说明|
 | - |-----------------|
 |metricExtensionDll|支持此扩展的 dll 的名称。|
 |metricExtensionRegistersSupported|支持的寄存器列表。|
@@ -216,18 +216,18 @@ HRESULT EnumMetricSections(
 |metricExtensionTypesSupported|支持的类型列表。|
 |metricExtensionTypesEntryPoint|用于访问类型的入口点。|
 
-|端口供应商属性|描述|
+|端口供应商属性|说明|
 |------------------------------|-----------------|
 |metricPortPickerCLSID|端口选取器的 CLSID (一个对话框，用户可以使用该对话框选择端口并添加用于调试) 的端口。|
 |metricDisallowUserEnteredPorts|如果无法将用户输入的端口添加到端口供应商，则为非零值 (这会使端口选取器对话框本质上是只读的) 。|
 |metricPidBase|分配进程 Id 时端口提供程序使用的基本进程 ID。|
 
-|预定义的 SP 存储类型|描述|
+|预定义的 SP 存储类型|说明|
 |-------------------------------|-----------------|
 |storetypeFile|符号存储在单独的文件中。|
 |storetypeMetadata|符号作为元数据存储在程序集中。|
 
-|其他属性|描述|
+|其他属性|说明|
 |------------------------------|-----------------|
 |metricShowNonUserCode|将此值设置为非零值将显示 nonuser 代码。|
 |metricJustMyCodeStepping|将此项设置为非零值，以指示单步执行只能在用户代码中进行。|
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[指标值]*|分配给度量值的值。 值应具有 (字符串、数字等 ) 取决于指标。|
 
 > [!NOTE]
-> 所有 Guid 都以的格式存储 `{GUID}` 。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。
+> 所有 Guid 都以的格式存储 `{GUID}` 。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。
 
 ### <a name="debug-engines"></a>调试引擎
  下面是注册表中调试引擎指标的组织。 `Engine` 是调试引擎的度量类型名称，并且对应于上述注册表子树中的 *[指标类型]* 。
@@ -426,5 +426,5 @@ HRESULT EnumMetricSections(
 
  库： libs\ad2de.lib、libs\dbgmetric.lib
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

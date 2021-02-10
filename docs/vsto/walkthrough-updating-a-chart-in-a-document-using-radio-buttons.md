@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], updating documents
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: df2996d99e752fbe0f7f36bcab537ee8c19d4f06
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528390"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937324"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>演练：使用单选按钮更新文档中的图表
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。
@@ -93,31 +93,31 @@ ms.locfileid: "97528390"
 
 2. 从 "**工具箱**" 的 "**公共控件**" 选项卡中，将第一个 **单选按钮** 控件拖到用户控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**columnChart**|
-    |**文本**|**柱形图**|
+    |**Text**|**柱形图**|
 
 3. 将第二个 **单选按钮** 添加到用户控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**barChart**|
-    |**文本**|**条形图**|
+    |**Text**|**条形图**|
 
 4. 将第三个 **单选按钮** 添加到用户控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**lineChart**|
-    |**文本**|**折线图**|
+    |**Text**|**折线图**|
 
 5. 将第四个 **单选按钮** 添加到用户控件，并更改以下属性。
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**areaBlockChart**|
-    |**文本**|**面积图**|
+    |**Text**|**面积图**|
 
 ## <a name="add-references"></a>添加引用
  若要从文档中的用户控件访问图表，您必须对 `Microsoft.Office.Interop.Graph` 项目中的程序集具有引用。
