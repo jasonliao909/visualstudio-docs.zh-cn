@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application pages [SharePoint development in Visual Studio], creating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1228ef551235fd616803d6e05057ee50f0ea7ec4
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 9ecd6573573d76c3e47a2c87a4f455cb9890fb31
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850437"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949176"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
   *应用程序页* 是设计为在 SharePoint 网站中使用的 ASP.NET 网页。 应用程序页是特定类型的 ASP.NET 页。 应用程序页和标准 ASP.NET 页之间的主要区别在于，应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页面与站点上的其他页面共享相同的外观和行为。
@@ -43,7 +43,7 @@ ms.locfileid: "94850437"
 ## <a name="create-an-application-page"></a>"创建应用程序" 页
  若要创建应用程序页，请向 SharePoint 项目添加 " **应用程序页** " 项。 当你创建应用程序页时，Visual Studio 会将以下文件夹添加到你的项目：
 
-|Folder|说明|
+|文件夹|说明|
 |------------|-----------------|
 |布局|映射到 SharePoint 文件系统的 _layouts 虚拟目录。|
 |布局子文件夹|包含构成应用程序页面的文件。 默认情况下，此文件夹具有与项目相同的名称。 你可以随时重命名此文件夹。 运行该项目时，Visual Studio 会将此文件夹部署到 SharePoint 文件系统的 _layouts 虚拟目录。|
@@ -62,7 +62,7 @@ ms.locfileid: "94850437"
 > [!NOTE]
 > 您只能在设计器的 " **源** " 视图中设计此页。 对于应用程序页，禁用设计器的 **设计** 视图。
 
- 可以像调试 Visual Studio 中的其他 SharePoint 项目项一样调试应用程序页。 当你启动 Visual Studio 调试器时，Visual Studio 将打开 SharePoint 站点。
+ 可以像调试 Visual Studio 中的其他 SharePoint 项目项一样调试应用程序页。 当你启动 Visual Studio 调试器时，Visual Studio 将打开 SharePoint 网站。
 
  若要查看应用程序页，必须手动导航到应用程序页的位置 (例如： http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx) 。
 

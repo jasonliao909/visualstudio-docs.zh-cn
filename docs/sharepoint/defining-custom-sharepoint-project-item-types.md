@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, defining new project item types
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc2e3670dd734b368795f270fa6c1d63c8c079e8
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 00ee9f41695078d8bea5daacf1c0ccfd392a64cc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672829"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948864"
 ---
 # <a name="define-custom-sharepoint-project-item-types"></a>定义自定义 SharePoint 项目项类型
   若要创建新类型的 SharePoint 项目项，请定义新的 SharePoint 项目项类型。 例如，Visual Studio 不包括用于将字段或自定义操作添加到 SharePoint 站点的 SharePoint 项目项。 您可以定义自己的 SharePoint 项目项类型，以便创建字段、自定义操作或其他类型的 SharePoint 组件。

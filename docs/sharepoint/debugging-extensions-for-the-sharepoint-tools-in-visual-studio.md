@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5ad95ce8b4ab9567f22748453ae59c258f24aa86
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 2b098ac007825745e13481592760be9d2badeb55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671215"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948903"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中调试 SharePoint 工具扩展
   可以在实验实例中调试 SharePoint 工具扩展，或在 Visual Studio 的常规实例中调试。 如果需要对扩展的行为进行故障排除，还可以修改注册表值以显示其他错误信息，并配置 Visual Studio 执行 SharePoint 命令的方式。
@@ -116,13 +116,13 @@ ms.locfileid: "94671215"
 
  若要帮助排查 SharePoint 工具的任何扩展，可以创建和设置 EnableDiagnostics 值。 下表描述了此值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |EnableDiagnostics|指定是否在 " **输出** " 窗口中显示诊断消息的 REG_DWORD。<br /><br /> 若要显示诊断消息，请将此值设置为1。 若要停止显示消息，请将此值设置为0或删除此值。<br /><br /> 若要从 SharePoint 工具扩展将消息写入到 " **输出** " 窗口，请使用 sharepoint 项目服务。 有关详细信息，请参阅 [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。|
 
  如果你的扩展包含一个 SharePoint 命令，你可以创建并设置其他值以帮助对命令进行故障排除。 下表介绍了这些值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |AttachDebuggerToHostProcess|REG_DWORD，它指定是否显示一个对话框，通过该对话框，可以在启动时将调试器附加到 *vssphost4.exe* 。 如果要调试的命令在启动后立即 vssphost.exe 执行，并且在执行命令之前没有足够的时间手动附加调试器，这会很有用。 若要显示该对话框， *vssphost4.exe* <xref:System.Diagnostics.Debugger.Break%2A> 在启动时调用方法。<br /><br /> 若要启用此行为，请将此值设置为1。 若要禁用此行为，请将此值设置为0或删除此值。<br /><br /> 如果将此值设置为 "1"，则可能还需要增加 HostProcessStartupTimeout 值，以便为自己分配足够的时间来附加调试器，然后 Visual Studio 会要求 *vssphost4.exe* 指示它已成功启动。|
 |ChannelOperationTimeout|REG_DWORD，它指定 Visual Studio 等待 SharePoint 命令执行的时间（以秒为单位）。 如果命令未在时间执行，则 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 会引发。<br /><br /> 默认值为 120 秒。|

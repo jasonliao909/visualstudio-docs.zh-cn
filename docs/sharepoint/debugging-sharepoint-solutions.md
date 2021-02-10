@@ -14,15 +14,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, debugging
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0bd1996f5d42561cb2d44879ab702d6b6c4b4f7
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: f1a6abfbafcbafb9daa52fdc6af85156700efef7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672855"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948942"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以使用调试器调试 SharePoint 解决方案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 开始调试时，将 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目文件部署到 sharepoint 服务器，然后在 Web 浏览器中打开 sharepoint 站点的实例。 以下各节说明如何在中调试 SharePoint 应用程序 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。

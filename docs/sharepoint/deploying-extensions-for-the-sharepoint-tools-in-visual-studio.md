@@ -12,15 +12,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, deploying extensions
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9c8b05b5cb74a28157436f95f01992515c716e6a
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 6a899bcc132b9229c1046dee5793278f79ea9e5d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672673"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948890"
 ---
 # <a name="deploy-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中部署 SharePoint 工具扩展
 
@@ -94,7 +94,7 @@ ms.locfileid: "94672673"
 
     - 如果扩展程序集以文件的形式包含在项目中，请选择 **"文件系统"**。 在 " **路径** " 列表中，输入扩展程序集文件的完整路径，或使用 " **浏览** " 按钮查找并选择程序集文件。
 
-5. 选择 **“确定”** 按钮。
+5. 选择“确定”  按钮。
 
 #### <a name="to-include-a-sharepoint-command-assembly"></a>包括 SharePoint 命令程序集
 
@@ -114,7 +114,7 @@ ms.locfileid: "94672673"
 
     - 如果命令程序集以文件的形式包含在项目中，请选择 **"文件系统"**。 在 " **路径** " 列表中，输入扩展程序集文件的完整路径，或使用 " **浏览** " 按钮查找并选择程序集文件。
 
-5. 选择 **“确定”** 按钮。
+5. 选择“确定”  按钮。
 
 #### <a name="to-include-a-template-that-you-create"></a>包含您创建的模板
 
@@ -210,7 +210,7 @@ ms.locfileid: "94672673"
 
     - 如果向导程序集以文件的形式包含在项目中，请选择 **"文件系统"**。 在 " **路径** " 字段中，输入程序集文件的完整路径，或使用 " **浏览** " 按钮查找并选择程序集。
 
-5. 选择 **“确定”** 按钮。
+5. 选择“确定”  按钮。
 
 ### <a name="related-walkthroughs"></a>相关演练
 
