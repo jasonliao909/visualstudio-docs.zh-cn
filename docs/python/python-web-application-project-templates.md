@@ -5,17 +5,17 @@ ms.date: 01/28/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 572e02d614f0c6b5f782d683ff7e42e954b54441
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: 1f6376978826afc2946cfac25ab635d0b7533dc4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91352331"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939534"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -107,11 +107,11 @@ Microsoft Azure 云服务支持 requirements.txt 文件   。 有关详细信息
 
 “Bottle Web 项目”  模板包括执行必要配置的 Boilerplate 代码。 导入的 Bottle 应用可能不包含此代码，但在这种情况下，以下设置将使用已安装的 `bottle` 模块启动应用：
 
-- **运行服务器命令**组：
+- **运行服务器命令** 组：
   - **命令**：`bottle`（模块）
   - **参数**：`--bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
-- **调试服务器命令**组：
+- **调试服务器命令** 组：
   - **命令**：`bottle`（模块）
   - **参数**：`--debug --bind=%SERVER_HOST%:%SERVER_PORT% {StartupModule}:app`
 
@@ -121,14 +121,14 @@ Microsoft Azure 云服务支持 requirements.txt 文件   。 有关详细信息
 
 Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建应用后，可使用[“基于现有 Python 代码”](managing-python-projects-in-visual-studio.md#create-a-project-from-existing-files)模板将其导入。 这样操作后，选择“通用 Web 项目”自定义来配置选项  。 这些设置假设将 Pyramid 安装到 `..\env` 处的虚拟环境。
 
-- **调试**组：
+- **调试** 组：
   - **服务器端口**：6543（或 .ini 文件中配置的任何内容  ）
 
-- **运行服务器命令**组：
+- **运行服务器命令** 组：
   - 命令：`..\env\scripts\pserve-script.py`（脚本）
   - 参数：`Production.ini`
 
-- **调试服务器命令**组：
+- **调试服务器命令** 组：
   - 命令：`..\env\scripts\pserve-script.py`（脚本）
   - 参数：`Development.ini`
 

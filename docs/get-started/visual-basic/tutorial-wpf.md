@@ -11,15 +11,15 @@ dev_langs:
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc57e3d104d7f8427e97eb6b3dd97ca3e89bc49e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85419206"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99944363"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
@@ -67,7 +67,7 @@ ms.locfileid: "85419206"
 
      ![在菜单栏上，依次选择“文件”、“新建”和“项目”](../media/exploreide-filenewproject.png)
 
-2. 在“新项目”**** 对话框中，依次选择“已安装”**** > “Visual Basic”**** > “Windows 桌面”**** 类别和“WPF 应用(.NET Framework)”**** 模板。 将项目命名为“HelloWPFApp”并选择“确定”。
+2. 在“新项目”对话框中，依次选择“已安装” > “Visual Basic” > “Windows 桌面”类别和“WPF 应用(.NET Framework)”模板。 将项目命名为“HelloWPFApp”并选择“确定”。
 
      ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/exploreide-newproject-vb.png)
 
@@ -81,7 +81,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 1. 打开 Visual Studio 2019。
 
-2. 在“创建新项目”**** 屏幕上，搜索“WPF”，选择“WPF App (.NET Framework)”****，然后选择“下一步”****。
+2. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF App (.NET Framework)”，然后选择“下一步”。
 
    ![Visual Studio“新建项目”对话框中的 WPF 应用模板](media/vs-2019/exploreide-newprojectvb-vs2019.png)
 
@@ -104,7 +104,7 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 ## <a name="design-the-user-interface-ui"></a>设计用户界面 (UI)
 
-如果设计器未打开，请在“解决方案资源管理器”中选择“Greetings.xaml”，然后按“Shift+F7”打开设计器**************。
+如果设计器未打开，请在“解决方案资源管理器”中选择“Greetings.xaml”，然后按“Shift+F7”打开设计器。
 
 我们会将三种类型的控件添加到此应用程序：一个 <xref:System.Windows.Controls.TextBlock> 控件、两个 <xref:System.Windows.Controls.RadioButton> 控件和一个 <xref:System.Windows.Controls.Button> 控件。
 
@@ -176,7 +176,7 @@ XAML 标记应如下面的示例所示：
 
 这一步将设置要默认选中的 HelloButton，这样两个单选按钮中始终有一个处于选中状态。
 
-在 XAML 视图中，找到 HelloButton 的标记并添加“IsChecked”**** 属性：
+在 XAML 视图中，找到 HelloButton 的标记并添加“IsChecked”属性：
 
 ```xaml
 IsChecked="True"
@@ -198,11 +198,11 @@ IsChecked="True"
 
 ### <a name="add-code-to-the-display-button"></a>向显示按钮添加代码
 
-此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 要创建此行为，需将代码添加到 Greetings.xaml.vb** 或 Greetings.xaml.cs** 中的 `Button_Click` 事件。
+此应用程序运行时，用户选择单选按钮，再选择“显示” 按钮之后，会显示一个消息框。 选择 Hello 将显示一个消息框，选择 Goodbye 将显示另一个。 要创建此行为，需将代码添加到 Greetings.xaml.vb 或 Greetings.xaml.cs 中的 `Button_Click` 事件。
 
 1. 在设计图面上，双击 **“显示”** 按钮。
 
-     此时，“Greetings.xaml.vb”** 打开，光标位于 `Button_Click` 事件上。
+     此时，“Greetings.xaml.vb”打开，光标位于 `Button_Click` 事件上。
 
     ```vb
     Private Sub Button_Click(sender As Object, e As RoutedEventArgs)
@@ -244,7 +244,7 @@ IsChecked="True"
 
 #### <a name="specify-greetingsxaml-as-the-startup-uri"></a>将 Greetings.xaml 指定为启动 URI
 
-1. 在“解决方案资源管理器”**** 中，打开“Application.xaml”** 文件。
+1. 在“解决方案资源管理器”中，打开“Application.xaml”文件。
 
 2. 将 `StartupUri="MainWindow.xaml"` 更改为 `StartupUri="Greetings.xaml"`，然后保存更改。
 
@@ -265,9 +265,9 @@ IsChecked="True"
 
 #### <a name="add-breakpoints"></a>添加断点
 
-1. 打开“Greetings.xaml.vb”**，并选择以下行：`MessageBox.Show("Hello.")`
+1. 打开“Greetings.xaml.vb”，并选择以下行：`MessageBox.Show("Hello.")`
 
-2. 通过按 F9 或从菜单选择“调试”****，然后选择“切换断点”******** 添加断点。
+2. 通过按 F9 或从菜单选择“调试”，然后选择“切换断点”添加断点。
 
    编辑器窗口最左侧边距中该代码行附近将显示一个红圈。
 

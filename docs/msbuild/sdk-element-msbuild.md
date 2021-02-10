@@ -16,15 +16,15 @@ helpviewer_keywords:
 - <Sdk> element [MSBuild]
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b348cf2af76c439a28bbb58c0050cc3d458d5457
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: cd5f66cc6500a3320e0da962985f5b7fff1e86dc
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048367"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937896"
 ---
 # <a name="sdk-element-msbuild"></a>Sdk 元素 (MSBuild)
 
@@ -45,7 +45,7 @@ ms.locfileid: "93048367"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需的特性。<br /><br /> 项目 SDK 的名称。|
 |`Version`|可选特性。<br /><br /> 项目 SDK 的版本|

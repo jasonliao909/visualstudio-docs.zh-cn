@@ -6,17 +6,17 @@ ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d75bb4f5274201b7cf745ff8c7c6f27b869855c3
-ms.sourcegitcommit: 7b60e81414a82c6d34f6de1a1f56115c9cd26943
+ms.openlocfilehash: c83516891a33a026399a6e5fcfc2458b5e03a0bd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2020
-ms.locfileid: "81445007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945430"
 ---
 # <a name="publish-a-nodejs-application-to-azure-linux-app-service"></a>将 Node.js 应用程序发布到 Azure（Linux 应用服务）
 
@@ -41,10 +41,10 @@ Linux 应用服务部署 Linux Docker 容器来运行 Node.js 应用程序（不
 * 须安装 Visual Studio 且具有 Node.js 开发工作负载。
 
     ::: moniker range=">=vs-2019"
-    如果尚未安装 Visual Studio 2019，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    如果尚未安装 Visual Studio 2019，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    如果尚未安装 Visual Studio 2017，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    如果尚未安装 Visual Studio 2017，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
     ::: moniker-end
 
     如果需要安装工作负载但已有 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“Node.js 开发”工作负载，然后选择“修改” 。

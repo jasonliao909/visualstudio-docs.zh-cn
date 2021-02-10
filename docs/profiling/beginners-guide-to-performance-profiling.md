@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: caac02510d2fce95fa67340d2061341ed77ac13e
-ms.sourcegitcommit: 14637be49401f56341c93043eab560a4ff6b57f6
+ms.openlocfilehash: a18302067749e3b4fc70b08519056dc391d3dca4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/14/2020
-ms.locfileid: "90075426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936881"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 
@@ -55,7 +55,7 @@ ms.locfileid: "90075426"
 
      ![显示诊断工具](../profiling/media/diag-tools-select-tool.png "DiagToolsSelectTool")
 
-     我们将主要查看 CPU 使用率，因此请确保已启用**CPU 使用率**（默认情况下已启用）。
+     我们将主要查看 CPU 使用率，因此请确保已启用 **CPU 使用率**（默认情况下已启用）。
 
 5. 依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
 
@@ -114,10 +114,10 @@ ms.locfileid: "90075426"
     在此视图中，所选函数显示在标题和“当前函数”框中（本例中为 GetNumber）。 调用当前函数的函数显示在“调用函数”左下方，当前函数调用的任何函数均显示在右侧的“被调用函数”框中。 （可选择其中一个框来更改当前函数。）
 
     此视图显示总时间及函数完成执行所用的总体应用运行时间的百分比。
-    **函数体**还显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 （在此示例中，共花费 2389 毫秒，函数体内花费 2367 毫秒，其余 22 毫秒花费在此函数调用的外部代码中）。
+    **函数体** 还显示函数体中所用的时间总量（及百分比），其中不包括调用和被调用函数中所用的时间。 （在此示例中，共花费 2389 毫秒，函数体内花费 2367 毫秒，其余 22 毫秒花费在此函数调用的外部代码中）。
 
     > [!TIP]
-    > **函数体**中的较高值可能指示函数自身内部的性能瓶颈。
+    > **函数体** 中的较高值可能指示函数自身内部的性能瓶颈。
 
 3. 若要按调用函数的顺序来查看较高级别的视图，请在顶部窗格的下拉列表中选择“调用关系树”。
 
@@ -141,9 +141,9 @@ ms.locfileid: "90075426"
 
     - **总 CPU** 指示函数及由它调用的任何函数完成的工作量。 较高的总 CPU 值指向总体成本最高的函数。
 
-    - **自 CPU**指示函数体中的代码完成的工作量，不包括由它调用的函数完成的工作。 较高的**自 CPU** 值可能指示函数自身内部的性能瓶颈。
+    - **自 CPU** 指示函数体中的代码完成的工作量，不包括由它调用的函数完成的工作。 较高的 **自 CPU** 值可能指示函数自身内部的性能瓶颈。
 
-    - **模块**包含函数的模块名或包含 [外部代码] 节点中的函数的模块数量。
+    - **模块** 包含函数的模块名或包含 [外部代码] 节点中的函数的模块数量。
 
     ::: moniker range=">=vs-2019"
     要查看调用树视图中使用最高 CPU 百分比的函数调用，请单击“展开热路径”。

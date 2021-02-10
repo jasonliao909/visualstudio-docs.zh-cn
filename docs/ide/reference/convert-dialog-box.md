@@ -13,20 +13,20 @@ helpviewer_keywords:
 ms.assetid: 56f23ef7-17c4-4d76-9ead-982bbcd42061
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f095d05a873eb59b0f6453ddb796fc2a183705e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: e901d2e2286f5c4ac19bc5cdea9606867e23ff06
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040805"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99936764"
 ---
 # <a name="convert-dialog-box"></a>“转换”对话框
 
 “转换”对话框曾在以前版本的 Visual Studio 中使用，现已被弃用。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Porting, Migrating, and Upgrading Visual Studio Projects](../../porting/port-migrate-and-upgrade-visual-studio-projects.md)

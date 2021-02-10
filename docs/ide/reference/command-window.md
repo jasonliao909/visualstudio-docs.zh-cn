@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 48711628-1909-4713-a73e-d7b714c77f8a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e133f20464fb19752c7616d2fab1a631fa802c9
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: fba1c12743035c397780db64939dec8195a75afd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040883"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942849"
 ---
 # <a name="command-window"></a>“命令”窗口
 “命令”窗口用于直接在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中执行命令或别名。 可以执行菜单命令和不在任何菜单上出现的命令。 若要显示“命令”窗口，请在“视图”菜单中选择“其他窗口”，然后选择“命令窗口”。

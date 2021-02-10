@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 0374c8c6-57a3-4cfe-8047-2effef5ff5dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9249e1527a7dd2ae720ab575b1d443c10b85376e
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 85bdd804e25dfa91b649e95daacef4bfb322df64
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150049"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940561"
 ---
 # <a name="tips-for-debugging-threads-in-native-code"></a>调试本机代码中的线程时的提示
 下面是在调试本机代码中的线程时可以使用的一些提示：

@@ -8,13 +8,13 @@ helpviewer_keywords:
 - Windows Forms Designer, get started
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
-ms.openlocfilehash: d4d3c0965d638c9e048cef29d7f1b535a54e54a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+manager: jmartens
+ms.openlocfilehash: 5803530290988affd6cfbb8342f3b1d545238985
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493473"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99947841"
 ---
 # <a name="tutorial-get-started-with-windows-forms-designer"></a>教程：Windows 窗体设计器入门
 
@@ -221,9 +221,9 @@ DemoCalculator 控件包含多个 Windows 窗体控件。 在此过程中，将�
 
    - 将 sixButton 控件文本属性更改为“6”
 
-   - 将 multiplicationButton 控件文本属性更改为 * *\** _（星号）
+   - 将 multiplicationButton 控件文本属性更改为“\*”（星号）
 
-   - 将 oneButton 控件文本属性更改为 _ *1**
+   - 将 oneButton 控件文本属性更改为“1”
 
    - 将 twoButton 控件文本属性更改为“2”
 

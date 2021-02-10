@@ -3,19 +3,19 @@ title: 提高 .NET 开发工作效率
 description: 概述导航、代码分析、单元测试和其他功能，帮助提升编写 .NET 代码的速度和质量。
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.date: 11/21/2019
 ms.topic: conceptual
 helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: 23b50221845cf2b02b963c98f912a218a60630c6
-ms.sourcegitcommit: c025a5e2013c4955ca685092b13e887ce64aaf64
+ms.openlocfilehash: 036c59e54ba2e2068cf1bfa7eb05b67059cdf855
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/02/2020
-ms.locfileid: "91658407"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99942940"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
