@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a48bd7ff011b6e8de6e9321a00b6bc20d54f0f0b
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 97ac7dc9afbd3b740c95a7e76a30836e938eaeaf
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995910"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968497"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>当断点绑定或变为未绑定断点时
 当对 [IDebugPendingBreakpoint2：： CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 方法进行调用时，如果无法绑定断点，则断点的绑定时间和创建时间不同。

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: d1796f20-523b-4e0d-8ac3-ca87f3b5a9b6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 326588259203224d3f70b505af8437af22930faa
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: e306f6453ca3abbc2ad881821254ca88a160d01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94672341"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967275"
 ---
 # <a name="previewimage-element-visual-studio-templates"></a> (Visual Studio 模板的 PreviewImage 元素) 
 为将在 " **新建项目** " 或 " **添加新项** " 对话框中显示的预览图像指定预览图像作为文件名。
@@ -53,7 +53,7 @@ ms.locfileid: "94672341"
 
  文本必须是表示文件名的字符串。
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  `PreviewImage` 是可选元素。
 
 ## <a name="see-also"></a>请参阅

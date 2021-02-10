@@ -15,15 +15,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, features
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b4846d79af7a031970e8870626f88450e8a3e647
-ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94903658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959943"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>如何：自定义 SharePoint 功能
   您可以使用 Visual Studio 中的功能设计器来创建和自定义 SharePoint 功能。 例如，可以设置功能范围并将其他功能添加为依赖项。 默认情况下，当你在解决方案资源管理器或 SharePoint 包资源管理器中添加新功能时，将打开功能设计器。

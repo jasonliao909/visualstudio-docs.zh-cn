@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e3ac8dc0c229f0c0a00bd22131251c71893224
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 930166d84e6203b0d1d62ef661e768f0f14e60f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847125"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961048"
 ---
 # <a name="required-port-supplier-interfaces"></a>必需的端口提供商接口
 端口供应商必须实现 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 接口。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -82,5 +82,5 @@ ms.locfileid: "96847125"
 
   为 SDM 附加到此程序提供了一种方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [实现端口供应商](../../extensibility/debugger/implementing-a-port-supplier.md)

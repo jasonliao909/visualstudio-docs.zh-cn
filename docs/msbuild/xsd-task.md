@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aef78460197796767ec1429179e5598d0f12dbc
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047204"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960320"
 ---
 # <a name="xsd-task"></a>XSD 任务
 
@@ -64,7 +64,7 @@ ms.locfileid: "93047204"
 
      指定要用于生成的代码的编程语言。
 
-     从 **CS** （默认情况下为 C#）、 **VB** (Visual Basic) 或 **JS** (JScript) 中进行选择。 也可指定实现 `System.CodeDom.Compiler.CodeDomProvider Class` 的类的完全限定名。
+     从 **CS**（默认情况下为 C#）、**VB** (Visual Basic) 或 **JS** (JScript) 中进行选择。 也可指定实现 `System.CodeDom.Compiler.CodeDomProvider Class` 的类的完全限定名。
 
 - **命名空间**
 
