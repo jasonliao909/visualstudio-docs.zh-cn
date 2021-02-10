@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document properties [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4897008f102600bd222a21761237acc4bcb62a30
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844291"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964311"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>如何：创建和修改自定义文档属性
   上面列出的 Microsoft Office 应用程序提供与文档存储在一起的内置属性。 此外，如果要将其他信息与文档一起存储，可以创建和修改自定义文档属性。
@@ -39,7 +39,7 @@ ms.locfileid: "96844291"
 ## <a name="robust-programming"></a>可靠编程
  尝试访问未定义的属性的 `Value` 属性会引发异常。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [如何：读取和写入文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)

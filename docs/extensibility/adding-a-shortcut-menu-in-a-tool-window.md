@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e14d948bf5d4b637002ca1f2ec8be37b64dc22b
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597868"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951532"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具窗口中添加快捷菜单
 本演练将快捷菜单放置在工具窗口中。 快捷菜单是在用户右键单击按钮、文本框或窗口背景时显示的菜单。 快捷菜单上的命令与其他菜单或工具栏上的命令具有相同的行为。 若要支持快捷菜单，请在 *.vsct* 文件中指定它并显示，以响应鼠标右键单击。
@@ -31,7 +31,7 @@ ms.locfileid: "95597868"
 
 或者，如果快捷菜单不会访问 Visual Studio 功能，则可以 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 在用户控件中使用 XAML 元素的属性。 有关详细信息，请参阅 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>创建工具窗口快捷菜单包

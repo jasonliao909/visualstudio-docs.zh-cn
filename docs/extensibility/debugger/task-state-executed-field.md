@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa637b8bc29f53ca6dde1b13310d83a5e176408f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 551ac7af1e331f9c1e57b078be4924994ebe8a3c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80712704"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968549"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED 字段
 该任务正在运行，但尚未完成。
@@ -35,5 +35,5 @@ ms.locfileid: "80712704"
 ## <a name="remarks"></a>备注
  如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

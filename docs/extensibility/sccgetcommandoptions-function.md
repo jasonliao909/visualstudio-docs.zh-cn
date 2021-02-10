@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeefa26422476ca40e782df3ff35eee9d429a149
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700835"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965195"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 此函数提示用户输入给定命令的高级选项。
@@ -33,7 +33,7 @@ SCCRTN SccGetCommandOptions(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +53,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级选项。|
@@ -74,7 +74,7 @@ SCCRTN SccGetCommandOptions(
 
  如果用户在同一对话框中再次单击 " **高级** "，则 IDE 将 `SccGetCommandOptions` 再次调用函数而不进行更改 `ppvOptions` ，以便将结构传递回插件。 这使插件能够将其对话框重新初始化为用户以前设置的值。 在返回之前，该插件会就地修改结构。
 
- 最后，当用户在 IDE 的 "**获取**" 对话框中单击 **"确定"** 时，ide 将调用[SccGet](../extensibility/sccget-function.md)，同时传递中返回的 `ppvOptions` 包含高级选项的结构。
+ 最后，当用户在 IDE 的 "**获取**" 对话框中单击 **"确定"** 时，ide 将调用 [SccGet](../extensibility/sccget-function.md)，同时传递中返回的 `ppvOptions` 包含高级选项的结构。
 
 > [!NOTE]
 > `SCC_COMMAND_OPTIONS`当 IDE 显示 "**选项**" 对话框时，使用该命令来设置控制集成工作方式的首选项。 如果源代码管理插件希望提供其自己的首选项对话框，它可以在 IDE 的 "首选项" 对话框中的 " **高级** " 按钮上显示。 该插件仅负责获取和保存此信息;IDE 不会使用或修改它。

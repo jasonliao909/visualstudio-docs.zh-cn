@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 8b8ab77f-a134-495c-be42-3bc51aa62dfb
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2fa0a7feb85437cc8173d52695ddb1ba0d2c06b7
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: de941be8c5535a2cef5995e3be9954ee32dcdc71
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914096"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952442"
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器以 VSPackage 的形式实现并管理整个调试会话。 调试会话包含以下元素：
@@ -40,7 +40,7 @@ ms.locfileid: "96914096"
 
   ![调试组件概述](../../extensibility/debugger/media/dbugcompovrview.gif "DBugCompOvrview")
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [调试包](../../extensibility/debugger/debug-package.md) 讨论在 shell 中运行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 并处理所有 UI 的调试包。
 
  [进程调试管理器](../../extensibility/debugger/process-debug-manager.md) 概述 PDM 的功能，这是可以调试的进程的管理器。

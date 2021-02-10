@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
-manager: jillfra
+manager: jmartens
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 03721f2aedd231dd9d4c4edaadf5eeb3a89389c2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 05dda944ab2aecd429386e0e4c40646d21e9a3d4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96994194"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966404"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>度量扩展对启动的影响
 
@@ -178,6 +178,6 @@ PerfView 提供了有关如何在其自己的 "帮助" 菜单下读取线程时�
 
 将加载的程序集的数量降到最少很重要，因为每个附加的程序集都涉及额外的磁盘 i/o，这会使计算机速度变慢的启动。
 
-## <a name="summary"></a>“摘要”
+## <a name="summary"></a>总结
 
 Visual Studio 的启动是我们不断获得反馈的领域之一。 如前所述，我们的目标是让所有用户都拥有一致的启动体验，而不考虑它们所安装的组件和扩展。 我们想要与扩展所有者合作，帮助我们实现这一目标。 上述指南应该有助于理解扩展对启动的影响，并且无需以异步方式自动加载或加载它来最大程度地降低对用户工作效率的影响。

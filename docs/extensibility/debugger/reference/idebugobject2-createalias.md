@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 54a05920-5d13-4f67-962b-d1a7f013dff9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03564e8b81eb4e11a2cd4f25e1047d326d62b21b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 48badc2f418dec9fd34906b6925db1c2a9dfd490
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953508"
 ---
 # <a name="idebugobject2createalias"></a>IDebugObject2::CreateAlias
 为此对象创建唯一的 ID 或别名，或返回现有别名。
@@ -28,18 +28,18 @@ ms.locfileid: "80726292"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT CreateAlias(
-   IDebugAlias** ppAlias
+HRESULT CreateAlias(
+   IDebugAlias** ppAlias
 );
 ```
 
 ```csharp
-int CreateAlias(
-   out IDebugAlias ppAlias
+int CreateAlias(
+   out IDebugAlias ppAlias
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppAlias`\
 弄新的 (或现有的) 别名。
 

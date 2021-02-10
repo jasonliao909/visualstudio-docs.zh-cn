@@ -13,15 +13,15 @@ helpviewer_keywords:
 - deploying applications [Office development in Visual Studio], troubleshooting
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b70b03e8342564de828059d1a335f6347c19b5a3
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 59b5e36eb02ff2c8db9e2e206a4040757e130716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97522972"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968835"
 ---
 # <a name="troubleshoot-office-solution-deployment"></a>Office 解决方案部署疑难解答
   本主题包含有关如何解决在部署 Office 解决方案时可能遇到的常见问题的信息。

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - SharePoint development in Visual Studio, extending project items
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3a360b6a336f64920c0144f742e98a64282eeeec
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 74d57ae4beca074fbf7711ea3d732d903d8faa4b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970411"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952676"
 ---
 # <a name="walkthrough-extend-a-sharepoint-project-item-type"></a>演练：扩展 SharePoint 项目项类型
   您可以使用 " **业务数据连接模型** " 项目项在 SharePoint 中创建业务数据连接 (BDC) 服务的模型。 默认情况下，当您使用此项目项创建模型时，不会向用户显示模型中的数据。 还必须在 SharePoint 中创建外部列表，以使用户能够查看数据。
@@ -43,7 +43,7 @@ ms.locfileid: "95970411"
 
 - 支持的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
   以下概念的知识非常有用，但不是必需的，无法完成本演练：
 
@@ -112,7 +112,7 @@ ms.locfileid: "95970411"
 
     - GenerateExternalDataLists
 
-2. 选择 BdcProjectItemExtension 项目，然后在菜单栏上选择 "项目" " **Project**  >  **添加引用**"。
+2. 选择 BdcProjectItemExtension 项目，然后在菜单栏上选择 "项目" "   >  **添加引用**"。
 
 3. 在 " **程序集** " 节点下，选择 " **框架** " 节点，并选中以下每个程序集对应的复选框：
 
@@ -124,7 +124,7 @@ ms.locfileid: "95970411"
 
     - VisualStudio
 
-5. 选择 **“确定”** 按钮。
+5. 选择“确定”  按钮。
 
 ## <a name="define-the-project-item-extension"></a>定义项目项扩展
  创建一个类，用于定义 **业务数据连接模型** 项目项的扩展。 为了定义扩展，类实现了 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 接口。 每当要扩展现有类型的项目项时都实现此接口。
@@ -154,7 +154,7 @@ ms.locfileid: "95970411"
 
 #### <a name="to-build-the-solution"></a>生成解决方案
 
-1. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+1. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 ## <a name="create-a-vsix-package-to-deploy-the-project-item-extension"></a>创建 VSIX 包以部署项目项扩展
  若要部署扩展，请使用解决方案中的 VSIX 项目创建 VSIX 包。 首先，通过修改 VSIX 项目中包含的 source.extension.vsixmanifest 文件来配置 VSIX 包。 然后，通过生成解决方案创建 VSIX 包。
@@ -184,7 +184,7 @@ ms.locfileid: "95970411"
 
 8. 在 " **项目** " 列表中，选择 " **BdcProjectItemExtension**"，然后选择 " **确定"** 按钮。
 
-9. 在菜单栏上，依次选择“生成” > “生成解决方案”   。
+9. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
 10. 请确保项目编译和生成时没有错误。
 

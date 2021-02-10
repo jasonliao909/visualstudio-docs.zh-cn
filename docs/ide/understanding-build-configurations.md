@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 934c727d-3a22-429c-bd13-3552cecf2e24
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d8b61275e8197c90bfba85cb1b4be680f3c1f1a
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 3c6037bd6ed3b7899ff00bce202df7707356683a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971396"
 ---
 # <a name="understand-build-configurations"></a>了解生成配置
 

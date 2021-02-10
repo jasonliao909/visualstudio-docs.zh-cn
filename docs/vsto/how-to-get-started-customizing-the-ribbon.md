@@ -14,15 +14,15 @@ helpviewer_keywords:
 - customizing the Ribbon, adding Ribbon to project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3974fe85a97226a920959b41256fa7e29923c9d1
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d82d059166b9efbb80ed6ce4cffcbb973235b01b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845942"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953911"
 ---
 # <a name="how-to-get-started-customizing-the-ribbon"></a>如何：开始自定义功能区
   若要自定义 Microsoft Office 应用程序的功能区，请向 Office 项目添加 **功能区 (可视化设计器)** 或 **功能区 (XML)** 项。
@@ -67,11 +67,11 @@ ms.locfileid: "96845942"
 
    - 为 Windows 或 DOS 保留的名称，如 ( "nul"、"aux"、"con"、"com1"、"lpt1" 等) 
 
-4. 单击 **“确定”** 。
+4. 单击“确定”。
 
    功能区项显示在 **解决方案资源管理器** 中。 有关后续步骤的信息，请参阅 [功能区概述](../vsto/ribbon-overview.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

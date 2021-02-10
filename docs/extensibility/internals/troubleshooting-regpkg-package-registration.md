@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eef67b86925bc38a317196bbf00860b75a6ee15c
-ms.sourcegitcommit: 19061b61759ce8e3b083a0e01a858e5435580b3e
+ms.openlocfilehash: 4b73f968d51cb15cde910a5bcbd7e541007f22fe
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97487707"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959462"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 包注册疑难解答
 > [!NOTE]
@@ -38,6 +38,6 @@ ms.locfileid: "97487707"
 
    RegPkg 的早期版本可以注册使用 Microsoft.VisualStudio.Shell.dll 程序集生成的包。 但是，它无法注册使用该程序集的更高版本生成的包。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [Visual Studio 故障排除](/troubleshoot/visualstudio/welcome-visual-studio/)

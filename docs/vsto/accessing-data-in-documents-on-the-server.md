@@ -12,15 +12,15 @@ helpviewer_keywords:
 - data access [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e436c7a30708fac0cf59c2e79100cc89dade84b2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847619"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965793"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上文档中的数据
   您可以对文档级自定义项中的数据进行编程，而不必使用 Microsoft Office Word 或 Microsoft Office Excel 的对象模型。 这意味着，你可以访问服务器上的文档中包含的数据，该服务器未安装 Word 或 Excel。 例如，服务器上的代码 (例如，在 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 页面) 可以自定义文档中的数据，并将自定义文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码会将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分开。 有关详细信息，请参阅 [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
@@ -59,7 +59,7 @@ ms.locfileid: "96847619"
 
     - 如果要自动序列化这些更改，请使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法。 此方法使用 **DiffGram** 格式对 <xref:System.Data.DataSet> <xref:System.Data.DataTable> 数据缓存中的数据集对象进行序列化。 **DiffGram** 格式确保将脱机文档中的数据缓存更改正确地发送到服务器。
 
-    - 如果要对缓存数据的更改执行自己的序列化，则可以直接写入到 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 属性。 如果使用 **DiffGram** <xref:System.Data.Common.DataAdapter> 对 <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> 或类型化数据集中的数据所做的更改更新数据库，请指定 DiffGram 格式。 否则， <xref:System.Data.Common.DataAdapter> 将通过添加新行而不是修改现有行来更新数据库。
+    - 如果要对缓存数据的更改执行自己的序列化，则可以直接写入到 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 属性。 如果使用 <xref:System.Data.Common.DataAdapter> 对 <xref:System.Data.DataSet> 、 <xref:System.Data.DataTable> 或类型化数据集中的数据所做的更改更新数据库，请指定 DiffGram 格式。 否则， <xref:System.Data.Common.DataAdapter> 将通过添加新行而不是修改现有行来更新数据库。
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>修改数据而不反序列化当前值
  在某些情况下，你可能想要修改缓存对象的值，而无需首先对当前值进行反序列化。 例如，如果要更改具有简单类型的对象（如字符串或整数）的值，或者如果要在 <xref:System.Data.DataSet> 服务器上的文档中初始化缓存，则可以执行此操作。 在这些情况下，可以使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法，无需先反序列化缓存对象的当前值。
@@ -79,7 +79,7 @@ ms.locfileid: "96847619"
 ## <a name="access-typed-datasets-in-the-cache"></a>访问缓存中的类型化数据集
  如果要从 Office 解决方案和 Office 外部的应用程序（例如 Windows 窗体应用程序或项目）访问类型化数据集中的数据， [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 则必须在两个项目中引用的单独程序集中定义类型化数据集。 如果使用 " **数据源配置** 向导" 或 " **数据集设计器** 向每个项目添加类型化数据集，则 .NET Framework 会将两个项目中的类型化数据集视为不同的类型。 有关创建类型化数据集的详细信息，请参阅 [在 Visual Studio 中创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [访问服务器上文档中的数据](../vsto/accessing-data-in-documents-on-the-server.md)
 - [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)

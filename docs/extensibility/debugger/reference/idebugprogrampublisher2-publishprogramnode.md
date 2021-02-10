@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df68e72ee8597805bf02cb9c6e1c3a0bcaf8a449
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c93ce91b664a1d0ccb13534eb6109538df46f35b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721665"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959540"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
  (DEs) 和会话调试管理器 (SDM) ，使程序节点可供调试引擎使用。
@@ -28,18 +28,18 @@ ms.locfileid: "80721665"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT PublishProgramNode(
+HRESULT PublishProgramNode(
    IDebugProgramNode2 *pProgramNode
 );
 ```
 
 ```csharp
-int PublishProgramNode(
-   IDebugProgramNode2 pProgramNode
+int PublishProgramNode(
+   IDebugProgramNode2 pProgramNode
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProgramNode`\
 中一个 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象，该对象表示要使其可用的程序节点。
 

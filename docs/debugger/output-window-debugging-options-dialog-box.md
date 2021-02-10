@@ -16,15 +16,15 @@ dev_langs:
 ms.assetid: d67387c2-39e9-4790-93bc-e41bff12fb9c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d7f74b0e490cf8b2baaa8818fa8f8eebb7842a30
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 3c92bada0777c01cd8999b30597999e55f113a2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975012"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891548"
 ---
 # <a name="output-window-debugging-options-dialog-box"></a>“选项”对话框 ->“调试”->“输出”窗口
 可以指定在“输出”窗口中显示哪些类型的调试信息。 若要显示这些选项，请打开“工具”菜单，单击“选项”，展开“调试”节点，再单击“输出窗口”   。

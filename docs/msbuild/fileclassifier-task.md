@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f4a57d60c6e1dae0c42e30dce856a147fda0226
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436896"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99957356"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 任务
 
@@ -37,9 +37,9 @@ ms.locfileid: "92436896"
 |`CLREmbeddedResource`|未使用。|
 |`CLRResourceFiles`|未使用。|
 |`CLRSatelliteEmbeddedResource`|未使用。|
-|`Culture`|可选 **String** 参数。<br /><br /> 指定生成的区域性。 如果生成不可本地化，则此值可能为 **Null** 。 如果为 **Null** ，默认值是 **CultureInfo.InvariantCulture** 返回的小写值。|
+|`Culture`|可选 **String** 参数。<br /><br /> 指定生成的区域性。 如果生成不可本地化，则此值可能为 **Null**。 如果为 **Null**，默认值是 **CultureInfo.InvariantCulture** 返回的小写值。|
 |`MainEmbeddedFiles`|可选的 **ITaskItem[]** 输出参数。<br /><br /> 指定嵌入到主程序集中的非本地化资源。|
-|`OutputType`|必需的 **String** 参数。<br /><br /> 指定要将指定源文件嵌入的文件类型。 有效值为 **exe** 、 **winexe** 或 **library** 。|
+|`OutputType`|必需的 **String** 参数。<br /><br /> 指定要将指定源文件嵌入的文件类型。 有效值为 **exe**、**winexe** 或 **library**。|
 |`SatelliteEmbeddedFiles`|可选的 **ITaskItem[]** 输出参数。<br /><br /> 指定嵌入区域性附属程序集中的可本地化文件，该区域性由 **Culture** 参数指定。|
 |`SourceFiles`|必需的 **ITaskItem[]** 参数。<br /><br /> 指定要分类的文件的列表。|
 

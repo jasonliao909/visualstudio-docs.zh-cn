@@ -15,15 +15,15 @@ helpviewer_keywords:
 - application development [Office development in Visual Studio], automating
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 81c2852a92124a7cf9fb6078b196982d22100be7
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 11a0db0e23cf5512a6568ba5b66e0c18e563bd12
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97528102"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962374"
 ---
 # <a name="how-to-target-office-applications-through-primary-interop-assemblies"></a>如何：通过主互操作程序集面向 Office 应用程序
   在创建新的 Office 项目时，Visual Studio 会自动添加对生成该项目所需的 Microsoft Office 主互操作程序集 (PIA) 的引用。 在以下方案中，必须添加对其他 PIA 的引用：
@@ -49,7 +49,7 @@ ms.locfileid: "97528102"
     > [!NOTE]
     > 在 Office 项目中，始终使用 "**添加引用**" 对话框的 " **.net** " 选项卡而不是 " **COM** " 选项卡添加对 office pia 的引用。有关详细信息，请参阅 [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
-4. 单击“确定”  。
+4. 单击“确定”。
 
      程序集名称出现在 **解决方案资源管理器** 的 "**引用**" 文件夹中。
 

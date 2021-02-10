@@ -5,17 +5,17 @@ description: 使用 Visual Studio 工作负载和组件 ID 为技术全面的测
 keywords: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 11/10/2020
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 62295e6b63ffd38d57d218d5f2458a48353db7f2
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 6c90c4ad91ec810a2e43c16bd69d95d66e862dee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437340"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868557"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio 核心编辑器（随附于 Visual Studio 团队资源管理器 2019）
 

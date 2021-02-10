@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f066dd687f4bfbb6b286667abe0bb67224a7b763
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 5963bcbfb74c6a7722c02b59459a6334d461b980
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891782"
 ---
 # <a name="message-options-dialog-box"></a>“消息选项”对话框
 使用此对话框可选择在[消息视图](../debugger/messages-view.md)中列出的消息。 若要显示此对话框，请在“监视”菜单中选择“日志消息” 。

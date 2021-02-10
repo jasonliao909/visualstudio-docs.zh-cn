@@ -12,19 +12,19 @@ f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.TypeScript.Linting
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f56586843bd95585581f29fd44af16c1ef2c892f
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 0458495920b603ebbfc2befb733bd8618cea5310
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947708"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932340"
 ---
 # <a name="options-dialog-box-text-editor--javascripttypescript--linting"></a>“选项”对话框：“文本编辑器”\>“JavaScript/TypeScript”\>“Linting”
 
-使用“选项”  对话框中的“Lint”  页，可以设置代码编辑器中的代码分析选项。 要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript/TypeScript” > “Linting”    。
+使用“选项”对话框中的“Lint”页，可以设置代码编辑器中的代码分析选项。 要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript/TypeScript” > “Linting”    。
 
 ## <a name="eslint-settings"></a>ESLint 设置
 

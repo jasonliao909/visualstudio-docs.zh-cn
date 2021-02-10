@@ -7,15 +7,15 @@ ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83d444cb5e3345d79ca6e1422982c0ecd37e4287
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: f1ab54ccb3820b3a03724c30d16f08b3e8a45493
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67825524"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933097"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>在 Visual Studio (Visual Studio Enterprise) 中，使用 IntelliTrace 单步后退来检查旧应用状态
 
@@ -95,9 +95,9 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
 
 仅事件模式下的 IntelliTrace 允许在调试器步骤发生时和断点处激活历史调试。 但是，IntelliTrace 只捕获已打开的“局部变量”和“自动”窗口中的数据，并且只捕获已展开的且在视图中的数据   。 在仅事件模式下，通常没有变量和复杂对象的完整视图。 此外，不支持在“监视”窗口中进行表达式求值和查看数据  。
 
-在事件和快照模式下，IntelliTrace 捕获应用程序进程（包括复杂对象）的全部快照。 在代码行上，可以看到如同在断点处停止时看到的信息（且之前是否已展开信息并不重要）。 查看快照时，还支持表达式求值。  
+在事件和快照模式下，IntelliTrace 捕获应用程序进程（包括复杂对象）的全部快照。 在代码行上，可以看到如同在断点处停止时看到的信息（且之前是否已展开信息并不重要）。 查看快照时，还支持表达式求值。  
 
-#### <a name="what-is-the-performance-impact-of-this-feature"></a>此功能对性能有何影响？ 
+#### <a name="what-is-the-performance-impact-of-this-feature"></a>此功能对性能有何影响？ 
 
 对总体单步执行性能的影响取决于应用程序。 拍摄快照大约耗用 30 毫秒。 拍摄快照时，为应用的进程创建分支且分支副本会挂起。 查看快照时，Visual Studio 将附加到进程的分支副本。 对于每个快照，Visual Studio 仅复制页表并将页设置为写入时复制。 如果堆上的对象在具有关联快照的调试器步骤之间更改，则将复制相应的页表，而产生最小的内存成本。 如果 Visual Studio 检测到拍摄快照内存不足，则不会拍摄。
 

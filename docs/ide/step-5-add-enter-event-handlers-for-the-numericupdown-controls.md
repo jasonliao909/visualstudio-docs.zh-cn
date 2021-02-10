@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 19dc77469a08821f5fb9775450bf080c0d49181b
-ms.sourcegitcommit: 4ae5e9817ad13edd05425febb322b5be6d3c3425
+ms.openlocfilehash: 876cdb3639c93e9a67316f5aaea4139f061efb17
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/11/2020
-ms.locfileid: "90036959"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99869006"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
 
@@ -35,13 +35,13 @@ ms.locfileid: "90036959"
 
      在加法题的 NumericUpDown 控件中，游标在“0”（零）旁边闪烁。
 
-2. 输入“3”****，然后注意此控件将显示“30”****。
+2. 输入“3”，然后注意此控件将显示“30”。
 
-3. 输入“5”****，然后请注意将显示“350”****，但一秒后将更改为“100”****。
+3. 输入“5”，然后请注意将显示“350”，但一秒后将更改为“100”。
 
-     在解决此问题之前，请先想想发生了什么事。 请考虑一下为什么当你输入“3”**** 时“0”**** 未消失，以及为什么“350”**** 会更改为“100”**** 但不是立即更改。
+     在解决此问题之前，请先想想发生了什么事。 请考虑一下为什么当你输入“3”时“0”未消失，以及为什么“350”会更改为“100”但不是立即更改。
 
-     此行为可能看似奇怪，但是考虑到代码的逻辑就可以说得通了。 选择“开始”按钮时，其“Enabled”属性设置为“False”，此按钮将显示为灰色且不可用。************ 您的程序会将当前选择（焦点）更改为具有最小 TabIndex 值的控件，即加法题的 NumericUpDown 控件。 当使用 Tab 键转到 NumericUpDown 控件时，光标将自动定位到此控件的起始位置，因此，你输入的数字将从左侧而不是右侧显示。 当指定的值大于“MaximumValue”属性的值（设置为 100）时，输入的数字将替换为该属性的值。****
+     此行为可能看似奇怪，但是考虑到代码的逻辑就可以说得通了。 选择“开始”按钮时，其“Enabled”属性设置为“False”，此按钮将显示为灰色且不可用。 您的程序会将当前选择（焦点）更改为具有最小 TabIndex 值的控件，即加法题的 NumericUpDown 控件。 当使用 Tab 键转到 NumericUpDown 控件时，光标将自动定位到此控件的起始位置，因此，你输入的数字将从左侧而不是右侧显示。 当指定的值大于“MaximumValue”属性的值（设置为 100）时，输入的数字将替换为该属性的值。
 
 ## <a name="to-add-an-enter-event-handler-for-a-numericupdown-control"></a>为 NumericUpDown 控件添加 Enter 事件处理程序
 
@@ -49,15 +49,15 @@ ms.locfileid: "90036959"
 
    ![属性工具栏中的“事件”按钮](media/control-properties-events.png)
 
-   “属性”对话框中的“事件”选项卡显示窗体中所选项的所有可响应（处理）的事件。******** 由于您选择了 NumericUpDown 控件，因此所列出的事件都与此控件相关。
+   “属性”对话框中的“事件”选项卡显示窗体中所选项的所有可响应（处理）的事件。 由于您选择了 NumericUpDown 控件，因此所列出的事件都与此控件相关。
 
-2. 选择“Enter”**** 事件，键入“`answer_Enter`”，再按 Enter**** 键。
+2. 选择“Enter”事件，键入“`answer_Enter`”，再按 Enter 键。
 
    ![输入事件处理程序方法名称](media/enter-event.png)
 
-   刚才已为 sum NumericUpDown 控件添加一个 Enter 事件处理程序，并将此处理程序命名为“answer_Enter”。****
+   刚才已为 sum NumericUpDown 控件添加一个 Enter 事件处理程序，并将此处理程序命名为“answer_Enter”。
 
-3. 在“answer_Enter”**** 事件处理程序的方法中，添加以下代码：
+3. 在“answer_Enter”事件处理程序的方法中，添加以下代码：
 
      [!code-vb[VbExpressTutorial3Step5_6#11](../ide/codesnippet/VisualBasic/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.vb)]
      [!code-csharp[VbExpressTutorial3Step5_6#11](../ide/codesnippet/CSharp/step-5-add-enter-event-handlers-for-the-numericupdown-controls_1.cs)]
@@ -70,7 +70,7 @@ ms.locfileid: "90036959"
 
 4. 在“Windows 窗体设计器”中，选择 difference“NumericUpDown”控件。
 
-5. 在“属性”对话框的“事件”页中，向下滚动到“Enter”事件，选择行末尾的下拉箭头，然后选择刚才添加的 `answer_Enter` 事件处理程序。************
+5. 在“属性”对话框的“事件”页中，向下滚动到“Enter”事件，选择行末尾的下拉箭头，然后选择刚才添加的 `answer_Enter` 事件处理程序。
 
 6. 对 product 和 quotient NumericUpDown 控件重复上述步骤。
 

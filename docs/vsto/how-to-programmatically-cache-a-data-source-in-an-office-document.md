@@ -15,15 +15,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0b739a7671f19b126b0566dfc8f4775a2c91063
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845007"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968939"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式在 Office 文档中缓存数据源
   可以通过调用 `StartCaching` 主机项（如、或）的方法，以编程方式将数据对象添加到文档中的数据缓存 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 通过调用主机项的方法，从数据缓存中删除数据对象 `StopCaching` 。
@@ -56,7 +56,7 @@ ms.locfileid: "96845007"
     > [!NOTE]
     > 不要 `StopCaching` 从 `Shutdown` 文档或工作表的事件的事件处理程序调用。 `Shutdown`当引发事件时，修改数据缓存的时间太晚。 有关事件的详细信息 `Shutdown` ，请参阅 [Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [缓存数据](../vsto/caching-data.md)
 - [如何：缓存数据以便脱机使用或在服务器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

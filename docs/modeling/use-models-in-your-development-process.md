@@ -8,15 +8,15 @@ helpviewer_keywords:
 - UML, using models
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dbc817ca7bdf08c4e5ceee79a1e1113b4dd26e0c
-ms.sourcegitcommit: 4d394866b7817689411afee98e85da1653ec42f2
+ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/12/2020
-ms.locfileid: "97361425"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959059"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -135,10 +135,10 @@ ms.locfileid: "97361425"
 |-|-|
 |**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [MSDN 如何实现视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 旗舰版) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![视频 ](../data-tools/media/playvideo.gif) [通道9： UML 与 Visual Studio 2010 的](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)链接<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 旗舰版) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
-|**博客**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
+|**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在敏捷开发中使用模型](/previous-versions/ff398061(v=vs.140))
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

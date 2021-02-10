@@ -13,15 +13,15 @@ helpviewer_keywords:
 - controls [Office development in Visual Studio], adding to worksheets
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 28b9f000c2e8517304387e2b203dfa7888b33d64
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 908660693abce2f2adf07d98e7f2a451a8f3c8e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527222"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99956589"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改工作表格式
   本演练演示如何使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 你将使用 Visual Studio 中的 Office 开发工具创建代码并将其添加到你的项目。 若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
@@ -68,24 +68,24 @@ ms.locfileid: "97527222"
 
 4. 请确保 "**属性**" 窗口的 "对象名称" 列表框中显示 " **Checkbox1** "，并更改以下属性：
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyBoldFont**|
-    |**文本**|**加粗**|
+    |**Text**|**加粗**|
 
 5. 将第二个复选框拖到或附近的单元格 **B4** 上，并更改以下属性：
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyItalicFont**|
-    |**文本**|**斜体**|
+    |**Text**|**斜体**|
 
 6. 将第三个复选框拖到单元格 **B6** 上或附近，并更改以下属性：
 
-    |properties|值|
+    |属性|值|
     |--------------|-----------|
     |**名称**|**applyUnderlineFont**|
-    |**文本**|**下划线**|
+    |**Text**|**划线**|
 
 7. 按住 **Ctrl** 键的同时选中所有三个复选框控件。
 
@@ -104,7 +104,7 @@ ms.locfileid: "97527222"
 
 2. 验证 "可编辑" 文本框中是否显示了 " **$B $9** "，并选择了 "单元格 **B9** "。 如果不是，请单击 "单元" **B9** 将其选中。
 
-3. 单击“确定”  。
+3. 单击“确定”。
 
 4. 单元格 **B9** 成为名为的范围 `NamedRange1` 。
 
@@ -112,7 +112,7 @@ ms.locfileid: "97527222"
 
 5. 请确保 "**属性**" 窗口的 "对象名称" 列表框中显示 " **NamedRange1** "，并更改以下属性：
 
-   |properties|值|
+   |属性|值|
    |--------------|-----------|
    |**名称**|**textFont**|
    |**Value2**|**单击复选框以更改此文本的格式设置。**|

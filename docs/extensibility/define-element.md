@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5aee74e3-de41-4dc6-9618-93e158af56dd
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a427371afe55b6ea4ee20f658e683b9dcdb8fbe2
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 2a2686abd8e8c703d8fb85009b3ba56070f166f0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968445"
 ---
 # <a name="define-element"></a>Define 元素
 定义符号名称和值对。 此符号可以通过条件属性来计算。 有关详细信息，请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。 另请参阅 [符号元素](../extensibility/symbols-element.md)。
@@ -37,7 +37,7 @@ ms.locfileid: "96996235"
 |特性|说明|
 |---------------|-----------------|
 |name|必需。 符号名称：<br /><br /> name = "Mode"|
-|值|必需。 符号的值：<br /><br /> 值 = "标准"|
+|value|必需。 符号的值：<br /><br /> 值 = "标准"|
 |条件|可选。 有关详细信息，请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素

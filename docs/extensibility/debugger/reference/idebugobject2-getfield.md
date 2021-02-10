@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: add6a6b5-e752-47dd-9613-29206ea809b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0cd44b655669adec6722bf85223f786210d37de
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 54f692fa85cfd8fa290a7f5c697a91e0366f8224
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726221"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953456"
 ---
 # <a name="idebugobject2getfield"></a>IDebugObject2::GetField
 获取此对象的类型。
@@ -28,18 +28,18 @@ ms.locfileid: "80726221"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetField(
- IDebugField** ppField
+HRESULT GetField(
+ IDebugField** ppField
 );
 ```
 
 ```csharp
-int GetField(
-   out IDebugField ppField
+int GetField(
+   out IDebugField ppField
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppField`\
 弄如果不是 null 值，则返回 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 

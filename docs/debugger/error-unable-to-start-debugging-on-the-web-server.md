@@ -23,15 +23,15 @@ helpviewer_keywords:
 - remote debugging, errors
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a0aa657abefa0638e62039cae8b6d15a33fdf51
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 94dcfdc05f2d852e1a433067b0a574444632195d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90851419"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870878"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -66,7 +66,7 @@ ms.locfileid: "90851419"
 
 ## <a name="unable-to-connect-to-the-webserver"></a><a name="unabletoconnect"></a> 无法连接到 Web 服务器
 
-- 是否在同一台计算机上运行 Visual Studio 和 Web 服务器，并使用**F5** (而不是**附加到进程**)进入调试？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试** 具体取决于你的项目类型。 对于 Web 窗体项目，打开**属性页 > 启动选项 > 服务器**。)
+- 是否在同一台计算机上运行 Visual Studio 和 Web 服务器，并使用 **F5** (而不是 **附加到进程**)进入调试？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开 **属性 > Web > 服务器** 或 **属性 > 调试** 具体取决于你的项目类型。 对于 Web 窗体项目，打开 **属性页 > 启动选项 > 服务器**。)
 
 - 否则，请重新启动应用程序池，然后重置 IIS。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
@@ -84,32 +84,32 @@ ms.locfileid: "90851419"
 检查[IIS 日志文件](https://support.microsoft.com/help/943891/the-http-status-code-in-iis-7-0--iis-7-5--and-iis-8-0)错误子代码和其他信息，以及此 IIS 7[博客文章](https://blogs.iis.net/tomkmvp/troubleshoot-a-403)。
 
 此外，下面是一些常见的错误代码和一些建议。
-- (403) 已禁止。 此错误有许多可能的原因，因此请检查您的日志文件和网站的 IIS 安全设置。 请确保服务器的 web.config 包含`debug=true`编译元素中。 请确保你的 Web 应用程序文件夹有正确的权限并验证你的应用程序池配置正确 （密码可能已更改）。 请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。 如果这些设置是否已正确和本地调试，还验证连接到正确的服务器类型和 URL (在**属性 > Web > 服务器**或**属性 > 调试**，具体取决于你的项目类型）。
+- (403) 已禁止。 此错误有许多可能的原因，因此请检查您的日志文件和网站的 IIS 安全设置。 请确保服务器的 web.config 包含`debug=true`编译元素中。 请确保你的 Web 应用程序文件夹有正确的权限并验证你的应用程序池配置正确 （密码可能已更改）。 请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。 如果这些设置是否已正确和本地调试，还验证连接到正确的服务器类型和 URL (在 **属性 > Web > 服务器** 或 **属性 > 调试**，具体取决于你的项目类型）。
 - (503) 服务器不可用。 应用程序池可能由于错误或配置更改而停止。 重启应用程序池。
 - (404) 未找到。 请确保应用程序池是针对正确的 ASP.NET 版本配置的。
 
 ## <a name="could-not-start-aspnet-debugging"></a><a name="aspnet"></a> 无法启动 ASP.NET 调试
 
 - 重启应用程序池并重置 IIS。 有关详细信息，请参阅[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
-- 如果正在 URL 重写，测试一个基本 web.config，没有 URL 重写的配置。 请参阅 **注意** 有关 URL 重写中的模块[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
+- 如果正在 URL 重写，测试一个基本 web.config，没有 URL 重写的配置。 请参阅 **注意** 有关 URL 重写中的模块 [检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
 ## <a name="the-debugger-cannot-connect-to-the-remote-computer"></a><a name="cannot_connect"></a> 调试器无法连接到远程计算机
 
-若要在本地进行调试，请在 Visual Studio 中打开项目属性，并确保将项目配置为连接到正确的 Web 服务器和 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于您的项目类型。)
+若要在本地进行调试，请在 Visual Studio 中打开项目属性，并确保将项目配置为连接到正确的 Web 服务器和 URL。 (打开 **属性 > Web > 服务器** 或 **属性 > 调试** 具体取决于您的项目类型。)
 
 进行本地调试时可能发生此错误，因为 Visual Studio 是一个 32 位应用程序中，需要使用 64 位版远程调试器来调试 64 位应用程序。 检查 IIS 上的应用程序池，确保“启用 32 位应用程序”设置为 `true`，重启 IIS 然后重试。
 
-此外，如果你使用HOSTS文件，请确保配置正确。 例如，HOSTS文件中必须包含相同的项目 URL 在项目属性中，**属性 > Web > 服务器**或**属性 > 调试**，具体取决于项目类型。
+此外，如果你使用HOSTS文件，请确保配置正确。 例如，HOSTS文件中必须包含相同的项目 URL 在项目属性中，**属性 > Web > 服务器** 或 **属性 > 调试**，具体取决于项目类型。
 
 ## <a name="see-help-for-common-configuration-errors-running-the-webpage-outside-of-the-debugger-may-provide-further-information"></a><a name="see_help"></a> 请参见有关常见配置错误的帮助。 在调试器外部运行网页可能会提供进一步的信息。
 
-- 是否在同一台计算机上运行 Visual Studio 和 Web 服务器？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开**属性 > Web > 服务器**或**属性 > 调试**具体取决于您的项目类型。)
+- 是否在同一台计算机上运行 Visual Studio 和 Web 服务器？ 打开项目属性，并确保将项目配置为连接到正确的 Web 服务器并启动 URL。 (打开 **属性 > Web > 服务器** 或 **属性 > 调试** 具体取决于您的项目类型。)
 
 - 如果这不起作用，或者你正在进行远程调试，请按照[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)中的步骤操作。
 
 ## <a name="operation-not-supported-unknown-error-errornumber"></a><a name="operation_not_supported"></a> 不支持此操作。 未知错误：错误号
 
-如果正在 URL 重写，测试一个基本 web.config，没有 URL 重写的配置。 请参阅 **注意** 有关 URL 重写中的模块[检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
+如果正在 URL 重写，测试一个基本 web.config，没有 URL 重写的配置。 请参阅 **注意** 有关 URL 重写中的模块 [检查 IIS 配置](#vxtbshttpservererrorsthingstocheck)。
 
 ## <a name="check-your-iis-configuration"></a><a name="vxtbshttpservererrorsthingstocheck"></a> 检查 IIS 配置
 

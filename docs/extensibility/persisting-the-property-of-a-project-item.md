@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72de98e08581b105322b07390d85b95c06b1083c
-ms.sourcegitcommit: dd96a95d87a039525aac86abe689c30e2073ae87
+ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97862696"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967418"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保留项目项的属性
 你可能希望保留添加到项目项的属性，例如源文件的作者。 可以通过将属性存储在项目文件中来实现此目的。

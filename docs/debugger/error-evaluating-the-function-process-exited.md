@@ -6,15 +6,15 @@ f1_keywords:
 - vs.debug.error.process_exit_during_func_eval
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 97751ae2cbc44429bc1c0fb363366faa830beb68
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 07891e5bcbcab35a4ec5652676a014b87dd32d43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852727"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871632"
 ---
 # <a name="error-the-target-process-exited-with-code-39code39-while-evaluating-the-function-39function39"></a>错误：评估函数“function”时，目标进程退出并生成代码“code”
 
@@ -28,9 +28,9 @@ ms.locfileid: "90852727"
 
 此问题有两个可能的解决方案。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解决方法 #1：阻止调试器调用 getter 属性或 ToString 方法 
+### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解决方法 #1：阻止调试器调用 getter 属性或 ToString 方法 
 
-错误消息将告诉你调试器尝试调用的函数的名称。 使用此函数的名称，你可以尝试从**即时**窗口重新计算该函数以调试该求值。 从**即时**窗口求值可以进行调试，因为与**自动/局部变量/监视**窗口的隐式求值不同，调试器将在未经处理的异常处中断。
+错误消息将告诉你调试器尝试调用的函数的名称。 使用此函数的名称，你可以尝试从 **即时** 窗口重新计算该函数以调试该求值。 从 **即时** 窗口求值可以进行调试，因为与 **自动/局部变量/监视** 窗口的隐式求值不同，调试器将在未经处理的异常处中断。
 
 如果可以修改此函数，可以阻止调试器调用 getter 属性或`ToString`方法。 尝试以下任一项：
 

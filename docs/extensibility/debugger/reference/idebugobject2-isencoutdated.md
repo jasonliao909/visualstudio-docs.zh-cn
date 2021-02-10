@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: d3a8c02d-895b-478c-9957-d663130f308e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a90ff97b87ec2abaab87dfece5b2a2ac1cabb28c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 94f861e6a45b05c8db1b7e7e76815579f6568c69
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953378"
 ---
 # <a name="idebugobject2isencoutdated"></a>IDebugObject2::IsEncOutdated
 此方法确定此对象或父容器的 "编辑并继续" 状态是否过时。 自定义表达式计算器不实现此方法并始终返回 `E_NOTIMPL` 。
@@ -28,18 +28,18 @@ ms.locfileid: "80726098"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT IsEncOutdated(
-   BOOL* pfEncOutdated
+HRESULT IsEncOutdated(
+   BOOL* pfEncOutdated
 );
 ```
 
 ```csharp
-int IsEncOutdated(
-   out int pfEncOutdated
+int IsEncOutdated(
+   out int pfEncOutdated
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pfEncOutdated`\
 弄 `TRUE` 如果 "编辑并继续" 状态为 "过期"，则为非零 () ， `FALSE` 如果不是，则 () 。
 

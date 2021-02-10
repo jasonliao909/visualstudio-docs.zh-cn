@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 765767d3-ecb7-4cd9-ba1e-d9468964dddc
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c3793dddf62f67d1c2ff75d8df863dadfdadb7a1
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 574f49b65f47b4a22240ca68b4d74c90ee580a15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905333"
 ---
 # <a name="onerror-element-msbuild"></a>OnError 元素 (MSBuild)
 
@@ -47,7 +47,7 @@ ms.locfileid: "93048952"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|特性|描述|
 |---------------|-----------------|
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 |`ExecuteTargets`|必需的特性。<br /><br /> 任务失败时要执行的目标。 用分号分隔多个目标。 以指定顺序执行多个目标。|

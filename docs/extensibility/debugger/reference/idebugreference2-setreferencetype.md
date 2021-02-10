@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 346a95f553b8bb7f246a37555dc191b0fb22ac9b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f33ae0203dfb3f3e6a6af67b925add8948720638
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80720351"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963661"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 设置引用类型。 留待将来使用。
@@ -28,18 +28,18 @@ ms.locfileid: "80720351"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetReferenceType ( 
+HRESULT SetReferenceType ( 
    REFERENCE_TYPE dwRefType
 );
 ```
 
 ```csharp
-int SetReferenceType ( 
+int SetReferenceType ( 
    enum_REFERENCE_TYPE dwRefType
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwRefType`\
 中 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 枚举中的一个值，该值指定引用类型。
 

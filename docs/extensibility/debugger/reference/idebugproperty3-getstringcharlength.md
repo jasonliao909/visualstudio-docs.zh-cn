@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1a2eb62ab748562acd8f0a894a3675f79981ccc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: d3189a7c84ed36827ab48b27c8f727314eb34983
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721123"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963115"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 返回关联的属性的字符串中的字符数。
@@ -39,7 +39,7 @@ int GetStringCharLength(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 
 |参数|说明|
 |---------------|-----------------|
@@ -52,7 +52,7 @@ int GetStringCharLength(
 通常，此方法用作 prelude，以便为对 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 方法的调用分配缓冲区。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的**CProperty**对象实现此方法。
+下面的示例演示如何为公开 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的 **CProperty** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)

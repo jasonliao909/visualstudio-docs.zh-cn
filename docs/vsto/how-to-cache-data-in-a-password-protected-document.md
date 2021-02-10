@@ -13,15 +13,15 @@ helpviewer_keywords:
 - data [Office development in Visual Studio], caching
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2a11b70da4bdd2500f70d2b45f025340af21ea94
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954028"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到受密码保护的文档或工作簿中的数据缓存，则不会自动保存对缓存数据所做的更改。 可以通过重写项目中的两个方法来保存对缓存数据所做的更改。
@@ -75,7 +75,7 @@ ms.locfileid: "96845994"
 ### <a name="compile-the-code"></a>编译代码
  将此代码添加到 `ThisWorkbook` 项目中的类。 此代码假定密码存储在名为的字段中 `securelyStoredPassword` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [缓存数据](../vsto/caching-data.md)
 - [如何：缓存数据以便脱机使用或在服务器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [如何：以编程方式在 Office 文档中缓存数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

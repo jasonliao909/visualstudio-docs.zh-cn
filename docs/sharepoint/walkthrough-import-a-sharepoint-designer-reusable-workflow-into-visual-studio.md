@@ -15,15 +15,15 @@ helpviewer_keywords:
 - reusable workflows [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1421b061c50277177b5a30f0357725e9a042f3bd
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: d4c12626550e36acc1a135258750f2d96ac5e81d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952585"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>演练：导入 SharePoint 设计器可重用工作流
 
@@ -41,7 +41,7 @@ ms.locfileid: "95970171"
 
 - 将 SharePoint Designer 可重用工作流导出到 *.wsp* 文件和 sharepoint。
 
-- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用 "导入可重用工作流" 项目将 .wsp 文件导入到中。
+-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用 "导入可重用工作流" 项目将 .wsp 文件导入到中。
 
 - 通过添加代码来更改工作流。
 
@@ -153,7 +153,7 @@ ms.locfileid: "95970171"
 9. 在 " **文件下载** " 对话框中，选择 " **保存** " 按钮以在本地系统上保存 *.wsp* 文件。
 
 ## <a name="import-the-wsp-file-into-visual-studio"></a>将 .wsp 文件导入 Visual Studio
- 使用 " *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 导入可重用工作流" 项目将 .wsp 文件导入到中。 此项目将工作流从可重用的声明性工作流转换为代码工作流。 转换工作流后，你将使用代码来修改其行为。
+ 使用 "  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 导入可重用工作流" 项目将 .wsp 文件导入到中。 此项目将工作流从可重用的声明性工作流转换为代码工作流。 转换工作流后，你将使用代码来修改其行为。
 
 #### <a name="to-import-a-workflow-from-a-wsp-file-and-modify-it"></a>导入 .wsp 文件中的工作流并对其进行修改
 
@@ -190,7 +190,7 @@ ms.locfileid: "95970171"
 
      调试项目时，这会立即显示列表。
 
-11. 因为 " **导入可重用的 SharePoint 2010 工作流** " 模板不会导入导入工作流的关联属性值，所以必须输入这些值。 为此，请按以下步骤操作：
+11. 因为 " **导入可重用的 SharePoint 2010 工作流** " 模板不会导入导入工作流的关联属性值，所以必须输入这些值。 要执行此操作：
 
     1. 在 **解决方案资源管理器** 中，选择 " **SPD_Workflow_TestFT** " 节点。
 

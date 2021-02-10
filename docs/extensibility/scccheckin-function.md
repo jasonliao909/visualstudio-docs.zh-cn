@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a5ba512642e1a63d9d39856f96194d717583d44f
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a68b03f594ad686f2b3e23aab52cabfe4fa5d92a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701187"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952104"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。 调用此函数时使用的是要签入的文件的计数和名称数组。
@@ -36,7 +36,7 @@ SCCRTN SccCheckin (
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件上下文结构。
@@ -68,14 +68,14 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|已成功签入文件。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
 |SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。 建议重试。|
 |SCC_E_NONSPECIFICERROR|非特定故障。 文件未签入。|
 |SCC_E_NOTCHECKEDOUT|用户未签出文件，因此无法将其签出。|
-|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> -另一个用户已事先签入， `bAutoReconcile` 却为 false。<br /><br /> - 或 -<br /><br /> -不能完成自动合并 (例如，当文件是二进制) 。|
+|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> -另一个用户已事先签入， `bAutoReconcile` 却为 false。<br /><br /> -或-<br /><br /> -不能完成自动合并 (例如，当文件是二进制) 。|
 |SCC_E_VERIFYMERGE|文件已自动合并，但尚未签入挂起的用户验证。|
 |SCC_E_FIXMERGE|由于必须手动解决的合并冲突，文件已自动合并但尚未签入。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|

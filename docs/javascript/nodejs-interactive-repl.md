@@ -6,21 +6,21 @@ ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8b2bbbdf478f27f936d4897f2ff773baa4cca1d6
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9f13128bc552ffdb31b3f4a9315a3f9aa3543b0f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85284999"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962686"
 ---
 # <a name="work-with-the-nodejs-interactive-window"></a>使用 Node.js 交互式窗口
 
-Visual Studio 的 Node.js 工具包括一个用于已安装的 Node.js 运行时的交互窗口。 可在此窗口中输入 JavaScript 代码并立即查看结果，还可执行 npm 命令，与当前项目进行交互。 交互窗口是称为 REPL (**R**ead/**E**valuate/**P**rint **L**oop)。
+Visual Studio 的 Node.js 工具包括一个用于已安装的 Node.js 运行时的交互窗口。 可在此窗口中输入 JavaScript 代码并立即查看结果，还可执行 npm 命令，与当前项目进行交互。 交互窗口是称为 REPL (**R** ead/**E** valuate/**P** rint **L** oop)。
 
 ## <a name="open-the-interactive-window"></a>打开交互窗口
 

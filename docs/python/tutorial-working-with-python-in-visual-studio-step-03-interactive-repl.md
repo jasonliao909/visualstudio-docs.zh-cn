@@ -6,17 +6,17 @@ ms.date: 01/28/2019
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d88d936a4b470f891f3b2bf2c353f4ef4e595c57
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90811040"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99920772"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步骤 3：使用交互式 REPL 窗口
 
@@ -54,14 +54,14 @@ ms.locfileid: "90811040"
         return ' ' * int(20 * cos(radians(x)) + 20) + 'o'
     ```
 
-1. 在 .py 文件中，选择 `import`、`from` 和 `make_dot_string` 函数语句。 右键单击所选文本，然后选择“发送到交互”（或按 Ctrl + Enter）。 代码片段会立即粘贴至交互**** 窗口并运行。 由于代码定义了一个函数，因此可通过数次调用它来快速测试该函数：
+1. 在 .py 文件中，选择 `import`、`from` 和 `make_dot_string` 函数语句。 右键单击所选文本，然后选择“发送到交互”（或按 Ctrl + Enter）。 代码片段会立即粘贴至交互窗口并运行。 由于代码定义了一个函数，因此可通过数次调用它来快速测试该函数：
 
     ![将代码发送到交互窗口并测试它](media/vs-getting-started-python-14-interactive4.png)
 
     > [!Tip]
     > 如果在未选择任何内容的情况下，在编辑器中使用 Ctrl+Enter，则会在交互窗口中运行当前代码行，并自动在下一行放置插入点。 利用此功能，通过反复按 Ctrl+Enter 即可便捷地单步调试代码，仅使用 Python 命令行则无法做到这一点。 它还允许在不运行调试器的情况下单步调试代码，而且不必从头开始启动程序。
 
-1. 还可以将任何源中的多行代码复制并粘贴到交互**** 窗口，比如下面的代码片段，使用 Python 命令行 REPL 则难以实现此操作。 粘贴后，交互**** 窗口会运行该代码，就像直接在窗口中键入的一样：
+1. 还可以将任何源中的多行代码复制并粘贴到交互窗口，比如下面的代码片段，使用 Python 命令行 REPL 则难以实现此操作。 粘贴后，交互窗口会运行该代码，就像直接在窗口中键入的一样：
 
     ```python
     for i in range(360):
@@ -77,7 +77,7 @@ ms.locfileid: "90811040"
 
 1. 反复尝试使用不同的单步执行设置，直到找到最喜欢的值。 也可以延长范围（例如 `range(0, 1800, 12)`）使波形重复。
 
-1. 如果对在“交互”窗口中编写的代码感到满意，请选择它。 接下来，右键单击该代码，然后选择“复制代码”（Ctrl + **Shift +**  C）。 最后，将所选的代码粘贴到编辑器中。 注意 Visual Studio 的这一特殊功能如何自动省略所有输出以及 `>>>` 和 `...` 提示符。 例如，下图演示如何对包含提示符和输出的选定内容使用“复制代码”**** 命令：
+1. 如果对在“交互”窗口中编写的代码感到满意，请选择它。 接下来，右键单击该代码，然后选择“复制代码”（Ctrl + **Shift +**  C）。 最后，将所选的代码粘贴到编辑器中。 注意 Visual Studio 的这一特殊功能如何自动省略所有输出以及 `>>>` 和 `...` 提示符。 例如，下图演示如何对包含提示符和输出的选定内容使用“复制代码”命令：
 
     ![交互窗口中用于包含提示符和输出的选定内容的“复制代码”命令](media/vs-getting-started-python-17-interactive7.png)
 
@@ -89,9 +89,9 @@ ms.locfileid: "90811040"
         print(s)
     ```
 
-    若想复制交互**** 窗口的准确内容，包括提示符和输出，只需使用标准的“复制”**** 命令。
+    若想复制交互窗口的准确内容，包括提示符和输出，只需使用标准的“复制”命令。
 
-1. 刚刚已经了解如何使用交互**** 窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试” > “启动而不调试”**Start without Debugging**）再次运行代码，则会看到想要的准确结果。
+1. 刚刚已经了解如何使用交互窗口的快速 REPL 环境处理一小段代码的细节问题，然后将该代码轻松添加到项目的源文件。 如果现在使用 Ctrl+F5（或“调试” > “启动而不调试”**Start without Debugging**）再次运行代码，则会看到想要的准确结果。
 
 ## <a name="next-step"></a>后续步骤
 

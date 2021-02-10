@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 92ff63f0-e869-4040-b3ae-b2c899e708ff
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20de162bdc3be2cc4771c9746b13c40a1e140a96
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959553"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 此方法使程序可用于 (DEs) 和会话调试管理器的调试引擎。
@@ -28,22 +28,22 @@ ms.locfileid: "80721681"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   LPCOLESTR        szFriendlyName,
-   IUnknown*        pDebuggeeInterface
+HRESULT PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   LPCOLESTR        szFriendlyName,
+   IUnknown*        pDebuggeeInterface
 );
 ```
 
 ```csharp
-int PublishProgram(
-   CONST_GUID_ARRAY Engines,
-   string           szFriendlyName,
-   object           pDebuggeeInterface
+int PublishProgram(
+   CONST_GUID_ARRAY Engines,
+   string           szFriendlyName,
+   object           pDebuggeeInterface
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `Engines`\
 中可以启动或附加到此程序的 DEs Guid 数组。
 

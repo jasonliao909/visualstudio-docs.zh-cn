@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 5352d11a-debb-4c20-b9a0-d37d94900b1c
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 377357345516d210b30dd4db278dd672a8b6b469
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 7c09b9f061c9f718f8830cdb797cc56f35619e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149126"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940722"
 ---
 # <a name="thread-properties-dialog-box"></a>“线程属性”对话框
 使用此对话框可详细了解特定线程。 若要显示此对话框，请将焦点移至[线程视图](../debugger/threads-view.md)窗口，或打开[消息视图](../debugger/messages-view.md)并展开消息。 在树中选择任意线程节点，然后从“视图”菜单中选择“属性” 。

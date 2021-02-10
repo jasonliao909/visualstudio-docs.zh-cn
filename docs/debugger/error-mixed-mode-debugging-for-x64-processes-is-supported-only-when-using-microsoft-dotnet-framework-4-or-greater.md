@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: e8cfc3ac5cb606637fe5c2818750168a239a46fa
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852610"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871489"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>错误：仅当使用 Microsoft .NET Framework 4 或更高版本时才支持对 x64 进程执行混合模式调试
 若要调试 64 位进程中的混合本机代码和托管代码，你必须安装了 .NET Framework 版本 4。 低于 4 的 .NET Framework 版本不支持对 64 位进程进行混合模式调试。

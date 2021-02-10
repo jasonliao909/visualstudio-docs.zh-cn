@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f84727647f198c25175139412d3e8509e73fe1c
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 0154816985076373c3ced4981aa714971a9ded29
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349355"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949644"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划 &gt; 元素 (引导程序) 
 `Schedules`元素包含 `Schedule` 元素，这些元素定义应在哪些特定时间运行元素定义的命令 `Command` 。
@@ -49,7 +49,7 @@ ms.locfileid: "94349355"
 
  `Schedule` 具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Name`|必需。 计划项的名称。 这与元素的 `ScheduleName` 属性相对应 `Command` 。 当 `Command` 引用命名计划时，它将仅在该元素指示的时间执行 `Schedule` 。 计划还可能与 `FailIf` 和 `BypassIf` 元素关联，这些元素限制这些条件测试按指定的计划执行。 有关详细信息，请参阅 [\<Commands> 元素](../deployment/commands-element-bootstrapper.md)。|
 
@@ -64,6 +64,6 @@ ms.locfileid: "94349355"
 ## <a name="afterpackage"></a>AfterPackage
  `AfterPackage`元素指示安装程序在安装指定的包后执行命令。
 
-## <a name="see-also"></a>请参阅
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>另请参阅
+- [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

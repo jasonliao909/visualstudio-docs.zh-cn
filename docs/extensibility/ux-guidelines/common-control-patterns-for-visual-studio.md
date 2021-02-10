@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: 3e893949-6398-42f1-9eab-a8d8c2b7f02d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c1caccebf1dc14146bef214a4d33e1216243780
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: ab8f04ff885f4b57d24cb3bc0eb449859fca6271
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715881"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952182"
 ---
 # <a name="common-control-patterns-for-visual-studio"></a>Visual Studio 的公共控件模式
 ## <a name="common-controls"></a><a name="BKMK_CommonControls"></a> 公共控件
@@ -85,7 +85,7 @@ ms.locfileid: "97715881"
 
 - 在主题 UI 中，组合框和下拉端遵循控件的标准主题。
 
-#### <a name="layout"></a>布局
+#### <a name="layout"></a>Layout
 组合框和下拉端应调整大小以适应内容，而不是适合显示这些内容的窗口的宽度，也不是任意匹配长字段的长度（如路径）。
 
 ![不正确：下拉宽度对于将显示的内容太长。](../../extensibility/ux-guidelines/media/0707-03_incorrectdropdownlayout.png "0707-03_IncorrectDropDownLayout")<br />不正确：下拉宽度对于将显示的内容太长。
@@ -126,7 +126,7 @@ ms.locfileid: "97715881"
 #### <a name="visual-style"></a>视觉样式
 在实用工具对话框中，不要将组框的样式。 使用控件的内部基本样式。
 
-#### <a name="layout"></a>布局
+#### <a name="layout"></a>Layout
 
 - 除非您需要在严格布局中维护组区分，否则不需要使用组框架来包围广播选项。
 
@@ -301,7 +301,7 @@ Visual Studio 中的大多数按钮将出现在实用工具对话框中，不应
 > [!NOTE]
 > 用户必须按 tab 键进入这些按钮 (没有) 的访问密钥，因此应将其设置为明智的顺序。 将 `name` 按钮的属性映射到它所采取的操作，以便屏幕阅读器正确解释按钮操作。
 
-| 函数 | Button |
+| 功能 | Button |
 | --- | --- |
 | 添加 | ![图形“添加”按钮](../../extensibility/ux-guidelines/media/070703-08_buttonadd.png "070703-08_ButtonAdd") |
 | 删除 | ![图形“删除”按钮](../../extensibility/ux-guidelines/media/070703-09_buttonremove.png "070703-09_ButtonRemove") |

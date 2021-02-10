@@ -12,25 +12,25 @@ helpviewer_keywords:
 ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bab816a0b71adef190a7d919b5ada7138a6a0e7c
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: a6a994f5ff564860ac753787eebd293a8e2fa9c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "74779709"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99889728"
 ---
 # <a name="callercallee-view"></a>“调用方/被调用方”视图
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格：
 
- **当前函数**在中间网格中显示，其显示所选函数的分析信息。 值包括对分析运行期间收集的函数的所有调用。
+ **当前函数** 在中间网格中显示，其显示所选函数的分析信息。 值包括对分析运行期间收集的函数的所有调用。
 
- **调用当前函数的函数**在顶部网格中显示，并且显示由调用方（父）函数的调用生成的所选（当前）函数的值的数量。
+ **调用当前函数的函数** 在顶部网格中显示，并且显示由调用方（父）函数的调用生成的所选（当前）函数的值的数量。
 
- **由当前函数调用的函数**在底部网格中显示，当前函数调用子函数时，它会显示所选函数的被调用方（子）函数的分析信息。
+ **由当前函数调用的函数** 在底部网格中显示，当前函数调用子函数时，它会显示所选函数的被调用方（子）函数的分析信息。
 
  “调用方/被调用方”视图中的可用列取决于用于收集数据的分析方法（采样法或检测法）以及是否在分析运行期间收集 .NET 内存数据。
 

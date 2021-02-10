@@ -13,15 +13,15 @@ helpviewer_keywords:
 ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 849b9d7bd6aca3fa56cb0106bea844ce1fa56b73
-ms.sourcegitcommit: ae9145b32fc8e1e663e504c315a5df5dd302fee9
+ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92918235"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99929103"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 
@@ -128,7 +128,7 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 在 XAML 应用（例如 Windows 桌面 WPF 应用和 UWP 应用）中，可以使用应用程序时间线工具分析资源消耗情况。 例如，你可以分析应用程序准备 UI 框架（布局和呈现）以及为网络和磁盘请求提供服务所花费的时间，以及在应用程序启动、页面加载以及调整窗口大小等应用场景中花费的时间。 若要使用该工具，请在性能探查器中选择“应用程序时间线”，然后选择“开始”。 在应用中，浏览资源消耗存在可疑问题的应用场景，然后选择“停止收集”生成报表。
 
-**可视吞吐量** 关系图中的帧速率低可能对应运行应用时看到的视觉问题。 与此类似， **UI 线程使用率** 关系图中的高数值也可能对应 UI 响应能力问题。 在报表中，你可以选择出现可疑性能问题的时间段，然后在“时间线”详细信息视图（下方窗格）中检查详细的 UI 线程活动。
+**可视吞吐量** 关系图中的帧速率低可能对应运行应用时看到的视觉问题。 与此类似，**UI 线程使用率** 关系图中的高数值也可能对应 UI 响应能力问题。 在报表中，你可以选择出现可疑性能问题的时间段，然后在“时间线”详细信息视图（下方窗格）中检查详细的 UI 线程活动。
 
 ![应用程序时间线分析工具](../profiling/media/prof-tour-application-timeline.gif "分析简介应用程序时间线")
 

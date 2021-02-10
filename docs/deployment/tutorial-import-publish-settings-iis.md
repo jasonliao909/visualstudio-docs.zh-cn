@@ -7,15 +7,15 @@ helpviewer_keywords:
 - deployment, publish settings
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fff3ded8607f7faf534e6e61a27bd4d3e38d9e38
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88247556"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99945027"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -42,14 +42,14 @@ ms.locfileid: "88247556"
 
 * 必须安装 Visual Studio 2019 且具有 ASP.NET 和 web 开发工作负载。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 须安装 Visual Studio 2017 且具有 ASP.NET 和 web 开发工作负载。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
 ::: moniker-end
 
 * 服务器上必须运行 Windows Server 2012、Windows Server 2016 或 Windows Server 2019，并且必须正确安装 [IIS Web 服务器角色](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)（需要生成发布设置文件 (\*.publishsettings)）。 该服务器上还必须安装 ASP.NET 4.5 或 ASP.NET Core。 若要安装 ASP.NET 4.5，请参阅[使用 ASP.NET 3.5 和 ASP.NET 4.5 的 IIS 8.0](/iis/get-started/whats-new-in-iis-8/iis-80-using-aspnet-35-and-aspnet-45)。 若要安装 ASP.NET Core，请参阅 [使用 IIS 在 Windows 上托管 ASP.NET Core](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。 对于 ASP.NET Core，请确保将“应用程序池”配置为使用“无托管代码”，如文章中所述。

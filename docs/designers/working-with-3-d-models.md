@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: fa035091-1354-4d1c-be44-4fb83860466f
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 886d6d24293af9f630e70defff0d95ec791f0edf
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 9206fa8ced5ae60e58d353a9adae2234860670c8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93133944"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896294"
 ---
 # <a name="work-with-3d-models"></a>处理三维模型
 

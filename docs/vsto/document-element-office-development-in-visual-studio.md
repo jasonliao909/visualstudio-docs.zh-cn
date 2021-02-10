@@ -13,15 +13,15 @@ helpviewer_keywords:
 - <document> element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 36d822d60d1a28d48f660f6d358b75bf4a913048
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: e92c17d71b1c0959cb1918ce6fbad0e2cd44d5ec
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "63000023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949826"
 ---
 # <a name="ltdocumentgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的文档元素 (Office 开发) 
   `document`命名空间的元素 `vstov4` 存储文档级自定义项的特定于自定义项的信息。
@@ -35,7 +35,7 @@ ms.locfileid: "63000023"
 ## <a name="elements-and-attributes"></a>元素和属性
  仅对文档级自定义项是必需的。 `document` 元素位于 `vstov4` 命名空间中。 `document` 元素具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`solutionId`|必需。 Visual Studio Tools for Office 运行时用于唯一标识文档级解决方案的 GUID。 此值存储为 _AssemblyLocation 自定义文档属性。 有关详细信息，请参阅 [自定义文档属性概述](../vsto/custom-document-properties-overview.md)。|
 

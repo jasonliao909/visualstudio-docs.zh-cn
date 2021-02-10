@@ -17,19 +17,19 @@ helpviewer_keywords:
 ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 94a587ca1395aebaf4af71d04b2f1454ec2702f0
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: c837046380550f5a0a73aaba888cbf26be0c1586
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353338"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923844"
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
 
-此任务接受文件名中可能包含有效 .NET 区域性标识符字符串的项的列表，并且生成包含相应的区域性标识符且名为 `Culture` 的元数据的项。 例如，文件名 Form1.fr-fr.resx 具有嵌入的区域性标识符“fr-fr”，因此该任务会生成具有相同文件名的项，其中元数据 `Culture` 等于 `fr-fr` 。 该任务还会生成文件名中删除了区域性的文件名列表。
+此任务接受文件名中可能包含有效 .NET 区域性标识符字符串的项的列表，并且生成包含相应的区域性标识符且名为 `Culture` 的元数据的项。 例如，文件名 Form1.fr-fr.resx 具有嵌入的区域性标识符“fr-fr”，因此该任务会生成具有相同文件名的项，其中元数据 `Culture` 等于 `fr-fr`。 该任务还会生成文件名中删除了区域性的文件名列表。
 
 ## <a name="task-parameters"></a>任务参数
 
@@ -78,10 +78,10 @@ ms.locfileid: "92353338"
 
 |项集合|目录|
 |---------------------|--------------|
-|`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* （无其他元数据）|
+|`OutAssignedFiles`|*MyResource1.fr.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx*（无其他元数据）|
 |`OutAssignedFilesWithCulture`|*MyResource1.fr.resx* (Culture="fr")|
-|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx* （无其他元数据）|
-|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx* （无其他元数据）|
+|`OutAssignedFilesWithNoCulture`|*MyResource2.XX.resx*（无其他元数据）|
+|`OutCultureNeutralAssignedFiles`|*MyResource1.resx* (Culture="fr")<br /><br /> *MyResource2.XX.resx*（无其他元数据）|
 
 ## <a name="see-also"></a>另请参阅
 

@@ -13,15 +13,15 @@ helpviewer_keywords:
 - document-level customizations [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c1f827346c30720cefd781dade3039416504b9c0
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527077"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966638"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练：创建您的第一个 Word 文档级自定义项
 
@@ -67,7 +67,7 @@ ms.locfileid: "97527077"
 
 6. 在 " **名称** " 框中，键入 **FirstDocumentCustomization**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
 8. 从 " **Visual Studio Tools for Office 项目向导**" 中选择 "**创建新文档**"，然后单击 **"确定"**。
 ::: moniker-end
@@ -76,7 +76,7 @@ ms.locfileid: "97527077"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 单击 **下一步**。
+4. 单击 **“下一步”** 。
 
 5. 在 "**配置新项目**" 对话框的 "**名称**" 框中键入 **FirstWorkbookCustomization** ，然后单击 "**创建**"。
 

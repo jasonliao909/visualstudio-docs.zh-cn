@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: efeca838050c9024ad3768b2ac7f73ce7dd06720
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353286"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99939547"
 ---
 # <a name="calltarget-task"></a>CallTarget 任务
 
@@ -38,7 +38,7 @@ ms.locfileid: "92353286"
 | `RunEachTargetSeparately` | 可选的 `Boolean` 输入参数。<br /><br /> 如果为 `true`，则对每个目标调用一次 MSBuild 引擎。 如果为 `false`，则调用一次 MSBuild 引擎即可生成所有目标。 默认值为 `false`。 |
 | `TargetOutputs` | 可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包括所有生成目标的输出。 |
 | `Targets` | 可选 `String[]` 参数。<br /><br /> 指定要生成的一个或多个目标。 |
-| `UseResultsCache` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则返回缓存的结果（如存在）。<br /><br /> 注意：运行 MSBuild 任务时，其输出会以生成项列表的形式缓存在作用域 (ProjectFileName, GlobalProperties)[TargetNames] 中  。 |
+| `UseResultsCache` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则返回缓存的结果（如存在）。<br /><br /> 注意：运行 MSBuild 任务时，其输出会以生成项列表的形式缓存在作用域 (ProjectFileName, GlobalProperties)[TargetNames] 中。 |
 
 ## <a name="remarks"></a>注解
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 4ac1eae8-d6ce-4f05-98f0-a29065f471d4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66408749688f80b1c49b317336f76ce148f09c74
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 916f886efd25f394483c0b94c6994c364f9ff87b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148658"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904213"
 ---
 # <a name="styles-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“样式”选项卡
 使用“样式”选项卡可显示应用于所选窗口的样式。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

@@ -20,15 +20,15 @@ helpviewer_keywords:
 ms.assetid: bf152712-4c1e-48bd-9b7f-311cf0fdb832
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ac9f84fa22526ed03d7a2e9b201cc9afc2f476d
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: a7987306d9f7fc25f9f9b783d5b0966ac5015ce0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94350564"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949683"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts &gt; 元素 (引导程序) 
 `RelatedProducts`元素定义其他产品，这些产品依赖于或包含在当前产品中。
@@ -59,7 +59,7 @@ ms.locfileid: "94350564"
 
  `DependsOnProduct` 具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Code`|由元素的特性指定的所包含产品的代码名称 `ProductCode` `Product` 。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -71,7 +71,7 @@ ms.locfileid: "94350564"
 
  `IncludesProduct` 具有以下属性。
 
-|特性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Code`|由元素的特性指定的所包含产品的代码名称 `ProductCode` `Product` 。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -84,5 +84,5 @@ ms.locfileid: "94350564"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>请参阅
-- [\<Product> element](../deployment/product-element-bootstrapper.md)
+## <a name="see-also"></a>另请参阅
+- [\<Product> 元素](../deployment/product-element-bootstrapper.md)

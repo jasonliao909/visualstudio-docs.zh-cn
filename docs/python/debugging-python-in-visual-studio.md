@@ -5,17 +5,17 @@ ms.date: 05/12/2020
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 094305e901624e13df147030899981f8fedb80d1
-ms.sourcegitcommit: a77158415da04e9bb8b33c332f6cca8f14c08f8c
+ms.openlocfilehash: b5a86f600f9145742f6447af54fccb10dbc302a3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2020
-ms.locfileid: "86387026"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931768"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -118,7 +118,7 @@ HTML、XML 和 JSON 可视化效果显示在单独的弹出窗口中，其中突
 
 ![Visual Studio 调试器中的“异常”窗口](media/debugging-exception-settings.png)
 
-每个异常的复选框控制引发该异常时调试器是否*始终*中断。 若要针对特定异常更频繁地进行中断，请选中此框。
+每个异常的复选框控制引发该异常时调试器是否 *始终* 中断。 若要针对特定异常更频繁地进行中断，请选中此框。
 
 默认情况下，在源代码中找不到异常处理程序时，大多数异常将中断。 若要更改此行为，请右键单击任何异常并修改“在用户代码中未经处理时继续”选项。 如果想要针对某异常较少地进行中断，请清除此框。
 

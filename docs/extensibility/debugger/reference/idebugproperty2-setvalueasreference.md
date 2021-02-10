@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 341b1b89-4ab8-4e1c-abe2-fb955df5c6b0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 73d00ccedc6985061448170735e9ebcaac42f530
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: b2ed6cbf32d807734714f25453e33fe8bdd7fac0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721250"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961789"
 ---
 # <a name="idebugproperty2setvalueasreference"></a>IDebugProperty2::SetValueAsReference
 将此属性的值设置为给定引用的值。
@@ -45,7 +45,7 @@ int SetValueAsReference(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `rgpArgs`\
 中要传递给托管代码属性 setter 的参数数组。 如果属性资源库不采用参数，或此 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象不引用此类属性资源库，则 `rgpArgs` 应为 null 值。 此参数通常为 null 值。
 

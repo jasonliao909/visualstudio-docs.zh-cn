@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d69308d2f569fc2e0d72dcf64c762687955d4d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 50281ffdd233debd3c10672868e9debd4b1f395f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80700891"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965208"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数检索一个或多个文件的副本，以便进行查看和编译，但不能进行编辑。 在大多数系统中，文件被标记为只读。
@@ -35,7 +35,7 @@ SCCRTN SccGet(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件的上下文结构。
@@ -63,7 +63,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|获取操作成功。|
 |SCC_E_FILENOTCONTROLLED|此文件不受源代码管理。|
@@ -94,11 +94,11 @@ SCCRTN SccGet(
 
 2. 等效于 "删除旧项"，然后执行 "添加新项"。 以下算法是实现此目的的一种方法。
 
-    1. 调用[SccQueryChanges](../extensibility/sccquerychanges-function.md)函数可了解如何重命名源代码管理数据库中*b.txt*的*a.txt* 。
+    1. 调用 [SccQueryChanges](../extensibility/sccquerychanges-function.md)函数可了解如何重命名源代码管理数据库中 *b.txt* 的 *a.txt* 。
 
     2. 将本地 *a.txt* 重命名为 *b.txt*。
 
-    3. `SccGet`为*a.txt*和*b.txt*调用函数。
+    3. `SccGet`为 *a.txt* 和 *b.txt* 调用函数。
 
     4. 由于源代码管理数据库中不存在 *a.txt* ，因此会清除缺少的 *a.txt* 版本信息的本地版本缓存。
 

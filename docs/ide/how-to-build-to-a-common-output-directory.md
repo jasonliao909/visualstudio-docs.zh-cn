@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 1fcc2c48-07cb-4c4f-9556-36945e7dfc4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39dae210c2cb9afe3e4b77962b75ddb3be4baeb
-ms.sourcegitcommit: c9a84e6c01e12ccda9ec7072dd524830007e02a3
+ms.openlocfilehash: 2e2abb9a768621477465b753554c111126a5af98
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/16/2020
-ms.locfileid: "92136961"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99967613"
 ---
 # <a name="how-to-build-to-a-common-output-directory"></a>如何：生成到公共输出目录
 
@@ -32,7 +32,7 @@ ms.locfileid: "92136961"
 
 2. 在 **“项目”** 菜单上，单击 **“属性”** 。
 
-3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹  。
+3. 根据项目的类型，单击“编译”选项卡或“生成”选项卡，并将“输出路径”设置为适用于解决方案中所有项目的文件夹。
 
 4. 为解决方案中的所有项目重复 1-3 步骤。
 

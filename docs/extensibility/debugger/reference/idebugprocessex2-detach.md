@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7379436ae0da57d7f8c47ce8484c810a53a0a453
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 62ca404442d6bf6080972f03c3e2fd0da2621e20
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80723356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954886"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
 此方法通知进程，会话不再调试该进程。
@@ -28,7 +28,7 @@ ms.locfileid: "80723356"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT Detach( 
+HRESULT Detach( 
    IDebugSession2* pSession
 );
 ```
@@ -39,7 +39,7 @@ int Detach(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pSession`\
 中一个值，该值唯一标识要从其分离此进程的会话。
 

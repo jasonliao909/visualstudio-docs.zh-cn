@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 31c8b3477ffe7561e065b680e9047946e7058471
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 9e8adf0da84fd183931d107541aa2e07ef003d6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80719650"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954873"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 获取与堆栈帧关联的线程。
@@ -28,18 +28,18 @@ ms.locfileid: "80719650"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetThread ( 
+HRESULT GetThread ( 
    IDebugThread2** ppThread
 );
 ```
 
 ```csharp
-int GetThread ( 
+int GetThread ( 
    out IDebugThread2 ppThread
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppThread`\
 弄返回表示线程的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象。
 

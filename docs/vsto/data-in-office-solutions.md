@@ -13,20 +13,20 @@ helpviewer_keywords:
 - datasets [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4ce6d73a7c70101c0fe364ac5dafba8cbe47f5c8
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: c9f0f057873b6810b7616893646c3c770cc43331
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845543"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962400"
 ---
 # <a name="data-in-office-solutions"></a>Office 解决方案中的数据
   多种 Office 解决方案使用户能够检索或修改数据。 当通过使用 Visual Studio 创建 Office 解决方案时，可通过多种不同方法使用数据。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  描述如何将数据绑定到 Office 解决方案中的控件。

@@ -11,27 +11,27 @@ helpviewer_keywords:
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d080791c94c77577f80a4b55db67febd3d48b56a
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951688"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 本演练演示如何将按钮添加到 **解决方案资源管理器** 工具栏中。
 
- 工具栏或菜单上的任何命令均称为 Visual Studio 中的按钮。 单击该按钮时，将执行命令处理程序中的代码。 通常，相关命令组合在一起形成一个组。 菜单或工具栏充当组的容器。 优先级确定组中的单个命令在菜单或工具栏上出现的顺序。 您可以通过控制按钮的可见性来阻止工具栏或菜单上的按钮显示。 在 .vsct 文件的部分中列出的命令 `<VisibilityConstraints>` 仅 *.vsct* 显示在关联的上下文中。 可见性不能应用于组。
+ 工具栏或菜单上的任何命令均称为 Visual Studio 中的按钮。 单击该按钮时，将执行命令处理程序中的代码。 通常，相关命令组合在一起形成一个组。 菜单或工具栏充当组的容器。 优先级确定组中的单个命令在菜单或工具栏上出现的顺序。 您可以通过控制按钮的可见性来阻止工具栏或菜单上的按钮显示。 在 .vsct 文件的部分中列出的命令 `<VisibilityConstraints>` 仅显示在关联的上下文中。 可见性不能应用于组。
 
  有关菜单、工具栏命令和 *.vsct* 文件的详细信息，请参阅 [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。
 
 > [!NOTE]
 > 使用 XML 命令表 (*. .vsct*) 文件而不是命令表配置 *()* 文件来定义菜单和命令在 vspackage 中的显示方式。 有关详细信息，请参阅 [Visual Studio 命令表 (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展

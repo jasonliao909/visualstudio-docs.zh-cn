@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 5797d004-2325-46cf-bbf3-6739a15958ec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4028dc413bd6ae6b9e9861c339faddf1550d4530
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: ae11a1f3d2efdcdb2bfb66342dd647177c7b84c7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205679"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901053"
 ---
 # <a name="average-cpu-utilization"></a>CPU 平均利用率
 显示在进程持续时间内，已分析的进程对系统逻辑核心的平均利用率。 此图形不显示在某个给定时间哪个特定内核处于活动状态。 例如，如果两个内核在某一给定时间段内均以 50% 的使用率运行，则此视图将显示使用一个逻辑内核。

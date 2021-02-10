@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 699dd0f5-7569-40b3-ade6-d0fe53e832bc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 856788546e10e69a8bb7e2787558505937f9effd
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: 61c2094564ea20c1073a198c3da162862c543e65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96995442"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99965351"
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 类型可视化工具和自定义查看器以快速向开发人员提供意义的方式显示数据。 表达式计算器 (EE) 可以支持第三方类型的可视化工具，并提供自己的自定义查看器。
@@ -39,7 +39,7 @@ ms.locfileid: "96995442"
  传入和传出接口的所有数据 `IPropertyProxyEESide` 封装在 [IEEDataStorage](../../extensibility/debugger/reference/ieedatastorage.md) 接口中。 此接口表示字节数组，并由 Visual Studio 和 EE 实现。 当属性的数据更改时，Visual Studio 将创建一个 `IEEDataStorage` 包含新数据的对象，并使用该数据对象调用 [CreateReplacementObject](../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md) ，以获取一个新的对象，然后 `IEEDataStorage` 将该对象传递给 [InPlaceUpdateObject](../../extensibility/debugger/reference/ipropertyproxyeeside-inplaceupdateobject.md) 以更新该属性的数据。 `IPropertyProxyEESide::CreateReplacementObject` 允许 EE 实例化其自己的实现接口的类 `IEEDataStorage` 。
 
 ## <a name="supporting-custom-viewers"></a>支持自定义查看器
- 在 `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` DEBUG_PROPERTY_INFO 结构的字段中设置标志， `dwAttrib` (通过调用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) 返回，以指示该对象具有与之关联的自定义查看器。 [DEBUG_PROPERTY_INFO](../../extensibility/debugger/reference/debug-property-info.md) 设置此标志后，Visual Studio 将使用[QueryInterface](/cpp/atl/queryinterface)从[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口获取[IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)接口。
+ 在 `DBG_ATTRIB_VALUE_CUSTOM_VIEWER` DEBUG_PROPERTY_INFO 结构的字段中设置标志， `dwAttrib` (通过调用[GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md)) 返回，以指示该对象具有与之关联的自定义查看器。 [](../../extensibility/debugger/reference/debug-property-info.md) 设置此标志后，Visual Studio 将使用[QueryInterface](/cpp/atl/queryinterface)从[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)接口获取[IDebugProperty3](../../extensibility/debugger/reference/idebugproperty3.md)接口。
 
  如果用户选择自定义查看器，Visual Studio 会使用由方法提供的查看器实例化自定义查看器 `CLSID` `IDebugProperty3::GetCustomViewerList` 。 然后，Visual Studio 会调用 [DisplayValue](../../extensibility/debugger/reference/idebugcustomviewer-displayvalue.md) 来向用户显示值。
 

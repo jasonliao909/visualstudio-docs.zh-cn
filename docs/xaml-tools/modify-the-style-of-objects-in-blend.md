@@ -7,15 +7,15 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cfe54db27a16d95904412b5e1181d589ed2fcde8
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 2b98f814e1f310c7d7f281457589a1a9f7d21653
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046787"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966547"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>修改 Blend for Visual Studio 中对象的样式
 
@@ -103,6 +103,6 @@ ms.locfileid: "93046787"
 
 ![将颜色转换为资源按钮](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![“创建颜色资源”对话框](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

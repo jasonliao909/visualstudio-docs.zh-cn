@@ -29,15 +29,15 @@ helpviewer_keywords:
 ms.assetid: 0a61f168-3113-4fa7-83a3-d9142e2a33f8
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 160d4fa3a1058e0cb81e5d25720d9194d90fdc39
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 99e545cc4ae6a037816fd727d63fce16d3626484
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904057"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966313"
 ---
 # <a name="link-task"></a>Link 任务
 
@@ -221,7 +221,7 @@ ms.locfileid: "92904057"
 
   可选 **String []** 参数。
 
-  此参数导致 DLL *延迟加载* 。 指定要延迟加载的 DLL 的名称。
+  此参数导致 DLL *延迟加载*。 指定要延迟加载的 DLL 的名称。
 
   有关详细信息，请参阅 [/DELAYLOAD（延迟加载导入）](/cpp/build/reference/delayload-delay-load-import)。
 
@@ -343,7 +343,7 @@ ms.locfileid: "92904057"
 
   可选 **Boolean** 参数。
 
-  如果为 `true`，则创建 *映射文件* 。 映射文件的文件扩展名为 .map  。
+  如果为 `true`，则创建 *映射文件*。 映射文件的文件扩展名为 .map  。
 
   有关详细信息，请参阅 [/MAP（生成映射文件）](/cpp/build/reference/map-generate-mapfile)。
 
@@ -607,7 +607,7 @@ ms.locfileid: "92904057"
 
   可选 **Boolean** 参数。
 
-  如果为 `true`，且启用了“注册输出”，则强制注册表向 **HKEY_CLASSES_ROOT** 写入内容以重定向到 **HKEY_CURRENT_USER** 。
+  如果为 `true`，且启用了“注册输出”，则强制注册表向 **HKEY_CLASSES_ROOT** 写入内容以重定向到 **HKEY_CURRENT_USER**。
 
 - **PreprocessOutput**
 

@@ -5,17 +5,17 @@ ms.date: 03/13/2019
 ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: eb3e3ca5d18429c60894c42bda12328836dc6fc8
-ms.sourcegitcommit: cc841df335d1d22d281871fe41e74238d2fc52a6
+ms.openlocfilehash: fa0caa8184f3c52a010df1dd1f82718d44be700b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/18/2020
-ms.locfileid: "73024724"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888051"
 ---
 # <a name="edit-python-code"></a>编辑 Python 代码
 
@@ -207,7 +207,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 ### <a name="go-to-definition"></a>转到定义
 
-**转到定义**可从使用标识符（如函数名、类或变量）快速跳转至定义它的源代码。 通过右键单击标识符并选择“转到定义”，或将插入点放在标识符中并按 F12 可进行调用   。 如果源代码可用，它可用于代码和外部库。 如果库源代码不可用，则“转到定义”将跳转到模块引用的相关 `import` 语句或显示错误。
+**转到定义** 可从使用标识符（如函数名、类或变量）快速跳转至定义它的源代码。 通过右键单击标识符并选择“转到定义”，或将插入点放在标识符中并按 F12 可进行调用   。 如果源代码可用，它可用于代码和外部库。 如果库源代码不可用，则“转到定义”将跳转到模块引用的相关 `import` 语句或显示错误。
 
 ![Visual Studio 中的“转到定义”命令](media/code-editing-go-to-definition.png)
 
@@ -221,7 +221,7 @@ Visual Studio 中的 Python 支持提供多种方式在代码中快速导航，�
 
 ### <a name="find-all-references"></a>查找所有引用
 
-**查找所有引用**是一种有用的方法，用于发现同时定义和使用任何给定标识符的位置，包括导入和分配。 通过右键单击标识符并选择“查找所有引用”或将插入点放在标识符中并按 Shift+F12 可以进行调用。 双击列表中的项可导航到其位置。
+**查找所有引用** 是一种有用的方法，用于发现同时定义和使用任何给定标识符的位置，包括导入和分配。 通过右键单击标识符并选择“查找所有引用”或将插入点放在标识符中并按 Shift+F12 可以进行调用。 双击列表中的项可导航到其位置。
 
 ![查找所有引用结果](media/code-editing-find-all-references.png)
 

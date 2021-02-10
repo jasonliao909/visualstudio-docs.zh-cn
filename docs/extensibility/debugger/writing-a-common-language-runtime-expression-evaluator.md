@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: bd79d57f-8e0a-4e14-a417-0b1de28fa1b2
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1674ae8345873ede5d1b4afb04774d6ed0469b4c
-ms.sourcegitcommit: d10f37dfdba5d826e7451260c8370fd1efa2c4e4
+ms.openlocfilehash: a7d7e4ab292793da5c4abe04233b027981ba3fff
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "96996313"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99968484"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>编写公共语言运行时表达式计算器
 > [!IMPORTANT]
@@ -29,7 +29,7 @@ ms.locfileid: "96996313"
 
  Visual Studio 调试包的某些方面必须解释编程语言上下文中的代码。 例如，当执行在断点处暂停时，必须计算并显示用户在 " **监视** " 窗口中键入的任何表达式。 用户可以通过在 " **监视** " 窗口或 " **即时** " 窗口中键入表达式来更改本地变量的值。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [公共语言运行时和表达式计算](../../extensibility/debugger/common-language-runtime-and-expression-evaluation.md) 说明在将专有编程语言集成到 Visual Studio IDE 中时，编写能够在专有语言的上下文中计算表达式的 EE 使你可以编译为 Microsoft 中间语言 (MSIL) ，而无需编写调试引擎。
 
  [表达式计算器体系结构](../../extensibility/debugger/expression-evaluator-architecture.md) 讨论如何实现所需的 EE 接口并调用公共语言运行时符号提供程序 (SP) 和联编程序接口。

@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dcf3316ba57bbb25ee171cba7e4edc4923fa270
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 49e8f151aa01037a0bc18161fbe94a00488394db
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80737285"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953833"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述用于显示 (IDE) 的集成开发环境的一种反汇编说明。
@@ -46,7 +46,7 @@ typedef struct tagDisassemblyData {
 ```
 
 ```csharp
-public struct DisassemblyData { 
+public struct DisassemblyData { 
     public uint          dwFields;
     public string        bstrAddress;
     public string        bstrAddressOffset;
@@ -96,7 +96,7 @@ public struct DisassemblyData { 
 
 对于不能表示为文件名的文本文档， `bstrDocumentUrl` 是文档的唯一标识符，调试引擎必须实现 [GetDocument](../../../extensibility/debugger/reference/idebugdisassemblystream2-getdocument.md) 方法。
 
-此字段还可以包含与校验和有关的其他信息。 有关详细信息，请参阅备注。
+此字段还可以包含与校验和有关的其他信息。 有关详细信息，请参阅“备注”。
 
 `dwByteOffset`\
 指令从代码行开头开始的字节数。

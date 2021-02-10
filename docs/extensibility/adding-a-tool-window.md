@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 184e04e74e2065ea2a9e1bcd41b2e878981dd218
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597985"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951428"
 ---
 # <a name="add-a-tool-window"></a>添加工具窗口
 
@@ -34,7 +34,7 @@ ms.locfileid: "95597985"
 
 - 设置工具窗口的默认位置。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 

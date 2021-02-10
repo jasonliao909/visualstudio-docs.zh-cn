@@ -12,15 +12,15 @@ helpviewer_keywords:
 - packages [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bbe458f6ab4de01ffb224ae4e493bf23e3fc6ceb
-ms.sourcegitcommit: ad2c820b280b523a7f7aef89742cdb719354748f
+ms.openlocfilehash: 423fcaf54d1d46ddf92352f4ff8bdbb637bbe514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/18/2020
-ms.locfileid: "94850554"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949085"
 ---
 # <a name="create-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   使用包设计器，可以创建和自定义部署包。 例如，你可以添加 SharePoint 项目项和功能、重置 IIS 服务器、设置功能激活范围以及标识功能依赖项。 设计器还会生成一个清单，该清单是描述每个包的 XML 文件。

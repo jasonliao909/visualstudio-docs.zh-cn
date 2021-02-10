@@ -14,15 +14,15 @@ helpviewer_keywords:
 - Excel [Office development in Visual Studio], creating your first project
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f04532e627a694e8a234f1842995b92a707e537
-ms.sourcegitcommit: 4bd2b770e60965fc0843fc25318a7e1b46137875
+ms.openlocfilehash: 4449e286fed0572e2dfc1ed855daf834400bd4e4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97527908"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966625"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练：创建你的第一个 Excel VSTO 外接程序
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。
@@ -66,7 +66,7 @@ ms.locfileid: "97527908"
 
 6. 在 **“名称”** 框中，键入 **FirstExcelAddIn**。
 
-7. 单击“确定”  。
+7. 单击“确定”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstExcelAddIn** 项目，并在编辑器中打开 ThisAddIn 代码文件。
 

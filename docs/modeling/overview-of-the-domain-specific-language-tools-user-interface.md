@@ -9,16 +9,16 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, user interface
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 62dee3372f9d0c667c138e72c2ad58c886388f7a
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: fa47b10edc3804468f6ca0766872849ae9e8a949
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90808098"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959124"
 ---
 # <a name="overview-of-the-domain-specific-language-tools-user-interface"></a>域特定语言工具用户界面的概述
 首次在 Visual Studio 中打开特定于域的语言工具（DSL 工具）解决方案时，用户界面如下图所示。
@@ -31,7 +31,7 @@ ms.locfileid: "90808098"
 |-|-|
 |关系图|关系图显示域模型。<br /><br /> 关系图分为两侧。 一侧定义模型中的元素类型。 另一侧定义模型在屏幕上的显示方式。|
 |工具箱|从工具箱拖动工具，将域类和形状类型添加到关系图。 若要添加关系、连接符和形状映射，请依次单击工具、关系图上的源节点以及目标节点。|
-|DSL 资源管理器|**DSL 资源管理器**在 DSL 定义是活动窗口时出现。 它以树形图的形式显示 DSL。 DSL 资源管理器允许编辑关系图上未显示的模型功能。 例如，可以使用 **DSL 资源管理器**添加工具箱项和启动验证过程。|
+|DSL 资源管理器|**DSL 资源管理器** 在 DSL 定义是活动窗口时出现。 它以树形图的形式显示 DSL。 DSL 资源管理器允许编辑关系图上未显示的模型功能。 例如，可以使用 **DSL 资源管理器** 添加工具箱项和启动验证过程。|
 |“DSL 详细信息”窗口|“DSL 详细信息”窗口显示域模型元素的属性，使你可以控制元素的显示方式，以及元素的复制和删除方式  。<br /><br /> - 默认情况下，“DSL 详细信息”窗口出现在“错误列表”窗口和“输出”窗口旁边    。|
 
 ## <a name="the-domain-model-diagram"></a>域模型关系图

@@ -14,15 +14,15 @@ helpviewer_keywords:
 - tutorials, multithreaded debugging
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 30fd29357ab8b42ea6a8baa6412f9ccf7eafed28
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85350506"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870514"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序（C#、Visual Basic、C++）
 
@@ -48,26 +48,26 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
    在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。 
 
-   应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板（对于 C++，选择“控制台应用”模板），然后选择“下一步”    。
+   应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板（对于 C++，选择“控制台应用”模板），然后选择“下一步”  。
 
    > [!NOTE]
-   > 如果没有看到正确的模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序   。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”    。
+   > 如果没有看到正确的模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
 
-   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp    。 然后，选择“创建”  。
+   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“创建”  。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”  对话框的左窗格中，选择以下内容：
+   从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，选择以下内容：
 
-   - 对于 C# 应用，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”    。
+   - 对于 C# 应用，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”  。
    - 对于 Visual Basic 应用，在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”    。
-   - 对于 C++ 应用，在“Visual C++”  下，选择“Windows 桌面”  ，然后选择“Windows 控制台应用程序”  。
+   - 对于 C++ 应用，在“Visual C++”下，选择“Windows 桌面”，然后选择“Windows 控制台应用程序”。
 
-   如果没有看到“控制台应用(.NET Core)”项目模板，或者对于 C++，没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序     。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”    。
+   如果没有看到“控制台应用(.NET Core)”项目模板，或者对于 C++，没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序   。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
 
-   然后，键入名称（如 MyThreadWalkthroughApp  ），并单击“确定”  。
+   然后，键入名称（如 MyThreadWalkthroughApp），并单击“确定”。
 
-   选择“确定”  。
+   选择“确定”。
    ::: moniker-end
 
    新的控制台项目随即显示。 创建该项目后，将显示源文件。 根据所选语言，源文件名称可能是 Program.cs、MyThreadWalkthroughApp.cpp 或 Module1.vb    。
@@ -242,7 +242,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
 3. 在源代码编辑器中，找到包含断点的行。
 
-### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>发现线程标记  
+### <a name="discover-the-thread-marker"></a><a name="ShowThreadsInSource"></a>发现线程标记  
 
 1. 在调试工具栏中，选择“在源中显示线程”  按钮 ![在源中显示线程](../debugger/media/dbg-multithreaded-show-threads.png "ThreadMarker")。
 

@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1ccab1eddf38e2f93cb00f1f5fdea6ce09f2f05
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 13722aa9968e21d4208ad5aa99fefe4c985ffb79
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96328426"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99963492"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表 ( .vsct) 文件
 XML 命令表 (*.vsct*) 文件描述 VSPackage 的命令项的布局和外观。 命令项包括按钮、组合框、菜单、工具栏和命令项组。 本文介绍 XML 命令表文件、它们如何影响命令项和菜单，以及如何创建它们。
@@ -123,5 +123,5 @@ XML 命令表 (*.vsct*) 文件描述 VSPackage 的命令项的布局和外观。
 
  使用命令 **CreateExpInstance/Reset** 运行该工具。 请记住，此工具从实验性 hive 中删除通常不随一起安装的所有已注册的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

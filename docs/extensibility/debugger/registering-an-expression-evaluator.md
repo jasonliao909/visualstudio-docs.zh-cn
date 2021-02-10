@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 236be234-e05f-4ad8-9200-24ce51768ecf
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8f26eddf7191ee4393dd2ca986fe7a1d2c3af9e2
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1074e8dea5dfdb05571d3b1aa04e5c411530bb1f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847138"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99961100"
 ---
 # <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
@@ -112,7 +112,7 @@ namespace EEMC
 
 2. 调用 helper 函数 `SetEEMetric` 以便向 Visual Studio 注册下表中所示的 EE 指标。 `SetEEMetric`下面指定的函数和度量值是 *dbgmetric* 库的一部分。 有关详细信息，请参阅 [SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 。
 
-    |指标|描述|
+    |指标|说明|
     |------------|-----------------|
     |`metricCLSID`|`CLSID` EE 类工厂的|
     |`metricName`|可显示字符串形式的 EE 名称|
@@ -122,7 +122,7 @@ namespace EEMC
     > [!NOTE]
     > `metricLanguage``GUID`按名称标识语言，但它是 `guidLang` 用于选择语言的的参数 `SetEEMetric` 。 当编译器生成调试信息文件时，它应写入适当的， `guidLang` 以便 DE 知道要使用哪种 EE。 DE 通常会要求符号提供程序提供此语言，该提供程序 `GUID` 存储在调试信息文件中。
 
-3. 通过在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX. Y 下创建键来注册 Visual Studio \\ *X.Y*，其中， *x* 是要向其注册的 Visual studio 版本。
+3. 通过在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudioX. Y 下创建键来注册 Visual Studio \\ ，其中， *x* 是要向其注册的 Visual studio 版本。
 
 ### <a name="example"></a>示例
  以下函数说明了非托管代码 (c + +) EE 如何使用 Visual Studio 进行注册和注销。
@@ -211,6 +211,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [SDK 调试帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

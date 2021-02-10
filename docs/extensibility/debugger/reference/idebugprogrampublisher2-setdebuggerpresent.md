@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: c88c3ff4-3632-4199-b5de-83c6d21bcf75
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b551c644346b66d907fa4f75b11b24c8b9538e27
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: ef671690cdf9f0c6b84d3585aef3b23a6bbd8ba9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721599"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959501"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 通知程序发布者存在并正在运行调试器。
@@ -28,18 +28,18 @@ ms.locfileid: "80721599"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT SetDebuggerPresent(
-   BOOL fDebuggerPresent
+HRESULT SetDebuggerPresent(
+   BOOL fDebuggerPresent
 );
 ```
 
 ```csharp
-int SetDebuggerPresent(
-   int fDebuggerPresent
+int SetDebuggerPresent(
+   int fDebuggerPresent
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `fDebuggerPresent`\
 中非零 (`TRUE`) 如果存在调试器，则为零 (`FALSE`) （如果不存在）。
 

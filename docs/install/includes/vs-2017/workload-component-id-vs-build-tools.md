@@ -4,17 +4,17 @@ titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 来构建基于 Windows 的经典应用程序
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 2f2092143a79dae17c5c0138e51c10fc5d164cbd
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "76158838"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99881917"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 开发生成工具
 
@@ -147,9 +147,9 @@ Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn �
 
 组件 ID | “属性” | Version | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必选
+Microsoft.Net.Core.Component.SDK.2.1 | .NET Core 2.1 开发工具 | 15.8.27924.0 | 必需
 Microsoft.NetCore.BuildTools.ComponentGroup | .NET Core 生成工具 | 15.8.27906.1 | 必需
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必选
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必需
 Microsoft.Net.Core.Component.SDK | .NET Core 2.0 开发工具 | 15.6.27406.0 | 可选
 Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27406.0 | 可选
 
@@ -218,14 +218,14 @@ Microsoft.Net.ComponentGroup.4.7.DeveloperTools | .NET Framework 4.7 开发工�
 --- | --- | --- | ---
 Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Component.NetFX.Native | .NET Native | 15.0.26208.0 | 必需
-Microsoft.Component.VC.Runtime.OSSupport | 适用于 UWP 的 Visual C++ 运行时 | 15.6.27406.0 | 必选
+Microsoft.Component.VC.Runtime.OSSupport | 适用于 UWP 的 Visual C++ 运行时 | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.7.1.SDK | .NET Framework 4.7.1 SDK | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必选
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必选
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.VC.Tools.ARM | 用于 ARM 的 Visual C++ 编译器和库 | 15.8.27825.0 | 必需
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16 最新 v141 工具 | 15.9.28230.55 | 必需
-Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 通用 Windows 平台生成必备组件 | 15.8.27705.0 | 必选
+Microsoft.VisualStudio.ComponentGroup.UWP.BuildTools | 通用 Windows 平台生成必备组件 | 15.8.27705.0 | 必需
 Microsoft.VisualStudio.Component.Windows10SDK.17763 | Windows 10 SDK (10.0.17763.0) | 15.9.28307.102 | 建议
 Microsoft.VisualStudio.Component.Windows10SDK.10240 | Windows 10 SDK (10.0.10240.0) | 15.6.27406.0 | 可选
 Microsoft.VisualStudio.Component.Windows10SDK.10586 | Windows 10 SDK (10.0.10586.0) | 15.6.27406.0 | 可选
@@ -251,7 +251,7 @@ Microsoft.VisualStudio.ComponentGroup.Windows10SDK.16299 | Windows 10 SDK (10.0.
 
 组件 ID | “属性” | Version | 依赖项类型
 --- | --- | --- | ---
-Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必选
+Microsoft.VisualStudio.Component.Static.Analysis.Tools | 静态分析工具 | 15.0.26208.0 | 必需
 Microsoft.VisualStudio.Component.VC.CoreBuildTools | Visual C++ 生成工具的核心功能 | 15.8.27729.1 | 必需
 Microsoft.VisualStudio.Component.VC.Redist.14.Latest | Visual C++ 2017 Redistributable 更新 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16 最新 v141 工具 | 15.9.28230.55 | 必需
@@ -326,7 +326,7 @@ Microsoft.VisualStudio.Component.VC.Tools.x86.x64 | VC++ 2017 版本 15.9 v14.16
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
 Microsoft.Net.ComponentGroup.DevelopmentPrerequisites | .NET framework 4.6.1 开发工具 | 15.8.27825.0 | 必需
-Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必选
+Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必需
 Microsoft.VisualStudio.Component.TypeScript.3.1 | TypeScript 3.1 SDK | 15.0.28218.60 | 必需
 Microsoft.VisualStudio.Web.BuildTools.ComponentGroup | Web 开发生成工具 | 15.8.27729.1 | 必需
 Microsoft.Component.ClickOnce.MSBuild | ClickOnce 生成工具 | 15.7.27617.1 | 建议
@@ -368,11 +368,11 @@ Microsoft.Net.Core.Component.SDK.1x | .NET Core 1.0 - 1.1 开发工具 | 15.6.27
 
 组件 ID | “属性” | Version | 依赖项类型
 --- | --- | --- | ---
-Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必选
+Microsoft.Component.MSBuild | MSBuild | 15.7.27520.0 | 必需
 Microsoft.Net.Component.4.6.1.SDK | .NET Framework 4.6.1 SDK | 15.6.27406.0 | 必需
 Microsoft.Net.Component.4.6.1.TargetingPack | .NET Framework 4.6.1 目标包 | 15.6.27406.0 | 必需
 Microsoft.VisualStudio.Component.NuGet.BuildTools | NuGet 目标和生成任务 | 15.9.28016.0 | 必需
-Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必选
+Microsoft.VisualStudio.Component.Roslyn.Compiler | C# 和 Visual Basic Roslyn 编译器 | 15.6.27309.0 | 必需
 Component.Android.SDK25 | Android SDK 安装程序（API 级别 25） | 15.9.28107.0 | 可选
 Component.OpenJDK | Microsoft distribution OpenJDK | 15.9.28125.51 | 可选
 

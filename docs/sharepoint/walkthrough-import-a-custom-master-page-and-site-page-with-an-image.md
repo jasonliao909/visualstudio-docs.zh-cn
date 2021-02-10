@@ -12,15 +12,15 @@ helpviewer_keywords:
 - importing items [SharePoint development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7ceb69608a2d1770f082991f3d927d4e4639ae56
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 503ffc733a408787e7ecf188d893039759819c6d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95970158"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952572"
 ---
 # <a name="walkthrough-import-a-custom-master-page-and-site-page-with-an-image"></a>演练：导入带有图像的自定义母版页和网站页面
   本演练演示如何将 SharePoint 自定义母版页和包含图像的网站页面导入到 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint 项目中。
@@ -31,7 +31,7 @@ ms.locfileid: "95970158"
 
 - 将自定义母版页、图像和网站页导出到 SharePoint 解决方案 (*.wsp*) 文件中。
 
-- *.wsp* [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用 "导入 sharepoint 解决方案包" 项目将 .wsp 文件导入并部署到 SharePoint 项目中。
+-  [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 使用 "导入 sharepoint 解决方案包" 项目将 .wsp 文件导入并部署到 SharePoint 项目中。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 

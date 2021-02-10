@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 79808036-b680-4e4c-9c61-4ed43aa11323
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 355ca667f0f909ebedc6f404ded545b3f862a444
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 89d2da35fb7ffa81ec9f6a882e6b35d42fc8f00c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96914681"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952429"
 ---
 # <a name="debugger-contexts"></a>调试器上下文
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中，调试引擎 (DE) 在多个不同的上下文中同时运行，如下所示：
@@ -28,7 +28,7 @@ ms.locfileid: "96914681"
 
 - 表达式计算上下文，描述将在其中发生表达式求值的上下文。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [代码上下文](../../extensibility/debugger/code-context.md) 在当今的运行时体系结构与 nontraditional 的语言中，将代码上下文讨论为程序指令流中的一个地址，其中，代码可能不由说明表示，而是其他一些方法。
 
  [文档位置](../../extensibility/debugger/document-position.md) 在 Visual Studio 中定义文档位置，方法是通过将源文件中的位置抽象到 IDE 已知的方式进行调试。

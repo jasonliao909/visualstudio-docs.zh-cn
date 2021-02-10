@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: b9413b08-b3c3-4fc3-a6e0-3dc0db3652d7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf7f40224e2f197627bb995dc6cccdf297b46e5
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 3ea9300c96cf63c932d88335c0ca0f9fd4542f72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480468"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954769"
 ---
 # <a name="glyph-control-source-control-vspackage"></a> (源代码管理的标志符号控件 VSPackage) 
 可用于源代码管理的深度集成 Vspackage 是显示自己的标志符号，以指示源代码管理下项的状态的能力。
@@ -36,7 +36,7 @@ ms.locfileid: "96480468"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>使用方法 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 来获取显示各种源代码管理状态的图像列表。 源代码管理 VSPackage 返回到 IDE，其自定义标志符号的图像列表的句柄。 此时，IDE 将创建图像列表的副本，并在以后使用它来选择要显示的标志符号。 如果不支持新接口或 `IVsSccGlyphs::GetCustomGlyphList` 方法返回 `E_NOTIMPL` ，则 IDE 将从提供的标志符号的默认列表中获取其标志符号 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

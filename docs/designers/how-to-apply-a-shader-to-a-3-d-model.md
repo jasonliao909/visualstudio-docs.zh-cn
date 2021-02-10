@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b31e9002a97decf699ffbd589a1e0e656e3e403
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: bdaf4b86bfc773df678c03875a9ec260cd72084f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134114"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917081"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：向三维模型应用着色器
 
@@ -35,7 +35,7 @@ ms.locfileid: "93134114"
 
 ![显示基本颜色效果的三维场景](../designers/media/digit-3d-model-effect.png)
 
-将着色器应用到模型后，可在着色器设计器中打开它，方式是选择模型，然后在“属性”窗口的“效果”属性组的 **(Advanced)** 属性中选择省略号 ( **...** ) 按钮。
+将着色器应用到模型后，可在着色器设计器中打开它，方式是选择模型，然后在“属性”窗口的“效果”属性组的 **(Advanced)** 属性中选择省略号 (**...**) 按钮。
 
 ## <a name="see-also"></a>另请参阅
 

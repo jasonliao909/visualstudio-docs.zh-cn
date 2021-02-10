@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 559841d1-967c-4b51-8574-6ace23969580
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4b8725a6336218bdac413b12a20ff201dd0c287
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 6b63bbd3396e0a4119e59bd47bde31459b3d2145
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723161"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890508"
 ---
 # <a name="visible-timeline-profile"></a>可见时间线分析
 线程阻塞视图的可见时间线分析提供统计信息和报告的链接。 当进行放大、缩小、水平滚动屏幕、隐藏色条，或显示色条时，活动图例中的数字随之更改以反映当前视图中的内容。 若要查看有关图例中某个项的报告，请单击此项。

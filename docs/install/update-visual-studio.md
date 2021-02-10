@@ -14,15 +14,15 @@ f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 01bc8fe18ff32d5da3f56eb39465b3fc696239b4
-ms.sourcegitcommit: 172aaf05596a9d8ded298b7b104569c1cce6160e
+ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92007175"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935711"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -188,17 +188,17 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 1. 在安装程序中，查找已安装的 Visual Studio 版本。
 
-   例如，如果以前安装了 Visual&nbsp;Studio Community&nbsp;2019，并且具有该版本的更新，则安装程序中将显示“更新可用”消息。 
+   例如，如果以前安装了 Visual&nbsp;Studio Community&nbsp;2019，并且具有该版本的更新，则安装程序中将显示“更新可用”消息。
 
      ![选择要更新的 Visual Studio 2019 版本](media/vs-2019/vs-installer-update-visual-studio-community.png "选择要更新的 Visual Studio 2019 版本")
 
-1. 选择“更新”，以安装更新  。
+1. 选择“更新”，以安装更新。
 
     ![选择“更新”按钮来安装更新](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "选择“更新”按钮来安装更新")
 
 1. 更新完成后，系统可能会要求你重新启动计算机。 如果是这样，请执行该操作，然后像往常一样启动 Visual Studio。
 
-   如果系统不要求你重新启动计算机，请选择“启动”  以从安装程序启动 Visual Studio。
+   如果系统不要求你重新启动计算机，请选择“启动”以从安装程序启动 Visual Studio。
 
     ![选择“启动”按钮启动 Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "选择“启动”按钮启动 Visual Studio")
 
@@ -208,23 +208,23 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ### <a name="open-visual-studio"></a>打开 Visual Studio
 
-1. 在 Windows“开始”  菜单上，选择“Visual Studio 2019”  。
+1. 在 Windows“开始”菜单上，选择“Visual Studio 2019”。
 
     ![打开 Visual Studio 2019](media/vs-2019/vs-installer-visual-studio-2019.png "从 Windows 打开 Visual Studio 2019")
 
-1. 在“开始使用”下，选择任意选项以打开 IDE  。
+1. 在“开始使用”下，选择任意选项以打开 IDE。
 
     ![打开 Visual Studio 安装程序](media/vs2019-choose-option-from-get-started.png "打开 Visual Studio 安装程序")
 
-    Visual Studio 随即打开。 在 IDE 中，将显示“Visual Studio 2019 更新”消息  。
+    Visual Studio 随即打开。 在 IDE 中，将显示“Visual Studio 2019 更新”消息。
 
     ![IDE 中的“Visual Studio 2019 更新”消息](media/vs-2019/update-visual-studio-ide-message.png "IDE 中的“Visual Studio 2019 更新”消息")
 
-1. 在“Visual Studio 2019 更新”消息中，选择“查看详细信息”  。
+1. 在“Visual Studio 2019 更新”消息中，选择“查看详细信息”。
 
    ![在“Visual Studio 2019 IDE 更新”消息中，选择“查看详细信息”按钮](media/vs-2019/update-visual-studio-ide-view-details.png "在“Visual Studio 2019 更新”消息中，选择“查看详细信息”按钮")
 
-1. 在“已下载更新并准备安装”对话框中，选择“更新”  。
+1. 在“已下载更新并准备安装”对话框中，选择“更新”。
 
      ![在“已下载更新并准备安装”对话框中，选择“更新”按钮](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "在“已下载更新并准备安装”对话框中，选择“更新”按钮")
 
@@ -232,14 +232,14 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ### <a name="in-visual-studio"></a>在 Visual Studio 中
 
-1. 在菜单栏上，选择“帮助”  ，然后选择“检查更新”  。
+1. 在菜单栏上，选择“帮助”，然后选择“检查更新”。
 
      ![从“帮助”菜单中选择“检查更新”](media/vs-2019/vs-ide-check-updates-help-menu.png "从“帮助”菜单中选择“检查更新”")
 
     > [!NOTE]
     > 还可以使用 IDE 中的搜索框来检查更新。 按 Ctrl+Q，键入“检查更新”，然后选择匹配的搜索结果。
 
-1. 在“更新可用”  对话框中，选择“更新”  。
+1. 在“更新可用”对话框中，选择“更新”。
 
      ![在“可用更新”对话框中选择“更新”按钮](media/vs-2019/update-visual-studio-community-from-ide.png "在“可用更新”对话框中选择“更新”按钮")
 
@@ -249,18 +249,18 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 1. 在 Visual Studio 中，保存所做的工作。
 
-1. 从 Visual Studio IDE 的右下角选择通知图标，以打开“通知”  中心。
+1. 从 Visual Studio IDE 的右下角选择通知图标，以打开“通知”中心。
 
    ![Visual Studio IDE 中的通知图标](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知图标")
 
-1. 在“通知中心”  中，选择要安装的更新，然后选择“查看详细信息”  。
+1. 在“通知中心”中，选择要安装的更新，然后选择“查看详细信息”。
 
      ![Visual Studio 2019 中的通知中心](media/vs-2019/notification-hub-update.png "Visual Studio 2019 中的通知中心")
 
       > [!TIP]
       > Visual Studio 2019 版本的更新是累积的，因此始终选择安装具有最新版本号的版本。
 
-1. 在“更新可用”  对话框中，选择“更新”  。
+1. 在“更新可用”对话框中，选择“更新”。
 
    Visual Studio 将更新、关闭然后重新打开。
 
@@ -273,13 +273,13 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 * **在下载时安装**
 * **全部下载后再安装**
 
-还可以选择“自动下载更新”  设置，该设置允许在计算机处于空闲状态时下载更新。
+还可以选择“自动下载更新”设置，该设置允许在计算机处于空闲状态时下载更新。
 
 以下是操作方法：
 
 1. 在菜单栏上，依次选择“工具”>“选项”。
 
-2. 展开“环境”  ，然后选择“生产更新”  。
+2. 展开“环境”，然后选择“生产更新”。
 
     ![Visual Studio 中的更新设置](media/vs-2019/update-settings-options.png)
 

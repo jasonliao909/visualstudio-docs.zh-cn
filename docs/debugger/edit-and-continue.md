@@ -19,15 +19,15 @@ helpviewer_keywords:
 ms.assetid: 2cdd4531-7117-4221-a809-8447812de2a1
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c335ce5a394454daacd86338a96ba51d04c88c0e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 125368bf83e80b22be58a735271c4b1adfebeb9d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726535"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871866"
 ---
 # <a name="edit-code-and-continue-debugging-in-visual-studio-c-vb-c"></a>在 Visual Studio 中编辑代码并继续调试（C#、VB、C++）
 “编辑并继续”是一种省时的功能，使你能够在程序处于中断模式时更改源代码。 当你通过选择一条类似“继续”或“单步执行”的执行命令继续执行程序时，“编辑并继续”会有限制地自动应用代码更改 。 这允许你在调试会话期间更改代码，而不是停止程序，重新编译整个程序，再重新启动调试会话。

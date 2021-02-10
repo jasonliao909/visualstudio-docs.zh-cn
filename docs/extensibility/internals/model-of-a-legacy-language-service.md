@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: d8ae1c0c-ee3d-4937-a581-ee78d0499793
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2928d3c09a54ea8e9548f7751381279f153643e5
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 26b27bd6bef40a38e32e5b0d6d26e3d147659286
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97876735"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954632"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧版语言服务模型
 语言服务定义特定语言的元素和功能，并用于向编辑器提供特定于该语言的信息。 例如，编辑器需要了解语言的元素和关键字，以便支持语法着色。
@@ -41,7 +41,7 @@ ms.locfileid: "97876735"
 
   下表概述了模型中的对象。
 
-| 组件 | 对象 | 函数 |
+| 组件 | 对象 | 功能 |
 |------------------| - | - |
 | 文本缓冲区 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> | Unicode 读/写文本流。 文本可能会使用其他编码。 |
 | 代码窗口 | <xref:Microsoft.VisualStudio.TextManager.Interop.VsCodeWindow> | 包含一个或多个文本视图的文档窗口。 当 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 处于多文档界面 (MDI) 模式时，代码窗口是一个 mdi 子级。 |

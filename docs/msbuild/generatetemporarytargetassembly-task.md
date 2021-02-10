@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 92b6539c-6897-45e0-8989-0c234bbfe782
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a100ad8a3be57288e49a858d6f87851269df303
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: f4a41a5cbecea69d4843cbd70479a604f91b2218
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436763"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914740"
 ---
 # <a name="generatetemporarytargetassembly-task"></a>GenerateTemporaryTargetAssembly 任务
 
@@ -36,14 +36,14 @@ ms.locfileid: "92436763"
 | 参数 | 说明 |
 |--------------------------| - |
 | `AssemblyName` | 必需的 **String** 参数。<br /><br /> 指定为项目生成的程序集的短名称，该名称同时也是临时生成的目标程序集的名称。 例如，如果项目生成一个名为 WinExeAssembly.exe 的 Windows 可执行文件，则 AssemblyName 参数的值为 WinExeAssembly 。 |
-| `CompileTargetName` | 必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 MSBuild 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile** 。 |
-| `CompileTypeName` | 必需的 **String** 参数。<br /><br /> 指定由 **CompileTargetName** 参数所指定目标执行的编译的类型。 对于 **CoreCompile** 目标，此值为 **Compile** 。 |
+| `CompileTargetName` | 必需的 **String** 参数。<br /><br /> 指定用于从源代码文件生成程序集的 MSBuild 目标的名称。 **CompileTargetName** 的典型值为 **CoreCompile**。 |
+| `CompileTypeName` | 必需的 **String** 参数。<br /><br /> 指定由 **CompileTargetName** 参数所指定目标执行的编译的类型。 对于 **CoreCompile** 目标，此值为 **Compile**。 |
 | `CurrentProject` | 必需的 **String** 参数。<br /><br /> 为需要临时目标程序集的项目指定 MSBuild 项目文件的完整路径。 |
 | `GeneratedCodeFiles` | 可选的 **ITaskItem[]** 参数。<br /><br /> 指定由 [MarkupCompilePass1](../msbuild/markupcompilepass1-task.md) 任务生成的语言特定托管代码文件列表。 |
 | `IntermediateOutputPath` | 必需的 **String** 参数。<br /><br /> 指定在其中生成临时目标程序集的目录。 |
 | `MSBuildBinPath` | 必需的 **String** 参数。<br /><br /> 指定编译临时目标程序集所需的 *MSBuild.exe* 的位置。 |
 | `ReferencePath` | 可选的 **ITaskItem[]** 参数。<br /><br /> 按路径和文件名指定一列由编译到临时目标程序集中的类型所引用的程序集。 |
-| `ReferencePathTypeName` | 必需的 **String** 参数。<br /><br /> 指定编译目标 ( **CompileTargetName** ) 参数用于指定程序集引用列表 ( **ReferencePath** ) 的参数。 相应的值为 **ReferencePath** 。 |
+| `ReferencePathTypeName` | 必需的 **String** 参数。<br /><br /> 指定编译目标 (**CompileTargetName**) 参数用于指定程序集引用列表 (**ReferencePath**) 的参数。 相应的值为 **ReferencePath**。 |
 
 ## <a name="remarks"></a>注解
 
@@ -53,7 +53,7 @@ ms.locfileid: "92436763"
 
 ## <a name="example"></a>示例
 
-以下示例会生成一个临时程序集，因为 Page1.xaml 包含对同一项目中的类型的引用  。
+以下示例会生成一个临时程序集，因为 Page1.xaml 包含对同一项目中的类型的引用。
 
 ```xml
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">

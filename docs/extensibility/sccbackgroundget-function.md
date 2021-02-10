@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 69817e52-b9ac-4f4d-820b-2cc9c384f0dc
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b1c07076b6e257bd5519d19f841797fbc652f0c1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80701234"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952117"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 此函数从源控件中检索每个指定的文件，而无用户交互。
@@ -34,7 +34,7 @@ SCCRTN SccBackgroundGet(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pContext
 
 中源代码管理插件上下文指针。
@@ -61,7 +61,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |SCC_OK|操作已成功完成。|
 |SCC_E_BACKGROUNDGETINPROGRESS|正在进行后台检索 (仅当源代码管理插件不支持) 同时运行批处理操作时，才应返回此项。|

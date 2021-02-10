@@ -15,25 +15,25 @@ f1_keywords:
 ms.assetid: 28a0aef1-9353-4d94-95a5-54b42e15c0dc
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a127263bc9bf94997585d07bff1b8d317b282e91
-ms.sourcegitcommit: a7944c325bedd8efbb244452741864089a02f5db
+ms.openlocfilehash: 27b2c5765f041252e62defd15a3c7b6d7b460b43
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91947734"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932457"
 ---
 # <a name="options-dialog-box-text-editor--javascript--formatting"></a>“选项”对话框：“文本编辑器”\>“JavaScript”\>“格式设置”
 
-使用“选项”  对话框的“格式设置”  页在代码编辑器中设置用于代码格式设置的选项。 要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript/TypeScript” > “格式设置”    。
+使用“选项”对话框的“格式设置”页在代码编辑器中设置用于代码格式设置的选项。 要访问此页，请先依次选择菜单栏中的“工具” > “选项”，再依次展开“文本编辑器” > “JavaScript/TypeScript” > “格式设置”    。
 
 [!INCLUDE[note_settings_general](../../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="automatic-formatting"></a>自动格式设置
 
-这些选项可确定在“源”  视图中设置格式的时间。
+这些选项可确定在“源”视图中设置格式的时间。
 
 ### <a name="uielement-list"></a>UIElement 列表
 
@@ -58,7 +58,7 @@ ms.locfileid: "91947734"
 
 ## <a name="spacing"></a>间距
 
-这些选项可确定在“源”视图中插入空格的方式  。
+这些选项可确定在“源”视图中插入空格的方式。
 
 ### <a name="uielement-list"></a>UIElement 列表
 

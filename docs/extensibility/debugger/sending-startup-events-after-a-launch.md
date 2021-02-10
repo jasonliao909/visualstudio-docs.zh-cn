@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 306ea0b4-6d9e-4871-8d8d-a4032d422940
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99b094fd1019e0d7dea09e2953cb4f31e03b80dc
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: e5263c696f9f76c71463538d56414702e616a670
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847879"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960840"
 ---
 # <a name="send-startup-events-after-a-launch"></a>启动后发送启动事件
 调试引擎 (DE) 附加到程序后，它会向调试会话发送一系列启动事件。
@@ -45,6 +45,6 @@ ms.locfileid: "96847879"
 
   当代码已加载并准备好运行，但在执行任何代码之前，DE 将发送 SDM a [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) load 完成事件。 最后，如果程序未在运行，则 DE 将发送 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 入口点事件，并发出信号表明程序已到达其主入口点，并且已准备好进行调试。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [控制执行](../../extensibility/debugger/control-of-execution.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

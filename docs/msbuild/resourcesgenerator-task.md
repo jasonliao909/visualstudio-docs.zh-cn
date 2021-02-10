@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: e782bbac-9ee6-472b-8171-3ee008c77b4e
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 288d83cd16b9faebc9c6826a08da7c11811663d5
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a26c8bfc29ca985a725deea6c75b14d68abb9eb4
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048485"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99937883"
 ---
 # <a name="resourcesgenerator-task"></a>ResourcesGenerator 任务
 

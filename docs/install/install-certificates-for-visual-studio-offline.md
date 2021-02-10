@@ -10,17 +10,17 @@ helpviewer_keywords:
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ae91cc1982fa41022981c940df5436c5ea5e8e5b
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750171"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99941549"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -178,7 +178,7 @@ Visual Studio 安装程序只需要在系统上安装根证书。
 
 检查安装系统的一种方法是按以下步骤操作：
 
-1. 运行 **mmc.exe** 。<br/>
+1. 运行 **mmc.exe**。<br/>
   a. 单击“文件”，然后选择“添加/删除管理单元”   。<br/>
   b. 双击“证书”，选择“计算机帐户”，然后单击“下一步”    。<br/>
   c. 选择“本地计算机”，依次单击“完成”和“确定”    。<br/>

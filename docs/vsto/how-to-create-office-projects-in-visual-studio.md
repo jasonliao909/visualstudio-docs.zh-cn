@@ -21,15 +21,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], creating projects
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 652b7676ddf5d7e095010e711ab0dabc5b5f2ab7
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 1d0bd242f3a57031442cb0b39e62a28c01ad1a6b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96844369"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962387"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Visual Studio 中创建 Office 项目
   你可以使用 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 来创建 Microsoft Office 应用程序的 VSTO 外接程序和文档级自定义项。 有关这些项目类型的详细信息，请参阅 [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -42,7 +42,7 @@ ms.locfileid: "96844369"
 
 1. 在“文件”菜单上，选择“新建” > “项目”  。 如果集成开发环境 (IDE) 设置为 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] "使用开发设置"，请在 "**文件**" 菜单上选择 "**新建**  >  **项目**"。
 
-    此时将出现“新建项目”  对话框。
+    将显示“新建项目”对话框。
 
    > [!NOTE]
    > 默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅 [.NET Framework 客户端配置文件](/dotnet/framework/deployment/client-profile)。
@@ -84,7 +84,7 @@ ms.locfileid: "96844369"
 
    * 百分号 (%)
 
-7. 选择 **“确定”** 按钮。
+7. 选择“确定”  按钮。
 
    ::: moniker range="vs-2017"
 
@@ -97,7 +97,7 @@ ms.locfileid: "96844369"
 
 1. 在“文件”菜单上，选择“新建” > “项目”  。 如果 IDE 设置为使用 Visual Basic 开发设置，请在 "**文件**" 菜单上选择 "**新建**  >  **项目**"。
 
-    此时将出现“新建项目”  对话框。
+    将显示“新建项目”对话框。
 
 2. 在 "模板" 窗格中要使用的语言节点下，展开 " **Office/SharePoint**"。
 
@@ -113,7 +113,7 @@ ms.locfileid: "96844369"
    > [!NOTE]
    > 不能在项目位置路径或项目名称中使用代理项字符。 此外，如果计划部署脱机使用的解决方案，则该项目名称中的字符必须符合 HTTP 协议规范。
 
-6. 选择 **“确定”** 按钮。
+6. 选择“确定”  按钮。
 
     将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -160,7 +160,7 @@ ms.locfileid: "96844369"
 
      有关如何向受信任位置添加文档的详细信息，请参阅 Microsoft Office Online 网站 [创建、删除或更改文件的受信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 项目模板概述](../vsto/office-project-templates-overview.md)
 - [开发 Office 解决方案的协作开发](../vsto/collaborative-development-of-office-solutions.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

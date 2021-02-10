@@ -9,16 +9,16 @@ f1_keywords:
 - Annotation
 ms.assetid: 9aa0e8d6-8129-4438-8389-d460611581a7
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 0fe5b766c0c5545a1cc3839e29d71e3f3b7a1f39
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.openlocfilehash: 9417dd0084b381d8fc997a90b4690c49191f4785
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94437952"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99971695"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 
@@ -41,7 +41,7 @@ ms.locfileid: "94437952"
 
 ## <a name="adding-an-annotation-to-an-activity-in-the-designer"></a>在设计器中将批注添加到活动
 
-1. 在工作流设计器中，右键单击工作流设计器中的项，然后选择 " **批注** "、" **添加批注** "。
+1. 在工作流设计器中，右键单击工作流设计器中的项，然后选择 " **批注**"、" **添加批注**"。
 
 1. 在提供的空白处添加批注的文本。
 
@@ -61,21 +61,21 @@ ms.locfileid: "94437952"
 
 ## <a name="showing-or-hiding-all-annotations"></a>显示或隐藏所有批注
 
-1. 右键单击一个有批注的活动。 选择 " **批注** "， **显示所有批注** 。
+1. 右键单击一个有批注的活动。 选择 " **批注**"， **显示所有批注**。
 
    所有批注都显示在活动的设计器中。
 
-1. 若要显示活动设计器外部的所有批注，请右键单击该活动，然后选择 " **批注** "， **隐藏所有批注** 。
+1. 若要显示活动设计器外部的所有批注，请右键单击该活动，然后选择 " **批注**"， **隐藏所有批注**。
 
 ## <a name="editing-or-deleting-an-annotation-for-an-activity"></a>编辑或删除活动的批注
 
 1. 右键单击一个有批注的活动。
 
-1. 选择 " **批注** "、" **编辑批注** " 或 " **删除批注** "。
+1. 选择 " **批注**"、" **编辑批注** " 或 " **删除批注**"。
 
    将打开批注以进行编辑或删除。
 
-1. 若要一次删除所有批注，请右键单击工作流设计器，然后选择 " **批注** "， **删除所有批注** 。
+1. 若要一次删除所有批注，请右键单击工作流设计器，然后选择 " **批注**"， **删除所有批注**。
 
 ## <a name="adding-editing-and-deleting-an-annotation-for-a-variable-or-argument"></a>添加、编辑和删除变量或参数的批注
 

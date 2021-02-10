@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5991bf0b14cf4952303dba599ad47e4c8fd27a9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: cf7832d71ab86c6dab973a07dbc46217274cb83b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99870891"
 ---
 # <a name="error-web-site-worker-process-has-been-terminated-by-iis"></a>错误：网站工作进程已被 IIS 终止
 调试器已停止对网站执行代码。 这导致 Internet Information Services (IIS) 认为辅助进程已停止响应。 因此，IIS 终止了辅助进程。
@@ -32,9 +32,9 @@ ms.locfileid: "90852408"
 
    1. 单击“开始”，然后选择“控制面板” 。
 
-   2. 在**控制面板**中，选择**切换到经典视图**（如有必要），然后双击**管理工具**。
+   2. 在 **控制面板** 中，选择 **切换到经典视图**（如有必要），然后双击 **管理工具**。
 
-2. 在**管理工具**窗口中，双击**Internet Information Services (IIS) Manager**。
+2. 在 **管理工具** 窗口中，双击 **Internet Information Services (IIS) Manager**。
 
     IIS 管理器随即打开。
 
@@ -42,9 +42,9 @@ ms.locfileid: "90852408"
 
 4. 在 \<computer name> 节点下，单击“应用程序池”。
 
-5. 在**应用程序池**列表中，右键单击你的应用程序运行所在的池的名称，然后单击**高级设置**。
+5. 在 **应用程序池** 列表中，右键单击你的应用程序运行所在的池的名称，然后单击 **高级设置**。
 
-6. 在**高级设置**对话框中，找到**进程模型**部分，然后执行以下操作之一：
+6. 在 **高级设置** 对话框中，找到 **进程模型** 部分，然后执行以下操作之一：
 
    - 将“启用 Ping”设置为“False” 。
 

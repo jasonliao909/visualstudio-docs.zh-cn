@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: b9da45ae-d6a6-4399-8628-397deed31486
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f00de870986cf020e91ff992dabb2681469ae5b
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: 226b86d621de2faee5a71d9fdb3fea39f20b984e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796766"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99888116"
 ---
 # <a name="compare-properties-and-items"></a>比较属性和项
 
@@ -29,7 +29,7 @@ MSBuild 属性和项都用于将信息传递给任务、评估条件，以及存
 
 ## <a name="scalars-and-vectors"></a>标量和矢量
 
-由于 MSBuild 属性是只有一个字符串值的名称/值对，所以它们通常被描述为 *标量* 。 由于 MSBuild 项类型是项列表，所以它们通常被描述为 *矢量* 。 但是实际上，属性可以表示多个值，而项类型可以有零个或一个项。
+由于 MSBuild 属性是只有一个字符串值的名称/值对，所以它们通常被描述为 *标量*。 由于 MSBuild 项类型是项列表，所以它们通常被描述为 *矢量*。 但是实际上，属性可以表示多个值，而项类型可以有零个或一个项。
 
 ### <a name="target-dependency-injection"></a>目标依赖关系注入
 

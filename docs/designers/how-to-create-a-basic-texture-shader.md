@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 5af113fb-6415-4be0-8b23-10fddb10e80a
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 93696dfe9fbf3b8db1d4be137ced6798b3a60aae
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 832d8aac861163c0d1c6b56c340502e32b2f555b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134493"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915680"
 ---
 # <a name="how-to-create-a-basic-texture-shader"></a>如何：创建基本纹理着色器
 
@@ -37,7 +37,7 @@ ms.locfileid: "93134493"
 
 5. 选择要应用的纹理。 在“选择”模式中，选择“纹理样本”节点，然后在“属性”窗口中通过“文件名”属性指定要使用的纹理。
 
-6. 使纹理可公开访问。 选择“纹理样本”节点，然后在“属性”窗口中将“访问”属性设置为“公共”。 现可利用其他工具（如 **模型编辑器** ）设置纹理。
+6. 使纹理可公开访问。 选择“纹理样本”节点，然后在“属性”窗口中将“访问”属性设置为“公共”。 现可利用其他工具（如 **模型编辑器**）设置纹理。
 
 7. 将纹理坐标连接到纹理样本。 在“选择”模式下，将“纹理坐标”节点的“输出”终端移到“纹理样本”节点的“UV”终端。 此连接在指定坐标处对纹理进行采样。
 

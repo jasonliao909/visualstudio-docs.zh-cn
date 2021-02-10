@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: 2eb93653-b5fb-45b6-b136-56008c5d25ef
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a48e082556cf96a35ed83afd5008d3240e600b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f105bdb8cd73812c4c6f5efdf6b2a102df490a39
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80721762"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99959644"
 ---
 # <a name="idebugprogramprovider2watchforproviderevents"></a>IDebugProgramProvider2::WatchForProviderEvents
 允许系统通知端口事件。
@@ -28,28 +28,28 @@ ms.locfileid: "80721762"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT WatchForProviderEvents(
-   PROVIDER_FLAGS       Flags,
-   IDebugDefaultPort2*  pPort,
-   AD_PROCESS_ID        processId,
-   CONST_GUID_ARRAY     EngineFilter,
-   REFGUID              guidLaunchingEngine,
-   IDebugPortNotify2*   pEventCallback
+HRESULT WatchForProviderEvents(
+   PROVIDER_FLAGS       Flags,
+   IDebugDefaultPort2*  pPort,
+   AD_PROCESS_ID        processId,
+   CONST_GUID_ARRAY     EngineFilter,
+   REFGUID              guidLaunchingEngine,
+   IDebugPortNotify2*   pEventCallback
 );
 ```
 
 ```csharp
-int WatchForProviderEvents(
-   enum_PROVIDER_FLAGS   Flags,
-   IDebugDefaultPort2    pPort,
-   AD_PROCESS_ID         ProcessId,
-   CONST_GUID_ARRAY      EngineFilter,
-   ref Guid              guidLaunchingEngine,
-   IDebugPortNotify2     pEventCallback
+int WatchForProviderEvents(
+   enum_PROVIDER_FLAGS   Flags,
+   IDebugDefaultPort2    pPort,
+   AD_PROCESS_ID         ProcessId,
+   CONST_GUID_ARRAY      EngineFilter,
+   ref Guid              guidLaunchingEngine,
+   IDebugPortNotify2     pEventCallback
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `Flags`\
 中 [PROVIDER_FLAGS](../../../extensibility/debugger/reference/provider-flags.md) 枚举中的标志的组合。 下面是此调用的典型标志：
 
@@ -82,7 +82,7 @@ int WatchForProviderEvents(
  如果调用方想要删除使用之前调用此方法建立的事件处理程序，则调用方传递的参数与第一次调用时的参数相同，但离开了 `PFLAG_REASON_WATCH` 标志。
 
 ## <a name="example"></a>示例
- 下面的示例演示如何为公开[IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)接口的**CDebugEngine**对象实现此方法。
+ 下面的示例演示如何为公开 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)接口的 **CDebugEngine** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CDebugEngine::WatchForProviderEvents(

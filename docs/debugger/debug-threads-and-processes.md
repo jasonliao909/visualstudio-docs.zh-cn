@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: 9f0c8505-b6b2-452b-adfd-076db14d8115
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 51917065e8764f7edbebbdb3bfcc7a03cc9723d4
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 7d3b2bc8a0a9011c04642070125c247a8dceed66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727146"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873179"
 ---
 # <a name="tools-to-debug-threads-and-processes-in-visual-studio"></a>Visual Studio 中用于调试线程和进程的工具
 在计算机科学中，“线程”和“进程”是两个相关的概念 。 二者都表示必须按特定顺序执行的指令序列。 但是不同线程或进程中的指令可以并行执行。

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719ce0ac88761599fbed7da90643fd8a9d79db69
-ms.sourcegitcommit: 94a57a7bda3601b83949e710a5ca779c709a6a4e
+ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97715816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99952091"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 复合模式将交互和设计元素组合到不同的配置中。 Visual Studio 中有关一致性的一些最重要的组合模式包括：
@@ -272,7 +272,7 @@ ms.locfileid: "97715816"
 
 - 相互
 
-- Region
+- 区域
 
 #### <a name="scope"></a>范围
  最重要的选择组件是确保用户知道他们在哪个窗口中工作 (激活) 并将焦点置于 (选择) 。 Visual Studio 扩展了 Windows 中的窗口管理功能，但激活方案相同：与窗口交互会将焦点放在窗口中。 Visual Studio 具有两个用于激活的指示器：一个用于文档窗口，一个用于工具窗口。
@@ -395,7 +395,7 @@ ms.locfileid: "97715816"
 #### <a name="graphical-object-selection-appearance"></a><a name="BKMK_GraphicalObjectSelectionAppearance"></a> 图形对象选择外观
  选择控点是围绕对象的边界框围绕矩形模式绘制的正方形。 下图显示了图形对象可以具有的处理、调整大小和就地编辑外观的各种状态的示例。 应使用 **GetSystemMetrics** API 将句柄的大小绑定到窗口边框和边缘指标。
 
-| 州省/自治区/直辖市 | 外观 | 视觉对象详细信息 |
+| 状态 | 外观 | 视觉对象详细信息 |
 |-------------------------|---------------| - |
 | **未选定** | 默认 | ![默认按钮状态](../../extensibility/ux-guidelines/media/0713-10_defaultstate.png "0713-10_DefaultState") |
 | **主要选择** | 改变 | ![具有重设大小句柄的主要选择](../../extensibility/ux-guidelines/media/0713-11_primaryresize.png "0713-11_PrimaryResize") |
@@ -439,9 +439,9 @@ ms.locfileid: "97715816"
 
 | 对象 | 选择 |
 |--------|------------|
-| 列出 | 系列 |
-| 列出 | 相互 |
-| 列出 | Region |
+| 列表 | 系列 |
+| 列表 | 相互 |
+| 列表 | 区域 |
 
  在列表上单击 "一次" 将选择在其中发生单击的行。 如果用户在支持就地编辑的列表单元中单击，则还会立即激活单元格进行就地编辑。 否则，将立即选择整行并显示突出显示。
 
@@ -484,7 +484,7 @@ ms.locfileid: "97715816"
 |对话框|对话框的位置（如果已移动）<br /><br /> 用户上次在对话框中使用的视图|当对话框关闭时<br /><br /> Visual Studio 会话结束时|内存中<br /><br /> **HKEY_Current_User** 中的注册表|
 |窗口|窗口的大小和位置|当窗口关闭时<br /><br /> Visual Studio 模式更改时<br /><br /> Visual Studio 会话结束时|项目的 **用户选项 ( .suo)** 文件<br /><br /> 用于窗口设置的自定义选项文件|
 |文档|文档中的当前选定内容<br /><br /> 文档视图<br /><br /> 用户访问的最后几个位置|保存文档时|项目的 **用户选项 ( .suo)** 文件|
-|项目|文件引用<br /><br /> 对磁盘上的目录的引用<br /><br /> 对其他软件的引用<br /><br /> 组件<br /><br /> 有关项目本身的状态信息|保存项目时|项目文件|
+|Project|文件引用<br /><br /> 对磁盘上的目录的引用<br /><br /> 对其他软件的引用<br /><br /> 组件<br /><br /> 有关项目本身的状态信息|保存项目时|项目文件|
 |解决方案|对项目的引用<br /><br /> 文件引用|保存项目或解决方案时|**解决方案 ( .sln)** 文件|
 |**工具 > 选项** 中的设置|键盘自定义<br /><br /> 工具栏自定义<br /><br /> 配色方案|当 " **工具 > 选项** " 对话框关闭时<br /><br /> Visual Studio 会话结束时|**HKEY_Current_User** 中的注册表|
 

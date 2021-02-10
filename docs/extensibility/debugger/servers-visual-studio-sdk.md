@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 62236d64-7956-448c-9ac3-5528f3edac1d
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9eaccebf874fa5fc0e7aaf63823547742215a568
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: d60c214fce57f5958d8b30ca231c3e8a2bc05194
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96845292"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960801"
 ---
 # <a name="servers-visual-studio-sdk"></a>服务器 (Visual Studio SDK)
 在调试程序体系结构中， *服务器*：
@@ -29,7 +29,7 @@ ms.locfileid: "96845292"
 
 - 由 [IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md) 接口表示，此接口仅由 visual studio 为运行) 的每个 visual studio 实例 (服务器的一个实例实现。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [端口](../../extensibility/debugger/ports.md)
 - [端口供应商](../../extensibility/debugger/port-suppliers.md)
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)

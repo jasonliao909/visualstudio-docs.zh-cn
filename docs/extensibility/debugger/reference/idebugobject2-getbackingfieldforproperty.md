@@ -9,18 +9,18 @@ helpviewer_keywords:
 ms.assetid: e72c6338-5573-4fad-8075-f3ade3435424
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5b9fed9b071f34c119c8e4a5af12c1df7990f4c
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f502479d4c74eb0b5cfa71db52698121830e66e6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80726240"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99953469"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
 如果任何可能支持此对象所表示的属性的) ，则获取字段或变量 (。
@@ -28,18 +28,18 @@ ms.locfileid: "80726240"
 ## <a name="syntax"></a>语法
 
 ```cpp
-HRESULT GetBackingFieldForProperty(
-   IDebugObject2** ppObject
+HRESULT GetBackingFieldForProperty(
+   IDebugObject2** ppObject
 );
 ```
 
 ```csharp
-int GetBackingFieldForProperty(
-   out IDebugObject2 ppObject
+int GetBackingFieldForProperty(
+   out IDebugObject2 ppObject
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppObject`\
 弄描述支持字段的 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 对象。
 

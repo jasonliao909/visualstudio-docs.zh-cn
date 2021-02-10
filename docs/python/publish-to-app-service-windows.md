@@ -5,18 +5,18 @@ ms.date: 01/07/2019
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 9a3aee5dc1c2d1272c3814fa6cfb2561f6cb4564
-ms.sourcegitcommit: a801ca3269274ce1de4f6b2c3f40b58bbaa3f460
+ms.openlocfilehash: af3e7c2d74a9d7b3a95ae24bba37981822247728
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2020
-ms.locfileid: "88801303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99912559"
 ---
 # <a name="publishing-to-azure-app-service-on-windows"></a>发布到 Windows 上的 Azure 应用服务
 
@@ -163,7 +163,7 @@ Visual Studio 2017 及更高版本与 Visual Studio 2015 的发布过程有所�
     python -m pip install --upgrade -r /home/site/wwwroot/requirements.txt
     ```
 
-    如果运行此命令时显示权限错误，请仔细检查，确保是在站点扩展文件夹中运行此命令，而*不是*在 App Service 的某个默认 Python 安装文件夹中运行此命令。 由于你无法修改这些默认环境，因此尝试安装程序包当然会失败。
+    如果运行此命令时显示权限错误，请仔细检查，确保是在站点扩展文件夹中运行此命令，而 *不是* 在 App Service 的某个默认 Python 安装文件夹中运行此命令。 由于你无法修改这些默认环境，因此尝试安装程序包当然会失败。
 
     d. 若要获取详细的错误输出，请向 `<system.webServer>` 节点中的 `web.config` 添加以下行，以提供更详细的错误输出：
 

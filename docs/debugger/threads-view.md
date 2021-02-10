@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: abfb4e9e-1622-47c9-afda-b6b71a9d88e4
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 356db0f3ad8308edae2910e060b5b08731f9aabb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: fb0a0f4a1610eb23d68b6965e3f45a661ba25366
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150205"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99940587"
 ---
 # <a name="threads-view"></a>线程视图
 线程视图是与系统上的窗口关联的所有线程的简单列表。 会显示每个线程的线程 ID 和模块名称。 不包括进程，但是可以轻松查找拥有所选线程的进程。

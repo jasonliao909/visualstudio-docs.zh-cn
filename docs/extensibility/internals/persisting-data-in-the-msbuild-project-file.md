@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 6a920cb7-453d-4ffd-af1c-6f3084bd03f7
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20c6d79e6ea59b4993b4d6bfc5e165bdd952a3f9
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: d2011cd8686f3210ee534fdaefaa26d2f3b4ad5e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97878074"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954444"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>保留 MSBuild 项目文件中的数据
 项目子类型可能需要将特定于子类型的数据保存到项目文件中供以后使用。 项目子类型使用项目文件暂留满足以下要求：
@@ -26,7 +26,7 @@ ms.locfileid: "97878074"
 
     1. 独立于配置的数据。 也就是说，存储在具有空白或缺失条件的 MSBuild 元素中的数据。
 
-    2. 依赖于配置的数据。 也就是说，存储在可用于特定项目配置的 MSBuild 元素中的数据。 例如：
+    2. 依赖于配置的数据。 也就是说，存储在可用于特定项目配置的 MSBuild 元素中的数据。 例如： 。
 
         ```
         <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">

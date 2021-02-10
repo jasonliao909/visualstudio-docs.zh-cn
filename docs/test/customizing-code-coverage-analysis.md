@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 99eb322e1eebe2d8845b355cd76a9e34a7516348
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441823"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99964402"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 
@@ -120,9 +120,9 @@ ms.locfileid: "95441823"
 
 Include 和 exclude 节点使用正则表达式，它们与通配符不同。 所有匹配项都不区分大小写。 下面是一些示例：
 
-- * *.\** _ 与包含任意字符的字符串匹配
+- .\* 与任意字符组成的字符串匹配
 
-- _ *\\.* * 与句点“.”匹配
+- **\\.** 与句点“.”匹配
 
 - **\\(   \\)** 与括号“(  )”匹配
 

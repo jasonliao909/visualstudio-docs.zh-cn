@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectOutputFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ffe6f95bdfd7795c837aaaa25ec7ef2a35a7ae76
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a3b5a0f6474231fdc8f7617040ec4aa57056d9c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95442023"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99966950"
 ---
 # <a name="projectoutputfile-element"></a>ProjectOutputFile 元素
   表示在将项目项部署到 SharePoint 时要包含的单独项目的输出。
@@ -41,7 +41,7 @@ ms.locfileid: "95442023"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |**ProjectId**|必需的 **xs： string** 特性。<br /><br /> 要包括其输出的依赖项目的 GUID。 这对应于依赖项目文件中的 **ProjectGuid** 元素。|
 |**ProjectPath**|必需的 **xs： string** 特性。<br /><br /> 包含要包含的输出的依赖项目的相对路径，包括项目文件名。 此路径相对于包含 SharePoint 项目项的 SharePoint 项目的根文件夹。|
@@ -57,7 +57,7 @@ ms.locfileid: "95442023"
 |-------------|-----------------|
 |[文件](../sharepoint/files-element.md)|指定将 SharePoint 项目项部署到 SharePoint 时要包含的文件。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  使用 **ProjectOutputFile** 元素将项目的输出包含在 SharePoint 项目项的部署中。 可以指定不同的项目，也可以指定包含项目项的项目。 有关详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。
 
 ## <a name="element-information"></a>元素信息

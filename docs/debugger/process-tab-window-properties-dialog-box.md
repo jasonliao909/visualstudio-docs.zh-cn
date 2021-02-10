@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: bb464429-4e7c-4919-98b5-1aaafe89bb5f
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4056308f033ef61aa41456d287e7088c8bc6348b
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: 0ed68cd77329ef34c15a85a470a219b9b0899464
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975064"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891483"
 ---
 # <a name="process-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“进程”选项卡
 使用“进程”选项卡可标识所选窗口的进程。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

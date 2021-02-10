@@ -10,22 +10,22 @@ helpviewer_keywords:
 ms.assetid: cca0a9ed-48ff-409f-8036-ed8db0f7533e
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69e526cea292544c725abc7ffb54d0b29ad88403
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 9be8b97b3e37a224b12781e66543f7ab126f2c6f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305579"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99958526"
 ---
 # <a name="create-a-source-control-vspackage"></a>创建源代码管理 VSPackage
 此文档包括以下内容的链接：与集成的源代码管理包的结构概述 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 、要实现的接口定义的 API 以及要使用的服务，以及阐释简单源代码管理包实现的示例。
 
  使用源代码管理 VSPackage，可以为源代码管理创建与集成的深度集成路径 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 它使包能够绕过承载的默认源代码管理 UI [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，响应来自项目系统的源代码管理请求，并与 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **解决方案资源管理器** 等组件进行交互。 为 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 合作伙伴提供一种机制，用于创建可 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用服务模型集成的 VSPackage。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
 - [入门](../../extensibility/internals/getting-started-with-source-control-vspackages.md)
 
  讨论源代码管理包，它是源代码管理插件的一种更高级的替代项，用于实现中的源代码管理功能 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

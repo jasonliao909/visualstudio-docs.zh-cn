@@ -11,15 +11,15 @@ dev_langs:
 - C++
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7bf6e42936c1917e76f8ad5bf2877aba3050edc9
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 1d4146ff8acd3b1f1673d3ba25963e02aee36514
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852597"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99871515"
 ---
 # <a name="error-mixed-mode-debugging-is-supported-only-when-using-microsoft-net-framework-20-or-greater"></a>错误：仅当使用 Microsoft .NET Framework 2.0 或更高版本时，才支持混合模式调试
 若要调试混合的本机代码和托管代码，必须安装有 .NET Framework 版本 2.0、3.0、 3.5 或 4 版。 早期版本的 .NET Framework 不支持混合模式调试。
