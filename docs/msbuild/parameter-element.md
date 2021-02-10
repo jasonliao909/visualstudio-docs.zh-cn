@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: b273afff-b500-4e97-8cfd-31f39fa64a51
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7aa8809cbce8f07e18666afb1734026fdc9694b
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 728618a6d9ff174d4d4bf7cdc20516433d06036b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048885"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918863"
 ---
 # <a name="parameter-element"></a>Parameter 元素
 
@@ -48,7 +48,7 @@ ms.locfileid: "93048885"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|特性|描述|
 |---------------|-----------------|
 |`ParameterType`|可选特性。<br /><br /> 参数的 .NET 类型，例如，`System.String`。|
 |`Output`|可选布尔属性。<br /><br /> 如果值为 `true`，该参数是任务的输出参数。 默认情况下，该值为 `false`。|

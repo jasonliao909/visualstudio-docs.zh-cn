@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 989bcd560c2c5cd9a7d8c571208bfab84adbd493
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: e6c0beb70379d8b79a3e1826ba74f34202eea19f
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436720"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914458"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 
@@ -32,7 +32,7 @@ ms.locfileid: "92436720"
 
 ### <a name="to-create-a-directory-for-output-items"></a>创建输出项目录
 
-1. 使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 BuiltApp 的目录  ：
+1. 使用 `Property` 元素定义目录的位置和名称。 例如，在包含项目文件和源文件的目录中创建一个名为 BuiltApp 的目录：
 
      `<builtdir>BuiltApp</builtdir>`
 
@@ -57,11 +57,11 @@ ms.locfileid: "92436720"
 
  以下代码示例项目包含一个新目标 `Clean`，该目标使用 `RemoveDir` 任务删除目录和该目录中包含的所有文件和目录。 此外，在此示例中，`Compile` 目标还将为清理生成时删除的输出项创建一个单独的目录。
 
- 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 -target  指定其他目标。 例如：
+ 由于 `Compile` 被定义为默认目标，因此，除非另外指定一个或多个目标，否则会自动使用该默认目标。 使用命令行开关 -target 指定其他目标。 例如：
 
  `msbuild <file name>.proj -target:Clean`
 
- -target  开关可缩写为 -t  ，并能指定多个目标。 例如，若要依次使用目标 `Clean` 和 `Compile`，请键入：
+ -target 开关可缩写为 -t，并能指定多个目标。 例如，若要依次使用目标 `Clean` 和 `Compile`，请键入：
 
  `msbuild <file name>.proj -t:Clean;Compile`
 

@@ -7,15 +7,15 @@ ms.topic: conceptual
 ms.assetid: eecbcd65-9fbc-4307-a321-46d3c3b79b12
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 47b4ba2c27e130580af961216739289c6c7e9585
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 9d448adb2ba898eabdbac304c0087176e6ed7119
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93046303"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918996"
 ---
 # <a name="msbuild-multitargeting-overview"></a>MSBuild 多定向概述
 

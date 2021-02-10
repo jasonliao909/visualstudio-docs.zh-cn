@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: d1cda56a-dbef-4109-9201-39e962e3f653
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 223ccd9e823bef4ee458a7aa1ce2d785788c6238
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: c4aa00df0a1a0b622040a3f808515b9a62fc8f66
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048859"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99918834"
 ---
 # <a name="project-element-msbuild"></a>Project 元素 (MSBuild)
 
@@ -58,7 +58,7 @@ MSBuild 项目文件必需的根元素。
 
 ### <a name="attributes"></a>特性
 
-| 属性 | 描述 |
+| 特性 | 描述 |
 |------------------------| - |
 | `DefaultTargets` | 可选特性。<br /><br /> 如果未指定目标，则默认目标将作为生成的入口点。 使用分号 (;) 分隔多个目标。<br /><br /> 如果未在 `DefaultTargets` 属性或 MSBuild 命令行中指定默认目标，那么引擎会在评估 [Import](../msbuild/import-element-msbuild.md) 元素后在项目文件中执行第一个目标。 |
 | `InitialTargets` | 可选特性。<br /><br /> 会在 `DefaultTargets` 属性中或命令行上指定的目标前运行初始目标。 使用分号 (`;`) 分隔多个目标。 如果多个导入文件定义 `InitialTargets`，则将按照导入的顺序运行所有提到的目标。 |

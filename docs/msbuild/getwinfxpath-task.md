@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 820ca103d88cde941fe558e59ed1c78622adccd4
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 164f9f91eda1d81db00d25bb4e18a6cbb352e41e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436775"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914629"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 任务
 
@@ -41,7 +41,7 @@ ms.locfileid: "92436775"
 
 ## <a name="remarks"></a>注解
 
- 如果在 64 位处理器上执行 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 任务，则 WinFXPath  参数会设置为 WinFXWowPath  参数中存储的路径；否则，WinFXPath  参数会设置为 WinFXNativePath  参数中存储的路径。
+ 如果在 64 位处理器上执行 <xref:Microsoft.Build.Tasks.Windows.GetWinFXPath> 任务，则 WinFXPath 参数会设置为 WinFXWowPath 参数中存储的路径；否则，WinFXPath 参数会设置为 WinFXNativePath 参数中存储的路径。
 
 ## <a name="example"></a>示例
 

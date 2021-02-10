@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 7f9bda07-53a8-4f11-9846-a3e31064c596
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 00cf79b23de47c1ac808b9287f387a16b51e5c3e
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 69e0fc1d7e6a21483972efac48c273d71ce59091
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719118"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99915929"
 ---
 # <a name="zoom-control-threads-view"></a>缩放控件（线程视图）
 缩放控件是一个滑块，用于在时间线上进行放大和缩小操作，以便于你关注特定的感兴趣的区域。 因为此控件放大时间线视图的中心位置，所以在放大之前将感兴趣的区域移到中心位置。

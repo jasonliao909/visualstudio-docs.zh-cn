@@ -4,14 +4,14 @@ description: 讨论 HDPI 监视器上 Windows 窗体设计器的限制，以及�
 ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.topic: conceptual
-ms.openlocfilehash: 08eb15914ad381fd81a838f5e09a1350bedff4fd
-ms.sourcegitcommit: 31f216b5f7491d5558de5b7ea4ebb0eb1faa3b9d
+ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/29/2020
-ms.locfileid: "91493304"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917091"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中禁用 DPI 感知
 

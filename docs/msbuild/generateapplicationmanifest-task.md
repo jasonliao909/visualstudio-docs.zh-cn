@@ -18,15 +18,15 @@ helpviewer_keywords:
 ms.assetid: a494102b-0cb2-4755-8e2a-d2c0f39fac1d
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c4752e4b736a6ba2f8b4a209824b22f94d8036c2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: 2af490f27ab1cdecfe57da9253aff6c4247c7223
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436550"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914878"
 ---
 # <a name="generateapplicationmanifest-task"></a>GenerateApplicationManifest 任务
 
@@ -324,7 +324,7 @@ ms.locfileid: "92436550"
 
 此示例使用 `GenerateApplicationManifest` 任务为应用程序 Test.exe 生成本机清单，引用本机组件 Alpha.dll 和独立的 COM 组件 Bravo.dll  。
 
-此示例生成 Test.exe.manifest，使该应用程序可借助“免注册 COM”进行 XCOPY 部署  。
+此示例生成 Test.exe.manifest，使该应用程序可借助“免注册 COM”进行 XCOPY 部署。
 
 > [!NOTE]
 > 在下面的示例中，为将重点放在清单生成方面上，预先生成了所有应用程序二进制文件。 此示例会生成一个完全可用的 ClickOnce 部署。

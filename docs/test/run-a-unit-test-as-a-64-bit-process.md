@@ -8,16 +8,16 @@ helpviewer_keywords:
 - unit tests, creating
 - unit tests, running
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7d18a97a3cf8f680e7bfe3d679e8e57f7cc716fb
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: 184ea2250732bfa37f1740fadfa85616d83a88cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329063"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99917546"
 ---
 # <a name="run-a-unit-test-as-a-64-bit-process"></a>将单元测试作为 64 位进程运行
 

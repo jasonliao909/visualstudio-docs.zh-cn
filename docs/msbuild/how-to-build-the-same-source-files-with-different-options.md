@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: d14f1212-ddd9-434f-b138-f840011b0fb2
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c6a2b27aa08780d440c0e961c9a091c2b2fdb2
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: bd9d77e32f9c287ac2dfcf3905fe9335e119a3a2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436912"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914500"
 ---
 # <a name="how-to-build-the-same-source-files-with-different-options"></a>如何：使用不同选项生成相同的源文件
 
@@ -57,7 +57,7 @@ ms.locfileid: "92436912"
 
 ### <a name="to-set-a-project-property-at-the-command-line"></a>在命令行中设置项目属性
 
-- 结合使用 -property  开关与属性和属性值。 例如：
+- 结合使用 -property 开关与属性和属性值。 例如：
 
   ```cmd
   msbuild file.proj -property:Flavor=Debug
@@ -71,7 +71,7 @@ ms.locfileid: "92436912"
 
 ### <a name="to-specify-more-than-one-project-property-at-the-command-line"></a>在命令行上指定多个项目属性
 
-- 多次结合使用 -property  或 -p  开关与属性和属性值，或使用一个 -property  或 -p  开关，并使用分号 (;) 分隔多个属性。 例如：
+- 多次结合使用 -property 或 -p 开关与属性和属性值，或使用一个 -property 或 -p 开关，并使用分号 (;) 分隔多个属性。 例如：
 
   ```cmd
   msbuild file.proj -p:Flavor=Debug;Platform=x86
