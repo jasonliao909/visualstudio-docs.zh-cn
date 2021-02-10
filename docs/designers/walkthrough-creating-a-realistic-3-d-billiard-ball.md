@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: af8eb0f3-bf6a-4d1c-ab47-dcd88ab04efa
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 646522fe5c893508cbe60a0886ba704e6829252f
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: e5469825b8d81a210fdb699dc9afeb7c6689953b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134761"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99896456"
 ---
 # <a name="walkthrough-create-a-realistic-3d-billiard-ball"></a>演练：创建真实的三维台球
 

@@ -10,16 +10,16 @@ helpviewer_keywords:
 ms.assetid: 28e85ed5-1512-4b59-bb84-138a2abca7dd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e5f01d2b9fbff4864c8e3fa4d96dccdda54da7e0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 376475d2a392b86b14a73ba45c5669eaaf338898
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148346"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886400"
 ---
 # <a name="callercallee-view---sampling-data"></a>“调用方/被调用方”视图 - 采样数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格。

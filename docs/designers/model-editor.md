@@ -10,15 +10,15 @@ f1_keywords:
 ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aacd72629a393f22a447895d64cbe07d29b5a711
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: d9a9ccebb82c9a47ca1ea5ab780a033870316cd8
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134415"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904193"
 ---
 # <a name="model-editor"></a>模型编辑器
 

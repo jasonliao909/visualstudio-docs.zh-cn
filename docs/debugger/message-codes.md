@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 9f91f4e2-c1f1-4349-9f11-2fbbf59654be
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e4b836a5d4c1faad6b4c0375e2ec51d759816889
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 92562dda3e8a705d2cdf9b00561aa13cbd9d75e5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903605"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891769"
 ---
 # <a name="message-codes"></a>消息代码
 [消息视图](../debugger/messages-view.md)中显示的每行消息均包含“P”、“S”、“s”或“R”代码。 这些代码具有以下含义：

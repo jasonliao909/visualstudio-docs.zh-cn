@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 16cf1c2505ad61a8c53d18d8981b8c08f9e6e02c
-ms.sourcegitcommit: bd9417123c6ef67aa2215307ba5eeec511e43e02
+ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92796558"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99901341"
 ---
 # <a name="csc-task"></a>Csc 任务
 

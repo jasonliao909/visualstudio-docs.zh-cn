@@ -8,16 +8,16 @@ helpviewer_keywords:
 ms.assetid: c7f647bb-c5a3-4708-9f9d-33c0fd6e2e96
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f08821516ca25ed4e1746e13e506b9c0094b0227
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: ee8ae3082dc4dd19bb67c9374766b0d8f702fc9b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721549"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99906825"
 ---
 # <a name="instruction-pointers-ips-view---sampling-data"></a>“指令指针”(IP) 视图 - 采样数据
 采样数据的 IP 视图列出分析运行期间收集样本时直接执行的程序集指令的性能数据。

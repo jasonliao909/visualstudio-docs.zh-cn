@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 518e8153-eec2-4db9-a6f7-416ec11d8e09
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 889c6bac2f00041af6578d31bc0c6e036d82afe1
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.openlocfilehash: a8cd8c0b74dc06a72e7c20bd3af11fd91df07eb3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975090"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891510"
 ---
 # <a name="process-search-dialog-box"></a>“进程搜索”对话框
 使用此对话框可以在[进程视图](../debugger/processes-view.md)中查找并选择特定进程的节点。 若要显示此对话框，请将焦点移至进程视图窗口。 然后在“搜索”菜单中选择“查找进程” 。

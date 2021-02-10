@@ -11,15 +11,15 @@ f1_keywords:
 ms.assetid: f48f62d9-16ff-4a2e-8c01-5cbe99513788
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b7e746d37edaca87abfca42f315a65a470369e7e
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 095828e711f860662432edd767b19493b73c56c0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99887570"
 ---
 # <a name="graphics-object-table"></a>图形对象表
 Visual Studio 图形分析中的图形对象表可帮助你了解支持游戏或应用程序的帧的 Direct3D 对象。

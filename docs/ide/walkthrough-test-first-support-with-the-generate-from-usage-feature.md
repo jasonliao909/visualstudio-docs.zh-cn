@@ -12,15 +12,15 @@ helpviewer_keywords:
 - Test-First Development
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d763a937ac23b397151aec163c2d0d90d7ebe6ba
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 4ea04a9c70f23c30a5f603fa9411780223fff563
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479675"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883046"
 ---
 # <a name="walkthrough-test-first-development-with-the-generate-from-usage-feature"></a>演练：带有“使用时生成”功能的测试优先开发
 

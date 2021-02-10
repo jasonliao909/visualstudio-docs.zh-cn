@@ -5,17 +5,17 @@ ms.date: 11/19/2018
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d79c9d0d1b9c62d5afd78696ee2654c4eecdbe57
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 461e68979de6c3b711c05cc4be3ef9d5bd761397
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "86972356"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99885932"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -44,7 +44,7 @@ ms.locfileid: "86972356"
     ![选择“Python 本机开发工具”选项](media/cpp-install-native.png)
 
     > [!Tip]
-    > 安装**数据科学和分析应用程序**工作负载还包括默认安装 Python 和“Python 本机开发工具”选项。
+    > 安装 **数据科学和分析应用程序** 工作负载还包括默认安装 Python 和“Python 本机开发工具”选项。
 
 有关详细信息，请参阅[安装针对 Visual Studio 的 Python 支持](installing-python-support-in-visual-studio.md)，其中包括使用其他版本的 Visual Studio。 如果单独安装 Python，请务必在安装程序的“高级选项”下选择“下载调试符号”和“下载调试二进制文件”。 此选项确保在选择进行调试生成时能够使用必要的调试库。
 

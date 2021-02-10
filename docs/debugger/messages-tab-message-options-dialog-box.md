@@ -7,15 +7,15 @@ helpviewer_keywords:
 ms.assetid: fb9fa211-e82c-40a5-9e4b-ba8de07313c0
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: de50e6fe997ce10266cbb51f2fd91c318ab2bd1f
-ms.sourcegitcommit: 94b3a052fb1229c7e7f8804b09c1d403385c7630
+ms.openlocfilehash: 2c0a97a5b42e27c6db770e0c74a64e214561cea9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2019
-ms.locfileid: "62905523"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891600"
 ---
 # <a name="messages-tab-message-options-dialog-box"></a>“消息选项”对话框 ->“消息”选项卡
 使用“消息”选项卡可选择要在[消息视图](../debugger/messages-view.md)中列出的消息类型，并指定消息搜索条件。 若要显示[“消息选项”对话框](../debugger/message-options-dialog-box.md)，请从 Spy 菜单中选择“日志消息” 。

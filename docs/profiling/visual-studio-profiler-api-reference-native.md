@@ -11,16 +11,16 @@ helpviewer_keywords:
 ms.assetid: a0c3be92-c263-4678-9fb9-bafead3bd5f5
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 46306697fb891dd7604cda193deaec087d164ad7
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: 9d8fe6f4f1f38277a8cf317fa55fbc883b85394a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98723148"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99890534"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 探查器 API 参考（本机）
 Visual Studio 探查器 API 允许你以编程方式控制收集的数据量，并在分析期间插入时间戳和分析标记。 若要使用本机 API，请包含 VSPerf.h 头文件，并在项目中添加 VSPerf.lib。

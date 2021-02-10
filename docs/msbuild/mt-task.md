@@ -23,15 +23,15 @@ helpviewer_keywords:
 ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d5ce7e602c3f95766fdade297c2ee235cebba24c
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: a023c58e528b2cda74fa42fcce46fd9c39059459
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93048982"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99905435"
 ---
 # <a name="mt-task"></a>MT 任务
 

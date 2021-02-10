@@ -21,15 +21,15 @@ helpviewer_keywords:
 ms.assetid: 529db1e2-d9ea-482a-b6a0-7c543d17f114
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31c1bc9e65eb63877d8f8a42902d8ec47a61fd22
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: e9293956e2ca47e68ff5bf22502251b22115a827
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98148086"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99884125"
 ---
 # <a name="walkthrough-debugging-a-windows-form"></a>演练：调试 Windows 窗体
 Windows 窗体是最常见的托管应用程序之一。 Windows 窗体可创建标准的 Windows 应用程序。 可以使用 Visual Basic、C# 或 C++ 来完成本演练。

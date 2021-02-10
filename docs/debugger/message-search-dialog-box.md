@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: 44fb43b7-b006-46cc-a70c-036aac3cceec
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d100b36ff706752f1855939d4c45b5b7793ccfa
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: f4fadb932078358b550e1d2c72bea292684a1954
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903046"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99891691"
 ---
 # <a name="message-search-dialog-box"></a>“消息搜索”对话框
 使用此对话框可以在[消息视图](../debugger/messages-view.md)中查找并选择特定消息的节点。 若要显示此对话框，请将焦点移至消息视图窗口。 然后在“搜索”菜单中选择“查找消息” 。

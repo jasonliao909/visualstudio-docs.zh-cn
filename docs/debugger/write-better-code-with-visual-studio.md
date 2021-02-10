@@ -10,15 +10,15 @@ helpviewer_keywords:
 - debugger
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac595098d793e44d65312a09fc8857225f150ef
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89311386"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99904944"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>有助于编写更佳代码的调试技术和工具
 
@@ -44,7 +44,7 @@ ms.locfileid: "89311386"
 
 1. 必须安装 Visual Studio；根据要创建的应用类型，还必须安装“.NET Core 跨平台开发”或“.NET 桌面开发”工作负载   。
 
-    如果尚未安装 Visual Studio，请转到  [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/) 页免费安装。
+    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
 
     如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”   。 Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”或“.NET Core 桌面开发”工作负载，然后选择“修改”    。
 

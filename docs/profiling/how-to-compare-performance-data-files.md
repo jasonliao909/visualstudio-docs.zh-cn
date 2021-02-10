@@ -12,16 +12,16 @@ helpviewer_keywords:
 ms.assetid: 1905b45d-c6b3-43c8-87b1-1aee734f37f9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 40988d23dd8e9b848ea410aa75f4d4c1f45d524d
-ms.sourcegitcommit: 589d96700208bf22c8da9e26a1d2041fbf39b8f9
+ms.openlocfilehash: d47f51b5c46538bdeeb50db0627c5bd0840bcc14
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98800450"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99886140"
 ---
 # <a name="how-to-compare-performance-data-files"></a>如何：比较性能数据文件
 可以创建比较（“差异”）报表或视图来比较两个不同的探查器数据文件（.vsp 或 .vsps）的结果 。 比较显示从一个分析会话到另一个分析会话所发生的差异、性能回归和改进。

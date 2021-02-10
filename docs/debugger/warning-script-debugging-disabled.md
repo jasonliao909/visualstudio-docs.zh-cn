@@ -14,15 +14,15 @@ dev_langs:
 ms.assetid: 323d2b1d-52a4-42f7-b4ad-96b4b0c23b8d
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cc2e03a4efcf9a88675fd3c80f374ff78ba35bb
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 052445b1dbb69c433220caf5764413e04f0909fd
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98149555"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99883995"
 ---
 # <a name="warning-script-debugging-disabled"></a>警告：脚本调试已禁用
 脚本调试当前在 Internet Explorer 中禁用
