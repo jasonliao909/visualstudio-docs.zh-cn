@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 725dd8368bd4db9509426fa1a98ce56ef85bc3c0
-ms.sourcegitcommit: 5027eb5c95e1d2da6d08d208fd6883819ef52d05
+ms.openlocfilehash: 90acdde2c365effd189efe4437b5e41c39f494b0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94974408"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949631"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>在共享和版本控制之间进行选择 Vspackage
 不同版本的 Visual Studio 可以在同一台计算机上共存。 Vspackage 可以支持任意版本组合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -63,6 +63,6 @@ ms.locfileid: "94974408"
 
   除了规划 VSPackage 二进制文件的二进制兼容性外，还应考虑解决方案和项目文件格式。 如果你的 VSPackage 创建了一个新的项目类型，则必须决定该项目类型是只能在一个版本中运行，也可以在多个版本的中运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 [升级自定义项目](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [安装 Vspackage 与 Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [组件管理](../extensibility/internals/component-management.md)

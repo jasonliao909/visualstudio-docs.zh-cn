@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce14999913a3928cbe25d9f034c8288651629a3
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597816"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951519"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>向工具栏添加菜单控制器
 本演练 [以 "将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md) " 演练为基础，并演示如何将菜单控制器添加到工具窗口工具栏中。 此处所示的步骤还可以应用于在 " [添加工具栏](../extensibility/adding-a-toolbar.md) " 演练中创建的工具栏。
@@ -28,7 +28,7 @@ ms.locfileid: "95597816"
 
 菜单控制器可以出现在菜单中，但它们最常在工具栏上使用。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-menu-controller"></a>创建菜单控制器

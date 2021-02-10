@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItem element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3e211aa44b1402d6667fc3e02ca7e271a29c3ec7
-ms.sourcegitcommit: 2244665d5a0e22d12dd976417f2a782e68684705
+ms.openlocfilehash: 2b94b44bfa442805c4c785a48c9f60f56eb8e002
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/28/2020
-ms.locfileid: "96305047"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950583"
 ---
 # <a name="projectitem-element"></a>ProjectItem 元素
   表示 SharePoint 项目项。 此元素是 *spdata* 文件必需的根元素。
@@ -46,7 +46,7 @@ ms.locfileid: "96305047"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|特性|说明|
 |---------------|-----------------|
 |**DefaultFile**|可选 **xs： string** 特性。<br /><br /> 在 **解决方案资源管理器** 中打开 SharePoint 项目项时，将在 Visual Studio 编辑器中打开的文件的相对路径（包括文件名）。 路径相对于包含 *spdata* 文件的文件夹。|
 |**FeatureReceiverClass**|可选 **xs： string** 特性。<br /><br /> 此 SharePoint 项目项的功能接收器类的完全限定名称。 有关功能接收器的详细信息，请参阅 [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)。|
@@ -57,7 +57,7 @@ ms.locfileid: "96305047"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[ExtensionData](../sharepoint/extensiondata-element.md)|可选元素。<br /><br /> 表示与 SharePoint 项目项关联的自定义数据项的集合。<br /><br /> 只能包含一个 **ExtensionData** 元素。|
 |[FeatureProperties](../sharepoint/featureproperties-element.md)|可选元素。<br /><br /> 表示在将功能部署到 SharePoint 时包含的属性值的集合。<br /><br /> 只能包含一个 **FeatureProperties** 元素。|

@@ -10,15 +10,15 @@ helpviewer_keywords:
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 434f7470fe5fca13f217c981cc99d6a884117a86
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 62d32a07ec046bc42d69818346450e5a94a668ba
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95597946"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951324"
 ---
 # <a name="add-a-toolbar"></a>添加工具栏
 本演练演示如何将工具栏添加到 Visual Studio IDE。
@@ -29,7 +29,7 @@ ms.locfileid: "95597946"
 
  有关菜单的详细信息，请参阅 [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-an-extension-with-a-toolbar"></a>使用工具栏创建扩展

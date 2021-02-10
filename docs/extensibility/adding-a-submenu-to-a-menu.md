@@ -12,15 +12,15 @@ helpviewer_keywords:
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b58a6ab6a01ff635b3afd58b06133abacf970e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598011"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951506"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>向菜单中添加子菜单
 本演练基于将菜单添加到 [Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 中的演示，通过显示如何将子菜单添加到 " **TestMenu** " 菜单来构建。
@@ -29,7 +29,7 @@ ms.locfileid: "95598011"
 
  本演练将在 Visual Studio 菜单栏上的菜单中创建一个子菜单，并在子菜单中放置一个新命令。 本演练还实现了新的命令。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="add-a-submenu-to-a-menu"></a>向菜单中添加子菜单

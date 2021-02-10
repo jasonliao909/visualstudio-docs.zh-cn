@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: f5e4b124-1e30-47c8-a511-80084a02dba5
 author: acangialosi
 ms.author: anthc
-manager: jillfra
+manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2e23ad4f673e4e150ea677d993c5b36a4e386c2
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3d7b6508a635edf3dc328f79a06a386efce07aae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "80729692"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99949579"
 ---
 # <a name="idebugexpression2"></a>IDebugExpression2
 此接口表示已分析的表达式可用于绑定和计算。
@@ -40,7 +40,7 @@ IDebugExpression2 : IUnknown
 |方法|说明|
 |------------|-----------------|
 |[EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|以异步方式计算此表达式。|
-|[中断](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|结束异步表达式计算。|
+|[中止](../../../extensibility/debugger/reference/idebugexpression2-abort.md)|结束异步表达式计算。|
 |[EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md)|同步计算此表达式。|
 
 ## <a name="remarks"></a>备注
