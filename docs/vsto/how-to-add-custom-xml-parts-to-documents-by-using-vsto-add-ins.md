@@ -18,15 +18,15 @@ helpviewer_keywords:
 - application-level add-ins [Office development in Visual Studio], custom XML parts
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b153fe3e7c68ed6a8288ff69a30e16dd32c448a
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: fbba5c629807815a306221368d00b7d759dcc294
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847710"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954223"
 ---
 # <a name="how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins"></a>如何：使用 VSTO 外接程序将自定义 XML 部件添加到文档
   通过在 VSTO 外接程序中创建自定义 XML 部件，可以将 XML 数据存储在以下类型的文档中：
@@ -83,6 +83,6 @@ ms.locfileid: "96847710"
 ## <a name="robust-programming"></a>可靠编程
  为简单起见，此示例使用在方法中定义为局部变量的 XML 字符串。 通常，应从外部源（如文件或数据库）获取 XML。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)
 - [如何：向文档级自定义项添加自定义 XML 部件](../vsto/how-to-add-custom-xml-parts-to-document-level-customizations.md)

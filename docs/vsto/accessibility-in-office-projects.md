@@ -14,15 +14,15 @@ helpviewer_keywords:
 - accessibility [Office development in Visual Studio]
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: de877ccc2d2a036bf03b0888a7edf455b17788a4
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 4021517aa296f3c1e6355b82260b00590181f4cb
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96847359"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955146"
 ---
 # <a name="accessibility-in-office-projects"></a>Office 项目中的辅助功能
 
@@ -50,7 +50,7 @@ Microsoft Visual Studio 和 Microsoft Office 包括许多辅助功能，使你�
 
      此时将显示一条消息，指出必须重新启动 Visual Studio 才能使更改生效。
 
-4. 单击 **“确定”** 。
+4. 单击“确定”。
 
 5. 重新启动 Visual Studio，然后重新打开项目。
 
@@ -86,7 +86,7 @@ Visual Studio 具有以下与显示模式相关的限制：
 
 可以使用放大镜来克服这些限制。 放大镜是 Windows 中的显示实用程序，它创建一个单独的窗口，该窗口显示放大的屏幕部分。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)

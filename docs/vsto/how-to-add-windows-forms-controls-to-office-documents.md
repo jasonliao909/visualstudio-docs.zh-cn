@@ -14,15 +14,15 @@ helpviewer_keywords:
 - documents [Office development in Visual Studio], Windows Forms controls
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a8f073a72db1a18574dff6ab060b1ea069475fbb
-ms.sourcegitcommit: ce85cff795df29e2bd773b4346cd718dccda5337
+ms.openlocfilehash: 8d2f8d54e791acd7d027350caa3ce88c8eea9959
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/08/2020
-ms.locfileid: "96846774"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99954145"
 ---
 # <a name="how-to-add-windows-forms-controls-to-office-documents"></a>如何：向 Office 文档添加 Windows 窗体控件
   你可以在设计时在文档级项目中，将 Windows 窗体控件添加到 Microsoft Office Excel 和 Microsoft Office Word 文档。 在运行时，你可以在文档级自定义项和 VSTO 外接程序中添加控件。例如，可以向 <xref:Microsoft.Office.Tools.Excel.Controls.ComboBox> 工作表添加控件，以便用户可以从选项列表中进行选择。
@@ -100,7 +100,7 @@ ms.locfileid: "96846774"
     > 当在 Excel 中选择一个控件时， **“公式栏”** 中将显示 **=EMBED("WinForms.Control.Host","")**。 此文本是必需的并且不应删除。
 
 ## <a name="add-controls-at-run-time-in-document-level-projects"></a><a name="runtimedoclevel"></a> 在运行时在文档级项目中添加控件
- 你可以在运行时以编程方式向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 类的属性的方法 `Sheet` *n* 。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。
+ 你可以在运行时以编程方式向文档添加 Windows 窗体控件。 在 Word 中，请使用 `ThisDocument` 类的 <xref:Microsoft.Office.Tools.Word.DocumentBase.Controls%2A> 属性的方法。 在 Excel 中，使用 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Controls%2A> n 类的属性的方法 `Sheet`  。 每种方法都具有好几个重载，使你能够以不同的方式指定控件的位置。
 
  当在运行时向文档添加 Windows 窗体控件时，关闭文档时该控件将不会保存在文档中。 你可以在下次打开文档时重新创建该控件。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
@@ -108,7 +108,7 @@ ms.locfileid: "96846774"
 
 1. 使用名称为 Add (的方法， \<*control class*> 其中 *control class* 是想要添加的 Windows 窗体控件的类名，如 <xref:Microsoft.Office.Tools.Word.ControlExtensions.AddButton%2A>) 。
 
-     下面的代码示例演示如何 <xref:Microsoft.Office.Tools.Excel.Controls.Button> **C5** `Sheet1` 在 Excel 文档级项目中将添加到单元格 C5。
+     下面的代码示例演示如何 <xref:Microsoft.Office.Tools.Excel.Controls.Button>  `Sheet1` 在 Excel 文档级项目中将添加到单元格 C5。
 
      [!code-vb[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#4)]
      [!code-csharp[Trin_VstcoreProgrammingControlsExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#4)]
@@ -132,7 +132,7 @@ ms.locfileid: "96846774"
      [!code-vb[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#7)]
      [!code-csharp[Trin_WordAddInDynamicControls#7](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#7)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [如何：调整工作表单元格中的控件大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)

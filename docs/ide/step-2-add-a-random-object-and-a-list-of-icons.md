@@ -12,15 +12,15 @@ dev_langs:
 ms.assetid: 95faea28-eddc-4cfa-95fb-3b34b5a976d7
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1018b390f6ebbf67fab88554aa85fe6a8ecec88d
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 496bf75495d864024ef587849edd554bfd435db5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480689"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950882"
 ---
 # <a name="step-2-add-a-random-object-and-a-list-of-icons"></a>步骤 2：添加 Random 对象和图标列表
 
@@ -44,7 +44,7 @@ ms.locfileid: "96480689"
 
 3. 添加 List 对象时，请注意打开的“IntelliSense”窗口。 下面是一个 C# 示例，但在 Visual Basic 中添加列表时会显示类似文本。
 
-     ![显示 Click 事件的“属性”窗口](../ide/media/express_listintellisense.png)<br/>IntelliSense 窗口 
+     ![显示 Click 事件的“属性”窗口](../ide/media/express_listintellisense.png)<br/>***IntelliSense** 窗口*
 
     > [!NOTE]
     > IntelliSense 窗口仅在手动输入代码时显示。 如果你复制和粘贴代码，则不显示。

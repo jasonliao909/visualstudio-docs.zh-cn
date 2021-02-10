@@ -11,15 +11,15 @@ helpviewer_keywords:
 - ProjectItemFile element
 author: John-Hart
 ms.author: johnhart
-manager: jillfra
+manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 099f20926487b09240219f04d9bce4a79709f6e6
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95440800"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99955133"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
   表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件（如功能元素文件）。
@@ -40,7 +40,7 @@ ms.locfileid: "95440800"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|特性|说明|
 |---------------|-----------------|
 |**Source**|必需的 **xs： string** 特性。<br /><br /> 要与项目项一起部署的文件的名称。|
 |**Target**|可选 **xs： string** 特性。<br /><br /> 相对于部署根文件夹，将在 SharePoint 上部署文件的路径。 部署根文件夹由 **type** 特性指定的部署类型决定。 如果未指定 **目标** 属性，则会将该文件部署到 **源** 属性中指定的名称的文件夹中。<br /><br /> 有关详细信息，请参阅 [开发 sharepoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中的 sharepoint 项目项的 **部署路径** 和 **部署根** 属性的说明。|
@@ -55,7 +55,7 @@ ms.locfileid: "95440800"
 |-------------|-----------------|
 |[文件](../sharepoint/files-element.md)|指定将 SharePoint 项目项部署到 SharePoint 时要包含的文件。|
 
-## <a name="remarks"></a>注解
+## <a name="remarks"></a>备注
  通常在 **ProjectItemFile** 元素中引用的 SharePoint 文件包括功能元素文件 (*Elements.xml*) 、列表定义的架构文件 (*Schema.xml*) 和 Web 部件 (的 Web 部件定义 *文件) 。*
 
 ## <a name="element-information"></a>元素信息
