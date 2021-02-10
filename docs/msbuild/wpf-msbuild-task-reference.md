@@ -17,15 +17,15 @@ helpviewer_keywords:
 ms.assetid: 96df0370-e50f-4ffc-9771-b12fb8721143
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 395f50db4159e8ace1b317f5926ed676c7462fe3
-ms.sourcegitcommit: 1a36533f385e50c05f661f440380fda6386ed3c1
+ms.openlocfilehash: 94050565e6c5619781434c7a18307bfbf80b51f9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93047514"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99933669"
 ---
 # <a name="wpf-msbuild-task-reference"></a>WPF MSBuild 任务参考
 

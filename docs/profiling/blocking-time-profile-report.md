@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: 3bc45af0-3ba6-4fa3-a336-be8e9ae95107
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 74cfeb0b93b1819b4491b18b8e455b3c8d49be4d
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f5bdf15b220560562ccc2ae5c99100b5285b025
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204574"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925616"
 ---
 # <a name="blocking-time-profile-report"></a>阻塞时间分析报告
 分析报告提供特定于每个阻塞类别（例如，“I/O”或“同步”）的调用堆栈的合计阻塞时间数据。 优先报告列出抢占当前进程的进程以及抢占实例数。 为了生成阻塞分析报告，工具会收集阻塞 API 调用并将它们累计到调用堆栈树中。 这些报告中显示的数据因当前时间范围、隐藏线程和以下两个可能应用的筛选器而异：

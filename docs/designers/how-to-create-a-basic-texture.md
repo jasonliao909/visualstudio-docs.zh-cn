@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bb4a0a66855351e9edbb1b06dbf2aee452cd150
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2ac90077831d852ba0361c46186d18fe39cf9e81
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134140"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931066"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 
@@ -60,7 +60,7 @@ ms.locfileid: "93134140"
 
 7. 将前景色设置为完全不透明的黑色。 将“R”、“G”和“B” 属性的值设置为 `0`，将“A”属性的值设置为 `255`。
 
-8. 将背景色设置为完全不透明的白色。 在“属性”窗口的“颜色”属性组中，选择“背景”。 将 **R** 、 **G** 、 **B** 和 **A** 属性的值设置为 `255`。
+8. 将背景色设置为完全不透明的白色。 在“属性”窗口的“颜色”属性组中，选择“背景”。 将 **R**、**G**、**B** 和 **A** 属性的值设置为 `255`。
 
 9. 设置椭圆形边框的宽度。 在“属性”窗口的“外观”属性组中，将“宽度”属性的值设置为 `8`。
 

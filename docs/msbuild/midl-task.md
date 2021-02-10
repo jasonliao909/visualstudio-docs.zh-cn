@@ -25,15 +25,15 @@ helpviewer_keywords:
 ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 884cecdcbdbef3320516dd67c43cedd72bc25076
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903848"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932003"
 ---
 # <a name="midl-task"></a>MIDL 任务
 
@@ -237,7 +237,7 @@ ms.locfileid: "92903848"
 
      可选 **int** 参数。
 
-     指定在输入文件、文件名和目录路径中启用国际字符的 *区域设置标识符* 。 指定十进制区域设置标识符。
+     指定在输入文件、文件名和目录路径中启用国际字符的 *区域设置标识符*。 指定十进制区域设置标识符。
 
      有关详细信息，请参阅 [MIDL 命令行参考](/windows/desktop/Midl/midl-command-line-reference)中的 /lcid 选项。 另请参阅 [Locale identifiers（区域设置标识符）](/windows/desktop/intl/locale-identifiers)。
 
@@ -261,7 +261,7 @@ ms.locfileid: "92903848"
 
      可选 **String []** 参数。
 
-     指定一个或多个 *定义* ，即要传递给 C 预处理器的名称和可选值，就如通过 `#define` 指令所指示那样。 每个定义的形式为 *name[=value]* 。
+     指定一个或多个 *定义*，即要传递给 C 预处理器的名称和可选值，就如通过 `#define` 指令所指示那样。 每个定义的形式为 *name[=value]* 。
 
      有关详细信息，请参阅 [MIDL 命令行参考](/windows/desktop/Midl/midl-command-line-reference)中的 /D 选项。 另请参阅此表中的 **UndefinePreprocessorDefinitions** 参数。
 
@@ -299,7 +299,7 @@ ms.locfileid: "92903848"
 
      可选 **String** 参数。
 
-     指定目标系统中结构的对齐方式（ *封装级别* ）。
+     指定目标系统中结构的对齐方式（*封装级别*）。
 
      指定以下值之一，其中每个值对应于一个命令行选项。
 
@@ -405,7 +405,7 @@ ms.locfileid: "92903848"
 
      可选 **String** 参数。
 
-     指定要发出的警告的严重性（ *警告等级* ）。 若值为 0，则不发出任何警告。 否则，如果警告等级数小于或等于指定的值，将发出警告。
+     指定要发出的警告的严重性（*警告等级*）。 若值为 0，则不发出任何警告。 否则，如果警告等级数小于或等于指定的值，将发出警告。
 
      指定以下值之一，其中每个值对应于一个命令行选项。
 

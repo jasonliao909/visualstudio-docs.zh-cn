@@ -9,16 +9,16 @@ helpviewer_keywords:
 ms.assetid: a18a1b1b-9b39-43c7-b1f3-708fd20376f6
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ab622ffda91e6ea9020fb8caa6af2fb460128f17
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 7f783a543bb0139213bb75d7af2d7bb1e516ca65
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98204795"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99923861"
 ---
 # <a name="callercallee-view----contention-data"></a>“调用方/被调用方”视图 - 争用数据
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的争用信息。 “调用方/被调用方”视图包含三个网格。

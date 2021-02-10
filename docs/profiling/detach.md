@@ -7,16 +7,16 @@ ms.topic: reference
 ms.assetid: d9d1b52c-7f28-467d-b1e0-512afc4e46c9
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 45225e4478b0a1a3cddc7f74ae223c437bf4226e
-ms.sourcegitcommit: d13f7050c873b6284911d1f4acf07cfd29360183
+ms.openlocfilehash: 753ee895635fa0f785241f7805ed5df33af22981
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98686592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931716"
 ---
 # <a name="detach"></a>Detach
 VSPerfCmd.exe“Detach”选项可断开探查器与指定进程或所有进程（如果未指定）的连接。 必须已使用采样方法初始化分析。

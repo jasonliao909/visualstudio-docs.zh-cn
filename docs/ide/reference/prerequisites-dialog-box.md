@@ -11,15 +11,15 @@ helpviewer_keywords:
 - Prerequisites dialog box
 author: Mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e7384bad2096f98a646487d5d97eed3d387c7de1
-ms.sourcegitcommit: 75bfdaab9a8b23a097c1e8538ed1cde404305974
+ms.openlocfilehash: 78d5f4f00a81fccf573e69797b9d528ee61ffdc5
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94349225"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932054"
 ---
 # <a name="prerequisites-dialog-box"></a>“系统必备”对话框
 

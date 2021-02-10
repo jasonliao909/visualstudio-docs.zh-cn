@@ -14,15 +14,15 @@ helpviewer_keywords:
 ms.assetid: adfbe002-3d7b-42a9-b42a-5ac0903dfc25
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 33375a8970638765d02a94e6e3e9cd8afc1a0fe7
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: dbac3de879937435e9f2e1dc5ab4fad0e7358fc9
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85348647"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925387"
 ---
 # <a name="walkthrough-debug-a-multithreaded-app-using-the-threads-window-c-visual-basic-c"></a>演练：使用“线程”窗口调试多线程应用（C#、Visual Basic、C++）
 
@@ -38,9 +38,9 @@ ms.locfileid: "85348647"
 
    ::: moniker range=">=vs-2019"
 
-   如果开始窗口未打开，请选择“文件”>“开始窗口” 。
+   如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-   在“开始”窗口上，选择“创建新项目”。
+   在“开始”窗口上，选择“创建新项目”  。
 
    在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择“C#”或“C++”，然后从“平台”列表中选择“Windows”  。 
 
@@ -49,7 +49,7 @@ ms.locfileid: "85348647"
    > [!NOTE]
    > 如果没有看到正确的模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
 
-   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“创建”。
+   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“创建”  。
 
    ::: moniker-end
    ::: moniker range="vs-2017"

@@ -16,15 +16,15 @@ helpviewer_keywords:
 ms.assetid: 989bf312-5038-44f3-805f-39a34d18760e
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 046384e664ab4aa9c031b76a1ecd6285a9de5502
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 23f5234cb0184de14f7506fd540004a200a65a4a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150465"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99925349"
 ---
 # <a name="how-to-write-a-run-time-error-reporting-function-c"></a>如何：编写运行时错误报告函数 (C++)
 运行时错误的自定义报告函数必须具有与 `_CrtDbgReportW` 相同的声明。 它应当将值 1 返回给调试器。

@@ -8,15 +8,15 @@ helpviewer_keywords:
 - deployment, website
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - azure
-ms.openlocfilehash: 27002d9360d36330249167b2cc8b75b7cd832135
-ms.sourcegitcommit: 105e7b5a486262bc92939980383ceee068098a11
+ms.openlocfilehash: 0371a4186d51598a79818f79719b58e122a311f2
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/30/2020
-ms.locfileid: "97815628"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99927452"
 ---
 # <a name="publish-an-aspnet-core-app-to-app-service-on-linux-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 应用发布到 Linux 上的应用服务
 

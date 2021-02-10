@@ -6,15 +6,15 @@ ms.date: 05/12/2020
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 289562b1aebe981b0829a1adac107a607163a859
-ms.sourcegitcommit: f1bb1b66ed141837e992b3352ce68ff24c11f53e
+ms.openlocfilehash: ee0ac916bcc13e6bc89485171b2ce145b31dd919
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102592"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99932561"
 ---
 # <a name="generate-comparison-operators-for-types-that-implement-icomparable"></a>为实现 IComparable 的类型生成比较运算符
 

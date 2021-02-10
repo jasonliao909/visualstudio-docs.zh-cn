@@ -7,15 +7,15 @@ ms.topic: how-to
 ms.assetid: f64d4369-2307-4175-a39a-2e45506f7fa1
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b97b57adb6fd87fa539e9dae7c37d6c5c8f2ddd6
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: be95611d7d1c931e1b349e7a8c6dc0be75c7c832
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93134441"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99930975"
 ---
 # <a name="how-to-create-and-modify-mip-levels"></a>如何：创建和修改 MIP 级别
 本文档演示如何使用“图像编辑器”生成并修改纹理空间详细级别 (LoD) 的 MIP 级别。

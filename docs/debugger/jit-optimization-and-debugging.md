@@ -15,15 +15,15 @@ helpviewer_keywords:
 ms.assetid: 19bfabf3-1a2e-49dc-8819-a813982e86fd
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 66f63c7232b52ebe849722147e007ab70527c311
-ms.sourcegitcommit: 620d30c60da8f9805fce524fe4951cf40f28297d
+ms.openlocfilehash: 558a54f6ddcf4945da4937f75b8aa133949349a7
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97903917"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99931079"
 ---
 # <a name="jit-optimization-and-debugging"></a>JIT 优化和调试
 如果尝试调试代码，则在该代码未优化时更易调试。 优化代码时，编译器和运行时会对发出的 CPU 代码进行更改，使其运行速度更快，但与原始源代码的映射不太直接。 如果映射不太直接，则调试器通常无法告诉你局部变量的值，代码步进和断点也可能无法按预期要求工作。
