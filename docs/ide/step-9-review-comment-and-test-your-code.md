@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f5be5d8c59d9ef402bd929bd386a7bdaaa9912e
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0bcf879d2bb6fa592f77d4c94cb2f784d2c53f2b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479298"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99969615"
 ---
 # <a name="step-9-review-comment-and-test-your-code"></a>步骤 9：检查代码、为代码添加注释和测试代码
 
@@ -73,18 +73,18 @@ ms.locfileid: "96479298"
 
 1. 在运行应用程序之前，请通过选择“全部保存”工具栏按钮来保存应用，其外观应类似于以下屏幕截图。
 
-     ![“全部保存”工具栏按钮](../ide/media/express_iconsaveall.png)<br>
-*“全部保存”按钮
+     ![“全部保存”工具栏按钮](../ide/media/express_iconsaveall.png)<br>“全部保存”按钮
+*
 
      或者，要保存应用，请从菜单栏中选择“文件” > “全部保存”（或按“Ctrl+Shift+S”    ）。 最佳做法是尽早且经常保存。
 
      当程序运行时，其外观应与下图类似。
 
-     图片查看器![](../ide/media/express_pictureviewerdonerun.png)<br>图片查看器*
+     图片查看器![](../ide/media/express_pictureviewerdonerun.png)<br>图片查看器
 
 ## <a name="to-test-your-app"></a>测试应用
 
-1. 按 F5 键或选择“启动调试”工具栏按钮。
+1. 按 F5 或选择“启动调试”工具栏按钮。
 
 1. 选择“显示图片”按钮可运行刚刚编写的代码。 首先，该应用会打开“打开文件”对话框。 确认在该对话框底部的“文件类型”下拉列表中会出现筛选器。 然后，定位到一张图片并将其打开。 通常可以在“我的文档”文件夹内的“图片收藏\示例图片”文件夹中找到 Windows 操作系统附带的示例图片。
 

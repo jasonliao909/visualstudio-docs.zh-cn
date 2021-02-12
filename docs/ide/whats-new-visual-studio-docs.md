@@ -1,97 +1,115 @@
 ---
-title: 'Visual Studio 文档：2021 年 12 月新增功能 '
+title: Visual Studio 文档：2021 年 1 月新增内容
 titleSuffix: ''
-description: 2021 年 12 月 Visual Studio 文档中的新增功能。
-ms.date: 01/11/2021
+description: Visual Studio 文档 2021 年 1 月新增内容。
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
 ms.assetid: 89844796-621B-4EF5-9D76-197084B011CB
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dfa3c6ec4655edf6313bea2e68b995ae8b3f9b0
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 17b307e248e18710a93669116ccf032e533145f3
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113562"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960489"
 ---
-# <a name="visual-studio-docs-whats-new-for-december-2021"></a>Visual Studio 文档：2021 年 12 月新增功能
+# <a name="visual-studio-docs-whats-new-for-january-2021"></a>Visual Studio 文档：2021 年 1 月新增内容
 
-欢迎了解 2020 年 12 月 Visual Studio 文档中的新增功能。 本文列出了 7 月份对文档进行的一些重大更改。 有关前几月新增功能的信息，请参阅[新增功能历史记录](whats-new-visual-studio-docs-history.md)文章。
+欢迎了解 Visual Studio 文档 2021 年 1 月新增内容。 本文列出了 7 月份对文档进行的一些重大更改。 有关前几月新增功能的信息，请参阅[新增功能历史记录](whats-new-visual-studio-docs-history.md)文章。
 
 ## <a name="azure"></a>Azure
 
 **新文章**
 
-- [使用已连接 Visual Studio 的服务添加 Azure 应用程序配置](../azure/vs-azure-tools-connected-services-app-configuration.md) - 应用配置连接的服务教程
+- [在 Visual Studio（预览版）中创建和部署到云服务（扩展支持）](../azure/cloud-services-extended-support.md)- 云服务扩展支持 - 无模板
 
 ## <a name="code-quality"></a>代码质量
 
-**更新的文章**
+**新文章**
 
-- [概述](../code-quality/use-roslyn-analyzers.md) - 通过 editorconfig 从命令行生成
-- [启用或安装第一方 .NET 分析器](../code-quality/install-net-analyzers.md)
-  - 使从 FxCopAnalyzers 到 NetAnalyzers 的迁移文档更加清晰
-  - 重新排列 .NET 分析器的目录
-- [从 FxCop 分析器迁移到 .NET 分析器](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) - 使从 FxCopAnalyzers 到 NetAnalyzers 的迁移文档更加清晰
-
-## <a name="containers"></a>容器
-
-**更新的文章**
-
-- [使用 Docker 对 Visual Studio 开发进行排除故障](../containers/troubleshooting-docker-errors.md) - 关于更新 Docker 以进行 Visual Studio 故障排除的指南
+- [代码度量 - 类耦合](../code-quality/code-metrics-class-coupling.md) - 代码度量刷新
+- [代码度量 - 可维护性指数范围和含义](../code-quality/code-metrics-maintainability-index-range-and-meaning.md) - 代码度量刷新
 
 ## <a name="debugger"></a>调试器
 
+**新文章**
+
+- [使用 Visual Studio 在 WSL 2 中调试 .NET Core 应用](../debugger/debug-dotnet-core-in-wsl-2.md) - .NET Core WSL2 调试
+
 **更新的文章**
 
-- [常见问题解答 - 在 Visual Studio 中查找所需的调试功能](../debugger/find-your-debugging-task.md) - 查找调试任务和概述主题的发现工作
+- [使用 Natvis 框架在调试器中创建 C++ 对象的自定义视图](../debugger/create-custom-views-of-native-objects.md) - Natvis 中特殊字符的 XML 格式设置说明
+- [安全警告：附加到不受信任的用户所拥有的进程可能很危险。如果以下信息看上去可疑或者你无法确定，请勿附加到此进程](../debugger/security-warning-attaching-to-a-process-owned-by-an-untrusted-user.md) - 对附加到不受信任的进程时的安全警告的更新
+
+## <a name="deployment"></a>部署
+
+**更新的文章**
+
+- [&lt;InstallChecks&gt; 元素（引导程序）](../deployment/installchecks-element-bootstrapper.md) - 更新引导程序包文档，以包含新的 BeforeInstallChecks 元素
+
+## <a name="extensibility"></a>扩展性
+
+**更新的文章**
+
+- [演练：发布 Visual Studio 扩展](../extensibility/walkthrough-publishing-a-visual-studio-extension.md) - [PUBLIC_MOVE] 从公共 PR 6214 提交
 
 ## <a name="get-started"></a>入门
 
+**新文章**
+
+- [教程：在 Visual Studio 2017 中从存储库打开项目](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) - 更新“从存储库打开项目”教程
+
 **更新的文章**
 
-- [项目和解决方案简介](../get-started/tutorial-projects-solutions.md)
-  - 解决方案和项目主题的更新
-  - 更新 tutorial-projects-solutions.md
-  - 菜单选项中缺少
-- [教程：在 Visual Studio 中创建一个简单的 C# 控制台应用](../get-started/csharp/tutorial-console.md) - C# 控制台教程：第 2 部分仅适用于 VS 2019
+- [教程：从存储库打开项目](../get-started/tutorial-open-project-from-repo.md) - 更新“从存储库中打开项目”教程
 
 ## <a name="ide"></a>IDE
 
+**新文章**
+
+- [适用于 Visual Studio 的 JavaScript F1 帮助](./not-in-toc/default-f1-javascript.md) - 添加了 JS 和 TS 默认 F1 页面
+- [适用于 Visual Studio 的 TypeScript F1 帮助](./not-in-toc/default-f1-typescript.md) - 添加了 JS 和 TS 默认 F1 页面
+
 **更新的文章**
 
-- [Visual Studio 中的解决方案和项目](./solutions-and-projects-in-visual-studio.md) - 解决方案和项目主题的更新
-- [在 Visual Studio 中创建新项目](./create-new-project.md)
-  - 优化屏幕截图和关系图的替换文字
-  - 解决方案和项目主题的更多更新
-- [用于解决 IDE 错误的资源](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) - 修改过期的论坛资源部分
-- [使用解决方案和项目](./creating-solutions-and-projects.md) - 解决方案和项目主题的更多更新
-- [如何报告 Visual Studio 或 Visual Studio 安装程序的问题](./how-to-report-a-problem-with-visual-studio.md)
-  - 更新屏幕截图
-  - 开发人员社区更改
-- [Visual Studio 性能提示和技巧](./visual-studio-performance-tips-and-tricks.md) - 更新“禁用诊断工具”部分
+- [Visual Studio 中的解决方案和项目](./solutions-and-projects-in-visual-studio.md) - 将链接添加到 Visual Studio 映像库
+
+## <a name="install"></a>安装
+
+**更新的文章**
+
+- [Visual Studio 内部版本号和发布日期](../install/visual-studio-build-numbers-and-release-dates.md) - 周二补丁日更新
+
+## <a name="msbuild"></a>MSBuild
+
+**更新的文章**
+
+- [MSBuild 词汇表](../msbuild/msbuild-glossary.md) - 将术语表项升级到 H2
+
+## <a name="profiling"></a>分析
+
+**新文章**
+
+- [从 Visual Studio 探查器中将 dotnet 计数器可视化](../profiling/dotnet-counters-tool.md) - 添加 .NET 计数器工具文档
 
 ## <a name="test"></a>测试
 
 **更新的文章**
 
-- [单元测试入门](../test/getting-started-with-unit-testing.md) - 测试工具的发现工作和其他改进
-- [首先介绍 Visual Studio 中的测试工具](../test/improve-code-quality.md) - 测试工具的发现工作和其他改进
-- [需要在 Visual Studio # 中使用测试工具；搜索结果中显示的页标题。包括品牌在内，小于 60 个字符。](../test/index.yml) - 测试工具的发现工作和其他改进
-- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md) - 为差异框架添加动态播放列表 xml
+- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md) - 添加测试音频提示文档
 
 ## <a name="community-contributors"></a>社区参与者
 
 在此期间，以下人员为 Visual Studio 文档做出了贡献。 谢谢！ 按照[参与者指南](/contribute/)中的指导操作，了解如何参与 Visual Studio 文档。
 
-- [surlydev](https://github.com/surlydev) - SurlyDev (2)
-- [nschonni](https://github.com/nschonni) - Nick Schonning (1)
-- [syohex](https://github.com/syohex) - Shohei YOSHIDA (1)
+- [ericmutta](https://github.com/ericmutta) - Eric Mutta (1)
+- [saip106](https://github.com/saip106) - Sai Gudigundla (1)

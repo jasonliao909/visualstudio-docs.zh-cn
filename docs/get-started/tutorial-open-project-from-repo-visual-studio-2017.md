@@ -8,19 +8,19 @@ ms.prod: visual-studio-windows
 ms.topic: tutorial
 author: TerryGLee
 ms.author: tglee
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 6989de1c5b4542998d048e5eadd47f48dc7e05b1
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99181994"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99951922"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>教程：在 Visual Studio 2017 中打开存储库中的项目
 
@@ -43,7 +43,7 @@ ms.locfileid: "99181994"
 
     ![从“本地 Git 存储库”部分中选择“克隆”](./media/open-proj-repo-local-git-repo-clone.png)
 
-1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter ***__***。 （可能会收到登录到 GitHub 的提示；如果是这样，请按照提示操作。）
+1. 在“输入要克隆的 Git 存储库的 URL”框中，键入或粘贴存储库的 URL，然后按 Enter__***。 （可能会收到登录到 GitHub 的提示；如果是这样，请按照提示操作。）
 
    Visual Studio 克隆存储库后，团队资源管理器将关闭，解决方案资源管理器将打开。 随即显示一条消息：“单击上面的‘解决方案和文件夹’以查看解决方案列表”。 选择“解决方案和文件夹”  。
 

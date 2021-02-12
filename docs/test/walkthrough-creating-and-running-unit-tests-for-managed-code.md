@@ -11,16 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 - unit tests, authoring
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: ed2e7f11a6e36c797bb6c506c19b0fff11fb5ad1
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598544"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99948005"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -138,7 +138,7 @@ ms.locfileid: "95598544"
 
 6. 通过在“解决方案资源管理器”中右键单击并选择“重命名”，将该文件重命名为 BankAccount.cs    。
 
-7. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
+7. 在“构建”菜单中，单击“构建解决方案”（或按 Ctrl   + Shift + B）。
 
 现在具有可测试其方法的项目。 在本文中，测试侧重于 `Debit` 方法。 在从帐户提取资金时调用 `Debit` 方法。
 
@@ -187,7 +187,7 @@ ms.locfileid: "95598544"
 
 ### <a name="rename-a-file-and-class"></a>重命名文件和类
 
-1. 要重命名文件，在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件   。 在右键单击菜单中，选择“重命名”  ，再将文件重命名为 BankAccountTests.cs  。
+1. 要重命名文件，在“解决方案资源管理器”中，从 BankTests 项目中选择 UnitTest1.cs 文件   。 在右键单击菜单中，选择“重命名”（或按 F2），再将文件重命名为 BankAccountTests.cs。 
 
 ::: moniker range="vs-2017"
 
@@ -197,7 +197,7 @@ ms.locfileid: "95598544"
 
 ::: moniker range=">=vs-2019"
 
-2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，右键单击，然后选择“重命名”  。 键入 BankAccountTests，然后按 Enter   。
+2. 要重命名类，请将光标放置在代码编辑器的 `UnitTest1` 上，右键单击，然后选择“重命名”（或按 F2） 。 键入 BankAccountTests，然后按 Enter   。
 
 ::: moniker-end
 
@@ -289,11 +289,11 @@ public void Debit_WithValidAmount_UpdatesBalance()
 
 ## <a name="build-and-run-the-test"></a>生成并运行测试
 
-1. 在 **“生成”** 菜单上，选择 **“生成解决方案”** 。
+1. 在“构建”菜单中，选择“构建解决方案”（或按 Ctrl   + Shift + B）。
 
-2. 如果未打开“测试资源管理器”，通过在顶部菜单栏中选择“测试” > “Windows” > “测试资源管理器”将其打开     。
+2. 如果未打开“测试资源管理器”，通过在顶部菜单栏中选择“测试” > “Windows” > “测试资源管理器”将其打开（或按 Ctrl +  E，T）   。
 
-3. 选择 **“全部运行”** 以运行测试。
+3. 选择“全部运行”以运行测试（或按 Ctrl  +  R，V）。
 
    测试运行时，“测试资源管理器”窗口顶部的状态栏呈动态  。 测试运行结束时，如果测试方法全部通过，状态栏将变为绿色；如果有任何测试失败，状态栏将变为红色。
 
@@ -323,7 +323,7 @@ m_balance -= amount;
 
 ### <a name="rerun-the-test"></a>重新运行测试
 
-在测试资源管理器中，选择“全部运行”以重新运行测试   。 红色/绿色栏变为绿色，指示已通过测试。
+在测试资源管理器中，选择“全部运行”以重新运行测试（或按 Ctrl   +  R，V）。 红色/绿色栏变为绿色，指示已通过测试。
 
 ![Visual Studio 2019 中显示已通过的测试的文本资源管理器](media/test-explorer-banktests-passed.png)
 

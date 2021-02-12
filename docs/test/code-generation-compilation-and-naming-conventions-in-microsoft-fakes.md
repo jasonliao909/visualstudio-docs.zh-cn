@@ -5,16 +5,16 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: e3ebb1439c7b8eb958d8e7126ca0197462e89a09
-ms.sourcegitcommit: 02f14db142dce68d084dcb0a19ca41a16f5bccff
+ms.openlocfilehash: ecba59e633bf6d456f16e6098f47719e052ac0de
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95441628"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006355"
 ---
 # <a name="code-generation-compilation-and-naming-conventions-in-microsoft-fakes"></a>Microsoft Fakes 中的代码生成、编译和命名约定
 
@@ -25,7 +25,7 @@ ms.locfileid: "95441628"
 - Visual Studio Enterprise
 - .NET Framework 项目
 ::: moniker range=">=vs-2019"
-- .NET Core 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- .NET Core、.NET 5.0 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 ## <a name="code-generation-and-compilation"></a>代码生成和编译

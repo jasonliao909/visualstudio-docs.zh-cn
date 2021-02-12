@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: how-to
 description: 了解管理员如何使用批量添加功能或 Microsoft Azure Active Directory 组将许可证分配给多个订阅者
-ms.openlocfilehash: e9d4cd5c7e73cdc3b71768a498a7c02546d3e1fc
-ms.sourcegitcommit: 74b67f102d243e3b74a93563e834f49df298e4b8
+ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/19/2020
-ms.locfileid: "97696619"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511366"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。
@@ -137,7 +137,7 @@ ms.locfileid: "97696619"
    > ![单击“详细信息”按钮](_img/assign-license-bulk/bulk-add-agreement.png "单击“详细信息”按钮以查看你拥有的协议类型")
 
 ### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>问：我已将某人添加到我的 Azure AD 安全组，但我在订阅管理门户中看不到该用户，而且该用户没有订阅。 为什么看不到？  
-答：根据组织对 Azure AD 的配置，在看到已添加的用户之前，可能存在延迟（最多可能有 24 小时）。 如果延迟超过 24 小时，请[联系支持人员](https://visualstudio.microsoft.com/support/support-overview-vs)。  
+答：根据组织对 Azure AD 的配置，在看到已添加的用户之前，可能存在延迟（最多可能有 24 小时）。 如果超过 24 小时，请访问 [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)。  
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 文档](/visualstudio/)

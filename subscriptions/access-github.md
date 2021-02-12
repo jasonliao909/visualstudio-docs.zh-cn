@@ -7,12 +7,12 @@ ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
 ms.date: 10/22/2020
 ms.topic: conceptual
 description: 了解如何访问作为 Visual Studio 订阅的一部分的 GitHub Enterprise
-ms.openlocfilehash: 59b665b1da7d46732f1f4e967ae2a98ec54875ff
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537898"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511353"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅 
 
@@ -85,7 +85,7 @@ GitHub Enterprise 由 GitHub 管理员管理（独立于 Visual Studio 订阅）
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com)。
 - 需要更多帮助？  请联系 [GitHub 支持人员](https://support.github.com/)
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助，请访问[获取帮助](https://my.visualstudio.com/GetHelp)页面。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 

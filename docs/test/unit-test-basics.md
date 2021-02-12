@@ -8,15 +8,15 @@ f1_keywords:
 - vs.UnitTest.CreateUnitTest
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5660d67ac2c8c3bff589c34dd4303d36a3e20cff
-ms.sourcegitcommit: d526af3642163180e0cc3e1e73b0a00f02542683
+ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/31/2020
-ms.locfileid: "97833307"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99962725"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -236,7 +236,7 @@ public void My_Test ()
 
 ## <a name="run-tests-in-test-explorer"></a>在测试资源管理器中运行测试
 
-在生成测试项目时，测试将出现在“测试资源管理器”中。 如果“测试资源管理器”不可见，请选择 Visual Studio 菜单上的“测试”，然后依次选择“Windows”、“测试资源管理器”   。
+在生成测试项目时，测试将出现在“测试资源管理器”中。 如果“测试资源管理器”不可见，请选择 Visual Studio 菜单上的“测试”，然后依次选择“Windows”、“测试资源管理器”（或按 Ctrl     +  E，T）。
 
 ::: moniker range="vs-2017"
 ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
@@ -260,7 +260,7 @@ public void My_Test ()
 ![从测试资源管理器工具栏运行测试](../test/media/vs-2019/test-explorer-toolbar-diagram-16-2.png)
 ::: moniker-end
 
-你可以选择“运行全部”  来运行所有测试，或选择“运行”  来选择要运行的测试的子集。 选择一个测试，在测试详细信息窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键： **“F12”** ），显示所选测试的源代码。
+你可以选择“运行全部”（或按 Ctrl  +  R，V）来运行所有测试，或选择“运行”（Ctrl  +  R，T）来选择要运行的测试的子集。 选择一个测试，在测试详细信息窗格中查看该测试的详细信息。 选择右键单击菜单中的“打开测试”（快捷键： **“F12”** ），显示所选测试的源代码。
 
 ::: moniker range="vs-2017"
 

@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 37cbd2ca1f0207eaf2a41f6a08248bcedcfbe5bb
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: a485433ef73ef853a186a5b441396f6d5a57f679
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96479467"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868850"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步骤 7：向窗体添加对话框组件
 
@@ -34,7 +34,7 @@ ms.locfileid: "96479467"
 
 1. 要向窗体添加一个名为“openFileDialog1”的组件，请双击“OpenFileDialog”。 要向窗体添加一个名为“colorDialog1”的组件，请双击“工具箱”中的“ColorDialog”。 （将在下一个教程步骤中使用后一个组件。）“Windows 窗体设计器”的底部（在“图片查看器”窗体下方）会出现一个区域，其中包含与已添加的两个对话框组件对应的图标，如下图所示 。
 
-     ![对话框组件](../ide/media/express_dialogsadded.png)<br>对话框组件*
+     ![对话框组件](../ide/media/express_dialogsadded.png)<br>*对话框组件
 
 1. 在“Windows 窗体设计器”底部区域中选择“openFileDialog1”图标。 设置以下两个属性：
 

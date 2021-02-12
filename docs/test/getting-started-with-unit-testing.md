@@ -8,15 +8,15 @@ helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 31314a669815d38ed408a28e033e4943df0f75d3
-ms.sourcegitcommit: 4e28314dc2be59b4c5fd44545c0653f625e74489
+ms.openlocfilehash: c83b13b852b9ae53bd2218a62b6681478369df1b
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97756651"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99970512"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
@@ -180,13 +180,13 @@ ms.locfileid: "97756651"
 1. 打开“测试资源管理器”。[](../test/run-unit-tests-with-test-explorer.md)
 
    ::: moniker range=">=vs-2019"
-   若要打开测试资源管理器，请选择顶部菜单栏中的“测试”>“测试资源管理器” 。
+   若要打开测试资源管理器，请选择顶部菜单栏中的“测试”>“测试资源管理器”（或按 Ctrl  + E，T）。
    ::: moniker-end
    ::: moniker range="vs-2017"
    若要打开测试资源管理器，请选择顶部菜单栏中的“测试”>“Windows”>“测试资源管理器”  。
    ::: moniker-end
 
-1. 单击“全部运行”，运行单元测试。
+1. 单击“全部运行”（或按 Ctrl  +  R，V），运行单元测试。
 
    ![在测试资源管理器中运行单元测试](media/vs-2019/test-explorer-run-all.png)
 
@@ -274,7 +274,7 @@ ms.locfileid: "97756651"
 
    ![将代码添加到单元测试代码文件](media/vs-2019/unit-test-method.png)
 
-6. 从测试资源管理器运行测试，或右键单击测试代码并选择“运行测试”。
+6. 从测试资源管理器运行测试，或右键单击测试代码并选择“运行测试”（或 Ctrl   +  R，T）。
 
 ## <a name="next-steps"></a>后续步骤
 

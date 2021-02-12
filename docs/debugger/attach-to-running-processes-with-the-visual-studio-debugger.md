@@ -26,15 +26,15 @@ helpviewer_keywords:
 ms.assetid: 27900e58-090c-4211-a309-b3e1496d5824
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6fb2fde5d5629b84ccd0e136c132a200b154ea71
-ms.sourcegitcommit: dc71e9030ff35bb26916572b431d4d9e78df3d6f
+ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031037"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99866003"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -243,7 +243,7 @@ ms.locfileid: "98031037"
 
     3. 在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 取消选择其他代码类型。
 
-    4. 选择“确定”  。
+    4. 选择“确定”。
 
     5. 在“附加到进程”对话框中，选择“附加”。
 

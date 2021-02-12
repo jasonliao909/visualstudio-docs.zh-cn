@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: eeb7b981dcaec97d52c24ea40476f0bec84e608e
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598557"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006434"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 
@@ -152,7 +152,7 @@ analyzer = new StockAnalyzer(new StockFeed());
 1. 在“解决方案资源管理器”中： 
     - 对于旧版 .NET Framework 项目（非 SDK 样式），展开单元测试项目的“引用”节点。
     ::: moniker range=">=vs-2019"
-    - 对于定目标到 .NET Framework 或 .NET Core 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。
+    - 对于定目标到 .NET Framework、.NET Core 或 .NET 5.0 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。   
     ::: moniker-end
     - 如果使用的是 Visual Basic，请选择“解决方案资源管理器”工具栏中的“显示所有文件”，以查看“引用”节点。
 

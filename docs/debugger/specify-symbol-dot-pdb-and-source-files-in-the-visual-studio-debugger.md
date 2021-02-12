@@ -26,19 +26,19 @@ helpviewer_keywords:
 ms.assetid: 1105e169-5272-4e7c-b3e7-cda1b7798a6b
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eceffab5b8c179734b1abb5f1005c240912115f1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "89599585"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99903564"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 
-程序数据库 ( *.pdb* ) 文件（也称为符号文件）将项目源代码中的标识符和语句映射到已编译应用中的相应标识符和说明。 这些映射文件将调试器链接到源代码，以进行调试。
+程序数据库 ( *.pdb*) 文件（也称为符号文件）将项目源代码中的标识符和语句映射到已编译应用中的相应标识符和说明。 这些映射文件将调试器链接到源代码，以进行调试。
 
 使用标准调试生成配置从 Visual Studio IDE 生成项目时，编译器会创建相应的符号文件。 本文介绍如何在 IDE 中管理符号文件，例如，如何[在调试器选项中指定符号的位置](#BKMK_Specify_symbol_locations_and_loading_behavior)，如何在调试时[检查符号加载状态](#work-with-symbols-in-the-modules-window)，以及如何[在代码中设置符号选项](#compiler-symbol-options)。
 
@@ -85,11 +85,11 @@ ms.locfileid: "89599585"
 
      可能会用到的符号服务器包括：
 
-     **公共 Microsoft 符号服务器** ：要调试在调用系统 DLL 或第三方库时出现的故障，通常需要系统 .pdb 文件。 系统 .pdb 文件包含 Windows DL、.exe 文件和设备驱动程序的符号 。 你可以从公共 Microsoft 符号服务器获取 Windows 操作系统、MDAC、IIS、ISA 和 .NET 的符号。
+     **公共 Microsoft 符号服务器**：要调试在调用系统 DLL 或第三方库时出现的故障，通常需要系统 .pdb 文件。 系统 .pdb 文件包含 Windows DL、.exe 文件和设备驱动程序的符号 。 你可以从公共 Microsoft 符号服务器获取 Windows 操作系统、MDAC、IIS、ISA 和 .NET 的符号。
 
-     **内部网络或本地计算机上的符号服务器** ：你的团队或公司可为你自己的产品创建符号服务器，并作为外部源符号的缓存。 你自己的计算机上可能具有符号服务器。
+     **内部网络或本地计算机上的符号服务器**：你的团队或公司可为你自己的产品创建符号服务器，并作为外部源符号的缓存。 你自己的计算机上可能具有符号服务器。
 
-     **第三方符号服务器** ：Windows 应用程序和库的第三方提供程序可提供对 Internet 上的符号服务器的访问。
+     **第三方符号服务器**：Windows 应用程序和库的第三方提供程序可提供对 Internet 上的符号服务器的访问。
 
      > [!WARNING]
      > 如果使用公共 Microsoft 符号服务器以外的符号服务器，请确保该符号服务器及其路径是可信任的。 由于符号文件可以包含任意可执行代码，因此你可能面临安全威胁。
@@ -218,7 +218,7 @@ ms.locfileid: "89599585"
 
 **要在调试时监视或更改符号位置或选项：**
 
-1. 若要在调试期间打开“模块”窗口，请选择“调试” > “窗口” > “模块”。
+1. 若要在调试时打开“模块”窗口，请选择“调试”  > “窗口” > “模块”（或按 Ctrl  + Alt + U）。
 1. 在“模块”窗口中，右键单击“符号状态”或“符号文件”标头，或单击任意模块  。
 1. 在上下文菜单中，选择以下选项之一：
 

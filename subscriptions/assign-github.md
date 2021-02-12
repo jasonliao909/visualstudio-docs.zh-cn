@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 12/02/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: eed2f0636b0751c996da79c54d1a439532bce097
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: ca71e696081e304cdbb8cc58576e0ae4c536f911
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538119"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511314"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
@@ -51,7 +51,7 @@ GitHub 可作为基于云的 GitHub.com 提供，也可提供为本地 GitHub En
 - 访问 [GitHub 文档](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)，了解有关 GitHub 分配的详细信息
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com/en)。
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 

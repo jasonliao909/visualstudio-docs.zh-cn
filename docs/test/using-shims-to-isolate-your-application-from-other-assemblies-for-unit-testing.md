@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 0ce89246d227d747fee2d3a02484855257f016f8
-ms.sourcegitcommit: d6207a3a590c9ea84e3b25981d39933ad5f19ea3
+ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/24/2020
-ms.locfileid: "95598206"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006408"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充码隔离应用以进行单元测试
 
@@ -30,7 +30,7 @@ ms.locfileid: "95598206"
 - Visual Studio Enterprise
 - .NET Framework 项目
 ::: moniker range=">=vs-2019"
-- .NET Core 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- .NET Core、.NET 5.0 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 ## <a name="example-the-y2k-bug"></a>示例: 计算机 2000 年问题 Bug
@@ -71,7 +71,7 @@ using (ShimsContext.Create()) {
 1. 在“解决方案资源管理器”中： 
     - 对于旧版 .NET Framework 项目（非 SDK 样式），展开单元测试项目的“引用”节点。
     ::: moniker range=">=vs-2019"
-    - 对于定目标到 .NET Framework 或 .NET Core 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。
+    - 对于定目标到 .NET Framework、.NET Core 或 .NET 5.0 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。   
     ::: moniker-end
     - 如果使用的是 Visual Basic，请选择“解决方案资源管理器”工具栏中的“显示所有文件”，以查看“引用”节点。
 
@@ -524,7 +524,7 @@ System.Fakes.ShimEnvironment.GetCommandLineArgsGet = ...
 
 ## <a name="limitations"></a>限制
 
-填充码不是在 .NET Framework 中 .NET 基类库 mscorlib 和 System 中的所有类型以及 .NET Core 中 System.Runtime 中的所有类型上都能使用。
+填充码不是在 .NET Framework 中 .NET 基类库 mscorlib 和 System 中的所有类型以及 .NET Core 或 .NET 5.0 中 System.Runtime 中的所有类型上都能使用。
 
 ## <a name="see-also"></a>另请参阅
 
