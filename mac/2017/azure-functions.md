@@ -7,12 +7,12 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
-ms.openlocfilehash: 009df6525696405914aeeb224e3817bbfbe27155
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.openlocfilehash: 63793548bd3ea1098cc1113724cd9a3b513adbf5
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96189792"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727458"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 
@@ -91,10 +91,10 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
 
 ## <a name="publish-to-azure"></a>发布到 Azure
 
-1. 右键单击项目名，然后选择“发布”>“发布到 Azure”：![发布到 Azure 菜单选项](media/azure-functions-image5.png)
+1. 右键单击项目名，然后选择“发布”>“发布到 Azure”：![Azure Functions 的屏幕截图，其中显示 AF-httptrigger 项目处于选中状态，并且上下文菜单中突出显示了“发布”和“发布到 Azure”命令。](media/azure-functions-image5.png)
 2. 如果已将 Azure 帐户连接到 Visual Studio for Mac，则会显示可用应用服务的列表。 如果尚未登录，系统将提示登录。
 3. 从“发布到 Azure 应用服务”对话框，可选择现有应用服务，也可通过单击“新建”来创建新服务 。
-4. 在“创建新的应用服务”对话框中，输入设置：![发布到 Azure 菜单选项](media/azure-functions-image7.png)
+4. 在“创建新的应用服务”对话框中，输入设置：![Azure Functions 中的“新建应用服务”窗口的屏幕截图，其中显示了用于在 Azure 上创建新应用服务的设置。](media/azure-functions-image7.png)
 
     |设置  |描述  |
     |---------|---------|
@@ -108,13 +108,13 @@ Visual Studio for Mac 使用包含的默认函数创建 .NET Standard 项目。 
 
 5. 单击“下一步”创建存储帐户。 Functions 运行时需要 Azure 存储帐户。 单击“自定义”以创建通用存储帐户，或使用现有帐户：
 
-    ![发布到 Azure 菜单选项](media/azure-functions-image8.png)
+    ![Azure Functions 中的“配置存储帐户”屏幕的屏幕截图。 已为存储帐户选择了“自定义”，并填写了“帐户名”和“帐户类型”。](media/azure-functions-image8.png)
 
 6. 单击“创建”以使用这些设置在 Azure 中创建函数应用和相关资源，并部署函数项目代码。
 
 7. 在发布期间，系统可能会提示“在 Azure 上更新 Functions 版本”。 单击“是”：
 
-    ![发布到 Azure 菜单选项](media/azure-functions-image12.png)
+    ![“在 Azure 上更新 Functions 版本”对话框提示的屏幕截图，该提示要求你“更新 Azure 应用程序设置以匹配本地 Functions 版本”。](media/azure-functions-image12.png)
 
 > [!CAUTION]
 > Visual Studio for Mac 的 7.6 版本中存在一个 bug，其中 `FUNCTIONS_EXTENSION_VERSION` 未正确设置为“beta 版本”，这意味着函数可能无法运行。 若要解决此问题，请转到[函数应用设置](#function-app-settings)并将 `FUNCTIONS_EXTENSION_VERSION` 从“-1”设置为“beta 版本”。

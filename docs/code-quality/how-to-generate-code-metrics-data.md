@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0387542487b2c24baa129fbb0163dee0140cb413
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
+ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860032"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496257"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 
@@ -45,7 +45,7 @@ ms.locfileid: "99860032"
 dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>配置
+### <a name="configuration"></a>Configuration
 
 你可以配置触发代码度量规则的阈值。
 
@@ -59,7 +59,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
    在此示例中，规则 [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 配置为在方法的圈复杂度大于10时激发。
 
-3. 在 Visual Studio 的 " **属性** " 窗口中，或者在项目文件中，将配置文件的生成操作标记为 " [**AdditionalFiles**](../ide/build-actions.md#build-action-values)"。 例如： 。
+3. 在 Visual Studio 的 " **属性** " 窗口中，或者在项目文件中，将配置文件的生成操作标记为 " [**AdditionalFiles**](../ide/build-actions.md#build-action-values)"。 例如：
 
    ```xml
    <ItemGroup>
@@ -108,7 +108,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>CodeAnalysis NuGet 包
 
-若要从命令行生成代码度量数据，最简单的方法是安装 [CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 包。 安装程序包后， `msbuild /t:Metrics` 从包含项目文件的目录中运行。 例如： 。
+若要从命令行生成代码度量数据，最简单的方法是安装 [CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 包。 安装程序包后， `msbuild /t:Metrics` 从包含项目文件的目录中运行。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -131,7 +131,7 @@ Build succeeded.
     0 Error(s)
 ```
 
-您可以通过指定来覆盖输出文件的名称 `/p:MetricsOutputFile=<filename>` 。 还可以通过指定来获取 [旧样式的](#previous-versions) 代码度量数据 `/p:LEGACY_CODE_METRICS_MODE=true` 。 例如： 。
+您可以通过指定来覆盖输出文件的名称 `/p:MetricsOutputFile=<filename>` 。 还可以通过指定来获取 [旧样式的](#previous-versions) 代码度量数据 `/p:LEGACY_CODE_METRICS_MODE=true` 。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics /p:LEGACY_CODE_METRICS_MODE=true /p:MetricsOutputFile="Legacy.xml"
@@ -279,7 +279,7 @@ Build succeeded.
 1. 克隆 [dotnet/roslyn](https://github.com/dotnet/roslyn-analyzers) 存储库。
 2. 以管理员身份打开 Visual Studio 开发人员命令提示。
 3. 从 **roslyn** 存储库的根目录中执行以下命令： `Restore.cmd`
-4. 将目录更改为 *src\Tools*。
+4. 将目录更改为 *src\Tools\Metrics*。
 5. 执行以下命令以生成 **度量值 .csproj** 项目：
 
    ```shell
@@ -290,7 +290,7 @@ Build succeeded.
 
 #### <a name="metricsexe-usage"></a>Metrics.exe 用法
 
-若要运行 *Metrics.exe*，请将项目或解决方案和输出 XML 文件作为参数提供。 例如： 。
+若要运行 *Metrics.exe*，请将项目或解决方案和输出 XML 文件作为参数提供。 例如：
 
 ```shell
 C:\>Metrics.exe /project:ConsoleApp20.csproj /out:report.xml
@@ -310,7 +310,7 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 有关详细信息，请参阅 [在传统模式下启用生成代码度量值](https://github.com/dotnet/roslyn-analyzers/pull/1841)。
 
-### <a name="previous-versions"></a>早期版本
+### <a name="previous-versions"></a>旧版
 
 ::: moniker range=">=vs-2019"
 Visual Studio 2015 附带了一个命令行代码度量工具，该工具也称为 *Metrics.exe*。 此工具的以前版本执行二进制分析，即基于程序集的分析。 较新版本的 *Metrics.exe* 工具改为分析源代码。 由于较新 *Metrics.exe* 工具是基于源代码的，因此，命令行代码度量结果可能与 VISUAL Studio IDE 和以前版本的 *Metrics.exe* 所生成的结果不同。 从 Visual Studio 2019 开始，Visual Studio IDE 将分析类似于命令行工具的源代码，结果应相同。
@@ -333,7 +333,7 @@ Visual Studio 2015 附带了一个命令行代码度量工具，该工具也称�
 
 其他指标（例如 `CyclomaticComplexity` 和） `MaintainabilityIndex` 使用与 *Metrics.exe* 以前版本相同的公式，但新的工具会对 (逻辑源指令的数量进行计数， `IOperations` 而不是) 中间语言 (IL) 说明。 这些数字将与 Visual Studio IDE 和以前版本的 *Metrics.exe* 生成的数字略有不同。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 "代码度量结果" 窗口](../code-quality/working-with-code-metrics-data.md)
 - [代码度量值](../code-quality/code-metrics-values.md)

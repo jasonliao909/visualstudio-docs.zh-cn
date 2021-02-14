@@ -7,12 +7,12 @@ ms.date: 06/25/2019
 ms.technology: vs-ide-general
 ms.assetid: 52D3D26A-4D01-4FD1-AAA1-AE7D7BD39746
 ms.topic: troubleshooting
-ms.openlocfilehash: d2ba7f5d044b82c44d719b251a7d803212cf7b07
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: b9aa9b718ad4618502a58185c27333d689c74300
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860556"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729374"
 ---
 # <a name="connecting-to-team-foundation-version-control"></a>连接到 Team Foundation 版本控制
 
@@ -21,7 +21,7 @@ ms.locfileid: "91860556"
 >
 > 如果您以前使用过 Visual Studio for Mac 的 TFVC 扩展的预览版本，则在升级到 Visual Studio 2019 for Mac 时，它不再受支持。
 
-Azure Repos 提供了两种版本控制模型：[Git](/azure/devops/repos/git/?view=azure-devops)，它是分布式版本控制系统，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops) (TFVC)，它是集中式版本控制系统。
+Azure Repos 提供了两种版本控制模型：[Git](/azure/devops/repos/git/?view=azure-devops&preserve-view=true)，它是分布式版本控制系统，以及 [Team Foundation 版本控制](/azure/devops/repos/tfvc/index?view=azure-devops&preserve-view=true) (TFVC)，它是集中式版本控制系统。
 
 Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一些解决方法才能使用 TFVC。 如果目前使用 TFVC 进行版本控制，可使用以下解决方案访问托管在 TFVC 中的源代码：
 
@@ -69,7 +69,7 @@ Visual Studio for Mac 提供了对 Git 存储库的全面支持，但需要一�
 
 安装 TEE-CLC 后，可以运行命令 `tf eula` 来查看和接受客户端的许可协议。
 
-最后，要在 TFS/Azure DevOps 环境中进行身份验证，需要在服务器上创建一个个人访问令牌。 详细了解如何[使用个人访问令牌进行身份验证](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops)。 当创建要与 TFVC 一起使用的个人访问令牌时，请确保在配置令牌时提供完全访问权限。
+最后，要在 TFS/Azure DevOps 环境中进行身份验证，需要在服务器上创建一个个人访问令牌。 详细了解如何[使用个人访问令牌进行身份验证](/azure/devops/integrate/get-started/authentication/pats?view=azure-devops&preserve-view=true)。 当创建要与 TFVC 一起使用的个人访问令牌时，请确保在配置令牌时提供完全访问权限。
 
 ### <a name="using-the-tee-clc-to-connect-to-your-repo"></a>使用 TEE-CLC 连接到存储库
 
@@ -117,7 +117,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 在 Visual Studio for Mac 扩展库中，有一个 Team Foundation 版本控制扩展，它提供对连接到 TFVC 的有限支持。 该扩展不受支持，并且存在几个已知问题，因此在使用它时，体验可能会有所不同。
 
-要安装扩展，请启动 Visual Studio for Mac 并选择“Visual Studio”>“扩展”**** 菜单。 在“库”**** 选项卡中，选择“版本控制”>“适用于 TFS 和 Azure DevOps 的 Team Foundation 版本控制”****，然后单击“安装...”****：
+要安装扩展，请启动 Visual Studio for Mac 并选择“Visual Studio”>“扩展”菜单。 在“库”选项卡中，选择“版本控制”>“适用于 TFS 和 Azure DevOps 的 Team Foundation 版本控制”，然后单击“安装...”：
 
 ![扩展管理器](media/tfvc-install.png)
 
@@ -127,7 +127,7 @@ tf checkin -comment:"Replaced 'Northwand' typos with the correct word Northwind"
 
 TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual Studio”>“扩展...”，然后选择“更新”选项卡 。从列表中选择扩展，然后选择“更新”按钮：
 
-选择下一对话框中的“安装”来卸载旧包并安装新包****。
+选择下一对话框中的“安装”来卸载旧包并安装新包。
 
 ### <a name="using-the-extension"></a>使用扩展
 
@@ -135,7 +135,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 ![用于打开扩展的菜单项](media/tfvc-source-control-explorer-devops.png)
 
-选择 VSTS 或 Team Foundation Server 以开始使用，然后选择“继续”****：
+选择 VSTS 或 Team Foundation Server 以开始使用，然后选择“继续”：
 
 ![与服务器连接](media/tfvc-choose-server-type-devops.png)
 
@@ -147,13 +147,13 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 #### <a name="tfs-authentication"></a>TFS 身份验证
 
-若要连接到 TFS，请输入服务器详细信息和帐户凭据。 若要使用 NTLM 身份验证，请输入域；若要使用基本身份验证，则留空。 选择“添加服务器”****：
+若要连接到 TFS，请输入服务器详细信息和帐户凭据。 若要使用 NTLM 身份验证，请输入域；若要使用基本身份验证，则留空。 选择“添加服务器”：
 
 ![登录 TFS 服务器](media/tfvc-login.png)
 
 ### <a name="selecting-a-project"></a>选择项目
 
-成功通过身份验证后，可在“在源代码管理中打开”对话框中看到与帐户关联的存储库的列表****：
+成功通过身份验证后，可在“在源代码管理中打开”对话框中看到与帐户关联的存储库的列表：
 
 ![显示项目的“在源代码管理中打开”对话框](media/tfvc-vsts-projects.png)
 
@@ -166,7 +166,7 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 #### <a name="adding-a-new-server"></a>添加新服务器
 
-若要将新服务器添加到列表，请在“在源代码管理中打开”对话框中选择“添加主机”按钮********：
+若要将新服务器添加到列表，请在“在源代码管理中打开”对话框中选择“添加主机”按钮：
 
 ![突出显示的添加按钮，用于将新服务器添加到列表](media/tfvc-add-new-server.png)
 
@@ -176,19 +176,19 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 ### <a name="creating-a-new-workspace"></a>创建一个新工作区
 
-若要开始使用项目，则需具备“工作区”__。 如果还没有工作区，可通过“在源代码管理中打开”对话框中的“工作区”组合框进行创建********：
+若要开始使用项目，则需具备“工作区”。 如果还没有工作区，可通过“在源代码管理中打开”对话框中的“工作区”组合框进行创建：
 
 ![创建新工作区组合框选项](media/tfvc-create-new-workspace.png)
 
-设置新工作区的名称和本地路径，并选择“创建工作区”****:
+设置新工作区的名称和本地路径，并选择“创建工作区”:
 
 ![输入新工作区的名称和本地路径](media/tfvc-local-workspace.png)
 
 ### <a name="using-the-source-code-explorer"></a>使用源代码资源管理器
 
-创建工作区并映射项目后，则可开始使用“源代码资源管理器”__。
+创建工作区并映射项目后，则可开始使用“源代码资源管理器”。
 
-若要打开源代码资源管理器，请选择“版本控制”>“TFS/Azure DevOps”>“源代码管理器”菜单项****。
+若要打开源代码资源管理器，请选择“版本控制”>“TFS/Azure DevOps”>“源代码管理器”菜单项。
 
 利用源代码资源管理器可以浏览所有映射的项目及其文件和文件夹。 还可以执行所有基本源代码管理操作，例如：
 
@@ -212,22 +212,22 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 
 若要使用本地工作区设置远程项目，请执行以下步骤：
 
-1. 从组合框中选择“服务器”****。
-1. 请注意，此时显示“无工作区”，并且本地路径为“未映射”。 选择“未映射”链接，以显示“创建新工作区”对话框********。
+1. 从组合框中选择“服务器”。
+1. 请注意，此时显示“无工作区”，并且本地路径为“未映射”。 选择“未映射”链接，以显示“创建新工作区”对话框。
 1. 为工作区提供一个名称，然后单击“添加工作文件夹”，将项目映射到计算机上的本地文件夹：
 
     ![显示默认选项的“创建新工作区”对话框](media/tfvc-workspace1.png)
 
-1. 选择“$”文件夹，将服务器上的所有项目映射到同一工作区；或选择单个项目，然后单击“确定”****：
+1. 选择“$”文件夹，将服务器上的所有项目映射到同一工作区；或选择单个项目，然后单击“确定”：
 
     ![显示所有项目的“浏览文件夹”对话框](media/tfvc-workspace2.png)
 
-1. 在本地计算机上选择希望将项目映射到的位置，然后单击“选择文件夹”****。
-1. 选择“确定”，确认新工作区的详细信息后****
+1. 在本地计算机上选择希望将项目映射到的位置，然后单击“选择文件夹”。
+1. 选择“确定”，确认新工作区的详细信息后
 
     ![添加了工作文件夹的“创建新工作区”对话框](media/tfvc-workspace3.png)
 
-设置工作区后，可通过单击源代码资源管理器中的“管理工作区”按钮来进行更改或将其删除****。
+设置工作区后，可通过单击源代码资源管理器中的“管理工作区”按钮来进行更改或将其删除。
 
 ![管理工作区](media/tfvc-workspace4.png)
 
@@ -241,23 +241,23 @@ TFVC 扩展定期更新。 若要访问更新，请从菜单中选择“Visual S
 - 基本
 - Ntlm
 
-若要使用基本身份验证，需要在 Azure DevOps Services 中启用“其他身份验证凭据”，具体步骤如下****：
+若要使用基本身份验证，需要在 Azure DevOps Services 中启用“其他身份验证凭据”，具体步骤如下：
 
 1. 以所有者身份登录到 Azure DevOps 组织 (https:\//dev.azure.com/{organization}/{project})。
 
-2. 在组织工具栏中，选择齿轮图标，然后选择“策略”****：
+2. 在组织工具栏中，选择齿轮图标，然后选择“策略”：
 
-    ![选中的策略设置选项](media/tfvc-auth2.png)
+    ![Azure DevOps 组织工具栏的屏幕截图，其中齿轮图标处于选中状态，并且“策略”在下拉菜单中处于选中状态。](media/tfvc-auth2.png)
 
 3. 查看应用程序连接设置。 根据安全策略更改这些设置：
 
-    ![选中的策略设置选项](media/tfvc-auth.png)
+    ![Azure DevOps Services 中的“策略”屏幕的屏幕截图，其中显示了应用程序连接策略的设置。](media/tfvc-auth.png)
 
 #### <a name="i-do-not-see-anything-in-tfvc"></a>我在 TFVC 中没有看到任何内容
 
-若要在开发计算机上设置 Team Foundation 版本控制 (TFVC)，必须按照[管理工作区](#managing-workspaces)部分所述创建工作区****。
+若要在开发计算机上设置 Team Foundation 版本控制 (TFVC)，必须按照[管理工作区](#managing-workspaces)部分所述创建工作区。
 
-在源代码管理器中，按“管理工作区”按钮****。 按照步骤将项目映射到开发计算机上的文件夹。
+在源代码管理器中，按“管理工作区”按钮。 按照步骤将项目映射到开发计算机上的文件夹。
 
 #### <a name="i-do-not-see-any--all-of-my-projects"></a>我没有看到任何/所有项目
 

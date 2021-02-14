@@ -6,12 +6,12 @@ ms.author: jomatthi
 ms.date: 11/09/2020
 ms.assetid: 852B6A9D-AEFA-4EF4-A5DD-94A506019D20
 ms.custom: video
-ms.openlocfilehash: 148a72fb13ff34e3fa15f0c56e145a70fa16608d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: dc865ec593f53149d9c004f252015def32325d18
+ms.sourcegitcommit: d485b18e46ec4cf08704b5a8d0657bc716ec8393
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493226"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97616172"
 ---
 # <a name="working-with-git"></a>使用 Git
 
@@ -59,9 +59,9 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ## <a name="switching-branches"></a>切换分支
 
-默认情况下，存储库中创建的第一个分支称为“主”  分支。 主分支和其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
+默认情况下，存储库中创建的第一个分支称为“主”分支。 主分支和任何其他分支之间没有任何技术上的不同，但是主分支通常被认为是开发团队的“实时”或“生产”分支。
 
-对主分支（或任何其他分支）再进行分支，可形成独立的开发思路。 这为某个时间点的主分支提供了新版本，允许独立于“实时”开发。 使用这种方式的分支通常用于软件开发功能
+从主分支（或任何其他分支）再进行分支，可形成独立的开发线。 这提供了某个时间点的主分支的新版本，使开发独立于“实时”分支。 使用这种方式的分支通常用于软件开发功能
 
 用户可为每个存储库创建任意数量的分支，但建议在完成使用分支后，删除分支以保持存储库结构。
 
