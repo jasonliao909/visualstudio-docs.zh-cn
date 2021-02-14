@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 10/22/2020
+ms.date: 02/02/2021
 ms.topic: conceptual
 description: 了解超级管理员和管理员角色以及如何分配管理员。
-ms.openlocfilehash: 491a8de27477f68b4344ad17b860b80b4ca96aa9
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
+ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467370"
+ms.lasthandoff: 02/03/2021
+ms.locfileid: "99511327"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 订阅协议的超级管理员和管理员
 
@@ -29,7 +29,7 @@ ms.locfileid: "92467370"
 若要分配新的管理员，请执行以下操作：
 1. 使用一个电子邮件地址登录到 https://manage.visualstudio.com ，该电子邮件地址在订阅协议上指定为超级管理员。
 2. 单击标有“管理管理员”的选项卡  。
-3. 单击 **添加** 。
+3. 单击 **添加**。
    > [!div class="mx-imgBorder"]
    > ![添加管理员](_img/admin-roles/add-admins.png "单击“管理管理员”边栏选项卡，然后单击“添加”以分配新管理员。")
 4. 使用新管理员的信息完成表单。  
@@ -42,13 +42,14 @@ ms.locfileid: "92467370"
 5. 单击“添加”以分配新管理员后，他们将收到一封邀请他们登录门户的电子邮件  。  
 
 ## <a name="resources"></a>资源
-- [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
+
 
 
 ## <a name="next-steps"></a>后续步骤

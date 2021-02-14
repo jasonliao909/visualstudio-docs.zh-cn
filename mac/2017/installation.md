@@ -8,17 +8,17 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: c494f8d8543e0aa51b0c2be0ee52c0cb80aba982
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: be799764c3d6913cd2a13c6d631fc3450f8875a0
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862430"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98719911"
 ---
 # <a name="install-visual-studio-2017-for-mac"></a>安装 Visual Studio 2017 for Mac
 
 > [!NOTE]
-> Visual Studio 2019 for Mac [现已推出](installation.md?view=vsmac-2019)。 对于较旧版本的 Visual Studio for Mac，请参阅 Visual Studio [下载页](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
+> Visual Studio 2019 for Mac [现已推出](installation.md?view=vsmac-2019&preserve-view=true)。 对于较旧版本的 Visual Studio for Mac，请参阅 Visual Studio [下载页](https://my.visualstudio.com/Downloads?q=Visual%20Studio%202017%20for%20Mac)。
 
 ## <a name="downgrading-from-visual-studio-2019-for-mac"></a>从 Visual Studio 2019 for Mac 降级？
 

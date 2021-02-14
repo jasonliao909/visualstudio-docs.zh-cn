@@ -7,17 +7,17 @@ ms.topic: how-to
 ms.assetid: ''
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2b9c86c17b89258145613e867ba6a91b2219fe0d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 199771b1cda2049d6508832d7d2264558104a566
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88168744"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99935698"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小脱机布局更新 Visual Studio
 
@@ -67,6 +67,8 @@ ms.locfileid: "88168744"
 * **Verify**：使用此命令可确定布局文件夹是否已损坏。
 * **Fix**：使用此命令可修复损坏的布局文件夹，包括替换布局文件夹中缺少的任何包。
 
+::: moniker range="vs-2019"
+
 #### <a name="options"></a>选项 
 
 |选项    |说明    |必需/可选 |示例 |
@@ -81,6 +83,26 @@ ms.locfileid: "88168744"
 |--includeRecommended    |包含所有已安装工作负载的推荐组件，但不包含可选组件。    |可选    |对于特定工作负载： <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 应用于所有工作负载：--includeRecommended |
 |--includeOptional |包含所有已安装工作负载的可选组件，包括建议组件。    |可选    |对于特定工作负载： <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 应用于所有工作负载：--includeOptional |
 
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+#### <a name="options"></a>选项 
+
+|选项    |说明    |必需/可选 |示例 |
+|:----------|:-----------|:------------|:--------------|
+|--targetLocation &lt;dir&gt; |指定要在其中创建最小脱机布局的目录。       |必需        |--targetLocation c:\VSLayout\ |
+|--baseVersion &lt;version&gt;|从此版本开始，将生成最小脱机布局。   |必需|--baseVersion 15.0.0 |
+|--targetVersion &lt;version&gt;|此版本及以下版本，将生成最小脱机布局。|必需|--targetVersion 15.9.31|
+|--languages    |指定要包含在最小脱机布局中的语言。 可指定多个值，并用空格分隔。    |必需    |--languages en-US fr-FR |
+|--productId &lt;id&gt;    |将从中生成最小脱机布局的产品的 ID。 <br> <ul><li>Microsoft.VisualStudio.Product.Enterprise</li><li>Microsoft.VisualStudio.Product.Professional</li><li>Microsoft.VisualStudio.Product.BuildTools</li><li>Microsoft.VisualStudio.Product.TestAgent</li><li>Microsoft.VisualStudio.Product.TestController</li><li>Microsoft.VisualStudio.Product.TeamExplorer</li></ul>|必需|--productId Microsoft.VisualStudio.Product.Enterprise |
+|--filePath    |已创建的布局中的 MinimalLayout.json 文件的文件路径。 此选项仅与 Regenerate 命令一起使用。     |Regenerate 命令所需内容    |--filePath C:\VSLayout\minimalLayout.json <br><br> 请注意，Regenerate 命令只使用 --filePath 作为选项。 |
+|--add &lt;一个或多个工作负载或组件 ID&gt;    |指定要添加的一个或多个工作负载或组件 ID。 可以使用 --includeRecommended 和/或 –-includeOptional 全局添加 <br> 额外的组件。 可以指定多个工作负载或组件 ID，用空格分隔。    |可选    |--add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb Component.GitHub.VisualStudio |
+|--includeRecommended    |包含所有已安装工作负载的推荐组件，但不包含可选组件。    |可选    |对于特定工作负载： <br> --add Microsoft.VisualStudio.Workload. ManagedDesktop;includeRecommended <br><br> 应用于所有工作负载：--includeRecommended |
+|--includeOptional |包含所有已安装工作负载的可选组件，包括建议组件。    |可选    |对于特定工作负载： <br>--add Microsoft.VisualStudio.Workload. ManagedDesktop;includeOptional <br><br> 应用于所有工作负载：--includeOptional |
+
+::: moniker-end
+
 ### <a name="generating-a-minimal-layout"></a>生成最小布局
 
 > [!IMPORTANT]
@@ -91,6 +113,8 @@ ms.locfileid: "88168744"
 创建布局之前，可以使用 preview 命令了解下载总大小以及所包含的包数。 此命令采用与 generate 命令相同的选项，将详细信息写入控制台。
 
 让我们通过几个示例来演示如何预览、生成和再生成最小布局：
+
+::: moniker range="vs-2019"
 
 - 首先，以下示例演示如何预览 Visual Studio Enterprise 版本 16.4.0 到 16.4.4 的布局（仅限英文）。
 
@@ -123,6 +147,44 @@ ms.locfileid: "88168744"
     ```cmd
     MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 16.4.0 --targetVersion 16.4.4 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
     ```
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+- 首先，以下示例演示如何预览 Visual Studio Enterprise 版本 15.0.0 到 15.9.31 的布局（仅限英文）。
+
+    ```cmd
+    MinimalLayout.exe preview --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --languages en-US
+    ```
+
+- 下面介绍如何使用一个工作负载生成相同布局。
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US
+    ```
+
+- 下面介绍如何使用现有响应文件再生成最小脱机布局。 
+
+    ```cmd
+    MinimalLayout.exe regenerate -filepath c:\VSLayout\MinimalLayout.json
+    ```
+
+使用 generate 命令的几个其他示例：
+
+- 下面介绍如何添加附加工作负载，并仅包含推荐的包。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Professional --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop Microsoft.VisualStudio.Workload.NetWeb;includeRecommended --languages en-US
+    ```
+
+- 最后，这里介绍如何在最小布局中包含多种语言。 
+
+    ```cmd
+    MinimalLayout.exe generate --targetLocation c:\VSLayout\ --productId Microsoft.VisualStudio.Product.Enterprise --baseVersion 15.0.0 --targetVersion 15.9.31 --add Microsoft.VisualStudio.Workload.ManagedDesktop;includeOptional --languages en-US fr-FR
+    ```
+
+::: moniker-end
 
 ### <a name="how-to-maintain-a-minimal-layout"></a>如何维护最小布局
 

@@ -11,15 +11,15 @@ helpviewer_keywords:
 ms.assetid: f46feb9b-4c16-4fec-b6e1-36a959692ba3
 author: ghogen
 ms.author: ghogen
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a8d774ace7744c90d0cf092faa2786110ed7309
-ms.sourcegitcommit: c4927ef8fe239005d7feff6c5a7707c594a7a05c
+ms.openlocfilehash: ede73e06575a91cf9bdf8115942c27b1ce4e2841
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92436439"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99914473"
 ---
 # <a name="how-to-build-specific-targets-in-solutions-by-using-msbuildexe"></a>如何：使用 MSBuild.exe 在解决方案中生成特定目标
 
@@ -43,7 +43,7 @@ msbuild SlnFolders.sln -target:NotInSlnfolder:Rebuild;NewFolder\InSolutionFolder
 
 如果想检查可用选项，可使用 MSBuild 提供的调试选项来执行此操作。 设置环境变量 `MSBUILDEMITSOLUTION=1` 并生成解决方案。 此操作将生成一个名为 \<SolutionName>.sln.metaproj 的 MSBuild 文件，该文件在生成时显示 MSBuild 的解决方案内部视图。 可检查此视图以确定可以生成的目标。
 
-除非需要此内部视图，否则不要使用此环境变量集进行生成操作。 此设置可能会在解决方案中生成项目时导致问题产生。
+除非需要此内部视图，否则不要使用此环境变量集进行生成操作。 此设置可能会在解决方案中生成项目时导致问题产生。 改为查看[二进制日志](obtaining-build-logs-with-msbuild.md#save-a-binary-log) 。
 
 ## <a name="see-also"></a>另请参阅
 

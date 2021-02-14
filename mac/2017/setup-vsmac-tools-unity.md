@@ -6,12 +6,12 @@ ms.author: johmil
 ms.date: 05/25/2018
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.topic: how-to
-ms.openlocfilehash: 7025798689e7541471c56988ef24414005dfe656
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: f423b77f8464b05b81be2ff7cdb08a2d8b007e0d
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91860543"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98723057"
 ---
 # <a name="set-up-visual-studio-for-mac-tools-for-unity"></a>设置 Visual Studio for Mac Tools for Unity
 
@@ -45,7 +45,7 @@ ms.locfileid: "91860543"
 
 * 前往 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/) 下载 Visual Studio for Mac。
 * Visual Studio for Mac Tools for Unity 将在安装过程中自动安装。
-* 请按照[安装指南](./installation.md?view=vsmac-2017)中的步骤获取其他安装帮助。
+* 请按照[安装指南](./installation.md?view=vsmac-2017&preserve-view=true)中的步骤获取其他安装帮助。
 
 > [!NOTE]
 > Visual Studio for Mac Tools for Unity 工具需要 5.6.1 或更高 Unity 版本。 若要验证你的 Unity 版本是否启用了 Visual Studio for Mac Tools for Unity，请从 Unity 菜单中选择“About Unity”，并在对话框左下角查看“Microsoft Visual Studio Tools for Unity 已启用”文本。 

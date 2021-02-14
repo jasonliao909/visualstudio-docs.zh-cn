@@ -7,15 +7,15 @@ f1_keywords:
 - vs.unittesting.testexplorer.overview
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c992a1a4fca536f219a69b9ab629f6f602b4dfb0
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 05a850b0c88a39366805ff892fb698f637b3bbe1
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150504"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99836327"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
@@ -34,7 +34,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ## <a name="run-tests-in-test-explorer"></a>在测试资源管理器中运行测试
 
-在生成测试项目时，测试将出现在测试资源管理器中。 如果测试资源管理器不可见，请选择 Visual Studio 菜单上的“测试”  ，然后依次选择“Windows” 、“测试资源管理器” 。
+在生成测试项目时，测试将出现在测试资源管理器中。 如果“测试资源管理器”不可见，请选择 Visual Studio 菜单上的“测试”，然后依次选择“Windows”、“测试资源管理器”（或按 Ctrl    +  E，T）。
 
 ::: moniker range="vs-2017"
 ![单元测试资源管理器](../test/media/ute_failedpassednotrunsummary.png)
@@ -64,11 +64,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range="vs-2017"
 你可以运行解决方案中的所有测试、组中的所有测试或你选择的一组测试。 执行下列操作之一：
 
-- 若要运行解决方案中的所有测试，请选择 **“全部运行”** 。
+- 若要运行解决方案中的所有测试，请选择“全部运行”（或按 Ctrl + R，V）。
 
 - 若要运行默认组中的所有测试，请选择“运行”，然后选择菜单上的组。
 
-- 选择要运行的各个测试，打开选定测试的右键单击菜单，再选择“运行选定测试”。
+- 选择要运行的各个测试，打开选定测试的右键单击菜单，再选择“运行选定测试”（或按 Ctrl + R，T）。
 
 - 如果各个测试没有防止其以任何顺序运行的依赖项，则可使用工具栏上的 ![Visual Studio 测试资源管理器工具栏上“并行测试执行”切换按钮的屏幕截图。 选择此按钮后，测试将并行运行。](../test/media/ute_parallelicon-small.png) 切换按钮来打开并行测试执行。 这可以显著降低运行所有测试所需的时间。
 
@@ -77,11 +77,11 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 ::: moniker range=">=vs-2019"
 你可以运行解决方案中的所有测试、组中的所有测试或你选择的一组测试。 执行下列操作之一：
 
-- 若要运行解决方案中的所有测试，请选择“全部运行”图标。
+- 若要运行解决方案中的所有测试，请选择“全部运行”图标（或按 Ctrl + R，V）。
 
 - 若要运行默认组中的所有测试，请选择“运行”图标，然后选择菜单上的组。
 
-- 选择要运行的各个测试，打开选定测试的右键单击菜单，再选择“运行选定测试”。
+- 选择要运行的各个测试，打开选定测试的右键单击菜单，再选择“运行选定测试”（或按 Ctrl + R，T）。
 
 - 如果各个测试没有阻止其以任何顺序运行的依赖项，则可以在工具栏的设置菜单中启用并行测试执行。 这可以显著降低运行所有测试所需的时间。
 ::: moniker-end
@@ -130,7 +130,7 @@ Visual Studio 包含适用于托管和本机代码的 Microsoft 单元测试框�
 
 ### <a name="view-the-source-code-of-a-test-method"></a>查看测试方法的源代码
 
-若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（键盘快捷键：**F12**）。
+若要在 Visual Studio 编辑器中显示测试方法的源代码，请依次选择测试和右键单击菜单中的“打开测试”（或按 F12 ）。
 
 ## <a name="group-and-filter-the-test-list"></a>分组和筛选测试列表
 

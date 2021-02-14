@@ -9,15 +9,15 @@ ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ff3e132087b97339bc710555428ba7488fa2e06
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 58f46f80a90cce116b985def0377ef80f5a671c6
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480572"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99950661"
 ---
 # <a name="step-5-add-controls-to-your-form"></a>步骤 5：向窗体添加控件
 
@@ -45,7 +45,7 @@ ms.locfileid: "96480572"
 
 1. 选择窗体上的“TableLayoutPanel”，然后将“CheckBox”控件添加到窗体。 双击“工具箱”中的“CheckBox”项，向表中下一个空白单元格添加新的 CheckBox 控件。 由于 PictureBox 占据了 TableLayoutPanel 中的前两个单元格，因此 CheckBox 控件将添加到左下方的单元格。 如下图所示，选择“文本”属性并键入单词“Stretch”。
 
-    ![带 Stretch 属性的 TextBox 控件](../ide/media/express_pictureviewercheckbox.png)<br/>带 Stretch 属性的 TextBox 控件* 
+    ![带 Stretch 属性的 TextBox 控件](../ide/media/express_pictureviewercheckbox.png)<br/>*带 Stretch 属性的 TextBox 控件
 
 1. 选择窗体上的“TableLayoutPanel”，然后转到“工具箱”（可在此获取“TableLayoutPanel”控件）中的“容器”组，并双击“FlowLayoutPanel”项以将一个新控件添加到最后一个单元格（右下方）。 然后，将 FlowLayoutPanel 停靠在 TableLayoutPanel 中。 要实现此操作，请选择 FlowLayoutPanel 的黑色三角形任务列表中的“停靠在父容器中”，或将 FlowLayoutPanel 的“停靠”属性设置为“填充”。
 
@@ -76,7 +76,7 @@ ms.locfileid: "96480572"
 
    此时这些按钮应具有适当大小且按照适当的顺序排列。 （只要选定所有四个按钮，就可以同时更改所有四个“AutoSize”属性。）下图显示了这四个按钮。
 
-    ![带四个按钮的图片查看器](../ide/media/express_autosize.png)<br/>带四个按钮的图片查看器*
+    ![带四个按钮的图片查看器](../ide/media/express_autosize.png)<br/>*带四个按钮的图片查看器
 
 1. 现在，再次运行程序以查看更改。
 

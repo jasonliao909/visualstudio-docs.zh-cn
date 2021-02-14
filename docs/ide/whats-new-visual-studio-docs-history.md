@@ -2,29 +2,93 @@
 title: 'Visual Studio 文档：新增功能历史记录 '
 titleSuffix: ''
 description: Visual Studio 中的新增功能历史记录文档
-ms.date: 01/11/2021
+ms.date: 02/01/2021
 helpviewer_keywords:
 - Visual Studio, what's new, docs
 - what's new [Visual Studio]
 ms.assetid: 511DAFC7-896E-449A-BFF7-0E8F7BBA8A78
 author: JoshuaPartlow
 ms.author: joshuapa
-manager: jillfra
+manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 49c8d18a35cbe4a64585efa9bc16fd8afd250404
-ms.sourcegitcommit: fdc21fc21d4a05d9ad8627b06aab7f072bfeb0a6
+ms.openlocfilehash: 178c84be9def77e013da336193877617c1434b2e
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98113575"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99960528"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 中的新增功能历史记录文档
 
-欢迎了解 Visual Studio 文档中的新增功能历史记录。本文包含 2020 年 12 月之前（从 2020 年 7 月开始）对文档所做的主要更改。 有关最新的新增功能，请参阅 [Visual Studio 文档：文档中的新增功能](whats-new-visual-studio-docs.md)。
+欢迎了解 Visual Studio 文档中的新增功能历史记录。本文包含 2021 年 1 月之前（从 2020 年 7 月开始）对文档所做的主要更改。 有关最新的新增功能，请参阅 [Visual Studio 文档：文档中的新增功能](whats-new-visual-studio-docs.md)。
+
+## <a name="december-2020"></a>2020 年 12 月
+### <a name="azure"></a>Azure
+
+**新文章**
+
+- [使用已连接 Visual Studio 的服务添加 Azure 应用程序配置](../azure/vs-azure-tools-connected-services-app-configuration.md) - 应用配置连接的服务教程
+
+### <a name="code-quality"></a>代码质量
+
+**更新的文章**
+
+- [概述](../code-quality/use-roslyn-analyzers.md) - 通过 editorconfig 从命令行生成
+- [启用或安装第一方 .NET 分析器](../code-quality/install-net-analyzers.md)
+  - 使从 FxCopAnalyzers 到 NetAnalyzers 的迁移文档更加清晰
+  - 重新排列 .NET 分析器的目录
+- [从 FxCop 分析器迁移到 .NET 分析器](../code-quality/migrate-from-fxcop-analyzers-to-net-analyzers.md) - 使从 FxCopAnalyzers 到 NetAnalyzers 的迁移文档更加清晰
+
+### <a name="containers"></a>容器
+
+**更新的文章**
+
+- [使用 Docker 对 Visual Studio 开发进行排除故障](../containers/troubleshooting-docker-errors.md) - 关于更新 Docker 以进行 Visual Studio 故障排除的指南
+
+### <a name="debugger"></a>调试器
+
+**更新的文章**
+
+- [常见问题解答 - 在 Visual Studio 中查找所需的调试功能](../debugger/find-your-debugging-task.md) - 查找调试任务和概述主题的发现工作
+
+### <a name="get-started"></a>入门
+
+**更新的文章**
+
+- [教程：在 Visual Studio 中创建一个简单的 C# 控制台应用](../get-started/csharp/tutorial-console.md) - C# 控制台教程：第 2 部分仅适用于 VS 2019
+
+### <a name="ide"></a>IDE
+
+**更新的文章**
+
+- [Visual Studio 中的解决方案和项目](./solutions-and-projects-in-visual-studio.md) - 解决方案和项目主题的更新
+- [在 Visual Studio 中创建新项目](./create-new-project.md)
+  - 优化屏幕截图和关系图的替换文字
+  - 解决方案和项目主题的更多更新
+- [用于解决 IDE 错误的资源](./reference/resources-for-troubleshooting-integrated-development-environment-errors.md) - 修改过期的论坛资源部分
+- [使用解决方案和项目](./creating-solutions-and-projects.md) - 解决方案和项目主题的更多更新
+- [如何报告 Visual Studio 或 Visual Studio 安装程序的问题](./how-to-report-a-problem-with-visual-studio.md)
+  - 更新屏幕截图
+  - 开发人员社区更改
+- [Visual Studio 性能提示和技巧](./visual-studio-performance-tips-and-tricks.md) - 更新“禁用诊断工具”部分
+- [项目和解决方案简介](../get-started/tutorial-projects-solutions.md)
+  - 解决方案和项目主题的更新
+  - 更新 tutorial-projects-solutions.md
+  - 菜单选项中缺少
+
+### <a name="test"></a>测试
+
+**更新的文章**
+
+- [单元测试入门](../test/getting-started-with-unit-testing.md) - 测试工具的发现工作和其他改进
+- [首先介绍 Visual Studio 中的测试工具](../test/improve-code-quality.md) - 测试工具的发现工作和其他改进
+- [需要在 Visual Studio # 中使用测试工具；搜索结果中显示的页标题。包括品牌在内，小于 60 个字符。](../test/index.yml) - 测试工具的发现工作和其他改进
+- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md) - 为差异框架添加动态播放列表 xml
+
 ## <a name="november-2020"></a>2020 年 11 月
 ### <a name="code-quality"></a>代码质量
 

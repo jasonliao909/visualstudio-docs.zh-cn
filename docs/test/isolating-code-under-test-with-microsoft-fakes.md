@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: ba3baa1ff06da6497ddc663f888e7c93292d5b98
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.openlocfilehash: e7e7672ca93c47370f746358203c37826a1b3ad3
+ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98719651"
+ms.lasthandoff: 02/09/2021
+ms.locfileid: "100006419"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 
@@ -36,7 +36,7 @@ Fakes 有两种风格：
 - Visual Studio Enterprise
 - .NET Framework 项目
 ::: moniker range=">=vs-2019"
-- .NET Core 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
+- .NET Core、.NET 5.0 和 SDK 样式项目支持是在 Visual Studio 2019 Update 6 中预览，并在 Update 8 中默认启用。 有关详细信息，请参阅[适用于 .NET Core 和 SDK 样式项目的 Microsoft Fakes](/visualstudio/releases/2019/release-notes#microsoft-fakes-for-net-core-and-sdk-style-projects)。
 ::: moniker-end
 
 > [!NOTE]
@@ -88,7 +88,7 @@ Fakes 有两种风格：
    1. 在“解决方案资源管理器”中： 
        - 对于旧版 .NET Framework 项目（非 SDK 样式），展开单元测试项目的“引用”节点。
        ::: moniker range=">=vs-2019"
-       - 对于定目标到 .NET Framework 或 .NET Core 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。
+       - 对于定目标到 .NET Framework、.NET Core 或 .NET 5.0 的 SDK 样式项目，展开“依赖项”节点，以在“程序集”、“项目”或“包”下找到要虚设的程序集。   
        ::: moniker-end
        - 如果使用的是 Visual Basic，请选择“解决方案资源管理器”工具栏中的“显示所有文件”，以查看“引用”节点。
    2. 选择包含要为其创建填充码的类定义的程序集。 例如，如果要填充 DateTime，请选择 System.dll   。
@@ -269,21 +269,21 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 </Project>
 ```
 
-需要手动添加此引用，尤其是 SDK 样式项目（.NET Core 和 .NET Framework），因为我们已转为隐式地添加对测试项目的程序集引用。 如果遵循这种方法，则需要确保在父程序集更改时更新 Fakes 程序集。
+需要手动添加此引用，尤其是 SDK 样式项目（.NET Core、.NET 5.0 和 .NET Framework），因为我们已转为隐式地添加对测试项目的程序集引用。 如果遵循这种方法，则需要确保在父程序集更改时更新 Fakes 程序集。
 ::: moniker-end
 
 ### <a name="running-microsoft-fakes-tests"></a>运行 Microsoft Fakes 测试
 只要在配置的 `FakesAssemblies` 目录（默认为 `$(ProjectDir)FakesAssemblies`）中有 Microsoft Fakes 程序集，就可以使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)来运行测试。
 
 ::: moniker range=">=vs-2019"
-使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)对使用 Microsoft Fakes 的 .NET Core 项目进行分布式测试需要 Visual Studio 2019 Update 9 Preview `20201020-06` 及更高版本。
+使用 [vstest 任务](/azure/devops/pipelines/tasks/test/vstest?view=azure-devops&preserve-view=true)对使用 Microsoft Fakes 的 .NET Core 和 .NET 5.0 项目进行分布式测试需要 Visual Studio 2019 Update 9 Preview `20201020-06` 及更高版本。
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
-## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-or-net-core-projects"></a>将使用 Microsoft Fakes 的 .NET Framework 测试项目转换为 SDK 样式 .NET Framework 或 .NET Core 项目
-只需要在 .NET Framework 的 Microsoft Fakes 设置中进行一点点更改，即可转换为 .NET Core 项目。 需要注意以下几种情况：
+## <a name="transitioning-your-net-framework-test-projects-that-use-microsoft-fakes-to-sdk-style-net-framework-net-core-or-net-50-projects"></a>将使用 Microsoft Fakes 的 .NET Framework 测试项目转换为 SDK 样式 .NET Framework、.NET Core 或 .NET 5.0 项目
+只需要在 .NET Framework 的 Microsoft Fakes 设置中进行一点点更改，即可转换为 .NET Core 或 .NET 5.0 项目。 需要注意以下几种情况：
 - 如果使用的是自定义项目模板，则需要确保它是 SDK 样式的，并为兼容的目标框架生成。
-- 某些类型存在于 .NET Framework 和 .NET Core 中的不同程序集（例如，`System.DateTime` 存在于 .NET Framework 中的 `System`/`mscorlib`，并存在于 .NET Core 中的 `System.Runtime`）。在这种情况下，需要更改正在虚设的程序集。
+- 某些类型存在于 .NET Framework 和 .NET Core/.NET 5.0 中的不同程序集（例如，`System.DateTime` 存在于 .NET Framework 中的 `System`/`mscorlib`，并存在于 .NET Core 和 .NET 5.0 中的 `System.Runtime`）。在这种情况下，需要更改正在虚设的程序集。
 - 如果有对 Fakes 程序集和测试项目的程序集引用，则可能会看到有关缺少引用的生成警告，如下所示：
   ```
   (ResolveAssemblyReferences target) ->
@@ -299,12 +299,12 @@ System.IO.Fakes.ShimFile.AllInstances.ReadToEnd = ...
 - Microsoft Fakes 测试可以与所有可用的 Microsoft.TestPlatform NuGet 包一起运行。
 - 在 Visual Studio Enterprise 2015 及更高版本中，使用 Microsoft Fakes 的测试项目支持代码覆盖率。
 
-### <a name="microsoft-fakes-in-sdk-style-net-framework-and-net-core-projects"></a>SDK 样式 .NET Framework 和 .NET Core 项目中的 Microsoft Fakes
+### <a name="microsoft-fakes-in-sdk-style-net-framework-net-core-and-net-50-projects"></a>SDK 样式 .NET Framework、.NET Core 和 .NET 5.0 项目中的 Microsoft Fakes
 - Microsoft Fakes 程序集生成是在 Visual Studio Enterprise 2019 Update 6 中预览，并在 Update 8 中默认启用。
 - 定目标到 .NET Framework 的项目的 Microsoft Fakes 测试可以与所有可用的 Microsoft.TestPlatform NuGet 包一起运行。
-- 定目标到 .NET Core 的项目的 Microsoft Fakes 测试可以与采用 [16.8.0-preview-20200921-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.8.0-preview-20200921-01) 及更高版本的 Microsoft.TestPlatform NuGet 包一起运行。
+- 针对面向 .NET Core 和 .NET 5.0 的项目的 Microsoft Fakes 测试可以与采用 [16.9.0-preview-20210106-01](https://www.nuget.org/packages/Microsoft.TestPlatform/16.9.0-preview-20210106-01) 及更高版本的 Microsoft.TestPlatform NuGet 包一起运行。
 - 在 Visual Studio Enterprise 2015 及更高版本中，使用 Microsoft Fakes 且定目标到 .NET Framework 的测试项目支持代码覆盖率。
-- 使用 Microsoft Fakes 且定目标到 .NET Core 的测试项目对代码覆盖率的支持正在开发中。
+- Visual Studio 2019 Update 9 和更高版本中提供使用 Microsoft Fakes 对面向 .NET Core 和 .NET 5.0 的测试项目的代码覆盖率支持。
 
 
 ## <a name="in-this-section"></a>本节内容

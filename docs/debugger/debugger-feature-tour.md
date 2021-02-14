@@ -9,15 +9,15 @@ helpviewer_keywords:
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c6d451735042374f0e3c6fb2154cd54520a069fc
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: 5bfa190f3bbc2a4f8b34d42d62b0ccc9b293674a
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97761428"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99873127"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -93,7 +93,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="run-to-cursor"></a>运行到光标处
 
-编辑代码（而不是在调试器中暂停）时，右键单击应用中的代码行，然后选择“运行到光标处”。 此命令将启动调试并在当前代码行上设置临时断点。
+编辑代码（而不是在调试器中暂停）时，右键单击应用中的代码行，然后选择“运行到光标处”（或按 Ctrl 到 F10）。   此命令将启动调试并在当前代码行上设置临时断点。
 
 ![运行到光标处](../debugger/media/dbg-tour-run-to-cursor.png "运行到光标处")
 
@@ -108,7 +108,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="restart-your-app-quickly"></a>快速重启应用
 
-单击调试工具栏中的“重启”按钮![重启应用](../debugger/media/dbg-tour-restart.png "重启应用")（“Ctrl+Shift+F5”） 。
+单击调试工具栏中的“重启”按钮![重启应用](../debugger/media/dbg-tour-restart.png "重启应用")（或按 Ctrl+Shift+F5） 。
 
 当你按下“重启”时，与停止应用并重启调试器相比，它节省了时间。 调试器在执行代码命中的第一个断点处暂停。
 

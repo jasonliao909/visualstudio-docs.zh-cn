@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 10/21/2020
+ms.date: 02/04/2021
 ms.topic: conceptual
 description: 云订阅的计费问题。
-ms.openlocfilehash: 0140a6250f2c04ad33fec962283e035393a03aae
-ms.sourcegitcommit: d3bca34f82de03fa34ecdd72233676c17fb3cb14
+ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
+ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92353416"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99572871"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 云订阅计费常见问题解答
 请确保[比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)，了解每种 Visual Studio 订阅的权益，云订阅与标准 Visual Studio 订阅之间的不同之处，以及订阅者权益的相关详细信息等。
@@ -28,6 +28,9 @@ ms.locfileid: "92353416"
 
 ### <a name="q-am-i-required-to-buy-other-azure-services"></a>问：我是否需要购买其他 Azure 服务？
 答：完全不需要。 通过 Azure，可以仅购买 Visual Studio 云订阅。
+
+### <a name="q-where-can-i-view-my-billing-and-usage-data"></a>问：在哪里可以查看我的帐单和使用情况数据？
+答：获取有关[查看发票和使用情况](https://docs.microsoft.com/azure/cost-management-billing/manage/download-azure-invoice-daily-usage-date)的信息。
 
 ## <a name="enterprise-agreement-ea-customers"></a>企业协议 (EA) 客户
 ### <a name="q-can-i-use-an-enterprise-agreement-to-buy-visual-studio-cloud-subscriptions"></a>问：我可以使用企业协议购买 Visual Studio 云订阅吗？

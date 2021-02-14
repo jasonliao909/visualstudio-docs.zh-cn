@@ -7,17 +7,17 @@ ms.date: 11/03/2018
 ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
-ms.openlocfilehash: aecc309cfd9bf4af59e10cda8b33e43bb5e75d7c
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 7d7408ad837dac789c3632361e83673d288ea053
+ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862478"
+ms.lasthandoff: 01/23/2021
+ms.locfileid: "98721081"
 ---
 # <a name="install-a-preview-release"></a>安装预览版
 
 > [!NOTE]
-> Visual Studio 2019 for Mac 预览版[现可供安装](./installation.md?view=vsmac-2019)和测试。
+> Visual Studio 2019 for Mac 预览版[现可供安装](./installation.md?view=vsmac-2019&preserve-view=true)和测试。
 
 ## <a name="install-an-update-for-visual-studio-for-mac"></a>安装 Visual Studio for Mac 更新
 
@@ -25,12 +25,12 @@ ms.locfileid: "91862478"
 
 Visual Studio for Mac 的预览版是作为更新发布的，而不是通过单独下载发布。 如[更新](update.md)一文所述，Visual Studio for Mac 具有三个更新通道：稳定版本、Beta 版本和 Alpha 版本。
 
-大多数预览版都可通过 Beta 版本和 Alpha 版本通道获取，但请务必查看[预览版发布说明](/visualstudio/releasenotes/vs2017-mac-preview-relnotes)，了解最准确的信息********。
+大多数预览版都可通过 Beta 版本和 Alpha 版本通道获取，但请务必查看[预览版发布说明](/visualstudio/releasenotes/vs2017-mac-preview-relnotes)，了解最准确的信息。
 
 若要安装 Visual Studio for Mac 预览版，请执行以下步骤：
 
 1. 转到“Visual Studio”>“检查更新”。
-2. 在更新通道组合框中，选择“Beta 版本”****。
+2. 在更新通道组合框中，选择“Beta 版本”。
 3. 选择“切换通道”按钮，切换到所选通道并开始下载任何新更新。
 4. 选择“重启并安装更新”按钮，开始安装更新。
 

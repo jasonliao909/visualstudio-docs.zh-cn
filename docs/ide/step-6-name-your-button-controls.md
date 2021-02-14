@@ -12,15 +12,15 @@ dev_langs:
 - VB
 author: ornellaalt
 ms.author: ornella
-manager: jillfra
+manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfa5b69cc106aeae18012a7116fd511263423b2c
-ms.sourcegitcommit: df6ba39a62eae387e29f89388be9e3ee5ceff69c
+ms.openlocfilehash: 0f6612806f8bf1453cf28f9d75c78588c2074bb0
+ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96480312"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99868876"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 
@@ -35,7 +35,7 @@ ms.locfileid: "96480312"
 
 1. 在窗体上，选择“关闭”  按钮。 （如果你仍选择了所有按钮，请选择 Esc 键取消选择。）在“属性”窗口中滚动，直到看到“(Name)”属性。  （当属性按字母顺序排列时，“(Name)”属性位于顶部附近。）如下面的屏幕截图所示，将此名称更改为“closeButton”。
 
-    ![带有 closeButton 名称的“属性”窗口](../ide/media/express_setnameproperty.png)<br>带有“closeButton”名称的“属性”窗口* 
+    ![带有 closeButton 名称的“属性”窗口](../ide/media/express_setnameproperty.png)<br>带有“closeButton”名称的“属性”窗口*
 
     > [!NOTE]
     > 尝试将按钮的名称更改为“close Button”，单词“close”和“Button”之间有一个空格。 当你执行此操作时，IDE 会显示错误消息：“属性值无效。” 控件名称中不允许使用空格和一些其他字符。
