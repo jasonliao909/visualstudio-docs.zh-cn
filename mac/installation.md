@@ -8,12 +8,12 @@ ms.technology: vs-ide-install
 ms.assetid: 22B1F2CD-32AE-464D-80AC-C8AB4786B015
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: f971237ecc829fcc4ab660263a1b66c701f86f62
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.openlocfilehash: 5155c37a89f566841fc342bbd8213f5a38eb399d
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91583952"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97727562"
 ---
 # <a name="install-visual-studio-2019-for-mac"></a>安装 Visual Studio 2019 for Mac
 
@@ -49,7 +49,7 @@ ms.locfileid: "91583952"
 
 6. 此时显示可用的工作负载列表。 选择你要使用的组件：
 
-    [![选择要安装的可选工作负载功能](media/install-selection.png)](media/install-selection.png#lightbox)
+    [![Visual Studio Mac 安装程序中的“你想要安装什么?”屏幕截图，其中显示了可供安装的组件的列表。](media/install-selection.png)](media/install-selection.png#lightbox)
 
    如果不希望安装所有平台，请参阅以下指南，它们有助于确定要安装的平台：
 
@@ -67,7 +67,7 @@ ms.locfileid: "91583952"
 7. 完成选择后，按下“安装”按钮。
 8. 安装程序将在下载并安装 Visual Studio for Mac 和所选工作负载时显示进度。 系统将提示输入密码以授予安装所需的权限。
 
-    [![选择要安装的可选工作负载功能](media/installation-progress.png)](media/installation-progress.png#lightbox)
+    [![Visual Studio Mac 安装程序中的屏幕截图，其中显示了适用于 Mac 的 .NET 开发人员工具包的安装进度屏幕。](media/installation-progress.png)](media/installation-progress.png#lightbox)
 
 9. 安装完成后，Visual Studio for Mac 会提示你通过登录并选择要使用的键绑定来个性化安装：
 

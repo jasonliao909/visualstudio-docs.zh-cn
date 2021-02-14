@@ -1,16 +1,18 @@
 ---
 title: 扩展 Visual Studio for Mac 演练
+description: 了解如何为 Visual Studio for Mac 生成一个简单的扩展包，以便在“编辑”菜单中创建新的命令。
+ms.custom: SEO-VS-2020
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 04/14/2017
 ms.technology: vs-ide-sdk
 ms.assetid: 7D00512B-9688-4D8D-87A7-F04F207E3D02
-ms.openlocfilehash: c5b3b759b32acfc86b4b584b3f3d52298c138a2c
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: 9274f86e8ade5b49b5db0c7f4773cf6fd57ea353
+ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985035"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97876189"
 ---
 # <a name="extending-visual-studio-for-mac-walkthrough"></a>扩展 Visual Studio for Mac 演练
 
@@ -22,7 +24,7 @@ ms.locfileid: "74985035"
 
    ![Visual Studio for Mac 屏幕截图](media/extending-visual-studio-mac-addin3.png)
 
-2. 使用扩展管理器安装 Add-in Maker 扩展包  。 从 Visual Studio 菜单，选择“扩展...”  ：
+2. 使用扩展管理器安装 Add-in Maker 扩展包。 从 Visual Studio 菜单，选择“扩展...”：
 
    ![加载项管理器选项卡](media/extending-visual-studio-mac-addin4.png)
 
@@ -57,7 +59,7 @@ ms.locfileid: "74985035"
       </ExtensionModel>
    ```
 
-8. 现在需要设置文件，用于最终把日期和时间插入到文本编辑器中。 右键单击项目节点，然后添加新文件。 选择“常规”>“空类”，然后将新文件命名为“InsertDateHandler”：  
+8. 现在需要设置文件，用于最终把日期和时间插入到文本编辑器中。 右键单击项目节点，然后添加新文件。 选择“常规”>“空类”，然后将新文件命名为“InsertDateHandler”：
 
    ![插入日期处理程序](media/extending-visual-studio-mac-addin9.png)
 
@@ -88,7 +90,7 @@ ms.locfileid: "74985035"
 
    我们将稍后详细介绍这两种占位符方法。
 
-10. 右键单击“DateInserter”项目并选择“添加”>“新文件”   。 选择“常规”>“空枚举”，然后将新文件命名为“DateInserterCommands”   ：
+10. 右键单击“DateInserter”项目并选择“添加”>“新文件”。 选择“常规”>“空枚举”，然后将新文件命名为“DateInserterCommands”：
 
     ![DateInserterCommands](media/extending-visual-studio-mac-addin10.png)
 
@@ -106,7 +108,7 @@ ms.locfileid: "74985035"
     }
     ```
 
-12. 此时，应具有一个正在工作的扩展包。 保存工作并运行应用程序，对其进行测试。 IDE 将启动已安装新扩展包的 Visual Studio for Mac 新实例。 如果导航到“编辑”菜单，会看到 Visual Studio for Mac 具有一个名为“插入日期”的新选项，如下方的屏幕截图所示：  
+12. 此时，应具有一个正在工作的扩展包。 保存工作并运行应用程序，对其进行测试。 IDE 将启动已安装新扩展包的 Visual Studio for Mac 新实例。 如果导航到“编辑”菜单，会看到 Visual Studio for Mac 具有一个名为“插入日期”的新选项，如下方的屏幕截图所示：
 
     ![插入日期命令](media/extending-visual-studio-mac-addin11.png)
 
@@ -132,7 +134,7 @@ ms.locfileid: "74985035"
     }
     ```
 
-15. 最后，请运行扩展包以进行测试。 在 Visual Studio for Mac 新实例中，选择“编辑”>“插入日期”  。 在脱字号处插入当前的日期和时间，如下方的屏幕截图所示：
+15. 最后，请运行扩展包以进行测试。 在 Visual Studio for Mac 新实例中，选择“编辑”>“插入日期”。 在脱字号处插入当前的日期和时间，如下方的屏幕截图所示：
 
     ![插入日期屏幕截图](media/extending-visual-studio-mac-addin12.png)
 

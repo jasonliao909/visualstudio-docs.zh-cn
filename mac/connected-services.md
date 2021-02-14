@@ -1,17 +1,17 @@
 ---
 title: 连接的服务
-description: 在 Visual Studio for Mac 中将 Azure 数据存储、身份验证和推送通知添加到移动应用
+description: 了解如何从 Visual Studio for Mac 中将 Azure 数据存储、身份验证和推送通知添加到跨平台应用程序。
 ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 8a1287d82096677d20a498756de3d2a9f5af259b
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
+ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938766"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847092"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 
@@ -68,7 +68,7 @@ ms.locfileid: "85938766"
 
 - **应用服务名称** – 计划的唯一名称/ID
 - **订阅** – 想要用于支付该服务的订阅
-- **资源组** – 一种为项目组织所有 Azure 资源的方法。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
+- **资源组** – 一种为某个项目组织所有的 Azure 资源的方式。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
 - **服务计划** – 确定使用计划的任何资源的位置和成本。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请使用默认服务计划或在免费层 (F1) 中创建新的。
 
 访问[移动应用文档](/azure/app-service-mobile/)，获取详细信息。

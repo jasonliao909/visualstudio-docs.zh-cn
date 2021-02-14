@@ -7,12 +7,12 @@ ms.date: 04/14/2017
 ms.assetid: 5C800815-0B13-4B27-B017-95FCEF1A0EA2
 ms.custom: video
 ms.topic: how-to
-ms.openlocfilehash: 58d749a1d014288754dcd9eb7e620730933d742a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 274e8defe25fa78c30aee72834e486b302a9af4e
+ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950411"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97729426"
 ---
 # <a name="include-a-nuget-package-in-your-project"></a>在项目中包括 NuGet 包
 
@@ -32,11 +32,11 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ## <a name="adding-a-package"></a>添加包
 
-对于 Visual Studio for Mac 中打开的项目，右键单击“Solution Pad”中的“包”文件夹并选择“添加包”    ：
+对于 Visual Studio for Mac 中打开的项目，右键单击“Solution Pad”中的“包”文件夹并选择“添加包”  ：
 
 ![添加新的 NuGet 包上下文操作](media/nuget-walkthrough-PackagesMenu.png)
 
-此操作将启动“添加包”窗口  。 请确保将源下拉列表设置为 `nuget.org`：
+此操作将启动“添加包”窗口。 请确保将源下拉列表设置为 `nuget.org`：
 
 ![源下拉列表](media/nuget-walkthrough-Source.png)
 
@@ -44,15 +44,15 @@ NuGet 是用于 .NET 开发最常用的程序包管理器，内置在 Visual Stu
 
 ![列出 NuGet 包](media/nuget-walkthrough-AddPackages1.png)
 
-使用右上角的搜索框查找特定的包，如 `azure`。 找到希望使用的包时，请选择它并单击“添加包”按钮以开始安装  。
+使用右上角的搜索框查找特定的包，如 `azure`。 找到希望使用的包时，请选择它并单击“添加包”按钮以开始安装。
 
 [添加 Azure NuGet 包](media/nuget-walkthrough-AddPackages2.png)
 
 包下载完毕后会添加到项目中。 解决方案会发生以下更改：
 
-* “引用”节点包含属于 NuGet 包的所有程序集列表  。
-* “包”节点显示每个已下载的 NuGet 包  。 可以更新该列表中的包，或从列表中删除包。
-* “packages.config”文件将添加到此项目  。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
+* “引用”节点包含属于 NuGet 包的所有程序集列表。
+* “包”节点显示每个已下载的 NuGet 包。 可以更新该列表中的包，或从列表中删除包。
+* “packages.config”文件将添加到此项目。 IDE 使用此 XML 文件跟踪该项目中引用的包版本。 不应手动编辑此文件，而是应将其保存在版本控制中。 请注意，可以使用 project.json 文件，而不是 packages.config 文件。 project.json 文件是通过 NuGet 3 引入的新的包文件格式，支持可传递还原。 有关 project.json 的详细信息，请参阅 [NuGet 文档](/NuGet/Schema/Project-Json)。 需要手动添加 project.json 文件，关闭项目并重新打开后才能在 Visual Studio for Mac 中使用 project.json 文件。
 
 ## <a name="using-nuget-packages"></a>使用 NuGet 包
 
@@ -72,41 +72,41 @@ using Newtonsoft.Json;
 
 ## <a name="package-updates"></a>包更新
 
-通过右键单击“包”节点可以一次性完成所有包更新，也可以在每个组件上单独进行包更新  。
+通过右键单击“包”节点可以一次性完成所有包更新，也可以在每个组件上单独进行包更新。
 
-右键单击“包”以访问上下文菜单： 
+右键单击“包”以访问上下文菜单：
 
-![包菜单](media/nuget-walkthrough-PackagesMenu.png)
+![屏幕截图，显示了“包”节点处于选中状态，并且右键单击上下文菜单已打开，其中包含用于添加包、更新、还原和刷新的命令。](media/nuget-walkthrough-PackagesMenu.png)
 
-* 添加包  - 打开窗口，将更多包添加到项目。
-* 更新  - 检查每个包的源服务器并下载任何更新版本。
-* 还原  - 下载任何缺少的包（无需将现有包升级到更新版本）。
+* 添加包 - 打开窗口，将更多包添加到项目。
+* 更新 - 检查每个包的源服务器并下载任何更新版本。
+* 还原 - 下载任何缺少的包（无需将现有包升级到更新版本）。
 
 现在也提供解决方案级别的“更新”和“还原”选项，这些选项可影响该解决方案中的所有项目。
 
 也可以右键单击单个包访问上下文菜单：
 
-![包菜单](media/nuget-walkthrough-PackageMenu.png)
+![屏幕截图，显示了单个包处于选中状态，并且右键单击上下文菜单已打开，其中包含用于更新、删除和刷新的命令。](media/nuget-walkthrough-PackageMenu.png)
 
-* 版本号  - 版本号是禁用的菜单项 - 仅用于提供信息。
-* 更新  - 检查源服务器并下载更新版本（如果存在）。
-* 删除  - 从此项目中删除包，并从项目引用中删除相关的程序集。
+* 版本号 - 版本号是禁用的菜单项 - 仅用于提供信息。
+* 更新 - 检查源服务器并下载更新版本（如果存在）。
+* 删除 - 从此项目中删除包，并从项目引用中删除相关的程序集。
 
 ## <a name="adding-package-sources"></a>添加包源
 
 最初从 nuget.org 检索安装包。然而，可以将其他包位置添加到 Visual Studio for Mac。 这有助于测试自己正在开发的 NuGet 包，或有助于使用公司或组织内的专用 NuGet 服务器。
 
-在 Visual Studio for Mac 中，导航到“Visual Studio”>“首选项”>“NuGet”>“源”，查看和编辑包源的列表  。 请注意，源可以是（由 URL 指定的）远程服务器或本地目录。
+在 Visual Studio for Mac 中，导航到“Visual Studio”>“首选项”>“NuGet”>“源”，查看和编辑包源的列表。 请注意，源可以是（由 URL 指定的）远程服务器或本地目录。
 
 ![包源](media/nuget-walkthrough-PackageSource.png)
 
-单击“添加”设置新源  。 向包源输入友好名称和 URL（或文件路径）。 如果源是安全的 Web 服务器，则同时输入用户名和密码，否则请将这些条目留空：
+单击“添加”设置新源。 向包源输入友好名称和 URL（或文件路径）。 如果源是安全的 Web 服务器，则同时输入用户名和密码，否则请将这些条目留空：
 
-![添加包源](media/nuget-walkthrough-PackageSource2.png)
+![“添加包源”对话框的屏幕截图，其中包含“名称”、“位置”、“用户名”和“密码”字段。](media/nuget-walkthrough-PackageSource2.png)
 
 搜索包时可以选择不同的源：
 
-![添加包源](media/nuget-walkthrough-PackageSource3.png)
+![“添加包”屏幕的屏幕截图，其中显示了在搜索包时可以选择的源的下拉列表。](media/nuget-walkthrough-PackageSource3.png)
 
 ## <a name="version-control"></a>版本控制
 
