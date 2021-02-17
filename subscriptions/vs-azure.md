@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 10/28/2020
+ms.date: 02/10/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 开发测试个人额度权益。
-ms.openlocfilehash: bfd94ef7995ed5f456462e1bce6aa0d4d045bdd0
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538002"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335225"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过[每月 Azure 开发测试个人额度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，可将 Azure 用作开发/测试的个人沙盒。  你可以预配虚拟机、云服务和其他 Azure 资源。  信用额度因订阅级别而异。
@@ -76,7 +76,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过
 |              包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅               |     150 美元月信用额度     |                             是                             |
 |               Visual Studio Enterprise 月度               |        不可用        |                                                             |
 |             Visual Studio Professional Standard              |     50 美元月信用额度      |                             是
-|              包含 GitHub Enterprise 的 Visual Studio Professional 订阅              |     150 美元月信用额度     |                             是                             |
+|              包含 GitHub Enterprise 的 Visual Studio Professional 订阅              |     50 美元月信用额度     |                             是                             |
 |              Visual Studio Professional 月度              |        不可用        |                                                             |
 |                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
 |                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
