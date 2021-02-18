@@ -5,17 +5,17 @@ ms.topic: include
 ms.assetid: 7e5d8886-538c-4e29-9c4c-8989cf4e09dd
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 02/15/2021
 user.type: subscriber
 tags: benefit, pluralsight
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 1ab283581d029d69b507271863420da71257d967
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 6f47bbe5f01130eeca81dd75e9f9c33af02be006
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541290"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100551946"
 ---
 ## <a name="im-unable-to-activate-my-pluralsight-benefit"></a>无法激活 Pluralsight 权益。
 
@@ -29,5 +29,6 @@ ms.locfileid: "99541290"
 1. 激活 Pluralsight 权益后，Visual Studio 订阅门户中的磁贴外观将会更改，以帮助你跟踪订阅的状态。 可能需要刷新门户才能看到它。 
 
 ## <a name="more-information-about-the-pluralsight-benefit"></a>有关 Pluralsight 权益的详细信息
+所选 Visual Studio 订阅中的 Pluralsight 权益随订阅一同续订。 例如，如果你的年度订阅是每年续订一次，当你续订时也会获得每一年的权益。 如果是多年订阅，你在订阅期间可获得 Pluralsight 权益。  如果续订多年订阅，在续订后将再次获得该权益。    若要查找续订日期，请访问 <https://my.visualstudio.com/subscriptions> 并单击“支持信息”，然后找到“有效期:”所示的日期。 
 
 详细了解[有关 Pluralsight 权益的激活、资格和常见问题解答的信息](https://docs.microsoft.com/visualstudio/subscriptions/vs-pluralsight)。  
