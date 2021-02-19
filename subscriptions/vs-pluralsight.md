@@ -7,12 +7,12 @@ ms.assetid: bc8b526c-2fed-4ac8-aaa2-73d2495256fd
 ms.date: 12/02/2020
 ms.topic: how-to
 description: 了解有关所选的 Visual Studio 订阅中随附的 Pluralsight 培训订阅。
-ms.openlocfilehash: 02ed0d2417317116182800980206a1fcc7fbfc16
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c5503c2adad075bdf6f186567fc372705f1ab55f
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537976"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542985"
 ---
 # <a name="pluralsight-training-benefits-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Pluralsight 培训权益
 
@@ -95,6 +95,9 @@ ms.locfileid: "96537976"
 
 ### <a name="q-i-have-a-visual-studio-enterprise-subscription-but-i-dont-see-the-pluralsight-tile-on-the-benefits-page-whats-wrong"></a>问：我拥有 Visual Studio Enterprise 订阅，但在“权益”页上看不到 Pluralsight 磁贴。 为什么会这样？
 答：并非所有 Visual Studio Enterprise 订阅都包含 Pluralsight 权益。  请检查[资格表](#eligibility)，查看订阅是否符合条件。
+
+### <a name="q-can-i-use-the-pluralsight-benefit-more-than-once"></a>问：能否多次使用 Pluralsight 权益？  
+答：所选 Visual Studio 订阅中的 Pluralsight 权益随订阅一同续订。 例如，如果你的年度订阅是每年续订一次，当你续订时也会获得每一年的权益。 如果是多年订阅，你在订阅期间可获得 Pluralsight 权益。  如果续订多年订阅，在续订后将再次获得该权益。    若要查找续订日期，请访问 <https://my.visualstudio.com/subscriptions> 并单击“支持信息”，然后找到“有效期:”所示的日期。 
 
 ### <a name="q-do-i-have-access-to-any-customized-learning--playlists-or-channels"></a>问：我是否有权访问任何自定义的学习播放列表或频道？
 答：可以。 作为 Visual Studio 订阅者，你有权访问特色角色、学习路径和自定义频道（播放列表），这属于 Pluralsight 培训权益的一部分。 特色内容由 Microsoft 和 Pluralsight 特别策划，非常适合学习相关的重要领域。 通过 Visual Studio 订阅门户 <https://my.visualstudio.com/benefits> 激活 Pluralsight 权益，获得在 Pluralsight 主页上访问此内容以及其他内容的权限。
