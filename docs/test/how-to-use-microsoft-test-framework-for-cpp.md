@@ -1,19 +1,19 @@
 ---
 title: 使用适用于 C++ 的 Microsoft 单元测试框架
 description: 使用适用于 C++ 的 Microsoft 单元测试框架为 C++ 代码创建单元测试。
-ms.date: 01/08/2020
+ms.date: 02/16/2021
 ms.topic: how-to
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: a9393fd248f4e6520c261d405bc624a75d8cf69f
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: a76c6ac83956cd1e6514ff958278d0b4cbcf0d2f
+ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85287111"
+ms.lasthandoff: 02/17/2021
+ms.locfileid: "100563440"
 ---
 # <a name="use-the-microsoft-unit-testing-framework-for-c-in-visual-studio"></a>在 Visual Studio 中使用适用于 C++ 的 Microsoft Unit Testing 框架
 
@@ -42,7 +42,9 @@ ms.locfileid: "85287111"
 
 1. 添加 C++ 单元测试文件：
 
-   - 右键单击解决方案资源管理器中的项目节点，然后选择“添加” > “新建项” > “C++ 文件(.cpp)”   。
+   1. 在解决方案资源管理器中右键单击项目节点，然后选择“添加” > “新增项”  。
+
+   1. 在“添加新项”对话框中，选择“C++ 文件(.cpp)”，并为其指定适当的名称，然后选择“添加”  。
 
 ## <a name="to-link-the-tests-to-the-object-or-library-files"></a><a name="object_files"></a>将测试与对象或库文件相关联的具体步骤
 
@@ -52,11 +54,11 @@ ms.locfileid: "85287111"
 
 1. 选择“配置属性” > “链接器” > “输入”页，然后选择“附加依赖项”   。
 
-   选择“编辑”，然后添加 **.obj** 或 **.lib** 文件名。 请勿使用完整路径名称。
+   选择“编辑”，然后添加 *.obj* 或 *.lib* 文件名。 请勿使用完整路径名称。
 
 1. 选择“配置属性” > “链接器” > “常规”页，然后选择“附加库目录”   。
 
-   选择“编辑”，然后添加 **.obj** 或 **.lib** 文件的目录路径。 该路径一般位于所测试项目的生成文件夹中。
+   选择“编辑”，然后添加 *.obj* 或 *.lib* 文件的目录路径。 该路径一般位于所测试项目的生成文件夹中。
 
 1. 选择“配置属性” > “VC++ 目录”页，然后选择“包含目录”  。
 
@@ -68,7 +70,7 @@ ms.locfileid: "85287111"
 
 测试框架定义了特殊宏，用于初始化测试模块、类和方法，以及在测试完成后清理资源。 这些宏生成代码，用于在首次访问类或方法之前，以及在最后一个测试运行之后执行。 有关详细信息，请参阅[初始化和清理](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#Initialize_and_cleanup)。
 
-在 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) 类中使用静态方法定义测试条件。 使用 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) 类将消息写入到**输出窗口**。 将属性添加到测试方法
+在 [Assert](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#general_asserts) 类中使用静态方法定义测试条件。 使用 [Logger](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md#logger) 类将消息写入到 **输出窗口**。 将属性添加到测试方法
 
 ## <a name="run-the-tests"></a>运行测试
 
@@ -76,7 +78,7 @@ ms.locfileid: "85287111"
 
 1. 如果部分测试在窗口中不可见，请在解决方案资源管理器中右键单击测试项目的节点并选择“生成”或“重新生成”，生成该测试项目  。
 
-1. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试 。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
+1. 在测试资源管理器中，选择“全部运行”，或选择要运行的特定测试   。 右键单击测试以获得其他选项，包括在启用断点的情况下在调试模式中运行它。
 
 1. 在“输出窗口”中，从下拉菜单中选择“测试”以查看 `Logger` 类写出的消息 ：
 
