@@ -2,7 +2,7 @@
 title: 在调试时检查 XAML 属性 |Microsoft Docs
 description: 了解如何在调试时使用 "实时可视化树" 和 "实时属性资源管理器" 工具检查 XAML 属性并获取 UI 元素的树视图。
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2019
+ms.date: 03/02/2021
 ms.topic: how-to
 ms.assetid: 390edde4-7b8d-4c89-8d69-55106b7e6b11
 author: TerryGLee
@@ -10,12 +10,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: d9033921c9e9863e5210721fb2c1244c326802d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76edf9f1af414a67abd83cec3c2f597c6cdf8707
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881368"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683454"
 ---
 # <a name="inspect-xaml-properties-while-debugging"></a>在调试时检查 XAML 属性
 
@@ -34,7 +34,17 @@ ms.locfileid: "99881368"
 
 ### <a name="create-the-project"></a>创建项目
 
-1. 创建新的 c # wpf 应用程序 ("**文件**  >    >  " "新建 **项目**"，然后键入 "c # WPF"，然后选择 " **wpf 应用" ( .net Core)** 或 **wpf 应用 ( .NET Framework**) ) 。 将其命名为 TestXAML。
+::: moniker range="vs-2019"
+
+1. 创建新的 c # wpf 应用程序 ("**文件** >  > " "新建 **项目**"，键入 "c # WPF"，选择 " **WPF 应用程序**" 项目模板，将项目命名为 " **TestXAML**"，然后验证 " **.net Core 3.1** " 出现在 "**目标框架**" 下拉中。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
+
+1.  ("**文件**" "新建项目" 创建新的 c # wpf 应用程序  >    >  ，然后键入 "c # WPF"，然后选择 " **WPF 应用" ( .NET Framework)**) 。 将其命名为 TestXAML。
+
+::: moniker-end
 
 1. 将 MainWindow.xaml 更改为以下内容：
 

@@ -2,7 +2,7 @@
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Windows 的更改日志。 查看版本 1.0.0.0 到 4.7.0.0 及更高版本的版本变化。
 ms.custom: ''
-ms.date: 11/13/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,76 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e3b4b730608234b8d25b7ff4bf6b6fcfa25bec09
-ms.sourcegitcommit: 3d96f7a8c9affab40358c3e81e3472db31d841b2
+ms.openlocfilehash: 12a6e122d6193b7aa98cf27668dab201bbb86ce4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94671241"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683484"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="4910"></a>4.9.1.0
+2021年3月发布
+
+### <a name="new-features"></a>新增功能
+
+- **评估版：**
+
+  - 已添加 `Active Scene` 到局部变量，并显示根游戏对象。
+
+  - 添加 `this.gameObject` 到局部变量，因为它广泛用于 Unity 项目。
+
+  - `Children` `Components` 向所有实例添加了和组 `GameObject` ，以便你可以轻松地显示所有对象层次结构。
+
+  - 添加 `Scene Path` 到所有 `GameObject` 实例，以显示场景中的位置。
+
+  - `JobEntityBatch`在将实体用于源生成器时，添加了对/Lambdas 的支持。
+
+  - 改进了对使用存储桶索引 (显示大型数组的支持) 。
+  
+  - 为 2019.4 API 添加了缺少的 Unity 消息。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了非简体中文语言的各种 UI 问题。
+
+  - 修复了与诊断有关的稳定性问题 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 。
+  
+- **调试：**
+
+  - 修复了使用方法时的 VM 断开连接问题 `Trace` 。
+
+- **评估版：**
+
+  - 修复了引发异常的过时属性的筛选。
+
+## <a name="4900"></a>4.9.0.0
+2021年1月20日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了对 `raytrace shaders` 和文件的支持 `UXML` `USS` 。
+
+  - 添加了 `.vsconfig` 生成支持。 Visual Studio 现在应检测缺少哪些组件，并在使用 Unity 项目时提示您安装这些组件。
+
+  - 更新了用作协同程序) 的所有方法的 Unity 消息 API (。
+
+  - 更新 Android SDK 检测。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了使用实例选择对话框时的进程刷新。
+
+  - 修复 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 了诊断，并为协同程序和提供错误的警告 `AssetPostprocessor.OnAssignMaterialModel` 。
 
 ## <a name="4820"></a>4.8.2.0
 2020年11月10日发行
