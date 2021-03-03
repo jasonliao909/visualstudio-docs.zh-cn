@@ -2,7 +2,7 @@
 title: 更改日志（Visual Studio Tools for Unity、Mac）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Mac 的更改日志。 查看版本 1.0.0.0 到 2.7.0.0 及更高版本的版本变化。
 ms.custom: ''
-ms.date: 12/18/2020
+ms.date: 3/1/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,93 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 53aade9880686746d11fb899b377e81174915bfa
-ms.sourcegitcommit: 4976419fae731860295dbcd072e6778832f7255d
+ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97917912"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683374"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="2920"></a>2.9.2.0
+2021年3月发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了 Unity 消息对话框中的搜索突出显示。
+
+  - 解决了 Unity 项目 treeview 的稳定性问题。
+
+- **调试：**
+
+  - 修复了条件断点的处理。
+
+## <a name="2910"></a>2.9.1.0
+2021年2月9日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了对从 IDE 中运行和调试 Unity 测试的支持
+
+- **评估版：**
+
+  - 已添加 `Active Scene` 到局部变量，并显示根游戏对象。
+
+  - 添加 `this.gameObject` 到局部变量，因为它广泛用于 Unity 项目。
+
+  - `Children` `Components` 向所有实例添加了和组 `GameObject` ，以便你可以轻松地显示所有对象层次结构。
+
+  - 添加 `Scene Path` 到所有 `GameObject` 实例，以显示场景中的位置。
+
+  - `JobEntityBatch`在将实体用于源生成器时，添加了对/Lambdas 的支持。
+
+  - 改进了对使用存储桶索引 (显示大型数组的支持) 。
+
+  - 为 2019.4 API 添加了缺少的 Unity 消息。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 解决了 Unity 消息对话框的稳定性问题
+
+  - 修复了非简体中文语言的各种 UI 问题。
+
+  - 修复了与诊断有关的稳定性问题 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 。
+
+- **调试：**
+
+  - 修复了使用方法时的 VM 断开连接问题 `Trace` 。
+
+- **评估版：**
+
+  - 修复了引发异常的过时属性的筛选。
+
+## <a name="2900"></a>2.9.0.0
+2021年1月20日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了对 `raytrace shaders` 和文件的支持 `UXML` `USS` 。
+
+  - 更新了用作协同程序) 的所有方法的 Unity 消息 API (。
+
+  - 更新 Android SDK 检测。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 了诊断，并为协同程序和提供错误的警告 `AssetPostprocessor.OnAssignMaterialModel` 。
 
 ## <a name="2840"></a>2.8.4.0
 2020年12月15日发布

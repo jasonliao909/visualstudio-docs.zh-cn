@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 9915fdab1d4d0976a199a09a11c815e4966192a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
+ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934645"
+ms.lasthandoff: 02/12/2021
+ms.locfileid: "100335256"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C++ 项目
 若要调试其他计算机上的 Visual Studio 应用程序，请在将要部署应用的计算机上安装和运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后部署和运行应用。
@@ -99,7 +99,7 @@ Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pa
     > [!TIP]
     > 或者，你可以采用单独的步骤部署文件。 在“解决方案资源管理器”中，右键单击“mymfc”节点，然后选择“部署”  。
 
-    如果应用程序需要非代码文件，则可以在“远程 Windows 调试器”页上的“要部署的附加文件”中指定这些文件 。
+    如果你有应用程序所需的非代码文件，则可以在“远程 Windows 调试器”页面上的“要部署的其他文件”中以分号分隔列表形式指定它们 。
 
     或者，可以在项目中包括文件，并在每个文件的“属性”页中将“内容”属性设置为“是”  。 将这些文件复制到“远程 Windows 调试器”页上指定的“部署目录” 。 如果需要将文件复制到“部署目录”的子文件夹，还可以将“项类型”更改为“复制文件”并指定其他属性  。
 

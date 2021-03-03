@@ -2,7 +2,7 @@
 title: 教程：在 Visual Studio 2017 中打开存储库中的项目
 description: 了解如何使用 Visual Studio 2017 打开 Git 或 Azure DevOps 存储库中的项目。
 ms.custom: get-started
-ms.date: 01/25/2021
+ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 97bfe7178d3bd744d1e441f8428cd38e8241b721
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01aca95bde7a20f746d4faece4090eac60b3849e
+ms.sourcegitcommit: 51e4426889ae5f49c69b122e37b3f48aa7a3925d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951922"
+ms.lasthandoff: 02/16/2021
+ms.locfileid: "100542972"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>教程：在 Visual Studio 2017 中打开存储库中的项目
 
@@ -60,6 +60,9 @@ ms.locfileid: "99951922"
 查看以下动画以检查你在上一节中完成的工作。
 
    ![使用 Visual Studio 的 GitHub 存储库中打开项目的动画](./media/open-project-from-github.gif)
+
+> [!NOTE]
+> 有关特定于 Visual Studio 2019 的信息，请参阅[在 Visual Studio 2019 中打开存储库中的项目](tutorial-open-project-from-repo-visual-studio-2019.md)页面。
 
 ## <a name="open-a-project-from-an-azure-devops-repo-by-using-visual-studio-2017"></a>使用 Visual Studio 2017 打开 Azure DevOps 存储库中的项目
 
@@ -108,6 +111,7 @@ ms.locfileid: "99951922"
 
 ## <a name="see-also"></a>另请参阅
 
+- [在 Visual Studio 2019 中打开存储库中的项目](tutorial-open-project-from-repo-visual-studio-2019.md)
+- [Visual Studio 2019 中的 Git 新体验](../ide/git-with-visual-studio.md)
 - [Azure DevOps Services：Azure Repos 和 Visual Studio 入门](/azure/devops/repos/git/gitquickstart/)
 - [Microsoft Learn：Azure DevOps 入门](/learn/modules/get-started-with-devops/)
-- [Visual Studio 2019 中的 Git 新体验](../ide/git-with-visual-studio.md?view=vs-2019&preserve-view=true)

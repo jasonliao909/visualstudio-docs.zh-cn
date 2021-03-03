@@ -13,12 +13,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 974de3094c7384f8170a42892a17f0eb49162094
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 956e63384619a82b7f0abb7dd3771ed2db9cba01
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867784"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684381"
 ---
 # <a name="overview"></a>概述
 
@@ -419,3 +419,4 @@ msbuild myproject.csproj /target:rebuild /verbosity:minimal
 - [提交代码分析器 bug](https://github.com/dotnet/roslyn-analyzers/issues)
 - [使用规则集](../code-quality/using-rule-sets-to-group-code-analysis-rules.md)
 - [禁止显示代码分析警告](../code-quality/in-source-suppression-overview.md)
+- [用于代码分析的配置选项 ( .NET) ](/dotnet/fundamentals/code-analysis/configuration-options)

@@ -6,16 +6,16 @@ keywords: ''
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.date: 11/10/2020
+ms.date: 3/2/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 6c90c4ad91ec810a2e43c16bd69d95d66e862dee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bf7ed9dfe147e9eedb9dddbc262d6478bdd8c70
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868557"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683713"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio 核心编辑器（随附于 Visual Studio 团队资源管理器 2019）
 
@@ -36,4 +36,4 @@ Microsoft.VisualStudio.Component.StartPageExperiment.Cpp | C++ 用户的 Visual 
 
 组件 ID | “属性” | Version
 --- | --- | ---
-n/a | 不可用 | n/a
+n/a | 不适用 | n/a

@@ -9,16 +9,18 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: a0db2f2e4993fcc3c986686322b8915615758e13
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727289"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683278"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加 Azure 应用配置
 
-在本教程中，你将了解如何在使用 ASP.NET Core 或任何类型的 ASP.NET 项目时，在 Visual Studio 中轻松添加开始使用 Azure 应用配置来管理你的 web 项目的配置和功能标志所需的所有内容。 通过使用 Visual Studio 中的连接的服务功能，可以让 Visual Studio 自动添加连接到 Azure 中的应用配置资源所需的所有代码、NuGet 包和配置设置。 若要使用此功能，必须使用 Visual Studio 2019 版本16.9 或更高版本。
+在本教程中，你将了解如何使用 Azure 应用配置轻松添加开始使用的所有内容，以便在 Visual Studio 中管理 web 项目的配置和功能标志。 通过使用 Visual Studio 中的连接的服务功能，可以让 Visual Studio 自动添加连接到 Azure 中的应用配置资源所需的所有代码、NuGet 包和配置设置。 若要使用此功能，必须使用 Visual Studio 2019 版本16.9 或更高版本。
+
+您可以使用 ASP.NET Core、.NET Core 控制台和 .NET Framework 项目中的应用配置连接的服务功能。
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。

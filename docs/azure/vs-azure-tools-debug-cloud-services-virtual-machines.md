@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: c7a95c43435cf78f169ce363b3e8fe301e9d0cbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39d151528c5fda1bd4700fecd0d5c8843ced50a1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844328"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683230"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中调试云服务或虚拟机
 
@@ -21,7 +21,7 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>在本地计算机上调试云服务
 
-使用 Azure 计算模拟器在本地计算机上调试云服务可以节省时间和金钱。 部署某个服务之前在本地对其进行调试可以提高可靠性和性能，且不会产生计算时间的相关费用。 但是，仅在 Azure 自身中运行云服务时，某些错误才可能会出现。 如果在发布服务时启用远程调试，然后将调试器附加到角色实例，则可以调试这些错误。
+使用 Azure 计算仿真程序在本地计算机上调试云服务，可以节省时间和资金。 部署某个服务之前在本地对其进行调试可以提高可靠性和性能，且不会产生计算时间的相关费用。 但是，仅在 Azure 自身中运行云服务时，某些错误才可能会出现。 如果在发布服务时启用远程调试，然后将调试器附加到角色实例，则可以调试这些错误。
 
 该模拟器模拟 Azure 计算服务并在本地环境中运行，使你可以在部署云服务之前对其进行测试和调试。 该模拟器将处理角色实例的生命周期，并提供对所模拟资源（如本地存储）的访问。 从 Visual Studio 调试或运行服务时，Visual Studio 会自动将模拟器作为后台应用程序启动，然后将服务部署到模拟器。 当模拟器在本地环境中运行时，可以使用它来查看服务。 可以运行完整版或速成版的模拟器。 从 Azure 2.3 开始，默认情况下，模拟器的 express 版本是默认值。 ) 参阅 [使用模拟器 express 在本地运行和调试云服务](vs-azure-tools-emulator-express-debug-run.md)。 (
 

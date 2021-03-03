@@ -4,21 +4,24 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 588480a3-8806-4ea5-9915-c25974770069
-ms.date: 12/02/2020
+ms.date: 02/09/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Windows 开发者帐户。
-ms.openlocfilehash: 4b8d2190792f942f808c1fda62a7020fefdca866
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: a988dabb5849d13733c72ebb5976be489f67dd95
+ms.sourcegitcommit: 0f3606917cf5451e8c4e0b2e0c3fbb9113429645
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537716"
+ms.lasthandoff: 02/10/2021
+ms.locfileid: "100089588"
 ---
 # <a name="windows-developer-account-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Windows 开发者帐户
 通过所选 Visual Studio 订阅包含的 Windows 开发者帐户，可以将免费和付费的 Windows 应用提交到 Windows 应用商店。
 
 ## <a name="activation-steps"></a>激活步骤
 若要使用 Windows 开发者帐户，需要设置一个帐户或使用现有帐户登录。
+
+> [!IMPORTANT]
+> 创建 Windows 开发人员帐户需要使用 Microsoft 帐户 (MSA)。  不支持使用 Azure Active Directory 帐户。  
 
 我们建议为该进程创建“私密”浏览器窗口。  例如，在 Google Chrome 中，请创建新的“incognito”窗口。  在 Internet Explorer 中，创建新的“InPrivate”窗口。
 
