@@ -1,4 +1,5 @@
 ---
+description: 获取程序的属性。
 title: IDebugProgram2：： GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eb0bb520d3a821d777d5deaeaa200c4b7e526f65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0114d0cf51769d6162563f6c60d51a3f031e19e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911953"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159947"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 获取程序的属性。
@@ -39,7 +40,7 @@ int GetDebugProperty(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppProperty`\
 弄返回一个 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示程序的属性。
 

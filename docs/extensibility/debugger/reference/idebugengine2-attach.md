@@ -1,4 +1,5 @@
 ---
+description: 将调试引擎 (DE) 附加到程序或程序。
 title: IDebugEngine2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c045c68af91896323e4cb6422108de77ae76352
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a780ab04e693fd2868579efbf015aef25e0cca32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948304"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160143"
 ---
 # <a name="idebugengine2attach"></a>IDebugEngine2::Attach
 将调试引擎 (DE) 附加到程序或程序。 当 DE 正在进程内运行到 SDM 时，由会话调试管理器调用 (SDM) 。
@@ -47,7 +48,7 @@ int Attach(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProgram`\
 中 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象的数组，这些对象表示要附加到的程序。 这些是端口程序。
 
@@ -61,7 +62,7 @@ int Attach(
 中要用于向 SDM 发送调试事件的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 对象。
 
 `dwReason`\
-中 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 枚举中的一个值，该值指定附加这些程序的原因。 有关详细信息，请参见“备注”部分。
+中 [ATTACH_REASON](../../../extensibility/debugger/reference/attach-reason.md) 枚举中的一个值，该值指定附加这些程序的原因。 有关详细信息，请参阅“备注”部分。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
