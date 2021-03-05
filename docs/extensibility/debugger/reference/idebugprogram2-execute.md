@@ -1,4 +1,5 @@
 ---
+description: IDebugProgram2：： Execute 继续从停止状态运行该程序。 任何以前的执行状态 (如步骤) ，都将被清除，程序将重新开始执行。
 title: IDebugProgram2：： Execute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25f1544fe13c6dc44aa90b73f69854893beae14f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72b59066e8b7125216077dbf4f6ed83adfa0ad2c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844731"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146036"
 ---
 # <a name="idebugprogram2execute"></a>IDebugProgram2::Execute
 继续从停止状态运行该程序。 任何以前的执行状态 (如步骤) ，都将被清除，程序将重新开始执行。

@@ -1,4 +1,5 @@
 ---
+description: 执行调试程序。
 title: IDebugProgram3：： ExecuteOnThread |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8df69c02fb7e78dbb107db906de59d8b7e5881b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d996fd7b8cda1d5e36322c85d49c9889dd66dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887063"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145997"
 ---
 # <a name="idebugprogram3executeonthread"></a>IDebugProgram3::ExecuteOnThread
 执行调试程序。 返回线程，以便在执行程序时为调试器信息指定用户正在查看哪个线程。
@@ -36,7 +37,7 @@ int ExecuteOnThread(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pThread`\
 中一个 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象。
 

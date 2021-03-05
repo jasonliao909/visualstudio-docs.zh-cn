@@ -1,4 +1,5 @@
 ---
+description: 为与堆栈帧关联的属性创建一个枚举器，如局部变量。
 title: IDebugStackFrame2：： EnumProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 500701be7b6f2aedffceaaaa819ecbd253a58e36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40298e505f0d3ccbba200c5487a1bf1d6723f5b2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837705"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145958"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 为与堆栈帧关联的属性创建一个枚举器，如局部变量。
@@ -49,7 +50,7 @@ int EnumProperties (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFieldSpec`\
 中 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 枚举中的标志的组合，用于指定要在枚举的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 结构中填充的字段。
 
