@@ -1,4 +1,5 @@
 ---
+description: 测试此对象是否为空引用。
 title: IDebugObject：： IsNullReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fd50f81a75ce3ca189c47db12f1f4024b244856
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 844e6c92385c1aa719d3c9d0ff399db9104dccc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953703"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161506"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 测试此对象是否为空引用。
@@ -39,7 +40,7 @@ int IsNullReference(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pfIsNull`\
 弄 `TRUE` 如果此对象是空引用，则返回非零 () ; 否则，将返回零 (`FALSE`) 。
 

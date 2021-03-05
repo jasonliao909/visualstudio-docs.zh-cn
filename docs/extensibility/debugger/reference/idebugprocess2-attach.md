@@ -1,4 +1,5 @@
 ---
+description: 将 (SDM) 的会话调试管理器附加到进程。
 title: IDebugProcess2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 462b2299a658359e81fc3641e590b95ab183a24e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73dbe76a32e67794736fd26595378485879b00b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874173"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161439"
 ---
 # <a name="idebugprocess2attach"></a>IDebugProcess2::Attach
 将 (SDM) 的会话调试管理器附加到进程。
@@ -45,7 +46,7 @@ int Attach(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pCallback`\
 中用于调试事件通知的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 对象。
 
@@ -61,7 +62,7 @@ int Attach(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了其他可能的值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的进程已附加到调试器。|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加过程中发生了安全冲突。|

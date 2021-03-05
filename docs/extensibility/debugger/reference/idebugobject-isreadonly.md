@@ -1,4 +1,5 @@
 ---
+description: 确定此对象是否为只读。
 title: IDebugObject：： IsReadOnly |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e7d27e6a437c46d2ee72eb4fd5f79eaa9e912ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99cf51ba5415631b2e8e66c36b459297a8fcb6e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953625"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161473"
 ---
 # <a name="idebugobjectisreadonly"></a>IDebugObject::IsReadOnly
 确定此对象是否为只读。
@@ -39,7 +40,7 @@ int IsReadOnly(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pfIsReadOnly`\
 弄 `TRUE` 如果此对象是只读的，则返回非零 () ; 否则，将返回零 (`FALSE`) 。
 

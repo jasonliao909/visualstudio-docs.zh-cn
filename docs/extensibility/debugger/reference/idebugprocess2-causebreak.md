@@ -1,4 +1,5 @@
 ---
+description: 请求运行此进程中的代码的下一个程序停止并发送 IDebugBreakEvent2 事件对象。
 title: IDebugProcess2：： CauseBreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1094b3a214629c027f2574127d74cff7f0ea119c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28a4da4c0f7e4f8770478a47a73f7567506d5ae2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874108"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161393"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 请求运行此进程中的代码的下一个程序停止并发送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件对象。

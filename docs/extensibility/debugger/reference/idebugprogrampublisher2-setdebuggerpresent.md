@@ -1,4 +1,5 @@
 ---
+description: 通知程序发布者存在并正在运行调试器。
 title: IDebugProgramPublisher2：： SetDebuggerPresent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ef671690cdf9f0c6b84d3585aef3b23a6bbd8ba9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3db8703ed05fd4a386b9265998de2f27017d0d76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959501"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161282"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
 通知程序发布者存在并正在运行调试器。
@@ -39,7 +40,7 @@ int SetDebuggerPresent(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `fDebuggerPresent`\
 中非零 (`TRUE`) 如果存在调试器，则为零 (`FALSE`) （如果不存在）。
 

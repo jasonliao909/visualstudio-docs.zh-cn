@@ -1,4 +1,5 @@
 ---
+description: 使程序不可用于调试。
 title: IDebugProgramPublisher2：： UnpublishProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3841ba0698c5e63bbf58e47e0e4a8b8f75d068e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7160b3bd3b954b722828542e8eead4fc6fedebf5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961205"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161256"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
 使程序不可用于调试。
@@ -39,7 +40,7 @@ int UnpublishProgram(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pDebuggeeInterface`\
 中 `IUnknown` 程序的接口。 此值与 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法提供的值相同，并且唯一标识要移除的程序 (也就是说，它用作 cookie) 。
 
