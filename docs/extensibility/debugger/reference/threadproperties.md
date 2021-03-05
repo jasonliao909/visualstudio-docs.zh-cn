@@ -1,4 +1,5 @@
 ---
+description: 介绍线程的属性。
 title: THREADPROPERTIES |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2eb7abf897cf4891f08228dd5f0c918f580a1ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 186d9b0cd4f9ee3a822a528ab16788902d9ff1af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850656"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225252"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 介绍线程的属性。
@@ -83,7 +84,7 @@ public struct THREADPROPERTIES {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)

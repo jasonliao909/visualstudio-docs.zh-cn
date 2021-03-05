@@ -1,4 +1,5 @@
 ---
+description: 枚举自定义属性。
 title: IEnumDebugCustomAttributes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c3e4cfaf35c1fee655eedc49e8a3212c1355390
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bffa799ba14738daea480a1677f1b1a820e98767
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967470"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226834"
 ---
 # <a name="ienumdebugcustomattributes"></a>IEnumDebugCustomAttributes
 枚举自定义属性。
@@ -37,7 +38,7 @@ IEnumCustomAttributes : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugCustomAttributes` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugcustomattributes-next.md)|检索枚举序列中指定数量的自定义属性。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugcustomattributes-skip.md)|跳过枚举序列中指定数量的自定义属性。|
@@ -52,7 +53,7 @@ IEnumCustomAttributes : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [EnumCustomAttributes](../../../extensibility/debugger/reference/idebugcustomattributequery2-enumcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

@@ -1,4 +1,5 @@
 ---
+description: 此接口枚举 FRAMEINFO 结构。
 title: IEnumDebugFrameInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdc2006b45a664496615988251081f1000cdb428
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c347b7cebd9b1417cd0a8e772cd8a247e975ea97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956278"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226379"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此接口枚举 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构。
@@ -37,7 +38,7 @@ IEnumDebugFrameInfo2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugFrameInfo2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md)|检索枚举序列中指定数量的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugframeinfo2-skip.md)|跳过枚举序列中指定数量的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构。|
@@ -55,7 +56,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

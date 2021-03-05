@@ -1,4 +1,5 @@
 ---
+description: 此接口表示代码路径的列表。
 title: IEnumCodePaths2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69a65488d38fe2562392be152e448369ff081915
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962153"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227081"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此接口表示代码路径的列表。
@@ -37,7 +38,7 @@ IEnumCodePaths2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumCodePaths2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|检索枚举序列中指定数目的代码路径。|
 |[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|跳过枚举序列中指定数目的代码路径。|
@@ -55,5 +56,5 @@ IEnumCodePaths2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
