@@ -1,4 +1,5 @@
 ---
+description: 此方法返回 GUID，该 GUID 表示此进程通过调用 SetHostingProcessLanguage 设置的语言。
 title: IDebugProcess3：： GetHostingProcessLanguage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9743b03af9bf795d5f058a14e3f0d5981657e461
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 303f0e5dcd4cc87bbc13e55fcc9b95bc870213d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915262"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158431"
 ---
 # <a name="idebugprocess3gethostingprocesslanguage"></a>IDebugProcess3::GetHostingProcessLanguage
 此方法返回一个， `GUID` 它表示由对 [SetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-sethostingprocesslanguage.md)的调用设置的此进程的语言。
@@ -39,7 +40,7 @@ int GetHostingProcessLanguage(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pguidLang`\
 弄 `GUID` 此进程的语言的。 `GUID_NULL` (c + +) 或 `Guid.Empty` (c # ) 意味着未设置该语言。
 

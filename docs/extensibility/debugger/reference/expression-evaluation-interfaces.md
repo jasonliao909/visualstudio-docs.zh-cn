@@ -1,4 +1,5 @@
 ---
+description: 下面是 Visual Studio 调试 SDK 的表达式计算接口。
 title: 表达式计算接口 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a048d11b09ee873a2f5a11e35db78f68df6ad680
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d380fcce087fad3dc6b101e78cbc514ba19b1052
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936933"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102158730"
 ---
 # <a name="expression-evaluation-interfaces"></a>表达式计算接口
 > [!IMPORTANT]
