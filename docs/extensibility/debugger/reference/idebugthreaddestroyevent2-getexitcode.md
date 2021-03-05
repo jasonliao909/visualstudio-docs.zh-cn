@@ -1,4 +1,5 @@
 ---
+description: 获取线程的退出代码。
 title: IDebugThreadDestroyEvent2：： GetExitCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 567e7fdedbf408ce9cac137f2b240626fd16d10c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 693f44ededcaa081d72ef44d60d31473f0b70e1d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940223"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227367"
 ---
 # <a name="idebugthreaddestroyevent2getexitcode"></a>IDebugThreadDestroyEvent2::GetExitCode
 获取线程的退出代码。
@@ -39,12 +40,12 @@ int GetExitCode (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwExit`\
 弄返回线程的退出代码。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThreadDestroyEvent2](../../../extensibility/debugger/reference/idebugthreaddestroyevent2.md)

@@ -1,4 +1,5 @@
 ---
+description: 检索枚举序列中指定数量的自定义属性。
 title: IEnumDebugCustomAttributes：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2eefa444d1832e4f66aac161636177994bd4a51f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79c8b6cf86413f1642d22d79e9c072794353499b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226873"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 检索枚举序列中指定数量的自定义属性。
@@ -43,7 +44,7 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
 
@@ -56,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

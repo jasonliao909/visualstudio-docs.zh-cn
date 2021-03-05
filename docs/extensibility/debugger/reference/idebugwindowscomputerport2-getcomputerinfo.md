@@ -1,4 +1,5 @@
 ---
+description: 检索有关正在运行调试器的计算机的信息。
 title: IDebugWindowsComputerPort2：： GetComputerInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0292a520b414c2ca96cb9077af938d692dd57bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 279de593e79629546f0a3a10fe8e329b4b6ec6af
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965611"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227315"
 ---
 # <a name="idebugwindowscomputerport2getcomputerinfo"></a>IDebugWindowsComputerPort2::GetComputerInfo
 检索有关正在运行调试器的计算机的信息。
@@ -38,13 +39,13 @@ public int GetComputerInfo(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pInfo`\
 弄对包含计算机信息的结构的引用。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugWindowsComputerPort2](../../../extensibility/debugger/reference/idebugwindowscomputerport2.md)
 - [COMPUTER_INFO](../../../extensibility/debugger/reference/computer-info.md)

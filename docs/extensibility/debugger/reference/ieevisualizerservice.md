@@ -1,4 +1,5 @@
 ---
+description: 此接口实现向 IDebugProperty3 和 IPropertyProxyEESide 接口提供功能的关键方法。
 title: IEEVisualizerService |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b10a09aeab6012981fd464694c641aaf6bba4951
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5054041ab09898943d300393d36205581231b06d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842233"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227211"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -39,7 +40,7 @@ IEEVisualizerService : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|检索此服务了解的自定义查看器的数目。|
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|检索自定义查看器的列表。|
@@ -60,7 +61,7 @@ IEEVisualizerService : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

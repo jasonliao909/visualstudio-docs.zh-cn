@@ -1,4 +1,5 @@
 ---
+description: 跳过端口供应商枚举中指定数量的元素。
 title: IEnumDebugPortSuppliers2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9cb5b9536d1602cabe1aa35d6838ed26f4e4c8d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85110c17bb9c1f83e600e47d54a1ea762667dc18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940158"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226210"
 ---
 # <a name="ienumdebugportsuppliers2skip"></a>IEnumDebugPortSuppliers2::Skip
 跳过指定数目的元素。
@@ -39,7 +40,7 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要跳过的元素数。
 
@@ -49,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

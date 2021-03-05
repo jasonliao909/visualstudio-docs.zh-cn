@@ -1,4 +1,5 @@
 ---
+description: 将代码上下文枚举重置为第一个元素。
 title: IEnumDebugCodeContexts2：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a4b3fed1c8e5cb9c781349da0e633040c4646368
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48df7ce32f085ea387f6ce49e891a0f0e01eb2cf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929454"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226951"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
 将枚举重置为第一个元素。
@@ -43,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后， [下一次调用的方法将](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md) 返回枚举的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
