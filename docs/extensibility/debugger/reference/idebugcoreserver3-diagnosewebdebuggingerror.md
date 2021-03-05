@@ -1,4 +1,5 @@
 ---
+description: 尝试确定自动附加失败的原因。
 title: IDebugCoreServer3：:D iagnoseWebDebuggingError |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6c95c3953b70235daa739e48b5de50b4a815b13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95e54add3616fa0ec97f4114b4cd628213e752f9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154686"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 尝试确定自动附加失败的原因。
@@ -39,7 +40,7 @@ int DiagnoseWebDebuggingError(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszUrl`\
 中当前未使用;应始终设置为 null 值。
 

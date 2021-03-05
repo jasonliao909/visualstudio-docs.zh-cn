@@ -1,4 +1,5 @@
 ---
+description: 此方法通过调试引擎 (DE) 来启动进程。
 title: IDebugEngineLaunch2：： LaunchSuspended |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1afa09abd0e997c47b33953e5321d4c5d1845a25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fd8b610f99161a9716b9bffc235196165306711
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153581"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 此方法通过调试引擎 (DE) 来启动进程。
@@ -63,7 +64,7 @@ int LaunchSuspended(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszMachine`\
 中要在其中启动进程的计算机的名称。 使用 null 值来指定本地计算机。
 

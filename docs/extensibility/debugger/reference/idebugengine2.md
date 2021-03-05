@@ -1,4 +1,5 @@
 ---
+description: 此接口表示 (DE) 的调试引擎。
 title: IDebugEngine2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c38dc023c44e0c1743fd9d35dbe65befda405f4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce76ccdc444dafc4b6b8ee6afb3c9ded8adcf3d0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919928"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153828"
 ---
 # <a name="idebugengine2"></a>IDebugEngine2
 此接口表示 (DE) 的调试引擎。 它用于管理调试会话的各个方面，从创建断点到设置和清除异常。

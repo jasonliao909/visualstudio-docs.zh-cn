@@ -1,4 +1,5 @@
 ---
+description: IDebugEngineLaunch2：： TerminateProcess 终止进程。
 title: IDebugEngineLaunch2：： TerminateProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19222c3cc6ec7e3b09cfa16bdb82820ecc702451
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 761e3c35e6f433f4bbaa280026e5879413231334
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892796"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153516"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 终止进程。
@@ -39,7 +40,7 @@ int TerminateProcess (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProcess`\
 中表示要终止的进程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
 

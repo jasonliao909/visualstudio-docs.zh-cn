@@ -1,4 +1,5 @@
 ---
+description: 在服务器上创建调试引擎的实例。
 title: IDebugCoreServer3：： CreateInstanceInServer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b76c37d767ae38a33d537a96f9ad8f7087503ed2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc3a24e28c378bda34034822aedf4d35e5a6313e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909962"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154673"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 在服务器上创建调试引擎的实例。
@@ -47,7 +48,7 @@ int CreateInstanceInServer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `szDll`\
 中用于实现参数中指定的 CLSID 的 dll 的路径 `clsidObject` 。 如果是 `NULL` ，则调用 COM 的 `CoCreateInstance` 函数。
 
