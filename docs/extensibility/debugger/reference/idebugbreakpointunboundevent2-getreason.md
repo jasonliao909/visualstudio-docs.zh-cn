@@ -1,4 +1,5 @@
 ---
+description: 获取取消绑定断点的原因。
 title: IDebugBreakpointUnboundEvent2：： GetReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21b1eaf51f9f533fccb5275e0659367a43adb2c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d230a9228ff59a90224030f050761a05858c8c1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900221"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102170245"
 ---
 # <a name="idebugbreakpointunboundevent2getreason"></a>IDebugBreakpointUnboundEvent2::GetReason
 获取取消绑定断点的原因。
@@ -39,7 +40,7 @@ int GetReason(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwUnboundReason`\
 弄从 [BP_UNBOUND_REASON](../../../extensibility/debugger/reference/bp-unbound-reason.md) 枚举返回一个值，该值指定未绑定断点的原因。
 
