@@ -1,4 +1,5 @@
 ---
+description: 获取作为字节 blob 的属性信息。
 title: IDebugCustomAttribute：： GetAttributeBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe0db0267898b54837cd9d05e39b0ddce97d21cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7cfc3ba650ff8277bb6cb85f5d1530d202bd426
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928453"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163078"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 获取作为字节 blob 的属性信息。
@@ -41,7 +42,7 @@ int GetAttributeBytes(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppBlob`\
 [in，out]用属性字节填充的数组。
 

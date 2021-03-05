@@ -1,4 +1,5 @@
 ---
+description: 在内存中加载指定的调试符号。
 title: IDebugComPlusSymbolProvider：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4d74480e68dda5f9cd4316b4eb6de2e140542071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d09cbe3afd5bc32f3143e5fb15387b7c5c7cb702
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163624"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 在内存中加载指定的调试符号。
@@ -48,7 +49,7 @@ int LoadSymbols(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ulAppDomainID`\
 中应用程序域的标识符。
 

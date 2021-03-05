@@ -1,4 +1,5 @@
 ---
+description: 确定指定的方法是否有行信息。
 title: IDebugComPlusSymbolProvider2：： FunctionHasLineInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6492f0899592074e003f49afb06fd9bf7303ddc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61c774c911f7b84ccba592cd73a04d13799da4d1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954977"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163442"
 ---
 # <a name="idebugcomplussymbolprovider2functionhaslineinfo"></a>IDebugComPlusSymbolProvider2::FunctionHasLineInfo
 确定指定的方法是否有行信息。
@@ -38,7 +39,7 @@ int FunctionHasLineInfo(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pAddress`\
 中由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示的调试地址。 此地址必须是 METHOD_ADDRESS。
 

@@ -1,4 +1,5 @@
 ---
+description: 由会话调试管理器调用 (SDM) ，以指示已接收并处理 (向 SDM 发出) 的同步调试事件。
 title: IDebugEngine2：： ContinueFromSynchronousEvent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78485e209c93e0673aa32587b21bb074aac047e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e7d92e4d49b6a9e409ee30cf04d131645d287fd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921143"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162662"
 ---
 # <a name="idebugengine2continuefromsynchronousevent"></a>IDebugEngine2::ContinueFromSynchronousEvent
 由会话调试管理器调用 (SDM) ，以指示已接收并处理 (向 SDM 发出) 的同步调试事件。
@@ -39,7 +40,7 @@ HRESULT ContinueFromSynchronousEvent(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pEvent`\
 中一个 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 对象，该对象表示之前发送的同步事件，调试器现在应从该事件中继续执行。
 
