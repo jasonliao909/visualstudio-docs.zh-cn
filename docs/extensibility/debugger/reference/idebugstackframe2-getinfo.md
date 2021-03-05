@@ -1,4 +1,5 @@
 ---
+description: 获取堆栈帧的说明。
 title: IDebugStackFrame2：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 161796827507cf40f7ac7124ae3376d4252fb3d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3af7aafe43c0d7916a3fc11b855d5512f50a1d5f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837523"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168616"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 获取堆栈帧的说明。
@@ -43,7 +44,7 @@ int GetInfo (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFieldSpec`\
 中 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 枚举中的标志的组合，用于指定 `pFrameInfo` 要填充参数的哪些字段。
 

@@ -1,4 +1,5 @@
 ---
+description: 获取此程序在其中运行的进程。
 title: IDebugProgram2：： GetProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9cd3b6e76a7e675a2228217d9a72c1d004de919c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 233bd9bbb41f64b375e899dba9c0be9a9fba3d97
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168984"
 ---
 # <a name="idebugprogram2getprocess"></a>IDebugProgram2::GetProcess
 获取此程序在其中运行的进程。
@@ -39,7 +40,7 @@ int GetProcess(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppProcess`\
 弄返回表示进程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 接口。
 

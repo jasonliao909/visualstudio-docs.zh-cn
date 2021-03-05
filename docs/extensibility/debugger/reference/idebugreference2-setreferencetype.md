@@ -1,4 +1,5 @@
 ---
+description: 设置引用类型。
 title: IDebugReference2：： SetReferenceType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f33ae0203dfb3f3e6a6af67b925add8948720638
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b1b94cd6fec5cbb9fb7d5040df0299432b2c17
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963661"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168906"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 设置引用类型。 留待将来使用。
@@ -39,7 +40,7 @@ int SetReferenceType (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwRefType`\
 中 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 枚举中的一个值，该值指定引用类型。
 

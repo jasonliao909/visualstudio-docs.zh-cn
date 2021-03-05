@@ -1,4 +1,5 @@
 ---
+description: 获取端口本身的进程 ID。
 title: IDebugPortEx2：： GetPortProcessId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a5648fa4b251e96327a35ecf29c2684a312fa99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e10dbc648f8233a826c440c261308c6c3688fa30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929649"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169426"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 获取端口本身的进程 ID。
@@ -39,7 +40,7 @@ int GetPortProcessId (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwProcessId`\
 弄返回端口本身的物理进程 ID。
 

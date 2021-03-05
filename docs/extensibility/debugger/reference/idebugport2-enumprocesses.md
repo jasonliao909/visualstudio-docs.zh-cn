@@ -1,4 +1,5 @@
 ---
+description: 返回某个端口上运行的所有进程的列表。
 title: IDebugPort2：： EnumProcesses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e303787a21996ba4a743e854d6ba1263438259b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c07541200635417287ce8d6bd8731a87ddfc88ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169530"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 返回某个端口上运行的所有进程的列表。
@@ -39,7 +40,7 @@ int EnumProcesses(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄返回一个 [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md) 对象，该对象包含在一个端口上运行的所有进程的列表。
 

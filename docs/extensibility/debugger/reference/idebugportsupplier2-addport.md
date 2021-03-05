@@ -1,4 +1,5 @@
 ---
+description: 添加端口。
 title: IDebugPortSupplier2：： AddPort |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e126612ed8b081e5ba0b703d14399ac74d78a9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14232ac49b3862c635a41c25e79c7ab166fa24ef
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906306"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169231"
 ---
 # <a name="idebugportsupplier2addport"></a>IDebugPortSupplier2::AddPort
 添加端口。
@@ -41,7 +42,7 @@ int AddPort(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pRequest`\
 中描述要添加的端口的 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) 对象。
 

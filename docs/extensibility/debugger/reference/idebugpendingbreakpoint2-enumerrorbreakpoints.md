@@ -1,4 +1,5 @@
 ---
+description: 获取此挂起断点导致的所有错误断点的列表。
 title: IDebugPendingBreakpoint2：： EnumErrorBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 34336c51d51c50f6dee7239a38588f36c935edbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 664a64896244f58e98c9fd600b4fab71b5e9fe35
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934346"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169803"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 获取此挂起断点导致的所有错误断点的列表。
@@ -42,7 +43,7 @@ int EnumErrorBreakpoints(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `bpErrorType`\
 中 [BP_ERROR_TYPE](../../../extensibility/debugger/reference/bp-error-type.md) 枚举中的值的组合，用于选择要枚举的错误的类型。
 
