@@ -3,19 +3,19 @@ title: 快速入门：Visual Studio IDE 教程
 description: 了解 Visual Studio 集成开发环境 (IDE) 的一些窗口、菜单和其他 UI 功能。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
-ms.date: 02/21/2019
+ms.date: 03/02/2021
 ms.topic: quickstart
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e0199319bc0c647f42e87d4003dd2fabe4544a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 237b3384d6bec010a760c4bc193b9a95f33febeb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945495"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683971"
 ---
 # <a name="quickstart-first-look-at-the-visual-studio-ide"></a>快速入门：初步了解 Visual Studio IDE
 
@@ -83,15 +83,25 @@ ms.locfileid: "99945495"
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
-   随即打开显示“创建新项目”的对话框  。 通过此对话框，可搜索、筛选和选择项目模板。 它还会显示最近使用的项目模板的列表。
+    :::image type="content" source="../get-started/media/vs-2019/start-window-create-new-project.png" alt-text="Visual Studio 2019 中“创建新项目”窗口的屏幕截图。":::
 
-1. 在顶部的搜索框中，键入“console”，以筛选项目类型列表，仅显示名称中包含“console”的项目类型  。 通过从语言选取器中选择 C#（或你选择的其他语言）来进一步细化搜索结果。
+   随即打开“创建新项目”窗口，并显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。
 
-   ![Visual Studio 2019 中的“新建项目”对话框](media/vs-2019/create-a-new-project.png)
+   通过此对话框，可搜索、筛选和选择项目模板。 它还会显示最近使用的项目模板的列表。
 
-1. 如果已选择 C#、Visual Basic 或 F# 作为你的语言，请选择“控制台应用(.NET Core)”模板，然后选择“下一步”   。 （如果已选择其他语言，只需选择任意模板。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
+1. 在顶部的搜索框中，键入“console”，以筛选项目类型列表，仅显示名称中包含“console”的项目类型  。 通过从“所有语言”下拉列表中选取“C#”（或你选择的其他语言）来进一步细化搜索结果。
 
-1. 在“配置新项目”  页上，接受默认的项目名称和位置，然后选择“创建”  。
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中“创建新项目”窗口的屏幕截图，你可以在该窗口中选择所需的模板。":::
+
+1. 如果已选择 C#、Visual Basic 或 F# 作为你的语言，请选择“控制台应用程序”模板，然后选择“下一步” 。 （如果已选择其他语言，只需选择任意模板。 对于所有编程语言而言，我们将查看的 UI 都是相似的。）
+
+1. 在“配置新项目”窗口上，接受默认的项目名称和位置，然后选择“下一步”。
+
+    :::image type="content" source="media/vs-2019/configure-new-project-console.png" alt-text="Visual Studio 2019 中“配置新项目”窗口的屏幕截图，你可在该窗口中输入项目的名称。":::
+
+1. 在“附加信息”窗口中，验证“目标框架”下拉菜单中是否显示“.NET Core 3.1”，然后单击“创建”。
+
+    :::image type="content" source="../get-started/media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中“附加信息”窗口的屏幕截图，你可在该窗口中选择所需的 .NET Core Framework 版本。":::
 
 ::: moniker-end
 

@@ -5,15 +5,15 @@ ms.custom: SEO-VS-2020
 author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和 Docker 创建容器化 React SPA 应用
 ms.author: ghogen
-ms.date: 05/14/2020
+ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 15c781be33343d2672396c44492d71f42cbb4eda
-ms.sourcegitcommit: 296ab61c40bf090c577ef20e84d581939bd1855b
+ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92502183"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684335"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -55,11 +55,16 @@ ms.locfileid: "92502183"
 
 1. 选择容器类型，然后单击“确定”。
 ::: moniker-end
-::: moniker range=">=vs-2019"
-1. 使用“ASP.NET Core Web 应用程序”模板创建新项目。
-1. 选择“React.js”，然后单击“创建”。 你无法选择“启用 Docker 支持”，但不要担心，你可以稍后添加该支持。
 
-   ![新 React.js 项目的屏幕截图](media/container-tools-react/vs-2019/new-react-project.png)
+::: moniker range=">=vs-2019"
+
+1. 使用“带 React.js 的 ASP.NET Core”模板创建新项目。
+
+   ![创建新 React.js 项目的屏幕截图](media/container-tools-react/vs-2019/create-reactjs-project.png)
+
+1. 在“其他信息”屏幕上，你无法选择“启用 Docker 支持”，但不要担心，可以稍后添加该支持。
+
+   ![“创建新 React.js 项目 - 其他信息”屏幕的屏幕截图](media/container-tools-react/vs-2019/new-react-project-additional-information.png)
 
 1. 右键单击项目节点，然后选择“添加”>“Docker 支持”，将 Dockerfile 添加到你的项目中 。
 
@@ -236,7 +241,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
     | ------------ |  ------- | -------------------------------------------------- |
     | **DNS 前缀** | 全局唯一名称 | 用于唯一标识容器注册表的名称。 |
     | **订阅** | 选择订阅 | 要使用的 Azure 订阅。 |
-    | **[资源组](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中创建容器注册表的资源组的名称。 选择“新建”创建新的资源组。|
+    | **[资源组](/azure/azure-resource-manager/resource-group-overview)** | myResourceGroup |  要在其中创建容器注册表的资源组的名称。 选择“新建”  创建新的资源组。|
     | **[SKU](/azure/container-registry/container-registry-skus)** | 标准 | 容器注册表的服务层  |
     | **注册表位置** | 靠近你的位置 | 在你附近或将使用容器注册表的其他服务附近的[区域](https://azure.microsoft.com/regions/)中，选择位置。 |
 

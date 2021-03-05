@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: f9f442757b60b7dc9dc0e2dd0b8eba0c4928976b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68ccba785643b8f4f29143e5e72dc65cfedcd512
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959514"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684053"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -83,38 +83,42 @@ ms.locfileid: "99959514"
 
 ::: moniker range="vs-2019"
 
-1. 打开 Visual Studio。
+1. 在“开始”窗口上，选择“创建新项目”。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+   :::image type="content" source="../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="查看“创建新项目”窗口":::
 
-   ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
+1. 在“创建新项目”窗口中，从“语言”列表中选择“C#”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“Web”。
 
-1. 在“创建新项目”窗口中，在搜索框中输入或键入“ASP.NET”   。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows   。
+      应用语言、平台和项目类型筛选器之后，选择“ASP.NET Core Web 应用”模板，然后选择“下一步” 。
 
-   应用语言和平台筛选器之后，选择“ASP.NET Core Web 应用程序”模板，然后选择“下一步”   。
-
-   ![为 ASP.NET Core Web 应用程序选择 C# 模板](../get-started/csharp/media/vs-2019/csharp-create-new-project-search-aspnet-core-filtered.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="为 ASP.NET Core Web 应用选择 C# 模板":::
 
    > [!NOTE]
-   > 如果未看到“ASP.NET Core Web 应用程序”模板，则可以从“创建新项目”窗口安装该模板   。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
+   > 如果未看到“ASP.NET Core Web 应用”模板，则可以从“创建新项目”窗口安装该模板。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 然后，在 Visual Studio 安装程序中，选择“ASP.NET 和 Web 开发”工作负载  。
    >
-   > ![Visual Studio 安装程序中的“ASP.NET Core Web 应用程序”工作负载](../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../get-started/media/aspnet-core-web-dev-workload.png)
    >
-   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 如果系统提示你保存工作，请保存。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
-1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“HelloWorld”    。 然后，选择“创建”  。
+1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“HelloWorld”    。 然后，选择“下一步”。
 
-   ![在“配置新项目”窗口中，将项目命名为“HelloWorld”](../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png)
+    :::image type="content" source="../get-started/csharp/media/vs-2019/csharp-name-your-aspnet-helloworld-project.png" alt-text="在“配置新项目”窗口中，将项目命名为“MyCoreApp”":::
 
-1. 在“创建新的 ASP.NET Core Web 应用程序”窗口中，验证“ASP.NET Core 3.0”是否显示在顶部下拉菜单中   。 然后，选择“Web 应用程序”，其中包括示例 Razor Pages  。 接下来，选择“创建”  。
+1. 在“附加信息”窗口中，验证顶部下拉菜单中是否显示“.NET Core 3.1”。 请注意，可以通过选中相应的复选框来启用 Docker 支持。 此外，可以通过单击“更改身份验证”按钮来添加身份验证支持。 可以从中选择下列项目：
+    - 无：不进行身份验证。
+    - 个人帐户：这些存储在本地或基于 Azure 的数据库。
+    - Microsoft 标识平台：此选项使用 Active Directory、Azure AD 或 Microsoft 365 进行身份验证。
+    - Windows：适用于 Intranet 应用程序。
+    
+    保持“启用 Docker”框处于未选中状态，并选择“无”作为身份验证类型。 然后选择“创建”  。
 
-   ![“创建新的 ASP.NET Core Web 应用程序”窗口](../get-started/csharp/media/vs-2019/csharp-create-aspnet-razor-pages-app.png)
+   :::image type="content" source="../get-started/csharp/media/vs-2019/aspnet-core-additional-information.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”并保留所有默认值":::
 
-   此时，Visual Studio 将打开新项目。
+   Visual Studio 将打开你的新项目。
 
 ::: moniker-end
 

@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 264744d7fe39c77da625c778d1bfea51f55e1f2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948005"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683928"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -55,9 +55,14 @@ ms.locfileid: "99948005"
 
 2. 在“开始”窗口上，选择“创建新项目”  。
 
-3. 搜索并选择 C#“控制台应用(.NET Core)”项目模板，然后单击“下一步”   。
+3. 搜索并对 .NET Core 选择 C#“控制台应用”项目模板，然后单击“下一步” 。
 
-4. 将项目命名为“Bank”，然后单击“创建”   。
+   > [!NOTE]
+   > 如果未看到“控制台应用”模板，则可以通过“创建新项目”窗口安装该模板   。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载  。
+
+4. 将项目命名为“Bank”，然后单击“下一步” 。
+
+   选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
 
    将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件   。
 
@@ -163,11 +168,14 @@ ms.locfileid: "99948005"
 
 ::: moniker range=">=vs-2019"
 
-2. 搜索并选择 C#“MSTest 测试项目(.NET Core)”项目模板，然后单击“下一步”   。
+2. 在搜索框中键入“单元测试”，选择“C#”作为语言，然后对 .NET Core 选择 C#“单元测试项目”模板，再单击“下一步”   。
 
-3. 将项目命名为 BankTests  。
+   > [!NOTE]
+   > 从 Visual Studio 2019 版本 16.9 开始，MSTest 项目模板名称已从“MSTest 单元测试项目(.NET Core)”更改为“单元测试项目”。
 
-4. 单击 **“创建”** 。
+3. 将项目命名为“BankTests”，然后单击“下一步” 。
+
+4. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
 
    将“BankTests”  项目添加到“Bank”  解决方案。
 

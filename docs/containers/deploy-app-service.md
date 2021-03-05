@@ -7,14 +7,14 @@ manager: jmartens
 ms.technology: vs-azure
 ms.devlang: dotnet
 ms.topic: how-to
-ms.date: 01/27/2020
+ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: 2e23658cfde1154f5b4df7ae7dade71b1569e35c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9a4f26227d2cd3bd065fab88ba294f7341ea4ed
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859640"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684306"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -49,9 +49,9 @@ ms.locfileid: "99859640"
 ::: moniker-end
 ::: moniker range=">= vs-2019"
 1. 在 Visual Studio“启动”窗口，选择“创建新项目”。
-1. 依次选择“ASP.NET Core Web 应用程序”和“下一步” 。
-1. 为新应用程序指定名称（或使用默认名称），并选择“创建”。
-1. 选择“Web 应用程序”。
+1. 依次选择“ASP.NET Core Web 应用”和“下一步” 。
+1. 为新应用程序指定名称（或使用默认名称），并选择“下一步”。
+1. 选择要作为目标的 .NET 版本。 如果你不确定具体版本，请选择长期支持 (LTS) 版本。
 1. 通过使用“为 HTTPS 配置”复选框，选择是否需要 SSL 支持。
 1. 勾选“启用 Docker 支持”复选框。
 1. 选择容器类型，然后单击“创建”。
@@ -65,13 +65,13 @@ ms.locfileid: "99859640"
 1. 在发布目标对话框中，选择“应用服务 Linux”或“应用服务” 。 这是将托管 Web 服务器的操作系统。
 1. 可以只发布到应用服务，也可以发布到应用服务和 Azure 容器注册表 (ACR)。 若要将容器发布到 Azure 容器注册表 (ACR)，请选择“为容器创建新的应用服务”，并单击“发布” 。
 
-   ![“发布”对话框的屏幕截图](media/deploy-app-service/publish-app-service-linux.PNG)
+   ![“发布”对话框的屏幕截图](media/deploy-app-service/publish-app-service-linux-1.png)
 
    若要在不使用 Azure 容器注册表的情况下仅发布到 Azure 应用服务，请选择“新建”，然后单击“发布” 。
 
 1. 检查是否已使用与 Azure 订阅相关联的帐户登录，并选择唯一名称、订阅、资源组、托管计划和容器注册表（如果适用），或接受默认值。
 
-   ![“发布”设置的屏幕截图](media/deploy-app-service/publish-app-service-linux2.png)
+   ![“发布”设置的屏幕截图](media/deploy-app-service/publish-app-service-linux-2.png)
 
 1. 选择“创建”。 容器将部署到 Azure 中你所选的资源组和容器注册表中。 此过程需要花费一些时间。 完成后，“发布”选项卡显示有关已发布内容的信息，包括网站 URL。
 

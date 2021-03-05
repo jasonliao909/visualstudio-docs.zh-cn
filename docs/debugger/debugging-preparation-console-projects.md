@@ -19,16 +19,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e39cb7df53a12b97d297ee739338c42a3201089f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66610eef4419b71cd41c8a7708b43b30bff4cc80
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872516"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683046"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备：控制台项目（C#、C++、Visual Basic、F#）
 
-准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项，例如设置命令行参数以及如何暂停应用进行调试。 有关详细信息，请参阅 [Windows 窗体应用程序](../debugger/debugging-preparation-windows-forms-applications.md)和[调试准备：Windows 窗体应用程序 (.NET)](/previous-versions/visualstudio/visual-studio-2010/sez9z95a(v=vs.100))。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：
+准备调试控制台项目类似于准备调试 Windows 项目，但是有一些额外的注意事项，例如设置命令行参数以及如何暂停应用进行调试。 有关详细信息，请参阅 [Windows 窗体应用的调试准备工作](../debugger/debugging-preparation-windows-forms-applications.md)。 由于所有控制台应用程序的相似性，本主题介绍以下项目类型：
 
 - C#、Visual Basic 和 F# 控制台应用程序
 

@@ -2,7 +2,7 @@
 title: 自定义窗口布局
 description: 了解如何自定义窗口的显示特征，以创建适合各种开发工作流的布局。
 ms.custom: SEO-VS-2020
-ms.date: 07/31/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.windows
@@ -25,12 +25,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f6983f9a4b16cc9ed6ece5779cfc44cd7ffa9259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd8859b98e54aa9692beaa98dd0f2c2ca70e2796
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910851"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682585"
 ---
 # <a name="customize-window-layouts-in-visual-studio"></a>在 Visual Studio 中自定义窗口布局
 
@@ -163,7 +163,17 @@ Visual Studio 使你可以保存最多 10 个自定义窗口布局，并在这�
 
 #### <a name="create-a-ui-project-and-customize-the-layout"></a>创建 UI 项目，自定义布局
 
+::: moniker range="vs-2017"
+
 1. 创建新的 C#“WPF 应用”项目。 假设在此项目中，你将开发一个用户界面。 你希望将设计器窗口的空间最大化，并将其他工具窗口移开。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 创建新的 C# WPF 应用程序项目。 假设在此项目中，你将开发一个用户界面。 你希望将设计器窗口的空间最大化，并将其他工具窗口移开。
+
+::: moniker-end
 
 2. 如果有多个监视器，可将“解决方案资源管理器”窗口和“属性”窗口拉到第二个监视器旁。 在单监视器系统中，尝试关闭除设计器以外的所有其他窗口。
 

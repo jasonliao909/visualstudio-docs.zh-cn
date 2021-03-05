@@ -2,7 +2,7 @@
 title: 使用 C# 和 WPF 生成 Hello World 应用
 description: 使用 C# 在 Visual Studio 中通过 Windows Presentation Foundation (WPF) UI 框架创建简单的 Windows Desktop .NET 应用。
 ms.custom: seodec18, get-started
-ms.date: 08/09/2019
+ms.date: 02/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4384a724b57de565e03637057e16fc26e8213e5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924885"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682884"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 
@@ -80,16 +80,17 @@ ms.locfileid: "99924885"
 
    ![查看“创建新项目”窗口](../../get-started/media/vs-2019/start-window-create-new-project.png "“创建新项目”窗口的屏幕截图")
 
-1. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF 应用(.NET Core)”，然后选择“下一步”  。
+1. 在“创建新项目”屏幕上，搜索“WPF”，选择“WPF 应用程序”，然后选择“下一步”  。
 
-   ![“创建新项目”对话框中的 WPF 应用模板](media/vs-2019/exploreide-newprojectcsharp-vs2019.png "“创建新项目”对话框中的 WPF 应用模板的屏幕截图")
+   :::image type="content" source="media/vs-2019/explore-ide-new-project-csharp-vs-2019.png" alt-text="“创建新项目”对话框中的 WPF 应用程序模板":::
 
-   > [!NOTE]
-   > 你可能会发现两个 WPF 桌面模板，一个用于 .NET Framework，另一个用于 .NET Core。 .NET Core 模板在 Visual Studio 2019 16.3 及更高版本中可用。 你可以在本教程中使用任何一个，但建议使用 .NET Core 进行新的开发。
+1. 在下一个屏幕中，为项目指定名称“HelloWPFApp”，然后选择“下一步”。
 
-1. 在下一个屏幕中，为项目指定名称“HelloWPFApp”，然后选择“创建”。
+   :::image type="content" source="./media/vs-2019/explore-ide-name-project.png" alt-text="将项目命名为“HelloWPFApp”":::
 
-   ![将项目命名为“HelloWPFApp”](./media/vs-2019/exploreide-nameproject.png "窗口屏幕截图，可在窗口中为项目命名")
+1. 在“附加信息”窗口中，应已为目标框架选择“.NET Core 3.1” 。 如果未选择，则请选择“.NET Core 3.1”。 然后，选择“创建”。
+
+   :::image type="content" source="./media/vs-2019/wpf-target-framework.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”":::
 
 ::: moniker-end
 

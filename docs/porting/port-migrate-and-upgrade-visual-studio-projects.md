@@ -1,7 +1,7 @@
 ---
 title: 移植、迁移和升级项目
 description: Visual Studio 的当前版本和早期版本中创建的项目的支持的参考。
-ms.date: 11/26/2019
+ms.date: 03/02/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.topic: conceptual
@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: 8182f8982734bd0089d483c9acefc230c9baaa91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85d85b378de527f1ddbfab52f4a66ae475ee766a
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901313"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683394"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的项目迁移和升级参考
 
@@ -132,7 +132,7 @@ Visual Studio 的每个新版本都支持大部分项目、文件和其他资产
 | 项目类型 | 支持 |
 | --- | --- |
 | .NET Core 项目 (xproj) | 使用 Visual Studio 2015 旧预览工具创建的项目，其中包括 xproj 项目文件。<br/><br/>Visual Studio 2017：不支持 xproj 格式，除非迁移到 csproj 格式。 当你打开 xproj 文件时，系统将提示你将文件迁移到 SDK 样式的 .csproj 格式。 （创建 xproj 文件的备份。）Visual Studio 2015 及更早版本不支持使用 SDK 样式的 .csproj 项目。 <br/><br/>Visual Studio 2019：在版本 16.3 和更高版本中，无法加载或迁移 xproj 项目。 有关详细信息，请参阅[将 .NET Core 项目迁移到 csproj 格式](/dotnet/core/migration/#visual-studio)。|
-| ASP.NET Web 应用程序和启用了 Application Insights 的 ASP.NET Core Web 应用程序 | 对于每个 Visual Studio 用户，资源信息存储在每个用户实例的注册表中。 用户在不打开项目，但想要搜索 Azure Application Insights 数据的情况下，可使用此信息。 Visual Studio 2015 使用与 Visual Studio 2017 和 Visual Studio 2019 不同的注册表位置，且未发生冲突。<br/><br/>用户创建 ASP.NET Web 应用程序或 ASP.NET Core Web 应用程序后，资源存储在 .suo 文件中。 用户可在 Visual Studio 2015、Visual Studio 2017 或者 Visual Studio 2019 中打开项目，只要 Visual Studio 支持每个版本中使用的项目和解决方案，资源信息就可用于这些版本。 用户需要在每个产品上进行一次身份验证。 例如，如果使用 Visual Studio 2017 创建项目，然后在 Visual Studio 2019 中打开，则用户需要在 Visual Studio 2019 上进行身份验证。 |
+| ASP.NET Web 应用和启用了 Application Insights 的 ASP.NET Core Web 应用 | 对于每个 Visual Studio 用户，资源信息存储在每个用户实例的注册表中。 用户在不打开项目，但想要搜索 Azure Application Insights 数据的情况下，可使用此信息。 Visual Studio 2015 使用与 Visual Studio 2017 和 Visual Studio 2019 不同的注册表位置，且未发生冲突。<br/><br/>用户创建 ASP.NET Web 应用程序、ASP.NET Core Web 应用或 ASP.NET Core Web 应用程序后，资源存储在 .suo 文件中。 用户可在 Visual Studio 2015、Visual Studio 2017 或者 Visual Studio 2019 中打开项目，只要 Visual Studio 支持每个版本中使用的项目和解决方案，资源信息就可用于这些版本。 用户需要在每个产品上进行一次身份验证。 例如，如果使用 Visual Studio 2017 创建项目，然后在 Visual Studio 2019 中打开，则用户需要在 Visual Studio 2019 上进行身份验证。 |
 | C#/Visual Basic Web 窗体或 Windows 窗体 | 可以在 Visual Studio 2019、Visual Studio 2017 和 Visual Studio 2015 中打开项目。 |
 | 编码的 UI 测试 | 在 Visual Studio 2019 中，已弃用自动 UI 驱动功能测试的编码的 UI 测试。 <br/><br/>Visual Studio 2019 将是编码的 UI 测试的最后一个版本。 建议使用 Selenium 来测试 Web 应用，使用 Appium 和 WinAppDriver 来测试桌面和 UWP 应用。 |
 | 数据库单元测试项目（csproj、.vbproj） | 较旧的数据单元测试项目在 Visual Studio 2019 中加载，但将使用 GAC 版本的依赖关系。 若要升级单元测试项目以使用最新的依赖关系，请在“解决方案资源管理器”中右键单击该项目，然后选择“转换为 SQL Server 单元测试项目...”。 |

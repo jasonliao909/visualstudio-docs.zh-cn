@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 4b1d250ed5306ce101fd7482b740ad57514e4f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d001e89993b90f6e8b7b33f43a5c06a1ffd7cd1
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899415"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683330"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 
@@ -126,9 +126,11 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后选择“控制台应用 (.NET Core)”或“控制台应用 (.NET ramework)”(C#)    。 在出现的对话框中，选择“创建”。
+    按 Esc 关闭启动窗口。 键入 Ctrl+Q 以打开搜索框，键入“控制台”，选择“模板”，然后对 .NET Core 选择“控制台应用”，或对 C# 选择“控制台应用(.NET Framework)”    。 在出现的对话框中，选择“下一步”。
 
-    然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“创建” 。
+    然后键入名称（如 Mixed_Mode_Calling_App），单击“下一步”或“创建”（视具体提供的选项而定）。
+
+    对于 .NET Core，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”或“控制台应用(.NET Core)”    。
@@ -136,7 +138,7 @@ Visual Studio 允许你在调试会话中启用多个调试器类型，这名为
     然后，键入名称（如“Mixed_Mode_Calling_App”）并单击“确定” 。
     ::: moniker-end
 
-    如果没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序  。 选择“.NET 桌面开发”工作负载，然后选择“修改” 。
+    如果没有看到正确的项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET Core 跨平台开发”或“.NET 桌面开发”工作负载（具体取决于你的目标框架），然后选择“修改”  。
 
     > [!NOTE]
     > 还可以将新的托管项目添加到现有 C++ 解决方案。 我们将在新的解决方案中创建项目，以提高混合模式调试任务的难度。

@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 01/10/2020
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: 93f9d5ba8bd84341e1b314c1fabca07690114e39
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 1dd5e237e99333e9c2fb9414b3d32ff19b70dd9b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729283"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684243"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "97729283"
 
 ## <a name="create-a-web-application-project"></a>创建 Web 应用程序项目
 
-在 Visual Studio 中，创建 ASP.NET Core web 应用程序项目，将其命名为 `WebFrontEnd`  。 选择“Web 应用程序”，以创建使用 Razor Pages 的 Web 应用程序  。 
+在 Visual Studio 中，创建一个名为 `WebFrontEnd` 的“ASP.NET Core Web 应用”项目，以使用 Razor Pages 创建 Web 应用程序。
   
 ::: moniker range="vs-2017"
 
@@ -46,11 +46,11 @@ ms.locfileid: "97729283"
 
 ::: moniker range="vs-2019"
 
-![ASP.NET Core Web 应用程序的“配置新项目”屏幕的屏幕截图，其中“项目名称”和“解决方案名称”字段设置为“WebFrontEnd”。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project1.png)
+![创建 ASP.NET Core Web 应用项目](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
 请不要选择“启用 Docker 支持”  。 稍后添加 Docker 支持。
 
-![“新建 ASP.NET Core Web 应用程序”屏幕的屏幕截图，其中选中了“Web 应用程序”。 未选择“启用 Docker 支持”选项。](./media/tutorial-multicontainer/vs-2019/new-aspnet-core-project.png)
+![创建 Web 项目时的“其他信息”屏幕的屏幕截图。 未选择“启用 Docker 支持”选项。](./media/tutorial-multicontainer/vs-2019/create-web-project-additional-information.png)
 
 ::: moniker-end
 
@@ -62,7 +62,7 @@ ms.locfileid: "97729283"
    ![创建 Web API 项目的屏幕截图](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
 ::: moniker range="vs-2019"
-   ![创建 Web API 项目的屏幕截图](./media/tutorial-multicontainer/vs-2019/web-api-project.png)
+   ![创建 Web API 项目的屏幕截图](./media/tutorial-multicontainer/vs-2019/create-web-api-project.png)
 ::: moniker-end
 
 ## <a name="add-code-to-call-the-web-api"></a>添加用于调用 Web API 的代码

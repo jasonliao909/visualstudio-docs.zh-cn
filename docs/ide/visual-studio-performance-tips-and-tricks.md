@@ -2,19 +2,19 @@
 title: 有关提高性能的提示
 description: 了解如何优化某些可能没有使用的 Visual Studio 功能，从而帮助提高性能。
 ms.custom: SEO-VS-2020
-ms.date: 12/14/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e53a2e3b1a65e496b4ead3d3bca0e8b0254c39e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e2187426fbd2e8892d41672c1cf682ed0b93592
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873861"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683769"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -142,6 +142,10 @@ Visual Studio 会自动重新打开上一个会话中处于打开状态的文档
 - **删除工作负载**
 
     可以使用 Visual Studio 安装程序删除不再使用的工作负载。 此操作可以跳过不再使用的包和程序集，从而优化启动和运行时的资源占用。
+
+- 将未跟踪的文件添加到本地 .gitignore
+
+    在将你新文件添加到存储库时，Visual Studio 对未跟踪的文件运行 Git 命令 `git status`，以提供无缝体验。 如果有大量未跟踪的文件，`git status` 会消耗额外的内存。 若要忽略这些文件并改善 `git status` 的性能，可以将这些文件或文件夹添加到你的本地 .gitignore 文件中。 若要访问该文件，请转到“Git” > “设置” >  “Git 存储库设置”  。 然后，在“Git 文件”部分中，单击“添加”以创建 .gitignore 文件，或者如果已有文件，则单击“编辑”。
 
 ## <a name="force-a-garbage-collection"></a>强制垃圾回收
 

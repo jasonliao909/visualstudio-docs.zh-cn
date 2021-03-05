@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c69fe13821f595a137c07d545a4ccfb10fc89b34
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904944"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684076"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>有助于编写更佳代码的调试技术和工具
 
@@ -42,22 +42,26 @@ ms.locfileid: "99904944"
 
 创建应用：
 
-1. 必须安装 Visual Studio；根据要创建的应用类型，还必须安装“.NET Core 跨平台开发”或“.NET 桌面开发”工作负载   。
+1. 必须安装 Visual Studio 和“.NET Core 跨平台开发”工作负载。
 
     如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
 
-    如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”   。 Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”或“.NET Core 桌面开发”工作负载，然后选择“修改”    。
+    如果需要安装工作负载但已安装 Visual Studio，请单击“工具” > “获取工具和功能”   。 Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
 
 1. 打开 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，然后选择“控制台应用(.NET Core)”或“控制台应用(.NET Framework)”    。 选择“下一步”  。 键入项目名称（如 Console_Parse_JSON），然后单击“创建”   。
+    在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，然后对 .NET Core 选择一个“控制台应用” 。 选择“下一步”。 键入项目名称（如 Console_Parse_JSON），然后单击“下一步”或“创建”（视具体提供的选项而定）。
+
+    对于 .NET Core，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+
+    如果没有看到 .NET Core 的“控制台应用”项目模板，请转到 “工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“控制台应用”，然后在中间窗格中选择“控制台应用(.NET Core)”或“控制台应用(.NET Framework)”      。 键入名称（如 Console_Parse_JSON），然后单击“确定”   。
-    ::: moniker-end
+    从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“控制台应用”，然后在中间窗格中选择“控制台应用(.NET Core)”   。 键入名称（如 Console_Parse_JSON），然后单击“确定”   。
 
-    如果没有看到“控制台应用(.NET Core)”或“控制台应用(.NET Framework)”项目模板，请转到“工具” > “获取工具和功能”，这会打开 Visual Studio 安装程序     。 选择“.NET Core 跨平台开发”或“.NET 桌面开发”工作负载，然后选择“修改”    。
+    如果没有看到“控制台应用(.NET Core)”项目模板，请转到 “工具” > “获取工具和功能”，这会打开 Visual Studio 安装程序。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
+    ::: moniker-end
 
     Visual Studio 创建控制台项目，该项目显示在右窗格的“解决方案资源管理器”中。
 

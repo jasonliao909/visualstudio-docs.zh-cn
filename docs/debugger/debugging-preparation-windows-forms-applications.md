@@ -21,15 +21,16 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f370fc0e3f97d53fb63bfdabb637edff90960442
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a59e454238bf362aec20916c6d1f6ed2e4ff187f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872395"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684147"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
-Windows 窗体项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关详细信息，请参阅[创建 Windows 应用程序项目](/previous-versions/visualstudio/visual-studio-2010/42wc9kk5(v=vs.100))。
+
+Windows 窗体应用项目模板创建 Windows 窗体应用程序。 在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中调试此类应用程序非常简单。 有关创建此类型的项目的信息，请参阅[创建 Windows 窗体应用](../ide/create-csharp-winform-visual-studio.md)。
 
  用项目模板创建 Windows 窗体项目时，[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将自动为调试和发布配置创建所需的设置。 必要时，可更改这些设置。 可以在“\<project name> 属性页”对话框（在 Visual Basic 中为“我的项目”）中更改这些设置 。
 

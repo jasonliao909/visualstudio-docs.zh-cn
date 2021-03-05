@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b4cb6cbdaee7e5bed6cb80cea1f431a6db4d286e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915041"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682684"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
@@ -89,16 +89,18 @@ ms.locfileid: "99915041"
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
-1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
+1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
 
-   应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板，然后选择“下一步”   。
+   应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用”模板，然后选择“下一步” 。
 
-   ![为“控制台应用(.NET Core)”选择 Visual Basic 模板](../visual-basic/media/vs-2019/get-started-create-console-project.png)
+   ![为“控制台应用”选择 Visual Basic 模板](../visual-basic/media/vs-2019/get-started-create-console-project.png)
 
    > [!NOTE]
-   > 如果未看到“控制台应用(.NET Core)”模板，则可以通过“创建新项目”窗口安装该模板   。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载  。
+   > 如果未看到“控制台应用”模板，则可以通过“创建新项目”窗口安装该模板   。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载  。
 
-1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“get-started-debugging”。 然后，选择“创建”  。
+1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“get-started-debugging”。 然后，选择“下一步”。
+
+1. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
 
    此时，Visual Studio 将打开新项目。
    

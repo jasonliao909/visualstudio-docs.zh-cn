@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 11/10/2020
+ms.date: 03/02/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,16 +15,16 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ccdd8ef7285ba0e5fa211b6b9f76fead5a2f3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960567"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684022"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-已针对[版本 16.8](/visualstudio/releases/2019/release-notes/) 进行更新
+已针对[版本 16.9](/visualstudio/releases/2019/release-notes/) 进行更新
 
 >[!div class="button"]
 >[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
@@ -245,8 +245,8 @@ Visual Studio 2019 中会默认安装此服务。
 * [Visual Studio 2019 for Mac 发行说明](/visualstudio/releasenotes/vs2019-mac-relnotes/)
 * [Visual Studio 2019 SDK 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)
 * [Visual Studio 中 C++ 的新增功能](/cpp/overview/what-s-new-for-visual-cpp-in-visual-studio/)
-* [C# 8.0 的新增功能](/dotnet/csharp/whats-new/csharp-8/)
-* [.NET Core 3.1 的新增功能](/dotnet/core/whats-new/dotnet-core-3-1/)
+* [C# 9.0 的新增功能](/dotnet/csharp/whats-new/csharp-9)
+* [.NET 5 的新变化](/dotnet/core/dotnet-five)
 * [.NET Framework 中的新增功能](/dotnet/framework/whats-new/)
 * [Microsoft Build 会议](https://www.microsoft.com/build)
 * [Microsoft Ignite 会议](https://www.microsoft.com/ignite)

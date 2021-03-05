@@ -2,7 +2,7 @@
 title: 教程：Visual Basic 入门
 description: 了解如何在 Visual Studio 中逐步创建 Visual Basic 控制台应用。
 ms.custom: seodec18, get-started
-ms.date: 09/11/2019
+ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: a08e955d8446ebcd376f81773b5996146241486e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915032"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682633"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -84,14 +84,14 @@ ms.locfileid: "99915032"
 
    ![查看“创建新项目”窗口](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
+1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。
 
-   应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板，然后选择“下一步” 。
+   应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
 
-   ![为“控制台应用(.NET Framework)”选择 Visual Basic 模板](./media/vs-2019/vb-create-new-project-search-console-net-core-filtered.png)
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="为“控制台应用程序”选择 Visual Basic 模板":::
 
    > [!NOTE]
-   > 如果未看到“控制台应用(.NET Core)”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
+   > 如果未看到“控制台应用程序”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
    > 
@@ -99,11 +99,15 @@ ms.locfileid: "99915032"
    >
    > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
-1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“创建”。
+1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“下一步”。
 
-   ![在“配置新项目”窗口中，将项目命名为“WhatIsYourName”](./media/vs-2019/vb-name-your-project-whatname.png)
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="在“配置新项目”窗口中，将项目命名为“WhatIsYourName”":::
+
+1. 在“附加信息”窗口中，应已为目标框架选择“.NET Core 3.1” 。 如果未选择，则请选择“.NET Core 3.1”。 然后，选择“创建”。
+
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”":::
 
    此时，Visual Studio 将打开新项目。
 
@@ -208,11 +212,13 @@ ms.locfileid: "99915032"
 
 1. 在“开始”窗口上，选择“创建新项目”。 
 
-1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
+1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。
 
-1. 应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板，然后选择“下一步” 。
+1. 应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
 
-   然后，在“配置新项目”窗口中，在“项目名称”框中键入或输入“CalculateThis”。 接下来，选择“创建”。
+   然后，在“配置新项目”窗口中，在“项目名称”框中键入或输入“CalculateThis”。 然后，选择“下一步”。
+
+1. 在“附加信息”窗口中，应已为目标框架选择“.NET Core 3.1” 。 如果未选择，则请选择“.NET Core 3.1”。 然后，选择“创建”。
 
 1. 在 `Module Program` 行和 `End Module` 行之间输入以下代码：
 
@@ -255,7 +261,7 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 
 ### <a name="what-is-a-console-app"></a>什么是控制台应用？
 
-控制台应用获取输入，在命令行窗口（也称为 控制台）中显示输出。
+控制台应用获取输入，在命令行窗口（也称为控制台）中显示输出。
 
 ### <a name="what-is-net-core"></a>.NET Core 是什么？
 
