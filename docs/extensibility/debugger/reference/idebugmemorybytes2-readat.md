@@ -1,4 +1,5 @@
 ---
+description: 读取从给定位置开始的字节序列。
 title: IDebugMemoryBytes2：： ReadAt |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81a6ce40457243e5492d5c6a44dd5d9dd590920f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f408e062fad4485fb159225e0639618d303e0806
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909933"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165158"
 ---
 # <a name="idebugmemorybytes2readat"></a>IDebugMemoryBytes2::ReadAt
 读取从给定位置开始的字节序列。
@@ -48,7 +49,7 @@ int ReadAt(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pStartContext`\
 中 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，指定开始读取字节的位置。
 

@@ -1,4 +1,5 @@
 ---
+description: 此接口由调试引擎发送 (将) 移出或移出函数后，将到会话调试管理器 (SDM) 。
 title: IDebugReturnValueEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bc76d7e7aaf9e443fc1dec08d83b3eb9e343e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0566453d5ce34f829f43fab465b4310942e44e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963050"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165834"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
 此接口由调试引擎发送 (将) 移出或移出函数后，将到会话调试管理器 (SDM) 。

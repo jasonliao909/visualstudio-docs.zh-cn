@@ -1,4 +1,5 @@
 ---
+description: 给定类型参数的数组，构造一个字段实例。
 title: IDebugGenericFieldDefinition：： ConstructInstantiation |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ab91340c0f9baf9a75e6e283d3c1158bdbea3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b43bf1ccc232c0b378a6e3bd3d788519e456da9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165483"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 给定类型参数的数组，构造一个字段实例。
@@ -42,7 +43,7 @@ int ConstructInstantiation(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `cArgs`\
 中数组中的参数数量 `ppArgs` 。
 

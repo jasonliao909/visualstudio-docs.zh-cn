@@ -1,4 +1,5 @@
 ---
+description: 当 DE 完成对截获事件的处理时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
 title: IDebugInterceptExceptionCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d98f8653d851eb338a96f969d73a2514b555f400
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93440facf13a230cd746400832afcb48971cd557
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165288"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
 当 DE 完成对截获事件的处理时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

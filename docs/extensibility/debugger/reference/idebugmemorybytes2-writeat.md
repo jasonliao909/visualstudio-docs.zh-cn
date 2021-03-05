@@ -1,4 +1,5 @@
 ---
+description: 写入从指定地址开始的指定字节数。
 title: IDebugMemoryBytes2：： WriteAt |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ff77985bca8772d92c3b90e7a727c0077137e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc1b5547290712f07cd51a935627182ddd12d31c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909899"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165145"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 写入从指定地址开始的指定字节数。
@@ -44,7 +45,7 @@ int WriteAt(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pStartContext`\
 中 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，指定开始写入字节的位置。
 

@@ -1,4 +1,5 @@
 ---
+description: 检索对调试模块的接口的引用。
 title: IDebugCodeContext3：： GetModule |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df4b3097407f007c6763eb512066e6154436306f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1870b5e4d678ab6718f7c0cc904009dac8977d67
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928674"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164066"
 ---
 # <a name="idebugcodecontext3getmodule"></a>IDebugCodeContext3::GetModule
 检索对调试模块的接口的引用。
@@ -37,7 +38,7 @@ public int GetModule(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppModule`\
 弄对调试模块接口的引用。
 

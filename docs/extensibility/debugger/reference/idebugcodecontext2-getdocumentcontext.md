@@ -1,4 +1,5 @@
 ---
+description: 获取与此代码上下文相对应的文档上下文。
 title: IDebugCodeContext2：： GetDocumentContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eaac527149d3224370f04d9dec46123b59568ac1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d99b67e76c8cc8719c77c88c8b93ca667c3a025a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928739"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164157"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 获取与此代码上下文相对应的文档上下文。 文档上下文表示源文件中的一个位置，该位置对应于生成此指令的源代码。
@@ -39,7 +40,7 @@ int GetDocumentContext(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppSrcCxt`\
 弄返回对应于代码上下文的 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象。 如果 `S_OK` 返回，则数列应为非 `null` 。
 

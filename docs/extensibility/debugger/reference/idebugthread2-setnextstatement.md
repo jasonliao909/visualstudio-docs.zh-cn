@@ -1,4 +1,5 @@
 ---
+description: 将当前指令指针设置为给定的代码上下文。
 title: IDebugThread2：： SetNextStatement |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c8a7aff8c6e902b20c5569e2553aececae835ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d29b351662ce5cb8aeda9a1f65e278349a0a3b18
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893706"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164469"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 将当前指令指针设置为给定的代码上下文。
@@ -41,7 +42,7 @@ int SetNextStatement (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pStackFrame`\
 保留以供将来使用;设置为 null 值。
 
@@ -51,7 +52,7 @@ int SetNextStatement (
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了其他可能的值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |E_CANNOT_SET_NEXT_STATEMENT_ON_NONLEAF_FRAME|下一条语句不能位于帧堆栈更深层的堆栈帧中。|
 |E_CANNOT_SETIP_TO_DIFFERENT_FUNCTION|下一条语句与堆栈中的任何帧都不关联。|

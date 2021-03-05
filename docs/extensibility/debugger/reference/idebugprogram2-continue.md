@@ -1,4 +1,5 @@
 ---
+description: IDebugProgram2：： Continue 继续从停止状态运行该程序。 任何以前的执行状态 (例如步骤) 会保留，程序将重新开始执行。
 title: IDebugProgram2：： Continue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07e48a59f044f8f3ccc94576210a51e7d70d9b66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f10d9266e8562d7ba1afed45b4b054f306bfbca
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912946"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164716"
 ---
 # <a name="idebugprogram2continue"></a>IDebugProgram2::Continue
 继续从停止状态运行该程序。 任何以前的执行状态 (例如步骤) 会保留，程序将重新开始执行。
@@ -42,7 +43,7 @@ int Continue(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pThread` 中表示线程的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象。
 
 ## <a name="return-value"></a>返回值
