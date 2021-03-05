@@ -1,4 +1,5 @@
 ---
+description: 此方法确定可视化工具是否可以具有其表示的数据对象进行更新。
 title: IEEVisualizerDataProvider：： CanSetObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b6f3b3ebf41ebd3fd4c04b0cb7451f57a41fa73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0a7f69ea57e14e7a1960712631f03a3becc8b80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890989"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222934"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
 此方法确定可视化工具是否可以具有其表示的数据对象进行更新。
@@ -39,7 +40,7 @@ int CanSetObjectForVisualizer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `b`\
 弄 `TRUE` 如果可更新可视化工具上的对象，则为非零 () ，如果不能，则为零 (`FALSE`) 。
 
@@ -49,5 +50,5 @@ int CanSetObjectForVisualizer(
 ## <a name="remarks"></a>备注
  例如，如果某个对象绑定到只读内存，则该对象可能无法更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

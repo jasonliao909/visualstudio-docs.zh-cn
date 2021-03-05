@@ -1,4 +1,5 @@
 ---
+description: 此方法将地址枚举重置为第一个元素。
 title: IEnumDebugAddresses：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a29620fe97079c865aa18d354a88cc6bd12e6893
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90ccbb3be28f676133756d5d07fcaca7e0aca3ec
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897097"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222661"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 此方法将枚举重置为第一个元素。
@@ -35,7 +36,7 @@ HRESULT Reset(void);
 int Reset();
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
  无
 
 ## <a name="return-value"></a>返回值
@@ -44,6 +45,6 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后，下 [一次调用将返回枚举](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) 的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
 - [下一页](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

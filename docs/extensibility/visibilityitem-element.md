@@ -13,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16615dfdbfd7e9762046e37899ecf23619837ae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fa4c2910a1f694a822d2a31b5ad537c8104f99c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926020"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221296"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素确定命令和工具栏的静态可见性。 每个条目标识一个命令或菜单，以及一个关联的命令 UI 上下文。 Visual Studio 会检测命令、菜单和工具栏及其可见性，而无需加载定义它们的 Vspackage。 IDE 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 方法来确定命令用户界面上下文是否处于活动状态。
@@ -33,8 +33,8 @@ ms.locfileid: "99926020"
 
 ```xml
 <VisibilityItem
-  guid ="="cmdGuidMyProductCommands"
-  id=="cmdidAddWidget"
+  guid="cmdGuidMyProductCommands"
+  id="cmdidAddWidget"
   context="guidNotViewSourceMode"/>
 ```
 
@@ -43,9 +43,9 @@ ms.locfileid: "99926020"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|描述|
 |---------------|-----------------|
-|guid|必需。 GUID/ID 命令标识符的 GUID。|
+|GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
 |上下文|必需。 命令在其中可见的 UI 上下文。|
 |条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
@@ -55,7 +55,7 @@ ms.locfileid: "99926020"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`元素确定命令组和工具栏的静态可见性。|
 
@@ -71,7 +71,7 @@ ms.locfileid: "99926020"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>
 - <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.BeforeQueryStatus>
 - <xref:Microsoft.VisualStudio.VSConstants>

@@ -1,4 +1,5 @@
 ---
+description: 此方法返回地址枚举中的元素数。
 title: IEnumDebugAddresses：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4a2d6fab85b392a517cc8275462bd8a01bb4316
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 092cba3ce0def2f416a4676e86df89bd56fd87e4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923075"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222674"
 ---
 # <a name="ienumdebugaddressesgetcount"></a>IEnumDebugAddresses::GetCount
 此方法返回枚举中的元素数。
@@ -39,7 +40,7 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcelt`\
 弄返回枚举中的元素数。
 
@@ -49,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>备注
  此方法不是习惯的 COM 枚举接口的一部分，它指定仅需实现下一个、克隆、跳过和重置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

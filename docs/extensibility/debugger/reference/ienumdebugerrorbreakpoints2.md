@@ -1,4 +1,5 @@
 ---
+description: 此接口枚举与挂起断点关联的错误断点。
 title: IEnumDebugErrorBreakpoints2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33ff6805537327b29b1d43b1bf4009b431452fc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d770f9613dad30d46f1788aeecb67997388eea75
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896979"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224910"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 此接口枚举与挂起断点关联的错误断点。
@@ -37,7 +38,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugErrorBreakpoints2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md)|检索枚举序列中指定数量的错误断点。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-skip.md)|跳过枚举序列中指定数量的错误断点。|
@@ -55,7 +56,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)

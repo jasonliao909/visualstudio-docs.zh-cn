@@ -1,4 +1,5 @@
 ---
+description: 给定要检查的目录列表，此函数确定哪些目录和 (可) 选择将文件存储在源代码管理中。
 title: SccPopulateDirList 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eac3973bf28a14340b720a51fc291b914822f3d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836912"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221504"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函数
 给定要检查的目录列表，此函数确定哪些目录和 (可) 选择将文件存储在源代码管理中。
@@ -35,7 +36,7 @@ SCCRTN SccPopulateDirList(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -63,7 +64,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功完成该操作”。|
 |SCC_E_UNKNOWNERROR|出现了错误。|
@@ -71,7 +72,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>备注
  仅在源代码管理存储库中实际具有的这些目录和 (（可选）) 文件名称将传递给回调函数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)

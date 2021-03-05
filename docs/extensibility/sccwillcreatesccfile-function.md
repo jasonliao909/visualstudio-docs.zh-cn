@@ -1,4 +1,5 @@
 ---
+description: 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
 title: SccWillCreateSccFile 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 50ef18e44579525df136bd770cda96124cb30c87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee01478858615aad135d07a5c10d5d6c58280926
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956862"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221283"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函数
 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
@@ -33,7 +34,7 @@ SCCRTN SccWillCreateSccFile(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -53,7 +54,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_E_INVALIDFILEPATH|数组中的某个路径无效。|
@@ -62,6 +63,6 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="remarks"></a>备注
  此函数使用文件列表进行调用，以确定源代码管理插件是否在 MSSCCPRJ.SCC 中提供支持。每个给定文件的 SCC 文件 (获取有关 MSSCCPRJ.SCC 的详细信息。SCC 文件，请参阅 [mssccprj.scc。SCC 文件](../extensibility/mssccprj-scc-file.md)) 。 源代码管理插件可以声明它们是否具有创建 MSSCCPRJ.SCC 的功能。SCC 文件 `SCC_CAP_SCCFILE` 在初始化期间声明。 该插件返回 `TRUE` `FALSE` 数组中的或每个文件 `pbSccFiles` ，以指示给定文件中的哪些 mssccprj.scc。SCC 支持。 如果插件从函数返回成功代码，则返回数组中的值。 失败时，将忽略数组。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [MSSCCPRJ.SCC 文件](../extensibility/mssccprj-scc-file.md)

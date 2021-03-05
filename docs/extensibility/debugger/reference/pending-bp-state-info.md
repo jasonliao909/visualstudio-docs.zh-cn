@@ -1,4 +1,5 @@
 ---
+description: 包含有关已准备好绑定到代码位置的断点状态的信息。
 title: PENDING_BP_STATE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7c1e2b8b537607f6dc57d807d276c5b72ccb144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edd4bbdde1c241d90329343be1fd5570129c675a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968562"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223922"
 ---
 # <a name="pending_bp_state_info"></a>PENDING_BP_STATE_INFO
 包含有关已准备好绑定到代码位置的断点状态的信息。
@@ -58,7 +59,7 @@ public struct PENDING_BP_STATE_INFO {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetState](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getstate.md)
 - [PENDING_BP_STATE](../../../extensibility/debugger/reference/pending-bp-state.md)

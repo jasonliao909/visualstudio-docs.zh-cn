@@ -1,4 +1,5 @@
 ---
+description: 此结构表示一个地址，该地址相对于此指针 (Visual Basic) 中。
 title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c19109215a9e8824f1648860c39ccb33836ca93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc3e72a536af25c3c62d953a0e5cfb75b5200c69
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879990"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223362"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 此结构表示与 `this` Visual Basic) 中 (的指针相关的地址 `Me` 。
@@ -63,6 +64,6 @@ public struct UNMANAGED_THIS_RELATIVE {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

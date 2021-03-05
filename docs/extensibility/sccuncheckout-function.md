@@ -1,4 +1,5 @@
 ---
+description: 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。
 title: SccUncheckout 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdcd8cd94914763d103a6232c4f87c3ec93f216
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836665"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221348"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。 自签出后对文件进行的所有更改都将丢失。
@@ -35,7 +36,7 @@ SCCRTN SccUncheckout (
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -63,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|撤消签出成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
@@ -77,5 +78,5 @@ SCCRTN SccUncheckout (
 ## <a name="remarks"></a>备注
  完成此操作后， `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 将为执行撤消签出的文件清除和标志。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

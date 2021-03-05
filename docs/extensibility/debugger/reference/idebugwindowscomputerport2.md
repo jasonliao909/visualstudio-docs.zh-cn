@@ -1,4 +1,5 @@
 ---
+description: 允许查询有关目标计算机的信息。
 title: IDebugWindowsComputerPort2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c90e63e8ea7b00ff7d342ef6b1a0e624779e13d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9c7e940c2284b5b39097226f9a5b0c3b34a0d18
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965598"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222947"
 ---
 # <a name="idebugwindowscomputerport2"></a>IDebugWindowsComputerPort2
 允许查询有关目标计算机的信息。
@@ -32,7 +33,7 @@ IDebugWindowsComputerPort2 : IUnknown
 ## <a name="methods"></a>方法
  下表显示的方法 `IDebugWindowsComputerPort2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)|检索有关正在运行调试器的计算机的信息。|
 

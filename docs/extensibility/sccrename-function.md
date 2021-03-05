@@ -1,4 +1,5 @@
 ---
+description: 此函数将重命名源代码管理系统中的文件。
 title: SccRename 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b4579644b04002ae9da3361ba35c63472eef637
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836743"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221335"
 ---
 # <a name="sccrename-function"></a>SccRename 函数
 此函数将重命名源代码管理系统中的文件。
@@ -33,7 +34,7 @@ SCCRTN SccRename(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|重命名操作已成功完成。|
 |SCC_E_PROJNOTOPEN|未在源代码管理下打开该项目。|
@@ -67,5 +68,5 @@ SCCRTN SccRename(
 ## <a name="remarks"></a>备注
  此函数可用于重命名文件，或将其从源控制系统中的一个位置移动到另一个位置。 源代码管理插件不应尝试访问磁盘上的文件。 重命名本地文件是 IDE 的责任。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

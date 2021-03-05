@@ -1,4 +1,5 @@
 ---
+description: Vstav3 命名空间的 entryPointsCollection 元素包含与 Office 解决方案关联的所有 s 元素。
 title: '&lt;&gt;Visual Studio 中的 entryPointsCollection 元素 (Office 开发) '
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6e7c7d7c32c538345adb246369b791cd6b2b41b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da689b71f50d43d60d78cf702a28eb5ba7ae0bb1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910424"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223597"
 ---
 # <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 entryPointsCollection 元素 (Office 开发) 
   `entryPointsCollection` 命名空间的 `vstav3` 元素包含所有与 Office 解决方案关联的 `entryPoints` 元素。
@@ -53,7 +54,7 @@ ms.locfileid: "99910424"
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示使用 `entryPointsCollection` 部署的文档级解决方案的应用程序清单中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
@@ -99,7 +100,7 @@ ms.locfileid: "99910424"
 
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示应用程序级解决方案的应用程序清单中的 `entryPointsCollection` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
@@ -121,7 +122,7 @@ ms.locfileid: "99910424"
 
 ## <a name="multi-project-deployment-example"></a>多项目部署示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示使用两个 Office 解决方案进行的多项目部署的应用程序清单中的 `entryPointsCollection` 元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码

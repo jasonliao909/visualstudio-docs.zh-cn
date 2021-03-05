@@ -1,4 +1,5 @@
 ---
+description: 此函数检索排队状态事件。
 title: SccGetEvents 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4502dd1cdf5cb23f317cd29bee74460c5911482c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 069e9399a91a39d8005d9137bd19f4032773b24a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965156"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220789"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函数
 此函数检索排队状态事件。
@@ -33,7 +34,7 @@ SCCRTN SccGetEvents (
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|“值”|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|获取事件成功。|
 |SCC_E_OPNOTSUPPORTED|不支持此函数。|
@@ -64,6 +65,6 @@ SCCRTN SccGetEvents (
 
  如果没有要报告的状态更新，则源代码管理插件会将空字符串存储在指向的缓冲区中 `lpFileName` 。 否则，该插件存储状态信息已更改的文件的完整路径名称，并 ([文件状态代码](../extensibility/file-status-code-enumerator.md)) 中详细说明的值之一返回相应的状态代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [文件状态代码](../extensibility/file-status-code-enumerator.md)

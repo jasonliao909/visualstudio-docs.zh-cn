@@ -1,4 +1,5 @@
 ---
+description: 此函数将新文件添加到源代码管理系统。
 title: SccAdd 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7fc3a2a6fbf362d58ddd1bfe25c905354d1ebdb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f654429f8c3faefe05a6410a3c732a6a4b1d083b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926854"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221718"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。
@@ -36,7 +37,7 @@ SCCRTN SccAdd(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -68,7 +69,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|添加操作成功。|
 |SCC_E_FILEALREADYEXISTS|所选文件已受源代码管理。|
@@ -100,5 +101,5 @@ SCCRTN SccAdd(
 |SCC_FILETYPE_UTF16LE|0x20|以 UTF16 小 Endian 格式将文件视为 Unicode 文本。|
 |SCC_FILETYPE_UTF16BE|0x40|将文件视为 UTF16 大 Endian 格式的 Unicode 文本。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

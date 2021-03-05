@@ -1,4 +1,5 @@
 ---
+description: 此方法将当前字段枚举的副本作为单独的对象返回。
 title: IEnumDebugFields：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2a9cc66e0e3b56d27c71147bd1b77ee3e559b6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965bc201646c7e068c58f9238dccba9a9e587d26
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896943"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224897"
 ---
 # <a name="ienumdebugfieldsclone"></a>IEnumDebugFields::Clone
 此方法将当前枚举的副本作为单独的对象返回。
@@ -39,7 +40,7 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄以单独的对象的形式返回此枚举的副本。
 
@@ -49,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

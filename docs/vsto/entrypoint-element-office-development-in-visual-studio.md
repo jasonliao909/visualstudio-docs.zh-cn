@@ -1,4 +1,5 @@
 ---
+description: Vstav3 命名空间的每个入口点元素都标识应在安装此 ClickOnce 应用程序时运行的自定义程序集。
 title: '&lt;入口点 &gt; 元素 (Visual Studio 中的 Office 开发) '
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a75729d4be4aa96c3c118fed126af3ff84c18bcb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 581274ea58dafa8021cb456a0c7cb1e6bf98da32
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910466"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223714"
 ---
 # <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点 &gt; 元素 (Visual Studio 中的 Office 开发) 
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。
@@ -41,7 +42,7 @@ ms.locfileid: "99910466"
 
  `entryPoint` 元素具有以下属性。
 
-|Attribute|说明|
+|属性|描述|
 |---------------|-----------------|
 |`class`|必需。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|
 
@@ -54,7 +55,7 @@ ms.locfileid: "99910466"
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示文档级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
@@ -96,7 +97,7 @@ ms.locfileid: "99910466"
 
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
