@@ -1,4 +1,5 @@
 ---
+description: 在给定要使用的最大字节数的情况中，检索文档校验和和算法标识符。
 title: IDebugDocumentChecksum2：： GetChecksumAndAlgorithmId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d74257e9f45e54e17d824ce32c353d1f57132462
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9a6b7e87e6b15b5f1560d3aed551d328362c49d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880809"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143150"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 在给定要使用的最大字节数的情况中，检索文档校验和和算法标识符。
@@ -44,7 +45,7 @@ public int GetChecksumAndAlgorithmId(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pRetVal`\
 弄校验和算法的唯一标识符。
 

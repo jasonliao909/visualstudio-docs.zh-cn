@@ -1,4 +1,5 @@
 ---
+description: 创建容器字段的枚举器。
 title: IDebugContainerField：： EnumFields |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4121ecf719ba8422f1ac8d4544a57e81aaf2efde
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68ec12cd97318fc41b97c5a7701dff2346524101
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928505"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143163"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 创建容器字段的枚举器。
@@ -47,7 +48,7 @@ int EnumFields(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwKindFilter`\
 中选择要枚举的字段 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 常量的组合。 字段类型可以描述存储类型，如类或基元，或特定的信息，例如本地、参数或 "this" 指针。
 

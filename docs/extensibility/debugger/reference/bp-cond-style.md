@@ -1,4 +1,5 @@
 ---
+description: 为挂起断点和绑定断点指定断点条件样式。
 title: BP_COND_STYLE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f98f02e7e756a744d8042a9955802165065d54d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c23549d1553902c00048f946d2711c497fbe2322
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862157"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144476"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
 为挂起断点和绑定断点指定断点条件样式。

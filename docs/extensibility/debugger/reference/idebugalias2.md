@@ -1,4 +1,5 @@
 ---
+description: 表示变量的数字别名，并使表达式计算器 (EE) 获取别名的应用程序域。
 title: IDebugAlias2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 171e9da3b25aa33ad3921f4ec5f841429490be72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f383e31f43e1e6422892547d66af533c2f4ab87f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944610"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143852"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]

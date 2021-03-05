@@ -1,4 +1,5 @@
 ---
+description: 此方法计算分析后的表达式，并选择性地将结果转换为另一种数据类型。
 title: IDebugParsedExpression：： EvaluateSync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ff14c10f5563053ce704982455eee6d9dc81b742
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99760fb35975834186beddf2962ea8402543d088
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953248"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143098"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 此方法计算分析后的表达式，并选择性地将结果转换为另一种数据类型。
@@ -51,7 +52,7 @@ int EvaluateSync(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwEvalFlags`\
 中用于控制如何计算表达式的 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 常量的组合。
 

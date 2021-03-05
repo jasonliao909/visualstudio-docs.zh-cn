@@ -1,4 +1,5 @@
 ---
+description: 此接口将符号字段（通常由符号提供程序返回）绑定到包含符号当前值的内存上下文或对象。
 title: IDebugBinder |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3cf4f418cf02f08f95d0192e99c0b02d0f74e3ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: febe22338ddeaf275b37ae09c76921c91ec509da
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925118"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143618"
 ---
 # <a name="idebugbinder"></a>IDebugBinder
 > [!IMPORTANT]

@@ -1,4 +1,5 @@
 ---
+description: 为在当前代码位置引发的所有断点创建一个枚举器。
 title: IDebugBreakpointEvent2：： EnumBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aaf3cac6d49ef2d09a9952ac41b2bb36262fbc7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bccb263fbdfebe1a83dab5f2ce5f570338b6d2e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143345"
 ---
 # <a name="idebugbreakpointevent2enumbreakpoints"></a>IDebugBreakpointEvent2::EnumBreakpoints
 为在当前代码位置引发的所有断点创建一个枚举器。
@@ -39,7 +40,7 @@ int EnumBreakpoints(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄返回一个 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象枚举与当前代码位置关联的所有断点。
 

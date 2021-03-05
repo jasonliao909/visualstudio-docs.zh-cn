@@ -1,4 +1,5 @@
 ---
+description: 当程序在断点处停止时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。
 title: IDebugBreakpointEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2076f4c98748d33542b4457f236711c38936aea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3ff9d1f83baeec275f285caa4aaca692e20958d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952299"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143332"
 ---
 # <a name="idebugbreakpointevent2"></a>IDebugBreakpointEvent2
 当程序在断点处停止时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。

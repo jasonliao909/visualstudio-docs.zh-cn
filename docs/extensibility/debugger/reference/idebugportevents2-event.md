@@ -1,4 +1,5 @@
 ---
+description: 此方法发送表示在端口上创建和销毁进程和程序的事件。
 title: IDebugPortEvents2：： Event |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcf8a827f09c1b8d0e83b92f7729635cbb0f7f18
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc975c2f48c560d0f15f08a6cc957c67ecc13808
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896170"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142903"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
 此方法发送表示在端口上创建和销毁进程和程序的事件。
@@ -49,7 +50,7 @@ int Event(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pMachine`\
 中表示 (调试服务器的 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 对象，该对象针对发生事件的) 的每个实例都有一个 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
