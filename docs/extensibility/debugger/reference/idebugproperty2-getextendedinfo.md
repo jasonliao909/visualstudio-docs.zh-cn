@@ -1,4 +1,5 @@
 ---
+description: 获取属性的扩展信息。
 title: IDebugProperty2：： GetExtendedInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bb9fe21b1dc004d5a124a1146e6f7610fbe8699
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 004c7d545dbaaa20016fd94febe999420305fc7a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916050"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171494"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取属性的扩展信息。
@@ -41,7 +42,7 @@ int GetExtendedInfo (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `guidExtendedInfo`\
 中确定要检索的扩展信息的类型的 GUID。 有关详细信息，请参阅“备注”。
 
@@ -56,7 +57,7 @@ int GetExtendedInfo (
 
  此方法通常会识别以下 Guid (为 c # 指定了 GUID 值，因为该名称在任何程序集) 中都不可用。 可以创建其他 Guid 供内部使用。
 
-|“属性”|GUID|描述|
+|名称|GUID|描述|
 |----------|----------|-----------------|
 |guidDocument|{3f98de84-fee9-11d0-b47f-00a0244a1dd2}|返回 `IUnknown` 文档的接口。 通常，可从此接口获取 [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md) 接口 `IUnknown` 。|
 |guidCodeContext|{e2fc65e-56ce-11d1-b528-00aax004a8797}|返回 `IUnknown` 文档上下文的接口。 通常，可从此接口获取 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 接口 `IUnknown` 。|

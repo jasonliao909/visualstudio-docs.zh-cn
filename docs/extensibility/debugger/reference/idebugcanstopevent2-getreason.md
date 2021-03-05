@@ -1,4 +1,5 @@
 ---
+description: 获取调试引擎 (DE) 要停止的原因。
 title: IDebugCanStopEvent2：： GetReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2aadf18dbf45f8b10791c69ed4f189c38491636d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66b783044b8342de26aec831d9d41f8bccd7df92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890287"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173519"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 获取调试引擎 (DE) 要停止的原因。
@@ -39,7 +40,7 @@ int GetReason(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcr`\
 弄返回 [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) 枚举中的一个值，该值描述此事件的原因。
 

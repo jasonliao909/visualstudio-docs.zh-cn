@@ -1,4 +1,5 @@
 ---
+description: 此接口表示堆栈帧属性、程序文档属性或其他属性。
 title: IDebugProperty2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c5cec0d93919058eae725a9e49198f1704d8bfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42cdd3f9e5fd1d92e007bb9a15cf9e1fa5e44e83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962192"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171447"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 此接口表示堆栈帧属性、程序文档属性或其他属性。 属性通常是表达式计算的结果。

@@ -1,4 +1,5 @@
 ---
+description: 调用此方法以显示指定的值。
 title: IDebugCustomViewer：:D isplayValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b754d9ebc7d8d8c1d21236faca5c5f331faa8e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 238bb4f9b453513f2fdcccb628eacdfc9ef4ae2b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173476"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 调用此方法以显示指定的值。
@@ -45,7 +46,7 @@ int DisplayValue(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `hwnd`\
 中父窗口
 

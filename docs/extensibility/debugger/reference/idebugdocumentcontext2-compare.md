@@ -1,4 +1,5 @@
 ---
+description: 将此文档上下文与给定的文档上下文数组进行比较。
 title: IDebugDocumentContext2：： Compare |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 959d909d0c777110905aff3b11c8c29d27d628dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a18a689a187e802b92485f092b10b7323d0f97c8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880757"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173012"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 将此文档上下文与给定的文档上下文数组进行比较。
@@ -45,7 +46,7 @@ int Compare(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `compare`\
 中 [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md) 枚举中的一个值，该值指定比较的类型。
 

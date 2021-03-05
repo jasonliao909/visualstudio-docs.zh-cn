@@ -1,4 +1,5 @@
 ---
+description: 此方法使程序可用于 (DEs) 和会话调试管理器的调试引擎。
 title: IDebugProgramPublisher2：:P ublishProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1d13154f172fdd92ea4a3d4c96321e884516a74c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2904376efa1a6798cbba967b93ad1c93d395b919
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959553"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171584"
 ---
 # <a name="idebugprogrampublisher2publishprogram"></a>IDebugProgramPublisher2::PublishProgram
 此方法使程序可用于 (DEs) 和会话调试管理器的调试引擎。
@@ -43,7 +44,7 @@ int PublishProgram(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `Engines`\
 中可以启动或附加到此程序的 DEs Guid 数组。
 

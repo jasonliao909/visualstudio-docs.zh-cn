@@ -1,4 +1,5 @@
 ---
+description: 将指定的消息字符串发送到调试器的 "输出" 窗口。
 title: IDebugIDECallback：:D isplayMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 74fc337137ac6ddd523e0584333865661abf3427
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7223d065df0bb77c2782ef7f66d14843a23f62
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838677"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172540"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
 将指定的消息字符串发送到调试器的 "输出" 窗口。
@@ -37,7 +38,7 @@ int DisplayMessage (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `szMessage`\
 中要在调试器的输出窗口中显示的消息字符串。
 

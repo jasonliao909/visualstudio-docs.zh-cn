@@ -1,4 +1,5 @@
 ---
+description: 通常使用 Visual Studio 安装程序项目扩展将应用程序打包为 MSI。
 title: Visual Studio 安装程序项目和 .NET Core 3。1
 titleSuffix: ''
 ms.date: 08/18/2020
@@ -12,12 +13,12 @@ manager: MSLukeWest
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 86680a2b961af9182691422e02b42c6529f45639
-ms.sourcegitcommit: 062615c058d2ff44751e8d0c704ccfa3c5543469
+ms.openlocfilehash: 5a78c1cf4f7b1562408e0a3fb598075f2c114fc0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "90852649"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171235"
 ---
 # <a name="visual-studio-installer-projects-extension-and-net-core-31"></a>Visual Studio 安装程序项目扩展和 NET Core 3.1
 
@@ -36,11 +37,11 @@ ms.locfileid: "90852649"
 
 ### <a name="workflow-changes-for-net-core-31"></a>.NET Core 3.1 的工作流更改
 
-1. 选择 " **发布项** 而不是 **主输出** "，以获取 .net Core 3.1 项目的正确输出。  若要打开此对话框，请**Add**  >  从项目的上下文菜单中选择 "添加**项目输出 ...** "。
+1. 选择 " **发布项** 而不是 **主输出** "，以获取 .net Core 3.1 项目的正确输出。  若要打开此对话框，请  >  从项目的上下文菜单中选择 "添加 **项目输出 ...** "。
 
     !["添加项目输出组" 对话框中的 "发布项" 输出组](../deployment/media/installer-projects-net-core-publish-items-output.png "选择发布项")
 
-2. 若要创建独立的安装程序，请在安装项目的 "**发布项**" 节点上设置**PublishProfilePath**属性，并使用具有正确属性集的发布配置文件的相对路径。
+2. 若要创建独立的安装程序，请在安装项目的 "**发布项**" 节点上设置 **PublishProfilePath** 属性，并使用具有正确属性集的发布配置文件的相对路径。
 
     ![在 "发布项" 项目输出项中设置发布配置文件](../deployment/media/installer-projects-net-core-publish-profile.png "设置发布配置文件")
 
@@ -55,7 +56,7 @@ ms.locfileid: "90852649"
 >[!NOTE]
 >Visual Studio 2019 Update 7 版本中提供了这些项。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)
-- [应用程序部署先决条件](../deployment/application-deployment-prerequisites.md)
+- [应用程序部署必备](../deployment/application-deployment-prerequisites.md)
