@@ -1,4 +1,5 @@
 ---
+description: 创建数组对象。
 title: IDebugFunctionObject：： CreateArrayObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44d60c2f0573bf60d827737b2a54ff16b49d610c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aee0617364321e5a18f0ea83ef7f19f1388209df
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929998"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166484"
 ---
 # <a name="idebugfunctionobjectcreatearrayobject"></a>IDebugFunctionObject::CreateArrayObject
 创建数组对象。 此数组可以包含基元或对象实例的值。
@@ -49,7 +50,7 @@ int CreateArrayObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ot`\
 中指定 [OBJECT_TYPE](../../../extensibility/debugger/reference/object-type.md) 枚举中的一个值，该值指示新数组对象的类型。
 

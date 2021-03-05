@@ -1,4 +1,5 @@
 ---
+description: 获取引用的父引用。
 title: IDebugReference2：： GetParent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c4ed767023fc8d1de65f75c8fb73e31004319024
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eee5015a304b3f4939c06664606a7d4aa8803f02
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909613"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165977"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 获取引用的父引用。 留待将来使用。
@@ -39,7 +40,7 @@ int GetParent (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppParent`\
 弄返回一个 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象，该对象表示此属性的父级。
 

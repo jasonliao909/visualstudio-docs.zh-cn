@@ -1,4 +1,5 @@
 ---
+description: 获取 (DE) 接口的自定义调试引擎。
 title: IDebugQueryEngine2：： GetEngineInterface |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ab1d9be5e4405cea3bb75d7837d4ff3ad9a91e9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbf727de01c8cbf34d645aff4e0a64aeb476ebbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909793"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167836"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
 获取 (DE) 接口的自定义调试引擎。
@@ -39,7 +40,7 @@ int GetEngineInterface(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppUnk`\
 弄返回一个 `IUnknown` 对象，该对象表示 (DE) 调试引擎，并可查询与 DE (相关联的任何其他有效接口，例如 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 或 [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)) 。
 

@@ -1,4 +1,5 @@
 ---
+description: IDebugFunctionObject2：：计算调用函数并将生成的值作为对象返回。
 title: IDebugFunctionObject2：：求值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b7d69434a6bd6aefb073a252ee35c07fccbee6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 777553e1889e751cf84f6e4c58691e0c5f446648
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920966"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166458"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
 调用函数并将生成的值作为对象返回。
@@ -45,7 +46,7 @@ int Evaluate (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppParams`\
 中表示输入参数的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组。 其中每个参数都是通过使用此接口中的某个 Create 方法创建的。
 

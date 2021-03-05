@@ -1,4 +1,5 @@
 ---
+description: 通知调试包文本已在文档中被替换。
 title: IDebugDocumentTextEvents2：： onReplaceText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 407bdffbe3a9fd60699692e2c2977159a3724bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14b90f0ca28447e9e987767026165b0ff615f88c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919957"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167264"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
 通知调试包文本已在文档中被替换。
@@ -41,7 +42,7 @@ int onReplaceText(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pos`\
 中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，指示文本的替换位置。
 

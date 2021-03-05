@@ -1,4 +1,5 @@
 ---
+description: 设置给定字符串的属性的值。
 title: IDebugProperty2：： SetValueAsString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 812bb7807a8b739d09cb15c6f03e58732fde20a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b86de71cd6df3e028697518de8c6faccad7e2336
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916026"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166718"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
 设置给定字符串的属性的值。
@@ -43,7 +44,7 @@ int SetValueAsString (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszValue`\
 中包含要设置的值的字符串。
 
@@ -56,7 +57,7 @@ int SetValueAsString (
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了其他可能的值。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|无法将该字符串转换为属性值，或者无法设置该属性的值。|
 |`E_SETVALUE_VALUE_IS_READONLY`|属性为只读属性。|

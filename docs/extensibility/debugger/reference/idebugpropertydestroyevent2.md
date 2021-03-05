@@ -1,4 +1,5 @@
 ---
+description: 当要销毁与特定文档关联的属性时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
 title: IDebugPropertyDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b09fb8c644adb5464519f0f30bd8deff0be821ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34f5a726d8d77a3d12f1d390f70f7bbc30a3abb4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167992"
 ---
 # <a name="idebugpropertydestroyevent2"></a>IDebugPropertyDestroyEvent2
 当要销毁与特定文档关联的属性时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

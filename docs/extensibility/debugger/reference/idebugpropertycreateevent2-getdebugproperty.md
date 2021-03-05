@@ -1,4 +1,5 @@
 ---
+description: 获取新属性。
 title: IDebugPropertyCreateEvent2：： GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c041a9dca28dfbd0b1138e45809143e87d0809db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c550f6e1b872c994738ebf1d66a771f88d39fbb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876064"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168057"
 ---
 # <a name="idebugpropertycreateevent2getdebugproperty"></a>IDebugPropertyCreateEvent2::GetDebugProperty
 获取新属性。
@@ -39,7 +40,7 @@ int GetDebugProperty (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppProperty`\
 弄返回一个 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示新的属性。
 

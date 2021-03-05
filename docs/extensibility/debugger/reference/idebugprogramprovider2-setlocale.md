@@ -1,4 +1,5 @@
 ---
+description: 确定要用于任何特定于区域设置的资源的区域设置。
 title: IDebugProgramProvider2：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a298ac5e99176294be8afe9dbba1f00bdea0a82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f23a6cc5b2724e925efcb9b7f4d6f272fc808121
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959683"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167004"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
 确定要用于任何特定于区域设置的资源的区域设置。
@@ -39,7 +40,7 @@ int SetLocale(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `wLangID`\
 中要建立的语言 ID。 例如，1033表示英语。
 

@@ -1,4 +1,5 @@
 ---
+description: " (DEs) 和会话调试管理器 (SDM) ，从可用性中删除指定的程序节点。"
 title: IDebugProgramPublisher2：： UnpublishProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69afe6dba5db73b2b2af80031612ada5b18ae0a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32c1384eadbf4e11a31534fccce21ab271000643
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916183"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166991"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
  (DEs) 和会话调试管理器 (SDM) ，从可用性中删除指定的程序节点。
@@ -39,7 +40,7 @@ int UnpublishProgramNode(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProgramNode`\
 中表示要删除的程序节点的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象。
 

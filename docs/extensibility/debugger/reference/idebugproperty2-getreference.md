@@ -1,4 +1,5 @@
 ---
+description: 返回对该属性值的引用。
 title: IDebugProperty2：： GetReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 270a8cc755318578f680e4266ca01e35dee20bb9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c103e8826266ddbaaa5b96f4a9aa32067893e45f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850889"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166782"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
 返回对该属性值的引用。
@@ -39,7 +40,7 @@ int GetReference(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppRererence`\
 弄返回一个 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象，该对象表示对属性值的引用。
 

@@ -1,4 +1,5 @@
 ---
+description: 获取文档的名称，格式为多个窗体中的一种。
 title: IDebugDocument2：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0609ef6d3cfea28f955815f5e7137d3e62d3e6af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b68fb60cb13d88941b21f6625e6cc0e38ceeda4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880796"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166536"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 获取文档的名称，格式为多个窗体中的一种。
@@ -41,7 +42,7 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `gnType`\
 中 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举中的一个值，该值确定要返回的名称的类型。
 

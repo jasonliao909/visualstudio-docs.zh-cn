@@ -1,4 +1,5 @@
 ---
+description: 将一个引用与另一个引用进行比较。
 title: IDebugReference2：： Compare |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6cebc34bdd1515ad632a0165fcdc900999b383fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef006cba574e0cc5f51d2ec45eb6187b1076543a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909732"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166002"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 将一个引用与另一个引用进行比较。 留待将来使用。
@@ -41,7 +42,7 @@ int Compare (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwCompare`\
 中 [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md) 枚举中的一个值，该值指定比较运算，例如等于、小于或大于。
 
