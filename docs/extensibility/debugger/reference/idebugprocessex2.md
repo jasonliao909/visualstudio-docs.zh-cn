@@ -1,4 +1,5 @@
 ---
+description: 此接口使会话调试管理器 (SDM) 通知它附加到进程或从进程分离的进程。
 title: IDebugProcessEx2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e8966be5c30bf2061fc1e03be6798279afbe8ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e91e61c2fc125829d3c9dacf942635021b8e3886
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900179"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149712"
 ---
 # <a name="idebugprocessex2"></a>IDebugProcessEx2
 此接口使会话调试管理器 (SDM) 通知它附加到进程或从进程分离的进程。

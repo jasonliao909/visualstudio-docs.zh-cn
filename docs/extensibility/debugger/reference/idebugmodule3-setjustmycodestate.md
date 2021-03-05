@@ -1,4 +1,5 @@
 ---
+description: 将模块标记为 "用户代码"。
 title: IDebugModule3：： SetJustMyCodeState |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c387f44f6e16717ee01d73d633d0cfa791e1325
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e4d1664c17ad9c822990ea8b3ef8c2bc0c3c664
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929714"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149870"
 ---
 # <a name="idebugmodule3setjustmycodestate"></a>IDebugModule3::SetJustMyCodeState
 将模块标记为 "用户代码"。
@@ -39,7 +40,7 @@ int SetJustMyCodeState(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `fIsUserCode`\
 中非零 (`TRUE`) 如果应将模块视为用户代码，则为零， (`FALSE`) 。
 

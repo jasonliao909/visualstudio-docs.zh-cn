@@ -1,4 +1,5 @@
 ---
+description: 枚举有效的值，该值指定要检索的有关断点请求的信息。
 title: BPREQI_FIELDS90 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7be8d52700315dfea5619a5d4e6ca875ada0139c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5405f728cf979738de5a830421c4306c5e398bb2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938235"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151079"
 ---
 # <a name="bpreqi_fields90"></a>BPREQI_FIELDS90
 枚举有效的值，该值指定要检索的有关断点请求的信息。 此枚举扩展 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 枚举。

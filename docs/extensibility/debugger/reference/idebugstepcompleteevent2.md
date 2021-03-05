@@ -1,4 +1,5 @@
 ---
+description: 当正在调试的程序完成单步执行、逐过程执行或跳出源代码或语句或指令行时，调试引擎会将此接口发送 (DE) 到会话调试管理器 (SDM) 。
 title: IDebugStepCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71e9089dc2f0e4f6eec78e904987fc1d865ed90f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f366b9eb1d9406ba5207016ca97ea40d1fd48529
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897217"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149530"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 当正在调试的程序完成单步执行、逐过程执行或跳出源代码或语句或指令行时，调试引擎会将此接口发送 (DE) 到会话调试管理器 (SDM) 。

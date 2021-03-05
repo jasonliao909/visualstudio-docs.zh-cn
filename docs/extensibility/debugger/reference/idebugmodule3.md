@@ -1,4 +1,5 @@
 ---
+description: 此接口表示支持符号和 JustMyCode 状态的备用位置的模块。
 title: IDebugModule3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa655c03665c9eed54feabc5af679765b09ac0a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ced8edcc97ad4ab8ff4db430cea57a2533cb30
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955512"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149869"
 ---
 # <a name="idebugmodule3"></a>IDebugModule3
 此接口表示支持符号和 JustMyCode 状态的备用位置的模块。

@@ -1,4 +1,5 @@
 ---
+description: 通过此接口，调用方可以确定端口供应商是否可以通过将端口写入) 在调试器调用之间 (保留端口，然后获取这些保留端口的列表。
 title: IDebugPortSupplier3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d45d8d93f26ef01fb184811a87b4f4fcc4483340
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8db7c2321d5a309f66b85a3f177e20cb3f9b1244
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840231"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150388"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
 通过此接口，调用方可以确定端口供应商是否可以通过将端口写入) 在调试器调用之间 (保留端口，然后获取这些保留端口的列表。

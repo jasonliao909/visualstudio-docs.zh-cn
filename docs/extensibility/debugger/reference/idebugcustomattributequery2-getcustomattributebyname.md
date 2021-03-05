@@ -1,4 +1,5 @@
 ---
+description: 给定自定义属性的名称，获取自定义属性字节。
 title: IDebugCustomAttributeQuery2：： GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8662e3c18f568e60ac98e5468acc3da28966505c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c65abff050af7b7c34161cbca2594431cb119b5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842441"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150076"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
 给定自定义属性的名称，获取自定义属性字节。
@@ -43,7 +44,7 @@ int GetCustomAttributeByName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszCustomAttributeName`\
 中一个字符串，其中包含要查找的自定义特性的名称。
 

@@ -1,4 +1,5 @@
 ---
+description: 返回对应于指定代码位置标识符的代码上下文对象。
 title: IDebugDisassemblyStream2：： GetCodeContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9bd0c78853a41c7efa7907fd1004277862721dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8662fdadfbd2c41d193ddced158a956cb8c6fc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928414"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150622"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 返回对应于指定代码位置标识符的代码上下文对象。
@@ -41,7 +42,7 @@ int GetCodeContext(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `uCodeLocationId`\
 中指定代码位置标识符。 有关代码位置标识符的说明，请参阅 [GetCodeLocationId](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcodelocationid.md) 方法的 "备注" 部分。
 
