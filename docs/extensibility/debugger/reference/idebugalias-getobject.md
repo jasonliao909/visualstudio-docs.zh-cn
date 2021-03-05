@@ -1,4 +1,5 @@
 ---
+description: 获取此别名所用于的对象。
 title: IDebugAlias：： GetObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ff5459903b5259d6005a4ebb01228117c2801db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10bcb0bb356907cb3f23b1c470248b9926f329ec
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944779"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143891"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 获取此别名所用于的对象。
@@ -39,7 +40,7 @@ int GetObject(
 )
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppObject`\
 弄此别名所表示的 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 。
 

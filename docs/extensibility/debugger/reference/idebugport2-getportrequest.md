@@ -1,4 +1,5 @@
 ---
+description: 获取以前用于创建端口 (（如果可用）) 的端口的说明。
 title: IDebugPort2：： GetPortRequest |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2694a0ee6e134a5f822c0f84284d96b7ce57ef93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 084e8bb94356ea4e2cff1fa83e83e7e08b35134e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907887"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142864"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 获取以前用于创建端口 (（如果可用）) 的端口的说明。
@@ -39,7 +40,7 @@ int GetPortRequest(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppRequest`\
 弄返回一个 [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md) 对象，该对象表示用于创建端口的请求。
 

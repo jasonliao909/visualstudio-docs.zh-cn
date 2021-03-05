@@ -1,4 +1,5 @@
 ---
+description: 此接口使会话调试管理器 (SDM) 控制端口上运行的程序和进程。
 title: IDebugPortEx2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2ff055f730d193b5294b98129e073a21428f8ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54da202e6bbaf08216b921afbde2e39f1da3a788
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142786"
 ---
 # <a name="idebugportex2"></a>IDebugPortEx2
 此接口使会话调试管理器 (SDM) 控制端口上运行的程序和进程。

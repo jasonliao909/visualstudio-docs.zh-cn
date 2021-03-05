@@ -1,4 +1,5 @@
 ---
+description: 取消注册可从运行该程序的端口进行调试的程序。
 title: IDebugPortNotify2：： RemoveProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 61ee3b8222ed85605958bc467822c495cb0b16e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90918aed8652328a8aa02edac3517ec524a6cfa0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919856"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142643"
 ---
 # <a name="idebugportnotify2removeprogramnode"></a>IDebugPortNotify2::RemoveProgramNode
 取消注册可从运行该程序的端口进行调试的程序。
@@ -39,7 +40,7 @@ int RemoveProgramNode(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProgramNode`\
 中表示要注销的程序的 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象。
 

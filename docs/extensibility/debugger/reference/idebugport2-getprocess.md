@@ -1,4 +1,5 @@
 ---
+description: 获取端口上运行的指定进程。
 title: IDebugPort2：： GetProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b31108b73707cdd45e4f38adf4417b60caf9270
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f3cf42e4f1316951ee50d110fe79b1191e4dc8e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918294"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102142851"
 ---
 # <a name="idebugport2getprocess"></a>IDebugPort2::GetProcess
 获取端口上运行的指定进程。
@@ -41,7 +42,7 @@ int GetProcess(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ProcessId`\
 中指定进程标识符的 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 结构。
 

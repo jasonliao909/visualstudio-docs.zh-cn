@@ -1,4 +1,5 @@
 ---
+description: 此方法获取用于创建函数参数的 IDebugFunctionObject 对象。
 title: IDebugBinder：： GetFunctionObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7128c97c60b5743ea9759a9449b82e4e909a686
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9868edafb18a129d119a818d9e51363d4964afa2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939027"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143644"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 此方法获取用于创建函数参数的 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象。
@@ -39,7 +40,7 @@ int GetFunctionObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppFunction`\
 弄返回用于创建函数参数的 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口。
 

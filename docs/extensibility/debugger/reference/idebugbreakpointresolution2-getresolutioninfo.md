@@ -1,4 +1,5 @@
 ---
+description: 获取描述此断点的断点解析信息。
 title: IDebugBreakpointResolution2：： GetResolutionInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e31bdd47297a532a2eba69513aef01554791690e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d6982053fc7fb723a2c1efe93c27d9ddf7f27a3d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881043"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143397"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 获取描述此断点的断点解析信息。
@@ -41,7 +42,7 @@ int GetResolutionInfo(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFields`\
 中 [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md) 枚举中的标志的组合，用于确定 `pBPResolutionInfo` 要填充参数的哪些字段。
 

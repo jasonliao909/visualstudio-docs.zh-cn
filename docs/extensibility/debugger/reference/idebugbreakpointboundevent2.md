@@ -1,4 +1,5 @@
 ---
+description: 此接口告诉会话调试管理器 (SDM) 挂起的断点已成功绑定到加载的程序。
 title: IDebugBreakpointBoundEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 149b3f4d474c0304fab26f9ff3f772440ae761ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3969010a59e66a8931c7f99d337b6f2ad373ccc4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948330"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143566"
 ---
 # <a name="idebugbreakpointboundevent2"></a>IDebugBreakpointBoundEvent2
 此接口告诉会话调试管理器 (SDM) 挂起的断点已成功绑定到加载的程序。

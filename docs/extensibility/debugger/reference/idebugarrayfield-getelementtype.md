@@ -1,4 +1,5 @@
 ---
+description: 获取数组中元素的类型。
 title: IDebugArrayField：： GetElementType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 44b49cbcd52137b31dd456c4cf45bb3fe8ead947
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9624a04ae70c8d29abd9b8af5b597b583efb7834
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944639"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102143839"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 获取数组中元素的类型。
@@ -39,7 +40,7 @@ int GetElementType(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppType`\
 弄返回一个 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象，该对象描述元素的类型。
 
