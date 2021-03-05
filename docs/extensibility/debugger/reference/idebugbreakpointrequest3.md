@@ -1,4 +1,5 @@
 ---
+description: IDebugBreakpointRequest3 接口表示创建和绑定任何类型的断点所需的信息。
 title: IDebugBreakpointRequest3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6e42111ca0c8b357a7f8841511cf935694a30b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 628a68cf6712e6863550d85a5f876afbe1b6bdb5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893056"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150739"
 ---
 # <a name="idebugbreakpointrequest3"></a>IDebugBreakpointRequest3
 此接口表示创建和绑定任何类型的断点所需的信息。 它是 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)的扩展。

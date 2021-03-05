@@ -1,4 +1,5 @@
 ---
+description: 检索有关指定调试地址处的方法的信息。
 title: IDebugSymbolProviderDirect：： GetMethodFromAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cbcab2126ffa61f4bfb71fbf21abff8ecc5d798
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dea6367280217f42238a56a56a6ce0e0e6f92b47
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909431"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149491"
 ---
 # <a name="idebugsymbolproviderdirectgetmethodfromaddress"></a>IDebugSymbolProviderDirect::GetMethodFromAddress
 检索有关指定调试地址处的方法的信息。
@@ -50,7 +51,7 @@ int GetMethodFromAddress(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pAddress`\
 中调试地址由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示。
 

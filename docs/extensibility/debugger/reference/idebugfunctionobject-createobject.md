@@ -1,4 +1,5 @@
 ---
+description: 使用构造函数创建对象。
 title: IDebugFunctionObject：： CreateObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6085e974f58346eba7b38e76e5588b34fc3ff2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8870910e01f2afa5bff6eac461d6e80f35e6a7e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929976"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150037"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
 使用构造函数创建对象。
@@ -45,7 +46,7 @@ int CreateObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pConstructor`\
 中一个 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象，表示要创建的对象的构造函数。
 

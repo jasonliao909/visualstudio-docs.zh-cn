@@ -1,4 +1,5 @@
 ---
+description: 此方法查询调试进程的指定属性值。
 title: IDebugProcessQueryProperties：： QueryProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b7a1bb22b163c06b24db57b15824b82243af4b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 215606f12eb14c4a4b8db8313356a363dea5247e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900162"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149608"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 此方法查询调试进程的指定属性值。
@@ -39,12 +40,12 @@ int QueryProperties(
    out object[ ]              rgtPropValues);
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中包含属性定义和属性值的数组的大小。
 
 `dwPropType`\
-中一个数组，其中包含查询属性的定义。 可能的值为：
+中一个数组，其中包含查询属性的定义。 可能的值包括：
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 

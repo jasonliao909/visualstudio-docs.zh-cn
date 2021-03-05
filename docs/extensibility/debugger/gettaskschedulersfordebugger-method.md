@@ -1,4 +1,5 @@
 ---
+description: 检索当前处于活动状态的所有 TaskScheduler 对象的数组。
 title: GetTaskSchedulersForDebugger 方法 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b9826681d2d322b1b240abb4062de007b564619
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f60ffa851e8b8821e3d07e1bfdd6e864104b5001
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921274"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150089"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 检索 <xref:System.Threading.Tasks.TaskScheduler> 当前处于活动状态的所有对象的数组。

@@ -1,4 +1,5 @@
 ---
+description: 此接口表示在端口上运行的进程。
 title: IDebugProcess2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd644a728f049cf8b94f22ef961464b8bfcb5816
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 131eacba321bac70c75b77faf33b18aae0135e55
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891067"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150258"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此接口表示在端口上运行的进程。 如果端口为本地端口，则 `IDebugProcess2` 通常表示本地计算机上的物理进程。

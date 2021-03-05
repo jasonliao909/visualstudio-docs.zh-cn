@@ -1,4 +1,5 @@
 ---
+description: 当加载或卸载模块时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
 title: IDebugModuleLoadEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0dbc1cda72aa868bc5bcf68215e4c3815f520d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59b5e9e7619434b9ff4d914fc7b955ebbab4ace2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929636"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149842"
 ---
 # <a name="idebugmoduleloadevent2"></a>IDebugModuleLoadEvent2
 当加载或卸载模块时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

@@ -1,4 +1,5 @@
 ---
+description: 指定要转储的程序状态 (如运行线程、堆栈帧和当前指令地址) 的数量。
 title: DUMPTYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99e7e5a9e092118eb40501e6f2ba3cc580cf7cc7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cef9f90c1f08dac742a6f01a4dd48f6bff76848b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953729"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102150973"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定要转储的程序状态 (如运行线程、堆栈帧和当前指令地址) 的数量。

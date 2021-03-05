@@ -1,4 +1,5 @@
 ---
+description: 继续从停止状态运行此进程。 任何以前的执行状态 (例如步骤) 会保留，该进程将再次开始执行。
 title: IDebugProcess3：： Continue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ac7109b9f92a4ed7eecf57095c44fc4208b9f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e003193a189017b9aeacf6a983756d219b10195
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891054"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149765"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 继续从停止状态运行此进程。 任何以前的执行状态 (例如步骤) 会保留，该进程将再次开始执行。
@@ -42,7 +43,7 @@ int Continue(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pThread`\
 中表示要继续的线程的 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 对象。
 
