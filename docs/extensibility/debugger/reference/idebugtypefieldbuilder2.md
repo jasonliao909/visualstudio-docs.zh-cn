@@ -1,4 +1,5 @@
 ---
+description: 扩展 IDebugTypeFieldBuilder，以便能够创建数组类型。
 title: IDebugTypeFieldBuilder2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 321004d1d0ef37597d477cff71435091a3123ccf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e73642024cb379e804559ba8dd55eb44722cf580
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965637"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222999"
 ---
 # <a name="idebugtypefieldbuilder2"></a>IDebugTypeFieldBuilder2
 扩展 **IDebugTypeFieldBuilder** ，以便能够创建数组类型。
@@ -32,7 +33,7 @@ IDebugTypeFieldBuilder2 : IDebugTypeFieldBuilder
 ## <a name="methods"></a>方法
  除了 [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md) 接口上的方法，此接口还实现以下方法：
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[CreateArrayOfType](../../../extensibility/debugger/reference/idebugtypefieldbuilder2-createarrayoftype.md)|创建指定类型和大小的数组。|
 

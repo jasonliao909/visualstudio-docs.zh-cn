@@ -1,4 +1,5 @@
 ---
+description: 此函数获取源代码管理下所选文件集的状态信息。
 title: SccQueryInfo 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2794e915efe35c2fee593d677ffd228c055a565a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 880cb2cf7db5c7a988d6549865de1864cb799e53
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836730"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221491"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
 此函数获取源代码管理下所选文件集的状态信息。
@@ -33,7 +34,7 @@ SCCRTN SccQueryInfo(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ SCCRTN SccQueryInfo(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询成功。|
 |SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由网络或争用问题引起的。 建议重试。|
@@ -75,6 +76,6 @@ SCCRTN SccQueryInfo(
 
 - 如果当前用户将文件签出到工作目录以外的目录， `SCC_STATUS_OUTBYUSER` 则会设置，但不会设置 `SCC_STATUS_CHECKEDOUT` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [文件状态代码](../extensibility/file-status-code-enumerator.md)

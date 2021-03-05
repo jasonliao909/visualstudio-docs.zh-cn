@@ -1,4 +1,5 @@
 ---
+description: 此函数从源控件中检索每个指定的文件，而无用户交互。
 title: SccBackgroundGet 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d081389124b8703958f82cb97fc877f9f812290
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df0866458f04081c82796767808194b292866a1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952117"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220919"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 此函数从源控件中检索每个指定的文件，而无用户交互。
@@ -34,7 +35,7 @@ SCCRTN SccBackgroundGet(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -61,7 +62,7 @@ SCCRTN SccBackgroundGet(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|“值”|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|操作已成功完成。|
 |SCC_E_BACKGROUNDGETINPROGRESS|正在进行后台检索 (仅当源代码管理插件不支持) 同时运行批处理操作时，才应返回此项。|
@@ -72,6 +73,6 @@ SCCRTN SccBackgroundGet(
 
  参数的使用与 `dwFlags` [SccGet](../extensibility/sccget-function.md)相同。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

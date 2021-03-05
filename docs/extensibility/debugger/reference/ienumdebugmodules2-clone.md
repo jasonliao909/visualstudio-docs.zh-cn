@@ -1,4 +1,5 @@
 ---
+description: 以单独的对象的形式返回当前模块枚举的副本。
 title: IEnumDebugModules2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f008cef55d45257ddd18dec69d6e72be8095ed57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699afcaabdf88ca8b2b6ea60b6ad06dfcb12e3bd
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932823"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224884"
 ---
 # <a name="ienumdebugmodules2clone"></a>IEnumDebugModules2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -39,7 +40,7 @@ int Clone(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄以单独的对象的形式返回此枚举的副本。
 
@@ -49,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

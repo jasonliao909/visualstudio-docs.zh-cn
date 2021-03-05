@@ -1,4 +1,5 @@
 ---
+description: 提供完全限定的文件名的列表后，此函数会将其签出到本地驱动器。
 title: SccCheckout 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4112190e145242da591fa3d8e4db7d054bd07466
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943135"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221622"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 提供完全限定的文件名的列表后，此函数会将其签出到本地驱动器。 注释适用于所有正在签出的文件。Comment 参数可以是一个 `null` 字符串。
@@ -36,7 +37,7 @@ SCCRTN SccCheckout (
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -68,7 +69,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功签出。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
@@ -80,6 +81,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|其他用户已在此文件上执行了独占签出。|
 |SCC_I_OPERATIONCANCELED|操作在完成前被取消。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的 Bitflags](../extensibility/bitflags-used-by-specific-commands.md)

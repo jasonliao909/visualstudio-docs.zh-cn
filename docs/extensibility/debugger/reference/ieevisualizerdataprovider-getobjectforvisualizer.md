@@ -1,4 +1,5 @@
 ---
+description: 此方法获取此可视化工具表示的对象。
 title: IEEVisualizerDataProvider：： GetObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7ac35b3bd3757e804840478c586100a3f56e656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec4cef6cf7a0715ee31ce5a88736581a0abd610b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890924"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222908"
 ---
 # <a name="ieevisualizerdataprovidergetobjectforvisualizer"></a>IEEVisualizerDataProvider::GetObjectForVisualizer
 此方法获取此可视化工具表示的对象。
@@ -39,7 +40,7 @@ int GetObjectForVisualizer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppObject`\
 弄此可视化工具表示的对象
 
@@ -49,7 +50,7 @@ int GetObjectForVisualizer(
 ## <a name="remarks"></a>备注
  `GetObjectForVisualizer` 允许返回对象的缓存版本。 如果调用方想确保对象是最新的，则会调用 [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

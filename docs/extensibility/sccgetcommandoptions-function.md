@@ -1,4 +1,5 @@
 ---
+description: 此函数提示用户输入给定命令的高级选项。
 title: SccGetCommandOptions 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1f465e6709932cd89794c5c0558d608fadd2a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965195"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220802"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 此函数提示用户输入给定命令的高级选项。
@@ -33,7 +34,7 @@ SCCRTN SccGetCommandOptions(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|“值”|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级选项。|
@@ -79,6 +80,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 > `SCC_COMMAND_OPTIONS`当 IDE 显示 "**选项**" 对话框时，使用该命令来设置控制集成工作方式的首选项。 如果源代码管理插件希望提供其自己的首选项对话框，它可以在 IDE 的 "首选项" 对话框中的 " **高级** " 按钮上显示。 该插件仅负责获取和保存此信息;IDE 不会使用或修改它。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [命令代码](../extensibility/command-code-enumerator.md)

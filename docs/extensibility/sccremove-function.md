@@ -1,4 +1,5 @@
 ---
+description: 此函数删除源代码管理系统中的文件。
 title: SccRemove 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67b0691c3f58ad859051f0018e7b32a5a4e087da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836704"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221413"
 ---
 # <a name="sccremove-function"></a>SccRemove 函数
 此函数删除源代码管理系统中的文件。
@@ -36,7 +37,7 @@ SCCRTN SccRemove(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -68,7 +69,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|删除成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不受源代码管理。|
@@ -82,5 +83,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>备注
  此函数会删除源代码管理系统中的文件，但不会将其从用户的本地硬盘上删除。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

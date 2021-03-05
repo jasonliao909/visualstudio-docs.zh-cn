@@ -1,4 +1,5 @@
 ---
+description: 此结构指定有关从 PDB 符号获取的字段类型的信息。
 title: PDB_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df6a41801f4cce272d896776745ac0cc507d0e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced96c1241c64abc764a052046e5ecab1a986bdc
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890014"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222128"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
@@ -67,7 +68,7 @@ public struct PDB_TYPE {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)

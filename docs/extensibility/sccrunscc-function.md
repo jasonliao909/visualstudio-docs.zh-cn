@@ -1,4 +1,5 @@
 ---
+description: 此函数调用源代码管理工具。
 title: SccRunScc 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10c04daf8ffea8266c874dfb0fb805e551942bc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836756"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221361"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函数
 此函数调用源代码管理工具。
@@ -33,7 +34,7 @@ SCCRTN SccRunScc(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功调用源代码管理工具。|
 |SCC_I_OPERATIONCANCELED|操作已取消。|
@@ -70,7 +71,7 @@ SCCRTN SccRunScc(
 
  当用户从 "**文件** 源控制" 菜单中 **选择 \<Source Control Server> 启动** 时，通常会调用此函数  ->   。 可以通过设置注册表项来始终禁用或甚至隐藏此 " **启动** " 菜单选项。 有关详细信息，请参阅 [如何：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 。 仅当 [SccInitialize](../extensibility/sccinitialize-function.md) 返回功能位时才会调用此函数 `SCC_CAP_RUNSCC` 。有关此功能位和其他功能位) 的详细信息，请参阅 [功能标志](../extensibility/capability-flags.md) (。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [如何：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [功能标志](../extensibility/capability-flags.md)

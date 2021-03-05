@@ -1,4 +1,5 @@
 ---
+description: 此函数确定指定项目的父项目路径。
 title: SccGetParentProjectPath 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 825586ed29152bddf0f5dd909f71f96c96db8624
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e624d8765da65dc6231c0128e87ffd9d6cdf848d
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958396"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220607"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函数
 此函数确定指定项目的父项目路径。 当用户将 Visual Studio 项目添加到源代码管理中时，将调用此函数。
@@ -35,7 +36,7 @@ SCCRTN SccGetParentProjectPath(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -63,7 +64,7 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功获取父项目路径。|
 |SCC_E_INITIALIZEFAILED|项目无法初始化。|
@@ -98,7 +99,7 @@ SCCRTN SccGetParentProjectPath(
 
  如果注册表项设置为 dword：00000001，则 Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理中的操作的工作方式与 Visual Studio 早期版本中的工作方式相同。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

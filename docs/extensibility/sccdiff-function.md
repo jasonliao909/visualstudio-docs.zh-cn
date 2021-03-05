@@ -1,4 +1,5 @@
 ---
+description: 此函数显示 (或选择性地检查) 本地磁盘) 上的当前文件 (与源代码管理系统中上次签入版本之间的差异。
 title: SccDiff 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff2b2d5e5a0043cde17fecd2d59c084d2958e32
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220841"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 此函数显示 (或选择性地检查) 本地磁盘) 上的当前文件 (与源代码管理系统中上次签入版本之间的差异。
@@ -34,7 +35,7 @@ SCCRTN SccDiff(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -58,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|工作副本和服务器版本是相同的。|
 |SCC_I_FILESDIFFERS|工作副本不同于源代码管理下的版本。|
@@ -87,5 +88,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|如果受支持，则通过校验和自动比较文件。 如果不支持，将回退到内容的比较。|
 |SCC_DIFF_QD_TIME|如果文件受支持，则以无提示方式对文件进行比较。 如果不支持，将回退到内容的比较。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
