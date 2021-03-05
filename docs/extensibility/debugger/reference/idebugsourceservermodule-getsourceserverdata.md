@@ -1,4 +1,5 @@
 ---
+description: 检索源服务器信息的数组。
 title: IDebugSourceServerModule：： GetSourceServerData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0a53da7b55258cd3708777a802bcd4625e8461b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2478c28d77f07084813c86cac194a241b26354b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956511"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168629"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 检索源服务器信息的数组。
@@ -39,7 +40,7 @@ public int GetSourceServerData(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pDataByteCount`\
 弄数据数组中的字节数。
 

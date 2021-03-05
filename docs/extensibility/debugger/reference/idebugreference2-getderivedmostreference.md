@@ -1,4 +1,5 @@
 ---
+description: 获取引用的派生程度最高的引用。
 title: IDebugReference2：： GetDerivedMostReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac8321bc571264d050f5f3559e840c3d169096d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1517b1be34b62defcd5f19792baa2ac6c343b85b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909683"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168971"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 获取引用的派生程度最高的引用。 留待将来使用。
@@ -39,7 +40,7 @@ int GetDerivedMostReference(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppDerivedMost`\
 弄返回表示最常派生的属性的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象。
 

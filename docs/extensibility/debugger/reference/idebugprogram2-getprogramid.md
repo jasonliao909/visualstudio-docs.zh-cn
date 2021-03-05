@@ -1,4 +1,5 @@
 ---
+description: 获取此程序的 GUID。
 title: IDebugProgram2：： GetProgramId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7723333547e0aeac7fe7a73c0dc40b36f4b6e071
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45721d4214c396f3366bd23c2bc48e74a1427ec8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890027"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168958"
 ---
 # <a name="idebugprogram2getprogramid"></a>IDebugProgram2::GetProgramId
 获取此程序的 GUID。
@@ -39,7 +40,7 @@ int GetProgramId(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pguidProgramId`\
 弄返回 `GUID` 此程序的。
 

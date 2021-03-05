@@ -1,4 +1,5 @@
 ---
+description: 确定进程是否可以终止。
 title: IDebugPortEx2：： CanTerminateProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a8a58b2fc328f5659736e2ceb399bda62dc90cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 11a850f844a77c0e137a7a6603ac14b31e7dc326
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891093"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169452"
 ---
 # <a name="idebugportex2canterminateprocess"></a>IDebugPortEx2::CanTerminateProcess
 确定进程是否可以终止。
@@ -39,7 +40,7 @@ HRESULT CanTerminateProcess(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pPortProcess`\
 中表示要终止的进程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
 

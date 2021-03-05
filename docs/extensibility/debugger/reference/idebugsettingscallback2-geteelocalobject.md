@@ -1,4 +1,5 @@
 ---
+description: 根据给定的指标名称检索表达式计算器本地对象。
 title: IDebugSettingsCallback2：： GetEELocalObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7fafd813a569c02af356fee9213ed4c1fdc8751e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72ff072cdb6c0431a7b04e644f71186c91763efa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875947"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168759"
 ---
 # <a name="idebugsettingscallback2geteelocalobject"></a>IDebugSettingsCallback2::GetEELocalObject
 根据给定的指标名称检索表达式计算器本地对象。
@@ -43,7 +44,7 @@ private int GetEELocalObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `guidLang`\
 中编程语言的唯一标识符。
 

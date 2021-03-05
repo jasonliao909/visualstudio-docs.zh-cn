@@ -1,4 +1,5 @@
 ---
+description: 切换此挂起断点的虚拟化状态。
 title: IDebugPendingBreakpoint2：：虚拟化 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 242caf91b8f25f8bea6ff9c17820ed84c5fc98f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ea6d6231a99f730969c44e7ced83cb48d0db4b4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869669"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169751"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 切换此挂起断点的虚拟化状态。 当挂起的断点虚拟化时，调试引擎将尝试在每次将新代码加载到程序时绑定该断点。
@@ -40,7 +41,7 @@ int Virtualize(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `fVirtualize`\
 中设置为非零 `TRUE` 值 () 以虚拟化挂起断点，或设置为零， (`FALSE`) 关闭虚拟化。
 

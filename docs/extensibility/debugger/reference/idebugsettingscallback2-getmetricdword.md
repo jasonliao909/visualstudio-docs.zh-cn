@@ -1,4 +1,5 @@
 ---
+description: 根据给定的名称检索度量值。
 title: IDebugSettingsCallback2：： GetMetricDword |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2c0db9bfd870921de151d5fb9eda2f2a06f50dc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c67dccee1c59856ef295aa4fd815f2eb6b4ae758
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875843"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168681"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 根据给定的名称检索度量值。
@@ -43,7 +44,7 @@ private int GetMetricDword(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszType`\
 中度量值的类型。
 

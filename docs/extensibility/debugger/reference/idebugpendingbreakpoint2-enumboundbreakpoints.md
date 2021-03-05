@@ -1,4 +1,5 @@
 ---
+description: 枚举从此挂起断点绑定的所有断点。
 title: IDebugPendingBreakpoint2：： EnumBoundBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b65e36552ccdf8bf30777f13761183eb38e6700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 198470afbf40f72b33c6163bcf4fe0eb19b956eb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99953092"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169907"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 枚举从此挂起断点绑定的所有断点。
@@ -40,7 +41,7 @@ int EnumBoundBreakpoints(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄返回一个 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象枚举绑定的断点。
 

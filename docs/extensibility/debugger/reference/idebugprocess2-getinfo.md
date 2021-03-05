@@ -1,4 +1,5 @@
 ---
+description: 获取进程的说明。
 title: IDebugProcess2：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf4b8d933729c95eaffa3a0caa44961bb5c87baa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6e6b8e0c14cee960d1991ae4f5a482f66e89465
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894915"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102169205"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 获取进程的说明。
@@ -41,7 +42,7 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `Fields`\
 中 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 枚举中的值的组合，用于指定 `pProcessInfo` 要填充参数的哪些字段。
 

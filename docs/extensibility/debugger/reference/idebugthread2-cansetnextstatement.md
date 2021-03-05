@@ -1,4 +1,5 @@
 ---
+description: 确定当前指令指针是否可以设置为给定的堆栈帧。
 title: IDebugThread2：： CanSetNextStatement |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ce1d04303edb34de98ead8d416221e7f71338ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b07eb23127abedc4e41af2795c3452401c3e670
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909282"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168382"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 确定当前指令指针是否可以设置为给定的堆栈帧。
@@ -41,7 +42,7 @@ int CanSetNextStatement (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pStackFrame`\
 保留以供将来使用;设置为 null 值。 如果这是空值，请使用当前堆栈帧。
 
