@@ -1,4 +1,5 @@
 ---
+description: 创建此类的嵌套枚举器的枚举数。
 title: IDebugClassField：： EnumNestedEnums |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9c283d4b07458368a4ea5f143dc83bf13453302
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9412d487dbb9617bb3bae91bd225473e67e2dfdc
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912009"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164235"
 ---
 # <a name="idebugclassfieldenumnestedenums"></a>IDebugClassField::EnumNestedEnums
 创建此类的嵌套枚举器的枚举数。
@@ -39,7 +40,7 @@ int EnumNestedEnums(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄返回表示嵌套枚举列表的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象。 如果没有嵌套枚举，则返回 null 值。
 

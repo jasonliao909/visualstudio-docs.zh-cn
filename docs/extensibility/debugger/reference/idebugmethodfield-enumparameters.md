@@ -1,4 +1,5 @@
 ---
+description: 为方法的参数创建枚举器。
 title: IDebugMethodField：： EnumParameters |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c164fa08f4195d685bf7dd2faa120ff030e44c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51b0ca4d799bc5943a1effd612947b5822730d37
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837718"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164989"
 ---
 # <a name="idebugmethodfieldenumparameters"></a>IDebugMethodField::EnumParameters
 为方法的参数创建枚举器。
@@ -39,7 +40,7 @@ int EnumParameters(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppParams`\
 弄返回表示方法的参数列表的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象;否则，如果没有参数，则返回 null 值。
 

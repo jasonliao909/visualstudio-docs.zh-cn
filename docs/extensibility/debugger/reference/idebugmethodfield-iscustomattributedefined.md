@@ -1,4 +1,5 @@
 ---
+description: 确定是否已定义了特定的自定义特性。
 title: IDebugMethodField：： IsCustomAttributeDefined |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63351a106497121c40fa7fb04d95b59494e4575e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c78e8fb22f78cdb97bd57ee67cfc20cd19f0bde
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164898"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 确定是否已定义了特定的自定义特性。
@@ -39,7 +40,7 @@ int IsCustomAttributeDefined(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pszCustomAttributeName`\
 中一个字符串，其中包含要查找的自定义特性的名称。
 

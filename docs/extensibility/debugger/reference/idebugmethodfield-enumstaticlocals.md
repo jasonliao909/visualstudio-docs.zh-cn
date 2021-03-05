@@ -1,4 +1,5 @@
 ---
+description: 创建方法的静态局部变量的枚举数。
 title: IDebugMethodField：： EnumStaticLocals |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3af65c60654fd23f88892522142548bf5db87a70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c31d8644bf918b57c1d97b2ee2ddbc840a33ff1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929792"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102164976"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
 创建方法的静态局部变量的枚举数。
@@ -39,7 +40,7 @@ int EnumStaticLocals(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppLocals`\
 弄返回一个 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象，该对象表示静态局部变量的列表。 如果没有静态局部变量，则返回 null 值。
 

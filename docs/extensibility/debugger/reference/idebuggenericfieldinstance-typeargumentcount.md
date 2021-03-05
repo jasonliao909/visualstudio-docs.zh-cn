@@ -1,4 +1,5 @@
 ---
+description: 返回此实例的类型参数参数的数目。
 title: IDebugGenericFieldInstance：： TypeArgumentCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b811780bf135a700f0ea451ef148598fe621e4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 034c180e41a2754347dd0eea7a81cb4ae64a0c2a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928349"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165353"
 ---
 # <a name="idebuggenericfieldinstancetypeargumentcount"></a>IDebugGenericFieldInstance::TypeArgumentCount
 返回此实例的类型参数参数的数目。
@@ -38,7 +39,7 @@ int TypeArgumentCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcArgs`\
 [in，out]此实例的类型参数参数的数目。
 

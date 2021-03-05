@@ -1,4 +1,5 @@
 ---
+description: 按比较标志所指示的方式，将内存上下文与给定数组中的每个上下文进行比较，并返回第一个匹配的上下文的索引。
 title: IDebugMemoryContext2：： Compare |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e54a2bf7cd37b411dbc2d18d23a3466a4b47ce0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f21b22574a780f5e9fcfa045c6786b13d82caa45
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851200"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165093"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 按比较标志所指示的方式，将内存上下文与给定数组中的每个上下文进行比较，并返回第一个匹配的上下文的索引。
@@ -46,7 +47,7 @@ int Compare(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `compare`\
 中 [CONTEXT_COMPARE](../../../extensibility/debugger/reference/context-compare.md) 枚举中的一个值，该值确定比较的类型。
 
