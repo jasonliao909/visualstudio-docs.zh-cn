@@ -3,16 +3,16 @@ title: Visual Studio Tools for Docker 与 ASP.NET
 author: ghogen
 description: 了解如何使用 Visual Studio 2019 工具和 Docker for Windows
 ms.author: ghogen
-ms.date: 02/01/2019
+ms.date: 02/22/2021
 ms.prod: visual-studio-dev16
 ms.technology: vs-azure
 ms.topic: include
-ms.openlocfilehash: fc549951e9c6b6d208c478f37126238e91f6f039
-ms.sourcegitcommit: 2c26d6e6f2a5c56ae5102cdded7b02f2d0fd686c
+ms.openlocfilehash: 3a2c0d9ac31857fb2389455b0262373414981c5b
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2020
-ms.locfileid: "88186332"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101750804"
 ---
 使用 Visual Studio，可以轻松地生成、调试和运行容器化的 .NET、ASP.NET 和 ASP.NET Core 应用并将其发布到 Azure 容器注册表 (ACR)、Docker Hub、Azure 应用服务或你自己的容器注册表。 本文介绍如何将 ASP.NET Core 应用发布到 ACR。
 
@@ -29,10 +29,10 @@ ms.locfileid: "88186332"
 
 ## <a name="add-a-project-to-a-docker-container"></a>向 Docker 容器添加项目
 
-1. 使用 ASP.NET Core Web 应用程序模板创建新项目，或如果要使用 .NET Framework 而不是 .NET Core，请选择 ASP.NET Web 应用程序 (.NET Framework)   。
-1. 选择“Web 应用程序”，确保已选择“启用 Docker 支持”复选框   。
+1. 使用“ASP.NET Core Web 应用”模板创建新项目，或如果要使用 .NET Framework 而不是 .NET Core，请选择“ASP.NET Web 应用程序(.NET Framework)” 。
+1. 在“其他信息”屏幕上，确保已选中“启用 Docker 支持”复选框 。
 
-   ![“启用 Docker 支持”复选框](../../media/container-tools/vs-2019/create-new-web-application.PNG)
+   ![“启用 Docker 支持”复选框](../../media/container-tools/vs-2019/webapp-additional-information-31-docker.png)
 
    屏幕截图显示 .NET Core；如果使用的是 .NET Framework，则略有不同。
 

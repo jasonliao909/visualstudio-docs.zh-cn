@@ -14,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7172ca8c5341dbaee59ae5b2635da9c5585793cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838729"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682602"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>项目和解决方案简介
 
@@ -189,9 +189,14 @@ ms.locfileid: "99838729"
 
 2. 在“添加新项目”对话框中，在顶部的搜索框输入文本“单元测试”，然后在“语言”下选择“C#”。
 
-3. 选择“MSTest 测试项目(.NET Core)”项目模板，然后选择“下一步” 。
+3. 对 .NET Core 选择“单元测试项目”项目模板，然后选择“下一步” 。
 
-4. 将项目命名为“QuickTest”，然后选择“创建” 。
+   > [!NOTE]
+   > 从 Visual Studio 2019 版本 16.9 开始，MSTest 项目模板名称已从“MSTest 单元测试项目(.NET Core)”更改为“单元测试项目”。 在此更新中更改了项目创建过程中的几个步骤。
+
+4. 将项目命名为“QuickTest”，然后选择“下一步” 。
+
+5. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
 
    第二个项目已添加到“解决方案资源管理器”，且编辑器中打开了名为 UnitTest1.cs 的文件。
 

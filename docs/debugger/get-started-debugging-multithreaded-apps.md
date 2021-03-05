@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28f9ab13cca4f1d31973f9526063eaa56574dcf4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc5232d616466ec5aa0916d5d1ad9e7bd5b1247c
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870514"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101684124"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序（C#、Visual Basic、C++）
 
@@ -46,14 +46,16 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
    在“开始”窗口上，选择“创建新项目”  。
 
-   在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。 
+   在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。 
 
-   应用语言和平台筛选器之后，选择“控制台应用(.NET Core)”模板（对于 C++，选择“控制台应用”模板），然后选择“下一步”  。
+   应用语言和平台筛选器之后，对 .NET Core 或 C++ 选择“控制台应用”模板，然后选择“下一步” 。
 
    > [!NOTE]
-   > 如果没有看到正确的模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
+   > 如果没有看到正确的模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序 。 选择“.NET Core 跨平台开发”或“C++ 桌面开发”工作负载，然后选择“修改”  。
 
-   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“创建”  。
+   在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“下一步”或“创建”，（视具体提供的选项而定）。
+
+   对于 .NET Core 项目，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5 ，然后选择“创建”。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
@@ -63,7 +65,7 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
    - 对于 Visual Basic 应用，在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”    。
    - 对于 C++ 应用，在“Visual C++”下，选择“Windows 桌面”，然后选择“Windows 控制台应用程序”。
 
-   如果没有看到“控制台应用(.NET Core)”项目模板，或者对于 C++，没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序   。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
+   如果没有看到“控制台应用(.NET Framework)”项目模板，或者对于 C++，没有看到“控制台应用”项目模板，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序   。 选择“.NET 桌面开发”或“使用 C++ 的桌面开发”工作负载，然后选择“修改”  。
 
    然后，键入名称（如 MyThreadWalkthroughApp），并单击“确定”。
 

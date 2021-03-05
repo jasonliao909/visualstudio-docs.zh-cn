@@ -2,19 +2,19 @@
 title: Work with multiple user accounts
 description: 了解如何将所有 Microsoft 帐户添加到 Visual Studio，以便可以从任何帐户访问资源，而无需单独登录到这些帐户。
 ms.custom: SEO-VS-2020
-ms.date: 11/16/2020
+ms.date: 03/02/2021
 ms.topic: conceptual
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 169415537460dae94ca844c426bb3770449161b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6740eb4c23d739f439103b2ecdd0e8882018204d
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960450"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683790"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 
@@ -65,7 +65,7 @@ Azure Active Directory (AAD) 支持 ASP.NET MVC web 应用中的最终用户单�
 
 ::: moniker range=">=vs-2019"
 
-要了解此操作，请创建一个新的“ASP.NET Core Web 应用程序”项目  。 在“创建新 ASP.NET Core Web 应用程序”页中，选择“Web 应用程序”模板，然后在“身份验证”下选择“更改”     。
+要了解此操作，请创建一个新的“ASP.NET Core Web 应用”项目。 在“创建新 ASP.NET Core Web 应用程序”页中，从下拉列表中选择“ASP.NET Core 3.1”，选择“Web 应用程序”模板，然后在“身份验证”下选择“更改”    。
 
 ::: moniker-end
 

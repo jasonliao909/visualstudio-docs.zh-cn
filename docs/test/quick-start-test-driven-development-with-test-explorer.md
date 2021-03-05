@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 56bfe2b00efc4af71ca562672ad01423778edecd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 294c99081668baa2ed19df00989ceac768979481
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943726"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101683955"
 ---
 # <a name="walkthrough-test-driven-development-using-test-explorer"></a>演练：通过测试资源管理器进行测试驱动开发
 
@@ -26,7 +26,11 @@ ms.locfileid: "99943726"
 
 1. 选择 C#“类库(.NET Standard)”项目。 此项目将包含我们要测试的代码。 将项目命名为 MyMath。
 
-2. 在同一解决方案中，添加一个新的“MSTest 测试项目(.NET Core)”项目。 将该测试项目命名为 MathTests。
+2. 在同一解决方案中，添加一个新的“MSTest 测试项目”。
+
+   从 Visual Studio 2019 版本 16.9 开始，MSTest 项目模板名称已从“MSTest 测试项目(.NET Core)”更改为“单元测试项目”。
+
+   将该测试项目命名为 MathTests。
 
    ![新建代码和测试项目](../test/media/test-driven-development-ide.png)
 

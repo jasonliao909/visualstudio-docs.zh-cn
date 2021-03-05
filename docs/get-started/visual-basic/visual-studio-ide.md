@@ -1,7 +1,7 @@
 ---
 title: 面向 Visual Basic 开发人员的概述
 description: 了解 Visual Basic 开发人员如何使用 Visual Basic 编辑、调试和生成代码以及如何发布应用。
-ms.date: 11/15/2018
+ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
 - get-started
@@ -14,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3d771fac2cf494e92cbc27fdbdca0b78af97b67e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
+ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944389"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101682947"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
@@ -200,13 +200,13 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker range="vs-2017"
 
-首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负载。工作负载是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负荷。工作负荷是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
+首先，请[下载 Visual Studio](https://visualstudio.microsoft.com/downloads) 并将其安装到你的系统上。 通过模块化安装程序，可以选择和安装工作负载。工作负载是你习惯使用的编程语言或平台所需的一些功能。 若要执行[创建程序](#create-a-program)所需的步骤，请务必在安装过程中选择“.NET Core 跨平台开发”工作负载。
 
 ::: moniker-end
 
@@ -230,9 +230,10 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker range=">=vs-2019"
 
-1. 打开 Visual Studio。 在“启动”窗口中，选择“继续但无需代码”。
+1. 打开 Visual Studio。 在“开始”窗口中，选择“继续但无需代码”。
 
-   ![Visual Studio 2019 中的“启动”窗口](media/vs-2019/continue-without-code.png)
+
+    :::image type="content" source="media/vs-2019/continue-without-code.png" alt-text="Visual Studio 2019 中“开始”窗口的屏幕截图，突出显示了“继续但无需代码”链接。":::
 
    IDE 将随即打开。
 
@@ -240,7 +241,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 2. 在菜单栏中，选择“工具” > “选项”，打开“选项”对话框  。
 
-3. 在“环境”   > “常规”  选项页上，将选择的“颜色主题”  更改为“深色”  ，然后选择“确定”  。
+3. 在“环境” > “常规”选项页上，将选择的“颜色主题”更改为“深色”，然后单击“确定”。
 
    ![将 Visual Studio 中的“颜色主题”更改为“深色”](media/change-color-theme.png)
 
@@ -264,13 +265,13 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 1. 在菜单栏上，选择“工具” > “导入和导出设置” 。
 
-2. 在“导入和导出设置向导”中，依次选择第一页上的“重置所有设置”和“下一步”。
+2. 在“导入和导出设置向导”中，选择第一页上的“重置所有设置”，然后单击“下一步”。
 
-3. 在“保存当前设置”页上，依次选择确定是否保存当前设置的选项和“下一步”。 （如果尚未自定义任何设置，请选择“不，只重置设置，同时覆盖我的当前设置”。）
+3. 在“保存当前设置”页上，选择确定是否保存当前设置的选项，然后单击“下一步”。 （如果尚未自定义任何设置，请选择“不，只重置设置，同时覆盖我的当前设置”。）
 
-4. 在“选择默认设置集合”页上，依次选择“Visual Basic”和“完成”。
+4. 在“选择默认设置集合”页上，选择“Visual Basic”，然后单击“完成”。
 
-5. 在“重置完成”页上，选择“关闭”。
+5. 在“重置完成”页上，单击“关闭”。
 
 若要了解有关 IDE 个性化设置的其他方法，请参阅[个性化设置 Visual Studio](../../ide/personalizing-the-visual-studio-ide.md)。
 
@@ -344,21 +345,25 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker range=">=vs-2019"
 
-1. 在 Visual Studio 菜单栏上，依次选择“文件”“新建项目” > 。
+1. 在 Visual Studio 菜单栏上，选择“文件” > “新建” > “项目”。 （或者，按 Ctrl+**Shift**+N。）
 
-   ![菜单栏上的“文件”>“新建项目”](media/vs-2019/file-new-project.png)
+    :::image type="content" source="media/vs-2019/file-new-project.png" alt-text="Visual Studio 2019 菜单栏中“文件”>“新建”>“项目选择”的屏幕截图。":::
 
    随即打开“创建新项目”窗口，并显示几个项目模板。 模板包含给定项目类型所需的基本文件和设置。
 
-1. 若要查找所需的模板，请在搜索框中键入或输入“.Net Core 控制台”。 系统会自动根据输入的关键字筛选可用模板列表。 可以通过从“语言”下拉列表选择“Visual Basic”进一步筛选模板结果。
+1. 若要查找所需的模板，请在搜索框中键入或输入“.Net Core 控制台”。 系统会自动根据输入的关键字筛选可用模板列表。 可以通过从“所有语言”下拉列表中选择“Visual Basic”、从“所有平台”列表中选择“Windows”以及从“所有项目类型”列表中选择“控制台”进一步筛选模板结果。
 
-1. 选择“控制台应用 (.NET Core)”模板，然后选择“下一步”。
+   选择“控制台应用程序”模板，然后单击“下一步” 。
 
-   ![在 Visual Studio 中创建新项目](media/vs-2019/create-new-project.png)
+    :::image type="content" source="media/vs-2019/create-new-project.png" alt-text="Visual Studio 2019 中“创建新项目”窗口的屏幕截图，你可以在该窗口中选择所需的模板。":::
 
-1. 在“配置新项目”窗口中，在“项目名称”框中输入“HelloWorld”，根据需要更改项目文件的目录位置，然后选择“创建”。
+1. 在“配置新项目”窗口中，在“项目名称”框中输入“HelloWorld”，可以选择更改项目文件的目录位置（默认位置为 `C:\Users\<name>\source\repos`），然后单击“下一步”。
 
-   ![在 Visual Studio 中配置新项目](media/vs-2019/configure-new-project.png)
+    :::image type="content" source="media/vs-2019/configure-new-project.png" alt-text="Visual Studio 2019 中“配置新项目”窗口的屏幕截图，你可在该窗口中输入项目的名称。":::
+
+1. 在“附加信息”窗口中，验证“目标框架”下拉菜单中是否显示“.NET Core 3.1”，然后单击“创建”。
+
+    :::image type="content" source="media/vs-2019/create-project-additional-info.png" alt-text="Visual Studio 2019 中“附加信息”窗口的屏幕截图，你可在该窗口中选择所需的 .NET Core Framework 版本。":::
 
    Visual Studio 随即创建项目。 它是简单的“Hello World”应用程序，可调用 <xref:System.Console.WriteLine?displayProperty=nameWithType> 方法在控制台窗口中 显示文本字符串“Hello World!”。
 
