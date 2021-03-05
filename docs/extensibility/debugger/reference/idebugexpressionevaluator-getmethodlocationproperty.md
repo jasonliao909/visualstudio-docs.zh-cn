@@ -1,4 +1,5 @@
 ---
+description: 此方法将方法位置和偏移量转换为内存地址。
 title: IDebugExpressionEvaluator：： GetMethodLocationProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13759bc8598c4739fbb9d2263dd8dc7d1b84c16e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f841f602064b21035ea409457c708f99ec25bf12
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930416"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152515"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 此方法将方法位置和偏移量转换为内存地址。
@@ -47,7 +48,7 @@ int GetMethodLocationProperty(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `upstrFullyQualifiedMethodPlusOffset`\
 中表示为字符串的方法位置和偏移量。
 

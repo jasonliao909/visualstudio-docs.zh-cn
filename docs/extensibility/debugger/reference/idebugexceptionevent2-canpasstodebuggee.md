@@ -1,4 +1,5 @@
 ---
+description: 确定调试引擎 (DE) 是否支持将此异常传递给执行恢复时正在调试的程序的选项。
 title: IDebugExceptionEvent2：： CanPassToDebuggee |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 498b928d7e04fc97ec076cb67722b7947686c3a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b56996a5fa7cbf3c08842b783aa2d5dfc1131b8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933292"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152879"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 确定调试引擎 (DE) 是否支持将此异常传递给执行恢复时正在调试的程序的选项。

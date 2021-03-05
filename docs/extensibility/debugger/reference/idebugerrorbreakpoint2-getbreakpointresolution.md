@@ -1,4 +1,5 @@
 ---
+description: 获取描述错误的断点错误解析。
 title: IDebugErrorBreakpoint2：： GetBreakpointResolution |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6ea97ac854712fde4e808069d7b27e261e9f246
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6d7aea0c0ff9cbacf4085203a8908d30628bacf
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888415"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153178"
 ---
 # <a name="idebugerrorbreakpoint2getbreakpointresolution"></a>IDebugErrorBreakpoint2::GetBreakpointResolution
 获取描述错误的断点错误解析。
@@ -39,7 +40,7 @@ int GetBreakpointResolution(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppErrorResolution`\
 弄返回描述错误的 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 对象。
 

@@ -1,4 +1,5 @@
 ---
+description: 返回可调试此程序的所有可能的调试引擎 (DE) 的 Guid。
 title: IDebugProgramEngines2：： EnumPossibleEngines |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aa404f713a8982177cb28c48ddc83f332e5c5e56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5719728637f26ed61283578565470b39fc60455
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899001"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151579"
 ---
 # <a name="idebugprogramengines2enumpossibleengines"></a>IDebugProgramEngines2::EnumPossibleEngines
 返回可调试此程序的所有可能的调试引擎 (DE) 的 Guid。
@@ -43,7 +44,7 @@ int EnumPossibleEngines(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celtBuffer`\
 中要返回的已释放 Guid 的数目。 这还指定数组的最大大小 `rgguidEngines` 。
 

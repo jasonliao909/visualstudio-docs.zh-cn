@@ -1,4 +1,5 @@
 ---
+description: 检索指定的扩展字段类型。
 title: IDebugExtendedField：： GetExtendedKind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f431278997dcc02ecc60cd6bd4e8b9171d88dfb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 334ed7f44c4b4c119a204af17a00b8329410d05e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915552"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152125"
 ---
 # <a name="idebugextendedfieldgetextendedkind"></a>IDebugExtendedField::GetExtendedKind
 检索指定的扩展字段类型。
@@ -38,7 +39,7 @@ int GetExtendedKind(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwKind`\
 [in，out]定义字段种类的 [FIELD_KIND_EX](../../../extensibility/debugger/reference/field-kind-ex.md) 枚举中的值。
 

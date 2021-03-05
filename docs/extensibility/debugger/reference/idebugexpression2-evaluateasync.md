@@ -1,4 +1,5 @@
 ---
+description: 此方法以异步方式计算表达式。
 title: IDebugExpression2：： EvaluateAsync |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8af09c2db00b1f24631418c5332811cf4cb9202c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b01289c792e887c096d0a9068bac55b21a3a503
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916267"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152684"
 ---
 # <a name="idebugexpression2evaluateasync"></a>IDebugExpression2::EvaluateAsync
 此方法以异步方式计算表达式。
@@ -41,7 +42,7 @@ int EvaluateAsync(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFlags`\
 中用于控制表达式计算的 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举中的标志的组合。
 

@@ -1,4 +1,5 @@
 ---
+description: 返回允许构造用户可读错误消息的信息。
 title: IDebugErrorEvent2：： GetErrorMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d5fcb5f1f43aa9be16a1b2fe00bdec4eb3dd6014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f7933441eff3754b90385cfe62dc1314c2d1cb4
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888350"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153009"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 返回允许构造用户可读错误消息的信息。
@@ -49,7 +50,7 @@ int GetErrorMessage(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pMessageType`\
 弄从 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 枚举返回一个值，用于描述消息的类型。
 

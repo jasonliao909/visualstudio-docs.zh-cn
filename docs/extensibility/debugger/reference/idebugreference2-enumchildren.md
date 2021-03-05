@@ -1,4 +1,5 @@
 ---
+description: 获取引用的选定子级的列表。
 title: IDebugReference2：： EnumChildren |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d142f6c3715e2c3888c7ce60f349c50e84f7f16b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1481e58dd36e330bf9c4cff1644629bd93de55ac
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909696"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151371"
 ---
 # <a name="idebugreference2enumchildren"></a>IDebugReference2::EnumChildren
 获取引用的选定子级的列表。 留待将来使用。
@@ -49,7 +50,7 @@ int EnumChildren (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFields`\
 中 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 枚举中的标志的组合，用于指定要在枚举的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构中填充的字段。
 

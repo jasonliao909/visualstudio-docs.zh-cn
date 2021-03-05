@@ -1,4 +1,5 @@
 ---
+description: 获取此调试事件的特性。
 title: IDebugEvent2：： GetAttributes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64f4b404938143e5b1531798b1cded7ac6218de6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a7402c2b5a367a3a0a681a9a17ef89872a7b3e96
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888272"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152970"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 获取此调试事件的特性。
@@ -39,7 +40,7 @@ int GetAttribute(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwAttrib`\
 弄 [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md) 枚举中的标志的组合。
 
