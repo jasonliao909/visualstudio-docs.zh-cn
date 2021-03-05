@@ -1,4 +1,5 @@
 ---
+description: 获取承载此程序的进程正在其上运行的计算机的名称。
 title: IDebugProgramHost2：： GetHostMachineName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 575481951ffb662452d5cb6635f91bfb11ea6432
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ba8a2598af54f700ec85f3e3856b29166f2613
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898755"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145243"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
 获取承载此程序的进程正在其上运行的计算机的名称。
@@ -39,7 +40,7 @@ int GetHostMachineName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pbstrHostMachineName`\
 弄返回计算机的名称。
 

@@ -1,4 +1,5 @@
 ---
+description: 获取端口供应商名称。
 title: IDebugPortSupplier2：： GetPortSupplierName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 181197e99e33be7ac07514ad1a67dac72335a374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 780dd6c3974f407c753131183e4ac6e9562ed5dd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840374"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145407"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 获取端口供应商名称。
@@ -39,7 +40,7 @@ int GetPortSupplierName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pbstrName`\
 弄返回端口供应商的名称。
 

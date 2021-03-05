@@ -1,4 +1,5 @@
 ---
+description: 本文介绍了 System.runtime.compilerservices. AsyncTaskMethodBuilder 类的内部成员。
 title: AsyncTaskMethodBuilder 结构 - 内部成员
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -13,12 +14,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 604f86311e2689d4301fec8a186e2a102d633062
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 241b4f3aae50ac70afc8320b637535035ee427e2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888428"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145685"
 ---
 # <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 结构-内部成员
 本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 参考主题。
@@ -39,7 +40,7 @@ ms.locfileid: "99888428"
 
 ## <a name="internal-members"></a>内部成员
 
-|“属性”|说明|
+|名称|说明|
 |----------|-----------------|
 |[ObjectIdForDebugger 属性](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
 |[m_builder 字段](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|表示此非泛型实例委托的泛型生成器对象。|

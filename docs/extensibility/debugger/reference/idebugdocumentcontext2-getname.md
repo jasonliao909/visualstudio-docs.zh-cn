@@ -1,4 +1,5 @@
 ---
+description: 获取包含此文档上下文的文档的可显示名称。
 title: IDebugDocumentContext2：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b7619f15e995aeb8d70897d74686a0e79d2532da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4e75cd6b963965a245055ff8fa0849e39339af1
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947042"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146205"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 获取包含此文档上下文的文档的可显示名称。
@@ -41,7 +42,7 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `gnType`\
 中一个来自 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举的值，该值指定要返回的名称的类型。
 

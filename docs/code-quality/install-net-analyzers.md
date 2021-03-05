@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b41615e1826987cb42076ab3195fe7bfad235e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 368fd5bc9c8b7e2659c86b6e3dc69a609da37617
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867888"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102144658"
 ---
 # <a name="enable-or-install-first-party-net-analyzers"></a>启用或安装第一方 .NET 分析器
 
@@ -26,7 +26,7 @@ ms.locfileid: "99867888"
 
 可以通过以下方式之一启用或安装第一方 .NET 分析器：
 
-- **从 .NET Sdk 启用：从** Visual Studio 2019 16.8 和 .Net 5.0 开始， [.net sdk 随附](/dotnet/fundamentals/code-analysis/overview)了这些分析器。 默认情况下，对于面向 .NET 5.0 或更高版本的项目，分析处于启用状态。 通过将属性设置为，可以对面向早期 .NET 版本的项目启用代码分析 `EnableNETAnalyzers` `true` 。 你还可以通过将设置为来对你的项目禁用代码分析 `EnableNETAnalyzers` `false` 。
+- **从 .NET Sdk 启用：从** Visual Studio 2019 16.8 和 .Net 5.0 开始， [.net sdk 随附](/dotnet/fundamentals/code-analysis/overview)了这些分析器。 默认情况下，对于面向 .NET 5.0 或更高版本的项目，分析处于启用状态。 通过将 MSBUILD [EnableNETAnalyzers](/dotnet/core/project-sdk/msbuild-props#enablenetanalyzers) 属性设置为，可以对面向早期 .net 版本的项目启用代码分析 `true` 。 你还可以通过将设置为来对你的项目禁用代码分析 `EnableNETAnalyzers` `false` 。
 
 - **以 NuGet 包的形式安装**：如果不想移到 .net 5 + SDK，或者想要使用基于 NuGet 包的模型，则可以在 `Microsoft.CodeAnalysis.NetAnalyzers` Visual Studio 2019 上的 [NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers) 中使用该分析器。  对于按需版本更新，你可能更倾向于使用基于包的模型。 如果你在 Visual Studio 2017 上，请改为安装最新 `2.9.x` 版本的 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers/) 。
 

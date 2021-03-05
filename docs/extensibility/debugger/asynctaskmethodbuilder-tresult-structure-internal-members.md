@@ -1,4 +1,5 @@
 ---
+description: 本主题介绍 System.runtime.compilerservices. AsyncTaskMethodBuilder 类的内部成员。
 title: AsyncTaskMethodBuilder &lt; TResult &gt; 结构-内部成员 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +12,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41cb409495b28b7dc2bc796859da413a32b90d85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35e1ca4d19727383bdd7c957bc59fd6b6568c9f5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921633"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145646"
 ---
 # <a name="asynctaskmethodbuilderlttresultgt-structure---internal-members"></a>AsyncTaskMethodBuilder &lt; TResult &gt; 结构-内部成员
 本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601> 参考主题。
@@ -37,7 +38,7 @@ ms.locfileid: "99921633"
 
 ## <a name="internal-members"></a>内部成员
 
-|“属性”|说明|
+|名称|说明|
 |----------|-----------------|
 |[ObjectIdForDebugger 属性](../../extensibility/debugger/asynctaskmethodbuilder-tresult-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
 |[m_task 字段](../../extensibility/debugger/asynctaskmethodbuilder-tresult-m-task-field.md)|表示延迟初始化的生成任务。|
