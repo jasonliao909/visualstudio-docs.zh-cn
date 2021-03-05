@@ -1,4 +1,5 @@
 ---
+description: 此方法从程序检索别名列表。
 title: IDebugBinder3：： GetAllAliases |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea8de97a82959b1135866988aeeeb14cf464e8b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16a9d41280a9ff97072390a0cd2e687ee24e1d83
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925071"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102174042"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 此方法从程序检索别名列表。
@@ -43,7 +44,7 @@ int GetAllAliases(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `uRequest`\
 中要返回的别名的最大数目 (指定传入) 的数组的长度 `ppAliases` 。
 

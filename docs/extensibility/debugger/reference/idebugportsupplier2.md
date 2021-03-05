@@ -1,4 +1,5 @@
 ---
+description: 此接口向会话调试管理器 (SDM) 提供端口。
 title: IDebugPortSupplier2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf9cd3cb82e2b14811a8ec52a651248e2990ae27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9523212ea83182e69e83b4f8353f1a9ba7dd8c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840361"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102172034"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 此接口向会话调试管理器 (SDM) 提供端口。
@@ -32,7 +33,7 @@ IDebugPortSupplier2 : IUnknown
 自定义端口供应商实现此接口来表示端口供应商。
 
 ## <a name="notes-for-callers"></a>调用方说明
-`CoCreateInstance`使用端口供应商的调用 `GUID` 返回此接口 (这是获取此接口) 的典型方式。 例如： 。
+`CoCreateInstance`使用端口供应商的调用 `GUID` 返回此接口 (这是获取此接口) 的典型方式。 例如：
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)

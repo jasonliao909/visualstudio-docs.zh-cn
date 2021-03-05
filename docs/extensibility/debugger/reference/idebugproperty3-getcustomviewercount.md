@@ -1,4 +1,5 @@
 ---
+description: 获取可用于此属性的自定义查看器的数目。
 title: IDebugProperty3：： GetCustomViewerCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffdca7e4a556a72c8fb7f3f533e69d47fa289732
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58ad7ffc1b3250f5002f9f08208c464d14a2cc15
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896085"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171391"
 ---
 # <a name="idebugproperty3getcustomviewercount"></a>IDebugProperty3::GetCustomViewerCount
 获取可用于此属性的自定义查看器的数目。
@@ -39,7 +40,7 @@ int GetCustomViewerCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcelt`\
 弄可用于此属性的自定义查看器的数目。
 

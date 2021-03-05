@@ -1,4 +1,5 @@
 ---
+description: 此方法返回与此对象关联的参数类型的数目。
 title: IDebugBinder3：： GetTypeArgumentCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79f134d48e61aeee536d584dda2b4c0a7254e0a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3118d7e0fc4f493013a9a328cda0682fcc0707aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840491"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102173999"
 ---
 # <a name="idebugbinder3gettypeargumentcount"></a>IDebugBinder3::GetTypeArgumentCount
 此方法返回与此对象关联的参数类型的数目。
@@ -39,7 +40,7 @@ int GetTypeArgumentCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `uCount`\
 弄与此对象关联的参数类型的数目。
 
