@@ -1,4 +1,5 @@
 ---
+description: 给定 ICorDebugModule 对象，从数据流加载调试符号。
 title: IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af48a3b42bf559595714c9af8116c112579a4012
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29ae5004869a6146e3a8bb22f2569d1cc4cd758f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954899"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163351"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 给定 **ICorDebugModule** 对象，从数据流加载调试符号。
@@ -50,7 +51,7 @@ int LoadSymbolsFromStreamWithCorModule(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ulAppDomainID`\
 中应用程序域的标识符。
 

@@ -1,4 +1,5 @@
 ---
+description: 确定指定调试器地址处的代码是否处于隐藏状态。
 title: IDebugComPlusSymbolProvider：： IsHiddenCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3791feff0b02bf3555b9fa973fdba90b5f5f6d6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de0343e5af864044a7feaff2b0aa47ee6eef8826
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911127"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163637"
 ---
 # <a name="idebugcomplussymbolproviderishiddencode"></a>IDebugComPlusSymbolProvider::IsHiddenCode
 确定指定调试器地址处的代码是否处于隐藏状态。
@@ -37,7 +38,7 @@ int IsHiddenCode(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pAddress`\
 中由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示的调试地址。
 

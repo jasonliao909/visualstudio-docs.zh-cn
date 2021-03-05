@@ -1,4 +1,5 @@
 ---
+description: 此方法获取描述此断点请求的断点请求信息。
 title: IDebugBreakpointRequest3：： GetRequestInfo2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a11a317b4f14d94670a454a97be321b3097cffeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0d62b684fd171857870f59b2f3eec2e034cab11
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852981"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162324"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 此方法获取描述此断点请求的断点请求信息。
@@ -41,7 +42,7 @@ int GetRequestInfo2(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwFields`\
 中 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 枚举中的标志的组合，用于确定 `pBPRequestInfo` 要填写的字段。
 

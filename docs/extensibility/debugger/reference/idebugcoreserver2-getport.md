@@ -1,4 +1,5 @@
 ---
+description: 检索特定端口。
 title: IDebugCoreServer2：： GetPort |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d8368ccc159fb31941f975c36d165cd943fb113
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 481474ac56bdd77d63d6eeb256fac9ab356cc1aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929961"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163195"
 ---
 # <a name="idebugcoreserver2getport"></a>IDebugCoreServer2::GetPort
 检索特定端口。
@@ -41,7 +42,7 @@ int GetPort(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `guidPort`\
 中要检索的端口的 GUID。
 

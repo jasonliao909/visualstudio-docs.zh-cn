@@ -1,4 +1,5 @@
 ---
+description: 获取包含文档位置的源文件的文件名。
 title: IDebugDocumentPosition2：： GetFileName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fde4f0eea0d873a22bde5771bfce9afa247e524f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bf6eb084c8122c940e49a006a09aa53e12cd8a8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946873"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162753"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 获取包含文档位置的源文件的文件名。
@@ -39,7 +40,7 @@ int GetFileName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pbstrFileName`\
 弄返回源文件的文件名。
 

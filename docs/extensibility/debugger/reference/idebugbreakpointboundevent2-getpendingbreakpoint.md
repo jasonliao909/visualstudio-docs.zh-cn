@@ -1,4 +1,5 @@
 ---
+description: 获取要绑定的挂起断点。
 title: IDebugBreakpointBoundEvent2：： GetPendingBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8dfa6b79863c11d81a5ee36b47497a17e78a3be1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e629549405a86a44ef982f5b9ffd5212c2c1db8
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952312"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102162376"
 ---
 # <a name="idebugbreakpointboundevent2getpendingbreakpoint"></a>IDebugBreakpointBoundEvent2::GetPendingBreakpoint
 获取要绑定的挂起断点。
@@ -39,7 +40,7 @@ int GetPendingBreakpoint(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppPendingBP`\
 弄返回 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 对象，该对象表示所绑定的挂起断点。
 

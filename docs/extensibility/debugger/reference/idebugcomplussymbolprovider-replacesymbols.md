@@ -1,4 +1,5 @@
 ---
+description: 将当前调试符号替换为指定数据流中的符号。
 title: IDebugComPlusSymbolProvider：： ReplaceSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10c2b8b7154e5286d295df2c87398c57277325ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5c6a7ec5ce2345a78920f210d2d84f5284cfd4d3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842519"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163572"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 将当前调试符号替换为指定数据流中的符号。
@@ -42,7 +43,7 @@ int ReplaceSymbols(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ulAppDomainID`\
 中应用程序域的标识符。
 

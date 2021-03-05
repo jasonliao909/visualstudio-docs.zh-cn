@@ -1,4 +1,5 @@
 ---
+description: 为指定的调试引擎启用自动附加。
 title: IDebugCoreServer3：： EnableAutoAttach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7873480c979bba4f52203c02864d24aa88cf06cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 644d238db11c117b9068de8f7903361b9712f3aa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907986"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163143"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 为指定的调试引擎启用自动附加。
@@ -45,7 +46,7 @@ int EnableAutoAttach(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `rgguidSpecificEngines`\
 中用于标记为自动附加的每个调试引擎的 Guid 数组。
 

@@ -1,4 +1,5 @@
 ---
+description: 检索非托管代码使用的符号读取器。
 title: IDebugComPlusSymbolProvider：： GetSymUnmanagedReader |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4463085b021f2de5f9237817b6d8ffade88612a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a650d55b6c3b36a5b3b08138f44618e2c3645627
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936153"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163793"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 检索非托管代码使用的符号读取器。
@@ -42,7 +43,7 @@ int GetSymUnmanagedReader(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ulAppDomainID`\
 中应用程序域的标识符。
 

@@ -1,4 +1,5 @@
 ---
+description: 表示一个 COM + 符号提供程序，其中包含特定于托管代码并扩展 IDebugComPlusSymbolProvider 的方法。
 title: IDebugComPlusSymbolProvider2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 658d7e5b8660a738616dc89be567f01c17406267
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3a29fcc5cca12698919f0bc4af02bc3db1fe3fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928583"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102163312"
 ---
 # <a name="idebugcomplussymbolprovider2"></a>IDebugComPlusSymbolProvider2
 使用特定于托管代码的方法表示 COM + 符号提供程序，并扩展 **IDebugComPlusSymbolProvider**[IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)。
