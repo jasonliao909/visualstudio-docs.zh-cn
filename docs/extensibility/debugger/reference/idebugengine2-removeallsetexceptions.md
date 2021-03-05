@@ -1,4 +1,5 @@
 ---
+description: 删除 IDE 为特定运行时体系结构或语言设置的异常列表。
 title: IDebugEngine2：： RemoveAllSetExceptions |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca4fbf706fb9172aea2ac7a1304f1643a0061dc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7832dd89ddfbdb15908934ff3ba36ab309d08fa
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878950"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153958"
 ---
 # <a name="idebugengine2removeallsetexceptions"></a>IDebugEngine2::RemoveAllSetExceptions
 删除 IDE 为特定运行时体系结构或语言设置的异常列表。
@@ -39,7 +40,7 @@ int RemoveAllSetExceptions(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `guidType`\
 中语言的 GUID 或特定于运行时体系结构的调试引擎的 GUID。
 

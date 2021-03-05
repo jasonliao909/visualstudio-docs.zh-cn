@@ -1,4 +1,5 @@
 ---
+description: 确定进程是否可以终止。
 title: IDebugEngineLaunch2：： CanTerminateProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9f6f174685ad544a53548a8818a08165d46679b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687b2816c6fd312efef29daa44e0644fc5c5c8c6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927036"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153620"
 ---
 # <a name="idebugenginelaunch2canterminateprocess"></a>IDebugEngineLaunch2::CanTerminateProcess
 确定进程是否可以终止。
@@ -39,7 +40,7 @@ int CanTerminateProcess (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProcess`\
 中表示要终止的进程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
 

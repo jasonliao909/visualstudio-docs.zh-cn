@@ -1,4 +1,5 @@
 ---
+description: 检索服务器的名称。
 title: IDebugCoreServer3：： GetServerName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bb94f5a60b221728652ba05366777977a064cf6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ee0bc7eeb97df19a06af5b9e02baebc73274be3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880822"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154699"
 ---
 # <a name="idebugcoreserver3getservername"></a>IDebugCoreServer3::GetServerName
 检索服务器的名称。
@@ -39,7 +40,7 @@ int GetServerName(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pbstrName`\
 弄返回服务器的名称。
 

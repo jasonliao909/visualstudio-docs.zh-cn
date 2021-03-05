@@ -1,4 +1,5 @@
 ---
+description: 检索所有可用端口的列表。
 title: IDebugCoreServer2：： EnumPorts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5a27156ef9a4a7bee795261069a7df3fa1eb8a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9da125b5e10315f74d806cf5ba7026601393366
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928479"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154751"
 ---
 # <a name="idebugcoreserver2enumports"></a>IDebugCoreServer2::EnumPorts
 检索所有可用端口的列表。
@@ -39,7 +40,7 @@ int EnumPorts(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppEnum`\
 弄返回一个 [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md) 对象，该对象包含所有端口供应商的所有端口的列表。
 

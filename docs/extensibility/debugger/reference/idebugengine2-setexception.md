@@ -1,4 +1,5 @@
 ---
+description: 指定调试引擎 (DE) 应如何处理给定的异常。
 title: IDebugEngine2：： SetException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1e2a6dbd5d5700d4d64625490c016da2d04af6d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 543cccbbefd12accd75213f255f8e3b677cdea38
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878937"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153932"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定调试引擎 (DE) 应如何处理给定的异常。
@@ -39,7 +40,7 @@ int SetException(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pException`\
 中描述异常以及如何调试异常的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 结构。
 

@@ -1,4 +1,5 @@
 ---
+description: 删除指定的异常，以使其不再由调试引擎处理。
 title: IDebugEngine2：： RemoveSetException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29756b3be6d2c46d39b581dd3db0af61bfaa18f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 588037ef9dcf495f8fbbb210acc3154c31558a32
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878924"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153944"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 删除指定的异常，以使其不再由调试引擎处理。
@@ -39,7 +40,7 @@ int RemoveSetException(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pException`\
 中描述要删除的异常的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 结构。
 

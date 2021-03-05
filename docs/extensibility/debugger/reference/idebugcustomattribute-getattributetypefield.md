@@ -1,4 +1,5 @@
 ---
+description: 获取自定义特性类类型。
 title: IDebugCustomAttribute：： GetAttributeTypeField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3fa72b6dfc02f29e5efd8d3e04f98f078cba66a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9ea62b012cd58aac44e5a2d37d4dc6e3b35ca92
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928440"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154517"
 ---
 # <a name="idebugcustomattributegetattributetypefield"></a>IDebugCustomAttribute::GetAttributeTypeField
 获取自定义特性类类型。
@@ -39,7 +40,7 @@ int GetAttributeTypeField(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppCAType`\
 弄返回 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 对象，该对象表示自定义属性为其实例的类。
 

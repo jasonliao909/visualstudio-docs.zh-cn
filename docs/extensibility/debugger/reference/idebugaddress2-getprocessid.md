@@ -1,4 +1,5 @@
 ---
+description: 检索拥有此 IDebugAddress2 接口所表示的对象的进程的 ID。
 title: IDebugAddress2：： GetProcessID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 493f2476eef1cdb68f825240fa4b56779ef7a0d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eeae55e91df8dac3fb176952a352df642facb055
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944864"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102154946"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 检索拥有此 [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) 接口所表示的对象的进程的 ID。
@@ -39,7 +40,7 @@ int GetProcessID (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pProcID`\
 弄进程 ID。
 
