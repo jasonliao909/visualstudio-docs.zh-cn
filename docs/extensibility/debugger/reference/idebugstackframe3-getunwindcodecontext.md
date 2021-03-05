@@ -1,4 +1,5 @@
 ---
+description: 如果堆栈展开操作发生，则返回表示位置的代码上下文。
 title: IDebugStackFrame3：： GetUnwindCodeContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3cb8d468971a578f68ba64fe754ed788493400a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ef0a66729a2e9061a9e71ec0634a65999b55bf2
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102159726"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
 如果堆栈展开操作发生，则返回表示位置的代码上下文。
@@ -39,7 +40,7 @@ int GetUnwindCodeContext(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppCodeContext`\
 弄返回一个 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 对象，该对象表示发生堆栈展开时的代码上下文位置。
 
