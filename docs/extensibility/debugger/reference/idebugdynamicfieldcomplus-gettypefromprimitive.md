@@ -1,4 +1,5 @@
 ---
+description: 根据给定的基元类型检索类型。
 title: IDebugDynamicFieldCOMPlus：： GetTypeFromPrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d1f0a93c14c99c885a9ea8af0f1d650b508efb76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bfd9b64a760a170791a921bb19508cfd6c789993
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899024"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167212"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
 根据给定的基元类型检索类型。
@@ -40,7 +41,7 @@ int GetTypeFromPrimitive(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwCorElementType`\
 中表示基元类型的 [CorElementType 枚举](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 的值。
 

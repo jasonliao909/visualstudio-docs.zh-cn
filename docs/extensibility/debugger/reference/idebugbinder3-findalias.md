@@ -1,4 +1,5 @@
 ---
+description: 此方法在给定名称的情况下查找别名。
 title: IDebugBinder3：： FindAlias |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1bac818844b69018bb9dc6a970a5659513dbe50d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db4d5cad6d0c2990141e0dd3a824425b8b53145b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925095"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167719"
 ---
 # <a name="idebugbinder3findalias"></a>IDebugBinder3::FindAlias
 此方法在给定名称的情况下查找别名。 这会搜索程序中的所有别名。
@@ -41,7 +42,7 @@ int FindAlias(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcstrName`\
 中要查找的别名的名称。
 

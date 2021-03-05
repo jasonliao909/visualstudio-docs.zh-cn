@@ -1,4 +1,5 @@
 ---
+description: 获取从中创建指定绑定断点的挂起断点。
 title: IDebugBoundBreakpoint2：： GetPendingBreakpoint |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 717081905d55a4df50601bbbfc7336265cef60d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18b6ab7f9c520511d2abe57e3864e71bc7534b4c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927153"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167576"
 ---
 # <a name="idebugboundbreakpoint2getpendingbreakpoint"></a>IDebugBoundBreakpoint2::GetPendingBreakpoint
 获取从中创建指定绑定断点的挂起断点。
@@ -40,7 +41,7 @@ int GetPendingBreakpoint(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppPendingBreakpoint`\
 弄返回 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 对象，该对象表示用于创建此绑定断点的挂起断点。
 

@@ -1,4 +1,5 @@
 ---
+description: 设置或更改与此绑定断点关联的传递计数。
 title: IDebugBoundBreakpoint2：： SetPassCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8f02d74b1c826b9e9ef7fa7406ca9a61d19b7311
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccefd1e3b120ac52801a1163ea8bda814626a0b9
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951298"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102167485"
 ---
 # <a name="idebugboundbreakpoint2setpasscount"></a>IDebugBoundBreakpoint2::SetPassCount
 设置或更改与此绑定断点关联的传递计数。
@@ -40,7 +41,7 @@ int SetPassCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `bpPassCount`\
 中 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 结构，它指定传递计数。
 

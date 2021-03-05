@@ -1,4 +1,5 @@
 ---
+description: 附加到程序。
 title: IDebugProgram2：： Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f42aa8ff646a62f7314887df4b38c648e2d84b31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9b06d217f5edec0e913a6c07e57f6bee27f30ea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931443"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166055"
 ---
 # <a name="idebugprogram2attach"></a>IDebugProgram2::Attach
 附加到程序。
@@ -39,14 +40,14 @@ int Attach(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pCallback`\
 中要用于调试事件通知的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 对象。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 下表列出了一些可能的错误代码。
 
-|值|说明|
+|“值”|说明|
 |-----------|-----------------|
 |`E_ATTACH_DEBUGGER_ALREADY_ATTACHED`|指定的程序已附加到调试器。|
 |`E_ATTACH_DEBUGGEE_PROCESS_SECURITY_VIOLATION`|附加过程中发生了安全冲突。|

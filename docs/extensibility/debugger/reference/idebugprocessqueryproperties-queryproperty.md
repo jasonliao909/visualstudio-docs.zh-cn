@@ -1,4 +1,5 @@
 ---
+description: 此方法查询调试进程的指定属性值。
 title: IDebugProcessQueryProperties：： QueryProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 78a5f578d2fdd8e388ba832c3025cb9518658ddb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c18c1abb4946fd207ea859b0f36dd93348126c51
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900149"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166224"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperty"></a>IDebugProcessQueryProperties::QueryProperty
 此方法查询调试进程的指定属性值。
@@ -37,7 +38,7 @@ int QueryProperty(
    out object                 pvarPropValue);
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwPropType`\
 中查询的属性的定义。 有效值为：
 

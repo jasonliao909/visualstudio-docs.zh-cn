@@ -1,4 +1,5 @@
 ---
+description: 获取方法的全局容器。
 title: IDebugMethodField：： GetGlobalContainer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 197490cde12e0c7dd9cee14d11c3ec2f0b165d86
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb20551d39f3e876a836ac42906ad9c50e3c6419
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936868"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102166289"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 获取方法的全局容器。
@@ -39,7 +40,7 @@ int GetGlobalContainer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppClass`\
 弄返回一个 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) ，它表示在其中定义此方法的模块。
 
