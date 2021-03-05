@@ -1,4 +1,5 @@
 ---
+description: 此方法获取字段的容器。
 title: IDebugField：： GetContainer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9d14a5666db03c9ebd701d5e1145c3f14465e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39be9de82e6356b16562ca4b45ea67bb40e3764f
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915406"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151995"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 此方法获取字段的容器。
@@ -39,7 +40,7 @@ int GetContainer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppContainerField`\
 弄返回由 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 接口表示的容器。
 

@@ -1,4 +1,5 @@
 ---
+description: 指定是否应在执行恢复时将异常传递给正在调试的程序，或是否应丢弃异常。
 title: IDebugExceptionEvent2：:P assToDebuggee |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03ce1499863197ed71ef38fcae6a256b1ca319a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7fca977aba3657592088879cdad884f6e6325ffd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152853"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定是否应在执行恢复时将异常传递给正在调试的程序，或是否应丢弃异常。
@@ -39,7 +40,7 @@ int PassToDebuggee(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `fPass`\
 中 `TRUE` 如果异常应传递到执行恢复时正在调试的程序，则为非零 () 如果应丢弃异常，则为零 (`FALSE`) 。
 

@@ -1,4 +1,5 @@
 ---
+description: 当当前正在执行的程序中引发异常时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。
 title: IDebugExceptionEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c09b81a6a3eb56734e7d3a95dc5d1a8d1717fba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e171154d933ac533f6a63469321b5a0d22e8651b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933110"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152762"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 当当前正在执行的程序中引发异常时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。

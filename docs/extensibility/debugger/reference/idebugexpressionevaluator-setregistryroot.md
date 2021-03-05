@@ -1,4 +1,5 @@
 ---
+description: 此方法设置注册表根。
 title: IDebugExpressionEvaluator：： SetRegistryRoot |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b5151d337618409970b61e515cd4428467a7fe25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b900817a5025b0d523f8d3bb3237a1b10cc3a6a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930338"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102152398"
 ---
 # <a name="idebugexpressionevaluatorsetregistryroot"></a>IDebugExpressionEvaluator::SetRegistryRoot
 此方法设置注册表根。 用于并行调试。
@@ -39,7 +40,7 @@ int SetRegistryRoot(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ustrRegistryRoot`\
 中新的注册表根目录。
 
@@ -47,7 +48,7 @@ int SetRegistryRoot(
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 指定的注册表根通常在表达式计算器首次实例化时设置，指向特定版本的 Visual Studio 的注册表项 ( # B0 \\ *X. y*，其中， *X* 是版本号) 。
+ 指定的注册表根通常在表达式计算器首次实例化时设置，指向特定版本的 Visual Studio 的注册表项 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*，其中， *X* 是版本号) 。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)

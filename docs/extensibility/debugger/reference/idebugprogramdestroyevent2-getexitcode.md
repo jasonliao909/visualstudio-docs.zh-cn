@@ -1,4 +1,5 @@
 ---
+description: 获取程序的退出代码。
 title: IDebugProgramDestroyEvent2：： GetExitCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f8718700b968501144038f987be7970979941e87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf8ba64de9d0065c174c3592f0431e2901a4d1e0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959748"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102151592"
 ---
 # <a name="idebugprogramdestroyevent2getexitcode"></a>IDebugProgramDestroyEvent2::GetExitCode
 获取程序的退出代码。
@@ -39,7 +40,7 @@ int GetExitCode(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pdwExit`\
 弄返回程序的退出代码。
 

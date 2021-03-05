@@ -1,4 +1,5 @@
 ---
+description: 此接口表示一个错误或警告断点，如无效位置、无效的表达式，或挂起断点未绑定 (代码尚未加载的原因等) 。
 title: IDebugErrorBreakpoint2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 798dcf0beecd3b1a8cf786b93e581ac6aa780210
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91697ebad462f3d1e953aa42d74bf5a96757886a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888389"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102153152"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 此接口表示一个错误或警告断点，如无效位置、无效的表达式，或挂起断点未绑定 (代码尚未加载的原因等) 。
