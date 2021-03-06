@@ -1,4 +1,5 @@
 ---
+description: 此函数打开现有源代码管理项目或创建一个新项目。
 title: SccOpenProject 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ebc78c73c37a5db3c1808cc3bb4b6715e85bcebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff0aa402f3c3ba264524d6d4082c4a9fbf57c8ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836938"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221543"
 ---
 # <a name="sccopenproject-function"></a>SccOpenProject 函数
 此函数打开现有源代码管理项目或创建一个新项目。
@@ -38,7 +39,7 @@ SCCRTN SccOpenProject (
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -78,7 +79,7 @@ SCCRTN SccOpenProject (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|打开项目成功。|
 |SCC_E_INITIALIZEFAILED|项目无法初始化。|
@@ -114,7 +115,7 @@ SCCRTN SccOpenProject (
 > [!NOTE]
 > 该 `SCC_CAP_REENTRANT` 位是在源代码管理插件 API 版本1.1 中引入的。 在版本1.0 中未设置或已忽略，并且假定所有版本1.0 源代码管理插件都是 nonreentrant。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccCloseProject](../extensibility/scccloseproject-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

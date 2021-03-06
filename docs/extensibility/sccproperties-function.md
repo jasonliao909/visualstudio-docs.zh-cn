@@ -1,4 +1,5 @@
 ---
+description: 此函数显示文件或项目的源代码管理属性。
 title: SccProperties 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a68694388f49d59c7e8e872f0fc70994130e2990
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 410febfbbb79cb352b6247139a11b1c49f3cde9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836769"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220529"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函数
 此函数显示文件或项目的源代码管理属性。
@@ -32,7 +33,7 @@ SCCRTN SccProperties (
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pvContext
 
 中源代码管理插件上下文结构。
@@ -48,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功显示属性。|
 |SCC_I_RELOADFILE|版本控制系统已修改文件属性，因此 IDE 应重新加载此文件。|
@@ -62,5 +63,5 @@ SCCRTN SccProperties (
 
  这些属性由源代码管理插件定义，并且可能不同于插件。 如果插件允许用户更改文件的源代码管理属性，则它应返回 `SCC_I_RELOAD` 通知 IDE 需要重新加载此文件或项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

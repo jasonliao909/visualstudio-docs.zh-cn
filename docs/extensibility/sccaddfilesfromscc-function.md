@@ -1,4 +1,5 @@
 ---
+description: 此函数将源代码管理中的文件列表添加到当前打开的项目中。
 title: SccAddFilesFromSCC 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c230d1dae4b6ff9552a8ff464d3128eac9be1482
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27b695b2777aa32f77d49ced7b74436ce870df80
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926841"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220971"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将源代码管理中的文件列表添加到当前打开的项目中。
@@ -38,7 +39,7 @@ SCCRTN SccAddFilesFromSCC(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -78,7 +79,7 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_E_PROJNOTOPEN|项目未打开。|
 |SCC_E_OPNOTPERFORMED|连接不同于指定的项目 `lpAuxProjPath.`|
@@ -86,5 +87,5 @@ SCCRTN SccAddFilesFromSCC(
 |SCC_E_NONSPECIFICERROR|未知错误。|
 |SCC_I_RELOADFILE|需要重新加载文件或项目。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

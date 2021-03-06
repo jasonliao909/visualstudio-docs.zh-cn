@@ -1,4 +1,5 @@
 ---
+description: Vstov4 命名空间的 s 元素包含与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
 title: '&lt;&gt;Visual Studio 中的 s 元素 (Office 开发) '
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a1a718c6a247528788d91e9c1f30ad636acb7ab9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c8fd7e0ced0fadcd945388a9730513b2a591ed0
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970330"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223454"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 s 元素 (Office 开发) 
   `formRegions`命名空间的元素 `vstov4` 包含与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
@@ -49,7 +50,7 @@ ms.locfileid: "99970330"
 
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `formRegions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码

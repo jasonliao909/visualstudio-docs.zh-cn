@@ -1,4 +1,5 @@
 ---
+description: 此接口枚举调试端口上运行的进程。
 title: IEnumDebugProcesses2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f59cdc9a257f853f70afe2566d7b06e39f8edc02
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75778ea0f02c0e7dcca1f7d2eb0ea8ace82c9b9c
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846655"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224377"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 此接口枚举调试端口上运行的进程。
@@ -37,7 +38,7 @@ IEnumDebugProcesses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugProcesses2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugprocesses2-next.md)|检索枚举序列中指定数目的进程。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprocesses2-skip.md)|跳过枚举序列中指定数目的进程。|
@@ -55,6 +56,6 @@ IEnumDebugProcesses : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

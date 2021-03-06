@@ -1,4 +1,5 @@
 ---
+description: Vstov4 命名空间的 friendlyName 元素存储已安装程序列表中显示的名称。
 title: '&lt;&gt; (Visual Studio 中的 Office 开发) 的 friendlyName 元素'
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c04a7a90f32051cc211fece4f27f1f46f8fb92f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adcf46a2c232176026181283549c0c59fc713603
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939261"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223441"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;&gt; (Visual Studio 中的 Office 开发) 的 friendlyName 元素
   `friendlyName` 命名空间的 `vstov4` 元素存储已安装程序列表中出现的名称。
@@ -38,7 +39,7 @@ ms.locfileid: "99939261"
 
 ## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的代码示例演示使用 `friendlyName` 部署的应用程序级解决方案的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码

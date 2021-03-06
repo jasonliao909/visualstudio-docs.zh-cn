@@ -1,4 +1,5 @@
 ---
+description: 此方法跳过地址枚举中指定数量的元素。
 title: IEnumDebugAddresses：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b0921d2b65aedb94c15c66ad878aa66bff73dbe2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ae1b23c28f98d90649e701b7ff96b2394a9894b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923046"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222648"
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
 此方法跳过指定数目的元素。
@@ -39,7 +40,7 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要跳过的元素数。
 
@@ -49,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

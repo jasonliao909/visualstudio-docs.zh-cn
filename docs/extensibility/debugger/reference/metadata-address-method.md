@@ -1,4 +1,5 @@
 ---
+description: 此结构表示类的方法的地址。
 title: METADATA_ADDRESS_METHOD |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26de14b4c5e23334da85d49d5192ec332e418af8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c79aa9e7592417ba3f42d86137908c350681eb8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961919"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222388"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 此结构表示类的方法的地址。
@@ -65,7 +66,7 @@ public struct METADATA_ADDRESS_METHOD {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

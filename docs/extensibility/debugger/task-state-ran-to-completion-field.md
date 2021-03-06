@@ -1,4 +1,5 @@
 ---
+description: 已成功完成执行的任务。
 title: TASK_STATE_RAN_TO_COMPLETION 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,12 +11,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f8eedfba005848dbb44d194a6210966ec0fda736
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f4963b257f5c53336660274da1a99736411c2e8
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968536"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223196"
 ---
 # <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION 字段
 已成功完成执行的任务。
@@ -35,5 +36,5 @@ ms.locfileid: "99968536"
 ## <a name="remarks"></a>备注
  如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

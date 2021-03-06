@@ -1,4 +1,5 @@
 ---
+description: 此函数返回源代码管理插件支持的其他功能。
 title: SccGetExtendedCapabilities 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1256c9110fe538b4a5d52b165c71216b6537f2c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958409"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220776"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函数
 此函数返回源代码管理插件支持的其他功能。
@@ -32,7 +33,7 @@ SCCRTN SccGetExtendedCapabilities(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -48,7 +49,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|“值”|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|获取功能操作已成功完成。|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|出现未知或未指定的错误。|
@@ -56,7 +57,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="remarks"></a>备注
  此方法按需调用;也就是说，当某个功能需要进行测试时，将调用此方法来确定是否支持该功能。 一次只能指定一个标志。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [错误代码](../extensibility/error-codes.md)
 - [功能标志](../extensibility/capability-flags.md)

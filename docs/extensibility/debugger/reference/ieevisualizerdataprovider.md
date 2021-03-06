@@ -1,4 +1,5 @@
 ---
+description: 此接口提供通过类型可视化工具更改对象的值的功能。
 title: IEEVisualizerDataProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 726ae6c0f56f177a6baa6f463e843378fdc0acea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c2bea2a99b259ac255a4244501ee246fd83e8b5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890820"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222882"
 ---
 # <a name="ieevisualizerdataprovider"></a>IEEVisualizerDataProvider
 > [!IMPORTANT]
@@ -42,7 +43,7 @@ IEEVisualizerDataProvider : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[CanSetObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-cansetobjectforvisualizer.md)|确定是否可以更新 (的对象，以及此可视化工具所表示) 其值。|
 |[GetNewObjectForVisualizer](../../../extensibility/debugger/reference/ieevisualizerdataprovider-getnewobjectforvisualizer.md)|强制重新计算此可视化工具的对象。|
@@ -59,7 +60,7 @@ IEEVisualizerDataProvider : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

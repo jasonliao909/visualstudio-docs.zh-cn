@@ -1,4 +1,5 @@
 ---
+description: 此接口枚举计算机或端口供应商的端口。
 title: IEnumDebugPorts2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 638b17490ba875f8ecab7bf6dcdff7fef161b66e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b93aa34870d05b9a4ec0a9a0aa92f681735dfe3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967795"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224455"
 ---
 # <a name="ienumdebugports2"></a>IEnumDebugPorts2
 此接口枚举计算机或端口供应商的端口。
@@ -37,7 +38,7 @@ IEnumDebugPorts2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugPorts2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugports2-next.md)|检索枚举序列中指定数量的端口。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugports2-skip.md)|跳过枚举序列中指定数量的端口。|
@@ -57,7 +58,7 @@ IEnumDebugPorts2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)

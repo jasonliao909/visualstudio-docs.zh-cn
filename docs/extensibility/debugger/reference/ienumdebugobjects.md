@@ -1,4 +1,5 @@
 ---
+description: 此接口表示实现 IDebugObject 接口的对象的集合。
 title: IEnumDebugObjects |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b86d632d35063aa31e6be9e11adb266e5e36fa6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eece06d64a4eeefefe4e132295f20e40a032434b
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957070"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224624"
 ---
 # <a name="ienumdebugobjects"></a>IEnumDebugObjects
 > [!IMPORTANT]
@@ -40,7 +41,7 @@ IEnumDebugObjects : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  此接口实现以下方法。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugobjects-next.md)|从枚举中检索下一组 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugobjects-skip.md)|跳过指定数量的条目。|
@@ -58,6 +59,6 @@ IEnumDebugObjects : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetElements](../../../extensibility/debugger/reference/idebugarrayobject-getelements.md)

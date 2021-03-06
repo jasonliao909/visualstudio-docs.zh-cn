@@ -1,4 +1,5 @@
 ---
+description: Vstov4 命名空间的 n 元素标识与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
 title: '&lt;&gt;Visual Studio 中的 n 元素 (Office 开发) '
 titleSuffix: ''
 ms.custom: seodec18
@@ -14,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 469b041ac879753e5fe4be0f9bd739be1030a942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0851ba9e117b464d3a2fbb9ad9903af17ceda0c4
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970383"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221075"
 ---
 # <a name="ltformregiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 n 元素 (Office 开发) 
   `formRegion`命名空间的元素 `vstov4` 标识与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
@@ -41,7 +42,7 @@ ms.locfileid: "99970383"
 
  `formRegion` 元素具有以下属性。
 
-|Attribute|说明|
+|属性|描述|
 |---------------|-----------------|
 |`name`|必需。 标识窗体区域名称。|
 
@@ -52,7 +53,7 @@ ms.locfileid: "99970383"
 
  `messageClass` 元素具有以下属性。
 
-|Attribute|说明|
+|属性|描述|
 |---------------|-----------------|
 |`name`|必需。 标识与窗体区域关联的窗体。|
 
@@ -68,7 +69,7 @@ ms.locfileid: "99970383"
 </vstov4:formRegion>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)

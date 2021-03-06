@@ -1,4 +1,5 @@
 ---
+description: 检索有关此属性类型的查看器的信息，以便实例化该查看器。
 title: IPropertyProxyEESide：： GetManagedViewerCreationData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee551ba78ceb91c2622af217d8863597e028be9d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f2d7d4ef3f35cb0ad00f91033213449af8cb7306
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896007"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224130"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 检索有关此属性类型的查看器的信息，以便实例化该查看器。
@@ -49,7 +50,7 @@ int GetManagedViewerCreationData(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `assemName`\
 弄返回包含此对象的程序集的名称。
 
@@ -74,7 +75,7 @@ int GetManagedViewerCreationData(
 ## <a name="remarks"></a>备注
  类型可视化工具使用此方法实例化托管查看器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

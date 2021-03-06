@@ -1,4 +1,5 @@
 ---
+description: 此方法返回属性对象的代理。
 title: IEEVisualizerService：： GetPropertyProxy |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ae18e9e04d6de4be3dcaf28a0e8eae6303ae75e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbcaa460546443dcbc714a3fa72a6ebc7479dfc3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222856"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 此方法返回属性对象的代理。
@@ -41,7 +42,7 @@ int GetPropertyProxy(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dwID`\
 中要检索的属性代理的 ID。
 
@@ -54,7 +55,7 @@ int GetPropertyProxy(
 ## <a name="remarks"></a>备注
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 将该请求传递给此方法，作为它对类型可视化工具的支持的一部分。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)
