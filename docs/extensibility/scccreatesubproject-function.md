@@ -1,4 +1,5 @@
 ---
+description: 此函数在 lpParentProjPath 参数指定的现有父项目下创建具有给定名称的子项目。
 title: SccCreateSubProject 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ed763635d5629400c70c53497c7a798e0ac38f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943122"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221608"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数在由参数指定的现有父项目下创建具有给定名称的子项目 `lpParentProjPath` 。
@@ -36,7 +37,7 @@ SCCRTN SccCreateSubProject(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -68,7 +69,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功创建子项目。|
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|
@@ -98,7 +99,7 @@ SCCRTN SccCreateSubProject(
 
  如果注册表项设置为 dword：00000001，则 Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理中的操作的工作方式与 Visual Studio 早期版本中的工作方式相同。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

@@ -1,4 +1,5 @@
 ---
+description: 当线程运行完成时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
 title: IDebugThreadDestroyEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d8c349ab867fda76ffbade0c92aa31489321061
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48390b220a1398e712af494a6d0f21024f659f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888181"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223116"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 当线程运行完成时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
@@ -37,7 +38,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IDebugThreadDestroyEvent2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetExitCode](../../../extensibility/debugger/reference/idebugthreaddestroyevent2-getexitcode.md)|获取线程的退出代码。|
 
@@ -51,7 +52,7 @@ IDebugThreadDestroyEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

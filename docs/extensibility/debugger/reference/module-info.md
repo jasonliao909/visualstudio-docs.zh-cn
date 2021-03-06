@@ -1,4 +1,5 @@
 ---
+description: 描述特定模块 (DLL、EXE 或程序集) 。
 title: MODULE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0fba00357fcb328000b904d3977bf03e5bc3885
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d3fd390ca5491aa9dd3e97a0d820c8e02fd0147
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888168"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222349"
 ---
 # <a name="module_info"></a>MODULE_INFO
 描述特定模块 (DLL、EXE 或程序集) 。
@@ -110,7 +111,7 @@ public struct MODULE_INFO {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

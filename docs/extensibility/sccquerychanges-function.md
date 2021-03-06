@@ -1,4 +1,5 @@
 ---
+description: 此函数枚举给定的文件列表，并通过回调函数提供每个文件的名称更改的相关信息。
 title: SccQueryChanges 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd69183b290fa194d87dff79d69596dd65ec19ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e34c37ca999b05e7148d910032fe90c33470ce50
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836717"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220516"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
 此函数枚举给定的文件列表，并通过回调函数提供每个文件的名称更改的相关信息。
@@ -34,7 +35,7 @@ SCCRTN SccQueryChanges(
 );
 ```
 
-#### <a name="parameters"></a>parameters
+#### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -58,7 +59,7 @@ SCCRTN SccQueryChanges(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询过程已成功完成。|
 |SCC_E_PROJNOTOPEN|未在源代码管理中打开该项目。|
@@ -68,7 +69,7 @@ SCCRTN SccQueryChanges(
 ## <a name="remarks"></a>备注
  查询的更改是命名空间：具体而言，即重命名、添加和删除文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md)
 - [错误代码](../extensibility/error-codes.md)

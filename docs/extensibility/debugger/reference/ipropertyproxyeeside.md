@@ -1,4 +1,5 @@
 ---
+description: 此接口提供在关联的对象上查看数据的方法。
 title: IPropertyProxyEESide |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f0331365716c8399c1b2a565fc8046482df5d80f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80a295ad68341cfa4675d36b22d5de042078a0a3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938897"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222603"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 此接口提供在关联的对象上查看数据的方法。 此接口是对类型可视化工具的支持的一部分。
@@ -37,7 +38,7 @@ IPropertyProxyEESide : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  此接口实现以下方法：
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[InitSourceDataProvider](../../../extensibility/debugger/reference/ipropertyproxyeeside-initsourcedataprovider.md)|初始化数据源提供程序，以便可以访问该对象的数据。|
 |[GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md)|检索有关对象的程序集的信息。|
@@ -56,7 +57,7 @@ IPropertyProxyEESide : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

@@ -1,4 +1,5 @@
 ---
+description: 给定一个本地文件列表，此函数确定哪些文件与源代码管理数据库中对应的版本不同。
 title: SccEnumChangedFiles 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e871f244082374bcf24ea49062cdcefd6e08d888
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9349172ac60f1e02f82327424cdbc3a3b1d4f865
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942992"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221530"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 给定一个本地文件列表，此函数确定哪些文件与源代码管理数据库中对应的版本不同。
@@ -34,7 +35,7 @@ SCCRTN SccEnumChangedFiles(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文指针。
@@ -58,10 +59,10 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|操作已成功完成。|
 |SCC_UNSPECIFIEDERROR|常规错误。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

@@ -1,4 +1,5 @@
 ---
+description: 此接口表示实现 IDebugAddress 接口的对象的集合。
 title: IEnumDebugAddresses |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9b4b95d805833ffd8b8041292cd18e5db8df9b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea9e4115c1664e1dcd05041f7ece056b5de01dae
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875791"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222635"
 ---
 # <a name="ienumdebugaddresses"></a>IEnumDebugAddresses
 此接口表示实现 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口的对象的集合。
@@ -37,7 +38,7 @@ IEnumDebugAdresses : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  此接口实现以下方法。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)|从枚举中检索下一组 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 对象。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugaddresses-skip.md)|跳过指定数量的条目。|
@@ -55,7 +56,7 @@ IEnumDebugAdresses : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)

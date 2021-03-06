@@ -1,4 +1,5 @@
 ---
+description: 创建指向指定类型的指针。
 title: IDebugTypeFieldBuilder：： CreatePointerToType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee3beb4bd79c438430ddfc2aac0fc0a5894404b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5cc642ae4d9d4030abcf32c1e51360c8cb4a84f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940184"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223142"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 创建指向指定类型的指针。
@@ -40,7 +41,7 @@ int CreatePointerToType(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pTypeField`\
 中要指向的类型。 它由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 接口表示。
 
@@ -50,5 +51,5 @@ int CreatePointerToType(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

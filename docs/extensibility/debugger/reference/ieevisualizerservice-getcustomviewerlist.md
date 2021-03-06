@@ -1,4 +1,5 @@
 ---
+description: 此方法返回此服务了解的可视化工具类型的列表。
 title: IEEVisualizerService：： GetCustomViewerList |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ba63a1f27e043ca114a3b954adfe403b60283ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0bd9c633c6b65bbd597619f9fd30487a734d9004
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907804"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222895"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 此方法返回此服务了解的可视化工具类型的列表。
@@ -45,7 +46,7 @@ int GetCustomViewerList(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celtSkip`\
 中要跳过的可视化工具的数目。
 
@@ -66,7 +67,7 @@ int GetCustomViewerList(
 
  有关可视化工具和查看器之间的差异的详细信息，请参阅 [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

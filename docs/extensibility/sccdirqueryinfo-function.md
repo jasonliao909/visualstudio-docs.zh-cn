@@ -1,4 +1,5 @@
 ---
+description: 此函数检查当前状态的完全限定目录的列表。
 title: SccDirQueryInfo 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d15809623067d9612eb2648d593264d61f08f6e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943083"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102220815"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 此函数检查当前状态的完全限定目录的列表。
@@ -33,7 +34,7 @@ LPLONG  lpStatus
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  pContext
 
 中源代码管理插件上下文结构。
@@ -53,7 +54,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询成功。|
 |SCC_E_OPNOTSUPPORTED|源代码管理系统不支持此操作。|
@@ -68,6 +69,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > 如果源代码管理插件选择不实现一个或多个状态值，则未实现的位应设置为零。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [目录状态代码](../extensibility/directory-status-code-enumerator.md)

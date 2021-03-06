@@ -1,4 +1,5 @@
 ---
+description: 此结构表示方法或函数的参数。
 title: METADATA_ADDRESS_PARAM |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbb6e709ab1b6ee92ad9a27ed3061642665c7f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3317981def12a72cf98dad850d5509bd3e64520a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938715"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102222375"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 此结构表示方法或函数的参数。
@@ -63,7 +64,7 @@ public struct METADATA_ADDRESS_PARAM {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

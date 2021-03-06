@@ -1,4 +1,5 @@
 ---
+description: Visual C++ 项目系统用于 .vcxproj 文件。
 title: Visual C++ 项目扩展性
 ms.date: 04/23/2019
 ms.technology: vs-ide-mobile
@@ -10,12 +11,12 @@ ms.author: corob
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c699c835c6a53ec346dadb8bbbbf787aacc9206
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc538402ae39753f14a3bccd8bcd17ddb0081078
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926031"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221231"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual Studio c + + 项目系统扩展性和工具集集成
 
@@ -493,7 +494,7 @@ CPS 支持上下文类型的其他值，但这些值不用于 Visual C++ 项目�
 
 `PageTemplate`特性定义规则在 "**属性页**" 对话框中的显示方式。 该属性可以具有以下值之一：
 
-| Attribute | 说明 |
+| 属性 | 描述 |
 |------------| - |
 | `generic` | 所有属性都显示在一页上的类别标题下面<br/>规则对 `Project` 和 `PropertySheet` 上下文可见，但不可见 `File` 。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | 类别显示为子页。<br/>此规则可在所有上下文中显示： `Project` 、 `PropertySheet` 和 `File` 。<br/>仅当项目具有中定义的项时，才会在项目属性中看到该规则 `ItemType` `Rule.DataSource` ，除非该规则名称包含在 `ProjectTools` 项组中。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |

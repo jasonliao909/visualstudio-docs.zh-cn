@@ -1,4 +1,5 @@
 ---
+description: 此函数启动源代码管理操作的批处理序列。
 title: SccBeginBatch 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e79a1203d97bfbf105a69b97516bda307825bd99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52b82919b10e58772343aee42cb8723b10d6ca3
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952130"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221647"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
 此函数启动源代码管理操作的批处理序列。 将调用 [SccEndBatch](../extensibility/sccendbatch-function.md) 以结束批处理。 这些批处理不能嵌套。
@@ -28,13 +29,13 @@ ms.locfileid: "99952130"
 SCCRTN SccBeginBatch(void);
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
  无。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|“值”|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功的批处理操作。|
 |SCC_E_UNKNOWNERROR|非特定故障。|
@@ -44,6 +45,6 @@ SCCRTN SccBeginBatch(void);
 
  批处理操作生效时，源代码管理插件最多应向用户显示一个对话框，并在所有后续操作上应用该对话框的响应。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccEndBatch](../extensibility/sccendbatch-function.md)
