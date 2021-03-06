@@ -1,4 +1,5 @@
 ---
+description: 返回 FRAMEINFO 枚举中的下一组元素。
 title: IEnumDebugFrameInfo2：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cff37c8cf557c3857a5e078d864755cb219c1bc3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a14806c5904e6ca1ed120dc138b96a194d80726
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956316"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226457"
 ---
 # <a name="ienumdebugframeinfo2next"></a>IEnumDebugFrameInfo2::Next
 返回枚举中的下一个元素集。
@@ -43,7 +44,7 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
 
@@ -56,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

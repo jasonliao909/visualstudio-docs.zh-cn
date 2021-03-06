@@ -1,4 +1,5 @@
 ---
+description: 跳过程序枚举中指定数量的元素。
 title: IEnumDebugPrograms2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ecbef6ed8644176effb3946bbfe72267526053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1aa198437a84c0e648897d22bc08c719832e7994
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846603"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226054"
 ---
 # <a name="ienumdebugprograms2skip"></a>IEnumDebugPrograms2::Skip
 跳过指定数目的元素。
@@ -39,7 +40,7 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要跳过的元素数。
 
@@ -49,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

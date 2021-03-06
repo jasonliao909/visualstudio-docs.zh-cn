@@ -1,4 +1,5 @@
 ---
+description: 返回模块枚举中的元素数。
 title: IEnumDebugModules2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d3bb9f20e852a634df57957a5b03674ab84f9e1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f40e775ffcc18398d3d45ba1865e802a0e0b397f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956279"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224767"
 ---
 # <a name="ienumdebugmodules2getcount"></a>IEnumDebugModules2::GetCount
 返回枚举中的元素数。
@@ -39,7 +40,7 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcelt`\
 弄返回枚举中的元素数。
 
@@ -49,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>备注
  此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

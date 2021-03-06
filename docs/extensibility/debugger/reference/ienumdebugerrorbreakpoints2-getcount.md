@@ -1,4 +1,5 @@
 ---
+description: 返回错误断点枚举中的元素数。
 title: IEnumDebugErrorBreakpoints2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9ff426a16a9dec71f809202a9ba0a70e9f2c4965
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32de3e1d6e154fd396dec0bf284853b0094258d5
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896999"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226743"
 ---
 # <a name="ienumdebugerrorbreakpoints2getcount"></a>IEnumDebugErrorBreakpoints2::GetCount
 返回枚举中的元素数。
@@ -39,7 +40,7 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcelt`\
 弄返回枚举中的元素数。
 
@@ -49,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>备注
  此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

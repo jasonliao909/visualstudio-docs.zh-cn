@@ -1,4 +1,5 @@
 ---
+description: 此方法获取可视化工具的新对象。
 title: IEEVisualizerDataProvider：： GetNewObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 98566507b3fdc3f519cc645991807c1d437bbcfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07bc02adc9dc3e6675c7bfbbcafd21a350b3a94f
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890963"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227289"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 此方法获取可视化工具的新对象。 此方法将始终基于现有对象创建一个新的对象。
@@ -39,7 +40,7 @@ int GetNewObjectForVisualizer(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `ppObject`\
 弄新的对象。
 
@@ -49,6 +50,6 @@ int GetNewObjectForVisualizer(
 ## <a name="remarks"></a>备注
  `This method` 重新计算当前表示的对象，并将结果作为新对象返回。 计算将更新现有对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

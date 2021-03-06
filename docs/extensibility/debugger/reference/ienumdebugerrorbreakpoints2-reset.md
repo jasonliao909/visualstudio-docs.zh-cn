@@ -1,4 +1,5 @@
 ---
+description: 将错误断点枚举重置为第一个元素。
 title: IEnumDebugErrorBreakpoints2：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a40092cab58adda9b5b22f426ca7e82722dc3937
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee2ba457c23ab8a2519170523f9a54410d4c9ff6
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896986"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226691"
 ---
 # <a name="ienumdebugerrorbreakpoints2reset"></a>IEnumDebugErrorBreakpoints2::Reset
 将枚举重置为第一个元素。
@@ -43,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后， [下一次调用的方法将](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) 返回枚举的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

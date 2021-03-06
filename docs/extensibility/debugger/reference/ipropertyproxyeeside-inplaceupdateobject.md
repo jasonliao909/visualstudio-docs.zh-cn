@@ -1,4 +1,5 @@
 ---
+description: 使用给定的数据对象更新对象的数据，并返回一个表示该对象的新数据的新数据对象。
 title: IPropertyProxyEESide：： InPlaceUpdateObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89f8185734c8c2ee15728328a510236bbbc50a21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2119db579863bea2ad0b9fa5834996d658308549
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895968"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225586"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用给定的数据对象更新对象的数据，并返回一个表示该对象的新数据的新数据对象。
@@ -41,7 +42,7 @@ int InPlaceUpdateObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dataIn`\
 中一个包含新数据的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象。
 
@@ -58,7 +59,7 @@ int InPlaceUpdateObject(
 
  [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)方法基于传入数据对象创建一个数据对象，但不会影响该属性的原始数据。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)

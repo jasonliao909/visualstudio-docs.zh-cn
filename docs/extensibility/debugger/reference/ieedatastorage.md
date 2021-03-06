@@ -1,4 +1,5 @@
 ---
+description: 此接口表示字节数组。
 title: IEEDataStorage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbec27d262e43cb0fcdf8317725ad3c77a1817eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966430"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102227328"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此接口表示字节数组。
@@ -37,7 +38,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  `IEEDataStorage`接口实现以下方法：
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|检索指定数目的数据字节到提供的缓冲区。|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|检索可用的数据字节数。|
@@ -54,7 +55,7 @@ IEEDataStorage : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

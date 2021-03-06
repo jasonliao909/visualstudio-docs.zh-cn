@@ -1,4 +1,5 @@
 ---
+description: 创建特定于表达式计算器 (EE) 的数据对象的副本。
 title: IPropertyProxyEESide：： CreateReplacementObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e2b8037059824bd514024e6fb86561406895c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 341ca3d00a433c4bb36bc22ab2d598d7b454842a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852825"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225703"
 ---
 # <a name="ipropertyproxyeesidecreatereplacementobject"></a>IPropertyProxyEESide::CreateReplacementObject
 创建特定于表达式计算器 (EE) 的数据对象的副本。
@@ -41,7 +42,7 @@ int CreateReplacementObject(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `dataIn`\
 中包含要复制的数据的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象。
 
@@ -56,6 +57,6 @@ int CreateReplacementObject(
 
  请注意，传入对象提供的数据 `IEEDataStorage` 在传出对象中必须是相同的数据 `IEEDataStorage` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

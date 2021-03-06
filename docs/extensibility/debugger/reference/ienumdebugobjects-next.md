@@ -1,4 +1,5 @@
 ---
+description: 此方法返回枚举中的 IDebugObject 元素的下一组。
 title: IEnumDebugObjects：： Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7ef009a4801e40859e2b757465bb15ffac97395a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9dc05932a39d76fcf21290971f12567795a678e9
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957109"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224663"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 此方法返回枚举中的下一组元素。
@@ -43,7 +44,7 @@ int Next(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
 
@@ -56,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

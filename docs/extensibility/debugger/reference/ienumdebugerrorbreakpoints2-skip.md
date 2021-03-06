@@ -1,4 +1,5 @@
 ---
+description: 在错误断点枚举中跳过指定数量的元素。
 title: IEnumDebugErrorBreakpoints2：： Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0d7bf485886dc85ca0546cea6c3f90ffa14724d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba483127602db54a403b7666e5869bd4d1f02d86
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919824"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226665"
 ---
 # <a name="ienumdebugerrorbreakpoints2skip"></a>IEnumDebugErrorBreakpoints2::Skip
 跳过指定数目的元素。
@@ -39,7 +40,7 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `celt`\
 中要跳过的元素数。
 
@@ -49,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)
