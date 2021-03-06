@@ -1,4 +1,5 @@
 ---
+description: 确定指定的托管程序集引用的位置。
 title: IPropertyProxyEESide：： ResolveAssemblyRef |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc14d3aff5116f7bfb18244f39d14ec2dbbd37f1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 687ca5922cc59322c37b7b391a9b5f40d52c14ad
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895955"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225573"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
 确定指定的托管程序集引用的位置。
@@ -47,7 +48,7 @@ int ResolveAssemblyRef(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `assemName`\
 中要解析的程序集的名称。
 
@@ -69,7 +70,7 @@ int ResolveAssemblyRef(
 ## <a name="remarks"></a>备注
  此方法通常不是由自定义表达式计算器实现的。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)

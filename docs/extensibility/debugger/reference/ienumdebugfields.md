@@ -1,4 +1,5 @@
 ---
+description: 此接口表示实现 IDebugField 接口的对象的集合。
 title: IEnumDebugFields |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce45c926700779906881bc4a4607b05f0732be3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad912c7225cb1a8c3d6ca294a4031c19bcd47e9a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956394"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102226548"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 此接口表示实现 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 接口的对象的集合。
@@ -37,7 +38,7 @@ IEnumDebugFields : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  此接口实现以下方法。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugfields-next.md)|从枚举中检索下一组 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugfields-skip.md)|跳过指定数量的条目。|
@@ -54,7 +55,7 @@ IEnumDebugFields : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)

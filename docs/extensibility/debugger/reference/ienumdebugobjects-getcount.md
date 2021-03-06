@@ -1,4 +1,5 @@
 ---
+description: 此方法返回枚举中的 IDebugObject 元素的数目。
 title: IEnumDebugObjects：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f657bdeeb8f4f355bc8a6cafaaf79b1218dbbc9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54247fd49792b0a0ce5ed3218429b97b0ccdfcbf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890768"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224676"
 ---
 # <a name="ienumdebugobjectsgetcount"></a>IEnumDebugObjects::GetCount
 此方法返回枚举中的元素数。
@@ -39,7 +40,7 @@ int GetCount(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 `pcelt`\
 弄返回枚举中的元素数。
 
@@ -49,5 +50,5 @@ int GetCount(
 ## <a name="remarks"></a>备注
  此方法不是习惯的 COM 枚举接口的一部分，它指定仅需实现下一个、克隆、跳过和重置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)

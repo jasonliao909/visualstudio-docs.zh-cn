@@ -1,4 +1,5 @@
 ---
+description: 此接口枚举模块列表。
 title: IEnumDebugModules2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: anthc
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfcd594ab8764cedb8cbe2ea312675f884ae2338
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33853804078d5f32aba6fda6dac409cf2a24de0a
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957148"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102224754"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此接口枚举模块列表。
@@ -37,7 +38,7 @@ IEnumDebugModules2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugModules2` 。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md)|检索枚举序列中指定数目的模块。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugmodules2-skip.md)|跳过枚举序列中指定数目的模块。|
@@ -57,7 +58,7 @@ IEnumDebugModules2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)
