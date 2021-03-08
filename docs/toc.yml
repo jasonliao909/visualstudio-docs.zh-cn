@@ -1070,6 +1070,8 @@
       items:
         - name: 调用层次结构
           href: ide/reference/call-hierarchy.md
+        - name: 开发人员命令提示和开发人员 PowerShell
+          href: ide/reference/command-prompt-powershell.md
         - name: 预览更改
           href: ide/preview-changes.md
         - name: “选择工具箱项”->“WPF 组件”
