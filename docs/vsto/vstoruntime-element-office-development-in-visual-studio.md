@@ -1,6 +1,7 @@
 ---
 title: '&lt;&gt;Visual Studio 中的 v 元素 (Office 开发) '
 titleSuffix: ''
+description: Vstav3 命名空间的 v 元素包含特定 Office 解决方案的受支持的 Visual Studio Tools for Office 运行时版本。
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -15,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c866db5f691db56e68f6980c9c07d21ee15c0ae5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921746"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102468567"
 ---
 # <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 v 元素 (Office 开发) 
   `vstoRuntime` 命名空间的 `vstav3` 元素包含针对特定 Office 解决方案的受支持的 Visual Studio Tools for Office Runtime 版本。
@@ -39,7 +40,7 @@ ms.locfileid: "99921746"
 
  `vstoRuntime` 元素具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`release`|必需。 Visual Studio Tools for Office Runtime 的发布版本。|
 |`version`|必需。 Visual Studio Tools for Office Runtime 的版本号。|
@@ -47,7 +48,7 @@ ms.locfileid: "99921746"
 
  `vstoRuntime` 不包含任何元素。
 
-## <a name="example"></a>示例
+## <a name="example"></a>示例：
  下面的代码示例演示 Office 解决方案的应用程序清单中的 `vstoRuntime` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ```xml
