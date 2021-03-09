@@ -1,5 +1,6 @@
 ---
 title: IManagedAddin 接口
+description: 实现 IManagedAddin 接口可创建加载托管 VSTO 外接程序的组件。
 ms.date: 02/02/2017
 ms.topic: interface
 dev_langs:
@@ -12,12 +13,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89e705296c6051b8bdec823e523f0a386ff7ff76
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 614cf7e8d0e682d894328fb764c6d64b855d2834
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920434"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469783"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 接口
   实现 IManagedAddin 接口可创建加载托管 VSTO 外接程序的组件。此接口已添加到 2007 Microsoft Office 系统中。
@@ -43,7 +44,7 @@ interface IManagedAddin : IUnknown
 ## <a name="methods"></a>方法
  下表列出了由 IManagedAddin 接口定义的方法。
 
-|“属性”|说明|
+|名称|说明|
 |----------|-----------------|
 |[IManagedAddin::Load](../vsto/imanagedaddin-load.md)|在 Microsoft Office 应用程序加载托管 VSTO 外接程序时调用。|
 |[IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)|在 Microsoft Office 应用程序即将卸载 VSTO 托管外接程序时调用。|
