@@ -1,5 +1,6 @@
 ---
 title: DA0011 - 高开销 CompareTo | Microsoft Docs
+description: 类型的 CompareTo 方法开销巨大或分配内存。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: aef8135e48b07946803832266ed9dff9e843d3ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91219bed2ca0e8b4bbc28825e1505b9d5f78bbc8
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916825"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466149"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：高开销 CompareTo
 

@@ -1,5 +1,6 @@
 ---
 title: DA0024 - GC 占用的 CPU 时间过多 | Microsoft Docs
+description: 分析期间收集的系统性能数据表明垃圾回收所用的时间明显超过总的应用程序处理时间。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28b9f5af736e07d6e61d3c175b13202c54a4d0d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5de3d2e65707e9f6451c60b1a6210cb25c0b6902
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847864"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465967"
 ---
 # <a name="da0024-excessive-gc-cpu-time"></a>DA0024：GC 占用的 CPU 时间过多
 

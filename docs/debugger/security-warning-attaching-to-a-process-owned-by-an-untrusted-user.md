@@ -1,4 +1,5 @@
 ---
+description: 如果附加到包含部分可信代码或由不可信用户拥有的进程，则在该附加操作发生之前，会出现此警告对话框。
 title: 安全警告：附加到不受信任的用户所拥有的进程可能很危险。 如果以下信息看起来可疑或你对此无法确定，请勿附加到此进程 | Microsoft Docs
 ms.date: 1/15/2021
 ms.topic: conceptual
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ec174a03e62cb8cb033be0b92db679fb19f0180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fe65e753a0e825eed0c09fdefc4e93168d27ecb
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881251"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160311"
 ---
 # <a name="security-warning-attaching-to-a-process-owned-by-an-untrusted-user-can-be-dangerous-if-the-following-information-looks-suspicious-or-you-are-unsure-do-not-attach-to-this-process"></a>安全警告：附加到不受信任的用户所拥有的进程可能很危险。 如果以下信息看上去可疑或者你无法确定，请勿附加到此进程
 

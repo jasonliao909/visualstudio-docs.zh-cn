@@ -1,4 +1,5 @@
 ---
+description: 向并发可视化工具跟踪文件写入一个标志。
 title: marker_series::write_flag 方法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 99601d34a3ad996d8e9e7cd4baf02e51423d8b3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923711"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223883"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 方法
 向并发可视化工具跟踪文件写入一个标志。
@@ -55,9 +56,9 @@ void write_flag(
  `_Category` 类别。
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [marker_series 类](../profiling/marker-series-class.md)

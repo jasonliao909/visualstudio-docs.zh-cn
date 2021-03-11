@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e2f2619c-7736-47e5-a066-5940d5994db9
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 订阅中查找和下载 Microsoft 软件标题
-ms.openlocfilehash: e6a5b6a1caab199ec2b67108f539c1d68d545551
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903628"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249286"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下载 Visual Studio 订阅中的软件标题
 根据你所订阅的 Visual Studio，你可以获得各种各样的 Microsoft 软件标题。  本文将概述如何查找和下载所需的软件，以便最大限度地利用订阅。 
@@ -52,7 +52,10 @@ ms.locfileid: "92903628"
 > [!div class="mx-imgBorder"]
 > ![Visual Studio 2019 声明产品密钥](_img/subscriber-downloads/vs2019-claim-keys.png "选择“声明密钥”可以声明剩余的密钥。")
 
-## <a name="see-also"></a>请参阅
+## <a name="resources"></a>资源
+- [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

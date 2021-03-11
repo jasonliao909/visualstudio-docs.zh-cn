@@ -1,5 +1,6 @@
 ---
 title: DA0013 - String.Split 或 String.Substring 的使用率高 | Microsoft Docs
+description: 对 System.String.Split 或 System.String.Substring 方法的调用是分析数据的重要组成部分。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +18,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d5ec92544809a83825451494b01fd62a0868ee4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f4426a7bc249efacbd200ccd9847954a38e853e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916791"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469906"
 ---
 # <a name="da0013-high-usage-of-stringsplit-or-stringsubstring"></a>DA0013：String.Split 或 String.Substring 的使用率高
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 02/02/2021
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: 200f299ba4e487e40572e54f1066ed6ac079e7d1
-ms.sourcegitcommit: b0ecf9bb0d887bc0a900578089bf41ab8dddbb78
+ms.openlocfilehash: 4d00e6808a71522f95d8580056556f5a502ecbde
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99488660"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473304"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
@@ -58,7 +58,10 @@ ms.locfileid: "99488660"
 
 如果 Azure DevOps 仍无法识别你的订阅，请联系 [Azure DevOps 支持](https://azure.microsoft.com/support/devops/)。
 
-## <a name="see-also"></a>请参阅
+## <a name="resources"></a>资源
+[Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

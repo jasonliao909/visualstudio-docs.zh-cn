@@ -1,4 +1,5 @@
 ---
+description: 分析期间收集的系统性能数据表明：与第 0 代和第 1 代垃圾回收相比，第 2 代垃圾回收中为 .NET Framework 对象回收的内存比例较高。
 title: DA0022 - 第 2 代垃圾回收速率高 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 61fb953b1eae3ecfb0aa9c87e8b10a25099cb12a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0949dcf7bf55d079037ffa9cb160edeb35294d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967002"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223664"
 ---
 # <a name="da0022-high-rate-of-gen-2-garbage-collections"></a>DA0022：第 2 代垃圾回收率高
 

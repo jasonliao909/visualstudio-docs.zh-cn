@@ -1,6 +1,6 @@
 ---
 title: 调试 Windows API 函数 | Microsoft Docs
-Description: 了解如何调试已加载 NT 符号的 Windows API 函数。 在 32 位代码中，使用函数名的修饰形式来设置断点。
+description: 了解如何调试已加载 NT 符号的 Windows API 函数。 在 32 位代码中，使用函数名的修饰形式来设置断点。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 06/03/2020
 ms.topic: how-to
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e1bd0a31f99812efefe937ce179b8f23d66c38d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d84bdc20ab4601798e1f967c1352468e750fa9bd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904302"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155208"
 ---
 # <a name="how-can-i-debug-windows-api-functions"></a>如何调试 Windows API 函数？
 如果要调试加载了 NT 符号的 Windows API 函数，必须执行以下步骤。

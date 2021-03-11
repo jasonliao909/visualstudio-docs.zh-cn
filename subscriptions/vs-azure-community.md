@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c15f7e18-b280-4902-a60d-2c2598653207
-ms.date: 12/02/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的 Azure 社区支持权益。
-ms.openlocfilehash: 58f587d5e9c27197b28457c512e4eb94f07851ef
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 57190bce0625108c332e307051cf28aec192f556
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96538015"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473330"
 ---
 # <a name="azure-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Azure 社区支持论坛
 在选定的支持论坛中通过 Azure 社区直接从 Azure 团队获得帮助。  Azure 社区权益提供访问专注于 Azure 相关主题的一系列论坛的权限。
@@ -88,7 +88,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 ## <a name="support-resources"></a>支持资源
 - 对于其他 Azure 社区资源，请访问 Azure 社区[支持页](https://azure.microsoft.com/support/forums/)。
 - [Azure 文档](/azure/)。
-- 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 Visual Studio [订阅支持团队](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 Visual Studio [订阅支持团队](https://aka.ms/vssubscriberhelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅

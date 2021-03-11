@@ -1,4 +1,5 @@
 ---
+description: 导入、导出或重置 Visual Studio 设置。
 title: “导入和导出设置”命令
 ms.date: 11/21/2018
 ms.topic: reference
@@ -13,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 587cabb19105041b73c4767e26ab20fd074d148f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f2ea4811af2c44277b9a6dc285972c5267b28d7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852448"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223663"
 ---
 # <a name="import-and-export-settings-command"></a>“导入和导出设置”命令
 
@@ -30,7 +31,7 @@ ms.locfileid: "99852448"
 Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 ```
 
-## <a name="switches"></a>开关
+## <a name="switches"></a>交换机
 
 /export:`filename`
 
@@ -44,9 +45,9 @@ Tools.ImportandExportSettings [/export:filename | /import:filename | /reset]
 
 可选。 重置当前设置。
 
-## <a name="remarks"></a>备注
+## <a name="remarks"></a>注解
 
-不带任何开关运行此命令将打开“导入和导出设置”向导  。 有关详细信息，请参阅[同步设置](../synchronized-settings-in-visual-studio.md)和[环境设置](../environment-settings.md)。
+不带任何开关运行此命令将打开“导入和导出设置”向导。 有关详细信息，请参阅[同步设置](../synchronized-settings-in-visual-studio.md)和[环境设置](../environment-settings.md)。
 
 ## <a name="example"></a>示例
 

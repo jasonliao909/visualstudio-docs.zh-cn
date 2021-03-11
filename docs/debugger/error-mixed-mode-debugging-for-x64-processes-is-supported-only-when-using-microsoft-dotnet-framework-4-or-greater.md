@@ -1,4 +1,5 @@
 ---
+description: 若要调试 64 位进程中的混合本机代码和托管代码，你必须安装了 .NET Framework 版本 4。
 title: 仅当使用 Microsoft .NET Framework 4 或更高版本时才支持对 x64 进程执行混合模式调试 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01f8bf0b018ed5dd91cedcc221a037f3502815e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31ae6b1c4a80f7d28cdbbdd2c4d944cddf15227d
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871489"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146946"
 ---
 # <a name="error-mixed-mode-debugging-for-x64-processes-is-supported-only-when-using-microsoft-net-framework-4-or-greater"></a>错误：仅当使用 Microsoft .NET Framework 4 或更高版本时才支持对 x64 进程执行混合模式调试
 若要调试 64 位进程中的混合本机代码和托管代码，你必须安装了 .NET Framework 版本 4。 低于 4 的 .NET Framework 版本不支持对 64 位进程进行混合模式调试。

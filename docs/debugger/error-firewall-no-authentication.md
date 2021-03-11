@@ -1,4 +1,5 @@
 ---
+description: 远程计算机上的 Internet 连接防火墙未设置为允许远程调试。
 title: 防火墙无身份验证 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cdd1b0bc56c0316d3a79cf59f744a7e2b0a2aece
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bb46b09af4f87ac93fd7001ff1de02a782ae263
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871606"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146985"
 ---
 # <a name="error-firewall-no-authentication"></a>错误：防火墙无身份验证
 远程计算机上的 Internet 连接防火墙未设置为允许远程调试。 对于遇到 `No Authentication` 错误的远程调试，必须将 msvsmon.exe 添加到例外列表。 可能还需要打开某些 IPSEC 端口。

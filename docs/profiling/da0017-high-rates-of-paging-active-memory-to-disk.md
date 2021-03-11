@@ -1,5 +1,6 @@
 ---
 title: DA0017 - 以分页方式将活动内存移到磁盘的发生率高 | Microsoft Docs
+description: 在分析运行中收集的系统性能数据表明：在整个分析运行期间，活动内存到磁盘的分页速率或从磁盘中分页活动内容的速率较高。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5f66db4c727be1377b41da381b75609af6478c10
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc3be6c354e7ac412ffa069caef4ee09396d6cb5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916765"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466080"
 ---
 # <a name="da0017-high-rates-of-paging-active-memory-to-disk"></a>DA0017：以分页方式将活动内存移到磁盘的发生率高
 

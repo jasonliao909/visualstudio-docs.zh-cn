@@ -1,4 +1,5 @@
 ---
+description: 当本地计算机尝试与远程计算机通信时，发生 DCOM 错误。
 title: 无法启动 DCOM 通信 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ddae1685935cbb5267d3cc4f994c16e99a542da
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7cf87815f7d6a09242d2b361db904094fcfcdea
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870917"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146439"
 ---
 # <a name="error-unable-to-initiate-dcom-communication"></a>错误：无法启动 DCOM 通信
 当本地计算机尝试与远程计算机通信时，发生 DCOM 错误。 这是由于远程服务器上存在防火墙或远程计算机上的 Windows 身份验证已中断。

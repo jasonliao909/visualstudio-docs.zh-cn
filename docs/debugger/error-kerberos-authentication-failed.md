@@ -1,5 +1,6 @@
 ---
 title: Kerberos 身份验证失败 | Microsoft Docs
+description: 当 Visual Studio 远程调试监视器在“本地系统”帐户或“网络服务”帐户下运行时，会发生此错误。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dd5b68c0312c3974667775f90ab4fec911206342
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871619"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466233"
 ---
 # <a name="error-kerberos-authentication-failed"></a>错误：Kerberos 身份验证失败
 当尝试进行远程调试时，可能会收到以下错误消息：

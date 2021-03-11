@@ -1,4 +1,5 @@
 ---
+description: 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。
 title: 已配置 Windows 文件共享... | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -14,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1cc81c8ef39aeeb716a26209a4aded0c69dcf95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc34e269d609837d9080cd1e84787fbabf45ce76
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870865"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146244"
 ---
 # <a name="error-windows-file-sharing-has-been-configured"></a>错误：已配置 Windows 文件共享...
 已配置 Windows 文件共享，因此您将使用另一不同的用户名连接到远程计算机。 这与远程调试不兼容
@@ -36,7 +37,7 @@ ms.locfileid: "99870865"
 
      \- 或 -
 
-     。 中断与远程计算机的连接，然后重新配置文件共享，以便使用您的帐户名称连接至其他计算机：
+     . 中断与远程计算机的连接，然后重新配置文件共享，以便使用您的帐户名称连接至其他计算机：
 
     1. 在“开始”菜单上，指向“附件”，然后单击“命令提示”  。
 

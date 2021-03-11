@@ -1,6 +1,6 @@
 ---
 title: 调试前台应用时使用调试器窗口 | Microsoft Docs
-Description: 如果要调试的程序必须留在前台，请使用远程调试以避免将其置于后台。
+description: 如果要调试的程序必须留在前台，请使用远程调试以避免将其置于后台。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 420a4073e4c00f66775bf55565c2ee8645d90f49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03a143ee2d04227171895bf2b14dff92545b9952
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911382"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155089"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
 ## <a name="problem-description"></a>问题描述

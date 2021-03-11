@@ -1,4 +1,5 @@
 ---
+description: 确定是否有任何会话启用了该提供程序。
 title: marker_series::is_enabled 方法 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e68ec76737308d9bc9478f4106420626389f5eeb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ce01d71b3fac63062a3f823f1862fd199fa39be
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223571"
 ---
 # <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 方法
 确定是否有任何会话启用了该提供程序。
@@ -40,9 +41,9 @@ bool is_enabled(
 ## <a name="return-value"></a>返回值
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [marker_series 类](../profiling/marker-series-class.md)

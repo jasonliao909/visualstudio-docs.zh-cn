@@ -1,4 +1,5 @@
 ---
+description: 您没有检查进程标识的权限。
 title: 你没有检查进程标识的权限 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6903cba8d048d5ed2969d5aa7436fc6eca17561e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2070f6734c667f64cb54e2c5fead8eb63fd50d2c
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870802"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146218"
 ---
 # <a name="error-you-do-not-have-permission-to-inspect-the-process39s-identity"></a>错误：你没有检查进程标识的权限
 您没有检查进程标识的权限。 这可能是您系统的配置造成的。

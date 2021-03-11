@@ -1,4 +1,5 @@
 ---
+description: 由于身份验证错误，无法对请求调试的用户进行身份验证。
 title: 调试失败，因为没有启用集成 Windows 身份验证 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -17,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1bbdc3e06dee87e7d8930bc5c4e60c6d25ee2f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3f95359c7963ca7da3d59f81aa471424c23de8a
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871736"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102147024"
 ---
 # <a name="error-debugging-failed-because-integrated-windows-authentication-is-not-enabled"></a>错误：调试失败，因为没有启用集成 Windows 身份验证
 由于身份验证错误，无法对请求调试的用户进行身份验证。 尝试单步执行 Web 应用程序或 XML Web service 时可能会出现此问题。 导致此错误的一种原因是未启用集成 Windows 身份验证。 若要启用该身份验证，请按照“启用集成 Windows 身份验证”中的步骤操作。
