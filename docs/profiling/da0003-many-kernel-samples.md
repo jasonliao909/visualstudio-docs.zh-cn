@@ -1,5 +1,6 @@
 ---
 title: DA0003 - 大量内核样本 | Microsoft Docs
+description: 为应用程序收集的很大一部分调用堆栈样本在内核模式下执行。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a72cb56209176e968f9198808f25c20edee96d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b93bbbcb2026ad6f7ef0d25dc359eb211a6c85f
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923830"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469944"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：大量内核样本
 

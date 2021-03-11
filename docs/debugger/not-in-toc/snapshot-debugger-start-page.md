@@ -1,4 +1,5 @@
 ---
+description: Visual Studio Snapshot Debugger 现在已连接到你的服务，你可以开始收集快照以帮助进行调试。
 title: Snapshot Debugger 的起始页
 ms.date: 07/14/2018
 robots: noindex, nofollow
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f237f121d0bd0a5eaa57cd2b198024d22951622
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96e0c6196d99b8a2b7ac9b4187dbd1397111abbd
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941991"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160337"
 ---
 # <a name="getting-started-with-the-snapshot-debugger"></a>Snapshot Debugger 入门
 

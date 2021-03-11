@@ -1,4 +1,5 @@
 ---
+description: 此错误表示远程调试器服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。
 title: 目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机 | Microsoft Docs
 titleSuffix: ''
 ms.custom: seodec18
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ef556e19946789abb5805727ccc42c1a9230d9af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a08f1a7638233e2633a34287aad500ee81245be6
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871255"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146686"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误：目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机 | Microsoft Docs
 此错误表示远程调试器服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。 使用旧版调试引擎进行远程调试，且远程调试器作为服务运行时，可能会发生此错误。

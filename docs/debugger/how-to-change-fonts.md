@@ -1,6 +1,6 @@
 ---
 title: 更改字体 | Microsoft Docs
-Description: 了解如何设置 Spy++ 窗口的字体、字体样式和字体大小。 可以将你的选择保存为将来 Spy++ 窗口的默认设置。
+description: 了解如何设置 Spy++ 窗口的字体、字体样式和字体大小。 可以将你的选择保存为将来 Spy++ 窗口的默认设置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 109ca82378fc7d59869b26cd02fcf2e803e5715f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b52a32d6360776572f17b1ab43a9c46f77ff18ec
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913436"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155024"
 ---
 # <a name="how-to-change-fonts"></a>如何：更改字体
 可更改 Spy++ 窗口的字体、字体样式和字体大小。

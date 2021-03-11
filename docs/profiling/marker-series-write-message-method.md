@@ -1,4 +1,5 @@
 ---
+description: 向并发可视化工具跟踪文件写入一条消息。
 title: 'marker_series:: write_message 方法 | Microsoft Docs'
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5610cc623476fa395fae7bf68c2ffa127c96e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927894"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223870"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series::write_message 方法
 向并发可视化工具跟踪文件写入一条消息。
@@ -55,9 +56,9 @@ void write_message(
  `_Category` Category.Importance 级别。
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [marker_series 类](../profiling/marker-series-class.md)

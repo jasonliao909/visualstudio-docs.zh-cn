@@ -1,4 +1,5 @@
 ---
+description: 表示由单个提供程序生成的一系列事件通道。
 title: marker_series 类 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bcd4386b8eff7589993458f1f7f6baaf7f33d4a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4df579ff4eb43dfca4c386716c49f12dae04e9fa
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917780"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223610"
 ---
 # <a name="marker_series-class"></a>marker_series 类
 表示由单个提供程序生成的一系列事件通道。
@@ -32,14 +33,14 @@ class marker_series;
 
 ### <a name="public-constructors"></a>公共构造函数
 
-|“属性”|描述|
+|名称|说明|
 |----------|-----------------|
 |[marker_series::marker_series 构造函数](../profiling/marker-series-marker-series-constructor.md)|初始化 `marker_series` 类的新实例。|
 |[marker_series::~marker_series 析构函数](../profiling/marker-series-tilde-marker-series-destructor.md)|销毁 marker_series 对象并释放所有已分配的资源。|
 
 ### <a name="public-methods"></a>公共方法
 
-|“属性”|描述|
+|名称|说明|
 |----------|-----------------|
 |[marker_series::is_enabled 方法](../profiling/marker-series-is-enabled-method.md)|确定是否有任何会话启用了该提供程序。|
 |[marker_series::write_alert 方法](../profiling/marker-series-write-alert-method.md)|向并发可视化工具跟踪文件写入一个警报。|
@@ -50,9 +51,9 @@ class marker_series;
  `marker_series`
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [diagnostic 命名空间](../profiling/diagnostic-namespace.md)

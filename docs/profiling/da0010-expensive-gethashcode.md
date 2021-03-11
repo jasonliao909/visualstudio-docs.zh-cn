@@ -1,5 +1,6 @@
 ---
 title: DA0010 - 高开销 GetHashCode | Microsoft Docs
+description: 对该类型的 GetHashCode 方法的调用在分析数据中占很大比例或此方法分配内存。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fc9c1b35a78a8d9453ab35f201a120bc75134768
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d44c998cabd3611e2ed393be0ad7df20e1ac49c
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916836"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102469919"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：高开销 GetHashCode
 

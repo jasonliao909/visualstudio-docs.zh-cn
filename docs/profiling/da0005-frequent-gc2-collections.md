@@ -1,4 +1,5 @@
 ---
+description: 第 2 代垃圾回收期间回收大量的 .NET 内存对象。
 title: DA0005 - 频繁进行 GC2 收集 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd27843ade6217f0b465645fed4b0abfaf9365e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73b24eba94791a9a24b80898fb7333665ed13caf
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937662"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221023"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：频繁进行 GC2 收集
 

@@ -1,6 +1,6 @@
 ---
 title: 在单步跟踪程序时保持焦点 | Microsoft Docs
-Description: 调试窗口激活问题时，使用远程调试防止程序失去焦点。
+description: 调试窗口激活问题时，使用远程调试防止程序失去焦点。
 ms.custom: SEO-VS-2020, seodec18
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b821c374a87983ab8cb2667b434b1509e8449f31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9700b5f62637cb70900845185578fbb272f5a22b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911445"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155162"
 ---
 # <a name="how-can-i-keep-focus-when-stepping-through-my-app"></a>如何在逐句执行应用代码时保持焦点？
 ## <a name="description"></a>描述

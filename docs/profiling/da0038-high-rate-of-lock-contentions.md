@@ -1,5 +1,6 @@
 ---
 title: DA0038 - 锁争用率很高 | Microsoft Docs
+description: 与分析数据一起收集的系统性能数据表示：应用程序执行期间的锁争用率非常高。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d44b512f5f9b56108c9abf65dd8e15500423cc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1dcf86ac1fb54c8898427c5b0166dc0f0175027
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971162"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465920"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率高
 

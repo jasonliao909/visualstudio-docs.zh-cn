@@ -1,4 +1,5 @@
 ---
+description: 从 Visual Studio 2019 版本 16.8 开始，可以从 Visual Studio 使用“发布”工具，通过 ClickOnce 发布 .NET Core 3.1 或更高版本的 Windows 桌面应用程序。
 title: 使用 ClickOnce 部署 .NET Windows 桌面应用程序
 ms.date: 10/15/2020
 ms.topic: quickstart
@@ -11,12 +12,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5a6f7c2c8d6c79270df94c100bbd4625856efa15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934502"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165704"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>使用 ClickOnce 部署 .NET Windows 桌面应用程序
 

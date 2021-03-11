@@ -1,4 +1,5 @@
 ---
+description: 在你尝试调试 Transact-SQL 或 SQLCLR 过程，而调试器未收到来自 SQL Server 的调试消息时，就会出现此错误。
 title: Transact-SQL 执行未经调试便已结束 | Microsoft Docs
 ms.date: 11/08/2018
 ms.topic: error-reference
@@ -15,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 660b6c8b1f8d09baf35d3d019fe80d428e9d7525
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40b0b89474b24e53c69df14894e50ee502c6eb9b
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871125"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146491"
 ---
 # <a name="error-transact-sql-execution-ended-without-debugging"></a>错误：Transact-SQL 执行未经调试便已结束
 
