@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 10/26/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 了解如何利用适用于具有企业协议的客户的特殊 Azure 开发测试定价
-ms.openlocfilehash: a4da6356c250b3c07cb19fb8bf4c5e260e9d3e29
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904462"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249467"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 企业协议开发测试套餐
 
@@ -32,7 +32,7 @@ ms.locfileid: "92904462"
 0. 将鼠标悬停在该帐户的名称上。 
 0. 单击最右侧的“编辑”图标（铅笔）  。 
 0. 单击“开发/测试”复选框  。
-0. 单击“ **保存** ”。
+0. 单击“ **保存**”。
 
 ## <a name="create-individual-subscriptions-within-the-account"></a>在帐户中创建单个订阅
 帐户上的每个订阅者都可以通过执行以下步骤来创建订阅：
@@ -40,6 +40,9 @@ ms.locfileid: "92904462"
 0. 选择“Enterprise 开发/测试”套餐  。
 0. 单击该复选框以确认订阅受企业协议的约束。 
 0. 单击“购买”  。  （通过此套餐，你实际上不会付费。）
+
+## <a name="resources"></a>资源
+- 需要帮助?  联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

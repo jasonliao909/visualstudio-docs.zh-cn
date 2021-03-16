@@ -1,5 +1,6 @@
 ---
 title: DA0030 - 收集数据库项目的层交互测量值 | Microsoft Docs
+description: 对 System.Data 方法的调用是分析数据的重要组成部分，并且尚未在分析运行过程中收集层交互数据。 请考虑再次进行分析并添加层交互数据。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -13,12 +14,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bfce545cd3e7eb5e13e28ec7d22aaba4f7cbecfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44720e086fa0c9201fba319e445a44835faa9c2e
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908743"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465876"
 ---
 # <a name="da0030-gather-tier-interaction-measurements-for-database-projects"></a>DA0030：收集数据库项目的层交互度量值
 

@@ -12,14 +12,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 854d3e23252e63d6330abd9f1704890d3b90ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 104927d42f7ec68e43686278042c0712bb3c875e
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908311"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250089"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
+
 若要调试已部署到 IIS 的 ASP.NET 应用程序，请在部署了应用的计算机上安装并运行远程工具，然后从 Visual Studio 附加到正在运行的应用。
 
 ![远程调试器组件](../debugger/media/remote-debugger-aspnet.png "Remote_debugger_components")
@@ -39,6 +40,7 @@ ms.locfileid: "99908311"
 ::: moniker-end
 
 这些过程已在以下服务器配置上进行了测试：
+
 * Windows Server 2012 R2 和 IIS 8（对于 Windows Server 2008 R2，服务器步骤有所不同）
 
 ## <a name="network-requirements"></a>网络要求
@@ -130,10 +132,17 @@ ms.locfileid: "99908311"
 
 应用成功部署后，它应自动启动。 如果在 Visual Studio 中无法启动应用，请在 IIS 中启动。
 
-1. 在“设置”对话框中，单击“下一步”启用调试，选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”。
+1. 切换到调试配置。
 
-    > [!IMPORTANT]
-    > 如果选择发布配置，则在发布时，需要在 web.config 文件中禁用调试。
+   ::: moniker range=">=vs-2019"
+   选择“编辑”以编辑配置文件，然后选择“设置”。 选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   在“设置”对话框中，单击“下一步”启用调试，选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”    。
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > 如果选择发布配置，则在发布时，需要在 web.config 文件中禁用调试。
 
 1. 单击“保存”，然后重新发布应用。
 

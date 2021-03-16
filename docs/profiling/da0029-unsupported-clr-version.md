@@ -1,5 +1,6 @@
 ---
 title: DA0029 - 不支持的 CLR 版本 | Microsoft Docs
+description: 尝试分析的应用程序使用不受分析工具支持的 .NET Framework 1.1。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -16,12 +17,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 18cf60804e65f2cb67f74c5739a879a633043778
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3f5e5129bed479273e141af70121d5a344972e2
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936608"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102465837"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支持的 CLR 版本
 

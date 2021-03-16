@@ -1,4 +1,5 @@
 ---
+description: 初始化 span 类的新实例。
 title: span::span 构造函数 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a813506e64242d1effdb9ed64d35c9ee5d31239
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fdffdc59b31f5f04817536769d9a712484e6cdd7
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949969"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223857"
 ---
 # <a name="spanspan-constructor"></a>span::span 构造函数
 
@@ -64,10 +65,10 @@ span(
 
 ## <a name="requirements"></a>要求
 
-**Header:** *cvmarkersobj.h*
+**标头：cvmarkersobj.h** 
 
 **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [span 类](../profiling/span-class.md)

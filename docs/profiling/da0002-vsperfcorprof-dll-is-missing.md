@@ -1,5 +1,6 @@
 ---
 title: DA0002 - 缺少 VSPerfCorProf.dll | Microsoft Docs
+description: 当使用命令行工具收集探查器数据，但未使用 VSPerfCLREnv.cmd 工具初始化必要的环境变量时，或者如果分析工具启动时另一个探查器正在运行，则会出现此警告。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,12 +15,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b6437daa245343f5a7fc40e5564ee6f2f885e14
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 763a28dcb2200549b13b3562ffe3ab9fa629cdc5
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868291"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466175"
 ---
 # <a name="da0002-vsperfcorprofdll-is-missing"></a>DA0002：缺少 VSPerfCorProf.dll
 

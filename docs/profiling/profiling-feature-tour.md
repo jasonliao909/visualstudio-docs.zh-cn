@@ -2,7 +2,7 @@
 title: 分析工具入门
 description: 简要了解 Visual Studio 中提供的各种诊断工具。
 ms.custom: ''
-ms.date: 09/08/2020
+ms.date: 02/18/2021
 ms.topic: overview
 f1_keywords:
 - vs.diagnosticshub.overview
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bfd7055303fed2c18501d5eea3b49b34c68ec248
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929103"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102145373"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 
@@ -162,6 +162,14 @@ CPU 使用率工具很适合用于开始分析应用的性能。 它将向你详
 
 Allocation![](./media/db-gotosource.png "分配")
 
+## <a name="visualize-net-counters-net-core"></a>可视化 .NET 计数器 (.NET Core)
+
+从 Visual Studio 2019 版本 16.7 开始，可以使用 Visual Studio 中的 [.NET 计数器工具](../profiling/dotnet-counters-tool.md)可视化性能计数器。 可以使用 [dotnet 计数器](/dotnet/core/diagnostics/dotnet-counters)可视化创建的计数器。 dotnet 计数器支持许多计数器，例如 CPU 使用率和垃圾回收器堆大小。
+
+该工具在列表视图中显示每个计数器的实时值。
+
+:::image type="content" source="../profiling/media/dotnet-counters-tool-collecting.png" alt-text=".NET 计数器工具正在收集数据。":::
+
 ::: moniker-end
 
 ## <a name="examine-ui-performance-and-accessibility-events-uwp"></a>检查 UI 性能和可访问性事件 (UWP)
@@ -235,6 +243,7 @@ JavaScript 内存工具类似于适用于其他应用类型的内存使用量工
 |[应用程序时间线](../profiling/application-timeline.md)|是 (XAML)|是|否|
 |[事件查看器](../profiling/events-viewer.md)|是|是|是|
 |[.NET Async](../profiling/analyze-async.md)|是（仅用于 .NET）|是|是|
+|[.NET 计数器](../profiling/dotnet-counters-tool.md)|是（仅限 .NET Core）|否|是（仅限 ASP.NET Core）|
 |[数据库](../profiling/analyze-database.md)|是（仅限 .NET Core）|否|是（仅限 ASP.NET Core）|
 |[性能资源管理器](#analyze-performance-legacy-tools)|否|否|否|
 |[IntelliTrace](../debugger/intellitrace.md)|仅适用于带有 Visual Studio Enterprise 的 .NET|仅适用于带有 Visual Studio Enterprise 的 .NET|仅适用于带有 Visual Studio Enterprise 的 .NET|

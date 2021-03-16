@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 10bfed2a9a2a0ce466e1b3276a487695d40fb580
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65785384746fa3f16dd25f0405e5ead45c553c21
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964558"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221153"
 ---
 # <a name="configure-unit-tests-by-using-a-runsettings-file"></a>使用 .runsettings 文件配置单元测试
 
@@ -82,6 +82,9 @@ ms.locfileid: "99964558"
 
 #### <a name="autodetect-the-run-settings-file"></a>自动检测运行设置文件
 
+> [!NOTE]
+> 这仅适用于名为 `.runsettings` 的文件。
+
 若要自动检测运行设置文件，请将其放在解决方案的根目录下。
 
 如果启用了自动检测运行设置文件，则此文件中的设置将应用到所有测试运行。 可使用两种方法打开 runsettings 文件自动检测：
@@ -135,7 +138,7 @@ ms.locfileid: "99964558"
 
 若要从命令行运行测试，请使用 vstest.console.exe 并使用 /Settings 参数指定设置文件。
 
-1. 打开 Visual Studio [开发人员命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)。
+1. 打开 [Visual Studio 的开发人员命令提示](../ide/reference/command-prompt-powershell.md)。
 
 2. 输入类似的命令：
 

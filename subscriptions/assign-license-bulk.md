@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 02/02/2021
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 了解管理员如何使用批量添加功能或 Microsoft Azure Active Directory 组将许可证分配给多个订阅者
-ms.openlocfilehash: 995859dce259b3a4edf968fac98723e226cf59d5
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 76717090731b2e1fad0758c3c6298ab572bbb4de
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511366"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249578"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。
@@ -147,4 +147,4 @@ ms.locfileid: "99511366"
 
 ## <a name="next-steps"></a>后续步骤
 - 只有一两个订阅者要添加？  请查阅[添加单个用户](assign-license.md)
-- 需要帮助？ 联系 [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)。
+- 需要帮助？ 联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。

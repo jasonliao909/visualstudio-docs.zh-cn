@@ -2,7 +2,7 @@
 title: 管理 npm 包
 description: Visual Studio 可帮助你使用 Node.js 包管理器 (npm) 来管理包
 ms.custom: seodec18
-ms.date: 04/16/2020
+ms.date: 02/23/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 26c750a11c2910a6c6f91e1207d731024af64a5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962712"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102165808"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
@@ -179,5 +179,7 @@ package.json 中的 IntelliSense 可帮助选择特定版本的 npm 包  。
 * 对于 Node.js 项目，必须为 npm 支持安装“Node.js 开发”工作负载  。
 
 * 在某些情况下，由于[此处](https://github.com/aspnet/Tooling/issues/479)所述的已知问题，解决方案资源管理器可能无法正确显示已安装 npm 包的状态。 例如，在安装包时，可能会显示为未安装。 在大多数情况下，可以通过删除 package.json，重启 Visual Studio 并重新添加 package.json 文件来更新解决方案资源管理器，如本文前面所述   。 也可在安装包时使用“npm 输出”窗口来验证安装状态。
+
+* 在某些 ASP.NET Core 方案中，在生成项目后，解决方案资源管理器中的 npm 节点可能不可见。 若要使节点再次可见，请右键单击项目节点，然后选择“卸载项目”。 然后，右键单击项目节点，并选择“重新加载项目”。
 
 * 如果在生成应用或转译 TypeScript 代码时看到任何错误，请检查 npm 包是否由于潜在错误源而不兼容。 若要帮助识别错误，请在安装包时检查“npm 输出”窗口，如本文前面所述。 例如，如果所使用的一个或多个 npm 包版本是已弃用的版本，并导致发生错误，则可能需要安装较新版本以消除错误。 有关使用 package.json  控制 npm 包版本的信息，请参阅 [package.json 配置](../javascript/configure-packages-with-package-json.md)。

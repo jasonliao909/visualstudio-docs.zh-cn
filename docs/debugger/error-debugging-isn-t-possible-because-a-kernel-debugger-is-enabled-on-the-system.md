@@ -1,5 +1,6 @@
 ---
 title: 无法进行调试，因为系统上已启用内核调试程序 | Microsoft Docs
+description: 当你尝试在已在调试模式下启动的 Windows 7 或 Windows Vista 系统上调试托管代码时，如果应用程序使用 CLR 版本 CLR 2.0、3.0 或 3.5，则会出现此消息。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a06ed9092145188bf5fbecd2caeb42f5ad5c2e3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ced7fb79a11321678ae2963241807e5ddd4600ab
+ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871762"
+ms.lasthandoff: 03/08/2021
+ms.locfileid: "102466454"
 ---
 # <a name="error-debugging-isn39t-possible-because-a-kernel-debugger-is-enabled-on-the-system"></a>错误：无法进行调试，因为系统上已启用内核调试程序
 调试托管代码时，你可能会收到以下错误消息：

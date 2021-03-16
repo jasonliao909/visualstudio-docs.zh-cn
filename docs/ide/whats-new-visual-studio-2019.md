@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 03/02/2021
+ms.date: 03/04/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e3dc790310fdff71539c6cae354a0170ec36e65e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684022"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102221179"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -47,11 +47,19 @@ ms.locfileid: "101684022"
 
 ### <a name="improved-search"></a>改进的搜索
 
-（以前称为快速启动）我们的新搜索体验更快、更有效。 现在，搜索结果会在键入时动态显示。 并且，搜索结果通常可以包括命令的键盘快捷方式，更便于记忆以备将来使用。
+（以前称为快速启动）我们的新搜索体验更快、更有效。 现在，搜索结果会在键入时动态显示。 并且，搜索结果通常可以包括命令的键盘快捷方式，便于记忆以备将来使用。
 
    ![Visual Studio 2019 中的新搜索体验动画](media/vs-2019/new-search-feature.gif "Visual Studio 2019 中的新搜索体验。")
 
 新的模糊搜索逻辑将找到你需要的所有内容，而不考虑拼写错误。 因此，无论你是在寻找命令、设置、文档还是其他有用的操作，新的搜索功能都可以让你更轻松地找到所需内容。
+
+有关详细信息，请参阅[使用 Visual Studio 搜索](visual-studio-search.md)。
+
+#### <a name="intelligent-search-service"></a>智能搜索服务
+
+16.9 中的新增功能：通过使用云驱动技术、人工智能和机器学习，我们改进了搜索结果。 现在，在 Visual Studio 中搜索不仅会生成更相关的结果，还可以帮助你更轻松地发现产品功能。
+
+有关详细信息，请参阅[智能 Visual Studio 搜索服务](https://devblogs.microsoft.com/visualstudio/intelligent-visual-studio-search-service/)博客文章。
 
 ### <a name="refactorings"></a>重构
 

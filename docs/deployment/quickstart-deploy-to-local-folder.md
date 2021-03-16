@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b16c10d13f63be43ad2e8c3e16d24c0f9fd5e38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ef2036af7b93ee6eeaaa14cb8733a4e0ced638
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927426"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249512"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 将应用部署到文件夹
 
@@ -46,25 +46,34 @@ ms.locfileid: "99927426"
 
 1. 在“发布”窗口中，选择“文件夹”。
 
-    ![选择文件夹作为发布目标](../deployment/media/quickstart-publish-folder-new.png "选择文件夹")
+   ![选择文件夹作为发布目标](../deployment/media/quickstart-publish-folder-new.png "选择文件夹")
 
-::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2019"
 
-4. 如果要部署 .NET Core 3.1 或更高版本的 Windows 应用程序，则可能需要在“特定目标”窗口中选择“文件夹” 。
+   如果要部署 .NET Core 3.1 或更高版本的 Windows 应用程序，则可能需要在“特定目标”窗口中选择“文件夹” 。
 
-![选择文件夹作为特定目标](../deployment/media/quickstart-publish-folder-targets.png "选择特定目标")
+   ![选择文件夹作为特定目标](../deployment/media/quickstart-publish-folder-targets.png "选择特定目标")
 
-5. 如果你希望使用 ClickOnce 发布 .NET Core 3.1 或更高版本的 Windows 应用程序，请参阅[使用 ClickOnce 部署 .NET Windows 应用程序](quickstart-deploy-using-clickonce-folder.md)。
+   如果你希望使用 ClickOnce 发布 .NET Core 3.1 或更高版本的 Windows 应用程序，请参阅[使用 ClickOnce 部署 .NET Windows 应用程序](quickstart-deploy-using-clickonce-folder.md)。
+   ::: moniker-end
 
- ::: moniker-end
+1. 输入路径，或选择“浏览”以指定文件夹。
 
-4. 输入路径，或选择“浏览”以指定文件夹。
+   ![指定文件夹的路径](../deployment/media/quickstart-publish-folder-path.png "选择文件夹")
 
-    ![指定文件夹的路径](../deployment/media/quickstart-publish-folder-path.png "选择文件夹")
+   ::: moniker range=">=vs-2019"
+   单击“完成”保存配置文件。
 
-1. 选择“发布”。 Visual Studio 将生成项目并将其发布到指定文件夹。 项目属性“发布”窗格出现，显示配置文件摘要。
+   ![显示配置文件摘要的“发布”属性窗格](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
-    ![显示配置文件摘要的“发布”属性窗格](../deployment/media/quickstart-publish-folder-summary.png)
+1. 选择“发布”。 Visual Studio 将生成项目并将其发布到指定文件夹。
+
+   ::: moniker range="vs-2017"
+   项目属性“发布”窗格出现，显示配置文件摘要。
+
+   ![显示配置文件摘要的“发布”属性窗格](../deployment/media/quickstart-publish-folder-summary.png)
+   ::: moniker-end
 
 1. 要配置部署设置，请选择发布文件摘要中的“编辑”并选择“设置”选项卡 。
 

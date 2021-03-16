@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: e10f9b628d1d9fbbdb2911977fe7e63b1a7b6d57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04ef9834fdc66256b601ecdcf156e4d290447ce3
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957473"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102171313"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中对 JavaScript 和 TypeScript 代码进行单元测试
 
@@ -97,7 +97,7 @@ describe('Test Suite 1', function() {
 
 ### <a name="run-tests-from-the-command-line"></a>从命令行运行测试
 
-可使用以下命令从 Visual Studio 的[开发人员命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)中运行测试：
+可使用以下命令从 [Visual Studio 的开发人员命令提示](../ide/reference/command-prompt-powershell.md)中运行测试：
 
 ```
 vstest.console.exe <path to project file>\NodejsConsoleApp23.njsproj /TestAdapterPath:<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter
@@ -152,11 +152,12 @@ Test execution time: 1.5731 Seconds
 Visual Studio 启动时开始发现可用测试框架。 如果在 Visual Studio 运行时添加框架，请重启 Visual Studio 检测框架。 但是，对实现做出更改时无需重启。
 
 ## <a name="unit-tests-in-other-project-types"></a>其他项目类型中的单元测试
+
 并不局限于在 Node.js 项目中编写单元测试。 将 TestFramework 和 TestRoot 属性添加到任何 C# 或 Visual Basic 项目时，将枚举这些测试，并且可使用“测试资源管理器”窗口运行它们。
 
 为实现此操作，请在解决方案资源管理器中右键单击项目节点，选择“卸载项目”，然后选择“编辑项目”。 然后在项目文件中，将以下两个元素添加到属性组中。
 
-> [!NOTE]
+> [!IMPORTANT]
 > 确保未对要添加元素的属性组指定条件。
 > 这可能会导致意外行为。
 
@@ -170,6 +171,7 @@ Visual Studio 启动时开始发现可用测试框架。 如果在 Visual Studio
 接下来，将测试添加到指定的测试根文件夹，它们将可以在“测试资源管理器”窗口中运行。 如果最初未显示它们，可能需要重新生成项目。
 
 ### <a name="unit-test-net-core-and-net-standard"></a>对 .NET Core 和 .NET Standard 进行单元测试
+
 除了上述属性之外，你还需要安装 NuGet 包[Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) 并设置以下属性：
 
 ```xml

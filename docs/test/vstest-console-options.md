@@ -12,12 +12,12 @@ author: mikejo5000
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6256343efbc9b81c14b03753fab2fa478df1e4f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86544ad36874ec2a99fac0f8505b24548e83c7c0
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946184"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102168356"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 
@@ -28,7 +28,7 @@ VSTest.Console.exe 是用于运行测试的命令行工具。 可在命令行上
 >
 > 若要在基于 ARM 架构的计算机上运行自动测试，则必须使用 VSTest.Console.exe。
 
-打开一个[开发人员命令提示](/dotnet/framework/tools/developer-command-prompt-for-vs)以使用命令行工具，或者可在 %Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft> 中找到该工具。
+打开[开发人员命令提示](../ide/reference/command-prompt-powershell.md)以使用命令行工具，或者可在 %Program Files(x86)%\Microsoft Visual Studio\\<version\>\\<edition\>\common7\ide\CommonExtensions\\<Platform | Microsoft> 中找到该工具。
 
 ## <a name="general-command-line-options"></a>常规命令行选项
 

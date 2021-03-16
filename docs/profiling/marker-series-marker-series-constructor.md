@@ -1,4 +1,5 @@
 ---
+description: 初始化 marker_series 类的新实例。
 title: marker_series::marker_series 构造函数 | Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: afb15ceed45389d1c442c18cf14e8eaf4150631f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d82c78bc6126f6b3d96b77b39c729c4f452a28
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917650"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102223974"
 ---
 # <a name="marker_seriesmarker_series-constructor"></a>marker_series::marker_series 构造函数
 初始化 `marker_series` 类的新实例。
@@ -44,9 +45,9 @@ marker_series(
  `_ProviderGuid` 系列提供程序的 GUID。
 
 ## <a name="requirements"></a>要求
- **Header:** *cvmarkersobj.h*
+ **标头：cvmarkersobj.h** 
 
  **命名空间：** Concurrency::diagnostic
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [marker_series 类](../profiling/marker-series-class.md)

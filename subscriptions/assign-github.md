@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
-ms.date: 02/02/2021
+ms.date: 03/03/2021
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: ca71e696081e304cdbb8cc58576e0ae4c536f911
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511314"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249696"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
@@ -32,12 +32,33 @@ ms.locfileid: "99511314"
 > [!Important]
 > 如果 Visual Studio 订阅管理员在没有先购买的情况下分配带有 GitHub Enterprise 的 Visual Studio 订阅，则不会通知 GitHub 你要创建 GitHub Enterprise 帐户。  在分配订阅之前，应购买至少一个带有 GitHub Enterprise 的 Visual Studio 订阅。
 
+## <a name="moving-to-visual-studio-with-github-enterprise"></a>移动到带有 GitHub Enterprise 的 Visual Studio
+如果你的组织在分配了标准 Visual Studio Enterprise 和 Visual Studio Professional 订阅后，购买了带有 GitHub Enterprise 捆绑包的 Visual Studio 订阅，则管理门户将包含一项功能，可帮助你将现有订阅者移动到相应的带有 GitHub Enterprise 的 Visual Studio Enterprise 和/或带有 GitHub Enterprise 订阅的 Visual Studio Professional。  例如，带有 Visual Studio Professional 订阅的订阅者将移至带有 GitHub Enterprise 订阅的 Visual Studio Professional。 在左侧栏的“概述”面板中，你将看到以下图块：
+
+   > [!div class="mx-imgBorder"]
+   > ![“立即移动”按钮](_img/assign-github/move-now.png "单击“立即移动”将订阅升级到带有 GitHub Enterprise 订阅的 Visual Studio")
+
+> [!IMPORTANT]
+> 如上所述，现有的订阅者数据、历史记录和订阅 ID 将得以保留，并且他们激活的任何权益都不会因本次移动而中断。  
+>
+> 此功能正在分阶段部署，根据你的协议，你可能无法立即使用此功能。
+
+单击“立即移动”按钮时，浮出面板将为你提供有关移动 Enterprise 和/或 Professional 订阅的建议：
+
+   > [!div class="mx-imgBorder"]
+   > ![浮出面板](_img/assign-github/fly-out.png)
+
+在此图块中，你可以查看受影响的订阅者，并指定是否希望在移动完成后通知他们接收电子邮件通知。  此电子邮件通知订阅者，他们的权益保持不变，并鼓励他们开始在 GitHub 中建立存在感。  
+
+单击“移动所有订阅者”按钮后，你需要确认选择并等待几秒钟以待订阅移动完成。  如果适用，你需要分别为 Professional 和 Enterprise 执行这些步骤。  
+
+
 ## <a name="what-is-the-visual-studio-with-github-enterprise-setup-process"></a>带有 GitHub Enterprise 的 Visual Studio 的设置过程是怎样的？
 GitHub Enterprise 的设置和管理独立于 Visual Studio 订阅。 购买带有 GitHub Enterprise 的 Visual Studio 订阅后，与在 [manage.visualstudio.com](https://manage.visualstudio.com) 中建立协议的同时（但独立于此），GitHub Enterprise 帐户设置过程将会启动。 建立此 GitHub Enterprise 帐户可能需要一些时间。 
 
 你的公司设置了 GitHub Enterprise 帐户后，已被分配了带有 GitHub Enterprise 的 Visual Studio 订阅的订阅者将收到来自 GitHub 的一封电子邮件，通知他们其 Visual Studio 订阅已链接。 订阅者收到此电子邮件后，他们可以联系其 GitHub 组织管理员，以收到相应组织的邀请。
 
-有关 GitHub Enterprise 设置的其他详细信息，请参阅[订阅者文档](access-github.md)。   
+有关 GitHub Enterprise 设置的详细信息，请参阅[订阅者文档](access-github.md)。   
 
 ## <a name="manage-github-enterprise-subscriptions"></a>管理 GitHub Enterprise 订阅
 购买 GitHub Enterprise 订阅时，GitHub 会与客户合作，帮助他们创建和配置将访问 GitHub 和确定管理员的组织。  这些管理员之后会收到一则通知，其中指出已将其设置为管理员。  
@@ -51,7 +72,7 @@ GitHub 可作为基于云的 GitHub.com 提供，也可提供为本地 GitHub En
 - 访问 [GitHub 文档](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)，了解有关 GitHub 分配的详细信息
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com/en)。
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 

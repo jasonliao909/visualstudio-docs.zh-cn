@@ -3,15 +3,15 @@ title: 向 Visual Studio 订阅者分配特定 GUID | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 10/22/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 了解管理员如何将特定订阅 GUID 分配给订阅者
-ms.openlocfilehash: 1097743d1640fbadba550f3c2ee6908ac694436d
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467474"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249675"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配特定订阅
 
@@ -40,8 +40,8 @@ ms.locfileid: "92467474"
 
 如果以前使用过“导出”工具，你就会发现新字段已添加到生成的电子表格中。  这些字段将有助于你确定每个订阅的状态以及要分配给用户的订阅的状态。  
 
-- **订阅状态** ：此字段将指示“已分配”或“未分配”。  如果订阅的状态为“已分配”，则该订阅还将具有与其关联的用户信息，如姓名、电子邮件等。 
-- **使用状态** ：使用状态将指示“新”和“已使用”，前者指示它从未分配给用户，后者指示它已在某个时间点分配给了用户。  
+- **订阅状态**：此字段将指示“已分配”或“未分配”。  如果订阅的状态为“已分配”，则该订阅还将具有与其关联的用户信息，如姓名、电子邮件等。 
+- **使用状态**：使用状态将指示“新”和“已使用”，前者指示它从未分配给用户，后者指示它已在某个时间点分配给了用户。  
 
 你可以使用这些字段中的值以及电子表格中的其他信息来确定要分配给单个用户的订阅。 可以在 Excel 中应用筛选器，以帮助按状态、订阅级别、到期日期等缩小列表范围。 
 
@@ -62,7 +62,10 @@ ms.locfileid: "92467474"
 ### <a name="q-how-do-i-change-which-subscription-is-currently-assigned-to-an-individual-user"></a>问：如何更改当前分配给单个用户的订阅？
 答：如果要更改分配给用户的 GUID，必须首先删除该用户的订阅。  有关详细信息，请参阅[删除订阅](delete-license.md)一文。  删除该用户的订阅后，请使用上述过程导出列表并上传新的订阅信息。  
 
-## <a name="see-also"></a>请参阅
+## <a name="resources"></a>资源
+- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

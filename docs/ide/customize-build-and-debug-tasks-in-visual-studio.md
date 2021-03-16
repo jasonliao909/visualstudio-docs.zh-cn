@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1088cae031dc3498d2c5cdcd33db8d42f721b7d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954418"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102161295"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 
@@ -217,7 +217,7 @@ bin:
 
 |宏|描述|
 |-|-|
-|`${env.<VARIABLE>}`| 指定为开发人员命令提示符设置的任何环境变量（例如，${env.PATH}、${env.COMSPEC} 等）。 有关详细信息，请参阅 [Visual Studio 开发人员命令提示符](/dotnet/framework/tools/developer-command-prompt-for-vs)。|
+|`${env.<VARIABLE>}`| 指定为开发人员命令提示符设置的任何环境变量（例如，${env.PATH}、${env.COMSPEC} 等）。 有关详细信息，请参阅[开发人员命令提示和开发人员 PowerShell](../ide/reference/command-prompt-powershell.md)。|
 |`${workspaceRoot}`| 工作区文件夹的完整路径（例如，C:\sources\hello）|
 |`${file}`| 为再次运行该任务而选择的文件或文件夹的完整路径（例如，C:\sources\hello\src\hello.js）|
 |`${relativeFile}`| 文件或文件夹的相对路径（例如，src\hello.js）|
