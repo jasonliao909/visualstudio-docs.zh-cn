@@ -1,4 +1,5 @@
 ---
+description: 下表列出了其各自类别中的 JavaScript 运算符。
 title: JavaScript)  (的操作员摘要 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -12,42 +13,42 @@ ms.assetid: 3bc55336-912f-4ff8-8d28-1e26e0144840
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: de5d26f810fc1ab46c5ef09112fd62fada5d7d9b
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 47f14b0d8ee87877dc8f4305eb19679ea19fb9e3
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862105"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571683"
 ---
 # <a name="operator-summary-javascript"></a>运算符摘要 (JavaScript)
 下表列出了 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 它们各自类别中的运算符。  
   
 ## <a name="computational-operators"></a>算术运算符  
   
-|操作员|符号|  
+|运算符|符号|  
 |--------------|------------|  
-|[相加](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
+|[加法](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|+|  
 |[递减](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|--|  
 |[部门](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|/|  
 |[增量](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Increment)|++|  
 |[余数](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|%|  
-|[倍增](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
+|[乘法](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|*|  
 |[减法](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
 |[一元求反](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|-|  
   
 ## <a name="logical-operators"></a>逻辑运算符  
   
-|操作员|符号|  
+|运算符|符号|  
 |--------------|------------|  
 |[逗号](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operatorhttps://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Comma_Operator)|,|  
 |[条件 (三元) ](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators/Conditional_Operator)|?:|  
 |[等式](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|==|  
-|[大于](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>|  
-|[大于或等于](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|>=|  
+|大于|>|  
+|大于或等于 |>=|  
 |[标识](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|===|  
 |[不相等](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!=|  
 |[小于](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<|  
-|[小于或等于](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|<=|  
+|小于或等于 |<=|  
 |[逻辑与](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&&|  
 |[逻辑非](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|!|  
 |[逻辑或](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators)|&#124;&#124;|  
@@ -55,7 +56,7 @@ ms.locfileid: "91862105"
   
 ## <a name="bitwise-operators"></a>位运算符  
   
-|操作员|符号|  
+|运算符|符号|  
 |--------------|------------|  
 |[位与](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Bitwise_AND)|&|  
 |[按位左移](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Operators#Left_shift)|<\<|  

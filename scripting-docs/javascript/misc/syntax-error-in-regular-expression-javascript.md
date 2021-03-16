@@ -1,4 +1,5 @@
 ---
+description: 搜索字符串的结构违反了 JavaScript 正则表达式的一个或多个语法规则。
 title: " (JavaScript) 的正则表达式中有语法错误 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 7799ed69-c877-42a1-87cf-ad6739302c10
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: b6cb95c0cb5c4178267241c57cc431c8b7acff21
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 10ff0350ef612fd247fd8837639e05c4ae0559a4
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862030"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572086"
 ---
 # <a name="syntax-error-in-regular-expression-javascript"></a>正则表达式中有语法错误 (JavaScript)
 搜索字符串的结构违反了正则表达式中的一个或多个语法规则 [!INCLUDE[javascript](../../javascript/includes/javascript-md.md)] 。  

@@ -1,4 +1,5 @@
 ---
+description: 您尝试在一行上放置多个语句，但没有用分号分隔。
 title: 应输入 ";" |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 3070cc6c-1138-4655-a7ac-723379f48f94
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2898a007e07dea326bbcd7b8d19f1a623941605d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49b039ef4e225693a2baa6cf434a672245ebd383
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862404"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570409"
 ---
 # <a name="expected-"></a>应用“;”
 您尝试在一行上放置多个语句，但没有用分号分隔。 分号用于终止语句。 虽然您可以将多个语句放置在单个行上，但每个语句必须使用分号进行分隔。  

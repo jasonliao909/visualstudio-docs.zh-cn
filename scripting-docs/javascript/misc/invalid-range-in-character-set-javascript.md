@@ -1,4 +1,5 @@
 ---
+description: 尝试使用无效的字符集范围创建正则表达式。
 title: " (JavaScript) 的字符集中的范围无效 |Microsoft Docs"
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 971e9d5a-f88a-47a8-af94-f3c7c4aed5ab
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 12624d1a0256360ef1e4538a14100923c7de8af8
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 9441f9cfd3adf94ddd38841d522c83922c9154f1
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862584"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571670"
 ---
 # <a name="invalid-range-in-character-set-javascript"></a>字符集范围无效 (JavaScript)
 尝试使用无效的字符集范围创建正则表达式。 字符集的范围必须仅为单字符，如 a-z 或 0-9;不能将字符类（如 \w）包含在字符集中。 范围中的第一个字符还必须位于范围内的第二个字符之前。 例如：  

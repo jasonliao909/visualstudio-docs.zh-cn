@@ -1,4 +1,5 @@
 ---
+description: 正在调用数组构造函数时使用的参数不是整数 (整数包含零加上一组正整数) 。
 title: 数组长度必须为有限正整数 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 1a467040-4702-4178-848f-418a5974e907
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: c0b827e0cef5cd6c6ea4aeaddc9f32f02004c214
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 49d3d2985706ad6cfca9b6ac441baa039ccf04af
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862210"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103572112"
 ---
 # <a name="array-length-must-be-a-finite-positive-integer"></a>数组长度必须为有限正整数
 正在调用 **数组** 构造函数时使用的参数不是整数 (整数包含零加上一组正整数) 。  

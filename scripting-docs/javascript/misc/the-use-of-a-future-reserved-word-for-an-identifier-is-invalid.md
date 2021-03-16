@@ -1,5 +1,6 @@
 ---
 title: 用于标识符的未来保留字无效 |Microsoft Docs
+description: 不能使用将来保留字作为变量、函数或用户定义的标识符的名称。
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
 ms.technology: vs-javascript
@@ -14,12 +15,12 @@ ms.assetid: b1c4648b-43a7-48e3-949a-e39b538edabd
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 10a19981f900ebd99981ad70816d17ad81ab2924
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 0ac9d773bae72475a4dc94cf050bbb751cd9598a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862373"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571280"
 ---
 # <a name="the-use-of-a-future-reserved-word-for-an-identifier-is-invalid"></a>使用未来保留字作为标识符是无效的
 1049：使用标识符的未来保留字无效  

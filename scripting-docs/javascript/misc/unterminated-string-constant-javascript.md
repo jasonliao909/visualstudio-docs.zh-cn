@@ -1,4 +1,5 @@
 ---
+description: 你未使用右引号结束字符串常量。
 title: JavaScript)  (未终止的字符串常量 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 5083809e-9828-4aea-b9b0-80f46d6f3812
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 7555aa3413b2c3e5b384f92a0f2c295548d8930a
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 59ce392220b8c3e9fa82384c514e0baf762ee29a
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862709"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571150"
 ---
 # <a name="unterminated-string-constant-javascript"></a>未终止的字符串常量 (JavaScript)
 你未使用右引号结束字符串常量。 字符串常量必须用一对引号引起来。  
