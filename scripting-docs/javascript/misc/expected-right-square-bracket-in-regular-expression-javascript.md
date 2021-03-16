@@ -1,4 +1,5 @@
 ---
+description: 试图为正则表达式匹配创建字符类，但未包含右大括号。
 title: 正则表达式中需要 "]" (JavaScript) |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 1ca2079a-44dd-479f-a1e3-e04a14d0739e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 31d1ebd30ba5e793a1c52c00d8b58603bdaa9a75
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 6b5e7a25f6fbef3bf87d084b149ee9f356981600
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862330"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570942"
 ---
 # <a name="expected--in-regular-expression-javascript"></a>正则表达式中应有“]”(JavaScript)
 试图为正则表达式匹配创建字符类，但未包含右大括号。 可以通过将各个文本字符组合放在方括号中来将它们组合到字符类中。 字符类与它所包含的任何一个字符匹配。 例如，/[abc]/匹配任何字母 "a"、"b" 或 "c"。  

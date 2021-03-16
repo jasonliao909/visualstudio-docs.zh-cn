@@ -1,4 +1,5 @@
 ---
+description: 在代码的全局范围内使用了 return 语句。
 title: 函数外部的 "return" 语句 |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: 03568f9f-5f4f-4a10-a738-9a73f3832b9e
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 2ec17d9e421d06736a236e26dd5a1200a5564e7d
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: c275db9b2b13f6730ef62a757502b1d51a59ee43
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862052"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103571657"
 ---
 # <a name="return-statement-outside-of-function"></a>“return”语句在函数之外
 在 `return` 代码的全局范围内使用了语句。 `return`语句应仅出现在函数体中。  
@@ -31,7 +32,7 @@ ms.locfileid: "91862052"
 return [ expression ];  
 ```  
   
- `return`执行语句时，将计算*表达式*并将其作为函数的值返回。 如果没有表达式，则返回 **undefined** 。  
+ `return`执行语句时，将计算 *表达式* 并将其作为函数的值返回。 如果没有表达式，则返回 **undefined** 。  
   
  当 `return` 执行语句时，即使函数体中仍剩余其他语句，函数的执行也会停止。 此规则的例外情况是，如果 **return** 语句发生在 **try** 块中，并且存在相应的 **finally** 块，则 **finally** 块中的代码将在函数返回之前执行。  
   

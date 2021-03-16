@@ -1,4 +1,5 @@
 ---
+description: 您尝试使用三元条件运算符创建表达式，但在第二个和第三个操作数之间不包含冒号。
 title: 应输入 "：" |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,12 +15,12 @@ ms.assetid: cbb1bb65-59e4-47e0-834d-8f514cfda0f6
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: 41f99831a92c257b9f8ed361b7abd522d868a430
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: 00a0eae2f2f048637aa94d8990d280839e9fd7b0
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862424"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570435"
 ---
 # <a name="expected-"></a>应有“:”
 您尝试使用三元条件运算符创建表达式，但在第二个和第三个操作数之间不包含冒号。 三元 (三个操作数) 条件运算符在第二个 (true) 和第三个 (false) 操作数之间需要一个冒号。  

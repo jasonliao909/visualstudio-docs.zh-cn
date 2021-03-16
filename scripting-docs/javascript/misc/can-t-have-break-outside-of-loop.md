@@ -1,4 +1,5 @@
 ---
+description: 尝试在循环外使用 break 关键字。
 title: Loop 外不能有 "break" |Microsoft Docs
 ms.date: 01/18/2017
 ms.prod: visual-studio-windows
@@ -14,15 +15,15 @@ ms.assetid: 11d02172-2a78-4705-a730-d21111db5f42
 author: mikejo5000
 ms.author: mikejo
 manager: ghogen
-ms.openlocfilehash: ee177c8070fc5af8123d7fd78e69b1f767a5b700
-ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+ms.openlocfilehash: d761a1cff89f650e5fc465b6a6aef2713aafb765
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862795"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570643"
 ---
 # <a name="cant-have-break-outside-of-loop"></a>“break”不能位于循环外
-尝试在循环外使用 **break** 关键字。 **Break**关键字用于终止循环或 `switch` 语句。 它必须嵌入到循环或语句的主体中 `switch` 。 但是， **标签** 可以跟在 break 关键字之后。  
+尝试在循环外使用 **break** 关键字。 **Break** 关键字用于终止循环或 `switch` 语句。 它必须嵌入到循环或语句的主体中 `switch` 。 但是， **标签** 可以跟在 break 关键字之后。  
   
 ```js
 break labelname;  
