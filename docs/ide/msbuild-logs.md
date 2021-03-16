@@ -2,7 +2,7 @@
 title: 对 MSBuild 问题进行故障排除并为其创建日志
 description: 了解如何诊断 Visual Studio 项目中的生成问题，并在必要时创建日志以发送给 Microsoft 进行调查。
 ms.custom: SEO-VS-2020
-ms.date: 06/27/2019
+ms.date: 02/08/2021
 ms.technology: vs-ide-compile
 ms.topic: troubleshooting
 helpviewer_keywords:
@@ -17,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Generate build logs for msbuild projects to collect helpful information when troubleshooting issues.
-ms.openlocfilehash: d9308bff68a5a5377c025bba5861ac344dcb0326
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3496eb5a0e8f699a994037ccc853a76e4f93e4ee
+ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880484"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102225186"
 ---
 # <a name="troubleshoot-and-create-logs-for-msbuild-problems"></a>对 MSBuild 问题进行故障排除并为其创建日志
 
@@ -99,22 +99,41 @@ ms.locfileid: "99880484"
 1>Project is not up-to-date: build input 'f:\test\project1\project1\project1.h' was modified after the last build finished.
 ```
 
-## <a name="create-a-binary-msbuild-log"></a>创建二进制 msbuild 日志
+## <a name="create-a-binary-msbuild-log-at-the-command-prompt"></a>在命令提示符下创建二进制 MSBuild 日志
 
 1. 打开你的 Visual Studio 版本的开发人员命令提示符
+
 1. 从命令提示符中运行以下命令之一。 （记得使用你的实际项目和配置值。）：
 
-    ```cmd
-    Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
-    ```
+   ```cmd
+   Msbuild /p:Configuration="MyConfiguration";Platform="x86" /bl MySolution.sln
+   ```
 
-    or
+   or
 
-    ```cmd
-    Msbuild /p:/p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
-    ```
+   ```cmd
+   Msbuild /p:SolutionDir="c:\MySolutionDir\";Configuration="MyConfiguration";Platform="Win32" /bl MyProject.vcxproj
+   ```
 
-将在运行 MSBuild 的目录中创建 Msbuild.binlog 文件。 你可以使用 [Msbuild 结构化日志查看器](http://www.msbuildlog.com/)查看和搜索该文件。
+将在运行 MSBuild 的目录中创建 msbuild.binlog 文件。
+
+## <a name="create-a-binary-msbuild-log-by-using-the-project-system-tools-extension"></a>使用项目系统工具扩展创建二进制 MSBuild 日志
+
+1. 下载并安装[项目系统工具扩展](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.ProjectSystemTools)。
+
+1. 安装扩展后，某些新项将显示在“查看” > “其他窗口”菜单中。
+
+   ![“其他窗口”菜单](../ide/media/view-menu.png)
+
+1. 选择“查看” > “其他窗口” > “生成日志记录”，以在 Visual Studio 中显示“生成日志记录”窗口。 选择第一个工具栏图标，在项目系统中开始记录常规和设计时生成。
+
+   ![“生成日志”窗口](../ide/media/build-logging-click-to-record.png)
+
+1. 记录生成后，它将显示在“生成日志”窗口中。 右键单击该项，然后在上下文菜单中选择“保存日志”以保存 .binlog 文件。
+
+   ![“生成日志”上下文菜单](../ide/media/build-logging-context-menu.png)
+
+可以使用 [MSBuild 结构化日志查看器](http://www.msbuildlog.com/)查看和搜索 .binlog 文件。
 
 ## <a name="create-a-detailed-log"></a>创建详细的日志
 

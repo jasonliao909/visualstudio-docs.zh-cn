@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
-ms.date: 09/03/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: 了解如何管理 Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
-ms.openlocfilehash: 388c847ce19ca7136efb7757fbc87bffdc35a673
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 49f18b540d27678b46a5fa111c76a069b705309d
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903797"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249453"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 如果你是通过 MPSA 计划购买 Visual Studio 订阅的，那么在成为 Visual Studio 订阅管理员并向用户分配订阅之前，需要注意一些事项。 如果你已被设置为管理员，则可直接转到 Visual Studio 订阅[管理门户](https://manage.visualstudio.com/)。
@@ -41,15 +41,10 @@ MPSA 客户通过名为[业务中心](https://businessaccount.microsoft.com/Cust
 1. 登录[业务中心](https://businessaccount.microsoft.com/Customer)。
 2. 单击“帐户”选项卡并选择“关联域”   。
 3. 选择“购买帐户”（如有多个购买帐户）  。
-4. 选择“租户”（即 contoso.onmicrosoft.com）  。
+4. 选择“租户”（例如 contoso.onmicrosoft.com）。
 5. 单击“关联域”  。
 
-通常情况下，关联后，系统会在几分钟内将满足标准的所有用户都设置为 Visual Studio 订阅管理员。 但是有时可能需要长达 24 小时。 设置租户后，你便能访问 Visual Studio 订阅管理门户。 如果花费的时间超过 24 小时，请按照以下步骤联系 MPSA 支持部门：
-1. 连接到 <https://www.microsoft.com/licensing/mpsa/default>
-2. 在页面顶部单击“更多”菜单  。 
-3. 选择“支持” 
-4. 选择“许可支持” 
-5. 请选择最适合你的需求的支持选项。 
+通常情况下，关联后，系统会在几分钟内将满足标准的所有用户都设置为 Visual Studio 订阅管理员。 但是有时可能需要长达 24 小时。 预配租户后，你便能访问 Visual Studio 订阅管理门户。 如果花费的时间超过 24 小时，请联系[企业中心支持](https://businessaccount.microsoft.com/Customer/ContactUs)。
 
 > [!NOTE]
 > 如果在关联后有新用户满足步骤 2 和步骤 5 中标准，必须联系 MPSA 支持。 MPSA 支持部门将帮助你设置新的 Visual Studio 订阅管理员。
@@ -57,10 +52,10 @@ MPSA 客户通过名为[业务中心](https://businessaccount.microsoft.com/Cust
 ## <a name="tenant-association-unmanaged"></a>租户关联（非托管）
 如上文所述，如果用于注册到业务中心的电子邮件不是工作帐户（未在 Azure Active Directory“Azure AD”中注册），则帐户关联略有不同。 需执行所谓的“域接管”。 在此过程中，你将成为全局管理员并将租户从非托管变为托管。
 
-有关此过程的更详细说明，请参阅[快速入门指南](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)。 请下载名为“设置和使用联机服务”的指南，该指南将指导你完成域接管  。 完成此操作后，购买帐户也会关联到租户。
+有关此过程的更详细说明，请参阅[快速入门指南](https://www.microsoft.com/Licensing/existing-customer/business-center-training-and-resources.aspx)。 下载名为“设置和使用联机服务”的指南，该指南将指导你完成域接管。 完成此操作后，购买帐户也会关联到租户。
 
 > [!NOTE]
-> 完成域接管过程后，必须遵守“预租户关联（托管）”部分中 5 个步骤的标准。 满足这些标准后，只需联系 MPSA 支持部门设置其他 Visual Studio 订阅管理员即可。
+> 完成域接管过程时，必须遵守“预租户关联（托管）”部分中 5 个步骤的标准。 满足这些标准后，只需联系 MPSA 支持部门预配其他 Visual Studio 订阅管理员即可。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

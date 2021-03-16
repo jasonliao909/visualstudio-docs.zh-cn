@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 12/02/2020
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: 52f67afdf8a4056063cdefef618be5b895dbb960
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 41966fb4468832b3e1a320e898164989d1fb5c3b
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537989"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249737"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帐户登录到 Visual Studio 订阅 
 
@@ -59,7 +59,7 @@ ms.locfileid: "96537989"
 答：每当你使用帐户别名（电子邮件地址、电话号码、Skype 名称）进行签名时，我们都会向你显示帐户的所有登录方法。 如果未在此看到 GitHub，那么你还未进行设置。
 
 #### <a name="q--how-can-i-unlink-my-microsoft-and-github-accounts"></a>问：如何取消 Microsoft 和 GitHub 帐户的链接？ 
-答：转到 account.microsoft.com 的[“安全”选项卡](https://account.microsoft.com/security)，然后单击“更多安全选项”，以取消链接 GitHub 帐户  。 取消链接 GitHub 帐户会将其从登录方法中删除，并且会删除对 Visual Studio 中任何 GitHub 存储库的访问权限。 其他 Microsoft 产品可能已请求单独访问你的 GitHub 帐户，因此删除此处的访问权限不会删除在所有产品中的访问权限。 转到 GitHub 配置文件的[应用程序权限](https://github.com/settings/applications)页，从其中所列的应用中撤销许可。
+答：转到 account.microsoft.com 的[“安全”选项卡](https://account.microsoft.com/security)，然后单击“高级安全选项”，以取消链接 GitHub 帐户。 取消链接 GitHub 帐户会将其从登录方法中删除，并且会删除对 Visual Studio 中任何 GitHub 存储库的访问权限。 其他 Microsoft 产品可能已请求单独访问你的 GitHub 帐户，因此删除此处的访问权限不会删除在所有产品中的访问权限。 转到 GitHub 配置文件的[应用程序权限](https://github.com/settings/applications)页，从其中所列的应用中撤销许可。
 
 #### <a name="q--i-try-to-use-my-github-account-to-sign-in-but-im-prompted-that-i-already-have-a-microsoft-identity-that-i-should-use-instead--whats-happening"></a>问：我尝试使用我的 GitHub 帐户登录，但系统提示我已经拥有一个 Microsoft 标识，我应该改用该标识。  发生了什么情况？
 答：如果你的 GitHub 帐户具有 Azure Active Directory 电子邮件地址，则表示你已拥有可以使用 GitHub 代码访问 Azure 并运行 CI 管道的 Microsoft 标识。 使用该帐户可确保你的 Azure 资源和生成管道保留在组织边界内。 但如果你正在从事个人工作，我们建议在 GitHub 帐户中添加个人电子邮件地址，这样你始终可以访问该帐户。 执行此操作后，请尝试再次登录，并在系统提示你登录工作或学校帐户时选择“使用其他电子邮件地址”  。 这将让你使用该个人电子邮件地址创建新的 Microsoft 帐户。

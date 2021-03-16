@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-ms.date: 02/04/2021
+ms.date: 03/05/2021
 ms.topic: conceptual
 description: 云订阅的计费问题。
-ms.openlocfilehash: a812965a549f2e6e6d6c58366d943f3129d951cd
-ms.sourcegitcommit: 55bc9df751a21656de8cc5b6dbd8a2a1915ec690
+ms.openlocfilehash: d3c370eecab49de5f4ea5001e6052c18ff83e00b
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99572871"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473408"
 ---
 # <a name="visual-studio-cloud-subscriptions-billing-faq"></a>Visual Studio 云订阅计费常见问题解答
 请确保[比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)，了解每种 Visual Studio 订阅的权益，云订阅与标准 Visual Studio 订阅之间的不同之处，以及订阅者权益的相关详细信息等。
@@ -56,7 +56,7 @@ ms.locfileid: "99572871"
 ### <a name="q-how-are-annual-cloud-subscription-charges-processed"></a>问：“年度”云订阅是如何收费的  ？
 答：在每次购买时，都会即时对已购买的全部数量计费。 费用不会按该年的剩余天数收取，也不会按比例分配。 如果在一年中的不同时间购买年度云订阅，则订阅的续订月份也不同。 与 Microsoft 批量许可协议采购一样，我们并未将所有客户的年度云订阅都视为有共同的时间边界。
 
-### <a name="q-how-do-cancelations-work"></a>问：取消如何工作？
+### <a name="q-how-do-cancellations-work"></a>问：取消如何工作？
 答：当取消 Visual Studio 云订阅时，会同时取消自动续订。 订阅会一直持续到正常的续订日期，并于该日期后直接过期。
 到期后，Visual Studio 订阅者无法继续使用 Visual Studio 或订阅中的任何其他权益。
 
@@ -94,12 +94,15 @@ ms.locfileid: "99572871"
 ### <a name="q-can-i-buy-visual-studio-cloud-subscriptions-from-my-software-reseller"></a>问：我可以从软件经销商处购买 Visual Studio 云订阅吗？
 答：可以，但前提是该经销商参与了云解决方案提供商 (CSP) 计划。 请向其进行咨询。
 
+### <a name="q-where-can-i-find-information-about-azure-invoices"></a>问：在哪里可以找到有关 Azure 发票的信息？
+答：请查看 [Azure 文档](/azure/)中的[了解你的 Azure 发票](https://docs.microsoft.com/azure/cost-management-billing/understand/understand-invoice)文章。
+
 ## <a name="related-resources"></a>相关资源
 - [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)
-- [Visual Studio 订阅支持](https://visualstudio.microsoft.com/vs/support/)
 - [适用于 CSP 的 Visual Studio 云订阅购买](vscloud-csp.md)
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

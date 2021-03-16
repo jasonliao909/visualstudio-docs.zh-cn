@@ -1,4 +1,5 @@
 ---
+description: 构造 VsgDbg 类的实例（准备或不准备图形诊断的应用内组件）来根据指定的布尔型参数主动捕获并记录图形信息（默认情况下）。
 title: VsgDbg::VsgDbg（构造函数）| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 466c64f3b055eef3629f0f4666529f1be4247f42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae4259b1af1bcb51b05431131db596d2a26da895
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861330"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102160440"
 ---
 # <a name="vsgdbgvsgdbg-constructor"></a>VsgDbg::VsgDbg（构造函数）
 构造 `VsgDbg` 类的实例（准备或不准备图形诊断的应用内组件）来根据指定的布尔型参数主动捕获并记录图形信息（默认情况下）。

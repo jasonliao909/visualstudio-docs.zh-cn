@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 1d049bc8b74b83028e04fe92e7ce96f45907d042
-ms.sourcegitcommit: 3c571f44bfd6402efea5187af43df287bac5b6ac
+ms.openlocfilehash: b6ceee76d8c24ccddb41e47c0865d96c79e6fc32
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/24/2020
-ms.locfileid: "97762588"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249819"
 ---
 1. 在“解决方案资源管理器”  中，右键单击项目节点并选择“发布”  （对于 Web Forms，选择“发布 Web 应用”  ）。
 
@@ -21,18 +21,30 @@ ms.locfileid: "97762588"
 
 1. 在“发布”  对话框中，选择“文件夹”  ，单击“浏览”  ，然后创建一个新文件夹“C:\Publish”  。
 
-    ![Visual Studio 中“选取发布目标”对话框的屏幕截图，其中选择了文件夹“bin\Release\Publish”作为发布目标。](../media/remotedbg_publish_local.png)
+   ::: moniker range=">=vs-2019"
 
-    对于 Web Forms 应用，请在“发布”对话框中选择“自定义”  ，输入配置文件名称，然后选择“确定”  。
+   :::image type="content" source="../media/vs-2019/remotedbg-publish-local.png" alt-text="Visual Studio 中“选取发布目标”对话框的屏幕截图，其中选择了文件夹“C:\Publish”作为发布目标。":::
 
-1. 单击下拉列表中的“创建配置文件”  （默认值为“发布”  ）。
+   单击“完成”保存发布配置文件。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   ![Visual Studio 中“选取发布目标”对话框的屏幕截图，其中选择了文件夹“bin\Release\Publish”作为发布目标。](../media/remotedbg_publish_local.png)
+   对于 Web Forms 应用，请在“发布”对话框中选择“自定义”  ，输入配置文件名称，然后选择“确定”  。
 
-1. 在“发布”  对话框中，单击“设置”  链接，然后选择“设置”  选项卡。
+   单击下拉列表中的“创建配置文件”  （默认值为“发布”  ）。
+   ::: moniker-end
 
-1. 将配置设置为“调试”  ，选择“在发布前删除所有现有文件”  ，然后单击“保存”  。
+1. 切换到调试配置。
 
-    > [!NOTE]
-    > 如果使用发布生成，则在发布时，需要在 web.config 文件中禁用调试。
+   ::: moniker range=">=vs-2019"
+   选择“编辑”以编辑配置文件，然后选择“设置”。 选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   在“设置”对话框中，单击“下一步”启用调试，选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”    。
+   ::: moniker-end
+
+   > [!NOTE]
+   > 如果使用发布生成，则在发布时，需要在 web.config 文件中禁用调试。
 
 1. 单击“发布”  。
 
@@ -43,7 +55,7 @@ ms.locfileid: "97762588"
 1. 将 ASP.NET 项目目录从 Visual Studio 计算机复制到 Windows Server 计算机上为 ASP.NET 应用配置的本地目录中（本例中为 C:\Publish  ）。 在本教程中，我们假设你进行手动复制，不过，你也可以使用其他工具，例如 PowerShell、Xcopy 或 Robocopy。
 
     > [!CAUTION]
-    > 如果需要更改代码或重新生成，则必须重新发布并重复此步骤。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。    如果没有这样做，则在尝试调试进程时，你会在 Visual Studio 中收到 `cannot find or open the PDB file` 警告。
+    > 如果需要更改代码或重新生成，则必须重新发布并重复此步骤。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。 如果没有这样做，则在尝试调试进程时，你会在 Visual Studio 中收到 `cannot find or open the PDB file` 警告。
 
 1. 在 Windows Server 上，通过在浏览器中打开应用来验证是否可以正常运行应用。
 

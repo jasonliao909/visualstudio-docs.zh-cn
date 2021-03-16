@@ -1,18 +1,18 @@
 ---
-title: 设置月度订阅的管理员 | Microsoft Docs
+title: 设置 Visual Studio 月度订阅的管理员 | Microsoft Docs
 author: evanwindom
 ms.author: lank
 manager: lank
 ms.assetid: 8b30e2bc-2ac3-4fcc-b296-128731471032
-ms.date: 03/03/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 设置月度订阅的管理员
-ms.openlocfilehash: 8e102cb19d4f34c93392d89f9778c88460446666
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: c018dbc3437c03c6d029a98c84e0b6cceaef9e2c
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904245"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249542"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>设置 Visual Studio 月度订阅的管理员
 
@@ -32,7 +32,7 @@ Visual Studio 月度订阅由管理员进行管理。 管理员可以分配订�
 
 若要添加管理员：
 
-1. 在 [portal.azure.com](https://portal.azure.com) 上连接到 Azure 门户。
+1. 通过 [portal.azure.com](https://portal.azure.com) 连接到 Azure 门户。
 2. 使用购买 Visual Studio 月度订阅时所用的帐户登录。
 3. 在“Azure 服务”下，选择“成本管理 + 计费”   。
    > [!div class="mx-imgBorder"]
@@ -59,7 +59,11 @@ Visual Studio 月度订阅由管理员进行管理。 管理员可以分配订�
 
 有关 Visual Studio 月度订阅的信息，请参阅“购买订阅”下的[概述](vscloud-overview.md)。 要购买 Visual Studio 月度订阅，请访问 Visual Studio Marketplace：[https://marketplace.visualstudio.com/subscriptions](https://marketplace.visualstudio.com/subscription)。
 
-## <a name="see-also"></a>请参阅
+## <a name="resources"></a>资源
+- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
+
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

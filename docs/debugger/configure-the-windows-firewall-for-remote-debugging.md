@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 959d015bd23c91ec2ba6215c7a5b42d13b37ee29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52264580e428fa6a2c33d80ea8fb9fb8e07f0c59
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865821"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102149322"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 
@@ -49,6 +49,16 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 1. 为规则添加一个名称（例如， **msvsmon**、**IIS** 或 **Web Deploy**），然后选择“完成”。
 
    新规则应出现在“入站规则”或“出站规则”列表中，且处于选中状态。 
+
+使用 PowerShell 打开端口：
+
+对于 Windows 防火墙，你可以使用 PowerShell 命令（如 [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps)）。
+
+下面的示例为远程计算机上的远程调试器打开端口 4024。 需要使用的路径可能有所不同。
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+```
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>远程计算机上支持远程调试的端口
 

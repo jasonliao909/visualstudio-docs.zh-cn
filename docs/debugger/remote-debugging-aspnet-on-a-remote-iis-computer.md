@@ -11,12 +11,12 @@ manager: jmartens
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1b4eabfe35671b3cda0e2df71163b7c91695b264
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: a364289ded27879c74767f03e89b9ea7b9f604fc
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683077"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249856"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>在 Visual Studio 中远程调试远程 IIS 计算机上的 ASP.NET Core
 
@@ -129,10 +129,17 @@ ms.locfileid: "101683077"
 
 应用成功部署后，它应自动启动。 如果在 Visual Studio 中无法启动应用，请在 IIS 中启动应用以验证其是否正常运行。 对于 ASP.NET Core，还需要确保将 DefaultAppPool 的“应用程序池”字段设置为“无托管代码” 。
 
-1. 在“设置”对话框中，单击“下一步”启用调试，选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”    。
+1. 切换到调试配置。
 
-    > [!IMPORTANT]
-    > 如果选择发布配置，则在发布时，需要在 web.config 文件中禁用调试。
+   ::: moniker range=">=vs-2019"
+   选择“编辑”以编辑配置文件，然后选择“设置”。 选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   在“设置”对话框中，单击“下一步”启用调试，选择“调试”配置，然后在“文件发布”选项下选择“删除目标处的其他文件”    。
+   ::: moniker-end
+
+   > [!IMPORTANT]
+   > 如果选择发布配置，则在发布时，需要在 web.config 文件中禁用调试。
 
 1. 单击“保存”，然后重新发布应用。
 
@@ -150,13 +157,13 @@ ms.locfileid: "101683077"
 
 4. 选择“默认网站”，选择“基本设置”，然后将“物理路径”设置为“C:\Publish”。
 
-4. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
+5. 右键单击“默认网站”  节点，然后选择“添加应用程序” 。
 
-5. 将“别名”字段设置为“MyASPApp”，接受默认应用程序池 (DefaultAppPool)，并将“物理路径”设置“C:\Publish”。
+6. 将“别名”字段设置为“MyASPApp”，接受默认应用程序池 (DefaultAppPool)，并将“物理路径”设置“C:\Publish”。
 
-6. 在“连接”下，选择“应用程序池”。 打开“DefaultAppPool”，然后将应用程序池字段设置为“无托管代码”。
+7. 在“连接”下，选择“应用程序池”。 打开“DefaultAppPool”，然后将应用程序池字段设置为“无托管代码”。
 
-7. 右键单击 IIS 管理器中的新站点，选择“编辑权限”，并确保 IUSR、IIS_IUSRS 或配置为访问 Web 应用的用户是具有读取和执行权限的授权用户。
+8. 右键单击 IIS 管理器中的新站点，选择“编辑权限”，并确保 IUSR、IIS_IUSRS 或配置为访问 Web 应用的用户是具有读取和执行权限的授权用户。
 
     如果没有看到其中任何一个用户具有访问权限，请执行相应步骤将 IUSR 添加为具有读取和执行权限的用户。
 

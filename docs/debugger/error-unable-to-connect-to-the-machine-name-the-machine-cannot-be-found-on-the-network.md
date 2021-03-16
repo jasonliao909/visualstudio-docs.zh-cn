@@ -1,5 +1,6 @@
 ---
 title: 无法连接到计算机 &lt;name&gt;。 网络上找不到该计算机。 | Microsoft Docs
+description: 如果满足以下条件之一，则会出现此行为：(1) 与远程计算机的连接已断开。 (2) 你在远程计算机上的用户帐户被禁用。 (3) 你在远程计算机上的密码过期。
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -16,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcf52a258a46f44afaf6e890531496f57b11fc24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e0d83f043e020ad3c65ac0f986ec174fac95585
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871060"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102146426"
 ---
 # <a name="error-unable-to-connect-to-the-machine-ltnamegt-the-machine-cannot-be-found-on-the-network"></a>错误：无法连接到计算机 &lt;name&gt;。 网络上找不到该计算机。
 如果满足下列某项条件，则会发生此行为：

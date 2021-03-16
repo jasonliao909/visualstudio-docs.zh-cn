@@ -1,4 +1,5 @@
 ---
+description: 销毁 VsgDbg 类的实例。
 title: VsgDbg::~VsgDbg（析构函数）| Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d969e6be772b446598c9c3644582684be488a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d90664723695756ebd8acdc7c56bec1fcbd08a31
+ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861343"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102155221"
 ---
 # <a name="vsgdbgvsgdbg-destructor"></a>VsgDbg::~VsgDbg（析构函数）
 销毁 `VsgDbg` 类的实例。 如果正在主动记录图形信息，则完成并关闭图形日志文件，并释放在主动捕获图形信息时使用的资源。

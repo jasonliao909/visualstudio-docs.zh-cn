@@ -12,12 +12,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: d41beea47e8173170ea2d428b40bd7c7ed8ff67e
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 619f1f1cc99cbab425bc1bcb2bac181e09db8fc4
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684162"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102250073"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Azure 中的 IIS 上的 Visual Studio 中远程调试 ASP.NET Core
 
@@ -79,13 +79,23 @@ ms.locfileid: "101684162"
 
 1. 在 Visual Studio 中，右键单击项目节点，然后选择“发布”。
 
-    如果先前配置了任何发布配置文件，则“发布”窗格会显示。 单击“新建配置文件”。
+    如果先前配置了任何发布配置文件，则“发布”窗格会显示。 选择“新建”或“新建配置文件”。
 
-1. 从“发布”对话框中选择“Azure 应用服务”，选择“新建”并按照提示创建配置文件  。
+1. 创建新的发布配置文件。
 
-    有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
+    ::: moniker range=">=vs-2019"
+    从“发布”对话框中选择“Azure”，然后选择“下一步”。 然后，选择“Azure 应用服务(Windows)”，选择“下一步”，然后按照提示创建配置文件。
+
+    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure":::
+    ::: moniker-end
+    ::: moniker range="vs-2017"
+
+    从“发布”对话框中选择“Azure 应用服务”，选择“新建”并按照提示创建配置文件  。
 
     ![发布到 Azure 应用服务](../debugger/media/remotedbg_azure_app_service_profile.png)
+    ::: moniker-end
+
+    有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
 1. 在“发布”窗口中，选择“编辑配置”然后切换到“调试”配置，然后选择“发布” 。
 
@@ -106,6 +116,7 @@ ms.locfileid: "101684162"
 可以创建适用于 Windows Server 的 Azure VM，然后安装并配置 IIS 和所需的其他软件组件。 这比部署到 Azure 应用服务需要更多时间，并且需要按照本教程中的剩余步骤进行操作。
 
 这些过程已在以下服务器配置上进行了测试：
+
 * Windows Server 2012 R2 和 IIS 8
 * Windows Server 2016 和 IIS 10
 * Windows Server 2019 和 IIS 10
@@ -143,7 +154,7 @@ ms.locfileid: "101684162"
     > [!NOTE]
     > 如果系统没有 Internet 连接，请先获取并安装 [Microsoft Visual C++ 2015 Redistributable](https://www.microsoft.com/download/details.aspx?id=53840)，再安装 .NET Core Windows Server 托管捆绑包。
 
-3. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改） 。
+2. 重启系统（或在命令提示符处依次执行“net stop was /y”和“net start w3svc”，了解系统路径的更改） 。
 
 ## <a name="choose-a-deployment-option"></a>选择部署选项
 

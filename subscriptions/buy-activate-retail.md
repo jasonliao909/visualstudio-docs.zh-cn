@@ -4,18 +4,18 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 76654645-08ee-445d-b9ee-123126d1f0fb
-ms.date: 04/13/2020
+ms.date: 02/18/2021
 ms.topic: how-to
 description: 了解如何在 Microsoft Store 中购买 Visual Studio 订阅，以及如何在 Visual Studio 订阅门户中激活该订阅。
-ms.openlocfilehash: 244d6e6a0e5ccd6bf98b0e95d2165459cbe492c4
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: 3902ca5a4cce146d4a0ad62eb23dd777d6032f67
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005958"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249426"
 ---
 # <a name="visual-studio-subscriptions-are-available-through-the-microsoft-store"></a>Visual Studio 订阅可通过 Microsoft Store 获得
-Visual Studio 订阅可通过多种渠道获得，包括 [批量许可](https://www.microsoft.com/licensing/default)、云解决方案提供商、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 和 Microsoft Store。  本文将探讨如何通过 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) 购买和激活订阅。  
+Visual Studio 订阅可通过各种通道获得。 从[批量许可](https://www.microsoft.com/licensing/default)、云解决方案提供商、[Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions)和 Microsoft Store 中进行选择。  本文将探讨如何通过 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio) 购买和激活订阅。  
 
 ## <a name="how-to-buy-subscriptions"></a>如何购买订阅
 需要帮助确定哪种订阅适合你？  请查看我们的[订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)。  
@@ -33,7 +33,7 @@ Visual Studio 订阅可通过多种渠道获得，包括 [批量许可](https://
 ## <a name="how-to-activate-subscriptions"></a>如何激活订阅
 通过 Microsoft Store 购买了 Visual Studio 订阅后，可从付款“确认页”或在购买后收到的“确认电子邮件”中开始激活过程。
 
-1. 在确认电子邮件或购买确认页上，选择“单击此处登录”。
+1. 在确认电子邮件中或购买确认页上，选择“单击此处登录”链接。
 2. 你将重定向到 [https://my.visualstudio.com/subscriptions/activate](https://my.visualstudio.com/subscriptions/activate?wt.mc_id=o~msft~docs)。
 3. 输入访问 Visual Studio 订阅所需的电子邮件地址，选择“继续”。
 4. 你可能会被重定向到两个不同登录页的其中一个，具体要取决于你使用的帐户类型：
@@ -47,7 +47,10 @@ Visual Studio 订阅可通过多种渠道获得，包括 [批量许可](https://
 ## <a name="support-for-microsoft-store"></a>对 Microsoft Store 的支持
 如果你对通过 Microsoft Store 进行购买有任何疑问，请向我们寻求帮助。  请联系 [Microsoft Store 支持部门](https://support.microsoft.com/help/28808/microsoft-store-contact-support?ocid=MSCOMStoreFooter-ContactUs)。
 
-## <a name="see-also"></a>请参阅
+## <a name="resources"></a>资源 
+- [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

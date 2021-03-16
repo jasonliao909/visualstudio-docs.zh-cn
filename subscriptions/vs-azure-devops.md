@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: lank
 ms.assetid: fe826200-9600-4b29-a64e-0d66ba3caf3d
-ms.date: 07/22/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 了解如何以 Visual Studio 订阅者身份使用 Azure DevOps。
-ms.openlocfilehash: f8cf4cd5f2165a528301d5dc2387a7906f11dcab
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d644842eb5bdf8673a86ab0fbb5ebc579c1a0af5
+ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537690"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102473278"
 ---
 # <a name="azure-devops-benefits-for-visual-studio-subscribers"></a>Visual Studio 订阅者的 Azure DevOps 权益
 作为权益，有效 Visual Studio 订阅者可使用订阅随附的一系列 Azure DevOps 功能。 可以在所属的每个 Azure DevOps 组织中使用这些相同的功能，无论你是创建了组织，还是被其他人添加到组织中。
@@ -53,7 +53,7 @@ ms.locfileid: "96537690"
 答：可以。 Visual Studio Enterprise 订阅者可以在 Team Foundation Server 2017 或更高版本中获取一个并行作业，并且可以在其所属的每个 Azure DevOps Services 组织中获取一个自托管并行作业。
 
 ## <a name="support-resources"></a>支持资源
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
 - 对有关 Visual Studio IDE、Azure DevOps 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - [Azure DevOps 文档](/azure/devops/)。
 

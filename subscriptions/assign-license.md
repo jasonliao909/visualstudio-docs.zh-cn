@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 4e529a43-7aed-4eee-895d-862a631952df
-ms.date: 09/21/2020
+ms.date: 02/18/2021
 ms.topic: conceptual
 description: 了解管理员如何将许可证分配给订阅者
-ms.openlocfilehash: dd80a14a3ff57100f210fd7ae1b882c0ab7a9faf
-ms.sourcegitcommit: 8e9c38da7bcfbe9a461c378083846714933a0e1e
+ms.openlocfilehash: 3bfa1174a8655de27496c3138e1eab21e32c2f8d
+ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915409"
+ms.lasthandoff: 03/06/2021
+ms.locfileid: "102249551"
 ---
 # <a name="assign-licenses-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配许可证
 作为 Visual Studio 订阅管理员，你可以使用管理门户为个人用户和用户组分配订阅。
@@ -67,14 +67,14 @@ ms.locfileid: "96915409"
 添加订阅者后，系统会向新订阅者自动发送一封分配电子邮件，为其提供进一步说明。 通过选中订阅者，然后选择顶部菜单中的“重新发送”按钮，可以随时再次发送分配电子邮件。  若要向多个用户重新发送电子邮件，请在选择订阅者时按住 Ctrl 键。  选择“重新发送”按钮后，会看到一个对话框，要求确认是否要向这些订阅者重新发送。  
 
 
+## <a name="resources"></a>资源
+- 需要帮助?  联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
 
-
 ## <a name="next-steps"></a>后续步骤
 - 有很多用户要添加？  了解如何将订阅分配给[多个订阅者](assign-license-bulk.md)。
-- 需要帮助？  联系 [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)。
