@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 684c6254aac8bd45926759e0b6ad96cfe3f6c8ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964415"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622629"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -52,7 +52,7 @@ ms.locfileid: "99964415"
 若要自动为 NUnit 或 xUnit 生成单元测试，请从 Visual Studio Marketplace 安装以下某个测试框架扩展：
 
 * [适用于测试生成器的 NUnit 扩展](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
-* [适用于测试生成器的 xUnit.net 扩展](https://marketplace.visualstudio.com/items?itemName=BradWilson.xUnitnetTestExtensions)
+* [适用于测试生成器的 xUnit.net 扩展](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>应何时使用此功能？
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: overview
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
-ms.openlocfilehash: d4f65f4c430d585485c388f22664726c848e6d1e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904576"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607136"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用订阅者门户 - my.visualstudio.com
 
@@ -47,7 +47,7 @@ Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio
 
 ## <a name="support"></a>支持
 
-除了在“权益”页的“支持”类别中找到的各个权益，“支持”页还提供了对资源的访问权限，用以帮助你充分利用 Visual Studio 订阅。 访问[支持资源](https://visualstudio.microsoft.com/subscriptions/support/)以解决技术问题或与订阅销售、帐户和计费相关的问题。
+除了在“权益”页的“支持”类别中找到的各个权益，“支持”页还提供了对资源的访问权限，用以帮助你充分利用 Visual Studio 订阅。 访问[支持资源](https://aka.ms/vssubscriberhelp)以解决技术问题或与订阅销售、帐户和计费相关的问题。
 
 ## <a name="marketplace"></a>[市场](https://marketplace.visualstudio.com/)
 

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: how-to
 description: 了解如何使用工作或学校帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: 3ac4e9fedae66656d4dee2155c8a8dcbe9325970
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903381"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607257"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用工作或学校帐户登录到 Visual Studio 订阅 
 
@@ -69,9 +69,10 @@ ms.locfileid: "92903381"
 1. 你使用了其他 Microsoft 帐户登录。  你可能有多个订阅，比如专业版或企业版订阅和 Visual Studio Dev Essentials 成员，而这些订阅与不同的电子邮件地址相关联。 要查看其他订阅，请注销并使用其他 MSA 重新登录。
 2. 你有多个订阅与同一个电子邮件地址相关联。  要查看与你的电子邮件地址关联的所有订阅，请访问 https://my.visualstudio.com/subscriptions 并选择你希望使用的订阅。 
 
-如果仍有问题，可联系我们的[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)团队以获得帮助。  
+## <a name="resources"></a>资源 
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

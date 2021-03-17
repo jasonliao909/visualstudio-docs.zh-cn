@@ -1,18 +1,18 @@
 ---
 title: 登录 Visual Studio 订阅时遇到的问题 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: v-evwin
+manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 10/28/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 了解登录 Visual Studio 订阅时可能出现的问题
-ms.openlocfilehash: cf89d2deff2a5e9e81d065fbb7efda8097102d03
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 5735e0c4178e6866539fff2edac6155642a1ba73
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903443"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607192"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登录 Visual Studio 订阅时遇到的问题
 若要使用 Visual Studio 订阅，必须先登录。  根据订阅，你可能已使用 Microsoft 帐户 (MSA) 或 Azure Active Directory (AAD) 标识进行设置。  本文讨论了在登录订阅时可能遇到的一些问题。
@@ -61,7 +61,10 @@ ms.locfileid: "92903443"
 当公司为其目录登录（例如 JohnD@contoso.com）提供 Microsoft Online Service 时，可能会遇到别名，但用户使用别名或友好名称（例如 John.Doe@contoso.com）访问其电子邮件帐户。 对于通过批量许可服务中心 (VLSC) 管理其订阅的许多客户来说，由于提供的电子邮件地址 (John.Doe@contoso.com) 与通过“工作或学校帐户”选项成功进行身份认证所需的目录地址 (JohnD@contoso.com) 不匹配，这种做法可能会导致登录失败。
 
 ### <a name="what-options-do-i-have"></a>我有哪些选择？
-从订阅者的角度来看，首先与管理员配合来了解贵公司的标识配置非常重要。 如有必要，管理员必须从其管理门户更新你的帐户设置，或者你需要使用公司电子邮件地址创建 Microsoft 帐户 (MSA)。 在采取措施创建 MSA 之前，请先与你的管理员讨论采取此操作的任何策略或问题。 
+从订阅者的角度来看，首先与管理员配合来了解贵公司的标识配置非常重要。 如有必要，管理员必须从其管理门户更新你的帐户设置，或者你需要使用公司电子邮件地址创建 Microsoft 帐户 (MSA)。 在采取措施创建 MSA 之前，请先与你的管理员讨论采取此操作的任何策略或问题。
+
+## <a name="resources"></a>资源
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。 
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
