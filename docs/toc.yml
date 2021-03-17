@@ -277,8 +277,6 @@
     - name: 连接到团队资源管理器中的项目
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
-    - name: Visual Studio 中的 Git 新体验
-      href: ide/git-with-visual-studio.md
     - name: 编辑器
       items:
         - name: 使用编辑器
@@ -903,6 +901,12 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: 调试 >>
   href: debugger/index.yml
+- name: 版本控制
+  items:
+    - name: Visual Studio 中的 Git 新体验
+      href: ide/git-with-visual-studio.md
+    - name: 并行比较 Git 和团队资源管理器
+      href: ide/git-team-explorer-feature-comparison.md
 - name: 测试 >>
   displayName: Unit testing
   href: test/index.yml

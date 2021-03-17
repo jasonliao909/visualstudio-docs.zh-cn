@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 10/30/2020
+ms.date: 02/19/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅到期后会怎样
-ms.openlocfilehash: 3bab529f4a45a57e6cc21260fdde2d5e18bc5217
-ms.sourcegitcommit: f81984aec5341a84b87c2466461656c38d8ff681
+ms.openlocfilehash: 26659cf70ace2ffb6eaa8f02146ed965c03df48a
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/03/2020
-ms.locfileid: "93245008"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607127"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>订阅到期后会怎样
 Visual Studio 订阅有特定的有效期，除非续订，否则它们将会到期。  当订阅到期时，订阅提供的权益会以不同的方式受到影响。  本文将介绍到期如何影响 Visual Studio 订阅的各个方面。 
@@ -39,6 +39,9 @@ Visual Studio 订阅有特定的有效期，除非续订，否则它们将会到
 
 ### <a name="other-benefits"></a>其他优点 
 Visual Studio 订阅中包含的许多权益都有特定的有效期。  Microsoft 合作伙伴（如 Pluralsight、DataCamp 或 WhiteSource）提供的权益在激活后有时间限制。  你之前激活的权益将在剩余的期限内继续可用。  例如，如果你已激活为期六个月的 LinkedIn Learning 订阅，并且它在 Visual Studio 订阅到期时还剩四个月的时间，则你仍将有四个月的时间可以访问 LinkedIn Learning 订阅。  
+
+## <a name="resources"></a>资源
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

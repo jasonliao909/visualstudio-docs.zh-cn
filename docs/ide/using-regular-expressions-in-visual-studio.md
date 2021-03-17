@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d62d35a296c70462aab75af5a8c6729179d5b34d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2314bb8fdb44d769a5067a39b01b40b0a74734f
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925767"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295755"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 
@@ -60,7 +60,7 @@ Visual Studio 使用 [.NET 正则表达式](/dotnet/standard/base-types/regular-
 |与任何[空格字符](/dotnet/standard/base-types/character-classes-in-regular-expressions#whitespace-character-s)匹配|\s|`Public\sInterface` 匹配词组“Public Interface”|
 |与任何[十进制数字字符](/dotnet/standard/base-types/character-classes-in-regular-expressions#decimal-digit-character-d)匹配|\d|`\d` 匹配“wd40”中的“4”和“0”。|
 
-`\b0[xX]([0-9a-fA-F]+\)\b` 是一个组合部分运算符和构造来匹配十六进制数字的示例正则表达式。 该表达式匹配“0xc67f”，但不匹配“0xc67g”。
+`\b0[xX]([0-9a-fA-F]+)\b` 是一个组合部分运算符和构造来匹配十六进制数字的示例正则表达式。 该表达式匹配“0xc67f”，但不匹配“0xc67g”。
 
 > [!TIP]
 > 在 Windows 操作系统中，大多数行以“\r\n”（回车符后跟新行）结束。 这些字符不可见，但存在于编辑器中且被传递到 .NET 正则表达式服务中。
