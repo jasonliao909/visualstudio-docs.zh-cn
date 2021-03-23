@@ -2,18 +2,18 @@
 title: Visual Studio 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 01/15/2021
+ms.date: 03/16/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
 monikerRange: vs-2019
-ms.openlocfilehash: 5f93d8c29bcf7e85df04dd364868e65f70482b72
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: e33b91088022a4588773737b2820677c84a65807
+ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597414"
+ms.lasthandoff: 03/17/2021
+ms.locfileid: "103622642"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -48,7 +48,7 @@ Git 现在是 Visual Studio 2019 中的默认版本控制体验。 从[版本 16
 > [!TIP]
 > 无论存储库是公用的还是专用的，即使你不与团队合作，也应将代码的远程备份安全地存储在 GitHub 上。 这也使得无论使用哪台计算机，你都可以使用你的代码。
 
-可选择使用“仅限本地”选项，创建仅限本地的 Git 存储库。 也可使用“现有远程”选项，将存储库与任何其他 Git 提供程序上的任何现有空远程存储库关联。
+可选择使用“仅限本地”选项，创建仅限本地的 Git 存储库。 也可使用“现有远程”选项，将本地项目与 Azure DevOps 或任何其他 Git 提供程序上的任何现有空远程存储库关联。
 
 ## <a name="clone-an-existing-git-repository"></a>克隆现有 Git 存储库
 
@@ -117,7 +117,7 @@ Visual Studio 会在“Git 更改”窗口顶部的选择器中显示当前分�
 
 ### <a name="create-a-new-branch"></a>创建新分支
 
-还可以创建一个新的分支。 此操作的等效命令是 `git checkout <branchname>`。
+还可以创建一个新的分支。 此操作的等效命令是 `git checkout -b <branchname>`。
 
 创建新分支非常简单，只需输入分支名称并将其基于现有分支。
 
@@ -202,6 +202,7 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 ## <a name="see-also"></a>另请参阅
 
+- YouTube 上的 [Visual Studio 中的 Git 入门](https://www.youtube.com/watch?v=GCZ9x3yqkyc)视频
 - [宣布在 Visual Studio 中推出 Git 体验](https://devblogs.microsoft.com/visualstudio/announcing-the-release-of-the-git-experience-in-visual-studio/)博客文章
 - YouTube 上的[启动新 Git 体验](https://www.youtube.com/watch?v=UHrAg3iKoe0&t)
 - [Visual Studio 工具箱系列提供：新 Git 体验](https://channel9.msdn.com/Shows/Visual-Studio-Toolbox/The-New-Git-Experience)视频（在第 9 频道和 [YouTube](https://www.youtube.com/watch?v=ZiQ2LXtAJ6I&feature=youtu.be) 上）

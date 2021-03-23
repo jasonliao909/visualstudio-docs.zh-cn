@@ -2,7 +2,7 @@
 title: 默认键盘快捷方式
 description: 了解 Visual Studio 中的默认键盘快捷方式，以便通过它们访问各种命令和窗口。
 ms.custom: SEO-VS-2020
-ms.date: 06/26/2017
+ms.date: 03/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -15,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a4901cecf36208f3ed2141e5baef15ecbe43a6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73bb5e48c37cb24d434e57356a90f2bc3907a696
+ms.sourcegitcommit: 6f18481e4f84d86a837ec5d0e8f12fff1a1a8b65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894733"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102782819"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -240,6 +240,7 @@ ms.locfileid: "99894733"
 
 |命令|键盘快捷键|
 |--------------| - |
+|EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions|**Alt+F9, C**|
 |编辑器上下文菜单.代码窗口.断点.断点编辑标签|**Alt+F9、L**|
 |编辑器上下文菜单.代码窗口.代码图.显示项|**Ctrl+`**|
 |编辑器上下文菜单.代码窗口.执行|**Ctrl+Alt+F5**|

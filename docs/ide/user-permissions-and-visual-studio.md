@@ -1,7 +1,7 @@
 ---
 title: 以管理员身份运行
 description: 了解如何以管理员身份运行 Visual Studio。
-ms.date: 01/06/2020
+ms.date: 03/09/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio, user permissions
@@ -13,12 +13,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 63787b394d9e8988759cd141540785e34324f8c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971292"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607244"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 
@@ -72,7 +72,17 @@ ms.locfileid: "99971292"
 
 ::: moniker-end
 
-此外可以修改应用程序快捷方式，以便始终利用管理权限运行。
+此外可以修改应用程序快捷方式，以便始终利用管理权限运行：
+
+1. 打开“开始”菜单，滚动到你正在使用的 Visual Studio 版本，然后选择“更多”  > “打开文件位置”。
+
+1. 在文件资源管理器中，找到你使用的版本的 Visual Studio 快捷方式。  然后，右键单击该快捷方式并选择“发送到” > “桌面(创建快捷方式)”。
+
+1. 在 Windows 桌面上，右键单击 Visual Studio 快捷方式，然后选择“属性”。  
+
+1. 选择“高级”按钮，然后选择“以管理员身份运行”复选框。 
+
+1. 选择“确定”，然后再选择“确定”。 
 
 ## <a name="see-also"></a>请参阅
 

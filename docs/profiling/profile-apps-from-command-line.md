@@ -14,12 +14,12 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b1d5906213b148605e35c483b377280dc942515
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1c8c20d350561eec520038dec521ab7bc5f5311
+ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936543"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103570675"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>从命令行测量应用程序性能
 
@@ -79,7 +79,7 @@ ms.locfileid: "99936543"
 
 集合代理是可互换的组件，可根据要测量的内容收集不同类型的数据。
 
-为方便起见，可以将该信息存储在代理配置文件中。 配置文件是至少包含 .dll 的名称及其 COM CLSID 的 .json 文件 。 以下是可以在以下文件夹中找到的示例配置文件：
+为方便起见，建议将该信息存储在代理配置文件中。 配置文件是至少包含 .dll 的名称及其 COM CLSID 的 .json 文件 。 以下是可以在以下文件夹中找到的示例配置文件：
 
 ```<Visual Studio installation folder>Team Tools\DiagnosticsHub\Collector\AgentConfigs\```
 
@@ -99,11 +99,7 @@ DotNetObjectAlloc 配置（基本/低），对应于为 [.NET 对象分配工具
 
 基本/低/高配置是指采样率。 例如，低为 100 样本/秒，高为 4000 样本/秒。
 
-为了 VSDiagnostics.exe 工具用于集合代理，它需要用于适当代理的 DLL 和 COM CLSID，并且代理也可能具有其他配置选项。 如果使用不带配置文件的代理，请使用以下命令中的格式。
-
-```cmd
-VSDiagnostics.exe start <id> /attach:<pid> /loadAgent:<agentCLSID>;<agentName>[;<config>]
-```
+要使 VSDiagnostics.exe 工具可用于集合代理，需要用于相应代理的 DLL 和 COM CLSID。 代理可能还具有其他配置选项，这可以是配置文件中指定的任何选项，格式为正确转义的 JSON。
 
 ## <a name="permissions"></a>权限
 

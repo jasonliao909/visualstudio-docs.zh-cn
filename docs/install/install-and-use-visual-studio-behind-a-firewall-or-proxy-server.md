@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: b3626d09d790ca6f15ded3745801eae1ca426bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44af5c5a00e1ca26eb545b0973090486f6d320ea
+ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970648"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103295699"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 
@@ -141,6 +141,7 @@ ms.locfileid: "99970648"
 | 调试器 | 1. <br>vsdebugger.blob.core.windows.net <br>vsdebugger.azureedge.net <br><br>2. <br>download.visualstudio.com/\*/<br/>onecore.msvsmon.\*.zip<br><br> 3. referencesource.microsoft.com/symbols <br><br> 4. <br>symbols.nuget.org/download/symbols<br><br> 5. visualstudio.com<br><br>6. msdl.microsoft.com/download/symbols | https/443 | 1. <br>用于下载在 Unix/macOS 上通过 SSH 进行 .NET Core 调试所需的调试器位 <br><br>2. <br>用于下载远程 Windows Docker 容器调试的调试器位<br><br> 3.用于 .NET Framework 源单步执行 <br><br> 4. <br>（如果用户选择加入）用于下载已发布到 nuget.org 符号服务器的符号。<br><br> 5.（如果用户选择加入）用于下载 MS 符号和二进制文件，还可能需要调试转储中的托管代码 |
 | GitHub Codespaces| \*.online.visualstudio.com | https/443 | 用于调用 GitHub Codespaces API |
 | Xamarin Android 应用发布 | \*.googleapis.com <br/> play.google.com <br/>accounts.google.com | https/443 | 用于与 Google Play Store 服务交互，以便直接从 Visual Studio 发布/上传 Xamarin Android 应用程序。 |
+| Visual Studio 搜索服务 | data-ai.microsoft.com/search | https/443 | 用于在 `Ctrl+Q` 搜索框中提供启用 AI 的 Visual Studio 搜索服务 |
 | Azure 容器注册表 | *.azurecr.io | https/443 | 访问 Azure 上托管的容器注册表，用于配置 CICD 管道 |
 | | | | |
 

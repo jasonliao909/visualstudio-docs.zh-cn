@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6a9d0ea6f6cb0aedc4fa13a8014b1a8bd66ccca0
-ms.sourcegitcommit: 6ed6ae5a1693607dce57923a78d01eea3d88b29a
+ms.openlocfilehash: 597d17b69aa3f0feca520e6100439d934e5d9211
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102514932"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607326"
 ---
 # <a name="generate-equals-and-gethashcode-method-overrides-in-visual-studio"></a>在 Visual Studio 中生成 C# Equals 和 GetHashCode 方法重写
 
@@ -61,7 +61,7 @@ ms.locfileid: "102514932"
 
    - 单击 ![Visual Studio 中快速操作螺丝刀图标的屏幕截图](../media/screwdriver-icon.png) 显示的螺丝刀图标。
 
-1. 从下拉菜单中选择“生成 Equals(object)”或“生成 Equals 和 GetHashCode”。
+1. 在下拉菜单中，选择“生成 Equals(object)”或“生成 Equals 和 GetHashCode” 。
 
    ![“生成重写”下拉菜单的屏幕截图](media/overrides-preview-cs.png)
 

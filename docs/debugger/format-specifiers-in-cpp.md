@@ -26,14 +26,15 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 97c0730b2c1fd8d534fed232846dcca76c58ce2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
+ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870631"
+ms.lasthandoff: 03/15/2021
+ms.locfileid: "103483188"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C++ 格式说明符
+
 你可以使用格式说明符更改在“监视”、“自动”和“局部变量”窗口中显示的值所用的格式。
 
 还可在“即时”窗口、“命令”窗口、[跟踪点](../debugger/using-breakpoints.md#BKMK_Print_to_the_Output_window_with_tracepoints)甚至源窗口中使用格式说明符。 如果将鼠标悬停在这些窗口中的某个表达式上，结果将在[数据提示](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)中显示。 “数据提示”显示格式说明符。
@@ -42,6 +43,7 @@ ms.locfileid: "99870631"
 > 在 Visual Studio 本机调试器更改为新的调试引擎时，添加了一些新的格式说明符，并删除了一些旧的格式说明符。 当你使用 C++/CLI 进行互操作（混合本机和托管）调试时，仍使用较早的调试器。
 
 ## <a name="set-format-specifiers"></a>设置格式说明符
+
 我们将使用以下示例代码：
 
 ```C++
@@ -64,6 +66,7 @@ int main() {
 ::: moniker-end
 
 ## <a name="format-specifiers"></a><a name="BKMK_Visual_Studio_2012_format_specifiers"></a>格式说明符
+
 下表介绍可以在 Visual Studio 中使用的格式说明符。 仅新调试器支持加粗的说明符，但 C++/CLI 的互操作调试不支持。
 
 ::: moniker range=">= vs-2019" 
@@ -138,6 +141,7 @@ int main() {
 > 如果存在 hv 格式说明符，调试器会尝试确定缓冲区的长度并显示相应的元素数。 由于调试器并非总是可以查找确切的数组缓冲区大小，只要可能时，就应该使用大小说明符 `(pBuffer,[bufferSize])` 。 当缓冲区大小尚不可用时，hv 格式说明符很有用。
 
 ### <a name="size-specifiers-for-pointers-as-arrays"></a><a name="BKMK_Size_specifiers_for_pointers_as_arrays_in_Visual_Studio_2012"></a> 指针的大小说明符作为数组
+
 如果有一个指针指向要看做数组形式的对象，则可以使用一个整数或表达式来指定数组中元素的数量。
 
 |说明符|格式|原始监视值|显示的值|
@@ -147,7 +151,8 @@ int main() {
 |**expand(n)**|计算结果为一个整数的有效的 C++ 表达式。|pBuffer, expand(2)|显示  `pBuffer`的第三个元素|
 
 ## <a name="format-specifiers-for-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_for_interop_debugging_and_C___edit_and_continue"></a> 使用 C++/CLI 的互操作调试的格式说明符
-**粗体** 的说明符仅支持本地调试和 C++/CLI 代码。
+
+**粗体** 的说明符仅支持本地调试和 C++/CLI 代码。 这需要使用[托管兼容模式](../debugger/general-debugging-options-dialog-box.md)指定的旧版调试器。
 
 |说明符|格式|原始监视值|显示的值|
 |---------------|------------|--------------------------|---------------------|
@@ -170,7 +175,10 @@ int main() {
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|
 
 ### <a name="format-specifiers-for-memory-locations-in-interop-debugging-with-ccli"></a><a name="BKMK_Format_specifiers_memory_locations_in_interop_debugging_and_C___edit_and_continue"></a>C++/CLI 互操作调试中的内存位置格式说明符
+
 下表介绍用于内存位置的格式化符号。 可以使用带有计算为位置的任何值或表达式的内存位置说明符。
+
+**粗体** 的说明符仅支持本地调试和 C++/CLI 代码。 这需要使用[托管兼容模式](../debugger/general-debugging-options-dialog-box.md)指定的旧版调试器。
 
 |符号|格式|原始监视值|显示的值|
 |------------|------------|--------------------------|---------------------|
@@ -183,6 +191,7 @@ int main() {
 |**mu**|双字节字符 (Unicode)|0x0012ffac|0x0012ffac 8478 77f4 ffff ffff 0000 0000 0000 0000|
 
 ### <a name="size-specifier-for-pointers-as-arrays-in-interop-debugging-with-ccli"></a><a name="BKMK_Size_specifier_for_pointers_as_arrays_in_interop_debugging_and_C___edit_and_continue"></a> 指针的大小说明符，并且指针在使用 C++/CLI 进行的互操作调试中作为数组存在
+
 如果有一个指针指向要看做数组形式的对象，则可以使用一个整数来指定数组中元素的数量。
 
 |说明符|格式|表达式|显示的值|
