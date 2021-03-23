@@ -17,12 +17,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 11c9384d03971f475abbe680f6731d2757cbb195
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec309be7fbeb81951af73517412f36f7b28bc82f
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935295"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884143"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 
@@ -64,7 +64,7 @@ ms.locfileid: "99935295"
 
 5. 保存文件。
 
-    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击“确定”。
+    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击 **“确定”** 。
 
 6. 在 **解决方案资源管理器** 中，展开 "模板文件" 节点，将会找到扩展名为 **.txt** 的文件。 该文件包含从该模板生成的文本。
 
@@ -125,7 +125,7 @@ ms.locfileid: "99935295"
 
 创建文本模板：
 
-- 将 `debug="true"` 插入 `template` 指令。 例如： 。
+- 将 `debug="true"` 插入 `template` 指令。 例如：
 
    `<#@ template debug="true" hostspecific="false" language="C#" #>`
 
@@ -274,7 +274,7 @@ ms.locfileid: "99935295"
 
 ### <a name="getting-data-from-visual-studio"></a>从 Visual Studio 获取数据
 
-若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 导入 `Microsoft.VisualStudio.TextTemplating` ，其中包含 `GetCOMService()` 扩展方法。  然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如： 。
+若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 导入 `Microsoft.VisualStudio.TextTemplating` ，其中包含 `GetCOMService()` 扩展方法。  然后，你可以使用 IServiceProvider.GetCOMService() 访问 DTE 和其他服务。 例如：
 
 ```src
 <#@ template hostspecific="true" language="C#" #>
@@ -352,7 +352,7 @@ Warning("A warning message");
 
 4. 验证 **tt** 文件的以下属性：
 
-   | | |
+   |Property |设置 |
    |-|-|
    | **自定义工具 =** | **TextTemplatingFileGenerator** |
    | **生成操作 =** | **无** |
@@ -390,6 +390,6 @@ Warning("A warning message");
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)
