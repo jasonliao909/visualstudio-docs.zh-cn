@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 10/28/2020
+ms.date: 03/08/2021
 ms.topic: conceptual
 description: 了解批量许可协议的管理员如何访问 Visual Studio 订阅管理门户
-ms.openlocfilehash: 85e82eed6b8810e7e6a2f8622aead9d50323841d
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 4704b3258eedf8fd1639804a8792a1c18fafce77
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904219"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607283"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以批量许可协议上的管理员的身份访问管理门户
 
@@ -23,12 +23,12 @@ ms.locfileid: "92904219"
 
 登录后，你将被自动设置为超级管理员，并可开始管理订阅和其他管理员。 若要了解超级管理员与管理员之间差异，请查看我们关于[管理员角色](admin-roles.md)的文章。
 
-这适用于所有批量许可协议类型，包括但不限于：企业协议、企业订阅、Select、Select Plus、开放许可、开放式许可证、政府和学术协议。 
+这适用于所有批量许可协议类型，包括但不限于：企业协议、企业订阅、Select、Select Plus、开放许可、开放式许可证、政府 和学术协议。 
 
 ## <a name="resources"></a>资源
-- [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

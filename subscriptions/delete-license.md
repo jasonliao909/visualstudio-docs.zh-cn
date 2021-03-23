@@ -7,15 +7,17 @@ ms.assetid: e49242bc-e9f2-49e8-8caa-f574d508aba6
 ms.date: 02/18/2021
 ms.topic: how-to
 description: 了解管理员可如何在 Visual Studio 订阅管理门户中删除订阅分配
-ms.openlocfilehash: 4eedc767e6397b371256c7957662147964782f75
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: efd0e149f390dd21a286b6ab7405ec36a43b8f78
+ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250017"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103225971"
 ---
 # <a name="delete-assignments-in-visual-studio-subscriptions"></a>删除 Visual Studio 订阅中的分配
 当订阅者不再需要 Visual Studio 订阅时，比如当他们离开公司、完成项目或转换为新的作业角色时，你可以删除他们的订阅，并将订阅分配给其他人。 请注意，重新分配订阅时，并非所有订阅者权益都将重置。  新用户将能够认领任何无人认领的密钥并查看以前认领过的密钥，但认领限制 **不** 会重置。  组织若具有企业协议 (EA)，将重置供原始用户使用的任何权益（如 Pluralsight 培训）。 
+> [!Important]
+> 上次分配订阅后至少经过 90 天，才可将订阅分配给不同的用户。  例如，如果在 6 月 1 日向某订阅者分配了订阅，则在 8 月 30 日之前不能将订阅分配给新订阅者。 
 
 观看此视频或继续阅读，了解如何删除分配。  
 

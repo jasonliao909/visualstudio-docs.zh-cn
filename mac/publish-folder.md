@@ -10,12 +10,12 @@ ms.author: sayedha
 manager: unniravindranathan
 ms.prod: visual-studio-mac
 ms.topic: how-to
-ms.openlocfilehash: 640cdf8b9c31bad42f8c5664f3cef44c558e2a3a
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.openlocfilehash: 99127416b6a488cd7e795b3c4a1888ff103c8029
+ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493408"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102607387"
 ---
 # <a name="publish-to-a-folder-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 发布到文件夹
 
@@ -59,3 +59,7 @@ ms.locfileid: "94493408"
 若要更改发布文件夹路径，请打开发布配置文件并编辑 `publishUrl` 值。
 
 若要更改使用的生成配置，请更改发布配置文件中的 `LastUsedBuildConfiguration` 属性。
+
+## <a name="see-also"></a>另请参阅
+ - [dotnet publish](https://docs.microsoft.com/dotnet/core/tools/dotnet-publish)
+ - [使用 Visual Studio 将 Web 应用发布到网站](https://docs.microsoft.com/visualstudio/deployment/quickstart-deploy-to-a-web-site?view=vs-2019)
