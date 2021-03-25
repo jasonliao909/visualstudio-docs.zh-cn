@@ -11,17 +11,17 @@ helpviewer_keywords:
 - dbgmetric.h
 - metrics [Debugging SDK]
 ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b98914d4e7fc2d63fd6cc9f79789c389e19b784
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935997"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061532"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
 这些函数和声明是用于实现 c + + 中的调试引擎、表达式计算器和符号提供程序的全局帮助器函数。
@@ -271,7 +271,7 @@ HRESULT EnumMetricSections(
 |*[指标值]*|分配给度量值的值。 值应具有 (字符串、数字等 ) 取决于指标。|
 
 > [!NOTE]
-> 所有 Guid 都以的格式存储 `{GUID}` 。 例如 `{123D150B-FA18-461C-B218-45B3E4589F9B}`。
+> 所有 Guid 都以的格式存储 `{GUID}` 。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。
 
 ### <a name="debug-engines"></a>调试引擎
  下面是注册表中调试引擎指标的组织。 `Engine` 是调试引擎的度量类型名称，并且对应于上述注册表子树中的 *[指标类型]* 。
@@ -392,7 +392,7 @@ HRESULT EnumMetricSections(
 |-----------------|-----------------|
 |*[extension guid]*|表达式计算器扩展的 GUID|
 
-### <a name="exceptions"></a>异常
+### <a name="exceptions"></a>例外
  下面是注册表中例外指标的组织。 `Exception` 异常的度量类型名称，并且对应于 *[指标类型]*。
 
  `Exception`\
