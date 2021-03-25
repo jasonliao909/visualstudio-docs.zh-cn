@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - services, consuming
 ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60e6093eb439aa3b0e2a0a86e0d21d8ace95e00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911756"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070084"
 ---
 # <a name="how-to-get-a-service"></a>如何：获取服务
 
@@ -31,9 +31,9 @@ ms.locfileid: "99911756"
 
 1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `GetServiceExtension` 。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
 
-2. 现在，添加一个名为 **GetServiceCommand** 的自定义命令项模板。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *GetServiceCommand.cs*。 有关如何创建自定义命令的详细信息，请 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. 现在，添加一个名为 **GetServiceCommand** 的自定义命令项模板。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *GetServiceCommand*。 有关如何创建自定义命令的详细信息，请 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 
-3. 在 *GetServiceCommand.cs* 中，删除方法的正文 `MenuItemCommand` 并添加以下代码：
+3. 在 *GetServiceCommand* 中，删除方法的正文 `MenuItemCommand` 并添加以下代码：
 
    ```csharp
    IVsActivityLog activityLog = ServiceProvider.GetService(typeof(SVsActivityLog)) as IVsActivityLog;

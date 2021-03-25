@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 73ce91d8-0ab1-4a1f-bf12-4d3c49c01e13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7891cb6a40e6b7de48ba11871688881625b9c68d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e391ad66c9925dc68997ff610dc5d1556ddf09b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895604"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063079"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
 
@@ -31,7 +31,7 @@ ms.locfileid: "99895604"
 ### <a name="template-parameter-replacement"></a>模板参数替换
  当模板将项模板复制到新的项目时，它会将任何模板参数替换为字符串，以自定义该文件。 模板参数是一种特殊的标记，该标记前面和后面跟有美元符号，例如 $date $。
 
- 让我们看一看典型的项目项模板。 提取并检查 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中的 Program.cs。
+ 让我们看一看典型的项目项模板。 在 Program Files\Microsoft Visual Studio 8\Common7\IDE\ProjectTemplates\CSharp\Windows\1033\WindowsApplication.zip 文件夹中提取并检查 Program。
 
 ```csharp
 using System;
@@ -130,7 +130,7 @@ namespace Simple
  这将指示新项目模板通过复制并自定义模板项 windowsapplication.zip 来创建简单的 .csproj 项目文件。
 
 ### <a name="designers-and-references"></a>设计器和引用
- 可以在解决方案资源管理器中看到 "属性" 文件夹存在并且包含所需的文件。 但项目引用和设计器文件依赖项（例如 Resources.Designer.cs 和 Form1.cs 的 Form1.Designer.cs）呢？  它们是在生成时在简单的 .csproj 文件中设置的。
+ 可以在解决方案资源管理器中看到 "属性" 文件夹存在并且包含所需的文件。 但对于项目引用和设计器文件依赖项（如 node.js）以及从 .cs 到 Form1 的 .cs，会怎么样？  它们是在生成时在简单的 .csproj 文件中设置的。
 
  下面是 \<ItemGroup> 从简单的 .csproj 创建项目引用：
 
@@ -145,7 +145,7 @@ namespace Simple
 </ItemGroup>
 ```
 
- 您可以看到，这是解决方案资源管理器中显示的六个项目引用。 下面是另一个部分 \<ItemGroup> 。 为清楚起见，已经删除了许多代码行。 此部分使 Settings.Designer.cs 依赖于设置。设置：
+ 您可以看到，这是解决方案资源管理器中显示的六个项目引用。 下面是另一个部分 \<ItemGroup> 。 为清楚起见，已经删除了许多代码行。 此部分使 Settings 依赖于设置。设置：
 
 ```xml
 <ItemGroup>

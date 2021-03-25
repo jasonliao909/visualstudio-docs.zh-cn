@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], new -
 ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81b1e46db4f38f37296798a645d6547cdd6f017f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d85b018b4e0ea7d5ed1c91e617afcb2759d49b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895721"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070110"
 ---
 # <a name="extend-the-editor-and-language-services"></a>扩展编辑器和语言服务
 可以将语言服务功能 (例如 IntelliSense) 添加到自己的编辑器中，并扩展 Visual Studio 代码编辑器的大多数功能。  有关可以扩展的内容的完整列表，请参阅 [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。
@@ -55,7 +55,7 @@ ms.locfileid: "99895721"
 |[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|提供有关 MEF) Managed Extensibility Framework (的信息。|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|提供有关 WPF) Windows Presentation Foundation (的信息。|
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
  Visual Studio 编辑器包含以下命名空间。
 
  <xref:Microsoft.VisualStudio.Language.Intellisense>

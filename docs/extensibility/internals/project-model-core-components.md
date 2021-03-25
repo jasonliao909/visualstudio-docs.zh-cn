@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project models, objects and interfaces
 - project models, services
 ms.assetid: b2f572d3-b26d-4846-92d1-84055fac141a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7d7e664f0c39a46e1d84df0c5a0842c7270c942
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae01d149611afe5bf75a6952f19baff7d70f6210
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896894"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062806"
 ---
 # <a name="project-model-core-components"></a>项目模型核心组件
 下表在项目模型上展开。 这些表显示了模型中标识的接口和服务的简短说明，以及与特定对象关联的接口和服务。 此外，这些表详细说明了在创建和维护项目时可以选择的其他接口，具体取决于特定的项目类型的要求。
@@ -39,7 +39,7 @@ ms.locfileid: "99896894"
 
 ### <a name="project-objects"></a>项目对象
 
-|界面|注释|
+|接口|注释|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>|管理添加和删除项目项、打开编辑器，以及维护每个文档名字对象和之间的映射 `VSITEMID` 。 继承自 `IVsProject` 和 `IVsProject2` 。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>|管理导航和显示属性并提供事件。|
@@ -59,7 +59,7 @@ ms.locfileid: "99896894"
 
 ### <a name="configuration-object"></a>配置对象
 
-|界面|注释|
+|接口|注释|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsCfg>|提供有关配置的信息。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2>|使项目能够管理配置信息。|
@@ -68,13 +68,13 @@ ms.locfileid: "99896894"
 
 ### <a name="configuration-builder-object"></a>配置生成器对象
 
-|界面|注释|
+|接口|注释|
 |----------------|--------------|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg>|管理项目配置的生成操作。|
 
 ### <a name="additional-project-objects"></a>其他项目对象
 
-|界面|注释|
+|接口|注释|
 |----------------|--------------|
 |`IDispatch`<br /><br /> <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages>|在 " **属性** " 窗口中显示项属性。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs>|显示部署的输出。|

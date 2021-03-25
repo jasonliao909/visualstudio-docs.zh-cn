@@ -9,17 +9,17 @@ helpviewer_keywords:
 - registry, new project types
 - registration, new project types
 ms.assetid: dfc0e231-6b4e-447d-9d64-0e66dea3394a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 893f59aa9e99d990623e0c8383c12bbffbc4a510
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54f62a90ece61fc2dd8f3cc2b242957f249ed33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944506"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062767"
 ---
 # <a name="registering-a-project-type"></a>注册项目类型
 当你创建新的项目类型时，你必须创建允许 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 识别和使用你的项目类型的注册表项。 通常使用注册表脚本 () 文件创建这些注册表项。

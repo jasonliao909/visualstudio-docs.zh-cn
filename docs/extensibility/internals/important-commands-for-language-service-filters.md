@@ -8,17 +8,17 @@ helpviewer_keywords:
 - language services, filters
 - language services, commands to support
 ms.assetid: 4948c494-3d4d-4f50-b3f9-959e73f90e4d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4eaa85eab9d9691125afce28d51c61d464e56cb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d27f1c3057266d1b167999f3178a3e554a78ddb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839828"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069551"
 ---
 # <a name="important-commands-for-language-service-filters"></a>语言服务筛选器的重要命令
 如果要创建功能齐全的语言服务筛选器，请考虑处理以下命令。 命令标识符的完整列表在 <xref:Microsoft.VisualStudio.VSConstants.VSStd2KCmdID> 托管代码的枚举和非托管代码的 Stdidcmd 头文件中定义 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 可在 *Visual STUDIO SDK 安装路径*\VisualStudioIntegration\Common\Inc. 中找到 Stdidcmd 文件。

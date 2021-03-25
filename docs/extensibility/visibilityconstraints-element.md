@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, VisibilityConstraints
 - VisibilityConstraints element (VSCT XML schema)
 ms.assetid: d6dcd314-6fe4-4693-a189-91fa026c7b34
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb6047c98031c484f6a0a51ab2a393a2a46bb2a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d97f72e7a29f3cbb23c775df8454952f5ffac928
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062559"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
 VisibilityConstraints 元素确定命令组和工具栏的静态可见性。 可见性首先由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 控制，无需加载 VSPackage。
@@ -39,7 +39,7 @@ VisibilityConstraints 元素确定命令组和工具栏的静态可见性。 可
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 

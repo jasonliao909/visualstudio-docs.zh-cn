@@ -7,17 +7,17 @@ helpviewer_keywords:
 - projects [Visual Studio], new project dialog
 - projects [Visual Studio], new project generation
 ms.assetid: 66778698-0258-467d-8b8b-c351744510eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98a305e4e3188131b2ee3c6e2ecb82dc8d4537b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27a7e0f3175388b963e85950ea903843caff3baa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895773"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063144"
 ---
 # <a name="new-project-generation-under-the-hood-part-one"></a>生成新项目：揭秘，第 1 部分
 您是否曾经想过如何创建您自己的项目类型呢？ 想知道创建新项目时究竟发生了什么情况？ 让我们看一下这一幕后，看看究竟会发生什么。
@@ -95,7 +95,7 @@ devenv /installvstemplates
 
  指示如果将 Visual Studio 设置为进行开发，则 Visual c # 将为根节点 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 。 否则，它将是 **其他语言** 的子节点。
 
-##### <a name="folder"></a>文件夹
+##### <a name="folder"></a>Folder
  如果此子项存在，则根节点将成为指定文件夹的子节点。 可能的文件夹列表会出现在项下面
 
  HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\NewProjectTemplates\PseudoFolders
