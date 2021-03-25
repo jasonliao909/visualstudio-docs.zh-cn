@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - create
 ms.assetid: d090abb6-d99f-4083-a3db-cd16bf81ce7d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a4ebcf99634012943ed0a7fd1a72b5d4852729e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79adcf719091619fe4c4eb62b1fe89ba3da388f5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931378"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062013"
 ---
 # <a name="walkthrough-create-a-custom-editor"></a>演练：创建自定义编辑器
 VSPackage 项目模板可使用 c + + 创建一个简单的自定义编辑器。 VSPackage 项目模板不再支持 c # 或 Visual Basic 项目。 有关详细信息，请参阅 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)。

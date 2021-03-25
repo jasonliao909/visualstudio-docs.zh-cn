@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - VSTemplate element [Visual Studio project templates]
 ms.assetid: f8ac561b-3b0b-4246-9ec9-118d2447e9a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f15b21ccb52cf7aa7c857c0b6b523c02fd65461
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7509614613ac80bc4f697f7f93358819eb9ecde4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905734"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062208"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a> (Visual Studio 模板的 .Vstemplate 元素) 
 包含有关项目模板、项模板或初学者工具包的所有元数据。
@@ -40,7 +40,7 @@ ms.locfileid: "99905734"
 
 ### <a name="attributes"></a>特性
 
-| 特性 | 说明 |
+| 属性 | 说明 |
 |-----------| - |
 | `Type` | 将模板标识为项目模板或项模板。 此属性的值可以是 `Project` 或 `Item` 。 |
 | `Version` | 指定模板的版本号。 和中的模板的 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] `Version` 属性值为 `3.0.0` 。 |

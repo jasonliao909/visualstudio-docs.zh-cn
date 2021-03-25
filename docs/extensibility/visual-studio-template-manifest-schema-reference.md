@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: bc7d0a81-0df5-41a9-a912-1b30e5da1d13
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f251b4511e2bff5bc20172e4018560205a378e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 033e735b93a534164d96cf47d6412c609525ad8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925830"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062494"
 ---
 # <a name="visual-studio-template-manifest-schema-reference"></a>Visual Studio 模板清单架构参考
 此架构描述为 Visual Studio 项目或项模板 *生成) 文件* (visual studio 模板清单的格式。 该架构还介绍了该模板的位置和其他相关信息。
@@ -28,7 +28,7 @@ ms.locfileid: "99925830"
 ## <a name="vstemplatemanifest-element"></a>VSTemplateManifest 元素
  清单的根元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
 - **版本**：一个字符串，表示模板清单的版本。 必需。
 
@@ -46,8 +46,8 @@ ms.locfileid: "99925830"
 ## <a name="vstemplatecontainer"></a>VSTemplateContainer
  模板清单元素的容器。 清单为其定义的每个模板都有一个模板容器。
 
-### <a name="attributes"></a>属性
- **VSTemplateType**：一个字符串值，指定模板 (`"Project"` 、或) 的类型 `"Item"` `"ProjectGroup"` 。 必需
+### <a name="attributes"></a>特性
+ **VSTemplateType**：一个字符串值，指定模板 (`"Project"` 、或) 的类型 `"Item"` `"ProjectGroup"` 。 必须
 
 ### <a name="child-elements"></a>子元素
 
@@ -82,7 +82,7 @@ ms.locfileid: "99925830"
 ## <a name="namedescriptionicon"></a>NameDescriptionIcon
  指定可能用于本地化模板的名称和说明。 请参阅上面的 **LocalizedName** 。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
 - **Package**：一个指定包的字符串值。 可选。
 

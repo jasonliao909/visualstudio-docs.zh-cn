@@ -9,17 +9,17 @@ helpviewer_keywords:
 - ~sak files
 - source control plug-ins, ~SAK files
 ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61b446416bc944b53d38b07b3a58358a333744b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf0f8bc567a097d4bb7d400f829489c517e9a68f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946678"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061233"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 文件
 在源代码管理插件 API 1.2 中， *~ SAK* 文件已替换为功能标志和新函数，这些函数可检测源代码管理插件是否支持 *mssccprj.scc* 文件和共享签出。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Open With command
 - persistence, supporting Open With command
 ms.assetid: 53794bc3-1b73-4d40-954e-cfade1abddcf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9426b60013ae17eec872a665666a60d1fdfc1bc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e45e2c601873641b5ac79c54fd6709eb3f45f95d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946717"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069811"
 ---
 # <a name="display-files-by-using-the-open-with-command"></a>使用 "打开方式" 命令显示文件
 项目可以要求 IDE 显示 " **打开方式** " 对话框。 此请求将提示用户打开具有选定标准编辑器的文件。 以下步骤描述了此过程：

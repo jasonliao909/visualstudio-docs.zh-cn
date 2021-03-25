@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project models
 - projects [Visual Studio SDK], elements
 ms.assetid: a1dbe0dc-68da-45d7-8704-5b43ff7e4fc4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f786ae8e0725c7c1b6f0683a779a65f015ac2a75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85b31996a7a0636f136e43531e69fe25c6d87d8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946743"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061285"
 ---
 # <a name="elements-of-a-project-model"></a>项目模型的元素
 中所有项目的接口和实现 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 共享基本结构：项目类型的项目模型。 在你要开发的 VSPackage 中，你可以创建符合设计决策的对象，并与 IDE 提供的全局功能一起工作。 例如，你可以控制如何保存项目项，但你不会控制必须保存文件的通知。 当用户将焦点放在打开的项目项上并在菜单栏上的 "**文件**" 菜单中选择 "**保存**" 时 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，项目类型代码必须截获 ide 中的命令，保存该文件，然后将通知发送回 ide，指出该文件不再发生更改。

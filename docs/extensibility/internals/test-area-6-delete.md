@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], deleting items
 - source control plug-ins, deleting items
 ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd0e7ba0c1841ea054739cbae85b74245807b324
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e405df704dfbba14413bd3787a9fb9f959c62a46
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884476"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078586"
 ---
 # <a name="test-area-6-delete"></a>测试区域 6：删除
 此源代码管理插件测试区域包含删除操作。

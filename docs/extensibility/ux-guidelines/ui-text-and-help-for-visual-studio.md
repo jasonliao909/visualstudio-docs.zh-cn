@@ -4,17 +4,17 @@ description: 了解 Visual Studio 帮助信息中使用的 UI 文本和术语。
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e8747d07-6c90-46cc-b425-55b589f7e9e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b0da682f8403890e57118384b7d979f8760d62f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8635907b5c0190165855378fa692fb9abca4b0ec
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926149"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052653"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio 的 UI 文本和帮助
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文本和术语
@@ -156,14 +156,14 @@ ms.locfileid: "99926149"
 
 ### <a name="common-terminology"></a>常见术语
 
-|术语|说明|注释|
+|术语|说明|评论|
 |----------|-----------------|-------------|
 |登录/注销|谓词使用同义词将身份验证表示为 web 属性。 在客户端中，我们使用这一一次，作为用于登录和退出 IDE 用户连接的顶级概念，此类代表提供高级功能（如漫游和许可）的顶级标识，这些功能在所有其他连接中都不可用。|IDE 用户是唯一应该表示登录/注销谓词的功能，因为它表示顶级 IDE 用户。|
 |连接/断开连接|在功能维护与联机服务的单一连接的位置使用。|服务器资源管理器，一次只能有一个活动的 Azure 连接，这是一个连接/断开连接的示例。|
 |添加/删除|非破坏性。 添加或删除列表中的内容时使用。|"TFS 连接管理器服务器列表" 对话框是 "添加/删除" 的一个示例。|
 |删除|破坏. 仅当要删除的元素将被永久丢弃或从磁盘中删除时使用。|如果结果是从磁盘中删除文件，"删除" 通常需要提示。|
 
-## <a name="error-messages"></a>错误消息
+## <a name="error-messages"></a>Error messages
 
 ### <a name="overview"></a>概述
  出现错误。 在阻止能够避免错误消息的第一步是，设置对用户可以执行的操作的限制。 但是，当发生错误时，可能会出现一条写入错误消息，以解决问题。 错误消息可能是用户看到的最重要的通知类型之一，因为它们是同步的，指出需要解决的问题。 编写不当的错误消息会让用户自行决定错误和任何可能的解决方案的原因。
@@ -248,7 +248,7 @@ ms.locfileid: "99926149"
 
 - **短暂地.** 不要让用户感到非常愚蠢。 避免恶意或冒犯性的语言 (终止、执行、终止、致命、非法) 。 避免大写文本，该文本通常被视为驯养，并不是可读的。 不要使用幽默。
 
-- **恰当.** 使用正确的拼写和语法 (甚至在 alphas) 。 打字错误是 unprofessional 和尴尬。
+- **正确。** 使用正确的拼写和语法 (甚至在 alphas) 。 打字错误是 unprofessional 和尴尬。
 
 - **根据上下文适用。** 使用适当的按钮文本。 避免使用 "确定" 按钮，而是使用 "继续" 或 "是/否"。
 

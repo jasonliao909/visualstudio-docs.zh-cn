@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, buttons
 ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 601e40762adc665f6241bb00a4b683b81e7fbd80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88eacbdbcc50dc843769cdcf4701ba1a2bfe895a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970018"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061064"
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
 默认情况下，在 " **属性** " 窗口的工具栏上显示某些按钮，具体取决于开发语言和产品类型。 在所有情况下，将显示 "已 **分类**"、"按 **字母顺序** **" 和 "****属性页**" 按钮。 在 Visual c # 和 Visual Basic 中，还会显示 " **事件** " 按钮。 在某些 Visual C++ 的项目中，将显示 " **vc + +" 消息** 和 " **vc 替代** " 按钮。 对于其他项目类型，可能会显示其他按钮。 有关 " **属性** " 窗口中的按钮的详细信息，请参阅 " [属性" 窗口](../../ide/reference/properties-window.md)。
