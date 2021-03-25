@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu items, adding dynamically
 - menus, adding dynamic items
 ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3432092bc73ef3a06c807a1b4c4942080b9fce8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883540"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070331"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
 你可以在运行时添加菜单项，方法是在 `DynamicItemStart` Visual Studio 命令表中的占位符按钮定义上指定命令标志 (*.Vsct*) 文件中，然后在代码中定义 () 要显示的菜单项的数目，并处理 (s 的命令。 加载 VSPackage 时，会将占位符替换为动态菜单项。
@@ -144,7 +144,7 @@ ms.locfileid: "99883540"
 ## <a name="implement-the-dynamic-menu-command"></a>实现动态菜单命令
  创建一个从继承的动态菜单命令类 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 。 在此实现中，构造函数指定用于匹配命令的谓词。 必须重写 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.DynamicItemMatch%2A> 方法，以便使用此谓词来设置 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand.MatchedCommandId%2A> 属性，该属性用于标识要调用的命令。
 
-1. 创建一个名为 *DynamicItemMenuCommand.cs* 的新 c # 类文件，并添加一个从继承的名为 **DynamicItemMenuCommand** 的类 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ：
+1. 创建一个名为 *DynamicItemMenuCommand* 的新 c # 类文件，并添加一个从继承的名为 **DynamicItemMenuCommand** 的类 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> ：
 
     ```csharp
     class DynamicItemMenuCommand : OleMenuCommand
@@ -207,14 +207,14 @@ ms.locfileid: "99883540"
 ## <a name="add-the-command"></a>添加命令
  在 DynamicMenu 构造函数中，可以设置菜单命令，包括动态菜单和菜单项。
 
-1. 在 *DynamicMenuPackage.cs* 中，添加命令集的 GUID 和命令 ID：
+1. 在 *DynamicMenuPackage* 中，添加命令集的 GUID 和命令 ID：
 
     ```csharp
     public const string guidDynamicMenuPackageCmdSet = "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     public const uint cmdidMyCommand = 0x104;
     ```
 
-2. 在 *DynamicMenu.cs* 文件中，添加以下 using 指令：
+2. 在 *DynamicMenu* 文件中，添加以下 using 指令：
 
     ```csharp
     using EnvDTE;
@@ -333,7 +333,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>将 VSPackage 设置为仅在解决方案有多个项目时加载
- 因为除非活动解决方案包含多个项目，否则 " **设置启动项目** " 命令没有意义，因此，你可以将 VSPackage 设置为仅在这种情况下自动加载。 将 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 与 UI 上下文一起使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> 。 在 *DynamicMenuPackage.cs* 文件中，将以下属性添加到 DynamicMenuPackage 类：
+ 因为除非活动解决方案包含多个项目，否则 " **设置启动项目** " 命令没有意义，因此，你可以将 VSPackage 设置为仅在这种情况下自动加载。 将 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 与 UI 上下文一起使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> 。 在 *DynamicMenuPackage* 文件中，将以下属性添加到 DynamicMenuPackage 类：
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]

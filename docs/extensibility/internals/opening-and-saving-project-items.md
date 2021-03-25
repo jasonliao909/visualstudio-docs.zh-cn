@@ -9,17 +9,17 @@ helpviewer_keywords:
 - files [Visual Studio], opening and saving
 - editors [Visual Studio SDK], file persistence
 ms.assetid: f71898ad-335f-4c43-a177-4da87078afd1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: df851f304cd6c62e1447f791a23618a6de5cb0bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ff3c76294ce99fa5eeb7bf311307e54f5d0e6cc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895591"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063066"
 ---
 # <a name="opening-and-saving-project-items"></a>打开和保存项目项
 添加新的项目类型时，必须在集成开发环境中打开和保存项目文件， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 。 以下主题介绍了打开和保存文件的不同方法。

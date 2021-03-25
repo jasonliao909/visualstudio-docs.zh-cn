@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
 ms.assetid: f9381b2f-99aa-426c-aea0-d9c15f3c859b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4addc7b1f62c7528e845b34842c0fd85ba66148a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6876bea4174df7f5ac293ea0d470f5922d7492d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921399"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055019"
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (EE) 检查语言的语法，以便在运行时分析和评估变量和表达式，从而在 IDE 处于中断模式时，用户可以查看这些语法和表达式。
