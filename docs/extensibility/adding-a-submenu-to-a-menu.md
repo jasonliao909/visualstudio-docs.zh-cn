@@ -10,17 +10,17 @@ helpviewer_keywords:
 - cascading submenus
 - menus, creating cascading submenus
 ms.assetid: 692600cb-d052-40e2-bdae-4354ae7c6c84
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b784cae836f1a5cae520a9650c8f396ccc960a72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc6d521e699beb2345ba76e2e617ff749886eee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951506"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094895"
 ---
 # <a name="add-a-submenu-to-a-menu"></a>向菜单中添加子菜单
 本演练基于将菜单添加到 [Visual Studio 菜单栏](../extensibility/adding-a-menu-to-the-visual-studio-menu-bar.md) 中的演示，通过显示如何将子菜单添加到 " **TestMenu** " 菜单来构建。
@@ -85,7 +85,7 @@ ms.locfileid: "99951506"
 
 ## <a name="add-a-command"></a>添加命令
 
-1. 打开 *TestCommand.cs* ，并在现有命令 id 后面添加以下命令 id。
+1. 打开 *testcommand (* ，并在现有命令 id 后面添加以下命令 id。
 
     ```csharp
     public const int cmdidTestSubCmd = 0x0105;
@@ -153,7 +153,7 @@ ms.locfileid: "99951506"
 
 4. 生成项目并启动调试。 应显示实验实例。
 
-5. 在 " **TestMenu** " 菜单上，单击 " **子菜单** "，然后单击 " **测试子命令**"。 将出现一个消息框，并显示 "Testcommand (. SubItemCallback ( # A1" 中的 "Test 命令" 文本。
+5. 在 " **TestMenu** " 菜单上，单击 " **子菜单** "，然后单击 " **测试子命令**"。 将出现一个消息框，并显示文本 "测试命令在 Testcommand (. SubItemCallback () "。
 
 ## <a name="see-also"></a>另请参阅
 
