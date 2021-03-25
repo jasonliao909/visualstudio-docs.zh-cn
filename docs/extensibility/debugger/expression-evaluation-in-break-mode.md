@@ -9,17 +9,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, break mode
 ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 041e499f4c670b5b31530c7fc0ecb74358a8087f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 932bebecf4eea73cfae579bbea58e024b4388ffb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921507"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067863"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断模式下的表达式计算
 以下部分介绍调试器处于中断模式时，必须执行表达式计算的过程。

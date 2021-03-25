@@ -8,17 +8,17 @@ helpviewer_keywords:
 - machine debug manager
 - debugging [Debugging SDK], Machine Debug Manager
 ms.assetid: d0861e0c-b819-490c-9604-5e6d08ac291a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66cc91a544d0d0729593b4be09f82ae0eb2081ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c332b28e48b24065b5e359332df65c61365f1763
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948473"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067719"
 ---
 # <a name="process-debug-manager"></a>进程调试管理器
 进程调试管理器 (PDM) 是 Visual Studio 的一个组件，它可管理程序和进程，使其可用于会话调试管理器和调试引擎。

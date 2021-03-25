@@ -5,22 +5,22 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 99e5566d-450e-4660-9bca-454e1c056a02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1c906b96f3bd20b72cf2b5eca92190e0ad42916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad000d486b0808ea4ddc3311daa7178c6eda1231
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931287"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080315"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>演练：显示灯泡建议
 轻型电灯泡是 Visual Studio 编辑器中的图标，可展开以显示一组操作，例如对内置代码分析器或代码重构标识的问题的修补程序。
 
- 在 Visual c # 和 Visual Basic 编辑器中，还可以使用 .NET Compiler Platform ( "Roslyn" ) 来编写和打包自己的代码分析器，其中包含自动电灯泡显示的操作。 有关详细信息，请参阅：
+ 在 Visual c # 和 Visual Basic 编辑器中，还可以使用 .NET Compiler Platform ( "Roslyn" ) 来编写和打包自己的代码分析器，其中包含自动电灯泡显示的操作。 有关详细信息，请参见:
 
 - [如何：编写 c # 诊断和代码修补程序](https://github.com/dotnet/roslyn/blob/master/docs/wiki/How-To-Write-a-C%23-Analyzer-and-Code-Fix.md)
 
@@ -74,7 +74,7 @@ ms.locfileid: "99931287"
 
 ## <a name="implement-the-light-bulb-source-provider"></a>实现灯泡源提供程序
 
-1. 在 *LightBulbTest.cs* 类文件中，删除 LightBulbTest 类。 添加一个名为 **TestSuggestedActionsSourceProvider** 的类，该类实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。 使用 " **测试建议的操作** " 和 "文本" 的名称导出它 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 。
+1. 在 *LightBulbTest* 类文件中，删除 LightBulbTest 类。 添加一个名为 **TestSuggestedActionsSourceProvider** 的类，该类实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。 使用 " **测试建议的操作** " 和 "文本" 的名称导出它 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 。
 
     ```csharp
     [Export(typeof(ISuggestedActionsSourceProvider))]

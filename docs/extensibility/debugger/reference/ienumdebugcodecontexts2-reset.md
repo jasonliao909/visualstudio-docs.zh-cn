@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugCodeContexts2::Reset
 ms.assetid: df6cf1e3-2ef8-4d38-81a0-8e9adf151884
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48df7ce32f085ea387f6ce49e891a0f0e01eb2cf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 53a0603de4c40439e1ca374585117bbb6d1bb584
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226951"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080133"
 ---
 # <a name="ienumdebugcodecontexts2reset"></a>IEnumDebugCodeContexts2::Reset
 将枚举重置为第一个元素。
@@ -44,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后， [下一次调用的方法将](../../../extensibility/debugger/reference/ienumdebugcodecontexts2-next.md) 返回枚举的第一个元素。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)
