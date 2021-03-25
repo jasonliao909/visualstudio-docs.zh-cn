@@ -6,17 +6,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - m_taskIdCounter field, Task class [.NET Framework debug engines]
 ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f57a69061912297bb1c09b02828d3cbba75a808
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 6ebb338c208545b265101c1f78d9472c5b4622f6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223350"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070565"
 ---
 # <a name="s_taskidcounter-field"></a>s_taskIdCounter 字段
 对象的下一个可用标识符 <xref:System.Threading.Tasks.Task> 。
@@ -35,5 +35,5 @@ ms.locfileid: "102223350"
 
 ## <a name="remarks"></a>备注
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

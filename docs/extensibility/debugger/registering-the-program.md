@@ -8,17 +8,17 @@ helpviewer_keywords:
 - programs, registration
 - debugging [Debugging SDK], program registration
 ms.assetid: d726a161-7db3-4ef4-b258-9f6a5be68418
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8326bb2c3938ce76d777c73d0d0f24da145d8ef5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fda27bd0572713e16311e6feae8ff74870cb006
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961061"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070630"
 ---
 # <a name="register-the-program"></a>注册程序
 调试引擎获取端口（由 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 接口表示）后，启用程序调试的下一步是将其注册到该端口。 注册后，可通过以下方法之一进行调试：

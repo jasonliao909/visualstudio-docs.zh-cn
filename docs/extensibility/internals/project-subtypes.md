@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], subtypes
 - project subtypes [Visual Studio SDK]
 ms.assetid: d235b47b-cf11-4d47-a63f-e33d9d16105d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d44014ced9253328890c34d877beb68120c0c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1695bc79e38c7a9ebbda7736e57116123343f30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896788"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064327"
 ---
 # <a name="project-subtypes"></a>项目子类型
 项目子类型使你可以自定义或风格的项目系统的行为 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 自定义包括将其他数据保存在项目文件中、在 " **添加新项** " 对话框中添加或筛选项、控制程序集的调试和部署方式以及扩展 "项目 **属性页** " 对话框。 Vspackage 使用 COM 聚合来实现项目子类型。

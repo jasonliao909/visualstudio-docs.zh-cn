@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - vsix msi
 ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba25698cd1efc6aebf030638e191f139a14f99a6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6436d05d3b15be1c1fe8d7c7bb9c8592dee091dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967288"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090273"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>为 Windows Installer 部署准备扩展
 不能使用 Windows Installer 包 (MSI) 来部署 VSIX 包。 不过，您可以提取用于 MSI 部署的 VSIX 包的内容。 本文档演示如何准备一个项目，该项目的默认输出是一个要包含在安装项目中的 VSIX 包。

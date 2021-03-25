@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccSetOption function
 ms.assetid: 4b5e6666-c24c-438a-a9df-9c52f58f8175
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e25647eb8d2e5796665f072af6df43b2f585c7b0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 031de256b231bbd95e7535af80448db5140cba7e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221374"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090143"
 ---
 # <a name="sccsetoption-function"></a>SccSetOption 函数
 此函数设置控制源代码管理插件的行为的选项。
@@ -49,7 +49,7 @@ SCCRTN SccSetOption(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功设置选项。|
 |SCC_I_SHARESUBPROJOK|如果 `nOption` 为 `SCC_OPT_SHARESUBPROJ` ，并且源代码管理插件允许 IDE 设置目标文件夹，则返回。|
@@ -60,14 +60,14 @@ SCCRTN SccSetOption(
 
  选项及其值的摘要：
 
-|`nOption`|`dwValue`|描述|
+|`nOption`|`dwValue`|说明|
 |---------------|---------------|-----------------|
 |`SCC_OPT_EVENTQUEUE`|`SCC_OPT_EQ_DISABLE`<br /><br /> `SCC_OPT_EQ_ENABLE`|启用/禁用后台事件队列。|
 |`SCC_OPT_USERDATA`|任意值|指定要传递给 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回调函数的用户值。|
 |`SCC_OPT_HASCANCELMODE`|`SCC_OPT_HCM_NO`<br /><br /> `SCC_OPT_HCM_YES`|指示 IDE 当前是否支持取消操作。|
 |`SCC_OPT_NAMECHANGEPFN`|指向 [OPTNAMECHANGEPFN](../extensibility/optnamechangepfn.md) 回调函数的指针|设置指向名称更改回调函数的指针。|
 |`SCC_OPT_SCCCHECKOUTONLY`|`SCC_OPT_SCO_NO`<br /><br /> `SCC_OPT_SCO_YES`|指示 IDE 是否允许通过源代码管理用户界面手动签出其文件 () 或是否必须仅通过源代码管理插件将其签出。|
-|`SCC_OPT_SHARESUBPROJ`|不可用|如果源代码管理插件允许 IDE 指定本地项目文件夹，则插件将返回 `SCC_I_SHARESUBPROJOK` 。|
+|`SCC_OPT_SHARESUBPROJ`|不适用|如果源代码管理插件允许 IDE 指定本地项目文件夹，则插件将返回 `SCC_I_SHARESUBPROJOK` 。|
 
 ## <a name="scc_opt_eventqueue"></a>SCC_OPT_EVENTQUEUE
  如果 `nOption` 为 `SCC_OPT_EVENTQUEUE` ，则 IDE 正在禁用 (或重新启用) 后台处理。 例如，在编译期间，IDE 可能会指示源代码管理插件停止任意类型的空闲处理。 编译完成后，它将重新启用后台处理，以使插件的事件队列保持最新。 对应于的 `SCC_OPT_EVENTQUEUE` 值 `nOption` ，有两个可能的值 `dwVal` ，即 `SCC_OPT_EQ_ENABLE` 和 `SCC_OPT_EQ_DISABLE` 。
@@ -84,7 +84,7 @@ SCCRTN SccSetOption(
 ## <a name="scc_opt_sharesubproj"></a>SCC_OPT_SHARESUBPROJ
  如果 `nOption` 设置为 `SCC_OPT_SHARESUBPROJ` ，则 IDE 将测试源代码管理插件是否可以在从源代码管理添加文件时使用指定的本地文件夹。 `dwVal`在这种情况下，参数的值并不重要。 如果插件允许 IDE 指定本地目标文件夹，在调用 [SccAddFromScc](../extensibility/sccaddfromscc-function.md) 时，将从源代码管理中添加文件，则 `SCC_I_SHARESUBPROJOK` 调用函数时必须返回插件 `SccSetOption` 。 然后，IDE 使用该 `lplpFileNames` 函数的参数 `SccAddFromScc` 传入目标文件夹。 此插件使用目标文件夹将文件添加到源代码管理中。 如果在 `SCC_I_SHARESUBPROJOK` 设置该选项时插件未返回 `SCC_OPT_SHARESUBPROJ` ，IDE 将假定插件只能在当前的本地文件夹中添加文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

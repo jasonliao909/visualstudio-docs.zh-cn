@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugObjects::Next method
 ms.assetid: e54c3055-6030-4dc9-9f7a-5e3ce75f252f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dc05932a39d76fcf21290971f12567795a678e9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 661d95f2196787502ab0ce144f6a7490c9911eca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224663"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064563"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 此方法返回枚举中的下一组元素。
@@ -57,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugObjects](../../../extensibility/debugger/reference/ienumdebugobjects.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
