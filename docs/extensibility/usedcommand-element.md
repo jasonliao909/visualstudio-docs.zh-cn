@@ -8,17 +8,17 @@ helpviewer_keywords:
 - UsedCommands element (VSCT XML schema)
 - VSCT XML schema elements, UsedCommands
 ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c3f4a5f39e7cb999d9b3a86aa791464fca25645
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30ff89cba5dbc1e54afaf51fb659e07c29e53009
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934098"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060219"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 允许 VSPackage 访问在 .vsct 文件中定义的命令。 例如，如果你的 VSPackage 使用由 shell 定义的标准 **复制** 命令， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 则可以将命令添加到菜单或工具栏，而无需重新实现它。
@@ -34,11 +34,11 @@ ms.locfileid: "99934098"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。 标识命令的 GUID ID 对的 GUID。|
+|GUID|必需。 标识命令的 GUID ID 对的 GUID。|
 |id|必需。 标识命令的 GUID ID 对的 ID。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 

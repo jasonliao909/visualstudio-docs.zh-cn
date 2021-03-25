@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control plug-ins, callback functions
 - callback functions, source control plug-ins
 ms.assetid: 4a8833f0-6ac0-4ea7-9400-8275aa991468
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42d7c02f2beb24aa92c0a3319c44cce3c8b325b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e2e361551fbe03b7f0ef41b19c5d4136aa50472
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911254"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068097"
 ---
 # <a name="callback-functions-implemented-by-the-ide"></a>IDE 实现的回调函数
 为了与集成开发环境集成 (IDE) 尽可能无缝地进行集成，并提供统一的最终用户体验，则源代码管理插件可以使用 IDE 实现的回调函数。 在源代码管理操作期间，该插件可以在适当的时间调用这些函数，以将信息传递到 IDE;然后，IDE 可以在其本机 UI 中将此信息显示为嵌入元素。 在此方案中，用户的工作效率较低，但该插件使用自己的 UI。

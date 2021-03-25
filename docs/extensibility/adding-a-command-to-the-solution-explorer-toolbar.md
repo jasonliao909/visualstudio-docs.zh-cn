@@ -9,17 +9,17 @@ helpviewer_keywords:
 - buttons [Visual Studio], adding to Solution Explorer
 - Solution Explorer, adding buttons
 ms.assetid: f6411557-2f4b-4e9f-b02e-fce12a6ac7e9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305966a4cd4ec67994ac3dbd6c7ba0e25a14172f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf6ffcded95d142578ed118ab26b57914eb36c37
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951688"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060076"
 ---
 # <a name="add-a-command-to-the-solution-explorer-toolbar"></a>将命令添加到解决方案资源管理器工具栏
 本演练演示如何将按钮添加到 **解决方案资源管理器** 工具栏中。
@@ -75,7 +75,7 @@ ms.locfileid: "99951688"
 
 5. 单击 "新建" 按钮。
 
-     应显示一个对话框，该对话框 **中的消息 ToolbarButtonPackage 位于 SolutionToolbar. ToolbarButton. MenuItemCallback ( # B1** 。
+     应显示一个对话框，该对话框 **中的消息 ToolbarButtonPackage 位于 SolutionToolbar ()** 。
 
 ## <a name="control-the-visibility-of-a-button"></a>控制按钮的可见性
  本演练的此部分演示如何控制工具栏上的按钮的可见性。 通过将上下文设置为 `<VisibilityConstraints>` *SolutionToolbar. .vsct* 文件的节中的一个或多个项目，可将按钮限制为仅在项目打开时才显示。

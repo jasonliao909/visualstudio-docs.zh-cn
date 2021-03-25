@@ -9,17 +9,17 @@ helpviewer_keywords:
 - stepping, in break mode
 - debugging [Debugging SDK], stepping in break mode
 ms.assetid: b08dc8ee-6c63-4462-a097-6f525cfbb35a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f284fecf32a94f7187ecd34798f9ac21f476804
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ed11d05e4351ac6ba76bc9aa10531a8a96ddf23
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960671"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075401"
 ---
 # <a name="stepping-in-break-mode"></a>中断模式下的单步执行
 以下部分介绍调试器处于中断模式下时所发生的过程，并且必须单步执行代码：

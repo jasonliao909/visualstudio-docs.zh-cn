@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, adding menu controllers to toolbars
 - menu controllers, adding to toolbars
 ms.assetid: 6af9b0b4-037f-404c-bb40-aaa1970768ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82da331d93a2208b76bb953f3a6a489913c907ac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 304f4ea11abc332c01603f96b6b67c0bd22e38c6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951519"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060063"
 ---
 # <a name="add-a-menu-controller-to-a-toolbar"></a>向工具栏添加菜单控制器
 本演练 [以 "将工具栏添加到工具窗口](../extensibility/adding-a-toolbar-to-a-tool-window.md) " 演练为基础，并演示如何将菜单控制器添加到工具窗口工具栏中。 此处所示的步骤还可以应用于在 " [添加工具栏](../extensibility/adding-a-toolbar.md) " 演练中创建的工具栏。
@@ -112,7 +112,7 @@ ms.locfileid: "99951519"
 
 ## <a name="implement-the-menu-controller-commands"></a>实现菜单控制器命令
 
-1. 在 *TWTestCommandPackageGuids.cs* 中，在现有的命令 id 后面添加三个菜单项的命令 id。
+1. 在 *TWTestCommandPackageGuids* 中，在现有的命令 id 后面添加三个菜单项的命令 id。
 
     ```csharp
     public const int cmdidMCItem1 = 0x130;
@@ -120,7 +120,7 @@ ms.locfileid: "99951519"
     public const int cmdidMCItem3 = 0x132;
     ```
 
-2. 在 *TWTestCommand.cs* 中，在类的顶部添加以下代码 `TWTestCommand` 。
+2. 在 *TWTestCommand* 中，在类的顶部添加以下代码 `TWTestCommand` 。
 
     ```csharp
     private int currentMCCommand; // The currently selected menu controller command

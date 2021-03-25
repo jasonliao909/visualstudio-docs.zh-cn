@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: 882a10fa-bb1c-4b01-943a-7a3c155286dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1b21ef736e69c962db389a7bb1a3eb284ebdd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15d28ff154629d07c643430b210d6106ac99978c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887362"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089428"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第1部分
 在 Visual Studio 中，项目是开发人员用来组织源代码文件和其他资产的容器。 项目在 **解决方案资源管理器** 中显示为解决方案的子项目。 项目使你可以组织、构建、调试和部署源代码，并创建对 Web 服务、数据库和其他资源的引用。
@@ -80,7 +80,7 @@ ms.locfileid: "99887362"
 
 4. 保存图标，并关闭图标编辑器。
 
-5. 在 *Templates\Projects\SimpleProject* 文件夹中，添加名为 *Program.cs* 的 **类** 项。
+5. 在 *Templates\Projects\SimpleProject* 文件夹中，添加一个名为 *Program .cs* 的 **类** 项。
 
 6. 将现有代码替换为以下行。
 
@@ -103,11 +103,11 @@ ms.locfileid: "99887362"
    ```
 
    > [!IMPORTANT]
-   > 这不是 *Program.cs* 代码的最终形式;稍后的步骤中将会处理替换参数。 你可能会看到编译错误，但是只要该文件的 **BuildAction** 是 **内容**，你就可以像平常一样生成并运行该项目。
+   > 这不是 *程序 .cs* 代码的最终形式;稍后的步骤中将会处理替换参数。 你可能会看到编译错误，但是只要该文件的 **BuildAction** 是 **内容**，你就可以像平常一样生成并运行该项目。
 
 7. 保存文件。
 
-8. 将 *AssemblyInfo.cs* 文件从 *Properties* 文件夹复制到 *Projects\SimpleProject* 文件夹。
+8. 将 *AssemblyInfo* 文件从 *Properties* 文件夹复制到 *Projects\SimpleProject* 文件夹。
 
 9. 在 *Projects\SimpleProject* 文件夹中，添加名为 *SimpleProject. myproj.csproj* 的 XML 文件。
 
@@ -156,9 +156,9 @@ ms.locfileid: "99887362"
 
 11. 保存文件。
 
-12. 在 "**属性**" 窗口中，将 *AssemblyInfo.cs*、 *Program.cs*、 *SimpleProject* 和 *SimpleProject* 的 **生成操作** 设置为 "**内容**"，并将其 **"包含项**" 设置为 " **True**"。
+12. 在 "**属性**" 窗口中，将 " *AssemblyInfo*"、"SimpleProject *"、*" *SimpleProject*" 和 " *myproj.csproj* " 的 "**生成" 操作** 设置为 "**内容**"，并将其 **"包含项**" 设置为 " **True**"。
 
-    此项目模板描述了一个基本的 Visual c # 项目，该项目同时具有 "调试" 配置和 "发布" 配置。 该项目包括两个源文件： *AssemblyInfo.cs* 和 *Program.cs* 以及多个程序集引用。 当从模板创建项目时，ProjectGuid 值会自动替换为新的 GUID。
+    此项目模板描述了一个基本的 Visual c # 项目，该项目同时具有 "调试" 配置和 "发布" 配置。 该项目包括两个源文件： *AssemblyInfo* *和 .cs 以及若干* 程序集引用。 当从模板创建项目时，ProjectGuid 值会自动替换为新的 GUID。
 
     在 **解决方案资源管理器** 中，展开的 " **模板** " 文件夹应如下所示：
 
@@ -190,7 +190,7 @@ Templates
        }
    ```
 
-2. 将一个类添加到名为 *SimpleProjectFactory.cs* 的顶层 *SimpleProject* 文件夹中。
+2. 将一个类添加到名为 *SimpleProjectFactory* 的顶级 *SimpleProject* 文件夹中。
 
 3. 添加以下 using 指令：
 
@@ -212,7 +212,7 @@ Templates
 
 ### <a name="to-register-the-project-template"></a>注册项目模板
 
-1. 在 *SimpleProjectPackage.cs* 中，将 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 属性添加到 `SimpleProjectPackage` 类，如下所示。
+1. 在 *SimpleProjectPackage* 中，将属性添加 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> 到 `SimpleProjectPackage` 类，如下所示。
 
    ```csharp
    [ProvideProjectFactory(    typeof(SimpleProjectFactory),     "Simple Project",
@@ -271,7 +271,7 @@ Templates
 
 ### <a name="to-initialize-the-project-factory"></a>初始化项目工厂
 
-1. 在 *SimpleProjectPackage.cs* 文件中，添加以下 `using` 指令。
+1. 在 *SimpleProjectPackage* 文件中，添加以下 `using` 指令。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -299,7 +299,7 @@ Templates
     }
     ```
 
-5. 在 *SimpleProjectFactory.cs* 中，将以下 `using` 指令添加到现有 `using` 指令之后。
+5. 在 *SimpleProjectFactory* 中，将以下指令添加 `using` 到现有指令之后 `using` 。
 
     ```csharp
     using Microsoft.VisualStudio.Project;
@@ -339,7 +339,7 @@ Templates
 
 ### <a name="to-test-the-project-factory-implementation"></a>测试项目工厂实现
 
-1. 在 *SimpleProjectFactory.cs* 文件中，在构造函数中的以下行处设置断点 `SimpleProjectFactory` 。
+1. 在 *SimpleProjectFactory* 文件中，在构造函数中的以下行处设置断点 `SimpleProjectFactory` 。
 
     ```csharp
     this.package = package;
@@ -418,7 +418,7 @@ Templates
 
 ### <a name="to-connect-the-project-factory-class-and-the-node-class"></a>连接项目工厂类和 node 类
 
-1. 在 *SimpleProjectFactory.cs* 文件中，添加以下 `using` 指令：
+1. 在 *SimpleProjectFactory* 文件中，添加以下 `using` 指令：
 
     ```csharp
     using IOleServiceProvider =    Microsoft.VisualStudio.OLE.Interop.IServiceProvider;
@@ -462,7 +462,7 @@ Templates
 
 3. 在 " **属性** " 窗口中，将位图的 " **生成操作** " 更改为 " **嵌入的资源**"。
 
-4. 在 *SimpleProjectNode.cs* 中，添加以下 `using` 指令：
+4. 在 *SimpleProjectNode* 中，添加以下 `using` 指令：
 
    ```csharp
    using System.Drawing;
@@ -564,7 +564,7 @@ Templates
 
 ### <a name="to-substitute-template-parameters"></a>替换模板参数
 
-1. 在 *SimpleProjectNode.cs* 文件中，添加以下 `using` 指令。
+1. 在 *SimpleProjectNode* 文件中，添加以下 `using` 指令。
 
    ```csharp
    using System.IO;
@@ -605,7 +605,7 @@ Templates
 
    - `nameSpace` 提供 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 项目模板文件中元素的值。 在本例中，该值为 `MyRootNamespace`。
 
-   - `className` 为提供类源文件名的值，没有文件扩展名。 在这种情况下，要复制到目标文件夹的第一个文件为 *AssemblyInfo.cs*;因此，className 的值为 `AssemblyInfo` 。
+   - `className` 为提供类源文件名的值，没有文件扩展名。 在这种情况下，要复制到目标文件夹的第一个文件为 *AssemblyInfo*;因此，className 的值为 `AssemblyInfo` 。
 
 4. 删除断点，然后按 **F5** 继续执行。
 
@@ -638,4 +638,4 @@ Templates
 
     ![简单项目命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   祝贺！ 您已经实现了一个基本的托管项目系统。
+   祝贺你！ 您已经实现了一个基本的托管项目系统。

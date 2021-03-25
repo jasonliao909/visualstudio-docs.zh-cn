@@ -8,17 +8,17 @@ helpviewer_keywords:
 - ButtonText element (VSCT XML schema)
 - VSCT XML schema elements, ButtonText
 ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b03b5fce58795488f6c379fcf93e5f7fea074e13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fa9ad6aab9d42113f3e01760e191184e168b62d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927166"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068110"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
 此字段允许指定在各种菜单中显示的文本。 默认情况下，该 `ButtonText` 元素显示在菜单控制器中。 `ButtonText`如果其他文本字段为空，则元素也会成为默认值。 `ButtonText`即使指定了其他文本字段，元素也不能为空。

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menus, creating MRU list
 - most recently used
 ms.assetid: 27d4bbcf-99b1-498f-8b66-40002e3db0f8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdff50655f846ced91e59a93a2d264bb06641ed1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb238afb0f583f1b913fbd87f4f50e43679ebd7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951545"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060011"
 ---
 # <a name="add-a-most-recently-used-list-to-a-submenu"></a>向子菜单添加最近使用过的列表
 本演练基于 [向菜单添加子](../extensibility/adding-a-submenu-to-a-menu.md)菜单中的演示，并演示如何向子菜单添加动态列表。 动态列表构成了创建最近使用 (MRU) 列表的基础。
@@ -83,14 +83,14 @@ ms.locfileid: "99951545"
 
 ## <a name="filling-the-mru-list"></a>填充 MRU 列表
 
-1. 在 *TestCommandPackageGuids.cs* 中，在类定义中的现有命令 id 后面添加以下行 `TestCommandPackageGuids` 。
+1. 在 *TestCommandPackageGuids* 中，在类定义中的现有命令 id 后面添加以下行 `TestCommandPackageGuids` 。
 
     ```csharp
     public const string guidTestCommandPackageCmdSet = "00000000-0000-0000-0000-00000000"; // get the GUID from the .vsct file
     public const uint cmdidMRUList = 0x200;
     ```
 
-2. 在 *TestCommand.cs* 中，添加以下 using 语句。
+2. 在 *testcommand (* 中，添加以下 using 语句。
 
     ```csharp
     using System.Collections;

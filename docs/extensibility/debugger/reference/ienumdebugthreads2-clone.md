@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2::Clone
 ms.assetid: d774322c-e72d-4df3-b317-928da39dadc5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b934bbf6e358296c433a1a59fe675f376d1491ac
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 82b0895cfabc63fc61c85fd626f8811796532e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225833"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082720"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugThreads2](../../../extensibility/debugger/reference/ienumdebugthreads2.md)

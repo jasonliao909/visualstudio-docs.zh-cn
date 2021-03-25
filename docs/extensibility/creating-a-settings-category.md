@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - profile settings, creating categories
 ms.assetid: 97c88693-05ff-499e-8c43-352ee073dcb7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf089eeaf8c4408a0bc76d2f3982d311ac9c5979
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896255"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089337"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
@@ -39,7 +39,7 @@ ms.locfileid: "99896255"
 
 2. 打开 *VSPackage* 文件并添加以下三个字符串资源：
 
-    |“属性”|值|
+    |名称|值|
     |----------|-----------|
     |106|我的类别|
     |107|我的设置|
@@ -50,7 +50,7 @@ ms.locfileid: "99896255"
     > [!NOTE]
     > 在这三种情况下，" **导入和导出设置** 向导" 中将不显示类别名称。
 
-3. 在 *MyToolsOptionsPackage.cs* 中，将一个 `float` 名为的属性添加 `OptionFloat` 到 `OptionPageGrid` 类，如下面的示例中所示。
+3. 在 *MyToolsOptionsPackage* 中，将一个 `float` 名为的属性添加 `OptionFloat` 到 `OptionPageGrid` 类，如下面的示例中所示。
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -98,7 +98,7 @@ ms.locfileid: "99896255"
 
 3. 在左侧窗格中的树视图中，展开 **"我的类别** "，然后单击 **"我的网格" 页**。
 
-4. 将 **OptionFloat** 的值更改为3.1416，将 **OptionInteger** 更改为12。 单击“确定”。
+4. 将 **OptionFloat** 的值更改为3.1416，将 **OptionInteger** 更改为12。 单击 **“确定”** 。
 
 5. 在“工具”菜单上，单击“导入和导出设置”。
 
@@ -139,7 +139,7 @@ ms.locfileid: "99896255"
 
 11. 关闭设置文件而不进行更改。
 
-12. 在 " **工具** " 菜单上，依次单击 " **选项**"、 **"我的类别**"、" **我的网格" 页** ，然后将 **OptionFloat** 的值更改为1.0，并将 **OptionInteger** 更改为1。 单击“确定”。
+12. 在 " **工具** " 菜单上，依次单击 " **选项**"、 **"我的类别**"、" **我的网格" 页** ，然后将 **OptionFloat** 的值更改为1.0，并将 **OptionInteger** 更改为1。 单击 **“确定”** 。
 
 13. 单击 " **工具** " 菜单上的 " **导入和导出设置**"，选择 " **导入选定的环境设置**"，然后单击 " **下一步**"
 
@@ -149,7 +149,7 @@ ms.locfileid: "99896255"
 
      此时将显示 " **选择要导入的设置集合** " 页。
 
-15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击 **“下一步”** 。
+15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击“下一步”  。
 
      此时将显示 " **选择要导入的设置** " 对话框。
 

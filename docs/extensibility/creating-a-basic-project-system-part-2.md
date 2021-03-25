@@ -9,17 +9,17 @@ helpviewer_keywords:
 - project system
 - tutorial
 ms.assetid: aee48fc6-a15f-4fd5-8420-7f18824de220
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ceef95f90d2f54ad7b527ccc8c00322c77491fb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a60bdc7a6cbd73e85248f6ea5897ad3e56337113
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853147"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089415"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第2部分
 本系列中的第一个演练是 [创建一个基本项目系统，第1部分](../extensibility/creating-a-basic-project-system-part-1.md)显示了如何创建基本的项目系统。 本演练通过添加 Visual Studio 模板、属性页和其他功能来构建在基本项目系统上。 开始此演练之前，必须先完成第一个演练。
@@ -48,7 +48,7 @@ ms.locfileid: "99853147"
 
 1. 在中 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，打开通过 [创建基本项目系统（第1部分）](../extensibility/creating-a-basic-project-system-part-1.md)创建的 SimpleProject 解决方案。
 
-2. 在 *SimpleProjectPackage.cs* 文件中，找到 ProvideProjectFactory 属性。 将 (项目名称) 的第二个参数替换为 null，并将第四个参数 (项目模板文件夹的路径) 为 "。 \\\NullPath "，如下所示。
+2. 在 *SimpleProjectPackage* 文件中，找到 ProvideProjectFactory 属性。 将 (项目名称) 的第二个参数替换为 null，并将第四个参数 (项目模板文件夹的路径) 为 "。 \\\NullPath "，如下所示。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -100,7 +100,7 @@ ms.locfileid: "99853147"
 - \<ProjectType>元素在 "**新建项目**" 对话框中命名项目类型。 此名称替换 ProvideProjectFactory 属性的项目名称参数。
 
   > [!NOTE]
-  > \<ProjectType>元素必须与 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage.cs 文件中属性的参数匹配。
+  > \<ProjectType>元素必须与 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage 文件中的属性的参数匹配。
 
   \<TemplateContent>部分介绍了在创建新项目时生成的这些文件：
 
@@ -110,7 +110,7 @@ ms.locfileid: "99853147"
 
 - *AssemblyInfo.cs*
 
-  所有三个文件均 `ReplaceParameters` 设置为 true，这将启用参数替换。 *Program.cs* 文件已 `OpenInEditor` 设置为 true，这将导致在创建项目时在代码编辑器中打开文件。
+  所有三个文件均 `ReplaceParameters` 设置为 true，这将启用参数替换。 *Program .cs* 文件已 `OpenInEditor` 设置为 true，这将导致在创建项目时在代码编辑器中打开该文件。
 
   有关 Visual Studio 模板架构中的元素的详细信息，请参阅 [Visual studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)。
 
@@ -158,7 +158,7 @@ ms.locfileid: "99853147"
 
 2. 展开 " **项目和解决方案** " 节点，然后选择 " **生成并运行**"。
 
-3. 将 " **MSBuild 项目生成输出详细级别** " 设置为 " **正常**"。 单击“确定”。
+3. 将 " **MSBuild 项目生成输出详细级别** " 设置为 " **正常**"。 单击 **“确定”** 。
 
 4. 重新生成 SimpleProject 项目。
 
@@ -285,7 +285,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
 ### <a name="to-substitute-project-template-parameters"></a>替换项目模板参数
 
-1. 在 *SimpleProjectNode.cs* 文件中，删除 `AddFileFromTemplate` 方法。
+1. 在 *SimpleProjectNode* 文件中，删除 `AddFileFromTemplate` 方法。
 
 2. 在 *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 文件中，找到 \<RootNamespace> 属性，并将其值更改为 $safeprojectname $。
 
@@ -319,7 +319,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
 5. 创建新的 SimpleProject 控制台应用程序。  (在 " **项目类型** " 窗格中，选择 " **SimpleProject**"。 在 " **Visual Studio 已安装的模板**" 下，选择 " **控制台应用程序**"。 ) 
 
-6. 在新创建的项目中，打开 *Program.cs*。 其外观应如下所示 (文件中的 GUID 值会有所不同。 ) ：
+6. 在新创建的项目中，打开 " *.cs*"。 其外观应如下所示 (文件中的 GUID 值会有所不同。 ) ：
 
     ```csharp
     using System;
@@ -354,7 +354,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
 - RootNamespace.
 
-1. 在 *SimpleProjectPackage.cs* 文件中，将以下 `ProvideObject` 属性添加到 `SimpleProjectPackage` 类：
+1. 在 *SimpleProjectPackage* 文件中，将以下属性添加 `ProvideObject` 到 `SimpleProjectPackage` 类：
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
@@ -363,7 +363,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
     这会向 COM 注册属性页类 `GeneralPropertyPage` 。
 
-2. 在 *SimpleProjectNode.cs* 文件中，将以下两个重写方法添加到 `SimpleProjectNode` 类：
+2. 在 *SimpleProjectNode* 文件中，将以下两个重写方法添加到 `SimpleProjectNode` 类：
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -382,7 +382,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
     这两种方法都返回属性页 Guid 的数组。 GeneralPropertyPage GUID 是数组中的唯一元素，因此，" **属性页** " 对话框将只显示一页。
 
-3. 将名为 *GeneralPropertyPage.cs* 的类文件添加到 SimpleProject 项目。
+3. 将名为 *GeneralPropertyPage* 的类文件添加到 SimpleProject 项目。
 
 4. 使用以下代码替换该文件的内容：
 
@@ -462,7 +462,7 @@ Visual Studio 模板不包含路径信息。 因此，必须将模板 *.zip* 文
 
 6. 在实验实例中，创建一个新的 SimpleProject 应用程序。
 
-7. Visual Studio 使用 Visual Studio 模板调用你的项目工厂来创建项目。 新的 *Program.cs* 文件将在代码编辑器中打开。
+7. Visual Studio 使用 Visual Studio 模板调用你的项目工厂来创建项目。 新的 *Program .cs* 文件将在代码编辑器中打开。
 
 8. 右键单击 " **解决方案资源管理器** 中的项目节点，然后单击" **属性**"。 随即显示“属性页”对话框。
 

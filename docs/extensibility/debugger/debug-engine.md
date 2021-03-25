@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e278b83e69a063c88b4cb3ff48d919d2b07ea6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c13dd7165a5f85dc0122f97aaee838c528207f96
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955159"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105067941"
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 与解释器或操作系统一起使用来提供调试服务，如执行控制、断点和表达式计算。 DE 负责监视正在调试的程序的状态。 为实现此目的，DE 使用支持的运行时中的任何可用方法，无论是从 CPU 还是由运行时提供的 Api。
