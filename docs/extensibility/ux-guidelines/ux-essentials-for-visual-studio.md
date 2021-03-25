@@ -5,21 +5,21 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38c560cf75fad8887dabdaab38004b10ae0ffc08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce44b9234465af6bf52ce8baa0e60e641e845d3c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926128"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105052666"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 用户体验基础知识
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1. 在 Visual Studio 环境中保持一致。
 

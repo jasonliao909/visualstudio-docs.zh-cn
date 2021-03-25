@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetExtendedCapabilities function
 ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1409753559088c0f8129ebacd17387bfb7d111e
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ca2f2f77c586c5c71658a8f0cab32385eb3f73d3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220776"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105072996"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函数
 此函数返回源代码管理插件支持的其他功能。
@@ -49,7 +49,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|获取功能操作已成功完成。|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|出现未知或未指定的错误。|
@@ -57,7 +57,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="remarks"></a>备注
  此方法按需调用;也就是说，当某个功能需要进行测试时，将调用此方法来确定是否支持该功能。 一次只能指定一个标志。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [错误代码](../extensibility/error-codes.md)
 - [功能标志](../extensibility/capability-flags.md)
