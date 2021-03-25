@@ -10,17 +10,17 @@ helpviewer_keywords:
 - delay loading
 - VSPackages, loading
 ms.assetid: 386e0ce5-4107-4164-b0cd-1cf43eb5e7cf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0e3b95ee3c715eb21028b6c156b7a62ea82d41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a62581e036b70a10db533dc46d0787cd558afe29
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090624"
 ---
 # <a name="manage-vspackages"></a>管理 VSPackage
 在大多数情况下，你无需担心如何管理 Vspackage，因为项目和项模板会自动注册并加载包。 但是，在某些情况下，你可能需要更多地了解，才能管理包。

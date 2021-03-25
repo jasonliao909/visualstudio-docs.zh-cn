@@ -4,17 +4,17 @@ description: 了解如何在 Visual Studio 项目中引用打包软件作为 NuG
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: conceptual
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ab2a99c2230c9fc150fe06c305741eedf14ded37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74dd27db6372fa8b3712216f9efca6300dbc6d7d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874030"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090598"
 ---
 # <a name="nuget-versus-sdk-as-a-project-reference"></a>作为项目引用的 NuGet 与 SDK
 
@@ -52,9 +52,9 @@ ms.locfileid: "99874030"
 | 该机制部署非引用文件（例如，将部署要在其上运行 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用测试的测试框架）。 | Y | 如果将文件放在 *\redist* 文件夹中，则会自动部署这些文件。 | Y | |
 | 该机制会在 Visual Studio IDE 中自动添加平台 SDK。 | Y | 如果将 [!INCLUDE[win8](../debugger/includes/win8_md.md)] SDK 或 Windows Phone SDK 放入具有特定布局的特定位置，SDK 会自动与所有 Visual Studio 功能集成。 | N | |
 | 该机制支持干净的开发者计算机。 （即，无需安装，只需来自源代码管理的简单检索即可工作。） | N | 由于引用 SDK，因此必须单独签入解决方案和 SDK。 可从两个非注册表默认位置（MSBuild 从该位置循环访问 SDK）签入 SDK（有关详细信息，请参阅[创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)）。 作为替代方法，如果自定义位置包含 SDK，可以在项目文件中指定以下代码：<br /><br />`<PropertyGroup>`<br />&nbsp;&nbsp;`<SDKReferenceDirectoryRoot>`<br />&nbsp;&nbsp;`C:\MySDKs`<br />&nbsp;&nbsp;`</SDKReferenceDirectoryRoot>`<br />`</PropertyGroup>`<br /><br /> 然后将 SDK 签入该位置。 | Y | 可以签出解决方案，Visual Studio 会立即识别并作用于文件。 |
-| 可以加入大型现有包作者社区。 | 不可用 | 社区是新增功能。 | Y | |
-| 可以加入大型现有包使用者社区。 | 不可用 | 社区是新增功能。 | Y | |
-| 可以加入合作伙伴生态系统（自定义库和存储库等）。 | 不可用 | 可用的存储库包括 Visual Studio Marketplace、Microsoft 下载中心和 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。 | Y | |
+| 可以加入大型现有包作者社区。 | 不适用 | 社区是新增功能。 | Y | |
+| 可以加入大型现有包使用者社区。 | 不适用 | 社区是新增功能。 | Y | |
+| 可以加入合作伙伴生态系统（自定义库和存储库等）。 | 不适用 | 可用的存储库包括 Visual Studio Marketplace、Microsoft 下载中心和 [!INCLUDE[win8_appstore_long](../debugger/includes/win8_appstore_long_md.md)]。 | Y | |
 | 该机制与持续集成生成服务器集成，用于包创建和包使用。 | Y | SDK 必须将命令行上的签入位置（SDKReferenceDirectoryRoot 属性）传递到 MSBuild。 | Y | |
 | 该机制同时支持稳定和预发布包版本。 | Y | SDK 支持向多个版本添加引用。 | Y | |
 | 对于已安装的包，该机制支持自动更新。 | Y | 如果随附在 VSIX 或 Visual Studio 自动更新中，SDK 会自动发送通知。 | Y | |
@@ -62,7 +62,7 @@ ms.locfileid: "99874030"
 | 包可签入到版本控制。 | Y | 无法签入“文档”节点外的任何内容，这意味着可能无法签入扩展 SDK。 扩展 SDK 可能较大。 | Y | |
 | 可使用 PowerShell 界面创建和使用包。 | Y（使用），N（创建） | 没有用于创建 SDK 的工具。 使用在命令行上正在执行 MSBuild。 | Y | |
 | 可使用符号包调试支持。 | Y | 如果将 .pdb 文件放入 SDK 中，系统将自动提取它们。 | Y | |
-| 该机制支持程序包管理器自动更新。 | 不可用 | SDK 通过 MSBuild 进行修订。 | Y | |
+| 该机制支持程序包管理器自动更新。 | 不适用 | SDK 通过 MSBuild 进行修订。 | Y | |
 | 该机制支持轻型清单格式。 | Y | *SDKManifest.xml* 支持多个属性，但通常需要一小部分。 | Y | |
 | 该机制适用于所有 Visual Studio 版本。 | Y | SDK 支持所有 Visual Studio 版本。 | Y | NuGet 支持所有 Visual Studio 版本。 |
 

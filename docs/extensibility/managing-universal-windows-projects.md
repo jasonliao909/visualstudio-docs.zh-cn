@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 47926aa1-3b41-410d-bca8-f77fc950cbe7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03d4fbd509cbbb408bdcd0465ba4460f8c3b1e9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8af418d8ffcaad18aca4497078f4e24f9bb679fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943239"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090637"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 项目
 
@@ -31,7 +31,7 @@ ms.locfileid: "99943239"
 
 2. 在) 的 "**扩展**" 部分中添加对 *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 和 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (的引用。
 
-3. 打开 *TestUniversalProject.cs* ，添加以下 `using` 指令：
+3. 打开 *TestUniversalProject* ，添加以下 `using` 指令：
 
     ```csharp
     using EnvDTE;
@@ -425,9 +425,9 @@ ms.locfileid: "99943239"
 
       在此过程中，您将向共享项目和平台项目中添加一个事件侦听器。 然后，当你重命名共享项目中的一个文件和平台项目中的另一个文件时，可以查看为每个重命名操作触发的事件。
 
-2. 添加事件侦听器。 向项目中添加一个新的类文件，并将其称为 " *HierarchyEventListener.cs*"。
+2. 添加事件侦听器。 向项目中添加一个新的类文件，并将其称为 " *HierarchyEventListener*"。
 
-3. 打开 *HierarchyEventListener.cs* 文件并添加以下 using 指令：
+3. 打开 *HierarchyEventListener* 文件并添加以下 using 指令：
 
    ```csharp
    using Microsoft.VisualStudio.Shell.Interop;
@@ -551,7 +551,7 @@ ms.locfileid: "99943239"
     this.ModifyFileNameInProject(sharedHier, fullPath);
     ```
 
-11. 生成并运行该项目。 在实验实例中创建一个 c # 通用集线器应用程序，并单击 " **工具** " 菜单，然后单击 " **调用 TestUniversalProject**"，然后检查 "常规输出" 窗格中的文本。 共享项目中第一项的名称 (我们希望它是 *应用程序 .xaml* 文件) 应更改，你应看到该 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 事件已激发。 在这种情况下，由于重命名 *app.config* 会导致 *App.xaml.cs* 被重命名，因此，每个平台项目) 应看到四个事件 (两个。  (DTE 事件不会跟踪共享项目中的项。 ) 应该会看到两个 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件 (每个平台项目) ，但没有 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。
+11. 生成并运行该项目。 在实验实例中创建一个 c # 通用集线器应用程序，并单击 " **工具** " 菜单，然后单击 " **调用 TestUniversalProject**"，然后检查 "常规输出" 窗格中的文本。 共享项目中第一项的名称 (我们希望它是 *应用程序 .xaml* 文件) 应更改，你应看到该 <xref:EnvDTE.ProjectItemsEventsClass.ItemRenamed> 事件已激发。 在这种情况下，由于重命名 *app.config* 会导致 *app.config* 被重命名，因此，每个平台项目) 应看到四个事件 (两个。  (DTE 事件不会跟踪共享项目中的项。 ) 应该会看到两个 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemDeleted%2A> 事件 (每个平台项目) ，但没有 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchyEvents.OnItemAdded%2A> 事件。
 
 12. 现在，请尝试在平台项目中重命名文件，然后可以看到触发的事件之间的差异。 在调用后，在中添加以下代码 `ShowMessageBox` `ModifyFileName` 。
 

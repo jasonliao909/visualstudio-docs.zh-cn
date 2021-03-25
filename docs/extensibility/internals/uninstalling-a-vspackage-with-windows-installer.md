@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, uninstalling
 - uninstalling VSPackages
 ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89a3ed681f51b392e076cff0fcb06b2f868c0aa5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb5d0fe0e4812d66f6981ea58dfb51f19336d98b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090715"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 卸载 VSPackage
 在大多数情况下，Windows Installer 只需通过 "撤消" 安装 VSPackage 的操作即可卸载你的 VSPackage。 还必须在卸载后运行的 [命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 中讨论的自定义操作。 由于对 devenv.exe 的调用刚好出现在安装和卸载的 InstallFinalize 标准操作之前，因此 CustomAction 和 InstallExecuteSequence 表项都可用于这两种情况。
@@ -41,5 +41,5 @@ ms.locfileid: "99888987"
 > `Installed` 属性 Windows Installer 在检测到已在系统上安装 VSPackage 时设置。
 
 ## <a name="see-also"></a>另请参阅
-- [Windows Installer](/previous-versions/ee231230(v=vs.100))
+- [Windows 安装程序](/previous-versions/ee231230(v=vs.100))
 - [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)

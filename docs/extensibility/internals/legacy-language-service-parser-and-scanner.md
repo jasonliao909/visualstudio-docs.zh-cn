@@ -8,17 +8,17 @@ helpviewer_keywords:
 - parsers, language services [managed package framework]
 - language services [managed package framework], Parsers
 ms.assetid: 1ac3de27-a23b-438d-9593-389e45839cfa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4c9ee6cfec35804d7e60675342f3961dfb90c6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c57bd9f8b71f861fd5be4176211af6907b27e74
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839555"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090832"
 ---
 # <a name="legacy-language-service-parser-and-scanner"></a>旧版语言服务分析器和扫描程序
 分析器是语言服务的核心。 托管包框架 (MPF) 语言类需要语言分析器来选择要显示的代码的相关信息。 分析器将文本分为词法标记，然后按类型和功能标识这些标记。
@@ -44,7 +44,7 @@ namespace MyNamespace
 |令牌名称|令牌类型|
 |----------------|----------------|
 |namespace、class、public、void、int|关键字 (keyword)|
-|=|operator|
+|=|运算符后的表达式|
 |{ } ( ) ;|delimiter|
 |MyNamespace、MyClass、MyFunction、arg1、var1|标识符|
 |MyNamespace|命名空间|

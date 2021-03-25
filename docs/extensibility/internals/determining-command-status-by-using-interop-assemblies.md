@@ -8,17 +8,17 @@ helpviewer_keywords:
 - interop assemblies, determining command status
 - command handling with interop assemblies, status
 ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5473fffa00723735b022412e7f37f184e043df4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef6940aef83ad3865385b4e39fd9cfd62b8866d7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963440"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090897"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>使用互操作程序集确定命令状态
 VSPackage 必须跟踪它可以处理的命令的状态。 环境无法确定在 VSPackage 中处理的命令何时启用或禁用。 VSPackage 负责通知环境有关命令状态的信息，例如， **剪切**、 **复制** 和 **粘贴** 等常规命令的状态。
