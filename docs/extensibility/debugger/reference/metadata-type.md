@@ -1,5 +1,5 @@
 ---
-description: 此结构指定了来自元数据的字段类型的相关信息。
+description: METADATA_TYPE 结构指定了来自元数据的字段类型的相关信息。
 title: METADATA_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_TYPE structure
 ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c8f0c8341213dfbe15dcf9a6f5a5fc421c0ebab3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5a76e051e146985338564d497323b6232b35a4a1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225482"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079847"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 此结构指定了来自元数据的字段类型的相关信息。
@@ -68,7 +68,7 @@ public struct METADATA_TYPE {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

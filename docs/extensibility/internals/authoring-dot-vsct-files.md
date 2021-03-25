@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - VSCT files, manual authoring
 ms.assetid: e9f715dc-12b7-439b-bdf3-f3dc75e62f1c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3c484c08b3335d51283f1f6e1a7b29757a2271aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d16337daefdfe25425982a7fc7249c42f0fa1a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906068"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086334"
 ---
 # <a name="author-vsct-files"></a>创作 .vsct 文件
 本文档演示如何创作 *.vsct* 文件，以将 (UI) 元素添加到 Visual Studio 集成开发环境 (IDE) 中的菜单项、工具栏和其他用户界面。 将 UI 元素添加到 Visual Studio 包时，请使用以下步骤 (VSPackage) ，该文件还没有 *.vsct* 文件。
@@ -223,7 +223,7 @@ ms.locfileid: "99906068"
 
    有关详细信息，请参阅 [CommandFlag](../../extensibility/command-flag-element.md) 元素。
 
-5. 若要将菜单相关的键盘快捷方式附加到菜单或菜单上的项，请在 `ButtonText` 菜单或菜单项的元素中添加一个与号字符 ( # A0) 。 当父菜单打开时，与号后面的字符是活动的键盘快捷方式。
+5. 若要将菜单相关的键盘快捷方式附加到菜单或菜单上的项，请在 `ButtonText` 菜单或菜单项的元素中添加 "与" 符号 (&) 。 当父菜单打开时，与号后面的字符是活动的键盘快捷方式。
 
 6. 若要将独立于菜单的键盘快捷方式附加到命令，请使用 [键绑定](../../extensibility/keybindings-element.md) 元素。 有关详细信息，请参阅 [键绑定](../../extensibility/keybinding-element.md) 元素。
 
