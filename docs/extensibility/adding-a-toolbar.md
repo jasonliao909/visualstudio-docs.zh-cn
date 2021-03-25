@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbars [Visual Studio], adding to IDE
 - IDE, adding toolbars
 ms.assetid: 17302c25-6f59-4e97-8c85-54f95336a07f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 62d32a07ec046bc42d69818346450e5a94a668ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1b478041492bfb857c5497b6df5e2c4af9ad355
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951324"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094934"
 ---
 # <a name="add-a-toolbar"></a>添加工具栏
 本演练演示如何将工具栏添加到 Visual Studio IDE。
@@ -89,7 +89,7 @@ ms.locfileid: "99951324"
 
 6. 右键单击 Visual Studio 菜单栏以获取工具栏列表。 选择 " **测试工具栏**"。
 
-7. 现在，你应该将工具栏显示为 "在文件中查找" 图标右侧的图标。 单击图标时，应会看到一个消息框，其中显示 " **ToolbarTestCommandPackage"。MenuItemCallback ( # B1**。
+7. 现在，你应该将工具栏显示为 "在文件中查找" 图标右侧的图标。 单击图标时，应会看到一个消息框，其中显示 " **ToolbarTestCommandPackage"。MenuItemCallback () 中**。
 
 ## <a name="see-also"></a>另请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10e1b158ab62cfedfb6171a0a3874cfe14e89caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836997"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068474"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 与应用程序的文件扩展名的关联通常具有一个在用户双击文件时发生的首选操作。 此首选操作链接到对应于操作的谓词，例如 "open"。

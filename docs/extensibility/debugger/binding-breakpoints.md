@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - breakpoints, binding
 ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d7da8cfdb2b7995b77364e5a5de62667b13e52c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 622d61c6083288f7293258feb3743ef7cfdd0b8b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895006"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055279"
 ---
 # <a name="bind-breakpoints"></a>绑定断点
 如果用户通过按 **F9** 设置断点，则 IDE 会形成请求，并提示调试会话创建断点。

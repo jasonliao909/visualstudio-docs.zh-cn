@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/14/2017
 ms.topic: conceptual
 ms.assetid: 52f12785-1c51-4c2c-8228-c8e10316cd83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d86f57abdc96e4fc4f2abbb781e9437c74854a7c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: accf054cbf0b58066568124a3f35e064ce3cba78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939287"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094986"
 ---
 # <a name="add-a-language-server-protocol-extension"></a>添加语言服务器协议扩展
 
@@ -294,7 +294,7 @@ namespace MockLanguageExtension
 
 请按照下面的步骤将对设置的支持添加到 LSP 语言服务扩展：
 
-1. 将 JSON 文件 (例如，) *上的MockLanguageExtensionSettings.js* 添加到包含设置及其默认值的项目。 例如： 。
+1. 将 JSON 文件 (例如，) *上的MockLanguageExtensionSettings.js* 添加到包含设置及其默认值的项目。 例如：
 
     ```json
     {
@@ -344,7 +344,7 @@ namespace MockLanguageExtension
 
 1. 用户打开包含您的服务器拥有的文件的工作区。
 2. 用户在 *. vs* 文件夹中添加了一个文件，该文件在 *上称为VSWorkspaceSettings.js*。
-3. 用户为该服务器提供的设置向文件 *VSWorkspaceSettings.js* 添加一行。 例如： 。
+3. 用户为该服务器提供的设置向文件 *VSWorkspaceSettings.js* 添加一行。 例如：
 
     ```json
     {

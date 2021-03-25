@@ -6,17 +6,17 @@ ms.topic: reference
 helpviewer_keywords:
 - IDebugProgram3 interface
 ms.assetid: 4301ba23-c00c-4ce5-8b1e-3f27da312034
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c16184a017e5e97f81afbab5d4d2579796e4217
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 339aff9bdd41a27f48ef1a7ef1e01d9529835403
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102149595"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105084332"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
 此接口表示在进程中运行的程序，并通过提供线程信息来扩展 [执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 。

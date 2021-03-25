@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
 ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fe9002c3da63e9570819588035395780715e1d64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32f07857f2d04989b0de021988b2961d4a1553d2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941861"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068214"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定义位图。 位图是从资源或从文件加载的。
@@ -34,13 +34,13 @@ ms.locfileid: "99941861"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应该是位图定义的唯一，不能用于任何其他目的。|
+|GUID|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应该是位图定义的唯一，不能用于任何其他目的。|
 |Resid 标识|GUID/ID 命令标识符的 ID。 Resid 标识或 href 属性是必需的。<br /><br /> Resid 标识属性是一个整数资源 ID，用于确定在命令表合并期间要加载的位图条带。  加载命令表时，将从同一个模块的资源加载资源 ID 指定的位图。|
 |usedList|如果存在 Resid 标识属性，则为必需。 选择位图条带中的可用图像。|
 |href|位图的路径。 Resid 标识或 href 属性是必需的。<br /><br /> 在包含路径中搜索指定的图像文件，该文件嵌入到生成的二进制文件中。  在命令表合并期间，会复制映像，无需进行额外的资源查找或加载。  如果 usedList 属性不存在，则带中的所有图像都可用。 **注意：**  可以采用多种格式之一（包括 *.bmp*、 *.png* 和 *.gif*）提供图像。  早期版本的编译器不支持包含部分透明度的 alpha 信息的32位位图映像。 这些版本的解决方法是使用 *.png* 格式。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  无。
