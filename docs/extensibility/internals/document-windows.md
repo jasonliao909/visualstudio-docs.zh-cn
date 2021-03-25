@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Visual Studio SDK, document windows
 ms.assetid: 50081d48-987f-43db-8bf9-51b7cf76e9c0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f62a6cc4f7b217bbcf8c94b437bcd7ce9d0d1b2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79706c98e98be55e69aaeeed7320c8b13bfd2a9c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946730"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061272"
 ---
 # <a name="document-windows"></a>文档窗口
 在 Visual Studio 中， *文档窗口* 是一个带边框的子窗口，该窗口与多文档界面 (MDI) 窗口相关联。 文档窗口通常用于显示和修改源代码或文本，但它们也可以承载其他功能类型。 文档窗口：

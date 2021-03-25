@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - add features
 ms.assetid: bfe083b6-3e35-4b9c-ad4f-b30b9ff412a5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18b73b22d1ce4d4b2a7720d3d80081b4e2c075c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a19808e76714e0435bd5bb638aea0fbc7eaba929
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893394"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062052"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：向自定义编辑器添加功能
 创建自定义编辑器后，可以向其添加更多功能。
@@ -53,7 +53,7 @@ ms.locfileid: "99893394"
         > [!NOTE]
         > 调用 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 以获取指向的指针 `IVsFileChangeEx` 。
 
-7. 用源代码管理协调文档编辑事件。 请执行下列步骤：
+7. 用源代码管理协调文档编辑事件。 执行以下步骤：
 
     1. 通过调用来获取指向 `IVsQueryEditQuerySave2` 的 `QueryService` 指针 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -65,13 +65,13 @@ ms.locfileid: "99893394"
 
          如果文件尚未保存或自上次保存后发生更改，则此方法将提示用户保存该文件。
 
-8. 启用 " **属性** " 窗口，以显示在编辑器中选定的文本的属性。 请执行下列步骤：
+8. 启用 " **属性** " 窗口，以显示在编辑器中选定的文本的属性。 执行以下步骤：
 
     1. <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A>每次更改文本选择时调用，并传入的实现 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 对 `QueryService` <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 服务调用以获取指向的指针 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 使用户能够在编辑器和 **工具箱** 之间，或在外部编辑器 (如 Microsoft Word) 和 **工具箱** 之间拖放项。 请执行下列步骤：
+9. 使用户能够在编辑器和 **工具箱** 之间，或在外部编辑器 (如 Microsoft Word) 和 **工具箱** 之间拖放项。 执行以下步骤：
 
     1. `IDropTarget`在您的编辑器上实现以提醒 IDE 您的编辑器是拖放目标。
 

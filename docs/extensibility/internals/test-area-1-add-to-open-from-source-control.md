@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], adding and opening solutions
 - source control plug-ins, adding and opening solutions
 ms.assetid: 5b3b5b08-5e9b-41be-ac72-c63957faed22
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dbcbc197a610f7caf2a1641a291db18fcea9dbda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 174834dde4c049bcb1b3fd8bc2eb8e82166d01d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898329"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078677"
 ---
 # <a name="test-area-1-add-toopen-from-source-control"></a>测试区域 1：添加到源代码管理/从源代码管理打开
 此源代码管理插件测试区域涵盖了如何将解决方案或项目置于源代码管理下，以及如何从源代码管理中检索它们。

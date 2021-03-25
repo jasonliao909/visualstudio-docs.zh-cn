@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - add a menu command
 ms.assetid: 08526848-a442-4cd4-afa1-b2eac2005adb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e0072d3f39ef037dfaa660d3a297afb59baacf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f36d141c75b43dfaf90960261e40c4a619069802
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061987"
 ---
 # <a name="walkthrough-use-a-shell-command-with-an-editor-extension"></a>演练：在编辑器扩展中使用 shell 命令
 从 VSPackage 中，你可以向编辑器添加功能，如菜单命令。 本演练演示如何通过调用菜单命令向编辑器中的文本视图添加修饰。
@@ -614,7 +614,7 @@ ms.locfileid: "99888909"
 
     - VisualStudio （& e）
 
-2. 打开 *AddAdornment.cs* 文件并添加以下 `using` 指令。
+2. 打开 *AddAdornment* 文件并添加以下 `using` 指令。
 
     ```csharp
     using Microsoft.VisualStudio.TextManager.Interop;

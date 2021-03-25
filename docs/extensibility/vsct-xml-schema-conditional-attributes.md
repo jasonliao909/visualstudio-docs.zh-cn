@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, conditional attributes
 - conditional attributes (VSCT XML schema)
 ms.assetid: 754d4f32-319b-44c9-915f-f7c60e53222e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d123cfbd37c254522fe52bbb941afeb363d3fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5bc1bcb9d80474b467e90de6262e797087589065
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925750"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062351"
 ---
 # <a name="vsct-xml-schema-conditional-attributes"></a>.VSCT XML 架构条件特性
 你可以将条件属性应用于所有列表和项。 逻辑运算符和符号扩展表达式的计算结果为 true 或 false。 如果为 true，则在生成的输出中包含关联的列表或项。
@@ -37,8 +37,8 @@ ms.locfileid: "99925750"
 |(,)|分组|
 |!|逻辑“非”|
 |\<, >, \<=, >=, ==, !=|关系式与等式|
-|and|布尔|
-|或|布尔|
+|和|Boolean|
+|或|Boolean|
 
 ## <a name="examples"></a>示例
 

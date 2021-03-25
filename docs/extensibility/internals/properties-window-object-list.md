@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24ffc64876e015ba2139022698576e04b12625e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 489ea25e0b06ab69650d4b48a306483945b34598
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945638"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060973"
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
 " **属性** " 窗口中的对象列表是一个下拉列表，可用于将所选内容更改为在一个或多个选定窗口中可用的其他对象。 选择此列表中的不同对象将触发对的调用 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> ，以通知环境已选择了新的对象。 然后，将更改在 " **属性** " 窗口中显示的信息，以显示与新选择的对象相关联的属性。

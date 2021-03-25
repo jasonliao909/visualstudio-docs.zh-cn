@@ -11,17 +11,17 @@ helpviewer_keywords:
 - VS SDK (see Visual Studio SDK)
 - Visual Studio, SDK
 ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 050e873a26996221af2106714106cd37300ba4c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91411ec183e6c51abd825af1080c4330ca46fc90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925883"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105062520"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
 Visual Studio SDK 可帮助你扩展 Visual Studio 的功能，或将新功能集成到 Visual Studio 中。 可以将扩展分发给其他用户以及 Visual Studio Marketplace。 以下是一些扩展 Visual Studio 的方式：

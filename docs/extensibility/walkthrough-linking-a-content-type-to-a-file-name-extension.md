@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link content type to file name extension
 ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb65f581994c6ba90cbb49166612d81bc00de803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 990f10fe82b9230c12ba13d736750f2f644c3ee5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955497"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078443"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到文件扩展名
 你可以定义自己的内容类型，并使用编辑器 Managed Extensibility Framework (MEF) 扩展将文件扩展名链接到该类型。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要将其与 MEF 一起使用，还必须将其链接到内容类型。

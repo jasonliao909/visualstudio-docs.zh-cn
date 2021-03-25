@@ -7,20 +7,20 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - QuickInfo
 ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: 3c07dd32b889a9d75222bc8ff5a245f516fab528
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: acda716c72d10f35bf8c89978956f62a6d3754dc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935919"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078599"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>演练：显示 QuickInfo 工具提示
 QuickInfo 是一项 IntelliSense 功能，当用户将指针移到方法名称上时，它将显示方法签名和说明。 可以通过定义要为其提供 QuickInfo 说明的标识符，然后创建用于显示内容的工具提示，来实现基于语言的功能（如 QuickInfo）。 你可以在语言服务的上下文中定义 QuickInfo，或者可以定义自己的文件扩展名和内容类型，并只为该类型显示 QuickInfo，也可以为现有内容类型 (如 "text" ) 显示 QuickInfo。 本演练演示如何为 "文本" 内容类型显示 QuickInfo。
@@ -86,7 +86,7 @@ QuickInfo 是一项 IntelliSense 功能，当用户将指针移到方法名称�
      [!code-vb[VSSDKQuickInfoTest#5](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_5.vb)]
      [!code-csharp[VSSDKQuickInfoTest#5](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_5.cs)]
 
-8. 还必须实现 Dispose ( # A1 方法，因为它 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> 实现 <xref:System.IDisposable> ：
+8. 还必须实现 Dispose () 方法，因为它 <xref:Microsoft.VisualStudio.Language.Intellisense.IQuickInfoSource> 实现 <xref:System.IDisposable> ：
 
      [!code-vb[VSSDKQuickInfoTest#6](../extensibility/codesnippet/VisualBasic/walkthrough-displaying-quickinfo-tooltips_6.vb)]
      [!code-csharp[VSSDKQuickInfoTest#6](../extensibility/codesnippet/CSharp/walkthrough-displaying-quickinfo-tooltips_6.cs)]

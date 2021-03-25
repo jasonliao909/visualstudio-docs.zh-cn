@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - link keystrokes to commands
 ms.assetid: cf6cc6c6-5a65-4f90-8f14-663decf74672
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0f6cb0d3cc0bef03539428bafeff5ae3da64964
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d49fa9e858d65529e466f6ed960835ab8c2324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931261"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061948"
 ---
 # <a name="walkthrough-use-a-shortcut-key-with-an-editor-extension"></a>演练：在编辑器扩展中使用快捷键
 您可以在编辑器扩展中响应快捷键。 下面的演练演示如何使用快捷键将视图修饰添加到文本视图。 本演练基于视口修饰编辑器模板，它允许您使用 + 字符添加修饰。
@@ -47,7 +47,7 @@ ms.locfileid: "99931261"
 this.layer = view.GetAdornmentLayer("PurpleCornerBox");
 ```
 
-在 KeyBindingTestTextViewCreationListener.cs 类文件中，将 AdornmentLayer 的名称从 " **KeyBindingTest** " 更改为 " **PurpleCornerBox**"：
+在 KeyBindingTestTextViewCreationListener 类文件中，将 AdornmentLayer 的名称从 " **KeyBindingTest** " 更改为 " **PurpleCornerBox**"：
 
 ```csharp
 [Export(typeof(AdornmentLayerDefinition))]
@@ -259,7 +259,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
    }
    ```
 
-   7. 将修饰层定义从 *KeyBindingTestTextViewCreationListener.cs* 文件复制到 *KeyBindingCommandHandler.cs* ，然后删除 *KeyBindingTestTextViewCreationListener.cs* 文件：
+   7. 将修饰层定义从 *KeyBindingTestTextViewCreationListener* 文件复制到 *KeyBindingCommandHandler* ，然后删除 *KeyBindingTestTextViewCreationListener* 文件：
 
    ```csharp
    /// <summary>
@@ -276,7 +276,7 @@ public AdornmentLayerDefinition editorAdornmentLayer;
 
 原始修饰出现在文本文件中的每个字符 "a" 上。 现在，我们已更改代码以添加修饰以响应 **+** 字符，它只会在键入字符的行上添加修饰 **+** 。 我们可以更改修饰代码，以便修饰每个 "a" 上出现一次。
 
-在 *KeyBindingTest.cs* 文件中，更改 `CreateVisuals()` 方法以循环访问视图中的所有行来修饰 "a" 字符。
+在 *KeyBindingTest* 文件中，更改 `CreateVisuals()` 方法以循环访问视图中的所有行来修饰 "a" 字符。
 
 ```csharp
 private void CreateVisuals(ITextViewLine line)

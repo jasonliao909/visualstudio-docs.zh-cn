@@ -11,17 +11,17 @@ helpviewer_keywords:
 - visual studio command
 - guid
 ms.assetid: 2ea4bee2-0259-4675-8e65-2023b312b516
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db0c417c40a2f2d02adef9c7a9e7274f95592015
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2f25853f8f1ece583b460d39550af680001b3d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898269"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069590"
 ---
 # <a name="guids-and-ids-of-visual-studio-commands"></a>Visual Studio 命令的 Guid 和 Id
 Visual Studio 集成开发环境中包含的命令的 GUID 和 ID 值 (IDE) 在作为 Visual Studio SDK 的一部分安装的 .vsct 文件中进行定义。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -56,7 +56,7 @@ Visual Studio 集成开发环境中包含的命令的 GUID 和 ID 值 (IDE) 在�
 
 - 包含带下划线字符的菜单项，如 "**文件**" 菜单上的 "**打印**" 命令，其中 *P* 带有下划线。
 
-     菜单项名称中带有 "与" 符号 ( # A0) 字符前面的字符以下划线显示。 但是， *.vsct* 文件是用 XML 编写的，后者使用与号 ( # A0) 字符来指示特殊字符，并要求要显示的符号必须作为 *&amp; amp* 形式出现。 因此，在 *.vsct* 文件中， **Print** 命令显示为 *&amp; amp;打印*。
+     菜单项名称中) 字符 (& 前面带有 "与" 符号字符的字符以下划线显示。 但是， *.vsct* 文件以 XML 编写，后者使用 "与" 符号 (&) 字符来指示特殊字符，并要求要显示的 "&" 符必须作为 " *&amp; amp;*" 的拼写。 因此，在 *.vsct* 文件中， **Print** 命令显示为 *&amp; amp;打印*。
 
 - 具有动态文本（例如 **Save** \<Current Filename\> 和动态生成的菜单项）的命令，如 " **最近的文件** " 列表中的项。
 
