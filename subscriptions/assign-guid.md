@@ -3,15 +3,15 @@ title: 向 Visual Studio 订阅者分配特定 GUID | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
-ms.date: 02/18/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解管理员如何将特定订阅 GUID 分配给订阅者
-ms.openlocfilehash: 3c92a3e6cc35230f6bcf10320e92a50dc5ffb85b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: a0721029186605c6b9a277c9eb95a370a086d7d2
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249675"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776645"
 ---
 # <a name="assign-specific-subscriptions-in-the-visual-studio-subscriptions-administration-portal"></a>在 Visual Studio 订阅管理门户中分配特定订阅
 
@@ -63,7 +63,7 @@ ms.locfileid: "102249675"
 答：如果要更改分配给用户的 GUID，必须首先删除该用户的订阅。  有关详细信息，请参阅[删除订阅](delete-license.md)一文。  删除该用户的订阅后，请使用上述过程导出列表并上传新的订阅信息。  
 
 ## <a name="resources"></a>资源
-- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
+- [订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
@@ -78,5 +78,3 @@ ms.locfileid: "102249675"
 - [编辑订阅](edit-license.md)
 - [删除订阅](delete-license.md)
 - [确定最大使用量](maximum-usage.md)
-
-

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
-ms.date: 02/02/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解超级管理员和管理员角色以及如何分配管理员。
-ms.openlocfilehash: 2d9abf5a3079320011cb979a8109278c878321e3
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511327"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757589"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 订阅协议的超级管理员和管理员
 
@@ -42,7 +42,7 @@ ms.locfileid: "99511327"
 5. 单击“添加”以分配新管理员后，他们将收到一封邀请他们登录门户的电子邮件  。  
 
 ## <a name="resources"></a>资源
-- [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 文档](/visualstudio/)

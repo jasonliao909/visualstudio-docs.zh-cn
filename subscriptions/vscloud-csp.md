@@ -2,17 +2,17 @@
 title: 适用于 CSP 的 Visual Studio 云订阅购买
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: d2ab13ed-ef79-4ef0-8736-eccd04bc6020
-ms.date: 02/19/2021
+ms.date: 03/18/2021
 ms.topic: conceptual
 description: 有关云解决方案提供商如何为客户购买和管理 Visual Studio 云订阅的信息。
-ms.openlocfilehash: 78d4f39eef4b3daabc5bcbfbf47e969dd6213d36
-ms.sourcegitcommit: 35fa920126b34c8d3839da53e3a4c2c6f509968f
+ms.openlocfilehash: b905d698f3d9f1a763ae7d9e9dbc8276a5362da6
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102473291"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673016"
 ---
 # <a name="buy-and-manage-visual-studio-cloud-subscriptions-for-your-customers"></a>为客户购买和管理 Visual Studio 云订阅
 [云解决方案提供商 (CSP)](https://partner.microsoft.com/cloud-solution-provider) 计划中的合作伙伴可为其客户购买 Visual Studio Enterprise 和 Visual Studio Professional 云订阅。

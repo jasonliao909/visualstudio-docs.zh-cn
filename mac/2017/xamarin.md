@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 02/12/2019
 ms.assetid: 339F6051-5F90-48DC-8237-EBBC8A03A32B
 ms.topic: overview
-ms.openlocfilehash: 89d724a9ddf4c8f3dc7fe941e5e4d999d30da1e8
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: e5d03c27ef1e6fefc2fa29d60727851be0954d8b
+ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950624"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "104999597"
 ---
 # <a name="xamarin-mobile-app-development"></a>Xamarin 移动应用开发
 
@@ -58,4 +58,4 @@ Xamarin Inspector 提供一个具有用户工具的交互式 C# 控制台。 它
 
 它包括一个独立应用程序，可提供面向各种编程平台（Android、iOS、Mac 和 Windows）并集成到 IDE 调试工作流的内容丰富的 C# 控制台。
 
-有关详细信息，请参阅 [Xamarin Inspector](/xamarin/tools/inspector/) 指南。
+有关详细信息，请参阅 [Xamarin Inspector](/xamarin/tools/inspector/release-notes/1.5) 指南。

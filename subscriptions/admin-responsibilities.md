@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
-ms.date: 03/11/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解订阅管理员的职责。
-ms.openlocfilehash: 14b8832a8031ddbc96ce82e10a015c730530ce3e
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 817330093ce0a2e9df6379db42420057ded30486
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225984"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757680"
 ---
 # <a name="overview-of-admin-responsibilities"></a>管理员职责概述
 管理员可以管理组织的订阅。  管理员角色还负责确保按照许可条款管理订阅。 本文概述了管理员角色的职责、权益和限制。
@@ -41,7 +41,7 @@ Visual Studio 订阅管理员有四大职责：
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
-- [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="next-steps"></a>后续步骤
 详细了解管理员的职责：

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7d74e113-8fb2-490e-8502-48cce7b1327a
-ms.date: 01/14/2021
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解管理员管理预生产库存的职责
-ms.openlocfilehash: da8146b9f7d2b758ac2d249534d43bd98beae385
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511301"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757667"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清点预生产环境
 Visual Studio 订阅对用户而非设备计数，从而简化了资产管理。
@@ -30,7 +30,7 @@ Visual Studio 管理员必须将 Visual Studio 订阅分配给特定的指定人
 
 ## <a name="resources"></a>资源
 - [Visual Studio 授权白皮书](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
+- [Visual Studio 订阅支持](https://aka.ms/vsadminhelp)
 - [批量许可条款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>另请参阅

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: lank
 manager: cabuschl
 ms.assetid: da8df006-4896-4ff9-b487-698d78deabc3
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 订阅中查找、声明和导出产品密钥
-ms.openlocfilehash: 5e055295e76ee91dbaf641256b8b7e93a530fcfb
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 2e74269c3e5e49e776b00484de790472030dc1c1
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249271"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776566"
 ---
 # <a name="finding-and-claiming-product-keys-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中查找和声明产品密钥
 本文介绍如何从 https://my.visualstudio.com/productkeys 中查找、声明和导出产品密钥。  有关使用密钥激活产品、密钥的零售和批量许可版本以及每日产品密钥索取上限的详细信息，请访问[产品密钥概述](product-keys.md)。
@@ -67,7 +67,7 @@ ms.locfileid: "102249271"
 若要导出密钥，请选择“产品密钥”页面最右侧的“导出所有密钥”链接。  此时将创建名为 KeysExport.xml 的 .xml 文件，你可选择打开或保存该文件。  你需要使用能够处理 .xml 文件的应用程序来打开此文件。  例如，可以将该文件作为 Excel 中的只读工作簿打开。
 
 ## <a name="resources"></a>资源
-- [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)
+- [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: afde24347237ed3fc87d7a00ebdf21787d78909c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf427f7597b59fc5bb6fb32766134daa5b22bf
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942655"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806064"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 
@@ -24,13 +24,22 @@ ms.locfileid: "99942655"
 
 在本教程中，你将了解：
 
-> [!div class="checklist"]
-> - 使用“空白 Django Web 项目”模板在 Git 存储库中创建一个基本 Django 项目（步骤 1）
-> - 使用模板创建一个单页 Django 应用，并呈现该页面（步骤 2）
-> - 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
-> - 使用 Django Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
-> - 对用户进行身份验证（步骤 5）
-> - 使用投票 Django Web 项目模板创建使用模型、数据库迁移和管理界面自定义项的应用（步骤 6）
+::: moniker range="vs-2017"
+- 使用“空白 Django Web 项目”模板在 Git 存储库中创建一个基本 Django 项目（步骤 1）
+- 使用模板创建一个单页 Django 应用，并呈现该页面（步骤 2）
+- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
+- 使用 Django Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
+- 对用户进行身份验证（步骤 5）
+- 使用投票 Django Web 项目模板创建使用模型、数据库迁移和管理界面自定义项的应用（步骤 6）
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+- 使用“空白 Django Web 项目”模板在 Git 存储库中创建一个基本 Django 项目（步骤 1）
+- 使用模板创建一个单页 Django 应用，并呈现该页面（步骤 2）
+- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
+- 使用 Django Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
+- 对用户进行身份验证（步骤 5）
+::: moniker-end
 
 ## <a name="prerequisites"></a>系统必备
 
@@ -54,7 +63,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 从命令行使用 Django 时，通常会通过运行 `django-admin startproject <project_name>` 命令来启动一个项目。 在 Visual Studio 中，使用“空白 Django Web 项目”模板在 Visual Studio 项目和解决方案中提供相同结构。
 
-1. 在 Visual Studio 中，选择“文件”   > “新建”   > “项目”  ，搜索“Django”，然后选择“空白 Django Web 项目”  模板。 （还可以在左侧列表的“Python”   > “Web”  中找到模板。）
+1. 在 Visual Studio 中，选择“文件” > “新建” > “项目”，搜索“Django”，然后选择“空白 Django Web 项目”模板。 （还可以在左侧列表的“Python”   > “Web”  中找到模板。）
 
     ![Visual Studio 中“空白 Django Web 项目”的新建项目对话框](media/django/step01-new-blank-project.png)
 
@@ -62,12 +71,12 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     - **名称**：将 Visual Studio 项目的名称设置为“BasicProject”  。 此名称还用于 Django 项目。
     -  位置：指定要在其中创建 Visual Studio 解决方案和项目的位置。
-    - **解决方案**：将此控件设置保留为默认“创建新解决方案”选项  。
-    - **解决方案名称**：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案  。
+    - **解决方案**：将此控件设置保留为默认“创建新解决方案”选项。
+    - **解决方案名称**：设置为“LearningDjango”，适用于本教程中作为多个项目的容器的解决方案。
     -  为解决方案创建目录：保留设置（默认设置）。
     -  创建新的 Git 存储库：选择此选项（默认情况下会清除该选项），以便在 Visual Studio 创建解决方案时创建本地 Git 存储库。 如果未看到此选项，请运行 Visual Studio 安装程序并在“代码工具”下的“单个组件”选项卡上添加“适用于 Windows 的 Git”和“适用于 Visual Studio 的 GitHub 扩展”     。
 
-1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包”（如下所示）  。 显示此对话框是因为该模板包含引用最新 Django 1.x 包的 requirements.txt 文件  。 （选择“显示所需包”  查看确切的依赖项。）
+1. 稍后 Visual Studio 会显示一个对话框，提示“此项目需要外部包”（如下所示）  。 显示此对话框是因为该模板包含引用最新 Django 1.x 包的 requirements.txt 文件。 （选择“显示所需包”  查看确切的依赖项。）
 
     ![指示项目需要外部包的提示](media/django/step01-requirements-prompt-install-myself.png)
 
@@ -135,7 +144,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 1. 在 Visual Studio Git 控件（位于状态栏上）上，选择更改指示器（显示“99&#42;”），这将打开团队资源管理器中的“更改”页    。
 
-    创建虚拟环境带来了数千项更改，但不需要在源代码管理中包含其中任何一项，因为你（或克隆项目的任何人员）始终可从 requirements.txt 重新创建环境  。
+    创建虚拟环境带来了数千项更改，但不需要在源代码管理中包含其中任何一项，因为你（或克隆项目的任何人员）始终可从 requirements.txt 重新创建环境。
 
     要排除虚拟环境，请右键单击 env 文件夹，然后选择“忽略这些本地项”   。
 
@@ -159,20 +168,20 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 项目创建完成后，检查样本 Django 项目代码（仍与 CLI 命令 `django-admin startproject <project_name>` 生成的代码相同）。
 
-1. 在项目根目录中为 manage.py，即 Visual Studio 自动设置为项目启动文件的 Django 命令行管理实用工具  。 可以使用 `python manage.py <command> [options]` 在命令行上运行实用工具。 对于常见的 Django 任务，Visual Studio 提供了方便的菜单命令。 右键单击“解决方案资源管理器”  中的项目，然后选择“Python”  查看列表。 在本教程中，你将遇到其中的部分命令。
+1. 在项目根目录中为 manage.py，即 Visual Studio 自动设置为项目启动文件的 Django 命令行管理实用工具。 可以使用 `python manage.py <command> [options]` 在命令行上运行实用工具。 对于常见的 Django 任务，Visual Studio 提供了方便的菜单命令。 右键单击“解决方案资源管理器”中的项目，然后选择“Python”查看列表。 在本教程中，你将遇到其中的部分命令。
 
     ![Python 项目上下文菜单上的 Django 命令](media/django/step01-django-commands-menu.png)
 
 2. 在你的项目中是一个与项目名称相同的文件夹。 它包含基本 Django 项目文件：
 
-   - __init.py：告知 Python 此文件夹是 Python 包的空文件  。
-   - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点  。 通常会按原样保留该文件，因为它为生产 Web 服务器提供挂钩。
-   - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置  。
-   - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录  。
+   - __init.py：告知 Python 此文件夹是 Python 包的空文件。
+   - wsgi.py：WSGI 兼容的 Web 服务器执行项目的入口点。 通常将此文件原样保留，因为它为生产 Web 服务器提供挂钩。
+   - settings.py：包含在开发 Web 应用的过程中修改的 Django 项目的设置。
+   - urls.py：包含同样在开发过程中修改的 Django 项目的内容目录。
 
      ![解决方案资源管理器中的 Django 项目文件](media/django/step01-django-project-in-solution-explorer.png)
 
-3. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中  。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
+3. 如前文所述，Visual Studio 模板还将 requirements.txt 文件添加到指定 Django 包依赖项的项目中。 该文件旨在邀请你在第一次创建项目时创建虚拟环境。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>问：在我安装其他包后，Visual Studio 能否从虚拟环境生成 requirements.txt 文件？
 
@@ -184,7 +193,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
     ![Visual Studio 中的运行 Web 服务器工具栏按钮](media/django/run-web-server-toolbar-button.png)
 
-1. 运行服务器意味着运行命令 `manage.py runserver <port>`，以启动 Django 内置开发服务器。 如果 Visual Studio 显示“启动调试器失败”并显示无启动文件的相关消息，右键单击解决方案资源管理器中的 manage.py 并选择“设为启动文件”     。
+1. 运行服务器意味着运行命令 `manage.py runserver <port>`，以启动 Django 内置开发服务器。 如果 Visual Studio 显示“启动调试器失败”并显示无启动文件的相关消息，右键单击解决方案资源管理器中的 manage.py 并选择“设为启动文件”。
 
 1. 在启动服务器时，会看到一个打开的控制台窗口，其中也显示服务器日志。 Visual Studio 将自动打开浏览器并转到 `http://localhost:<port>`。 Django 项目没有任何应用，但是，Django 只显示了一个默认页面，确认目前正常工作：
 
@@ -194,7 +203,7 @@ Visual Studio 项目就其本身而言，可以包含 Django 项目和多个应�
 
 ### <a name="question-is-django-a-web-server-as-well-as-a-framework"></a>问：Django 既是 Web 服务器也是框架吗？
 
-答：是/否。 Django 确实有一个用于开发目的的内置 Web 服务器。 当你在本地运行 Web 应用时（例如在 Visual Studio 中调试时），就会使用此 Web 服务器。 然而，在部署到 Web 主机时，Django 会改为使用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器  。
+答：是/否。 Django 确实有一个用于开发目的的内置 Web 服务器。 当你在本地运行 Web 应用时（例如在 Visual Studio 中调试时），就会使用此 Web 服务器。 但是在部署到 Web 主机时，Django 会改用主机的 Web 服务器。 Django 项目中的 wsgi.py 模块负责挂接到生产服务器。
 
 ### <a name="question-whats-the-difference-between-using-the-debug-menu-commands-and-the-server-commands-on-the-projects-python-submenu"></a>问：在项目 Python 子菜单中使用“调试”菜单命令和服务器命令有何区别？
 

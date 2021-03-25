@@ -21,12 +21,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3faea797d57ca8874a198e5ee1bf76708ee20e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d7ce643f0684520da52a450ff40c60928808d26
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917556"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884091"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>对 HPC（高性能计算）群集进行分析
 
@@ -52,7 +52,7 @@ ms.locfileid: "99917556"
 
     3. `clusrun /all /scheduler:` *%HeadNode% %ProfilerPath%* `/q /norestart`
 
-| | |
+|参数 | 说明 |
 |------------------| - |
 | *%HeadNode%* | 群集的头节点的名称。 |
 | *%FxPath%* | .NET Framework 4 安装程序的路径。 在 Visual Studio 安装介质上，路径是：WCU\dotNetFramework\dotNetFx40_Full_x86_x64.exe |

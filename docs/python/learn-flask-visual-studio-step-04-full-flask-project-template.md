@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ef9154a34ddd08e7e0a4b9434f7f748b2603aef4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7926a7983e43545ad47e8bc975f051821c108c18
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882864"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104805999"
 ---
 # <a name="step-4-use-the-full-flask-web-project-template"></a>步骤 4：使用完整的 Flask Web 项目模板
 
@@ -229,8 +229,24 @@ block content
 
 ## <a name="next-steps"></a>后续步骤
 
-> [!div class="nextstepaction"]
-> [投票 Flask Web 项目模板](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker range="vs-2017"
+- [投票 Flask Web 项目模板](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+> [!Note]
+> 如果已在本教程的整个课程中将 Visual Studio 解决方案提交到源代码管理，那么现在是执行另一个提交的好时机。 解决方案应匹配 GitHub 上的教程源代码：[Microsoft/python-sample-vs-learning-flask](https://github.com/Microsoft/python-sample-vs-learning-flask)。
+
+现在，你已经了解了 Visual Studio 中“空白 Flask Web 项目”、“Flask[/Jade] Web 项目”和“投票 Flask[/Jade] Web 项目”模板的全部内容。 学习了 Flask 的所有基础知识，例如使用视图、模板和路由，并已了解如何使用后备数据存储。 现在应该能够使用任何所需的视图和模型来创建自己的 Web 应用。
+
+在开发计算机上运行 Web 应用只是使应用可供客户使用的一个步骤。 后续步骤可能包括以下任务：
+
+- 将 Web 应用部署到生产服务器，如 Azure 应用服务。 请参阅[发布到 Azure 应用服务](publishing-python-web-applications-to-azure-from-visual-studio.md)。
+
+- 添加一个使用其他生产级数据存储的存储库实现，如 PostgreSQL、MySQL 和 SQL Server（它们都可以在 Azure 上托管）。 另外，还可使用 [Azure SDK for Python](/azure/python/)，以便使用表和 blob 等 Azure 存储服务以及 Cosmos DB。
+
+- 在 Azure DevOps 等服务上设置持续集成/持续部署管道。 除了使用源代码管理（通过 Azure Repos、GitHub 或在其他位置）外，还可以将 Azure DevOps 项目配置为自动运行单元测试作为发布的先决条件，并在部署到生产环境之前，将管道配置为部署到暂存服务器以进行附加测试。 此外，Azure DevOps 还与 App Insights 等监视解决方案集成，并使用敏捷规划工具闭合整个周期。 有关详细信息，请参阅[在 Azure DevOps Projects 中为 Python 创建 CI/CD 管道](/azure/devops-project/azure-devops-project-python?view=vsts&preserve-view=true)以及常规 [Azure DevOps 文档](/azure/devops/?view=vsts&preserve-view=true)。
+::: moniker-end
 
 ## <a name="go-deeper"></a>深入了解
 
