@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugAddress2 interface
 ms.assetid: b150e0ed-4ac0-4f8c-9732-4b3e54b9d243
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a3f01472f60996b7094334de8cb2dbd79acac0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7e74833768ed1a287c0dcf3b641b858261c2d661
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102143956"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059177"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 此接口提供对拥有其地址由此接口表示的对象的进程 ID 的访问。

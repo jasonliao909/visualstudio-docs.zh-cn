@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetCommandOptions function
 ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 400b778cf5e26b0cabad0fb19c548b2faa0a803f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b6fc53f806989062a306260840a8f324a26d4669
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220802"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068370"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 此函数提示用户输入给定命令的高级选项。
@@ -54,7 +54,7 @@ SCCRTN SccGetCommandOptions(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级选项。|
@@ -80,6 +80,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 > `SCC_COMMAND_OPTIONS`当 IDE 显示 "**选项**" 对话框时，使用该命令来设置控制集成工作方式的首选项。 如果源代码管理插件希望提供其自己的首选项对话框，它可以在 IDE 的 "首选项" 对话框中的 " **高级** " 按钮上显示。 该插件仅负责获取和保存此信息;IDE 不会使用或修改它。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [命令代码](../extensibility/command-code-enumerator.md)
