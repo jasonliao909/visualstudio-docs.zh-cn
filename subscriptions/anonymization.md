@@ -7,12 +7,12 @@ ms.assetid: ce5fc8a4-484c-4df6-97c3-cb60174fb66b
 ms.date: 03/11/2021
 ms.topic: conceptual
 description: 了解订阅访问丢失时订阅者数据的匿名方式。
-ms.openlocfilehash: 69f41232a678a857908b30d63df2ae7f72b79904
-ms.sourcegitcommit: 9da787bf5b4281f933dc22083dc0bdeae3bc9461
+ms.openlocfilehash: 2a3d55824db1c90ff0868dda6d398e8c0e9a53d7
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103225958"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757602"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 订阅者信息匿名化
 当发生阻止订阅者使用订阅的事件时，例如订阅到期或删除订阅者的登录帐户，用户的个人信息（如姓名和登录帐户）基本上被扰乱以使其无法使用。  这样做是为了保护订阅者的个人信息。
@@ -44,7 +44,10 @@ ms.locfileid: "103225958"
 - 部署单一标识管理系统（MSA 或AAD），但不能同时部署这两者。  
 - 通过租户关联 AAD 和 MSA 标识。 
 
-## <a name="see-also"></a>请参阅
+## <a name="support-resources"></a>支持资源
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)。
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

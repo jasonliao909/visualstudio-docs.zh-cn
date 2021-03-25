@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 12/02/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员可如何解决订阅超额分配的问题
-ms.openlocfilehash: c2876223d2aa4f8da5f267595a193a2fecc3ace2
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537742"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776553"
 ---
 # <a name="over-allocated-subscriptions"></a>超额分配的订阅
 有时，添加订阅者后，订单发生变化，这可能会导致已分配的订阅数量超过公司拥有的许可证数量。 这称为“超额分配”。  
@@ -45,4 +45,4 @@ ms.locfileid: "96537742"
 
 ## <a name="next-steps"></a>后续步骤
 - 详细了解如何管理[带有 GitHub Enterprise 的 Visual Studio 订阅](assign-github.md)。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://aka.ms/vsadminhelp)联系。

@@ -18,20 +18,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 59a0660bb78e966150a6ef8d17dc24512a901a26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b5fd7129cfb21e5b59e8cdf0049b4ee75d59c87
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913943"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672730"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 
 包含用户定义的项和其元数据。 MSBuild 项目中使用的每一个项都必须被指定为 `ItemGroup` 元素的子元素。
 
-\<Project>
-\<ItemGroup>
-\<Item>
+\<Project>\
+&nbsp;\<ItemGroup>\
+&nbsp;&nbsp;\<Item>
 
 ## <a name="syntax"></a>语法
 
@@ -72,7 +72,7 @@ ms.locfileid: "99913943"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Include`|可选特性。<br /><br /> 项列表中要包含的文件或通配符。|
 |`Exclude`|可选特性。<br /><br /> 项列表中要排除的文件或通配符。|

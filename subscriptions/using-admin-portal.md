@@ -7,12 +7,12 @@ ms.assetid: 4c099fe8-883e-4789-9468-387ce5697dfe
 ms.date: 10/28/2020
 ms.topic: overview
 description: 了解如何开始在订阅管理门户中管理组织的 Visual Studio 订阅。
-ms.openlocfilehash: a9e23208bea480167452711442b52fb84b2bd8ee
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92904559"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104673068"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 订阅管理员门户概述
 
@@ -26,7 +26,7 @@ Visual Studio 订阅管理门户提供了集中管理组织订阅的工具。
 使用 Visual Studio 订阅管理门户时，需要记住以下要点：
 - **Visual Studio 订阅根据用户授权。** 每个订阅者可以根据开发和测试需要在多台计算机上使用软件。
 - 为每个订阅者只分配一个订阅级别，分别对应于组织购买的 Visual Studio 订阅。  如果订阅者分配有多个订阅级别，请编辑订阅者的设置，使他们只有一个订阅级别。
-- **更新订阅者的订阅级别** ，当订阅升级（购买“升级”许可证之后）或续签到更低级别时更新。
+- **更新订阅者的订阅级别**，当订阅升级（购买“升级”许可证之后）或续签到更低级别时更新。
 - **不要在订阅者之间共享订阅。** 订阅必须分配给指定的个人。  不允许将订阅分配给团队。  必须将订阅分配给任何使用全部或部分订阅权益（开发和测试软件、Microsoft Azure、E-Learning 等）的用户。
 
 ## <a name="the-subscribers-page"></a>“订阅者”页
@@ -57,9 +57,9 @@ Visual Studio 订阅管理门户提供了集中管理组织订阅的工具。
 - [Visual Studio 授权白皮书](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
 - [比较订阅选项和定价](https://visualstudio.microsoft.com/vs/pricing)
 - [比较 Visual Studio IDE 功能](https://visualstudio.microsoft.com/vs/compare)
-- [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 411fbd757eb063202136eba5c1e5fbec27f56523
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683631"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672834"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
@@ -74,7 +74,7 @@ Visual Studio 管理项目中的单个应用程序的文件  。 该项目包括
     选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“.NET Core”  。 在中间窗格中，选择“ASP.NET Core Web 应用程序 - C#”，然后选择“确定”。
+    从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“.NET Core”  。 在中间窗格中，选择“ASP.NET Core Web 应用程序 - C#”，然后选择“确定”。
 
     在显示的对话框中，选择“Web 应用”之后，在选择“Web 应用(模型-视图-控制器)”，然后选择“创建”（或“确定”）  。
 
@@ -248,7 +248,7 @@ Visual Studio 管理项目中的单个应用程序的文件  。 该项目包括
       showMsg: function (): void {
          let v: any = jQuery.fn.jquery.toString();
          let content: any = $("#ts-example-2")[0].innerHTML;
-         alert(content.toString());
+         alert(content.toString() + " " + v + "!!");
          $("#ts-example-2")[0].innerHTML = content + " " + v + "!!";
       }
    };

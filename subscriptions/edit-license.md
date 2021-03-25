@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解管理员如何编辑订阅分配。
-ms.openlocfilehash: f24c949224d895f4cc2926ab30db637835e7886c
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249803"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776865"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 作为订阅管理员，可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。
@@ -56,7 +56,7 @@ ms.locfileid: "102249803"
 5. 文件上传后，将看到上传成功的通知。 此时，编辑将反映到订阅者信息当中。
 
 ## <a name="resources"></a>资源
-- [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
+- [订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

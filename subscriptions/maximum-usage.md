@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: c473b01f-2dfe-4cc2-ad29-bb5e2a268123
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何在管理门户中查看分配的最大订阅数
-ms.openlocfilehash: e8ea9aa9001312c792e6f9d356dbc5f7cf58dfb8
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 29aaa3d2268d5fc0ae99a1a400238d633e9026a5
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92904495"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104777008"
 ---
 # <a name="use-the-maximum-usage-feature-to-track-the-number-of-assigned-subscriptions"></a>使用最大用量功能跟踪分配的订阅数
 Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配的订阅数量，并确定在过去一年和整个协议有效期内分配的每个级别的订阅峰值数量。 
@@ -45,10 +45,10 @@ Visual Studio 订阅管理门户中的新功能有助于跟踪已购买和分配
 
 ## <a name="resources"></a>资源
 - [Visual Studio 授权白皮书](https://visualstudio.microsoft.com/wp-content/uploads/2019/06/Visual-Studio-Licensing-Whitepaper-May-2019.pdf)
-- [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 - [批量许可条款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0fe9eaa4-f589-429e-a443-13bf86637d5a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解如何在管理门户中设置语言、联系人、订阅级别等的首选项
-ms.openlocfilehash: bdb6a5bc1160c75830fe9f1473222155d8fad781
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 93a9417a88d07dcc841c6a59a7353b0ffb5e7565
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511340"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757615"
 ---
 # <a name="set-preferences-for-your-agreements-in-the-administration-portal"></a>在管理门户中设置协议的首选项
 超级管理员可以在管理门户中设置某些首选项，这些首选项将全局应用于每个协议。  这些首选项将在管理员添加订阅者时为管理员自动填充订阅详细信息，并且只能由超级管理员进行全局修改。  
@@ -73,7 +73,7 @@ ms.locfileid: "99511340"
 答：如果在“联系人电子邮件地址”首选项中没有设置特定的电子邮件地址，协议上的所有管理员都将收到请求。 
 
 ## <a name="resources"></a>资源
-- [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 文档](/visualstudio/)

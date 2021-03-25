@@ -7,12 +7,12 @@ ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: fd482bd2225025b5cd8a14f0387e938626fad6d5
-ms.sourcegitcommit: 66cda27b63c9b55782b1db223a6dbda9f8cabe13
+ms.openlocfilehash: 58603b72128af1c6dd9caae93f92c435f0851ada
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/21/2020
-ms.locfileid: "95006310"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672990"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
@@ -63,6 +63,7 @@ ms.locfileid: "95006310"
 
 ## <a name="see-also"></a>请参阅
 
+- [并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md)
 - [Visual Studio 中的 Git 新体验](git-with-visual-studio.md)
 - [教程：打开存储库中的项目](../get-started/tutorial-open-project-from-repo.md)
 - [团队资源管理器参考](reference/team-explorer-reference.md)

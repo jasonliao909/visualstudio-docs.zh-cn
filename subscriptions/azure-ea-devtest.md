@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解如何利用适用于具有企业协议的客户的特殊 Azure 开发测试定价
-ms.openlocfilehash: 9043a2d8f3ab069bcc02375089780d16d1e8a18b
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 157d094ef02864578ce4bf626d11457506817418
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249467"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776969"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 企业协议开发测试套餐
 
@@ -42,7 +42,7 @@ ms.locfileid: "102249467"
 0. 单击“购买”  。  （通过此套餐，你实际上不会付费。）
 
 ## <a name="resources"></a>资源
-- 需要帮助?  联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 需要帮助?  联系[订阅支持](https://aka.ms/vsadminhelp)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

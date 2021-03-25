@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 83a9162a-b9e7-43a4-b07f-6c1fd8580f78
-ms.date: 02/18/2021
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员跟踪用户分配和处理订单的职责。
-ms.openlocfilehash: 3da446dad534a6a76413a66de2b9ad52e937e253
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249486"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776982"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>跟踪用户分配和处理订单
 Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批量许可协议或 Microsoft 产品和服务协议中的计划处理因使用量增加而产生的订单。 新的 Visual Studio 订阅管理门户提供一个有用的跟踪器，可显示可用和已用的许可证，从而简化了这一过程。
@@ -38,7 +38,7 @@ Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批
 Microsoft 企业协议 (EA)、MPSA 和 Select Plus 协议允许你随时间推移灵活地使用和授权 Visual Studio 软件。 Visual Studio 管理员必须制定年度校准订单，使软件许可证数量在协议期间达到规定的最大使用量。
 
 ## <a name="resources"></a>资源
-- 需要帮助?  联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 需要帮助?  联系[订阅支持](https://aka.ms/vsadminhelp)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

@@ -7,12 +7,12 @@ ms.assetid: 6866dfab-c4fa-428e-bb0d-7b202c81f770
 ms.date: 10/28/2020
 ms.topic: conceptual
 description: 了解合作伙伴如何为其客户管理 Visual Studio 订阅。
-ms.openlocfilehash: ba62a2b3d9920ca145722c137322e4471d110d9e
-ms.sourcegitcommit: f1d47655974a2f08e69704a9a0c46cb007e51589
+ms.openlocfilehash: 72891535be7f65b54fb6b9493bd7cc638516177f
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903761"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776787"
 ---
 # <a name="partners-managing-subscriptions-on-behalf-of-customers"></a>合作伙伴代表客户管理订阅
 要在 Visual Studio [订阅管理门户](https://manage.visualstudio.com)中管理订阅，合作伙伴需要执行一些步骤。 
@@ -61,7 +61,7 @@ ms.locfileid: "92903761"
 
 ## <a name="resources"></a>资源
 - [Visual Studio 许可白皮书](https://aka.ms/vslicensing)
-- [Visual Studio 管理和订阅支持](https://visualstudio.microsoft.com/support/support-overview-vs)
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 - [批量许可条款](https://www.microsoft.com/licensing/product-licensing/products.aspx)
 
 ## <a name="see-also"></a>请参阅
