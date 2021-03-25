@@ -9,17 +9,17 @@ helpviewer_keywords:
 - tools [Visual Studio], custom
 - custom tools
 ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7fdadad602a256b4740b4c4204704ca73864d612
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d714822605178382ec2ef3574db617f7986cf888
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903018"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091040"
 ---
 # <a name="custom-tools"></a>自定义工具
 *自定义工具* 使你可以将工具与项目中的项相关联，并在每次保存文件时运行该工具。 某些自定义工具（有时称为 *单文件生成器*）经常用于实现从数据生成代码的转换器，反之亦然。 例如，单文件生成器会创建 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和源代码，并将其放 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 在 *. 设置* 和 *.resx* 文件中。 生成的源代码提供对 *设置* 和 *.resx* 文件中的数据的强类型访问。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目类型支持自定义工具; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目类型不支持。 你自己的项目类型还可以支持自定义工具。
@@ -45,7 +45,7 @@ ms.locfileid: "99903018"
 
  演示如何在项目文件中保存项目项属性，如源文件的作者。
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 提供有关的详细信息，该信息将 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator> 单个输入文件转换为单个输出文件，该文件可编译或添加到项目。
 
  <xref:EnvDTE.ProjectItem> 介绍 `ProjectItem` 接口，它表示项目中的项。

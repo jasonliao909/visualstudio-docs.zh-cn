@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Atom feed, VSIX private galleries
 - VSIX private galleries, Atom feed
 ms.assetid: 5897f538-9c41-486f-97d9-a1976d20d9fd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 81167b1e2e9f7959398b30b89796913520c48fac
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a83d5aa68f6f631243fbbfcad7cf28b25e7bc70
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967444"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057372"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建专用库的 Atom 馈送
 你可以创建 Atom (RSS) 源到包含扩展的 intranet 位置，并将源添加到作为专用库的 **扩展和更新** 。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。
