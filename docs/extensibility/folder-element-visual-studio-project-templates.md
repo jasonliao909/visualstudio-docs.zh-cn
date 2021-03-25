@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - Folder element [Visual Studio project templates]
 ms.assetid: 558e3d41-0db5-4c44-82bb-6bb87892b093
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b655308760d64f97c168e8000972142f159ec3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 40e1df1d5efeab17adf60a8e1732991cb2cac02a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968224"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070123"
 ---
 # <a name="folder-element-visual-studio-project-templates"></a>文件夹元素 (Visual Studio 项目模板) 
 指定将添加到项目中的文件夹。
@@ -41,9 +41,9 @@ ms.locfileid: "99968224"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Name`|必需的特性。<br /><br /> 项目文件夹的名称。|
 |`TargetFolderName`|可选特性。<br /><br /> 指定从模板创建项目时为文件夹指定的名称。 此属性可用于使用参数替换创建文件夹名称，或使用无法直接在 *.zip* 文件中使用的国际字符串命名文件夹。|

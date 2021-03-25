@@ -8,17 +8,17 @@ helpviewer_keywords:
 - status bars, about status bars
 - status bars, overview
 ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7776c7fa35cd7ac06dec60ced3604cb67c96da4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ab87f9c8b54d9c31466068668eb8dd5a1857a06
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903203"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105070097"
 ---
 # <a name="extend-the-status-bar"></a>扩展状态栏
 您可以使用 IDE 底部的 Visual Studio 状态栏显示信息。
@@ -36,7 +36,7 @@ ms.locfileid: "99903203"
 
 1. 创建名为 **TestStatusBarExtension** 的 VSIX 项目，并添加名为 **TestStatusBarCommand** 的菜单命令。
 
-2. 在 *TestStatusBarCommand.cs* 中，将命令处理程序方法代码 (`MenuItemCallback`) 替换为以下代码：
+2. 在 *TestStatusBarCommand* 中，将 () 的命令处理程序方法代码替换 `MenuItemCallback` 为以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -80,7 +80,7 @@ ms.locfileid: "99903203"
 
 1. 在此过程中，我们将演示如何初始化和更新进度栏。
 
-2. 打开 *TestStatusBarCommand.cs* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
+2. 打开 *TestStatusBarCommand* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -118,7 +118,7 @@ ms.locfileid: "99903203"
 
      在此过程中，我们将显示表示生成项目或解决方案的标准 Visual Studio 动画。
 
-2. 打开 *TestStatusBarCommand.cs* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
+2. 打开 *TestStatusBarCommand* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
