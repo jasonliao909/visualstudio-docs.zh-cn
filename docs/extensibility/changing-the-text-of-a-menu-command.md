@@ -9,17 +9,17 @@ helpviewer_keywords:
 - text, menus
 - commands, changing text
 ms.assetid: 5cb676a0-c6e2-47e5-bd2b-133dc8842e46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e2d812dbee833358f682b5227785c78322efe44a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911238"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068058"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>更改菜单命令的文本
 以下步骤演示如何使用服务更改菜单命令的文本标签 <xref:System.ComponentModel.Design.IMenuCommandService> 。
@@ -41,7 +41,7 @@ ms.locfileid: "99911238"
     </Button>
     ```
 
-3. 在 *ChangeMenuText.cs* 文件中，创建一个将在显示菜单命令之前调用的事件处理程序。
+3. 在 *ChangeMenuText* 文件中，创建一个将在显示菜单命令之前调用的事件处理程序。
 
     ```csharp
     private void OnBeforeQueryStatus(object sender, EventArgs e)

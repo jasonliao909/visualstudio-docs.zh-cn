@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Buttons element (VSCT XML schema)
 - VSCT XML schema elements, Buttons
 ms.assetid: 96dccf51-2b00-4700-9d28-924b34c21ecd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 51b202db9210fa5c1f3d5b26b5177cc0b5e1e0a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec0640313195d6a15599d1a765081557c0c1a75a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927309"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068137"
 ---
 # <a name="button-element"></a>Button 元素
 定义用户可与之交互的元素。 按钮可以是不同的类型： Button、MenuButton 和 SplitDropDown。
@@ -39,13 +39,13 @@ ms.locfileid: "99927309"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。 GUID/ID 命令标识符的 GUID。|
+|GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
 |priority|可选。 一个指定优先级的数值。|
 |type|可选。 一个枚举值，该值指定按钮的类型。<br /><br /> 如果未提供，则使用按钮。<br /><br /> Button<br /> 工具栏上出现的标准命令 (通常作为图标按钮) 、菜单和上下文菜单。<br /><br /> MenuButton<br /> 不执行命令但会生成另一个菜单的菜单项。<br /><br /> SplitDropDown<br /> 控件，如 Microsoft Word 中的 "标准" 工具栏上的 "撤消" 和 "重做" 按钮。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 

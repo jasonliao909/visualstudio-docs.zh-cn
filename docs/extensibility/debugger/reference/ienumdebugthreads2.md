@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugThreads2
 ms.assetid: 1854f078-3b49-42c2-b65b-33e3b506fd63
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3706b9ff004dbe283952dbc3740f8ec4bcb056b2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97cb6f4d0425fb75ebaa9375e53e3ba6d5075e00
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225729"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082642"
 ---
 # <a name="ienumdebugthreads2"></a>IEnumDebugThreads2
 此接口枚举当前调试会话中正在运行的线程。
@@ -38,7 +38,7 @@ IEnumDebugThreads2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugThreads2` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugthreads2-next.md)|检索枚举序列中指定数量的线程。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugthreads2-skip.md)|跳过枚举序列中指定数量的线程。|
@@ -56,7 +56,7 @@ IEnumDebugThreads2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprocess2-enumthreads.md)
 - [EnumThreads](../../../extensibility/debugger/reference/idebugprogram2-enumthreads.md)

@@ -9,20 +9,20 @@ f1_keywords:
 helpviewer_keywords:
 - INTERCEPT_EXCEPTION_ACTION enumeration
 ms.assetid: e647f1eb-2932-4447-8c78-3b0d706fb972
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f5e1038ac2515198d5eb20b66f346f7a6798c25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c5a3d0d946e05ce249fa4b74dd31e7fef891e7a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852786"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082616"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
 指定截获异常时要执行的操作。
@@ -44,7 +44,7 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 }
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 
 `IEA_INTERCEPT`\
 启用截获当前异常。 这是目前支持的唯一值，并且必须指定。

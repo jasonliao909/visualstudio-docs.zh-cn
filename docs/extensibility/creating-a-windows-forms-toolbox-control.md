@@ -8,17 +8,17 @@ helpviewer_keywords:
 - toolbox
 - windows forms
 ms.assetid: 0be6ffc1-8afd-4d02-9a5d-e27dde05fde6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4bb9505ab475da7919a39eb03e7c84b92857db4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42dcf30e7c31880357bb95e3858a2c70aa59f174
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902190"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089324"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 
@@ -46,7 +46,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 #### <a name="to-build-the-user-interface"></a>构建用户界面
 
-1. 在 **解决方案资源管理器** 中，双击 *Counter.cs* 以在设计器中将其打开。
+1. 在 **解决方案资源管理器** 中，双击 " *Counter* " 在设计器中将其打开。
 
 2. 删除 **单击此处！** 添加 Windows 窗体工具箱控件项模板时默认包含的按钮。
 
@@ -58,9 +58,9 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
     |控制|属性|值|
     |-------------|--------------|-----------|
-    |`Label1`|**Text**|""|
+    |`Label1`|**文本**|""|
     |`Button1`|**名称**|btnReset|
-    |`Button1`|**Text**|重置|
+    |`Button1`|**文本**|重置|
 
 ### <a name="code-the-user-control"></a>编码用户控件
 
@@ -163,7 +163,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 2. 在 Visual Studio 的实验实例中，创建一个 **Windows 窗体应用程序** 项目。
 
-3. 在 **解决方案资源管理器** 中，双击 " *Form1.cs* " 以在设计器中将其打开（如果尚未打开）。
+3. 在 **解决方案资源管理器** 中，双击 " *Form1* " 以在设计器中将其打开（如果尚未打开）。
 
 4. 在 " **工具箱**" 中， `Counter` 控件应显示在 " **常规** " 部分中。
 
@@ -173,7 +173,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 7. 将一个 <xref:System.Windows.Forms.Button> 控件拖到窗体上，然后将该按钮的 "名称" 和 "文本" 属性设置为 `Test` 。
 
-8. 双击按钮以在代码视图中打开 *Form1.cs* ，并创建一个 click 处理程序。
+8. 双击按钮以在代码视图中打开 " *cs* "，然后创建一个 click 处理程序。
 
 9. 在单击处理程序中调用 `counter1.Increment()` 。
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Settings Store, using
 ms.assetid: 447ec08a-eca5-40b8-89b0-f98fdf3d39a4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 752a912fd9a565e4b3e8dcb5c4c142e8f37dffc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a84fa551a4a3ea10b212832c0891fb0d7d19b2f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934033"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060180"
 ---
 # <a name="using-the-settings-store"></a>使用设置存储
 有两种类型的设置存储：
@@ -33,12 +33,12 @@ ms.locfileid: "99934033"
 
 1. 每个 Visual Studio 扩展都从包含扩展资产的 VSIX 部署项目开始。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `SettingsStoreExtension` 。 可以在 " **新项目** " 对话框中的 " **Visual c #/扩展性**" 下找到 VSIX 项目模板。
 
-2. 现在，添加一个名为 **SettingsStoreCommand** 的自定义命令项模板。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 **SettingsStoreCommand.cs**。 有关如何创建自定义命令的详细信息，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
+2. 现在，添加一个名为 **SettingsStoreCommand** 的自定义命令项模板。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 **SettingsStoreCommand**。 有关如何创建自定义命令的详细信息，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 
 ## <a name="using-the-configuration-settings-store"></a>使用配置设置存储
  本部分说明如何检测和显示配置设置。
 
-1. 在 SettingsStorageCommand.cs 文件中，添加以下 using 指令：
+1. 在 SettingsStorageCommand 文件中，添加以下 using 指令：
 
    ```
    using System.Collections.Generic;
