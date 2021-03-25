@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccUncheckout function
 ms.assetid: 6d498b70-29c7-44b7-ae1c-7e99e488bb09
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33e0c4904a92d71e000d8c911d551eb8d0aab621
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221348"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090156"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。 自签出后对文件进行的所有更改都将丢失。
@@ -64,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|撤消签出成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
@@ -78,5 +78,5 @@ SCCRTN SccUncheckout (
 ## <a name="remarks"></a>备注
  完成此操作后， `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 将为执行撤消签出的文件清除和标志。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

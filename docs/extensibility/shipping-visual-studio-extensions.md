@@ -9,17 +9,17 @@ helpviewer_keywords:
 - deployment, VSIX
 - satellite DLLs, in VSIX packages
 ms.assetid: 13cd263d-25f7-488e-9c1a-cff908caedb6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c1b5787eaecd6b3787d77c7ecab70acae689df8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c88c80ffbc1e80815b8370a940a75c0eb197ff78
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938091"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090130"
 ---
 # <a name="shipping-visual-studio-extensions"></a>传送 Visual Studio 扩展
 完成扩展开发后，可以将其安装在其他计算机上，与朋友和同事共享，或将其发布到 Visual Studio Marketplace。 在本部分中，我们将介绍需要执行哪些操作才能发布和维护扩展：使用 .vsix 文件、发布、本地化和更新。

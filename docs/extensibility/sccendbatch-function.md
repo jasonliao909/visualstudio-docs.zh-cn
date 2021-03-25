@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccEndBatch function
 ms.assetid: 100e7833-fe0a-45c0-9fca-3e61fd1165b7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f4ea8ec19fcfe55da0666383408c2addbd42f2e6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b3bad3604c57661d0e0e091299cef127d9215d56
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221569"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090208"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
 此函数将结束一批源代码管理操作。 这些批处理不能嵌套。
@@ -35,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|成功结束批处理操作。|
 |SCC_E_UNKNOWNERROR|非特定故障。|
@@ -43,6 +43,6 @@ SCCRTN SccEndBatch(void);
 ## <a name="remarks"></a>备注
  源代码管理批处理用于在多个项目或多个上下文中执行相同的源代码管理操作。 批处理可用于消除批处理操作期间用户体验中的冗余对话框。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)和函数用作 `SccEndBatch` 指示操作的开始和结束的对。 它们不能嵌套。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccBeginBatch](../extensibility/sccbeginbatch-function.md)

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project subtypes, extended methods
 - project subtypes, extended properties
 ms.assetid: 2b9833bf-8551-4ae1-93db-197ba645c65e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d5d81135a2571db3c84b67acb2fa08e4f83f57d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f32c489ba2907cabff47b916039f96754d403455
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970057"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105064236"
 ---
 # <a name="properties-and-methods-extended-by-project-subtypes"></a>项目子类型扩展的属性和方法
 项目子类型有很大的影响，因为它被构造为基本项目的聚合器。 本部分总结了项目子类型可以增强或修改的一些功能。

@@ -9,17 +9,17 @@ f1_keywords:
 helpviewer_keywords:
 - POPDIRLISTFUNC callback function
 ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da499ee9bbdcdff95456a4e4d5f5dc63f2acfb2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f8cde3e6835a7d3262bbb89fed13e0dbc8e540e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967392"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090247"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 这是一个回调函数，该函数提供给 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数以更新目录的集合，并 (可以选择性地) 文件名以找出受源代码管理的文件名称。
@@ -36,7 +36,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
  pvCallerData
 
 中向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)提供的用户值。
@@ -52,7 +52,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>返回值
  IDE 将返回相应的错误代码：
 
-|“值”|说明|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|继续处理。|
 |SCC_I_OPERATIONCANCELED|停止处理。|

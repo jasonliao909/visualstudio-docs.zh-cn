@@ -8,24 +8,24 @@ helpviewer_keywords:
 - properties, adding to a project item
 - project items, adding properties
 ms.assetid: d7a0f2b0-d427-4d49-9536-54edfb37c0f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63b1a4a7cb6e2d12882794a07e51151effe36716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58c46da9023cc64246f1ea9ee4bde1ec866c545d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967418"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090351"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保留项目项的属性
 你可能希望保留添加到项目项的属性，例如源文件的作者。 可以通过将属性存储在项目文件中来实现此目的。
 
  将属性保存在项目文件中的第一步是获取作为接口的项目的层次结构 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。 可以通过使用自动化或使用来获取此接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> 。 获取接口后，可以使用它来确定当前选择的项目项。 获得项目项 ID 后，可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 添加属性。
 
- 在下面的过程中，将 *VsPkg.cs* 属性 `Author` 与 `Tom` 项目文件中的值保持一致。
+ 在下面的过程中，将 *VsPkg* 属性 `Author` 与项目文件中的值保持一致 `Tom` 。
 
 ## <a name="to-obtain-the-project-hierarchy-with-the-dte-object"></a>用 DTE 对象获取项目层次结构
 
@@ -119,7 +119,7 @@ ms.locfileid: "99967418"
 
 1. 启动 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，然后打开或创建一个解决方案。
 
-2. 在 **解决方案资源管理器** 中选择项目项 "VsPkg.cs"。
+2. 在 **解决方案资源管理器** 中选择项目项 "VsPkg"。
 
 3. 使用断点或以其他方式确定是否已加载 VSPackage 并运行 SetItemAttribute。
 
