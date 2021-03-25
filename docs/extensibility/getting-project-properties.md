@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project properties, displaying in tool window
 - tool windows, displaying project properties
 ms.assetid: 96ba07ca-0811-4013-8602-12550ac4ba79
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e89a19ee51a62e8d92c0ec8984e912703e2b92b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8de3f32951cb70b8115781ce067950c7e518b102
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968185"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057658"
 ---
 # <a name="get-project-properties"></a>获取项目属性
 
@@ -38,7 +38,7 @@ ms.locfileid: "99968185"
 
 ### <a name="to-display-project-properties-in-a-tool-window"></a>在工具窗口中显示项目属性
 
-1. 在 ProjectPropertiesToolWindowCommand.cs 文件中，添加以下 using 指令。
+1. 在 ProjectPropertiesToolWindowCommand 文件中，添加以下 using 指令。
 
     ```csharp
     using EnvDTE;
@@ -46,9 +46,9 @@ ms.locfileid: "99968185"
 
     ```
 
-2. 在 *ProjectPropertiesToolWindowControl* 中，从 "工具箱" 中删除现有按钮并添加 TreeView。 还可以从 *ProjectPropertiesToolWindowControl.xaml.cs* 文件中删除 click 事件处理程序。
+2. 在 *ProjectPropertiesToolWindowControl* 中，从 "工具箱" 中删除现有按钮并添加 TreeView。 还可以从 *ProjectPropertiesToolWindowControl* 文件中删除 click 事件处理程序。
 
-3. 在 *ProjectPropertiesToolWindowCommand.cs* 中，使用 `ShowToolWindow()` 方法打开项目并读取其属性，然后将属性添加到 TreeView。 ShowToolWindow 的代码应如下所示：
+3. 在 *ProjectPropertiesToolWindowCommand* 中，使用 `ShowToolWindow()` 方法打开项目并读取其属性，然后将属性添加到 TreeView。 ShowToolWindow 的代码应如下所示：
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - interop assemblies, Visual Studio
 - managed VSPackages, interop assemblies
 ms.assetid: 1043eb95-4f0d-4861-be21-2a25395b3b3c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1764cc735ca836feada2ad6f794f2bc8520fef41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1253f5e7197f587e4a5e62365b42cb5040010666
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941692"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090663"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio 互操作程序集
 Visual Studio 互操作程序集允许托管应用程序访问提供 Visual Studio 扩展性的 COM 接口。 直接 COM 接口和其互操作版本之间存在一些差异。 例如，Hresult 通常表示为 int 值，需要以与异常相同的方式进行处理，并且参数 (特别是处理不同的参数) 。

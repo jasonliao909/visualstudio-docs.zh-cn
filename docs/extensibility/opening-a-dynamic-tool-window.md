@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, dynamic
 ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1998091559f78ed7c7eb8d9585206cf0217d8b2d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 357644f67da9a3bbc468d708cf39e44f737dbf0f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946587"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090416"
 ---
 # <a name="open-a-dynamic-tool-window"></a>打开动态工具窗口
 工具窗口通常从菜单上的命令或等效的键盘快捷方式打开。 但是，有时您可能需要在应用特定 UI 上下文时打开的工具窗口，并在 UI 上下文不再适用时关闭。 这些类型的工具窗口称为 " *动态* " 或 " *自动可见*"。
@@ -34,9 +34,9 @@ ms.locfileid: "99946587"
 
 ## <a name="to-open-a-dynamic-tool-window"></a>打开动态工具窗口
 
-1. 创建名为 **DynamicToolWindow** 的 VSIX 项目，并添加名为 *DynamicWindowPane.cs* 的工具窗口项模板。 有关详细信息，请参阅 [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
+1. 创建名为 **DynamicToolWindow** 的 VSIX 项目，并添加名为 *DynamicWindowPane* 的工具窗口项模板。 有关详细信息，请参阅 [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
-2. 在 *DynamicWindowPanePackage.cs* 文件中，找到 DynamicWindowPanePackage 声明。 添加 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 属性以注册工具窗口。
+2. 在 *DynamicWindowPanePackage* 文件中，找到 DynamicWindowPanePackage 声明。 添加 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 和 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 属性以注册工具窗口。
 
     ```vb
     [ProvideToolWindow(typeof(DynamicWindowPane)]

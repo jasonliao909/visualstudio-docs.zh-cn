@@ -10,17 +10,17 @@ f1_keywords:
 helpviewer_keywords:
 - Name element [Visual Studio project templates]
 ms.assetid: 48788dbf-7da0-4443-8061-aab966fc22c8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 109832586483bacb753f96b9a27c0f756ab7a6d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8d45c66d73efe163c22bf2a24663ec02f41bc84
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886634"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090572"
 ---
 # <a name="name-element-visual-studio-templates"></a>Visual Studio 模板 (名称元素) 
 指定模板在 " **新建项目** " 或 " **添加新项** " 对话框中显示的名称。
@@ -43,7 +43,7 @@ ms.locfileid: "99886634"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Package`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 包 ID 的 GUID。|
 |`ID`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 资源 ID。|
