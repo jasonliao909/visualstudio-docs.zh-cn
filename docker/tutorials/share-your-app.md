@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 676668b1247377597bed55b293efb8ad8b5cd253
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9f7d329bf00e3fadd665cefea22a2301fdf695
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841700"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105061779"
 ---
 # <a name="share-your-app"></a>共享应用
 
@@ -24,7 +24,7 @@ ms.locfileid: "99841700"
 
 要推送映像，首先需要在 Docker Hub 上创建存储库。
 
-1. 转到 [Docker Hub](https://hub.docker.com)，并在必要时登录。
+1. 转到 [Docker Hub](https://hub.docker.com/signup/msftedge?utm_source=msftedge)，并在必要时登录。
 
 1. 单击“创建存储库”按钮。
 

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - editors [Visual Studio SDK], opening project-specific editors
 - projects [Visual Studio SDK], opening folders
 ms.assetid: 83e56d39-c97b-4c6b-86d6-3ffbec97e8d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 719460b36f926df19e76db1aab4e90b4d959fdc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8fa68ff628212a207f860a3f9e6eca960481ee9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850489"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069876"
 ---
 # <a name="how-to-open-project-specific-editors"></a>如何：打开项目特定的编辑器
 如果项目打开的项文件在本质上绑定到该项目的特定编辑器，则该项目必须使用特定于项目的编辑器打开该文件。 此文件不能被委派到 IDE 用于选择编辑器的机制。 例如，您可以使用特定于项目的编辑器选项来指定特定的位图编辑器，该编辑器可识别您的项目特有的文件中的信息，而不是使用标准的位图编辑器。

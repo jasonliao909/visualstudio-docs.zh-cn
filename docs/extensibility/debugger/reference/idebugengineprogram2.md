@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugEngineProgram2 interface
 ms.assetid: 151003a9-2e4d-4acf-9f4d-365dfa6b9596
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ea46ccad8f357cb868a445a8836280abf7c224e0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6e52ae6477b49325d4b8a4d81192fe2ecf736163
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102153373"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105092652"
 ---
 # <a name="idebugengineprogram2"></a>IDebugEngineProgram2
 此接口提供多线程调试支持。
@@ -40,7 +40,7 @@ IDebugEngineProgram2 : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[Stop](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止在此程序中运行的所有线程。|
+|[停止](../../../extensibility/debugger/reference/idebugengineprogram2-stop.md)|停止在此程序中运行的所有线程。|
 |[WatchForThreadStep](../../../extensibility/debugger/reference/idebugengineprogram2-watchforthreadstep.md)|监视执行 (或停止监视执行) 在给定线程上发生。|
 |[WatchForExpressionEvaluationOnThread](../../../extensibility/debugger/reference/idebugengineprogram2-watchforexpressionevaluationonthread.md)|允许 (或不允许) 表达式计算在给定线程上发生，即使程序已停止也是如此。|
 

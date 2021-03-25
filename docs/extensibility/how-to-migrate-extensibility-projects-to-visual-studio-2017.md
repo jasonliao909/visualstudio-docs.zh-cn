@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/09/2016
 ms.topic: how-to
 ms.assetid: 8ca07b00-a3ff-40ab-b647-c0a93b55e86a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 39efb082f8a551ea016e856ba45c9dbb4e8eed0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d50624dc4c0d96c20323afb3c7d065121a4baacb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850695"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069967"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
@@ -192,7 +192,7 @@ Excel 工作表中有四列：**组件名称、组件名称**、**版本** 和 *
 
 对于所有引用，请首先确定哪些 VisualStudio 位于核心编辑器中 (CoreEditor) 组件。  至少需要将核心编辑器组件指定为所有扩展的必备组件。 对于不在核心编辑器中的引用，请在 " **二进制文件/文件名称** " 部分中添加筛选器，以查找具有这些引用的任意子集的组件。
 
-示例:
+示例：
 
 * 如果你有一个调试器扩展，并且知道你的项目具有对 *VSDebugEng.dll* 和 *VSDebug.dll* 的引用，请在 " **二进制文件/文件名称** " 标头中单击 "筛选器" 按钮。  搜索 "VSDebugEng.dll"，然后选择 *"确定*"。  接下来，再次单击 " **二进制文件名称** " 标头中的 "筛选器" 按钮，然后搜索 "VSDebug.dll"。  选中 " **添加当前所选内容** " 复选框，然后选择 **"确定"**。  现在，浏览 **组件名称** ，查找与扩展类型最相关的组件。 在此示例中，你将选择实时调试器并将其添加到你的 source.extension.vsixmanifest。
 * 如果你知道你的项目处理调试器元素，则可以在筛选器搜索框中搜索 "调试器"，以查看其名称中包含调试器的组件。
