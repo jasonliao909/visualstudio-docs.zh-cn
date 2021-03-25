@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerService interface
 ms.assetid: 3bdb124b-c582-47ba-b465-13c6a1cdb702
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5054041ab09898943d300393d36205581231b06d
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: cc712d0c86613d0ee6b30d754b759c17e3ab9bdc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227211"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086763"
 ---
 # <a name="ieevisualizerservice"></a>IEEVisualizerService
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ IEEVisualizerService : IUnknown
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[GetCustomViewerCount](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewercount.md)|检索此服务了解的自定义查看器的数目。|
 |[GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)|检索自定义查看器的列表。|
@@ -61,7 +61,7 @@ IEEVisualizerService : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

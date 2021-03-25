@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Clone
 ms.assetid: 9d5c6bc6-7e72-4f1b-801c-7192458f3ba8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad896e6613c6e9d39165725e9e18996e0fd06848
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b45c31a8271da7a42ed8b254dd89b732c825f29e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222752"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086698"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -50,5 +50,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
