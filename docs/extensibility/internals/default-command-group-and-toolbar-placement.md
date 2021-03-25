@@ -12,17 +12,17 @@ helpviewer_keywords:
 - commands [Visual Studio], default IDE
 - commands [Visual Studio], default product
 ms.assetid: 35342110-d639-4577-8367-00b21dcc6f07
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c38abc09b0d5c8996cde44d33f4778a54a0cd62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07e93db9ffe79c3c49072b3379def14a3be2852c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902952"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091001"
 ---
 # <a name="default-command-group-and-toolbar-placement"></a>默认命令、组和工具栏位置
 对于产品一致性和稳定性，UI 默认显示特定的命令组，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供命令和命令组的定义。 Vspackage 还可以使用标准命令和命令组。
