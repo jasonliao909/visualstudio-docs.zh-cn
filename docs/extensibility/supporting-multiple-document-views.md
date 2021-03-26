@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - multiple document views
 ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5360f67714e1da4f7372ee51eb4f75cc8835c1fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056202"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 可以通过为编辑器创建单独的文档数据和文档视图对象来提供文档的多个视图。 在某些情况下，其他文档视图会很有用：
@@ -26,7 +26,7 @@ ms.locfileid: "99965117"
 
 - 窗体和代码视图支持：希望编辑器提供不同类型的视图。 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]例如，同时提供了窗体视图和代码视图。
 
-  有关此操作的详细信息，请参阅 Visual Studio 包模板创建的自定义编辑器项目中的 EditorFactory.cs 文件中的 CreateEditorInstance 过程。 有关此项目的详细信息，请参阅 [演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。
+  有关此操作的详细信息，请参阅 Visual Studio 包模板创建的自定义编辑器项目中的 EditorFactory 文件中的 CreateEditorInstance 过程。 有关此项目的详细信息，请参阅 [演练：创建自定义编辑器](../extensibility/walkthrough-creating-a-custom-editor.md)。
 
 ## <a name="synchronizing-views"></a>同步视图
  当您实现多个视图时，文档数据对象负责保持所有视图都与数据同步。 您可以使用中的事件处理接口 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> ，将多个视图与数据同步。

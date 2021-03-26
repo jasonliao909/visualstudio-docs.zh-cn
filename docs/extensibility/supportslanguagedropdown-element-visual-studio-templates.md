@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SupportsLanguageDropDown element [Visual Studio Templates]
 - <SupportsLanguageDropDown> element [Visual Studio Templates]
 ms.assetid: 641197d5-f724-4c06-bc47-2e22dad3fbfb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79141361253df4e1ccaf29ff15332d534ceade84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67bf92c8c447faac2969bde3f208823158663712
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898090"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056072"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
 
@@ -63,7 +63,7 @@ ms.locfileid: "99898090"
 
 ## <a name="remarks"></a>备注
 
- `SupportsLanguageDropDown` 是可选元素。 默认值是 `false`。
+ `SupportsLanguageDropDown` 是可选元素。 默认值为 `false`。
 
  `SupportsLanguageDropDown`元素仅适用于 Web 项模板。
 

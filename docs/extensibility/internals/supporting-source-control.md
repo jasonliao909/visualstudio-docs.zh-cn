@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], supporting
 ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6923eb7a534a4cacf8062883d073ddddc9395e17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56880cab310367a5c4da3af0cf310867a5519495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892549"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080601"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持项目或编辑器的文件签出、签入和其他源代码管理操作。 作为源代码管理客户端， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 旨在与源代码管理包交互，如 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ，后者为动态定义的文件集提供存档、版本控制和控制功能。
@@ -43,7 +43,7 @@ ms.locfileid: "99892549"
 
  描述如何在用户将项目添加到源代码管理系统时注册项目。
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 向环境或源代码管理包指示要在内存中更改或保存文件。
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> 允许项目和层次结构自行向源代码管理注册，并获取有关源代码管理状态的信息。

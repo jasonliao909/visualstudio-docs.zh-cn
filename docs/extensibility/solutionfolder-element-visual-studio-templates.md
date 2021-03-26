@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <SolutionFolder> element [Visual Studio Templates]
 - SolutionFolder element [Visual Studio Templates]
 ms.assetid: 963f0398-fb50-4d8e-879d-d48f8b7c6d80
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 595e82538b15bdced811e55f028b6be2aaa214db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f65607a5411270e7f21e6ec6cdac0c087824b32b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942966"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056332"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素（Visual Studio 模板）
 对多项目模板中的项目进行分组。
@@ -41,9 +41,9 @@ ms.locfileid: "99942966"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Name`|必需的特性。<br /><br /> 解决方案文件夹的名称。|
 

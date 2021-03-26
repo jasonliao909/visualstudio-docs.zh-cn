@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], checking items in
 - source control plug-ins, checking items in
 ms.assetid: d0329fa8-7a8d-4d30-b67b-6f2a97b75a30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2baf2158403e8243632bc7ab77e58ea311b67b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8de88b75b7013b75a35c9e92dc662598185e92b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080536"
 ---
 # <a name="test-area-4-check-in"></a>测试区域 4：签入
 此源代码管理插件测试区域涉及到通过 " **签入** " 命令将更新的项发送到版本存储区。

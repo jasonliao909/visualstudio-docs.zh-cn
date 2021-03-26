@@ -8,17 +8,17 @@ helpviewer_keywords:
 - hierarchies, Visual Studio IDE
 - IDE, hierarchies
 ms.assetid: 0a029a7c-79fd-4b54-bd63-bd0f21aa8d30
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 826ef8f7836aaea0b934bb2a7fa8f568492f0b1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d3fe1487e082907958c1cf8a36f1653efb97c9de
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880003"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056618"
 ---
 # <a name="hierarchies-in-visual-studio"></a>Visual Studio 中的层次结构
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 将项目显示为 *层次结构*。 在 IDE 中，层次结构是节点的树，其中每个节点都有一组关联的属性。 *项目层次结构* 是一个容器，用于保存项目的项、项的关系以及项的关联属性和命令。

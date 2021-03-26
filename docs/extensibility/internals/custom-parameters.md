@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, custom parameters
 - custom parameters
 ms.assetid: ba5c364b-66e6-47ea-9760-a0b70de8f0a0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b4927e63bec93fbe7b6730e131a0893372aa70d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e5d8d9bf78f06dd55a88a2fbd47749224be3949
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902972"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091092"
 ---
 # <a name="custom-parameters"></a>自定义参数
 自定义参数用于在向导启动之后控制向导的操作。 相关的 *.vsz* 文件提供一个用户定义参数数组，这些参数由集成开发环境打包 (IDE) 并在启动向导时作为字符串数组传递到向导。 然后，该向导会分析字符串数组，并使用该信息来控制向导的实际操作。 通过这种方式，向导可以根据 *.vsz* 文件的内容自定义功能。

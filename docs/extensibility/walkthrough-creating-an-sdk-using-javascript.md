@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: a8c89d5d-5b78-4435-817f-c5f25ca6d715
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: db722d945ceb4b3d2cab92b9a11b1e689cd7a9bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b9a3d9e84731fe0c2526b69f60cdda1b1487583
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895188"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080380"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练：使用 JavaScript 创建 SDK
 本演练介绍了如何使用 JavaScript 来创建简单的数学 SDK，作为 Visual Studio 扩展 (VSIX) 。  本演练分为以下几个部分：
@@ -146,7 +146,7 @@ ms.locfileid: "99895188"
 
 2. 在模板类别列表中的 " **JavaScript**" 下，选择 " **Windows 应用商店**"，然后选择 " **空白应用** " 模板。
 
-3. 在 " **名称** " 框中，指定 `ArithmeticUI` 。 选择“确定”  按钮。
+3. 在 " **名称** " 框中，指定 `ArithmeticUI` 。 选择 **“确定”** 按钮。
 
 4. 在 **解决方案资源管理器** 中，打开 **ArithmeticUI** 项目的快捷菜单，然后选择 "**添加**  >  **引用**"。
 

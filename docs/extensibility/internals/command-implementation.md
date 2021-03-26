@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - commands, implementation
 ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2031fd74a10c8725157908eaa906c1963a477526
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93c99b131340d2e53b931619d4e5742d9e19f570
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940106"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091134"
 ---
 # <a name="command-implementation"></a>命令实现
 若要在 VSPackage 中实现命令，您必须执行以下任务：

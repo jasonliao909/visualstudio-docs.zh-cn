@@ -9,17 +9,17 @@ helpviewer_keywords:
 - document properties, custom
 - language services [managed package framework], custom document properties
 ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a9bd5b41d1c04e52d16ecb2fc327e648d9f81aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e154ba5e6ce4c85f597957b1d6704ca341b3c4d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903001"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091131"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>旧版语言服务中的自定义文档属性
 文档属性可以显示在 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性** " 窗口中。 编程语言通常没有与单个源文件关联的属性。 但是，XML 支持影响编码、架构和样式表的文档属性。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Visual Studio, supporting multiple versions
 - VSPackages, side-by-side compatibility
 ms.assetid: 0047aa90-1ed4-40d3-8772-622b2719a4b1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52b8bf1be57e10790d91d4712e56d707621cc7df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d455ebf18ee8817e2adac2fa266592594ca7e6c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056098"
 ---
 # <a name="supporting-multiple-versions-of-visual-studio"></a>支持多个版本的 Visual Studio
 *术语 "并排"* 表示可以在同一台计算机上安装和维护产品的多个版本。 对于 Vspackage，这意味着用户可以在同一台计算机上安装多个 Visual Studio 版本。 但是，你不能将 Vspackage 的并行版本加载到单个版本的 Visual Studio 中。

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - vsix
 - packages
 ms.assetid: e34cfc2c-361c-44f8-9cfe-9f2be229d248
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0127b16438191a7d4f10ebf351b697455f72b16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2a2c9703eb41c1a3e5baa023d8240b56ccbb13b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928024"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056358"
 ---
 # <a name="signing-vsix-packages"></a>对 VSIX 包进行签名
 不需要对扩展程序集进行签名，然后才能在 Visual Studio 中运行，但这是一种很好的做法。
@@ -42,7 +42,7 @@ ms.locfileid: "99928024"
 
 3. 从 VisualStudioExtensibility 搜索 VSIXSignTool 并安装 NuGet 包。
 
-4. 你现在可以从项目的本地包位置中运行 VSIXSignTool。 有关签名方案，请参阅工具的命令行帮助 ( # A0/？ ) 。
+4. 你现在可以从项目的本地包位置中运行 VSIXSignTool。 有关签名方案，请参阅该工具的命令行帮助 (VSIXSignTool.exe/？ ) 。
 
    例如，使用受密码保护的证书文件进行签名：
 

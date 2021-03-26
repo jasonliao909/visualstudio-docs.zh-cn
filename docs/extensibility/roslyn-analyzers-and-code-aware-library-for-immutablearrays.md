@@ -6,17 +6,17 @@ titleSuffix: ''
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0b0afa22-3fca-4d59-908e-352464c1d903
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c41b70cf9a4e4e5ae4b1d1ddd2d2a6f6876b9a96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3bdcc9c35f5acaf9937bd18b0160f9e5a58161c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875518"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060575"
 ---
 # <a name="roslyn-analyzers-and-code-aware-library-for-immutablearrays"></a>用于 ImmutableArrays 的 Roslyn 分析器和代码识别库
 
@@ -66,7 +66,7 @@ Console.WriteLine("b2.Length = { 0}", b2.Length);
 
 从主菜单中，选择 "**文件**" "  >  **新建**  >  **项目**"。 在 " **新建项目** " 对话框中，在左侧导航栏中的 " **c #** 项目" 下，选择 " **扩展性**"，然后在右窗格中选择 " **带有代码修复的分析器** 项目" 模板。 输入名称并确认对话框。
 
-该模板将打开 *DiagnosticAnalyzer.cs* 文件。 选择 "编辑器缓冲区" 选项卡。此文件的分析器类 (从你为该项目提供的名称构成，该项目) 派生自 `DiagnosticAnalyzer` (ROSLYN API 类型) 。 新类具有 `DiagnosticAnalyzerAttribute` 声明分析器与 c # 语言相关的，以便编译器可以发现和加载分析器。
+该模板将打开 *DiagnosticAnalyzer* 文件。 选择 "编辑器缓冲区" 选项卡。此文件的分析器类 (从你为该项目提供的名称构成，该项目) 派生自 `DiagnosticAnalyzer` (ROSLYN API 类型) 。 新类具有 `DiagnosticAnalyzerAttribute` 声明分析器与 c # 语言相关的，以便编译器可以发现和加载分析器。
 
 ```csharp
 [DiagnosticAnalyzer(LanguageNames.CSharp)]

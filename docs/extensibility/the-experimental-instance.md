@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSPackages, experimental builds
 - VSIP, experimental builds
 ms.assetid: ead0df4e-6f88-4b42-9297-581b7902f050
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 728913596ce8c3947756906dffb144eecd3d71ca
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aefac4efc706d195d8471952da3914d35d27ddc2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895266"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055877"
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了保护你的 Visual Studio 开发环境不受未经测试的应用程序的可能更改，VSSDK 提供了一个试验空间，你可以使用它来试验。 您可以使用 Visual Studio 照常开发新应用程序，但使用此实验实例来运行它们。

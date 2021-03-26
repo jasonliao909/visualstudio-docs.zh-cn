@@ -8,17 +8,17 @@ helpviewer_keywords:
 - setup, VSPackages
 - launch conditions
 ms.assetid: 0ba94acf-bf0b-4bb3-8cca-aaac1b5d6737
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20287ba123c5736c9eb7077622623f4a739bde5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffb00ca42376f8b7c150552c862bba7a24a5c1fb
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963466"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056761"
 ---
 # <a name="detect-system-requirements"></a>检测系统要求
 除非安装了 Visual Studio，否则 VSPackage 无法正常工作。 使用 Microsoft Windows Installer 管理 VSPackage 的安装时，可以配置安装程序以检测是否安装了 Visual Studio。 你还可以将其配置为检查系统中是否有其他要求，例如 Windows 的特定版本或特定数量的 RAM。
@@ -26,7 +26,7 @@ ms.locfileid: "99963466"
 ## <a name="detect-visual-studio-editions"></a>检测 Visual Studio 版本
  若要确定是否安装了 Visual Studio 的版本，请验证 " **安装** " 注册表项的值是否 *(REG_DWORD* 相应文件夹中的) 1，如下表所示。 请注意，有一个 Visual Studio 版本的层次结构：
 
-1. 企业
+1. Enterprise
 
 2. Professional
 
@@ -37,7 +37,7 @@ ms.locfileid: "99963466"
 > [!NOTE]
 > 在64位版本的注册表编辑器中，32位密钥显示在 " **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\\**" 下。 Visual Studio 项位于 **HKEY_LOCAL_MACHINE\SOFTWARE\Wow6432Node\Microsoft\DevDiv\vs\Servicing\\**。
 
-|Products|键|
+|产品|密钥|
 |-------------|---------|
 |Visual Studio Enterprise 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\enterprise|
 |Visual Studio Professional 2015|HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\DevDiv\vs\Servicing\14.0\professional|
