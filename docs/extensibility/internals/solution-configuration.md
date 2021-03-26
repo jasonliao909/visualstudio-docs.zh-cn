@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - solution configurations
 ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99a0de44d5e7ac240187c929a8134ab47c7de55c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910981"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080783"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级属性。 它们定向 **开始** (F5) 键和 **生成** 命令的行为。 默认情况下，这些命令生成并启动调试配置。 这两个命令都在解决方案配置的上下文中执行。 这意味着，用户可能希望按 F5 启动并生成通过设置配置的任何活动解决方案。 环境旨在针对解决方案而不是在生成和运行时进行优化。
@@ -47,7 +47,7 @@ ms.locfileid: "99910981"
 
    如果项目不支持平台，则该项目的 "平台" 列将显示 "无" 且被禁用。
 
-- 生成
+- 构建
 
    指定项目是否由当前解决方案配置生成。 如果未选择的项目包含任何项目依赖项，则将不生成这些项目。 在调试、运行、打包和部署解决方案时，仍未选择要生成的项目。
 

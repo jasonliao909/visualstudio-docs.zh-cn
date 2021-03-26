@@ -8,17 +8,17 @@ helpviewer_keywords:
 - project configurations
 - configuration options, about configuration options
 ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa018d340e016ba5c9f424f705599a150ecdc818
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad30e3f7b91e8a76715f66d9f6701597f3830bd6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884684"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057125"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以支持可生成、调试、运行和/或部署的多个配置。 配置是用命名的属性集（通常是编译器开关和文件位置）描述的生成类型。 默认情况下，新的解决方案包含两个配置： " *调试* " 和 " *发布*"。 可以使用默认设置应用这些配置，或修改这些配置以满足特定的解决方案和/或项目要求。 可以通过两种方式生成某些包：作为 ActiveX 编辑器或就地组件。 但项目不需要支持多个配置。 如果只有一个配置可用，则该配置将映射到所有解决方案配置中。
@@ -35,7 +35,7 @@ ms.locfileid: "99884684"
 |------------------------|----------------------|----------------------|
 |*调试*|\<Debug Win32 settings>|\<Debug Win64 settings>|
 |*版本*|\<Release Win32 settings>|\<Release Win64 settings>|
-|*Myconfig.xml*|不可用|\<MyConfig Win64 settings>|
+|*Myconfig.xml*|不适用|\<MyConfig Win64 settings>|
 
 > [!NOTE]
 > 不能创建排除 Win32 平台的 *myconfig.xml* 解决方案配置，除非目标项目不支持 win32。

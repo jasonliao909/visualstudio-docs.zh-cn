@@ -11,17 +11,17 @@ helpviewer_keywords:
 - createexpinstance
 - createexpinst
 ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7959c0047fee87c92e5359b4f8f2918a7e9f27de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884580"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056982"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
 使用 **CreateExpInstance** 实用工具可以创建、重置或删除 Visual Studio 的实验实例。 您可以使用实验实例来调试和测试 Visual Studio 扩展，而无需更改基础产品。
@@ -32,7 +32,7 @@ ms.locfileid: "99884580"
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
  **/Create** 创建实验实例。
 
  **/Reset** 删除实验实例，然后创建一个新实例。

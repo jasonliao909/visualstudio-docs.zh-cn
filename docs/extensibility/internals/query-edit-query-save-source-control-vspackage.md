@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Query Edit Query Save events
 - source control packages, Query Edit Query Save events
 ms.assetid: c360d2ad-fe42-4d65-899d-d1588cc8a322
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e320d6f7b6126736719eb2a428d47a39a61730ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9295644a07a1840cd4874b8bfff298ad9d46c928
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837263"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060908"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查询编辑查询保存（源代码管理 VSPackage）
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器可以广播查询编辑查询保存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源代码管理存根实现 QEQS 服务，因此，它是 QEQS 事件的接收方。 然后，将这些事件委托给当前处于活动状态的源代码管理 VSPackage。 活动源代码管理 VSPackage 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 及其方法。 `IVsQueryEditQuerySave2`通常，在首次编辑文档之前和在保存文档之前立即调用接口的方法。

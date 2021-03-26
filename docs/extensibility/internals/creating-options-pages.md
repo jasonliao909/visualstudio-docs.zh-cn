@@ -8,17 +8,17 @@ helpviewer_keywords:
 - managed package framework, creating Tools Options pages
 - Tools Options pages [Visual Studio SDK], creating using managed package framework
 ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b01133e1f7daada2d9e2778c3966ccd66a81fd94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e7513617ab4ee4a051dd48cd110ecb2c5e22495
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903167"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056827"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 托管包框架中， <xref:Microsoft.VisualStudio.Shell.DialogPage> 通过在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] "**工具**" 菜单下添加 "**选项**" 页，从派生的类扩展 IDE。

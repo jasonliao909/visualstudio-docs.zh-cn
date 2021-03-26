@@ -10,17 +10,17 @@ helpviewer_keywords:
 - pkgdef
 - createpkgdef
 ms.assetid: c745cb76-47a6-49ff-9eed-16af0f748e35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9822319a74d1374ef2a88d4f9231e6fd86b1e5f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884528"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056878"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
 将 Visual Studio 扩展的 .dll 文件作为参数，并创建 *.pkgdef* 文件以伴随 *.dll* 文件。 *.Pkgdef* 文件包含在安装扩展后将写入系统注册表的所有信息。
@@ -34,7 +34,7 @@ ms.locfileid: "99884528"
 CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
-## <a name="arguments"></a>自变量
+## <a name="arguments"></a>参数
 **/out = &lt; FileName&gt;**\
 必需。 将 *.pkgdef* 输出文件的名称设置为 &lt; FileName &gt; 。
 

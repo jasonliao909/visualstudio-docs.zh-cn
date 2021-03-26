@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 620d7dcd-d462-475e-a449-fbfa06ff12c5
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e7b2c8d5f194287f0b654184ddd8716f248ca36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c53191c5f6e02c0b37d29f89a65119f1edab92ea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895747"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063313"
 ---
 # <a name="microsoft-help-viewer-sdk"></a>Microsoft Help Viewer SDK
 
@@ -544,8 +544,8 @@ branding.js 文件包含 Visual Studio 帮助查看器品牌元素使用的 Java
 ||CopyToClipboard||
 |CollapsibleArea|addToCollapsibleControlSet|将所有可折叠控件对象写入列表中。|
 ||CA_Click|根据可折叠区域的状态，定义要显示的图像和文本|
-|徽标的对比度支持|isBlackBackground ( # A1|调用以确定背景是否为黑色。  仅在高对比度模式下才准确。|
-||isHighContrast ( # A1|使用彩色范围检测高对比度模式|
+|徽标的对比度支持|isBlackBackground () |调用以确定背景是否为黑色。  仅在高对比度模式下才准确。|
+||isHighContrast () |使用彩色范围检测高对比度模式|
 ||onHighContrast (黑色) |检测到高对比度时调用|
 |.LST 功能|||
 ||addToLanSpecTextIdSet (id) ||
@@ -565,7 +565,7 @@ branding.js 文件包含 Visual Studio 帮助查看器品牌元素使用的 Java
 
 品牌包包含一组 HTM 文件，这些文件支持用于传达关键信息以帮助内容用户的方案，例如，主页包含描述安装了哪些内容集的部分，以及在本地主题集中找不到主题的页面。 每个产品都可以修改这些 HTM 文件。  ISO Shell 供应商能够采用默认的品牌包，并更改这些页面的行为和内容以满足他们的需要。  这些文件引用各自的品牌包，以便品牌标记获取 branding.xml 文件中的相应内容。
 
-|**File**|**使用**|**显示的内容源**|
+|**文件**|**使用**|**显示的内容源**|
 |-|-|-|
 |homepage.htm|此页面显示当前已安装的内容，以及任何其他适用于用户内容的消息。  此文件具有附加的元数据属性 "Microsoft.Help.Id" content = "-1"，该属性将此内容置于本地内容目录的顶部。||
 ||<META_HOME_PAGE_TITLE_ADD/>|Branding.xml、标记 \<HomePageTitle>|
@@ -599,7 +599,7 @@ Visual Studio 帮助查看器署名包包含两个 css 文件，以支持一致�
 
 Visual Studio 内容显示 Visual Studio 徽标和其他图形。  Visual Studio 帮助查看器署名包中图形文件的完整列表如下所示。
 
-|**File**|**使用**|**示例**|
+|**文件**|**使用**|**示例**|
 |-|-|-|
 |clear.gif|用于呈现可折叠区域||
 |footer_slice.gif|页脚显示||
@@ -700,7 +700,7 @@ Visual Studio 内容显示 Visual Studio 徽标和其他图形。  Visual Studio
 
 本演练演示如何将帮助内容纳入 Visual Studio Shell 应用程序，然后将其部署。
 
-**惠?**
+**要求**
 
 1. [!INCLUDE[vs_dev12](../../extensibility/includes/vs_dev12_md.md)]
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - post-install commands
 ms.assetid: c9601f2e-2c6e-4da9-9a6e-e707319b39e2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: deca5b39701fd073b3191cf7a24d83ccf1e08794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef557c0c679fad0dff25a51a8529270e4bd7ced2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884723"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057138"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果通过 *.msi* 文件部署扩展，则必须在安装过程中运行 **Devenv/Setup** ，Visual Studio 才能发现扩展。
@@ -39,7 +39,7 @@ ms.locfileid: "99884723"
 
 ### <a name="appsearch-table-rows-for-corresponding-reglocator-table-rows"></a>对应 RegLocator 表行的 AppSearch 表行
 
-|属性|签名|
+|properties|签名|
 |--------------|-----------------|
 |DEVENV_EXE_2002|RL_DevenvExe_2002|
 |DEVENV_EXE_2003|RL_DevenvExe_2003|
@@ -76,7 +76,7 @@ ms.locfileid: "99884723"
 
 ### <a name="installexecutesequence-table-to-schedule-the-devenvexe-custom-actions"></a>用于计划 devenv.exe 自定义操作的 InstallExecuteSequence 表
 
-|操作|条件|序列|
+|操作|天气条件|序列|
 |------------|---------------|--------------|
 |CA_RunDevenv2002|DEVENV_EXE_2002|6602|
 |CA_RunDevenv2003|DEVENV_EXE_2003|6603|

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - code snippets, supporting in language services [managed package framework]
 - language services [managed package framework], supporting code snippets
 ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16f0df8a21621b93655935b3cfa27a4b62df63ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888142"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080757"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码段是插入到源文件中的代码片段。 代码段本身是一个基于 XML 的模板，其中包含一组字段。 在插入代码段后，这些字段将突出显示，并且可能会有不同的值，具体取决于代码段插入到的上下文。 在插入代码段后，语言服务可以立即设置代码段的格式。
