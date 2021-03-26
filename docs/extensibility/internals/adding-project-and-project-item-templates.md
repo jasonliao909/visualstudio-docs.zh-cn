@@ -8,17 +8,17 @@ helpviewer_keywords:
 - projects [Visual Studio SDK], adding
 - project items [Visual Studio], adding
 ms.assetid: 8c59217f-56e5-4540-a73b-cd10de189373
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ff54e24408577ba8bfbf553a5c641eab2d15814
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2c10b310569a412025fd114f7818734106bc18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906228"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079054"
 ---
 # <a name="add-project-and-project-item-templates"></a>添加项目和项目项模板
 创建自己的项目类型时，必须通过使用标准 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) "对话框提供对添加新项目和项目项的支持。 以下主题介绍添加项目和项目项的不同方法。

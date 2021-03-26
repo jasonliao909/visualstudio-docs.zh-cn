@@ -10,17 +10,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, Extern
 - Extern element (VSCT XML schema)
 ms.assetid: db6c3ddd-a1ba-450a-897a-bb568a5377fc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8892de377d2383e5aed3ec7824616d626bc5164f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862091"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074985"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素在编译时 *引用 ()* 文件与 *.vsct* 文件合并的任何外部标头。 要合并的文件必须位于 .VSCT 编译器提供的包含路径上，或由 [include 元素](../extensibility/include-element.md)引用。 这些文件可以是其他 *.vsct* 文件或 c + + 头文件。
@@ -40,10 +40,10 @@ Extern 元素在编译时 *引用 ()* 文件与 *.vsct* 文件合并的任何外
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |href|必需。 标头文件的路径：<br /><br /> href = "stdidcmd"|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 |语言|可选。 [\<Strings>](../extensibility/strings-element.md)命令表中所有元素的默认语言：<br /><br /> language = "en-us"|
 
 ### <a name="child-elements"></a>子元素

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - editors [Visual Studio SDK], custom - document data and document view
 ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89f2903b2ec1308692f629c40af06f89706a427b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391bec513f1f6d32d7ff2f87d70abdbf491ab8be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968289"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091235"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自定义编辑器中的文档数据和文档视图
 自定义编辑器由两部分组成：文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据。 同样，文档视图对象 (或 "视图" ) 表示一个或多个要在其中显示文档数据对象的窗口。

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - CommandPlacements element (VSCT XML schema)
 - VSCT XML schema elements, CommandPlacements
 ms.assetid: 2cbd7ac8-c55a-43d8-a26d-713b3d790016
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77c7ae72f9c4c776dd8535e54112dc43833705cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 73d97e32314de0b01bf26025c1fee412de7d9795
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876103"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089610"
 ---
 # <a name="commandplacement-element"></a>CommandPlacement 元素
 CommandPlacement 元素允许在多个组或菜单中包含按钮、组和菜单。 使用 CommandPlacement 元素时，无需完全重新定义这些项即可修改用户界面的外观。
@@ -38,12 +38,12 @@ CommandPlacement 元素允许在多个组或菜单中包含按钮、组和菜单
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。 在 [符号元素](../extensibility/symbols-element.md)中定义的命令集的 guid。|
+|GUID|必需。 在 [符号元素](../extensibility/symbols-element.md)中定义的命令集的 guid。|
 |id|必需。 要放置的菜单、组或命令的 id，如中所定义 `Symbols Element` 。|
 |priority|必需。 确定项在其父元素中的可视位置。|
-|条件|可选。 请参阅 [条件 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件 Aattributes](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 

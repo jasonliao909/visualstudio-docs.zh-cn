@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 07/31/2017
 ms.topic: conceptual
 ms.assetid: 0e384ea1-4d9e-4307-8884-6e183900732c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bf32f4cd32ad6e53c1db33f75f68559e84414436
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dc98e3c2717b14ac1933e5b41269af1efb8e932f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942901"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089909"
 ---
 # <a name="colors-and-styling-for-visual-studio"></a>Visual Studio 的颜色和样式
 
@@ -362,8 +362,8 @@ VSPackage 可以通过自定义类别和 "字体和颜色" 属性页上的 "显�
 
 | 名称 | 类型 | 数据 | 说明 |
 | --- | --- | --- | --- |
-| Category | REG_SZ | GUID | 为标识类别而创建的 GUID |
-| Package | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
+| 类别 | REG_SZ | GUID | 为标识类别而创建的 GUID |
+| 程序包 | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
 
  注册表中指定的服务必须为相应的类别提供 [IVsFontAndColorDefaults](/dotnet/api/microsoft.visualstudio.shell.interop.ivsfontandcolordefaults) 的实现。
 
@@ -375,8 +375,8 @@ VSPackage 可以通过自定义类别和 "字体和颜色" 属性页上的 "显�
 
 | 名称 | 类型 | 数据 | 说明 |
 |--- | --- | --- | --- |
-| Category | REG_SZ | GUID | 为标识类别而创建的 GUID |
-| Package | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
+| 类别 | REG_SZ | GUID | 为标识类别而创建的 GUID |
+| 程序包 | REG_SZ | GUID | 支持该类别的 VSPackage 服务的 GUID |
 
 注册表中指定的服务必须 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFontAndColorGroup> 为相应组提供的实现。
 

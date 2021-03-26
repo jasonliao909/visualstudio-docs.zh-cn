@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], breakpoint unbound events
 - breakpoint bound events
 ms.assetid: 61bf00b2-8293-49d3-b919-1efb0dec9151
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97ac7dc9afbd3b740c95a7e76a30836e938eaeaf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6e1a6acdee89be293ab4a6dc72a3d4fd4336d88
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968497"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091404"
 ---
 # <a name="when-a-breakpoint-binds-or-becomes-unbound"></a>当断点绑定或变为未绑定断点时
 当对 [IDebugPendingBreakpoint2：： CanBind](../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md) 方法进行调用时，如果无法绑定断点，则断点的绑定时间和创建时间不同。

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - tutorials
 - visual studio package
 ms.assetid: f97104c8-2bcb-45c7-a3c9-85abeda8df98
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ada5870bc06465b97bdf767eb64910f62e15f0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de79662494a3228dd301e8d08480c6aa0a0192a2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944903"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089207"
 ---
 # <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 
@@ -36,13 +36,13 @@ ms.locfileid: "99944903"
 
 ::: moniker range="vs-2017"
 
-2. 当项目打开时，添加一个名为 **FirstCommand** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstCommand.cs*。
+2. 当项目打开时，添加一个名为 **FirstCommand** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstCommand*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 当项目打开时，添加一个名为 **FirstCommand** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstCommand.cs*。
+2. 当项目打开时，添加一个名为 **FirstCommand** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstCommand*。
 
 ::: moniker-end
 
@@ -62,13 +62,13 @@ ms.locfileid: "99944903"
 
 ::: moniker-end
 
-现在，请在实验实例中中转到 " **工具** " 菜单。 应会看到 " **调用 FirstCommand** " 命令。 此时，该命令会显示一个消息框，其中显示 **FirstCommand ( # B1 中** 的 "FirstMenuCommand"。 在下一部分中，我们将了解如何实际从此命令启动记事本。
+现在，请在实验实例中中转到 " **工具** " 菜单。 应会看到 " **调用 FirstCommand** " 命令。 此时，该命令会显示一个消息框，其中显示了 **FirstCommand 内部的 FirstMenuCommand ()**。 在下一部分中，我们将了解如何实际从此命令启动记事本。
 
 ## <a name="change-the-menu-command-handler"></a>更改菜单命令处理程序
 
 现在，让我们更新命令处理程序以启动记事本。
 
-1. 停止调试并返回到 Visual Studio 的工作实例。 打开 *FirstCommand.cs* 文件并添加以下 using 语句：
+1. 停止调试并返回到 Visual Studio 的工作实例。 打开 *FirstCommand* 文件并添加以下 using 语句：
 
     ```csharp
     using System.Diagnostics;

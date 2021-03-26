@@ -9,17 +9,17 @@ helpviewer_keywords:
 - menu commands, changing appearance
 - menus, changing command appearance
 ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1514fb9409805df91a16678a5cce67ee1f66ab9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b6911d865b253ff82ffcc6c4911e0989f109f28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911234"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089818"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 可以通过更改命令的外观向用户提供反馈。 例如，你可能希望某个命令在不可用时的外观有所不同。 您可以使命令可用或不可用、隐藏或显示它们，或在菜单中选中或取消选中它们。
@@ -38,19 +38,19 @@ ms.locfileid: "99911234"
 
 1. 按照 [更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md) 中的说明创建一个名为的菜单项 `New Text` 。
 
-2. 在 *ChangeMenuText.cs* 文件中，添加以下 using 语句：
+2. 在 *ChangeMenuText* 文件中，添加以下 using 语句：
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. 在 *ChangeMenuTextPackageGuids.cs* 文件中，添加以下行：
+3. 在 *ChangeMenuTextPackageGuids* 文件中，添加以下行：
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. 在 *ChangeMenuText.cs* 文件中，将 ShowMessageBox 方法中的代码替换为以下代码：
+4. 在 *ChangeMenuText* 文件中，将 ShowMessageBox 方法中的代码替换为以下代码：
 
     ```csharp
     private void Execute(object sender, EventArgs e)
@@ -82,7 +82,7 @@ ms.locfileid: "99911234"
 
 6. 生成项目并启动调试。 应显示 Visual Studio 的实验实例。
 
-7. 在 " **工具** " 菜单上，单击 " **调用 ChangeMenuText** " 命令。 此时，命令名称会 **调用 ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand ( # B1**。
+7. 在 " **工具** " 菜单上，单击 " **调用 ChangeMenuText** " 命令。 此时，命令名称会 **调用 ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand ()**。
 
 8. 此时，你应该会看到 " **工具** " 菜单上的 " **新文本**"。 单击 " **新文本**"。 该命令现在应显示为灰色。
 
