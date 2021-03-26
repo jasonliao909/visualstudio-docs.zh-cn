@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Solution Explorer, extending
 - extensibility [Visual Studio], projects and solutions
 ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfe2947d60ad5dde6e2f23b9bed59b09e6abe8ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862117"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075011"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展 **解决方案资源管理器** 筛选器功能以显示或隐藏不同文件。 例如，可以创建一个筛选器，该筛选器仅显示 **解决方案资源管理器** 中的 c # 类工厂文件，如本演练中所示。
@@ -60,14 +60,14 @@ ms.locfileid: "99862117"
 
 ### <a name="add-the-filter-code"></a>添加筛选器代码
 
-1. 将一些 Guid 添加到 *FileFilterPackageGuids.cs* 文件：
+1. 将一些 Guid 添加到 *FileFilterPackageGuids* 文件：
 
     ```csharp
     public const string guidFileFilterPackageCmdSetString = "00000000-0000-0000-0000-00000000"; // get your GUID from the .vsct file
     public const int FileFilterId = 0x100;
     ```
 
-2. 将类文件添加到名为 *FileNameFilter.cs* 的 FileFilter 项目。
+2. 向 FileFilter 项目添加一个名为 *FileNameFilter* 的类文件。
 
 3. 将空的命名空间和空类替换为以下代码。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99862117"
 
     ```
 
-4. 在 *FileFilter.cs* 中，删除来自 FileFilter 构造函数的命令放置和处理代码。 结果应如下所示：
+4. 在 *filefilter* 中，删除来自 filefilter 构造函数的命令放置和处理代码。 结果应如下所示：
 
     ```csharp
     private FileFilter(Package package)
@@ -176,7 +176,7 @@ ms.locfileid: "99862117"
 
      删除 `ShowMessageBox()` 方法。
 
-5. 在 *FileFilterPackage.cs* 中，将方法中的代码替换 `Initialize()` 为以下代码：
+5. 在 *FileFilterPackage* 中，将方法中的代码替换 `Initialize()` 为以下代码：
 
     ```csharp
     protected override void Initialize()

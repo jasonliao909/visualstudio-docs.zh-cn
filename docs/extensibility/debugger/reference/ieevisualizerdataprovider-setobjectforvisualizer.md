@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEEVisualizerDataProvider::SetObjectForVisualizer method
 ms.assetid: 40dad2be-57ff-4f74-9d82-c48039c125c4
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df5cfd2acef1a2214d4692a49c742c26cd420ffa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 2e0a59c10293d5d8cc13d46b625a7b43136cb71b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227224"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091794"
 ---
 # <a name="ieevisualizerdataprovidersetobjectforvisualizer"></a>IEEVisualizerDataProvider::SetObjectForVisualizer
 此方法更改可视化工具表示的对象。
@@ -60,6 +60,6 @@ int SetObjectForVisualizer(
 ## <a name="remarks"></a>备注
  由实施者决定如何返回错误信息。 但是，某些调用方可能仅查看是否返回了异常对象以知道是否有错误，因此，如果出现错误，此方法应始终返回异常对象。 如果调用方想要使用错误字符串，则还应提供它。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

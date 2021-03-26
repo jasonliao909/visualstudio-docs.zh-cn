@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3::DisableENC
 ms.assetid: cffdbdac-4d76-4aeb-aa55-5d0410db99f1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ffedebd14f720e006c0bec2044afe80901762b52
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7f9c4a1e05cf7d4a98489daf0c2ee3377d54f417
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102158483"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105081615"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
 此方法显式禁用此进程上的 "编辑并继续" (以及它包含的所有程序) 。 自定义端口供应商应该总是返回 `E_NOTIMPL` 。

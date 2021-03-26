@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control packages, about source control packages
 ms.assetid: 60b3326e-e7e2-4729-95fc-b682e7ad5c99
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 80c86a8ab40b74d1b8f2838e3bf4359af41b0fc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89e2ea0db7f162c70261ab2ba9aab187f9c11bd0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090884"
 ---
 # <a name="determine-whether-to-implement-a-source-control-vspackage"></a>确定是否实现源代码管理 VSPackage
 
@@ -31,7 +31,7 @@ ms.locfileid: "99963427"
 
  如果要实现一个源代码管理解决方案，该解决方案提供一个使用源代码管理插件 API 未充分捕获的丰富源代码管理模型，则可以将源代码管理包视为集成路径。 这尤其适用于替换源代码管理适配器包 (它与源代码管理插件通信，并提供自己的基本源代码管理 UI) ，以便能够以自定义方式处理源代码管理事件。 如果你已经有一个令人满意的源代码管理 UI，并且想要在中保留该体验 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，则源代码管理包选项仅允许你这样做。 源代码管理包不是泛型包，而是专门为与 IDE 一起使用而设计的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 如果要实现一个源代码管理解决方案，该解决方案可为源代码管理逻辑和 UI 提供灵活性和更丰富的控制，您可能更倾向于源代码管理包集成路由。 可以执行以下操作：
+ 如果要实现一个源代码管理解决方案，该解决方案可为源代码管理逻辑和 UI 提供灵活性和更丰富的控制，您可能更倾向于源代码管理包集成路由。 你可以：
 
 1. 注册自己的源代码管理 VSPackage (参阅 [注册和选择](../../extensibility/internals/registration-and-selection-source-control-vspackage.md)) 。
 
