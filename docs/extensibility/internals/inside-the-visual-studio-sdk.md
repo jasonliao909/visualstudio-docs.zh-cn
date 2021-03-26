@@ -9,17 +9,17 @@ helpviewer_keywords:
 - Visual Studio integration SDK roadmap
 - integration roadmap, Visual Studio SDK
 ms.assetid: 9118eaa4-0453-4dc5-9e16-c7062d254869
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c2d67c3d9f998c8dd5192363cf8ff8fae2ce4b57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11ee862f43ead3605d8e07dc159e18da13413b8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839854"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074699"
 ---
 # <a name="inside-the-visual-studio-sdk"></a>深入探究 Visual Studio SDK
 
@@ -64,7 +64,7 @@ ms.locfileid: "99839854"
 
  某些工具窗口停靠在单个窗格上，该窗格显示 "解决方案资源管理器工具" 窗口并隐藏其他工具窗口，但通过单击 "选项卡" 使其可用。 该图显示了两个其他工具窗口，即 " **错误列表** " 和 " **输出** " 窗口，它们停靠在一个窗格中。
 
- 还显示了主文档窗格，其中显示了多个编辑器窗口。 尽管工具窗口通常只包含一个实例 (例如，您只能打开一个 **解决方案资源管理器**) ，编辑器窗口可以有多个实例，每个实例用于编辑单独的文档，但所有这些实例都停靠在同一窗格中。 图片显示一个文档窗格，其中包含两个编辑器窗口，一个窗体设计器窗口。 可以通过单击 "选项卡" 来使用文档窗格中的所有窗口，但包含 EditorPane.cs 文件的编辑器窗口是可见和活动的。
+ 还显示了主文档窗格，其中显示了多个编辑器窗口。 尽管工具窗口通常只包含一个实例 (例如，您只能打开一个 **解决方案资源管理器**) ，编辑器窗口可以有多个实例，每个实例用于编辑单独的文档，但所有这些实例都停靠在同一窗格中。 图片显示一个文档窗格，其中包含两个编辑器窗口，一个窗体设计器窗口。 可以通过单击 "选项卡" 来使用文档窗格中的所有窗口，但包含 EditorPane 文件的编辑器窗口是可见和活动的。
 
  扩展 Visual Studio 时，你可以创建工具窗口，使 Visual Studio 用户能够与你的扩展交互。 还可以创建自己的编辑器，使 Visual Studio 用户可以编辑文档。 由于你的工具窗口和编辑器将集成到 Visual Studio 中，因此你不必对其进行编程以使其正确停靠或显示在选项卡上。 在 Visual Studio 中正确注册后，它们将在 Visual Studio 中自动具有工具窗口和文档窗口的典型功能。 有关详细信息，请参阅 [扩展和自定义工具窗口](../../extensibility/extending-and-customizing-tool-windows.md)。
 

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - SccStatus enumerator
 - file status code enumerator
 ms.assetid: 5c37876b-c83c-4ca1-837b-57cd465a879a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 981e4e4561db7bc7fb8a9f0ce92522d34e4b34fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874043"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074946"
 ---
 # <a name="file-status-code-enumerator"></a>文件状态代码枚举器
 `SccStatus`枚举器包含指定源代码管理系统中文件状态的命名常量值。 此枚举由 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 和 `POPLISTFUNC` 回调函数使用 (请参阅 [POPLISTFUNC](../extensibility/poplistfunc.md) 了解详细信息) 。

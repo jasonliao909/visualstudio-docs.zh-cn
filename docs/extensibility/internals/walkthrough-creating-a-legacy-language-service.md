@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], creating
 ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 61f4dfd8068cc44fca97eb5e07ddbf62b21ee1f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899910"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074270"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管包框架 (MPF) 语言类实现中的语言服务 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 非常简单。 你需要一个 VSPackage 来托管语言服务、语言服务本身和语言分析器。
@@ -44,11 +44,11 @@ ms.locfileid: "99899910"
 
     您可以使用任何所需的名称。 此处详述的这些过程假定 MyLanguagePackage 为名称。
 
-3. 选择 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作为语言和选项以生成新的密钥文件。 单击 **“下一步”** 。
+3. 选择 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作为语言和选项以生成新的密钥文件。 单击“下一步”  。
 
-4. 输入相应的公司和包信息。 单击 **“下一步”** 。
+4. 输入相应的公司和包信息。 单击“下一步”  。
 
-5. 选择 " **菜单命令**"。 单击 **“下一步”** 。
+5. 选择 " **菜单命令**"。 单击“下一步”  。
 
     如果不打算支持代码片段，只需单击 "完成"，然后忽略下一步。
 
@@ -68,11 +68,11 @@ ms.locfileid: "99899910"
 
 4. 确保在 "模板" 列表中选择 " **类** "。
 
-5. 输入 **MyLanguageService.cs** 作为类文件的名称，然后单击 " **添加**"。
+5. 输入 **MyLanguageService** 类文件的名称，然后单击 " **添加**"。
 
      您可以使用任何所需的名称。 此处详述的这些过程假定 `MyLanguageService` 为名称。
 
-6. 在 MyLanguageService.cs 文件中，添加以下 `using` 指令。
+6. 在 MyLanguageService 文件中，添加以下 `using` 指令。
 
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
@@ -88,7 +88,7 @@ ms.locfileid: "99899910"
 
 ### <a name="register-the-language-service"></a>注册语言服务
 
-1. 打开 MyLanguagePackagePackage.cs 文件，添加以下 `using` 指令：
+1. 打开 MyLanguagePackagePackage 文件并添加以下 `using` 指令：
 
      [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
      [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]

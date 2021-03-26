@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Windows Installer, VSPackages
 - VSPackages, Windows Installer basics
 ms.assetid: 497e479b-add8-4644-870a-917f15306b97
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4081c79b7492e369e19187a099bf975275cb371c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe009fa3ee8c8b9f2d15d3de4ee1fd067647c925
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869487"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074283"
 ---
 # <a name="windows-installer-basics"></a>Windows Installer 基本知识
 Windows Installer 将在用户计算机上安装和卸载应用程序或软件产品，以 Windows Installer 组件的单元执行这些任务， (有时称为 WICs 或只是组件) 。 GUID 标识每个 WIC，这是使用 Windows Installer 安装程序的基本安装和引用计数。

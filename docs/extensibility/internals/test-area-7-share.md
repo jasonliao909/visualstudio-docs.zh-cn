@@ -8,17 +8,17 @@ helpviewer_keywords:
 - source control [Visual Studio SDK], sharing items
 - source control plug-ins, sharing items
 ms.assetid: 6ec4780a-bda4-4327-bb3e-c6c9e7eabf35
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5c006c5f4746f83e571475d93bedc452c7c23c75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: facfb48fbe02ff374c594f1ddadf0710c1f989d6
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888129"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074348"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 此测试区域涉及到通过 **Share** 命令在位置之间共享项。

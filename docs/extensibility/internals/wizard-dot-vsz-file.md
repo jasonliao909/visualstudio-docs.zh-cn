@@ -9,17 +9,17 @@ helpviewer_keywords:
 - vsz files
 - wizards, files
 ms.assetid: 72e1d0f3-eef1-455e-b803-96827f030f50
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fa9b9e06ccb20e6a2859770c0637fc85422fd0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2663a6b05780b16d05b419c00aba904ded848796
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935854"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074231"
 ---
 # <a name="wizard-vsz-file"></a>向导 (.Vsz) 文件
 
@@ -38,7 +38,7 @@ Param="WIZARDUI = FALSE"
 
 下面是 .vsz 文件中的部分。
 
-|部分|说明|
+|组成部分|说明|
 |----------|-----------------|
 |VSWizard|文件中的第一个参数是模板文件格式的版本号。 此版本号必须是6.0、7.0、7.1 或8.0。 其他数字无法启动并导致无效格式错误。|
 |向导|此字段包含向导的 OLE ProgID，或者是 IDE cocreated 的向导 CLSID 的 GUID 字符串表示形式。|
