@@ -9,17 +9,17 @@ helpviewer_keywords:
 - upgrading applications, strategies
 - VSPackages, upgrade support
 ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b399feb80da56ef70b18a1b11b05c7f6cc3795f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a1da17c4bca485bd32aa6604b350b8af80277670
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883150"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073347"
 ---
 # <a name="upgrading-projects"></a>升级项目
 
@@ -52,7 +52,7 @@ ms.locfileid: "99883150"
 > [!NOTE]
 > 该 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 方法不提供 SVsUpgradeLogger 服务。 可以通过调用来获取此服务 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 。
 
-## <a name="best-practices"></a>最佳方案
+## <a name="best-practices"></a>最佳实践
 
 使用 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 服务检查是否可以在编辑文件之前对其进行编辑，并在保存之前保存文件。 这将帮助你的备份和升级实现处理源代码管理下的项目文件、权限不足的文件等。
 

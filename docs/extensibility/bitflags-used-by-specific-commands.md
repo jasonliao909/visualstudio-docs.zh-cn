@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, bitflags used by specific commands
 ms.assetid: 37969977-6f7d-45c9-ba03-1306ae71f5d1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e018631e24cf7e678072b6b54183fd3c619dc4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41f070d61e547724b3067a9f4a1980d658fc30be
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890326"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097287"
 ---
 # <a name="bitflags-used-by-specific-commands"></a>特定命令使用的 Bitflags
 可以通过在一个值中设置一个或多个位来修改源代码管理插件 API 中许多函数的行为。 这些值称为 bitflags。 此处详细介绍了源代码管理插件 API 使用的各种 bitflags，并按使用它们的函数分组。

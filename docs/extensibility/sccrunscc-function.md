@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRunScc function
 ms.assetid: bbe7c931-b17a-4779-9cf6-59e5f9f0c172
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca492c35ba061072dc9e4b3d0eabc42476bcd8ed
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e78e58eafebd06d1ce7c710a31ce295b49f26340
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221361"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073815"
 ---
 # <a name="sccrunscc-function"></a>SccRunScc 函数
 此函数调用源代码管理工具。
@@ -54,7 +54,7 @@ SCCRTN SccRunScc(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功调用源代码管理工具。|
 |SCC_I_OPERATIONCANCELED|操作已取消。|
@@ -71,7 +71,7 @@ SCCRTN SccRunScc(
 
  当用户从 "**文件** 源控制" 菜单中 **选择 \<Source Control Server> 启动** 时，通常会调用此函数  ->   。 可以通过设置注册表项来始终禁用或甚至隐藏此 " **启动** " 菜单选项。 有关详细信息，请参阅 [如何：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md) 。 仅当 [SccInitialize](../extensibility/sccinitialize-function.md) 返回功能位时才会调用此函数 `SCC_CAP_RUNSCC` 。有关此功能位和其他功能位) 的详细信息，请参阅 [功能标志](../extensibility/capability-flags.md) (。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [如何：安装源代码管理插件](../extensibility/internals/how-to-install-a-source-control-plug-in.md)
 - [功能标志](../extensibility/capability-flags.md)

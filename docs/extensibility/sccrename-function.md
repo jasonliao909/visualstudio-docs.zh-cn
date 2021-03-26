@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRename function
 ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dcfb68518f42e969b7c9d52acfb37723e9774f97
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d9d42e796f1ec2176e9de79ca392aab070581324
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221335"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073828"
 ---
 # <a name="sccrename-function"></a>SccRename 函数
 此函数将重命名源代码管理系统中的文件。
@@ -54,7 +54,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|重命名操作已成功完成。|
 |SCC_E_PROJNOTOPEN|未在源代码管理下打开该项目。|
@@ -68,5 +68,5 @@ SCCRTN SccRename(
 ## <a name="remarks"></a>备注
  此函数可用于重命名文件，或将其从源控制系统中的一个位置移动到另一个位置。 源代码管理插件不应尝试访问磁盘上的文件。 重命名本地文件是 IDE 的责任。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

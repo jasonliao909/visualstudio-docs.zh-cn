@@ -9,17 +9,17 @@ helpviewer_keywords:
 - UI element design [Visual Studio SDK], VSPackages
 - VSPackages, contributing UI elements
 ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fc9e80f549a5bf8cbf151ee224a9f503470a90de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934113"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105086035"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
 VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏和工具窗口）添加到 Visual Studio 的用户界面。
@@ -187,7 +187,7 @@ Combos 在部分中定义 `Combos` 。 每个 `Combo` 元素都表示 IDE 中的
 
 |元素|在命令表的此部分中定义|可以 (作为父项，也可以在节中放置 `CommandPlacements` ，或同时包含这两种) |可能包含被称为父级)  (|
 |-------------| - | - | - |
-|Group|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|菜单、组、项本身|菜单、组和命令|
+|组|[Groups 元素](../../extensibility/groups-element.md)、IDE、其他 vspackage|菜单、组、项本身|菜单、组和命令|
 |菜单|[菜单元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|1到 *n* 组|0到 *n* 组|
 |工具栏|[菜单元素](../../extensibility/menus-element.md)、IDE、其他 vspackage|项本身|0到 *n* 组|
 |菜单项|[按钮元素](../../extensibility/buttons-element.md)、IDE、其他 vspackage|1到 *n* 组，项本身|-0 到 *n* 组|

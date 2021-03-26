@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDiff function
 ms.assetid: d49bc8c5-f631-4153-9d3c-feb3564da305
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f7573cafd8ea06537a7655897f3cc5907448cfa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 151620a81af515bd8cd74938a1006d4a98959dd9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220841"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073984"
 ---
 # <a name="sccdiff-function"></a>SccDiff 函数
 此函数显示 (或选择性地检查) 本地磁盘) 上的当前文件 (与源代码管理系统中上次签入版本之间的差异。
@@ -59,7 +59,7 @@ SCCRTN SccDiff(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|工作副本和服务器版本是相同的。|
 |SCC_I_FILESDIFFERS|工作副本不同于源代码管理下的版本。|
@@ -88,5 +88,5 @@ SCCRTN SccDiff(
 |SCC_DIFF_QD_CHECKSUM|如果受支持，则通过校验和自动比较文件。 如果不支持，将回退到内容的比较。|
 |SCC_DIFF_QD_TIME|如果文件受支持，则以无提示方式对文件进行比较。 如果不支持，将回退到内容的比较。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

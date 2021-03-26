@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, troubleshooting
 - debugging, VSPackages
 ms.assetid: 274673e7-72e7-476f-a263-3411b5b874be
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957488adb36c54355b4fe47577a7cd5b2407864f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1a52e6e659a3841214db5da7a44431b68ea98e7
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893511"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073750"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 下面是你可能会遇到的一些常见问题和解决问题的技巧。
@@ -78,7 +78,7 @@ ms.locfileid: "99893511"
 
      调试的良好起点是构造函数和初始化方法。 您还可以在要计算的区域中设置断点，例如菜单命令。 若要启用断点，必须在调试器下运行。
 
-    1. 在 **“项目”** 菜单上，单击 **“属性”** 。
+    1. 在“项目”菜单上，单击“属性”   。
 
     2. 在 " **属性页** " 对话框中，选择 " **调试** " 选项卡。
 
@@ -113,7 +113,7 @@ ms.locfileid: "99893511"
 
 1. 对于托管代码，请确保引用路径正确。
 
-   1. 在 **“项目”** 菜单上，单击 **“属性”** 。
+   1. 在“项目”菜单上，单击“属性”   。
 
    2. 在 "**属性页**" 对话框中选择 "**引用**" 选项卡，并确保所有路径都是正确的。 或者，您可以使用 **对象浏览器** 浏览引用的对象。
 

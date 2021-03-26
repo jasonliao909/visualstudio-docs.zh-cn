@@ -9,17 +9,17 @@ helpviewer_keywords:
 - IntelliSense, Complete Word
 - Complete Word
 ms.assetid: 0ace5ac3-f9e1-4e6d-add4-42967b1f96a6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3625719987afc94deda314fa61d7a8cc2c1c843
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360778e4dbc89130e8a533640fefb188047fe8ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943363"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074075"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>旧版语言服务中的文字完成
 单词完成填写部分类型的单词上缺少的字符。 如果只有一个可能的完成，则在输入完成字符时将完成单词。 如果部分单词匹配多个可能的完成，则会显示一个可能的完成列表。 完成字符可以是任何不用于标识符的字符。

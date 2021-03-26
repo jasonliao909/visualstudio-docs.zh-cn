@@ -9,18 +9,18 @@ helpviewer_keywords:
 - custom start page
 - start page assembly
 ms.assetid: 5b7997db-af6f-4fa9-a128-bceb42bddaf1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 735e77868b85bdd8f85fb27957602d6759b5b097
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e5305927ceb634c64e52bb64ce57197f1b6be4c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879171"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097599"
 ---
 # <a name="add-user-control-to-the-start-page"></a>将用户控件添加到起始页
 
@@ -108,7 +108,7 @@ ms.locfileid: "99879171"
 
 1. 在 XAML 设计器中，双击添加到控件的 " **设置地址** " 按钮。
 
-    *UserControl1.cs* 文件将在代码编辑器中打开。
+    *UserControl1* 文件将在代码编辑器中打开。
 
 2. 按如下所示填写 SetButton_Click 事件处理程序。
 

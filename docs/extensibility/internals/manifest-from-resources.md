@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65e4b16beefdef765fe52afd9d84e64a767999fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 42bd932b093ae805e8885bc9fc61324c3cadbe30
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839423"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095168"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest from Resources 工具是一个控制台应用程序，它获取) 的图像 ( 资源的列表，并生成一个 imagemanifest 文件，该文件允许将这些图像与 Visual Studio 映像服务一起使用。 此外，此工具可用于将图像添加到现有的 imagemanifest。 此工具可用于将图像的高 DPI 和主题支持添加到 Visual Studio 扩展。 生成的 imagemanifest 文件应包含在中，并部署为 Visual Studio 扩展 () 的一部分。
@@ -27,10 +27,10 @@ Manifest from Resources 工具是一个控制台应用程序，它获取) 的图
 
  **参数**
 
-|**交换机名称**|**备注**|**必需还是可选**|
+|**交换机名称**|**说明**|**必需还是可选**|
 |-|-|-|
-|/resources|以分号分隔的图像或目录的列表。 此列表应始终包含清单中将包含的映像的完整列表。 如果只提供了部分列表，则不包含的项将丢失。<br /><br /> 如果给定的资源文件是图像条，则该工具会将其拆分为单独的映像，然后将每个 subimage 添加到清单中。<br /><br /> 如果图像是 .png 文件，我们建议您将此名称设置为如下格式，以便该工具可以填充图像的正确属性： \<Name> ... \<Width> \<Height>png.|必需|
-|/assembly|托管程序集的名称 (不包括扩展) ，或承载资源的本机程序集的运行时路径 (相对于清单的运行时位置) 。|必需|
+|/resources|以分号分隔的图像或目录的列表。 此列表应始终包含清单中将包含的映像的完整列表。 如果只提供了部分列表，则不包含的项将丢失。<br /><br /> 如果给定的资源文件是图像条，则该工具会将其拆分为单独的映像，然后将每个 subimage 添加到清单中。<br /><br /> 如果图像是 .png 文件，我们建议您将此名称设置为如下格式，以便该工具可以填充图像的正确属性： \<Name> ... \<Width> \<Height>png.|必须|
+|/assembly|托管程序集的名称 (不包括扩展) ，或承载资源的本机程序集的运行时路径 (相对于清单的运行时位置) 。|必须|
 |/manifest|要赋给生成的 imagemanifest 文件的名称。 这还可以包含在其他位置创建文件的绝对或相对路径。 默认名称与程序集名称匹配。<br /><br /> 默认值： \<Current Directory> \\<Assembly \> . imagemanifest|可选|
 |/guidName|要为生成的清单中的所有图像提供 GUID 符号的名称。<br /><br /> 默认值： AssetsGuid|可选|
 |/rootPath|需要在创建托管资源 Uri 之前去掉的根路径。  (此标志用于帮助解决该工具获取错误的相对 URI 路径，从而导致无法加载资源。 ) <br /><br /> 默认值：\<Current Directory>|可选|

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCreateSubProject function
 ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38fb6a18954b0a2f976fad4b24819a08ed868ab6
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 70568c27afb4bdb5794db64322113dffbd824452
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221608"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073997"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数在由参数指定的现有父项目下创建具有给定名称的子项目 `lpParentProjPath` 。
@@ -69,7 +69,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功创建子项目。|
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|
@@ -99,7 +99,7 @@ SCCRTN SccCreateSubProject(
 
  如果注册表项设置为 dword：00000001，则 Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理中的操作的工作方式与 Visual Studio 早期版本中的工作方式相同。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)
 - [SccGetProjPath](../extensibility/sccgetprojpath-function.md)

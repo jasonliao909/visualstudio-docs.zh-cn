@@ -10,17 +10,17 @@ helpviewer_keywords:
 - shortcut menus, adding to tool windows
 - tool windows, adding context menus
 ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a35652c0eacf22a46eed3f3fc64c3bcc0d6d10ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951532"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097612"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具窗口中添加快捷菜单
 本演练将快捷菜单放置在工具窗口中。 快捷菜单是在用户右键单击按钮、文本框或窗口背景时显示的菜单。 快捷菜单上的命令与其他菜单或工具栏上的命令具有相同的行为。 若要支持快捷菜单，请在 *.vsct* 文件中指定它并显示，以响应鼠标右键单击。
@@ -114,7 +114,7 @@ ms.locfileid: "99951532"
     </Buttons>
     ```
 
-5. 在 *ShortcutMenuCommand.cs* 中，添加命令集 GUID、快捷菜单和菜单项的定义。
+5. 在 *ShortcutMenuCommand* 中，添加命令集 GUID、快捷菜单和菜单项的定义。
 
     ```csharp
     public const string guidShortcutMenuPackageCmdSet = "00000000-0000-0000-0000-00000000"; // your GUID will differ
@@ -129,16 +129,16 @@ ms.locfileid: "99951532"
 ## <a name="implementing-the-shortcut-menu"></a>实现快捷菜单
  本部分实现快捷菜单及其命令。
 
-1. 在 *ShortcutMenu.cs* 中，工具窗口可以获取菜单命令服务，但它包含的控件不能。 以下步骤演示如何使 menu 命令服务可用于用户控件。
+1. 在 *快捷* 菜单中，工具窗口可以获取菜单命令服务，但它包含的控件不能。 以下步骤演示如何使 menu 命令服务可用于用户控件。
 
-2. 在 *ShortcutMenu.cs* 中，添加以下 using 指令：
+2. 在 *快捷菜单* 中，添加以下 using 指令：
 
     ```csharp
     using Microsoft.VisualStudio.Shell;
     using System.ComponentModel.Design;
     ```
 
-3. 重写工具窗口的 Initialize ( # A1 方法，以获取菜单命令服务并添加控件，并将菜单命令服务传递给构造函数：
+3. 重写工具窗口的 Initialize () 方法以获取菜单命令服务并添加控件，并将菜单命令服务传递给构造函数：
 
     ```csharp
     protected override void Initialize()
@@ -159,7 +159,7 @@ ms.locfileid: "99951532"
     }
     ```
 
-5. 在 *ShortcutMenuControl.xaml.cs* 中，为 menu 命令服务添加私有字段，并更改控制构造函数以采用菜单命令服务。 然后使用菜单命令服务添加上下文菜单命令。 ShortcutMenuControl 构造函数现在应类似于以下代码。 稍后将定义该命令处理程序。
+5. 在 *ShortcutMenuControl* 中，为 menu 命令服务添加私有字段，并更改控制构造函数以使用菜单命令服务。 然后使用菜单命令服务添加上下文菜单命令。 ShortcutMenuControl 构造函数现在应类似于以下代码。 稍后将定义该命令处理程序。
 
     ```csharp
     public ShortcutMenuControl(OleMenuCommandService service)
@@ -207,7 +207,7 @@ ms.locfileid: "99951532"
     </UserControl>
     ```
 
-7. 在 *ShortcutMenuControl.xaml.cs* 中，为事件处理程序添加存根。
+7. 在 *ShortcutMenuControl* 中，为事件处理程序添加存根。
 
     ```csharp
     private void MyToolWindow_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
