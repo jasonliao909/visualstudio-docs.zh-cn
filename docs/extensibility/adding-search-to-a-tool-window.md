@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - tool windows, adding search
 ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71c2f0be2377ea391595b02f5b1e94465cffcf68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937096"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097547"
 ---
 # <a name="add-search-to-a-tool-window"></a>向工具窗口添加搜索
 当你在扩展中创建或更新工具窗口时，可以添加在 Visual Studio 中的其他位置显示的相同搜索功能。 此功能包括以下功能：
@@ -67,7 +67,7 @@ ms.locfileid: "99937096"
     </StackPanel>
     ```
 
-3. 在 *TestSearchControl.xaml.cs* 文件中，添加以下 using 指令：
+3. 在 *TestSearchControl* 文件中，添加以下 using 指令：
 
     ```csharp
     using System.Text;
@@ -90,7 +90,7 @@ ms.locfileid: "99937096"
 
 ## <a name="to-add-a-search-box-to-the-tool-window"></a>向工具窗口添加搜索框
 
-1. 在 *TestSearch.cs* 文件中，将以下代码添加到 `TestSearch` 类。 此代码将重写 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 属性，以便 get 访问器返回 `true` 。
+1. 在 *TestSearch* 文件中，将以下代码添加到 `TestSearch` 类。 此代码将重写 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 属性，以便 get 访问器返回 `true` 。
 
      若要启用搜索，必须重写 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch.SearchEnabled%2A> 属性。 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane>类实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowSearch> 并提供不启用搜索的默认实现。
 
@@ -110,7 +110,7 @@ ms.locfileid: "99937096"
 ## <a name="to-add-the-search-implementation"></a>添加搜索实现
  当你在上启用搜索时（ <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 如前面的过程中），工具窗口会创建一个搜索主机。 此主机设置并管理在后台线程上始终发生的搜索过程。 因为 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 类管理搜索主机的创建和搜索的设置，所以只需创建搜索任务并提供搜索方法。 搜索过程在后台线程上发生，并且对工具窗口控件的调用会在 UI 线程上发生。 因此，你必须使用 [ThreadHelper *](https://msdn.microsoft.com/data/ee197798(v=vs.85)) 方法来管理你在处理控件时所做的任何调用。
 
-1. 在 *TestSearch.cs* 文件中，添加以下 `using` 指令：
+1. 在 *TestSearch* 文件中，添加以下 `using` 指令：
 
     ```csharp
     using System;
@@ -241,7 +241,7 @@ ms.locfileid: "99937096"
 ## <a name="to-customize-the-search-behavior"></a>自定义搜索行为
  通过更改搜索设置，可以对搜索控件的显示方式和执行方式进行各种更改。例如，可以 (搜索框中显示的默认文本) 、搜索控件的最小和最大宽度，以及是否显示进度栏来更改水印。 您还可以更改搜索结果开始 (按需或即时搜索) 显示的点，以及是否显示您最近搜索过的术语的列表。 可以在类中找到完整的设置列表 <xref:Microsoft.VisualStudio.PlatformUI.SearchSettingsDataSource> 。
 
-1. 在 * TestSearch.cs * 文件中，将以下代码添加到 `TestSearch` 类。 此代码启用即时搜索，而不是按需搜索 (意味着用户无需单击 " **ENTER** ") 。 此代码将重写 `ProvideSearchSettings` 类中的方法 `TestSearch` ，这是更改默认设置所必需的。
+1. 在 * TestSearch * 文件中，将以下代码添加到 `TestSearch` 类。 此代码启用即时搜索，而不是按需搜索 (意味着用户无需单击 " **ENTER** ") 。 此代码将重写 `ProvideSearchSettings` 类中的方法 `TestSearch` ，这是更改默认设置所必需的。
 
     ```csharp
     public override void ProvideSearchSettings(IVsUIDataSource pSearchSettings)
@@ -288,7 +288,7 @@ ms.locfileid: "99937096"
 ## <a name="to-enable-users-to-refine-their-searches"></a>使用户能够优化其搜索
  您可以允许用户通过诸如 **大小写匹配** 或 **全字匹配** 等选项来优化搜索。 选项可以是布尔值（显示为复选框）或显示为按钮的命令。 对于本演练，您将创建一个布尔选项。
 
-1. 在 *TestSearch.cs* 文件中，将以下代码添加到 `TestSearch` 类。 此代码将重写 `SearchOptionsEnum` 方法，这允许搜索实现检测给定选项是打开还是关闭。 中的代码 `SearchOptionsEnum` 将添加一个选项以匹配大小写到 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> 枚举器。 用于区分大小写的选项也可作为属性使用 `MatchCaseOption` 。
+1. 在 *TestSearch* 文件中，将以下代码添加到 `TestSearch` 类。 此代码将重写 `SearchOptionsEnum` 方法，这允许搜索实现检测给定选项是打开还是关闭。 中的代码 `SearchOptionsEnum` 将添加一个选项以匹配大小写到 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumWindowSearchOptions> 枚举器。 用于区分大小写的选项也可作为属性使用 `MatchCaseOption` 。
 
     ```csharp
     private IVsEnumWindowSearchOptions m_optionsEnum;
@@ -341,7 +341,7 @@ ms.locfileid: "99937096"
 ## <a name="to-add-a-search-filter"></a>添加搜索筛选器
  您可以添加搜索筛选器，以允许用户精炼搜索目标集。 例如，你可以通过在文件资源管理器中对文件进行修改的日期和文件扩展名进行筛选。 在本演练中，您将为偶数行添加一个筛选器。 当用户选择该筛选器时，搜索主机会将您指定的字符串添加到搜索查询中。 然后，你可以在搜索方法中标识这些字符串并相应地筛选搜索目标。
 
-1. 在 *TestSearch.cs* 文件中，将以下代码添加到 `TestSearch` 类。 此代码 `SearchFiltersEnum` 通过添加 <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> 指定来筛选搜索结果，以便只显示偶数行来实现。
+1. 在 *TestSearch* 文件中，将以下代码添加到 `TestSearch` 类。 此代码 `SearchFiltersEnum` 通过添加 <xref:Microsoft.VisualStudio.PlatformUI.WindowSearchSimpleFilter> 指定来筛选搜索结果，以便只显示偶数行来实现。
 
     ```csharp
     public override IVsEnumWindowSearchFilters SearchFiltersEnum
@@ -358,7 +358,7 @@ ms.locfileid: "99937096"
 
      现在，搜索控件显示搜索筛选器 `Search even lines only` 。 当用户选择筛选器时，字符串 `lines:"even"` 将显示在搜索框中。 其他搜索条件可以与筛选器同时出现。 搜索字符串可能出现在筛选器之前、筛选器之后或两者之后。
 
-2. 在 *TestSearch.cs* 文件中，将以下方法添加到类 `TestSearchTask` 中的类 `TestSearch` 。 这些方法支持 `OnStartSearch` 方法，你将在下一步中修改该方法。
+2. 在 *TestSearch* 文件中，将以下方法添加到类中的 `TestSearchTask` 类 `TestSearch` 。 这些方法支持 `OnStartSearch` 方法，你将在下一步中修改该方法。
 
     ```csharp
     private string RemoveFromString(string origString, string stringToRemove)

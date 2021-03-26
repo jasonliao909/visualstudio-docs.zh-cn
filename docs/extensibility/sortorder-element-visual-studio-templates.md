@@ -11,17 +11,17 @@ helpviewer_keywords:
 - SortOrder element [Visual Studio Templates]
 - <SortOrder> element [Visual Studio Templates]
 ms.assetid: 151932c1-f08a-4f78-a8d0-bd2f32211a9c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a086f2ae678541ce28e9ede874c4198e349f438
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a195e3801ce505d2c1f069c07ff4457e1c1042b3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942914"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073789"
 ---
 # <a name="sortorder-element-visual-studio-templates"></a>SortOrder 元素（Visual Studio 模板）
 指定一个值，该值用于在同一类别中的其他模板之间进行排列，如在 " **新建项目** " 或 " **添加新项** " 对话框中显示的模板。

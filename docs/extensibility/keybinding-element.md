@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
 ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ce96da36a8c6eff0fda71d8a5d077721876ab8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9162d9b21c54577e48f4dced6ddddd7138c9de66
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943343"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074088"
 ---
 # <a name="keybinding-element"></a>键绑定元素
 键绑定元素指定命令的键盘快捷方式。
@@ -36,9 +36,9 @@ ms.locfileid: "99943343"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。|
+|GUID|必需。|
 |id|必需。|
 |编辑器|必需。 编辑器 GUID 指示此键盘快捷键将处于活动状态的编辑上下文。 全局绑定范围值为 "guidVSStd97"。|
 |key1|必需。 有效值包括所有 typable 字母数字，以及以0x 和 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)开头的两位数十六进制值。|
@@ -46,7 +46,7 @@ ms.locfileid: "99943343"
 |key2|可选。 有效值包括所有 typable 字母数字，以及以0x 和 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)开头的两位数十六进制值。|
 |mod2|可选。 由空格分隔的 **Ctrl**、 **Alt** 和 **Shift** 的任意组合。|
 |模拟器|可选。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 

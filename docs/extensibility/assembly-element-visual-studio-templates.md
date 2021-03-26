@@ -12,17 +12,17 @@ helpviewer_keywords:
 - Assembly element [Visual Studio templates]
 - <Assembly> element [Visual Studio templates]
 ms.assetid: 9242f76a-1273-4b8a-8f26-6606f91829ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d7891687a76d0023b54be2c44c3b5fc09c97f010
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54fc5cfccde99776136f0cb904d02bf6a4971045
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932790"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097313"
 ---
 # <a name="assembly-element-visual-studio-templates"></a>Visual Studio 模板 (Assembly 元素) 
 指定有关程序集的信息，模板使用该程序集将该程序集的引用添加到项目。
@@ -58,7 +58,7 @@ ms.locfileid: "99932790"
 
  此文本指定在实例化项模板时要添加到项目的程序集。 必须通过以下方式之一指定此程序集名称：
 
-- 作为完整的程序集名称。 例如： 。
+- 作为完整的程序集名称。 例如：
 
     ```
     <Assembly>

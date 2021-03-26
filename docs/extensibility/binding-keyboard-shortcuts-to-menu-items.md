@@ -11,17 +11,17 @@ helpviewer_keywords:
 - keyboard shortcuts
 - menu items
 ms.assetid: 19f483b6-4d3e-424e-9d68-dc129c788e47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed07019b3651ba7b0fe2959d06f0634374bb31a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88cc7d91ee8cd24daae278efdbfd35271412af40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941926"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105097300"
 ---
 # <a name="bind-keyboard-shortcuts-to-menu-items"></a>将键盘快捷方式绑定到菜单项
 若要将键盘快捷方式绑定到自定义菜单命令，只需将条目添加到包的 *.vsct* 文件。 本主题说明如何将键盘快捷方式映射到自定义按钮、菜单项或工具栏命令，以及如何在默认编辑器中应用键盘映射或将其限制为自定义编辑器。

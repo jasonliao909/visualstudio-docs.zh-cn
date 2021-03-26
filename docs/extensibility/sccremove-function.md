@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccRemove function
 ms.assetid: 20830fdc-c0e9-4a5f-bf60-33f28874442f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f55b82ae428870f1d5a08feaa3ae1ef7eb0b5f4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d80daf83458c9e05ef0a081348080579e7fafef4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221413"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073867"
 ---
 # <a name="sccremove-function"></a>SccRemove 函数
 此函数删除源代码管理系统中的文件。
@@ -69,7 +69,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|删除成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不受源代码管理。|
@@ -83,5 +83,5 @@ SCCRTN SccRemove(
 ## <a name="remarks"></a>备注
  此函数会删除源代码管理系统中的文件，但不会将其从用户的本地硬盘上删除。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

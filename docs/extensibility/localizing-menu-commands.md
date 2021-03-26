@@ -12,17 +12,17 @@ helpviewer_keywords:
 - localize visual studio
 - localize vsct
 ms.assetid: b04ee0f6-82ea-47e6-853a-72382267d6da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af86f64935d4e99d4c1245669505fcef8ce7ec1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 141fb0d8ba6746e7d299984461fb3ca739d931d4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893615"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073256"
 ---
 # <a name="localize-menu-commands"></a>"本地化" 菜单命令
 
@@ -112,9 +112,9 @@ ms.locfileid: "99893615"
 
 ## <a name="incorporate-localized-resources-into-the-project"></a>将本地化资源合并到项目中
 
-必须修改 *assemblyinfo.cs* 文件和项目文件以合并已本地化的资源。
+必须修改 *assemblyinfo* 文件和项目文件以合并已本地化的资源。
 
-1. 在 **解决方案资源管理器** 的 "**属性**" 节点中，在编辑器中打开 *assemblyinfo.cs* 或 *assemblyinfo* 。
+1. 在 **解决方案资源管理器** 的 "**属性**" 节点中，在编辑器中打开 " *assemblyinfo* " 或 " *assemblyinfo* "。
 
 2. 添加以下条目。
 

@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 17ecacea-397d-4a97-b003-01bd5d56e936
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 709867c44456223da129460eb6ea72c413ba5b48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ae844b0b0b6d585895b6939d1d33b2a699c2756
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839410"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105095155"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code 工具是一个控制台应用程序，它将 imagemanifest 文件用于 Visual Studio 映像服务，并生成一个包装器文件，用于引用 c + +、c #、VB 或. .vsct 文件中的图像清单的值（适用于 Visual Studio 扩展）。 此工具将生成可用于直接从 Visual Studio 图像服务请求图像的包装文件，如果代码不处理其自身的 UI 和呈现，则通过 Api 传递清单值。
@@ -27,10 +27,10 @@ Manifest to Code 工具是一个控制台应用程序，它将 imagemanifest 文
 
  **参数**
 
-|**交换机名称**|**备注**|**必需还是可选**|
+|**交换机名称**|**说明**|**必需还是可选**|
 |-|-|-|
-|/manifest|用于创建或更新代码包装的图像清单的路径。|必需|
-|/language|用于生成代码包装的语言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT，这些值不区分大小写。<br /><br /> 对于 .VSCT language 选项，将忽略/monikerClass、/classAccess 和/namespace 选项。|必需|
+|/manifest|用于创建或更新代码包装的图像清单的路径。|必须|
+|/language|用于生成代码包装的语言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .VSCT，这些值不区分大小写。<br /><br /> 对于 .VSCT language 选项，将忽略/monikerClass、/classAccess 和/namespace 选项。|必须|
 |/imageIdClass|该工具创建的 imageIdClass 和关联文件的名称。 对于 c + + 语言选项，只生成 .h 文件。<br /><br /> 默认值： \<Manifest Path> \MyImageIds。\<Lang Ext>|可选|
 |/monikerClass|该工具创建的 monikerClass 和关联文件的名称。 对于 c + + 语言选项，只生成 .h 文件。 对于 .VSCT 语言，这会被忽略。<br /><br /> 默认值： \<Manifest Path> \MyMonikers。\<Lang Ext>|可选|
 |/classAccess|ImageIdClass 和 monikerClass 的访问修饰符。 请确保访问修饰符对于给定的语言有效。 对于 .VSCT language 选项，此选项将被忽略。<br /><br /> 默认值：公用|可选|
