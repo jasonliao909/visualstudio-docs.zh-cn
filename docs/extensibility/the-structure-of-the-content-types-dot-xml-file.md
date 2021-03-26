@@ -10,17 +10,17 @@ helpviewer_keywords:
 - opc
 - vsix
 ms.assetid: 9c399598-b9fa-4da7-84b5-defbf82e9335
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38348661946be3894332d49177f972410563b716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5dea58176269536ae7f0e5857c938c60f76c5c6b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895202"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055890"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 文件的结构
 包含有关 VSIX 包中的内容种类的信息。 Visual Studio 使用 [Content_Types] .xml 文件来安装包，但不会安装文件本身。
@@ -37,9 +37,9 @@ ms.locfileid: "99895202"
 |-------------|-----------------|
 |`Types`|包含枚举 VSIX 包中的文件类型的子元素。|
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Xmlns`| (必需。 ) 用于此 [Content_Types] .xml 文件的架构位置。|
 
@@ -56,9 +56,9 @@ ms.locfileid: "99895202"
 |-------------|-----------------|
 |`Default`|描述 VSIX 包中的内容类型。 包中的每个文件类型都必须有其自身的 `Default` 元素。|
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Extension`|VSIX 包中文件的文件扩展名。|
 |`ContentType`|描述与文件扩展名关联的内容类型。|

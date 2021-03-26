@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <TemplateID> element [Visual Studio Templates]
 - TemplateID element [Visual Studio Templates]
 ms.assetid: 6ca24b4e-0325-4a9e-855e-0cbbe7361d8f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a0b3ef90eab7cef51e5ca65032f2f4f68acd42
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e33f2d5c424e5d48cff212dc736bbc13e58801d5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895318"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056007"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 元素（Visual Studio 模板）
 指定由 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) 元素分类到一组项模板的项模板的标识符。
@@ -58,7 +58,7 @@ ms.locfileid: "99895318"
 
  如果 .vstemplate 文件省略了 `TemplateID` 元素，则 [Name](../extensibility/name-element-visual-studio-templates.md) 元素将用作模板的标识符。
 
- 元素的值 `TemplateID` 与项目系统注册一起使用 ( # B0 \\) 来筛选在 " **添加新项** " 对话框中显示的模板。
+ 元素的值 `TemplateID` 与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects一起使用 \\) 来筛选在 " **添加新项** " 对话框中显示的模板。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

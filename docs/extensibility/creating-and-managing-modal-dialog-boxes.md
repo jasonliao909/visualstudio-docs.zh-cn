@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - dialog boxes, managing in Visual Studio
 ms.assetid: 491bc0de-7dba-478c-a76b-923440e090f3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 949f136913a30848ba13185bc699fa0bc51ac456
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96ac3c9ee92cd9124485dde29814f4a1e5c942c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884970"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055747"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>创建和管理模式对话框
 在 Visual Studio 中创建模式对话框时，必须确保在对话框显示时已禁用对话框的父窗口，然后在关闭该对话框后重新启用父窗口。 如果不这样做，可能会收到错误： *Microsoft Visual Studio 无法关闭，因为模式对话框处于活动状态。关闭活动对话框，然后重试。*
@@ -40,7 +40,7 @@ ms.locfileid: "99884970"
 
     - *System.Xaml*
 
-3. 在 *OpenDialog.cs* 中，添加以下 `using` 语句：
+3. 在 *OpenDialog* 中，添加以下 `using` 语句：
 
     ```csharp
     using Microsoft.VisualStudio.PlatformUI;

@@ -11,17 +11,17 @@ helpviewer_keywords:
 - TemplateGroupID element [Visual Studio Templates]
 - <TemplateGroupID> element [Visual Studio Templates]
 ms.assetid: bce7b49a-90bc-4691-aff3-a87e209f6d83
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d9db0d2744648901a9389bd2d2805d8c6a4073ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f97d60fe319ee19cf74c7a5e3a3f3d7ef13b921
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895357"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055994"
 ---
 # <a name="templategroupid-element-visual-studio-templates"></a>TemplateGroupID 元素（Visual Studio 模板）
 指定项模板将显示在哪种项目类型中。 当 [ShowByDefault (Visual Studio 模板) ](../extensibility/showbydefault-visual-studio-templates.md) 设置为时，此元素很重要 `false` 。 当 [ShowByDefault (Visual Studio 模板) ](../extensibility/showbydefault-visual-studio-templates.md) 设置为时 `true` ，将在所有项目类型中提供项模板。
@@ -58,7 +58,7 @@ ms.locfileid: "99895357"
 ## <a name="remarks"></a>备注
  `TemplateGroupID` 是一个元素。
 
- 元素的值 `TemplateGroupID` 与项目系统注册一起使用 ( # B0 \\ *\<version number>* \Projects \\) 来筛选在 "**添加新项**" 对话框中显示的模板。
+ 元素的值 `TemplateGroupID` 与项目系统注册一起使用 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *\<version number>* \Projects \\) 来筛选在 "**添加新项**" 对话框中显示的模板。
 
 |Visual C++ 值|含义|
 |------------------------|-------------|

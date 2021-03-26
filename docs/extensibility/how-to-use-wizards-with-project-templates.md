@@ -11,17 +11,17 @@ helpviewer_keywords:
 - templates [Visual Studio], wizards
 - IWizard interface
 ms.assetid: 47ee26cf-67b7-4ff1-8a9d-ab11a725405c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb70931f2c26c248b2e2d41348fa26958d5348b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41290f946c198ed854cad9a7eb2af088f6fe228a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883306"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082278"
 ---
 # <a name="how-to-use-wizards-with-project-templates"></a>如何：将向导与项目模板结合使用
 
@@ -48,7 +48,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 5. 在清单编辑器中，选择窗口左侧的 " **资产** " 选项卡。
 
-6. 在 " **资产** " 选项卡中，选择 " **新建**"。 在 " **添加新资产** " 窗口中，为 "类型" 字段选择 " **VisualStudio**"。 在 " **源** " 字段中，选择 " **当前解决方案中的项目**"。 在 " **项目** " 字段中，选择 " **MyProjectTemplate**"。 。
+6. 在 " **资产** " 选项卡中，选择 " **新建**"。 在 " **添加新资产** " 窗口中，为 "类型" 字段选择 " **VisualStudio**"。 在 " **源** " 字段中，选择 " **当前解决方案中的项目**"。 在 " **项目** " 字段中，选择 " **MyProjectTemplate**"。 然后单击“确定”  。
 
 7. 生成解决方案并启动调试。 将出现 Visual Studio 的第二个实例。 （这可能需要几分钟的时间。）
 
@@ -70,11 +70,11 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 3. 将程序集作为资产添加到 VSIX 项目。 打开 *source.extension.vsixmanifest* 文件，然后选择 " **资产** " 选项卡。在 " **添加新资产** " 窗口中，为 " **类型** " 选择 " **VisualStudio**"，对于 " **源** "，选择 " **当前解决方案中的项目**"，然后选择 " **项目** " " **MyProjectWizard**"。
 
-4. 将以下引用添加到 VSIX 项目。  (在 **解决方案资源管理器** 的 "VSIX 项目" 节点下，选择 " **引用**"，右键单击，然后选择 " **添加引用**" ) 。在 " **添加引用** " 对话框的 " **框架** " 选项卡中，找到 " **Windows 窗体** " 程序集并选择它。 同时，查找并选择 " **系统** " 和 " **系统** " 程序集。 现在选择 " **扩展** " 选项卡。找到 **EnvDTE** 程序集并将其选中。 同时，查找 **TemplateWizardInterface** 程序集并将其选中。 单击“确定”。
+4. 将以下引用添加到 VSIX 项目。  (在 **解决方案资源管理器** 的 "VSIX 项目" 节点下，选择 " **引用**"，右键单击，然后选择 " **添加引用**" ) 。在 " **添加引用** " 对话框的 " **框架** " 选项卡中，找到 " **Windows 窗体** " 程序集并选择它。 同时，查找并选择 " **系统** " 和 " **系统** " 程序集。 现在选择 " **扩展** " 选项卡。找到 **EnvDTE** 程序集并将其选中。 同时，查找 **TemplateWizardInterface** 程序集并将其选中。 单击 **“确定”** 。
 
 5. 将向导实现的类添加到 VSIX 项目。  (在 **解决方案资源管理器** 中，右键单击 VSIX 项目节点，然后依次选择 "**添加**"、"**新建项**" 和 ") **类**"，然后将 WizardImplementation 类命名为。
 
-6. 将 *WizardImplementationClass.cs* 文件中的代码替换为以下代码：
+6. 将 *WizardImplementationClass* 文件中的代码替换为以下代码：
 
    ```csharp
    using System;
@@ -161,7 +161,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
      此示例将用户输入窗体中的参数值添加到 <xref:System.Collections.Generic.Dictionary%602> 参数中。 项目中参数的每个实例 `$custommessage$` 都将替换为用户输入的文本。
 
-7. 现在，创建 **UserInputForm**。 在 *WizardImplementation.cs* 文件中，将以下代码添加到类的末尾 `WizardImplementation` 。
+7. 现在，创建 **UserInputForm**。 在 *WizardImplementation* 文件中，在类的末尾添加以下代码 `WizardImplementation` 。
 
    ```csharp
    public partial class UserInputForm : Form
@@ -265,7 +265,7 @@ Visual Studio 提供了 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接
 
 在此示例中，用作模板的项目显示在 "自定义向导" 的 "用户输入" 窗体中指定的消息。
 
-1. 在 **解决方案资源管理器** 中，请切换到 **MyProjectTemplate** 项目，然后打开 *Class1.cs*。
+1. 在 **解决方案资源管理器** 中，请切换到 **MyProjectTemplate** 项目并打开 *Class1*。
 
 2. 在 `Main` 应用程序的方法中，添加以下代码行。
 

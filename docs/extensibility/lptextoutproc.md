@@ -13,17 +13,17 @@ helpviewer_keywords:
 - LPTEXTOUTPROC callback function
 - SccMsgDataOnAfterGetFile structure
 ms.assetid: 2025c969-e3c7-4cf4-a5c5-099d342895ea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef05b65b1a018772f4354062aa1be285c40b0d90
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e014d72fb3ae2b691f4a6eed28f14ff21656ef64
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952169"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105073178"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -41,7 +41,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
 
 display_string
 
@@ -51,7 +51,7 @@ mesg_type
 
 消息的类型。 下表列出了此参数支持的值。
 
-|“值”|说明|
+|值|说明|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息被视为信息、警告或错误。|
 |`SCC_MSG_STATUS`|此消息显示状态，并且可以显示在状态栏中。|
@@ -65,7 +65,7 @@ mesg_type
 
 ## <a name="return-value"></a>返回值
 
-|“值”|说明|
+|值|说明|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|字符串已显示或操作已成功完成。|
 |SCC_MSG_RTN_CANCEL|用户要取消该操作。|

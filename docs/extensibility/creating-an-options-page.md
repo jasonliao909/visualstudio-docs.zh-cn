@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Tools Options pages [Visual Studio SDK], creating
 ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1069109cbda6b0385c9409a12f9f9c674ddec14c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877481"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055799"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 
@@ -166,7 +166,7 @@ ms.locfileid: "99877481"
 
 7. 向用户控件添加 **TextBox** 控件。
 
-     在 " **属性** " 窗口的工具栏上，单击 " **事件** " 按钮，然后双击 " **离开** " 事件。 新的事件处理程序显示在 *MyUserControl.cs* 代码中。
+     在 " **属性** " 窗口的工具栏上，单击 " **事件** " 按钮，然后双击 " **离开** " 事件。 新的事件处理程序显示在 *MyUserControl* 代码中。
 
 8. 向 `OptionsPage` control 类添加公共字段 `Initialize` 和方法，并更新事件处理程序，以将选项值设置为文本框的内容：
 
@@ -249,7 +249,7 @@ ms.locfileid: "99877481"
 
      此代码调用 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 来创建或检索 `OptionPageGrid` 实例。 `OptionPageGrid` 调用 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 以加载其选项，这些选项是公共属性。
 
-2. 现在，添加一个名为 **MyToolsOptionsCommand** 的自定义命令项模板以显示值。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *MyToolsOptionsCommand.cs*。
+2. 现在，添加一个名为 **MyToolsOptionsCommand** 的自定义命令项模板以显示值。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *MyToolsOptionsCommand*。
 
 3. 在 *MyToolsOptionsCommand* 文件中，将命令的方法的主体替换 `ShowMessageBox` 为以下内容：
 

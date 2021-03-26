@@ -13,17 +13,17 @@ helpviewer_keywords:
 - tool window toolbar
 - guid
 ms.assetid: c9cacd57-9225-450f-a9ac-cbf3168ea844
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b4df4bac9fcc933cccc1bd54ced89c416b23863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970213"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082070"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具栏的 Guid 和 Id
 本主题枚举 Visual Studio 集成开发环境中包含的工具栏的 GUID 和 ID 值 (IDE) 以及它们所包含的组。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -43,7 +43,7 @@ ms.locfileid: "99970213"
 |工具栏|ID|
 |-------------|--------|
 |标准|IDM_VS_TOOL_STANDARD|
-|生成|IDM_VS_TOOL_BUILD|
+|构建|IDM_VS_TOOL_BUILD|
 |文本编辑器|IDM_VS_TOOL_TEXTEDITOR|
 |调试|guidVSDebugGroup： IDM_DEBUG_TOOLBAR|
 |调试位置|guidVSDebugGroup： IDM_DEBUG_CONTEXT_TOOLBAR|
@@ -88,7 +88,7 @@ ms.locfileid: "99970213"
 |----------|--------|
 |Completion|IDM_VS_TOOL_TEXTEDITOR|
 |缩进|IDG_VS_EDITTOOLBAR_INDENT|
-|注释|IDG_VS_EDITTOOLBAR_COMMENT|
+|评论|IDG_VS_EDITTOOLBAR_COMMENT|
 |书签|IDG_VS_EDITTOOLBAR_TEMPBOOKMARKS|
 
 ### <a name="debug-toolbar-groups"></a>调试工具栏组
@@ -114,7 +114,7 @@ ms.locfileid: "99970213"
 
 |工具窗口|工具栏|组|
 |-----------------|-------------|------------|
-|解决方案资源管理器|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.。5|
+|“解决方案资源管理器”|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.。5|
 |服务器资源管理器|guid_SE_MenuGroup： IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
 |属性|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |类视图|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|

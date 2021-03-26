@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/01/2019
 ms.topic: conceptual
 ms.assetid: 34990c37-ae98-4140-9b1e-a91c192220d9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77fdc39ccccb7728749edd55527741c15bb1bcb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4483d73a5e6124006f09d05065b6f75f7a654e47
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912739"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082122"
 ---
 # <a name="image-service-and-catalog"></a>映像服务和目录
 本指南包含的指南和最佳实践适用于 Visual studio 2015 中引入的 Visual Studio 映像服务和映像目录。
@@ -127,7 +127,7 @@ ms.locfileid: "99912739"
 |ManifestFolder|包含清单文件的文件夹|
 |MyDocuments|当前用户的 "我的文档" 文件夹的完整路径|
 |ProgramFiles|% ProgramFiles% 环境变量的值|
-|系统|*Windows\System32* 文件夹|
+|System|*Windows\System32* 文件夹|
 |WinDir|% WinDir% 环境变量的值|
 
  **图像**
@@ -149,7 +149,7 @@ ms.locfileid: "99912739"
 |ID|请求图像名字对象的 ID 部分|
 |AllowColorInversion|[可选，默认值为 true]指示在深色背景上使用时，图像是否可以通过编程方式进行反转。|
 
- **Source**
+ **源**
 
  \<Source>元素定义单个图像源资产 (XAML 和 PNG) 。
 
@@ -752,7 +752,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
 
 - 我正在更新 CPS 项目系统。 **ImageName** 和 **StockIconService** 发生了什么情况？
 
-  - 当 CPS 被更新为使用名字对象时，已将其删除。 不再需要调用 **StockIconService**，只需使用 CPS 实用工具中的 **ToProjectSystemType ( # B1** 扩展方法将所需的 **KnownMoniker** 传递给方法或属性。 可以在下面找到 **ImageName** 到 **KnownMonikers** 的映射：
+  - 当 CPS 被更新为使用名字对象时，已将其删除。 不再需要调用 **StockIconService**，只需使用 CPS 实用工具中的 **ToProjectSystemType ()** 扩展方法将所需的 **KnownMoniker** 传递给方法或属性。 可以在下面找到 **ImageName** 到 **KnownMonikers** 的映射：
 
     |**ImageName**|**KnownMoniker**|
     |-|-|
@@ -1011,7 +1011,7 @@ b714fcf7-855e-4e4c-802a-1fd87144ccad,2,fda30684-682d-421c-8be4-650a2967058e,200
     |GlyphGroupJSharpInterface|GlyphItemShortcut|InterfaceShortcut|
     |GlyphGroupError||StatusError|
     |GlyphBscFile||ClassFile|
-    |GlyphAssembly||引用|
+    |GlyphAssembly||参考|
     |GlyphLibrary||库|
     |GlyphVBProject||VBProjectNode|
     |GlyphCoolProject||CSProjectNode|

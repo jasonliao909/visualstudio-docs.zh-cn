@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tool windows, adding toolbars
 - toolbars [Visual Studio], adding to tool windows
 ms.assetid: 172f64b3-87f8-4292-9c1c-65bffa2b0970
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0152de94eb74fff902ced4d61c749f7cca3a277
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1847801ed9dcbb1b7c7145c86b1998b54e2bb5d9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951337"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055786"
 ---
 # <a name="add-a-toolbar-to-a-tool-window"></a>将工具栏添加到工具窗口
 本演练演示如何将工具栏添加到工具窗口。
@@ -86,14 +86,14 @@ ms.locfileid: "99951337"
 
 ## <a name="add-the-toolbar-to-the-tool-window"></a>将工具栏添加到工具窗口
 
-1. 在 *TWTestCommandPackageGuids.cs* 中，添加以下行。
+1. 在 *TWTestCommandPackageGuids* 中，添加以下行。
 
     ```csharp
     public const string guidTWTestCommandPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
     public const int TWToolbar = 0x1000;
     ```
 
-2. 在 *TestToolWindow.cs* 中，添加以下 using 语句。
+2. 在 *TestToolWindow* 中，添加以下 using 语句。
 
     ```csharp
     using System.ComponentModel.Design;
@@ -113,7 +113,7 @@ ms.locfileid: "99951337"
 
      应该会看到一个工具栏， (它在工具窗口左上角的默认图标) ，就在标题的正下方。
 
-3. 在工具栏上，单击 "TWTestCommandPackage" 图标以显示消息 " **内部的 TWToolbar. TWTestCommand. MenuItemCallback ( # B1**"。
+3. 在工具栏上，单击 "TWTestCommandPackage" 图标以显示 " **TWToolbar. TWTestCommand MenuItemCallback 中** 的消息" () 。
 
 ## <a name="see-also"></a>另请参阅
 - [添加工具栏](../extensibility/adding-a-toolbar.md)

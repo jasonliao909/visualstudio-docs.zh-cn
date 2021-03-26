@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: e48ecfb2-f4b5-4d3a-b4a2-7a4d62fa4ec0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8ac314a2ec49b805fc87badf6b63a719b8511e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0c6f609842f2531fe39158e871a330e136603433
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952091"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105090052"
 ---
 # <a name="composite-patterns-for-visual-studio"></a>Visual Studio 的复合模式
 复合模式将交互和设计元素组合到不同的配置中。 Visual Studio 中有关一致性的一些最重要的组合模式包括：
@@ -70,7 +70,7 @@ ms.locfileid: "99952091"
 
 ### <a name="other-charting-considerations"></a>其他图表注意事项
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>颜色
  为在 Visual Studio 中使用而定义的图表颜色有特定的调色板。 可以访问调色板的主要类型色盲，即使使用的是颜色非常窄的切片，颜色也可以区分。 你可以在 UI 中的任何类型的图表或图形的任意组合中使用这些颜色。 如果不需要许多不同的颜色，则无需使用全部七种颜色。 这些颜色并未设计为与任何前景元素一起使用，因此不会将文本或标志符号放置在这些颜色的顶部。 这些色相应进行硬编码并公开给 " **工具" > 选项** 下的用户自定义 (请参阅 [公开最终用户) 的颜色](../../extensibility/ux-guidelines/colors-and-styling-for-visual-studio.md#BKMK_ExposingColorsForEndUsers) 。
 
 |样本|Hex|RGB|
@@ -159,7 +159,7 @@ ms.locfileid: "99952091"
 
 4. 持久性和提交模型
 
-    - 暂时性
+    - 暂时
 
     - Durable
 
@@ -439,9 +439,9 @@ ms.locfileid: "99952091"
 
 | 对象 | 选择 |
 |--------|------------|
-| 列表 | 系列 |
-| 列表 | 相互 |
-| 列表 | 区域 |
+| 列出 | 系列 |
+| 列出 | 相互 |
+| 列出 | 区域 |
 
  在列表上单击 "一次" 将选择在其中发生单击的行。 如果用户在支持就地编辑的列表单元中单击，则还会立即激活单元格进行就地编辑。 否则，将立即选择整行并显示突出显示。
 
