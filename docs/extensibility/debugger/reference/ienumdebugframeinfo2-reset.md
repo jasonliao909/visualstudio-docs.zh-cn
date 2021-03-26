@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugFrameInfo2::Reset
 ms.assetid: e149b559-f072-480b-9552-a452b147f3a8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01a7a2be3986798e087e4bc4096be2b8ce1454ad
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 2bccd2b0e106f1db6e9d013bb8d76cabb6970515
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102226431"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091677"
 ---
 # <a name="ienumdebugframeinfo2reset"></a>IEnumDebugFrameInfo2::Reset
 将枚举重置为第一个元素。
@@ -44,5 +44,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后， [下一次调用的方法将](../../../extensibility/debugger/reference/ienumdebugframeinfo2-next.md) 返回枚举的第一个元素。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

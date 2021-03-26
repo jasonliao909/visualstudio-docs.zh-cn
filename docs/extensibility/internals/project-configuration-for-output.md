@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6817dbd534d272924e5020b1c4c48753dcd70a54
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13e37999ad9f3bada375c1897207e1e4c15546e8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890664"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082005"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
 每个配置都可以支持生成可执行文件或资源文件等输出项的一组生成过程。 这些输出项专用于用户，并且可放置在链接相关类型的输出（如可执行文件 ( .exe、.dll、.lib) 和源文件 ( .idl 文件) 中的组。

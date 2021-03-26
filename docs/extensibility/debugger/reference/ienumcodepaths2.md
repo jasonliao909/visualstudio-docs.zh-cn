@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2 interface
 ms.assetid: 17ec9f9e-dc06-4532-b5db-da52efcc8630
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9758bacf6dc22ad65dc4d8db9b21d0f6728efaf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e8ff8b4532ab67a969c8270eeb83bdf715e0b1c0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227081"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091729"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此接口表示代码路径的列表。
@@ -38,7 +38,7 @@ IEnumCodePaths2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumCodePaths2` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumcodepaths2-next.md)|检索枚举序列中指定数目的代码路径。|
 |[Skip](../../../extensibility/debugger/reference/ienumcodepaths2-skip.md)|跳过枚举序列中指定数目的代码路径。|
@@ -56,5 +56,5 @@ IEnumCodePaths2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)

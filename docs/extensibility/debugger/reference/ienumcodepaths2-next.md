@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumCodePaths2::Next
 ms.assetid: c7a8fe97-2abc-4cee-8aef-64f1daa93b5c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7782a2b962786b191849dbdc1a9a7f3f7c727e9f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9ff0cb49d69d9bc2b8584af53f8c11bba87921c0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222687"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091761"
 ---
 # <a name="ienumcodepaths2next"></a>IEnumCodePaths2::Next
 返回枚举中的下一个元素集。
@@ -57,6 +57,6 @@ int Next(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)
 - [CODE_PATH](../../../extensibility/debugger/reference/code-path.md)

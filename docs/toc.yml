@@ -905,6 +905,8 @@
   items:
     - name: Visual Studio 中的 Git 新体验
       href: ide/git-with-visual-studio.md
+    - name: Visual Studio 如何简化源代码管理
+      href: ide/git-visual-studio-source-control.md
     - name: 并行比较 Git 和团队资源管理器
       href: ide/git-team-explorer-feature-comparison.md
 - name: 测试 >>
