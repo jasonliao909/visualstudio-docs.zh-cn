@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: 585b0a3a-f85b-4f92-81bb-9ca499bb8a89
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b03b7a4941609462fca27bebf67d8ad2a8f7044
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f956aa520bca79a84fe203093c225cfeb8389ba1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944916"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089194"
 ---
 # <a name="create-an-extension-with-a-tool-window"></a>使用工具窗口创建扩展
 
@@ -29,7 +29,7 @@ ms.locfileid: "99944916"
 
 1. 创建名为 **FirstWindow** 的 VSIX 项目。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
 
-2. 项目打开时，添加一个名为 **MyWindow** 的工具窗口项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，切换到 " **Visual c #**  >  **扩展性**" 并选择 "**自定义工具窗口**"。 在窗口底部的 " **名称** " 字段中，将工具窗口文件的名称更改为 *MyWindow.cs*。
+2. 项目打开时，添加一个名为 **MyWindow** 的工具窗口项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，切换到 " **Visual c #**  >  **扩展性**" 并选择 "**自定义工具窗口**"。 在窗口底部的 " **名称** " 字段中，将工具窗口文件名称更改为 *MyWindow*。
 
 3. 生成项目并启动调试。
 

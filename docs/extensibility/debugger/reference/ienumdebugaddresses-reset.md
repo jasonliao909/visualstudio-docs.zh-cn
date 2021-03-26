@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Reset method
 ms.assetid: 3a9d7f20-5bc6-4e13-8e91-5af4092e092f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 90ccbb3be28f676133756d5d07fcaca7e0aca3ec
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 385e650e908947288eafa6f3f2812db45f9721a3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222661"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083136"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 此方法将枚举重置为第一个元素。
@@ -45,6 +45,6 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后，下 [一次调用将返回枚举](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) 的第一个元素。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
 - [下一页](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

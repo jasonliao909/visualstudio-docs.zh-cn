@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugPrograms2
 ms.assetid: 7fbb8fb7-db64-4546-a364-dc668430c8af
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0a593d6168b7d34f97802a0b3b1b0a5c141821
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: d7f9a981146d5e024333f17557f4fdbc3d35bc05
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102224221"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082928"
 ---
 # <a name="ienumdebugprograms2"></a>IEnumDebugPrograms2
 此接口枚举当前调试会话中正在运行的程序。
@@ -38,7 +38,7 @@ IEnumDebugPrograms2 : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugPrograms2` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[下一页](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)|检索枚举序列中指定数量的程序。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugprograms2-skip.md)|跳过枚举序列中指定数量的程序。|
@@ -64,7 +64,7 @@ IEnumDebugPrograms2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugengine2-enumprograms.md)
 - [EnumPrograms](../../../extensibility/debugger/reference/idebugprocess2-enumprograms.md)

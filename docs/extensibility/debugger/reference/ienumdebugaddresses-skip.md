@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IEnumDebugAddresses::Skip method
 ms.assetid: ed9a8e71-30ef-414b-9da5-c9a2a251b84e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1ae1b23c28f98d90649e701b7ff96b2394a9894b
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 082cba541b1074e75e44384cd8ac9e4879cc29c3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102222648"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083149"
 ---
 # <a name="ienumdebugaddressesskip"></a>IEnumDebugAddresses::Skip
 此方法跳过指定数目的元素。
@@ -50,5 +50,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IEEDataStorage interface
 ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9434138114f2b4b0615e20c1b556ff6387c715de
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f24921ec169c458a1b0b5ab1638c1379efd09da1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227328"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105083357"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此接口表示字节数组。
@@ -38,7 +38,7 @@ IEEDataStorage : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  `IEEDataStorage`接口实现以下方法：
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)|检索指定数目的数据字节到提供的缓冲区。|
 |[GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)|检索可用的数据字节数。|
@@ -55,7 +55,7 @@ IEEDataStorage : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

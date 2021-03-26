@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - project types, conditions for creating
 ms.assetid: 26adc860-ee4a-4f5c-95e1-e41b207dd7e6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 161be2b157c079312cdbbee0b6913c92c3c61578
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 427c35a03f9d0cb11667ca9eaf88f144d018f620
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869513"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074296"
 ---
 # <a name="when-to-create-project-types"></a>何时创建项目类型
 创建新的项目类型提供了为用户自定义的基础 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，对于所有自定义项，不需要创建新的项目类型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 以下准则可帮助您确定方案是否需要新的项目类型。

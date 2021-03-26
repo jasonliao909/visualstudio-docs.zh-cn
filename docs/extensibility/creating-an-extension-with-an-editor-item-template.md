@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extensions
 ms.assetid: fa3b993b-ab95-47fa-a38b-b788f3a5b2d8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8bfdcd854cf35c392578d9851a7421bacc8cbfe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06c3fbfabb4eccc08e528aef913e1c1ba502cbf1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884983"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089129"
 ---
 # <a name="create-an-extension-with-an-editor-item-template"></a>使用编辑器项模板创建扩展
 你可以使用 Visual Studio SDK 中包含的项模板来创建将分类器、修饰和边距添加到编辑器的基本编辑器扩展。 编辑器项模板可用于 Visual c # 或 Visual Basic VSIX 项目。
@@ -28,19 +28,19 @@ ms.locfileid: "99884983"
 ## <a name="create-a-classifier-extension"></a>创建分类器扩展
  编辑器分类器项模板创建一个编辑器分类器，它在此示例中为适当的文本 (颜色，所有内容) 在任何文本文件中。
 
-1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `TestClassifier`。 单击“确定”。
+1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `TestClassifier`。  单击 **“确定”** 。
 
-2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑器分类器**"。 保留默认文件名 (*EditorClassifier1.cs*) "。
+2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑器分类器**"。 保留默认文件名 (*EditorClassifier1*) 。
 
 3. 有四个代码文件，如下所示：
 
-    - *EditorClassifier1.cs* 包含 `EditorClassifier1` 类。
+    - *EditorClassifier1* 包含 `EditorClassifier1` 类。
 
-    - *EditorClassifier1ClassificationDefinition.cs* 包含 `EditorClassifier1ClassificationDefinition` 类。
+    - *EditorClassifier1ClassificationDefinition* 包含 `EditorClassifier1ClassificationDefinition` 类。
 
-    - *EditorClassifier1Format.cs* 包含 `EditorClassifier1Format`  类。
+    - *EditorClassifier1Format* 包含 `EditorClassifier1Format`  类。
 
-    - *EditorClassifier1Provider.cs* 包含 `EditorClassifier1Provider` 类。
+    - *EditorClassifier1Provider* 包含 `EditorClassifier1Provider` 类。
 
 4. 生成项目并启动调试。 此时将显示 Visual Studio 的实验实例。
 
@@ -49,15 +49,15 @@ ms.locfileid: "99884983"
 ## <a name="create-a-text-relative-adornment-extension"></a>创建文本相对性修饰扩展
  编辑器文本修饰模板创建文本相关修饰，该修饰通过使用具有红色边框和蓝色背景的框来修饰文本字符 "a" 的所有实例。 它是文本相关的，因为方框始终覆盖 "a" 字符，即使它们已被移动或重新格式化也是如此。
 
-1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `TestAdornment`。 单击“确定”。
+1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `TestAdornment`。  单击 **“确定”** 。
 
-2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，然后选择 " **编辑器文本修饰**"。 保留默认文件名 (*TextAdornment1.cs/vb*) "。
+2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，然后选择 " **编辑器文本修饰**"。 保留默认文件名 (*TextAdornment1/vb*) 。
 
 3. 有两个代码文件，如下所示：
 
-    - *TextAdornment1.cs* 包含 `TextAdornment1` 类。
+    - *TextAdornment1* 包含 `TextAdornment1` 类。
 
-    - *TextAdornment1TextViewCreationListener.cs* 包含 `TextAdornment1TextViewCreationListener` 类。
+    - *TextAdornment1TextViewCreationListener* 包含 `TextAdornment1TextViewCreationListener` 类。
 
 4. 生成项目并启动调试。 这将显示实验实例。 如果打开文本文件，文本中的 "a" 字符将以红色显示为蓝色背景。
 
@@ -69,15 +69,15 @@ ms.locfileid: "99884983"
 
 ### <a name="to-create-a-viewport-adornment-extension-by-using-the-editor-viewport-adornment-template"></a>使用编辑器视区修饰模板创建视区修饰扩展
 
-1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `ViewportAdornment`。 单击“确定”。
+1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `ViewportAdornment`。  单击 **“确定”** 。
 
-2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑视区装饰**"。 保留默认文件名 (*ViewportAdornment1.cs/vb*) "。
+2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑视区装饰**"。 保留默认文件名 (*ViewportAdornment1/vb*) 。
 
 3. 有两个代码文件，如下所示：
 
-    - *ViewportAdornment1.cs* 包含 `ViewportAdornment1` 类。
+    - *ViewportAdornment1* 包含 `ViewportAdornment1` 类。
 
-    - *ViewportAdornment1TextViewCreationListener.cs* 包含 `ViewportAdornment1TextViewCreationListener` 类
+    - *ViewportAdornment1TextViewCreationListener* 包含 `ViewportAdornment1TextViewCreationListener` 类
 
 4. 生成项目并启动调试。 这将显示实验实例。 如果创建一个新的文本文件，则会在视区的右上角显示一个具有红色边框的紫罗兰框。
 
@@ -86,15 +86,15 @@ ms.locfileid: "99884983"
 
 ### <a name="to-create-a-margin-extension-by-using-the-editor-margin-template"></a>使用编辑器边距模板创建边距扩展
 
-1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `MarginExtension`。 单击“确定”。
+1. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** "，然后单击 " **扩展性**"。 在 " **模板** " 窗格中选择 " **VSIX 项目**"。 在“名称”框中键入 `MarginExtension`。  单击 **“确定”** 。
 
-2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑器边距**"。 保留默认文件名 (EditorMargin1.cs/vb) "。
+2. 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 中转到 "Visual c # **扩展性** " 节点，并选择 " **编辑器边距**"。 保留默认文件名 (EditorMargin1/vb) 。
 
 3. 有两个代码文件，如下所示：
 
-    - *EditorMargin1.cs* 包含 `EditorMargin1` 类。
+    - *EditorMargin1* 包含 `EditorMargin1` 类。
 
-    - *EditorMargin1Factory.cs* 包含 `EditorMargin1Factory` 类。
+    - *EditorMargin1Factory* 包含 `EditorMargin1Factory` 类。
 
 4. 生成此项目并开始调试。 这将显示实验实例。 如果打开一个文本文件，则会在水平滚动条下显示具有 " **Hello EditorMargin1** " 字样的绿色边距。
 

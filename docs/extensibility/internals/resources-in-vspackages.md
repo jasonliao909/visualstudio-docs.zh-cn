@@ -9,17 +9,17 @@ helpviewer_keywords:
 - resources, managed VSPackages
 - VSPackages, managed resources
 ms.assetid: cc8c17a6-b190-4856-b001-0c1104f104b2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48f88f48f62818882dd15889cdfa1bd2a48d9808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905817"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074387"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的资源
 可以将本地化的资源嵌入到本机附属 UI Dll、托管的附属 Dll 或托管的 VSPackage 本身中。

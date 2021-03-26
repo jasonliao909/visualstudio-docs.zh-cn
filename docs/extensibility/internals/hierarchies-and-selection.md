@@ -9,17 +9,17 @@ helpviewer_keywords:
 - selection
 - hierarchies
 ms.assetid: cad0a859-7a84-4ce5-b0a9-f7f64e5f8ebb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98f3dcfa73387f2b90ed829df198d3e9f0ccb2ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 927d55a5217699222aadcbcb7a3526f22e010e8f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880043"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074725"
 ---
 # <a name="hierarchies-and-selection"></a>层次结构和选择
 自定义时 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，应了解如何 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 处理项目的层次结构，以及如何使用选择上下文来确定向用户显示的内容。 本部分讨论 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 层次结构和选择的概念。

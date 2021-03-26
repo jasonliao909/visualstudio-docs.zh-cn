@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
 ms.assetid: c0cc5e08-4897-44f2-8309-e3478f1f999e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b847fad9752c6a2448c0fdc571815ea1823e2d9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6c93d90771eeffbfe28ae91781403019743afa9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944890"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089142"
 ---
 # <a name="create-an-extension-with-a-vspackage"></a>使用 VSPackage 创建扩展
 
@@ -29,7 +29,7 @@ ms.locfileid: "99944890"
 
 1. 创建名为 **FirstPackage** 的 VSIX 项目。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
 
-2. 项目打开时，添加一个名为 **FirstPackage** 的 Visual Studio 包项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **visual c #**  >  **扩展性**" 并选择 " **visual Studio 包**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstPackage.cs*。
+2. 项目打开时，添加一个名为 **FirstPackage** 的 Visual Studio 包项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，选择 " **visual c #**  >  **扩展性**" 并选择 " **visual Studio 包**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *FirstPackage*。
 
 3. 生成项目并启动调试。
 
@@ -41,7 +41,7 @@ ms.locfileid: "99944890"
 
 此时，不会加载扩展，因为没有任何导致加载的内容。 通常，当你与 UI (单击菜单命令、打开工具窗口) 或指定应在特定 UI 上下文中加载的 VSPackage 时，可以加载扩展。 有关加载 Vspackage 和 UI 上下文的详细信息，请参阅 [加载 vspackage](../extensibility/loading-vspackages.md)。 在此过程中，我们将向你演示如何在解决方案打开时加载 VSPackage。
 
-1. 打开 *FirstPackage.cs* 文件。 查找类的声明 `FirstPackage` 。 将现有属性替换为以下属性：
+1. 打开 *FirstPackage* 文件。 查找类的声明 `FirstPackage` 。 将现有属性替换为以下属性：
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -78,4 +78,4 @@ ms.locfileid: "99944890"
 
 3. 生成项目并启动调试。 这将显示实验实例。
 
-4. 在实验实例中打开解决方案。 应该会看到一个消息框，其中显示 " **初始化 ( # B1 内的第一个包**。
+4. 在实验实例中打开解决方案。 应该会看到一个消息框，其中显示 " **初始化 () 中的第一个包**。
