@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccDirQueryInfo function
 ms.assetid: 459e2d99-573d-47c4-b834-6d82c5e14162
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: da0d42e2ef65aefc03e2813f32189876d0c07da1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 81087d4f4da3435fb7bc80ec4a965394c7d6c7f3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220815"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060323"
 ---
 # <a name="sccdirqueryinfo-function"></a>SccDirQueryInfo 函数
 此函数检查当前状态的完全限定目录的列表。
@@ -54,7 +54,7 @@ LPLONG  lpStatus
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|查询成功。|
 |SCC_E_OPNOTSUPPORTED|源代码管理系统不支持此操作。|
@@ -69,6 +69,6 @@ LPLONG  lpStatus
 > [!NOTE]
 > 如果源代码管理插件选择不实现一个或多个状态值，则未实现的位应设置为零。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [目录状态代码](../extensibility/directory-status-code-enumerator.md)

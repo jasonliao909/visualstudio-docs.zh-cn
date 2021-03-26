@@ -9,17 +9,17 @@ helpviewer_keywords:
 - VSDIR files
 - template directory description files
 ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e2b56c061ce6e3124a7ed5a5dc00e41c3964204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898243"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080497"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 模板目录说明文件 () 是一个文本文件，该文件可使集成开发环境 (IDE) 显示与对话框中的项目相关联的文件夹、向导 .vsz 文件和模板文件。 内容包含每个文件或文件夹的一条记录。 尽管仅提供了一个 vsdir 文件来描述多个文件夹、向导或模板文件，但引用的位置中的所有 vsdir 文件都将合并。
@@ -33,7 +33,7 @@ HeaderFile.h|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#125|130|#126|0|0|0|#127
 SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 ```
 
- 在这种情况下，一个文件中有两个记录。 换行 (回车符) 分隔每条记录。 每行表示不同的文件类型。 管道 ( 将每个记录中的字段隔开) 字符。 单个目录可以包含多个文件名称不同的 vsdir 文件，也可以为每个文件类型使用一个 vsdir 文件。
+ 在这种情况下，一个文件中有两个记录。 换行 (回车符) 分隔每条记录。 每行表示不同的文件类型。 管道 (&#124;) 字符分隔每个记录中的字段。 单个目录可以包含多个文件名称不同的 vsdir 文件，也可以为每个文件类型使用一个 vsdir 文件。
 
 ## <a name="fields"></a>字段
  下表列出了为每个记录指定的字段。

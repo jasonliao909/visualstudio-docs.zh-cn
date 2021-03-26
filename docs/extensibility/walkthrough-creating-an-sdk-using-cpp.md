@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 36ea793b-3832-41a1-b906-69e680ad5e1d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3f9b9efc625b435f304b192d3ca52f514e682e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951909"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080406"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>演练：使用 c + + 创建 SDK
 本演练演示如何创建本机 c + + 数学库 SDK，将 SDK 打包为 Visual Studio 扩展 (VSIX) ，然后使用它来创建应用。 本演练分为以下几个步骤：

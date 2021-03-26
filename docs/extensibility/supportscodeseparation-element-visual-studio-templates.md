@@ -12,17 +12,17 @@ helpviewer_keywords:
 - SupportsCodeSeparation element [Visual Studio Templates]
 - <SupportsCodeSeparation> element [Visual Studio Templates]
 ms.assetid: 8112aac8-a269-40e5-b92b-9b9a6ff5a542
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4938d90c3122d7aa42582e68aa087a9068a1ac4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 699d38f712885d1e2b08a111baa7db75fb7829da
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869435"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056124"
 ---
 # <a name="supportscodeseparation-element-visual-studio-templates"></a>SupportsCodeSeparation 元素（Visual Studio 模板）
 指定是否在 "**添加新项**" 对话框中启用 "将 **代码放在单独的文件中**" 复选框。
@@ -57,7 +57,7 @@ ms.locfileid: "99869435"
  文本必须是 `true` 或 `false` ，指示是否在 "**添加新项**" 对话框中启用了 "将 **代码放在单独的文件中**" 复选框。
 
 ## <a name="remarks"></a>备注
- `SupportsCodeSeparation` 是可选元素。 默认值是 `false`。
+ `SupportsCodeSeparation` 是可选元素。 默认值为 `false`。
 
  `SupportsCodeSeparation`元素仅适用于 Web 项模板。
 

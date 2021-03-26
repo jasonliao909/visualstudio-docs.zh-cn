@@ -10,17 +10,17 @@ helpviewer_keywords:
 - syntax highlighting, supporting in language services [managed package framework]
 - language services [managed package framework], colorization
 ms.assetid: 1ca1736a-f554-42e4-a9c7-fe8c3c1717df
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14fc4a44a85171d209ec227f20e47775b34be22d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 627c0b5184588f77188928b6355a9034a3a3465e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898257"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080539"
 ---
 # <a name="syntax-colorizing-in-a-legacy-language-service"></a>旧版语言服务中的语法着色
 语法着色是一项功能，它使编程语言的不同元素显示在不同颜色和样式的源文件中。 若要支持此功能，需要提供可在文件中标识词法元素类型或标记的分析器或扫描程序。 许多语言将关键字、分隔符 (如圆括号或大括号) 以及注释通过以不同方式着色来区分。

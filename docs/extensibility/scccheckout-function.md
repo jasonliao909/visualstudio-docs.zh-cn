@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccCheckout function
 ms.assetid: 06e9ecd7-fc09-40c1-9dd1-2b56c622c80b
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ed6b494957374244d98f0cca59a063e5a6648c4
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f93052ebe255cddb4703a8246b7e89c744548a7f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221622"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060375"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 提供完全限定的文件名的列表后，此函数会将其签出到本地驱动器。 注释适用于所有正在签出的文件。Comment 参数可以是一个 `null` 字符串。
@@ -69,7 +69,7 @@ SCCRTN SccCheckout (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功签出。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
@@ -81,6 +81,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|其他用户已在此文件上执行了独占签出。|
 |SCC_I_OPERATIONCANCELED|操作在完成前被取消。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的 Bitflags](../extensibility/bitflags-used-by-specific-commands.md)

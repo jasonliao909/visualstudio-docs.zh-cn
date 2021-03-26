@@ -6,18 +6,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: ad02477b-e101-4f32-aeb7-292bf95d5c2f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 84e9b08350cf5977269bfbcf28ca5335e17f024d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8442e24bf971b8a2a0bcf5baeeb397e4646ba766
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893400"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060271"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义 Visual Studio 项目和项模板2017
 
@@ -35,7 +35,7 @@ ms.locfileid: "99893400"
 
 ## <a name="how-to-update-a-vsix-extension-with-project-or-item-templates"></a>如何使用项目或项模板更新 VSIX 扩展
 
-1. 在 Visual Studio 2017 中打开解决方案。 系统会要求升级代码。 单击“确定”。
+1. 在 Visual Studio 2017 中打开解决方案。 系统会要求升级代码。 单击 **“确定”** 。
 
 2. 升级完成后，可能需要更改安装目标的版本。 在 VSIX 项目中，打开 source.extension.vsixmanifest 文件，然后选择 " **安装目标** " 选项卡。如果 **版本范围** 字段为 **[14.0]**，请单击 " **编辑** " 并将其更改为包括 Visual Studio 2017。 例如，可以将其设置为 **[14.0，15.0]** ，将扩展安装到 visual studio 2015 或 visual studio 2017，或设置为 **[15.0]** ，以仅将其安装到 visual studio 2017。
 

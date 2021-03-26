@@ -5,20 +5,20 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 1f1ede0e642f14581d13d571acf67a952360bf65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce834a2c949c55a6deeb6b7c7d0a9751771e316
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838690"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080393"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：使用 c # 或 Visual Basic 创建 SDK
 在本演练中，你将学习如何使用 Visual c # 创建一个简单的数学库 SDK，然后将 SDK 打包为 Visual Studio 扩展 (VSIX) 。 你将完成以下过程：
@@ -41,7 +41,7 @@ ms.locfileid: "99838690"
 
 4. 在 **解决方案资源管理器** 中，打开 **SimpleMath** 项目节点的快捷菜单，然后选择 " **属性**"。
 
-5. 将 **Class1.cs** 重命名为 **Arithmetic.cs** ，并对其进行更新以匹配以下代码：
+5. 将 **Class1** 重命名为 " **.cs** " 并对其进行更新以匹配以下代码：
 
     [!code-csharp[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.cs)]
     [!code-vb[CreatingAnSDKUsingWinRT#3](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_1.vb)]
@@ -234,7 +234,7 @@ ms.locfileid: "99838690"
     </Page>
     ```
 
-11. 更新 **MainPage.xaml.cs** 以匹配以下代码：
+11. 更新 **MainPage** ，使其与以下代码相匹配：
 
      [!code-csharp[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/CSharp/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.cs)]
      [!code-vb[CreatingAnSDKUsingWinRTDemoApp#2](../extensibility/codesnippet/VisualBasic/walkthrough-creating-an-sdk-using-csharp-or-visual-basic_5.vb)]

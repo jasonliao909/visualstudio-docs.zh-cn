@@ -7,20 +7,20 @@ helpviewer_keywords:
 - GetArrayTypeFromAddress
 - IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 ms.assetid: cc0c53f1-8c0f-49fa-8dbe-bc155e9ce0ef
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d177f49ad5f86e3b64e62dffdc7408c61d2f3d05
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 8ef35ee307dcc971c29519a944c68eb0e07d7ffa
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102163936"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105088167"
 ---
 # <a name="idebugcomplussymbolprovidergetarraytypefromaddress"></a>IDebugComPlusSymbolProvider::GetArrayTypeFromAddress
 根据给定的调试地址检索有关指定数组的类型信息。

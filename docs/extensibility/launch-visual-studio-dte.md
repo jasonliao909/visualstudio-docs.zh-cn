@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
 ms.topic: conceptual
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2c3703cf0e95b83492f1cb50548d9a90336e34a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848138"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060570"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 启动 Visual Studio
 
@@ -33,7 +33,7 @@ ms.locfileid: "99848138"
 
 3. 添加对 EnvDTE 的引用。
 
-4. 将下面的 [示例代码](#example-code) 粘贴到 *Program.cs* 文件中。
+4. 将下面的 [示例代码](#example-code) 粘贴到 *程序 .cs* 文件中。
 
 5. 按 **F5** 运行该程序。 在程序退出之前，你应该会看到 Visual Studio 2019 处于打开状态。
 
