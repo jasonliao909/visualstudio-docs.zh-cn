@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
 ms.assetid: 008a20c7-1b27-4013-bf96-d6a3f510da02
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0957a204a83ab72aabe14fe4a70d8e758e83a08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35ccfc921f8175a92b0a082798ce8ccc44990d2e
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840582"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105096975"
 ---
 # <a name="evaluation-context"></a>评估上下文
 > [!IMPORTANT]
@@ -26,7 +26,7 @@ ms.locfileid: "99840582"
 
  当调试引擎 (DE) 调用表达式计算器 (EE) 时，三个传递给 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 的参数将确定用于查找和计算符号的上下文，如下表所示。
 
-## <a name="arguments"></a>自变量
+## <a name="arguments"></a>参数
 
 |参数|说明|
 |--------------|-----------------|

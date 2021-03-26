@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccPopulateDirList function
 ms.assetid: dfff634b-b155-498b-a356-6eb252ac4fad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 991803511e48e72012c868eaa4b0afbd889b2380
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 5d04fc7796db57dedcf8af495c67876cd4974ab1
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221504"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063742"
 ---
 # <a name="sccpopulatedirlist-function"></a>SccPopulateDirList 函数
 给定要检查的目录列表，此函数确定哪些目录和 (可) 选择将文件存储在源代码管理中。
@@ -64,7 +64,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功完成该操作”。|
 |SCC_E_UNKNOWNERROR|出现了错误。|
@@ -72,7 +72,7 @@ SCCRTN SccPopulateDirList(
 ## <a name="remarks"></a>备注
  仅在源代码管理存储库中实际具有的这些目录和 (（可选）) 文件名称将传递给回调函数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)
 - [POPDIRLISTFUNC](../extensibility/popdirlistfunc.md)
