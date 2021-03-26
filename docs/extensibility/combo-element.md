@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Combos element (VSCT XML schema)
 - VSCT XML schema elements, Combos
 ms.assetid: 392e3063-f0a0-4130-9583-23bd2aa3fa36
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc495727fd06bec0d20cab25a7cd8c4716bcc19e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e4a4895997e5c7511c694511000f7a0ac671db2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938377"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089740"
 ---
 # <a name="combo-element"></a>组合元素
 定义在组合框中显示的命令。 有四种类型的组合框，如下所示： DropDownCombo、DynamicCombo、IndexCombo 和 MRUCombo。
@@ -38,15 +38,15 @@ ms.locfileid: "99938377"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|guid|必需。 GUID/ID 命令标识符的 GUID。|
+|GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
 |defaultWidth|必需。 一个整数，指定组合框的像素宽度。|
 |idCommandList|必需。 发送到活动命令目标的 ID，用于检索要在组合框中显示的项的列表。 该 ID 将与控件位于同一 GUID 范围内。|
 |priority|可选。 一个指定优先级的数值。|
 |type|可选。 一个枚举值，该值指定按钮的类型。<br /><br /> 如果未提供，则使用按钮。<br /><br /> DropDownCombo<br /> VSPackage 负责填充此组合框的内容。 用户不能在此下拉框的文本框中键入任何内容。<br /><br /> DynamicCombo<br /> VSPackage 负责填充此组合框的内容。 用户可以编辑此组合，还可以选择其中的项。<br /><br /> IndexCombo<br /> 与 DynamicCombo 相同，不同之处在于它会引发项（而不是其文本）的索引。<br /><br /> MRUCombo<br /> 由集成开发环境 (IDE) 代表 VSPackage 进行填充。  用户可在此组合框中进行编辑。 IDE 将为每个组合框最多记住最后16个条目。<br /><br /> 当用户在组合框中选择一些内容或输入一些新内容时，IDE 将通知相应的 VSPackage。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 

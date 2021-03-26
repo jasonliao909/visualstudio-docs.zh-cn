@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 564201b3-1e18-4b88-b615-42c2f57f3fe8
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c0286bb35f8a58a2f5fd6cfa95cff62d523567c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af9be2c4a57763b4521f3564e95c760e5bdd566d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883553"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091157"
 ---
 # <a name="net-compiler-platform-quotroslynquot-extensibility"></a>.NET Compiler Platform (&quot; Roslyn &quot;) 扩展性
 .NET Compiler Platform ( "Roslyn" ) 的核心任务是打开 c # 和 Visual Basic 编译器，并允许工具和开发人员在丰富的信息编译器中共享程序。 代码分析工具改善了代码质量，并在应用程序构造中提供了代码生成器帮助。 随着工具更智能化，他们需要访问仅有编译器拥有的更深入的代码知识。 Roslyn 编译器提供了 Api，可用于工具和应用程序中与代码相关的任务，而不是在和对象代码 out) 中 (源代码。

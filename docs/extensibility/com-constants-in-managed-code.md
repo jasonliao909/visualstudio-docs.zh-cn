@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 448c87bfff021db3df8f72f2f5a42c78cd6ef197
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913107"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089727"
 ---
 # <a name="com-constants-in-managed-code"></a>托管代码中的 COM 常量
 托管包框架 (MPF) 使某些标准 COM 常量可用于托管代码。 下面列出了这些常量供你参考。

@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Commands element (VSCT XML schema)
 - VSCT XML schema elements, Commands
 ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90670188e3ce1aa621e53c69bad6f795ff30fd8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 671e855a31af17310fdab58689d8775b490cb93a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887427"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089584"
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 VSPackage 工具栏上命令的集合。 集合最多可以包含五个子节，如下所示：菜单、组、按钮、combos 和位图。
@@ -44,7 +44,7 @@ ms.locfileid: "99887427"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |包|标识提供命令的 VSPackage 的 GUID。<br /><br /> 例如，package = "guidVsPackage1Pkg"。|
 

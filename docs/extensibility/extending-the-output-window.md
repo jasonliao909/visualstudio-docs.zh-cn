@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91c59737d269af4eb91df402f38346cf41e3146e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961763"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105075024"
 ---
 # <a name="extend-the-output-window"></a>扩展 "输出" 窗口
 " **输出** " 窗口是一组读/写文本窗格。 Visual Studio 包含这些内置窗格： " **生成**"，其中的项目用于传达有关生成的消息 **，并传达** 有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的消息。 项目通过接口方法自动获得对 " **生成** " 窗格的引用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，Visual Studio 通过服务提供对 **常规** 窗格的直接访问 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了内置窗格外，还可以创建和管理自己的自定义窗格。
@@ -35,14 +35,14 @@ ms.locfileid: "99961763"
 
     2. EnvDTE80
 
-3. 在 *TestOutput.cs* 中，添加以下 using 语句：
+3. 在 *为 testoutput.txt* 中，添加以下 using 语句：
 
     ```f#
     using EnvDTE;
     using EnvDTE80;
     ```
 
-4. 在 *TestOutput.cs* 中，删除 `ShowMessageBox` 方法。 添加以下方法存根：
+4. 在 *为 testoutput.txt* 中，删除 `ShowMessageBox` 方法。 添加以下方法存根：
 
     ```csharp
     private void OutputCommandHandler(object sender, EventArgs e)

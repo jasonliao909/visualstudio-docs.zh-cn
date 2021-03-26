@@ -8,17 +8,17 @@ ms.topic: reference
 helpviewer_keywords:
 - Description element [Visual Studio project templates]
 ms.assetid: 6e12be73-081f-4c7d-898f-027c307a9fe1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a88535f4d41772c8d3b6ebc8a62e5c8aaea866ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a48e80800480a6e6fa1d9576b83112fd7cdcff4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968328"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091287"
 ---
 # <a name="description-element-visual-studio-templates"></a>Visual Studio 模板 (Description 元素) 
 指定在 " **新建项目** " 或 " **添加新项** " 对话框中显示的模板的说明。
@@ -43,7 +43,7 @@ ms.locfileid: "99968328"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Package`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 包 ID 的 GUID。|
 |`ID`|可选属性，适用于高级用户方案。<br /><br /> 指定 Visual Studio 资源 ID。|

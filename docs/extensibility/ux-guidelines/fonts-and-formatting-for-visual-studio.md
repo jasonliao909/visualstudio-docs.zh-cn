@@ -5,17 +5,17 @@ ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: conceptual
 ms.assetid: c3c3df69-83b4-4fd0-b5b1-e18c33f39376
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1b9b7e7f20c93cd2067d1210245da8ef6ce8813
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a55ad867e91a79689a1983837f5ba0030e10a35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952026"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089922"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -391,7 +391,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 #### <a name="italics"></a>斜体
  Visual Studio 不使用斜体或粗体斜体文本。
 
-#### <a name="color"></a>Color
+#### <a name="color"></a>颜色
 
 - 将为 (导航和命令) 的超链接保留蓝色，不应将其用于方向。
 

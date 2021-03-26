@@ -10,17 +10,17 @@ helpviewer_keywords:
 - Options dialog box, controlling with the Visual Studio SDK
 - VSPackages, user preferences
 ms.assetid: 5bb6277a-8c9d-48c8-9b4e-1cb3052caded
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9c51456654862a94c6caf4c1819a36f4656cc74
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afc0e9eb1904515554e08ae06a70fe5af8c1dd7b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862104"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105074998"
 ---
 # <a name="extend-user-settings-and-options"></a>扩展用户设置和选项
 在 Visual Studio 中，有两种主要方式来维护用户首选项。 "**工具**  >  **选项**" 页允许用户为多种不同类型的设置（常规和特定于语言）设置自己的值。 用户设置允许用户指定常规 Visual Studio 配置属性。 有关选项页的详细信息，请参阅 " [选项" 和 "选项" 页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置的详细信息，请参阅 [对用户设置的支持](../extensibility/internals/support-for-user-settings.md)。

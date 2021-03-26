@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Strings element (VSCT XML schema)
 - VSCT XML schema elements, Strings
 ms.assetid: 23a42074-a689-481d-824f-b43aa448f266
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7951d0c72c3fd6a1897224d9606abdfec9a60053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0bd9ad9b8059eb7fd566c1e0c26a938af6d18b2
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99848007"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089896"
 ---
 # <a name="strings-element"></a>Strings 元素
 String 元素必须包含至少一个 **ButtonText** 子元素。 所有其他子元素都是可选的。 无效的 XML 字符（如 "&" 和 "<"）必须编码为实体 ( " &amp; " 和 " &lt;) " 等。
@@ -39,7 +39,7 @@ String 元素必须包含至少一个 **ButtonText** 子元素。 所有其他�
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |语言|可选。 Language = "."。|
 

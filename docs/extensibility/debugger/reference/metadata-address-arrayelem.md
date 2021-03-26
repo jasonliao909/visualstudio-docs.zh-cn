@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - METADATA_ADDRESS_ARRAYELEM structure
 ms.assetid: 24321be5-7c17-4038-82a1-c20a2b68ff3c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b7573caf0fee3d3389a212cb9f4012178642e23
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 319b10658950eb5c7e9f8972e6af8f9f5146980d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223987"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105091482"
 ---
 # <a name="metadata_address_arrayelem"></a>METADATA_ADDRESS_ARRAYELEM
 
@@ -63,7 +63,7 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

@@ -9,17 +9,17 @@ helpviewer_keywords:
 - toolbox
 - wpf
 ms.assetid: 9cc34db9-b0d1-4951-a02f-7537fbbb51ad
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9b401baf1605a869772ba41ce83ad906061f8144
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dccdeb09a938b3b0bbbab803faeed538001b825
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851434"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105089246"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 
@@ -33,7 +33,7 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许您创建在安�
 
 1. 创建一个名为的 VSIX 项目 `MyToolboxControl` 。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
 
-2. 当项目打开时，添加一个名为的 **WPF 工具箱控件** 项模板 `MyToolboxControl` 。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，单击 " **Visual c #**  >  **扩展性**"，然后选择 **"WPF 工具箱控件"**。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *MyToolboxControl.cs*。
+2. 当项目打开时，添加一个名为的 **WPF 工具箱控件** 项模板 `MyToolboxControl` 。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项**" 对话框中，单击 " **Visual c #**  >  **扩展性**"，然后选择 **"WPF 工具箱控件"**。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *MyToolboxControl*。
 
     解决方案现在包含一个用户控件，一个 `ProvideToolboxControlAttribute` <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute> 将控件添加到 " **工具箱**" 中，将 " **VisualStudio. ToolboxControl** " 资产条目添加到部署的 VSIX 清单中。
 
@@ -57,9 +57,9 @@ WPF (Windows Presentation Framework) 工具箱控件模板允许您创建在安�
 
 ## <a name="renaming-the-control"></a>重命名控件
 
- 默认情况下，控件将在 "**工具箱**" 中显示为名为 **MyToolboxControl MyToolboxControl** 的组中的 **MyToolboxControl** 。 可以在 *MyToolboxControl.xaml.cs* 文件中更改这些名称。
+ 默认情况下，控件将在 "**工具箱**" 中显示为名为 **MyToolboxControl MyToolboxControl** 的组中的 **MyToolboxControl** 。 可以在 *MyToolboxControl* 文件中更改这些名称。
 
-1. 在代码视图中打开 *MyToolboxControl.xaml.cs* 。
+1. 在代码视图中打开 *MyToolboxControl* 。
 
 2. 找到 `MyToolboxControl` 类，然后将其重命名为 TestControl。  (最快的方法是重命名类，然后从上下文菜单中选择 " **重命名** " 并完成这些步骤。  (有关 " **重命名** " 命令的详细信息，请参阅 [重命名重构 (c # )](../ide/reference/rename.md)。 ) 
 

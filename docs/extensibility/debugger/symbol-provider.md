@@ -8,17 +8,17 @@ helpviewer_keywords:
 - symbol handler
 - debugging [Debugging SDK], symbol handler
 ms.assetid: 5fce651b-fead-4418-81b0-a011df7644ab
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ae3cd813b79eca1fe64328e890f4a37cc03b0d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 132e3c15eed86c9008e49b74b6da6e5da5a3ce33
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960658"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105079379"
 ---
 # <a name="symbol-provider"></a>符号提供程序
 表达式计算器实现必须访问语言编译器生成的符号调试信息，才能计算变量和表达式。 它通过使用符号提供程序 (SP) （也称为符号处理程序）的接口来实现此目的。
