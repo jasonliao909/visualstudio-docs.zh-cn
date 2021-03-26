@@ -8,20 +8,20 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugPort2::GetPortRequest
 ms.assetid: 14abf847-0675-4fa8-872e-971e00c84224
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 084e8bb94356ea4e2cff1fa83e83e7e08b35134e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 77224f98d953b61529ffed083e7be4cee0ed662f
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102142864"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105087478"
 ---
 # <a name="idebugport2getportrequest"></a>IDebugPort2::GetPortRequest
 获取以前用于创建端口 (（如果可用）) 的端口的说明。

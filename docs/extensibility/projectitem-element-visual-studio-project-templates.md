@@ -11,17 +11,17 @@ helpviewer_keywords:
 - ProjectItem element [Visual Studio project templates]
 - <ProjectItem> element [Visual Studio project templates]
 ms.assetid: 82879fbe-7756-42cd-9a07-c10edf5b4673
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3e0cf60b260204ac3b97a222591946765cf8bb80
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bb7513a37f73bfd4dfc1cb8060c772d375a57329
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910969"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068734"
 ---
 # <a name="projectitem-element-visual-studio-project-templates"></a>项目项元素 (Visual Studio 项目模板) 
 指定项目模板中包含的文件。
@@ -50,15 +50,15 @@ ms.locfileid: "99910969"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-| 特性 | 描述 |
+| 属性 | 描述 |
 |---------------------| - |
 | `TargetFileName` | 可选特性。<br /><br /> 指定从模板创建项目时项目项的名称和路径。 此属性用于创建与模板 *.zip* 文件中的目录结构不同的目录结构，或用于创建项名称的。 |
 | `ReplaceParameters` | 可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时，项是否具有必须替换的参数值。 默认值为 `false`。 |
-| `OpenInEditor` | 可选特性。<br /><br /> 一个布尔值，指定在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 从模板创建项目时，是否应在其各自的编辑器中打开该项。<br /><br /> `OpenInWebBrowser` `OpenInHelpBrowser` 对于值为的项，将忽略和特性 `OpenInEditor` `true` 。<br /><br /> 默认值是 `false`。 |
-| `OpenInWebBrowser` | 可选特性。<br /><br /> 一个布尔值，指定从模板创建项目时是否应在 Web 浏览器中打开该项。<br /><br /> 只有项目的本地 HTML 文件和文本文件才能在 Web 浏览器中打开。 不能用此属性打开外部 Url。<br /><br /> 默认值是 `false`。 |
-| `OpenInHelpBrowser` | 可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时是否应在帮助查看器中打开该项。<br /><br /> 只有项目的本地 HTML 文件和文本文件才能在帮助浏览器中打开。 不能用此属性打开外部 Url。<br /><br /> 默认值是 `false`。 |
+| `OpenInEditor` | 可选特性。<br /><br /> 一个布尔值，指定在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 从模板创建项目时，是否应在其各自的编辑器中打开该项。<br /><br /> `OpenInWebBrowser` `OpenInHelpBrowser` 对于值为的项，将忽略和特性 `OpenInEditor` `true` 。<br /><br /> 默认值为 `false`。 |
+| `OpenInWebBrowser` | 可选特性。<br /><br /> 一个布尔值，指定从模板创建项目时是否应在 Web 浏览器中打开该项。<br /><br /> 只有项目的本地 HTML 文件和文本文件才能在 Web 浏览器中打开。 不能用此属性打开外部 Url。<br /><br /> 默认值为 `false`。 |
+| `OpenInHelpBrowser` | 可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时是否应在帮助查看器中打开该项。<br /><br /> 只有项目的本地 HTML 文件和文本文件才能在帮助浏览器中打开。 不能用此属性打开外部 Url。<br /><br /> 默认值为 `false`。 |
 | `OpenOrder` | 可选特性。<br /><br /> 指定一个数字值，该值表示将在各自的编辑器中打开项的顺序。 所有值都必须是10的倍数。 `OpenOrder`将首先打开值较高的项。 |
 
 ### <a name="child-elements"></a>子元素

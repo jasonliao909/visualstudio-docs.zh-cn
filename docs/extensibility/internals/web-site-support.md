@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web site projects
 ms.assetid: ce9f4266-bb64-4c09-be88-4bd6413f60d0
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 141e4acf7db61130de859f38891670e69d3bd640
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16de0fdc2c4e65dfe6c2ae2c6dc3cdc6902fa8b0
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940015"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069089"
 ---
 # <a name="web-site-support"></a>网站支持
 网站项目系统是用于创建 Web 项目的项目系统。 Web 项目，然后创建 Web 应用程序。 网站项目为每个包含关联代码的网页生成一个可执行文件。 其他可执行文件是从/App_Code 文件夹中的源代码文件生成的。

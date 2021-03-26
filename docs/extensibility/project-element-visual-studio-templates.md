@@ -11,17 +11,17 @@ helpviewer_keywords:
 - Project element [Visual Studio Templates]
 - <Project> element [Visual Studio Templates]
 ms.assetid: 1da15ea6-26e2-462b-a03e-584ef4996579
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8373501f324882c541784c6786b6b9f04a76069
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 52bfb5f65aa9d42c46eece619a21152c51e8fa28
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959449"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068799"
 ---
 # <a name="project-element-visual-studio-templates"></a>Visual Studio 模板 (项目元素) 
 指定要添加到项目中的文件或目录。
@@ -44,9 +44,9 @@ ms.locfileid: "99959449"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`File`|必需的特性。<br /><br /> 指定模板 *.zip* 文件中的项目文件的名称。|
 |`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时，项目文件是否具有必须替换的参数值。 默认值为 `false`。|

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
 ms.assetid: 4a4faa0d-d352-40ea-a21d-c09ea286a8e1
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00d6b3e27b87e4bac8cee196a60e7fc934f6187d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886738"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063989"
 ---
 # <a name="message-enumerator"></a>消息枚举器
 以下标志用于 `TEXTOUTPROC` 函数，该函数是 IDE 在调用 [SccOpenProject](../extensibility/sccopenproject-function.md) 时提供的回调函数 (请参阅 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) ，以获取回调函数) 的详细信息。

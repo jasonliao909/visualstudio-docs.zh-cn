@@ -8,17 +8,17 @@ helpviewer_keywords:
 - publishing web controls
 - web controls, publishing
 ms.assetid: a7816161-0490-4043-86f5-0f7331ed83b3
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda44c0c3f6c4b1986fc45a7c9cbf5c4ffa83043
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b1ff7d55f7d667ca8b07134e144ad192b9d19d8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889000"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078352"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布 Visual Studio 扩展
 
@@ -220,7 +220,7 @@ Visual Studio Marketplace 支持向其他用户授予访问和管理发布者帐
 
 2. 在右上角，单击 " **发布** 扩展"。 选择发布 **TestPublish** 时所用的发布服务器。 此时将显示 **TestPublish** 的列表。
 
-3. 右键单击该扩展条目，然后单击 " **删除**"。 系统会要求确认是否要删除该扩展。 单击“确定”。
+3. 右键单击该扩展条目，然后单击 " **删除**"。 系统会要求确认是否要删除该扩展。 单击 **“确定”** 。
 
 ### <a name="to-remove-the-extension-from-your-computer"></a>从计算机中删除扩展
 
