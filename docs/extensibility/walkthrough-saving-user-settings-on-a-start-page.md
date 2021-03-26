@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 ms.assetid: 754b9bf3-8681-4c77-b0a4-09146a4e1d2d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: e32db6c2aecde61598036b8ba2ed21141e41a4af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be270fe8b76b6cd07bd27350eabceb5eecbc446b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888935"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078326"
 ---
 # <a name="walkthrough-save-user-settings-on-a-start-page"></a>演练：在起始页上保存用户设置
 
@@ -79,7 +79,7 @@ ms.locfileid: "99888935"
 
 1. 在 "XAML" 窗格中，右键单击 `Click` 元素的特性 <xref:System.Windows.Controls.Button> ，然后单击 " **导航到事件处理程序**"。
 
-     此步骤将打开 *MyControl.xaml.cs*，并为事件创建存根处理程序 `Button_Click` 。
+     此步骤将打开 *mycontrol.xaml*，并为事件创建一个存根处理程序。 `Button_Click`
 
 2. 将以下 `using` 指令添加到文件顶部。
 
@@ -170,7 +170,7 @@ ms.locfileid: "99888935"
 
 3. 在 " **环境** " 节点中，单击 " **启动**"，然后在 " **自定义起始页** " 列表中，选择 " **已安装扩展" "保存我的设置起始页**"。
 
-     单击“确定”。
+     单击 **“确定”** 。
 
 4. 如果 "起始页" 处于打开状态，请将其关闭，然后在 " **视图** " 菜单上单击 " **起始页**"。
 

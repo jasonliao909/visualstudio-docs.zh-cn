@@ -10,17 +10,17 @@ helpviewer_keywords:
 - QUERYCHANGESFUNC callback function
 - QUERYCHANGESDATA structure
 ms.assetid: 9d383e2c-eee1-4996-973a-0652d4c5951c
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8abe32abcb79fada541124f50a750fb4c1edde58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc797d68f6df6d9aab93554ba95955a7d9f45eea
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910872"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068617"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 操作用于枚举文件名集合并确定每个文件的状态的回调函数。
@@ -36,7 +36,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 );
 ```
 
-## <a name="parameters"></a>parameters
+## <a name="parameters"></a>参数
  pvCallerData
 
 中 `pvCallerData` 调用方传递的参数 (IDE) 为 [SccQueryChanges](../extensibility/sccquerychanges-function.md)。 源代码管理插件不应假设此值的内容。

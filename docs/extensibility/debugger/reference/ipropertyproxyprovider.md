@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IPropertyProxyProvider interface
 ms.assetid: 52e9f7fc-6fe0-4d23-890b-5673dca8c3cb
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d8d92f6d616d86b82a9f4efa443f459a082256e
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 87bc0bfa11c54f8eade595f6bf0bfaba1fa277ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102225534"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105058087"
 ---
 # <a name="ipropertyproxyprovider"></a>IPropertyProxyProvider
 此接口提供代理接口以查看和更改对象的数据。
@@ -38,7 +38,7 @@ IPropertyProxyProvider : IUnknown
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序的方法
  `IPropertyProxyProvider`接口实现以下方法：
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md)|检索用于查看对象上数据的属性代理接口。|
 
@@ -52,7 +52,7 @@ IPropertyProxyProvider : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPropertyProxy](../../../extensibility/debugger/reference/ieevisualizerservice-getpropertyproxy.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)

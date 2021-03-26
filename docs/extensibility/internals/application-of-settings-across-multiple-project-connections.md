@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control plug-ins, application of settings
 ms.assetid: 2116d3d0-c46c-4d0a-b482-08a178584f46
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14b466112e3939756142a43568ddc3107e55d659
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71b4a3de89653ab63f57171bcb52ee32ddfcf07d
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906092"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078989"
 ---
 # <a name="application-of-settings-across-multiple-project-connections"></a>跨多个项目连接应用设置
 使用源代码管理插件 API 版本1.2 生成的源代码管理插件可以使用批处理操作来跨多个项目或多个连接上下文执行相同的源代码管理操作。 批处理可用于从用户体验中消除冗余的、每个项目的对话框。

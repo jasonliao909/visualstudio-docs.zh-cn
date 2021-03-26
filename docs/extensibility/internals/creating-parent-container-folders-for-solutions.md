@@ -8,17 +8,17 @@ helpviewer_keywords:
 - solutions, creating parent containers
 - source control plug-ins, creating parent containers
 ms.assetid: 961e68ed-2603-4479-a306-330eda2b2efa
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 39e61e3566f848e23fdea7b4fb4d0ea5bc181370
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c9b3b5c01e9c1ad5de9fbb0a44398d3f7963295
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903148"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105056828"
 ---
 # <a name="create-parent-container-folders-for-solutions"></a>为解决方案创建父容器文件夹
 在源代码管理插件 API 版本1.2 中，用户可以为解决方案中的所有 web 项目指定一个根源代码管理目标。 此单个根称为超级统一根 (.SUR) 。
@@ -49,8 +49,8 @@ ms.locfileid: "99903148"
 
 |功能|源代码管理插件 API 版本1。1|源代码管理插件 API 版本1。2|
 |-------------| - | - |
-|将解决方案添加到 SCC|SccInitialize ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccOpenProject ( # A1|SccInitialize ( # A1<br /><br /> SccGetProjPath ( # A1<br /><br /> SccCreateSubProject ( # A1<br /><br /> SccCreateSubProject ( # A1<br /><br /> SccOpenProject ( # A1|
-|将项目添加到源代码管理的解决方案|SccGetProjPath ( # A1<br /><br /> OpenProject ( # A1|SccGetParentProjectPath ( # A1<br /><br /> SccOpenProject ( # A1<br /><br />  **注意：**  Visual Studio 假定解决方案是 .SUR 的直接子级。|
+|将解决方案添加到 SCC|SccInitialize () <br /><br /> SccGetProjPath () <br /><br /> SccGetProjPath () <br /><br /> SccOpenProject () |SccInitialize () <br /><br /> SccGetProjPath () <br /><br /> SccCreateSubProject () <br /><br /> SccCreateSubProject () <br /><br /> SccOpenProject () |
+|将项目添加到源代码管理的解决方案|SccGetProjPath () <br /><br /> OpenProject () |SccGetParentProjectPath () <br /><br /> SccOpenProject () <br /><br />  **注意：**  Visual Studio 假定解决方案是 .SUR 的直接子级。|
 
 ## <a name="examples"></a>示例
  下表列出了两个示例。 在这两种情况下， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 系统都会提示用户在源代码管理下输入解决方案的目标位置，直到将  *user_choice* 指定为目标。 当指定 user_choice 时，将添加解决方案和两个项目，而不提示用户提供源代码管理目标。

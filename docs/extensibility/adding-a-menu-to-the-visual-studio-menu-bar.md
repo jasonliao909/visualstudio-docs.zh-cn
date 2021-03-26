@@ -8,17 +8,17 @@ helpviewer_keywords:
 - menus, creating top level
 - top-level menus
 ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6bd568e53c3a74819f642f0593524b314e065afb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951558"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105078339"
 ---
 # <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
 
@@ -45,13 +45,13 @@ ms.locfileid: "99951558"
 
 ::: moniker range="vs-2017"
 
-2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *TestCommand.cs*。
+2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，选择 " **Visual c #/扩展性** "，然后选择 " **命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *TestCommand.cs*。
+2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，选择 " **Visual c #/扩展性** "，然后选择 " **命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
 
 ::: moniker-end
 
@@ -167,7 +167,7 @@ ms.locfileid: "99951558"
 
 3. 在 " **测试" 菜单** 菜单上，选择 " **测试命令**"。
 
-    将出现一个消息框，并显示消息 "Testcommand (内部 TopLevelMenu ( # A1"。
+    将出现一个消息框，并显示消息 "Testcommand (内部 TopLevelMenu. Testcommand (. MenuItemCallback () "。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 988b81e72ff7714cb8a0983655de551b54c9150c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940024"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069084"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供可重用且可自定义的网站项目和项存根，可通过无需从头开始创建新的网站项目和项来加速开发过程。 有关模板的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，请参阅 [创建项目和项模板](../../ide/creating-project-and-item-templates.md)。
@@ -65,7 +65,7 @@ ms.locfileid: "99940024"
 
 - web.config
 
-     根网站配置文件。
+     根 web.site 配置文件。
 
 - WebApplication
 
@@ -88,7 +88,7 @@ ms.locfileid: "99940024"
 
 - web.config
 
-- 根网站配置文件。
+- 根 web.site 配置文件。
 
 - WebService
 

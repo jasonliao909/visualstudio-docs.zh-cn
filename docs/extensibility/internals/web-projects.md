@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects
 ms.assetid: d9c0329f-4b0b-4fda-8061-cce69f2f502d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6b248556c8980c63422c20c160241af42fc6918b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a7cab5ad2572f775df8702f1d15d3bcf7db1ae8
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886855"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105069161"
 ---
 # <a name="web-projects"></a>Web 项目
 Web 项目系统是用于创建 Web 项目的项目系统。 Web 项目，然后创建 Web 应用程序。 您可以使用传统的编程语言（如 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或）来编写网页 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ，以便从用户那里收集和处理信息，将其存储在数据库中，等等。 具有关联代码的网页称为智能网页。

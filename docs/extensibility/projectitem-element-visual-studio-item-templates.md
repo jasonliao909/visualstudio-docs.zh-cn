@@ -11,17 +11,17 @@ helpviewer_keywords:
 - <ProjectItem> element [Visual Studio item templates]
 - ProjectItem element [Visual Studio item templates]
 ms.assetid: 9ed94112-0c38-49df-b728-0dd2d0d1eb47
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 201f6e7845f1294892836de4cca24195fb0f1596
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0910486202bca781ec19b6d5895e68ed93f8c3d5
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99928232"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105068708"
 ---
 # <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素（Visual Studio 项模板）
 指定项模板中包含的文件。
@@ -48,9 +48,9 @@ ms.locfileid: "99928232"
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各部分描述了特性、子元素和父元素。
 
-### <a name="attributes"></a>属性
+### <a name="attributes"></a>特性
 
-| 特性 | 描述 |
+| 属性 | 描述 |
 |---------------------| - |
 | `SubType` | 可选特性。<br /><br /> 指定多文件项模板中的项的子类型。 此值用于确定 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 将用于打开项的编辑器。 |
 | `CustomTool` | 可选特性。<br /><br /> 为项目文件中的项设置 CustomTool。 |

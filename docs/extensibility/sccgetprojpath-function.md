@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccGetProjPath function
 ms.assetid: 1079847e-d45f-4cb8-9d92-1e01ce5d08f6
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e3a08c09e1b04cf5e5f826520efcf64ead9113be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 07c6b8f865d8b1b1d87c9c9468d74e2208265290
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220698"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063963"
 ---
 # <a name="sccgetprojpath-function"></a>SccGetProjPath 函数
 此函数提示用户提供项目路径，该路径是仅对源代码管理插件有意义的字符串。 当用户：
@@ -79,18 +79,18 @@ SCCRTN SccGetProjPath (
 
 |传入|解释|
 |--------------|--------------------|
-|TRUE|用户可以创建新项目。|
+|true|用户可以创建新项目。|
 |false|用户可能不会创建新项目。|
 
 |传出|解释|
 |--------------|--------------------|
-|TRUE|已创建新项目。|
+|true|已创建新项目。|
 |false|已选择现有项目。|
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功创建或检索项目。|
 |SCC_I_OPERATIONCANCELED|该操作已取消。|
@@ -114,6 +114,6 @@ SCCRTN SccGetProjPath (
 
  例如，如果 Visual Studio 中的 " **新建项目** " 向导中的用户将其项目添加到源代码管理中，则 visual studio 将调用此函数，并且该插件将确定是否可以在源代码管理系统中创建新项目以包含 Visual Studio 项目。 如果用户在完成向导之前单击 " **取消** "，则永远不会创建该项目。 如果用户单击 **"确定"**，则 Visual Studio `SccOpenProject` 将调用 `SCC_OPT_CREATEIFNEW` 并传入，并且此时会创建源代码管理的项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

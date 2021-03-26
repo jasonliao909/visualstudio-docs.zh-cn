@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - web projects, essentials
 ms.assetid: ca2f4e43-322c-4431-8680-52da846940bc
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b071631018ef398be481ccf514b33296e55fc2e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9442dcdd460e1213c3c07ee87a5ea2e0d7099072
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886868"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085697"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 您可以使用 Web 项目来创建包含智能网页的 Web 应用程序。 智能网页包含按需呈现网页的服务器端代码。
 
  使用传统的编程语言（例如 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ），您可以创建智能网页来收集和处理用户的信息，将其存储在数据库中，等等。
 
-- 代码隐藏模型将相关的源代码文件与具有文件扩展名 .aspx 或 .asmx 的网页相关联。 例如，hello.aspx.cs 可能具有相关的源代码文件。
+- 代码隐藏模型将相关的源代码文件与具有文件扩展名 .aspx 或 .asmx 的网页相关联。 例如，hello 可能具有相关的源代码文件 "你好"。
 
 - 与智能网页关联的服务器端代码编译到位于网站/bin 文件夹中的可执行文件。
 

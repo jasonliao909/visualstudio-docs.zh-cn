@@ -7,24 +7,24 @@ ms.topic: conceptual
 helpviewer_keywords:
 - source control [Visual Studio SDK], model
 ms.assetid: 6164b2d3-a622-4de8-bef3-a6de985e9ebd
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 958465fc927464c46befb2422eb1286cda156916
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4e437afdfa0d3de03da6814e221840cbd0763fd
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895656"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063196"
 ---
 # <a name="model-for-source-control-packages"></a>源代码管理包的模型
 以下模型表示源代码管理实现的示例。 在模型中，可以看到必须实现的接口和必须调用的环境服务。 与所有服务一样，实际调用通过服务获取的特定接口的方法。 标识类的名称，以便更轻松地查看源代码管理的执行方式。
 
  ![SCC&#95;t 示例](../../extensibility/internals/media/scc_tup.gif "SCC_TUP") 示例源代码管理项目
 
-## <a name="interfaces"></a>界面
+## <a name="interfaces"></a>接口
  可以使用下表中显示的接口列表，在 Visual Studio 中为新项目类型实现源代码管理。
 
 |接口|用途|

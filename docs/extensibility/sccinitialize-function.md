@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccInitialize function
 ms.assetid: 5bc0d28b-2c68-4d43-9e51-541506a8f76e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986e3624b1716c782102f0f214283a7fa7020a08
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 9f266fbe27cb509d2d6dca47a913261eea7f937c
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220581"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063820"
 ---
 # <a name="sccinitialize-function"></a>SccInitialize 函数
 此函数初始化源代码管理插件，并向集成开发环境 (IDE) 提供功能和限制。
@@ -74,7 +74,7 @@ SCCRTN SccInitialize (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|源代码管理初始化成功。|
 |SCC_E_INITIALIZEFAILED|系统无法初始化。|
@@ -92,7 +92,7 @@ SCCRTN SccInitialize (
 
  `lpSccCaps`参数为源代码管理插件提供了一个用于存储 bitflags 的位置，用于指示插件的功能。  (获取功能 bitflags 的完整列表，请参阅 [功能标志](../extensibility/capability-flags.md)) 。 例如，如果插件计划将结果写入调用方提供的回调函数，该插件会将功能位设置 SCC_CAP_TEXTOUT。 这会通知 IDE 创建版本控制结果的窗口。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccUninitialize](../extensibility/sccuninitialize-function.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

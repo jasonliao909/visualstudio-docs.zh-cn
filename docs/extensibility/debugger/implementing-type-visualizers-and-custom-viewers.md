@@ -8,17 +8,17 @@ helpviewer_keywords:
 - debugging [Debugging SDK], custom viewer
 - debugging [Debugging SDK], type visualizer
 ms.assetid: abef18c0-8272-4451-b82a-b4624edaba7d
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8cf456dca27a45a2674f7138a6c0b21b12750c81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79df5f6c7bf11c791f8de415f7cf1532321ed57a
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945963"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105059777"
 ---
 # <a name="implement-type-visualizers-and-custom-viewers"></a>实现类型可视化工具和自定义查看器
 > [!IMPORTANT]
@@ -34,7 +34,7 @@ ms.locfileid: "99945963"
 ### <a name="custom-viewers"></a>自定义查看器
  自定义查看器在特定数据类型的 EE 中实现并由 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 接口表示。 自定义查看器并不像类型可视化工具一样灵活，因为它仅在实现了特定自定义查看器的 EE 执行时可用。 实现自定义查看器比实现对类型可视化工具的支持更简单。 但是，支持类型可视化工具可为最终用户提供最大的灵活性，以便对其数据进行可视化。 本讨论的其余部分仅涉及类型可视化工具。
 
-## <a name="interfaces"></a>界面
+## <a name="interfaces"></a>接口
  EE 实现以下接口以支持 Visual Studio 使用的类型可视化工具：
 
 - [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

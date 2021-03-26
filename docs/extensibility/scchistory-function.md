@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - SccHistory function
 ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b7e1cd6fa6d5b9b3a5ab42cd1b4cafec215deca
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 11a3056e34d15e2e04b687a518e86041dc270997
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102220568"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063846"
 ---
 # <a name="scchistory-function"></a>SccHistory 函数
 此函数显示指定文件的历史记录。
@@ -64,7 +64,7 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功获得版本历史记录。|
 |SCC_I_RELOADFILE|源代码管理系统在提取历史记录时实际修改了磁盘上的文件 (例如，通过获取其旧版本) ，因此 IDE 应重新加载此文件。|
@@ -83,6 +83,6 @@ SCCRTN SccHistory(
 > [!NOTE]
 > 如果源代码管理插件不支持文件数组的此函数，则只能显示第一个文件的文件历史记录。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)
