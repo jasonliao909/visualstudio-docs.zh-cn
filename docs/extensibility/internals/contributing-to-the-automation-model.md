@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - automation [Visual Studio SDK]
 ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38ea8d477b377f78f5c836ec4661989cdbf8999c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44da0c91eb425cbd558aea4335447f9293684b90
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884606"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057034"
 ---
 # <a name="contribute-to-the-automation-model"></a>参与自动化模型
 Visual Studio 提供了一组用于自定义环境的自动化接口。 自动化模型是使最终用户能够创建 Visual Studio 外接程序和扩展的对象模型。
@@ -67,5 +67,5 @@ Visual Studio 提供了一组用于自定义环境的自动化接口。 自动�
 
  提供有关 Configuration 和 SelectedItems 对象的自动化的信息。
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 提供一个代码示例，该示例演示 VSPackage 如何参与 DTE 自动化对象模型。 列出参数、返回值和所选的备注。

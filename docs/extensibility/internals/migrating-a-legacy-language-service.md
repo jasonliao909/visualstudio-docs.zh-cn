@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services, migrating
 ms.assetid: e0f666a0-92a7-4f9c-ba79-d05b13fb7f11
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a0e20c77a1c8a81a29691079ace1e4751135560
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afe98f2d96618999aa02dd01f03f55395af46e19
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895682"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105063261"
 ---
 # <a name="migrating-a-legacy-language-service"></a>迁移旧版语言服务
 你可以通过更新项目并将 source.extension.vsixmanifest 文件添加到项目中，将旧版语言服务迁移到更高版本的 Visual Studio。 语言服务本身将像以前一样继续工作，因为 Visual Studio 编辑器会改编它。
@@ -53,7 +53,7 @@ ms.locfileid: "99895682"
 
 4. 打开 RegExLangServ 解决方案。
 
-5. 此时将显示单向 **升级** 窗口。 单击“确定”。
+5. 此时将显示单向 **升级** 窗口。 单击 **“确定”** 。
 
 6. 更新项目属性。 通过选择 "**解决方案资源管理器** 中的项目节点，右键单击，然后选择"**属性**"，打开"**项目属性**"窗口。
 
@@ -71,13 +71,13 @@ ms.locfileid: "99895682"
 
     - 添加对 Microsoft.VisualStudio.Shell.Interop.10.0.dll 的引用。
 
-8. 打开 VsPkg.cs 文件并将属性的值更改 `DefaultRegistryRoot` 为
+8. 打开 VsPkg 文件，并将属性的值更改 `DefaultRegistryRoot` 为
 
     ```
     "Software\\Microsoft\\VisualStudio\\14.0Exp"
     ```
 
-9. 原始示例不注册其语言服务，因此必须将以下属性添加到 VsPkg.cs。
+9. 原始示例不注册其语言服务，因此必须将以下属性添加到 VsPkg。
 
     ```
     [ProvideLanguageService(typeof(RegularExpressionLanguageService), "RegularExpressionLanguage", 0, RequestStockColors=true)]

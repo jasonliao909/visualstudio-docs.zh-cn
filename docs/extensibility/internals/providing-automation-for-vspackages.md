@@ -8,17 +8,17 @@ helpviewer_keywords:
 - VSPackages, automation [Visual Studio SDK]
 - automation [Visual Studio SDK], VSPackages
 ms.assetid: 104c4c55-78b8-42f4-b6b0-9a334101aaea
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d5a0bd912dadf6b8f90aabd846c6ac44534c917
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f9a19b5e0e543052dad492ab319595c8ef76dfe
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934072"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060947"
 ---
 # <a name="providing-automation-for-vspackages"></a>提供适用于 VSPackage 的自动化
 可通过两种主要方式为 Vspackage 提供自动化：通过实现 VSPackage 特定的对象并实现标准自动化对象。 通常，它们一起用于扩展环境的自动化模型。

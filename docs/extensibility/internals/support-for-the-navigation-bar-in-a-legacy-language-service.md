@@ -8,17 +8,17 @@ helpviewer_keywords:
 - Navigation bar, supporting in language services [managed package framework]
 - language services [managed package framework], Navigation bar
 ms.assetid: 2d301ee6-4523-4b82-aedb-be43f352978e
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d33b8452f727037226a50abe6a9493ce132e9564
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e75103d008e65c6d2060d598e442499f38a0e322
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932574"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080653"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 编辑器视图顶部的导航栏显示文件中的类型和成员。 类型显示在左侧的下拉框中，成员显示在右侧下拉框中。 当用户选择某一类型时，插入符号会置于该类型的第一行。 当用户选择某个成员时，插入符号会被放置在该成员的定义上。 下拉框会进行更新，以反映插入符号的当前位置。

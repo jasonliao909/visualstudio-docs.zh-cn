@@ -8,17 +8,17 @@ helpviewer_keywords:
 - services, source control packages
 - source control packages, services
 ms.assetid: 9db07d70-87d2-4401-bc88-e3a49d81e9a2
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 515422266ce3d719319c4ba9717106af16e84f9b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe1d9ee9805e6e86595f3f7f3cf640114c7030b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910992"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080809"
 ---
 # <a name="services-provided-source-control-vspackage"></a>提供的服务（源代码管理 VSPackage）
 服务是一种主要机制，通过该机制，Vspackage 和 Visual Studio 集成开发环境 (IDE) 及其安装的 Vspackage 之间共享功能。 有关服务及其在 Visual Studio IDE 中的重要性的详细说明，请参阅[使用和提供服务](../../extensibility/using-and-providing-services.md)。

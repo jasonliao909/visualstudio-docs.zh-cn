@@ -9,17 +9,17 @@ helpviewer_keywords:
 - user settings [Visual Studio SDK], registering persistence support
 - persistence, registering settings
 ms.assetid: ad9beac3-4f8d-4093-ad0e-6fb00444a709
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06cd22ec933e72344ab743372fe30c1a3ddf5fbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e0128ce1f27674010d1b624457815ddb1016e016
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901597"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105080640"
 ---
 # <a name="support-for-user-settings"></a>支持用户设置
 VSPackage 可以定义一个或多个设置类别，这些类别是用户选择 "**工具**" 菜单上的 "**导入/导出设置**" 命令时保留的状态变量组。 若要启用此持久性，请使用中的 "设置" Api [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。
@@ -56,6 +56,6 @@ VSPackage 可以定义一个或多个设置类别，这些类别是用户选择 
 |-----------------|--------| - | - |
 | （默认值） | REG_SZ | 自定义设置点的名称 | 密钥的名称 `<CSPName`> 是自定义设置点的未本地化名称。<br /><br /> 对于基于 MPF 的实现，密钥的名称是通过将 `categoryName` 构造函数的和 `objectName` 自变量组合 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 到来获取的 `categoryName_objectName` 。<br /><br /> 该键可以为空，也可以包含附属 DLL 中本地化字符串的引用 ID。 此值从自变量获取 `objectNameResourceID` 到 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 构造函数。 |
 | 程序包 | REG_SZ | GUID | 实现自定义设置点的 VSPackage 的 GUID。<br /><br /> 基于 MPF 的实现使用 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 类，使用构造函数的 `objectType` 参数，其中包含 VSPackage 的 <xref:System.Type> 和反射来获取此值。 |
-| Category | REG_SZ | GUID | 标识设置类别的 GUID。<br /><br /> 对于基于互操作程序集的实现，此值可以是任意选择的 GUID，IDE 会将其 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 传递到 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> 方法。 这两种方法的所有实现都应该验证其 GUID 参数。<br /><br /> 对于基于 MPF 的实现，此 GUID 由 <xref:System.Type> 实现设置机制的类的来获取 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
+| 类别 | REG_SZ | GUID | 标识设置类别的 GUID。<br /><br /> 对于基于互操作程序集的实现，此值可以是任意选择的 GUID，IDE 会将其 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 传递到 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ExportSettings%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUserSettings.ImportSettings%2A> 方法。 这两种方法的所有实现都应该验证其 GUID 参数。<br /><br /> 对于基于 MPF 的实现，此 GUID 由 <xref:System.Type> 实现设置机制的类的来获取 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
 | ResourcePackage | REG_SZ | GUID | 可选。<br /><br /> 包含本地化字符串的附属 DLL 的路径（如果实现 VSPackage 未提供）。<br /><br /> MPF 使用反射来获取正确的资源 VSPackage，因此， <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 该类不会设置此参数。 |
 | AlternateParent | REG_SZ | 包含此自定义设置点的 "工具选项" 页下的文件夹名称。 | 可选。<br /><br /> 仅当设置实现支持在中使用持久性机制（而不是自动化模型中的机制）保存状态的 **工具选项** 页时，才必须设置此值 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。<br /><br /> 在这些情况下，AlternateParent 键中的值是 `topic` `topic.sub-topic` 用于标识特定 **ToolsOptions** 页的字符串部分。 例如，对于 **ToolsOptions** 页， `"TextEditor.Basic"` AlternateParent 的值为 `"TextEditor"` 。<br /><br /> 当 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 生成自定义设置点时，它与类别名称相同。 |

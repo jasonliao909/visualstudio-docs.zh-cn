@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - language services [managed package framework], registering
 ms.assetid: d33b08af-09e0-4c79-87b2-5536b27fbacf
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a0db784bacf27a6354d5861de7bf9e2ebeb64a5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5fa94fbd514e5fb162bc569438197dd8c65444b
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875570"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105060765"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>注册旧版语言服务1
 在 (MPF) 的托管包框架中，语言服务由 VSPackage (请参阅 [vspackage](../../extensibility/internals/vspackages.md)) ，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过添加注册表项和条目向注册。 此注册过程是在安装过程中的一部分执行的，并且在运行时部分完成。
