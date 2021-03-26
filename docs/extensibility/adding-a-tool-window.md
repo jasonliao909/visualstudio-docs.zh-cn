@@ -8,17 +8,17 @@ helpviewer_keywords:
 - tutorials
 - tool windows
 ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c84eafcfe19efdf6427db10f65dcf24504b598
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951428"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085515"
 ---
 # <a name="add-a-tool-window"></a>添加工具窗口
 
@@ -117,7 +117,7 @@ Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 �
     </Button>
     ```
 
-3. 打开 *FirstToolWindowCommand.cs* ，并在类中的现有字段之后添加以下行。
+3. 打开 *FirstToolWindowCommand* 并将以下行添加到类中的现有字段之后。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -143,7 +143,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>实例化工具窗口和工具栏
 添加用于调用 " **打开文件** " 对话框并播放所选媒体文件的工具栏和菜单命令。
 
-1. 打开 *FirstToolWindow.cs* ，添加以下 `using` 指令：
+1. 打开 *FirstToolWindow* ，添加以下 `using` 指令：
 
     ```csharp
     using System.ComponentModel.Design;
@@ -188,13 +188,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. 向工具栏添加菜单命令。 在 FirstToolWindowCommand.cs 类中，添加以下 using 指令：
+6. 向工具栏添加菜单命令。 在 FirstToolWindowCommand 类中，添加以下 using 指令：
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. 在 FirstToolWindowCommand 类中，在 ShowToolWindow ( # A1 方法的末尾添加以下代码。 下一节将实现 ButtonHandler 命令。
+7. 在 FirstToolWindowCommand 类中，在 ShowToolWindow () 方法的末尾添加以下代码。 下一节将实现 ButtonHandler 命令。
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -210,13 +210,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 1. 在 FirstToolWindowCommand 类中，添加调用 " **打开文件** " 对话框的 ButtonHandler 方法。 选择文件后，它会播放媒体文件。
 
-2. 在 FirstToolWindowCommand 类中，添加对 FindToolWindow ( # A1 方法中创建的 FirstToolWindow 窗口的私有引用。
+2. 在 FirstToolWindowCommand 类中，添加对 FindToolWindow () 方法中创建的 FirstToolWindow 窗口的私有引用。
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. 将 ShowToolWindow ( # A1 方法更改为设置前面定义的窗口 (以便 ButtonHandler 命令处理程序可以访问窗口控件。 下面是完整的 ShowToolWindow ( # A1 方法。
+3. 将 ShowToolWindow () 方法更改为设置前面定义的窗口 (以便 ButtonHandler 命令处理程序可以访问窗口控件。 下面是完整的 ShowToolWindow () 方法。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -255,9 +255,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>设置工具窗口的默认位置
 
-接下来，在 IDE 中指定工具窗口的默认位置。 工具窗口的配置信息位于 *FirstToolWindowPackage.cs* 文件中。
+接下来，在 IDE 中指定工具窗口的默认位置。 工具窗口的配置信息位于 *FirstToolWindowPackage* 文件中。
 
-1. 在 *FirstToolWindowPackage.cs* 中，找到 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 类的属性，该属性将 `FirstToolWindowPackage` FirstToolWindow 类型传递给构造函数。 若要指定默认位置，必须在下面的示例中向构造函数添加更多参数。
+1. 在 *FirstToolWindowPackage* 中，找到类的 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性，该属性将 `FirstToolWindowPackage` FirstToolWindow 类型传递给构造函数。 若要指定默认位置，必须在下面的示例中向构造函数添加更多参数。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),

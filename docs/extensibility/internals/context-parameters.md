@@ -8,17 +8,17 @@ helpviewer_keywords:
 - wizards, context parameters
 - context parameters
 ms.assetid: 1a062dcb-8a8f-40dd-bea9-3d10f9448966
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 72d2c6ded39564b91ba4f7b74fe2985aab14a7ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14d60aa31fb586651ea6e2b00a8f8038bfaa42b9
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852617"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105057060"
 ---
 # <a name="context-parameters"></a>上下文参数
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境中 (IDE) ，你可以将向导添加到 " **新建项目**"、" **添加新项**" 或 " **添加子项目** " 对话框。 添加的向导位于 " **文件** " 菜单上，或右键单击 " **解决方案资源管理器** 中的项目。 IDE 将上下文参数传递到向导实现。 上下文参数定义在 IDE 调用向导时项目的状态。
@@ -63,7 +63,7 @@ ms.locfileid: "99852617"
 ## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject2>
-- [自定义参数](../../extensibility/internals/custom-parameters.md)
+- 自定义参数
 - [向导](../../extensibility/internals/wizards.md)
 - [向导 ( .vsz) 文件](../../extensibility/internals/wizard-dot-vsz-file.md)
 - [用于启动向导的上下文参数](/previous-versions/tz690efs(v=vs.140))

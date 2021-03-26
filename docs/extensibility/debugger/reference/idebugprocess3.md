@@ -8,17 +8,17 @@ f1_keywords:
 helpviewer_keywords:
 - IDebugProcess3 interface
 ms.assetid: 7bd6b952-cf34-4e66-b8f6-d472dac3748f
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a2303dfef18a1abccc728d80def0de25b4e7eadd
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d08169b196e01b5e2a7effdfe54829d17a970ef3
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102169179"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105076506"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此接口表示正在运行的进程及其程序。 此接口作为对 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口中多个方法的替换而存在。 它提供对进程中的所有程序的控制。

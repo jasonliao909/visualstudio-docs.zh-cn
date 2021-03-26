@@ -6,24 +6,24 @@ ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], API reference
 ms.assetid: e4e429da-3667-41f7-9158-a8207d13e91a
-author: acangialosi
-ms.author: anthc
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47c6697945c6c588a8b4e57ab03d573d45c4d4cf
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: a8a43e4bae5afce98e07b196f5a01c33d44c72ca
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144632"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105085541"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 参考部分包括 API 的概念概述、说明所有 API 元素的语法和用法的指南，以及各种代码示例。 所有引用都按类别的字母顺序列出。
 
  下表显示了 `HRESULT` 方法返回的公共值。
 
-|名称|说明|“值”|
+|名称|说明|值|
 |----------|-----------------|-----------|
 |S_OK|成功。|0x00000000|
 |E_UNEXPECTED|意外故障。|0x8000FFFF|
