@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 89e3fcf9-fe5d-4266-8dd7-5567d05fe869
-ms.date: 10/28/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何获取和管理 Visual Studio 订阅中的产品密钥。
-ms.openlocfilehash: a5da818a059709d311b87572f71b78a51dbb7deb
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: ad9672d089c6e50aa879b38841c468f235347963
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92903990"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776761"
 ---
 # <a name="using-product-keys-in-visual-studio-subscriptions"></a>使用 Visual Studio 订阅中的产品密钥
 
@@ -77,9 +77,12 @@ Microsoft 致力于维护 Visual Studio 订阅计划的完整性以及该计划�
 |    DreamSpark MAK 密钥         |    这些是面向 DreamSpark 计划消费者的 MAK 密钥。                                                                                                                                                                                                  |
 |
 
-可从产品的下载页索取密钥，或者在[“产品密钥”](https://my.visualstudio.com/productkeys)页上搜索所需的密钥。
+可从产品的下载页索取密钥，或者在“[产品密钥](https://my.visualstudio.com/productkeys)”页上搜索所需的密钥。
 
-## <a name="see-also"></a>请参阅
+## <a name="support-resources"></a>支持资源
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

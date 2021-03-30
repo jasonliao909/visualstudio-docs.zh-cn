@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 8468b7641d12eca4db09d55d8d308ef5a913bc3c
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: 85d8a8aeda72e9a5c8fc94e98d1cbec22af32221
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537768"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672704"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
 
@@ -50,7 +50,7 @@ Visual Studio App Center 入门十分简单。
 | MSDN 平台（标准）                                          | VL、零售                                              | Included                                                            |是 |
 ||
 
-<sup>1</sup>  包括：  不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。
+<sup>1</sup>  *包括：不得转售 (NFR)、FTE、Visual Studio 行业合作伙伴 (VSIP)、Imagine、Microsoft 合作伙伴网络 (MPN)、MCT 软件和服务、MCT 软件和服务开发人员、BizSpark、最有价值专家 (MVP)、区域总监 (RD)。不包括：NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
@@ -71,7 +71,7 @@ Visual Studio App Center 入门十分简单。
 - 需要与 App Center 有关的帮助？
   - 从 [App Center 帮助中心](https://intercom.help/appcenter/)的 App Center 团队获取建议和答案。
   - 签出完整的 [App Center 文档](/appcenter/)
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅

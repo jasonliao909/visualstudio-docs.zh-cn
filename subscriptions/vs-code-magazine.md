@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: e5768153-2758-46d3-a323-3272def213ee
-ms.date: 01/19/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 CODE 杂志权益。
-ms.openlocfilehash: a9aabd98fa872846d12e20b3aad3f617d1c97a64
-ms.sourcegitcommit: 59b63039982bb5894eb35d8b544657688731614f
+ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98597393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672036"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CODE 杂志权益
 
@@ -58,7 +58,7 @@ CODE 杂志是领先的独立软件开发人员杂志，涵盖所有平台中的
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure | 不可用 | 不可用 |
 | Visual Studio Enterprise NFR<sup>1</sup> | NFR | 不可用 | 不可用 |
 
-<sup>1</sup>  包括：*不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务开发人员、MCT 软件和服务。*
+<sup>1</sup>  *包括：不得转售 (NFR)、Visual Studio 行业合作伙伴 (VSIP)、FTE、BizSpark、Imagine、Imagine Premium、Microsoft 合作伙伴网络 (MPN)、最有价值专家 (MVP)、区域总监 (RD)、MCT 软件和服务开发人员、MCT 软件和服务。  
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
@@ -74,7 +74,7 @@ CODE 杂志是领先的独立软件开发人员杂志，涵盖所有平台中的
 
 ## <a name="support-resources"></a>支持资源
 - 你对 CODE 杂志订阅有疑问吗？  请通过电子邮件或电话，或者提交在线支持请求，联系 [CODE 杂志](https://www.codemag.com/contact)。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅

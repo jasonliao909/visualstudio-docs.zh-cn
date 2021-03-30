@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 2249b32a-46d7-4e29-b543-4769c71ceda6
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解如何访问作为 Visual Studio 订阅的一部分的 GitHub Enterprise
-ms.openlocfilehash: 7ad60b1c1a177353cad13e3dbcbc50c67b5500ac
-ms.sourcegitcommit: d124123528776993eb5e7461dae8da3975d11d0d
+ms.openlocfilehash: 41cf3779f5572ecd63d11907eb80837e05e176c8
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/03/2021
-ms.locfileid: "99511353"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757706"
 ---
 # <a name="visual-studio-subscriptions-with-github-enterprise"></a>带有 GitHub Enterprise 的 Visual Studio 订阅 
 
@@ -31,7 +31,7 @@ ms.locfileid: "99511353"
 
 Visual Studio Enterprise、Visual Studio Professional 和 GitHub Enterprise 仍将继续单独提供。 
 
-要详细了解相关权益和选项，请访问 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github> 。 
+要详细了解相关权益和选项，请访问 <https://visualstudio.microsoft.com/subscriptions/visual-studio-github>。 
 
 ## <a name="what-is-the-visual-studio-subscription-with-github-enterprise-setup-process"></a>带有 GitHub Enterprise 的 Visual Studio 订阅的设置过程是怎样的？
 
@@ -85,7 +85,7 @@ GitHub Enterprise 由 GitHub 管理员管理（独立于 Visual Studio 订阅）
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com)。
 - 需要更多帮助？  请联系 [GitHub 支持人员](https://support.github.com/)
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助，请访问[获取帮助](https://my.visualstudio.com/GetHelp)页面。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助，请访问[获取帮助](https://aka.ms/vssubscriberhelp)页面。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/en-us/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 

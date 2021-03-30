@@ -11,14 +11,18 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 1a94915748f6c7cedb19a0b27c67eb67d6086963
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebd64a314f1c4d6afd7b6e6fcc3b38148ff68225
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971136"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672964"
 ---
 # <a name="supported-visual-studio-features-preview"></a>受支持的 Visual Studio 功能（预览）
+
+> [!Important] 
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 建议参与 Visual Studio 的[开发人员社区论坛](https://developercommunity.visualstudio.com/home)，了解未来要推出的预览版和路线图信息。 
+
 
 连接到 codespace 后，Visual Studio 可提供丰富的开发体验。 你可以使用熟悉的 Visual Studio 内部循环工具，来编辑、调试、测试和版本化源代码，还可以使用诸如项目模板、丰富的代码导航和 IntelliSense 之类的生产力功能。
 

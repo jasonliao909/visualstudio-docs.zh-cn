@@ -7,12 +7,12 @@ ms.assetid: f271d623-dcde-442a-865c-4dca5ad8a9c5
 ms.date: 03/03/2021
 ms.topic: conceptual
 description: 管理带有 GitHub Enterprise 的 Visual Studio 订阅中的订阅
-ms.openlocfilehash: 5837ec33e6f17f0970178a0f1b306960e9c42668
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: c66932d9f0da5e7dbca6dccb8efc911b1453bb8e
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249696"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757654"
 ---
 # <a name="manage-visual-studio-subscriptions-with-github-enterprise"></a>管理带有 GitHub Enterprise 的 Visual Studio 订阅
 与 Microsoft 签订了企业协议 (EA) 的客户有资格购买新的订阅套餐，该套餐将 Visual Studio 标准订阅和 GitHub Enterprise 结合在了一起。 这是 Visual Studio 订阅者获取 GitHub Enterprise 的一种简单而实惠的方式。 
@@ -68,23 +68,20 @@ GitHub Enterprise 的设置和管理独立于 Visual Studio 订阅。 购买带�
 GitHub 可作为基于云的 GitHub.com 提供，也可提供为本地 GitHub Enterprise Server。  这两种版本的管理过程有所不同。  GitHub 提供了各种帮助主题和管理员指南来帮助你管理 GitHub Enterprise 订阅。  我们提供了下述精选主题的链接。  
 
 ## <a name="support-resources"></a>支持资源
-
 - 访问 [GitHub 文档](https://docs.github.com/en/github/setting-up-and-managing-your-enterprise-account/managing-licenses-for-the-github-enterprise-and-visual-studio-bundle)，了解有关 GitHub 分配的详细信息
 - 有关各种 GitHub 主题的问题解答，请查看 [GitHub 帮助](https://help.github.com/en)。
 - 在 [GitHub 社区论坛](https://github.community/)获取其他 GitHub 用户的帮助。
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系[订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 - 获取 GitHub Enterprise 的[技术支持](https://support.microsoft.com/supportforbusiness/productselection?sapId=b77fe80f-5417-80bd-4b2a-275cf0018c24)。   
 
 ## <a name="see-also"></a>请参阅
-
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-
 了解有关管理 Visual Studio 订阅的详细信息。
 - [分配单个订阅](assign-license.md)
 - [分配多个订阅](assign-license-bulk.md)

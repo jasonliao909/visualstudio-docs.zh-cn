@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 16af82df-380a-4864-9f4e-6c3442cc7da2
-ms.date: 12/02/2020
+ms.date: 03/17/2021
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft Q&A 论坛支持权益。
-ms.openlocfilehash: 7f3f615101f9b084232c42a6b1c867e123f4d38a
-ms.sourcegitcommit: 29099741fcf94a5aef2655ee16605728b8b9a0ea
+ms.openlocfilehash: c9900dd914a53911fa95fee662a8fd820e59ff4b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96537729"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104671958"
 ---
 # <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft Q&A 论坛支持
 有技术方面的产品问题？ 可在 Microsoft Q&A 中查找该问题，它是 Microsoft 的技术问答中心。
@@ -58,7 +58,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 |                                       MSDN 平台（标准）                                       |    VL、零售     |   可用    |    是     |
 | Visual Studio Enterprise（月度云）、Visual Studio Professional（月度云）|        全部        | 不可用 |     否     |
 
-<sup>1</sup>  包括：  不得转售 (NFR)、Microsoft FTE、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)
+<sup>1</sup>  *包括：  不得转售 (NFR)、Microsoft FTE、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)、BizSpark、Imagine、Microsoft 认证培训师 (MCT)。不包括：NFR Basic。*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
@@ -66,7 +66,7 @@ Azure 社区权益的可用性取决于订阅级别，如下所示：
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
-- 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 Visual Studio [订阅支持团队](https://visualstudio.microsoft.com/subscriptions/support/)。
+- 需要有关 Visual Studio 订阅的销售、订阅、帐户和计费方面的帮助？  请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅

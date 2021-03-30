@@ -17,22 +17,20 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cd43be13351309e0f4715ee889fb910f4f7e49a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ceb6b01f06964b8c79fa7357da6688e2e0229799
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963193"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672821"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 
 在 MSBuild 中，项是对一个或多个文件的命名引用。 项包含元数据（如文件名、路径和版本号）。 Visual Studio 中的所有项目类型具有几个通用项。 在文件 Microsoft.Build.CommonTypes.xsd 中定义了这些项。
 
-## <a name="common-items"></a>常用项
+本文列出了所有常见项目项。
 
-以下是所有通用项目项的列表。
-
-### <a name="reference"></a>参考
+## <a name="reference"></a>参考
 
 表示项目中的程序集（托管）引用。
 
@@ -45,7 +43,7 @@ ms.locfileid: "99963193"
 |别名|可选的字符串。 引用的任何别名。|
 |Private|可选的布尔值。 指定是否应将引用复制到输出文件夹。 此特性与 Visual Studio IDE 中的引用的“复制本地”属性相匹配。|
 
-### <a name="comreference"></a>COMReference
+## <a name="comreference"></a>COMReference
 
 表示项目中的 COM（非托管）组件引用。 此项仅适用于 .NET 项目。
 
@@ -59,7 +57,7 @@ ms.locfileid: "99963193"
 |WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|
 |Isolated|可选的布尔值。 指定组件是否为免注册组件。|
 
-### <a name="comfilereference"></a>COMFileReference
+## <a name="comfilereference"></a>COMFileReference
 
 表示传递到 [ResolveComReference](resolvecomreference-task.md) 目标的 `TypeLibFiles` 参数的类型库的列表。 此项仅适用于 .NET 项目。
 
@@ -67,7 +65,7 @@ ms.locfileid: "99963193"
 |---------------|-----------------|
 |WrapperTool|可选的字符串。 对组件使用的包装工具的名称，例如“tlbimp”。|
 
-### <a name="nativereference"></a>NativeReference
+## <a name="nativereference"></a>NativeReference
 
 表示本机清单文件或对此类文件的引用。
 
@@ -76,7 +74,7 @@ ms.locfileid: "99963193"
 |“属性”|必选字符串。 清单文件基名称。|
 |HintPath|必选字符串。 清单文件的相对路径。|
 
-### <a name="projectreference"></a>ProjectReference
+## <a name="projectreference"></a>ProjectReference
 
 表示对另一个项目的引用。 `ProjectReference` 项由 `ResolveProjectReferences` 目标转换为 [Reference](#reference) 项，因此，如果转换过程没有将其覆盖，则 Reference 上的任何有效元数据都可能在 `ProjectReference` 上有效。
 
@@ -93,7 +91,7 @@ ms.locfileid: "99963193"
 |SkipGetTargetFrameworkProperties|可选的布尔值。 如果为 `true`，则在不协商最兼容的 `TargetFramework` 值的情况下生成引用的项目。 默认为 `false`。|
 |目标|可选的 `string[]`。 应生成的引用项目中的目标的列表，以分号分隔。 默认值为 `$(ProjectReferenceBuildTargets)` 的值，该值默认为空，指示默认目标。|
 
-### <a name="compile"></a>Compile
+## <a name="compile"></a>Compile
 
 表示编译器的源文件。
 
@@ -105,7 +103,7 @@ ms.locfileid: "99963193"
 | 可见 | 可选的布尔值。 指示是否要在 Visual Studio 中的“解决方案资源管理器”中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="embeddedresource"></a>EmbeddedResource
+## <a name="embeddedresource"></a>EmbeddedResource
 
 表示要在生成的程序集中嵌入的资源。
 
@@ -120,7 +118,7 @@ ms.locfileid: "99963193"
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 | LogicalName | 必选字符串。 嵌入资源的逻辑名称。 |
 
-### <a name="content"></a>内容
+## <a name="content"></a>内容
 
 表示不会编译到项目中，但可能会嵌入到其中或随其一起发布的文件。
 
@@ -136,7 +134,7 @@ ms.locfileid: "99963193"
 | 可见 | 可选的布尔值。 指示是否要在 Visual Studio 中的“解决方案资源管理器”中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="none"></a>None
+## <a name="none"></a>None
 
 表示不应在生成过程中具有角色的文件。
 
@@ -150,7 +148,7 @@ ms.locfileid: "99963193"
 | 可见 | 可选的布尔值。 指示是否要在 Visual Studio 中的“解决方案资源管理器”中显示文件。 |
 | CopyToOutputDirectory | 可选的字符串。 确定是否将文件复制到输出目录。 值为：<br /><br /> 1.Never<br />2.Always<br />3.PreserveNewest |
 
-### <a name="assemblymetadata"></a>AssemblyMetadata
+## <a name="assemblymetadata"></a>AssemblyMetadata
 
 表示要生成为 `[AssemblyMetadata(key, value)]` 的程序集特性。
 
@@ -162,7 +160,7 @@ ms.locfileid: "99963193"
 > [!NOTE]
 > 此项适用于使用 SDK for .NET 5（和 .NET Core）及更高版本的项目。
 
-### <a name="internalsvisibleto"></a>InternalsVisibleTo
+## <a name="internalsvisibleto"></a>InternalsVisibleTo
 
 指定要作为 `[InternalsVisibleTo(..)]` 程序集特性发出的程序集。
 
@@ -174,15 +172,15 @@ ms.locfileid: "99963193"
 > [!NOTE]
 > 此项适用于使用 SDK for .NET 5（和 .NET Core）及更高版本的项目。
 
-### <a name="baseapplicationmanifest"></a>BaseApplicationManifest
+## <a name="baseapplicationmanifest"></a>BaseApplicationManifest
 
 表示用于生成的基本应用程序清单，包含 ClickOnce 部署安全信息。
 
-### <a name="codeanalysisimport"></a>CodeAnalysisImport
+## <a name="codeanalysisimport"></a>CodeAnalysisImport
 
 表示要导入的 FxCop 项目。
 
-### <a name="import"></a>导入
+## <a name="import"></a>导入
 
 表示应由 Visual Basic 编译器导入其命名空间的程序集。
 

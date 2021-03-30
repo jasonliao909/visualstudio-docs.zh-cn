@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 10/26/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 了解订阅中包含哪些权益，以及如何激活这些权益。
-ms.openlocfilehash: 351d81f29d01ec8322fcd6602d3ac4afccdb8ca1
-ms.sourcegitcommit: 8efe6b45d65f9db23f5575c15155fe363fa12cdb
+ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92750140"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757628"
 ---
 # <a name="about-your-subscription-benefits"></a>关于订阅权益
 作为 Visual Studio 订阅者，你有权访问各种权益，具体取决于你的订阅级别。 权益有几个需要注意的重要事项。
@@ -42,6 +42,9 @@ Visual Studio 订阅中包含的一些权益（包括培训和工具等一些常
 
 ## <a name="benefits-that-become-temporarily-unavailable"></a>暂时不可用的权益
 尽管很少出现这种情况，但有时技术问题会使权益在短时间内不可用。 在这些情况下，我们将更改 [Visual Studio 订阅门户](https://my.visualstudio.com/benefits)中的“权益”磁贴，以指示在问题得以解决之前权益“暂时不可用”，我们恢复该磁贴后，权益将再次可用。
+
+## <a name="support-resources"></a>支持资源
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 11/20/2019
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 004427ced7d18d9a5af5c863172416fd8637aa69
-ms.sourcegitcommit: b885f26e015d03eafe7c885040644a52bb071fae
+ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
+ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2020
-ms.locfileid: "85536859"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104884078"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何构建容器化应用
 
@@ -107,7 +107,7 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 |音量|描述|
 |-|-|
-| **远程调试程序** | 包含在容器中运行调试器所需的位，视具体项目类型而定。 有关详细信息， |请参阅[调试](#debugging)部分。
+| **远程调试程序** | 包含在容器中运行调试器所需的位，视具体项目类型而定。 [调试](#debugging)部分会对此进行详细说明。|
 | **应用文件夹** | 包含 Dockerfile 所在的项目文件夹。|
 | **源文件夹** | 包含传递给 Docker 命令的生成上下文。|
 | **NuGet 包文件夹** | 包含从项目的 obj\{project}.csproj.nuget.g.props 文件中读取的 NuGet 包和 fallback 文件夹。 |
