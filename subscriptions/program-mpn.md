@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7f4399d8-41da-41e5-a666-acc34958b8c0
-ms.date: 03/09/2020
+ms.date: 03/21/2021
 ms.topic: conceptual
 description: 有关在 MPN 中提供的订阅、应用的规则以及提供的订阅数的详细信息。
-ms.openlocfilehash: 47b13147e87880ea90c07ee4746d5359571719b0
-ms.sourcegitcommit: 09d1f5cef5360cdc1cdfd4b22a1a426b38079618
+ms.openlocfilehash: eab7779c7aedbbe7116a6227b16b6b3f4f15471c
+ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/22/2020
-ms.locfileid: "91005828"
+ms.lasthandoff: 03/22/2021
+ms.locfileid: "104776748"
 ---
 # <a name="visual-studio-subscriptions-offered-to-partners-in-the-microsoft-partner-network-mpn"></a>提供给 Microsoft 合作伙伴网络 (MPN) 中的合作伙伴的 Visual Studio 订阅
 
@@ -71,13 +71,12 @@ MPN 规则规定，作为计划权益提供的所有软件只能在内部使用�
 使用通过 MPN 提供的 Visual Studio 订阅时，许可用户必须使用激活 Visual Studio 订阅时所用的相同标识/登录名登录 Visual Studio。 不提供解锁产品的产品密钥；只能通过登录运行 Visual Studio。 在 Visual Studio 停止工作之前，Visual Studio 订阅者可脱机工作长达 30 天。 联机工作时，Visual Studio 会定期自动刷新用户的许可证状态，确保订阅始终有效。
 
 ## <a name="resources"></a>资源
-
 - [Microsoft 合作伙伴网络计划指南](https://assets.microsoft.com/MPN-MAPS-Product-Usage-Guide.pdf?tpqid=300-000121)
 - [为 MPN 员工分配 Visual Studio 订阅](manage-mpn-subscriptions.md)
 - [使用条款](https://www.microsoft.com/useterms/) - 通过 MPN 提供的 Visual Studio 订阅应遵循 Visual Studio 订阅不得转售 (NFR) EULA。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://aka.ms/vssubscriberhelp)。
 
-
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)

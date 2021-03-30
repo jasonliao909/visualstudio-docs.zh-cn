@@ -11,14 +11,17 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: 15efee817e41f928e5ca1162e9ace20276bd20d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e23ca3255761f4d93f89251d00c12c14aecf7b9
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971149"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672346"
 ---
 # <a name="how-to-customize-a-codespace-preview"></a>如何自定义 codespace（预览）
+
+> [!Important] 
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 建议参与 Visual Studio 的[开发人员社区论坛](https://developercommunity.visualstudio.com/home)，了解未来要推出的预览版和路线图信息。 
 
 GitHub Codespaces 在云中提供完整的开发环境。 对于使用 Visual Studio 2019 的基于 Windows 的开发，GitHub Codespaces 默认实例提供了一个很好的起点，但你也可以为特定项目自定义环境。
 

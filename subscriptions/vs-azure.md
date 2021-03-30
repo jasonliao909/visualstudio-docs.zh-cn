@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 02/10/2021
+ms.date: 03/18/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 开发测试个人额度权益。
-ms.openlocfilehash: 85306286e5a6522d8a073c88ce7e11281d5f1aef
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: 1fb85c64ec49d906ba843ac944d550ef1e41fd4d
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335225"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672252"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过[每月 Azure 开发测试个人额度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，可将 Azure 用作开发/测试的个人沙盒。  你可以预配虚拟机、云服务和其他 Azure 资源。  信用额度因订阅级别而异。
@@ -80,7 +80,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过
 |              Visual Studio Professional 月度              |        不可用        |                                                             |
 |                    Visual Studio Test Pro                    |     50 美元月信用额度      |                             是                             |
 |                        MSDN 平台                        |     100 美元月信用额度     |                             是                             |
-|               Visual Studio Enterprise - NFR\*               |     150 美元月信用额度     |                             是                             |
+|               Visual Studio Enterprise - NFR<sup>1</sup>                 |     150 美元月信用额度     |                             是                             |
 |                Visual Studio Enterprise - FTE                |     150 美元月信用额度     |                             是                             |
 |     Visual Studio Enterprise - Microsoft 合作伙伴网络     |     150 美元月信用额度     |                             是                             |
 |    Visual Studio Professional - Microsoft 合作伙伴网络    |        不可用        |                                                             |
@@ -90,7 +90,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过
 |      Visual Studio Enterprise – MCT 软件和服务      |     100 美元月信用额度     |                             是                             |
 | Visual Studio Enterprise – MCT 软件和服务开发人员 |     150 美元月信用额度     |                             是                             |
 
-*包括不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP)
+<sup>1</sup>  *包括：不得转售 (NFR)、最有价值专家 (MVP)、区域总监 (RD)、Visual Studio 行业合作伙伴 (VSIP) 不包括：  NFR Basic*
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。
@@ -113,7 +113,7 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过
 - 需要与 Azure 有关的帮助？  请参阅下列资源：
   - 技术支持：[https://azure.microsoft.com/support/options/](https://azure.microsoft.com/support/options/)
   - [Azure 提示与技巧](https://microsoft.github.io/AzureTipsAndTricks/ "Azure 提示与技巧") 
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)联系。
+- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请与 Visual Studio [订阅支持](https://aka.ms/vssubscriberhelp)联系。
 - 对有关 Visual Studio IDE、Azure DevOps Services 或其他 Visual Studio 产品或服务有疑问？  请访问 [Visual Studio 支持](https://visualstudio.microsoft.com/support/)。
 
 ## <a name="see-also"></a>请参阅

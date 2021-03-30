@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e77d4ea1d46914962f0791af91ad6c1efe21825c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
+ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942511"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104806051"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
@@ -24,16 +24,27 @@ ms.locfileid: "99942511"
 
 Flask 被称为“微”框架，因为它不直接提供窗体验证、数据库抽象、身份验证等功能。 此类功能改为由名为 Flask 扩展的特殊 Python 包提供  。 这些扩展无缝集成 Flask，所以看起来就像 Flask 本身的一部分。 例如，Flask 本身不提供页模板引擎。 Jinja、Jade 等扩展提供模板化，如本教程所示。
 
+::: moniker range="vs-2017"
 在本教程中，你将了解：
-
-> [!div class="checklist"]
-> - 使用“空白 Flask Web 项目”模板在 Git 存储库中创建一个基本 Flask 项目（步骤 1）
-> - 使用模板创建一个单页 Flask 应用，并呈现该页面（步骤 2）
-> - 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
-> - 使用 Flask Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
-> - 使用“投票 Flask Web 项目”模板创建使用多种存储选项（Azure 存储、MongoDB 或内存）的投票应用。
+- 使用“空白 Flask Web 项目”模板在 Git 存储库中创建一个基本 Flask 项目（步骤 1）
+- 使用模板创建一个单页 Flask 应用，并呈现该页面（步骤 2）
+- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
+- 使用 Flask Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
+- 使用“投票 Flask Web 项目”模板创建使用多种存储选项（Azure 存储、MongoDB 或内存）的投票应用。
 
 在这些步骤的过程中，将创建一个包含三个单独项目的 Visual Studio 解决方案。 使用 Visual Studio 中包含的不同 Flask 项目模板创建项目。 通过将项目保留在同一解决方案中，可以轻松地在不同文件之间来回切换以进行比较。
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+在本教程中，你将了解：
+- 使用“空白 Flask Web 项目”模板在 Git 存储库中创建一个基本 Flask 项目（步骤 1）
+- 使用模板创建一个单页 Flask 应用，并呈现该页面（步骤 2）
+- 为静态文件提供服务、添加页面和使用模板继承（步骤 3）
+- 使用 Flask Web 项目模板创建包含多个页面和响应式设计的应用（步骤 4）
+
+在这些步骤的过程中，将创建一个包含两个个单独项目的 Visual Studio 解决方案。 使用 Visual Studio 中包含的不同 Flask 项目模板创建项目。 通过将项目保留在同一解决方案中，可以轻松地在不同文件之间来回切换以进行比较。
+::: moniker-end
 
 > [!Note]
 > 本教程与 [Flask 快速入门](../ide/quickstart-python.md?toc=/visualstudio/python/toc.json&bc=/visualstudio/python/_breadcrumb/toc.json)的区别在于，可以更详细地了解 Flask 并了解如何使用不同的 Flask 项目模板（为自己的项目提供更全面的起点）。 例如，创建项目时，项目模板自动安装 Flask 包，而无需按快速入门所示手动安装包。

@@ -1,6 +1,6 @@
 ---
 title: 开发人员命令行 shell
-description: 了解如何查找和使用 Visual Studio 开发人员命令提示、开发人员 PowerShell 和 Visual Studio 终端，以便更轻松地使用 .NET 和 C++ 工具。
+description: 了解如何查找和使用 Visual Studio 开发人员命令提示、Visual Studio 开发人员 PowerShell 和 Visual Studio 终端，以便更轻松地使用 .NET 和 C++ 工具。
 ms.date: 03/04/2021
 ms.custom: contperf-fy21q3
 helpviewer_keywords:
@@ -11,19 +11,19 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 406ef4e7d475df82a0e36732dd5e777959ea3b96
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: fb2c99037577528b77ab5c1b0c74bf7af9e73d1b
+ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249747"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104672320"
 ---
 # <a name="developer-command-prompt-and-developer-powershell"></a>开发人员命令提示和开发人员 PowerShell
 
 Visual Studio 2019 包含两个开发人员命令行 shell：
 
-- Visual Studio 的开发人员命令提示 - 一种设置了某些环境变量的标准命令提示，可以让使用命令行开发人员工具变得更容易。
-- 开发人员 PowerShell - 比命令提示符更强大。 例如，你可以将一个命令的输出（称为 *cmdlet* ）传递给另一个 cmdlet。 此 shell 的环境变量集与开发人员命令提示的相同。
+- **Visual Studio 开发人员命令提示** - 一种设置了某些环境变量的标准命令提示，可以让使用命令行开发人员工具变得更容易。 自 Visual Studio 2015 起可用。
+- **Visual Studio 开发人员 PowerShell** - 比命令提示符更强大。 例如，你可以将一个命令的输出（称为 *cmdlet* ）传递给另一个 cmdlet。 此 shell 的环境变量集与开发人员命令提示的相同。 自 Visual Studio 2019 起可用。
 
 这两个 shell 都具有特定的环境变量集，使你可以更轻松地使用命令行开发人员工具。 打开其中一个 shell 后，可以输入针对不同实用程序的命令，而无需知道它们的位置。 可以运行的命令包括：
 
@@ -40,10 +40,6 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 :::image type="content" source="media/developer-command-prompt-for-vs/vs-terminal.png" alt-text="显示多个选项卡的 Visual Studio 终端":::
 
 从 Visual Studio 作为一个单独的应用程序打开其中一个开发人员 shell，或者在终端窗口中打开其中一个开发人员 shell 时，它会打开转到当前解决方案的目录（如果已加载解决方案）。 通过此行为，你可以便捷地针对解决方案或其项目运行命令。
-
-## <a name="prerequisites"></a>先决条件
-
-- [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=inline+link&utm_content=download+vs2019)
 
 ## <a name="start-the-shell-from-inside-visual-studio"></a>从 Visual Studio 内部启动 shell
 

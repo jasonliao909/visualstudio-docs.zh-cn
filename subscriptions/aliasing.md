@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
-ms.date: 10/22/2020
+ms.date: 03/19/2021
 ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
-ms.openlocfilehash: 4d9b3194cf7636106740e35b230cc02aaab7eded
-ms.sourcegitcommit: bf5e2bba5acdcf05869b861211f8bb755081e5ce
+ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/23/2020
-ms.locfileid: "92467604"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757693"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。 一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。
@@ -64,7 +64,7 @@ ms.locfileid: "92467604"
 
 Visual Studio 平台会排定主要别名的优先级，以显示订阅详细信息。 
 
-1. 转到 **管理登录到 Microsoft 的方式** 。 如果系统提示，则登录到 Microsoft 帐户。 
+1. 转到 **管理登录到 Microsoft 的方式**。 如果系统提示，则登录到 Microsoft 帐户。 
 
 2. 在“帐户别名”下，选择用于分配订阅的电子邮件旁的“设为主要”。 
 
@@ -91,12 +91,14 @@ Visual Studio 平台会排定主要别名的优先级，以显示订阅详细信
 > [!NOTE]
 > 不管是使用单独更改还是批量更改，订阅者都会收到一封电子邮件，其中说明已更改其登录电子邮件地址，并提示他们需要使用更新后的电子邮件地址登录。 另请注意，如果订阅者以前通过其他登录地址激活了权益，则需要继续使用该登录地址来访问权益。  
 
-## <a name="see-also"></a>请参阅
+## <a name="support-resources"></a>支持资源
+- 如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
+
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)
 - [Azure DevOps 文档](/azure/devops/)
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
-
 
 ## <a name="next-steps"></a>后续步骤
 了解有关管理 Visual Studio 订阅的详细信息。

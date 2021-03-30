@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 36f0d9f1-fe28-469f-a54c-dc46638270a8
-ms.date: 09/03/2020
+ms.date: 03/19/2021
 ms.topic: how-to
 description: 了解如何向订阅管理门户添加新购买的每月 Visual Studio 订阅
-ms.openlocfilehash: f6b835969fff3a8316a2b46c6e15217ebe3e33b1
-ms.sourcegitcommit: a731a9454f1fa6bd9a18746d8d62fe2e85e5ddb1
+ms.openlocfilehash: 931f297a650926e4da5c13271a58091c9f00ddd3
+ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/01/2020
-ms.locfileid: "92467591"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104757641"
 ---
 # <a name="add-new-monthly-visual-studio-subscriptions-to-the-subscriptions-administration-portal"></a>向订阅管理门户添加新的每月 Visual Studio 订阅
 使用 Azure 订阅购买新的每月 Visual Studio 订阅后，可能需要将它们添加到订阅管理门户，以便将它们分配给用户。  
@@ -40,6 +40,9 @@ ms.locfileid: "92467591"
 ## <a name="things-to-keep-in-mind"></a>要点
 - 添加新的每月订阅的选项只在第一次购买订阅时可用。  一旦你添加了每月订阅，我们就会在你每次登录门户时检查是否有新订阅。 
 - 你可能会发现，找到的新订阅已分配给订阅者。  这是因为还有其他管理员可以访问 Azure 订阅，并且他们已向用户分配了新的 Visual Studio 订阅。  既然你已将它们添加到门户，所以也就可以管理这些订阅。 
+
+## <a name="support-resources"></a>支持资源
+- 如需有关管理 Visual Studio 订阅的帮助，请联系 [Visual studio 订阅支持](https://aka.ms/vsadminhelp)。
 
 ## <a name="next-steps"></a>后续步骤
 至此，你已添加订阅，可以将它们分配给用户了。  可以通过多种方式来进行分配：
