@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2f36ee884beb3b79244e4621ba305c06aafe8ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96cfbf8693ce23dbc0b0584c7742607224aeab4f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915761"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216938"
 ---
 # <a name="walkthrough-create-a-custom-bootstrapper-with-a-privacy-prompt"></a>演练：创建带有隐私提示的自定义引导程序
 可以将 ClickOnce 应用程序配置为在具有更新的文件版本和程序集版本的程序集可用时自动更新。 若要确保你的客户同意此行为，你可以向他们显示隐私提示。 然后，他们可以选择是否向应用程序授予自动更新的权限。 如果不允许应用程序自动更新，则不会安装该应用程序。
@@ -43,7 +43,7 @@ ms.locfileid: "99915761"
 
 #### <a name="to-create-a-consent-dialog-box"></a>创建许可对话框
 
-1. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+1. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 2. 在 " **新建项目** " 对话框中，单击 " **Windows**"，然后单击 " **WindowsFormsApplication**"。
 
@@ -81,32 +81,33 @@ ms.locfileid: "99915761"
 
 18. 在 Form1 代码文件中，为 CheckedChanged 事件处理程序添加以下代码。
 
-     [!code-csharp[ConsentDialog#1](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.cs)]
-     [!code-vb[ConsentDialog#1](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet1":::
 
 19. 更新类构造函数，以在默认情况下禁用 " **继续** " 按钮。
 
-     [!code-csharp[ConsentDialog#6](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.cs)]
-     [!code-vb[ConsentDialog#6](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet6":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet6":::
 
 20. 在 Form1 代码文件中，为布尔变量添加以下代码，以跟踪最终用户是否同意联机更新。
 
-     [!code-csharp[ConsentDialog#3](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.cs)]
-     [!code-vb[ConsentDialog#3](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet3":::
 
 21. 在设计器中，双击 " **继续** " 按钮生成 click 事件处理程序。
 
 22. 在 Form1 代码文件中，将以下代码添加到 " **继续** " 按钮的 Click 事件处理程序中。
 
-     [!code-csharp[ConsentDialog#2](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.cs)]
-     [!code-vb[ConsentDialog#2](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet2":::
+
 
 23. 在设计器中，双击 " **取消** " 按钮生成 click 事件处理程序。
 
 24. 在 Form1 代码文件中，为 " **取消** " 按钮的 Click 事件处理程序添加以下代码。
 
-     [!code-csharp[ConsentDialog#4](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.cs)]
-     [!code-vb[ConsentDialog#4](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/form1.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/form1.vb" id="Snippet4":::
 
 25. 如果最终用户未同意联机更新，则更新应用程序以返回错误。
 
@@ -118,7 +119,7 @@ ms.locfileid: "99915761"
 
     3. 在 *Module1* 代码文件中，添加以下代码。
 
-        [!code-vb[ConsentDialog#7](../deployment/codesnippet/VisualBasic/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_6.vb)]
+       :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/consentdialog/vb/module1.vb" id="Snippet7":::
 
     4. 在 " **项目** " 菜单上，单击 " **ConsentDialog 属性**"，然后单击 " **应用程序** " 选项卡。
 
@@ -131,9 +132,9 @@ ms.locfileid: "99915761"
 
        仅适用于 Visual c # 开发人员：
 
-       打开 *Program.cs* 代码文件，并添加以下代码。
+       打开 *Program .cs* 代码文件，并添加以下代码。
 
-       [!code-csharp[ConsentDialog#5](../deployment/codesnippet/CSharp/walkthrough-creating-a-custom-bootstrapper-to-show-a-privacy-prompt_7.cs)]
+       :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/consentdialog/cs/program.cs" id="Snippet5":::
 
 26. 在 " **生成** " 菜单上，单击 " **依次**"。
 
@@ -245,7 +246,7 @@ ms.locfileid: "99915761"
     > [!NOTE]
     > 可能需要关闭并重新打开 Visual Studio，才能在 "系统必备" 对话框中看到 "更新许可" 对话框。
 
-5. 单击“确定”。
+5. 单击 **“确定”** 。
 
 ## <a name="create-and-test-the-setup-program"></a>创建和测试安装程序
  将更新许可应用程序设置为必备项后，你可以为应用程序生成安装程序和引导程序。
@@ -274,7 +275,7 @@ ms.locfileid: "99915761"
 
 8. 单击 "详细信息" 以显示以下错误消息：组件更新许可对话框安装失败，并显示以下错误消息： "不接受自动更新协议。 以下组件安装失败：-更新许可对话框
 
-9. 单击 **“关闭”** 。
+9. 单击“关闭”  。
 
 #### <a name="to-create-and-test-the-setup-program-by-clicking-i-agree"></a>通过单击 "我同意" 来创建和测试安装程序
 

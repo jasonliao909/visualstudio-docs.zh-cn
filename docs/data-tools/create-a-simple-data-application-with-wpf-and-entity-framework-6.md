@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 52c9d8ca4af6467c6db21be64083b5bf64af0b6a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3432dd9a72fa71ea1e749dd28e80a3d55cce19c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859185"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216054"
 ---
 # <a name="create-a-simple-data-application-with-wpf-and-entity-framework-6"></a>使用 WPF 和 Entity Framework 6 创建简单的数据应用程序
 
@@ -60,7 +60,7 @@ ms.locfileid: "99859185"
 
 ## <a name="create-the-model"></a>创建模型
 
-1. 右键单击 "**解决方案资源管理器** 中的项目节点，然后选择"**添加**  >  **新项**"。 在左窗格中的 "c #" 节点下，选择 " **数据** "，然后在中间窗格中选择 " **ADO.NET 实体数据模型**"。
+1. 在解决方案资源管理器中右键单击项目节点，然后选择“添加” > “新增项”  。 在左窗格中的 "c #" 节点下，选择 " **数据** "，然后在中间窗格中选择 " **ADO.NET 实体数据模型**"。
 
    ![实体框架为新项建模](../data-tools/media/raddata-ef-new-project-item.png)
 
@@ -104,7 +104,7 @@ ms.locfileid: "99859185"
 
      ![添加实体类作为数据源](../data-tools/media/raddata-add-entity-classes-as-data-sources.png)
 
-3. 单击“完成” 。
+3. 单击“完成”。
 
 4. 在代码视图中导航到 *mainwindow.xaml* 。 出于本示例的目的，我们将保持 XAML 简单。 将 Mainwindow.xaml 的标题更改为更具描述性的名称，并将其高度和宽度增加为 600 x 800。 以后随时可以更改它。 现在，将这三个行定义添加到主网格，一行用于导航按钮，一个用于客户的详细信息，一个用于显示其订单的网格：
 
@@ -130,9 +130,9 @@ ms.locfileid: "99859185"
 
      ![将 Orders 类作为网格拖动](../data-tools/media/raddata-drag-orders-classes-as-grid.png)
 
-7. Visual Studio 生成了将 UI 控件连接到模型中的事件的所有绑定代码。 若要查看某些数据，你只需编写一些代码来填充模型。 首先，导航到 *MainWindow.xaml.cs* ，并将数据成员添加到数据上下文的 mainwindow.xaml 类。 已为您生成的此对象的行为类似于跟踪模型中的更改和事件的控件。 你还将为客户和订单添加 CollectionViewSource 数据成员和关联的构造函数初始化逻辑。 类的顶部应如下所示：
+7. Visual Studio 生成了将 UI 控件连接到模型中的事件的所有绑定代码。 若要查看某些数据，你只需编写一些代码来填充模型。 首先，导航到 *mainwindow.xaml* ，并将数据成员添加到数据上下文的 mainwindow.xaml 类。 已为您生成的此对象的行为类似于跟踪模型中的更改和事件的控件。 你还将为客户和订单添加 CollectionViewSource 数据成员和关联的构造函数初始化逻辑。 类的顶部应如下所示：
 
-     [!code-csharp[MainWindow#1](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#1)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet1":::
 
      为 system.string 添加 `using` 指令以将负载扩展方法添加到作用域中：
 
@@ -142,7 +142,8 @@ ms.locfileid: "99859185"
 
      现在，向下滚动并找到 `Window_Loaded` 事件处理程序。 请注意，Visual Studio 已添加 CollectionViewSource 对象。 这表示创建模型时选择的 NorthwindEntities 对象。 您已经添加了该程序，因此您不需要这样做。 让我们替换中的代码， `Window_Loaded` 使方法现在如下所示：
 
-     [!code-csharp[Window_Loaded#2](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#2)]
+     :::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet2":::
+
 
 8. 按 F5 。 应会看到检索到 CollectionViewSource 中的第一个客户的详细信息。 还应在数据网格中看到它们的顺序。 格式设置不是很好，因此让我们来解决这个问题。 您还可以创建一种方法来查看其他记录并执行基本的 CRUD 操作。
 
@@ -421,9 +422,10 @@ Visual Studio 生成的默认布局并非适用于你的应用程序，因此我
 
 除 add 和 delete 方法外，代码隐藏是最少的。 通过对 CollectionViewSource 的 View 属性调用方法来执行导航。 `DeleteOrderCommandHandler`演示如何对订单执行级联删除。 我们必须先删除与之关联的 Order_Details。 向 `UpdateCommandHandler` 集合中添加新的客户或订单，或者只是使用用户在文本框中做出的更改来更新现有客户或订单。
 
-将这些处理程序方法添加到 *MainWindow.xaml.cs* 中的 mainwindow.xaml 类。 如果 "客户" 表的 CollectionViewSource 具有不同的名称，则需要调整其中每个方法中的名称：
+将这些处理程序方法添加到 *mainwindow.xaml* 中的 mainwindow.xaml 类。 如果 "客户" 表的 CollectionViewSource 具有不同的名称，则需要调整其中每个方法中的名称：
 
-[!code-csharp[CommandHandlers#3](../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs#3)]
+:::code language="csharp" source="../data-tools/codesnippet/CSharp/CreateWPFDataApp/MainWindow.xaml.cs" id="Snippet3":::
+
 
 ## <a name="run-the-application"></a>运行应用程序
 

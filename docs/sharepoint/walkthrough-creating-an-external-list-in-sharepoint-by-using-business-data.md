@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: dbf996a2d44f94e4571a332fa7a86d861d820d45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0811b029bf7e4705bc0c3689eff73f38280c3b3d
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847708"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217679"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
 
@@ -114,9 +114,9 @@ ms.locfileid: "99847708"
 
 3. 在设计器中，打开 " **Entity1**" 的快捷菜单，然后选择 " **删除**"。
 
-4. 在 **解决方案资源管理器** 中，打开 Visual Basic) 中的 *Entity1* (的快捷菜单或 c # (中的 *Entity1.cs* ) ，然后选择 " **删除**"。
+4. 在 **解决方案资源管理器** 中，打开 Visual Basic () 中的 *Entity1* (快捷菜单，并选择 "**删除** *"。*
 
-5. 打开 Visual Basic) 或 c ) # 中的 *Entity1Service.cs* (中的 *Entity1Service* (的快捷菜单，然后选择 "**删除**"。
+5. 打开 Visual Basic) 中的 *Entity1Service* (的快捷菜单或 c # 中的 *Entity1Service* () ，然后选择 " **删除**"。
 
 ## <a name="add-an-entity-to-the-model"></a>向模型添加实体
 
@@ -126,7 +126,7 @@ ms.locfileid: "99847708"
 
 2. 在 "**工具箱**" 的 " **BusinessDataConnectivity** " 选项卡上，将 **实体** 添加到 BDC 设计器上。
 
-     新实体将显示在设计器上。 Visual Studio 将名为 (*EntityService* 的文件以 c # ) 中的 Visual Basic) 或 *EntityService.cs* (添加到项目。
+     新实体将显示在设计器上。 Visual Studio 将名为 (*EntityService* 的文件以 c # ) 中的 Visual Basic) 或 *EntityService* (添加到项目。
 
 3. 在菜单栏上，选择 "**查看**  >  **属性**  >  **窗口**"。
 
@@ -184,7 +184,7 @@ ms.locfileid: "99847708"
 
 10. 重复步骤6，为以下每个字段创建类型描述符。
 
-    |“属性”|类型名称|
+    |名称|类型名称|
     |----------|---------------|
     |FirstName|System.String|
     |LastName|System.String|
@@ -208,8 +208,8 @@ ms.locfileid: "99847708"
     > [!NOTE]
     > 将字段的值替换 `ServerName` 为服务器的名称。
 
-     [!code-csharp[SP_BDC#3](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#3)]
-     [!code-vb[SP_BDC#3](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet3":::
 
 ## <a name="add-a-finder-method"></a>添加 finder 方法
 
@@ -236,8 +236,8 @@ ms.locfileid: "99847708"
      > [!NOTE]
      > 将字段的值替换 `ServerName` 为服务器的名称。
 
-     [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-     [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="test-the-project"></a>测试项目
 

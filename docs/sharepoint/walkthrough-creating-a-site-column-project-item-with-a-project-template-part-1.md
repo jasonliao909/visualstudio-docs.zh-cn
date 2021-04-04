@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b9ccf478a084b8dedabc6f470a333e3fe4b54eb7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07f3b90df070eca4e17e5bba9fa6a9e3582bd238
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918736"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217789"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第1部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 你可以通过创建自己的 SharePoint 项目项类型，然后将其与项目模板关联，在 Visual Studio 中扩展 SharePoint 项目系统。 在本演练中，您将定义用于创建网站列的项目项类型，然后您将创建一个可用于创建包含网站列项目项的新项目的项目模板。
@@ -48,7 +48,7 @@ ms.locfileid: "99918736"
 
 - 支持的 Microsoft Windows、SharePoint 和版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!include[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
   以下概念的知识非常有用，但并不是必需的，无法完成本演练：
 
@@ -150,8 +150,8 @@ ms.locfileid: "99918736"
 
 1. 在 **SiteColumnProjectItemTypeProvider** 代码文件中，将默认代码替换为以下代码，然后保存该文件。
 
-     [!code-csharp[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.SiteColumn#1](../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projectitemtypedefinition/sitecolumnprojectitemtypeprovider.vb" id="Snippet1":::
 
 ## <a name="create-a-visual-studio-project-template"></a>创建 Visual Studio 项目模板
  通过创建项目模板，可让其他开发人员创建包含网站列项目项的 SharePoint 项目。 SharePoint 项目模板包含 Visual Studio 中所有项目（如 *.csproj* 或 *. .vbproj* 和 *.vstemplate* 文件）和特定于 SharePoint 项目的文件所需的文件。 有关详细信息，请参阅 [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
@@ -225,7 +225,7 @@ ms.locfileid: "99918736"
 ## <a name="edit-the-project-template-files"></a>编辑项目模板文件
  在 SiteColumnProjectTemplate 项目中，编辑以下文件以定义项目模板的行为：
 
-- *AssemblyInfo.cs* 或 *AssemblyInfo*
+- *AssemblyInfo* 或 *AssemblyInfo*
 
 - Elements.xml
 
@@ -241,9 +241,9 @@ ms.locfileid: "99918736"
 
   在以下过程中，你将向其中一些文件添加可替换参数。 可替换参数是以美元符号 ($) 字符开头和结尾的令牌。 用户使用此项目模板来创建项目时，Visual Studio 会自动将新项目中的这些参数替换为特定值。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。
 
-#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>编辑 AssemblyInfo.cs 或 AssemblyInfo 文件
+#### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>编辑 "AssemblyInfo" 或 "AssemblyInfo" 文件
 
-1. 在 SiteColumnProjectTemplate 项目中，打开 *AssemblyInfo.cs* 或 *AssemblyInfo* 文件，然后将以下语句添加到该文件的顶部：
+1. 在 SiteColumnProjectTemplate 项目中，打开 *AssemblyInfo* 或 *AssemblyInfo* 文件，然后将以下语句添加到其顶部：
 
     ```vb
     Imports System.Security

@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 51b80124f7cf550843ad346e9d1e1c0b21ccd0f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cc3d29d4991b6cfb712e4754f066edbb66f0b71
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923342"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216678"
 ---
 # <a name="how-to-create-a-sharepoint-command"></a>如何：创建 SharePoint 命令
   如果要在 SharePoint 工具扩展中使用服务器对象模型，则必须创建自定义 *SharePoint 命令* 以调用 API。 在可直接调入服务器对象模型的程序集中定义 SharePoint 命令。
@@ -64,8 +64,8 @@ ms.locfileid: "99923342"
 ## <a name="example"></a>示例
  下面的代码示例演示一个具有标识符的 SharePoint 命令 `Contoso.Commands.UpgradeSolution` 。 此命令使用服务器对象模型中的 Api 升级到已部署的解决方案。
 
- [!code-csharp[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs#5)]
- [!code-vb[SPExtensibility.ProjectExtension.UpgradeDeploymentStep#5](../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb#5)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/UpgradeDeploymentStep/SharePointCommands/Commands.cs" id="Snippet5":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/upgradedeploymentstep/sharepointcommands/commands.vb" id="Snippet5":::
 
  除了隐式的第一个 <xref:Microsoft.VisualStudio.SharePoint.Commands.ISharePointCommandContext> 参数外，此命令还具有一个自定义字符串参数，该参数包含正在升级到 SharePoint 站点的 .wsp 文件的完整路径。 若要在更大的示例上下文中查看此代码，请参阅 [演练：为 SharePoint 项目创建自定义部署步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 

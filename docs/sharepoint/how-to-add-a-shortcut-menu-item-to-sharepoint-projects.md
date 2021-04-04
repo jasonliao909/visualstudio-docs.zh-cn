@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4244fb83d4792786baeb99693dc0fee04624d37d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54ac53ad317f500e787baebfdfeb4a86dc917e06
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882721"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216808"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-sharepoint-projects"></a>如何：向 SharePoint 项目添加快捷菜单项
   您可以向任何 SharePoint 项目添加快捷菜单项。 当用户在 **解决方案资源管理器** 中右键单击项目节点时，将显示菜单项。
@@ -40,8 +40,8 @@ ms.locfileid: "99882721"
 ## <a name="example"></a>示例
  下面的代码示例演示如何将快捷菜单项添加到 **解决方案资源管理器** 中的 SharePoint 项目节点。 当用户右键单击项目节点并单击 " **写入消息到输出窗口** " 菜单项时，Visual Studio 会在 " **输出** " 窗口中显示一条消息。 此示例使用 SharePoint 项目服务显示消息。 有关详细信息，请参阅 [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。
 
- [!code-csharp[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs#1)]
- [!code-vb[SPExtensibility.ProjectExtension.Menu#1](../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectmenu/extension/projectitemextensionmenu.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectmenu/extension/projectitemextensionmenu.vb" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要一个类库项目，其中包含对以下程序集的引用：

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1943bd8a652a88d218912ab0fc0f6227bf83bc95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d0eebee6e37fbd6696923da0e470f05688fa0387
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885698"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216574"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
   通过创建 *事件接收器*，你可以在用户与 SharePoint 项（如列表或列表项）交互时做出响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过遵循本主题，可以了解如何将事件接收器添加到列表实例。
@@ -58,8 +58,8 @@ ms.locfileid: "99885698"
 
 9. 将现有 `ItemAdded` 的方法替换为以下代码，然后选择 **F5** 键：
 
-     [!code-csharp[SP_EventReceiver#1](../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs#1)]
-     [!code-vb[SP_EventReceiver#1](../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb" id="Snippet1":::
 
      代码将运行，SharePoint 站点将显示在 web 浏览器中。
 

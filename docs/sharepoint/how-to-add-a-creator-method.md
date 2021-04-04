@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4079fb5be612421bfa4a0b6dc53c3003a1c65e61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 950745a533fbea8d360c8bea6d839a304dd6e0d7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934879"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216405"
 ---
 # <a name="how-to-add-a-creator-method"></a>如何：添加 Creator 方法
   Creator 方法将新数据添加到实体的数据源。 当用户在基于模型的列表的 **功能区** 上选择 "**新建项**" 按钮时， (BDC) 服务的业务数据连接将调用此方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -62,8 +62,8 @@ ms.locfileid: "99934879"
    > [!NOTE]
    > 将字段的值替换 `ServerName` 为服务器的名称。
 
-    [!code-csharp[SP_BDC#4](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#4)]
-    [!code-vb[SP_BDC#4](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#4)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet4":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet4":::
 
 ## <a name="see-also"></a>另请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)

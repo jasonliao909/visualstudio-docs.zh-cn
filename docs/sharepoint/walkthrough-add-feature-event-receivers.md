@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c9d50de6630a813a9c8c7a075af6f921608fcd93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 305220a8206cc84e55ed7319b5ce6ce1c8058b3c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851525"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217029"
 ---
 # <a name="walkthrough-add-feature-event-receivers"></a>演练：添加功能事件接收器
 功能事件接收器是在 SharePoint 中发生以下与功能相关的事件之一时执行的方法：
@@ -85,16 +85,16 @@ ms.locfileid: "99851525"
 
 2. 在 " **功能** " 节点下，打开 " **Feature1**" 的快捷菜单，然后选择 " **添加事件接收器** " 向该功能添加事件接收器。
 
-     这会在 Feature1 下添加一个代码文件。 在这种情况下，它被命名为 *Feature1.EventReceiver.cs* 或 *Feature1*，具体取决于项目的开发语言。
+     这会在 Feature1 下添加一个代码文件。 在这种情况下，它的名称为 *Feature1* 或 *Feature1*，具体取决于项目的开发语言。
 
 3. 如果你的项目是用编写的 [!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)] ，请在事件接收器顶部添加以下代码（如果尚未存在）：
 
-     [!code-csharp[SP_FeatureEvt#1](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet1":::
 
 4. 事件接收器类包含若干作为事件的注释掉的方法。 将 **FeatureDeactivating** 方法替换为以下内容：
 
-     [!code-vb[SP_FeatureEvt#2](../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb#2)]
-     [!code-csharp[SP_FeatureEvt#2](../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/featureevt2vb/features/feature1/feature1.eventreceiver.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/featureevttest2/features/feature1/feature1.eventreceiver.cs" id="Snippet2":::
 
 ## <a name="test-the-feature-event-receiver"></a>测试功能事件接收器
  接下来，停用该功能，测试 **FeatureDeactivating** 方法是否将公告输出到 SharePoint 公告列表。

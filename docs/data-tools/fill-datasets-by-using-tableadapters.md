@@ -21,12 +21,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8037b8d19bad19485e9ed8f7926e6a3e45b8fef1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47c17c66a1def3c3fa774437825fe15b3f9ff534
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866900"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216275"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -54,10 +54,10 @@ Tableadapter 是由设计器生成的组件，用于连接到数据库、运行�
 
 ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
-尽管 Tableadapter 是用 **数据集设计器** 设计的，但 TableAdapter 类不会生成为的嵌套类  <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的不同命名空间中。 例如，如果你有一个名为的数据集 `NorthwindDataSet` ，则与中的关联的 tableadapter 将  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定 TableAdapter，必须声明 TableAdapter 的新实例。 例如： 。
+尽管 Tableadapter 是用 **数据集设计器** 设计的，但 TableAdapter 类不会生成为的嵌套类  <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的不同命名空间中。 例如，如果你有一个名为的数据集 `NorthwindDataSet` ，则与中的关联的 tableadapter 将  <xref:System.Data.DataTable> `NorthwindDataSet` 在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定 TableAdapter，必须声明 TableAdapter 的新实例。 例如：
 
-[!code-csharp[VbRaddataTableAdapters#7](../data-tools/codesnippet/CSharp/fill-datasets-by-using-tableadapters_1.cs)]
-[!code-vb[VbRaddataTableAdapters#7](../data-tools/codesnippet/VisualBasic/fill-datasets-by-using-tableadapters_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb" id="Snippet7":::
 
 ## <a name="associated-datatable-schema"></a>关联的 DataTable 架构
 
@@ -135,7 +135,7 @@ TableAdapterManager 类不是 .NET 类型。 因此，您不能在文档中查�
 |*tableName* `TableAdapter` 知识产权|表示 TableAdapter。 生成的 TableAdapterManager 包含其管理的每个属性的属性 `TableAdapter` 。 例如，具有 Customers 和 Orders 表的数据集将生成包含和属性的 TableAdapterManager `CustomersTableAdapter` `OrdersTableAdapter` 。|
 |`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete**。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
 
-## <a name="security"></a>安全性
+## <a name="security"></a>安全
 
 如果使用的数据命令的 CommandType 属性设置为 <xref:System.Data.CommandType.Text> ，请在将客户端传递到数据库之前，仔细检查从该客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将用户输入传输到数据库之前，请始终验证信息是否有效。 最佳做法是尽可能使用参数化查询或存储过程。
 

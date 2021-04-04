@@ -13,12 +13,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: e4853dfbffdf07d3b605b13c5fce749a30285c27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: daf4f722eb51a08e7a6ddb287e5b54956ecdfe73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866328"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216015"
 ---
 # <a name="typed-vs-untyped-datasets"></a>类型化与非类型化数据集
 类型化数据集是第一个派生自基类的数据集， <xref:System.Data.DataSet> 然后使用存储在 .xsd 文件中的 **数据集设计器** 中的信息来生成新的强类型化数据集类。 将生成架构 (表、列等) 中的信息，并将其作为一组第一类对象和属性编译到这个新的数据集类中。 因为类型化数据集继承自基类 <xref:System.Data.DataSet> ，所以类型化类将假定类的所有功能 <xref:System.Data.DataSet> ，并且可与采用类的实例作为参数的方法一起使用 <xref:System.Data.DataSet> 。
@@ -28,13 +28,13 @@ ms.locfileid: "99866328"
 ## <a name="contrast-data-access-in-typed-and-untyped-datasets"></a>对类型化和非类型化数据集中的数据访问进行对比度
 类型化数据集的类具有一个对象模型，其中其属性采用表和列的实际名称。 例如，如果使用类型化数据集，则可以通过使用如下所示的代码来引用列：
 
-[!code-csharp[VbRaddataDatasets#4](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_1.cs)]
-[!code-vb[VbRaddataDatasets#4](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet4":::
 
 相反，如果使用非类型化的数据集，则等效的代码为：
 
-[!code-csharp[VbRaddataDatasets#5](../data-tools/codesnippet/CSharp/typed-vs-untyped-datasets_2.cs)]
-[!code-vb[VbRaddataDatasets#5](../data-tools/codesnippet/VisualBasic/typed-vs-untyped-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDatasets/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDatasets/VB/Form1.vb" id="Snippet5":::
 
 类型化访问不仅更易于阅读，还可以在 Visual Studio **代码编辑器** 中的 IntelliSense 完全支持。 除了更易于使用以外，类型化的数据集的语法还在编译时提供类型检查，大大降低了向数据集成员赋值时出现错误的可能性。 如果更改类中列的名称 <xref:System.Data.DataSet> ，并编译应用程序，则会收到生成错误。 通过双击 **任务列表** 中的生成错误，可以直接跳到引用旧列名称的代码行或代码行。 在运行时访问类型化数据集中的表和列还会稍微快一些，因为访问是在编译时确定的，而不是在运行时进行的。
 
