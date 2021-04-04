@@ -11,19 +11,19 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7c163aa10bdcb3ee28de6d6950dd15f85df876bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b09db3fecde5d4b87b24963930b2783b0c68052c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885607"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213974"
 ---
 # <a name="how-to-handle-deployment-conflicts"></a>如何：处理部署冲突
   你可以提供自己的代码来处理 SharePoint 项目项的部署冲突。 例如，你可能确定当前项目项中的任何文件是否已存在于部署位置，然后在部署当前项目项之前删除已部署的文件。 有关部署冲突的详细信息，请参阅 [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ### <a name="to-handle-a-deployment-conflict"></a>处理部署冲突
 
-1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅下列主题：
+1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅以下主题：
 
     - [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
@@ -44,8 +44,8 @@ ms.locfileid: "99885607"
 
  为简单起见， <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 此示例中的事件处理程序假设存在部署冲突 (也就是说，它始终向添加一个新的 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 对象) ， `Resolve` 方法只返回 **true** 以指示冲突已解决。 在实际情况下， <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> 事件处理程序首先确定当前项目项中的文件与部署位置的文件之间是否存在冲突，然后 <xref:Microsoft.VisualStudio.SharePoint.Deployment.IDeploymentConflict> 仅在存在冲突时添加对象。 例如，你可以使用 `e.ProjectItem.Files` 事件处理程序中的属性来分析项目项中的文件，并且可以调用 SharePoint 命令来分析部署位置的文件。 同样，在实际情况下，该 `Resolve` 方法可能调用 sharepoint 命令来解决 sharepoint 站点上的冲突。 有关创建 SharePoint 命令的详细信息，请参阅 [如何：创建 sharepoint 命令](../sharepoint/how-to-create-a-sharepoint-command.md)。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb#1)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.DeploymentConflict#1](../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/deploymentconflict/extension/deploymentconflictextension.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/deploymentconflict/extension/deploymentconflictextension.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：

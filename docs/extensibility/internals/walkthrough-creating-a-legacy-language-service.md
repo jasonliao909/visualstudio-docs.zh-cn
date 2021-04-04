@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ded5624aed40ac2e878c44fd8dabc7d35c4d1ac8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 42c9f2d2a91b90cab31dd225d0ace081988135fb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074270"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213636"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管包框架 (MPF) 语言类实现中的语言服务 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 非常简单。 你需要一个 VSPackage 来托管语言服务、语言服务本身和语言分析器。
@@ -44,15 +44,15 @@ ms.locfileid: "105074270"
 
     您可以使用任何所需的名称。 此处详述的这些过程假定 MyLanguagePackage 为名称。
 
-3. 选择 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作为语言和选项以生成新的密钥文件。 单击“下一步”  。
+3. 选择 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 作为语言和选项以生成新的密钥文件。 单击“下一步”。
 
-4. 输入相应的公司和包信息。 单击“下一步”  。
+4. 输入相应的公司和包信息。 单击“下一步”。
 
-5. 选择 " **菜单命令**"。 单击“下一步”  。
+5. 选择 " **菜单命令**"。 单击“下一步”。
 
     如果不打算支持代码片段，只需单击 "完成"，然后忽略下一步。
 
-6. 输入 " **插入代码片段** " 作为 **命令名称** ，并输入 `cmdidInsertSnippet` **命令 ID**。 单击“完成” 。
+6. 输入 " **插入代码片段** " 作为 **命令名称** ，并输入 `cmdidInsertSnippet` **命令 ID**。 单击“完成”。
 
     **命令名称** 和 **命令 ID** 可以是你想要的任何内容，只是示例。
 
@@ -74,13 +74,13 @@ ms.locfileid: "105074270"
 
 6. 在 MyLanguageService 文件中，添加以下 `using` 指令。
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_1.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#1](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_1.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguageservice.cs" id="Snippet1":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguageservice.vb" id="Snippet1":::
 
 7. 将 `MyLanguageService` 类修改为从类派生 <xref:Microsoft.VisualStudio.Package.LanguageService> ：
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_2.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#2](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_2.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguageservice.cs" id="Snippet2":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguageservice.vb" id="Snippet2":::
 
 8. 将光标放置在 "LanguageService" 上，然后在 " **编辑**" " **IntelliSense** " 菜单中选择 " **实现抽象类**"。 这将添加实现语言服务类所必需的最低方法。
 
@@ -90,8 +90,8 @@ ms.locfileid: "105074270"
 
 1. 打开 MyLanguagePackagePackage 文件并添加以下 `using` 指令：
 
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_3.vb)]
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#3](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_3.cs)]
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mylanguagepackagepackage.vb" id="Snippet3":::
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mylanguagepackagepackage.cs" id="Snippet3":::
 
 2. 注册语言服务类，如 [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)中所述。 这包括 ProvideXX 属性和 "Proffering 语言服务" 部分。 使用 MyLanguageService，其中本主题使用 TestLanguageService。
 
@@ -114,8 +114,8 @@ ms.locfileid: "105074270"
 
 3. 在新的类文件中，添加以下 `using` 指令。
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_4.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#4](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_4.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mysource.cs" id="Snippet4":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mysource.vb" id="Snippet4":::
 
 4. 将类修改为从所需的 MPF 类派生。
 
@@ -123,8 +123,8 @@ ms.locfileid: "105074270"
 
      例如，从类派生的类的构造函数 <xref:Microsoft.VisualStudio.Package.Source> 可能如下所示：
 
-     [!code-csharp[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/CSharp/walkthrough-creating-a-legacy-language-service_5.cs)]
-     [!code-vb[CreatingALanguageService(ManagedPackageFramework)#5](../../extensibility/internals/codesnippet/VisualBasic/walkthrough-creating-a-legacy-language-service_5.vb)]
+     :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/cs/mysource.cs" id="Snippet5":::
+     :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/creatingalanguageservice(managedpackageframework)/vb/mysource.vb" id="Snippet5":::
 
 6. 在 " **编辑**" " **IntelliSense** " 菜单中，如果基类具有必须实现的任何抽象方法，请选择 " **实现抽象类** "。
 

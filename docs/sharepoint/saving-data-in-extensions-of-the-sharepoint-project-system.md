@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 579289a7ba5afa1eb50bdf5f1dbb105fc2a6b01e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87e05ba763095a818cc5db6f92828e6259d30e73
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881563"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217432"
 ---
 # <a name="save-data-in-extensions-of-the-sharepoint-project-system"></a>在 SharePoint 项目系统的扩展中保存数据
   扩展 SharePoint 项目系统时，可以保存在关闭 SharePoint 项目后保留的字符串数据。 数据通常与特定项目项或项目本身相关联。
@@ -32,8 +32,8 @@ ms.locfileid: "99881563"
 
  下面的代码示例演示如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 属性保存自定义 SharePoint 项目项类型中定义的字符串属性的值。 若要在更大的示例上下文中查看此示例，请参阅 [如何：将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#14)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#14](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#14)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet14":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet14":::
 
 ## <a name="save-data-that-is-associated-with-a-project"></a>保存与项目关联的数据
  如果你具有项目级数据（如添加到 SharePoint 项目中的属性的值），则可以将数据保存到项目文件， (*.csproj* 文件或 *.vbproj* 文件) 或 *(文件中* 的项目用户选项文件或 *.vbproj* 文件) 。 您选择用于保存数据的文件取决于您希望数据的使用方式：
@@ -45,16 +45,16 @@ ms.locfileid: "99881563"
 ### <a name="save-data-to-the-project-file"></a>将数据保存到项目文件
  若要将数据保存到项目文件，请将 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 对象转换为 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 对象，然后使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetPropertyValue%2A> 方法。 下面的代码示例演示如何使用此方法将项目属性的值保存到项目文件。 若要在更大的示例上下文中查看此示例，请参阅 [如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
- [!code-vb[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#3)]
- [!code-csharp[SpExt_SPCustomPrjProperty#3](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#3)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet3":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet3":::
 
  有关将 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 对象转换为 Visual Studio 自动化对象模型或集成对象模型中的其他类型的详细信息，请参阅在 [SharePoint 项目系统类型和其他 Visual studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)。
 
 ### <a name="save-data-to-the-project-user-option-file"></a>将数据保存到项目用户选项文件
  若要将数据保存到项目用户选项文件，请使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject.ProjectUserFileData%2A> 对象的属性 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 。 下面的代码示例演示如何使用此属性将项目属性的值保存到项目用户选项文件中。 若要在更大的示例上下文中查看此示例，请参阅 [如何：将属性添加到 SharePoint 项目](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。
 
- [!code-vb[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#2)]
- [!code-csharp[SpExt_SPCustomPrjProperty#2](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#2)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet2":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet2":::
 
 ## <a name="see-also"></a>另请参阅
 - [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)

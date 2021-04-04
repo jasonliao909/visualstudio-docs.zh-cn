@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 01d8602971e2a89aef8cf8451d1273fa28c70f05
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b61474f4290771fb139d511296580ec1ef0f8820
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949124"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213909"
 ---
 # <a name="create-reusable-controls-for-web-parts-or-application-pages"></a>为 Web 部件或应用程序页创建可重用控件
   在 Visual Studio 中，你可以创建可由 SharePoint 中运行的应用程序页和 Web 部件使用的自定义可重用控件。 这些控件称为用户控件。 用户控件是一种复合控件，其工作原理与 ASP.NET 网页非常类似：可将现有 Web 服务器控件和标记添加到用户控件，并定义控件的属性和方法。 然后可以将它们嵌入到 ASP.NET 网页中，充当其中的一个单元。
@@ -47,8 +47,8 @@ ms.locfileid: "99949124"
 
  若要在 Web 部件中包含用户控件，请将用户控件添加到 Web 部件代码文件中的 Web 部件 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 集合中。 以下示例将用户控件添加到 Web 部件的 <xref:System.Web.UI.WebControls.WebParts.Part.Controls%2A> 集合中。
 
- [!code-vb[SP_VisualWebPart#5](../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb#5)]
- [!code-csharp[SP_VisualWebPart#5](../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_visualwebpart.vb/visualwebpart1/visualwebpart1.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sp_visualwebpart.cs/visualwebpart1/visualwebpart1.cs" id="Snippet5":::
 
 ## <a name="debug-a-user-control"></a>调试用户控件
  若要调试用户控件，请确保用户控件包含在 SharePoint 项目的应用程序页或 Web 部件中。 然后可在用户控件中调试代码，就像在任何 Visual Studio 项目中调试代码一样。

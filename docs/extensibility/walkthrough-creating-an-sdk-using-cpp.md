@@ -10,12 +10,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5d4baeb8a93a1bb5e70f3ee6266bb1a832a2a3fe
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 743759896bf1de104825825d450be081ab2cc666
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080406"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217419"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>演练：使用 c + + 创建 SDK
 本演练演示如何创建本机 c + + 数学库 SDK，将 SDK 打包为 Visual Studio 扩展 (VSIX) ，然后使用它来创建应用。 本演练分为以下几个步骤：
@@ -37,11 +37,11 @@ ms.locfileid: "105080406"
 
 3. 更新 *NativeMath* 以匹配以下代码。
 
-     [!code-cpp[CreatingAnSDKUsingCpp#1](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_1.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.h" id="Snippet1":::
 
 4. 更新 *NativeMath* 以匹配以下代码：
 
-     [!code-cpp[CreatingAnSDKUsingCpp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_2.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemath/nativemath.cpp" id="Snippet2":::
 
 5. 在 **解决方案资源管理器** 中，打开 **解决方案 "NativeMath"** 的快捷菜单，然后选择 "**添加**  >  **新项目**"。
 
@@ -49,11 +49,11 @@ ms.locfileid: "105080406"
 
 7. 更新 *Class1* 以匹配以下代码：
 
-     [!code-cpp[CreatingAnSDKUsingCpp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_3.h)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.h" id="Snippet3":::
 
 8. 更新 *Class1* 以匹配以下代码：
 
-     [!code-cpp[CreatingAnSDKUsingCpp#4](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_4.cpp)]
+     :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathwrt/class1.cpp" id="Snippet4":::
 
 9. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
@@ -67,7 +67,8 @@ ms.locfileid: "105080406"
 
 4. 使用以下 XML 替换现有的 XML。
 
-    [!code-xml[CreatingAnSDKUsingCpp#6](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_6.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+
 
 5. 在 **解决方案资源管理器** 中，打开 **NativeMathVSIX** 项目的快捷菜单，然后选择 "**添加**  >  **新项**"。
 
@@ -75,7 +76,7 @@ ms.locfileid: "105080406"
 
 7. 使用此 XML 替换文件的内容：
 
-     [!code-xml[CreatingAnSDKUsingCpp#5](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_5.xml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/sdkmanifest.xml" id="Snippet5":::
 
 8. 在 **解决方案资源管理器** 的 **NativeMathVSIX** 项目下，创建以下文件夹结构：
 
@@ -108,8 +109,21 @@ ms.locfileid: "105080406"
      复制 *$SolutionRoot $ \Debug\NativeMathWRT\NativeMathWRT.pri* 并将其粘贴到 *$SolutionRoot $ \NativeMathVSIX\References\CommonConfiguration\Neutral* 文件夹中。
 
 11. 在 " *$SolutionRoot $ \NativeMathVSIX\DesignTime\Debug\x86 \\* " 文件夹中，创建一个名为 *NativeMathSDK* 的文本文件，然后在其中粘贴以下内容：
-
-    [!code-xml[CreatingAnSDKUsingCpp#7](../extensibility/codesnippet/XML/walkthrough-creating-an-sdk-using-cpp_7.xml)]
+   
+    ```xml
+    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+      <PropertyGroup>
+        <NativeMathSDKPath>$(FrameworkSDKRoot)\..\..\UAP\v0.8.0.0\ExtensionSDKs\NativeMathSDK\1.0\</NativeMathSDKPath>
+        <IncludePath>$(NativeMathSDKPath)DesignTime\CommonConfiguration\Neutral\Include;$(IncludePath)</IncludePath>
+        <LibraryPath>$(NativeMathSDKPath)DesignTime\Debug\x86;$(LibraryPath)</LibraryPath>
+      </PropertyGroup>
+      <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+         <Link>
+           <AdditionalDependencies>NativeMath.lib;%(AdditionalDependencies)</AdditionalDependencies>
+         </Link>
+      </ItemDefinitionGroup>
+    </Project>
+    ```
 
 12. 在菜单栏上，选择 "**视图**  >  " "**其他窗口**  >  " "属性"**窗口** (键盘：选择 **F4** 键) 。
 
@@ -155,15 +169,15 @@ ms.locfileid: "105080406"
 
 6. 在 **解决方案资源管理器** 中，打开 **MainPage**，然后使用以下 xaml 替换其内容：
 
-    [!code-xml[CreatingAnSDKUsingCppDemoApp#1](../extensibility/codesnippet/Xaml/walkthrough-creating-an-sdk-using-cpp_8.xaml)]
+    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml" id="Snippet1":::
 
 7. 更新 *Mainpage* 以匹配以下代码：
 
-    [!code-cpp[CreatingAnSDKUsingCppDemoApp#2](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_9.h)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.h" id="Snippet2":::
 
 8. 更新 *MainPage* 以匹配以下代码：
 
-     [!code-cpp[CreatingAnSDKUsingCppDemoApp#3](../extensibility/codesnippet/CPP/walkthrough-creating-an-sdk-using-cpp_10.cpp)]
+    :::code language="cpp" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcppdemoapp/cpp/mainpage.xaml.cpp" id="Snippet3":::
 
 9. 选择 **F5** 键以运行应用。
 
