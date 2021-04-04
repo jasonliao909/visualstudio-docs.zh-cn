@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 33ca8abf7a35bafd04c38fbb4a681245f2701f8e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5c9dc0a5ca6b7651b4ddc1f4b58a8b72305a1a5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879717"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217991"
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：添加删除器方法
   您可以通过向模型中添加删除器方法，使最终用户能够从 SharePoint 站点上的外部列表中删除数据记录。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -65,8 +65,8 @@ ms.locfileid: "99879717"
    > [!NOTE]
    > 将字段的值替换 `ServerName` 为服务器的名称。
 
-    [!code-csharp[SP_BDC#6](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs#6)]
-    [!code-vb[SP_BDC#6](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb#6)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet6":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet6":::
 
 ## <a name="see-also"></a>另请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)

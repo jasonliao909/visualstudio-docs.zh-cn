@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a87bcd8b51bc393921d21d838943d5e1fe8f02a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 316be1f0a8fa881f781d983cfe9ed663e5907749
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917337"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216899"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api"></a>演练：通过 ClickOnce 部署 API 按需下载程序集
 默认情况下，应用程序中包含的所有程序集 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都会在应用程序首次运行时下载。 但是，你的应用程序的某些部分可能由一小部分用户使用。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时 (CLR) 需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -56,10 +56,10 @@ ms.locfileid: "99917337"
 
 5. 使用记事本或其他文本编辑器，使用名为的单个属性定义名为的类 `DynamicClass` `Message` 。
 
-    [!code-vb[ClickOnceLibrary#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.vb)]
-    [!code-csharp[ClickOnceLibrary#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_1.cs)]
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceLibrary/VB/Class1.vb" id="Snippet1":::
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceLibrary/CS/Class1.cs" id="Snippet1":::
 
-6. 将该文本保存为一个名为 *ClickOnceLibrary.cs* 或 *找到 clickoncelibrary.dll* 的文件（具体取决于你使用的语言）到 *ClickOnceOnDemand* 目录。
+6. 将该文本保存为一个名为 *找到 clickoncelibrary.dll* 或 *找到 clickoncelibrary.dll* 的文件（具体取决于你使用的语言）到 *ClickOnceOnDemand* 目录。
 
 7. 将文件编译到程序集。
 
@@ -79,14 +79,14 @@ ms.locfileid: "99917337"
 
 9. 使用文本编辑器创建一个新文件，然后输入以下代码。 此代码创建一个 Windows 窗体应用程序，该应用程序在需要时下载找到 clickoncelibrary.dll 程序集。
 
-     [!code-csharp[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/CSharp/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.cs)]
-     [!code-vb[ClickOnceOnDemandCmdLine#1](../deployment/codesnippet/VisualBasic/walkthrough-downloading-assemblies-on-demand-with-the-clickonce-deployment-api_2.vb)]
+    :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/CS/Form1.cs" id="Snippet1":::
+    :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceOnDemandCmdLine/VB/Form1.vb" id="Snippet1":::
 
 10. 在代码中，找到对的调用 <xref:System.Reflection.Assembly.LoadFile%2A> 。
 
 11. 设置 `PublicKeyToken` 为之前检索到的值。
 
-12. 将该文件另存为 Form1.cs *或 node.js。*
+12. 将该文件另存为 *form1* 或 *form1*。
 
 13. 使用以下命令将其编译为可执行文件。
 

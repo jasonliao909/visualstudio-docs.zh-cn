@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f55eb3ba06f2541bf1f4777c24927993444c6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8f01d3c15490a19c8cb5071cf7677fcf2b2a5384
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873601"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216613"
 ---
 # <a name="how-to-create-a-sharepoint-project-item-extension"></a>如何：创建 SharePoint 项目项扩展
   如果要向已安装在 Visual Studio 中的 SharePoint 项目项添加功能，请创建项目项扩展。 有关详细信息，请参阅 [扩展 SharePoint 项目项](../sharepoint/extending-sharepoint-project-items.md)。
@@ -49,8 +49,8 @@ ms.locfileid: "99873601"
 ## <a name="example"></a>示例
  下面的代码示例演示如何为事件接收器项目项创建简单扩展。 用户每次向 SharePoint 项目中添加一个事件接收器项目项时，此扩展都会向 " **输出** " 窗口中写入一条消息，并 **错误列表** 窗口。
 
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs#1)]
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#1](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb#1)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/projectitemextension.cs" id="Snippet1":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/projectitemextension.vb" id="Snippet1":::
 
  此示例使用 SharePoint 项目服务将消息写入到 " **输出** " 窗口，并 **错误列表** "窗口。 有关详细信息，请参阅 [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。
 

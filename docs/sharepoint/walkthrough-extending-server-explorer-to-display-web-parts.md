@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa190ea6d5376c00584cc5936d1074d245b9509e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 276315b7f470777da30fda33b15bac995deb07fd
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952663"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217666"
 ---
 # <a name="walkthrough-extend-server-explorer-to-display-web-parts"></a>演练：扩展服务器资源管理器以显示 web 部件
   在 Visual Studio 中，可以使用 **服务器资源管理器** 的 " **sharepoint 连接**" 节点来查看 SharePoint 站点上的组件。 但是，默认情况下 **服务器资源管理器** 不显示某些组件。 在本演练中，您将扩展 **服务器资源管理器** 以便它在每个连接的 SharePoint 站点上显示 Web 部件库。
@@ -216,8 +216,8 @@ ms.locfileid: "99952663"
     > [!NOTE]
     > 添加此代码后，该项目将会出现一些编译错误，但当你在后续步骤中添加代码时，这些错误将消失。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs#1)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#1](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/sitenodeextension.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/sitenodeextension.vb" id="Snippet1":::
 
 ## <a name="define-a-node-type-that-represents-a-web-part"></a>定义表示 web 部件的节点类型
  创建一个类，用于定义表示 Web 部件的新类型的节点。 Visual Studio 使用此新节点类型显示 " **Web 部件库** " 节点下的子节点。 每个子节点表示 SharePoint 站点上的单个 Web 部件。
@@ -228,8 +228,8 @@ ms.locfileid: "99952663"
 
 1. 在 WebPartNodeExtension 项目中，打开 WebPartNodeTypeProvder 代码文件，然后将以下代码粘贴到其中。
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb#2)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#2](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs#2)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodetypeprovider.vb" id="Snippet2":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodetypeprovider.cs" id="Snippet2":::
 
 ## <a name="define-the-web-part-data-class"></a>定义 web 部件数据类
  定义一个包含有关 SharePoint 站点上单个 Web 部件的数据的类。 稍后在本演练中，将创建一个自定义 SharePoint 命令，该命令检索有关站点上的每个 Web 部件的数据，然后将数据分配给此类的实例。
@@ -238,8 +238,8 @@ ms.locfileid: "99952663"
 
 1. 在 WebPartNodeExtension 项目中，打开 WebPartNodeInfo 代码文件，然后将以下代码粘贴到其中。
 
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb#3)]
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#3](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs#3)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartnodeinfo.vb" id="Snippet3":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartnodeinfo.cs" id="Snippet3":::
 
 ## <a name="define-the-ids-for-the-sharepoint-commands"></a>定义 SharePoint 命令的 Id
  定义几个标识自定义 SharePoint 命令的字符串。 稍后在本演练中将执行这些命令。
@@ -248,8 +248,8 @@ ms.locfileid: "99952663"
 
 1. 在 WebPartNodeExtension 项目中，打开 WebPartCommandIds 代码文件，然后将以下代码粘贴到其中。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs#4)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#4](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/webpartnodeextension/webpartcommandids.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartnodeextension/webpartcommandids.vb" id="Snippet4":::
 
 ## <a name="create-the-custom-sharepoint-commands"></a>创建自定义 SharePoint 命令
  创建调入 SharePoint 服务器对象模型的自定义命令，以检索有关 SharePoint 站点上的 Web 部件的数据。 每个命令都是一个应用了的方法 <xref:Microsoft.VisualStudio.SharePoint.Commands.SharePointCommandAttribute> 。
@@ -258,8 +258,8 @@ ms.locfileid: "99952663"
 
 1. 在 WebPartCommands 项目中，打开 WebPartCommands 代码文件，然后将以下代码粘贴到其中。
 
-     [!code-csharp[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs#6)]
-     [!code-vb[SPExtensibility.SPExplorer.WebPartNodeWithCommands#6](../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb#6)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/WebPartNode/WebPartCommands/WebPartCommands.cs" id="Snippet6":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.spexplorer.webpartnodewithcommands.webpartnode/webpartcommands/webpartcommands.vb" id="Snippet6":::
 
 ## <a name="checkpoint"></a>检查点
  在本演练的此时， **Web 部件库** 节点和 SharePoint 命令的所有代码现在都在项目中。 生成解决方案，确保两个项目都在编译时不会出错。

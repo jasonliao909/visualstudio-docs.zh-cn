@@ -22,12 +22,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9fb859d61ab31a554579f72121a18a541b2995a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3a238bf325819b340b983618b5aac8f723184f4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858548"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216184"
 ---
 # <a name="read-xml-data-into-a-dataset"></a>将 XML 数据读入到数据集中
 
@@ -174,8 +174,8 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，将
 
 3. 在事件处理程序中键入以下代码 `ReadXmlButton_Click` ：
 
-     [!code-csharp[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_1.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#2](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb" id="Snippet2":::
 
 4. 在 `ReadXMLButton_Click` 事件处理程序代码中，将 `filepath =` 条目更改为正确的路径。
 
@@ -191,8 +191,8 @@ ADO.NET 提供了用于处理 XML 数据的简单方法。 在本演练中，将
 
 3. 将下面的代码粘贴到 `ShowSchemaButton_Click` 事件处理程序中。
 
-     [!code-csharp[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/CSharp/read-xml-data-into-a-dataset_2.cs)]
-     [!code-vb[VbRaddataFillingAndExecuting#3](../data-tools/codesnippet/VisualBasic/read-xml-data-into-a-dataset_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/CS/Form1.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataFillingAndExecuting/VB/Form1.vb" id="Snippet3":::
 
 ## <a name="test-the-form"></a>测试窗体
 

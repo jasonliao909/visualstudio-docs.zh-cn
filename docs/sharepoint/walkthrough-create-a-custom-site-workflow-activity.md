@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f2b722ccef084286287b9825c43fa9069f64dcc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29a3cd6fe37ec824a3db3a2c83aad7434d0018cb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937714"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218043"
 ---
 # <a name="walkthrough-create-a-custom-site-workflow-activity"></a>演练：创建自定义站点工作流活动
   本演练演示如何使用为站点级工作流创建自定义活动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。  (站点级工作流适用于整个站点，而不只是网站上的列表。 ) 自定义活动将创建备份公告列表，然后将 "公告" 列表中的内容复制到其中。
@@ -91,8 +91,8 @@ ms.locfileid: "99937714"
 
 3. 将 Class1 中的所有代码替换为以下内容：
 
-     [!code-csharp[SP_AnnBackup#1](../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs#1)]
-     [!code-vb[SP_AnnBackup#1](../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/announcementbackup/class1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/announcementbackupvb/class1.vb" id="Snippet1":::
 
 4. 保存项目，然后在菜单栏上选择 "**生成**" "生成  >  **解决方案**"。
 

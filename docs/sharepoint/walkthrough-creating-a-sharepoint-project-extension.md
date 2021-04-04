@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 378e839ea5f4223873fbbeec8d7b401ae0b16fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918754"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217783"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
   本演练演示如何创建 SharePoint 项目的扩展。 您可以使用项目扩展来响应项目级别的事件，例如，在添加、删除或重命名项目时。 还可以添加自定义属性，或在属性值更改时进行响应。 与项目项扩展不同，项目扩展不能与特定的 SharePoint 项目类型相关联。 当你创建项目扩展时，将在中打开任何类型的 SharePoint 项目时加载该扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -47,7 +47,7 @@ ms.locfileid: "99918754"
 
 - 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 、SharePoint 和版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用中的 **Vsix 项目** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用中的 **Vsix 项目** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，您必须创建两个项目：
@@ -113,8 +113,8 @@ ms.locfileid: "99918754"
 
 1. 将以下代码粘贴到 CustomProperty 代码文件中。
 
-     [!code-vb[SPExt_ProjectExtension#1](../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb#1)]
-     [!code-csharp[SPExt_ProjectExtension#1](../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectextension/customproperty.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectextension/customproperty.cs" id="Snippet1":::
 
 ## <a name="build-the-solution"></a>生成解决方案
  接下来，生成解决方案，确保它在编译时不会出错。

@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: def1ae862a7b9ba4def62cb590260c5a18758929
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a505ff059b347c6adbef15a8fe8bcfe7b274eaa4
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937701"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218017"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本网站定义项目
   本演练演示如何创建包含可视 Web 部件的基本网站定义，其中包含某些控件。 为清楚起见，你创建的可视 Web 部件只有几个控件。 不过，您可以创建更复杂的 SharePoint 站点定义，这些定义包含更多功能。
@@ -51,7 +51,7 @@ ms.locfileid: "99937701"
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上选择 "**文件**" "  >  **新建项目**"。
 
-    将显示“新建项目”对话框。
+    此时将出现“新建项目”对话框。
 
 2. 展开 " **Visual c #** " 节点或 **Visual Basic** "节点，展开" **SharePoint** "节点，然后选择" **2010** "节点。
 
@@ -112,10 +112,10 @@ ms.locfileid: "99937701"
     </table>
     ```
 
-6. 在 " *VisualWebPart1*" 下，打开 " *VisualWebPart1.ascx.cs* " ([!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) 或 *VisualWebPart1*) 的 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ，然后添加以下代码：
+6. 在 " *VisualWebPart1*" 下，打开 " *VisualWebPart1* " ([!INCLUDE[csprcs](../sharepoint/includes/csprcs-md.md)]) 或 *VisualWebPart1*) 的 ([!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ，然后添加以下代码：
 
-     [!code-vb[SP_SimpleSiteDef#1](../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb#1)]
-     [!code-csharp[SP_SimpleSiteDef#1](../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs#1)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/testsitedefvb/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.vb" id="Snippet1":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/testsitedef/sitedefinition/visualwebpart1/visualwebpart1usercontrol.ascx.cs" id="Snippet1":::
 
      此代码为 web 部件的按钮单击添加功能。
 

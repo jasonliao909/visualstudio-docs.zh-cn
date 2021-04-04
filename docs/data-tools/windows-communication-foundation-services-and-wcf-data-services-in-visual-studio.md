@@ -37,12 +37,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: fb5ace269d7770d0e7d360734268d3e7adfda319
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 45ff4336859fe0294232e9ca1d99513665d8e975
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866120"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216470"
 ---
 # <a name="windows-communication-foundation-services-and-wcf-data-services-in-visual-studio"></a>Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务
 
@@ -64,13 +64,13 @@ WCF 编程模型基于 WCF 服务和 WCF 客户端这两个实体之间的通信
 
 WCF 服务基于在服务与客户端之间定义协定的接口。 它标记有 <xref:System.ServiceModel.ServiceContractAttribute> 特性，如以下代码所示：
 
-[!code-csharp[WCFWalkthrough#6](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.cs)]
-[!code-vb[WCFWalkthrough#6](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet6":::
 
 通过使用 <xref:System.ServiceModel.OperationContractAttribute> 特性来标记 WCF 服务公开的函数或方法，对它们进行定义。
 
-[!code-csharp[WCFWalkthrough#1](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.cs)]
-[!code-vb[WCFWalkthrough#1](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/iservice1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/iservice1.vb" id="Snippet1":::
 
 此外，还可使用 <xref:System.Runtime.Serialization.DataContractAttribute> 特性标记复合类型来公开序列化的数据。 这会在客户端中启用数据绑定。
 
@@ -88,8 +88,8 @@ WCF 客户端包含一个代理和一个终结点，前者使应用程序能够�
 
 创建 WCF 客户端后，就可像引用其他任何对象一样在代码中引用该服务。 例如，若要调用之前所示的 `GetData` 方法，需编写如下所示的代码：
 
-[!code-csharp[WCFWalkthrough#3](../data-tools/codesnippet/CSharp/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.cs)]
-[!code-vb[WCFWalkthrough#3](../data-tools/codesnippet/VisualBasic/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/wcfwalkthrough/cs/form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/wcfwalkthrough/vb/form1.vb" id="Snippet3":::
 
 ## <a name="wcf-tools-in-visual-studio"></a>Visual Studio 中的 WCF 工具
 

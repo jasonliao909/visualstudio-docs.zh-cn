@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0f2d14bfd069fcf5064c9d8643393e28e52570be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e018085bd9900a9ee04f838b7c802afd2acc4fe
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918626"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217705"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>演练：为 SharePoint 创建 Web 部件
 
@@ -82,14 +82,14 @@ Web 部件显示数据网格中的雇员。 用户指定包含员工数据的文
 
 可以通过将控件添加到 Web 部件类的 controls 集合来指定要在 Web 部件中显示的控件。
 
-1. 在 **解决方案资源管理器** 中，以 c # (中 Visual Basic) 或 *WebPart1.cs* ) 打开 *WebPart1* (。
+1. 在 **解决方案资源管理器** 中，以 c # (中 Visual Basic) 或 *WebPart1* ) 打开 *WebPart1* (。
 
      Web 部件代码文件将在代码编辑器中打开。
 
 2. 将以下指令添加到 Web 部件代码文件的顶部。
 
-     [!code-csharp[SP_WebPart#1](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#1)]
-     [!code-vb[SP_WebPart#1](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet1":::
 
 3. 将以下代码添加到 `WebPart1` 类。 此代码声明以下字段：
 
@@ -101,13 +101,13 @@ Web 部件显示数据网格中的雇员。 用户指定包含员工数据的文
 
    - 一个字符串，其中包含 employee 数据文件的路径。
 
-     [!code-csharp[SP_WebPart#2](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#2)]
-     [!code-vb[SP_WebPart#2](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#2)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet2":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet2":::
 
 4. 将以下代码添加到 `WebPart1` 类。 此代码将名为的自定义属性添加 `DataFilePath` 到 Web 部件。 自定义属性是可以在 SharePoint 中由用户设置的属性。 此属性获取和设置用于填充数据网格的 XML 数据文件的位置。
 
-     [!code-csharp[SP_WebPart#3](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#3)]
-     [!code-vb[SP_WebPart#3](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#3)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet3":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet3":::
 
 5. 将 `CreateChildControls` 方法替换为以下代码。 此代码执行以下任务：
 
@@ -115,8 +115,8 @@ Web 部件显示数据网格中的雇员。 用户指定包含员工数据的文
 
    - 将数据网格绑定到包含员工数据的 XML 文件。
 
-     [!code-csharp[SP_WebPart#4](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#4)]
-     [!code-vb[SP_WebPart#4](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#4)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet4":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet4":::
 
 6. 将以下方法添加到 `WebPart1` 类。 此代码执行以下任务：
 
@@ -124,8 +124,8 @@ Web 部件显示数据网格中的雇员。 用户指定包含员工数据的文
 
    - 处理在用户选择谓词菜单中的谓词时所引发的事件。 此代码筛选显示在数据网格中的员工列表。
 
-     [!code-csharp[SP_WebPart#5](../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs#5)]
-     [!code-vb[SP_WebPart#5](../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb#5)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spext_webpart/webpart1/webpart1.cs" id="Snippet5":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spext_webpart/webpart1/webpart1.vb" id="Snippet5":::
 
 ## <a name="test-the-web-part"></a>测试 web 部件
 

@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c4863fb40bc6f70556d8f00305d882e6edd93a0e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a80fc4fbfaf9a308492345ba897363d31d4669ca
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074387"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216535"
 ---
 # <a name="resources-in-vspackages"></a>VSPackage 中的资源
 可以将本地化的资源嵌入到本机附属 UI Dll、托管的附属 Dll 或托管的 VSPackage 本身中。
@@ -44,8 +44,8 @@ ms.locfileid: "105074387"
 
   你可以使用 <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 属性来指示 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 该托管资源可用。
 
-  [!code-csharp[VSSDKResources#1](../../extensibility/internals/codesnippet/CSharp/resources-in-vspackages_1.cs)]
-  [!code-vb[VSSDKResources#1](../../extensibility/internals/codesnippet/VisualBasic/resources-in-vspackages_1.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdkresources/cs/vssdkresourcespackage.cs" id="Snippet1":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdkresources/vb/vssdkresourcespackage.vb" id="Snippet1":::
 
   <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute>以这种方式设置时，指示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 搜索资源时应忽略非托管的附属 dll，例如通过使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell.LoadPackageString%2A> 。 如果 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 遇到两个或多个具有相同资源 ID 的资源，它将使用它找到的第一个资源。
 

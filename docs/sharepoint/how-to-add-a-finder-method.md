@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e4eade25f53bfd58f920a8d2a046d7d09ee98ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bd75c94e2f0f557b85d945d141f952950abb2eb
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879678"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216340"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接 (BDC) 服务在 web 部件或列表中显示实体的列表，则必须创建 *Finder* 方法。 Finder 方法是一种特殊方法，它返回实体实例的集合。 有关详细信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -61,8 +61,8 @@ ms.locfileid: "99879678"
    > [!NOTE]
    > 将字段的值替换 `ServerName` 为服务器的名称。
 
-    [!code-csharp[SP_BDC#2](../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs#2)]
-    [!code-vb[SP_BDC#2](../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb#2)]
+    :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet2":::
+    :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet2":::
 
 ## <a name="see-also"></a>另请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)

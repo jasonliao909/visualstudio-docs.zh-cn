@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e7427c0866806c705ed28a049b33024771631c0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71e9d83cbe3459abb05e24b127e54651aade8ee5
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839118"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217952"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练：使用项模板创建自定义操作项目项（第1部分）
   你可以通过创建自己的项目项类型，在 Visual Studio 中扩展 SharePoint 项目系统。 在本演练中，您将创建一个可以添加到 SharePoint 项目中以在 SharePoint 站点上创建自定义操作的项目项。 自定义操作将菜单项添加到 SharePoint 网站的 " **网站操作** " 菜单。
@@ -54,7 +54,7 @@ ms.locfileid: "99839118"
 
 - 支持的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用 SDK 中的 **Vsix 项目** 模板来创建用于部署项目项的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
   以下概念的知识非常有用，但不是必需的，无法完成本演练：
 
@@ -152,8 +152,8 @@ ms.locfileid: "99839118"
 
 2. 将此文件中的代码替换为以下代码。
 
-     [!code-csharp[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs#1)]
-     [!code-vb[SPExtensibility.ProjectItem.CustomAction#1](../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb#1)]
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customactionprojectitem/projectitemtypedefinition/customaction.cs" id="Snippet1":::
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customactionprojectitem/projectitemdefinition/customaction.vb" id="Snippet1":::
 
 ## <a name="create-an-icon-for-the-project-item-in-solution-explorer"></a>为中的项目项创建一个图标解决方案资源管理器
  创建自定义 SharePoint 项目项时，可以将图像与项目项 (的图标或位图) 相关联。 此图像显示在 **解决方案资源管理器** 中的项目项的旁边。
@@ -332,7 +332,7 @@ ms.locfileid: "99839118"
 
 12. 在 " **项目** " 列表中，选择 " **ProjectItemDefinition**"。
 
-13. 选择“确定”  按钮。
+13. 选择 **“确定”** 按钮。
 
 14. 在菜单栏上，选择 "**生成**" "生成  >  **解决方案**"，然后确保项目编译时不会出错。
 

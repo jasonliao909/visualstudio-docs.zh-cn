@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: be772075be27cc8d6e58b6b54bb281a127f4677f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e7c0a13879850bbd31112ddcb3193d027abeb5d1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878118"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216353"
 ---
 # <a name="how-to-add-a-custom-sharepoint-node-to-server-explorer"></a>如何：将自定义 SharePoint 节点添加到服务器资源管理器
   可以在 **服务器资源管理器** 中的 " **SharePoint 连接**" 节点下添加自定义节点。 当你希望显示默认情况下未显示在 **服务器资源管理器** 中的其他 SharePoint 组件时，这非常有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -54,8 +54,8 @@ ms.locfileid: "99878118"
 
      下面的代码示例演示如何定义新节点。 此示例假定你的项目包含一个名为 CustomChildNodeIcon 的图标作为嵌入资源。
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#6)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#6](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#6)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet6":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet6":::
 
 ### <a name="to-add-the-new-node-as-a-child-of-an-existing-node"></a>将新节点添加为现有节点的子节点
 
@@ -77,14 +77,14 @@ ms.locfileid: "99878118"
 
      下面的代码示例演示如何将新节点作为 **服务器资源管理器** 中 SharePoint 站点节点的子节点添加。
 
-     [!code-vb[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#7)]
-     [!code-csharp[SPExtensibility.ProjectSystemExtension.General#7](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#7)]
+     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet7":::
+     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet7":::
 
 ## <a name="complete-example"></a>完整示例
  下面的代码示例提供了完整的代码，用于定义一个简单的节点并将其作为 **服务器资源管理器** 中 SharePoint 站点节点的子节点添加。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb#5)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#5](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs#5)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorernode.vb" id="Snippet5":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorernode.cs" id="Snippet5":::
 
 ## <a name="compiling-the-code"></a>编译代码
  此示例假定你的项目包含一个名为 CustomChildNodeIcon 的图标作为嵌入资源。 此示例还需要引用以下程序集：
