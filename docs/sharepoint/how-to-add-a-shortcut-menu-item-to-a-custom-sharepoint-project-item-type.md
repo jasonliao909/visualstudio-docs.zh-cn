@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0679233a727e716debe5d925a22cd256d250a28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e4523d0f992ed72c9af2eb7e542f902578f9338
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923705"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215378"
 ---
 # <a name="how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type"></a>如何：向自定义 SharePoint 项目项类型添加快捷菜单项
   定义自定义 SharePoint 项目项类型时，可以将快捷菜单项添加到项目项。 当用户在 **解决方案资源管理器** 中右键单击项目项时，将显示菜单项。
@@ -40,8 +40,8 @@ ms.locfileid: "99923705"
 ## <a name="example"></a>示例
  下面的代码示例演示如何将上下文菜单项添加到自定义项目项类型。 当用户在 **解决方案资源管理器** 中打开项目项的快捷菜单并选择 "将 **消息写入输出窗口** " 菜单项时，Visual Studio 会在 " **输出** " 窗口中显示一条消息。
 
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs#4)]
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#4](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb#4)]
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypemenu.cs" id="Snippet4":::
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypemenu.vb" id="Snippet4":::
 
  此示例使用 SharePoint 项目服务将消息写入到 " **输出** " 窗口。 有关详细信息，请参阅 [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)。
 

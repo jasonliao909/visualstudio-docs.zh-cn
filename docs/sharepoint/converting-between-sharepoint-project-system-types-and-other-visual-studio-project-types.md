@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cc0eca8005c4eee6e1eb89c410b50be5d0228ec6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 973c3d4b3c4fa2dc602e45736dc3a2d2f23c7616
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946327"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215287"
 ---
 # <a name="convert-between-sharepoint-project-system-types-and-other-visual-studio-project-types"></a>在 SharePoint 项目系统类型和其他 Visual Studio 项目类型之间转换
   在某些情况下，您可能在 SharePoint 项目系统中有一个对象，并且您想要使用 Visual Studio 自动化对象模型或集成对象模型中的相应对象的功能，反之亦然。 在这些情况下，可以使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> SharePoint 项目服务的方法将对象转换为不同的对象模型。
@@ -40,8 +40,8 @@ ms.locfileid: "99946327"
 ## <a name="example"></a>示例
  下面的代码示例演示如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService.Convert%2A> 方法将 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProject> 对象转换为 <xref:EnvDTE.Project> 。
 
- [!code-csharp[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs#2)]
- [!code-vb[SPExtensibility.ProjectService.FromDTE#2](../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb#2)]
+:::code language="csharp" source="../sharepoint/codesnippet/CSharp/spprojectserviceaddin/connect.cs" id="Snippet2":::
+:::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spprojectserviceaddin/connect.vb" id="Snippet2":::
 
  此示例需要：
 

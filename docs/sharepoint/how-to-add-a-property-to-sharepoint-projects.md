@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cde9235ffb7c692240c8f16ea0e93f49c79f002e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7be241dd4a043b8104c628e73f98e8881dc8b88b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934866"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215417"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：向 SharePoint 项目添加属性
   可以使用项目扩展将属性添加到任何 SharePoint 项目。 在 **解决方案资源管理器** 中选择项目时，属性将显示在 "**属性**" 窗口中。
@@ -39,8 +39,8 @@ ms.locfileid: "99934866"
 ## <a name="example"></a>示例
  下面的代码示例演示如何将两个属性添加到 SharePoint 项目。 一个属性将其数据保持在项目用户选项文件中， (*.csproj. user* file 或 *.vbproj* file) 。 其他属性将其数据保存在项目文件中 (*.csproj* 文件或 *.vbproj* 文件) 。
 
- [!code-vb[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb#1)]
- [!code-csharp[SpExt_SPCustomPrjProperty#1](../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs#1)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet1":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet1":::
 
 ### <a name="understand-the-code"></a>了解代码
  若要确保 `CustomProjectProperties` 每次事件发生时使用类的同一个实例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> ，则在 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 第一次发生此事件时，该代码示例会将 properties 对象添加到项目的属性。 每当再次发生此事件时，代码就会检索此对象。 有关使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性将数据与项目相关联的详细信息，请参阅 [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。

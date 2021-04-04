@@ -16,12 +16,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: f212fbd1868ad873f0692a11bae975eade8778a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38ceec2cafd3476342d9319d9b5d034564759fad
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858912"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215898"
 ---
 # <a name="edit-data-in-datasets"></a>编辑数据集中的数据
 编辑数据表中的数据与编辑任何数据库的表中的数据非常类似。 此过程可能包括插入、更新和删除表中的记录。 在数据绑定窗体中，可以指定哪些字段是用户可编辑的字段。 在这些情况下，数据绑定基础结构将处理所有更改跟踪，以便以后可以将更改发送回数据库。 如果以编程方式对数据进行编辑，并且想要将这些更改发送回数据库，则必须使用执行更改跟踪的对象和方法。
@@ -33,21 +33,21 @@ ms.locfileid: "99858912"
 
 如果您不知道要编辑的行的索引，请使用 `FindBy` 方法按主键进行搜索：
 
-[!code-csharp[VbRaddataEditing#3](../data-tools/codesnippet/CSharp/edit-data-in-datasets_1.cs)]
-[!code-vb[VbRaddataEditing#3](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet3":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet3":::
 
 如果知道行索引，则可以访问和编辑行，如下所示：
 
-[!code-csharp[VbRaddataEditing#5](../data-tools/codesnippet/CSharp/edit-data-in-datasets_2.cs)]
-[!code-vb[VbRaddataEditing#5](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet5":::
 
 ## <a name="to-insert-new-rows-into-a-dataset"></a>向数据集插入新行
 使用数据绑定控件的应用程序通常通过 [BindingNavigator 控件](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)上的 "**添加新** 项" 按钮来添加新记录。
 
 若要将新记录手动添加到数据集，请通过对 DataTable 调用方法来创建新的数据行。 然后，将该行添加到 <xref:System.Data.DataRow> (的集合 <xref:System.Data.DataTable.Rows%2A>) <xref:System.Data.DataTable> ：
 
-[!code-csharp[VbRaddataEditing#1](../data-tools/codesnippet/CSharp/edit-data-in-datasets_3.cs)]
-[!code-vb[VbRaddataEditing#1](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet1":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet1":::
 
 为了保留数据集将更新发送到数据源所需的信息，请使用 <xref:System.Data.DataRow.Delete%2A> 方法删除数据表中的行。 例如，如果应用程序使用 TableAdapter (或 <xref:System.Data.Common.DataAdapter>) ，则 TableAdapter 的 `Update` 方法会删除数据库中具有 <xref:System.Data.DataRow.RowState%2A> 的行 <xref:System.Data.DataRowState.Deleted> 。
 
@@ -64,8 +64,8 @@ ms.locfileid: "99858912"
 
 下面的示例演示如何调用 <xref:System.Data.DataRow.Delete%2A> 方法，将表中的第一行标记 `Customers` 为已删除：
 
-[!code-csharp[VbRaddataEditing#8](../data-tools/codesnippet/CSharp/edit-data-in-datasets_4.cs)]
-[!code-vb[VbRaddataEditing#8](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet8":::
 
 ## <a name="determine-if-there-are-changed-rows"></a>确定是否存在更改的行
 对数据集中的记录进行更改时，会存储有关这些更改的信息，直到您提交这些更改。 在调用 `AcceptChanges` 数据集或数据表的方法时，或者当调用 `Update` TableAdapter 或数据适配器的方法时，将提交更改。
@@ -84,8 +84,8 @@ ms.locfileid: "99858912"
 
 下面的示例演示如何检查方法中的返回值 <xref:System.Data.DataSet.HasChanges%2A> ，以检测数据集中是否存在任何已更改的行 `NorthwindDataset1` ：
 
-[!code-csharp[VbRaddataEditing#12](../data-tools/codesnippet/CSharp/edit-data-in-datasets_5.cs)]
-[!code-vb[VbRaddataEditing#12](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet12":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet12":::
 
 ## <a name="determine-the-type-of-changes"></a>确定更改的类型
 还可以通过将枚举中的值传递给方法来查看数据集中的更改类型 <xref:System.Data.DataRowState> <xref:System.Data.DataSet.HasChanges%2A> 。
@@ -96,8 +96,8 @@ ms.locfileid: "99858912"
 
 下面的示例演示如何检查名为的数据集 `NorthwindDataset1` ，以确定是否已向其中添加了新行：
 
-[!code-csharp[VbRaddataEditing#13](../data-tools/codesnippet/CSharp/edit-data-in-datasets_6.cs)]
-[!code-vb[VbRaddataEditing#13](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet13":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet13":::
 
 ## <a name="to-locate-rows-that-have-errors"></a>查找有错误的行
 使用单个列和数据行时，您可能会遇到错误。 可以通过检查 `HasErrors` 属性来确定、或中是否存在错误 <xref:System.Data.DataSet> <xref:System.Data.DataTable> <xref:System.Data.DataRow> 。
@@ -106,8 +106,8 @@ ms.locfileid: "99858912"
 
 2. 如果 `HasErrors` 属性为 `true` ，则循环访问表的集合，然后循环访问行，以便查找出错的行。
 
-[!code-csharp[VbRaddataEditing#23](../data-tools/codesnippet/CSharp/edit-data-in-datasets_7.cs)]
-[!code-vb[VbRaddataEditing#23](../data-tools/codesnippet/VisualBasic/edit-data-in-datasets_7.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>另请参阅
 

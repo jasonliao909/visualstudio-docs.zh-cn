@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 2ebfc2071bdf9f9e9dc40b36744bb34d4a68ac04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b67e70792f6e7864749b603f30ab868ef177336a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859276"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215560"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -110,7 +110,7 @@ ms.locfileid: "99859276"
 
 7. 在“选择数据库对象”页面上，展开“表”，然后选择“Product (SalesLT)”表。
 
-8. 单击“完成” 。
+8. 单击“完成”。
 
    Visual Studio 会向项目中添加一个新 `AdventureWorksLTDataSet.xsd` 文件，并将相应的 **adventureworksltdataset.xsd** 项添加到 " **数据源** " 窗口中。 `AdventureWorksLTDataSet.xsd`文件定义名为的类型化数据集 `AdventureWorksLTDataSet` 和名为的 TableAdapter `ProductTableAdapter` 。 在本演练后面的部分中，你将使用 `ProductTableAdapter` 向数据集填充数据，并将更改保存回数据库中。
 
@@ -134,7 +134,7 @@ ms.locfileid: "99859276"
     WHERE ThumbnailPhotoFileName <> 'no_image_available_small.gif'
     ```
 
-4. 单击“完成” 。
+4. 单击“完成”。
 
 ## <a name="define-the-user-interface"></a>定义用户界面
 
@@ -201,20 +201,20 @@ ms.locfileid: "99859276"
 
 2. 修改 `Window_Loaded` 事件处理程序，使 `ProductViewSource`、`AdventureWorksLTDataSet` 和 `AdventureWorksLTDataSetProductTableAdapter` 位于该方法的外部，并使它们在整个窗体中可访问。 仅将这些项声明为全局窗体，然后在事件处理程序中将其分配如下 `Window_Loaded` ：
 
-     [!code-csharp[Data_WPFDATASET#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_1.cs)]
-     [!code-vb[Data_WPFDATASET#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet1":::
 
 3. 将以下代码添加到 `backButton_Click` 事件处理程序中：
 
-     [!code-csharp[Data_WPFDATASET#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_2.cs)]
-     [!code-vb[Data_WPFDATASET#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet2":::
 
 4. 返回到设计器，然后双击 **>** 按钮。
 
 5. 将以下代码添加到 `nextButton_Click` 事件处理程序中：
 
-     [!code-csharp[Data_WPFDATASET#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_3.cs)]
-     [!code-vb[Data_WPFDATASET#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet3":::
 
 ## <a name="save-changes-to-product-records"></a>保存对产品记录所做的更改
 
@@ -226,8 +226,8 @@ ms.locfileid: "99859276"
 
 2. 将以下代码添加到 `saveButton_Click` 事件处理程序中：
 
-     [!code-csharp[Data_WPFDATASET#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-dataset_4.cs)]
-     [!code-vb[Data_WPFDATASET#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-dataset_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfdataset/cs/mainwindow.xaml.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet4":::
 
     > [!NOTE]
     > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅 [tableadapter](../data-tools/create-and-configure-tableadapters.md)。

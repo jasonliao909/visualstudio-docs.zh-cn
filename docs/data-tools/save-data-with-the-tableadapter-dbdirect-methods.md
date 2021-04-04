@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 00f508163dc039d5c29013538a78fa7dab6091fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4539d269f27cd09f96c8633d0efd603708f1f2e1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858444"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215768"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 
@@ -119,9 +119,9 @@ ms.locfileid: "99858444"
 
 2. 在每个按钮上设置下列“名称”和“文本”属性。
 
-    |“属性”|文本|
+    |名称|文本|
     |----------|----------|
-    |`InsertButton`|**插入**|
+    |`InsertButton`|插入|
     |`UpdateButton`|**更新**|
     |`DeleteButton`|**删除**|
 
@@ -131,8 +131,8 @@ ms.locfileid: "99858444"
 
 2. 用下面的代码替换 `InsertButton_Click` 事件处理程序：
 
-     [!code-vb[VbRaddataSaving#1](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_1.vb)]
-     [!code-csharp[VbRaddataSaving#1](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet1":::
 
 ### <a name="to-add-code-to-update-records-in-the-database"></a>添加更新数据库中的记录所使用的代码
 
@@ -140,8 +140,8 @@ ms.locfileid: "99858444"
 
 2. 用下面的代码替换 `UpdateButton_Click` 事件处理程序：
 
-     [!code-vb[VbRaddataSaving#2](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_2.vb)]
-     [!code-csharp[VbRaddataSaving#2](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet2":::
 
 ### <a name="to-add-code-to-delete-records-from-the-database"></a>添加代码以从数据库中删除记录
 
@@ -149,8 +149,8 @@ ms.locfileid: "99858444"
 
 2. 用下面的代码替换 `DeleteButton_Click` 事件处理程序：
 
-     [!code-vb[VbRaddataSaving#3](../data-tools/codesnippet/VisualBasic/save-data-with-the-tableadapter-dbdirect-methods_3.vb)]
-     [!code-csharp[VbRaddataSaving#3](../data-tools/codesnippet/CSharp/save-data-with-the-tableadapter-dbdirect-methods_3.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form1.vb" id="Snippet3":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form1.cs" id="Snippet3":::
 
 ## <a name="run-the-application"></a>运行应用程序
 
