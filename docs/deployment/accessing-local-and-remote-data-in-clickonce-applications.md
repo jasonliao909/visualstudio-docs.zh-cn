@@ -17,12 +17,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c8bc59fd1d47a04b2f4c6ec2be9b9adb035f11e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837809"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217484"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。
@@ -55,8 +55,8 @@ ms.locfileid: "99837809"
 
  应用程序具有这些权限后，就可以通过对 <xref:System.IO>中的类进行方法调用访问数据目录。 你可以通过使用在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 的 <xref:System.Deployment.Application.ApplicationDeployment.DataDirectory%2A> 属性上定义的 <xref:System.Deployment.Application.ApplicationDeployment.CurrentDeployment%2A> 属性，获取 Windows 窗体 <xref:System.Deployment.Application.ApplicationDeployment>应用程序中数据目录的路径。 这是访问数据的最简便方法，并且推荐使用此方法。 下面的代码示例演示如何对名为 CSV.txt 且已作为数据文件包括到部署中的文本文件执行此操作。
 
- [!code-csharp[ClickOnce.OpenDataFile#1](../deployment/codesnippet/CSharp/accessing-local-and-remote-data-in-clickonce-applications_1.cs)]
- [!code-vb[ClickOnce.OpenDataFile#1](../deployment/codesnippet/VisualBasic/accessing-local-and-remote-data-in-clickonce-applications_1.vb)]
+ :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnce.OpenDataFile/CS/Form1.cs" id="Snippet1":::
+ :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.OpenDataFile/VB/Form1.vb" id="Snippet1":::
 
  有关在部署中将文件标记为数据文件的详细信息，请参阅 [如何：将数据文件包括到 ClickOnce 应用程序中](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
 

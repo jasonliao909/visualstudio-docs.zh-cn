@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4983930a7c16edef826a5912abf0870598b1f906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e38f1d18736c18f5273eb2e202de52af81e73f85
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943791"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217445"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：在服务器资源管理器中扩展 SharePoint 节点
   可以在 **服务器资源管理器** 中的 " **SharePoint 连接**" 节点下扩展节点。 如果要向现有节点添加新的子节点、快捷菜单项或属性，这会很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -64,8 +64,8 @@ ms.locfileid: "99943791"
 
 - 将名为 **ContosoExampleProperty** 的自定义属性添加到表示名为 **Body** 的字段的每个节点的扩展。
 
-  [!code-csharp[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs#9)]
-  [!code-vb[SPExtensibility.ProjectSystemExtension.General#9](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb#9)]
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/serverexplorerextension.cs" id="Snippet9":::
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/serverexplorerextension.vb" id="Snippet9":::
 
   此扩展将可编辑的字符串属性添加到节点。 你还可以创建自定义属性，用于显示 SharePoint 服务器中的只读数据。 有关演示如何执行此操作的示例，请参阅 [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
