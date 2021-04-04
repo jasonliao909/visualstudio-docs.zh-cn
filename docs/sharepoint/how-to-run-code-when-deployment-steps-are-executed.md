@@ -14,19 +14,19 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0b3037c0ec983b9f496947feba41938111fafc38
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74db1b73dded52ba15ea860873c49c0264f7fea7
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851577"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214403"
 ---
 # <a name="how-to-run-code-when-deployment-steps-are-executed"></a>如何：在执行部署步骤时运行代码
   如果要对 SharePoint 项目中的部署步骤执行其他任务，则可以在 Visual Studio 执行每个部署步骤之前和之后处理 SharePoint 项目项引发的事件。 有关详细信息，请参阅 [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ### <a name="to-run-code-when-deployment-steps-are-executed"></a>执行部署步骤时运行代码
 
-1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅下列主题：
+1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅以下主题：
 
     - [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
@@ -41,8 +41,8 @@ ms.locfileid: "99851577"
 ## <a name="example"></a>示例
  下面的代码示例演示如何 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.DeploymentStepCompleted> 在列表实例项目项的扩展中处理和事件。 当 Visual Studio 在部署和收回解决方案时回收应用程序池时，此扩展将向 " **输出** " 窗口中写入一条额外的消息。
 
- [!code-vb[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb#4)]
- [!code-csharp[SPExtensibility.ProjectSystemExtension.General#4](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs#4)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handledeploymentstepevents.vb" id="Snippet4":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handledeploymentstepevents.cs" id="Snippet4":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：

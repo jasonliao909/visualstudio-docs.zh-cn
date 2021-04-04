@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b9446fa0edb9302d4032f19f23c8adb8747d9cc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 140700615759404f02109c4506f4c27d083a74b1
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859302"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215534"
 ---
 # <a name="bind-objects-as-data-sources-in-visual-studio"></a>在 Visual Studio 中将对象绑定为数据源
 
@@ -69,8 +69,8 @@ Visual Studio 提供设计时工具，用于在应用程序中使用自定义对
 
 下面的示例演示如何遍历数据表中的行，并使用数据填充对象：
 
-[!code-csharp[VbRaddataConnecting#4](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_1.cs)]
-[!code-vb[VbRaddataConnecting#4](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_1.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Form1.cs" id="Snippet4":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Form1.vb" id="Snippet4":::
 
 ### <a name="create-a-typed-collection-of-objects"></a>创建对象的类型化集合
 
@@ -85,8 +85,8 @@ Visual Studio 提供设计时工具，用于在应用程序中使用自定义对
 
 下面的代码演示如何创建对象的强类型集合的类 `Order` ：
 
-[!code-csharp[VbRaddataConnecting#8](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_2.cs)]
-[!code-vb[VbRaddataConnecting#8](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_2.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet8":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet8":::
 
 ### <a name="add-objects-to-a-collection"></a>将对象添加到集合
 
@@ -97,16 +97,16 @@ Visual Studio 提供设计时工具，用于在应用程序中使用自定义对
 
 下面的代码演示如何将对象添加到中的类型化集合 <xref:System.Windows.Forms.BindingSource> ：
 
-[!code-csharp[VbRaddataConnecting#5](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_3.cs)]
-[!code-vb[VbRaddataConnecting#5](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_3.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet5":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet5":::
 
 下面的代码演示如何将对象添加到从继承的类型化集合 <xref:System.ComponentModel.BindingList%601> ：
 
 > [!NOTE]
 > 在此示例中，该 `Orders` 集合是对象的一个属性 `Customer` 。
 
-[!code-csharp[VbRaddataConnecting#6](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_4.cs)]
-[!code-vb[VbRaddataConnecting#6](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_4.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet6":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet6":::
 
 ### <a name="remove-objects-from-a-collection"></a>从集合中删除对象
 
@@ -117,8 +117,8 @@ Visual Studio 提供设计时工具，用于在应用程序中使用自定义对
 
 下面的代码演示如何使用方法在中查找和删除类型化集合中的对象 <xref:System.Windows.Forms.BindingSource> <xref:System.Windows.Forms.BindingSource.RemoveAt%2A> ：
 
-[!code-csharp[VbRaddataConnecting#7](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_5.cs)]
-[!code-vb[VbRaddataConnecting#7](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_5.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataConnecting/CS/Class1.cs" id="Snippet7":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataConnecting/VB/Class1.vb" id="Snippet7":::
 
 ### <a name="display-object-data-to-users"></a>向用户显示对象数据
 
@@ -146,8 +146,8 @@ Visual Studio 会创建可直接针对数据库执行的 DBDirect 方法。 这�
 
 下面的示例演示如何使用 `TableAdapter.Insert` DBDirect 方法将新客户直接添加到数据库中：
 
-[!code-csharp[VbRaddataSaving#23](../data-tools/codesnippet/CSharp/bind-objects-in-visual-studio_6.cs)]
-[!code-vb[VbRaddataSaving#23](../data-tools/codesnippet/VisualBasic/bind-objects-in-visual-studio_6.vb)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form3.cs" id="Snippet23":::
+:::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form3.vb" id="Snippet23":::
 
 ## <a name="see-also"></a>另请参阅
 

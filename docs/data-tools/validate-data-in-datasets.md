@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1db0f53ffc049d8844d7447461c4c33a0492a2d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82cfcf1ce030cfe597c3ae7bfe85c528184c548a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858236"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215664"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是确认输入到数据对象中的值是否符合数据集架构中的约束的过程。 验证过程还会确认这些值遵循了已为应用程序建立的规则。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法。 这可以减少错误，以及应用程序和数据库之间可能出现的往返次数。
@@ -106,7 +106,7 @@ ms.locfileid: "99858236"
     > [!TIP]
     > 双击表名称的左侧，创建行更改事件处理程序。 如果双击表名，则可以对其进行编辑。
 
-     [!code-vb[VbRaddataValidating#3](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_1.vb)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataValidating/VB/NorthwindDataSet.vb" id="Snippet3":::
 
 ### <a name="to-validate-data-when-a-row-changes-c"></a>当行 (c # 更改时验证数据 ) 
 
@@ -155,8 +155,8 @@ ms.locfileid: "99858236"
 
      下面的示例创建一个名为的新数据集 `changedRecords` ，并将其与另一个名为的数据集的所有已更改记录一起填充 `dataSet1` 。
 
-     [!code-csharp[VbRaddataEditing#14](../data-tools/codesnippet/CSharp/validate-data-in-datasets_2.cs)]
-     [!code-vb[VbRaddataEditing#14](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
 
 ### <a name="to-get-all-changed-records-from-a-data-table"></a>从数据表获取所有更改的记录
 
@@ -164,8 +164,8 @@ ms.locfileid: "99858236"
 
      下面的示例将创建一个名为的新数据表 `changedRecordsTable` ，并使用另一个名为的数据表中已更改的所有记录填充该数据表 `dataTable1` 。
 
-     [!code-csharp[VbRaddataEditing#15](../data-tools/codesnippet/CSharp/validate-data-in-datasets_3.cs)]
-     [!code-vb[VbRaddataEditing#15](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>获取具有特定行状态的所有记录
 
@@ -173,13 +173,13 @@ ms.locfileid: "99858236"
 
      下面的示例演示如何创建一个名为的新数据集 `addedRecords` ，并使用已添加到该数据集的记录来填充它 `dataSet1` 。
 
-     [!code-csharp[VbRaddataEditing#16](../data-tools/codesnippet/CSharp/validate-data-in-datasets_4.cs)]
-     [!code-vb[VbRaddataEditing#16](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
      下面的示例演示如何返回最近添加到表中的所有记录 `Customers` ：
 
-     [!code-csharp[VbRaddataEditing#17](../data-tools/codesnippet/CSharp/validate-data-in-datasets_5.cs)]
-     [!code-vb[VbRaddataEditing#17](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
 ## <a name="access-the-original-version-of-a-datarow"></a>访问 DataRow 的原始版本
 对数据行进行更改时，数据集将保留原始 (<xref:System.Data.DataRowVersion.Original>) 和新 (<xref:System.Data.DataRowVersion.Current> 行) 版本。 例如，在调用方法之前 `AcceptChanges` ，应用程序可以访问枚举中定义 (的不同版本的记录 <xref:System.Data.DataRowVersion>) 并相应地处理更改。
@@ -195,8 +195,8 @@ ms.locfileid: "99858236"
 
      下面的示例演示如何使用 <xref:System.Data.DataRowVersion> 值获取中的字段的原始值 `CompanyName` <xref:System.Data.DataRow> ：
 
-     [!code-csharp[VbRaddataEditing#21](../data-tools/codesnippet/CSharp/validate-data-in-datasets_6.cs)]
-     [!code-vb[VbRaddataEditing#21](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_6.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
 
 ## <a name="access-the-current-version-of-a-datarow"></a>访问 DataRow 的当前版本
 
@@ -206,8 +206,8 @@ ms.locfileid: "99858236"
 
      下面的示例演示如何使用 <xref:System.Data.DataRowVersion> 值获取中的字段的当前值 `CompanyName` <xref:System.Data.DataRow> ：
 
-     [!code-csharp[VbRaddataEditing#22](../data-tools/codesnippet/CSharp/validate-data-in-datasets_7.cs)]
-     [!code-vb[VbRaddataEditing#22](../data-tools/codesnippet/VisualBasic/validate-data-in-datasets_7.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
 
 ## <a name="see-also"></a>另请参阅
 

@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f5f5fdd51e4aa13df66470534303f7fba19e44ab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b92792cf9db0090c52f583754e56c306e6d7234
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841661"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082573"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>生成并运行待办事项示例应用
 
@@ -30,7 +30,7 @@ ms.locfileid: "99841661"
 
 1. 请确保你已在本地计算机上安装用于 Windows 的 Docker 或 Docker 社区版。 请参阅[用于 Windows 的 Docker 安装文档](https://docs.docker.com/docker-for-windows/install/)。 安装过程会创建 ZIP 文件，该文件包含在 localhost 地址提供的示例。
 
-1. [下载 ZIP](http://localhost/assets/app.zip)。 打开 ZIP 文件，并确保将内容解压缩。
+1. [下载 ZIP](https://github.com/docker/getting-started/tree/master/app)。 打开 ZIP 文件，并确保将内容解压缩。
 
 1. 解压缩后，使用你最喜爱的代码编辑器打开项目。 如果需要编辑器，可以使用 [Visual Studio Code](https://code.visualstudio.com/)。 你应该会看到 `package.json` 和两个子目录（`src` 和 `spec`）。
 

@@ -15,19 +15,19 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3362606a7e8c5f2278c2ebfb973321e5b8f3157e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4645d0b2cf1670a3834c4ac09cd66d56b48fbf27
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850134"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214468"
 ---
 # <a name="how-to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>如何：在部署或收回 SharePoint 项目时运行代码
   如果要在部署或收回 SharePoint 项目时执行其他任务，可以处理由 Visual Studio 引发的事件。 有关详细信息，请参阅 [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)。
 
 ### <a name="to-run-code-when-a-sharepoint-project-is-deployed-or-retracted"></a>在部署或收回 SharePoint 项目时运行代码
 
-1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅下列主题：
+1. 创建项目项扩展、项目扩展或新项目项类型的定义。 有关详细信息，请参阅以下主题：
 
    - [如何：创建 SharePoint 项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 
@@ -43,8 +43,8 @@ ms.locfileid: "99850134"
 
    下面的代码示例演示如何处理 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentStarted> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.DeploymentCompleted> 项目扩展中的和事件。 部署开始时，此扩展将向 " **输出** " 窗口中写入一条附加消息，并为 SharePoint 项目完成。
 
-   [!code-csharp[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs#12)]
-   [!code-vb[SPExtensibility.ProjectSystemExtension.General#12](../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb#12)]
+   :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectsystemexamples/extension/handleprojectdeploymentevents.cs" id="Snippet12":::
+   :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectsystemexamples/extension/handleprojectdeploymentevents.vb" id="Snippet12":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：

@@ -906,6 +906,7 @@
 - name: 调试 >>
   href: debugger/index.yml
 - name: 版本控制
+  expanded: true
   items:
     - name: Visual Studio 中的 Git 新体验
       href: ide/git-with-visual-studio.md

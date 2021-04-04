@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82176afaacae3b9f4553c8b1b5b41b9a4f10dace
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca1998b5ca3ad78b269c50244ddf51796c9e4005
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097547"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215521"
 ---
 # <a name="add-search-to-a-tool-window"></a>向工具窗口添加搜索
 当你在扩展中创建或更新工具窗口时，可以添加在 Visual Studio 中的其他位置显示的相同搜索功能。 此功能包括以下功能：
@@ -79,8 +79,8 @@ ms.locfileid: "105097547"
 
      此代码将添加一个 <xref:System.Windows.Controls.TextBox> 名为 **SearchResultsTextBox** 的公共属性和一个名为 **SearchContent** 的公共字符串属性。 在构造函数中，将 SearchResultsTextBox 设置为文本框，并将 SearchContent 初始化为换行符分隔的字符串集。 文本框的内容也初始化为字符串集。
 
-     [!code-csharp[ToolWindowSearch#1](../extensibility/codesnippet/CSharp/adding-search-to-a-tool-window_1.cs)]
-     [!code-vb[ToolWindowSearch#1](../extensibility/codesnippet/VisualBasic/adding-search-to-a-tool-window_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/toolwindowsearch/cs/mycontrol.xaml.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/toolwindowsearch/vb/mycontrol.xaml.vb" id="Snippet1":::
 
 5. 生成项目并启动调试。 此时将显示 Visual Studio 的实验实例。
 

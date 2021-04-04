@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b6c5810cd95b50a63f32cfaa6123e81e35a4be9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32bcb32c4fc80a5806c9007c3119a2ba3de62427
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063027"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106214507"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击 "**工具**" 菜单上的 "**选项**" 将打开 "**选项**" 对话框。 此对话框中的选项统称为 "选项页"。 导航窗格中的树控件包含选项类别，每个类别都包含 "选项" 页。 选择某个页面后，其选项将显示在右窗格中。 这些页面使你可以更改用于确定 VSPackage 状态的选项的值。
@@ -36,8 +36,8 @@ ms.locfileid: "105063027"
 ## <a name="options-page-registry-path"></a>选项页注册表路径
  默认情况下，由 "选项" 页管理的属性的注册表路径由 " <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> 选项" 页类的组合、单词 dialogpage 派生和类型名称确定。 例如，可以按如下所示定义选项页类。
 
- [!code-csharp[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_1.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#1](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_1.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet1":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet1":::
 
  如果 <xref:Microsoft.VisualStudio.Shell.Package.UserRegistryRoot%2A> HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp，则属性名称和值对是 HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0Exp\DialogPage\Company.OptionsPage.OptionsPageGeneral 的子项。
 
@@ -46,8 +46,8 @@ ms.locfileid: "105063027"
 ## <a name="toolsoptions-page-attributes-and-layout"></a>"工具/选项" 页属性和布局
  <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>特性确定将自定义选项页分组到 "**选项**" 对话框的导航树中的类别。 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute>属性将选项页与提供接口的 VSPackage 相关联。 考虑以下代码片断：
 
- [!code-csharp[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_2.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#2](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_2.vb)]
+:::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet2":::
+:::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet2":::
 
  这声明 MyPackage 提供了两个选项页： OptionsPageGeneral 和 OptionsPageCustom。 在 " **选项** " 对话框中，这两个选项页在 " **我的选项页** " 类别中分别显示为 " **常规** " 和 " **自定义**"。
 
@@ -65,21 +65,21 @@ ms.locfileid: "105063027"
 
   考虑以下代码片断：
 
-  [!code-csharp[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_3.cs)]
-  [!code-vb[VSSDKSupportForOptionsPages#3](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_3.vb)]
+  :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/optionspagecustom.cs" id="Snippet3":::
+  :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/optionspagegeneral.vb" id="Snippet3":::
 
   "选项" 页上的 "OptionInteger" 选项显示为 "**我的选项**" 类别中的 **整数选项**。 如果选择了该选项，则 "说明" 框中会显示 " **我的整数" 选项**。
 
 ## <a name="accessing-options-pages-from-another-vspackage"></a>访问其他 VSPackage 的选项页
  承载和管理选项页的 VSPackage 可以通过使用自动化模型以编程方式从另一个 VSPackage 访问。 例如，在以下代码中，VSPackage 注册为承载选项页。
 
- [!code-csharp[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_4.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#4](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_4.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet4":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet4":::
 
  以下代码片段从 MyOptionPage 中获取 OptionInteger 的值：
 
- [!code-csharp[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/CSharp/options-and-options-pages_5.cs)]
- [!code-vb[VSSDKSupportForOptionsPages#5](../../extensibility/internals/codesnippet/VisualBasic/options-and-options-pages_5.vb)]
+ :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/vssdksupportforoptionspages/cs/vssdksupportforoptionspagespackage.cs" id="Snippet5":::
+ :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/vssdksupportforoptionspages/vb/vssdksupportforoptionspagespackage.vb" id="Snippet5":::
 
  当 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 属性注册选项页时，如果该特性的参数为，则该页将在 automationproperties.livesetting 项下进行注册 `SupportsAutomation` `true` 。 自动检查此注册表项以查找关联的 VSPackage，然后通过 "托管选项" 页（在本例中为 "我的网格" 页）访问属性。
 

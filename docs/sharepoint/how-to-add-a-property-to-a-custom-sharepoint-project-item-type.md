@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b8f690b15f843af9337e16ee803509b72e85d7af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17d9ac144b97c090292395dd5ae5e85319dd1308
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889663"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215508"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：向自定义 SharePoint 项目项类型添加属性
   定义自定义 SharePoint 项目项类型时，可以将属性添加到项目项。 在 **解决方案资源管理器** 中选择项目项时，属性将显示在 "**属性**" 窗口中。
@@ -39,8 +39,8 @@ ms.locfileid: "99889663"
 ## <a name="example"></a>示例
  下面的代码示例演示如何将名为 **Example 属性** 的属性添加到自定义项目项类型。
 
- [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#11)]
- [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#11](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#11)]
+ :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet11":::
+ :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet11":::
 
 ### <a name="understand-the-code"></a>了解代码
  若要确保 `CustomProperties` 每次发生事件时均使用该类的同一实例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，则在第一次发生此事件时，该代码示例会将 properties 对象保存到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 每当再次发生此事件时，代码就会检索此对象。 有关使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性将数据保存到项目项的详细信息，请参阅 [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。

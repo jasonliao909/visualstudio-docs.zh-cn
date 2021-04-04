@@ -17,12 +17,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9f3c4cc273d89b5d1fc74596f1f5565177319da7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae6a2fd6eac9f59a7836dae23d442962e1b2b27e
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867355"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215547"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
@@ -90,7 +90,7 @@ ms.locfileid: "99867355"
 
 7. 在“选择数据库对象”页面上，展开“表”，然后选择“SalesOrderHeader”表。
 
-8. 单击“完成” 。
+8. 单击“完成”。
 
 ## <a name="create-the-service"></a>创建服务
 
@@ -110,8 +110,8 @@ ms.locfileid: "99867355"
 
 1. 在 `AdventureWorks.svc` 代码文件中，将 **AdventureWorksService** 类声明替换为以下代码。
 
-     [!code-csharp[Data_WPFWCF#1](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_1.cs)]
-     [!code-vb[Data_WPFWCF#1](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_1.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs" id="Snippet1":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb" id="Snippet1":::
 
      此代码将更新 **AdventureWorksService** 类，以便它派生自在 <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 实体数据模型中的对象上下文类上运行的。 此代码还将更新 `InitializeService` 方法，以使服务的客户端具有对 `SalesOrderHeader` 实体的完全读/写访问权限。
 
@@ -223,8 +223,8 @@ ms.locfileid: "99867355"
 
 2. 将该事件处理程序替换为以下代码。 确保将此代码中的“localhost”地址替换为你的开发计算机上的本地主机地址。
 
-     [!code-csharp[Data_WPFWCF#2](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_2.cs)]
-     [!code-vb[Data_WPFWCF#2](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_2.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet2":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet2":::
 
 ## <a name="navigate-sales-records"></a>导航销售记录
 
@@ -236,8 +236,8 @@ ms.locfileid: "99867355"
 
 2. 将以下代码添加到生成的 `backButton_Click` 事件处理程序中：
 
-     [!code-csharp[Data_WPFWCF#3](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_3.cs)]
-     [!code-vb[Data_WPFWCF#3](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_3.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet3":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet3":::
 
 3. 返回到设计器，然后双击 **>** 按钮。
 
@@ -245,8 +245,8 @@ ms.locfileid: "99867355"
 
 4. 将以下代码添加到生成的 `nextButton_Click` 事件处理程序中：
 
-     [!code-csharp[Data_WPFWCF#4](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_4.cs)]
-     [!code-vb[Data_WPFWCF#4](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_4.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet4":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet4":::
 
 ## <a name="save-changes-to-sales-records"></a>保存对销售记录所做的更改
 
@@ -258,8 +258,8 @@ ms.locfileid: "99867355"
 
 2. 将以下代码添加到 `saveButton_Click` 事件处理程序中。
 
-     [!code-csharp[Data_WPFWCF#5](../data-tools/codesnippet/CSharp/bind-wpf-controls-to-a-wcf-data-service_5.cs)]
-     [!code-vb[Data_WPFWCF#5](../data-tools/codesnippet/VisualBasic/bind-wpf-controls-to-a-wcf-data-service_5.vb)]
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworkssaleseditor/mainwindow.xaml.cs" id="Snippet5":::
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworkssaleseditor/mainwindow.xaml.vb" id="Snippet5":::
 
 ## <a name="test-the-application"></a>测试应用程序
 

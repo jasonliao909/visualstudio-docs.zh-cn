@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1b4722f04ae46f85d7cc70dadf6127330e8f6616
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851708"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215313"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
   您可以将自定义数据添加到 SharePoint 工具扩展中的某些对象。 当你在扩展中的一个部分中包含要从扩展中的其他代码访问的数据时，这非常有用。 您可以将数据与扩展中的对象关联起来，然后在以后从同一对象中检索数据，而不是实现自定义方法来存储和访问数据。
@@ -79,8 +79,8 @@ ms.locfileid: "99851708"
 
   下面的代码示例确定某个数据对象是否已与项目项关联。 如果数据对象尚未与项目项关联，则代码会将对象添加到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 若要在更大的示例上下文中查看此示例，请参阅 [如何：将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
-  [!code-vb[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb#13)]
-  [!code-csharp[SPExtensibility.ProjectItemExtension.MenuAndProperty#13](../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs#13)]
+  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
+  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
 ## <a name="see-also"></a>另请参阅
 - [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)

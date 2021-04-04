@@ -23,12 +23,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 05575e6cc75468a85a3dd410ea59bebca79eee0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d43d4267ce0e180a525e990e372b7a6773a9cc51
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858834"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215807"
 ---
 # <a name="hierarchical-update"></a>分层更新
 
@@ -93,8 +93,8 @@ ms.locfileid: "99858834"
 
 2. 在调用 `OrdersBindingSource.EndEdit` 方法的代码行后添加一行调用 `CustomersBindingSource.EndEdit` 方法的代码。 “保存”按钮 click 事件中的代码应如下所示：
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/VisualBasic/hierarchical-update_1.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#1](../data-tools/codesnippet/CSharp/hierarchical-update_1.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet1":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet1":::
 
 除了在将数据保存到数据库之前提交对相关子表的更改外，你可能还需要在向数据集添加新子记录之前先提交新创建的父记录。 换言之，您可能必须在 `Customer` 外键约束启用新的子记录 (`Orders`) 添加到数据集之前，向数据集添加新的父记录 () 。 为实现这一点，可以使用子 `BindingSource.AddingNew` 事件。
 
@@ -109,8 +109,8 @@ ms.locfileid: "99858834"
 
 2. 向调用方法的事件处理程序添加一行代码 `CustomersBindingSource.EndEdit` 。 `OrdersBindingSource_AddingNew` 事件处理程序中的代码应如下所示：
 
-     [!code-vb[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/VisualBasic/hierarchical-update_2.vb)]
-     [!code-csharp[VSProDataOrcasHierarchicalUpdate#2](../data-tools/codesnippet/CSharp/hierarchical-update_2.cs)]
+     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/VB/Form1.vb" id="Snippet2":::
+     :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VSProDataOrcasHierarchicalUpdate/CS/Form1.cs" id="Snippet2":::
 
 ## <a name="tableadaptermanager-reference"></a>TableAdapterManager 引用
 
