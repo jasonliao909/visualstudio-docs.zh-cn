@@ -6,14 +6,14 @@ ms.assetid: 00b82d16-6a80-42d1-8b71-e12047c6b50c
 ms.technology: ''
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/29/2021
+ms.date: 04/02/2021
 ms.faqid: q4_2
-ms.openlocfilehash: d59b972d13bd61a25fab6d783224eeb5c38144d7
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 8d8b516a7572688314d043dc7ca052d30d26dcf4
+ms.sourcegitcommit: 4bf7d82eb3a837ad5d1ae5c110039cbf74258f18
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104482"
+ms.lasthandoff: 04/03/2021
+ms.locfileid: "106273385"
 ---
 ## <a name="how-do-i-renew-visual-studio-subscriptions"></a>如何续订 Visual Studio 订阅？ 
 
@@ -27,12 +27,14 @@ ms.locfileid: "99104482"
 - 访问  [Microsoft Store](https://www.microsoft.com/store) 并搜索“Visual Studio 订阅”以查看可用的续订机会。 以下是一些快速链接： 
 
 
-    [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Enterprise](https://www.microsoft.com/p/visual-studio-enterprise-subscription/dg7gmgf0dst4?activetab=pivot%3aoverviewtab) 
 
-    [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
+    - [Visual Studio Professional](https://www.microsoft.com/p/visual-studio-professional-subscription/dg7gmgf0dst3?activetab=pivot%3aoverviewtab)
 
-    [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
+    - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
+> [!Note]
+> 必须在过期后 30 天内续订订阅，才有资格享受续订定价。
 
 ### <a name="how-to-renew-cloud-subscriptions"></a>如何续订云订阅
 云订阅是那些通过 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 购买的订阅。  月度和年度云订阅都会续订，除非你取消，因此无需采取任何操作进行续订。
