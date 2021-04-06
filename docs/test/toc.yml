@@ -123,6 +123,8 @@
       items:
         - name: 从 MSTestV1 升级到 MSTestV2
           href: mstest-update-to-mstestv2.md
+        - name: 将 testsettings 迁移到 runsettings
+          href: migrate-testsettings-to-runsettings.md
 - name: Live Unit Testing
   items:
     - name: 介绍
