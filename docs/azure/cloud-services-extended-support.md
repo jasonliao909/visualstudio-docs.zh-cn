@@ -1,5 +1,5 @@
 ---
-title: 使用云服务（外延支持）（预览）
+title: " (扩展支持) 使用云服务"
 description: 立即了解如何使用 Azure 资源管理器与 Visual Studio 来创建和部署云服务 (扩展) 支持
 author: ghogen
 manager: jmartens
@@ -9,32 +9,26 @@ ms.topic: how-to
 ms.date: 01/25/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 39a76f4c76afb2ed0c738adfc477807eebfdbc61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 289bc88d9aef40fdc260ce84395b1c4b9237c689
+ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841128"
+ms.lasthandoff: 04/05/2021
+ms.locfileid: "106381591"
 ---
-# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio-preview"></a>在 Visual Studio () 预览中创建和部署到云服务 (扩展支持) 
+# <a name="create-and-deploy-to-cloud-services-extended-support-in-visual-studio"></a>在 Visual Studio 中创建和部署到云服务 (扩展支持) 
 
-从 [Visual Studio 2019 16.9 版](https://visualstudio.microsoft.com/vs/preview) 开始， (当前在预览版) 中，你可以使用 Azure 资源管理器来使用云服务，这大大简化了 azure 资源的维护和港务局的维护和管理。 这是由称为 *云服务 (扩展支持)* 的新 Azure 服务启用的。 可以将现有的云服务发布到云服务（外延支持）。 有关此 Azure 服务的信息，请参阅[云服务（外延支持）文档](/azure/cloud-services-extended-support/overview)。
+从 [Visual Studio 2019 版本 16.9](https://visualstudio.microsoft.com/vs/)开始，你可以使用 Azure 资源管理器使用云服务，这大大简化了 azure 资源的维护和港务局的维护和管理。 这是由称为 *云服务 (扩展支持)* 的新 Azure 服务启用的。 可以将现有的云服务发布到云服务（外延支持）。 有关此 Azure 服务的信息，请参阅[云服务（外延支持）文档](/azure/cloud-services-extended-support/overview)。
 
 ## <a name="publish-to-cloud-services-extended-support"></a>发布到云服务 (扩展支持) 
 
-将现有的 Azure 云服务项目发布到云服务 () 扩展支持时，仍会保留发布到经典 Azure 云服务的功能。 在 Visual Studio 2019 版本16.9 预览版3及更高版本中，经典云服务项目具有特殊版本的 **publish** 命令， **发布 (扩展支持)**。 此命令显示在 **解决方案资源管理器** 的快捷菜单中。
+将现有的 Azure 云服务项目发布到云服务 () 扩展支持时，仍会保留发布到经典 Azure 云服务的功能。 在 Visual Studio 2019 版本16.9 及更高版本中，经典云服务项目具有特殊版本的 **publish** 命令， **发布 (扩展支持)**。 此命令显示在 **解决方案资源管理器** 的快捷菜单中。
 
-发布到云服务 (扩展支持) 时存在一些差异。 例如，不会询问你是否发布到 **过渡** 或 **生产环境**，因为这些部署槽位不是扩展的支持发布模型的一部分。 相反，通过云服务 (扩展支持) ，你可以设置多个部署，并在 Azure 门户中交换部署。 尽管 Visual Studio 工具允许在 16.9 Preview 3 中进行设置，但在更高版本的云服务 (扩展支持) 之前，将不会启用交换功能，并且可能会导致在预览期间部署时出现故障。
+发布到云服务 (扩展支持) 时存在一些差异。 例如，不会询问你是否发布到 **过渡** 或 **生产环境**，因为这些部署槽位不是扩展的支持发布模型的一部分。 相反，通过云服务 (扩展支持) ，你可以设置多个部署，并在 Azure 门户中交换部署。 尽管 Visual Studio 工具允许在16.9 中设置此项，但在更高版本的云服务 (扩展支持) 之前，将不会启用交换功能，并且可能会导致在预览期间部署时出现故障。
 
 在将经典 Azure 云服务发布到云服务 (扩展支持) 之前，请检查项目使用的存储帐户，并确保它们是存储 V1 或存储 V2 帐户。 在部署时，经典存储帐户类型将失败并出现错误消息。 务必检查诊断使用的存储帐户。 若要检查诊断存储帐户，请参阅 [为 Azure 云服务和虚拟机设置诊断](vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines.md)。 如果服务使用经典存储帐户，则可以对其进行升级;请参阅 [升级到常规用途 v2 存储帐户](/azure/storage/common/storage-account-upgrade?tabs=azure-portal)。  有关存储帐户类型的常规信息，请参阅 [存储帐户概述](/azure/storage/common/storage-account-overview)。
 
 ### <a name="to-publish-a-classic-azure-cloud-service-project-to-cloud-services-extended-support"></a>若要将经典 Azure 云服务项目发布到云服务 (扩展支持) 
-
-1. 云服务（外延支持）目前以预览版提供。 为订阅注册此功能，如下所示：
-
-   ```azurepowershell-interactive
-   Register-AzProviderFeature -FeatureName CloudServices -ProviderNamespace Microsoft.Compute
-   ```
 
 1. 右键单击 Azure 云服务 (经典) 项目中的项目节点，然后选择 " **发布 (扩展支持) ...**"。 **发布向导** 将在第一个屏幕上打开。
 
@@ -89,7 +83,7 @@ ms.locfileid: "99841128"
 
 1. 配置项目部署的所有设置后，请选择对话框底部的“发布”。 可以在 Visual Studio 的“Azure 活动日志”输出窗口中监视过程状态。 选择 " **在门户中打开** " 链接到 
 
-祝贺！ 已将云服务 (扩展支持) 项目发布到 Azure。 若要使用相同设置再次进行发布，可以重复使用发布配置文件，或重复这些步骤来创建新的配置文件。 用于部署的 Azure 资源管理器 (ARM) 模板和参数保存在 *bin/ \<configuration\> /Publish* 文件夹中。
+祝贺你！ 已将云服务 (扩展支持) 项目发布到 Azure。 若要使用相同设置再次进行发布，可以重复使用发布配置文件，或重复这些步骤来创建新的配置文件。 用于部署的 Azure 资源管理器 (ARM) 模板和参数保存在 *bin/ \<configuration\> /Publish* 文件夹中。
 
 ## <a name="clean-up-azure-resources"></a>清理 Azure 资源
 
