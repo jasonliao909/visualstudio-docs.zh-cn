@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d8f739ab99f060005f7bbfebc400c424c50ba7d5
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 10f0cd997b9635343837d0e387a6352abf4f60f3
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684129"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106218056"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练：在 Visual Studio 中调试并行应用程序（C#、Visual Basic、C++）
 
@@ -70,7 +70,7 @@ ms.locfileid: "101684129"
 
    在“开始”窗口上，选择“创建新项目”  。
 
-   在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。
+   在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”、“C++”或“Visual Basic”，然后从“平台”列表中选择“Windows”     。
 
    应用语言和平台筛选器之后，对 .NET Core 或 C++ 选择“控制台应用”，然后选择“下一步” 。
 
@@ -102,9 +102,9 @@ ms.locfileid: "101684129"
 
 1. 将所选语言的以下代码粘贴到上述空代码文件中。
 
-   [!code-csharp[Debugger#1](../debugger/codesnippet/CSharp/walkthrough-debugging-a-parallel-application_1.cs)]
-   [!code-cpp[Debugger#1](../debugger/codesnippet/CPP/walkthrough-debugging-a-parallel-application_1.cpp)]
-   [!code-vb[Debugger#1](../debugger/codesnippet/VisualBasic/walkthrough-debugging-a-parallel-application_1.vb)]
+   :::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/debugger/cs/s.cs" id="Snippet1":::
+   :::code language="cpp" source="../snippets/cpp/VS_Snippets_Misc/debugger/cpp/beta2_native.cpp" id="Snippet1":::
+   :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Misc/debugger/vb/module1.vb" id="Snippet1":::
 
 1. 在“文件”菜单上，单击“全部保存” 。
 

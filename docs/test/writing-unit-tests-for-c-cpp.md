@@ -1,19 +1,19 @@
 ---
 title: 编写适用于 C/C++ 的单元测试
 description: 使用 CTest、Boost.Test 和 Google Test 等各种测试框架在 Visual Studio 中编写 C++ 单元测试。
-ms.date: 02/08/2020
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: cf6287ebdb4c2df6145a0e60e22ac1197a517fde
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: d20bcdef769d8cd751230000b0e4d4319b10e46f
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729361"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106217458"
 ---
 # <a name="write-unit-tests-for-cc-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ 单元测试
 
@@ -92,7 +92,7 @@ C++ 单元测试项目支持 [CodeLens](../ide/find-code-changes-and-other-histo
 ### <a name="write-test-methods"></a>编写测试方法
 
 > [!NOTE]
-> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 记录在此处：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/googletest/docs/primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
+> 此部分演示适用于 C/C++ 的 Microsoft 单元测试框架的语法。 记录在此处：[Microsoft.VisualStudio.TestTools.CppUnitTestFramework API reference](microsoft-visualstudio-testtools-cppunittestframework-api-reference.md)。 有关 Google Test 文档，请参阅 [Google Test 入门](https://github.com/google/googletest/blob/master/docs/primer.md)。 有关 Boost.Test，请参阅 [Boost Test 库：单元测试框架](https://www.boost.org/doc/libs/1_46_0/libs/test/doc/html/utf.html)。
 
 测试项目中的 .cpp 文件有一个为你定义的存根类和方法  。 其中显示了如何编写测试代码的示例。 签名使用 TEST_CLASS 和 TEST_METHOD 宏，它们使方法可在“测试资源管理器”窗口中被发现  。
 
