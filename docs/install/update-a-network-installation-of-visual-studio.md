@@ -1,7 +1,7 @@
 ---
 title: 更新基于网络的安装
 description: 了解如何使用 --layout 命令更新基于网络的 Visual Studio 安装
-ms.date: 06/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6829bac79f747d4f9bacfe5e71f57352fcad0970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5ad0231c2dc21acc4a8d954456921dbe2838e39
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959150"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547396"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -33,17 +33,7 @@ ms.locfileid: "99959150"
 
 要刷新网络安装共享，使其包含最新更新，请运行 `--layout` 命令，从而以增量方式下载更新后的包。
 
-::: moniker range="vs-2017"
-
-**15.3 中的新增功能**：如果你在 [首次创建网络布局](create-a-network-installation-of-visual-studio.md)时选择了部分布局，这些设置将被保存。 此后一切布局命令都将使用先前的选项以及任何指定的新选项。 但是，如果正在使用早期版本的布局，则应使用与首次创建网络安装布局相同的命令行参数（即相同的工作负载和语言）来更新其内容。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
 如果你在[首次创建网络布局](create-a-network-installation-of-visual-studio.md)时选择了部分布局，这些设置将被保存。 此后一切布局命令都将使用先前的选项以及任何指定的新选项。
-
-::: moniker-end
 
 如果在文件共享上托管布局，则应更新布局的私有副本（例如 c:\VSLayout），然后下载所有已更新内容，并将其复制到文件共享（例如 \\server\products\VS）。 如果不这样做，那么任何在布局更新时运行安装程序的用户，将更有可能无法通过布局获取所有内容，因为布局并未完全更新。
 

@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a7f8645cd34fe56d7d8d0f6a9efa6bf01bd13d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939651"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082534"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild 如何生成项目
 
@@ -139,7 +139,7 @@ Microsoft.Common.props 文件设置可重写的默认值。 它在项目文件�
 
 Microsoft.Common.targets 文件及其导入的目标文件定义 .NET 项目的标准生成过程。 它还提供了可用于自定义生成的扩展点。
 
-在实现中，Microsoft.Common.targets 是一个导入 Microsoft.Common.CurrentVersion.targets 的精简包装器。 此文件包含标准属性设置，并定义可定义生成过程的实际目标。 此处定义 `Build` 目标，但实际上它是空的。 但 `Build` 目标包含 `DependsOn` 属性，该属性指定构成实际生成步骤的各个目标，这些步骤是 `BeforeBuild`、`CoreBuild` 和 `AfterBuild`。 `Build` 目标定义如下：
+在实现中，Microsoft.Common.targets 是一个导入 Microsoft.Common.CurrentVersion.targets 的精简包装器。 此文件包含标准属性设置，并定义可定义生成过程的实际目标。 此处定义 `Build` 目标，但实际上它是空的。 但 `Build` 目标包含 `DependsOnTargets` 属性，该属性指定构成实际生成步骤的各个目标，这些步骤是 `BeforeBuild`、`CoreBuild` 和 `AfterBuild`。 `Build` 目标定义如下：
 
 ```xml
   <PropertyGroup>
@@ -157,7 +157,7 @@ Microsoft.Common.targets 文件及其导入的目标文件定义 .NET 项目的�
       Returns="@(TargetPathWithTargetPlatformMoniker)" />
 ```
 
-`BeforeBuild` 和 `AfterBuild` 是扩展点。 它们在 Microsoft.Common.CurrentVersion.targets 文件中是空的，但项目可以提供自己的 `BeforeBuild` 和 `AfterBuild` 目标，其中包含需要在主生成过程之前或之后执行的任务。 `AfterBuild` 在无操作目标 `Build` 前运行，因为 `AfterBuild` 出现在 `Build` 目标的 `DependsOn` 属性中，但在 `CoreBuild` 之后发生。
+`BeforeBuild` 和 `AfterBuild` 是扩展点。 它们在 Microsoft.Common.CurrentVersion.targets 文件中是空的，但项目可以提供自己的 `BeforeBuild` 和 `AfterBuild` 目标，其中包含需要在主生成过程之前或之后执行的任务。 `AfterBuild` 在无操作目标 `Build` 前运行，因为 `AfterBuild` 出现在 `Build` 目标的 `DependsOnTargets` 属性中，但在 `CoreBuild` 之后发生。
 
 `CoreBuild` 目标包含对生成工具的调用，如下所示：
 
