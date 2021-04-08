@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: e2a545d1b9165a158f7d1913668e983386127874
-  ms.sourcegitcommit: e38419bb842d587fd9e37c24b6cf3fc5c2e74817
+  ms.openlocfilehash: 7a7740ad4fffd80bc4b96ef7096b3bdd7c7a31bd
+  ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/09/2020
-  ms.locfileid: "91860531"
+  ms.lasthandoff: 04/05/2021
+  ms.locfileid: "106381576"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -89,6 +89,8 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
+    - text: 创建并部署到云服务（外延支持）
+      url: cloud-services-extended-support.md
     - text: 创建和配置 Azure 云服务项目
       url: vs-azure-tools-azure-project-create.md
     - text: 在本地和在 Azure 中调试云服务
