@@ -40,7 +40,7 @@
   items:
     - name: 使用云服务项目
       items:
-        - name: 使用云服务（外延支持）（预览）
+        - name: 使用云服务（外延支持）
           href: cloud-services-extended-support.md
         - name: 创建 Azure 云服务项目
           href: vs-azure-tools-azure-project-create.md
