@@ -1,21 +1,21 @@
 ---
 title: F1 帮助的默认页面
 description: Visual Studio 的 F1 帮助请求的默认页面
-ms.date: 08/20/2020
+ms.date: 03/25/2021
 ms.topic: troubleshooting
-ms.custom: contperf-fy21q1
+ms.custom: contperf-fy21q3
 robots: noindex,nofollow
 f1_keywords:
 - vs.ambient
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 7026db3e4a3c9490c5ea770342d04fe477fdf28f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e6af978a080e0c75e439f1ee29a90fc0d40a653
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961607"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616917"
 ---
 # <a name="f1-help"></a>F1 帮助
 
@@ -28,14 +28,14 @@ ms.locfileid: "99961607"
 - 尝试在 [docs.microsoft.com](/) 上搜索
 - 尝试使用搜索引擎进行搜索。
 
-## <a name="find-help-on-a-keyword-or-api"></a>查找关键字或 API 的帮助
+## <a name="get-help-for-your-programming-language"></a>获取有关编程语言的帮助？
 
-- 有关 C# 帮助，请参阅 [C# 编程指南](/dotnet/csharp/programming-guide/)或[语言参考](/dotnet/csharp/language-reference/)。
-- 有关 Visual Basic 帮助，请参阅 [Visual Basic 语言功能](/dotnet/visual-basic/programming-guide/language-features/)或[语言参考](/dotnet/visual-basic/language-reference/)。
-- 有关 Python 帮助，请参阅 [Python 文档](https://docs.python.org/)。
-- 有关 C++ 帮助，请参阅 [C/C++ 语言和标准库参考](/cpp/cpp/c-cpp-language-and-standard-libraries)。
-- 有关 F# 帮助，请参阅 [F# 指南](/dotnet/fsharp/)。
-- 有关 TypeScript 帮助，请参阅 [TypeScript 文档](https://www.typescriptlang.org/docs)。
+- [C# 编程指南](/dotnet/csharp/programming-guide/)或[语言参考](/dotnet/csharp/language-reference/)。
+- [Visual Basic 语言功能](/dotnet/visual-basic/programming-guide/language-features/)或[语言参考](/dotnet/visual-basic/language-reference/)。
+- [Python 文档](https://docs.python.org/)。
+- [C/C++ 语言和标准库参考](/cpp/cpp/c-cpp-language-and-standard-libraries)。
+- [F# 指南](/dotnet/fsharp/)。
+- [TypeScript 文档](https://www.typescriptlang.org/docs)。
 
 ## <a name="re-map-or-disable-the-f1-help-key"></a>重新映射或禁用 F1 帮助键
 

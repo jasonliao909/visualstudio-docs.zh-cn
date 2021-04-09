@@ -2,7 +2,7 @@
 title: CreateCSharpManifestResourceName 任务 | Microsoft Docs
 description: 使用 MSBuild CreateCSharpManifestResourceName 任务可根据给定的 .resx 文件名或其他资源创建 C# 样式的清单名称。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 11/15/2020
 ms.topic: reference
 dev_langs:
 - VB
@@ -18,12 +18,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3406a5f61c9a4aa1c9e2a3c6388741c3ae0fa0f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3e1bd096c2a9c7763a3be0611f3716f61df22856
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901454"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105055864"
 ---
 # <a name="createcsharpmanifestresourcename-task"></a>CreateCSharpManifestResourceName 任务
 
@@ -43,7 +43,7 @@ ms.locfileid: "99901454"
 
 ## <a name="remarks"></a>注解
 
- [CreateVisualBasicManifestResourceName 任务](../msbuild/createvisualbasicmanifestresourcename-task.md)决定了要分配到给定 .resx 或其他资源文件的相应清单资源名称。 该任务向资源文件提供一个逻辑名称，然后将其作为元数据附加到输出参数。
+ [CreateCSharpManifestResourceName 任务](../msbuild/createcsharpmanifestresourcename-task.md)决定了要分配到给定 .resx 或其他资源文件的相应清单资源名称。 该任务向资源文件提供一个逻辑名称，然后将其作为元数据附加到输出参数。
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 

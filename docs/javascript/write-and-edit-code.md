@@ -1,7 +1,7 @@
 ---
 title: JavaScript 开发人员编辑功能简介
 description: 此 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 JavaScript 代码。
-ms.date: 12/13/2018
+ms.date: 03/25/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
@@ -10,12 +10,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: cec6a19d525f89b5ca8873344d3dce9c830fd4c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1d9fb7cdc850bc54298cd3d82d52786a9e6a639
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935685"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616956"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>了解如何使用 JavaScript 版代码编辑器
 
@@ -48,7 +48,7 @@ ms.locfileid: "99935685"
 
 鼠标悬停在编程元素上时，IntelliSense 还可以显示关于类型的信息。
 
-语言服务可以使用 TypeScript d.ts 文件和 JSDoc 注释来提供 IntelliSense 信息。 对于大多数常见的 JavaScript 库，d.ts 文件是自动获取的。 有关如何获取 IntelliSense 信息的更多详情，请参见 [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)
+语言服务可以使用 TypeScript d.ts 文件和 JSDoc 注释来提供 IntelliSense 信息。 对于大多数常见的 JavaScript 库，d.ts 文件是自动获取的。 有关如何获取 IntelliSense 信息的更多详情，请参阅 [JavaScript IntelliSense](../ide/javascript-intellisense.md?toc=/visualstudio/javascript/toc.json)。 如果你对 Visual Studio 中的 AngularJS 编程感兴趣，可使用适用于 Visual Studio 的 [AngularJS 语言服务扩展](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)以获取 IntelliSense。
 
 ## <a name="check-syntax"></a>检查语法
 
