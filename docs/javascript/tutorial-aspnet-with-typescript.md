@@ -1,7 +1,7 @@
 ---
 title: 使用 TypeScript 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 TypeScript 创建应用
-ms.date: 03/16/2020
+ms.date: 03/25/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 6297f7a392a497b79adca991b1ceba7fd701856d
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
+ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672834"
+ms.lasthandoff: 03/26/2021
+ms.locfileid: "105616982"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
@@ -287,7 +287,10 @@ Visual Studio 管理项目中的单个应用程序的文件  。 该项目包括
 
 ## <a name="next-steps"></a>后续步骤
 
-你可能想要了解有关将 TypeScript 与 ASP.NET Core 结合使用的更多详细信息。
+你可能想要了解有关将 TypeScript 与 ASP.NET Core 结合使用的更多详细信息。 如果你对 Visual Studio 中的 AngularJS 编程感兴趣，可使用适用于 Visual Studio 的 [AngularJS 语言服务扩展](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)。
 
 > [!div class="nextstepaction"]
 > [ASP.NET Core 和 TypeScript](https://www.typescriptlang.org/docs/handbook/asp-net-core.html)
+
+> [!div class="nextstepaction"]
+> [AngularJS 语言服务扩展](https://devblogs.microsoft.com/visualstudio/angular-language-service-for-visual-studio)

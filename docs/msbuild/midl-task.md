@@ -28,12 +28,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a310cd4428232338ed46a8a54502d9956e73be15
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932003"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105094973"
 ---
 # <a name="midl-task"></a>MIDL 任务
 
@@ -79,7 +79,7 @@ ms.locfileid: "99932003"
 
      可选 **String** 参数。
 
-     指定要传递给 C/C++ 预处理器的选项。 指定用空格分隔的预处理器选项列表。
+     指定要传递给 C/C++ 预处理器的选项。 指定用空格分隔的预处理器选项列表。 必须包含 `/E` 选项。
 
      有关详细信息，请参阅 [MIDL 命令行参考](/windows/desktop/Midl/midl-command-line-reference)中的 /cpp_opt 选项。
 

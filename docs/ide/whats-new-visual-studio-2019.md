@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 03/04/2021
+ms.date: 03/19/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 8371b9baa22b72eff0c829426b1b39bcf42398f2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
+ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221179"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105082018"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -222,13 +222,7 @@ Visual Studio 2019 中会默认安装此服务。
 
 我们经常更新 Visual Studio 2019 的新功能，不断提升开发体验。 若要了解有关我们最新创新的详细信息，请查看 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/)。 对于我们迄今为止在预览版中发布的内容记录，请参阅[预览发行说明](/visualstudio/releases/2019/release-notes-preview/)。 有关接下来要发布的内容的列表，请参阅 [Visual Studio 路线图](/visualstudio/productinfo/vs-roadmap)。
 
-与此同时，以下是我们目前正在开发的一些新功能。
-
-- **Visual Studio 2019 对 GitHub Codespaces 的支持（预览）**
-
-  如今，开发人员要在工作和家庭中兼顾多个项目（比以往更甚）。 新功能、bug 修复、PR 评审和原型都在争用时间，并需要不断地切换上下文。 [GitHub Codespaces](https://github.com/features/codespaces) 可以提供帮助。 你可以完全在云中进行开发，并为每个项目创建专用的自定义环境（以秒为单位）。 使用 Visual Studio 2019，可以连接到 codespace，并像在本地那样工作。
-
-  有关详细信息，请参阅[什么是 GitHub Codespaces](codespaces/codespaces-overview.md) 页面。
+同时，下面是一项正在开发中的新功能。
 
 - **Visual Studio 2019 中改进了 Git 体验（预览版）**
 
