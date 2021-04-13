@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 785d1bcfb8fdce5b09e749dcca17ff476a5d3f48
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877156"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083563"
 ---
 # <a name="exec-task"></a>Exec 任务
 
@@ -49,6 +49,7 @@ ms.locfileid: "99877156"
 |`Outputs`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含任务的输出项。 `Exec` 任务自身不会设置这些项。 相反，你可以提供这些项，使得任务看似已对其进行了设置，以便于稍后在项目中使用。|
 |`StdErrEncoding`|可选 `String` 输出参数。<br /><br /> 指定捕获的任务标准错误流的编码。 默认值为当前控制台输出编码。|
 |`StdOutEncoding`|可选 `String` 输出参数。<br /><br /> 指定捕获的任务标准输出流的编码。 默认值为当前控制台输出编码。|
+|`UseUtf8Encoding`|可选 `String` 参数。<br /><br /> 指定在处理已执行的命令的命令行时是否使用 UTF8 代码页。 有效值为 `Always`、`Never` 或 `Detect`。 默认值为 `Detect`，这意味着仅当存在非 ANSI 字符时才使用 UTF8 代码页。|
 |`WorkingDirectory`|可选 `String` 参数。<br /><br /> 指定要在其中运行命令的目录。<br /><br />默认：项目当前的工作目录。|
 
 [!INCLUDE [ToolTaskExtension arguments](includes/tooltaskextension-base-params.md)]

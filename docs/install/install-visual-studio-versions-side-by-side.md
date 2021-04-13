@@ -2,7 +2,7 @@
 title: 并排安装 Visual Studio 版本
 description: 了解如何在已安装 Visual Studio 早期版本或更高版本的计算机上安装 Visual Studio。
 ms.custom: SEO-VS-2020
-ms.date: 07/24/2019
+ms.date: 03/29/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: conceptual
@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: ornellaalt
 ms.author: ornella
 manager: jmartens
-ms.openlocfilehash: f17759d186805dc72623f27c9f254c7a6c0d36e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0814b6ebfacd5b4cf24d0f451967903b9551808f
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941523"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981272"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并排安装 Visual Studio 版本
 
@@ -50,17 +50,44 @@ ms.locfileid: "99941523"
 
 ## <a name="install-minor-visual-studio-versions-side-by-side"></a>并行安装 Visual Studio 次要版本
 
-默认情况下，从 Visual Studio 的一个次要版本升级到下一个版本时，Visual Studio 安装程序会将当前安装版本更新为该通道中的下一个版本。 例如，在安装 16.6.4 预览版时，安装程序将尝试替换当前安装的 16.6.3 预览版，因为这两个版本都处于 16.6 预览通道中。 这有助于确保较早版本的 Visual Studio 不会占用计算机上的空间。 在某些特定情况下，并行安装次要版本可能会有所帮助。 在本示例中，这意味着同一台计算机上同时具备 16.6.3 和 16.6.4。
+从 Visual Studio 的一个次要版本升级到下一个版本时，Visual Studio 安装程序默认会将当前安装版本更新为该通道中的最新版本。 例如，假设刚刚发布了 16.9.4。 安装程序将尝试替换当前安装的 16.9.3（或更低版本）和 16.9.4，因为这两个版本都是 [Visual Studio 2019 发布通道](https://docs.microsoft.com/visualstudio/productinfo/release-rhythm)的一部分。 在更新期间将旧版本替换为新版本有助于确保较早版本的 Visual Studio 不会占用计算机上的空间。 但是，在某些特定情况下，并行安装不同次要版本的 Visual Studio 可能会有所帮助。 例如，你可能想要在同一台计算机上同时具备 16.9.3 和16.9.4。 
 
-1. 下载要与现有 Visual Studio 版本并行安装的次要版本的 [Visual Studio 引导程序文件](/visualstudio/releases/2019/history#installing-an-earlier-release)。
+::: moniker range="vs-2017"
+
+1. 从要与现有 Visual Studio 版本并行安装的版本的 [Visual Studio 早期版本](https://visualstudio.microsoft.com/vs/older-downloads/)页下载 Visual Studio 2017 版本 15.9 的最新引导程序。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+1. 从要与现有 Visual Studio 版本并行安装的次要版本的 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版本](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序文件。
+
+::: moniker-end
+
+
 2. 在管理员模式下打开命令提示符。 为此，请打开 Windows“开始”菜单，键入“cmd”，右键单击命令提示符搜索结果，然后选择“以管理员身份运行”。 在命令提示符中，将目录更改为 Visual Studio 引导程序文件所在的文件夹。
-3. 运行以下命令，为安装位置指定一个新文件夹路径，并将 .exe 文件名替换为要安装的 Visual Studio 版本的相应引导程序名称。 .exe 文件名应与以下文件名之一匹配或类似：
-   * 对于 Visual Studio Community，应与 vs_community.exe 匹配或类似
-   * 对于 Visual Studio Professional，应与 vs_professional.exe 匹配或类似
-   * 对于 Visual Studio Enterprise，应与 vs_enterprise.exe 匹配或类似
 
+::: moniker range="vs-2017"
+
+3. 运行以下命令，为安装位置指定一个新文件夹路径，并将 .exe 文件名替换为要安装的 Visual Studio 版本的相应引导程序名称。 .exe 文件名应与以下文件名之一匹配或类似：
+
+   * 对于 Visual Studio Enterprise，应与 vs_enterprise.exe 匹配或类似
+   * 对于 Visual Studio Professional，应与 vs_professional.exe 匹配或类似
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+3. 运行以下命令，为安装位置指定一个新文件夹路径，并将 .exe 文件名替换为要安装的 Visual Studio 版本的相应引导程序名称。 .exe 文件名应与以下文件名之一匹配或类似：
+
+   * 对于 Visual Studio Enterprise，应与 vs_enterprise.exe 匹配或类似
+   * 对于 Visual Studio Professional，应与 vs_professional.exe 匹配或类似
+   * 对于 Visual Studio Community，应与 vs_community.exe 匹配或类似
+
+::: moniker-end 
+  
    ```
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<2019 AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 4. 按照安装程序对话框选择安装所需的组件。 有关详细信息，请参阅[安装 Visual Studio](install-visual-studio.md#step-4---choose-workloads)。

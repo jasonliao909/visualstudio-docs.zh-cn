@@ -2,7 +2,7 @@
 title: Visual Studio 管理员指南
 titleSuffix: ''
 description: 详细了解如何在企业环境中部署 Visual Studio。
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: ecf1dc0332a023a67f2627d852ee56a092830b7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935607"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547409"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -38,53 +38,45 @@ ms.locfileid: "99935607"
 
 * 确保每台目标计算机满足[最低安装要求](/visualstudio/releases/2019/system-requirements/)。
 
-* 确定服务需求。
-
-  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)页面以及[在维修基线上更新 Visual Studio](update-servicing-baseline.md)页面的“Enterprise 和 Professional 客户的支持选项”部分。
-
-  如果打算应用维护更新及累积功能更新，可选择最新的位数。
-
-* 确定更新模型。
-
-  希望单个客户端计算机在哪里获得更新？ 具体而言，确定是想要从 Internet 还是从公司范围的本地共享获取更新。 接下来，如果选择使用本地共享，确定是单个用户可以自行更新客户端，还是需要管理员以编程方式更新客户端。
-
-  可以使用最新的产品更新来更新 Visual Studio 的网络安装布局，以便将它用作 Visual Studio 最新更新的安装点，同时还可用于维护已部署到客户端工作站的安装。 有关详细信息，请参阅[更新 Visual Studio 的网络安装](../install/update-a-network-installation-of-visual-studio.md)。
-
-  对于未连接到 Internet 的计算机，创建最小布局是更新脱机 Visual Studio 实例的最简单、最快捷的方法。 有关详细信息，请参阅[使用最小脱机布局更新 Visual Studio](update-minimal-layout.md)。
-
-* 确定公司所需的[工作负载和组件](workload-and-component-ids.md?view=vs-2019&preserve-view=true)。
-
-* 确定是否使用[响应文件](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)（这可简化脚本文件中的管理细节）。
-
-* 确定是否要启用组策略，以及是否要在个人计算机上将 Visual Studio 配置为禁用客户反馈。
-
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 * 确保每台目标计算机满足[最低安装要求](/visualstudio/productinfo/vs2017-system-requirements-vs/)。
 
+::: moniker-end
+
 * 确定服务需求。
 
-  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-for-older-versions-of-visual-studio)页面以及[在维修基线上更新 Visual Studio](update-servicing-baseline.md) 页面的“对较旧版本的 Visual Studio 的支持”部分。
-
-  如果打算应用维护更新及累积功能更新，可选择最新的位数。
+  如果公司需要继续使用某一功能集，但仍想获取常规维护更新，请计划使用维护基线。 有关详细信息，请参阅 [Visual Studio 产品生命周期和维护](/visualstudio/releases/2019/servicing#support-options-for-enterprise-and-professional-customers)页面以及[在维修基线上更新 Visual Studio](update-servicing-baseline.md)页面的“Enterprise 和 Professional 客户的支持选项”部分。
 
 * 确定更新模型。
 
-  希望单个客户端计算机在哪里获得更新？ 具体而言，确定是想要从 Internet 还是从公司范围的本地共享获取更新。 接下来，如果选择使用本地共享，确定是单个用户可以自行更新客户端，还是需要管理员以编程方式更新客户端。
+  希望单个客户端计算机在哪里获得产品更新？ 具体而言，确定是想要客户从 Internet 还是从公司范围的本地共享获取更新。 接下来，如果选择使用本地共享，确定是单个用户可以自行更新客户端，还是需要管理员以编程方式更新客户端。 最好在客户端计算机上进行原始安装前做决定。 有关详细信息，请参阅[创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)。
 
   可以使用最新的产品更新来更新 Visual Studio 的网络安装布局，以便将它用作 Visual Studio 最新更新的安装点，同时还可用于维护已部署到客户端工作站的安装。 有关详细信息，请参阅[更新 Visual Studio 的网络安装](../install/update-a-network-installation-of-visual-studio.md)。
 
+  利用企业部署工具的组织可以充分利用 Visual Studio 更新在 Microsoft 更新目录和 Windows Server Update Services 上可用这一事实。 有关详细信息，请参阅[启用管理员更新](../install/enabling-administrator-updates.md)和[应用管理员更新](../install/applying-administrator-updates.md)。
+
   对于未连接到 Internet 的计算机，创建最小布局是更新脱机 Visual Studio 实例的最简单、最快捷的方法。 有关详细信息，请参阅[使用最小脱机布局更新 Visual Studio](update-minimal-layout.md)。
+
+::: moniker range="vs-2019"
+
+* 确定公司所需的[工作负载和组件](workload-and-component-ids.md?view=vs-2019&preserve-view=true)。
+
+* 确定是否使用[响应文件](automated-installation-with-response-file.md?view=vs-2019&preserve-view=true)（这可简化脚本文件中的管理细节）。
+
+::: moniker-end
+
+::: moniker range="vs-2017"
 
 * 确定公司所需的[工作负载和组件](workload-and-component-ids.md?view=vs-2017&preserve-view=true)。
 
 * 确定是否使用[响应文件](automated-installation-with-response-file.md?view=vs-2017&preserve-view=true)（这可简化脚本文件中的管理细节）。
 
-* 确定是否要启用组策略，以及是否要在个人计算机上将 Visual Studio 配置为禁用客户反馈。
-
 ::: moniker-end
+
+* 确定是否要启用组策略，以及是否要在个人计算机上将 Visual Studio 配置为禁用客户反馈。
 
 ::: moniker range="vs-2019"
 
@@ -109,17 +101,17 @@ ms.locfileid: "99935607"
 
 * （可选）设置组策略。 还可在个人计算机上[将 Visual Studio 配置为禁用客户反馈](../ide/visual-studio-experience-improvement-program.md)。
 
-## <a name="step-3---deploy"></a>第 3 步 - 部署
+## <a name="step-3---deploy-updates"></a>第 3 步 - 部署更新
 
-* 使用所选部署技术，在目标开发者工作站上执行脚本。
-
-## <a name="step-4---deploy-updates"></a>第 4 步 - 部署更新
+使用所选部署技术，在目标开发者工作站上执行脚本。
 
 * 定期运行第 1 步中的命令来添加更新后的组件，使用 Visual Studio [最新更新刷新网络位置](update-a-network-installation-of-visual-studio.md?view=vs-2019&preserve-view=true)。
 
   可以使用更新脚本来更新 Visual Studio。 为此，请使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 命令行参数。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>第 5 步 -（可选）使用 Visual Studio 工具
+  可以使用类似 System Center Configuration Manager 的工具从 Windows Server Update Services 或 Windows 更新目录部署 Visual Studio。  有关详细信息，请参阅[应用管理员更新](applying-administrator-updates.md)。 
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>第 4 步 -（可选）使用 Visual Studio 工具验证安装
 
 我们提供了几种工具来帮助你在客户端计算机上[检测和管理安装的 Visual Studio 实例](tools-for-managing-visual-studio-instances.md?view=vs-2019&preserve-view=true)。
 
@@ -156,17 +148,17 @@ ms.locfileid: "99935607"
 
 * （可选）设置组策略。 还可在个人计算机上[将 Visual Studio 配置为禁用客户反馈](../ide/visual-studio-experience-improvement-program.md)。
 
-## <a name="step-3---deploy"></a>第 3 步 - 部署
+## <a name="step-3---deploy-updates"></a>第 3 步 - 部署更新
 
-* 使用所选部署技术，在目标开发者工作站上执行脚本。
-
-## <a name="step-4---deploy-updates"></a>第 4 步 - 部署更新
+使用所选部署技术，在目标开发者工作站上执行脚本。
 
 * 定期运行第 1 步中的命令来添加更新后的组件，使用 Visual Studio [最新更新刷新网络位置](update-a-network-installation-of-visual-studio.md?view=vs-2017&preserve-view=true)。
 
   可以使用更新脚本来更新 Visual Studio。 为此，请使用 [`update`](use-command-line-parameters-to-install-visual-studio.md?view=vs-2019&preserve-view=true) 命令行参数。
 
-## <a name="step-5---optional-use-visual-studio-tools"></a>第 5 步 -（可选）使用 Visual Studio 工具
+  可以使用类似 System Center Configuration Manager 的工具从 Windows Server Update Services 或 Windows 更新目录部署 Visual Studio。 有关详细信息，请参阅[应用管理员更新](applying-administrator-updates.md)。
+
+## <a name="step-4---optional-use-visual-studio-tools-to-verify-installation"></a>第 4 步 -（可选）使用 Visual Studio 工具验证安装
 
 我们提供了几种工具来帮助你在客户端计算机上[检测和管理安装的 Visual Studio 实例](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true)。
 
@@ -176,7 +168,7 @@ ms.locfileid: "99935607"
 
 **“PutCustomTypeInBingSearch” DWORD 0**
 
-注册表位于专用注册表配置单元的 *Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\* 目录中。 有关如何打开注册表配置单元的说明，请参阅[编辑 Visual Studio 实例的注册表](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)。
+注册表位于专用注册表配置单元的 `Software\Microsoft\VisualStudio\15.0_{InstanceId}\Roslyn\Internal\Diagnostics\` 目录中。 有关如何打开注册表配置单元的说明，请参阅[编辑 Visual Studio 实例的注册表](tools-for-managing-visual-studio-instances.md?view=vs-2017&preserve-view=true#editing-the-registry-for-a-visual-studio-instance)。
 
 ::: moniker-end
 
@@ -184,6 +176,8 @@ ms.locfileid: "99935607"
 
 ## <a name="see-also"></a>请参阅
 
+* [启用管理员更新](enabling-administrator-updates.md)
+* [应用管理员更新](applying-administrator-updates.md)
 * [命令行参数示例](command-line-parameter-examples.md)
 * [安装 Visual Studio 脱机安装所需的证书](install-certificates-for-visual-studio-offline.md)
 * [导入或导出安装配置](import-export-installation-configurations.md)

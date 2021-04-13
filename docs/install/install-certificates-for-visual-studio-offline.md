@@ -1,7 +1,7 @@
 ---
 title: 安装脱机安装所需的证书
 description: 了解如何安装 Visual Studio 脱机安装的证书。
-ms.date: 08/08/2019
+ms.date: 03/29/2021
 ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 54ab09809b99c18977125a124bc53d50d3d6c90c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
+ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941549"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105981285"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -36,7 +36,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 ::: moniker range="vs-2017"
 
-创建网络布局时，所需证书会下载到 Certificates 文件夹。 然后可以双击每个证书文件，并单击完成证书管理器向导，从而手动安装证书。 如果看到输入密码提示，请将密码留空。
+创建[网络布局](../install/create-a-network-installation-of-visual-studio.md)或[本地脱机缓存](../install/create-an-offline-installation-of-visual-studio.md)时，所需证书会下载到 Certificates 文件夹。 然后可以双击每个证书文件，并单击完成证书管理器向导，从而手动安装证书。 如果看到输入密码提示，请将密码留空。
 
 更新：  对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。
 
@@ -44,7 +44,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 ::: moniker range="vs-2019"
 
-创建网络布局时，所需证书会下载到 Certificates 文件夹。 可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。 如果看到输入密码提示，请将密码留空。
+创建[网络布局](../install/create-a-network-installation-of-visual-studio.md)或[本地脱机缓存](../install/create-an-offline-installation-of-visual-studio.md)时，所需证书会下载到 Certificates 文件夹。 可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。 如果看到输入密码提示，请将密码留空。
 
 ::: moniker-end
 
@@ -56,34 +56,16 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 如果正在编写在脱机环境中将 Visual Studio 部署到客户端工作站的脚本，应执行以下步骤：
 
-::: moniker range="vs-2017"
-
-1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2017）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
+1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到网络布局或本地缓存安装位置。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
 
 2. 使用下面的命令创建批处理文件：
-
-   ```cmd
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Code Signing PCA 2011" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Time-Stamp PCA 2010" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\manifestCounterSignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Code Signing PCA" -s -r LocalMachine CA
-
-   certmgr.exe -add -c certificates\vs_installer_opc.SignCertificates.p12 -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-
-   更新：  对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，使用以下命令创建批处理文件：
 
    ```cmd
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
 
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
+   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
    ```
    
    或者，通过以下命令创建批处理文件，该文件使用 Windows 中随附的 certutil.exe：
@@ -97,78 +79,15 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
    ```
 
 3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-1. 将[证书管理器工具](/dotnet/framework/tools/certmgr-exe-certificate-manager-tool) (certmgr.exe) 复制到安装共享（例如，\\server\share\vs2019）。 Windows 自身不附带 Certmgr.exe，但 [Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 可以提供。
-
-2. 使用下面的命令创建批处理文件：
-
-   ```cmd
-   certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
-
-   certmgr.exe -add [layout path]\certificates\vs_installer_opc.RootCertificate.cer -n "Microsoft Root Certificate Authority" -s -r LocalMachine root
-   ```
-   
-   或者，通过以下命令创建批处理文件，该文件使用 Windows 中随附的 certutil.exe：
-   
-      ```cmd
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"
-
-   certutil.exe -addstore -f "Root" "[layout path]\certificates\vs_installer_opc.RootCertificate.cer"
-   ```
-
-3. 将批处理文件部署到客户端。 应从提升的进程中运行此命令。
-
-::: moniker-end
 
 ## <a name="what-are-the-certificates-files-in-the-certificates-folder"></a>Certificates 文件夹中的证书文件有哪些？
 
-::: moniker range="vs-2017"
-
-此文件夹有三个 .P12 文件，每个文件都包含中间证书和根证书。 采用 Windows 更新的大多数系统都已安装这些证书。
-
-* **ManifestSignCertificates.p12** 包含：
-  * 中间证书： Microsoft 代码签名 PCA 2011 
-    * 不要求。 如果存在，可以在某些情况下提高性能。
+* manifestRootCertificate.cer 包含：
   * 根证书： Microsoft 根证书颁发机构 2011 
-    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* **ManifestCounterSignCertificates.p12** 包含：
-  * 中间证书： Microsoft 时间戳 PCA 2010 
-    * 不要求。 如果存在，可以在某些情况下提高性能。
+* manifestCounterSignRootCertificate.cer 和 vs_installer_opc.RootCertificate.cer 包含：
   * 根证书： Microsoft 根证书颁发机构 2010 
-    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* **Vs_installer_opc.SignCertificates.p12** 包含：
-  * 中间证书： Microsoft 代码签名 PCA 
-    * 所有系统均需要此证书。 请注意，通过 Windows 更新实现所有更新的系统可能没有此证书。
-  * 根证书： Microsoft 根证书颁发机构 
-    * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
-
-更新：  对于 Visual Studio 2017 版本 15.8 预览版 2 或更高版本，Visual Studio 安装程序只需要在系统上安装根证书。 这些证书存储在 .cer 文件而不是 .p12 文件中。
-
-::: moniker-end
-
-::: moniker range="vs-2019"
-
-* ManifestSignCertificates.cer  包含：
-  * 根证书： Microsoft 根证书颁发机构 2011 
-    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* ManifestCounterSignCertificates.cer  包含：
-  * 根证书： Microsoft 根证书颁发机构 2010 
-    * 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要此证书。
-* Vs_installer_opc.SignCertificates.cer  包含：
-  * 根证书： Microsoft 根证书颁发机构 
-    * 必需。 运行 Windows 7 或更高版本的系统附带此证书。
-
-Visual Studio 安装程序只需要在系统上安装根证书。
-
-::: moniker-end
+ 
+Visual Studio 安装程序只需要在系统上安装根证书。 未安装最新的 Windows 更新的 Windows 7 Service Pack 1 系统需要所有这些证书。
 
 ## <a name="why-are-the-certificates-from-the-certificates-folder-not-installed-automatically"></a>为什么无法自动安装 Certificates 文件夹中的证书？
 
@@ -199,13 +118,14 @@ Visual Studio 安装程序只需要在系统上安装根证书。
 
 ## <a name="install-visual-studio"></a>安装 Visual Studio
 
-安装证书后，可以根据“创建 Visual Studio 网络安装”页中的[从网络安装部署](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)部分中的说明，继续部署 Visual Studio。
+在客户端计算机上安装证书后，便可以[从本地缓存安装 Visual studio](../install/create-an-offline-installation-of-visual-studio.md#step-3---install-visual-studio-from-the-local-cache)，或[将 Visual Studio 从网络布局共享部署到客户端计算机](create-a-network-installation-of-visual-studio.md#deploy-from-a-network-installation)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另请参阅
 
-* [安装 Visual Studio](install-visual-studio.md)
+* [创建 Visual Studio 的网络安装](../install/create-a-network-installation-of-visual-studio.md)
+* [创建 Visual Studio 的脱机安装](../install/create-an-offline-installation-of-visual-studio.md)
 * [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
-* [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)
+

@@ -12,12 +12,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 15bfae190ba2960c291dca635bfff1188ac64ab5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836184"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106082521"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 设计器选项页
 
@@ -64,7 +64,18 @@ ms.locfileid: "99836184"
 
 以下设置确定编辑 XAML 文档时设计器的行为。
 
-|“属性”|描述|
+## <a name="default-zoom-setting"></a>默认缩放设置
+
+使用此设置来确定用于查看 XAML 文档的默认缩放值。
+
+|名称|说明|
+|-|-|
+|**上次使用**|默认为所有 XAML 文档使用上次使用的缩放值。 首次打开 XAML 文档时，仅在第一次使用“适应全部”设置。|
+|**适应全部**|使用此选项可将 XAML 设计器的缩放值设置为“适应全部”。 关闭并重新打开 XAML 文档后，最后设置的值将保留在该会话中，但对于不同的会话，默认情况下使用“适应全部”。|
+
+以下设置确定编辑 XAML 文档时设计器的行为。
+
+|名称|描述|
 |-|-|
 |**创建时自动命名交互元素**|指定在向设计器添加新的交互元素时是否为该元素提供一个默认名称。|
 |**创建元素时自动插入布局属性**|指定在向设计器添加新元素时是否为该元素提供布局属性。 布局属性是影响控件布局的属性（例如，Margin 和 VerticalAlignment）。 下面的 XAML 展示了如何在选择和不选择此选项的情况下创建按钮：<br />`<Button Content="Button" HorizontalAlignment="Left" Margin="245,56,0,0" Grid.Row="1" VerticalAlignment="Top" Width="75"/>`<br />`<Button Content="Button" Grid.Row="1"/>`|

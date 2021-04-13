@@ -4,17 +4,17 @@ description: 了解 Visual Studio 系统生成的日志、收集的数据类型�
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: jillre
-ms.author: michma
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6df4a90d8ddb31db88bb91ff4e874cadd3c589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
+ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894655"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106171831"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>由 Visual Studio 收集的系统生成的日志
 
@@ -70,7 +70,7 @@ Visual Studio 收集崩溃、UI 无响应以及 CPU 或内存使用率偏高等�
 
 ## <a name="opt-out-of-data-collection"></a>选择退出数据收集
 
-鉴于我们收集数据的目的以及数据访问和保留的相关约束，建议使用 Visual Studio 和 Windows 的默认隐私设置。 不过你可以[选择退出](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio 体验改善计划。 若要选择退出所有程序的系统生成的日志收集，请参阅 [Windows 10 中的诊断、反馈和隐私](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)。 根据使用的 Windows 版本，选项可能有所不同。
+鉴于我们收集数据的目的以及数据访问和保留的相关约束，建议使用 Visual Studio 和 Windows 的默认隐私设置。 不过你可以[选择退出](../ide/visual-studio-experience-improvement-program.md#opt-in-or-out) Visual Studio 体验改善计划。 选择退出时，将选择退出可选诊断数据收集。 需要完成一些诊断数据收集，才能确保 Visual Studio 是安全的、最新的且正常运行。 所需的诊断数据收集不会因选择退出 VSCEIP 而受到影响。 若要选择退出所有程序的系统生成的日志收集，请参阅 [Windows 10 中的诊断、反馈和隐私](https://privacy.microsoft.com/windows-10-feedback-diagnostics-and-privacy)。 根据使用的 Windows 版本，选项可能有所不同。
 
 ## <a name="see-also"></a>请参阅
 

@@ -2,7 +2,7 @@
 title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
-ms.date: 10/12/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: how-to
 ms.prod: visual-studio-windows
@@ -17,12 +17,12 @@ ms.author: ornella
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d087ed0a43296f77ca934671f63f716bf6ddfae8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935711"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547500"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -287,12 +287,17 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ::: moniker-end
 
+## <a name="administrator-updates"></a>管理员更新 
+
+如果你是集中管理软件安装的组织的一员，则企业管理员可能会使 Visual Studio 在计算机上进行更新。 有关如何控制或配置计算机可接受的更新类型的详细信息，请参阅[使用 Configuration Manager 部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。 
+
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
 ## <a name="see-also"></a>另请参阅
 
 * [并行安装 Visual Studio 版本](install-visual-studio-versions-side-by-side.md)
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)
+* [Visual Studio Enterprise 指南](visual-studio-enterprise-guide.md)
 * [在维修基线上更新 Visual Studio](update-servicing-baseline.md)
 * [控制对基于网络的 Visual Studio 部署的更新](controlling-updates-to-visual-studio-deployments.md)
 * [修改 Visual Studio](modify-visual-studio.md)

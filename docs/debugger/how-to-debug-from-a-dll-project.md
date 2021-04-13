@@ -2,7 +2,7 @@
 title: 从 DLL 项目调试 | Microsoft Docs
 description: 可以通过在项目属性中指定调用应用，从项目本身开始调试 DLL 项目。 请参阅本文以获取详细信息。
 ms.custom: SEO-VS-2020
-ms.date: 10/10/2018
+ms.date: 3/30/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -20,12 +20,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f6063c5a0343951bb098c6937ce13dac7100d4a
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7846cc3fd17b46365da59f6fe1a744032cb8ba14
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160429"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083637"
 ---
 # <a name="how-to-debug-from-a-dll-project-in-visual-studio-c-c-visual-basic-f"></a>如何：在 Visual Studio 中从 DLL 项目调试（C#、C++、Visual Basic、F#）
 
@@ -81,7 +81,13 @@ ms.locfileid: "102160429"
 
 1. 确保“解决方案配置”设置为“调试” 。 按 F5，然后单击绿色“启动”箭头，或选择“调试” > “启动调试”。
 
-如果调试未命中断点，请确保 DLL 输出（默认情况为 \<project>\Debug 文件夹）是调用应用进行调用的位置。
+其他提示：
+
+- 如果调试未命中断点，请确保 DLL 输出（默认情况为 \<project>\Debug 文件夹）是调用应用进行调用的位置。
+
+- 如果要从本机 DLL 中断托管调用应用中的代码，或进行相反的转换，请启用[混合模式调试](../debugger/how-to-debug-in-mixed-mode.md)。
+
+- 在某些情况下，可能需要告诉调试器在何处查找源代码。 有关详细信息，请参阅[使用“未加载符号/未加载源”页面](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md#use-the-no-symbols-loadedno-source-loaded-pages)。
 
 ## <a name="see-also"></a>请参阅
 - [调试 DLL 项目](../debugger/debugging-dll-projects.md)

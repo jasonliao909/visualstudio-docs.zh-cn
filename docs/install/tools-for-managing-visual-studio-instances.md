@@ -2,7 +2,7 @@
 title: 用于检测和管理 Visual Studio 实例的工具
 titleSuffix: ''
 description: 了解可用于在客户端计算机上检测和管理 Visual Studio 安装的工具。
-ms.date: 08/14/2017
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: efd4091407d228a15cc80971d759e5371bddd3ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b6b641081c9b969cadd2c9517967adb8cc4cb1e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959254"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547435"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用于检测和管理 Visual Studio 实例的工具
 
@@ -29,21 +29,38 @@ ms.locfileid: "99959254"
 
 ## <a name="detecting-existing-visual-studio-instances"></a>检测现有 Visual Studio 实例
 
-我们提供了几种工具来帮助你检测和管理在客户端计算机上安装的 Visual Studio 实例：
+以下工具和实用工具将帮助你在客户端计算机上检测和管理安装的 Visual Studio 实例：
 
 * [vswhere](https://github.com/microsoft/vswhere)：一个可执行文件，内置于 Visual Studio 或可单独分发，可帮助查找特定计算机上所有 Visual Studio 实例的位置。
 * [VSSetup.PowerShell](https://github.com/microsoft/vssetup.powershell)：使用安装程序配置 API 来标识已安装的 Visual Studio 实例的 PowerShell 脚本。
 * [VS-Setup-Samples](https://github.com/microsoft/vs-setup-samples)：展示了如何使用安装程序配置 API 来查询现有安装的 C# 和 C++ 示例。
-
-此外，[安装程序配置 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) 提供了接口，方便开发者生成自己的实用工具来询问 Visual Studio 实例。
+* [Windows Management Instrumentation (WMI)](https://docs.microsoft.com/windows/win32/wmisdk/wmi-start-page)：可以通过 Visual Studio 类 MSFT_VSInstance 查询 Visual Studio 实例信息。 
+* [安装程序配置 API](<xref:Microsoft.VisualStudio.Setup.Configuration>) 提供了接口，方便开发人员生成自己的实用工具来询问 Visual Studio 实例。
+* [Microsoft Endpoint Configuration Manager 软件清单](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)：可用于收集有关客户端设备上的 Visual Studio 实例的信息。 
 
 ## <a name="using-vswhereexe"></a>使用 vswhere.exe
 
-`vswhere.exe` 自动包含在 Visual Studio 中（从 Visual Studio 2017 15.2 及更高版本开始），也可以从 [vswhere 版本页面](https://github.com/Microsoft/vswhere/releases)下载它。 使用 `vswhere -?` 获取有关该工具的帮助信息。 作为示例，此命令显示了 Visual Studio 的所有版本（包括产品的早期版本和预发行版本），并输出 JSON 格式的结果：
+`vswhere.exe` 自动包含在 Visual Studio 2017 及更高版本中，也可以从 [vswhere 发布页](https://github.com/Microsoft/vswhere/releases)中下载。 使用 `vswhere -?` 获取有关该工具的帮助信息。 例如，此命令显示了 Visual Studio 的所有版本（包括产品的早期版本和预发行版本），并输出 JSON 格式的结果：
 
 ```cmd
 C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -prerelease -format json
 ```
+
+## <a name="using-windows-management-instrumentation-wmi"></a>使用 Windows Management Instrumentation (WMI)
+
+如果已在计算机上安装 Visual Studio 客户端检测程序实用工具，则可以使用 WMI 查询 Visual Studio 实例信息。 默认情况下，Visual Studio 客户端检测程序实用工具随已于 2020 年 5 月 12 日当天或之后发布的每个 Visual Studio 2017 和 Visual Studio 2019 更新一起安装。 如果要单独安装，还可以在 [Microsoft 更新目录](https://catalog.update.microsoft.com/)中获得。  有关如何使用实用工具返回 Visual Studio 实例信息的示例，请在客户端计算机上以管理员身份打开 PowerShell，然后键入以下命令：
+
+```cmd
+Get-CimInstance MSFT_VSInstance
+```
+
+## <a name="using-microsoft-endpoint-configuration-manager"></a>使用 Microsoft Endpoint Configuration Manager 
+
+[Microsoft Endpoint Configuration Manager 软件清单](https://docs.microsoft.com/mem/configmgr/core/clients/manage/inventory/introduction-to-software-inventory)功能可用于查询和收集有关客户端设备上的 Visual Studio 实例的信息。 例如，以下查询将返回为在所有已安装的 Visual Studio 2017 和 2019 实例安装 Visual Studio 所使用的显示名称、版本和设备名称： 
+
+```WQL 
+select distinct SMS_G_System_COMPUTER_SYSTEM.Name, SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName, SMS_G_System_ADD_REMOVE_PROGRAMS.Version from SMS_R_System inner join SMS_G_System_COMPUTER_SYSTEM on SMS_G_System_COMPUTER_SYSTEM.ResourceID = SMS_R_System.ResourceId inner join SMS_G_System_ADD_REMOVE_PROGRAMS on SMS_G_System_ADD_REMOVE_PROGRAMS.ResourceID = SMS_R_System.ResourceId where SMS_G_System_ADD_REMOVE_PROGRAMS.DisplayName like "Visual Studio %[a-z]% 201[7,9]" 
+``` 
 
 ::: moniker range="vs-2017"
 
@@ -64,7 +81,7 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 
 1. 选择“`HKEY_LOCAL_MACHINE`”节点。
 
-1. 在 Regedit 主菜单中，依次选择“文件” > “加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）。 例如:
+1. 在 Regedit 主菜单中，依次选择“文件” > “加载配置单元...”，然后选择专用注册表文件（存储在“AppData\Local”文件夹中）  。 例如：
 
    ```
    %localappdata%\Microsoft\VisualStudio\<config>\privateregistry.bin
@@ -76,10 +93,10 @@ C:\Program Files (x86)\Microsoft Visual Studio\Installer> vswhere.exe -legacy -p
 系统会提示你输入配置单元名称，这将成为你的独立配置单元的名称。 执行此操作后，应该能够在所创建的独立配置单元下浏览注册表。
 
 > [!IMPORTANT]
-> 必须先卸载已创建的独立配置单元，然后才能再次启动 Visual Studio。 为此，请在 Regedit 主菜单中，依次选择“文件” > “卸载配置单元”。 （如果不这样做，文件会一直处于锁定状态，且 Visual Studio 无法启动。）
+> 必须先卸载已创建的独立配置单元，然后才能再次启动 Visual Studio。 为此，请在 Regedit 主菜单中，依次选择“文件” > “卸载配置单元” 。 （如果不这样做，文件会一直处于锁定状态，且 Visual Studio 无法启动。）
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-* [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
+* [Visual Studio 管理员指南](../install/visual-studio-administrator-guide.md)

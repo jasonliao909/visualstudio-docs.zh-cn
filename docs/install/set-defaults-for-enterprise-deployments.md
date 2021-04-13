@@ -1,7 +1,7 @@
 ---
 title: 为企业部署设置默认值
 description: 了解 Visual Studio 企业部署的域策略和其他配置操作。
-ms.date: 03/30/2019
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8fd5e96246778e1a8fd4ec1d87221ff04e8647cd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3d6f658e3d24f3c82737c0c457323b9d4eb4b6
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959267"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547461"
 ---
 # <a name="set-defaults-for-enterprise-deployments-of-visual-studio"></a>为 Visual Studio 企业部署设置默认值
 
@@ -50,12 +50,30 @@ ms.locfileid: "99959267"
 
 可以设置以下注册表值：
 
-| **Name** | 类型  | **Default** | **描述** |
+::: moniker range="vs-2017"
+| **名称** | **类型** | **默认值** | **说明** |
 | -------- | -------- | ----------- | --------------- |
 | `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 用于存储包清单和有效负载（可选）的目录。 有关详细信息，请参阅[禁用或移动包缓存](disable-or-move-the-package-cache.md)页面。 |
 | `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 即使在安装后，也仍会保留包有效负载。 随时都可以更改值。 禁用此策略会删除你修复或修改的实例的任何已缓存包有效负载。 有关详细信息，请参阅[禁用或移动包缓存](disable-or-move-the-package-cache.md)页面。 |
 | `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 用于安装跨 Visual Studio 实例版本共享的一些包的目录。 虽然随时都可以更改值，但更改只会影响今后执行的安装。 不得移动旧位置上已安装的任何产品，否则它们可能无法正常运行。 |
 | `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 阻止安装程序为所有已安装的 Visual Studio 产品自动下载更新。 随时都可以更改值。 |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 允许将管理员更新应用到客户端计算机。 如果此值缺失或设置为 0，则将阻止管理员更新。 此值用于管理。 有关详细信息，请参阅[启用管理员更新](enabling-administrator-updates.md)。 | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 指示用户不想接收 Visual Studio 的管理员更新。 若缺少注册表值或设置的值为 0，这意味着 Visual Studio 用户希望接收 Visual Studio 管理员更新。 这适用于开发人员用户（如果他们拥有对客户端计算机的管理员权限）。 有关详细信息，请参阅[应用管理员更新](../install/applying-administrator-updates.md#understanding-configuration-options)。 | 
+| `UpdateConfigurationFile` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\updates.config | 用于配置管理更新的文件路径。 有关详细信息，请参阅[配置管理员更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)。 | 
+::: moniker-end
+
+::: moniker range="vs-2019"
+| **名称** | **类型** | **默认值** | **说明** |
+| -------- | -------- | ----------- | --------------- |
+| `CachePath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\Packages | 用于存储包清单和有效负载（可选）的目录。 有关详细信息，请参阅[禁用或移动包缓存](disable-or-move-the-package-cache.md)页面。 |
+| `KeepDownloadedPayloads` | `REG_DWORD` | 1 | 即使在安装后，也仍会保留包有效负载。 随时都可以更改值。 禁用此策略会删除你修复或修改的实例的任何已缓存包有效负载。 有关详细信息，请参阅[禁用或移动包缓存](disable-or-move-the-package-cache.md)页面。 |
+| `SharedInstallationPath` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramFiles(x86)%\Microsoft Visual Studio\Shared | 用于安装跨 Visual Studio 实例版本共享的一些包的目录。 虽然随时都可以更改值，但更改只会影响今后执行的安装。 不得移动旧位置上已安装的任何产品，否则它们可能无法正常运行。 |
+| `BackgroundDownloadDisabled` |`REG_DWORD` | 1 | 阻止安装程序为所有已安装的 Visual Studio 产品自动下载更新。 随时都可以更改值。 |
+| `AdministratorUpdatesEnabled` | `REG_DWORD` | 1 | 允许将管理员更新应用到客户端计算机。 如果此值缺失或设置为 0，则将阻止管理员更新。 此值用于管理。 有关详细信息，请参阅[启用管理员更新](enabling-administrator-updates.md)。 | 
+| `AdministratorUpdatesOptOut` | `REG_DWORD` | 1 | 指示用户不想接收 Visual Studio 的管理员更新。 若缺少注册表值或设置的值为 0，这意味着 Visual Studio 用户希望接收 Visual Studio 管理员更新。 这适用于开发人员用户（如果他们拥有对客户端计算机的管理员权限）。 有关详细信息，请参阅[应用管理员更新](../install/applying-administrator-updates.md#understanding-configuration-options)。 | 
+| `UpdateConfigurationFile` | `REG_SZ` 或 `REG_EXPAND_SZ` | %ProgramData%\Microsoft\VisualStudio\updates.config | 用于配置管理更新的文件路径。 有关详细信息，请参阅[配置管理员更新的方法](../install/applying-administrator-updates.md#methods-for-configuring-an-administrator-update)。 | 
+| `BaselineStickinessVersions2019` | `REG_SZ` 或 `REG_EXPAND_SZ` | `ALL` 或 `16.4.0,16.7.0,16.9.0` | 授权要保留在指定服务基线上的更新的版本。 有关详细信息，请参阅[应用管理员更新](../install/applying-administrator-updates.md#understanding-configuration-options)页。 | 
+::: moniker-end
 
 > [!IMPORTANT]
 > 如果在任何安装后更改 `CachePath` 注册表策略，必须将现有包缓存移到新位置，并确保其受安全保护，以便 `SYSTEM` 和 `Administrators` 拥有完全控制权限，并且 `Everyone` 拥有读取访问权限。
@@ -66,5 +84,6 @@ ms.locfileid: "99959267"
 ## <a name="see-also"></a>另请参阅
 
 - [安装 Visual Studio](install-visual-studio.md)
+- [Visual Studio 管理员指南](visual-studio-administrator-guide.md)
 - [禁用或移动包缓存](disable-or-move-the-package-cache.md)
 - [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)

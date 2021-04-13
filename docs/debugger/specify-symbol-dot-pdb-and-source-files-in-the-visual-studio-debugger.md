@@ -2,7 +2,7 @@
 title: 在调试器中设置符号 (.pdb) 和源文件
 description: 了解如何配置和管理 Visual Studio 中的符号和源文件
 ms.custom: ''
-ms.date: 10/31/2019
+ms.date: 3/31/2021
 ms.topic: conceptual
 f1_keywords:
 - VS.ToolsOptionsPages.Debugger.Native
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 496994c0f9d546efe8804481230081090309d47e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ad72d2aa659f3d43bfca99c359d5db94e2d1045
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903564"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083676"
 ---
 # <a name="specify-symbol-pdb-and-source-files-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器（C#、C++、Visual Basic、F#）中指定符号 (.pdb) 和源文件
 
@@ -246,9 +246,10 @@ ms.locfileid: "99903564"
 
 - 要更改搜索路径，请选择未选定的路径，或者选择“新路径”或“新 VSTS 路径”，然后输入或选择一个新路径 。 选择“加载”以再次搜索路径，并在找到符号文件时加载相应文件。
 - 若要覆盖任何符号选项并重试搜索路径，请选择“浏览并查找 \<executable-name>”。 如果找到了符号文件，则会加载该文件，否则将打开“文件资源管理器”，以便你手动选择符号文件。
-- 要打开“选项” > “调试” > “符号”页面，请选择“更改符号设置”   。
-- 要在新窗口中显示一次反汇编，请选择“查看反汇编”，或选择“选项”对话框，以便设置在找不到源或符号文件时始终显示反汇编的选项 。
+- 若要打开“符号设置”页来配置行为，请选择“更改符号设置”（或选择“选项” > “调试” > “符号”）。
+- （高级）若要在新窗口中显示一次反汇编，请选择“查看反汇编”，或选择“选项”对话框，以便设置在找不到源或符号文件时始终显示反汇编的选项。 有关详细信息，请参阅[查看反汇编代码](../debugger/how-to-use-the-disassembly-window.md)。
 - 要显示已搜索的位置和结果，请展开“符号加载信息”。
+- 对于 C# 代码，还可以选择从“未加载符号”或“未加载源”页[反向编译源代码](../debugger/decompilation.md)。
 
 如果在执行其中一个选项后调试器找到 .pdb 文件，并且调试器可以使用 .pdb 文件中的信息检索源文件，则将显示源 。 否则，它会显示“未加载源”页面，页面中描述了问题并提供了指向可能解决该问题的操作链接。
 
@@ -259,6 +260,8 @@ ms.locfileid: "99903564"
 1. 在“解决方案资源管理器”中选择解决方案，然后选择“属性”图标，按 Alt+Enter，或右键单击并选择“属性”    。
 
 1. 选择“调试源文件”。
+
+   ![“调试源文件”页](../debugger/media/dbg-source-files.png)
 
 1. 在“包含源代码的目录”中，键入或选择要搜索的源代码位置。 使用“新建行”图标可添加更多位置，使用向上和向下箭头图标可对这些位置重新排序，使用 X 图标可删除这些位置   。
 
