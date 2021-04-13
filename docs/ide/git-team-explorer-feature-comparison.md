@@ -2,18 +2,18 @@
 title: Visual Studio 中 Git 和团队资源管理器的并行比较
 titleSuffix: ''
 description: 比较和对比如何使用 Visual Studio 中的新 Git 体验与团队资源管理器来进行源代码管理。
-ms.date: 03/12/2021
+ms.date: 04/01/2021
 ms.topic: how-to
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4cbd5b928bb066401c2f091863ad610fbd9f23d5
-ms.sourcegitcommit: 8edb1a7e3e8eee48bf0a900f00b5ee8e08de8e1d
+ms.openlocfilehash: bff03c9435a763607fd32936ddfa3fb38b45296b
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103482516"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106216912"
 ---
 # <a name="side-by-side-comparison-of-git-and-team-explorer"></a>Git 和团队资源管理器的并行比较
 
@@ -69,5 +69,7 @@ ms.locfileid: "103482516"
 有关新 Git 体验的详细信息，请参阅 YouTube 上的最新视频 [Visual Studio 中的 Git 入门](https://www.youtube.com/watch?v=GCZ9x3yqkyc)。
 
 ## <a name="see-also"></a>请参阅
+
 - [Visual Studio 中的 Git 新体验](git-with-visual-studio.md)
+- [Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
 - [在 Visual Studio 中使用 GitHub 帐户](work-with-github-accounts.md)

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ca82beef26f897b2f5d3a145c968c11efaabc294
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
+ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806051"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106110605"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 
@@ -221,17 +221,17 @@ def hello():
 
 ### <a name="question-how-does-flask-work-with-variable-url-routes-and-query-parameters"></a>问：Flask 如何使用变量 URL 路由和查询参数？
 
-答：在路由中，使用 `<variable_name>` 标记任意变量，Flask 使用命名参数将参数传递到函数。 变量可以是 URL 路径的一部分或在查询参数中。 例如，`'/hello/<name>` 形式的路由将名为 `name` 的字符串参数生成到函数，在路由中使用 `?message=<msg>` 分析为“message=”查询参数提供的值并将其传递到 `msg` 等函数：
+答：在路由中，使用 `<variable_name>` 标记任意变量，Flask 使用 URL 路径中的命名参数将变量传递到函数。 例如，`/hello/<name>` 形式的路由将名为 `name` 的字符串参数生成到函数。 通过 `request.args` 属性提供查询参数，特别是通过 `request.args.get` 方法。 有关详细信息，请参阅 Flask 文档中的[请求对象](https://flask.palletsprojects.com/en/1.1.x/quickstart/#the-request-object)。
 
 ```python
-@app.route('/hello/<name>?message=<msg>')
-def hello(name, msg):
-    return "Hello " + name + "! Message is " + msg + "."
+# URL: /hello/<name>?message=Have%20a%20nice%20day
+@app.route('/hello/<name>')
+def hello(name):
+    msg = request.args.get('message','')
+    return "Hello " + name + "! "+ msg + "."
 ```
 
 若要更改类型，将变量前缀设为 `int`、`float`、`path`（接受斜杠来说明文件夹名称）和 `uuid`。 有关详细信息，请参阅 Flask 文档中的[变量规则](https://flask.palletsprojects.com/en/1.0.x/quickstart/#variable-rules)。
-
-还通过 `request.args` 属性提供查询参数，特别是通过 `request.args.get` 方法。 有关详细信息，请参阅 Flask 文档中的[请求对象](https://flask.palletsprojects.com/en/1.0.x/quickstart/#the-request-object)。
 
 ### <a name="question-can-visual-studio-generate-a-requirementstxt-file-from-a-virtual-environment-after-i-install-other-packages"></a>问：在我安装其他包后，Visual Studio 能否从虚拟环境生成 requirements.txt 文件？
 

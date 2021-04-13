@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: b39112a696611103828d862c7f7adf04784e6222
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ee11ec012ae0f104f5fefff7302d3982e43721a
+ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860992"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106083650"
 ---
 # <a name="extract-a-method-refactoring"></a>“提取方法”重构
 
@@ -40,7 +40,7 @@ ms.locfileid: "99860992"
 
    - C#：
 
-       !显示 Program 类的 C# 代码的屏幕截图。 在该类的 Main 函数中，突出显示了一个代码行。](media/extractmethod-highlight-cs.png)
+       ![显示 Program 类的 C# 代码的屏幕截图。 在该类的 Main 函数中，突出显示了一个代码行。](media/extractmethod-highlight-cs.png)
 
    - Visual Basic：
 

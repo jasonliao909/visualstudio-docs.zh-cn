@@ -2,18 +2,18 @@
 title: Visual Studio 如何简化源代码管理
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 Git 和 GitHub 来跟踪代码更改，并在需要时将其还原。
-ms.date: 03/22/2021
+ms.date: 04/01/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 15e3c08606edf0e491785ba8599c5eb07c6b4551
-ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
+ms.openlocfilehash: 6e4bed3201a48975e9da266794f085f78be6d68c
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105006856"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106215573"
 ---
 # <a name="how-visual-studio-makes-source-control-easy"></a>Visual Studio 如何简化源代码管理
 
@@ -51,5 +51,6 @@ Visual Studio 中的 Git 集成通过提供上下文帮助并提示你执行正�
 
 ## <a name="see-also"></a>请参阅
 
+- [Visual Studio 中的 Git 和 GitHub 入门](/learn/modules/visual-studio-github-push/)
 - [Visual Studio 中的 Git 新体验](git-with-visual-studio.md)
 - [并行比较 Git 和团队资源管理器](git-team-explorer-feature-comparison.md)

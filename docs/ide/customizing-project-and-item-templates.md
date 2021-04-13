@@ -1,8 +1,8 @@
 ---
 title: 自定义项目和项模板
 description: 了解创建项目和项模板后如何对其进行自定义。
-ms.custom: SEO-VS-2020
-ms.date: 01/02/2018
+ms.custom: SEO-VS-2021
+ms.date: 03/29/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - customizing templates [Visual Studio]
@@ -10,12 +10,12 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 332e894372c05361ec162a3e046bd675a54b04a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
+ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954405"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105933779"
 ---
 # <a name="customize-project-and-item-templates"></a>自定义项目和项模板
 
@@ -45,3 +45,5 @@ ms.locfileid: "99954405"
 - [如何：创建项模板](../ide/how-to-create-item-templates.md)
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>
+- [使用 `dotnet new` 命令自定义模板](/dotnet/core/tools/custom-templates/)
+- [使用 `dotnet sln` 命令在 .NET 解决方案文件中列出或修改项目](/dotnet/core/tools/dotnet-sln/)
