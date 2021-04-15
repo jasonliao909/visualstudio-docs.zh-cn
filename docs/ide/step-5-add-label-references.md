@@ -10,17 +10,17 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: d418350c-0396-494e-8149-71fa61b395c5
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 316db91ac00ca9e18b9c0875340d2358b8955bed
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 393f71c3360371122e86dc078aaa97c6963db325
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214221"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296269"
 ---
 # <a name="step-5-add-label-references"></a>步骤 5：添加标签引用
 该程序需要跟踪玩家选择了哪些 Label 控件。 现在，该程序将显示玩家选择的所有标签。 但是，我们要更改这一行为。 在选择第一个标签后，该程序应显示该标签的图标。 在选择第二个标签后，该程序应短暂显示两个图标，然后再隐藏这两个图标。 程序现将通过引用变量跟踪第一次和第二次分别选择的 Label 控件。

@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 75c06082a34f5dd3248024f1707cb188107863c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b676fe015f5f513a069ffaf6ae4fac59c1a5fa68
+ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964883"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106213896"
 ---
 # <a name="build-loggers"></a>生成记录器
 
@@ -36,19 +36,19 @@ ms.locfileid: "99964883"
 
 记录器的目的是收集有关生成进度的信息（正如生成引擎所报告的信息），随后以有用的方式报告该信息。 所有记录器都必须重写 <xref:Microsoft.Build.Utilities.Logger.Initialize%2A> 方法，即记录器用于注册事件的位置。 在此示例中，记录器注册 <xref:Microsoft.Build.Framework.IEventSource.TargetStarted>、<xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 和 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 事件。
 
-[!code-csharp[msbuild_SimpleConsoleLogger#2](../msbuild/codesnippet/CSharp/build-loggers_1.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet2":::
 
 ## <a name="respond-to-events"></a>响应事件
 
 记录器注册特定事件后，这些事件出现时，记录器需要处理这些事件。 对于 <xref:Microsoft.Build.Framework.IEventSource.ProjectStarted> 和 <xref:Microsoft.Build.Framework.IEventSource.ProjectFinished> 事件，记录器只写入一个短语，以及事件涉及的项目文件的名称。 记录器中的所有消息都写入到控制台窗口。
 
-[!code-csharp[msbuild_SimpleConsoleLogger#3](../msbuild/codesnippet/CSharp/build-loggers_2.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet3":::
 
 ## <a name="respond-to-logger-verbosity-values"></a>响应记录器详细信息值
 
 在某些情况下，如果 MSBuild.exe -verbosity 开关包含特定值，建议仅记录事件信息。 在此示例中，仅当 verbosity 开关设置的 <xref:Microsoft.Build.Utilities.Logger.Verbosity%2A> 属性为 <xref:Microsoft.Build.Framework.LoggerVerbosity>`Detailed` 时，<xref:Microsoft.Build.Framework.IEventSource.TargetStarted> 事件处理程序才记录消息。
 
-[!code-csharp[msbuild_SimpleConsoleLogger#4](../msbuild/codesnippet/CSharp/build-loggers_3.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet4":::
 
 ## <a name="specify-a-logger"></a>指定记录器
 
@@ -74,7 +74,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ### <a name="code"></a>代码
 
-[!code-csharp[msbuild_SimpleConsoleLogger#1](../msbuild/codesnippet/CSharp/build-loggers_4.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_SimpleConsoleLogger/CS/msbuild_SimpleConsoleLogger.cs" id="Snippet1":::
 
 ## <a name="example-2"></a>示例 2
 
@@ -84,9 +84,9 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 ### <a name="code"></a>代码
 
-[!code-csharp[msbuild_BasicLogger#1](../msbuild/codesnippet/CSharp/build-loggers_5.cs)]
+:::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

@@ -6,19 +6,19 @@ ms.topic: tutorial
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a5ee86c98a7e66ac43cbcfb1abbcab6bf970b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 974696d1ff7f8e82dab8ef2024710ce645b56c72
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970915"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107297127"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 
@@ -47,9 +47,9 @@ ms.locfileid: "99970915"
 
 1. 打开 Visual Studio 2017。
 
-1. 从顶部菜单栏中选择“文件”>“新建”>“项目”    。
+1. 从顶部菜单栏中选择“文件” **“新建”** “项目”>  >  。
 
-1. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“Windows 桌面”    。 在中间窗格中，选择“Windows 窗体应用(.NET Framework)”  。 随后将文件命名为 `HelloWorld`。
+1. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“Windows 桌面”。 在中间窗格中，选择“Windows 窗体应用(.NET Framework)”  。 随后将文件命名为 `HelloWorld`。
 
      如果没有看到“Windows 窗体应用(.NET Framework)”  项目模板，则取消“新建项目”  对话框，然后在顶部菜单栏中依次选择“工具”   > “获取工具和功能”  。 Visual Studio 安装程序启动。 选择“.NET 桌面开发”工作负载，然后选择“修改”   。
 
@@ -65,9 +65,9 @@ ms.locfileid: "99970915"
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在“创建新项目”  窗口中，选择适用于 Visual Basic 的“Windows 窗体应用(.NET Framework)”  模板。
+1. 在“创建新项目”窗口中，选择适用于 Visual Basic 的“Windows 窗体应用(.NET Framework)”模板。
 
-   （如果愿意，你可以优化搜索以快速找到所需的模板。 例如，在搜索框中输入或键入“Windows 窗体应用”  。 接下来，从“语言”列表中选择“Visual Basic”  ，然后从“平台”列表中选择“Windows”  。）  
+   如果愿意，你可以优化搜索以快速找到所需的模板。 例如，在搜索框中输入或键入“Windows 窗体应用”  。 接下来，从“语言”列表中选择“Visual Basic”，然后从“平台”列表中选择“Windows”。）  
 
    ![为“Windows 窗体应用(.NET Framework)”选择 Visual Basic 模板](../get-started/visual-basic/media/vs-2019/vb-create-new-project-search-winforms-filtered.png)
 
@@ -96,25 +96,25 @@ ms.locfileid: "99970915"
 
 ### <a name="add-a-button-to-the-form"></a>向窗体添加按钮
 
-1. 单击“工具箱”，打开“工具箱”弹出窗口  。
+1. 单击“工具箱”，打开“工具箱”弹出窗口。
 
      ![单击“工具箱”，打开“工具箱”窗口](../ide/media/vb-toolbox-toolwindow.png)
 
      （如果看不到“工具箱”弹出选项，可从菜单栏打开  。 为此，请选择“视图”   > “工具箱”  。 或按 Ctrl+Alt+X。）   
 
-1. 单击“固定”图标，固定“工具箱”窗口   。
+1. 单击“固定”图标，固定“工具箱”窗口 。
 
      ![单击“固定”图标，将“工具箱”窗口固定到 IDE](../ide/media/vb-pin-the-toolbox-window.png)
 
-1. 单击“按钮”控件，然后将其拖到窗体上  。
+1. 单击“按钮”控件，然后将其拖到窗体上。
 
      ![向窗体添加按钮](../ide/media/vb-add-a-button-to-form1.png)
 
-1. 在“属性”  窗口的“外观”  （或“字体”  部分）部分，键入 `Click this`，然后按 Enter  。
+1. 在“属性”窗口的“外观”（或“字体”部分）部分，键入 `Click this`，然后按 Enter。
 
      ![向窗体上的按钮添加文本](../ide/media/vb-button-control-text.png)
 
-     （如果看不到“属性”窗口，可从菜单栏打开  。 若要执行此操作，请单击“视图” > “属性窗口”   。 或按 F4。） 
+     （如果看不到“属性”窗口，可从菜单栏打开  。 若要执行此操作，请单击“视图” > “属性窗口” 。 或按 F4。） 
 
 1. 在“属性”窗口的“设计”部分，将名称从“Button1”更改为 `btnClickThis`，然后按 Enter     。
 
@@ -133,23 +133,23 @@ ms.locfileid: "99970915"
 
 ### <a name="add-code-to-the-form"></a>向窗体添加代码
 
-1. 在“Form1.vb [设计]”窗口中，双击“单击此处”按钮，打开“Form1.vb”窗口    。
+1. 在“Form1.vb [设计]”窗口中，双击“单击此处”按钮，打开“Form1.vb”窗口。
 
-      （或者，可在解决方案资源管理器中展开“Form1.vb”，然后单击“Form1”。    ）
+      （或者，可在解决方案资源管理器中展开“Form1.vb”，然后单击“Form1”。）
 
-1. 在“Form1.vb”  窗口中，在“Private Sub”  和“End Sub”  行之间，键入或输入 `lblHelloWorld.Text = "Hello World!"`，如以下屏幕截图所示：
+1. 在“Form1.vb”窗口中，在“Private Sub”和“End Sub”行之间，键入或输入 `lblHelloWorld.Text = "Hello World!"`，如以下屏幕截图所示：
 
      ![向窗体添加代码](../ide/media/vb-add-code-to-the-form.png)
 
 ## <a name="run-the-application"></a>运行此应用程序
 
-1. 单击“启动”按钮运行应用程序  。
+1. 单击“启动”按钮运行应用程序。
 
      ![单击“启动”，调试和运行应用](../ide/media/vb-click-start-hello-world.png)
 
    将出现以下几种情况。 在 Visual Studio IDE 中，“诊断工具”窗口打开，同时还会打开一个“输出”窗口   。 在 IDE 外部，会出现一个“Form1”对话框  。 其中包含“单击此处”按钮和显示“Label1”的文本   。
 
-1. 单击“Form1”对话框中的“单击此处”按钮   。 请注意，“Label1”文本会更改为“Hello World!”   。
+1. 单击“Form1”对话框中的“单击此处”按钮。 请注意，“Label1”文本会更改为“Hello World!”   。
 
     ![包含 Label1 文本的“Form1”对话框 ](../ide/media/vb-form1-dialog-hello-world.png)
 

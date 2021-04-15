@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Enterprise 指南
 description: 在企业环境中安装 Visual Studio 并对其进行故障排除。
-ms.date: 07/29/2020
+ms.date: 04/06/2021
 ms.custom: seodec18
 ms.topic: overview
 helpviewer_keywords:
@@ -16,18 +16,20 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e653d7ae5f2408fd8438cbdf69a28648c6bcc446
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e5e8a28ac89c2bea85aee8323060bf948266ad2e
+ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967106"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "106547383"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio Enterprise 指南
 如果你想节省在 Visual Studio 上正常运行公司业务的时间，请阅读本文。 本企业指南提供了一些提示，可帮助你在常见的企业场景中安装和更新 Visual Studio、在遇到问题时解决问题，并了解如何在需要更多帮助的情况下报告问题。 
 
 ## <a name="get-started"></a>入门 
-了解如何在联网和脱机环境中将 Visual Studio 部署到企业。 
+了解如何在联网和脱机环境中将 Visual Studio 部署到企业。
+
+- [使用 Microsoft Endpoint Configuration Manager (SCCM) 启用管理员更新](enabling-administrator-updates.md)。  Visual Studio 更新包含在 [Microsoft 更新目录](https://www.catalog.update.microsoft.com/Home.aspx)和 [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) 中。 然后，企业管理员可以下载更新并使用标准部署工具（如 Microsoft Endpoint Configuration Manager (SCCM)）跨组织将其分发到 Visual Studio 客户端计算机。
 
 - **了解联网环境中的企业部署选项**。 [Visual Studio 管理员指南](visual-studio-administrator-guide.md)为系统管理员提供基于应用场景的指南。 
 
@@ -43,17 +45,19 @@ ms.locfileid: "99967106"
 
 了解如何在常见的企业应用场景中安装 Visual Studio。 
 
-- **[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)** 。 使用各种参数来控制或自定义 Visual Studio 安装。 自动执行安装过程，或创建安装文件的缓存供以后使用。 
+- **[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)** 。 使用各种参数来控制或自定义 Visual Studio 安装。 自动执行安装过程，或创建安装文件的缓存供以后使用。 有关详细信息，请参阅[命令行参数示例](command-line-parameter-examples.md)。
 
-- **参阅 [Visual Studio 安装命令行参数示例](command-line-parameter-examples.md)** 。 为了说明如何使用命令行参数来安装 Visual Studio，请查看多个示例，你可以根据自己的需求自定义这些示例。 
+- **[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)** . 将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。 
 
 - **[在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务](install-and-use-visual-studio-behind-a-firewall-or-proxy-server.md)** 。 如果你的组织使用防火墙或代理服务器等安全措施，则包含有可能需要将其添加到“允许列表”的域 URL，以及可能需要打开的端口和协议，以便在安装和使用 Visual Studio 以及 Azure 服务时获得最佳体验。 
 
-- **[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)** . 将初始安装的相关文件以及所有产品更新缓存到一个文件夹中。  
+- [安装脱机安装所需的证书](../install/install-certificates-for-visual-studio-offline.md)。 如果客户端计算机已与 Internet 完全断开连接，则安装所需的证书。
 
 ## <a name="update-visual-studio"></a>更新 Visual Studio 
 
 了解如何成功更新 Visual Studio 并修复更新问题。 
+
+- [使用 Microsoft Endpoint Configuration Manager (SCCM) 应用管理员更新](../install/applying-administrator-updates.md)。 了解如何通过 SCCM 分发 Visual Studio 功能、安全性和质量更新。 
 
 - **[更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)** 。 使用最新的产品更新来更新 Visual Studio 的网络安装布局，以便将它用作 Visual Studio 最新更新的安装点，同时还可用于维护已部署到客户端工作站的安装。
 
@@ -70,3 +74,4 @@ ms.locfileid: "99967106"
 ## <a name="see-also"></a>请参阅 
 
 - [Visual Studio 实用指南](../ide/productivity-features.md)
+

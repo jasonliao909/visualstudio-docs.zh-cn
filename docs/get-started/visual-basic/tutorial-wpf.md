@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - VB
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 00b8488682674b2531bac561e9f2536e616800fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f337551c16aa63b606c10492bab9956a92cbe141
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944363"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295424"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
@@ -259,13 +259,13 @@ IsChecked="True"
 
  现在关闭应用程序窗口，停止调试。
 
-### <a name="debug-with-breakpoints"></a>使用断点进行调试
+### <a name="debug-with-breakpoints&quot;></a>使用断点进行调试
 
 可通过添加一些断点，在调试期间测试代码。 可以通过选择“调试” > “切换断点”、通过在编辑器中想要添加断点的代码行旁边的左边距中单击或按 F9 来添加断点。
 
-#### <a name="add-breakpoints"></a>添加断点
+#### <a name=&quot;add-breakpoints&quot;></a>添加断点
 
-1. 打开“Greetings.xaml.vb”，并选择以下行：`MessageBox.Show("Hello.")`
+1. 打开“Greetings.xaml.vb”，并选择以下行：`MessageBox.Show(&quot;Hello.")`
 
 2. 通过按 F9 或从菜单选择“调试”，然后选择“切换断点”添加断点。
 

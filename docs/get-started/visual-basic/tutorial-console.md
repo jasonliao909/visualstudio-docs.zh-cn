@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 70782687b6220adf1c61c5b2bb6487d68fde70f4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682633"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295489"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -99,7 +99,7 @@ ms.locfileid: "101682633"
    >
    > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 之后，在 Visual Studio 安装程序中选择“修改”按钮。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“下一步”。
 

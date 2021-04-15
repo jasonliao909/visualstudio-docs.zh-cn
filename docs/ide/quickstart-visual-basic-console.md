@@ -7,19 +7,19 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 34b412d254d0775b57f2c9befaae71ce25c6ae75
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 3a103c672b6539f5893cf52a6e83acde6c87176d
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683852"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107296633"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 
@@ -87,7 +87,7 @@ ms.locfileid: "101683852"
    >
    > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
-   > 之后，在 Visual Studio 安装程序中选择“修改”按钮。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“下一步”。
 
@@ -113,14 +113,14 @@ ms.locfileid: "101683852"
 
 进行此操作时，控制台窗口短暂出现后就会关闭。 这是因为 `Main` 方法在执行其单个语句后就会终止，应用程序因而结束。
 
-### <a name="add-some-code"></a>添加一些代码
+### <a name="add-some-code&quot;></a>添加一些代码
 
 先添加一些代码来暂停应用程序，然后请求用户输入。
 
 1. 在 <xref:System.Console.WriteLine%2A> 方法调用后面紧接着添加以下代码：
 
    ```vb
-   Console.Write("Press any key to continue...")
+   Console.Write(&quot;Press any key to continue...")
    Console.ReadKey(true)
    ```
 

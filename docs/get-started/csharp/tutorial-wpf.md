@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1f3232ad0a8b7cc34abbe6d49c05944c066226da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 419fa05ae510f3dc22ce82c3805f9f54b4e53b27
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682884"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295567"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 
@@ -293,13 +293,13 @@ Visual Studio 将创建 HelloWPFApp 项目和解决方案，“解决方案资�
 
 现在关闭应用程序窗口，停止调试。
 
-### <a name="debug-with-breakpoints"></a>使用断点进行调试
+### <a name="debug-with-breakpoints&quot;></a>使用断点进行调试
 
 可通过添加一些断点，在调试期间测试代码。 可以通过选择“调试” > “切换断点”、通过在编辑器中想要添加断点的代码行旁边的左边距中单击或按 F9 来添加断点。
 
-#### <a name="add-breakpoints"></a>添加断点
+#### <a name=&quot;add-breakpoints&quot;></a>添加断点
 
-1. 打开“Greetings.xaml.cs”，并选择以下行：`MessageBox.Show("Hello.")`
+1. 打开“Greetings.xaml.cs”，并选择以下行：`MessageBox.Show(&quot;Hello.")`
 
 1. 通过选择 **“调试”** -&gt; **“切换断点”** ，从菜单中添加断点。
 
