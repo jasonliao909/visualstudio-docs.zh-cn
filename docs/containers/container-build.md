@@ -3,15 +3,15 @@ title: Visual Studio 容器工具生成和调试概述
 author: ghogen
 description: 容器工具生成和调试过程概述
 ms.author: ghogen
-ms.date: 11/20/2019
+ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: conceptual
-ms.openlocfilehash: 07ecc9a171cf6c0ca254ddbf284f116545ddd0f0
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
+ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884078"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107315948"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何构建容器化应用
 
@@ -26,7 +26,7 @@ Visual Studio 生成不使用 Docker 容器的项目时，它会在本地计算�
 使用多阶段生成功能，可以在生成中间映像的阶段创建容器映像。 例如，请考虑 Visual Studio 生成的典型 Dockerfile - 第一阶段为 `base`：
 
 ```
-FROM mcr.microsoft.com/dotnet/core/aspnet:2.2-stretch-slim AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-buster-slim AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
@@ -37,24 +37,24 @@ Dockerfile 中的行以 Microsoft 容器注册表 (mcr.microsoft.com) 中的 Deb
 下一阶段是 `build`，其显示如下：
 
 ```
-FROM mcr.microsoft.com/dotnet/core/sdk:2.2-stretch AS build
+FROM mcr.microsoft.com/dotnet/sdk:3.1-buster-slim AS build
 WORKDIR /src
 COPY ["WebApplication43/WebApplication43.csproj", "WebApplication43/"]
 RUN dotnet restore "WebApplication43/WebApplication43.csproj"
 COPY . .
 WORKDIR "/src/WebApplication43"
-RUN dotnet build "WebApplication43.csproj" -c Release -o /app
+RUN dotnet build "WebApplication43.csproj" -c Release -o /app/build
 ```
 
 你可以看到，`build` 阶段是从注册表（`sdk` 而不是 `aspnet`）中的其他原始映像开始，而不是从基础映像继续。  `sdk` 映像包含所有生成工具，因此，它比仅包含运行时组件的 aspnet 映像大得多。 如果看看 Dockerfile 的其余部分，你就会清楚使用单独映像的原因：
 
 ```
 FROM build AS publish
-RUN dotnet publish "WebApplication43.csproj" -c Release -o /app
+RUN dotnet publish "WebApplication43.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "WebApplication43.dll"]
 ```
 
