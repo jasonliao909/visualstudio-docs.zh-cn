@@ -10,18 +10,18 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: ac57b500685ae885d5cd68c5901a6ee2617462d0
-ms.sourcegitcommit: bbf532e50b9140724c1a0f66f9a35862bf6e4a97
+ms.openlocfilehash: 755574a0ae60b078a2ea5414e43e16c80c91fa67
+ms.sourcegitcommit: f6aa84e34c2f41877b84c01e7ead956a1b4c24f0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107291353"
+ms.lasthandoff: 04/15/2021
+ms.locfileid: "107512681"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 技术支持  
 
 Visual Studio 订阅支持提供有关销售、订阅、帐户和计费方面的帮助。 如果有 Visual Studio IDE 技术问题或疑问，则需要向 [Visual Studio 技术支持](https://visualstudio.microsoft.com/vs/support/)反馈问题。 在使用有限的 [Visual Studio 技术支持事件](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)（可能包含在 Visual Studio 订阅中）之前，建议你尝试一些其他联机资源。
 
-有关 Visual Studio 安装问题，请参阅 [Visual Studio 安装和升级问题疑难解答](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues?view=vs-2019)获取分步指南。 如需解决安装相关问题，还可以尝试[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
+有关 Visual Studio 安装问题，请参阅 [Visual Studio 安装和升级问题疑难解答](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues)获取分步指南。 如需解决安装相关问题，还可以尝试[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项。
 
 
 ## <a name="developer-community--visual-studio-ide"></a>开发者社区 | Visual Studio IDE
