@@ -5,21 +5,23 @@ ms.topic: include
 ms.assetid: eed8114a-651a-47e2-bb24-130acd2a76d0
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 8/14/2020
+ms.date: 4/16/2021
 user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 91014bf9e942d874316cf74b9631d23426a61ea1
-ms.sourcegitcommit: 645303f47a5258d4b65cc56bf9e2303865587e1e
+ms.openlocfilehash: 4481af6b1ff33df7542d230abba2d39964027d41
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/04/2021
-ms.locfileid: "99541082"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107589987"
 ---
 ## <a name="im-getting-an-error-while-trying-to-activate-my-azure-monthly-credit"></a>尝试激活 Azure 每月信用额度时遇到错误。
 
-对于与 Visual Studio 订阅相关联的每个 Azure 订阅，只能有一项 Azure 开发/测试个人信用权益。 如果此前激活了每月 Azure 额度，你可能会看到错误。 如果不确定是否已激活信用额度，请登录到 [Azure 门户](https://portal.azure.com/)以进行验证。 
+对于与 Visual Studio 订阅关联的每个 Azure 订阅，只能有一项每月 Azure 开发/测试个人额度权益。 如果此前激活了每月 Azure 额度，你可能会看到错误。 如果不确定是否已激活信用额度，请登录到 [Azure 门户](https://portal.azure.com/)以进行验证。 
+
+如果你具有新的 Visual Studio 订阅，并收到“无法多次激活此 Visual Studio 权益”错误，请在尝试激活 Azure 每月额度权益时，单击此解决方案底部的“创建支持票证”按钮来联系 Visual Studio 订阅支持部门。 
 
 ## <a name="verify-your-email"></a>验证电子邮件 
 
