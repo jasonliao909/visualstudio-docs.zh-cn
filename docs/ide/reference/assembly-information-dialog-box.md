@@ -14,18 +14,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d1ed2fd5fe9e49ab947752f84accb326499392fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836417"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107295437"
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 
 “程序集信息”对话框用于指定 .NET Framework 全局程序集特性的值，这些特性存储在为你的项目自动创建的 AssemblyInfo 文件中。 在“解决方案资源管理器”中，对于 Visual Basic 项目，AssemblyInfo 文件位于“我的项目”节点中（单击“显示所有文件”可以查看它）。 对于 C# 项目，该文件位于“属性”下。 有关详细信息，请参阅[特性 (C#)](/dotnet/csharp/programming-guide/concepts/attributes/index)。
 
-若要访问此对话框，请在“解决方案资源管理器”中选择项目节点，然后在“项目”菜单上选择“属性”。在“应用程序”页上，选择“程序集信息”按钮。
+若要访问此对话框，请在“解决方案资源管理器”中选择项目节点，然后选择“项目”菜单上的“属性”。 在“应用程序”页上，选择“程序集信息”按钮。
 
 ## <a name="uielement-list"></a>UIElement 列表
 
@@ -65,7 +65,7 @@ ms.locfileid: "99836417"
 指定程序集中的类型是否可由 COM 使用。 对应到 <xref:System.Runtime.InteropServices.ComVisibleAttribute>。
 
 > [!NOTE]
-> 有关在 .NET Framework 类库中生成 NuGet 包时设置这些属性的详细信息，请参阅[配置包的项目属性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。
+> 有关在 .NET Framework 类库中生成 NuGet 包时设置这些属性的详细信息，请参阅[配置包的项目属性](/nuget/quickstart/create-and-publish-a-package-using-visual-studio-net-framework#configure-project-properties-for-the-package)。 有关与 NuGet 包相关的授权和表达式的详细信息，请参阅 [licenses.nuget.org](/nuget/nuget-org/licenses.nuget.org/)。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -17,12 +17,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 46eae980a1dafc8e9b7f95f5d40593e57045cc01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
+ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971318"
+ms.lasthandoff: 04/09/2021
+ms.locfileid: "107221713"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
 
@@ -68,7 +68,7 @@ IntelliSense 的许多方面只支持特定语言。 有关不同语言的 Intel
 
 ![C&#35; 代码文件中的参数信息](../ide/media/vs2015_paraminfo.png)
 
-可通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+I 或选择编辑器工具栏上的“快速信息”，手动调用“快速信息”。
+可通过选择“编辑” > “IntelliSense” > “参数信息”、按 Ctrl+K、Ctrl+I 或选择编辑器工具栏上的“快速信息”，手动调用“快速信息”       。
 
 对于重载函数，Intellisense 可能不会显示重载的所有形式的信息。
 
@@ -93,7 +93,7 @@ IntelliSense 中的图标可以通过图标修饰符传达其他含义。 它们
 | ![内部图标修饰符](../ide/media/intellisenseInternalModifier.png)       |    内部类    |    访问限于当前程序集。    |
 |![私有图标修饰符](../ide/media/intellisensePrivateModifier.png)        |    私有类    |    访问限于包含类或当前程序集中派生自包含类的类型。 （自 C# 7.2 之后可用。）    |
 
-## <a name="troubleshoot-intellisense"></a>IntelliSense 故障排除
+## <a name="troubleshoot-intellisense&quot;></a>IntelliSense 故障排除
 
 在某些情况下，IntelliSense 选项可能不会像预期那样工作。
 
@@ -104,7 +104,7 @@ IntelliSense 中的图标可以通过图标修饰符传达其他含义。 它们
 **游标位于字符串文本中。** 如果游标位于字符串周围的引号中，你将无法使用 IntelliSense，如以下示例所示：
 
 ```cpp
-MessageBox( hWnd, "String literal|")
+MessageBox( hWnd, &quot;String literal|")
 ```
 
 **自动选项关闭。** 默认情况下，IntelliSense 会自动运行，但你可以禁用它。 即使禁用了自动语句完成，仍然可以调用 IntelliSense 功能。
