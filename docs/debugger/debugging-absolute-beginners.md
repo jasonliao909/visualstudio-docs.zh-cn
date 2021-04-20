@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d57fa806ae565d0752fb9970c3f335295e83535
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: ee849354d82b11b8d94a737a2b546f686d04d34a
+ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684219"
+ms.lasthandoff: 04/14/2021
+ms.locfileid: "107386032"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -70,7 +70,7 @@ ms.locfileid: "101684219"
 
 在 Visual Studio 中，可通过单击代码行旁边的左边距来快速设置断点。 或将光标置于行并按 F9  。
 
-为了帮助说明这些概念，我们将介绍一些已经存在多个 bug 的示例代码。 我们将使用 C#，但调试功能适用于 Visual Basic、C++、JavaScript、Python 和其他受支持的语言。
+为了帮助说明这些概念，我们将介绍一些已经存在多个 bug 的示例代码。 我们将使用 C#，但调试功能适用于 Visual Basic、C++、JavaScript、Python 和其他受支持的语言。 同时提供了 Visual Basic 的示例代码，但屏幕截图中显示的是 C# 的。
 
 ### <a name="create-a-sample-app-with-some-bugs"></a>创建示例应用（有一些 bug）
 
@@ -85,19 +85,21 @@ ms.locfileid: "101684219"
 1. 打开 Visual Studio。
 
     ::: moniker range=">=vs-2019"
-    在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，选择“C#”作为语言，然后对 .NET Core 选择“控制台应用”  。 选择“下一步”。 键入项目名称（如 ConsoleApp FirstApp），然后单击“下一步” 。
+    在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，选择“C#”或“Visual Basic”作为语言，然后对 .NET Core 选择“控制台应用”   。 选择“下一步”。 键入项目名称（如 ConsoleApp_FirstApp），然后单击“下一步” 。
 
     选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“控制台应用”，然后在中间窗格中选择一个“控制台应用(.NET Core)”   。 键入名称（如 ConsoleApp-FirstApp），然后单击“确定”   。
+    从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，在“Visual C#”或“Visual Basic”下，选择“控制台应用”，然后在中间窗格中选择一个“控制台应用(.NET Core)”    。 键入名称（如 ConsoleApp_FirstApp），然后单击“确定” 。
     ::: moniker-end
 
     如果没有看到 .NET Core 的“控制台应用”项目模板，请转到 “工具” > “获取工具和功能”，这会打开 Visual Studio 安装程序。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
 
     Visual Studio 创建控制台项目，该项目显示在右窗格的“解决方案资源管理器”中。
 
-1. 在 Program.cs 中，使用以下代码替换所有默认代码  ：
+1. 在 Program.cs（或 Program.vb）中，使用以下代码替换所有默认代码 。 （首先选择正确的语言选项卡，可以是“C#”或“Visual Basic”。）
+
+   #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     using System;
@@ -178,6 +180,109 @@ ms.locfileid: "101684219"
     }
     ```
 
+   #### <a name="visual-basic"></a>Visual Basic
+
+    ```vb
+    Imports System
+    Imports System.Collections.Generic
+
+    Namespace ConsoleApp_FirstApp
+        Friend Class Program
+            Public Shared Sub Main(ByVal args As String())
+                Console.WriteLine("Welcome to Galaxy News!")
+                Call IterateThroughList()
+                Console.ReadKey()
+            End Sub
+
+            Private Shared Sub IterateThroughList()
+                Dim theGalaxies = New List(Of Galaxy) From {
+                    New Galaxy() With {
+                        .Name = "Tadpole",
+                        .MegaLightYears = 400,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Pinwheel",
+                        .MegaLightYears = 25,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Cartwheel",
+                        .MegaLightYears = 500,
+                        .GalaxyType = New GType("L"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Small Magellanic Cloud",
+                        .MegaLightYears = 0.2,
+                        .GalaxyType = New GType("I"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Andromeda",
+                        .MegaLightYears = 3,
+                        .GalaxyType = New GType("S"c)
+                    },
+                    New Galaxy() With {
+                        .Name = "Maffei 1",
+                        .MegaLightYears = 11,
+                        .GalaxyType = New GType("E"c)
+                    }
+                }
+    
+                For Each theGalaxy As Galaxy In theGalaxies
+                    Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+                Next
+
+            End Sub
+        End Class
+    
+        Public Class Galaxy
+            Public Property Name As String
+            Public Property MegaLightYears As Double
+            Public Property GalaxyType As Object
+        End Class
+    
+        Public Class GType
+    
+            Shared Operator &(ByVal left As String, ByVal right As GType) As String
+                Return New String(left & right.ToString())
+            End Operator
+            Public Sub New(ByVal type As Char)
+                Select Case type
+                    Case "S"c
+                        MyGType = GType.Type.Spiral
+                    Case "E"c
+                        MyGType = GType.Type.Elliptical
+                    Case "l"c
+                        MyGType = GType.Type.Irregular
+                    Case "L"c
+                        MyGType = GType.Type.Lenticular
+                    Case Else
+                End Select
+    
+            End Sub
+    
+            Private _MyGType As String
+            Public Property MyGType As Object
+                Get
+                    Return _MyGType
+                End Get
+                Set(ByVal value As Object)
+                    _MyGType = value.ToString()
+                End Set
+            End Property
+    
+            Private Enum Type
+                Spiral
+                Elliptical
+                Irregular
+                Lenticular
+            End Enum
+        End Class
+    End Namespace
+    ```
+
+    ---
+
     我们使用此代码的目的是在列表中显示星系名称、与星系的距离以及星系类型。 若要进行调试，了解代码的含义非常重要。 以下是要在输出中显示的列表中某行的格式：
 
     星系名称、距离和星系类型    。
@@ -214,6 +319,8 @@ ms.locfileid: "101684219"
 
 1. 在应用仍在运行的情况下，通过单击此代码行中 `Console.WriteLine` 方法调用旁边的左边距来设置断点。
 
+    #### <a name="c"></a>[C#](#tab/csharp)
+
     ```csharp
     foreach (Galaxy theGalaxy in theGalaxies)
     {
@@ -221,6 +328,15 @@ ms.locfileid: "101684219"
     }
     ```
 
+    #### <a name="visual-basic"></a>Visual Basic
+
+    ```vb
+    For Each theGalaxy As Galaxy In theGalaxies
+        Console.WriteLine(theGalaxy.Name & "  " & theGalaxy.MegaLightYears & ",  " & theGalaxy.GalaxyType)
+    Next
+    ```
+
+    ---
     设置断点时，左边距会显示红点。
 
     由于在输出中发现问题，因此将通过查看前面在调试程序中设置输出的代码来开始进行调试。
@@ -235,9 +351,12 @@ ms.locfileid: "101684219"
 
     “螺旋”实际上是想要打印到控制台的正确值！ 因此，运行应用时，可以在此代码中访问此值，这是一个良好的开端。 在这种情况下，我们使用的 API 不正确。 在调试程序中运行代码时，我们将查看是否可解决此问题。
 
-1. 在相同的代码中进行调试时，将光标放在 `theGalaxy.GalaxyType` 的末尾并将其更改为 `theGalaxy.GalaxyType.MyGType`。 虽然可进行此更改，但代码编辑器会显示一条错误，指示无法编译此代码。
+1. 在相同的代码中进行调试时，将光标放在 `theGalaxy.GalaxyType` 的末尾并将其更改为 `theGalaxy.GalaxyType.MyGType`。 虽然可进行此更改，但代码编辑器会显示一条错误，指示无法编译此代码。 （Visual Basic 中不会出现此错误，且此部分代码会正常运行）
 
     ![Visual Studio 调试器的屏幕截图，其中以红色突出显示了一个代码行，并显示了一个“编辑并继续”消息框，其中“编辑”按钮处于选中状态。](../debugger/media/beginners-edit.png)
+
+   > [!NOTE]
+   > 若要调试 Visual Basic 示例代码，需跳过接下来几个步骤，直到系统指示单击“重新启动”![重新启动应用](../debugger/media/dbg-tour-restart.png "重启应用")按钮。
 
 1. 单击“编辑并继续”消息框中的“编辑”   。 现在在“错误列表”窗口中出现一条错误消息  。 该错误表示 `'object'` 不包含 `MyGType` 的定义。
 
@@ -274,11 +393,21 @@ ms.locfileid: "101684219"
     Maffei 1,  Elliptical
     ```
 
-1. 在此代码行上设置断点。
+1. 在这一行代码上的 switch 语句之前（Visual Basic 中的 Select 语句之前）设置断点。
+
+    #### <a name="c"></a>[C#](#tab/csharp)
 
     ```csharp
     public GType(char type)
     ```
+
+    #### <a name="visual-basic"></a>Visual Basic
+
+    ```vb
+    Public Sub New(ByVal type As Char)
+    ```
+
+    ---
 
     此代码是设置星系类型的位置，因此，我们想要更详细地介绍它。
 
@@ -296,7 +425,7 @@ ms.locfileid: "101684219"
 
     F11 一次调试一个语句（并执行代码）  。 F10（“单步跳过”）是类似的命令，在学习如何使用调试程序时两者都非常有用   。
 
-1. 按 F11，直到 `switch` 语句中的代码行的值为“I”时停止  。 此处，你将看到拼写错误导致的明显问题。 预期代码转到其 `MyGType` 设置为不规则星系类型的位置，但调试程序会完全跳过此代码并在 `switch` 语句的 `default` 部分上暂停。
+1. 按 F11，直到在代码行的 `switch` 语句中遇到“I”值时停止（Visual Basic 中的 `Select` 语句）。 此处，你将看到拼写错误导致的明显问题。 预期代码转到其 `MyGType` 设置为不规则星系类型的位置，但调试程序会完全跳过此代码并在 `switch` 语句的 `default` 部分上暂停（Visual Basic 中的 `Else` 语句）。
 
     ![查找拼写错误](../debugger/media/beginners-typo.png)
 

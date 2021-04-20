@@ -2,19 +2,19 @@
 title: 自定义 IDE
 description: 了解如何对 Visual Studio IDE 进行个性化设置，以为自己的开发风格和需求提供最佳支持。
 ms.custom: SEO-VS-2020
-ms.date: 11/20/2017
+ms.date: 04/12/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 550ab6449cc74d3d0d81d60a41b11f0273003c51
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
+ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909019"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107373162"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 
@@ -40,7 +40,7 @@ ms.locfileid: "99909019"
 
 ## <a name="environment-color-themes"></a>环境颜色主题
 
-要在浅色、深色和蓝色之间更改颜色主题，请在搜索框中键入“环境”，然后选择“环境”>“常规”。 在“选项”对话框中，更改“颜色主题”选项。
+要在“浅色”、“深色”、“蓝色”以及“蓝色（额外对比度）”之间更改颜色主题，请在搜索框中选择“环境”>“常规” 。 在“选项”对话框中，更改“颜色主题”选项。
 
 要更改编辑器中的着色选项，请在搜索框中键入“环境”，然后选择“环境”>“字体和颜色”。 请参阅[如何：更改字体和颜色](../ide/how-to-change-fonts-and-colors-in-visual-studio.md)
 

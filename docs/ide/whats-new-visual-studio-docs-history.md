@@ -15,16 +15,62 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: bbad51f6d06c221118ffda01e1c7e93374eea2ff
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
+ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622564"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107031588"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 中的新增功能历史记录文档
 
-欢迎了解 Visual Studio 文档中的新增功能历史记录。本文包含 2021 年 2 月之前（从 2020 年 7 月开始）对文档所做的主要更改。 有关最新的新增功能，请参阅 [Visual Studio 文档：文档中的新增功能](whats-new-visual-studio-docs.md)。
+欢迎了解 Visual Studio 文档中的新增功能历史记录。本文包含 2021 年 3 月之前（从 2020 年 7 月开始）对文档所做的主要更改。 有关最新的新增功能，请参阅 [Visual Studio 文档：文档中的新增功能](whats-new-visual-studio-docs.md)。
+
+## <a name="february-2021"></a>2021 年 2 月
+
+### <a name="debugger"></a>调试器
+
+**更新的文章**
+
+- [在 Visual Studio 调试器中使用断点](../debugger/using-breakpoints.md) - 可访问性更新
+
+### <a name="get-started"></a>入门
+
+**更新的文章**
+
+- [教程：在 Visual Studio 2017 中从存储库打开项目](../get-started/tutorial-open-project-from-repo-visual-studio-2017.md) - 更新 VS2017“从存储库打开项目”中的“另请参阅”链接
+- [教程：从存储库打开项目](../get-started/tutorial-open-project-from-repo-visual-studio-2019.md) - 添加“从存储库打开项目”页面 VS2017 版本的链接
+
+### <a name="ide"></a>IDE
+
+**更新的文章**
+
+- [对 MSBuild 问题进行故障排除并为其创建日志](./msbuild-logs.md) - 添加有关使用项目系统工具扩展的说明
+
+### <a name="install"></a>安装
+
+**更新的文章**
+
+- [使用最小脱机布局更新 Visual Studio](../install/update-minimal-layout.md)
+  - 在选项表中添加 2017 示例
+  - 添加 VS2017 的示例
+
+### <a name="msbuild"></a>MSBuild
+
+**新文章**
+
+- [MSB3644：找不到框架“FrameworkVersion”的引用程序集](../msbuild/errors/msb3644.md) - MSBuild 错误
+- [MSB8036：找不到 Windows SDK 版本“version”](../msbuild/errors/msb8036.md)- MSBuild 错误
+
+### <a name="test"></a>测试
+
+**更新的文章**
+
+- [在 Visual Studio 中使用适用于 C++ 的 Microsoft 单元测试框架](../test/how-to-use-microsoft-test-framework-for-cpp.md)  -少量内容刷新和编辑
+- [在 Visual Studio 中编写 C++ DLL 的单元测试](../test/how-to-write-unit-tests-for-cpp-dlls.md) - 少量内容刷新和编辑
+- [使用测试资源管理器运行单元测试](../test/run-unit-tests-with-test-explorer.md) - 辅助功能更新
+- [演练：创建并运行托管代码的单元测试](../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md) - 辅助功能更新
+- [用 Microsoft Fakes 隔离测试中的代码](../test/isolating-code-under-test-with-microsoft-fakes.md) - 在 Fakes 文档中显式提及 .NET 5.0
 
 ## <a name="january-2021"></a>2021 年 1 月
 ### <a name="azure"></a>Azure
