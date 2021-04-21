@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 43baafee82cf38dfd346ebe50e9b348857a3fdc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd977840cd75081d87011540ca00675fb84cee36
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920467"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828938"
 ---
 # <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何：以编程方式在联系人中搜索电子邮件地址
   以下示例将在联系人文件夹搜索电子邮件地址中具有域名 **example.com** 的联系人。
@@ -29,14 +29,14 @@ ms.locfileid: "99920467"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_OL_SearchEmail#1](../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchEmail/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
 - 电子邮件地址中具有域名 **example.com** （例如， `somebody@example.com`且具有的名字和姓氏的联系人。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
 - [如何：以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)

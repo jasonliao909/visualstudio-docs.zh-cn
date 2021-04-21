@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ae0f4982ca325970b8b7965c956a7d2dea4bf60f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9254aa5fd465c14e24133df59bbcee46f3c1acf4
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966664"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826897"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-excel"></a>演练：创建您的第一个 Excel 文档级自定义项
 
@@ -58,7 +58,7 @@ ms.locfileid: "99966664"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 ::: moniker range="vs-2017"
 3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -68,7 +68,7 @@ ms.locfileid: "99966664"
 
 6. 在 " **名称** " 框中，键入 **FirstWorkbookCustomization**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
 8. 从 " **Visual Studio Tools for Office 项目向导**" 中选择 "**创建新文档**"，然后单击 **"确定"**。
 ::: moniker-end
@@ -77,7 +77,7 @@ ms.locfileid: "99966664"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 单击 **“下一步”** 。
+4. 单击“下一步”。
 
 5. 在 "**配置新项目**" 对话框的 "**名称**" 框中键入 **FirstWorkbookCustomization** ，然后单击 "**创建**"。
 
@@ -140,8 +140,8 @@ ms.locfileid: "99966664"
 
 2. 将 `Sheet1_Startup` 事件处理程序替换为以下代码。 当打开 Sheet1 时，此代码将向工作表添加第二行文本。
 
-     [!code-csharp[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs#1)]
-     [!code-vb[Trin_ExcelWorkbookTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelWorkbookTutorial/Sheet1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelWorkbookTutorial/Sheet1.vb" id="Snippet1":::
 
 ## <a name="test-the-project"></a>测试项目
 

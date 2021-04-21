@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bcb13ec0e26b1668a397d56982d049bf9ebcceb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4fe056f70e0af03809b43d60968bd8a1a50bf08
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906551"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824479"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中调用 VBA 中的代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。
@@ -98,7 +98,7 @@ ms.locfileid: "99906551"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。 如果 IDE 设置为使用 Visual Basic 开发设置，请在 **“文件”** 菜单上，单击 **“新建项目”**。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。 如果 IDE 设置为使用 Visual Basic 开发设置，请在 **“文件”** 菜单上，单击 **“新建项目”**。
 
 3. 在模板窗格中，展开 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -108,13 +108,13 @@ ms.locfileid: "99906551"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
 8. 选择 **“复制现有文档”**，然后在 **“现有文档的完整路径”** 框中，指定先前创建的 **DocumentWithVBA** 文档的位置。 如果使用你自己的启用宏的文档，请改为指定此文档的位置。
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **DocumentWithVBA** 文档，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99906551"
 
 2. 将以下方法添加到 `ThisDocument` 类。 此方法将在文档的开头创建一个具有两行和两列的表格。 参数指定在第一行中显示的文本。 在本演练中，稍后将从文档中的 VBA 代码调用此方法。
 
-     [!code-vb[Trin_CallingVBCustomizationFromVBA#1](../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/CallingCodeFromVBA/ThisDocument.vb" id="Snippet1":::
 
 3. 生成项目。
 

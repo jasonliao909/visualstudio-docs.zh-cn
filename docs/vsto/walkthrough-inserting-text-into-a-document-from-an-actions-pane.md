@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c0f24c7270dc3c174be124506e1e36dafe7581f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ac42954e32b30a293abbe031218213948fb103a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937376"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824973"
 ---
 # <a name="walkthrough-insert-text-into-a-document-from-an-actions-pane"></a>演练：将文本从操作窗格插入到文档中
   本演练演示如何在 Microsoft Office Word 文档中创建操作窗格。 操作窗格包含两个控件，这些控件收集输入，然后将文本发送到文档。
@@ -133,7 +133,7 @@ ms.locfileid: "99937376"
     |属性|值|
     |--------------|-----------|
     |**名称**|**Shapes.addtext**|
-    |**Text**|**插入**|
+    |**Text**|插入|
 
 ## <a name="add-code-to-insert-text-into-the-document"></a>添加代码以在文档中插入文本
  在 "操作" 窗格中，编写将文本框中的文本插入 <xref:Microsoft.Office.Tools.Word.Bookmark> 文档中相应控件的代码。 您可以使用 `Globals` 类从 "操作" 窗格上的控件访问文档上的控件。 有关详细信息，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
@@ -142,12 +142,12 @@ ms.locfileid: "99937376"
 
 1. 将以下代码添加到 <xref:System.Windows.Forms.Control.Click> " **shapes.addtext** " 按钮的事件处理程序。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#8)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/InsertTextControl.vb" id="Snippet8":::
 
 2. 在 c # 中，必须为按钮单击添加一个事件处理程序。 可以在调用后将此代码放在 `InsertTextControl` 构造函数中 `InitializeComponent` 。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/InsertTextControl.cs" id="Snippet9":::
 
 ## <a name="add-code-to-show-the-actions-pane"></a>添加代码以显示操作窗格
  若要显示操作窗格，请将创建的控件添加到控件集合中。
@@ -156,13 +156,13 @@ ms.locfileid: "99937376"
 
 1. 在类中创建操作窗格控件的新实例 `ThisDocument` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#10)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet10":::
 
 2. 将以下代码添加到的 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件处理程序中 `ThisDocument` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet11":::
 
 ## <a name="test-the-application"></a>测试应用程序
  测试您的文档，以验证在打开文档时操作窗格是否打开，并且在单击该按钮时，将在文本框中键入的文本插入到书签中。

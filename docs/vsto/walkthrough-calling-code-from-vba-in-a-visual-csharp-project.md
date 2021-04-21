@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a026732f9b49107b8c113796251e1a2b916cf9a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906482"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824466"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>演练：在 Visual c # 项目中调用 VBA 中的代码
   此演练演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Microsoft Office Excel 文档级自定义项中的方法。 该过程包括三个基本步骤：向 `Sheet1` 主机项类添加方法、向工作簿中的 VBA 代码公开方法，然后从工作簿的 VBA 代码中调用该方法。
@@ -99,7 +99,7 @@ ms.locfileid: "99906482"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在模板窗格中，展开 **“Visual C#”**，然后展开 **“Office/SharePoint”**。
 
@@ -109,13 +109,13 @@ ms.locfileid: "99906482"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
 8. 选择 **“复制现有文档”**，然后在 **“现有文档的完整路径”** 框中，指定先前创建的 **WorkbookWithVBA** 工作薄的位置。 如果正在使用自己的启用宏的工作簿，则改为指定此工作簿的位置。
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **WorkbookWithVBA** 工作簿，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
 
@@ -161,15 +161,15 @@ ms.locfileid: "99906482"
 
 2. 将以下代码添加到 `Sheet1` 类。 `CreateVstoNamedRange` 方法在指定的范围创建一个新的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 对象。 此方法还会为 <xref:Microsoft.Office.Tools.Excel.NamedRange.Selected> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange>事件创建一个事件处理程序。 在本演练中，稍后将从文档的 VBA 代码中调用 `CreateVstoNamedRange` 方法。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#2](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet2":::
 
 3. 将以下方法添加到 `Sheet1` 类。 此方法将替代 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.GetAutomationObject%2A> 方法，以返回 `Sheet1` 类的当前实例。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#3](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet3":::
 
 4. 在 `Sheet1` 类声明的第一行前面应用下列特性。 这些特性使类对于 COM 可见，但不生成类接口。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#1](../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/Sheet1.cs" id="Snippet1":::
 
 ## <a name="extract-an-interface-for-the-sheet1-class"></a>提取 Sheet1 类的接口
  必须先创建一个定义 `CreateVstoNamedRange` 方法的公共接口，并向 COM 公开此接口，然后才可向 VBA 代码公开此方法。
@@ -182,13 +182,13 @@ ms.locfileid: "99906482"
 
 3. 在 **“提取接口”** 对话框中，在 **“选择构成接口的公共成员”** 框中，单击 `CreateVstoNamedRange` 方法项。
 
-4. 单击“确定”。
+4. 单击 **“确定”** 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会生成名为 `ISheet1`的新接口，并修改 `Sheet1` 的定义，以便实现 `ISheet1` 接口。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 还将在代码编辑器中打开 **ISheet1.cs** 文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会生成名为 `ISheet1`的新接口，并修改 `Sheet1` 的定义，以便实现 `ISheet1` 接口。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 还将在代码编辑器中打开 **ISheet1** 文件。
 
 5. 在 **ISheet1.cs** 文件中，将 `ISheet1` 接口声明替换为以下代码。 此代码使 `ISheet1` 接口成为公共接口，并且应用 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 特性使该接口对于 COM 可见。
 
-     [!code-csharp[Trin_CallingCSCustomizationFromVBA#4](../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/CallingCodeFromVBA/ISheet1.cs" id="Snippet4":::
 
 6. 生成项目。
 
@@ -248,7 +248,7 @@ ms.locfileid: "99906482"
 
 - 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅 [演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)
 - [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [如何：在 Visual Basic 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)

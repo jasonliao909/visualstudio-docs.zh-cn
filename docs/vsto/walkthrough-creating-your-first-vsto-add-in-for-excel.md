@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4449e286fed0572e2dfc1ed855daf834400bd4e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fcb2bcc91eb1d19309904caae16701b814113089
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966625"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824401"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-excel"></a>演练：创建你的第一个 Excel VSTO 外接程序
   本介绍性演练演示如何创建 Microsoft Office Excel 的应用程序级外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的工作簿无关。
@@ -56,7 +56,7 @@ ms.locfileid: "99966625"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -66,7 +66,7 @@ ms.locfileid: "99966625"
 
 6. 在 **“名称”** 框中，键入 **FirstExcelAddIn**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstExcelAddIn** 项目，并在编辑器中打开 ThisAddIn 代码文件。
 
@@ -83,12 +83,12 @@ ms.locfileid: "99966625"
 
     用户保存工作簿时，该事件处理程序会将新文本添加到活动工作簿的开头。
 
-    [!code-vb[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_ExcelAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. 如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_WorkbookBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件连接在一起。
 
-    [!code-csharp[Trin_ExcelAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
    为了在保存工作簿后对其进行修改，前面的代码示例使用了以下对象：
 
@@ -134,7 +134,7 @@ ms.locfileid: "99966625"
 
 - 部署 Excel 的 VSTO 外接程序： [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Excel 解决方案](../vsto/excel-solutions.md)
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
