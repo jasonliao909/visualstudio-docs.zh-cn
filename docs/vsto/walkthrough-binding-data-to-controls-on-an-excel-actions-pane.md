@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75df7a3a9ddfa6009b0002bfe83b57f2d91e6e0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 377c3405211c91712f8754131d8379c3dae7e820
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906567"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824544"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-an-excel-actions-pane"></a>演练：将数据绑定到 Excel 操作窗格上的控件
   本演练演示如何将数据绑定到 Microsoft Office Excel 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -77,7 +77,7 @@ ms.locfileid: "99906567"
 
 4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
 
-5. 单击 **“下一步”** 。
+5. 单击“下一步”。
 
 6. 清除该选项以保存连接（如果已选中），然后单击 " **下一步**"。
 
@@ -87,7 +87,7 @@ ms.locfileid: "99906567"
 
 9. 展开 **Products** 表，并选择 " **ProductName**"、" **供应商**"、" **QuantityPerUnit**" 和 " **单价**"。
 
-10. 单击“完成” 。
+10. 单击“完成”。
 
     向导将 " **供应商** 表和 **产品** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -142,29 +142,29 @@ ms.locfileid: "99906567"
 
 2. 将下面的代码添加到 <xref:System.Windows.Forms.UserControl.Load> 操作窗格控件的事件中。
 
-     [!code-vb[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet1":::
 
 3. 在 c # 中，必须为创建事件处理程序 `ActionsControl` 。 可以将此代码放在 `ActionsControl` 构造函数中。 有关创建事件处理程序的详细信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ActionsControl.cs" id="Snippet2":::
 
 ## <a name="show-the-actions-pane"></a>显示操作窗格
  在运行时添加控件之前，操作窗格不可见。
 
 #### <a name="to-show-the-actions-pane"></a>显示操作窗格
 
-1. 在 **解决方案资源管理器** 中，右键单击 " *ThisWorkbook* " 或 " *ThisWorkbook.cs*"，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " *ThisWorkbook* " 或 " *ThisWorkbook*"，然后单击 " **查看代码**"。
 
 2. 在类中创建用户控件的新实例 `ThisWorkbook` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#3)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet3":::
 
 3. 在的 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件处理程序中 `ThisWorkbook` ，将控件添加到 "操作" 窗格中。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#4)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet4":::
 
 ## <a name="test-the-application"></a>测试应用程序
  现在，你可以测试文档以验证在打开文档时操作窗格是否打开，以及控件是否具有主/从关系。
@@ -186,7 +186,7 @@ ms.locfileid: "99906567"
 
 - 部署项目。 有关详细信息，请参阅 [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

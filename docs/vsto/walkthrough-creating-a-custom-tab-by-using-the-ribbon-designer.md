@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b87113b47ee0dc4d296bb5e206d6d277394160c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962270"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824817"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。
@@ -68,7 +68,7 @@ ms.locfileid: "99962270"
 
 2. 在 " **添加新项** " 对话框中，选择 " **ActionsPaneControl**"，然后选择 " **添加**"。
 
-     **ActionsPaneControl1.cs** 或 **actionspanecontrol1.vb** 文件将在设计器中打开。
+     **Actionspanecontrol1.vb** 或 **actionspanecontrol1.vb** 文件将在设计器中打开。
 
 3. 从 "**工具箱**" 的 "**公共控件**" 选项卡中，将一个标签添加到设计器图面。
 
@@ -116,22 +116,22 @@ ms.locfileid: "99962270"
 
 ### <a name="to-hide-and-show-actions-panes-by-using-buttons-in-the-custom-tab"></a>使用自定义选项卡中的按钮隐藏和显示操作窗格
 
-1. 在 **解决方案资源管理器** 中，打开 *MyRibbon.cs* 或 *myribbon.vb* 的快捷菜单，然后选择 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，打开 *myribbon.vb* 或 *myribbon.vb* 的快捷菜单，然后选择 " **查看代码**"。
 
 2. 将下面的代码添加到 `MyRibbon` 类的顶部。 这段代码可以创建两个操作窗格对象。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#1)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet1":::
 
 3. 将 `MyRibbon_Load` 方法替换为以下代码。 这段代码会将操作窗格对象添加到 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 集合中，并在视图中这些隐藏对象。 Visual C# 代码还会将委托附加到多个功能区控件事件。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#2)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#2](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet2":::
 
 4. 将以下三个事件处理程序方法添加到 `MyRibbon` 类。 这些方法处理上述两个按钮 <xref:Microsoft.Office.Tools.Ribbon.RibbonButton.Click> 事件和切换按钮的 <xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton.Click> 事件。 button1 和 button2 的事件处理程序显示两个交替出现的操作窗格。 toggleButton1 的事件处理程序显示和隐藏活动操作窗格。
 
-     [!code-csharp[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs#3)]
-     [!code-vb[Trin_Ribbon_Custom_Tab#3](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab/MyRibbon.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>测试自定义选项卡
  运行该项目时，Excel 将开始，" **我的自定义选项** 卡" 选项卡将显示在功能区上。 选择 "我的 **自定义" 选项卡** 上的按钮以显示和隐藏操作窗格。

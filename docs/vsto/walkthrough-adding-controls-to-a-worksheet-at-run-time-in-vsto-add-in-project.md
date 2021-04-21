@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: bc6c608d406cabe6962a47dae4c86fa7503a05a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 178180e8c698ca56b15e46bcbe65877d68c6b2a1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921787"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824674"
 ---
 # <a name="walkthrough-add-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project"></a>演练：在运行时在 VSTO 外接程序项目中向工作表添加控件
   可通过使用 Excel VSTO 外接程序向任何打开的工作表添加控件。 本演练演示如何利用功能区使用户能够向工作表添加 <xref:Microsoft.Office.Tools.Excel.Controls.Button>、<xref:Microsoft.Office.Tools.Excel.NamedRange> 和 <xref:Microsoft.Office.Tools.Excel.ListObject>。 有关信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
@@ -65,7 +65,7 @@ ms.locfileid: "99921787"
 
 2. 在 " **添加新项** " 对话框中，选择 " **功能区 (可视化设计器")**，然后单击 " **添加**"。
 
-     在功能区设计器中打开名为 **Ribbon1.cs** 或 **ribbon1.mfcribbon-ms** 的文件，并显示默认选项卡和组。
+     在功能区设计器中打开名为 **ribbon1.mfcribbon-ms** 或 **ribbon1.mfcribbon-ms** 的文件，并显示默认选项卡和组。
 
 3. 从“工具箱”  的“Office 功能区控件” 选项卡中将“CheckBox”  控件拖到“group1” 上。
 
@@ -105,10 +105,10 @@ ms.locfileid: "99921787"
 
      此代码使用 `GetVstoObject` 方法获取表示工作薄中第一个工作表的主机项，然后将 <xref:Microsoft.Office.Tools.Excel.Controls.Button> 控件添加到当前选定的单元格。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#2)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#2](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet2":::
 
-3. 在 **解决方案资源管理器** 中，选择 " *Ribbon1.cs* " 或 " *ribbon1.mfcribbon-ms*"。
+3. 在 **解决方案资源管理器** 中，选择 " *ribbon1.mfcribbon-ms* " 或 " *ribbon1.mfcribbon-ms*"。
 
 4. 在 " **视图** " 菜单上，单击 " **设计器**"。
 
@@ -118,8 +118,8 @@ ms.locfileid: "99921787"
 
      此代码使用 `GetVstoObject` 方法获取表示工作簿中第一个工作表的主机项，然后为当前选定的单元格定义 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#3)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#3](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet3":::
 
 7. 在功能区设计器中，双击 " **ListObject**"。
 
@@ -127,31 +127,31 @@ ms.locfileid: "99921787"
 
      此代码使用 `GetVstoObject` 方法获取表示工作薄中第一个工作表的主机项，然后为当前选定的单元格定义 <xref:Microsoft.Office.Tools.Excel.ListObject>。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#4)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#4](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet4":::
 
 9. 将下面的语句添加到功能区代码文件的顶部。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs#1)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#1](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/Ribbon1.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/Ribbon1.vb" id="Snippet1":::
 
 ## <a name="remove-controls-from-the-worksheet"></a>从工作表中移除控件
  保存并关闭工作表时，不会保留控件。 保存工作表之前应以编程方式移除所有生成的 Windows 窗体控件，否则再次打开工作薄时，将仅出现控件的边框。 将代码添加到用于从生成的主机项的控件集合中移除 Windows 窗体控件的 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件中。 有关详细信息，请参阅 [在 Office 文档中保存动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
 ### <a name="to-remove-controls-from-the-worksheet"></a>若要从工作表中移除控件
 
-1. 在 **解决方案资源管理器** 中，选择 " *ThisAddIn.cs* " 或 " *ThisAddIn*"。
+1. 在 **解决方案资源管理器** 中，选择 " *ThisAddIn* " 或 " *ThisAddIn*"。
 
 2. 在 **“视图”** 菜单上，单击 **“代码”**。
 
 3. 将以下方法添加到 `ThisAddIn` 类。 此代码会获取工作簿中的第一个工作表，然后使用 `HasVstoObject` 方法检查该工作表是否含有生成的工作表项目。 如果生成的工作表对象中含有控件，则该代码会获取工作表项目并循环访问控件集合，从而移除控件。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#6)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#6](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet6":::
 
 4. 在 C# 中，必须为 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.WorkbookBeforeSave> 事件创建一个事件处理程序。 你可以将此代码放置在 `ThisAddIn_Startup` 方法中。 有关创建事件处理程序的详细信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。 将 `ThisAddIn_Startup` 方法替换为以下代码。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#5](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="test-the-solution"></a>测试解决方案
  通过从功能区上的自定义选项卡中选择控件，将控件添加到工作表。 保存该工作表时，这些控件也随之移除。
@@ -189,7 +189,7 @@ ms.locfileid: "99921787"
 
 - 若要了解如何将控件保存到工作表中，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel VSTO 外接程序动态控件示例。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Excel 解决方案](../vsto/excel-solutions.md)
 - [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)

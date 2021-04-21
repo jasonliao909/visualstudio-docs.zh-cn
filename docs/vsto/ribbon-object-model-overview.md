@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6306b13cc40d8b93de734168fe1e6df92c256d21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f053e87f8cdfd2bdf87bbdf4b7d115f6d9bbec26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888688"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823985"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开了一个强类型对象模型，可用于在运行时获取和设置功能区控件的属性。 例如，可以动态填充菜单控件，或显示和隐藏控件根据上下文。 你还可以将选项卡、组和控件添加到功能区，但在 Office 应用程序加载功能区之前。 有关信息，请参阅 [设置变成只读属性](#SettingReadOnlyProperties)。
@@ -60,7 +60,7 @@ ms.locfileid: "99888688"
 |**组**|<xref:Microsoft.Office.Tools.Ribbon.RibbonGroup>|
 |**Label**|<xref:Microsoft.Office.Tools.Ribbon.RibbonLabel>|
 |**菜单**|<xref:Microsoft.Office.Tools.Ribbon.RibbonMenu>|
-|**Separator**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
+|**机**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 |**SplitButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSplitButton>|
 |Tab |<xref:Microsoft.Office.Tools.Ribbon.RibbonTab>|
 |**ToggleButton**|<xref:Microsoft.Office.Tools.Ribbon.RibbonToggleButton>|
@@ -111,12 +111,12 @@ ms.locfileid: "99888688"
 
  添加以下代码。
 
- [!code-csharp[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs#1)]
- [!code-vb[Trin_Ribbon_ObjectModel#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/Ribbon1.Designer.vb" id="Snippet1":::
 
  在从 Visual Studio 2008 升级的 Visual c # 项目中，该构造函数会出现在功能区代码文件中。
 
- 在 Visual Basic 项目或在中创建的 Visual c # 项目中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，构造函数显示在功能区设计器代码文件中。 此文件名为 *YourRibbonItem*。Designer.cs 或 *YourRibbonItem*。设计器 .vb。 若要在 Visual Basic 项目中查看此文件，必须先单击解决方案资源管理器中的 " **显示所有文件** " 按钮。
+ 在 Visual Basic 项目或在中创建的 Visual c # 项目中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，构造函数显示在功能区设计器代码文件中。 此文件名为 *YourRibbonItem*。.Cs 或 *YourRibbonItem*。设计器 .vb。 若要在 Visual Basic 项目中查看此文件，必须先单击解决方案资源管理器中的 " **显示所有文件** " 按钮。
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>在 CreateRibbonExtensibilityObject 方法中设置属性
  `Ribbon`当你在 `CreateRibbonExtensibilityObject` `ThisAddin` 项目的、 `ThisWorkbook` 或类中重写方法时，可以设置控件的属性 `ThisDocument` 。 有关方法的详细信息 `CreateRibbonExtensibilityObject` ，请参阅 [功能区概述](../vsto/ribbon-overview.md)。
@@ -125,8 +125,8 @@ ms.locfileid: "99888688"
 
  添加以下代码。
 
- [!code-vb[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb#2)]
- [!code-csharp[Trin_Ribbon_ObjectModel#2](../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> 变为只读的属性
  下表显示了只可在功能区加载之前设置的属性。

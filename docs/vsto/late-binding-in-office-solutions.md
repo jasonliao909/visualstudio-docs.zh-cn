@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 455816b2e23a25ad5ef83c726b2a78e4245ed99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e618dcd0cc699b4626f825890cf0fc8bd7ddd853
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927647"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823881"
 ---
 # <a name="late-binding-in-office-solutions"></a>Office 解决方案中的后期绑定
   Office 应用程序的对象模型中的某些类型提供可通过后期绑定功能获得的功能。 例如，某些方法和属性可以根据 Office 应用程序的上下文返回不同类型的对象，并且某些类型可以在不同的上下文中公开不同的方法或属性。
@@ -43,12 +43,12 @@ ms.locfileid: "99927647"
 ### <a name="examples"></a>示例
  下面的代码示例演示如何将对象强制转换为 Visual Basic 项目中的特定类型，其中 **Option Strict** 为 on。 在此类型的项目中，必须将属性显式转换 <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> 为 <xref:Microsoft.Office.Interop.Excel.Range> 。 此示例需要一个文档级 Excel 项目，其中包含一个名为的工作表类 `Sheet1` 。
 
- [!code-vb[Trin_VstcoreProgramming#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#9)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet9":::
 
  下面的代码示例演示如何将对象隐式转换为 Visual Basic 项目中的一个特定类型，其中 **Option Strict** 为 off，或为面向的 Visual c # 项目 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。 在这些类型的项目中， <xref:Microsoft.Office.Tools.Excel.WorksheetBase.Cells%2A> 属性隐式强制转换为 <xref:Microsoft.Office.Interop.Excel.Range> 。 此示例需要一个文档级 Excel 项目，其中包含一个名为的工作表类 `Sheet1` 。
 
- [!code-vb[Trin_VstcoreProgramming#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#10)]
- [!code-csharp[Trin_VstcoreProgramming#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#10)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet10":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs" id="Snippet10":::
 
 ## <a name="access-members-that-are-available-only-through-late-binding"></a>仅可通过后期绑定访问的成员
  Office Pia 中的某些属性和方法只能通过后期绑定提供。 在 **选项 Strict** 处于关闭状态的 Visual Basic 项目或面向或的 Visual c # 项目中 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ，您可以使用这些语言的后期绑定功能访问后期绑定成员。 在 **选项 Strict** 处于 Visual Basic 的项目中，必须使用反射来访问这些成员。
@@ -56,14 +56,14 @@ ms.locfileid: "99927647"
 ### <a name="examples"></a>示例
  下面的代码示例演示如何访问 Visual Basic 项目中 **Option Strict** 为 off 或面向的 Visual c # 项目中的后期绑定成员 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 。 此示例访问 Word 中 "**文件打开**" 对话框的后期绑定 **名称** 属性。 若要使用此示例，请从 `ThisDocument` `ThisAddIn` Word 项目中的或类中运行它。
 
- [!code-vb[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#122)]
- [!code-csharp[Trin_VstcoreWordAutomation#122](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#122)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet122":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet122":::
 
  下面的代码示例演示如何使用反射来完成 Visual Basic 项目中的相同任务，其中 **Option Strict** 为 on。
 
- [!code-vb[Trin_VstcoreWordAutomation#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#102)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet102":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
 - [使用类型动态 &#40;C&#35; 编程指南&#41;](/dotnet/csharp/programming-guide/types/using-type-dynamic)

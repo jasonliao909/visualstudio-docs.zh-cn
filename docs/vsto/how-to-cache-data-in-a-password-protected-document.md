@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cd7efe4aa2aa14cb94a68f0729bc7fe3535888ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ccdb906022d4dcfc321af294eec59afa36832773
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954028"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824180"
 ---
 # <a name="how-to-cache-data-in-a-password-protected-document"></a>如何：在受密码保护的文档中缓存数据
   如果将数据添加到受密码保护的文档或工作簿中的数据缓存，则不会自动保存对缓存数据所做的更改。 可以通过重写项目中的两个方法来保存对缓存数据所做的更改。
@@ -45,8 +45,8 @@ ms.locfileid: "99954028"
 ### <a name="example"></a>示例
  下面的代码示例演示如何在受密码保护的 Word 文档中缓存数据。 在代码删除方法中的保护之前 <xref:Microsoft.Office.Tools.Word.DocumentBase.UnprotectDocument%2A> ，它会保存当前 <xref:Microsoft.Office.Tools.Word.Document.ProtectionType%2A> 值，以便可以在方法中重新应用相同类型的保护 <xref:Microsoft.Office.Tools.Word.DocumentBase.ProtectDocument%2A> 。
 
- [!code-csharp[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs#1)]
- [!code-vb[Trin_CachedDataProtectedDocument#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedDocument/ThisDocument.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedDocument/ThisDocument.vb" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>编译代码
  将此代码添加到 `ThisDocument` 项目中的类。 此代码假定密码存储在名为的字段中 `securelyStoredPassword` 。
@@ -69,13 +69,13 @@ ms.locfileid: "99954028"
 ### <a name="example"></a>示例
  下面的代码示例演示如何在受密码保护的 Excel 工作簿中缓存数据。 在代码删除方法中的保护之前 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.UnprotectDocument%2A> ，它将保存当前的 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectStructure%2A> 和 <xref:Microsoft.Office.Tools.Excel.Workbook.ProtectWindows%2A> 值，以便可以在方法中重新应用相同类型的保护 <xref:Microsoft.Office.Tools.Excel.WorkbookBase.ProtectDocument%2A> 。
 
- [!code-vb[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_CachedDataProtectedWorkbook#1](../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_CachedDataProtectedWorkbook/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_CachedDataProtectedWorkbook/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="compile-the-code"></a>编译代码
  将此代码添加到 `ThisWorkbook` 项目中的类。 此代码假定密码存储在名为的字段中 `securelyStoredPassword` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [缓存数据](../vsto/caching-data.md)
 - [如何：缓存数据以便脱机使用或在服务器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)
 - [如何：以编程方式在 Office 文档中缓存数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)

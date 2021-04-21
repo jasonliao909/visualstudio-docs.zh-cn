@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 05587b067fb5e8365433049c7da7fd3d5949a831
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f0b479c56be6da7b14f87263c8c01d66910ac20
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963843"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827101"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>如何：以编程方式保护工作簿
   您可以保护 Microsoft Office Excel 工作簿，使用户不能添加或删除工作表，也不能以编程方式取消保护工作簿。 您可以选择指定一个密码，指出您是否希望 (受保护的结构，以使用户不能在) 周围移动工作表，并指示是否要保护工作簿的 windows。
@@ -41,15 +41,15 @@ ms.locfileid: "99963843"
 
 1. 调用 <xref:Microsoft.Office.Tools.Excel.Workbook.Protect%2A> 工作簿的方法并包含密码。 若要使用下面的代码示例，请在类中运行它 `ThisWorkbook` ，而不是在 sheet 类中运行。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#10)]
-     [!code-vb[Trin_VstcoreExcelAutomation#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet10":::
 
 ### <a name="to-unprotect-a-workbook"></a>取消保护工作簿
 
 1. 调用 <xref:Microsoft.Office.Tools.Excel.Workbook.Unprotect%2A> 方法，并在需要时传递密码。 若要使用下面的代码示例，请在类中运行它 `ThisWorkbook` ，而不是在 sheet 类中运行。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreExcelAutomation#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/ThisWorkbook.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/ThisWorkbook.vb" id="Snippet11":::
 
 ## <a name="protect-a-workbook-by-using-an-application-level-add-in"></a>使用应用程序级外接程序保护工作簿
 
@@ -57,17 +57,17 @@ ms.locfileid: "99963843"
 
 1. 调用 <xref:Microsoft.Office.Interop.Excel._Workbook.Protect%2A> 工作簿的方法并包含密码。 此代码示例使用活动工作簿。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#6)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#6](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet6":::
 
 ### <a name="to-unprotect-a-workbook"></a>取消保护工作簿
 
 1. 调用 <xref:Microsoft.Office.Interop.Excel._Workbook.Unprotect%2A> 活动工作簿的方法，并在需要时传递密码。 若要使用此示例，请从项目的 `ThisAddIn` 类中运行代码。
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#7)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#7](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet7":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [如何：以编程方式保护工作表](../vsto/how-to-programmatically-protect-worksheets.md)
 - [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)

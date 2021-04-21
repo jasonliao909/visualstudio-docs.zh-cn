@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0bbbd381ff84714b780bbb817ccfea64ac05e949
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be3b789fabf00d853d447cb3489ef07a5b494fcd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882539"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826988"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与 Outlook 邮件类关联
   您可以通过将窗体区域与每个项的 message 类关联来指定哪些 Microsoft Office Outlook 项显示窗体区域。 例如，如果要将窗体区域追加到邮件项的底部，可以将窗体区域与 `IPM.Note` message 类相关联。
@@ -87,8 +87,8 @@ ms.locfileid: "99882539"
 
  下面的示例演示了已 <xref:Microsoft.Office.Tools.Outlook.FormRegionMessageClassAttribute> 应用于名为的窗体区域工厂类的两个特性 `myFormRegion` 。 第一个属性将窗体区域与邮件邮件窗体的标准邮件类相关联。 第二个属性将窗体区域与名为的自定义邮件类相关联 `IPM.Task.Contoso` 。
 
- [!code-vb[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb#1)]
- [!code-csharp[Trin_Outlook_FR_Attributes#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Attributes/FormRegion1.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Attributes/FormRegion1.cs" id="Snippet1":::
 
  特性必须符合以下准则：
 
