@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0080c9b0ddd7ffba4730a8cfb305bc34b6ba1690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd89cb1e2991f48fefd9984eaa6d5894d9b506c1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964311"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826572"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>如何：创建和修改自定义文档属性
   上面列出的 Microsoft Office 应用程序提供与文档存储在一起的内置属性。 此外，如果要将其他信息与文档一起存储，可以创建和修改自定义文档属性。
@@ -33,13 +33,13 @@ ms.locfileid: "99964311"
  下面的示例演示如何在 Excel 文档级自定义项中添加自定义属性并为其赋值。
 
 ## <a name="example"></a>示例
- [!code-vb[Trin_VstcoreProgramming#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb#6)]
- [!code-csharp[Trin_VstcoreProgramming#6](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/ThisWorkbook.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/ThisWorkbook.cs" id="Snippet6":::
 
 ## <a name="robust-programming"></a>可靠编程
  尝试访问未定义的属性的 `Value` 属性会引发异常。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [如何：读取和写入文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)

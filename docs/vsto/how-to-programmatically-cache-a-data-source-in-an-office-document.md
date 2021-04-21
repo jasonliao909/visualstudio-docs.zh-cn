@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: d1e66b587a149c02059e549fb20a5293f296a4a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 070253fb7ec57bedad628e116ce193fa2d9cf50b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968939"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827586"
 ---
 # <a name="how-to-programmatically-cache-a-data-source-in-an-office-document"></a>如何：以编程方式在 Office 文档中缓存数据源
   可以通过调用 `StartCaching` 主机项（如、或）的方法，以编程方式将数据对象添加到文档中的数据缓存 <xref:Microsoft.Office.Tools.Word.Document> <xref:Microsoft.Office.Tools.Excel.Workbook> <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 通过调用主机项的方法，从数据缓存中删除数据对象 `StopCaching` 。
@@ -38,20 +38,20 @@ ms.locfileid: "99968939"
 
 1. 在类级别（而不是在方法中）声明数据对象。 此示例假设你要声明一个 <xref:System.Data.DataSet> 要以 `dataSet1` 编程方式缓存的名为的。
 
-     [!code-csharp[Trin_VstcoreDataExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#12)]
-     [!code-vb[Trin_VstcoreDataExcel#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet12":::
 
 2. 实例化数据对象，然后调用 `StartCaching` 文档或工作表实例的方法，并传入数据对象的名称。
 
-     [!code-csharp[Trin_VstcoreDataExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#13)]
-     [!code-vb[Trin_VstcoreDataExcel#13](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet13":::
 
 ## <a name="to-stop-caching-a-data-object"></a>停止缓存数据对象
 
 1. 调用 `StopCaching` 文档或工作表实例的方法，并传入数据对象的名称。 此示例假设你有一个 <xref:System.Data.DataSet> `dataSet1` 要停止缓存的命名。
 
-     [!code-csharp[Trin_VstcoreDataExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#14)]
-     [!code-vb[Trin_VstcoreDataExcel#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet14":::
 
     > [!NOTE]
     > 不要 `StopCaching` 从 `Shutdown` 文档或工作表的事件的事件处理程序调用。 `Shutdown`当引发事件时，修改数据缓存的时间太晚。 有关事件的详细信息 `Shutdown` ，请参阅 [Office 项目中的事件](../vsto/events-in-office-projects.md)。

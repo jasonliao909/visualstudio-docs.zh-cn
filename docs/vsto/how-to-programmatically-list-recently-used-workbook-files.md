@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 75405c7a2e02189e205edf6615c5d95a8f1d023c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba7ca717af4330e8fb3c102b3a5fe5bf7d9162b6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963141"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825324"
 ---
 # <a name="how-to-programmatically-list-recently-used-workbook-files"></a>如何：以编程方式列出最近使用的工作簿文件
   <xref:Microsoft.Office.Interop.Excel._Application.RecentFiles%2A>属性返回一个集合，该集合包含在最近使用的文件 Microsoft Office Excel 列表中显示的所有文件的名称。 列表的长度根据用户选择保留的文件数而异。 您可以在某个范围内显示结果。
@@ -34,8 +34,8 @@ ms.locfileid: "99963141"
 
 1. 循环访问最近使用的文件列表，并显示相对于对象的单元中的名称 <xref:Microsoft.Office.Interop.Excel.Range> 。
 
-     [!code-csharp[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs#9)]
-     [!code-vb[Trin_VstcoreExcelAutomationAddIn#9](../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet9":::
 
 ## <a name="see-also"></a>另请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)

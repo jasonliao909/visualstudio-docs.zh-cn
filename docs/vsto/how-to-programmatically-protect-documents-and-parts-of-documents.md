@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a3301abf4807c02e1ed3e330e27c609a721bf48d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: af3cc1d9c34bf0d6dc503ca2aabe35de5848265c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946145"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827599"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以编程方式保护文档和文档的某些部分
   你可以为 Microsoft Office Word 文档添加保护，以防止用户对文档进行任何编辑操作。
@@ -42,20 +42,20 @@ ms.locfileid: "99946145"
 
 1. 调用项目中 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 类的 `ThisDocument` 方法。
 
-     [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet111":::
 
 ### <a name="to-exclude-a-bookmark-control-from-document-protection"></a>从文档保护中排除 Bookmark 控件
 
 1. 使用 <xref:Microsoft.Office.Tools.Word.Document.Protect%2A> 方法保护整个文档。
 
-     [!code-vb[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomation#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet111":::
 
 2. 从文档保护中排除 `Bookmark1` 。
 
-     [!code-vb[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#112)]
-     [!code-csharp[Trin_VstcoreWordAutomation#112](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#112)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet112":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet112":::
 
 ### <a name="compile-the-code"></a>编译代码
  若要使用这些代码示例，请从项目内的 `ThisDocument` 类中运行这些示例。 这些代码示例假定在出现此代码的文档中有一个名为 <xref:Microsoft.Office.Tools.Word.Bookmark> 的现有 `Bookmark1` 控件。
@@ -68,8 +68,8 @@ ms.locfileid: "99946145"
 
      下面的代码示例将保护活动文档。 若要使用此代码示例，请从项目中的 `ThisAddIn` 类运行它。
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#111)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#111](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#111)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet111":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet111":::
 
 ## <a name="see-also"></a>另请参阅
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)

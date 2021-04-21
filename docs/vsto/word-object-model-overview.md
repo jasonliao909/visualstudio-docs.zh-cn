@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 3d593185412db23fa985f7effea6e91f9b3faa6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3367c1ad557c647639b9fd2d2aacf7845e067660
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847643"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826624"
 ---
 # <a name="word-object-model-overview"></a>Word 对象模型概述
   在 Visual Studio 中开发 Word 解决方案时，会与 Word 对象模型进行交互。 此对象模型包含 Word 的主互操作程序集中所提供的类和接口，并在 <xref:Microsoft.Office.Interop.Word> 命名空间中进行定义。
@@ -78,8 +78,8 @@ ms.locfileid: "99847643"
 
  在创建文档级项目时，可以通过使用项目中生成的 <xref:Microsoft.Office.Tools.Word.Document> 类访问 `ThisDocument` 成员。 通过使用 <xref:Microsoft.Office.Tools.Word.Document> 类中代码的 **Me** 或 **this** 关键字、或通过使用 `ThisDocument` 类外部的代码的 `Globals.ThisDocument` ，即可访问 `ThisDocument` 对象。 有关详细信息，请参阅 [程序文档级自定义项](../vsto/programming-document-level-customizations.md)。 例如，若要在文档中选择第一个段落，请使用下列代码。
 
- [!code-vb[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#120)]
- [!code-csharp[Trin_VstcoreWordAutomation#120](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#120)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet120":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet120":::
 
  在 VSTO 外接程序项目中，可以在运行时生成 <xref:Microsoft.Office.Tools.Word.Document> 主机项。 可以使用生成的主机项将控件添加到关联文档。 有关详细信息，请参阅 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
@@ -130,7 +130,7 @@ ms.locfileid: "99847643"
 
  VBA 对象模型引用中的所有对象和成员都与 Word PIA 中的类型和成员相对应。 例如，VBA 对象模型引用中的文档对象对应于 <xref:Microsoft.Office.Interop.Word.Document> WORD PIA 中的对象。 虽然 VBA 对象模型引用提供了大多数属性、方法和事件的代码示例，但如果要在用 Visual Studio 创建的 Word 项目中使用本引用中的 VBA 代码，必须将其转换为 Visual Basic 或 Visual C# 代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 主互操作程序集](../vsto/office-primary-interop-assemblies.md)
 - [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)
 - [使用文档](../vsto/working-with-documents.md)

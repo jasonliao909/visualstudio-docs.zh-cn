@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c2b702d2986315ce32a9ab489db239f2c784f3e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa6a45a199d4edce924f0e36a971026726d96eca
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877858"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824791"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以编程方式发送电子邮件
   此示例向其电子邮件地址中具有域名 **example.com** 的联系人发送电子邮件。
@@ -32,7 +32,7 @@ ms.locfileid: "99877858"
 [!include[Add-ins note](includes/addinsnote.md)]
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_OL_ProgramEmail#1](../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_ProgramEMail/thisaddin.cs" id="Snippet1":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：

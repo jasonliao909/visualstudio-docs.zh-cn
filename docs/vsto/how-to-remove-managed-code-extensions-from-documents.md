@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fea8a8f73155875f9a10e9d8138ee4b345d531d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 129b1bda44abf7283efe1996f1898491025ee9d9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942147"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825441"
 ---
 # <a name="how-to-remove-managed-code-extensions-from-documents"></a>如何：从文档中删除托管代码扩展
   您可以以编程方式从文档或工作簿中移除自定义项程序集，该文档或工作簿是 Microsoft Office Word 或 Microsoft Office Excel 的文档级自定义项的一部分。 然后，用户可以打开文档并查看内容，但不会显示添加到文档中的任何自定义用户界面 (UI) ，并且你的代码将不会运行。
@@ -41,15 +41,15 @@ ms.locfileid: "99942147"
 
 2. 将以下 **Imports** 或 **using** 语句添加到代码文件的顶部。
 
-     [!code-csharp[Trin_VstcoreDeployment#1](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#1)]
-     [!code-vb[Trin_VstcoreDeployment#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet1":::
 
 3. 调用类的静态 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> ，并指定参数的解决方案文档路径。
 
      下面的代码示例假设你要从桌面上的名为 *WordDocument1.docx* 的文档中删除自定义项。
 
-     [!code-csharp[Trin_VstcoreDeployment#2](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#2)]
-     [!code-vb[Trin_VstcoreDeployment#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet2":::
 
 4. 生成项目，并在要删除自定义项的计算机上运行该应用程序。 计算机必须安装 Visual Studio 2010 Tools for Office runtime。
 

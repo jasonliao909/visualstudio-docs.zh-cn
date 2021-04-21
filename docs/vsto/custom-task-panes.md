@@ -27,12 +27,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 8ed86cb10f6521e5863562cdb67e768b1a2367d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6c35d963b426fe24a43bef24617f79c042c272e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850030"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828158"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
@@ -66,8 +66,8 @@ ms.locfileid: "99850030"
 ### <a name="instantiate-the-custom-task-pane"></a>实例化自定义任务窗格
  创建包含自定义任务窗格用户界面的用户控件之后，必须实例化 <xref:Microsoft.Office.Tools.CustomTaskPane>。 若要执行此操作，请通过调用其中一种 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法来传递 VSTO 外接程序中的用户控件 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection>。 此集合公开为 `ThisAddIn` 类的 `CustomTaskPanes` 字段。 下面的代码示例应从 `ThisAddIn` 类中运行。
 
- [!code-vb[Trin_TaskPaneBasic#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb#2)]
- [!code-csharp[Trin_TaskPaneBasic#2](../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneBasic/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneBasic/ThisAddIn.cs" id="Snippet2":::
 
  <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Add%2A> 方法返回一个新的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象。 可使用此对象修改任务窗格的外观并响应用户事件。
 
@@ -217,7 +217,7 @@ ms.locfileid: "99850030"
 
 - [Microsoft.Office.Interop.PowerPoint.EApplication_Event. WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

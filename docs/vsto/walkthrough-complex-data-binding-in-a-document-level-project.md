@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2dc5708da09074c7d973336958c9e89c16bf9da6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927660"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826364"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：文档级项目中的复杂数据绑定
   本演练演示文档级项目中的复杂数据绑定的基本知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
@@ -83,7 +83,7 @@ ms.locfileid: "99927660"
 
 8. 选中 " **Employees** " 表旁边的复选框。
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
    向导将 " **Employees** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -117,16 +117,16 @@ ms.locfileid: "99927660"
 
 ### <a name="to-initialize-the-control"></a>初始化控件
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **Sheet1** " 或 " **Sheet1.cs**"，然后单击快捷菜单上的 " **查看代码** "。
+1. 在 **解决方案资源管理器** 中，右键单击 " **sheet1** " 或 " **sheet1**"，然后单击快捷菜单上的 " **查看代码** "。
 
 2. 将以下代码添加到 `Sheet1_Startup` 方法以设置 b 的文本 `utton` 。
 
-    [!code-csharp[Trin_VstcoreDataExcel#8](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#8)]
-    [!code-vb[Trin_VstcoreDataExcel#8](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#8)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet8":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet8":::
 
 3. 仅适用于 c #，将事件的事件处理程序添加 <xref:System.Windows.Forms.Control.Click> 到 `Sheet1_Startup` 方法。
 
-    [!code-csharp[Trin_VstcoreDataExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#9)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet9":::
 
    现在添加代码以处理 <xref:System.Windows.Forms.Control.Click> 按钮的事件。
 
@@ -137,8 +137,8 @@ ms.locfileid: "99927660"
 
 1. 为的事件添加事件处理程序 <xref:System.Windows.Forms.Control.Click> `button` ，并添加以下代码以将数据集中所做的所有更改提交回数据库。
 
-     [!code-csharp[Trin_VstcoreDataExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs#10)]
-     [!code-vb[Trin_VstcoreDataExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet3.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet3.vb" id="Snippet10":::
 
 ## <a name="test-the-application"></a>测试应用程序
  现在，你可以测试工作簿以验证数据是否按预期方式显示，并且可以操作列表对象中的数据。
@@ -226,7 +226,7 @@ ms.locfileid: "99927660"
 
 - 创建字段和表之间的主/从关系。 有关详细信息，请参阅 [演练：使用缓存的数据集创建主/从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
 - [演练：文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)

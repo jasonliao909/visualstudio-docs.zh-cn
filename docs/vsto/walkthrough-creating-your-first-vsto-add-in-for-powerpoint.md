@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: c73c5ab61c51ca4be749e9bf14700c7bea64023e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5adf37c6d55d4704ee370052646e620cbe716c3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966534"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824245"
 ---
 # <a name="walkthrough-create-your-first-vsto-add-in-for-powerpoint"></a>演练：创建您的第一个 PowerPoint VSTO 外接程序
   本演练演示如何创建用于 Microsoft Office PowerPoint 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的演示文稿无关。 有关详细信息，请参阅 [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
@@ -55,7 +55,7 @@ ms.locfileid: "99966534"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -65,7 +65,7 @@ ms.locfileid: "99966534"
 
 6. 在 " **名称** " 框中，键入 **FirstPowerPointAddIn**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstPowerPointAddIn** 项目，并在编辑器中打开 **ThisAddIn** 代码文件。
 
@@ -82,12 +82,12 @@ ms.locfileid: "99966534"
 
     当用户将新的幻灯片添加到活动演示文稿中时，此事件处理程序会将文本框添加到该新幻灯片的顶部，并添加文本到文本框中。
 
-    [!code-vb[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb#1)]
-    [!code-csharp[Trin_PowerPointAddInTutorial#1](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#1)]
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_PowerPointAddInTutorial/ThisAddIn.vb" id="Snippet1":::
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet1":::
 
 2. 如果你使用的是 C#，请将以下代码添加到 `ThisAddIn_Startup` 事件处理程序中。 若要将 `Application_PresentationNewSlide` 事件处理程序 [Microsoft.Office.Interop.PowerPoint.EApplication_Event 与 PresentationNewSlide](/previous-versions/office/developer/office-2010/ff762876(v%3doffice.14)) 事件连接起来，此代码是必需的。
 
-    [!code-csharp[Trin_PowerPointAddInTutorial#2](../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_PowerPointAddInTutorial/ThisAddIn.cs" id="Snippet2":::
 
    若要修改每张新建幻灯片，之前的代码示例需使用以下对象：
 

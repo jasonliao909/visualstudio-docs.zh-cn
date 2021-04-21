@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9ac8c4ef96a421ece6c0591d4340d570d71c08e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e7fe64d2df3298d53f567d11fe765280843e2ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846278"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826780"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
   本演练演示如何创建用户可以通过单击功能区上的切换按钮隐藏或显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。
@@ -113,23 +113,23 @@ ms.locfileid: "99846278"
 
 3. 将以下代码添加到 `ThisAddIn` 类。 此代码将 `TaskPaneControl` 的实例声明为 `ThisAddIn`的成员。
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#1)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#1](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet1":::
 
 4. 将 `ThisAddIn_Startup` 事件处理程序替换为以下代码。 此代码向 `TaskPaneControl` 字段添加 `CustomTaskPanes` 对象，但它不显示自定义任务窗格（默认情况下， <xref:Microsoft.Office.Tools.CustomTaskPane.Visible%2A> 类的 <xref:Microsoft.Office.Tools.CustomTaskPane> 属性是 **false**）。 Visual C# 代码还会将一个事件处理程序附加到 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 事件。
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#2)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#2](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet2":::
 
 5. 将以下方法添加到 `ThisAddIn` 类。 此方法处理 <xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged> 事件。 当用户通过单击 **“关闭”** 按钮 (X) 来关闭任务窗格时，此方法将更新功能区上切换按钮的状态。
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#3)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#3](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet3":::
 
 6. 向 `ThisAddIn` 类添加以下属性。 此属性对其他类公开私有 `myCustomTaskPane1` 对象。 稍后在本演练中，你将向使用此属性的 `MyRibbon` 类添加代码。
 
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs#4)]
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#4](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ThisAddIn.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ThisAddIn.vb" id="Snippet4":::
 
 ## <a name="hide-and-show-the-custom-task-pane-by-using-the-toggle-button"></a>使用切换按钮隐藏和显示自定义任务窗格
  最后一步是添加可在用户单击功能区上的切换按钮时显示或隐藏自定义任务窗格的代码。
@@ -142,8 +142,8 @@ ms.locfileid: "99846278"
 
 2. 将 `toggleButton1_Click` 事件处理程序替换为以下代码。 当用户单击切换按钮时，此代码显示或隐藏自定义任务窗格，具体取决于是按下还是未按下切换按钮。
 
-     [!code-vb[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb#5)]
-     [!code-csharp[Trin_TaskPaneRibbonSynchronize#5](../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneRibbonSynchronize/ManageTaskPaneRibbon.cs" id="Snippet5":::
 
 ## <a name="test-the-add-in"></a>测试外接程序
  运行项目时，Excel 会打开，但不显示自定义任务窗格。 单击功能区上的切换按钮以测试代码。
@@ -173,7 +173,7 @@ ms.locfileid: "99846278"
 
 - 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)

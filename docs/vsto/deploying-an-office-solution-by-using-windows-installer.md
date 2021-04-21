@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ef515ce323322dee667dab5690b85b29af97c07d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6dfa2bb4d3309420cf0a9a71e79b5d07b5477ce
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875414"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828522"
 ---
 # <a name="deploy-an-office-solution-by-using-windows-installer"></a>使用 Windows Installer 部署 Office 解决方案
 
@@ -222,7 +222,7 @@ ms.locfileid: "99875414"
 
 6. 在 **“另存为”** 对话框中，浏览到 **“桌面”** 文件夹。
 
-7. 在 " **保存类型** " 列表中，选择 " **所有文件" ( # A0 &#42;)**"。
+7. 在 " **保存类型** " 列表中，选择 " **所有文件" (&#42; "&#42;")**。
 
 8. 在 **“文件名”** 框中，输入 **Visual Studio 2010 Tools for Office Runtime.prq**，然后选择 **“保存”** 按钮。
 
@@ -293,7 +293,7 @@ ms.locfileid: "99875414"
 
 2. 在 **“项目助手”** 页下方，选择 **“应用程序注册表”** 按钮，如下图所示。
 
-   !["应用程序注册表" 按钮。](../vsto/media/installshield-applicationregistry.gif ""应用程序注册表" 按钮。")
+   !["应用程序注册表" 按钮。](../vsto/media/installshield-applicationregistry.gif "&quot;应用程序注册表&quot; 按钮。")
 
    此时将显示 **“应用程序注册表项”** 页。
 
@@ -335,7 +335,7 @@ ms.locfileid: "99875414"
 
 7. 重复此过程以创建以下值。
 
-|值类型<br /><br />|“属性”<br /><br />|
+|值类型<br /><br />|名称<br /><br />|
 |--------------|--------|
 |“字符串值”<br /><br />|**FriendlyName**<br /><br />|
 |DWORD 值<br /><br />|**LoadBehavior**<br /><br />|
@@ -410,8 +410,8 @@ ms.locfileid: "99875414"
 
 9. 将此文件的全部内容替换为以下代码。
 
-[!code-vb[Trin_CustomAction#1](../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb#1)]
-[!code-csharp[Trin_CustomAction#1](../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs#1)]
+:::code language="vb" source="../vsto/codesnippet/VisualBasic/setexceldocumentproperties/module1.vb" id="Snippet1":::
+:::code language="csharp" source="../vsto/codesnippet/CSharp/setexceldocumentproperties/program.cs" id="Snippet1":::
 
 10. 编译该项目。
 

@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: ab53676d6c00fdda3bb7f4554321f0c0550e5748
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07d7a33d90fd9d05c041ddc27f92a5b6a59bb75e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954041"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825987"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：缓存数据以便脱机使用或在服务器上使用
   您可以标记要缓存在文档中的数据项，使其在脱机时可用。 当文档存储在服务器上时，也可以使用其他代码来处理文档中的数据。
@@ -42,8 +42,8 @@ ms.locfileid: "99954041"
 
 2. 将属性应用于 <xref:Microsoft.VisualStudio.Tools.Applications.Runtime.CachedAttribute> 成员，以将数据项标记为存储在文档的数据缓存中。 下面的示例将此特性应用于的字段声明 <xref:System.Data.DataSet> 。
 
-     [!code-csharp[Trin_VstcoreDataExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs#11)]
-     [!code-vb[Trin_VstcoreDataExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet11":::
 
 3. 添加代码以创建数据项的实例，如果适用，则从数据库中加载它。
 

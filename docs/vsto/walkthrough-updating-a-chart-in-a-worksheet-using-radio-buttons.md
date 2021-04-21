@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b1c9da3b1d019c77988ef01e1b3c019dd3f1d775
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d61579181f00d97a74cc48e022bb5d93a05c0f0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937311"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828171"
 ---
 # <a name="walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons"></a>演练：使用单选按钮更新工作表中的图表
   本演练演示如何在 Microsoft Office Excel 工作表上使用单选按钮，以使用户能够在两个选项之间快速切换。 在这种情况下，选项更改图表的样式。
@@ -99,7 +99,7 @@ ms.locfileid: "99937311"
 
 2. 单击 " **浏览** " 按钮，浏览到本演练前面部分创建的工作簿。
 
-3. 单击“确定”。
+3. 单击 **“确定”** 。
 
      Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 **我的 Excel 图表** 项目添加到 **解决方案资源管理器**。
 
@@ -171,34 +171,34 @@ ms.locfileid: "99937311"
 
 2. 向类添加代码 `ChartOptions` 以创建 `SelectionChanged` 事件和 `Selection` 属性。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#13)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#13)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet13":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet13":::
 
 ### <a name="to-handle-the-checkedchanged-event-of-the-radio-buttons"></a>处理单选按钮的 CheckedChanged 事件
 
 1. 设置 `CheckedChanged` 单选按钮的 `areaBlockChart` 事件处理程序中的图表类型，然后引发事件。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#14)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#14)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet14":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet14":::
 
 2. 设置 `CheckedChanged` 单选按钮的 `barChart` 事件处理程序中的图表类型。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#15)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet15":::
 
 3. 设置 `CheckedChanged` 单选按钮的 `columnChart` 事件处理程序中的图表类型。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#16)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#16)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet16":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet16":::
 
 4. 设置 `CheckedChanged` 单选按钮的 `lineChart` 事件处理程序中的图表类型。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb#17)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/ChartOptions.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet17":::
 
 5. 在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关如何创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs#18)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/ChartOptions.cs" id="Snippet18":::
 
 ## <a name="add-the-user-control-to-the-worksheet"></a>将用户控件添加到工作表
  生成解决方案时，新的用户控件将自动添加到 " **工具箱**"。 然后，可以将该控件从 " **工具箱** " 拖动到工作表中。
@@ -209,7 +209,7 @@ ms.locfileid: "99937311"
 
      将 **ChartOptions** 用户控件添加到 " **工具箱**"。
 
-2. 在 **解决方案资源管理器** 中，右键单击 " **Sheet1** " 或 " **Sheet1.cs**"，然后单击 " **视图设计器**"。
+2. 在 **解决方案资源管理器** 中，右键单击 " **sheet1** " 或 " **sheet1**"，然后单击 " **视图设计器**"。
 
 3. 将 **ChartOptions** 控件从 **工具箱** 拖到工作表中。
 
@@ -224,12 +224,12 @@ ms.locfileid: "99937311"
 
 1. 将以下事件处理程序添加到 `Sheet1` 类。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#19)]
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#19](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#19)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet19":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet19":::
 
 2. 在 c # 中，必须为用户控件添加事件处理程序，如下 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 所示。 有关如何创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-cs[Trin_VstcoreProgrammingControlsExcel#20](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#20)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet20":::
 
 ## <a name="test-the-application"></a>测试应用程序
  你现在可以测试工作簿，以确保在你选择单选按钮时正确地设计图表的样式。

@@ -25,12 +25,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 69ca0269859db9e1a69904c2211b8f4d1ad45710
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84a0c21bba42263e7b4dad9ad9118f462389ad6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879288"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827495"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能区 (XML) 项使你可以通过使用 XML 来自定义功能区。 如果要以功能区 (可视化设计器) 项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可对每个项执行的操作的比较，请参阅 [功能区概述](../vsto/Ribbon-overview.md)。
@@ -51,8 +51,8 @@ ms.locfileid: "99879288"
 
  下面的代码示例替代 `CreateRibbonExtensibilityObject` 方法并返回名为 MyRibbon 的功能区 XML 类。
 
- [!code-csharp[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs#1)]
- [!code-vb[Trin_Ribbon_Custom_Tab_XML#1](../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab_XML_O12/ThisAddIn.vb" id="Snippet1":::
 
 ## <a name="define-the-behavior-of-the-custom-ribbon"></a>定义自定义功能区的行为
  您可以通过创建 *回调方法* 来响应用户操作，例如单击功能区上的按钮。 回叫方法类似于 Windows 窗体控件中的事件，但它们由 UI 元素的 XML 中的特性标识。 可在功能区类中编写方法，并且控件调用名称与特性值相同的方法。 例如，你可以创建一个在用户单击功能区上的按钮时调用的回调方法。 创建回叫方法需要两个步骤：
@@ -92,8 +92,8 @@ ms.locfileid: "99879288"
 
   所有回叫方法都有表示调用了方法的控件的 <xref:Microsoft.Office.Core.IRibbonControl> 参数。 可使用此参数重用多个控件的相同回叫方法。 下面的代码示例演示根据用户单击的控件执行不同任务的 **onAction** 回叫方法。
 
-  [!code-csharp[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs#2)]
-  [!code-vb[Trin_RibbonOutlookBasic#2](../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb#2)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_RibbonOutlookBasic/Ribbon1.cs" id="Snippet2":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_RibbonOutlookBasic/Ribbon1.vb" id="Snippet2":::
 
 ## <a name="ribbon-xml-file-reference"></a><a name="RibbonDescriptorFile"></a> 功能区 XML 文件引用
  可以通过将元素和特性添加到功能区 XML 文件来定义自定义功能区。 默认情况下，功能区 XML 文件包含以下 XML。

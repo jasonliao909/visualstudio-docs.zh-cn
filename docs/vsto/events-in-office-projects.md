@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7bf4da3f0b2dd9cbab960a779690aa752744cdae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be1625be3d8c3fce409562be948c83a34d40d7b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910327"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825675"
 ---
 # <a name="events-in-office-projects"></a>Office 项目中的事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。
@@ -91,16 +91,16 @@ ms.locfileid: "99910327"
 
  下面的代码示例演示 Word 的文档级项目中的默认事件处理程序。
 
- [!code-vb[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#121)]
- [!code-csharp[Trin_VstcoreWordAutomation#121](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#121)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet121":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet121":::
 
  下面的代码示例演示 Excel 的文档级项目中的默认事件处理程序。
 
 > [!NOTE]
 > 下面的代码示例演示 `Sheet1` 类中的事件处理程序。 其他主机项类中的事件处理程序的名称对应于类名。 例如，在 `Sheet2` 类中， **Startup** 事件处理程序命名为 `Sheet2_Startup`。 在 `ThisWorkbook` 类中， **Startup** 事件处理程序命名为 `ThisWorkbook_Startup`。
 
- [!code-csharp[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#83)]
- [!code-vb[Trin_VstcoreExcelAutomation#83](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#83)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet83":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet83":::
 
 ### <a name="order-of-events-in-document-level-excel-projects"></a>文档级 Excel 项目中事件的顺序
  Excel 项目中 **Startup** 事件处理程序的调用顺序如下：

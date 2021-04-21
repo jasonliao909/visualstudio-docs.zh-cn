@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 21a4b172fe2a29ac098f236cebb33efa43fb11c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a21f51c42f1f55423019361d1b1535482f4e4b1
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964168"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828002"
 ---
 # <a name="how-to-programmatically-create-a-custom-calendar"></a>如何：以编程方式创建自定义日历
   此示例创建名为 **PersonalCalendar** 的新日历文件夹，然后创建新的约会项并将其添加到 Calendar 文件夹中。 然后，该代码将显示日历文件夹。
@@ -29,7 +29,7 @@ ms.locfileid: "99964168"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_OL_CustomCalendar#1](../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CustomCalendar/thisaddin.cs" id="Snippet1":::
 
 ## <a name="see-also"></a>另请参阅
 - [使用日历项](../vsto/working-with-calendar-items.md)

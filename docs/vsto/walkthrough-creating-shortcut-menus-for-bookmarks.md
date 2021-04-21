@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aabc7dec0a9965a055bce07cafeca25ac0165037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48381d452b0c67a34581092a47896aba60e7125c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937407"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826299"
 ---
 # <a name="walkthrough-create-shortcut-menus-for-bookmarks"></a>演练：创建书签的快捷菜单
   本演练演示如何 <xref:Microsoft.Office.Tools.Word.Bookmark> 在 Word 的文档级自定义项中创建控件的快捷菜单。 当用户右键单击书签中的文本时，将出现一个快捷菜单，并为用户提供用于设置文本格式的选项。
@@ -92,7 +92,7 @@ ms.locfileid: "99937407"
 
 1. 向项目添加 **功能区 XML** 项。 有关详细信息，请参阅 [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2. 在 **解决方案资源管理器** 中，选择 " **ThisDocument.cs** " 或 " **ThisDocument**"。
+2. 在 **解决方案资源管理器** 中，选择 " **ThisDocument** " 或 " **ThisDocument**"。
 
 3. 在菜单栏上，选择“视图” > “代码”。
 
@@ -100,8 +100,8 @@ ms.locfileid: "99937407"
 
 4. 将以下代码添加到 **ThisDocument** 类。 此代码重写 CreateRibbonExtensibilityObject 方法，并将功能区 XML 类返回到 Office 应用程序。
 
-     [!code-csharp[Trin_Word_Document_Menus#1](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#1)]
-     [!code-vb[Trin_Word_Document_Menus#1](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#1)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet1":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet1":::
 
 5. 在“解决方案资源管理器” 中，选择功能区 XML 文件。 默认情况下，功能区 XML 文件命名为 Ribbon1.xml。
 
@@ -131,10 +131,10 @@ ms.locfileid: "99937407"
 
 9. 在类级别声明以下变量和书签变量。
 
-     [!code-csharp[Trin_Word_Document_Menus#2](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#2)]
-     [!code-vb[Trin_Word_Document_Menus#2](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet2":::
 
-10. 在 **解决方案资源管理器** 中，选择功能区代码文件。 默认情况下，功能区代码文件命名为 **Ribbon1.cs** 或 **ribbon1.mfcribbon-ms**。
+10. 在 **解决方案资源管理器** 中，选择功能区代码文件。 默认情况下，功能区代码文件命名为 **ribbon1.mfcribbon-ms** 或 **ribbon1.mfcribbon-ms**。
 
 11. 在菜单栏上，选择“视图” > “代码”。
 
@@ -142,8 +142,8 @@ ms.locfileid: "99937407"
 
 12. 在功能区代码文件中，添加以下方法。 对于已添加到文档快捷菜单的两个按钮，这是一个回调方法。 此方法确定这些按钮是否显示在快捷菜单中。 只有当您右键单击书签中的文本时，才会显示粗体和斜体按钮。
 
-     [!code-csharp[Trin_Word_Document_Menus#5](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#5)]
-     [!code-vb[Trin_Word_Document_Menus#5](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet5":::
 
 ## <a name="format-the-text-in-the-bookmark"></a><a name="BKMK_formattextbkmk"></a> 设置书签中的文本格式
 
@@ -151,10 +151,10 @@ ms.locfileid: "99937407"
 
 1. 在功能区代码文件中，添加一个 `ButtonClick` 事件处理程序，以将格式设置应用于书签。
 
-     [!code-csharp[Trin_Word_Document_Menus#6](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs#6)]
-     [!code-vb[Trin_Word_Document_Menus#6](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/ribbon1.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/ribbon1.vb" id="Snippet6":::
 
-2. **解决方案资源管理器** 中，选择 " **ThisDocument.cs** " 或 " **ThisDocument**"。
+2. **解决方案资源管理器** 中，选择 " **ThisDocument** " 或 " **ThisDocument**"。
 
 3. 在菜单栏上，选择“视图” > “代码”。
 
@@ -162,15 +162,15 @@ ms.locfileid: "99937407"
 
 4. 将以下代码添加到 **ThisDocument** 类。
 
-     [!code-csharp[Trin_Word_Document_Menus#3](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#3)]
-     [!code-vb[Trin_Word_Document_Menus#3](../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_word_document_menus.vb/thisdocument.vb" id="Snippet3":::
 
     > [!NOTE]
     > 您必须编写代码来处理书签重叠的情况。 如果不这样做，则默认情况下，将对选定内容中的所有书签调用代码。
 
 5. 在 c # 中，必须向事件添加书签控件的事件处理程序 <xref:Microsoft.Office.Tools.Word.Document.Startup> 。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_Word_Document_Menus#4](../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_word_document_menus.cs/thisdocument.cs" id="Snippet4":::
 
 ## <a name="test-the-application"></a>测试应用程序
  测试您的文档，以验证当您右键单击书签中的文本时，快捷菜单中的 "粗体" 和 "斜体" 菜单项将显示，并且该文本格式正确。

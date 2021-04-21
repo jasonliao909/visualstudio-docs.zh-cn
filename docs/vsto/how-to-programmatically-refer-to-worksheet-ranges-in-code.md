@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 89a4b7c594f942405777145f94ed0a3503e9b16f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ea4e3da3c67d55aedea0d85a0a35b8ed2cf93b6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963752"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827079"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以编程方式在代码中引用工作表范围
   您可以使用类似的过程来引用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件或本机 Excel 范围对象的内容。
@@ -37,8 +37,8 @@ ms.locfileid: "99963752"
 
 1. 将字符串分配给 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 控件的属性 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。 必须将此代码置于表类中，而不是在 `ThisWorkbook` 类中。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#46)]
-     [!code-vb[Trin_VstcoreExcelAutomation#46](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#46)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet46":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet46":::
 
 ## <a name="use-native-excel-ranges"></a>使用本机 Excel 范围
  下面的示例将本机 Excel 范围添加到工作表，然后向该范围中的单元格添加文本。
@@ -47,10 +47,10 @@ ms.locfileid: "99963752"
 
 1. 将字符串分配给 <xref:Microsoft.Office.Interop.Excel.Range.Value2%2A> 范围的属性。
 
-     [!code-csharp[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#47)]
-     [!code-vb[Trin_VstcoreExcelAutomation#47](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#47)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet47":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet47":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [如何：以编程方式在工作表中检查拼写](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

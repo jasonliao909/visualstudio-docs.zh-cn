@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fc61f66b2aefaf0e43b1b5af819e0e244feec114
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3d77085808fb54cd0a0517cc6d039e2345a1872
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910304"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827976"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>Excel 解决方案的全球化和本地化
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关一般信息，请参阅 [全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)。
@@ -79,17 +79,17 @@ Application.ActiveCell.Value2 = "05/12/04"
 
  当在通过 Visual Studio 中的 Office 开发工具创建的解决方案中使用，并通过 COM 互操作传递到 Excel 时，相同的代码在日期格式为 en-US 样式时会产生相同的结果。
 
- 例如： 。
+ 例如：
 
- [!code-vb[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#6)]
- [!code-csharp[Trin_VstcoreCreatingExcel#6](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#6)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet6":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet6":::
 
  应尽可能使用强类型数据而不要使用字符串文本。 例如，不将日期存储为字符串格式，而是存储为 <xref:System.Double>，然后将其转换为 <xref:System.DateTime> 对象进行操作。
 
  下面的代码示例获取用户在单元格 A5 中输入的日期，将其存储为 <xref:System.Double>然后将其转换为 <xref:System.DateTime> 对象以在单元格 A7 中显示。 必须设置单元格 A7 的格式以显示日期。
 
- [!code-vb[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#7)]
- [!code-csharp[Trin_VstcoreCreatingExcel#7](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#7)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet7":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet7":::
 
 ### <a name="excel-worksheet-functions"></a>Excel 工作表函数
  Excel 的大多数语言版本都在内部转换了工作表函数名。 但是，由于潜在的语言和 COM 互操作问题，建议你在代码中仅使用英语函数名称。
@@ -97,7 +97,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>使用外部数据的应用程序
  对于打开或以其他方式使用外部数据（如包含从旧系统中导出的逗号分隔值的文件（CSV 文件））的任何代码，如果这些文件是使用除 en-US 格式之外的任何格式导出的，则这些代码也会受到影响。 由于数据库中的所有值都应为二进制格式，因此只要数据库不将日期作为字符串存储且不执行不使用二进制格式的操作，数据库访问就不会受到影响。 另外，如果使用 Excel 中的数据构造 SQL 查询，则可能需要根据使用的函数来确保数据为 en-US 格式。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：面向 Office 多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

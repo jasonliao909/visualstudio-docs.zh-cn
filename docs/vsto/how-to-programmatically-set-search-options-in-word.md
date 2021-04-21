@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: e583b7deb9fbe37f40e582d2c8a946332dd00ffa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 605f782bf6dc3bb56b52bdcd896d1c6419cf5f51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913470"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825025"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以编程方式在 Word 中设置搜索选项
   可以通过两种方式为 Microsoft Office Word 文档中的选择设置搜索选项：
@@ -42,7 +42,7 @@ ms.locfileid: "99913470"
 
 1. 设置对象的属性 <xref:Microsoft.Office.Interop.Word.Find> ，以便通过文本 " **查找我**" 向前搜索所选内容。
 
-     [!code-vb[Trin_VstcoreWordAutomation#76](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#76)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet76":::
 
 ## <a name="use-execute-method-arguments"></a>使用 Execute 方法参数
  下面的代码使用 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 对象的方法在 <xref:Microsoft.Office.Interop.Word.Find> 当前选定内容中搜索文本。 请注意，搜索条件（如向前搜索、换行和文本搜索）作为方法的参数进行传递 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。
@@ -51,8 +51,8 @@ ms.locfileid: "99913470"
 
 1. 将搜索条件作为方法的参数传递 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以通过文本的选择向前搜索 " **查找我**"。
 
-     [!code-vb[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#77)]
-     [!code-csharp[Trin_VstcoreWordAutomation#77](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#77)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet77":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet77":::
 
 ## <a name="see-also"></a>另请参阅
 - [如何：以编程方式在文档中搜索和替换文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)

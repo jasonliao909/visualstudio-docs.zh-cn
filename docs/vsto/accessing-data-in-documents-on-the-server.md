@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 1c610bdc33564e3e211d1ec5aab943af4eec49d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965793"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826767"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上文档中的数据
   您可以对文档级自定义项中的数据进行编程，而不必使用 Microsoft Office Word 或 Microsoft Office Excel 的对象模型。 这意味着，你可以访问服务器上的文档中包含的数据，该服务器未安装 Word 或 Excel。 例如，服务器上的代码 (例如，在 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 页面) 可以自定义文档中的数据，并将自定义文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码会将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分开。 有关详细信息，请参阅 [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
@@ -45,8 +45,8 @@ ms.locfileid: "99965793"
 
   下面的代码示例演示如何访问 `Sheet1` Excel 工作簿项目的类中的缓存字符串。 此示例摘自为方法提供的更大示例的一部分 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
-  [!code-csharp[Trin_ServerDocument#12](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#12)]
-  [!code-vb[Trin_ServerDocument#12](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#12)]
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet12":::
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet12":::
 
 ## <a name="modify-data-in-the-cache"></a>修改缓存中的数据
  若要修改缓存的数据对象，通常需要执行以下步骤：
@@ -66,8 +66,8 @@ ms.locfileid: "99965793"
 
  下面的代码示例演示如何在 `Sheet1` Excel 工作簿项目的类中更改缓存字符串的值。 此示例摘自为方法提供的更大示例的一部分 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 。
 
- [!code-csharp[Trin_ServerDocument#11](../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs#11)]
- [!code-vb[Trin_ServerDocument#11](../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb#11)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ServerDocument/Form1.cs" id="Snippet11":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ServerDocument/Form1.vb" id="Snippet11":::
 
 ### <a name="modify-null-values-in-the-data-cache"></a>修改数据缓存中的 null 值
  保存并关闭文档时，数据缓存不会存储值 **为 null** 的对象。 修改缓存的数据时，此限制具有几个后果：

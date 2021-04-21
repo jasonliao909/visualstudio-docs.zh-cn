@@ -14,12 +14,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9eaa78a04c7dfda42a82a5d5a9ff3b407e6502d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80c574799029f3fe8c4769d852886a625ffd93aa
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842000"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824272"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>演练：设计 Outlook 窗体区域
   自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅 [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
@@ -90,14 +90,14 @@ ms.locfileid: "99842000"
 
 8. 在 " **标识将显示此窗体区域的邮件类** " 页上，清除 " **邮件**"，选择 " **联系人**"，然后单击 " **完成**"。
 
-     *MapIt.cs* 或 *mapit.vb* 文件将添加到你的项目中。
+     *Mapit.vb* 或 *mapit.vb* 文件将添加到你的项目中。
 
 ## <a name="design-the-layout-of-the-form-region"></a>设计窗体区域的布局
  使用 *窗体区域设计器* 直观地开发窗体区域。 可将托管的控件拖到窗体区域设计器图面。 使用设计器和 " **属性** " 窗口来调整控件的布局和外观。
 
 ### <a name="to-design-the-layout-of-the-form-region"></a>设计窗体区域的布局
 
-1. 在 **解决方案资源管理器** 中，展开 " **MapItAddIn** " 项目，然后双击 " *MapIt.cs* " 或 " *Mapit.vb* " 以打开窗体区域设计器。
+1. 在 **解决方案资源管理器** 中，展开 " **MapItAddIn** " 项目，然后双击 " *mapit.vb* " 或 " *Mapit.vb* " 以打开窗体区域设计器。
 
 2. 右键单击设计器，然后单击 " **属性**"。
 
@@ -116,9 +116,9 @@ ms.locfileid: "99842000"
 
 ### <a name="to-customize-the-behavior-of-the-form-region"></a>自定义窗体区域的行为
 
-1. 在 **解决方案资源管理器** 中，右键单击 " *MapIt.cs* " 或 " *mapit.vb*"，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " *mapit.vb* " 或 " *mapit.vb*"，然后单击 " **查看代码**"。
 
-    在代码编辑器中打开 *MapIt.cs* 或 *mapit.vb* 。
+    在代码编辑器中打开 *mapit.vb* 或 *mapit.vb* 。
 
 2. 展开 **窗体区域工厂** 代码区域。
 
@@ -126,8 +126,8 @@ ms.locfileid: "99842000"
 
 3. 将以下代码添加到 `MapItFactory_FormRegionInitializing` 事件处理程序中。 将在用户打开联系人项目时调用此事件处理程序。 下面的代码确定联系人项目是否包含地址。 如果联系人项不包含地址，则此代码会将类的 <xref:System.ComponentModel.CancelEventArgs.Cancel%2A> 属性设置 <xref:Microsoft.Office.Tools.Outlook.FormRegionInitializingEventArgs> 为 **true** ，并且不显示窗体区域。 否则，VSTO 外接程序将引发 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件，并显示窗体区域。
 
-    [!code-csharp[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Separate#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
 4. 将以下代码添加到 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 事件处理程序中。 此代码执行以下任务：
 
@@ -137,8 +137,8 @@ ms.locfileid: "99842000"
 
      本地搜索网站将在 Map It 窗体区域中出现，并在便笺本中显示每个地址。
 
-     [!code-csharp[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Separate#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Separate_O12/MapIt.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet2":::
 
 ## <a name="test-the-outlook-form-region"></a>测试 Outlook 窗体区域
  运行项目时，Visual Studio 将打开 Outlook。 打开联系人项目以查看 Map It 窗体区域。 Map It 窗体区域显示为包含地址的任何联系人项目的窗体中的页面。
@@ -156,7 +156,7 @@ ms.locfileid: "99842000"
     |地址类型|地址|
     |------------------|-------------|
     |**业务**|**4567 Main St 号，NY**|
-    |**主页**|**1234北部圣彼得堡，纽约州**|
+    |**Home**|**1234北部圣彼得堡，纽约州**|
     |**其他**|**3456主要圣北京，华盛顿州**|
 
 4. 保存并关闭联系人项目。

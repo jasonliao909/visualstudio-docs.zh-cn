@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4bd636070a8375b6761cb2d3ab62d08be4302db4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f78ca406d19461de7fa8e2a8c147b1003c9c852
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937493"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826962"
 ---
 # <a name="walkthrough-create-a-template-by-using-content-controls"></a>演练：使用内容控件创建模板
   本演练演示如何创建使用内容控件在 Microsoft Office Word 模板中创建可重用结构化内容的文档级自定义项。
@@ -139,17 +139,17 @@ ms.locfileid: "99937493"
 
 ### <a name="to-modify-the-ui-of-the-content-controls-programmatically"></a>以编程方式修改内容控件的 UI
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument.cs** " 或 " **ThisDocument**"，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument**"，然后单击 " **查看代码**"。
 
 2. 将以下代码添加到 `ThisDocument` 类。 此代码声明了几个对象，你稍后将在本演练中使用它们。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#1)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#1](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet1":::
 
 3. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法。 此代码将条目添加到表格中的 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 和 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl>，并在用户进行编辑前设置每个控件中显示的占位符文本。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#2)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#2](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet2":::
 
 ## <a name="prevent-users-from-editing-the-employee-table"></a>阻止用户编辑员工表
  使用你之前声明的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 对象保护员工表。 保护员工表后，用户仍可编辑该表格中的内容控件。 但是，他们无法编辑第一列中的文本或以其他方式修改该表格，如添加或删除行和列。 有关如何使用 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 来保护文档部分的详细信息，请参阅 [内容控件](../vsto/content-controls.md)。
@@ -158,8 +158,8 @@ ms.locfileid: "99937493"
 
 1. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法中上一步添加的代码之后。 此代码可防止用户通过将表格置于你之前声明的 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 对象之中来编辑员工表。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#3)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#3](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet3":::
 
 ## <a name="add-the-tables-to-the-building-block-collection"></a>向构建基块集合添加表
  将表格添加到模板中的文档构建基块集合，使用户可以将你创建的表格插入到文档中。 有关文档构建基块的详细信息，请参阅 [内容控件](../vsto/content-controls.md)。
@@ -168,13 +168,13 @@ ms.locfileid: "99937493"
 
 1. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法中上一步添加的代码之后。 此代码将包含表的新构建基块添加到 BuildingBlockEntries 集合，该集合包含模板中的所有可重用的构建基块。 新的构建基块在名为 "员工" **和 "客户信息** " 的新类别中定义，并被分配了 "构建基块类型" `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#4)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#4](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet4":::
 
 2. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法中上一步添加的代码之后。 此代码将从模板删除表格。 将不再需要表格，因为已在模板中将其添加到可重用构建基块库。 代码首先将文档设置为设计模式，从而可以删除受保护的员工表。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#5)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#5](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#5)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet5":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet5":::
 
 ## <a name="create-a-content-control-that-displays-the-building-blocks"></a>创建显示构建基块的内容控件
  创建一个内容控件，用于提供对先前创建的构建基块（即表格）的访问权限。 用户可以单击此控件以将表格添加到文档。
@@ -183,8 +183,8 @@ ms.locfileid: "99937493"
 
 1. 将以下代码添加到 `ThisDocument` 类的 `ThisDocument_Startup` 方法中上一步添加的代码之后。 此代码将初始化之前声明的 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl> 对象。 <xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl>显示在 "**员工" 和 "客户信息**" 类别中定义的所有构建基块，并具有 "构建" 块类型 `Microsoft.Office.Interop.Word.WdBuildingBlockTypes.wdTypeCustom1` 。
 
-     [!code-vb[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb#6)]
-     [!code-csharp[Trin_ContentControlTemplateWalkthrough#6](../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs#6)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/ContentControlTemplateWalkthrough/ThisDocument.vb" id="Snippet6":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/ContentControlTemplateWalkthrough/ThisDocument.cs" id="Snippet6":::
 
 ## <a name="test-the-project"></a>测试项目
  用户可以单击文档中的构建基块库控件，以插入员工表或客户反馈表。 用户可以在两个表的内容控件中键入或选择响应。 用户可以修改客户反馈表的其他部分，但应无法修改员工表的其他部分。
@@ -236,7 +236,7 @@ ms.locfileid: "99937493"
 
 - 将内容控件绑定到嵌入到文档中的 XML 片段（也称为自定义 XML 部件）。 有关详细信息，请参阅 [演练：将内容控件绑定到自定义 XML 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)
 - [内容控件](../vsto/content-controls.md)
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)

@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 270754005704d91569f014ed2e0be382bc2dd707
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1209bf903f5a5b9c0005d9ba4ba6a891752aedd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827781"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
   本演练演示了在 Microsoft Office Excel 工作表上使用按钮和文本框的基础知识，以及如何使用 Visual Studio 中的 Office 开发工具创建 Excel 项目。 若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
@@ -87,12 +87,12 @@ ms.locfileid: "99906465"
 
 2. 将以下代码添加到 <xref:System.Windows.Forms.Control.Click> 按钮的事件处理程序中：
 
-     [!code-vb[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb#11)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#11)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet11":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet11":::
 
 3. 在 c # 中，必须向事件添加事件处理程序，如下 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 所示。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsExcel#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet12":::
 
 ## <a name="test-the-application"></a>测试应用程序
  你现在可以测试工作簿，确保消息 **Hello World！** 当您单击按钮时，显示在文本框中。
@@ -112,7 +112,7 @@ ms.locfileid: "99906465"
 
 - 使用复选框来更改格式设置。 有关详细信息，请参阅 [演练：使用 CheckBox 控件更改工作表格式](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
 - [Office 文档 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

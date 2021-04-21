@@ -23,12 +23,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f84a694c9a18b6ec1c64204c8150ff721633278d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86f4e5f286d817fb3f657e40399eccd3a2b4de73
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962465"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828028"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用扩展性接口自定义 UI 功能
   Visual Studio 中的 Office 开发工具提供了一些类和设计器，使用它们在 VSTO 外接程序中创建自定义任务窗格、功能区自定义项和 Outlook 窗体区域时可处理许多实现细节。 不过，如果你有特殊要求，也可以自己为每项功能实现 *扩展性接口* 。
@@ -68,18 +68,18 @@ ms.locfileid: "99962465"
   > [!NOTE]
   > 要向 COM 公开 `TaskPaneUI` 类，你必须同时为项目设置“为 COM 互操作注册”  属性。
 
-  [!code-vb[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#1)]
-  [!code-csharp[Trin_SimpleExtensibilityInterface#1](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#1)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet1":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet1":::
 
   有关实现的详细信息 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> ，请参阅 Microsoft Office 文档中的在 [2007 Office System 中创建自定义任务窗格](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) 。
 
 ### <a name="example-of-overriding-the-requestservice-method"></a>重写 RequestService 方法的示例
  下面的代码示例演示如何重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以从前面的代码示例中返回 `TaskPaneHelper` 类的实例。 它将检查 *serviceGuid* 参数的值以确定请求的是哪个接口，然后返回实现该接口的对象。
 
- [!code-vb[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb#2)]
- [!code-csharp[Trin_SimpleExtensibilityInterface#2](../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs#2)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet2":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)

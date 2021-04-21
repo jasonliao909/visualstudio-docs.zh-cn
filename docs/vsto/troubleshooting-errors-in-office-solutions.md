@@ -22,12 +22,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: cbda0a4b7977f962751ed9803bd1b39103f67679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bc1b674caf46dc84ff7bf57c983131b79cfde51
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968822"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827807"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>排查 Office 解决方案中的错误
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：
@@ -121,7 +121,7 @@ ms.locfileid: "99968822"
 
  例如，<xref:Microsoft.Office.Interop.Excel.Application> 对象具有一个<xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件和一个 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 属性。 若要处理 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件，请将 <xref:Microsoft.Office.Interop.Excel.Application> 强制转换为 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 接口。 下面的代码示例演示了如何在 Excel 的文档级项目中进行此操作。
 
- [!code-csharp[Trin_VstcoreTroubleshootingExcel#1](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
  有关 Office Pia 中的事件接口的详细信息，请参阅 [office 主互操作程序集中的类和接口概述](/previous-versions/office/office-12//ms247299(v=office.12))。
 
@@ -157,18 +157,18 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ### <a name="references-to-office-classes-are-not-recognized"></a>无法识别对 Office 类的引用
  某些类名（例如应用程序）位于多个命名空间中，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 出于此原因，项目模板顶部 **的 import** / **using** 语句包含简写的限定常数，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#2)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
 
  此 / **使用 import using** 语句的情况要求使用 Word 或 Excel 限定符区分对 Office 类的引用，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#3)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet3":::
 
  如果使用非限定性声明，将出现错误，例如：
 
- [!code-csharp[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs#4)]
- [!code-vb[Trin_VstcoreTroubleshootingWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb#4)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet4":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet4":::
 
  即使您已经导入了 Word 或 Excel 命名空间并有权访问其中的所有类，也必须使用 Word 或 Excel 完全限定所有类型，以消除命名空间的歧义。
 
@@ -215,7 +215,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  无论是在对话框中单击 **"是" 还是 "** **否** "，Visual Studio 都将终止 Excel 或 Word 进程并停止调试器。 若要停止调试项目而不显示此对话框，请直接退出 Excel 或 Word，而不是在 Visual Studio 中停止调试器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [排查 Office 解决方案问题](../vsto/troubleshooting-office-solutions.md)
 - [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
 - [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 7599348b0c44b7239305bb5af49ee2f5c51d882b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d94891520695117c7a395f81feda81e52f909fe6
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906591"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824492"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到 Word 操作窗格上的控件
   本演练演示如何将数据绑定到 Word 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -89,7 +89,7 @@ ms.locfileid: "99906591"
 
 4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
 
-5. 单击 **“下一步”** 。
+5. 单击“下一步”。
 
 6. 清除 "保存连接" 选项，然后单击 " **下一步**"。
 
@@ -97,7 +97,7 @@ ms.locfileid: "99906591"
 
 8. 选中 " **供应商** " 和 " **产品** " 表旁边的复选框。
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
    向导将 " **供应商** 表和 **产品** " 表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -134,8 +134,8 @@ ms.locfileid: "99906591"
 
     |属性|值|
     |--------------|-----------|
-    |**名称**|**插入**|
-    |**Text**|**插入**|
+    |**名称**|插入|
+    |**Text**|插入|
 
 12. 调整用户控件的大小以适应控件。
 
@@ -146,12 +146,12 @@ ms.locfileid: "99906591"
 
 1. 在 <xref:System.Windows.Forms.UserControl.Load> 类的事件处理程序中 `ActionsControl` ，添加以下代码。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#1)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#1](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet1":::
 
 2. 在 c # 中，必须将事件处理程序附加到 <xref:System.Windows.Forms.UserControl.Load> 事件。 可以在调用后将此代码放在 `ActionsControl` 构造函数中 `InitializeComponent` 。 有关如何创建事件处理程序的详细信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#33](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#33)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet33":::
 
 ### <a name="to-set-data-binding-properties-of-the-controls"></a>设置控件的数据绑定属性
 
@@ -178,43 +178,43 @@ ms.locfileid: "99906591"
 
 1. 在 `ActionsControl` 类中，创建一个用于设置表标题格式的方法。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#2)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#2](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet2":::
 
 ### <a name="to-create-the-table"></a>创建表
 
 1. 在 `ActionsControl` 类中，编写一个方法，该方法将创建表（如果该表尚不存在），并将操作窗格中的数据添加到表中。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#3)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#3](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet3":::
 
 ### <a name="to-insert-text-into-a-word-table"></a>向 Word 表中插入文本
 
 1. 将以下代码添加到 <xref:System.Windows.Forms.Control.Click> " **插入** " 按钮的事件处理程序中。
 
-     [!code-vb[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb#4)]
-     [!code-csharp[Trin_VstcoreActionsPaneWord#4](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#4)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet4":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet4":::
 
 2. 在 c # 中，必须为按钮的事件创建事件处理程序 <xref:System.Windows.Forms.Control.Click> 。  可以将此代码放在 <xref:System.Windows.Forms.UserControl.Load> 类的事件处理程序中 `ActionsControl` 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#5](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet5":::
 
 ## <a name="show-the-actions-pane"></a>显示操作窗格
  添加控件后，"操作" 窗格将变为可见。
 
 ### <a name="to-show-the-actions-pane"></a>显示操作窗格
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument.cs**"，然后单击快捷菜单上的 " **查看代码** "。
+1. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument**"，然后单击快捷菜单上的 " **查看代码** "。
 
 2. 在类的顶部创建控件的新实例， `ThisDocument` 使其类似于下面的示例。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#6)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#6](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet6":::
 
 3. 将代码添加到 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件处理程序中， `ThisDocument` 以使其类似于下面的示例。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>测试应用程序
  现在，你可以对文档进行测试，以验证在打开文档时是否显示操作窗格。 在 "操作" 窗格上的控件中测试大纲/细节关系，并确保在单击 " **插入** " 按钮时，将数据填充到 Word 表中。
@@ -238,7 +238,7 @@ ms.locfileid: "99906591"
 
 - 部署项目。 有关详细信息，请参阅 [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)

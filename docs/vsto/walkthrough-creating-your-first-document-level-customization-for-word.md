@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 56777213c4cac0e2356fa33235d2527abdbb5172
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71051c6255f9035079a7888fb3a4c7df2f5eab59
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966638"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827547"
 ---
 # <a name="walkthrough-create-your-first-document-level-customization-for-word"></a>演练：创建您的第一个 Word 文档级自定义项
 
@@ -57,7 +57,7 @@ ms.locfileid: "99966638"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 ::: moniker range="vs-2017"
 3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -67,7 +67,7 @@ ms.locfileid: "99966638"
 
 6. 在 " **名称** " 框中，键入 **FirstDocumentCustomization**。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
 8. 从 " **Visual Studio Tools for Office 项目向导**" 中选择 "**创建新文档**"，然后单击 **"确定"**。
 ::: moniker-end
@@ -76,7 +76,7 @@ ms.locfileid: "99966638"
 
      [!INCLUDE[new-project-dialog-search](../vsto/includes/new-project-dialog-search-md.md)]
 
-4. 单击 **“下一步”** 。
+4. 单击“下一步”。
 
 5. 在 "**配置新项目**" 对话框的 "**名称**" 框中键入 **FirstWorkbookCustomization** ，然后单击 "**创建**"。
 
@@ -124,8 +124,8 @@ ms.locfileid: "99966638"
 
 2. 将 `ThisDocument_Startup` 事件处理程序替换为以下代码。 当打开文档时，此代码会将文本第二个段落添加到文档中。
 
-     [!code-vb[Trin_WordDocumentTutorial#1](../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb#1)]
-     [!code-csharp[Trin_WordDocumentTutorial#1](../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/FirstDocumentCustomization/ThisDocument.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstDocumentCustomization/ThisDocument.cs" id="Snippet1":::
 
     > [!NOTE]
     > 此代码使用索引值 1 来访问 <xref:Microsoft.Office.Tools.Word.Document.Paragraphs%2A> 属性的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅 [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
@@ -172,7 +172,7 @@ ms.locfileid: "99966638"
 
 - 部署 Word 的文档级自定义项： [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word 解决方案](../vsto/word-solutions.md)
