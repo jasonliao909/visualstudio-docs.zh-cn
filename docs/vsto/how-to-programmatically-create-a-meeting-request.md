@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 73f85308a15afd4828bb6143d0e883fefc6708d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74479f68f763822f4f80fa6bb33cb708d4db26da
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964142"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828717"
 ---
 # <a name="how-to-programmatically-create-a-meeting-request"></a>如何：以编程方式创建会议请求
   此示例在 Microsoft Office Outlook 中创建会议请求并将请求发送到指定与会者。
@@ -29,9 +29,9 @@ ms.locfileid: "99964142"
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs#1)]
- [!code-vb[Trin_Outlook_RL_MeetingRequest#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_MeetingRequest/thisaddin.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_MeetingRequest/thisaddin.vb" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用日历项](../vsto/working-with-calendar-items.md)
 - [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)

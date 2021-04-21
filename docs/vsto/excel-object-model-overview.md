@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: a49dcc36d4079a6a945806b3112e3949ddcd79e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 509378b13e48f21a1148d700addd9ac4e78985e9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910297"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825688"
 ---
 # <a name="excel-object-model-overview"></a>Excel 对象模型概述
   若要开发使用 Microsoft Office Excel 的解决方案，可与由 Excel 对象模型提供的对象进行交互。 本主题介绍最重要的对象：
@@ -50,7 +50,7 @@ ms.locfileid: "99910297"
   本主题概要介绍 Excel 对象模型。 有关可了解整个 Excel 对象模型的详细信息的资源，请参阅 [使用 excel 对象模型文档](#ExcelOMDocumentation)。
 
 ## <a name="access-objects-in-an-excel-project"></a>访问 Excel 项目中的对象
- 为 Excel 创建新的 VSTO 外接程序项目时，Visual Studio 将自动创建 *ThisAddIn* 或 *ThisAddIn.cs* 代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。
+ 为 Excel 创建新的 VSTO 外接程序项目时，Visual Studio 将自动创建 *ThisAddIn* 或 *ThisAddIn* 代码文件。 可以通过使用 `Me.Application` 或 `this.Application` 访问应用程序对象。
 
  为 Excel 创建新的文档级项目时，可选择创建新的 Excel 工作簿或 Excel 模板项目。 Visual Studio 在新的 Excel 项目中为工作簿和模板项目自动创建以下代码文件。
 
@@ -63,8 +63,8 @@ ms.locfileid: "99910297"
 
  可以在项目中使用 `Globals` 类来从各个类的外部访问 `ThisWorkbook`、`Sheet1`、`Sheet2` 或 `Sheet3`。 有关详细信息，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。 下面的示例调用的 <xref:Microsoft.Office.Interop.Excel._Worksheet.PrintPreview%2A> 方法， `Sheet1` 而不考虑是否将代码放入 `Sheet` *n* 类或类中的一个 `ThisWorkbook` 。
 
- [!code-csharp[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#82)]
- [!code-vb[Trin_VstcoreExcelAutomation#82](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#82)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet82":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet82":::
 
  由于 Excel 文档中的数据已高度结构化，因此该对象模型是分层模型且非常简单。 Excel 提供了数百个可与之交互的对象，但您可以通过将精力集中在可用对象的一小部分来了解对象模型的良好开端。 这些对象包括以下四种：
 

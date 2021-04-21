@@ -33,12 +33,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: fbc3258f3ea7e0b3cc93a2887dfff5a3bfefb19d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 463543a40ac9443959b06cf9f65dad4c99c52ee3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891886"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828821"
 ---
 # <a name="programmatic-limitations-of-host-items-and-host-controls"></a>宿主项和宿主控件的编程限制
   每个宿主项和宿主控件的行为都类似于相应的本机 Microsoft Office Word 或 Microsoft Office Excel 对象，并且具有附加功能。 但是，在运行时宿主项和宿主控件的行为与本机 Office 对象之间存在一些本质区别。
@@ -74,8 +74,8 @@ ms.locfileid: "99891886"
 
  下面的示例创建一个 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，并将其传递给 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法。 该代码使用命名范围的 <xref:Microsoft.Office.Tools.Excel.NamedRange.InnerObject%2A> 属性来返回 <xref:Microsoft.Office.Interop.Excel.Range> 方法所需的基础 Office <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 。
 
- [!code-csharp[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#28)]
- [!code-vb[Trin_VstcoreHostControlsExcel#28](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#28)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet28":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet28":::
 
 ### <a name="return-types-of-native-office-methods-and-properties"></a>返回本机 Office 方法和属性的类型
  宿主项的大多数方法和属性将返回宿主项所依据的基础本机 Office 对象。 例如，Excel 中 <xref:Microsoft.Office.Tools.Excel.NamedRange.Parent%2A> 宿主控件的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 属性将返回 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象而不是 <xref:Microsoft.Office.Tools.Excel.Worksheet> 宿主项。 同样，Word 中 <xref:Microsoft.Office.Tools.Word.RichTextContentControl.Parent%2A> 宿主控件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 属性也将返回 <xref:Microsoft.Office.Interop.Word.Document> 对象而不是 <xref:Microsoft.Office.Tools.Word.Document> 宿主项。
@@ -83,14 +83,14 @@ ms.locfileid: "99891886"
 ### <a name="access-collections-of-host-controls"></a>访问宿主控件的集合
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 不为每种类型的宿主控件提供单独的集合。 而应使用宿主项的 Controls 属性来循环访问所有托管控件， (宿主控件和文档或工作表上的 Windows 窗体控件) ，然后查找与所需的主机控件类型匹配的项。 下面的代码示例检查 Word 文档中的每个控件，并确定控件是否为 <xref:Microsoft.Office.Tools.Word.Bookmark>。
 
- [!code-csharp[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs#10)]
- [!code-vb[Trin_VstcoreHostControlsWord#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet10":::
 
  有关宿主项的 Controls 属性的详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
  Word 和 Excel 对象模型包括公开文档和工作表中本机控件的集合的属性。 不能使用这些属性来访问托管控件。 例如，不能使用 <xref:Microsoft.Office.Tools.Word.Bookmark> 的 <xref:Microsoft.Office.Interop.Word._Document.Bookmarks%2A> 属性或 <xref:Microsoft.Office.Interop.Word.Document> 的 <xref:Microsoft.Office.Tools.Word.Document.Bookmarks%2A> 属性来枚举文档中的每个 <xref:Microsoft.Office.Tools.Word.Document>宿主控件。 这些属性仅包括文档中的 <xref:Microsoft.Office.Interop.Word.Bookmark> 控件；不包括文档中的 <xref:Microsoft.Office.Tools.Word.Bookmark> 宿主控件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)
 - [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)

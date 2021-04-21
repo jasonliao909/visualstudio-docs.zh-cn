@@ -34,12 +34,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 83fdc3b6a60c5f8972ff5d955c56476fb13315d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2ee62f35b0626139a8080649076d2ac941366a26
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971825"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828704"
 ---
 # <a name="program-vsto-add-ins"></a>程序 VSTO 外接程序
   通过创建 VSTO 外接程序扩展 Microsoft Office 应用程序时，可以直接接针对项目中的 `ThisAddIn` 类编写代码。 此类可用于执行下列任务，例如：访问 Microsoft Office 主机应用程序的对象模型、自定义应用程序的用户界面 (UI) 和向其他 Office 解决方公开 VSTO 外接程序中的对象。
@@ -51,7 +51,7 @@ ms.locfileid: "99971825"
  有关可以通过使用 Visual Studio 中的 Office 开发工具创建的 VSTO 外接程序和其他类型的解决方案的常规信息，请参阅 [office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)。
 
 ## <a name="use-the-thisaddin-class"></a>使用 ThisAddIn 类
- 你可以在 `ThisAddIn` 类中开始编写 VSTO 外接程序代码。 Visual Studio 会自动在 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] VSTO 外接程序项目中的) 或 ThisAddIn.cs () 代码文件中的 (ThisAddIn 或中生成此类。 当 Microsoft Office 应用程序加载 VSTO 外接程序时， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将为你自动实例化此类。
+ 你可以在 `ThisAddIn` 类中开始编写 VSTO 外接程序代码。 Visual Studio 会自动在 (*ThisAddIn* 中的 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]) 或 *ThisAddIn* (中生成此类，在 VSTO 外接程序项目中 ) 代码文件。 当 Microsoft Office 应用程序加载 VSTO 外接程序时， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 将为你自动实例化此类。
 
  `ThisAddIn` 类中有两个默认的事件处理程序。 若要在加载 VSTO 外接程序后运行代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。 若要在卸载 VSTO 外接程序前运行代码，请将代码添加到 `ThisAddIn_Shutdown` 事件处理程序。 有关这些事件处理程序的详细信息，请参阅 [Office 项目中的事件](../vsto/events-in-office-projects.md)。
 
@@ -112,8 +112,8 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  仅当在用户创建一个文档或打开现有文档时，以下代码示例才会使用 Word 中的文档。
 
- [!code-csharp[Trin_WordAddIn_Menus#3](../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs#3)]
- [!code-vb[Trin_WordAddIn_Menus#3](../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb#3)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet3":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet3":::
 
 ### <a name="thisaddin-members-to-use-for-other-tasks"></a>用于其他任务的 ThisAddIn 成员
  下表描述了其他常见任务，并显示了你可以用以执行这些任务的 `ThisAddIn` 类的成员类型。
@@ -145,7 +145,7 @@ Excel.Workbook newWorkbook = Globals.ThisAddIn.Application.Workbooks.Add(System.
 
  有关详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
 - [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
