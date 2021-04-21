@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 843718ea49ae7df7d34775283ce8120f077b0a0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925512"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824843"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：使用缓存的数据集创建主/从关系
   本演练演示如何在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。
@@ -81,7 +81,7 @@ ms.locfileid: "99925512"
 
 8. 选择 " **订单** " 表和 " **订单详细信息** " 表。
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
    向导将两个表添加到 " **数据源** " 窗口。 它还将一个类型化数据集添加到你的项目中，该数据集在 **解决方案资源管理器** 中可见。
 
@@ -138,16 +138,16 @@ ms.locfileid: "99925512"
 
 ### <a name="to-initialize-the-data-and-the-controls"></a>初始化数据和控件
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **Sheet1** " 或 " **Sheet1.cs**"，然后单击快捷菜单上的 " **查看代码** "。
+1. 在 **解决方案资源管理器** 中，右键单击 " **sheet1** " 或 " **sheet1**"，然后单击快捷菜单上的 " **查看代码** "。
 
 2. 将以下代码添加到 `Sheet1_Startup` 方法以设置按钮的文本。
 
-     [!code-vb[Trin_VstcoreDataExcel#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#15)]
-     [!code-csharp[Trin_VstcoreDataExcel#15](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet15":::
 
 3. 仅适用于 c #，将按钮单击事件的事件处理程序添加到 `Sheet1_Startup` 方法。
 
-     [!code-csharp[Trin_VstcoreDataExcel#16](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet16":::
 
 ## <a name="add-code-to-enable-scrolling-through-the-records"></a>添加代码以启用滚动记录
  将代码添加到 <xref:System.Windows.Forms.Control.Click> 每个按钮的事件处理程序，以在记录中移动。
@@ -156,13 +156,13 @@ ms.locfileid: "99925512"
 
 1. 为的事件添加事件处理程序 <xref:System.Windows.Forms.Control.Click> `Button1` ，并添加以下代码以在记录中向后移动：
 
-     [!code-vb[Trin_VstcoreDataExcel#17](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#17)]
-     [!code-csharp[Trin_VstcoreDataExcel#17](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#17)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet17":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet17":::
 
 2. 为的事件添加事件处理程序 <xref:System.Windows.Forms.Control.Click> `Button2` ，并添加以下代码以提前完成记录：
 
-     [!code-vb[Trin_VstcoreDataExcel#18](../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb#18)]
-     [!code-csharp[Trin_VstcoreDataExcel#18](../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs#18)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet2.vb" id="Snippet18":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet2.cs" id="Snippet18":::
 
 ## <a name="test-the-application"></a>测试应用程序
  现在，你可以测试工作簿以确保数据按预期方式显示，并且可以脱机使用该解决方案。

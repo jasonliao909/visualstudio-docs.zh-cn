@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 6fd35551c5c40494c169fb569113e3530f633a6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dce8bb0667cecbe073c734595d341f9c7b7ccac9
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940795"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826078"
 ---
 # <a name="threading-support-in-office"></a>Office 中的线程支持
   本文提供了有关 Microsoft Office 对象模型中如何支持线程处理的信息。 Office 对象模型不是线程安全的，但可以在 Office 解决方案中使用多个线程。 Office 应用程序是组件对象模型 (COM) 服务器。 COM 允许客户端在任意线程上调用 COM 服务器。 对于非线程安全的 COM 服务器，COM 提供一种机制来序列化并发调用，以便在服务器上随时只执行一个逻辑线程。 此机制称为单线程单元 (STA) 模型。 由于调用是序列化的，因此在服务器繁忙或正在处理后台线程上的其他调用时，调用方可能会被阻止一段时间。
@@ -38,7 +38,7 @@ ms.locfileid: "99940795"
 
 - 并发
 
-- 同步
+- Synchronization
 
 - 封送
 
@@ -65,15 +65,15 @@ ms.locfileid: "99940795"
 ## <a name="start-the-thread-correctly"></a>正确启动线程
  创建新的 STA 线程时，请在启动线程之前将单元状态设置为 STA。 下面的代码示例演示如何执行此操作。
 
- [!code-csharp[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs#5)]
- [!code-vb[Trin_VstcoreCreatingExcel#5](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb#5)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/ThisWorkbook.cs" id="Snippet5":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/ThisWorkbook.vb" id="Snippet5":::
 
  有关详细信息，请参阅 [托管线程处理最佳做法](/dotnet/standard/threading/managed-threading-best-practices)。
 
 ## <a name="modeless-forms"></a>无模式窗体
  在显示窗体时，无模式窗体允许与应用程序进行某种类型的交互。 用户与窗体进行交互，窗体与应用程序交互，而不关闭。 Office 对象模型支持托管无模式窗体;但是，它们不应在后台线程上使用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [线程处理 (C#)](/dotnet/csharp/programming-guide/concepts/threading/index)
 - [线程处理 (Visual Basic)](/dotnet/visual-basic/programming-guide/concepts/threading/index)
 - [使用线程和线程处理](/dotnet/standard/threading/using-threads-and-threading)

@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 57b330884ef6638e5c853cfb5670e3552aca46cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 58cd5f7a26be57ce0cb742e153d88ee455b2f85b
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940821"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826104"
 ---
 # <a name="specific-security-considerations-for-office-solutions"></a>Office 解决方案的特定安全注意事项
   Microsoft .NET Framework 和 Microsoft Office 提供的安全功能有助于保护你的 Office 解决方案免受可能的安全威胁。 本主题将介绍其中一些威胁并提供有助于免受这些威胁的建议。 还包括有关 Microsoft Office 安全设置如何影响 Office 解决方案的信息。
@@ -67,13 +67,13 @@ ms.locfileid: "99940821"
 
  如果启用了对象模型防护，下面的代码示例将显示一条安全警告。 `Microsoft.Office.Interop.Outlook.MailItem` 类的 `To` 属性受对象模型防护限制。 `Microsoft.Office.Interop.Outlook.MailItem`对象不受信任，因为代码从 `Microsoft.Office.Interop.Outlook.Application` 使用 **new** 运算符创建的获取该对象，而不是从字段中获取该对象 `Application` 。
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#1)]
- [!code-vb[Trin_VstcoreOutlookSecurity#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#1)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet1":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet1":::
 
  下面的代码示例演示如何使用 `Microsoft.Office.Interop.Outlook.MailItem` 对象模型 guard 信任的对象的 "受限制" 属性。 该代码使用受信任的 `Application` 字段获取 `Microsoft.Office.Interop.Outlook.MailItem`。
 
- [!code-csharp[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs#2)]
- [!code-vb[Trin_VstcoreOutlookSecurity#2](../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb#2)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreOutlookSecurity/ThisAddIn.cs" id="Snippet2":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreOutlookSecurity/ThisAddIn.vb" id="Snippet2":::
 
 > [!NOTE]
 > 如果 Outlook 与 Exchange 一起使用，则从 `ThisAddIn.Application` 获取所有 Outlook 对象不能保证 VSTO 外接程序能够访问整个 Outlook 对象模型。 例如，如果 Exchange 管理员将 Outlook 设置为自动拒绝使用 Outlook 对象模型访问地址信息的所有尝试，则 Outlook 将不允许上一个代码示例访问 To 属性，即使该代码示例使用受信任的字段也是如此 `ThisAddIn.Application` 。
