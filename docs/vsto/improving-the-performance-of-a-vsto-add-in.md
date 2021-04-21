@@ -12,12 +12,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5c965c911977f657fe8c5252eabc1739564cf8c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29035f4867421ed3f05e5f0c3a5c196f58b7ab34
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958734"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825116"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提高 VSTO 外接程序的性能
   可以通过优化为 Office 应用程序创建的 VSTO 外接程序为用户提供更好的体验，以便他们快速启动、关闭和打开项，以及执行其他任务。 如果你的 VSTO 外接程序是用于 Outlook 的，则还可以降低由于性能不佳而禁用 VSTO 外接程序的风险。 可以通过实现以下策略来提高 VSTO 外接程序的性能：
@@ -106,8 +106,8 @@ ms.locfileid: "99958734"
 
  下面的示例根据字段的值返回一个功能区对象。
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_ribbon_choose_ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_ribbon_choose_ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ## <a name="perform-expensive-operations-in-a-separate-execution-thread"></a><a name="Perform"></a> 在单独的执行线程中执行成本高昂的操作
  请考虑在单独的线程中执行耗时的任务（如长时间运行的任务、数据库连接或其他类型的网络调用）。 有关详细信息，请参阅 [Office 中的线程支持](../vsto/threading-support-in-office.md)。

@@ -21,12 +21,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 465e28ed0c632bba45fac1670dd40cd90ef417f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90dac328f336f7204bc9a70a0dbc543ec996922a
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970369"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825662"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿
   你可以通过下列方式使用 VSTO 外接程序来自定义 Word 文档和 Excel 工作簿：
@@ -59,22 +59,22 @@ ms.locfileid: "99970369"
 
 - 以下代码示例演示了如何生成活动文档的主机项。
 
-     [!code-vb[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#8)]
-     [!code-csharp[Trin_WordAddInDynamicControls#8](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#8)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet8":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet8":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-workbook"></a>若要生成 Excel 工作簿的主机项
 
 - 以下代码示例演示了如何生成活动工作簿的主机项。
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#2)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#2](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#2)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet2":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet2":::
 
 #### <a name="to-generate-a-host-item-for-an-excel-worksheet"></a>若要生成 Excel 工作表的主机项
 
 - 以下代码示例演示了如何为项目中的活动工作表生成主机项。
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#1)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#1](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#1)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet1":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet1":::
 
 ### <a name="generate-listobject-host-controls"></a>生成 ListObject 主机控件
  当使用 `GetVstoObject` 方法扩展 <xref:Microsoft.Office.Interop.Excel.ListObject> 时，该方法将返回一个 <xref:Microsoft.Office.Tools.Excel.ListObject>。 <xref:Microsoft.Office.Tools.Excel.ListObject>具有原始的所有功能 <xref:Microsoft.Office.Interop.Excel.ListObject> 。 它还具有其他功能，可以使用 Windows 窗体数据绑定模型绑定到数据。 有关详细信息，请参阅 [ListObject 控件](../vsto/listobject-control.md)。
@@ -83,8 +83,8 @@ ms.locfileid: "99970369"
 
 - 以下代码示例演示了如何为项目中活动工作表内第一个 <xref:Microsoft.Office.Tools.Excel.ListObject> 生成 <xref:Microsoft.Office.Interop.Excel.ListObject> 。
 
-     [!code-vb[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb#3)]
-     [!code-csharp[Trin_ExcelAddInDynamicControls#3](../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs#3)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_exceladdindynamiccontrols4/ThisAddIn.vb" id="Snippet3":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_exceladdindynamiccontrols4/ThisAddIn.cs" id="Snippet3":::
 
 ### <a name="add-managed-controls-to-documents-and-worksheets"></a><a name="AddControls"></a> 向文档和工作表中添加托管控件
  在生成 <xref:Microsoft.Office.Tools.Word.Document> 或 <xref:Microsoft.Office.Tools.Excel.Worksheet>后，你可以将控件添加到这些扩展对象表示的文档或工作表。 若要添加控件，请使用 `Controls` 或的 <xref:Microsoft.Office.Tools.Word.Document> 属性 <xref:Microsoft.Office.Tools.Excel.Worksheet> 。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
@@ -105,16 +105,16 @@ ms.locfileid: "99970369"
 ### <a name="example-that-uses-native-word-objects"></a>使用本机 Word 对象的示例
  以下代码示例演示了如何处理 Word 文档的应用程序级事件。 `CreateDocument` 方法可创建一个新文档，然后定义一个 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件处理程序，以防止保存此文档。 事件是为对象引发的应用程序级事件 <xref:Microsoft.Office.Interop.Word.Application> ，事件处理程序必须将参数与对象进行比较， `Doc` `document1` 以确定是否 `document1` 表示保存的文档。
 
- [!code-vb[Trin_WordAddInDynamicControls #12](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#12)]
- [!code-csharp[Trin_WordAddInDynamicControls#12](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#12)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet12":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet12":::
 
 ### <a name="examples-that-use-a-host-item"></a>使用主机项的示例
  以下代码示例通过处理 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 主机项的 <xref:Microsoft.Office.Tools.Word.Document> 事件简化了此过程。 `CreateDocument2`这些示例中的方法生成一个 <xref:Microsoft.Office.Tools.Word.Document> 扩展对象的， `document2` 然后定义一个 <xref:Microsoft.Office.Tools.Word.Document.BeforeSave> 事件处理程序，以防止保存文档。 仅在保存时调用事件处理程序 `document2` ，并且可以取消保存操作而无需执行任何额外工作来验证保存了哪个文档。
 
  以下代码示例演示了此任务。
 
- [!code-vb[Trin_WordAddInDynamicControls #13](../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb#13)]
- [!code-csharp[Trin_WordAddInDynamicControls#13](../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs#13)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet13":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet13":::
 
 ## <a name="determine-whether-an-office-object-has-been-extended"></a><a name="HasVstoObject"></a> 确定是否已扩展 Office 对象
  若要确定是否为特定的本机 Office 对象生成了扩展对象，请使用 `HasVstoObject` 方法。 如果已生成了扩展对象，则此方法返回 **true** 。

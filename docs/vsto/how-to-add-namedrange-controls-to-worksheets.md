@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: aa1b8372f9499695612a0e7335b1dbaf94800e79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7bf2f3ef91a6f572c64f94cb4b1a9a2f493e864
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954171"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827703"
 ---
 # <a name="how-to-add-namedrange-controls-to-worksheets"></a>如何：向工作表添加 NamedRange 控件
   在文档级项目中，你可以在设计时和运行时将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 Microsoft Office Excel 工作表。
@@ -63,7 +63,7 @@ ms.locfileid: "99954171"
 
 3. 选择要包含在命名范围中的一个或多个单元格。
 
-4. 单击“确定”。
+4. 单击 **“确定”** 。
 
      如果不需要提供给控件的默认名称，可以在 **“属性”** 窗口中更改名称。
 
@@ -82,8 +82,8 @@ ms.locfileid: "99954171"
 
 1. 在 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 的 `Sheet1`事件处理程序中，插入下列代码以将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到单元格 **A1** 并将其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性设置为 `Hello world!`
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#3)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet3":::
 
 ## <a name="add-namedrange-controls-at-run-time-in-a-vsto-add-in-project"></a><a name="runtimeaddin"></a> 在运行时在 VSTO 外接程序项目中添加 NamedRange 控件
  可以按编程方式将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 VSTO 外接程序项目中任何打开的工作表中。 工作表关闭时，动态创建的命名范围不作为宿主控件保留在工作表中。 有关详细信息，请参阅 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
@@ -92,8 +92,8 @@ ms.locfileid: "99954171"
 
 1. 下面的代码将生成基于打开工作表的工作表宿主项，然后将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 **A1** 单元格并将其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性设置为 `Hello world`。
 
-     [!code-csharp[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs#7)]
-     [!code-vb[Trin_Excel_Dynamic_Controls#7](../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb#7)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Excel_Dynamic_Controls/ThisAddIn.cs" id="Snippet7":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Excel_Dynamic_Controls/ThisAddIn.vb" id="Snippet7":::
 
 ## <a name="see-also"></a>另请参阅
 - [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

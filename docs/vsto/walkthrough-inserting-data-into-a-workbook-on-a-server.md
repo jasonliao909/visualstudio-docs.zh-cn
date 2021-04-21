@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2456f92e6bd0b6e1a6b8bf6389718ec6a41342dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5d3bcb09ce1db013b89e60b22308f1904c4796
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937428"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827716"
 ---
 # <a name="walkthrough-insert-data-into-a-workbook-on-a-server"></a>演练：将数据插入到服务器上的工作簿
   本演练演示如何将数据插入到在 Microsoft Office Excel 工作簿中缓存的数据集，而无需使用类启动 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -67,7 +67,7 @@ ms.locfileid: "99937428"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在 "模板" 窗格中，展开 " **Visual c #** " 或 " **Visual Basic**"，然后单击 " **Windows**"。
 
@@ -79,11 +79,11 @@ ms.locfileid: "99937428"
 
 7. 在 " **新建项目** " 对话框中，确保未选中 " **创建解决方案的目录** " 复选框。
 
-8. 单击“确定”。
+8. 单击 **“确定”** 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目添加到 **解决方案资源管理器** ，并打开 **Class1.cs** 或 **Class1** 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目添加到 **解决方案资源管理器** ，并打开 **class1** 或 **class1** 代码文件。
 
-9. 在 **解决方案资源管理器** 中，右键单击 **Class1.cs** 或 **Class1**，然后单击 " **删除**"。 对于本演练，不需要此文件。
+9. 在 **解决方案资源管理器** 中，右键单击 **class1** 或 **Class1**，然后单击 " **删除**"。 对于本演练，不需要此文件。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在类库项目中定义数据集
  定义一个类型化数据集，其中包含 AdventureWorksLT 数据库中 SQL Server 2005 的数据。 稍后在本演练中，你将从 Excel 工作簿项目和控制台应用程序项目引用此数据集。
@@ -108,7 +108,7 @@ ms.locfileid: "99937428"
 
 7. 在 " **选择数据库对象** " 页上，展开 " **表** "，然后选择 " **Product (SalesLT)**"。
 
-8. 单击“完成” 。
+8. 单击“完成”。
 
     *Adventureworksltdataset.xsd* 文件将添加到 **AdventureWorksDataSet** 项目中。 此文件定义以下各项：
 
@@ -137,7 +137,7 @@ ms.locfileid: "99937428"
 
 5. 在 " **名称** " 框中，键入 **AdventureWorksReport**。 请勿修改位置。
 
-6. 单击“确定”。
+6. 单击 **“确定”** 。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -150,7 +150,7 @@ ms.locfileid: "99937428"
 
 ### <a name="to-add-the-dataset-to-the-data-sources-in-the-excel-workbook-project"></a>将数据集添加到 Excel 工作簿项目中的数据源
 
-1. 在 **解决方案资源管理器** 中，双击 **AdventureWorksReport** 项目下的 " **Sheet1.cs** " 或 " **Sheet1"。**
+1. 在 **解决方案资源管理器** 中，双击 " **AdventureWorksReport** " 项目下的 " **sheet1** " 或 " **sheet1** "。
 
      工作簿将在设计器中打开。
 
@@ -194,7 +194,7 @@ ms.locfileid: "99937428"
 
 3. 将 **CacheInDocument** 属性设置为 **True**。
 
-## <a name="checkpoint"></a>检查点
+## <a name="checkpoint"></a>Checkpoint
  生成并运行 Excel 工作簿项目，以确保它在编译和运行时不会出错。
 
 ### <a name="to-build-and-run-the-project"></a>生成并运行此项目
@@ -218,9 +218,9 @@ ms.locfileid: "99937428"
 
 4. 在 " **名称** " 框中，键入 **DataWriter**。 请勿修改位置。
 
-5. 单击“确定”。
+5. 单击 **“确定”** 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataWriter** 项目添加到 **解决方案资源管理器** ，并打开 **Program.cs** 或 **Module1** 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataWriter** 项目添加到 **解决方案资源管理器** 并打开 **程序 .cs** 或 **Module1** 的代码文件。
 
 ## <a name="add-data-to-the-cached-dataset-by-using-the-console-application"></a>使用控制台应用程序将数据添加到缓存的数据集
  使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 控制台应用程序中的类在包含数据的工作簿中填充缓存的数据集。
@@ -231,18 +231,18 @@ ms.locfileid: "99937428"
 
 2. 在 " **.net** " 选项卡上，选择 " **VisualStudio**"。
 
-3. 单击“确定”。
+3. 单击 **“确定”** 。
 
 4. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，然后单击 " **添加引用**"。
 
 5. 在 " **项目** " 选项卡上，选择 " **AdventureWorksDataSet**"，然后单击 **"确定"**。
 
-6. 在代码编辑器中打开 *Program.cs* 或 *Module1* 文件。
+6. 在代码编辑器中打开 *Program* 或 *Module1* 文件。
 
 7. **使用** 适用于 c # 的 (添加以下代码 ) 或将 Visual Basic) 语句的 (**导入** 到代码文件的顶部。
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. 将以下代码添加到 `Main` 方法中。 此代码声明了下列对象：
 
@@ -255,8 +255,8 @@ ms.locfileid: "99937428"
      > [!NOTE]
      > 以下代码假定你使用的是扩展名为 *.xlsx* 的工作簿。 如果项目中的工作簿具有不同的文件扩展名，请根据需要修改路径。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#3)]
-     [!code-vb[Trin_CachedDataWalkthroughs#3](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet3":::
 
 9. 在 `Main` 上一步中添加的代码之后，将以下代码添加到方法。 此代码执行以下任务：
 
@@ -266,8 +266,8 @@ ms.locfileid: "99937428"
 
    - 它使用 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 方法来用本地类型化数据集中的数据填充缓存的数据集。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#4)]
-     [!code-vb[Trin_CachedDataWalkthroughs#4](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet4":::
 
 10. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，指向 " **调试**"，然后单击 " **启动新实例**"。
 
@@ -294,6 +294,6 @@ ms.locfileid: "99937428"
 
 - 更改缓存数据集中的数据而不启动 Excel。 有关详细信息，请参阅 [演练：更改服务器上工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：更改服务器上的工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)

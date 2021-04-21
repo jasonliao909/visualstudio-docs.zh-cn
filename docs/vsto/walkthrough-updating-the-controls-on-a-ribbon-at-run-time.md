@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 181fafeb55720b5a97a635a4c2322cf7343643d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cf9bbe73bd43fa01aec8e7d0dec42fd8301ff30
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937181"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827514"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>演练：在运行时更新功能区上的控件
 
@@ -82,7 +82,7 @@ ms.locfileid: "99937181"
 
 3. 将新功能区的名称更改为 **CustomerRibbon**，然后单击 " **添加**"。
 
-     *CustomerRibbon.cs* 或 *CustomerRibbon* 文件将在功能区设计器中打开，并显示一个默认选项卡和组。
+     *CustomerRibbon* 或 *CustomerRibbon* 文件将在功能区设计器中打开，并显示一个默认选项卡和组。
 
 4. 单击功能区设计器以将其选定。
 
@@ -160,7 +160,7 @@ ms.locfileid: "99937181"
 
     4. **产品**
 
-9. 单击“完成” 。
+9. 单击“完成”。
 
 ## <a name="update-controls-in-the-custom-group-at-run-time"></a>在运行时更新自定义组中的控件
 
@@ -180,7 +180,7 @@ ms.locfileid: "99937181"
 
     此程序集包含有关使用语言集成查询 (LINQ) 的类。 你将通过 LINQ 使用 Northwind 数据库中的数据填充自定义组中的控件。
 
-3. 在 **解决方案资源管理器** 中，单击 " **CustomerRibbon.cs** " 或 " **CustomerRibbon** " 以将其选中。
+3. 在 **解决方案资源管理器** 中，单击 " **CustomerRibbon** " 或 " **CustomerRibbon** " 以将其选中。
 
 4. 在 **“视图”** 菜单上，单击 **“代码”**。
 
@@ -188,18 +188,18 @@ ms.locfileid: "99937181"
 
 5. 将下面的语句添加到功能区代码文件的顶部。 通过执行这些语句，可轻松访问 LINQ 命名空间和 Outlook 主互操作程序集 (PIA) 的命名空间。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#1)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#1](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet1":::
 
 6. 在类中添加以下代码 `CustomerRibbon` 。 此代码声明了将用于存储 Northwind 数据库的“客户”、“订单”、“订单明细”和“产品”表中信息的数据表和表适配器。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#2)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#2](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#2)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet2":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet2":::
 
 7. 将以下代码块添加到 `CustomerRibbon` 类中。 此代码添加了三个帮助器方法，这些方法可在运行时创建功能区控件。
 
-    [!code-csharp[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#3)]
-    [!code-vb[Trin_Ribbon_Update_At_Runtime#3](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet3":::
 
 8. 将 `CustomerRibbon_Load` 事件处理程序方法替换为以下代码。 此代码使用 LINQ 查询执行以下任务：
 
@@ -207,8 +207,8 @@ ms.locfileid: "99937181"
 
    - 调用 `PopulateSalesOrderInfo` 帮助程序方法。 此方法用与当前所选客户相关的销售订单号更新 **ProductsPurchased** 菜单。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#4)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#4](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet4":::
 
 9. 将以下代码添加到 `CustomerRibbon` 类。 此代码使用 LINQ 查询执行以下任务：
 
@@ -218,8 +218,8 @@ ms.locfileid: "99937181"
 
    - 将事件处理程序添加到每个按钮。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#6)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#6](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#6)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet6":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet6":::
 
 10. 在 **解决方案资源管理器** 中，双击功能区代码文件。
 
@@ -235,13 +235,13 @@ ms.locfileid: "99937181"
 
     - 调用 `PopulateMailItem` 帮助程序方法并传入当前文本，该文本是所选客户名称。 此方法将填充新邮件的 "发件人"、"主题" 和 "正文" 字段。
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#5)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#5](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#5)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet5":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet5":::
 
 13. 向 `Click` 类添加以下 `CustomerRibbon` 事件处理程序。 此代码将所选产品的名称添加到新邮件的 "正文" 字段。
 
-     [!code-csharp[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#8)]
-     [!code-vb[Trin_Ribbon_Update_At_Runtime#8](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet8":::
 
 14. 将以下代码添加到 `CustomerRibbon` 类。 此代码执行以下任务：
 
@@ -249,8 +249,8 @@ ms.locfileid: "99937181"
 
     - 向新邮件的 "主题" 和 "正文" 字段添加文本。
 
-      [!code-csharp[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs#7)]
-      [!code-vb[Trin_Ribbon_Update_At_Runtime#7](../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb#7)]
+      :::code language="csharp" source="../vsto/codesnippet/CSharp/Ribbon_Update_At_Runtime/CustomerRibbon.cs" id="Snippet7":::
+      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Ribbon_Update_At_Runtime/CustomerRibbon.vb" id="Snippet7":::
 
 ## <a name="test-the-controls-in-the-custom-group"></a>测试自定义组中的控件
 
@@ -298,7 +298,7 @@ ms.locfileid: "99937181"
 
 - 将自定义任务窗格添加到 Outlook。 有关详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)

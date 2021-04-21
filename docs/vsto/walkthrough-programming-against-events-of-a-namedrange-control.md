@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: b3305fdc8f4fbadb3dcdd9775c3a6fe3dac3a1fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec1c670867fae277a3c3c8290cd34d0d4be7ddf3
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937389"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824960"
 ---
 # <a name="walkthrough-program-against-events-of-a-namedrange-control"></a>演练：针对 NamedRange 控件的事件进行编程
   本演练演示如何 <xref:Microsoft.Office.Tools.Excel.NamedRange> 使用 Visual Studio 中的 Office 开发工具将控件添加到 Microsoft Office Excel 工作表并针对其事件进行编程。
@@ -73,7 +73,7 @@ ms.locfileid: "99937389"
 
 3. 验证 "可编辑" 文本框中是否显示 **$A $1** ，并选中 " **A1** 单元格"。 如果不是，请单击单元格 **A1** 将其选中。
 
-4. 单击“确定”。
+4. 单击 **“确定”** 。
 
      单元格 **A1** 变为名为的范围 `namedRange1` 。 工作表上没有可见的指示，但 `namedRange1` 显示在 " **名称** " 框中 (在选择单元格 **A1** 时) 左侧工作表的上方。
 
@@ -81,7 +81,7 @@ ms.locfileid: "99937389"
 
 6. 验证 "可编辑" 文本框中是否显示了 **$B $3** ，并选中了 "单元格 **B3** "。 如果不是，请单击单元格 **B3** 将其选中。
 
-7. 单击“确定”。
+7. 单击 **“确定”** 。
 
      单元格 **B3** 成为名为的范围 `namedRange2` 。
 
@@ -101,16 +101,16 @@ ms.locfileid: "99937389"
 
 ### <a name="to-insert-text-into-namedrange2-based-on-the-beforedoubleclick-event"></a>基于 BeforeDoubleClick 事件向 NamedRange2 插入文本
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **Sheet1** " 或 " **Sheet1.cs** "，然后选择 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " **sheet1** " 或 " **sheet1** "，然后选择 " **查看代码**"。
 
 2. 添加代码，以便 `namedRange1_BeforeDoubleClick` 事件处理程序如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#24)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#24](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#24)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet24":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet24":::
 
 3. 在 c # 中，必须添加命名范围的事件处理程序，如下面的事件中所示 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#25](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#25)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet25":::
 
 ## <a name="add-code-to-respond-to-the-change-event"></a>添加代码以响应更改事件
 
@@ -118,8 +118,8 @@ ms.locfileid: "99937389"
 
 1. 添加代码，以便 `NamedRange1_Change` 事件处理程序如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#26)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#26](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#26)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet26":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet26":::
 
     > [!NOTE]
     > 因为在 Excel 范围内双击某个单元将进入编辑模式，所以， <xref:Microsoft.Office.Tools.Excel.NamedRange.Change> 当所选内容移到范围之外时，即使没有对文本所做的更改，也将发生事件。
@@ -130,8 +130,8 @@ ms.locfileid: "99937389"
 
 1. 添加代码，以便 **NamedRange1_SelectionChange** 事件处理程序如下所示：
 
-     [!code-csharp[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs#27)]
-     [!code-vb[Trin_VstcoreHostControlsExcel#27](../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb#27)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet27":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet27":::
 
     > [!NOTE]
     > 由于双击 Excel 范围中的某个单元会导致所选内容移动到该范围内，因此事件发生 <xref:Microsoft.Office.Tools.Excel.NamedRange.SelectionChange> 之前发生 <xref:Microsoft.Office.Tools.Excel.NamedRange.BeforeDoubleClick> 。

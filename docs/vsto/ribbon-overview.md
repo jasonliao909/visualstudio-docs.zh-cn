@@ -20,12 +20,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2eff346425dca31cb88342e69701a229de2b80ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8920c8a402b4566cf95bb74626171cca833d32de
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940860"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825545"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种组织相关命令的方式，以便更易于查找。 命令显示为功能区上的控件。 控件在应用程序窗口的上边缘沿水平条带化到各个 *组* 。 在选项卡上，相关组进行了整理。
@@ -112,8 +112,8 @@ ms.locfileid: "99940860"
 
  添加以下代码：
 
- [!code-vb[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb#1)]
- [!code-csharp[Trin_Ribbon_Choose_Ribbon#1](../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs#1)]
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.vb" id="Snippet1":::
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_choose_Ribbon_4/ThisWorkbook.cs" id="Snippet1":::
 
 ### <a name="related-topics"></a>相关主题
 

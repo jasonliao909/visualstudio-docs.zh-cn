@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 596f7ea7586ee70ae740dc237d83b7a4b40fa83f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 445857200dfb269dd71f7cb3d446d025048cb3ac
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910195"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828431"
 ---
 # <a name="how-to-programmatically-add-pictures-and-word-art-to-documents"></a>如何：以编程方式向文档中添加图片和艺术字
   可以在设计时或运行时向文档中添加图片和图形对象。 可使用“艺术字”向 Microsoft Office Word 文档添加装饰性文本。 这些特殊文本效果是一些图形对象，你可以自定义这些图形对象并插入到文档中。
@@ -53,8 +53,8 @@ ms.locfileid: "99910195"
 
 1. 调用 <xref:Microsoft.Office.Interop.Word.InlineShapes> 集合的 <xref:Microsoft.Office.Interop.Word.InlineShapes.AddPicture%2A> 方法，并传入文件名。
 
-     [!code-vb[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#108)]
-     [!code-csharp[Trin_VstcoreWordAutomation#108](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#108)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet108":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet108":::
 
 ## <a name="add-wordart-at-design-time"></a>在设计时添加艺术字
  如果正在开发文档级自定义项，则可以在设计时向文档中添加艺术字。
@@ -78,31 +78,31 @@ ms.locfileid: "99910195"
 
 1. 获取当前光标位置的左上角位置。
 
-     [!code-vb[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#109)]
-     [!code-csharp[Trin_VstcoreWordAutomation#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#109)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet109":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet109":::
 
 2. 在文档中调用 <xref:Microsoft.Office.Interop.Word.Shapes> 对象的 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 方法。
 
-     [!code-vb[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb#110)]
-     [!code-csharp[Trin_VstcoreWordAutomation#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs#110)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet110":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet110":::
 
 ### <a name="to-add-wordart-at-the-cursor-location-in-a-vsto-add-in"></a>在 VSTO 外接程序中的光标位置处添加艺术字
 
 1. 获取当前光标位置的左上角位置。
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#109)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#109](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#109)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet109":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet109":::
 
 2. 调用活动文档（或指定的其他文档）的 <xref:Microsoft.Office.Interop.Word.Shapes> 对象的 <xref:Microsoft.Office.Interop.Word.Shapes.AddTextEffect%2A> 方法。
 
-     [!code-vb[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb#110)]
-     [!code-csharp[Trin_VstcoreWordAutomationAddIn#110](../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs#110)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet110":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet110":::
 
 ## <a name="compile-the-code"></a>编译代码
 
 - 驱动器 C 上必须存在一个名为 *SamplePicture.jpg* 的照片。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)
 - [如何：以编程方式在 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [如何：以编程方式在搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)

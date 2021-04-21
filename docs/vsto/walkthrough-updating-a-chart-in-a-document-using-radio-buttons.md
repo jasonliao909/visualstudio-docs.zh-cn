@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 0db8cd113983231ee45252fec8fb47e3a7b75b7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4d6689d82051ef5f8c887c19ec91cbb6d513b8b8
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937324"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828197"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>演练：使用单选按钮更新文档中的图表
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。
@@ -126,7 +126,7 @@ ms.locfileid: "99937324"
 
 1. 在“项目”菜单上，单击“添加引用”。
 
-     此时将显示“添加引用”对话框。
+     此时会显示“添加引用”对话框。
 
 2. 在 " **.net** " 选项卡上 **，选择 ""，然后** 单击 **"确定"**。 选择该程序集的 14.0.0.0 版。
 
@@ -139,34 +139,34 @@ ms.locfileid: "99937324"
 
 2. 向 `SelectionChanged` 类添加代码以创建 `Selection` 事件和 `ChartOptions` 属性。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#9)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#9](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet9":::
 
 ### <a name="to-handle-the-checkedchange-event-of-the-radio-buttons"></a>处理单选按钮的 CheckedChange 事件
 
 1. 设置 `CheckedChanged` 单选按钮的 `areaBlockChart` 事件处理程序中的图表类型，然后引发事件。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#10)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#10](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet10":::
 
 2. 设置 `CheckedChanged` 单选按钮的 `barChart` 事件处理程序中的图表类型。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#11)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#11](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet11":::
 
 3. 设置 `CheckedChanged` 单选按钮的 `columnChart` 事件处理程序中的图表类型。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#12)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#12](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet12":::
 
 4. 设置 `CheckedChanged` 单选按钮的 `lineChart` 事件处理程序中的图表类型。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#13)]
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#13](../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet13":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet13":::
 
 5. 在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet14":::
 
 ## <a name="add-the-user-control-to-the-document"></a>向文档添加用户控件
  生成解决方案时，新的用户控件将自动添加到 " **工具箱**"。 然后，可以将该控件从 " **工具箱** " 拖动到文档中。
@@ -177,7 +177,7 @@ ms.locfileid: "99937324"
 
      将 **ChartOptions** 用户控件添加到 " **工具箱**"。
 
-2. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument.cs**"，然后单击 " **视图设计器**"。
+2. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument**"，然后单击 " **视图设计器**"。
 
 3. 将 `ChartOptions` 控件从 " **工具箱** " 拖动到文档。
 
@@ -190,12 +190,12 @@ ms.locfileid: "99937324"
 
 1. 将以下事件处理程序添加到 `ThisDocument` 类。
 
-     [!code-vb[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb#15)]
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#15)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ThisDocument.vb" id="Snippet15":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet15":::
 
 2. 在 C# 中，必须向 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件添加用户控件的事件处理程序。
 
-     [!code-csharp[Trin_VstcoreProgrammingControlsWord#16](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs#16)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ThisDocument.cs" id="Snippet16":::
 
 ## <a name="test-the-application"></a>测试应用程序
  现在，你可以对文档进行测试，以确保选择单选按钮时能正确更新图表样式。

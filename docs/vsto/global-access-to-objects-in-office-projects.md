@@ -32,12 +32,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 5786ea4bdd0dd6f4c92284aaf9cff2a3c95e4231
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b939131f388642b452445e0afee0f5e38d2a5195
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920485"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825532"
 ---
 # <a name="global-access-to-objects-in-office-projects"></a>对 Office 项目中对象的全局访问
   创建 Office 项目时，Visual Studio 将在项目中自动生成一个名为 `Globals` 的类。 可以使用 `Globals` 类在运行时从项目中的任何代码访问多个不同的项目项。
@@ -69,15 +69,15 @@ ms.locfileid: "99920485"
 
   例如，当用户单击 Excel 的文档级项目中的操作窗格上的按钮时，你可以使用 `Globals.Sheet1` 属性将文本插入到 <xref:Microsoft.Office.Tools.Excel.NamedRange> 上的 `Sheet1` 控件中。
 
-  [!code-vb[Trin_VstcoreProgramming#1](../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb#1)]
-  [!code-csharp[Trin_VstcoreProgramming#1](../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs#1)]
+  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreProgrammingExcelVB/Sheet1.vb" id="Snippet1":::
+  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingExcelCS/Sheet1.cs" id="Snippet1":::
 
  `Globals`在初始化文档或 VSTO 外接程序之前，尝试使用类的代码可能会引发运行时异常。 例如，声明一个类级变量时使用 `Globals` 可能会失败，因为在对声明的对象进行实例化之前，可能不会使用对所有主机项的引用将 `Globals` 类初始化。
 
 > [!NOTE]
 > 永远不会在设计时初始化 `Globals` 类，控件实例由设计器创建。 这意味着，如果您在用户控件类的内部创建使用类的属性的用户控件 `Globals` ，则在尝试使用返回的对象之前，必须检查属性是否返回 **null** 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)

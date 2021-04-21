@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: f9488a15f851446c5779bdb1a4572e69a1cf3053
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9cf079727581b9cec4b6cb77a0a0c3f0b503b3a0
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917529"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825519"
 ---
 # <a name="how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks"></a>如何：向 Word 文档或 Excel 工作簿添加操作窗格
   若要将操作窗格添加到 Microsoft Office Word 文档或 Microsoft Excel 工作簿，请先创建一个 Windows 窗体用户控件。 然后，将该用户控件添加到 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` 项目中 (Word) 或 `ThisWorkbook.ActionsPane` (Excel) 字段的属性。
@@ -53,14 +53,14 @@ ms.locfileid: "99917529"
 
 5. 将代码添加到 <xref:System.Windows.Forms.Control.Click> 按钮的事件处理程序中。 下面的示例演示 Microsoft Office Word 文档的代码。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#12)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#12](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb#12)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet12":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/HelloControl.vb" id="Snippet12":::
 
 6. 在 c # 中，必须为按钮单击添加一个事件处理程序。 可以在调用后将此代码放在 `HelloControl` 构造函数中 `InitializeComponent` 。
 
      有关如何创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#13](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs#13)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/HelloControl.cs" id="Snippet13":::
 
 ## <a name="add-the-user-control-to-the-actions-pane"></a>将用户控件添加到操作窗格
  若要显示操作窗格，请将用户控件添加到 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> `ThisDocument.ActionsPane` (Word) 或 `ThisWorkbook.ActionsPane` (Excel) 字段的属性。
@@ -69,13 +69,13 @@ ms.locfileid: "99917529"
 
 1. 将以下代码 `ThisDocument` `ThisWorkbook` 作为类级别声明添加到或类中 (不要将此代码添加到方法) 。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#14)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#14](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#14)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet14":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet14":::
 
 2. 将下面的代码添加到类的 `ThisDocument_Startup` 事件处理程序 `ThisDocument` 或 `ThisWorkbook_Startup` 类的事件处理 `ThisWorkbook` 程序中。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#15)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#15](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#15)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet15":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet15":::
 
 ## <a name="see-also"></a>另请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)

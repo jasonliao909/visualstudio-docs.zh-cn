@@ -15,12 +15,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 063b66af781ee412e7f7d2ab8014e009bc93bad9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60fc27345ef148fd47fdcee15924917ce63f8d68
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954106"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107825493"
 ---
 # <a name="how-to-attach-managed-code-extensions-to-documents"></a>如何：将托管代码扩展附加到文档
   您可以将自定义程序集附加到现有 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿。 文档或工作簿的格式可以为 Microsoft Office 项目和 Visual Studio 中的开发工具所支持的任何文件格式。 有关详细信息，请参阅 [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)。
@@ -38,15 +38,15 @@ ms.locfileid: "99954106"
 
 2. 将以下 **导入** 或 **using** 语句添加到代码文件的顶部。
 
-     [!code-csharp[Trin_VstcoreDeployment#4](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#4)]
-     [!code-vb[Trin_VstcoreDeployment#4](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet4":::
 
 3. 调用静态 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 方法。
 
      下面的代码示例使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.AddCustomization%2A> 重载。 此重载采用文档的完整路径和 <xref:System.Uri> 指定要附加到文档的自定义项的部署清单的位置。 此示例假定在桌面上有一个名为 **WordDocument1.docx** 的 Word 文档，并且该部署清单位于一个名为 " **发布** " 的文件夹中，该文件夹也在桌面上。
 
-     [!code-csharp[Trin_VstcoreDeployment#3](../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs#3)]
-     [!code-vb[Trin_VstcoreDeployment#3](../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb#3)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDeploymentCS/Program.cs" id="Snippet3":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDeploymentVB/Program.vb" id="Snippet3":::
 
 4. 生成项目，并在要附加自定义项的计算机上运行应用程序。 计算机必须安装 Visual Studio 2010 Tools for Office Runtime。
 

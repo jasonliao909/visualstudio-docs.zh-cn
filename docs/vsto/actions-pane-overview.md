@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 9579de6712b742dde1f9b399ca8a1e4598783679
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 61e7ab9f00db6036d3bc8e41b9a2f19cf51f5511
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896770"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107828145"
 ---
 # <a name="actions-pane-overview"></a>操作窗格概述
   操作窗格是附加到特定 Microsoft Office Word 文档或 Microsoft Office Excel 工作簿的可自定义的 **文档操作** 任务窗格。 操作窗格与其他内置任务窗格（如 Excel 中的 " **XML 源** " 任务窗格或 Word 中的 " **样式和格式** " 任务窗格）一起托管在 Office 任务窗格中。 可使用 Windows 窗体控件或 WPF 控件来设计操作窗格用户界面。
@@ -37,8 +37,8 @@ ms.locfileid: "99896770"
 ## <a name="display-the-actions-pane"></a>显示操作窗格
  操作窗格表示为<xref:Microsoft.Office.Tools.ActionsPane> 类。 当你创建文档级项目时，通过使用项目中 `ThisWorkbook`（针对 Excel）或 `ThisDocument`（针对 Word）类的 `ActionsPane` 字段向你的代码提供此类的实例。 若要显示操作窗格，请将 Windows 窗体控件添加到 `ActionsPane` 字段的 <xref:Microsoft.Office.Tools.ActionsPane.Controls%2A> 属性。 下列代码示例将名为 `actions` 的控件添加到操作窗格。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#7)]
- [!code-vb[Trin_VstcoreActionsPaneWord#7](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#7)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
  一旦将控件显式添加到操作窗格，该窗格即在运行时变得可见。 显示操作窗格后，可根据用户的操作动态添加或删除控件。 通常情况下，你将添加代码以在 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件处理程序中显示操作窗格，从而使操作窗格在用户首次打开文档时可见。 但是，你可能只想根据文档中的用户操作来显示操作窗格。 例如，你可能回向文档上控件的 `Click` 事件添加代码。
 
@@ -63,18 +63,18 @@ ms.locfileid: "99896770"
 
 - 对于 Word，将 <xref:Microsoft.Office.Interop.Word.TaskPane.Visible%2A> <xref:Microsoft.Office.Interop.Word.TaskPane> 表示 "文档操作" 任务窗格的对象的属性设置为 **false**。 计划从项目的 `ThisDocument` 类中运行下列代码示例。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#34)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#34](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#34)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet34":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet34":::
 
 - 对于 Excel，请将 <xref:Microsoft.Office.Interop.Excel._Application.DisplayDocumentActionTaskPane%2A> 对象的属性设置 <xref:Microsoft.Office.Tools.Excel.Workbook.Application%2A> 为 **false**。 计划从项目的 `ThisWorkbook` 类中运行下列代码示例。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#11)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#11](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet11":::
 
 - 对于 Word 或 Excel，还可以将 <xref:Microsoft.Office.Core.CommandBar.Visible%2A> 表示任务窗格的命令栏的属性设置为 **false**。 计划从项目的 `ThisDocument` 或 `ThisWorkbook` 类中运行下列代码示例。
 
-     [!code-csharp[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#9)]
-     [!code-vb[Trin_VstcoreActionsPaneExcel#9](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#9)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet9":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet9":::
 
 ### <a name="clear-the-actions-pane-when-the-document-is-opened"></a>打开文档时清除 "操作" 窗格
  当用户在 "操作" 窗格可见时保存文档时，无论操作窗格是否包含任何控件，每次打开文档时，操作窗格都可见。 如果想在显示此窗格时进行控制，请调用 `ThisDocument` 或 `ThisWorkbook` 的 `Startup` 事件处理程序中 `ActionsPane` 字段的 <xref:Microsoft.Office.Tools.ActionsPane.Clear%2A> 方法，以确保操作窗格在文档打开时不可见。
@@ -118,8 +118,8 @@ ms.locfileid: "99896770"
 
  下列代码将设置 <xref:Microsoft.Office.Tools.ActionsPane.StackOrder%2A> 属性，以从操作窗格顶部堆叠用户控件。
 
- [!code-csharp[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs#10)]
- [!code-vb[Trin_VstcoreActionsPaneExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb#10)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneExcelCS/ThisWorkbook.cs" id="Snippet10":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneExcelVB/ThisWorkbook.vb" id="Snippet10":::
 
 ## <a name="anchor-controls"></a>定位控件
  如果用户在运行时调整操作窗格的大小，则控件的大小可随操作窗格而变。 你可以使用 Windows 窗体控件的 <xref:System.Windows.Forms.Control.Anchor%2A> 属性将控件定位到操作窗格。 还可以相同方式将 Windows 窗体控件定位到用户控件上。 有关详细信息，请参阅 [如何：在 Windows 窗体上定位控件](/dotnet/framework/winforms/controls/how-to-anchor-controls-on-windows-forms)。
@@ -129,16 +129,16 @@ ms.locfileid: "99896770"
 
  不建议以编程方式调整任务窗格的大小，因为用户应该能够选择最适合其需求的任务窗格大小。 但是，如果你必须调整任务窗格的宽度，可以使用下列代码来完成此任务。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#102)]
- [!code-vb[Trin_VstcoreActionsPaneWord#102](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#102)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet102":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet102":::
 
 ## <a name="reposition-the-actions-pane"></a>重定位操作窗格
  无法直接重新定位 <xref:Microsoft.Office.Tools.ActionsPane>，因为它内嵌在任务窗格中。 但是，通过设置表示任务窗格的 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Position%2A> 属性，即可以编程方式移动任务窗格。
 
  不建议以编程方式重定位任务窗格，因为用户应该能够选择最适合其需求的屏幕上的任务窗格位置。 但是，如果你必须将任务窗格移动到特定位置，可以使用下列代码来完成此任务。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#100)]
- [!code-vb[Trin_VstcoreActionsPaneWord#100](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#100)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet100":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet100":::
 
 > [!NOTE]
 > 最终用户可随时手动重新定位任务窗格。 无法确保任务窗格将始终停靠在你以编程方式指示的位置。 但是，你可以检查方向更改，并确保操作窗格上的控件以正确的方向堆叠。 有关详细信息，请参阅 [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)。
@@ -147,10 +147,10 @@ ms.locfileid: "99896770"
 
  如果任务窗格未停靠，则可设置表示任务窗格的 <xref:Microsoft.Office.Core.CommandBar> 的 <xref:Microsoft.Office.Core.CommandBar.Top%2A> 和 <xref:Microsoft.Office.Core.CommandBar.Left%2A> 属性。 下列代码将未停靠的任务窗格移动到文档的左上角。
 
- [!code-csharp[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#101)]
- [!code-vb[Trin_VstcoreActionsPaneWord#101](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#101)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet101":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet101":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在 Office 解决方案中使用 WPF 控件](../vsto/using-wpf-controls-in-office-solutions.md)
 - [Office UI 自定义](../vsto/office-ui-customization.md)
 - [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)

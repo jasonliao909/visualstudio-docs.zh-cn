@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 4b60060f8db2bf2bb1abf42803a8c80333ee5fc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ce8c334be74f2643bfc7fa263b01a74db109eb7
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969147"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827742"
 ---
 # <a name="walkthrough-import-a-form-region-that-is-designed-in-outlook"></a>演练：导入在 Outlook 中设计的窗体区域
   此演练演示如何在 Microsoft Office Outlook 中设计窗体区域，然后通过使用“新建窗体区域”  向导将窗体区域导入 Outlook VSTO 外接程序项目。 通过在 Outlook 中设计窗体区域，可以将本机 Outlook 控件添加到绑定到 Outlook 数据的窗体区域。 导入窗体区域后，可以处理每个控件的事件。
@@ -151,7 +151,7 @@ ms.locfileid: "99969147"
 
 7. 在“标识将显示此窗体区域的邮件类”  页上的 **哪些自定义邮件类将显示此窗体区域** 字段中，键入 **IPM.Task.TaskFormRegion**，然后单击“完成” 。
 
-     *TaskFormRegion.cs* 或 *TaskFormRegion* 文件将添加到你的项目中。
+     *TaskFormRegion* 或 *TaskFormRegion* 文件将添加到你的项目中。
 
 ## <a name="handle-the-events-of-controls-on-the-form-region"></a>处理窗体区域中的控件的事件
  现在，你的项目中有了窗体区域，可以添加代码来处理添加到 Outlook 中窗体区域的按钮的 `Microsoft.Office.Interop.Outlook.OlkCommandButton.Click` 事件。
@@ -160,14 +160,14 @@ ms.locfileid: "99969147"
 
 ### <a name="to-handle-the-events-of-controls-on-the-form-region"></a>若要处理窗体区域中的控件的事件
 
-1. 在 **解决方案资源管理器** 中，右键单击 " *TaskFormRegion.cs* " 或 " *TaskFormRegion*"，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " *TaskFormRegion* " 或 " *TaskFormRegion*"，然后单击 " **查看代码**"。
 
-    在代码编辑器中打开 *TaskFormRegion.cs* 或 *TaskFormRegion* 。
+    在代码编辑器中打开 *TaskFormRegion* 或 *TaskFormRegion* 。
 
 2. 将以下代码添加到 `TaskFormRegion` 类。 此代码用 Outlook 任务文件夹中每项任务的主题行来填充窗体区域上的组合框。
 
-    [!code-csharp[Trin_Outlook_FR_Import#1](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#1)]
-    [!code-vb[Trin_Outlook_FR_Import#1](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet1":::
 
 3. 将以下代码添加到 `TaskFormRegion` 类。 此代码执行以下任务：
 
@@ -177,13 +177,13 @@ ms.locfileid: "99969147"
 
    - 将任务的主题添加到窗体区域中的隐藏字段。 隐藏字段将这些值存储为 Outlook 项目的一部分。
 
-     [!code-csharp[Trin_Outlook_FR_Import#2](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#2)]
-     [!code-vb[Trin_Outlook_FR_Import#2](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#2)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet2":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet2":::
 
 4. 将以下代码添加到 `TaskFormRegion` 类。 此代码提供了之前步骤中所述的帮助器方法 `FindTaskBySubjectName` 。
 
-    [!code-csharp[Trin_Outlook_FR_Import#3](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#3)]
-    [!code-vb[Trin_Outlook_FR_Import#3](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#3)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet3":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet3":::
 
 5. 将以下代码添加到 `TaskFormRegion` 类。 此代码执行以下任务：
 
@@ -193,8 +193,8 @@ ms.locfileid: "99969147"
 
    - 将 `Microsoft.Office.Interop.Outlook.TaskItem.Subject` 和 `Microsoft.Office.Interop.Outlook.TaskItem.PercentComplete` 值添加到依赖任务列表框。
 
-     [!code-csharp[Trin_Outlook_FR_Import#4](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#4)]
-     [!code-vb[Trin_Outlook_FR_Import#4](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#4)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet4":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet4":::
 
 6. 将 `TaskFormRegion_FormRegionShowing` 事件处理程序替换为以下代码。 此代码执行以下任务：
 
@@ -202,8 +202,8 @@ ms.locfileid: "99969147"
 
    - 出现窗体区域时调用 `RefreshTaskListBox` 帮助器方法。 从而将显示以前打开项目时已添加到列表框中的任何依赖任务。
 
-     [!code-csharp[Trin_Outlook_FR_Import#5](../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs#5)]
-     [!code-vb[Trin_Outlook_FR_Import#5](../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb#5)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Import/TaskFormRegion.cs" id="Snippet5":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Import_O12/TaskFormRegion.vb" id="Snippet5":::
 
 ## <a name="test-the-outlook-form-region"></a>测试 Outlook 窗体区域
  若要测试窗体区域，请将任务添加到窗体区域中的系统必备任务列表中。 更新系统必备任务的完成状态，然后查看系统必备任务列表中任务的已更新完成状态。
@@ -253,7 +253,7 @@ ms.locfileid: "99969147"
 
 - 若要了解有关如何将自定义任务窗格添加到 Outlook 的详细信息，请参阅 [自定义任务](../vsto/custom-task-panes.md)窗格。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [创建 Outlook 窗体区域的准则](../vsto/guidelines-for-creating-outlook-form-regions.md)

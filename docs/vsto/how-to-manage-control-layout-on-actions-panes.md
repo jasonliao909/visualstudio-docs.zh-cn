@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 49739b6011fcf977db84a3350929a56514040975
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 182dee248f161f3dde721c50ee996d6f621dd9af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918595"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107827443"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理操作窗格上的控件布局
   默认情况下，操作窗格停靠在文档或工作表的右侧;但是，可以将其停靠在左侧、顶部或底部。 如果使用多个用户控件，则可以编写代码以正确地在操作窗格上堆叠用户控件。 有关详细信息，请参阅 [操作窗格概述](../vsto/actions-pane-overview.md)。
@@ -40,34 +40,34 @@ ms.locfileid: "99918595"
 
 1. 打开包含包含多个用户控件或嵌套操作窗格控件的操作窗格 Microsoft Office Word 的文档级项目。 有关详细信息，请参阅 [如何：将操作窗格添加到 Word 文档或 Excel 工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)。
 
-2. 在 **解决方案资源管理器** 中右键单击 " **ThisDocument.cs** " 或 " **ThisDocument** "，然后单击 "**查看代码**"。
+2. 在 **解决方案资源管理器** 中右键单击 " **ThisDocument** " 或 " **ThisDocument** "，然后单击 "**查看代码**"。
 
 3. 在 <xref:Microsoft.Office.Tools.ActionsPane.OrientationChanged> 操作窗格的事件处理程序中，检查操作窗格的方向是否为水平。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#30)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#30](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#30)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet30":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet30":::
 
 4. 如果方向是水平的，则从左边堆叠操作窗格控件;否则，请从顶部堆栈。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#31)]
-     [!code-vb[Trin_VstcoreActionsPaneWord#31](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#31)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet31":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet31":::
 
 5. 在 c # 中，必须向 `ActionsPane` 事件处理程序添加的事件处理程序 <xref:Microsoft.Office.Tools.Word.Document.Startup> 。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
-     [!code-csharp[Trin_VstcoreActionsPaneWord#32](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#32)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet32":::
 
 6. 运行该项目并验证当操作窗格停靠在文档的顶部时，操作窗格控件是否从左向右堆积到右侧，当操作窗格停靠在文档的右侧时，这些控件将从上到下堆叠。
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs#29)]
- [!code-vb[Trin_VstcoreActionsPaneWord#29](../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb#29)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet29":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet29":::
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
 - 带有操作窗格的 Word 文档级项目，其中包含多个用户控件或嵌套操作窗格控件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
 - [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
