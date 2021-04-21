@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 245b257140cd0b1f54719ec7a132bf2297fc2dd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3cf838b544ec78c8c7d6e9e2d6f1cb747e999ccd
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962335"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107823907"
 ---
 # <a name="how-to-target-the-office-multilingual-user-interface"></a>如何：面向 Office 多语言用户界面
   多语言用户界面 (MUI) 是一项 Microsoft Office 功能，使最终用户能够更改用户界面的语言 (UI) 。 例如，使用英语 UI 的最终用户可将 UI 的语言更改为西班牙语。
@@ -37,9 +37,9 @@ ms.locfileid: "99962335"
 
 1. 使用 <xref:System.Threading.Thread.CurrentUICulture%2A> 当前线程的属性。 设置您的 UI 字符串的语言以与当前在用户计算机上运行的 Office 版本所使用的语言相匹配。
 
-     [!code-vb[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb#10)]
-     [!code-csharp[Trin_VstcoreCreatingExcel#10](../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs#10)]
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreCreatingExcelVB/Sheet1.vb" id="Snippet10":::
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreCreatingExcelCS/Sheet1.cs" id="Snippet10":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Office 解决方案中的后期绑定](../vsto/late-binding-in-office-solutions.md)

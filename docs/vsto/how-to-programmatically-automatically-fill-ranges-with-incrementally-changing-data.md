@@ -18,12 +18,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 64af8ddfa0d3d086b661483e76cb9b2bd82ae5c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 615331181b9402e0d2062142ad266bdd41dca4eb
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892068"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107824934"
 ---
 # <a name="how-to-programmatically-automatically-fill-ranges-with-incrementally-changing-data"></a>如何：以编程方式自动用递增变化的数据填充范围
   <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A>使用对象的方法， <xref:Microsoft.Office.Interop.Excel.Range> 可以在工作表中自动填充值。 最常见的 <xref:Microsoft.Office.Interop.Excel.Range.AutoFill%2A> 方法是使用方法存储范围中递增或递减的值。 可以通过从枚举提供一个可选常量来指定行为 <xref:Microsoft.Office.Interop.Excel.XlAutoFillType> 。
@@ -40,8 +40,8 @@ ms.locfileid: "99892068"
     > 不能传递 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件来代替 <xref:Microsoft.Office.Interop.Excel.Range> 。 有关详细信息，请参阅 [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)。
 
 ## <a name="example"></a>示例
- [!code-csharp[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs#49)]
- [!code-vb[Trin_VstcoreExcelAutomation#49](../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb#49)]
+ :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet49":::
+ :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet49":::
 
 ## <a name="compile-the-code"></a>编译代码
  要填充的范围的第一个单元格必须包含初始值。
@@ -54,7 +54,7 @@ ms.locfileid: "99892068"
 
 - 列 D 将包含一系列数字，每行递增2。 对于初始值，在单元格 D2 的单元格 D1 和 **6** 中键入 **4** 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [如何：以编程方式在代码中引用工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

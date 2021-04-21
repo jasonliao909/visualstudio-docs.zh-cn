@@ -19,12 +19,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 818c7c9aa5edeae32859d0b5af6449b513df1c85
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11099b0ea37856919affb927c3f118572d339af
+ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937434"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107826871"
 ---
 # <a name="walkthrough-retrieve-cached-data-from-a-workbook-on-a-server"></a>演练：从服务器上的工作簿中检索缓存的数据
   本演练演示如何从 Microsoft Office Excel 工作簿中缓存的数据集检索数据，而无需通过使用类启动 Excel <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 。
@@ -68,7 +68,7 @@ ms.locfileid: "99937434"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
 
 3. 在 "模板" 窗格中，展开 " **Visual c #** " 或 " **Visual Basic**"，然后单击 " **Windows**"。
 
@@ -80,11 +80,11 @@ ms.locfileid: "99937434"
 
 7. 在 " **新建项目** " 对话框中，确保未选中 " **创建解决方案的目录** " 复选框。
 
-8. 单击“确定”。
+8. 单击 **“确定”** 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目添加到 **解决方案资源管理器** ，并打开 *Class1.cs* 或 *Class1* 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目添加到 **解决方案资源管理器** ，并打开 *class1* 或 *class1* 代码文件。
 
-9. 在 **解决方案资源管理器** 中，右键单击 *Class1.cs* 或 *Class1*，然后单击 " **删除**"。 对于本演练，不需要此文件。
+9. 在 **解决方案资源管理器** 中，右键单击 *class1* 或 *Class1*，然后单击 " **删除**"。 对于本演练，不需要此文件。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在类库项目中定义数据集
  定义一个类型化数据集，其中包含 AdventureWorksLT 数据库中 SQL Server 2005 的数据。 稍后在本演练中，你将从 Excel 工作簿项目和控制台应用程序项目引用此数据集。
@@ -109,7 +109,7 @@ ms.locfileid: "99937434"
 
 7. 在 " **选择数据库对象** " 页上，展开 " **表** "，然后选择 " **Product (SalesLT)**"。
 
-8. 单击“完成” 。
+8. 单击“完成”。
 
     *Adventureworksltdataset.xsd* 文件将添加到 **AdventureWorksDataSet** 项目中。 此文件定义以下各项：
 
@@ -138,7 +138,7 @@ ms.locfileid: "99937434"
 
 5. 在 " **名称** " 框中，键入 **AdventureWorksReport**。 请勿修改位置。
 
-6. 单击“确定”。
+6. 单击 **“确定”** 。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -149,7 +149,7 @@ ms.locfileid: "99937434"
 ## <a name="add-the-dataset-to-data-sources-in-the-excel-workbook-project"></a>将数据集添加到 Excel 工作簿项目中的数据源
  在 Excel 工作簿中显示数据集之前，必须先将该数据集添加到 Excel 工作簿项目中的数据源。
 
-1. 在 **解决方案资源管理器** 中，双击 **AdventureWorksReport** 项目下的 " *Sheet1.cs* " 或 " *Sheet1"。*
+1. 在 **解决方案资源管理器** 中，双击 " **AdventureWorksReport** " 项目下的 " *sheet1* " 或 " *sheet1* "。
 
      工作簿将在设计器中打开。
 
@@ -192,14 +192,14 @@ ms.locfileid: "99937434"
 ## <a name="initialize-the-dataset-in-the-workbook"></a>初始化工作簿中的数据集
  必须先使用数据填充缓存的数据集，然后才能使用控制台应用程序从缓存的数据集中检索数据。
 
-1. 在 **解决方案资源管理器** 中，右键单击 *Sheet1.cs* 或 *Sheet1 .vb* 文件，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击 " *sheet1* " 或 " *sheet1* " 文件，然后单击 " **查看代码**"。
 
 2. 将 `Sheet1_Startup` 事件处理程序替换为以下代码。 此代码使用 `ProductTableAdapter` 在 **AdventureWorksDataSet** 项目中定义的类的实例，用数据填充缓存的数据集（如果该数据集当前为空）。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs#8)]
-     [!code-vb[Trin_CachedDataWalkthroughs#8](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb#8)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs" id="Snippet8":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb" id="Snippet8":::
 
-## <a name="checkpoint"></a>检查点
+## <a name="checkpoint"></a>Checkpoint
  生成并运行 Excel 工作簿项目，以确保它在编译和运行时不会出错。 此操作还会填充缓存的数据集，并将数据保存在工作簿中。
 
 ### <a name="build-and-run-the-project"></a>生成并运行项目
@@ -227,9 +227,9 @@ ms.locfileid: "99937434"
 
 4. 在 " **名称** " 框中，键入 **DataReader**。 请勿修改位置。
 
-5. 单击“确定”。
+5. 单击 **“确定”** 。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataReader** 项目添加到 **解决方案资源管理器** 并打开 *Program.cs* 或 *Module1* 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataReader** 项目添加到 **解决方案资源管理器** 并打开 *程序 .cs* 或 *Module1 .vb* 代码文件。
 
 ## <a name="retrieve-data-from-the-cached-dataset-by-using-the-console-application"></a>使用控制台应用程序从缓存的数据集中检索数据
  使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 控制台应用程序中的类将数据读入本地 `AdventureWorksLTDataSet` 对象。 若要确认是否已用缓存数据集中的数据初始化了本地数据集，应用程序将显示本地数据集中的行数。
@@ -240,18 +240,18 @@ ms.locfileid: "99937434"
 
 2. 在 " **.net** " 选项卡上，选择 " **VisualStudio**"。
 
-3. 单击“确定”。
+3. 单击 **“确定”** 。
 
 4. 在 **解决方案资源管理器** 中，右键单击 **DataReader** 项目，然后单击 " **添加引用**"。
 
 5. 在 " **项目** " 选项卡上，选择 " **AdventureWorksDataSet**"，然后单击 **"确定"**。
 
-6. 在代码编辑器中打开 *Program.cs* 或 *Module1* 文件。
+6. 在代码编辑器中打开 *Program* 或 *Module1* 文件。
 
 7. **使用** 适用于 c # 的 (添加以下代码 ) 或将 Visual Basic) 语句的 (**导入** 到代码文件的顶部。
 
-    [!code-csharp[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#1)]
-    [!code-vb[Trin_CachedDataWalkthroughs#1](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#1)]
+    :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
+    :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
 8. 将以下代码添加到 `Main` 方法中。 此代码声明了下列对象：
 
@@ -264,8 +264,8 @@ ms.locfileid: "99937434"
      > [!NOTE]
      > 下面的代码假设工作簿是使用 *.xlsx* 扩展名保存的。 如果项目中的工作簿具有不同的扩展名，请根据需要修改路径。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#10)]
-     [!code-vb[Trin_CachedDataWalkthroughs#10](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#10)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet10":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet10":::
 
 9. 在 `Main` 上一步中添加的代码之后，将以下代码添加到方法。 此代码执行以下任务：
 
@@ -275,8 +275,8 @@ ms.locfileid: "99937434"
 
    - 它显示本地数据集中的行数，以确认它具有数据。
 
-     [!code-csharp[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs#11)]
-     [!code-vb[Trin_CachedDataWalkthroughs#11](../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb#11)]
+     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet11":::
+     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet11":::
 
 10. 在 " **生成** " 菜单上，单击 " **生成 DataReader**"。
 
@@ -296,7 +296,7 @@ ms.locfileid: "99937434"
 
 - 更改缓存数据集中的数据而不启动 Excel。 有关详细信息，请参阅 [演练：更改服务器上工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：将数据插入到服务器上的工作簿](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
 - [演练：更改服务器上的工作簿中的缓存数据](../vsto/walkthrough-changing-cached-data-in-a-workbook-on-a-server.md)
