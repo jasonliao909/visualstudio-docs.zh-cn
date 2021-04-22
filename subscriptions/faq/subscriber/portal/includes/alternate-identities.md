@@ -10,18 +10,18 @@ author: CaityBuschlen
 ms.author: cabuschl
 manager: ''
 robots: ''
-ms.date: 4/3/2020
+ms.date: 04/20/2020
 ms.faqid: q1_5
-ms.openlocfilehash: 04c6f3473f31f438afb9785cc460aa0da38605d5
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 87d2633cb76a92c9a1c73651f3f57b2a139240f1
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "91838390"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107820982"
 ---
 ## <a name="how-do-i-add-alternate-identities-to-my-subscription-and-how-does-this-impact-my-azure-credits-and-azure-devops"></a>如何将备用标识添加到订阅中？这对我的 Azure 额度和 Azure DevOps 有何影响？
 
-在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 过去，仅当 Visual Studio (VS) 订阅分配到 Microsoft 帐户 (MSA) 时，此功能才可用。我们已将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。
+在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。  我们已经将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。
 
 这不会向另一个帐户提供订阅副本，而是仅提供可使用备用帐户来享受这两项权益的功能。
 
