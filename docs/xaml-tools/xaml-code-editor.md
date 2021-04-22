@@ -3,16 +3,19 @@ title: XAML 代码编辑器
 description: 体验 Visual Studio 中的 XAML 代码编辑器
 ms.date: 06/16/2020
 ms.topic: overview
+f1_keywords:
+- VS.XamlEditor
 monikerRange: vs-2019
+ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: df2c257caed24e85569ca41f3cc83dd9d47d5b03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962309"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879390"
 ---
 # <a name="xaml-code-editor"></a>XAML 代码编辑器
 
@@ -270,7 +273,7 @@ XAML 代码中出现的灯泡图标是[快速操作](../ide/quick-actions.md)的
 
 > [!NOTE]
 > 也可以使用键盘快捷方式访问“选项”对话框。 操作方法如下：按“Ctrl+Q”搜索 IDE，键入“选项”，然后按“Enter”   。 接下来，按“Ctrl+E”搜索“选项”对话框，键入“文本编辑器”，按“Enter”，键入“XAML”，然后按“Enter”     。
->  
+>
 > 有关键盘快捷方式的详细信息，请参阅 [Visual Studio 的快捷方式提示](../ide/productivity-shortcuts.md#code-editor)页。
 
 ### <a name="universal-text-editor-options"></a>通用文本编辑器选项
