@@ -2,7 +2,7 @@
 title: 疑难解答和已知问题 (VS Tools for Unity)
 description: 阅读有关 Visual Studio Tools for Unity 的疑难解答。 查看已知问题的说明，并了解这些问题的解决方案。
 ms.custom: ''
-ms.date: 07/03/2018
+ms.date: 04/15/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: troubleshooting
@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: e447c8cb94e536aeed9e01d00098fe4a98c6c006
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 37ee35fa66d37f9b85af01f5012e8ede76e877de
+ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341131"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107879364"
 ---
 # <a name="troubleshooting-and-known-issues-visual-studio-tools-for-unity"></a>疑难解答和已知问题 (Visual Studio Tools for Unity)
 
@@ -25,9 +25,15 @@ ms.locfileid: "94341131"
 
 ## <a name="troubleshooting-the-connection-between-unity-and-visual-studio"></a>Unity 和 Visual Studio 之间的连接疑难解答
 
-### <a name="confirm-editor-attaching-is-enabled"></a>确认已启用“编辑器连接”
+### <a name="confirm-editor-attaching-is-enabled-or-code-optimization-on-startup-is-set-to-debug"></a>确认 `Editor Attaching` 已启用或 `Code Optimization On Startup` 设置为 `Debug`
 
-在 Unity 菜单中，选择“编辑”>“首选项”，然后选择“外部工具”选项卡 。确定已启用“编辑器连接”复选框。 有关详细信息，请查阅 [Unity 首选项文档](https://docs.unity3d.com/Manual/Preferences.html)。
+在 Unity 菜单中，选择 `Edit / Preferences` 。
+
+根据所使用的 Unity 版本：
+- 确认 `Code Optimization On Startup` 设置为 `Debug` 。
+- 或选择 `External Tools` 选项卡。确认 `Editor Attaching` 复选框已启用。 
+
+有关详细信息，请查阅 [Unity 首选项文档](https://docs.unity3d.com/Manual/Preferences.html)。
 
 ### <a name="unable-to-attach"></a>无法附加
 
@@ -60,11 +66,22 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="incompatible-project-in-visual-studio"></a>Visual Studio 中的不兼容项目
 
-首先，检查是否已将 Visual Studio 设置为 Unity 中的外部脚本编辑器（编辑/首选项/外部工具）。 然后检查 Unity 是否已安装 Visual Studio 插件（“帮助/关于”必须在底部显示一条类似于“已启用 Microsoft Visual Studio Tools for Unity”的消息）。 然后检查 Visual Studio 中是否已正确安装该扩展（“帮助/关于”）。
+要了解的重要一点是，Visual Studio 在项目设置中保存 "不兼容" 状态，并且在你显式使用之前，不会尝试重新加载项目 `Reload Project` 。 因此，在每个故障排除步骤后，请确保尝试重新打开解决方案，然后尝试右键单击所有不兼容的项目并选择 `Reload Project` 。
+
+1. 检查是否已将 Visual Studio 设置为 Unity 中的外部脚本编辑器 `Edit / Preferences / External Tools` 。
+2. 取决于 Unity 版本：
+   - 检查 Unity 中是否安装了 Visual Studio 插件。 `Help / About` 应显示一条消息，如在底部启用 Unity Microsoft Visual Studio 工具。
+   - Unity 2020. x +：检查是否在中使用最新的 Visual Studio 编辑器包 `Window / Package Manager` 。
+3. 尝试删除项目中的所有项目/解决方案文件和 `.vs` 文件夹。
+4. 尝试使用或重新创建项目/解决方案 `Open C# Project` `Edit / Preferences / External tools / Regenerate Project files` 。
+5. 请确保已在 Visual Studio 中安装游戏/Unity 工作负荷。
+6. 尝试清理 MEF 缓存，如 [此处](#visual-studio-crashes)所述。
+7. 请尝试重新安装 Visual Studio (仅使用游戏/Unity 工作负荷来启动) 。
+8. 尝试禁用第三方扩展，以防它们会干扰中的 Unity 扩展 `Tools / Extensions` 。
 
 ## <a name="extra-reloads-or-visual-studio-losing-all-open-windows"></a>其他重载，或 Visual Studio丢失所有打开的窗口
 
-请勿直接从资产处理器或任何其他工具接触项目文件。 如果确实需要对项目文件进行操作，我们为此公开了 API。 请检查[程序集引用问题部分](#assembly-reference-issues)。
+请勿直接从资产处理器或任何其他工具接触项目文件。 如果确实需要对项目文件进行操作，我们为此公开了 API。 请检查[程序集引用问题部分](#assembly-reference-or-project-property-issues)。
 
 如果遇到其他重载或 Visual Studio 在重载时丢失所有打开的窗口，请确保安装有合适的 .NET 目标包。 查看以下部分，了解有关框架的详细信息。
 
@@ -78,13 +95,15 @@ Parse、FMOD、UMP (Universal Media Player)、ZFBrowser 或嵌入式浏览器等
 
 ## <a name="on-windows-visual-studio-asks-to-download-the-unity-target-framework"></a>在 Windows 上，Visual Studio 会要求下载 Unity 目标框架
 
-Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下在 Windows 8 或 10 上未安装）。 若要解决此问题，请按照说明下载并安装 .NET framework 3.5。
+当使用旧版 Unity 运行时 ( .NET 3.5 等效) 时，Visual Studio Tools for Unity 需要 .NET framework 3.5，这在 Windows 8 或10上默认情况下不会安装。 若要解决此问题，请按照说明下载并安装 .NET framework 3.5。
 
-使用新的 Unity 运行时还需要 .NET 目标包版本 4.6 和 4.7.1。 可以使用 VS2017 安装程序快速安装它们（修改 VS2017 安装、单个组件、.NET 类别，并选择所有 4.x 目标包）。
+使用新的 Unity 运行时时，还需要 .NET 目标包版本4.6 或4.7.1，具体取决于 Unity 版本。 可以使用 Visual Studio 安装程序快速安装它们 (修改安装、单个组件、.NET 类别、选择所有的4.x 目标包) 。
 
-## <a name="assembly-reference-issues"></a>程序集引用问题
+## <a name="assembly-reference-or-project-property-issues"></a>程序集引用或项目属性问题
 
-如果项目中存在复杂引用，或者如果希望能更好地控制此生成步骤，可以使用我们的 [API](/cross-platform/customize-project-files-created-by-vstu.md) 来操作生成的项目或解决方案内容。 也可以在 Unity 项目中使用[响应文件](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我们将对它们进行处理。
+如果项目中存在复杂引用，或者如果希望能更好地控制此生成步骤，可以使用我们的 [API](../extensibility/customize-project-files-created-by-vstu.md) 来操作生成的项目或解决方案内容。 也可以在 Unity 项目中使用[响应文件](https://docs.unity3d.com/Manual/PlatformDependentCompilation.html)，我们将对它们进行处理。
+
+使用最新的 Visual Studio 和 Unity 版本时，最好的方法就是使用自定义 `Directory.Build.props` 文件和生成的项目。 然后，你将能够在不干扰生成过程的情况下参与项目结构。 [此处](https://docs.microsoft.com/visualstudio/msbuild/customize-your-build#directorybuildprops-and-directorybuildtargets)提供更多信息。
 
 ## <a name="breakpoints-with-a-warning"></a>带有警告的断点
 
@@ -92,7 +111,7 @@ Visual Studio Tools for Unity 要求安装 .NET framework 3.5（默认情况下�
 
 ## <a name="breakpoints-not-hit"></a>未命中断点
 
-检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除生成的所有文件（\*.csproj、\*.sln）和整个库文件夹。
+检查当前的 Unity 场景中是否已正确加载/使用你正在使用的脚本。 退出 Visual Studio 和 Unity，然后删除所有生成的文件 (\* .csproj、 \* .sln) 、 `.vs` 文件夹和整个库文件夹。 可以在 Unity [网站](https://docs.unity3d.com/Manual/ManagedCodeDebugging.html)上找到有关 c # 调试的详细信息。
 
 ## <a name="unable-to-debug-android-players"></a>无法调试 Android 播放器
 
@@ -102,13 +121,13 @@ Wifi 是通用的，但与 USB 比起来非常慢，因为存在延迟。 我们
 
 USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设备，并与 adb 服务器对话，使其正确转接接口以进行调试。
 
-## <a name="issues-with-visual-studio-2015-and-intellisense-or-code-coloration"></a>Visual Studio 2015 和 IntelliSense 或代码着色出现问题
+## <a name="issues-with-intellisense-or-code-coloration"></a>IntelliSense 或代码着色功能的问题
 
-请尝试将 Visual Studio 2015 升级到 update 3。
+尝试将 Visual Studio 升级到最新版本。 尝试执行与 [不兼容项目](#incompatible-project-in-visual-studio)相同的故障排除步骤。
 
 ## <a name="known-issues"></a>已知问题
 
- 在 Visual Studio Tools for Unity 中存在一些已知问题，是由调试器与 Unity 的旧版本的 C# 编译器的交互方式导致的。 我们正设法帮助解决这些问题，但在此期间，你可能会遇到以下问题：
+在 Visual Studio Tools for Unity 中存在一些已知问题，是由调试器与 Unity 的旧版本的 C# 编译器的交互方式导致的。 我们正设法帮助解决这些问题，但在此期间，你可能会遇到以下问题：
 
 - 在调试时，Unity 有时会崩溃。
 
@@ -118,11 +137,11 @@ USB 调试速度非常快，Visual Studio Tools for Unity 现可检测 USB 设�
 
 ## <a name="report-errors"></a>报告错误
 
- 请在遇到崩溃、冻结或其他错误时发送错误报告以帮助我们改进 Visual Studio Tools for Unity 的质量。 这可以帮助我们调查并修复 Visual Studio Tools for Unity 中的问题。 谢谢！
+请在遇到崩溃、冻结或其他错误时发送错误报告以帮助我们改进 Visual Studio Tools for Unity 的质量。 这可以帮助我们调查并修复 Visual Studio Tools for Unity 中的问题。 谢谢！
 
 ### <a name="how-to-report-an-error-when-visual-studio-freezes"></a>如何在 Visual Studio 冻结时报告错误
 
- 有报告表明使用 Visual Studio Tools for Unity 进行调试时 Visual Studio 有时会冻结，但我们需要更多的数据来了解这个问题。 你可以通过执行下面的步骤来帮助我们调查。
+有报告表明使用 Visual Studio Tools for Unity 进行调试时 Visual Studio 有时会冻结，但我们需要更多的数据来了解这个问题。 你可以通过执行下面的步骤来帮助我们调查。
 
 ##### <a name="to-report-that-visual-studio-freezes-while-debugging-with-visual-studio-tools-for-unity"></a>报告使用 Visual Studio Tools for Unity 进行调试时 Visual Studio 会冻结
 
