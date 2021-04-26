@@ -905,15 +905,8 @@
       href: ide/walkthrough-creating-a-multiple-computer-build-environment.md
 - name: 调试 >>
   href: debugger/index.yml
-- name: 版本控制
-  expanded: true
-  items:
-    - name: Visual Studio 中的 Git 新体验
-      href: ide/git-with-visual-studio.md
-    - name: Visual Studio 如何简化源代码管理
-      href: ide/git-visual-studio-source-control.md
-    - name: 并行比较 Git 和团队资源管理器
-      href: ide/git-team-explorer-feature-comparison.md
+- name: 版本控制 >>
+  href: version-control/index.yml
 - name: 测试 >>
   displayName: Unit testing
   href: test/index.yml

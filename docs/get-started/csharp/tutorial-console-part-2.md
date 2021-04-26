@@ -2,7 +2,7 @@
 title: 教程：扩展简单的 C# 控制台应用
 description: 了解如何在 Visual Studio 中逐步开发 C# 控制台应用。
 ms.custom: get-started
-ms.date: 07/09/2020
+ms.date: 04/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e5552cc3d84eb0dd2a44943c36ddaa60c827ceb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cce069b1c4acb1784388b7afb06e810dbe826d59
+ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909317"
+ms.lasthandoff: 04/17/2021
+ms.locfileid: "107584120"
 ---
 # <a name="tutorial-extend-a-simple-c-console-app"></a>教程：扩展简单的 C# 控制台应用
 
@@ -39,7 +39,7 @@ ms.locfileid: "99909317"
 
    ![类库项目模板选择的屏幕截图](media/vs-2019/calculator2-add-project-dark.png)
 
-1. 键入项目名称 CalculatorLibrary，然后选择“创建” 。 Visual Studio 将创建新项目并将其添加到解决方案中。
+1. 键入项目名称 CalculatorLibrary，然后选择“创建” 。 再次在系统询问时选择 .NET 3.1。 Visual Studio 将创建新项目并将其添加到解决方案中。
 
    ![添加了 CalculatorLibrary 类库项目的解决方案资源管理器的屏幕截图](media/vs-2019/calculator2-solution-explorer-with-class-library-dark2.png)
 
@@ -47,7 +47,7 @@ ms.locfileid: "99909317"
 
    系统可能会询问你是否要重命名对文件中 `Class1` 的任何引用。 你怎样回答并不重要，因为你将在后续步骤中替换该代码。
 
-1. 现在，我们必须添加项目引用，以便第一个项目可以使用新类库公开的 API。  右键单击第一个项目中的“引用”节点，然后选择“添加项目引用” 。
+1. 现在，我们必须添加项目引用，以便第一个项目可以使用新类库公开的 API。  右键单击第一个项目中的“依赖项”节点，然后选择“添加项目引用” 。
 
    ![“添加项目引用”菜单项的屏幕截图](media/vs-2019/calculator2-add-project-reference-dark.png)
 
@@ -121,14 +121,14 @@ ms.locfileid: "99909317"
 
 ## <a name="reference-net-libraries-write-to-a-log"></a>引用 .NET 库：写入日志
 
-1. 假设你现在要添加所有操作的日志，并将其写出到文本文件。 .NET `Trace` 类提供了此功能。 （这也适用于基本的打印调试技术。）Trace 类位于 System.Diagnostics 中，并且我们需要诸如 `StreamWriter` 的 System.IO 类，因此请首先添加 using 指令：
+1. 假设你现在要添加所有操作的日志，并将其写出到文本文件。 .NET `Trace` 类提供了此功能。 （这也适用于基本的打印调试技术。）Trace 类位于 System.Diagnostics 中，并且我们需要诸如 `StreamWriter` 的 System.IO 类，因此请首先在 CalculatorLibrary.cs 顶部添加 using 指令：
 
    ```csharp
    using System.IO;
    using System.Diagnostics;
    ```
 
-1. 查看如何使用 Trace 类，你需要保留对文件流的引用，该引用与文件流关联。 这意味着计算器可以作为对象更好地工作，因此，让我们添加一个构造函数。
+1. 查看如何使用 Trace 类，你需要保留对文件流的引用，该引用与文件流关联。 这意味着计算器作为一个对象的工作性能将提升，所以应在 CalculatorLibrary.cs 中的 Calculator 类开头添加一个构造函数。
 
    ```csharp
    public Calculator()
@@ -144,7 +144,7 @@ ms.locfileid: "99909317"
         {
    ```
 
-1. 我们需要将静态 `DoOperation` 方法更改为成员方法。  同时，我们还将输出添加到日志的每个计算，以便 DoOperation 如以下代码所示：
+1. 并且需要将静态的 `DoOperation` 方法更改为 member 方法，所以要删除 `static` 关键字。  同时，我们还将输出添加到日志的每个计算，以便 DoOperation 如以下代码所示：
 
    ```csharp
    public double DoOperation(double num1, double num2, string op)
@@ -182,13 +182,13 @@ ms.locfileid: "99909317"
     }
    ```
 
-1. 现在，返回 Program.cs，静态调用标有红色波浪线。 要修复此问题，请通过紧邻 while 循环前方添加以下行来创建一个 `calculator` 变量：
+1. 现在，返回 Program.cs，静态调用标有红色波浪线。 要修复此问题，请通过紧邻 `while (!endApp)` 循环前方添加以下行来创建一个 `calculator` 变量：
 
    ```csharp
    Calculator calculator = new Calculator();
    ```
 
-   修改 `DoOperation` 的调用站点，如下所示：
+   并按以下所示修改 `DoOperation` 的调用站点，使其引用以小写形式命名为 `calculator` 的对象，从而将其变为一个成员调用，而不是对静态方法的调用：
 
    ```csharp
    result = calculator.DoOperation(cleanNum1, cleanNum2, op);
@@ -203,9 +203,154 @@ ms.locfileid: "99909317"
     3 * 3 = 9
     ```
 
+此时，CalculatorLibrary.cs 应类似于以下所示：
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculator.log");
+            Trace.Listeners.Add(new TextWriterTraceListener(logFile));
+            Trace.AutoFlush = true;
+            Trace.WriteLine("Starting Calculator Log");
+            Trace.WriteLine(String.Format("Started {0}", System.DateTime.Now.ToString()));
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    Trace.WriteLine(String.Format("{0} + {1} = {2}", num1, num2, result));
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    Trace.WriteLine(String.Format("{0} - {1} = {2}", num1, num2, result));
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    Trace.WriteLine(String.Format("{0} * {1} = {2}", num1, num2, result));
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        Trace.WriteLine(String.Format("{0} / {1} = {2}", num1, num2, result));
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            return result;
+        }
+    }
+}
+```
+
+而 Program.cs 应类似于以下所示：
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            return;
+        }
+    }
+}
+```
+
 ## <a name="add-a-nuget-package-write-to-a-json-file"></a>添加 NuGet 包：写入 JSON 文件
 
-1. 现在，假设我们想要以 JSON 格式（一种用于存储对象数据的常用可移植格式）输出操作。 要实现此功能，我们需要引用 NuGet 包 Newtonsoft.json。 NuGet 包是用于分发 .NET 类库的主要工具。 在解决方案资源管理器中，右键单击 CalculatorLibrary 项目的“引用”节点，然后选择“管理 NuGet 包”  。
+1. 现在，假设我们想要以 JSON 格式（一种用于存储对象数据的常用可移植格式）输出操作。 要实现此功能，我们需要引用 NuGet 包 Newtonsoft.json。 NuGet 包是用于分发 .NET 类库的主要工具。 在解决方案资源管理器中，右键单击 CalculatorLibrary 项目的“依赖项”节点，然后选择“管理 NuGet 包”  。
 
    ![快捷菜单上“管理 NuGet 包”的屏幕截图](media/vs-2019/calculator2-manage-nuget-packages-dark2.png)
 
@@ -434,6 +579,174 @@ Visual Studio 调试器是一款功能强大的工具，可便于你逐步运行
 
 1. 使用“n”命令正确关闭应用。
 
+## <a name="code-complete"></a>代码完成
+
+下面是完成所有步骤后 CalculatorLibrary.cs 文件的完整代码：
+
+```csharp
+using System;
+using System.IO;
+using System.Diagnostics;
+using Newtonsoft.Json;
+
+namespace CalculatorLibrary
+{
+    public class Calculator
+    {
+
+        JsonWriter writer;
+
+        public Calculator()
+        {
+            StreamWriter logFile = File.CreateText("calculatorlog.json");
+            logFile.AutoFlush = true;
+            writer = new JsonTextWriter(logFile);
+            writer.Formatting = Formatting.Indented;
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operations");
+            writer.WriteStartArray();
+        }
+
+        public double DoOperation(double num1, double num2, string op)
+        {
+            double result = double.NaN; // Default value is "not-a-number" which we use if an operation, such as division, could result in an error.
+            writer.WriteStartObject();
+            writer.WritePropertyName("Operand1");
+            writer.WriteValue(num1);
+            writer.WritePropertyName("Operand2");
+            writer.WriteValue(num2);
+            writer.WritePropertyName("Operation");
+            // Use a switch statement to do the math.
+            switch (op)
+            {
+                case "a":
+                    result = num1 + num2;
+                    writer.WriteValue("Add");
+                    break;
+                case "s":
+                    result = num1 - num2;
+                    writer.WriteValue("Subtract");
+                    break;
+                case "m":
+                    result = num1 * num2;
+                    writer.WriteValue("Multiply");
+                    break;
+                case "d":
+                    // Ask the user to enter a non-zero divisor.
+                    if (num2 != 0)
+                    {
+                        result = num1 / num2;
+                        writer.WriteValue("Divide");
+                    }
+                    break;
+                // Return text for an incorrect option entry.
+                default:
+                    break;
+            }
+            writer.WritePropertyName("Result");
+            writer.WriteValue(result);
+            writer.WriteEndObject();
+
+            return result;
+        }
+
+        public void Finish()
+        {
+            writer.WriteEndArray();
+            writer.WriteEndObject();
+            writer.Close();
+        }
+    }
+}
+```
+
+下面是 Program.cs 的代码： 
+
+```csharp
+using System;
+using CalculatorLibrary;
+
+namespace CalculatorProgram
+{
+   
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            bool endApp = false;
+            // Display title as the C# console calculator app.
+            Console.WriteLine("Console Calculator in C#\r");
+            Console.WriteLine("------------------------\n");
+
+            Calculator calculator = new Calculator();
+            while (!endApp)
+            {
+                // Declare variables and set to empty.
+                string numInput1 = "";
+                string numInput2 = "";
+                double result = 0;
+
+                // Ask the user to type the first number.
+                Console.Write("Type a number, and then press Enter: ");
+                numInput1 = Console.ReadLine();
+
+                double cleanNum1 = 0;
+                while (!double.TryParse(numInput1, out cleanNum1))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput1 = Console.ReadLine();
+                }
+
+                // Ask the user to type the second number.
+                Console.Write("Type another number, and then press Enter: ");
+                numInput2 = Console.ReadLine();
+
+                double cleanNum2 = 0;
+                while (!double.TryParse(numInput2, out cleanNum2))
+                {
+                    Console.Write("This is not valid input. Please enter an integer value: ");
+                    numInput2 = Console.ReadLine();
+                }
+
+                // Ask the user to choose an operator.
+                Console.WriteLine("Choose an operator from the following list:");
+                Console.WriteLine("\ta - Add");
+                Console.WriteLine("\ts - Subtract");
+                Console.WriteLine("\tm - Multiply");
+                Console.WriteLine("\td - Divide");
+                Console.Write("Your option? ");
+
+                string op = Console.ReadLine();
+
+                try
+                {
+                    result = calculator.DoOperation(cleanNum1, cleanNum2, op); 
+                    if (double.IsNaN(result))
+                    {
+                        Console.WriteLine("This operation will result in a mathematical error.\n");
+                    }
+                    else Console.WriteLine("Your result: {0:0.##}\n", result);
+                }
+                catch (Exception e)
+                {
+                    Console.WriteLine("Oh no! An exception occurred trying to do the math.\n - Details: " + e.Message);
+                }
+
+                Console.WriteLine("------------------------\n");
+
+                // Wait for the user to respond before closing.
+                Console.Write("Press 'n' and Enter to close the app, or press any other key and Enter to continue: ");
+                if (Console.ReadLine() == "n") endApp = true;
+
+                Console.WriteLine("\n"); // Friendly linespacing.
+            }
+            calculator.Finish();
+            return;
+        }
+    }
+}
+```
+
 ## <a name="next-steps"></a>后续步骤
 
 恭喜你完成本教程！ 若要了解详情，请继续学习后续教程。
@@ -446,5 +759,5 @@ Visual Studio 调试器是一款功能强大的工具，可便于你逐步运行
 
 ## <a name="see-also"></a>请参阅
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)

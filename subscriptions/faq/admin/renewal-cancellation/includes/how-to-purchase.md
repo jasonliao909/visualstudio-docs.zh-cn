@@ -6,13 +6,13 @@ ms.topic: include
 ms.assetid: c8dd39de-bf7f-40a2-a203-f2be21b87f5c
 author: CaityBuschlen
 ms.author: cabuschl
-ms.date: 01/27/2021
-ms.openlocfilehash: a2dca00b1a7ebea80a883825783785c84c2352cc
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.date: 04/20/2021
+ms.openlocfilehash: c18d855ad79bc3463e310a9fcf1c3a17ea5c6fbc
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99104402"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800771"
 ---
 ## <a name="how-do-i-purchase-visual-studio-subscriptions"></a>如何购买 Visual Studio 订阅？
 Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https://www.microsoft.com/licensing/default)、 [Visual Studio Marketplace](https://marketplace.visualstudio.com/subscriptions) 和 [Microsoft Store](https://www.microsoft.com/store/collections/visualstudio)。  
@@ -26,6 +26,8 @@ Visual Studio 订阅可通过多种渠道购买，包括 [批量许可](https:
 - [Visual Studio Test Professional](https://www.microsoft.com/p/visual-studio-test-professional-subscription/dg7gmgf0dst6?activetab=pivot%3aoverviewtab) 
 
 其中每个订阅都提供了首次购买或续订现有订阅的选项。 续订定价反映重要折扣，仅适用于现有订阅。 若要在续订折扣价内续订订阅，应在订阅过期之前续订订阅。 
+
+如果想要一次性购买 Visual Studio 且不要订阅或订阅所附任何权益，请访问 Microsoft Store 购买 [Visual Studio Professional 2019](https://www.microsoft.com/p/visual-studio-professional-2019/dg7gmgf0f6q1?cid=msft_web_collection&activetab=pivot%3aoverviewtab)。 
 
 ### <a name="visual-studio-marketplace"></a>Visual Studio Marketplace 
 对于每月订阅，可以租用 Visual Studio 和 Azure DevOps，而无需订立长期合同。 通过 Microsoft Azure 订阅处理计费。 如果你还没有 Azure 订阅，可以在首次购买时免费设置一个订阅。  

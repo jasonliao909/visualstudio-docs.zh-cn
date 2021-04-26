@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 49c3081e68baf4f2bf1d0975bcdae7ea25ab90b3
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
+ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571540"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107526161"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 桥接的工作原理
 
@@ -26,6 +26,8 @@ Bridge to Kubernetes 可重定向已连接的 Kubernetes 群集与开发计算�
 
 > [!WARNING]
 > Bridge to Kubernetes 仅适用于开发和测试场景。 它不适合用于生产群集或正在使用的实时服务，也不支持这样做。
+
+有关当前支持的功能以及 Bridge to Kubernetes 的未来路线图，请访问 [Bridge to Kubernetes 路线图](https://github.com/microsoft/mindaro/projects/1)。
 
 ## <a name="using-bridge-to-kubernetes"></a>使用 Bridge to Kubernetes
 
@@ -53,7 +55,7 @@ Bridge to Kubernetes 与群集建立连接时会执行以下操作：
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml 的其他配置
 
-使用 `KubernetesLocalProcessConfig.yaml` 文件可以将环境变量和已装载文件复制到群集中的 Pod。 有关其他配置选项的详细信息，请参阅[配置 Bridge to Kubernetes][using-config-yaml]。
+使用 `KubernetesLocalProcessConfig.yaml` 文件可以将环境变量和已装载文件复制到群集中的 Pod。 当使用 Visual Studio 进行 Bridge to Kubernetes 开发时，KubernetesLocalConfig.yaml 文件必须与要重定向的服务的项目文件位于同一目录中。 有关其他配置选项的详细信息，请参阅[配置 Bridge to Kubernetes][using-config-yaml]。
 
 ## <a name="using-routing-capabilities-for-developing-in-isolation"></a>使用路由功能进行独立开发
 

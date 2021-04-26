@@ -2,31 +2,31 @@
 title: 应用使用 Microsoft Endpoint Configuration Manager 的 Visual Studio 管理员更新
 titleSuffix: ''
 description: 了解如何应用 Visual Studio 的管理员更新。
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d316fc35df8c571a9112d7a653737e099df80559
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: d7d2950b9495846693d5edee7790b8611cbca170
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547448"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800791"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>应用使用 Microsoft Endpoint Configuration Manager 的管理员更新
 
-本文档介绍 Visual Studio 管理员更新的不同类型和特征。 在下方，可找到有关应如何以及何时在整个组织中分配这些更新、哪些配置选项可用以及如何查看报表并进行故障排除的信息。 若要详细了解使用管理员更新的先决条件，请参阅[启用管理员更新](../install/enabling-administrator-updates.md)。
+本文档介绍 Visual Studio 管理员更新的不同类型和特征。 在下方，可找到有关应如何以及何时在整个组织中分配这些更新、哪些配置选项可用以及如何查看报表并进行故障排除的信息。 若要详细了解使用管理员更新的先决条件，请参阅[启用管理员更新](../install/enabling-administrator-updates.md)。 管理员更新会假定计算机上已安装 Visual Studio。 应用管理员更新时不会启动全新安装。
 
 ## <a name="understanding-visual-studio-administrator-updates"></a>了解 Visual Studio 管理员更新 
 
-发布到 Microsoft 更新以供 Microsoft 目录和 WSUS 使用的 Visual Studio 管理员更新包内含使 Configuration Manager 能够下载 Visual Studio 的更新并将其分发到客户端计算机所需的信息。 它还包含 IT 管理员确定要在整个组织中分配哪些更新所需的信息，并可促进网络布局的维护。 Visual Studio 管理员更新包中包含的信息不足以执行产品的全新安装，也不包含发布到内容分发网络的任何实际产品二进制文件。 Visual Studio 管理员更新是累积更新，就像常规 Visual Studio 更新一样。 你可以假设任何具有较高产品版本号和较晚发布日期的 Visual Studio 更新都是较旧、较低版本的超集。 
+发布到 Microsoft 更新以供 Microsoft 目录和 WSUS 使用的 Visual Studio 管理员更新包内含有 Configuration Manager 所需的使其能够下载 Visual Studio 更新并将其分发到客户端计算机的信息。 它还包含 IT 管理员所需的用于确定要在整个组织中分配哪些更新的信息。 使用它还能让网络布局的维护更便捷。 Visual Studio 管理员更新包中包含的信息不足以执行产品的全新安装，也不包含发布到内容分发网络的任何实际产品二进制文件。 Visual Studio 管理员更新是累积更新，就像常规 Visual Studio 更新一样。 你可以假设任何具有较高产品版本号和较晚发布日期的 Visual Studio 更新都是较旧、较低版本的超集。 
 
 Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。 若要详细了解在特定时间范围内仍处于支持状态的 Visual Studio 服务基线，请参阅 [Visual Studio 产品生命周期和服务](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 所有受支持的 Visual Studio 服务基线都将保持安全。  
 
@@ -83,9 +83,9 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 
 ::: moniker range="vs-2019"
 
-* 服务基线粘性：如上所述，作为功能更新的管理员更新会将 Visual Studio 安装提升到更新的产品次要版本。 但有时，开发团队希望保持在特定的稳定且安全的服务基线级别，并希望控制其客户端何时提升到更新的次要版本。 若要将客户端计算机配置为保持在某个服务基线上，并忽略发送给它的不需要的管理员功能更新，则需要创建 BaselineStickinessVersions2019 Reg_SZ 数据值并将其设置为一个字符串，该字符串表示客户端计算机可捕捉和保持的允许基线。  此字符串可包含一系列由逗号分隔的服务基线版本，如 16.4.0、16.7.0。 该字符串中可包含任意数量的服务基线版本，并且还支持使用“All”一词，它是用于引用所有支持的服务基线的简写。 
+* 服务基线粘性：如上所述，管理员功能更新会将 Visual Studio 安装提升到更新的产品次要版本。 但有时，Visual Studio 用户需要保持在稳定且安全的特定服务基线级别，并想控制其计算机何时提升到更新的次要版本。 若要将客户端计算机配置为保持在某个服务基线上，并忽略发送给它的不需要的管理员功能更新，则需要创建 BaselineStickinessVersions2019 Reg_SZ 数据值并将其设置为一个字符串，该字符串表示客户端计算机须对齐和保持的优选基线。 字符串可以包含允许的服务基线版本，如 16.7.0。  
 
-     如果 `BaselineStickinessVersions2019` 注册表值的格式不正确，则将阻止在计算机上安装所有功能更新。 另外，请注意 [Visual Studio 功能更新的支持时间范围](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 从技术上讲，虽然可应用已达到生存期终点的功能更新，但不建议这样做，因为它们将不再受支持，可能不安全。
+     如果 `BaselineStickinessVersions2019` 注册表值的格式不正确，则将阻止在计算机上安装所有管理员功能更新。 请务必关注[支持的 Visual Studio 功能更新时间范围](https://docs.microsoft.com/visualstudio/productinfo/vs-servicing-vs)。 另外，不管 `BaselineStickinessVersions2019` 键是否存在或值为多少，虽然从技术上讲是可以应用已达到生存期终点的功能更新，但不建议这样做，因为它们将不再受支持，可能不安全。
 
 ::: moniker-end
 
