@@ -1,7 +1,7 @@
 ---
 title: 更新基于网络的安装
 description: 了解如何使用 --layout 命令更新基于网络的 Visual Studio 安装
-ms.date: 04/06/2021
+ms.date: 04/16/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0f6e13333b6cab86f6485ddc18516039c712455a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
+ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295944"
+ms.lasthandoff: 04/21/2021
+ms.locfileid: "107800772"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -29,9 +29,9 @@ ms.locfileid: "107295944"
 ## <a name="how-to-update-a-network-layout"></a>如何更新网络布局
 
 > [!IMPORTANT]
-> 这些说明假定你之前已创建了一个网络安装布局。 要详细了解如何执行此操作，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)页面。
+> 这些说明预设你之前已创建网络安装布局，并作出了一些有关客户端应如何获取更新的决定。 有关如何实现此目的的详细信息，请参阅[创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)和[控制对 Visua lStudio 部署的更新](../install/controlling-updates-to-visual-studio-deployments.md)页。
 
-要刷新网络安装共享，使其包含最新更新，请运行 `--layout` 命令，从而以增量方式下载更新后的包。
+若要刷新网络安装共享，使其包含最新更新，请使用 `--layout` 参数来运行引导程序，下载更新包。
 
 如果你在[首次创建网络布局](create-a-network-installation-of-visual-studio.md)时选择了部分布局，这些设置将被保存。 此后一切布局命令都将使用先前的选项以及任何指定的新选项。
 
