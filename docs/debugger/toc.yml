@@ -688,6 +688,8 @@
       items:
         - name: 使用转储文件
           href: using-dump-files.md
+        - name: 调试托管内存转储
+          href: how-to-debug-managed-memory-dump.md
         - name: 转储文件摘要扩展性 API
           href: dump-file-summary-extensibility-api.md
     - name: 调试器安全
