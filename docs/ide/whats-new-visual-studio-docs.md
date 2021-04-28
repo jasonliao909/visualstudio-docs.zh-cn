@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e7dfd0d677412ded44459c7850fa9028142c42
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: 863ba91f88ee953ce7d62179ff3b50aca5500c83
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031575"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913054"
 ---
 # <a name="visual-studio-docs-whats-new-for-march-2021"></a>Visual Studio 文档：2021 年 3 月新增功能
 
@@ -85,9 +85,9 @@ ms.locfileid: "107031575"
 ## <a name="ide"></a>IDE
 
 **新文章**
-- [Visual Studio 如何使源代码管理更简单](./git-visual-studio-source-control.md) - 创建新的 Visual Studio 源代码管理主题
+- [Visual Studio 如何使源代码管理更简单](../version-control/git-visual-studio-source-control.md) - 创建新的 Visual Studio 源代码管理主题
 - [开发人员命令提示和开发人员 powershell](./reference/command-prompt-powershell.md) - 开发人员命令提示和开发人员 PowerShell
-- [Git 和团队资源管理器的并排比较的链接](./git-team-explorer-feature-comparison.md) - 添加新的团队资源管理器和新 Git 功能的并排比较页面
+- [Git 和团队资源管理器的并排比较的链接](../version-control/git-team-explorer-feature-comparison.md) - 添加新的团队资源管理器和新 Git 功能的并排比较页面
 
 **更新的文章**
 
