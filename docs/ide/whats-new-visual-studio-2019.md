@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 60e1aca5e0f561539f3e27cf36dac67bb92c4ddf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e4c432afb1a4341dbe30f023d95bfccb4689094
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082018"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913093"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
@@ -146,7 +146,7 @@ C# 中有很多新颖有用的重构，更便于组织代码。 它们在灯泡�
 
 16.8 中的新增功能：Git 现在是 Visual Studio 2019 中的默认版本控制体验。 我们在过去两个版本中构建了功能集，并根据你的反馈对其进行了迭代。 默认情况下，现在会为每个人开启新体验。 从新 Git 菜单中，可以克隆、创建或打开存储库。 使用集成 Git 工具窗口可提交和推送对代码进行的更改、管理分支、使远程存储库保持最新以及解决合并冲突。
 
-有关详细信息，请参阅 [Visual Studio 中的 Git 体验](git-with-visual-studio.md)页面。
+有关详细信息，请参阅 [Visual Studio 中的 Git 体验](../version-control/git-with-visual-studio.md)页面。
 
 ### <a name="live-share"></a>Live Share
 
@@ -228,7 +228,7 @@ Visual Studio 2019 中会默认安装此服务。
 
    虽然默认情况下，新 Git 版本控制体验目前在 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes/) 中处于开启状态，不过我们会继续添加功能，以增强最新预览版中的体验。
 
-   有关详细信息，请参阅 [Visual Studio 中的 Git 体验](git-with-visual-studio.md)页面。
+   有关详细信息，请参阅 [Visual Studio 中的 Git 体验](../version-control/git-with-visual-studio.md)页面。
 
 若要详细了解预览版（和下载链接，如果你希望试用），请参阅 [Visual Studio Preview](https://aka.ms/vspreview/) 页。
 

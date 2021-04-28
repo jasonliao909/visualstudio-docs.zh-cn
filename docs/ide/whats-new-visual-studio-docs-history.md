@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 05af4933569e988b35bea9763a27d8f68aae3627
-ms.sourcegitcommit: be14ae4b95e289f16e9444293bb2ec997d4b4d72
+ms.openlocfilehash: d29c8be82ba0461231d9cd02eb6799dd38a690ed
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107031588"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913028"
 ---
 # <a name="history-of-whats-new-in-visual-studio-docs"></a>Visual Studio 中的新增功能历史记录文档
 
@@ -296,7 +296,7 @@ ms.locfileid: "107031588"
 
 **更新的文章**
 
-- [Visual Studio 中的 Git 体验](./git-with-visual-studio.md)
+- [Visual Studio 中的 Git 体验](../version-control/git-with-visual-studio.md)
   - 更新替换文字和元数据
   - 16.8 GA 的 Git 体验内容更新
 - [Visual Studio 2019 中的新增功能](./whats-new-visual-studio-2019.md)
@@ -482,7 +482,7 @@ ms.locfileid: "107031588"
 
 **新文章**
 
-- [Visual Studio 中的新 Git 体验（预览）](./git-with-visual-studio.md) - 增加新的 Git 体验内容（预览）
+- [Visual Studio 中的新 Git 体验（预览）](../version-control/git-with-visual-studio.md) - 增加新的 Git 体验内容（预览）
 - [C++ EditorConfig 格式设置约定](./cpp-editorconfig-properties.md) - 新文章
 - [什么是 GitHub Codespaces？（预览）](./codespaces/codespaces-overview.md) - 增加 Codespaces（预览）内容
 - [如何自定义 codespace（预览）](./codespaces/customize-codespaces.md) -增加 Codespaces（预览）内容
