@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 993b5f61d8517d5638cb785fa2d79b47f80d1caf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b72db232e5e83a0d83fbab1d1223da507054d9
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940548"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941118"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的转储文件
 
@@ -43,6 +43,10 @@ Visual Studio 调试器可为托管或本机代码保存转储文件。 它可�
 ## <a name="requirements-and-limitations"></a><a name="BKMK_Requirements_and_limitations"></a>要求和限制
 
 - 若要调试来自 64 位计算机的转储文件，Visual Studio 必须在 64 位计算机上运行。
+
+::: moniker range=">= vs-2019"
+- Visual Studio 可以从 Linux OS 调试托管应用的转储文件。 
+::: moniker-end
 
 - Visual Studio 可以调试 ARM 设备中的本机应用程序的转储文件。 它还可以调试 ARM 设备中的托管应用的转储，但仅限于在本机调试器中。
 
@@ -116,6 +120,7 @@ Visual Studio 会自动搜索未包含在转储文件中的 .exe 文件的位置
 
 ## <a name="see-also"></a>请参阅
 
+- [如何使用 .NET 诊断分析器来调试托管内存转储](../debugger/how-to-debug-managed-memory-dump.md)
 - [实时调试](../debugger/just-in-time-debugging-in-visual-studio.md)
 - [指定符号 (.pdb) 文件和源文件](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)
 - [IntelliTrace](../debugger/intellitrace.md)
