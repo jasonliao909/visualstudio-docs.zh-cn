@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c4ae447976798372e049df46552f8383389f7b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e82073b77231f84452ba51402f407904142bbf8e
+ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920772"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107941092"
 ---
 # <a name="step-3-use-the-interactive-repl-window"></a>步骤 3：使用交互式 REPL 窗口
 
@@ -40,7 +40,7 @@ ms.locfileid: "99920772"
 
     ![Python 交互窗口即时结果](media/vs-getting-started-python-12-interactive2.png)
 
-1. 开始编写多行语句（如函数定义）时，交互  窗口将针对后续行显示 Python 的 ...  提示符，它与命令行 REPL 不同，可以提供自动缩进：
+1. 当你开始编写多行语句（如函数定义）时，“交互式”窗口显示 Python 的 ... 提示符用于连续行（与命令行 REPL 不同，它提供了自动缩进）。 若要添加新的 ... 行，请按 `Shift+Enter`：
 
     ![含语句后续符的 Python 交互窗口](media/vs-getting-started-python-13-interactive3.png)
 

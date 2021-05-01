@@ -4,15 +4,15 @@ author: ghogen
 description: 了解如何编辑 Docker Compose 生成属性以自定义 Visual Studio 生成和运行 Docker Compose 应用程序的方式。
 ms.custom: SEO-VS-2020
 ms.author: ghogen
-ms.date: 08/12/2019
+ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: 4478656af7fff4cfd3a0fdafefe623af5811154f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
+ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068292"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108025860"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 生成属性
 
@@ -37,16 +37,17 @@ ms.locfileid: "105068292"
 | 属性名称 | 位置 | 说明 | 默认值  |
 |---------------|----------|-------------|----------------|
 |AdditionalComposeFilePaths|dcproj|以分号分隔的列表指定要发送给 docker-compose.exe 供所有命令使用的其他撰写文件。 允许使用来自 docker-compose 项目文件 (dcproj) 的相对路径。|-|
-|DockerComposeBaseFilePath|dcproj|执行 docker-compose 文件的文件名的第一部分，不带 .yml 扩展名  。 例如： <br>1.DockerComposeBaseFilePath = null/未定义：使用基本文件路径 docker-compose，文件将命名为 docker-compose.yml 和 docker-compose.override.yml   <br>2. DockerComposeBaseFilePath = mydockercom：文件将命名为 mydockercompose.yml 和 mydockercompose.override.yml   <br> 3.DockerComposeBaseFilePath = ..\mydockercompose：文件将向上提升一级  。 |docker-compose|
-|DockerComposeBuildArguments|dcproj|指定要传递给 `docker-compose build` 命令的额外参数。 例如，`--parallel --pull` |
-|DockerComposeDownArguments|dcproj|指定要传递给 `docker-compose down` 命令的额外参数。 例如，`--timeout 500`|-|
+|DockerComposeBaseFilePath|dcproj|执行 docker-compose 文件的文件名的第一部分，不带 .yml 扩展名  。 例如： <br>1. DockerComposeBaseFilePath = null/未定义：使用基础文件路径 docker-compose，文件将命名为 docker-compose.yml 和 docker-compose.override.yml。<br>2. DockerComposeBaseFilePath = mydockercompose：文件将命名为 mydockercompose.yml 和 mydockercompose.override.yml。<br> 3. DockerComposeBaseFilePath = ..\mydockercompose：文件将向上提升一级。 |docker-compose|
+|DockerComposeBuildArguments|dcproj|指定要传递给 `docker-compose build` 命令的额外参数。 例如，`--parallel --pull`。 |
+|DockerComposeDownArguments|dcproj|指定要传递给 `docker-compose down` 命令的额外参数。 例如，`--timeout 500`。|-|  
 |DockerComposeProjectName| dcproj | 如果已指定，它将替代 docker-compose 项目的项目名称。 | dockercompose + 自动生成的哈希 |
 |DockerComposeProjectPath|csproj 或 vbproj|Docker-compose 项目 (.dcproj) 文件的相对路径。 发布服务项目时设置此属性，以查找存储在 docker-compose.yml 文件中的关联映像生成设置。|-|
-|DockerComposeUpArguments|dcproj|指定要传递给 `docker-compose up` 命令的额外参数。 例如，`--timeout 500`|-|
-|DockerDevelopmentMode|dcproj| 控制是否启用“build-on-host”优化（“快速模式”调试）。  允许的值为“快速”和“常规”   。 | 快速 |
-|DockerLaunchAction| dcproj | 指定要针对 F5 或 Ctrl+F5 执行的启动操作。  允许的值为 None、LaunchBrowser 和 LaunchWCFTestClient。|None|
+|DockerComposeProjectsToIgnore|dcproj| 指定在调试期间要被 docker-compose 工具忽略的项目。 此属性可用于任何项目。 可通过以下两种方式之一来指定文件路径： <br> 1. 相对于 dcproj。 例如，`<DockerComposeProjectsToIgnore>path\to\AngularProject1.csproj</DockerComposeProjectsToIgnore>`。 <br> 2. 绝对路径。<br> 注意：路径应由分隔符 `;` 分隔。|-|
+|DockerComposeUpArguments|dcproj|指定要传递给 `docker-compose up` 命令的额外参数。 例如，`--timeout 500`。|-|
+|DockerDevelopmentMode| dcproj | 控制是否在容器中生成用户项目。 可取值为“Fast”或“Regular”，用于控制在 Dockerfile 中[生成哪些阶段](https://aka.ms/containerfastmode)。 调试配置默认为“Fast”模式，否则为“Regular”模式。 | 快速 |
+|DockerLaunchAction| dcproj | 指定要针对 F5 或 Ctrl+F5 执行的启动操作。  允许的值为 None、LaunchBrowser 和 LaunchWCFTestClient。 | None |
 |DockerLaunchBrowser| dcproj | 指示是否启动浏览器。 如果指定了 DockerLaunchAction，则忽略。 | False |
-|DockerServiceName| dcproj|如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，则 DockerServiceName 为应启动的服务名称。  使用此属性来确定将启动 docker-compose 文件可能引用的多个项目中的哪一个。|-|
+|DockerServiceName| dcproj| 如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，则 DockerServiceName 指定启动在 docker-compose 文件中引用的哪个服务。|-|
 |DockerServiceUrl| dcproj | 启动浏览器时将使用的 URL。  有效的替换令牌为“{ServiceIPAddress}”、“{ServicePort}”和“{Scheme}”。  例如：{Scheme}://{ServiceIPAddress}:{ServicePort}|-|
 |DockerTargetOS| dcproj | 生成 Docker 映像时使用的目标 OS。|-|
 
@@ -93,9 +94,16 @@ services:
 > [!NOTE]
 > DockerComposeBuildArguments、DockerComposeDownArguments 和 DockerComposeUpArguments 是 Visual Studio 2019 版本 16.3 中的新增内容。
 
-## <a name="docker-compose-file-labels"></a>Docker Compose 文件标签
+## <a name="overriding-visual-studios-docker-compose-configuration"></a>替代 Visual Studio 的 Docker Compose 配置
 
-还可以将名为 docker-compose.yml（对于“调试”配置）或 docker-compose.override.yml（对于“发布”配置）的文件放在与 docker-compose.yml 文件相同的目录中，从而替代特定设置      。  可以在此文件中指定如下所示的设置：
+可以替代特定设置，具体方法为将名为 docker-compose.vs.debug.yml（对于“Fast”模式）或 docker-compose.vs.release.yml（对于“Regular”模式）的文件放置在与 docker-compose.yml 文件相同的目录中。 
+
+>[!TIP] 
+>若要确定任何这些设置的默认值，请查看 docker-compose.vs.debug.g.yml 或 docker-compose.vs.release.g.yml。
+
+### <a name="docker-compose-file-labels"></a>Docker Compose 文件标签
+
+ 在 docker-compose.vs.debug.yml 或 docker-compose.vs.release.yml 中，可以定义特定于替代的标签，如下所示：
 
 ```yml
 services:
@@ -109,13 +117,26 @@ services:
 |标签名称|描述|
 |----------|-----------|
 |com.microsoft.visualstudio.debuggee.arguments|开始调试时传递给程序的参数。 对于 .NET Core 应用，这些参数通常是 NuGet 包的其他搜索路径，后面是指向项目输出程序集的路径。|
-|com.microsoft.visualstudio.debuggee.killprogram|此命令用于停止在容器中运行的调试对象程序（如有必要）。|
 |com.microsoft.visualstudio.debuggee.program|启动调试时启动的程序。 对于 .Net Core 应用，此设置通常为“dotnet”  。|
 |com.microsoft.visualstudio.debuggee.workingdirectory|开始调试时用作起始目录的目录。 对于 Linux 容器，此设置通常为 /app；对于 Windows 容器，此设置通常为 C:\app   。|
+|com.microsoft.visualstudio.debuggee.killprogram|此命令用于停止在容器中运行的调试对象程序（如有必要）。|
 
-## <a name="customize-the-app-startup-process"></a>自定义应用启动过程
+### <a name="customize-the-docker-build-process"></a>自定义 Docker 生成过程
 
-你可以通过使用 `entrypoint` 设置并使其依赖于配置，在启动应用之前运行命令或自定义脚本。 例如，如果只需要在“调试”模式下而不是“发布模式”下通过运行 `update-ca-certificates` 设置证书，则仅在 docker-compose.vs.debug.yml 中添加以下代码    ：
+通过在 `build` 属性中使用 `target` 设置，可以声明在 Dockerfile 中生成哪个阶段。 此替代只能在 docker-compose.vs.debug.yml 或 docker-compose.vs.release.yml 中使用。 
+
+```yml
+services:
+  webapplication1:
+    build:
+      target: customStage
+    labels:
+      ...
+```
+
+### <a name="customize-the-app-startup-process"></a>自定义应用启动过程
+
+在启动应用之前，可以通过使用 `entrypoint` 设置并使其依赖于 `DockerDevelopmentMode`，运行命令或自定义脚本。 例如，如果只需要在“Fast”模式下通过运行 `update-ca-certificates` 来创建证书，而不需要在“Regular”模式下这样做，则可以只在 docker-compose.vs.debug.yml 中添加以下代码：
 
 ```yml
 services:
@@ -124,8 +145,6 @@ services:
     labels:
       ...
 ```
-
-如果省略 docker-compose.vs.release.yml 或 docker-compose.vs.debug.yml，则 Visual Studio 将基于默认设置生成被省略的内容   。
 
 ## <a name="next-steps"></a>后续步骤
 

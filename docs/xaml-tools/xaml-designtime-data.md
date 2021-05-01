@@ -7,12 +7,12 @@ author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 4bd059fa82f8a959d6e3b8a843f19cbec636fb7e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
+ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880406"
+ms.lasthandoff: 04/23/2021
+ms.locfileid: "107913067"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>在 Visual Studio 中通过 XAML 设计器使用设计时数据
 
@@ -66,7 +66,10 @@ mc:Ignorable="d"
 
 ## <a name="design-time-data-for-listviews"></a>ListView 的设计时数据
 
-ListView 是一种在桌面应用中显示数据的常用方法。 但是，如果没有任何数据，ListView 就难以进行可视化。 可使用此功能创建内联设计时数据 ItemSource。 XAML 设计器在设计时在 ListView 中显示该数组中的内容。 这是一个 WPF .NET Core 示例。 若要使用 system:String 类型，请确保在 XAML 标头中包含 `xmlns:system="clr-namespace:System;assembly=mscorlib`。
+ListView 是一种在桌面应用中显示数据的常用方法。 但是，如果没有任何数据，ListView 就难以进行可视化。 可以使用此功能创建内联设计时数据 ItemSource 或 Items。 XAML 设计器在设计时在 ListView 中显示该数组中的内容。
+
+### <a name="wpf-net-core--example"></a>WPF .NET Core 示例
+若要使用 system:String 类型，请确保在 XAML 标头中包含 `xmlns:system="clr-namespace:System;assembly=mscorlib`。
 
 ```xml
 <StackPanel>
@@ -135,6 +138,22 @@ xmlns:models="clr-namespace:Cities.Models"
 [![具有 ListView 的实际模型设计时数据](media\xaml-design-time-listview-models.png "具有 ListView 的实际模型设计时数据")](media\xaml-design-time-listview-models.png#lightbox)
 
 这样做的好处是，你可将控件绑定到模型的设计时静态版本。
+
+### <a name="uwp-example"></a>UWP 示例 
+
+UWP 不支持 x:Array。 因此，可以改用 `<d:ListView.Items>`。 若要使用 system:String 类型，请确保在 XAML 标头中包含 `http://schemas.microsoft.com/winfx/2009/xaml`。
+
+```xml
+    <StackPanel>
+        <ListView>
+            <d:ListView.Items>
+                <system:String>Item One</system:String>
+                <system:String>Item Two</system:String>
+                <system:String>Item Three</system:String>
+            </d:ListView.Items>
+        </ListView>
+    </StackPanel>
+```
 
 ## <a name="use-design-time-data-with-custom-types-and-properties"></a>将设计时数据与自定义类型和属性一起使用
 
