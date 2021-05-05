@@ -3,21 +3,20 @@ title: 加载项目的子集
 description: 了解解决方案筛选功能，并了解如何通过此功能快速加载解决方案中的部分项目。
 ms.custom: SEO-VS-2020
 ms.date: 04/22/2019
-ms.prod: visual-studio-dev16
 ms.topic: conceptual
 helpviewer_keywords:
 - filtered solution
 - solution filtering
-author: jillre
+author: TerryGLee
 ms.author: stsu
 manager: jmartens
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: eae0d02e1fff3f9ad5b35384e6ccab599805372b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869383"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298725"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中筛选的解决方案
 
@@ -30,6 +29,9 @@ ms.locfileid: "99869383"
 - 重新打开解决方案时，Visual Studio 会记住在上一个会话中加载的项目，并仅加载这些项目。
 
 - 可以创建解决方案筛选器文件以保存一个或多个项目加载配置或与队友共享配置。
+
+> [!NOTE]
+> 本主题适用于 Visual Studio  Windows 版。
 
 ## <a name="open-a-filtered-solution"></a>打开已筛选的解决方案
 

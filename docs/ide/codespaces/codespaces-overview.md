@@ -3,25 +3,25 @@ title: GitHub Codespaces 概述（预览）
 description: 了解有关带有 Visual Studio 的 GitHub Codespaces 的详细信息，以及它如何帮助将开发环境扩展到云。
 ms.topic: overview
 ms.date: 09/04/2020
-author: TerryGLee
-ms.author: tglee
+author: gregvanl
+ms.author: gregvanl
 manager: jmartens
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2019
-ms.openlocfilehash: a4bf2cf948b6df65ee0407c1cc736e8056820a54
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: ab50c3c2df2cfad6d489d800f47624503844dc9d
+ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672782"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108298738"
 ---
 # <a name="what-is-github-codespaces-preview"></a>什么是 GitHub Codespaces？ （预览版）
 
-> [!Important] 
-> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 建议参与 Visual Studio 的[开发人员社区论坛](https://developercommunity.visualstudio.com/home)，了解未来要推出的预览版和路线图信息。 
+> [!Important]
+> 从 2021 年 4 月 12 日开始，将不再支持从 Visual Studio 2019 连接到 GitHub Codespaces，此个人预览版已结束。 我们的工作重点是改进云支持型内部循环和针对多种 Visual Studio 工作负载优化的 VDI 解决方案的体验。 建议参与 Visual Studio 的[开发人员社区论坛](https://developercommunity.visualstudio.com/home)，了解未来要推出的预览版和路线图信息。
 
 欢迎使用 Codespaces！ 我们很高兴在这里遇到你。
 
@@ -39,9 +39,9 @@ GitHub Codespaces 功能建立在一些基本概念之上。 本部分介绍了�
 
 如今，许多开发人员都尝试在配置有特定开发和运行时堆栈的远程设置或 VM 中编写代码。 他们这样做是因为在本地设置这些开发环境极其困难、极具破坏性，在某些情况下，甚至几乎不可能实现。 此外，人们希望尝试新技术或新框架，而无需担心“弄乱”他们日常工作所需的计算机。
 
-虽然开发人员可以使用远程环境和具有远程功能的工具提高工作效率，但这通常会产生计算机管理开销。 环境配置通常会使载入和上下文切换变得更加复杂。 GitHub Codespaces 通过允许多环境同时存在，消除了快速载入和上下文切换的障碍。 
+虽然开发人员可以使用远程环境和具有远程功能的工具提高工作效率，但这通常会产生计算机管理开销。 环境配置通常会使载入和上下文切换变得更加复杂。 GitHub Codespaces 通过允许多环境同时存在，消除了快速载入和上下文切换的障碍。
 
-GitHub Codespaces 提供托管解决方案，可让你专注于生产力而非设置。 GitHub Codespaces 针对远程开发从概念上和技术上扩展了 Visual Studio 2019。 
+GitHub Codespaces 提供托管解决方案，可让你专注于生产力而非设置。 GitHub Codespaces 针对远程开发从概念上和技术上扩展了 Visual Studio 2019。
 
 ### <a name="about-codespaces"></a>关于 codespace
 
