@@ -415,7 +415,7 @@
         - name: 调试实时 Azure Kubernetes 应用
           href: debug-live-azure-kubernetes.md
         - name: 快照调试常见问题解答
-          href: debug-live-azure-apps-faq.md
+          href: debug-live-azure-apps-faq.yml
         - name: 快照调试疑难解答
           href: debug-live-azure-apps-troubleshooting.md
         - name: “按时间顺序查看调试”实时 Azure 虚拟机应用
@@ -949,6 +949,6 @@
 - name: 资源
   items:
     - name: 常见问题解答 - 查找调试功能
-      href: find-your-debugging-task.md
+      href: find-your-debugging-task.yml
     - name: Visual Studio 中调试器的新增功能
       href: what-s-new-for-the-debugger-in-visual-studio.md
