@@ -49,7 +49,7 @@
             - name: 禁止显示代码分析违规情况
               href: in-source-suppression-overview.md
         - name: 常见问题解答
-          href: analyzers-faq.md
+          href: analyzers-faq.yml
     - name: 旧版分析
       items:
         - name: 概述
@@ -92,7 +92,7 @@
             - name: 从 FxCop 分析器迁移到 .NET 分析器
               href: migrate-from-fxcop-analyzers-to-net-analyzers.md
             - name: FAQ
-              href: net-analyzers-faq.md
+              href: net-analyzers-faq.yml
         - name: 规则集
           items:
             - name: 概述
