@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 中通过 XAML 设计器使用设计时数据
 description: 了解如何在 XAML 中使用设计时数据。
-ms.date: 11/17/2020
+ms.date: 04/22/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: 915fe38da63f0b3994a809b20515fdc18e0790ce
-ms.sourcegitcommit: 5fb684ff8729eb118aa91ce9f049c79eeb9747b1
+ms.openlocfilehash: a9f7f23625bb01c227158f720260f14347d39f9d
+ms.sourcegitcommit: 60b7a6159045a44293043a519c8ea6d915bf2c31
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/23/2021
-ms.locfileid: "107913067"
+ms.lasthandoff: 05/01/2021
+ms.locfileid: "108334936"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>在 Visual Studio 中通过 XAML 设计器使用设计时数据
 
@@ -68,7 +68,7 @@ mc:Ignorable="d"
 
 ListView 是一种在桌面应用中显示数据的常用方法。 但是，如果没有任何数据，ListView 就难以进行可视化。 可以使用此功能创建内联设计时数据 ItemSource 或 Items。 XAML 设计器在设计时在 ListView 中显示该数组中的内容。
 
-### <a name="wpf-net-core--example"></a>WPF .NET Core 示例
+### <a name="wpf-net-core-example"></a>WPF .NET Core 示例
 若要使用 system:String 类型，请确保在 XAML 标头中包含 `xmlns:system="clr-namespace:System;assembly=mscorlib`。
 
 ```xml
@@ -139,7 +139,7 @@ xmlns:models="clr-namespace:Cities.Models"
 
 这样做的好处是，你可将控件绑定到模型的设计时静态版本。
 
-### <a name="uwp-example"></a>UWP 示例 
+### <a name="uwp-example"></a>UWP 示例
 
 UWP 不支持 x:Array。 因此，可以改用 `<d:ListView.Items>`。 若要使用 system:String 类型，请确保在 XAML 标头中包含 `http://schemas.microsoft.com/winfx/2009/xaml`。
 
