@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 8360c48e9868f6ed5d81fffc748d050404211228
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 3504e866a7f89de8fa38f92a8bfea501ddd952c9
+ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547487"
+ms.lasthandoff: 05/10/2021
+ms.locfileid: "109666791"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 
@@ -82,7 +82,7 @@ ms.locfileid: "106547487"
 
 **方案 3：客户端最初已从 Web 安装，但现在只应从网络布局接收更新**
 
-在某些情况下，客户端计算机可能已从 Web 安装 Visual Studio，但现在管理员希望从托管布局接收所有将来的更新。 唯一受支持的方法是使用所需的产品版本创建网络布局，然后在客户端计算机上，从布局位置运行引导程序（例如 `\\network\share\vs_enterprise.exe`）。 理想情况下，初始客户端安装将从正确配置了 ChannelURI 的网络布局使用引导程序执行，但也可以从网络布局位置运行更新的引导程序。 其中任一操作将在客户端计算机上嵌入与该特定布局位置的连接。 为了使此方案能够正常运行，需要注意的是，布局的 `response.json` 文件中的“ChannelURI”必须与发生原始安装时在客户端计算机上设置的 ChannelURI 相同。 此值很可能最初设置为 Internet [发布通道](https://aka.ms/vs/16/release/channel)。 
+在某些情况下，客户端计算机可能已从 Web 安装 Visual Studio，但现在管理员希望从托管布局接收所有将来的更新。 唯一受支持的方法是使用所需的产品版本创建网络布局，然后在客户端计算机上，从布局位置运行引导程序（例如 `\\server\share\vs_enterprise.exe`）。 理想情况下，初始客户端安装将从正确配置了 ChannelURI 的网络布局使用引导程序执行，但也可以从网络布局位置运行更新的引导程序。 其中任一操作将在客户端计算机上嵌入与该特定布局位置的连接。 为了使此方案能够正常运行，需要注意的是，布局的 `response.json` 文件中的“ChannelURI”必须与发生原始安装时在客户端计算机上设置的 ChannelURI 相同。 此值很可能最初设置为 Internet [发布通道](https://aka.ms/vs/16/release/channel)。 
 
 
 ## <a name="controlling-notifications-in-the-visual-studio-ide"></a>在 Visual Studio IDE 中控制通知

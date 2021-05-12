@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jmartens
-ms.openlocfilehash: a1e0f998b5fff45a8fee9ac6f9cc6a0ce2268907
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22ac969ba2ad918fcbeb7c53e04cd3f2b03a0431
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894460"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798565"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -171,4 +171,4 @@ vsregedit set “C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterpri
 - <xref:Microsoft.VisualStudio.TestTools.UnitTesting?displayProperty=fullName>
 - [创建并运行现有代码的单元测试](/previous-versions/dd293546(v=vs.110))
 - [单元测试代码](unit-test-your-code.md)
-- [Live Unit Testing 常见问题解答](live-unit-testing-faq.md)
+- [Live Unit Testing 常见问题解答](live-unit-testing-faq.yml)

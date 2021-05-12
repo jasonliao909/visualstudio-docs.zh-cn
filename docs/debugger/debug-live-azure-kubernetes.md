@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 823da6da0a842766739cb50c700bb723a47d0309
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: c1c8a593d147b8ba38393aabd89b293e0fbd5d26
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846970"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798461"
 ---
 # <a name="debug-live-aspnet-azure-kubernetes-services-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes 服务
 
@@ -104,7 +104,7 @@ Visual Studio 现在处于快照调试模式下。
 
 还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
 
-**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
+**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)页。
 
 ## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
@@ -147,4 +147,4 @@ Visual Studio 现在处于快照调试模式下。
 在本教程中，你已了解如何使用适用于 Azure Kubernetes 的 Snapshot Debugger。 你可能想要阅读有关此功能的更多详细信息。
 
 > [!div class="nextstepaction"]
-> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)
+> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)

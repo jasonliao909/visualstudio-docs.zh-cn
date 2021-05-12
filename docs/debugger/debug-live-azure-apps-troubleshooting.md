@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 55d6c5a4b9485051f8c0293ad72f78e5cdddca59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aad883ac0c3f703b2d6a4e10d3a0ef2468cd8465
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873255"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798435"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 
@@ -249,4 +249,4 @@ Visual Studio 2019 需要在 Azure 应用服务上使用更新版本的 Snapshot
 - [使用快照调试器调试实时 ASP.NET 应用](../debugger/debug-live-azure-applications.md)
 - [使用 Snapshot Debugger 调试实时 ASP.NET Azure 虚拟机或虚拟机规模集](../debugger/debug-live-azure-virtual-machines.md)
 - [使用 Snapshot Debugger 调试实时 ASP.NET Azure Kubernetes](../debugger/debug-live-azure-kubernetes.md)
-- [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)
+- [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)
