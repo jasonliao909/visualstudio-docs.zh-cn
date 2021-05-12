@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5c965fd73f63906f7a1e055ae5ff051eebab19d5
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2270216e7245f20d26df580ad90dc627319adcc1
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828808"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798630"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 入门
 
@@ -370,4 +370,4 @@ Live Unit Testing 标识的主要问题是代码覆盖率不完整。 此问题�
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Live Unit Testing](live-unit-testing.md)
-- [Live Unit Testing 常见问题解答](live-unit-testing-faq.md)
+- [Live Unit Testing 常见问题解答](live-unit-testing-faq.yml)

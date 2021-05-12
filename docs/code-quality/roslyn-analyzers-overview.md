@@ -14,12 +14,12 @@ ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: d6a295e4abc62a7591c98b92cad4c173c5ff507b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3a7192ac55dc4138746e3e1e1abe4eaa6928395
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859796"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798331"
 ---
 # <a name="overview-of-source-code-analysis"></a>源代码分析概述
 
@@ -101,6 +101,6 @@ ms.locfileid: "99859796"
 
 ## <a name="see-also"></a>请参阅
 
-- [分析器常见问题解答](analyzers-faq.md)
+- [分析器常见问题解答](analyzers-faq.yml)
 - [编写自己的代码分析器](../extensibility/getting-started-with-roslyn-analyzers.md)
 - [.NET 编译器平台 SDK](/dotnet/csharp/roslyn-sdk/)

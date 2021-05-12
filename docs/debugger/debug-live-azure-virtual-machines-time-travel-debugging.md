@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: eb0db0bab5295925f71a81645e64fdeb5f2077df
-ms.sourcegitcommit: 566144d59c376474c09bbb55164c01d70f4b621c
+ms.openlocfilehash: f8aabb109de02a1beec326407472a841fe16425a
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2020
-ms.locfileid: "90809565"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798448"
 ---
 # <a name="record-and-replay-live-aspnet-apps-on-azure-virtual-machines-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机上记录和重播实时 ASP.NET 应用
 
@@ -105,7 +105,7 @@ ms.locfileid: "90809565"
 
     网站本身仍然是实时的，最终用户不会受到任何后续 TTD 活动的影响。 默认情况下，每个快照点只捕获一个快照：快照点在捕获快照后即关闭。 如果要在此快照点再捕获一个快照，可以通过单击“更新集合”来重新打开快照点。
 
-**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
+**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)页。
 
 ## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
@@ -116,4 +116,4 @@ ms.locfileid: "90809565"
 本教程已介绍如何收集 Azure 虚拟机的按时间顺序查看记录。 你可能想要阅读有关 Snapshot Debugger 更多详细信息。
 
 > [!div class="nextstepaction"]
-> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)
+> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)

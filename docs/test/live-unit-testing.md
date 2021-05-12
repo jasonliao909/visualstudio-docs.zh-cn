@@ -10,12 +10,12 @@ author: mikejo5000
 ms.author: mikejo
 ms.workload:
 - dotnet
-ms.openlocfilehash: 82ed41514109887d32f38faf4f965c923864ae32
-ms.sourcegitcommit: 9ce13a961719afbb389fa033fbb1a93bea814aae
+ms.openlocfilehash: b9b78771c36dce26744ba74af63922cf1efa48e2
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96329349"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798617"
 ---
 # <a name="how-to-configure-and-use-live-unit-testing"></a>如何配置和使用 Live Unit Testing
 
@@ -224,5 +224,5 @@ Live Unit Testing 自动运行、更新测试结果与通过“测试资源管�
 
 - [代码测试工具](https://visualstudio.microsoft.com/vs/testing-tools/)
 - [Live Unit Testing 博客](https://devblogs.microsoft.com/visualstudio/live-unit-testing-in-visual-studio-2017-enterprise/)
-- [实时单元测试常见问题解答](live-unit-testing-faq.md)
+- [实时单元测试常见问题解答](live-unit-testing-faq.yml)
 - [第 9 频道视频：Visual Studio 中的 Live Unit Testing](https://channel9.msdn.com/Events/Visual-Studio/Visual-Studio-2017-Launch/T105)

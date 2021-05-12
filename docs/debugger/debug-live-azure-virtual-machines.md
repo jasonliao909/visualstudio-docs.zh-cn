@@ -13,12 +13,12 @@ monikerRange: '>= vs-2019'
 ms.workload:
 - aspnet
 - azure
-ms.openlocfilehash: 9ed85616080859cd69c44c66b442f3f46d81f51a
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: bdab6b3f559628506dd301d6ced449f1e69152a6
+ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97846951"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108798487"
 ---
 # <a name="debug-live-aspnet-apps-on-azure-virtual-machines-and-azure-virtual-machine-scale-sets-using-the-snapshot-debugger"></a>使用 Snapshot Debugger 在 Azure 虚拟机和 Azure 虚拟机规模集上调试实时 ASP.NET 应用
 
@@ -110,7 +110,7 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 
 还可以向应用添加更多快照点，并使用“更新集合”按钮将其启动。
 
-**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)页。
+**需要帮助？** 请参阅[疑难解答和已知问题](../debugger/debug-live-azure-apps-troubleshooting.md)和[快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)页。
 
 ## <a name="set-a-conditional-snappoint"></a>设置条件性快照点
 
@@ -153,4 +153,4 @@ Snapshot Debugger 会在你感兴趣的代码执行时为生产中的应用拍�
 在本教程中，你已了解如何使用适用于 Azure 虚拟机和 Azure 虚拟机规模集的 Snapshot Debugger。 你可能想要阅读有关此功能的更多详细信息。
 
 > [!div class="nextstepaction"]
-> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.md)
+> [快照调试常见问题解答](../debugger/debug-live-azure-apps-faq.yml)
