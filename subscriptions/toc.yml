@@ -161,7 +161,7 @@
         - name: 超级管理员和管理人员
           href: admin-roles.md
         - name: 设置协议首选项
-          href: admin-prefs.md
+          href: admin-preferences.md
         - name: 概述
           href: using-admin-portal.md
         - name: 添加月度订阅
