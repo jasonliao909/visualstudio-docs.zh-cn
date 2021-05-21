@@ -26,6 +26,8 @@
           href: deploy-app-service.md
         - name: 部署到 Docker Hub
           href: deploy-docker-hub.md
+        - name: 管理启动配置文件（预览版）
+          href: launch-profiles.md
         - name: 查看和诊断容器与图像
           href: view-and-diagnose-containers.md
         - name: 配置容器工具

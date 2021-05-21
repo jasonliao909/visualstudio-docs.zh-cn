@@ -16,6 +16,7 @@
   items:
     - name: 安装 Visual Studio
       href: install/install-visual-studio.md
+      displayName: system requirements
     - name: 脱机安装
       items:
         - name: 创建 Visual Studio 的脱机安装
@@ -268,16 +269,6 @@
         - name: 自定义生成和调试任务
           displayName: makefile tasks.vs.json
           href: ide/customize-build-and-debug-tasks-in-visual-studio.md
-    - name: 通过 Codespaces 开发（预览版）
-      items:
-        - name: 概述
-          href: ide/codespaces/codespaces-overview.md
-        - name: 将 Visual Studio 用于 codespace
-          href: ide/codespaces/use-visual-studio-with-codespaces.md
-        - name: 自定义 codespace
-          href: ide/codespaces/customize-codespaces.md
-        - name: 受支持的 Visual Studio 功能
-          href: ide/codespaces/supported-features-codespaces.md
     - name: 连接到团队资源管理器中的项目
       displayName: Azure DevOps VSTS
       href: ide/connect-team-project.md
@@ -1443,38 +1434,16 @@
       href: ide/whats-new-visual-studio-docs.md
     - name: 文档中的新增功能历史记录
       href: ide/whats-new-visual-studio-docs-history.md
-    - name: 发行说明和系统要求
+    - name: 发行说明
       items:
         - name: 发行节奏
           href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2017
-          items:
-            - name: 当前发行说明
-              href: /visualstudio/releasenotes/vs2017-relnotes/
-            - name: 预览发行说明
-              href: /visualstudio/releasenotes/vs2017-preview-relnotes/
-            - name: 发行说明历史记录
-              href: /visualstudio/releasenotes/vs2017-relnotes-history/
-            - name: 可分发代码
-              href: /visualstudio/productinfo/2017-redistribution-vs/
-            - name: 平台兼容性
-              href: /visualstudio/productinfo/vs2017-compatibility-vs/
-            - name: 系统要求
-              href: /visualstudio/productinfo/vs2017-system-requirements-vs/
-        - name: Visual Studio 2019
-          items:
-            - name: 当前发行说明
-              href: /visualstudio/releases/2019/release-notes/
-            - name: 预览发行说明
-              href: /visualstudio/releases/2019/release-notes-preview/
-            - name: 发行说明历史记录
-              href: /visualstudio/releases/2019/release-notes-history/
-            - name: 可分发代码
-              href: /visualstudio/releases/2019/redistribution/
-            - name: 平台兼容性
-              href: /visualstudio/releases/2019/compatibility/
-            - name: 系统要求
-              href: /visualstudio/releases/2019/system-requirements/
+        - name: Visual Studio 2019 说明
+          href: /visualstudio/releases/2019/release-notes/
+        - name: Visual Studio 2017 说明
+          href: /visualstudio/releasenotes/vs2017-relnotes/
+        - name: Visual Studio 2015 文档
+          href: vs-2015-archive.md
         - name: 许可条款
           href: 'https://visualstudio.microsoft.com/license-terms/'
         - name: 支持生命周期和维护服务
@@ -1512,8 +1481,3 @@
       href: ide/developer-community-guidelines.md
     - name: 开发人员社区数据隐私
       href: ide/developer-community-privacy.md
-- name: Visual Studio 2015
-  expanded: true
-  items:
-    - name: Visual Studio 2015 文档
-      href: vs-2015-archive.md
