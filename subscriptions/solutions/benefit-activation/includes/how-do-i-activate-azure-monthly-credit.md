@@ -10,12 +10,12 @@ user.type: subscriber
 tags: benefit, azure
 subscription.type: vl, cloud, retail, partner
 sap.id: 8dedd10e-cb1c-2eb1-bcda-fe00b07ac903
-ms.openlocfilehash: 7f1978f0d0679d94bbde3b565ff5680ce89f9063
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: bb387f9a359b6f645dd6a160ffb281375cd747a9
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590210"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349887"
 ---
 ## <a name="how-to-activate-the-monthly-azure-devtest-individual-credit-benefit"></a>如何激活每月 Azure 开发/测试个人额度权益
 
@@ -30,7 +30,7 @@ ms.locfileid: "107590210"
 
 ## <a name="azure-credit-benefit-activation-errors"></a>Azure 额度权益激活错误
 
-如果你具有新的 Visual Studio 订阅，并收到“无法多次激活此 Visual Studio 权益”错误，请在尝试激活 Azure 每月额度权益时，单击此解决方案底部的“创建支持票证”按钮来联系 Visual Studio 订阅支持部门。 
+如果你具有新的 Visual Studio 订阅，并收到“无法多次激活此 Visual Studio 权益”错误，请在尝试激活 Azure 每月额度权益时，单击此解决方案底部的“在线请求”按钮来联系 Visual Studio 订阅支持部门。 
 
 如果你的订阅已分配一段时间，那么请先检查下面几项内容：
 - 在订阅门户的[权益页](https://my.visualstudio.com/benefits)上单击“Azure 每月额度”磁贴，确认你是否尚未激活此权益。 

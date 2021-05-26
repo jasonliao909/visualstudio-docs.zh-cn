@@ -10,16 +10,16 @@ user.type: subscriber, admin
 tags: no-solution
 subscription.type: vl, cloud, retail, partner
 sap.id: 34fccc61-0a31-cc35-22dd-016a1ebf1134
-ms.openlocfilehash: 47df65df2b139fa910843da3659d5a520e787d17
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: d26b75015c427d771ab91526802d9b58e3ddb5e8
+ms.sourcegitcommit: beb16d5cc31b3565ec0c8d69f819a4ec67b45aae
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107589926"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110349955"
 ---
 ## <a name="sorry-we-couldnt-find-a-solution-for-you"></a>抱歉，未找到解决方案。 
 
-我们的团队乐于提供帮助。Visual Studio 订阅支持团队会就 Visual Studio 订阅的销售、订阅、帐户和账单方面提供协助。 请单击下面的支持票证按钮来创建一个联机票证，我们的团队将在 1 个工作日内与你联系。 
+我们的团队乐于提供帮助。Visual Studio 订阅支持团队会就 Visual Studio 订阅的销售、订阅、帐户和账单方面提供协助。 通过单击此解决方案底部的“在线请求”按钮创建在线票证，我们的团队将在 1 个工作日内与你联系。 
 
 ## <a name="visual-studio-ide-technical-support-resources"></a>Visual Studio IDE 技术支持资源  
 
