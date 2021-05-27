@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 866b588b8b46477b397cda92076780d1955cfa83
-ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
+ms.openlocfilehash: 286d5f2c316379316b1a1cf55334cab39cdc247c
+ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109848300"
+ms.lasthandoff: 05/12/2021
+ms.locfileid: "109782629"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 
@@ -120,12 +120,12 @@ ms.locfileid: "109848300"
     ::: moniker range=">=vs-2019"
     | Tab | Property | “值” |
     | --- | --- | --- |
-    | **常规** | 常规 > 目标名称 | 指定想要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，在 C++ 中使用相同的名称。 如果想要将项目的名称用作模块名称，请保留默认值 $(ProjectName)。 |
-    | | “高级”>“目标文件扩展” | **.pyd** |
-    | | 项目默认值 > 配置类型 | **动态库(.dll)** |
+    | **常规** | **目标名称** | 指定想要在 `from...import` 语句中从 Python 引用的模块的名称。 定义 Python 的模块时，在 C++ 中使用相同的名称。 如果想要将项目的名称用作模块名称，请保留默认值 $(ProjectName)。 对于 `python_d.exe`，在名称末尾添加 `_d`。 |
+    | | **配置类型** | **动态库(.dll)** |
+    | **高级** | 目标文件扩展名 | **.pyd** |
     | C/C++ > 常规 | **附加包含目录** | 根据相应的安装添加 Python“include” 文件夹，例如 `c:\Python36\include`。  |
-    | C/C++ > 预处理器 | **预处理器定义** | **仅 CPython**：将 `Py_LIMITED_API;` 添加到字符串开头（包括分号）。 此定义会限制可从 Python 调用的某些函数，并使代码在 Python 不同版本之间更易于移植。 如果使用的是 PyBind11，请勿添加此定义，否则将会看到生成错误。 |
-    | C/C++ > 代码生成 | **运行时库** | **多线程 DLL (/MD)**（请参阅下面的“警告”） |
+    | C/C++ > 预处理器 | **预处理器定义** | 如果存在，请将 _DEBUG 值更改为 NDEBUG，以匹配 `CPython` 的非调试版本。 （当使用 `python_d.exe` 时，保持此设置不变。） |
+    | C/C++ > 代码生成 | **运行时库** | 多线程 DLL (/MD)，以匹配 `CPython` 的非调试版本。 （当使用 `python_d.exe` 时，保持此设置不变。） |
     | 链接器 > 常规 | **附加库目录** | 根据相应的安装添加包含 .lib 文件的 Python“libs”文件夹，例如 `c:\Python36\libs`。 （务必指向包含 .lib 文件的“libs”文件夹，而非包含 .py 文件的 Lib 文件夹。） |
     ::: moniker-end
     ::: moniker range="=vs-2017"
