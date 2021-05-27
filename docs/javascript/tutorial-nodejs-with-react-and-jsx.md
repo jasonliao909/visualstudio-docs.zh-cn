@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 852bfad102c4ae34bee9528009e3d4b2dd8c7384
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925734"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729294"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -75,8 +75,8 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
     本教程已使用版本 12.6.2 进行测试。
 
     如果尚未安装，我们建议从 [Node.js](https://nodejs.org/en/download/) 网站安装 LTS 版本，以实现与外部框架和库的最佳兼容性。 Node.js 是为 32 位和 64 位体系结构构建的。 Visual Studio 中的 Node.js 工具（包含在 Node.js 工作负载中）支持这两个版本。 只有一个版本是必需的，并且 Node.js 安装程序一次只支持安装一个版本。
-    
-    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果系统未检测到已安装运行时，则可以将项目配置为引用属性页中已安装的运行时（创建项目后，右键单击项目节点，选择“属性”  ，并设置“Node.exe 路径”  ）。 可以使用 Node.js 的全局安装，或者可以在每个 Node.js 项目中指定本地解释器的路径。 
+
+    一般情况下，Visual Studio 会自动检测已安装的 Node.js 运行时。 如果没有检测到已安装的运行时，则可以在“属性”页中将项目配置为引用已安装的运行时（在创建项目后，右键单击项目节点，选择“属性”（或按 Alt + Enter），然后设置“Node.exe 路径”）。 可以使用 Node.js 的全局安装，或者可以在每个 Node.js 项目中指定本地解释器的路径。 
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -100,7 +100,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
     ![解决方案资源管理器中的 Node.js 项目](../javascript/media/tutorial-nodejs-react-project-structure.png)
 
-    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称   。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示  。 可以右键单击项目并选择“属性”，设置与项目相关的属性和环境变量  。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
+    (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称   。 在文件系统中，此项目由项目文件夹中的 .njsproj 文件表示  。 可以通过右键单击项目并选择“属性”（或按 Alt + Enter），设置与项目关联的属性和环境变量。 可以使用其他开发工具执行往返，因为项目文件不对 Node.js 项目源做出自定义更改。
 
     (2) 顶层是一个解决方案，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器  。
 
@@ -158,7 +158,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
     此命令直接运行 npm 安装命令。
 
-    在下部窗格中，选择“输出”  窗口可查看程序包的安装进度。 安装可能需要几分钟时间，可能无法立即看到结果。 要查看输出，请确保在“输出”  窗口的“显示输出来源”  字段中选择“Npm”  。
+    在下部窗格中，选择“输出”  窗口可查看程序包的安装进度。 安装可能需要几分钟时间，可能无法立即看到结果。 要查看输出，请确保在“输出”  窗口的“显示输出来源”  字段中选择“Npm”  。 （若要打开窗口，请依次选择“视图” > “输出”，或按 Ctrl + Alt + O。）
 
     以下安装后显示在解决方案资源管理器中的 npm 模块。
 
@@ -178,7 +178,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 对于此简单应用，将新建项目文件添加到项目根中。 （在大多数应用中，通常将文件添加到子文件夹并相应调整相对路径引用。）
 
-1. 在解决方案资源管理器中，右键单击项目“NodejsWebAppBlank”并选择“添加” > “新项”    。
+1. 在“解决方案资源管理器”中，右键单击项目“NodejsWebAppBlank”，然后依次选择“添加” > “新项”（或按 Ctrl + Shift + A）。
 
 1. 在“添加新项”对话框中，选择“TypeScript JSX 文件”，键入名称“app.tsx”，然后选择“添加”或“确定”      。
 
@@ -471,10 +471,10 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
     应用随即在新的浏览器选项卡中打开。
 
-4. 选择“调试” > “附加到进程” 。
+4. 依次选择“调试” > “附加到进程”（或按 Ctrl + Alt + P）。
 
     > [!TIP]
-    > 从 Visual Studio 2017 开始，首次通过这些步骤附加到进程后，可选择“调试” > “重新附加到进程”，快速重新附加到同一进程 。
+    > 自 Visual Studio 2017 起，在按照这些步骤第一次附加到进程后，可以通过依次选择“调试” > “重新附加到进程”（或按 Shift + Alt + P），快速重新附加到相同的进程。
 
 5. 在“附加到进程”对话框中，获取可附加到的浏览器实例的筛选列表。
 

@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e082f5346d22fd574b7f9b725f8ec88b8a3b08f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873192"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729242"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 
@@ -177,7 +177,7 @@ ms.locfileid: "99873192"
 
     调试器尝试附加到在另一个用户下运行的进程。
 
-    若要解决此问题，请在 Visual Studio 中依次打开“调试” > “附加到进程”，然后在“可用进程”列表中查找要调试的进程  。 如果不清楚进程名称，请在“Visual Studio 实时调试器”对话框中查找进程 ID。 在“可用进程”列表中选择该进程，然后选择“附加” 。 选择“否”可关闭“实时调试器”对话框。
+    若要解决此问题，请在 Visual Studio 中依次打开“调试” > “附加到进程”（或按 Ctrl + Alt + P），然后在“可用进程”列表中查找要调试的进程。 如果不清楚进程名称，请在“Visual Studio 实时调试器”对话框中查找进程 ID。 在“可用进程”列表中选择该进程，然后选择“附加” 。 选择“否”可关闭“实时调试器”对话框。
 
 - **未能启动调试器，因为没有用户登录。**
 

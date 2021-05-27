@@ -3,7 +3,7 @@ title: XAML 设计器概述
 description: 了解工作区 UI 和 Blend for Visual Studio 中 XAML 设计器的功能，它提供了一个可视化界面，可帮助您设计基于 XAML 的应用程序。
 ms.date: 03/03/2020
 ms.topic: conceptual
-ms.custom: contperf-fy21q4; SEO-VS-2020
+ms.custom: contperf-fy21q4, SEO-VS-2020
 f1_keywords:
 - VS.XamlDesigner
 - VS.DevicePanel
@@ -14,12 +14,12 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 3d5584380b78bba05f1596a99aa2298789df018f
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.openlocfilehash: 8f022d0f27977488fb089f2cffb40aad22365b46
+ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879351"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110565227"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 设计器创建 UI
 
