@@ -10,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9681e01beaa9fcae3163c607290f5793bfae1cdd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aeaaff68ab0abe85838456e8c8b69e2520295689
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945027"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729268"
 ---
 # <a name="publish-an-application-to-iis-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 IIS
 
@@ -70,7 +70,7 @@ ms.locfileid: "99945027"
 
     Visual Studio 随即创建项目。
 
-1. 选择“生成” > “生成解决方案”以生成项目 。
+1. 依次选择“生成” > “生成解决方案”（或按 Ctrl + Shift + B），以生成项目。
 
 ## <a name="install-and-configure-web-deploy-on-windows-server"></a>在 Windows Server 上安装和配置 Web 部署
 

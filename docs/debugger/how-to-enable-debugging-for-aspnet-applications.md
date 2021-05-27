@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8ef65fbd9452aef52d807210f84928a4eef14100
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd620a0c7f4860421b6f8b1a15c0b708c1ba860
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877741"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729255"
 ---
 # <a name="debug-aspnet-or-aspnet-core-apps-in-visual-studio"></a>在 Visual Studio 中调试 ASP.NET 或 ASP.NET Core 应用
 
@@ -51,7 +51,7 @@ Visual Studio 中内置了 IIS Express 服务器。 IIS Express 是 ASP.NET 和 
 
 IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS 上调试，请确保满足[本地 IIS 调试的要求](#iis)。
 
-1. 在 Visual Studio“解决方案资源管理器”中选择 ASP.NET 项目，然后单击“属性”图标，按 Alt+Enter，或右键单击并选择“属性”    。
+1. 在 Visual Studio“解决方案资源管理器”中，选择 ASP.NET 项目，然后单击“属性”图标，或按 Alt+Enter，或右键单击并选择“属性”。
 
 1. 选择 Web 选项卡。
 
@@ -65,7 +65,7 @@ IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS
 
    ![ASP.NET 调试器设置](media/dbg-aspnet-enable-debugging2.png "ASP.NET 调试器设置")
 
-1. 使用“文件” > “保存选定项”或 Ctrl+S 来保存更改   。
+1. 依次选择“文件” > “保存选定项”（或按 Ctrl+S），以保存所有更改。
 
 1. 要调试应用，请在项目中的某些代码上设置断点。 在 Visual Studio 工具栏中，确保将配置设置为“调试”，所需的浏览器将出现在模拟器字段中的“IIS Express (\<Browser name>)”或“本地 IIS (\<Browser name>)”中  。
 
@@ -75,7 +75,7 @@ IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS
 
 IIS Express 是默认选择，并且是预先配置的。 如果要在本地 IIS 上调试，请确保满足[本地 IIS 调试的要求](#iis)。
 
-1. 在 Visual Studio“解决方案资源管理器”中选择 ASP.NET Core 项目，然后单击“属性”图标，按 Alt+Enter，或右键单击并选择“属性”    。
+1. 在 Visual Studio“解决方案资源管理器”中，选择 ASP.NET Core 项目，然后单击“属性”图标，或按 Alt+Enter，或右键单击并选择“属性”。
 
 1. 选择“调试”选项卡。
 

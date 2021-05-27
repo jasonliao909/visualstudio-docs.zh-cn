@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b017495d12d654be3e11da7153310b5bcba367d5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 2fcf1bd9e9ef5c3ff0663cf12684e6e638d1e5e4
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165808"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729281"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
@@ -62,7 +62,7 @@ Visual Studio 与 npm 的集成因项目类型而异。
 * 所选版本  - 选择你想要安装的包版本。
 * 其他 npm 参数  - 指定其他标准参数。 例如，可以输入版本值（如 `@~0.8`），安装版本列表中不可用的特定版本。
 
-可以在“输出”窗口的 npm 输出中查看安装进度   。 这可能需要一些时间。
+可以在“输出”窗口的 npm 输出中查看安装进度（若要打开此窗口，请依次选择“视图” > “输出”，或按 Ctrl + Alt + O）。 这可能需要一些时间。
 
 ![npm 输出](../javascript/media/npm-output.png)
 
@@ -106,7 +106,7 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
 
 ### <a name="use-the-npm-command-in-the-nodejs-interactive-window-nodejs"></a><a name="interactive"></a>在 Node.js 交互式窗口中使用 .npm 命令 (Node.js)
 
-还可在 Node.js 交互式窗口中使用 `.npm` 命令来执行 npm 命令。 若要打开该窗口，请右键单击解决方案资源管理器中的项目，然后选择“打开 Node.js 交互式窗口”  。
+还可在 Node.js 交互式窗口中使用 `.npm` 命令来执行 npm 命令。 若要打开此窗口，请在“解决方案资源管理器”中右键单击项目，然后选择“打开 Node.js 交互窗口”（或按 Ctrl + K、N）。
 
 在窗口中，可以使用如下命令来安装包：
 
@@ -136,7 +136,7 @@ npm 包显示在解决方案资源管理器中。 “npm”节点下的条目模
 
    npm 需要 Node.js。
 
-1. 若要添加 package.json 文件，请右键单击解决方案资源管理器中的项目，然后选择“添加” > “新项”    。 选择“npm 配置文件”，使用默认名称，然后单击“添加”   。
+1. 若要添加 package.json 文件，请在“解决方案资源管理器”中右键单击项目，然后依次选择“添加” > “新项”（或按 Ctrl + Shift + A）。 选择“npm 配置文件”，使用默认名称，然后单击“添加”   。
 
    ![将 package.json 添加到项目](../javascript/media/npm-add-package-json.png)
 

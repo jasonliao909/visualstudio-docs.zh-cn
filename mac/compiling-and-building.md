@@ -4,14 +4,14 @@ description: 本文介绍如何在 Visual Studio for Mac 中编译和生成项�
 ms.topic: overview
 author: heiligerdankgesang
 ms.author: dominicn
-ms.date: 08/29/2019
+ms.date: 05/03/2021
 ms.assetid: FB253757-DB00-4889-A6BF-E44722E25BD1
-ms.openlocfilehash: b4f1cfc3dfdffcc3dd4cb90cd7d29d4333578b9a
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: a24c57907afedb4f02068a071d2c9f81eb8962bb
+ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "71128411"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108640969"
 ---
 # <a name="compiling-and-building-in-visual-studio-for-mac"></a>在 Visual Studio for Mac 中编译和生成
 
@@ -27,7 +27,7 @@ Visual Studio for Mac 可用于在项目开发过程中生成应用程序和创�
 | MSBuild 命令行| - 在无需安装 Visual Studio for Mac 的情况下生成项目。<br />- 运行所有项目类型的多处理器生成。<br />- 自定义生成系统的大多数区域。|
 | Azure Pipelines | - 自动执行生成过程作为持续集成/持续交付管道的一部分。<br />- 将自动测试应用于每个生成。<br />- 为生成过程采用几乎无限的基于云的资源。<br />- 修改生成工作流，并创建生成活动以执行深层的自定义任务。|
 
-本节中的文档将详细介绍基于 IDE 的生成过程。 有关通过命令行生成应用程序的详细信息，请参阅 [MSBuild](/visualstudio/msbuild/msbuild)。 有关使用 Azure Pipelines 生成应用程序的详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines)。
+本节中的文档将详细介绍基于 IDE 的生成过程。 若要在不安装 Visual Studio for Mac 的情况下通过命令行生成应用程序，则可以安装最新的 [.NET Core SDK](https://dotnet.microsoft.com/download)。 有关通过命令行生成应用程序的详细信息，请参阅 [MSBuild](/visualstudio/msbuild/msbuild)。 有关使用 Azure Pipelines 生成应用程序的详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines)。
 
 
 > [!NOTE]

@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 855a04fae1d5b406019e758c6d6f931d6657bb4e
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b5fb35c1cd30f872d2a58504f73596357cc60025
+ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102145373"
+ms.lasthandoff: 05/11/2021
+ms.locfileid: "109729320"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 
@@ -31,7 +31,7 @@ Visual Studio 提供了各种分析工具，可依据你的应用类型帮助你
 
 ## <a name="measure-performance-while-debugging"></a>调试时度量性能
 
-调试会话期间可以访问的分析工具在“诊断工具”窗口中提供。 将自动显示“诊断工具”窗口，除非你已将其关闭。 若要显示该窗口，请依次单击“调试”、“Windows”、“显示诊断工具”。 窗口打开后，可以选择想要用于收集数据的工具。
+调试会话期间可以访问的分析工具在“诊断工具”窗口中提供。 将自动显示“诊断工具”窗口，除非你已将其关闭。 若要显示窗口，请依次单击“调试”、“Windows”、“显示诊断工具”（或按 Ctrl + Alt + F2）。 窗口打开后，可以选择想要用于收集数据的工具。
 
 ![“诊断工具”窗口](../profiling/media/prof-tour-diagnostic-tools.png "诊断工具")
 
