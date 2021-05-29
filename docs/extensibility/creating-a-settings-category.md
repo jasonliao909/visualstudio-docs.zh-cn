@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089337"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687615"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
@@ -45,12 +45,12 @@ ms.locfileid: "105089337"
     |107|我的设置|
     |108|OptionInteger 和 OptionFloat|
 
-     这会创建将类别命名为 "我的类别"、对象 "我的设置" 和类别说明 "OptionInteger and OptionFloat" 的资源。
+     这会创建将类别"My Category"、对象"My Settings"和类别描述"OptionInteger and OptionFloat"命名的资源。
 
     > [!NOTE]
-    > 在这三种情况下，" **导入和导出设置** 向导" 中将不显示类别名称。
+    > 在这三个向导中，只有类别名称不会出现在" **导入和导出设置"** 向导中。
 
-3. 在 *MyToolsOptionsPackage* 中，将一个 `float` 名为的属性添加 `OptionFloat` 到 `OptionPageGrid` 类，如下面的示例中所示。
+3. 在 *MyToolsOptionsPackage.cs* 中，将名为 的属性添加到 `float` `OptionFloat` `OptionPageGrid` 类，如以下示例所示。
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -78,47 +78,49 @@ ms.locfileid: "105089337"
     ```
 
     > [!NOTE]
-    > `OptionPageGrid`名为 "My category" 的类别现在包含两个属性，即 `OptionInteger` 和 `OptionFloat` 。
+    > 名为 `OptionPageGrid` "My Category"的类别现在由两个属性 `OptionInteger` 和 组成 `OptionFloat` 。
 
-4. 将添加 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 到 `MyToolsOptionsPackage` 类，并将其命名为 "my Category"，为其指定 ObjectName "my Settings"，并将 isToolsOptionPage 设置为 true。 将 categoryResourceID、objectNameResourceID 和 DescriptionResourceID 设置为前面创建的相应字符串资源 Id。
+4. 将 添加到 类，并赋予 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> `MyToolsOptionsPackage` CategoryName"My Category"，为它指定 ObjectName"My Settings"，将 isToolsOptionPage 设置为 true。 将 categoryResourceID、objectNameResourceID 和 DescriptionResourceID 设置为前面创建的相应字符串资源 ID。
 
     ```csharp
     [ProvideProfileAttribute(typeof(OptionPageGrid),
         "My Category", "My Settings", 106, 107, isToolsOptionPage:true, DescriptionResourceID = 108)]
     ```
 
-5. 生成项目并启动调试。 在实验实例中，应会看到 **"我的网格" 页** 现在包含整数值和浮点值。
+5. 生成项目并启动调试。 在实验实例中，应会看到" **我的网格页** "现在同时具有整数和浮点数值。
 
 ## <a name="examine-the-settings-file"></a>检查设置文件
- 在本部分中，将属性类别值导出到设置文件。 检查该文件，然后将这些值导入回属性类别。
+ 在本部分，你将属性类别值导出到设置文件。 检查文件，然后将值导入回属性类别。
 
-1. 通过按 **F5** 在调试模式下启动项目。 这将启动实验实例。
+1. 按 F5 在调试模式下 **启动项目**。 这会启动实验实例。
 
-2. 打开 "**工具**  >  **选项**" 对话框。
+2. 打开"**工具**  >  **选项"** 对话框。
 
-3. 在左侧窗格中的树视图中，展开 **"我的类别** "，然后单击 **"我的网格" 页**。
+3. 在左窗格中的树视图中，展开"**我的类别"，** 然后单击"**我的网格页"。**
 
-4. 将 **OptionFloat** 的值更改为3.1416，将 **OptionInteger** 更改为12。 单击 **“确定”** 。
+4. 将 **OptionFloat** 的值更改为 3.1416，将 **OptionInteger** 的值更改为 12。 单击 **“确定”** 。
 
 5. 在“工具”菜单上，单击“导入和导出设置”。
 
-     此时将显示 **导入和导出设置** 向导。
+     将显示 **"导入和导出设置"** 向导。
 
-6. 确保选中 " **导出所选环境设置** "，然后单击 " **下一步**"。
+6. 确保已 **选择"导出所选环境设置**"，然后单击"下一 **步"。**
 
-     此时将显示 " **选择要导出的设置** " 页。
+     将显示 **"选择要导出的设置"** 页。
 
-7. 单击 **"我的设置"**。
+7. 单击 **"我的设置"。**
 
-     **说明** 更改为 " **OptionInteger" 和 "OptionFloat**"。
+     " **说明"** 将更改到 **OptionInteger 和 OptionFloat**。
 
 8. 请确保 " **我的设置** " 是所选的唯一类别，然后单击 " **下一步**"。
 
      显示 **设置文件** 页的名称。
 
-9. 将新的设置文件命名为 *mysetting* ，并将其保存到相应的目录中。 单击“完成” 。
+9. 将新的设置文件命名为 *mysetting* ，并将其保存到相应的目录中。 单击“完成”  。
 
-     " **导出完成** " 页将报告你的设置已成功导出。
+   `.vssettings`文件是 Visual Studio 设置文件。 已打开文件的架构。 最常见的情况是，架构遵循一个 XML 结构，其中每个类别都是一个标记，它本身就包含子类别标记。 这些子类别标记可以包含属性值标记。 尽管大多数包都使用 common 结构，但 Visual Studio 中的任何包都可以使用它选择的架构向文件提供任意 XML。
+
+   " **导出完成** " 页将报告你的设置已成功导出。
 
 10. 在“文件”菜单中，指向“打开”，再单击“文件”。 找到 *mysetting .vssettings* 并将其打开。
 
@@ -149,10 +151,10 @@ ms.locfileid: "105089337"
 
      此时将显示 " **选择要导入的设置集合** " 页。
 
-15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击“下一步”  。
+15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果文件未显示在树视图中， **请单击"浏览** "并找到它。 单击“下一步”  。
 
-     此时将显示 " **选择要导入的设置** " 对话框。
+     将出现 **"选择要导入的设置** "对话框。
 
-16. 请确保选择 **"我的设置** "，然后单击 " **完成**"。 出现 " **导入完成** " 页后，单击 " **关闭**"。
+16. 确保选中"**我的设置**"，然后单击"完成 **"。** 当"**导入完成"** 页出现时，单击"关闭 **"。**
 
-17. 在 " **工具** " 菜单上，依次单击 " **选项**"、 **"我的类别**"、" **我的网格页** " 和 "验证属性类别值已还原"。
+17. 在"**工具"** 菜单上，单击"选项 **"，展开****"我的类别**"，单击"**我的网格** 页"，并验证属性类别值是否已还原。
