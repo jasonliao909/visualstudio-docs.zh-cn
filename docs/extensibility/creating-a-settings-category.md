@@ -1,6 +1,6 @@
 ---
-title: 创建设置类别 |Microsoft Docs
-description: 了解如何创建 Visual Studio 设置类别并使用它来保存和还原设置文件中的值。
+title: 创建设置类别|Microsoft Docs
+description: 了解如何创建一个Visual Studio设置类别，并使用它从设置文件中保存和还原值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,32 +12,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e3ef6dbfc58c67ce8e4dd7ff26634e4dbce2218
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe46ea835a119978fd3decd26949db3d59944e5e
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089337"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687615"
 ---
 # <a name="create-a-settings-category"></a>创建设置类别
 
-在本演练中，您将创建一个 Visual Studio 设置类别，并使用它将值保存到并从设置文件还原值。 设置类别是一组显示为 "自定义设置点" 的相关属性;即 **导入和导出设置** 向导中的复选框。  (你可以在 " **工具** " 菜单上找到它。 ) 设置保存或还原为类别，并且不会在向导中显示各个设置。 有关详细信息，请参阅[环境设置](../ide/environment-settings.md)。
+本演练将创建一Visual Studio设置类别，并使用它将值保存到设置文件中并还原设置文件的值。 设置类别是显示为"自定义设置点"的相关属性组;即，作为"导入和导出设置"向导 **中的** 复选框。  (可以在"工具"菜单上找到它。) 将"设置"保存或还原为类别，并且向导中不显示单个设置。  有关详细信息，请参阅[环境设置](../ide/environment-settings.md)。
 
-您可以通过从类中派生来创建设置类别 <xref:Microsoft.VisualStudio.Shell.DialogPage> 。
+通过从 类派生设置类别来创建 <xref:Microsoft.VisualStudio.Shell.DialogPage> 设置类别。
 
-若要开始本演练，必须先完成 " [创建选项" 页面](../extensibility/creating-an-options-page.md)的第一个部分。 "生成的选项" 属性网格使你可以检查和更改类别中的属性。 将属性类别保存到设置文件中后，将检查该文件以查看属性值的存储方式。
+若要开始本演练，必须先完成"创建选项"页 [的第一部分](../extensibility/creating-an-options-page.md)。 生成的"选项"属性网格可用于检查和更改类别中的属性。 在设置文件中保存属性类别后，检查该文件以查看属性值是如何存储的。
 
 ## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ 从 2015 Visual Studio开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-settings-category"></a>创建设置类别
- 在本部分中，将使用自定义设置点保存和还原 "设置" 类别的值。
+ 在本部分，你将使用自定义设置点保存和还原设置类别的值。
 
 ### <a name="to-create-a-settings-category"></a>创建设置类别
 
-1. 完成 " [创建选项" 页](../extensibility/creating-an-options-page.md)。
+1. 完成" [创建选项"页](../extensibility/creating-an-options-page.md)。
 
-2. 打开 *VSPackage* 文件并添加以下三个字符串资源：
+2. 打开 *VSPackage.resx* 文件并添加以下三个字符串资源：
 
     |名称|值|
     |----------|-----------|
@@ -112,17 +112,19 @@ ms.locfileid: "105089337"
 
      **说明** 更改为 " **OptionInteger" 和 "OptionFloat**"。
 
-8. 请确保 " **我的设置** " 是所选的唯一类别，然后单击 " **下一步**"。
+8. 确保"**我的设置**"是唯一选择的类别，然后单击"下一步 **"。**
 
-     显示 **设置文件** 页的名称。
+     将显示 **"命名设置文件** "页。
 
-9. 将新的设置文件命名为 *mysetting* ，并将其保存到相应的目录中。 单击“完成” 。
+9. 将新设置文件命名 *MySettings.vssettings，* 并将其保存到相应的目录中。 单击“完成”  。
 
-     " **导出完成** " 页将报告你的设置已成功导出。
+   该文件 `.vssettings` 是Visual Studio文件。 文件的架构已打开。 大多数情况下，架构遵循 XML 结构，其中每个类别都是标记，该标记本身可以包含子类别标记。 这些子类别标记可以包含属性值标记。 虽然大多数包都使用通用结构，但Visual Studio包都可以使用它选择的架构向文件提供任意 XML。
 
-10. 在“文件”菜单中，指向“打开”，再单击“文件”。 找到 *mysetting .vssettings* 并将其打开。
+   " **导出完成** "页报告已成功导出设置。
 
-     你可以在文件的以下部分中找到导出的属性类别 (你的 Guid 将) 不同。
+10. 在“文件”菜单中，指向“打开”，再单击“文件”。 找到 *MySettings.vssettings* 并打开它。
+
+     可以在文件的以下部分找到导出的属性类别， (GUID 将因) 。
 
     ```
     <Category name="My Category_My Settings"
@@ -135,21 +137,21 @@ ms.locfileid: "105089337"
     </Category>
     ```
 
-     请注意，通过将下划线添加到类别名称后接对象名称，来形成完整的类别名称。 "OptionFloat" 和 "OptionInteger" 显示在 "类别" 中，及其导出值。
+     请注意，完整的类别名称由向类别名称添加下划线后跟对象名称构成。 OptionFloat 和 OptionInteger 及其导出值一起显示在类别中。
 
-11. 关闭设置文件而不进行更改。
+11. 关闭设置文件而不更改该文件。
 
-12. 在 " **工具** " 菜单上，依次单击 " **选项**"、 **"我的类别**"、" **我的网格" 页** ，然后将 **OptionFloat** 的值更改为1.0，并将 **OptionInteger** 更改为1。 单击 **“确定”** 。
+12. 在"**工具"** 菜单上，单击"选项"，展开"**我的** 类别"，单击"**我的网格** 页"，然后将 **OptionFloat** 的值更改为 1.0，将 **OptionInteger** 的值更改为 1。 单击 **“确定”** 。
 
-13. 单击 " **工具** " 菜单上的 " **导入和导出设置**"，选择 " **导入选定的环境设置**"，然后单击 " **下一步**"
+13. 在"**工具"** 菜单上，单击 **"导入和导出设置"，** 选择 **"导入所选环境设置**"，然后单击"下一 **步"。**
 
-     此时将显示 " **保存当前设置** " 页。
+     将显示 **"保存当前设置"** 页。
 
-14. 选择 **"否，仅导入新设置"** ，然后单击 " **下一步**"。
+14. 选择 **"否"，只需导入新设置，** 然后单击"下一 **步"。**
 
-     此时将显示 " **选择要导入的设置集合** " 页。
+     将显示 **"选择要导入的设置的集合"** 页。
 
-15. 在树视图的 "**我的设置**" 节点中选择 " *mysetting" .vssettings* 文件。 如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击“下一步”  。
+15. 在 *树视图的"我的设置"节点中选择 MySettings.vssettings* 文件。  如果该文件未出现在树视图中，请单击 " **浏览** " 并找到该文件。 单击“下一步”  。
 
      此时将显示 " **选择要导入的设置** " 对话框。
 
