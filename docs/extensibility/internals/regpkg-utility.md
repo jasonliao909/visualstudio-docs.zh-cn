@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5160608379549abbd469bd6cf1c17e4357eac15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ffef522cb85816c36bee1cb623810fb254d1ddec
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060752"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351937"
 ---
 # <a name="regpkg-utility"></a>RegPkg 实用工具
 > [!NOTE]
@@ -26,7 +26,7 @@ ms.locfileid: "105060752"
 
  RegPkg.exe 实用工具向注册 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 并为部署做好准备。 此实用程序在 VSPackage 开发期间在幕后使用。 它作为生成过程的一部分运行，以便您可以在实验性 hive 中生成并运行 VSPackage。
 
- RegPkg 可以采用多种格式生成系统注册表脚本。 可以将这些脚本合并到部署项目（如 .msi 项目）或 Windows Installer XML 工具集文件中。
+ RegPkg 可以采用多种格式生成系统注册表脚本。 您可以将这些脚本合并到 .msi 项目之类的部署项目或 Windows Installer XML 工具集文件中。
 
  RegPkg.exe 通常位于 \<*Visual Studio SDK installation path*>\VisualStudioIntegration\Tools\Bin\RegPkg.exe。 RegPkg 遵循以下语法：
 
@@ -34,9 +34,7 @@ ms.locfileid: "105060752"
 RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile:<vrgfile>] [/codebase | /assembly] [/unregister] AssemblyPath
 ```
 
- /root： root 在指定的下执行注册
-
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根。
+ /root： root 在指定的根下执行注册 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
  /regfile： FileName 创建一个 .reg 文件，而不是更新注册表。  不能与/vrgfile 或/rgsfile 或/wixfile. 一起使用。
 
