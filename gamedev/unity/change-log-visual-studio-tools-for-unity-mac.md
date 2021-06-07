@@ -2,7 +2,7 @@
 title: 更改日志（Visual Studio Tools for Unity、Mac）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Mac 的更改日志。 查看版本 1.0.0.0 到 2.7.0.0 及更高版本的版本变化。
 ms.custom: ''
-ms.date: 3/1/2021
+ms.date: 6/3/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,87 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: f11c5c1407d16d7a82a9d8d24e6a8dd3a04e57eb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 2d3faf8e5231ca5d2e99bcf80dc18b6d4f4607cd
+ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683374"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111448293"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-mac"></a>更改日志（Visual Studio Tools for Unity、Mac）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="21020"></a>2.10.2.0
+2021年6月2日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。 为矢量计算的标量计算指定优先级。
+
+- **评估版：**
+
+  - 添加了对使用可移植 pdb 符号正确筛选可见局部变量的支持。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 固定玩家公告使用最新 Unity 版本进行分析。
+
+## <a name="21010"></a>2.10.1.0
+发布时间为11月11日，2021
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了 quickfix 的稳定性问题 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 。
+
+  - 修复了线程的性能问题。
+
+  - 固定筛选禁止显示 errorlist 中的警告和错误。
+
+  - 修复了筛选 Unity 后台进程。
+
+## <a name="21000"></a>2.10.0.0
+2021年4月13日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 诊断。 不必要的间接调用 `GameObject.gameObject` 。
+
+  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 `MenuItem` 用于非静态方法的特性。
+
+  - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应 (选择加入) ，才能保护 Unity 消息。
+
+  - 添加了 [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 诊断。 设置位置和旋转的低效方法。
+
+  - 添加了 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 诊断。 合并 Unity 对象上的分配。
+
+  - 为 `IDE0074` 添加了 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 抑制器。 Unity 对象不应使用合并分配。
+
+## <a name="2940"></a>2.9.4.0
+2021年4月6日发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 解决测试枚举问题
+
+## <a name="2930"></a>2.9.3.0
+2021年3月30日发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 解决测试运行程序问题 
 
 ## <a name="2920"></a>2.9.2.0
 2021年3月发布
@@ -32,11 +103,11 @@ Visual Studio Tools for Unity 更改日志。
 
   - 修复了 Unity 消息对话框中的搜索突出显示。
 
-  - 解决了 Unity 项目 treeview 的稳定性问题。
+  - 修复了 Unity 项目树视图的稳定性问题。
 
 - **调试：**
 
-  - 修复了条件断点的处理。
+  - 修复了对条件断点的处理。
 
 ## <a name="2910"></a>2.9.1.0
 2021年2月9日发布
@@ -49,37 +120,37 @@ Visual Studio Tools for Unity 更改日志。
 
 - **评估版：**
 
-  - 已添加 `Active Scene` 到局部变量，并显示根游戏对象。
+  - 向局部变量添加了 `Active Scene`，同时显示根游戏对象。
 
-  - 添加 `this.gameObject` 到局部变量，因为它广泛用于 Unity 项目。
+  - 向局部变量添加了 `this.gameObject`，鉴于它广泛用于 Unity 项目。
 
-  - `Children` `Components` 向所有实例添加了和组 `GameObject` ，以便你可以轻松地显示所有对象层次结构。
+  - 向所有 `GameObject` 实例添加了 `Children` 和 `Components` 组，这样就可以轻松地显示所有对象层次结构。
 
-  - 添加 `Scene Path` 到所有 `GameObject` 实例，以显示场景中的位置。
+  - 向所有 `GameObject` 实例添加了 `Scene Path`，以显示场景中的位置。
 
-  - `JobEntityBatch`在将实体用于源生成器时，添加了对/Lambdas 的支持。
+  - 新增了对 `JobEntityBatch`/Lambdas 的支持，便于将实体用于源生成器。
 
-  - 改进了对使用存储桶索引 (显示大型数组的支持) 。
+  - 改进了对（使用索引桶）显示大型数组的支持。
 
-  - 为 2019.4 API 添加了缺少的 Unity 消息。
+  - 添加了 2019.4 API 缺少的 Unity 消息。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 解决了 Unity 消息对话框的稳定性问题
+  - 修复了 Unity 消息对话框的稳定性问题
 
-  - 修复了非简体中文语言的各种 UI 问题。
+  - 修复了非 ENU 语言的各种 UI 问题。
 
-  - 修复了与诊断有关的稳定性问题 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 。
+  - 修复了与 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断有关的稳定性问题。
 
 - **调试：**
 
-  - 修复了使用方法时的 VM 断开连接问题 `Trace` 。
+  - 修复了使用 `Trace` 方法时的 VM 断开连接问题。
 
 - **评估版：**
 
-  - 修复了引发异常的过时属性的筛选。
+  - 修复了对抛出异常的过时属性的筛选。
 
 ## <a name="2900"></a>2.9.0.0
 2021年1月20日发布
@@ -88,17 +159,17 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 添加了对 `raytrace shaders` 和文件的支持 `UXML` `USS` 。
+  - 新增了对 `raytrace shaders`、`UXML` 和 `USS` 文件的支持。
 
-  - 更新了用作协同程序) 的所有方法的 Unity 消息 API (。
+  - 更新了 Unity 消息 API（用于所有用作协同例程的方法）。
 
-  - 更新 Android SDK 检测。
+  - 更新了 Android SDK 检测。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 了诊断，并为协同程序和提供错误的警告 `AssetPostprocessor.OnAssignMaterialModel` 。
+  - 修复了对协同例程和 `AssetPostprocessor.OnAssignMaterialModel` 发出错误警告的 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 诊断。
 
 ## <a name="2840"></a>2.8.4.0
 2020年12月15日发布
@@ -119,49 +190,49 @@ Visual Studio Tools for Unity 更改日志。
   - 即使解决方案中没有 VSTU 项目，也已修复附加到 Unity。
 
 ## <a name="2820"></a>2.8.2.0
-2020年10月27日发布
+发布时间：2020 年 10 月 27 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从继承的所有内容 `Component` ，而不仅仅是 `MonoBehaviour` 。
+  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断以应用于从 继承的所有内容 `Component` ，而不只是 `MonoBehaviour` 。
 
 ## <a name="2810"></a>2.8.1.0
-2020年10月13日发布
+发布时间：2020 年 10 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
 - **评估版：**
 
-  - 添加了对具有调用的隐式转换的支持。 之前，计算器强制执行严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
+  - 添加了对使用调用进行隐式转换的支持。 以前，评估程序强制实施严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
 
 - **集成：**
 
-  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用 `System.Reflection` 性能关键消息（如 `Update` 、、或）中的功能 `FixedUpdate` `LateUpdate` `OnGUI` 。
+  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应在性能 `System.Reflection` 关键型消息（如 `Update` `FixedUpdate` 、、 或 ） `LateUpdate` 中使用功能 `OnGUI` 。
 
-  - 改进 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 了 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressors，支持所有 `AssetPostprocessor` 静态方法。
+  - 改进了 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 和 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 抑制器，支持所有 `AssetPostprocessor` 静态方法。
 
-  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从继承的类型的初始化检测 `UnityEngine.Object` ，并将导致错误。
+  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可为空引用类型和不可为 null 的引用类型。 不支持从 继承的类型的初始化 `UnityEngine.Object` 检测，将导致错误。
 
-  - 现在为 Unity 2019. x 和 2020. x 使用相同的播放器和 asmdef 项目生成机制。
+  - 现在，对 Unity 2019.x 和 2020.x+ 使用相同的播放器和 asmdef 项目生成机制。
   
-  - 改善了使用向导生成 Unity 消息时的用户体验。
+  - 改进了使用向导生成 Unity 消息时的体验。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了注释中消息的意外完成。
+  - 修复了注释中消息意外完成的问题。
 
 ## <a name="2800"></a>2.8.0.0 
-2020年9月14日发布
+发布时间：2020 年 9 月 14 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 Unity 2019. x 的播放机项目生成。
+  - 修复了 Unity 2019.x 的播放器项目生成问题。
 
 ## <a name="2710"></a>2.7.1.0
 发布日期：2020 年 8 月 5 日

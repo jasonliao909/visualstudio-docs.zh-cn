@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 中使用 XAML 设计器的设计时示例数据
 description: 了解如何在 XAML 中使用设计时示例数据。
-ms.date: 05/28/2021
+ms.date: 06/01/2021
 ms.topic: conceptual
 author: alihamie
 ms.author: tglee
 manager: jmartens
 monikerRange: vs-2019
-ms.openlocfilehash: a987435d454771bdecf078e78af089405718d261
-ms.sourcegitcommit: 5366c6bca3fb217a2fbf847998387578f51ec45c
+ms.openlocfilehash: 8303e1150db7c12c404e8f67bce52418fbd05b9d
+ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748040"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111433787"
 ---
 # <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>在 Visual Studio 中使用 XAML 设计器的设计时示例数据
 
@@ -23,7 +23,7 @@ ms.locfileid: "110748040"
 示例数据仅用于设计时可视化，这意味着它仅出现在 XAML 设计器中，而不显示在运行的应用程序中。 因此，它将应用于 System.windows.controls.itemscontrol.itemssource 属性的设计时版本 `d:ItemsSource` 。 示例数据需要设计时命名空间才能工作。 首先，将以下代码行添加到 XAML 文档的标头（如果这些代码行尚不存在）：
 
 > [!NOTE]
-> 若要深入了解 XAML 中的设计时属性，请访问 [xaml 设计时属性](/xaml/xaml-tools/xaml/xaml-designtime-data.md) 。
+> 若要深入了解 XAML 中的设计时属性，请访问 [xaml 设计时属性](../xaml-tools/xaml-designtime-data.md) 。
 
 ```xml
 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -93,7 +93,7 @@ mc:Ignorable="d"
 
 ## <a name="see-also"></a>另请参阅
 
-- [XAML 设计时属性](/xaml/xaml-tools/xaml/xaml-designtime-data)
+- [XAML 设计时属性](../xaml-tools/xaml-designtime-data.md)
 - [WPF 应用中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 应用中的 XAML](/windows/uwp/xaml-platform/xaml-overview)
 - [Xamarin.Forms 应用中的 XAML](/xamarin/xamarin-forms/xaml/)
