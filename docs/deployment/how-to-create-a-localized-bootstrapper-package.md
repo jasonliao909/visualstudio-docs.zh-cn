@@ -14,19 +14,19 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eb06c54caceb2e9329347fb1dd0114749975e7d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a9d1fc91dcb385a9250dde3adb47c0d9553147f
+ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927582"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111877710"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
 创建引导程序包后，您可以通过为每个区域设置创建两个文件来创建每个区域设置的本地化版本的引导程序包：软件许可条款文件 (例如 *eula*) 和包清单 (*package.xml*) 。
 
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。
 
-1. 在 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName>* 中创建一个以区域设置名称命名的文件夹。
+1. 在 *\Program Files (x86) \Microsoft \\ \<BootstrapperPackageName> SDKs\ClickOnce Bootstrapper\Packages* 中创建一个以区域设置名称命名的文件夹。
 
 2. 创建包含引导程序包的软件许可条款的文件并将其放入新的文件夹中。
 
@@ -41,9 +41,9 @@ ms.locfileid: "99927582"
 
 1. 创建以区域设置名称命名的文件夹。
 
-     在32位计算机上，在 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 文件夹中创建文件夹。
+     在32位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 文件夹中创建文件夹。
 
-     在64位计算机上，在 *\Program Files (86 \\ \<BootstrapperPackageName> \\) \microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 文件夹中创建文件夹。
+     在64位计算机上，在 \Program 文件中创建文件夹 *(x86) \microsoft \\ \<BootstrapperPackageName> \\ SDKs\ClickOnce Bootstrapper\Packages* 文件夹。
 
      下表显示可以用来匹配区域设置的文件夹名称。
 
@@ -78,19 +78,22 @@ ms.locfileid: "99927582"
 
 1. 创建名为 fr 的文件夹。 该文件夹名称必须与区域设置名称匹配。
 
-     在32位计算机上，在 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
+     在32位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
 
-     在 64 位计算机上，在 \Program Files (86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1 \\ 文件夹中创建文件夹。
+     在64位计算机上，在 \Program 文件中创建文件夹 *(x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹。
 
 2. 将软件许可条款的本地化版本置于 *fr* 文件夹中。
 
-3. 将 \Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages\DotNetFX35SP1\en\package.xml 文件复制到 fr 文件夹，并在 XML 设计器中打开该文件。
+3. 将 *(x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 文件中的 \Program 文件复制到 *fr* 文件夹，然后在 XML 设计器中打开该文件。
 
 4. 更新包清单的 `<Strings>` 部分，以便用法语表示错误字符串。
 
 5. 将 `<String Name="Culture">` 值更改为 *fr*。
 
 6. 保存 *package.xml* 文件。
+
+>[!NOTE]
+> 从 Visual Studio 2019 Update 7 版本引导程序包开始，还会在路径 *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages* 下发现。
 
 ## <a name="see-also"></a>另请参阅
 - [创建引导程序包](../deployment/creating-bootstrapper-packages.md)
