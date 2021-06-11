@@ -1,6 +1,6 @@
 ---
 title: 调试时映射调用堆栈上的方法
-description: 了解如何创建代码图，以便在调试时直观地跟踪调用堆栈。 此外，还可以了解如何在地图上进行注释以跟踪代码执行的操作。
+description: 了解如何创建代码图，以在调试时直观地跟踪调用堆栈。 此外，请了解你可以在地图上进行注释，以跟踪代码正在执行哪些工作。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -30,12 +30,12 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7196cf06e7d6bcde33bc1e4a6c5d0ebfac486576
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: faeee42f179351649ba73e06d25e5e948538392e
+ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946483"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112016315"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 
@@ -51,37 +51,37 @@ ms.locfileid: "99946483"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Visual Studio Enterprise](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
-- 可调试的代码，例如 Visual c #、Visual Basic、c + +、JavaScript 或 X + +
+- 可以调试的代码，例如 Visual C#、Visual Basic、C++、JavaScript 或 X++
 
   请参阅：
 
-- [视频：利用代码图调试器集成进行可视化调试 (第9频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
+- [视频：使用代码图调试器集成进行可视化调试 (第 9 频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [映射调用堆栈](#MapStack)
 
-- [创建有关代码的注释](#MakeNotes)
+- [记下代码](#MakeNotes)
 
-- [用下一个调用堆栈更新映射](#UpdateMap)
+- [使用下一个调用堆栈更新映射](#UpdateMap)
 
-- [向映射中添加相关代码](#AddRelatedCode)
+- [将相关代码添加到地图](#AddRelatedCode)
 
 - [使用地图查找 bug](#FindBugs)
 
 - [问答](#QA)
 
-  有关使用代码图时可以使用的命令和操作的详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
+  有关在使用代码图时可以使用的命令和操作的详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
 ## <a name="map-the-call-stack"></a><a name="MapStack"></a>映射调用堆栈
 
-1. 开始调试。  (键盘： **F5**) 
+1. 开始调试。  (键盘 **：F5**) 
 
-2. 在应用进入中断模式或单步执行函数后，选择 " **代码图**"。  (键盘： **Ctrl**  +  **Shift**  +  **`**) 
+2. 在应用进入中断模式或进入函数后，选择"代码 **映射"。**  (键盘 **：Ctrl**  +  **Shift**  +  **`**) 
 
      ![选择代码图以开始映射调用堆栈](../debugger/media/debuggermap_choosecodemap.png)
 
@@ -89,11 +89,11 @@ ms.locfileid: "99946483"
 
      ![查看代码图上的调用堆栈](../debugger/media/debuggermap_seeundocallstack.png)
 
-     在你继续调试时，该代码图将自动更新。 请参见 [用下一个调用堆栈更新映射](#UpdateMap)。
+     在你继续调试时，该代码图将自动更新。 请参阅 [使用下一个调用堆栈 更新映射](#UpdateMap)。
 
 ## <a name="make-notes-about-the-code"></a><a name="MakeNotes"></a>对代码进行标注
 
- 添加注释以跟踪代码发生的情况。 若要在注释中添加新行，请按 **Shift + Return**。
+ 添加注释以跟踪代码中发生的情况。 若要在注释中添加新行，请按 **Shift + Return**。
 
  ![向代码图上的调用堆栈添加注释](../debugger/media/debuggermap_addcomment.png)
 
@@ -105,9 +105,9 @@ ms.locfileid: "99946483"
 
 ## <a name="add-related-code-to-the-map"></a><a name="AddRelatedCode"></a>向映射添加相关代码
 
- 现在已经有了一个映射，接下来要做什么？ 如果使用的是 c # 或 Visual Basic，请添加项（如字段、属性和其他方法），以跟踪代码中发生的情况。
+ 现在你有了一个地图 - 接下来做什么？ 如果使用 C# 或 Visual Basic，请添加字段、属性和其他方法等项，以跟踪代码中发生的情况。
 
- 双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。  (键盘：在地图上选择方法，然后按 **F12**) 
+ 双击某个方法以查看其代码定义，或者使用该方法的快捷菜单。  (键盘：选择地图上的 方法，然后按 **F12**) 
 
  ![转到代码图上某方法的代码定义](../debugger/media/debuggermap_gotocodedefinition.png)
 
@@ -116,7 +116,7 @@ ms.locfileid: "99946483"
  ![显示调用堆栈代码图上某方法中的字段](../debugger/media/debuggermap_showfields.png)
 
 > [!NOTE]
-> 默认情况下，向图添加项还会添加父组节点（如类、命名空间和程序集）。 虽然这很有用，但你可以通过在 "地图" 工具栏上使用 " **包括父级** " 按钮关闭此功能，或者在添加项时按 **CTRL** 来使映射简单。
+> 默认情况下，向图添加项还会添加父组节点（如类、命名空间和程序集）。 虽然这很有用，但可以通过使用地图工具栏上的"包括父项"按钮或添加项时按 **CTRL** 来关闭此功能，使地图保持简单。
 
  ![调用堆栈代码图上与某方法相关的字段](../debugger/media/debuggermap_showedfields.png)
 
@@ -130,7 +130,7 @@ ms.locfileid: "99946483"
 
 ## <a name="find-bugs-using-the-map"></a><a name="FindBugs"></a>使用映射查找 Bug
 
- 通过代码可视化，可帮助你更快发现 Bug。 例如，假设您正在调查绘图程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
+ 通过代码可视化，可帮助你更快发现 Bug。 例如，假设你正在调查绘图程序中的 bug。 当你绘制一条线并尝试撤消该操作时，直到你绘制另一条线后才会发生变化。
 
  因此，可在 `clear`、`undo` 和 `Repaint` 方法中设置断点，启动调试，然后生成如下所示的图：
 
@@ -144,49 +144,49 @@ ms.locfileid: "99946483"
 
 ## <a name="q--a"></a><a name="QA"></a> 问题解答
 
-- **不是所有的调用都出现在地图上。为什么?**
+- **并非所有调用都显示在地图上。为什么？**
 
-   默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，请在 " **调用堆栈** " 窗口中将其打开：
+   默认情况下，只有你自己的代码会显示在图中。 若要查看外部代码，请打开"调用堆栈 **"** 窗口：
 
    ![使用“调用堆栈”窗口显示外部代码](../debugger/media/debuggermap_callstackmenu.png)
 
-   或在 Visual Studio 调试选项中关闭 " **启用仅我的代码** ：
+   或关闭 **"启用仅我的代码** 调试Visual Studio选项中的"启用"：
 
    ![使用“选项”对话框显示外部代码](../debugger/media/debuggermap_debugoptions.png)
 
 - **更改图是否会影响代码？**
 
-   更改地图并不会对代码造成任何影响。 你可随意在图上重命名、移动或移除任何内容。
+   更改映射不会以任何方式影响代码。 你可随意在图上重命名、移动或移除任何内容。
 
-- **此消息的意思是： "关系图可能基于较旧版本的代码"？**
+- **此消息的含义是什么："关系图可能基于较旧版本的代码"？**
 
    在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。
 
-- **如何实现控制地图的布局？**
+- **如何实现地图布局吗？**
 
-   打开地图工具栏上的 " **布局** " 菜单：
+   打开地图 **工具栏** 上的"布局"菜单：
 
   - 更改默认布局。
 
-  - 若要停止自动重新排列映射，请关闭 " **调试时自动布局**"。
+  - 若要自动停止重新组织地图，请调试 **时关闭"自动布局"。**
 
-  - 若要在添加项时尽可能少地重新排列映射，请关闭 " **增量布局**"。
+  - 若要在添加项时尽可能少地重新排列地图，请关闭增量 **布局**。
 
 - **我能否与他人共享此图？**
 
-   如果你有 Microsoft Outlook，则可以导出该映射，将其发送给其他人，或将其保存到你的解决方案中，以便可以将其签入源代码管理。
+   可以导出地图、将其发送给其他人（如果有 Microsoft Outlook）或将其保存到解决方案，以便将其签入源代码管理。
 
    ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png)
 
 - **我如何停止此图自动添加新的调用堆栈？**
 
-   选择 ![ 按钮 &#45; 在地图工具栏上自动显示代码图上的调用堆栈 ](../debugger/media/debuggermap_automaticupdateicon.gif) 。 若要手动向图中添加当前的调用堆栈，请按 Ctrl + Shift + `  。
+   选择 ![ "按钮&#45;在代码图上自动在地图 ](../debugger/media/debuggermap_automaticupdateicon.gif) 工具栏上显示调用堆栈。 若要手动向图中添加当前的调用堆栈，请按 Ctrl + Shift + `  。
 
    调试时，映射将继续突出显示地图上的现有调用堆栈。
 
 - **项图标和箭头代表什么？**
 
-   若要获取有关项的详细信息，请将鼠标指针移到该项上，并查看项的工具提示。 还可以查看 **图例** 来了解每个图标的含义。
+   若要获取有关项的详细信息，请移动鼠标指针并查看该项的工具提示。 还可以查看图例 **，** 了解每个图标的含义。
 
    ![调用堆栈代码图上各图标的含义](../debugger/media/debuggermap_showlegend.png)
 
@@ -194,11 +194,11 @@ ms.locfileid: "99946483"
 
 - [映射调用堆栈](#MapStack)
 
-- [创建有关代码的注释](#MakeNotes)
+- [记下代码](#MakeNotes)
 
-- [用下一个调用堆栈更新映射](#UpdateMap)
+- [使用下一个调用堆栈更新映射](#UpdateMap)
 
-- [向映射中添加相关代码](#AddRelatedCode)
+- [将相关代码添加到地图](#AddRelatedCode)
 
 - [使用地图查找 bug](#FindBugs)
 
