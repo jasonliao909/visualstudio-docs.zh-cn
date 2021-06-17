@@ -16,12 +16,12 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 066ae0ab9c23ebb1d55f6c0480d7aeed4255fb4f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 55f69875b06428c9bbe179e73dd6ea9b4ef40b8e
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217731"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112437"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint-by-using-a-designer"></a>演练：使用设计器为 SharePoint 创建 Web 部件
 
@@ -52,15 +52,21 @@ ms.locfileid: "106217731"
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]使用 "以 **管理员身份运行**" 选项启动。
 
 2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
-
-     此时将出现“新建项目”对话框。
+::: moniker range="=vs-2017"
 
 3. 在 " **新建项目** " 对话框中的 " **Visual c #** " 或 " **Visual Basic**" 下，展开 " **Office/SharePoint**"，然后选择 " **SharePoint 解决方案** " 类别。
 
 4. 在模板列表中，选择 " **SharePoint 2013-可视 Web 部件** " 模板，然后选择 **"确定"** 按钮。
 
      " **SharePoint 自定义向导** " 随即出现。 通过使用此向导，您可以指定用于调试项目的站点以及解决方案的信任级别。
+::: moniker-end
+::: moniker range=">=vs-2019"
+3. 在 " **创建新项目** " 对话框中，为已安装的特定 sharepoint 版本选择 " *sharepoint 空项目*"。 例如，如果您有 SharePoint 2019 安装，请选择 **sharepoint 2019-空项目** 模板。
+    [!INCLUDE[new-project-dialog-search](../sharepoint/includes/new-project-dialog-search-md.md)]
 
+4. 在 " **名称** " 框中，输入 **TestProject1**，然后选择 " **创建** " 按钮。
+
+::: moniker-end
 5. 在 " **此 SharePoint 解决方案的信任级别是什么？** " 部分中，选择 " **部署为场解决方案** " 选项按钮。
 
 6. 选择 " **完成** " 按钮以接受默认的本地 SharePoint 站点。

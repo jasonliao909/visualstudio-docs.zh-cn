@@ -14,17 +14,16 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 96269f67b11def6fa34ddd1fc7540f9a0462a73e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7a349cb79ca22869038e46d7ee27b2425119997
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876870"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112113016"
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
-  你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。
 
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 和 [构建 SharePoint 应用程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+  你可以将在 Visual Studio 中创建 SharePoint 应用程序作为在 SharePoint 设计器中创建它们的替代方法。 Visual Studio 可通过提供诸如高级调试工具、IntelliSense、语句完成和项目模板等功能加快对 SharePoint 的开发。 Visual Studio 还会利用基于 .NET Framework 的高级工具和语言。 你可以通过使用 Visual Basic 或 Visual C# 来开发 SharePoint 项目，也可以通过使用 JavaScript 来开发 SharePoint 应用程序。
 
 > [!NOTE]
 > 了解如何使用全新 [SharePoint 外接程序模型](/sharepoint/dev/sp-add-ins/sharepoint-add-ins) 来扩展你的用户的 SharePoint 体验。 与 SharePoint 解决方案相比，这些外接程序的需求量很小，几乎可以使用任何 Web 编程技术（例如 HTML5、JavaScript、CSS3 和 XML）生成。
