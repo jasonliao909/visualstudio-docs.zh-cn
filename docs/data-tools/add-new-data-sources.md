@@ -15,18 +15,18 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: b6e42681d2c25162df22af9711d47b71ba155d67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a377acba7b8c64503e5e5f821b5f3f833a8d73b2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867433"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308046"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 > [!NOTE]
-> 本文中所述的功能适用于 .NET Framework Windows 窗体和 WPF 开发。 在 Visual Studio 2019 (和早期版本) 中，.NET Core 开发不支持 WPF 和 Windows 窗体功能。
+> 本文中所述的功能适用于 .NET Framework Windows 窗体和 WPF 开发。 对于 WPF 和 Windows 窗体，.NET Core 开发不支持功能。
 :::moniker-end
 
 在 Visual Studio 中的 .NET data tools 的上下文中，术语 " *数据源* " 是指连接到数据存储的 .net 对象，并使数据可用于 .net 应用程序。 当您在 " **数据源** " 窗口中拖放数据库对象时，Visual Studio 设计器可以使用数据源的输出生成将数据绑定到窗体的样板代码。 这种类型的数据源可以是：
