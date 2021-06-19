@@ -1,6 +1,6 @@
 ---
 title: T4 文本模板指令
-description: 了解 T4 测试模板指令以及它们如何向文本模板转换引擎提供说明。
+description: 了解 T4 测试模板指令及其如何向文本模板转换引擎提供说明。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,17 @@ helpviewer_keywords:
 - text templates, output directive
 - text templates, directives
 - text templates, template directive
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ba13cbd31d41e656533aa5b13cf2a09503e58e8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d9b7ca189ced11eea57e175a06b81161090070b
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924593"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388732"
 ---
 # <a name="t4-text-template-directives"></a>T4 文本模板指令
 
@@ -79,4 +79,4 @@ ms.locfileid: "99924593"
 <#@ CleanupBehavior processor="T4VSHost" CleanupAfterProcessingtemplate="true" #>
 ```
 
-此外，您还可以创建自己的指令。 有关详细信息，请参阅 [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用可视化和建模 SDK 来创建域特定语言 (DSL)，将作为 DSL 的一部分生成指令处理器。
+此外，您还可以创建自己的指令。 有关详细信息，请参阅创建自定义 [T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。 如果使用可视化和建模 SDK 来创建域特定语言 (DSL)，将作为 DSL 的一部分生成指令处理器。

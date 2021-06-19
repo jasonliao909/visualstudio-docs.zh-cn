@@ -1,35 +1,35 @@
 ---
 title: 演练：创建自定义文本模板宿主
-description: 如果要在 Visual Studio 外部使用文本模板转换功能，请了解如何编写自定义主机。
+description: 若要从外部使用文本模板转换功能，了解如何编写自定义Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - walkthroughs [text templates], custom host
 - text templates, custom host walkthrough
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 3e24c46e576ab6125c3152989c568a704a33b2d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ef237bf3fc90708192a37014c15c0a15dea127e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924136"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388251"
 ---
 # <a name="walkthrough-create-a-custom-text-template-host"></a>演练：创建自定义文本模板主机
 
-*文本模板宿主* 提供了一个环境，该环境允许 *文本模板转换引擎* 运行。 宿主负责管理引擎与文件系统的交互。 需要文件或程序集的引擎或 *指令处理器* 可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅 [文本模板转换过程](../modeling/the-text-template-transformation-process.md)。
+文本 *模板宿主* 提供一个环境，使 *文本模板转换引擎能够* 运行。 宿主负责管理引擎与文件系统的交互。 需要文件或 *程序集* 的引擎或指令处理器可以从主机请求资源。 然后，宿主可以搜索目录和全局程序集缓存，以查找请求的资源。 有关详细信息，请参阅文本 [模板转换过程](../modeling/the-text-template-transformation-process.md)。
 
-如果要在 Visual Studio 外部使用 *文本模板转换* 功能，或者希望将该功能集成到自定义工具中，则可以编写自定义主机。 若要创建自定义主机，你必须创建一个继承自 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))的类。 有关各个方法的文档，请参阅 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。
+如果要从外部使用文本模板转换功能，或者想要将Visual Studio集成到自定义工具中，可以编写自定义主机。 若要创建自定义主机，必须创建从 [ITextTemplatingEngineHost 继承的类](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。 有关各个方法的文档，请参阅 [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))。
 
 > [!WARNING]
-> 如果你正在编写 Visual Studio 扩展或包，请考虑使用文本模板化服务而不是创建你自己的主机。 有关详细信息，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+> 如果要编写扩展Visual Studio包，请考虑使用文本模板化服务，而不是创建自己的主机。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 本演练演示以下任务：
 
@@ -53,7 +53,7 @@ ms.locfileid: "99924136"
 
 2. 添加对下列程序集的引用：
 
-   - **VisualStudio \* . TextTemplating。0**
+   - **Microsoft.VisualStudio.TextTemplating。 \*0**
 
    - **Microsoft.VisualStudio.TextTemplating.Interfaces.10.0 和更高版本**
 
@@ -716,7 +716,7 @@ ms.locfileid: "99924136"
    End Namespace
    ```
 
-4. [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)]仅对于，打开 "**项目**" 菜单，然后单击 " **CustomHost 属性**"。 在 " **启动对象** " 列表中，单击 " **CustomHost**"。
+4. 仅 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 打开"项目"**菜单**，然后单击 **"CustomHost 属性"。** 在"**启动对象"列表中**，单击 **"CustomHost.Program"。**
 
 5. 在“文件”  菜单上，单击“全部保存” 。
 
@@ -728,7 +728,7 @@ ms.locfileid: "99924136"
 
 ### <a name="to-create-a-text-template-to-test-the-custom-host"></a>创建文本模板测试自定义主机
 
-1. 创建一个文本文件，并将其命名为 `TestTemplate.tt` 。
+1. 创建文本文件，并命名它 `TestTemplate.tt` 。
 
      可以使用任何文本编辑器（例如记事本）来创建文件。
 
@@ -788,7 +788,7 @@ ms.locfileid: "99924136"
      `<YOUR PATH>CustomHost\bin\Debug\CustomHost.exe`
 
     > [!NOTE]
-    > 您可以浏览到 **Windows 资源管理器** 中的文件 CustomHost.exe，然后将该文件拖入命令提示符窗口，而不是键入地址。
+    > 可以浏览到命令提示符窗口中CustomHost.exe文件Windows 资源管理器，而不是键入地址。 
 
 3. 键入一个空格。
 
@@ -799,11 +799,11 @@ ms.locfileid: "99924136"
      `C:\<YOUR PATH>TestTemplate.tt`
 
     > [!NOTE]
-    > 您可以在 **Windows 资源管理器** 中浏览到文件 TestTemplate.tt，然后将该文件拖入命令提示符窗口，而不是键入地址。
+    > 可以浏览到命令提示符窗口中 TestTemplate.tt 文件Windows 资源管理器，然后将该文件拖动到命令提示符窗口中，而不是键入地址。
 
      自定义宿主应用程序运行并完成文本模板转换过程。
 
-5. 在 **Windows 资源管理器** 中，浏览到包含文件 TestTemplate.tt 的文件夹。
+5. 在 **Windows 资源管理器** 中，浏览到包含文件文件夹 TestTemplate.tt。
 
      该文件夹还包含文件 TestTemplate1.txt。
 

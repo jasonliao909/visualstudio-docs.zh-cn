@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
 - Domain-Specific Language, definition file
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c1a9e633bf832021ee2f6262afed108b1515808
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3f2e2ae6e406b8967cb7de49573ce5b26377806e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924488"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388628"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 
@@ -42,7 +42,7 @@ Root 元素的子元素 \<Dsl> 如下所示：
 
 ### <a name="types"></a>类型
 
-本部分将定义每个类型及其命名空间。 域属性具有两种类型。 `DomainEnumerations` 在模型中定义，并在 DomainModel.cs 中生成类型。 `ExternalTypes` 请参阅在其他位置 (（例如或) ）定义的类型 `String` `Int32` ，并且不生成任何内容。
+本部分将定义每个类型及其命名空间。 域属性具有两种类型。 `DomainEnumerations` 在模型中定义，并在 DomainModel 中生成类型。 `ExternalTypes` 请参阅在其他位置 (（例如或) ）定义的类型 `String` `Int32` ，并且不生成任何内容。
 
 ### <a name="shapes"></a>形状
 
@@ -206,17 +206,17 @@ Root 元素的子元素 \<Dsl> 如下所示：
 
 每个域属性还可以具有以下特性：
 
-- **IsBrowsable**。 此特性确定当用户单击父类的对象时属性是否出现在 " **属性** " 窗口中。
+- **IsBrowsable**。 此属性确定当用户单击父类的对象时，属性是否显示在"属性"窗口中。
 
-- **IsUIReadOnly**。 此特性确定用户是否可以在 " **属性** " 窗口中或通过显示属性的修饰器来更改属性。
+- **IsUIReadOnly**。 此属性确定用户是否可以在"属性"窗口中更改属性，还是通过呈现该属性的修饰器更改该属性。
 
-- **类型**。 可以将此特性设置为 Normal、Calculated 或 CustomStorage。 如果将此特性设置为 Calculated，则你必须提供可确定该值的自定义代码，并且该属性将是只读的。 如果将此特性设置为 CustomStorage，则你必须提供可获取并设置值的代码。
+- **种类**。 可以将此特性设置为 Normal、Calculated 或 CustomStorage。 如果将此特性设置为 Calculated，则你必须提供可确定该值的自定义代码，并且该属性将是只读的。 如果将此特性设置为 CustomStorage，则你必须提供可获取并设置值的代码。
 
 - **IsElementName**。 如果将此特性设置为 true，则其值会在创建父类的实例时自动设置为唯一值。 仅针对每个类中的一个属性（必须具有字符串类型），将此特性设置为 true。 在组件图示例中，`Name` 中的 `NamedElement` 属性已将 `IsElementName` 设置为 true。 只要用户创建 `Component` 元素（派生自 `NamedElement`），该名称就会自动初始化为类似于“Component6”的名称。
 
 - `DefaultValue`. 如果已指定此特性，则指定的值将分配给此类的新实例的特性。 如果设置 `IsElementName`，则 DefaultValue 特性将指定新字符串的初始部分。
 
-- **Category** 是属性将显示在 " **属性** " 窗口中的标头。
+- **Category** 是属性将在"属性"窗口中显示 **的标题** 。
 
 ## <a name="relationships"></a>关系
 
@@ -269,7 +269,7 @@ Root 元素的子元素 \<Dsl> 如下所示：
 
 ## <a name="designer-and-toolbox-tabs"></a>设计器和工具箱选项卡
 
-Dsldefinition.dsl 文件的 **设计器** 部分的主要部分是 **ToolboxTab** 元素。 一个设计器可以有多个元素，其中每个元素都表示生成的设计器的 **工具箱** 中的一个头部分。 每个 **ToolboxTab** 元素可以包含一个或多个 **ElementTool** 元素和/或 **ConnectionTool** 元素。
+DslDefinition.dsl 文件的 **Designer** 部分的主要部分是 **ToolboxTab** 元素。 一个设计器可以具有其中几个元素，其中每个元素都表示生成的设计器的"工具箱"中的一个标题 **部分**。 每个 **ToolboxTab** 元素可以包含一个或多个 **ElementTool** 元素和/或 **ConnectionTool** 元素。
 
 元素工具可以创建特定域类的实例。 当用户将元素工具拖到关系图上时，结果将由元素合并指令来确定，如本主题后面中有关元素合并指令的部分所述。
 

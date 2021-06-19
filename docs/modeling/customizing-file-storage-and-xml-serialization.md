@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.dsldesigner.xmlbehavior
 helpviewer_keywords:
 - Domain-Specific Language, serialization
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 019f77320e9118d5f3d31e647a59c71bb474d204
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b3026010e37108ca1b19096d48a3c8d88ab6
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935529"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389366"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
@@ -103,7 +103,7 @@ ms.locfileid: "99935529"
 
 名字对象用于表示在模型和关系图文件的不同部分之间进行交叉引用。 它们还在文件中用于 `.diagram` 引用模型文件中的节点。 名字对象有两种形式：
 
-- *Id 名字对象* 引用目标元素的 GUID。 例如： 。
+- *Id 名字对象* 引用目标元素的 GUID。 例如：
 
     ```xml
     <personShapeMoniker Id="f79734c0-3da1-4d72-9514-848fa9e75157" />
@@ -172,28 +172,28 @@ ms.locfileid: "99935529"
 
 ### <a name="moniker-paths-and-qualifiers"></a>名字对象路径和限定符
 
-限定的密钥名字对象以名字对象密钥结尾，并在嵌入树中以其父对象的名字对象为前缀。 例如，如果唱片集的名字对象为：
+限定的键名字对象以名字对象键结尾，在嵌入树中以其父级的名字对象作为前缀。 例如，如果一个相集的名字是：
 
 ```xml
 <albumMoniker title="/My Favorites/Jazz after Teatime" />
 ```
 
-然后，该唱片集中的一首歌曲可能为：
+然后，该相集中的一个歌曲可以是：
 
 ```xml
 <songMoniker title="/My Favorites/Jazz after Teatime/Hot tea" />
 ```
 
-但是，如果按 ID 引用唱集，则名字对象将如下所示：
+但是，如果按 ID 引用了本集，则名字对象将如下所示：
 
 ```xml
 <albumMoniker Id="77472c3a-9bf9-4085-976a-d97a4745237c" />
 <songMoniker title="/77472c3a-9bf9-4085-976a-d97a4745237c/Hot tea" />
 ```
 
-请注意，由于 GUID 是唯一的，因此永远不会被其父级的名字对象作为前缀。
+请注意，由于 GUID 是唯一的，因此它永远不会以其父级的名字作为前缀。
 
-如果你知道某个特定域属性将始终在模型内具有唯一值，则可以为该属性将 " **为名字对象限定符** " 设置为 `true` 。 这将导致它作为限定符使用，而无需使用父级的名字对象。 例如，如果您设置了两个都 **是名字对象限定符** ，并且是唱集类的 Title domain 属性的 **名字对象键** ，则不会在唱片集及其嵌入子级的名字对象中使用该模型的名称或标识符：
+如果知道特定域属性在模型中始终具有唯一值，可以将该属性的"名字 **对象限定** 符" `true` 设置为 。 这会使它用作限定符，而不使用父级的名字对象。 例如，如果同时为 Album 类的 Title 域属性设置 Is **Moniker Qualifier** 和 **Is Moniker Key，** 则不将模型的名称或标识符用于 Album 及其嵌入子级的名字对象：
 
 ```xml
 <albumMoniker name="Jazz after Teatime" />
@@ -202,9 +202,9 @@ ms.locfileid: "99935529"
 
 ## <a name="customize-the-structure-of-the-xml"></a>自定义 XML 的结构
 
-若要进行以下自定义，请在 DSL 资源管理器中展开 " **Xml 序列化行为** " 节点。 在域类下，展开元素数据节点以查看此类中的属性和关系的列表。 选择关系并调整其在属性窗口中的选项。
+若要进行以下自定义，请展开 DSL 资源管理器 **中的"Xml 序列化行为** "节点。 在域类下，展开"元素数据"节点以查看来自此类的属性和关系的列表。 选择关系，并调整其选项属性窗口。
 
-- 将 **省略元素** 设置为 true 可省略源角色节点，只留下目标元素的列表。 如果源类和目标类之间存在多个关系，则不应设置此选项。
+- 将 **Omit 元素** 设置为 true 可省略源角色节点，仅保留目标元素的列表。 如果源类和目标类之间存在多个关系，则不应设置此选项。
 
     ```xml
     <familyTreeModel ...>
@@ -216,7 +216,7 @@ ms.locfileid: "99935529"
     </familyTreeModel>
     ```
 
-- 设置 " **使用完整窗体** " 将目标节点嵌入表示关系实例的节点中。 将域属性添加到域关系时，将自动设置此选项。
+- 设置 **"使用完整窗体** "，将目标节点嵌入表示关系实例的节点中。 将域属性添加到域关系时，会自动设置此选项。
 
     ```xml
     <familyTreeModel ...>
@@ -232,7 +232,7 @@ ms.locfileid: "99935529"
     </familyTreeModel>
     ```
 
-- 设置 **表示**  =  **元素**，以将域属性另存为元素而不是属性值。
+- 将 **Representation**  =  **元素** 设置为将域属性另存为元素而不是属性值。
 
     ```xml
     <person name="Elizabeth I" birthYear="1533">
@@ -240,71 +240,71 @@ ms.locfileid: "99935529"
     </person>
     ```
 
-- 若要更改属性和关系的序列化顺序，请右键单击 "元素数据" 下的某个项，然后使用 " **上移** **" 或 "下移"** 菜单命令。
+- 若要更改属性和关系的序列化顺序，请右键单击"元素数据"下的项，并使用"上移"或"下移 **"菜单** 命令。
 
-## <a name="major-customization-using-program-code"></a>使用程序代码进行重大自定义
+## <a name="major-customization-using-program-code"></a>使用程序代码的主要自定义项
 
-可以替换部分或全部序列化算法。
+可以替换部分或所有序列化算法。
 
-建议你在 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper.cs** 中研究代码。
+建议研究 **Dsl\Generated Code\Serializer.cs** 和 **SerializationHelper.cs 中的代码**。
 
 ### <a name="to-customize-the-serialization-of-a-particular-class"></a>自定义特定类的序列化
 
-1. 对于 **Xml 序列化行为**，此类的节点中的 Set **是 Custom** 。
+1. 在 **Xml 序列** 化行为 下的该类的节点中，将 设置为 **Custom。**
 
-2. 转换所有模板，生成解决方案，并调查生成的编译错误。 每个错误附近的注释解释了必须提供的代码。
+2. 转换所有模板，生成解决方案，并调查生成的编译错误。 每个错误附近的注释说明了必须提供的代码。
 
-### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>为整个模型提供自己的序列化
+### <a name="to-provide-your-own-serialization-for-the-whole-model"></a>为整个模型提供你自己的序列化
 
-1. 重写 Dsl\GeneratedCode\SerializationHelper.cs 中的方法
+1. 替代 Dsl\GeneratedCode\SerializationHelper.cs 中的方法
 
 ## <a name="options-in-xml-serialization-behavior"></a>Xml 序列化行为中的选项
 
-在 DSL 资源管理器中，Xml 序列化行为节点包含每个域类、关系、形状、连接符和关系图类的子节点。 在每个节点下，都列出了源自该元素的属性和关系。 关系在其自身的权限和源类下都表示。
+在 DSL 资源管理器中，Xml 序列化行为节点包含每个域类、关系、形状、连接器和关系图类的子节点。 每个节点下都是一个属性和关系列表，这些属性和关系都来自该元素。 关系在其自己的右侧和源类下都表示。
 
-下表汇总了可在 DSL 定义的此部分中设置的选项。 在每种情况下，在 DSL 资源管理器中选择一个元素，并设置属性窗口中的选项。
+下表总结了可以在 DSL 定义的此部分中设置的选项。 在每种情况下，在 DSL 资源管理器中选择一个元素，并设置"选项"中的属性窗口。
 
 ### <a name="xml-class-data"></a>Xml 类数据
 
-这些元素可在 DSL 资源管理器中的 " **Xml 序列化 Behavior\Class 数据**" 下找到。
+这些元素位于 DSL 资源管理器中的 **Xml 序列化行为\类数据 下**。
 
-|属性|说明|
+|属性|描述|
 |-|-|
 |具有自定义元素架构|如果为 True，则指示域类具有自定义元素架构|
-|为自定义|如果要为此域类编写自己的序列化和反序列化代码，请将此值设置为 **True** 。<br /><br /> 构建解决方案并调查错误以发现详细说明。|
-|域类|此类数据节点适用的域类。 只读。|
-|元素名称|此类的元素的 Xml 节点名称。 默认值为域类名称的小写形式。|
-|名字对象特性名称|用于包含引用的名字对象元素中的属性的名称。 如果为空，则使用键属性或 id 的名称。<br /><br /> 在此示例中，为 "name"：  `<personMoniker name="/Mike Nash"/>`|
-|名字对象元素名称|用于引用此类的元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是类名以 "名字对象" 作为后缀的小写形式。 例如，`personMoniker` 。|
-|名字对象类型名称|为此类的元素的名字对象生成的 xsd 类型的名称。 XSD 在 **Dsl\Generated 代码架构中 \\ \* 。 xsd**|
-|序列化 Id|如果为 True，则元素 GUID 包含在文件中。 如果没有标记 **为名字对象键** 的属性，并且 DSL 定义了此类的引用关系，则必须为 true。|
-|类型名称|在指定域类的 xsd 中生成的 xml 类型的名称。|
+|是自定义的|如果要为此 **域** 类编写自己的序列化和反序列化代码，请设置为 True。<br /><br /> 生成解决方案并调查错误以发现详细说明。|
+|域类|此类数据节点应用到的域类。 只读。|
+|元素名称|此类的元素的 Xml 节点名称。 默认值是域类名称的小写版本。|
+|名字对象属性名称|名字对象元素中用于包含引用的属性的名称。 如果为空，则使用键属性或 ID 的名称。<br /><br /> 此示例中，它是"name"：  `<personMoniker name="/Mike Nash"/>`|
+|名字对象元素名称|用于引用此类元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是带有"名字对象"后缀的类名的一个小写版本。 例如，`personMoniker`。|
+|名字对象类型名称|为此类元素的名字对象生成的 xsd 类型的名称。 XSD 位于 **Dsl\Generated \\ \* Code Schema.xsd 中**|
+|序列化 ID|如果为 True，则元素 GUID 包含在文件中。 如果没有标记为"是名字对象键"的属性，并且DSL 定义对此类的引用关系，则此属性必须为 true。|
+|类型名称|从指定的域类在 xsd 中生成的 xml 类型的名称。|
 |说明|与此元素关联的非正式说明|
 
 ### <a name="xml-property-data"></a>Xml 属性数据
 
 Xml 属性节点位于类节点下。
 
-|属性|说明|
+|属性|描述|
 |-|-|
-|域属性|Xml 序列化配置数据应用到的属性。 只读。|
-|是名字对象键|如果为 True，则将属性用作创建引用此域类的实例的名字对象的键。|
-|是名字对象限定符|如果为 True，则该属性用于在名字对象中创建限定符。 如果为 false，并且对于此域类，如果 SerializeId 不为 true，则名字对象由嵌入树中父元素的名字对象限定。|
-|表示形式|如果特性，则将属性序列化为 xml 特性;如果为元素，则序列化为元素;如果为 Ignore，则不序列化。|
-|Xml 名称|用于表示属性的 xml 特性或元素的名称。 默认情况下，这是域属性名称的小写形式。|
+|域属性|xml 序列化配置数据应用于的属性。 只读。|
+|名字对象键|如果为 True，则属性用作创建引用此域类的实例的名字对象的键。|
+|是名字对象限定符|如果为 True，则属性用于在名字对象中创建限定符。 如果为 false，并且此域类的 SerializeId 不为 true，则名字对象由嵌入树中父元素的名字对象限定。|
+|表示形式|如果为 Attribute，则属性序列化为 xml 属性;如果为 Element，则序列化为元素;如果忽略，则不序列化。|
+|Xml 名称|用于表示属性的 xml 属性或元素的名称。 默认情况下，这是域属性名称的一个小写版本。|
 |说明|与此元素关联的非正式说明|
 
 ### <a name="xml-role-data"></a>Xml 角色数据
 
-角色数据节点可在源类节点下找到。
+角色数据节点位于源类节点下。
 
-|属性|说明|
+|属性|描述|
 |-|-|
-|具有自定义名字对象|如果要提供自己的代码来生成和解析遍历此关系的名字对象，请将此值设置为 true。<br /><br /> 有关详细说明，请生成解决方案，然后双击错误消息。|
-|域关系|指定应用这些选项的关系。 只读。|
-|省略元素|如果为 true，则从架构中省略对应于源角色的 XML 节点。<br /><br /> 如果源类和目标类之间存在多个关系，此角色节点将区分属于这两个关系的链接。 因此，建议您不要在这种情况下设置此选项。|
-|角色元素名称|指定从源角色派生的 XML 元素的名称。 默认值为角色属性名称。|
-|使用完整形式|如果为 true，则每个目标元素或名字对象都包含在表示关系的 XML 节点中。 如果关系具有其自己的域属性，则应将其设置为 true。|
+|具有自定义名字对象|如果要提供自己的代码来生成和解析遍历此关系的名字对象，请设置为 true。<br /><br /> 有关详细说明，请生成解决方案，然后双击错误消息。|
+|域关系|指定这些选项应用于的关系。 只读。|
+|Omit 元素|如果为 true，则架构中将省略与源角色对应的 XML 节点。<br /><br /> 如果源类和目标类之间存在多个关系，此角色节点将区分属于这两种关系的链接。 因此，建议在这种情况下不要设置此选项。|
+|Role 元素名称|指定派生自源角色的 XML 元素的名称。 默认值为角色属性名称。|
+|使用完整窗体|如果为 true，则每个目标元素或名字对象都包含在表示关系的 XML 节点中。 如果关系具有其自己的域属性，应设置为 true。|
 
 ## <a name="see-also"></a>另请参阅
 

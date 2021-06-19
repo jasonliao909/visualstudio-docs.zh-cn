@@ -1,22 +1,22 @@
 ---
 title: 域路径语法
-description: 了解域路径语法，以及 DSL 定义如何使用类似 XPath 的语法在模型中查找特定元素。
+description: 了解域路径语法以及 DSL 定义如何使用类似 XPath 的语法来查找模型中的特定元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, domain path
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c11776576d00306e4b0f3de5e7ff830037c1fefd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69dfd02dca5ead65d4f36303e547aaeba04cde98
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935152"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389093"
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
@@ -29,9 +29,9 @@ DSL 定义使用类似 XPath 的语法在模型中查找特定元素。
 
  ![CommentReferencesSubjects 引用关系](../modeling/media/dsl_reference.png)
 
- 该语法将遍历模型树。 例如，上图中的域关系 **CommentReferencesSubjects** 具有 **主题** 角色。 路径段 **/！Subjectt** 指定路径在通过 "使用者" 角色访问 **的元素** 上完成。
+ 该语法将遍历模型树。 例如，上图中的域关系 **CommentReferencesSubjects** 具有"主题 **"** 角色。 路径段 **/！Subjectt** 指定路径在通过"主题"角色访问 **的元素上** 完成。
 
- 每段都以域关系的名称开头。 如果遍历从元素到关系，则路径段将显示为 " *关系名称*"。 如果跃点来自某个元素的链接，则路径段将显示为 *Relationship/！* 具有
+ 每段都以域关系的名称开头。 如果遍历从元素到关系，则路径段显示为 *Relationship.PropertyName*。 如果跃点来自元素的链接，则路径段显示为 *Relationship/！RoleName*。
 
  使用斜杠分隔路径的语法。 每个路径段是都从元素到链接（关系的实例）或从链接到元素的跳跃。 路径段经常成对显示。 一个路径段表示从元素到链接的跳跃，而下一个段则表示从链接到另一端的元素的跳跃。 （任何链接还可以是关系本身的源或目标）。
 

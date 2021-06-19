@@ -4,17 +4,17 @@ description: 了解如何自定义文本和图像文件。 还应了解到，在
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 42819379aa2b21788686bf0917b1523bf77e6c64
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f52c4deda5b934a9b55c5ecfeec95ca633edf15e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935360"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389262"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 在形状中定义文本修饰器时，它由一个文本字段表示。 有关 TextFields 和其他在 mapcontrol.shapefields 的初始化示例，请在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。
@@ -170,7 +170,7 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
 ```
 
 ## <a name="style-sets"></a>样式集
- 前面的示例演示如何将文本字段更改为任何可用的字体。 但是，更可取的方法是将其更改为与形状或应用程序关联的一组样式中的一个。 为此，请重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 或 GetTextBrushId ( # A1。
+ 前面的示例演示如何将文本字段更改为任何可用的字体。 但是，更可取的方法是将其更改为与形状或应用程序关联的一组样式中的一个。 为此，请重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField.GetFontId%2A> 或 GetTextBrushId () 。
 
  另外，请考虑通过重写来更改形状的样式集 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement.InitializeResources%2A> 。 这会影响为所有形状字段更改字体和画笔。
 

@@ -8,17 +8,17 @@ helpviewer_keywords:
 - text templates, syntax
 - text templates, guide
 - text templates, functions that generate text
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eb988854cb1bc049e024bf204553dd715e652a4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8034e0d1df6410c842f7d93a4ee3023957904744
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923990"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388082"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
 文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含 " \<html> ..."以及 HTML 页的所有其他标准部分。 插入到模板中的是 *控制块*，它们是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
@@ -157,7 +157,7 @@ private int Square(int i)
  有关控制块的详细信息，请参阅 [文本模板控制块](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>类功能块可以包含文本块
- 可以编写生成文本的方法。 例如： 。
+ 可以编写生成文本的方法。 例如：
 
 ```
 List of Squares:
@@ -187,7 +187,7 @@ private void WriteSquareLine(int i)
 <#@ assembly name="System.Xml" #>
 ```
 
- 应该使用绝对路径名，或在路径名中使用标准宏名。 例如： 。
+ 应该使用绝对路径名，或在路径名中使用标准宏名。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>

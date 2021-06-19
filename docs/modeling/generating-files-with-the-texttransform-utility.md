@@ -7,17 +7,17 @@ ms.topic: conceptual
 helpviewer_keywords:
 - text templates, TextTransform utility
 - TextTransform.exe
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 741e7625d301e250daa28a93f18a82193675e068
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 743b7deb118bb3506773ec1a82d2331633afa7bc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902703"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388823"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>用 TextTransform 实用工具生成文件
 
@@ -78,8 +78,8 @@ TextTransform [<options>] <templateName>
 |**-I**\<includedirectory>|包含指定文本模板中包含的文本模板的目录。|
 |**-P**\<referencepath>|搜索在文本模板中指定的程序集或使用 **-r** 选项的目录。<br /><br /> 例如，若要包括用于 Visual Studio API 的程序集，请使用<br /><br /> `-P "%VSSHELLFOLDER%\Common7\IDE\PublicAssemblies"`|
 |**-dp** \<processorName> ！ \<className> ！\<assemblyName&#124;codeBase>|指令处理器的名称、完整类型名称和程序集，可用于处理文本模板中的自定义指令。|
-|**-a** [processorName]！[directiveName \<parameterName> ]！！\<parameterValue>|指定指令处理器的参数值。 如果只指定参数名称和值，则参数将可用于所有指令处理器。 如果指定指令处理器，参数仅可用于指定的处理器。 如果指定指令名称，则只有在处理指定的指令时，此参数才可用。<br /><br /> 若要从指令处理器或文本模板访问参数值，请使用 [ITextTemplatingEngineHost. resolveparametervalue 不](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))。 在文本模板中， `hostspecific` 将包含在模板指令中，并在上调用消息 `this.Host` 。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 始终键入 "！" 标记，即使省略可选的处理器和指令名称也是如此。 例如： 。<br /><br /> `-a !!param!value`|
-|**-h**|提供帮助。|
+|**-a** [processorName]！[directiveName \<parameterName> ]！！\<parameterValue>|指定指令处理器的参数值。 如果只指定参数名称和值，则参数将可用于所有指令处理器。 如果指定指令处理器，参数仅可用于指定的处理器。 如果指定指令名称，则只有在处理指定的指令时，此参数才可用。<br /><br /> 若要从指令处理器或文本模板访问参数值，请使用 [ITextTemplatingEngineHost. resolveparametervalue 不](/previous-versions/visualstudio/visual-studio-2012/bb126369\(v\=vs.110\))。 在文本模板中， `hostspecific` 将包含在模板指令中，并在上调用消息 `this.Host` 。 例如：<br /><br /> `<#@template language="c#" hostspecific="true"#> [<#= this.Host.ResolveParameterValue("", "", "parameterName") #>]`.<br /><br /> 始终键入 "！" 标记，即使省略可选的处理器和指令名称也是如此。 例如：<br /><br /> `-a !!param!value`|
+|-h|提供帮助。|
 
 ## <a name="related-topics"></a>相关主题
 
