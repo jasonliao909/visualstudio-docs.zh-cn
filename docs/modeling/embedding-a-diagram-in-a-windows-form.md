@@ -1,36 +1,36 @@
 ---
 title: 在 Windows 窗体中嵌入图表
-description: 了解如何在显示在 Visual Studio 窗口中的 Windows 控件中嵌入 DSL 关系图。
+description: 了解如何在 Windows 控件中嵌入 DSL 关系图，该控件显示在Visual Studio窗口中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 084de14a9a73e8f9f884c31da1e1ef9a5d8496b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4db60267b835882a69a08c990af644b902697bad
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935113"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388979"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
 
-可以在显示在 Visual Studio 窗口中的 Windows 控件中嵌入 DSL 关系图。
+可以在 Windows 控件中嵌入 DSL 关系图，该关系图显示在Visual Studio窗口中。
 
 ## <a name="embed-a-dsl-diagram-in-a-windows-control"></a>在 Windows 控件中嵌入 DSL 关系图
 
-1. 向 DslPackage 项目添加一个新的 **用户控件** 文件。
+1. 将新的 **用户控件文件** 添加到 DslPackage 项目。
 
-2. 向用户控件添加 Panel 控件。 此面板将包含 DSL 关系图。
+2. 将 Panel 控件添加到用户控件。 此面板将包含 DSL 关系图。
 
-     添加所需的其他控件。
+     添加需要的其他控件。
 
      设置控件的定位点属性。
 
-3. 在解决方案资源管理器中，右键单击用户控件文件，然后单击 " **查看代码**"。 将此构造函数和变量添加到代码中：
+3. 在解决方案资源管理器中，右键单击用户控件文件，然后单击"**查看代码"。** 将此构造函数和变量添加到代码中：
 
     ```csharp
     internal UserControl1(MyDSLDocView docView, Control content)
@@ -42,7 +42,7 @@ ms.locfileid: "99935113"
     private MyDSLDocView docView;
     ```
 
-4. 向 DslPackage 项目添加一个新文件，其中包含以下内容：
+4. 将包含以下内容的新文件添加到 DslPackage 项目：
 
     ```csharp
     using System.Windows.Forms;
@@ -65,13 +65,13 @@ ms.locfileid: "99935113"
     } } } }
     ```
 
-5. 若要测试 DSL，请按 **F5** 并打开示例模型文件。 关系图显示在控件内。 工具箱和其他功能正常工作。
+5. 若要测试 DSL，请按 **F5** 并打开示例模型文件。 关系图显示在 控件内。 工具箱和其他功能正常运行。
 
 ## <a name="update-the-form-using-store-events"></a>使用存储事件更新窗体
 
-1. 在窗体设计器中，添加一个名为的 **ListBox** `listBox1` 。 这将显示模型中元素的列表。 它使用 *存储事件* 与模型同步。 有关详细信息，请参阅 [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+1. 在窗体设计器中，添加 **名为 的 ListBox。** `listBox1` 这将显示模型中元素的列表。 它使用存储事件 与 *模型同步*。 有关详细信息，请参阅事件 [处理程序在模型 外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
-2. 在自定义代码文件中，重写 DocView 类的其他方法：
+2. 在自定义代码文件中，重写 DocView 类的更多方法：
 
     ```csharp
     partial class MyDSLDocView
@@ -139,9 +139,9 @@ ms.locfileid: "99935113"
     }
     ```
 
-4. 若要测试 DSL，请按 **F5** ，然后在 Visual Studio 的实验实例中，打开示例模型文件。
+4. 若要测试 DSL，请按 **F5，** 在 Visual Studio实例中打开示例模型文件。
 
-     请注意，列表框显示模型中元素的列表，并且在任何添加或删除之后以及在撤消和重做之后都是正确的。
+     请注意，列表框显示模型中元素的列表，在添加或删除后以及撤消和重做后，该列表框是正确的。
 
 ## <a name="see-also"></a>另请参阅
 

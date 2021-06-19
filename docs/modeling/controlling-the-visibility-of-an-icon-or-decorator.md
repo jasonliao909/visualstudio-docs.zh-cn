@@ -4,17 +4,17 @@ description: 了解如何控制图标或修饰器的可见性，具体取决于�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23df6dc45d1d96997a18942e7878a84a5d9f60a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c60d66188364ddd18be1d60a92b51ee5d7a9fc8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942797"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389613"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 *修饰* 器是在特定于域的语言 (DSL) 的形状上显示的图标或文本行。 您可以根据模型中属性的状态，使修饰器出现和消失。 例如，在代表人员的形状上，可能会根据人员的性别、子女数等显示不同的图标。
@@ -88,9 +88,9 @@ ms.locfileid: "99942797"
 
      文本编辑器将在 Dsl\GeneratedCode\DomainClasses.cs. 上打开。 上面突出显示的错误是要求添加方法的注释。
 
-6. 请注意缺少的命名空间、类和方法。  例如，FamilyTree. GetDecoratorControlValue ( # A1。
+6. 请注意缺少的命名空间、类和方法。  例如，FamilyTree. GetDecoratorControlValue () 。
 
-7. 在单独的代码文件中，编写包含缺少的方法的分部类定义。 例如： 。
+7. 在单独的代码文件中，编写包含缺少的方法的分部类定义。 例如：
 
     ```
     namespace Company.FamilyTree

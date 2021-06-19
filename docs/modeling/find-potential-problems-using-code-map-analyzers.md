@@ -1,6 +1,6 @@
 ---
 title: 使用代码图分析器查找潜在问题
-description: 了解如何在代码图上运行分析器以帮助识别可能过于复杂或者可能需要改进的代码。
+description: 了解如何在代码图上运行分析器，以帮助识别可能过于复杂或可能需要改进的代码。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,17 +10,17 @@ helpviewer_keywords:
 - code analysis, dependency graphs
 - dependency graphs, analyzing code
 - graph documents, analyzing
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 77e5d8f6241f6f1978f24b9ebb5ad49aa9f24331
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8817e50ae96a27f6b3b76e28262390271c1fdf4c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934983"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388849"
 ---
 # <a name="find-potential-problems-using-code-map-analyzers"></a>使用代码图分析器查找潜在问题
 
@@ -34,15 +34,15 @@ ms.locfileid: "99934983"
 
 ## <a name="analyze-code-maps"></a>分析代码图
 
-在地图工具栏上，选择 "**布局**  >  **分析器**"，然后选择要运行的分析器：
+在地图工具栏上，选择"**布局** 分析器  >  **"，** 然后选择要运行的分析器：
 
 |**Analyzer**|**标识节点**|
 |-|-|
-|**循环引用分析器**|每个其他节点上也具有循环依赖项。 **注意：**  展开组时，不会在映射上显示 **泛型** 组中的循环依赖项。|
-|**查找中心分析器**|位于前 25% 个高度连接的节点当中<br /><br /> **若要隐藏代码图上的所有其他节点**<br /><br /> -打开地图的快捷菜单，选择 " **高级**"、" **选择**"、" **隐藏未选定** 项"。<br />     代码图会隐藏未选定的节点，并且分析器会将新节点标识为中心。|
-|**未引用的节点分析器**|不具有来自任何其他节点的引用。 **警告：**  在假定未使用代码之前，验证每种情况。 无法在代码中以静态方式找到某些依赖项，如 XAML 依赖项和运行时依赖项。|
+|**循环引用分析器**|每个其他节点上也具有循环依赖项。 **注意：**  展开组时 **，"泛型** "组中的循环依赖项不会在地图上显示。|
+|**查找中心分析器**|位于前 25% 个高度连接的节点当中<br /><br /> **若要隐藏代码图上的所有其他节点**<br /><br /> - 打开地图的快捷菜单，选择"高级"，**选择****，"隐藏未选择"。**<br />     代码图会隐藏未选定的节点，并且分析器会将新节点标识为中心。|
+|**未引用的节点分析器**|不具有来自任何其他节点的引用。 **注意：**  在假定未使用代码之前，请验证其中每个情况。 无法在代码中以静态方式找到某些依赖项，如 XAML 依赖项和运行时依赖项。|
 
-在你应用代码图分析器之后，它们将继续运行。 如果更改代码图，应用的任何分析器将自动重新处理更新的代码图。 若要停止运行分析器，请在地图工具栏上选择 "**布局**  >  **分析器**"。 关闭所选的分析器。
+在你应用代码图分析器之后，它们将继续运行。 如果更改代码图，应用的任何分析器将自动重新处理更新的代码图。 若要停止运行分析器，请选择地图工具栏上的"布局  >  **分析器"。** 关闭所选的分析器。
 
 > [!TIP]
 > 如果你的代码图非常大，运行分析器则可能导致内存不足异常。 如果发生这种情况，请编辑代码图以减小其范围，或者生成一个较小的代码图，然后运行分析器。

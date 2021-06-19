@@ -4,17 +4,17 @@ description: 了解，在 Visual Studio 中的域特定语言中，可以使形�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 57f3785fe232b20123475bd85be2be7148e5b87e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6439a01de2a02361914ce227c43d903f1b24b405
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924352"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388563"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 
@@ -110,7 +110,7 @@ partial class MyLanguageDiagram
 
 此方法可用于域属性和非存储功能，如形状的大小。
 
-## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> 使用 AssociateValueWith ( # A1 更新形状的其他功能
+## <a name="use-associatevaluewith-to-update-other-features-of-a-shape"></a><a name="OnAssociatedProperty"></a> 使用 AssociateValueWith () 更新形状的其他功能
 
 对于某个形状的某些功能，例如，如果它具有阴影，或连接符的箭头样式，则没有将该功能作为域属性公开的内置方法。  对此类功能所做的更改不受事务系统控制。 因此，不适合使用规则对其进行更新，因为当用户执行撤消命令时不会调用规则。
 

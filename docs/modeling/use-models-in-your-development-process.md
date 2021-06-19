@@ -1,42 +1,42 @@
 ---
 title: 在你的开发过程中使用模型
-description: 了解，在 Visual Studio 中，可以使用模型来帮助你了解和更改系统、应用程序或组件。
+description: 了解Visual Studio，可以使用模型来帮助你了解和更改系统、应用程序或组件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - UML, using models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b0d46e1e293d0713cf7e71706fa0188aaea269
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 095a6f17691d3265320a7b77905f70903bec1cb5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959059"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388498"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
-在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅第 [9 频道视频：通过建模改进体系结构](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
+在 Visual Studio 中，你可以使用模型帮助你理解和更改系统、应用程序或组件。 模型能帮助你可视化系统工作的环境、阐明用户需求、定义你系统的体系结构、分析代码并确保你的代码符合要求。 请参阅 [第 9 频道视频：通过建模改进体系结构](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012-Improving-architecture-through-modeling)。
 
-若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 模型可以通过几种方式帮助你：
 
-- 绘制建模图可帮助明确需求、体系结构和高级设计中所涉及的概念。 有关详细信息，请参阅 [模型用户需求](../modeling/model-user-requirements.md)。
+- 绘制建模图可帮助明确需求、体系结构和高级设计中所涉及的概念。 有关详细信息，请参阅模型 [用户要求](../modeling/model-user-requirements.md)。
 
 - 使用模型可帮助你揭示需求中的不一致性。
 
-- 使用模型通信可帮助你沟通重要概念时比使用自然语言更明确。 有关详细信息，请参阅为 [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md)。
+- 使用模型通信可帮助你沟通重要概念时比使用自然语言更明确。 有关详细信息，请参阅 [为应用的体系结构建模](../modeling/model-your-app-s-architecture.md)。
 
-- 有时可使用模型生成代码或其他项目（如数据库架构或文档）。 例如，Visual Studio 的建模组件是从模型生成的。 有关详细信息，请参阅 [从模型生成和配置应用](../modeling/generate-and-configure-your-app-from-models.md)。
+- 有时可使用模型生成代码或其他项目（如数据库架构或文档）。 例如，模型的建模组件Visual Studio模型生成。 有关详细信息，请参阅从 [模型 生成和配置应用](../modeling/generate-and-configure-your-app-from-models.md)。
 
 你可以在从极端敏捷到崇礼的各种流程中使用模型。
 
-## <a name="use-models-to-reduce-ambiguity"></a>使用模型来减少多义性
+## <a name="use-models-to-reduce-ambiguity"></a>使用模型减少多义性
 
 建模语言比自然语言更明确，它用来表达软件开发期间通常需要的想法。
 
@@ -44,15 +44,15 @@ ms.locfileid: "99959059"
 
 如果你的项目很大，并且团队遍布全球各个位置，与使用纯文本相比，你可以使用模型来帮助更有效地沟通需求和体系结构。
 
-在这两种情况下，创建模型几乎总是会导致不一致和多义性的显著降低。 不同的利益干系人经常会对系统工作的业务领域有不同的理解，并且不同的开发人员经常会对系统的工作方式有不同的理解。 通常使用模型作为讨论的焦点来揭示这些不同之处。 有关如何使用模型来减少不一致的详细信息，请参阅 [模型用户需求](../modeling/model-user-requirements.md)。
+在这两种情况下，创建模型几乎总是会导致不一致和多义性的显著降低。 不同的利益干系人经常会对系统工作的业务领域有不同的理解，并且不同的开发人员经常会对系统的工作方式有不同的理解。 通常使用模型作为讨论的焦点来揭示这些不同之处。 若要详细了解如何使用模型来减少不一致，请参阅 [模型用户要求](../modeling/model-user-requirements.md)。
 
-## <a name="use-models-with-other-artifacts"></a>将模型与其他项目一起使用
+## <a name="use-models-with-other-artifacts"></a>将模型与其他项目一同使用
 
-一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此，这些模型应与其他通信方式结合使用，例如 OneNote 页面或段落、Microsoft Office 文档、Team Foundation 中的工作项或项目房间留言板上的便笺。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
+一个模型本身并不是需求规范或体系结构。 它是一个工具，用于更清楚地表达的事物某些方面，但不是所有软件设计过程中所需的全部概念都可以表达出来。 因此，这些模型应与其他通信方式一起使用，例如 OneNote 页面或段落、Microsoft Office文档、Team Foundation 中的工作项或项目房间墙上的便笺。 除了最后一项，所有这些对象类型都可以链接到模型的元素部分。
 
 通常与模型一起使用的其他方面的规范包括以下内容。 具体取决于项目的大小和样式，你可以使用这些方面中的几个，也可以根本不适用它们：
 
-- 用户情景。 用户情景是与用户和其他利益干系人一起讨论的系统行为方面的简短描述，该行为将在项目的迭代之一中出现。 典型用户情景开始 "客户将能够 ..."用户情景可能会引入一组用例，也可以定义以前开发的用例的扩展。 定义或扩展用例有助于使用户情景更清晰。
+- 用户情景。 用户情景是与用户和其他利益干系人一起讨论的系统行为方面的简短描述，该行为将在项目的迭代之一中出现。 典型的用户情景从"客户将能够..."开始。用户情景可能会引入一组用例，也可以定义以前开发的用例的扩展。 定义或扩展用例有助于使用户情景更清晰。
 
 - 更改请求。 更正式项目中的更改请求非常类似于敏捷项目中的用户情景。 敏捷方法会将所有需求视为对之前迭代中所开发内容进行的更改。
 
@@ -72,13 +72,13 @@ ms.locfileid: "99959059"
 
 - 项目计划。 项目计划或积压工作定义何时发送每个功能。 你可以通过声明它实现或扩展了什么用例和业务规则来定义每个功能。 你可以直接在计划中引用用例和业务规则，也可以在一个单独的文档中定义一组功能并在计划中使用该功能标题。
 
-## <a name="use-models-in-iteration-planning"></a>在迭代计划中使用模型
+## <a name="use-models-in-iteration-planning"></a>在迭代规划中使用模型
 
 虽然所有项目的大小和组织不同，典型的项目计划为二到六周之间的一系列迭代。 重要的是计划足够的迭代以允许来自早期迭代的反馈能用于调整后续迭代的范围和计划。
 
 你可能会发现以下建议可以帮助实现在迭代项目中建模的好处。
 
-### <a name="sharpen-focus-as-each-iteration-approaches"></a>在每个迭代方法中锐化焦点
+### <a name="sharpen-focus-as-each-iteration-approaches"></a>每次迭代接近时聚焦
 
 随着每次迭代的临近，使用模型来帮助定义要在迭代末尾传递的内容。
 
@@ -88,7 +88,7 @@ ms.locfileid: "99959059"
 
 - 每次迭代接近结束时，举办一次需求研讨会，以详细定义将在下个迭代中开发的需求或用户情景。 邀请能够确定优先级的用户和业务利益干系人，以及开发人员和系统测试员。 允许用三个小时为一个 2 周的迭代定义需求。
 
-- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 讨论会的输出是一个迭代积压工作（backlog），即中 Team Foundation 和测试套件中的开发任务列表 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] 。
+- 该研讨会的目标是使每个人就下个迭代结束时将完成的内容达成一致。 将模型用作一种工具来帮助阐明需求。 研讨会的输出是迭代积压工作 （即 Team Foundation 中的开发任务列表和 中的测试套件 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] ）。
 
 - 在需求研讨会中，仅在你需要为开发任务确定估计值的范围内讨论设计。 否则，请保持讨论用户可以直接体验的系统行为。 保持需求模型与体系结构模型分开。
 
@@ -96,11 +96,11 @@ ms.locfileid: "99959059"
 
 ### <a name="link-model-to-work-items"></a>将模型链接到工作项
 
-需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 可以通过将 Team Foundation 中的工作项链接到模型中的元素来实现此目的。
+需求研讨会结束后，请详细说明需求模型的的详细信息，并将模型链接到开发任务。 为此，可以将 Team Foundation 中的工作项链接到模型中的元素。
 
 你可以将任意元素链接到工作项，但最有用的元素如下所示：
 
-- 描述业务规则或服务质量要求的注释。 有关详细信息，请参阅 [模型用户需求](../modeling/model-user-requirements.md)。
+- 描述业务规则或服务质量要求的注释。 有关详细信息，请参阅模型 [用户要求](../modeling/model-user-requirements.md)。
 
 ### <a name="link-model-to-tests"></a>将模型链接到测试
 
@@ -136,7 +136,7 @@ ms.locfileid: "99959059"
 |**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [MSDN 如何实现视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 旗舰版) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![视频 ](../data-tools/media/playvideo.gif) [通道9： UML 与 Visual Studio 2010 的](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project)链接<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [MSDN 如何实现系列： UML 工具和扩展性 (Visual Studio 2010 旗舰版) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
-|**技术文章和日志**|[MSDN 体系结构中心](/previous-versions/dn630665(v=msdn.10))<br /><br /> [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)|
+|**技术文章和日志**|[MSDN 体系结构中心](/previous-versions/dn630665(v=msdn.10))|
 
 ## <a name="see-also"></a>另请参阅
 

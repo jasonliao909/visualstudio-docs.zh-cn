@@ -6,17 +6,17 @@ ms.date: 03/22/2018
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, overriding event handlers
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a5a372d2e558b44753e9d0bc66d7c4c24b825533
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1c6cdb027bafdf4d1fe7689d7dd30d697b539370
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935087"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388992"
 ---
 # <a name="domain-property-value-change-handlers"></a>域属性值更改处理程序
 
@@ -146,7 +146,7 @@ public partial class MyDomainModel
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
 
 以下示例将重写域属性的属性处理程序，并在 `ExampleElement` 域类的属性已发生更改时通知用户。
 

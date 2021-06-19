@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - text templates, transformation process
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4bf2d8e7d8fc45a45dcb271d867f8f6a39564bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8dc827039253c21effffcc82d70b4f66ff284738
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882942"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388589"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程会将文本模板文件作为输入，并生成一个新的文本文件作为输出。 例如，您可以使用文本模板来生成 Visual Basic 或 c # 代码，也可以生成 HTML 报表。
@@ -27,7 +27,7 @@ ms.locfileid: "99882942"
 
 ## <a name="components"></a>组件
 
-|组件|说明|可自定义 (是/否) |
+|组件|描述|可自定义 (是/否) |
 |-|-|-|
 |引擎|引擎组件控制文本模板转换过程|否。|
 |主机|宿主是引擎和用户环境之间的接口。 Visual Studio 是文本转换过程的宿主。|是的。 可以编写自定义主机。|

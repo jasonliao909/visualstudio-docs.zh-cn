@@ -4,17 +4,17 @@ description: 了解 Domain-Specific 语言工具如何提供一种功能强大�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f74a08f5bc4e2a5baded0ac4830b60406289661
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6eee4fe2400bac1534bdc9c208fa60d9af8d3cfd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902726"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388836"
 ---
 # <a name="generating-code-from-a-domain-specific-language"></a>从域特定语言生成代码
 
@@ -50,7 +50,7 @@ Microsoft [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供了一种强大�
 [DslTextTransform 命令](../modeling/the-dsltexttransform-command.md)\
 描述在用于引用域特定语言的文本模板的命令行上执行 TextTransform 可执行文件的命令文件。
 
-## <a name="reference"></a>引用
+## <a name="reference"></a>参考
 
 [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)\
 提供文本模板指令和控制块的语法。

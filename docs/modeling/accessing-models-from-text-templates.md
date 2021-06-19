@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - text templates, accessing models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 13cae79908e3a760c37ac590ca61f43001d384d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05e21dacfe56f41f1d2c0da51659ab55203db1a0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908935"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389158"
 ---
 # <a name="access-models-from-text-templates"></a>从文本模板访问模型
 
@@ -102,7 +102,7 @@ Here is a list of elements in the model:
 > [!NOTE]
 > 此方法使您可以读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取由 ModelBus 引用了的模型，请参阅 [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 如果要从同一文本模板访问多个模型，则必须为每个模型调用一次生成的指令处理器。 必须在参数中指定每个模型的文件名 `requires` 。 必须在参数中指定要用于根域类的名称 `provides` 。 必须为 `provides` 每个指令调用中的参数指定不同的值。 例如，假定您有三个名为 Library、School 和 .xyz 的模型文件。 若要从同一文本模板访问它们，必须编写三个类似于下面的指令调用。
+ 如果要从同一文本模板访问多个模型，则必须为每个模型调用一次生成的指令处理器。 必须在参数中指定每个模型的文件名 `requires` 。 必须在参数中指定要用于根域类的名称 `provides` 。 必须为 `provides` 每个指令调用中的参数指定不同的值。 例如，假设有三个名为 Library.xyz、School.xyz 和 Work.xyz 的模型文件。 若要从同一文本模板访问它们，必须编写三个类似于下面的指令调用。
 
 ```
 <#@ ExampleModel processor="<YourLanguageName>DirectiveProcessor" requires="fileName='Library.xyz'" provides="ExampleModel=LibraryModel" #>

@@ -8,17 +8,17 @@ f1_keywords:
 - vs.dsltools.EditAttributesDialog
 helpviewer_keywords:
 - Domain-Specific Language, custom attrributes
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8e566eafce9b5763830c00659a860e6329671bcd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b11a6bd4a04bdb469cdf5c2fe2d7b78e0c0fe29a
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922657"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387328"
 ---
 # <a name="how-to-set-clr-attributes-on-an-element"></a>如何：在元素上设置 CLR 特性
 自定义属性是可以添加到域元素、形状、连接符和关系图中的特殊属性。 可以添加从类继承的任何属性 `System.Attribute` 。
@@ -37,7 +37,7 @@ ms.locfileid: "99922657"
 
 5. 在 " **名称属性** " 列中，键入适当的名称，例如 `MyString` 。
 
-6. 单击“确定”。
+6. 单击 **“确定”** 。
 
      " **自定义属性** " 属性现在按以下格式显示属性：
 

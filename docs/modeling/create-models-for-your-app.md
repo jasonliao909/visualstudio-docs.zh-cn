@@ -18,23 +18,23 @@ helpviewer_keywords:
 - diagrams - modeling, layer
 - software, designing
 - software, modeling
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9adf4445ca4b52e23fce91bb1f574e55fbab4f1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a4642c73279340c710ed82d57563bdc3b84aff4f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945378"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389509"
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
 
 建模图有助于理解、阐明和传达代码的构思和软件系统必须支持的用户需求。
 
-若要查看支持每种类型的关系图的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持每种类型的关系图的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 若要可视化系统的体系结构或现有代码，请创建以下关系图：
 
