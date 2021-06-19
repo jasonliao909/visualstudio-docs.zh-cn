@@ -18,22 +18,24 @@ ms.author: joshuapa
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a39be2e465ebe8b04501f319e89d6f8bc926b4c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b422c6c7857ca1baaa5bd1d8a7d6955e8b6751b3
+ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924472"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112375794"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 
-代码图有助于防止你在大型基本代码、不熟悉的代码或旧代码中迷失方向。 例如，当您进行调试时，可能需要跨多个文件和项目查看代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。
+[Visual Studio 中的代码图](../modeling/map-dependencies-across-your-solutions.md) 可以帮助你避免在大型代码库、不熟悉的代码或旧代码中丢失。 例如，当您进行调试时，可能需要跨多个文件和项目查看代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。
 
 ![代码图 &#45; 在代码中映射关系](../modeling/media/codemapstoryboardpaint.png)
 
 **绿色箭头显示你的光标在编辑器中的显示位置**
 
 有关使用代码图时可以使用的命令和操作的详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
+
+[在 Visual Studio 中](../debugger/debugger-feature-tour.md)了解有关调试的详细信息，请参阅调试器工具。
 
 > [!NOTE]
 > 若要创建和编辑代码图，需要 Visual Studio Enterprise 版本。 在 Visual Studio 社区版和专业版中，你可以打开在 Enterprise edition 中生成的关系图，但不能对其进行编辑。

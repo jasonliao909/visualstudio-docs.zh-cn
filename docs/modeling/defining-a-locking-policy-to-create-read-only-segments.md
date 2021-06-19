@@ -4,17 +4,17 @@ description: 了解如何为程序定义策略，以将特定于域的语言 (DS
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: aa7590689b4d7acdb7a7ebe501584ed6a8bd41bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bb8e05ffc030716f32ab7e79233ca9e02ef2e11
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935412"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385781"
 ---
 # <a name="defining-a-locking-policy-to-create-read-only-segments"></a>定义锁定策略以创建只读段
 Visual Studio 可视化和建模 SDK 的永久性 API 允许程序锁定部分或全部域特定语言 (DSL) 模型，以便可以读取但不能更改它。 例如，可以使用此只读选项，以便用户可以要求同事批注和查看 DSL 模型，但可以禁止它们更改原始模型。
@@ -89,7 +89,7 @@ partition.SetLocks(Locks.Delete);
 |全部|其他值的按位 "或"。|
 
 ## <a name="locking-policies"></a>锁定策略
- 作为 DSL 的作者，你可以定义 *锁定策略*。 锁定策略 moderates 操作 SetLocks ( # A1，因此你可以防止设置特定锁或强制必须设置特定锁。 通常，你会使用锁定策略来防止用户或开发人员意外 contravening 地使用 DSL，这与声明变量的方式相同 `private` 。
+ 作为 DSL 的作者，你可以定义 *锁定策略*。 锁定策略 moderates 了 SetLocks () 的操作，因此你可以防止设置特定锁或强制必须设置特定锁。 通常，你会使用锁定策略来防止用户或开发人员意外 contravening 地使用 DSL，这与声明变量的方式相同 `private` 。
 
  你还可以使用锁定策略在依赖于该元素类型的所有元素上设置锁。 这是因为 `SetLocks(Locks.None)` ，在第一次从文件中创建或反序列化某个元素时，始终会调用。
 
@@ -115,7 +115,7 @@ public interface ILockingPolicy
 
  当对 `SetLocks()` 存储区、分区或 ModelElement 调用时，将调用这些方法。 每种方法都提供一组建议的锁。 可以返回建议的集，也可以添加和减去锁。
 
- 例如： 。
+ 例如：
 
 ```csharp
 using Microsoft.VisualStudio.Modeling;

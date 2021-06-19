@@ -7,17 +7,17 @@ ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools]
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 063c0a5cfcf5136e53750e4405e8619bf3154ee2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b578c949b3b5121eb90b2c034766ea15ae6d096
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963297"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386561"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -141,7 +141,7 @@ ms.locfileid: "99963297"
 
 2. 查找 `ProvideMenuResource` 特性。
 
-3. 递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如： 。
+3. 递增特性的 `version` 参数，它是第二个参数。 如果需要，你可以显式编写参数名称以提醒你它的用途。 例如：
 
      `[VSShell::ProvideMenuResource("1000.ctmenu", version: 2 )]`
 
@@ -161,7 +161,7 @@ DSL 已具有一些在 DslPackage\GeneratedCode\CommandSet.cs 中声明的分部
 
 2. 在 **DslPackage** 中，创建一个名为 " **自定义代码**" 的文件夹。 在此文件夹中，创建一个名为的新类文件 `CommandSet.cs` 。
 
-3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如： 。
+3. 在该新文件中，编写具有与生成的分部类相同的命名空间和名称的分部声明。 例如：
 
      `namespace Company.Language1 /* Make sure this is correct */`
 
@@ -294,12 +294,12 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- 使用与 **.vsct** 中插入的 GUID 相同的值。
+ 使用与在 **Commands.vsct** 中插入的 GUID 值相同的 GUID 值。
 
 > [!NOTE]
 > 如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号
 
- 将菜单命令注册为此命令集的一部分。 `GetMenuCommands()` 初始化关系图后，调用一次：
+ 将菜单命令注册为此命令集的一部分。 `GetMenuCommands()` 在初始化关系图时调用一次：
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -323,9 +323,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>演练命令
 
-1. 在 **解决方案资源管理器** 工具栏上，单击 " **转换所有模板**"。
+1. 在工具栏 **解决方案资源管理器，** 单击 **"转换所有模板"。**
 
-2. 按 **F5** 重新生成解决方案，并在实验生成中开始调试域特定语言。
+2. 按 **F5** 重新生成解决方案，并开始在实验性生成中调试特定于域的语言。
 
 3. 在实验性生成中，打开示例关系图。
 
@@ -339,11 +339,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 确保实验性示例具有此 DSL 的正确文件扩展名。 若要检查该文件扩展名，请在 Visual Studio 的主实例中打开 DslDefinition.dsl。 随后，在 DSL 资源管理器中，右键单击“编辑器”节点，然后单击“属性”。 在“属性”窗口中，检查 FileExtension 属性。
 
-- 是否 [递增了包版本号](#version)？
+- 你是否 [递增了包版本号](#version)？
 
 - 在 OnStatus 方法的开头设置断点。 在右键单击关系图的任意部分时，应发生中断。
 
-**不调用 OnStatus 方法**：
+**未调用 OnStatus 方法**：
 
 - 确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
 
@@ -361,9 +361,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="see-also"></a>另请参阅
 
-- [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)
+- [部署特定于域的语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)
 - [示例代码：线路图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

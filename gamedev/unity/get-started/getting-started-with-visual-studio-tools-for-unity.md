@@ -1,7 +1,7 @@
 ---
 title: Visual Studio Tools for Unity 入门 | Microsoft Docs
 description: 了解如何安装和设置用于 Unity Visual Studio的客户端。
-ms.custom: ''
+ms.custom: acquisition
 ms.date: 01/27/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 791f25b61c86f0115c225d505bdb1edb07869961
-ms.sourcegitcommit: 69256dc47489853dc66a037f5b0c1275977540c0
+ms.openlocfilehash: 8eea998731c4d29e533d1e6bf21d4a2870a81ff5
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/12/2021
-ms.locfileid: "109782603"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386691"
 ---
 # <a name="get-started-with-visual-studio-and-unity"></a>Visual Studio Unity 入门
 
@@ -58,44 +58,44 @@ Unity 工具包含在安装 Visual Studio for Mac不需要单独的安装步骤�
 
 :::zone pivot="windows"
 
-1. 单击 " **帮助" > "检查更新** " 菜单。
+1. 单击" **帮助>检查更新"** 菜单。
 
-    ![Visual Studio 2019 中的 "检查更新" 菜单](../media/vs/check-for-updates.png)
+    ![2019 年 1 月中的"检查Visual Studio"菜单](../media/vs/check-for-updates.png)
 
-2. 如果有可用的更新，则 Visual Studio 安装程序将显示新版本。 单击“更新”按钮。
+2. 如果有可用的更新，则Visual Studio 安装程序将显示新版本。 单击“更新”按钮。
 
 :::zone-end
 :::zone pivot="macos"
 
-1. 单击 " **Visual Studio for Mac > 检查更新 ...** " 菜单以打开 " **Visual Studio 更新** " 对话框。
-2. 如果有可用的更新，请单击 " **安装** " 按钮。
+1. 单击 **"Visual Studio for Mac >检查更新..."** 菜单，打开"Visual Studio **更新"** 对话框。
+2. 如果有可用的更新，请单击"安装 **"** 按钮。
 
 :::zone-end
 
-## <a name="configure-unity-to-use-visual-studio"></a>将 Unity 配置为使用 Visual Studio
+## <a name="configure-unity-to-use-visual-studio"></a>配置 Unity 以使用Visual Studio
 
-默认情况下，Unity 应已配置为使用 Visual Studio 或 Visual Studio for Mac 作为脚本编辑器。 可以通过 Unity 编辑器确认这一点，或将外部脚本编辑器更改为 Visual Studio 的特定版本。
+默认情况下，Unity 应已配置为使用Visual Studio或Visual Studio for Mac脚本编辑器。 可以从 Unity 编辑器确认此操作，或将外部脚本编辑器Visual Studio特定版本的脚本。
 
 :::zone pivot="windows"
 
-1. 在 Unity 编辑器中，选择 " **编辑 > 首选项** " 菜单。
-2. 选择左侧的 " **外部工具** " 选项卡。
-3. " **外部脚本编辑器** " 下拉列表提供了一种选择不同的 Visual Studio 安装的方法。 还可以从下拉列表中单击 " **浏览 ...** " 以添加未列出的版本。
+1. 在 Unity 编辑器中，选择"编辑> **首选项"** 菜单。
+2. 选择左侧 **的** "外部工具"选项卡。
+3. " **外部脚本编辑器** "下拉列表提供了一种选择不同安装Visual Studio。 还可以从下拉列表 **中** 单击"浏览..."，添加未列出的版本。
 
-    ![Windows 上 Unity 编辑器中的 "外部工具" 首选项菜单](../media/vs/preferences-external-tools.png)
+    ![Windows 上的 Unity 编辑器中的"外部工具"首选项菜单](../media/vs/preferences-external-tools.png)
 
-4. 如果已选择 **Browse...** ，请导航到 Visual Studio 安装目录中的 **Common7/IDE** 目录，然后选择 **devenv.exe**。 然后单击 " **打开**"。
+4. 如果已选择 **Browse...** ，请导航到 Visual Studio 安装目录中的 **Common7/IDE** 目录，然后选择 **devenv.exe**。 然后单击"打开 **"。**
 5. 在 **External Script Editor** 列表中选择 Visual Studio 后，确认已选中 **Editor Attaching** 复选框。
 6. 关闭 **Preferences** 对话框以完成配置过程。
 
 :::zone-end
 :::zone pivot="macos"
 
-1. 在 Unity 编辑器中，选择 " **unity > 首选项** " 菜单。
-2. 选择左侧的 " **外部工具** " 选项卡。
-3. " **外部脚本编辑器** " 下拉列表提供了一种选择不同的 Visual Studio 安装的方法。 还可以从下拉列表中单击 " **浏览 ...** " 以添加未列出的版本。
+1. 在 Unity 编辑器中，选择 **"Unity >首选项"** 菜单。
+2. 选择左侧 **的** "外部工具"选项卡。
+3. " **外部脚本编辑器** "下拉列表提供了一种选择不同安装Visual Studio。 还可以从下拉列表 **中** 单击"浏览..."，添加未列出的版本。
 
-    ![MacOS 上 Unity 编辑器中的 "外部工具" 首选项菜单](../media/vsm/preferences-external-tools.png)
+    ![macOS 上的 Unity 编辑器中的"外部工具"首选项菜单](../media/vsm/preferences-external-tools.png)
 
 4. 关闭 **Preferences** 对话框以完成配置过程。
 
@@ -103,4 +103,4 @@ Unity 工具包含在安装 Visual Studio for Mac不需要单独的安装步骤�
 
 ## <a name="next-steps"></a>后续步骤
 
- 若要了解如何在 Visual Studio 中使用和调试 Unity 项目，请参阅 [使用 Visual Studio Tools for Unity](using-visual-studio-tools-for-unity.md)。
+ 若要了解如何在 Visual Studio 中处理和调试 Unity 项目，请访问使用[Visual Studio Tools for Unity。](using-visual-studio-tools-for-unity.md)

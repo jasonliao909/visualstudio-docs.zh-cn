@@ -1,6 +1,6 @@
 ---
 title: 如何：创建域特定语言解决方案
-description: 了解如何使用专用 Visual Studio 解决方案创建 (DSL) 域特定语言。
+description: 了解如何使用专用化解决方案 (DSL) 域Visual Studio语言。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,37 +10,37 @@ helpviewer_keywords:
 - Domain-Specific Language Tools, walkthroughs
 - walkthroughs [Domain-Specific Language Tools], creating domain-specific language
 - Domain-Specific Language Tools, creating solutions
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d04366c908494386edc9921129db27df0ead4f7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce03349a5179e8dd78220fffd1ff6b21d1a3b495
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941406"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387315"
 ---
 # <a name="how-to-create-a-domain-specific-language-solution"></a>如何：创建域特定语言解决方案
-使用专用 Visual Studio 解决方案创建 (DSL) 域特定语言。
+DSL (域) 是使用专用化 Visual Studio 解决方案创建的。
 
 ## <a name="prerequisites"></a>先决条件
 
 在开始此过程之前，请安装以下组件：
 
 - Visual Studio
-- Visual Studio SDK (安装为 **Visual studio 扩展开发** 工作负荷的一部分) 
-- 建模 SDK (安装为 Visual Studio 组件) 
+- Visual Studio扩展 (工作负荷中安装的 Visual Studio **SDK**) 
+- 建模 SDK (安装为Visual Studio组件) 
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
 
 ## <a name="creating-a-domain-specific-language-solution"></a>创建 Domain-Specific 语言解决方案
 
-1. 通过创建新的 **特定于域的语言设计器** 项目来启动 DSL 向导。
+1. 通过创建新的 DSL 项目来启动 **DSL 特定于域的语言设计器** 向导。
 
    > [!NOTE]
-   > 您为项目选择的名称最好是有效的 Visual c # 标识符，因为它可能用于生成代码。
+   > 最好为项目选择的名称应该是有效的 Visual C# 标识符，因为它可用于生成代码。
 
    ::: moniker range="vs-2017"
 
@@ -50,58 +50,58 @@ ms.locfileid: "99941406"
 
 2. 选择 DSL 模板。
 
-    在 " **选择 Domain-Specific 语言选项** " 页面上，选择一个解决方案模板（例如 **最小语言**）。 选择类似于要创建的 DSL 的模板。
+    在"**选择Domain-Specific选项**"页上，选择一个解决方案模板，例如"最小 **语言"。** 选择与要创建的 DSL 类似的模板。
 
-    有关解决方案模板的详细信息，请参阅 [选择 Domain-Specific 语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+    有关解决方案模板详细信息，请参阅 [选择Domain-Specific语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
-3. 在 " **文件扩展名** " 页上输入文件扩展名。 它在您的计算机以及您想要安装 DSL 的任何计算机中都应该是唯一的。 应会看到消息 " **无应用程序或 Visual Studio 编辑器使用此扩展名**"。
+3. 在"文件扩展名"页上 **输入文件扩展** 名。 它在计算机中以及要安装 DSL 的任何计算机中应是唯一的。 应会看到消息"没有 **应用程序或Visual Studio编辑器使用此扩展。**
 
-   - 如果在以前的实验性 Dsl 中使用了尚未完全安装的文件扩展名，则可以通过使用 " **重置实验实例** " 工具将其清除，可在 VISUAL Studio SDK 菜单中找到该工具。
+   - 如果在尚未完全安装的实验性 DSL 中使用过文件扩展名，可以使用"重置实验实例"工具将其清除，该工具可在Visual Studio SDK 菜单中找到。
 
-   - 如果你的计算机上已完全安装了使用此文件扩展名的其他 Visual Studio 扩展，请考虑将其卸载。 在 " **工具** " 菜单上，单击 " **扩展管理器**"。
+   - 如果Visual Studio扩展名的另一个扩展名已完全安装在计算机上，请考虑卸载它。 在"**工具"菜单** 上，单击"**扩展管理器"。**
 
-4. 检查并根据需要调整向导剩余页面中的字段。 如果对设置感到满意，请单击 " **完成**"。 有关设置的详细信息，请参阅 [DSL 设计器向导页面](#settings)。
+4. 检查向导其余页中的字段，并在必要时进行调整。 如果对设置满意，请单击"完成 **"。** 有关设置详细信息，请参阅向导DSL 设计器 [页](#settings)。
 
-    向导将创建一个包含两个项目的解决方案，分别名为 **Dsl** 和 **DslPackage**。
+    向导创建一个解决方案，该解决方案有两个项目，它们名为 **Dsl** 和 **DslPackage**。
 
    > [!NOTE]
-   > 如果你看到一条消息，提示你不从不受信任的源运行文本模板，请单击 **"确定"**。 您可以将此消息设置为不会再次显示。
+   > 如果看到一条消息，提醒你不要从不受信任的源运行文本模板，请单击"确定 **"。** 可以将此消息设置为不再次显示。
 
-## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> DSL 设计器向导页
- 您可以保留多个字段的默认值不变。 但是，请确保设置了 "文件扩展名" 字段。
+## <a name="the-dsl-designer-wizard-pages"></a><a name="settings"></a> "DSL 设计器向导"页
+ 可以将多个字段保留其默认值不变。 但是，请确保设置"文件扩展名"字段。
 
-### <a name="solution-settings-page"></a>"解决方案设置" 页
- **你要将哪个模板基于域特定语言？**
-选择类似于要创建的 DSL 的模板。 不同的模板提供便利的起点。 选择解决方案模板时，向导会显示说明。 有关解决方案模板的详细信息，请参阅 [选择 Domain-Specific 语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
+### <a name="solution-settings-page"></a>"解决方案设置"页
+ **希望将域特定语言基于哪个模板？**
+选择与要创建的 DSL 类似的模板。 不同的模板提供了方便的起始点。 选择解决方案模板时，向导将显示说明。 有关解决方案模板详细信息，请参阅 [选择Domain-Specific语言解决方案模板](../modeling/choosing-a-domain-specific-language-solution-template.md)。
 
- **要如何命名域特定语言？**
-默认为解决方案名称。 此值生成代码。 它必须是有效的 c # 类名称。
+ **想要为域特定语言命名什么？**
+默认为解决方案名称。 从此值生成代码。 它必须作为 C# 类名有效。
 
-### <a name="file-extension-page"></a>文件扩展名页
- **使用哪种扩展来建模文件？**
+### <a name="file-extension-page"></a>"文件扩展名"页
+ **模型文件应该使用什么扩展名？**
 键入新的文件扩展名。
 
- 验证此文件扩展名是否尚未注册以便在此计算机中使用，如下所示：
+ 验证此文件扩展名是否尚未注册以用于此计算机，如下所示：
 
- 查看 **已注册的其他工具和应用程序以处理此扩展**。 如果你看到消息 " **无应用程序或 Visual Studio 编辑器使用此扩展**"，则可以使用此文件扩展名。
+ 在" **已注册以处理此扩展的其他工具和应用程序"下查看**。 如果看到消息"没有应用程序或 **Visual Studio编辑器使用此扩展名**，可以使用此文件扩展名。
 
  如果看到工具或包的列表，应执行以下操作之一：
 
-- 键入不同的文件扩展名。
+- 键入其他文件扩展名。
 
      \- 或 -
 
-- 重置 Visual Studio 实验实例。 这会取消注册以前生成的所有 Dsl。 在 " **开始** " 菜单上，依次单击 " **所有程序**"、 **Microsoft Visual Studio 2010 SDK** 和 **工具**"，然后 **重置 Microsoft Visual Studio 2010 实验实例**。 你可以重新生成任何其他你想要使用的 Dsl。
+- 重置Visual Studio实例。 这会取消注册之前生成的所有 DSL。 在"**开始"** 菜单上，单击"所有程序 **"，Microsoft Visual Studio 2010 SDK** **、"工具**"，然后单击"重置 Microsoft Visual Studio **2010 试验实例"。** 可以重新生成想要再次使用的其他任何 DSL。
 
      \- 或 -
 
-- 如果已在计算机上完全安装了使用此文件扩展名的 Visual Studio 扩展，请将其卸载。 在 " **工具** " 菜单上，单击 " **扩展管理器**"。
+- 如果Visual Studio扩展名的扩展名已完全安装在计算机上，请将其卸载。 在"**工具"菜单** 上，单击"**扩展管理器"。**
 
-### <a name="product-settings-page"></a>"产品设置" 页
- **新的特定于域的语言所属的产品的名称是什么？**
+### <a name="product-settings-page"></a>"产品设置"页
+ **新域特定语言所属的产品的名称是什么？**
 默认为 DSL 名称。
 
- 此值在 Windows 资源管理器中使用 (或文件资源管理器) 来描述具有此文件扩展名的文件。
+ 此值在 Windows 资源管理器 (或 文件资源管理器) 用于描述具有此文件扩展名的文件。
 
  **产品所属的公司的名称是什么？**
 公司名称。
@@ -109,14 +109,14 @@ ms.locfileid: "99941406"
  此值将合并到 DSL 包的 AssemblyInfo 属性中。
 
  **此解决方案中项目的根命名空间是什么？**
-此名称默认为由公司和产品名称组成的名称。
+这默认为由你的公司和产品名称构成的名称。
 
-### <a name="signing-page"></a>签名页
+### <a name="signing-page"></a>"签名"页
  **创建强名称密钥文件** 默认选项是创建新密钥以对 DSL 程序集进行签名。
 
  **使用现有的强名称密钥** 如果要将 DSL 与其他程序集集成，请使用此选项。
 
- 有关强命名的详细信息，请参阅 [创建和使用 Strong-Named 程序集](/dotnet/standard/assembly/create-use-strong-named)。
+ 有关强命名详细信息，请参阅 [创建和使用Strong-Named程序集](/dotnet/standard/assembly/create-use-strong-named)。
 
 ## <a name="see-also"></a>另请参阅
 

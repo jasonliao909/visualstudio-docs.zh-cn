@@ -4,17 +4,17 @@ description: 了解 Visual Studio 可视化和建模 SDK 如何提供在其上�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b9393c8e01cb304b6a89ac9b400f3efc29d8c056
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9603ace5751443c04d0a7503a43e08c044269817
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861903"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385456"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio 的建模 SDK 的 API 参考
 
@@ -22,7 +22,7 @@ Visual Studio 可视化和建模 SDK 提供了一种平台，用于构建域特�
 
 本部分包含名称以 "VisualStudio" 开头的命名空间的参考资料。
 
-|命名空间|内容|
+|命名空间|Content|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling?displayProperty=fullName>|诸如 ModelElement 之类的类，该类是在 DSL 中定义的所有域类的基类。|
 |<xref:Microsoft.VisualStudio.Modeling.Design?displayProperty=fullName>|构成 DSL 定义的一部分的类。|

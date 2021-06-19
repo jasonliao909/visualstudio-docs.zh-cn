@@ -12,17 +12,17 @@ helpviewer_keywords:
 - TextTemplatingFilePreprocessor custom tool
 - text templates, TransformText() method
 - text templates, generating files at run time
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c64dd1c8ee25f2e0a3c2b94caa8026438b32286
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937948"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387549"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -64,7 +64,7 @@ This report is Company Confidential.
     > [!NOTE]
     > 模板文件名将用作生成的代码中的类名。 因此，它不应包含空格或标点。
 
-4. 选择“添加”。
+4. 选择“添加”  。
 
     将创建一个扩展名为 **tt** 的新文件。 其 " **自定义工具** " 属性设置为 " **TextTemplatingFilePreprocessor**"。 它包含以下行：
 
@@ -109,7 +109,7 @@ Language 参数将取决于项目的语言。
 
 ### <a name="plain-content"></a>纯内容
 
-编辑 **tt** 文件以包含你希望应用程序生成的文本。 例如： 。
+编辑 **tt** 文件以包含你希望应用程序生成的文本。 例如：
 
 ```html
 <html><body>
@@ -121,7 +121,7 @@ This report is Company Confidential.
 
 ### <a name="embedded-program-code"></a>嵌入的程序代码
 
-您可以在和之间插入程序代码 `<#` `#>` 。 例如： 。
+您可以在和之间插入程序代码 `<#` `#>` 。 例如：
 
 ```csharp
 <table>
@@ -184,7 +184,7 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 
 通常，模板必须从应用程序的其他部分导入一些数据。 为了使此过程变得简单，模板生成的代码是一个分部类。 您可以在项目中的另一个文件中创建同一个类的另一部分。 该文件可以包含具有参数、属性和函数的构造函数，该构造函数可通过嵌入在模板中的代码和应用程序的其余部分进行访问。
 
-例如，可以创建单独的文件 **MyWebPageCode.cs**：
+例如，可以创建一个单独的文件 **MyWebPageCode**：
 
 ```csharp
 partial class MyWebPage
@@ -338,7 +338,7 @@ begin 1
 end 1
 ```
 
-**MyProgram.cs：**
+**Myprogram.exe：**
 
 ```csharp
 ...

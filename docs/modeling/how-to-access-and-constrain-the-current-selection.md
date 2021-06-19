@@ -1,67 +1,67 @@
 ---
 title: 如何：访问和约束当前所选内容
-description: 了解如何在为域特定语言编写命令或笔势处理程序时确定用户右键单击的元素。
+description: 了解如何确定为域特定语言编写命令或笔势处理程序时用户右键单击的元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 helpviewer_keywords:
 - Domain-Specific Language, accessing the current selection
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 83903c8ff911fdd1d4900714137a7f6976513dad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28d0f99743535965b3cf203d461fac5d0193607c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890560"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386600"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 
-当你为域特定语言编写命令或笔势处理程序时，你可以确定用户右键单击的元素。 您还可以阻止选择某些形状或字段。 例如，可以安排用户单击图标修饰器时，改为选择包含它的形状。 以这种方式约束选定内容将减少您必须编写的处理程序的数量。 它还可让用户更轻松地单击形状中的任意位置，而无需避免修饰器。
+为特定于域的语言编写命令或笔势处理程序时，可以确定用户右键单击的元素。 还可以阻止选择某些形状或字段。 例如，可以安排在用户单击图标修饰器时，改为选择包含它的形状。 以这种方式约束选择可减少必须写入的处理程序数。 它还使用户可以更轻松地单击形状中的任何位置，而无需避免修饰器。
 
-## <a name="access-the-current-selection-from-a-command-handler"></a>从命令处理程序访问当前所选内容
+## <a name="access-the-current-selection-from-a-command-handler"></a>从命令处理程序访问当前选定内容
 
-域特定语言的命令集类包含自定义命令的命令处理程序。 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>类，为域特定语言的命令集类派生的类提供一些用于访问当前所选内容的成员。
+特定于域的语言的命令集类包含自定义命令的命令处理程序。 类（域特定语言的命令集类派生自该类）为访问当前选择提供了 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 一些成员。
 
 根据命令，命令处理程序可能需要在模型设计器、模型资源管理器或活动窗口中进行选择。
 
 ### <a name="to-access-selection-information"></a>访问选择信息
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>类定义可用于访问当前所选内容的以下成员。
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>类定义可用于访问当前选择的以下成员。
 
     |成员|说明|
     |-|-|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 方法|`true`如果在模型设计器中选择的任何元素为隔离舱形状，则返回; 否则返回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 方法|`true`如果在模型设计器中选择了关系图，则返回; 否则返回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 方法|`true`如果在模型设计器中只选择了一个元素，则返回; 否则返回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 方法|`true`如果在活动窗口中仅选择了一个元素，则返回; 否则返回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsAnyDocumentSelectionCompartment%2A> 方法|如果模型设计器中选定的任何元素都是隔离舱形状，则 `true` 返回 ;否则返回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 方法|如果在 `true` 模型设计器中选择了关系图，则返回 ;否则返回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 方法|如果在 `true` 模型设计器中仅选择了一个元素，则返回 ;否则返回 `false` 。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 方法|如果在 `true` 活动窗口中仅选择了一个元素，则返回 ;否则返回 `false` 。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 属性|获取在模型设计器中选定的元素的只读集合。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 属性|获取在活动窗口中选定的元素的只读集合。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> 属性|获取模型设计器中选定内容的主要元素。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 属性|获取活动窗口中选定内容的主要元素。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 属性|获取活动窗口中所选元素的只读集合。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> 属性|获取模型设计器中所选内容的主元素。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 属性|获取活动窗口中所选内容的主元素。|
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>类的属性 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 提供对 <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 表示模型设计器窗口的对象的访问，并在模型设计器中提供对所选元素的其他访问。
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet.CurrentDocView%2A>类的 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 属性提供对表示模型设计器窗口的对象的访问， <xref:Microsoft.VisualStudio.Modeling.Shell.DiagramDocView> 并提供对模型设计器中所选元素的附加访问。
 
-3. 此外，生成的代码在命令集类中为域特定语言定义了资源管理器工具窗口属性和资源管理器选择属性。
+3. 此外，生成的代码定义特定于域的语言的命令集类中的资源管理器工具窗口属性和资源管理器选择属性。
 
-    - 资源管理器工具窗口属性为域特定语言返回资源管理器工具窗口类的实例。 "资源管理器" 工具窗口类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 类，表示域特定语言的模型资源管理器。
+    - 资源管理器工具窗口属性返回特定于域的语言的资源管理器工具窗口类的实例。 资源管理器工具窗口类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelExplorerToolWindow> 类，表示特定于域的语言的模型资源管理器。
 
-    - `ExplorerSelection`属性为域特定语言返回 "模型资源管理器" 窗口中的选定元素。
+    - 属性 `ExplorerSelection` 返回特定于域的语言的模型资源管理器窗口中的选定元素。
 
 ## <a name="determine-which-window-is-active"></a>确定哪个窗口处于活动状态
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>接口包含定义成员，这些成员提供对 shell 中当前选择状态的访问。 可以 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 通过 `MonitorSelection` 每个的基类中定义的属性，从包类或域特定语言的命令集类获取对象。 包类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 类，命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 类。
+<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>接口包含定义成员，这些成员提供对 shell 中当前选择状态的访问权限。 可以通过每个包类的基类中定义的 属性，从特定于域的语言的包类 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> `MonitorSelection` 或命令集类获取对象。 包类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 类，命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 类。
 
-### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>从命令处理程序确定活动窗口的类型
+### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>从命令处理程序确定哪个类型的窗口处于活动状态
 
-1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A>类的属性 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 返回一个 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 对象，该对象提供对 shell 中当前选择状态的访问。
+1. <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.MonitorSelection%2A>类的 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 属性返回 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 一个对象，该对象提供对 shell 中当前选择状态的访问。
 
-2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A>接口的属性 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 获取活动选择容器，该容器可以不同于活动窗口。
+2. <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService.CurrentSelectionContainer%2A>接口的 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 属性获取活动选择容器，该容器可以不同于活动窗口。
 
-3. 向命令集类添加以下属性，以用于域特定语言，以确定活动窗口的类型。
+3. 将以下属性添加到特定于域的语言的命令集类，以确定处于活动状态的窗口类型。
 
     ```csharp
     // using Microsoft.VisualStudio.Modeling.Shell;
@@ -89,29 +89,29 @@ ms.locfileid: "99890560"
     }
     ```
 
-## <a name="constrain-the-selection"></a>限制选择
+## <a name="constrain-the-selection"></a>约束选择
 
-通过添加选择规则，可以控制用户在模型中选择元素时选择的元素。 例如，若要允许用户将多个元素视为单个单元，可以使用选择规则。
+通过添加选择规则，可以控制当用户在模型中选择元素时选择的元素。 例如，若要允许用户将多个元素视为单个单元，可以使用选择规则。
 
 ### <a name="to-create-a-selection-rule"></a>创建选择规则
 
 1. 在 DSL 项目中创建自定义代码文件
 
-2. 定义派生自类的选择规则类 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 。
+2. 定义派生自 类的选择规则 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules> 类。
 
-3. 重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> 选择规则类的方法以应用选择条件。
+3. 重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.DiagramSelectionRules.GetCompliantSelection%2A> 选择规则类的 方法以应用选择条件。
 
-4. 将 .Classdiagram 类的分部类定义添加到自定义代码文件中。
+4. 将 ClassDiagram 类的分部类定义添加到自定义代码文件。
 
-     `ClassDiagram`类派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 类，在 DSL 项目中生成的代码文件 Diagram.cs 中定义。
+     类派生自 类，在 DSL 项目中生成的代码 `ClassDiagram` <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram> 文件 Diagram.cs 中定义。
 
-5. 重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 类的属性 `ClassDiagram` 以返回自定义选择规则。
+5. 重写 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 类的 `ClassDiagram` 属性以返回自定义选择规则。
 
-     属性的默认实现将 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 获取不会修改所选内容的选择规则对象。
+     属性的默认实现 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram.SelectionRules%2A> 获取不修改所选内容的选择规则对象。
 
 ### <a name="example"></a>示例
 
-下面的代码文件创建一个选择规则，该规则将选定内容扩展为包含最初选定的每个域形状的所有实例。
+下面的代码文件创建一个选择规则，该规则扩展了所选内容，以包含最初选择的每个域形状的所有实例。
 
 ```csharp
 using System;
