@@ -4,17 +4,17 @@ description: 了解，ModelBus 提供了用于引用模型中的模型或元素�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc1c74f7c4c787a3d6b70b6fd6c7d9d67ad37db
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97de2d7e79dc44ff785663c4d04dc65851430472
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922670"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387055"
 ---
 # <a name="how-to-open-a-model-from-file-in-program-code"></a>如果：在程序代码中从文件打开模型
 
@@ -22,7 +22,7 @@ ms.locfileid: "99922670"
 
 在 Visual Studio 扩展中，你可以使用 ModelBus 来实现此目的。 ModelBus 提供了用于引用模型或模型中的元素的标准机制，并用于查找模型（如果该模型已移动）。 有关详细信息，请参阅 [使用 Visual Studio 集成模型 Modelbus](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
-## <a name="target-framework"></a>目标 Framework
+## <a name="target-framework"></a>目标框架
 
 将应用程序项目的 **目标框架** 设置为 .NET Framework 4 或更高版本。
 

@@ -4,17 +4,17 @@ description: 了解，在 Visual Studio 设计时文本模板中，assembly 指�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d214764e8067e1165eeacc044bddc1994230562
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38b5a7fe2308884d4837a068770af67435ada70e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899679"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386353"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 
@@ -38,7 +38,7 @@ ms.locfileid: "99899679"
 
 - 程序集的绝对路径
 
-  你可以使用 `$(variableName)` 语法来引用 Visual Studio 变量（如 `$(SolutionDir)` ），并使用 `%VariableName%` 来引用环境变量。 例如： 。
+  你可以使用 `$(variableName)` 语法来引用 Visual Studio 变量（如 `$(SolutionDir)` ），并使用 `%VariableName%` 来引用环境变量。 例如：
 
 ```
 <#@ assembly name="$(SolutionDir)\MyProject\bin\Debug\SomeLibrary.Dll" #>

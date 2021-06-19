@@ -4,17 +4,17 @@ description: 了解用于将应用程序划分为与整体分层关系图中各�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85a0bfc178c2aea86a04123815ae946226691477
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54275c55d3d7a80dc2df1721585bc6c39ba8b06e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899796"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385482"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 
@@ -24,7 +24,7 @@ ms.locfileid: "99899796"
 
 本主题假定你正在处理一个大项目，这个项目大到需要多名团队成员，还可能有多个团队。 项目的代码和模型存储在源代码管理系统，例如 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]。 至少某些团队成员使用 Visual Studio 来开发模型，其他团队成员可以通过使用其他版本的 Visual Studio 来查看模型。
 
-若要查看支持每个工具和建模功能的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持每个工具和建模功能的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="solution-structure"></a>解决方案结构
 
@@ -111,4 +111,3 @@ ms.locfileid: "99899796"
 ## <a name="see-also"></a>另请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
-- [Visual Studio 体系结构工具指南](../modeling/visual-studio-architecture-tooling-guidance.md)

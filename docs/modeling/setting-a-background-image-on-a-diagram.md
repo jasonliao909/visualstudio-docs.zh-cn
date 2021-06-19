@@ -4,17 +4,17 @@ description: 了解，在 Visual Studio 可视化和建模 SDK 中，可以使�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ca83bd9f6ac88e26247f6c9beea9c242a505887c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9304117932b92408f12a23747253de66dfd767d1
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873770"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385664"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
 在 Visual Studio 可视化和建模 SDK 中，可以使用自定义代码设置生成的设计器的背景图像。
@@ -43,7 +43,7 @@ ms.locfileid: "99873770"
 
 10. 验证文件 Dsl\Properties\Resources.resx 是否存在，以及该文件下面是否具有文件 Resources.Designer.cs。
 
-11. 如果缺少 Resources.Designer.cs，请单击 **解决方案资源管理器** 中的文件资源 .resx。
+11. 如果缺少 Resources. .cs，请在 **解决方案资源管理器** 中单击文件资源 .resx。
 
 12. 在“属性”  窗口中，将 `Custom Tool` 属性设置为 `ResXFileCodeGenerator`。
 

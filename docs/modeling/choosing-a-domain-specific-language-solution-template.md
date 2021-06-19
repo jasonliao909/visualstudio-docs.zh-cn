@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools, solution templates
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 23629c2503fd14a758cf3f68f2576db601dd39cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1c638c5a45427fd474f085ff58c9d38682ee054
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861850"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385430"
 ---
 # <a name="choosing-a-domain-specific-language-solution-template"></a>选择域特定语言解决方案模板
 若要创建域特定语言解决方案，请选择 Domain-Specific 语言设计器向导中提供的解决方案模板之一。 通过选择与你要创建的语言最相似的模板，你可以最大程度地减少必须对起始解决方案进行的修改。

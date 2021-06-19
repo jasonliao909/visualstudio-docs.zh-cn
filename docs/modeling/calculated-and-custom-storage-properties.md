@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain properties
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c0874302a7cae4b7a2a3c02edade3ef88fd402a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f98dca6759b9e4a77e71139b6d9ec9b394d99b04
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861837"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385417"
 ---
 # <a name="calculated-and-custom-storage-properties"></a>计算的和自定义的存储属性
 域特定语言中 (DSL) 的所有域属性都可以在关系图上和您的语言浏览器中向用户显示，并且可以通过程序代码进行访问。 但是，属性的值存储方式有所不同。
@@ -24,7 +24,7 @@ ms.locfileid: "99861837"
 ## <a name="kinds-of-domain-properties"></a>域属性的种类
  在 DSL 定义中，可以设置域属性的 **类型** ，如下表所示：
 
-|域属性类型|说明|
+|域属性类型|描述|
 |-|-|
 |**标准** (默认值) |保存在 *存储区* 中并序列化为文件的域属性。|
 |**Calculated**|只读域属性，该属性不保存在存储区中，而是从其他值计算而来的。<br /><br /> 例如， `Person.Age` 可以从计算 `Person.BirthDate` 。<br /><br /> 您必须提供执行计算的代码。 通常，您需要计算其他域属性的值。 不过，您也可以使用外部资源。|
@@ -49,7 +49,7 @@ ms.locfileid: "99861837"
 
 5. 双击错误消息。
 
-     此时将打开 Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships.cs。 在突出显示的方法调用的上方，注释会提示你提供 Get *yourproperty '* ( # A1 的实现。
+     将打开 Dsl\GeneratedCode\DomainClasses.cs 或 DomainRelationships。 在突出显示的方法调用的上方，注释会提示你提供 Get *yourproperty '* () 的实现。
 
     > [!NOTE]
     > 此文件是从 Dsldefinition.dsl 生成的。 如果编辑此文件，则下次单击 " **转换所有模板**" 时，所做的更改将丢失。 相反，请在单独的文件中添加所需的方法。

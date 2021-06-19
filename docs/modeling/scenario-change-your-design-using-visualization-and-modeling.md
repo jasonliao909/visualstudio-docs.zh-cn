@@ -11,25 +11,25 @@ helpviewer_keywords:
 - walkthrough [Visual Studio ALM], visualizing code
 - walkthrough [Visual Studio ALM], modeling software
 - walkthroughs [Visual Studio ALM], modeling software
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 79f131276172a9df91dd8408149fae66a2f28ca9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05cdd769a59c4101fbc05a7e51893752e2532f42
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938039"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385820"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
 通过使用 Visual Studio 中的可视化和建模工具，确保你的软件系统满足用户的需求。
 使用代码图、依赖项关系图和类图等工具执行以下操作：
 
-若要查看支持每个工具的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持每个工具的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 - 阐明用户需求和业务流程。
 
@@ -112,7 +112,7 @@ Lucerne 保留了一组很复杂的大型系统，其中有一些系统已有 40
 - [使用依赖项关系图验证代码](../modeling/validate-code-with-layer-diagrams.md)
 
 > [!NOTE]
-> 某些版本的 Visual Studio 支持依赖项验证和代码图的只读版本来进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+> 某些版本的 Visual Studio 支持依赖项验证和代码图的只读版本来进行可视化和建模。 若要查看支持此功能的 Visual Studio 的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="understand-and-communicate-information-about-the-system"></a>了解和传达系统相关信息
 
