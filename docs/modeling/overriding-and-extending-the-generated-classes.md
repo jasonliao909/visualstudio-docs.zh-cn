@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, providing overridable classes
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 78b570601ad273a948f46d95105fcd4054419c71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07c44e7ff7a603f339ec268b06bd78cc84cd6be2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897780"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390940"
 ---
 # <a name="override-and-extend-the-generated-classes"></a>重写和扩展生成的类
 
@@ -90,7 +90,7 @@ public partial class Book
 
 ### <a name="net-events"></a>.NET 事件
 
-您可以订阅一些形状上的事件。 例如，您可以侦听形状上的鼠标单击。 您必须编写订阅每个对象的事件的代码。 可以在 InitializeInstanceResources ( # A1 中编写此代码。
+您可以订阅一些形状上的事件。 例如，您可以侦听形状上的鼠标单击。 您必须编写订阅每个对象的事件的代码。 可以在 InitializeInstanceResources () 的重写中编写此代码。
 
 某些事件在在 mapcontrol.shapefields 上生成，用于在形状上绘制修饰器。 有关示例，请参阅 [如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)。
 

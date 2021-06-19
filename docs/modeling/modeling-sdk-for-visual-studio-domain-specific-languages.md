@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 的建模 SDK - 特定于域的语言
-description: 了解到，使用适用于 Visual Studio 的建模 SDK，你可以创建可集成到 Visual Studio 中的功能强大的基于模型的开发工具。
+description: 了解使用适用于 Visual Studio 的建模 SDK，可以创建功能强大的基于模型的开发工具，这些工具可以集成到 Visual Studio。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -8,23 +8,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language Tools
 - Domain-Specific Language
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 85deb6239360fc1c56ceb1ba4d23be02d6dbfd70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b858e193065b5cee66772b6ec98321b505e9a8c3
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950380"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391044"
 ---
 # <a name="modeling-sdk-for-visual-studio---domain-specific-languages"></a>Visual Studio 的建模 SDK - 特定于域的语言
 
-通过使用 Visual Studio 的建模 SDK，你可以创建可集成到 Visual Studio 中的功能强大的基于模型的开发工具。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。
+通过使用适用于 Visual Studio 的建模 SDK，可以创建功能强大的基于模型的开发工具，这些工具可以集成到 Visual Studio。 同样，你可以创建一个或多个模型定义并将其集成到工具集中。
 
-MSDK 的核心是你创建的用于表示业务领域内概念的模型的定义。 您可以使用各种工具来包围模型，如关系图视图、生成代码和其他项目的功能、用于转换模型的命令，以及在 Visual Studio 中与代码和其他对象进行交互的能力。 在开发模型时，你可以将其与其他模型和工具结合以形成一个以开发为中心的功能强大的工具集。
+MSDK 的核心是你创建的用于表示业务领域内概念的模型的定义。 可以使用各种工具（例如关系图视图、生成代码和其他项目的功能、用于转换模型的命令以及与模型中的代码和其他对象交互）来Visual Studio。 在开发模型时，你可以将其与其他模型和工具结合以形成一个以开发为中心的功能强大的工具集。
 
 MSDK 允许你以域特定语言 (DSL) 的形式快速开发模型。 首先使用专用编辑器来将架构或抽象语法与图形表示法一起定义。 根据此定义，VMSDK 将生成：
 

@@ -1,8 +1,8 @@
 ---
-title: 代码图
+title: 用代码图可视化依赖项
 description: 了解代码图如何帮助你查看代码如何相互配合，而无需读取文件和代码行。
 ms.custom: SEO-VS-2020
-ms.date: 05/16/2018
+ms.date: 05/16/2021
 ms.topic: how-to
 f1_keywords:
 - vs.progression.codemap
@@ -13,28 +13,27 @@ helpviewer_keywords:
 - code visualization [Visual Studio]
 - dependencies, visualizing
 - dependency graphs
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 9723fd44aedf4950b99a49b62d421230b43d55fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d33e3d882d25045802f2c015c88b87b970d9d04e
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946522"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390432"
 ---
 # <a name="map-dependencies-with-code-maps"></a>映射与代码图的依赖项
 
-您可以通过创建代码图来可视化代码中的依赖项。 代码图可帮助你查看代码如何相互配合，而无需读取文件和代码行。
+在本文中，你将了解如何通过代码映射可视化代码中的依赖项。
+
+## <a name="what-are-code-maps"></a>什么是代码图？
+
+在 Visual Studio 中，代码图可帮助你更快地了解程序代码如何搭配使用，而无需读取文件和代码行。  利用这些地图，你可以查看代码中的组织和关系，包括其结构及其依赖项、更新方式，并估计建议更改的成本。
 
 ![在 Visual Studio 中查看与代码图的依赖项](../modeling/media/codemapsmainintro.png)
-
-若要创建和编辑代码图，需要 Visual Studio Enterprise 版本。 在 Visual Studio 社区版和专业版中，你可以打开在 Enterprise edition 中生成的关系图，但不能对其进行编辑。
-
-> [!NOTE]
-> 在与使用 Visual Studio Professional 的其他人共享 Visual Studio Enterprise 中创建的地图之前，请确保地图上的所有项目 (如隐藏项、展开的组和跨组链接) 可见。
 
 可以映射以下语言中的代码的依赖关系：
 
@@ -47,21 +46,14 @@ ms.locfileid: "99946522"
 > [!NOTE]
 > 对于 c # 或 Visual Basic 以外的项目，用于启动代码图或将项添加到现有代码图的选项更少。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 不过，您可以将各个代码元素或文件拖放到 **解决方案资源管理器**、 **类视图** 和 **对象浏览器**。
 
-## <a name="install-code-map-and-live-dependency-validation"></a>安装代码图和实时依赖项验证
+## <a name="prerequisites"></a>先决条件
 
-若要在 Visual Studio 中创建代码图，请首先安装 **代码图** 和 **实时依赖项验证** 组件：
+若要在 Visual Studio 中创建代码图，请首先 [安装 **代码图** 和 **实时依赖项验证** 组件](install-architecture-tools.md)
 
-1. 打开 **Visual Studio 安装程序**。 可以通过 Windows "开始" 菜单或在 Visual Studio 中选择 "**工具**" "  >  **获取工具和功能**" 来打开它。
+若要创建和编辑代码图，需要 **Visual Studio Enterprise 版本**。 但是，在 Visual Studio 社区版和专业版中，你可以打开在 Enterprise edition 中生成的关系图，但不能对其进行编辑。
 
-1. 选择“各个组件”选项卡。
-
-1. 向下滚动到 " **代码工具** " 部分，并选择 " **代码图** " 和 " **实时依赖项验证**"。
-
-   ![Visual Studio 安装程序中的代码图和实时依赖项验证组件](media/modeling-components.png)
-
-1. 选择“修改”  。
-
-   **代码图** 和 **实时依赖项验证** 组件会开始安装。 系统可能会要求你关闭 Visual Studio。
+> [!NOTE]
+> 在与使用 Visual Studio Professional 的其他人共享 Visual Studio Enterprise 中创建的地图之前，请确保地图上的所有项目 (如隐藏项、展开的组和跨组链接) 可见。
 
 ## <a name="add-a-code-map"></a>添加代码图
 
@@ -81,6 +73,11 @@ ms.locfileid: "99946522"
    解决方案的 " **解决方案项** " 文件夹中将显示一个空白地图。
 
 同样，可以通过选择 "**体系结构**" "  >  **新建代码图**" 或 "**文件**" "  >  **新建**  >  **文件**" 来创建新的代码映射文件，而无需将其添加到解决方案
+
+了解详细信息：
+- [共享代码图](share-code-maps.md)
+- [创建 c + + 代码图](code-maps-for-cpp.md)
+- [提高代码图性能](code-maps-performance.md)
 
 ## <a name="generate-a-code-map-for-your-solution"></a>为解决方案生成代码图
 
@@ -154,7 +151,7 @@ ms.locfileid: "99946522"
 - [通过编辑 DGML 文件自定义代码图](../modeling/customize-code-maps-by-editing-the-dgml-files.md)
 - 通过[运行分析器](../modeling/find-potential-problems-using-code-map-analyzers.md)发现代码中的潜在问题
 
-## <a name="view-specific-dependencies-in-a-code-map"></a>查看代码图中的特定依赖关系
+## <a name="view-dependencies"></a>查看依赖关系
 
 假设你有一个代码评审，可在某些具有挂起更改的文件中执行。 若要查看这些更改中的依赖关系，请从这些文件中创建一个代码图。
 
@@ -166,10 +163,10 @@ ms.locfileid: "99946522"
 
 1. 在 **解决方案资源管理器** 工具栏上，选择 " **在代码图上显示**" ![ 通过所选节点按钮创建新关系图 ](../modeling/media/createnewgraphfromselectedbutton.gif) 。 或者，打开一个或一组项目的快捷菜单，然后选择 " **在代码图上显示**"。
 
-   还可以将项从 **解决方案资源管理器**、 **类视图** 或 **对象浏览器** 拖动到 [新](#add-a-code-map) 的或现有的代码图中。 若要包含项的父层次结构，请在拖动项时按住 **Ctrl** 键，或者使用代码图工具栏上的 " **包括父级** " 按钮来指定默认操作。 你还可以从 Visual Studio 外（例如，从 **Windows 资源管理器**）中拖动程序集文件。
+   还可以将项从 **解决方案资源管理器、类视图****或对象浏览器** 拖动到 [新的或](#add-a-code-map)现有的代码图中。  若要包括项的父层次结构，在拖动项时按住 **Ctrl** 键，或使用代码图工具栏上的"包括父级"按钮指定默认操作。 还可以将程序集文件从外部Visual Studio， **例如从** Windows 资源管理器。
 
    > [!NOTE]
-   > 当你从在多个应用之间共享的项目（如 Windows Phone 或 Microsoft Store）添加项时，这些项将与当前活动的应用程序项目一起显示在映射上。 如果你将上下文更改为另一个应用程序项目并从共享的项目添加更多项，则这些项现在将与最近活动的应用程序项目一起显示。 你对代码图上的项执行的操作仅适用于共享相同上下文的项。
+   > 从在多个应用（例如 Windows Phone 或 Microsoft Store）之间共享的项目中添加项时，这些项会显示在具有当前活动应用项目的地图上。 如果你将上下文更改为另一个应用程序项目并从共享的项目添加更多项，则这些项现在将与最近活动的应用程序项目一起显示。 你对代码图上的项执行的操作仅适用于共享相同上下文的项。
 
 3. 代码图将显示在选定项的包含程序集内的选定项。
 
@@ -179,19 +176,19 @@ ms.locfileid: "99946522"
 
    ![展开代码图中的节点](../modeling/media/dependencygraph_containment.png)
 
-   若要展开所有项，请使用 **Ctrl** + **A** 选择它们，然后打开映射的快捷菜单并选择 "**组**  >  **展开**"。 然而，如果展开所有组会生成不可用的代码图或产生内存问题，则该选项不可用。
+   若要展开所有项，请通过 **Ctrl** A 选择它们，然后打开地图的快捷菜单，然后选择 + "组 **展开**  >  **"。** 然而，如果展开所有组会生成不可用的代码图或产生内存问题，则该选项不可用。
 
-5. 如果需要，请继续展开感兴趣的项，直到类和成员级别。
+5. 继续展开感兴趣的项，如有必要，请向下扩展到类和成员级别。
 
    ![将组展开到类和成员级别](../modeling/media/codemapsexpandtoclassandmember.png)
 
-   若要查看代码中的成员，但不显示在地图上，请单击组左上角的 " **重新提取子级** " 图标 ![ 重新提取儿童图标 ](../modeling/media/dependencygraph_deletednodesicon.png) 。
+   若要查看代码未在地图上显示的成员，请单击组左上角的 **"重新** 提取子级"图标 ![ "重新提取子 ](../modeling/media/dependencygraph_deletednodesicon.png) 级图标"。
 
-6. 若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后为要添加到映射的相关项的类型选择 " **显示** " 选项。 例如： 。
+6. 若要查看更多与代码图上的项相关的项，请选择其中一个，再选择代码图工具栏上的“显示相关内容”  ，然后选择要添加到图中的相关项的类型。 或者，选择一个或多个项，打开快捷菜单，然后选择要添加到地图的相关项类型的"显示"选项。 例如：
 
     对于 **程序集**，请选择：
 
-    |选项|说明|
+    |选项|描述|
     |-|-|
     |**显示此项引用的程序集**|添加此程序集引用的程序集。 外部程序集将显示在“外部”  组中。|
     |**显示引用此项的程序集**|在解决方案中添加引用此程序集的程序集。|
@@ -213,7 +210,7 @@ ms.locfileid: "99946522"
 
      对于 **方法**，请选择：
 
-    |选项|说明|
+    |选项|描述|
     |-|-|
     |**显示此项调用的方法**|添加此方法调用的方法。|
     |**显示此项引用的字段**|添加此方法引用的字段。|
@@ -223,14 +220,14 @@ ms.locfileid: "99946522"
 
      对于 **字段** 或 **属性**，请选择：
 
-    |选项|说明|
+    |选项|描述|
     |-|-|
     |**显示包含类型**|添加父类型。|
     |**显示包含类型、包含命名空间和包含程序集**|添加父容器的层次结构。|
 
     ![显示此成员调用的方法](../modeling/media/codemapsshowrelatedmethods.png)
 
-7. 代码图显示关系。 在此示例中，映射显示方法调用的方法 `Find` 及其在解决方案中或在外部的位置。
+7. 代码图显示关系。 此示例中，该映射显示方法调用的方法及其在解决方案 `Find` 中或外部的位置。
 
    ![显示代码图上的特定依赖关系](../modeling/media/codemapsspecificdependenciesintro.png)
 
@@ -240,6 +237,10 @@ ms.locfileid: "99946522"
 
 ## <a name="see-also"></a>另请参阅
 
+- [共享代码图](share-code-maps.md)
+- [为 C++ 创建代码图](code-maps-for-cpp.md)
+- [提高代码图性能](code-maps-performance.md)
+- [视频：通过 Visual Studio 2015 代码图从代码中了解设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [视频：通过 Visual Studio 2015 代码图从代码中了解设计](https://channel9.msdn.com/Events/Visual-Studio/Connect-event-2015/502)
 - [使用代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)
 - [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)

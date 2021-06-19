@@ -7,23 +7,23 @@ ms.topic: conceptual
 helpviewer_keywords:
 - requirements
 - stories
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d55e549d2dccdc047cbf4449392cc090a569f85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 381395eb0b9dabde0e94c479cb43033bc8443c8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970577"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390146"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
 通过绘制有关用户的活动和你的系统在帮助他们实现自己目标上所起到的作用的关系图，Visual Studio 可帮助你了解你的用户，并与他们展开讨论、沟通其要求。 需求模型是一组这样的关系图，每一张图都将重点放在用户需求的不同方面。 有关视频演示，请参阅： [业务域建模](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-3-modeling-the-business-domain)。
 
-若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/what-s-new-for-design-in-visual-studio.md#VersionSupport)。
+若要查看支持每种类型的模型的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 需求模型可帮助你：
 
@@ -62,7 +62,7 @@ ms.locfileid: "99970577"
 
 业务规则是一个不与特定用例相关联的要求，应在整个系统中进行观察。
 
-许多业务规则受概念类间关系的约束。 您可以编写这些 *静态业务规则* 作为与概念类图上的相关类关联的注释。 例如： 。
+许多业务规则受概念类间关系的约束。 您可以编写这些 *静态业务规则* 作为与概念类图上的相关类关联的注释。 例如：
 
 ![附加到 Order 类的注释中的规则。](../modeling/media/uml_reqmcd2.png)
 
