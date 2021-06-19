@@ -6,17 +6,17 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
 - Domain-Specific Language, programming domain models
-author: JoshuaPartlow
-ms.author: joshuapa
+author: mgoertz-msft
+ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a7e3d7ba31778c5d5a94f77b52f13bfe8fff8473
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be19b34c51744c6bab1c6021a006f7ec9b4da0f4
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897865"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390966"
 ---
 # <a name="navigate-and-update-a-model-in-program-code"></a>在程序代码中导航和更新模型
 
@@ -86,7 +86,7 @@ ms.locfileid: "99897865"
 
  `foreach (ParentsHaveChildren link in ParentsHaveChildren.GetLinks(henry, edward)) { ... }`
 
- 还有其他用于访问链接的方法。 例如： 。
+ 还有其他用于访问链接的方法。 例如：
 
  `foreach (ParentsHaveChildren link in     ParentsHaveChildren.GetLinksToChildren(henry)) { ... }`
 
@@ -110,7 +110,7 @@ ms.locfileid: "99897865"
  `store.ElementDirectory.GetElement(elementId);`
 
 ## <a name="accessing-class-information"></a><a name="metadata"></a> 访问类信息
- 可以获取有关 DSL 定义的类、关系和其他方面的信息。 例如： 。
+ 可以获取有关 DSL 定义的类、关系和其他方面的信息。 例如：
 
  `DomainClassInfo personClass = henry.GetDomainClass();`
 
@@ -201,13 +201,13 @@ using (Transaction t =
 
  可以通过三种方式创建关系的实例。 这三种方法都具有相同的效果：
 
-- 设置源角色扮演者的属性。 例如： 。
+- 设置源角色扮演者的属性。 例如：
 
   - `familyTree.People.Add(edward);`
 
   - `edward.Parents.Add(henry);`
 
-- 设置目标角色扮演者的属性。 例如： 。
+- 设置目标角色扮演者的属性。 例如：
 
   - `edward.familyTreeModel = familyTree;`
 
@@ -217,7 +217,7 @@ using (Transaction t =
 
        此角色的重数为 `0..*` ，因此我们将添加到集合中。
 
-- 显式构造关系的实例。 例如： 。
+- 显式构造关系的实例。 例如：
 
   - `FamilyTreeHasPeople edwardLink = new FamilyTreeHasPeople(familyTreeModel, edward);`
 
@@ -288,7 +288,7 @@ using (Transaction t =
  `link.MoveBefore(role, nextLink);`
 
 ## <a name="locks"></a><a name="locks"></a> 住
- 您所做的更改可能会受到锁定的阻止。 可以在单个元素、分区和存储区上设置锁。 如果这些级别中有任何一个锁锁定了您要进行的更改类型，则在您尝试时可能会引发异常。 可以通过使用元素来发现是否设置了锁。GetLocks ( # A1，它是在命名空间中定义的扩展方法 <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
+ 您所做的更改可能会受到锁定的阻止。 可以在单个元素、分区和存储区上设置锁。 如果这些级别中有任何一个锁锁定了您要进行的更改类型，则在您尝试时可能会引发异常。 可以通过使用元素来发现是否设置了锁。GetLocks () ，它是在命名空间中定义的扩展方法 <xref:Microsoft.VisualStudio.Modeling.Immutability> 。
 
  有关详细信息，请参阅 [定义锁定策略以创建 Read-Only 段](../modeling/defining-a-locking-policy-to-create-read-only-segments.md)。
 
@@ -476,13 +476,13 @@ partial class MyDiagram
  你还可以使用此方法设置连接器的颜色和其他公开的属性。
 
 ### <a name="use-transactions"></a>使用事务
- 形状、连接符和关系图是 <xref:Microsoft.VisualStudio.Modeling.ModelElement> 应用商店中和 live 的子类型。 因此，你必须仅在事务中对它们进行更改。 有关详细信息，请参阅 [如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
+ 形状、连接器和关系图是 的子类型，并 <xref:Microsoft.VisualStudio.Modeling.ModelElement> 保存在 Store 中。 因此，只能在事务内更改它们。 有关详细信息，请参阅 [如何：使用事务更新模型](../modeling/how-to-use-transactions-to-update-the-model.md)。
 
 ## <a name="document-view-and-document-data"></a><a name="docdata"></a> 文档视图和文档数据
  ![标准关系图类型的类图](../modeling/media/dsldiagramsanddocs.png)
 
 ## <a name="store-partitions"></a>存储分区
- 加载模型时，将同时加载随附的关系图。 通常情况下，模型会加载到 DefaultPartition 中，关系图内容会加载到另一个分区中。 通常会加载每个分区的内容并将其保存到单独的文件中。
+ 加载模型时，将同时加载随附的关系图。 通常，模型加载到 Store.DefaultPartition 中，关系图内容加载到另一个分区中。 通常，每个分区的内容都会加载并保存到单独的文件中。
 
 ## <a name="see-also"></a>另请参阅
 
