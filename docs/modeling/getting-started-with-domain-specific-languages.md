@@ -9,12 +9,12 @@ ms.author: mgoertz
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b2637703e068a98e20f209d5de51a6003a4dd7f4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2ae488056986afbe35763be1eebb500ff0eab9a8
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386730"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602259"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
@@ -45,8 +45,8 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
 | 组件 | 链接 |
 |-|-|
-| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com/) |
-| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [http://go.microsoft.com/fwlink/?LinkId=185580](/azure/devops/integrate/index) |
+| Visual Studio | [http://go.microsoft.com/fwlink/?LinkId=185579](https://visualstudio.microsoft.com) |
+| [!INCLUDE[vssdk_current_short](../modeling/includes/vssdk_current_short_md.md)] | [https://go.microsoft.com/fwlink/?linkid=2166172](../extensibility/visual-studio-sdk.md) |
 | 适用于 Visual Studio 的建模 SDK | |
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]
@@ -63,7 +63,7 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
      ![“创建 DSL”对话框](../modeling/media/create_dsldialog.png)
 
-4. 在" **名称"框中** ，键入 **FamilyTree**。 单击 **“确定”** 。
+4. 在" **名称"框中** ，键入 **FamilyTree**。 单击“确定”。
 
      " **特定于域的语言向导"** 将打开并显示模板 DSL 解决方案的列表。
 
