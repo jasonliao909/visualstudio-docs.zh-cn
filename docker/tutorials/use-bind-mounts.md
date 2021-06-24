@@ -9,12 +9,12 @@ ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 57cb56d0d9a93d0f11e4047f6e25b64841c47e93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a4aa7623f69f9b02f9649a1a66ade010a823669
+ms.sourcegitcommit: 98d187abd9352d2255348b84d99d015e65caa0ea
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841674"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112574108"
 ---
 # <a name="use-bind-mounts"></a>使用绑定装载
 
@@ -49,14 +49,15 @@ ms.locfileid: "99841674"
 
     ```bash
     docker run -dp 3000:3000 \
-        -w /app -v ${PWD}:/app \
+        -w /app \
+        -v "%cd%:/app" \
         node:12-alpine \
         sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000` - 与以前相同。 在分离（后台）模式下运行并创建端口映射
     - `-w /app` - 设置运行命令的“工作目录”或当前目录
-    - `-v ${PWD}:/app` - 将当前目录从容器中的主机绑定装载到 `/app` 目录
+    - `-v "%cd%:/app"` - 将当前目录从容器中的主机绑定装载到 `/app` 目录
     - `node:12-alpine` - 要使用的映像。 请注意，这是 Dockerfile 中应用的基本映像
     - `sh -c "yarn install && yarn run dev"` - 命令。 我们正在使用 `sh`（alpine 没有 `bash`）启动 shell，并运行 `yarn install` 来安装所有依赖项，然后运行 `yarn run dev`。 如果你查看 `package.json`，将看到 `dev` 脚本正在启动 `nodemon`。
 
