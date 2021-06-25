@@ -1,9 +1,9 @@
 ---
-title: VisibilityConstraints 元素 |Microsoft Docs
-description: VisibilityConstraints 元素确定命令组和工具栏的静态可见性。
+title: VisibilityConstraints 元素|Microsoft Docs
+description: VisibilityConstraints 元素确定命令和工具栏组的静态可见性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - VisibilityConstraints
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d97f72e7a29f3cbb23c775df8454952f5ffac928
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 160a3950e31567aafc2d675971fd7263adb2ad5b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062559"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905457"
 ---
 # <a name="visibilityconstraints-element"></a>VisibilityConstraints 元素
-VisibilityConstraints 元素确定命令组和工具栏的静态可见性。 可见性首先由 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 控制，无需加载 VSPackage。
+VisibilityConstraints 元素确定命令和工具栏组的静态可见性。 可见性首先由集成开发环境控制 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] (IDE) 而无需加载 VSPackage。
 
 ## <a name="syntax"></a>语法
 
@@ -41,20 +41,20 @@ VisibilityConstraints 元素确定命令组和工具栏的静态可见性。 可
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[VisibilityItem 元素](../extensibility/visibilityitem-element.md)|确定命令和工具栏的静态可见性。|
-|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|确定命令组和工具栏的静态可见性。|
+|[VisibilityConstraints](../extensibility/visibilityconstraints-element.md)|确定命令和工具栏组的静态可见性。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 为 IDE 提供) 的命令 (例如菜单项、菜单、工具栏和组合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素 (如菜单项、菜单、工具栏和组合框) VSPackage 向 IDE 提供。|
 
 ## <a name="example"></a>示例
 
@@ -67,4 +67,4 @@ VisibilityConstraints 元素确定命令组和工具栏的静态可见性。 可
 
 ## <a name="see-also"></a>另请参阅
 - [VisibilityItem 元素](../extensibility/visibilityitem-element.md)
-- [Visual Studio 命令表 (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

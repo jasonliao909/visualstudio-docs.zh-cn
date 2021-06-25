@@ -3,7 +3,7 @@ title: 菜单元素 |Microsoft Docs
 description: 菜单元素定义 VSPackage 实现的所有菜单和工具栏。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Menus
 - Menus element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c5b6010945bd176f0663c7b0d57c3991470fff07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064002"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905574"
 ---
 # <a name="menus-element"></a>菜单元素
 定义 VSPackage 实现的所有菜单和工具栏。
@@ -43,16 +43,16 @@ ms.locfileid: "105064002"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单和工具栏。|
 |[Menu 元素](../extensibility/menu-element.md)|表示单个菜单或工具栏。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 中命令的集合。|
+|[命令元素](../extensibility/commands-element.md)|表示 VSPackage 中命令的集合。|
 
 ## <a name="example"></a>示例
 

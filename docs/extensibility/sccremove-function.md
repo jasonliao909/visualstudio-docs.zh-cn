@@ -2,7 +2,7 @@
 description: 此函数删除源代码管理系统中的文件。
 title: SccRemove 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccRemove
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d80daf83458c9e05ef0a081348080579e7fafef4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4a608b3556040033d9f51535ad29d0abf5d4e35
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073867"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904121"
 ---
 # <a name="sccremove-function"></a>SccRemove 函数
 此函数删除源代码管理系统中的文件。
@@ -69,7 +69,7 @@ SCCRTN SccRemove(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|删除成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不受源代码管理。|

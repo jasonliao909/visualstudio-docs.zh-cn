@@ -3,7 +3,7 @@ title: 调试引擎 |Microsoft Docs
 description: 了解调试引擎如何与解释器或操作系统一起使用来提供执行控制、断点和表达式计算等服务。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines
 ms.assetid: 148b1efc-ca07-4d8e-bdfc-c723a760c620
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c13dd7165a5f85dc0122f97aaee838c528207f96
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87c4648ed37ef4fad0d79b7048593ff0c5b7d6d0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067941"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905704"
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 与解释器或操作系统一起使用来提供调试服务，如执行控制、断点和表达式计算。 DE 负责监视正在调试的程序的状态。 为实现此目的，DE 使用支持的运行时中的任何可用方法，无论是从 CPU 还是由运行时提供的 Api。
