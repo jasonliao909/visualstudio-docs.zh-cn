@@ -2,7 +2,7 @@
 description: 此函数更新特定源代码管理命令的文件列表，并提供所有给定文件的源代码管理状态。
 title: SccPopulateList 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccPopulateList
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ae531b4be3406c38180183037695a2320b372b14
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b386c576b48e14b6118f62d451c42ac20f048b45
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056527"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902340"
 ---
 # <a name="sccpopulatelist-function"></a>SccPopulateList 函数
 此函数更新特定源代码管理命令的文件列表，并提供所有给定文件的源代码管理状态。
@@ -74,13 +74,13 @@ SCCRTN SccPopulateList (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_E_NONSPECIFICERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- 此函数检查文件的列表中是否有当前状态。 它使用 `pfnPopulate` 回调函数在文件与的条件不匹配时通知调用方 `nCommand` 。 例如，如果命令为 `SCC_COMMAND_CHECKIN` 且列表中的某个文件未签出，则使用回调来通知调用方。 有时，源代码管理插件可能会找到可能是命令的一部分并添加的其他文件。 例如，这允许 Visual Basic 用户签出其项目使用但未出现在 Visual Basic 项目文件中的 .bmp 文件。 用户选择 IDE 中的 **Get** 命令。 IDE 将显示它认为用户可以获取的所有文件的列表，但在显示列表之前，将 `SccPopulateList` 调用函数以确保显示的列表是最新的。
+ 此函数检查文件的列表中是否有当前状态。 它使用 `pfnPopulate` 回调函数在文件与的条件不匹配时通知调用方 `nCommand` 。 例如，如果命令为 `SCC_COMMAND_CHECKIN` 且列表中的某个文件未签出，则使用回调来通知调用方。 有时，源代码管理插件可能会找到可能是命令的一部分并添加的其他文件。 例如，这允许 Visual Basic 用户签出其项目使用但未显示在 Visual Basic 项目文件中的 .bmp 文件。 用户选择 IDE 中的 **Get** 命令。 IDE 将显示它认为用户可以获取的所有文件的列表，但在显示列表之前，将 `SccPopulateList` 调用函数以确保显示的列表是最新的。
 
 ## <a name="example"></a>示例
  IDE 将生成它认为用户可以获取的文件的列表。 在显示此列表之前，它会调用 `SccPopulateList` 函数，使源代码管理插件可以在列表中添加和删除文件。 该插件通过调用给定的回调函数来修改该列表 (有关更多详细信息) ，请参阅 [POPLISTFUNC](../extensibility/poplistfunc.md) 。

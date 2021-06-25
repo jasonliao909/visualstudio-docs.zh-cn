@@ -1,8 +1,8 @@
 ---
 description: 此函数确定指定项目的父项目路径。
-title: SccGetParentProjectPath 函数 |Microsoft Docs
+title: SccGetParentProjectPath 函数|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetParentProjectPath
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 305f226117bbb9cf906231a0b9bbaa24c1d87a8e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 13a0a77808004c7bc8f408bbf34a3ed4f0715b36
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063976"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900130"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函数
-此函数确定指定项目的父项目路径。 当用户将 Visual Studio 项目添加到源代码管理中时，将调用此函数。
+此函数确定指定项目的父项目路径。 当用户将项目添加到源代码管理Visual Studio调用此函数。
 
 ## <a name="syntax"></a>语法
 
@@ -39,65 +39,65 @@ SCCRTN SccGetParentProjectPath(
 ### <a name="parameters"></a>参数
  pContext
 
-中源代码管理插件上下文指针。
+[in]源代码管理插件上下文指针。
 
  hWnd
 
-中IDE 窗口的句柄，源代码管理插件可将其用作它所提供的所有对话框的父级。
+[in]IDE 窗口的句柄，源代码管理插件可以将该窗口用作它提供的任何对话框的父级。
 
  lpUser
 
-[in，out]用户名最多 (SCC_USER_SIZE，包括 NULL 终止符) 。
+[in， out]用户名最多 (，SCC_USER_SIZE NULL 终止符) 。
 
  lpProjPath
 
-中标识项目路径的字符串，最多 (SCC_PRJPATH_SIZE，包括 NULL 终止符) 。
+[in]标识项目路径的字符串 (，SCC_PRJPATH_SIZE NULL 终止符) 。
 
- lpAuxProjPath
+ lp一文ProjPath
 
-[in，out]标识项目的辅助字符串 (最多 SCC_PRJPATH_SIZE，包括 NULL 终止符) 。
+[in， out]用于标识项目参数的辅助 (，SCC_PRJPATH_SIZE NULL 终止符) 。
 
  lpParentProjPath
 
-[in，out]标识父项目路径的输出字符串 (最多 SCC_PRJPATH_SIZE，包括 NULL 终止符) 。
+[in， out]输出字符串，用于标识父项目 (路径，SCC_PRJPATH_SIZE NULL 终止符) 。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功获取父项目路径。|
-|SCC_E_INITIALIZEFAILED|项目无法初始化。|
+|SCC_E_INITIALIZEFAILED|无法初始化项目。|
 |SCC_E_INVALIDUSER|用户无法登录到源代码管理插件。|
-|SCC_E_UNKNOWNPROJECT|项目对于源代码管理插件是未知的。|
+|SCC_E_UNKNOWNPROJECT|源代码管理插件不知道项目。|
 |SCC_E_INVALIDFILEPATH|文件路径无效或不可用。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。 建议重试。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
 |SCC_E_PROJSYNTAXERR|项目语法无效。|
 |SCC_E_CONNECTIONFAILURE|存储连接问题。|
 |SCC_E_NONSPECIFICERROR<br /><br /> SCC_E_UNKNOWNERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- 此函数返回成功或失败代码，如果成功，则 `lpParentProjPath` 使用指定项目的完整项目路径填充该变量。
+ 此函数返回成功或失败代码，如果成功，则使用指定项目的完整 `lpParentProjPath` 项目路径填充变量。
 
- 此函数返回现有项目的父项目路径。 对于根项目，函数将返回传入的项目路径 (即) 的相同根项目路径。 请注意，项目路径是一个仅对源代码管理插件有意义的字符串。
+ 此函数返回现有项目的父项目路径。 对于根项目，该函数返回传入项目 (，即同一根项目路径) 。 请注意，项目路径是仅对源代码管理插件有意义的字符串。
 
- IDE 已准备好接受对 `lpUser` 和参数的更改 `lpAuxProjPath` 。 当用户在将来打开此项目时，IDE 将保留这些字符串并将其传递给 [SccOpenProject](../extensibility/sccopenproject-function.md) 。 因此，这些字符串为源代码管理插件提供了一种跟踪与项目关联的信息所需的方法。
+ IDE 已准备好接受对 和 `lpUser` `lpAuxProjPath` 参数的更改。 当用户将来打开此项目时，IDE 将保留这些字符串，并传递给[SccOpenProject。](../extensibility/sccopenproject-function.md) 因此，这些字符串为源代码管理插件提供了一种跟踪与项目关联的信息的方法。
 
- 此函数类似于 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)，只不过它不会提示用户选择一个项目。 它也不会创建新项目，但仅适用于现有项目。
+ 此函数类似于 [SccGetProjPath，](../extensibility/sccgetprojpath-function.md)只不过它不会提示用户选择项目。 它从不创建新项目，但仅适用于现有项目。
 
- 在 `SccGetParentProjectPath` 调用时， `lpProjPath` 和 `lpAuxProjPath` 将不为空，并且将对应于有效的项目。 IDE 通常会从以前对函数的调用接收这些字符串 `SccGetProjPath` 。
+ 调用 `SccGetParentProjectPath` 时， `lpProjPath` 和 `lpAuxProjPath` 将不为空，并且 将对应于有效的项目。 这些字符串通常由 IDE 从对函数的上一次调用 `SccGetProjPath` 接收。
 
- `lpUser`参数为用户名。 IDE 将传入之前从函数接收的相同用户名 `SccGetProjPath` ，并且源代码管理插件应使用该名称作为默认名称。 如果用户已与插件建立了打开的连接，则该插件应尝试消除任何提示，以确保函数无提示地工作。 但是，如果登录失败，则插件应提示用户输入登录名，并在收到有效的登录名后，将该名称传回 `lpUser` 。 因为插件可能会更改此字符串，所以 IDE 将始终 (+ 1) 分配大小的缓冲区 `SCC_USER_LEN` 。 如果更改了字符串，则新字符串必须是有效的登录名， (至少与旧字符串) 有效。
+ `lpUser`参数是用户名。 IDE 将传递以前从函数接收的同一用户名，源代码管理插件应 `SccGetProjPath` 使用该名称作为默认值。 如果用户已与插件建立打开的连接，则插件应尝试消除任何提示，以确保函数以静默方式工作。 但是，如果登录失败，插件应提示用户输入登录名，并且收到有效登录名时，将名称传回 `lpUser` 。 由于插件可能会更改此字符串，因此 IDE 将始终分配大小为 `SCC_USER_LEN` +1 (的缓冲区) 。 如果更改了字符串，则新字符串必须是有效的登录名 (至少与旧字符串) 。
 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技术说明
- 在 Visual Studio 中，将解决方案和项目添加到源代码管理已得到简化，以最大程度地减少在源代码管理系统中提示用户选择位置的次数。 如果源代码管理插件支持两个新函数（ [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和函数），则 Visual Studio 会激活这些更改 `SccGetParentProjectPath` 。 但是，可以使用以下注册表项来禁用这些更改，并恢复到以前的 Visual Studio (源代码管理插件 API 版本 1.1) 行为：
+ 在源代码管理中添加解决方案和项目的过程Visual Studio以最大程度地减少提示用户在源代码管理系统中选择位置的时间。 如果源代码管理插件Visual Studio [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和 函数这两个新函数，则这些更改由用户 `SccGetParentProjectPath` 激活。 但是，以下注册表项可用于禁用这些更改并还原到上一Visual Studio (源代码管理插件 API 版本 1.1) 行为：
 
- **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl" = dword：00000001**
+ **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"=dword：00000001**
 
- 如果此注册表项不存在或设置为 dword：00000000，则 Visual Studio 将尝试使用新的函数 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
+ 如果此注册表项不存在或设置为 dword：000000000，Visual Studio尝试使用新函数 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
 
- 如果注册表项设置为 dword：00000001，则 Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理中的操作的工作方式与 Visual Studio 早期版本中的工作方式相同。
+ 如果注册表项设置为 dword：000000001，Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理的操作会像在早期版本的 Visual Studio 中一样工作。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

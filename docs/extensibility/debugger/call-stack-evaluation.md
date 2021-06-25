@@ -3,7 +3,7 @@ title: 调用堆栈计算 |Microsoft Docs
 description: 了解 EnumFrameInfo 方法以及如何实现它以查看中断模式下调用堆栈的堆栈帧。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], call stack evaluation
 - call stacks, evaluation
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c7e7180301965e43e6757340019c3506fe1a5e1f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 059c42349c7f8e681709d69104cf65a6fc245206
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055084"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898534"
 ---
 # <a name="call-stack-evaluation"></a>调用堆栈计算
 若要在中断模式下查看调用堆栈的堆栈帧，必须实现 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 方法。
@@ -26,14 +26,14 @@ ms.locfileid: "105055084"
 ## <a name="methods-for-evaluation"></a>计算方法
  对于简单的调试引擎 (DE) ，可能只有一个堆栈帧。 若要在中断模式下检查堆栈帧，必须实现 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md)的以下方法。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)|获取堆栈帧的代码上下文。 代码上下文表示堆栈帧中的当前指令指针。|
 |[GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)|获取堆栈帧的文档上下文。 文档上下文表示堆栈帧在源代码中的当前位置。 在程序中停止时，需要查看源代码。|
 
  这些方法要求实现一些上下文相关的接口和方法。 因此，必须实现 [GetDocumentContext](../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) 方法和 [IDebugDocumentContext2](../../extensibility/debugger/reference/idebugdocumentcontext2.md)的以下方法。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[GetStatementRange](../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)|获取文档上下文的文件语句范围。|
 
