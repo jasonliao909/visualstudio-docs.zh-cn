@@ -1,9 +1,9 @@
 ---
-title: Groups 元素 |Microsoft Docs
-description: Groups 元素包含用于定义 VSPackage 的命令组的项。 本文包含一个示例。
+title: Groups 元素|Microsoft Docs
+description: Groups 元素包含用于定义 VSPackage 命令组的条目。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Groups
 - Groups element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab9ca0a55d8d07aa2541e8884ee92c1c308cabe9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f20e19e19539e71a4dbed74a0dd5bb9af62a15f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057567"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902821"
 ---
 # <a name="groups-element"></a>Groups 元素
-包含定义 VSPackage 的命令组的项。
+包含定义 VSPackage 的命令组的条目。
 
 ## <a name="syntax"></a>语法
 
@@ -39,20 +39,20 @@ ms.locfileid: "105057567"
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[Group 元素](../extensibility/group-element.md)|表示单个命令组。|
-|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的项。|
+|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
+|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令集合。|
 
 ## <a name="example"></a>示例
 
@@ -65,5 +65,5 @@ ms.locfileid: "105057567"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

@@ -3,7 +3,7 @@ title: 动态添加菜单项 |Microsoft Docs
 description: 了解如何在运行时使用 DynamicItemStart 命令标志添加菜单项。 本文介绍如何在 Visual Studio 解决方案中设置启动项目。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - DYNAMICITEMSTART
 - menu items, adding dynamically
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fa85d5b5cf4b99840e181fb24b5913ff72a3fee0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6867baafa45ca794f65b4cb0cc365dbebfbd4219
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070331"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898352"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
 你可以在运行时添加菜单项，方法是在 `DynamicItemStart` Visual Studio 命令表中的占位符按钮定义上指定命令标志 (*.Vsct*) 文件中，然后在代码中定义 () 要显示的菜单项的数目，并处理 (s 的命令。 加载 VSPackage 时，会将占位符替换为动态菜单项。

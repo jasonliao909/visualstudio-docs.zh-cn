@@ -1,9 +1,9 @@
 ---
-title: CreateExpInstance 实用程序 |Microsoft Docs
-description: 了解允许您创建、重置或删除 Visual Studio 的实验实例的 CreateExpInstance 实用程序。
+title: CreateExpInstance 实用工具|Microsoft Docs
+description: 了解 CreateExpInstance 实用工具，该实用工具可用于创建、重置或删除数据库的实验Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - experimental builds
 - experimental hive
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d0010c4a98d0ea50ec7feb2f7a379f3c84bc3d53
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cce9bc25cb2ed820d3291ab65d94a868bb401ec9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056982"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898131"
 ---
-# <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
-使用 **CreateExpInstance** 实用工具可以创建、重置或删除 Visual Studio 的实验实例。 您可以使用实验实例来调试和测试 Visual Studio 扩展，而无需更改基础产品。
+# <a name="createexpinstance-utility"></a>CreateExpInstance 实用工具
+使用 **CreateExpInstance** 实用工具创建、重置或删除 Visual Studio。 可以使用实验实例来调试和测试Visual Studio扩展，而无需更改基础产品。
 
 ## <a name="syntax"></a>语法
 
@@ -39,22 +39,22 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **/Clean** 删除实验实例。
 
- **/VSInstance** 包含要复制的基本 Visual Studio 实例的目录的名称。
+ **/VSInstance** 包含要复制的基实例Visual Studio的名称。
 
- **/RootSuffix** 要追加到实验实例目录的名称的后缀。
+ **/RootSuffix** 要追加到实验实例目录名称的后缀。
 
 ## <a name="remarks"></a>备注
- 当你使用 Visual Studio 扩展时，可以按 F5 打开默认实验实例，并安装当前扩展。 如果没有可用的实验实例，Visual Studio 会创建一个具有默认设置的。
+ 处理扩展时，Visual Studio F5 打开默认实验实例并安装当前扩展。 如果没有可用的实验实例，Visual Studio创建一个具有默认设置的实例。
 
- 实验实例的默认位置取决于 Visual Studio 版本号。 例如，对于 Visual Studio 2015，此位置是 *%localappdata%\Microsoft\VisualStudio\14.0Exp \\*。 目录位置中的所有文件都被视为该实例的一部分。 Visual Studio 不会加载任何其他实验实例，除非将目录名称更改为默认位置。
+ 试验实例的默认位置取决于Visual Studio版本号。 例如，对于 2015 Visual Studio，位置为 *%localappdata%\Microsoft\VisualStudio\14.0Exp \\*。 目录位置的所有文件都被视为该实例的一部分。 除非目录名称更改为默认位置，否则Visual Studio不会加载任何其他实验实例。
 
- Visual Studio 在打开实验实例时不会访问系统注册表。 这不同于早期版本的 Visual Studio，后者使用试验版的注册表配置单元。
+ Visual Studio打开实验实例时，它无法访问系统注册表。 这不同于早期版本的 Visual Studio，该版本使用了注册表配置单元的实验版本。
 
- **CreateExpInstance** 实用程序将替换 **VsRegEx** 实用程序。
+ **CreateExpInstance** 实用工具替换 **VsRegEx** 实用工具。
 
- 下面的示例重置 Visual Studio 的默认实验实例：
+ 以下示例重置实例的默认实验Visual Studio：
 
- **CreateExpInstance.exe/Reset/VSInstance = 14.0/RootSuffix = Exp**
+ **CreateExpInstance.exe /Reset /VSInstance=14.0 /RootSuffix=Exp**
 
 ## <a name="see-also"></a>另请参阅
 - [VSPackages](../../extensibility/internals/vspackages.md)

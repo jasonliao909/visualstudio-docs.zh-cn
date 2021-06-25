@@ -3,7 +3,7 @@ title: 语言服务和编辑器扩展点 |Microsoft Docs
 description: 了解可扩展的 Visual Studio 代码编辑器中的扩展点，包括大多数语言服务功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - extension points
 ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8d71e6c7cd7569c9e73134345584a8237337bc7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 293851f1f3e72508a9bc119fb7551b0118ab2a9b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073295"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903142"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 编辑器提供了扩展点，您可以将其作为 Managed Extensibility Framework (MEF) 组件部件（包括大多数语言服务功能）扩展。 下面是主要扩展点类别：
@@ -28,7 +28,7 @@ ms.locfileid: "105073295"
 
 - 边距和滚动条
 
-- Tags
+- 标记
 
 - 修饰
 

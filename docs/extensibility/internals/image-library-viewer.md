@@ -3,19 +3,19 @@ title: 图像库查看器 |Microsoft Docs
 description: 了解用于加载和搜索图像清单的 Visual Studio 图像库查看器工具，允许你查看和操作图像属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9d9c7fbb-ebae-4b20-9dd8-3c9070c0d0d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d60443e97bc557bc964d59750417b2662e4c3c8f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02e7c5d5ed45b7a6c19c248e949e667ec0a1bdc0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085970"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898705"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
 Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用户能够以与 Visual Studio 相同的方式对其进行操作。 用户可以更改背景、大小、DPI、高对比度和其他设置。 该工具还显示每个映像清单的加载信息，并显示映像清单中每个映像的源信息。 此工具适用于：
@@ -97,7 +97,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用
 |System|Windows\System32 文件夹|
 |WinDir|% WinDir% 环境变量的值|
 
- **图像**
+ **Image**
 
  \<Image>元素定义可由名字对象引用的图像。 同时占用图像名字对象的 GUID 和 ID。 映像的名字对象在整个图像库中必须是唯一的。 如果有多个映像具有给定名字对象，则在生成库时遇到的第一个映像是保留的映像。
 
@@ -116,7 +116,7 @@ Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用
 |ID|请求图像名字对象的 ID 部分|
 |AllowColorInversion|[可选，默认值为 true]指示在深色背景上使用时，图像是否可以通过编程方式进行反转。|
 
- **源**
+ **Source**
 
  \<Source>元素定义单个图像源资产 (XAML 和 PNG) 。
 

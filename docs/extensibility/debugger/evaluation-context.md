@@ -3,7 +3,7 @@ title: 计算上下文 |Microsoft Docs
 description: 当调试引擎调用表达式计算器时，自变量将确定用于查找和计算符号的上下文： pSymbolProvider、pAddress 和 pBinder。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation, context
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35ccfc921f8175a92b0a082798ce8ccc44990d2e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6c3ab6fe53ad288089dc88587e06547573d80cb9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096975"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898573"
 ---
 # <a name="evaluation-context"></a>评估上下文
 > [!IMPORTANT]
@@ -26,9 +26,9 @@ ms.locfileid: "105096975"
 
  当调试引擎 (DE) 调用表达式计算器 (EE) 时，三个传递给 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) 的参数将确定用于查找和计算符号的上下文，如下表所示。
 
-## <a name="arguments"></a>参数
+## <a name="arguments"></a>自变量
 
-|参数|说明|
+|参数|描述|
 |--------------|-----------------|
 |`pSymbolProvider`|一个 [IDebugSymbolProvider](../../extensibility/debugger/reference/idebugsymbolprovider.md) 接口，它指定用于标识符号的符号处理程序 (SH) 。|
 |`pAddress`|指定当前执行点的 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) 接口。 此接口查找包含要执行的代码的方法。|

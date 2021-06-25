@@ -2,7 +2,7 @@
 description: 本主题介绍 System.runtime.compilerservices. AsyncVoidMethodBuilder 类的内部成员。
 title: AsyncVoidMethodBuilder 结构-内部成员 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, AsyncVoidMethodBuilder structure [.NET Framework]
 - AsyncVoidMethodBuilder structure [.NET Framework debug engines]
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4097bce1f7fd90c5b73a3bb450a873561d76d9c1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d6606e26d14ba114ed8346c0cc11a81f8bdd3e8e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055331"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903628"
 ---
 # <a name="asyncvoidmethodbuilder-structure---internal-members"></a>AsyncVoidMethodBuilder 结构-内部成员
 本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder> 参考主题。
@@ -38,7 +38,7 @@ ms.locfileid: "105055331"
 
 ## <a name="internal-members"></a>内部成员
 
-|名称|说明|
+|名称|描述|
 |----------|-----------------|
 |[ObjectIdForDebugger 属性](../../extensibility/debugger/asyncvoidmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
 |[m_objectIdForDebugger 字段](../../extensibility/debugger/asyncvoidmethodbuilder-m-objectidfordebugger-field.md)|表示调试器用来唯一标识此生成器的延迟初始化的对象。|

@@ -2,7 +2,7 @@
 description: 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。
 title: SccUncheckout 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccUncheckout
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0144755d18bbabee47f7aad25337e3c41588ebe5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3a382a112b5a11acc36c52735c949ebef71052ec
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090156"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904082"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。 自签出后对文件进行的所有更改都将丢失。
@@ -64,7 +64,7 @@ SCCRTN SccUncheckout (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|撤消签出成功。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|

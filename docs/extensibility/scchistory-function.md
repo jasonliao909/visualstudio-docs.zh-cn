@@ -1,8 +1,8 @@
 ---
 description: 此函数显示指定文件的历史记录。
-title: SccHistory 函数 |Microsoft Docs
+title: SccHistory 函数|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccHistory
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 11a3056e34d15e2e04b687a518e86041dc270997
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1208bd0cb13661f1aa60bb9f97c9e4502e517e6d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063846"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902535"
 ---
 # <a name="scchistory-function"></a>SccHistory 函数
 此函数显示指定文件的历史记录。
@@ -39,46 +39,46 @@ SCCRTN SccHistory(
 #### <a name="parameters"></a>参数
  `pvContext`
 
-中源代码管理插件上下文结构。
+[in]源代码管理插件上下文结构。
 
  `hWnd`
 
-中IDE 窗口的句柄，源代码管理插件可将其用作它所提供的所有对话框的父级。
+[in]IDE 窗口的句柄，源代码管理插件可以将该窗口用作它提供的任何对话框的父级。
 
  `nFiles`
 
-中数组中指定的文件数 `lpFileName` 。
+[in]数组中指定的文件 `lpFileName` 数。
 
  `lpFileName`
 
-中文件的完全限定名的数组。
+[in]文件的完全限定名称的数组。
 
  `fOptions`
 
-中当前未使用) 命令标志 (。
+[in]命令标志 (当前未) 。
 
  `pvOptions`
 
-中源代码管理插件特定的选项。
+[in]源代码管理插件特定选项。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
-|SCC_OK|已成功获得版本历史记录。|
-|SCC_I_RELOADFILE|源代码管理系统在提取历史记录时实际修改了磁盘上的文件 (例如，通过获取其旧版本) ，因此 IDE 应重新加载此文件。|
-|SCC_E_FILENOTCONTROLLED|此文件不受源代码管理。|
+|SCC_OK|已成功获取版本历史记录。|
+|SCC_I_RELOADFILE|源代码管理系统实际上在提取历史记录时修改了 (，例如，通过获取旧版本的) ，因此 IDE 应重新加载此文件。|
+|SCC_E_FILENOTCONTROLLED|该文件不在源代码管理下。|
 |SCC_E_OPNOTSUPPORTED|源代码管理系统不支持此操作。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。 建议重试。|
-|SCC_E_PROJNOTOPEN|项目尚未打开。|
-|SCC_E_NONSPECIFICERROR|非特定故障。 未能获取文件历史记录。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
+|SCC_E_PROJNOTOPEN|尚未打开项目。|
+|SCC_E_NONSPECIFICERROR|非特定故障。 无法获取文件历史记录。|
 
 ## <a name="remarks"></a>备注
- 源代码管理插件可以显示自己的对话框以显示每个文件的历史记录，并将其 `hWnd` 作为父窗口使用。 此外，还可以使用提供给 [SccOpenProject](../extensibility/sccopenproject-function.md) 的可选文本输出回调函数（如果支持）。
+ 源代码管理插件可以显示其自己的对话框，以使用 作为父 `hWnd` 窗口来显示每个文件的历史记录。 或者，如果支持，可以使用提供给 [SccOpenProject](../extensibility/sccopenproject-function.md) 的可选文本输出回调函数。
 
- 请注意，在某些情况下，在执行此调用期间，检查的文件可能会发生更改。 例如， [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] history 命令使用户有机会获取旧版本的文件。 在这种情况下，源代码管理插件 `SCC_I_RELOAD` 会返回，警告 IDE 需要重新加载文件。
+ 请注意，在某些情况下，要检查的文件在执行此调用期间可能会更改。 例如 [!INCLUDE[vsvss](../extensibility/includes/vsvss_md.md)] ，history 命令为用户提供获取旧版本文件的机会。 在这种情况下，源代码管理插件将返回 ，以警告 `SCC_I_RELOAD` IDE 它需要重新加载文件。
 
 > [!NOTE]
 > 如果源代码管理插件不支持文件数组的此函数，则只能显示第一个文件的文件历史记录。

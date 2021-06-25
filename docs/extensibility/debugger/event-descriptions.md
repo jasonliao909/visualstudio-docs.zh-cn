@@ -3,7 +3,7 @@ title: 事件说明 |Microsoft Docs
 description: 了解事件类型及其使用原因。 每种类型的事件都有特定的用途。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], events
 ms.assetid: 09f61652-7e16-4bb0-8055-f61a84bf384e
@@ -12,19 +12,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd8c6dbb4eddfcffa779b70b17819bf5e92c0c45
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ee2eedac924b3bbd58fac6980da9151a88da9196
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096962"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902639"
 ---
 # <a name="event-descriptions"></a>事件说明
 每种类型的事件都有特定的用途。
 
 ## <a name="events-and-the-reasons-for-their-use"></a>事件及其使用原因
 
-|事件|说明|
+|事件|描述|
 |-----------|-----------------|
 |激活文档事件|当调试引擎 (DE) 希望 IDE 打开或将文档置于前台时出现。|
 |断点绑定或断点错误事件|当绑定断点时，或在无法绑定断点时发送，并且返回错误。|

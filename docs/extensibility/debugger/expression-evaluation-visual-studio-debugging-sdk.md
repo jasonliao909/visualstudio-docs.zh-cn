@@ -3,7 +3,7 @@ title: Visual Studio 调试 SDK) 的表达式计算 (|Microsoft Docs
 description: 在中断模式期间，IDE 将计算涉及程序变量的表达式。 了解调试引擎如何分析和计算表达式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], expression evaluation
 - expression evaluation
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9e6a79a3268f0bd4acebde795109d39466032a2f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf213c30ef26490b44579d83c68b2640360584a7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096793"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904508"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>Visual Studio 调试 SDK (的表达式计算) 
 在中断模式期间，IDE 必须评估涉及多个程序变量的简单表达式。 若要完成其评估，调试引擎 (DE) 必须分析和计算输入到 IDE 的其中一个窗口中的表达式。
@@ -32,7 +32,7 @@ ms.locfileid: "105096793"
 ## <a name="using-expression-evaluation"></a>使用表达式计算
  若要使用表达式计算，必须实现 [IDebugExpressionContext2：:P arsetext](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 方法和 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 接口的所有方法，如下表所示。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[EvaluateAsync](../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)|以异步方式计算表达式。|
 |[中断](../../extensibility/debugger/reference/idebugexpression2-abort.md)|结束异步表达式计算。|

@@ -2,7 +2,7 @@
 description: 此函数检索一个或多个文件的副本，以便进行查看和编译，但不能进行编辑。
 title: SccGet 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGet
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 172e0ec5fdba4b91c3cf86ea964b4a98a23a5fa8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 805c19b0c326e8389b4e1905edf370ad042aac92
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060336"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904547"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数检索一个或多个文件的副本，以便进行查看和编译，但不能进行编辑。 在大多数系统中，文件被标记为只读。
@@ -64,7 +64,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|获取操作成功。|
 |SCC_E_FILENOTCONTROLLED|此文件不受源代码管理。|

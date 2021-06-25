@@ -1,41 +1,41 @@
 ---
 title: 使用 DTE 启动 Visual Studio
-description: 了解如何使用 DTE 启动 Visual Studio 以支持主要版本的并行安装。 本文包括代码示例。
+description: 了解如何使用 DTE 启动Visual Studio以支持主版本并行安装。 本文包含一个代码示例。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
-ms.topic: conceptual
+ms.topic: how-to
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 549575d85de9fc1c37ebc4aa34c05e29837885df
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 253c7f106f1d139f694fea3d469385f200c84029
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060570"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903107"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 启动 Visual Studio
 
-从 Visual Studio 2017 开始，使用 DTE 启动 Visual Studio 的机制不同于启动先前版本的 Visual Studio。 此更改是必需的，因为 Visual Studio 2017 和更高版本支持主要版本的并行安装 (例如，你可以并排安装预览和发布版本) 。
+从 2017 Visual Studio开始，使用 DTE 启动Visual Studio的机制不同于启动早期版本的 Visual Studio。 此更改是必需的，因为 Visual Studio 2017 及更高版本支持主版本的并行安装 (例如，可以同时安装预览版和发布) 。
 
-本文的其余部分介绍了可用于使用 DTE 启动 Visual Studio 2019 的代码。
+本文的其余部分演示了可用于使用 DTE 启动 2019 Visual Studio的代码。
 
 ## <a name="set-up-the-project"></a>设置项目
 
-若要查看正在运行的代码，请按照以下步骤创建一个项目。
+若要了解启动代码的运行，请执行以下步骤创建项目。
 
-1. 为 .NET Framework 创建新的 **控制台应用程序** 项目。
+1. 为应用程序 **创建新的控制台** 应用.NET Framework。
 
-2. 安装 [Microsoft.VisualStudio.Setup.Configu。互操作](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 包并添加对程序集的引用。
+2. 安装 [Microsoft.VisualStudio.Setup.Configuration。互操作](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 包，并添加对程序集的引用。
 
 3. 添加对 EnvDTE 的引用。
 
-4. 将下面的 [示例代码](#example-code) 粘贴到 *程序 .cs* 文件中。
+4. 将 [下面的示例代码](#example-code) 粘贴到 *Program.cs* 文件中。
 
-5. 按 **F5** 运行该程序。 在程序退出之前，你应该会看到 Visual Studio 2019 处于打开状态。
+5. 按 **F5** 运行程序。 在程序Visual Studio之前，应会看到 2019 年已打开。
 
 ## <a name="example-code"></a>示例代码
 

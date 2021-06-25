@@ -3,7 +3,7 @@ title: 项目类型基础 |Microsoft Docs
 description: 了解何时必须创建项目类型，以及何时可以使用项目子类型扩展现有项目类型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project types [Visual Studio SDK]
 ms.assetid: 09991589-2300-430e-b6a4-7f2b95fe676f
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 86ed1c1098fe13cd19ce686782e18b190f455f8c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 051e7b76edd4559914307459fdcbdf1b7c0b600e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064288"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903549"
 ---
 # <a name="project-type-essentials"></a>项目类型基础知识
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包含多种语言的项目类型，如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 或 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还允许您创建自己的项目类型。
@@ -56,7 +56,7 @@ ms.locfileid: "105064288"
 
 - 对于 c + + 开发人员而言，HierUtil 库中的类的工作方式类似。 有关详细信息，请参阅 [不在生成中：使用 HierUtil7 项目类实现项目类型 (c + +) ](/previous-versions/bb166212(v=vs.100))。
 
-- 项目类型可以支持生成到 .exe 或 .dll 程序集中的典型源代码文件以外的其他数据。 例如， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 数据库项目包含对存储在磁盘上的脚本和查询文件的引用，并向 **解决方案资源管理器** 添加命令以对数据库执行脚本和查询，但这些项目不支持生成行为。 有关详细信息，请参阅 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
+- 项目类型可以支持生成到 .exe 或 .dll 程序集中的典型源代码文件以外的数据。 例如， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 数据库项目包含对存储在磁盘上的脚本和查询文件的引用，并向 **解决方案资源管理器** 添加命令以对数据库执行脚本和查询，但这些项目不支持生成行为。 有关详细信息，请参阅 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 - 项目类型根本不必使用文件。 例如，项目类型可以将其所有数据存储在数据库中。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使项目类型完全控制其如何保存项目和项目项的数据。 有关详细信息，请参阅 [项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)。
 

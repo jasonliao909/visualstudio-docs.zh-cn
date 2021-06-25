@@ -2,7 +2,7 @@
 description: 此函数显示文件或项目的源代码管理属性。
 title: SccProperties 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccProperties
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56306bb7c248ea500e16964c0929f34a27187298
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cd50353ab29c05e5e5db2dc2b3f363af46ca8aa7
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056514"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904186"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函数
 此函数显示文件或项目的源代码管理属性。
@@ -49,7 +49,7 @@ SCCRTN SccProperties (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功显示属性。|
 |SCC_I_RELOADFILE|版本控制系统已修改文件属性，因此 IDE 应重新加载此文件。|
