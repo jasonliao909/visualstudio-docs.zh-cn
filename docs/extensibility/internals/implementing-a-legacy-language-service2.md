@@ -3,7 +3,7 @@ title: 实现旧版语言 Service2 |Microsoft Docs
 description: 了解如何使用托管包框架 (MPF) 实现支持扩展语言服务功能的旧版语言服务。 第2部分（共2部分）。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - language services [managed package framework], implementing
 ms.assetid: 5bcafdc5-f922-48f6-a12e-6c8507a79a05
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdb0d05faaa139b808d8d117125c5208da470e9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fca2548ddb0c8281241b14de0ec470cfe22db1a1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085814"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900117"
 ---
 # <a name="implementing-a-legacy-language-service-2"></a>实现旧版语言服务2
 若要使用托管包框架 (MPF) 实现语言服务，必须从类派生一个类 <xref:Microsoft.VisualStudio.Package.LanguageService> ，并实现以下抽象方法和属性：
@@ -195,7 +195,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-languageservice-class"></a>在 LanguageService 类中
 
-|方法|返回的类|说明|
+|方法|返回的类|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateCodeWindowManager%2A>|<xref:Microsoft.VisualStudio.Package.CodeWindowManager>|支持对文本视图进行自定义添加。|
 |<xref:Microsoft.VisualStudio.Package.LanguageService.CreateDocumentProperties%2A>|<xref:Microsoft.VisualStudio.Package.DocumentProperties>|支持自定义文档属性。|
@@ -212,7 +212,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-source-class"></a>在源类中
 
-|方法|返回的类|说明|
+|方法|返回的类|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateCompletionSet%2A>|<xref:Microsoft.VisualStudio.Package.CompletionSet>|为了自定义 IntelliSense 完成列表的显示 (通常不会) 重写此方法。|
 |<xref:Microsoft.VisualStudio.Package.Source.CreateErrorTaskItem%2A>|<xref:Microsoft.VisualStudio.Package.DocumentTask>|错误列表任务列表中的支持标记;具体而言，支持除打开文件并跳转到导致错误的行以外的功能。|
@@ -222,7 +222,7 @@ namespace TestLanguagePackage
 
 ### <a name="in-the-authoringscope-class"></a>在 AuthoringScope 类中
 
-|方法|返回的类|说明|
+|方法|返回的类|描述|
 |------------|--------------------|-----------------|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDeclarations%2A>|<xref:Microsoft.VisualStudio.Package.Declarations>|提供一个声明列表，如成员或类型。 必须实现此方法，但可以返回 null 值。 如果此方法返回有效的对象，则该对象必须是您的类版本的实例 <xref:Microsoft.VisualStudio.Package.Declarations> 。|
 |<xref:Microsoft.VisualStudio.Package.AuthoringScope.GetMethods%2A>|<xref:Microsoft.VisualStudio.Package.Methods>|提供给定上下文的方法签名列表。 必须实现此方法，但可以返回 null 值。 如果此方法返回有效的对象，则该对象必须是您的类版本的实例 <xref:Microsoft.VisualStudio.Package.Methods> 。|

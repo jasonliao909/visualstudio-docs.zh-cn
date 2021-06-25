@@ -1,9 +1,9 @@
 ---
-title: 键绑定元素 |Microsoft Docs
-description: 键绑定元素指定命令的键盘快捷方式。 命令可以有与之关联的单键和双键绑定。
+title: KeyBinding 元素|Microsoft Docs
+description: KeyBinding 元素指定命令的键盘快捷方式。 命令可以同时具有与之关联的单键绑定和双键绑定。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, KeyBindings
 - KeyBinding element (VSCT XML schema)
@@ -13,17 +13,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9162d9b21c54577e48f4dced6ddddd7138c9de66
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6afd0a9658f088b66f2c18c632ffcd7b9a09f555
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074088"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898856"
 ---
-# <a name="keybinding-element"></a>键绑定元素
-键绑定元素指定命令的键盘快捷方式。
+# <a name="keybinding-element"></a>KeyBinding 元素
+KeyBinding 元素指定命令的键盘快捷方式。
 
- 命令可以有与之关联的单键和双键绑定。 "保存" 命令的一个键绑定示例是 **Ctrl** + **S** 。  双键绑定需要两个连续的键组合来触发命令。 例如 <strong>，按 ctrl *+</strong> k <strong>、</strong>ctrl <strong>+</strong> k** 来设置书签。
+ 命令可以同时具有与之关联的单键绑定和双键绑定。 单个键绑定的一个示例是 **"保存** + **"命令** 的Ctrl S。 双键绑定需要两个连续的键组合来触发命令。 双键绑定的一个示例是 <strong>Ctrl *+</strong> K <strong>，Ctrl</strong> <strong>+</strong> K** 用于设置书签。
 
 ## <a name="syntax"></a>语法
 
@@ -36,30 +36,30 @@ ms.locfileid: "105074088"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |GUID|必需。|
 |id|必需。|
-|编辑器|必需。 编辑器 GUID 指示此键盘快捷键将处于活动状态的编辑上下文。 全局绑定范围值为 "guidVSStd97"。|
-|key1|必需。 有效值包括所有 typable 字母数字，以及以0x 和 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)开头的两位数十六进制值。|
-|mod1|可选。 由空格分隔的 **Ctrl**、 **Alt** 和 **Shift** 的任意组合。|
-|key2|可选。 有效值包括所有 typable 字母数字，以及以0x 和 [VK_constants](/windows/desktop/inputdev/virtual-key-codes)开头的两位数十六进制值。|
-|mod2|可选。 由空格分隔的 **Ctrl**、 **Alt** 和 **Shift** 的任意组合。|
+|编辑器|必需。 编辑器 GUID 指示此键盘快捷方式将处于活动状态的编辑上下文。 全局绑定范围值为"guidVSStd97"。|
+|key1|必需。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants 的两位数[十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
+|mod1|可选。 **Ctrl、Alt** 和Shift 的任意组合 **，用** 空格分隔。|
+|key2|可选。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants 的两位数[十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
+|mod2|可选。 **Ctrl、Alt** 和Shift 的任意组合 **，用** 空格分隔。|
 |模拟器|可选。|
-|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |Parent||
-|批注||
+|Annotation||
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[键绑定元素](../extensibility/keybindings-element.md)|将键绑定元素和其他键绑定分组分组。|
+|[KeyBindings 元素](../extensibility/keybindings-element.md)|对 KeyBinding 元素和其他 KeyBindings 分组进行分组。|
 
 ## <a name="example"></a>示例
 
@@ -73,5 +73,5 @@ ms.locfileid: "105074088"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [键绑定元素](../extensibility/keybindings-element.md)
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [KeyBindings 元素](../extensibility/keybindings-element.md)
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
