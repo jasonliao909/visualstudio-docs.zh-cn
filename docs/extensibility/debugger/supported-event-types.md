@@ -3,7 +3,7 @@ title: 支持的事件类型 |Microsoft Docs
 description: 了解 Visual Studio 调试支持的事件类型，包括异步事件、同步事件和停止事件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], supported events
 ms.assetid: a3c0386d-551e-4734-9a0c-368d1c2e6671
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 883c9fd51cc4dfc4f2cc2f996d24c0722478505f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fff86a142f541c1b17012b6190dd68e8d5628a3c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079405"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902899"
 ---
 # <a name="supported-event-types"></a>支持的事件类型
 Visual Studio 调试当前支持以下事件类型：
@@ -47,7 +47,7 @@ Visual Studio 调试当前支持以下事件类型：
   > [!NOTE]
   > 不支持异步停止事件。 发送异步停止事件是错误的。
 
-## <a name="discussion"></a>讨论 (Discussion)
+## <a name="discussion"></a>讨论区
  事件的实际实现取决于您的 DE 的设计。 发送的每个事件的类型由其特性确定，这是在设计 DE 时设置的。 例如，一个 DE 可能会以异步事件的形式发送 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) ，而另一个则可能将其作为停止事件发送。
 
  下表指定了哪些事件以及事件类型需要哪个程序和线程参数。 任何事件都可以是同步的。 无事件需要同步。

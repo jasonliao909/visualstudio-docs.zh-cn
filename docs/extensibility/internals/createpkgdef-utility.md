@@ -1,9 +1,9 @@
 ---
 title: CreatePkgDef 实用程序 |Microsoft Docs
-description: 了解 CreatePkgDef 实用工具，该实用工具将 Visual Studio 扩展的 .dll 文件作为参数，并创建与 .dll 文件一起使用的 .pkgdef 文件。
+description: 了解将 Visual Studio 扩展的 .dll 文件作为参数的 CreatePkgDef 实用工具，并创建 .dll 文件附带的 .pkgdef 文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - package definition
 - create pkgdef
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 519cc251a245e1eeb65ddb1fcd34b0fa1af8f686
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bfbd4b42d9ceddd40e08c28926a59aecba719fe9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056878"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898118"
 ---
 # <a name="createpkgdef-utility"></a>CreatePkgDef 实用程序
-将 Visual Studio 扩展的 .dll 文件作为参数，并创建 *.pkgdef* 文件以伴随 *.dll* 文件。 *.Pkgdef* 文件包含在安装扩展后将写入系统注册表的所有信息。
+将 Visual Studio 扩展的 .dll 文件作为参数，并创建 *.dll* 文件附带的 *.pkgdef* 文件。 *.Pkgdef* 文件包含在安装扩展后将写入系统注册表的所有信息。
 
 > [!NOTE]
 > Visual Studio SDK 中包含的大多数项目模板会自动在生成过程中创建 *.pkgdef* 文件。 本文档适用于想要手动创建包的人员，或将现有包转换为使用 *.pkgdef*  部署。
@@ -34,7 +34,7 @@ ms.locfileid: "105056878"
 CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 ```
 
-## <a name="arguments"></a>参数
+## <a name="arguments"></a>自变量
 **/out = &lt; FileName&gt;**\
 必需。 将 *.pkgdef* 输出文件的名称设置为 &lt; FileName &gt; 。
 
@@ -45,7 +45,7 @@ CreatePkgDef /out=<FileName> [/codebase] [/assembly] <AssemblyPath>
 强制对 **程序集** 实用程序进行注册。
 
 **&lt;AssemblyPath&gt;**\
-要从中生成 *. .pkgdef* 的 *.dll* 文件的路径。
+要从中生成 *.pkgdef* 的 *.dll* 文件的路径。
 
 ## <a name="remarks"></a>备注
 使用 *.pkgdef* 文件的扩展部署将替换 Visual Studio 早期版本的注册表要求。

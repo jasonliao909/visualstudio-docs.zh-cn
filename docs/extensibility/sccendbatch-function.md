@@ -2,7 +2,7 @@
 description: 此函数将结束一批源代码管理操作。
 title: SccEndBatch 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccEndBatch
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3bad3604c57661d0e0e091299cef127d9215d56
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 11ff596f19d3a98b929f9346bbf579e0ad1258c5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090208"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904586"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
 此函数将结束一批源代码管理操作。 这些批处理不能嵌套。
@@ -35,7 +35,7 @@ SCCRTN SccEndBatch(void);
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功结束批处理操作。|
 |SCC_E_UNKNOWNERROR|非特定故障。|

@@ -1,8 +1,8 @@
 ---
 description: 表示延迟初始化的生成任务。
-title: AsyncTaskMethodBuilder &lt; TResult &gt; .m_task 字段 |Microsoft Docs
+title: AsyncTaskMethodBuilder &lt; TResult &gt; .m_task Field |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_task field, AsyncTaskMethodBuilder<TResult> structure [.NET Framework debug engines]
 ms.assetid: 649abf0e-0fec-49d9-93b2-8953521f7ba5
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9975d7b06267c14545dff26293ac4213ae719f9e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9d8dbbfce60983bae6f4909f5705823ef3514b70
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055487"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903822"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder &lt; TResult &gt; .m_task 字段
 表示延迟初始化的生成任务。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assembly：** mscorlib (mscorlib.dll) 
+ **程序集：mscorlib** (mscorlib.dll) 
 
- 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
+ 由于无法从 CIL .NET Framework访问此内部成员，因此 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 
@@ -35,4 +35,4 @@ ms.locfileid: "105055487"
 
 ## <a name="see-also"></a>另请参阅
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
-- [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,9 +1,9 @@
 ---
-title: UsedCommands 元素 |Microsoft Docs
-description: UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。 UsedCommands 元素是可选的。
+title: UsedCommands 元素|Microsoft Docs
+description: UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 分组分组。 UsedCommands 元素是可选的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - UsedCommands
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b05c9571c0ca8252789f0e07ebfce66926fb19ff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21233527c9fcfb97fd45a8eeed60c04927df8ba1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060206"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903029"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 元素
-UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。
+UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 分组分组。
 
- UsedCommands 元素是可选的。 如果未调用在包外定义的命令，则不需要在 .vsct 文件中包含此部分。
+ UsedCommands 元素是可选的。 如果不调用在包外部定义的命令，则不需要在 .vsct 文件中包含此部分。
 
 ## <a name="syntax"></a>语法
 
@@ -42,19 +42,19 @@ UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[UsedCommand 元素](../extensibility/usedcommand-element.md)|其他代码实现的命令。|
+|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他代码实现的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给集成开发环境 (IDE) ) 的命令 (例如，菜单项、菜单、工具栏和组合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素， (如菜单项、菜单、工具栏和组合框) VSPackage 为集成开发环境 (IDE) 。|
 
 ## <a name="example"></a>示例
 

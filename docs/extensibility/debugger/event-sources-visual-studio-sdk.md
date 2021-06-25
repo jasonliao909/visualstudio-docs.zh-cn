@@ -3,7 +3,7 @@ title: Visual Studio SDK)  (事件源 |Microsoft Docs
 description: 在 Visual Studio 调试中了解两个事件源：调试引擎和会话调试管理器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], event sources
 ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec6213a1462c391d13bbdf8a20ac61e232cafb49
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097001"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898560"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Visual Studio SDK (事件源) 
 事件有两个源：调试引擎 (DE) 和会话调试管理器 (SDM) 。 从 DE 发送的事件具有非 NULL 引擎，而从 SDM 发送的事件具有 NULL 引擎。

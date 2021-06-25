@@ -3,7 +3,7 @@ title: 编辑器导入 |Microsoft Docs
 description: 了解如何导入编辑器服务、工厂和代理，并使用对核心编辑器的不同类型的访问权限来提供扩展。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - editors [Visual Studio SDK], new - services
 ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0587ed6487ec3a1bb833a804bb5ffa76cbc101f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f2fa91b41017512b3f38ad61b800b293e0abaa1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070149"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898339"
 ---
 # <a name="editor-imports"></a>编辑器导入
 你可以导入多个编辑器服务、工厂和代理，它们为你的扩展提供对核心编辑器的不同类型的访问。 例如，你可以导入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以便为你提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 给定内容类型的。  (此导航器可对文本缓冲区执行不同种类的搜索。 ) 

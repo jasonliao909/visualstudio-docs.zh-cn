@@ -1,8 +1,8 @@
 ---
-description: 存储有关系统的当前状态的信息。
-title: m_stateFlags 字段 |Microsoft Docs
+description: 存储有关 System.Threading.Tasks.Task 对象的当前状态的信息。
+title: m_stateFlags字段|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - m_stateFlags field, Task class [.NET Framework debug engines]
 ms.assetid: 82b20efc-08f2-4cd2-91f6-4e01e3da906b
@@ -11,21 +11,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5df101d0c75ad7bd2a12393c4440c7dcd5484656
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bf584511bc2f0ee43429abe83dea3d7a45259d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059660"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898908"
 ---
-# <a name="m_stateflags-field"></a>m_stateFlags 字段
-存储有关对象的当前状态的信息 <xref:System.Threading.Tasks.Task> 。
+# <a name="m_stateflags-field"></a>m_stateFlags字段
+存储有关对象的当前状态 <xref:System.Threading.Tasks.Task> 的信息。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly：** mscorlib (*mscorlib.dll*) 
+ **程序集：mscorlib** (*mscorlib.dll*) 
 
- 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
+ 由于无法从 CIL 访问此内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
 
 ## <a name="syntax"></a>语法
 

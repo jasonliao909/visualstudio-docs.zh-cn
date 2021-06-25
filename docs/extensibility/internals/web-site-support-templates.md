@@ -3,7 +3,7 @@ title: 网站支持模板 |Microsoft Docs
 description: 了解网站支持模板。 Visual Studio 网站项目和项模板提供可重用且可自定义的网站项目和项存根。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - we site projects, templates
 ms.assetid: 37173c97-486b-4b3c-8ed3-cf5890c4de23
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c39e900bbdddd1d558bd0604f16924d2536cb98
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a1bd391d13a6d650cb4d23ce78789a66ef50c2e3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069084"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898884"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供可重用且可自定义的网站项目和项存根，可通过无需从头开始创建新的网站项目和项来加速开发过程。 有关模板的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，请参阅 [创建项目和项模板](../../ide/creating-project-and-item-templates.md)。
@@ -151,40 +151,40 @@ ms.locfileid: "105069084"
 
 - Codebehind. *extension*
 
-     实现 webform 类的依赖文件。 代码隐藏语言确定此文件的 *扩展名* 。
+     实现 webform 类的依赖文件。 代码后发语言确定 *此文件* 的扩展名。
 
-- ContentPage .aspx
+- ContentPage.aspx
 
-     作为内容页的网页的起始内容。 此网页没有关联的代码隐藏依赖文件。
+     网页作为内容页的起始内容。 此网页没有关联的代码后发依赖文件。
 
-- ContentPage_cb .aspx
+- ContentPage_cb.aspx
 
-     作为内容页的网页的起始内容。 此网页包含关联的代码隐藏依赖文件。
+     网页作为内容页的起始内容。 此网页具有关联的代码后发依赖文件。
 
-- WebForm
+- WebForm.vstemplate
 
-     确定新网页的内容及其依赖文件（如果有）的模板文件。
+     用于确定新网页的内容及其依赖文件的模板文件（如果有）。
 
-### <a name="new-master-page"></a>新母版页
- 此模板创建一个新的母版页，以响应 " **添加新的母版页** " 命令。
+### <a name="new-master-page"></a>新建母版页
+ 此模板创建新的母版页以响应"添加新 **母版页"** 命令。
 
- 若要创建依赖的代码隐藏源文件，请选择 " **将代码放在单独的文件中**"。 否则，将创建一个具有空脚本块且没有 \<% Page %> 用于挂钩依赖文件的指令的单个网页。
+ 若要创建依赖代码后发源文件，请选择"**将代码放在单独的文件中"。** 否则，将创建一个包含空脚本块且没有用于 \<% Page %> 挂钩依赖文件的指令的网页。
 
-- MasterPage
+- MasterPage.master
 
-     母版页的起始内容。 此母版页没有关联的代码隐藏依赖文件。
+     母版页的起始内容。 此母版页没有关联的代码后发依赖文件。
 
-- MasterPage_cb master
+- MasterPage_cb.master
 
-     母版页的起始内容。 此母版页具有关联的代码隐藏依赖文件。
+     母版页的起始内容。 此母版页具有关联的代码后发依赖文件。
 
-- Codebehind.*扩展*
+- Codebehind。*扩展*
 
-     实现母版页类的依赖文件。 代码隐藏语言确定此文件的 *扩展名* 。
+     实现母版页类的依赖文件。 代码后发语言确定 *此文件* 的扩展名。
 
-- MasterPage
+- MasterPage.vstemplate
 
-     确定新母版页的内容及其依赖文件（如果有）的模板文件。
+     用于确定新母版页的内容及其依赖文件的模板文件（如果有）。
 
 ## <a name="see-also"></a>另请参阅
 - [网站支持](../../extensibility/internals/web-site-support.md)

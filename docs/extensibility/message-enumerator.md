@@ -3,7 +3,7 @@ title: 消息枚举器 |Microsoft Docs
 description: 此枚举器的成员用于 TEXTOUTPROC 函数，该函数是 IDE 在调用 SccOpenProject 时提供的回调函数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - message enumerator
 - source control plug-ins, message enumeration
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 113f9fe8470b718a219e967b41bc92ecab2cf3c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 77c49f79ccdcfc4aa0325b89dfb38f3f8d4da721
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063989"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902587"
 ---
 # <a name="message-enumerator"></a>消息枚举器
 以下标志用于 `TEXTOUTPROC` 函数，该函数是 IDE 在调用 [SccOpenProject](../extensibility/sccopenproject-function.md) 时提供的回调函数 (请参阅 [LPTEXTOUTPROC](../extensibility/lptextoutproc.md) ，以获取回调函数) 的详细信息。

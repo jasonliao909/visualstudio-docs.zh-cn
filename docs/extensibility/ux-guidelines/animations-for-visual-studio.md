@@ -3,19 +3,19 @@ title: Visual Studio 的动画 |Microsoft Docs
 description: 了解有助于确保跨 Visual Studio IDE 的一致和用户友好动画样式的规则。
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85ebfd4f396a5ae0e04ff5e7cc0f52bba1825ec5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f1e8e61e5decea326fcb7f670ed2ab58f0137530
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060258"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902782"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的动画
 ## <a name="animation-fundamentals"></a>动画基础知识
@@ -330,14 +330,14 @@ UI 出现的情况突然出现，用户不知道发生了什么情况，添加�
 - 缓动样式：正弦 InOut
 
 ##### <a name="example"></a>示例
-选项卡重新排序
+Tab 重新排序
 
 #### <a name="rotate"></a>旋转
-通过此模式，UI 元素会旋转。
+在此模式中，UI 元素将旋转。
 
 ![UI 元素旋转动画](../../extensibility/ux-guidelines/media/1202-g_rotate.png "1202-g_Rotate")<br />UI 元素旋转动画
 
-##### <a name="correct-usage"></a>正确使用
+##### <a name="correct-usage"></a>正确用法
 仅适用于不确定的旋转进度指示器。
 
 ##### <a name="animation-properties"></a>动画属性
@@ -349,62 +349,62 @@ UI 出现的情况突然出现，用户不知道发生了什么情况，添加�
 - 持续时间：连续
 
 ##### <a name="example"></a>示例
-不确定的进度指示器 (旋转) 
+不确定旋转进度 (指示器) 
 
-### <a name="common-shell-ui-actions-and-recommended-animations"></a>常见 shell UI 操作和建议的动画
+### <a name="common-shell-ui-actions-and-recommended-animations"></a>常见的 shell UI 操作和推荐的动画
 
-#### <a name="tab-open"></a>打开的选项卡
-![选项卡打开动画](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />选项卡打开动画
+#### <a name="tab-open"></a>选项卡打开
+![Tab 打开动画](../../extensibility/ux-guidelines/media/1202-h_tabopen.png "1202-h_TabOpen")<br />Tab 打开动画
 
 - 样式：显示
 
-- 持续时间：0秒
+- 持续时间：零秒
 
-#### <a name="tab-close"></a>制表符关闭
-![选项卡关闭动画](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />选项卡关闭动画
+#### <a name="tab-close"></a>Tab 关闭
+![Tab 关闭动画](../../extensibility/ux-guidelines/media/1202-i_tabclose.png "1202-i_TabClose")<br />Tab 关闭动画
 
-- Style： X 位置更改
+- 样式：X 位置更改
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
-#### <a name="tab-reorder"></a>选项卡重新排序
-![Visual Studio 中的选项卡重新排序动画](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />选项卡重新排序动画
+#### <a name="tab-reorder"></a>Tab 键重新排序
+![Visual Studio 中的选项卡重新排序动画](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Tab 重新排序动画
 
-- Style： X 位置更改
+- 样式：X 位置更改
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
 #### <a name="close-floating-document"></a>关闭浮动文档
 ![关闭浮动文档动画](../../extensibility/ux-guidelines/media/1202-k_closefloatingdocument.png "1202-k_CloseFloatingDocument")<br />关闭浮动文档动画
 
 - 样式：显示
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
 #### <a name="window-state-transition"></a>窗口状态转换
 ![窗口状态转换动画](../../extensibility/ux-guidelines/media/1202-l_windowstatetransition.png "1202-l_WindowStateTransition")<br />窗口状态转换动画
 
-- Style：若要与其他窗口保持一致，请让当前操作系统定义文档关闭动画。
+- 样式：为了与其他窗口保持一致，让当前操作系统定义文档关闭动画。
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
 #### <a name="menu-open"></a>菜单打开
 ![菜单打开动画](../../extensibility/ux-guidelines/media/1202-m_menuopen.png "1202-m_MenuOpen")<br />菜单打开动画
 
 - 样式：淡入
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
 #### <a name="menu-close"></a>菜单关闭
 ![菜单关闭动画](../../extensibility/ux-guidelines/media/1202-n_menuclose.png "1202-n_MenuClose")<br />菜单关闭动画
 
 - 样式：淡出
 
-- 持续时间：200毫秒
+- 持续时间：200 毫秒
 
 #### <a name="auto-hide-tool-window-reveal"></a>自动隐藏工具窗口显示
 ![自动隐藏工具窗口显示动画](../../extensibility/ux-guidelines/media/1202-o_autohidetoolwindowreveal.png "1202-o_AutoHideToolWindowReveal")<br />自动隐藏工具窗口显示动画
 
 - 样式：显示
 
-- 持续时间：0秒
+- 持续时间：零秒

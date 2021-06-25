@@ -3,7 +3,7 @@ title: "\"属性\" 窗口对象列表 |Microsoft Docs"
 description: 了解用于与 Visual Studio IDE 中的属性窗口中的对象列表进行交互的接口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Properties window, object list
 ms.assetid: 6c159c9d-345d-4b23-8ddd-9839d338b62f
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 489ea25e0b06ab69650d4b48a306483945b34598
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 908acf3f8ecad390266c3d085778dc13077a6fa8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060973"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903432"
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
 " **属性** " 窗口中的对象列表是一个下拉列表，可用于将所选内容更改为在一个或多个选定窗口中可用的其他对象。 选择此列表中的不同对象将触发对的调用 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> ，以通知环境已选择了新的对象。 然后，将更改在 " **属性** " 窗口中显示的信息，以显示与新选择的对象相关联的属性。

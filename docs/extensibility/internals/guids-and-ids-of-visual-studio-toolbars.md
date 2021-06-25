@@ -3,7 +3,7 @@ title: Visual Studio 工具栏的 Guid 和 Id |Microsoft Docs
 description: 查看工具栏及其包含的组的 GUID 和 ID 值的列表，这些值包含在 Visual Studio 集成开发环境中 (IDE) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - visual studio groups
 - toolbars
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ca3a2ec0b9d0eef7821641eaf05e93f83f94f40
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3d2ba6c92a2913ec63a59751a4181454aa67fa67
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082070"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898105"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具栏的 Guid 和 Id
 本主题枚举 Visual Studio 集成开发环境中包含的工具栏的 GUID 和 ID 值 (IDE) 以及它们所包含的组。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -107,15 +107,15 @@ ms.locfileid: "105082070"
 |调试位置|IDG_DEBUG_CONTEXT_TOOLBAR|
 
 ## <a name="tool-window-toolbars"></a>工具窗口工具栏
- 工具栏可以直接出现在 IDE 或工具窗口（如 **解决方案资源管理器**）中。 由于未在 *.vsct* 文件中定义工具窗口，因此工具窗口工具栏没有定义的父级。 而是放置在代码中。 下表显示在 IDE 中的工具窗口上显示的工具栏以及它们所包含的命令组。
+ 工具栏可以直接显示在 IDE 中，也可以直接显示在工具窗口中，例如 **解决方案资源管理器。** 由于 *.vsct* 文件中未定义工具窗口，因此工具窗口工具栏没有定义的父窗口。 相反，它们放置在代码中。 下表显示了 IDE 中工具窗口上显示的工具栏及其包含的命令组。
 
 > [!NOTE]
-> `guidSHLMainMenu`除了使用 guid： ID 语法指定的情况外，工具栏和组使用 guid。 如果为工具栏指定了 GUID，它也适用于从该工具栏中继承的组。
+> 工具栏和组使用 GUID `guidSHLMainMenu` ，除非使用 GUID：ID 语法指定。 如果为工具栏指定了 GUID，则它也适用于从该工具栏降序的组。
 
 |工具窗口|工具栏|组|
 |-----------------|-------------|------------|
-|“解决方案资源管理器”|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1.。5|
-|服务器资源管理器|guid_SE_MenuGroup： IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
+|解决方案资源管理器|IDM_VS_TOOL_PROJWIN|IDG_VS_PROJ_TOOLBAR1。。5|
+|服务器资源管理器|guid_SE_MenuGroup：IDM_SE_TOOLBAR_SERVEREXPLORER|IDG_SE_TOOLBAR_REFRESH|
 |属性|IDM_VS_TOOL_PROPERTIES|IDG_VS_PROPERTIES_SORT<br /><br /> IDG_VS_PROPERTIES_PAGES|
 |类视图|IDM_VS_TOOL_CLASSVIEW|IDG_VS_CLASSVIEW_FOLDERS<br /><br /> IDG_VS_CLASSVIEW_SEARCH<br /><br /> IDG_VS_CLASSVIEW_SETTINGS|
 |类视图|IDM_VS_TOOL_CLASSVIEW_GO|IDG_VS_CLASSVIEW_SEARCH2|
@@ -123,20 +123,20 @@ ms.locfileid: "105082070"
 |对象浏览器|IDM_VS_TOOL_OBJECT_BROWSER_GO|IDG_VS_OBJBROWSER_SEARCH2|
 |输出|IDM_VS_TOOL_OUTPUTWINDOW|IDG_VS_OUTPUTWINDOW_SELECT<br /><br /> IDG_VS_OUTPUTWINDOW_GOTO<br /><br /> IDG_VS_OUTPUTWINDOW_NEXTPREV<br /><br /> IDG_VS_OUTPUTWINDOW_CLEAR<br /><br /> IDG_VS_OUTPUTWINDOW_WORDWRAP|
 |查找和替换|IDM_VS_TOOL_UNIFIEDFIND|IDG_VS_FINDTAB<br /><br /> IDG_VS_REPLACETAB|
-|查找结果1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
-|查找结果2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|
+|查找结果 1|IDM_VS_TOOL_FINDRESULTS1|IDG_VS_FINDRESULTS1_GOTO<br /><br /> IDG_VS_FINDRESULTS1_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS1_CLEAR<br /><br /> IDG_VS_FINDRESULTS1_STOPFIND|
+|查找结果 2|IDM_VS_TOOL_FINDRESULTS2|IDG_VS_FINDRESULTS2_GOTO<br /><br /> IDG_VS_FINDRESULTS2_NEXTPREV<br /><br /> IDG_VS_FINDRESULTS2_CLEAR<br /><br /> IDG_VS_FINDRESULTS2_STOPFIND|
 |片段|IDM_VS_TOOL_SNIPPETMENUS|IDG_VS_SNIPPET_REPL<br /><br /> IDG_VS_SNIPPET_REF<br /><br /> IDG_VS_SNIPPET_PROP|
 |书签|IDM_VS_TOOL_BOOKMARKWIND|IDG_VS_BWNEWFOLDER<br /><br /> IDG_VS_BWNEXTBM<br /><br /> IDG_VS_BWNEXTBMF<br /><br /> IDG_VS_BWENABLE<br /><br /> IDG_VS_BWDELETE|
 |任务列表|IDM_VS_TOOL_TASKLIST|IDG_VS_TASKLIST_PROVIDERLIST|
 |用户任务|IDM_VS_TOOL_USERTASKS|IDG_VS_TASKLIST_PROVIDERLIST<br /><br /> IDG_VS_USERTASKS_EDIT|
 |错误列表|IDM_VS_TOOL_ERRORLIST|IDG_VS_ERRORLIST_ERRORGROUP<br /><br /> IDG_VS_ERRORLIST_WARNINGGROUP<br /><br /> IDG_VS_ERRORLIST_MESSAGEGROUP|
-|调用浏览器|IDM_VS_TOOL_CALLBROWSER1.。超过|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
-|断点|guidVSDebugGroup： IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
-|反汇编|guidVSDebugGroup： IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
-|内存1-4|guidVSDebugGroup： IDM_MEMORY_WINDOW_TOOLBAR1 .。。4|IDG_MEMORY_EXPRESSION1.。4<br /><br /> IDG_MEMORY_COLUMNS1.。4|
-|进程|guidVSDebugGroup： IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
+|调用浏览器|IDM_VS_TOOL_CALLBROWSER1。。16|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
+|断点|guidVSDebugGroup：IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
+|反汇编|guidVSDebugGroup：IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
+|内存 1-4|guidVSDebugGroup：IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1。。4<br /><br /> IDG_MEMORY_COLUMNS1。。4|
+|进程|guidVSDebugGroup：IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
 ## <a name="see-also"></a>另请参阅
-- [向工具栏添加菜单控制器](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
-- [将工具栏添加到工具窗口](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
-- [Visual Studio 菜单的 Guid 和 Id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+- [将菜单控制器添加到工具栏](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
+- [向工具窗口添加工具栏](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [菜单的 GUID 和 VISUAL STUDIO](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

@@ -3,7 +3,7 @@ title: 将属性公开到 "属性" 窗口 |Microsoft Docs
 description: 了解对象的公共属性。 对这些属性所做的更改将反映在属性窗口中。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - properties [Visual Studio SDK], exposing in Property Browser
 - properties [Visual Studio SDK]
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9de86e956fe6a4d7841d519d7252b75ae216229
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5f932772b031332d7df2a2487c70576f49407ba1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075245"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112898732"
 ---
 # <a name="expose-properties-to-the-properties-window"></a>向属性窗口公开属性
 

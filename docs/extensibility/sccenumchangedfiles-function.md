@@ -2,7 +2,7 @@
 description: 给定一个本地文件列表，此函数确定哪些文件与源代码管理数据库中对应的版本不同。
 title: SccEnumChangedFiles 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccEnumChangedFiles
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 10f14fb915d461255eddbd4a00747dfbdf59cde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2b0707c049013fd3a0272d1f024e4fdbc342bab1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085554"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904534"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 给定一个本地文件列表，此函数确定哪些文件与源代码管理数据库中对应的版本不同。
@@ -59,7 +59,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|操作已成功完成。|
 |SCC_UNSPECIFIEDERROR|常规错误。|

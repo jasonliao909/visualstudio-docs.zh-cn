@@ -3,7 +3,7 @@ title: 键绑定元素 |Microsoft Docs
 description: 键绑定元素将键绑定元素和其他键绑定组分组。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - KeyBindings
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: a590dc8bc1313e5c32b26465ae3dd346ed0564fd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 128b28ff77515ac4b567ecdb8f536851da4d33ce
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074010"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903367"
 ---
 # <a name="keybindings-element"></a>键绑定元素
 键绑定元素将键绑定元素和其他键绑定组分组。
@@ -45,14 +45,14 @@ ms.locfileid: "105074010"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[键绑定元素](../extensibility/keybinding-element.md)|指定命令的键盘快捷方式。|
 |[键绑定](../extensibility/keybindings-element.md)|将键绑定元素和其他键绑定分组分组。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素。|
 

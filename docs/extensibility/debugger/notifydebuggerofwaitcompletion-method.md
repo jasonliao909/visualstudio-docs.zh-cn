@@ -1,9 +1,9 @@
 ---
-title: NotifyDebuggerOfWaitCompletion 方法 |Microsoft Docs
-description: 了解 NotifyDebuggerOfWaitCompletion 方法，该方法是调试器使用的占位符作为断点目标。
+title: NotifyDebuggerOfWaitCompletion 方法|Microsoft Docs
+description: 了解 NotifyDebuggerOfWaitCompletion 方法，该方法是调试器用作断点目标的占位符。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - NotifyDebuggerOfWaitCompletion method, Task class [.NET Framework debug engines]
 ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
@@ -12,19 +12,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d58bb7a5e3a3395b534e5679ec303e5d93d5dc85
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7b9d6b5fbdcb8195709a751117056bcaa0617eff
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054733"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904212"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 方法
-调试器使用的占位符方法作为断点目标。 此方法不能内联或优化。
+调试器用作断点目标的占位符方法。 此方法不得是内向或优化的。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly：** mscorlib (*mscorlib.dll*) 
+ **程序集：mscorlib** (*mscorlib.dll*) 
 
 ## <a name="syntax"></a>语法
 
@@ -33,7 +33,7 @@ private void NotifyDebuggerOfWaitCompletion()
 ```
 
 ## <a name="remarks"></a>备注
- 如果设置了调试器通知位，则与任务的所有联接操作都应调用此方法。
+ 如果设置了任务的调试器通知位，则具有任务的所有联接操作都应调用此方法。
 
 ## <a name="requirements"></a>要求
 

@@ -3,7 +3,7 @@ title: 项目持久性 |Microsoft Docs
 description: 了解项目设计中的持久性，包括使用 IPersistFileFormat 来持久保存文件和非基于文件的项目对象。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - persistence, projects
 - projects [Visual Studio SDK], persistance
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ffaeb6d43597e93586db79c305b654b42bf6dbb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17b9fc40a93a926fde5edc28e93f7751b919611c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062793"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903640"
 ---
 # <a name="project-persistence"></a>项目持久性
 持久性是项目的重要设计注意事项。 大多数项目使用代表文件的项目项; [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还支持其数据不是基于文件的项目。 项目和项目文件所拥有的文件必须保存。 IDE 指示项目保存自身或项目项。

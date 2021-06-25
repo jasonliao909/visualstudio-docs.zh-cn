@@ -3,7 +3,7 @@ title: LPTEXTOUTPROC |Microsoft Docs
 description: 了解 LPTEXTOUTPROC 函数指针。 Visual Studio IDE 实现了用于显示错误和状态的函数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - LPTEXTOUTPROC
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e014d72fb3ae2b691f4a6eed28f14ff21656ef64
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c313375efe8afd17dd5d76f55de4cdaf016bab40
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073178"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903094"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -51,7 +51,7 @@ mesg_type
 
 消息的类型。 下表列出了此参数支持的值。
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |`SCC_MSG_INFO, SCC_MSG_WARNING, SCC_MSG_ERROR`|消息被视为信息、警告或错误。|
 |`SCC_MSG_STATUS`|此消息显示状态，并且可以显示在状态栏中。|
@@ -65,7 +65,7 @@ mesg_type
 
 ## <a name="return-value"></a>返回值
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_MSG_RTN_OK|字符串已显示或操作已成功完成。|
 |SCC_MSG_RTN_CANCEL|用户要取消该操作。|

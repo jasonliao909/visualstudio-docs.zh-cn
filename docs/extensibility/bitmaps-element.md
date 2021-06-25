@@ -3,7 +3,7 @@ title: 位图元素 |Microsoft Docs
 description: Bitmap 元素对一个或多个位图元素进行分组。 本文包含一个位图元素示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Bitmaps
 - Bitmaps element (VSCT XML schema)
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc17162c8d66df99eefe721589863ee4221c8602
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a86943e683502bdd1cd19668e9aafcb8fe7e1bc8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068201"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903302"
 ---
 # <a name="bitmaps-element"></a>位图元素
 组 [位图元素](../extensibility/bitmap-element.md) 元素。
@@ -43,16 +43,16 @@ ms.locfileid: "105068201"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[位图元素](../extensibility/bitmaps-element.md)|组位图元素。|
 |[Bitmap 元素](../extensibility/bitmap-element.md)|定义位图。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
+|[命令元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
 
 ## <a name="example"></a>示例
 

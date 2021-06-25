@@ -1,9 +1,9 @@
 ---
-title: GuidSymbol 元素 |Microsoft Docs
-description: GuidSymbol 元素包含表示菜单、组或命令的 GUID： ID 对的 GUID。
+title: GuidSymbol 元素|Microsoft Docs
+description: GuidSymbol 元素包含表示菜单、组或命令的 GUID：ID 对的 GUID。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, GuidSymbol
 - GuidSymbol element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb683c99614797fa8b05eae87c758ec33f675c99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c30c7a48b03b5deed3267e106e926d3cb5114c1
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057450"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902756"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
-`GuidSymbol`元素包含表示菜单、组或命令的 guid： ID 对的 guid。 ID 来自 `IDSymbol` 元素中的元素 `GuidSymbol` 。 `GuidSymbol`元素具有 `name` 特性，该特性提供了 GUID 的友好名称，该名称包含在特性中 `value` 。
+`GuidSymbol`元素包含表示菜单、组或命令的 GUID：ID 对的 GUID。 ID 来自 `IDSymbol` 元素中的 `GuidSymbol` 元素。 `GuidSymbol`元素具有 `name` 一个 属性，该属性提供 GUID 的友好名称，该名称包含在 `value` 属性中。
 
 ## <a name="syntax"></a>语法
 
@@ -40,22 +40,22 @@ ms.locfileid: "105057450"
 |属性|说明|
 |---------------|-----------------|
 |name|必需。 GUID 符号的名称。|
-|value|必需。 GUID 符号的 GUID。|
+|值|必需。 GUID 符号的 GUID。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含表示菜单、组或命令的 GUID： ID 对的 ID。|
+|[IDSymbol 元素](../extensibility/idsymbol-element.md)|包含表示菜单、组或命令的 GUID：ID 对的 ID。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[符号元素](../extensibility/symbols-element.md)|`GuidSymbol`对 *.vsct* 文件中的元素进行分组。|
+|[Symbols 元素](../extensibility/symbols-element.md)|对 `GuidSymbol` *.vsct 文件中的元素进行* 分组。|
 
 ## <a name="remarks"></a>备注
- 通常， *.vsct* 文件包含三个 `GuidSymbol` 元素 `Symbols` ，一个用于包本身，一个用于命令集 (包提供) 的菜单、组和命令集，另一个用于为按钮和其他可视组件提供图标的位图。 `IDSymbol`给定元素中的每个元素 `GuidSymbol` 必须具有唯一的 `value` 。但是， `IDSymbol` 具有相同值的元素可以存在于包中，只要它们具有不同的父元素。
+ 通常 *，.vsct* 文件在其 节中包含三个元素，一个元素用于包本身，一个用于命令集 (用于包提供) 的菜单、组和命令的集合，另一个元素用于为按钮和其他可视组件提供图标的位图。 `GuidSymbol` `Symbols` 给定 `IDSymbol` 元素中的 `GuidSymbol` 每个元素都必须具有唯一的 `value` 。但是，只要元素具有不同的父元素，具有相同值的元素就可以 `IDSymbol` 存在于包中。
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

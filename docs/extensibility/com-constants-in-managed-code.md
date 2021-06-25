@@ -1,9 +1,9 @@
 ---
-title: 托管代码中的 COM 常量 |Microsoft Docs
-description: 了解托管包框架，该框架使一些标准 COM 常量可用于托管代码。
+title: 托管代码中的 COM 常量|Microsoft Docs
+description: 了解托管包框架，它使一些标准 COM 常量可用于托管代码。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - managed VSPackages, COM constants and macros
 ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8aed8ec62278850d0b091320c12ece484778eb15
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089727"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904316"
 ---
 # <a name="com-constants-in-managed-code"></a>托管代码中的 COM 常量
-托管包框架 (MPF) 使某些标准 COM 常量可用于托管代码。 下面列出了这些常量供你参考。
+托管包框架 (MPF) 使一些标准 COM 常量可用于托管代码。 下面列出了这些常量供你参考。
 
 ## <a name="boolean-hresult-values"></a>布尔 HRESULT 值
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
@@ -91,7 +91,7 @@ ms.locfileid: "105089727"
 
  <xref:Microsoft.VisualStudio.VSConstants.OLE_E_WRONGCOMPOBJ>
 
-## <a name="ole-dispatch-errors"></a>OLE 派单错误
+## <a name="ole-dispatch-errors"></a>OLE 调度错误
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_ARRAYISLOCKED>
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_BADCALLEE>
