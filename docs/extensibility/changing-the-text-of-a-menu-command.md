@@ -3,7 +3,7 @@ title: 更改菜单命令的文本 |Microsoft Docs
 description: 查看此代码示例，了解如何通过使用 IMenuCommandService 服务来更改菜单命令的文本标签。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - menus, changing text
 - text, menus
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 47389352e0491c20b7eb6409c36091179bf967d1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 541acf1bcf448541fe6c440eb2aada687cfbe0e9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068058"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904986"
 ---
 # <a name="change-the-text-of-a-menu-command"></a>更改菜单命令的文本
 以下步骤演示如何使用服务更改菜单命令的文本标签 <xref:System.ComponentModel.Design.IMenuCommandService> 。

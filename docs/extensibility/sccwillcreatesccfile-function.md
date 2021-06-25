@@ -2,7 +2,7 @@
 description: 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
 title: SccWillCreateSccFile 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccWillCreateSccFile
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00988afe980a29a7176c8632d95514813efaad37
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063716"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900442"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函数
 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
@@ -54,7 +54,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_E_INVALIDFILEPATH|数组中的某个路径无效。|

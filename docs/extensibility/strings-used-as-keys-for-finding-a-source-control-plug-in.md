@@ -3,7 +3,7 @@ title: 用作查找源代码管理插件的键的字符串
 description: 了解作为访问注册表的键的字符串，以查找有关源代码管理插件的信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, strings used for finding
 ms.assetid: c1e31f76-42a1-4c3d-afb2-664044ef12fd
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61c13973ac6668814fbc3ba076b373d6e0b1e44
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f25a105c442fa4a1ff8ed0f95b9c49272d751932
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056293"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899376"
 ---
 # <a name="strings-used-as-keys-for-finding-a-source-control-plug-in"></a>作为用于查找源代码管理插件的密钥的字符串
 以下字符串是用于访问注册表以查找有关源代码管理插件的信息的键。
@@ -28,7 +28,7 @@ ms.locfileid: "105056293"
 
 ## <a name="string-keys-and-values"></a>字符串键和值
 
-|密钥|值|
+|Key|值|
 |---------|-----------|
 |`STR_SCC_PROVIDER_REG_LOCATION`|Software\SourceCodeControlProvider|
 |`STR_PROVIDERREGKEY`|ProviderRegKey|

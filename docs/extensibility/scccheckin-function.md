@@ -2,7 +2,7 @@
 description: 此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。
 title: SccCheckin 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCheckin
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6864549c6825092b6ad26be199f8c7b5ea6bab6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d324c03096df5178decd6f6954928df3f2c6b9aa
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060427"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904742"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
 此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。 调用此函数时使用的是要签入的文件的计数和名称数组。
@@ -69,7 +69,7 @@ SCCRTN SccCheckin (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功签入文件。|
 |SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|

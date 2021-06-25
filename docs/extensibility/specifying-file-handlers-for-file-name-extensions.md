@@ -3,7 +3,7 @@ title: 指定文件扩展名的文件处理程序 |Microsoft Docs
 description: 了解如何通过使用 OpenWithList 和 OpenWithProgids 来确定哪些应用程序处理 Visual Studio SDK 中的文件扩展名。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - file extensions, specifying file handlers
 ms.assetid: e3de4730-a95c-465a-b3b2-92ca85364ad7
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65705467b1531e139c0ec857d6a7b57015d5f2f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6ab370b4be8c12ad0df0c4822bcc7b487fb4aa21
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089961"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899441"
 ---
 # <a name="specifying-file-handlers-for-file-name-extensions"></a>指定文件扩展名的文件处理程序
 可以通过多种方式来确定处理具有特定文件扩展名的文件的应用程序。 OpenWithList 和 OpenWithProgids 谓词是在文件扩展名的注册表项下指定文件处理程序的两种方法。

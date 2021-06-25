@@ -3,7 +3,7 @@ title: " (Visual Studio SDK) 的断点 |Microsoft Docs"
 description: 了解下面三种类型的断点：挂起、绑定和错误。 本文列出了用于实现类型的接口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - breakpoints
 ms.assetid: acfcabed-9f2f-436c-ad18-7ca2f45d631b
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b834d9b80d8abca12ea9230d3b451fb4e251859e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1fce472faf95aa77f87ab02d78a3da640b6bd3bf
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055201"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901482"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>断点 (Visual Studio SDK)
 有三种类型的断点： "挂起"、"绑定" 和 "错误"。

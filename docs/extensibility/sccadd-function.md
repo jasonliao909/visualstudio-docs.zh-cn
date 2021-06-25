@@ -2,7 +2,7 @@
 description: 此函数将新文件添加到源代码管理系统。
 title: SccAdd 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccAdd
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c577bd865a7534a5c4e13253e921ef188e7f0ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f73a91f7f801ca89a633f1722e0c4d1183fb3dc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085684"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904846"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。
@@ -69,7 +69,7 @@ SCCRTN SccAdd(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|添加操作成功。|
 |SCC_E_FILEALREADYEXISTS|所选文件已受源代码管理。|

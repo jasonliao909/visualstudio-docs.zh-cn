@@ -3,7 +3,7 @@ title: Extern 元素 |Microsoft Docs
 description: Extern 元素在编译时引用 () 文件与 .vsct 文件合并的任何外部标头。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Extern
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5771dbc1c6b17b0f488d42c30a036ff1d90a5a18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 502b93f18aacfed26d3ea440c017e6de5281a35d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074985"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900182"
 ---
 # <a name="extern-element"></a>Extern 元素
 Extern 元素在编译时 *引用 ()* 文件与 *.vsct* 文件合并的任何外部标头。 要合并的文件必须位于 .VSCT 编译器提供的包含路径上，或由 [include 元素](../extensibility/include-element.md)引用。 这些文件可以是其他 *.vsct* 文件或 c + + 头文件。
@@ -40,21 +40,21 @@ Extern 元素在编译时 *引用 ()* 文件与 *.vsct* 文件合并的任何外
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |href|必需。 标头文件的路径：<br /><br /> href = "stdidcmd"|
-|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 |语言|可选。 [\<Strings>](../extensibility/strings-element.md)命令表中所有元素的默认语言：<br /><br /> language = "en-us"|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |无。|无。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给 IDE 的命令（即菜单项、菜单、工具栏和组合框）。|
 

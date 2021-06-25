@@ -3,7 +3,7 @@ title: 正在为文件扩展名注册谓词 |Microsoft Docs
 description: 了解如何使用 Shell 键注册与文件扩展名的编程标识符关联的谓词。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - verbs, registering
 ms.assetid: 81a58e40-7cd0-4ef4-a475-c4e1e84d6e06
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9936efc2e01c0d82d5cc9fce140d543eb95247ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c223dea7e265d8d040d502c99ded09380e89690f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068474"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901222"
 ---
 # <a name="register-verbs-for-file-name-extensions"></a>注册文件扩展名的谓词
 与应用程序的文件扩展名的关联通常具有一个在用户双击文件时发生的首选操作。 此首选操作链接到对应于操作的谓词，例如 "open"。
@@ -37,7 +37,7 @@ ms.locfileid: "105068474"
 
 - 预览
 
-  请尽可能注册标准谓词。 最常见的选择是打开谓词。 仅当打开文件和编辑该文件时，才使用编辑谓词。 例如，打开 *.htm* 文件会在浏览器中显示该文件，而编辑 *.htm* 文件会启动 HTML 编辑器。 标准谓词已本地化为操作系统区域设置。
+  请尽可能注册标准谓词。 最常见的选择是打开谓词。 仅当打开文件和编辑该文件时，才使用编辑谓词。 例如，打开 *.htm* 文件会在浏览器中显示该文件，而编辑 *.htm* 文件则会启动一个 HTML 编辑器。 标准谓词已本地化为操作系统区域设置。
 
 > [!NOTE]
 > 注册标准谓词时，请不要设置 "打开" 键的默认值。 默认值包含菜单上的显示字符串。 操作系统为标准谓词提供此字符串。

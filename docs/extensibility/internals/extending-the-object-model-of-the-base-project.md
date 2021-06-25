@@ -1,9 +1,9 @@
 ---
-title: 扩展基项目的对象模型 |Microsoft Docs
-description: 了解如何使用项目子类型在 Visual Studio 中扩展基项目的自动化对象模型。
+title: 扩展基本项目对象对象|Microsoft Docs
+description: 了解如何使用项目子类型在 Visual Studio扩展基本项目的自动化对象模型。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - automation object model, extending
 - project subtypes, extending automation object model
@@ -14,24 +14,24 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f220d1e0c97647162c621bc565147bc74f40103
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 175571b374c6a54999b212b316301f3f775891ff
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069616"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899337"
 ---
-# <a name="extend-the-object-model-of-the-base-project"></a>扩展基项目的对象模型
+# <a name="extend-the-object-model-of-the-base-project"></a>扩展基础项目的对象模型
 
-项目子类型可以在以下位置扩展基本项目的自动化对象模型：
+项目子类型可以扩展基项目的自动化对象模型，位置如下：
 
-- 项目 ( " \<ProjectSubtypeName> " ) ：这允许项目子类型从对象提供具有自定义方法的对象 <xref:EnvDTE.Project> 。 项目子类型可以使用自动化扩展器来公开 `Project` 对象。 <xref:EnvDTE80.IInternalExtenderProvider>在主项目子类型聚合器上实现的接口应为与 `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> VSITEMID 值对应的 from (提供其对象 `itemid` [。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- Project.Extender (" ") ：这允许项目子类型为对象提供来自 对象的 \<ProjectSubtypeName> 自定义 <xref:EnvDTE.Project> 方法。 项目子类型可以使用自动化扩展程序来公开 `Project` 对象。 在主项目子类型聚合器上实现的接口应为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> `itemid` [VSITEMID 的值相对应。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
 
-- 项目项 ( " \<ProjectSubtypeName> " ) ：这允许项目子类型从项目内的特定对象提供自定义方法的对象 <xref:EnvDTE.ProjectItem> 。 项目子类型可以使用自动化扩展器来公开此对象。 <xref:EnvDTE80.IInternalExtenderProvider>在主项目子类型聚合器上实现的接口需要为 `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 对应于所需) CATID 的 from (提供其对象 <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> 。
+- ProjectItem.Extender (" ") ：这允许项目子类型提供具有来自项目中特定对象的 \<ProjectSubtypeName> 自定义 <xref:EnvDTE.ProjectItem> 方法的对象。 项目子类型可以使用自动化扩展程序来公开此对象。 在主项目子类型聚合器上实现的接口需要为来自 的 提供其对象 (与所需的 <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` CATID) <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> 对应。
 
-- 项目. 属性：此集合公开对象的独立于配置的属性 `Project` 。 有关 `Project` 属性的详细信息，请参阅 <xref:EnvDTE.Project.Properties%2A>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 <xref:EnvDTE80.IInternalExtenderProvider>在主项目子类型聚合器上实现的接口需要为 `VSHPROPID_BrowseObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> 对应于 VSITEMID 值的 from (提供其对象 `itemid` [。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- Project.Properties：此集合公开对象的与配置无关的 `Project` 属性。 有关 `Project` 属性的详细信息，请参阅 <xref:EnvDTE.Project.Properties%2A>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口需要为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_BrowseObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> `itemid` [VSITEMID 的值相对应。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
 
-- 配置属性：对于特定的配置，此集合显示项目的依赖于配置的属性 (例如，调试) 。 有关详细信息，请参阅 <xref:EnvDTE.Configuration>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 <xref:EnvDTE80.IInternalExtenderProvider>在主项目子类型聚合器上实现的接口为 `VSHPROPID_CfgBrowseObjectCATID` 与 VSITEMID 值对应的 CATID (提供其对象 `itemid` [。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>接口用于区分一个配置浏览对象和另一个。
+- Configuration.Properties：此集合公开特定配置项目的配置依赖属性 (例如，调试) 。 有关详细信息，请参阅 <xref:EnvDTE.Configuration>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口为 <xref:EnvDTE80.IInternalExtenderProvider> 对应于 `VSHPROPID_CfgBrowseObjectCATID` `itemid` VSITEMID 值的 CATID (提供 [其 对象。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>接口用于区分一个配置浏览对象和另一个配置浏览对象。
 
 ## <a name="see-also"></a>另请参阅
 

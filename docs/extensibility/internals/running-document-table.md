@@ -3,7 +3,7 @@ title: 运行文档表 |Microsoft Docs
 description: 了解 Visual Studio IDE 如何维护正在运行的文档表，其中包括内存中所有打开的文档。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - read locks
 - running document table (RDT), IVsDocumentLockHolder interface
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 615910684fd79d3cbd8d8a1e012c239e27abc180
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d260534d58853afc6b84ba484eb3a806250e2aa6
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080965"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900403"
 ---
 # <a name="running-document-table"></a>运行文档表
 IDE 将在名为正在运行的文档表 (RDT) 的内部结构中维护所有当前打开的文档的列表。 此列表包括内存中所有打开的文档，无论当前是否正在编辑这些文档。 文档是保存的任何项，包括项目中的文件或主项目文件 (例如，.vcxproj 文件) 。
@@ -29,7 +29,7 @@ IDE 将在名为正在运行的文档表 (RDT) 的内部结构中维护所有当
 ## <a name="elements-of-the-running-document-table"></a>正在运行的文档表的元素
  正在运行的文档表包含以下条目。
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |文档名字对象|一个字符串，用于唯一标识文档数据对象。 这是管理文件的项目系统的绝对文件路径 (例如 C:\MyProject\MyFile) 。 此字符串还用于存储在文件系统以外的存储中的项目，例如数据库中的存储过程。 在这种情况下，项目系统可以使用唯一的字符串，它可以识别并可能进行分析以确定如何存储文档。|
 |层次结构所有者|拥有文档的层次结构对象，由 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 接口表示。|

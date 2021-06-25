@@ -1,9 +1,9 @@
 ---
-title: IDE Guid |Microsoft Docs
-description: VSConstants 类发布 IDE 某些部分的一组 Guid。 本文列出了 Guid。
+title: IDE GUID |Microsoft Docs
+description: VSConstants 类发布 IDE 某些部分的一组 GUID。 本文列出了 GUID。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - GUIDs, integrated development environment
 - IDE, GUIDs
@@ -13,16 +13,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6351ea576c8976bd12fe206d8c4dbbe5f34a72d8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069850"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904924"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-<xref:Microsoft.VisualStudio.VSConstants>类将集成开发环境的某些部分的 guid 发布 (IDE) ，如下表所示。
+类发布集成开发环境的某些部分的 GUID (IDE) 如下 <xref:Microsoft.VisualStudio.VSConstants> 表所列。
 
 ## <a name="core-systems"></a>核心系统
 
@@ -46,7 +46,7 @@ ms.locfileid: "105069850"
 |Microsoft.VisualStudio.VSConstants.SID_SUIHostCommandDispatcher|e69cd190-1276-11d1-9f64-00a0c911004f|
 |Microsoft.VisualStudio.VSConstants.SID_SVsGeneralOutputWindowPane|65482c72-defa-41b7-902c-11c091889c83|
 
-## <a name="files-virtual-and-physical-folders-and-subprojects"></a>文件、虚拟和物理文件夹和子项目
+## <a name="files-virtual-and-physical-folders-and-subprojects"></a>文件、虚拟和物理文件夹以及子项目
 
 |返回的常量|GUID|
 |--------------|----------|
@@ -67,7 +67,7 @@ ms.locfileid: "105069850"
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.FullScreenMode_guid>|adfc4e62-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.NoSolution_guid>|adfc4e64-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>|adfc4e60-0397-11d1-9f4e-00a0c911004f|
-|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-fdadf150da82|
+|<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_guid>|f1536ef8-92ec-443c-9ed7-下午df150da82|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasMultipleProjects_guid>|93694fa0-0397-11d1-9f4e-00a0c911004f|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>|adfc4e66-0397-11d1-9f4e-00a0c911004f|
 
@@ -95,7 +95,7 @@ ms.locfileid: "105069850"
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
-## <a name="task-list-guids"></a>任务列表 Guid
+## <a name="task-list-guids"></a>任务列表 GUID
 
 |返回的常量|GUID|
 |--------------|----------|
@@ -111,7 +111,7 @@ ms.locfileid: "105069850"
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsTaskList_guid>|BC5955D5-aa0d-11d0-a8c5-00a0c921a4d2|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsTaskListPackage_guid>|4A9B7E50-aa16-11d0-a8c5-00a0c921a4d2|
 
-## <a name="component-selector-page-guids"></a>组件选择器页 Guid
+## <a name="component-selector-page-guids"></a>组件选择器页 GUID
 
 |常量|GUID|
 |---------------|----------|
@@ -119,7 +119,7 @@ ms.locfileid: "105069850"
 |Microsoft.VisualStudio.VSConstants.GUID_COMPlusPage|9A341D95-5A64-11d3-BFF9-00C04F990235|
 |Microsoft.VisualStudio.VSConstants.GUID_SolutionPage|9A341D97-5A64-11d3-BFF9-00C04F990235|
 
-## <a name="miscellaneous-shell-guids"></a>其他 shell Guid
+## <a name="miscellaneous-shell-guids"></a>其他 shell GUID
 
 |常量|GUID|
 |---------------|----------|

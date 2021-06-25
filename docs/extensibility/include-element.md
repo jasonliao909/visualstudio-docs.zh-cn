@@ -3,7 +3,7 @@ title: Include 元素 |Microsoft Docs
 description: Include 元素指定一个文件，该文件可位于提供的包含路径上，用于插入当前文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Include
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fd64f897dc2a089a2e94f5e0c53e3ef116f7b385
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0005626c7fbb276775661a7cfb73d17f5e20d62
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082096"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899350"
 ---
 # <a name="include-element"></a>Include 元素
 Include 元素指定一个文件，该文件可位于提供的包含路径上，用于插入当前文件。  所有定义的符号和类型将成为编译结果的一部分。
@@ -36,20 +36,20 @@ Include 元素指定一个文件，该文件可位于提供的包含路径上，
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |href|必需。 标头文件的路径：<br /><br /> href = "stdidcmd"|
-|天气条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |无。|无。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给 IDE 的命令（即菜单项、菜单、工具栏和组合框）。|
 

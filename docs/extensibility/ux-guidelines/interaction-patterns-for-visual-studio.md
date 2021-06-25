@@ -3,19 +3,19 @@ title: Visual Studio 的交互模式 |Microsoft Docs
 description: 了解在为 Visual Studio 生成新功能时可使用的常见交互模式库。
 ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: a3643792-b0df-481c-bc35-576f948e04cf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 215fa0145a342820320980f629bb35678ce09680
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 13a2ec4332cf8010dc5d214dfd61936725ac2063
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072931"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900546"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio 的交互模式
 ## <a name="overview"></a>概述
@@ -25,7 +25,7 @@ ms.locfileid: "105072931"
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio 客户端模式类型
 
-|模式类型|说明|示例|
+|模式类型|描述|示例|
 |------------------|-----------------|--------------|
 |**应用程序级模式**|应用程序通用的高级模式，确定或显示应用程序上下文，并在其中包含复合和控件模式|-工具窗口<br />-文档窗口|
 |**复合模式**|可能跨应用程序模式的常见模式，或在不同配置中由多个控件组成的可识别模式|-查看切换<br />-列表生成器<br />-显示数据<br />-通知<br />-验证<br />-选择模型|

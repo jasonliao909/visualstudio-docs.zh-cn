@@ -3,7 +3,7 @@ title: 项目优先级 |Microsoft Docs
 description: 如果项是多个项目的成员，请了解 Visual Studio IDE 使用的优先级方案，确定用于打开项的最佳项目。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - projects [Visual Studio SDK], opening items
 ms.assetid: 9f707592-2fb6-4f75-9269-f6d4700a998e
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6aefb6b1670da812a36efcc1baa3cb23f23e2561
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2ac0556e63b25f0f2a0df399cb23d5e2e9473008
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064483"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899636"
 ---
 # <a name="project-priority"></a>项目优先级
 项目项通常是解决方案中的一个项目的成员。 因此，IDE 可以轻松确定用于打开项的项目。 但是，如果项是多个项目的成员，则 IDE 将使用优先级方案来确定用于打开该项的最佳项目。

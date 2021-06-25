@@ -3,7 +3,7 @@ title: 向项目项添加特性 |Microsoft Docs
 description: 了解如何使用 Shell 互操作方法 GetItemAttribute 和 SetItemAttribute 将属性添加到 Visual Studio 中的项目项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - attributes [Visual Studio], adding to a project item
 ms.assetid: 404a71d5-cce5-44e7-9eaf-d747c794fedb
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ee65a22e0a296047f5a401e00495ee25403d64e0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 36fc5905fd2b1423865982a80a6cb2ba6a803cc5
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094908"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902015"
 ---
 # <a name="add-an-attribute-to-a-project-item"></a>向项目项添加特性
 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.GetItemAttribute%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage.SetItemAttribute%2A> 获取和设置项目项的特性的值。 如果该属性不存在，SetItemAttribute 将创建该属性，并将其添加到项目项元数据中。

@@ -3,7 +3,7 @@ title: 程序控制 |Microsoft Docs
 description: 了解在程序级别进行的 Visual Studio 调试中的例程，如执行、单步执行、继续和挂起/恢复线程。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debugging [Debugging SDK], control of execution
 ms.assetid: 6be80904-e66c-4cae-8891-1113b799fb01
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2d869094eff3713a3c9e7ec63a8003bb12a018c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7b2946309c72fbdddf2794c1da1e773e9a529368
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094674"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900703"
 ---
 # <a name="program-control"></a>程序控制
 在 Visual Studio 调试中，以下所有单步执行和继续例程都在程序级别进行：
@@ -40,7 +40,7 @@ ms.locfileid: "105094674"
 ## <a name="methods-of-program-control"></a>程序控制方法
  下表显示了 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 的方法，这些方法必须为最低功能调试引擎实现 (DE) 和执行控制。
 
-|方法|说明|
+|方法|描述|
 |------------|-----------------|
 |[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|继续从停止状态运行程序包含的所有线程。 对于执行控制是必需的。|
 |[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|继续从停止状态运行程序包含的所有线程。 对于执行控制是必需的。|

@@ -1,9 +1,9 @@
 ---
-title: 将 Visual Studio 命令添加到起始页 |Microsoft Docs
-description: 了解在 Visual Studio 中的自定义起始页上将 Visual Studio 命令绑定到 XAML 对象的不同方式。
+title: 将Visual Studio命令添加到起始页|Microsoft Docs
+description: 了解在 Visual Studio 自定义起始页上将命令绑定到 XAML 对象的不同Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - start page commands
 - vs:VSCommands
@@ -14,35 +14,35 @@ manager: jmartens
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 4e2ec238d3cb8c2e7d843018fc45e97207c6d5f4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bf0f9a3db21dd93b1a497731bca9142a4377acc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097521"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901508"
 ---
-# <a name="add-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
+# <a name="add-visual-studio-commands-to-a-start-page"></a>将Visual Studio添加到起始页
 
-创建自定义起始页时，可以向其添加 Visual Studio 命令。 本文档介绍将 Visual Studio 命令绑定到起始页上 XAML 对象的不同方法。
+创建自定义起始页时，可以添加Visual Studio命令。 本文档讨论将命令绑定到起始Visual Studio XAML 对象的不同方法。
 
-有关 XAML 中的命令的详细信息，请参阅命令 [概述](/dotnet/framework/wpf/advanced/commanding-overview)
+有关 XAML 中的命令详细信息，请参阅 [命令概述](/dotnet/framework/wpf/advanced/commanding-overview)
 
-## <a name="add-commands-from-the-command-well"></a>从命令添加命令正确
+## <a name="add-commands-from-the-command-well"></a>从命令井添加命令
 
-" [创建自定义起始页](../extensibility/creating-a-custom-start-page.md) " 中创建的起始页添加了 <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> 和 <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> 命名空间，如下所示。
+在创建自定义起始 [页中创建](../extensibility/creating-a-custom-start-page.md) 的起始页添加了 和 <xref:Microsoft.VisualStudio.PlatformUI?displayProperty=fullName> <xref:Microsoft.VisualStudio.Shell?displayProperty=fullName> 命名空间，如下所示。
 
 ```xml
 xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.VisualStudio.Shell.14.0"
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-从程序集 *Microsoft.VisualStudio.Shell.Immutable.11.0.dll* 中为 VisualStudio 添加另一个命名空间。  (可能需要在项目中添加对此程序集的引用 ) 
+从 程序集为 Microsoft.VisualStudio.Shell 添加另 *一Microsoft.VisualStudio.Shell.Immutable.11.0.dll。*  (可能需要在 project.) 中添加对此程序集的引用。
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-可以 `vscom:` 通过将控件的属性设置为，使用别名将 Visual Studio 命令绑定到页面上的 XAML 控件 <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> `vscom:VSCommands.ExecuteCommand` 。 然后，可以将 <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> 属性设置为要执行的命令的名称，如下面的示例中所示。
+通过将 控件的 属性设置为 Visual Studio，可以使用 别名将命令绑定到页面上 `vscom:` 的 XAML <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> 控件 `vscom:VSCommands.ExecuteCommand` 。 然后，可以将 <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> 属性设置为要执行的命令的名称，如以下示例所示。
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -52,11 +52,11 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 ```
 
 > [!NOTE]
-> 在 `x:` 所有命令的开头都需要有引用 XAML 架构的别名。
+> 所有命令的开头都需要别名（即 `x:` XAML 架构）。
 
- 可以将属性的值设置 `Command` 为可从 " **命令** " 窗口访问的任何命令。 有关可用命令的列表，请参阅 [Visual Studio 命令别名](../ide/reference/visual-studio-command-aliases.md)。
+ 可以将 属性的值设置为任何可以从"命令"窗口 `Command` **访问的命令** 。 有关可用命令的列表，请参阅Visual Studio [别名](../ide/reference/visual-studio-command-aliases.md)。
 
- 如果要添加的命令需要其他参数，可以将其添加到属性的值 `CommandParameter` 。 使用空格分隔命令中的参数，如下面的示例中所示。
+ 如果要添加的命令需要其他参数，可以将其添加到 属性的值 `CommandParameter` 。 使用空格将参数与命令分开，如以下示例所示。
 
 ```xml
 <Button Content="Web Search"
@@ -64,26 +64,26 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
         CommandParameter="View.WebBrowser www.bing.com" />
 ```
 
-### <a name="call-extensions-from-the-command-well"></a>从命令中调用扩展
- 可以通过使用用于调用其他 Visual Studio 命令的语法来调用已注册 Vspackage 中的命令。 例如，如果已安装的 VSPackage 将 **主页** 命令添加到 " **视图** " 菜单，则可以通过将设置为来调用该命令 `CommandParameter` `View.HomePage` 。
+### <a name="call-extensions-from-the-command-well"></a>从命令井调用扩展
+ 可以使用用于调用其他命令的相同语法从已注册的 VSPackage Visual Studio命令。 例如，如果安装的 VSPackage 将"主页"命令添加到"视图"菜单，则可以通过将 设置为 来调用 `CommandParameter` 该命令 `View.HomePage` 。
 
 > [!NOTE]
-> 如果调用与 VSPackage 关联的命令，则在调用该命令时必须加载包。
+> 如果调用与 VSPackage 关联的命令，则必须在调用命令时加载包。
 
 ## <a name="add-commands-from-assemblies"></a>从程序集添加命令
- 若要从程序集调用命令，或若要访问 VSPackage 中与菜单命令无关的代码，则必须为该程序集创建一个别名，然后调用该别名。
+ 若要从程序集调用命令，或者访问与菜单命令不关联的 VSPackage 中的代码，必须为程序集创建别名，然后调用别名。
 
 ### <a name="to-call-a-command-from-an-assembly"></a>从程序集调用命令
 
 1. 在解决方案中，添加对程序集的引用。
 
-2. 在 *StartPage* 文件的顶部，为程序集添加命名空间指令，如以下示例中所示。
+2. 在 *StartPage.xaml* 文件的顶部，为程序集添加命名空间指令，如以下示例所示。
 
     ```xml
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3. 通过设置 XAML 对象的属性来调用命令 `Command` ，如以下示例中所示。
+3. 通过设置 XAML 对象的 属性调用 命令 `Command` ，如以下示例所示。
 
      Xaml
 
@@ -92,12 +92,12 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
-> 必须复制程序集，然后将其粘贴到 *. 中。 \\{Visual Studio 安装文件夹} \Common7\IDE\PrivateAssemblies \* ，以确保其在被调用之前已加载。
+> 必须复制程序集，然后将其粘贴到 *.中。 \\{Visual Studio安装文件夹}\Common7\IDE\PrivateAssemblies，以确保在调用之前 \* 加载它。
 
-## <a name="add-commands-with-the-dte-object"></a>添加带有 DTE 对象的命令
- 你可以在 "标记" 和 "代码" 中从起始页访问 DTE 对象。
+## <a name="add-commands-with-the-dte-object"></a>使用 DTE 对象添加命令
+ 可以在标记和代码中从起始页访问 DTE 对象。
 
- 在标记中，可以通过使用 [绑定标记扩展](/dotnet/framework/wpf/advanced/binding-markup-extension) 语法来调用 <xref:EnvDTE.DTE> 对象。 您可以使用此方法绑定到简单的属性（如返回集合的属性），但不能绑定到方法或服务。 下面的示例演示 <xref:System.Windows.Controls.TextBlock> 绑定到属性的控件 <xref:EnvDTE._DTE.Name%2A> ，以及一个 <xref:System.Windows.Controls.ListBox> 枚举 <xref:EnvDTE.Window.Caption%2A> 属性返回的集合的属性的控件 <xref:EnvDTE._DTE.Windows%2A> 。
+ 在标记中，可以使用绑定标记 [扩展语法调用](/dotnet/framework/wpf/advanced/binding-markup-extension) 对象来访问 <xref:EnvDTE.DTE> 它。 可以此方法绑定到简单属性，例如返回集合的属性，但不能绑定到方法或服务。 下面的示例演示一个绑定到 属性的 控件，以及一个枚举 由 属性返回的集合 <xref:System.Windows.Controls.TextBlock> <xref:EnvDTE._DTE.Name%2A> <xref:System.Windows.Controls.ListBox> <xref:EnvDTE.Window.Caption%2A> 属性的 <xref:EnvDTE._DTE.Windows%2A> 控件。
 
 ```xml
 <TextBlock Text="{Binding Path=DTE.Name}" FontSize="12" HorizontalAlignment="Center"/>

@@ -2,7 +2,7 @@
 description: 此函数关闭项目，并标记特定会话的结束。
 title: SccCloseProject 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccCloseProject
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 05dbf0552242bdc1a21ec6dd81a592711f50f391
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 859b1ddea99e74cc1c1dec999611e50216c3c98a
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085632"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904690"
 ---
 # <a name="scccloseproject-function"></a>SccCloseProject 函数
 此函数关闭项目，并标记特定会话的结束。
@@ -37,7 +37,7 @@ SCCRTN SccCloseProject (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|项目已成功关闭。|
 |SCC_E_PROJNOTOPEN|当前未打开任何项目。|

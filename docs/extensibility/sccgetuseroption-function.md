@@ -2,7 +2,7 @@
 description: 此函数检索各种用户特定的选项。
 title: SccGetUserOption 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetUserOption
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 262a15069f840c048f574396d5a7ec076760d77e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 622abc04609edf410214af6b8acf795f969e2fbc
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063950"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901105"
 ---
 # <a name="sccgetuseroption-function"></a>SccGetUserOption 函数
 此函数检索各种用户特定的选项。
@@ -49,7 +49,7 @@ SCCRTN SccGetUserOption(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|已成功检索选项。|
 |SCC_E_OPNOTSUPPORTED|选项不受支持。|
@@ -58,7 +58,7 @@ SCCRTN SccGetUserOption(
 ## <a name="remarks"></a>备注
  此命令支持以下选项：
 
-|用户选项|说明|
+|用户选项|描述|
 |-----------------|-----------------|
 |`SCC_USEROPT_CHECKOUT_LOCALVER`|确定用户是否希望签出文件的本地版本。 `lpVal` 分配 `SCC_USEROPT_COLV_YES` (用户要) 或签出本地文件 `SCC_USEROPT_COLV_NO` 。|
 

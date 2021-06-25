@@ -3,7 +3,7 @@ title: 实现嵌套项目的命令处理 |Microsoft Docs
 description: 了解如何在 Visual Studio 集成开发环境 (IDE) 中实现嵌套项目的命令处理。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - nested projects, implementing command handling
 ms.assetid: 48a9d66e-d51c-4376-a95a-15796643a9f2
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: fad154fd3739369b0ccf7e5d896d1b9f1728c68e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4324e207d7b424295137f9523ed0bed538b3d806
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085775"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899981"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
 IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 到嵌套项目，也可以使用父项目来筛选或重写命令。
