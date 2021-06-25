@@ -1,10 +1,10 @@
 ---
-description: 本文介绍了 System.runtime.compilerservices. AsyncTaskMethodBuilder 类的内部成员。
+description: 本文介绍 System.Runtime.CompilerServices.AsyncTaskMethodBuilder 类的内部成员。
 title: AsyncTaskMethodBuilder 结构 - 内部成员
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - debug engines, AsyncTaskMethodBuilder structure [.NET Framework]
 - AsyncTaskMethodBuilder structure [.NET Framework debug engines]
@@ -14,21 +14,21 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f76d6156928f983a3eb93e7a33b50ff46ec9e87d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c5b21045688fc2be555c7a42d6e3b9014b66c761
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055526"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112903835"
 ---
-# <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 结构-内部成员
-本主题介绍类的内部成员 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 。 有关此类的常规信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 参考主题。
+# <a name="asynctaskmethodbuilder-structure---internal-members"></a>AsyncTaskMethodBuilder 结构 - 内部成员
+本主题介绍 类的内部 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 成员。 有关此类的一般信息，请参阅 <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder> 参考主题。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **Assembly：** mscorlib (mscorlib.dll) 
+ **程序集：mscorlib** (mscorlib.dll) 
 
- 由于无法从 .NET Framework 访问这些内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
+ 由于无法从 CIL .NET Framework访问这些内部成员，因此在 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 
@@ -40,11 +40,11 @@ ms.locfileid: "105055526"
 
 ## <a name="internal-members"></a>内部成员
 
-|名称|说明|
+|名称|描述|
 |----------|-----------------|
-|[ObjectIdForDebugger 属性](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于将此生成器唯一标识到调试器。|
-|[m_builder 字段](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|表示此非泛型实例委托的泛型生成器对象。|
+|[ObjectIdForDebugger 属性](../../extensibility/debugger/asynctaskmethodbuilder-objectidfordebugger-property.md)|获取一个对象，该对象可用于唯一标识调试器此生成器。|
+|[m_builder字段](../../extensibility/debugger/asynctaskmethodbuilder-m-builder-field.md)|表示此非泛型实例委托给的泛型生成器对象。|
 
 ## <a name="see-also"></a>另请参阅
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

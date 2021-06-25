@@ -3,7 +3,7 @@ title: .VSCT XML 架构参考 |Microsoft Docs
 description: .VSCT XML 架构参考文章介绍了命令表编译器架构元素，其中每个元素都允许使用子元素和属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - Visual Studio command table configuration files (VSCT), XML schema
 - VSCT XML schema elements
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f24d11c9458b56b5b66de495a18ec75491d3ac0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7d82cda9c91642b094deea50eda02676f9bb73f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062299"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112905223"
 ---
 # <a name="vsct-xml-schema-reference"></a>.VSCT XML 架构引用
 提供一个表，其中包含命令表编译器架构元素，每个元素都允许使用子元素和属性。
@@ -52,7 +52,7 @@ ms.locfileid: "105062299"
 
 - [Define 元素](../extensibility/define-element.md)
 
-- [Commands 元素](../extensibility/commands-element.md)
+- [命令元素](../extensibility/commands-element.md)
 
 - [CommandPlacements 元素](../extensibility/commandplacements-element.md)
 
