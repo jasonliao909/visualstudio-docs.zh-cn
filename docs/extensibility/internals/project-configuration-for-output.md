@@ -3,7 +3,7 @@ title: 用于输出的项目配置 |Microsoft Docs
 description: 了解每个配置可以支持的生成过程，以及可使输出项可用的接口和方法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - project configurations, output
 ms.assetid: a4517f73-45af-4745-9d7f-9fddf887b636
@@ -12,15 +12,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13e37999ad9f3bada375c1897207e1e4c15546e8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8b718e70bac0d9e09936daf743420acc04a1c4ad
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082005"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112899870"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
-每个配置都可以支持生成可执行文件或资源文件等输出项的一组生成过程。 这些输出项专用于用户，并且可放置在链接相关类型的输出（如可执行文件 ( .exe、.dll、.lib) 和源文件 ( .idl 文件) 中的组。
+每个配置都可以支持生成可执行文件或资源文件等输出项的一组生成过程。 这些输出项专用于用户，并且可放置在链接相关类型的输出（如可执行文件 (.exe、.dll、.lib) 和源文件 ( .idl、.h 文件) 的组中。
 
  输出项可以通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput2> 方法提供，并使用方法进行枚举 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumOutputs> 。 如果要对输出项进行分组，则项目还应实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutputGroup> 接口。
 

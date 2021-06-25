@@ -3,7 +3,7 @@ title: 提供旧版语言服务中的隐藏文本支持
 description: 了解如何通过添加编辑器控制的或客户端控制的隐藏文本区域，在旧版语言服务中提供隐藏的文本支持。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - hidden text, supporting
 - editors [Visual Studio SDK], hidden text
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2bb6d9c3c4f01c0e84c6ab437e352a86bf00448f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 31c62f50cfff8662c543d24dceabdb429a9b9b05
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078729"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901781"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：在旧版语言服务中提供隐藏的文本支持
 除了大纲区域外，还可以创建隐藏的文本区域。 隐藏的文本区域可以是客户端控制的，也可以是由编辑器控制的，用于完全隐藏文本区域。 编辑器将隐藏区域显示为水平线条。 在 HTML 编辑器中，这是 **仅限脚本** 的视图。

@@ -3,7 +3,7 @@ title: Configuration 和 SelectedItem 对象的自动化 |Microsoft Docs
 description: 了解如何通过在 Shell 互操作中使用配置和 SelectedItem 对象自动执行 Visual Studio 生成和选定项处理。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - automation [Visual Studio SDK], SelectedItem object
 - automation [Visual Studio SDK], builds
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f6e7f153e7d5b32e54cc51e3b7af06f14545cea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1a95fc06c5d84a936cdb1ada3369f584381dfe7f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086256"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901625"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 对象的自动化
 

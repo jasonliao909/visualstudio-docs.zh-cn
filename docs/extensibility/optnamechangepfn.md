@@ -3,7 +3,7 @@ title: OPTNAMECHANGEPFN |Microsoft Docs
 description: 了解 OPTNAMECHANGEPFN 回调函数，该函数将名称更改从源代码管理插件传递到 Visual Studio IDE。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - OPTNAMECHANGEPFN
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e6cb58aebbe76eff5c66dc29ecfad8c77c8717c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 340012663ad7d21c0b5c2ef81283f5d780d6011c
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090364"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901521"
 ---
 # <a name="optnamechangepfn"></a>OPTNAMECHANGEPFN
 这是使用选项) 调用 [SccSetOption](../extensibility/sccsetoption-function.md) (指定的回调函数 `SCC_OPT_NAMECHANGEPFN` ，用于将源代码管理插件所做的名称更改传递回 IDE。

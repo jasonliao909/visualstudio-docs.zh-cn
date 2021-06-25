@@ -1,8 +1,8 @@
 ---
-description: 此函数启动源代码管理操作的批处理序列。
-title: SccBeginBatch 函数 |Microsoft Docs
+description: 此函数启动源代码管理操作批处理序列。
+title: SccBeginBatch 函数|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccBeginBatch
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5af4d8fb1d8524f16493603bb5d46ee4bdbd03ba
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 08b9199b98e566a71bfeb95124ebd85781e69950
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060440"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112904755"
 ---
 # <a name="sccbeginbatch-function"></a>SccBeginBatch 函数
-此函数启动源代码管理操作的批处理序列。 将调用 [SccEndBatch](../extensibility/sccendbatch-function.md) 以结束批处理。 这些批处理不能嵌套。
+此函数启动源代码管理操作批处理序列。 将 [调用 SccEndBatch](../extensibility/sccendbatch-function.md) 以结束批处理。 这些批不能嵌套。
 
 ## <a name="syntax"></a>语法
 
@@ -35,15 +35,15 @@ SCCRTN SccBeginBatch(void);
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
-|SCC_OK|成功的批处理操作。|
+|SCC_OK|批处理操作已成功开始。|
 |SCC_E_UNKNOWNERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- 源代码管理批处理用于在多个项目或多个上下文中执行相同的操作。 批处理可用于消除批处理操作期间用户体验中的冗余每个项目对话框。 `SccBeginBatch`函数和[SccEndBatch](../extensibility/sccendbatch-function.md)用作函数对，用于指示操作的开始和结束。 它们不能嵌套。 `SccBeginBatch` 设置一个标志，指示正在进行批处理操作。
+ 源代码管理批处理用于跨多个项目或多个上下文执行相同的操作。 批处理可用于在批处理操作期间消除用户体验中每个项目的冗余对话框。 `SccBeginBatch`函数和[SccEndBatch](../extensibility/sccendbatch-function.md)用作函数对，以指示操作开始和结束。 它们不能嵌套。 `SccBeginBatch` 设置指示批处理操作正在进行的标志。
 
- 批处理操作生效时，源代码管理插件最多应向用户显示一个对话框，并在所有后续操作上应用该对话框的响应。
+ 当批处理操作生效时，源代码管理插件最多应显示一个对话框，用于向用户提问，并针对所有后续操作应用来自该对话框的响应。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

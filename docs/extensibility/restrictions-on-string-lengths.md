@@ -3,7 +3,7 @@ title: 对字符串长度的限制 |Microsoft Docs
 description: 了解由源代码管理插件 API 施加的各种函数所使用的字符串长度限制。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - source control plug-ins, restrictions on string lengths
 ms.assetid: 877173d2-ca27-43b3-b1f4-8379f7c5e268
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b7526494f5d64f7e02e63e5ec3012297af730e87
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7fd0d88a50f64aee1f0bc5c273d7a3cd50c6f53f
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068409"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900247"
 ---
 # <a name="restrictions-on-string-lengths"></a>字符串长度限制
 源代码管理插件 API 限制各种函数中使用的字符串的长度。

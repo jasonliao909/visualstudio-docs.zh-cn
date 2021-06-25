@@ -3,7 +3,7 @@ title: CommandPlacements 元素 |Microsoft Docs
 description: CommandPlacements 元素将 CommandPlacement 元素和其他 CommandPlacements 组分组。 CommandPlacements 元素是可选的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - CommandPlacements
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3547d1c5b94285ce113b3a3c112568aa5a9a5f65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21e0feb3913b148b4320e69461bc5035655a392d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089597"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901885"
 ---
 # <a name="commandplacements-element"></a>CommandPlacements 元素
 CommandPlacements 元素将 CommandPlacement 元素和其他 CommandPlacements 组分组。
@@ -47,14 +47,14 @@ CommandPlacements 元素将 CommandPlacement 元素和其他 CommandPlacements �
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |CommandPlacements|将 CommandPlacement 元素和其他 CommandPlacements 分组分组。|
 |[CommandPlacement 元素](../extensibility/commandplacement-element.md)|启用要包含在多个组或菜单中的按钮、组和菜单。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素。|
 

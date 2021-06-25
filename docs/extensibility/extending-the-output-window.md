@@ -3,7 +3,7 @@ title: 扩展输出窗口 |Microsoft Docs
 description: 了解如何扩展 Visual Studio SDK 中的 "输出" 窗口，以及如何创建和管理自己的自定义窗格。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: how-to
 helpviewer_keywords:
 - Output window, about Output window
 ms.assetid: b02fa88c-f92a-4ff6-ba5f-2eb4d48a643a
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf875d070d27d307380f23e71af2bda7c4a205b5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 402c53691525530171edafd6a0751dfc72c9798d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075024"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900198"
 ---
 # <a name="extend-the-output-window"></a>扩展 "输出" 窗口
 " **输出** " 窗口是一组读/写文本窗格。 Visual Studio 包含这些内置窗格： " **生成**"，其中的项目用于传达有关生成的消息 **，并传达** 有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE 的消息。 项目通过接口方法自动获得对 " **生成** " 窗格的引用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> ，Visual Studio 通过服务提供对 **常规** 窗格的直接访问 <xref:Microsoft.VisualStudio.Shell.Interop.SVsGeneralOutputWindowPane> 。 除了内置窗格外，还可以创建和管理自己的自定义窗格。

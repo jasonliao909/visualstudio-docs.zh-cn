@@ -1,8 +1,8 @@
 ---
-description: 此函数枚举给定的文件列表，并通过回调函数提供每个文件的名称更改的相关信息。
-title: SccQueryChanges 函数 |Microsoft Docs
+description: 此函数枚举给定的文件列表，通过回调函数提供有关每个文件的名称更改的信息。
+title: SccQueryChanges 函数|Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccQueryChanges
 helpviewer_keywords:
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c821453642a3632c98fac153a367e8ba41495adc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f93ed14671995502356ae4a19664b14bbd32ce7b
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073932"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900468"
 ---
 # <a name="sccquerychanges-function"></a>SccQueryChanges 函数
-此函数枚举给定的文件列表，并通过回调函数提供每个文件的名称更改的相关信息。
+此函数枚举给定的文件列表，通过回调函数提供有关每个文件的名称更改的信息。
 
 ## <a name="syntax"></a>语法
 
@@ -38,36 +38,36 @@ SCCRTN SccQueryChanges(
 #### <a name="parameters"></a>参数
  pContext
 
-中源代码管理插件上下文指针。
+[in]源代码管理插件上下文指针。
 
- n
+ nFiles
 
-中数组中的文件数 `lpFileNames` 。
+[in]数组中的文件 `lpFileNames` 数。
 
  lpFileNames
 
-中要获取其相关信息的文件名数组。
+[in]要获取相关信息的文件名数组。
 
  pfnCallback
 
-中要对列表中的每个文件名调用的回调函数 (参阅 [QUERYCHANGESFUNC](../extensibility/querychangesfunc.md) 了解详细信息) 。
+[in]若要为列表中每个文件名调用的回调函数 ([QUERYCHANGESFUNC，](../extensibility/querychangesfunc.md) 了解) 。
 
  pvCallerData
 
-中将以不更改的形式传递给回调函数的值。
+[in]将保持不变传递给回调函数的值。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|查询过程已成功完成。|
-|SCC_E_PROJNOTOPEN|未在源代码管理中打开该项目。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。|
-|SCC_E_NONSPECIFICERROR|出现未指定的错误或常规错误。|
+|SCC_E_PROJNOTOPEN|项目尚未在源代码管理中打开。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。|
+|SCC_E_NONSPECIFICERROR|发生未指定或常规错误。|
 
 ## <a name="remarks"></a>备注
- 查询的更改是命名空间：具体而言，即重命名、添加和删除文件。
+ 要查询的更改将针对 命名空间：具体而言，重命名、添加和删除文件。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

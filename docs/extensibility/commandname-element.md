@@ -1,9 +1,9 @@
 ---
-title: CommandName 元素 |Microsoft Docs
-description: CommandName 元素指定在 "选项" 对话框的 "键盘" 类别和 "自定义" 对话框的 "命令" 列表中显示的文本。
+title: CommandName 元素|Microsoft Docs
+description: CommandName 元素指定在"选项"对话框的键盘类别和"自定义"对话框中的"命令"列表中显示的文本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - CommandName element (VSCT XML schema)
 - VSCT XML schema elements, CommandName
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: ba74c0a61ddf01407f2af6ebb8053e2f1e4fe6ac
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089623"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902002"
 ---
 # <a name="commandname-element"></a>CommandName 元素
-`CommandName`元素指定在 "**选项**" 对话框的 "键盘" 类别和 "**自定义**" 对话框的 "**命令**" 列表中显示的文本。
+`CommandName`元素指定在"选项"对话框的键盘类别和"自定义"对话框中的"命令"**列表中** 显示的文本。
 
 ## <a name="syntax"></a>语法
 
@@ -40,9 +40,9 @@ ms.locfileid: "105089623"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[Strings 元素](../extensibility/strings-element.md)|组合文本元素，例如 `ButtonText` 和 `CommandName` 。|
+|[Strings 元素](../extensibility/strings-element.md)|对文本元素（如 和 ） `ButtonText` 进行分组 `CommandName` 。|
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

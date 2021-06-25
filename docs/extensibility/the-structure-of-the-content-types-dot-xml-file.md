@@ -3,7 +3,7 @@ title: '[Content_types] .xml 文件的结构 |Microsoft Docs'
 description: 了解内容类型文件的结构，该结构包含有关 VSIX 包中内容种类的信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - content_types
 - content types
@@ -15,50 +15,50 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dea58176269536ae7f0e5857c938c60f76c5c6b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96d4d0eeea34300894674a2105d080e8a6abb607
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055890"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900416"
 ---
 # <a name="the-structure-of-the-content_typesxml-file"></a>[Content_types].xml 文件的结构
-包含有关 VSIX 包中的内容种类的信息。 Visual Studio 使用 [Content_Types] .xml 文件来安装包，但不会安装文件本身。
+包含有关 VSIX 包中的内容种类的信息。 Visual Studio 使用 [Content_Types] .xml 文件安装包，但不会安装文件本身。
 
 > [!NOTE]
-> 尽管本主题仅适用于 VSIX 包中使用的 [Content_Type] .xml 文件，但 [Content_Types] .xml 文件类型是 *开放打包约定 (OPC)* 标准的一部分。 有关详细信息，请参阅 MSDN 网站上的 [OPC：用于打包数据的新标准](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 。
+> 尽管本主题仅适用于 [Content_Type] .xml 在 VSIX 包中使用的文件，但 [Content_Types] .xml 文件类型是 *开放打包约定的一部分 (OPC)* standard。 有关详细信息，请参阅 MSDN 网站上的 [OPC：用于打包数据的新标准](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data) 。
 
 ## <a name="attributes-and-elements"></a>特性和元素
  以下各节描述了 root 元素及其属性和子元素。
 
 ### <a name="root-element"></a>Root 元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |`Types`|包含枚举 VSIX 包中的文件类型的子元素。|
 
-### <a name="attributes"></a>特性
+### <a name="attributes"></a>属性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`Xmlns`| (必需。 ) 用于此 [Content_Types] .xml 文件的架构位置。|
 
 ### <a name="attribute-name-attribute"></a>{Attribute name}Attribute
 
-| 值 | 说明 |
+| 值 | 描述 |
 | - | - |
 | `http://schemas.openformats.org/package/2006/content-types` | 内容类型架构的位置。 |
 
 ### <a name="child-elements"></a>子元素
  `Types` 元素可包含任意数量的 `Default` 元素。
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |`Default`|描述 VSIX 包中的内容类型。 包中的每个文件类型都必须有其自身的 `Default` 元素。|
 
-### <a name="attributes"></a>特性
+### <a name="attributes"></a>属性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |`Extension`|VSIX 包中文件的文件扩展名。|
 |`ContentType`|描述与文件扩展名关联的内容类型。|
@@ -66,7 +66,7 @@ ms.locfileid: "105055890"
 ### <a name="attribute-name-attribute"></a>{Attribute name}Attribute
  Visual Studio 可识别 `ContentType` 相关类型的以下值 `Extension` 。
 
-|扩展名|ContentType|
+|扩展|ContentType|
 |---------------|-----------------|
 |txt|text/plain|
 |.pkgdef|text/plain|
@@ -85,7 +85,7 @@ ms.locfileid: "105055890"
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>说明
+### <a name="description"></a>描述
  下面的 [Content_Types] .xml 文件描述了一个典型的 VSIX 包。
 
 ### <a name="code"></a>代码
@@ -101,7 +101,7 @@ ms.locfileid: "105055890"
 </Types>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [VSIX 包的剖析](../extensibility/anatomy-of-a-vsix-package.md)
 - [VSIX 扩展架构1.0 引用](/previous-versions/dd393700(v=vs.110))
 - [OPC：用于打包数据的新标准](/archive/msdn-magazine/2007/august/opc-a-new-standard-for-packaging-your-data)

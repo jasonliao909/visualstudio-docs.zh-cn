@@ -3,7 +3,7 @@ title: 会话调试管理器 |Microsoft Docs
 description: 了解会话调试管理器，该管理器在多个计算机上管理多个进程中调试程序的多个调试引擎。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - session debug manager, unifying session views
 - session debug manager, broadcasting
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5a206b8ece21b14758dfeb02563d4d323dcf60
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 217a2d401e61c58a58d958bb754265a19a2a367d
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079457"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902080"
 ---
 # <a name="session-debug-manager"></a>会话调试管理器
 会话调试管理器 (SDM) 管理任意数量的调试引擎)  (用于在多个进程中调试任意数量的程序的调试引擎。 除了成为调试引擎多路复用器外，SDM 还为 IDE 提供了一个统一的调试会话视图。

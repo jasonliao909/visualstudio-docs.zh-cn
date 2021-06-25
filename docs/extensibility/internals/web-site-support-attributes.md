@@ -3,7 +3,7 @@ title: 网站支持属性 |Microsoft Docs
 description: 了解使用网站项目扩展 Visual Studio 功能所需的网站支持特性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - web site projects, registration
 ms.assetid: 46d52e2c-ca2a-4bbd-8500-5b0129768aec
@@ -12,12 +12,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d5259914b238927a58a7297a8e9c0b6fcef0f04c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 348fd16234e38cd7832ae18e7b28e6abe0bc63d9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069088"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901768"
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目可以扩展以提供对 Web 编程语言的支持。 语言必须自行注册， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以便在选择该语言时，项目模板可以出现在 " **新建** 网站" 对话框中。

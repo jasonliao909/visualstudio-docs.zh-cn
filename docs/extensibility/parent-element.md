@@ -1,9 +1,9 @@
 ---
-title: 父元素 |Microsoft Docs
-description: 父元素指定元素是按钮、组合框、菜单或组的父级。
+title: 父元素|Microsoft Docs
+description: Parent 元素指定元素是按钮、组合框、菜单或组的父级。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - VSCT XML schema elements, Parent
 - Parent element (VSCT XML schema)
@@ -13,15 +13,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2ac914fd3245982af89facb97ff2d528b410da99
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3dbf7202ac7fb94762ea132a2620625fae97ddfb
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090377"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901547"
 ---
 # <a name="parent-element"></a>父元素
-按钮或组合框的父级只能是组。 菜单或组的父级可以是任何其他菜单或组。 在 [CommandPlacement 元素](../extensibility/commandplacement-element.md)中，此元素是必需的;在所有其他实例中，它是可选的。 如果省略此元素，则 `Group_Undefined:0` 将隐含的父。
+按钮或组合框的父级只能是一个组。 菜单或组的父级可能是任何其他菜单或组。 在 [CommandPlacement 元素中](../extensibility/commandplacement-element.md)，此元素是必需的;在所有其他实例中，它是可选的。 如果省略此元素，则隐含 `Group_Undefined:0` 的父级。
 
 ## <a name="syntax"></a>语法
 
@@ -34,7 +34,7 @@ ms.locfileid: "105090377"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
@@ -44,12 +44,12 @@ ms.locfileid: "105090377"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给集成开发环境 (IDE) 的命令。 例如，菜单项、菜单、工具栏和组合框。|
-|[按钮元素](../extensibility/buttons-element.md)|组 [按钮元素](../extensibility/button-element.md) 元素。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向集成开发环境提供的命令的所有元素 (IDE) 。 例如，菜单项、菜单、工具栏和组合框。|
+|[Buttons 元素](../extensibility/buttons-element.md)|对 [Button 元素元素进行](../extensibility/button-element.md) 分组。|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
-|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的项。|
+|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

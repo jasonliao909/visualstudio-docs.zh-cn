@@ -2,7 +2,7 @@
 description: 此函数检索排队状态事件。
 title: SccGetEvents 函数 |Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - SccGetEvents
 helpviewer_keywords:
@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7611a3f71b5fa6205708aca6b957f3921a71517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072983"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901053"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函数
 此函数检索排队状态事件。
@@ -54,7 +54,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|说明|
+|值|描述|
 |-----------|-----------------|
 |SCC_OK|获取事件成功。|
 |SCC_E_OPNOTSUPPORTED|不支持此函数。|

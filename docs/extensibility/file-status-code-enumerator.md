@@ -1,9 +1,9 @@
 ---
-title: 文件状态代码枚举器 |Microsoft Docs
-description: SccStatus 枚举器包含的常量值用于指定源代码管理系统中的文件状态，由 SccQueryInfo 和 POPLISTFUNC 使用。
+title: 文件状态代码枚举器|Microsoft Docs
+description: SccStatus 枚举器包含常量值，这些值指定源代码管理系统中文件的状态，由 SccQueryInfo 和 POPLISTFUNC 使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 helpviewer_keywords:
 - named constants, SccStatus enumerator
 - source control plug-ins, file status enumeration
@@ -15,15 +15,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: af2ff3293a55dc76925aedd7a029e1bfdd367186
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95de8a29efcd56880cdaf452c9f21b90bba1c5c9
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074946"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112900962"
 ---
 # <a name="file-status-code-enumerator"></a>文件状态代码枚举器
-`SccStatus`枚举器包含指定源代码管理系统中文件状态的命名常量值。 此枚举由 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 和 `POPLISTFUNC` 回调函数使用 (请参阅 [POPLISTFUNC](../extensibility/poplistfunc.md) 了解详细信息) 。
+`SccStatus`枚举器包含指定源代码管理系统中文件的状态的命名常量值。 [SccQueryInfo](../extensibility/sccqueryinfo-function.md)和回调函数使用此枚举 (`POPLISTFUNC` [POPLISTFUNC，](../extensibility/poplistfunc.md)了解) 。
 
 ## <a name="syntax"></a>语法
 
@@ -51,41 +51,41 @@ enum SccStatus {
 ```
 
 ## <a name="members"></a>成员
- 无法获取 SCC_STATUS_INVALID 状态;不要依赖于它。
+ SCC_STATUS_INVALID状态;不依赖它。
 
- SCC_STATUS_NOTCONTROLLED 文件不受源代码管理。
+ SCC_STATUS_NOTCONTROLLED文件不在源代码管理下。
 
- SCC_STATUS_CONTROLLED 文件受源代码管理。
+ SCC_STATUS_CONTROLLED文件受源代码管理。
 
- 当前用户已在本地磁盘上签出 SCC_STATUS_CHECKEDOUT。
+ SCC_STATUS_CHECKEDOUT本地磁盘上的当前用户签出。
 
- SCC_STATUS_OUTOTHER 文件已由其他用户签出。
+ SCC_STATUS_OUTOTHER另一个用户签出文件。
 
- SCC_STATUS_OUTEXCLUSIVE 文件以独占方式签出。
+ SCC_STATUS_OUTEXCLUSIVE文件已以独占方式签出。
 
- SCC_STATUS_OUTMULTIPLE 多个用户签出了该文件。
+ SCC_STATUS_OUTMULTIPLE文件由多个用户签出。
 
- SCC_STATUS_OUTOFDATE 文件不是最新的。
+ SCC_STATUS_OUTOFDATE文件不是最新的。
 
- SCC_STATUS_DELETED 文件已从项目中删除。
+ SCC_STATUS_DELETED文件已从项目中删除。
 
- 锁定 SCC_STATUS_LOCKED 文件;不允许更多版本。
+ SCC_STATUS_LOCKED文件已锁定;不允许更多版本。
 
- SCC_STATUS_MERGED 文件已合并，但尚未修复/验证。
+ SCC_STATUS_MERGED文件已合并但尚未修复/验证。
 
- SCC_STATUS_SHARED 文件在项目之间共享。
+ SCC_STATUS_SHARED文件在项目之间共享。
 
- SCC_STATUS_PINNED 文件共享到显式版本。
+ SCC_STATUS_PINNED文件共享到显式版本。
 
- SCC_STATUS_MODIFIED 文件已修改/损坏/违反。
+ SCC_STATUS_MODIFIED文件已被修改/损坏/违反。
 
- SCC_STATUS_OUTBYUSER 文件由当前用户签出。
+ SCC_STATUS_OUTBYUSER当前用户签出文件。
 
- SCC_STATUS_NOMERGE 文件永远不能与合并，并且无需在 GET 之前保存。
+ SCC_STATUS_NOMERGE文件永远不能与 合并，并且不需要在 GET 之前保存。
 
- SCC_STATUS_RESERVED_1 保留供内部使用。
+ SCC_STATUS_RESERVED_1保留供内部使用。
 
- SCC_STATUS_RESERVED_2 保留供内部使用。
+ SCC_STATUS_RESERVED_2保留供内部使用。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)

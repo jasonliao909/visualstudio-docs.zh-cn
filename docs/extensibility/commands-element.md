@@ -1,9 +1,9 @@
 ---
-title: 命令元素 |Microsoft Docs
-description: 命令元素表示 VSPackage 工具栏上命令的集合，并可包含以下各节：菜单、组、按钮、combos 和位图。
+title: Commands 元素|Microsoft Docs
+description: Commands 元素表示 VSPackage 工具栏上的命令集合，可以包含以下部分：菜单、组、按钮、组合和位图。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 f1_keywords:
 - Commands
 helpviewer_keywords:
@@ -15,17 +15,17 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 671e855a31af17310fdab58689d8775b490cb93a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e4c7b058acdd634079d0ca60dddb9f80e0e26ff0
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089584"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112901865"
 ---
 # <a name="commands-element"></a>Commands 元素
-表示 VSPackage 工具栏上命令的集合。 集合最多可以包含五个子节，如下所示：菜单、组、按钮、combos 和位图。
+表示 VSPackage 工具栏上的命令集合。 集合可以有最多五个子节，如下所示：菜单、组、按钮、组合和位图。
 
- 每个子元素（例如）由 \<Menu> 唯一的命令 ID 标识，该 ID 是一个 GUID 和数字标识符对。 GUID 标识 "命令集"，用于对逻辑上相关的命令进行分组。 VSPackage 应定义自己的命令集，以避免与其他 Vspackage 定义的命令 Id 发生冲突。
+ 每个子节子元素（例如 ）由唯一的命令 ID（GUID 和数字标识符对） \<Menu> 标识。 GUID 标识"命令集"，用于对逻辑相关的命令进行分组。 VSPackage 应定义自己的命令集，以避免与其他 VSPackage 定义的命令 ID 冲突。
 
 ## <a name="syntax"></a>语法
 
@@ -44,28 +44,28 @@ ms.locfileid: "105089584"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
-|包|标识提供命令的 VSPackage 的 GUID。<br /><br /> 例如，package = "guidVsPackage1Pkg"。|
+|包|一个 GUID，用于标识提供命令的 VSPackage。<br /><br /> 例如，package="guidVsPackage1Pkg"。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
-|[Groups 元素](../extensibility/groups-element.md)|包含在 VSPackage 中定义命令组的项。|
-|[按钮元素](../extensibility/buttons-element.md)|组按钮元素。|
-|[位图元素](../extensibility/bitmaps-element.md)|组位图元素。|
-|[Combos 元素](../extensibility/combos-element.md)|组组合元素。|
+|[Groups 元素](../extensibility/groups-element.md)|包含用于定义 VSPackage 中的命令组的条目。|
+|[Buttons 元素](../extensibility/buttons-element.md)|对 Button 元素进行分组。|
+|[Bitmaps 元素](../extensibility/bitmaps-element.md)|对位图元素进行分组。|
+|[Combos 元素](../extensibility/combos-element.md)|对组合元素进行分组。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 为 IDE 提供的命令。 可能的元素包括菜单项、菜单、工具栏和组合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向 IDE 提供的命令的所有元素。 可能的元素包括菜单项、菜单、工具栏和组合框。|
 
 ## <a name="example"></a>示例
- 下面的示例演示如何使用 [命令元素](../extensibility/commands-element.md)。
+ 下面的示例演示如何使用 [Commands 元素](../extensibility/commands-element.md)。
 
 ```
 <Commands package="guidMyPackage">
@@ -91,5 +91,5 @@ ms.locfileid: "105089584"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackages 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
