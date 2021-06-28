@@ -1,47 +1,47 @@
 ---
-title: 正在查找 Visual Studio |Microsoft Docs
-description: 可以安装同一版本的 Visual Studio 的多个实例。 了解如何使用 COM 查询 API 查找所需的实例。
+title: 定位Visual Studio |Microsoft Docs
+description: 可以安装同一版本的数据库的多个Visual Studio。 了解如何使用 COM 查询 API 查找想要的实例。
 ms.custom: SEO-VS-2020
 ms.date: 08/21/2017
 ms.topic: conceptual
 helpviewer_keywords:
 - deployment, VSIX
 ms.assetid: 680c3b25-7901-4768-8363-6d1fcd1ea636
-ms.author: heaths
-manager: jmartens
+author: leslierichardson95
+ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175623723b8f7b59a644a439afd10246eab01c95
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd0fcd294983d6a6567676f06703b4bd1dd376c4
+ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893589"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112990501"
 ---
 # <a name="locate-visual-studio"></a>找到 Visual Studio
 
-从 Visual Studio 2017 开始，你可以安装相同版本甚至版本的多个实例。 当您想要在主开发计算机上预览新功能，同时保留以前的安装时，这非常有用。 由于这些更改，因此没有可用于查找实例的单一环境变量或注册表值。 相反，可以使用 [COM 查询 API](/dotnet/api/microsoft.visualstudio.setup.configuration) 基于与扩展相关的条件来查找实例。
+从 Visual Studio 2017 开始，可以安装同一版本甚至版本的多个实例。 当你想要在主开发计算机上预览新功能，同时保留以前的安装时，这非常有用。 由于这些更改，没有可用于查找实例的单一环境变量或注册表值。 相反，可以使用 COM [查询 API](/dotnet/api/microsoft.visualstudio.setup.configuration) 根据与扩展相关的条件查找实例。
 
-这是一个快速的只读 API，其中包含适用于本机和托管代码的 NuGet 包。
+这是一个快速只读 API，包含可用于本机和托管代码的 NuGet 包。
 
 | 代码 | 程序包 |
 | ---- | --- |
 | 本机 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | 托管 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-您可以查找给定路径或当前进程的单个实例，或者枚举所有实例。 有关如何查找 Visual Studio 的完整示例，请参阅 [示例](https://github.com/Microsoft/vs-setup-samples) 。
+可以查找给定路径或当前进程的单个实例，或枚举所有实例。 请参阅 [示例](https://github.com/Microsoft/vs-setup-samples) ，了解如何查找Visual Studio。
 
 ## <a name="tools"></a>工具
 
-若要在生成环境、PowerShell 脚本、安装程序以及更多方案中查找 Visual Studio 和其他工具，可以直接使用多个开源工具，也可以使用自己的脚本进行重新分发。
+若要Visual Studio环境、PowerShell 脚本、安装程序和其他方案中的一些工具，可以直接使用许多开源工具，也可以随自己的脚本一起重新分发。
 
 | 项目 | 说明 |
 | ------- | ----------- |
-| [vswhere](https://github.com/Microsoft/vswhere) | 单个文件本机可执行文件，用于查找满足条件的实例、发布或预发行的实例、安装的产品以及安装的工作负载。 还支持查找 Visual Studio 2010 和更高版本，但对于 Visual Studio 2017 和更高版本，则返回更少的信息。 有关示例，请参阅 [wiki](https://github.com/Microsoft/vswhere/wiki) 。 |
-| [Vssetup.powershell cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell cmdlet 支持2.0 和更高版本，以对象的形式返回丰富信息，你可以使用这些对象基于与 _vswhere_ 相同的条件查找实例，并发现有关实例的更多属性。 有关示例，请参阅 [wiki](https://github.com/Microsoft/vssetup.powershell/wiki) 。 |
-| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自动查找 _VSIXInstaller_ ，并通过传递命令行来安装 **.vsix* 文件。 此功能在不直接支持查询 Api 的安装程序中很有用。 有关示例，请参阅 [wiki](https://github.com/Microsoft/vsixbootstrapper/wiki) 。 |
+| [vswhere](https://github.com/Microsoft/vswhere) | 单文件本机可执行文件，用于查找满足发布或预发布、已安装的产品以及已安装的工作负荷等条件的实例。 还支持Visual Studio 2010 及更高版本，但返回的信息较少，Visual Studio 2017 及更高版本。 有关示例 [，](https://github.com/Microsoft/vswhere/wiki) 请参阅 wiki。 |
+| [VSSetup cmdlet](https://github.com/Microsoft/vssetup.powershell) | PowerShell cmdlet 支持 2.0 及更高版本，这些 cmdlet 将丰富的信息作为对象返回，可用于根据与 _vswhere_ 相同的条件查找实例，并发现更多有关实例的属性。 有关示例 [，](https://github.com/Microsoft/vssetup.powershell/wiki) 请参阅 wiki。 |
+| [VSIXBootstrapper](https://github.com/Microsoft/vsixbootstrapper) | 自动查找 _VSIXInstaller_ 并传递命令行以安装 **.vsix* 文件。 此功能在未直接支持查询 API 的安装程序中非常有用。 有关示例 [，](https://github.com/Microsoft/vsixbootstrapper/wiki) 请参阅 wiki。 |
 
 ## <a name="see-also"></a>另请参阅
 
-* [Visual Studio 2017 安装程序的更改](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
+* [对 2017 Visual Studio的更改](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)
 * [使用 DTE 启动 Visual Studio](launch-visual-studio-dte.md)
