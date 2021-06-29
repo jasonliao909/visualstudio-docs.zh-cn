@@ -7,28 +7,28 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 03/25/2017
 ms.author: ghogen
-ms.openlocfilehash: 08ccab99df40247390894aa53d5073a3aff0c561
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: 775045247cda106d31cf1517e727b9dda5142c4f
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997652"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038611"
 ---
 # <a name="manage-the-resources-associated-with-your-azure-accounts-in-visual-studio-cloud-explorer"></a>在 Visual Studio Cloud Explorer 中管理与 Azure 帐户关联的资源
 
 ::: moniker range=">=vs-2022"
 > [!Important]
-> Cloud Explorer已在 2022 年Visual Studio停用。 可以改为使用以下替代方法：
-> - 使用 [Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 提供的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
+> Cloud Explorer 已在 Visual Studio 2022 中停用。 相反，可以使用以下替代方法：
+> - 使用 [Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
 > - 使用 [Kudu 控制台](https://github.com/projectkudu/kudu/wiki/Kudu-console)可直接以提升的命令行访问应用服务服务器及其文件系统。 这是一个重要的调试工具，同时也支持 CLI 操作（如安装包）。
 >
-> 如果需要，可以使用 Azure 门户或继续使用早期版本的 服务器资源管理器 中的 Azure Visual Studio。
+> 如果需要，可以使用 Azure 门户或继续使用以前版本的 Visual Studio 中的服务器资源管理器的 Azure 节点。
 >
-> 有关 2022 Visual Studio，请参阅 [发行说明](/visualstudio/releases/2022/release-notes-preview/)。
+> 有关 Visual Studio 2022 的详细信息，请参阅我们的 [发行说明](/visualstudio/releases/2022/release-notes-preview/)。
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=vs-2019"
 
 通过 Cloud Explorer，可在 Visual Studio 中查看 Azure 资源和资源组、检查其属性，以及执行重要的开发人员诊断操作。
 
@@ -40,17 +40,17 @@ ms.locfileid: "112997652"
 * Microsoft Azure 帐户 - 如果没有帐户，可以[注册免费试用帐户](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)，或者[激活 Visual Studio 订户权益](https://azure.microsoft.com/pricing/member-offers/credit-for-visual-studio-subscribers/)。
 
 > [!NOTE]
-> 若要查看Cloud Explorer，请按 **Ctrl** Q 激活搜索框，然后按 + Cloud Explorer。 
+> 若要查看 Cloud Explorer，请按 **Ctrl** + **Q** 激活搜索框，然后输入 **Cloud Explorer**。
 
 ## <a name="add-an-azure-account-to-cloud-explorer"></a>将 Azure 帐户添加到 Cloud Explorer
 
-若要查看与 Azure 帐户关联的资源，必须先将该帐户添加到 **Cloud Explorer。**
+若要查看与 Azure 帐户关联的资源，必须先将帐户添加到 **Cloud Explorer**。
 
-1. 在 **Cloud Explorer"** 中，选择" **帐户管理"** 按钮。
+1. 在 **Cloud Explorer** 中，选择 " **帐户管理** " 按钮。
 
    ![Cloud Explorer Azure 帐户设置图标](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
-1. 选择"**管理帐户"。**
+1. 选择 " **管理帐户**"。
 
    ![Cloud Explorer 添加帐户链接](./media/vs-azure-tools-resources-managing-with-cloud-explorer/manage-accounts-link.png)
 
@@ -60,13 +60,13 @@ ms.locfileid: "112997652"
 
    ![Cloud Explorer：选择要显示的 Azure 订阅](./media/vs-azure-tools-resources-managing-with-cloud-explorer/select-subscriptions.png)
 
-1. 选择要浏览其资源的订阅后，这些订阅和资源会显示在 **Cloud Explorer。**
+1. 选择要浏览其资源的订阅后，这些订阅和资源会显示在 **Cloud Explorer** 中。
 
    ![Azure 帐户的 Cloud Explorer 资源列表](./media/vs-azure-tools-resources-managing-with-cloud-explorer/resources-listed.png)
 
 ## <a name="remove-an-azure-account-from-cloud-explorer"></a>从 Cloud Explorer 删除 Azure 帐户
 
-1. 在 **"Cloud Explorer"** 中，选择"**帐户管理"。**
+1. 在 **Cloud Explorer** 中，选择 " **帐户管理**"。
 
    ![Azure 帐户设置](./media/vs-azure-tools-resources-managing-with-cloud-explorer/azure-account-settings.png)
 
@@ -113,10 +113,10 @@ ms.locfileid: "112997652"
 
 ## <a name="find-resources-in-cloud-explorer"></a>在 Cloud Explorer 中查找资源
 
-若要在 Azure 帐户订阅中查找具有特定名称的资源，请在 "搜索"框中输入 **Cloud Explorer。**
+若要在 Azure 帐户订阅中查找具有特定名称的资源，请在 **Cloud Explorer** 的 "**搜索**" 框中输入名称。
 
   ![在云资源管理器中查找资源](./media/vs-azure-tools-resources-managing-with-cloud-explorer/search-for-resources.png)
 
-在"搜索"框中 **输入字符** 时，资源树中只会显示与这些字符匹配的资源。
+当您在 " **搜索** " 框中输入字符时，只有符合这些字符的资源才会显示在资源树中。
 
 ::: moniker-end
