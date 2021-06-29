@@ -7,26 +7,26 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: ab67a81d761f2e17c82b75fb59a201188cf80986
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: f95542c79e6f8cde83866caa082b8e025b069589
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997626"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038572"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>从服务器资源管理器访问 Azure 虚拟机
 
 ::: moniker range=">=vs-2022"
 > [!Important]
-> 服务器资源管理器 2022 年 1 月Visual Studio Azure 节点。 可以使用 Azure 门户或继续使用早期版本的 azure 门户服务器资源管理器 Azure Visual Studio。
+> 服务器资源管理器的 Azure 节点已在 Visual Studio 2022 中停用。 可以使用 Azure 门户或继续使用以前版本的 Visual Studio 中的服务器资源管理器的 Azure 节点。
 >
-> 此外 [，Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 提供的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
+> 此外， [Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer) 是 Microsoft 的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
 >
-> 有关 2022 Visual Studio，请参阅 [发行说明](/visualstudio/releases/2022/release-notes-preview/)。
+> 有关 Visual Studio 2022 的详细信息，请参阅我们的 [发行说明](/visualstudio/releases/2022/release-notes-preview/)。
 
 ::: moniker-end
 
-::: moniker range="<=vs-2017"
+::: moniker range="<=vs-2019"
 
 如果有 Azure 托管的虚拟机，可以在服务器资源管理器中访问它们。 必须首先登录到 Azure 订阅才能查看移动服务。 若要登录，请在服务器资源管理器中打开“Azure”节点的快捷菜单，并选择“连接到 Microsoft Azure”。
 
