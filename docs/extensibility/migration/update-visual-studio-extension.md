@@ -9,12 +9,12 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e7c4990d513bfb276984611b2d38f3e35a825eb
-ms.sourcegitcommit: a7a4c5545a269ca74a7291966ff77afb3b57f5ce
+ms.openlocfilehash: 512e9a71cde5ca29c737c1623aa0c8f9c37dd60d
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/21/2021
-ms.locfileid: "112424648"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046126"
 ---
 # <a name="update-a-visual-studio-extension-for-visual-studio-2022"></a>更新 Visual Studio 2022 Visual Studio 扩展
 
@@ -105,7 +105,7 @@ ms.locfileid: "112424648"
    >-<Reference Include="Microsoft.VisualStudio.OLE.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop" />
    >-<Reference Include="Microsoft.VisualStudio.Interop.8.0" />
-   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" >Version="..." />
+   >+<PackageReference Include="Microsoft.VisualStudio.Sdk" Version="..." />
    >```
 
    请务必选择与目标版本的最低版本Visual Studio包版本。
@@ -208,7 +208,7 @@ ms.locfileid: "112424648"
 
    此 `ProductArchitecture` 元素至关重要。 Visual Studio *2022 不会安装你* 的扩展。
 
-   | 元素 | 值 | 描述 |
+   | 元素 | 值 | 说明 |
    | - | - | - |
    | ProductArchitecture | X86、AMD64 | 此 VSIX 支持的平台。 不区分大小写。 每个元素一个平台，每个 InstallTarget 一个元素。 对于低于17.0 的产品版本，默认值为 x86，可以省略。  对于产品版本17.0 和更高版本，此元素是必需的，并且没有默认值。 对于 Visual Studio 2022，此元素的有效内容只有 "amd64"。 |
 
@@ -309,11 +309,11 @@ XAML 没有预处理器来允许基于预处理器符号自定义内容。 可�
 
 ### <a name="other-considerations"></a>其他注意事项
 
-#### <a name="dependencies"></a>依赖关系
+#### <a name="dependencies"></a>依赖项
 
 如果 VSIX 通过元素将其他 VSIX 指定为依赖项 `<dependency>` ，则每个引用的 vsix 都需要在与 VSIX 相同的目标和产品体系结构中安装。 如果依赖 VSIX 不支持 Visual Studio 的目标安装，VSIX 将失败。 对于依赖 VSIX，支持比你的目标和体系结构更多的目标和体系结构是可以的。 此限制意味着，具有依赖关系的 VSIX 的部署和分发方法应反映它们的依赖项。
 
-## <a name="q--a"></a>问题解答
+## <a name="q--a"></a>问与答
 
 **问**：我的扩展不需要任何互操作更改，因为它仅提供数据 (例如，模板) ，我是否可以创建一个包含 Visual Studio 2022 的扩展？
 
