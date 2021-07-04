@@ -6,7 +6,6 @@ ms.date: 06/01/2020
 ms.topic: reference
 f1_keywords:
 - vs.toolbox.general
-- vs.toolbox
 helpviewer_keywords:
 - Toolbox [Visual Studio]
 - custom controls [Visual Studio]
@@ -15,12 +14,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 52b7eeefd157e99fc5214f29c220d94fd6e19772
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841885"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925210"
 ---
 # <a name="toolbox"></a>工具箱
 
@@ -37,7 +36,7 @@ ms.locfileid: "99841885"
 
 项目定目标到的 .NET 版本也会影响工具箱中显示的控件集。 如有必要，可从项目的属性页更改目标框架版本。 在“解决方案资源管理器”中选择项目节点，再在菜单栏上依次选择“项目” > “项目名属性”  。 在“应用程序”选项卡上，使用“目标框架”下拉列表。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![显示“目标框架”下拉框中选项的“应用程序”对话框的屏幕截图。](media/vs-2019/toolbox-change-dotnet-version.png "可以在其中更改 .NET 版本的对话框的屏幕截图")
 

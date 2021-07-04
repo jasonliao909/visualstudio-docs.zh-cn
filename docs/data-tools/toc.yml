@@ -142,7 +142,7 @@
               href: add-code-to-tableadapters-in-n-tier-applications.md
             - name: 将数据集和 TableAdapter 分离到不同的项目中
               href: separate-datasets-and-tableadapters-into-different-projects.md
-    - name: 控制
+    - name: 控件
       items:
         - name: 将控件绑定到数据源
           href: bind-controls-to-data-in-visual-studio.md
@@ -209,8 +209,6 @@
           href: how-to-add-update-or-remove-a-wcf-data-service-reference.md
     - name: 升级 .mdf 文件
       href: upgrade-dot-mdf-files.md
-    - name: 数据访问错误疑难解答
-      href: additional-resources-for-troubleshooting-data-access-errors.md
 - name: 参考
   items:
     - name: O/R 设计器 (Linq to SQL)

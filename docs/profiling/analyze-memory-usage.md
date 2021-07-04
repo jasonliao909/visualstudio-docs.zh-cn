@@ -1,7 +1,7 @@
 ---
 title: 分析内存使用情况
 description: 了解可用于查找内存泄露和内存低效使用情况的工具，例如内存使用情况工具和 .NET 对象分配工具。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -9,12 +9,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2af4bc47d711275716eea528a4d9bd816408322f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6af0cd98e69a3c43ba70f5609567243e6285201
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901136"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387965"
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用情况
 

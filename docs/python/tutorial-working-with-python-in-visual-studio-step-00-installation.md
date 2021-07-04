@@ -7,16 +7,16 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9767630fc7fee4eafce72e4eb99aa12db8469691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee6454a3414b8b586dc596ea25ff76066009df50
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970538"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390680"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
@@ -39,7 +39,7 @@ ms.locfileid: "99970538"
 
     ![通过交互窗口测试 Python](media/installation-interactive-test.png)
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 > [!div class="nextstepaction"]
 > [步骤 1：创建 Python 项目](tutorial-working-with-python-in-visual-studio-step-01-create-project.md)

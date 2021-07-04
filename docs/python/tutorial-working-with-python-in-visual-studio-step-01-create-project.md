@@ -7,16 +7,16 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 74259a6e15446d8ca0b07f3b694d0285427f8d9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 927faad404e50a4cf31579c56882bf50208bbb21
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861551"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390693"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 
@@ -60,7 +60,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     (1) 粗体突出显示的是项目，其名称是在“新建项目”对话框中指定的名称。 在磁盘上，此项目由项目文件夹中的 .pyproj 文件表示。
 
-    (2) 顶层是一个 *解决方案*，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
+    (2) 顶层是一个 *解决方案*，它与项目默认同名。 解决方案在磁盘上由 .sln 文件表示，是一个或多个相关项目的容器  。 例如，如果为 Python 应用程序编写 C++ 扩展，该 C++ 项目可以驻留在同一解决方案中。 解决方案还可以包含 Web 服务的项目，以及专用测试程序的项目。
 
     (3) 在项目下方可以看到源文件，在本例中，只有一个 .py 文件。 选择文件时会在“属性”窗口中显示其属性。 双击文件会以任何适合该文件的方式打开该文件。
 
@@ -68,7 +68,7 @@ Visual Studio 为 Python 提供一级语言支持。 本教程将指导你完成
 
     右键单击“解决方案资源管理器”中的任意节点或项均可访问适用命令菜单。 例如，“重命名”命令可用于更改任何节点或项（包括项目和解决方案）的名称。
 
-## <a name="next-step"></a>下一步
+## <a name="next-step"></a>后续步骤
 
 > [!div class="nextstepaction"]
 > [编写并运行代码](tutorial-working-with-python-in-visual-studio-step-02-writing-code.md)
