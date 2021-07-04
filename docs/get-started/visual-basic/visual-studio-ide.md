@@ -4,6 +4,7 @@ description: 了解 Visual Basic 开发人员如何使用 Visual Basic 编辑、
 ms.date: 03/02/2021
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 398070e0214e36f696bb69614bb6a51b3462a551
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682947"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386626"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
@@ -432,7 +433,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    该变量会在整个项目中进行重命名，本例中只有两处。
 
-4. 接下来介绍 IntelliSense。 在 `Console.WriteLine("Hello " + username + "!")` 行下方，键入以下代码片段：
+4. 接下来介绍 IntelliSense。 在 `Console.WriteLine("Hello &quot; + username + &quot;!")` 行下方，键入以下代码片段：
 
     ```vb
    Dim now = Date.
@@ -481,13 +482,13 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker-end
 
-## <a name="debug-code"></a>调试代码
+## <a name="debug-code&quot;></a>调试代码
 
 编写代码时，需要运行并测试该代码是否存在 bug。 可通过 Visual Studio 的调试系统逐句执行代码，一次执行一条语句，逐步检查变量。 可设置停止在特定行执行代码的断点。 可观察变量的值如何随代码运行而更改等。
 
 通过设置断点，可查看程序处于飞行模式时 `username` 变量的值。
 
-1. 查找显示 `Console.WriteLine("Hello " + username + "!")` 的代码行。 要在此代码行上设置一个断点，即让程序在该行暂停执行，请单击编辑器的最左侧边距。 还可单击代码行上的任意位置，然后按 F9。
+1. 查找显示 `Console.WriteLine(&quot;Hello &quot; + username + &quot;!")` 的代码行。 要在此代码行上设置一个断点，即让程序在该行暂停执行，请单击编辑器的最左侧边距。 还可单击代码行上的任意位置，然后按 F9。
 
    此时，最左侧边距中将显示一个红圈，代码突出显示为红色。
 

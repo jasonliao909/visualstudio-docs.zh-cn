@@ -12,12 +12,12 @@ manager: jmartens
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7efc8e5955f4d11004d8408cadf312e6cbcb43eb
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: e2224ffc1776a15453d1382872c2d3f5a9e86c3c
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607400"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760947"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 
@@ -34,7 +34,7 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 ![Visual Studio 测试资源管理器](media/devtest-testexplorer.png)
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 ![Visual Studio 测试资源管理器 16.2](media/vs-2019/test-explorer-16-2.PNG)
 ::: moniker-end
 

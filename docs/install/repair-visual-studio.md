@@ -3,21 +3,21 @@ title: 修复 Visual Studio
 titleSuffix: ''
 description: 了解如何修复 Visual Studio 2017 的安装
 ms.date: 10/12/2020
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: how-to
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 09f167866d03b29530f4845aa958198215289555
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55ebb7c44b44a14154cc54f54885455821f9ee68
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959293"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386782"
 ---
 # <a name="repair-visual-studio"></a>修复 Visual Studio
 
@@ -59,7 +59,7 @@ Visual Studio 安装有时会损毁或损坏。 修复对于修复所有安装�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 

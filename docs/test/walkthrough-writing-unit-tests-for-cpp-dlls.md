@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 2d145e1383e8f6c0d7c25ae72232fdbe2a8d703d
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: cfdc580b94760cb0c5160918210ba6c3dd8fa2f6
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97727536"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042920"
 ---
 # <a name="how-to-write-unit-tests-for-c-dlls"></a>如何：编写 C/C++ DLL 单元测试
 
@@ -86,7 +86,7 @@ ms.locfileid: "97727536"
 
 ## <a name="create-a-dll-project"></a><a name="create_dll_project"></a>创建 DLL 项目
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 以下步骤说明如何在 Visual Studio 2019 中创建 DLL 项目。
 

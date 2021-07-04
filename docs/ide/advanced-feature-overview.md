@@ -1,7 +1,7 @@
 ---
 title: 高级功能
 description: 了解高级功能，这些功能可能更适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。
-ms.custom: SEO-VS-2020
+ms.custom: vs-acquisition
 ms.date: 06/01/2018
 ms.topic: conceptual
 author: TerryGLee
@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 04b048250b2529e21dd30738821b273c268e3498
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862078"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386191"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
@@ -82,13 +82,9 @@ Web 推动着现代社会前进，Visual Studio 可以帮助你编写 Web 应用
 
 - 通过使用 [Xamarin](https://developer.xamarin.com/guides/cross-platform/windows/visual-studio/)，在 C# 和 F# 中生成适用于 iOS、Android 和 Windows 的移动应用。
 
-- 通过 [Apache Cordova](/visualstudio/cross-platform/tools-for-cordova/)，使用标准 Web 技术 &mdash;HTML、CSS 和 JavaScript&mdash; 生成适用于 iOS、Android 和 Windows 的移动应用。
-
 - 通过使用 [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md)，在 C# 中生成 2D 和 3D 游戏。
 
 - 生成适用于 iOS、Android 和 Windows 设备的本机 C++ 应用。 通过[适用于跨平台开发的 C++](/cpp/cross-platform/visual-cpp-for-cross-platform-mobile-development)，在专用于 iOS、Android 和 Windows 的库中分享通用代码。
-
-- 通过 [Android 仿真器](../cross-platform/visual-studio-emulator-for-android.md)部署、测试和调试 Android 应用。
 
 ## <a name="connect-to-databases"></a>连接到数据库
 

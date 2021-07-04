@@ -9,12 +9,12 @@ manager: markl
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 06ad7bd437fca98c7be92a1e12ce31234d876b28
-ms.sourcegitcommit: cc8547eb211c43b67b8123d1211b80b5642e3b18
+ms.openlocfilehash: 6e8df96c6345d84531ef04eae56f7f60dcc3eefe
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/17/2021
-ms.locfileid: "100563417"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042868"
 ---
 # <a name="write-unit-tests-for-c-dlls-in-visual-studio"></a>在 Visual Studio 中编写 C/C++ DLL 单元测试
 
@@ -58,7 +58,7 @@ ms.locfileid: "100563417"
 
   1. 创建本机单元测试项目。
 
-      ::: moniker range="vs-2019"
+      ::: moniker range=">=vs-2019"
 
       1. 在“文件”菜单上，选择“新建” > “项目”  。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“测试”。 然后，选择“本机测试项目”。
 
@@ -90,7 +90,7 @@ ms.locfileid: "100563417"
 
   1. 创建本机单元测试项目。
 
-      ::: moniker range="vs-2019"
+      ::: moniker range=">=vs-2019"
 
       1. 在“文件”菜单上，选择“新建” > “项目”  。 在“添加新项目”对话框中，将“语言”设置为 C++ 并在搜索框中键入“测试”。 然后，选择“本机测试项目”。
 

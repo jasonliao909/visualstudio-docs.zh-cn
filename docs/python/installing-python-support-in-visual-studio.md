@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e0c1cf29c7579978d5992de46b14c01fee0799c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881641"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254805"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -88,7 +88,6 @@ ms.locfileid: "99881641"
     | **Cookiecutter 模板支持** | 安装 Cookiecutter 图形用户界面，用于发现模板、输入模板选项以及创建项目和文件。 请参阅[使用 Cookiecutter 扩展](using-python-cookiecutter-templates.md)。 |
     | **Python Web 支持** | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
     | **Python 本机开发工具** | 安装 C++ 编译器和其他必要组件用于开发 Python 本机扩展。 请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。 若要获取全面的 C++ 支持，还请安装“使用 C++ 的桌面开发”工作负载。 |
-    | **Azure 云服务核心工具** | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。 |
     ::: moniker-end
 
 1. 安装后，安装程序会提供用于修改、启动、修复或卸载 Visual Studio 的选项。 当已安装的所有组件均可使用 Visual Studio 更新时，“修改”按钮将更改为“更新” 。 （随后在下拉菜单中提供“修改”选项。）还可搜索“Visual Studio”，从 Windows “开始”菜单启动 Visual Studio 及安装程序。

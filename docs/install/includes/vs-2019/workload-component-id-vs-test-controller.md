@@ -3,19 +3,19 @@ title: Visual Studio Test Controller 2019 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 将自动测试分发到多台计算机
 keywords: ''
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
-ms.date: 3/2/2021
+ms.date: 05/24/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 7e401ff1cfaea4821b987636261e2dfea8660b3d
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: f72eea5ebbe8ca6f8197002c03237733af6bc2c2
+ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683665"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110449902"
 ---
 ## <a name="test-controller"></a>测试控制器
 

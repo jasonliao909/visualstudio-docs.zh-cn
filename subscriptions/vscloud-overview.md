@@ -7,12 +7,12 @@ ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
-ms.openlocfilehash: 56988001272fb11252b85cb60bdcae109edf8e29
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672538"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043102"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”。
@@ -125,7 +125,7 @@ ms.locfileid: "104672538"
 
 ## <a name="related-resources"></a>相关资源
 - [Visual Studio 订阅管理门户](https://manage.visualstudio.com/)
-- [Visual Studio 云订阅计费常见问题解答](vscloud-billing-faq.md)
+- [Visual Studio 云订阅计费常见问题解答](vscloud-billing-faq.yml)
 - [适用于 CSP 的 Visual Studio 云订阅购买](vscloud-csp.md)
 - - 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请参阅 Visual Studio [订阅支持](https://visualstudio.microsoft.com/subscriptions/support/)
 

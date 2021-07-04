@@ -13,18 +13,18 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a27f5ae8320e942d5167fcc8260179f8cec96e37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0af2717efec7cab8594f193c06e8813bd556b01f
+ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850277"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112375781"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 
 若要设计、编辑及重构类和其他类型，请将类图添加到 C#、Visual Basic 或 C++ 项目中。 若要直观显示项目中代码的不同部分，请将多个类图添加到该项目中。
 
-你不可以从在多个应用间共享代码的项目创建类图。 要创建 UML 类图，请参阅[创建 UML 建模项目和关系图](../../modeling/what-s-new-for-design-in-visual-studio.md)。
+你不可以从在多个应用间共享代码的项目创建类图。 要创建 UML 类图，请参阅[创建 UML 建模项目和关系图](https://devblogs.microsoft.com/devops/uml-designers-have-been-removed-layer-designer-now-supports-live-architectural-analysis/)。
 
 ## <a name="install-the-class-designer-component"></a>安装类设计器组件
 

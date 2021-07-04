@@ -1,7 +1,7 @@
 ---
 title: 查明谁在传递错误的参数值 | Microsoft Docs
 description: 可以找出调用了函数并传递了不正确参数值的代码。 了解如何使用条件断点来实现此目的。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: cb4b3c41b46817d15a13626983ccf55ffa9acc5f
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: b2f747e2f92b7817530fe12e14f8f95a9bfbe791
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155175"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386912"
 ---
 # <a name="how-can-i-find-out-who-is-passing-a-wrong-parameter-value"></a>如何查明谁在传递错误的参数值？
 ## <a name="problem-description"></a>问题描述
