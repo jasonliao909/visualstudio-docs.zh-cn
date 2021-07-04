@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: b50edfe91a9b497760c44d3fd548eb6d2a15a049
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 2f3c611ae157be4f2ea89254856bdd3b6fba448d
+ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "93399372"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110687679"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -110,7 +110,7 @@ ms.locfileid: "93399372"
 |**了解更多信息**|
 |--------------------|
 |[安装 Visual Studio](https://visualstudio.microsoft.com/vs/community/) (VisualStudio.com)|
-|[用于 Apache Cordova 的 Visual Studio Tools 入门](/visualstudio/cross-platform/tools-for-cordova/)|
+|[用于 Apache Cordova 的 Visual Studio Tools 入门](/previous-versions/visualstudio/cross-platform/tools-for-cordova/)|
 |[了解适用于 Android 的 Visual Studio 仿真程序](https://visualstudio.microsoft.com/vs/msft-android-emulator/) (VisualStudio.com)|
 
 ::: moniker-end

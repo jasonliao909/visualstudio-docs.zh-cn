@@ -1,7 +1,7 @@
 ---
 title: 查看 DLL 和可执行文件
 description: 查看在 Visual Studio 中的调试会话期间，应用在“模块”窗口中使用的 DLL 和可执行文件（.exe 文件）。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 titleSuffix: Visual Studio Modules window
 ms.date: 11/04/2018
 ms.topic: how-to
@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8add274d74d9d8d7d72f2808a2b0100c66a19717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f82b8a5051cf1c338c4b1aab6e78209fb2bc08b0
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912203"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385404"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
 

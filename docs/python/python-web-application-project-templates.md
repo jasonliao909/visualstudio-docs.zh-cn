@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a309ba898c22836fb5c0cebfc390b6c8d7c116c5
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104805986"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254844"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -31,7 +31,17 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 ![Web 应用的“新建项目”对话框](media/projects-new-project-dialog-web.png)
 
+::: moniker range="<=vs-2017"
+
 前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设  。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设  。
+
+::: moniker-end
 
 所有其他模板都基于 Bottle、Flask 或 Django Web 框架，可以分为如以下各节所述的三个通用组。 由其中任一模板创建的应用中的代码都足以在本地运行和调试应用。 每个模板还提供必要的 [WSGI 应用对象](https://www.python.org/dev/peps/pep-3333/) (python.org)，以用于生产 Web 服务器。
 
@@ -79,7 +89,11 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 部署到 Microsoft Azure App Service 时，选择一个 Python 版本作为[站点扩展](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)并手动安装包。 此外，因为 Azure 应用服务从 Visual Studio 部署时不会自动安装 requirements.txt 文件中的包，请遵照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的配置详细信息操作。
 
+::: moniker range="<=vs-2017"
+
 Microsoft Azure 云服务支持 requirements.txt 文件   。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
+
+::: moniker-end
 
 ## <a name="debugging"></a>调试
 
@@ -141,11 +155,15 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
 
 如果有针对另一个要共享的框架的设置，或者要为另一个框架请求设置，则[在 GitHub 上提出问题](https://github.com/Microsoft/PTVS/issues)。
 
+::: moniker range="<=vs-2017"
+
 ## <a name="convert-a-project-to-azure-cloud-service"></a>将项目转换为 Azure 云服务
 
 “转换为 Microsoft Azure 云服务项目”命令（见下图）会将云服务项目添加到解决方案  。 此项目包括要使用的虚拟机和服务的部署设置和配置。 使用云项目上的“发布”命令部署到云服务；Python 项目上的“发布”命令仍会部署到网站   。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
 
 ![“转换为 Microsoft Azure 云服务项目”命令](media/template-web-convert-menu.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

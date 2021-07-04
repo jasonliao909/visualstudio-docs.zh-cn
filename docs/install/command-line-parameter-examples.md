@@ -5,19 +5,19 @@ ms.date: 03/30/2019
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 02496f230338e429b281f2b0d516cb9a06fe9e7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5685de34235dcd9b903cbf5be6371ebf3f1e84c3
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868525"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307539"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安装的命令行参数示例
 
@@ -37,7 +37,7 @@ ms.locfileid: "99868525"
 
 * 安装 Visual Studio 的最小实例，不显示任何交互式提示，但显示进度：
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\minVS ^
    --add Microsoft.VisualStudio.Workload.CoreEditor ^
    --passive --norestart
@@ -45,7 +45,7 @@ ms.locfileid: "99868525"
 
 * 使用命令行更新 Visual Studio 实例（不显示任何交互式提示，但显示进度）：
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --update --quiet --wait
    vs_enterprise.exe update --wait --passive --norestart --installPath "C:\installPathVS"
    ```
@@ -55,7 +55,7 @@ ms.locfileid: "99868525"
 
 * 无提示安装包含法语语言包的 Visual Studio 桌面实例，仅在产品安装后才返回值。
 
-  ```cmd
+  ```shell
    vs_enterprise.exe --installPath C:\desktopVS ^
    --addProductLang fr-FR ^
    --add Microsoft.VisualStudio.Workload.ManagedDesktop ^
@@ -66,7 +66,7 @@ ms.locfileid: "99868525"
 
 * 在批处理文件或脚本中使用，以等待 Visual Studio 安装程序完成之后再执行下一个命令。 对于批文件，`%ERRORLEVEL%` 环境变量包含命令的返回值，如[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页面所述。 某些命令实用程序需要其他参数，以等待完成并获取安装程序的返回值。 以下是与 PowerShell 脚本命令“Start-Proces”搭配使用的其他参数的示例：
 
-   ```cmd
+   ```shell
    start /wait vs_professional.exe --installPath "C:\VS" --passive --wait > nul
    echo %errorlevel%
    ```
@@ -94,7 +94,7 @@ ms.locfileid: "99868525"
 
 * 下载 Visual Studio 核心编辑器（最起码的 Visual Studio 配置）。 仅包括英语语言包：
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.CoreEditor
@@ -102,7 +102,7 @@ ms.locfileid: "99868525"
 
 * 下载 .NET 桌面和 .NET Web 工作负载，以及所有推荐组件和 GitHub 扩展。 仅包括英语语言包：
 
-  ```cmd
+  ```shell
    vs_community.exe --layout C:\VS ^
    --lang en-US ^
    --add Microsoft.VisualStudio.Workload.NetWeb ^
@@ -115,7 +115,7 @@ ms.locfileid: "99868525"
 
 * 启动交互式安装 Visual Studio Enterprise 版本中的所有工作负载和组件：
 
-   ```cmd
+   ```shell
    vs_enterprise.exe --all
    ```
 
@@ -123,7 +123,7 @@ ms.locfileid: "99868525"
 
 * 借助 Node.js 开发支持，在已安装 Visual Studio Community 版本的计算机上安装 Visual Studio Professional 的第二个命名实例：
 
-   ```cmd
+   ```shell
    vs_professional.exe --installPath C:\VSforNode ^
    --add Microsoft.VisualStudio.Workload.Node --includeRecommended --nickname VSforNode
   ```
@@ -134,7 +134,7 @@ ms.locfileid: "99868525"
 
 * 从默认安装的 Visual Studio 实例中删除分析工具组件：
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
@@ -147,9 +147,22 @@ ms.locfileid: "99868525"
 
 * 从默认安装的 Visual Studio 实例中删除分析工具组件：
 
-  ```cmd
+  ```shell
    vs_enterprise.exe modify ^
    --installPath "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise" ^
+   --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
+   --passive
+  ```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* 从默认安装的 Visual Studio 实例中删除分析工具组件：
+
+  ```shell
+   vs_enterprise.exe modify ^
+   --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" ^
    --remove Microsoft.VisualStudio.Component.DiagnosticTools ^
    --passive
   ```
@@ -160,7 +173,7 @@ ms.locfileid: "99868525"
 
 ::: moniker range="vs-2017"
 
-这些命令行参数是 15.7 版中的新内容  。 有关这些参数的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+这些命令行参数是 15.7 版中的新内容。 有关这些参数的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 
@@ -184,19 +197,19 @@ ms.locfileid: "99868525"
 
 ::: moniker range="vs-2017"
 
-此命令行命令是 15.9 版中的新内容  。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+此命令行命令是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 
 * 使用 export 保存安装中的选择：
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 
 * 使用 export 从头开始保存自定义选择：
 
-  ```cmd
+  ```shell
   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\vs_installer.exe" export --add Microsoft.VisualStudio.Workload.ManagedDesktop --includeRecommended --config "C:\.vsconfig"
   ```
 
@@ -204,19 +217,19 @@ ms.locfileid: "99868525"
 
 ::: moniker range="vs-2017"
 
-此命令行参数是 15.9 版中的新内容  。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
+此命令行参数是 15.9 版中的新内容。 有关此命令行命令的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md) 页。
 
 ::: moniker-end
 
 * 使用 --config 从以前保存的安装配置文件安装工作负载和组件：
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --config "C:\.vsconfig" --installPath "C:\VS"
   ```
 
 * 使用 --config 向现有安装添加工作负载和组件：
 
-  ```cmd
+  ```shell
   vs_enterprise.exe modify --installPath "C:\VS" --config "C:\.vsconfig"
   ```
 

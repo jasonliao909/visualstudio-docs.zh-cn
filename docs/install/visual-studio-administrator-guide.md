@@ -10,19 +10,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: 4af353f5-6cfd-4ebe-bcfb-f42306e451a0
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0b86d8bc6d3533d2ed50eb4e87330a81f1028f13
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: ba41c545c2af2e0490ef0410fde7849706123940
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547409"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306704"
 ---
 # <a name="visual-studio-administrator-guide"></a>Visual Studio 管理员指南
 
@@ -34,7 +34,7 @@ ms.locfileid: "106547409"
 
 在组织内部署 Visual Studio 之前，需作出几项决策，完成几项任务：
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * 确保每台目标计算机满足[最低安装要求](/visualstudio/releases/2019/system-requirements/)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "106547409"
 
   对于未连接到 Internet 的计算机，创建最小布局是更新脱机 Visual Studio 实例的最简单、最快捷的方法。 有关详细信息，请参阅[使用最小脱机布局更新 Visual Studio](update-minimal-layout.md)。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 * 确定公司所需的[工作负载和组件](workload-and-component-ids.md?view=vs-2019&preserve-view=true)。
 
@@ -78,7 +78,7 @@ ms.locfileid: "106547409"
 
 * 确定是否要启用组策略，以及是否要在个人计算机上将 Visual Studio 配置为禁用客户反馈。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="step-1---download-visual-studio-product-files"></a>第 1 步 - 下载 Visual Studio 产品文件
 

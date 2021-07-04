@@ -19,16 +19,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 236efe20ee652e2690cedf36843d539bf8a9cc46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 85921343ac52c066735d607ce32635e953cf2e6a
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850290"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254785"
 ---
 # <a name="design-and-view-classes-and-types-with-class-designer"></a>使用类设计器设计和查看类和类型
 
 使用 Visual Studio 中的类设计器设计、直观显示和重构代码中的类和其他类型。 使用类图来创建和编辑 C#、Visual Basic 或 C++ 项目中的类。 也可以使用类图深入了解项目结构或重新组织代码。
+
+>[!NOTE]
+>类设计器在 .NET Core 项目中不可用。
 
 ## <a name="what-you-can-do-with-class-diagrams"></a>如何使用类图
 

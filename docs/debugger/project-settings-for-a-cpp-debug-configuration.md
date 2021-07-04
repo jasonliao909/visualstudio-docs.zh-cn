@@ -1,7 +1,7 @@
 ---
 title: C++ 调试配置的项目设置
 description: 在属性页中配置 C 和 C++ 调试。 本文介绍了这些设置及其类别。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/26/2018
 ms.topic: reference
 f1_keywords:
@@ -113,12 +113,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 168dac192972c2ee670d733a07503ffe2776910e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 34dd9b82a642c9e9ec32dde383a8c2e02ac57aa2
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99842716"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385183"
 ---
 # <a name="project-settings-for-a-c-debug-configuration"></a>C++ 调试配置的项目设置
 你可以在“属性页”对话框中更改 C 或 Visual C++ 调试配置的项目设置，相关讨论见[如何：设置调试和发布配置](../debugger/how-to-set-debug-and-release-configurations.md)。 下表显示“属性页”对话框中与调试器有关的设置的位置。

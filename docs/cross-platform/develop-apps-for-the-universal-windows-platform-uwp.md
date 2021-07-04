@@ -11,12 +11,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - uwp
-ms.openlocfilehash: 906097e0356922cdcc5afbabb1771348962ea4ff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e54fdd71d848d1edad93fe38598d71c9dbbede7f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859497"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308111"
 ---
 # <a name="develop-apps-for-the-universal-windows-platform-uwp"></a>开发面向通用 Windows 平台 (UWP) 的应用
 
@@ -50,7 +50,7 @@ ms.locfileid: "99859497"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Windows 10](https://support.microsoft.com/help/17777/downloads-for-windows)。 Visual Studio 2019 只在 Windows 10 上支持 UWP 开发。 有关详细信息，请参阅 Visual Studio [平台目标](/visualstudio/releases/2019/compatibility/)和[系统要求](/visualstudio/releases/2019/system-requirements/)。
 

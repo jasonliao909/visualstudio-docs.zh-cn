@@ -2,19 +2,19 @@
 title: Visual Studio 生成工具 2017 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 来构建基于 Windows 的经典应用程序
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 3d38a5dac5ae23b048e9faf4142cec630b77f9be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3fe0d729902ea454d9f81e51e4957bf2c7d37d1
+ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881917"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "110449784"
 ---
 ## <a name="azure-development-build-tools"></a>Azure 开发生成工具
 

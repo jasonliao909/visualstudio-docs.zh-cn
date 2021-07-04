@@ -9,12 +9,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: d6da05729be409b142f6c9cec2c543fb2b9171ee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869422"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308254"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 
@@ -100,7 +100,7 @@ Visual Studio 包括一系列内置的 [.NET Compiler Platform 分析器](../cod
 
 根据经验，可以快速使用箭头键和 Ctrl+.  检查是否有简单的重构机会并清理代码！
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="run-code-cleanup"></a>运行代码清理
 

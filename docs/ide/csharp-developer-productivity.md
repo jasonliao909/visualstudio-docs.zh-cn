@@ -10,12 +10,12 @@ helpviewer_keywords:
 - editor
 ms.workload:
 - dotnet
-ms.openlocfilehash: a3ac2e91ed9166a2eb8bdc4a19f2143c4fc71640
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 09a33db9df8e1309792cd6a3722bb82333348d84
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161308"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038650"
 ---
 # <a name="visual-studio-productivity-guide-for-c-developers"></a>面向 C# 开发人员的 Visual Studio 工作效率指南
 
@@ -64,7 +64,7 @@ Visual Studio 常用快捷方式如下：
 > [!NOTE]
 > 一些扩展取消绑定默认的 Visual Studio 键绑定。 若要使用以上命令，请按以下方式将键绑定还原为 Visual Studio 默认设置：转到“工具” > “导入和导出设置” > “重置所有设置”，或转到“工具” > “选项” > “键盘” > “重置”      。
 
-有关键盘快捷方式和命令的详细信息，请参阅[高效工作快捷方式](../ide/productivity-shortcuts.md)和[常用键盘快捷方式](default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)。
+有关键盘快捷方式和命令的详细信息，请参阅[高效工作快捷方式](../ide/productivity-shortcuts.md)和[常用键盘快捷方式](default-keyboard-shortcuts-in-visual-studio.md)。
 
 ## <a name="navigate-quickly-to-files-or-types"></a>快速导航到文件或类型
 
@@ -152,7 +152,7 @@ Visual Studio 包含大量重构、代码生成操作和代码修补程序。 �
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 - [Roslynator](https://marketplace.visualstudio.com/items?itemName=josefpihrt.Roslynator2019)
 - [SonarLint for Visual Studio](https://marketplace.visualstudio.com/items?itemName=SonarSource.SonarLintforVisualStudio2019)

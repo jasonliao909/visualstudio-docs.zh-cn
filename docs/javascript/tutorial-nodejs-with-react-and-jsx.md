@@ -1,7 +1,7 @@
 ---
 title: 创建 Node.js 和 React 应用
 description: 了解如何从 Visual Studio 模板创建 Node.js Web 应用程序项目。
-ms.custom: ''
+ms.custom: vs-acquisition
 ms.date: 4/21/2020
 ms.topic: tutorial
 ms.devlang: javascript
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 80516adffcb058d6ce28751e7a9f30002ca3a640
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
+ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729294"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112550696"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -308,7 +308,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
 1. 在命令提示符处，键入下列命令：
 
-    `node_modules\.bin\webpack app.tsx --config webpack-config.js`
+    `node_modules\.bin\webpack ./app.tsx --config webpack-config.js`
 
     命令提示符窗口显示结果。
 
@@ -336,7 +336,7 @@ webpack 绑定 JavaScript 文件，使其可以在浏览器中运行。 它还�
 
    ```json
    "scripts": {
-    "build": "webpack-cli app.tsx --config webpack-config.js"
+    "build": "webpack-cli ./app.tsx --config webpack-config.js"
    }
    ```
 

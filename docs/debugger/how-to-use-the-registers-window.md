@@ -1,7 +1,7 @@
 ---
 title: 在调试器中查看寄存器值 | Microsoft Docs
 description: 在 Visual Studio 的“寄存器”窗口中查看寄存器值。 在调试过程中，寄存器值会随着代码在应用中执行而更改。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/19/2018
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ea0275a5186b58c9b9a07934b95351b597a816f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e2648f74453f51cd8d655ccb0c2344eb1030c1ed
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845004"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385391"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在“寄存器”窗口中查看寄存器值（C#、C++、Visual Basic、F#）
 

@@ -8,19 +8,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0d8441b0a4b8acba3f24f60d5ea8dc7030b79253
-ms.sourcegitcommit: 22789927ec8e877b7d2b67a555d6df97d84103e0
+ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105981285"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307371"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 
@@ -42,7 +42,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 创建[网络布局](../install/create-a-network-installation-of-visual-studio.md)或[本地脱机缓存](../install/create-an-offline-installation-of-visual-studio.md)时，所需证书会下载到 Certificates 文件夹。 可以通过右键单击每个证书文件，选择“安装证书”，然后单击“证书管理器”向导来手动安装证书。 如果看到输入密码提示，请将密码留空。
 
@@ -60,7 +60,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
 
 2. 使用下面的命令创建批处理文件：
 
-   ```cmd
+   ```shell
    certmgr.exe -add [layout path]\certificates\manifestRootCertificate.cer -n "Microsoft Root Certificate Authority 2011" -s -r LocalMachine root
 
    certmgr.exe -add [layout path]\certificates\manifestCounterSignRootCertificate.cer -n "Microsoft Root Certificate Authority 2010" -s -r LocalMachine root
@@ -70,7 +70,7 @@ Visual Studio 安装程序引擎仅安装受信任的内容。 为此，它会�
    
    或者，通过以下命令创建批处理文件，该文件使用 Windows 中随附的 certutil.exe：
    
-      ```cmd
+      ```shell
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestRootCertificate.cer"
 
    certutil.exe -addstore -f "Root" "[layout path]\certificates\manifestCounterSignRootCertificate.cer"

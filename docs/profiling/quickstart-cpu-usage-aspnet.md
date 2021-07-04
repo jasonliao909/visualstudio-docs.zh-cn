@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - aspnet
-ms.openlocfilehash: fa8601b6fe625c5cab2aa1f5de8a69f2d550ee2a
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: aa0c95e3a9f3598cd6399b565adb75faccac22a8
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683623"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761142"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入门：在 Visual Studio 中分析 CPU 使用率数据 (ASP.NET Core)
 
@@ -41,7 +41,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
    在显示的对话框中，选择中间窗格中的“MVC”  ，然后单击“确定”  。
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果“启动”窗口未打开，请选择“文件” > “启动窗口” ，然后选择“新建项目”。
 
    在搜索框中键入“Web 应用”，选择“C#”作为语言，选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，将项目命名为“MyProfilingApp_MVC”，然后选择“下一步”。
@@ -169,7 +169,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
     ```
 
     ::: moniker-end
-    ::: moniker range="vs-2019"
+    ::: moniker range=">=vs-2019"
 
     ```csharp
     public IActionResult Privacy()
@@ -215,7 +215,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
    ::: moniker range="vs-2017"
    在 Visual Studio 2017 中，单击“关于”链接以运行代码  。
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    在 Visual Studio 2019 中，单击“隐私”链接以运行代码  。
    ::: moniker-end
 

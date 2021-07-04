@@ -11,19 +11,19 @@ helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 2429993A-3F0E-41C5-9562-FEA6AE994440
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e328bf8420f9cc7cf207ede6b6447ed291b77745
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0584673880a56bbde0ef44ad14c24acca252c5a2
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949449"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307474"
 ---
 # <a name="disable-or-move-the-package-cache"></a>禁用或移动包缓存
 
@@ -34,7 +34,7 @@ ms.locfileid: "99949449"
 
 使用新安装程序安装、修改或修复 Visual Studio 或其他产品之前，可以使用 `--nocache` 开关来启动安装程序。
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" --nocache
 ```
 
@@ -42,7 +42,7 @@ ms.locfileid: "99949449"
 
 若要重新启用缓存，请改为传递 `--cache`。 由于只有必需的包会被缓存，因此，如果需要还原所有包，应在断开网络连接之前修复 Visual Studio。
 
-```cmd
+```shell
 "%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vs_installer.exe" repair --passive --norestart --cache
 ```
 

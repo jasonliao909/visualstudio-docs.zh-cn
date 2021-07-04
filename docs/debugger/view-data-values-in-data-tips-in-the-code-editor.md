@@ -1,7 +1,7 @@
 ---
 title: 在数据提示中查看变量值 | Microsoft Docs
 description: 使用数据提示在调试期间方便地查看有关变量的信息，包括数组和结构。 还可以修改值。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
 dev_langs:
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b5c9d0449fca38371e07ddaca6cef8758f53a2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904928"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386470"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 

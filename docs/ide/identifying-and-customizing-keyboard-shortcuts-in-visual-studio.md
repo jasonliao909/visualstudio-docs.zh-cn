@@ -18,12 +18,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4686a6459f62fceeebe202cf52d7c30cf99f6fc3
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1a3aa2ace6279211c27847b8b9cc46d71b0d9ad
+ms.sourcegitcommit: 690bfc20744e4b543ee81030a60c8fc6d0d6610f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221244"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113038598"
 ---
 # <a name="identify-and-customize-keyboard-shortcuts-in-visual-studio"></a>在 Visual Studio 中识别并自定义键盘快捷方式
 
@@ -35,7 +35,7 @@ ms.locfileid: "102221244"
 
 - 你选择快捷键时所在的上下文。 例如，在你使用“设置设计器”时，F2 快捷键将调用 `Edit.EditCell` 命令；而使用团队资源管理器时，则调用 `File.Rename` 命令。
 
-不管设置、自定义和上下文，始终可以在“选项”对话框中找到并更改键盘快捷方式。 还可以在[常用键盘快捷方式](../ide/default-keyboard-shortcuts-for-frequently-used-commands-in-visual-studio.md)中查找诸多命令的默认键盘快捷方式。 有关所有默认快捷方式的完整列表（基于“常规开发”设置），请参阅[所有键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
+不管设置、自定义和上下文，始终可以在“选项”对话框中找到并更改键盘快捷方式。 还可以在[常用键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md#most-popular-keyboard-shortcuts)中查找诸多命令的默认键盘快捷方式。 有关所有默认快捷方式的完整列表（基于“常规开发”设置），请参阅[所有键盘快捷方式](../ide/default-keyboard-shortcuts-in-visual-studio.md)。
 
 如果一个快捷键仅分配给“全局”上下文中的一个命令，则该快捷键将始终调用该命令。 但是，一个快捷键可以同时分配给全局上下文和特定上下文中的不同命令。 如果你在特定上下文中使用这个快捷键，则该快捷键将调用特定上下文中的命令，而非全局上下文中的命令。
 

@@ -6,28 +6,28 @@ ms.author: dominicn
 ms.date: 05/03/2018
 ms.technology: vs-ide-general
 ms.assetid: 61432695-5B12-4257-B250-48D37EED106D
-ms.openlocfilehash: cc10cd6125dc19571424358fd1ce9de46f7d86c5
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 5f1a400506f7766ba22ffbc1debde687b1709a21
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984899"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111760921"
 ---
 # <a name="javascript-and-typescript-support"></a>JavaScript 和 TypeScript 支持
 
 Visual Studio for Mac 通过语法突出显示、代码格式设置和 IntelliSense 提供对 JavaScript 和 TypeScript 的支持。
 
-![typescript 编辑器支持](https://msdnshared.blob.core.windows.net/media/2018/03/TypeScript-editor.gif)
+![typescript 编辑器支持](/visualstudio/mac/media/tsjseditor-2019.gif)
 
 有关编写 JavaScript 的详细信息，请参阅[编写 JavaScript 代码](/scripting/javascript/writing-javascript-code)指南。
 
 ## <a name="adding-a-javascript-file"></a>添加 JavaScript 文件
 
-通常通过“新建文件”对话框将 JavaScript 文件添加到 ASP.NET Core 项目****。 要添加 javascript 文件，右键单击项目并转到“添加”>“新建文件”****：
+通常通过“新建文件”对话框将 JavaScript 文件添加到 ASP.NET Core 项目。 要添加 javascript 文件，右键单击项目并转到“添加”>“新建文件”：
 
 ![将新建文件添加到项目中](media/javascript-image1.png)
 
-从“新建文件”对话框选择“Web > 空 JS 文件”或“Web > TypeScript 文件”************。 为文件命名，然后选择“新建”****：
+从“新建文件”对话框选择“Web > 空 JS 文件”或“Web > TypeScript 文件”。 为文件命名，然后选择“新建”：
 
 ![从模板创建新的 typescript 文件](media/javascript-image2.png)
 

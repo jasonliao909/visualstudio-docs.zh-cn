@@ -10,12 +10,12 @@ author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: f15af6958c7f5855b5005fc0a6aa4c821346ccb5
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006408"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042855"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充码隔离应用以进行单元测试
 
@@ -429,7 +429,7 @@ public class ShimMyClass : ShimBase<MyClass> {
 
 每个生成的填充码类型都保留 `IShimBehavior` 接口的一个实例（通过 `ShimBase<T>.InstanceBehavior` 属性）。 只要客户端调用未显式填充的实例成员，系统就会使用该行为。
 
-如果未显式设置该行为，它会使用静态 `ShimsBehaviors.Current` 属性返回的实例。 默认情况下，此属性将返回引发 `NotImplementedException` 异常的行为。
+如果未显式设置该行为，它会使用静态 `ShimBehaviors.Current` 属性返回的实例。 默认情况下，此属性将返回引发 `NotImplementedException` 异常的行为。
 
 通过设置任何填充码实例的 `InstanceBehavior` 属性，可以随时更改该行为。 例如，下面的代码片段将更改填充码的行为，使之不执行任何操作或返回返回类型的默认值，即 `default(T)`：
 
@@ -437,26 +437,26 @@ public class ShimMyClass : ShimBase<MyClass> {
 // unit test code
 var shim = new ShimMyClass();
 //return default(T) or do nothing
-shim.InstanceBehavior = ShimsBehaviors.DefaultValue;
+shim.InstanceBehavior = ShimBehaviors.DefaultValue;
 ```
 
-通过设置静态 `InstanceBehavior` 属性，还可以为所有未设置 `ShimsBehaviors.Current` 属性的填充实例全局更改此行为：
+通过设置静态 `InstanceBehavior` 属性，还可以为所有未设置 `ShimBehaviors.Current` 属性的填充实例全局更改此行为：
 
 ```csharp
 // unit test code
 // change default shim for all shim instances
 // where the behavior has not been set
-ShimsBehaviors.Current = ShimsBehaviors.DefaultValue;
+ShimBehaviors.Current = ShimBehaviors.DefaultValue;
 ```
 
 ## <a name="detect-environment-accesses"></a>检测环境访问权限
 
-通过将 `ShimsBehaviors.NotImplemented` 行为分配给相应填充码类型的静态属性 `Behavior`，可以将行为附加到特定类型的所有成员（包括静态方法）：
+通过将 `ShimBehaviors.NotImplemented` 行为分配给相应填充码类型的静态属性 `Behavior`，可以将行为附加到特定类型的所有成员（包括静态方法）：
 
 ```csharp
 // unit test code
 // assigning the not implemented behavior
-ShimMyClass.Behavior = ShimsBehaviors.NotImplemented;
+ShimMyClass.Behavior = ShimBehaviors.NotImplemented;
 // shorthand
 ShimMyClass.BehaveAsNotImplemented();
 ```

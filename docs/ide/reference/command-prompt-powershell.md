@@ -1,7 +1,10 @@
 ---
 title: 适用于开发人员的命令行 shell 和提示
 description: 从“工具”>“命令行”菜单开始。 通过使用 Visual Studio 开发人员命令提示、开发人员 PowerShell 和终端，可以更轻松地使用 .NET 和 C++ 工具。
-ms.date: 04/11/2021
+author: TerryGLee
+ms.author: tglee
+ms.date: 06/11/2021
+ms.topic: reference
 ms.custom: contperf-fy21q4
 helpviewer_keywords:
 - Visual Studio command prompt
@@ -11,12 +14,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 57cbc93f4b6e8cf64dd5149462788e0cde833350
-ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
+ms.openlocfilehash: 858845ca5629f64e282e3864daa0201935316062
+ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107221726"
+ms.lasthandoff: 06/28/2021
+ms.locfileid: "112990514"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 开发人员命令提示和开发人员 PowerShell
 
