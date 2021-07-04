@@ -4,7 +4,7 @@ titleSuffix: ''
 description: 了解如何逐步修改 Visual Studio。
 ms.date: 10/12/2020
 ms.topic: how-to
-ms.custom: contperf-fy21q2
+ms.custom: vs-acquisition
 helpviewer_keywords:
 - modify Visual Studio
 - change visual studio
@@ -18,16 +18,16 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 30b28af562e5dbaa8c05624f6cc9d531cf652419
-ms.sourcegitcommit: 8d3d51042261df603487169a7a008fe8f71404ec
+ms.openlocfilehash: 435ee6ad72141453e89aadcfd4ac3310bde0d538
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109501767"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112391070"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作负载、组件和语言包
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 可轻松修改 Visual Studio，使其在你需要时包含想要的内容。 为此，请打开 Visual Studio 安装程序以添加或删除工作负载和组件。
 
@@ -71,7 +71,7 @@ ms.locfileid: "109501767"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 
@@ -119,12 +119,11 @@ ms.locfileid: "109501767"
 
 1. 如果需要，选择“工作负载”选项卡，然后选中或取消选中所需的工作负载。
 
-
 1. 安装完新的工作负载后，从 Visual Studio 安装程序中选择“启动”  以打开 Visual Studio。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
  工作负载包含所用编程语言或平台必需的功能。 可以使用工作负载来修改 Visual Studio，以便在需要执行某项操作时为其提供支持。
 
@@ -147,7 +146,6 @@ ms.locfileid: "109501767"
 
 ::: moniker-end
 
-
 >[!TIP]
 > 有关 SQL Server Data Tools (SSDT) 组件的信息，请参阅[下载并安装 SSDT for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt?view=sql-server-ver15&preserve-view=true)。
 
@@ -156,9 +154,10 @@ ms.locfileid: "109501767"
 默认情况下，安装程序首次运行时会匹配操作系统语言。 不过，你可以随时更改语言。 
 
 为此，请执行以下操作：
+
 1. 在 Visual Studio 安装程序中，选择“语言包”选项卡。
-2. 选择首选语言。
-3. 按提示操作。
+1. 选择首选语言。
+1. 按提示操作。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

@@ -1,7 +1,7 @@
 ---
 title: 检查变量 -“自动”和“局部变量”窗口 | Microsoft Docs
 description: '在 Visual Studio 中进行调试时，检查“自动”和“局部变量”窗口中的变量。 在调试时，“自动变量”和“局部变量”窗口会显示变量值。 '
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/18/2018
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 61378b697b8cf2d50851926bb9f9b64b50878a59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5f1378f87ff8717b9bc9d9125b03c1b28c5007f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857937"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389795"
 ---
 # <a name="inspect-variables-in-the-autos-and-locals-windows"></a>检查自动和局部变量窗口中的变量
 

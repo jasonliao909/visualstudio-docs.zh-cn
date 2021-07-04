@@ -1,7 +1,7 @@
 ---
 title: 准备调试 C#、F# 和 VB 项目 | Microsoft Docs
 description: 获取有关准备调试由 Visual Studio 项目模板创建的 C#、F# 和 Visual Basic 项目类型的信息。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: cba30488046724332f4160e25a24a15d779e6cd4
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 8c58daa6a4de2fcce1f8482750569c78e2e80235
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684180"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387848"
 ---
 # <a name="debugging-preparation-c-f-and-visual-basic-project-types"></a>调试准备：C#、F# 和 Visual Basic 项目类型
 

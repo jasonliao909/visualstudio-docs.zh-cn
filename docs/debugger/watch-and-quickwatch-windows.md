@@ -1,11 +1,9 @@
 ---
 title: 对变量设置监视 | Microsoft Docs
 description: 调试时，查看“监视”和“快速监视”中的变量和表达式。 “监视”可以显示若干变量，“快速监视”仅显示一个变量，并且仅在中断时才显示。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 10/11/2018
 ms.topic: how-to
-f1_keywords:
-- vs.debug.watch
 helpviewer_keywords:
 - debugging [Visual Studio], Watch window
 - expressions [debugger], evaluating
@@ -18,12 +16,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 402b8a0c1e9d0ee72425317f299a3e68f091cc93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 246f82b2d55e8e15bb5a56afba846a8b5dc8f245
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883982"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924898"
 ---
 # <a name="watch-variables-with-watch-windows-and-quickwatch"></a>使用“监视”和“快速监视”窗口监视变量
 

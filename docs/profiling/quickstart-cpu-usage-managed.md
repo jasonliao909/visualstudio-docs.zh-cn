@@ -12,12 +12,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7fc8eeccdb020d07ff48965d9eb3d5df1dafa7da
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 056996782d2b38adb96ee53250cc3ea0c0f75596
+ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683542"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111761155"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（C#、Visual Basic）
 
@@ -38,7 +38,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
    如果看不到“控制台应用(.NET Core)”  项目模板，请选择“新建项目”  对话框左侧窗格中的“打开 Visual Studio 安装程序”  链接。 Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”   。
    ::: moniker-end
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
    在“开始”窗口上，选择“创建新项目”  。

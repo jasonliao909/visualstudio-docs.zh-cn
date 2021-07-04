@@ -2,7 +2,7 @@
 title: “Microsoft Visual Studio 调试器（引发异常）”对话框 | Microsoft Docs
 titleSuffix: ''
 description: 了解发生程序需要处理的异常时的处理方法。 你可以：1) 中断到调试器；2) 继续；或 3) 忽略。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2982912a0bf165f25b7777311d6db9a1bbe01a8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c7a4b92a3ec5c6876fae3054b692ff46f26e82cd
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930273"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387042"
 ---
 # <a name="microsoft-visual-studio-debugger-exception-thrown-dialog-box"></a>“Microsoft Visual Studio 调试器（引发异常）”对话框
 程序中发生了异常。 此对话框报告引发异常的类型。 你的代码需要处理此异常。 可从下列用于处理异常的选项中进行选择：

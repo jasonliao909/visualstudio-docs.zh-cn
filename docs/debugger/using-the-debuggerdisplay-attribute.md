@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: edb257f6e5e0b74ef7f60a8447b7c89053a04e24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e9579e4969cb53ed2f1bcf749e8114386af85d0
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896480"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602138"
 ---
 # <a name="tell-the-debugger-what-to-show-using-the-debuggerdisplay-attribute-c-visual-basic-f-ccli"></a>使用 DebuggerDisplay 特性（C#、Visual Basic、F#、C++/CLI）指示调试器要显示的内容
 
@@ -96,7 +96,7 @@ public sealed class MyClass
 “,nq”后缀指示表达式计算器在显示最终值 (nq = no quotes) 时删除引号。
 
 ## <a name="example"></a>示例
-下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowseable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：
+下面的代码示例演示如何使用 `DebuggerDisplay`以及 `DebuggerBrowsable` 和 `DebuggerTypeProxy`。 在调试器变量窗口（如 **“监视”** 窗口）中查看时，它生成类似以下内容的扩展：
 
 |**Name**|**“值”**|**Type**|
 |--------------|---------------|--------------|

@@ -1,7 +1,7 @@
 ---
 title: 使用调试器附加到运行的进程
 description: 了解如何将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 06/12/2020
 ms.topic: conceptual
 f1_keywords:
@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a76aff1c17988f61b5f89e2e8d20ef7129efcae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e3836403af80d06a2ecaa7f77cb7f49f0c6f0e8
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866003"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112389782"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -79,7 +79,7 @@ ms.locfileid: "99866003"
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型” 。
       如果在尝试附加到列表中的进程时失败，可以使用[“选择代码类型”](../debugger/select-code-type-dialog-box.md)对话框来帮助[排查](#BKMK_Troubleshoot_attach_errors)问题。
    1. 选择要调试的代码类型。
-   1. 选择“确定”。
+   1. 选择“确定”  。
 
 1. 选择“附加”。
 
@@ -243,7 +243,7 @@ ms.locfileid: "99866003"
 
     3. 在 **“选择代码类型”** 对话框中，选择 **“调试以下代码类型”** 和未能附加的代码类型。 取消选择其他代码类型。
 
-    4. 选择“确定”。
+    4. 选择“确定”  。
 
     5. 在“附加到进程”对话框中，选择“附加”。
 

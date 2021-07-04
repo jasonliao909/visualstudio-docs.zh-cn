@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: f34ee9e852c1210425407f80788aa1b9d5c33c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912283"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254883"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 
@@ -73,16 +73,34 @@ Visual Studio 有大量 Python REPL 模式可供选择：
 
 <a name="meta-commands"></a>交互窗口还支持多个元命令。 所有元命令都以 `$` 开头，你可以键入 `$help` 获得元命令和 `$help <command>` 的列表，以获取特定命令的使用情况详细信息。
 
+:::moniker range="<=vs-2017"
+
 | 元命令 | 描述 |
 | --- | --- |
 | `$$` | 插入注释，用于注释会话中的代码。 |
 | `$attach` | 将 Visual Studio 调试器附加到 REPL 窗口进程以启用调试。 |
-| `$cls`，`$clear` | 清除编辑器窗口的内容，使历史记录和执行上下文保持不变。 |
+| `$cls`, `$clear` | 清除编辑器窗口的内容，使历史记录和执行上下文保持不变。 |
 | `$help` | 显示命令列表，或有关特定命令的帮助。 |
 | `$load` | 从文件加载命令并执行，直到完成。 |
 | `$mod` | 将当前范围切换为指定模块名称。 |
 | `$reset` | 将执行环境重置为初始状态，但保留历史记录。 |
 | `$wait` | 至少等待指定的毫秒数。 |
+
+:::moniker-end
+
+:::moniker range=">=vs-2019"
+
+| 元命令 | 描述 |
+| --- | --- |
+| `$$` | 插入注释，用于注释会话中的代码。 |
+| `$cls`, `$clear` | 清除编辑器窗口的内容，使历史记录和执行上下文保持不变。 |
+| `$help` | 显示命令列表，或有关特定命令的帮助。 |
+| `$load` | 从文件加载命令并执行，直到完成。 |
+| `$mod` | 将当前范围切换为指定模块名称。 |
+| `$reset` | 将执行环境重置为初始状态，但保留历史记录。 |
+| `$wait` | 至少等待指定的毫秒数。 |
+
+:::moniker-end
 
 Visual Studio 扩展还可以通过实现和导出 `IInteractiveWindowCommand` 来扩展命令（[示例](https://github.com/Microsoft/PTVS/blob/master/Python/Product/PythonTools/PythonTools/Repl/InteractiveWindowCommands.cs#L85)）。
 

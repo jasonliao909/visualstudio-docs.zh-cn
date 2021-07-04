@@ -1,7 +1,7 @@
 ---
 title: 向运行中的进程附加性能工具
 description: 了解如何使用 Visual Studio 探查器附加到运行中的进程或从运行中的进程分离，以更轻松地进行采样和收集性能数据。
-ms.custom: SEO-VS-2020, seodec18
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -19,12 +19,12 @@ manager: jmartens
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 13323a768b9f42e70df9e8be6e64c9dd98438865
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4002334d8fba7b31e33eecd5cf49532ba384046d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958955"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390016"
 ---
 # <a name="how-to-attach-and-detach-performance-tools-to-running-processes"></a>如何：在正在运行的进程中附加和拆离性能工具
 探查器可用于附加到运行中的进程或从运行中的进程分离，以更轻松地进行采样和收集性能数据。 在想要避免收集有关应用程序加载时间的数据，或在进程达到某一特定状态后监视其性能时，可使用此方法分析进程。
