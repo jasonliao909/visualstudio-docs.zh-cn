@@ -2,6 +2,8 @@
   href: analyze-and-model-your-architecture.md
 - name: Visual Studio 2017 中用于设计的新增功能
   href: what-s-new-for-design-in-visual-studio.md
+- name: 安装体系结构工具
+  href: install-architecture-tools.md
 - name: 使用可视化和建模更改设计
   href: scenario-change-your-design-using-visualization-and-modeling.md
 - name: 代码图和依赖项关系图
@@ -58,8 +60,6 @@
       href: generate-and-configure-your-app-from-models.md
     - name: 安排你的建模解决方案
       href: structure-your-modeling-solution.md
-    - name: Visual Studio 体系结构工具指南
-      href: visual-studio-architecture-tooling-guidance.md
 - name: 在开发过程中验证系统
   items:
     - name: 验证任务和资源

@@ -1,21 +1,21 @@
 ---
 title: 订阅许可条款和条件有哪些？
-description: Visual Studio 订阅的订阅许可条款和条件有哪些？
+description: Visual Studio 订阅的许可条款和条件
 ms.topic: include
 ms.assetid: 96c05bd0-044c-4791-9c33-6b89a0e6b087
 author: caitybuschlen
 ms.author: cabuschl
-ms.date: 08/14/2020
-user.type: subscriber
+ms.date: 06/01/2021
+user.type: subscriber, admin
 tags: licensing-terms
 subscription.type: vl, cloud, retail, partner
 sap.id: 95b201e2-f079-cb93-1693-3d40ee05b552
-ms.openlocfilehash: 018dff626318aec711c1f60f8301f8335cbf8e09
-ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
+ms.openlocfilehash: 790b9ec682cdd1d27b1caad509f170a3f653a8d2
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496272"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111430807"
 ---
 ## <a name="what-are-the-subscription-licensing-terms-and-conditions"></a>订阅许可条款和条件有哪些？ 
 
@@ -23,6 +23,6 @@ ms.locfileid: "100496272"
 
 有关更多详细信息，请[查看 Microsoft Visual Studio 许可白皮书](https://visualstudio.microsoft.com/wp-content/uploads/2020/03/Visual-Studio-Licensing-Whitepaper-Mar-2020.pdf)。 
 
-通过检查[订阅门户中权益页](https://my.visualstudio.com/benefits)上的下拉列表，查看可用订阅。 
+通过查看[订阅门户中的“权益”页](https://my.visualstudio.com/benefits)上的下拉列表，订阅者可查看可用订阅。 
 
 [详细了解权益](https://visualstudio.microsoft.com/vs/benefits/)或[比较 Visual Studio 订阅中包含的定价和功能](https://visualstudio.microsoft.com/vs/pricing/)。

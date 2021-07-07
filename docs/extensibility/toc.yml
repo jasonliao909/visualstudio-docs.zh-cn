@@ -9,6 +9,20 @@
       href: starting-to-develop-visual-studio-extensions.md
     - name: 创建第一个扩展：Hello World
       href: extensibility-hello-world.md
+    - name: 更新 Visual Studio 2022 的扩展（预览版）
+      items:
+        - name: 更新扩展
+          href: migration/update-visual-studio-extension.md
+        - name: 示例：ImageOptimizer
+          href: migration/samples.md
+        - name: 针对以前的版本
+          href: migration/target-previous-versions.md
+        - name: 中断 API 列表
+          href: migration/breaking-api-list.md
+        - name: 已删除的 API 列表
+          href: migration/removed-api-list.md
+        - name: 已迁移的 PIA
+          href: migration/migrated-assemblies.md
     - name: Visual Studio 2019 SDK 的新增功能
       items:
         - name: Visual Studio 2019 SDK 的新增功能
@@ -51,7 +65,7 @@
           href: workspace-indexing.md
         - name: 语言服务
           href: workspace-language-services.md
-        - name: 构建
+        - name: 生成
           href: workspace-build.md
     - name: 扩展菜单和命令
       items:

@@ -1,9 +1,9 @@
 ---
-title: 更改值的示例实现 |Microsoft Docs
-description: 在 "局部变量" 窗口中显示的每个本地都具有与之关联的 IDebugProperty2 对象。 了解 Visual Studio 如何在内存中更新本地值。
+title: 更改值的实现示例 | Microsoft Docs
+description: “局部变量”窗口中显示的每个局部变量都有与之关联的 IDebugProperty2 对象。 了解 Visual Studio 如何在内存中更新局部变量的值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - expression evaluation, local values
 - debugging [Debugging SDK], expression evaluation
@@ -13,34 +13,34 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 06213de552685e13be5569fd631fc780598954ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-ms.translationtype: MT
+ms.openlocfilehash: d36cee547e455e9aeb60517b23f0026c3f38b3f3
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070435"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902327"
 ---
-# <a name="sample-implementation-of-changing-values"></a>更改值的示例实现
+# <a name="sample-implementation-of-changing-values"></a>更改值的实现示例
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 在 " **局部变量** " 窗口中显示的每个本地都具有与之关联的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 对象。 此 `IDebugProperty2` 对象包含本地的名称、值和类型。 当用户更改本地值时，Visual Studio 将调用 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 来更新内存中本地的值。 在此示例中，本地由 `CFieldProperty` 实现接口的类表示 `IDebugProperty2` 。
+ “局部变量”窗口中显示的每个局部变量都有与之关联的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 对象。 此 `IDebugProperty2` 对象包含局部变量的名称、值和类型。 当用户更改局部变量的值时，Visual Studio 将调用 [SetValueAsString](../../extensibility/debugger/reference/idebugproperty2-setvalueasstring.md) 来更新内存中局部变量的值。 在此示例中，局部变量由实现 `IDebugProperty2` 接口的 `CFieldProperty` 类表示。
 
 > [!NOTE]
-> 对于 " **监视** " 和 " **快速监视** " 表达式，要更改的值由 `CValueProperty` MyCEE 示例中的类表示。 但是，的实现 `IDebugProperty2::SetValueAsString` 是相同的，如下所示。
+> 对于 Watch 和 QuickWatch 表达式，要更改的值由 MyCEE 示例中的 `CValueProperty` 表示 。 但是，`IDebugProperty2::SetValueAsString` 的实现与此处显示的相同。
 
- 的实现 `IDebugProperty2::SetValueAsString` 执行以下任务：
+ `IDebugProperty2::SetValueAsString` 的实现执行以下任务：
 
 1. 计算用于生成值的表达式。
 
-2. 将关联的 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 对象绑定到其内存位置，并生成 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 对象。
+2. 将关联的 [IDebugField](../../extensibility/debugger/reference/idebugfield.md) 对象绑定到其内存位置并生成 [IDebugObject](../../extensibility/debugger/reference/idebugobject.md) 对象。
 
 3. 将值转换为一系列字节。
 
 4. 调用 [SetValue](../../extensibility/debugger/reference/idebugobject-setvalue.md) 将字节存储在内存中。
 
 ## <a name="managed-code"></a>托管代码
- 下面的代码是 `IDebugProperty2::SetValueAsString` 托管代码中的的实现。
+ 下面的代码是托管代码中 `IDebugProperty2::SetValueAsString` 的实现。
 
 ```csharp
 namespace EEMC
@@ -225,7 +225,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>非托管代码
- 下面的代码是 `IDebugProperty2::SetValueAsString` 托管代码中的的实现。 `FieldCoerceValueType` (不显示 helper 函数) 强制将 `VARIANT` 指定为特定类型，并确保值是可处理的类型之一 `FieldSetValue` 。
+ 下面的代码是托管代码中 `IDebugProperty2::SetValueAsString` 的实现。 帮助程序函数 `FieldCoerceValueType`（未显示）强制设置 `VARIANT` 为特定类型，并确保该值是 `FieldSetValue` 可处理的类型。
 
 ```cpp
 STDMETHODIMP CFieldProperty::SetValueAsString(
@@ -423,5 +423,5 @@ HRESULT FieldSetValue(
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [更改本地的值](../../extensibility/debugger/changing-the-value-of-a-local.md)
+- [更改局部变量值](../../extensibility/debugger/changing-the-value-of-a-local.md)
 - [计算上下文](../../extensibility/debugger/evaluation-context.md)

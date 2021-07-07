@@ -4,6 +4,8 @@
   items:
     - name: Visual Studio 中的 Git 体验
       href: git-with-visual-studio.md
+    - name: Git 设置和首选项
+      href: git-settings.md
     - name: Visual Studio 如何简化源代码管理
       href: git-visual-studio-source-control.md
 - name: 入门

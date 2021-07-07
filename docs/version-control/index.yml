@@ -2,21 +2,21 @@
 title: Visual Studio 版本控制文档
 summary: 使用 Git 和 GitHub 等版本控制技术从 Visual Studio 2019 中共享代码。
 metadata:
-  title: Visual Studio 中的版本控制
-  description: 可直接在 Visual Studio 中使用 Git 和 GitHub 等版本控制技术。 你可用它们来共享和管理代码，无需离开代码库。
+  title: Visual Studio 中 Git 的版本控制和源代码管理
+  description: 在 Visual Studio 中使用版本控制技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
   ms.topic: landing-page
-  ms.date: 04/20/2021
+  ms.date: 07/02/2021
   author: TerryGLee
   ms.author: tglee
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 50226243cc698391d79a52371262ec6202b45ad9
-  ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+  ms.openlocfilehash: 9bdd994d5fe1d5f54251ce49047feaf75145dcda
+  ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/11/2021
-  ms.locfileid: "109729221"
+  ms.lasthandoff: 07/03/2021
+  ms.locfileid: "113280398"
 landingContent:
 - title: 概述
   linkLists:
@@ -24,6 +24,8 @@ landingContent:
     links:
     - text: Visual Studio 中的 Git 体验
       url: git-with-visual-studio.md
+    - text: Git 设置和首选项
+      url: git-settings.md
   - linkListType: concept
     links:
     - text: Visual Studio 如何简化源代码管理
