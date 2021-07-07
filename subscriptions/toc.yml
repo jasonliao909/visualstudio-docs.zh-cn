@@ -13,7 +13,7 @@
             - name: 概述
               href: vscloud-overview.md
             - name: 账单常见问题解答
-              href: vscloud-billing-faq.md
+              href: vscloud-billing-faq.yml
             - name: CSP 购买
               href: vscloud-csp.md
         - name: Microsoft 合作伙伴网络
@@ -56,16 +56,22 @@
       items:
         - name: 关于权益
           href: about-benefits.md
+        - name: Azure 开发/测试产品/服务
+          items:
+            - name: 对于个人（额度）
+              items:
+                - name: Azure 开发测试个人额度
+                  href: vs-azure.md
+            - name: 对于组织
+              items:
+                - name: Azure 开发测试即用即付
+                  href: vs-azure-payg.md
+                - name: Azure EA DevTest
+                  href: azure-ea-devtest.md
         - name: 工具
           items:
-            - name: Azure 开发测试个人额度
-              href: vs-azure.md
             - name: Azure DevOps
               href: vs-azure-devops.md
-            - name: Azure 开发测试即用即付
-              href: vs-azure-payg.md
-            - name: Azure EA DevTest
-              href: azure-ea-devtest.md
             - name: CAST 突出显示
               href: vs-cast.md
             - name: CloudPilot

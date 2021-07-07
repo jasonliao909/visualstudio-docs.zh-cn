@@ -17,24 +17,27 @@ ms.author: johnhart
 manager: jmartens
 ms.workload:
 - office
-ms.openlocfilehash: 2f085f5679db2c5c4a1e3cf0cc8d7bbf7cad58eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f839f4148054b4e10a7fc1703aa8f03549bdbf36
+ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948825"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112112907"
 ---
 # <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
+
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中可提供多种 SharePoint 项目类型模板，用于创建 SharePoint 站点和站点元素。 有关可用的项目类型的列表，请参阅 [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。 以下是对 SharePoint 项目元素和属性的说明。
 
- 有关 SharePoint 2013 和 SharePoint 外接程序的信息，请参阅 [SharePoint 2013](https://www.microsoft.com/microsoft-365/previous-versions/microsoft-sharepoint-2013) 和 [构建 SharePoint 外接程序](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
+ 如需了解 SharePoint 加载项，请参阅[构建 SharePoint 加载项](/sharepoint/dev/sp-add-ins/sharepoint-add-ins)。
 
 ## <a name="elements-of-a-sharepoint-project"></a>SharePoint 项目元素
+
  SharePoint 项目中的节点被称为 *SharePoint 项*。 SharePoint 项也可能包含一个或多个称为 *SharePoint 项文件* 的子文件，例如， [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 配置文件和 .aspx 窗体等等。
 
  可以使用“空项目”  模板创建空 SharePoint 项目，然后手动添加项目项，而不是使用已填充项目项文件的项目模板创建项目。 SharePoint 项目还可以根据需要包含一个或多个功能文件（用于在 SharePoint 中的激活）和一个向其中分发项目的包文件。
 
 ### <a name="special-nodes"></a>特殊节点
+
  每个 SharePoint 项目都包含两个无法从项目中重命名、删除、剪切、复制，或拖放的节点。 这些节点如下所示：
 
 - 功能
@@ -43,6 +46,7 @@ ms.locfileid: "99948825"
   即使没有定义项目的功能或包，这两个节点始终都显示在所有 SharePoint 项目中。
 
 #### <a name="features-node"></a>功能节点
+
  “功能”  节点包含一个或多个 SharePoint 项目功能。 功能是 SharePoint 扩展的容器。 将功能部署到 SharePoint 服务器后，它可以包括在站点定义中或由 SharePoint 站点上的 SharePoint 管理员来单独激活。 有关详细信息，请参阅 [使用功能](/previous-versions/office/developer/sharepoint-2010/ms460318(v=office.14))。
 
  当将某个项（如，内容类型或列表实例）添加到 SharePoint 项目时，那么该项会添加到“功能”  节点的一个功能中。 项的范围决定了将其添加到新功能还是现有功能。 如果新项与现有功能具有相同的范围，那么将此项添加到该功能中。 否则，将该项添加到新功能中。
@@ -52,11 +56,13 @@ ms.locfileid: "99948825"
  当将某个功能添加到 SharePoint 项目时，此功能会作为节点显示在“解决方案资源管理器”  中，默认名称为 Feature *x*.feature，其中的 *x* 是唯一的编号。 将某个功能部署到 SharePoint Server 后，SharePoint 管理员可以将其激活，使其可用于 SharePoint 站点用户。
 
 #### <a name="package-node"></a>包节点
+
  “包”  节点只包含一个作为 SharePoint 项目分发机制的文件。 此文件被称为解决方案包，基于 .CAB 且具有 .WSP 扩展名。 解决方案包是一种可部署的且可重用的文件，其中包含一组可应用于 SharePoint 站点的并且可以单独启用或禁用的功能、站点定义和程序集。 ”包“  节点也始终包含名为 Package.wspdef 的文件，此文件是该包的 [!INCLUDE[TLA2#tla_xml](../sharepoint/includes/tla2sharptla-xml-md.md)] 定义文件。 一旦将包部署到运行 SharePoint 的服务器，SharePoint 管理员就可以对其进行安装并激活其功能。
 
  可以通过双击包节点或打开快捷菜单，然后选择“打开”在“包设计器”中查看或更改包的内容。 有关详细信息，请参阅[创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)。
 
 ## <a name="sharepoint-project-and-project-item-properties"></a>SharePoint 项目和项目项属性
+
  与其他 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目一样，SharePoint 项目在“属性”窗口和“属性”页中显示属性。 显示的属性取决于所选择的节点。
 
  当在“解决方案资源管理器” 中选择 SharePoint 项目、项目项或项目项文件节点时，将在“属性”窗口或“属性”页显示以下属性：
@@ -131,6 +137,7 @@ ms.locfileid: "99948825"
 |[“URL 选取器”对话框（Visual Studio 中的 SharePoint 开发）](../sharepoint/url-picker-dialog-box-sharepoint-development-in-visual-studio.md)|描述将路径引用添加到项目中或在本地 SharePoint 服务器上所使用的对话框。|
 
 ## <a name="see-also"></a>另请参阅
+
 - [入门（Visual Studio 中的 SharePoint 开发）](../sharepoint/getting-started-sharepoint-development-in-visual-studio.md)
 - [使用服务器资源管理器浏览 SharePoint 连接](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 - [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

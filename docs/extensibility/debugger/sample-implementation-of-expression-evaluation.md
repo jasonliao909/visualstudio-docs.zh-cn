@@ -1,9 +1,9 @@
 ---
-title: 表达式计算的示例实现 |Microsoft Docs
-description: 了解 Visual Studio 如何调用 ParseText 为 Watch windows 表达式生成 IDebugExpression2 对象。
+title: 表达式计算的实现示例 | Microsoft Docs
+description: 了解 Visual Studio 如何为监视窗口表达式调用 ParseText 以生成 IDebugExpression2 对象。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: sample
 helpviewer_keywords:
 - expression evaluators
 - debugging [Debugging SDK], expression evaluators
@@ -14,32 +14,32 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60d01917bb3a21f6d8ea2644fbeef2b22064cc00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
-ms.translationtype: MT
+ms.openlocfilehash: de0e052fd42f1603889f7521a1e45e50b0f36eea
+ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070448"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112902301"
 ---
-# <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的示例实现
+# <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的实现示例
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 对于 " **监视** 窗口" 表达式，Visual Studio 会调用 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 来生成 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 对象。 `IDebugExpressionContext2::ParseText` 实例化表达式计算器 (EE) 并调用 [Parse](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 来获取 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 对象。
+ 对于监视窗口表达式，Visual Studio 调用 [ParseText](../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 来生成 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 对象。 `IDebugExpressionContext2::ParseText` 实例化表达式计算器 (EE) 并调用[分析](../../extensibility/debugger/reference/idebugexpressionevaluator-parse.md) 以获取 [IDebugParsedExpression](../../extensibility/debugger/reference/idebugparsedexpression.md) 对象。
 
- `IDebugExpressionEvaluator::Parse`执行以下任务：
+ `IDebugExpressionEvaluator::Parse` 执行以下任务：
 
-1. [仅限 c + +]分析表达式以查找错误。
+1. [仅限 C++] 分析表达式以查找错误。
 
-2. 实例化 `CParsedExpression` 在此示例中调用的类 () 运行 `IDebugParsedExpression` 接口，并在类中存储要分析的表达式。
+2. 实例化运行 `IDebugParsedExpression` 接口的类（此例中称为 `CParsedExpression`），并在类中存储要分析的表达式。
 
-3. `IDebugParsedExpression`从对象返回接口 `CParsedExpression` 。
+3. 从 `IDebugParsedExpression` 对象返回 `CParsedExpression` 接口。
 
 > [!NOTE]
-> 在以下示例中，在 MyCEE 示例中，表达式计算器不会将分析与计算分离。
+> 在后面的示例以及 MyCEE 示例中，表达式计算器不会将分析与计算分开。
 
 ## <a name="managed-code"></a>托管代码
- 下面的代码演示如何 `IDebugExpressionEvaluator::Parse` 在托管代码中实现。 此版本的方法会将分析推迟到 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ，因为用于分析的代码也会同时计算 (参阅 [计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)) 。
+ 下面的代码显示托管代码中 `IDebugExpressionEvaluator::Parse` 的实现。 此方法版本将分析延迟到 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)，因为用于分析的代码也在同时进行计算（请参阅[计算 Watch 表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)）。
 
 ```csharp
 namespace EEMC
@@ -66,7 +66,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>非托管代码
-下面的代码是 `IDebugExpressionEvaluator::Parse` 在非托管代码中实现的。 此方法调用 helper 函数 `Parse` 来分析表达式并检查是否有错误，但此方法忽略生成的值。 将正式计算延迟为 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md) ，其中在计算表达式时进行分析 (参阅 [计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)) 。
+以下代码是非托管代码中的 `IDebugExpressionEvaluator::Parse` 实现。 此方法调用帮助程序函数 `Parse` 来分析表达式并检查错误，但此方法会忽略生成的值。 正式的计算会延迟到 [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)，其中表达式会在计算时进行分析（请参阅[计算 Watch 表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)）。
 
 ```cpp
 STDMETHODIMP CExpressionEvaluator::Parse(
@@ -111,4 +111,4 @@ STDMETHODIMP CExpressionEvaluator::Parse(
 
 ## <a name="see-also"></a>另请参阅
 - [计算监视窗口表达式](../../extensibility/debugger/evaluating-a-watch-window-expression.md)
-- [计算监视表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)
+- [计算 Watch 表达式](../../extensibility/debugger/evaluating-a-watch-expression.md)
