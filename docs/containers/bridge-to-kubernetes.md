@@ -1,31 +1,40 @@
 ---
-title: 将 Kubernetes 桥接用于 Visual Studio
-titleSuffix: ''
+title: 教程：使用 Bridge to Kubernetes 连接开发计算机
 ms.technology: vs-azure
 ms.date: 03/24/2021
-ms.topic: quickstart
-description: 了解如何在 Visual Studio 中使用 Bridge to Kubernetes 将开发计算机连接到 Kubernetes 群集
+ms.topic: tutorial
+description: 在 Visual Studio 中使用 Bridge to Kubernetes 将开发计算机连接到 Kubernetes 群集。
 keywords: Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes, Azure, 容器
 monikerRange: '>=vs-2019'
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: fdcf31d062fe2be72709979f0892e6a7f535024a
-ms.sourcegitcommit: 2049ec99f1439ec91d002853226934b067b1ee70
+ms.openlocfilehash: b8d6c98d2e2146ad57871b74cd2d522ed2b04259
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105635020"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046113"
 ---
-# <a name="use-bridge-to-kubernetes"></a>使用 Bridge to Kubernetes
+# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>教程：使用 Bridge to Kubernetes 连接群集和开发计算机
 
-可以使用 Bridge to Kubernetes 来重定向 Kubernetes 群集与开发计算机上运行的代码之间的流量。 本指南还提供了一个脚本，用于在 Kubernetes 群集上部署包含多个微服务的大型示例应用程序。
+在本教程中，你将了解如何使用 Bridge to Kubernetes 来重定向 Kubernetes 群集与开发计算机上运行的代码之间的流量。 
 
-## <a name="before-you-begin"></a>在开始之前
+本指南还提供了一个脚本，用于在 Kubernetes 群集上部署包含多个微服务的大型示例应用程序。
 
-本指南使用 [TODO App 示例应用程序][todo-app-github]来演示如何将开发计算机连接到 Kubernetes 群集。 如果你已在 Kubernetes 群集上运行自己的应用程序，仍可以执行以下步骤，使用你自己的服务名称。
+若要详细了解 Bridge to Kubernetes，请参阅 [Bridge to Kubernetes 的工作原理](overview-bridge-to-kubernetes.md)一文。
 
-此示例演示如何使用 Bridge to Kubernetes 在任何 Kubernetes 群集上开发简单的 TODO 应用程序的微服务版本。 这个使用 Visual Studio 的示例由 [TodoMVC](http://todomvc.com) 提供的代码改编而来。 这些步骤应适用于任何 Kubernetes 群集。
+## <a name="prerequisites"></a>先决条件
+
+- 一个 Kubernetes 群集
+- 在 Windows 10 上运行的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。
+- [已安装 Bridge to Kubernetes 扩展][btk-extension]
+
+## <a name="about-the-data"></a>关于数据
+
+本教程使用 Bridge to Kubernetes 在任何 Kubernetes 群集上开发简单的 TODO 示例应用程序的微服务版本。 这个使用 Visual Studio 的 [TODO 应用示例应用程序](http://todomvc.com)由 [TodoMVC][todo-app-github] 提供的代码改编而来。 
+
+ 这些步骤应适用于任何 Kubernetes 群集。 因此，如果你已在 Kubernetes 群集上运行自己的应用程序，仍可以执行以下步骤，使用你自己的服务名称。
 
 TODO 应用程序示例由提供持久存储的前端和后端组成。 此扩展示例添加了一个统计信息组件，并将应用程序分解为多个微服务，具体如下：
 
@@ -37,15 +46,10 @@ TODO 应用程序示例由提供持久存储的前端和后端组成。 此扩�
 
 总之，此扩展 TODO 应用程序由六个相关组件组成。
 
-### <a name="prerequisites"></a>先决条件
-
-- 一个 Kubernetes 群集
-- 在 Windows 10 上运行的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。
-- [已安装 Bridge to Kubernetes 扩展][btk-extension]。
 
 ## <a name="check-the-cluster"></a>检查群集
 
-打开命令提示符，检查是否已安装 kubectl，以及你要使用的群集是否在路径上可用且就绪，并将上下文设置为该群集。
+打开命令提示符，检查是否已安装 `kubectl`，以及你要使用的群集是否在路径上可用且就绪，并将上下文设置为该群集。
 
 ```cmd
 kubectl cluster-info

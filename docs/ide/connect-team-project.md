@@ -2,17 +2,18 @@
 title: 连接到团队资源管理器中的项目
 description: 了解如何使用 Visual Studio 中的团队资源管理器，与团队成员一起开发和管理项目。
 ms.custom: SEO-VS-2020
-ms.date: 03/31/2021
+ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
 ms.manager: jillfra
-ms.openlocfilehash: 78a71911bb4334e04a085d91ff51238d34981beb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+monikerRange: <=vs-2019
+ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216600"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308241"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 
@@ -27,7 +28,7 @@ ms.locfileid: "106216600"
 团队资源管理器将 Visual Studio 连接到 Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/user-guide/about-azure-devops-services-tfs?view=azure-devops&preserve-view=true)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
 
 > [!IMPORTANT]
-> 在最新发布的 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes/) 中，现在默认为启用新的 Git 版本控制体验。 若要详细了解它如何与团队资源管理器进行比较，请参阅 [Git 和团队资源管理器的并行比较](git-team-explorer-feature-comparison.md)页。
+> 在 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 中，默认启用 Git 版本控制体验。 若要详细了解它如何与团队资源管理器进行比较，请参阅 [Git 和团队资源管理器的并行比较](../version-control/git-team-explorer-feature-comparison.md)页。
 >
 > 不过，如果更希望继续使用团队资源管理器，则转到“工具”>“选项”>“环境”>“预览功能”，然后切换“新的 Git 用户体验”复选框。
 

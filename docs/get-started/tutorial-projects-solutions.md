@@ -4,6 +4,7 @@ description: 了解 Visual Studio 中的项目和解决方案之间的区别，�
 ms.date: 11/17/2020
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fe3eaf3c5efcc8341613e9f223d22410111a548f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682602"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390029"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>项目和解决方案简介
 
@@ -34,6 +35,12 @@ ms.locfileid: "101682602"
 ::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -222,7 +229,7 @@ ms.locfileid: "101682602"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 选择“QuickTest”项目中的“依赖关系”节点，然后在右键菜单或上下文菜单中选择“添加项目引用…”  。
 
@@ -292,7 +299,7 @@ ms.locfileid: "101682602"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 若希望检查单元测试是否正常工作，请从菜单栏依次选择“测试” > “运行所有测试” 。 此时名为“测试资源管理器”的窗口打开，你应该会看到“TestGetCurrentDate”测试通过。
 

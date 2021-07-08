@@ -1,7 +1,7 @@
 ---
 title: 教程：调试 Visual Basic 代码
 description: 了解 Visual Studio 调试器的功能以及如何启动调试器、逐步执行代码以及检查 Visual Basic 应用程序中的数据。
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment, vs-acquisition, get-started
 ms.date: 02/03/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a6bc1cd4dd994a744e814ab893bfe67e24f110bb
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 48e6b383b0dfdee3a3cb0cc355ffa5900d4dc428
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101682684"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390211"
 ---
 # <a name="tutorial-learn-to-debug-visual-basic-code-using-visual-studio"></a>教程：学习使用 Visual Studio 调试 Visual Basic 代码
 
@@ -61,6 +61,12 @@ ms.locfileid: "101682684"
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
+
+::: moniker-end
+
 如果需要安装工作负载但已有 Visual Studio，请转到“工具”   > “获取工具和功能...”  ，这会打开 Visual Studio 安装程序。 Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”   。
 
 ## <a name="create-a-project"></a>创建项目
@@ -77,19 +83,19 @@ ms.locfileid: "101682684"
 
      如果看不到“控制台应用(.NET Core)”  项目模板，请选择“新建项目”  对话框左侧窗格中的“打开 Visual Studio 安装程序”  链接。
 
-     Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”   。
+     Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
-1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
+1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 Visual Basic，然后从“平台”列表中选择“Windows”。 
 
    应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用”模板，然后选择“下一步” 。
 

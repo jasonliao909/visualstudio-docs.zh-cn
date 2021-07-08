@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: efd75e79d7c015539dfe045f7b0a3b266cfb4756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923749"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254870"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -151,7 +151,7 @@ Conda 环境是使用 `conda` 工具或通过 Visual Studio 2017 版本 15.7 及
 
 ::: moniker range=">=vs-2019"
 
-1. 在“Python 环境”窗口中（或从 Python 工具栏上）选择“+ 添加环境”   ，这将打开“添加环境”  对话框。 在该对话框中，选择“Conda 环境”  选项卡：
+1. 在“Python 环境”窗口中（或从 Python 工具栏上）选择“添加环境...”，这将打开“添加环境”对话框  。 在该对话框中，选择“Conda 环境”  选项卡：
 
     ![“添加环境”对话框中的“Conda 环境”选项卡](media/environments/environments-conda-1-2019.png)
 
@@ -231,7 +231,7 @@ conda 环境文件夹如下所示：
 
 ::: moniker range=">=vs-2019"
 
-1. 在“Python 环境”窗口中（或从 Python 工具栏上）选择“+ 添加环境”   ，这将打开“添加环境”  对话框。 在该对话框中，选择“现有环境”  选项卡：
+1. 在“Python 环境”窗口中（或从 Python 工具栏上）选择“添加环境...”，这将打开“添加环境”对话框  。 在该对话框中，选择“现有环境”  选项卡：
 
     ![“添加环境”对话框中的“现有环境”选项卡](media/environments/environments-custom-1-2019.png)
 

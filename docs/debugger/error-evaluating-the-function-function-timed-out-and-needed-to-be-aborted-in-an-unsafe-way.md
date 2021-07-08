@@ -1,8 +1,9 @@
 ---
-description: 完整消息文本：计算函数“function”超时，需要以不安全方式中止。
 title: 计算函数 &apos;function&apos; 超时，需要以不安全方式中止 | Microsoft Docs
-ms.date: 11/04/2016
+description: 完整消息文本：计算函数“function”超时，需要以不安全方式中止。
+ms.date: 06/18/2021
 ms.topic: error-reference
+ms.custom: contperf-fy21q4
 f1_keywords:
 - vs.debug.error.unsafe_func_eval_abort
 author: mikejo5000
@@ -10,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a540f6f80029039644b22a24a31510042236de2
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 94c308e9ec960f744a98f0f930999df36afff475
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102147011"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925002"
 ---
 # <a name="error-evaluating-the-function-39function39-timed-out-and-needed-to-be-aborted-in-an-unsafe-way"></a>错误：计算函数“function”超时，需要以不安全方式中止
 
@@ -27,26 +28,30 @@ ms.locfileid: "102147011"
 
 ## <a name="to-correct-this-error"></a>更正此错误
 
-此问题有以下几种可能的解决方法。
+有关此问题的几种可能解决方案，请参阅以下部分。
 
-### <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解决方法 #1：阻止调试器调用 getter 属性或 ToString 方法
+## <a name="solution-1-prevent-the-debugger-from-calling-the-getter-property-or-tostring-method"></a>解决方法 #1：阻止调试器调用 getter 属性或 ToString 方法
 
 错误消息将告诉你调试器尝试调用的函数的名称。 如果可以修改此函数，就可以阻止调试器调用 getter 属性或 ToString 方法。 尝试以下任一项：
 
 * 将方法更改为除 getter 属性或 ToString 方法之外的其他类型的代码，问题将会消失。
-    \- 或 -
-* （对于 ToString）定义类型的 DebuggerDisplay 属性，调试器将计算 ToString 之外的值。
-    \- 或 -
-* （对于属性 getter）为属性定义 `[System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)]` 特性。 如果你的方法因为 API 兼容性而要保留属性，那么这是非常有用的，它应该是值得你考虑的方法。
+  \- 或 -
+* （对于 ToString）为类型定义 [DebuggerDisplay](../debugger/using-the-debuggerdisplay-attribute.md) 特性，调试器将计算 ToString 之外的值。
+  -或-
+* （对于属性 getter）为属性添加 [System.Diagnostics.DebuggerBrowsable(DebuggerBrowsableState.Never)](/dotnet/api/system.diagnostics.debuggerbrowsableattribute) 特性。 如果你的方法因为 API 兼容性而要保留属性，那么这是非常有用的，它应该是值得你考虑的方法。
 
-### <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解决方法 #2：让目标代码要求调试器中止计算
+## <a name="solution-2-have-the-target-code-ask-the-debugger-to-abort-the-evaluation"></a>解决方法 #2：让目标代码要求调试器中止计算
 
-错误消息将告诉你调试器尝试调用的函数的名称。 如果属性 getter 或 ToString 方法有时无法正确运行，特别是问题在于代码需要另一个线程来运行代码的情况下，实现函数可以调用 `System.Diagnostics.Debugger.NotifyOfCrossThreadDependency`，请求调试器中止函数计算。 使用此解决方案，仍然可以显式计算这些函数，但默认行为是在发生 NotifyOfCrossThreadDependency 调用时停止执行。
+错误消息将告诉你调试器尝试调用的函数的名称。 如果属性 getter 或 ToString 方法有时无法正确运行，特别是问题在于代码需要另一个线程来运行代码的情况下，实现函数可以调用 [System.Diagnostics.Debugger.NotifyOfCrossThreadDependency](/dotnet/api/system.diagnostics.debugger.notifyofcrossthreaddependency)，请求调试器中止函数计算。 使用此解决方案，仍然可以显式计算这些函数，但默认行为是在发生 NotifyOfCrossThreadDependency 调用时停止执行。
 
-### <a name="solution-3-disable-all-implicit-evaluation"></a>解决方法 #3：禁用所有隐式计算
+## <a name="solution-3-disable-all-implicit-evaluation"></a>解决方法 #3：禁用所有隐式计算
 
 如果前面的解决方案未解决问题，请转到“工具” > “选项”，并取消选中“调试” > “常规” > “启用属性计算和其他隐式函数调用”设置    。 这将禁用大多数隐式函数计算，应该可以解决问题。
 
-### <a name="solution-4-enable-managed-compatibility-mode"></a>解决方案 #4：启用托管兼容模式
+## <a name="solution-4-check-compatibility-with-third-party-developer-tools"></a>解决方案 #4：检查与第三方开发人员工具的兼容性
+
+如果使用的是 Resharper，请参阅此[问题](https://youtrack.jetbrains.com/issue/RSRP-476824)以获取建议。
+
+## <a name="solution-5-enable-managed-compatibility-mode"></a>解决方案 #5：启用托管兼容模式
 
 如果切换到旧版调试引擎，则可以消除此错误。 转到“工具” > “选项”，然后选择设置“调试” > “常规” > “使用托管兼容模式”    。 有关信息，请参阅[常规调试选项](../debugger/general-debugging-options-dialog-box.md)。

@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Basic 创建首个控制台应用
 description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的 Hello World 控制台应用。
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.date: 03/23/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a103c672b6539f5893cf52a6e83acde6c87176d
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 658faaf5b044f1c4fed70fa62f205c2fa025f640
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296633"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386236"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 
@@ -37,6 +37,12 @@ ms.locfileid: "107296633"
 
 ::: moniker-end
 
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
+
+::: moniker-end
+
 ## <a name="create-a-project"></a>创建项目
 
 首先，先创建一个 Visual Basic 应用程序项目。 项目类型随附了所需的全部模板文件，无需添加任何内容！
@@ -47,7 +53,7 @@ ms.locfileid: "107296633"
 
 2. 从顶部菜单栏中选择“文件”>“新建”>“项目”    。
 
-3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将项目命名为 HelloWorld。
+3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”  。 随后将项目命名为 HelloWorld。
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 
@@ -61,12 +67,12 @@ ms.locfileid: "107296633"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > 本快速入门中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](quickstart-personalize-the-ide.md)页面，了解具体方法。
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 

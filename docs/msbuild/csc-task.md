@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a3787d5aa21e029ab4900bdd89c88f1cc60f3489
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
+ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901341"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111588470"
 ---
 # <a name="csc-task"></a>Csc 任务
 
@@ -50,6 +50,7 @@ ms.locfileid: "99901341"
 | `Deterministic` | 可选 `Boolean` 参数。<br/><br/> 如果为 `true`，则会导致编译器输出的程序集的二进制内容在整个编译中相同（如果输入相同）。<br/><br/>有关详细信息，请参阅 [（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/deterministic-compiler-option)。 |
 | `DisabledWarnings` | 可选 `String` 参数。<br /><br /> 指定要禁用的警告的列表。 有关详细信息，请参阅 [nowarn（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/nowarn-compiler-option)。 |
 | `DocumentationFile` | 可选 `String` 参数。<br /><br /> 将文档注释处理到一个 XML 文件中。 有关详细信息，请参阅 [doc（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/doc-compiler-option)。 |
+| `EmbedAllSources` | 可选 `Boolean` 参数。<br /><br /> 在 PDB 中嵌入所有源文件。 有关详细信息，请参阅 [-embed（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/listed-alphabetically) |
 | `EmitDebugInformation` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则该任务生成调试信息并将它放置在程序数据库 (pdb) 文件中。 如果为 `false`，则此任务不发出任何调试信息。 默认值为 `false`。 有关详细信息，请参阅 [-debug（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/debug-compiler-option)。 |
 | `ErrorReport` | 可选 `String` 参数。<br /><br /> 提供向 Microsoft 报告 C# 内部错误的简便方法。 此参数可以具有 `prompt`、`send` 或 `none` 的值。 如果该参数设置为 `prompt`，则内部编译器错误发生时，你将收到一条提示。 该提示让你将一个 Bug 报告以电子方式发送给 Microsoft。 如果该参数设置为 `send`，则系统将自动发送 Bug 报告。 如果该参数设置为 `none`，则仅在编译器的文本输出中报告错误。 默认值为 `none`。 有关详细信息，请参阅 [-errorreport（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/errorreport-compiler-option)。 |
 | `FileAlignment` | 可选 `Int32` 参数。<br /><br /> 指定输出文件中各节的大小。 有关详细信息，请参阅 [-filealign（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/filealign-compiler-option)。 |

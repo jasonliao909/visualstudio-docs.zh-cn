@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b4dce707d51d7a2840aeef78f4d70392c884275
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932004"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222949"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -342,9 +342,11 @@ Output:
 -->
 ```
 
+<a name="TargetFramework"></a>
+
 ## <a name="msbuild-targetframework-and-targetplatform-functions"></a>MSBuild TargetFramework 和 TargetPlatform 函数
 
-MSBuild 定义了几个用于处理 [TargetFramework 和 TargetPlatform 属性](msbuild-target-framework-and-target-platform.md)的函数。
+MSBuild 16.7 及更高版本定义了几个用于处理 [TargetFramework 和 TargetPlatform 属性](msbuild-target-framework-and-target-platform.md)的函数。
 
 |函数签名|描述|
 |------------------------|-----------------|
@@ -384,6 +386,39 @@ Value3 = windows
 Value4 = 7.0
 Value5 = True
 ```
+
+## <a name="msbuild-version-comparison-functions"></a>MSBuild 版本比较函数
+
+MSBuild 16.5 及更高版本定义了若干函数，用于比较表示版本的字符串。
+
+> [!Note]
+> 条件中的比较运算符[可以比较可分析为 `System.Version` 对象](msbuild-conditions.md#comparing-versions) 的字符串，但比较可能会产生意外结果。 首选属性函数。
+
+|函数签名|描述|
+|------------------------|-----------------|
+|VersionEquals(string a, string b)|如果版本 `a` 和 `b` 等效，则根据以下规则返回 `true`。|
+|VersionGreaterThan(string a, string b)|如果版本 `a` 大于 `b`，则根据以下规则返回 `true`。|
+|VersionGreaterThanOrEquals(string a, string b)|如果版本 `a` 大于或等于 `b`，则根据以下规则返回 `true`。|
+|VersionLessThan(string a, string b)|如果版本 `a` 小于 `b`，则根据以下规则返回 `true`。|
+|VersionLessThanOrEquals(string a, string b)|如果版本 `a` 小于或等于 `b`，则根据以下规则返回 `true`。|
+|VersionNotEquals(string a, string b)|如果版本 `a` 和 `b` 等效，则根据以下规则返回 `false`。|
+
+在这些方法中，版本的分析类似于 <xref:System.Version?displayProperty=fullName>，但以下情况例外：
+
+* 忽略前导 `v` 或 `V`，以便可以与 `$(TargetFrameworkVersion)` 进行比较。
+
+* 从第一个“-”或“+”到版本字符串末尾的所有内容都将被忽略。 虽然顺序与 SemVer 不同，但允许传递语义版本 (SemVer)。 相反，预发布说明符和生成元数据没有任何排序权重。 例如，若要打开 `>= x.y` 的功能并使其在 `x.y.z-pre` 上启动，这很有用。
+
+* 未指定部分与零值部分相同。 (`x == x.0 == x.0.0 == x.0.0.0`).
+
+* 整数组件中不允许含有空格。
+
+* 仅主版本有效（`3` 等于 `3.0.0.0`）
+
+* `+` 不允许作为整数组件中的正号（它被视为 SemVer 元数据并被忽略）
+
+> [!TIP]
+> 要比较 [TargetFramework 属性](msbuild-target-framework-and-target-platform.md)，通常应使用 [IsTargetFrameworkCompatible](#TargetFramework)，而不是提取和比较版本。 这允许比较在 `TargetFrameworkIdentifier` 和版本中不同的 `TargetFramework`。
 
 ## <a name="msbuild-condition-functions"></a>MSBuild 条件函数
 

@@ -2,19 +2,19 @@
 title: Visual Studio 2019 中的 Git 体验
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中新的集成 Git 体验如何帮助提高工作效率。
-ms.date: 04/01/2021
+ms.date: 06/17/2021
 ms.topic: overview
 ms.author: tglee
 author: TerryGLee
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
 ms.manager: jmartens
-ms.openlocfilehash: 7ca09edada7715b9e7be754dbec22e1654288df8
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: ae5d17bfe09f2ebac5abb37c6d6ceed59c5398d3
+ms.sourcegitcommit: a9526ab1556c47570286c7a7d3314af67fd1dcf0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729307"
+ms.lasthandoff: 06/18/2021
+ms.locfileid: "112365451"
 ---
 # <a name="git-experience-in-visual-studio"></a>Visual Studio 中的 Git 体验
 
@@ -184,15 +184,19 @@ Visual Studio 中的合并编辑器是一种三向合并工具，用于显示传
 
 ## <a name="personalize-your-git-settings"></a>个性化设置 Git 设置
 
-若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的选项。
+若要在存储库级别和全局级别对 Git 设置进行个性化设置和自定义，请转到菜单栏上的“Git” > “设置”，或转到菜单栏上的“工具” > “选项” > “源代码管理”    。 然后选择所需的[选项](git-settings.md)。
 
 :::image type="content" source="media/git-options-settings.png" alt-text="Visual Studio IDE 中“选项”对话框，可以在该对话框中选择个性化设置和自定义设置 ":::
+
+::: moniker range="vs-2019"
 
 ## <a name="how-to-use-the-full-team-explorer-experience-in-visual-studio"></a>如何在 Visual Studio 中使用完整的团队资源管理器体验
 
 从[版本 16.8](/visualstudio/releases/2019/release-notes/) 开始，新的 Git 体验是 Visual Studio 2019 中的默认版本控制系统。 但是，可以在需要时将它关闭。 转到“工具” > “选项” > “环境” > “预览功能”，然后切换“新的 Git 用户体验”复选框，这会使你切换回用于 Git 的团队资源管理器。
 
 :::image type="content" source="media/git-opt-new-user-experience.png" alt-text="Visual Studio 中“选项”对话框的“预览功能”部分 ":::
+
+::: moniker-end
 
 ## <a name="whats-next"></a>后续步骤
 

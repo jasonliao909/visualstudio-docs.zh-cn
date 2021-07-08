@@ -29,12 +29,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e3836403af80d06a2ecaa7f77cb7f49f0c6f0e8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9774878b8d8862fca0b8b35de924b7bc1ab45656
+ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389782"
+ms.lasthandoff: 07/03/2021
+ms.locfileid: "113280508"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -159,6 +159,12 @@ ms.locfileid: "112389782"
 在某些情况下，在远程桌面（终端服务）会话中进行调试时，“可用进程”列表时不会显示所有可用进程。 如果以受限制的用户帐户的用户身份运行 Visual Studio，则“可用进程”列表不会显示在会话 0 中运行的进程。 会话 0 用于服务和其他服务器进程，包括 w3wp.exe。 可通过以下方法解决该问题：使用管理员帐户运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 或从服务器控制台（而不是“终端服务”会话）运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]。
 
 如果这两种解决方法都不可行，第三种方法是通过从 Windows 命令行运行 `vsjitdebugger.exe -p <ProcessId>` 来附加到进程。 可使用 tlist.exe 来确定进程 ID。 若要获取“tlist.exe”，请从 [WDK 和 WinDbg 下载](/windows-hardware/drivers/download-the-wdk)中下载并安装适用于 Windows 的调试工具。
+
+## <a name="attach-to-a-net-core-process-running-on-azure-app-service-windows"></a>附加到在 Azure 应用服务 (Windows) 上运行的 .NET Core 进程
+
+如果要发布到 Azure 应用服务 (Windows)，则要在“承载”下的“...”菜单下找到“附加调试器”选项  。 Visual Studio 尝试将远程调试器附加到配置文件要发布到 Azure 应用服务 (Windows) 的实例。
+
+:::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="“发布摘要”页中的附加调试器选项的屏幕截图。":::
 
 ## <a name="attach-to-a-net-core-process-running-on-linux-using-ssh"></a>使用 SSH 附加到正在 Linux 上运行的 .NET Core 进程
 

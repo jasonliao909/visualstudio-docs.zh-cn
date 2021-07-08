@@ -1,7 +1,7 @@
 ---
 title: 教程：调试 C++ 代码
 description: 了解 Visual Studio 调试器的功能以及如何启动调试器、逐步执行代码以及检查 C++ 应用程序中的数据。
-ms.custom: debug-experiment, seodec18, get-started
+ms.custom: debug-experiment,  get-started
 ms.date: 02/04/2020
 ms.technology: vs-ide-debug
 ms.topic: tutorial
@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: af974731fac6842c38f2a0e4ccbc9f32748e29b2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8abb517103254aa1e0c89a02b0dc81b38af3ecee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874790"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112385248"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -54,9 +54,15 @@ ms.locfileid: "99874790"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -82,7 +88,7 @@ ms.locfileid: "99874790"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 打开 Visual Studio 2019。
 
@@ -186,9 +192,9 @@ ms.locfileid: "99874790"
 
 大多数情况下，我们使用键盘快捷方式，因为这是在调试器中快速执行应用的好方法（括号中显示了等效的命令，如菜单命令）。
 
-1. 在 `main` 方法中的 `for` 循环中暂停时，按两次 F11（或选择“调试”>“单步执行”）前进到 `SendMessage` 方法调用   。
+1. 在 `main` 方法中的 `for` 循环中暂停时，按两次 F11（或选择“调试”>“单步执行”）前进到 `SendMessage` 方法调用。
 
-     按两次 F11 后，应位于以下代码行  ：
+     按两次 F11 后，应位于以下代码行：
 
      `SendMessage(name, a[i]);`
 
@@ -208,13 +214,13 @@ ms.locfileid: "99874790"
 
      你应当回到 `main` 方法的 `for` 循环，在 `SendMessage` 方法调用处暂停。
 
-1. 多按几次 F11，直到再次返回到 `SendMessage` 方法调用  。
+1. 多按几次 F11，直到再次返回到 `SendMessage` 方法调用。
 
-1. 在方法调用处暂停时，按一次 F10（或选择“调试”>“单步跳过”）   。
+1. 在方法调用处暂停时，按一次 F10（或选择“调试”>“单步跳过”）。
 
      ![使用 F10 单步跳过代码](../debugger/media/get-started-step-over-cpp.png "F10 单步跳过")
 
-     请注意，这次调试器不会单步执行 `SendMessage` 方法。 按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）  。 通过在进行 `SendMessage` 方法调用时按“F10”（而不是“F11”），我们跳过了 `SendMessage` 的实现代码（我们现在可能对此不感兴趣）   。 有关在代码中进行移动的不同方法的详细信息，请参阅[浏览调试器中的代码](../debugger/navigating-through-code-with-the-debugger.md)。
+     请注意，这次调试器不会单步执行 `SendMessage` 方法。 按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 通过在进行 `SendMessage` 方法调用时按“F10”（而不是“F11”），我们跳过了 `SendMessage` 的实现代码（我们现在可能对此不感兴趣）。 有关在代码中进行移动的不同方法的详细信息，请参阅[浏览调试器中的代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
 ## <a name="navigate-code-using-run-to-click"></a>使用“运行时单击”导航代码
 
@@ -251,7 +257,7 @@ ms.locfileid: "99874790"
 
 1. 接下来，将鼠标悬停在 `name` 变量上，会看到其当前值为空字符串。
 
-1. 多按几次 F5（或“调试” > “继续”），通过 `for` 循环执行多次循环访问，再次在断点处暂停，每次都将鼠标悬停在 `name` 变量上以检查其值    。
+1. 多按几次 F5（或“调试” > “继续”），通过 `for` 循环执行多次循环访问，再次在断点处暂停，每次都将鼠标悬停在 `name` 变量上以检查其值。
 
      ![查看数据提示](../debugger/media/get-started-data-tip-cpp.png "查看数据提示")
 

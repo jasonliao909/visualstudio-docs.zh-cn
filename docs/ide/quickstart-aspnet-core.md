@@ -1,7 +1,7 @@
 ---
 title: 使用 C# 创建 ASP.NET Core Web 应用
 description: 了解如何在 Visual Studio 中使用 C# 和 ASP.NET Core 逐步创建简单的 Hello World Web 应用。
-ms.custom: mvc,seodec18
+ms.custom: vs-acquisition
 ms.date: 11/06/2019
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: d4f36ac4199d082b6ab0eae3154307bd8f4f7487
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 65ad48bab545d635763a1cabb4e76734431c2a55
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296932"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384832"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -38,6 +38,12 @@ ms.locfileid: "107296932"
 ::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -81,7 +87,7 @@ ms.locfileid: "107296932"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在“开始”窗口上，选择“创建新项目”。
 
@@ -177,7 +183,7 @@ ms.locfileid: "107296932"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在解决方案资源管理器中，展开“Pages”文件夹，然后选择“Index.cshtml”。
 

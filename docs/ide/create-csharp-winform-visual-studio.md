@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 26f13d12324beb0e414761ce2d79297767c5d708
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0efdb7d35549a32e1151a134ce3a665337bb27ce
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107297114"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308306"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 
@@ -33,6 +33,15 @@ ms.locfileid: "107297114"
 ::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+> [!NOTE]
+> 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
@@ -57,9 +66,9 @@ ms.locfileid: "107297114"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 

@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: f16ecd899bc1dddd7383ef1a815ed6197b799a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
+ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859523"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110235906"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>使用 Docker 排查 Visual Studio 开发方面的问题
 
@@ -29,7 +29,7 @@ ms.locfileid: "99859523"
 1. 右键单击通知区域中的“Docker for Windows”  ，并选择“设置”  。
 1. 选择“资源” > “文件共享”并共享需要访问的文件夹 。 可以共享整个系统驱动器，但不建议这样做。
 
-    ![共享驱动器](media/troubleshooting-docker-errors/docker-settings-image.png)
+    :::image type="content" source="media//troubleshooting-docker-errors/docker-settings-image.png" alt-text="共享驱动器":::
 
 > [!TIP]
 > 如果未配置共享驱动器，Visual Studio 2017 版本 15.6 之后的版本将发出提示。
@@ -86,7 +86,7 @@ net localgroup docker-users DOMAIN\username /add
     "graph": "D:\\mypath\\images"
 ```
 
-![Docker 文件共享的屏幕截图](media/troubleshooting-docker-errors/docker-daemon-settings.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-daemon-settings.png" alt-text="Docker 文件共享的屏幕截图":::
 
 单击“应用和重启”。 这些步骤会修改 %ProgramData%\docker\config\daemon.json 的配置文件  。 以前生成的映像不会移动。
 
@@ -94,7 +94,7 @@ net localgroup docker-users DOMAIN\username /add
 
 向项目添加 Docker 支持后，请选择 Windows 或 Linux 容器。 如果 Docker 服务器主机未配置为运行与项目目标相同的容器类型，则你可能会看到类似以下错误：
 
-![Docker 主机和项目不匹配的屏幕截图](media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png)
+:::image type="content" source="media/troubleshooting-docker-errors/docker-host-config-change-linux-to-windows.png" alt-text="Docker 主机和项目不匹配的屏幕截图":::
 
 要解决此问题：
 

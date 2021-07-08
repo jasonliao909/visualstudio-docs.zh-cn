@@ -1,13 +1,12 @@
 ---
-title: 使用解决方案和项目
+title: 创建并使用 Visual Studio 项目和解决方案
 description: 了解 Visual Studio 中的解决方案和项目之间的区别，以及如何使用它们。
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/23/2020
+ms.date: 06/14/2021
 ms.topic: how-to
 f1_keywords:
 - vs.openprojectfromweb
 - VS.ToolsOptionsPages.Projects.General
-- SolutionItemsProject
 helpviewer_keywords:
 - solutions [Visual Studio], creating
 - projects [Visual Studio], creating
@@ -16,14 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f702908c60b08ac1eaae5aa1f941a2f56eaf8fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 713d320767bd329cc53b536bdad058a5db592b3f
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956797"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924924"
 ---
-# <a name="work-with-solutions-and-projects"></a>使用解决方案和项目
+# <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>创建、使用并删除 Visual Studio 项目和解决方案
+
+在本文中，你将了解如何从头创建和使用 Visual Studio 项目，以存储生成应用所需的生成工件。  如果不熟悉 Visual Studio 中的项目，请参阅此[项目和解决方案](solutions-and-projects-in-visual-studio.md)概述。  要了解如何根据模板快速创建项目，请参阅[根据模板创建项目](create-new-project.md)。
 
 “项目”用于保存在 Visual Studio 中生成应用时所需的项，比如源代码文件、位图、图标以及组件和服务引用。 创建新项目时，Visual Studio 会创建一个解决方案来包含该项目。 然后可以根据需要向解决方案添加其他新项目或现有项目。 解决方案还可以包含未连接到任何特定项目的文件。
 

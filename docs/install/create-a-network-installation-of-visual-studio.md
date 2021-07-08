@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6a93a8a41e4d2c4c91a55cfe91459f7a501b8efc
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 080c4450cfcdca28386811865229af75303beb6a
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296973"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307526"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
@@ -29,7 +29,7 @@ ms.locfileid: "107296973"
  > [!NOTE]
  >  - 如果企业使用多个 Visual Studio 版本（例如，同时使用 Visual Studio 2019 Professional 和 Visual Studio 2019 Enterprise），则必须为每个版本单独创建网络安装共享。
  >  - 建议你在执行初始客户端安装之前确定你希望客户端如何接收产品更新。  这样可以更轻松地确保正确设置配置选项。 你的选择包括让客户端从网络布局位置或从 Internet 获取更新。 
- >  - 原始 Visual Studio 安装布局和所有后续产品更新必须位于同一网络目录中，以确保修复和卸载功能正常工作。 
+ >  - 原始 Visual Studio 安装布局和所有后续产品更新必须位于同一网络目录中，以确保修复和卸载功能正常工作。
 
 ## <a name="download-the-visual-studio-bootstrapper"></a>下载 Visual Studio 引导程序
 
@@ -39,11 +39,11 @@ ms.locfileid: "107296973"
 
 若要获取 Visual Studio 2017 版本15.9 的最新引导程序，请转到 [Visual Studio 以前的版本](https://visualstudio.microsoft.com/vs/older-downloads/)页，并下载以下引导程序文件之一：
 
-| 版本 | Filename |
-|-------------|-----------------------|
-|Visual Studio 2017 Enterprise 版本 15.9 | vs_enterprise.exe |
-|Visual Studio 2017 Professional 版本 15.9 | vs_professional.exe |
-|Visual Studio 2017 生成工具版本 15.9  | vs_buildtools.exe |
+| 版本                                      | Filename            |
+|----------------------------------------------|---------------------|
+| Visual Studio 2017 Enterprise 版本 15.9   | vs_enterprise.exe   |
+| Visual Studio 2017 Professional 版本 15.9 | vs_professional.exe |
+| Visual Studio 2017 生成工具版本 15.9  | vs_buildtools.exe   |
 
 其他受支持的引导程序包括 vs_feedbackclient.exe、vs_teamexplorer.exe、vs_testagent.exe、vs_testcontroller.exe 和 vs_testprofessional.exe。
 
@@ -51,15 +51,28 @@ ms.locfileid: "107296973"
 
 ::: moniker range="vs-2019"
 
-首先从 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序，以找到所选版本的 Visual Studio。  安装程序可执行文件（更具体而言，是引导程序文件）应与以下其中一项匹配，或与之类似：
+首先从 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版](/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序，以找到所选版本的 Visual Studio。  安装程序可执行文件（更具体而言，是引导程序文件）应与以下其中一项匹配，或与之类似：
 
-|版本 | 下载|
-|-------------|-----------------------|
-|Visual Studio Enterprise | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-|Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
-| Visual Studio 生成工具   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
+| 版本                    | 下载                                                                                                                                                                                                                           |
+|----------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019)     |
+| Visual Studio Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=network+install&utm_content=download+vs2019) |
+| Visual Studio 生成工具  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
 
 其他受支持的引导程序包括 [vs_teamexplorer.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/4026077127d25d33789f3882998266946608d8ada378b6ed7c8fff8c07f3dde2/vs_TeamExplorer.exe)、[vs_testagent.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/1383bf8bcda3d0e986a2e42c14114aaea8a7b085d31aa0623c9f70b2bad130e4/vs_TestAgent.exe) 和 [vs_testcontroller.exe](https://download.visualstudio.microsoft.com/download/pr/f6473c9f-a5f6-4249-af28-c2fd14b6a0fb/54dcf24b76e7cd9fb8be0ac518a9dfba6daf18fe9b2aa1543411b1cda8820918/vs_TestController.exe)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>![!TIP]
+> 发布的 Visual Studio 2022 版尚不可用，以下引导程序适用于 Visual Studio 2022 预览版。
+首先从 [Visual Studio 下载页](https://aka.ms/vs2022preview)下载 Visual Studio 2022 引导程序。
+
+| 版本                    | 下载                                                                             |
+|----------------------------|--------------------------------------------------------------------------------------|
+| Visual Studio Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/preview/bootstrapper/vs_enterprise.exe)     |
+| Visual Studio Professional | [vs_professional.exe](https://aka.ms/vs/17/preview/bootstrapper/vs_professional.exe) |
 
 ::: moniker-end
 
@@ -73,19 +86,26 @@ ms.locfileid: "107296973"
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该版本号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2019 版](https://docs.microsoft.com/visualstudio/releases/2019/history)。
+>如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该版本号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2019 版](/visualstudio/releases/2019/history)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该版本号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版](/visualstudio/releases/2022/history)。
 
 ::: moniker-end
 
 ## <a name="create-an-offline-installation-folder"></a>创建脱机安装文件夹
 
-必须具有 Internet 连接才能完成此步骤。 
+必须具有 Internet 连接才能完成此步骤。
 
 打开命令提示符，导航到要下载引导程序的目标目录，并使用[使用命令行参数安装 Visual Studio](../install/use-command-line-parameters-to-install-visual-studio.md) 页中定义的引导程序参数来创建和维护网络安装缓存。 下文和 [Visual Studio 安装的命令行参数示例](../install/command-line-parameter-examples.md)介绍了创建初始布局的常见示例。  
 
    > [!IMPORTANT]
    > 对于 Visual Studio Community，单一语言区域设置的完整初始布局需要约 35 GB 的磁盘空间，而 Visual Studio Enterprise 则需要约 42 GB 的磁盘空间。 其他每个[语言区域设置](use-command-line-parameters-to-install-visual-studio.md#list-of-language-locales)需要大约 0.5 GB 的磁盘空间。 有关详细信息，请参阅[自定义网络布局](#customize-the-network-layout)部分。 请注意，后续布局更新也必须存储在同一网络位置，因此，网络布局位置的目录内容可能会随着时间的推移而变得非常大。  
-   
+
 - 若要创建具有所有语言和所有功能的 Visual Studio Enterprise 的初始布局，请运行：
 
   ```vs_enterprise.exe --layout c:\VSLayout```
@@ -104,13 +124,13 @@ ms.locfileid: "107296973"
 
 将布局托管在网络共享上，以便用户可以从其他客户端计算机运行。
 
-下面的示例使用 [xcopy](/windows-server/administration/windows-commands/xcopy/)。 如果需要，还可以使用 [robocopy](/windows-server/administration/windows-commands/robocopy/)。
+下面的示例使用 [`xcopy`](/windows-server/administration/windows-commands/xcopy/)。 如果愿意，也可使用 [`robocopy`](/windows-server/administration/windows-commands/robocopy/)。
 
 ::: moniker range="vs-2017"
 
 示例：
 
-```cmd
+```shell
 xcopy /e c:\VSLayout \\server\products\VS2017
 ```
 
@@ -118,8 +138,16 @@ xcopy /e c:\VSLayout \\server\products\VS2017
 
 ::: moniker range="vs-2019"
 
-```cmd
+```shell
 xcopy /e c:\VSLayout \\server\products\VS2019
+```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+```shell
+xcopy /e c:\VSLayout \\server\products\VS2022
 ```
 
 ::: moniker-end
@@ -140,37 +168,37 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 * 若要下载仅一种语言的所有工作负载和组件，请运行：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --lang en-US
     ```
 
 * 若要下载多种语言的所有工作负载和组件，请运行：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --lang en-US de-DE ja-JP
     ```
 
 * 若要下载所有语言的一个工作负载，请运行：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --includeRecommended
     ```
 
 * 若要下载三种语言的两个工作负载和一个可选组件，请运行：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended --lang en-US de-DE ja-JP
     ```
 
 * 下载两个工作负载及其所有推荐组件：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeRecommended
     ```
 
 * 若要下载两个工作负载及其所有推荐和可选组件，请运行：
 
-    ```cmd
+    ```shell
     vs_enterprise.exe --layout C:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Component.GitHub.VisualStudio --includeOptional
     ```
 
@@ -178,25 +206,25 @@ xcopy /e c:\VSLayout \\server\products\VS2019
 
 运行布局命令时，指定的选项（例如工作负载和语言）将被保存。 后续的布局命令将包括先前的所有选项。  以下示例说明如何使用一个工作负载来创建布局（仅限英语）：
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
 ```
 
 若要将布局更新至较新版本，无需指定任何额外命令行参数。 此布局文件夹中的任何后续布局命令都将使用先前所保存的设置。  以下命令将更新现有的部分布局。
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\VSLayout
 ```
 
 有关添加其他工作负载的相关操作说明，请参阅下列示例。 在此事例中，我们将添加 Azure 工作负载和已本地化的语言。  现在，此布局中已包括托管桌面和 Azure。  所有这些工作负载中都加入了英语和德语的语言资源。 已将布局更新至最新的可用版本。
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
 ```
 
 要将现有布局更新至完整布局，请使用 --all 选项，如下方示例所示。
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\VSLayout --all
 ```
 
@@ -206,13 +234,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 * 用户可通过运行以下命令进行安装： <br>
 
-    ```cmd
+    ```shell
     \\server\products\VS\vs_enterprise.exe
     ```
 
 * 管理员可以通过运行以下命令在无人参与模式下进行安装：
 
-    ```cmd
+    ```shell
     \\server\products\VS\vs_enterprise.exe --quiet --wait --norestart
     ```
 
@@ -227,7 +255,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 > 如果不使用 `--wait``vs_enterprise.exe` 进程将在安装完成前退出，并返回一个不能表示安装操作状态的不准确的退出代码。
 >
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!IMPORTANT]
 > 对于脱机安装，如果收到一条错误消息，指出“找不到与以下参数匹配的项目”，请确保将 `--noweb` 开关用于版本 16.3.5 或更高版本。
 >
@@ -253,13 +281,13 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 ## <a name="how-to-create-a-layout-for-a-previous-visual-studio-release"></a>如何为旧版 Visual Studio 创建布局
 
-首先，你需要了解有两种类型的 Visual Studio 引导程序，一种可以具有“最新”、“当前”、“长期有效”和“提示”等特征，另一个本质上表示“固定版本”。 这两种类型的引导程序文件具有完全相同的名称，因此，区分类型的最佳方式是关注其来源。 Visual Studio 引导程序可从 [Visual Studio 下载页面](https://visualstudio.microsoft.com/downloads)获得，并被视为长期有效 Visual Studio 引导程序，且它们始终会安装（或更新）在引导程序运行时通道中可用的最新版本。 [Visual Studio 2019 版](https://docs.microsoft.com/visualstudio/releases/2019/history)页面上提供的 Visual Studio 引导程序，或嵌入在 Microsoft 更新目录中的管理员更新中的 Visual Studio 引导程序将安装该产品的特定固定版本。 
+首先，你需要了解有两种类型的 Visual Studio 引导程序，一种可以具有“最新”、“当前”、“长期有效”和“提示”等特征，另一个本质上表示“固定版本”。 这两种类型的引导程序文件具有完全相同的名称，因此，区分类型的最佳方式是关注其来源。 Visual Studio 引导程序可从 [Visual Studio 下载页面](https://visualstudio.microsoft.com/downloads)获得，并被视为长期有效 Visual Studio 引导程序，且它们始终会安装（或更新）在引导程序运行时通道中可用的最新版本。 [Visual Studio 2019 版](/visualstudio/releases/2019/history)和 [Visual Studio 2022 版](/visualstudio/releases/2022/history)页面上提供的 Visual Studio 引导程序，或嵌入在 Microsoft 更新目录中的管理员更新中的 Visual Studio 引导程序将安装该产品的特定固定版本。
 
 因此，如果立即下载长期有效的 Visual Studio 引导程序，并从现在开始运行 6 个月，则会安装运行引导程序时的最新 Visual Studio 版本。 它旨在始终安装最新的位并使你保持最新。
 
 如果下载了固定链接的引导程序，或者运行从 Microsoft 目录下载的管理员更新，则它将始终安装特定版本的产品，而不考虑其运行时间。
 
-最后，你可以使用这些引导程序中的任何一个创建网络布局，将在布局中创建的版本取决于你使用的引导程序，例如，版本可以是固定版本或当前版本。 然后，你可以使用任何更高版本的引导程序更新网络布局，也可以使用 Microsoft 更新目录中的管理员更新包。 无论更新布局的方式如何，生成的更新布局都将是包含产品特定版本的包缓存，随后其行为将类似于固定链接引导程序。 因此，每当从布局中安装客户端时，客户端都将安装布局中存在的特定版本的 Visual Studio（即使线上存在较高版本也是如此）。 
+最后，你可以使用这些引导程序中的任何一个创建网络布局，将在布局中创建的版本取决于你使用的引导程序，例如，版本可以是固定版本或当前版本。 然后，你可以使用任何更高版本的引导程序更新网络布局，也可以使用 Microsoft 更新目录中的管理员更新包。 无论更新布局的方式如何，生成的更新布局都将是包含产品特定版本的包缓存，随后其行为将类似于固定链接引导程序。 因此，每当从布局中安装客户端时，客户端都将安装布局中存在的特定版本的 Visual Studio（即使线上存在较高版本也是如此）。
 
 ### <a name="how-to-get-support-for-your-offline-installer"></a>如何获取关于脱机安装程序的支持
 

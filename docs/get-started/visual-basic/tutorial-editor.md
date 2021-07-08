@@ -1,7 +1,10 @@
 ---
 title: Visual Basic 开发人员编辑功能简介
 description: 这一 10 分钟的 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 Visual Basic 代码。
-ms.custom: seodec18, get-started
+ms.custom:
+- vs-acquisition
+- seodec18
+- get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 227d54fbc2734290954fc1c847a34846bb6dc5cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944532"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390159"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>了解如何将代码编辑器用于 Visual Basic
 
@@ -34,6 +37,13 @@ ms.locfileid: "99944532"
 
 > [!TIP]
 > 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 如果尚未安装 Visual Studio 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 

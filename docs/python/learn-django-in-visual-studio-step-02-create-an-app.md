@@ -11,12 +11,12 @@ ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 9c8da2566be9b389b3ae36f2e6aa46686011ac0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
+ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942589"
+ms.lasthandoff: 05/21/2021
+ms.locfileid: "110320467"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 
@@ -48,6 +48,7 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 
 ![解决方案资源管理器中的 Django 应用文件](media/django/step02-django-app-in-solution-explorer.png)
 
+::: moniker range="vs-2017"
 | 项 | 描述 |
 | --- | --- |
 | **\_\_init\_\_.py** | 将应用标识为包的文件。 |
@@ -58,6 +59,20 @@ Django 应用通常以一组标准文件开始。 Visual Studio 提供项模板�
 | **models.py** | 模型是由函数识别的数据对象，视图通过模型与应用的基础数据库进行交互（请参阅步骤 6）。 Django 提供数据库连接层，这样应用就无需考虑这些细节。 models.py 文件是用于创建模型的默认位置，最初只包含语句 `from django.db import models`  。 |
 | **tests.py** | 包含单元测试基本结构的 Python 文件。 |
 | **views.py** | 视图是你通常将其视为网页的对象，它接收 HTTP 请求并返回 HTTP 响应。 视图通常呈现为 Web 浏览器知道如何显示的 HTML，但视图不一定可见（比如中间形式）。 视图由 Python 函数定义，它的职责是呈现 HTML 以发送到浏览器。 views.py 文件是用于创建视图的默认位置，最初只包含语句 `from django.shortcuts import render`  。 |
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+| 项目 | 描述 |
+| --- | --- |
+| **\_\_init\_\_.py** | 将应用标识为包的文件。 |
+| **迁移** | 一个文件夹，Django 在其中存储用于更新数据库以便与模型更改保持一致的脚本。 然后，Django 迁移工具将必要的更改应用到任何以前版本的数据库，以便与当前模型相匹配。 使用迁移，可以将注意力集中在模型上，并让 Django 处理基础数据库架构。 [Django 文档](https://docs.djangoproject.com/en/3.2/topics/migrations/)中已对迁移进行了讨论；现在，该文件夹只需包含 \_\_init.py\_\_ 文件（指示文件夹定义其自己的 Python 包）。 |
+| **模板** | Django 页面模板文件夹，其中包含与应用名匹配的文件夹中的一个 index.html 文件  。 （在 Visual Studio 2017 15.7 及更早版本中，该文件直接包含在模板中，步骤 2-4 指示你创建子文件夹  。）模板是若干个 HTML 块，视图可以将信息添加到其中并以动态方式呈现页面。 页面模板“变量”（如 index.html 中的 `{{ content }}`）都是动态值占位符，如本文后面所述（步骤 2）  。 通常情况下，Django 应用通过将模板放置在与应用名称匹配的子文件夹中来创建其模板的命名空间。 |
+| **admin.py** | 在其中扩展应用管理界面的 Python 文件，用于对数据库中的数据进行种子设定和编辑。 最初，此文件仅包含语句 `from django.contrib import admin`。 默认情况下，Django 在 Django 项目 settings.py 文件中的条目中包含一个标准的管理界面，可以通过取消评论 urls.py 中的现有条目将其打开   。 |
+| **apps.py** | 定义应用配置类的 Python 文件（参见下文，在此表后）。 |
+| **models.py** | 模型是由函数识别的数据对象，视图通过模型与应用的基础数据库进行交互。 Django 提供数据库连接层，这样应用就无需考虑这些细节。 models.py 文件是用于创建模型的默认位置，最初只包含语句 `from django.db import models`  。 |
+| **tests.py** | 包含单元测试基本结构的 Python 文件。 |
+| **views.py** | 视图是你通常将其视为网页的对象，它接收 HTTP 请求并返回 HTTP 响应。 视图通常呈现为 Web 浏览器知道如何显示的 HTML，但视图不一定可见（比如中间形式）。 视图由 Python 函数定义，它的职责是呈现 HTML 以发送到浏览器。 views.py 文件是用于创建视图的默认位置，最初只包含语句 `from django.shortcuts import render`  。 |
+::: moniker-end
 
 使用名称“HelloDjangoApp”时，apps.py 内容如下所示  ：
 

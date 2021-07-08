@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
-ms.openlocfilehash: 38e5f612c6a9b39874c952560627e04c26fafc25
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897981"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112308150"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 反馈选项
 
@@ -28,11 +28,11 @@ ms.locfileid: "99897981"
 
 ## <a name="report-a-problem"></a>报告问题
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择右上角的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。
+如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择右上角的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”  。
 
-![Visual Studio 2019 IDE 的发送反馈图标](./media/vs-2019/send-feedback-icon.png)
+![Visual Studio IDE 的发送反馈图标](./media/vs-2019/send-feedback-icon.png)
 
 接下来，Visual Studio 打开[开发者社区](https://aka.ms/feedback/suggest?space=8)界面。在此界面中，可以在登录后报告问题。 有关详细信息，请参阅[如何报告 Visual Studio 的问题](how-to-report-a-problem-with-visual-studio.md)。
 
@@ -40,7 +40,7 @@ ms.locfileid: "99897981"
 
 ::: moniker range="vs-2017"
 
-如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择搜索框旁边的反馈图标，或依次选择菜单栏中的“帮助”   > “发送反馈”   > “报告问题”  。
+如果无法使用 Visual Studio（如发生故障、性能缓慢或意外行为），请使用“报告问题”工具告诉我们。 在 Visual Studio 中，选择搜索框旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “报告问题”。
 
 ![Visual Studio 2019 IDE 的发送反馈图标](./media/send-feedback-icon.png)
 
@@ -50,9 +50,9 @@ ms.locfileid: "99897981"
 
 ## <a name="suggest-a-feature"></a>功能建议
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-如果你有改进 Visual Studio 的想法或建议，请使用“建议功能”  工具告诉我们。 在 Visual Studio 中，选择右上角的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “功能建议”。
+如果你有改进 Visual Studio 的想法或建议，请使用“建议功能”工具告诉我们。 在 Visual Studio 中，选择右上角的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “功能建议”  。
 
 接下来，Visual Studio 打开[开发者社区](https://aka.ms/feedback/suggest?space=8)界面。在此界面中，可以在登录后分享想法。 有关详细信息，请参阅[提出 Visual Studio 功能建议](suggest-a-feature.md)。
 
@@ -60,7 +60,7 @@ ms.locfileid: "99897981"
 
 ::: moniker range="vs-2017"
 
-如果你有改进 Visual Studio 的想法或建议，请使用“提供建议”  工具告诉我们。 在 Visual Studio 中，选择搜索框旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “提供建议”。
+如果你有改进 Visual Studio 的想法或建议，请使用“提供建议”工具告诉我们。 在 Visual Studio 中，选择搜索框旁边的反馈图标，或依次选择菜单栏中的“帮助” > “发送反馈” > “提供建议”  。
 
 接下来，Visual Studio 打开[开发者社区](https://aka.ms/feedback/suggest?space=8)页面。在此页面中，可以在登录后分享想法。 有关详细信息，请参阅[提出 Visual Studio 功能建议](suggest-a-feature.md)。
 
@@ -70,10 +70,10 @@ ms.locfileid: "99897981"
 
 有两种方法可以帮助我们改进文档：
 
-* 使用文档页面右上角的“此页面有帮助吗?”  应答工具。
-* 使用 GitHub 帐户提供与 [docs.microsoft.com](../index.yml) 上任何 Visual Studio 页面相关的反馈。 要执行此操作，请选择文档页面底部的“发送相关反馈” > “本页”按钮。
+* 使用文档页面右上角的“此页面有帮助吗?”应答工具。
+* 使用 GitHub 帐户提供与 [docs.microsoft.com](../index.yml) 上任何 Visual Studio 页面相关的反馈。 要执行此操作，请选择文档页面底部的“发送相关反馈” > “本页”按钮 。
 
-## <a name="contact-microsoft-support"></a>联系 Microsoft 支持部门
+## <a name="contact-microsoft-support"></a>请与 Microsoft 支持部门联系
 
 有关 Visual Studio 支持信息，请参阅[产品生命周期和服务](/visualstudio/releases/2019/servicing/)页。 有关其他 Microsoft 产品和服务，请参阅 [Microsoft 支持](https://support.microsoft.com/)以获取联机帮助。
 
@@ -92,11 +92,11 @@ Microsoft 支持服务取决于当时的价格、条款和条件。 价格、条
 
 * [MSDN 论坛](https://social.msdn.microsoft.com/Forums/home)
 * [Reddit](https://www.reddit.com/r/VisualStudio/) 上的 Visual Studio
-* [堆栈溢出](https://stackoverflow.com/search?q=visual+studio+-code)
+* [Stack Overflow](https://stackoverflow.com/search?q=visual+studio+-code)
 
 还可以在[浏览代码示例](/samples/browse/)页面上查看其他开发人员的代码并分享你自己的示例。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [安装和升级问题疑难解答](../install/troubleshooting-installation-issues.md)
 * [开发人员社区数据隐私](developer-community-privacy.md)

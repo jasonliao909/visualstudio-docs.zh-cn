@@ -4,6 +4,7 @@ description: 了解 Visual Basic 开发人员如何在 Visual Studio 中创建�
 ms.date: 12/12/2018
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 36aabdd07dd7fa966a31d8fc3844e68d816c59ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944519"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112384728"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>通过 Visual Basic 了解项目和解决方案
 
@@ -36,6 +37,13 @@ ms.locfileid: "99944519"
 
 > [!TIP]
 > 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 如果尚未安装 Visual Studio 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 

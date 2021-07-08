@@ -9,25 +9,25 @@ helpviewer_keywords:
 - automate
 - installation
 - command-line
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d3fa063d82a9d0ba9f26e326961b1345b47151b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fe1d1a3c5ec13995cb69fff6ba6ec74c7a6c90d9
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868721"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307712"
 ---
-# <a name="how-to-define-settings-in-a-response-file"></a>如何在响应文件中定义设置
+# <a name="automate-installs-by-using-settings-in-a-response-file"></a>使用响应文件中的设置自动安装
 
 部署 Visual Studio 的管理员可以使用 `--in` 参数来指定响应文件，如下例所示：
 
-```cmd
+```shell
 vs_enterprise.exe --in customInstall.json
 ```
 
@@ -64,7 +64,7 @@ vs_enterprise.exe --in customInstall.json
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -119,7 +119,7 @@ vs_enterprise.exe --in customInstall.json
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ```json
 {
@@ -156,7 +156,7 @@ vs_enterprise.exe --in customInstall.json
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [Visual Studio 工作负荷和组件 ID](workload-and-component-ids.md)
 * [安装或使用 Visual Studio 时与网络相关错误的疑难解答](troubleshooting-network-related-errors-in-visual-studio.md)

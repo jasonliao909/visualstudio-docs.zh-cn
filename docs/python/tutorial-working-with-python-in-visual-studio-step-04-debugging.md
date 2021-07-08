@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a66268d5d6bd200eb3ef0e2c8bcf53471e3a735f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
+ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839158"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112254857"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 
@@ -50,6 +50,8 @@ ms.locfileid: "99839158"
     > 要在程序完成时自动关闭输出窗口，请选择“工具” > “选项”菜单命令，展开“Python”节点，选择“调试”，然后清除选项“进程正常退出时等待输入”      ：
     >
     > ![Python 调试选项，用于在程序正常退出时关闭输出窗口](media/vs-getting-started-python-22-debugging5.png)
+    >
+    > 有关调试的其他信息，包括如何设置脚本和解释器参数等任务，请参阅[调试 Python 代码](debugging-python-in-visual-studio.md)。
 
 1. 若要在 `for` 语句上设置断点，可单击该行的灰色边距，或将插入点置于该行并使用“调试”   > “切换断点”  命令 (F9  )。 灰色边距中显示的红点用来表示该断点（如以下箭头标记所示）：
 

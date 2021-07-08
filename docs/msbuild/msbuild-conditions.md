@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a480c539fc178e5ae672427fe32e9fd34728dc79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d72b69b2c80c4e20b5a4dadae18764a138210295
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919167"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113222703"
 ---
 # <a name="msbuild-conditions"></a>MSBuild 条件
 
@@ -35,7 +35,7 @@ MSBuild 支持一组特定的条件，只要允许使用 `Condition` 属性，�
 |---------------|-----------------|
 |'`stringA`' == '`stringB`'|如果 `stringA` 等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(Configuration)'=='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。 此检查不区分大小写。|
 |'`stringA`' != '`stringB`'|如果 `stringA` 不等于 `stringB`，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="'$(Configuration)'!='DEBUG'"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。 此检查不区分大小写。|
-|\<, >, \<=, >=|计算操作数的数值。 如果关系评估为 true，则返回 `true`。 操作数的计算结果必须为十进制或十六进制数。 十六进制数必须以“0x”开头。 **注意：** 在 XML 中，必须对字符 `<` 和 `>` 进行转义。 符号 `<` 表示为 `&lt;`。 符号 `>` 表示为 `&gt;`。|
+|\<, >, \<=, >=|计算操作数的数值。 如果关系评估为 true，则返回 `true`。 操作数的计算结果必须为十进制或十六进制数或由四部分组成的点分版本。 十六进制数必须以“0x”开头。 **注意：** 在 XML 中，必须对字符 `<` 和 `>` 进行转义。 符号 `<` 表示为 `&lt;`。 符号 `>` 表示为 `&gt;`。|
 |Exists('`stringA`')|如果存在名为 `stringA` 的文件或文件夹，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="!Exists('$(Folder)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|
 |HasTrailingSlash('`stringA`')|如果指定的字符串末尾包含反斜杠 (\\) 或正斜杠 (/) 字符，则计算结果为 `true`。<br /><br /> 例如：<br /><br /> `Condition="!HasTrailingSlash('$(OutputPath)')"`<br /><br /> 对于简单的字母数字字符串或布尔值，不需要单引号。 但对于空值，单引号是必需的。|
 |!|如果操作数计算结果为 `false`，则计算结果为 `true`。|
@@ -65,6 +65,15 @@ MSBuild 支持一组特定的条件，只要允许使用 `Condition` 属性，�
 布尔逻辑只在条件的上下文中计算，因此，像 `<Prop2>'$(Prop1)' == 'true'</Prop>` 这样的属性设置是以（变量扩展后的）字符串的形式来表示的，而不是以布尔值的形式来计算。  
 
 MSBuild 实现了一些特殊的处理规则，使其更容易处理用作布尔值的字符串属性。 接受布尔文本，因此 `Condition="true"` 和 `Condition="false"` 按预期方式工作。 MSBuild 还包括支持布尔求反运算符的特殊规则。 因此，如果 `$(Prop)` 为“true”，则 `!$(Prop)` 展开为 `!true`，这等于 `false`，与您预期的相同。
+
+## <a name="comparing-versions"></a>比较版本
+
+关系运算符 `<`、`>`、`<=` 和 `>=` 支持由 <xref:System.Version?displayProperty=fullName> 分析的版本，因此可以比较具有四个数值部分的版本。 例如，`'1.2.3.4' < '1.10.0.0'` 为 `true`。
+
+> [!CAUTION]
+> 如果有一个或两个版本未指定全部四个部分，`System.Version` 比较可能会产生令人吃惊的结果。 例如，版本 1.1 早于版本 1.1.0。
+
+MSBuild 提供了[用于比较版本的属性函数](property-functions.md#msbuild-version-comparison-functions)，这些版本具有与语义化版本控制 (SemVer) 兼容的不同规则集。
 
 ## <a name="see-also"></a>请参阅
 

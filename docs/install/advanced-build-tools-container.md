@@ -5,19 +5,19 @@ ms.custom: SEO-VS-2020
 ms.date: 03/25/2020
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: d8b2148dced2d08d04c73091375f91ab37732274
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2860a19592667008f585a4608eab23e0180dd2ac
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868722"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307695"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -27,7 +27,14 @@ ms.locfileid: "99868722"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2022"
+
+>[!IMPORTANT]
+> Visual Studio 2022 目前处于预览阶段，尚未获得在生产环境中使用的[许可](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/)。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
 
 [将生成工具安装到容器](build-tools-container.md)中的示例 Dockerfile 始终使用基于最新 microsoft/windowsservercore 映像和最新 Visual Studio 生成工具安装程序的 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 映像。 如果将此映像发布到 [Docker 注册表](https://azure.microsoft.com/services/container-registry)以供他人进行拉取，则此映像可能适用于许多方案。 但在实际中，更常见的是明确使用的基础映像、下载的二进制文件和安装的工具版本。
 
@@ -153,6 +160,51 @@ ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.ex
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+>[!IMPORTANT]
+> Visual Studio 2022 目前处于预览阶段，尚未获得在生产环境中使用的[许可](https://visualstudio.microsoft.com/license-terms/vs2022-prerelease/)。
+
+```dockerfile
+# escape=`
+
+# Use a specific tagged image. Tags can be changed, though that is unlikely for most images.
+# You could also use the immutable tag @sha256:324e9ab7262331ebb16a4100d0fb1cfb804395a766e3bb1806c62989d1fc1326
+ARG FROM_IMAGE=mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
+FROM ${FROM_IMAGE}
+
+# Restore the default Windows shell for correct batch processing.
+SHELL ["cmd", "/S", "/C"]
+
+# Copy our Install script.
+COPY Install.cmd C:\TEMP\
+
+# Download collect.exe in case of an install failure.
+ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
+
+# Use the latest release channel. For more control, specify the location of an internal layout.
+ARG CHANNEL_URL=https://aka.ms/vs/17/preview/channel
+ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
+
+# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+ADD https://aka.ms/vs/17/preview/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
+RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
+    --installPath C:\BuildTools `
+    --channelUri C:\TEMP\VisualStudio.chman `
+    --installChannelUri C:\TEMP\VisualStudio.chman `
+    --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+    --remove Microsoft.VisualStudio.Component.Windows81SDK
+
+# Define the entry point for the Docker container.
+# This entry point starts the developer command prompt and launches the PowerShell shell.
+ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+```
+
+::: moniker-end
+
 运行以下命令以在当前工作目录中生成映像：
 
 ::: moniker range="vs-2017"
@@ -171,11 +223,19 @@ docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+```shell
+docker build -t buildtools2022:17.0 -t buildtools2022:latest -m 2GB .
+```
+
+::: moniker-end
+
 使用 `--build-arg` 命令行开关选择性地传递某个或同时传递 `FROM_IMAGE` 或 `CHANNEL_URL` 参数，以指定不同的基础映像或内部布局的位置来保持固定的映像。
 
-   > [!TIP]
-   > 有关工作负载和组件的列表，请参阅 [Visual Studio 生成工具组件目录](workload-component-id-vs-build-tools.md)。
-   >
+> [!TIP]
+> 有关工作负载和组件的列表，请参阅 [Visual Studio 生成工具组件目录](workload-component-id-vs-build-tools.md)。
+>
 
 ## <a name="diagnosing-install-failures"></a>诊断安装失败
 
@@ -201,6 +261,22 @@ The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' return
 
 ```shell
 > docker build -t buildtools2019:16.0.28714.193 -t buildtools2019:latest -m 2GB .
+Sending build context to Docker daemon
+
+...
+Step 8/10 : RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache ...
+ ---> Running in 4b62b4ce3a3c
+The command 'cmd /S /C C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe ...' returned a non-zero code: 1603
+
+> docker cp 4b62b4ce3a3c:C:\vslogs.zip "%TEMP%\vslogs.zip"
+```
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+```shell
+> docker build -t buildtools2022:17.0 -t buildtools2022:latest -m 2GB .
 Sending build context to Docker daemon
 
 ...
