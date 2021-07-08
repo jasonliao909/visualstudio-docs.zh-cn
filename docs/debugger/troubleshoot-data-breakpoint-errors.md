@@ -2,7 +2,7 @@
 title: 无法设置数据断点 | Microsoft Docs
 description: 查找在使用“值发生更改时中断”时出现的“无法设置数据断点错误”的说明、解决方案和变通方法。
 ms.custom: SEO-VS-2020
-ms.date: 12/3/2019
+ms.date: 5/19/2020
 ms.topic: error-reference
 f1_keywords:
 - vs.debug.error.unable_to_set_data_breakpoint
@@ -17,25 +17,25 @@ ms.author: waan
 manager: caslan
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e90c3d4af8e568f1bb2e6987c66c7fbc0856c57
-ms.sourcegitcommit: 957da60a881469d9001df1f4ba3ef01388109c86
+ms.openlocfilehash: 73e7e02d90e2a89c81b5e690718c95fe7efe0fb3
+ms.sourcegitcommit: 6e27b1238a8aa704b127eac34f4173e9d56690c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98150452"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110231960"
 ---
 # <a name="troubleshooting-data-breakpoint-errors"></a>数据断点错误疑难解答
 此页面将引导你解决在使用“值发生更改时中断”时出现的常见错误
 
 ## <a name="diagnosing-unable-to-set-data-breakpoint-errors"></a>诊断“无法设置数据断点”错误
 > [!IMPORTANT]
-> .NET Core 3.0 和更高版本中支持托管数据断点。 可以在[此处](https://dotnet.microsoft.com/download)下载最新版本。
+> .NET Core 3.0 及更高版本和 .NET 5.0.3 及更高版本支持托管数据断点。 可以在[此处](https://dotnet.microsoft.com/download)下载最新版本。
 
-下面是使用托管数据断点时可能发生的错误的列表。 它们包含有关发生错误的原因以及解决错误的可能解决方案或解决方法的其他说明。
+下面是使用托管数据断点时可能发生的错误的列表。 其中包含有关发生错误的原因的详细说明以及解决错误的可能解决方案或解决方法。
 
-- “目标进程使用的 .NET 版本不支持数据断点。数据断点需要在 x86 或 x64 上运行的 .NET Core 3.0 及更高版本。”
+- “目标进程使用的 .NET 版本不支持数据断点。数据断点需要在 x86 或 x64 上运行的 .NET Core 3.x 或 .NET 5.0.3 及更高版本。”
 
-  - 从 .NET Core 3.0 开始支持托管数据断点。 在 .NET Framework 以及低于 3.0 的 .NET Core 版本中，当前不支持该功能。 
+  - 从 .NET Core 3.0 开始支持托管数据断点。 .NET Framework、早于 3.0 的 .NET Core 版本或早于 5.0.3 的 .NET 版本目前不支持数据断点。 
     
   - **解决方案**；此错误的解决方案是将项目升级到 .NET Core 3.0。
 
@@ -69,6 +69,11 @@ ms.locfileid: "98150452"
 
   - 仅在非旧版 C# 表达式计算器上才支持数据断点。 
   - **解决方案**；通过转到 `Debug -> Options`，然后在 `Debugging -> General` 下取消选中 `"Use the legacy C# and VB expression evaluators"`，来禁用旧版 C# 表达式计算器。
+
+- “类 X 有一个自定义调试程序视图，它阻止对仅特定于它的数据使用数据断点。”
+  
+  - 仅由目标进程（正在调试的应用程序）创建的内存支持数据断点。 设置数据断点的内存已被标记为可能由 [DebuggerTypeProxy 属性](using-debuggertypeproxy-attribute.md)创建的某个对象或不属于目标进程的其他对象拥有。
+  - 解决方法：展开对象的“原始视图”，而不是展开对象的 DebuggerTypeProxy 视图，然后设置数据断点。 这将保证数据断点不在由 DebuggerTypeProxy 属性创建的对象所拥有的内存上。
 
 ## <a name="data-breakpoint-hardware-limitations"></a>数据断点硬件限制
 

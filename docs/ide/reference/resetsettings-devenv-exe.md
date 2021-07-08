@@ -15,16 +15,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: c7a5b8bacaa7d78be0c7b88bba8e20b416a3c076
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
+ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957993"
+ms.lasthandoff: 06/01/2021
+ms.locfileid: "110724533"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 
-还原 Visual Studio 的默认设置，自动启动 Visual Studio IDE。 此开关视需要将这些设置重置为指定的设置文件。
+还原 Visual Studio 的默认设置，自动启动 Visual Studio IDE。 此开关视需要将这些设置重置为指定的设置文件 (`*.vssettings`)。
 
 默认设置来自在 Visual Studio 首次启动时被选择的配置文件。
 
@@ -41,7 +41,7 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 - *SettingsFile*
 
-  可选。 应用于 Visual Studio 的设置文件的完整路径和文件名。
+  可选。 应用于 Visual Studio 的 `.vssettings` 文件的完整路径和文件名。
 
 - DefaultCollectionSpecifier
 
@@ -59,7 +59,8 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 ## <a name="remarks"></a>备注
 
-如果没有指定 SettingsFile，IDE 使用现有设置打开。
+如果没有指定 SettingsFile，IDE 使用现有设置打开。 
+
 
 ## <a name="example"></a>示例
 
@@ -67,10 +68,14 @@ devenv /ResetSettings [SettingsFile|DefaultCollectionSpecifier]
 
 第二个示例还原 Visual C# 默认配置文件。
 
-```shell
-devenv /resetsettings "%USERPROFILE%\MySettings.vssettings"
+第三个示例也将在应用设置后关闭 Visual Studio。 可以追加 `/Command "File.Exit"`。
 
-devenv /resetsettings CSharp
+```shell
+devenv /ResetSettings "%USERPROFILE%\MySettings.vssettings"
+
+devenv /ResetSettings CSharp
+
+devenv /NoSplash /ResetSettings General /Command Exit 
 ```
 
 ## <a name="see-also"></a>另请参阅

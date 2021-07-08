@@ -1,17 +1,17 @@
 ---
-ms.date: 03/02/2021
+ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
 ms.author: tglee
 author: TerryGLee
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 4e36fe11b5eb604a9b109432047da9a3c26df414
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
+ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750900"
+ms.lasthandoff: 07/02/2021
+ms.locfileid: "113279780"
 ---
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用  。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
@@ -21,15 +21,15 @@ Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-[![Visual Studio 2019 IDE](../media/vs-2019/ide-overview.png)](../media/vs-2019/ide-overview.png#lightbox)
+:::image type="content" source="../media/vs-2019/ide-overview.png" alt-text="Visual Studio IDE 的屏幕截图，其中包含指示关键特性和功能所在位置的标注。" lightbox="../media/vs-2019/ide-overview.png":::
 
 ::: moniker-end
 
 此图像显示 Visual Studio 具有一个打开的项目和若干可能会使用的关键工具窗口：
 
-- 可通过[解决方案资源管理器](../../ide/solutions-and-projects-in-visual-studio.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](../tutorial-projects-solutions.md)，从而帮助整理代码  。
+- 可通过[解决方案资源管理器](../../ide/use-solution-explorer.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)，从而帮助整理代码  。
 
 - [编辑器窗口](../../ide/writing-code-in-the-code-and-text-editor.md)（中心）用于显示文件内容，你可能会在该窗口花费大部分时间。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
 
@@ -39,7 +39,7 @@ Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调
 
 ::: moniker-end
 
-- 利用版本控制技术（如 [Git](https://git-scm.com/) 和 [Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview)），[团队资源管理器](/azure/devops/user-guide/work-team-explorer)（右下方）可让你跟踪工作项并与他人共享代码。
+- 通过 [Git 更改](/visualstudio/version-control/)（右下方），可使用版本控制技术（如 [Git](https://git-scm.com/) 和 [GitHub](https://docs.github.com/github)）跟踪工作项并与他人共享代码。
 
 ## <a name="editions"></a>版本
 
@@ -51,7 +51,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 Visual Studio 适用于 Windows 和 Mac。 [Visual Studio for Mac](/visualstudio/mac/) 的许多功能与 Visual Studio 2019 相同，并针对开发跨平台应用和移动应用进行了优化。 本文重点介绍 Visual Studio 2019 的 Windows 版本。
 
@@ -384,13 +384,13 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
 ::: moniker-end
 
-## <a name="debug-code"></a>调试代码
+## <a name="debug-code&quot;></a>调试代码
 
 编写代码时，需要运行并测试该代码是否存在 bug。 可通过 Visual Studio 的调试系统逐句执行代码，一次执行一条语句，逐步检查变量。 可设置停止在特定行执行代码的断点。 可观察变量的值如何随代码运行而更改等。
 
 通过设置断点，可查看程序处于飞行模式时 `username` 变量的值。
 
-1. 查找显示 `Console.WriteLine($"\nHello {username}!");` 的代码行。 要在此代码行上设置一个断点，即让程序在该行暂停执行，请单击编辑器的最左侧边距。 还可单击代码行上的任意位置，然后按 F9。
+1. 查找显示 `Console.WriteLine($&quot;\nHello {username}!");` 的代码行。 要在此代码行上设置一个断点，即让程序在该行暂停执行，请单击编辑器的最左侧边距。 还可单击代码行上的任意位置，然后按 F9。
 
    此时，最左侧边距中将显示一个红圈，代码突出显示为红色。
 

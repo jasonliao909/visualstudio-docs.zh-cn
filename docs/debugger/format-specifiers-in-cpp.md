@@ -26,12 +26,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 2a3fa99594f42e7e9c3739a8a8d57abf226bc04c
-ms.sourcegitcommit: 66951f064d601b1d7a2253cb9b250380807e12db
+ms.openlocfilehash: 868c02091814fe49ea0224190c7d205e8b67c42b
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/15/2021
-ms.locfileid: "103483188"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112042972"
 ---
 # <a name="format-specifiers-for-c-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的 C++ 格式说明符
 
@@ -104,6 +104,7 @@ int main() {
 |nr|取消“原始视图”项|
 |nvo|仅为数字值显示“原始视图”项|
 |!|原始格式，忽略任何数据类型视图自定义项|\<customized representation>|4|
+|句柄|显示有关 win32 句柄的信息|0x000000000000009c| 显示有关句柄的有用信息，例如线程 ID 等。 |
 
 ::: moniker-end
 

@@ -15,12 +15,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 28451b9bf317c33e1aff52a62247374ea2b6871e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
+ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913877"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111395353"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 
@@ -138,9 +138,9 @@ MSBuild 可基于相同元数据将多个项列表划分为多个批。 这样�
 
 ## <a name="batch-one-item-at-a-time"></a>一次对一个项进行批处理
 
-此外，还可对创建时分配给每个项的常见项元数据执行批处理。 这保证了集合中每个项具有用于批处理的元数据。 `Identity` 元数据值对每个项都唯一，可用于将项列表中的每个项划分为单独的批。 若要获得常见项元数据的完整列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。
+此外，还可对创建时分配给每个项的常见项元数据执行批处理。 这保证了集合中每个项具有用于批处理的元数据。 `Identity` 元数据值可用于将项列表中的每个项划分为单独的批。 若要获得常见项元数据的完整列表，请参阅[常见项元数据](../msbuild/msbuild-well-known-item-metadata.md)。
 
-以下示例演示了如何一次对项列表中的每个项执行批处理。 由于每个项的 `Identity` 元数据值都是唯一的，因此 `ExampColl` 项列表被划分为六个批，其中每个批包含项目列表的一个项。 若 `Text` 属性中存在 `%(Identity)`，则会通知 MSBuild 应执行批处理。
+以下示例演示了如何一次对项列表中的每个项执行批处理。 `ExampColl` 项列表分为六个批，每个批都包含项列表的一个项。 若 `Text` 属性中存在 `%(Identity)`，则会通知 MSBuild 应执行批处理。
 
 ```xml
 <Project
@@ -174,6 +174,35 @@ Identity: 'Item3' -- Items in ExampColl: Item3
 Identity: 'Item4' -- Items in ExampColl: Item4
 Identity: 'Item5' -- Items in ExampColl: Item5
 Identity: 'Item6' -- Items in ExampColl: Item6
+```
+
+但 `Identity` 无法保证是唯一的，其值是 `Include` 属性的评估最终值。 因此，如果多次使用任何 `Include` 属性，则会对它们一起进行批处理。 如以下示例所示，此方法要求 `Include` 属性对于组中每个项都是唯一的。 为了说明这点，请考虑下列代码：
+
+```xml
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Item Include="1">
+      <M>1</M>
+    </Item>
+    <Item Include="1">
+      <M>2</M>
+    </Item>
+    <Item Include="2">
+      <M>3</M>
+    </Item>
+  </ItemGroup>
+
+  <Target Name="Batching">
+    <Warning Text="@(Item->'%(Identity): %(M)')" Condition=" '%(Identity)' != '' "/>
+  </Target>
+</Project>
+```
+
+输出显示前两个项位于同一批中，因为 `Include` 属性对于它们是相同的：
+
+```output
+test.proj(15,5): warning : 1: 1;1: 2
+test.proj(15,5): warning : 2: 3
 ```
 
 ## <a name="filter-item-lists"></a>筛选器项目列表

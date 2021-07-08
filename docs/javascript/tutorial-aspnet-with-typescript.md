@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ce27b8fdd73c1fcc001861a9b1fb7c2e9e4f4058
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616982"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306494"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
@@ -28,9 +28,15 @@ ms.locfileid: "105616982"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -220,7 +226,7 @@ Visual Studio 管理项目中的单个应用程序的文件  。 该项目包括
 1. 按照 [npm 包管理](../javascript/npm-package-management.md#aspnet-core-projects)中的说明将 `package.json` 文件添加到项目。 此操作会向项目添加 npm 支持。
 
    >[!NOTE]
-   > 对于 ASP.NET Core 项目，还可以使用[库管理器](https://docs.microsoft.com/aspnet/core/client-side/libman/?view=aspnetcore-3.1&preserve-view=true)或 yarn（而非 npm）来安装客户端 JavaScript 和 CSS 文件。
+   > 对于 ASP.NET Core 项目，还可以使用[库管理器](/aspnet/core/client-side/libman/)或 yarn（而非 npm）来安装客户端 JavaScript 和 CSS 文件。
 
 1. 在此示例中，将 jQuery 的 TypeScript 定义文件添加到项目。 向 package.json 文件添加以下内容。
 

@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b214452a2eb7a85b4a9baea5e4b4e80a1a71e63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3a301c1bd4758ea08f49036fcf8756c8d7e7c26
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933851"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306444"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -38,8 +38,8 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 如果具有 Visual Studio，表示已经安装了 MSBuild。 若要在没有 Visual Studio 的系统上安装 MSBuild 15，请转到 [Visual Studio 早期版本下载](https://visualstudio.microsoft.com/vs/older-downloads/)，展开“Visual Studio 2017”并选择“下载”按钮 。 如果有 Visual Studio 订阅，请登录并找到下载 Visual Studio 2017 生成工具最新版本的链接。 如果没有 Visual Studio 订阅，仍然可以安装生成工具的最新版本。 在此页上，使用版本选择器切换到 2019 版本的页面，然后按照安装说明进行操作。
 ::: moniker-end
 
-::: moniker range="vs-2019"
-如果具有 Visual Studio，表示已经安装了 MSBuild。 在 Visual Studio 2019 中，它安装在 Visual Studio 安装文件夹下。 对于 Windows 10 上的典型默认安装，MSBuild.exe 位于 MSBuild\Current\Bin 中的安装文件夹下。
+::: moniker range=">=vs-2019"
+如果具有 Visual Studio，表示已经安装了 MSBuild。 在 Visual Studio 2019 及更高版本中，它安装在 Visual Studio 安装文件夹下。 对于 Windows 10 上的典型默认安装，MSBuild.exe 位于 MSBuild\Current\Bin 中的安装文件夹下。
 
 若要在没有 Visual Studio 的系统上安装 MSBuild，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)并向下滚动到“所有下载”，然后展开“Visual Studio 2019 工具” 。 安装 Visual Studio 2019 生成工具（包含 MSBuild），或安装 [.NET Core SDK](/dotnet/core/sdk#acquiring-the-net-core-sdk)。
 

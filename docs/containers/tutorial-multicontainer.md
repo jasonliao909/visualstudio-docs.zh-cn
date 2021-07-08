@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-azure
 ms.topic: tutorial
-ms.openlocfilehash: 412156894658cdb2160574e77ea052e4b194d386
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315974"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112307812"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -21,15 +21,25 @@ ms.locfileid: "107315974"
 ## <a name="prerequisites"></a>先决条件
 
 ::: moniker range="vs-2017"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 安装了“Web 开发”、“Azure 工具”工作负载或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)   
 ::: moniker-end
 
-::: moniker range=">= vs-2019"
+::: moniker range="vs-2019"
+
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
 * 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)   
 * 用于使用 .NET Core 2.2 进行开发的 [.NET Core 2.2 开发工具](https://dotnet.microsoft.com/download/dotnet-core/2.2)
 * 用于使用 .NET Core 3.1 进行开发的 [.NET Core 3 开发工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+* [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2022 预览版](https://visualstudio.microsoft.com/vs/preview/vs2022)  
+* 用于使用 .NET Core 3.1 进行开发的 [.NET Core 3 开发工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
+* 用于使用 .NET 5 进行开发的 [.NET 5 开发工具](https://dotnet.microsoft.com/download/dotnet-core/5.0)。
 ::: moniker-end
 
 ## <a name="create-a-web-application-project"></a>创建 Web 应用程序项目
@@ -44,7 +54,7 @@ ms.locfileid: "107315974"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ![创建 ASP.NET Core Web 应用项目](./media/tutorial-multicontainer/vs-2019/create-web-project1.png)
 
@@ -61,7 +71,7 @@ ms.locfileid: "107315974"
 ::: moniker range="vs-2017"
    ![创建 Web API 项目的屏幕截图](./media/tutorial-multicontainer/docker-tutorial-mywebapi.png)
 ::: moniker-end
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
    ![创建 Web API 项目的屏幕截图](./media/tutorial-multicontainer/vs-2019/create-webapi-project.png)
 ::: moniker-end
 
@@ -192,6 +202,8 @@ ms.locfileid: "107315974"
 ## <a name="next-steps"></a>后续步骤
 
 查看用于[将容器部署到 Azure](/azure/containers) 的选项。
+
+若要更好地控制调试会话期间启动的服务，请了解如何使用 Docker Compose 启动配置文件来配置调试时运行的服务。 请参阅[管理 Docker Compose 的启动配置文件](launch-profiles.md)
 
 ## <a name="see-also"></a>另请参阅
   

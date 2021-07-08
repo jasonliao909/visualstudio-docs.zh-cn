@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-azure
 ms.topic: reference
-ms.openlocfilehash: ed4b2a0dc1dc7a0520bf8e83ab1968a3815196e0
-ms.sourcegitcommit: e12d6cdaeb37564f05361965db2ec8ad0d4f21ad
+ms.openlocfilehash: b3744640aada798179c86cc60d2c8ce7b02ccfaa
+ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/27/2021
-ms.locfileid: "108025860"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "109973474"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 生成属性
 
@@ -155,5 +155,7 @@ services:
 [容器工具生成属性](container-msbuild-properties.md)
 
 [容器工具启动设置](container-launch-settings.md)
+
+[管理 Visual Studio 中 Docker Compose 的启动配置文件](launch-profiles.md)
 
 [MSBuild 保留属性和已知属性](../msbuild/msbuild-reserved-and-well-known-properties.md)

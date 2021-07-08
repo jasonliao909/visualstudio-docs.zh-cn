@@ -2,22 +2,22 @@
 title: 选项，文本编辑器，C#，高级
 description: 了解如何使用 C# 部分中的“高级”页面来修改 C# 的编辑器格式设置、代码重构和 XML 文档注释的设置。
 ms.custom: SEO-VS-2020
-ms.date: 11/13/2020
+ms.date: 06/01/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Outlining
 - VS.ToolsOptionsPages.Text_Editor.CSharp.Advanced
-author: akhera99
+author: mikadumont
 ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: aa202f5c0abc490967a40255332976cdf9dca25a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29f6dd2b4a101132bc7bc19664c51fd5d4b8283e
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959319"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351978"
 ---
 # <a name="options-text-editor-c-advanced"></a>选项，文本编辑器，C#，高级
 
@@ -103,6 +103,10 @@ ms.locfileid: "99959319"
 
    ![用于在 Visual Studio 中安装 NuGet 包的快速操作](media/nuget-lightbulb.png)
 
+- 粘贴时添加缺少的 using 指令
+
+    选择此选项后，将类型粘贴到文件时，`using` 指令将自动添加到代码中。
+
 ## <a name="highlighting"></a>Highlighting
 
 - 突出显示对光标下符号的引用
@@ -129,11 +133,19 @@ ms.locfileid: "99959319"
 
 如果选中这些复选框，可以在代码中的大括号 ({}) 之间显示虚竖线。 然后，就可以轻松查看声明级构造和代码级构造的各个代码块了。
 
-## <a name="editor-help"></a>编辑器帮助
+## <a name="comments"></a>注释
+
+- 为 /// 生成 XML 文档注释
+
+   选中后，在键入 `///` 命令说明后为 XML 文档注释插入 XML 元素。 有关 XML 文档的详细信息，请参阅 [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+
 ::: moniker range=">=vs-2019"
+
+## <a name="inline-hints"></a>内联提示
+
 - 内联参数名称提示 
     
-    如果选择此选项，则会在函数调用中的每个参数之前插入文本、强制转换文本和对象实例化的参数名称提示。  
+    如果选择此项，则会在函数调用中的每个参数之前插入文本、强制转换文本和对象实例化的参数名称提示。  
     
     ![CSharp 的内联参数名称提示](media/inline-parameter-name-hints-csharp.png)
 
@@ -142,10 +154,14 @@ ms.locfileid: "99959319"
     选中后，为具有推断类型和 lambda 参数类型的变量插入类型提示。  
     
     ![C# 的内联类型提示](media/inline-type-hints-csharp.png)
-::: moniker-end
-- 为 /// 生成 XML 文档注释
 
-   选中后，在键入 `///` 命令说明后为 XML 文档注释插入 XML 元素。 有关 XML 文档的详细信息，请参阅 [XML 文档注释（C# 编程指南）](/dotnet/csharp/programming-guide/xmldoc/xml-documentation-comments)。
+## <a name="inheritance-margin"></a>继承边距 
+
+- 如果选择此项，则会向表示代码的实现和替代的边距添加图标。 单击“继承边距”图标将显示可以选择导航到的继承选项。
+
+    ![继承边距](media/inheritance-margin.png)
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

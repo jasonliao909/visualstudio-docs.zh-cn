@@ -1,7 +1,7 @@
 ---
 title: 教程：创建一个简单的 C# 控制台应用程序
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 12f00bedba6078fc5c471d02b92630b49dd35afa
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295619"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390367"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
 
@@ -35,6 +35,12 @@ ms.locfileid: "107295619"
 ::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -71,13 +77,13 @@ ms.locfileid: "107295619"
 
 1. 取消“新建项目”对话框，再从顶部菜单栏中选择“工具”>“获取工具和功能”  。
 
-1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”   。
+1. Visual Studio 安装程序启动。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
@@ -616,7 +622,7 @@ namespace Calculator
 
 :::moniker-end
 
-:::moniker range="vs-2019"
+:::moniker range=">=vs-2019"
 
 继续学习本教程的第二部分：
 

@@ -3,7 +3,7 @@ title: 更新 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步将 Visual Studio 更新到最新版本。
 ms.date: 04/06/2021
-ms.custom: seodec18
+ms.custom: vs-acquisition
 ms.topic: how-to
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
@@ -12,17 +12,17 @@ helpviewer_keywords:
 - change [Visual Studio]
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.ProductUpdates
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 02beb43dede8e38f290ff02febb3b84c53b90f9e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 8414d745b63eb0e9145208dca97ce9f117c5cf2c
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547500"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112387952"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -164,9 +164,9 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ::: moniker range="vs-2019"
 
-建议更新到[最新版本](/visualstudio/releases/2019/release-notes/)的 Visual Studio 2019，以便始终获得最新功能、修复和改进。
+建议更新到[最新版本](/visualstudio/releases/2019/release-notes/)的 Visual Studio，以便始终获得最新功能、修复和改进。
 
-如果尚未安装 Visual Studio 2019，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。 如果当前使用其他版本的 Visual Studio，可以[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)或[卸载以前版本的 Visual Studio](../install/uninstall-visual-studio.md)。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。 如果当前使用其他版本的 Visual Studio，可以[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)或[卸载以前版本的 Visual Studio](../install/uninstall-visual-studio.md)。
 
 > [!IMPORTANT]
 > 若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
@@ -287,9 +287,133 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ::: moniker-end
 
-## <a name="administrator-updates"></a>管理员更新 
+::: moniker range=">=vs-2022"
 
-如果你是集中管理软件安装的组织的一员，则企业管理员可能会使 Visual Studio 在计算机上进行更新。 有关如何控制或配置计算机可接受的更新类型的详细信息，请参阅[使用 Configuration Manager 部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。 
+建议更新到[最新版本](/visualstudio/releases/2022/release-notes/)的 Visual Studio，以便始终获得最新功能、修复和改进。
+
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。 如果当前使用其他版本的 Visual Studio，可以[并行安装 Visual Studio 版本](../install/install-visual-studio-versions-side-by-side.md)或[卸载以前版本的 Visual Studio](../install/uninstall-visual-studio.md)。
+
+> [!IMPORTANT]
+> 若要安装、更新或修改 Visual Studio，必须使用具有管理权限的帐户登录。 有关详细信息，请参阅[用户权限与 Visual Studio](../ide/user-permissions-and-visual-studio.md)。
+>
+> [!NOTE]
+> 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[更新 Visual Studio for Mac](/visualstudio/mac/update)。
+
+下面是 Visual&nbsp;Studio&nbsp;2022 的更新方法。
+
+## <a name="use-the-visual-studio-installer"></a>使用 Visual Studio 安装程序
+
+1. 在计算机上找到 Visual Studio 安装程序。
+
+   在 Windows“开始”菜单中，可以搜索“安装程序”。
+
+   ![Visual Studio 安装程序](media/vs-2019/visual-studio-installer.png "搜索 Visual Studio 安装程序")
+
+   可能需要先更新安装程序，然后才能继续操作。 如果是这样，请按照提示操作。
+
+1. 在安装程序中，查找已安装的 Visual Studio 版本。
+
+   例如，如果以前安装了 Visual&nbsp;Studio Community&nbsp;2022，并且具有该版本的更新，则安装程序中将显示“更新可用”消息。
+
+     ![选择要更新的 Visual Studio 2019 版本](media/vs-2019/vs-installer-update-visual-studio-community.png "选择要更新的 Visual Studio 2019 版本")
+
+1. 选择“更新”，以安装更新。
+
+    ![选择“更新”按钮来安装更新](media/vs-2019/vs-installer-choose-update-visual-studio-community.png "选择“更新”按钮来安装更新")
+
+1. 更新完成后，系统可能会要求你重新启动计算机。 如果是这样，请执行该操作，然后像往常一样启动 Visual Studio。
+
+   如果系统不要求你重新启动计算机，请选择“启动”以从安装程序启动 Visual Studio。
+
+    ![选择“启动”按钮启动 Visual Studio](media/vs-2019/choose-launch-visual-studio-community.png "选择“启动”按钮启动 Visual Studio")
+
+## <a name="use-the-ide"></a>使用 IDE
+
+可以查看更新，然后使用 Visual Studio 2022 中的菜单栏或搜索框安装更新。
+
+### <a name="open-visual-studio"></a>打开 Visual Studio
+
+1. 在 Windows“开始”菜单上，选择“Visual Studio 2022”。
+
+    ![打开 Visual Studio 2022](media/vs-2019/vs-installer-visual-studio-2019.png "从 Windows 打开 Visual Studio 2019")
+
+1. 在“开始使用”下，选择任意选项以打开 IDE。
+
+    ![打开 Visual Studio 安装程序](media/vs2019-choose-option-from-get-started.png "打开 Visual Studio 安装程序")
+
+    Visual Studio 随即打开。 在 IDE 中，将显示“Visual Studio 2022 更新”消息。
+
+    ![IDE 中的“Visual Studio 2019 更新”消息](media/vs-2019/update-visual-studio-ide-message.png "IDE 中的“Visual Studio 2019 更新”消息")
+
+1. 在“Visual Studio 2022 更新”消息中，选择“查看详细信息” 。
+
+   ![在“Visual Studio 2019 IDE 更新”消息中，选择“查看详细信息”按钮](media/vs-2019/update-visual-studio-ide-view-details.png "在“Visual Studio 2019 更新”消息中，选择“查看详细信息”按钮")
+
+1. 在“已下载更新并准备安装”对话框中，选择“更新”。
+
+     ![在“已下载更新并准备安装”对话框中，选择“更新”按钮](media/vs-2019/update-ready-install-visual-studio-community-from-ide.png "在“已下载更新并准备安装”对话框中，选择“更新”按钮")
+
+   Visual Studio 将更新、关闭然后重新打开。
+
+### <a name="in-visual-studio"></a>在 Visual Studio 中
+
+1. 在菜单栏上，选择“帮助”，然后选择“检查更新”。
+
+     ![从“帮助”菜单中选择“检查更新”](media/vs-2019/vs-ide-check-updates-help-menu.png "从“帮助”菜单中选择“检查更新”")
+
+    > [!NOTE]
+    > 还可以使用 IDE 中的搜索框来检查更新。 按 Ctrl+Q，键入“检查更新”，然后选择匹配的搜索结果。
+
+1. 在“更新可用”对话框中，选择“更新”。
+
+     ![在“可用更新”对话框中选择“更新”按钮](media/vs-2019/update-visual-studio-community-from-ide.png "在“可用更新”对话框中选择“更新”按钮")
+
+   Visual Studio 将更新、关闭然后重新打开。
+
+## <a name="use-the-notifications-hub"></a>使用“通知”中心
+
+1. 在 Visual Studio 中，保存所做的工作。
+
+1. 从 Visual Studio IDE 的右下角选择通知图标，以打开“通知”中心。
+
+   ![Visual Studio IDE 中的通知图标](media/vs-2019/notification-bar.png "Visual Studio IDE 中的通知图标")
+
+1. 在“通知中心”中，选择要安装的更新，然后选择“查看详细信息”。
+
+     ![Visual Studio 2019 中的通知中心](media/vs-2019/notification-hub-update.png "Visual Studio 2019 中的通知中心")
+
+      > [!TIP]
+      > Visual Studio 2022 版本的更新是累积的，因此始终选择安装具有最新版本号的版本。
+
+1. 在“更新可用”对话框中，选择“更新”。
+
+   Visual Studio 将更新、关闭然后重新打开。
+
+## <a name="customize-update-settings"></a>自定义更新设置
+
+可以通过几种不同的方式在 Visual Studio 中自定义更新设置，比如更改安装模式和选择自动下载。
+
+有两种安装模式可供选择：
+
+* **在下载时安装**
+* **全部下载后再安装**
+
+还可以选择“自动下载更新”设置，该设置允许在计算机处于空闲状态时下载更新。
+
+以下是操作方法：
+
+1. 在菜单栏上，依次选择“工具”>“选项”。
+
+2. 展开“环境”，然后选择“生产更新”。
+
+    ![Visual Studio 中的更新设置](media/vs-2019/update-settings-options.png)
+
+3. 选择安装模式和 Visual Studio 更新所需的自动下载选项。
+::: moniker-end
+
+## <a name="administrator-updates"></a>管理员更新
+
+如果你是集中管理软件安装的组织的一员，则企业管理员可能会使 Visual Studio 在计算机上进行更新。 有关如何控制或配置计算机可接受的更新类型的详细信息，请参阅[使用 Configuration Manager 部署 Visual Studio 更新](../install/applying-administrator-updates.md#using-configuration-manager-to-deploy-visual-studio-updates)。
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

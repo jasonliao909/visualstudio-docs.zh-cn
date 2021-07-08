@@ -1,18 +1,15 @@
 ---
-title: 了解有关解决方案和项目的信息
+title: 什么是 Visual Studio 解决方案和项目？
 description: 了解 Visual Studio 项目和解决方案、如何从模板创建新项目，以及如何在解决方案资源管理器中查看和管理项目。
 ms.custom: SEO-VS-2020, contperf-fy21q2
 ms.date: 12/31/2020
 ms.topic: conceptual
 f1_keywords:
-- vs.addnewitem
-- vs.addnewsolutionitem
 - vs.openproject
 - vs.addexistingitem
 - vs.addexistingsolutionitem
 - vs.environment.projects
 - vs.environment.solutions
-- VS.SolutionExplorer
 - VS.SolutionExplorer.Solutions
 helpviewer_keywords:
 - solutions [Visual Studio]
@@ -22,16 +19,16 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 473c3ca0e4a9998d6a320e384bf39b4b5e037085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878495"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112924963"
 ---
-# <a name="solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目
+# <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目有哪些？
 
-本页介绍了 Visual Studio 中的项目和解决方案的概念 。 它还简要介绍了“解决方案资源管理器”工具窗口以及如何创建新项目。
+在本文中，你将了解 Visual Studio 中的项目和解决方案 。 它还简要介绍了“解决方案资源管理器”工具窗口以及如何创建新项目。
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中的项目和解决方案](/visualstudio/mac/projects-and-solutions)。
@@ -92,9 +89,9 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-![Visual Studio 2019 中包含两个项目的解决方案资源管理器的屏幕截图。](../ide/media/solution-explorer.png)
+![Visual Studio 中包含两个项目的解决方案资源管理器的屏幕截图。](../ide/media/solution-explorer.png)
 
 “解决方案资源管理器”顶部的工具栏上带有按钮，可用于从解决方案视图切换到文件夹视图、筛选挂起的更改、显示所有文件、折叠所有节点、查看[属性](managing-project-and-solution-properties.md)页、在[代码编辑器](writing-code-in-the-code-and-text-editor.md)中预览代码等。
 

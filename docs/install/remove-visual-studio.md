@@ -15,23 +15,23 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 751f87075d4e9dcbb7daa94f39a2f38c5083fb3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5af0cf31d3a53b12910ea8108c93a99cbaf3e87f
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878443"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306951"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
-如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可运行 `InstallCleanup.exe` 工具，以删除 Visual Studio 2017 或 Visual Studio 2019 的所有已安装实例的安装文件和产品信息。
+如果遇到灾难性错误，并且无法修复或卸载 Visual Studio，可运行 `InstallCleanup.exe` 工具，以删除 Visual Studio 2017、Visual Studio 2019 或 Visual Studio 2022 的所有已安装实例的安装文件和产品信息。
 
 > [!WARNING]
 > InstallCleanup 工具仅作为修复或卸载失败时在不得已情况下采用的一种方法  。 此工具可能会从其他 Visual Studio 安装或其他产品中卸载功能，可能还需要修复或重新安装这些功能。
@@ -40,9 +40,9 @@ ms.locfileid: "99878443"
 
 可以将以下任一命令行开关与 `InstallCleanup.exe` 工具结合使用：
 
-| 开关 | 行为 |
-| ------ | -------- |
-| `-i`   | 如果没有传递其他开关，则此开关为默认值。 它仅删除主安装目录和产品信息。 如果打算在运行 `InstallCleanup.exe` 工具后重新安装相同版本的 Visual Studio，则使用此开关。 |
+| 开关 | 行为                                                                                                                                                                                                                                                                                                                 |
+|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `-i`   | 如果没有传递其他开关，则此开关为默认值。 它仅删除主安装目录和产品信息。 如果打算在运行 `InstallCleanup.exe` 工具后重新安装相同版本的 Visual Studio，则使用此开关。                                                              |
 | `-f`   | 此开关删除在安装目录外安装的主安装目录、产品信息和大部分其他功能，这些功能也可能与其他 Visual Studio 安装或其他产品共享。 如果打算删除 Visual Studio 并且后来不重新安装，则使用此开关。 |
 
 以下是运行 `InstallCleanup.exe` 工具的方法：
@@ -53,7 +53,7 @@ ms.locfileid: "99878443"
    * 右键单击“命令提示符”  ，然后选择“以管理员身份运行”  。
 1. 输入 `InstallCleanup.exe` 工具的完整路径，并添加所需的命令行开关。 默认情况下，此工具的路径如下所示。 使用双引号将包含空格的命令括起来：
 
-   ```
+   ```shell
    "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
    ```
 

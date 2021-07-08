@@ -10,12 +10,12 @@ manager: jmartens
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 6935c2f37f75f0318ec9402c3fcd0ff763555032
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
+ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296009"
+ms.lasthandoff: 06/26/2021
+ms.locfileid: "112975671"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何将 Visual Studio 与需要多重身份验证的帐户一起使用
 
@@ -68,11 +68,16 @@ ms.locfileid: "107296009"
 
 ## <a name="how-to-opt-out-of-using-a-specific-azure-active-directory-tenant-in-visual-studio"></a>如何在 Visual Studio 中选择退出使用特定的 Azure Active Directory 租户
 
-Visual Studio 2019 16.6 版能够更灵活地筛选特定租户，从而将其隐藏在 Visual Studio 中。 筛选出特定租户后，无需再向该租户进行身份验证，但这也意味着你将无法访问任何关联资源。 
+Visual Studio 2019 16.6 版能够灵活地筛选掉租户（单独或全局），从而有效地对 Visual Studio 隐藏它们。 筛选出特定租户后，无需再向该租户进行身份验证，但这也意味着你将无法访问任何关联资源。
 
 当你有多个租户并且想要通过面向特定的子集来优化开发环境时，此功能很有用。 在无法验证特定 CA/MFA 策略的情况下，此功能也很有用，因为你可以筛选出违规的租户。 
 
-### <a name="how-to-filter-out-a-tenant"></a>如何筛选出租户
+### <a name="how-to-filter-out-all-tenants"></a>如何筛选掉所有租户
+若要全局筛选掉所有租户，请打开“帐户设置”对话框（“文件”>“帐户设置”），然后取消选中“在所有 Azure Active Directory 中进行身份验证”复选框 。
+
+取消选中该选项可以确保只对帐户的默认租户进行身份验证。 这也意味着你无法访问任何与你的帐户在其中充当来宾的其他租户关联的任何资源。
+
+### <a name="how-to-filter-out-individual-tenants"></a>如何筛选掉单个租户
 要筛选与你的 Visual Studio 帐户关联的租户，请打开“帐户设置”对话框（“文件”>“帐户设置…”）并单击“应用筛选器” 。 
 </br>
 </br>

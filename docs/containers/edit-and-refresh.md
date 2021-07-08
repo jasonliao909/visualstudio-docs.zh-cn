@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 07/25/2019
 ms.technology: vs-azure
-ms.openlocfilehash: 3eafb6f3ef345da4316fdbe5d6b96a25d7dc90a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867628"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306379"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 
@@ -38,6 +38,12 @@ Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地�
 ::: moniker range="vs-2019"
 
 * 安装了 Web 开发工作负荷的 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+* 安装了 Web 开发工作负载的 [Visual Studio 2022 预览版]()
 
 ::: moniker-end
 
@@ -132,20 +138,20 @@ Docker 容器可用于 .NET Framework 和 .NET Core 项目。 请看以下两个
 
    ![显示 Visual Studio 中 Index.cshtml.cs 的部分代码的屏幕截图，其中在以黄色突出显示的代码行的左侧设置了一个断点。](media/edit-and-refresh/breakpoint.png)
 
-## <a name="create-a-net-framework-console-app"></a>创建 .NET Framework 控制台应用
+## <a name="create-a-net-framework-console-app&quot;></a>创建 .NET Framework 控制台应用
 
 使用 .NET Framework 控制台应用项目时，不支持在没有业务流程的情况下添加 Docker 支持的方式。 即使仅使用单个 Docker 项目，你仍可以使用以下过程。
 
 1. 创建新的 .NET Framework 控制台应用项目。
 1. 在解决方案资源管理器中，右键单击项目节点，然后选择“添加” > “容器业务流程支持” 。  在出现的对话框中，选择“Docker Compose”。 将 Dockerfile 添加到项目中，并添加一个包含相关支持文件的 Docker Compose 项目。
 
-### <a name="debug-with-breakpoints"></a>使用断点进行调试
+### <a name=&quot;debug-with-breakpoints&quot;></a>使用断点进行调试
 
 1. 在解决方案资源管理器中，打开 Program.cs。
 2. 将 `Main` 方法的内容替换为以下代码：
 
    ```csharp
-       System.Console.WriteLine("Hello, world!");
+       System.Console.WriteLine(&quot;Hello, world!");
    ```
 
 3. 在代码行的左侧设置一个断点。

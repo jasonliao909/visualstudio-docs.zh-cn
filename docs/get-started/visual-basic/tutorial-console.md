@@ -1,7 +1,7 @@
 ---
 title: 教程：Visual Basic 入门
 description: 了解如何在 Visual Studio 中逐步创建 Visual Basic 控制台应用。
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition,  get-started
 ms.date: 02/10/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 075c84433e5784106bbe1f9c6ac6f58d9613bfdb
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295489"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390706"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -34,6 +34,12 @@ ms.locfileid: "107295489"
 ::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -73,12 +79,12 @@ ms.locfileid: "107295489"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
 
-1. 打开 Visual Studio 2019。
+1. 打开 Visual Studio。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
@@ -146,7 +152,7 @@ ms.locfileid: "107295489"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在 WhatIsYourName 项目中，立即在 `Sub Main(args As String())` 行后的左括号和 `End Sub` 行之间，输入以下 Visual Basic 代码：
 
@@ -208,7 +214,7 @@ ms.locfileid: "107295489"
 
 ::: moniker-end 
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在“开始”窗口上，选择“创建新项目”。 
 

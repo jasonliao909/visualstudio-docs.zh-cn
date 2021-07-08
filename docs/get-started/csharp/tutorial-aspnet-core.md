@@ -2,8 +2,8 @@
 title: 教程：C# 和 ASP.NET Core 入门
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步创建 ASP.NET Core Web 应用。
-ms.custom: seodec18, get-started
-ms.date: 02/12/2021
+ms.custom: vs-acquisition, get-started
+ms.date: 06/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,40 +16,41 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a86b7273a123a5c9ed0519caf2166127c090d16f
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 25840b820a92925c3d7434d0c76b0138b533b2dc
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296919"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112388108"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
 在这一使用 Visual Studio 的 C# 开发和 ASP.NET Core 的教程中，你将创建 C# ASP.NET Core Web 应用、对其进行更改、探索 IDE 的一些功能，然后运行该应用。
 
-## <a name="before-you-begin"></a>在开始之前
+## <a name="prerequisites"></a>先决条件
 
-### <a name="install-visual-studio"></a>安装 Visual Studio
+1. 安装 Visual Studio
+   ::: moniker range="vs-2017"
+   
+   如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+   
+   ::: moniker-end
+   
+   ::: moniker range="vs-2019"
+   
+   如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+   
+   ::: moniker-end
 
-::: moniker range="vs-2017"
+   ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
+   如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
-::: moniker-end
+   ::: moniker-end
 
-::: moniker range="vs-2019"
+1. 更新 Visual Studio - 如果已经安装 Visual Studio，请确保运行的是最新版本。 要详细了解如何更新安装，请参阅[将 Visual Studio 更新到最新版本](../../install/update-visual-studio.md)页面。
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
-
-::: moniker-end
-
-### <a name="update-visual-studio"></a>更新 Visual Studio
-
-如果已经安装 Visual Studio，请确保运行的是最新版本。 要详细了解如何更新安装，请参阅[将 Visual Studio 更新到最新版本](../../install/update-visual-studio.md)页面。
-
-### <a name="choose-your-theme-optional"></a>选择主题（可选）
-
-本教程包含使用深色主题的屏幕截图。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
+1. 选择主题（可选）- 本教程包含使用深色主题的屏幕截图。 你可以访问[个性化设置 Visual Studio IDE 和编辑器](../../ide/quickstart-personalize-the-ide.md)页，以了解具体方法。
 
 ## <a name="create-a-project"></a>创建项目
 
@@ -102,7 +103,7 @@ ms.locfileid: "107296919"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 1. 在“开始”窗口上，选择“创建新项目”。
 

@@ -2,22 +2,22 @@
 title: C# IntelliSense
 description: 了解一些可以在对 C# 项目进行编码时使用的 IntelliSense 功能。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 06/01/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - C#, IntelliSense
 - IntelliSense [C#]
-author: TerryGLee
-ms.author: tglee
+author: mikadumont
+ms.author: midumont
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b7e67c3a00a427a9f3cd6167af494484a02cc3f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
+ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99862058"
+ms.lasthandoff: 06/03/2021
+ms.locfileid: "111351950"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 
@@ -101,6 +101,10 @@ IntelliSense 会记住最近在自动完成对象名称的[列表成员](../ide/
 ![添加 using、快速操作展开图像](../ide/media/addusing-quickaction.png)
 
 单击错误灯泡图标，然后选择“using System.Xml;”自动添加 using 指令。
+
+### <a name="add-missing-using-directives-on-paste"></a>粘贴时添加缺少的 using 指令
+
+将类型粘贴到代码文件时，IntelliSense 可以自动将缺少的 `using` 指令添加到代码中。 将类型粘贴到文件时，此功能通过自动执行添加缺少的 using 指令的任务来节省时间。 在“工具” > “选项” > “文本编辑器” > “C#”或“基本” > “高级”中启用此功能，并选择“粘贴时添加缺少的 using 指令”      。
 
 ### <a name="remove-and-sort-usings"></a>对 Using 进行删除和排序
 

@@ -16,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c37ccb9c6dce1f6b20b8ade317e8135462c65011
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: b10fc1adbb0b4a6e053549749ea90acf3919d0c6
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800874"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602197"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 
@@ -31,9 +31,9 @@ Visual Studio 2017 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
-Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
+Visual Studio 2019 和更高版本经过精心设计，可在各种网络和计算机配置中良好运行。 虽然我们建议你试用 [Visual Studio Web 安装程序](https://visualstudio.microsoft.com/downloads)（这是一个小巧文件，可及时提供最新修补程序和功能），但我们知道对你而言这也许并不可行。
 
 ::: moniker-end
 
@@ -52,7 +52,7 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 下载 Web 安装程序后，从 Visual Studio 安装程序中选择新的“全部下载后再安装”选项。 然后，继续安装。
 
@@ -72,7 +72,7 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 下载小型引导程序文件后，使用命令行创建本地缓存。 然后，使用本地缓存安装 Visual Studio。
 
@@ -84,40 +84,60 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker range="vs-2017"
 
-若要获取 Visual Studio 2017 版本 15.9 的最新引导程序，请转到 [Visual Studio 早期版本](https://visualstudio.microsoft.com/vs/older-downloads/)页，并下载以下引导程序文件之一： 
+若要获取 Visual Studio 2017 版本 15.9 的最新引导程序，请转到 [Visual Studio 早期版本](https://visualstudio.microsoft.com/vs/older-downloads/)页，并下载以下引导程序文件之一：
 
-| 版本 | Filename |
-|-------------|-----------------------|
-|Visual Studio Professional 2017 版本 15.9 | vs_professional.exe |
-|Visual Studio Enterprise 2017 版本 15.9 | vs_enterprise.exe |
-|Visual Studio 生成工具 2017 版本 15.9  | vs_buildtools.exe |
+| 版本                                      | Filename            |
+|----------------------------------------------|---------------------|
+| Visual Studio Professional 2017 版本 15.9 | vs_professional.exe |
+| Visual Studio Enterprise 2017 版本 15.9   | vs_enterprise.exe   |
+| Visual Studio 生成工具 2017 版本 15.9  | vs_buildtools.exe   |
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
-首先从 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版本](https://docs.microsoft.com/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序，以找到所选版本的 Visual Studio。 安装程序文件或引导程序将是以下项之一，或与之类似：
+首先从 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2019 版本](/visualstudio/releases/2019/history#installing-an-earlier-release)页下载 Visual Studio 2019 引导程序，以找到所选版本的 Visual Studio。 安装程序文件或引导程序将是以下项之一，或与之类似：
 
-| 版本                    | 文件                                                                    |
-|----------------------------|-------------------------------------------------------------------------|
+| 版本                         | 文件                                                                                                                                                                                                                               |
+|---------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Visual Studio 2019 Community    | [vs_community.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=community&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)       |
 | Visual Studio 2019 Professional | [vs_professional.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=professional&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019) |
 | Visual Studio 2019 Enterprise   | [vs_enterprise.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=enterprise&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
-| Visual Studio 2019 生成工具   | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+| Visual Studio 2019 生成工具  | [vs_buildtools.exe](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=buildtools&rel=16&utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=offline+install&utm_content=download+vs2019)     |
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+> 发布的 Visual Studio 2022 版尚不可用，以下引导程序适用于 Visual Studio 2022 预览版。
+>首先从 [Visual Studio 下载页](https://aka.ms/vs2022preview)下载 Visual Studio 2022 引导程序。
+
+| 版本                         | 下载                                                            |
+|---------------------------------|---------------------------------------------------------------------|
+| Visual Studio 2022 Professional | [vs_professional.exe](https://aka.ms/vs/17/pre/vs_professional.exe) |
+| Visual Studio 2022 Enterprise   | [vs_enterprise.exe](https://aka.ms/vs/17/pre/vs_enterprise.exe)     |
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 内部版本号和发布日期](visual-studio-build-numbers-and-release-dates.md)页。
+>如果以前下载过引导程序文件，并且想要验证其版本，操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 内部版本号和发布日期](/visual-studio-build-numbers-and-release-dates.md)页。
 
 ::: moniker-end
 
 ::: moniker range="vs-2019"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2019 版本](https://docs.microsoft.com/visualstudio/releases/2019/history)页。
+>如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2019 版本](/visualstudio/releases/2019/history)页。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+>[!TIP]
+>如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/history)页。
 
 ::: moniker-end
 
@@ -132,25 +152,25 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 - 对于 .NET Web 和.NET 桌面开发，请运行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
     ```
 
 - 对于 .NET 桌面和 Office 开发，请运行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.Office --includeOptional --lang en-US
     ```
 
 - 对于 C++ 桌面开发，请运行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.NativeDesktop --includeRecommended --lang en-US
     ```
 
 - 若要创建包含所有功能的完整本地布局（仅限英文版）（耗时将很长，因为我们提供的功能非常多！），请运行：
 
-   ```cmd
+   ```shell
     vs_enterprise.exe --layout c:\vslayout --lang en-US
     ```
 
@@ -161,10 +181,10 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
    > [!NOTE]
-   > 完整的 Visual Studio 布局至少需要 35 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2019/system-requirements/)。
+   > 完整的 Visual Studio 布局至少需要 41 GB 磁盘空间。 有关详细信息，请参阅[系统需求](/visualstudio/releases/2019/system-requirements/)。
 
 ::: moniker-end
 
@@ -174,13 +194,13 @@ Visual Studio 2019 经过精心设计，可在各种网络和计算机配置中�
 
 例如，如果使用以下命令创建了本地安装缓存：
 
-```cmd
+```shell
 vs_enterprise.exe --layout c:\vslayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional --lang en-US
 ```
 
 然后使用此命令运行安装：
 
-```cmd
+```shell
 c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.ManagedDesktop --add Microsoft.VisualStudio.Workload.NetWeb --add Component.GitHub.VisualStudio --includeOptional
 ```
 
@@ -190,7 +210,7 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 > [!NOTE]
 > 如果你遇到签名无效的错误，则必须[安装更新的证书](install-certificates-for-visual-studio-offline.md)。 在脱机缓存中打开证书文件夹。 双击每个证书文件，然后单击完成证书管理器向导。 如果要求输入密码，请将密码留空。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 > [!TIP]
 > 对于脱机安装，如果收到一条错误消息，指出“找不到与以下参数匹配的项目”，请确保将 `--noweb` 开关用于版本 16.3.5 或更高版本。
 
@@ -198,22 +218,22 @@ c:\vslayout\vs_enterprise.exe --noweb --add Microsoft.VisualStudio.Workload.Mana
 
 ### <a name="list-of-language-locales"></a>语言区域设置列表
 
-| **语言-区域设置** | **语言** |
-| ----------------------- | --------------- |
-| cs-CZ | 捷克语 |
-| de-DE | 德语 |
-| zh-CN | 英语 |
-| es-ES | 西班牙语 |
-| fr-FR | 法语 |
-| it-IT | 意大利语 |
-| ja-JP | 日语 |
-| ko-KR | 韩语 |
-| pl-PL | 波兰语 |
-| pt-BR | 葡萄牙语 - 巴西 |
-| ru-RU | 俄语 |
-| tr-TR | 土耳其语 |
-| zh-CN | 简体中文 |
-| zh-TW | 繁体中文 |
+| **语言-区域设置** | **语言**          |
+|---------------------|-----------------------|
+| cs-CZ               | 捷克语                 |
+| de-DE               | 德语                |
+| zh-CN               | 英语               |
+| es-ES               | 西班牙语               |
+| fr-FR               | 法语                |
+| it-IT               | 意大利语               |
+| ja-JP               | 日语              |
+| ko-KR               | 韩语                |
+| pl-PL               | 波兰语                |
+| pt-BR               | 葡萄牙语 - 巴西   |
+| ru-RU               | 俄语               |
+| tr-TR               | 土耳其语               |
+| zh-CN               | 简体中文  |
+| zh-TW               | 繁体中文 |
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 

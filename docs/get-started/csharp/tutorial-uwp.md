@@ -1,8 +1,8 @@
 ---
-title: 使用 Visual Studio 和 C# 创建 UWP 应用
+title: 教程：使用 Visual Studio 和 C# 创建 UWP 应用
 description: 使用 XAML 和 C# 在 Visual Studio 中创建 UWP 应用
 titleSuffix: ''
-ms.custom: seodec18, get-started, SEO-VS-2020
+ms.custom: vs-acquisition, get-started, SEO-VS-2020
 ms.date: 09/20/2019
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e68039e02a6181ef7970fdc6a1b3bd6ad173093
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 2e89c58e3c0dca2b5d009a592d3f242646339f8f
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295632"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390289"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教程：在 Visual Studio 中使用 XAML 和 C#35 创建第一个通用 Windows 平台应用程序；
 

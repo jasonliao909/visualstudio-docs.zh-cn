@@ -9,12 +9,12 @@ monikerRange: '>=vs-2019'
 manager: jmartens
 author: ghogen
 ms.author: ghogen
-ms.openlocfilehash: 1709785c63bd4fbcd702fbcacfe59dddcb71d1b3
-ms.sourcegitcommit: 0135fc6ffa38995cc9e6ab05fa265758890d2e15
+ms.openlocfilehash: 838589e0dd81232de25b88989d621a07fb22f972
+ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107526161"
+ms.lasthandoff: 06/12/2021
+ms.locfileid: "112043050"
 ---
 # <a name="how-bridge-to-kubernetes-works"></a>Kubernetes 桥接的工作原理
 
@@ -52,6 +52,9 @@ Bridge to Kubernetes 与群集建立连接时会执行以下操作：
 
 > [!NOTE]
 > 在连接到群集期间（加上额外的 15 分钟），Bridge to Kubernetes 将使用本地计算机上的管理员权限来运行名为 EndpointManager 的进程。
+
+> [!NOTE]
+> 你可以对多个服务进行并行调试，但是需要启动与要调试的服务一样多的 Visual Studio 实例。 确保服务在本地侦听不同的端口，然后单独对其进行配置和调试。 此场景下不支持隔离。
 
 ## <a name="additional-configuration-with-kuberneteslocalprocessconfigyaml"></a>KubernetesLocalProcessConfig.yaml 的其他配置
 

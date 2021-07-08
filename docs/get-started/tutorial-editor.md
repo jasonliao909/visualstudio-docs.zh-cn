@@ -4,6 +4,7 @@ description: 了解如何使用 Visual Studio 中的代码编辑器向文件添�
 ms.date: 11/30/2017
 ms.technology: vs-ide-general
 ms.custom:
+- vs-acquisition
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
@@ -14,12 +15,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: f76eb5ba3ccab85a4cf6c8ca5ad4a8fa3e021f47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0ce656c43dd04ab91bd3fd34dcd01dbad27cc644
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951207"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112386444"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 
@@ -36,6 +37,13 @@ ms.locfileid: "99951207"
 
 > [!TIP]
 > 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+> [!TIP]
+> 如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 

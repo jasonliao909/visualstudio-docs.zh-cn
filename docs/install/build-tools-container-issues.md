@@ -5,19 +5,19 @@ ms.date: 02/18/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 338d7a19bf613ee2b2432fba6b635cf0c46eb008
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a56d820805fa97f3672480c063ebfcc0fdc96fb6
+ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868642"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113046087"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知问题
 
@@ -29,7 +29,7 @@ ms.locfileid: "99868642"
 
 ::: moniker range="vs-2017"
 
-* 无法将 Visual Studio 安装到基于映像 microsoft/windowsservercore:10.0.14393.1593 的容器。 标记为 10.0.14393 之前或之后的 Windows 版本的映像应该能正常工作。
+* 无法将 Visual Studio 安装到基于映像 mcr.microsoft.com/windows/servercore:10.0.14393.1593 的容器。 标记为 10.0.14393 之前或之后的 Windows 版本的映像应该能正常工作。
 
 * 无法安装 10.0.14393 或更早的 Windows SDK 版本。 无法安装某些程序包，而依赖这些程序包的工作负载也无法正常工作。
 
@@ -38,7 +38,7 @@ ms.locfileid: "99868642"
 * 生成映像时传递 `-m 2GB`（或更多）。 某些工作负载安装时要求内存大于默认的 1 GB。
 * 将 Docker 配置为使用大于默认 20 GB 的磁盘。
 * 在命令行上传递 `--norestart`。 本文撰写之时，尝试从 Windows 容器内重新启动容器会向主机返回 `ERROR_TOO_MANY_OPEN_FILES`。
-* 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 例如，使用 MSBuild 生成时可能会看到与以下类似的错误：
+* 如果映像直接基于 mcr.microsoft.com/windows/servercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.7.1](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 例如，使用 MSBuild 生成时可能会看到与以下类似的错误：
 
   > C:\BuildTools\MSBuild\15.0\bin\Roslyn\Microsoft.CSharp.Core.targets(84,5)：错误 MSB6003：无法运行指定的任务可执行文件“csc.exe”。 无法加载文件或程序集“System.IO.FileSystem, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a”或某个依赖项。 系统找不到指定的文件。
 

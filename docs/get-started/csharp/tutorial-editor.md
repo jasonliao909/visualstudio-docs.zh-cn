@@ -1,7 +1,7 @@
 ---
-title: C# 开发人员编辑功能简介
+title: 教程：适用于 C# 开发人员的编辑功能
 description: 这一 10 分钟的 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 C# 代码。
-ms.custom: seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
@@ -12,12 +12,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8724fcb717953f3897bab092eb3895e228e10c60
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a6b01e9c26ea816e05a1d2186d904bdb080f098
+ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909230"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112390250"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>了解如何将代码编辑器用于 C\#
 
@@ -32,8 +32,13 @@ ms.locfileid: "99909230"
 
 ::: moniker range="vs-2019"
 
-> [!TIP]
-> 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
+
+::: moniker-end
+
+::: moniker range="vs-2022"
+
+如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 

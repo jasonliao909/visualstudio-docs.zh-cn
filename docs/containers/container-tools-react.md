@@ -8,12 +8,12 @@ ms.author: ghogen
 ms.date: 02/21/2021
 ms.technology: vs-azure
 ms.topic: quickstart
-ms.openlocfilehash: 7a2a9e7c8b2c53dcee7f11d4b0b795b66ab80a80
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
+ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684335"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112602023"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -26,7 +26,7 @@ ms.locfileid: "101684335"
 * 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET Core 跨平台开发”工作负载的 [Visual Studio 2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)  
 * 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 对于 Windows 容器、Windows 10 版本 1903 或更高版本，使用本文中引用的 Docker 映像。
+* 对于 Windows 容器、Windows 10 版本 1809 或更高版本，使用本文中引用的 Docker 映像。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
@@ -34,7 +34,7 @@ ms.locfileid: "101684335"
 * 用于使用 .NET Core 3.1 进行开发的 [.NET Core 3.1 开发工具](https://dotnet.microsoft.com/download/dotnet-core/3.1)。
 * 若要发布到 Azure 容器注册表，需要 Azure 订阅。 [注册免费试用版](https://azure.microsoft.com/offers/ms-azr-0044p/)。
 * [Node.js](https://nodejs.org/en/download/)
-* 对于 Windows 容器、Windows 10 版本 1903 或更高版本，使用本文中引用的 Docker 映像。
+* 对于 Windows 容器、Windows 10 版本 1809 或更高版本，使用本文中引用的 Docker 映像。
 ::: moniker-end
 
 ## <a name="installation-and-setup"></a>安装和设置
@@ -91,14 +91,14 @@ RUN apt-get install -y nodejs
 ```Dockerfile
 #See https://aka.ms/containerfastmode to understand how Visual Studio uses this Dockerfile to build your images for faster debugging.
 
-FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-buster-slim AS base
+FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
 EXPOSE 80
 EXPOSE 443
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 
-FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 RUN curl -sL https://deb.nodesource.com/setup_10.x |  bash -
 RUN apt-get install -y nodejs
 WORKDIR /src
@@ -135,26 +135,26 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
    1. 在 `FROM … base` 之前添加以下行
 
       ```Dockerfile
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
       RUN Invoke-WebRequest -OutFile nodejs.zip -UseBasicParsing "https://nodejs.org/dist/v10.16.3/node-v10.16.3-win-x64.zip"; `
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
       ```
 
-   1. 在 `FROM … build` 之前和之后添加以下行
+   2. 在 `FROM … build` 之前和之后添加以下行
 
       ```Dockerfile
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       ```
 
-   1. 完整的 Dockerfile 现在看起来如下所示：
+   3. 完整的 Dockerfile 现在看起来如下所示：
 
       ```Dockerfile
       # escape=`
       #Depending on the operating system of the host machines(s) that will build or run the containers, the image specified in the FROM statement may need to be changed.
       #For more information, please see https://aka.ms/containercompat
-      FROM mcr.microsoft.com/powershell:nanoserver-1903 AS downloadnodejs
+      FROM mcr.microsoft.com/powershell AS downloadnodejs
       RUN mkdir -p C:\nodejsfolder
       WORKDIR C:\nodejsfolder
       SHELL ["pwsh", "-Command", "$ErrorActionPreference = 'Stop';$ProgressPreference='silentlyContinue';"]
@@ -162,13 +162,13 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       Expand-Archive nodejs.zip -DestinationPath C:\; `
       Rename-Item "C:\node-v10.16.3-win-x64" c:\nodejs
 
-      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1-nanoserver-1903 AS base
+      FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
       WORKDIR /app
       EXPOSE 80
       EXPOSE 443
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
 
-      FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1903 AS build
+      FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
       COPY --from=downloadnodejs C:\nodejs\ C:\Windows\system32\
       WORKDIR /src
       COPY ["WebApplicationReact1/WebApplicationReact1.csproj", "WebApplicationReact1/"]
@@ -186,7 +186,7 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
       ENTRYPOINT ["dotnet", "WebApplicationReact1.dll"]
       ```
 
-   1. 通过删除 `**/bin`来更新 .dockerignore 文件。
+   4. 通过删除 `**/bin`来更新 .dockerignore 文件。
 
 ## <a name="debug"></a>调试
 
@@ -207,12 +207,12 @@ ENTRYPOINT ["dotnet", "WebApplication-ReactSPA.dll"]
 
 依次选择“工具”菜单 >“NuGet 包管理器”>“包管理器控制台”，打开包管理器控制台 (PMC)  。
 
-最终得到的应用的 Docker 映像标记为“开发”。 该映像基于 dotnet/core/aspnet 基本映像的 3.1-nanoserver-1903 标记。 在“包管理器控制台”(PMC) 窗口中运行 `docker images` 命令。 显示了计算机上的映像：
+最终得到的应用的 Docker 映像标记为“开发”。 该映像基于 dotnet/core/aspnet 基础映像的 3.1 标记 。 在“包管理器控制台”(PMC) 窗口中运行 `docker images` 命令。 显示了计算机上的映像：
 
 ```console
 REPOSITORY                             TAG                 IMAGE ID            CREATED             SIZE
 webapplicationreact1                   dev                 09be6ec2405d        2 hours ago         352MB
-mcr.microsoft.com/dotnet/core/aspnet   3.1-buster-slim     e3559b2d50bb        10 days ago         207MB
+mcr.microsoft.com/dotnet/core/aspnet   3.1                 e3559b2d50bb        10 days ago         207MB
 ```
 
 > [!NOTE]

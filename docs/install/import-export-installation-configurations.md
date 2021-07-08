@@ -4,26 +4,24 @@ titleSuffix: ''
 description: 了解如何将安装配置导出到 .vsconfig 文件用于与他人共享，以及如何将其导入进行克隆。
 ms.date: 05/18/2019
 ms.topic: how-to
-f1_keywords:
-- vs.about
 helpviewer_keywords:
 - import installation configuration
 - export installation configuration
 - install Visual Studio
 - Visual Studio installer
-author: ornellaalt
-ms.author: ornella
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 043622d08b5389db8bf4cce80450f62c070a0ace
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33ee25da51d5243daa67be53f68c50ede76219b2
+ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949462"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112925223"
 ---
 # <a name="import-or-export-installation-configurations"></a>导入或导出安装配置
 
@@ -44,15 +42,15 @@ ms.locfileid: "99949462"
 
 1. 打开 Visual Studio 安装程序。
 
-1. 在产品卡中，选择“更多”  按钮，然后选择“导出配置”  。
+1. 在产品卡中，选择“更多”按钮，然后选择“导出配置”。
 
    ![从 Visual Studio 安装程序的产品卡中导出配置](../install/media/vs-2019/vs-installer-export-config.png)
 
-1. 浏览到或键入要保存 .vsconfig 文件的位置，然后选择“查看详细信息”  。
+1. 浏览到或键入要保存 .vsconfig 文件的位置，然后选择“查看详细信息”。
 
    ![从 Visual Studio 安装程序中导出配置](../install/media/vs-2019/export-configuration-confirmation.png)
 
-1. 确保已有所需的工作负载和组件，然后选择“导出”  。
+1. 确保已有所需的工作负载和组件，然后选择“导出”。
 
 ## <a name="import-a-configuration"></a>导入配置
 
@@ -60,17 +58,17 @@ ms.locfileid: "99949462"
 
 1. 打开 Visual Studio 安装程序。
 
-1. 在产品卡中，选择“更多”  按钮，然后选择“导入配置”  。
+1. 在产品卡中，选择“更多”按钮，然后选择“导入配置”。
 
-1. 找到要导入的 .vsconfig 文件，然后选择“查看详细信息”  。
+1. 找到要导入的 .vsconfig 文件，然后选择“查看详细信息”。
 
-1. 确保已有所需的工作负载和组件，然后选择“关闭”  。
+1. 确保已有所需的工作负载和组件，然后选择“关闭”。
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 ## <a name="automatically-install-missing-components"></a>自动安装缺少的组件
 
- Visual Studio 2019 新增功能：将 .vsconfig 文件保存到解决方案根目录并打开解决方案时，Visual Studio 会自动检测缺少哪些组件并提示你安装它们。
+**Visual Studio 2019 的新增功能**：将 .vsconfig 文件保存到解决方案根目录并打开解决方案时，Visual Studio 会自动检测缺少哪些组件并提示你安装它们。
 
 ![解决方案资源管理器建议安装其他组件](../install/media/vs-2019/solution-explorer-config-file.png)
 
@@ -78,11 +76,11 @@ ms.locfileid: "99949462"
 
 1. 右键单击解决方案文件。
 
-1. 选择“添加”>“安装配置文件”   。
+1. 选择“添加”>“安装配置文件” 。
 
-1. 确认要保存 .vconfig 文件的位置，然后选择“查看详细信息”  。
+1. 确认要保存 .vconfig 文件的位置，然后选择“查看详细信息”。
 
-1. 确保已有所需的工作负载和组件，然后选择“导出”  。
+1. 确保已有所需的工作负载和组件，然后选择“导出”。
 
 ::: moniker-end
 
@@ -91,7 +89,7 @@ ms.locfileid: "99949462"
 
 [!INCLUDE[install_get_support_md](includes/install_get_support_md.md)]
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 * [创建 Visual Studio 的网络安装](create-a-network-installation-of-visual-studio.md)
 * [更新基于网络的 Visual Studio 安装](update-a-network-installation-of-visual-studio.md)

@@ -1,7 +1,7 @@
 ---
 title: 更新基于网络的安装
 description: 了解如何使用 --layout 命令更新基于网络的 Visual Studio 安装
-ms.date: 04/16/2021
+ms.date: 05/26/2021
 ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0400f4be06afab2326ac738e1ac15f9d93a6ecee
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: b833551d00f4bd8fb158c848d3bf5b48173e563b
+ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800772"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112306652"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 
@@ -41,36 +41,36 @@ ms.locfileid: "107800772"
 
 * 首先，以下示例说明如何通过一个工作负载来创建布局（仅限英语）：
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.ManagedDesktop --lang en-US
   ```
 
 * 将相同布局更新到较新版本的说明如下。 无需指定任何额外的命令行参数。 此布局文件夹中的任何后续布局命令都将使用先前所保存的设置。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout
   ```
 
 * 下面介绍如何以无人参与方式将布局更新为较新版本。 布局操作在新控制台窗口中运行设置进程。 该窗口保持打开状态，以便用户可以看到最终结果以及任何可能发生的错误的摘要。 如果以无人参与方式执行布局操作（例如，具有定期运行以将布局更新为最新版本的脚本），则使用 `--passive` 参数，进程会自动关闭窗口。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --passive
   ```
 
 * 添加额外工作负载和本地化语言的方法如下所示。  （此命令添加 Azure 开发工作负载。）现在，此布局中同时加入了托管桌面和 Azure。  这些工作负载中还同时加入了英语和德语的语言资源。  并且已将布局更新至最新的可用版本。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.Azure --lang de-DE
   ```
 
     > [!IMPORTANT]
-    > 更新操作不会安装新添加的可选组件。 如果需要新添加的可选组件，请在 `Layout.JSON` [响应文件](automated-installation-with-response-file.md) 中删除旧的可选组件，然后将所需组件包含在 `Layout.JSON` 的“添加”部分。 
+    > 更新操作不会将其他可选组件下载或安装到布局或客户端上。 如果需要添加或更改可选组件，请首先在 `Layout.JSON` [响应文件](automated-installation-with-response-file.md)中删除旧的可选组件，然后将所需的新组件添加到 `Layout.JSON` 的“添加”部分。 然后在布局上运行 update 命令时，它会将新添加的组件下载到布局中。 
     >
-    > **解决方法**：升级后运行单独的修改操作以安装缺少的组件。
+    > 若要在客户端计算机上安装这些新组件，请确保执行以下三个步骤。 首先，验证布局是否包含上述新组件。 接下来，在布局中将客户端更新为最新位。  最后，再次在客户端上运行修改操作，该操作会将新组件（已添加到布局中）安装到客户端计算机上。
 
 * 最后，有关如何在不更新版本的前提下添加其他工作负载和本地化语言的说明详见此处。 （此命令添加“ASP.NET 和 Web 开发”工作负载。）当前，托管桌面、Azure 以及 ASP.NET 和 Web 开发工作负载已加入此布局。 这些工作负载中还加入了英语、德语和法语的语言资源。  但在运行此命令时，布局不会更新至最新的可用版本。 它将维持现有版本。
 
-  ```cmd
+  ```shell
   vs_enterprise.exe --layout c:\VSLayout --add Microsoft.VisualStudio.Workload.NetWeb --lang fr-FR --keepLayoutVersion
   ```
 
@@ -98,6 +98,14 @@ ms.locfileid: "107800772"
 
 ::: moniker-end
 
+::: moniker range=">=vs-2022"
+
+* 管理员可以单独使用下面两个命令，更新 Visual Studio 的客户端部署，而无需与任何用户进行交互：
+  * 首先，更新 Visual Studio 安装程序： <br>```vs_enterprise.exe --quiet --update```
+  * 然后，更新 Visual Studio 应用程序本身： <br>```vs_enterprise.exe update --installPath "C:\Program Files\Microsoft Visual Studio\2022\Enterprise" --quiet --wait --norestart```
+
+::: moniker-end
+
 > [!NOTE]
 > 使用 [vswhere.exe 命令](tools-for-managing-visual-studio-instances.md)可标识客户端计算机上 Visual Studio 现有实例的安装路径。
 >
@@ -108,7 +116,7 @@ ms.locfileid: "107800772"
 
 使用 `--verify` 在提供的脱机缓存中执行验证。 它将检查包文件是否缺少或无效。 验证完成后，它将打印缺少的文件和无效文件的列表。
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --verify
 ```
 
@@ -126,7 +134,7 @@ vs_enterprise.exe --layout <layoutDir> --verify
 
 使用 `--fix` 执行与 `--verify` 相同的验证，并尝试修复标识的问题。 `--fix` 过程需要 Internet 连接，因此在调用 `--fix` 前请确保计算机已连接至 Internet。
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --fix
 ```
 
@@ -142,17 +150,17 @@ vs_enterprise.exe --layout <layoutDir> --fix
 
 以下几个示例说明了如何使用 --clean 选项：
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> <file-path-of-catalog2> …
 ```
 
-```cmd
+```shell
 vs_enterprise.exe --layout <layoutDir> --clean <file-path-of-catalog1> --clean <file-path-of-catalog2> …
 ```
 
 还可在 &lt;layoutDir&gt; 中调用 vs_enterprise.exe。 以下是一个示例：
 
-```cmd
+```shell
 c:\VSLayout\vs_enterprise.exe --layout c:\VSLayout --clean c:\VSLayout\Archive\1cd70189-fc55-4583-8ad8-a2711e928325\Catalog.json --clean c:\VS2017Layout\Archive\d420889f-6aad-4ba4-99e4-ed7833795a10\Catalog.json
 ```
 
