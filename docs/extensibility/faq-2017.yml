@@ -1,0 +1,128 @@
+### YamlMime:FAQ
+metadata:
+  title: 扩展性常见问题解答
+  description: 本文回答了有关 2017 年 Visual Studio 扩展的一些常见问题。
+  ms.custom: SEO-VS-2020
+  ms.date: 11/09/2016
+  ms.topic: conceptual
+  ms.assetid: 345855db-0cc3-45aa-8c57-bb18d9789772
+  author: kevinfansler
+  ms.author: madsk
+  manager: jmartens
+  monikerRange: vs-2017
+  ms.openlocfilehash: 31f536c99c0a050ebb3b315b8209a32c4a1d9130
+  ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
+  ms.translationtype: MT
+  ms.contentlocale: zh-CN
+  ms.lasthandoff: 07/14/2021
+  ms.locfileid: "113757525"
+title: 2017 Visual Studio扩展性常见问题解答
+summary: 这些是有关 2017 年 Visual Studio 扩展的一些常见问题。
+sections:
+- name: 忽略
+  questions:
+  - question: >
+      扩展的向后兼容性情景是什么？
+    answer: >
+      新的 VSIX v3 格式与 VSIX v2 向后兼容，因此你仍然能够拥有一个 VSIX，其单个 VSIX ID 支持 Visual Studio 2012 和更高版本。 新的 VSIX v3 格式不支持 Visual 2010 及更早版本。 若要支持 2010 Visual Studio，需要创建一个单独的扩展 (一个单独的 VSIX ID) 。 由于 Visual Studio 2010 现在是用户群的一小部分，因此我们建议将现有的 VSIX ID 用于支持 Visual Studio 2012 或更高版本的扩展，并将新的 VSIX ID 分配给 Visual Studio 2010 版本。
+  - question: >
+      为什么需要在 2017 Visual Studio先决条件？
+    answer: >
+      Visual Studio 2017 年，可更快、更轻量地安装 Visual Studio，使用户能够增强对已安装的工作负荷和组件的控制。 若要确保随 VSIX v3 和 Visual Studio 2017 一起安装扩展所需的组件，必须将扩展所依赖的组件声明为先决条件。 如果用户计算机上没有任何必需的先决条件，则用户将无法运行扩展。 但是，Visual Studio检测到用户正在尝试安装需要缺少组件的扩展，它会提示用户安装所需的组件。 如果有可选组件，则无需将它们作为先决条件列出，前提是你可运行时执行适当的功能检测。 所有扩展都必须将核心编辑器组件指定为依赖项 `Microsoft.VisualStudio.Component.CoreEditor` 。
+  - question: >
+      当你说先决条件时，你指的是什么粒度级别？
+    answer: >
+      在组件级别声明先决条件，即可在 UI 中选择的单个选项。 不声明工作负荷或单个 DLL 的先决条件。
+  - question: >
+      在哪里可以找到组件 ID 的列表，以便可以声明依赖项？
+    answer: >
+      若要查找组件 ID 的列表，Visual Studio [2017 工作负荷和组件 ID。](../install/workload-and-component-ids.md?view=vs-2019&preserve-view=true) 如果不确定哪个组件包含特定的二进制文件，可以下载组件 [->二进制映射电子表格](https://aka.ms/vs2017componentid-binaries)。 有关使用电子表格的详细信息，请参阅如何：将扩展性项目迁移到[2017](how-to-migrate-extensibility-projects-to-visual-studio-2017.md)中的查找组件VISUAL STUDIO部分。
+  - question: >
+      我的扩展需要 Visual Studio 15.3，如何强制实施该要求？
+    answer: >
+      例如，如果扩展需要特定版本的 Visual Studio 2017，则它依赖于 15.3 中发布的功能，可以在 VSIX **InstallationTarget** 中指定生成号。 例如，版本 15.3 的生成号为"15.0.26730.3"。 可在此处查看版本与生成号 [的映射](../install/visual-studio-build-numbers-and-release-dates.md)。 请注意，使用发行号"15.3"将无法正常工作。
+
+
+      如果扩展需要 15.3 或更高版本，则需要将 **InstallationTarget** 版本声明为 [15.0.26730.3， 16.0) ：
+
+
+      ```xml
+
+      <Installation>
+        <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[15.0.26730.3, 16.0)" />
+      </Installation>
+
+      ```
+
+
+      VSIXInstaller 将检测早期版本Visual Studio并通知用户需要更高版本的更新。
+  - question: >
+      尝试上传扩展时，我一直收到错误。
+    answer: >
+      你可能使用的是旧版本的 VSIX 清单。 如果扩展标记为支持 2017 Visual Studio，但不使用新的 VSIX v3 清单格式，则将无法上传它。
+  - question: >
+      我使用自己的安装程序。 我能否继续这样做？
+    answer: >
+      在 Visual Studio 2017 中，Visual Studio安装将明显小于以前的版本。
+
+
+      我们增强了 VSIX 清单格式，以支持轻型安装所需的更改。 建议尽可能以 VSIX v3 格式提供扩展。 在某些情况下，可能需要维护现有安装程序，例如，如果安装组件Visual Studio。
+
+
+      例如，如果需要MSBuild，则需要在 VSIX 清单中指定它作为先决条件。 安装 VSIX 时，安装程序将确保MSBuild可用。
+
+
+      然后，安装程序调用 VSIXInstaller 来安装 VSIX 和 Visual Studio 2017 组件。
+  - question: >
+      能否提供更多迁移指南？
+    answer: >
+      有关详细信息，请参阅[如何：将扩展性项目迁移到 Visual Studio 2017。](how-to-migrate-extensibility-projects-to-visual-studio-2017.md) 此外，还有一篇出色的博客文章[：对设置 Visual Studio的更改](https://devblogs.microsoft.com/setup/changes-to-visual-studio-15-setup/)。
+  - question: >
+      如何实现包注册？
+    answer: >
+      使用注册表项进行包注册的方式与过去相同。 唯一的变化是，注册表现已被上路，必须从 *.pkgdef* 文件中声明注册表项。
+
+
+      如果使用 ， `PackageRegistrationAttribute` 则这应会自动发生。
+  - question: >
+      是否需要为扩展的 2017 Visual Studio库条目？
+    answer: >
+      否，如果更改与支持的所有版本完全向后兼容，则无需在 Visual Studio 库中为更新后的 VSIX 提供新条目。 如果扩展不向后兼容，建议将扩展拆分为多个 VSIX (即使) ，每个扩展在库中都有自己的 VSIX ID 和条目。
+  - question: >
+      对于当前支持 2010 Visual Studio扩展，我该怎么办？
+    answer: >
+      将 2017 Visual Studio添加到当前 VSIX，并维护对 Visual Studio 2012 及更高版本的支持。 此外，使用支持 (2010) GUID 和库条目创建新的 VSIX Visual Studio。
+  - question: >
+      能否使用 2015 版本生成 VSIX v3 Visual Studio？
+    answer: >
+      是。 有一个NuGet包，该包具有在 2015 年 1 月生成 VSIX v3 格式清单Visual Studio任务。 向扩展性NuGet `Microsoft.VisualStudio.Sdk.BuildTasks.14.0` 添加对包的引用。 还需要将指定 `VsixType` 的元素 `v3` 添加到项目文件：
+
+
+      ```xml
+        <VsixType>v3</VsixType>
+      ```
+  - question: >
+      能否在静默模式下运行 VSIXInstaller？
+    answer: >
+      由于已安装多个 2017 年 1 月 2017 Visual Studio参数，因此需要将其他参数传递给 VSIXInstaller。
+
+
+      ```bash
+
+      vsixinstaller.exe /q /appidinstallpath:"c:\program files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe" /appidname:"Visual Studio" /logFile:<path to log file> /skuName:Enterprise /skuVersion:15.0.25810.0 "KendoUI.Mvc.VSPackage.vsix"
+
+      ```
+  - question: >
+      为什么在安装 VSIX 之前，VSIXInstaller 现在会等待进程退出？
+    answer: >
+      VSIXInstaller 现在使用 Visual Studio 安装引擎来安装由 VSIX 定义的任何先决条件。 安装引擎要求退出所有 VS 相关进程，然后才能更新 Visual Studio安装。
+  - question: >
+      现在可以使用 VSIX v3 将扩展资产安装到任何位置吗？
+    answer: >-
+      否，VSIX v3 属性不允许在安装文件夹结构Visual Studio `InstallRoot` 安装任何内容。 有关 [支持的位置，请参阅在扩展文件夹](set-install-root.md) 外部安装主题。
+
+
+      不是 2017 Visual Studio组件的扩展组件可能在计算机上是单一实例，并且会针对所有 Visual Studio 2017 实例安装一次。
+
+
+      此方案的建议是为非 Visual Studio 组件创建 MSI，让 MSI 调用 VSIXInstaller 来安装Visual Studio组件。
