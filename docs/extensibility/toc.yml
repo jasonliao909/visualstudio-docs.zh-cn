@@ -42,7 +42,7 @@
         - name: 迁移调试器 COM 注册
           href: migrate-debugger-com-registration.md
         - name: 常见问题
-          href: faq-2017.md
+          href: faq-2017.yml
     - name: 将扩展性项目迁移到 Visual Studio 2017
       href: how-to-migrate-extensibility-projects-to-visual-studio-2017.md
     - name: Visual Studio 的往返扩展
