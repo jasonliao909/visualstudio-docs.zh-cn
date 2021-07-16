@@ -2,7 +2,7 @@
 title: 安装可视化工具 | Microsoft Docs
 description: 了解如何安装可视化工具，以便可以在 Visual Studio 中用于调试。
 ms.custom: SEO-VS-2020
-ms.date: 06/10/2020
+ms.date: 07/02/2021
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -19,12 +19,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2521983a797b676b9136ca14b733eb7afd054e27
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 611347acfe48e561653d644097d56d029b6a4fa6
+ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904270"
+ms.lasthandoff: 07/06/2021
+ms.locfileid: "113298252"
 ---
 # <a name="how-to-install-a-visualizer"></a>如何：安装可视化工具
 创建了可视化工具后，您还必须安装该可视化工具，这样您才可在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中使用它。 安装可视化工具是个简单的过程。
@@ -38,6 +38,9 @@ ms.locfileid: "99904270"
 1. 找到包含已创建的可视化工具的 DLL。
 
    通常，最理想的情况是调试器端 DLL 和调试对象端 DLL 指定任意 CPU 作为目标平台。 调试器端 DLL 必须为“任意 CPU”或“32 位” 。 调试对象端 DLL 的目标平台应对应于调试对象进程。
+
+   >[!NOTE]
+   > 调试器端可视化工具会加载到 Visual Studio 进程中，因此必须是 .NET Framework DLL。 调试对象端可以是 .NET Framework 也可以是 .NET Standard，具体取决于 Visual Studio 中正在调试的进程。
 
 2. 将[调试器端](create-custom-visualizers-of-data.md#to-create-the-debugger-side) DLL（以及它所依赖的任意 DLL）复制到以下位置之一：
 
