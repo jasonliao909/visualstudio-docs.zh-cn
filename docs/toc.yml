@@ -1427,10 +1427,12 @@
 - name: 资源
   expanded: true
   items:
-    - name: Visual Studio 2017：新增功能
-      href: ide/whats-new-visual-studio-2017.md
+    - name: Visual Studio 2022：最新更新
+      href: ide/whats-new-visual-studio-2022.md
     - name: Visual Studio 2019：新增功能
       href: ide/whats-new-visual-studio-2019.md
+    - name: Visual Studio 2017：新增功能
+      href: ide/whats-new-visual-studio-2017.md
     - name: Docs 中的新增内容
       href: ide/whats-new-visual-studio-docs.md
     - name: 发行说明
@@ -1467,7 +1469,7 @@
         - name: 报告问题
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: “报告问题”状态和常见问题解答
-          href: ide/report-a-problem.md
+          href: ide/report-a-problem.yml
         - name: 快速修复性能问题
           href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: 使用调用堆栈创建小型转储
