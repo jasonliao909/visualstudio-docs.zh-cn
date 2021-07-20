@@ -1,5 +1,5 @@
 ---
-title: 教程：创建一个简单的 C# 控制台应用程序
+title: '教程：创建一个简单的 C# 控制台应用程序 '
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: vs-acquisition, get-started
 ms.date: 02/10/2021
@@ -15,16 +15,31 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 5f155c2477c97b6f0d18a4cfd3d54386aee68dd9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390367"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649174"
 ---
-# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用程序
+# <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
-在本 C# 教程中，你将使用 Visual Studio 创建和运行控制台应用程序，并在此过程中了解 Visual Studio 集成开发环境 (IDE) 的部分功能。
+在本教程中，你将使用 Visual Studio 创建和运行 C# 控制台应用，并在此过程中了解 Visual Studio 集成开发环境 (IDE) 的部分功能。 本教程是由两个部分构成的系列教程的第一部分。
+
+在本教程中，将：
+
+> [!div class="checklist"]
+> * 创建一个 Visual Studio 项目。
+> * 创建一个 C# 控制台应用。
+> * 调试应用。
+> * 关闭应用。
+> * 检查完整的代码。
+
+[在第 2 部分中](tutorial-console-part-2.md)，你将将使用其他项目、调试技巧和引用第三方包来扩展此应用。
+
+## <a name="prerequisites"></a>必备条件
+
+必须安装 Visual Studio。
 
 ::: moniker range="vs-2017"
 
@@ -486,7 +501,7 @@ ms.locfileid: "112390367"
 
 1. 关闭 Visual Studio。
 
-## <a name="code-complete"></a>代码完成
+## <a name="review-code-complete"></a>查看：代码完成
 
 在本次教程中，我们对计算器应用进行了许多更改。 应用现在可以更有效地处理计算资源，以及处理大多数的用户输入错误。
 
@@ -627,10 +642,15 @@ namespace Calculator
 继续学习本教程的第二部分：
 
 > [!div class="nextstepaction"]
-> [继续学习第 2 部分](tutorial-console-part-2.md)
+> [教程第 2 部分：使用多个项目和第三方包](tutorial-console-part-2.md)
 :::moniker-end
 
-## <a name="see-also"></a>请参阅
+如有兴趣，另可参阅以下内容：
 
-* [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-* [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
+- [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)
+- [快速入门：创建 ASP.NET Core Web 应用](../../ide/quickstart-aspnet-core.md)
+- [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
+- 有关如何[创建和运行单元测试](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)的演练
+- [运行 C# 程序](run-program.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [继续学习 Visual Studio IDE 概述](/../visual-studio-ide.md)
