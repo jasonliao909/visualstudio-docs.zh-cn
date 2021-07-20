@@ -14,12 +14,12 @@ helpviewer_keywords:
 - Visual Studio terminal
 ms.assetid: 94fcf524-9045-4993-bfb2-e2d8bad44219
 no-loc: cmdlet
-ms.openlocfilehash: 858845ca5629f64e282e3864daa0201935316062
-ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
+ms.openlocfilehash: fef783475304bb1faa1788bde591a22ed610d528
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112990514"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649161"
 ---
 # <a name="visual-studio-developer-command-prompt-and-developer-powershell"></a>Visual Studio 开发人员命令提示和开发人员 PowerShell
 
@@ -28,7 +28,6 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 - **Visual Studio 开发人员命令提示** - 一种设置了某些环境变量的标准命令提示，可以让使用命令行开发人员工具变得更容易。 自 Visual Studio 2015 起可用。
 
 - **Visual Studio 开发人员 PowerShell** - 比命令提示符更强大。 例如，你可以将一个命令的输出（称为 *cmdlet* ）传递给另一个 cmdlet。 此 shell 的环境变量集与开发人员命令提示的相同。 自 Visual Studio 2019 起可用。
-
 
 :::image type="content" source="media/developer-command-prompt-for-vs/command-prompt.png" alt-text="显示 clrver 工具的 Visual Studio 开发人员命令提示":::
 
@@ -43,8 +42,8 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 |常用命令|说明|
 |--|--|
 |[`MSBuild`](../../msbuild/msbuild-command-line-reference.md)|生成项目或解决方案|
-|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| 用于 CLR 的 [.NET Framework 工具](/dotnet/framework/tools/index)。|
-|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|用于反汇编程序的 [.NET Framework 工具](/dotnet/framework/tools/index)。|
+|[`clrver`](/dotnet/framework/tools/clrver-exe-clr-version-tool)| 用于 CLR 的 [.NET Framework 工具](/dotnet/framework/tools/index)|
+|[`ildasm`](/dotnet/framework/tools/ildasm-exe-il-disassembler)|用于反汇编程序的 [.NET Framework 工具](/dotnet/framework/tools/index)|
 |[`dotnet`](/dotnet/core/tools/dotnet)|[.NET CLI 命令](/dotnet/core/tools/index)|
 |[`dotnet run`](/dotnet/core/tools/dotnet-run)|[.NET CLI 命令](/dotnet/core/tools/index)|
 |[`CL`](/cpp/build/reference/compiler-command-line-syntax)|C/C++ 编译工具|
@@ -135,9 +134,7 @@ Visual Studio 2019 包含两个开发人员命令行 shell：
 
 ## <a name="see-also"></a>另请参阅
 
-- [开发人员 PowerShell](https://devblogs.microsoft.com/visualstudio/the-powershell-you-know-and-love-now-with-a-side-of-visual-studio/)
-- [认识全新的 Visual Studio 终端](https://devblogs.microsoft.com/visualstudio/say-hello-to-the-new-visual-studio-terminal/)
 - [Windows 终端](/windows/terminal/)
 - [.NET Framework 工具](/dotnet/framework/tools/index)
-- [管理外部工具](../managing-external-tools.md)
 - [通过命令行使用 Microsoft C++ 工具集](/cpp/build/building-on-the-command-line)
+- [Visual Studio Code 用户](https://code.visualstudio.com/docs/cpp/config-msvc#:~:text=To%20open%20the%20Developer%20Command,item%20to%20open%20the%20prompt.)

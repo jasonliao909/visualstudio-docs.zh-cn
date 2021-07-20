@@ -1,6 +1,6 @@
 ---
 title: 登录
-description: 了解如何登录 Visual Studio。
+description: 登录 Visual Studio 以延长 Visual Studio 试用期、解锁 Visual Studio 等等
 ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
@@ -10,16 +10,16 @@ ms.author: jmartens
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1335ab3d8f679f00fb7f52420d378baa1f2bd905
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222989"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549467"
 ---
-# <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio
+# <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 
-虽然无需登录，但登录有很多好处。 登录后，可以对你的 Visual Studio 体验进行个性化设置、优化和扩充。 
+虽然无需登录，但登录有很多好处。 在本文中，你将了解[如何登录](#how-to-sign-in)、如何[更新个人资料](#update-your-profile)，以及 Visual Studio 体验的好处。 
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[登录到 Visual Studio for Mac](/visualstudio/mac/signing-in)。
@@ -31,8 +31,6 @@ ms.locfileid: "113222989"
 > 使用 Visual Studio 2017 访问为条件访问配置的资源时，可能会触发降级身份验证体验，进而在同一 Visual Studio 会话中多次提示重新进行身份验证。 
 > 
 ::: moniker-end
-
-## <a name="benefits"></a>优点
 
 以下是登录后可体验的内容及可执行的操作的完整列表：
 

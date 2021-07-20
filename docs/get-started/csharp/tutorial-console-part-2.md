@@ -1,5 +1,5 @@
 ---
-title: 教程：扩展简单的 C# 控制台应用
+title: 教程 2：扩展 C# 控制台应用
 description: 了解如何在 Visual Studio 中逐步开发 C# 控制台应用。
 ms.custom: vs-acquisition, get-started
 ms.date: 04/15/2021
@@ -7,8 +7,8 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: ghogen
-ms.author: ghogen
+author: j-martens
+ms.author: jmartens
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,20 +16,33 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: c7c38ed40143064090535735b2050dd31904d608
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
+ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390172"
+ms.lasthandoff: 07/12/2021
+ms.locfileid: "113649158"
 ---
-# <a name="tutorial-extend-a-simple-c-console-app"></a>教程：扩展简单的 C# 控制台应用
+# <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 
-在本教程中，你将了解如何使用 Visual Studio 来扩展在第一部分中创建的控制台应用。 你将了解日常开发所需的一些 Visual Studio 功能，例如管理多个项目和引用第三方包。
+在本系列教程的第 2 部分中，你将更深入地了解日常开发（例如管理多个项目、调试和引用第三方包）所需的 Visual Studio 中的构建和调试功能。 你将运行在本教程的第 1 部分 (tutorial-console.md) 中创建的 C# 控制台应用，并在此过程中了解 Visual Studio 集成开发环境 (IDE) 的部分功能。 本教程是由两个部分构成的系列教程的第二部分。
 
-如果你刚刚完成此系列的[第一部分](tutorial-console.md)，则已具备计算器控制台应用。  要跳过第 1 部分，可以首先从 GitHub 存储库打开项目。 C# 计算器应用位于 [vs-tutorial-samples 存储库](https://github.com/MicrosoftDocs/vs-tutorial-samples)中，因此你只需要按照[教程：打开存储库中的项目](../tutorial-open-project-from-repo.md)中的步骤开始操作即可。
+在本教程中，将：
 
-## <a name="add-a-new-project"></a>添加新项目
+> [!div class="checklist"]
+> * 向第一个项目添加另一个项目。
+> * 参考库并添加包。
+> * 再进行一些调试。
+> * 检查完整的代码。
+
+
+## <a name="prerequisites"></a>必备条件
+
+您必须：
++ 使用[本系列教程第 1 部分中的计算器控制台应用](tutorial-console.md) 
++ 使用 [vs-tutorial-samples 存储库](https://github.com/MicrosoftDocs/vs-tutorial-samples)（可以[从存储库打开](../tutorial-open-project-from-repo.md)）中的 C# 计算器应用以着手执行相应操作。
+
+## <a name="add-another-project"></a>再添加一个项目
 
 实际代码涉及在一个解决方案中协同工作的多个项目。 现在，让我们将另一个项目添加到计算器应用。 这将是一个提供某些计算器函数的类库。
 
@@ -749,15 +762,12 @@ namespace CalculatorProgram
 
 ## <a name="next-steps"></a>后续步骤
 
-恭喜你完成本教程！ 若要了解详情，请继续学习后续教程。
+恭喜你完成本教程！ 若要更加深入地了解，请继续学习以下内容：
 
-> [!div class="nextstepaction"]
-> [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)
-
-> [!div class="nextstepaction"]
-> [继续学习 Visual Studio IDE 概述](/../visual-studio-ide.md)
-
-## <a name="see-also"></a>请参阅
-
-- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)
+- [快速入门：创建 ASP.NET Core Web 应用](../../ide/quickstart-aspnet-core.md)
 - [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
+- 有关如何[创建和运行单元测试](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)的演练
+- [运行 C# 程序](run-program.md)
+- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
+- [继续学习 Visual Studio IDE 概述](/../visual-studio-ide.md)
