@@ -11,15 +11,15 @@ dev_langs:
 - DHTML
 ms.assetid: 74dca14c-5071-416f-a92b-d09f95e3dfb8
 caps.latest.revision: 1
-author: bowdenk7
-ms.author: jillfra
+author: mikejo5000
+ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: b39ee716c5092f41ef3ea8f05c529509ceca3717
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79c7c13ea80e32e80d32c04052269cb814072aeb
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936855"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232903"
 ---
 # <a name="javascript-in-visual-studio-2017"></a>Visual Studio 2017 中的 JavaScript
 

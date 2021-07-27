@@ -1,7 +1,5 @@
 - name: Visual Studio for Mac
   href: ./index.yml
-- name: IDE 教程
-  href: ide-tour.md
 - name: 安装
   href: installation.md
   items:
@@ -139,7 +137,7 @@
       href: ./xamarin.md
 - name: 可访问性
   href: ./accessibility.md
-- name: 故障排除
+- name: 疑难解答
   href: ./troubleshooting.md
   items:
     - name: Visual Studio 客户体验改善计划

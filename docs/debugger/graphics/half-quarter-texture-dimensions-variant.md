@@ -3,19 +3,19 @@ title: Half/Quarter 纹理维度变量 | Microsoft Docs
 description: 如果较小纹理显示显著的性能提升，则表明内存带宽压力或 GPU 纹理缓存的低效使用。 请考虑减小纹理。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 282e9bbb-51aa-4cd0-8e5c-0901268c29e5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 87add3c771fdc79e4b41658a68ef7e77e2c18b21
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddd446e588af438e1a4d950e9407392e74881f90
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888519"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232396"
 ---
 # <a name="halfquarter-texture-dimensions-variant"></a>Half/Quarter 纹理维度变量
 减小非呈现器目标的纹理上的纹理尺寸。

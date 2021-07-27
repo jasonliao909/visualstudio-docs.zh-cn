@@ -3,19 +3,19 @@ title: Point/Bilinear/Trilinear/Anisotropic 纹理过滤变量
 description: 如果点、双线性、三线性或各向异性纹理筛选变量的性能开销较大，则可以考虑是否值得使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7de150064ee493795bdeed579715dbf1370573a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d89db195b94bcf31d2ce2c7482c5b7315a979e9
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905070"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232643"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Point、Bilinear、Trilinear 和 Anisotropic 纹理过滤变量
 重写相应纹理取样器上的筛选模式。

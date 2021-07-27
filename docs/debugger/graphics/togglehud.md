@@ -3,19 +3,19 @@ title: ToggleHUD | Microsoft Docs
 description: 使用 VsgDbg 的 ToggleHUD() 方法来切换在应用运行时是否显示图形诊断平视显示 (HUD)。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cde6549551156f3655f313c23dc66659d2830cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 809b33fe3339da56507d09fcf15ec51481b751e0
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905052"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232487"
 ---
 # <a name="togglehud"></a>ToggleHUD
 打开或关闭图形诊断的 HUD（平视显示）覆盖。

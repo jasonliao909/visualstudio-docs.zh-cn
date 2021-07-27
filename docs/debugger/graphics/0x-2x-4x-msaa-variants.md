@@ -3,19 +3,19 @@ title: 0x-2x-4x MSAA 变量 | Microsoft Docs
 description: 了解如何使用 0x、2x 或 4x MSAA 变量重写所有呈现器目标和交换链上的多重采样抗锯齿 (MSAA) 设置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 661aa4ade7df8279e31e2291dfbbdfc5f6df6e1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 15cf6c257b54c8998b32213e7abf021b8b8ef816
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874738"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232630"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 重写所有呈现器目标和交换链上的多重采样抗锯齿 (MSAA) 设置。

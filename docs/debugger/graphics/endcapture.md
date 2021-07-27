@@ -3,19 +3,19 @@ title: EndCapture | Microsoft Docs
 description: 使用 VsgDbg 类的 EndCapture 方法，结束以 BeginCapture 开始的捕获时间间隔。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f7733eb9bed86bc450e4438ce34054312b13db5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b0820950980860465e5129211c77e48ff641bdf
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880276"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232669"
 ---
 # <a name="endcapture"></a>EndCapture
 结束以 `BeginCapture` 开始的捕获时间间隔。

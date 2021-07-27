@@ -2,19 +2,19 @@
 description: 通过其存在状况定义是否提供 VsgDbg 类的默认实例（它提供编程捕获接口）。
 title: VSG_NODEFAULT_INSTANCE | Microsoft Docs
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 19c95b0d-9a4d-441f-9ed7-3acb39e67521
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: eccdd71c66a9f25e1b0a26f4ea851bcccb738a0b
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 75bb54adb5667f3e8246034eca1075d339755785
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102155241"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232409"
 ---
 # <a name="vsg_nodefault_instance"></a>VSG_NODEFAULT_INSTANCE
 通过其存在状况定义是否提供 [VsgDbg 类](vsgdbg-class.md)的默认实例（它提供编程捕获接口）。

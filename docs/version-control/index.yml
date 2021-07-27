@@ -3,7 +3,7 @@ title: Visual Studio 版本控制文档
 summary: 使用 Git 和 GitHub 等版本控制技术从 Visual Studio 中共享代码。
 metadata:
   title: Visual Studio 中 Git 的版本控制和源代码管理
-  description: 在 Visual Studio 中使用版本控制技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
+  description: 在 Visual Studio 中使用版本控制/源代码管理技术。 无需离开代码库，即可在 Git 和 GitHub共享、集成和管理代码版本。
   ms.topic: landing-page
   ms.date: 07/02/2021
   author: TerryGLee
@@ -11,12 +11,12 @@ metadata:
   manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: 8143a897914a0b9c2ca3adcdc5093c89852a2f53
-  ms.sourcegitcommit: 4b19d18874a5d3c3dbea67a8e478dc7d3a813769
+  ms.openlocfilehash: 1f412499a1321cebe20955440378c2e284a2db52
+  ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 07/07/2021
-  ms.locfileid: "113363984"
+  ms.lasthandoff: 07/23/2021
+  ms.locfileid: "114591787"
 landingContent:
 - title: 概述
   linkLists:

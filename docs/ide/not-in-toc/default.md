@@ -26,12 +26,12 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 980da41ea60a4627b08488318095e46e9d5a2cbc
-ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+ms.openlocfilehash: c3251b38d75545ec1ccf2843382dff17676284ee
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "113280438"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201788"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>糟糕！ 未找到 `F1` 帮助匹配项
 
@@ -53,5 +53,7 @@ ms.locfileid: "113280438"
 
 ## <a name="help-us-serve-you-better"></a>帮助我们提供更好的服务
 
-告诉我们你现阶段对产品的使用情况以及所需的帮助。   
-<br/>使用此页底部的 `This Page` 反馈按钮。 
+我们非常希望收到有关如何提供所需帮助的反馈。
+
+> [!div class="nextstepaction"]
+> [分享你的反馈（5 分钟调查）](https://www.surveymonkey.com/r/F1_Help_Visual_Studio)

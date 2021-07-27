@@ -3,19 +3,19 @@ title: 命令行捕获工具 | Microsoft Docs
 description: 了解 DXCap.exe，这是一种用于图形诊断捕获和播放的命令行工具，该工具在所有功能级别上都支持从 Direct3D 10 至 Direct3D 12 的所有版本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: db75b3a7-80b2-4a74-91d2-fd6e0f73b45d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ee7acfd6256affee7a8204c2e70e18210c5f3dcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b305d2f2f84d4b3f52d9be40f18fe02c9eb93df2
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877728"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232708"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 DXCap.exe 是一个用于图形诊断捕获和播放的命令行工具。 它在所有功能级别支持从 Direct3D 10 到 Direct3D 12 的所有版本。

@@ -9,7 +9,7 @@
     - name: devinit 和 GitHub Codespaces
       href: devinit-and-codespaces.md
     - name: 常见问题
-      href: faq.md
+      href: faq.yml
     - name: 工具
       items:
         - name: 工具列表

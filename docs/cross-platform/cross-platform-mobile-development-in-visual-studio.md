@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f3c611ae157be4f2ea89254856bdd3b6fba448d
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: f2ce02467a43fc71a0e6e352a9a31a9ccfe810bf
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687679"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201762"
 ---
 # <a name="cross-platform-mobile-development-in-visual-studio"></a>Visual Studio 中的跨平台移动开发
 
@@ -161,8 +161,8 @@ ms.locfileid: "110687679"
 |**了解更多信息**|
 |--------------------|
 |[了解有关使用 Visual Studio 构建 Unity 游戏的更多信息](https://visualstudio.microsoft.com/vs/features/game-development/#tab-4b0d0be8de5f65564ad)|
-|[阅读有关 Visual Studio Tools for Unity 的详细信息](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) |
-|[开始使用 Visual Studio Tools for Unity](/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md) |
+|[阅读有关 Visual Studio Tools for Unity 的详细信息](/visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity) |
+|[开始使用 Visual Studio Tools for Unity](/visualstudio/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity) |
 |[了解关于 Visual Studio Tools for Unity 2.0 预览版的最新增强功能](https://devblogs.microsoft.com/visualstudio/visual-studio-tools-for-unity-2-0-preview/) （Visual Studio 博客）|
 |[观看 Visual Studio Tools for Unity 2.0 预览版的简介视频](https://www.bing.com/videos/search?q=visual+studio+tools+for+unity&qs=n&form=QBVLPG&pq=visual+studio+tools+for+unity&sc=6-29&sp=-1&sk=#view=detail&mid=0A13177F0BC7463A24080A13177F0BC7463A2408&preserve-view=true) （视频）|
 |[了解 Unity](https://unity.com/) （Unity 网站）|

@@ -3,19 +3,19 @@ title: Init | Microsoft Docs
 description: 使用 VsgDbg 的 Init() 方法准备图形诊断的应用内组件，以记录图形信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: c55ddec8-9101-4673-979b-4109caca9146
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17b2490641a85a9a38bdeb2c5cd20038639de6f0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc6732ed506d1aa7e4ac3e47c629aadae796201d
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891808"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232370"
 ---
 # <a name="init"></a>Init
 准备图形诊断的应用内组件来主动捕获图形信息并将其记录到图形日志文件。

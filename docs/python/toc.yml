@@ -69,10 +69,6 @@
           href: learn-flask-visual-studio-step-02-create-app.md
         - name: 3 - 为静态文件服务并添加页面
           href: learn-flask-visual-studio-step-03-serve-static-files-add-pages.md
-        - name: 4 - 使用 Flask Web 项目模板
-          href: learn-flask-visual-studio-step-04-full-flask-project-template.md
-        - name: 5 - 使用投票 Flask Web 项目模板
-          href: learn-flask-visual-studio-step-05-polls-flask-web-project-template.md
 - name: 概念
   items:
     - name: Python 项目
@@ -83,8 +79,6 @@
           href: python-web-application-project-templates.md
         - name: Django Web 项目模板
           href: python-django-web-application-project-template.md
-        - name: Azure 云服务模板
-          href: python-azure-cloud-service-project-template.md
     - name: Azure SDK for Python
       href: /python/azure/?view=azure-python&preserve-view=true
 - name: 操作指南
