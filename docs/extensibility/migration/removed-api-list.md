@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2022 Preview 中已删除的 Api
-description: 了解 Visual Studio 2022 Preview 中已删除的 VS SDK Api，适用于扩展创作者更新其扩展以使用 Visual Studio 2022 Preview。
+title: 2022 Visual Studio预览版中删除的 API
+description: 了解在 Visual Studio 2022 预览版中删除的 VS SDK API，供扩展作者更新其扩展以使用 Visual Studio 2022 预览版。
 ms.date: 06/08/2021
 ms.topic: reference
 author: leslierichardson95
@@ -9,18 +9,19 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: bed8d0a261f70acb5e842ebeaf0059faae3fc478
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+feedback_system: GitHub
+ms.openlocfilehash: d6375fb428eab6647854fe165aeb208ef8121e73
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308553"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592315"
 ---
-# <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK 删除的 Api
+# <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK 已删除 API
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-以下 Api 已从 Visual Studio SDK 中删除，无法再使用，有关如何更新代码的详细信息，请参阅每个部分。
+以下 API 已从 Visual Studio SDK 中删除，无法再使用。请参阅每个部分，详细了解如何更新代码。
 
 * [`IVsImageService`](#ivsimageservice)
 * [`IBlockContextProvider`](#iblockcontextprovider)
@@ -30,15 +31,15 @@ ms.locfileid: "112308553"
 * [`IVsDummy`](#ivsdummy)
 * [`Microsoft.VisualStudio.Shell.Task`](#microsoftvisualstudioshelltask)
 * [从源安全打开](#open-from-source-safe)
-* [.NET Framework 的新 WPF XAML 设计器](#new-wpf-xaml-designer-for-net-framework)
+* 面向 .NET Framework 的新版 WPF XAML 设计器
 
 ## <a name="ivsimageservice"></a>IVsImageService
 
-正在 `IVsImageService` Visual Studio 2022 中移除。 `IVsImageService`应改为转到的所有用户 `IVsImageService2` 。
+正在 `IVsImageService` 2022 Visual Studio中删除 。 的所有用户 `IVsImageService` 都应改为移动到 `IVsImageService2` 。
 
 ### <a name="recommended-updates"></a>建议的更新
 
-如果使用，则将对 `IVsImageService` 其方法的调用替换为对的等效方法的调用 `IVsImageService2` ：
+如果使用 ， `IVsImageService` 请将对 方法的调用替换为对 上的等效方法的调用 `IVsImageService2` ：
 
 | **IVsImageService 方法** | **等效的 IVsImageService2 方法** |
 |----------------------------|----------------------------------------|
@@ -47,54 +48,54 @@ ms.locfileid: "112308553"
 | GetIconForFile             | GetImageMonikerForFile                 |
 | GetIconForFileEx           | GetImageMonikerForFile                 |
 
-`IVsImageService`通过名称引用自定义图像的 Add 和 Get 方法 (字符串) 而不是名字对象。  更可取的方法是将代码切换为仅使用名字对象来引用自定义映像，但如果这种证明不切实际，则 `IVsImageService2` 有几种方法可以使名称与名字对象关联：
+`IVsImageService`的 Add 和 Get 方法按名称引用自定义图像 (字符串) ，而不是名字对象。  最好将代码切换为仅使用名字对象来引用自定义图像，但如果这证明不切实际，则有几个方法允许你将名称与名字对象 `IVsImageService2` 关联：
 
 * `TryAssociateNameWithMoniker`
 * `GetImageMonikerForName`
 
-使用这两种方法，你可以继续按名称引用映像。
+使用这两种方法，可以继续按名称引用图像。
 
 ## <a name="iblockcontextprovider"></a>IBlockContextProvider
 
-在 `IBlockContextProvider` Visual Studio 2022 中将删除和相关类型。 `IBlockContextProvider`应改为转到的所有用户 `IStructureContextSourceProvider` 。
+和 `IBlockContextProvider` 相关类型在 2022 Visual Studio中删除。 的所有用户 `IBlockContextProvider` 都应改为移动到 `IStructureContextSourceProvider` 。
 
 ### <a name="recommended-updates"></a>建议的更新
 
-的用户 `IBlockContextProvider` 应该改用 `IStructureContextSourceProvider` ([文档](/dotnet/api/microsoft.visualstudio.text.adornments.istructurecontextsourceprovider)) 。
+的用户 `IBlockContextProvider` 应改为 `IStructureContextSourceProvider` 使用 ([文档) 。](/dotnet/api/microsoft.visualstudio.text.adornments.istructurecontextsourceprovider)
 
 ## <a name="itooltipprovider"></a>IToolTipProvider
 
-在 `IToolTipProvider` Visual Studio 2022 中将删除和相关类型。 `IToolTipProvider`应改为转到的所有用户 `IToolTipService` 。
+和 `IToolTipProvider` 相关类型在 2022 Visual Studio中删除。 的所有用户 `IToolTipProvider` 都应改为移动到 `IToolTipService` 。
 
 ### <a name="recommended-updates"></a>建议的更新
 
-的用户 `IToolTipProvider` 应该改用 `IToolTipService` ([文档](/dotnet/api/microsoft.visualstudio.text.adornments.itooltipservice)) 。
+的用户 `IToolTipProvider` 应改为 `IToolTipService` 使用 ([文档) 。](/dotnet/api/microsoft.visualstudio.text.adornments.itooltipservice)
 
 ## <a name="ivstextscanner-and-ivsfulltextscanner"></a>IVsTextScanner 和 IVsFullTextScanner
 
-`IVsTextScanner` `IVsFullTextScanner` 在 Visual Studio 2022 中将删除和。 或的所有 `IVsTextScanner` 用户 `IVsFullTextScanner` 应改为转到 `IVsTextLines` 。
+和 `IVsTextScanner` `IVsFullTextScanner` 在 2022 Visual Studio中删除。 或 的 `IVsTextScanner` 所有用户 `IVsFullTextScanner` 都应改为 `IVsTextLines` 移动到 。
 
 ### <a name="recommended-updates"></a>建议的更新
 
-或的 `IVsTextScanner` 用户 `IVsFullTextScanner` 应该改用 `IVsTextLines` ([文档](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)) 。
+或 `IVsTextScanner` 的用户 `IVsFullTextScanner` 应 `IVsTextLines` 改为使用 ([文档) 。](/dotnet/apimicrosoft.visualstudio.textmanager.interop.ivstextlines.getlinetext)
 
 ## <a name="asynchronous-solution-load-and-lightweight-solution-load"></a>异步解决方案加载和轻型解决方案加载
 
-在 Visual Studio 2022 中将删除异步解决方案加载 (ASL) 和轻型解决方案加载 (LSL) 功能，因为将删除以下方法：
+Visual Studio 2022 Visual Studio 中删除异步解决方案加载 (ASL) 和轻型解决方案加载 (LSL) 功能，因此将删除以下方法：
 
 ### <a name="interfaces"></a>接口
 
-* `IVsSolution4` -方法： `IsBackgroundSolutionLoadEnabled` 、 `EnsureProjectsAreLoaded` 、 `EnsureProjectIsLoaded` 、 `EnsureSolutionIsLoaded`
-* `IVsSolutionLoadEvents` -方法： `OnBeforeBackgroundSolutionLoadBegins` 、 `OnQueryBackgroundLoadProjectBatch` 、 `OnBeforeLoadProjectBatch` 、 `OnAfterLoadProjectBatch`
-* `IVsSolutionLoadManagerSupport` -整个接口
-* `IVsSolutionLoadManager` -整个接口
-* `IVsSccManager3`  -整个接口
-* `IVsAsynchronousProjectCreate` -整个接口
-* `IVsAsynchronousProjectCreateUI` -整个接口
+* `IVsSolution4` - 方法 `IsBackgroundSolutionLoadEnabled` `EnsureProjectsAreLoaded` `EnsureProjectIsLoaded` ：、、、、 `EnsureSolutionIsLoaded`
+* `IVsSolutionLoadEvents` - 方法 `OnBeforeBackgroundSolutionLoadBegins` `OnQueryBackgroundLoadProjectBatch` `OnBeforeLoadProjectBatch` ：、、、、 `OnAfterLoadProjectBatch`
+* `IVsSolutionLoadManagerSupport` - 整个接口
+* `IVsSolutionLoadManager` - 整个接口
+* `IVsSccManager3`  - 整个接口
+* `IVsAsynchronousProjectCreate` - 整个接口
+* `IVsAsynchronousProjectCreateUI` - 整个接口
 
 ### <a name="enums-properties-and-ui-contexts"></a>枚举、属性和 UI 上下文
 
-* `VSHPROPID_ProjectUnloadStatus` 枚举 `UNLOADSTATUS_LoadPendingIfNeeded`
+* `VSHPROPID_ProjectUnloadStatus` - 枚举： `UNLOADSTATUS_LoadPendingIfNeeded`
 * `VSHPROPID_DemandLoadDependencies`
 * `VSHPROPID_IsProjectProvisioned`
 * `VSPROPID_IsInBackgroundIdleLoadProjectBatch`
@@ -106,33 +107,33 @@ ms.locfileid: "112308553"
 
 无。
 
-## <a name="ivsdummy"></a>IVsDummy
+## <a name="ivsdummy"></a>IVsDu以
 
-在 `IVsDummy` Visual Studio 2022 中将被删除，并且不会被替换。 
+`IVsDummy`将在 2022 Visual Studio中删除，并且不会替换。 
 
 ### <a name="recommended-updates"></a>建议的更新
 
-无。 但是，这不会产生任何影响，因为 API 未执行任何操作。
+无。 但是，它应该没有任何影响，因为 API 没有执行任何操作。
 
-## <a name="microsoftvisualstudioshelltask"></a>VisualStudio。
+## <a name="microsoftvisualstudioshelltask"></a>Microsoft.VisualStudio.Shell.Task
 
-`Microsoft.VisualStudio.Shell.Task`类已重命名为， `Microsoft.VisualStudio.Shell.TaskListItem` 因此不会与非常流行的类冲突 `System.Threading.Tasks.Task` 。
+`Microsoft.VisualStudio.Shell.Task`类已重命名为 `Microsoft.VisualStudio.Shell.TaskListItem` ，以便不与非常热门的 `System.Threading.Tasks.Task` 类冲突。
 
 ## <a name="open-from-source-safe"></a>从源安全打开
 
-正在删除对从 "源安全" 打开解决方案的支持，如以下方法、事件、和等。
+将删除对从源安全打开解决方案的支持，因此将删除以下方法、事件和常量。
 
 ## <a name="interfaces"></a>接口
 
-* `IVsSCCProvider3` -整个接口
+* `IVsSCCProvider3` - 整个接口
 
 ### <a name="recommended-updates"></a>建议的更新
 
 无。
 
-## <a name="new-wpf-xaml-designer-for-net-framework"></a>.NET Framework 的新 WPF XAML 设计器
+## <a name="new-wpf-xaml-designer-for-net-framework"></a>面向 .NET Framework 的新版 WPF XAML 设计器
 
-已弃用 .NET Framework 的当前 WPF XAML 设计器，并将根据用于 .NET 的 WPF XAML 设计器 ( .NET Core) 的相同体系结构替换为新的 WPF XAML 设计器 .NET Framework。 这也意味着 WPF .NET Framework 基于 .design.dll 和 Microsoft 的控件扩展性模型不再受支持。 .NET Framework 的新 WPF XAML 设计器将为 .NET ( .NET Core) 提供与 WPF XAML 设计器相同的扩展性模型。 如果已为 .NET ( .NET Core) 创建了 .designtools.dll 扩展，则该相同的扩展将适用于 .NET Framework 的新 WPF XAML 设计器。 请参阅下面的迁移链接，了解有关如何迁移到 WPF 平台的新扩展性模型的详细信息 ( .NET Framework 和 .NET Core) 和 UWP 平台向后移动。 
+.NET Framework 的当前 WPF XAML 设计器 已弃用，并且将替换为适用于 .NET Framework 的新 WPF XAML 设计器，该版本基于用于 .NET 的 WPF XAML 设计器 (.NET Core) 的相同体系结构。 这也意味着 WPF .NET Framework和 Microsoft 控制扩展性.design.dll模型。Windows。不再支持 Design.Extensibility。 适用于 XAML 设计器 的新 WPF .NET Framework 将提供与适用于 .NET 的 WPF XAML 设计器 (.NET Core) 。 如果已创建 .NET .designtools.dll (.NET Core) 的) 扩展，该扩展适用于新的 WPF XAML 设计器 .NET Framework。 请参阅下面的迁移链接，以进一步了解如何迁移到 WPF 平台的新扩展性模型 (.NET Framework以及 .NET Core) 和 UWP 平台。 
 
 ### <a name="recommended-updates"></a>建议的更新
 

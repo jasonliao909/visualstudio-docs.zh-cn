@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 47c7fa8eaa5a735f05b338101a1aefe0601e9915
-ms.sourcegitcommit: 4cd3eb514e9fa48e586279e38fe7c2e111ebb304
+ms.openlocfilehash: a6ce1a6d9f2f8a36d892d484cf9353e1312758b4
+ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/06/2021
-ms.locfileid: "113298268"
+ms.lasthandoff: 07/09/2021
+ms.locfileid: "113549506"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：使用 C\# 编写可视化工具
 
@@ -40,7 +40,7 @@ ms.locfileid: "113298268"
 * 创建一个新类库项目。
 
     ::: moniker range=">=vs-2019"
-    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)” 。 单击“下一步”。  在出现的对话框中，键入名称 `MyFirstVisualizer`，然后单击“创建”。
+    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)” 。 单击“下一步”  。 在出现的对话框中，键入名称 `MyFirstVisualizer`，然后单击“创建”。
 
     对于可视化工具项目，请确保选择的是 .NET Framework 类库而不是 .NET。 虽然可视化工具需为 .NET Framework，但调用的应用可以是 .NET Core。
     ::: moniker-end
@@ -177,10 +177,10 @@ ms.locfileid: "113298268"
 
     ::: moniker range=">=vs-2019"
 
-    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在搜索框中键入“控制台应用”，然后选择“控制台应用(.NET Framework)”或用于 .NET 的“控制台应用”  。 单击“下一步”。  在出现的对话框中，键入名称 `MyTestConsole`，然后单击“创建”。
+    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在搜索框中键入“控制台应用”，然后选择“控制台应用(.NET Framework)”或用于 .NET 的“控制台应用”  。 单击“下一步”  。 在出现的对话框中，键入名称 `MyTestConsole`，然后单击“创建”。
 
     > [!NOTE]
-    > 如果要使用测试工具轻松测试可视化工具，请创建一个 .NET Framework 控制台应用。 可以改为创建 .NET 控制台应用，但稍后介绍的测试工具尚不支持 .NET，因此需要安装可视化工具来对其进行测试。 对于此方案，请先在此处创建控制台应用，然后执行[添加调试对象端数据对象](#add-a-debuggee-side-data-object)中所述的步骤。
+    > 如果要使用测试工具轻松测试可视化工具，请创建一个 .NET Framework 控制台应用。 可以改为创建 .NET 控制台应用，但稍后介绍的测试工具尚不支持 .NET，因此需要安装可视化工具来对其进行测试。 对于 .NET 控制台应用，首先在此处创建控制台应用，添加所需的 DLL 和项目引用，然后按照[添加调试对象端数据对象](#add-a-debuggee-side-data-object)中所述的步骤进行操作。
     ::: moniker-end
     ::: moniker range="vs-2017"
     从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”   。
@@ -247,14 +247,18 @@ ms.locfileid: "113298268"
 
 在本部分中，将从 `System.String` 数据对象转换到自定义数据对象。  
 
-1. 依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)”或用于 .NET Standard 的“类库”  。
+1. 在“解决方案资源管理器”中，右键单击解决方案，选择“添加”，然后单击“新建项目”。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)”或用于 .NET Standard 的“类库”  。
 
    >[!NOTE]
    >如果使用 .NET Framework 测试控制台应用，请确保创建 .NET Framework 类库项目。
 
-1. 单击“下一步”。  在出现的对话框中，键入名称 `MyDataObject`，然后单击“创建”。
+1. 单击“下一步”  。 在出现的对话框中，键入名称 `MyDataObject`，然后单击“创建”。
 
 1. （仅限 .NET Standard 类库）在解决方案资源管理器中，右键单击项目并选择“编辑项目文件”。 将 `<TargetFramework>` 值更改为 `netstandard2.0`。
+
+   ```xml
+   <TargetFramework>netstandard2.0</TargetFramework>
+   ```
 
 1. 在 `MyDataObject` 命名空间中，将默认代码替换为以下代码。
 
@@ -321,7 +325,7 @@ ms.locfileid: "113298268"
    }
    ```
 
-   调试器需要引用可视化工具。 维护引用的一种方法是将前面的代码始终保留在正确的位置。
+   控制台应用需要对可视化工具的运行时引用。 可以通过保留前面的代码（而不是将其注释掉）来维护引用。
 
 1. 对于 .NET Framework 控制台应用，可以运行测试工具（按 F5），也可以按照[如何：安装可视化工具](../debugger/how-to-install-a-visualizer.md)中的说明进行操作。
 

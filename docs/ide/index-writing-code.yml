@@ -7,15 +7,15 @@ metadata:
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
   ms.topic: landing-page
-  author: jillre
-  ms.author: jillfra
+  author: terryglee
+  ms.author: tglee
   ms.date: 10/15/2019
-  ms.openlocfilehash: 9879f8709aea87a72c10319de4e0c5fdb6f3ff3e
-  ms.sourcegitcommit: cea9e5787ff33e0e18aa1942bf4236748e0ef547
+  ms.openlocfilehash: 4c5fd5efd2c3473698c488357bbc512e8e43e993
+  ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 10/19/2020
-  ms.locfileid: "92197460"
+  ms.lasthandoff: 07/15/2021
+  ms.locfileid: "114232877"
 landingContent:
 - title: 打开或创建项目
   linkLists:

@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f3d9a907d0857e918069fc4542d59d87242d609
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b8310133520231434ba7ed342a5e855892e3c53a
+ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865834"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114201736"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
 
@@ -73,7 +73,26 @@ ms.locfileid: "99865834"
 
 1. 重写 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A?displayProperty=fullName> 方法以显示接口。 使用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDialogVisualizerService> 方法在界面中显示 Windows 窗体、对话框或控件。
 
-4. 应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，让可视化工具显示它 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
+1. 应用 <xref:System.Diagnostics.DebuggerVisualizerAttribute>，让可视化工具显示它 (<xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer>)。
+
+#### <a name="special-debugger-side-considerations-for-net-50"></a>有关 .NET 5.0+ 的特殊调试器端注意事项
+
+默认情况下，自定义可视化工具使用 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 类通过二进制序列化在调试对象端和调试器端之间传输数据。 但是，由于不稳定漏洞的安全问题，此类序列化在 .NET 5 及更高版本中是缩短的。
+此外，在 ASP.NET Core 5 中已将其标记为完全过时，并按 [ASP.NET Core 文档](/dotnet/core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete)中所述进行使用。
+因此，本部分介绍了应采取的必要步骤，以使你的可视化工具在此方案中仍受支持。
+
+- 出于兼容性原因，上一部分中被替代的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A> 方法仍采用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>。 尽管如此，它的类型实际上是 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider2>。
+因此，将 `objectProvider` 对象强制转换为已更新的接口。
+
+- 将对象（如命令或数据）发送到调试对象端时，使用 `IVisualizerObjectProvider2.Serialize` 方法将其传递到流，它将根据调试对象进程的运行时确定要使用的最佳序列化格式。
+然后，将流传递到 `IVisualizerObjectProvider2.TransferData` 方法。
+
+- 如果调试对象端可视化工具组件需要向调试器端返回任何内容，则它将位于 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider.TransferData%2A> 方法返回的 <xref:System.IO.Stream> 对象中。 使用 `IVisualizerObjectProvider2.GetDeserializableObjectFrom` 方法从中获取 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDeserializableObject> 实例，并根据需要对其进行处理。
+
+请参阅[有关 .NET 5.0+ 的特殊调试对象端注意事项](#special-debuggee-side-considerations-for-net-50)部分，了解在不支持使用二进制序列化时，调试对象端所需的其他更改。
+
+> [!NOTE]
+> 若要了解有关此问题的详细信息，请参阅 [BinaryFormatter 安全指南](/dotnet/standard/serialization/binaryformatter-security-guide)。
 
 ### <a name="to-create-the-visualizer-object-source-for-the-debuggee-side"></a>为调试对象端创建可视化工具对象源
 
@@ -94,6 +113,15 @@ ms.locfileid: "99865834"
    ```
 
    它们是唯一受支持的 TFM。
+
+#### <a name="special-debuggee-side-considerations-for-net-50"></a>有关 .NET 5.0+ 的特殊调试对象端注意事项
+
+> [!IMPORTANT]
+> 由于默认情况下使用的基础二进制序列化方法的安全问题，可视化工具需要在 .NET 5.0 及更高版本中执行其他步骤。 在继续操作之前，请阅读本[部分](#special-debugger-side-considerations-for-net-50)。
+
+- 如果可视化工具实现 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A> 方法，则使用最新 `VisualizerObjectSource` 版本中提供的新添加的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetDeserializableObject%2A> 方法。 返回的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDeserializableObject> 有助于确定对象的序列化格式（二进制或 JSON）并反序列化基础对象，以便可以使用该对象。
+
+- 如果调试对象端将数据作为 `TransferData` 调用的一部分返回到调试器端，则通过 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.Serialize%2A> 方法将响应序列化为调试器端的流。
 
 ## <a name="see-also"></a>请参阅
 

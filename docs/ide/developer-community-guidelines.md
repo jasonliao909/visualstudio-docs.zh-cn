@@ -8,12 +8,12 @@ ms.author: madsk
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0722716b086877d5522b9ef8fae79976fbdb0805
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 21cf3bd6a0c208a78cd391f93702865e905482e0
+ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894668"
+ms.lasthandoff: 07/14/2021
+ms.locfileid: "113756882"
 ---
 # <a name="developer-community-guidelines"></a>开发者社区指南
 
@@ -57,7 +57,7 @@ ms.locfileid: "99894668"
 
 会审问题这一过程涉及多个步骤，是在功能团队中协作完成的。 会审通常需要一周时间，但也可能要花更长时间。 会审的目标是让你明白我们将如何处理你的问题。 例如，在会审后，你知道我们是计划解决你的问题还是计划等待更多社区反馈。
 
-报告问题后，可通过状态了解你的提交在其生命周期中所处的位置。 Visual Studio 产品团队在评审你的反馈时，会将它设为适当的状态。 可查看[问题状态和常见问题解答](./report-a-problem.md)来跟踪问题报告的进度。
+报告问题后，可通过状态了解你的提交在其生命周期中所处的位置。 Visual Studio 产品团队在评审你的反馈时，会将它设为适当的状态。 可查看[问题状态和常见问题解答](./report-a-problem.yml)来跟踪问题报告的进度。
 
 ### <a name="prioritizing-which-issues-to-fix"></a>确定要修复的问题的优先级
 
@@ -101,7 +101,7 @@ ms.locfileid: "99894668"
 
 如果建议不符合我们的整体产品方向，则会以超出范围的缘由将其关闭。 例如，我们可能具有相似的对 Visual Studio 产品系列中其他成员的投资。 或者建议的功能可能只与少数人相关，进行扩展会更适合提供此功能。
 
-可查看[建议状态和常见问题解答](./report-a-problem.md)来跟踪功能建议的进度。
+可查看[建议状态和常见问题解答](./report-a-problem.yml)来跟踪功能建议的进度。
 
 ## <a name="discussion-etiquette"></a>讨论礼节
 

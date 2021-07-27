@@ -1,6 +1,6 @@
 ---
 title: 代码分析规则集
-ms.date: 04/02/2018
+ms.date: 07/23/2021
 description: 了解 Visual Studio 代码分析中的内置和自定义规则集。 请参阅如何在文件中指定规则集和如何配置项目中的规则集。
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
@@ -13,12 +13,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 980c77067ac237dba13c8c888c358a0adeab6d1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6cc9f399397dc9fee94c31a48aa8a868a73011b1
+ms.sourcegitcommit: 8d847400f5662461dcd5d866d0edab20f66cb375
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859653"
+ms.lasthandoff: 07/24/2021
+ms.locfileid: "114664514"
 ---
 # <a name="use-rule-sets-to-group-code-analysis-rules"></a>使用规则集对代码分析规则进行分组
 
@@ -27,6 +27,9 @@ ms.locfileid: "99859653"
 你可以通过添加或删除规则或将规则严重性更改为在 **错误列表** 中显示为警告或错误来自定义规则集。 自定义规则集可以满足特定开发环境的需求。 自定义规则集时，规则集编辑器会提供搜索和筛选工具，以帮助您在此过程中使用。
 
 规则集可用于 [托管代码分析](/dotnet/fundamentals/code-analysis/code-quality-rule-options)、 [托管代码的传统分析](how-to-configure-code-analysis-for-a-managed-code-project.md)和 [c + + 代码分析](/cpp/code-quality/using-rule-sets-to-specify-the-cpp-rules-to-run)。
+
+>[!NOTE]
+> 从 Visual Studio 2019 版16.3 开始，你可以使用 EditorConfig 文件来配置 .net 源代码分析的规则，但不能配置旧的分析。 有关详细信息，请参阅常见问题解答中的 [EditorConfig 与规则集](../code-quality/analyzers-faq.yml) 部分。
 
 ## <a name="rule-set-format"></a>规则集格式
 

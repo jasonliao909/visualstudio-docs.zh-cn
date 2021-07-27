@@ -88,11 +88,11 @@ sections:
         style: cards
         className: cardsW
         items:
-          - href: /samples/xamarin/mac-samples/hello-mac/
+          - href: /xamarin/mac/get-started/hello-mac/
             html: Mac 开发入门所用的 Hello World 应用。
             image:
               src: ../media/samples/hellomac.png
-              href: /samples/xamarin/mac-samples/hello-mac/
+              href: /xamarin/mac/get-started/hello-mac/
             title: 了解 Mac
           - href: /samples/xamarin/mac-samples/maccontrols/
             html: Mac 应用的 UI 控件示例。

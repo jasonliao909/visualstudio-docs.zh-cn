@@ -3,19 +3,19 @@ title: 引用（编程捕获）| Microsoft Docs
 description: 使用编程捕获 API 对图形诊断的捕获功能进行完全编程控制。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 452360e04170bbf217c2f6ac0598533f3cab2259
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 572629235e3b64028b70ff59090f9c4f7991d323
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905103"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232695"
 ---
 # <a name="reference-programmatic-capture"></a>引用（编程捕获）
 图形诊断支持通过编程捕获 API 对其捕获功能进行编程控制。 此 API 可用于切换消息和将消息添加到图形诊断 HUD（提醒显示）、初始化和创建图形日志文件以及捕获图形信息。

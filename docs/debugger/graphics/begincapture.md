@@ -3,19 +3,19 @@ title: BeginCapture | Microsoft Docs
 description: 使用 VsgDbg 类的 BeginCapture 方法，开始一个将以 EndCapture 结尾的捕获间隔。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
-ms.topic: conceptual
+ms.topic: reference
 ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: a9e002a66ec3ec121a4cdc20ffb9ce59c1ed9dc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9fc81bdd058d3a8c1dbe26bbe944bcb0e354ac7
+ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874569"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114232727"
 ---
 # <a name="begincapture"></a>BeginCapture
 开始一个捕获间隔，该间隔将以 `EndCapture` 结束。
