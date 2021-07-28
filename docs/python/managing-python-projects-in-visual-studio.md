@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c9a20ea3baee84657e26e2d98bb5726c20ceba9e
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: 9de3caf4bd0c9401628bb050168f3a7045f902f0
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254896"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592172"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 
@@ -81,7 +81,6 @@ Visual Studio 提供多种方法用于从零开始，或根据现有代码设置
 | --- | --- |
 | [**根据现有 Python 代码**](#create-project-from-existing-files) | 从文件夹结构中的现有 Python 代码创建 Visual Studio 项目。  |
 | **Python 应用程序** | 新 Python 应用程序的基本项目结构具有一个空的源文件。 默认情况下，项目在默认全局环境的控制台解释器中运行，通过[分配其他环境](selecting-a-python-environment-for-a-project.md)可以更改环境。 |
-| [**Azure 云服务**](python-azure-cloud-service-project-template.md) | 使用 Python 编写的 Azure 云服务项目。 |
 | [**Web 项目**](python-web-application-project-templates.md) | 基于各种框架（包括 Bottle、Django 和 Flask）的 Web 应用项目。 |
 | **IronPython 应用程序** | 与 Python 应用程序模板类似，但使用 IronPython 时，默认启用 .NET 互操作并通过 .NET 语言进行混合模式调试。 |
 | **IronPython WPF 应用程序** | 将 IronPython 和 Windows Presentation Foundation XAML 文件配合使用以获得应用程序的用户界面的项目结构。 Visual Studio 提供 XAML UI 设计器，在 Python 中可以编写代码隐藏，以及运行应用程序时不显示控制台。 |

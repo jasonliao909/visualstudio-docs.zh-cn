@@ -2,18 +2,19 @@
 title: R 教程入门
 description: 在 Visual Studio 中使用 R 的演练，其中包括项目创建、交互式窗口、代码编辑和调试。
 ms.date: 06/29/2017
+ms.prod: visual-studio-dev15
 ms.topic: tutorial
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 80e09a9c6b86d37e3069e3694bea289ac37282af
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8091da95ae28d872ef6d3f947beb720dbb009308
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873692"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679954"
 ---
 # <a name="get-started-with-r-tools-for-visual-studio"></a>Visual Studio 中的 R 工具入门
 

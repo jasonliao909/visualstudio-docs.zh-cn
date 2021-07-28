@@ -2,18 +2,19 @@
 title: R Markdown
 description: 如何在 Visual Studio 中创建 R Markdown 文档，以生成高质量的报表、演示文稿和仪表板。
 ms.date: 11/16/2017
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 4e74966e71a7d440aed918e8aa609eeb8e68c355
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1fd97d60cd3c201301a7235f0995fda6ae88432b
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851876"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680168"
 ---
 # <a name="create-r-markdown-documents"></a>创建 R Markdown 文档
 
@@ -34,7 +35,7 @@ ms.locfileid: "99851876"
 
     ```
 
-1. 要创建新的 R Markdown 文件，请使用“文件” > “新建” > “文件”菜单命令，并在列表中选择”R” > ”R Markdown”。 访问项目的上下文，在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或“添加” > “新项目”，再在列表中选择”R Markdown”）。
+1. 要创建新的 R Markdown 文件，请使用“文件” > “新建” > “文件”菜单命令，并在列表中选择”R” > ”R Markdown”    。 访问项目的上下文，在解决方案资源管理器中右键单击项目，选择“添加 R Markdown”（或“添加” > “新项目”，再在列表中选择”R Markdown”）。
 
 1. 新文件的默认内容如下：
 
@@ -64,10 +65,10 @@ ms.locfileid: "99851876"
     ~~~
     <!-- markdownlint-disable MD048 -->
 
-## <a name="previews"></a>预览版
+## <a name="previews"></a>预览
 
-Visual Studio 2017 版本 15.5 以及更高版本自动提供 R Markdown 的实时预览。 要启用编辑器与预览之间的自动同步，请选择“R 工具” > “Markdown” > “自动同步”(Ctrl+Shift+Y)。 如果没有使用自动同步，可使用“R 工具” > “Markdown” > “重载 R Markdown 预览”来刷新预览。
+Visual Studio 2017 版本 15.5 以及更高版本自动提供 R Markdown 的实时预览。 要启用编辑器与预览之间的自动同步，请选择“R 工具” > “Markdown” > “自动同步”(Ctrl+Shift+Y)     。 如果没有使用自动同步，可使用“R 工具” > “Markdown” > “重载 R Markdown 预览”来刷新预览  。
 
-还可以通过在编辑器中右键单击并选择一个“预览”命令，在 HTML、PDF 和 Microsoft Word 格式中预览文件  。 还可通过“R 工具” > “Markdown”菜单获取相同命令。 （在早期版本的 Visual Studio 中，这些命令位于“R 工具” > “发布”菜单。）
+还可以通过在编辑器中右键单击并选择一个“预览”命令，在 HTML、PDF 和 Microsoft Word 格式中预览文件。 还可通过“R 工具” > “Markdown”菜单获取相同命令 。 （在早期版本的 Visual Studio 中，这些命令位于“R 工具” > “发布”菜单。 ）
 
 ![R Markdown 实时预览和其他预览菜单命令](media/rmarkdown-live-preview.png)

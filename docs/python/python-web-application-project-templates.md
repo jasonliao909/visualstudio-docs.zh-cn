@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6553017034dc46cfd1c035564a83dde89d77d057
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: 159dc7cbab42fbfa8474e922f960f48bf0d2d7f0
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254844"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592120"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -33,7 +33,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 
 ::: moniker range="<=vs-2017"
 
-前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设  。 有关“Azure 云服务”模板的详细信息，请参阅 [Python 的 Azure 云服务项目](python-azure-cloud-service-project-template.md)。
+前面提到的通用“Web 项目”模板只提供了一个空的 Visual Studio 项目，只有一个 Python 项目，没有代码，也没有任何假设  。
 
 ::: moniker-end
 
@@ -63,8 +63,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | **Bottle Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中，并通过 app.py 中的代码进行处理   。 单个页面的路由包含在 routes.py 中，views 文件夹包含页面模板   。|
 | **Django Web 项目** | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面、身份验证支持和一个 SQLite 数据库（但没有数据模型）。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
-| **Flask Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中  。 views.py 中的代码处理路由，页面模板使用 templates 文件夹中包含的 Jinja 引擎   。 runserver.py 文件提供启动代码  。 请参阅[学习 Flask 步骤 4](learn-flask-visual-studio-step-04-full-flask-project-template.md)。 |
-| **Flask/Jade Web 项目** | 生成与使用“Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎的 Jade 扩展  。 |
+| **Flask Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中  。 views.py 中的代码处理路由，页面模板使用 templates 文件夹中包含的 Jinja 引擎   。 runserver.py 文件提供启动代码  。 查看 
 
 ::: moniker range="vs-2017"
 ### <a name="polls-group"></a>投票组
@@ -75,7 +74,6 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | **投票 Bottle Web 项目** | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 models 文件夹中，settings.py 文件包含用于确定使用哪个数据存储的代码   。 |
 | **投票 Django Web 项目** | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面和一个 SQLite 数据库。 加入对 Django 管理界面的自定义设置，以允许经过身份验证的管理员创建和管理投票。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 6](learn-django-in-visual-studio-step-06-polls-django-web-project-template.md)。 |
-| **投票 Flask Web 项目** | 生成可以针对使用 `REPOSITORY_NAME` 环境变量配置的内存中数据库、MongoDB 或 Azure 表存储运行的应用。 数据模型和数据存储代码包含在 models 文件夹中，settings.py 文件包含用于确定使用哪个数据存储的代码   。 该应用对页面模板使用 Jinja 引擎。 请参阅[学习 Flask 步骤 5](learn-flask-visual-studio-step-05-polls-flask-web-project-template.md)。 |
 | **投票 Flask/Jade Web 项目** | 生成与使用“投票 Flask Web 项目”模板生成的相同的应用，但使用 Jade 模板引擎的 Jade 扩展  。 |
 ::: moniker-end
 
@@ -88,12 +86,6 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 如果使用的是源代码管理，通常会忽略虚拟环境文件夹，因为该环境只能使用 requirements.txt 重新创建  。 排除文件夹的最佳方法是先在上面的提示中选择“我将自行安装”  ，然后在创建虚拟环境之前禁用自动提交。 有关详细信息，请参阅[学习 Django 教程 - 步骤 1-2 和 1-3](learn-django-in-visual-studio-step-01-project-and-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository) 以及[学习 Flask 教程 - 步骤 1-2 和 1-3](learn-flask-visual-studio-step-01-project-solution.md#step-1-2-examine-the-git-controls-and-publish-to-a-remote-repository)。
 
 部署到 Microsoft Azure App Service 时，选择一个 Python 版本作为[站点扩展](./managing-python-on-azure-app-service.md?view=vs-2019&preserve-view=true)并手动安装包。 此外，因为 Azure 应用服务从 Visual Studio 部署时不会自动安装 requirements.txt 文件中的包，请遵照 [aka.ms/PythonOnAppService](managing-python-on-azure-app-service.md) 上的配置详细信息操作。
-
-::: moniker range="<=vs-2017"
-
-Microsoft Azure 云服务支持 requirements.txt 文件   。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
-
-::: moniker-end
 
 ## <a name="debugging"></a>调试
 
@@ -155,15 +147,6 @@ Pyramid 应用当前最好使用 `pcreate` 命令行工具进行创建。 创建
 
 如果有针对另一个要共享的框架的设置，或者要为另一个框架请求设置，则[在 GitHub 上提出问题](https://github.com/Microsoft/PTVS/issues)。
 
-::: moniker range="<=vs-2017"
-
-## <a name="convert-a-project-to-azure-cloud-service"></a>将项目转换为 Azure 云服务
-
-“转换为 Microsoft Azure 云服务项目”命令（见下图）会将云服务项目添加到解决方案  。 此项目包括要使用的虚拟机和服务的部署设置和配置。 使用云项目上的“发布”命令部署到云服务；Python 项目上的“发布”命令仍会部署到网站   。 有关详细信息，请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。
-
-![“转换为 Microsoft Azure 云服务项目”命令](media/template-web-convert-menu.png)
-
-::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 

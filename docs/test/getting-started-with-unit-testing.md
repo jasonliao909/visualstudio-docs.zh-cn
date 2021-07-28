@@ -2,7 +2,7 @@
 title: 单元测试入门
 description: 使用 Visual Studio 定义和运行单元测试，使代码保持正常运行并在客户之前找到错误和缺陷。
 ms.custom: SEO-VS-2020
-ms.date: 04/07/2020
+ms.date: 12/22/2020
 ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e1576f8865fc5945514ce6965cdba66a1cfda55
-ms.sourcegitcommit: 3985d0ae8d6332f4682c82a10897763173d52961
+ms.openlocfilehash: 97d100738a47ba91c0f7cb87fdee5da53f2ede5d
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/14/2021
-ms.locfileid: "107386045"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703368"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 

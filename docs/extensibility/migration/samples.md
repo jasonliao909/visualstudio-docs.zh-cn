@@ -9,12 +9,13 @@ manager: jmartens
 monikerRange: vs-2022
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12bbc159884c16ea89849e5c97a4b87292f7089d
-ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
+feedback_system: GitHub
+ms.openlocfilehash: 542c0340f9867815c21903090053d01a14b94d9c
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112602216"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592276"
 ---
 # <a name="imageoptimizer---update-a-visual-studio-extension-step-by-step"></a>ImageOptimizer - 按步骤更新 Visual Studio 扩展
 

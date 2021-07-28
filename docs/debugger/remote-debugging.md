@@ -5,7 +5,7 @@ ms.custom:
 - remotedebugging
 - seodec18
 - SEO-VS-2020
-ms.date: 07/02/2018
+ms.date: 7/26/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -23,12 +23,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f67035dc2f7a33fb436c0c51ba2214272ab2cf79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d75d3151804fcf7d20d23390ae0e21493c0bccc
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891418"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703355"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。

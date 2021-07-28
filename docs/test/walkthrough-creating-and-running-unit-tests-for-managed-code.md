@@ -2,7 +2,7 @@
 title: C# 单元测试教程
 description: 了解如何使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器创建、运行和自定义单元测试系列。
 ms.custom: SEO-VS-2020
-ms.date: 05/14/2019
+ms.date: 02/12/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -15,12 +15,12 @@ manager: jmartens
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: a6ab205b7f651f8bb5954bee4998602c79fd78e7
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 62772187c076b7891a0159b73cae2ca819ac6bc3
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683928"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703332"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 

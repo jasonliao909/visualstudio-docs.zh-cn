@@ -7,14 +7,14 @@ manager: jmartens
 ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: how-to
 ms.workload: multiple
-ms.date: 07/25/2019
+ms.date: 03/08/2021
 ms.technology: vs-azure
-ms.openlocfilehash: 8fb821acb48dd05aa09723fe5c6c254e7d1ca648
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2f2b5c0ff9b6a78f4917a517c06f3ce96ea7c1d7
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306379"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592019"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 

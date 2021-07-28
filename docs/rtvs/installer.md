@@ -2,18 +2,19 @@
 title: 欢迎使用针对 Visual Studio 的 R 工具
 description: 已安装针对 Visual Studio 的 R 工具的开发人员的摘要信息。
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: adceb7e79be32132d65c21d54a41184e1a3ff4ad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ffcc3f0afb0fbc5b1863bc00b106f30e7f3aeb78
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908714"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679929"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 
