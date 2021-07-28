@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 09fb452d579130cdf6597ada3af509b35f24ff43
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: d5a357cf2a2da1fee747d777d02aae146d97bd7b
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254805"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114591912"
 ---
 # <a name="how-to-install-python-support-in-visual-studio-on-windows"></a>如何在 Windows 上的 Visual Studio 中安装 Python 支持
 
@@ -78,7 +78,7 @@ ms.locfileid: "112254805"
     | **Python Web 支持** | 安装用于 Web 开发的工具（包括 HTML、CSS 和 JavaScript 编辑支持）以及用于使用 Bottle、Flask 和 Django 框架的项目的模板。 请参阅 [Python Web 项目模板](python-web-application-project-templates.md)。 |
     | **Python IoT 支持** | 支持使用 Python 开发 Windows IoT Core。 |
     | **Python 本机开发工具** | 安装 C++ 编译器和其他必要组件用于开发 Python 本机扩展。 请参阅[创建适用于 Python 的 C++ 扩展](working-with-c-cpp-python-in-visual-studio.md)。 若要获取全面的 C++ 支持，还请安装“使用 C++ 的桌面开发”工作负载。 |
-    | **Azure 云服务核心工具** | 提供在 Python 中开发 Azure 云服务的其他支持。 请参阅 [Azure 云服务项目](python-azure-cloud-service-project-template.md)。 |
+
     ::: moniker-end
 
     ::: moniker range=">=vs-2019"

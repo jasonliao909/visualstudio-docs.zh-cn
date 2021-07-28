@@ -1,8 +1,7 @@
 ---
 title: 单元测试基础知识
 description: 了解 Visual Studio 测试资源管理器如何提供灵活而高效的方法来运行单元测试并查看其结果。
-ms.custom: SEO-VS-2020
-ms.date: 08/07/2019
+ms.date: 07/26/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.UnitTest.CreateUnitTest
@@ -11,12 +10,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 755affbf52aa31539b35af4520f5a8d17254f776
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2b11a06b070bee16d986635cb6f20ee940a306f
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962725"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703374"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -349,8 +348,8 @@ public void My_Test ()
 
 ```csharp
 [DataSource(
-    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",
-    "AddIntegerHelperData"
+    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb&quot;,
+    &quot;AddIntegerHelperData"
 )]
 [TestMethod()]
 public void AddIntegerHelper_DataDrivenValues_AllShouldPass()

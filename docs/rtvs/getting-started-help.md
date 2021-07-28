@@ -1,19 +1,20 @@
 ---
 title: R 的帮助窗口
-description: 在 Visual Studio 中，R 的相关帮助通过 ? 命令直接集成到交互 对话框。
+description: 在 Visual Studio 中，R 的相关帮助通过 ? 命令直接集成到交互 。
 ms.date: 01/24/2018
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 551f929e4d42b208dd222f052b27720edb273761
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 569367c04dd7413f421e04aa9067d4b0a45dcb51
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885763"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114680068"
 ---
 # <a name="help-in-r-tools-for-visual-studio"></a>针对 Visual Studio 的 R 工具中的帮助
 
@@ -24,7 +25,7 @@ ms.locfileid: "99885763"
 > [!Tip]
 > 与 Visual Studio 中的所有其他窗口一样，可按照任意喜欢的方式排列和停靠帮助窗口。 请参阅[在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)。
 >
-> 要在浏览器中打开帮助结果，请选择“R 工具” > “选项”菜单，并将“R 帮助浏览器”属性设置为 `External`。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
+> 要在浏览器中打开帮助结果，请选择“R 工具” > “选项”菜单，并将“R 帮助浏览器”属性设置为 `External`  。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
 
 若要搜索帮助，请使用 `??` 命令后跟搜索词的形式进行搜索。 如果搜索词包含空格，请使用引号：
 
@@ -42,13 +43,13 @@ ms.locfileid: "99885763"
 
 开发人员通常搜索 R 文档寻找关于函数名称、数据集和其他元素的帮助。 针对 Visual Studio 的 R 工具 (RTVS) 将帮助查找直接集成到编辑器和交互式窗口，从而简化了该过程。
 
-- 如果在自动完成操作期间按 F1，将生成一个列表，列出与子字符串匹配的帮助结果  。
-- 右键单击搜索词（如某个函数），然后选择“相关帮助”命令即可打开该函数的帮助  。 还可对任何选定内容调用“相关帮助”  。
+- 如果在自动完成操作期间按 F1，将生成一个列表，列出与子字符串匹配的帮助结果。
+- 右键单击搜索词（如某个函数），然后选择“相关帮助”命令即可打开该函数的帮助。 还可对任何选定内容调用“相关帮助”。
 
     ![通过右键单击上下文菜单调用帮助](media/help-right-click.png)
 
 > [!Tip]
-> 若要在浏览器中打开集成帮助，请选择“R 工具” > “选项”，并将“F1 Web 浏览器”设置为 `External`。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
+> 若要在浏览器中打开集成帮助，请选择“R 工具” > “选项”，并将“F1 Web 浏览器”设置为 `External`  。 请参阅[选项](options-for-r-tools-in-visual-studio.md)。
 
 ## <a name="integrated-stackoverflow-search"></a>集成的 StackOverflow 搜索
 
@@ -56,7 +57,7 @@ ms.locfileid: "99885763"
 
 ![Visual Studio 中的 Web 搜索结果](media/help-web-search-results.png)
 
-可通过“R 工具” > “选项” > “F1 Web 搜索字符串”选项更改追加的作用域字符串 `R site:stackoverflow`：
+可通过“R 工具” > “选项” > “F1 Web 搜索字符串”选项更改追加的作用域字符串 `R site:stackoverflow`  ：
 
 ![更改 F1 Web 搜索字符串选项](media/options-dialog.png)
 

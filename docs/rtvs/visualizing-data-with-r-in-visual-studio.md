@@ -2,18 +2,19 @@
 title: 使用 R 可视化数据
 description: 在 Visual Studio 中如何使用绘图窗口从 R 程序中绘制数据。
 ms.date: 06/29/2017
+ms.prod: visual-studio-dev15
 ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
 ms.workload:
 - data-science
-ms.openlocfilehash: 64b5ac36edf6c5f506628f9af88ba36bd62c71c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38f3e684cf9d045baeb107b7d0ab84cddfff50be
+ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851824"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114679834"
 ---
 # <a name="create-visual-data-plots-with-r"></a>使用 R 创建可视数据图
 

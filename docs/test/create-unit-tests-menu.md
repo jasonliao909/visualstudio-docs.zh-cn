@@ -2,7 +2,7 @@
 title: 创建单元测试方法存根
 description: 了解如何使用“创建单元测试”命令，以便通过它轻松配置测试项目、测试类和其中的测试方法存根。
 ms.custom: SEO-VS-2020
-ms.date: 04/24/2020
+ms.date: 07/26/2021
 ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
@@ -11,12 +11,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: fb30135ac5c137fdc836273855e2d9f000f1c6b2
-ms.sourcegitcommit: 3a855d3513407ea78336386dc3be0b75142614b0
+ms.openlocfilehash: 4edef0815b6923ea204c1a0d1890837ec9bead6c
+ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103622629"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114703330"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -51,7 +51,7 @@ ms.locfileid: "103622629"
 
 若要自动为 NUnit 或 xUnit 生成单元测试，请从 Visual Studio Marketplace 安装以下某个测试框架扩展：
 
-* [适用于测试生成器的 NUnit 扩展](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension)
+* [适用于测试生成器的 NUnit 扩展](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371)
 * [适用于测试生成器的 xUnit.net 扩展](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)
 
 ## <a name="when-should-i-use-this-feature"></a>应何时使用此功能？

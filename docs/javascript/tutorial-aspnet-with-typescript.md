@@ -11,12 +11,13 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 0728011c05d47996a313c11a18f31a196ec08e10
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+monikerRange: <= vs-2019
+ms.openlocfilehash: 77a6ff52546fe879db74175d100d1be42966fd42
+ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306494"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114597017"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
@@ -28,15 +29,9 @@ ms.locfileid: "112306494"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -52,7 +47,7 @@ ms.locfileid: "112306494"
 
 * 必须安装 Visual Studio 且具有 ASP.NET Web 开发工作负载。
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range="vs-2019"
     如果尚未安装 Visual Studio 2019，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页免费安装。
     ::: moniker-end
     ::: moniker range="vs-2017"
@@ -74,13 +69,13 @@ Visual Studio 管理项目中的单个应用程序的文件  。 该项目包括
 
 1. 创建新项目。
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range="vs-2019"
     在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果开始窗口未打开，请选择“文件” > “开始窗口” 。 键入“Web 应用”，选择“C#”作为语言，然后选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，为项目命名，然后选择“下一步”。
 
     选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
-    从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“.NET Core”  。 在中间窗格中，选择“ASP.NET Core Web 应用程序 - C#”，然后选择“确定”。
+    从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“.NET Core”  。 在中间窗格中，选择“ASP.NET Core Web 应用程序 - C#”，然后选择“确定”。
 
     在显示的对话框中，选择“Web 应用”之后，在选择“Web 应用(模型-视图-控制器)”，然后选择“创建”（或“确定”）  。
 

@@ -15,12 +15,12 @@ ms.technology: vs-ide-general
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fca0b01a01e3c8db366a4ac2079d794299e5c88
-ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+ms.openlocfilehash: 5a4f997333edd9d86cf30a4366211da59e3ead42
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "113280470"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114591827"
 ---
 # <a name="visual-studio-docs-whats-new-for-june-2021"></a>Visual Studio 文档：2021 年 6 月新增功能
 
@@ -585,8 +585,6 @@ ms.locfileid: "113280470"
 - [教程：在 Visual Studio 中开始使用 Django Web 框架](../python/learn-django-in-visual-studio-step-01-project-and-solution.md) - 从 Visual Studio 2019 Python 教程中删除了投票模板内容
 - [步骤 5：在 Django 中对用户进行身份验证](../python/learn-django-in-visual-studio-step-05-django-authentication.md) -从 Visual Studio 2019 Python 教程中删除了投票模板内容
 - [步骤 6：使用投票 Django Web 项目模板](../python/learn-django-in-visual-studio-step-06-polls-django-web-project-template.md) -从 Visual Studio 2019 Python 教程中删除了投票模板内容
-- [步骤 4：使用完整的 Flask Web 项目模板](../python/learn-flask-visual-studio-step-04-full-flask-project-template.md) -从 Visual Studio 2019 Python 教程中删除了投票模板内容
-- [步骤 5：使用投票 Flask Web 项目模板](../python/learn-flask-visual-studio-step-05-polls-flask-web-project-template.md) -从 Visual Studio 2019 Python 教程中删除了投票模板内容
 - [Django Web 项目模板](../python/python-django-web-application-project-template.md) -从 Visual Studio 2019 Python 教程中删除了投票模板内容
 - [Python Web 应用程序项目模板](../python/python-web-application-project-templates.md) -从 Visual Studio 2019 Python 教程中删除投票模板内容
 - [安装 Python 解释器的调试符号](../python/debugging-symbols-for-mixed-mode-c-cpp-python.md) - 添加 Python 2.7 最新 3 个版本
