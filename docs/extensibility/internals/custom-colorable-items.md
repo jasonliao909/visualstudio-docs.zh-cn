@@ -13,12 +13,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f08c5c9e533e3a21ec4b87e7d148c3022ee0fed1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2a7fdc1223527f4dc58a49442b24fc6fc3c5c816
+ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056788"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114995221"
 ---
 # <a name="custom-colorable-items"></a>自定义可着色项
 可以通过将自定义可着色项作为语言服务的一部分实现，来重写着色的类型列表，如关键字和注释。
@@ -30,9 +30,9 @@ ms.locfileid: "105056788"
  由于 IDE 处理 " **字体和颜色** " 对话框中可着色项的用户覆盖，因此只需提供名称为的每个自定义可着色项。 此名称将显示在 " **显示项** " 列表中。 可着色项按字母顺序显示。 若要将语言服务的自定义可着色项分组，可以用语言名称开始每个名称，例如 **NewLanguage** 和 **NewLanguage 关键字**。
 
 > [!CAUTION]
-> 应在可着色项名称中包含语言名称，以避免与现有可着色项名称冲突。 如果在开发过程中更改某个可着色项的名称，则必须重置在第一次访问可着色项时创建的缓存。 可以通过与 Visual Studio SDK 一起安装的 **CreateExpInstance** 工具（通常在目录中）来重置实验缓存：
+> 应在可着色项名称中包含语言名称，以避免与现有可着色项名称冲突。 如果在开发过程中更改某个可着色项的名称，则必须重置在第一次访问可着色项时创建的缓存。 可以通过与 Visual Studio SDK 一起安装的 **CreateExpInstance** 工具来重置实验缓存，该工具通常在 Visual Studio 安装文件夹下的以下目录中：
 >
-> *C:\Program 文件 (x86) \Microsoft Visual Studio 14.0 \ VSSDK\VisualStudioIntegration\Tools\Bin*
+> *VSSDK\VisualStudioIntegration\Tools\Bin*
 >
 > 若要重置缓存，请输入 **CreateExpInstance/Reset**。 有关 **CreateExpInstance** 的详细信息，请参阅 [CreateExpInstance 实用工具](../../extensibility/internals/createexpinstance-utility.md)。
 
