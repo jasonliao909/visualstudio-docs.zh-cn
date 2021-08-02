@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d474236aca50a74b96689001a56e7d0701caae30
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f44f90261c975e1569d0710d74cf6c5bef19aff2
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942381"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592328"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-flask-app"></a>步骤 3：通过 Flask 应用提供静态文件、添加页面和使用模板继承
 
@@ -36,15 +36,15 @@ ms.locfileid: "99942381"
 
 开发 Flask 应用时，通常会添加多个 Python、HTML、CSS 和 JavaScript 文件。 对于每个文件类型（以及诸如 web.config 等其他需要部署的文件），Visual Studio 提供了方便的[项模板](python-item-templates.md)来帮助入门。
 
-若要查看可用模板，请转到“解决方案资源管理器”  ，右键单击要在其中创建项的文件夹，选择“添加”   > “新项”  ：
+若要查看可用模板，请转到“解决方案资源管理器”，右键单击要在其中创建项的文件夹，选择“添加” > “新项”：
 
 ![Visual Studio 中的“添加新项”对话框](media/flask/step03-add-new-item-dialog.png)
 
-若要使用模板，选择所需的模板，为该文件指定一个名称，然后选择“确定”  。 以这种方式添加项会自动将文件添加到 Visual Studio 项目中，并标记对源代码管理所做的更改。
+若要使用模板，选择所需的模板，为该文件指定一个名称，然后选择“确定”。 以这种方式添加项会自动将文件添加到 Visual Studio 项目中，并标记对源代码管理所做的更改。
 
 ### <a name="question-how-does-visual-studio-know-which-item-templates-to-offer"></a>问：Visual Studio 如何知道要提供哪些项模板？
 
-答：Visual Studio 项目文件 (.pyproj) 包含一个项目类型标识符，它将其标记为 Python 项目  。 Visual Studio 使用此类型标识符来仅显示那些适用于项目类型的项模板。 通过这种方式，Visual Studio 可以为许多项目类型提供一组丰富的项模板，而不必每次都要求你对它们进行排序。
+答：Visual Studio 项目文件 (.pyproj) 包含一个项目类型标识符，它将其标记为 Python 项目。 Visual Studio 使用此类型标识符来仅显示那些适用于项目类型的项模板。 通过这种方式，Visual Studio 可以为许多项目类型提供一组丰富的项模板，而不必每次都要求你对它们进行排序。
 
 ## <a name="step-3-2-serve-static-files-from-your-app"></a>步骤 3-2：从应用中提供静态文件
 
@@ -58,7 +58,7 @@ ms.locfileid: "99942381"
 
 1. 在解决方案资源管理器中，右键单击 Visual Studio 项目中的“HelloFlask”文件夹，选择“添加” > “新文件夹”，然后命名 `static` 文件夹。
 
-1. 右键单击 static 文件夹，然后选择“添加” > “新项”。 在出现的对话框中，选择“样式表”模板，将文件命名为 `site.css`，然后选择“确定”。 site.css 文件出现在项目中，并在编辑器中打开  。 文件夹结构应类似于下图：
+1. 右键单击 static 文件夹，然后选择“添加” > “新项”。 在出现的对话框中，选择“样式表”模板，将文件命名为 `site.css`，然后选择“确定” 。 site.css 文件出现在项目中，并在编辑器中打开。 文件夹结构应类似于下图：
 
     ![解决方案资源管理器中显示的静态文件结构](media/flask/step03-static-file-structure.png)
 
@@ -115,7 +115,7 @@ Flask 提供一个名为 `serve_static_file` 的函数，可通过代码调用�
 
 ### <a name="question-are-there-any-conventions-for-organizing-static-files"></a>问：是否有组织静态文件的任何约定？
 
-答：可以在 static 文件夹中以所需的方式添加其他 CSS、JavaScript 和 HTML 文件  。 组织静态文件的一种典型方法是创建名为 fonts、scripts 和 content 的子文件夹（用于样式表和任何其他文件）    。
+答：可以在 static 文件夹中以所需的方式添加其他 CSS、JavaScript 和 HTML 文件。 组织静态文件的一种典型方法是创建名为 fonts、scripts 和 content 的子文件夹（用于样式表和任何其他文件）    。
 
 ### <a name="question-how-do-i-handle-url-variables-and-query-parameters-in-an-api"></a>问：如何在 API 中处理 URL 变量和查询参数？
 
@@ -184,7 +184,7 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
 
 - 包含  是可以使用语法 `{% include <template_path> %}` 在引用模板的特定位置插入的另一个页面模板。 如果想要在代码中动态更改路径，也可以使用一个变量。 包含通常用于页面主体，在页面特定位置拉入共享模板。
 
-- 继承  使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于为应用页面定义共享布局、导航栏和其他结构，这样一来，引用模板只需要添加或修改称为“块”  的基本模板的特定区域。
+- 继承使用页面模板开头的 `{% extends <template_path> %}` 来指定共享基本模板，然后会在此模板上生成引用模板。 继承通常用于为应用页面定义共享布局、导航栏和其他结构，这样一来，引用模板只需要添加或修改称为“块”的基本模板的特定区域。
 
 在这两种情况下，`<template_path>` 对应于应用的 templates 文件夹（还允许 `../` 或 `./`）。
 
@@ -280,10 +280,7 @@ Flask 模板系统（默认 Jinja）为实现跨多个模板重用特定元素�
 
 ## <a name="next-steps"></a>后续步骤
 
-> [!div class="nextstepaction"]
-> [使用完整的 Flask Web 项目模板](learn-flask-visual-studio-step-04-full-flask-project-template.md)
-
-## <a name="go-deeper"></a>深入了解
+可以利用以下资源进行深入了解：
 
 - [将 Web 应用部署到 Azure App Service](publishing-python-web-applications-to-azure-from-visual-studio.md)
 - 有关 Jinja 模板的更多功能（如控制流），请参阅 [Jinja 模板设计器文档](http://jinja.palletsprojects.com/en/2.10.x/templates/) (jinja.pocoo.org)

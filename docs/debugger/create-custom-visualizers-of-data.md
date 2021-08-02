@@ -2,7 +2,7 @@
 title: 创建自定义数据可视化工具 | Microsoft Docs
 description: Visual Studio 调试器可视化工具是显示数据的组件。 了解六个标准可视化工具，以及如何编写或下载其他可视化工具。
 ms.custom: SEO-VS-2020
-ms.date: 05/27/2020
+ms.date: 07/13/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b8310133520231434ba7ed342a5e855892e3c53a
-ms.sourcegitcommit: d0061f62c8543ff0db500972d9402a7f00e017c6
+ms.openlocfilehash: f630493e68d44ac8d02efcd23ef68eab24db4b77
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201736"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114591991"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
 
@@ -79,7 +79,7 @@ ms.locfileid: "114201736"
 
 默认情况下，自定义可视化工具使用 <xref:System.Runtime.Serialization.Formatters.Binary.BinaryFormatter> 类通过二进制序列化在调试对象端和调试器端之间传输数据。 但是，由于不稳定漏洞的安全问题，此类序列化在 .NET 5 及更高版本中是缩短的。
 此外，在 ASP.NET Core 5 中已将其标记为完全过时，并按 [ASP.NET Core 文档](/dotnet/core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete)中所述进行使用。
-因此，本部分介绍了应采取的必要步骤，以使你的可视化工具在此方案中仍受支持。
+本部分介绍了确保你的可视化工具在此场景中仍受支持所应执行的步骤。
 
 - 出于兼容性原因，上一部分中被替代的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A> 方法仍采用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>。 尽管如此，它的类型实际上是 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider2>。
 因此，将 `objectProvider` 对象强制转换为已更新的接口。
@@ -117,7 +117,7 @@ ms.locfileid: "114201736"
 #### <a name="special-debuggee-side-considerations-for-net-50"></a>有关 .NET 5.0+ 的特殊调试对象端注意事项
 
 > [!IMPORTANT]
-> 由于默认情况下使用的基础二进制序列化方法的安全问题，可视化工具需要在 .NET 5.0 及更高版本中执行其他步骤。 在继续操作之前，请阅读本[部分](#special-debugger-side-considerations-for-net-50)。
+> 由于默认情况下使用的基础二进制序列化方法的安全问题，可视化工具需要在 .NET 5.0 开始的高版本中执行其他步骤。 在继续操作之前，请阅读本[部分](#special-debugger-side-considerations-for-net-50)。
 
 - 如果可视化工具实现 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.TransferData%2A> 方法，则使用最新 `VisualizerObjectSource` 版本中提供的新添加的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource.GetDeserializableObject%2A> 方法。 返回的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IDeserializableObject> 有助于确定对象的序列化格式（二进制或 JSON）并反序列化基础对象，以便可以使用该对象。
 

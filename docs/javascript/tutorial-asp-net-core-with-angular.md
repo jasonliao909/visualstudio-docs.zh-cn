@@ -1,0 +1,120 @@
+---
+title: 使用 Angular 创建 ASP.NET Core 应用
+description: 在本教程中，使用 ASP.NET Core 和 Angular 创建应用
+ms.date: 07/19/2021
+ms.topic: tutorial
+ms.devlang: javascript
+author: mikejo5000
+ms.author: mikejo
+manager: jmartens
+dev_langs:
+- JavaScript
+ms.workload:
+- nodejs
+monikerRange: '>= vs-2022'
+ms.openlocfilehash: 380458a359b1f36bd6e70c8466d37ffa18f88b94
+ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.translationtype: HT
+ms.contentlocale: zh-CN
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114597428"
+---
+# <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>教程：在 Visual Studio 中使用 Angular 创建 ASP.NET Core 应用
+
+在本文中，你将了解如何生成 ASP.NET Core 项目来充当 API 后端，并生成 Angular 项目来充当 UI。
+
+目前，Visual Studio 包含支持 Angular 和 React 的 ASP.NET Core 单页应用程序 (SPA) 模板。 这些模板在 ASP.NET Core 项目中提供内置的客户端应用文件夹，其中包含每个框架的基本文件和文件夹。
+
+从 Visual Studio 2022 预览版 2 开始，可以使用本文中所述的方法创建具有以下功能的 ASP.NET Core 单页应用程序：
+
+- 将客户端应用放在 ASP.NET Core 项目之外的独立项目中
+- 基于计算机上安装的框架 CLI 创建客户端项目
+
+## <a name="prerequisites"></a>先决条件
+
+确保已安装以下各项：
+
+- npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
+- AngularCLI ([https://angular.io/cli](https://angular.io/cli)) 这可以是你选择的版本
+
+## <a name="create-the-frontend-app"></a>创建前端应用
+
+1. 在“新建项目”对话框中，选择“创建新项目”。 
+
+   :::image type="content" source="media/vs-2022/asp-net-core-create-new-project.png" alt-text="创建新项目":::
+
+1. 在顶部的搜索栏中搜索“Angular”，然后选择“独立 Angular 模板”。
+
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-choose-template.png" alt-text="选择模板":::
+
+1. 为你的项目和解决方案命名。 转到“其他信息”窗口时，请务必选中“为空的 ASP.NET Web API 项目添加集成”选项。  此选项将文件添加到 Angular 模板，以便稍后可以与项目 ASP.NET Core 挂钩。
+
+   其他信息
+
+   创建项目后，你会看到一些新的和经修改的文件：
+
+   - aspnetcore-https.js
+   - proxy.js
+   - package.json(modified)
+   - angular.json(modified)
+   - app.components.ts
+   - app.module.ts
+
+## <a name="create-the-backend-app"></a>创建后端应用
+
+1. 在解决方案资源管理器中，右键单击解决方案名称，将鼠标悬停在“添加”上，然后选择“新建项目”。  
+
+   :::image type="content" source="media/vs-2022/asp-net-core-add-project.png" alt-text="添加新项目":::
+
+1. 搜索并选择 ASP.NET Core Web API 项目。
+ 
+   :::image type="content" source="media/vs-2022/asp-net-core-choose-web-api-template.png" alt-text="选择 Web API 模板":::
+
+1. 为你的项目和解决方案命名。 转到“其他信息”窗口时，选择“.NET 6.0”作为目标框架。 
+
+   创建项目后，解决方案资源管理器应如下所示：
+
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-solution-explorer.png" alt-text="查看解决方案资源管理器":::
+
+## <a name="set-the-project-properties"></a>设置项目属性
+
+1. 右键单击 ASP.NET Core 项目并选择“属性”。
+
+   :::image type="content" source="media/vs-2022/asp-net-core-project-properties.png" alt-text="打开项目属性"::: 
+ 
+1. 转到“调试”菜单，然后选择“打开调试启动配置文件 UI”选项。 取消选中“启动浏览器”选项。
+
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-deselect-launch-browser.png" alt-text="打开调试启动配置文件 UI"::: 
+
+1. 接下来，右键单击 Angular 项目并选择“属性”菜单，然后转到“调试”部分。  将“调试器”更改为“launch.json”选项。
+ 
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-choose-debugger.png" alt-text="选择调试器 (launch.json)":::
+
+## <a name="set-the-startup-project"></a>设置启动项目
+
+1. 右键单击解决方案并选择“设置启动项目”。 将启动项目从“单个启动项目”更改为“多个启动项目”。 为每个项目的操作选择“启动”。
+
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-multiple-startup-projects.png" alt-text="设置多个启动项目":::
+  
+1. 接下来，选择后端项目，将其移到前端之上，使它首先启动。
+
+   :::image type="content" source="media/vs-2022/asp-net-core-with-angular-set-first-project.png" alt-text="选择第一个启动项目":::
+
+## <a name="start-the-project"></a>启动项目
+
+按 F5 或选择窗口顶部的“开始”按钮。  将显示两个命令提示符：
+
+- 正在运行的 ASP.NET Core API 项目
+- 运行 ng start 的 Angular CLI
+
+应会显示一个 Angular 应用，该应用通过 API 填充。
+
+## <a name="troubleshooting"></a>故障排除
+
+你可能会看到以下错误：
+
+```
+[HPM] Error occurred while trying to proxy request /weatherforecast from localhost:4200 to https://localhost:5001 (ECONNREFUSED) (https://nodejs.org/api/errors.html#errors_common_system_errors)
+```
+
+如果看到此问题，很可能前端在后端之前启动。 看到后端命令提示符启动并运行后，只需在浏览器中刷新 Angular 应用即可。

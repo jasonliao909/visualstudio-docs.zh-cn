@@ -1,7 +1,7 @@
 ---
-title: 在 WSL 2 中调试 .NET Core 应用
-description: 了解如何在不离开 Visual Studio 的情况下，在 WSL 2 中运行和调试 .NET Core 应用。
-ms.date: 01/25/2021
+title: 在 Linux 中使用 WSL 2 调试 .NET 应用
+description: 了解如何在不离开 Visual Studio 的情况下，在 WSL 2 中运行和调试 .NET 应用。
+ms.date: 07/16/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, linux
@@ -12,16 +12,16 @@ manager: jmartens
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ae43b79b9db766d752a25fb538b7f208e6f5e13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41bd6cf6f45862702e282691467ce1ef26137b8e
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865613"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114591977"
 ---
-# <a name="debug-net-core-apps-in-wsl-2-with-visual-studio"></a>使用 Visual Studio 在 WSL 2 中调试 .NET Core 应用
+# <a name="debug-net-apps-in-wsl-2-with-visual-studio"></a>使用 Visual Studio 在 WSL 2 中调试 .NET 应用
 
-可在不离开 Visual Studio 的情况下，使用 WSL 2 轻松地在 Linux 中运行和调试 .NET Core 应用。 如果你是跨平台开发人员，可将此方法用作一种用来测试更多目标环境的简单方法。
+可在不离开 Visual Studio 的情况下，使用 WSL 2 轻松地在 Linux 中运行和调试 .NET 应用。 如果你是跨平台开发人员，可将此方法用作一种用来测试更多目标环境的简单方法。
 
 对于面向 Linux 的 Windows .NET 用户，WSL 2 在生产现实性和生产力之间处于最有效的位置。 在 Visual Studio 中，你已经可以使用[远程调试器](../debugger/remote-debugging-dotnet-core-linux-with-ssh.md)在远程 Linux 环境中进行调试，或者使用[容器工具](../containers/overview.md)在容器中进行调试。 当生产现实性是你主要关注的问题时，应使用这些选项之一。 当一个简单而快速的内部循环更重要时，则 WSL 2 是一个不错的选择。
 
@@ -60,14 +60,14 @@ ms.locfileid: "99865613"
     }
     ```
 
-   选择新的配置文件后，扩展会检查 WSL 2 分发版是否已为运行 .NET Core 应用进行了配置，并帮助你安装任何缺少的依赖项。 安装这些依赖项后，即可在 WSL 2 中进行调试。
+   选择新的配置文件后，扩展会检查 WSL 2 分发版是否已为运行 .NET 应用进行了配置，并帮助你安装任何缺少的依赖项。 安装这些依赖项后，即可在 WSL 2 中进行调试。
 
 1. 正常开始调试，你的应用将在默认的 WSL 2 分发版中运行。
 
    要验证你是否在 Linux 中运行，一种简单的方法是检查 `Environment.OSVersion` 的值。
 
 >[!NOTE]
-> 只有 Ubuntu 和 Debian 经过了测试且受支持。 .NET Core 支持的其他分发版应可正常工作，但要求手动安装 [.NET Core 运行时](https://aka.ms/wsldotnet)和 [Curl](https://curl.haxx.se/)。
+> 只有 Ubuntu 和 Debian 经过了测试且受支持。 .NET 支持的其他分发版应可正常工作，但要求手动安装 [.NET 运行时](https://aka.ms/wsldotnet)和 [Curl](https://curl.haxx.se/)。
 
 ## <a name="choose-a-specific-distribution"></a>选择特定的分发版
 
