@@ -2,7 +2,7 @@
 title: 64 位支持
 description: 了解如何将应用程序设置为面向不同的平台，包括 64 位平台。
 ms.custom: SEO-VS-2020
-ms.date: 02/21/2018
+ms.date: 07/19/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - 64-bit applications [C++]
@@ -13,16 +13,19 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 053ae10595b6bac51395b23aaef7394760b71824
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8990ea7c4a2173a0cea0f66a0edfb67ee116c259
+ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873887"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114592185"
 ---
 # <a name="visual-studio-ide-64-bit-support"></a>Visual Studio IDE 64 位支持
 
 可使用 Visual Studio 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 Visual Studio 中对 64 位平台的支持，请参阅 [64 位应用程序](/dotnet/framework/64-bit-apps)。
+
+> [!NOTE]
+> Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 有关详细信息，请参阅 [Visual Studio 2022 愿景](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)博客文章。
 
 ## <a name="deploy-a-64-bit-application"></a>部署 64 位应用程序
 

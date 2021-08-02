@@ -1,9 +1,10 @@
 ---
 title: 文件和文件夹的信任设置
 description: 了解如何更改文件和文件夹的信任设置以确保 Visual Studio 的安全。
-author: 2percentsilk
-ms.author: allisb
-ms.date: 09/05/2018
+author: TerryGLee
+ms.author: tglee
+manager: jmartens
+ms.date: 07/22/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
@@ -13,33 +14,48 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: 492a94962d255a9d18dcabdababf7fa6a540ada1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: f8ac3b416e017796eced0027357cacbc6b06830c
+ms.sourcegitcommit: a07cdb3d7ec7040025d23e81b53ebe41bfafd592
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88197383"
+ms.lasthandoff: 07/23/2021
+ms.locfileid: "114654107"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>配置文件和文件夹的信任设置
 
-Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537628(v=vs.85))的项目之前，将提示用户批准。 为了增强安全性，还可以配置 Visual Studio，使其在打开具有 Web 属性标记或者未指定为“受信任”  的任何文件或文件夹之前提示用户批准。 默认情况下，禁用文件和文件夹检查。
+::: moniker range=">=vs-2022"
+
+在 Visual Studio 2022（预览版 2）中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任的代码时显示警告。
+
+:::image type="content" source="media/vs-2022/trusted-settings-warning-message.png" alt-text="信任设置警告消息的屏幕截图":::
+
+我们将继续更新此功能，并随之在此处添加更多信息。 敬请关注！
+
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+
+Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-explorer/ie-developer/compatibility/ms537628(v=vs.85))的项目之前，将提示用户批准。 为了增强安全性，还可以配置 Visual Studio，使其在打开具有 Web 属性标记或者未指定为“受信任”的任何文件或文件夹之前提示用户批准。 默认情况下，禁用文件和文件夹检查。
 
 > [!WARNING]
 > 在审批文件、文件夹或解决方案之前，仍应先确保它们来自受信任的人员或受信任的位置。
+
+> [!NOTE]
+> 在 Visual Studio 2022（预览版）中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任的代码时显示警告。 若要了解详细信息，请参阅 [Visual Studio 2022 预览版发行说明](/visualstudio/releases/2022/release-notes-preview#trustedlocations-170P2)中“受信任的位置”部分。
 
 ## <a name="configure-trust-settings"></a>配置信任设置
 
 若要更改信任设置，请执行以下步骤：
 
-1. 打开“工具” > “选项” > “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
+1. 打开“工具”>“选项”> “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
 
-2. 选择所需的文件和文件夹检查级别。 可以对每个文件和文件夹进行不同的检查。 选项为：
+2. 选择所需的文件和文件夹检查级别。 可以对每个文件和文件夹进行不同的检查。 选项包括：
 
    * **不验证**：Visual Studio 不执行任何检查。
 
    * **验证 Web 属性的标记**：如果文件或文件夹具有 Web 属性的标记，则 Visual Studio 将阻止它们并请求打开权限。
 
-   * **验证路径是否可信**：如果文件或文件夹路径不属于“受信任路径”  列表，则 Visual Studio 将阻止它们并请求打开权限。
+   * **验证路径是否可信**：如果文件或文件夹路径不属于“受信任路径”列表，则 Visual Studio 将阻止它们并请求打开权限。
 
    ![信任验证选项](media/trust-settings.png)
 
@@ -47,13 +63,13 @@ Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-e
 
 若要添加受信任路径，请执行以下步骤：
 
-1. 打开“工具” > “选项” > “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
+1. 打开“工具”>“选项”> “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
 
 2. 单击“信任设置”对话框中的“添加”，然后选择“文件”或“文件夹”。
 
 3. 导航到并选择要添加到受信任列表的文件或文件夹。
 
-   文件或文件夹路径显示在“受信任路径”  列表中。
+   文件或文件夹路径显示在“受信任路径”列表中。
 
    ![已添加受信任路径](media/trusted-paths.png)
 
@@ -61,11 +77,17 @@ Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-e
 
 若要删除受信任路径，请执行以下步骤：
 
-1. 打开“工具” > “选项” > “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
+1. 打开“工具”>“选项”> “信任设置”，然后选择右侧窗格中的“配置信任设置”链接。
 
-2. 在“受信任路径”  列表中，选择要删除的路径，然后单击“删除”  。
+2. 在“受信任路径”列表中，选择要删除的路径，然后单击“删除”。
 
    > [!TIP]
-   > 若要选择多个项，选择路径的同时按住 Shift  。
+   > 若要选择多个项，选择路径的同时按住 Shift。
 
-   所选的路径都将从“受信任路径”  列表中删除。
+   所选的路径都将从“受信任路径”列表中删除。
+
+::: moniker-end
+
+## <a name="see-also"></a>另请参阅
+
+[在 Visual Studio 中生成应用程序](../walkthrough-building-an-application.md)
