@@ -214,3 +214,5 @@
       href: 'https://www.microsoft.com/licensing/product-licensing/products.aspx'
     - name: Microsoft 产品和服务协议 (MPSA)
       href: 'https://www.microsoft.com/licensing/mpsa/default.aspx'
+    - name: 如何通过 Azure Active Directory 自动分配订阅
+      href: assign-azure-ad.md
