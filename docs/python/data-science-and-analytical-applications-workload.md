@@ -1,7 +1,7 @@
 ---
 title: 数据科学和分析应用程序工作负载
 description: 此 Visual Studio 工作负载汇集了 Python、F# 及其各自的运行时分发版本，包括 Anaconda。 （R 也仅包含在 Visual Studio 2017 中。）
-ms.date: 02/28/2019
+ms.date: 07/28/2021
 ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -9,12 +9,12 @@ manager: jmartens
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 2c12c8a0979ab081ea2f09faeeccdb5a8a9d2175
-ms.sourcegitcommit: 398b4d4e5ce0f978720f11990db05b209766aedc
+ms.openlocfilehash: bd57dd13bdb487307c416cd5013f197172d5fc6c
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112016302"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796211"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 
@@ -59,7 +59,7 @@ Python 是用于数据科学的主要脚本语言。 Python 易于学习且由�
 - F# 语言支持
 - Python:
   - Python 语言支持
-  - [Anaconda3 64 位](https://www.continuum.io)，Python 分发版本，包含大量数据科学库和一个 Python 解释器。
+  - [Anaconda3 64 位](https://anaconda.com)，Python 分发版本，包含大量数据科学库和一个 Python 解释器。
   - Python Web 支持
   - Cookiecutter 模板支持
 - R：
