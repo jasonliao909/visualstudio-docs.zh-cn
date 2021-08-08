@@ -1,7 +1,7 @@
 ---
 title: 使用 MSBuild
 description: 了解 MSBuild 项目文件的各个部分，包括项、项元数据、属性、目标和任务。
-ms.date: 10/19/2020
+ms.date: 07/28/2021
 ms.topic: conceptual
 ms.custom: contperf-fy21q2
 helpviewer_keywords:
@@ -12,12 +12,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e3a301c1bd4758ea08f49036fcf8756c8d7e7c26
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 8af56d7acb7875e57ad335746c876f938d414bbf
+ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306444"
+ms.lasthandoff: 07/30/2021
+ms.locfileid: "114995657"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 
@@ -55,12 +55,12 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 
 **创建项目文件**
 
-1. 打开 Visual Studio 并创建一个项目。
+1. 打开 Visual Studio 并创建一个项目：
 
     ::: moniker range=">=vs-2019"
-    按 Esc 关闭启动窗口  。 键入 Ctrl + Q  打开搜索框，键入“winforms”  ，然后选择“创建一个新的 Windows 窗体应用程序(.NET Framework)”  。 在出现的对话框中，选择“创建”  。
+    在搜索框中，键入“winforms” ，然后选择“创建一个新的 Windows 窗体应用(.NET Framework)”。 在出现的对话框中，选择“创建”  。
 
-    在“名称”  框中键入 `BuildApp`。 输入解决方案的“位置”  ，例如 D:\\  。 接受“解决方案”  、“解决方案名称”  (BuildApp  )，以及“框架”  的默认值。
+    在“项目名称”**框中**，键入 `BuildApp`。 输入解决方案的“位置”  ，例如 D:\\  。
     ::: moniker-end
     ::: moniker range="vs-2017"
     从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”  对话框的左侧窗格中，展开“Visual C#”   > “Windows 桌面”  ，然后选择“Windows 窗体应用(.NET Framework)”  。 然后选择“确定”  。
@@ -102,7 +102,11 @@ MSBuild 是 Microsoft 和 Visual Studio 的生成平台。 本演练介绍 MSBui
 <Project Sdk="Microsoft.NET.Sdk">
 ```
 
-如果项目不是 SDK 样式项目，则必须在 Project 元素中指定 xmlns 命名空间。 如果新项目中存在 `ToolsVersion`，则必须为“15.0”。
+如果项目不是 SDK 样式项目，则必须在 Project 元素中指定 xmlns 命名空间。 如果新项目中存在 `ToolsVersion`，则它必须与 MSBuild 版本一致。 如果你不知道 MSBuild 的版本，可以从以下命令行输出中的前两个数字看出来（例如 16.0）：
+
+```console
+MSBuild -ver
+```
 
 生成应用程序的工作由 [Target](../msbuild/target-element-msbuild.md) 和 [Task](../msbuild/task-element-msbuild.md) 元素完成。
 
@@ -129,7 +133,7 @@ MSBuild 跟踪生成的目标，并保证每个目标生成次数不超过一次
 
 **添加目标和任务**
 
-1. 将这些行添加到项目文件中，添加到 Import 语句之后：
+1. 将这些行添加到项目文件中，具体位于 Import 语句或打开的 Project 元素之后。
 
     ```xml
     <Target Name="HelloWorld">
@@ -167,7 +171,7 @@ Message 任务将文本属性的字符串值作为输入并显示在输出设备
 
    (Windows 10) 在任务栏的搜索框中，开始键入工具的名称，例如 `dev` 或 `developer command prompt`。 然后显示一个列表，其中包含与搜索模式匹配的已安装应用。
 
-   如需手动查找，可在 <visualstudio installation folder\>\<version>\Common7\Tools 文件夹中找到 LaunchDevCmd.bat 文件 。
+   如需手动查找，可在 <visualstudio installation folder\>\Common7\Tools 文件夹中找到 LaunchDevCmd.bat 文件。
 
 2. 从命令窗口导航到包含项目文件的文件夹，此例中为 D:\BuildApp\BuildApp  。
 
@@ -249,13 +253,22 @@ $(PropertyName)
     msbuild buildapp.csproj -t:HelloWorld
     ```
 
-1. 检查输出。 应看到这两行（.NET Framework 版本可能不同）：
+1. 检查输出。 应看到这两行（输出可能不同）：
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range="=vs-2022"
 
     ```output
     Configuration is Debug
-    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\<Visual Studio SKU>\MSBuild\15.0\Bin
+    MSBuildToolsPath is C:\Program Files\Microsoft Visual Studio\2022\MSBuild\Current\Bin\amd64
+    ```
+
+    ::: moniker-end
+
+    ::: moniker range="vs-2019"
+
+    ```output
+    Configuration is Debug
+    MSBuildToolsPath is C:\Program Files (x86)\Microsoft Visual Studio\2019\MSBuild\16.0\Bin
     ```
 
     ::: moniker-end

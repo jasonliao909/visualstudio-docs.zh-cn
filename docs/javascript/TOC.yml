@@ -14,6 +14,12 @@
       href: ../ide/quickstart-nodejs.md?toc=%252fvisualstudio%252fjavascript%252ftoc.json
     - name: 创建 Vue.js 项目
       href: quickstart-vuejs-with-nodejs.md
+    - name: 创建 React 应用
+      href: tutorial-create-react-app.md
+    - name: 创建 Angular 应用
+      href: tutorial-create-angular-app.md
+    - name: 创建 Vue.js 应用程序
+      href: tutorial-create-vue-app.md
 - name: 教程
   items:
     - name: 使用 Express 创建 Node.js 应用

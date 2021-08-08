@@ -1,7 +1,7 @@
 ---
 title: 选择并安装 Python 解释器
 description: Visual Studio 中支持的 Python 解释器的完整列表，并简要说明了可以在哪里找到它们的安装程序。
-ms.date: 06/05/2019
+ms.date: 07/28/2021
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,12 +10,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8070bb93a1dd76ad29832afae15d83788300ae7a
-ms.sourcegitcommit: 925db7adb9cb554b081c7e727d09680d4863feed
+ms.openlocfilehash: 239a8f40aa669aa60853405621a0b335aabdcb3c
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107941105"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796159"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -34,6 +34,9 @@ ms.locfileid: "107941105"
 
 对于 Visual Studio 2015 及更早版本，必须手动安装其中一个解释器。
 
+> [!Note]
+> 尽管 Visual Studio 提供了安装 Anaconda 分发版的服务，但你对 Anaconda 存储库中发行版和其他包的使用都受 [Anaconda 服务条款](https://www.anaconda.com/terms-of-service)的约束。 这些条款可能要求一些组织向 Anaconda 支付商业许可证，否则就需要配置工具来访问备用存储库。 有关详细信息，请参阅 [Conda 通道文档](https://docs.conda.io/projects/conda/en/latest/user-guide/concepts/channels.html)。
+
 Visual Studio（所有版本）通过检查注册表（根据 [PEP 514 - Windows 注册表中的 Python 注册](https://www.python.org/dev/peps/pep-0514/)）自动检测各个已安装的 Python 解释器及其环境。 Python 安装通常位于 HKEY_LOCAL_MACHINE\SOFTWARE\Python（32 位）和 HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Python（64 位）下的“PythonCore”(CPython) 和“ContinuumAnalytics”(Anaconda) 等分发节点中。
 
 如果 Visual Studio 并未检测到安装的环境，请参阅[手动标识现有环境](managing-python-environments-in-visual-studio.md#manually-identify-an-existing-environment)。
@@ -44,7 +47,7 @@ Visual Studio 在[Python 环境”](managing-python-environments-in-visual-studi
 | --- | --- |
 | [CPython](https://www.python.org/) | 最常用的“本机”解释器，32 位和 64 位版本可用（建议使用 32 位）。 包括最新的语言功能、最大的 Python 包兼容性、完整的调试支持以及与 [IPython](https://ipython.org/) 的互操作。 另请参阅：[Should I use Python 2 or Python 3?](https://wiki.python.org/moin/Python2orPython3)（应使用 Python 2 还是 Python 3？） 请注意，Visual Studio 2015 及更早版本不支持 Python 3.6+，并且会生成“不支持 Python 版本 3.6”之类的错误。 请改用 Python 3.5 或更早版本。 |
 | [IronPython](https://github.com/IronLanguages/ironpython2) | Python 的 .NET 实现，32 位和 64 位版本可用，提供 C#/F#/Visual Basic 互操作、对 .NET API 的访问、标准 Python 调试（但不是 C++ 混合模式调试）和混合 IronPython/C# 调试。 但 IronPython 不支持虚拟环境。 |
-| [Anaconda](https://www.continuum.io) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
+| [Anaconda](https://anaconda.com) | Python 提供技术支持的开放式数据科学平台，包括最新版本的 CPython 和大部分难以安装的包。 如果你不能做出决定，我们建议使用它。 |
 | [PyPy](https://www.pypy.org/) | Python 的高性能跟踪 JIT 实现，适用于长时间运行的程序以及识别性能问题但找不到其他解决方法的情况。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 | [Jython](https://www.jython.org/) | Java 虚拟机 (JVM) 上 Python 的实现。 与 IronPython 类似，Jython 中运行的代码可与 Java 类和库交互，但可能无法使用许多适用于 CPython 的库。 可与 Visual Studio 配合使用，但对高级调试功能的支持有限。 |
 

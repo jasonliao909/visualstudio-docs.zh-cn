@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 4AD51385-B0A8-4BA7-B2D4-BF2BD167A142
 ms.topic: overview
-ms.openlocfilehash: 50aa6077bafb2d4791555d449f06f6c81595a2f5
-ms.sourcegitcommit: 5335a9864d5747bc917ed28d4ebeade3076b10e7
+ms.openlocfilehash: 3dfeea15e0d9003e3ae0e46b74c844016d298595
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85950561"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796185"
 ---
 # <a name="managing-references-in-a-project"></a>管理项目中的引用
 
@@ -47,4 +47,4 @@ NuGet 是 .NET 开发最常用的程序包管理器。 通过 Visual Studio for 
 ## <a name="see-also"></a>请参阅
 
 - [管理引用（Windows 上的 Visual Studio）](/visualstudio/ide/managing-references-in-a-project)
-- [使用 NuGet 添加引用与使用扩展 SDK 添加引用（Windows 上的 Visual Studio）](/visualstudio/ide/adding-references-using-nuget-versus-an-extension-sdk)
+- [作为项目引用 NuGet 与 SDK](/visualstudio/extensibility/nuget-versus-sdk-references)
