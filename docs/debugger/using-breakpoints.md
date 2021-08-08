@@ -2,7 +2,7 @@
 title: 在调试器中使用断点 |Microsoft Docs
 description: 了解断点，它是最重要的调试技术之一。 本文介绍断点操作、跟踪点、条件以及其他内容。
 ms.custom: SEO-VS-2020
-ms.date: 06/30/2020
+ms.date: 12/21/2020
 ms.topic: how-to
 f1_keywords:
 - vs.debug.breakpointswin
@@ -35,12 +35,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0865c71d2893203ca3af925da1d76946d882c4c4
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: 29661c633e41c0640829caff2452d65907944773
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798578"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796250"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 

@@ -2,7 +2,7 @@
 title: 创建自定义数据可视化工具 | Microsoft Docs
 description: Visual Studio 调试器可视化工具是显示数据的组件。 了解六个标准可视化工具，以及如何编写或下载其他可视化工具。
 ms.custom: SEO-VS-2020
-ms.date: 07/13/2021
+ms.date: 07/29/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.visualizer.troubleshoot
@@ -21,12 +21,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f630493e68d44ac8d02efcd23ef68eab24db4b77
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: d5f2beccbc4004b9b36b7ff1c39b3ad60cc39120
+ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114591991"
+ms.lasthandoff: 08/01/2021
+ms.locfileid: "115014823"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
 
@@ -47,9 +47,13 @@ ms.locfileid: "114591991"
 
 调试器可视化工具的结构由两部分组成：
 
-- “调试器端”在 Visual Studio 调试器中运行，并创建并显示可视化器用户界面。
+- “调试器端”在 Visual Studio 调试器中运行，并创建并显示可视化器用户界面。 
+
+  由于 Visual Studio 是在 .NET Framework 运行时上执行的，因此必须为 .NET Framework 编写此组件。 出于此原因，不能为 .NET Core 编写此组件。
 
 - “调试对象端”在 Visual Studio 正在调试的进程（“调试对象”）中运行 。 要可视化的数据对象（如 String 对象）存在在调试对象进程中。 调试对象端将对象发送到调试器端，调试器端会在你创建的用户界面中显示该对象。
+
+  你用于生成此组件的运行时应与用于运行调试对象进程的运行时（即 .NET Framework 或 .NET Core）一致。
 
 调试器端从一个“对象提供程序”接收数据对象，该提供程序可实现 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider> 接口。 调试对象端通过“对象源”发送对象，该对象源派生自 <xref:Microsoft.VisualStudio.DebuggerVisualizers.VisualizerObjectSource>。
 
@@ -81,8 +85,8 @@ ms.locfileid: "114591991"
 此外，在 ASP.NET Core 5 中已将其标记为完全过时，并按 [ASP.NET Core 文档](/dotnet/core/compatibility/core-libraries/5.0/binaryformatter-serialization-obsolete)中所述进行使用。
 本部分介绍了确保你的可视化工具在此场景中仍受支持所应执行的步骤。
 
-- 出于兼容性原因，上一部分中被替代的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A> 方法仍采用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>。 尽管如此，它的类型实际上是 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider2>。
-因此，将 `objectProvider` 对象强制转换为已更新的接口。
+- 出于兼容性原因，上一部分中被替代的 <xref:Microsoft.VisualStudio.DebuggerVisualizers.DialogDebuggerVisualizer.Show%2A> 方法仍采用 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider>。 但是，从 Visual Studio 2019 版本 16.10 开始，它实际上是 <xref:Microsoft.VisualStudio.DebuggerVisualizers.IVisualizerObjectProvider2> 类型。
+为此，将 `objectProvider` 对象强制转换为已更新的接口。
 
 - 将对象（如命令或数据）发送到调试对象端时，使用 `IVisualizerObjectProvider2.Serialize` 方法将其传递到流，它将根据调试对象进程的运行时确定要使用的最佳序列化格式。
 然后，将流传递到 `IVisualizerObjectProvider2.TransferData` 方法。

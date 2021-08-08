@@ -2,7 +2,7 @@
 title: 在文件中查找
 description: 了解“在文件中查找”功能，并了解如何使用此功能搜索特定的一组文件。
 ms.custom: SEO-VS-2020
-ms.date: 07/23/2021
+ms.date: 07/30/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.findinfiles
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: bffb7e2f8866ccd2371f8e501788672cb55c03f8
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 4cc6ddc8ce44255d143eb18b4afbefad36300967
+ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680180"
+ms.lasthandoff: 08/01/2021
+ms.locfileid: "115014850"
 ---
 # <a name="find-in-files"></a>在文件中查找
 
@@ -75,9 +75,9 @@ ms.locfileid: "114680180"
 
 可以选择或清除以下一个或多个选项：
 
-- **匹配大小写**  - 如果选择此选项，“查找结果”搜索将区分大小写。
-- **全字匹配**  - 如果选择此选项，“查找结果”窗口将仅返回全字匹配项。
-- **使用正则表达式**  - 选中后，可以在“搜索”框中（或“替换”文本框中）使用特殊表示法来定义要匹配的文本。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+- 匹配大小写 - 使用此选项确保搜索区分大小写。
+- 全字匹配 - 使用此选项确保搜索仅返回整个字词匹配项。
+- 使用正则表达式 - 使用此选项，可以在“搜索”框中（或“替换”文本框中）使用特殊表示法来定义要匹配的文本模式。 有关这些表示法的列表，请参阅[在 Visual Studio 中使用正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
     > [!Important]
     > 仅当选中“使用正则表达式”复选框后，“表达式生成器”按钮才会显示在“搜索”框旁边。 
@@ -88,9 +88,12 @@ ms.locfileid: "114680180"
 
 从“查找范围”下拉列表中选择的选项确定“在文件中查找”是搜索整个工作区、整个解决方案、当前项目、当前目录、所有打开的文档还是当前文档。 
 
-还可使用相邻的“浏览(...)”按钮找到要搜索的位置。
+还可使用相邻的“浏览(...)”按钮找到要搜索的位置。 更好的是，如果你已经指定了目录，此按钮将追加新目录，而不是替换它。 例如，如果你的“查找方式”值为“.\Code”，可以单击“浏览(...)”按钮并导航到名为“共享代码”的文件夹。 “浏览(...)”框现在将显示“.\Code;.\Shared Code”，在执行 Find 命令时，它将搜索这两个文件夹。
 
-此外，还可以选中或清除“包括外部项”复选框和/或“包括杂项文件”复选框。 
+若要优化搜索，可以选择或清除以下选项：
+
+- 包含外部项 - 使用此选项可包含外部项，比如你可能会引用但不属于解决方案的一部分的“windows.h”等文件。
+- 包含杂项文件 - 使用此选项可包含杂项文件，比如你已打开但不属于解决方案的一部分的一些文件。
 
 ## <a name="file-types"></a>文件类型
 
@@ -183,6 +186,14 @@ ms.locfileid: "114680180"
 显示包含搜索匹配项的文件列表，而不显示搜索匹配项本身。
 
 ::: moniker-end
+
+## <a name="multiple-searches"></a>多个搜索
+
+你可以在执行其他搜索时保留一个搜索的结果。 这样，可以轻松地比较结果并看到它们并列显示。
+
+:::image type="content" source="media/find-files-search-results.png" alt-text="“搜索结果”窗口的屏幕截图，其中显示了三个搜索结果的选项卡。":::
+
+若要保留多个搜索结果，请在每次搜索后选择“保留结果”按钮。 然后，当你搜索其他内容时，结果将显示在新选项卡中。可以保留最多五个搜索的结果。 如果已显示了五个搜索结果，下一个搜索将重用最早的搜索结果选项卡。
 
 ## <a name="see-also"></a>另请参阅
 

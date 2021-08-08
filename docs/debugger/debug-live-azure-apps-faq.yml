@@ -13,12 +13,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: 8c51570ec5cd8d2c0358c863d1d1fb656c8ebfd9
-  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+  ms.openlocfilehash: 530719aafeaf617aa92b09388768a46e2ccd5bf5
+  ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/06/2021
-  ms.locfileid: "108800415"
+  ms.lasthandoff: 07/29/2021
+  ms.locfileid: "114796172"
 title: 在 Visual Studio 中进行快照调试的常见问答解答
 summary: 下面列出了在使用 Snapshot Debugger 调试实时 Azure 应用程序时可能出现的问题。
 sections:

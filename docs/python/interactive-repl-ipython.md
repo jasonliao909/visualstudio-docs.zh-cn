@@ -1,7 +1,7 @@
 ---
 title: IPython REPL（交互式窗口）
 description: 使用 IPython 模式下的 Visual Studio 交互窗口提供用户友好交互式开发环境，并具有交互式并行计算功能。
-ms.date: 01/28/2019
+ms.date: 07/28/2021
 ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -10,18 +10,18 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 343c87f3c14e8ebafeb99a55a88d0b86df1bafcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 927a005c00e710cec9d67d2f663b0e8acddea8d6
+ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942628"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114796224"
 ---
 # <a name="use-ipython-in-the-interactive-window"></a>在交互窗口中使用 IPython
 
 IPython 模式下的 Visual Studio 交互窗口是目前非常先进的用户友好交互式开发环境，具有交互式并行计算功能  。 本文演示如何在 Visual Studio 交互窗口中使用 IPython，其中所有常规[交互窗口](python-interactive-repl-in-visual-studio.md)功能均可用  。
 
-要执行此演练，必须先安装 [Anaconda](https://www.continuum.io) 环境，其中包括 IPython 和必需的库。
+在本演练中，你将需要安装 IPython、numpy 和 matplotlib。 如果你使用的是 Anaconda，则这些库已安装。 本演练的其余部分假定你使用的是 Anaconda。
 
 > [!Note]
 > IronPython 不支持 IPython，但事实上，可以在交互选项窗体上选择 IPython  。 有关详细信息，请参阅[功能请求](https://github.com/Microsoft/PTVS/issues/84)。
