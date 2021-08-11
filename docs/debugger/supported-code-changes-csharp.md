@@ -2,7 +2,7 @@
 title: 支持的代码更改（C# 和 Visual Basic）| Microsoft Docs
 description: 了解在 VisualStudio 中调试 C# 或 Visual Basic 项目期间使用“编辑和继续”功能时所支持的代码更改。
 ms.custom: SEO-VS-2020
-ms.date: 10/11/2018
+ms.date: 9/03/2020
 ms.topic: conceptual
 dev_langs:
 - CSharp
@@ -18,12 +18,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4fc3f49038a44b2b2bd5b467d6e1874f8a9a9803
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4f51cc979f968acf0cf1fb526d88c86a8fc09ad4
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940756"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094262"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。

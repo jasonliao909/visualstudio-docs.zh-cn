@@ -12,12 +12,13 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 338e53d576e9f4d73b32c3f432223480d9e708c3
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+monikerRange: <= vs-2019
+ms.openlocfilehash: 24ee3dbc8a3a91eaa7176bb0e9971940203ff694
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683941"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094204"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用针对 Visual Studio 的 Node.js 工具创建 Vue.js 应用程序
 

@@ -12,12 +12,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: b63b23270c804439201bfc02b7870a1a60a854ee
-ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.openlocfilehash: 32ba32e58e14a26f4bd96052e844801c8fdab00c
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114597431"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094075"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-react-in-visual-studio"></a>教程：在 Visual Studio 中使用 React 创建 ASP.NET Core 应用
 
@@ -41,11 +41,11 @@ ms.locfileid: "114597431"
 
 1. 在“新建项目”对话框中，选择“创建新项目”。 
 
-   :::image type="content" source="media/vs-2022/asp-net-core-create-new-project.png" alt-text="创建新项目":::
+   :::image type="content" source="media/vs-2022/create-new-project.png" alt-text="创建新项目":::
 
 1. 在顶部的搜索栏中搜索“React”，然后选择“独立 JavaScript React 模板”。 （本教程当前不支持独立 TypeScript React模板。）
 
-   :::image type="content" source="media/vs-2022/asp-net-core-with-react-choose-template.png" alt-text="选择模板":::
+   :::image type="content" source="media/vs-2022/react-choose-template.png" alt-text="选择模板":::
 
 1. 为你的项目和解决方案命名。 转到“其他信息”窗口时，请务必选中“为空的 ASP.NET Web API 项目添加集成”选项。  此选项将文件添加到 React 模板，以便稍后可以与项目 ASP.NET Core 挂钩。
 
