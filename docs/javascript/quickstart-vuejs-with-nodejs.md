@@ -12,12 +12,13 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ad2892ab7c605ba25902ac2c4c24e68236a5d740
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+monikerRange: <= vs-2019
+ms.openlocfilehash: 007a141505bb376c6074ddccf0f9edcc7a6e23ce
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616969"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094696"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 

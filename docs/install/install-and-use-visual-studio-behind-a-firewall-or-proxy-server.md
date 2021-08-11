@@ -10,19 +10,19 @@ helpviewer_keywords:
 - installing Visual Studio, administrator guide
 - list of domains, locations, URLs
 ms.assetid: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e66e59ea358ef7558e7f11cc8cf3189e4e79ecc6
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 67e7da30258b7feaf5b2a1ed6b5d58ed1da6e893
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222937"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094230"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 

@@ -3,19 +3,19 @@ title: ARM 支持的设备上的 Visual Studio
 description: 在具有基于 ARM 的处理器的设备上使用 Visual Studio 的建议。
 ms.date: 09/10/2020
 ms.topic: conceptual
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 31fb209a3f19c052c19e98691b8643bb098887ee
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 1e45422b8b1f3dd98ec8c47c4788d935263f7f50
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295801"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094883"
 ---
 # <a name="visual-studio-on-arm-powered-devices"></a>ARM 支持的设备上的 Visual Studio
 

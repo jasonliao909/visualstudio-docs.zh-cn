@@ -6,12 +6,12 @@ author: sayedihashimi
 ms.author: sayedha
 ms.date: 11/06/2018
 ms.topic: how-to
-ms.openlocfilehash: 69ad6007283b3c56a8d0e5902cc2b9bdc445f220
-ms.sourcegitcommit: d577818d3d8e365baa55c6108fa8159c46ed8b43
+ms.openlocfilehash: f16702a31bd77f30c8fc909755ae85b0824743e7
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847092"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094893"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 
@@ -71,7 +71,7 @@ ms.locfileid: "97847092"
 - **资源组** – 一种为某个项目组织所有的 Azure 资源的方式。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
 - **服务计划** – 确定使用计划的任何资源的位置和成本。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请使用默认服务计划或在免费层 (F1) 中创建新的。
 
-访问[移动应用文档](/azure/app-service-mobile/)，获取详细信息。
+访问[移动应用文档](/azure/developer/mobile-apps/azure-mobile-apps/overview)，获取详细信息。
 
 ## <a name="see-also"></a>另请参阅
 

@@ -1,17 +1,17 @@
 ---
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 05/28/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: 1d90c8525fa5396eb2dd983c45bab43b2e130c8b
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: c56f780f7c46205c250b43af4e3a307db2ed7a10
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110720854"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094025"
 ---
 | 值 | **结果** |
 | --------- | ---------- |
