@@ -12,12 +12,12 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 2ff13b017ffe0d310ddfd1b302c6436e9d708a36
-ms.sourcegitcommit: f430d014f912aa7874e1db65026dc72688b973e4
+ms.openlocfilehash: 0f8fef8ff6d96f5184e3ae90de8d8df3354968facaea6e637d21c6df210551b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111448306"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423550"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 

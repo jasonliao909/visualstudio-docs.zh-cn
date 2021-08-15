@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 模板 (Reference 元素) |Microsoft Docs
+title: 引用元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 Reference 元素以及它如何指定在将项添加到项目时要添加的程序集引用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,14 +16,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc23edf0897ca71f1b59f126987e42f9d3cb1a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 84aed9d443e38e6d61069f919de115394d5f8450d56b0da930d95c1a915c08e1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068513"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336678"
 ---
-# <a name="reference-element-visual-studio-templates"></a>Visual Studio 模板 (Reference 元素) 
+# <a name="reference-element-visual-studio-templates"></a>Visual Studio 模板 (引用元素) 
 指定向项目添加项时要添加的程序集引用。
 
  \<VSTemplate> \<TemplateContent>

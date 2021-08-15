@@ -9,17 +9,18 @@ ms.assetid: 91092763-3362-4857-adf0-231bc1254206
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ea1c9554035993daa9b2e0b9fe23ad1ab4f839c5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6d4b42a23a29981a48ded4662640bda375e494ec909973b65d532614496cb17d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071254"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338470"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 根据给定的名称检索指标的唯一标识符。

@@ -1,6 +1,6 @@
 ---
 title: 如何：获取服务 |Microsoft Docs
-description: 了解如何获取用于访问不同功能的 Visual Studio 服务。 可以使用 VSPackage 获取大多数服务。
+description: 了解如何获取 Visual Studio 的服务来访问不同的功能。 可以使用 VSPackage 获取大多数服务。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
@@ -10,26 +10,27 @@ ms.assetid: 1f000020-8fb7-4e39-8e1e-2e38c7fec3d4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9096250f72e6bf64b2c6b76eeaa313ee7769dd51
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 37a11d34b8691627c3050bed24b34082f9bb3c15be78ab8136fa98de0b3d2e55
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070084"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414722"
 ---
 # <a name="how-to-get-a-service"></a>如何：获取服务
 
-通常需要获取 Visual Studio 服务才能访问不同的功能。 通常，Visual Studio 服务提供一个或多个可以使用的接口。 你可以从 VSPackage 获取大多数服务。
+通常需要获取 Visual Studio 的服务来访问不同的功能。 通常，Visual Studio 服务提供了一个或多个可以使用的接口。 你可以从 VSPackage 获取大多数服务。
 
 派生自且已正确放置的任何 VSPackage <xref:Microsoft.VisualStudio.Shell.Package> 都可以请求任何全局服务。 由于 `Package` 类实现 <xref:System.IServiceProvider> ，从派生的任何 VSPackage `Package` 也是服务提供程序。
 
-当 Visual Studio 加载时 <xref:Microsoft.VisualStudio.Shell.Package> ，它会 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 在初始化期间将对象传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 方法。 这称为 VSPackage 的 *选址* 。 `Package`类包装此服务提供程序，并提供 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 用于获取服务的方法。
+Visual Studio 加载时 <xref:Microsoft.VisualStudio.Shell.Package> ，它会 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider> 在初始化期间将对象传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 方法。 这称为 VSPackage 的 *选址* 。 `Package`类包装此服务提供程序，并提供 <xref:Microsoft.VisualStudio.Shell.Package.GetService%2A> 用于获取服务的方法。
 
 ## <a name="getting-a-service-from-an-initialized-vspackage"></a>从已初始化的 VSPackage 获取服务
 
-1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `GetServiceExtension` 。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
+1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `GetServiceExtension` 。 可以通过搜索 "vsix" 在 "**新建 Project** " 对话框中找到 VSIX 项目模板。
 
 2. 现在，添加一个名为 **GetServiceCommand** 的自定义命令项模板。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *GetServiceCommand*。 有关如何创建自定义命令的详细信息，请 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 

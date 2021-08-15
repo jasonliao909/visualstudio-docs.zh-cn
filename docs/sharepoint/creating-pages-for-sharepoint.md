@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 702d2c4d5cafd6f4ff4ef2e4104da9f6cc02c5fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6893171ab5154e91e04aa64604b295f785bc5624d30be943d31eb83bea8afab2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949163"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425578"
 ---
 # <a name="create-pages-for-sharepoint"></a>为 SharePoint 创建页
   可为 SharePoint 网站创建应用程序页、网站页、母版页和页面布局。

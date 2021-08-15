@@ -10,14 +10,15 @@ dev_langs:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b089f954c59219461c8e267ee6e88e47015fc794
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0e13e1ea1eda0e0768a1982b56bd7eeb496a1a2fc49ee9a2be64ad8e47dc0ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860615"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424185"
 ---
 # <a name="getvalidcompatibleframework-function"></a>GetValidCompatibleFramework 函数
   此 API 支持 Office 基础结构，不应在代码中直接使用。
@@ -31,12 +32,12 @@ HRESULT WINAPI GetValidCompatibleFramework(
 );
 ```
 
-### <a name="parameters"></a>parameters
+### <a name="parameters"></a>参数
 
 |参数|说明|
 |---------------|-----------------|
-|*lpwszCompatibleFrameworksXML*|请勿使用。|
-|*pbstrValidFrameworkTag*|请勿使用。|
+|*lpwszCompatibleFrameworksXML*|请不要使用。|
+|*pbstrValidFrameworkTag*|请不要使用。|
 
 ## <a name="return-value"></a>返回值
  如果该函数成功，则它将返回 **S_OK**。 如果函数失败，则返回错误代码。

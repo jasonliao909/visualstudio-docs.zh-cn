@@ -13,21 +13,22 @@ ms.assetid: c5f94b45-7249-4e1f-a53d-1d2a1c61e0ef
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3660a8dbb4a0a1280d5a3f428f73f3498244af7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2c3a3766b17b59023cd810106724a2794d68521c4f45f242503fc84324aaef0c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905171"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335025"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 对象
 文本缓冲区对象表示 Unicode 文本流，该流通常与文件关联。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象可以在核心编辑器的上下文之外使用，就像在向导中一样。
 
  下表显示了 的接口 `VSTextBuffer` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[IOleCommandTarget](/windows/desktop/api/docobj/nn-docobj-iolecommandtarget)|标准 OLE 接口。 用于在缓冲区中撤消/重做处理。|
 |[IPersistFile](/windows/desktop/api/objidl/nn-objidl-ipersistfile)|标准 OLE 接口。|

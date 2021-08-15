@@ -11,14 +11,15 @@ ms.assetid: df33c52e-ded2-48a0-951d-1f36c8fc922e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b8a48ffcb3c0409839ec9323679e396a7e23b8f3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4865697e99071b59c0bc097500c91794ad882a830a9a031a680aa8692a1761a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088817"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417595"
 ---
 # <a name="idebugboundbreakpoint2"></a>IDebugBoundBreakpoint2
 此接口表示绑定到代码位置的断点。
@@ -44,7 +45,7 @@ IDebugBoundBreakpoint2 : IUnknown
 |[GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md)|获取此绑定断点的状态。|
 |[GetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-gethitcount.md)|获取此绑定断点的当前命中计数。|
 |[GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)|获取描述此断点的断点解析。|
-|[启用](../../../extensibility/debugger/reference/idebugboundbreakpoint2-enable.md)|启用或禁用断点。|
+|启用|启用或禁用断点。|
 |[SetHitCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-sethitcount.md)|设置此绑定断点的命中次数。|
 |[SetCondition](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setcondition.md)|设置或更改与此绑定断点关联的条件。|
 |[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)|设置或更改与此绑定断点关联的传递计数。|

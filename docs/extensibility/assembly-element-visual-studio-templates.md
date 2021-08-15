@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 Assembly 元素 |Microsoft Docs"
+title: Visual Studio 模板 (的 Assembly 元素) |Microsoft Docs
 titleSuffix: ''
 description: 了解 Assembly 元素及其如何指定有关程序集的信息，模板使用该元素将该程序集的引用添加到项目。
 ms.custom: SEO-VS-2020
@@ -17,14 +17,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54fc5cfccde99776136f0cb904d02bf6a4971045
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 49137804fd73c2ba66ad68e20d6ea0423e0b3b29f64d2295026e3bcd9fdf59ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097313"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308491"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Visual Studio 模板 (Assembly 元素) 
+# <a name="assembly-element-visual-studio-templates"></a>Visual Studio 模板 (的 Assembly 元素) 
 指定有关程序集的信息，模板使用该程序集将该程序集的引用添加到项目。
 
  \<VSTemplate> \<TemplateContent>

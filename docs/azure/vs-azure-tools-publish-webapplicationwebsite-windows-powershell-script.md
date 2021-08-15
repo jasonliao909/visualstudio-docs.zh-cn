@@ -4,16 +4,17 @@ description: 了解如何将 Web 项目发布到 Azure 网站。 此脚本会在
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: 858ed37d6530900e7474748e1443badc1843e199
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5ea7e231025a70eec3f54b804a58039df0dded14340ad0c4887005b908c343a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843964"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121406614"
 ---
 # <a name="publish-webapplicationwebsite-windows-powershell-script"></a>Publish-WebApplicationWebSite（Windows PowerShell 脚本）
 ## <a name="syntax"></a>语法
@@ -121,4 +122,4 @@ JSON 配置文件指定要部署的内容的详细信息。 它包括当创建�
 可以编辑 JSON 配置文件以更改部署的内容。 网站部分是必需的，但数据库部分则是可选的。
 
 ## <a name="next-steps"></a>后续步骤
-有关详细信息，请参阅 [publish-webapplicationvm (Windows PowerShell script) ](vs-azure-tools-publish-webapplicationvm.md)。
+有关详细信息，请参阅[publish-webapplicationvm (Windows PowerShell script) ](vs-azure-tools-publish-webapplicationvm.md)。

@@ -10,22 +10,23 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: de23f3529cfcd321b0a7c3f9844ac69d96fed9c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9c64040e4ff5b3ca96ef4b49b749b2be73a6dc63a0fa9fd48f2201007de2dcd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860316"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121420960"
 ---
 # <a name="fxcop-rule-port-status"></a>Fxcop 规则端口状态
 
-如果以前在 Visual Studio 中使用了静态代码分析，则可能会想知道哪些规则在当前实现中作为 [.net 分析器](install-net-analyzers.md)提供。 此页列出了已移植的规则。 请参阅 [Unported 规则](fxcop-unported-rules.md) ，了解尚未移植的规则，以及是否有计划对其进行端口。
+如果以前在 Visual Studio 中使用了静态代码分析，则可能会想知道哪些规则在当前实现中作为[.net 分析器](install-net-analyzers.md)提供。 此页列出了已移植的规则。 请参阅 [Unported 规则](fxcop-unported-rules.md) ，了解尚未移植的规则，以及是否有计划对其进行端口。
 
 ## <a name="ported-rules"></a>移植的规则
 
-Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) 具有已移植到 roslyn 分析器的最新规则列表。 该页还包含其他信息，例如是否默认启用规则，以及是否有关联的 *代码修复*。  ([代码修补程序](../ide/quick-actions.md) 是 Visual Studio 的灯泡图标菜单中提供的单击一次修复。 ) 
+Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md) 具有已移植到 roslyn 分析器的最新规则列表。 该页还包含其他信息，例如是否默认启用规则，以及是否有关联的 *代码修复*。  ([代码修补程序](../ide/quick-actions.md)是 Visual Studio 中灯泡图标菜单中可用的一次单击的修复程序。 ) 
 
 截止到此页上的日期，已移植到 [.net 分析器](install-net-analyzers.md) 的 FxCop 规则列表包括：
 
@@ -126,8 +127,8 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | 指定对 P/Invoke 字符串参数进行封送处理
 [CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | 检查可见的事件处理程序
 [CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | 密封满足私有接口的方法
-[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | 请勿捕获损坏状态异常
-[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | 再次引发以保留堆栈详细信息。
+[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | 不捕获损坏状态异常
+[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | 重新引发以保留堆栈详细信息。
 [CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | 不要引发保留的异常类型
 [CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | 以内联方式初始化值类型的静态字段
 [CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | 正确实例化参数异常
@@ -137,13 +138,13 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose 方法应调用基类释放
 [CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | 可释放类型应声明终结器
 [CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | 不要使用 FlagsAttribute 标记枚举
-[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 不在 finally 子句中引发异常
+[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 请勿在 finally 子句中引发异常
 [CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | 运算符重载具有命名的备用项
 [CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | 运算符应有对称重载
 [CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | 集合属性应为只读
 [CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | 实现序列化构造函数
-[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重写值类型等于时重载相等运算符
-[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递系统 uri 对象而不是字符串
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重写值类型 Equals 时重载运算符等于
+[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递系统 URI 对象而不是字符串
 [CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | 标记所有不可序列化的字段
 [CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | 用 serializable 标记 ISerializable 类型
 [CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | 为格式化方法提供正确的参数

@@ -11,17 +11,18 @@ ms.assetid: 91793d25-790f-4881-a5c0-d0458e534514
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35eff7948bc6171a0853f8772b65cf10c0b4cf1b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a6b18747cf93c110f236626b3b0e920e9d830824696c81a2a573b61452edc854
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064964"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415996"
 ---
 # <a name="idebugproperty2getmemorycontext"></a>IDebugProperty2::GetMemoryContext
 获取属性值的内存上下文。

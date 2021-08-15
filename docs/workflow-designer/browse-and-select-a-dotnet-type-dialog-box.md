@@ -11,14 +11,15 @@ ms.assetid: 864b60b6-a070-4e5c-aa5b-a25341b57ea6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - dotnet
-ms.openlocfilehash: f0a7ffb9e100a621019a5d0ced855575a05708ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f14fe6095011e77341803c0cdeda5bcd94f0eb8805644859b5c2d6d4e8709481
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423756"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
@@ -65,7 +66,7 @@ ms.locfileid: "99875297"
 
 键入更多字符以查找匹配项时，" **类型名称** " 框中的类型列表将变短。 只有其 fullyqualified 名称以您键入的字符串开头的类型或其短名称以您键入的字符串开头的类型才会显示在筛选列表中。
 
-例如： 。
+例如：
 
 1. 键入 **操作** 匹配 <xref:System.OperationCanceledException> ，但不匹配 <xref:System.InvalidOperationException> 。 若要匹配 <xref:System.InvalidOperationException>，请开始键入 System.I 或 Invalid。
 

@@ -11,17 +11,18 @@ ms.assetid: 800cc77d-3c27-4763-a9df-552a9384bd49
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b85933896dfff38c2d346fd18144710e2e6fc127
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21a8b6632c3ac1005d0f05749ca6415d2f706e7ce65d7f68e9395eb774e6a715
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091521"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338288"
 ---
 # <a name="messagetype"></a>MESSAGETYPE
 指定消息类型和原因。
@@ -53,34 +54,34 @@ public enum enum_MESSAGETYPE {
 
 ## <a name="fields"></a>字段
  `MT_OUTPUTSTRING`\
- 指示应将消息发送到 "输出" 窗口。 这与互斥 `MT_MESSAGEBOX` 。
+ 指示消息应发送到输出窗口。 这与 互斥 `MT_MESSAGEBOX` 。
 
  `MT_MESSAGEBOX`\
- 指示消息应显示在消息框中。 这与互斥 `MT_OUTPUTSTRING` 。
+ 指示消息应显示在消息框中。 这与 互斥 `MT_OUTPUTSTRING` 。
 
  `MT_TYPE_MASK`\
- 用于隔离消息目标的掩码值。
+ 一个掩码值，用于隔离消息的目标。
 
  `MT_REASON_EXCEPTION`\
- 指示由于异常而显示的消息框。 这与互斥 `MT_REASON_TRACEPOINT` 。
+ 指示消息框显示为异常的结果。 这与 互斥 `MT_REASON_TRACEPOINT` 。
 
  `MT_REASON_TRACEPOINT`\
- 指示由于命中跟踪点而显示的消息框。 这与互斥 `MT_REASON_EXCEPTION` 。
+ 指示消息框显示为命中跟踪点的结果。 这与 互斥 `MT_REASON_EXCEPTION` 。
 
  `MT_REASON_MASK`\
- 用于隔离正在显示的消息原因的掩码值。
+ 一个掩码值，用于隔离显示消息的原因。
 
 ## <a name="remarks"></a>备注
  这些值从 [GetMessage](../../../extensibility/debugger/reference/idebugmessageevent2-getmessage.md) 和 [GetErrorMessage](../../../extensibility/debugger/reference/idebugerrorevent2-geterrormessage.md) 方法返回。
 
- 其中一个原因值可以使用按位与某个输出目标值相结合 `OR` 。
+ 其中一个原因值可以使用位 与输出目标值之一结合使用 `OR` 。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

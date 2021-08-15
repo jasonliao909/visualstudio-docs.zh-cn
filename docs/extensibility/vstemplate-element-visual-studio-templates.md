@@ -1,6 +1,6 @@
 ---
-title: " (Visual Studio 模板) 的 .Vstemplate 元素 |Microsoft Docs"
-description: 了解 .Vstemplate 元素以及它如何包含有关项目模板、项模板或初学者工具包的所有元数据。
+title: VSTemplate 元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 VSTemplate 元素及其如何包含有关项目模板、项模板或初学者工具包的所有元数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -15,14 +15,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7509614613ac80bc4f697f7f93358819eb9ecde4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b57965d7b59ca921c0b3831c24413709f85f0ff5ee8a394f357629ea66992357
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062208"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335207"
 ---
-# <a name="vstemplate-element-visual-studio-templates"></a> (Visual Studio 模板的 .Vstemplate 元素) 
+# <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 元素 (Visual Studio模板) 
 包含有关项目模板、项模板或初学者工具包的所有元数据。
 
 ## <a name="syntax"></a>语法
@@ -42,14 +42,14 @@ ms.locfileid: "105062208"
 
 | 属性 | 说明 |
 |-----------| - |
-| `Type` | 将模板标识为项目模板或项模板。 此属性的值可以是 `Project` 或 `Item` 。 |
-| `Version` | 指定模板的版本号。 和中的模板的 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] `Version` 属性值为 `3.0.0` 。 |
+| `Type` | 将模板标识为项目模板或项模板。 此属性的值可以是 或 `Project` `Item` 。 |
+| `Version` | 指定模板的版本号。 和 [!INCLUDE[vs_dev10_long](../code-quality/includes/vs_dev10_long_md.md)] 中的模板 [!INCLUDE[vs_dev11_long](../data-tools/includes/vs_dev11_long_md.md)] `Version` 的属性值为 `3.0.0` 。 |
 
 ### <a name="child-elements"></a>子元素
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定对模板进行分类的数据，并定义它在 " **新建项目** " 或 " **添加新项** " 对话框中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定对模板进行分类的数据，并定义它在"新建项"或"Project项 **"****对话框中的显示**。|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的内容。|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|可选元素。|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|可选元素。|
@@ -61,7 +61,7 @@ ms.locfileid: "105062208"
  `VSTemplate`元素是 *.vstemplate* 文件的根元素。
 
 ## <a name="example"></a>示例
- 下面的示例演示应用程序的项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 以下示例显示了应用程序的项目模板的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 65d1e1d02c5b7d13c2e86343c6307306542d00e2
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 1c2bb7a6d4ce0304fbf0dcbf6c56778eaa189b3cd42d20f17876ae2770f1230d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316625"
 ---
 # <a name="the-dsltexttransform-command"></a>DslTextTransform 命令
 DslTextTransform.cmd 是一个脚本，它调用 TextTransform.exe，然后使用常用选项运行它。 可以使用 DslTextTransformation.cmd 自动执行项目的夜间 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 生成。 有关详细信息，请参阅使用 [TextTransform](../modeling/generating-files-with-the-texttransform-utility.md)实用工具 生成文件。
@@ -33,4 +34,4 @@ DslTextTransform.cmd 是一个脚本，它调用 TextTransform.exe，然后使�
 
 - 文本模板文件的位置。
 
-  DslTextTransform.cmd 使用默认指令处理器和程序集处理指定的文本模板文件。 如果创建自定义指令处理器，可以创建自己的批处理文件来调用TextTransform.exe。 在此批处理文件中，可以指定程序集和关联的自定义指令处理器。
+  DslTextTransform.cmd 使用默认指令处理器和程序集处理指定的文本模板文件。 如果创建自定义指令处理器，可以创建自己的批处理文件来调用 TextTransform.exe。 在此批处理文件中，可以指定程序集和关联的自定义指令处理器。

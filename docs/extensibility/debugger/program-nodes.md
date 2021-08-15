@@ -13,14 +13,15 @@ ms.assetid: 1c5a5c13-c14d-42c3-af11-4c63f1032c8d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c26fa95a5fedf325591ce517e7c12ecebcd705c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e0066f6b8ee17591620af896c753dbd9b29a5948790d024c5b505be76f34cb75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899077"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417764"
 ---
 # <a name="program-nodes"></a>程序节点
 在调试器体系结构中，程序 *节点：*

@@ -12,26 +12,27 @@ ms.assetid: 52794238-6fae-451c-bf1c-99f344c6f173
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef2a477a3a5027d7989c88a71d42b091cc69fbae
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 54a80144102426d264351da4db79f0f4ddb812427b1327b0a9e007b0643f8bfe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067952"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417881"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
  (DE) 的调试引擎是允许调试特定运行时体系结构的组件。 每个运行时环境通常只有一个 DE 实现。
 
 > [!NOTE]
-> 尽管 Transact-sql 和 JScript 有单独的 DE 实现，但 VBScript 和 JScript 共享了单次 DE。
+> 尽管存在单独的 SQL 和 JScript 的实现，但 VBScript 和 JScript 共用一次 de。
 
  DE 与解释器或操作系统一起使用，以提供此类调试服务作为执行控制、断点和表达式计算。 这些服务通过取消接口实现，并可能导致调试器在不同的运行模式之间过渡。 有关详细信息，请参阅 [运行模式](../../extensibility/debugger/operational-modes.md)。
 
  创建 DE 包含以下步骤：
 
-1. 向 Visual Studio 注册 DE
+1. 注册 DE Visual Studio
 
 2. 启用要调试的程序
 
@@ -42,7 +43,7 @@ ms.locfileid: "105067952"
 5. 设置终止和分离
 
 ## <a name="in-this-section"></a>本节内容
- [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md) 说明向 Visual Studio 注册调试引擎以使其可供使用所需的步骤。
+ [注册自定义调试引擎](../../extensibility/debugger/registering-a-custom-debug-engine.md)说明向 Visual Studio 注册调试引擎以使其可供使用的步骤。
 
  [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md) 说明在您的 DE 可以调试程序之前，必须先启动 DE，或将其附加到现有的程序。
 

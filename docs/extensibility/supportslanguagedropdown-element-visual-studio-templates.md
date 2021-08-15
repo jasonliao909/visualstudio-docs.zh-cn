@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67bf92c8c447faac2969bde3f208823158663712
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f02b7b70e3caedca11a41fd399ec80e84c4c8a39ccfc8eb98db795a4d49fa58b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056072"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413812"
 ---
 # <a name="supportslanguagedropdown-element-visual-studio-templates"></a>SupportsLanguageDropDown 元素（Visual Studio 模板）
 
@@ -63,7 +63,7 @@ ms.locfileid: "105056072"
 
 ## <a name="remarks"></a>备注
 
- `SupportsLanguageDropDown` 是可选元素。 默认值为 `false`。
+ `SupportsLanguageDropDown` 是可选元素。 默认值是 `false`。
 
  `SupportsLanguageDropDown`元素仅适用于 Web 项模板。
 
@@ -97,5 +97,5 @@ ms.locfileid: "105056072"
 
 ## <a name="see-also"></a>另请参阅
 
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)

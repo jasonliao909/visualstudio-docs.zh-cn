@@ -1,5 +1,5 @@
 ---
-description: 此结构提供有关在计算机上运行的进程的信息。
+description: 此结构提供有关计算机上运行的进程的信息。
 title: PROVIDER_PROCESS_DATA |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ec2362ed-4a0c-4a09-9d66-8ff04e4f41ee
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a6c48c87f92fde487b9a008c5db45f75eb026f83
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c9345080eddebe1a7bf596263de93e46464114cc17e27b06c05a1bbe28adef6c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079509"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338210"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
-此结构提供有关在计算机上运行的进程的信息。
+此结构提供有关计算机上运行的进程的信息。
 
 ## <a name="syntax"></a>语法
 
@@ -46,23 +47,23 @@ public struct PROVIDER_PROCESS_DATA {
 
 ## <a name="members"></a>成员
  `Fields`\
- [PROVIDER_FIELDS](../../../extensibility/debugger/reference/provider-fields.md)枚举中的标志的组合，指示要填写的字段。
+ 来自 PROVIDER_FIELDS [标志的组合](../../../extensibility/debugger/reference/provider-fields.md) ，指示填充了哪些字段。
 
  `ProgramNodes`\
- 一个 [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 结构，它包含程序节点的数组。
+ 包含 [PROGRAM_NODE_ARRAY](../../../extensibility/debugger/reference/program-node-array.md) 节点数组的一个结构。
 
  `fIsDebuggerPresent`\
- `TRUE`如果调试程序正在运行，则为非零 () [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ， `FALSE` 如果不是，则 () 。
+ 如果调试 () ，则非零值 () `TRUE` [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `FALSE` 为零。
 
 ## <a name="remarks"></a>备注
- 此结构被传递给 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法，其中填充了此结构。
+ 此结构将传递给 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法，该方法用于填充它。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

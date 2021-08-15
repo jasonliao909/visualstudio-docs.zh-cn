@@ -1,6 +1,6 @@
 ---
 title: 如何：添加 Finder 方法 |Microsoft Docs
-description: 在 Visual Studio 中添加一个 Finder 方法，该方法可使业务数据连接 (BDC) 服务在 SharePoint web 部件或列表中显示实体的列表。
+description: 在 Visual Studio 中添加 Finder 方法，这将使业务数据连接 (BDC) 服务在 SharePoint web 部件或列表中显示实体的列表。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 6bd75c94e2f0f557b85d945d141f952950abb2eb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 5c7bb3cf932c1e90c0540cd4c8ec378487563b0b5122818a2d2744fd5e2ebb66
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216340"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425357"
 ---
 # <a name="how-to-add-a-finder-method"></a>如何：添加 Finder 方法
   若要启用业务数据连接 (BDC) 服务在 web 部件或列表中显示实体的列表，则必须创建 *Finder* 方法。 Finder 方法是一种特殊方法，它返回实体实例的集合。 有关详细信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -41,7 +42,7 @@ ms.locfileid: "106216340"
 
 3. 在 " **添加方法** " 列表中，选择 " **创建 Finder 方法**"。
 
-    Visual Studio 将添加方法、返回参数和类型描述符。
+    Visual Studio 添加方法、返回参数和类型描述符。
 
 4. 将类型描述符配置为实体集合类型描述符。 有关如何创建实体集合类型描述符的详细信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 

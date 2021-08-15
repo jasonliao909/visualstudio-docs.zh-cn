@@ -1,6 +1,6 @@
 ---
 title: UX Essentials for Visual Studio |Microsoft Docs
-description: 查看这些用户体验最佳做法，了解针对屏幕分辨率Visual Studio新功能。
+description: 查看这些用户体验最佳做法，了解你为屏幕Visual Studio新功能，包括了解屏幕分辨率。
 ms.custom: SEO-VS-2020
 ms.date: 04/26/2017
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: a793cf7a-f230-43ce-88d0-fa5d6f1aa9c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 74b27e87e6f16130573ef6671286501f77e44352
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 569ab6c839c9944550b351152abe86c0f7a6722dab3bd3b743adbaf87139d695
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899415"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121259846"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 用户体验基础知识
 
-## <a name="best-practices"></a>最佳实践
+## <a name="best-practices"></a>最佳做法
 
 ### <a name="1-be-consistent-within-the-visual-studio-environment"></a>1.在安全环境中Visual Studio一致。
 
@@ -29,7 +30,7 @@ ms.locfileid: "112899415"
 
 - 当共享命令和控件存在时，请使用它们。
 
-- 了解Visual Studio层次结构及其如何建立上下文并驱动 UI。
+- 了解Visual Studio层次结构及其如何建立上下文和驱动 UI。
 
 ### <a name="2-use-the-environment-service-for-fonts-and-colors"></a>2.将环境服务用于字体和颜色。
 
@@ -47,7 +48,7 @@ ms.locfileid: "112899415"
 
 - 在任务流中各个功能之前创建任务流。
 
-- 熟悉用户，使该知识在规范中明确显示。
+- 熟悉用户，在规范中明确掌握这些知识。
 
 - 查看 UI 时，请评估完整的体验以及详细信息。
 
@@ -57,17 +58,17 @@ ms.locfileid: "112899415"
 
 ### <a name="minimum-resolution"></a>最小分辨率
 
-- 2015 年Visual Studio分辨率为 **1280x720。** 这意味着可以在此 *分辨率* 下Visual Studio，尽管它可能不是最佳用户体验。 无法保证所有方面在低于 1280x720 的分辨率下都可用。
+- 2015 年Visual Studio分辨率为 **1280x720。** 这意味着可以在此 *解决方法* Visual Studio，尽管它可能不是最佳用户体验。 无法保证所有方面在低于 1280x720 的分辨率下都可用。
 
 - 目标分辨率为 **1366x768 Visual Studio 1366x768。** 这是我们承诺提供良好用户体验的最低解决方法。 
 
 - 初始对话高度 **应小于 700 像素**，因此它适合 IDE 帧的最小分辨率（96 dpi）。
 
 ### <a name="high-density-displays"></a>高密度显示器
- Visual Studio UI 必须能够很好地处理 Windows 支持的所有 DPI 缩放因素：150%、200% 和 250%。
+ Visual Studio UI 必须能够很好地处理所有支持Windows DPI 缩放因素：150%、200% 和 250%。
 
 ## <a name="anti-patterns"></a>若干反模式
- Visual Studio许多 UI 示例，这些示例遵循我们的指南和最佳做法。 为了保持一致，开发人员通常从产品 UI 设计模式借用，这些模式类似于他们正在构建的模式。 尽管这是一种很好的方法，可帮助我们在用户交互和视觉设计方面提高一致性，但我们有时会提供一些细节，但由于计划约束或缺陷优先级的原因，这些细节不符合我们的准则。 在这些情况下，我们不希望团队复制这些"反模式"之一，因为它们在环境环境中Visual Studio错误或不一致。
+ Visual Studio许多 UI 示例，这些示例遵循我们的指南和最佳做法。 为了保持一致，开发人员通常从产品 UI 设计模式借用，这些模式类似于他们正在构建的模式。 尽管这是一种很好的方法，可帮助我们提高用户交互和视觉设计的一致性，但我们有时会提供一些细节，但由于计划约束或缺陷优先级的原因，这些细节不符合我们的准则。 在这些情况下，我们不希望团队复制这些"反模式"之一，因为它们在环境环境中Visual Studio不一致。
 
 ### <a name="required-fieldssettings-shown-in-error-state-by-default"></a>默认以错误状态显示的必填字段/设置
 
@@ -85,7 +86,7 @@ ms.locfileid: "112899415"
 
  在这种情况下，还有一个额外的问题，因为用于警报的图标包含""图标，因此不能旁边使用常见的删除 &times; 图标。 因此，UI 使用"删除"按钮，这是一种更不可靠的控件。
 
- ![默认情况下，将 UI 置于错误状态是Visual Studio模式。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-模式")<br />默认情况下，将 UI 置于错误状态是Visual Studio模式。
+ ![默认情况下，将 UI 置于错误状态是一种Visual Studio模式。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-模式")<br />默认情况下，将 UI 置于错误状态是一种Visual Studio模式。
 
 #### <a name="alternatives"></a>备选方法
 
@@ -93,9 +94,9 @@ ms.locfileid: "112899415"
 
 - 允许用户在不发出警告的情况下添加声明，然后立即移动以设置项的属性。
 
-- 在焦点从 (项) 添加警告图标，例如向列表添加另一个声明或尝试更改设计器中的选项卡。
+- 将警告图标 (在) 项移动时添加警告图标，例如向列表添加另一个声明或尝试更改设计器中的选项卡。
 
-- 如果用户尝试在任何声明上设置属性之前更改选项卡，则弹出一个对话框，说明应用程序在解决警告 (不会生成 (或任何) 的影响。 如果用户关闭对话框并更改选项卡，则图标 (严重或警告，) 添加到"声明"选项卡。
+- 如果用户尝试在任何声明上设置属性之前更改选项卡，则弹出一个对话框，说明应用程序不会生成 (或在解决警告之前) 任何影响。 如果用户关闭对话框并更改选项卡，则图标 (严重或警告，) 添加到"声明"选项卡。
 
 ### <a name="multiple-clicks-to-dismiss-ui"></a>多次单击以关闭 UI
 
@@ -106,11 +107,11 @@ ms.locfileid: "112899415"
  将视频链接插入 VS UI 中各个位置的团队决定针对 UX 指定的"关闭按钮和工具提示说明"这一常见模式，而是实现了下拉列表和" &times; 不再显示"链接。
 
 #### <a name="example-video-links-in-team-explorer"></a>示例：视频链接团队资源管理器
-强制用户在关闭 UI 之前阅读解释性文本是一种反Visual Studio。 正确设计后，视频链接应显示包含悬停附加信息的工具提示，单击""应关闭消息，而无需 &times; 进一步交互。
+强制用户在关闭 UI 之前阅读解释性文本是一种反模式Visual Studio。 正确设计后，视频链接应显示包含悬停附加信息的工具提示，单击""应关闭消息，而无需 &times; 进一步交互。
 
  ![说明性文本反&#45;模式&#45;不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />不正确的视频链接模式
 
-用户被强制使用 (单击) 关闭按钮，只需在显示视频链接的每一处关闭 UI 即可。
+用户只能单击一 (关闭按钮) ，而是使用两次单击来直接关闭视频链接出现每个位置的 UI。
 
 针对这种情况的正确设计是遵循 Internet Explorer、Office 和 Visual Studio：悬停时，用户可以看到工具提示说明，一键隐藏 UI。
 
@@ -122,7 +123,7 @@ ms.locfileid: "112899415"
 
 ![图 A：命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-FigureA")<br />图 A：命令栏反模式
 
-稍微好一些，但仍不需要在工具栏中放置此类型的设置，如图 **B 所示**。虽然拆分按钮占用的空间较少，因此比下拉列表要改进，但两种设计仍使用工具栏来提升实际上不是命令的按钮。
+稍微好一些，但仍不需要在工具栏中放置此类型的设置，如图 **B 所示**。虽然拆分按钮占用的空间较少，因此比下拉列表要改进，但两种设计仍使用工具栏来提升不是命令的项。
 
 ![图 B：更好，但仍为命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-FigureB")<br />图 B：更好，但仍为命令栏反模式
 
@@ -143,7 +144,7 @@ ms.locfileid: "112899415"
  ![正确设置样式后，非超链接文本在环境字体中未显示。](../../extensibility/ux-guidelines/media/0102-h_grouplabelcorrect.png "0102-h_GroupLabelCorrect")<br />正确设置样式后，非超链接文本在环境字体中未显示。
 
 #### <a name="clicking-on-a-check-box-results-in-a-pop-up-dialog"></a>单击复选框会导致弹出对话框
- 单击"发布 Windows Azure 应用程序"向导中的"为所有角色启用远程桌面"复选框会立即弹出一个弹出对话框，Visual Studio反模式。 此外，复选框字段在选中后不会填充复选框，这是另一种交互反模式。
+ 单击"发布"向导中的"启用所有角色的远程桌面"复选框Windows Azure 应用程序弹出一个弹出对话框，Visual Studio反模式。 此外，复选框字段在选中后不会填充复选框，这是另一种交互反模式。
 
  ![单击复选框后启动对话框是一种Visual Studio模式。](../../extensibility/ux-guidelines/media/0102-i_checkboxpopup.png "0102-i_CheckboxPopup")<br />单击复选框后启动对话框是一种Visual Studio模式。
 
@@ -154,7 +155,7 @@ ms.locfileid: "112899415"
 
 2. "了解更多"不是指向概念性主题的链接的适当文本。 用户的目标不是了解更多，它是了解他们选择的影响。
 
-   ![忽略颜色服务，并使用 "了解更多" 超链接为 Visual Studio 反模式。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />忽略颜色服务，并使用 "了解更多" 超链接为 Visual Studio 反模式。
+   ![忽略颜色服务并使用 "了解更多" 超链接 Visual Studio 反模式。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />忽略颜色服务并使用 "了解更多" 超链接 Visual Studio 反模式。
 
 **更好的解决方案：** 单击链接，提出用户要询问的问题。 例如：
 

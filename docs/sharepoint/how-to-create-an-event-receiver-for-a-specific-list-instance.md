@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 664a7ac4e763b2378cf30603c417aacde27c2e47
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 815cb4a46141ddc5f6e85fefe4ff71a53cd473e958ffaa5c2779e99355aca6cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925491"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121228553"
 ---
 # <a name="how-to-create-an-event-receiver-for-a-specific-list-instance"></a>如何：为特定列表实例创建事件接收器
   列表实例事件接收器对在列表定义的任何实例中发生的事件做出响应。 尽管事件接收器模板不启用特定列表实例的目标，但你可以修改作用域为列表定义的事件接收器，以响应特定列表实例中的事件。

@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 调试 Api)  (引用 |Microsoft Docs
-description: Visual Studio 调试 SDK 参考概述了调试程序及其组件的运行时体系结构和功能的基本模型。
+title: 调试 (Visual Studio API 参考) |Microsoft Docs
+description: Visual Studio调试 SDK 参考概述了调试器及其组件的运行时体系结构和功能的基本模型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,26 +12,27 @@ ms.assetid: 9810fc50-43c7-4916-9916-1cf333037b51
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d5b1cb9f7492ca19ca892f1d2e745bf6160d182
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 667806b5291413a189feec79053e8721ba3f9e814656a37b610be0289454a26b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075414"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415008"
 ---
 # <a name="reference-visual-studio-debugging-apis"></a>引用（Visual Studio 调试 API）
 
-Visual Studio 调试 SDK 参考概述了调试程序及其组件的运行时体系结构和功能的基本模型。 该文档与它所描述的组件和接口之间的假设尽可能少，除了它通过接口定义的行为。
+Visual Studio调试 SDK 参考概述了调试器及其组件的运行时体系结构和功能的基本模型。 除了通过接口定义的行为外，文档对描述的组件和接口做出尽可能少的假设。
 
-参考部分的目标是为提供对各种语言、运行时间和操作系统的支持。
+参考部分的目标是尽可能为各种语言、运行时间和操作系统提供支持。
 
 ## <a name="in-this-section"></a>本节内容
 
 [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)
 
-包含 Visual Studio 调试 API 的接口、枚举器和结构的文档。
+包含有关调试 API 的接口、枚举数和Visual Studio的文档。
 
 [术语表](../../../extensibility/debugger/reference/visual-studio-debugger-glossary.md)
 

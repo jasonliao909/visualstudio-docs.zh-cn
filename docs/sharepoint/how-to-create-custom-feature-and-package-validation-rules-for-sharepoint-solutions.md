@@ -1,7 +1,7 @@
 ---
-title: 为 SharePoint 解决方案创建功能和包验证
+title: 为解决方案创建SharePoint验证
 titleSuffix: ''
-description: 创建自定义验证规则以验证 Visual Studio 生成的解决方案包或验证整个功能。
+description: 创建自定义验证规则以验证由 Visual Studio生成的解决方案包或验证整个功能。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,18 +14,19 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ee6b27b92f1c79bfda95ba3d6dce7dbdce4a6fac
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: dcb73396c1c73c69c851134dac3302f9e0ffbae5bc3d7c67a4cccfa171b14e53
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216561"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409652"
 ---
-# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>为 SharePoint 解决方案创建功能和包验证
+# <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>为解决方案创建SharePoint验证
 
-  你可以创建自定义验证规则来验证 Visual Studio 生成的解决方案包。 可以通过在 **PackagingExplorer** 的包或功能的上下文菜单中选择 "**验证**"，对整个功能或包执行完全验证。 当你向项目添加新的 SharePoint 项目项或功能以确定包或功能是否处于有效状态时，将执行部分验证。
+  可以创建自定义验证规则来验证由应用程序生成Visual Studio。 可以通过从包的上下文菜单中选择"验证"或 **"PackagingExplorer"** 中的"功能"，对整个功能或包执行完全验证。  向项目添加新项目项SharePoint功能时，将执行部分验证，以确定包或功能是否将位于有效状态。
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>创建自定义包验证规则
 
@@ -33,7 +34,7 @@ ms.locfileid: "106216561"
 
 2. 添加对下列程序集的引用：
 
-    - VisualStudio
+    - Microsoft.VisualStudio。SharePoint
 
     - System.ComponentModel.Composition
 
@@ -43,7 +44,7 @@ ms.locfileid: "106216561"
 
     - 若要创建功能验证规则，请实现 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 接口。
 
-4. 将添加 <xref:System.ComponentModel.Composition.ExportAttribute> 到类。 此属性使 Visual Studio 能够发现和加载验证规则。 将 <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> 或 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 类型传递给特性构造函数。
+4. 将 <xref:System.ComponentModel.Composition.ExportAttribute> 添加到 类。 此属性使Visual Studio发现和加载验证规则。 将 <xref:Microsoft.VisualStudio.SharePoint.Validation.IPackageValidationRule> 或 <xref:Microsoft.VisualStudio.SharePoint.Validation.IFeatureValidationRule> 类型传递给属性构造函数。
 
 ## <a name="example"></a>示例
  下面的代码示例演示如何创建自定义功能验证规则。
@@ -54,12 +55,12 @@ ms.locfileid: "106216561"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：
 
-- VisualStudio。
+- Microsoft.VisualStudio。SharePoint。
 
-- System.componentmodel。
+- System.ComponentModel.Composition。
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署该扩展，请为 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 该程序集创建一个扩展 (VSIX) 包，并为您要使用该扩展分发的任何其他文件创建该扩展。 有关详细信息，请参阅 [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+ 若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
 ## <a name="see-also"></a>另请参阅
-- [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)
+- [扩展SharePoint打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

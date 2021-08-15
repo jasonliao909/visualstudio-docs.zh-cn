@@ -9,14 +9,15 @@ ms.assetid: 58aa236a-5ab8-4695-b303-89dffdbcd946
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58cb913f5dbc729c297de8a34aa5dd4c3c99b48a
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 04cc9a685554971e4e4065dba95bb1ac3118f56d470c82da474fe8349769c8dd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900910"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417790"
 ---
 # <a name="gettaskschedulersfordebugger-method"></a>GetTaskSchedulersForDebugger 方法
 检索 <xref:System.Threading.Tasks.TaskScheduler> 当前处于活动状态的所有对象的数组。

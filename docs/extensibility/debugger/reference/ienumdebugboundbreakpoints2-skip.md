@@ -11,17 +11,18 @@ ms.assetid: 95659709-6d7c-44ca-b598-629eb688429f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9af4f8568a2f743aa62280db1f8ce9015e9f694
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aa84e6c7d3292dffa18692f884c10f984c74f921fabb4a3980968b3c26ccdd4b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061675"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338327"
 ---
 # <a name="ienumdebugboundbreakpoints2skip"></a>IEnumDebugBoundBreakpoints2::Skip
 跳过指定数目的元素。

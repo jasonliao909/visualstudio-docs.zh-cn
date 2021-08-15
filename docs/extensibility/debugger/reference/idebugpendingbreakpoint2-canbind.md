@@ -12,17 +12,18 @@ ms.assetid: 84a2b189-ccf1-467e-8fab-0c0da68f0b91
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ffc2638d6f0a538279b400eacd4155a56054bd7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ecbaa5d7f065d36e3152cf0ee7d0b01b7b1827e682d1c6937680670e9c3be4ef
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087790"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416971"
 ---
 # <a name="idebugpendingbreakpoint2canbind"></a>IDebugPendingBreakpoint2::CanBind
 确定此挂起断点是否可以绑定到代码位置。

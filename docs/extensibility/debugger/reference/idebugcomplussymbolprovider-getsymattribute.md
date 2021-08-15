@@ -1,6 +1,6 @@
 ---
 description: 检索具有指定模块的给定父属性的调试符号。
-title: IDebugComPlusSymbolProvider：： GetSymAttribute |Microsoft Docs
+title: IDebugComPlusSymbolProvider：：GetSymAttribute |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 6cbaac92-a60b-4165-a7f5-c34407770f3c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a79cf50aed14bc236224228eaff4b35ae2845ce6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59b0da0f176b4b55c507d1f44254a72aa955dacb5d352478e9f3fa17134f5cf4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095662"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417569"
 ---
 # <a name="idebugcomplussymbolprovidergetsymattribute"></a>IDebugComPlusSymbolProvider::GetSymAttribute
 检索具有指定模块的给定父属性的调试符号。
@@ -53,28 +54,28 @@ int GetSymAttribute (
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `tokParent`\
-中父属性的标记。
+[in]父属性的标记。
 
 `pstrName`\
-中模块的名称。
+[in]模块的名称。
 
 `cBuffer`\
-中输出所需的字节数 `buffer` 。
+[in]输出 所需的字节数 `buffer` 。
 
 `pcBuffer`\
-弄输出的长度 `buffer` 。
+[out]输出 的长度 `buffer` 。
 
 `buffer`\
-弄包含符号的数组。
+[out]包含符号的数组。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。

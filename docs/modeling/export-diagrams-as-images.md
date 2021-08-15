@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 5aa5a1d5d1e64dbb5fbbe5a7ab1c0bb6968351b8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 777d78bb9739ffc51db1e271e4e9bc6979256d359b123930b5556705b9cad0f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411069"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 
@@ -40,7 +41,7 @@ ms.locfileid: "112388888"
 
 2. 在"**名称"** 列表中，选择 **"Microsoft XPS 文档编写器**"，然后单击"确定 **"。**
 
-3. 在 **"将文件另存** 为"对话框中，将文件另存为 **\* .xps** (XPS) 文件。
+3. 在 **"将文件另存** 为"对话框中，将文件另存 **为 \* .xps** (XPS) 文件。
 
 ## <a name="see-also"></a>另请参阅
 

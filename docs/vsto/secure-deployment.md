@@ -1,6 +1,6 @@
 ---
 title: 保护部署
-description: 了解如何通过使用证书对解决方案进行签名，或使用 ClickOnce 信任提示密钥，来提供信任决策所依据的证据。
+description: 了解如何通过使用证书对解决方案进行签名，或者使用 ClickOnce 信任提示密钥，来提供信任决策所依据的证据。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c778ed98a3f5d17007acccd2f16208ece3237037
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 22efe77715cf157a7dba84cb9bd348c7e49859e1ce8e8b3ed113cca7e4a03e3e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906738"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408105"
 ---
 # <a name="secure-deployment"></a>保护部署
-  当你创建 Office 解决方案时，你的开发计算机会自动更新，以允许你的项目中的代码运行。 但是，在部署解决方案时，必须通过使用证书或使用信任提示密钥对解决方案进行签名，来提供信任决策所依据的证据 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 有关详细信息，请参阅 [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。
+  创建 Office 解决方案时，会自动更新开发计算机，以允许项目中的代码运行。 但是，在部署解决方案时，必须通过使用证书或使用信任提示密钥对解决方案进行签名，来提供信任决策所依据的证据 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -38,15 +39,15 @@ ms.locfileid: "99906738"
 
 - **HKEY_LOCAL_MACHINE\Software\Microsoft\VSTO**
 
-  若要阻止 Office 解决方案运行代码，请 `Disabled` 在其中一个或两个注册表项下创建一个条目，并为以下数据类型和值指定以下数据类型之一 `Disabled` ：
+  若要防止 Office 的解决方案运行代码，请 `Disabled` 在其中一个或两个注册表项下创建一个条目，并为以下数据类型和值指定以下数据类型之一 `Disabled` ：
 
 - 设置为除 "0" (零) 以外的任何字符串的 REG_SZ 或 REG_EXPAND_SZ。
 
 - 设置为 0 (零) 的任何值的 REG_DWORD。
 
-  若要使 Office 解决方案能够运行代码，请将两个项都设置 `Disabled` 为 0 (零) ，或删除注册表项。
+  若要启用 Office 解决方案来运行代码，请将两个项都设置 `Disabled` 为 0 (零) ，或者删除注册表项。
 
 ## <a name="see-also"></a>另请参阅
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [准备计算机以运行或托管 Office 解决方案](/previous-versions/bb772092(v=vs.110))
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)

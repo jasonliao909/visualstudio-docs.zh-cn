@@ -1,5 +1,5 @@
 ---
-description: 为挂起断点和绑定断点指定断点条件样式。
+description: 指定挂起断点和绑定断点的断点条件样式。
 title: BP_COND_STYLE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: a93b1412-f447-48a1-af9d-38f3dbb3092f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 611df036ff876e10096013070cac097bc51a8986
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 750edd7dd48235acb4b2bc6e718999dd047ce36190a43a2468376c54beeddcd4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085411"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417777"
 ---
 # <a name="bp_cond_style"></a>BP_COND_STYLE
-为挂起断点和绑定断点指定断点条件样式。
+指定挂起断点和绑定断点的断点条件样式。
 
 ## <a name="syntax"></a>语法
 
@@ -47,23 +48,23 @@ public enum enum_BP_COND_STYLE {
 
 ## <a name="fields"></a>字段
 `BP_COND_NONE`\
-当到达断点的位置时，将激发断点。 未指定断点条件。
+在到达断点的位置时触发断点。 未指定断点条件。
 
 `BP_COND_WHEN_TRUE`\
-仅当与断点关联的条件表达式的计算结果为时，才引发断点 `true` 。
+仅在与断点关联的条件表达式计算结果为 时触发断点 `true` 。
 
 `BP_COND_WHEN_CHANGED`\
-仅当与断点关联的条件表达式的值与以前的计算发生了更改时，才会激发断点。
+仅在与断点关联的条件表达式的值与其以前的计算值发生更改时触发断点。
 
 ## <a name="remarks"></a>备注
-用于 `styleCondition` [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 结构的成员。
+用于 `styleCondition` 结构BP_CONDITION成员。 [](../../../extensibility/debugger/reference/bp-condition.md)
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

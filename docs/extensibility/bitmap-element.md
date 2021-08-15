@@ -11,14 +11,15 @@ ms.assetid: edcd7891-f4e7-416d-809d-5e2eed9f17e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8f3daf25a3ffe025bcdef65dbaa6def942d0fb4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 260a771157b9463ad0b0484e8fc3464f1b23b84396c3a86d1cb693bf5ea22a74
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903315"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308439"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
 定义位图。 位图是从资源或从文件加载的。
@@ -34,7 +35,7 @@ ms.locfileid: "112903315"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
 |GUID|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应该是位图定义的唯一，不能用于任何其他目的。|
 |Resid 标识|GUID/ID 命令标识符的 ID。 Resid 标识或 href 属性是必需的。<br /><br /> Resid 标识属性是一个整数资源 ID，用于确定在命令表合并期间要加载的位图条带。  加载命令表时，将从同一个模块的资源加载资源 ID 指定的位图。|
@@ -47,7 +48,7 @@ ms.locfileid: "112903315"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[位图元素](../extensibility/bitmaps-element.md)|组位图元素。|
 

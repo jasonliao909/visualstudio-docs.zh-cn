@@ -11,14 +11,15 @@ ms.assetid: cbd345c5-ca43-4630-b7a4-85564f4e2090
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab6a35aa896d7a68e151007d6f694672f7477688
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b7feb73cddacc15eeba1bd617f8beaa28a7e068d481290852c2d4e6c2b67801b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073425"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336819"
 ---
 # <a name="test-area-2-get-from-source-control"></a>测试区域 2：从源代码管理获取
 此测试区域涵盖通过 Get 命令从版本存储区中检索项的测试用例。 这些测试用例可同时应用于本地项目和 Web 项目。

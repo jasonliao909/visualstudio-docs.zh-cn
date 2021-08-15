@@ -18,19 +18,20 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8920c8a402b4566cf95bb74626171cca833d32de
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: a8d3e3c2eb7399250d90d30e93efe1e5b02fd525b77411a23fecb7596cac730b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825545"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423834"
 ---
 # <a name="ribbon-overview"></a>功能区概述
   功能区是一种组织相关命令的方式，以便更易于查找。 命令显示为功能区上的控件。 控件在应用程序窗口的上边缘沿水平条带化到各个 *组* 。 在选项卡上，相关组进行了整理。
 
- 现在可以使用功能区访问在 Microsoft Office 系统早期版本中使用菜单和工具栏访问的大多数功能。 有关详细信息，请参阅技术文章 [2007 Microsoft Office 系统用户界面的开发人员概述](/previous-versions/office/developer/office-2007/aa338198(v=office.12))。
+ 现在可以使用功能区访问在 Microsoft Office 系统早期版本中使用菜单和工具栏访问的大多数功能。 有关详细信息，请参阅技术文章[2007 Microsoft Office 系统用户界面的开发人员概述](/previous-versions/office/developer/office-2007/aa338198(v=office.12))。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -51,7 +52,7 @@ ms.locfileid: "107825545"
 - 将自定义组添加到自定义或内置选项卡。
 
   > [!NOTE]
-  > 内置选项卡或组是 Microsoft Office 应用程序的功能区上已存在的选项卡或组。 例如，" **数据** " 选项卡是 Excel 中的内置选项卡。 " **连接** " 组是 " **数据** " 选项卡上的内置组。
+  > 内置选项卡或组是 Microsoft Office 应用程序的功能区上已存在的选项卡或组。 例如，"**数据**" 选项卡是 Excel 中的内置选项卡。 " **连接** " 组是 " **数据** " 选项卡上的内置组。
 
 - 将自定义控件添加到自定义组。
 
@@ -77,7 +78,7 @@ ms.locfileid: "107825545"
 ## <a name="export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>将功能区从功能区设计器导出到功能区 XML
  如果使用功能区设计器创建功能区，然后确定要以 **功能区 (可视化设计器)** 项不支持的方式自定义功能区，则可以将功能区导出到 XML。
 
- Visual Studio 会自动创建 **(XML) 项的功能区** ，并用功能区上每个控件的元素和特性填充功能区 xml 文件。
+ Visual Studio 自动 **(XML) 项创建功能区**，并使用功能区上的每个控件的元素和特性填充功能区 XML 文件。
 
  并非功能区设计器的 " **属性** " 窗口中的所有属性都将传输到功能区 XML 文件。  例如，Visual Studio 不会导出 **Image** 或 **Text** 属性的值。 这是因为你必须在导出项目的功能区代码文件中创建一个回调方法，以分配图像或设置控件的文本。 在导出过程中，Visual Studio 不会自动生成回调方法。
 
@@ -95,7 +96,7 @@ ms.locfileid: "107825545"
 ## <a name="add-multiple-ribbon-items-to-a-project"></a>向项目添加多个功能区项
  可以将多个功能区项添加到单个项目中。 如果想要执行以下两项任务之一，这会非常有用：
 
-- 创建 Outlook *检查* 器的功能区。 有关详细信息，请参阅 [自定义 Outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 为 Outlook *检查* 器创建功能区。 有关详细信息，请参阅[为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
     > [!NOTE]
     > 检查器是当用户执行某些任务时（例如，创建一封电子邮件时）打开的窗口。
@@ -124,7 +125,7 @@ ms.locfileid: "107825545"
 |[演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)|显示如何通过使用功能区设计器创建自定义功能区选项卡。 可使用功能区设计器将控件添加和放置到自定义选项卡上。|
 |[功能区对象模型概述](../vsto/ribbon-object-model-overview.md)|提供了强类型对象模型的概述，该模型可用于在运行时获取和设置功能区控件的属性。|
 |[演练：在运行时更新功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)|演示如何使用功能区对象模型在功能区加载到 Office 应用程序之后，更新该功能区上的控件。|
-|[自定义 Outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)|提供用于在 Microsoft Office Outlook 中自定义功能区的指南。|
+|[为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)|提供用于在 Microsoft Office Outlook 中自定义功能区的指南。|
 |[自定义 InfoPath 功能区](../vsto/customizing-a-ribbon-for-infopath.md)|提供用于在 Microsoft Office InfoPath 中自定义功能区的指南。|
 |[在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)|演示如何显示、隐藏和修改功能区，并使用户能够从自定义任务窗格、操作窗格或 Outlook 窗体区域中的控件运行代码。|
 |[如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)|演示如何更改功能区上选项卡的顺序。|

@@ -7,14 +7,15 @@ author: mgoertz-msft
 ms.author: mgoertz
 ms.custom: SEO-VS-2020
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 93ac1f7364e23ef9ed2b44ecd1c536a7ab2b3d40
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6b786e8e81758f5b0ec832477a78721548fe3c353f050492482c5d047238ff25
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389665"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411268"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 项目的代码映射
 
@@ -22,7 +23,7 @@ ms.locfileid: "112389665"
 
 打开包含 Visual C++ 项目的解决方案时，可能需要花一些时间来更新 IntelliSense 数据库。 在此期间，你可能无法为标头 (*.h* 或) 文件创建代码图， `#include` 直到 IntelliSense 数据库完成更新。 你可在 Visual Studio 状态栏中监视更新进度。
 
-- 若要查看解决方案中所有源文件和头文件之间的依赖关系，请选择 "**体系结构**" "  >  **生成包含文件的关系图**"。
+- 若要查看解决方案中所有源文件和头文件之间的依赖关系，请选择 "**体系结构**  >  **生成包含文件 Graph**。
 
    ![本机代码的依赖项关系图](../modeling/media/dependencygraphgeneral_nativecode.png)
 
@@ -43,8 +44,8 @@ C 和 C++ 代码不支持这些项：
 |**问题**|可能的原因 |**分辨率**|
 |-|-|-|
 |未能生成代码图。|解决方案中没有项目成功生成过。|修复出现的生成错误，然后重新生成代码图。|
-|尝试从 " **体系结构** " 菜单生成代码图时，Visual Studio 将停止响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|
-|禁用 IntelliSense 浏览器数据库的某些设置。|可能会在 Visual Studio 的 " **选项** " 对话框中禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅 [选项、文本编辑器、C/c + +、高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
+|尝试从 "**体系结构**" 菜单生成代码图时，Visual Studio 将停止响应。|程序数据库 (.pdb) 文件可能已损坏。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|重新生成解决方案，然后重试。|
+|禁用 IntelliSense 浏览器数据库的某些设置。|可能会在 "Visual Studio **选项**" 对话框中禁用某些 IntelliSense 设置。|打开设置以启用它们。<br /><br /> 请参阅 [选项、文本编辑器、C/c + +、高级](../ide/reference/options-text-editor-c-cpp-advanced.md)。|
 |消息“未知方法”  将出现在方法节点上。<br /><br /> 由于无法解析方法的名称，导致出现此问题。|二进制文件可能没有基重定位表。|在链接器中打开 **/FIXED:NO** 选项。|
 ||无法生成程序数据库 (.pdb) 文件。<br /><br /> pdb 文件将存储调试信息，例如，类型、方法和源文件信息。|在链接器中打开 **/DEBUG** 选项。|
 ||无法在预期位置打开或找到 .pdb 文件。|确保 .pdb 文件位于预期位置。|
@@ -53,4 +54,4 @@ C 和 C++ 代码不支持这些项：
 
 ## <a name="see-also"></a>另请参阅
 
-- [映射与代码图的依赖项](../modeling/map-dependencies-across-your-solutions.md)
+- [使用代码图映射依赖关系](../modeling/map-dependencies-across-your-solutions.md)

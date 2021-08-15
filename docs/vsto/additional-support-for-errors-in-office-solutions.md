@@ -1,5 +1,5 @@
 ---
-title: Office 解决方案中的错误的其他支持
+title: 对 Office 解决方案中的错误的其他支持
 description: 了解如何使用支持资源来查找在 Visual Studio 中创建 Office 解决方案时遇到的问题的答案。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -56,34 +56,35 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 37676b419bac620460e6c10e121e002739317315
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9f44c3acaf500f282612a16112814618bc4bad16d18857e6e929dbe165e0470
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948617"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424601"
 ---
-# <a name="additional-support-for-errors-in-office-solutions"></a>Office 解决方案中的错误的其他支持
+# <a name="additional-support-for-errors-in-office-solutions"></a>对 Office 解决方案中的错误的其他支持
 
 你可以使用以下资源来帮助你查找在 Visual Studio 中创建 Office 解决方案时遇到的问题的答案。
 
 ## <a name="troubleshoot-specific-errors"></a>排查特定错误
 
-有关 Office 解决方案中的一些常见错误的帮助，请参阅以下主题：
+若要帮助解决 Office 解决方案中的一些常见错误，请参阅以下主题：
 
 - [排查 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)
 
-- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
+- [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
 
-- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)
+- [解决 Office 解决方案部署问题](../vsto/troubleshooting-office-solution-deployment.md)
 
 ## <a name="other-resources"></a>其他资源
 
-[Visual Studio tools for Office 论坛](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
+[Office 论坛 Visual Studio 工具](https://social.msdn.microsoft.com/Forums/vstudio/en-US/home?forum=vsto)
 
-提供有关 Visual Studio 中的 Office 开发人员工具的问题的论坛。
+提供有关 Visual Studio 中 Office 开发人员工具的问题的论坛。
 
 [Microsoft 帮助和支持](https://support.microsoft.com)
 
@@ -91,11 +92,11 @@ ms.locfileid: "99948617"
 
 [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)
 
-提供指向其他资源的链接，以了解有关通过 Visual Studio 开发 Office 解决方案和 Office 开发的详细信息。
+提供指向其他资源的链接，以了解有关开发 Office 解决方案和 Office 开发 Visual Studio 的详细信息。
 
 ## <a name="see-also"></a>另请参阅
 
 - [排查 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)
-- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
-- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)
+- [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
+- [解决 Office 解决方案部署问题](../vsto/troubleshooting-office-solution-deployment.md)
 - [用于开发 Office 解决方案的其他资源](../vsto/additional-resources-for-developing-office-solutions.md)

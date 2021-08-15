@@ -11,17 +11,18 @@ ms.assetid: a2f66ab5-53e5-4cdc-a1b5-3b8afa8ee646
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9817e68cc01c6a867ee2e53a8824ecd759ee014
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 920db4fbd7702b0a01997dee1570128d6d38285a35f0893985e6480fa72b25ce
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081823"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416308"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 获取进程的标题、友好名称或文件名。

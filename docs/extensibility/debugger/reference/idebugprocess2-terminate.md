@@ -1,6 +1,6 @@
 ---
 description: 终止进程。
-title: IDebugProcess2：： Terminate |Microsoft Docs
+title: IDebugProcess2：：Terminate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 5e6bf373-0fe9-4321-b04a-473a65f664d9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e26a4486e9c97638d20f9c634b66183824c2b39
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f65f2cc4e2e7a4bf74cbee15011561f8d7b1a2481e8e8fef3540a842ff2282a7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416256"
 ---
 # <a name="idebugprocess2terminate"></a>IDebugProcess2::Terminate
 终止进程。
@@ -39,10 +40,10 @@ int Terminate();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 终止进程后，将终止该进程内的所有程序;无允许运行任何其他代码。
+ 当进程终止时，该进程内的所有程序将终止;不允许运行任何其他代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
