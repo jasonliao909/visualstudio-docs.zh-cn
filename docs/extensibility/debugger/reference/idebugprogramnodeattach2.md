@@ -11,14 +11,15 @@ ms.assetid: 46b37ac9-a026-4ad3-997b-f19e2f8deb73
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a1de6c7480e1ce4dcc0723614741a05dcc961a6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a579d985cea401f855934b1966e387c7a5a1832a12f2f347b734f6a7e035f7f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071462"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449178"
 ---
 # <a name="idebugprogramnodeattach2"></a>IDebugProgramNodeAttach2
 允许程序节点通知附加到关联程序的尝试。

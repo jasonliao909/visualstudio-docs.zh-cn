@@ -1,6 +1,6 @@
 ---
-description: 如果给定标记，IDebugComPlusSymbolProvider2：： GetTypeFromToken 会检索该类型。
-title: IDebugComPlusSymbolProvider2：： GetTypeFromToken |Microsoft Docs
+description: IDebugComPlusSymbolProvider2：：GetTypeFromToken 根据给定的令牌检索类型。
+title: IDebugComPlusSymbolProvider2：：GetTypeFromToken |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 4452bc5d-0225-40e0-a467-c472a5c7c4ee
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3f4bcc8d92cc58a719e9b450ec79e8376de554ab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d1654838576ef9270e6ad0c632db4c8528e8f1920791100d8b57ee3ac47d9f54
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077975"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452207"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-在给定其标记的情况中检索类型。
+检索给定其标记的类型。
 
 ## <a name="syntax"></a>语法
 
@@ -47,22 +48,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>参数
 `appDomain`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `tdToken`\
-中要检索的类型的标记。
+[in]要检索的类型标记。
 
 `ppField`\
-弄返回由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的类型。
+[out]返回由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的类型。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(

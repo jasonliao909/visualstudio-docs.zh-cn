@@ -1,5 +1,5 @@
 ---
-title: Visual Studio 模板 (的隐藏元素) |Microsoft Docs
+title: Visual Studio 模板 (隐藏元素) |Microsoft Docs
 description: 了解隐藏元素以及它如何指定模板是否显示在 "新建项目" 或 "添加新项" 对话框中。
 ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: d4f673e7efe7f118f32056f02ef51bbbe7cf402a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 99923825e2faaba211921eefc45096e65c5ee1908f5a5c07032c1522d683906e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057385"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448307"
 ---
 # <a name="hidden-element-visual-studio-templates"></a>Visual Studio 模板 (隐藏元素) 
 
@@ -61,7 +61,7 @@ ms.locfileid: "105057385"
 
 需要一个文本值。
 
-文本必须是 `true` 或 `false` ，指示模板是否将出现在 " **新建项目** " 或 " **添加新项** " 对话框中。
+文本必须是 `true` 或 `false` ，指示模板是否将出现在 "**新建 Project** " 或 "**添加新项**" 对话框中。
 
 ## <a name="remarks"></a>备注
 

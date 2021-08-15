@@ -12,17 +12,18 @@ ms.assetid: 2f9a9720-c1ac-4430-8f28-200d85360452
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68776819e985262ed62aea28d1849ad57c778779
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ff9e1bedee435d3b4cd56311886b9748fcfdff5dc4e3744622976d7e4785e489
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072684"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339185"
 ---
 # <a name="idebugpendingbreakpoint2enumerrorbreakpoints"></a>IDebugPendingBreakpoint2::EnumErrorBreakpoints
 获取此挂起断点导致的所有错误断点的列表。

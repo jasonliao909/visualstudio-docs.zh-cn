@@ -4,16 +4,17 @@ description: 了解如何通过更改 ServiceDefinition.csdef、ServiceConfigura
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: b5b4a5bedd77855aa41c4bf5e565738fc8fb4f0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d2c0c7e54bb57f199579716499ee02901ae58c16dadf773dc4e5513bb28484d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844094"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348738"
 ---
 # <a name="configuring-your-azure-project-in-visual-studio-to-use-multiple-service-configurations"></a>使用多种服务配置来配置 Visual Studio 中的 Azure 项目
 
@@ -67,7 +68,7 @@ Visual Studio 中的 Azure 云服务项目包括三个配置文件：`ServiceDef
 
 若要创建连接字符串，请选择“添加设置”，并将“类型”设置为“连接字符串”。
 
-对于新的或现有的连接字符串，选择 **...***_ 打开*"创建存储连接字符串" 对话框，打开 "**创建存储连接字符串**" 对话框：
+对于新的或现有的连接字符串，选择 **...** _ 在 _ *值** 字段右侧，打开 "**创建存储连接字符串**" 对话框：
 
 1. 在“连接时使用”下，选择“你的订阅”选项，以从订阅中选择存储帐户。 然后 Visual Studio 会从 `.publishsettings` 文件自动获取存储帐户凭据。
 1. 选择“手动输入凭据”，以便直接使用来自 Azure 门户的信息指定帐户名和密钥。 复制帐户密钥：

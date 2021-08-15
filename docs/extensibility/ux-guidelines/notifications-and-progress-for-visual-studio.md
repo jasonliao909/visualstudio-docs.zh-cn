@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 的通知和进度 |Microsoft Docs
-description: 了解如何通过多种方式来通知用户在 Visual Studio 中发生了哪些有关软件开发任务的信息。
+description: 了解如何通过多种方式来通知用户 Visual Studio 有关其软件开发任务的情况。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,20 +8,21 @@ ms.assetid: f0ef65e9-0f1f-45f4-9f25-6e2398691168
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 994a315d04b06d1998a8c8e0c4291b6a4c54cb61
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a36a9aaf08bd4f7f8b03e27c7ab8bc0dc4b8e453bce15dddfab4d0d0fb6b2a40
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902236"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337417"
 ---
 # <a name="notifications-and-progress-for-visual-studio"></a>Visual Studio 的通知和进度
 ## <a name="notification-systems"></a><a name="BKMK_NotificationSystems"></a> 通知系统
 
 ### <a name="overview"></a>概述
- 有多种方法可通知用户 Visual Studio 中发生的关于其软件开发任务的内容。
+ 有多种方法可向用户通知 Visual Studio 有关其软件开发任务的情况。
 
  实现任何类型的通知时：
 
@@ -47,12 +48,12 @@ ms.locfileid: "112902236"
 |[嵌入式信息栏](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedInfobar)|在工具窗口或文档窗口中，使用来通知进度、错误状态、结果和/或可操作的信息。|如果信息与信息栏所在的位置无关，请不要使用。<br /><br /> 不要在文档/工具窗口之外使用。|
 |[鼠标光标更改](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_MouseCursorChanges)|可用于通知进程正在进行。 还用于通知鼠标发生了状态变化，例如当拖/放正在进行或鼠标光标处于特定模式（如绘图模式）时。|不要使用进行较短的进度更改，或者如果游标的 fluttering 可能 (例如，绑定到较长运行进程的一部分，而不是与整个进程) 相关联。|
 |[进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotSysProgressIndicators)|需要 ("确定性" 或 "不确定") 报告进度时使用。 每种类型都有多种进度指示器类型和特定用法。 请参阅 [进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators)。||
-|[Visual Studio“通知”窗口](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|"通知" 窗口不能公开扩展。 但是，它用于传达有关 Visual Studio 的一系列消息，包括你的许可证的重要问题，以及对 Visual Studio 或到包的更新的信息性通知。|请勿用于其他类型的通知。|
+|[Visual Studio“通知”窗口](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_VSNotificationsToolWindow)|"通知" 窗口不能公开扩展。 不过，它用于传达有关 Visual Studio 的一系列消息，包括你的许可证的重要问题，以及对 Visual Studio 或包的更新的信息性通知。|请勿用于其他类型的通知。|
 |[错误列表](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ErrorList)|如果问题与用户当前打开的解决方案直接相关，出现 (错误/警告/信息) 的问题，则他们可能需要对代码采取措施。<br /><br /> 这包括：<br /><br /> -编译器消息 (错误/警告/信息) <br /><br /> -代码分析器/代码的诊断消息<br /><br /> -生成消息<br /><br /> 可能适用于与项目或解决方案文件相关的问题，但请首先考虑解决方案资源管理器指示。|对于与用户的开放式解决方案代码不具有任何关系的项，请不要使用。|
 |编辑器通知：灯泡|如果有可用于解决打开文件中存在的问题的修补程序，请使用。<br /><br /> 请注意，灯泡还应该用于托管按需在用户的代码上执行的快速操作，例如重构，但在这种情况下，将不会显示 "通知样式"。|不要将用于不与打开的文件进行任何关系的项。|
 |编辑器通知：波形曲线|用于向用户发出警报，提醒用户解决其开放代码的特定范围 (例如，) 的错误的红色波形曲线。|不要将用于不与其打开代码的特定范围相关的项。|
 |[嵌入式状态栏](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_EmbeddedStatusBars)|用于提供与特定工具窗口、文档窗口或对话框窗口上下文内的内容或流程相关的状态。|请勿用于常规产品通知、进程或与特定窗口内的内容不相关的项目。|
-|[Windows 任务栏通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用于显示进程外进程或配套应用程序的通知。|不要将用于与 IDE 相关的通知。|
+|[Windows 托盘通知](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_WindowsTray)|用于显示进程外进程或配套应用程序的通知。|不要将用于与 IDE 相关的通知。|
 |[通知气泡](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_NotificationBubbles)|用于在 IDE **外部** 通知远程进程或更改。|不要将作为向用户通知 IDE **内** 进程的方法。|
 
 ### <a name="notification-methods"></a>通知方法
@@ -65,7 +66,7 @@ ms.locfileid: "112902236"
  **一个模式错误消息对话框，用于对数据库的无效连接字符串进行用户警报**
 
 #### <a name="ide-status-bar"></a><a name="BKMK_IDEStatusBar"></a> IDE 状态栏
- 用户注意到状态栏文本与他们的所有计算机体验和 Windows 平台特定体验相关的可能性。 Visual Studio 客户群在这两个方面都很有经验，即使是知识丰富的 Windows 用户可能会错过状态栏中的更改。 因此，状态栏最适合用于信息性目的或作为冗余的提示来提供其他位置提供的信息。 用户必须立即解决的任何类型的关键信息都应该在对话或通知工具窗口中提供。
+ 用户注意到状态栏文本与其围绕计算机体验和 Windows 平台的特定体验相关的可能性。 Visual Studio 客户群在这两个方面都很有经验，即使是知识丰富的 Windows 用户可能会错过状态栏中的更改。 因此，状态栏最适合用于信息性目的或作为冗余的提示来提供其他位置提供的信息。 用户必须立即解决的任何类型的关键信息都应该在对话或通知工具窗口中提供。
 
  Visual Studio 状态栏旨在允许显示多种类型的信息。 它划分为多个区域，用于反馈、设计器、进度栏、动画和客户端。
 
@@ -92,16 +93,16 @@ ms.locfileid: "112902236"
  请记住，对于其他位置提供的信息，游标更改会很有用。 不要依赖于游标更改，这是与用户进行通信的唯一方式，尤其是在尝试传达用户必须解决的关键内容时。
 
 #### <a name="progress-indicators"></a><a name="BKMK_NotSysProgressIndicators"></a> 进度指示器
- 进度指示器对于在需要超过几秒钟才能完成的过程中给予用户反馈非常重要。 在正在进行的操作的开始点附近) 、嵌入的状态栏、模式对话框或 Visual Studio 状态栏中，可以就地显示进度指示器 (。 请按照有关其使用和实现的 [进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) 中的指导进行操作。
+ 进度指示器对于在需要超过几秒钟才能完成的过程中给予用户反馈非常重要。 可以在正在进行的操作的启动点附近) 、嵌入的状态栏、模式对话框中或在 Visual Studio 状态栏中 (显示进度指示器。 请按照有关其使用和实现的 [进度指示器](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_ProgressIndicators) 中的指导进行操作。
 
-#### <a name="visual-studio-notifications-window"></a><a name="BKMK_VSNotificationsToolWindow"></a> Visual Studio 通知窗口
- Visual Studio "通知" 窗口通知开发人员有关许可、环境 (Visual Studio) 、扩展和更新的信息。 用户可以关闭单个通知，也可以选择忽略某些类型的通知。 已忽略通知的列表在 **工具 > 选项** 页中进行管理。
+#### <a name="visual-studio-notifications-window"></a><a name="BKMK_VSNotificationsToolWindow"></a>Visual Studio通知窗口
+ "Visual Studio 通知" 窗口通知开发人员有关授权、环境 (Visual Studio) 、扩展和更新的信息。 用户可以关闭单个通知，也可以选择忽略某些类型的通知。 已忽略通知的列表在 **工具 > 选项** 页中进行管理。
 
  "通知" 窗口当前不可扩展。
 
  ![Visual Studio“通知”窗口](../../extensibility/ux-guidelines/media/0901-06_vsnotificationswindow.png "0901-06_VSNotificationsWindow")
 
- **Visual Studio 通知工具窗口**
+ **Visual Studio通知工具窗口**
 
 #### <a name="error-list"></a><a name="BKMK_ErrorList"></a> 错误列表
  "错误列表" 中的通知指示在编译和或生成过程中发生的错误和警告，并允许用户在代码中导航到特定代码错误。
@@ -117,17 +118,17 @@ ms.locfileid: "112902236"
 
  **Visual Studio 中的嵌入式状态栏**
 
-#### <a name="windows-tray-notifications"></a><a name="BKMK_WindowsTray"></a> Windows 任务栏通知
+#### <a name="windows-tray-notifications"></a><a name="BKMK_WindowsTray"></a>Windows 托盘通知
  Windows 通知区域位于 Windows 任务栏上的系统时钟旁边。 许多实用工具和软件组件都提供此区域中的图标，以便用户可以为系统范围的任务（例如更改屏幕分辨率或获取软件更新）获取上下文菜单。
 
- 环境级通知应显示在 Visual Studio 通知中心，而不是 Windows 通知区域。
+ 环境级通知应出现在 Visual Studio 通知中心，而不是 Windows 通知区域。
 
 #### <a name="notification-bubbles"></a><a name="BKMK_NotificationBubbles"></a> 通知气泡
- 通知气泡可以在编辑器/设计器中显示为信息性，也可以作为 Windows 通知区域的一部分出现。 用户将这些气泡视为以后可以解决的问题，这是不重要通知的优点。 冒泡不适用于用户必须立即解决的重要信息。 如果确实要在 Visual Studio 中使用通知气泡，请遵循 [适用于通知气泡的 Windows 桌面指南](/windows/desktop/uxguide/mess-notif)。
+ 通知气泡可以在编辑器/设计器中显示为信息性，也可以作为 Windows 通知区域的一部分出现。 用户将这些气泡视为以后可以解决的问题，这是不重要通知的优点。 冒泡不适用于用户必须立即解决的重要信息。 如果在 Visual Studio 中使用通知气泡，请遵循[通知气泡的 Windows 桌面指南](/windows/desktop/uxguide/mess-notif)。
 
  ![通知气泡](../../extensibility/ux-guidelines/media/0901-07_notificationbubbles.png "0901-07_NotificationBubbles")
 
- **用于 Visual Studio 的 Windows 通知区域中的通知冒泡**
+ **用于 Visual Studio 的 Windows 通知区域中的通知气泡**
 
 ## <a name="progress-indicators"></a><a name="BKMK_ProgressIndicators"></a> 进度指示器
 
@@ -169,7 +170,7 @@ ms.locfileid: "112902236"
 |信息栏|与上下文 UI 关联的消息。 请参阅 [信息栏](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md#BKMK_Infobars)。|如果需要指出多个进程，请 **不要** 使用多个信息栏。 请改为使用堆积进度条。|
 |输出窗口|暂时性通知：用户将在完成后查看其 **详细信息** 的应用级进程。|**请勿用于** 需要跨会话保留的信息。|
 |日志文件|与在完成后保存详细信息非常重要的情况下与 **不内向** 通知配对。||
-|状态栏|暂时性通知：完成后用户 **不需要其详细信息** 的应用级进程。<br /><br /> 包括嵌入的进度栏。<br /><br /> 可能包括进程详细信息的文本说明。||
+|状态栏|暂时性通知：完成后用户不需要 **其详细信息** 的应用级进程。<br /><br /> 包括嵌入的进度栏。<br /><br /> 可能包括进程详细信息的文本说明。||
 
 ### <a name="progress-indicator-types"></a>进度指示器类型
 
@@ -180,7 +181,7 @@ ms.locfileid: "112902236"
 
  **不确定的进度栏**
 
- "不确定"表示无法确定操作或进程的总体进度。 对于需要无限时间或访问未知数量的对象的操作，请使用不确定的进度条。 使用文本说明来伴随发生的情况。 使用超时为基于时间的操作提供限制。 不确定的进度条使用动画来显示正在进行进度，但不提供其他信息。 不要仅根据可能缺少准确性的原因选择不确定的进度栏。
+ "不确定"表示无法确定操作或进程的总体进度。 对于需要无限时间或访问未知数量的对象的操作，请使用不确定的进度条。 使用文本说明来伴随发生的情况。 使用超时为基于时间的操作提供限制。 不确定的进度条使用动画来显示正在进行进度，但不提供其他信息。 不要仅基于可能缺乏准确性选择不确定的进度栏。
 
 ##### <a name="determinate"></a>确定
  ![确定进度栏](../../extensibility/ux-guidelines/media/0901-05_determinate.png "0901-05_Determinate")
@@ -189,7 +190,7 @@ ms.locfileid: "112902236"
 
  "确定"意味着操作或进程需要有限的时间，即使无法准确预测该时间量。 清楚地指示完成。 除非操作已完成，否则不要让进度栏达到 100%。 确定进度栏动画从左到右从 0 移动到 100%。
 
- 在操作期间，切勿将进度指示器向后移动。 当操作开始时，条形应稳定向前移动，在结束时应达到 100%。 进度栏的要点是让用户了解整个操作需要的时间，而不考虑涉及多少个步骤。
+ 在操作期间，切勿将进度指示器向后移动。 当操作开始时，条形应稳定向前移动，在结束时应达到 100%。 进度栏的要点是让用户了解整个操作需要的时间，而不考虑涉及的步骤数。
 
 ##### <a name="concurrent-reporting-stacked-progress-bars"></a>并发报告 (堆积进度条) 
  如果操作需要很长时间（可能几分钟），则可能会使用两个进度条，一个显示操作的总体进度，另一个显示当前步骤的进度。 例如，如果安装程序正在复制多个文件，则一个进度栏可用于指示整个过程需要的时间，而第二个进度栏可以指示复制当前文件或目录的百分比。 请勿使用堆积进度条报告超过五个并发操作或进程。 如果要报告超过五个并发操作或进程，请使用包含"取消"按钮的模式对话框，并报告进度输出窗口。
@@ -267,7 +268,7 @@ ms.locfileid: "112902236"
 
  ![具有进度加载器和消息传递的对话框](../../extensibility/ux-guidelines/media/0903-12_dialog2.png "0903-12_Dialog2")
 
- **Visual Studio加载程序以及内联命令传送的对话框**
+ **Visual Studio加载程序和消息内联命令的对话框**
 
 ##### <a name="document-well"></a>文档井
  文档井可以与控件一起显示多个进度加载程序类型。
@@ -290,7 +291,7 @@ ms.locfileid: "112902236"
 
  ![Infobar](../../extensibility/ux-guidelines/media/0904-01_infobar.png "0904-01_Infobar")
 
- **信息栏中Visual Studio**
+ **Visual Studio**
 
 #### <a name="appropriate-uses-for-an-infobar"></a>信息栏的适当用法
 
@@ -321,7 +322,7 @@ ms.locfileid: "112902236"
 - 在同一窗口中的多个位置使用多个信息栏。
 
 #### <a name="can-multiple-infobars-show-at-the-same-time"></a>多个信息栏可以同时显示吗？
- 是的，可以同时显示多个信息栏。 它们以先到先得的顺序显示，第一个信息栏显示在顶部，其他信息栏如下所示。
+ 是的，可以同时显示多个信息栏。 它们以先到先提供的顺序显示，第一个信息栏显示在顶部，其他信息栏如下所示。
 
  用户一次最多看到三个信息栏，之后，如果更多信息栏可用，信息栏区域将变为可滚动。
 
@@ -473,7 +474,7 @@ public interface IVsInfoBarUIEvents
 ```
 
 ## <a name="error-validation"></a><a name="BKMK_ErrorValidation"></a> 错误验证
- 当用户输入不可接受的信息时（例如跳过必填字段或以错误格式输入数据时）时，最好在控件附近使用控制验证或反馈，而不是使用阻止弹出错误对话框。
+ 当用户输入不可接受的信息时（例如，当跳过必填字段或以不正确的格式输入数据时）时，最好在控件附近使用控制验证或反馈，而不是使用阻止弹出错误对话框。
 
 ### <a name="field-validation"></a>字段验证
  窗体和字段验证由三个组件组成：控件、图标和工具提示。 虽然多种类型的控件可以使用此功能，但文本框将用作示例。

@@ -1,24 +1,25 @@
 ---
 title: 使用 Modelbus 集成模型
-description: 了解Visual Studio ModelBus提供了一种方法，可用于在模型之间创建链接，以及从其他工具创建到模型的链接。
+description: 了解 Visual Studio ModelBus 提供了一种方法，可用于在模型之间创建链接，以及从其他工具创建到模型的链接。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 350398d91d73a722956d195b300311f313ff34db
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e59383e5ef150cce7bb342f7759289898e2c31805a316a25b8de4a9d0811daaf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112391057"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356121"
 ---
-# <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用模型总线集成Visual Studio模型
+# <a name="integrate-models-by-using-visual-studio-modelbus"></a>使用模型总线Visual Studio模型
 
-Visual Studio ModelBus提供了一种在模型之间创建链接的方法，以及从其他工具到模型的链接。 例如，你可以链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。
+Visual StudioModelBus 提供了一种方法，用于创建模型之间以及从其他工具到模型的链接。 例如，你可以链接域特定语言 (DSL) 模型和 UML 模型。 可以创建一组集成 DSL。
 
 ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此引用可存储在该模型外部，例如另一个模型的元素中。 在随后的场合中，当工具想要获取对元素的访问权限时，模型总线基础结构将加载相应的模型并返回元素。 如果需要，可以向用户显示该模型。 如果不能在其以前的位置中访问该文件，则 ModelBus 将要求用户查找该文件。 如果用户找到该文件，则 ModelBus 将修复所有对该文件的引用。
 
@@ -42,9 +43,9 @@ ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此�
 
 2. 在对话框中，选择 **"我想向 ModelBus 公开此 DSL"。** 如果希望此 DSL 同时公开其模型并使用对其他 DSL 的引用，则可选择这两个选项。
 
-3. 单击 **“确定”** 。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
+3. 单击“确定”。 新项目“ModelBusAdapter”随即添加到 DSL 解决方案中。
 
-4. 如果要从文本模板访问 DSL，则必须修改新项目中的 AdapterManager.tt。 如果要从其他代码（例如命令和事件处理程序）访问 DSL，则忽略此步骤。 有关详细信息，请参阅[在文本Visual Studio ModelBus中使用文本。](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+4. 如果要从文本模板访问 DSL，则必须修改新项目中的 AdapterManager.tt。 如果要从其他代码（例如命令和事件处理程序）访问 DSL，则忽略此步骤。 有关详细信息，请参阅在文本[Visual Studio使用 ModelBus。](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
    1. 将 AdapterManagerBase 的基类更改为 [VsTextTemplatingModelingAdapterManager](/previous-versions/ee844317(v=vs.140))。
 
@@ -52,7 +53,7 @@ ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此�
 
        `[Microsoft.VisualStudio.Modeling.Integration.HostSpecific(HostName)]`
 
-   3. 在 ModelBusAdapter 的"引用"项目中，添加 **Microsoft.VisualStudio.TextTemplating.Modeling.11.0。**
+   3. 在 ModelBusAdapter 的引用项目中，添加 **Microsoft.VisualStudio.TextTemplating.Modeling.11.0。**
 
       如果要同时从文本模板和其他代码访问 DSL，则需要两个适配器：一个已经过修改，另一个未经过修改。
 
@@ -66,9 +67,9 @@ ModelBus 允许你创建对模型或模型中特定元素的唯一引用。 此�
 
 ### <a name="ensure-that-elements-can-be-referenced"></a>确保可以引用元素
 
-Visual Studio ModelBus适配器默认使用元素的 guid 来标识它。 因此这些标识符必须保留在模型文件中。
+Visual Studio默认情况下，ModelBus 适配器使用元素的 guid 来标识它。 因此这些标识符必须保留在模型文件中。
 
-若要确保元素 ID 持久化：：
+若要确保元素 ID 持久化，可以：
 
 1. 打开 DslDefinition.dsl。
 
@@ -96,7 +97,7 @@ Visual Studio ModelBus适配器默认使用元素的 guid 来标识它。 因此
 
 2. 在对话框中，选择 **"我想要启用此模型以使用模型总线引用"。**
 
-3. 在使用 DSL 的 DSL 项目中，将以下程序集添加到项目引用。 在公开的 DSL 的 ModelBusAdapter\bin * 目录中 (.dll这些程序集) 文件 \\ 。
+3. 在使用 DSL 的 DSL 项目中，将以下程序集添加到项目引用。 在公开的 DSL 的 ModelBusAdapter\bin (.dll目录中可以找到这些程序集 \\) 文件。
 
     - 公开的 DSL 程序集 **，例如Fabrikam.FamilyTree.Dsl.dll**
 
@@ -128,7 +129,7 @@ Visual Studio ModelBus适配器默认使用元素的 guid 来标识它。 因此
 
 4. 如果选择引用模型中的元素，则可添加用户可选择的类型（例如 Company.FamilyTree.Person）的列表。
 
-5. 单击 **"确定**"，然后单击工具栏 **中的** "转换所有 **解决方案资源管理器** 模板" 。
+5. 单击 **"确定**"，然后单击 **"** 转换"工具栏 **中的"解决方案资源管理器** 模板"。
 
     > [!WARNING]
     > 如果未选择有效的模型或实体，则“确定”按钮将不起作用，即使它可能显示为“已启用”也是如此。
@@ -141,10 +142,10 @@ Visual Studio ModelBus适配器默认使用元素的 guid 来标识它。 因此
 
 2. 通过按 F5 或 CTRL+F5，在实验模式下运行一个 DSL。
 
-3. 在 Visual Studio 试验实例的"调试"项目中，添加作为每个 DSL 的实例的文件。
+3. 在 Visual Studio 实验实例的"调试"项目中，添加作为每个 DSL 的实例的文件。
 
     > [!NOTE]
-    > Visual Studio ModelBus只能解析对作为同一解决方案中的项Visual Studio的引用。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
+    > Visual StudioModelBus 只能解析对作为同一解决方案中项Visual Studio的引用。 例如，你无法创建对位于文件系统另一部分中的模型文件的引用。
 
 4. 在公开的 DSL 的实例中创建一些元素和链接，并将其保存。
 
@@ -160,12 +161,12 @@ Visual Studio ModelBus适配器默认使用元素的 guid 来标识它。 因此
 
 当你想要存储对模型或模型内的元素的引用时，请创建 `ModelBusReference`。 有两种 `ModelBusReference`：模型引用和元素引用。
 
-若要创建模型引用，需要模型是其实例的 DSL 的 AdapterManager，以及Visual Studio项目项的文件名或名称。
+若要创建模型引用，需要模型是其实例的 DSL 的 AdapterManager，以及模型的Visual Studio或项目项。
 
 若要创建元素引用，你需要用于模型文件的适配器，以及要引用的元素。
 
 > [!NOTE]
-> 使用Visual Studio ModelBus，只能创建对同一解决方案中Visual Studio的引用。
+> 使用 Visual Studio ModelBus，只能创建对同一解决方案中Visual Studio的引用。
 
 ### <a name="import-the-exposed-dsl-assemblies"></a>导入公开的 DSL 程序集
 
@@ -341,7 +342,7 @@ using (FamilyTreeAdapter adapter =
    #>
    ```
 
-   有关详细信息和演练，请参阅在文本模板 [Visual Studio ModelBus文本模板](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
+   有关详细信息和演练，请参阅在文本[模板Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)
 
 ## <a name="serializing-a-modelbusreference"></a>序列化 ModelBusReference
 
@@ -484,7 +485,7 @@ ModelBus 扩展将在 DSL 解决方案中进行以下更改。
 
 右键单击 DSL 定义关系图时，单击"**启用 Modelbus"，** 然后选择"**启用此 DSL 以使用 ModelBus"：**
 
-- 在 DSL 项目中，将 **引用添加到** Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll
+- 在 DSL 项目中，将引用添加到 **Microsoft.VisualStudio.Modeling.Sdk.Integration.11.0.dll**
 
 - 在 DSL 定义中，外部类型引用将添加到：`Microsoft.VisualStudio.Modeling.Integration.ModelBusReference`。
 
@@ -508,7 +509,7 @@ ModelBus 扩展将在 DSL 解决方案中进行以下更改。
     ("Choose a model file", "Target model|*.target")]
   ```
 
-右键单击 DSL 定义关系图时，单击"**启用 ModelBus"，** 然后选择"向 ModelBus 公开此 **DSL"：**
+右键单击 DSL 定义关系图时，单击"**启用 ModelBus"，** 然后选择"**向 ModelBus 公开此 DSL"：**
 
 - 新项目 `ModelBusAdapter` 已添加到解决方案。
 

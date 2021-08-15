@@ -10,14 +10,15 @@ ms.assetid: e3611704-349f-4323-b03c-f2b0a445d781
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7c23693b5ae622912695c139714c7e818ed0e868
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 234087bee08a7e0653e679ccc1a5202c4f8dc1340ae0e0d8c1dbbb2377751c88
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056319"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447735"
 ---
 # <a name="single-and-multi-tab-views"></a>单选项卡和多选项卡视图
 编辑器可以创建不同类型的视图。 一个示例是代码编辑器窗口，另一个是窗体设计器。
@@ -36,7 +37,7 @@ ms.locfileid: "105056319"
 
  若要为编辑器创建多选项卡式视图，请实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMultiViewDocumentView> 接口，然后将不同的逻辑视图 GUID (<xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID>) 与创建的每个选项卡关联。
 
- Visual Studio HTML 编辑器是包含多选项卡视图的编辑器的示例。 它具有 **设计** 和 **源** 选项卡。 若要启用此选项，不同的逻辑视图与每个选项卡、 `LOGICALVIEWID_TextView` " **设计** " 选项卡和 `LOGICALVIEWID_Code` " **源** " 选项卡相关联。
+ Visual Studio HTML 编辑器是具有多选项卡视图的编辑器的示例。 它具有 **设计** 和 **源** 选项卡。 若要启用此选项，不同的逻辑视图与每个选项卡、 `LOGICALVIEWID_TextView` " **设计** " 选项卡和 `LOGICALVIEWID_Code` " **源** " 选项卡相关联。
 
  通过指定适当的逻辑视图，VSPackage 可以访问与特定用途（如设计窗体、编辑代码或调试代码）对应的视图。 但是，必须使用 NULL 字符串标识其中一个窗口，这必须与主逻辑视图 `LOGVIEWID_Primary`)  (。
 
@@ -50,11 +51,11 @@ ms.locfileid: "105056319"
 |`LOGVIEWID_Designer`|视图 **窗体** 命令启动的视图。|
 |`LOGVIEWID_TextView`|文本编辑器视图。 这是返回的视图 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> ，可从中进行访问 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView> 。|
 |`LOGVIEWID_UserChooseView`|提示用户选择要使用的视图。|
-|`LOGVIEWID_ProjectSpecificEditor`|通过 " **打开方式** " 对话框传递到<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> 当用户选择 " (项目默认编辑器) " 项时。|
+|`LOGVIEWID_ProjectSpecificEditor`|通过 " **打开方式** " 对话框传递到<br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject.OpenItem%2A><br /><br /> 当用户选择 " (Project 默认编辑器) " 项时。|
 
  尽管逻辑视图 Guid 是可扩展的，但只能使用在 VSPackage 中定义的逻辑视图 Guid。
 
- 关闭时，Visual Studio 将保留编辑器工厂的 GUID 和与文档窗口关联的物理视图字符串，以便在重新打开解决方案时，可以使用它来重新打开文档窗口。 只有解决方案关闭时打开的窗口将保留在解决方案 ( .suo) 文件中。 这些值对应于 `VSFPROPID_guidEditorType` `VSFPROPID_pszPhysicalView` `propid` 方法中参数中传递的和值 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 。
+ 关机时，Visual Studio 会保留编辑器工厂的 GUID 和与文档窗口关联的物理视图字符串，以便在重新打开解决方案时，可以使用它来重新打开文档窗口。 只有解决方案关闭时打开的窗口将保留在解决方案 ( .suo) 文件中。 这些值对应于 `VSFPROPID_guidEditorType` `VSFPROPID_pszPhysicalView` `propid` 方法中参数中传递的和值 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 。
 
 ## <a name="example"></a>示例
  此代码段演示如何 <xref:Microsoft.VisualStudio.Shell.Interop.LogicalViewID.TextView> 使用对象来访问实现的视图 `IVsCodeWindow` 。 在这种情况下，该 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> 服务用于调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenDocumentViaProject%2A> 和请求 `LOGVIEWID_TextView` ，后者将获取指向窗口框架的指针。 指向文档视图对象的指针通过调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 并指定的值获得 `VSFPROPID_DocView` 。 从文档视图对象中， `QueryInterface` 为调用 `IVsCodeWindow` 。 在这种情况下的假定是返回文本编辑器，因此在方法中返回的文档视图对象 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.GetProperty%2A> 是一个代码窗口。

@@ -9,14 +9,15 @@ ms.assetid: 87d31b6c-4607-4121-bb7d-cfc80390ab93
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b8025f7212d28d2cfce482f67ef672a472993bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86b22e15cc486ee6ee3362f9588b1047dff6ff3865eb1e098a8848ee93dd0c43
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920108"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365576"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中显示数据
 
@@ -37,7 +38,7 @@ ms.locfileid: "99920108"
 
 ![“在运行应用程序时启用”菜单项](../designers/media/05d5356d-91bb-4e6b-b3f7-29b76852c4b3.png)
 
-**观看简短视频：** ![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [从头开始创建示例数据](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2&preserve-view=true)。
+**观看简短视频：** ![播放图标 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [从头开始创建示例数据](https://www.bing.com/videos/search?q=blend%20data&qs=n&form=QBVR&pq=blend%20data&sc=8-7&sp=-1&sk=#view=detail&mid=F8F2449A76956D480FD2F8F2449A76956D480FD2&preserve-view=true)。
 
 ## <a name="generate-sample-data-from-a-class"></a>从类生成示例数据
 
@@ -45,7 +46,7 @@ ms.locfileid: "99920108"
 
 若要从类生成示例数据，请打开 XAML 文档，然后在 " **数据** " 面板中，单击 " **创建示例数据**" " ![ 创建示例数据" 图标 ](../designers/media/30540d76-7256-43ce-b5d9-4b2edf3d339f.png) 按钮，然后单击 " **从类创建示例数据**"。
 
-**观看简短视频：** ![播放图标](../designers/media/bldadminconsoleinitialconfigicon.PNG) [通过 Blend 混合数据绑定](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
+**观看简短视频：** ![播放图标将 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [一些数据绑定与 Blend 组合在一起](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
 ## <a name="see-also"></a>另请参阅
 

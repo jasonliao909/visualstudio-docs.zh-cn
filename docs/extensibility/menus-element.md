@@ -11,14 +11,15 @@ ms.assetid: d825a99b-e05c-4dd9-8933-a180216d667a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 59c8cb242322cbb52aa90b821e14698ace6d0534
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f13623fbd4d8116c86a71e22cd184749f25786e2b39b0f71af8f47c9716e1a75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905574"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400941"
 ---
 # <a name="menus-element"></a>菜单元素
 定义 VSPackage 实现的所有菜单和工具栏。
@@ -43,14 +44,14 @@ ms.locfileid: "112905574"
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单和工具栏。|
 |[Menu 元素](../extensibility/menu-element.md)|表示单个菜单或工具栏。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[命令元素](../extensibility/commands-element.md)|表示 VSPackage 中命令的集合。|
 

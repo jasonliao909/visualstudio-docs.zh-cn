@@ -1,6 +1,6 @@
 ---
-description: 跳过指定数目的 DEBUG_REFERENCE_INFO 元素。
-title: IEnumDebugReferenceInfo2：： Skip |Microsoft Docs
+description: 跳过指定数量的DEBUG_REFERENCE_INFO元素。
+title: IEnumDebugReferenceInfo2：：Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 12f07ed8-92bd-47b5-9113-f73fec5bdde6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 212c4966147831727c83b4aea2f50d65307ec38c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95e6a1ea8eb756a7c482ee5692752ec9666bdbacb86c3ea94f2d950f94937db5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082824"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389106"
 ---
 # <a name="ienumdebugreferenceinfo2skip"></a>IEnumDebugReferenceInfo2::Skip
-跳过指定数目的元素。
+跳过指定数量的元素。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int Skip(
 
 ## <a name="parameters"></a>参数
 `celt`\
-中要跳过的元素数。
+[in]要跳过的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果 `celt` 大于剩余元素的数目，则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果 `S_FALSE` `celt` 大于剩余元素的数量，则返回 ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
+ 如果 `celt` 指定一个大于剩余元素数的值，则枚举将设置为末尾并 `S_FALSE` 返回 。
 
 ## <a name="see-also"></a>另请参阅
 - [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

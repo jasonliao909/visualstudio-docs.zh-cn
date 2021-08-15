@@ -18,14 +18,15 @@ ms.assetid: d53bceb9-4d3b-4c22-b909-8f370e7231fb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4e4efee02ca1571f40ae33f9d69d8fbec0a1d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63bab0edd28694b801aa7e41b9b874c537ea0eb0b6b0a68234177a8e934707b6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900432"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403914"
 ---
 # <a name="how-to-re-sign-application-and-deployment-manifests"></a>如何：为应用程序和部署清单重新签名
 对 Windows 窗体应用程序的应用程序清单中的部署属性进行更改后，Windows Presentation Foundation 应用程序 (xbap) 或 Office 解决方案，则必须使用证书对应用程序清单和部署清单进行重新签名。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。
@@ -37,7 +38,7 @@ ms.locfileid: "99900432"
 
 #### <a name="to-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>用 Mage.exe 对应用程序清单和部署清单进行重新签名
 
-1. 打开 **Visual Studio 命令提示符** 窗口。
+1. 打开 **Visual Studio 命令提示符**"窗口。
 
 2. 将目录更改为包含要签署的清单文件的文件夹。
 
@@ -47,7 +48,7 @@ ms.locfileid: "99900432"
     mage -sign ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     例如，你可以运行以下命令，为外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单签名。 不建议将 Visual Studio 创建的临时证书部署到生产环境中。
+     例如，你可以运行以下命令对外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单进行签名。 不建议将 Visual Studio 创建的临时证书部署到生产环境中。
 
     ```cmd
     mage -sign WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -61,7 +62,7 @@ ms.locfileid: "99900432"
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     例如，你可以运行以下命令，为 Excel 外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序更新和签名部署清单。
+     例如，你可以运行以下命令来更新 Excel 外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的部署清单并为其签名。
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -76,7 +77,7 @@ ms.locfileid: "99900432"
 
 #### <a name="to-update-and-re-sign-the-application-and-deployment-manifests-with-mageexe"></a>更新应用程序和部署清单并将其重新签名 Mage.exe
 
-1. 打开 **Visual Studio 命令提示符** 窗口。
+1. 打开 **Visual Studio 命令提示符**"窗口。
 
 2. 将目录更改为包含要签署的清单文件的文件夹。
 
@@ -88,7 +89,7 @@ ms.locfileid: "99900432"
     mage -update ManifestFileName.manifest -CertFile Certificate -Password Password
     ```
 
-     例如，你可以运行以下命令，为外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单签名。 不建议将 Visual Studio 创建的临时证书部署到生产环境中。
+     例如，你可以运行以下命令对外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的应用程序清单进行签名。 不建议将 Visual Studio 创建的临时证书部署到生产环境中。
 
     ```cmd
     mage -update WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -102,7 +103,7 @@ ms.locfileid: "99900432"
     mage -update DeploymentManifest -appmanifest ApplicationManifest -CertFile Certificate -Password Password
     ```
 
-     例如，你可以运行以下命令，为 Excel 外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序更新和签名部署清单。
+     例如，你可以运行以下命令来更新 Excel 外接程序、Windows 窗体应用程序或 Windows Presentation Foundation 浏览器应用程序的部署清单并为其签名。
 
     ```cmd
     mage -update WindowsFormsApplication1.application -appmanifest WindowsFormsApplication1.exe.manifest -CertFile ..\WindowsFormsApplication1_TemporaryKey.pfx
@@ -121,7 +122,7 @@ ms.locfileid: "99900432"
 - [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)
 - [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [如何：为 ClickOnce 应用程序设置自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [如何：使用受限权限对 ClickOnce 应用程序进行调试](securing-clickonce-applications.md)
-- [如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [如何将受信任的发布者添加到 ClickOnce 应用程序的客户端计算机](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [如何：配置 ClickOnce 信任提示行为](../deployment/how-to-configure-the-clickonce-trust-prompt-behavior.md)

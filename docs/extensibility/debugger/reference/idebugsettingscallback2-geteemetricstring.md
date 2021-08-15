@@ -1,6 +1,6 @@
 ---
-description: 根据给定的名称检索表达式计算器指标的值字符串。
-title: IDebugSettingsCallback2：： GetEEMetricString |Microsoft Docs
+description: 根据表达式评估器指标的名称检索其值字符串。
+title: IDebugSettingsCallback2：：GetEEMetricString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,20 +9,21 @@ ms.assetid: 85e3c093-6a91-4101-ab32-d8ac6eed4918
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 306bc2c054f5c1d772694d058cc2a6206afed7ec
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: db9e1f81b97fb748ed8c8a35a1558d39a15db0b3a61f5c3b101135f956d62782
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071345"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389535"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-根据给定的名称检索表达式计算器指标的值字符串。
+根据表达式评估器指标的名称检索其值字符串。
 
 ## <a name="syntax"></a>语法
 
@@ -46,19 +47,19 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>参数
 `guidLang`\
-中编程语言的唯一标识符。
+[in]编程语言的唯一标识符。
 
 `guidVendor`\
-中供应商的唯一标识符。
+[in]供应商的唯一标识符。
 
 `pszMetric`\
-中度量值的名称。
+[in]指标的名称。
 
 `pbstrValue`\
-弄返回指标值字符串。
+[out]返回指标值字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

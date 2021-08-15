@@ -9,17 +9,18 @@ ms.assetid: 943085b2-f165-462d-9a4e-2086f0cdfff4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c7ebcee7270eb187998ce7c6078277dd90897012
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 461ff8398617b75e54460288e40f82bcdcf4e0b4660c51ca514b078a47d7ef22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096454"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452428"
 ---
 # <a name="computer_info"></a>COMPUTER_INFO
 描述运行调试器的计算机。
@@ -55,14 +56,14 @@ public struct COMPUTER_INFO
 操作系统版本号。
 
 ## <a name="remarks"></a>备注
-此结构由 [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 方法返回。
+此结构由 [GetComputerInfo 方法](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 返回。
 
 ## <a name="requirements"></a>要求
-标头： Msdbg
+标头：Msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

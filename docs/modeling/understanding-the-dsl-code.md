@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 84f75298bc2854172eb7ec63bd6412e5703cfad7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0b2b0ea3b094452258e6252412a9ace768672f6d2956b4311613e4ca3ac0a08b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398239"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 
-DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读取和更新 VISUAL STUDIO 中的 DSL 实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
+Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读取和更新 VISUAL STUDIO 中的 DSL 实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
 
 ## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图
 
@@ -55,16 +56,16 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
      例如，如果设置域类的 **"具有** 自定义构造函数"选项，然后生成解决方案，则会看到错误消息。 在双击其中一个错误消息时，你将在生成的代码中看到注释，阐释了你的自定义代码应提供的内容。
 
-- 编写你自己的文本模板以生成特定于应用程序的代码。 可以使用包含文件来共享许多项目通用的模板部分，并可以创建 Visual Studio 项目模板，以设置使用自己的文件结构初始化的项目。
+- 编写你自己的文本模板以生成特定于应用程序的代码。 可以使用包含文件来共享许多项目通用的模板部分，并可以创建 Visual Studio 项目模板，以设置使用你自己的文件结构初始化的项目。
 
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件
  以下生成的文件显示在 **Dsl** 项目中。
 
  *YourDsl*`Schema.xsd`
 
- 包含 DSL 实例的文件的架构。 此文件将复制到 bin (**的**) 编译。 安装 DSL 时，可以将此文件复制到 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas，** 以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
+ 包含 DSL 实例的文件的架构。 此文件将复制到 bin (**目录中)** 编译。 安装 DSL 时，可以将此文件复制到 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas，** 以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
- 如果通过在 DSL 资源管理器中设置选项来自定义序列化，则该架构将进行相应的更改。 但是，如果编写自己的序列化代码，则此文件可能不再表示实际架构。 有关详细信息，请参阅 [自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+ 如果通过在 DSL 资源管理器中设置选项来自定义序列化，则该架构将进行相应的更改。 但是，如果编写自己的序列化代码，则此文件可能不再表示实际架构。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
  `ConnectionBuilders.cs`
 
@@ -80,7 +81,7 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
  例如，可以为示例 DSL 中三种类型关系的每一种添加一个连接生成器链接连接指令。 这将向用户提供单独的连接工具。 实例化的关系类型将依赖于由用户选择的源和目标元素的类型。  若要添加链接连接指令，请在 DSL 资源管理器中右键单击生成器。
 
- 若要编写在创建特定类型的域关系时运行的自定义代码，请在生成器节点下选择相应的链接连接指令。 在"属性窗口中，设置"**使用自定义连接"。** 重新生成解决方案，然后提供代码以更正产生的错误。
+ 若要编写在创建特定类型的域关系时运行的自定义代码，请在生成器节点下选择相应的链接连接指令。 在"属性窗口"中，将"**使用自定义连接"。** 重新生成解决方案，然后提供代码以更正产生的错误。
 
  若要编写每当用户使用此连接工具时运行的自定义代码，请设置连接生成器的 **"** 是自定义"属性。 可提供代码来确定是否允许源元素、是否允许特定的源和目标的组合，以及在进行连接时应对模型进行哪些更新。 例如，仅当连接不会在关系图中创建循环时才可允许连接。 可以在源和目标之间实例化多个相关元素的更复杂模式，而不是单一关系链接。
 
@@ -104,7 +105,7 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
  此指令处理器可帮助用户编写读取 DSL 实例的文本模板。 该指令处理器将加载用于 DSL 的程序集 (DLL)，并为命名空间有效地插入 `using` 语句。 这将允许文本模板中的代码使用已在 DSL 中定义的类和关系。
 
- 有关详细信息，请参阅从语言 [生成Domain-Specific和](../modeling/generating-code-from-a-domain-specific-language.md) 创建自定义 [T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
+ 有关详细信息，请参阅从语言[生成Domain-Specific和](../modeling/generating-code-from-a-domain-specific-language.md)[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
 
  `DomainClasses.cs`
 
@@ -122,7 +123,7 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
 - 构造函数。 如果要重写这些构造函数，请 **对域类设置"** 具有自定义构造函数"。
 
-- 元素组原型 (EGP) 处理程序方法。 如果用户可以将其他元素合并 (*将)* 添加到此类的实例上，则这些元素是必需的。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
+- 元素组原型 (EGP) 处理程序方法。 如果用户可以将其他元素合并 *(，)* 将另一个元素添加到此类的实例上。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
 
    在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 必须向
 
@@ -163,7 +164,7 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
  `SerializationHelper.cs`
 
-- 用于确保同一名字对象没有引用两个元素的验证方法。 有关详细信息，请参阅 [自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+- 用于确保同一名字对象没有引用两个元素的验证方法。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
 - SerializationHelper 类，提供了由序列化类共同使用的函数。
 
@@ -175,7 +176,7 @@ DSL Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于
 
   `Shapes.cs`
 
-  用于 DSL 定义中的每个形状类的类。 形状派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 有关详细信息，请参阅 [自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
+  用于 DSL 定义中的每个形状类的类。 形状派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.NodeShape>。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
   若要用自己的方法替代分部类中生成的方法，请设置在 DSL 定义中为连接器 **生成双精度派生** 。 若要将构造函数替换为自己的代码，请设置 **具有自定义构造函数**。
 
@@ -280,7 +281,7 @@ namespace Company.EmbedInForm
 
  `EditorFactory.cs`
 
- 实例化 `DocData` 和 `DocView`。 它满足 Visual Studio 在 DSL 包启动时用于打开编辑器的标准接口。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
+ 实例化 `DocData` 和 `DocView`。 它实现了一个标准接口，该接口 Visual Studio 在 DSL 包启动时用来打开编辑器。 将在 Package.cs 的 `ProvideEditorFactory` 特性中引用它。
 
  `GeneratedVSCT.vsct`
 
@@ -335,7 +336,7 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 此文件定义 DSL 如何集成到 Visual Studio 中。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第一个 DSL 加载到 Visual Studio 实例中时，将调用 Initialize () 方法一次。
+ 此文件定义 DSL 如何集成到 Visual Studio。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第一个 DSL 加载到 Visual Studio 实例中时，将调用 Initialize () 方法一次。
 
  `Source.extension.vsixmanifest`
 

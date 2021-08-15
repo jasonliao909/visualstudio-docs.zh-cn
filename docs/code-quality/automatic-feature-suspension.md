@@ -15,18 +15,19 @@ ms.assetid: 572c15aa-1fd0-468c-b6be-9fa50e170914
 author: Mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: efd053a846a7bf70f475db44788b14152498dc0b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28210dd5d34137cd656fa16281c87b3d8f8a55af5b56fe83cb30fae11b667887
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843717"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121312608"
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
 
-如果可用系统内存为 200 MB 或更小，则 Visual Studio 会在代码编辑器中显示以下消息：
+如果可用系统内存低于 200 MB，则 Visual Studio 在代码编辑器中显示以下消息：
 
 ![暂停完整解决方案分析的警报文本](../code-quality/media/fsa_alert.png)
 
@@ -42,19 +43,19 @@ ms.locfileid: "99843717"
 
 ## <a name="improve-visual-studio-performance"></a>提高 Visual Studio 性能
 
-有关在处理大型解决方案或内存不足的情况时如何提高 Visual Studio 性能的提示和技巧，请参阅 [大型解决方案的性能注意事项](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
+有关在处理大型解决方案或内存不足的情况时如何提高 Visual Studio 性能的提示和技巧，请参阅[大型解决方案的性能注意事项](https://github.com/dotnet/roslyn/blob/master/docs/wiki/Performance-considerations-for-large-solutions.md)。
 
 ## <a name="live-code-analysis-is-reduced-to-minimal-scope"></a>实时代码分析降低到最小范围
 
-默认情况下，对打开的文档和项目执行实时代码分析。 你可以自定义此分析范围以减小到当前文档或增加到整个解决方案。 有关详细信息，请参阅[如何：配置托管代码的实时代码分析范围](./configure-live-code-analysis-scope-managed-code.md)。 在内存不足的情况下，Visual Studio 会强制将实时分析范围缩减为当前文档。 但是，你可以通过在信息栏中选择 " **重新启用** " 按钮或重新启动 Visual Studio 来重新启用首选的分析作用域。 "选项" 对话框始终显示当前的实时代码分析范围设置。
+默认情况下，对打开的文档和项目执行实时代码分析。 你可以自定义此分析范围以减小到当前文档或增加到整个解决方案。 有关详细信息，请参阅[如何：配置托管代码的实时代码分析范围](./configure-live-code-analysis-scope-managed-code.md)。 在内存不足的情况下，Visual Studio 强制将实时分析范围缩减为当前文档。 但是，你可以通过在信息栏中选择 "**重新启用**" 按钮或重新启动 Visual Studio 来重新启用首选分析作用域。 "选项" 对话框始终显示当前的实时代码分析范围设置。
 
 ## <a name="gc-low-latency-disabled"></a>GC 低延迟已禁用
 
-若要重新启用 GC 低延迟模式，请重启 Visual Studio。 默认情况下，每次键入时，Visual Studio 都会启用 GC 低延迟模式，以确保键入内容不会阻止任何 GC 操作。 但是，如果内存不足的情况导致 Visual Studio 显示自动挂起警告，则会为该会话禁用 GC 低延迟模式。 重新启动 Visual Studio 将重新启用默认的 GC 行为。 有关详细信息，请参阅 <xref:System.Runtime.GCLatencyMode>。
+若要重新启用 GC 低延迟模式，请重新启动 Visual Studio。 默认情况下，当你键入时，Visual Studio 会启用 GC 低延迟模式，以确保键入内容不会阻止任何 GC 操作。 但是，如果内存不足的情况导致 Visual Studio 显示自动挂起警告，则会为该会话禁用 GC 低延迟模式。 重新启动 Visual Studio 重新启用默认 GC 行为。 有关详细信息，请参阅 <xref:System.Runtime.GCLatencyMode>。
 
-## <a name="visual-studio-caches-flushed"></a>Visual Studio 缓存已刷新
+## <a name="visual-studio-caches-flushed"></a>刷新 Visual Studio 缓存
 
-如果继续当前的开发会话或重启 Visual Studio，则会立即清空所有 Visual Studio 缓存，但会开始重新填充。 刷新缓存包括以下功能的缓存：
+如果继续当前的开发会话或重新启动 Visual Studio，则所有 Visual Studio 缓存都会立即清空，但会开始重新填充。 刷新缓存包括以下功能的缓存：
 
 - 查找所有引用
 

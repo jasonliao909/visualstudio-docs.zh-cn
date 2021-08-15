@@ -11,17 +11,18 @@ ms.assetid: e6f5ec48-09e8-4b9b-9dc9-55f8d883f1b7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a327620ed9eddbba71f84c9950185f7987e8a79
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 62f2db9adf72a0029cbf693bd0388cf3483595e47f5b7f71036c759a8e37182e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087907"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390094"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定调试引擎 (DE) 应如何处理给定的异常。

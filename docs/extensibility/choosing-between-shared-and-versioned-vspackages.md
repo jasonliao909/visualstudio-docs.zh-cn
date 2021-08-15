@@ -1,6 +1,6 @@
 ---
 title: 在共享和版本控制的 Vspackage 之间选择 |Microsoft Docs
-description: 了解使用多个版本的 Visual Studio 和 .NET Framework，通过共享或版本控制策略 Vspackage 并行安装。
+description: 了解 vspackage 通过共享或版本控制策略的并行安装，其中有多个版本的 Visual Studio 和 .NET Framework。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: e3128ac3-2e92-48e9-87ab-3b6c9d80e8c9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 257158ec3c8d4364e1aa52133c457e24fd98cff3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34bd5db7f02b69c5f2f3e9b017f7cccbabbf175cfe70ba70af0efb835f7ecc4f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078235"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434940"
 ---
 # <a name="choose-between-shared-and-versioned-vspackages"></a>在共享和版本控制之间进行选择 Vspackage
 不同版本的 Visual Studio 可以在同一台计算机上共存。 Vspackage 可以支持任意版本组合 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -41,7 +42,7 @@ ms.locfileid: "105078235"
 
 - 适当地注册文件扩展名。 有关详细信息，请参阅将 [文件扩展名注册到并行部署](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)。
 
-- 创建一个为适当版本的 VSPackage 部署的安装程序 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 [安装 vspackage 与 Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md) 和 [组件管理](../extensibility/internals/component-management.md)。
+- 创建一个为适当版本的 VSPackage 部署的安装程序 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅[安装 vspackage 与 Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)和[组件管理](../extensibility/internals/component-management.md)。
 
 - 解决注册冲突的问题。 有关详细信息，请参阅 [VSPackage registration](../extensibility/internals/vspackage-registration.md)。
 
@@ -51,7 +52,7 @@ ms.locfileid: "105078235"
  在版本控制 VSPackage 策略下，你为你支持的每个版本创建一个 VSPackage [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 如果希望利用的更高版本提供的服务，则执行此操作是适当的 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] ，因为每个 VSPackage 都可以在不影响其他情况的情况下进行发展。 尽管如此，从单个代码库或从多个独立的基本代码创建多个二进制文件的已进行版本控制的策略可能需要比共享策略更多的初始开发。 此外，可能还需要执行其他设置工作，因为你必须为每个版本创建一个单独的安装程序，或者必须为检测 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 已安装的版本且你的 VSPackage 支持的单个安装程序创建一个。
 
 ## <a name="binary-compatibility"></a>二进制兼容性
- 通常，二进制兼容性使在 visual studio 的早期版本中开发的本机代码 Vspackage 能够在更高版本的 Visual Studio 中运行。 但有三个重要的例外：
+ 通常，二进制兼容性使 vspackage 的早期 Visual Studio 版本开发的本机代码在 Visual Studio 的更高版本中运行。 但有三个重要的例外：
 
 - 如果你的 VSPackage 依赖于特定版本的公共语言运行时，则必须确定它在哪个版本中 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 运行。
 
@@ -64,5 +65,5 @@ ms.locfileid: "105078235"
   除了规划 VSPackage 二进制文件的二进制兼容性外，还应考虑解决方案和项目文件格式。 如果你的 VSPackage 创建了一个新的项目类型，则必须决定该项目类型是只能在一个版本中运行，也可以在多个版本的中运行 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 [升级自定义项目](../extensibility/internals/upgrading-projects.md#upgrading-custom-projects)。
 
 ## <a name="see-also"></a>另请参阅
-- [安装 Vspackage 与 Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [安装 vspackage 与 Windows Installer](../extensibility/internals/installing-vspackages-with-windows-installer.md)
 - [组件管理](../extensibility/internals/component-management.md)

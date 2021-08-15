@@ -1,5 +1,5 @@
 ---
-title: 管理解决方案中的项目加载 |Microsoft Docs
+title: 管理解决方案中的 Project 加载 |Microsoft Docs
 description: 了解开发人员如何通过创建解决方案负载管理器来减少解决方案加载时间和管理项目加载行为。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,14 +10,15 @@ ms.assetid: 097c89d0-f76a-4aaf-ada9-9a778bd179a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 425f610e8a473460cb7d9170138521e2e7bee08a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a832cfe0638a0590d5950022c2cfa44a91ce1654713872d89c7faa985c0679a1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073087"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388508"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理解决方案中的项目加载
 Visual Studio 解决方案可以包含大量项目。 默认的 Visual Studio 行为是在解决方案打开时加载解决方案中的所有项目，而不允许用户访问任何项目，直到所有项目都完成加载。 当项目加载过程的持续时间超过两分钟时，将显示一个进度栏，其中显示了已加载的项目数和项目总数。 在包含多个项目的解决方案中工作时，用户可以卸载项目，但此过程存在一些缺点：卸载的项目不是作为 "重新生成解决方案" 命令的一部分生成的，并且不会显示类型和关闭项目的成员的 IntelliSense 说明。
@@ -25,10 +26,10 @@ Visual Studio 解决方案可以包含大量项目。 默认的 Visual Studio �
  开发人员可以通过创建解决方案负载管理器来减少解决方案加载时间并管理项目加载行为。 解决方案加载管理器可确保在启动后台生成之前加载项目，延迟后台加载，直到完成其他后台任务，以及执行其他项目负载管理任务。
 
 ## <a name="create-a-solution-load-manager"></a>创建解决方案负载管理器
- 开发人员可以通过实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> 并通知 Visual Studio 解决方案负载管理器处于活动状态来创建解决方案负载管理器。
+ 开发人员可以通过实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> 并通知 Visual Studio 解决方案负载管理器是否处于活动状态来创建解决方案负载管理器。
 
 ### <a name="activate-a-solution-load-manager"></a>激活解决方案负载管理器
- Visual Studio 在给定时间只允许使用一个解决方案负载管理器，因此当你想要激活解决方案负载管理器时，你必须建议使用 Visual Studio。 如果稍后激活第二个解决方案加载管理器，则解决方案加载管理器将断开连接。
+ Visual Studio 在给定时间只允许使用一个解决方案负载管理器，因此你必须在要激活解决方案负载管理器时通知 Visual Studio。 如果稍后激活第二个解决方案加载管理器，则解决方案加载管理器将断开连接。
 
  必须获取 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 服务并设置 [__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) 属性：
 
@@ -38,7 +39,7 @@ object objLoadMgr = this;   //the class that implements IVsSolutionManager
 pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);
 ```
 
- <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A>当 Visual Studio 正在关闭或通过使用 __VSPROPID4 调用来将其他包作为活动解决方案负载管理器来获取时，将调用方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> [。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)属性。
+ <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A>当 Visual Studio 关闭时，或者通过使用 __VSPROPID4 调用将其他包作为活动解决方案负载管理器来获取时，将调用方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> [。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)属性。
 
 #### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>不同种类的解决方案负载管理器的策略
  可以通过不同的方式实现解决方案负载管理器，具体取决于要管理的解决方案的类型。
@@ -48,7 +49,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 > [!NOTE]
 > 有关自动加载包的详细信息，请参阅 [加载 vspackage](../extensibility/loading-vspackages.md)。
 
- 由于 Visual Studio 仅识别要激活的最后一个解决方案加载管理器，一般的解决方案负载管理器应始终检测是否存在现有的负载管理器，然后才能激活自身。 如果 `GetProperty()` 在解决方案服务上调用 [__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) 返回 `null` ，则没有活动的解决方案负载管理器。 如果它不返回 null，请检查对象是否与您的解决方案负载管理器相同。
+ 由于 Visual Studio 仅识别要激活的最后一个解决方案加载管理器，一般的解决方案负载管理器应始终检测是否存在现有的负载管理器，然后才能自行激活。 如果 `GetProperty()` 在解决方案服务上调用 [__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) 返回 `null` ，则没有活动的解决方案负载管理器。 如果它不返回 null，请检查对象是否与您的解决方案负载管理器相同。
 
  如果解决方案负载管理器旨在仅管理几种类型的解决方案，则 VSPackage 可以通过调用)  (订阅解决方案加载事件， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> 并使用的事件处理程序 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A> 来激活解决方案加载管理器。
 

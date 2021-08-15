@@ -10,17 +10,18 @@ ms.assetid: d683a833-fbfb-4042-84df-6905124a268a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f48ff7d513b211396c0eec28f5670bbe648f01b4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aaabad975a57e18c9257df178b29b594d892441482db30fcd00836c322fb0169
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080237"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389418"
 ---
 # <a name="ieevisualizerservicegetvaluedisplaystringcount"></a>IEEVisualizerService::GetValueDisplayStringCount
 检索要为指定的属性或字段显示的值字符串的数目。

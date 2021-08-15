@@ -11,17 +11,18 @@ ms.assetid: 2f9f1679-e9e8-4c9c-ac90-aa07bfe69914
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a65c29a1925c8d0c1de97f87707f191713c2bb03
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 358d0301ae0fc3ad0d9c35ede96734288836fb896b755d8c3fa6f128cf3e10e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054590"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434251"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 指定要检索的文件的名称类型。

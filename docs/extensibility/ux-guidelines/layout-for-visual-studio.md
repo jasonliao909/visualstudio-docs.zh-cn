@@ -1,6 +1,6 @@
 ---
 title: 布局Visual Studio |Microsoft Docs
-description: 了解所有Visual Studio的布局，包括未设置名称的对话和具有一个"已设计"外观的新对话。
+description: 了解自定义Visual Studio的布局，包括无名称对话框和具有"有色"外观的新对话。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,17 +8,18 @@ ms.assetid: c19e3022-047c-43b6-a046-a82717efed4f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e52b7b3fd620080b73e8d3de80672003ecb8fcf7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e30d3895fcc6e17988fea69d9b70ed05cd30dddca8104667b1fa1ab0a14f0825
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900521"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413676"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
-大多数Visual Studio是实用工具对话布局，这是遵循[](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)标准 Windows 桌面对话框布局原则[的未主题对话](/windows/desktop/uxguide/win-dialog-box)。 随着Visual Studio UI 的刷新，一些更突出的对话具有一种新的设计，可将其建立为产品定义体验。 这些 ["以"为"的对话框](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 布局具有一个以""为"的"外观"。
+大多数对话框Visual Studio实用工具对话框布局 ，这是[](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)遵循标准对话框Windows布局原则 的[未主题对话](/windows/desktop/uxguide/win-dialog-box)。 随着Visual Studio UI 的刷新，一些更突出的对话采用新设计，可将其建立为产品定义体验。 这些 ["以"为"的](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 对话框布局具有一个以""为"的"外观"。
 
 ## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> 实用工具对话框布局
 
@@ -47,7 +48,7 @@ ms.locfileid: "112900521"
 
 #### <a name="margins"></a>边距
 
-- 所有对话框应围绕所有边缘具有 12 像素的边框。
+- 所有对话应围绕所有边缘具有 12 像素的边框。
 
 - 组帧内的边距应距框架边缘 9 像素。
 
@@ -55,7 +56,7 @@ ms.locfileid: "112900521"
 
 #### <a name="command-buttons"></a>命令按钮
 
-- 命令按钮在对话帧上操作，而不是对内容进行操作。 它们应位于右下角，并且应具有足够的上方变量空间，以将按钮分开设置。
+- 命令按钮在对话帧上操作，而不是对内容进行操作。 它们应位于右下角，并且应有足够的变量空间用于单独设置按钮。
 
 - 如果存在在对话框中运行的水平按钮，则备用命令按钮配置是右上角的垂直堆栈。 请参阅 [下面的"内部"命令](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_InteriorCommandButtons) 按钮。
 
@@ -73,7 +74,7 @@ ms.locfileid: "112900521"
 
 - 左对齐所有标签。
 
-- 对于位于控件上方的标签，它们应与控件下方的控件精确左对齐，标签底部应位于另一个控件的顶部上方 5 像素 (例如组合框) 。
+- 对于位于控件上方的标签，它们应与控件下方的控件精确左对齐，标签底部应高于另一个控件的顶部 5 像素 (例如组合框) 。
 
 - 对于位于控件左侧的标签，标签和输入控件之间的最小宽度为 10 像素。 应建立隐含的第二列来对齐文本框、组合框或其他控件。
 
@@ -84,7 +85,7 @@ ms.locfileid: "112900521"
 
  ![控件之间的建议距离](../../extensibility/ux-guidelines/media/0801-d_controldistance.png "0801-d_ControlDistance")
 
- **图 08.01-d：控件之间的距离建议**
+ **图 08.01-d：推荐控件之间的距离**
 
 #### <a name="control-indentation"></a>控件缩进
  嵌套控件时，将内部控件与上述控件的左边缘（通常是标签）水平对齐。
@@ -105,9 +106,9 @@ ms.locfileid: "112900521"
 #### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮
  在更复杂的对话框中，内部控件可能有其自己的相关按钮，这可能会影响对话框的提交按钮所在的位置。
 
-- 当"确定取消 (右下角) 时，使用垂直对齐方式) 内 / 侧按钮的列对齐方式。
+- 当"确定取消 (右下角水平方向时，) 内侧按钮的列框使用 / 垂直对齐方式。
 
-- 当"确定取消 (右上角垂直方向时，) 内侧按钮的水平对齐 / 方式。 这种情况不太常见。
+- 当"确定取消 (右上角) 时，使用水平对齐方式) 内 / 侧按钮的行对齐方式。 这种情况不太常见。
 
 - 内部按钮大小应面向标准按钮大小 75x23 像素，尽可能匹配"确定取消 / "按钮的大小。 如果按钮标签使按钮超过标准按钮大小，则该集内的其他按钮应符合该较宽的大小。
 
@@ -123,7 +124,7 @@ ms.locfileid: "112900521"
  **[浏览...]** 文本框后跟的按钮应拼写出"浏览..."完整，包括省略号。 如果空间很紧或屏幕上有多个 **[Browse...]** 按钮，该按钮可以缩减为省略号。
 
 ## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> "以"为"的对话框布局
- 对话框中的"Visual Studio对话框的外观更浅，并提供更多空白。 版式提供了更多重点和兴趣，提供了更多的开放行距以及字号和粗细的变体。 在可能的情况下，已减少或删除了 chrome 和标题栏。 这些对话框的布局应遵循以下基本模式：
+ 对话框中的"Visual Studio具有更浅的外观，并提供更多空白。 版式提供了更多重点和兴趣，提供了更多的开放行距以及字号和粗细的变体。 在可能的情况下，已减少或删除了 chrome 和标题栏。 这些对话框的布局应遵循以下基本模式：
 
 1. 对话框的背景为白色。
 
@@ -154,9 +155,9 @@ ms.locfileid: "112900521"
 
  ![主题对话框颜色](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **图 08.01-k：主题对话框 - 颜色**
+ **图 08.01-k：主题对话框-颜色**
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 的应用程序模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
-- [Windows (控件) ](/windows/desktop/uxguide/controls)
-- [Windows (对话框) ](/windows/desktop/uxguide/win-dialog-box)
+- [控件 (Windows) ](/windows/desktop/uxguide/controls)
+- [Windows (的对话框) ](/windows/desktop/uxguide/win-dialog-box)

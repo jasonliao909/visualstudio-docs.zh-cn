@@ -11,17 +11,18 @@ ms.assetid: 5854a172-ea82-481c-97d9-c7fc16923d44
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b3faaa31d277f2966a5975fe31f59fd12cd8c355
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 94aacf23397c2599acd44b8197d2d2af0f157ea1d61ba13becedb44ad03d002d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075804"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338535"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 设置引用类型。 保留供将来使用。

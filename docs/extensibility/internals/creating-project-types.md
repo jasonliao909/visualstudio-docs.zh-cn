@@ -1,5 +1,5 @@
 ---
-title: 创建项目类型 |Microsoft Docs
+title: 创建 Project 类型 |Microsoft Docs
 description: 了解如何通过设计、创建和注册支持编程任务的新项目类型来扩展 Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,20 +11,21 @@ ms.assetid: bdb2d22e-d622-450c-bb2d-98152a745fcf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5984afd2879f94a73ef02f77a85501c50f55bc93
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4728412127311475b7861a2640ef96ac55f94387e79357a6bbee0a5c3fa0f01
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056813"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448152"
 ---
 # <a name="create-project-types"></a>创建项目类型
 可以 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过创建新的项目类型来扩展。 若要创建新的项目类型，您必须了解若干概念并完成多个步骤。 以下主题概述了如何创建项目类型。
 
 ## <a name="in-this-section"></a>本节内容
-- [项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)
+- [Project 类型设计决策](../../extensibility/internals/project-type-design-decisions.md)
 
  讨论了在创建新的项目类型之前必须做出的项目、项目文件持久性和承诺 mechanic 设计决策。
 
@@ -40,7 +41,7 @@ ms.locfileid: "105056813"
 
  提供注册表中提供默认路径和数据的语句的代码示例，以及包含每个语句的注册表脚本项的表。
 
-- [项目持久性](../../extensibility/internals/project-persistence.md)
+- [Project 持久性](../../extensibility/internals/project-persistence.md)
 
  讨论 `IPersistFileFormat` 如何使用来持久保存文件和非基于文件的项目对象。
 
@@ -57,9 +58,9 @@ ms.locfileid: "105056813"
 
  讨论项目在确定项目项打开时使用的编辑器，以及如何操作项目资源的重要性。
 
-- [安装 Vspackage 与 Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
+- [安装 vspackage 与 Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
 
- 说明如何为 VSPackage 指定自己的唯一标识，以及如何在 Windows Installer 包 (中包装 VSPackage Dll 和其他信息 *。* 用于部署到客户的 MSI 文件) 。
+ 说明如何为 VSPackage 提供自己唯一的标识，以及如何将 VSPackage dll 和其他信息包装到 Windows Installer 包中 (*.MSI* 文件) 部署到客户。
 
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
 

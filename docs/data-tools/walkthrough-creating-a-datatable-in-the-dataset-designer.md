@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: feec31fa0a9e34ad63e0b849d09084081e5710e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08c5355ab65947ef41a45f5d7f66f5b5e82a6994e9f0f0190870b28d687ffa7e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858171"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346565"
 ---
 # <a name="walkthrough-create-a-datatable-in-the-dataset-designer"></a>演练：在数据集设计器中创建 DataTable
 
@@ -31,7 +32,7 @@ ms.locfileid: "99858171"
 
 2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
-3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
+3. 在中间窗格中，选择 " **Windows 窗体应用程序**" 项目类型。
 
 4. 将项目命名为 **DataTableWalkthrough**，然后选择 **"确定"**。
 
@@ -45,7 +46,7 @@ ms.locfileid: "99858171"
 
 2. 在左侧窗格中，选择 " **数据**"，然后在中间窗格中选择 "数据 **集** "。
 
-3. 选择“添加”。
+3. 选择“添加”  。
 
      Visual Studio 会将名为 **DataSet1** 的文件添加到项目中，并在 **数据集设计器** 中打开它。
 

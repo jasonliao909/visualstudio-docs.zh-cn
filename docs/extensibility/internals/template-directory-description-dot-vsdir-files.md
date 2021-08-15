@@ -1,6 +1,6 @@
 ---
 title: 模板目录说明 (。Vsdir) 文件 |Microsoft Docs
-description: 了解模板目录说明文件如何使 Visual Studio IDE 能够显示与项目关联的文件夹、.vsz 文件和模板。
+description: 了解模板目录说明文件如何允许 Visual Studio IDE 显示与项目关联的文件夹、.vsz 文件和模板。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,19 +12,20 @@ ms.assetid: 9df51800-190e-4662-b685-fdaafcff1400
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd21dfa9fe5aae11553bb0268017690aba46fe9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70ee15328b6f89c5df5323951a11a0ce26d9d2393d25ced6b6434c098354a19e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080497"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431820"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 模板目录说明文件 () 是一个文本文件，该文件可使集成开发环境 (IDE) 显示与对话框中的项目相关联的文件夹、向导 .vsz 文件和模板文件。 内容包含每个文件或文件夹的一条记录。 尽管仅提供了一个 vsdir 文件来描述多个文件夹、向导或模板文件，但引用的位置中的所有 vsdir 文件都将合并。
 
- 文件夹 (子目录) ，在 vsdir 文件中引用的文件，并且该文件本身都位于同一个目录中。 当 IDE 运行向导或在 " **新建项目** " 或 " **添加新项** " 对话框中显示文件夹或文件时，ide 将检查包含已执行文件的目录，以确定是否存在一个 vsdir 文件。 如果找到了一个 vsdir 文件，则 IDE 将读取该文件，以确定它是否包含用于执行或显示的文件夹或文件的项。 如果找到了一个条目，IDE 将使用执行向导或显示内容中的信息。
+ 文件夹 (子目录) ，在 vsdir 文件中引用的文件，并且该文件本身都位于同一个目录中。 当 ide 运行向导或在 "**新建 Project** " 或 "**添加新项**" 对话框中显示文件夹或文件时，ide 将检查包含已执行文件的目录，以确定是否存在一个 vsdir 文件。 如果找到了一个 vsdir 文件，则 IDE 将读取该文件，以确定它是否包含用于执行或显示的文件夹或文件的项。 如果找到了一个条目，IDE 将使用执行向导或显示内容中的信息。
 
  下面的代码示例来自 \<EnvSDK> \bscprj\bscprj\bscprjprojectitems\ Source_Files 注册表项中的文件 SourceFiles：
 
@@ -44,7 +45,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 | {clsidPackage} | 支持访问本地化字符串的 VSPackage 的 GUID，例如 LocalizedName、Description、IconResourceId 和 SuggestedBaseName，在 VSPackage 的附属动态链接库中 (DLL) 资源。 如果未提供 DLLPath，则适用 IconResourceId。 **注意：**  此字段是可选的，除非以前的一个字段是资源标识符。 对于与不本地化文本的第三方向导对应的 vsdir 文件，此字段通常为空白。 |
 | LocalizedName | 模板文件或向导的本地化名称。 此字段可以是 "#ResID" 形式的字符串或资源标识符。 此名称将显示在 " **添加新项** " 对话框中。 **注意：**  如果 LocalizedName 是资源标识符，则需要 {clsidPackage}。 |
 | SortPriority | 一个整数，表示此模板文件或向导的相对优先级。 例如，如果此项的值为1，则此项将显示在值为1且早于排序值为2或更大的所有项的其他项的旁边。<br /><br /> 排序优先级相对于同一目录中的项。 同一个目录中可能有多个 vsdir 文件。 在这种情况下，从所有的项 <em>。</em>合并该目录中的 vsdir 文件。 具有相同优先级的项将在显示名称的不区分大小写的字典顺序中列出。 `_wcsicmp`函数用于对项进行排序。<br /><br /> 不在 vsdir 文件中描述的项包括比 vsdir 文件中列出的最高优先级数字大的优先级数。 结果就是这些项位于显示列表的末尾，而不考虑它们的名称。 |
-| 说明 | 模板文件或向导的本地化说明。 此字段可以是 "#ResID" 形式的字符串或资源标识符。 选择该项时，此字符串出现在 " **新建项目** " 或 " **添加新项** " 对话框中。 |
+| 说明 | 模板文件或向导的本地化说明。 此字段可以是 "#ResID" 形式的字符串或资源标识符。 此字符串出现在 "**新建 Project** " 或 "**添加新项**" 对话框中。 |
 | DLLPath 或 {clsidPackage} | 用于加载模板文件或向导的图标。 使用 IconResourceId 将该图标作为资源从 .dll 或 .exe 文件加载。 可以通过使用完整路径或使用 VSPackage 的 GUID 来标识此 .dll 或 .exe 文件。 VSPackage 的实现 DLL 用于加载)  (附属 DLL 的图标。 |
 | IconResourceId | DLL 或 VSPackage 实现 DLL 中用于确定要显示的图标的资源标识符。 |
 | 标志 (<xref:Microsoft.VisualStudio.Shell.Interop.__VSDIRFLAGS>)  | 用于禁用或启用 "**添加新项**" 对话框中的 "**名称**" 和 "**位置**" 字段。 " **标志** " 字段的值是所需位标志的组合的十进制等效项。<br /><br /> 当用户在 " **新建** " 选项卡上选择项时，项目将确定 " **添加新项** " 对话框首次显示时是否显示 "名称" 字段和 "位置" 字段。 一个项，通过一个 vsdir 文件，只可以控制在选定该项时是否启用和禁用这些字段。 |
@@ -60,7 +61,7 @@ SourceFile.cpp|{E59935A1-6156-11d1-87A6-00A0C91E2A46}|#122|110|#123|0|0|0|#124
 
 - 如果未定义图标，则 IDE 会将具有该扩展名的文件替换为默认图标。
 
-- 如果未提供任何建议的基名称，则使用 "项目"。
+- 如果未提供任何建议的基名称，则使用 "Project"。
 
 - 如果删除 .vsz 文件、文件夹或模板文件，还必须从 vsdir 文件中删除其关联记录。
 

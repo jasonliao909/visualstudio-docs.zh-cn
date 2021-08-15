@@ -1,6 +1,6 @@
 ---
 title: 如何：为安装程序生成注册表信息 |Microsoft Docs
-description: 了解如何使用 Visual Studio 中的 RegPkg.exe 实用工具生成用于合并到 Windows installer 安装包中的 VSPackage 注册表信息。
+description: 了解如何使用 Visual Studio 中的 RegPkg.exe 实用工具生成用于合并 Windows 安装程序安装包的 VSPackage 注册表信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,21 +12,22 @@ ms.assetid: b1b41012-a777-4ccf-81a6-3b41f0e96583
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c97d66574da0b1d4a4f3b12dcf2babf4d619dfb5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 092421db5e1ee4d38193b32b07650929aadbab4e6941b57950028640b1af1ad7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074681"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448034"
 ---
 # <a name="how-to-generate-registry-information-for-an-installer"></a>如何：为安装程序生成注册表信息
 
-*RegPkg.exe* 实用工具可用于为托管 VSPackage 生成注册清单。 清单可以合并到 Windows Installer 安装包中。 RegPkg 还可以生成一个文件，该文件可以包含在基于 [WINDOWS INSTALLER XML 工具集](https://wixtoolset.org/)的安装程序源文件中。
+*RegPkg.exe* 实用工具可用于为托管 VSPackage 生成注册清单。 清单可以合并到 Windows Installer 安装包中。 RegPkg 还可以生成一个文件，该文件可以包含在基于[Windows Installer XML 工具集](https://wixtoolset.org/)的安装程序源文件中。
 
 > [!IMPORTANT]
-> RegPkg 生成特定于您的开发系统的路径名称，因此，每次使用 RegPkg 时，必须编辑输出，以使用适当的 Windows Installer 格式属性。 例如， `InprocServer32` 应 *\<SystemFolder\>mscoree.dll* 值并且路径应使用 *\<#filekey\>* 和 *\<$componentkey\>* 。 以这种方式调整输出支持将 Windows 安装在其他驱动器或不同的目录中的计算机，以及用户可以选择的、本地化的目录名称和路径。 有关详细信息，请参阅 Windows Installer SDK 中的 [格式设置](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp) 。 如果你遵循开发系统路径的 RegPkg 约定（例如 *File_ \<filename\>* 格式的文件 id），则需要进行更少的更改。
+> RegPkg 生成特定于您的开发系统的路径名称，因此，每次使用 RegPkg 时，必须编辑输出，以使用适当的 Windows Installer 格式属性。 例如， `InprocServer32` 应 *\<SystemFolder\>mscoree.dll* 值并且路径应使用 *\<#filekey\>* 和 *\<$componentkey\>* 。 以这种方式调整输出支持 Windows 计算机安装在不同的驱动器上，或者安装在不同的目录、本地化的目录名称以及用户可以选择的路径中。 有关详细信息，请参阅 Windows Installer SDK 中的[格式设置](https://msdn.microsoft.com/library?url=/library/msi/setup/formatted.asp)。 如果你遵循开发系统路径的 RegPkg 约定（例如 *File_ \<filename\>* 格式的文件 id），则需要进行更少的更改。
 
 ## <a name="to-create-a-registration-manifest"></a>创建注册清单
 

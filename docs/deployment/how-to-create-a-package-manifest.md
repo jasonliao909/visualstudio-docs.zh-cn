@@ -1,6 +1,6 @@
 ---
 title: 创建包清单 |Microsoft Docs
-description: 了解如何使用引导程序包来部署 ClickOnce 应用程序的先决条件，其中包含每个区域设置的包清单。
+description: 了解如何使用引导程序包部署 ClickOnce 应用程序的先决条件，其中包含每个区域设置的包清单。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,14 +18,15 @@ ms.assetid: 5aecc507-2764-42f2-ae6f-c227971cf0af
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: cef6cd23a1e5ff1e00e2d4d93313ee1e9355ece2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 077926f3e2649a9e3fa49d39168e89e73c0af9fd313afe32bbfd8c20602d7609
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927556"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435486"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要为应用程序部署先决条件，可以使用引导程序包。 引导程序包包含单个产品清单文件，但每个区域设置都包含包清单。 不同本地化版本间的共享功能应进入产品清单。
@@ -73,7 +74,7 @@ ms.locfileid: "99927556"
     </Strings>
     ```
 
-7. 将 *C:\package* 文件夹复制到 Visual Studio 引导程序目录。 对于 Visual Studio 2010，这是 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 目录。
+7. 将 *C:\package* 文件夹复制到 Visual Studio 引导程序目录。 对于 Visual Studio 2010，这是 *\Program Files\Microsoft sdk \ Windows \v7.0A\Bootstrapper\Packages* 目录。
 
 ## <a name="example"></a>示例
  包清单包含特定于区域设置的信息，如错误消息、软件许可条款和语言包。

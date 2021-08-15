@@ -11,17 +11,18 @@ ms.assetid: fed09686-caa6-4efc-851e-a0432019e9d0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a9cc73f9bf35692e002034c06b234fd388110fa6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b9c9b3b0759d5a1831525708b5ae4915d063ca801a9e2c998ccaa0d1655b788e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070695"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388885"
 ---
 # <a name="unmanaged_address_physical"></a>UNMANAGED_ADDRESS_PHYSICAL
 此结构表示物理地址。

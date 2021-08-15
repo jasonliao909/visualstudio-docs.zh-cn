@@ -1,24 +1,25 @@
 ---
 title: Help Content Manager 的命令行参数
-description: '使用帮助内容管理器 ( # A0) 的命令行参数指定如何部署和管理本地帮助内容。'
+description: 使用 Help Content Manager 命令的命令行 (HlpCtntMgr.exe) 指定如何部署和管理本地帮助内容。
 ms.date: 11/01/2017
 ms.topic: reference
 ms.assetid: 3aa9890a-1147-42ba-adea-17935d184038
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 905284d69d23971771eecd9da6cef5c5051f36ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 879ea5283ad429678a91b159691d3fed5d353e732dddd7119e20c214637cff1b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944272"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358670"
 ---
 # <a name="command-line-arguments-for-the-help-content-manager"></a>Help Content Manager 的命令行参数
 
-您可以使用 Help Content Manager 的命令行参数 (*HlpCtntMgr.exe*) 来指定如何部署和管理本地帮助内容。 必须以管理员权限运行此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：
+可以使用帮助内容管理器的命令行参数来指定如何部署和管理本地帮助内容 *(HlpCtntMgr.exe) 。* 必须以管理员权限运行此命令行工具的脚本，无法以服务形式运行这些脚本。 可以使用此工具执行以下任务：
 
 - 从磁盘或云添加或更新本地帮助内容。
 
@@ -41,26 +42,26 @@ hlpctntmgr.exe /operation install /catalogname VisualStudio15 /locale en-us /sou
 ```
 
 >[!NOTE]
-> 对于 Visual Studio 2017 和 Visual Studio 2019，目录名称为 VisualStudio15。 这可能是意外情况，但这是因为这两个 Visual Studio 版本使用的是相同的帮助查看器。
+> 对于 2017 和 2019 Visual Studio，目录名称Visual Studio VisualStudio15。 这可能是意外的，但这是因为这两个版本都使用相同的帮助查看器Visual Studio查看器。
 
 ## <a name="switches-and-arguments"></a>开关和参数
 
 下表定义了可以用于 Help Content Manager 的命令行工具的开关和参数：
 
-|交换机|必需？|自变量|
+|交换机|必需？|参数|
 |------------|---------------|---------------|
-|/operation|是|-   **Install** -- 将书籍从指定安装源添加到本地内容存储区。<br />     此开关需要 /booklist 自变量、/sourceURI 自变量或两者。 如果未指定 /sourceURI 参数，则默认 Visual Studio URI 用作安装源。 如果未指定 /booklist 变量，则会安装 /sourceUri 上的所有书籍。<br />-   **Uninstall** -- 从本地内容存储区中删除指定的书籍。<br />     此开关需要 /booklist 自变量或 /sourceURI 自变量。  如果指定 /sourceURI 自变量，则会移除所有书籍，并且会忽略 /booklist 自变量。<br />-   **Move** -- 将本地存储区移动到指定的路径。 默认本地存储区路径设置为 *% ProgramData%* 下的目录<br />     此开关需要 /locationPath 和 /catalogName 自变量。 如果指定的路径无效或驱动器未包含足够的可用空间来存放内容，则会在事件日志中记录错误消息。<br />-   **Refresh** -- 更新自安装或最近更新以来已更改的主题。<br />     此开关需要 /sourceURI 自变量。|
-|/catalogName|是|指定内容目录的名称。 对于 Visual Studio 2017 和 Visual Studio 2019，这是 VisualStudio15。|
+|/operation|是|-   **Install** -- 将书籍从指定安装源添加到本地内容存储区。<br />     此开关需要 /booklist 自变量、/sourceURI 自变量或两者。 如果未指定 /sourceURI 参数，则默认 Visual Studio URI 用作安装源。 如果未指定 /booklist 变量，则会安装 /sourceUri 上的所有书籍。<br />-   **Uninstall** -- 从本地内容存储区中删除指定的书籍。<br />     此开关需要 /booklist 自变量或 /sourceURI 自变量。  如果指定 /sourceURI 自变量，则会移除所有书籍，并且会忽略 /booklist 自变量。<br />-   **Move** -- 将本地存储区移动到指定的路径。 默认本地存储路径设置为 *%ProgramData%* 下的目录<br />     此开关需要 /locationPath 和 /catalogName 自变量。 如果指定的路径无效或驱动器未包含足够的可用空间来存放内容，则会在事件日志中记录错误消息。<br />-   **Refresh** -- 更新自安装或最近更新以来已更改的主题。<br />     此开关需要 /sourceURI 自变量。|
+|/catalogName|是|指定内容目录的名称。 对于 Visual Studio 2017 和 2019 Visual Studio，这是 VisualStudio15。|
 |/locale|否|为 Help Viewer 的当前实例指定用于查看和管理内容的产品区域设置。 例如，可为美国英语指定 `EN-US`。<br /><br /> 如果未指定区域设置，则使用操作系统的区域设置。 如果无法确定该区域设置，则使用 `EN-US`。<br /><br /> 如果指定了无效的区域设置，则会在事件日志中记录错误消息。|
 |/e|否|如果当前用户具有管理凭据，则会将 Help Content Manager 提升为管理特权。|
-|/sourceURI|否|指定从中安装内容的 URL (服务 API) 或内容安装文件的路径 (*.msha*) 。 该 URL 可以指向 Visual Studio 2010 样式终结点中的产品组（顶级节点）或产品书籍（叶级节点）。 无需在 URL 的末尾包含斜杠 (/)。 如果确实要包含尾部斜线，则会对它进行相应处理。<br /><br /> 如果找不到指定的文件、或者该文件无效或无法访问，或是如果与 Internet 的连接不可用或在管理内容时中断，则会在事件日志中记录错误消息。|
+|/sourceURI|否|指定在服务 API (安装内容的 URL) 或 *.msha (内容安装*) 。 该 URL 可以指向 Visual Studio 2010 样式终结点中的产品组（顶级节点）或产品书籍（叶级节点）。 无需在 URL 的末尾包含斜杠 (/)。 如果确实要包含尾部斜线，则会对它进行相应处理。<br /><br /> 如果找不到指定的文件、或者该文件无效或无法访问，或是如果与 Internet 的连接不可用或在管理内容时中断，则会在事件日志中记录错误消息。|
 |/vendor|否|指定将移除的产品内容的供应商（例如 `Microsoft`）。 此开关的默认参数是 Microsoft。|
-|/productName|否|指定将删除的书籍的产品名。 产品名称在随附内容的 *helpcontentsetup.msha* 或 *books.html* 文件中标识。 一次只能从一个产品中移除书籍。 若要从多个产品中移除书籍，必须执行多个安装。|
+|/productName|否|指定将删除的书籍的产品名。 产品名称在内容附带的 *helpcontentsetup.msha* books.htm *l* 文件中标识。 一次只能从一个产品中移除书籍。 若要从多个产品中移除书籍，必须执行多个安装。|
 |/booklist|否|指定要管理的书籍的名称（用空格分隔）。 值必须与安装媒体上列出的书籍名匹配。<br /><br /> 如果未指定此参数，则会安装 /sourceURI 中指定产品的所有推荐书籍。<br /><br /> 如果书籍的名称包含一个或多个空格，请在它两边添加双引号 (")，以便正确地分隔列表。<br /><br /> 如果指定的 /sourceURI 无效或无法访问，则会记录错误消息。|
 |/skuId|否|指定安装源中的产品的库存单位 (SKU)，并筛选 /SourceURI 开关标识的书籍。|
-|/membership|否|-   **Minimum** -- 基于使用 /skuId 开关指定的 SKU 安装最小帮助内容集。 SKU 与内容集之间的映射在服务 API 中进行公开。<br />-   **Recommended** -- 针对使用 /skuId 参数指定的 SKU 安装一组推荐书籍。 安装源是服务 API 或 *。.MSHA*。<br />-   **Full** -- 针对使用 /skuId 参数指定的 SKU 安装整套书籍。 安装源是服务 API 或 *。.MSHA*。|
+|/membership|否|-   **Minimum** -- 基于使用 /skuId 开关指定的 SKU 安装最小帮助内容集。 SKU 与内容集之间的映射在服务 API 中进行公开。<br />-   **Recommended** -- 针对使用 /skuId 参数指定的 SKU 安装一组推荐书籍。 安装源是服务 API 或 *。MSHA*。<br />-   **Full** -- 针对使用 /skuId 参数指定的 SKU 安装整套书籍。 安装源是服务 API 或 *。MSHA*。|
 |/locationpath|否|指定本地帮助内容的默认文件夹。 必须仅使用此开关安装或移动内容。 如果指定此开关，则还必须指定 /silent 开关。|
-|/silent|否|安装或移除帮助内容，而不提示用户或显示任何 UI（包括状态通知区域中的图标）。 输出记录到 *% Temp%* 目录中的文件。 **重要提示：**  若要以无提示方式安装内容，必须使用经过数字签名的 *.cab* 文件，而不是 *.mshc* 文件。|
+|/silent|否|安装或移除帮助内容，而不提示用户或显示任何 UI（包括状态通知区域中的图标）。 输出将记录到 *%Temp%* 目录中的文件中。 **重要提示：**  若要以无提示方式安装内容，必须使用数字签名 *.cab文件，* 而不是 *.mshc* 文件。|
 |/launchingApp|否|当在没有父应用程序的情况下启动帮助查看器时，定义应用程序和目录上下文。 此开关的参数是 CompanyName、ProductName 和 VersionNumber（例如 `/launchingApp Microsoft,VisualStudio,16.0`）。<br /><br /> 使用 /silent 参数安装内容时需要此开关。|
 |/wait Seconds|否|暂停安装、卸载和刷新操作。 如果操作已在对目录进行，则进程会等待给定秒数，然后继续。 使用 0 表示无限期等待。|
 |/?|否|列出 Help Content Manager 的命令行工具的开关及其说明。|
@@ -94,5 +95,5 @@ UpdateAlreadyRunning = 1300 - (Signals that the update didn't run because anothe
 ## <a name="see-also"></a>另请参阅
 
 - [Help Viewer 管理员指南](../help-viewer/administrator-guide.md)
-- [Help Content Manager 替代](../help-viewer/behavior-overrides.md)
+- [帮助内容管理器替代](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

@@ -11,17 +11,18 @@ ms.assetid: 99df5865-8b36-486d-9f4c-d10ae2bc688a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d514b9aa0e37e90e99f21b5b4906cff9d32472db
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3a16c1f5ae1065e47b53cd3565c6fc18398bf5e05693dd43344abdc51486fd27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059491"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434407"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
 指示用于调试服务器与调试包之间通信的协议 (DE) 。

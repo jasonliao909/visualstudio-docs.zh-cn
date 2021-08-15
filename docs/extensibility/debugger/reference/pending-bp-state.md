@@ -1,5 +1,5 @@
 ---
-description: 指定挂起断点的状态 (尚未绑定) 的断点。
+description: 指定挂起断点的状态 (尚未绑定到该断点的) 。
 title: PENDING_BP_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ac04ad72-fa92-4a15-ade2-0d0bbbadfc7f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d041042be92fe68dd6f0ea35bbdb4f6dd6d9ac7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f6079a227be831f44476a233849b735fadfc9e82564ea39af52637343caaa28e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086373"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448580"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
-指定挂起断点的状态 (尚未绑定) 的断点。
+指定挂起断点的状态 (尚未绑定到该断点的) 。
 
 ## <a name="syntax"></a>语法
 
@@ -49,26 +50,26 @@ public enum enum_PENDING_BP_STATE {
 
 ## <a name="fields"></a>字段
  `PBPS_NONE`\
- 占位符为零。 从不返回此值。
+ 零的占位符。 永远不会返回此值。
 
  `PBPS_DELETED`\
- 指示已删除挂起的断点。
+ 指示挂起的断点已删除。
 
  `PBPS_DISABLED`\
- 指示挂起的断点已禁用。
+ 指示已禁用挂起断点。
 
  `PBPS_ENABLED`\
  指示已启用挂起断点。
 
 ## <a name="remarks"></a>备注
- 用作 `state` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 结构的成员。
+ 使用 作为 `state` 结构PENDING_BP_STATE_INFO成员[](../../../extensibility/debugger/reference/pending-bp-state-info.md)。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

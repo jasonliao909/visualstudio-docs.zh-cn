@@ -1,27 +1,28 @@
 ---
 title: 托管代码的“托管建议规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的 "托管建议规则" 规则集。 请参阅侧重于安全性、稳定性和其他关键问题的规则的说明。
+description: 了解托管建议规则规则集，Visual Studio。 请参阅侧重于安全性、稳定性和其他关键问题的规则的说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 1d1160f8-4e51-4e70-99cd-82ad10ee7b32
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: e691e6dc48b33ff00f6824436b80e5f49721db98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 317584726b849069eef384bbbc0147ef158856117b57d2919f4b0038352a0579
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867901"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392726"
 ---
 # <a name="managed-recommended-rules-rule-set-for-managed-code"></a>托管代码的“托管建议规则”规则集
 
-使用 "Microsoft 托管建议规则" 规则集来重点关注托管代码中最关键的问题，包括潜在的安全漏洞、应用程序崩溃和其他重要的逻辑和设计错误。 此规则集包括 " [托管最小规则](managed-minimum-rules-rule-set-for-managed-code.md) " 规则集中的所有规则。
+使用 Microsoft 托管的建议规则规则集专注于托管代码中的最关键问题，包括潜在的安全漏洞、应用程序崩溃以及其他重要的逻辑和设计错误。 此规则集包括托管最小规则规则集中 [的所有](managed-minimum-rules-rule-set-for-managed-code.md) 规则。
 
-在你为项目创建的任何自定义规则集中包含此规则集。
+在为项目创建的任何自定义规则集中包括此规则集。
 
 |规则|描述|
 |----------|-----------------|

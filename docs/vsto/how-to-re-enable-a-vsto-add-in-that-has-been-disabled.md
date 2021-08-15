@@ -1,6 +1,6 @@
 ---
-title: 如何：重新启用已禁用的 VSTO 外接程序
-description: 了解如何使用 Visual Studio 重新启用已在 Microsoft Office 应用程序中禁用的 VSTO 外接程序。
+title: 如何：重新启用VSTO禁用的外接程序
+description: 了解如何使用 Visual Studio 来重新启用VSTO应用程序中已禁用的 Microsoft Office 外接程序。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,28 +16,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: de3e251c15699ce29b7986e4f0cc19a3f5c5798d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02ba44eebff487c602acd3faaf6b65a89225a8a2547813ce055f66a2105883e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942175"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394207"
 ---
-# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新启用已禁用的 VSTO 外接程序
+# <a name="how-to-re-enable-a-vsto-add-in-that-has-been-disabled"></a>如何：重新启用VSTO禁用的外接程序
   Microsoft Office 应用程序可禁用行为异常的 VSTO 外接程序。 当你尝试对 VSTO 外接程序进行调试时，如果应用程序不加载它，则此应用程序可能已硬禁用或软禁用此 VSTO 外接程序。
 
  [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-## <a name="hard-disabled-vsto-add-ins"></a>硬禁用的 VSTO 外接程序
- 当 VSTO 外接程序导致应用程序意外关闭时，可能发生硬禁用。 如果 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序正在执行时停止了调试器，则硬禁用也可能发生在开发计算机上。
+## <a name="hard-disabled-vsto-add-ins"></a>硬禁用VSTO外接程序
+ 当外接程序导致应用程序意外VSTO时，可能会发生硬禁用。 如果 VSTO 外接程序中的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序正在执行时停止了调试器，则硬禁用也可能发生在开发计算机上。
 
 ### <a name="to-re-enable-a-vsto-add-in"></a>若要重新启用 VSTO 外接程序
 
 1. 在应用程序中，单击 **“文件”** 选项卡。
 
-2. 单击 *ApplicationName* **“选项”** 按钮。
+2. 单击 *"ApplicationName* **选项"** 按钮。
 
 3. 在类别窗格中，单击 **“外接程序”**。
 
@@ -49,9 +50,9 @@ ms.locfileid: "99942175"
 
 6. 选择 VSTO 外接程序并单击 **“启用”**。
 
-7. 单击 **“关闭”** 。
+7. 单击“关闭”。
 
-## <a name="soft-disabled-vsto-add-ins"></a>软禁用的 VSTO 外接程序
+## <a name="soft-disabled-vsto-add-ins"></a>已软禁用VSTO外接程序
  当 VSTO 外接程序产生不会导致应用程序意外关闭的错误时，可能会发生软禁用。 例如，如果 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序正在执行时，某个应用程序引发了未处理异常，则此应用程序可能软禁用 VSTO 外接程序。
 
 > [!NOTE]
@@ -61,7 +62,7 @@ ms.locfileid: "99942175"
 
 1. 在应用程序中，单击 **“文件”** 选项卡。
 
-2. 单击 *ApplicationName* **“选项”** 按钮。
+2. 单击 *"ApplicationName* **选项"** 按钮。
 
 3. 在类别窗格中，单击 **“外接程序”**。
 
@@ -76,6 +77,6 @@ ms.locfileid: "99942175"
 7. 单击 **“确定”** 。
 
 ## <a name="see-also"></a>请参阅
-- [构建 Office 解决方案](../vsto/building-office-solutions.md)
-- [调试 Office 项目](../vsto/debugging-office-projects.md)
-- [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
+- [生成Office解决方案](../vsto/building-office-solutions.md)
+- [调试Office项目](../vsto/debugging-office-projects.md)
+- [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)

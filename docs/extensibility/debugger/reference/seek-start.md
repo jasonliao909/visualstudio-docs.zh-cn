@@ -1,5 +1,5 @@
 ---
-description: 指定在反汇编流中开始查找的位置。
+description: 指定开始在反汇编流中寻找的位置。
 title: SEEK_START |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 55bd8901-626e-428b-a263-23b14417f4c6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a15635f2cf56f3be1e9955af4ee79782ed3c85fa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 580c52a3df54f32beba45b4f44c1062e7197f766ae1ae9d25db6da29099537f2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061519"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433016"
 ---
 # <a name="seek_start"></a>SEEK_START
-指定在反汇编流中开始查找的位置。
+指定开始在反汇编流中寻找的位置。
 
 ## <a name="syntax"></a>语法
 
@@ -51,29 +52,29 @@ public enum enum_SEEK_START {
 
 ## <a name="fields"></a>字段
  `SEEK_START_BEGIN`\
- 开始在当前文档的开头进行查找。
+ 从当前文档的开头开始寻找。
 
  `SEEK_START_END`\
- 开始在当前文档的末尾进行查找。
+ 在当前文档的末尾开始寻找。
 
  `SEEK_START_CURRENT`\
- 在当前文档的当前位置开始查找。
+ 从当前文档的当前位置开始寻找。
 
  `SEEK_START_CODECONTEXT`\
- 开始在当前文档的给定代码上下文中查找。
+ 开始在当前文档的给定代码上下文中进行寻找。
 
  `SEEK_START_CODELOCID`\
- 开始查找给定的代码位置标识符。 通过调用 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)获取代码位置标识符。
+ 开始在给定的代码位置标识符处进行寻找。 通过调用 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)获取代码位置标识符。
 
 ## <a name="remarks"></a>备注
  作为参数传递给 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
