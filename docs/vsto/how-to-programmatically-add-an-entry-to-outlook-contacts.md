@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式将条目添加到 Outlook 联系人
-description: 了解如何以编程方式将条目添加到 Outlook 联系人。 此示例创建一个新的联系人，并向新联系人输入数据。
+title: 如何：以编程方式向联系人Outlook条目
+description: 了解如何以编程方式将条目添加到Outlook联系人。 此示例创建一个新联系人，并将数据输入到新联系人中。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: bcd3d4018c75644f919a067de4aa0e6bee4e2205
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d4389d99e00460173d7989ad623fdc30f7d163cec727864d1dd7d5eb58071d08
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828730"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351858"
 ---
-# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>如何：以编程方式将条目添加到 Outlook 联系人
-  此示例创建一个新的联系人，并向新联系人输入数据。
+# <a name="how-to-programmatically-add-an-entry-to-outlook-contacts"></a>如何：以编程方式向联系人Outlook条目
+  此示例创建一个新联系人，并将数据输入到新联系人中。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -31,8 +32,8 @@ ms.locfileid: "107828730"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OL_AddContact/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
-- [处理联系人项](../vsto/working-with-contact-items.md)
+## <a name="see-also"></a>另请参阅
+- [使用联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式创建约会](../vsto/how-to-programmatically-create-appointments.md)
-- [如何：以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [如何：以编程方式在联系人中搜索电子邮件地址](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)
+- [如何：以编程方式Outlook联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [如何：以编程方式搜索联系人中的电子邮件地址](../vsto/how-to-programmatically-search-for-an-e-mail-address-in-contacts.md)

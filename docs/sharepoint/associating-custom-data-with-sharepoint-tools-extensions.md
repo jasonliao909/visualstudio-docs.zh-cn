@@ -17,23 +17,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5665fc28bacb76c6887cb7dcb1820ec9dc0d2b3a
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: dcd6e00fa9a934a159b49aec225813cec92b08ec11076d29716c30e38e76a891
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215313"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121315338"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
   您可以将自定义数据添加到 SharePoint 工具扩展中的某些对象。 当你在扩展中的一个部分中包含要从扩展中的其他代码访问的数据时，这非常有用。 您可以将数据与扩展中的对象关联起来，然后在以后从同一对象中检索数据，而不是实现自定义方法来存储和访问数据。
 
- 如果要保留与 Visual Studio 中特定项相关的数据，则将自定义数据添加到对象中也很有用。 SharePoint 工具扩展只在 Visual Studio 中加载一次，因此，您的扩展可以随时处理多个不同项 (如项目、项目项或 **服务器资源管理器**) 节点。 如果你的自定义数据仅与特定项相关，则可以将数据添加到表示该项的对象。
+ 如果要保留与 Visual Studio 中的特定项相关的数据，则将自定义数据添加到对象也很有用。 SharePoint 工具扩展只在 Visual Studio 中加载一次，因此，你的扩展可能会在任何时候都可以使用多个不同项 (如项目、项目项或 **服务器资源管理器**) 节点。 如果你的自定义数据仅与特定项相关，则可以将数据添加到表示该项的对象。
 
  将自定义数据添加到 SharePoint 工具扩展中的对象时，数据不会持久保存。 数据仅在该对象的生存期内可用。 通过垃圾回收来回收对象后，数据将丢失。
 
- 在 SharePoint 项目系统的扩展中，还可以保存在卸载扩展后保留的字符串数据。 有关详细信息，请参阅 [在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 在 SharePoint 项目系统的扩展中，还可以保存在卸载扩展后保留的字符串数据。 有关详细信息，请参阅[在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ## <a name="objects-that-can-contain-custom-data"></a>可以包含自定义数据的对象
  您可以向实现接口的 SharePoint 工具对象模型中的任何对象添加自定义数据 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> 。 此接口仅定义一个属性， <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 该属性是自定义数据对象的集合。 以下类型实现 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject> ：
@@ -77,7 +78,7 @@ ms.locfileid: "106215313"
 
 - <xref:Microsoft.VisualStudio.SharePoint.IAnnotationDictionary.GetValue%2A>. 如果数据对象退出，此方法将返回该对象; 如果该对象不存在，则返回 **null** 。 您只能使用此方法来检索引用类型的实例。
 
-  下面的代码示例确定某个数据对象是否已与项目项关联。 如果数据对象尚未与项目项关联，则代码会将对象添加到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 若要在更大的示例上下文中查看此示例，请参阅 [如何：将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
+  下面的代码示例确定某个数据对象是否已与项目项关联。 如果数据对象尚未与项目项关联，则代码会将对象添加到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 若要在更大的示例上下文中查看此示例，请参阅[如何：将属性添加到自定义 SharePoint 项目项类型](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)。
 
   :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
   :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
@@ -86,5 +87,5 @@ ms.locfileid: "106215313"
 - [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [演练：使用项模板创建自定义操作项目项（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
-- [如何：向 SharePoint 项目添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [如何：将属性添加到 SharePoint 项目中](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
 - [如何：向自定义 SharePoint 项目项类型添加属性](../sharepoint/how-to-add-a-property-to-a-custom-sharepoint-project-item-type.md)

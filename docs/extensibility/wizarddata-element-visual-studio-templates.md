@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 WizardData 元素 |Microsoft Docs"
+title: WizardData 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 WizardData 元素及其如何指定自定义 XML。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd7b85433b4e02491852589d32eea9a4f223da14
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7d51d9827c5edcbcf522eb206add4769a8583f34ac7aa72732b472523e197bb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061883"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400434"
 ---
 # <a name="wizarddata-element-visual-studio-templates"></a>WizardData 元素（Visual Studio 模板）
 
@@ -108,7 +108,7 @@ ms.locfileid: "105061883"
 
 ## <a name="see-also"></a>另请参阅
 
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
 - [WizardExtension 元素（Visual Studio 模板）](../extensibility/wizardextension-element-visual-studio-templates.md)
 - [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

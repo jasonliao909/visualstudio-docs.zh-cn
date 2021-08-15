@@ -1,6 +1,6 @@
 ---
 title: 创建选项页 |Microsoft Docs
-description: 了解如何通过从托管包框架实现 Dialogpage 派生类，在 Visual Studio 的 "工具" 菜单下创建选项页。
+description: 了解如何通过从托管包框架实现 dialogpage 派生类，在 Visual Studio 中的 "工具" 菜单下创建选项页。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 1bf11fec-dece-4943-8053-6de1483c43eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f7b1b8b92f978739bfa4e540013347e216781cd4
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 3f236d38a4bde8a13bb49e6cbc8700811fac9d846962ace7c47ef2ede4047919
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217237"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448216"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 托管包框架中， <xref:Microsoft.VisualStudio.Shell.DialogPage> 通过在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] "**工具**" 菜单下添加 "**选项**" 页，从派生的类扩展 IDE。
@@ -59,7 +60,7 @@ ms.locfileid: "106217237"
   所有这些默认功能都可以重写。 例如，若要创建更复杂的用户界面，只需重写的默认实现 <xref:Microsoft.VisualStudio.Shell.DialogPage.Window%2A> 。
 
 ## <a name="example"></a>示例
- 下面是一个简单的 "Hello world" 选项页实现。 将以下代码添加到 Visual Studio 包模板创建的默认项目，并选择 " **菜单命令** " 选项，可充分说明选项页面功能。
+ 下面是一个简单的 "Hello world" 选项页实现。 将以下代码添加到 "Visual Studio 包模板" 创建的默认项目，并选择 "**菜单命令**" 选项，可充分说明选项页面功能。
 
 ### <a name="description"></a>说明
  下面的类定义最小的 "Hello world" 选项页。 当打开时，用户可以 `HelloWorld` 在属性网格中设置公共属性。

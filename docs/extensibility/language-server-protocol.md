@@ -8,20 +8,21 @@ ms.assetid: 6a7d93c2-31ea-4bae-8b29-6988a567ddf2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dd212b5f75679b44175d9b160d3e11d2075d6a5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 683abc2a4bd38d4b13c7618eddca3072d503398b8782fad9dac31de2057bda1d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074023"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447973"
 ---
 # <a name="language-server-protocol"></a>语言服务器协议
 
 ## <a name="what-is-the-language-server-protocol"></a>什么是语言服务器协议？
 
-通常，支持丰富的编辑功能，如编辑器或 IDE 中的编程语言的源代码自动完成或 " **中转到定义** "。 通常需要在编辑器或 IDE 的编程语言中 (扫描器、分析器、类型检查器、生成器和更多) 编写域模型。 例如，在 Eclipse IDE 中提供对 C/c + + 的支持的 Eclipse CDT 插件是以 Java 编写的，因为 Eclipse IDE 本身是用 Java 编写的。 按照此方法，这意味着在 TypeScript for Visual Studio 代码中实现 C/c + + 域模型，并在 c # 中为 Visual Studio 实现一个单独的域模型。
+通常，支持丰富的编辑功能，如编辑器或 IDE 中的编程语言的源代码自动完成或 " **中转到定义** "。 通常需要在编辑器或 IDE 的编程语言中 (扫描器、分析器、类型检查器、生成器和更多) 编写域模型。 例如，在 Eclipse IDE 中提供对 C/c + + 的支持的 Eclipse CDT 插件是以 Java 编写的，因为 Eclipse IDE 本身是用 Java 编写的。 按照此方法，这意味着在 TypeScript 中实现 Visual Studio Code 的 c/c + + 域模型，并在 c # 中为 Visual Studio 实现一个单独的域模型。
 
 如果开发工具可以重复使用现有的特定于语言的库，则创建语言特定的域模型还会容易得多。 不过，这些库通常在编程语言本身中实现 (例如，在 C/c + +) 中实现良好的 C/c + + 域模型。 从技术上讲，将 C/c + + 库集成到用 TypeScript 编写的编辑器中是可行的，但却很难。
 
@@ -33,11 +34,11 @@ ms.locfileid: "105074023"
 
 ## <a name="how-work-on-the-lsp-started"></a>如何开始使用 LSP
 
-LSP 随着时间的推移而发展，今天在3.0 版。 它在 OmniSharp 选择语言服务器的概念时开始，以便为 c # 提供丰富的编辑功能。 最初，OmniSharp 使用 HTTP 协议和 JSON 有效负载，并已集成到多个编辑器中，其中包括 [Visual Studio Code](https://code.visualstudio.com)。
+LSP 随着时间的推移而发展，今天在3.0 版。 它在 OmniSharp 选择语言服务器的概念时开始，以便为 c # 提供丰富的编辑功能。 最初，OmniSharp 使用 HTTP 协议和 JSON 有效负载，并已集成到多个编辑器中，其中包括[Visual Studio Code](https://code.visualstudio.com)。
 
-在同一时间，Microsoft 开始处理 TypeScript 语言服务器，并在编辑器中支持 TypeScript，如 Emacs 和 Sublime 文本。 在此实现中，编辑器通过包含 TypeScript 服务器进程的 stdin/stdout 进行通信，并使用 V8 调试器协议为请求和响应提供的 JSON 有效负载。 TypeScript 服务器已集成到 TypeScript Sublime 插件中，并 VS Code 丰富的 TypeScript 编辑。
+在同一时间，Microsoft 开始处理 TypeScript 语言服务器，并在编辑器中支持 TypeScript，如 Emacs 和 Sublime 文本。 在此实现中，编辑器通过包含 TypeScript 服务器进程的 stdin/stdout 进行通信，并使用 V8 调试器协议为请求和响应提供的 JSON 有效负载。 typescript 服务器已集成到 typescript Sublime 插件中，并 VS Code 丰富的 typescript 编辑。
 
-在集成了两种不同的语言服务器后，VS Code 团队开始探索用于编辑器和 Ide 的公共语言服务器协议。 通用协议允许语言提供程序创建可由不同 Ide 使用的单一语言服务器。 语言服务器使用者只需要实现一次协议的客户端。 这为语言提供商和语言使用者带来了 win 胜利的情况。
+在集成了两种不同的语言服务器后，VS Code 团队开始探索用于编辑器和 ide 的公共语言服务器协议。 通用协议允许语言提供程序创建可由不同 Ide 使用的单一语言服务器。 语言服务器使用者只需要实现一次协议的客户端。 这为语言提供商和语言使用者带来了 win 胜利的情况。
 
 语言服务器协议以 TypeScript 服务器使用的协议开头，并使用 VS Code 语言 API 的更多语言功能对其进行扩展。 由于其简易性和现有库的原因，该协议支持 JSON-RPC 进行远程调用。
 
@@ -45,7 +46,7 @@ VS Code 团队通过实现几个 linter 语言服务器来对协议进行原型�
 
 ## <a name="how-the-lsp-works"></a>LSP 的工作方式
 
-语言服务器在其自身的进程中运行，Visual Studio 或 VS Code 的工具通过 JSON-RPC 与使用语言协议的服务器进行通信。 在专用流程中运行的语言服务器的另一个优点是避免了与单个进程模型相关的性能问题。 如果客户端和服务器都 Node.js 中编写，则实际传输通道可以是 stdio.h、套接字、命名管道或节点 ipc。
+语言服务器运行在其自己的进程中，Visual Studio 或 VS Code 之类的工具通过 JSON-RPC 上的语言协议与服务器进行通信。 在专用流程中运行的语言服务器的另一个优点是避免了与单个进程模型相关的性能问题。 如果客户端和服务器都 Node.js 中编写，则实际传输通道可以是 stdio.h、套接字、命名管道或节点 ipc。
 
 下面是在日常编辑会话期间，工具和语言服务器的通信方式的示例：
 
@@ -118,8 +119,8 @@ VS Code 团队通过实现几个 linter 语言服务器来对协议进行原型�
 
 语言服务器与特定工具的实际集成不是由语言服务器协议定义的，并留给工具实现者。 某些工具通过具有可开始与任何类型语言服务器的扩展来对语言服务器进行一般集成。 其他人（如 VS Code）为每个语言服务器创建一个自定义扩展，以便扩展仍可提供一些自定义语言功能。
 
-为了简化语言服务器和客户端的实现，客户端和服务器部分有库或 Sdk。 这些库是针对不同语言提供的。 例如，有一种 [语言客户端 npm 模块](https://www.npmjs.com/package/vscode-languageclient) ，可以轻松地将语言服务器集成到 VS Code 扩展，并使用另一种 [语言服务器 npm 模块](https://www.npmjs.com/package/vscode-languageserver) 来编写使用 Node.js 的语言服务器。 这是当前支持库的 [列表](https://github.com/Microsoft/language-server-protocol/wiki/Protocol-Implementations) 。
+为了简化语言服务器和客户端的实现，客户端和服务器部分有库或 Sdk。 这些库是针对不同语言提供的。 例如，有一种[语言客户端 npm 模块](https://www.npmjs.com/package/vscode-languageclient)，可以轻松地将语言服务器集成到 VS Code 扩展，并使用另一种[语言服务器 npm 模块](https://www.npmjs.com/package/vscode-languageserver)来编写使用 Node.js 的语言服务器。 这是当前支持库的 [列表](https://github.com/Microsoft/language-server-protocol/wiki/Protocol-Implementations) 。
 
 ## <a name="using-the-language-server-protocol-in-visual-studio"></a>在 Visual Studio 中使用语言服务器协议
 
-* [添加语言服务器协议扩展](adding-an-lsp-extension.md) -了解有关将语言服务器集成到 Visual Studio 的信息。
+* [添加语言服务器协议扩展](adding-an-lsp-extension.md)-了解将语言服务器集成到 Visual Studio。

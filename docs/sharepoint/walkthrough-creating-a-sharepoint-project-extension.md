@@ -1,6 +1,6 @@
 ---
-title: 演练：创建 SharePoint 项目扩展 |Microsoft Docs
-description: 创建 SharePoint 项目扩展，您可以使用它来响应项目级别的事件，例如添加、删除或重命名项目。
+title: 演练：创建 SharePoint Project 扩展 |Microsoft Docs
+description: 创建 SharePoint 项目扩展，该扩展可用于响应项目级事件，例如添加、删除或重命名项目时。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,23 +14,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 1de6cdc2f5c1f1480a738f99aa05b8833eb4b2ed
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 6db7829524b43718d8c41afa7792b86bc589c75c7874bc2e447f9093d4016370
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217783"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121244220"
 ---
 # <a name="walkthrough-create-a-sharepoint-project-extension"></a>演练：创建 SharePoint 项目扩展
-  本演练演示如何创建 SharePoint 项目的扩展。 您可以使用项目扩展来响应项目级别的事件，例如，在添加、删除或重命名项目时。 还可以添加自定义属性，或在属性值更改时进行响应。 与项目项扩展不同，项目扩展不能与特定的 SharePoint 项目类型相关联。 当你创建项目扩展时，将在中打开任何类型的 SharePoint 项目时加载该扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
+  本演练演示如何为 SharePoint 项目创建扩展。 您可以使用项目扩展来响应项目级别的事件，例如，在添加、删除或重命名项目时。 还可以添加自定义属性，或在属性值更改时进行响应。 与项目项扩展不同，项目扩展不能与特定的 SharePoint 项目类型相关联。 当你创建项目扩展时，将在中打开任何类型 SharePoint 项目时加载该扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
  在本演练中，您将创建一个自定义布尔属性，该属性将添加到在中创建的任何 SharePoint 项目 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 当设置为 **True** 时，新属性会将 Images 资源文件夹添加到你的项目，或将其映射到你的项目。 如果设置为 **False**，则删除 Images 文件夹（如果存在）。 有关详细信息，请参阅 [如何：添加和删除映射文件夹](../sharepoint/how-to-add-and-remove-mapped-folders.md)。
 
  本演练演示了下列任务：
 
-- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]为 SharePoint 项目创建扩展，以执行以下操作：
+- [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]为执行以下操作的 SharePoint 项目创建扩展：
 
   - 将自定义项目属性添加到属性窗口。 属性适用于任何 SharePoint 项目。
 
@@ -42,12 +43,12 @@ ms.locfileid: "106217783"
 
 - 调试和测试项目属性。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
  若要完成本演练，开发计算机上需要以下组件：
 
-- 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 、SharePoint 和版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
+- 支持的版本 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] ，SharePoint 和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用中的 **Vsix 项目** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅 [在 Visual Studio 中扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用中的 **vsix Project** 模板 [!INCLUDE[TLA2#tla_sdk](../sharepoint/includes/tla2sharptla-sdk-md.md)] 来创建用于部署项目属性扩展的 vsix 包。 有关详细信息，请参阅[Visual Studio 中的扩展 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)。
 
 ## <a name="create-the-projects"></a>创建项目
  若要完成本演练，您必须创建两个项目：
@@ -64,12 +65,12 @@ ms.locfileid: "106217783"
 
 2. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-3. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，然后选择 " **扩展性** " 节点。
+3. 在 "**新建 Project** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，然后选择 "**扩展性**" 节点。
 
     > [!NOTE]
-    > 只有在安装 Visual Studio SDK 时，此节点才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
+    > 仅当安装 Visual Studio SDK 时，此节点才可用。 有关详细信息，请参阅本主题前面的先决条件部分。
 
-4. 在对话框顶部，选择 .NET Framework 的版本列表中 **.NET Framework "4.5** "，然后选择 " **VSIX 项目** " 模板。
+4. 在对话框顶部，选择 ".NET Framework" 版本列表中 **.NET Framework "4.5** "，然后选择 " **VSIX Project** 模板"。
 
 5. 在 " **名称** " 框中，输入 **ProjectExtensionPackage**，然后选择 " **确定"** 按钮。
 
@@ -77,11 +78,11 @@ ms.locfileid: "106217783"
 
 #### <a name="to-create-the-extension-project"></a>创建扩展项目
 
-1. 在 **解决方案资源管理器** 中，打开 "解决方案" 节点的快捷菜单，选择 " **添加**"，然后选择 " **新建项目**"。
+1. 在 **解决方案资源管理器** 中，打开 "解决方案" 节点的快捷菜单，选择 "**添加**"，然后选择 "**新建 Project**"。
 
-2. 在 " **新建项目** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，然后选择 " **窗口**"。
+2. 在 "**新建 Project** " 对话框中，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，然后选择 " **Windows**"。
 
-3. 在对话框顶部，选择 ".NET Framework" 版本列表中 **.NET Framework "4.5** "，然后选择 **"类库" 项目模板** 。
+3. 在对话框顶部，选择 ".NET Framework" 版本列表中 **.NET Framework "4.5** "，然后选择 **"类库" 项目模板**。
 
 4. 在 " **名称** " 框中，输入 **存在或者 projectextension.baseprojectextension**，然后选择 " **确定"** 按钮。
 
@@ -98,16 +99,16 @@ ms.locfileid: "106217783"
 
 2. 打开 **存在或者 projectextension.baseprojectextension** 项目的快捷菜单，然后选择 " **添加引用**"。
 
-3. 在 " **引用管理器-CustomProperty** " 对话框中，选择 " **框架** " 节点，然后选中 "System.componentmodel" 和 "system.web" 程序集旁边的复选框。
+3. 在 "**引用管理器-CustomProperty** " 对话框中，选择 "**框架**" 节点，然后选中 "System.componentmodel" 和 "系统" 旁边的复选框。Windows。Forms 程序集。
 
-4. 选择 " **扩展** " 节点，选中 "VisualStudio" 和 "EnvDTE" 程序集旁边的复选框，然后选择 **"确定"** 按钮。
+4. 选择 "**扩展**" 节点，选中 VisualStudio 旁边的复选框。SharePoint 和 EnvDTE 程序集，然后选择 **"确定"** 按钮。
 
 5. 在 **解决方案资源管理器** 的 **存在或者 projectextension.baseprojectextension** 项目的 "**引用**" 文件夹下，选择 " **EnvDTE**"。
 
 6. 在 " **属性** " 窗口中，将 " **嵌入互操作类型** " 属性更改为 " **False**"。
 
 ## <a name="define-the-new-sharepoint-project-property"></a>定义新的 SharePoint 项目属性
- 创建一个类，用于定义项目扩展和新项目属性的行为。 若要定义新的项目扩展，类实现 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 接口。 每当要定义 SharePoint 项目的扩展时，都要实现此接口。 此外，将添加 <xref:System.ComponentModel.Composition.ExportAttribute> 到类中。 此特性使 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 能够发现和加载您的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 实现。 将 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 类型传递给特性的构造函数。
+ 创建一个类，用于定义项目扩展和新项目属性的行为。 若要定义新的项目扩展，类实现 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 接口。 只要要为 SharePoint 项目定义扩展，就可以实现此接口。 此外，将添加 <xref:System.ComponentModel.Composition.ExportAttribute> 到类中。 此特性使 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 能够发现和加载您的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 实现。 将 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectExtension> 类型传递给特性的构造函数。
 
 #### <a name="to-define-the-new-sharepoint-project-property"></a>定义新的 SharePoint 项目属性
 
@@ -132,11 +133,11 @@ ms.locfileid: "106217783"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在清单设计器中打开文件。 " **元数据** " 选项卡中显示的信息也会出现在 " **扩展和更新**" 中。 所有 VSIX 包都需要 source.extension.vsixmanifest 文件。 有关此文件的详细信息，请参阅 [VSIX 扩展架构1.0 引用](/previous-versions/dd393700(v=vs.110))。
 
-2. 在 " **产品名称** " 框中，输入 " **自定义项目属性**"。
+2. 在 "**产品名称**" 框中，输入 "**自定义 Project" 属性**。
 
 3. 在 " **作者** " 框中，输入 " **Contoso**"。
 
-4. 在 " **说明** " 框中，输入 **一个自定义 SharePoint 项目属性，该属性将图像资源文件夹映射切换到项目**。
+4. 在 "**说明**" 框中，输入 **一个自定义 SharePoint 项目属性，该属性将图像资源文件夹映射切换到项目**。
 
 5. 选择 " **资产** " 选项卡，然后选择 " **新建** " 按钮。
 
@@ -149,7 +150,7 @@ ms.locfileid: "106217783"
 
 7. 在 " **源** " 列表中，选择 " **当前解决方案中的项目** " 选项按钮。
 
-8. 在 " **项目** " 列表中，选择 " **存在或者 projectextension.baseprojectextension**"。
+8. 在 **Project** 列表中，选择 "**存在或者 projectextension.baseprojectextension**"。
 
      此值标识要在项目中生成的程序集的名称。
 
@@ -168,25 +169,25 @@ ms.locfileid: "106217783"
 ## <a name="test-the-project-property"></a>测试项目属性
  你现在已准备好测试自定义项目属性。 最简单的方法是在的实验实例中调试和测试新的项目属性扩展 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 此实例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 是在运行 VSIX 或其他扩展性项目时创建的。 调试项目后，可以在系统上安装该扩展，然后继续在的一个实例中对其进行调试和测试 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-#### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>在 Visual Studio 的实验实例中调试和测试扩展
+#### <a name="to-debug-and-test-the-extension-in-an-experimental-instance-of-visual-studio"></a>在的实验实例中调试和测试扩展 Visual Studio
 
 1. [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]用管理凭据重新启动，然后打开 ProjectExtensionPackage 解决方案。
 
 2. 通过选择 **F5** 键，或在菜单栏上选择 "**调试**" "  >  **启动调试**"，启动项目的调试版本。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将扩展安装到%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom 项目 Property\1.0，并启动的实验实例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]安装%UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0Exp\Extensions\Contoso\Custom Project Property\1.0 的扩展，并启动实验实例 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-3. 在的实验实例中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，为场解决方案创建一个 SharePoint 项目，并对向导中的其他值使用默认值。
+3. 在的实验实例中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，为场解决方案创建 SharePoint 项目，并使用向导中其他值的默认值。
 
     1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-    2. 在 " **新建项目** " 对话框的顶部，选择 .NET Framework 的版本列表中的 **.NET Framework 3.5** 。
+    2. 在 "**新建 Project** " 对话框的顶部，选择 .NET Framework 版本列表中 **.NET Framework 3.5** 。
 
          SharePoint 工具扩展需要此版本中的功能 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 。
 
-    3. 在 " **模板** " 节点下，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，选择 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
+    3. 在 "**模板**" 节点下，展开 " **Visual c #** " 或 " **Visual Basic** " 节点，选择 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 
-    4. 选择 " **SharePoint 2010 项目** " 模板，然后输入 **ModuleTest** 作为项目名称。
+    4. 选择 **SharePoint 2010 Project** 模板，然后输入 **ModuleTest** 作为项目名称。
 
 4. 在 **解决方案资源管理器** 中，选择 " **ModuleTest** " 项目节点。
 
@@ -194,7 +195,7 @@ ms.locfileid: "106217783"
 
 5. 将该属性的值更改为 **True**。
 
-     将一个图像资源文件夹添加到 SharePoint 项目中。
+     将映像资源文件夹添加到 SharePoint 项目。
 
 6. 将该属性的值更改回 **False**。
 
@@ -204,7 +205,7 @@ ms.locfileid: "106217783"
 
 ## <a name="see-also"></a>另请参阅
 - [扩展 SharePoint 项目](../sharepoint/extending-sharepoint-projects.md)
-- [如何：向 SharePoint 项目添加属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
-- [在 SharePoint 项目系统类型和其他 Visual Studio 项目类型之间转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+- [如何：将属性添加到 SharePoint 项目中](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)
+- [SharePoint 项目系统类型和其他 Visual Studio 项目类型之间进行转换](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 - [在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
 - [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)

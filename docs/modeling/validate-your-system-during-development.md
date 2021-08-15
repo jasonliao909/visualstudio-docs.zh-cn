@@ -1,6 +1,6 @@
 ---
 title: 在开发过程中验证系统
-description: 了解 Visual Studio 如何帮助使你的软件与用户的要求和系统的体系结构保持一致。
+description: 了解 Visual Studio 如何帮助使软件与用户要求和系统的体系结构保持一致。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ae85c7f98aab3e852a810976cc1cecbd83b65307
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f33e24c9284a785eeef2ba87d9f63855fc4d9c8259f6adc6ac44d1090a85dc34
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388368"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398068"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 
-Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构保持一致。
+Visual Studio 有助于使你的软件与用户的要求和系统的体系结构保持一致。
 
 若要查看支持各个功能的 Visual Studio 版本，请参阅 [Version support for architecture and modeling tools](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
@@ -37,7 +38,7 @@ Visual Studio 可帮助使你的软件与用户的要求和系统的体系结构
 
 |**类别**|**链接**|
 |-|-|
-|**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [通道9： Doug 7：代码理解和 Visual Studio 2010 的系统设计](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [通道9：构建应用程序](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)) |
+|**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [频道9： Doug 7：代码理解和系统设计与 Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [通道9：构建应用程序](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)) |
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 扩展性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
 ## <a name="see-also"></a>另请参阅

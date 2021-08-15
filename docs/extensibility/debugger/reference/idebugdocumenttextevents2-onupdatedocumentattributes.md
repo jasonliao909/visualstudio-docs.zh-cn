@@ -11,17 +11,18 @@ ms.assetid: 31b7d151-9ce2-438e-b405-f8cc46b9f537
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b217ca0f6fe21b2170ea0ae5a4b9c22e5a21a84f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95d4d8890b1bbdad30ba1cfd60ad34e883895bd42649900d2f9f23a239acd5d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084904"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433965"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
 通知接收方事件已更新文档属性。

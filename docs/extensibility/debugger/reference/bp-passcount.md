@@ -11,17 +11,18 @@ ms.assetid: 791ac175-b897-4c70-873e-240da7e0ac89
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: afb94436897224bc9c6896a601447e9d9a1c8b6f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca17b821cc5cedb38ec3405404921a5d759018b80ce313f06a0dc6b20768279a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096728"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417621"
 ---
 # <a name="bp_passcount"></a>BP_PASSCOUNT
 描述触发条件断点的计数和条件。
@@ -44,22 +45,22 @@ public struct BP_PASSCOUNT {
 
 ## <a name="members"></a>成员
 `dwPassCount`\
-在引发断点之前传递该断点的次数。
+触发断点之前要传递断点的时间。
 
 `stylePassCount`\
-[BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md)枚举中的一个值，该值指定断点传递计数的样式。
+指定断 [点BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) 的样式的枚举中的值。
 
 ## <a name="remarks"></a>备注
-此结构是 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 结构的成员。
+此结构是 BP_REQUEST_INFO[的成员。](../../../extensibility/debugger/reference/bp-request-info.md)
 
 此结构也作为参数传递给[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) 和[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) 方法。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

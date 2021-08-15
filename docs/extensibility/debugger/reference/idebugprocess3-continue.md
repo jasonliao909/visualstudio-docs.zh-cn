@@ -11,17 +11,18 @@ ms.assetid: 57506242-5763-4c08-adb9-8a78ce02cebb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11f2d5b652b950976834b8ba18f71a1dc0d1b34c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8e0dc621ce834582ee5a19a9124d856f94adaf2f706987176ff707c0c11fbd83
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416230"
 ---
 # <a name="idebugprocess3continue"></a>IDebugProcess3::Continue
 继续从停止状态运行此进程。 任何以前的执行状态 (例如步骤) 会保留，该进程将再次开始执行。

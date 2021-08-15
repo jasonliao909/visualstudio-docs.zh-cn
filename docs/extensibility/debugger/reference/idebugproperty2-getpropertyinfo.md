@@ -1,6 +1,6 @@
 ---
-description: 获取描述属性的 DEBUG_PROPERTY_INFO 结构。
-title: IDebugProperty2：： GetPropertyInfo |Microsoft Docs
+description: 获取DEBUG_PROPERTY_INFO属性的属性结构。
+title: IDebugProperty2：：GetPropertyInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 39d6e942-df72-4c84-a5d9-a386d112714c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0a897071453886f16fd5e40e2f27b7bd100616b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 26ffe65e84f8c878644e3fd4cec7fa3ad16ba544c221c8a02779870253d923df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064736"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338704"
 ---
 # <a name="idebugproperty2getpropertyinfo"></a>IDebugProperty2::GetPropertyInfo
-获取描述属性的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 结构。
+获取 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 属性的属性结构。
 
 ## <a name="syntax"></a>语法
 
@@ -52,25 +53,25 @@ int GetPropertyInfo (
 
 ## <a name="parameters"></a>参数
 `dwFields`\
-中 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 枚举中的值的组合，用于指定要在结构中填充的字段 `pPropertyInfo` 。
+[in]集合中的值 [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md) 枚举，用于指定在 结构中填充哪些 `pPropertyInfo` 字段。
 
 `nRadix`\
-中用于设置任何数字信息格式的基数。
+[in]用于设置任何数值信息格式的基数。
 
 `dwTimeout`\
-中指定从此方法返回之前要等待的最长时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
+[in]指定在从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
 
 `rgpArgs`\
-[in，out]保留以供将来使用;设置为 null 值。
+[in， out]保留供将来使用;设置为 null 值。
 
 `dwArgCount`\
-中保留以供将来使用;设置为零。
+[in]保留供将来使用;设置为零。
 
 `pPropertyInfo`\
-弄使用属性的说明填充的 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 结构。
+[out]一 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 属性说明填充的一个结构。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -11,14 +11,15 @@ ms.assetid: f21a3500-ade8-4dd8-8647-10e2179be9c1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fa08ec93383fa661d1e2dd055b3139b2ba90f34
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 346b0cf2c2ff7c3b254affa4666169139fa37f8653f4154527e0241197527321
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904859"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431560"
 ---
 # <a name="sccaddfilesfromscc-function"></a>SccAddFilesFromSCC 函数
 此函数将源代码管理中的文件列表添加到当前打开的项目中。
@@ -79,9 +80,9 @@ SCCRTN SccAddFilesFromSCC(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
-|SCC_E_PROJNOTOPEN|项目未打开。|
+|SCC_E_PROJNOTOPEN|Project 未打开。|
 |SCC_E_OPNOTPERFORMED|连接不同于指定的项目 `lpAuxProjPath.`|
 |SCC_E_NOTAUTHORIZED|用户无权更新数据库。|
 |SCC_E_NONSPECIFICERROR|未知错误。|

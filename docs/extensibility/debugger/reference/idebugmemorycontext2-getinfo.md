@@ -12,17 +12,18 @@ ms.assetid: 08c7f091-1816-4d64-8834-f9ecaac5c58d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe87f5dbf14d714f4915e99c23a56b8c9490dd23
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b2e8c0e1f8171a83fcbbe3358476edcb10b6f1f0b2f2c1657a794e92c0283706
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058620"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433822"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 检索描述上下文的 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 结构。

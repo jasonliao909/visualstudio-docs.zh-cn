@@ -11,14 +11,15 @@ ms.assetid: 376e2f56-e7bf-4e62-89f5-3dada84a404b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5aecf97683ff22b8c384acf1c8ffb83e671fa57
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 046484eaba6ff131d5f39522b7dc04460380c0f0aed0496acc537c9c60d522e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073724"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121413838"
 ---
 # <a name="updating-the-user-interface"></a>更新用户接口
 实现命令后，可以添加代码以使用新命令的状态更新用户界面。
@@ -48,7 +49,7 @@ ms.locfileid: "105073724"
 
          如果的参数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> () 为非零 `TRUE` ，则更新将同步和立即执行。 建议为此参数传递零 (`FALSE`) ，以帮助保持良好的性能。 如果要避免缓存，请 `DontCache` 在 .vsct 文件中创建该命令时应用标志。 尽管如此，请谨慎使用标志，否则性能可能会降低。 有关命令标志的详细信息，请参阅 [命令标志元素](../extensibility/command-flag-element.md) 文档。
 
-    - 在 Vspackage 中，通过在窗口中使用就地激活模型承载 ActiveX 控件，使用方法可能更方便 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>接口中的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 接口中的方法在 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 功能上是等效的。 这两种方法都会导致环境重新查询所有命令的状态。 通常不会立即执行更新。 相反，更新将推迟到空闲时间。 Shell 将缓存命令状态以帮助保持良好的性能。 如果要避免缓存，请 `DontCache` 在 .vsct 文件中创建该命令时应用标志。 尽管如此，请谨慎使用标志，因为性能可能会降低。
+    - 在 vspackage 中，通过在窗口中使用就地激活模型承载 ActiveX 控件，使用方法可能更方便 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>接口中的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 接口中的方法在 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 功能上是等效的。 这两种方法都会导致环境重新查询所有命令的状态。 通常不会立即执行更新。 相反，更新将推迟到空闲时间。 Shell 将缓存命令状态以帮助保持良好的性能。 如果要避免缓存，请 `DontCache` 在 .vsct 文件中创建该命令时应用标志。 尽管如此，请谨慎使用标志，因为性能可能会降低。
 
          请注意，可以 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 通过 `QueryInterface` 对对象调用方法 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 或从服务中获取接口来获取接口 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 。
 

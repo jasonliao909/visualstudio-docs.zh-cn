@@ -1,6 +1,6 @@
 ---
-title: 扩展状态栏 |Microsoft Docs
-description: 了解如何扩展 IDE 底部的 Visual Studio 状态栏，其中显示了信息。
+title: 扩展状态栏|Microsoft Docs
+description: 了解如何扩展 IDE 底部的Visual Studio状态栏，该状态栏显示信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,32 +11,33 @@ ms.assetid: f955115c-4c5f-45ec-b41b-365868c5ec0c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ab87f9c8b54d9c31466068668eb8dd5a1857a06
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aa0acbd99328b55f0a15335572a0a185e1394ee85cc992cf71a59c2f52e1d9de
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070097"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414891"
 ---
 # <a name="extend-the-status-bar"></a>扩展状态栏
-您可以使用 IDE 底部的 Visual Studio 状态栏显示信息。
+可以使用 IDE Visual Studio的状态栏来显示信息。
 
- 扩展状态栏时，可以在四个区域中显示信息和 UI：反馈区域、进度栏、动画区域和设计器区域。 反馈区域允许您显示文本并突出显示文本。 进度栏显示短时间运行的操作（例如保存文件）的增量进度。 动画区域为长时间运行的操作或不确定长度的操作（如在解决方案中生成多个项目）显示连续循环的动画。 设计器区域显示光标位置的行号和列号。
+ 扩展状态栏时，可以在四个区域显示信息和 UI：反馈区域、进度栏、动画区域以及设计器区域。 使用反馈区域可以显示文本并突出显示显示的文本。 进度栏显示短时间运行操作（如保存文件）的增量进度。 动画区域为长时间运行的操作或不确定长度的操作（例如，在解决方案中生成多个项目）显示连续循环动画。 设计器区域显示光标位置的行号和列号。
 
- 您可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 服务) 中的接口 (来获取状态栏 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 。 此外，位于窗口框架上的任何对象都可以通过实现接口来注册为状态栏客户端对象 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 。 每当激活窗口时，Visual Studio 就会在该窗口中查询该接口的对象 `IVsStatusbarUser` 。 如果找到，它将 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 在返回的接口上调用方法，并且对象可从该方法中更新状态栏。 例如，文档窗口可以使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 方法在设计器区域处于活动状态时更新其信息。
+ 可以使用来自服务请求的接口 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 获取状态) 。 此外，位于窗口框架上的任何对象都可以通过实现 接口注册为状态栏客户端 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 对象。 每当激活窗口时，Visual Studio查询该窗口上所站点的对象的 `IVsStatusbarUser` 接口。 如果找到，它会在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 返回的接口上调用 方法，对象可以从该方法中更新状态栏。 例如，文档窗口可以使用 方法在设计器 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 区域处于活动状态时更新它们的信息。
 
- 以下过程假定你了解如何创建 VSIX 项目并添加自定义菜单命令。 有关信息，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+ 以下过程假定你了解如何创建 VSIX 项目并添加自定义菜单命令。 有关信息，请参阅 [使用菜单命令 创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
 ## <a name="modify-the-status-bar"></a>修改状态栏
- 此过程演示如何设置和获取文本、显示静态文本，以及在状态栏的反馈区域中突出显示所显示的文本。
+ 此过程演示如何设置和获取文本、显示静态文本，以及突出显示状态栏的反馈区域中显示的文本。
 
 ### <a name="read-and-write-to-the-status-bar"></a>读取和写入状态栏
 
 1. 创建名为 **TestStatusBarExtension** 的 VSIX 项目，并添加名为 **TestStatusBarCommand** 的菜单命令。
 
-2. 在 *TestStatusBarCommand* 中，将 () 的命令处理程序方法代码替换 `MenuItemCallback` 为以下代码：
+2. 在 *TestStatusBarCommand.cs* 中，将命令处理程序 () `MenuItemCallback` 替换为以下内容：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -72,15 +73,15 @@ ms.locfileid: "105070097"
 
 3. 编译代码并开始调试。
 
-4. 在 Visual Studio 的实验实例中打开 " **工具** " 菜单。 单击 " **调用 TestStatusBarCommand** " 按钮。
+4. 打开 **Visual Studio** 实验实例中的"工具"菜单。 单击" **调用 TestStatusBarCommand"** 按钮。
 
-     应该会看到，状态栏中的文本现在 **只是写入状态栏。** 并且显示的消息框具有相同的文本。
+     应会看到状态栏中的文本现在显示为 **"我们刚刚写入状态栏"。** 和显示的消息框具有相同的文本。
 
 ### <a name="update-the-progress-bar"></a>更新进度栏
 
-1. 在此过程中，我们将演示如何初始化和更新进度栏。
+1. 此过程将展示如何初始化和更新进度栏。
 
-2. 打开 *TestStatusBarCommand* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
+2. 打开 *TestStatusBarCommand.cs* 文件，将 `MenuItemCallback` 方法替换为以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -106,19 +107,19 @@ ms.locfileid: "105070097"
 
 3. 编译代码并开始调试。
 
-4. 在 Visual Studio 的实验实例中打开 " **工具** " 菜单。 单击 " **调用 TestStatusBarCommand** " 按钮。
+4. 打开 **Visual Studio** 实验实例中的"工具"菜单。 单击 **"调用 TestStatusBarCommand"** 按钮。
 
-     应会看到，状态栏中的文本现在正在 **写入到进度栏。** 还应看到进度栏每秒更新一次的时间为20秒。 之后，会清除状态栏和进度栏。
+     应会看到状态栏中的文本现在显示为" **写入进度栏"。** 还应看到进度栏每隔 20 秒更新一次。 之后，状态栏和进度栏将被清除。
 
 ### <a name="display-an-animation"></a>显示动画
 
-1. 状态栏显示循环动画，该动画指示长时间运行的操作 (例如，在解决方案) 中生成多个项目。 如果看不到此动画，请确保具有正确的 **工具**  >  **选项** 设置：
+1. 状态栏显示一个循环动画，该动画指示长时间运行的操作 (例如，在解决方案中生成多个) 。 如果未看到此动画，请确保具有正确的 **"工具选项**  >  **"** 设置：
 
-     中转到 "**工具**" "选项" "  >    >  **常规**" 选项卡，取消选中 "**基于客户端性能自动调整视觉体验"**。 然后选中 " **启用丰富的客户端视觉体验**" 子选项。 在 Visual Studio 的实验实例中生成项目时，现在应能够看到动画。
+     转到"**工具选项**  >    >  **""常规**"选项卡，取消选中 **"根据客户端性能自动调整视觉体验"。** 然后选中子选项"启用 **丰富的客户端视觉体验"。** 现在，当你在项目的实验实例中生成项目时，你应该能够看到Visual Studio。
 
-     在此过程中，我们将显示表示生成项目或解决方案的标准 Visual Studio 动画。
+     在此过程中，我们将显示Visual Studio生成项目或解决方案的标准动画。
 
-2. 打开 *TestStatusBarCommand* 文件，并 `MenuItemCallback` 将方法替换为以下代码：
+2. 打开 *TestStatusBarCommand.cs* 文件，将 `MenuItemCallback` 方法替换为以下代码：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -141,6 +142,6 @@ ms.locfileid: "105070097"
 
 3. 编译代码并开始调试。
 
-4. 在 Visual Studio 的实验实例中打开 " **工具** " 菜单，然后单击 " **调用 TestStatusBarCommand**"。
+4. 打开 **Visual Studio** 实验实例中的"工具"菜单，然后单击"**调用 TestStatusBarCommand"。**
 
-     看到消息框时，还应在最右侧的状态栏中看到动画。 关闭该消息框后，动画将会消失。
+     看到消息框时，还应在最右侧状态栏中看到动画。 关闭消息框时，动画将消失。

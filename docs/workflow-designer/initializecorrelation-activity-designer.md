@@ -10,14 +10,15 @@ ms.assetid: 4c54f34c-ee84-42a6-abb0-ec260c1ccb76
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 9591ef604fcf9374e9aa498e74c5a7761459589f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aff2353f0ea681935ff576545f6eb14b957f2c1d58136e240917bd4f86653f75
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959787"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440495"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活动设计器
 
@@ -43,9 +44,9 @@ ms.locfileid: "99959787"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的友好名称。 默认值为 InitializeCorrelation。<br /><br /> 尽管不是严格需要为友好使用非默认值 <xref:System.Activities.Activity.DisplayName%2A> ，但建议使用。|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|False|用于关联相关中的工作流活动的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|False|将消息与工作流实例相关联的相关数据的字典。<br /><br /> 使用 " **初始化相关** " 对话框可以配置 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 。 有关使用此对话框的详细信息，请参阅 " [类型集合编辑器" 对话框](../workflow-designer/type-collection-editor-dialog-box.md) 。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的友好名称。 默认值为 InitializeCorrelation。<br /><br /> 尽管不是严格需要为友好使用非默认值 <xref:System.Activities.Activity.DisplayName%2A> ，但建议使用。|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.Correlation%2A>|错误|用于关联相关中的工作流活动的 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
+|<xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A>|错误|将消息与工作流实例相关联的相关数据的字典。<br /><br /> 使用 " **初始化相关** " 对话框可以配置 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 。 有关使用此对话框的详细信息，请参阅 " [类型集合编辑器" 对话框](../workflow-designer/type-collection-editor-dialog-box.md) 。|
 
 ## <a name="see-also"></a>另请参阅
 

@@ -10,14 +10,15 @@ ms.assetid: c1f40bab-c6ec-45b0-8333-ea5ceb02a39d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 094a37960fa5b32d018eebe3becee4fde43cc392
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: dd2b529aa4bb2af9cd5d48bbe4d0e5c75e81bee6e2a540b3a5f98b5a3898826c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905119"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334999"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>演练：通过编辑器扩展访问 DTE 对象
 

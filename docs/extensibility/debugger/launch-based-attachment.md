@@ -11,14 +11,15 @@ ms.assetid: 362f00ac-1909-4a3a-bacb-c0ceb5549816
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 97bbc098e766a1025c372ff35c5849bfe652649f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: d674dd26a8908b26a53bf212692faebdd3e9589af49c9641513c1fb526a9981b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904329"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324010"
 ---
 # <a name="launch-based-attachment"></a>基于启动的附件
 程序的基于启动的附件是自动的。 当托管程序的进程由 SDM 启动时，基于启动的附件将遵循类似于手动附件方法的路径。 有关信息，请参阅 [附加到程序](../../extensibility/debugger/attaching-to-the-program.md)。
@@ -28,7 +29,7 @@ ms.locfileid: "112904329"
 
 1. 将 **IDebugEngineCreateEvent2** 事件对象发送到 SDM。 有关详细信息，请参阅 [发送事件](../../extensibility/debugger/sending-events.md)。
 
-2. 在 `IDebugProgram2::GetProgramId` 传递给 Attach 方法的 **IDebugProgram2** 接口上调用 方法。
+2. 在传递给 Attach 方法的 `IDebugProgram2::GetProgramId` **IDebugProgram2** 接口上调用 方法。
 
 3. 发送 **IDebugProgramCreateEvent2** 事件对象以通知 SDM 已创建本地 **IDebugProgram2** 对象，以将程序表示给 DE。
 

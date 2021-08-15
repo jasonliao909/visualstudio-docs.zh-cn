@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c7a349cb79ca22869038e46d7ee27b2425119997
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 1859c5d7fa5a365161362a2bbd4ae5d8ca46b95c69f3f66db3241aa6fab380ab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112113016"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409761"
 ---
 # <a name="create-sharepoint-solutions"></a>创建 SharePoint 解决方案
 

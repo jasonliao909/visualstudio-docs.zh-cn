@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 653e48a2e9b6a68db94fd66660da85f4dec20927
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 54344e98aaa8982143fd595ac7e6fb4245905c4ee9645953af889fafe15dde80
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876642"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121269179"
 ---
 # <a name="files-element"></a>Files 元素
   指定要与 SharePoint 项目项一起部署的文件，例如功能元素文件和依赖非 SharePoint 项目的输出。
@@ -46,8 +47,8 @@ ms.locfileid: "99876642"
 
 |元素|说明|
 |-------------|-----------------|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|可选的 **ProjectItemFileType** 元素。<br /><br /> 表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件（如功能元素文件）。|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|可选的 **ProjectOutputFileType** 元素。<br /><br /> 表示在将项目项部署到 SharePoint 时要包含的项目的输出。|
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|可选的 **ProjectItemFileType** 元素。<br /><br /> 表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件，例如功能元素文件。|
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|可选的 **ProjectOutputFileType** 元素。<br /><br /> 表示在项目项部署到 SharePoint 时要包含的项目的输出。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -60,7 +61,7 @@ ms.locfileid: "99876642"
 |属性|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**架构名称**|SharePoint 项目项架构|
+|**架构名称**|SharePoint Project 项架构|
 |**验证文件**|ProjectItemModelSchema|
 |**可以为空**|否|
 

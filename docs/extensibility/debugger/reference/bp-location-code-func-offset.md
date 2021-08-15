@@ -1,5 +1,5 @@
 ---
-description: 描述代码中某个函数的断点偏移位置。
+description: 描述代码中函数中断点的偏移位置。
 title: BP_LOCATION_CODE_FUNC_OFFSET |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,19 +11,20 @@ ms.assetid: ab38f7ca-fa01-4cf3-a06c-56cbb7207617
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 8e193171a82f21c92871cd226db09c3dc2713585
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d30e83f11ea9227eb598efc27ae4852fcbf521e562873acff9f52eecd53b7eca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096780"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403258"
 ---
 # <a name="bp_location_code_func_offset"></a>BP_LOCATION_CODE_FUNC_OFFSET
-描述代码中某个函数的断点偏移位置。
+描述代码中函数中断点的偏移位置。
 
 ## <a name="syntax"></a>语法
 
@@ -36,22 +37,22 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 ## <a name="members"></a>成员
 `bstrContext`\
-断点的上下文，通常是在调用堆栈上显示的方法或函数名称。
+断点的上下文，通常是调用堆栈上显示的方法或函数名称。
 
 `pFuncPos`\
-描述函数名称和函数开头的相对位置的 [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md) 对象。
+[IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)对象，描述函数的名称以及函数开头的相对位置。
 
 ## <a name="remarks"></a>备注
-此结构是作为联合的一部分的 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 结构的成员。
+此结构是联合 [BP_LOCATION结构的成员](../../../extensibility/debugger/reference/bp-location.md) 。
 
-`pFuncPos`成员指示函数断点的设置位置。
+`pFuncPos`成员指示在何处设置函数断点。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

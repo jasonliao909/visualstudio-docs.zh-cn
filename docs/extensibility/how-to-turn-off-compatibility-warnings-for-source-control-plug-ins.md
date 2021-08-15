@@ -11,14 +11,15 @@ ms.assetid: ba318e12-921b-4b7a-a8c2-12c712be1dbf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ced04b09f8d4442cf0769ef503ee52772eccc0f6
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 94ed8d8357ae9b95d538a5bef39c96e2e1662b9711b6da423183ee52f2113774
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905743"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448268"
 ---
 # <a name="how-to-turn-off-compatibility-warnings-for-source-control-plug-ins"></a>如何：关闭源代码管理插件的兼容性警告
 

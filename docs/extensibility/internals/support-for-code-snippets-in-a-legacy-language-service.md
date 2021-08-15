@@ -12,14 +12,15 @@ ms.assetid: 7490325b-acee-4c2d-ac56-1cd5db1a1083
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9578159554f77a9ad7553a56c054a863b3b63fd5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2684e0f369320889f74656cd8b10003ee5187bf6c24d1daf5aa4932cbb993377
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080757"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432041"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码段是插入到源文件中的代码片段。 代码段本身是一个基于 XML 的模板，其中包含一组字段。 在插入代码段后，这些字段将突出显示，并且可能会有不同的值，具体取决于代码段插入到的上下文。 在插入代码段后，语言服务可以立即设置代码段的格式。
@@ -50,7 +51,7 @@ ms.locfileid: "105080757"
 ### <a name="installing-the-snippet-files"></a>安装代码段文件
  语言的所有代码段都作为模板存储在 XML 文件中，通常每个文件都有一个代码段模板。 有关用于代码段模板的 XML 架构的详细信息，请参阅 [代码片段架构参考](../../ide/code-snippets-schema-reference.md)。 每个代码段模板都用语言 ID 标识。 在注册表中指定该语言 ID，并将其放入 `Language` \<Code> 模板中标记的属性。
 
- 通常，存储代码段模板文件的位置有两个： 1) 语言的安装位置，2) 用户的文件夹中。 这些位置会添加到注册表中，以便 Visual Studio **代码片段管理器** 可以找到代码片段。 用户的文件夹存储用户创建的代码段。
+ 通常，存储代码段模板文件的位置有两个： 1) 语言的安装位置，2) 用户的文件夹中。 将这些位置添加到注册表，以便 Visual Studio **代码片段管理器** 可以找到代码片段。 用户的文件夹存储用户创建的代码段。
 
  已安装代码段模板文件的典型文件夹布局如下所示： *[InstallRoot]* \\ *[TestLanguage]* \Snippets \\ *[LCID]* \snippets。
 
@@ -81,17 +82,17 @@ ms.locfileid: "105080757"
 
  此示例假设已在 Visual Studio 安装文件夹中安装了语言服务。 % LCID% 将替换为用户的当前区域设置 ID。 \<SnippetDir>可以添加多个标记，分别用于每个不同的目录和区域设置。 此外，代码段文件夹可以包含子文件夹，其中每个子文件夹都在带有嵌入标记的标记的索引文件中标识 \<SnippetSubDir> \<SnippetDir> 。
 
- 用户还可以为你的语言创建自己的代码段。 这些通常存储在用户的设置文件夹中，例如 *[TestDocs]* \Code 片段 \\ *[TestLanguage]* \Test 代码段，其中 *[TestDocs]* 是用户的 Visual Studio 设置文件夹的位置。
+ 用户还可以为你的语言创建自己的代码段。 这些通常存储在用户的设置文件夹中，例如 *[TestDocs]* \Code 片段 \\ *[TestLanguage]* \Test 代码段，其中 *[TestDocs]* 是 Visual Studio 的用户设置文件夹的位置。
 
  以下替换元素可放置在存储在 \<DirPath> 索引文件的标记中的路径中。
 
 |元素|说明|
 |-------------|-----------------|
 |LCID|区域设置 ID。|
-|InstallRoot|Visual Studio 的根安装文件夹，例如，C:\Program Files\Microsoft Visual Studio 8。|
+|InstallRoot|Visual Studio 的根安装文件夹，例如，C:\Program 文件 \ Microsoft Visual Studio 8。|
 |%ProjDir%|包含当前项目的文件夹。|
 |%ProjItem%|包含当前项目项的文件夹。|
-|%TestDocs%|文件夹，例如，C:\documents and 和 Settings \\ *[username]* \My Documents\Visual Studio\8。|
+|%TestDocs%|文件夹中的文件夹，例如，c:\documents and 和设置 \\ *[username]* \My Documents \ Visual Studio \ 8。|
 
 ### <a name="enabling-code-snippets-for-your-language-service"></a>启用语言服务的代码片段
  可以通过将属性添加到 VSPackage 来启用语言服务的代码片段 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> (参阅 [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md) 获取详细信息) 。 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A>和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 参数是可选的，但你应该包含 `SearchPaths` 命名参数，以便向 **代码段管理器通知代码** 段的位置。
@@ -205,7 +206,7 @@ ms.locfileid: "105080757"
 
     ```
 
-     <xref:Microsoft.VisualStudio.Package.ExpansionProvider>在插入代码段的过程中，Visual Studio 按给定顺序调用类中的以下方法：
+     在 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 插入代码段的过程中，按给定顺序 Visual Studio 调用类中的以下方法：
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 
@@ -327,7 +328,7 @@ namespace TestLanguagePackage
 }
 ```
 
- 当语言服务获取快捷方式名称时，它会调用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 方法来获取文件名和代码片段标题。 然后，语言服务将调用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 类中的方法 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 来插入代码段。 在插入代码段的过程中，Visual Studio 将按给定顺序在类中调用以下方法 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> ：
+ 当语言服务获取快捷方式名称时，它会调用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.FindExpansionByShortcut%2A> 方法来获取文件名和代码片段标题。 然后，语言服务调用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 类中的 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 方法来插入代码片段。 在插入代码片段的过程中，Visual Studio类中的给定顺序调用 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 以下方法：
 
 1. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.IsValidKind%2A>
 
@@ -337,15 +338,15 @@ namespace TestLanguagePackage
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnAfterInsertion%2A>
 
-   有关获取语言服务的已安装代码段列表的详细信息，请参阅 [演练：获取已安装代码段的列表 (旧实现) ](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)。
+   有关获取语言服务的已安装代码片段列表详细信息，请参阅演练：获取旧版实现中的已安装代码[ (列表) 。 ](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
 ## <a name="implementing-the-expansionfunction-class"></a>实现 ExpansionFunction 类
- 扩展函数是嵌入到代码段模板中并返回一个或多个要放置在字段中的值的命名函数。 为了支持语言服务中的扩展函数，你必须从类派生一个类 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 并实现 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 方法。 然后必须重写 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> 类中的方法 <xref:Microsoft.VisualStudio.Package.LanguageService> ，以便 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 为你支持的每个扩展函数返回类版本的新实例化。 如果支持某个扩展函数的可能值列表，则还必须重写 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> 类中的方法， <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 以返回这些值的列表。
+ 扩展函数是嵌入在代码片段模板中的命名函数，并返回要放置在字段中的一个或多个值。 为了支持语言服务中的扩展函数，必须从 类派生类 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 并实现 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetCurrentValue%2A> 方法。 然后，必须重写 类中的 方法，为支持的每个扩展函数返回类 <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionFunction%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 版本的新实例化。 如果支持扩展函数中可能值的列表，则还必须重写 类中的 方法以 <xref:Microsoft.VisualStudio.Package.ExpansionFunction.GetIntellisenseList%2A> <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 返回这些值的列表。
 
- 使用参数或需要访问其他字段的扩展函数不应与可编辑字段关联，因为在调用扩展函数时，扩展提供程序可能不会完全初始化。 因此，扩展函数无法获取其参数或任何其他字段的值。
+ 采用参数或需要访问其他字段的扩展函数不应与可编辑字段关联，因为扩展提供程序可能无法在调用扩展函数时完全初始化。 因此，扩展函数无法获取其参数或其他任何字段的值。
 
 ### <a name="example"></a>示例
- 下面是一个示例，说明如何实现称为简单扩展函数的示例 `GetName` 。 每次实例化扩展函数时，此扩展函数都会在基类名称后面追加一个数字 (这对应于每次插入关联的代码片段) 。
+ 以下示例演示了如何实现调用的简单 `GetName` 扩展函数。 每次实例化扩展函数时，此扩展函数都向基类名称追加一个数字 (该数字对应于每次在基类中插入关联的代码) 。
 
 ```csharp
 using Microsoft.VisualStudio.Package;

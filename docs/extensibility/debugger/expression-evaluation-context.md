@@ -10,14 +10,15 @@ ms.assetid: a2fd3758-09bd-45ae-8ecc-2d276c0036ba
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73eeafb95c7e4d52f69109c5eb7c06eb48bd8d88
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 15d22c022f3228643f42e743895d6e9346c200648ba421354a10953430354f4d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901209"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342812"
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中，表达式 **计算上下文：**

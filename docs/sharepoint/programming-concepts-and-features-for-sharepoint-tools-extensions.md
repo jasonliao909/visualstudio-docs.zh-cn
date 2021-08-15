@@ -1,7 +1,7 @@
 ---
 title: SharePoint 工具扩展 & 功能的编程概念
 titleSuffix: ''
-description: 查看与 Visual Studio 中的 SharePoint 工具相关的重要编程概念和功能，这可能在 SharePoint 工具扩展中发挥着重要作用。
+description: 查看与 Visual Studio 中的 SharePoint 工具相关的重要编程概念和功能，这可能会在 SharePoint 工具扩展中发挥重要作用。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,26 +13,27 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f8a85c87b14057372254f755e4c414aa089e5a55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fefdd5397fa2204fb82d92a7c312a86a7cf6f004a1a3aa138415117e4fe255d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955237"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409535"
 ---
 # <a name="programming-concepts-and-features-for-sharepoint-tools-extensions"></a>SharePoint 工具扩展的编程概念和功能
-  与 Visual Studio 中的 SharePoint 工具相关的一些重要的编程概念和功能。 这些概念和功能在大多数 SharePoint 工具扩展中扮演着重要的角色。
+  Visual Studio 中的 SharePoint 工具有几个重要的编程概念和功能。 这些概念和功能在大多数 SharePoint 工具扩展中扮演着重要的角色。
 
 ## <a name="in-this-section"></a>本节内容
  [调入 SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)
 
- 从 SharePoint 工具扩展中使用 SharePoint 客户端和 SharePoint 服务器对象模型进行比较，并提供有关如何创建 *sharepoint 命令* 以调入 sharepoint 服务器对象模型的信息。
+ 与 SharePoint 工具扩展中的 SharePoint 客户端和 SharePoint 服务器对象模型进行比较，并提供有关如何创建 *SharePoint 命令* 以调入 SharePoint 服务器对象模型的信息。
 
  [使用 SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)
 
- 介绍 SharePoint 项目服务为 SharePoint 工具扩展提供的功能，并提供有关在不同类型的扩展中检索服务的说明。
+ 介绍 SharePoint 项目服务提供给 SharePoint 工具扩展的功能，并提供有关在不同类型的扩展中检索服务的说明。
 
  [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
 

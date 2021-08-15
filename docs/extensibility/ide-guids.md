@@ -11,18 +11,19 @@ ms.assetid: d31a0f97-b7be-4fb5-a942-8ba4527bc068
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 884f2e7bb25eacfd3118632082d321ceb2b45da8
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0b7101f9e23bba9b44287a4cb8e01e8c61551b01e5c3fc3a9d82811214b87b0e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904924"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275731"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-类发布集成开发环境的某些部分的 GUID (IDE) 如下 <xref:Microsoft.VisualStudio.VSConstants> 表所列。
+类发布集成开发环境的某些部分的 GUID (<xref:Microsoft.VisualStudio.VSConstants> IDE) 如下表所列。
 
 ## <a name="core-systems"></a>核心系统
 

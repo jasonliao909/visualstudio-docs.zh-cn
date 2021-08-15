@@ -11,14 +11,15 @@ ms.assetid: fdea8262-40b8-473e-88ba-639e4c4648e6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 82de88b69a3609db50d601fb4a566c510712afd8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f4616db107c42e38006d8e790b24adaf8f0e4acabef35088bcb5c28b09654509
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095246"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121261445"
 ---
 # <a name="ienumdebugpropertyinfo2"></a>IEnumDebugPropertyInfo2
 此接口枚举 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md) 结构。

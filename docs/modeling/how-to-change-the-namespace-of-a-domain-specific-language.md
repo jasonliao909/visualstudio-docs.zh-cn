@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: db9043c2a4c5abd19c839d2586709412d7607019
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f3b1a536347c2d350b1ffa3febf9eda677f98d0ab8052b7b149cc4cce66cacd7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387302"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356070"
 ---
 # <a name="how-to-change-the-namespace-of-a-domain-specific-language"></a>如何：更改域特定语言的命名空间
 
@@ -31,7 +32,7 @@ ms.locfileid: "112387302"
 
 3. 保存解决方案并转换模板。
 
-4. 在"项目 **"菜单** 上，选择 **"Dsl 属性"。**
+4. 在 **"Project"** 菜单上，选择 **"Dsl 属性"。**
 
    将显示项目的属性。
 
@@ -51,7 +52,7 @@ ms.locfileid: "112387302"
 
     1. 删除 **\Users \\**_{your name}_**\AppData\Local\Microsoft\VisualStudio \\ \* Exp**。
 
-    2. 在 Windows"开始 **"** 菜单上 **，选择"**  >  **所有程序"Microsoft Visual Studio 2010 SDK**  >  **工具**  >  **重置实验实例。**
+    2. 在 **"Windows"** 菜单上，**选择"**  >  **所有程序"Microsoft Visual Studio"2010 SDK**  >  **工具**  >  **重置实验实例"。**
 
 11. 在"生成 **"菜单** 上，选择"**重新生成解决方案"。**
 

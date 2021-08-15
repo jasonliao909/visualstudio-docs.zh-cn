@@ -1,6 +1,6 @@
 ---
-description: 根据给定的名称检索指标的值字符串。
-title: IDebugSettingsCallback2：： GetMetricString |Microsoft Docs
+description: 根据指标的名称检索指标的值字符串。
+title: IDebugSettingsCallback2：：GetMetricString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: ecc875a2-8ac6-444c-a839-5191a780fd6b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f166c9b3cfce60f8800ddd2bf88d5c35b8e606db
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 97e22fe5521db7bf8c0331339c253041ce2e309d37ca7503368e38df725c3ae2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071267"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306876"
 ---
 # <a name="idebugsettingscallback2getmetricstring"></a>IDebugSettingsCallback2::GetMetricString
-根据给定的名称检索指标的值字符串。
+根据指标的名称检索指标的值字符串。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +48,19 @@ private int GetMetricString(
 
 ## <a name="parameters"></a>参数
 `pszType`\
-中度量值的类型。
+[in]指标的类型。
 
 `guidSection`\
-中部分的唯一标识符。
+[in]节的唯一标识符。
 
 `pszMetric`\
-中度量值的名称。
+[in]指标的名称。
 
 `pbstrValue`\
-弄返回度量值的值字符串。
+[out]返回指标的值字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

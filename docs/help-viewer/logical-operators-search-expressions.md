@@ -11,14 +11,15 @@ ms.assetid: 0c38ae7d-3e20-4d47-a020-9677cd285916
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 37e2652d04df154a45ae5f87fd62c8f8dc2e0b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5302c5a59595b98c601f98b1fbe6ca1168106f52aceb12081a4cf37875cf258e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944077"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358397"
 ---
 # <a name="logical-and-advanced-operators-in-search-expressions"></a>搜索表达式中的逻辑和高级运算符
 
@@ -31,7 +32,7 @@ ms.locfileid: "99944077"
 |要搜索|用途|示例|结果|
 |-------------------|---------|-------------|------------|
 |同一文章中的两个词|AND|dib AND palette|包含“dib”和“palette”的主题。|
-|文章中的任一个词|或|raster OR vector|包含“raster”或“vector”的主题|
+|文章中的任一个词|或者|raster OR vector|包含“raster”或“vector”的主题|
 |同一文章中包含第一个词，而不包含第二个词|NOT|"operating system" NOT DOS|包含“operating system”但不包含“DOS”的主题。|
 |文章中两个词相互靠近|NEAR|user NEAR kernel|包含与“kernel”靠近的“user”的主题。|
 

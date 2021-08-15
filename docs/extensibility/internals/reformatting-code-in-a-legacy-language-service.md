@@ -11,14 +11,15 @@ ms.assetid: 08bb3375-8fef-4f4e-9efa-0d7333bab0eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8dc10e4def3e4725bb4f64041cdb17146b9d84d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0af9dc7bf25e448a1e5a128276f55016a1049db49f55e14689fce9a6e8376972
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060856"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414488"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在旧版语言服务中重新格式化代码
 

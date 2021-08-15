@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式保存 Visio 文档
-description: 了解如何使用 Visual Studio 以编程方式保存尚未保存的 Microsoft Visio 现有文档和新文档。
+description: 了解如何使用 Visual Studio 以编程方式保存 Microsoft Visio 现有文档和尚未保存的新文档。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 340d813a19c0c0dc5c347d3cfe4c7b29ff1bd049
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 676281c289d565e4e8ffc07e68c6ced0199b10d0c3f5270e60b43fea222de025
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828990"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351676"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以编程方式保存 Visio 文档
   可通过几种方法来保存 Microsoft Office Visio 文档：
@@ -74,7 +75,7 @@ ms.locfileid: "107828990"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
-- 若要保存具有新名称的文档，名为的目录 `Test` 必须位于适用于 WINDOWS XP 和) 更早版本的 " *我的文档* " 文件夹 (或 windows Vista)  (的 " *文档* " 文件夹中。
+- 若要保存具有新名称的文档，名为的目录 `Test` 必须位于 "我的 *文档*" 文件夹中 (Windows XP 及更早版本) 或 "*文档*" 文件夹 (用于 Windows Vista) 。
 
 ## <a name="see-also"></a>另请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)
