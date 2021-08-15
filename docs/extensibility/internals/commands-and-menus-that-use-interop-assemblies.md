@@ -13,14 +13,15 @@ ms.assetid: 8f4af525-39e5-4e69-92c8-d3efabe80bb2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5a487c2fe6f97e338924a0b8c682f9dd9798571
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0198490f6792654a95e9bea0f2b270dadd85a17e959a9817e0f74165a14a11bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432639"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用互操作程序集的命令和菜单
 使用互操作程序集实现菜单和工具栏命令的 VSPackage 必须：

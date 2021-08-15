@@ -11,17 +11,18 @@ ms.assetid: c10aa4c0-d7e0-4de1-b8ff-7e050985eb12
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e63ad7994d485bb39f8ec789d8906cd7d5946840
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a47c29f07a590667a22ed123ba660202b4de9c449e606a8d921dd02eb0b7f52
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095977"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434394"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
 `This is for internal use only!` 表示 " **编辑并继续** " 不可用的原因。
@@ -61,7 +62,7 @@ public enum EncUnavailableReason {
 在互操作调用期间，"编辑并继续" 不可用。
 
 `ENCUN_SQLCLR`\
-使用公共语言运行时 (CLR) 时，"编辑并继续" 不可用。
+使用公共语言运行时 (CLR) 时，"编辑并继续" 不可 SQL 用。
 
 `ENCUN_MINIDUMP`\
 处理小型转储时，"编辑并继续" 不可用。

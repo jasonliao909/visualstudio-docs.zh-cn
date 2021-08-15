@@ -1,6 +1,6 @@
 ---
 title: 实现旧版语言服务 1 |Microsoft Docs
-description: 了解如何通过使用托管包框架和 MPF 应用程序实现支持扩展语言服务功能 (语言) 。 第 1 部分（第 2 部分）。
+description: 了解如何通过使用 MPF 中的托管包框架实现支持扩展语言服务功能 (语言) 。 第 1 部分（第 2 部分）。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,17 +10,18 @@ ms.assetid: df638f24-166d-4b80-be82-c9c39ca7a556
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34be4e54fbce413fe5ba916892216a9234d4ba93
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e7800599529157c9bcd7466f5cad21b3a826c83e371adfed9496b8b6135eca32
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901144"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337911"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>实现旧版语言服务 1
-可以使用托管包框架中的类 (MPF) 来实现支持各种功能（如语法突出显示、大括号匹配和 IntelliSense 完成）的旧语言服务。
+可以使用托管包框架 (MPF) 中的类来实现支持各种功能（例如语法突出显示、大括号匹配和 IntelliSense 完成）的旧语言服务。
 
  旧版语言服务作为 VSPackage 的一部分实现，但实现语言服务功能的较新方式是使用 MEF 扩展。 若要详细了解实现语言服务的新方法，请参阅编辑器 [和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
 

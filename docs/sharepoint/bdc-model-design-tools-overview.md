@@ -23,14 +23,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b398d9c00caf3a4fa2ca58bafa3273673a305859
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e09344c0a95586f63bf3eca45582b0836b576030b21199341367ca59fe738cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851681"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425710"
 ---
 # <a name="bdc-model-design-tools-overview"></a>BDC 模型设计工具概述
   您可以通过使用 "bdc 设计器"、" **Bdc 方法详细信息** " 窗口和 " **Bdc 资源管理器**" (bdc) 模型中设计业务数据连接。
@@ -53,14 +54,14 @@ ms.locfileid: "99851681"
 
  可以在 " **BDC 方法详细信息** " 窗口中快速生成 Finder、特定的 Finder、创建者、更新程序和删除器方法。 生成这些方法时，Visual Studio 会将元数据（例如参数、实例和类型描述符）添加到方法。 你可以修改此元数据，以满足你的特定方案。
 
- 若要打开 " **BDC 方法详细信息**" 窗口，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **BDC 方法详细信息**"。
+ 若要打开 " **bdc 方法详细信息**" 窗口，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **BDC 方法详细信息**"。
 
  若要在 " **Bdc 方法详细信息** " 窗口中查看方法，请在 Bdc 设计器中选择实体。 所选实体的方法将显示在 " **BDC 方法详细信息** " 窗口中。 如果未在 BDC 设计器中选择实体，则 " **BDC 方法详细信息** " 窗口不会显示任何信息。
 
  展开或折叠 " **BDC 方法详细信息** " 窗口中的节点可定义参数、实例和筛选器描述符。 使用 **BDC 资源管理器** 定义类型描述符。
 
 ## <a name="bdc-explorer"></a>BDC 资源管理器
- " **BDC 资源管理器** " 显示构成模型的元素。 若要打开 " **BDC 资源管理器**"，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **BDC 资源管理器**"。 若要浏览模型，请在 " **BDC 资源管理器**" 中展开节点。 每个节点都表示模型文件的 XML 中的一个元素。
+ " **BDC 资源管理器** " 显示构成模型的元素。 若要打开 " **bdc 资源管理器**"，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **BDC 资源管理器**"。 若要浏览模型，请在 " **BDC 资源管理器**" 中展开节点。 每个节点都表示模型文件的 XML 中的一个元素。
 
  在 **BDC 资源管理器** 中选择节点时，所选的每个节点的属性将显示在 " **属性** " 窗口中。 其中的许多属性与模型文件中的属性相对应。 您可以使用 **BDC 资源管理器** 顶部的搜索框来搜索模型。
 

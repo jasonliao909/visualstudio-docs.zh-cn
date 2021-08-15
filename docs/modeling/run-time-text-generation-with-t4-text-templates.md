@@ -15,18 +15,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 96d37bc586f9e8d6134377244c3181a52ec11a84
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: eaf4c73dc75f24e88dcc1327c3fd0ad71ec950d0e113892e30b88270c8e8b984
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387549"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271103"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
-可以通过使用 Visual Studio 运行时文本模板，在运行时在应用程序中生成文本字符串。 执行应用程序的计算机无需安装 Visual Studio。 运行时模板有时称为 "预处理文本模板"，因为在编译时，模板会生成在运行时执行的代码。
+可以通过使用 Visual Studio 运行时文本模板，在运行时在应用程序中生成文本字符串。 执行应用程序的计算机不必有 Visual Studio。 运行时模板有时称为 "预处理文本模板"，因为在编译时，模板会生成在运行时执行的代码。
 
 每个模板都是文本在生成的字符串中显示的混合形式，以及程序代码的片段。 程序片段为字符串的可变部分提供值，并还控制条件和重复的部分。
 
@@ -78,11 +79,11 @@ This report is Company Confidential.
 
 ## <a name="converting-an-existing-file-to-a-run-time-template"></a>将现有文件转换为 Run-Time 模板
 
-创建模板的一种好方法是转换输出的现有示例。 例如，如果您的应用程序将生成 HTML 文件，则可以通过创建一个纯 HTML 文件来开始。 请确保其正常工作，且其外观正确。 然后将其包含在 Visual Studio 项目中，并将其转换为模板。
+创建模板的一种好方法是转换输出的现有示例。 例如，如果您的应用程序将生成 HTML 文件，则可以通过创建一个纯 HTML 文件来开始。 请确保其正常工作，且其外观正确。 然后将该项目添加到 Visual Studio 项目中，并将其转换为模板。
 
 ### <a name="to-convert-an-existing-text-file-to-a-run-time-template"></a>将现有文本文件转换为运行时模板
 
-1. 将该文件包含在 Visual Studio 项目中。 在解决方案资源管理器中，在项目的快捷菜单上，选择 "**添加**  >  **现有项**"。
+1. 将该文件包含到 Visual Studio 项目。 在解决方案资源管理器中，在项目的快捷菜单上，选择 "**添加**  >  **现有项**"。
 
 2. 将文件的 " **自定义工具** " 属性设置为 " **TextTemplatingFilePreprocessor**"。 在解决方案资源管理器的文件的快捷菜单上，选择 " **属性**"。
 
@@ -292,27 +293,27 @@ System.IO.File.WriteAllText("outputPage.html", pageContent)
 <#@include file="CommonHeader.txt" #>
 ```
 
-包含的内容可以包含程序代码和纯文本的任意组合，还可以包含其他包含指令和其他指令。
+包含的内容可以包含程序代码和纯文本的任何混合，并且可以包含其他 include 指令和其他指令。
 
-Include 指令可用于模板文件文本或包含的文件文本中的任意位置。
+include 指令可用于模板文件或包含文件的文本中的任何位置。
 
-### <a name="inheritance-between-run-time-text-templates"></a>Run-Time 文本模板之间的继承
+### <a name="inheritance-between-run-time-text-templates"></a>文本Run-Time之间的继承
 
-可以通过编写一个基类模板来共享运行时模板之间的内容，该模板可以是抽象的。 使用 `inherits` 指令的参数 `<@#template#>` 引用另一个运行时模板类。
+可以通过编写基类模板（可以是抽象的）在运行时模板之间共享内容。 使用 `inherits` 指令的 `<@#template#>` 参数引用另一个运行时模板类。
 
 #### <a name="inheritance-pattern-fragments-in-base-methods"></a>继承模式：基方法中的片段
 
 在下面的示例中使用的模式中，请注意以下几点：
 
-- 基类 `SharedFragments` 定义类功能块中 `<#+ ... #>` 的方法。
+- 基类 `SharedFragments` 定义类功能块 中的方法 `<#+ ... #>` 。
 
-- 基类不包含任何可用文本。 相反，它的所有文本块都出现在类功能方法中。
+- 基类不包含自由文本。 相反，其所有文本块都出现在类功能方法内。
 
-- 派生类调用中定义的方法 `SharedFragments` 。
+- 派生类调用 中定义的方法 `SharedFragments` 。
 
-- 应用程序调用 `TextTransform()` 派生类的方法，但不转换基类 `SharedFragments` 。
+- 应用程序调用 `TextTransform()` 派生类的 方法，但不转换基类 `SharedFragments` 。
 
-- 基类和派生类均为运行时文本模板;也就是说，" **自定义工具** " 属性设置为 **TextTemplatingFilePreprocessor**。
+- 基类和派生类都是运行时文本模板;也就是说，自定义 **工具属性** 设置为 **TextTemplatingFilePreprocessor**。
 
 **SharedFragments.tt：**
 
@@ -338,7 +339,7 @@ begin 1
 end 1
 ```
 
-**Myprogram.exe：**
+**MyProgram.cs：**
 
 ```csharp
 ...
@@ -355,9 +356,9 @@ begin 1
 end 1
 ```
 
-#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基本正文中的文本
+#### <a name="inheritance-pattern-text-in-base-body"></a>继承模式：基体中的文本
 
-在此替代方法中，使用模板继承时，会在基本模板中定义大量文本。 派生模板提供适合基本内容的数据和文本片段。
+在此使用模板继承的替代方法中，大部分文本在基本模板中定义。 派生模板提供适合基本内容的数据和文本片段。
 
 **AbstractBaseTemplate1.tt：**
 
@@ -429,11 +430,11 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>相关主题
+## <a name="related-topics"></a>“相关主题”
 
-设计时模板：如果要使用模板生成将成为应用程序一部分的代码，请参阅 [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+设计时模板：若要使用模板生成成为应用程序一部分的代码，请参阅使用 T4 文本模板设计时 [代码生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
-可在编译时确定模板及其内容的任何应用程序中使用运行时模板。 但是，如果想要编写一个 Visual Studio 扩展，以便从运行时更改的模板生成文本，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+运行时模板可用于任何在编译时确定模板及其内容的应用程序。 但是，如果要编写一个Visual Studio模板生成文本的扩展，请参阅在 VS 扩展中调用[文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 ## <a name="see-also"></a>另请参阅
 

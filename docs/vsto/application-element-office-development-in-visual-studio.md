@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;Visual Studio 中的应用程序元素 (Office 开发) '
-description: 了解 vstav3 命名空间的应用程序元素如何包装 Office 解决方案的说明。
+title: '&lt;应用程序 &gt; 元素 (Office开发Visual Studio) '
+description: 了解 vstav3 命名空间的应用程序元素如何包装解决方案Office说明。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 895a695f1de56c3041ad1723f1b6b30356c839df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 111d993082464409f7a6689779292b1b27dbf349e20f373baec3290f68566b44
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900918"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440872"
 ---
-# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的应用程序元素 (Office 开发) 
+# <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;应用程序 &gt; 元素 (Office开发Visual Studio) 
   `application` 命名空间的 `vstav3` 元素包装 Office 解决方案的描述。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。
 
 ## <a name="syntax-for-document-level-customizations"></a>文档级自定义项的语法
@@ -63,9 +64,9 @@ ms.locfileid: "99900918"
  `application` 元素具有以下元素。
 
 ### <a name="customization"></a>自定义
- `customization`命名空间中元素的角色 `vstov3` 在[Visual Studio&#41;中&#60;自定义&#62; 元素 &#40;Office 开发](../vsto/customization-element-office-development-in-visual-studio.md)定义。
+ 命名空间中 元素的角色在&#60;中&#62; `customization` `vstov3` Element &#40;Office[开发Visual Studio&#41;。 ](../vsto/customization-element-office-development-in-visual-studio.md)
 
-## <a name="document-level-customization-example"></a>文档级自定义项示例
+## <a name="document-level-customization-example"></a>文档级自定义示例
 
 ### <a name="description"></a>说明
  下面的代码示例演示使用 `application` 部署的文档级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。
@@ -84,7 +85,7 @@ ms.locfileid: "99900918"
 </vstav3:application>
 ```
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
 ### <a name="description"></a>说明
  以下代码示例演示使用 `application` 部署的应用程序级 Office 解决方案中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例摘自 [Application Manifests for Office Solutions](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大的示例。
@@ -121,8 +122,8 @@ ms.locfileid: "99900918"
 </vstav3:application>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
-- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+- [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
+- [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)

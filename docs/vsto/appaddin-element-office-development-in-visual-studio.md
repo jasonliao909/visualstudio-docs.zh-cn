@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;Visual Studio 中的 appAddin 元素 (Office 开发) '
-description: 了解 vstov4 命名空间的 appAddin 元素如何为 VSTO 外接程序存储特定于自定义项的信息。
+title: '&lt;appAddin &gt; 元素 (Office开发Visual Studio) '
+description: 了解 vstov4 命名空间的 appAddin 元素如何存储外接程序的VSTO特定信息。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 427d7bc0ec59b98394b292745985be7fdf69b904
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ccde6860ac1ef0935346669b20c07e8c434549bc0b878a1b801b3153fe38168
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950505"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440885"
 ---
-# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 appAddin 元素 (Office 开发) 
-  命名空间的 **appAddin** 元素 `vstov4` 存储 VSTO 外接程序特定于自定义项的信息。
+# <a name="ltappaddingt-element-office-development-in-visual-studio"></a>&lt;appAddin &gt; 元素 (Office开发Visual Studio) 
+  命名空间 **的 appAddin** `vstov4` 元素存储外接程序的VSTO特定信息。
 
 ## <a name="syntax"></a>语法
 
@@ -39,31 +40,31 @@ ms.locfileid: "99950505"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和属性
- **AppAddin** 元素是必需的，它位于 `vstov4` 命名空间中。 在应用程序清单中只定义了一个 **appAddin** 元素。
+ **appAddin** 元素是必需的，并且位于 `vstov4` 命名空间中。 应用程序清单中仅定义了一个 **appAddin** 元素。
 
- **AppAddin** 元素具有以下属性。
+ **appAddin** 元素具有以下属性。
 
 |Attribute|说明|
 |---------------|-----------------|
 |**应用程序**|必需。 标识 Microsoft Office 应用程序。 值可以是以下值之一：Excel、InfoPath、Outlook、PowerPoint、Project、Visio 或 Word。|
-|**loadBehavior**|可选。 默认情况下，通过将此值设置为来启用 **loadBehavior** 。 为进行调试，可以通过将此值设置为 2 来禁用 VSTO 外接程序。 有关详细信息，请参阅 [VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)中标题为 LoadBehavior 的表。|
-|**keyName**|必需。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关详细信息，请参阅 [VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。|
+|**loadBehavior**|可选。 默认情况下，通过将此值设置为 来启用 **loadBehavior。** 为进行调试，可以通过将此值设置为 2 来禁用 VSTO 外接程序。 有关详细信息，请参阅名为 LoadBehavior Values [in Registryntries for VSTO 外接程序的表](../vsto/registry-entries-for-vsto-add-ins.md)。|
+|**keyName**|必需。 此值是该应用程序将用于加载 VSTO 外接程序的注册表项名称。 有关详细信息，请参阅外接程序 的[VSTO项](../vsto/registry-entries-for-vsto-add-ins.md)。|
 
- **AppAddin** 元素具有以下子元素。
+ **appAddin** 元素具有以下子元素。
 
 ### <a name="friendlyname"></a>friendlyName
- 可选。 [&#60;friendlyname&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;中](../vsto/friendlyname-element-office-development-in-visual-studio.md)介绍了 **friendlyname** 元素。
+ 可选。 **friendlyName** 元素在&#60;中&#62; [friendlyName &#40;Office Visual Studio&#41;。](../vsto/friendlyname-element-office-development-in-visual-studio.md)
 
 ### <a name="description"></a>description
- 可选。 **Description** 元素在 [Visual Studio&#41;中 &#40;Office 开发&#62; 元素&#60;说明](../vsto/description-element-office-development-in-visual-studio.md)中进行了说明。
+ 可选。 description 元素在&#60;&#62;[开发&#40;Office说明Visual Studio&#41;。 ](../vsto/description-element-office-development-in-visual-studio.md)
 
 ### <a name="formregions"></a>formRegions
- 仅为包含窗体区域的 Outlook VSTO 外接程序所需。 [&#60;s&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregions-element-office-development-in-visual-studio.md)中介绍了 **s** 元素。
+ 仅为包含窗体区域的 Outlook VSTO 外接程序所需。 **formRegions** 元素在&#60;[&#62; &#40;Office 开发中的 formRegions Visual Studio&#41;中进行了Visual Studio&#41;。](../vsto/formregions-element-office-development-in-visual-studio.md)
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
 ### <a name="description"></a>说明
- 下面的代码示例说明了使用部署的 Outlook 解决方案中的 **appAddin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示了使用 部署Outlook **appAddin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -90,8 +91,8 @@ ms.locfileid: "99950505"
 </vstov4:appAddIn>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
-- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+- [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
+- [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)

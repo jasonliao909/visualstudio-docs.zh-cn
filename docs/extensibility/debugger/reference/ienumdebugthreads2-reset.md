@@ -11,17 +11,18 @@ ms.assetid: 88980d9a-c4d6-4de4-a9ab-fb56fa71394a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 97bc412d5bd4d92c5a4f7966b0238eba7d9b0bc7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 74471161305f4fe9487f245cf578470e02f5fd2c4ecd2b26cc8e578880c849ff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082629"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306512"
 ---
 # <a name="ienumdebugthreads2reset"></a>IEnumDebugThreads2::Reset
 将枚举重置为第一个元素。

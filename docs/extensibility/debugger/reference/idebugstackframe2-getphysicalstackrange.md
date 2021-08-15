@@ -11,17 +11,18 @@ ms.assetid: 2f6992e2-ac1c-433f-83b7-a7f83a4ce63d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7612267a428986ac67a02934f8cbdec38dcb736a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 75bba9bd57f544b82dd459ca7e001de8657cbd79a05c3bdc01a6a5d1d72705bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053329"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321592"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
 获取与堆栈帧关联的物理地址范围的依赖于计算机的表示形式。

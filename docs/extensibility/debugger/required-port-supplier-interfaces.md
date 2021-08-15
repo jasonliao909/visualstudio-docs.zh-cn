@@ -11,14 +11,15 @@ ms.assetid: 0c2cdd40-9f6f-425e-b305-858f7734161e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96cf70302839a9de3c5fb0fec01136d9700ee17e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 7f09a1cf675b9836e9bf909d13e3d8036f359928510e5c2f733701432e40a9fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902366"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432951"
 ---
 # <a name="required-port-supplier-interfaces"></a>所需的端口供应商接口
 端口供应商必须实现 [IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md) 接口。[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)
@@ -66,7 +67,7 @@ ms.locfileid: "112902366"
 
 - [IDebugProcessEx2](../../extensibility/debugger/reference/idebugprocessex2.md)
 
-  为 SDM 提供了一种从进程中附加和分离自身的方法。
+  为 SDM 提供一种从进程中附加和分离自身的方法。
 
 - [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md)
 

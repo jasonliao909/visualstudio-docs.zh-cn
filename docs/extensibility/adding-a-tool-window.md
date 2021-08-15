@@ -1,6 +1,6 @@
 ---
 title: 添加工具窗口 |Microsoft Docs
-description: 了解如何创建一个工具窗口并将其集成到 Visual Studio 中，方法是将一个控件和一个包含命令的工具栏添加到工具窗口。
+description: 了解如何创建一个工具窗口并将其集成到 Visual Studio，方法是将一个控件和一个包含命令的工具栏添加到工具窗口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 8e16c381-03c8-404e-92ef-3614cdf3150a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 314a684e34c91f43abe9babe4cdd6efc8a15cc35
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1ca15236ee7a077a79308b46f9f4a57f43ee3e295cda9ca6694d0af23a89ce5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085515"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434979"
 ---
 # <a name="add-a-tool-window"></a>添加工具窗口
 
@@ -36,7 +37,7 @@ ms.locfileid: "105085515"
 
 ## <a name="prerequisites"></a>先决条件
 
-Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-tool-window"></a>创建工具窗口
 
@@ -272,9 +273,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="test-the-tool-window"></a>测试工具窗口
 
-1. 按 **F5** 打开 Visual Studio 实验生成的新实例。
+1. 按 **F5** 打开 Visual Studio 试验性生成的新实例。
 
-2. 在 " **视图** " 菜单上，指向 " **其他窗口** "，再单击 " **第一个工具窗口**"。
+2. 在 "**视图**" 菜单上，指向 "**其他 Windows** "，然后单击 "**第一个工具窗口**"。
 
     Media player 工具窗口应在与 **解决方案资源管理器** 相同的位置打开。 如果它仍显示在与以前相同的位置，则重置窗口布局 (**窗口/重置窗口布局**) 。
 

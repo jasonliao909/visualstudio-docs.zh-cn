@@ -11,14 +11,15 @@ ms.assetid: 49358cbc-8973-4862-9dcc-79b1248e6712
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfb07f066d65ed48678c814444881cb004f14697
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ccab2ce336852ded90037d1dc183276cef2180d8a0c6ea04b26e53570f06ea8d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088466"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342513"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 此接口将类表示为类型。

@@ -11,14 +11,15 @@ ms.assetid: c660439d-8b23-4dbb-923e-ebb5e1d7edf5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 146d38788e6a9c41fa96729da3922828a057d853
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d8760b07b84df3fd1ab763cd14a984a7b291b42cbdeefbbf3da70ecf2ff8998b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076428"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276654"
 ---
 # <a name="idebugprocesscreateevent2"></a>IDebugProcessCreateEvent2
 此接口在进程启动时发送。

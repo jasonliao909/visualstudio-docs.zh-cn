@@ -1,6 +1,6 @@
 ---
 title: 旧版语言服务中的自定义文档属性
-description: 了解如何创建在 Visual Studio 属性窗口中显示的自定义文档属性作为旧版语言服务的一部分。
+description: 了解如何创建作为旧版语言服务的一部分显示在 Visual Studio 属性窗口中的自定义文档属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,19 +12,20 @@ ms.assetid: cc714a67-b33e-4440-9203-3c90f648bd9c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e154ba5e6ce4c85f597957b1d6704ca341b3c4d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b7cea1368c90bcc747c84d80db1816da4ee1adfc4fe16a2c72cf32a61653649a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091131"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275536"
 ---
 # <a name="custom-document-properties-in-a-legacy-language-service"></a>旧版语言服务中的自定义文档属性
 文档属性可以显示在 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性** " 窗口中。 编程语言通常没有与单个源文件关联的属性。 但是，XML 支持影响编码、架构和样式表的文档属性。
 
-## <a name="discussion"></a>讨论 (Discussion)
+## <a name="discussion"></a>讨论区
  如果你的语言需要自定义文档属性，则必须从类派生一个类 <xref:Microsoft.VisualStudio.Package.DocumentProperties> 并在派生类上实现所需的属性。
 
  此外，文档属性通常存储在源文件本身中。 这要求语言服务在 "**属性**" 窗口中对文档属性进行更改时，分析源文件中要显示在 "**属性**" 窗口中的属性信息，并更新源文件。

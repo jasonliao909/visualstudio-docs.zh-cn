@@ -9,14 +9,15 @@ ms.assetid: 81331a7b-6bec-46e4-a53e-515d0fad2400
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5a555bb2138bdeb28e5155709b516739fa85fa9f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 48aec69280dee010356df9a525104fe84a16363bc8ff92d37bf968085b29d129
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903705"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434654"
 ---
 # <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger字段
 表示调试器用于唯一标识此生成器的延迟初始化对象。
@@ -25,7 +26,7 @@ ms.locfileid: "112903705"
 
  **程序集：mscorlib** (mscorlib.dll) 
 
- 由于无法从 CIL .NET Framework访问此内部成员，因此 CIL (中提供了以下) 。
+ 由于无法从 CIL .NET Framework访问此内部成员，因此在 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 

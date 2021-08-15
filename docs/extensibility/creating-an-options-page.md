@@ -10,14 +10,15 @@ ms.assetid: 9f4e210c-4b47-4daa-91fa-1c301c4587f9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: eb94554b4ac1af30d8187a8ab75aa83f65dccc72
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e8ca8233495fd6db2d7a238483ef81a83b1ff28a5e59cb51f9075584bdcf9e27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055799"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434758"
 ---
 # <a name="create-an-options-page"></a>创建选项页
 
@@ -29,7 +30,7 @@ ms.locfileid: "105055799"
 
 ## <a name="prerequisites"></a>先决条件
 
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-tools-options-grid-page"></a>创建 "工具选项" 网格页
 
@@ -37,9 +38,9 @@ ms.locfileid: "105055799"
 
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>创建 VSIX 项目并添加 VSPackage
 
-1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `MyToolsOptionsExtension` 。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。
+1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `MyToolsOptionsExtension` 。 可以通过搜索 "vsix" 在 "**新建 Project** " 对话框中找到 VSIX 项目模板。
 
-2. 通过添加名为的 Visual Studio 包项模板来添加 VSPackage `MyToolsOptionsPackage` 。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >  **新项**"。 在 "**添加新项" 对话框** 中，选择 " **visual c # 项**" "  >  **扩展性**"，然后选择 " **visual Studio 包**"。 在对话框底部的 " **名称** " 字段中，将文件名更改为 `MyToolsOptionsPackage.cs` 。 有关如何创建 VSPackage 的详细信息，请参阅 [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。
+2. 通过添加一个名为的 Visual Studio 包项模板来添加 VSPackage `MyToolsOptionsPackage` 。 在“解决方案资源管理器”中，右键单击项目节点并选择“添加” > “新建项”  。 在 "**添加新项" 对话框** 中，选择 " **Visual c # 项**" "  >  **扩展性**"，然后选择 " **Visual Studio 包**"。 在对话框底部的 " **名称** " 字段中，将文件名更改为 `MyToolsOptionsPackage.cs` 。 有关如何创建 VSPackage 的详细信息，请参阅 [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。
 
 ### <a name="to-create-the-tools-options-property-grid"></a>创建 "工具选项" 属性网格
 
@@ -99,7 +100,7 @@ ms.locfileid: "105055799"
 
 6. 生成项目并启动调试。
 
-7. 在 Visual Studio 的实验实例中，单击 " **工具** " 菜单上的 " **选项**"。
+7. 在 Visual Studio 的实验实例中，单击 "**工具**" 菜单上的 "**选项**"。
 
      在左侧窗格中，应会看到 **"我的类别**"。  (选项类别按字母顺序列出，因此它应显示在列表中的下一半。 ) 打开 **"我的类别** "，然后单击 **"我的网格" 页**。 选项网格将显示在右窗格中。 "属性" 类别为 " **我的选项**"，属性名称为 **"我的整数" 选项**。 属性说明 " **我的整数" 选项** 显示在窗格的底部。 将值从其初始值256更改为其他值。 单击 **"确定"**，然后重新打开 **网格页**。 您可以看到新值仍然存在。
 

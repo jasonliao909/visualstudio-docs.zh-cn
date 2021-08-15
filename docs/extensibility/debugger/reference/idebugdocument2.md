@@ -11,14 +11,15 @@ ms.assetid: 1bc58426-dbf5-4471-9aad-9d66cd80eef0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b84aa99e1f09bc50c2148b7e03fab9e2a5bb5814
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bc5fcca187603ab4001e38df67eacf0df5b1be80353aa161bc921a3a3fd1b22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066836"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434004"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此接口表示源文档。

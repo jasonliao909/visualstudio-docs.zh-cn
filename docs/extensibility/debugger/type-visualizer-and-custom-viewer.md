@@ -1,6 +1,6 @@
 ---
-title: 类型可视化工具与自定义查看器|Microsoft Docs
-description: 了解类型可视化工具组件和自定义查看器，它们以特定格式显示数据，以及它们之间的差异。
+title: 类型可视化工具和自定义查看器 |Microsoft Docs
+description: 了解类型可视化工具和自定义查看器，它以特定的格式显示数据和它们之间的差异。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,25 +11,26 @@ ms.assetid: fd3691e6-9c78-4767-846f-43f85ada4375
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c18bb49c740362d42a4a54bf52f6998629acb0c0
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0a3e5e678edd5d616ea3ffc132dce0b8e28e3ef170242ba7c9611cb9f6920201
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904417"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306018"
 ---
-# <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具与自定义查看器
-类型可视化工具是一个组件，它以特定格式显示一段数据。 格式完全由实现可视化工具的用户决定，而可视化工具是最终用户还是第三方供应商。
+# <a name="type-visualizer-and-custom-viewer"></a>类型可视化工具和自定义查看器
+类型可视化工具是以特定格式显示一段数据的组件。 格式完全取决于实现可视化工具的用户，是最终用户或可视化工具的第三方供应商。
 
- 自定义查看器是自定义表达式计算程序（以特定格式显示一段数据）的一部分。 此格式完全由自定义查看器的实现者决定，这意味着该格式取决于 EE (表达式) 。
+ 自定义查看器是自定义表达式计算器的一部分，它以特定的格式显示一段数据。 此格式完全取决于自定义查看器的实施者，这意味着该格式由表达式计算器的实施者决定 (企业版) 。
 
-## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>支持表达式评估器中的类型可视化工具
- EE 通过支持可视化工具可访问的一组接口来支持类型可视化工具 [：IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md) 和 [IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)等接口。 但是，EE 不负责实现类型可视化工具本身：EE 仅允许外部可视化工具访问其类型信息。 此类可视化工具可以随 EE 一起随附，并安装在 Visual Studio 的适当位置，由另一个第三方供应商甚至最终用户提供。
+## <a name="support-for-type-visualizers-in-an-expression-evaluator"></a>对表达式计算器中的类型可视化工具的支持
+ 通过支持可视化工具可访问的一组接口（如[IEEVisualizerService](../../extensibility/debugger/reference/ieevisualizerservice.md)和[IEEVisualizerDataProvider](../../extensibility/debugger/reference/ieevisualizerdataprovider.md)），企业版支持类型可视化工具。 但企业版不负责实现类型可视化工具本身：企业版只允许外部可视化工具访问其类型信息。 此类可视化工具可能随企业版一起提供，并安装在 Visual Studio 中的适当位置，由其他第三方供应商提供，甚至由最终用户提供。
 
-## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>支持表达式评估器中的自定义查看器
- EE 还可以支持自定义查看器，其中 EE 本身提供用于查看数据类型的代码。 自定义查看器实现 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 接口，该接口处理以任何所需格式显示数据的所有职责;查看器可以完全控制显示，甚至可以允许修改数据。 产品发货时，EE 提供的任何自定义查看器都附带 EE。
+## <a name="support-for-custom-viewers-in-an-expression-evaluator"></a>表达式计算器中的自定义查看器支持
+ 企业版还可以支持自定义查看器，在该查看器中，企业版本身提供用于查看数据类型的代码。 自定义查看器实现了 [IDebugCustomViewer](../../extensibility/debugger/reference/idebugcustomviewer.md) 接口，该接口可处理以任意格式显示数据的所有职责;查看器可以完全控制显示，甚至可以让数据被修改。 企业版提供的任何自定义查看器均随附产品时的企业版。
 
 ## <a name="see-also"></a>另请参阅
 - [调试器组件](../../extensibility/debugger/debugger-components.md)

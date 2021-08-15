@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 10ff3648dfceaa62be0dd86a05a21432aa2f6118
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: bf0ed43b3c27a14c8d746d6bb0851b36180f523d29f139ae10df27383e21f1d8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826026"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423912"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>如何：以编程方式创建电子邮件项
   此示例在 Microsoft Office Outlook 中创建一封电子邮件。
@@ -31,6 +32,6 @@ ms.locfileid: "107826026"
 ## <a name="example"></a>示例
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_CreateMailItem/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
 - [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)

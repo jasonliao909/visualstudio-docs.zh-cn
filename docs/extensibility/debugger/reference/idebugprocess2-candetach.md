@@ -11,17 +11,18 @@ ms.assetid: 2830f7c3-69fb-474a-97b8-5b869e38d546
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d0ffc6e8ee787960baf7ccb709ab76ab5d66be4d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f89e96ca584ea6bcbe2f3f5e24e919c352cb450de2ffc915c1e9f4bd81a203cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071683"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339042"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
 确定会话调试管理器 (SDM) 是否可以分离进程。

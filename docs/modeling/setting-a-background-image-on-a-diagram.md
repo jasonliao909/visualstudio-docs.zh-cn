@@ -1,23 +1,24 @@
 ---
 title: 在图表上设置背景图像
-description: 了解，在 Visual Studio 可视化和建模 SDK 中，可以使用自定义代码设置生成的设计器的背景图像。
+description: 请注意，在 Visual Studio 可视化和建模 SDK 中，可以通过使用自定义代码来为生成的设计器设置背景图像。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9304117932b92408f12a23747253de66dfd767d1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4de75e34696f7404488e804a87aa6f1d6c065860855e76b1ae1a7930f2940def
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385664"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231452"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
-在 Visual Studio 可视化和建模 SDK 中，可以使用自定义代码设置生成的设计器的背景图像。
+在 Visual Studio 可视化和建模 SDK 中，可以通过使用自定义代码来为生成的设计器设置背景图像。
 
 ## <a name="setting-the-background-image"></a>设置背景图像
 

@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 69dfd02dca5ead65d4f36303e547aaeba04cde98
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a5e3a80c09456cf50a021410a2df6ecc1ae65cc97e9897eb1682c054840df9e7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389093"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121316807"
 ---
 # <a name="domain-path-syntax"></a>域路径语法
 DSL 定义使用类似 XPath 的语法在模型中查找特定元素。

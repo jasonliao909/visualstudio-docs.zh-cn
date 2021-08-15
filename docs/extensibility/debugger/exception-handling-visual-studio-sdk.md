@@ -1,5 +1,5 @@
 ---
-title: Visual Studio SDK)  (处理异常 |Microsoft Docs
+title: Visual Studio SDK (的异常处理) |Microsoft Docs
 description: 了解引发异常时所发生的过程。 本文介绍了所涉及的所有步骤。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,14 +10,15 @@ ms.assetid: 7279dc16-db14-482c-86b8-7b3da5a581d2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f74337964b73683a71b180699da626121a4d3067
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3aa2ed9af6c0ba2f1f263cb1eb7e44af91d2b023496e55ac9eb9c9dc9ed0ddea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097014"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342786"
 ---
 # <a name="exception-handling-visual-studio-sdk"></a>Visual Studio SDK (的异常处理) 
 下面描述了在引发异常时所发生的过程。

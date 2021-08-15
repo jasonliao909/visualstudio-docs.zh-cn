@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: cc00f86bafebd14177400ffa0ee596a733e9fb28
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4cf79cd6234b66f60c8b3487a0dcaed0bcd57fba3937269657b34e1ce40856ef
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384624"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443953"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
@@ -62,13 +63,13 @@ ms.locfileid: "112384624"
 
 ::: moniker range="vs-2017"
 
-4. 若要在 Visual Studio 或另一台计算机的主实例中安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择" **工具"菜单上的** "扩展 **和更新** "。
+4. 若要在主实例或另一Visual Studio安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择" **工具"菜单上的** "扩展 **和更新** "。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 若要在 Visual Studio 或另一台计算机的主实例中安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 **"扩展"菜单上的** " **管理扩展** "。
+4. 若要在主实例或另一Visual Studio安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 **"扩展"菜单上的** " **管理扩展** "。
 
 ::: moniker-end
 
@@ -80,9 +81,9 @@ ms.locfileid: "112384624"
 
 1. 创建新的“类库”项目。 此项目将包含层验证类。
 
-2. 在解决方案中 **查找或创建 VSIX** 项目。 VSIX 项目包含名为 **source.extension.vsixmanifest** 的文件。
+2. 在解决方案中查找 **Project VSIX** 应用。 VSIX 项目包含名为 **source.extension.vsixmanifest** 的文件。
 
-3. 在 **解决方案资源管理器** 中，在 VSIX 项目的右键单击菜单上，选择"**设置为启动项目"。**
+3. 在 **解决方案资源管理器** 中，在 VSIX 项目的右键单击菜单上，**选择"设置为** 启动Project"。
 
 4. 在 **source.extension.vsixmanifest** 中的“资产” 下，将层验证项目添加为 MEF 组件：
 
@@ -94,7 +95,7 @@ ms.locfileid: "112384624"
 
          **源**  = **当前解决方案中的项目**
 
-         **项目**  = *验证程序项目*
+         **Project**  = *验证程序项目*
 
 5. 还必须将其添加为层验证：
 
@@ -106,7 +107,7 @@ ms.locfileid: "112384624"
 
          **源**  = **当前解决方案中的项目**
 
-         **项目**  = *验证程序项目*
+         **Project**  = *验证程序项目*
 
 6. 返回层验证项目，并添加以下项目引用：
 
@@ -158,7 +159,7 @@ ms.locfileid: "112384624"
 
 用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
 
-- 图形中Visual Studio节点和链接表示的解决方案的层模型。
+- 图形中Visual Studio节点和链接的表层解决方案的层模型。
 
 - 代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。
 
@@ -221,7 +222,7 @@ ms.locfileid: "112384624"
 
 若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当 "调试" 对话框出现时，选择 Visual Studio 的主实例。
 
-或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 当消息框出现时，请前往 Visual Studio 的主实例，并在 " **调试** " 菜单上单击 " **附加到进程**"。 选择名为 **Graphcmd.exe** 的进程。
+或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 当消息框出现时，请前往 Visual Studio 的主实例，并在 "**调试**" 菜单上单击 "**附加到进程**"。 选择名为 **Graphcmd.exe** 的进程。
 
 始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
 

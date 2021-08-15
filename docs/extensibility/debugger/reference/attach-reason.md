@@ -1,5 +1,5 @@
 ---
-description: 指定调试引擎 (DE) 附加到程序节点的原因。
+description: 指定要附加到程序节点 (DE) 引擎的原因。
 title: ATTACH_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 159fb70b-a344-4ba6-9115-b7eaa16e228f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9da162dd2c477d5b901be6c622e2456f44d26a35
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 185cec33a3ea8d6538ae6d820f0690bc68b5270daa74161d46f4788137b234e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085424"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434485"
 ---
 # <a name="attach_reason"></a>ATTACH_REASON
-指定调试引擎 (DE) 附加到程序节点的原因。
+指定要附加到程序节点 (DE) 引擎的原因。
 
 ## <a name="syntax"></a>语法
 
@@ -56,14 +57,14 @@ public enum enum_ATTACH_REASON {
 由于用户请求而附加。
 
 ## <a name="remarks"></a>备注
-这些值用作 [附加](../../../extensibility/debugger/reference/idebugengine2-attach.md) 方法和 [附加](../../../extensibility/debugger/reference/idebugprogramex2-attach.md) 方法的参数。
+这些值用作 Attach 和 Attach[方法](../../../extensibility/debugger/reference/idebugengine2-attach.md)[的参数](../../../extensibility/debugger/reference/idebugprogramex2-attach.md)。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

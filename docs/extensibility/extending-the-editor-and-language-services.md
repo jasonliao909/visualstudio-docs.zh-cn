@@ -1,6 +1,6 @@
 ---
 title: 扩展编辑器和语言服务 |Microsoft Docs
-description: 您可以向编辑器添加语言服务功能并扩展 Visual Studio 代码编辑器的功能。 了解 Managed Extensibility Framework。
+description: 您可以向编辑器添加语言服务功能，并扩展 Visual Studio 代码编辑器的功能。 了解 Managed Extensibility Framework。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,21 +10,22 @@ ms.assetid: 8d04f8db-eda7-4b3e-b6eb-c06df104502a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d85b018b4e0ea7d5ed1c91e617afcb2759d49b8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3f349cd733be2ae45eeca22d9e1f30693568b107caee075f4ecadf6ad22950ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070110"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432886"
 ---
 # <a name="extend-the-editor-and-language-services"></a>扩展编辑器和语言服务
-可以将语言服务功能 (例如 IntelliSense) 添加到自己的编辑器中，并扩展 Visual Studio 代码编辑器的大多数功能。  有关可以扩展的内容的完整列表，请参阅 [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。
+您可以将语言服务功能 (例如 IntelliSense) 添加到您自己的编辑器中，并扩展 Visual Studio 代码编辑器的大部分功能。  有关可以扩展的内容的完整列表，请参阅 [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)。
 
  您可以通过使用 (MEF) Managed Extensibility Framework 来扩展大多数编辑器功能。 例如，如果要扩展的编辑器功能是语法着色，则可以编写一个 MEF *组件部件* ，用于定义要为其提供不同着色和如何处理的分类。 编辑器还支持同一功能的多个扩展。
 
- 编辑器表示层基于 Windows Presentation Framework (WPF) 。 WPF 提供了一个图形库用于灵活的文本格式设置，还提供了图形和动画等可视化效果。
+ 编辑器表示层基于 (WPF) Windows 表示框架。 WPF 提供了一个图形库用于灵活的文本格式设置，还提供了图形和动画等可视化效果。
 
  Visual Studio SDK 提供了称为 *填充* 程序的适配器，以支持为早期版本编写的 vspackage。 尽管如此，如果你有现有的 VSPackage，我们建议你将其更新为新技术，以获得更好的性能和可靠性。
 
@@ -38,7 +39,7 @@ ms.locfileid: "105070110"
 |[语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)|列出编辑器的扩展点。 扩展点表示可以扩展的编辑器功能。|
 |[演练：创建 "视图修饰"、"命令" 和 "设置" ("列参考线") ](../extensibility/walkthrough-creating-a-view-adornment-commands-and-settings-column-guides.md)|演练和说明如何构建一个视图修饰，以绘制列参考线以帮助你将代码保持在特定的显示宽度。  还介绍了如何读取和写入设置，以及如何声明和实现可从 "命令" 窗口调用的命令。|
 |[编辑器导入](../extensibility/editor-imports.md)|列出扩展可以导入的服务。|
-|[将旧代码调整为编辑器](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|说明用于改编旧代码 (Visual Studio 2010 前) 的不同方法来扩展编辑器。|
+|[将旧代码调整为编辑器](/previous-versions/visualstudio/visual-studio-2015/extensibility/adapting-legacy-code-to-the-editor?preserve-view=true&view=vs-2015)|介绍用于调整旧代码的不同方法， (预 Visual Studio 2010) 扩展编辑器。|
 |[迁移旧版语言服务](../extensibility/internals/migrating-a-legacy-language-service.md)|说明如何迁移基于 VSPackage 的语言服务。|
 |[演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)|演示如何将内容类型链接到文件扩展名。|
 |[演练：创建边距标志符号](../extensibility/walkthrough-creating-a-margin-glyph.md)|演示如何向边距添加图标。|

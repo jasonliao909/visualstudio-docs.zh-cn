@@ -1,6 +1,6 @@
 ---
 title: 演练：从自定义任务窗格自动化应用程序
-description: 创建自定义任务窗格，该窗格在用户单击自定义任务窗格上的 "MonthCalendar" 控件时，将日期插入幻灯片中，从而自动执行 Microsoft PowerPoint。
+description: 创建自定义任务窗格，该窗格在用户单击自定义任务窗格上的 MonthCalendar 控件时，将日期插入幻灯片中，从而自动执行 Microsoft PowerPoint。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f57ad0c858abb5f151e1b425224b5af34d464c0f
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 84df3ee24dd57072717b662237ed6e71ae7ca89c63a5bd5a3a532fc7a3f29eee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824661"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267424"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>演练：从自定义任务窗格自动化应用程序
   本演练演示了如何创建实现 PowerPoint 自动化的自定义任务窗格。 当用户单击自定义任务窗格中的 <xref:System.Windows.Forms.MonthCalendar> 控件时，自定义任务窗格向一张幻灯片中插入日期。
@@ -53,11 +54,11 @@ ms.locfileid: "107824661"
 - Microsoft PowerPoint 2010 或 [!INCLUDE[PowerPoint_15_short](../vsto/includes/powerpoint-15-short-md.md)]。
 
 ## <a name="create-the-add-in-project"></a>创建外接程序项目
- 第一步是创建 PowerPoint 的 VSTO 外接程序项目。
+ 第一步是为 PowerPoint 创建 VSTO 外接程序项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 使用 PowerPoint 外接程序项目模板创建名为 **MyAddIn** 的 PowerPoint VSTO 外接程序项目。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 PowerPoint 外接程序项目模板创建名为 **MyAddIn** 的 PowerPoint VSTO 外接程序项目。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件并将 **MyAddIn** 项目添加到 **解决方案资源管理器** 中。
 
@@ -76,7 +77,7 @@ ms.locfileid: "107824661"
 
      如果 **MonthCalendar** 控件大于用户控件的设计图面，则调整用户控件的大小以适合 **MonthCalendar** 控件。
 
-## <a name="automate-powerpoint-from-the-custom-task-pane"></a>从自定义任务窗格中实现 PowerPoint 自动化
+## <a name="automate-powerpoint-from-the-custom-task-pane"></a>从自定义任务窗格中自动执行 PowerPoint
  VSTO 外接程序的作用是在活动演示文稿的第一张幻灯片中放置所选日期。 使用控件的 <xref:System.Windows.Forms.MonthCalendar.DateChanged> 事件以在发生更改时添加所选日期。
 
 ### <a name="to-automate-powerpoint-from-the-custom-task-pane"></a>若要从自定义任务窗格中实现 PowerPoint 自动化
@@ -85,7 +86,7 @@ ms.locfileid: "107824661"
 
      此时会打开 **MyUserControl.cs** 或 **MyUserControl.vb** 文件，并创建 <xref:System.Windows.Forms.MonthCalendar.DateChanged> 事件的事件处理程序。
 
-2. 在文件顶部添加以下代码。 此代码为 <xref:Microsoft.Office.Core> 和 [PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29) 命名空间创建别名。
+2. 在文件顶部添加以下代码。 此代码为 <xref:Microsoft.Office.Core> 和[PowerPoint](/previous-versions/office/developer/office-2010/ff763170%28v%3doffice.14%29)命名空间创建别名。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_TaskPaneMonthCalendar/MyUserControl.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_TaskPaneMonthCalendar/MyUserControl.vb" id="Snippet1":::
@@ -137,14 +138,14 @@ ms.locfileid: "107824661"
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何创建自定义任务窗格的详细信息：
 
-- 在其他应用程序的 VSTO 外接程序中创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
+- 在不同应用程序的 VSTO 外接程序中创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
 
 - 创建一个用于隐藏或显示自定义任务窗格的功能区按钮。 有关详细信息，请参阅 [演练：使用功能区按钮同步自定义任务窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)。
 
-- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。
+- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅[演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)
-- [演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [演练：在 Outlook 中显示包含电子邮件的自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
