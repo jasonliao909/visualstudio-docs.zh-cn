@@ -11,17 +11,18 @@ ms.assetid: 4fcb712e-1bdb-4b75-a440-35cc79ee147e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6c355d2c4ee3cf63551f54b050b0ea42f4fdddc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1c2647c262d4a5a2700f2293d5737fab533d680d5c0a74da1a9b542b9b4c4a31
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092444"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417283"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
 此方法通过调用 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法来取消异步表达式计算。

@@ -8,14 +8,15 @@ ms.assetid: b3a8a785-5928-457a-8a50-30267e29503d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 6def442b6500ac1265f83aef49db8c79c8e05ae7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d665adbf7640b0c8d5d2489ee75c22ef9e41603954dd812b9f8984ab789b55a0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971669"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243427"
 ---
 # <a name="how-to-add-activities-to-the-toolbox"></a>如何：向工具箱添加活动
 
@@ -23,14 +24,14 @@ ms.locfileid: "99971669"
 
 ## <a name="to-add-an-activity-from-within-your-current-project"></a>从当前项目中添加活动
 
-1. 将新的自定义活动添加到当前工作流项目。 有关向项目添加新的自定义活动的详细信息，请参阅 [如何：向工作流项目添加新项](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
+1. 将新的自定义活动添加到当前工作流项目。 有关向项目添加新的自定义活动的详细信息，请参阅[如何：向工作流添加新项 Project](../workflow-designer/how-to-add-a-new-item-to-a-workflow-project.md)。
 
 2. 向活动添加自定义逻辑。
 
 3. 生成项目。 如果生成成功，则会显示 **工具箱** 中名为 "" 的新类别，其中 \<*project name*> 包含包含在该类别中的自定义活动。
 
     > [!NOTE]
-    > 如果重置工具箱中，则将删除自定义活动，即使重新生成解决方案。 若要在重置后通过自定义活动重新填充工具箱，请重启 Visual Studio。
+    > 如果重置工具箱中，则将删除自定义活动，即使重新生成解决方案。 若要在重置 "工具箱" 后用自定义活动重新填充它，请重新启动 Visual Studio。
 
     > [!NOTE]
     > 工具箱只能显示具有给定名称的一个活动。 如果来自不同程序集的两个活动具有相同的类名称，将显示一个活动。

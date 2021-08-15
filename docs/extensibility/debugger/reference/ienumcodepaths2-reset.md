@@ -11,17 +11,18 @@ ms.assetid: 490c0e19-ff4b-4673-bd06-cdee996ac226
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ac7be476f1ec119d43b8794e5d2e1be02d66f521
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 909f85f64dd9eb87329e1871993aa5935a0b9ed83c96b322efa21898a160a95e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091781"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415657"
 ---
 # <a name="ienumcodepaths2reset"></a>IEnumCodePaths2::Reset
 将枚举重置为第一个元素。

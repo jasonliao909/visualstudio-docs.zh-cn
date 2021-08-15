@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 47f295a6259b8d722c9c3c714b62fe648bdea1c6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 31b6bf4e9fa4041710da1269ff239eecb3e75749e1819144fc99fed5f198efb5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827196"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408118"
 ---
 # <a name="how-to-programmatically-print-documents"></a>如何：以编程方式打印文档
   你可以将整个 Microsoft Office Word 文档或文档的一部分打印到默认打印机。
@@ -59,5 +60,5 @@ ms.locfileid: "107827196"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet12":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet12":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

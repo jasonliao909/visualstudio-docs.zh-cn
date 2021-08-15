@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: eb848d789185fe42e301eea414b4e2566f431897
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef324d108a8b8014c2c45671435ff2de811db6a72c5ca5e287013b4668949ae7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918608"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424081"
 ---
 # <a name="how-to-populate-documents-with-data-from-a-database"></a>如何：用数据库中的数据填充文档
 
@@ -30,9 +31,9 @@ ms.locfileid: "99918608"
 
 [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
-下列示例演示了如何使用设计器在文档级项目中添加数据绑定控件。 有关如何在运行时在 VSTO 外接程序项目中添加数据绑定控件的示例，请参阅 [演练： VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。
+下列示例演示了如何使用设计器在文档级项目中添加数据绑定控件。 有关如何在运行时 VSTO 外接程序项目中添加数据绑定控件的示例，请参阅[演练： VSTO 外接程序项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-vsto-add-in-project.md)。
 
-![视频链接](../vsto/media/playvideo.gif "链接到视频") 有关相关的视频演示，请参阅 [使用 Office system (3.0) 的 Visual Studio Tools 将数据绑定到 Word 2007 内容控件 ](/previous-versions/office/developer/office-2007/bb967663(v=office.12))。
+![视频链接](../vsto/media/playvideo.gif "链接到视频")有关相关的视频演示，请参阅[将数据绑定到使用 Office 系统 Visual Studio Tools (3.0) 的 Word 2007 内容控件](/previous-versions/office/developer/office-2007/bb967663(v=office.12))。
 
 ## <a name="add-a-control-to-a-document-at-design-time"></a>在设计时向文档添加控件
 
@@ -52,7 +53,7 @@ ms.locfileid: "99918608"
 
 除了该控件，还会自动将以下数据相关的对象添加到你的项目：
 
-- 一个类型化数据集，它会封装数据库中你连接到的数据表。 有关详细信息，请参阅 [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
+- 一个类型化数据集，它会封装数据库中你连接到的数据表。 有关详细信息，请参阅[Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
 - 一个 <xref:System.Windows.Forms.BindingSource>，它将控件连接到类型化数据集。 有关详细信息，请参阅 [BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)。
 
@@ -70,7 +71,7 @@ ms.locfileid: "99918608"
 
 ## <a name="see-also"></a>另请参阅
 
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)

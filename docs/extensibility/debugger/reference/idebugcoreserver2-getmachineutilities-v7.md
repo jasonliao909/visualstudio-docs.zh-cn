@@ -11,17 +11,18 @@ ms.assetid: 64c1f08f-853b-4498-9810-29791581ef2f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 26d2c042c6f4a08acb7efc558bbc86021b16587e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 84d966c99267b60f39a8997d8a480ea028032e4abe82f16a15c111b535b278dc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077949"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323737"
 ---
 # <a name="idebugcoreserver2getmachineutilities_v7"></a>IDebugCoreServer2::GetMachineUtilities_V7
 此方法获取服务器的计算机实用程序。

@@ -1,6 +1,6 @@
 ---
 title: 建立用户需求模型
-description: 了解 Visual Studio 如何帮助你了解、讨论和传达用户的需求，方法是绘制有关活动的关系图。
+description: 了解 Visual Studio 如何通过绘制有关活动的关系图来帮助你了解、讨论和传达用户的需求。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 381395eb0b9dabde0e94c479cb43033bc8443c8f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 860b63f5ae01d74df27b4a15f5f5769b2deffffa6bd258c147e4ce63d0abc0aa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390146"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121410980"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 

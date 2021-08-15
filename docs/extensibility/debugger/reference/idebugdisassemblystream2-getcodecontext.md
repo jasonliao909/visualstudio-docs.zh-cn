@@ -11,17 +11,18 @@ ms.assetid: a6d0ae82-7617-4915-9713-369abe3e2e53
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c532c68435d1eaabdb03f8acae571ac4b71a5a7b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf54a3a89b98b29af2a1109b6ba2830bc09d7aaae62960039d30bd432c8b5640
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067070"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417361"
 ---
 # <a name="idebugdisassemblystream2getcodecontext"></a>IDebugDisassemblyStream2::GetCodeContext
 返回对应于指定代码位置标识符的代码上下文对象。

@@ -1,6 +1,6 @@
 ---
-title: RDT_ReadLock 使用情况 |Microsoft Docs
-description: 了解 _VSRDTFLAGS。RDT_ReadLock 标志，该标志提供用于锁定正在运行的文档表中文档的逻辑。
+title: RDT_ReadLock使用情况|Microsoft Docs
+description: 了解_VSRDTFLAGS。RDT_ReadLock标志，该标志提供用于锁定运行文档表中的文档的逻辑。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,33 +13,34 @@ ms.assetid: b935fc82-9d6b-4a8d-9b70-e9a5c5ad4a55
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6add02e763c9664c19fe21b1cfc37dd29b3010b9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 957e67e852baac541cfe62955fa7220ac2e170cdff75c60c82cc58a357396c00
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060830"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414436"
 ---
 # <a name="rdt_readlock-usage"></a>RDT_ReadLock 用法
 
-[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) 是一种用于在正在运行的文档表中锁定文档的逻辑 (RDT) ，它是当前在 Visual STUDIO IDE 中打开的所有文档的列表。 此标志确定打开文档的时间，以及文档在用户界面中是否可见或在内存中保持不可见。
+[_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>)是一个标志，该标志提供逻辑用于锁定运行文档表 (RDT) 中的文档，这是当前在 Visual Studio IDE 中打开的所有文档的列表。 此标志确定文档何时打开，以及文档在用户界面中是可见的，还是以不可见状态在内存中。
 
-通常，使用 [_VSRDTFLAGS。](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) 如果满足以下任一条件，则 RDT_ReadLock：
+通常，使用 [_VSRDTFLAGS。RDT_ReadLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_ReadLock>) 之一为 true 时，将执行以下操作：
 
-- 你希望以不可见和只读的状态打开文档，但尚未建立 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 应该拥有该文档的文档。
+- 你想要以不公开和只读方式打开文档，但尚未确定应该 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 拥有它。
 
-- 您希望在用户在 UI 中显示文档之前，提示用户保存以不可见的文档打开的文档，然后尝试将其关闭。
+- 希望系统提示用户保存在用户向 UI 中显示文档之前未完全打开的文档，然后尝试将其关闭。
 
-## <a name="how-to-manage-visible-and-invisible-documents"></a>如何管理可见和不可见的文档
+## <a name="how-to-manage-visible-and-invisible-documents"></a>如何管理可见文档和不可见文档
 
-当用户在用户界面中打开文档时， <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 必须建立文档的所有者并 [_VSRDTFLAGS。](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) 必须设置 RDT_EditLock 标志。 如果无法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 建立所有者，则当用户单击 " **全部保存** " 或关闭 IDE 时，将不保存该文档。 这意味着，如果文档在内存中被修改的位置以不可见的方式打开，并在选择 " **全部保存** " 时提示用户关闭或保存文档，则 `RDT_ReadLock` 无法使用。 相反，你必须使用 `RDT_EditLock` 并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 在 __VSREGDOCLOCKHOLDER 时注册 [。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) 标志。
+当用户在 UI 中打开文档时，必须建立文档的所有者，并创建 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> [_VSRDTFLAGS。RDT_EditLock](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS.RDT_EditLock>) 标志。 如果无法建立所有者，则当用户单击"全部保存"或关闭 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> IDE时，将不会保存文档。 这意味着，如果文档在内存中被修改的不公开位置打开，并且系统提示用户在关闭时保存文档，或者如果选择"全部保存"，则不能使用 。  `RDT_ReadLock` 相反，必须使用 ， `RDT_EditLock` 在注册时 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 注册 [__VSREGDOCLOCKHOLDER。RDLH_WeakLockHolder](<xref:Microsoft.VisualStudio.Shell.Interop.__VSREGDOCLOCKHOLDER.RDLH_WeakLockHolder>) 标志。
 
-## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock 和文档修改
+## <a name="rdt_editlock-and-document-modification"></a>RDT_EditLock文档修改
 
-前面提到的标志表明， `RDT_EditLock` 如果文档由用户打开到可见的 **DocumentWindow**，则不可见的文档打开。 如果出现这种情况，则当隐藏 **DocumentWindow** 关闭时，用户将看到一个 **保存** 提示。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用该服务的实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> 最初仅在创建时才起作用 `RDT_ReadLock` (例如，以不可见的方式打开文档来分析信息) 。 稍后，如果必须修改文档，则锁定会升级到弱 **RDT_EditLock**。 如果用户打开了可见的 **DocumentWindow** 中的文档，则 `CodeModel` 会释放的弱弱性 `RDT_EditLock` 。
+前面提到的标志指示当用户将文档打开到可见的 DocumentWindow 中时，不可见的文档打开将 `RDT_EditLock` **生成它**。 发生这种情况时，当可见的 **DocumentWindow** 关闭时，用户会出现"保存"提示。 `Microsoft.VisualStudio.Package.Automation.OAProject.CodeModel` 使用服务的 实现最初在只采用 (（即，在以不公开状态打开文档以分析 <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> `RDT_ReadLock`) ）。 稍后，如果必须修改文档，则锁将升级到弱 **RDT_EditLock。** 如果用户随后在可见的 **DocumentWindow** 中打开文档， `CodeModel` 将释放 的 `RDT_EditLock` 弱 。
 
-如果用户关闭 **DocumentWindow** 并在系统提示保存打开的文档时选择 " **否** "，则 `CodeModel` 实现将释放文档中的所有信息，并在下次需要文档时从磁盘重新打开文档。 此行为的个很微妙是一个实例，用户在其中打开不可见的已打开文档的 **DocumentWindow** ，对其进行修改，将其关闭，然后在系统提示保存文档时选择 " **否** "。 在这种情况下，如果文档具有 `RDT_ReadLock` ，则该文档将不会实际关闭，并且修改后的文档在内存中保持打开状态，即使用户选择不保存文档也是如此。
+如果用户随后关闭 **DocumentWindow，** 然后在系统提示保存打开的文档时选择"否"，则实现将释放文档中的所有信息，然后在下次需要文档更多信息时以不公开状态从磁盘重新打开文档。 `CodeModel` 此行为的细微之处是用户打开不可见打开的文档的 **DocumentWindow，** 对其进行修改，将其关闭，然后在系统提示保存文档时选择"否"。  在这种情况下，如果文档具有 ，则文档实际上不会关闭，并且修改后的文档在内存中保持打开状态，即使用户选择不保存文档。 `RDT_ReadLock`
 
-如果文档的不可见打开使用弱弱 `RDT_EditLock` ，则当用户打开文档时，它将生成锁定，且不保留其他锁。 当用户关闭 **DocumentWindow** 并在系统提示保存文档时选择 " **否** " 时，文档必须从内存中关闭。 这意味着不可见的客户端必须侦听 RDT 事件以跟踪此事件。 下次需要该文档时，必须重新打开该文档。
+如果文档的不可见打开使用弱 ，则当用户以可视状态打开文档并且未持有其他锁时，它将 `RDT_EditLock` 生成其锁。 当用户关闭 **DocumentWindow** 并选择"否"时，当系统提示保存文档时，必须从内存中关闭该文档。 这意味着不可见的客户端必须侦听 RDT 事件以跟踪这种情况。 下次需要文档时，必须重新打开该文档。

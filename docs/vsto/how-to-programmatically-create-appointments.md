@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式创建约会
-description: 了解如何以编程方式创建约会，然后将收件人添加到 Microsoft Outlook 中的约会会议请求。
+description: 了解如何以编程方式创建约会，然后在 Microsoft Outlook 中将收件人添加到约会会议请求。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8b2125291331de76605c0bcad449b97f36a640cf
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 4ffdcb53a81bcba228063f926b40aa3b126d88e60abe376297b8ac46409d9bb7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827625"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408742"
 ---
 # <a name="how-to-programmatically-create-appointments"></a>如何：以编程方式创建约会
   此示例将创建一个约会，并将收件人添加到约会会议请求。

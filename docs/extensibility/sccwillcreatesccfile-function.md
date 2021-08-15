@@ -11,14 +11,15 @@ ms.assetid: 0d7542f0-4351-41b3-b24c-960ab99c05a1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9f9e6df29b9f44d852c7c84488a3febf590fcc0e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: dc4c16a81ec33fbf52eb79bbf25a48a07c79c81457d179920e031d4af2480bfd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900442"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321004"
 ---
 # <a name="sccwillcreatesccfile-function"></a>SccWillCreateSccFile 函数
 此函数确定源代码管理插件是否支持创建 MSSCCPRJ.SCC。每个给定文件的 SCC 文件。
@@ -54,7 +55,7 @@ SCCRTN SccWillCreateSccFile(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_E_INVALIDFILEPATH|数组中的某个路径无效。|

@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式在文档中扩展范围
-description: 了解如何以编程方式在文档级别或应用程序级别扩展 Microsoft Word 文档中的开始和结束点范围。
+title: 如何：以编程方式扩展文档中的范围
+description: 了解如何在文档级别或应用程序级别以编程方式扩展Microsoft Word文档中的起始点和终点范围。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7a539bbbc4ad8d73477e660ef9903ac51dce712f
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2098265ec257ae11353577ea7145bbe85d52d374501220f0f8c79ceb7bf04eb6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826520"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408716"
 ---
-# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以编程方式在文档中扩展范围
-  定义 Microsoft Office Word 文档中的 <xref:Microsoft.Office.Interop.Word.Range> 对象后，可以通过使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法来更改其起点和终点。 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A>和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法采用相同的两个参数： *Unit* 和 *Count*。 *Count* 参数是要移动的单位数， *Unit* 参数可以是以下 <xref:Microsoft.Office.Interop.Word.WdUnits> 值之一：
+# <a name="how-to-programmatically-extend-ranges-in-documents"></a>如何：以编程方式扩展文档中的范围
+  定义 Microsoft Office Word 文档中的 <xref:Microsoft.Office.Interop.Word.Range> 对象后，可以通过使用 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> 和 <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法来更改其起点和终点。 和 <xref:Microsoft.Office.Interop.Word.Range.MoveStart%2A> <xref:Microsoft.Office.Interop.Word.Range.MoveEnd%2A> 方法采用相同的两个参数 *：Unit* 和 *Count*。 Count 参数是要移动的单位数 *，Unit* 参数可以是以下值之 <xref:Microsoft.Office.Interop.Word.WdUnits> 一：
 
 - <xref:Microsoft.Office.Interop.Word.WdUnits.wdCharacter>
 
@@ -51,7 +52,7 @@ ms.locfileid: "107826520"
 
 ## <a name="to-extend-a-range"></a>若要扩展范围
 
-1. 定义字符的范围。 有关详细信息，请参阅 [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。
+1. 定义字符的范围。 有关详细信息，请参阅 [如何：以编程方式定义和选择文档中的范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)。
 
      下面的代码示例可用于文档级自定义项。
 
@@ -73,7 +74,7 @@ ms.locfileid: "107826520"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet41":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet41":::
 
-## <a name="document-level-customization-code"></a>文档级自定义项代码
+## <a name="document-level-customization-code"></a>文档级自定义代码
 
 ### <a name="to-extend-a-range-in-a-document-level-customization"></a>若要在文档级自定义项中扩展范围
 
@@ -91,9 +92,9 @@ ms.locfileid: "107826520"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet38":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet38":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
-- [如何：以编程方式折叠文档中的范围或选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
-- [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以编程方式折叠文档中的范围或选择](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
+- [如何：以编程方式定义和选择文档中的范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [如何：以编程方式检索范围中的开始字符和结束字符](../vsto/how-to-programmatically-retrieve-start-and-end-characters-in-ranges.md)
-- [如何：以编程方式在创建范围时排除段落标记](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)
+- [如何：在创建范围时以编程方式排除段落标记](../vsto/how-to-programmatically-exclude-paragraph-marks-when-creating-ranges.md)

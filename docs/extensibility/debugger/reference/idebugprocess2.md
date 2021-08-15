@@ -11,14 +11,15 @@ ms.assetid: 99f6cd06-4076-45ee-b2ae-fa2ad627fd18
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d56687cb3559b5807b488fa44dfdfc4048e4c58
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dede0cad4da45ccb5df4fe528214f4e0e22d2cdc9d5fe472a41be544e248c1cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081602"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416243"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此接口表示在端口上运行的进程。 如果端口为本地端口，则 `IDebugProcess2` 通常表示本地计算机上的物理进程。

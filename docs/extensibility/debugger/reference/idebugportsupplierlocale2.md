@@ -9,14 +9,15 @@ ms.assetid: 910e7220-da2a-4339-9fff-9fb1bad3c28c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: da7c08363d07e577d11259b8633aa15ac3cd0eb0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f2e3aa7025c12b74fa77c1256b686c2cf12e1e46d04e11417719e4a69c0c97e8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071761"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416542"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 为端口供应商提供区域设置支持。

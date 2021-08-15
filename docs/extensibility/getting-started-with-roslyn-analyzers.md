@@ -1,6 +1,6 @@
 ---
 title: 入门与 Roslyn 分析器 |Microsoft Docs
-description: 使用以下资源开始在 Visual Studio 中使用 Roslyn 分析器;包括教程和几个示例。
+description: 使用这些资源在 Visual Studio 中开始使用 Roslyn 分析器;包括教程和几个示例。
 ms.custom: SEO-VS-2020
 ms.date: 04/02/2018
 ms.topic: conceptual
@@ -8,18 +8,19 @@ ms.assetid: 367c2ec8-3059-46a5-9d1c-57bead0419e7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4579f148d2e27961fe1c579ffe3583e0e6be806c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d5210da636a32ecdbd67e16260db63853451c774c3004b02035b966d98e5ceff
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057593"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414735"
 ---
 # <a name="get-started-with-roslyn-analyzers"></a>Roslyn 分析器入门
 
-通过在 Visual Studio 中运行基于项目的代码分析器，API 作者可将特定于域的代码分析作为其 NuGet 包的一部分进行传送。 由于这些分析器由 .NET Compiler Platform 名为 "Roslyn ) " 的 (提供支持，因此，即使在完成该行之前键入，它们也可能在代码中产生警告 (不再需要等待生成代码即可发现问题) 。 分析器还可以通过 Visual Studio 灯泡提示符来显示自动代码修补程序，使您可以立即清理您的代码。
+通过 Visual Studio 中的基于项目的活动代码分析器，API 作者可将特定于域的代码分析作为其 NuGet 包的一部分进行传送。 由于这些分析器由 .NET Compiler Platform 名为 "Roslyn ) " 的 (提供支持，因此，即使在完成该行之前键入，它们也可能在代码中产生警告 (不再需要等待生成代码即可发现问题) 。 分析器还可以通过 Visual Studio 灯泡提示来显示自动代码修补程序，使您可以立即清理代码。
 
 ## <a name="get-started"></a>入门
 

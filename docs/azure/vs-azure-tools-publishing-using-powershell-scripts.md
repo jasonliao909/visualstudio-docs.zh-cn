@@ -4,16 +4,17 @@ description: 了解如何使用 Windows PowerShell 脚本通过 Visual Studio �
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
-ms.openlocfilehash: e0486e3a13b1c6b6ba421c5c0a97788f514413e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5cd76dc8582ee8190268c704ffb871c756e394848a747f3cccae2949ae894f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843951"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121406629"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 脚本发布到开发和测试环境
 
@@ -249,7 +250,7 @@ JSON 文件是在 **Configurations** 文件夹中创建的，其中包含的配�
         #Write a function to build and package your web application
     ```
 
-    若要生成 Web 应用程序，请使用 MsBuild.exe。 有关帮助，请参阅 [MSBuild Command-Line 引用](../msbuild/msbuild-command-line-reference.md)
+    若要生成 Web 应用程序，请使用 MsBuild.exe。 有关帮助，请参阅[MSBuild Command-Line 参考](../msbuild/msbuild-command-line-reference.md)
 
     ```powershell
     Write-VerboseWithTime 'Build-WebDeployPackage: Start'

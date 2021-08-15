@@ -11,17 +11,18 @@ ms.assetid: 1c3dead3-5d6c-4067-8418-4015f0b0dd07
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4fe55898f6dbc7713db6e013868b1c7f22a5faf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 383f994110eabdb590a79322e3327e0347ca186aa3ec58383958007250c9040c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071956"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416726"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 此方法检索允许枚举持久端口列表的对象。

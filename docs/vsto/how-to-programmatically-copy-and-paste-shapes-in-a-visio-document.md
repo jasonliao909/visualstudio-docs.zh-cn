@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b7cda46330967ef2b2b08db2109a030bbef8cace
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 25614ebc43e57f3bf21e922d6e4dd6d325dde11b4e62642f77c21ac8082a356d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828548"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423886"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以编程方式在 Visio 文档中复制和粘贴形状
   你可以以编程方式复制文档中某一页上的形状，并将其粘贴到同一文档中新的一页。 你可以选择将其粘贴到默认位置（活动窗口的中央），或将其粘贴到与在其原始页相同的坐标位置。
@@ -48,8 +49,8 @@ ms.locfileid: "107828548"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet15":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet15":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)
 - [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 - [使用 Visio 形状](../vsto/working-with-visio-shapes.md)
-- [如何：以编程方式向 Visio 文档添加形状](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)
+- [如何：以编程方式将形状添加到 Visio 文档](../vsto/how-to-programmatically-add-shapes-to-a-visio-document.md)

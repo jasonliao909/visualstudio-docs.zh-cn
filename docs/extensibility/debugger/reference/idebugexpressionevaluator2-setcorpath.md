@@ -1,6 +1,6 @@
 ---
-description: 设置 (CLR) 加载到调试器中的公共语言运行时的路径。
-title: IDebugExpressionEvaluator2：： SetCorPath |Microsoft Docs
+description: 设置在调试器中加载 (CLR) 公共语言运行时的路径。
+title: IDebugExpressionEvaluator2：：SetCorPath |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 27b614ff-7325-4f9b-8da4-61ee020c9410
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bd81d9dd5df086fcab3f401d4b3e14f65e9ce24c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a6ecfc95a45892c49a5df26215c200866ddb365b42ff62e92e8236b6b8975dc3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077338"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417270"
 ---
 # <a name="idebugexpressionevaluator2setcorpath"></a>IDebugExpressionEvaluator2::SetCorPath
-设置 (CLR) 加载到调试器中的公共语言运行时的路径。
+设置在调试器中加载 (CLR) 公共语言运行时的路径。
 
 ## <a name="syntax"></a>语法
 
@@ -41,10 +42,10 @@ int SetCorPath(
 
 ## <a name="parameters"></a>参数
 `pcstrCorPath`\
-中调试器中加载的 CLR 的路径。
+[in]调试器中加载的 CLR 的路径。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
  下面的示例演示如何为公开 [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)接口的 **ExpressionEvaluatorPackage** 对象实现此方法。

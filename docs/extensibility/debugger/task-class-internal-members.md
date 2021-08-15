@@ -11,14 +11,15 @@ ms.assetid: 28e47c3b-9323-424a-80ac-6cc3bf19e09b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 37691714d0168594b61a1a3849f7b65264e9999e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a8c6a40cb19315c6b754ef8e81208f78f1e1996837d6ee352d84a6df25041dc4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902886"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414956"
 ---
 # <a name="task-class---internal-members"></a>任务类 - 内部成员
 本文介绍 类的内部成员 <xref:System.Threading.Tasks.Task?displayProperty=fullName> ，这些成员可帮助你实现自定义调试器。 有关此类的一般信息，请参阅 <xref:System.Threading.Tasks.Task> 参考文章。
@@ -27,7 +28,7 @@ ms.locfileid: "112902886"
 
  **程序集：mscorlib** (*mscorlib.dll*) 
 
- 由于无法从 CIL 访问这些内部成员.NET Framework，因此在 CIL (中提供了以下) 。
+ 由于无法从 CIL 访问这些内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
 
 ## <a name="syntax"></a>语法
 
@@ -44,14 +45,14 @@ ms.locfileid: "112902886"
 
 ### <a name="methods"></a>方法
 
-|名称|描述|
+|名称|说明|
 |----------|-----------------|
 |[SetNotificationForWaitCompletion 方法](../../extensibility/debugger/setnotificationforwaitcompletion-method.md)|设置或清除TASK_STATE_WAIT_COMPLETION_NOTIFICATION位。|
 |[NotifyDebuggerOfWaitCompletion 方法](../../extensibility/debugger/notifydebuggerofwaitcompletion-method.md)|调试器用作断点目标的占位符方法。|
 
 ### <a name="fields"></a>字段
 
-|名称|描述|
+|名称|说明|
 |----------|-----------------|
 |[m_action](../../extensibility/debugger/m-action-field.md)|表示在 对象中执行的代码的 <xref:System.Threading.Tasks.Task> 委托。|
 |[m_contingentProperties](../../extensibility/debugger/m-contingentproperties-field.md)|存储 对象的其他 <xref:System.Threading.Tasks.Task> 属性。|

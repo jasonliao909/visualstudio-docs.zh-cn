@@ -11,15 +11,16 @@ ms.assetid: 9af4d5f9-1cfc-4221-aea7-c8cd3f7571a6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 972f8c477a62078b14d16ff61d3f6b8c7978616d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 748dd9b52dcb92412066242778bb8cff592b5d36b6159241577d47d0cbcc60be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062026"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334986"
 ---
 # <a name="walkthrough-add-custom-xaml-to-the-start-page"></a>演练：将自定义 XAML 添加到起始页
 
@@ -63,9 +64,9 @@ ms.locfileid: "105062026"
 
 ## <a name="test-the-custom-start-page"></a>测试自定义起始页
 
-1. 按 F5 。
+1. 按 **F5**。
 
-     此时将打开 Visual Studio 的实验实例，其中安装了自定义起始页但未选中。
+     Visual Studio 的实验实例随即打开，并且已安装自定义起始页但未选中。
 
 2. 在 Visual Studio 的实验实例中，打开 **Tools/Options/环境** 页。
 
@@ -73,13 +74,13 @@ ms.locfileid: "105062026"
 
 4. 在“视图”  菜单上，单击“起始页” 。
 
-5. 单击 " **必应** " 选项卡。
+5. 单击 "**必应**" 选项卡。
 
-     应会看到必应网页。
+     应该会看到一个必应网页。
 
 6. 单击 " **mybutton.src** " 选项卡。
 
-     此时会显示一个 " **MyProject** " 按钮，该按钮将打开 " **新建项目** " 对话框。
+     应会看到 " **MyProject** " 按钮，该按钮将打开 "**新建 Project** " 对话框。
 
 7. 关闭实验实例。
 
@@ -87,7 +88,7 @@ ms.locfileid: "105062026"
 
 ## <a name="next-steps"></a>后续步骤
 
-Visual Studio 起始页现在包含一个选项卡，其中显示了 "Web 浏览器" 选项卡和 "Mybutton.src" 选项卡。通过使用 *代码隐藏* 模型添加自定义 .dll，可以创建具有其他功能的自定义起始页，如 [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)中所示。 可以通过将生成的 .vsix 文件发布到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) 网站或其他网站或网络共享来与其他用户共享自定义起始页。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
+Visual Studio 起始页现在包含一个显示 "Web 浏览器" 选项卡和 "mybutton.src" 选项卡的选项卡。可以通过使用 *代码隐藏* 模型添加自定义的 .dll 来创建具有其他功能的自定义起始页，如 [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)中所示。 您可以通过将生成的 .vsix 文件发布到[Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站或其他网站或网络共享来与其他用户共享自定义起始页。 有关更多信息，请参见 [Deploying Custom Start Pages](../extensibility/deploying-custom-start-pages.md)。
 
 ## <a name="see-also"></a>另请参阅
 

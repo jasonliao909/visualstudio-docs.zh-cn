@@ -11,17 +11,18 @@ ms.assetid: 98a5d527-8a72-476c-8e92-0bff3d97c195
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c851689d9e47250457c93d1621acb6c5db98732b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1cad537b0c575bf792c1ad06b398e564ff6a5aba25f65a919b8df372506db803
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081550"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416204"
 ---
 # <a name="idebugprocess3getencavailablestate"></a>IDebugProcess3::GetENCAvailableState
 此方法获取进程的当前编辑和继续状态。 自定义端口供应商应该总是返回 `E_NOTIMPL` 。

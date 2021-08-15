@@ -1,6 +1,6 @@
 ---
 title: 测试区域6：删除 |Microsoft Docs
-description: 此源代码管理测试区域涉及 Visual Studio 源代码管理插件的解决方案资源管理器中的删除操作。
+description: 此源代码管理测试区域涵盖 Visual Studio 源代码管理插件的解决方案资源管理器中的删除操作。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 6f2e872c-5ba2-4303-9f50-a90cef9a6225
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e405df704dfbba14413bd3787a9fb9f959c62a46
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cd2534918bf1db69251681f282ee977dcd6efaf905f30e91fd718a4428958afd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078586"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336793"
 ---
 # <a name="test-area-6-delete"></a>测试区域 6：删除
 此源代码管理插件测试区域包含删除操作。
@@ -31,7 +32,7 @@ ms.locfileid: "105078586"
 
 - 文件夹
 
-- Project
+- 项目
 
   根据项目类型，可以选择 **删除** 项目 (将文件保留在磁盘上) 或 **删除** 项目 (删除磁盘上的文件) 。 任一操作都从 **解决方案资源管理器** 中删除项目或项。
 

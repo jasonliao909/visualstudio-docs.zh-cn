@@ -11,19 +11,20 @@ ms.assetid: 6f2e39d6-b79d-407e-976f-b62a3cedd378
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e006e4462522f4c464f40e0656dcef4d32c85fb7
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 123807b321df25a83498c87ee3bd5cfeddd45416799ed6f839d9124bd073182d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899246"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414124"
 ---
 # <a name="mssccprjscc-file"></a>MSSCCPRJ.SCC.SCC 文件
-使用 IDE 在源代码管理下放置 Visual Studio 解决方案或项目时，IDE 会收到两个关键信息。 信息以字符串的形式来自源代码管理插件。 这些字符串 "AuxPath" 和 "ProjName" 在 IDE 中是不透明的，但它们由插件用于在版本控制中找到解决方案或项目。 IDE 通常通过调用 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)获取这些字符串，然后将它们保存在解决方案或项目文件中，以便以后调用 [SccOpenProject](../extensibility/sccopenproject-function.md)。 在解决方案和项目文件中嵌入时，当用户分支、分叉或复制版本控制中的解决方案和项目文件时，不会自动更新 "AuxPath" 和 "ProjName" 字符串。 为了确保解决方案和项目文件指向其版本控制中的正确位置，用户必须手动更新这些字符串。 因为字符串应是不透明的，所以可能并不总是清楚地说明如何更新它们。
+使用 ide 在源代码管理下放置 Visual Studio 解决方案或项目时，ide 将接收两个关键信息。 信息以字符串的形式来自源代码管理插件。 这些字符串 "AuxPath" 和 "ProjName" 在 IDE 中是不透明的，但它们由插件用于在版本控制中找到解决方案或项目。 IDE 通常通过调用 [SccGetProjPath](../extensibility/sccgetprojpath-function.md)获取这些字符串，然后将它们保存在解决方案或项目文件中，以便以后调用 [SccOpenProject](../extensibility/sccopenproject-function.md)。 在解决方案和项目文件中嵌入时，当用户分支、分叉或复制版本控制中的解决方案和项目文件时，不会自动更新 "AuxPath" 和 "ProjName" 字符串。 为了确保解决方案和项目文件指向其版本控制中的正确位置，用户必须手动更新这些字符串。 因为字符串应是不透明的，所以可能并不总是清楚地说明如何更新它们。
 
- 源代码管理插件可以通过将 "AuxPath" 和 "ProjName" 字符串存储在名为 *mssccprj.scc* 文件的特殊文件中来避免此问题。 它是插件拥有和维护的本地客户端文件。 此文件从不置于源代码管理下，而是由包含受源代码管理的文件的每个目录的插件生成的。 为了确定哪些文件是 Visual Studio 解决方案和项目文件，源代码管理插件可以将文件扩展名与标准或用户提供的列表进行比较。 一旦 IDE 检测到插件支持 *mssccprj.scc* 文件，它就不再将 "AuxPath" 和 "ProjName" 字符串嵌入到解决方案和项目文件中，而是从 *mssccprj.scc* 文件中读取这些字符串。
+ 源代码管理插件可以通过将 "AuxPath" 和 "ProjName" 字符串存储在名为 *mssccprj.scc* 文件的特殊文件中来避免此问题。 它是插件拥有和维护的本地客户端文件。 此文件从不置于源代码管理下，而是由包含受源代码管理的文件的每个目录的插件生成的。 为了确定哪些文件 Visual Studio 解决方案和项目文件，源代码管理插件可以将文件扩展名与标准或用户提供的列表进行比较。 一旦 IDE 检测到插件支持 *mssccprj.scc* 文件，它就不再将 "AuxPath" 和 "ProjName" 字符串嵌入到解决方案和项目文件中，而是从 *mssccprj.scc* 文件中读取这些字符串。
 
  支持 *mssccprj.scc* 文件的源代码管理插件必须遵循以下准则：
 

@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d5a279a04b1bd76933df335bc0b2527ab4b2418f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: c877554685a3a8111d529fab0fa58be4e4f00f4d8a86716a716391cbc97ac55e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389639"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411240"
 ---
 # <a name="improve-performance-for-code-maps"></a>提高代码图的性能
 

@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 28a5bc44b0f6fa04d32c574e9772369709736ddd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f048132778350a9ffa19cb36833b40fd4a0903b3d0df54264f8bbd873c41902d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949072"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409697"
 ---
 # <a name="create-sharepoint-workflow-solutions"></a>创建 SharePoint 工作流解决方案
 

@@ -10,14 +10,15 @@ ms.assetid: 7e4237c3-90a1-4149-bd8a-3643d1dde0df
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: a25d049b17381c49bfa1b4a5544972b6dc5fe499
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b368c0090878bdd25bccf068df9ce19e3457e43349376dfb0249d01e590c5c4f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955640"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121423717"
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 

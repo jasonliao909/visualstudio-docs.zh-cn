@@ -1,6 +1,6 @@
 ---
 description: 获取端口供应商名称。
-title: IDebugPortSupplier2：： GetPortSupplierName |Microsoft Docs
+title: IDebugPortSupplier2：：GetPortSupplierName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e4c368ab-640d-4b5b-9f74-810dc9364d8f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60b57c6d0753a8009e8f7f351fc22c4f33185c27
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 43fb412e94a76117621e681ab9d572df24d31634b8b776968ae75a49d7b8046d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072047"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416789"
 ---
 # <a name="idebugportsupplier2getportsuppliername"></a>IDebugPortSupplier2::GetPortSupplierName
 获取端口供应商名称。
@@ -42,10 +43,10 @@ int GetPortSupplierName(
 
 ## <a name="parameters"></a>参数
 `pbstrName`\
-弄返回端口供应商的名称。
+[out]返回端口供应商的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

@@ -1,6 +1,6 @@
 ---
 title: 卸载具有 Windows Installer 的 VSPackage |Microsoft Docs
-description: Windows Installer 可以通过反转安装来卸载你的 VSPackage。 了解如何处理 Windows Installer 包中的自定义操作。
+description: Windows安装程序可以通过反转安装来卸载你的 VSPackage。 了解如何处理 Windows Installer 包中的自定义操作。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: c4575ac7-82da-4af8-a375-ea756a101fbf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb5d0fe0e4812d66f6981ea58dfb51f19336d98b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 688a438934f1b5a522e2fec211a4b134af143bcc40de4244f5538c5e084409b2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090715"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414178"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 卸载 VSPackage
 在大多数情况下，Windows Installer 只需通过 "撤消" 安装 VSPackage 的操作即可卸载你的 VSPackage。 还必须在卸载后运行的 [命令](../../extensibility/internals/commands-that-must-be-run-after-installation.md) 中讨论的自定义操作。 由于对 devenv.exe 的调用刚好出现在安装和卸载的 InstallFinalize 标准操作之前，因此 CustomAction 和 InstallExecuteSequence 表项都可用于这两种情况。
@@ -38,8 +39,8 @@ ms.locfileid: "105090715"
  另一种方法是添加 `OR Installed` 在卸载过程中不重要的启动条件。 这可确保在卸载过程中条件始终为 true，因此不会显示启动条件错误消息。
 
 > [!NOTE]
-> `Installed` 属性 Windows Installer 在检测到已在系统上安装 VSPackage 时设置。
+> `Installed`属性 Windows Installer 在检测到已在系统上安装 VSPackage 时设置。
 
 ## <a name="see-also"></a>另请参阅
-- [Windows 安装程序](/previous-versions/ee231230(v=vs.100))
+- [Windows Installer](/previous-versions/ee231230(v=vs.100))
 - [检测系统要求](../../extensibility/internals/detecting-system-requirements.md)

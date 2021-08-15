@@ -11,17 +11,18 @@ ms.assetid: 3842c417-a3c9-4259-a05f-52b64b829ef6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c093c49745d7fa1b754db020c85a538992de9555
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 465c5f50f8e15951da4d6d135da12d6d00d15649a3d2e506431f4bf28f674969
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086477"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338184"
 ---
 # <a name="name_match"></a>NAME_MATCH
 选择匹配名称的 case 选项。
@@ -49,7 +50,7 @@ public enum NameMatchOptions {
  未指定任何选项。
 
  `nmCaseSensitive`\
- 指示要匹配的名称是区分大小写的。
+ 指示要匹配的名称区分大小写。
 
  `nmCaseInsensitive`\
  指示要匹配的名称不区分大小写。
@@ -66,11 +67,11 @@ public enum NameMatchOptions {
 - [GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)
 
 ## <a name="requirements"></a>要求
- 标头： sh。h
+ 标头：sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

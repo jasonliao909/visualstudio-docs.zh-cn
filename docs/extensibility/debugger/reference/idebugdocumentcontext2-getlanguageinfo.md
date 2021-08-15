@@ -11,17 +11,18 @@ ms.assetid: 6a212ee5-414c-4eb5-ab11-19db1786943d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a621ca5f23af52d81e14dba6b737ca31a2525727
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f21a9dbc1d74815eb9adf4bcd3ac3ce6ec10dedd341352dd108c5aa88803e29f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066667"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323594"
 ---
 # <a name="idebugdocumentcontext2getlanguageinfo"></a>IDebugDocumentContext2::GetLanguageInfo
 获取与此文档上下文关联的语言。
@@ -47,7 +48,7 @@ int GetLanguageInfo(
 弄返回在此文档上下文中实现代码的语言的名称。
 
 `pguidLanguage`\
-弄返回在此文档上下文中实现代码的语言的 GUID。 例如 `guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 并不局限于提供的语言 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
+弄返回在此文档上下文中实现代码的语言的 GUID。 例如，`guidVBScriptLang` 或 `guidCPPLang`。 此 GUID 并不局限于提供的语言 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 ## <a name="return-value"></a>返回值
 如果成功， `S_OK` 则返回; 否则返回错误代码。

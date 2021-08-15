@@ -11,14 +11,15 @@ ms.assetid: 588c6a92-2147-4d8b-a357-96ca7da0a092
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cc047fee2c92f47c181aef455b8175a4e7998176
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 986a5f33b4b2476cc327b5e2e4b287f1e29cc5d95487d61ace6ebf22e9d23916
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905587"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321046"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函数
 此函数返回源代码管理插件支持的其他功能。
@@ -49,7 +50,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|获取功能操作已成功完成。|
 |SCC_E_UNKNOWNERROR<br /><br /> SCC_E_NONSPECIFICERROR|出现未知或未指定的错误。|

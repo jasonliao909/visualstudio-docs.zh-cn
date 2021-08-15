@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 57fdbcef1aaf9c0903a21a2eeb6436ce1fce25d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8addba363743a59279e7b99cfa2b7f088b23ba8bf15a0b2f6917ed365f54962
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918545"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243557"
 ---
 # <a name="how-to-populate-documents-with-data-from-services"></a>如何：用服务中的数据填充文档
 
@@ -29,7 +30,7 @@ ms.locfileid: "99918545"
 
 [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
-下列示例演示了如何在设计时向文档中添加数据绑定控件。 有关如何在运行时在 VSTO 外接程序中添加数据绑定控件的示例，请参阅 [演练：在 Vsto 外接程序项目中绑定到服务中的数据](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
+下列示例演示了如何在设计时向文档中添加数据绑定控件。 有关如何在运行时 VSTO 外接程序中添加数据绑定控件的示例，请参阅[演练：在 VSTO 外接程序项目中绑定到服务中的数据](../vsto/walkthrough-binding-to-data-from-a-service-in-a-vsto-add-in-project.md)。
 
 ## <a name="to-populate-a-document-level-project-with-data-from-a-web-service"></a>使用 web 服务中的数据填充文档级项目
 
@@ -53,7 +54,7 @@ ms.locfileid: "99918545"
 
 ## <a name="see-also"></a>另请参阅
 
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)

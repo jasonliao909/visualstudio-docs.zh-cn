@@ -1,6 +1,6 @@
 ---
 title: 如何：创建事件接收器 |Microsoft Docs
-description: 创建一个事件接收器，以便您可以在用户与 SharePoint 项（如列表或列表项）交互时做出响应。
+description: 创建事件接收器，以便在用户与列表或列表项等 SharePoint 项进行交互时做出响应。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,28 +17,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d0eebee6e37fbd6696923da0e470f05688fa0387
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: ed270e1640879ff1be43794e4b254f4ba1879e824f077be9ebd39bdc68a96cb7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216574"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332282"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
-  通过创建 *事件接收器*，你可以在用户与 SharePoint 项（如列表或列表项）交互时做出响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过遵循本主题，可以了解如何将事件接收器添加到列表实例。
+  通过创建 *事件接收器*，你可以在用户与列表或列表项等 SharePoint 项进行交互时做出响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过遵循本主题，可以了解如何将事件接收器添加到列表实例。
 
- 若要完成这些步骤，必须已安装 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 并支持 Windows 和 SharePoint 版本。 由于此示例需要一个 SharePoint 项目，因此还必须完成主题 [演练：创建网站栏、内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)主题中的过程。
+ 若要完成这些步骤，必须已安装 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 并支持 Windows 和 SharePoint 版本。 由于此示例需要 SharePoint 项目，因此还必须完成主题[演练：创建网站栏、内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中的过程。
 
 ## <a name="adding-an-event-receiver"></a>添加事件接收器
- 在 [演练：创建网站栏、内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md) 中创建的项目包含自定义网站列、自定义列表和内容类型。 在下面的过程中，您将通过添加一个简单的事件处理程序 (事件接收器) 到列表实例来展开此项目，以演示如何处理 SharePoint 项（如列表）中发生的事件。
+ 在[演练：创建网站栏、内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中创建的项目包含自定义网站列、自定义列表和内容类型 SharePoint。 在下面的过程中，您将通过添加一个简单的事件处理程序 (事件接收器) 到列表实例来展开此项目，以演示如何处理 SharePoint 项（如列表）中发生的事件。
 
 #### <a name="to-add-an-event-receiver-to-the-list-instance"></a>将事件接收器添加到列表实例
 
-1. 打开在 [演练：创建网站栏、内容类型和 SharePoint 列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中创建的项目。
+1. 打开在[演练：创建网站栏、内容类型和 SharePoint 的列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)中创建的项目。
 
-2. 在 **解决方案资源管理器** 中，选择名为 " **诊所**" 的 SharePoint 项目节点。
+2. 在 **解决方案资源管理器** 中，选择名为 "**诊所**" 的 "SharePoint 项目" 节点。
 
 3. 在菜单栏上，依次选择“项目” > “添加新项”。
 
@@ -46,7 +47,7 @@ ms.locfileid: "106216574"
 
 5. 在 " **模板** " 窗格中，选择 " **事件接收器**"，将其命名为 **TestEventReceiver1**，然后选择 **"确定"** 按钮。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     此时将显示 " **SharePoint 自定义向导**"。
 
 6. 在 " **要执行哪种类型的事件接收器？"** 列表中，选择 " **列表项事件**"。
 
@@ -61,7 +62,7 @@ ms.locfileid: "106216574"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/CustomField1/TestEventReceiver1/TestEventReceiver1.cs" id="Snippet1":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/CustomField1_VB/EventReceiver1/EventReceiver1.vb" id="Snippet1":::
 
-     代码将运行，SharePoint 站点将显示在 web 浏览器中。
+     代码将运行，并且 SharePoint 站点将显示在 web 浏览器中。
 
 10. 在快速启动栏上，选择 " **患者** " 链接，然后选择 " **添加新项** " 链接。
 

@@ -9,17 +9,18 @@ ms.assetid: 831a5a1a-c4af-4520-9fdf-3a731aeff85c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 701e5543a81ede2d4ecab0019da243ccbfd4abdd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5534e66639c213131c26f7da2b077bf3d5c2f096e7480a06f54ae0109a3e0e1d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071280"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415775"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
 根据给定的名称检索度量值。

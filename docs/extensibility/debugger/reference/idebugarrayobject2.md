@@ -1,5 +1,5 @@
 ---
-description: 表示托管数组对象，并允许表达式计算器 (EE) 确定数组 (下限) 的基本索引。
+description: 表示一个托管数组对象，并允许表达式计算器 (企业版) 确定数组 (下限) 的基础索引。
 title: IDebugArrayObject2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,20 +9,21 @@ ms.assetid: be6e504d-4ab3-4141-a61b-0953ee0e038e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 169f4df61bcd4a58e74e0d83cee362b3926d2b36
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8f7509b56b577e17c3522191c1c16c3ba84f2419cda7763c0dcc8dbbd9d4ec1f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067564"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323828"
 ---
 # <a name="idebugarrayobject2"></a>IDebugArrayObject2
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 表示托管数组对象，并允许表达式计算器 (EE) 确定数组 (下限) 的基本索引。
+ 表示一个托管数组对象，并允许表达式计算器 (企业版) 确定数组 (下限) 的基础索引。
 
 ## <a name="syntax"></a>语法
 

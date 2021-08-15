@@ -11,14 +11,15 @@ ms.assetid: 46ac1f9f-4ecc-4a72-88d3-4c7e1647e1cb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1c1279fd425e8519ede49763ee2a307778c91e9e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 65972621980b311dc3a396836c4c85286e10a00e2e93589a9b3aeaffc8627528
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061246"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337976"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>源代码管理插件入门
 若要创建源代码管理插件，您必须创建一个 DLL 来实现源代码管理插件 API 中定义的函数，然后将该 DLL 注册 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 到，使其可在源代码版本控制中使用。

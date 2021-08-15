@@ -1,6 +1,6 @@
 ---
-description: 当当前堆栈帧上的调试器调用它想要截获当前异常时。
-title: IDebugStackFrame3：： InterceptCurrentException |Microsoft Docs
+description: 由当前堆栈帧上的调试器在要截获当前异常时调用。
+title: IDebugStackFrame3：：InterceptCurrentException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 116c7324-7645-4c15-b484-7a5cdd065ef5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8aa2815eab2e78b373340ca1d4c60b4ae9929548
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6604c4a47e44df05d02b3b6c24c9efe12eeac0f2478ff28037e9bdb3c2a2e18a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053238"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338431"
 ---
 # <a name="idebugstackframe3interceptcurrentexception"></a>IDebugStackFrame3::InterceptCurrentException
-当当前堆栈帧上的调试器调用它想要截获当前异常时。
+由当前堆栈帧上的调试器在要截获当前异常时调用。
 
 ## <a name="syntax"></a>语法
 
@@ -44,31 +45,31 @@ int InterceptCurrentException(
 
 ## <a name="parameters"></a>参数
 `dwFlags`\
-中指定不同的操作。 目前仅支持 [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) 值， `IEA_INTERCEPT` 并且必须指定。
+[in]指定不同的操作。 目前，仅 [INTERCEPT_EXCEPTION_ACTION](../../../extensibility/debugger/reference/intercept-exception-action.md) 值 `IEA_INTERCEPT` ，必须指定该值。
 
 `pqwCookie`\
-弄标识特定异常的唯一值。
+[out]标识特定异常的唯一值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
- 下面是最常见的错误返回。
+ 下面是最常见的错误返回结果。
 
 |错误|说明|
 |-----------|-----------------|
 |`E_EXCEPTION_CANNOT_BE_INTERCEPTED`|无法截获当前异常。|
-|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|尚未在当前执行框架中搜索处理程序。|
+|`E_EXCEPTION_CANNOT_UNWIND_ABOVE_CALLBACK`|当前执行帧尚未搜索处理程序。|
 |`E_INTERCEPT_CURRENT_EXCEPTION_NOT_SUPPORTED`|此帧不支持此方法。|
 
 ## <a name="remarks"></a>备注
- 当引发异常时，调试器将在异常处理过程中从运行时获得控制。 在这段时间内，如果该帧要截获异常，则调试器可以询问当前堆栈帧。 通过这种方式，截获的异常实质上是堆栈帧的即时异常处理程序，即使该堆栈帧没有异常处理程序 (例如，程序代码) 中的 try/catch 块。
+ 引发异常时，调试器在异常处理过程中从关键点的运行时获得控制权。 在这些关键时刻，调试器可以询问当前堆栈帧帧是否要截获异常。 这样，被截获的异常实质上是堆栈帧的一个即用异常处理程序，即使堆栈帧没有异常处理程序 (例如，程序代码中的 try/catch 块) 。
 
- 当调试器需要知道是否应截获异常时，它会对当前堆栈帧对象调用此方法。 此方法负责处理异常的所有详细信息。 如果未实现 [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) 接口或 `InterceptStackException` 方法返回任何错误，则调试器会继续正常处理异常。
+ 当调试器想要了解异常是否应被截获时，它会在当前堆栈帧对象上调用此方法。 此方法负责处理异常的所有详细信息。 如果未 [实现 IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md) 接口或方法返回任何错误，则调试器将继续 `InterceptStackException` 正常处理异常。
 
 > [!NOTE]
-> 异常只能在托管代码中截取，也就是说，当正在调试的程序在 .NET 运行时运行时。 当然，第三方语言实现者可以 `InterceptStackException` 在其自己的调试引擎中实现，如果选择了。
+> 只能在托管代码中截获异常，即当正在调试的程序在 .NET 运行时下运行时。 当然，第三方语言实现者可以在其自己的调试引擎中实现 `InterceptStackException` （如果已选择）。
 
- 截获完成后， [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 将收到信号。
+ 拦截完成后，发出 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 信号。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)

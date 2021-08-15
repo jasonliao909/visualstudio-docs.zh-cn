@@ -13,34 +13,35 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b1fe1d75673dc47f423cf398118230cd1530def0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be2657c94d49c73d245e7bf8bbb59e3b0b018ba84d942f6144b5e0360f968d5e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866224"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121327755"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练：创建具有数据集设计器的数据集
 
 在本演练中，您将使用 **数据集设计器** 创建一个数据集。 本文将指导你完成创建新项目的过程，并向其中添加新的 **数据集** 项。 您将了解如何在不使用向导的情况下创建基于数据库中的表的表。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 SQL Server Express 的 LocalDB，请从 [SQL Server Express 下载 "页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装它。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 Visual Studio 安装程序中，SQL Server Express LocalDB 可以作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
+    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (SQL Server 对象资源管理器作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) 复制到剪贴板。 此 T-sql 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    2. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
 
-    3. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+    3. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
 
        一小段时间后，查询完成执行并创建 Northwind 数据库。
 
@@ -50,11 +51,11 @@ ms.locfileid: "99866224"
 
 2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
-3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
+3. 在中间窗格中，选择 " **Windows 窗体应用程序**" 项目类型。
 
 4. 将项目命名为 **DatasetDesignerWalkthrough**，然后选择 **"确定"**。
 
-     Visual Studio 会将项目添加到 **解决方案资源管理器** 并在设计器中显示一个新窗体。
+     Visual Studio 会将项目添加到 **解决方案资源管理器** 中，并在设计器中显示一个新窗体。
 
 ## <a name="add-a-new-dataset-to-the-application"></a>向应用程序添加新的数据集
 
@@ -72,7 +73,7 @@ ms.locfileid: "99866224"
 
 1. 在“视图”菜单上，单击“服务器资源管理器”。
 
-2. 在 **服务器资源管理器** 中，单击 " **连接到数据库** " 按钮。
+2. 在 **服务器资源管理器** 中，单击 "**连接到数据库**" 按钮。
 
 3. 创建与 Northwind 示例数据库的连接。
 
@@ -104,7 +105,7 @@ ms.locfileid: "99866224"
 
 - 保存数据集。
 
-- 在 " **数据源** " 窗口中选择项，然后将其拖到窗体上。 有关详细信息，请参阅 [将 Windows 窗体控件绑定到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
+- 在 " **数据源** " 窗口中选择项，然后将其拖到窗体上。 有关详细信息，请参阅[将 Windows 窗体控件绑定到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
 
 - 向 Tableadapter 添加更多查询。
 

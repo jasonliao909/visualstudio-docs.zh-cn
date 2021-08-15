@@ -11,14 +11,15 @@ ms.assetid: 62a71579-36b3-48b9-a1c8-04ab100efa08
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13a0a77808004c7bc8f408bbf34a3ed4f0715b36
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 20479eec7cce78996c70a98045747dd5132112fe3f81ec72ffefca3e118e9aa9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900130"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321030"
 ---
 # <a name="sccgetparentprojectpath-function"></a>SccGetParentProjectPath 函数
 此函数确定指定项目的父项目路径。 当用户将项目添加到源代码管理Visual Studio调用此函数。
@@ -51,11 +52,11 @@ SCCRTN SccGetParentProjectPath(
 
  lpProjPath
 
-[in]标识项目路径的字符串 (，SCC_PRJPATH_SIZE NULL 终止符) 。
+[in]标识项目路径的 (，SCC_PRJPATH_SIZE NULL 终止符) 。
 
  lp一文ProjPath
 
-[in， out]用于标识项目参数的辅助 (，SCC_PRJPATH_SIZE NULL 终止符) 。
+[in， out]辅助字符串，用于标识 (项目SCC_PRJPATH_SIZE，包括 NULL 终止符) 。
 
  lpParentProjPath
 
@@ -64,12 +65,12 @@ SCCRTN SccGetParentProjectPath(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功获取父项目路径。|
-|SCC_E_INITIALIZEFAILED|无法初始化项目。|
+|SCC_E_INITIALIZEFAILED|Project无法初始化。|
 |SCC_E_INVALIDUSER|用户无法登录到源代码管理插件。|
-|SCC_E_UNKNOWNPROJECT|源代码管理插件不知道项目。|
+|SCC_E_UNKNOWNPROJECT|Project源代码管理插件未知。|
 |SCC_E_INVALIDFILEPATH|文件路径无效或不可用。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
 |SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
@@ -88,16 +89,16 @@ SCCRTN SccGetParentProjectPath(
 
  调用 `SccGetParentProjectPath` 时， `lpProjPath` 和 `lpAuxProjPath` 将不为空，并且 将对应于有效的项目。 这些字符串通常由 IDE 从对函数的上一次调用 `SccGetProjPath` 接收。
 
- `lpUser`参数是用户名。 IDE 将传递以前从函数接收的同一用户名，源代码管理插件应 `SccGetProjPath` 使用该名称作为默认值。 如果用户已与插件建立打开的连接，则插件应尝试消除任何提示，以确保函数以静默方式工作。 但是，如果登录失败，插件应提示用户输入登录名，并且收到有效登录名时，将名称传回 `lpUser` 。 由于插件可能会更改此字符串，因此 IDE 将始终分配大小为 `SCC_USER_LEN` +1 (的缓冲区) 。 如果更改了字符串，则新字符串必须是有效的登录名 (至少与旧字符串) 。
+ `lpUser`参数是用户名。 IDE 将传递以前从函数接收的同一用户名，源代码管理插件应 `SccGetProjPath` 使用该名称作为默认值。 如果用户已与插件建立打开的连接，则插件应尝试消除任何提示，以确保函数以静默方式工作。 但是，如果登录失败，插件应提示用户输入登录名，并且收到有效登录名时，将名称传回 `lpUser` 。 由于插件可能会更改此字符串，因此 IDE 将始终分配大小为 `SCC_USER_LEN` (+1) 。 如果更改了字符串，则新字符串必须是有效的登录名 (与旧字符串一样) 。
 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技术说明
- 在源代码管理中添加解决方案和项目的过程Visual Studio以最大程度地减少提示用户在源代码管理系统中选择位置的时间。 如果源代码管理插件Visual Studio [SccCreateSubProject](../extensibility/scccreatesubproject-function.md) 和 函数这两个新函数，则这些更改由用户 `SccGetParentProjectPath` 激活。 但是，以下注册表项可用于禁用这些更改并还原到上一Visual Studio (源代码管理插件 API 版本 1.1) 行为：
+ 在源代码管理中添加解决方案和项目的过程已简化Visual Studio以最大程度地减少提示用户在源代码管理系统中选择位置的时间。 如果源代码管理插件Visual Studio [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)和 函数这两个新函数，则这些更改由用户 `SccGetParentProjectPath` 激活。 但是，以下注册表项可用于禁用这些更改，并还原到上一Visual Studio (源代码管理插件 API 版本 1.1) 行为：
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"=dword：00000001**
 
  如果此注册表项不存在或设置为 dword：000000000，Visual Studio尝试使用新函数 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
 
- 如果注册表项设置为 dword：000000001，Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理的操作会像在早期版本的 Visual Studio 中一样工作。
+ 如果注册表项设置为 dword：00000001，Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理的操作会像在早期版本的 Visual Studio 中一样工作。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
