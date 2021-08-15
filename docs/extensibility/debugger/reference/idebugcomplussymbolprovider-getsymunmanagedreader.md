@@ -10,17 +10,18 @@ ms.assetid: 8f1c1627-217f-4405-8141-7a2eb80310a5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3640d93a0a2df4177e77b88987e6dbf13730412b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 65c1075ab249347c3ec6762da44710cf6ae77807dd525e8e6c258ee4e6e21c95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095636"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417543"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 检索非托管代码使用的符号读取器。

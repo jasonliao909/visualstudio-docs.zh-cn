@@ -10,19 +10,20 @@ ms.assetid: a3f6071c-eac8-4bcd-8ffd-8d0a2d24a252
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3fdb660fd4e7c595f522686280f8bec6c0acae81
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e2ad76b040b7c63689568a4f8e7696f48db343ba9a4a9b8fe043e69bb00b78aa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905093"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403484"
 ---
 # <a name="capability-flags"></a>功能标志
-SCC_CAP_ *xxx* 标志是位标志，用于指示源代码管理插件的功能。 SCC_EXCAP_ *xxx* 标志是增量标志，指示扩展功能并解析为整数值。
+SCC_CAP_ *xxx* 标志是位标志，用于指示源代码管理插件的功能。 xxx SCC_EXCAP_ *是* 指示扩展功能并解析为整数值的增量标志。
 
-|功能代码|值|描述|
+|功能代码|值|说明|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_REMOVE`|0x00000001L|支持 [SccRemove](../extensibility/sccremove-function.md) 和 命令。|
 |`SCC_CAP_RENAME`|0x00000002L|支持 [SccRename](../extensibility/sccrename-function.md) 和 命令。|
@@ -52,7 +53,7 @@ SCC_CAP_ *xxx* 标志是位标志，用于指示源代码管理插件的功能�
 
 ## <a name="capability-bits-added-in-version-12"></a>版本 1.2 中添加的功能位
 
-|功能代码|值|描述|
+|功能代码|值|说明|
 |---------------------|-----------|-----------------|
 |`SCC_CAP_CREATESUBPROJECT`|0x00010000L|支持 [SccCreateSubProject](../extensibility/scccreatesubproject-function.md)。|
 |`SCC_CAP_GETPARENTPROJECT`|0x00020000L|支持 [SccGetParentProjectPath](../extensibility/sccgetparentprojectpath-function.md)。|
@@ -60,12 +61,12 @@ SCC_CAP_ *xxx* 标志是位标志，用于指示源代码管理插件的功能�
 |`SCC_CAP_DIRECTORYSTATUS`|0x00080000L|支持 [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)。|
 |`SCC_CAP_DIRECTORYDIFF`|0x00100000L|支持 [SccDirDiff](../extensibility/sccdirdiff-function.md)。|
 |`SCC_CAP_MULTICHECKOUT`|0x08000000L|支持对文件和 [SccIsMultiCheckoutEnabled 进行多次签出](../extensibility/sccismulticheckoutenabled-function.md)。|
-|`SCC_CAP_SCCFILE`|0x80000000L|支持 *MSSCCPRJ.SCC* (用户/管理员替代) [和 SccWillCreateSccFile](../extensibility/sccwillcreatesccfile-function.md)。|
+|`SCC_CAP_SCCFILE`|0x80000000L|支持 *MSSCCPRJ.SCC* (用户/管理员替代) [和 SccWillCreateSccFile。](../extensibility/sccwillcreatesccfile-function.md)|
 
 ## <a name="capability-bits-added-in-version-13"></a>版本 1.3 中添加的功能位
  这些标志一次传递到 [SccGetExtendedCapabilities](../extensibility/sccgetextendedcapabilities-function.md) 函数，以确定是否支持该功能。
 
-|扩展功能代码|值|描述|
+|扩展功能代码|值|说明|
 |------------------------------|-----------|-----------------|
 |`SCC_EXCAP_CHECKOUT_LOCALVER`|1|支持 `SCC_CHECKOUT_LOCALVER` 签出选项。|
 |`SCC_EXCAP_BACKGROUND_GET`|2|支持 [SccBackgroundGet](../extensibility/sccbackgroundget-function.md)。|
@@ -76,8 +77,8 @@ SCC_CAP_ *xxx* 标志是位标志，用于指示源代码管理插件的功能�
 |`SCC_EXCAP_GET_USER_OPTIONS`|7|支持 [SccGetUserOption](../extensibility/sccgetuseroption-function.md)。|
 |`SCC_EXCAP_THREADSAFE_QUERY_INFO`|8|支持在多个线程上调用 SccQueryInfo。|
 |`SCC_EXCAP_REMOVE_DIR`|9|支持 SccRemoveDir 函数。|
-|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|可以删除签出的文件。|
-|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|可以重命名签出的文件。|
+|`SCC_EXCAP_DELETE_CHECKEDOUT`|10|可删除已签出的文件。|
+|`SCC_EXCAP_RENAME_CHECKEDOUT`|11|可重命名已签出的文件。|
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)

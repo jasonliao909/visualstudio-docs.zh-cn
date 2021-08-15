@@ -1,6 +1,6 @@
 ---
 title: '如何：向 Backstage 视图添加控件 '
-description: 了解如何使用功能区设计器将控件添加到单击 "文件" 选项卡时打开的菜单。
+description: 了解如何使用功能区设计器将控件添加到单击"文件"选项卡时打开的菜单。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -20,33 +20,34 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 830ecea036ee972321d98994ab36924e0c61a09b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ce9a1bda7f828a71fe6128d034d7a81dbb5e678541c3ebac06b3f3214259fec
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954262"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424133"
 ---
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：向 Backstage 视图添加控件
-  您可以使用功能区设计器将控件添加到单击 " **文件** " 选项卡时打开的菜单。当你运行应用程序时，添加到 " **文件** " 选项卡的控件将显示为名为 " **外接程序**" 的组。
+  可以使用功能区设计器将控件添加到单击"文件"选项卡时打开 **的** 菜单。运行应用程序时，添加到"文件"选项卡 **的控件将显示** 名为 **"外接程序"的组**。
 
- 在 Visual Studio 中使用功能区设计器不能将控件放置在内置控件之前或之后。 内置控件是已在 Backstage 视图中显示的控件。 如果要将控件放置在内置控件之前或之后，必须使用功能区 XML。 有关 **功能区 (XML)** 的详细信息，请参阅 [功能区 XML](../vsto/ribbon-xml.md)。 有关自定义 Backstage 视图的详细信息，请参阅面向 [开发人员的 office 2010 backstage 视图的简介](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 和 [为开发人员自定义 office 2010 backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
+ 不能在控件中通过使用功能区设计器在内置控件之前或之后Visual Studio。 内置控件是已出现在 Backstage 视图中的控件。 如果要将控件定位在内置控件之前或之后，则必须使用功能区 XML。 有关功能区和 **XML () ，** 请参阅 [功能区 XML](../vsto/ribbon-xml.md)。 有关自定义 Backstage 视图的信息，请参阅开发人员的[Office 2010 Backstage](/previous-versions/office/developer/office-2010/ee691833(v=office.14))视图简介和为开发人员自定义[Office 2010 Backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
-### <a name="to-add-controls-to-backstage-view"></a>向 Backstage 视图添加控件
+### <a name="to-add-controls-to-backstage-view"></a>将控件添加到 Backstage 视图
 
-1. 在设计视图中打开功能区项。
+1. 打开"功能区"中的设计视图。
 
-     有关如何向项目添加 **功能区 (可视化设计器)** 项的信息，请参阅 [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+     若要了解如何将功能区添加到 (**设计器)** 项目，请参阅如何 [：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-2. 在功能区设计器中，单击 " **文件** " 选项卡。
+2. 在功能区设计器中，单击" **文件"** 选项卡。
 
-     此时将显示一个菜单设计器。 此设计图面不包含任何控件。
+     将出现一个菜单设计器。 此设计图面不包含任何控件。
 
-3. 从 "**工具箱**" 的 " **Office 功能区控件**" 选项卡中，将以下任意控件拖动到菜单设计器上：
+3. 从 **"Office"** 的"功能区控件"选项卡 **中，** 将以下任何控件拖动到菜单设计器上：
 
     - Button
 
@@ -62,7 +63,7 @@ ms.locfileid: "99954262"
 
     - ToggleButton
 
-4. 拖动控件，将其移至菜单上的新位置。
+4. 拖动控件以将它们移动到菜单上的新位置。
 
 ## <a name="see-also"></a>另请参阅
 - [功能区概述](../vsto/ribbon-overview.md)

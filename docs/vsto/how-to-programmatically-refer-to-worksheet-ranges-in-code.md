@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 6ea4e3da3c67d55aedea0d85a0a35b8ed2cf93b6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: e031876c4fb822f8f01b041bffecdc4ff6d6e5afec537610d296758b9779a05b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827079"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440716"
 ---
 # <a name="how-to-programmatically-refer-to-worksheet-ranges-in-code"></a>如何：以编程方式在代码中引用工作表范围
   您可以使用类似的过程来引用 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件或本机 Excel 范围对象的内容。
@@ -50,7 +51,7 @@ ms.locfileid: "107827079"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet47":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet47":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [如何：以编程方式在工作表中检查拼写](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)

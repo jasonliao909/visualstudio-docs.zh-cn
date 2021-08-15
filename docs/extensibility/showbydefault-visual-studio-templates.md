@@ -1,6 +1,6 @@
 ---
-title: " (Visual Studio 模板的 ShowByDefault 元素) "
-description: 了解 ShowByDefault 元素，当设置为 false 时，它将指定仅在指定的 TemplateGroupID 下显示模板。
+title: 'ShowByDefault 元素 (Visual Studio模板) '
+description: 了解 ShowByDefault 元素，以及设置为 false 时如何指定模板将仅在指定的 TemplateGroupID 下显示。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 25ba91a6276615929fed9494000abbfde07ef2b8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ceef636c722d950a96e522286714a50ddfd7e7422335c8934affd928357c234a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056423"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400564"
 ---
-# <a name="showbydefault-element-visual-studio-templates"></a> (Visual Studio 模板的 ShowByDefault 元素) 
-如果 `false` 为，则指定模板将只显示在指定的 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md)下。
+# <a name="showbydefault-element-visual-studio-templates"></a>ShowByDefault 元素 (Visual Studio模板) 
+如果 `false` 为 ，则指定模板将仅在指定的 [TemplateGroupID 下显示](../extensibility/templategroupid-element-visual-studio-templates.md)。
 
  \<VSTemplate> \<TemplateData>
  \<ShowByDefault>
@@ -87,6 +87,6 @@ ms.locfileid: "105056423"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [创建Project项模板](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [TemplateGroupID 元素（Visual Studio 模板）](../extensibility/templategroupid-element-visual-studio-templates.md)

@@ -1,5 +1,5 @@
 ---
-title: ClearCollection &lt; T &gt; 活动设计器工作流设计器
+title: 工作流设计器 - ClearCollection &lt; T &gt; 活动设计器
 description: 了解如何使用 ClearCollection <T> 活动设计器创建和配置 ClearCollection <T> 活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,18 +10,19 @@ ms.assetid: db0e5da2-7b5a-4f1a-864c-f3aeeeeb51a7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 31d576712804a75fdca57374ce82a53ff0d1ce84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 14c1468c9bc9221cad6885508c73bd0a5a5b3cd2b1bdbcfaa37f432ecd7e9605
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942082"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408027"
 ---
 # <a name="clearcollectiont-activity-designer"></a>ClearCollection\<T> 活动设计器
 
-" **ClearCollection \<T>** " 活动设计器用于创建和配置 <xref:System.Activities.Statements.ClearCollection%601> 活动。
+**ClearCollection \<T>** 活动设计器用于创建和配置 <xref:System.Activities.Statements.ClearCollection%601> 活动。
 
 ## <a name="the-clearcollectiont-activity"></a>ClearCollection \<T> 活动
 
@@ -29,9 +30,9 @@ ms.locfileid: "99942082"
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>使用 ClearCollection \<T> 活动设计器
 
-" **ClearCollection \<T>** " 活动设计器可在 "**工具箱**" 的 "**集合**" 类别中找到，可通过单击工作流设计器的 "**工具箱**" 选项卡进行访问。 或者，从 "**视图**" 菜单中选择 **"工具箱**"，或按 **Ctrl** + **Alt** + **X**。
+   **ClearCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-可以将 " **\<T> ClearCollection** " 活动设计器从 "**工具箱**" 拖放到工作流设计器图面上放置活动的任何位置，例如中 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器将创建一个 <xref:System.Activities.Statements.ClearCollection%601> 活动，其默认值为 <xref:System.Activities.Activity.DisplayName%2A> ClearCollection<Int32 \> 。  (默认情况下， *TypeArgument* 为 **Int32**。 可以在属性网格中更改 TypeArgument。 ) <xref:System.Activities.Activity.DisplayName%2A> 可以在 **ClearCollection<T \>** 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑值。 其他属性必须在属性网格上编辑。
+可以将 **ClearCollection \<T>** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建一个活动，该活动默认为 <xref:System.Activities.Statements.ClearCollection%601> <xref:System.Activities.Activity.DisplayName%2A> Int32<ClearCollection。 \> *(，TypeArgument* 默认为 **Int32**。 TypeArgument 可以在属性 grid.) 可以在 <xref:System.Activities.Activity.DisplayName%2A> **ClearCollection<T \>** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
 
 ### <a name="the-clearcollectiont-properties"></a>ClearCollection \<T> 属性
 
@@ -39,9 +40,9 @@ ms.locfileid: "99942082"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.ClearCollection%601> 活动的可选友好名称。 默认值为 ClearCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|True|指定要清除其中项的集合。 此集合的类型为 **ICollection \<TypeArgument> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
-|*TypeArgument*|True|指定包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请在属性网格的组合框中更改 " *TypeArgument* " 的值。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.ClearCollection%601> 活动的可选友好名称。 默认值为 ClearCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|正确|指定要清除其中项的集合。 此集合的类型为 **ICollection \<TypeArgument> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
+|*TypeArgument*|正确|指定包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请更改属性网格中组合框中 *TypeArgument* 的值。|
 
 ## <a name="see-also"></a>另请参阅
 

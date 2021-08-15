@@ -11,14 +11,15 @@ ms.assetid: aee34a14-4f9c-4ad3-845f-c96ee938cefd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 054163732d0ca4a2b818acf948da0490ebe0f8e6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3f912441fbcc12953f9fd3d1bdf4fbc3f11d466292405113744e2104fdf54c2a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086958"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415697"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
 当在正在调试的程序中创建线程时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

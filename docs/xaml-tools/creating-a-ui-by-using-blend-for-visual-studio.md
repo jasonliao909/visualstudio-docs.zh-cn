@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fdc3fc2241807cd1b36ec64d620c7b46a498918
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5981bee624b8638aa2140eeaf073a42bb7c18126b3c02da2b07ca4c2bad393d3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889260"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440283"
 ---
 # <a name="blend-for-visual-studio-overview"></a>Blend for Visual Studio 概述
 

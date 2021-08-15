@@ -22,14 +22,15 @@ ms.assetid: efd9df4c-2e69-4c50-992c-9678a8d8cf19
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 14091ecd5adc76762901c02c582c845aa0dbd513
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 59ec73b408337e12c8c0d2a17c2d2e3ab78e9dbedaf6da88fc3e576a635b912c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944116"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358423"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 

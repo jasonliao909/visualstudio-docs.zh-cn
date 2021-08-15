@@ -1,5 +1,5 @@
 ---
-description: 指定模板所需的 .NET Framework 的最低版本。
+description: 指定模板所需的.NET Framework版本。
 title: RequiredFrameworkVersion 元素（Visual Studio 模板）
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -15,19 +15,19 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 661e4067ac0191444be8ec7f1136f805ea8b39b5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5164202c10008112b6072b1a45aed7d52c3ddf0598c97f6b69b32ba1cb9aadf4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068448"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305186"
 ---
-# <a name="requiredframeworkversion-element-visual-studio-templates"></a> (Visual Studio 模板的 RequiredFrameworkVersion 元素) 
+# <a name="requiredframeworkversion-element-visual-studio-templates"></a>RequiredFrameworkVersion (Visual Studio模板) 
 
-指定模板所需的 .NET Framework 的最低版本。 这会使 " **目标框架版本** " 下拉列表显示在 " **新建项目** " 对话框中。 `RequiredFrameworkVersion`元素还决定了下拉列表中可用的最小值。
+指定模板所需的.NET Framework版本。 这会导致"**新建框架版本"** 对话框中显示"目标框架 **Project** 下拉列表。 `RequiredFrameworkVersion`元素还确定下拉列表中可用的最低值。
 
 > [!IMPORTANT]
-> 从 Visual Studio 2017 版本15.6 开始，"**新项目**" 对话框的 "**模板**" 部分中的 "**目标框架版本**" 下拉列表不再是所显示模板的筛选器。 下拉列表功能作为所选模板的框架选取器。
+> 从 Visual Studio 2017 版本 15.6开始，"目标框架版本"下拉列表不再是"新建"对话框的"模板"部分中显示的模板 **Project** 筛选器。 相反，下拉列表用作所选模板的框架选取器。
 
  \<VSTemplate> \<TemplateData>
  \<RequiredFrameworkVersion>
@@ -51,20 +51,20 @@ ms.locfileid: "105068448"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将模板分类并定义它在 " **新建项目** " 或 " **添加新项** " 对话框中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建项"Project **或"** 添加新项"**对话框中的显示** 方式。|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 文本必须是模板所需的 .NET Framework 的最小版本号。
+ 文本必须是模板所需的.NET Framework版本号。
 
 ## <a name="remarks"></a>备注
 
-`RequiredFrameworkVersion` 是可选元素。 仅在以下情况下使用此元素：如果该模板支持 .NET Framework 的任何)  (和更高版本。 如果你指定 `RequiredFrameworkVersion` 元素，而你的模板不支持 .NET Framework 的特定最低版本，则 " **目标 Framework 版本** " 下拉列表将显示 "不适用"。
+`RequiredFrameworkVersion` 是可选元素。 只有当模板支持特定的最低版本或更高版本时 (此元素（如果) 版本.NET Framework。 如果指定 元素，并且模板不支持特定最低版本的 .NET Framework，则"目标框架版本"下拉列表将在不适用时 `RequiredFrameworkVersion` 显示。 
 
 ## <a name="example"></a>示例
 
-下面的示例演示标准类模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+下面的示例演示标准类模板的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
 
 ```xml
 <VSTemplate Type="Item" Version="3.0.0"
@@ -84,7 +84,7 @@ ms.locfileid: "105068448"
 </VSTemplate>
 ```
 
-在此示例中，模板所需的 .NET Framework 的最低版本 `RequiredFrameworkVersion` 为3.0。 使用此模板创建的项目可面向从3.0 开始 .NET Framework 版本。
+此示例中，模板所需的.NET Framework版本（由 表示） `RequiredFrameworkVersion` 为 3.0。 使用此模板创建的项目可以面向.NET Framework 3.0 开始的版本。
 
 ## <a name="see-also"></a>请参阅
 

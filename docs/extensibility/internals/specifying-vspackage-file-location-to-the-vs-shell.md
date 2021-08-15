@@ -1,6 +1,6 @@
 ---
-title: 将 VSPackage 文件位置指定到 VS Shell |Microsoft Docs
-description: 了解如何使 Visual Studio 能够找到用于加载 VSPackage 的程序集 DLL。
+title: 将 VSPackage 文件位置指定为 VS Shell |Microsoft Docs
+description: 了解如何使用户能够Visual Studio程序集 DLL 来加载 VSPackage。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,24 +11,25 @@ ms.assetid: beb8607a-4183-4ed2-9ac8-7527f11513b1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: efec1ac3f7ccb3884265f3740108aaef261e9378
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0c3d04c96291c3c7e40fe1c7a7eeb63bb5a3252fc12070700fc1c5d15eaa2ce2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064058"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432067"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>指定 VS Shell 的 VSPackage 文件位置
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够找到用于加载 VSPackage 的程序集 DLL。 您可以通过多种方式找到该方法，如下表所述。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够找到程序集 DLL 才能加载 VSPackage。 可以通过各种方式找到它，如下表所述。
 
 | 方法 | 说明 |
 | - | - |
-| 使用 CodeBase 注册表项。 | 基本代码键可用于指示 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 从任何完全限定的文件路径加载 VSPackage 程序集。 键的值应为 DLL 的文件路径。 这是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 加载包程序集的最佳方式。 此方法有时称为 "基本代码/专用安装目录技术"。 在注册期间，基本代码的值通过类型的实例传递给注册属性类 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> 。 |
-| 将 DLL 放置在 **PrivateAssemblies** 目录中。 | 将程序集放在目录的 **PrivateAssemblies** 子目录中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 系统会自动检测位于 **PrivateAssemblies** 中的程序集，但在 " **添加引用** " 对话框中看不到这些程序集。 **PrivateAssemblies** 和 **PublicAssemblies** 之间的区别在于： **PublicAssemblies** 中的程序集在 "**添加引用**" 对话框中进行枚举。 如果选择不使用 "基本代码/专用安装目录" 技术，则应安装到 **PrivateAssemblies** 目录中。 |
-| 使用具有强名称的程序集和程序集注册表项。 | 可以使用程序集键显式定向 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 到加载强名称的 VSPackage 程序集。 键的值应为程序集的强名称。 |
-| 将 DLL 放置在 **PublicAssemblies** 目录中。 | 最后，还可以将程序集放置在 **PublicAssemblies** 子目录中。 系统会自动检测位于 **PublicAssemblies** 中的程序集，这些程序集也会显示在中的 " **添加引用** " 对话框中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。<br /><br /> 如果 VSPackage 的程序集包含旨在由其他 VSPackage 开发人员重新使用的托管组件，则只能将这些程序集放入 **PublicAssemblies** 目录中。 大多数程序集不满足此条件。 |
+| 使用 CodeBase 注册表项。 | CodeBase 密钥可用于指示从任何完全限定的文件路径加载 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage 程序集。 键的值应为 DLL 的文件路径。 这是加载包程序集 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的最佳方法。 此方法有时称为"CodeBase/专用安装目录技术"。 在注册过程中，代码库的值通过 类型的实例传递到注册属性 <xref:Microsoft.VisualStudio.Shell.RegistrationAttribute.RegistrationContext> 类。 |
+| 将 DLL 放入 **PrivateAssemblies** 目录。 | 将程序集放在 **目录的 PrivateAssemblies** 子 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 目录中。 将自动检测 **位于 PrivateAssemblies** 中的程序集，但在"添加引用"**对话框中不可见。** **PrivateAssemblies** 和 **PublicAssemblies** 之间的区别在于 **，PublicAssemblies** 中的程序集在"添加引用"**对话框中枚举。** 如果选择不使用"CodeBase/专用安装目录"技术，应安装到 **PrivateAssemblies** 目录中。 |
+| 使用强名称程序集和程序集注册表项。 | 程序集密钥可用于显式指示加载 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 名为 VSPackage 的强程序集。 键的值应为程序集的强名称。 |
+| 将 DLL 放入 **PublicAssemblies** 目录。 | 最后，程序集也可以放入 **PublicAssemblies** 子目录中。 将自动检测位于 **PublicAssemblies** 中的程序集，并且也会显示在 中的 **"添加引用** "对话框中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。<br /><br /> VSPackage 程序集应仅放置在 **PublicAssemblies** 目录中，如果它们包含旨在供其他 VSPackage 开发人员重用的托管组件。 大多数程序集不满足此条件。 |
 
 > [!NOTE]
-> 为所有依赖程序集使用具有强名称的已签名程序集。 还应将这些程序集安装在自己的目录或全局程序集缓存 (GAC) 。 这可以防止与具有相同基文件名（称为弱名称绑定）的程序集发生冲突。
+> 将强名称签名程序集用于所有依赖程序集。 这些程序集还应安装在你自己的目录中或 GAC (全局) 。 这可防范与基文件名相同的程序集（称为弱名称绑定）发生冲突。

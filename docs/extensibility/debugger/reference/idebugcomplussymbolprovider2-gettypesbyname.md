@@ -1,6 +1,6 @@
 ---
-description: 根据给定的名称检索类型。
-title: IDebugComPlusSymbolProvider2：： GetTypesByName |Microsoft Docs
+description: 根据类型的名称检索类型。
+title: IDebugComPlusSymbolProvider2：：GetTypesByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: ef76b1a8-6910-48fe-b4af-d9045eefd23f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ec177db735c8562798e7fde19e9da2c8fc670d4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f407ebf44a9dbb0b678805d5eed38ef19098cd096a594e116d2d67370fdbaad7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067161"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342383"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
-根据给定的名称检索类型。
+根据类型的名称检索类型。
 
 ## <a name="syntax"></a>语法
 
@@ -45,22 +46,22 @@ int GetTypesByName(
 
 ## <a name="parameters"></a>参数
 `pszClassName`\
-中类型的名称。
+[in]类型的名称。
 
 `nameMatch`\
-中选择匹配的类型，例如区分大小写。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举中的一个值。
+[in]选择匹配类型，例如区分大小写。 来自 NAME_MATCH [枚举的值](../../../extensibility/debugger/reference/name-match.md) 。
 
 `ppEnum`\
-弄包含具有给定名称的一种或多种类型的枚举器。
+[out]包含具有给定名称的类型或类型的枚举器。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-对于泛型类型，要查找 "List \<int> " 或 "list" 的名称将 \<int,int> 是 "list"。 如果具有相同名称的类型出现在多个模块中，则 `ppEnum` 参数将包含所有副本。 必须使用 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 并根据参数进行区分 `guidModule` 。
+对于泛型类型，查找"List"或 \<int> \<int,int> "List"的名称为"List"。 如果同名的类型出现在多个模块中， `ppEnum` 则 参数将包含所有副本。 你必须使用 [GetTypeInfo，](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 并基于 参数 `guidModule` 进行区分。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypesByName(

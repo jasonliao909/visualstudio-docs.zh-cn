@@ -11,17 +11,18 @@ ms.assetid: d5b6f03c-d49d-4b83-b072-016ac3124f5f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b42b6f029ee6bbffdb1c59c55a2781d87d450d9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca026ad8885056f4c05a57646207c2403058ccec0500430319f740ce6608f35a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081745"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338964"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
 获取此进程的 GUID。

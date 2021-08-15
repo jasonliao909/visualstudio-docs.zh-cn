@@ -9,14 +9,15 @@ ms.assetid: 5b98e908-fd15-49a6-9010-933c9b948085
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 13541766cdcd6cdd3a0a49673703d6abea82a5c7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 524663723537dd84233a9570104a779cbc3411921640768f1bcdc6a9d89e1ee2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094167"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121308046"
 ---
 # <a name="idebugcomplussymbolprovider"></a>IDebugComPlusSymbolProvider
 表示一个 COM + 符号提供程序，其中包含特定于托管代码的方法。
@@ -28,7 +29,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
- 虽然对于表达式计算器非常有用的接口之间没有分隔 (EE) 和旨在供调试引擎 (取消) 的接口，但以下方法可能仅适用于开发人员： AreSymbolsLoaded、GetAddressesInModuleFromPosition、GetEntryPoint、GetFunctionLineOffset、GetLocalVariableLayout、IsFunctionStale、LoadSymbols、LoadSymbolsFromStream、ReplaceSymbols、UnloadSymbols 和 UpdateSymbols。
+ 尽管对表达式计算器有用的接口之间没有分隔 (企业版) 以及旨在由调试引擎用于 (DE) 的接口，但以下方法可能仅适用于开发人员： AreSymbolsLoaded、GetAddressesInModuleFromPosition、GetEntryPoint、GetFunctionLineOffset、GetLocalVariableLayout、IsFunctionStale、LoadSymbols、LoadSymbolsFromStream、ReplaceSymbols、UnloadSymbols 和 UpdateSymbols。
 
 ## <a name="methods"></a>方法
  除了 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 接口上的方法，此接口还实现以下方法：
@@ -37,7 +38,7 @@ IDebugComPlusSymbolProvider : IDebugSymbolProvider
 |------------|-----------------|
 |[AreSymbolsLoaded](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-aresymbolsloaded.md)|确定给定应用程序域标识符是否为指定模块加载调试符号。|
 |[CreateTypeFromPrimitive](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-createtypefromprimitive.md)|从指定的基元类型创建类型。|
-|[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|将指定模块中的文档位置映射到一个调试地址数组。|
+|[GetAddressesInModuleFromPosition](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getaddressesinmodulefromposition.md)|将指定模块中的文档位置地图为调试地址的数组。|
 |[GetArrayTypeFromAddress](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getarraytypefromaddress.md)|根据给定的调试地址检索有关指定数组的类型信息。|
 |[GetAssemblyName](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getassemblyname.md)|检索给定模块和应用程序域的程序集的名称。|
 |[GetAttributedClassesForLanguage](../../../extensibility/debugger/reference/idebugcomplussymbolprovider-getattributedclassesforlanguage.md)|检索具有指定的特性的类，这些类在给定的编程语言中实现。|

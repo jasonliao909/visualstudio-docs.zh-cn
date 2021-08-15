@@ -23,14 +23,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a84a0c21bba42263e7b4dad9ad9118f462389ad6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c34a56c9dc1a66750c5e924a904b9f96e0253b997eec8c61f77a7815ff0f7133
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827495"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267476"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能区 (XML) 项使你可以通过使用 XML 来自定义功能区。 如果要以功能区 (可视化设计器) 项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可对每个项执行的操作的比较，请参阅 [功能区概述](../vsto/Ribbon-overview.md)。
@@ -62,7 +63,7 @@ ms.locfileid: "107827495"
 - 定义功能区类中的回叫方法。
 
 > [!NOTE]
-> Outlook 还需要一个额外的步骤。 有关详细信息，请参阅 [自定义 Outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+> Outlook 还需要一个额外的步骤。 有关详细信息，请参阅[为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
  有关演示如何从功能区实现应用程序自动化的演练，请参阅 [演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)。
 
@@ -77,7 +78,7 @@ ms.locfileid: "107827495"
 
  在特性中指定的方法可具有任何名称。 但该名称必须与在功能区代码文件中定义的方法的名称相匹配。
 
- 有许多不同类型的回叫方法可分配给功能区控件。 有关可用于每个控件的回调方法的完整列表，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面， (第3部分（共) 3 部分 ](/previous-versions/office/developer/office-2007/aa722523(v=office.12))）。
+ 有许多不同类型的回叫方法可分配给功能区控件。 有关可用于每个控件的回调方法的完整列表，请参阅技术文章[为开发人员自定义 Office (2007) 功能区用户界面 (第3部分（共) 3 部分](/previous-versions/office/developer/office-2007/aa722523(v=office.12))）。
 
 ### <a name="define-callback-methods"></a><a name="CallBackMethods"></a> 定义回调方法
  定义功能区代码文件中功能区类中的回叫方法。 回叫方法具有以下几个要求：
@@ -88,7 +89,7 @@ ms.locfileid: "107827495"
 
 - 其签名必须与可用于关联功能区控件的某类回叫方法匹配。
 
-  有关功能区控件的回叫方法签名的完整列表，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面， (第3部分（共) 3 部分 ](/previous-versions/office/developer/office-2007/aa722523(v=office.12))）。 Visual Studio 不对在功能区代码文件中创建的回叫方法提供 IntelliSense 支持。 如果创建的回叫方法与有效签名不匹配，代码虽然能够编译，但当用户单击控件时不会执行任何操作。
+  有关功能区控件的回叫方法签名的完整列表，请参阅技术文章为[开发人员自定义 Office (2007) 功能区用户界面 (第3部分（共) 3 部分](/previous-versions/office/developer/office-2007/aa722523(v=office.12))）。 Visual Studio 不对在功能区代码文件中创建的回叫方法提供 IntelliSense 支持。 如果创建的回叫方法与有效签名不匹配，代码虽然能够编译，但当用户单击控件时不会执行任何操作。
 
   所有回叫方法都有表示调用了方法的控件的 <xref:Microsoft.Office.Core.IRibbonControl> 参数。 可使用此参数重用多个控件的相同回叫方法。 下面的代码示例演示根据用户单击的控件执行不同任务的 **onAction** 回叫方法。
 
@@ -125,14 +126,14 @@ ms.locfileid: "107827495"
 
  这些元素具有指定自定义功能区的外观和行为的特性。 下表介绍功能区 XML 文件中的默认特性。
 
-|Attribute|父元素|描述|
+|属性|父元素|描述|
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|标识当应用程序加载功能区时调用的方法。|
 |**idMso**|**"选项卡**|标识要显示在功能区中的内置选项卡。|
 |**id**|**group**|标识组。|
 |**label**|**group**|指定在组上显示的文本。|
 
- 功能区 XML 文件中的默认元素和特性是可用元素和特性一小部分。 有关可用元素和属性的完整列表，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面， (第2部分（共) 3 部分 ](/previous-versions/office/developer/office-2007/aa338199(v=office.12))）。
+ 功能区 XML 文件中的默认元素和特性是可用元素和特性一小部分。 有关可用元素和属性的完整列表，请参阅技术文章[为开发人员自定义 Office (2007) 功能区用户界面 (第2部分（共) 3 部分](/previous-versions/office/developer/office-2007/aa338199(v=office.12))）。
 
 ## <a name="ribbon-class-reference"></a><a name="RibbonExtensionClass"></a> 功能区类引用
  Visual Studio 在功能区代码文件中生成功能区类。 将功能区上控件的回叫方法添加到此类。 此类实现 <xref:Microsoft.Office.Core.IRibbonExtensibility> 接口。
@@ -142,10 +143,10 @@ ms.locfileid: "107827495"
 |方法|说明|
 |------------|-----------------|
 |`GetCustomUI`|返回功能区 XML 文件的内容。 Microsoft Office 应用程序调用此方法以获取一个 XML 字符串，该字符串定义自定义功能区的用户界面。 此方法实现 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法。 **注意：** `GetCustomUI`只应实现以返回功能区 XML 文件的内容;不应使用它来初始化 VSTO 外接程序。   特别是，不应在 `GetCustomUI` 实现中尝试显示对话框或其他窗口。 否则，自定义功能区可能不会正常运行。 如果必须运行初始化 VSTO 外接程序的代码，请将代码添加到 `ThisAddIn_Startup` 事件处理程序。|
-|`OnLoad`|将 <xref:Microsoft.Office.Core.IRibbonControl> 参数分配给 `Ribbon` 字段。 Microsoft Office 应用程序在加载自定义功能区时调用此方法。 您可以使用此字段动态更新自定义功能区。 有关详细信息，请参阅技术文章 [为开发人员自定义 Office (2007) 功能区用户界面 (第1部分（共) 3 部分 ](/previous-versions/office/developer/office-2007/aa338202(v=office.12))）。|
+|`OnLoad`|将 <xref:Microsoft.Office.Core.IRibbonControl> 参数分配给 `Ribbon` 字段。 Microsoft Office 应用程序在加载自定义功能区时调用此方法。 您可以使用此字段动态更新自定义功能区。 有关详细信息，请参阅技术文章[为开发人员自定义 Office (2007) 功能区用户界面 (第1部分（共) 3 部分](/previous-versions/office/developer/office-2007/aa338202(v=office.12))）。|
 |`GetResourceText`|由 `GetCustomUI` 方法调用，以获取功能区 XML 文件的内容。|
 
 ## <a name="see-also"></a>另请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
-- [Office UI 自定义](../vsto/office-ui-customization.md)
+- [OfficeUI 自定义](../vsto/office-ui-customization.md)

@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 TargetPlatformName 元素 |Microsoft Docs"
+title: TargetPlatformName 元素 (Visual Studio模板) |Microsoft Docs
 description: 了解 TargetPlatformName 元素及其如何指定项目模板面向的平台。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5045a5fc2f29d00c08996fc71acedb228e4f98ae
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d888b393f669305b03379e0d138ecfa5e75305981a0bec03f53424b95ad6ec0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068396"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358880"
 ---
 # <a name="targetplatformname-element-visual-studio-templates"></a>TargetPlatformName 元素（Visual Studio 模板）
 指定项目模板面向的平台。 此元素用于指定项目模板用于创建 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。
@@ -67,5 +67,5 @@ ms.locfileid: "105068396"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建Project项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

@@ -11,14 +11,15 @@ ms.assetid: 26c9ba92-e3b9-4dd2-bd5e-76b17745e308
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e938cdaedf8541d787673371cfce3d07e005711f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 617c94220d13eed915a854bb9cf638bb390db1aeaa3a111c089d65283446f15e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904638"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447761"
 ---
 # <a name="sccdirdiff-function"></a>SccDirDiff 函数
 此函数显示客户端磁盘上的当前本地目录与源代码管理下的相应项目之间的差异。
@@ -59,7 +60,7 @@ SCCRTN SccDirDiff(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|磁盘上的目录与源代码管理中的项目相同。|
 |SCC_I_FILESDIFFER|磁盘上的目录与源代码管理中的项目不同。|
@@ -73,7 +74,7 @@ SCCRTN SccDirDiff(
 ## <a name="remarks"></a>备注
  此函数用于指示源代码管理插件向用户显示对指定目录的更改列表。 插件以自己选择的格式打开自己的窗口，以显示磁盘上用户的目录与版本控制下的相应项目之间的差异。
 
- 如果插件支持目录比较，则它必须支持基于文件名比较目录，即使不支持"快速差异"选项。
+ 如果插件支持目录比较，则必须支持基于文件名比较目录，即使不支持"快速差异"选项。
 
 |`dwFlags`|解释|
 |---------------|--------------------|
@@ -81,7 +82,7 @@ SCCRTN SccDirDiff(
 |SCC_DIFF_IGNORESPACE|忽略空格 (可用于快速差异或可视) 。|
 |SCC_DIFF_QD_CONTENTS|如果源代码管理插件支持，则以无提示方式比较目录、字节字节。|
 |SCC_DIFF_QD_CHECKSUM|如果插件支持，则通过校验和以无提示方式比较目录，或者，如果不受支持，则回滚到SCC_DIFF_QD_CONTENTS。|
-|SCC_DIFF_QD_TIME|如果插件支持，请通过时间戳以无提示方式比较目录，或者，如果不受支持，则SCC_DIFF_QD_CHECKSUM或SCC_DIFF_QD_CONTENTS。|
+|SCC_DIFF_QD_TIME|如果受插件支持，请通过时间戳以无提示方式比较目录，或者，如果不受支持，则SCC_DIFF_QD_CHECKSUM或SCC_DIFF_QD_CONTENTS。|
 
 > [!NOTE]
 > 此函数使用与 [SccDiff 相同的命令标志](../extensibility/sccdiff-function.md)。 但是，源代码管理插件可能会选择不支持目录的"快速差异"操作。

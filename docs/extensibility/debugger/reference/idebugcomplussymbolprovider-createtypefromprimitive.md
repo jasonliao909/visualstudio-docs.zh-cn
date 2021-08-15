@@ -10,17 +10,18 @@ ms.assetid: 37213cc2-a038-42ea-9b28-3ae40d4cfe69
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f09e61efe513d5698af6fc9a64e1d7625585fa8c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c3ea09912859ef36a3be8dac4444fb523771f7442b8a6cea3fedf19814d393f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088284"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342448"
 ---
 # <a name="idebugcomplussymbolprovidercreatetypefromprimitive"></a>IDebugComPlusSymbolProvider::CreateTypeFromPrimitive
 从指定的基元类型创建类型。

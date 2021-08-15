@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 SolutionFolder 元素 |Microsoft Docs"
+title: SolutionFolder 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 SolutionFolder 元素以及它如何对多项目模板中的项目进行分组。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f65607a5411270e7f21e6ec6cdac0c087824b32b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c8865456b5b25b2f65a839bd947f558e803803533c7aa58f51f6bf01aa0a679
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056332"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121273599"
 ---
 # <a name="solutionfolder-element-visual-studio-templates"></a>SolutionFolder 元素（Visual Studio 模板）
 对多项目模板中的项目进行分组。
@@ -62,7 +62,7 @@ ms.locfileid: "105056332"
 |`SolutionFolder`|对多项目模板中的项目进行分组。|
 
 ## <a name="remarks"></a>备注
- 多项目模板用作两个或多个项目的容器。 `SolutionFolder`元素用于将模板中的项目组织到组。 通过`SolutionFolder`元素指定的文件夹被创建为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的项目中的解决方案文件夹。 有关多项目模板的详细信息，请参阅 [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)。
+ 多项目模板用作两个或多个项目的容器。 `SolutionFolder`元素用于将模板中的项目组织到组。 通过`SolutionFolder`元素指定的文件夹被创建为[!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]的项目中的解决方案文件夹。 有关多项目模板的详细信息，请参阅[如何：创建多 Project 模板](../ide/how-to-create-multi-project-templates.md)。
 
 ## <a name="example"></a>示例
  此示例使用`SolutionFolder`元素，可以将多项目模板划分为两个组，`Math Classes`和`Graphics Classes`。 该模板包含四个项目，其中两个位于每个解决方案文件夹中。
@@ -100,6 +100,6 @@ ms.locfileid: "105056332"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-- [如何：创建多项目模板](../ide/how-to-create-multi-project-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
+- [如何：创建多 Project 模板](../ide/how-to-create-multi-project-templates.md)

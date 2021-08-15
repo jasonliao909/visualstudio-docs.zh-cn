@@ -11,17 +11,18 @@ ms.assetid: ab9f861a-42ad-4a82-9ae6-2606176f755a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddd7479f907ab305b7c0e0847bb7476b0c2c629c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 55c7594863860923014eea4c213ad8dd59a8073156cacc0a8f4565d3700371c9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058191"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338626"
 ---
 # <a name="idebugpropertyfieldgetpropertygetter"></a>IDebugPropertyField::GetPropertyGetter
 获取获取属性的方法。

@@ -1,5 +1,5 @@
 ---
-description: 使表达式计算器 (EE) 指定调试器引擎 (解除) 将用于读取指标设置的回调接口。
+description: 使表达式计算器 (企业版) 指定调试器引擎 (DE) 用于读取指标设置的回调接口。
 title: IDebugExpressionEvaluator2：： SetCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,20 +10,21 @@ ms.assetid: 31e3a99e-e784-44a3-8b19-cc5ef31ed546
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d29707fb75a83b4e9508052531c18e8fa4796e2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cba32a5ab0b934a1ba2426f8b731247bad2598cd77b4ae794e9f682f3c617bde
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095376"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417296"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-使表达式计算器 (EE) 指定调试器引擎 (解除) 将用于读取指标设置的回调接口。
+使表达式计算器 (企业版) 指定调试器引擎 (DE) 用于读取指标设置的回调接口。
 
 ## <a name="syntax"></a>语法
 

@@ -1,6 +1,6 @@
 ---
 title: 添加和删除属性页 |Microsoft Docs
-description: 了解如何在 "项目设计器" 中添加和删除属性页，该属性页提供用于在 Visual Studio 中管理项目属性的集中位置。
+description: 了解如何在 Project 设计器中添加和删除属性页，该设计器提供用于管理 Visual Studio 中项目属性的集中位置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,25 +12,26 @@ ms.assetid: 34853412-ab8a-4caa-9601-7d0727b2985d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: df8323225074a1644621f9856fdb20a219e2c8e5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f0a15678255949d9e7fa9f6110476daf38b85697c338d8ee476a97a46949cd9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059985"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121418033"
 ---
 # <a name="add-and-remove-property-pages"></a>添加和删除属性页
 
-项目设计器提供一个集中位置，用于管理中的项目属性、设置和资源 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 它在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中显示为一个窗口，并在右侧的选项卡中包含多个窗格。  (通常称为 "项目设计器") 中的 "属性页" 窗格因项目类型和语言而异。 可以通过 "**项目**" 菜单上的 "**属性**" 命令访问 "项目设计器"。
+Project 设计器提供一个集中位置，用于管理中的项目属性、设置和资源 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 它在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中显示为一个窗口，并在右侧的选项卡中包含多个窗格。  (的窗格通常称为属性页) 在 Project 设计器中，不同于项目类型和语言。 可以通过 " **Project** " 菜单上的 "**属性**" 命令访问 Project 设计器。
 
-项目子类型通常需要在 "项目设计器" 中显示其他属性页。 同样，某些项目子类型可能要求删除内置属性页。 若要执行任一操作，项目子类型必须实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 接口并重写 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 方法。 通过重写此方法并使用 `propId` 包含枚举值之一的参数 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> ，可以筛选、添加或删除项目属性。 例如，你可能需要将页面添加到依赖于配置的属性页。 为此，需要筛选依赖于配置的属性页，然后向现有列表添加新页。
+项目子类型通常需要在 Project 设计器中显示其他属性页。 同样，某些项目子类型可能要求删除内置属性页。 若要执行任一操作，项目子类型必须实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 接口并重写 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> 方法。 通过重写此方法并使用 `propId` 包含枚举值之一的参数 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> ，可以筛选、添加或删除项目属性。 例如，你可能需要将页面添加到依赖于配置的属性页。 为此，需要筛选依赖于配置的属性页，然后向现有列表添加新页。
 
-## <a name="add-and-remove-property-pages-in-project-designer"></a>在项目设计器中添加和删除属性页
+## <a name="add-and-remove-property-pages-in-project-designer"></a>在 Project 设计器中添加和删除属性页
 
 ### <a name="remove-a-property-page"></a>删除属性页
 
@@ -210,4 +211,4 @@ ms.locfileid: "105059985"
 
 ## <a name="see-also"></a>另请参阅
 
-- [项目子类型](../extensibility/internals/project-subtypes.md)
+- [Project 子类型](../extensibility/internals/project-subtypes.md)

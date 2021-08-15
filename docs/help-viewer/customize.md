@@ -1,6 +1,6 @@
 ---
 title: 自定义帮助查看器
-description: 了解如何自定义帮助查看器。 配置布局、字体大小、最大结果数，以及是否包含英语内容。
+description: 了解如何自定义帮助查看器。 配置布局、字号、最大结果数，以及是否包含英语内容。
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -12,14 +12,15 @@ ms.assetid: 9c0bc950-7323-4f0f-8de2-0b0af9a42b85
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 0421a5cdb93c64093ae5b428260c78da44e71e3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f758bfe1ca4d85c7b05dba5ef2e6da8a7af128952a3956e9d3057b178b9145ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944194"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358618"
 ---
 # <a name="customize-the-help-viewer"></a>自定义 Help Viewer
 可以自定义 Help Viewer 窗口的布局以及其他选项，如字号、最大结果数以及是否包括英语内容。

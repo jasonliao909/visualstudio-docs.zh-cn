@@ -1,6 +1,6 @@
 ---
 title: 专用库 |Microsoft Docs
-description: 了解如何通过将其发布到专用库，来共享在 Visual Studio SDK 中开发的控件、模板和工具。
+description: 了解如何在 Visual Studio SDK 中共享在 SDK 中开发的控件、模板和工具，只需要将其发布到专用库即可。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: b6b3dee7-91c5-4556-9f69-0d56b675e83b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c64c5880fcdb1d6a1fb3d6fc7c71f55abf7cbbc1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b369996f59f91416cd0845e1b2b626e6dd1752d07935685a917589c382647c12
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069031"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447819"
 ---
 # <a name="private-galleries"></a>专用库
 你可以共享你开发的控件、模板和工具，方法是将其发布到组织 intranet 上的 *专用库* ，如下所示：
@@ -27,7 +28,7 @@ ms.locfileid: "105069031"
 
 - 分发描述专用库的 *.pkgdef* 文件。 对于想要同时将专用库连接到多台计算机的管理员，我们建议使用此配置。
 
-## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>向 Visual Studio 中的扩展和更新添加专用库
+## <a name="add-a-private-gallery-to-extensions-and-updates-in-visual-studio"></a>将专用库添加到 Visual Studio 中的扩展和更新
  当专用库可用时，可以将其添加到 Visual Studio 中的 **扩展和更新** 中。
 
  ![“扩展管理器添加”对话框](../extensibility/media/em_adddialog.png "EM_AddDialog")
@@ -42,11 +43,11 @@ ms.locfileid: "105069031"
 
 4. 在 " **名称** " 字段中，输入专用库的名称，例如 `My Gallery` 。
 
-5. 在 " **URL** " 字段中，输入托管专用库的 Atom 馈送或 SharePoint 站点的 URL。
+5. 在 " **URL** " 字段中，输入用于承载专用库的 Atom 馈送或 SharePoint 站点的 URL。
 
     1. 如果主机是连接到专用库的 Atom 馈送，则 URL 将如下所示： `http://www.mywebsite/mygallery/atom.xml` 。  此 URL 可以引用文件或网络路径。
 
-    2. 如果主机是 SharePoint 站点，则 URL 将类似于： `http://mysharepoint/sites/mygallery/forms/AllItems.aspx` 。
+    2. 如果主机是 SharePoint 站点，则 URL 将如下所示： `http://mysharepoint/sites/mygallery/forms/AllItems.aspx` 。
 
 ### <a name="manage-private-galleries"></a>管理专用库
  管理员可以通过修改每台计算机上的系统注册表，使多台计算机可以同时使用私有库。 为此，请创建一个描述新注册表项及其值的 *.pkgdef* 文件。  此文件的格式如下所示。
@@ -66,7 +67,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
  有关详细信息，请参阅 [如何：使用注册表设置管理专用库](../extensibility/how-to-manage-a-private-gallery-by-using-registry-settings.md)。
 
 ## <a name="install-extensions-from-a-private-gallery"></a>从专用库安装扩展
- 你可以从 " **扩展和更新**" 中的专用库搜索并安装 Visual Studio 扩展。 以下步骤使用名为的专用库 `My Gallery` 。
+ 你可以从 "**扩展和更新**" 中的专用库搜索和安装 Visual Studio 扩展。 以下步骤使用名为的专用库 `My Gallery` 。
 
  ![安装专用库的扩展管理器](../extensibility/media/em_.png "EM_")
 
@@ -79,7 +80,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 3. 在右侧窗格中，选择一个扩展，然后选择 " **下载** " 按钮。
 
 ## <a name="update-extensions-from-a-private-gallery"></a>从私有库更新扩展
- 当新版本的 Visual Studio 扩展发布到专用库中时，可以更新已安装的扩展。 以下步骤使用名为的专用库 `My Repository` 。
+ 在专用库中发布 Visual Studio 扩展的新版本时，可以更新已安装的扩展。 以下步骤使用名为的专用库 `My Repository` 。
 
  ![扩展管理器专用库更新](../extensibility/media/em_update.png "EM_Update")
 
@@ -92,5 +93,5 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 3. 在右侧窗格中，选择一个扩展，然后选择 " **更新** " 按钮。
 
 ## <a name="see-also"></a>另请参阅
-- [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)
-- [提供 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
+- [查找并使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)
+- [装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)

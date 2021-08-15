@@ -11,14 +11,15 @@ ms.assetid: 06c3427e-c874-45b1-b9af-f68610ed016c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9852454d487ab2a7ee08218c9712aa0afc1467ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bc43f6ee9896df550b1eb152fb1a0eb576b515813ea28a03d3a61e3877dbdcd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057066"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432601"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸载和重新加载嵌套项目的注意事项
 

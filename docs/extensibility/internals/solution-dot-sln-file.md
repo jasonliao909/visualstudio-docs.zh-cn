@@ -12,14 +12,15 @@ ms.assetid: 7d7ef539-2e4b-4637-b853-8ec7626609df
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 27364382a7e4318fce822b148e9d3df6747bfd1e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9a8b857905a4e0a599584d6eecc03879b7e656081772071885bd25461b2220bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081992"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432197"
 ---
 # <a name="solution-sln-file"></a>解决方案 ( .sln) 文件
 
@@ -35,7 +36,7 @@ ms.locfileid: "105081992"
 
 .Sln 文件包含基于文本的信息，环境使用该信息查找并加载持久数据的名称-值参数和它引用的项目 Vspackage。 当用户打开解决方案时，环境会循环遍历 `preSolution` `Project` `postSolution` .sln 文件中的、和信息，以加载解决方案、解决方案中的项目以及附加到解决方案的任何持久性信息。
 
-每个项目的文件都包含环境读取的其他信息，以使用该项目的项填充层次结构。 层次结构数据持久性由项目控制。 数据通常不会存储在 .sln 文件中，但如果您选择这样做，您可以有意地将项目信息写入 .sln 文件。 有关持久性的详细信息，请参阅 [项目持久性](../../extensibility/internals/project-persistence.md) 和 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
+每个项目的文件都包含环境读取的其他信息，以使用该项目的项填充层次结构。 层次结构数据持久性由项目控制。 数据通常不会存储在 .sln 文件中，但如果您选择这样做，您可以有意地将项目信息写入 .sln 文件。 有关持久性的详细信息，请参阅[Project 持久性](../../extensibility/internals/project-persistence.md)和[打开并保存 Project 项](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 ## <a name="file-header"></a>文件头
 
@@ -56,13 +57,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 定义文件格式版本的标准标头。
 
 `# Visual Studio 15`\
- (最近) 保存此解决方案文件的 Visual Studio 的主要版本。 此信息控制解决方案图标中的版本号。
+最近) 保存此解决方案文件 Visual Studio (的主版本。 此信息控制解决方案图标中的版本号。
 
 `VisualStudioVersion = 15.0.26730.15`\
- (最近) 保存解决方案文件的 Visual Studio 的完整版本。 如果解决方案文件是由较新版本的 Visual Studio （具有相同的主版本）保存的，则不会更新此值，以减少解决方案文件中的更改。
+ (最近) 保存解决方案文件的 Visual Studio 的完整版本。 如果解决方案文件是由具有相同主版本的 Visual Studio 的较新版本保存的，则不会更新此值，以减少解决方案文件中的更改。
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-可以打开此解决方案文件的最早) 版本的 Visual Studio (。
+可以打开此解决方案文件的最早 () 版本 Visual Studio。
 
 ::: moniker-end
 
@@ -81,13 +82,13 @@ MinimumVisualStudioVersion = 10.0.40219.1
 定义文件格式版本的标准标头。
 
 `# Visual Studio Version 16`\
- (最近) 保存此解决方案文件的 Visual Studio 的主要版本。 此信息控制解决方案图标中的版本号。
+最近) 保存此解决方案文件 Visual Studio (的主版本。 此信息控制解决方案图标中的版本号。
 
 `VisualStudioVersion = 16.0.28701.123`\
- (最近) 保存解决方案文件的 Visual Studio 的完整版本。 如果解决方案文件是由较新版本的 Visual Studio （具有相同的主版本）保存的，则不会更新此值，以减少文件中的更改。
+ (最近) 保存解决方案文件的 Visual Studio 的完整版本。 如果解决方案文件是由具有相同主版本的 Visual Studio 的较新版本保存的，则不会更新此值，以减少文件中的改动量。
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
-可以打开此解决方案文件的最早) 版本的 Visual Studio (。
+可以打开此解决方案文件的最早 () 版本 Visual Studio。
 
 ::: moniker-end
 

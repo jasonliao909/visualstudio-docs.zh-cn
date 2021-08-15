@@ -1,6 +1,6 @@
 ---
-title: Office 解决方案的部署清单
-description: 了解部署清单是一个 XML 文件，用于描述 Office 解决方案的部署设置并标识当前应用程序的版本。
+title: 解决方案部署Office清单
+description: 了解部署清单是一个 XML 文件，该文件描述 Office解决方案的部署设置，并标识当前应用程序版本。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
@@ -15,28 +15,29 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0a6c8cf672c4799a53c9df947f15bca38cb02589
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3fe9e7d0fdd02956d2979912cb658ea4781599c3a36e264b1965d934119791d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887596"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394727"
 ---
-# <a name="deployment-manifests-for-office-solutions"></a>Office 解决方案的部署清单
-  部署清单是一个 XML 文件，用于描述 Office 解决方案的部署设置并标识当前应用程序的版本。
+# <a name="deployment-manifests-for-office-solutions"></a>解决方案部署Office清单
+  部署清单是一个 XML 文件，用于描述 Office解决方案的部署设置，并标识当前应用程序版本。
 
- Visual Studio 中的 Office 开发使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md) 引用中定义的部署清单架构。
+ Office开发Visual Studio使用部署清单引用中定义的ClickOnce [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] [架构](../deployment/clickonce-deployment-manifest.md)。
 
 ## <a name="remarks"></a>备注
- Office 解决方案的部署清单文件标识当前版本和其他部署设置。 它引用应用程序清单，并描述解决方案的当前版本和解决方案中的所有文件。
+ 解决方案部署清单Office标识当前版本和其他部署设置。 它引用应用程序清单，并描述解决方案的当前版本以及解决方案中所有文件。
 
 ## <a name="file-name-syntax"></a>文件名语法
- 部署清单文件的名称必须以 *.vsto* 扩展名结束。 尽管它是标准 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 部署清单，但扩展不同于使 Visual Studio Tools for Office 运行时能够处理该文件。
+ 部署清单文件的名称必须以 *.vsto 扩展* 名结尾。 尽管它是标准部署清单，但扩展有所不同，Visual Studio Tools for Office [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 运行时处理文件。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示了 Visual Studio Tools for Office 解决方案的部署清单。
+ 下面的代码示例演示了一个解决方案Visual Studio Tools for Office清单。
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -187,4 +188,4 @@ ms.locfileid: "99887596"
 
 ## <a name="see-also"></a>另请参阅
 
-- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
+- [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)

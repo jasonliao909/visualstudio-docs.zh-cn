@@ -1,6 +1,6 @@
 ---
 title: 使用 T4 文本模板生成设计时代码
-description: 了解设计时 T4 文本模板如何允许你在 Visual Studio 项目中生成程序代码和其他文件。
+description: 了解设计时 T4 文本模板如何允许您在 Visual Studio 项目中生成程序代码和其他文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f8b7bc48a5c409dbecbb313fd277a31ad1cec287
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: c2575ae7868eb058a4d500e77bc3ff14e0492a51b751202a3ad44baf65ca98fc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389132"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121356157"
 ---
 # <a name="design-time-code-generation-by-using-t4-text-templates"></a>使用 T4 文本模板生成设计时代码
 
@@ -39,7 +40,7 @@ ms.locfileid: "112389132"
 
 ## <a name="create-a-design-time-t4-text-template"></a>创建 Design-Time T4 文本模板
 
-1. 创建新的 Visual Studio 项目，或打开现有的项目。
+1. 创建新 Visual Studio 项目，或打开现有项目。
 
 2. 将文本模板文件添加到项目，并为其指定扩展名为 **tt** 的名称。
 
@@ -64,12 +65,12 @@ ms.locfileid: "112389132"
 
 5. 保存文件。
 
-    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击 **“确定”** 。
+    你可能会看到一个 **安全警告** 消息框，要求你确认是否要运行该模板。 单击“确定”。
 
 6. 在 **解决方案资源管理器** 中，展开 "模板文件" 节点，你会发现具有扩展名 **.txt** 的文件。 该文件包含从该模板生成的文本。
 
    > [!NOTE]
-   > 如果项目是 Visual Basic 项目，必须单击 " **显示所有文件** " 才能看到输出文件。
+   > 如果项目是 Visual Basic 项目，必须单击 "**显示所有文件**" 才能看到输出文件。
 
 ### <a name="regenerate-the-code"></a>重新生成代码
 
@@ -79,11 +80,11 @@ ms.locfileid: "112389132"
 
 - 保存模板。
 
-- 单击 "**生成**" 菜单中的 "**转换所有模板**"。 这会转换 Visual Studio 解决方案中的所有模板。
+- 单击 "**生成**" 菜单中的 "**转换所有模板**"。 这将转换 Visual Studio 解决方案中的所有模板。
 
 - 在 **解决方案资源管理器** 的任何文件的快捷菜单上，选择 " **运行自定义工具**"。 使用此方法可以转换选定的模板子集。
 
-你还可以设置一个 Visual Studio 项目，以便在这些模板所读取的数据文件发生更改时执行这些模板。 有关详细信息，请参阅 [自动重新生成代码](#Regenerating)。
+您还可以设置一个 Visual Studio 项目，以便在这些模板所读取的数据文件发生更改时执行这些模板。 有关详细信息，请参阅 [自动重新生成代码](#Regenerating)。
 
 ## <a name="generate-variable-text"></a>生成变量文本
 
@@ -294,7 +295,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ## <a name="regenerating-the-code-automatically"></a><a name="Regenerating"></a> 自动重新生成代码
 
-通常，使用一个输入Visual Studio生成一个解决方案中的多个文件。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。
+通常，解决方案中的Visual Studio文件是使用一个输入模型生成的。 每个文件从其自己的模板生成，但这些模板全都引用同一个模型。
 
 如果源模型发生更改，则应重新运行该解决方案中的所有模板。 若要手动执行此操作，请选择"生成 **"菜单上的"** 转换所有 **模板** "。
 
@@ -344,11 +345,11 @@ Warning("A warning message");
 
 ### <a name="to-convert-an-existing-file-to-a-design-time-template"></a>将现有文件转换为设计时模板
 
-1. 在Visual Studio，添加要生成的类型的文件，例如 `.cs` `.vb` 、 或 `.resx` 文件。
+1. 在Visual Studio，添加要生成的类型的文件，例如 、 `.cs` `.vb` 或 `.resx` 文件。
 
 2. 测试新文件以确保其工作。
 
-3. 在解决方案资源管理器中，将文件扩展名更改为 **.tt**。
+3. 在 解决方案资源管理器 中，将文件扩展名更改为 **.tt**。
 
 4. 验证 **.tt** 文件的以下属性：
 
@@ -382,7 +383,7 @@ Warning("A warning message");
 
 ## <a name="next-steps"></a>后续步骤
 
-|后续步骤|主题|
+|下一步|主题|
 |-|-|
 |编写并调试更高级的文本模板，其中的代码使用辅助函数、包含的文件和外部数据。|[编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)|
 |在运行时从模板生成文档。|[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)|

@@ -15,23 +15,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 082d5fe4fbcc7f66709770c16d3c9a1a2811e60d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46948fe54142dcffb1b90290c01feefd770b4ae89648e98157694ccf18c3760a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900935"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408807"
 ---
 # <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 中的 Word 文档
-  **重要提示** 本主题中的关于 Microsoft Word 的信息是专门为其提供的个人和美国组织的权益和使用的，也就是在 Microsoft word 产品（在2010年1月之前）中运行的、microsoft Word 产品，microsoft Word 产品在年1月之前获得的 microsoft Word 产品，microsoft word 产品在 microsoft word 中删除了与自定义 与 Microsoft Word 有关的信息可能不会被美国或其所在区域中的个人或组织阅读或使用，或开发在 Microsoft Word 产品上运行的、2010年1月10日之后的 microsoft Word 产品。对于该日期之前许可的产品，这些产品的行为并不相同，也不会在美国之外购买和许可。
+  **重要提示** 本主题中的关于 Microsoft Word 的信息是专门针对美国及其区域以外的个人和组织的权益和使用的，或者开发在上运行的程序 Microsoft Word （在2010年1月之前，microsoft 从 Microsoft Word 中的自定义 XML 删除了特定功能的实现。 对于在2010年1月10日之后使用、或开发 Microsoft Word 的程序 Microsoft Word 产品的美国或其所在区域中的个人或组织，可能无法读取或使用与有关的信息。对于该日期之前许可的产品，这些产品的行为并不相同，也不会在美国之外购买和许可。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- 当文档在 Visual Studio 中打开时，可以将 XML 架构映射到文档。 你使用的是在 Visual Studio 外部打开文档时所使用的相同 Microsoft Office Word 工具。 无论你是在创建 Word 解决方案之前还是之后将架构映射到文档，Office 项目都将创建相同的对象。
+ 在 Visual Studio 中打开文档时，可以将 XML 架构映射到文档。 使用与在 Visual Studio 外打开文档时使用的相同 Microsoft Office Word 工具。 无论在创建 Word 解决方案之前还是之后将架构映射到文档，Office 项目都将创建相同的对象。
 
-## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>将 XML 架构映射到 Visual Studio 中的 Word 文档
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>若要将 XML 架构映射到 Visual Studio 中的 Word 文档
 
 1. 在 Visual Studio 中打开 Word 文档或模板项目。
 
@@ -54,7 +55,7 @@ ms.locfileid: "99900935"
 
 7. 浏览到您的架构文件，选择它，然后单击 " **打开**"。
 
-     此时将打开 " **架构设置** " 对话框。
+     此时将打开 "**架构设置**" 对话框。
 
 8. 分配一个别名，或者单击 **"确定"** 以添加没有别名的架构。
 
@@ -65,5 +66,5 @@ ms.locfileid: "99900935"
 10. 将元素从 " **XML 结构** " 窗口拖到您要在其中创建相应控件的文档中的位置。
 
 ## <a name="see-also"></a>另请参阅
-- [如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [如何：将架构映射到 Visual Studio 中的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [文档级自定义项中的 XML 架构和数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)
