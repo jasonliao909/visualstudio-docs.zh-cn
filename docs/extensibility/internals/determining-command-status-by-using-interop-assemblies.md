@@ -11,14 +11,15 @@ ms.assetid: 2f5104d1-7b4c-4ca0-a626-50530a8f7f5c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ef6940aef83ad3865385b4e39fd9cfd62b8866d7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ba74c731fd0d4c531383ae4054fcfe5911b929dc24a27bd644b267cbce0a606c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090897"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359567"
 ---
 # <a name="determine-command-status-by-using-interop-assemblies"></a>使用互操作程序集确定命令状态
 VSPackage 必须跟踪它可以处理的命令的状态。 环境无法确定在 VSPackage 中处理的命令何时启用或禁用。 VSPackage 负责通知环境有关命令状态的信息，例如， **剪切**、 **复制** 和 **粘贴** 等常规命令的状态。

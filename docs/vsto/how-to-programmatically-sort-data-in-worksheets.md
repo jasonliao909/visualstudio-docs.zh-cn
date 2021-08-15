@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式对工作表中的数据进行排序
-description: 了解如何使用 Visual Studio 在运行时以编程方式对工作表范围和列表中包含的数据进行排序。
+description: 了解如何使用 Visual Studio 以编程方式在运行时对工作表范围和列表中包含的数据进行排序。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 024bf53b7fc7f3a6e32e10b7107c9a62d8c40cee
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 073ad50f3bc5bc135e6fd7f22afcbaac721f8d99e08c8862816672387c111b32
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825012"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440677"
 ---
 # <a name="how-to-programmatically-sort-data-in-worksheets"></a>如何：以编程方式对工作表中的数据进行排序
   在运行时，可以对工作表区域和列表中所包含数据进行排序。 以下代码先按第一列中的数据对名为 `Fruits` 的多列区域进行排序，然后按第二列中的数据进行相同操作。

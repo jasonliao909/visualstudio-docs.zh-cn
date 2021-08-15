@@ -1,6 +1,6 @@
 ---
-description: 确定指定的托管程序集引用的位置。
-title: IPropertyProxyEESide：： ResolveAssemblyRef |Microsoft Docs
+description: 确定指定托管程序集引用的位置。
+title: IPropertyProxyEESide：：ResolveAssemblyRef |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 662ca0a6-dad0-4c00-a718-bb3bbc5bd9da
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 03df51a5c229f5fd3a5cc5ea8f35c8ecaa9e2da7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1533572f67f681cac394ff5d4fba2558fbaf9c66e3aa42de5f12fff5bdc2676d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082369"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321371"
 ---
 # <a name="ipropertyproxyeesideresolveassemblyref"></a>IPropertyProxyEESide::ResolveAssemblyRef
-确定指定的托管程序集引用的位置。
+确定指定托管程序集引用的位置。
 
 ## <a name="syntax"></a>语法
 
@@ -50,25 +51,25 @@ int ResolveAssemblyRef(
 
 ## <a name="parameters"></a>参数
 `assemName`\
-中要解析的程序集的名称。
+[in]要解析的程序集的名称。
 
 `assemBytes`\
-弄返回一个 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象，该对象包含与引用关联的程序集字节。
+[out]返回包含与引用关联的程序集字节的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象。
 
 `assemPdb`\
-弄返回一个 `IEEDataStorage` 对象，该对象包含与此引用关联的符号存储区数据。
+[out]返回 `IEEDataStorage` 一个对象，该对象包含与此引用关联的符号存储数据。
 
 `assemLocation`\
-弄返回此引用的路径位置。
+[out]返回此引用的路径位置。
 
 `alr`\
-弄返回 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 枚举中的一个值，该值指示此引用的程序集的位置。
+[out]从 [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md) 枚举返回一个值，该值指示此引用的程序集的位置。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法通常不是由自定义表达式计算器实现的。
+ 此方法通常不由自定义表达式计算程序实现。
 
 ## <a name="see-also"></a>另请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)

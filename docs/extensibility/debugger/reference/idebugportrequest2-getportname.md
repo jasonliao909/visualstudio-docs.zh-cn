@@ -1,6 +1,6 @@
 ---
 description: 获取端口的名称。
-title: IDebugPortRequest2：： GetPortName |Microsoft Docs
+title: IDebugPortRequest2：：GetPortName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 53e2a3a4-bb34-4a02-a983-6bd84ea70587
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 89bff19026a8bbdab72f1bec84c5feef0b37d8c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5eceb34e8d82853289663a6b6795a266444d8635e34f33c490fe2a53307c1f2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072229"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339055"
 ---
 # <a name="idebugportrequest2getportname"></a>IDebugPortRequest2::GetPortName
 获取端口的名称。
@@ -42,13 +43,13 @@ int GetPortName(
 
 ## <a name="parameters"></a>参数
 `pbstrPortName`\
-弄返回端口的名称。
+[out]返回端口的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从调试包传递 (客户端) 到端口供应商 (服务器) 以获取到端口的连接。 调试包和端口提供程序均可识别端口的可能选项。 如果一个简单的字符串可以描述该端口，则该方法会提供 `IDebugPortRequest2::GetPortName` 足够的信息来建立连接。 否则，客户端可以提供其他接口，这些接口可由服务器使用获取 `IDebugPortRequest2::QueryInterface` 。
+ [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从调试包 (客户端) 传递到服务器 (的端口) 以获取与端口的连接。 调试包和端口供应商都了解端口的可能选择。 如果简单字符串可以描述端口，则 `IDebugPortRequest2::GetPortName` 方法具有足够的信息来建立连接。 否则，客户端可以提供额外的接口，服务器可以使用 获取这些接口 `IDebugPortRequest2::QueryInterface` 。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

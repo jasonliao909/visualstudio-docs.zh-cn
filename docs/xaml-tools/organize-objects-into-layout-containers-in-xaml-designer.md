@@ -8,12 +8,13 @@ ms.assetid: 29c80c38-0fa3-48d6-b3a8-3b864f482e44
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: d42a7509ceef03d2e74f470d7d4ab0efb5913e13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: e3a08c647f115d6f01ecc8543e5b87d1d4a15a8bf0e20f9633c2999eac41d63c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900832"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267229"
 ---
 # <a name="organize-objects-into-layout-containers-in-xaml-designer"></a>在 XAML 设计器中将对象组织到布局容器中
 

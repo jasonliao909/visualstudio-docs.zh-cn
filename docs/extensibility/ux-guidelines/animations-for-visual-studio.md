@@ -8,20 +8,21 @@ ms.assetid: 446773a9-e6f7-4c0c-8dbc-9e303bf32eb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1e8e61e5decea326fcb7f670ed2ab58f0137530
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 933856cffcf7a012be7d9774b3d703aa92e335fb5d7939d804ef49043875f1a7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902782"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388323"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的动画
 ## <a name="animation-fundamentals"></a>动画基础知识
 
 ### <a name="animation-best-practices-in-visual-studio"></a>Visual Studio 中的动画最佳做法
-遵循这些规则可确保跨 Visual Studio IDE 的一致和用户友好的动画样式。
+遵循这些规则以确保在 Visual Studio IDE 中具有一致且用户友好的动画样式。
 
 - **请选择。** 将动画限制为特定用途的动画。
 
@@ -210,7 +211,7 @@ Visual Studio 中的动画旨在提供特定的功能，而不会影响用户工
 
 - 宽松，不十万火急
 
-下图显示了我们建议用于 Visual Studio 的动画样式。 使用淡入/淡出的动画或细微动画是最常用的。 移动动画的应用程序（如展开和收缩、X 和 Y 位置更改和旋转）会受到限制。
+下图显示了我们建议 Visual Studio 的动画样式。 使用淡入/淡出的动画或细微动画是最常用的。 移动动画的应用程序（如展开和收缩、X 和 Y 位置更改和旋转）会受到限制。
 
 ![Visual Studio 的建议动画样式](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Visual Studio 的建议动画样式
 
@@ -349,7 +350,7 @@ Tab 重新排序
 - 持续时间：连续
 
 ##### <a name="example"></a>示例
-不确定旋转进度 (指示器) 
+不确定旋转进度 (进度) 
 
 ### <a name="common-shell-ui-actions-and-recommended-animations"></a>常见的 shell UI 操作和推荐的动画
 
@@ -368,7 +369,7 @@ Tab 重新排序
 - 持续时间：200 毫秒
 
 #### <a name="tab-reorder"></a>Tab 键重新排序
-![Visual Studio 中的选项卡重新排序动画](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Tab 重新排序动画
+![Visual Studio 中的选项卡重新排序动画](../../extensibility/ux-guidelines/media/1202-j_tabreorder.png "1202-j_TabReorder")<br />Tab 键重新排序动画
 
 - 样式：X 位置更改
 

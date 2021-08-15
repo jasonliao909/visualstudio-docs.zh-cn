@@ -1,6 +1,6 @@
 ---
 title: 扩展调试器的路线图 |Microsoft Docs
-description: Visual Studio 调试文档包括示例、引用以及演示自定义调试器的典型方法的几个方案。
+description: Visual Studio 调试文档包括示例、引用以及演示自定义调试器的典型方式的多个方案。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: 1f4096a8-f7aa-4dfa-84e1-6d59263e70bb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 69beed934764defe7e3926ba46e5e70f87a031ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ccb48584435debdca17fac31c436a898c70448ad114c7718b30443adc6eeeb0b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070617"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389015"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>扩展调试器的路线图
 此文档提供了用来扩展调试器的指南和参考信息 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。

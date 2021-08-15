@@ -1,6 +1,6 @@
 ---
-description: 此函数获取源代码管理下一组选定文件的状态信息。
-title: SccQueryInfo 函数|Microsoft Docs
+description: 此函数获取源代码管理下所选文件集的状态信息。
+title: SccQueryInfo 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 3973d336-a9b7-41a2-a4e6-bb8184a96aaf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 369bbd8d783e5d33ea1519b7ad8a4a37476dc62b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6bc71134c1f0f6040f99ce31d757fade5aef649318a08ede79898dd757d6b4bb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414085"
 ---
 # <a name="sccqueryinfo-function"></a>SccQueryInfo 函数
-此函数获取源代码管理下一组选定文件的状态信息。
+此函数获取源代码管理下所选文件集的状态信息。
 
 ## <a name="syntax"></a>语法
 
@@ -37,44 +38,44 @@ SCCRTN SccQueryInfo(
 #### <a name="parameters"></a>参数
  pvContext
 
-[in]源代码管理插件上下文结构。
+中源代码管理插件上下文结构。
 
- nFiles
+ n
 
-[in]数组中指定的文件 `lpFileNames` 数和数组 `lpStatus` 的长度。
+中数组中指定的文件数 `lpFileNames` 和数组的长度 `lpStatus` 。
 
  lpFileNames
 
-[in]要查询的文件的名称的数组。
+中要查询的文件的名称数组。
 
  lpStatus
 
-[in， out]一个数组，其中源代码管理插件返回每个文件的状态标志。 有关详细信息，请参阅文件 [状态代码](../extensibility/file-status-code-enumerator.md)。
+[in，out]一个数组，其中的源代码管理插件为每个文件返回状态标志。 有关详细信息，请参阅 [文件状态代码](../extensibility/file-status-code-enumerator.md)。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|查询成功。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
-|SCC_E_PROJNOTOPEN|项目未在源代码管理下打开。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由网络或争用问题引起的。 建议重试。|
+|SCC_E_PROJNOTOPEN|未在源代码管理下打开该项目。|
 |SCC_E_NONSPECIFICERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- 如果 `lpFileName` 为空字符串，则当前没有要更新的状态信息。 否则，它是状态信息可能已更改的文件的完整路径名称。
+ 如果 `lpFileName` 为空字符串，则当前没有要更新的状态信息。 否则，它是其状态信息可能已更改的文件的完整路径名称。
 
- 返回数组可以是位掩码 `SCC_STATUS_xxxx` 。 有关详细信息，请参阅文件 [状态代码](../extensibility/file-status-code-enumerator.md)。 源代码管理系统可能不支持所有位类型。 例如， `SCC_STATUS_OUTOFDATE` 如果未提供 ，则不设置位。
+ 返回数组可以是位位掩码 `SCC_STATUS_xxxx` 。 有关详细信息，请参阅 [文件状态代码](../extensibility/file-status-code-enumerator.md)。 源代码管理系统可能不支持所有位类型。 例如，如果 `SCC_STATUS_OUTOFDATE` 未提供，则仅设置位。
 
  使用此函数签出文件时，请注意以下 `MSSCCI` 状态要求：
 
-- `SCC_STATUS_OUTBYUSER` 在当前用户签出文件时设置 。
+- `SCC_STATUS_OUTBYUSER` 当当前用户签出文件时，设置。
 
-- `SCC_STATUS_CHECKEDOUT` 除非设置了 ，否则 `SCC_STATUS_OUTBYUSER` 无法设置 。
+- `SCC_STATUS_CHECKEDOUT` 除非已设置，否则不能设置 `SCC_STATUS_OUTBYUSER` 。
 
-- `SCC_STATUS_CHECKEDOUT` 仅在将文件签出到指定的工作目录中时设置。
+- `SCC_STATUS_CHECKEDOUT` 仅当文件签出到指定的工作目录时才设置。
 
-- 如果当前用户将文件签出到工作目录外的其他目录中，则 设置 `SCC_STATUS_OUTBYUSER` ， `SCC_STATUS_CHECKEDOUT` 但不设置 。
+- 如果当前用户将文件签出到工作目录以外的目录， `SCC_STATUS_OUTBYUSER` 则会设置，但不会设置 `SCC_STATUS_CHECKEDOUT` 。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

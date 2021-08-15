@@ -8,14 +8,15 @@ ms.assetid: 3c4032ee-0805-4581-8c48-b1827cd6b213
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: fdf816b978aac5d22b1750eeabe3737f1eb64085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1e51a4dcad45afda2ef74c056eaa60d5cb8a1157b6b0d861ba9149aed46e750
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867927"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348671"
 ---
 # <a name="globalization-rules-rule-set-for-managed-code"></a>托管代码的“全球化规则”规则集
 

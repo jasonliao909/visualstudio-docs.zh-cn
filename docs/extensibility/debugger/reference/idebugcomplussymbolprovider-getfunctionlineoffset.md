@@ -10,17 +10,18 @@ ms.assetid: 51460f5a-4e98-427a-8315-27246e24fb61
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae212e00e6d49b54b0536147194317584fad2830
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: be46f165cdf487f109bec1a27cfec0368b0037bead2e6e377b10724ded18e01e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058763"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262160"
 ---
 # <a name="idebugcomplussymbolprovidergetfunctionlineoffset"></a>IDebugComPlusSymbolProvider::GetFunctionLineOffset
 检索表示给定行偏移量的函数中的地址。

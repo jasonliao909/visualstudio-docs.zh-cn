@@ -1,6 +1,6 @@
 ---
-description: 获取引用的值的大小（以字节为单位）。
-title: IDebugReference2：： GetSize |Microsoft Docs
+description: 获取引用值的大小（以字节为单位）。
+title: IDebugReference2：：GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: a404ddd9-d940-4513-97cd-f52b8ab6a560
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 061b4422efced1480a8f42cf39b7fdb648834b3b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a398902d8af9c453eb156a50a83c95cbd9f64f0ac164de602f848b3bc4849c65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075830"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292151"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-获取引用的值的大小（以字节为单位）。 保留供将来使用。
+获取引用值的大小（以字节为单位）。 保留供将来使用。
 
 ## <a name="syntax"></a>语法
 
@@ -42,7 +43,7 @@ int GetSize (
 
 ## <a name="parameters"></a>参数
 `pdwSize`\
-弄返回引用的值的大小（以字节为单位）。
+[out]返回引用值的大小（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。

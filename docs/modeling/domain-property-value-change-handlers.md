@@ -1,6 +1,6 @@
 ---
 title: 域属性值更改处理程序
-description: 了解可用于 Visual Studio 域特定语言的域属性值更改处理程序。
+description: 了解可在 Visual Studio 域特定语言中使用的域属性值更改处理程序。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c6cdb027bafdf4d1fe7689d7dd30d697b539370
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: bfd2a8d12d61f795afb07dd250fef312b1720b627ac2888bc390a73a071985c4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388992"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370744"
 ---
 # <a name="domain-property-value-change-handlers"></a>域属性值更改处理程序
 
@@ -99,7 +100,7 @@ if (newValue > 10)
 
 上一示例显示了如何使用 OnValueChanged() 来将值从一个域属性传播到另一个域属性。 每个属性都具有其自己的存储值。
 
-相反，你可以考虑将派生属性定义为计算属性。 在这种情况下，该属性不具有其自己的存储，并且将定义每当需要其值时要计算的函数。 有关详细信息，请参阅 [计算的和自定义的存储属性](../modeling/calculated-and-custom-storage-properties.md)。
+相反，你可以考虑将派生属性定义为计算属性。 在这种情况下，该属性不具有其自己的存储，并且将定义每当需要其值时要计算的函数。 有关详细信息，请参阅[计算存储属性和自定义属性](../modeling/calculated-and-custom-storage-properties.md)。
 
 不是前面的示例，你可以将的 **Kind** 字段设置 `TextLengthCount` 为在 DSL 定义中进行 **计算** 。 您可以为此域属性提供自己的 **Get** 方法。 **Get** 方法将返回字符串的当前长度 `Text` 。
 
@@ -146,7 +147,7 @@ public partial class MyDomainModel
 
 ## <a name="example"></a>示例
 
-### <a name="description"></a>描述
+### <a name="description"></a>说明
 
 以下示例将重写域属性的属性处理程序，并在 `ExampleElement` 域类的属性已发生更改时通知用户。
 

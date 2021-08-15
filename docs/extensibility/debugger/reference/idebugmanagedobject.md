@@ -1,5 +1,5 @@
 ---
-description: 此接口使表达式计算器 (EE) 对值类实例调用属性或方法 (例如，System.object) 并设置其值，而无需对正在调试的程序调用计算。
+description: 此接口使表达式计算器 (企业版) 调用值类实例上的属性或方法 (例如，system.object) 并设置其值，而无需对正在调试的程序调用计算。
 title: IDebugManagedObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 3ae09d34-112c-4285-80ee-9f7f8dc414d7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88eadb33aaccc09a7c4667ad01d9acee538169f2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2cc541ddcfe09755288c41ef0c0ac09327a7054d9c5c7669527706220e098f5d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076857"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451869"
 ---
 # <a name="idebugmanagedobject"></a>IDebugManagedObject
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 此接口使表达式计算器 (EE) 对值类实例调用属性或方法 (例如， `System.Decimal`) 并设置它们的值，而无需对正在调试的程序调用 [计算](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md) 。
+ 此接口使表达式计算器 (企业版) 调用值类实例的属性或方法 (例如， `System.Decimal`) 并设置其值，而无需对正在调试的程序调用[计算](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)。
 
 ## <a name="syntax"></a>语法
 

@@ -11,17 +11,18 @@ ms.assetid: 1e20be85-aa12-48de-bb83-0bf0976e99ae
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 902418aeb18c149b0732e972a34ed89b56bb22ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1298bd394209927b4563ff325149865db59a3f65b061e29d18e826d9f57bf7fd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121291982"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 挂起线程。

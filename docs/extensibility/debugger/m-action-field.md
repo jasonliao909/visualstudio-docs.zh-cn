@@ -1,6 +1,6 @@
 ---
-description: 委托，它表示要在 system.exception 对象中执行的代码。
-title: m_action 字段 |Microsoft Docs
+description: 表示在 System.Threading.Tasks.Task 对象中执行的代码的委托。
+title: m_action字段|Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,23 +9,24 @@ ms.assetid: 201838c2-260d-4071-b6c3-f526874e19c9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 838494eb612ffaa18931e42227619b22bc297b4f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0b2c5b4927a07bcb05c0ada97d4aed9f6c6da8c6cc65e21aa65fc3e40af1996c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901469"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361049"
 ---
-# <a name="m_action-field"></a>m_action 字段
-委托，它表示要在对象中执行的代码 <xref:System.Threading.Tasks.Task> 。
+# <a name="m_action-field"></a>m_action字段
+表示在 对象中执行的代码的 <xref:System.Threading.Tasks.Task> 委托。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **Assembly：** mscorlib (*mscorlib.dll*) 
+ **程序集：mscorlib** (mscorlib.dll *)*
 
- 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
+ 由于无法从 CIL 访问此内部成员.NET Framework，因此在 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 

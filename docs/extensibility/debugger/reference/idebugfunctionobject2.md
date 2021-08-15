@@ -9,18 +9,19 @@ ms.assetid: 56b2fdff-146d-4138-a34c-59a9c65a3ddd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 012cd3dd0068fe69aae8898a408435340c6b22ee
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9bc2ebc0422dcffeb682f7ac9eb02216d5adf6505b1799d6f33c22e192aa184c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072840"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389769"
 ---
 # <a name="idebugfunctionobject2"></a>IDebugFunctionObject2
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
  表示函数并增强 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口。
 
@@ -31,7 +32,7 @@ IDebugFunctionObject2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
- 表达式计算器 (EE) 实现此接口来表示函数。
+ 表达式计算器 (企业版) 实现此接口来表示函数。
 
 ## <a name="notes-for-callers"></a>调用方说明
  此接口的方法通过以下方式将 **IDebugFunctionObject** 的方法延迟：

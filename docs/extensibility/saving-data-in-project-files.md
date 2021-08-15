@@ -1,6 +1,6 @@
 ---
-title: 将数据保存于项目文件中|Microsoft Docs
-description: 了解托管包框架提供的接口，这些接口用于保存和检索项目文件中特定于子类型的数据。
+title: 将数据保存Project文件|Microsoft Docs
+description: 了解托管包框架提供的用于保存和检索项目文件中子类型特定数据的接口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,23 +12,24 @@ ms.assetid: a3d4b15b-a91e-41ba-b235-e62632d11bc5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5859fc9286a3e584c04ccacc1d8b8a35d98dea89
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4c0e96007303ee3bdd95f11ae6be784bd95804022fa1e1fb06458ba64ba42184
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904976"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359021"
 ---
 # <a name="save-data-in-project-files"></a>将数据保存在项目文件中
 项目子类型可以在项目文件中保存和检索子类型特定的数据。 托管包框架 (MPF) 提供了两个接口来完成此任务：
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>接口允许从项目文件的 **MSBuild** 部分访问属性值。 只要用户需要加载或保存生成相关的数据，任何用户都可以调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 提供的方法。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage>接口允许从项目文件的 MSBuild 访问属性值。 只要用户需要加载或保存生成相关的数据，任何用户都可以调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 提供的方法。
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment>用于以自由格式的 XML 保存非生成相关的数据。 每当需要将非生成相关的数据保留到项目文件中时，都会调用 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供的方法。
 
-  若要详细了解如何保留生成和非生成相关的数据，请参阅在 [MSBuild 项目文件中保存数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。
+  若要详细了解如何保留生成和非生成相关的数据，请参阅在项目文件中MSBuild[数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)。
 
 ## <a name="save-and-retrieve-build-related-data"></a>保存和检索与生成相关的数据
 
@@ -211,4 +212,4 @@ ms.locfileid: "112904976"
 > 本主题中提供的所有代码示例都是 VSSDK 示例中较大示例 [的一部分](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
 ## <a name="see-also"></a>另请参阅
-- [在 MSBuild 项目文件中保存数据](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)
+- [将数据持久保存MSBuild项目文件中](../extensibility/internals/persisting-data-in-the-msbuild-project-file.md)

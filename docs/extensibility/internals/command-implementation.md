@@ -10,27 +10,28 @@ ms.assetid: c782175c-cce4-4bd0-8374-4a897ceb1b3d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 93c99b131340d2e53b931619d4e5742d9e19f570
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2e9ba7dcaf1f9e2f0e98e7cbb773256d117fcb47edf49d9b8f9815c985156b38
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414657"
 ---
 # <a name="command-implementation"></a>命令实现
 若要在 VSPackage 中实现命令，您必须执行以下任务：
 
-1. 在 *.vsct* 文件中，设置命令组，然后向其添加命令。 有关详细信息，请参阅 [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+1. 在 *.vsct* 文件中，设置命令组，然后向其添加命令。 有关详细信息，请参阅[Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
-2. 向 Visual Studio 注册命令。
+2. 将命令注册到 Visual Studio。
 
 3. 实现命令。
 
 以下部分介绍如何注册和实现命令。
 
-## <a name="register-commands-with-visual-studio"></a>向 Visual Studio 注册命令
+## <a name="register-commands-with-visual-studio"></a>将命令注册 Visual Studio
  如果你的命令将显示在菜单上，则必须将添加 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 到你的 VSPackage，并将其用作菜单名称或其资源 ID 的值。
 
 ```
@@ -56,7 +57,7 @@ if ( null != mcs )
 ```
 
 ## <a name="implement-commands"></a>实现命令
- 有多种方法来实现命令。 如果需要静态菜单命令（它是始终以相同方式出现在同一菜单上的命令），请使用创建命令， <xref:System.ComponentModel.Design.MenuCommand> 如前一节中的示例中所示。 若要创建静态命令，必须提供负责执行命令的事件处理程序。 由于命令始终处于启用状态，因此不需要将其状态提供给 Visual Studio。 如果要根据某些条件更改命令的状态，可以将命令创建为类的实例， <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 并在其构造函数中提供一个事件处理程序来执行命令，并在 `QueryStatus` 命令的状态发生更改时通知 Visual Studio。 你还可以 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 作为命令类的一部分实现，也可以在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 将命令作为项目的一部分提供时实现。 这两个接口和 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类都具有一些方法，这些方法可通知 Visual Studio 对命令状态的更改，以及提供命令执行的其他方法。
+ 有多种方法来实现命令。 如果需要静态菜单命令（它是始终以相同方式出现在同一菜单上的命令），请使用创建命令， <xref:System.ComponentModel.Design.MenuCommand> 如前一节中的示例中所示。 若要创建静态命令，必须提供负责执行命令的事件处理程序。 因为命令始终处于启用状态并且可见，所以你无需将其状态提供给 Visual Studio。 如果要根据某些条件更改命令的状态，可以将命令创建为类的实例， <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 并在其构造函数中提供一个事件处理程序来执行命令，并在 `QueryStatus` 命令的状态发生更改时通知 Visual Studio。 你还可以 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 作为命令类的一部分实现，也可以在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 将命令作为项目的一部分提供时实现。 这两个接口和 <xref:Microsoft.VisualStudio.Shell.OleMenuCommand> 类都具有一些方法，这些方法可通知 Visual Studio 命令状态的更改，以及提供命令执行的其他方法。
 
  将命令添加到命令服务时，它将成为命令链中的一个。 当你为命令实现状态通知和执行方法时，请注意仅为该特定命令提供，并将所有其他情况传递到链中的其他命令。 如果无法通过返回) 在 (上传递命令 <xref:Microsoft.VisualStudio.OLE.Interop.Constants.OLECMDERR_E_NOTSUPPORTED> ，Visual Studio 可能会停止正常工作。
 

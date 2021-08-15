@@ -1,6 +1,6 @@
 ---
-title: 为64位应用程序部署先决条件 |Microsoft Docs
-description: 了解可在64位平台上的应用程序的 ClickOnce 部署必备组件中使用的可再发行组件。
+title: 为 64 位应用程序部署先决条件|Microsoft Docs
+description: 了解可再发行组件，这些可再发行组件可用作ClickOnce 64 位平台上的应用程序部署的先决条件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,14 +18,15 @@ ms.assetid: 87399e20-5510-41e4-b5b7-4a87c5773f21
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: abc44c679e65cc49f6a491e9435fdaeffed5e9c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 91209a76acc754a900bfc88d5d488f0b4729703121d1125abc9f25990ca1c9c9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893940"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435553"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的系统必备
 ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为“x86”（32 位平台）、“x64”（支持 AMD64 和 EM64T 指令集的计算机）以及“Itanium”（64 位 Itanium 处理器）。
@@ -45,5 +46,5 @@ ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为�
 
 ## <a name="see-also"></a>请参阅
 - [部署应用程序、服务和组件](../deployment/deploying-applications-services-and-components.md)
-- [如何：将必备组件与 ClickOnce 应用程序一起安装](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：使用应用程序安装ClickOnce先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64 位应用程序](/dotnet/framework/64-bit-apps)
