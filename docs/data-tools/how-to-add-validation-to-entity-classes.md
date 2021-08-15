@@ -11,19 +11,20 @@ ms.assetid: 61107da9-7fa3-4dba-b101-ae46536f52c4
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 08d60b254867c02c7cc406709a95117a11d669c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e11f02aa17faffcfcd138136646c4a237bd697ec6cf9ff51797aaaaa63968bc2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858808"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121264436"
 ---
 # <a name="how-to-add-validation-to-entity-classes"></a>如何：向实体类添加验证
 验证实体类是指确认输入到数据对象中的值是否符合对象架构内的约束，以及是否符合为应用程序所建立的规则的过程。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法，这样可以减少错误。 还可以减少应用程序和数据库之间的潜在往返行程次数。
 
-[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了一些分部方法，使用户可以扩展在插入、更新和删除整个实体的过程中运行的设计器生成的代码，以及在个别列发生更改的过程中和之后运行。
+[Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)提供了一些分部方法，使用户可以扩展在插入、更新和删除整个实体的过程中运行的设计器生成的代码，以及在个别列发生更改的过程中和之后。
 
 > [!NOTE]
 > 本主题提供通过使用 **O/R 设计器** 向实体类添加验证的基本步骤。 由于在未引用特定实体类的情况下，可能难以遵循这些一般步骤，因此将提供使用实际数据的演练。

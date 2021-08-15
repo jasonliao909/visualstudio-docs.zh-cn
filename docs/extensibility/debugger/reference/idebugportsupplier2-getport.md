@@ -11,17 +11,18 @@ ms.assetid: d55d5055-7386-4037-bf22-4c3e434a99ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3c5626ce41181a711aafb7dbf26bbe5a65f218c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0c448c3c0a516180dfdc2422451b7c72cd7be804cd906c9f7c9bc2d82e7aedc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072164"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416815"
 ---
 # <a name="idebugportsupplier2getport"></a>IDebugPortSupplier2::GetPort
 获取端口提供商提供的端口。

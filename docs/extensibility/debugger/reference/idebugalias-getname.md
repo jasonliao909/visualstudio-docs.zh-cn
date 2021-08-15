@@ -1,6 +1,6 @@
 ---
 description: 获取此别名的名称。
-title: IDebugAlias：： GetName |Microsoft Docs
+title: IDebugAlias：：GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: ac2d8891-56b5-40ef-9866-ed74f18bb043
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 51deb460e5ce30bfea076af9a1f0c1efd2df9673
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 63179ad1ca7c6e5f3c2a8173439bb5a4e2c915f6e4ae22578003b18a63259df6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059153"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403125"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 获取此别名的名称。
@@ -42,10 +43,10 @@ int GetName(
 
 ## <a name="parameters"></a>参数
 `pbstrName`\
-弄别名的名称。
+[out]别名的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -11,17 +11,18 @@ ms.assetid: 6040181f-7288-4a42-953c-d23f74200431
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b98361636e75ee2338cd32cd9782c53a4fb87d98
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4b47c348411648dc1bb34cf4bcd7bc99d2c66feffa926c4fe7258e30e33034c8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066095"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121261913"
 ---
 # <a name="idebugdocumenttextevents2oninserttext"></a>IDebugDocumentTextEvents2::onInsertText
 通知调试包文本已插入到文档中。

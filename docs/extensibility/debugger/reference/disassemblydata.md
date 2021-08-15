@@ -11,17 +11,18 @@ ms.assetid: 10e70aa7-9381-40d3-bdd1-d2cad78ef16c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 71d52c4f48f23368d83d81f88fba4bf0ba36f197
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e76a231891235f26ea4b4cd675f341376de4ff97ef7e6b2540a1cd1318504ce6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096117"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262550"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述用于显示 (IDE) 的集成开发环境的一种反汇编说明。

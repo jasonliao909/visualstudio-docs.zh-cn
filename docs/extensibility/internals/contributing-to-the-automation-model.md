@@ -10,14 +10,15 @@ ms.assetid: 44de482d-93c8-41a4-843c-cefda995a03e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44da0c91eb425cbd558aea4335447f9293684b90
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8c84e07fa5ac2d3fc3afafd1579c8012ad14b06c82eb8a566ecaa28f5904b158
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057034"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305823"
 ---
 # <a name="contribute-to-the-automation-model"></a>参与自动化模型
 Visual Studio 提供了一组用于自定义环境的自动化接口。 自动化模型是使最终用户能够创建 Visual Studio 外接程序和扩展的对象模型。
@@ -39,7 +40,7 @@ Visual Studio 提供了一组用于自定义环境的自动化接口。 自动�
 
  提供创建特定于 VSPackage 的对象的分步说明。
 
-- [项目建模](../../extensibility/internals/project-modeling.md)
+- [Project 建模](../../extensibility/internals/project-modeling.md)
 
  介绍为新项目类型创建自动化所需的标准项目对象，并说明了项目自动化遵循的路径。 本主题还提供了类的声明和实现的列表。
 

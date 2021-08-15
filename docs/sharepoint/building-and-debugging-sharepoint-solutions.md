@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c16414e6a49d727cf6b2113184c507feb7a73569
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 38a82d6b5eba33bd3c832e0c028054087db17e107e1b93d2c1b173657d4a6bb4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955783"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121244571"
 ---
 # <a name="build-and-debug-sharepoint-solutions"></a>生成和调试 SharePoint 解决方案
   通常情况下，生成和调试 SharePoint 解决方案与在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中生成和调试其他类型的项目相同。 本部分的主题介绍存在的差异。

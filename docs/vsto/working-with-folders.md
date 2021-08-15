@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 6e2e3dcb6978225b5af493f3649e4b2fac47f3c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 585d78cb5fb4a70e55ac8188a0fe26c9107ef3086f7789020b3df38b6daa3422
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847500"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408079"
 ---
 # <a name="work-with-folders"></a>使用文件夹
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 类包含可用于访问、创建和自定义文件夹的方法和属性。
@@ -34,9 +35,9 @@ ms.locfileid: "99847500"
 |获取文件夹的引用并显示内容。|[如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)|
 |创建在“预览”窗格中显示网页的文件夹。|[如何：以编程方式将网页与 Outlook 文件夹关联](../vsto/how-to-programmatically-associate-a-web-page-with-an-outlook-folder.md)|
 |创建将当前用户 ID 用作名称的文件夹。|[如何：以编程方式创建自定义文件夹项](../vsto/how-to-programmatically-create-custom-folder-items.md)|
-|将与特定条件匹配的邮件移动到指定文件夹。|[如何：以编程方式在 Outlook 中移动项](../vsto/how-to-programmatically-move-items-in-outlook.md)|
+|将与特定条件匹配的邮件移动到指定文件夹。|[如何：以编程方式移动 Outlook 中的项](../vsto/how-to-programmatically-move-items-in-outlook.md)|
 
- 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅 [outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
+ 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)

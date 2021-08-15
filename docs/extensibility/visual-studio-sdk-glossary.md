@@ -1,6 +1,6 @@
 ---
-title: Visual Studio SDK 术语表 |Microsoft Docs
-description: 此词汇表提供 Visual Studio SDK 文档中使用的术语的定义。
+title: Visual StudioSDK 术语表 |Microsoft Docs
+description: 此术语表提供 Visual Studio SDK 文档中使用的术语的定义。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,22 +10,23 @@ ms.assetid: b64d432b-c39b-4904-ad18-3c3218b6e3aa
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49e91a64220882eea196819a1860052dc871bec4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 28ef66eb7fc8a004b4d13ea6c3dbc56f7a467e465e4103c6cacf7581b656e209
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905418"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335285"
 ---
-# <a name="visual-studio-sdk-glossary"></a>Visual Studio SDK 术语表
+# <a name="visual-studio-sdk-glossary"></a>Visual StudioSDK 术语表
 此术语表提供文档中使用的术语的定义 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 。
 
 ## <a name="terms"></a>术语
- 外接程序应用程序、驱动程序或添加到主应用程序的其他软件。 在 Visual Studio 集成开发环境中 (IDE) ，外接程序是一种基于自动化的应用程序，用于扩展 IDE 的功能。
+ 外接程序应用程序、驱动程序或添加到主应用程序的其他软件。 在 Visual Studio 集成开发环境 (ide) ，外接程序是一种基于自动化的应用程序，用于扩展 ide 的功能。
 
- 自动化模型在 Visual Studio 的早期版本中称为扩展性模型，它是一个编程接口，可让你访问驱动 IDE 的基础例程。 外接程序、向导和宏使用自动化模型中的对象来控制或扩展 IDE 的功能。
+ 自动化模型在早期版本的 Visual Studio 中已知为扩展性模型，它是一个编程接口，可让你访问驱动 IDE 的基础例程。 外接程序、向导和宏使用自动化模型中的对象来控制或扩展 IDE 的功能。
 
  GUID 与 UI 命令或元素（如工具栏）的可见性的命令 UI 上下文关联。 命令用户界面上下文与选择上下文不同，因为它不会附加到窗口中。
 
@@ -87,17 +88,17 @@ ms.locfileid: "112905418"
 
   语言服务一组对象，这些对象允许 VSPackage 开发人员实现计算机语言代码编辑器的功能，如文本标记和着色。
 
-  用于承载不在任何项目中的打开文件的杂项文件项目项目。 此项目中的项列表不会持久保存。
+  "杂项文件" 项目 Project 用于承载不在任何项目中的打开文件。 此项目中的项列表不会持久保存。
 
   项目项目由层次结构对象或实现接口的 COM 对象组成 `IVsHierarchy` 。
 
   项目特定设计器或编辑器不能独立于项目类型使用的设计器。 所有特定于项目的设计器都必须在注册表中输入其编辑器工厂信息。 每当在特定项目中打开某一文件类型时，IDE 就可以实例化设计器。
 
-  项目类型窗口一个持续跟踪全局选择上下文中当前活动的项目层次结构和项目的窗口。 项目类型 windows 使用该 `SVsTrackSelectionEx` 服务对 IDE 发出更改并向用户显示反馈。 解决方案资源管理器是项目类型窗口的一个示例。
+  项目类型窗口一个持续跟踪全局选择上下文中当前活动的项目层次结构和项目的窗口。 Project 类型 windows 使用该 `SVsTrackSelectionEx` 服务对 IDE 发出更改并向用户显示反馈。 解决方案资源管理器是项目类型窗口的一个示例。
 
   属性窗口以前的属性浏览器。
 
-  基于引用的项目项目，不需要项目文件位于同一目录中。 相反，由项目本身存储和维护来自其他不相关目录的文件的引用。
+  基于引用的项目 Project，它们不要求项目的文件位于同一目录中。 相反，由项目本身存储和维护来自其他不相关目录的文件的引用。
 
   运行文档表内部结构，IDE 将通过该结构维护所有当前打开的文档的列表。 此列表包括内存中所有打开的文档，无论当前是否正在编辑这些文档。 文档是保存的任何项，包括在编辑器中打开的存储过程、项目中的文件或主项目文件 (例如，* vcproj 文件) 。
 
@@ -119,7 +120,7 @@ ms.locfileid: "112905418"
 
   可独立于任何特定项目类型使用的标准编辑器编辑器。 此类编辑器在注册表中注册了 EditorFactories。 这允许 IDE 定位并调用编辑器。
 
-  标准操作系统编辑器不特定于 Visual Studio 的嵌入。 它使用众所周知的 Win32 密钥注册 (例如，Win32 资源管理器知道如何调用) 。 如果此类编辑器可以嵌入，则编辑器仍会显示在 IDE 中的位置。 否则，将为此类编辑器创建一个单独的顶级窗口。
+  标准操作系统编辑器不 Visual Studio 特定的嵌入。 它使用众所周知的 Win32 密钥注册 (例如，Win32 资源管理器知道如何调用) 。 如果此类编辑器可以嵌入，则编辑器仍会显示在 IDE 中的位置。 否则，将为此类编辑器创建一个单独的顶级窗口。
 
   子上下文包 `IVsUserContext` 链接到上下文包的对象。 对象保存 IDE 组件中所选内容的查找关键字、 **F1** 关键字和属性。 子上下文的示例包括工具窗口中的命令或编辑器中的关键字。
 
@@ -137,6 +138,6 @@ ms.locfileid: "112905418"
 
   UI 层次结构一个 COM 对象，该对象实现 `IVsUIHierarchy` 接口以允许显示层次结构。 "UI 层次结构" 窗口实现了 `ISelectionContainer` 用于更新属性窗口的接口; 其他项目类型 windows 可以根据需要使用此实现。
 
-  .VSCT Visual Studio 命令表。 .Vsct 文件包含有关菜单、工具栏和 XML 格式命令的位置和行为的信息。
+  .vsct Visual Studio 命令表。 .Vsct 文件包含有关菜单、工具栏和 XML 格式命令的位置和行为的信息。
 
-  VSPackage 一款可安装的软件，它通过参与以下一项或多项来扩展 Visual Studio IDE：用户界面、服务、项目类型或编辑器/设计器。 VSPackage 由实现接口的 COM 对象 `IVsPackage` 和一个或多个实现其他接口以支持选择和其他功能的 com 对象组成。 此外，VSPackage 具有特定的注册要求。
+  VSPackage 一款可安装的软件，它通过参与以下一个或多个项来扩展 Visual Studio IDE：用户界面、服务、项目类型或编辑器/设计器。 VSPackage 由实现接口的 COM 对象 `IVsPackage` 和一个或多个实现其他接口以支持选择和其他功能的 com 对象组成。 此外，VSPackage 具有特定的注册要求。

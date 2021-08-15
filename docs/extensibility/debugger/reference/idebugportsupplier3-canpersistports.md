@@ -11,17 +11,18 @@ ms.assetid: 4127760c-e602-4e86-9232-457e382a52c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 570409a114acbf19697b0eb3ef3e5496fdfde93a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bcf82a1866e26dd3e680b2fd430d2daa0c96311ba6509dde77fc8dc065773b65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071969"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416725"
 ---
 # <a name="idebugportsupplier3canpersistports"></a>IDebugPortSupplier3::CanPersistPorts
 此方法确定端口供应商是否可以通过将端口写入) 在调试器调用之间 (来持久保存端口。

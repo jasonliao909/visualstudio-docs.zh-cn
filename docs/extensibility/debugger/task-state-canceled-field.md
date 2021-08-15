@@ -9,14 +9,15 @@ ms.assetid: f4f5a96a-8230-493d-9696-8d2716bda261
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 90b3c048edb4e52a426a2fd40d8bfd31168fea7d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c6e20f40111f88ad304e5ce86cf4f60a8449418b7d83b6ae9879c6598f0c7f0a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900169"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338080"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED字段
 任务在达到运行状态之前已取消，或者已确认其取消并完成，无异常。
@@ -25,7 +26,7 @@ ms.locfileid: "112900169"
 
  **程序集：mscorlib** (mscorlib.dll) 
 
- 由于无法从 CIL 访问此内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
+ 由于无法从 CIL 访问此内部成员.NET Framework，因此在 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 

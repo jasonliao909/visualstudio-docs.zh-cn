@@ -1,6 +1,6 @@
 ---
-title: 对象 |Microsoft Docs
-description: 本节中的文章提供了有关在 Visual Studio SDK 中用于创建核心文本编辑器实例的对象的参考信息。
+title: 对象 | Microsoft Docs
+description: 本节中的文章提供了有关用于在 Visual Studio SDK 中创建核心文本编辑器实例的对象的参考信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 8a5ab7a4-3668-4f78-9c08-04c5af7090f2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: dba3e410934211e72599a30fff02f875c288c33c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c11a653276f79f8313b192ee46786126609be4060dff49ee49df6d02931926be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090403"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336741"
 ---
 # <a name="objects"></a>对象
 以下参考信息介绍了用于创建核心文本编辑器实例的对象。
@@ -32,4 +33,4 @@ ms.locfileid: "105090403"
 - [VSTextView 对象](../extensibility/vstextview-object.md) 描述文本视图，该窗口允许用户查看和编辑文本缓冲区的 Unicode 文本。
 
 ## <a name="related-sections"></a>相关章节
-- [Visual STUDIO SDK 参考](../extensibility/visual-studio-sdk-reference.md) 显示参考主题的列表。
+- [Visual Studio SDK 参考](../extensibility/visual-studio-sdk-reference.md)显示参考主题的列表。

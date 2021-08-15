@@ -1,6 +1,6 @@
 ---
 description: 此方法获取表示完全限定类名的类字段类型。
-title: IDebugSymbolProvider：： GetClassTypeByName |Microsoft Docs
+title: IDebugSymbolProvider：：GetClassTypeByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 2c748909-51dc-49b7-b193-19f96fca1138
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c6439200ce0865fe7e6efd2424be0c5798e02dfa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 989ca9aa034103c492a141c113282c969bcd02ba29ecd4593f2f66680403f940
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081355"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306772"
 ---
 # <a name="idebugsymbolprovidergetclasstypebyname"></a>IDebugSymbolProvider::GetClassTypeByName
 此方法获取表示完全限定类名的类字段类型。
@@ -46,16 +47,16 @@ int GetClassTypeByName(
 
 ## <a name="parameters"></a>参数
 `pszClassName`\
-中类名称。
+[in]类名。
 
 `nameMatch`\
-中选择匹配的类型，例如区分大小写。 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)枚举中的一个值。
+[in]选择匹配类型，例如区分大小写。 一个来自 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 的值。
 
 `ppField`\
-弄返回由 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 接口表示的类类型。
+[out]返回由 [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md) 接口表示的类类型。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

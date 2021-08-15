@@ -1,6 +1,6 @@
 ---
 description: 获取表达式计算的结果。
-title: IDebugExpressionEvaluationCompleteEvent2：： GetResult |Microsoft Docs
+title: IDebugExpressionEvaluationCompleteEvent2：：GetResult |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: d9ad3e22-b6b2-421e-9a43-6bb8c70d12a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f1aaf150f3502490f7580866ac99a9fc16197dde
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a34f3eabf5206210c09edc5a2f3719a9d8f9074963b75ff5175b01e0bbdb5ba9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092236"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121307539"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 获取表达式计算的结果。
@@ -41,13 +42,13 @@ int GetResult(
 ```
 
 ## <a name="parameters"></a>参数
-`ppResult` 弄返回一个 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示表达式计算的结果。
+`ppResult` [out]返回表示 [表达式计算结果的 IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 返回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象包含计算后的表达式的值。 请注意，此值可能是一个复杂值（如数组），但最终结果必须是向用户显示的数值或字符串值。
+ 返回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象包含计算表达式的值。 请注意，此值可能是复杂值（如数组）但最终结果必须是向用户显示的数值或字符串值。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)

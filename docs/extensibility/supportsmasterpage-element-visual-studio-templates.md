@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 SupportsMasterPage 元素 |Microsoft Docs"
+title: SupportsMasterPage 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 SupportsMasterPage 元素及其如何指定是否在 "添加新项" 对话框中启用了 "选择母版页" 复选框。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3b779b3626c4ff47fe798fa9f4ff2e7bc9c7ac8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4138f7ffdb227c0a7bacd09fb514d2d22c63d5962ab3c9787b616dedde3d8d38
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056033"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121320968"
 ---
 # <a name="supportsmasterpage-element-visual-studio-templates"></a>SupportsMasterPage 元素（Visual Studio 模板）
 指定是否在 "**添加新项**" 对话框中启用 "**选择母版页**" 复选框。
@@ -48,7 +48,7 @@ ms.locfileid: "105056033"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定对模板进行分类的数据，并定义它在 " **新建项目** " 或 " **新建项** " 对话框中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|指定对模板进行分类的数据，并定义它在 "**新建 Project** " 或 "**新建项**" 对话框中的显示方式。|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。
@@ -56,7 +56,7 @@ ms.locfileid: "105056033"
  文本必须是 `true` 或 `false` ，指示是否在 "**添加新项**" 对话框中启用了 "**选择母版页**" 复选框。
 
 ## <a name="remarks"></a>备注
- `SupportsMasterPage` 是可选元素。 默认值为 `false`。
+ `SupportsMasterPage` 是可选元素。 默认值是 `false`。
 
  `SupportsMasterPage`元素仅适用于 Web 项模板。
 
@@ -86,5 +86,5 @@ ms.locfileid: "105056033"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)

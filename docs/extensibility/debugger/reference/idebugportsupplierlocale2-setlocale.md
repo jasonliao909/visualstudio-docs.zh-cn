@@ -9,17 +9,18 @@ ms.assetid: 21e88510-caac-405e-ba45-cb00e19a28bc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6ec7b5105915f762833b6b3b2b61b12d06b56773
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 698277be15cc0c338e5a313809b3befc2f80744aaea1d987274a0443938f3ed2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071800"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416466"
 ---
 # <a name="idebugportsupplierlocale2setlocale"></a>IDebugPortSupplierLocale2::SetLocale
 设置端口供应商的区域设置。

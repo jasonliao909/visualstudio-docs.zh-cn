@@ -11,17 +11,18 @@ ms.assetid: 0ea04cfa-de87-4b6c-897e-4572c1a28942
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75f86506ea3cd29d09bf8c78a07eaabcf7a9a6f0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c01f674a6bda3ee1dfb229fdabc3123085f7ed466a034880f5fecbed9d89ccc5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084631"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416997"
 ---
 # <a name="idebugparsedexpressionevaluatesync"></a>IDebugParsedExpression::EvaluateSync
 此方法计算分析后的表达式，并选择性地将结果转换为另一种数据类型。

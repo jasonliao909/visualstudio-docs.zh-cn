@@ -11,17 +11,18 @@ ms.assetid: 7b1a91cf-8b5a-4fc0-ac36-0dc2d336fa1b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c5f085cae185a48f3d41c6fa4bca5cad7afb46b3
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 3e9b05dc4687744a73958c05ff2aa4fd1c987e92964fcd11792141659dfe7e73
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215794"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121328171"
 ---
 # <a name="query-datasets"></a>查询数据集
-若要搜索数据集中的特定记录，请使用 `FindBy` DataTable 上的方法，编写自己的 foreach 语句来循环遍历表的 Rows 集合，或使用 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
+若要搜索数据集中的特定记录，请使用 `FindBy` DataTable 上的方法，编写自己的 foreach 语句来循环遍历表的 Rows 集合，或使用[LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 
 ## <a name="dataset-case-sensitivity"></a>数据集区分大小写
 在数据集内，表名和列名在默认情况下是不区分大小写的，也就是说，数据集中名为 "Customers" 的表也可以称为 "customers"。 这与多个数据库中的命名约定相匹配，其中包括 SQL Server。 在 SQL Server 中，默认行为是数据元素的名称不能仅通过大小写区分。
@@ -70,7 +71,7 @@ ms.locfileid: "106215794"
 本页提供使用类型化数据集的示例。 有关在非类型化数据集中导航关系的信息，请参阅 [导航 datarelation](/dotnet/framework/data/adonet/dataset-datatable-dataview/navigating-datarelations)。
 
 > [!NOTE]
-> 如果使用的是 Windows 窗体应用程序并使用数据绑定功能显示数据，则设计器生成的窗体可能会为应用程序提供足够的功能。 有关详细信息，请参阅 [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具体而言，请参阅 [数据集中的关系](relationships-in-datasets.md)。
+> 如果使用的是 Windows 窗体应用程序并使用数据绑定功能显示数据，则设计器生成的窗体可能会为应用程序提供足够的功能。 有关详细信息，请参阅[在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。 具体而言，请参阅 [数据集中的关系](relationships-in-datasets.md)。
 
 下面的代码示例演示如何在类型化的数据集中向上和向下导航关系。 此代码示例使用类型化 <xref:System.Data.DataRow> `NorthwindDataSet.OrdersRow` 的 () ，生成的 FindBy *PrimaryKey* (`FindByCustomerID`) 方法查找所需行并返回相关记录。 仅当有以下情况时，才会正确编译和运行示例：
 
