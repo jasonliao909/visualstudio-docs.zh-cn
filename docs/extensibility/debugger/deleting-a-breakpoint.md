@@ -11,14 +11,15 @@ ms.assetid: 75a046cc-d20a-4c79-ad2d-1f18426ac5d0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1d8e0d68f32ece7760805c05fd281b0e62a70003
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ff1d0af4ceedc8ebd4659b44e0a316919e54a92aca9a3a0341c9f9d184e439b3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097274"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343247"
 ---
 # <a name="deleting-a-breakpoint"></a>删除断点
 下面描述了删除挂起断点时的过程：

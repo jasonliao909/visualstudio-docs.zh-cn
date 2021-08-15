@@ -10,14 +10,15 @@ ms.assetid: 13d5728c-4e28-42e4-944a-a565b1765ef8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99c19fd202cf0e9fe56ba6485aaa1a7005047774
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 830216ca44f13e4ecbdffa3548d48d819d657678eb0468f746c7f419dde99f56
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064057"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432093"
 ---
 # <a name="source-control"></a>源代码管理
 本部分介绍了 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过源代码管理插件或源代码管理 VSPackage 实现源代码管理作为集成功能的选项。
@@ -27,7 +28,7 @@ ms.locfileid: "105064057"
 
  显示开始使用源代码管理所必须具备的重要信息。
 
-- [概述](../../extensibility/internals/source-control-integration-overview.md)
+- 概述
 
  实现源代码管理的两个可用选项的概述。
 

@@ -10,17 +10,18 @@ ms.assetid: 25efef99-0ef3-4332-a752-607605fc6e67
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af1d3718fd4976ea2c26d284f9257b52cc233e67
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 409a99d8e2fbc8e62a272b5406785b7b1ba4ed87b4538a2888bcb26460ebbb71
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066771"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433978"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
 在给定要使用的最大字节数的情况中，检索文档校验和和算法标识符。

@@ -1,6 +1,6 @@
 ---
 title: 如何：添加资源文件 |Microsoft Docs
-description: 使用 "解决方案" 节点的快捷菜单上的命令和解决方案资源管理器中的功能节点，在 Visual Studio 中添加资源文件。
+description: 使用解决方案资源管理器中解决方案节点和功能节点的快捷菜单上的命令，在 Visual Studio 中添加资源文件。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,23 +13,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 22b5638f7251b34c74da348e55e755cd27132aff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1769e9efdbd2856a5086e7d0be41e3a8ef3a19a0031b5e9096fe02e2954afaf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934840"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425341"
 ---
 # <a name="how-to-add-a-resource-file"></a>如何：添加资源文件
-  用于添加资源文件的命令位于解决方案资源管理器中解决方案节点和功能节点的快捷菜单中。 有关详细信息，请参阅 [本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)。
+  用于添加资源文件的命令位于解决方案资源管理器中解决方案节点和功能节点的快捷菜单中。 有关详细信息，请参阅[本地化 SharePoint 解决方案](../sharepoint/localizing-sharepoint-solutions.md)。
 
-### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>向 SharePoint 解决方案添加全局资源文件
+### <a name="to-add-a-global-resource-file-to-a-sharepoint-solution"></a>将全局资源文件添加到 SharePoint 解决方案中
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，打开一个 SharePoint 解决方案。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，打开 SharePoint 解决方案。
 
-2. 在 **解决方案资源管理器** 中，选择 SharePoint 项目节点，然后在菜单栏上选择 "**项目**" "  >  **添加新项**"。
+2. 在 **解决方案资源管理器** 中，选择 "SharePoint 项目" 节点，然后在菜单栏上选择 " **Project**  >  **添加新项**"。
 
 3. 在 " **添加新项** " 对话框中，选择 " **全局资源文件** " 模板，然后选择 " **添加** " 按钮。
 
@@ -42,7 +43,7 @@ ms.locfileid: "99934840"
 
 5. 当 **资源编辑器** 在中打开时 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，将资源添加到资源文件中。
 
-### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>向 SharePoint 功能添加功能资源文件
+### <a name="to-add-a-feature-resource-file-to-a-sharepoint-feature"></a>将功能资源文件添加到 SharePoint 功能
 
 1. 如果未在中打开 SharePoint 解决方案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，请打开解决方案。
 

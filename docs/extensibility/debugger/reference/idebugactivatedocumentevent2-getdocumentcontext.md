@@ -12,17 +12,18 @@ ms.assetid: e7472069-7337-4ef4-8f8a-8c027a2e22f4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79344833eb5f8e46b4725828980e334b4049c01e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21bdd7bf7d47ba3578ec72c6dbbe1a5672f1adea36352ea87fc4ce4692066c81
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078157"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342643"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
 获取描述文档中由调试包激活的位置的文档上下文。

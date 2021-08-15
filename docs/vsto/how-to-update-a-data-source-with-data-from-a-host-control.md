@@ -1,6 +1,6 @@
 ---
-title: 如何：使用主机控件中的数据更新数据源
-description: 了解如何将宿主控件绑定到数据源，并使用对控件中的数据所做的更改来更新数据源。
+title: 如何：使用来自主机控件的数据更新数据源
+description: 了解如何将宿主控件绑定到数据源，以及如何使用对控件中数据所做的更改来更新数据源。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,23 +16,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9aab30b9c2fa363ef68d7d3f70ca05ca6c387a3c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 5ff36a48eb4982b4fcd0fb882ba9f6decc64f95303693b5be5dd0e61f5d424b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828925"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267775"
 ---
-# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用主机控件中的数据更新数据源
+# <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用来自主机控件的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：
 
 1. 使用控件中的已修改数据更新内存中数据源。 通常情况下，内存中数据源是一个 <xref:System.Data.DataSet>、 <xref:System.Data.DataTable>或某个其他数据对象。
 
 2. 使用内存中数据源中的已更改数据更新数据库。 此步骤仅适用于数据源连接到后端数据库（例如 SQL Server 或 Microsoft Office Access 数据库）的情况。
 
-   有关宿主控件和数据绑定的详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md) 和 [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
+   有关主机控件和数据绑定的更多信息，请参阅主机[项](../vsto/host-items-and-host-controls-overview.md)和主机控件概述和将数据绑定到 Office[解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -53,18 +54,18 @@ ms.locfileid: "107828925"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet1":::
 
 ### <a name="automatically-update-the-in-memory-data-source"></a>自动更新内存中数据源
- 你可也可以配置控件，使其自动更新内存中数据源。 在文档级项目中，可以通过使用代码或设计器来实现。 在 VSTO 外接程序项目中，您必须使用代码。
+ 你可也可以配置控件，使其自动更新内存中数据源。 在文档级项目中，可以通过使用代码或设计器来实现。 在VSTO外接程序项目中，必须使用代码。
 
 #### <a name="to-set-a-control-to-automatically-update-the-in-memory-data-source-by-using-code"></a>通过使用代码将控件设置为自动更新内存中数据源
 
-1. 使用将 <xref:System.Windows.Forms.Binding> 控件绑定到数据源的对象的 DataSourceUpdateMode. OnPropertyChanged 模式。 有两个选项可用于更新数据源：
+1. 使用系统。Windows。将控件绑定到数据源的对象的 Forms.DataSourceUpdateMode.OnPropertyChanged <xref:System.Windows.Forms.Binding> 模式。 有两个选项可用于更新数据源：
 
-   - 若要在验证控件时更新数据源，请将此属性设置为 DataSourceUpdateMode. OnValidation。
+   - 若要在验证控件时更新数据源，将此属性设置为"系统"。Windows。Forms.DataSourceUpdateMode.OnValidation。
 
-   - 若要在控件的数据绑定属性值更改时更新数据源，请将此属性设置为 DataSourceUpdateMode. OnPropertyChanged。
+   - 若要在控件的数据绑定属性的值发生更改时更新数据源，请将此属性设置为"系统"。Windows。Forms.DataSourceUpdateMode.OnPropertyChanged。
 
      > [!NOTE]
-     > 由于 Word 不提供文档更改或控件更改通知，因此 DataSourceUpdateMode. OnPropertyChanged 选项不适用于 Word 宿主控件。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
+     > 系统。Windows。Forms.DataSourceUpdateMode.OnPropertyChanged 选项不适用于 Word 宿主控件，因为 Word 不提供文档更改或控件更改通知。 但是，此选项可用于 Word 文档中的 Windows 窗体控件。
 
      下面的示例将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件配置为当该控件中的值更改时自动更新数据源。 此示例假定你有一个名为 <xref:Microsoft.Office.Tools.Excel.NamedRange> 的 `namedRange1` 控件，且其 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 属性已绑定到数据源中的一个字段。
 
@@ -79,7 +80,7 @@ ms.locfileid: "107828925"
 
 3. 在“属性”  窗口中，展开“(DataBindings)”  属性。
 
-4. 在 " **(高级)** " 属性旁边，单击省略号按钮 (" ![VisualStudioEllipsesButton 屏幕快照](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照") ") 。
+4. 在" **高级 (属性) ，** 单击 ![VisualStudioEllipsesButton](../vsto/media/vbellipsesbutton.png "VisualStudioEllipsesButton 屏幕快照") 屏幕截图 (省略号) 。
 
 5. 在“格式设置和高级绑定”  对话框中，单击“数据源更新模式”  下拉列表并选择以下值之一：
 
@@ -93,7 +94,7 @@ ms.locfileid: "107828925"
 6. 关闭“格式设置和高级绑定”  对话框。
 
 ## <a name="update-the-database"></a>更新数据库
- 如果内存中数据源与某个数据库关联，则必须使用对该数据源所做的更改来更新此数据库。 有关更新数据库的详细信息，请参阅使用 TableAdapter [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)  和 [更新数据](../data-tools/update-data-by-using-a-tableadapter.md) 。
+ 如果内存中数据源与某个数据库关联，则必须使用对该数据源所做的更改来更新此数据库。 有关更新数据库的信息，请参阅 [将数据保存回](../data-tools/save-data-back-to-the-database.md)  数据库和使用 [TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md) 。
 
 ### <a name="to-update-the-database"></a>更新数据库
 
@@ -106,21 +107,21 @@ ms.locfileid: "107828925"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet20":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet20":::
 
-2. 调用 `Update` 项目中生成的 TableAdapter 的方法。
+2. 调用 `Update` 项目中生成的 TableAdapter 的 方法。
 
-     当你在设计时将数据绑定控件添加到文档或工作簿时，将自动生成 TableAdapter。 TableAdapter 将项目中的类型化数据集连接到数据库。 有关详细信息，请参阅 [TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
+     在设计时向文档或工作簿添加数据绑定控件时，会自动生成 TableAdapter。 TableAdapter 将项目中的类型数据集连接到数据库。 有关详细信息，请参阅 [TableAdapter 概述](../data-tools/fill-datasets-by-using-tableadapters.md#tableadapter-overview)。
 
-     下面的代码示例假定你已连接到 Northwind 数据库中的 Customers 表，并且你的项目包含一个名为的 TableAdapter `customersTableAdapter` 和一个名为的类型化数据集 `northwindDataSet` 。
+     下面的代码示例假定你已连接到 Northwind 数据库中的 Customers 表，并且项目包含名为 的 TableAdapter 和名为 的类型 `customersTableAdapter` 数据集 `northwindDataSet` 。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet21":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet21":::
 
-## <a name="see-also"></a>请参阅
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+## <a name="see-also"></a>另请参阅
+- [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 - [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)
-- [如何：在工作表中滚动查看数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
-- [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
-- [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
-- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)
+- [如何：在工作表中滚动浏览数据库记录](../vsto/how-to-scroll-through-database-records-in-a-worksheet.md)
+- [如何：使用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
+- [如何：使用 对象的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)
+- [如何：使用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：使用服务数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)

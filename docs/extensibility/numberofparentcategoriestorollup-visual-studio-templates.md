@@ -1,6 +1,6 @@
 ---
 title: 'NumberOfParentCategoriesToRollUp 元素 (模板) '
-description: 了解 NumberOfParentCategoriesToRollUp 元素以及它如何指定将在 "新建项目" 对话框中显示模板的父类别的数目。
+description: 了解 NumberOfParentCategoriesToRollUp 元素以及它如何指定将在 "新建 Project" 对话框中显示模板的父类别的数目。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02c6f0e22429b268fb643c622ebd1f237a4721d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 899e5e991c998f26c46749875f3c10a7555136f89b95dc8d9c0351a734c0d722
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090468"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431664"
 ---
-# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a> (Visual Studio 模板的 NumberOfParentCategoriesToRollUp 元素) 
-指定将在 " **新建项目** " 对话框中显示模板的父类别的数目。
+# <a name="numberofparentcategoriestorollup-element-visual-studio-templates"></a>NumberOfParentCategoriesToRollUp 元素 (Visual Studio 模板) 
+指定将在 "**新建 Project** " 对话框中显示模板的父类别的数目。
 
  \<VSTemplate> \<TemplateData>
  \<NumberOfParentCategoriesToRollUp>
@@ -55,13 +55,13 @@ ms.locfileid: "105090468"
 ## <a name="text-value"></a>文本值
  `integer`值是必需的。
 
- 此值指定将在 " **新建项目** " 对话框中显示模板的父类别的数目。
+ 此值指定将在 "**新建 Project** " 对话框中显示模板的父类别的数目。
 
 ## <a name="remarks"></a>备注
  `NumberOfParentCategoriesToRollUp` 是可选元素。
 
 ## <a name="example"></a>示例
- 此示例演示了 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。 如果具有此元数据的模板在顶级节点下面放置了两个文件夹级别 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ，则模板将显示在 " **新建项目** " 对话框的 "顶层" 节点中。 如果 `NumberOfParentCategoriesToRollUp` 未设置，则模板仅出现在它所在的节点上。
+ 此示例说明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。 如果具有此元数据的模板在顶级节点下面放置了两个文件夹级别 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] ，则模板将显示在 "**新建 Project** " 对话框的 "顶层" 节点中。 如果 `NumberOfParentCategoriesToRollUp` 未设置，则模板仅出现在它所在的节点上。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

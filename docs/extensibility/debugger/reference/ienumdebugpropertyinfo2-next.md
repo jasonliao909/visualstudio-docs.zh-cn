@@ -11,17 +11,18 @@ ms.assetid: 4eb8c7c3-aadf-4187-abee-c0620308a3eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d73b91a33128d663417e3579812b16a0e0800dd3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4a08759733f47383da001dc499fc7f47627882e8da5d8c1c17a9ed3ccea30ed8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082889"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433121"
 ---
 # <a name="ienumdebugpropertyinfo2next"></a>IEnumDebugPropertyInfo2::Next
 返回枚举中的下一个元素集。

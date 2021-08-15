@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 42339c532db3442d5fb5c5da3b51d94801a0907d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3ee0cfc7a87d8e035dfdd0f1337c1e440f710c93083dbbe4137e0469f0346d65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389392"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271493"
 ---
 # <a name="customizing-element-creation-and-movement"></a>自定义元素创建和移动
 
@@ -36,7 +37,7 @@ EMD 元素 (合并) 指定将一个模型元素合并到另一个模型元素时
 
 - 程序代码调用元素合并指令。
 
-虽然创建操作看起来可能不同于复制操作，但实际上它们以相同的方式工作。 添加元素（例如从工具箱添加元素）时，会复制它的原型。 原型以与从模型的另一部分复制的元素相同的方式合并到模型中。
+虽然创建操作看起来可能不同于复制操作，但实际上它们以相同的方式工作。 添加元素（例如从工具箱添加元素）时，将复制其原型。 原型以与从模型的另一部分复制的元素相同的方式合并到模型中。
 
 EMD 的职责是决定如何将对象或对象组合并到模型中的特定位置。 具体而言，它决定应实例化哪些关系以将合并的组链接到模型。 还可以自定义它以设置属性和创建其他对象。
 
@@ -71,13 +72,13 @@ EMD 的职责是决定如何将对象或对象组合并到模型中的特定位�
    例如，可以使用合并元素中新位置的数据在模型中设置属性。
 
 > [!NOTE]
-> 如果编写自定义合并代码，则只会影响使用此 EMD 执行的合并。 如果有其他 EMD 合并同一类型的对象，或者还有其他自定义代码在未使用 EMD 的情况下创建这些对象，则它们不受自定义合并代码的影响。
+> 如果编写自定义合并代码，则只会影响使用此 EMD 执行的合并。 如果还有其他 EMD 合并同一类型的对象，或者还有其他自定义代码在未使用 EMD 的情况下创建这些对象，则它们不受自定义合并代码的影响。
 >
 > 若要确保自定义代码始终处理新元素或新关系，请考虑在嵌入关系上定义 ，在元素的域类上定义 `AddRule` `DeleteRule` 。 有关详细信息，请参阅 [规则在模型中传播更改](../modeling/rules-propagate-changes-within-the-model.md)。
 
 ## <a name="example-defining-an-emd-without-custom-code"></a>示例：定义不带自定义代码的 EMD
 
-以下示例允许用户通过从工具箱拖动到现有形状，同时创建元素和连接器。 该示例将 EMD 添加到 DSL 定义。 在此修改之前，用户可以将工具拖动到关系图上，但不能拖到现有形状上。
+以下示例允许用户通过从工具箱拖动到现有形状，同时创建元素和连接器。 该示例将 EMD 添加到 DSL 定义。 在修改之前，用户可以将工具拖动到关系图上，但不能拖到现有形状上。
 
 用户还可以将元素粘贴到其他元素上。
 
@@ -91,7 +92,7 @@ EMD 的职责是决定如何将对象或对象组合并到模型中的特定位�
 
    1. 在 **DSL 资源管理器中**，展开 **"域类"。** 右键单击 `ExampleElement` ，然后单击"**添加新元素合并指令"。**
 
-   2. 确保 **"DSL 详细信息"** 窗口已打开，以便可以看到新 EMD 的详细信息。  (菜单：**视图、****其他窗口、DSL****详细信息**.) 
+   2. 确保 **"DSL 详细信息"** 窗口已打开，以便可以看到新 EMD 的详细信息。  (菜单：**视图**、**其他Windows、DSL****详细信息**.) 
 
 3. 在 **"DSL 详细信息"** 窗口中设置索引类，以定义可以将哪些元素类合并到 `ExampleElement` 对象上。
 

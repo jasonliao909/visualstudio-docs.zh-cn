@@ -1,6 +1,6 @@
 ---
 title: 如何：通过使用事务来保存数据
-description: 查看如何通过在 Visual Studio 中使用数据集工具来保存数据。 使用 system.exception 命名空间将数据保存在事务中。
+description: 查看如何通过将事务与 Visual Studio 中的数据集工具结合使用来保存数据。 使用 system.exception 命名空间将数据保存在事务中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: 8b835e8f-34a3-413d-9bb5-ebaeb87f1198
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c22a0cc9b0b9d37a4d725aa8ce494646e7779f0f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 5acc25ecb9a370317170d6d419a931414a7dee11ed0b4bcf1c1b4442248d109a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216067"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346903"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：通过使用事务来保存数据
 
@@ -41,7 +42,7 @@ ms.locfileid: "106216067"
 
 1. 在“项目”菜单中，选择“添加引用”。
 
-2. 在 " **.net** " 选项卡上 (SQL Server) 项目 **SQL Server** "选项卡，选择" **系统**"，然后选择 **" 确定 "**。
+2. 在 " **.net** " 选项卡上 (SQL Server) 项目 **SQL Server** "选项卡，选择"**系统**"，然后选择 **" 确定 "**。
 
      对 *System.Transactions.dll* 的引用将添加到项目。
 

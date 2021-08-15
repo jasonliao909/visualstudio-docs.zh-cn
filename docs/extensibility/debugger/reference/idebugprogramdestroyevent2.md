@@ -11,14 +11,15 @@ ms.assetid: ddf127ca-c4a5-4071-90ca-68faf2f57dbd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49242ea2c0116ae57f1c063bf3d5fe5e1db2ce17
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 51fd641b85ede32c96d49a06f442673ced6f1421a60396fac790bbe434eb27cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084371"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433250"
 ---
 # <a name="idebugprogramdestroyevent2"></a>IDebugProgramDestroyEvent2
 当程序运行到完成时，调试引擎 (DE) 发送到会话调试管理器 (SDM) 。

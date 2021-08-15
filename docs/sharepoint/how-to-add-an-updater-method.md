@@ -1,6 +1,6 @@
 ---
 title: 如何：添加更新程序方法 |Microsoft Docs
-description: 了解如何允许用户通过添加更新方法来更新 SharePoint 外部列表中的业务数据。
+description: 了解如何通过添加更新方法，使用户能够更新 SharePoint 外部列表中的业务数据。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,17 +17,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d6337ac237c2a030593b90b29af5e8474052de99
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2a72c5f14beb74658fd06c10728083c9eccba8adbd62c0a77db1aaf1bd32f092
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216730"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121425305"
 ---
 # <a name="how-to-add-an-updater-method"></a>如何：添加更新程序方法
-  您可以通过创建一种 *更新方法，* 使用户能够更新 SharePoint 外部列表中的业务数据。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+  可以通过创建 *更新方法，* 使用户能够更新 SharePoint 外部列表中的业务数据。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-an-updater-method"></a>创建更新方法
 
@@ -45,7 +46,7 @@ ms.locfileid: "106216730"
 
    - 方法的输入参数。
 
-   - 参数的类型描述符。 默认情况下，Visual Studio 使用为 Finder 方法定义的实体类型描述符 (例如： Contact) 。
+   - 参数的类型描述符。 默认情况下，Visual Studio 使用为查找器方法定义的实体类型描述符 (例如： "联系) "。
 
    - 方法的方法实例。
 

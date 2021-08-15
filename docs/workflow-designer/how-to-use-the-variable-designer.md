@@ -10,14 +10,15 @@ ms.assetid: 0318dfb0-bf8f-4f92-9b86-ae4c1b2161ad
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: a427b14db5be8081352ce54bf13900fa826202b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 84e34fbc89cdae70a100e802a3e97773330bde1f98a30c4d1e26c4012cdfab68
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894005"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440508"
 ---
 # <a name="how-to-use-the-variable-designer"></a>如何：使用变量设计器
 

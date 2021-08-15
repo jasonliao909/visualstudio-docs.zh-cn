@@ -11,17 +11,18 @@ ms.assetid: 1cdedb47-caf8-468e-aaf4-163f16afb403
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27b3ce2dda13e45bb4d82f68eb02a8930de55764
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17f6c106a387c5a53a78e8488929f9a54389d58971854f925b3f9f9550c3548b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053680"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338847"
 ---
 # <a name="idebugprogram2getmemorybytes"></a>IDebugProgram2::GetMemoryBytes
 检索程序占用的内存字节数。

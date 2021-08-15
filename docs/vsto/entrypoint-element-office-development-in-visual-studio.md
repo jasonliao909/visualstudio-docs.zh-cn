@@ -1,6 +1,6 @@
 ---
-description: Vstav3 命名空间的每个入口点元素都标识应在安装此 ClickOnce 应用程序时运行的自定义程序集。
-title: '&lt;入口点 &gt; 元素 (Visual Studio 中的 Office 开发) '
+description: vstav3 命名空间的每个入口点元素都标识应在安装此 ClickOnce 应用程序时运行的自定义程序集。
+title: '&lt;&gt;Visual Studio 中 Office 开发 (入口点元素) '
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 581274ea58dafa8021cb456a0c7cb1e6bf98da32
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: ff0f3313da0479c7ec6a8dda0c2bc609e6f7b4a357821b9acf988e7ff599112a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223714"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121424341"
 ---
-# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;入口点 &gt; 元素 (Visual Studio 中的 Office 开发) 
+# <a name="ltentrypointgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 Office 开发 (入口点元素) 
   `entryPoint` 命名空间中的每个 `vstav3` 元素都标识应在安装此 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 应用程序时运行的自定义程序集。
 
 ## <a name="syntax"></a>语法
@@ -42,7 +43,7 @@ ms.locfileid: "102223714"
 
  `entryPoint` 元素具有以下属性。
 
-|属性|描述|
+|Attribute|说明|
 |---------------|-----------------|
 |`class`|必需。 标识要执行的自定义程序集。 此属性的语法是 *NamespaceName.ClassName*。|
 
@@ -55,8 +56,8 @@ ms.locfileid: "102223714"
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示文档级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示文档级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
@@ -95,10 +96,10 @@ ms.locfileid: "102223714"
 </vstav3:entryPoint>
 ```
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `entryPoint` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
@@ -113,7 +114,7 @@ ms.locfileid: "102223714"
 </vstav3:entryPoint>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
 - [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)

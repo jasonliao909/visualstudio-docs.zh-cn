@@ -11,17 +11,18 @@ ms.assetid: e7564ff2-00b5-4750-8fd5-dc1029a16912
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a4b9686e5e3eb565b3c7b1c86a90ceac45b37cc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b59699c5ec284c2bb1d9534de8960b7706c1804ea95310f1a14b93fd7085d472
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082343"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401851"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
 描述特定的计算机。

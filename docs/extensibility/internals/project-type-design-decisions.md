@@ -1,6 +1,6 @@
 ---
-title: 项目类型设计决策 |Microsoft Docs
-description: 通过创建新的项目类型，了解在扩展 Visual Studio 之前要做出的项目、项目文件持久性和承诺 mechanic 设计决策。
+title: Project类型设计决策|Microsoft Docs
+description: 了解通过创建新项目类型扩展项目之前要做出的项目、项目文件持久性和承诺Visual Studio设计决策。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,50 +13,51 @@ ms.assetid: f68671fe-fd7a-4e56-a0b5-330b0f1fedb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f1a90082b0ba9d18336463b26cf72acea39851b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 07559518e0873d2392b35594cc5fbff6f7de0c32d1a8810895a8e348da83f4f5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064304"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401409"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
-在创建新的项目类型之前，必须对项目类型做出多种设计决策。 您必须确定您的项目将包含哪些类型的项、如何保存项目文件以及将使用哪种提交模型。
+创建新项目类型之前，必须对项目类型做出多个设计决策。 必须确定项目将包含的项目类型、项目文件的持久化方式以及将使用的承诺模型。
 
 ## <a name="project-items"></a>项目项
- 你的项目将使用文件还是抽象对象？ 如果使用文件，它们是基于引用还是基于目录的文件？ 文件或抽象对象将是本地还是远程？
+ 项目是使用文件或抽象对象吗？ 如果使用文件，这些文件是基于引用还是基于目录的文件？ 文件或抽象对象是本地对象还是远程对象？
 
- 项目中的项可以为文件，也可以是更多的抽象对象，例如数据库存储库中的对象或 Internet 上的数据连接。 如果项为文件，则项目可以是基于引用的项目，也可以是基于目录的项目。
+ 项目中的项可以是文件，也可以是更抽象的对象，例如数据库存储库中的对象或 Internet 上的数据连接。 如果项是文件，则项目可以是基于引用的项目，也可以是基于目录的项目。
 
- 在基于引用的项目中，项可以出现在多个项目中。 不过，项所代表的实际文件仅位于一个目录中。 在基于目录的项目中，所有项目项都存在于目录结构中。
+ 在基于引用的项目中，项可以出现在多个项目中。 但是，项表示的实际文件仅位于一个目录中。 在基于目录的项目中，所有项目项都存在于目录结构中。
 
- 本地项存储在安装了应用程序的同一计算机上。 远程项目可存储在本地网络中的单独服务器上，或存储在 Internet 上的其他位置。
+ 本地项存储在安装应用程序的同一计算机上。 远程项可以存储在本地网络或 Internet 上其他位置的单独服务器上。
 
-## <a name="project-file-persistence"></a>项目文件持久性
- 数据是存储在公用文件系统中还是存储在结构化存储中？ 文件是通过使用标准编辑器还是特定于项目的编辑器打开？
+## <a name="project-file-persistence"></a>Project文件持久性
+ 数据是存储在公共平面文件系统中，还是存储在结构化存储中？ 文件是使用标准编辑器还是项目特定的编辑器打开？
 
- 若要保存数据，大多数应用程序会将其数据保存在文件中，然后在用户必须查看或更改信息时将其读回。
+ 为了保留其数据，大多数应用程序将其数据保存在文件中，然后在用户必须查看或更改信息时重新读取数据。
 
- 当多个组件对象模型 (COM) 对象需要将其保存的数据存储在单个文件中时，通常使用结构化存储，也称为复合文件。 使用结构化存储，多个不同的软件组件可以共享单个磁盘文件。
+ 结构化存储（也称为复合文件）通常用于多个组件对象模型 (COM) 对象需要将持久数据存储在单个文件中。 借助结构化存储，多个不同的软件组件可以共享单个磁盘文件。
 
- 对于项目中的项，可以考虑使用几个选项。 可以执行以下任一选项：
+ 对于项目中的项的持久性，有几个选项需要考虑。 可以执行以下任一选项：
 
-- 更改每个文件后，单独保存该文件。
+- 更改后，单独保存每个文件。
 
-- 在单个 **保存** 操作中捕获多个事务。
+- 在单个保存操作中捕获 **多个** 事务。
 
-- 当项表示到远程对象的数据连接时，在本地保存文件，然后发布到服务器，或使用另一种方法保存项目项。
+- 在本地保存文件，然后发布到服务器，或当项表示与远程对象的数据连接时，使用另一种方法保存项目项。
 
-  有关持久性的详细信息，请参阅 [项目持久性](../../extensibility/internals/project-persistence.md) 和 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
+  有关持久性详细信息，请参阅持久性Project[打开](../../extensibility/internals/project-persistence.md)和保存Project[项。](../../extensibility/internals/opening-and-saving-project-items.md)
 
-## <a name="project-commitment-model"></a>项目承诺模型
- 持久的数据对象是在直接模式下还是在事务模式下打开？
+## <a name="project-commitment-model"></a>Project承诺模型
+ 持久化数据对象是直接模式还是事务处理模式打开？
 
- 在直接模式下打开数据对象时，对数据所做的更改将立即合并，或在用户手动保存文件时进行。
+ 在直接模式下打开数据对象时，立即合并对数据所做的更改，或当用户手动保存文件时。
 
- 使用事务处理模式打开数据对象时，会将更改保存到内存中的临时位置，并且在用户手动选择保存文件之前，不会提交这些更改。 此时，所有更改都必须一起出现，否则不会进行任何更改。
+ 使用事务处理模式打开数据对象时，更改将保存到内存中的临时位置，在用户手动选择保存文件之前不会提交。 此时，所有更改必须一起发生，否则不会进行更改。
 
 ## <a name="see-also"></a>另请参阅
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)

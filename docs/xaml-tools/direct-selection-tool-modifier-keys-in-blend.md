@@ -1,7 +1,7 @@
 ---
 title: “路径选择”工具修改键
 titleSuffix: Blend for Visual Studio
-description: 了解可用于修改现有路径形状的 Blend for Visual Studio 中路径选择工具的键盘快捷方式。
+description: 了解 路径选择 工具中的Blend for Visual Studio快捷方式，这些快捷方式可用于修改现有路径的形状。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,14 +9,15 @@ ms.assetid: 21f9b951-dc2b-4d09-bd70-75caed8fb964
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 08d26dc394e859862b85f5009a9427f34576fd5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfacfe090293592531f4007759750c42a3e79cd730a7ada445b0422a4342e4a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920238"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243219"
 ---
 # <a name="direct-selection-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的“路径选择”工具修改键
 
@@ -32,7 +33,7 @@ ms.locfileid: "99920238"
 |使点变为尖锐的角或将切线长度减小为零|在某个点上悬浮，按住 Alt，然后单击该点|![使点变为尖锐的角或将切线长度减小为零](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> 转换点指针|
 |使任何尖锐的角变平滑（或如果已经是平滑的，当指针经过单击的点时更改曲线的角度）|在某个点上悬浮，按住 Alt，然后拖动该点|![使任何尖锐的角变平滑](../designers/media/21197b10-aba4-4a9d-8145-647d0ba8e518.png)<br /><br /> 转换点指针|
 |将曲线线段变为直线|在路径中的某个线段上悬浮，按住 Alt，然后单击该线段|![将曲线线段变为直线](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 转换线段指针|
-|取一个线段并将其弯曲为曲线以经过指针位置|将鼠标悬停在路径中的某个线段上，按住 **Alt**，然后拖动该线段|![取一个线段并将其弯曲为曲线以经过指针位置](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 转换线段指针|
+|取一个线段并将其弯曲为曲线以经过指针位置|将鼠标悬停在路径中的段上，按住 **Alt，** 然后拖动该段|![取一个线段并将其弯曲为曲线以经过指针位置](../designers/media/975a855a-8536-441f-97ed-2f1496e416bf.png)<br /><br /> 转换线段指针|
 |独立调整切线的一端|直接选择一个点或线段，按住 Alt，然后拖动切线终结点|![独立调整切线的一端](../designers/media/923951da-4081-4f8b-bebc-0f1f64d87504.png)<br /><br /> 转换切线指针|
 
 ## <a name="see-also"></a>另请参阅

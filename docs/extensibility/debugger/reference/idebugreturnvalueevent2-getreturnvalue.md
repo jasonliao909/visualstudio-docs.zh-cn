@@ -1,6 +1,6 @@
 ---
-description: 获取跳出或通过函数时返回的值。
-title: IDebugReturnValueEvent2：： GetReturnValue |Microsoft Docs
+description: 获取单步执行或单步执行函数时返回的值。
+title: IDebugReturnValueEvent2：：GetReturnValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 86c50d5a-6df6-4798-818a-c587a8741f90
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1f3eb0ce09e62764fc217ece18d97060d79a27d4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f12787cc94566a3cb3014b62b295ac5f867531e3d6e507fa1115b4003ae4a97
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075713"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402241"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-获取跳出或通过函数时返回的值。
+获取单步执行或单步执行函数时返回的值。
 
 ## <a name="syntax"></a>语法
 
@@ -42,10 +43,10 @@ int GetReturnValue (
 
 ## <a name="parameters"></a>参数
 `ppReturnValue`\
-弄返回一个 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示要检索的值。
+[out]返回表示 [要检索的值的 IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)

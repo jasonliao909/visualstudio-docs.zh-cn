@@ -10,14 +10,15 @@ ms.assetid: 2a0a1cd3-7b9e-493e-9264-fcf85289ffcf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: a41511f9bfb381eeb422cc9cf7ec015d55ceff70
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 123fa7a3b9a9cbc65ed458ab5b412268f00dd15001148db26915c4ddf882845a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931508"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267047"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 

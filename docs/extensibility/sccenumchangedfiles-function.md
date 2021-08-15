@@ -11,14 +11,15 @@ ms.assetid: 76cac510-107b-4c1a-ba60-9c39b6db2e71
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2b0707c049013fd3a0272d1f024e4fdbc342bab1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 500d0072ffca6f0ada6d035aa59c60b8358a13aec9230077b64a724f5faf4747
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904534"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121273678"
 ---
 # <a name="sccenumchangedfiles-function"></a>SccEnumChangedFiles 函数
 给定一个本地文件列表，此函数确定哪些文件与源代码管理数据库中对应的版本不同。
@@ -59,7 +60,7 @@ SCCRTN SccEnumChangedFiles(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|操作已成功完成。|
 |SCC_UNSPECIFIEDERROR|常规错误。|

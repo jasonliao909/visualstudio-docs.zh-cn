@@ -12,14 +12,15 @@ ms.assetid: 5ccfcc80-dea5-48a1-8bae-6a26f8d3bc56
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4c79d27c01035f83b506ffad4ec138c8c68f98d2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7fd3f27aaf6080a853dbacc856d0b6ac258319b81560bd002a5b562ecef6a7dc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097027"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342838"
 ---
 # <a name="evaluate-expressions"></a>计算表达式
 表达式是通过 **从 "自动**"、" **监视**"、" **快速监视**" 或 " **即时** " 窗口中传递的字符串创建的。 计算表达式时，它将生成一个可打印字符串，其中包含变量或参数的名称和类型及其值。 此字符串将显示在相应的 IDE 窗口中。

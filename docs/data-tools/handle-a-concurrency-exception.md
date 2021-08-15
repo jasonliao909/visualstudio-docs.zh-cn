@@ -18,18 +18,19 @@ ms.assetid: 73ee9759-0a90-48a9-bf7b-9d6fc17bff93
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f84fbaae3273b8830cce1c39cc3e42b62e487d3e
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 6195fa7e27c6c6f72166dfc00ba888f3644cfe23cb6b38570f4ba6502f458054
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216236"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347176"
 ---
 # <a name="handle-a-concurrency-exception"></a>处理并发异常
 
-<xref:System.Data.DBConcurrencyException?displayProperty=fullName>当两个用户尝试同时更改数据库中的相同数据时，将引发并发异常 () 。 在本演练中，您将创建一个 Windows 应用程序，该应用程序演示如何捕获 <xref:System.Data.DBConcurrencyException> ，找到导致错误的行，并学习如何处理它的策略。
+<xref:System.Data.DBConcurrencyException?displayProperty=fullName>当两个用户尝试同时更改数据库中的相同数据时，将引发并发异常 () 。 在本演练中，你将创建一个 Windows 应用程序，该应用程序演示如何捕获 <xref:System.Data.DBConcurrencyException> 、找到导致错误的行，并了解如何处理该错误的策略。
 
 本演练将引导你完成以下过程：
 
@@ -47,21 +48,21 @@ ms.locfileid: "106216236"
 
 7. 捕获错误，然后显示记录的不同版本，使用户能够确定是继续更新数据库，还是取消更新。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 SQL Server Express 的 LocalDB，请从 [SQL Server Express 下载 "页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装它。 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
+    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (SQL Server 对象资源管理器作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) 复制到剪贴板。 此 T-sql 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    2. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
 
-    3. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+    3. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
 
        一小段时间后，查询将完成运行，并创建 Northwind 数据库。
 
@@ -73,7 +74,7 @@ ms.locfileid: "106216236"
 
 2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
-3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
+3. 在中间窗格中，选择 " **Windows 窗体应用程序**" 项目类型。
 
 4. 将项目命名为 **ConcurrencyWalkthrough**，然后选择 **"确定"**。
 
@@ -104,7 +105,7 @@ ms.locfileid: "106216236"
 
 ## <a name="create-a-data-bound-datagridview-control"></a>创建数据绑定 DataGridView 控件
 
-在本部分中，将 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 通过将 " **客户** " 项从 " **数据源** " 窗口拖到 Windows 窗体来创建。
+在本部分中，将 <xref:System.Windows.Forms.DataGridView?displayProperty=nameWithType> 通过将 "**客户**" 项从 "**数据源**" 窗口拖动到 Windows 窗体来创建。
 
 1. 若要打开 " **数据源** " 窗口，请在 " **数据** " 菜单上，选择 " **显示数据源**"。
 

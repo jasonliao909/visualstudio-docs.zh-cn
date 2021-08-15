@@ -1,5 +1,5 @@
 ---
-description: 启用调试引擎以远程读取指标设置。
+description: 使调试引擎能够远程读取指标设置。
 title: IDebugSettingsCallback2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: 7e525d0b-7d7a-4d1c-8b78-e1398fa922f2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58e9ddfd3789fcfe7d81348714a8de2add743090
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32cab53c2d6a0d97ae5131994f0c63dab9d32f68ac16df9eac08cc5d1c39661e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071189"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402228"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
-启用调试引擎以远程读取指标设置。
+使调试引擎能够远程读取指标设置。
 
 ## <a name="syntax"></a>语法
 
@@ -27,33 +28,33 @@ ms.locfileid: "105071189"
 IDebugSettingsCallback2D : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
-此接口由会话调试管理器的事件回调实现，由调试引擎使用。 它还可以在本地使用，而不是在 Dbgmetric [d] .lib 中使用。
+## <a name="notes-for-implementers"></a>实现者说明
+此接口由会话调试管理器的事件回调实现，由调试引擎使用。 还可以在本地使用，而不是 Dbgmetric[d].lib。
 
 ## <a name="methods"></a>方法
-下表显示的方法 `IDebugSettingsCallback2` 。
+下表显示了 的方法 `IDebugSettingsCallback2` 。
 
 |方法|说明|
 |------------|-----------------|
-|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|根据语言和供应商标识符枚举可用的表达式计算器。|
-|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|检索给定度量值的表达式计算器本地对象。|
-|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|检索一个值，该值对应于表达式计算器的指定指标。|
-|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|检索给定名称或度量值的表达式计算器度量值文件。|
-|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|根据给定的名称检索表达式计算器度量值的唯一标识符。|
-|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|根据给定的名称检索表达式计算器指标的值字符串。|
-|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|根据给定的名称检索度量值。|
-|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|根据给定的名称检索指标的唯一标识符。|
-|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|根据给定的名称检索指标的值字符串。|
+|[EnumEEs](../../../extensibility/debugger/reference/idebugsettingscallback2-enumees.md)|枚举给定语言和供应商标识符的可用表达式评估器。|
+|[GetEELocalObject](../../../extensibility/debugger/reference/idebugsettingscallback2-geteelocalobject.md)|根据给定的指标检索表达式计算器本地对象。|
+|[GetEEMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricdword.md)|检索与表达式计算程序指定指标相对应的值。|
+|[GetEEMetricFile](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricfile.md)|根据给定的名称或指标检索表达式评估器指标文件。|
+|[GetEEMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricguid.md)|根据表达式评估器指标的名称检索其唯一标识符。|
+|[GetEEMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-geteemetricstring.md)|根据表达式评估器指标的名称检索其值字符串。|
+|[GetMetricDword](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricdword.md)|根据指标的名称检索指标的值。|
+|[GetMetricGuid](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricguid.md)|根据指标的名称检索指标的唯一标识符。|
+|[GetMetricString](../../../extensibility/debugger/reference/idebugsettingscallback2-getmetricstring.md)|根据指标的名称检索指标的值字符串。|
 
 ## <a name="requirements"></a>要求
-标头： Msdbg
+标头：Msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>示例
-下面的示例演示了一个将 **IDebugSettingsCallback2** 对象作为参数的函数。
+下面的示例演示一个函数，该函数采用 **IDebugSettingsCallback2** 对象作为参数。
 
 ```cpp
 HRESULT GetDebugSettingsCallback (IDebugSettingsCallback2 **ppCallback)

@@ -11,17 +11,18 @@ ms.assetid: d652e09c-cdc1-4519-8116-d7c743f5679b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63d75eae9c7966bfc5e7fceea0512db0fa174066
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8469773cf57d8cac2c24f04260a6d1037de125b2691115b270a3b0c693cd675b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054096"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339289"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
 从连续的字节序列中设置对象的值。

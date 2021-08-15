@@ -10,14 +10,15 @@ ms.assetid: 567acde3-354e-4f39-8d99-0ef86c103396
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 56880cab310367a5c4da3af0cf310867a5519495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f2769e6a6633214e2f7e95d20f2bd61cb360d492f8d850e48d95b8ec6134a97c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080601"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431963"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持项目或编辑器的文件签出、签入和其他源代码管理操作。 作为源代码管理客户端， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 旨在与源代码管理包交互，如 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] ，后者为动态定义的文件集提供存档、版本控制和控制功能。

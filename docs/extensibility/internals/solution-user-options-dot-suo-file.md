@@ -14,19 +14,20 @@ ms.assetid: 75258e0d-600d-4a3d-94f4-3d7ac12cb47c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a38eb865cf003f7a2f9bafde7b6e527ce24f2bd
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: cacbd9d9b8348e4404b035906d047229fb52839b9bed2178149cb90a0e0d93a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899610"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337755"
 ---
 # <a name="solution-user-options-suo-file"></a>解决方案用户选项 (.Suo) 文件
 解决方案用户选项 ( .suo) 文件包含每用户解决方案选项。 不应将此文件签入到源代码管理中。
 
-  ( .suo) 文件的解决方案用户选项是以二进制格式存储的、以二进制格式存储的、以二进制格式存储的文件。 将用户信息保存到流，并将流的名称保存为密钥，该密钥将用于标识 .suo 文件中的信息。 解决方案用户选项文件用于存储用户首选项设置，当 Visual Studio 保存解决方案时，会自动创建该文件。
+  ( .suo) 文件的解决方案用户选项是以二进制格式存储的、以二进制格式存储的、以二进制格式存储的文件。 将用户信息保存到流，并将流的名称保存为密钥，该密钥将用于标识 .suo 文件中的信息。 解决方案用户选项文件用于存储用户首选项设置，在 Visual Studio 保存解决方案时，会自动创建该文件。
 
  当环境打开 .suo 文件时，它会枚举当前加载的所有 Vspackage。 如果 VSPackage 实现了 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> 接口，则环境将对 VSPackage 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts.LoadUserOptions%2A> 方法，要求其从 .suo 文件加载其所有数据。
 

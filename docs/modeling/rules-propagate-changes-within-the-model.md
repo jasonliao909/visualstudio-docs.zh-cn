@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: bde67bd8375e3752370b3b815f8ed155d3123741
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ca814206135d8b9be9273e1bdf113cd6db7efc6312391cd5acf6cf1e1559f7d9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387588"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231478"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
 你可以创建一个存储规则，以便在可视化和建模 SDK 中将更改从一个元素传播到另一个 (VMSDK) 。 当存储区中的任何元素发生更改时，将计划执行规则，通常是在最外面的事务提交时执行。 不同类型的事件有不同类型的规则，例如添加元素或删除元素。 您可以将规则附加到特定类型的元素、形状或关系图。 许多内置功能都是由规则定义的：例如，规则确保在模型更改时更新关系图。 可以通过添加自己的规则来自定义域特定语言。
@@ -164,7 +165,7 @@ namespace ExampleNamespace
 ## <a name="example"></a>示例
  下面的示例在将域关系实例化为链接两个元素时更新属性。 仅当用户在关系图上创建了一个链接，并且程序代码创建了一个链接时，才会触发此规则。
 
- 若要测试此示例，请使用 "任务流" 解决方案模板创建 DSL，并在 Dsl 项目的文件中插入以下代码。 生成并运行解决方案，然后在调试项目中打开示例文件。 在注释形状和 flow 元素之间绘制注释链接。 注释中的文本将更改为报表已连接到的最近元素。
+ 若要测试此示例，请使用任务 Flow 解决方案模板创建 dsl，并在 DSL 项目的文件中插入以下代码。 生成并运行解决方案，然后在调试项目中打开示例文件。 在注释形状和 flow 元素之间绘制注释链接。 注释中的文本将更改为报表已连接到的最近元素。
 
  在实践中，通常会为每个 AddRule 编写一个 DeleteRule。
 

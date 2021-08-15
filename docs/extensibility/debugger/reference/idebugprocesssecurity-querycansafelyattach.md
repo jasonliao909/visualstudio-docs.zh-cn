@@ -9,17 +9,18 @@ ms.assetid: 63ec1ae8-27da-4574-aa15-1c986fe9fe58
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbbfcf11a35fcfc43ae9e903b13a7480a3cf9743
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 59d0462937ebbae2ea02fb259d7928fa2a69735b1f28859a013ac7fd60ebcbfd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076272"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433380"
 ---
 # <a name="idebugprocesssecurityquerycansafelyattach"></a>IDebugProcessSecurity::QueryCanSafelyAttach
 此方法允许端口供应商在用户附加到不安全进程之前显示警告。
