@@ -11,17 +11,18 @@ ms.assetid: 5a085d18-62c6-4740-b9e9-3f5db6bfdf7f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13e780dd5d6825515673547aae8f3dc16edd885c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7bd2526853dd5c0c3bb84bdc7d00c76805dd28a1118b4a35b8d173b17ab9bde3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096286"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452389"
 ---
 # <a name="debug_property_info"></a>DEBUG_PROPERTY_INFO
 包含有关调试属性的信息。

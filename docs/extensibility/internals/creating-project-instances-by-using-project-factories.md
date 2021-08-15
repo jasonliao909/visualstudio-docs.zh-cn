@@ -1,6 +1,6 @@
 ---
-title: 使用项目工厂创建项目实例 |Microsoft Docs
-description: 了解如何使用 Visual Studio 集成开发环境中的项目工厂创建项目类实例 (IDE) 。
+title: 使用 Project 工厂创建 Project 实例 |Microsoft Docs
+description: 了解如何在 Visual Studio 集成开发环境中使用项目工厂创建项目类实例 (IDE) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,17 +11,18 @@ ms.assetid: 94c90012-8669-459c-af8e-307ac242c8c4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 40b7c3fbe5b5b7fd59fe0e57376290181f3e9a20
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1fc9fa9d4f10c59d4e17f2314cdbed80da26c3b5e24b115fb755c1fce9645b24
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056789"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448190"
 ---
 # <a name="create-project-instances-by-using-project-factories"></a>使用项目工厂创建项目实例
-中的项目类型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 *项目工厂* 创建项目对象的实例。 项目工厂类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable;它们只能通过使用项目工厂来创建。
+中的 Project 类型 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用 *项目工厂* 创建项目对象的实例。 项目工厂类似于 cocreatable COM 对象的标准类工厂。 但是，项目对象不是 cocreatable;它们只能通过使用项目工厂来创建。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]当用户加载现有项目或在中创建新项目时，IDE 将调用在 VSPackage 中实现的项目工厂 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 新的项目对象为 IDE 提供了足够的信息来填充 **解决方案资源管理器**。 新的项目对象还提供了所需的接口，以便支持 IDE 启动的所有相关 UI 操作。
 
@@ -36,9 +37,9 @@ ms.locfileid: "105056789"
 
 2. 通过调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory.InitializeForOwner%2A> 方法。 调用此方法时，拥有的项目将执行其所有实例化，而不是调用，这 `IVsProjectFactory::CreateProject` 种情况不会是所拥有的项目的情况。 输入 `VSOWNEDPROJECTOBJECT` 枚举通常是聚合的拥有项目。 所拥有的项目可以使用此变量来确定其项目对象是否已创建 (cookie 不等于 NULL) 或必须 (cookie 等于 NULL) 创建。
 
-   项目类型由唯一项目 GUID 标识，类似于 cocreatable COM 对象的 CLSID。 通常，一个项目工厂处理一个项目类型的实例，尽管可以让一个项目工厂处理多个项目类型 GUID。
+   Project 类型由唯一项目 GUID 标识，类似于 cocreatable COM 对象的 CLSID。 通常，一个项目工厂处理一个项目类型的实例，尽管可以让一个项目工厂处理多个项目类型 GUID。
 
-   项目类型与特定文件扩展名关联。 当用户尝试打开现有项目文件或尝试通过克隆模板来创建新项目时，IDE 将使用该文件的扩展名来确定相应的项目 GUID。
+   Project 类型与特定文件扩展名关联。 当用户尝试打开现有项目文件或尝试通过克隆模板来创建新项目时，IDE 将使用该文件的扩展名来确定相应的项目 GUID。
 
    IDE 一旦确定是否必须创建一个新项目或打开特定类型的现有项目，IDE 就会使用 **[HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\8.0\Projects]** 下的系统注册表中的信息来查找哪些 VSPackage 实现了所需的项目工厂。 IDE 将加载此 VSPackage。 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A> 方法中，VSPackage 必须通过调用方法将其项目工厂注册到 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes.RegisterProjectType%2A> 。
 

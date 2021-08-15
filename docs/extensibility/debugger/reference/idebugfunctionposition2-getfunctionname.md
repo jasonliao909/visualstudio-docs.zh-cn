@@ -11,17 +11,18 @@ ms.assetid: eb7a348e-a7f5-4f25-be68-80482d5482a8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24d700e1fab5c9f8ae5510cc1ff915ba60008b8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cfdc1969ad66e79a4f0f820c1ca70fcaa6d72627aa9808e87005b8b302292704
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063495"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389756"
 ---
 # <a name="idebugfunctionposition2getfunctionname"></a>IDebugFunctionPosition2::GetFunctionName
 获取此位置指向的函数的名称。

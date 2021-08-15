@@ -3,20 +3,21 @@ title: 创建 Azure 云服务项目
 description: 了解如何使用 Visual Studio 创建 Azure 云服务项目
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/19/2019
 ms.author: ghogen
-ms.openlocfilehash: d652172bde2ecd3aea4bb027e46173eaa5fe7b17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e7030349f47990f9ee12f8d51856bf8dcb5f0b18bf4c8a2bd32001d5b12cc82
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844497"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121406679"
 ---
 # <a name="create-an-azure-cloud-service-project-with-visual-studio"></a>使用 Visual Studio 创建 Azure 云服务项目
 
-Visual Studio 提供了一个项目模板，用于创建 [azure 云服务](/azure/cloud-services/cloud-services-choose-me)，该服务是一个简单的通用 azure 服务。 创建项目后，可通过 Visual Studio 调试、配置云服务，并将其部署到 Azure。
+Visual Studio 提供了一个项目模板，用于创建[azure 云服务](/azure/cloud-services/cloud-services-choose-me)，该服务是一个简单的通用 azure 服务。 创建项目后，可通过 Visual Studio 调试、配置云服务，并将其部署到 Azure。
 
 ## <a name="steps-to-create-an-azure-cloud-service-project-in-visual-studio"></a>在 Visual Studio 中创建 Azure 云服务项目的步骤
 本节介绍如何在 Visual Studio 中创建具有一个或多个 Web 角色的 Azure 云服务项目。
@@ -24,7 +25,7 @@ Visual Studio 提供了一个项目模板，用于创建 [azure 云服务](/azur
 ::: moniker range="vs-2017"
 1. 以管理员的身份打开 Visual Studio。
 
-1. 在主菜单中，选择“文件”**“新建”** > **“项目”** > 。
+1. 在主菜单上，选择 "**文件**" " > **新建** > **Project**"。
 
 1. 从 Visual C# 或 Visual Basic 项目模板节点中选择“云”，并从模板列表中选择“Azure 云服务”。
 
@@ -61,7 +62,7 @@ Visual Studio Azure 项目与解决方案中的角色项目具有关联。 该�
 - **服务定义文件** - 定义了应用程序的运行时设置，包括所需角色、终结点和虚拟机大小。
 - **服务配置文件** - 配置了角色有多少实例在运行以及为角色定义的设置的值。
 
-有关这些文件的详细信息，请参阅 [使用 Visual Studio 配置 Azure 云服务的角色](vs-azure-tools-configure-roles-for-cloud-service.md)。
+有关这些文件的详细信息，请参阅[使用 Visual Studio 配置 Azure 云服务的角色](vs-azure-tools-configure-roles-for-cloud-service.md)。
 
 ## <a name="next-steps"></a>后续步骤
 - [使用 Visual Studio 管理 Azure 云服务项目中的角色](./vs-azure-tools-cloud-service-project-managing-roles.md)

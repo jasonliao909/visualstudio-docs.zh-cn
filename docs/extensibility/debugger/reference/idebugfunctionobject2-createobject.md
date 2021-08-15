@@ -1,6 +1,6 @@
 ---
-description: 创建一个对象，该对象使用给定了计算标志设置和超时值的构造函数。
-title: IDebugFunctionObject2：： CreateObject |Microsoft Docs
+description: 创建一个对象，该对象使用给定评估标志设置和超时值的构造函数。
+title: IDebugFunctionObject2：：CreateObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: 148de615-941e-4b64-ab11-75b692aae465
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b75cd2fae72d0ce8901445c3271a955100391d75
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: abe71179784d69ed78d372fd5e3b3bb1e8728c0b52d20b532556f145e052f7e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063560"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389782"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
-创建一个对象，该对象使用给定了计算标志设置和超时值的构造函数。
+创建一个对象，该对象使用给定评估标志设置和超时值的构造函数。
 
 ## <a name="syntax"></a>语法
 
@@ -51,28 +52,28 @@ int CreateObject (
 
 ## <a name="parameters"></a>参数
 `pConstructor`\
-中一个 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象，表示要创建的对象的构造函数。
+[in]表示 [要创建的对象的构造函数的 IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象。
 
 `dwArgs`\
-中数组中参数的数目 `pArg` 。 表示传递给构造函数的参数的数目。
+[in]数组中的参数 `pArg` 数。 表示传递给构造函数的参数数。
 
 `pArgs`\
-中 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组，这些对象表示传递给构造函数的参数。
+[in] [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组，表示传递给构造函数的参数。
 
 `dwEvalFlags`\
-中 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举中的标志的组合，该枚举指定如何执行计算。
+[in] [来自 EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举的标志的组合，用于指定如何执行计算。
 
 `dwTimeout`\
-中从此方法返回前等待的最长时间（以毫秒为单位）。 使用 **无限大** 无限期等待。
+[in]从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 **INFINITE** 无限期等待。
 
 `ppObject`\
-弄返回表示新创建的对象的 **IDebugObject** 。
+[out]返回表示 **新创建的 对象的 IDebugObject。**
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法可创建一个对象，该对象表示类的实例，或者需要构造函数的其他复杂类型，即参数。
+ 调用此方法以创建一个对象，该对象表示类的实例或其他需要构造函数（即参数）的复杂类型。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

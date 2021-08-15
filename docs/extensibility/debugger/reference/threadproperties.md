@@ -11,17 +11,18 @@ ms.assetid: 7d397207-db03-4ec0-9f79-3794056ed89f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0707cb5da4c63ffd686f22fa691c103c954478c8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 18da5073284255da66afcc8ae0ebe65eec9f52892bab726585d8c993f58a1bac
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070851"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414988"
 ---
 # <a name="threadproperties"></a>THREADPROPERTIES
 介绍线程的属性。

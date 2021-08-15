@@ -1,6 +1,6 @@
 ---
 description: 此方法获取字段的容器。
-title: IDebugField：： GetContainer |Microsoft Docs
+title: IDebugField：：GetContainer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 6d6c8213-6181-4adf-9584-3e4cac163dd8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5e5f474a55291245cc1811e8f063f80e651b3a5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e87248314a97301fb49a8f4c4fef7db1a44f3e9d4eca7a84b58ea139ef12d188
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077078"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389873"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 此方法获取字段的容器。
@@ -42,13 +43,13 @@ int GetContainer(
 
 ## <a name="parameters"></a>参数
 `ppContainerField`\
-弄返回由 [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md) 接口表示的容器。
+[out]返回由 [IDebugContainerField 接口表示的](../../../extensibility/debugger/reference/idebugcontainerfield.md) 容器。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果此字段不具有容器，则返回的 `ppContainerField` 将为 null 值。
+ 如果此字段没有容器，则返回的 将为 `ppContainerField` null 值。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

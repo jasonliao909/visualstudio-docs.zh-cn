@@ -11,17 +11,18 @@ ms.assetid: e4142183-3d8b-418f-907f-4ee4c753d8ce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7bcf2bd16212767fc8eff6106cdb3602bc293c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f0f5f71ddc3989a6aa3c3904d8f759c9d83a4bb7eb42587a39f7b23841fb1d4a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086984"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448788"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取在调试地址编译代码所用的语言。

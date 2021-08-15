@@ -1,6 +1,6 @@
 ---
 title: 用 TableAdapter DBDirect 方法保存数据
-description: 在本演练中，使用 TableAdapter 的 DBDirect 方法直接对数据库运行 SQL 语句。
+description: 在本演练中，使用 TableAdapter 的 DBDirect 方法对数据库直接运行 SQL 语句。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,18 +16,19 @@ ms.assetid: 74a6773b-37e1-4d96-a39c-63ee0abf49b1
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4539d269f27cd09f96c8633d0efd603708f1f2e1
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: fe4ff23c94a47ff6ef323e0bf8b4cd200f139149cf50c39d7e249f88b749c29d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215768"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346851"
 ---
 # <a name="save-data-with-the-tableadapter-dbdirect-methods"></a>用 TableAdapter DBDirect 方法保存数据
 
-本演练通过使用 TableAdapter 的 DBDirect 方法，为直接针对数据库运行 SQL 语句提供了详细说明。 TableAdapter 的 DBDirect 方法可对数据库更新进行精确的控制。 您可以使用这些方法来运行特定的 SQL 语句和存储过程，方法是根据 `Insert` 应用 (程序的需要调用单独的、 `Update` 和方法，而不是 `Delete` `Update` 在一次调用中执行 UPDATE、INSERT 和 DELETE 语句) 的重载方法。
+本演练详细说明了如何使用 TableAdapter 的 DBDirect 方法对数据库直接运行 SQL 语句。 TableAdapter 的 DBDirect 方法可对数据库更新进行精确的控制。 您可以通过调用 `Insert` `Update` `Delete` 应用 (程序所需的单个、和方法，而不是 `Update` 在一次调用) 执行 UPDATE、INSERT 和 DELETE 语句的重载方法，使用这些方法来运行特定的 SQL 语句和存储过程。
 
 在本演练中，你将学会如何执行以下任务：
 
@@ -41,21 +42,21 @@ ms.locfileid: "106215768"
 
 - 添加方法以直接访问数据库，并执行插入、更新和删除操作。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 SQL Server Express 的 LocalDB，请从 [SQL Server Express 下载 "页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装它。 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
+    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (SQL Server 对象资源管理器作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) 复制到剪贴板。 此 T-sql 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    2. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
 
-    3. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+    3. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
 
        一小段时间后，查询将完成运行，并创建 Northwind 数据库。
 
@@ -67,7 +68,7 @@ ms.locfileid: "106215768"
 
 2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
-3. 在中间窗格中，选择 " **Windows 窗体应用程序** " 项目类型。
+3. 在中间窗格中，选择 " **Windows 窗体应用程序**" 项目类型。
 
 4. 将项目命名为 **TableAdapterDbDirectMethodsWalkthrough**，然后选择 **"确定"**。
 
@@ -109,7 +110,7 @@ ms.locfileid: "106215768"
 
 通过将某些项从“数据源”窗口拖到窗体上来创建数据绑定控件。
 
-若要在 Windows 窗体上创建数据绑定控件，请将 "主要 **区域** " 节点从 " **数据源** " 窗口拖到窗体上。
+若要在 Windows 窗体上创建数据绑定控件，请将 "主要 **区域**" 节点从 "**数据源**" 窗口拖到窗体上。
 
 用于导航记录的 <xref:System.Windows.Forms.DataGridView> 控件和工具栏（<xref:System.Windows.Forms.BindingNavigator>）将显示在窗体上。 [NorthwindDataSet](../data-tools/dataset-tools-in-visual-studio.md)、、 `RegionTableAdapter` <xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator> 显示在组件栏中。
 

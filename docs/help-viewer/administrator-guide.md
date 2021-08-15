@@ -1,20 +1,21 @@
 ---
 title: Help Viewer 管理员指南
-description: 阅读 Microsoft Help Viewer 管理员指南。 从 internet 部署本地帮助内容，或在客户端计算机上部署预安装的本地帮助内容。
+description: 阅读Microsoft Help Viewer管理员指南。 从 Internet 部署本地帮助内容，或在客户端计算机上部署预安装的本地帮助内容。
 ms.date: 11/01/2017
 ms.topic: conceptual
 ms.assetid: 4340c69f-b96b-4932-bb82-38b16a5ab149
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: e52b03b01f53a8064dc6ec691f751c86266af6a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2b7dfed5affb1d1c0c58efc46f001e4f68ea6bacc7167edff1967d64aff656ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944298"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358644"
 ---
 # <a name="help-viewer-administrator-guide"></a>Help Viewer 管理员指南
 
@@ -60,7 +61,7 @@ ms.locfileid: "99944298"
 
 #### <a name="to-install-english-content-from-the-internet"></a>从 Internet 安装英语内容
 
-1. 选择 " **开始** "，然后选择 " **运行**"。
+1. 选择 **"开始**"，然后选择"**运行"。**
 
 2. 键入下列命令：
 
@@ -79,7 +80,7 @@ ms.locfileid: "99944298"
 - 用户必须具有管理员权限才能在安装之后更新、添加或移除本地帮助内容。
 
     > [!TIP]
-    > 如果用户不具有管理员权限，则建议您禁用帮助查看器中的 " **管理内容** " 选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
+    > 如果用户没有管理员权限，建议禁用帮助查看器中的"管理内容"选项卡。 有关详细信息，请参阅 [Help Content Manager 重写](../help-viewer/behavior-overrides.md)。
 
 注意：
 
@@ -117,7 +118,7 @@ ms.locfileid: "99944298"
 
 1. 创建要将内容复制到其中的文件夹以便将来进行部署。 例如：C:\VSHelp。
 
-2. 以管理员权限打开 *cmd.exe* 。
+2. 打开 *cmd.exe* 管理员权限的登录名。
 
 3. 导航到在步骤 1 中创建的文件夹。
 
@@ -125,7 +126,7 @@ ms.locfileid: "99944298"
 
      `Xcopy %ProgramData%\Microsoft\HelpLibrary2 \<*foldername*>\ /y /e /k /o`
 
-     例如： `Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
+     例如：`Xcopy %ProgramData%\Microsoft\HelpLibrary2 c:\VSHelp\ /y /e /k /o`
 
 ### <a name="deploy-the-content"></a>部署内容
 
@@ -133,7 +134,7 @@ ms.locfileid: "99944298"
 
      例如，将 C:\VSHelp 中的内容复制到 \\\myserver\VSHelp。
 
-2. 创建用于包含帮助内容的部署脚本的 *.bat* 文件。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如： 。
+2. 创建 *.bat* 文件，以包含帮助内容的部署脚本。 由于客户端可能对在推送过程中删除的任何文件具有读取锁定，所以应在推送更新之前关闭客户端。 例如：
 
     ```cmd
     REM - copy pre-ripped content to ProgramData
@@ -145,7 +146,7 @@ ms.locfileid: "99944298"
 
 ## <a name="see-also"></a>另请参阅
 
-- [Help Content Manager 的命令行参数](../help-viewer/command-line-arguments.md)
-- [Help Content Manager 替代](../help-viewer/behavior-overrides.md)
+- [帮助内容管理器的命令行参数](../help-viewer/command-line-arguments.md)
+- [帮助内容管理器替代](../help-viewer/behavior-overrides.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [Help Viewer SDK](../extensibility/internals/microsoft-help-viewer-sdk.md)

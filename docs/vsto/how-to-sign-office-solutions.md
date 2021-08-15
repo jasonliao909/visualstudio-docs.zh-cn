@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3135962c8476fdb6970fc137e689c638299f8f81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 914a23df8b1a1cff3f07c2476fa4c55e44d17847021d955978ed9a9e73d04735
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927634"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394194"
 ---
 # <a name="how-to-sign-office-solutions"></a>如何：对 Office 解决方案进行签名
   如果对解决方案进行签名，则可以使用证书作为证据向解决方案授予信任。 你可以为多个解决方案使用相同的证书，并且所有解决方案都将受信任，且无其他安全策略更新。
@@ -37,9 +38,9 @@ ms.locfileid: "99927634"
 
 ### <a name="to-sign-an-office-solution-by-using-a-certificate"></a>使用证书对 Office 解决方案进行签名
 
-1. 在 " **项目** " 菜单上，单击 " _解决方案名称_**属性**"。
+1. 在 " **Project** " 菜单上，单击 "_解决方案名称_**属性**"。
 
-2. 单击“签名”  选项卡。
+2. 单击“签名”选项卡。 
 
 3. 选择 **"为 ClickOnce 清单签名"**。
 
@@ -49,6 +50,6 @@ ms.locfileid: "99927634"
 
 ## <a name="see-also"></a>另请参阅
 
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 - [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)
 - [“项目设计器”-&gt;“签名”页](../ide/reference/signing-page-project-designer.md)

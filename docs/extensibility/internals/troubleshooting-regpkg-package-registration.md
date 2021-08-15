@@ -10,14 +10,15 @@ ms.assetid: f33f822f-697a-4bad-9c10-554b4c8f6246
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48e3699b095ed7b9d0e72cf7b09ad02e26ac5a51
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fbefcdd5bbb0193339fab1b91335e16fcc0e820afd97ad35a7d39ee71582ff06
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090754"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431755"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 包注册疑难解答
 > [!NOTE]

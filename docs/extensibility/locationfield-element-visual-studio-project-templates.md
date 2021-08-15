@@ -1,7 +1,7 @@
 ---
 title: LocationField 元素（Visual Studio 项目模板）
 titleSuffix: ''
-description: 了解 LocationField 元素及其指定是否为项目模板启用、禁用或隐藏 "新建项目" 对话框位置文本框。
+description: 了解 LocationField 元素及其如何指定"新建Project"对话框"位置"文本框是启用、禁用还是隐藏项目模板。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1ad5263f11cd7e940b641959de1dea393eb98ab
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b0610ab1e24b4f6de2052b45d52882ff7c9e88c2a402d1b7c96e5e0f4a5e4afe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073230"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121290916"
 ---
-# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField 元素 (Visual Studio 项目模板) 
-指定是否为项目模板启用、禁用或隐藏 "**新项目**" 对话框中的 "**位置**" 文本框。
+# <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (Visual Studio项目模板) 
+指定"新建项目 **"对话框中的**"位置Project是启用、禁用还是隐藏项目模板。
 
  \<VSTemplate> \<TemplateData>
  \<LocationField>
@@ -48,25 +48,25 @@ ms.locfileid: "105073230"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将模板分类并定义其在 **新项目** 中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建"或"新建 **"Project。**|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
  有效的文本值为：
 
-- `Enabled`，它指定启用 "**新建项目**" 对话框的 "**位置**" 框。
+- `Enabled`，指定 **启用"新建****Project"对话框** 的"位置"框。
 
-- `Disabled`，它指定 "**新建项目**" 对话框的 "**位置**" 框处于禁用状态。
+- `Disabled`，指定 **已禁用"** 新建 **Project"对话框** 的"位置"框。
 
-- `Hidden`，它指定 "**新建项目**" 对话框的 "**位置**" 框处于隐藏状态。
+- `Hidden`，指定 **隐藏"新建****Project的"** 位置"框。
 
 ## <a name="remarks"></a>备注
- 默认值为 `Enabled`。
+ 默认值是 `Enabled`。
 
- 通过 "**新建项目**" 对话框中的 "**位置**" 文本框，用户可以更改保存新项目的默认目录。
+ "**新建****项目"对话框中** 的"Project"文本框允许用户更改保存新项目的默认目录。
 
- 元素中指定的值 `Location` 仅由该对话框使用，前提是基础项目系统支持它。
+ 只有在基础项目系统支持该元素时，对话框 `Location` 才使用 元素中指定的值。
 
 ## <a name="example"></a>示例
  以下示例阐释 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 模板的元数据。

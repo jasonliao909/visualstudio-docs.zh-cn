@@ -19,14 +19,15 @@ ms.assetid: f6ae2ee0-ea5f-4a79-8f4b-e21c115afb20
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 93a221640ff7383b39bfdec73cbaa9659156e33f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89107e238382820f5bec4136215cc6cc7d6f7b9e0665229a33144627aa853e4c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858067"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346435"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>在 n 层应用程序中使用数据集
 

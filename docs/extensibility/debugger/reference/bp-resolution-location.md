@@ -11,17 +11,18 @@ ms.assetid: 21dc5246-69c1-43e3-855c-9cd4e596c0e6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aefbb27a7eb693ceef3bd64afb610607697ac23e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4854b04848e99e605fbb26587c8b4a1abafe4741ec74b6d84568cf2b729232a0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089116"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390438"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 指定断点解析位置的结构。

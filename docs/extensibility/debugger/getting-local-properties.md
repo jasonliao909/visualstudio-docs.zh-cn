@@ -12,20 +12,21 @@ ms.assetid: 6c3a79e8-1ba1-4863-97c3-0216c3d9f092
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c45933c6340836fac889f1309c14a71feed31791
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 85f23994292ad7089dbf3215e602347ad7891ddf35ddf933ce13989253150c2d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900728"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361231"
 ---
 # <a name="get-local-properties"></a>获取本地属性
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，此表达式评估器实现方法已弃用。 有关实现 CLR 表达式评估器的信息，请参阅[CLR 表达式评估器和](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)[托管表达式评估器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 获取 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 对象，该对象提供对要显示在"局部区域"窗口中的所有 **局部区域的访问权限** 。 Visual Studio调用 [Next](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md) 获取要针对每个本地显示的信息。 此示例中， 类 `CEnumPropertyInfo` 实现 `IEnumDebugPropertyInfo2` 接口。
+Visual Studio [EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)获取 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，该对象提供对要显示在"局部区域"窗口中的所有 **局部区域的访问权限**。 Visual Studio调用[Next](../../extensibility/debugger/reference/ienumdebugpropertyinfo2-next.md)获取要针对每个本地显示的信息。 此示例中， 类 `CEnumPropertyInfo` 实现 `IEnumDebugPropertyInfo2` 接口。
 
 的此 `IEnumDebugPropertyInfo2::Next` 实现执行以下任务：
 
@@ -159,5 +160,5 @@ STDMETHODIMP CEnumPropertyInfo::Next(
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [局部区域设置的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md)
+- [局部变量的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [枚举局部区域设置](../../extensibility/debugger/enumerating-locals.md)

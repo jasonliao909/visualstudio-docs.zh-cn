@@ -1,6 +1,6 @@
 ---
 description: 枚举从此挂起断点绑定的所有断点。
-title: IDebugPendingBreakpoint2：： EnumBoundBreakpoints |Microsoft Docs
+title: IDebugPendingBreakpoint2：：EnumBoundBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +12,18 @@ ms.assetid: 179c7c54-8446-462d-b099-e0f9cf06dc52
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a25a335ea373a6086b5a57829330e4c84566fe9c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bf5715983a64ea361f60978251981b1ea7325c0cec9f815f7d28a1f2a725df27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072697"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121339211"
 ---
 # <a name="idebugpendingbreakpoint2enumboundbreakpoints"></a>IDebugPendingBreakpoint2::EnumBoundBreakpoints
 枚举从此挂起断点绑定的所有断点。
@@ -43,13 +44,13 @@ int EnumBoundBreakpoints(
 
 ## <a name="parameters"></a>参数
 `ppEnum`\
-弄返回一个 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象枚举绑定的断点。
+[out]返回枚举绑定断点的 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 `E_BP_DELETED`如果已删除断点，则返回。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。 如果 `E_BP_DELETED` 断点已删除，则返回 。
 
 ## <a name="example"></a>示例
- 下面的示例演示如何为 `CPendingBreakpoint` 公开 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 接口的简单对象实现此方法。
+ 下面的示例演示如何为公开 `CPendingBreakpoint` [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CPendingBreakpoint::EnumBoundBreakpoints(IEnumDebugBoundBreakpoints2** ppEnum)

@@ -1,6 +1,6 @@
 ---
 title: Visual Studio 2019 SDK 的新增功能 |Microsoft Docs
-description: Visual Studio SDK 是 Visual Studio 2019 的新增功能和更新功能，其中包括编辑器注册增强功能。
+description: Visual Studio SDK Visual Studio 2019 的新增功能和更新功能，包括编辑器注册增强功能。
 ms.custom: SEO-VS-2020
 ms.date: 03/29/2019
 ms.topic: conceptual
@@ -8,18 +8,19 @@ ms.assetid: 4a07607b-0c87-4866-acd8-6d68358d6a47
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d8e08136eb142e5e72c08e23860bf94f01dc87c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9078b8a6f6150a2ca5f3f6de84bea3facca94073849109f145a7cae64d172039
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061896"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400460"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Visual Studio 2019 SDK 的新增功能
 
-Visual Studio SDK 具有以下新的和更新的 Visual Studio 2019 功能。
+Visual Studio SDK 具有适用于 Visual Studio 2019 的下列新增功能和更新功能。
 
 ## <a name="synchronously-autoloaded-extensions-warning"></a>同步加载扩展警告
 
@@ -27,11 +28,11 @@ Visual Studio SDK 具有以下新的和更新的 Visual Studio 2019 功能。
 
 ## <a name="single-unified-visual-studio-sdk"></a>单个统一 Visual Studio SDK
 
-现在，你可以通过一个 NuGet 包 [VisualStudio](https://www.nuget.org/packages/microsoft.visualstudio.sdk)获取所有 VISUAL Studio SDK 资产。
+现在可以通过单个 NuGet [VisualStudio](https://www.nuget.org/packages/microsoft.visualstudio.sdk)包获取全部 Visual Studio SDK 资产。
 
 ## <a name="editor-registration-enhancements"></a>编辑器注册增强功能
 
-自它创建后，Visual Studio 支持自定义编辑器注册，其中编辑器可以为特定的扩展声明其相关性 (例如，.xaml 和 .rc) ，或适用于任何扩展名 (. * ) 。 从 Visual Studio 2019 版本16.1 开始，我们扩大了对编辑器注册的支持。
+自它创建后，Visual Studio 支持自定义编辑器注册，其中编辑器可以为特定扩展声明其相关性 (例如，.xaml 和 .rc) ，或者它适用于任何扩展名 (. * ) 。 从 Visual Studio 2019 版16.1 开始，我们扩大了对编辑器注册的支持。
 
 ### <a name="filenames"></a>文件名
 

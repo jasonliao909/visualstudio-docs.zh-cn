@@ -11,14 +11,15 @@ ms.assetid: ee2d955b-12ca-4f27-89aa-c2d0e768b6b6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d36cee547e455e9aeb60517b23f0026c3f38b3f3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 5043f91cc89806a9f834fb82619fef31a4105f3effa7203577a869fc18f289e5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902327"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448502"
 ---
 # <a name="sample-implementation-of-changing-values"></a>更改值的实现示例
 > [!IMPORTANT]

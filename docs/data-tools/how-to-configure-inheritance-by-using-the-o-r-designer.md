@@ -8,14 +8,15 @@ ms.assetid: e594af12-e777-434a-bc08-7dd2dac84cdc
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fee2c42e6ec84280f4090a8ae1dfea83a81ee369
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 669bcc567b06b4d0202ede2547f00c7c025de996f02233d5a4bd1603501d1f27
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866822"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347085"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：通过 O/R 设计器配置继承
 **对象关系设计器** (**O/R 设计器**) 支持单表继承的概念，因为它通常在关系系统中实现。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
@@ -40,7 +41,7 @@ ms.locfileid: "99866822"
 5. 在每个类中，删除任何不希望显示和没有用于关联的对象属性。 如果您尝试删除用于关联的对象属性，则会收到错误：[无法删除此属性，因为该属性 \<property name> 正在参与关联 \<association name> ](../data-tools/the-property-property-name-cannot-be-deleted-because-it-is-participating-in-the-association-association-name.md)。
 
     > [!NOTE]
-    > 由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。  (列作为属性实现。 ) 可以通过在基类的属性上设置继承修饰符来允许创建派生类中的列。 有关详细信息，请参阅 [Visual Basic) 的继承基础 (](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)。
+    > 由于派生类继承其基类中定义的属性，在每个类中不能定义相同的列。  (列作为属性实现。 ) 可以通过在基类的属性上设置继承修饰符来允许创建派生类中的列。 有关详细信息，请参阅[Visual Basic) 的继承基础 (](/dotnet/visual-basic/programming-guide/language-features/objects-and-classes/inheritance-basics)。
 
 6. 在 **O/R 设计器** 中选择继承连线。
 

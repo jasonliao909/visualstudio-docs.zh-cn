@@ -1,6 +1,6 @@
 ---
-title: 以编程方式获取收件箱中的未读邮件
-description: 了解如何在 Microsoft Outlook 中使用 Visual Studio 以编程方式检索收件箱中的未读邮件。
+title: 以编程方式从收件箱获取未读消息
+description: 了解如何在 Microsoft Visual Studio 中通过编程方式从收件箱中检索未读Outlook。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5a7c19dbaed9e2f8829845e777130e0f09084046
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 10de77f2ab2d23d1f63643cd7f37094d62402f26d9d57ca2d03df4db844a681f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107823929"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366181"
 ---
-# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以编程方式检索收件箱中的未读邮件
-  此示例从 Outlook **收件箱** 检索未读电子邮件，并显示项目数。
+# <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以编程方式从收件箱中检索未读消息
+  此示例从收件箱中检索未读Outlook **并显示** 项数。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -33,9 +34,9 @@ ms.locfileid: "107823929"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
-- [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
+- [外接程序VSTO编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
 - [如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)
 - [如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [如何：在收到电子邮件时以编程方式执行操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [如何：收到电子邮件时以编程方式执行的操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

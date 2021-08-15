@@ -1,7 +1,7 @@
 ---
 title: 在 Visual Studio 和 Blend for Visual Studio 中设计 XAML
 titleSuffix: ''
-description: 了解 Visual Studio 中的可视化设计工具的功能，以及如何在 XAML 中生成 UI 和体验的 Blend for Visual Studio。
+description: 了解 Visual Studio 和 Blend for Visual Studio 中的可视化设计工具的功能，以便在 XAML 中生成 UI 和体验。
 ms.custom: SEO-VS-2020
 ms.date: 02/28/2020
 ms.topic: conceptual
@@ -9,12 +9,13 @@ ms.assetid: 288e2415-9fcf-408e-bc35-9848315e14fd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: fc6c05b925c8dac5c488ce3eea79ca683b590b72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 3367574ab52f02d3c6d4c8316eb6f616e5ca80540e5ed8874b8aad60280cd7a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876415"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351577"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 和 Blend for Visual Studio 中设计 XAML
 
@@ -26,7 +27,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - 若要创建 WPF 应用，请安装 Visual Studio 中的“.NET 桌面开发”工作负载。 还会安装 Blend for Visual Studio。
 
-     ![Visual Studio 安装程序中的 .NET 桌面开发工作负载的屏幕截图](../xaml-tools/media/dotnet-desktop-dev-workload.png)
+     ![Visual Studio 安装程序中的 .net 桌面开发工作负载的屏幕截图](../xaml-tools/media/dotnet-desktop-dev-workload.png)
 
 - 若要创建 UWP 应用，请安装 Visual Studio 中的“通用 Windows 平台开发”工作负载。 还会安装 Blend for Visual Studio。
 
@@ -34,7 +35,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - 若要创建 Xamarin.Forms 应用，请安装 Visual Studio 中的“使用 .NET 的移动开发”工作负载。 未安装 Blend for Visual Studio；Blend 不支持 Xamarin.Forms 应用。
 
-     ![Visual Studio 安装程序中的 .NET 工作负载的移动开发屏幕截图](../xaml-tools/media/mobile-dev-dotnet-workload.png)
+     ![Visual Studio 安装程序中的 .net 工作负载的移动开发屏幕截图](../xaml-tools/media/mobile-dev-dotnet-workload.png)
 
 ## <a name="shared-capabilities"></a>共享功能
 
@@ -42,9 +43,9 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **IntelliSense：** 这两个 Ide 都支持 IntelliSense 功能，如语句完成。
 
-- **调试：** 你可以在 [Visual Studio](inspect-xaml-properties-while-debugging.md) 中进行调试并 [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md)，包括在代码中设置断点以调试正在运行的应用程序，并在应用程序运行时使用 [热重载](../xaml-tools/xaml-hot-reload.md) 来更改 XAML 代码。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。
+- **调试：** 可以在 [Visual Studio](inspect-xaml-properties-while-debugging.md)和 [Blend for Visual Studio](../xaml-tools/debug-xaml-in-blend.md)中进行调试，包括在代码中设置断点以调试正在运行的应用程序，并使用 [热重载](../xaml-tools/xaml-hot-reload.md)在应用程序运行时更改 XAML 代码。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。
 
-- **文件重新加载：** 可在 Visual Studio 或 Blend for Visual Studio 中编辑 XAML 文件。 在 IDE 之间切换时，将自动重载已保存的编辑文件。 可以通过  >    >    >  在任一 IDE 中导航到 "工具" "选项" "环境 **文档**" 来控制重载行为。
+- **文件重新加载：** 可以在 Visual Studio 或 Blend for Visual Studio 中编辑 XAML 文件。 在 IDE 之间切换时，将自动重载已保存的编辑文件。 可以通过  >    >    >  在任一 IDE 中导航到 "工具" "选项" "环境 **文档**" 来控制重载行为。
 
 - **同步的布局和设置：** 当你用同一个性化帐户登录时，将在你的设备和版本中为 Visual Studio 或 Blend for Visual Studio 设计自定义工具窗口布局和设置首选项。 请参见[跨多台计算机同步设置](../ide/synchronized-settings-in-visual-studio.md)。
 

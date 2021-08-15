@@ -1,6 +1,6 @@
 ---
 title: 文档位置|Microsoft Docs
-description: 了解调试中的文档Visual Studio如何为 IDE 已知的源文件中的位置提供抽象。
+description: 了解在调试过程中Visual Studio位置如何提供源文件中 IDE 已知的位置的抽象。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: b59d739c-7572-427f-a70d-4e5df63d02c1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a3ac3db62619c5d0eaa9e89e09d7d5def06ff1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: cd46dc38580dae3b5f45d1b3896862592e208da04103b65019eb081f4bc3dcdb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898144"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343020"
 ---
 # <a name="document-position"></a>文档位置
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中，文档 *位置*：

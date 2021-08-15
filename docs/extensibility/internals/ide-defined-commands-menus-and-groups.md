@@ -1,6 +1,6 @@
 ---
 title: IDE-Defined 命令、菜单和组 |Microsoft Docs
-description: 了解在 Visual Studio 集成开发环境中定义的菜单、命令和命令组 (IDE) 。
+description: 了解 Visual Studio 集成开发环境 (IDE) 中定义的菜单、命令和命令组。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 86b3af13-7163-48c6-986b-7beeedbc26cc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b88bbab9c92cdd8627521eaa58284fd33964b7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: febe1d37ecd79b46771f006691dae1a3006a8709fc91599dd9562474990a6ad9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085944"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448021"
 ---
 # <a name="ide-defined-commands-menus-and-groups"></a>IDE 定义的命令、菜单和组
 许多菜单、命令和命令组已定义为供 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] IDE 使用。 扩展时，还可以使用这些命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -40,11 +41,11 @@ ms.locfileid: "105085944"
 ## <a name="in-this-section"></a>本节内容
 - [Visual Studio 菜单中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
 
- 提供 Visual Studio 菜单栏上的菜单的 GUID 和 ID 值以及它们所包含的组的值。
+ 提供 Visual Studio 菜单栏上的菜单的 GUID 和 ID 值以及它们所包含的组的 ID 值。
 
 - [Visual Studio 工具栏中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 
- 在 Visual Studio IDE 中提供工具栏的 GUID 和 ID 值，并为其所包含的组提供这些值。
+ 提供 Visual Studio IDE 中工具栏的 GUID 和 ID 值以及它们包含的组的 ID 值。
 
 - [Visual Studio 命令中的 GUID 和 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 

@@ -11,17 +11,18 @@ ms.assetid: d774322c-e72d-4df3-b317-928da39dadc5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 82b0895cfabc63fc61c85fd626f8811796532e19
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ecc6d204fe571c42fe2879bedb83bbffdab330c39cd0ab6791173888cd6de6be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082720"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389080"
 ---
 # <a name="ienumdebugthreads2clone"></a>IEnumDebugThreads2::Clone
 以单独的对象的形式返回当前枚举的副本。

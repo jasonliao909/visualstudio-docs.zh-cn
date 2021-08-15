@@ -1,6 +1,6 @@
 ---
 title: EnableLocationBrowseButton 元素（Visual Studio 模板）
-description: 了解 EnableLocationBrowseButton 元素以及它如何指定 "新建项目" 对话框中的 "浏览" 按钮是否可用。
+description: 了解 EnableLocationBrowseButton 元素以及它如何指定 "新建 Project" 对话框中的 "浏览" 按钮是否可用。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bf5ec98fc71158d9ebe3b95ec9e3d49526cb491
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b6f25154015790919577d7fc32daffe21c0e69d90c10675c98dd2ad5d1314eed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061389"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388716"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a> (Visual Studio 模板的 EnableLocationBrowseButton 元素) 
-指定 "**新建项目**" 对话框中的 "**浏览**" 按钮是否可用，以便用户可以轻松地修改保存新项目的默认目录。
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素 (Visual Studio 模板) 
+指定 "**新建 Project** " 对话框中的 "**浏览**" 按钮是否可用，以便用户可以轻松地修改保存新项目的默认目录。
 
  \<VSTemplate> \<TemplateData>
  \<EnableLocationBrowseButton>
@@ -53,15 +53,15 @@ ms.locfileid: "105061389"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 文本必须是 `true` 或 `false` ，指示是否在 "**新建项目**" 对话框中显示 "**浏览**" 按钮。
+ 文本必须是 `true` 或 `false` ，指示是否显示 "**新建 Project** " 对话框中的 "**浏览**" 按钮。
 
 ## <a name="remarks"></a>备注
- `EnableLocationBrowseButton` 是可选元素。 默认值为 `true` ，它显示 "**新建项目**" 对话框中的 "**浏览**" 按钮。
+ `EnableLocationBrowseButton` 是可选元素。 默认值为 `true` ，它显示 "**新建 Project** " 对话框中的 "**浏览**" 按钮。
 
- 在 " **新建项目** " 对话框中，" **位置** " 文本框指定用于保存新项目的目录。 " **浏览** " 按钮可帮助您通过显示 " **项目位置** " 对话框来修改此目录，该对话框使您可以轻松地导航到您的计算机上提供的不同目录，然后选择它作为新项目的保存目录。
+ 在 "**新建 Project** " 对话框中，"**位置**" 文本框指定用于保存新项目的目录。 "**浏览**" 按钮可帮助您通过显示 " **Project 位置**" 对话框来修改此目录，该对话框使您能够轻松地导航到计算机上提供的不同目录，然后选择它作为新项目的保存目录。
 
 ## <a name="example"></a>示例
- 下面的示例演示了 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。
+ 下面的示例说明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

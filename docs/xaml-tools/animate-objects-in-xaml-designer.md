@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中动态显示对象
 titleSuffix: Blend for Visual Studio
-description: 了解如何通过使用带有时间线和关键帧的情节提要在 XAML 设计器中 Blend for Visual Studio 创建动画。
+description: 了解如何使用情节提要Blend for Visual Studio时间线和关键帧在动态场景中对对象进行动画处理，在 XAML 设计器。
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: how-to
@@ -9,12 +9,13 @@ ms.assetid: fb88fa26-e835-47f5-9771-2f279441c83c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 162ed3ddb7e8f71a14c9dd8415500cc845316e82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: da206cedbe2cf14be1fc6bcd2d8f1dd1cd154524767ed9b33ddb69e392599053
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889247"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393433"
 ---
 # <a name="animate-objects-in-xaml-designer"></a>在 XAML 设计器中动态显示对象
 

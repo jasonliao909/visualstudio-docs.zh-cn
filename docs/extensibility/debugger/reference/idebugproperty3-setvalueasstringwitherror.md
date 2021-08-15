@@ -1,6 +1,6 @@
 ---
-description: 如果需要，设置此属性的值并返回错误消息。
-title: IDebugProperty3：： SetValueAsStringWithError |Microsoft Docs
+description: 设置此属性的值，并在必要时返回错误消息。
+title: IDebugProperty3：：SetValueAsStringWithError |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: b378368f-4a45-4b2f-8e3d-3bff7a18ab17
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 021d2fed674408e1aa9ab6a7e71be83c1c2737ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 753146d856b9844aa868a2e7e65d0cd82a6e07325fccc88663276a1b26bb5d71
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083916"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415969"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
-如果需要，设置此属性的值并返回错误消息。
+设置此属性的值，并在必要时返回错误消息。
 
 ## <a name="syntax"></a>语法
 
@@ -48,22 +49,22 @@ int SetValueAsStringWithError(
 
 ## <a name="parameters"></a>参数
 `pszValue`\
-中要设置的值。
+[in]要设置的值。
 
 `dwRadix`\
-中所设置的值的基数。
+[in]要设置的值的基数。
 
 `dwTimeout`\
-中等待设置值所用的时间长度 (`INFINITE` 意味着永远) 等待。
+[in]等待值设置的时间长度 (`INFINITE` 等待) 。
 
 `errorString`\
-弄如果设置值时发生错误，则会保存失败的原因。
+[out]如果设置值时出错，则说明失败的原因。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-传入值可以是要计算的表达式。
+传入值可以是要求值的表达式。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的 **CProperty** 对象实现此方法。

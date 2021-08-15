@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 07d7a33d90fd9d05c041ddc27f92a5b6a59bb75e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2cdb6958214e7d7636a722541f82bca7469c9e246ae4b8218b734b86646a43fb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825987"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351923"
 ---
 # <a name="how-to-cache-data-for-use-offline-or-on-a-server"></a>如何：缓存数据以便脱机使用或在服务器上使用
   您可以标记要缓存在文档中的数据项，使其在脱机时可用。 当文档存储在服务器上时，也可以使用其他代码来处理文档中的数据。
@@ -34,7 +35,7 @@ ms.locfileid: "107825987"
  在代码中声明数据项时，可以将数据项标记为要缓存; 如果使用的是 <xref:System.Data.DataSet> ，请在 " **属性** " 窗口中设置属性。 如果要缓存的数据项不是 <xref:System.Data.DataSet> 或 <xref:System.Data.DataTable> ，请确保它满足在文档中缓存的条件。 有关详细信息，请参阅 [缓存数据](../vsto/caching-data.md)。
 
 > [!NOTE]
-> 使用标记为 **缓存** 和 **WithEvents** 的 Visual Basic 创建的数据集 (包括从 " **数据源** " 窗口或 **"工具箱** " 中拖到 " **CacheInDocument** " 属性设置为 **True** 的数据集，) 在缓存中以下划线作为其名称的前缀。 例如，如果创建一个数据集并将其命名为 **Customers**，则该 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 名称将在缓存中 **_Customers** 。 使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 访问此缓存项时，必须指定 **_Customers** 而不是 **客户**。
+> 使用标记为 **缓存** 和 **WithEvents** 的 Visual Basic 创建的数据集 (包括从 "**数据源**" 窗口或 **"工具箱**" 中拖到 " **CacheInDocument** " 属性设置为 **True** 的数据集，) 在缓存中以下划线作为其名称的前缀。 例如，如果创建一个数据集并将其命名为 **Customers**，则该 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem> 名称将在缓存中 **_Customers** 。 使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 访问此缓存项时，必须指定 **_Customers** 而不是 **客户**。
 
 ### <a name="to-cache-data-in-the-document-using-code"></a>使用代码在文档中缓存数据
 
@@ -51,13 +52,13 @@ ms.locfileid: "107825987"
 
 ### <a name="to-cache-a-dataset-in-the-document-by-using-the-properties-window"></a>使用属性窗口缓存文档中的数据集
 
-1. 使用 Visual Studio 设计器中的工具将数据集添加到项目中，例如，通过使用 " **数据源** " 窗口将数据源添加到项目。
+1. 使用 Visual Studio 设计器中的工具将数据集添加到项目中，例如，使用 "**数据源**" 窗口将数据源添加到项目。
 
 2. 如果还没有数据集，请创建一个实例，并在设计器中选择该实例。
 
 3. 在 " **属性** " 窗口中，将 " **CacheInDocument** " 属性设置为 **True**。
 
-     有关详细信息，请参阅 [Office 项目中的属性](../vsto/properties-in-office-projects.md)。
+     有关详细信息，请参阅[Office 项目中的属性](../vsto/properties-in-office-projects.md)。
 
 4. 在 " **属性** " 窗口中，将 " **修饰符** " 属性设置为 **Public** (默认情况下，它是 **内部**) 。
 

@@ -1,6 +1,6 @@
 ---
 description: 此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。
-title: SccCheckin 函数 |Microsoft Docs
+title: SccCheckin 函数|Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e3f26ac2-6163-42e1-a764-22cfea5a3bc6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d324c03096df5178decd6f6954928df3f2c6b9aa
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e97fb25d9d0d3f91914d3e8d965796877b77a8dfc41a0812b1b6cc0a93aba794
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904742"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400876"
 ---
 # <a name="scccheckin-function"></a>SccCheckin 函数
-此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。 调用此函数时使用的是要签入的文件的计数和名称数组。
+此函数将以前签出的文件签入到源代码管理系统，存储更改并创建新版本。 使用计数和要签入的文件的名称数组调用此函数。
 
 ## <a name="syntax"></a>语法
 
@@ -40,54 +41,54 @@ SCCRTN SccCheckin (
 ### <a name="parameters"></a>参数
  pvContext
 
-中源代码管理插件上下文结构。
+[in]源代码管理插件上下文结构。
 
  hWnd
 
-中IDE 窗口的句柄，SCC 插件可将其用作它所提供的所有对话框的父级。
+[in]SCC 插件可以用作其提供的任何对话框的父级的 IDE 窗口句柄。
 
- n
+ nFiles
 
-中选定要签入的文件数。
+[in]要签入的选定文件数。
 
  lpFileNames
 
-中要签入的文件的完全限定的本地路径名称数组。
+[in]要签入的文件的完全限定的本地路径名称的数组。
 
  lpComment
 
-中要应用于所选每个选定文件的注释。 `NULL`如果源代码管理插件应该提示输入注释，则此参数为。
+[in]要应用于要签入的每个选定文件的注释。 如果 `NULL` 源代码管理插件应提示提供注释，则此参数为 。
 
- 用于
+ fOptions
 
-中命令标志，0或 `SCC_KEEP_CHECKEDOUT` 。
+[in]命令标志，0 或 `SCC_KEEP_CHECKEDOUT` 。
 
  pvOptions
 
-中SCC 插件特定的选项。
+[in]特定于 SCC 插件的选项。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
-|SCC_OK|已成功签入文件。|
-|SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。 建议重试。|
+|SCC_OK|文件已成功签入。|
+|SCC_E_FILENOTCONTROLLED|所选文件不在源代码控制下。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
 |SCC_E_NONSPECIFICERROR|非特定故障。 文件未签入。|
-|SCC_E_NOTCHECKEDOUT|用户未签出文件，因此无法将其签出。|
-|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> -另一个用户已事先签入， `bAutoReconcile` 却为 false。<br /><br /> -或-<br /><br /> -不能完成自动合并 (例如，当文件是二进制) 。|
+|SCC_E_NOTCHECKEDOUT|用户尚未签出该文件，因此无法签入。|
+|SCC_E_CHECKINCONFLICT|无法执行签入，因为：<br /><br /> - 另一个用户已提前签入， `bAutoReconcile` 并且为 false。<br /><br /> -或-<br /><br /> - 自动合并不能 (，例如，当文件是二进制) 。|
 |SCC_E_VERIFYMERGE|文件已自动合并，但尚未签入挂起的用户验证。|
-|SCC_E_FIXMERGE|由于必须手动解决的合并冲突，文件已自动合并但尚未签入。|
+|SCC_E_FIXMERGE|文件已自动合并，但由于必须手动解决的合并冲突而未签入。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
-|SCC_I_OPERATIONCANCELED|操作在完成前被取消。|
+|SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
 |SCC_I_RELOADFILE|需要重新加载文件或项目。|
 |SCC_E_FILENOTEXIST|找不到本地文件。|
 
 ## <a name="remarks"></a>备注
- 注释适用于所有要签入的文件。 Comment 参数可以是一个 `null` 字符串，在这种情况下，源代码管理插件可以提示用户提供每个文件的注释字符串。
+ 注释适用于正在签入的所有文件。 comment 参数可以是字符串，在这种情况下，源代码管理插件可以提示 `null` 用户输入每个文件的注释字符串。
 
- `fOptions`可以为参数指定标志的值， `SCC_KEEP_CHECKEDOUT` 以指示用户在中检查文件并再次签出文件的意图。
+ 可以给参数提供 标志的值，以指示用户签入文件并 `fOptions` `SCC_KEEP_CHECKEDOUT` 再次签出文件的意向。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

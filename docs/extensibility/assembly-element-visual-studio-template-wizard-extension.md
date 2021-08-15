@@ -17,14 +17,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1be9c72c01746b716b0202843b86ed2d5d52d44b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1e469eb19e9b1a48ca9ef0cf5348360dc0171d01f9315515665b176cbb038fa4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097482"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417983"
 ---
-# <a name="assembly-element-visual-studio-template-wizard-extension"></a> (Visual Studio 模板向导扩展的 Assembly 元素) 
+# <a name="assembly-element-visual-studio-template-wizard-extension"></a>Visual Studio 模板向导扩展 (的 Assembly 元素) 
 指定实现接口的程序集的名称或强名称 `IWizard` 。
 
  \<VSTemplate>
@@ -61,7 +61,7 @@ ms.locfileid: "105097482"
  `Assembly` 是 `WizardExtension` 的必需子元素。
 
 ## <a name="example"></a>示例
- 下面的示例演示了 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 下面的示例演示 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```xml
 <VSTemplate Version="3.0.0" Type="Item"

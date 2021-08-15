@@ -11,17 +11,18 @@ ms.assetid: 2333b33b-042b-4ac6-9ebe-e66f95f52f51
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a2b9d5910b3a86b322a7589b285ba242dec4add2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c479f67850af2701f68324e2270cb26e73b84458e0da5f399df0b1b26430b234
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070916"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432977"
 ---
 # <a name="text_doc_attr_2"></a>TEXT_DOC_ATTR_2
 描述文档的属性。
@@ -44,16 +45,16 @@ public const uint TEXT_DOC_ATTR_READONLY_2 = 0x00000001;
 ## <a name="remarks"></a>备注
 
 > [!NOTE]
-> 在 c # 的程序集中，此值实际上并未定义。 相反，您必须将定义复制到您的源文件中。
+> 此值实际上未在 C# 的程序集中定义。 相反，必须将定义复制到源文件。
 
  作为参数传递给 [onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

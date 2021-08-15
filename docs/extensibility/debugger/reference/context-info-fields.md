@@ -11,17 +11,18 @@ ms.assetid: ef436bd3-738e-47e8-828c-8febce752439
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 878dfb4e2f684b7a28b06820e110b22cdae962b9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 95ca1e9e65a1fac9a9171bed1bfef90b011c44a1308f2a6eb01b9a029d1acbc3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096442"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360893"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 指定要检索的有关内存上下文的信息。

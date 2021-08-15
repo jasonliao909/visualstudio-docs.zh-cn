@@ -16,18 +16,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d05240208c6160968ae0013acfdb9f2a25c973
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8888191a2b482aba2ff1fed2233e7156a0bf52564f1cac3339d8293d10fb36e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388550"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121399018"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 
-[代码中的代码Visual Studio](../modeling/map-dependencies-across-your-solutions.md) 可帮助避免在大型代码库、不熟悉的代码或旧代码中丢失。 例如，在调试时，可能需要查看多个文件和项目的代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。
+[代码中的代码Visual Studio](../modeling/map-dependencies-across-your-solutions.md)可帮助避免在大型代码库、不熟悉的代码或旧代码中丢失。 例如，在调试时，可能需要查看多个文件和项目的代码。 使用代码图在这些代码段中导航，了解代码段之间的关系。 这样，你不必在脑海中跟踪此代码，或绘制单独的关系图。 所以，在你的工作中断时，代码图有助于让你回想起你正在处理的代码。
 
 ![代码图&#45;映射代码中的关系](../modeling/media/codemapstoryboardpaint.png)
 
@@ -35,10 +36,10 @@ ms.locfileid: "112388550"
 
 有关在使用代码图时可以使用的命令和操作的详细信息，请参阅 [浏览和重新排列代码图](../modeling/browse-and-rearrange-code-maps.md)。
 
-详细了解使用 [调试器工具 Visual Studio中的调试](../debugger/debugger-feature-tour.md)。
+详细了解使用[调试器工具 Visual Studio中的调试](../debugger/debugger-feature-tour.md)。
 
 > [!NOTE]
-> 若要创建和编辑代码图，需要Visual Studio Enterprise版本。 在 Visual Studio Community 专业版中，可以打开在 Enterprise Edition 中生成的关系图，但不能对其进行编辑。
+> 若要创建和编辑代码图，需要Visual Studio Enterprise版本。 在 Visual Studio Community 和 Professional 版本中，可以打开在 Enterprise 版本中生成的关系图，但不能对其进行编辑。
 
 ## <a name="understand-the-problem"></a>了解问题
  假定你正在处理的绘图程序中有 Bug。 若要重现 bug，请打开 Visual Studio 并按 **F5** 开始调试。
@@ -100,7 +101,7 @@ ms.locfileid: "112388550"
 
  现在请检查 `addPaintObject` 方法定义。 它也使用 `history` 和 `paintObjects` 执行某些任务， 它还调用 `Repaint`。
 
- ![代码图窗口的屏幕截图，其中已选择 addPaintObject 方法，代码片段图像显示 addPaintObject 方法的代码。](../modeling/media/codemapstoryboardpaint10.png)
+ ![代码图窗口的屏幕截图，其中选择了 addPaintObject 方法，代码片段图像显示了 addPaintObject 方法的代码。](../modeling/media/codemapstoryboardpaint10.png)
 
 ## <a name="find-the-problem-by-examining-the-map"></a>通过检查映射找到问题
  似乎修改 `history` 和 `paintObjects` 的所有方法都会调用 `Repaint`。 但是，`undo` 方法不会调用 `Repaint`，即使 `undo` 修改相同的字段。 因此，你认为可以通过从 `Repaint` 调用 `undo` 来解决此问题。

@@ -10,14 +10,15 @@ ms.assetid: f22cfc75-3e31-4e0d-88a9-3ca99539203b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6bf2694b26305cdaefefd61dc1119b7b019b12d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2b7a3cb329c6e9e14dd06ff1e82c42563f06624f13d64afd8217f5931be86e7e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080783"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414397"
 ---
 # <a name="solution-configuration"></a>解决方案配置
 解决方案配置存储解决方案级属性。 它们定向 **开始** (F5) 键和 **生成** 命令的行为。 默认情况下，这些命令生成并启动调试配置。 这两个命令都在解决方案配置的上下文中执行。 这意味着，用户可能希望按 F5 启动并生成通过设置配置的任何活动解决方案。 环境旨在针对解决方案而不是在生成和运行时进行优化。
@@ -29,7 +30,7 @@ ms.locfileid: "105080783"
 
  下面介绍如何实现项目类型支持的解决方案配置：
 
-- Project
+- 项目
 
    显示在当前解决方案中找到的项目的名称。
 

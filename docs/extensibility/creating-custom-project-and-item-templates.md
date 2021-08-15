@@ -8,14 +8,15 @@ ms.assetid: 586da5dc-f678-402b-afd0-0332959fd7a6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: afddd162312ac686e97df84bec0f48dc0478c898
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 76485d62ce3b2bcc8bc646910eaba738e306919dd2ab545ee366d8869652ad57
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055760"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434734"
 ---
 # <a name="create-custom-project-and-item-templates"></a>创建自定义项目和项模板
 

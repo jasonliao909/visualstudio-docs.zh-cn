@@ -1,5 +1,5 @@
 ---
-description: " (DEs) 和会话调试管理器 (SDM) ，使程序节点可供调试引擎使用。"
+description: 使程序节点可供调试引擎使用 (ES) 会话调试管理器 (SDM) 。
 title: IDebugProgramPublisher2：:P ublishProgramNode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: d4b72e04-f726-46cf-8e56-5203ff205b12
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 62de2e91d9331d33e40e6364893850d40f8e8eca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f68e6a3b874617608d0155294fa3928ac51d0b2585fe39bdc25edee67cfceded
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065146"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449126"
 ---
 # <a name="idebugprogrampublisher2publishprogramnode"></a>IDebugProgramPublisher2::PublishProgramNode
- (DEs) 和会话调试管理器 (SDM) ，使程序节点可供调试引擎使用。
+使程序节点可供调试引擎使用 (ES) 会话调试管理器 (SDM) 。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int PublishProgramNode(
 
 ## <a name="parameters"></a>参数
 `pProgramNode`\
-中一个 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象，该对象表示要使其可用的程序节点。
+[in]表示 [要提供的程序节点的 IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法允许在选择和启动程序之前查询信息以进行调试。
+ 此方法允许在选择和启动程序进行调试之前查询程序的信息。
 
  若要从可用性中删除程序节点，请调用 [UnpublishProgramNode](../../../extensibility/debugger/reference/idebugprogrampublisher2-unpublishprogramnode.md) 方法。
 

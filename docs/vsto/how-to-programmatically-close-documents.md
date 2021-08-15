@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式关闭文档
-description: 了解如何关闭活动文档，也可以指定要关闭的 Microsoft Office Word 文档。
+description: 了解如何关闭活动文档，或指定要Microsoft Office Word 文档。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1b31a35ac1fa452f526d109dd93ca8264f78947b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 795629796c0b72368e9bf0bc4fa0e36bdbdcda414b0d5c3af97875f6326171b7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825350"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394493"
 ---
 # <a name="how-to-programmatically-close-documents"></a>如何：以编程方式关闭文档
   可以关闭活动文档，也可以指定关闭某个文档。
@@ -67,5 +68,5 @@ ms.locfileid: "107825350"
 - [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)
 - [如何：以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
-- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

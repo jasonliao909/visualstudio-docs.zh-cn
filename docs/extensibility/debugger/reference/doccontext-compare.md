@@ -1,5 +1,5 @@
 ---
-description: 指定用于比较两个文档上下文的条件。
+description: 指定比较两个文档上下文的条件。
 title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ed947c34-b07e-4b69-8381-b6e7cb842862
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6eeee3e31c898660930b676df716fe25769bbb8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3329c805ab1e5f6f45f82a2789fdec242c83931f18e525a50fd883f3601c63da
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096000"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360815"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
-指定用于比较两个文档上下文的条件。
+指定比较两个文档上下文的条件。
 
 ## <a name="syntax"></a>语法
 
@@ -49,28 +50,28 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>字段
 `DOCCONTEXT_EQUAL`\
-在列表中查找与目标文档上下文相同的第一个文档上下文。
+查找列表中与目标文档上下文相等的第一个文档上下文。
 
 `DOCCONTEXT_LESS_THAN`\
-在列表中查找小于目标文档上下文的第一个文档上下文。
+查找列表中小于目标文档上下文的第一个文档上下文。
 
 `DOCCONTEXT_GREATER_THAN`\
-在列表中查找大于目标文档上下文的第一个文档上下文。
+查找列表中大于目标文档上下文的第一个文档上下文。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-在与目标文档上下文相同的文档中查找列表中的第一个文档上下文。
+查找列表中与目标文档上下文位于同一文档中的第一个文档上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递给 [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 方法。
 
-这些值用于指定在列表中查找第一个文档上下文的比较条件。 将为文档上下文提供一个文档上下文列表，以通过方法对自身进行比较 `IDebugDocumentContext2::Compare` 。 然后返回该列表中比较运算符所属的第一个文档上下文 `true` 。
+这些值用于指定用于查找列表中第一个文档上下文的比较条件。 为文档上下文提供一个文档上下文列表，以通过 方法将其 `IDebugDocumentContext2::Compare` 与自身进行比较。 然后返回列表中要返回比较运算符的第 `true` 一个文档上下文。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

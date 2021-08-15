@@ -1,6 +1,6 @@
 ---
-title: 注册互操作程序集命令处理程序 |Microsoft Docs
-description: 了解使用互操作程序集的所有 Vspackage 实现命令所使用的基本命令协定。
+title: 注册互操作程序集命令处理程序|Microsoft Docs
+description: 了解使用互操作程序集实现命令的所有 VSPackage 使用的基本命令协定。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,32 +11,33 @@ ms.assetid: 303cd399-e29d-4ea1-8abe-5e0b59c12a0c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 641a21658e490f94a27cbd9120d044539a7ec284
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 65456c5d351bda47663b93e450c938b030a68bf9086e137540c632c67599ffab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062754"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275276"
 ---
 # <a name="registering-interop-assembly-command-handlers"></a>注册互操作程序集命令处理程序
-VSPackage 必须向注册， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使集成开发环境 (IDE) 正确路由其命令。
+VSPackage 必须注册到 ，以便集成开发环境 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 正确路由其命令。
 
- 可以通过手动编辑或使用注册器 () 文件来更新注册表。 有关更多信息，请参见 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
+ 可以通过手动编辑或通过使用注册机构 (.rgs) 注册表。 有关更多信息，请参见 [Creating Registrar Scripts](/cpp/atl/creating-registrar-scripts)。
 
- 托管包框架 (MPF) 通过类提供此功能 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 。
+ MPF (包) 通过 类提供 <xref:Microsoft.VisualStudio.Shell.ProvideMenuResourceAttribute> 此功能。
 
 - [命令表格式引用](/previous-versions/bb164647(v=vs.100)) 资源位于非托管附属 UI dll 中。
 
-## <a name="command-handler-registration-of-a-vspackage"></a>命令处理程序注册 VSPackage
- 用作用户界面 (UI) 命令的处理程序的 VSPackage 需要名为 VSPackage 的注册表项 `GUID` 。 此注册表项指定 VSPackage 的 UI 资源文件的位置以及该文件中的菜单资源。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ *\<Version>* \Menus 下，其中 *\<Version>* 是的版本 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，例如9.0。
+## <a name="command-handler-registration-of-a-vspackage"></a>VSPackage 的命令处理程序注册
+ 充当基于 UI 命令的用户界面 (的 VSPackage) 需要一个以 VSPackage 命名的注册表项 `GUID` 。 此注册表项指定 VSPackage 的 UI 资源文件和该文件中的菜单资源的位置。 注册表项本身位于 HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\Menus 下，其中 是 的版本， \\ *\<Version>* *\<Version>* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 例如 9.0。
 
 > [!NOTE]
-> \\ *\<Version>* 初始化 shell 时，可以使用备用根覆盖 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio的根路径 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 有关根路径的详细信息，请参阅 [安装带有 Windows Installer 的 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
+> 初始化 shell 时，HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio的根路径可以使用备用 \\ *\<Version>* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根重写。 有关根路径详细信息，请参阅[Installing VSPackages with Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)。
 
 ### <a name="the-ctmenu-resource-registry-entry"></a>CTMENU 资源注册表项
- 注册表项的结构是：
+ 注册表项的结构为：
 
 ```
 HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
@@ -44,19 +45,19 @@ HKEY_LOCAL_MACHINE\Software\VisualStudio\<Version>\
     <GUID> = <Resource Information>
 ```
 
- \<*GUID*> 是 VSPackage 的，格式为 {XXXXXX-xxxx- `GUID` XXXXXXXXX}。
+ \<*GUID*> 是 `GUID` {XXXXXX-XXXX-XXXX-XXXX-XXXXXXXXX} 形式的 VSPackage 的 。
 
- *\<Resource Information>* 由以逗号分隔的三个元素组成。 这些元素按顺序排列：
+ *\<Resource Information>* 由以逗号分隔的三个元素组成。 这些元素的顺序为：
 
  \<*Path to Resource DLL*>, \<*Menu Resource ID*>, \<*Menu Version*>
 
- 下表对的字段进行了说明 \<*Resource Information*> 。
+ 下表描述了 的字段 \<*Resource Information*> 。
 
 | 元素 | 说明 |
 |---------------------------| - |
-| \<*Path to Resource DLL*> | 这是包含菜单资源的资源 DLL 的完整路径，或留空，这表示将使用 VSPackage 的资源 DLL， (在 VSPackage 本身) 注册到的 "包" 子项中指定。<br /><br /> 建议将此字段留空。 |
-| \<*Menu Resource ID*> | 这是资源的资源 ID `CTMENU` ，其中包含 VSPackage 的所有 UI 元素，这些元素是从 [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) 文件编译而来的。 |
-| \<*Menu Version*> | 此值用作资源的版本 `CTMENU` 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值来确定是否需要将资源的内容更正到 `CTMENU` 其所有资源的缓存中 `CTMENU` 。 通过执行 devenv 安装命令触发更正。<br /><br /> 此值最初应设置为1，并在资源中每次更改之后 `CTMENU` 和发生更正之前递增。 |
+| \<*Path to Resource DLL*> | 这是包含菜单资源的资源 DLL 的完整路径，或保留为空，表示 VSPackage 的资源 DLL 将按照在 VSPackage 本身注册到) 的 Packages 子项中指定的 (使用。<br /><br /> 希望将此字段留空。 |
+| \<*Menu Resource ID*> | 这是资源的资源 ID，其中包含从 `CTMENU` [.vsct](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md) 文件编译的 VSPackage 的所有 UI 元素。 |
+| \<*Menu Version*> | 此数字用作资源 `CTMENU` 的版本。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 使用此值确定是否需要重新将资源的内容及其所有资源的 `CTMENU` 缓存 `CTMENU` 重新进行。 通过执行 devenv setup 命令触发重新触发。<br /><br /> 此值最初应设置为 1，在资源中每次更改后以及重新集合发生 `CTMENU` 之前递增。 |
 
 ### <a name="example"></a>示例
  下面是几个资源条目的示例：

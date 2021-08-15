@@ -1,28 +1,29 @@
 ---
 title: 使用连接服务添加 Azure 存储 | Microsoft Docs
-description: 使用 Visual Studio 连接的服务向应用添加 Azure 存储服务依赖项
+description: 使用 Visual Studio 将 Azure 存储服务依赖项添加到应用连接的服务
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.custom: vs-azure
 ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
-ms.openlocfilehash: a2aa5a0453b6a05c261d3cac853ab8265fb4e453
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76a886002bb8b8d7aaeca60690e83847087bf42cb5d54e9cee7922c714e61a29
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844341"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121348781"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接服务添加 Azure 存储
 
-使用 Visual Studio，可以使用 **连接的服务** 功能将以下任何内容连接到 Azure 存储：
+使用 Visual Studio，可以使用 **连接的服务** 功能将以下任意内容连接到 Azure 存储：
 
 - .NET Framework 控制台应用
-- ASP.NET MVC ( .NET Framework) 
+- ASP.NETMVC (.NET Framework) 
 - ASP.NET Core
-- .NET Core (包括控制台应用程序、WPF、Windows 窗体、类库) 
+- .net Core (包括控制台应用程序、WPF、Windows 窗体、类库) 
 - .NET Core 辅助角色
 - Azure Functions
 - 通用 Windows 平台应用
@@ -35,10 +36,10 @@ ms.locfileid: "99844341"
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
 ## <a name="prerequisites"></a>先决条件
 
-- 已安装 Azure 工作负荷的 Visual Studio。
+- Visual Studio 安装 Azure 工作负荷。
 - 受支持类型之一的项目
 
-## <a name="connect-to-azure-storage-using-connected-services"></a>使用连接的服务连接到 Azure 存储
+## <a name="connect-to-azure-storage-using-connected-services"></a>使用连接的服务连接 Azure 存储
 
 ::: moniker range="vs-2017"
 
@@ -83,13 +84,13 @@ ms.locfileid: "99844341"
 
     ![添加服务依赖项](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. 在 " **添加依赖关系** " 页上，选择 " **Azure 存储**"。
+1. 在 "**添加依赖关系**" 页上，选择 **Azure 存储**。
 
     ![添加 Azure 存储](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
 
     如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
 
-1. 在 " **配置 Azure 存储** " 屏幕上，选择现有的存储帐户，并选择 " **下一步**"。
+1. 在 "**配置 Azure 存储**" 屏幕上，选择现有的存储帐户，然后选择 "**下一步**"。
 
     若要要创建存储帐户，请转到下一步。 否则，请跳到步骤 6。
 
@@ -99,7 +100,7 @@ ms.locfileid: "99844341"
 
    1. 选择对话框底部的 " **创建存储帐户** "。
 
-   1. 填写 **Azure 存储：创建新** 对话框，并选择 " **创建**"。
+   1. 填写 **Azure 存储：创建新** 对话框，然后选择 "**创建**"。
 
        ![新的 Azure 存储帐户](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
 

@@ -1,6 +1,6 @@
 ---
-title: 可用服务列表|Microsoft Docs
-description: 查看 Visual Studio 和 Visual Studio SDK 支持的可用服务的列表，包括用于获取每个服务的接口的服务 GUID。
+title: 可用服务的列表 |Microsoft Docs
+description: 查看 Visual Studio 和 Visual Studio SDK 支持的可用服务的列表，包括用于获取每个服务的接口的服务 guid。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,51 +11,52 @@ ms.assetid: 724eb24b-b87c-4971-a2e7-adee7afc03b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5ba7fdfd7d86ef9158554d30acdd2995c98e5ec
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a1d74c72d0533fb86e9969bb10cf765c322dd25f9d9b9268fea4ed103b9edb08
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899932"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388742"
 ---
 # <a name="list-of-available-services"></a>可用服务的列表
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和 Visual Studio SDK 支持以下服务。 某些包提供此处未列出的自己的服务，例如，语言服务没有单个服务 GUID。 必须使用语言的名称在注册表中查找语言服务的 GUID。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]和 Visual Studio SDK 支持以下服务。 某些包提供了其自己的未在此处列出的服务，例如，语言服务没有单个服务 GUID。 必须使用语言名称在注册表中查找语言服务的 GUID。
 
-使用此处列出的服务 GUID 或者从其他一些源 (例如，语言服务) 获取每个服务显示的主接口。
+使用此处列出的服务 Guid 或从其他一些源获取 (例如，语言服务) 以获取与每个服务一起显示的主接口或接口。
 
 ## <a name="the-services"></a>服务
 
-| 服务 | 接口 | Visual Studio | Visual Studio 2005 | 描述 |
+| 服务 | 接口 | Visual Studio | Visual Studio 2005 | 说明 |
 | - | - |---------------|--------------------| - |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 由 VSPackage 用于从 ActiveX 控件获取接口 <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> ，以便于异步数据传输。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化的 DTE (设计) 扩展性。<br /><br /> C/C++ ID：SID_SDTE |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 是 | 是 | 由窗体设计器实现以显示 控件的默认事件处理程序。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SBindHost> | <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> | 是 | 是 | 由 vspackage 用来 <xref:Microsoft.VisualStudio.OLE.Interop.IBindHost> 从 ActiveX 控件获取接口，以便于异步数据传输。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDTE> | <xref:EnvDTE.DTE> | 否 | 是 | 获取用于自动化 (DTE) 对象的设计时扩展性。<br /><br /> C/C + + ID： SID_SDTE |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SCodeNavigate> | <xref:Microsoft.VisualStudio.Shell.Interop.ICodeNavigate> | 是 | 是 | 由窗体设计器实现，用于显示控件的默认事件处理程序。 |
 | <xref:Microsoft.VisualStudio.OLE.Interop.SContainerDispatch> | IDispatch | 是 | 是 | 使 VSPackage 能够访问另一个 VSPackage 或控件的自动化接口。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 是 | 是 | 使 VSPackage 能够添加或创建扩展类型库。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SDirList> | <xref:Microsoft.VisualStudio.Shell.Interop.IDirList> | 否 | 是 | 提供对容器的命名列表的访问;例如，要搜索的目录列表，如"查找和替换"下拉列表中的"查找和替换"对话框中所示。 <xref:Microsoft.VisualStudio.Shell.Interop.IDirList>对象可以从 中读取，也可以写入。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SIVsPackageDynamicToolOwner> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwner> | 是 | 是 | 使 VSPackage 能够动态显示或隐藏自己的工具窗口。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SLicensedClassManager> | <xref:Microsoft.VisualStudio.Shell.Interop.ILicensedClassManager> | 是 | 是 | 通过指定许可证密钥列表，使 VSPackage 能够向其所需的 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 类指示。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> | 是 | 是 | 使 VSPackage 能够访问相对于本地注册表配置单元 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的注册表。 |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SOleComponentManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager> | 是 | 是 | 提供组件协调服务，例如消息循环、键盘循环和事件通知。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> | 是 | 是 | 使 VSPackage 能够访问各种用户界面 (UI) 元素，如帮助、状态栏和 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] UI 事件。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponent> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> | 是 | 是 | 使 VSPackage 能够将其 UI 与 的 UI 集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponentSite> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentSite> | 是 | 是 | 使 VSPackage 能够控制特定于工具的 UI 更改。 |
-| <xref:Microsoft.VisualStudio.OLE.Interop.SOleUndoManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> | 是 | 是 | 使 VSPackage 能够访问容器的撤消管理器，以参与该容器的撤消堆栈或访问该容器的撤消堆栈。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> | 是 | 是 | 使 VSPackage 能够提供其自己的服务。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SExtendedTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IExtendedTypeLib> | 是 | 是 | 允许 VSPackage 添加或创建扩展类型库。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SDirList> | <xref:Microsoft.VisualStudio.Shell.Interop.IDirList> | 否 | 是 | 提供对容器的命名列表列表的访问权限;例如，要搜索的目录列表，如 " **查找和替换** " 对话框中的 "搜索 **范围** " 下拉列表中所示。 <xref:Microsoft.VisualStudio.Shell.Interop.IDirList>可以从中读取对象并将其写入。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SIVsPackageDynamicToolOwner> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackageDynamicToolOwner> | 是 | 是 | 使 VSPackage 能够动态地显示或隐藏其自己的工具窗口。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SLicensedClassManager> | <xref:Microsoft.VisualStudio.Shell.Interop.ILicensedClassManager> | 是 | 是 | [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]通过指定许可证密钥列表，使 VSPackage 向其提供所需的类。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SLocalRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.ILocalRegistry2> | 是 | 是 | 使 VSPackage 能够访问与本地 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 注册表配置单元相关的注册表。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SOleComponentManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleComponentManager> | 是 | 是 | 提供组件协调服务，如消息循环、键盘循环和事件通知。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> | 是 | 是 | 使 VSPackage 能够访问 (UI) 元素的各种用户界面 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，如 "帮助"、"状态栏" 和 "UI 事件"。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponent> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponent> | 是 | 是 | 使 VSPackage 能够将其 UI 与的 UI 集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SOleInPlaceComponentSite> | <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentSite> | 是 | 是 | 允许 VSPackage 控制特定于工具的 UI 更改。 |
+| <xref:Microsoft.VisualStudio.OLE.Interop.SOleUndoManager> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoManager> | 是 | 是 | 允许 VSPackage 访问容器的撤消管理器以参与该容器的撤消堆栈，或访问该容器的撤消堆栈。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SProfferService> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferService> | 是 | 是 | 允许 VSPackage 提供自己的服务。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SProfferTypeLib> | <xref:Microsoft.VisualStudio.Shell.Interop.IProfferTypeLib> | 是 | 是 | 使窗体设计器能够使类型库可供引用。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> | 是 | 是 | 提供对选择容器中的选择的访问。 由窗体设计器使用。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostCommandDispatcher> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> | 是 | 是 | 使 VSPackage 能够参与命令处理程序链，并代表集成开发环境或 IDE (处理) 命令。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostLocale> | <xref:Microsoft.VisualStudio.Shell.Interop.IUIHostLocale> | 是 | 是 | 提供对主机的 UI 区域设置信息的访问。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> | 否 | 是 | 启用 VSPackage，以在启用日志记录时记录高级消息。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | 是 | 是 | 提供对" **添加项目项** "对话框的访问权限，允许 VSPackage 实现自己的"添加项 **"** 菜单选项。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg> | 是 | 是 | 显示" **添加引用"** 对话框。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> | 是 | 是 | 使 VSPackage 能够确定是否为命令行开关devenv.exe。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | 否 | 是 | 使 VSPackage 能够 **创建一调用浏览器** 调试中使用的新脚本。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | 是 | 是 | 使 VSPackage 能够将 **类视图同步** 到特定对象。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | 是 | 是 | 支持将命令名称映射到 GUID 以及返回并确定所有可用命令和名称的名称。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostCommandDispatcher> | <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> | 是 | 是 | 允许 VSPackage 参与命令处理程序链，并代表集成开发环境 (IDE) 或自身处理命令。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SUIHostLocale> | <xref:Microsoft.VisualStudio.Shell.Interop.IUIHostLocale> | 是 | 是 | 提供对宿主的 UI 区域设置信息的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsActivityLog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog> | 否 | 是 | 启用日志记录时，允许 VSPackage 记录高级消息。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddProjectItemDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddProjectItemDlg> | 是 | 是 | 提供对 "**添加 Project 项**" 对话框的访问，允许 vspackage 实现其自己的 "**添加项**" 菜单选项。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAddWebReferenceDlg> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAddWebReferenceDlg> | 是 | 是 | 显示 " **添加引用** " 对话框。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsAppCommandLine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsAppCommandLine> | 是 | 是 | 启用 VSPackage，以确定是否为 devenv.exe 提供了命令行开关。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCallBrowser> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCallBrowser> | 否 | 是 | 使 VSPackage 能够创建用于调试的新 **调用浏览器** 。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsClassView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsClassView> | 是 | 是 | 使 VSPackage 能够将 **类视图** 同步到特定对象。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsCmdNameMapping> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCmdNameMapping> | 是 | 是 | 支持将命令名称映射到 Guid，并返回和确定所有可用命令和名称的名称。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeDefView> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeDefView> | 否 | 是 | 使 VSPackage 能够操作 **代码定义视图**。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsCodeShareHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsCodeShareHandler> | 是 | 是 | 内部服务。 请勿使用。 |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsCodeWindow> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow> | 是 | 是 | 提供对可以包含一个或多个文档的代码窗口的访问。 |
@@ -70,7 +71,7 @@ ms.locfileid: "112899932"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebuggableProtocol> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProtocol> | 是 | 是 | 使 VSPackage 能够更新 IDE 用于启动特定调试引擎的可调试协议列表。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsDebugLaunch> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugLaunch> | 是 | 是 | 启用 VSPackage 以支持启动调试器。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsDiscoveryService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDiscoveryService> | 是 | 是 | 使 VSPackage 能够创建用于发现 Web 服务的发现会话。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsEnumHierarchyItemsFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> | 是 | 是 | 提供一个工厂，用于创建对象，用于枚举指定层次结构 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> 项目) 。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsEnumHierarchyItemsFactory> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> | 是 | 是 | 提供一个工厂，用于创建对象，用于枚举指定层次结构 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEnumHierarchyItemsFactory> (项目) 。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsErrorList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsErrorList> | 否 | 是 | 提供用于操作"生成错误 **列表"任务窗口的其他** 方法。 具体而言， 将" **生成错误列表"** 任务窗口放在最前面，并强制显示所有错误。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsExternalFilesManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsExternalFilesManager> | 是 | 是 | 提供对当前 **解决方案的"杂项文件** "项目节点的访问。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChange> | | 是 | 是 | 已过时。 请 `SVsFileChangeEx` 改为使用服务。 |
@@ -83,10 +84,10 @@ ms.locfileid: "112899932"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsHelpService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsHelpSystem> | 是 | 是 | 提供对帮助系统的访问权限。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsHTMLConverter> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsHTMLConverter> | 是 | 是 | 由调试 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 器用来处理 HTML 以格式化其输出。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsIME> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIME> | 是 | 是 | 提供从 VSPackage 中 (IME) API 的输入法编辑器。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntegratedHelp> | <xref:Microsoft.VisualStudio.VSHelp.SVsHelp> | 是 | 是 | 提供对 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 帮助系统的访问权限，用于关键字或 URL 访问，并通过帮助文件提供导航控制。 只有在帮助集成到 IDE 中且未作为外部程序运行时， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此服务才可用。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntegratedHelp> | <xref:Microsoft.VisualStudio.VSHelp.SVsHelp> | 是 | 是 | 提供对 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 帮助系统的访问，用于关键字或 URL 访问，并通过帮助文件提供导航控制。 只有在帮助集成到 IDE 中且未作为外部程序运行时， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 此服务才可用。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntelliMouseHandler> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntelliMouseHandler> | 是 | 是 | 使 VSPackage 能够访问 IntelliMouse 功能，例如，在单击鼠标滚轮时使用鼠标滚轮和处理滚动和平移位图。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseEngine> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseEngine> | 否 | 是 | 使项目层次结构节点能够加载或卸载文件，作为 IntelliSense 操作支持的一部分。 加载和卸载过程会触发可能影响项目 IntelliSense 工具提示中显示的内容的事件。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectHost> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectHost> | 否 | 是 | 使项目层次结构节点能够提供有关嵌套 IntelliSense 项目的信息 (实现可在 IntelliSense 工具提示中显示的接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject>) 。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectHost> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectHost> | 否 | 是 | 使项目层次结构节点能够提供有关嵌套 IntelliSense 项目的信息 (实现可在 IntelliSense 工具提示) 的接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProject> 节点。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsIntellisenseProjectManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsIntellisenseProjectManager> | 否 | 是 | 使项目层次结构节点能够向事件侦听器提供建议，例如引用或配置更改，这可能会影响 IntelliSense 工具提示中显示的内容。 旨在与包含的语言一起使用。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsInvisibleEditorManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsInvisibleEditorManager> | 是 | 是 | 允许 VSPackage 注册 "不可见的" 编辑器，即提供完全编辑功能但对用户不可见的编辑器。 |
 | <xref:Microsoft.VisualStudio.TextManager.Interop.SVsLanguageFilter> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextViewFilter> | 是 | 是 | 使 VSPackage 能够向文本视图提供其他信息，例如数据提示和字词的范围。 |
@@ -121,44 +122,44 @@ ms.locfileid: "112899932"
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsShell> | 是 | 是 | 允许 VSPackage 与其他 Vspackage 直接交互并对其进行操作。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellDebugger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebugger> | 是 | 是 | 提供对调试器的访问 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection> | 是 | 是 | 允许 VSPackage 访问当前所选内容，并管理命令 UI 上下文。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | IVSMDCodeDomProvider | 否 | 是 | 提供对 DOM 提供程序 (文档) 模型的访问，该提供程序可用于本机代码。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | 否 | 是 | 提供对托管窗体设计器的 IDE 支持的访问。 `IVSMDCodeDomCreator`可用于创建代码 DOM 提供程序。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | IVSMDPropertyBrowser | 否 | 是 | 提供对设计器属性窗口服务的访问权限。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | 否 | 是 | 提供对接口的访问，该接口可返回 <xref:System.ComponentModel.Design.ITypeResolutionService> 可在本机代码中使用的对象。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | 否 | 是 | 提供一种在程序集上打开作用域的方法，同时考虑根据需要锁定。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDCodeDomProvider> | IVSMDCodeDomProvider | 否 | 是 | 提供对可以在本机代码中使用的 (DOM) 提供程序的代码文档对象模型的访问权限。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDDesignerService> | IVSMDCodeDomCreator<br /><br /> IVSMDDesignerService | 否 | 是 | 提供对托管窗体设计器的 IDE 支持的访问权限。 `IVSMDCodeDomCreator`可用于创建代码 DOM 提供程序。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDPropertyBrowser> | IVSMDPropertyBrowser | 否 | 是 | 提供对设计器属性 windows 服务的访问权限。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVSMDTypeResolutionService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVSMDTypeResolutionService> | 否 | 是 | 提供对可以返回 <xref:System.ComponentModel.Design.ITypeResolutionService> 本机代码中可用对象的接口的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSmartOpenScope> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSmartOpenScope> | 否 | 是 | 提供了一种方法来打开程序集的作用域，并根据需要考虑锁定。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | 是 | 是 | 提供对当前解决方案的顶级访问。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager> | 是 | 是 | 使 VSPackage 能够与解决方案的生成过程进行交互。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | 是 | 是 | 请 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 改为使用 服务。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | 是 | 是 | 使 VSPackage 能够存储和检索当前解决方案的 .sln 文件中的信息。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | 否 | 是 | 提供在托管代码程序集中添加和更新引用的能力。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | 否 | 是 | 提供对 Visual Studio 2017 起始页下载服务的访问权限，以在后台线程上启动和停止下载服务。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionBuildManager> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager> | 是 | 是 | 允许 VSPackage 与解决方案的生成过程进行交互。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionObject> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution> | 是 | 是 | 改为使用 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 服务。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolutionPersistence> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence> | 是 | 是 | 允许 VSPackage 存储和检索当前解决方案的 .sln 文件中的信息。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsSQLCLRReferences> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSQLCLRReferences> | 否 | 是 | 提供在托管代码程序集中添加和更新引用的功能。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStartPageDownload> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStartPageDownload> | 否 | 是 | 提供对 Visual Studio 2017 起始页的下载服务的访问权限，以便在后台线程上启动和停止下载服务。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> | 是 | 是 | 提供对 IDE 状态栏的访问。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | 否 | 是 | 提供对方法的访问，这些方法用于创建强密钥名称和密钥文件，这些文件具有用于对托管代码程序集进行签名的密码。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | 是 | 是 | 使 VSPackage 支持以多种格式保存数据。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | 是 | 是 | 提供对 IDE 的"任务列表的访问。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextImageUtilities> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextImageUtilities> | 否 | 是 | 提供用于加载和保存文本文件的实用工具。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> | 是 | 是 | 提供对 IDE 中可用的隐藏区域的所有 (以及隐藏) 会话的访问。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTextOut> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTextOut> | 是 | 是 | 提供 Win32 函数的版本，用于将文本写入设备上下文 `TextOut` (需要 DC 句柄) 。 |
-| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | 是 | 是 | 提供对文本图像或缓冲区中文本范围列表的访问。 此服务通常在文档容器上实现，并引用当前文档。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | 否 | 是 | 使 VSPackage 能够显示一个对话框，该对话框等待其他线程 (等待后台任务) 。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | 否 | 是 | 使 VSPackage 能够启动随后由 维护的后台任务 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | 是 | 是 | 提供对 IDE 工具箱 **的访问**。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | 是 | 是 | 使 VSPackage 能够从工具箱 **项获取** 信息。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | 否 | 是 | 使 VSPackage 能够注册工具箱数据提供程序，而不会产生预加载整个工具箱 的性能 **成本**。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | 否 | 是 | 使 VSPackage 能够 **确定是否打开"** 选项"对话框并刷新所有选项页的可见性。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | 否 | 是 | 使 VSPackage 能够监视项目文件中所做的更改，并提供对源代码管理提供程序的批处理控制。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | 是 | 是 | 使 VSPackage 能够通知 IDE 对所选内容所做的更改，这些更改可能会影响当前选定的项目项。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelper> | 是 | 是 | 启用层次结构 (如项目 VSPackage) 以协调剪贴板与其他层次结构的使用。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> | 是 | 是 | 提供对 IDE 的 UI 元素（如工具窗口和文档窗口）的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStrongNameKeys> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStrongNameKeys> | 否 | 是 | 提供对方法的访问，这些方法用于创建强密钥名称和密钥文件以及用于对托管代码程序集进行签名的密码。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsStructuredFileIO> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsStructuredFileIO> | 是 | 是 | 允许 VSPackage 为以多种格式保存数据提供支持。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTaskList> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTaskList> | 是 | 是 | 提供对 IDE 的任务列表窗口的访问。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextImageUtilities> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextImageUtilities> | 否 | 是 | 提供用于加载和保存文本文件的实用程序。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager><br /><br /> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsHiddenTextManager> | 是 | 是 | 提供对 IDE 中可用的隐藏区域)  (的所有文本缓冲区以及隐藏文本会话的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTextOut> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTextOut> | 是 | 是 | 提供 Win32 函数的一个版本， `TextOut` 用于将文本写入设备上下文 (需要 DC 句柄) 。 |
+| <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextSpanSet> | <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextSpanSet> | 是 | 是 | 提供对文本图像或缓冲区中的文本范围列表的访问。 此服务通常在文档的容器上实现，引用当前文档。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadedWaitDialog> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadedWaitDialog> | 否 | 是 | 使 VSPackage 可以显示一个对话框，该对话框在 (用于等待后台任务) 的其他线程上等待。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsThreadPool> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsThreadPool> | 否 | 是 | 启用 VSPackage 以启动后台任务，然后通过维护这些任务 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolbox> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolbox> | 是 | 是 | 提供对 IDE 的 **工具箱** 的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxActiveXDataProvider> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProvider> | 是 | 是 | 允许 VSPackage 从 **工具箱** 项中获取信息。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolboxDataProviderRegistry> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolboxDataProviderRegistry> | 否 | 是 | 允许 VSPackage 注册工具箱数据提供程序，而不会产生预加载整个 **工具箱** 所需的性能成本。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsToolsOptions> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsToolsOptions> | 否 | 是 | 使 VSPackage 可以确定 " **选项** " 对话框是否已打开，并刷新 "所有选项" 页的可见性。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackProjectDocuments> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2><br /><br /> <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | 否 | 是 | 启用 VSPackage 以监视项目文件中的更改，并提供对源代码管理提供程序的批处理控制。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsTrackSelectionEx> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx> | 是 | 是 | 使 VSPackage 能够将对选定内容的更改通知 IDE，这些更改可能会影响当前选定的项目项。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIHierWinClipboardHelper> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierWinClipboardHelper> | 是 | 是 | 启用层次结构 (例如项目 VSPackage) ，以将剪贴板与其他层次结构配合使用。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> | 是 | 是 | 提供对 IDE UI 元素（如工具窗口和文档窗口）的访问。 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellDocumentWindowMgr> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellDocumentWindowMgr> | 是 | 是 | 使 VSPackage 能够基于数据流的内容还原所有窗口的位置，或将所有窗口的位置保存到流中。 很少使用。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> | 是 | 是 | 使 VSPackage 能够以多种方式打开文档并确定谁拥有哪个文档。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> | 否 | 是 | 由接口的实施者用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 来报告错误和信息性消息。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebBrowsingService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebBrowsingService> | 是 | 是 | 使 VSPackage 能够创建和控制 Web 浏览会话。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebFavorites> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebFavorites> | 是 | 是 | 允许 VSPackage 添加到用户的 **"收藏夹"** 列表。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebPreview> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebPreview> | 是 | 是 | 使 VSPackage 能够预览网页，通常在子窗口中。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | 是 | 是 | 允许 VSPackage 将 URL 添加到最近使用的 (MRU) Url 列表，并获取 MRU 列表中所有 Url 的列表。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 允许 VSPackage 获取包或包的一部分所在的窗口框架。 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供对与特定元数据文件相关联的 XML 格式文档文件的访问。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShellOpenDocument> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument> | 是 | 是 | 使 VSPackage 可以通过多种方式打开文档并确定谁拥有哪个文档。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsUpgradeLogger> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> | 否 | 是 | 由 接口的实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 者用来报告错误和信息性消息。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebBrowsingService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebBrowsingService> | 是 | 是 | 使 VSPackage 能够创建和控制Web 浏览会话。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebFavorites> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebFavorites> | 是 | 是 | 使 VSPackage 能够添加到用户的 **收藏夹列表。** |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebPreview> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebPreview> | 是 | 是 | 使 VSPackage 可以预览网页（通常在子窗口中）。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWebURLMRU> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWebURLMRU> | 是 | 是 | 使 VSPackage 能够将 URL 添加到 URL (MRU) 列表中，并获取 MRU 列表中所有 URL 的列表。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsWindowFrame> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame> | 是 | 是 | 使 VSPackage 能够获取包或包的一部分可能位于其中的窗口框架。 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.SVsXMLMemberIndexService> | <xref:Microsoft.VisualStudio.Shell.Interop.IVsXMLMemberIndexService> | 是 | 是 | 提供对与特定元数据文件关联的 XML 格式文档文件的访问权限。 |
 
 ## <a name="see-also"></a>另请参阅
 

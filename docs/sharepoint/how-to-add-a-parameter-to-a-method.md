@@ -1,6 +1,6 @@
 ---
-title: 如何：向方法添加参数 |Microsoft Docs
-description: 知道如何将参数添加到业务数据连接 (BDC) 方法，这使你可以将信息传递到方法或从方法返回信息。
+title: 如何：将参数添加到方法|Microsoft Docs
+description: 了解如何使用 BDC (方法将参数) 业务数据连接，从而可以将信息传递到方法中或从方法返回信息。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,43 +17,44 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d568d5ca2025f1467fa96387493b1e8b4ed1ec6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1023044ebcd765a411aa6edfb358f5f6191ed7028d5e8559fe020e27f7d57ade
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931690"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121332334"
 ---
 # <a name="how-to-add-a-parameter-to-a-method"></a>如何：向方法添加参数
-  使用参数将信息传递到方法或从方法返回信息。 所有方法都必须至少有一个参数。 有关如何设计参数来支持要创建的方法类型的详细信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+  使用 参数将信息传递到 方法中，或者从 方法返回信息。 所有方法都必须至少具有一个参数。 若要详细了解如何设计参数以支持要创建的方法类型，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
- 向方法添加参数时，Visual Studio 会将 Parameter 元素添加到项目中模型文件的 XML。 有关参数元素的特性的详细信息，请参阅 [参数](/previous-versions/office/developer/sharepoint-2010/ee557705(v=office.14))。
+ 向方法添加参数时，Visual Studio将 Parameter 元素添加到项目中模型文件的 XML。 有关 Parameter 元素的属性详细信息，请参阅 [Parameter](/previous-versions/office/developer/sharepoint-2010/ee557705(v=office.14))。
 
 ### <a name="to-add-a-parameter-to-a-method"></a>向方法添加参数
 
 1. 向实体添加方法。
 
-2. 在菜单栏上，选择 "**查看**  >  **其他 Windows**  >  **BDC 方法详细信息**"。
+2. 在菜单栏上，选择"**查看其他**  >  **"Windows"BDC**  >  **方法详细信息"。**
 
-     此时将打开 " **BDC 方法详细信息** " 窗口。 有关详细信息，请参阅 [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。
+     **"BDC 方法详细信息"窗口** 随即打开。 有关详细信息，请参阅 [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。
 
-3. 在 " **BDC 方法详细信息** " 窗口中，展开方法的节点，然后展开 " **参数** " 节点。
+3. 在 **"BDC 方法详细信息"** 窗口中，展开方法的节点，然后展开 **"参数"** 节点。
 
-4. 在 " **添加参数** " 列表中，选择 " **创建参数**"。
+4. 在"**添加参数"列表中**，选择"**创建参数"。**
 
-     新参数将出现在 " **参数** " 节点下。
+     新参数显示在"参数 **"节点** 下。
 
-5. 在菜单栏上，选择 "**查看**  >  **属性窗口**"。
+5. 在菜单栏上，选择"查看  >  **属性窗口"。**
 
-6. 在 " **属性** " 窗口中，将 " **名称** " 属性设置为任何有意义的名称。 例如，如果该方法将返回 customers，则可以将该方法命名为 **GetCustomers**。
+6. 在" **属性** "窗口中，将 **Name** 属性设置为任何有意义的名称。 例如，如果方法将返回客户，你可以将方法命名 **GetCustomers**。
 
-7. 在 " **BDC 方法详细信息** " 窗口中，打开为参数方向显示的列表，然后选择 " **In** **"、"输入**"、" **Out**" 或 " **Return**"。
+7. 在 **"BDC 方法详细信息**"窗口中，打开针对参数方向显示的列表，然后选择"In、InOut、Out"或"**返回"。**
 
-     有关为要创建的类型方法选择哪个方向的详细信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+     有关为要创建的类型方法选择哪个方向的信息，请参阅 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-8. 修改参数的类型描述符。 有关详细信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
+8. 修改参数的类型描述符。 有关详细信息，请参阅 [如何：定义](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)参数 的类型描述符。
 
 ## <a name="see-also"></a>另请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)
