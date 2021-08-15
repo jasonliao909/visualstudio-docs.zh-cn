@@ -10,26 +10,27 @@ ms.assetid: 814185db-24f9-417f-b3b1-7c5aabb42b45
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec5eecef40220c2cf2d4e3f1ece8eb5eb763bdeb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 0672c68167b06195883b431b6e49b96f93cb9db8b9f80b94183c2a09a7a33289
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217406"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334973"
 ---
 # <a name="walkthrough-create-a-margin-glyph"></a>演练：创建边距标志符号
 您可以使用自定义编辑器扩展自定义编辑器边距的外观。 此演练在代码注释中出现 "todo" 一词时，将自定义标志符号放置在指示器边距上。
 
 ## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio 的 SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>创建 MEF 项目
 
-1. 创建 c # VSIX 项目。  (在 " **新建项目** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX 项目**"。 ) 将解决方案命名为 `TodoGlyphTest` 。
+1. 创建 c # VSIX 项目。  (在 "**新建 Project** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX Project**"。 ) `TodoGlyphTest` 将解决方案命名为。
 
-2. 添加编辑器分类器项目项。 有关详细信息，请参阅 [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 添加编辑器分类器项目项。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 3. 删除现有的类文件。
 
@@ -134,7 +135,7 @@ ms.locfileid: "106217406"
 
 1. 生成解决方案。
 
-2. 按 **F5** 运行项目。 将启动 Visual Studio 的第二个实例。
+2. 按 **F5** 运行项目。 Visual Studio 的第二个实例。
 
 3. 确保显示指示器边距。  (单击 " **工具** " 菜单上的 " **选项**"。 在 " **文本编辑器** " 页上，确保已选择 " **指示器边距** "。 ) 
 

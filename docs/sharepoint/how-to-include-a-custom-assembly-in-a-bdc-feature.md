@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7a5bce649a0bd9411c064c463defa0946b47e81f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c45867e769f14323b10c3d42fb5bf52a9560823da1eb3b62246297e19dd69396
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913615"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121409548"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包含自定义程序集
   你的项目可以引用同一解决方案中其他项目的程序集。 但是，必须使用 " **将引用的程序集分配到 lobsystem** " 对话框将这些程序集添加到项目的功能文件中。
@@ -35,7 +36,7 @@ ms.locfileid: "99913615"
 
 2. 在 **“视图”** 菜单上，单击 **“属性窗口”** 。
 
-3. 在 " **属性** " 窗口中，选择 " **程序集** " 属性，然后单击省略号按钮 (![ASP.NET Mobile 设计器 "椭圆形](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")) 。
+3. 在 "**属性**" 窗口中，选择 "**程序集**" 属性，然后单击省略号按钮 (![ASP.NET Mobile 设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"") "。
 
      此时将显示 " **将引用的程序集分配给 lobsystem** " 对话框。
 
@@ -54,4 +55,4 @@ ms.locfileid: "99913615"
 - [如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)
-- [将业务数据 Integragte 到 SharePoint 中](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [将业务数据 Integragte 到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

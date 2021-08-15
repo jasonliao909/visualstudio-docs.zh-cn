@@ -1,6 +1,6 @@
 ---
-description: 返回此对象中包含的字节数。
-title: IEEDataStorage：： GetSize |Microsoft Docs
+description: 返回此 对象中包含的字节数。
+title: IEEDataStorage：：GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 33d232c4-1239-4abc-922b-e1bc5b908169
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 632d2adeaca976d0bb3fdfbe1b88571e337e02dd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2ae0785d7c146c1fe9ca1765165540ae6243f50c5c760c77e0598b32eddd0425
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083526"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321527"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
-返回此对象中包含的字节数。
+返回此 对象中包含的字节数。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int GetSize(
 
 ## <a name="parameters"></a>参数
 `size`\
-弄此对象中包含的字节数。
+[out]此 对象中包含的字节数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 使用工作 [方式](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) 方法检索实际数据字节。
+ 使用 [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) 方法检索实际数据字节。
 
 ## <a name="see-also"></a>另请参阅
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

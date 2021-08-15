@@ -10,14 +10,15 @@ ms.assetid: 97071846-007e-450f-95a6-f072d0f5e61e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55edea88c5983920b382672d160498b9901ba5ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 26a063fd6eac65efd5f6d1dea46b764c0594cbb85e064ecee9078599fdd9ec85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068019"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262927"
 ---
 # <a name="control-of-execution"></a>控制执行
 调试引擎 (DE) 通常会将以下事件之一作为上一个启动事件发送：

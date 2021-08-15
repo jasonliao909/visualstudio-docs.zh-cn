@@ -12,12 +12,12 @@ ms.author: lerich
 manager: Meng
 ms.workload:
 - vssdk
-ms.openlocfilehash: 213e3e71503ebea8074594bbc88a06980e3e64b4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a84647eef6fa81f55a02689b1adb584c21fd3565a22662e1e9d19b9f1bacb18f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905132"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335077"
 ---
 # <a name="walkthrough-create-an-extension-pack"></a>演练：创建扩展包
 

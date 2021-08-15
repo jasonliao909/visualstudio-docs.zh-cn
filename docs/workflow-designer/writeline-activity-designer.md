@@ -10,14 +10,15 @@ ms.assetid: 1b5f29a8-b7fd-477e-949e-2f689cae3c96
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb4806949b21a6c92548b91623e63306f2a7722
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 623623c6883146647cc8f0f3dc6c8f3fcab88289b4014c7ecf6f18b17c217e6f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875102"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243271"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活动设计器
 
@@ -37,9 +38,9 @@ ms.locfileid: "99875102"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.WriteLine> 活动的友好名称。 默认值为 WriteLine。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|False|要写入的文本。 若要设置属性，请在 " **WriteLine** " 活动设计器或属性网格中的 **文本框** 中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|False|<xref:System.IO.TextWriter> 向其写入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 默认为控制台。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.WriteLine> 活动的友好名称。 默认值为 WriteLine。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|错误|要写入的文本。 若要设置属性，请在 " **WriteLine** " 活动设计器或属性网格中的 **文本框** 中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|错误|<xref:System.IO.TextWriter> 向其写入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 默认为控制台。|
 
 ## <a name="see-also"></a>另请参阅
 

@@ -11,17 +11,18 @@ ms.assetid: 9e5e681b-ad49-4c62-bd95-4afa11d61a57
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63ce34fc9eddec84326982cf7d30fda919817040
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 453607a93b02c68695f61d5835cdc5f20d931a3059098e934efe2f0859e63d1f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077923"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323724"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 创建容器字段的枚举器。

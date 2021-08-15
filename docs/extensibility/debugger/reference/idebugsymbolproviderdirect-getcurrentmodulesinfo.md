@@ -10,17 +10,18 @@ ms.assetid: b3b45ed2-ea4e-4389-b78a-11fc9796a6c1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d59c3bd88c82d6f7bacc7ce66c33b36a137d4e8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5b24c93e139097efe6dc12c5ddfe14c961d8d7fa91064e7cc85a4c351dded181
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081342"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415736"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesinfo"></a>IDebugSymbolProviderDirect::GetCurrentModulesInfo
 检索有关符号组中的模块的信息。

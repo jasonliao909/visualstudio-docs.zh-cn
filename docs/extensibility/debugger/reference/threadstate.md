@@ -11,17 +11,18 @@ ms.assetid: 62efdd7c-25b1-4fd3-9d06-ac1830a418a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 513e90e649d71a4fb7d5bc220eb9752925151d9f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fa21c56f297d54e64a81a76faac0b8dfbd557e20e3c3c33fc359cd6153e4af87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070812"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338119"
 ---
 # <a name="threadstate"></a>THREADSTATE
 指定线程的状态。

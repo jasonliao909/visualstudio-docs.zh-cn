@@ -11,14 +11,15 @@ ms.assetid: 7308ea8f-a42c-47e5-954e-7dee933dce7a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0c97108eaba426a4def4c1052d3adc7348eb88b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 5eb966ef49d4de7533b9022c37113b05a46fa42b7e985a36086215a445e7b406
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898482"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121238419"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 IDE (集成) 使用全局选择上下文对象来确定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 应在 IDE 中显示的内容。 IDE 中的每个窗口都可以将其自己的选择上下文对象推送到全局选择上下文。 当窗口具有焦点时，IDE 使用窗口中的值更新全局选择上下文。 有关详细信息，请参阅 [向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。
@@ -31,7 +32,7 @@ IDE (集成) 使用全局选择上下文对象来确定 [!INCLUDE[vsprvs](../../
 
 - 更新层次结构中的当前活动文件。
 
-- 监视对某些类型的元素的更改。 例如，如果 VSPackage 使用特殊的"属性"窗口，可以在活动的"属性"窗口中监视更改，并按需要重启。
+- 监视对某些类型的元素的更改。 例如，如果 VSPackage 使用特殊的"属性"窗口，可以在活动"属性"窗口中监视更改，并按需要重启。
 
   以下序列显示选择跟踪的典型过程。
 

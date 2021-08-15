@@ -1,6 +1,6 @@
 ---
 description: 获取线程的名称。
-title: IDebugThread2：： GetName |Microsoft Docs
+title: IDebugThread2：：GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: eec54b8f-4a0e-4919-b0f9-81d4bd1e0b6f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d38c2cb5b56893c01652316aa54dbd14382ae9c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6a7f3d867b48fea5ed32679b1584f60d88ceb1a5b2c7a6ece1cbadf1d1b48f50
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081173"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338405"
 ---
 # <a name="idebugthread2getname"></a>IDebugThread2::GetName
 获取线程的名称。
@@ -42,13 +43,13 @@ int GetName (
 
 ## <a name="parameters"></a>参数
 `pbstrName`\
-弄返回线程的名称。
+[out]返回线程的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 检索到的名称始终是一个可以显示的名称，此名称描述了该线程。 线程名称可能派生自支持命名线程的运行时结构，也可能是从调试引擎派生的名称。 或者，可以通过调用 [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) 方法来设置线程的名称。
+ 检索到的名称始终是可显示的名称，此名称描述线程。 线程名称可能派生自支持命名线程的运行时体系结构，或者可能是派生自调试引擎的名称。 或者，可以通过调用 [SetThreadName](../../../extensibility/debugger/reference/idebugthread2-setthreadname.md) 方法来设置线程的名称。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

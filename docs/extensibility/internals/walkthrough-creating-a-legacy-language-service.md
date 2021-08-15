@@ -10,23 +10,24 @@ ms.assetid: 6a5dd2c2-261b-4efd-a3f4-8fb90b73dc82
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42c9f2d2a91b90cab31dd225d0ace081988135fb
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2aafa7c3040534c075d5911d36dd2486c60122955dc51f28e71960b43513fff3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106213636"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121321280"
 ---
 # <a name="walkthrough-creating-a-legacy-language-service"></a>演练：创建旧版语言服务
 使用托管包框架 (MPF) 语言类实现中的语言服务 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 非常简单。 你需要一个 VSPackage 来托管语言服务、语言服务本身和语言分析器。
 
 ## <a name="prerequisites"></a>先决条件
- 要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅 [Visual STUDIO SDK](../../extensibility/visual-studio-sdk.md)。
+ 要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅 [Visual Studio SDK](../../extensibility/visual-studio-sdk.md)。
 
 ## <a name="locations-for-the-visual-studio-package-project-template"></a>Visual Studio 包项目模板的位置
- 可以在 " **新建项目** " 对话框中的三个不同模板位置找到 Visual Studio 包项目模板：
+ 可以在 "**新建 Project** " 对话框中的三个不同模板位置找到 Visual Studio 包 Project 模板：
 
 1. 在“Visual Basic 扩展性”之下。 项目的默认语言为 Visual Basic。
 

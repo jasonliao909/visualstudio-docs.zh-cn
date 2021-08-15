@@ -1,5 +1,5 @@
 ---
-description: 描述字符串数组的结构。
+description: 描述字符串数组的 结构。
 title: BSTR_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 48da37f7-a237-48a9-9ff9-389c1a00862c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5af4c0efe53625063d4bb714f3d323bef28c5954
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a84ec868a7bd2aaa6cd1326e08b0b8a869b7311672cbfeca47e584c723a95a68
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096611"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262680"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
-描述字符串数组的结构。
+描述字符串数组的 结构。
 
 ## <a name="syntax"></a>语法
 
@@ -44,22 +45,22 @@ struct BSTR_ARRAY {
 
 ## <a name="members"></a>成员
 `dwCount`\
-数组中的字符串数 `Members` 。
+数组中的字符串 `Members` 数。
 
 `Members`\
 字符串数组。
 
 ## <a name="remarks"></a>备注
-此结构是从 [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) 方法返回的。
+此结构从 [EnumPersistedPorts 方法](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md) 返回。
 
- [仅限 c + +]必须使用释放每个单独的字符串 `SysFreeString` ，且 `Members` 必须使用释放数组 `CoTaskMemFree` 。
+ [仅 C++]必须使用 释放每个单个字符串 `SysFreeString` ， `Members` 并且必须使用 释放数组 `CoTaskMemFree` 。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

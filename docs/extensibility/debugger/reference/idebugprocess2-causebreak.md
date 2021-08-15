@@ -11,17 +11,18 @@ ms.assetid: efda8865-2319-4d53-90bf-6d9d74cd5195
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c79fbc17f02a49a1bbab416473bb99e201c24526
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d2ec4939575e1c31ccbc5114ec3c3676d34a7c74e0b0510cd80218df97211e5e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071670"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416469"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 请求运行此进程中的代码的下一个程序停止并发送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件对象。

@@ -10,14 +10,15 @@ ms.assetid: 18d82199-b2d4-47a9-924f-ab64faf60ca1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 64a7be8c02588e9df5904f37b0a20363a7e77cc2
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 24919aea1751ef9ab7f867d5bc59c70a00a5f66e5386bdc4d8cce042d5bb70bc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905652"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417857"
 ---
 # <a name="debug-session"></a>调试会话
 就调试器体系结构而言，会话 *：*

@@ -10,14 +10,15 @@ ms.assetid: 0acf9a13-caf5-4bb4-ba22-ec37d2b7267a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 971d6bd028315ae4a8b6f3a88164c97c6f95712b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ac03ddce895b18c95d74fd41a0ab2692fe92ccd750b95611fda0caf950384b8b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961321"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121407989"
 ---
 # <a name="existsincollectiont-activity-designer"></a>ExistsInCollection\<T> 活动设计器
 
@@ -39,11 +40,11 @@ ms.locfileid: "99961321"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.ExistsInCollection%601> 活动的友好名称。 默认值为 ExistsInCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|True|要在集合中查找的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|True|要在其中检查项是否存在的集合。 此集合的类型为 **ICollection<TypeArgument \> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
-|*TypeArgument*|True|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请在属性网格的组合框中更改 " *TypeArgument* " 的值。|
-|<xref:System.Activities.Activity%601.Result%2A>|False|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.ExistsInCollection%601> 活动的友好名称。 默认值为 ExistsInCollection<Int32 \> 。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Item%2A>|正确|要在集合中查找的项 \<T> 。 此项的类型为 *T*，类型为 *TypeArgument*。 若要指定项，请在属性网格中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.ExistsInCollection%601.Collection%2A>|正确|要在其中检查项是否存在的集合。 此集合的类型为 **ICollection<TypeArgument \> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
+|*TypeArgument*|正确|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请在属性网格的组合框中更改 " *TypeArgument* " 的值。|
+|<xref:System.Activities.Activity%601.Result%2A>|错误|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|
 
 ## <a name="see-also"></a>另请参阅
 

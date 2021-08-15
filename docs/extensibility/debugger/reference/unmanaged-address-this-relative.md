@@ -11,17 +11,18 @@ ms.assetid: e6a91ace-2d47-4ff9-aefb-8d8b68eab0b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1fbe63edeed68bc50aae0062f171f66c8a9203ed
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4f345b94ca9d4bfedef6601273bd74225711f9ef2582abe70eb380ac6cb0328b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070669"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414930"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
 此结构表示与 `this` Visual Basic) 中 (的指针相关的地址 `Me` 。

@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 87f5b0cf86178b88b1611f4b0ce8a4bbacde780e
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 8dd983f9a7929298dc6f5e3ef549027d9ab15ba4cbe180483a617712f3e30af6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216795"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121315182"
 ---
 # <a name="how-to-add-a-specific-finder-method"></a>如何：添加特定的 Finder 方法
   您可以通过创建 *特定的 Finder* 方法返回单个实体实例。 当用户选择业务数据 web 部件或外部列表中的实体时， (BDC) 服务的业务数据连接将执行特定的 Finder 方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -33,9 +34,9 @@ ms.locfileid: "106216795"
 
 1. 在 **BDC 设计器** 中选择一个实体。
 
-    有关如何在 Visual Studio 中将实体添加到 **BDC 设计器** 的信息，请参阅 [如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
+    有关如何将实体添加到 Visual Studio 中的 **BDC 设计器** 的信息，请参阅 [如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
-2. 在菜单栏上，选择 "**查看**  >  **其他窗口**"、" **BDC 方法详细信息**"。
+2. 在菜单栏上，选择 "**查看**  >  **其他 Windows**"、" **BDC 方法详细信息**"。
 
     此时将打开 " **BDC 方法详细信息** " 窗口。 有关该窗口的详细信息，请参阅 [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)。
 
@@ -55,7 +56,7 @@ ms.locfileid: "106216795"
 
      有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
-4. 打开 Visual Studio 的 " **属性** " 窗口。
+4. 打开 Visual Studio **属性**"窗口。
 
 5. 将返回参数的类型描述符配置为实体类型描述符。 有关如何创建实体类型描述符的信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 

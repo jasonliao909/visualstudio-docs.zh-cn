@@ -11,14 +11,15 @@ ms.assetid: 73c58fe3-d53c-4f4e-b025-29567c6cbb7c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ad5bfdf000232ef92a9e9a27b12152df36a4335
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 861bca1bc4a0f43f8e5165ae4fdf172fc858dfaf575683a921f52f3428e9c0d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900819"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414670"
 ---
 # <a name="icon-element"></a>Icon 元素
 Icon 标记的 guid 属性是定义的位图的 guid。 `id`属性选择位图条中的槽。 此元素为可选元素。 如果未包含此元素，则 **隐含 guidOfficeIcon：msotcidNoIcon** 的值。
@@ -34,20 +35,20 @@ Icon 标记的 guid 属性是定义的位图的 guid。 `id`属性选择位图�
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
 |GUID|必需。 定义的位图的 guid。|
 |id|必需。 选择位图条中的槽。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |无。|无。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[Buttons 元素](../extensibility/buttons-element.md)||
 

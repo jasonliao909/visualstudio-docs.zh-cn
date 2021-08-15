@@ -13,14 +13,15 @@ ms.assetid: d8fd9475-ac9b-4085-b5a3-b0c807922cac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f5c217e8d043d0363b66a63c84c78829f640065
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b7358c266b40d900670c00cd2f24cb91f20b7b3c5e454f84559474cd5d554be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860576"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405625"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 

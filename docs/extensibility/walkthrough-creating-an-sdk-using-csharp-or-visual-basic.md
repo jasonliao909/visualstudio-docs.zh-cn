@@ -8,17 +8,18 @@ ms.assetid: ef96a249-5eef-402a-a8d5-d74cb49239bd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 5b44566e4a8df323af6132128a8881b54c6f493f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: ea974e4ff65ccf027a28db9ceb35664a6d62a64559789c0bf3d865986d0831fb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217289"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121320201"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：使用 c # 或 Visual Basic 创建 SDK
 在本演练中，你将学习如何使用 Visual c # 创建一个简单的数学库 SDK，然后将 SDK 打包为 Visual Studio 扩展 (VSIX) 。 你将完成以下过程：
@@ -29,13 +30,13 @@ ms.locfileid: "106217289"
 - [创建使用类库的示例应用程序](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md#createSample)
 
 ## <a name="prerequisites"></a>先决条件
- 要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅 [Visual STUDIO SDK](../extensibility/visual-studio-sdk.md)。
+ 要按照本演练的步骤操作，必须安装 Visual Studio SDK。 有关详细信息，请参阅 [Visual Studio SDK](../extensibility/visual-studio-sdk.md)。
 
-## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a> 创建 SimpleMath Windows 运行时组件
+## <a name="to-create-the-simplemath-windows-runtime-component"></a><a name="createClassLibrary"></a>创建 SimpleMath Windows 运行时组件
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，选择 " **Windows 应用商店** " 节点，然后选择 " **Windows 运行时组件** " 模板。
+2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，选择 " **Windows 存储**" 节点，然后选择 " **Windows 运行时组件**" 模板。
 
 3. 在 " **名称** " 框中，指定 **SimpleMath**，然后选择 " **确定"** 按钮。
 
@@ -61,9 +62,9 @@ ms.locfileid: "106217289"
 
 ## <a name="to-create-the-simplemathvsix-extension-project"></a><a name="createVSIX"></a> 创建 SimpleMathVSIX 扩展项目
 
-1. 在 **解决方案 "SimpleMath"** 节点的快捷菜单上，选择 "**添加**  >  **新项目**"。
+1. 在 **解决方案 "SimpleMath"** 节点的快捷菜单上，选择 "**添加**  >  **新 Project**"。
 
-2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，选择 " **扩展性** " 节点，然后选择 " **VSIX 项目** " 模板。
+2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，选择 "**扩展性**" 节点，然后选择 " **VSIX Project** 模板"。
 
 3. 在 " **名称** " 框中，指定 **SimpleMathVSIX**，然后选择 " **确定"** 按钮。
 
@@ -135,7 +136,7 @@ ms.locfileid: "106217289"
 
 13. 在 **解决方案资源管理器** 中，打开 **SimpleMathVSIX** 项目的快捷菜单，选择 " **添加**"，然后选择 " **新建文件夹**"。
 
-14. 将文件夹重命名为 `references` 。
+14. 将该文件夹重命名为 `references`。
 
 15. 打开 " **引用** " 文件夹的快捷菜单，选择 " **添加**"，然后选择 " **新建文件夹**"。
 
@@ -154,9 +155,9 @@ ms.locfileid: "106217289"
 
 19. 在 **文件资源管理器** 中，导航到 *bin\Release* 文件夹，打开 **SimpleMath** 文件的快捷菜单，然后选择 " **复制**"。
 
-20. 在 **解决方案资源管理器** 中，将该文件粘贴到 **SimpleMathVSIX** 项目的 *references\commonconfiguration\neutral* 文件夹中。
+20. 在 **解决方案资源管理器** 中，将该文件粘贴到 **SimpleMathVSIX** 项目中的 *references\commonconfiguration\neutral* 文件夹。
 
-21. 重复上一步，将 **SimpleMath** 文件粘贴到 **SimpleMathVSIX** 项目中的 *redist\commonconfiguration\neutral* 文件夹。
+21. 重复上一步，将 **SimpleMath** 文件粘贴到 **SimpleMathVSIX** 项目中的 *redist\commonconfiguration\neutral* 文件夹中。
 
 22. 在 **解决方案资源管理器** 中，选择 " **SimpleMath**"。
 
@@ -174,19 +175,19 @@ ms.locfileid: "106217289"
 
 29. 在 **文件资源管理器** 中，导航到 *\bin\Release* 文件夹，然后运行 *SimpleMathVSIX* 安装。
 
-30. 选择 " **安装** " 按钮，等待安装完成，然后重启 Visual Studio。
+30. 选择 "**安装**" 按钮，等待安装完成，然后重新启动 Visual Studio。
 
 ## <a name="to-create-a-sample-app-that-uses-the-class-library"></a><a name="createSample"></a> 创建使用类库的示例应用程序
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，然后选择 " **Windows 应用商店** " 节点。
+2. 在模板列表中，展开 " **Visual c #** " 或 " **Visual Basic**"，然后选择 " **Windows 存储**" 节点。
 
 3. 选择 " **空白应用** " 模板，将项目命名为 " **ArithmeticUI**"，然后选择 **"确定"** 按钮。
 
 4. 在 **解决方案资源管理器** 中，打开 **ArithmeticUI** 项目的快捷菜单，然后选择 "**添加**  >  **引用**"。
 
-5. 在引用类型列表中，展开 " **Windows**"，然后选择 " **扩展**"。
+5. 在引用类型列表中，展开 " **Windows**"，然后选择 "**扩展**"。
 
 6. 在详细信息窗格中，选择 " **WinRT 数学库** " 扩展。
 

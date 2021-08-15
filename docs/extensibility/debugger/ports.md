@@ -1,6 +1,6 @@
 ---
 title: 端口 |Microsoft Docs
-description: 本文介绍 Visual Studio 的调试器结构中的端口定义和角色。
+description: 本文介绍 Visual Studio 中调试器体系结构的端口定义和角色。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 1d7f3aa7-7eff-4cab-bc53-0a566b1a9363
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e53b2b804433f7e9450f34dac5b21e45710cd71c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: d8b8da73935d4d170416c2717f5d64ebfe949640d5f9d6b4b2bc4bf113438966
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900767"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262940"
 ---
 # <a name="ports"></a>端口
 在调试程序体系结构中， *端口*：
@@ -31,7 +32,7 @@ ms.locfileid: "112900767"
 
 - 由 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 接口表示，该接口通过将 [IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md) 参数传递给 [AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)来创建。
 
-  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供一个默认端口，用于处理所有基于 Windows 的进程，包括本机和托管。 必须为不是基于 Windows 的外部设备的连接设置自定义端口。 若要提供此类自定义端口，还必须设置自定义端口供应商。
+  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]提供一个默认端口，用于处理所有基于 Windows 的进程，包括本机和托管。 对于与不基于 Windows 的外部设备的连接，必须设置自定义端口。 若要提供此类自定义端口，还必须设置自定义端口供应商。
 
 ## <a name="see-also"></a>另请参阅
 - [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)

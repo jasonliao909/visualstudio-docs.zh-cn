@@ -1,6 +1,6 @@
 ---
 title: 将Visual Studio命令添加到起始页|Microsoft Docs
-description: 了解在 Visual Studio 自定义起始页上将命令绑定到 XAML 对象的不同Visual Studio。
+description: 了解在自定义起始Visual Studio中将命令绑定到 XAML 对象的不同Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,19 +11,20 @@ ms.assetid: a8e2765c-cfb5-47b5-a414-6e48b434e0c2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 0bf0f9a3db21dd93b1a497731bca9142a4377acc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 9ab2fc534b2ef986b15102667bd23e108ea4c69256fe64516b0df08595b1157c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901508"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403497"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>将Visual Studio添加到起始页
 
-创建自定义起始页时，可以添加Visual Studio命令。 本文档讨论将命令绑定到起始Visual Studio XAML 对象的不同方法。
+创建自定义起始页时，可以将Visual Studio添加到该起始页。 本文档讨论将命令绑定到起始Visual Studio XAML 对象的不同方法。
 
 有关 XAML 中的命令详细信息，请参阅 [命令概述](/dotnet/framework/wpf/advanced/commanding-overview)
 
@@ -42,7 +43,7 @@ xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visual
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
 ```
 
-通过将 控件的 属性设置为 Visual Studio，可以使用 别名将命令绑定到页面上 `vscom:` 的 XAML <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> 控件 `vscom:VSCommands.ExecuteCommand` 。 然后，可以将 <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> 属性设置为要执行的命令的名称，如以下示例所示。
+通过将 控件的 属性Visual Studio，可以使用 别名将命令绑定到页面上 `vscom:` 的 XAML <xref:System.Windows.Controls.Primitives.ButtonBase.Command%2A> 控件 `vscom:VSCommands.ExecuteCommand` 。 然后，可以将 <xref:System.Windows.Controls.Primitives.ButtonBase.CommandParameter%2A> 属性设置为要执行的命令的名称，如以下示例所示。
 
 ```xml
 <Button Name="btnNewProj" Content="New Project"
@@ -54,7 +55,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 > [!NOTE]
 > 所有命令的开头都需要别名（即 `x:` XAML 架构）。
 
- 可以将 属性的值设置为任何可以从"命令"窗口 `Command` **访问的命令** 。 有关可用命令的列表，请参阅Visual Studio [别名](../ide/reference/visual-studio-command-aliases.md)。
+ 可以将 属性的值设置为任何可以从"命令"窗口 `Command` **访问的命令** 。 有关可用命令的列表，请参阅Visual Studio[别名](../ide/reference/visual-studio-command-aliases.md)。
 
  如果要添加的命令需要其他参数，可以将其添加到 属性的值 `CommandParameter` 。 使用空格将参数与命令分开，如以下示例所示。
 
@@ -83,7 +84,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     xmlns:vsc="clr-namespace:WebUserControl;assembly=WebUserControl"
     ```
 
-3. 通过设置 XAML 对象的 属性调用 命令 `Command` ，如以下示例所示。
+3. 通过设置 XAML 对象的 属性来调用 命令 `Command` ，如以下示例所示。
 
      Xaml
 

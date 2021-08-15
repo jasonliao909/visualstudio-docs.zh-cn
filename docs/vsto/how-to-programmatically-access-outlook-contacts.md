@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 08e9d9ea69985a26a9688152f5c3b028caf75300
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: fd0ad5305b973943949115b621ef6d9c55dc95ad4b0573e37b4becb21fb55534
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828899"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121408781"
 ---
 # <a name="how-to-programmatically-access-outlook-contacts"></a>如何：以编程方式访问 Outlook 联系人
   此示例查找姓氏中包含指定搜索字符串的所有联系人。
@@ -36,7 +37,7 @@ ms.locfileid: "107828899"
 
 - 姓氏中包含字符串 "**Na"** 的联系人 (例如，Tzipi Butnaru) 在 **Contacts** 文件夹中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
 - [如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)

@@ -11,14 +11,15 @@ ms.assetid: 704e932d-2325-410e-89c4-ce88c6ec19da
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f24921ec169c458a1b0b5ab1638c1379efd09da1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a975190aebbb26ac77614e1fc0e0d7a358bda3440da0b5f8bcdb7562390902e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083357"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121415684"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此接口表示字节数组。
@@ -30,7 +31,7 @@ IEEDataStorage : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
- 表达式计算器 (EE) 实现此接口，以表示由类型可视化工具使用的字节数组 (通过 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 接口) 来检索和更改数据。 EE 通常实现此接口以支持外部类型可视化工具。
+ 表达式计算器 (企业版) 实现此接口，以表示由类型可视化工具用来通过[IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)接口) 检索和更改数据的 (字节数组。 企业版通常实现此接口以支持外部类型可视化工具。
 
 ## <a name="notes-for-callers"></a>调用方说明
  接口上的方法 `IPropertyProxyEESide` 都返回此接口。 调用 [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 以获取 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 接口。 在[IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)以获取[IPropertyProxyProvider](../../../extensibility/debugger/reference/ipropertyproxyprovider.md)接口。

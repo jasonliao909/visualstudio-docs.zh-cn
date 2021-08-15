@@ -10,14 +10,15 @@ ms.assetid: fa1ce513-eb7d-42bc-b6e8-cb2433d051d5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88e66ed3b0a5434f4d875bf941e3eeffb8adc092
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c62658c14754a317554fd7e06960cd2f87ff3f2a43bc98811a7479b98700bd3c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091183"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121414969"
 ---
 # <a name="document-lock-holder-management"></a>文档锁持有者管理
 

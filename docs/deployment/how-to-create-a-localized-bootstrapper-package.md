@@ -1,6 +1,6 @@
 ---
-title: 创建本地化的引导程序包 |Microsoft Docs
-description: 了解如何通过为每个区域设置创建另外两个文件，在 ClickOnce 中创建引导程序包的本地化版本。
+title: 创建本地化引导程序包|Microsoft Docs
+description: 了解如何通过为每个区域设置再创建两个文件，在 ClickOnce 创建引导程序包的本地化版本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,25 +12,26 @@ ms.assetid: 66a1bc7e-6540-4164-963d-557196a69d8a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a9d1fc91dcb385a9250dde3adb47c0d9553147f
-ms.sourcegitcommit: 6aa55db5e1fe19d4d17886e0bfe140dbd186f8ba
+ms.openlocfilehash: 460a9cccef237de8632b080140c1e792c19faeac6ab8db177237247a02580b5a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111877710"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121324491"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
-创建引导程序包后，您可以通过为每个区域设置创建两个文件来创建每个区域设置的本地化版本的引导程序包：软件许可条款文件 (例如 *eula*) 和包清单 (*package.xml*) 。
+创建引导程序包后，可以通过为每个区域设置再创建两个文件来创建引导程序包的本地化版本：软件许可条款文件 (例如 *eula.rtf*) 和包清单 (package.xml *) 。*
 
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。
 
-1. 在 *\Program Files (x86) \Microsoft \\ \<BootstrapperPackageName> SDKs\ClickOnce Bootstrapper\Packages* 中创建一个以区域设置名称命名的文件夹。
+1. 在 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> 中创建一个名为 的文件夹*。
 
 2. 创建包含引导程序包的软件许可条款的文件并将其放入新的文件夹中。
 
-3. 创建名为 *package.xml* 的包清单，更新字符串和区域性，然后将该文件放入新文件夹。 如果已使用目标语言创建 Visual Studio 的引导程序，则可以复制 Visual Studio *package.xml* 文件，并在此步骤中修改它。
+3. 创建名为package.xml *的包* 清单，更新字符串和区域性，将文件放在新文件夹中。 如果已在目标语言中创建 Visual Studio引导程序，可以复制Visual Studiopackage.xml *文件，* 并在此步骤中对其进行修改。
 
 > [!NOTE]
 > 如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序。
@@ -41,9 +42,9 @@ ms.locfileid: "111877710"
 
 1. 创建以区域设置名称命名的文件夹。
 
-     在32位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 文件夹中创建文件夹。
+     在 32 位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 文件夹中创建 文件夹。
 
-     在64位计算机上，在 \Program 文件中创建文件夹 *(x86) \microsoft \\ \<BootstrapperPackageName> \\ SDKs\ClickOnce Bootstrapper\Packages* 文件夹。
+     在 64 位计算机上，在 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\* 文件夹中创建 文件夹。
 
      下表显示可以用来匹配区域设置的文件夹名称。
 
@@ -72,28 +73,28 @@ ms.locfileid: "111877710"
 
 5. 更改 `<String Name="Culture">` 值以匹配文件夹名称。
 
-6. 保存 *package.xml* 文件。
+6. 保存package.xml *文件* 。
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>为用法语本地化的 .NET Framework 3.5 Service Pack 1 创建引导程序包
 
 1. 创建名为 fr 的文件夹。 该文件夹名称必须与区域设置名称匹配。
 
-     在32位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
+     在 32 位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
 
-     在64位计算机上，在 \Program 文件中创建文件夹 *(x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹。
+     在 64 位计算机上，在 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建 文件夹。
 
-2. 将软件许可条款的本地化版本置于 *fr* 文件夹中。
+2. 将软件许可条款的本地化版本放入 *fr* 文件夹。
 
-3. 将 *(x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 文件中的 \Program 文件复制到 *fr* 文件夹，然后在 XML 设计器中打开该文件。
+3. 将 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 文件复制到 *fr* 文件夹，然后打开 XML 设计器中的 文件。
 
 4. 更新包清单的 `<Strings>` 部分，以便用法语表示错误字符串。
 
-5. 将 `<String Name="Culture">` 值更改为 *fr*。
+5. 将值 `<String Name="Culture">` 更改为 *fr*。
 
-6. 保存 *package.xml* 文件。
+6. 保存package.xml *文件* 。
 
 >[!NOTE]
-> 从 Visual Studio 2019 Update 7 版本引导程序包开始，还会在路径 *<VS Install Path> \MSBuild\Microsoft\VisualStudio\BootstrapperPackages* 下发现。
+> 从 2019 Visual Studio 2019 Update 7 版本引导程序包开始，还会在 *<VS Install Path> 路径 \MSBuild\Microsoft\VisualStudio\BootstrapperPackages* 下发现。
 
 ## <a name="see-also"></a>另请参阅
 - [创建引导程序包](../deployment/creating-bootstrapper-packages.md)

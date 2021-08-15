@@ -11,17 +11,18 @@ ms.assetid: fc0e5370-1b4f-4867-837f-0d63c4b9dd09
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40047dbdb35ad5958e923bb9a3ec18faa0d69be6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 21acc912a391f7fcc46a568df95be23a3e44c7d7e54ab8d5f77af7aecda5d283
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075466"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338249"
 ---
 # <a name="metadata_address_method"></a>METADATA_ADDRESS_METHOD
 此结构表示类的方法的地址。
@@ -48,23 +49,23 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  方法的 ID。
 
- [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
+ [C++] `_mdToken` 是 `typedef` 32 位 的 `int` 。
 
  `dwOffset`\
- 从类开始，到此方法的偏移量 (可以表示 vtable) 的偏移量。
+ 从 类开始到此方法的偏移量 (表示 vtable 对象中的偏移) 。
 
  `dwVersion`\
- 此值 (方法的版本对符号提供程序) 唯一。
+ 此方法的版本 (此值对于符号提供程序属性) 。
 
 ## <a name="remarks"></a>备注
- 当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_METHOD` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+ 当 结构的 字段[设置为](../../../extensibility/debugger/reference/debug-address-union.md)从 ADDRESS_KIND 枚举值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的 `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` 一) 。 [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>要求
- 标头： sh。h
+ 标头：sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

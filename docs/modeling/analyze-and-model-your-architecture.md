@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 542b74e7d3bb73847303fa4215651eea7e110e91
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: eb6297ae0d39c5507168ee84aa0fc3c60c0d7386e936b37aaa3be6704c48afd3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384871"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411303"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 

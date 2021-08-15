@@ -28,14 +28,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 08fa0ff028140ebad421dd43fdfa53cc36b77804
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0850112c2e5c7e670c776920613c73916c19b2707d2840f4dc21579d03ef99f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387484"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121257922"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 
@@ -61,7 +62,7 @@ ms.locfileid: "112387484"
 
   请参阅：
 
-- [视频：使用代码图调试器集成进行可视化调试 (第 9 频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
+- [视频：使用代码图调试器集成进行可视调试 (第 9 频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [映射调用堆栈](#MapStack)
 
@@ -174,7 +175,7 @@ ms.locfileid: "112387484"
 
 - **我能否与他人共享此图？**
 
-   可以导出地图、将其发送给其他人（如果有 Microsoft Outlook）或将其保存到解决方案，以便将其签入源代码管理。
+   可以导出地图、将其发送给其他人（如果有 Microsoft Outlook，或将其保存到解决方案中，以便将其签入源代码管理。
 
    ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png)
 
@@ -186,7 +187,7 @@ ms.locfileid: "112387484"
 
 - **项图标和箭头代表什么？**
 
-   若要获取有关项的详细信息，请移动鼠标指针并查看该项的工具提示。 还可以查看图例 **，** 了解每个图标的含义。
+   若要获取有关项的详细信息，请移动鼠标指针并查看该项的工具提示。 还可以查看图例 **，了解每个** 图标的含义。
 
    ![调用堆栈代码图上各图标的含义](../debugger/media/debuggermap_showlegend.png)
 

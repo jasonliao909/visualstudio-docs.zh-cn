@@ -1,7 +1,7 @@
 ---
 title: "\"代码度量\" 窗口"
 ms.date: 12/12/2017
-description: 了解如何查看、筛选、重新排列和导出 Visual Studio code 指标分析数据。 请参阅如何基于代码度量结果创建工作项。
+description: 了解如何查看、筛选、重新排列和导出 Visual Studio 代码度量分析数据。 请参阅如何基于代码度量结果创建工作项。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 f1_keywords:
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: c02f5a3b5175be4517a51a6dc477d6e59b38a762
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d68f8b43e675aa3e07b392ca8e0dfa77232245b0d8e652ee6570cd3869350e5c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859562"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405378"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用 "代码度量结果" 窗口
 
@@ -32,7 +33,7 @@ ms.locfileid: "99859562"
 
 您可以使用以下菜单序列之一显示 "代码度量结果" 窗口：
 
-- 在 "**分析**" 菜单上，选择 " **Windows**  >  **代码度量值结果**"。
+- 在 "**分析**" 菜单上，选择 " **Windows**  >  **代码度量结果**"。
 
 - 在 "**视图**" 菜单上，选择 "**其他 Windows**  >  **代码度量值结果**"。
 
@@ -80,13 +81,13 @@ ms.locfileid: "99859562"
 
 ## <a name="copy-data-to-the-clipboard-or-excel"></a>将数据复制到剪贴板或 Excel
 
-对于每个数据列的名称和值，你可以选择并将所选的代码度量数据行复制到剪贴板，作为文本字符串。 还可以单击 " **在 Microsoft excel 中打开所选内容** " 将所有代码度量结果导出到 Excel 电子表格。
+对于每个数据列的名称和值，你可以选择并将所选的代码度量数据行复制到剪贴板，作为文本字符串。 还可以单击 " **Microsoft Excel 中的" 打开选择**"将所有代码度量结果导出到 Excel 电子表格。
 
 ## <a name="create-a-work-item-based-on-code-metric-results"></a>基于代码度量结果创建工作项
 
 你可以创建基于 "**代码度量结果**" 窗口中的结果的 [Azure Boards](/azure/devops/boards/index?view=vsts&preserve-view=true)工作项。 创建工作项后，Visual Studio 会自动在 "**历史记录**" 选项卡下的 "**标题**" 字段和代码度量数据中输入一个标题。
 
-有关 Azure Boards 工作项的详细信息，请参阅 [工作项](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
+有关 Azure Boards 工作项的详细信息，请参阅[工作项](/azure/devops/boards/work-items/index?view=vsts&preserve-view=true)。
 
 ### <a name="to-create-a-work-item-based-on-a-result"></a>基于结果创建工作项
 

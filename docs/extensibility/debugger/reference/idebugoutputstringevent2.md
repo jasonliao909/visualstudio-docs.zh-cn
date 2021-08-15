@@ -1,5 +1,5 @@
 ---
-description: 此接口由调试引擎 (DE) 发送到会话调试管理器 (SDM) 以输出字符串。
+description: 此接口由调试引擎 de (DE) 发送到会话调试管理器 (SDM) 输出字符串。
 title: IDebugOutputStringEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 86596fd1-cecc-4813-8add-dc3d70068f9b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4576914ada9a575569ce09c120dbbd9bc11fdfa9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6480b1018726d37d4bd51af5d3c4d66b8b42a9a56f04aceb530518876bd078a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084644"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121307136"
 ---
 # <a name="idebugoutputstringevent2"></a>IDebugOutputStringEvent2
-此接口由调试引擎 (DE) 发送到会话调试管理器 (SDM) 以输出字符串。
+此接口由调试引擎 de (DE) 发送到会话调试管理器 (SDM) 输出字符串。
 
 ## <a name="syntax"></a>语法
 
@@ -29,32 +30,32 @@ ms.locfileid: "105084644"
 IDebugOutputStringEvent2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
- DE 实现此接口以将字符串发送到 IDE 的 " **输出** " 窗口。 必须在与此接口相同的对象上实现 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 接口。 SDM 使用 [QueryInterface](/cpp/atl/queryinterface) 访问 `IDebugEvent2` 接口。
+## <a name="notes-for-implementers"></a>实现者说明
+ DE 实现此接口，以将字符串发送到 IDE 的 **"输出** "窗口。 必须在与此接口相同的对象上实现 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 接口。 SDM 使用 [QueryInterface](/cpp/atl/queryinterface) 访问 `IDebugEvent2` 接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
- DE 创建并发送此事件对象，以将字符串发送到 " **输出** " 窗口。 此事件在附加到正在调试的程序时，使用 SDM 提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回调函数发送。
+ DE 创建并发送此事件对象，以将字符串发送到 **"输出"** 窗口。 事件是通过使用 SDM 在附加到正在调试的程序时提供的 [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md) 回调函数发送的。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
- 下表显示的方法 `IDebugOutputStringEvent2` 。
+ 下表显示了 的 方法 `IDebugOutputStringEvent2` 。
 
 |方法|说明|
 |------------|-----------------|
-|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|获取可显示消息。|
+|[GetString](../../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md)|获取可显示的消息。|
 
 ## <a name="remarks"></a>备注
- 例如，在非托管代码中，当正在调试的程序将字符串发送到 Win32 函数时，要输出的字符串可能产生 `OutputDebugString` 。 此字符串由 DE 截获，并作为事件发送到 SDM `IDebugOutputStringEvent2` 。
+ 例如，在非托管代码中，要输出的字符串可以在被调试的程序将字符串发送到 Win32 函数时 `OutputDebugString` 产生。 此字符串被 DE 截获，并作为 事件发送到 `IDebugOutputStringEvent2` SDM。
 
  使用 [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md) 发送需要用户响应的消息。
 
  使用 [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md) 发送不需要响应的错误消息。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
