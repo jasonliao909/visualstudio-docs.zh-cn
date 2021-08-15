@@ -1,6 +1,6 @@
 ---
 title: 使命令可用 |Microsoft Docs
-description: 了解如何使用延迟加载、上下文和可见性来控制添加到 Vspackage 中的 Visual Studio IDE 的命令的可用性。
+description: 了解如何使用延迟加载、上下文和可见性来控制添加到 vspackage 中的 Visual Studio IDE 的命令的可用性。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
@@ -13,18 +13,19 @@ ms.assetid: 3ffc4312-c6db-4759-a946-a4bb85f4a17a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 29f5e5c634c1bf360409e35c87684282a26e8a07
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f845644650c3ed87d0a62543da5a8155dcf806b02b8cb65db30e5297350ee185
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095207"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305550"
 ---
 # <a name="making-commands-available"></a>使命令可用
 
-当将多个 Vspackage 添加到 Visual Studio 时，用户界面 (UI) 可能会 overcrowded 命令。 你可以对包进行编程以帮助减少此问题，如下所示：
+将多个 vspackage 添加到 Visual Studio 时，用户界面 (UI) 可能会 overcrowded 命令。 你可以对包进行编程以帮助减少此问题，如下所示：
 
 - 对包进行编程，使其仅在用户需要时加载。
 
@@ -34,7 +35,7 @@ ms.locfileid: "105095207"
 
 启用延迟加载的典型方式是设计 VSPackage，以便在 UI 中显示其命令，但在用户单击其中一个命令之前，不会加载包本身。 若要实现此目的，请在 .vsct 文件中创建没有命令标志的命令。
 
-下面的示例演示如何从 .vsct 文件定义菜单命令。 这是在选择模板中的 **菜单命令** 选项时由 Visual Studio 包模板生成的命令。
+下面的示例演示如何从 .vsct 文件定义菜单命令。 这是在选择模板中的 **菜单命令** 选项时 Visual Studio 包模板生成的命令。
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -59,7 +60,7 @@ ms.locfileid: "105095207"
 
 | 上下文类型 | 说明 |
 |-------------------------| - |
-| 活动项目类型 | 对于大多数项目类型，此 `GUID` 值与实现项目的 VSPackage 的 GUID 相同。 但是， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目使用项目类型 `GUID` 作为值。 |
+| 活动 Project 类型 | 对于大多数项目类型，此 `GUID` 值与实现项目的 VSPackage 的 GUID 相同。 但是， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目使用 Project 类型 `GUID` 作为值。 |
 | 活动窗口 | 通常，这是为键绑定建立当前 UI 上下文的最后一个活动文档窗口。 不过，它也可以是具有类似于内部 Web 浏览器的键绑定表的工具窗口。 对于多选项卡式文档窗口（如 HTML 编辑器），每个选项卡都有不同的命令上下文 `GUID` 。 |
 | 活动语言服务 | 与当前在文本编辑器中显示的文件关联的语言服务。 |
 | 活动工具窗口 | 打开并具有焦点的工具窗口。 |

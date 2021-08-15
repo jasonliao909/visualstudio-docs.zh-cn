@@ -8,14 +8,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3cde4b2afe6d09c3958bbabe7a5669a13f8de8f2
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 355ffad6f00929fe3413af64fe94c8eab5427e7c1d33191586d66dc2cdd42403
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389119"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386038"
 ---
 # <a name="access-visual-studio-or-other-hosts-from-a-text-template"></a>从文本模板访问 Visual Studio 或其他主机
 
@@ -46,7 +47,7 @@ Content of myFile is:
 
 ### <a name="display-error-messages"></a>显示错误消息
 
-此示例在转换模板时记录消息。 如果主机是 Visual Studio，则会将错误添加到 **错误列表**。
+此示例在转换模板时记录消息。 如果主机是 Visual Studio 的，则错误将添加到 **错误列表** 中。
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -64,7 +65,7 @@ Content of myFile is:
 
 ## <a name="use-the-visual-studio-api"></a>使用 Visual Studio API
 
-如果要在 Visual Studio 中执行文本模板，可以使用 `this.Host` 来访问 Visual studio 提供的服务和加载的任何包或扩展。
+如果要在 Visual Studio 中执行文本模板，则可以使用 `this.Host` 来访问 Visual Studio 提供的服务以及加载的任何包或扩展。
 
 将 hostspecific = "true" 并强制转换 `this.Host` 为 <xref:System.IServiceProvider> 。
 

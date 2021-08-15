@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c0cdd57c801617d8b3c37df28b91faae378bc4cc
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b9f61ffce4223166b805a43f8096a5f86bf077f9305b664df92e6d28c153988c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824895"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394428"
 ---
 # <a name="how-to-programmatically-list-all-worksheets-in-a-workbook"></a>如何：以编程方式列出工作簿中的所有工作表
   <xref:Microsoft.Office.Interop.Excel.Workbook> 类提供一个 <xref:Microsoft.Office.Interop.Excel.Worksheets> 对象。 此对象包含工作簿中所有 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象的集合。
@@ -46,4 +47,4 @@ ms.locfileid: "107824895"
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式向工作簿添加新工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [如何：以编程方式在工作簿中移动工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)

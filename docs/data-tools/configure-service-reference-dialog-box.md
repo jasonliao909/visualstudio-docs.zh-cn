@@ -14,18 +14,19 @@ ms.assetid: 25e4c36b-2db6-4e71-9010-b7068255d09d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9ce4057378db357345869d10e933929ae31ee573
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b40e0f5616e8d43dbdc801efaf23fa6b9961c8463984ef9503079be2a2a49771
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859211"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347787"
 ---
 # <a name="configure-service-reference-dialog-box"></a>“配置服务引用”对话框
 
-通过 " **配置服务引用** " 对话框，您可以配置 WINDOWS COMMUNICATION FOUNDATION (WCF) 服务的行为。
+通过 "**配置服务引用**" 对话框，您可以配置 Windows Communication Foundation (WCF) 服务的行为。
 
 要访问“配置服务引用”对话框，请右键单击“解决方案资源管理器”中的服务引用，然后选择“配置服务引用”。 还可以通过单击“添加服务引用对话框”中的“高级”按钮来访问该对话框。
 

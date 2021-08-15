@@ -1,6 +1,6 @@
 ---
 title: 使用 CheckBox 控件更改工作表格式
-description: 了解如何使用 Visual Studio 中的 Office 开发工具创建代码并将其添加到项目。
+description: 了解如何使用 Visual Studio 中 Office 开发工具创建代码并将其添加到项目。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 6f649fad99b8d94cc650ecda57e10b423b14194e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c51872c10e015f0e40332ae3d4c64c7182ab1e35e55386b6125323ed73608ecb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826429"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121296523"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改工作表格式
-  本演练演示如何使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 你将使用 Visual Studio 中的 Office 开发工具创建代码并将其添加到你的项目。 若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
+  本演练演示如何使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 你将使用 Visual Studio 中 Office 开发工具创建代码并将其添加到你的项目。 若要查看已完成示例的结果，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -47,20 +48,20 @@ ms.locfileid: "107826429"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="create-the-project"></a>创建项目
- 在此步骤中，你将使用 Visual Studio 创建一个 Excel 工作簿项目。
+ 在此步骤中，你将使用 Visual Studio 创建 Excel 工作簿项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 创建一个名为 **"我的 excel" 格式** 的 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 **Excel 格式设置** 创建 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 **我的 Excel 格式设置** 项目添加到 **解决方案资源管理器**。
+     Visual Studio 在设计器中打开新的 Excel 工作簿，并将 **我的 Excel 格式设置** 项目添加到 **解决方案资源管理器**。
 
 ## <a name="add-text-and-controls-to-the-worksheet"></a>向工作表添加文本和控件
  对于本演练，你将需要 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> 在控件中使用三个控件和一些文本 <xref:Microsoft.Office.Tools.Excel.NamedRange> 。
 
 ### <a name="to-add-three-check-boxes"></a>添加三个复选框
 
-1. 验证在 Visual Studio 设计器中打开的工作簿，该工作簿是否 `Sheet1` 已打开。
+1. 验证工作簿是否在 Visual Studio 设计器中打开并且 `Sheet1` 已打开。
 
 2. 从 "**工具箱**" 的 "**公共控件**" 选项卡中，将 <xref:Microsoft.Office.Tools.Excel.Controls.CheckBox> 控件拖动到 **Sheet1** 中的单元格 **B2** 或附近。
 
@@ -70,26 +71,26 @@ ms.locfileid: "107826429"
 
     |属性|值|
     |--------------|-----------|
-    |**名称**|**applyBoldFont**|
+    |名称|**applyBoldFont**|
     |**Text**|**加粗**|
 
 5. 将第二个复选框拖到或附近的单元格 **B4** 上，并更改以下属性：
 
     |属性|值|
     |--------------|-----------|
-    |**名称**|**applyItalicFont**|
+    |名称|**applyItalicFont**|
     |**Text**|**斜体**|
 
 6. 将第三个复选框拖到单元格 **B6** 上或附近，并更改以下属性：
 
     |属性|值|
     |--------------|-----------|
-    |**名称**|**applyUnderlineFont**|
+    |名称|**applyUnderlineFont**|
     |**Text**|**划线**|
 
 7. 按住 **Ctrl** 键的同时选中所有三个复选框控件。
 
-8. 在 Excel 的 "格式" 选项卡的 "排列" 组中，单击 " **对齐**"，然后单击 " **左对齐**"。
+8. 在 Excel 的 "格式" 选项卡的 "排列" 组中，单击 "**对齐**"，然后单击 "**左对齐**"。
 
      在您选择的第一个控件的位置，这三个复选框控件在左侧对齐。
 
@@ -100,11 +101,11 @@ ms.locfileid: "107826429"
 
 #### <a name="to-add-text-to-a-namedrange-control"></a>向 NamedRange 控件添加文本
 
-1. 从 "工具箱" 的 " **Excel 控件** " 选项卡中，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件拖动到单元格 **B9**。
+1. 从 "工具箱" 的 " **Excel 控件**" 选项卡中，将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件拖动到单元格 **B9**。
 
 2. 验证 "可编辑" 文本框中是否显示了 " **$B $9** "，并选择了 "单元格 **B9** "。 如果不是，请单击 "单元" **B9** 将其选中。
 
-3. 单击 **“确定”** 。
+3. 单击“确定”。
 
 4. 单元格 **B9** 成为名为的范围 `NamedRange1` 。
 
@@ -114,7 +115,7 @@ ms.locfileid: "107826429"
 
    |属性|值|
    |--------------|-----------|
-   |**名称**|**textFont**|
+   |名称|**textFont**|
    |**Value2**|**单击复选框以更改此文本的格式设置。**|
 
    接下来，在选择选项时编写代码来设置文本格式。
@@ -141,7 +142,7 @@ ms.locfileid: "107826429"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet9":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet9":::
 
-5. 在 c # 中，必须向事件添加复选框的事件处理程序， <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 如下所示。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+5. 在 c # 中，必须向事件添加复选框的事件处理程序， <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 如下所示。 有关创建事件处理程序的信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet10":::
 
@@ -159,10 +160,10 @@ ms.locfileid: "107826429"
 ## <a name="next-steps"></a>后续步骤
  本演练演示如何在 Excel 工作表中使用复选框和设置文本格式。 以下是接下来可能要执行的一些任务：
 
-- 部署项目。 有关详细信息，请参阅 [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
+- 部署项目。 有关详细信息，请参阅[使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 - 使用按钮填充文本框。 有关详细信息，请参阅 [演练：使用按钮在工作表的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
 - [NamedRange 控件](../vsto/namedrange-control.md)
-- [Office 文档 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -11,17 +11,18 @@ ms.assetid: f51aab02-d257-4302-bb79-b7d8ba9ac4e5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3e12dc587a77e428d3d4c4740043ab5651b7897a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 508672c8397df47862ed53a7546c7f8dd063d2e4670b1816fec0ef94d8dc5a74
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057996"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433094"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 指定调试启动标志。

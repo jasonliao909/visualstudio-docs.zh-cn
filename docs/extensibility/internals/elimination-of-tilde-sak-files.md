@@ -12,20 +12,21 @@ ms.assetid: 5277b5fa-073b-4bd1-8ba1-9dc913aa3c50
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf0f8bc567a097d4bb7d400f829489c517e9a68f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c4fb89b2bb6ab3e895e77257bce83f1308ea73b7ca72209453e2d32f3440c344
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061233"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359489"
 ---
 # <a name="elimination-of-sak-files"></a>消除 ~ SAK 文件
 在源代码管理插件 API 1.2 中， *~ SAK* 文件已替换为功能标志和新函数，这些函数可检测源代码管理插件是否支持 *mssccprj.scc* 文件和共享签出。
 
 ## <a name="sak-files"></a>~ SAK 文件
-Visual Studio .NET 2003 创建了前缀为 *~ SAK* 的临时文件。 这些文件用于确定源代码管理插件是否支持：
+Visual Studio .net 2003 创建了前缀为 *~ SAK* 的临时文件。 这些文件用于确定源代码管理插件是否支持：
 
 - *Mssccprj.scc* 文件。
 
@@ -50,7 +51,7 @@ Visual Studio .NET 2003 创建了前缀为 *~ SAK* 的临时文件。 这些文�
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]DoNotCreateTemporaryFilesInSourceControl**  =  *dword： 00000001*
 
 > [!NOTE]
-> 如果此注册表项设置为 *dword： 00000000*，则等效于不存在的键，并且 Visual Studio 仍将尝试创建临时文件。 但是，如果注册表项设置为 *dword： 00000001*，则 Visual Studio 不会尝试创建临时文件。 而是假定源代码管理插件不支持 *mssccprj.scc* 文件，并且不支持共享签出。
+> 如果将此注册表项设置为 *dword： 00000000*，则它等效于不存在的键，Visual Studio 仍尝试创建临时文件。 但是，如果注册表项设置为 *dword： 00000001*，Visual Studio 不会尝试创建临时文件。 而是假定源代码管理插件不支持 *mssccprj.scc* 文件，并且不支持共享签出。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 版本1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

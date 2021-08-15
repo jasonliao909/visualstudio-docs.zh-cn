@@ -11,17 +11,18 @@ ms.assetid: 71189a00-34eb-4c71-b96e-8bd6e70c6966
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4f26eb76ff9126d1aa4f490488513a3d22113b4f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 57bbb43149d404edb8ca987847caa92e28876e24d46420dd53c9c6a97e3ba374
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083201"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448645"
 ---
 # <a name="ienumdebugaddressesclone"></a>IEnumDebugAddresses::Clone
 此方法将当前枚举的副本作为单独的对象返回。

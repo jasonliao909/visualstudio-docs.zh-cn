@@ -8,18 +8,19 @@ ms.assetid: 0fb78bbc-7a78-4ab4-b32f-85ece912e660
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b440e8c47afdec6e0b04b5f48a35e15fe48e1875
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67490346313b37b54520dc0ba8df22cf6299677a77bdd476c158dbc513630ec2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866796"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347124"
 ---
 # <a name="how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-or-designer"></a>如何：创建映射到表和视图的 LINQ to SQL 类（O/R 设计器）
 
-映射到数据库表和视图的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 类称为“实体类”。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 通过将表或视图从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，创建基于数据库表或视图的实体类。 **O/R 设计器** 会生成类并应用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性，以启用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)])  (数据通信和编辑功能的功能 <xref:System.Data.Linq.DataContext> 。 有关类的详细信息 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ，请参阅 [LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
+映射到数据库表和视图的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 类称为“实体类”。 实体类映射到记录，而一个实体类的各个属性则映射到构成一条记录的各个列。 通过将表或视图从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)，创建基于数据库表或视图的实体类。 **O/R 设计器** 会生成类并应用特定的 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] 属性，以启用 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)])  (数据通信和编辑功能的功能 <xref:System.Data.Linq.DataContext> 。 有关类的详细信息 [!INCLUDE[vbtecdlinq](../data-tools/includes/vbtecdlinq_md.md)] ，请参阅[LINQ to SQL 对象模型](/dotnet/framework/data/adonet/sql/linq/the-linq-to-sql-object-model)。
 
 > [!NOTE]
 > O/R 设计器是一个简单的对象关系映射器，因为它仅支持 1:1 映射关系。 换句话说，实体类与数据库表或视图之间只能具有 1:1 映射关系。 不支持复杂映射（例如，将一个实体类映射到多个表）。 但是，可以将一个实体类映射到一个联接多个相关表的视图。

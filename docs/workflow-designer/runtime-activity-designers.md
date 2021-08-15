@@ -8,14 +8,15 @@ ms.assetid: be18aa36-7909-4dd6-a786-b46959675a58
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 24e8ef89b6373808ac7eed0c7557e25968efcf3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6d8eda440e1e4084e7dbb4b8567ca9001b323f451155cb377377f18e69116ee
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847305"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243336"
 ---
 # <a name="runtime-activity-designers"></a>运行时活动设计器
 各运行时活动设计器用于持久保存和终止工作流活动。 本节中包含的主题提供了有关如何使用工作流设计器活动设计器的指导。

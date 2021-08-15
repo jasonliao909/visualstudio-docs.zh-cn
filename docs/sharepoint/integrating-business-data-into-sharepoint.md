@@ -19,14 +19,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 94162e2fca66fd86b2ac8b237c518e391d0a9908
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a68921a43a889b8a36204e3703c2e0003618b8139639d1cfab6ae8018ddb4eca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964675"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352837"
 ---
 # <a name="integrate-business-data-into-sharepoint"></a>将业务数据集成到 SharePoint 中
   你可以将业务数据集成到 SharePoint 中。 业务数据可以来自后端服务器应用程序，如 [!INCLUDE[TLA#tla_sqlsvr](../sharepoint/includes/tlasharptla-sqlsvr-md.md)]、Siebel、SAP 或 Web 服务。 用户可以通过在 SharePoint 中使用外部列表或业务数据 Web 部件来查看、添加、更新或删除业务数据。  用户还可以在 Microsoft Office 应用程序（如 Microsoft Outlook）中离线访问此数据。 有关详细信息，请参阅[可显示外部数据的位置](/previous-versions/office/developer/sharepoint-2010/ee558737(v=office.14))。

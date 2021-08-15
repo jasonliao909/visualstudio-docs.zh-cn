@@ -11,17 +11,18 @@ ms.assetid: bdd25097-0e9d-4218-b417-0497ea48d2e8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b763291fccd39d46b32347d89df1a11e1b3d09f2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3128409e25a4f0a44b62383e34af171c76ecd2eaa2699c36d77f69c9286fa145
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095402"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452103"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 删除指定的异常，以使其不再由调试引擎处理。

@@ -1,6 +1,6 @@
 ---
 title: XAML 错误和警告
-description: 了解 Visual Studio 中的 XAML 错误和警告，包括如何对错误进行分类，如何获取错误信息，以及如何找到用于修复这些错误的选项。
+description: 了解 Visual Studio 中的 XAML 错误和警告，包括如何对错误进行分类、如何获取错误信息，以及如何找到用于修复这些错误的选项。
 ms.custom: SEO-VS-2020
 ms.date: 03/06/2018
 ms.topic: error-reference
@@ -8,14 +8,15 @@ ms.assetid: 34eac8a0-7ec5-4c40-b97a-0126ed367931
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e33cdc11eb5531fd2325bd90912dc22a105711c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01dd2befec3f531609206bbd848e534ade251597041bef1ab755a618cc72f1b0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903642"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365077"
 ---
 # <a name="xaml-errors-and-warnings"></a>XAML 错误和警告
 
@@ -25,12 +26,12 @@ ms.locfileid: "99903642"
 
 多个工具后台并行分析 XAML。 XAML 错误可基于检测到错误的工具分为以下三种类型：
 
-|**检测到错误的工具**|**错误代码格式**|**Visual Studio 版本**|
+|**检测到错误的工具**|**错误代码格式**|**Visual Studio版本**|
 | - |-----------------| - |
 |XAML 语言服务（XAML 编辑器）|XLSxxxx| 所有版本 |
 |XAML 设计器|XDGxxxx| 所有版本 | 
-|XAML 编辑和继续|XECxxxx| Visual Studio 2019 版本16.1 或更早版本 |
-|XAML 热重载 | XHRxxxx | Visual Studio 2019 版本16.2 或更高版本 |
+|XAML 编辑和继续|XECxxxx| Visual Studio 2019 16.1 或更早版本 |
+|XAML 热重载 | XHRxxxx | Visual Studio 2019 16.2 或更高版本 |
 
 有关 XAML 编辑的品牌重塑的更多详细信息 & 继续作为 XAML 热重载，请参阅我们的 [发行说明](/visualstudio/releases/2019/release-notes-v16.2#wpfuwp-tooling)
 

@@ -11,17 +11,18 @@ ms.assetid: e3061665-ad3e-4c1b-b33f-82755fa21be3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9abb7c6f1d020244c930a4e884fcce5fdf23f5f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5b73eb8d83b3a09b9eae5710d43585ad49758f4bcfa6f6c9b67bac6bfdab628
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071398"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338574"
 ---
 # <a name="idebugreference2getparent"></a>IDebugReference2::GetParent
 获取引用的父引用。 保留供将来使用。

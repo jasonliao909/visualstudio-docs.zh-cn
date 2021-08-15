@@ -11,17 +11,18 @@ ms.assetid: 6e9dc8b6-b4e1-4abf-b6e0-e885910775bc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c706d8908f1fa8776d1d7304772a0c5eec03bd2d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 49c39665098eb37563ae9b6421d64a30b215921fb08ab118a47b5f443c793959
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073490"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402748"
 ---
 # <a name="idebugfunctionobjectcreateprimitiveobject"></a>IDebugFunctionObject::CreatePrimitiveObject
 创建一个基元数据对象，如简单整数。

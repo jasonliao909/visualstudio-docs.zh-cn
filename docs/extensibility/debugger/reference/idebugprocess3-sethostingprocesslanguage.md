@@ -11,17 +11,18 @@ ms.assetid: e42f33ed-f29c-4e45-92ce-ab504b72d77c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf0551ea8cd855ec301a4e0a4406aa2b1f909727
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3de958589480821c4a0682c94a7f54333e2e473d80c9d718b6586792fddfe72d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076532"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338951"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 此方法设置将承载进程的语言。 然后，调试引擎可以使用此语言 (DE) 加载相应的表达式计算器。

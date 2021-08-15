@@ -11,14 +11,15 @@ ms.assetid: 17cf5337-d251-4422-bc96-93fe7d48f2ae
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d46aedd3e962d0684689ff29a34061b777fe08e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: fdeb1b84bc8ee257a6da90389b46a990e4aa6a8dffda98b1f80964710e56bdac
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904069"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431534"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函数
 此函数将清理先前调用 [SccInitialize](../extensibility/sccinitialize-function.md) 创建的任何分配或打开连接，以准备关闭源代码管理插件。
@@ -39,7 +40,7 @@ SCCRTN SccUninitialize (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|清理已成功完成。|
 

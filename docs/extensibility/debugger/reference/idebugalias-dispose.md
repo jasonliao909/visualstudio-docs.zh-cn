@@ -1,6 +1,6 @@
 ---
-description: 将此别名标记为删除。
-title: IDebugAlias：:D ispose |Microsoft Docs
+description: 标记此别名以删除。
+title: IDebugAlias：:D pose |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: e84909a4-d378-4f48-bf25-2c014c77c8e3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7428b1a8d0dcb95d14274270542d4bba8c50bde9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e15d2c6f74c4872c5e55c9ce76293a1ab097d3176be33843a4deea89a692664c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059166"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434212"
 ---
 # <a name="idebugaliasdispose"></a>IDebugAlias::Dispose
-将此别名标记为删除。
+标记此别名以删除。
 
 ## <a name="syntax"></a>语法
 
@@ -40,10 +41,10 @@ int Dispose();
  无。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法后，该别名将不再可用。
+ 调用此方法后，别名将不再可用。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

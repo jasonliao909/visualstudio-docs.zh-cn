@@ -1,6 +1,6 @@
 ---
-description: 此方法通知进程会话正在调试该进程。
-title: IDebugProcessEx2：： Attach |Microsoft Docs
+description: 此方法通知进程会话现在正在调试进程。
+title: IDebugProcessEx2：：Attach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: f3334ed7-39bf-4d02-a338-36f567b9b287
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: da538b5ba91a976e96f447ba63843f20ae0b6f62
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 860d28e6a74b9f63fa03a3f04103cd602c31bf19f65e4be5ca5547aacadfcfdf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076363"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338912"
 ---
 # <a name="idebugprocessex2attach"></a>IDebugProcessEx2::Attach
-此方法通知进程会话正在调试该进程。
+此方法通知进程会话现在正在调试进程。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int Attach(
 
 ## <a name="parameters"></a>参数
 `pSession`\
-中一个值，该值唯一标识附加到此进程的会话。
+[in]一个 值，该值唯一标识附加到此进程的会话。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 传入的接口将 `pSession` 仅被视为 cookie，这是唯一标识会话调试管理器附加到此进程的值; 提供的接口上的任何方法都不起作用。
+ 传入的接口只被视为 Cookie，该值唯一标识附加到该进程的会话调试管理器;所提供的接口上的方法均 `pSession` 不起作用。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

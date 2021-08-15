@@ -11,17 +11,18 @@ ms.assetid: abf89411-1853-4f23-b244-d5e0afa197b1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6fb6c098d26148db39493b25f199c6819fb81d27
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27826db10e6ef7265416d83cf37fb38c0706c452076223e7027b0ef1a7034f58
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082408"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388950"
 ---
 # <a name="ipropertyproxyeesideinplaceupdateobject"></a>IPropertyProxyEESide::InPlaceUpdateObject
 使用给定的数据对象更新对象的数据，并返回一个表示该对象的新数据的新数据对象。
@@ -55,7 +56,7 @@ int InPlaceUpdateObject(
 ## <a name="remarks"></a>备注
  此方法实际更新对象的数据。 返回的 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象中的数据不需要与传入对象中的数据相同 `IEEDataStorage` ，但返回的对象必须反映属性的当前值。
 
- 输入的数据对象通常不是由 EE 实现的。 但是，此方法返回的对象始终由 EE 实现，这使 EE 可以 `IEEDataStorage` 在所需的任何类上实现接口。
+ 传入数据对象通常不是由企业版实现的。 但是，此方法返回的对象始终由企业版实现，这允许企业版 `IEEDataStorage` 在需要的任何类上实现接口。
 
  [CreateReplacementObject](../../../extensibility/debugger/reference/ipropertyproxyeeside-createreplacementobject.md)方法基于传入数据对象创建一个数据对象，但不会影响该属性的原始数据。
 

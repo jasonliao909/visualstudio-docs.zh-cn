@@ -14,12 +14,12 @@ author: John-Hart
 ms.author: johnhart
 ms.workload:
 - office
-ms.openlocfilehash: ac0e3bf3268029efffdd0800cf7fe133eb1553e8
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 6bbf68656c2fbabccc2479dd87e3e0394c9ddafbc6fc12a534fa714e64673855
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825233"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440755"
 ---
 # <a name="how-to-programmatically-create-custom-folder-items"></a>如何：以编程方式创建自定义文件夹项
   此示例在 Microsoft Office Outlook 中创建一个新文件夹。 登录的用户的名称用于文件夹名称。

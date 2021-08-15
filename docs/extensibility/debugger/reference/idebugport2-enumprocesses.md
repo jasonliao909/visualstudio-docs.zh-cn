@@ -11,17 +11,18 @@ ms.assetid: aafb32c5-5790-4807-a448-878a80256438
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7d379b68ceaf5dfb36f2ce873c61eb4f52d98dff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b8496835dbb43be78d6c7743d8d6fe8b82435b9cd2af3830678b822b0d1d174c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087543"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121323477"
 ---
 # <a name="idebugport2enumprocesses"></a>IDebugPort2::EnumProcesses
 返回某个端口上运行的所有进程的列表。

@@ -9,31 +9,31 @@ author: leslierichardson95
 ms.author: lerich
 ms.workload:
 - vssdk
-ms.openlocfilehash: 516b6797d622a3f88ed1fcd37b87ecd117d4e8a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 32017e3755a85142876f9616f45f300e323b6752affa1773db5bcdd548b1ef1f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074816"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359892"
 ---
 # <a name="how-to-use-asyncpackage-to-load-vspackages-in-the-background"></a>如何：使用 AsyncPackage 在后台加载 Vspackage
-加载和初始化 VS 包可能会导致磁盘 i/o。 如果 UI 线程上发生此类 i/o，则可能导致响应能力问题。 为了解决此情况，Visual Studio 2015 引入了在  <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 后台线程上启用包加载的类。
+加载和初始化 VS 包可能会导致磁盘 i/o。 如果 UI 线程上发生此类 i/o，则可能导致响应能力问题。 若要解决此情况，Visual Studio 2015 引入了在 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 后台线程上启用包加载的类。
 
 ## <a name="create-an-asyncpackage"></a>创建 AsyncPackage
- 首先，可以创建一个 VSIX 项目 (**文件**"  >  **新建**  >  **项目**" "  >  **Visual c #**  >  **扩展性**  >  **VSIX 项目**") 并将 VSPackage 添加到项目中 (右键单击该项目，然后 **添加**  >  **新项**"  >  **c # 项**  >  **扩展性**"  >  **Visual Studio 包**) 。 然后，可以创建服务并将这些服务添加到包。
+ 首先，你可以创建一个 VSIX 项目 (**文件**  >  **New**  >  **Project**  >  **Visual c #**  >  **扩展性**  >  **VSIX Project**) 并将 VSPackage 添加到项目中 (右键单击项目并 **添加**  >  **新项**  >  **c # 项**  >  **扩展性**  >  **Visual Studio 包**) 。 然后，可以创建服务并将这些服务添加到包。
 
 1. 从派生包 <xref:Microsoft.VisualStudio.Shell.AsyncPackage> 。
 
 2. 如果提供的服务的查询可能会导致包加载：
 
-    若要向 Visual Studio 指示你的包对于后台加载是安全的并且要选择加入此行为， <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 应在属性构造函数中将 **AllowsBackgroundLoading** 属性设置为 true。
+    若要指示 Visual Studio 你的包对于后台加载是安全的并且要选择加入此行为， <xref:Microsoft.VisualStudio.Shell.PackageRegistrationAttribute> 应在属性构造函数中将 **AllowsBackgroundLoading** 属性设置为 true。
 
    ```csharp
    [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
 
    ```
 
-    若要指示 Visual Studio 可以安全地在后台线程上实例化服务，应 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> 在构造函数中将属性设置为 true <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 。
+    若要 Visual Studio 可以安全地在后台线程上实例化服务，应 <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttributeBase.IsAsyncQueryable%2A> 在构造函数中将属性设置为 true <xref:Microsoft.VisualStudio.Shell.ProvideServiceAttribute> 。
 
    ```csharp
    [ProvideService(typeof(SMyTestService), IsAsyncQueryable = true)]

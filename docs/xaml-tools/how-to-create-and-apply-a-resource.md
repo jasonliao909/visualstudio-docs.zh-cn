@@ -11,14 +11,15 @@ ms.assetid: 3ff4006d-659d-4073-9a41-06ff85e6cfdf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: b6c6c243896370cc97b8a85d5de520c4c033d49b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff5ed15a39df75d01ea2ac1be9abf03df04393c4a573ef47f28deef7251e4af0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971604"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365377"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 

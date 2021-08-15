@@ -10,14 +10,15 @@ ms.assetid: 4a6a884b-5730-4b54-9264-99684f5b523c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6ffa2a0e646c11cb56d08ef91e3d7a4b9af7572
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: d4c8e69c261b25a4f3a425fc11eb8ccd259dbad2bf951f980e985163a23b4d0d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217497"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121374619"
 ---
 # <a name="walkthrough-display-signature-help"></a>演练：显示签名帮助
 签名帮助 (也称为 *参数信息*) 当用户键入参数列表开始字符时，将在工具提示中显示方法的签名， (通常为左括号) 。 作为参数和参数分隔符 (通常会键入逗号) ，工具提示将更新以以粗体显示下一个参数。 可以通过以下方式定义签名帮助：在语言服务的上下文中，定义自己的文件扩展名和内容类型，并为现有内容类型显示签名帮助 (例如，"text" ) 。 本演练演示如何为 "文本" 内容类型显示签名帮助。
@@ -27,15 +28,15 @@ ms.locfileid: "106217497"
  本演练演示如何为硬编码的标识符集设置签名帮助。 在完整实现中，语言负责提供该内容。
 
 ## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio 的 SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="creating-a-mef-project"></a>创建 MEF 项目
 
 #### <a name="to-create-a-mef-project"></a>创建 MEF 项目
 
-1. 创建 c # VSIX 项目。  (在 " **新建项目** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX 项目**"。 ) 将解决方案命名为 `SignatureHelpTest` 。
+1. 创建 c # VSIX 项目。  (在 "**新建 Project** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX Project**"。 ) `SignatureHelpTest` 将解决方案命名为。
 
-2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅 [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 3. 删除现有的类文件。
 

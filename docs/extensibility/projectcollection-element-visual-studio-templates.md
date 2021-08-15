@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 ProjectCollection 元素 |Microsoft Docs"
+title: ProjectCollection 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 ProjectCollection 元素及其如何指定多项目模板的组织和内容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,14 +16,14 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e835843094b9495b8907a3ada727435b8806c78d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1e6d37b55837b0a069148f7bd6c74da0da3511e664d253fdaa7c0de0b80ab7dc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068760"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431573"
 ---
-# <a name="projectcollection-element-visual-studio-templates"></a> (Visual Studio 模板的 ProjectCollection 元素) 
+# <a name="projectcollection-element-visual-studio-templates"></a>ProjectCollection 元素 (Visual Studio 模板) 
 指定多项目模板的组织和内容。
 
  \<VSTemplate> \<TemplateContent>

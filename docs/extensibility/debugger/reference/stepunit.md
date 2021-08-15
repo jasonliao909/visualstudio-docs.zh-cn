@@ -11,17 +11,18 @@ ms.assetid: cb8441f2-f744-4e73-acfe-ae8542df9649
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e27aa1e26c9ac80356446c59f0f7775d35328517
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 48b9a6c4b008fe44dcfcbfe0599d871bc609513c79801510369b657eaa819b9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061480"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448541"
 ---
 # <a name="stepunit"></a>STEPUNIT
 指定步进的步骤单元。

@@ -1,6 +1,6 @@
 ---
-title: 使用 Visual Studio XAML 设计器
-description: 了解工作区 UI 和 XAML 设计器 的功能，Blend for Visual Studio提供可视化界面来帮助设计基于 XAML 的应用。
+title: 创建具有 Visual Studio XAML 设计器的 ui
+description: 了解工作区 UI 和 Blend for Visual Studio 中 XAML 设计器的功能，它提供了一个可视化界面，可帮助您设计基于 XAML 的应用程序。
 ms.date: 03/03/2020
 ms.topic: conceptual
 ms.custom: contperf-fy21q4, SEO-VS-2020
@@ -14,21 +14,22 @@ ms.assetid: c54969a7-d75a-4a35-9b37-af7a596a7c24
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ef7d94acbb558ef2a8a3c557051e6dea16be916c
-ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 448e465c1458d3a931e5c47c0236d0d733d322970ebd9aeaa9cb5c853d6dc627
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112550683"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365727"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 设计器创建 UI
 
-XAML 设计器和 Visual Studio 中的Blend for Visual Studio提供了一个可视界面，可帮助你设计基于 XAML 的应用，例如 WPF 和 UWP。 可以通过拖动“工具箱”窗口（Blend for Visual Studio 中的“资产”窗口）中的控件，并在“属性”窗口中设置属性，为应用创建用户界面。 还可以直接在 XAML 视图中编辑 XAML。
+Visual Studio 和 Blend for Visual Studio 中的 XAML 设计器提供了一个可视化界面，可帮助您设计基于 XAML 的应用程序，如 WPF 和 UWP。 可以通过拖动“工具箱”窗口（Blend for Visual Studio 中的“资产”窗口）中的控件，并在“属性”窗口中设置属性，为应用创建用户界面。 还可以直接在 XAML 视图中编辑 XAML。
 
 对于高级用户，甚至可以[自定义 XAML 设计器](https://github.com/microsoft/xaml-designer-extensibility/blob/master/documents/xaml-designer-extensibility-migration.md)。
 
 > [!NOTE]
-> Xamarin.Forms 不支持 XAML 设计器。 若要查看 Xamarin.Forms XAML API，并编辑应用运行时的 Xamarin.Forms XAML 热重载 Xamarin.Forms。 有关详细信息，请参阅 [Xamarin.Forms XAML 热重载 预览版 () ](/xamarin/xamarin-forms/xaml/hot-reload/) 页。
+> Xamarin。窗体不支持 XAML 设计器。 若要查看 Xamarin. Forms XAML Ui 并在应用程序运行时对其进行编辑，请使用适用于 Xamarin 的 XAML 热重载。 有关详细信息，请参阅 [适用于 Xamarin 的 XAML 热重载 (预览) ](/xamarin/xamarin-forms/xaml/hot-reload/) 页面。
 
 ## <a name="xaml-designer-workspace"></a>XML 设计器工作区
 
@@ -92,7 +93,7 @@ XAML 设计器提供 XAML 视图和应用程序呈现的 XAML 标记的同步设
 
 **开启/关闭网格线对齐**
 
-如果 **启用了网格线对齐** ，则元素在拖动到美板上时往往与最接近的水平和垂直网格线对齐。
+如果已启用 " **网格线对齐** "，则当您将元素拖到美工板上时，它会与最近的水平和垂直网格线对齐。
 
 **切换美工板背景**
 
@@ -108,7 +109,7 @@ XAML 设计器提供 XAML 视图和应用程序呈现的 XAML 标记的同步设
 
 ### <a name="xaml-view"></a>XAML 视图
 
-在 **XAML** 视图中，包含 XAML 编辑器的窗口是活动窗口，XAML 编辑器是主要创作工具。 可扩展应用程序标记语言 (XAML) 提供基于 XML 的声明性词汇，用于指定应用程序的用户界面。 XAML 视图包括 IntelliSense、自动格式设置、语法突出显示和标记导航。 下图显示打开了 IntelliSense 菜单的 XAML 视图：
+在 **xaml** 视图中，包含 xaml 编辑器的窗口是活动窗口，而 xaml 编辑器是主要创作工具。 可扩展应用程序标记语言 (XAML) 提供基于 XML 的声明性词汇，用于指定应用程序的用户界面。 XAML 视图包括 IntelliSense、自动格式设置、语法突出显示和标记导航。 下图显示打开了 IntelliSense 菜单的 XAML 视图：
 
 ![XAML 视图](media/xaml-editor.png)
 
@@ -118,26 +119,26 @@ Visual Studio 中的“文档大纲”窗口类似于 Blend for Visual Studio �
 
 - 查看美工板上所有元素的层次结构。
 
-- 选择元素，以便可以修改它们。 例如，可以在层次结构中移动它们，或在层次结构中设置属性窗口。 有关详细信息，请参阅[使用 XAML 设计器中的元素](../xaml-tools/working-with-elements-in-xaml-designer.md)。
+- 选择元素，以便可以修改它们。 例如，你可以在层次结构中移动它们或在属性窗口中设置其属性。 有关详细信息，请参阅[使用 XAML 设计器中的元素](../xaml-tools/working-with-elements-in-xaml-designer.md)。
 
 - 创建和修改控件元素的模板。
 
 - [创建动画](animate-objects-in-xaml-designer.md)（仅 Blend for Visual Studio）。
 
-若要查看窗口中的"文档大纲Visual Studio，请在菜单栏上选择"**查看**  >  **其他 Windows**  >  **文档大纲"。**
-若要在对象和时间线窗口中Blend for Visual Studio，请在菜单栏上选择"**查看**  >  **文档大纲"。**
+若要在 Visual Studio 中查看 "文档大纲" 窗口，请在菜单栏上选择 "**查看**  >  **其他 Windows**  >  **文档大纲**"。
+若要查看 Blend for Visual Studio 中的 "对象和时间线" 窗口，请在菜单栏上选择 "**查看**  >  **文档大纲**"。
 
 ![Visual Studio 中的“文档大纲”窗口](media/document-outline-window.png)
 
-“文档大纲/对象和时间线”窗口中的主视图采用树结构显示文档的层次结构。 可以使用文档大纲的层次结构性质检查不同级别的文档的详细信息，单个或成组地锁定和隐藏元素。 以下选项在"文档大纲/对象和时间线窗口中提供：
+“文档大纲/对象和时间线”窗口中的主视图采用树结构显示文档的层次结构。 可以使用文档大纲的层次结构性质检查不同级别的文档的详细信息，单个或成组地锁定和隐藏元素。 "文档大纲/对象和时间线" 窗口中提供了以下选项：
 
 **显示/隐藏**
 
-显示或隐藏美工板元素。 显示时显示为眼睛符号。 还可以按 **Ctrl** + **H** 隐藏元素，然后 **按** + **Ctrl** + **H** 来显示它。
+显示或隐藏美工板元素。 显示时显示为眼睛符号。 还可以按 **ctrl** + **h** 隐藏元素，按 **Shift** + **ctrl** + **h** 显示元素。
 
 **锁定/解锁**
 
-锁定或解锁美工板元素。 不能修改已锁定的元素。 锁定时显示为挂锁符号。 还可以按 **ctrl** + **+** 来锁定某个元素，按住 **Shift** 并 +  + 将其解锁。
+锁定或解锁美工板元素。 不能修改已锁定的元素。 锁定时显示为挂锁符号。 还可以按 **Ctrl** + **L** 锁定元素，然后 **按** + **Ctrl** + **L** 将其解锁。
 
 **返回到 pageRoot 范围**
 
@@ -145,17 +146,17 @@ Visual Studio 中的“文档大纲”窗口类似于 Blend for Visual Studio �
 
 ## <a name="properties-window"></a>“属性”窗口
 
-" **属性** " 窗口可用于设置控件的属性值。 如下所示：
+通过 **"** 属性"窗口，可以在控件上设置属性值。 如下所示：
 
 ![“属性”窗口](media/xaml-designer-properties-window.png)
 
-" **属性** " 窗口顶部有多种选项：
+"属性"窗口顶部有 **各种** 选项：
 
 - 在“名称”框中更改当前所选元素的名称。
 - 在左上角，有一个表示当前所选元素的图标。
 - 若要按类别或按字母顺序排列属性，请单击“类别” 、“名称” 或“排列方式”  列表中的“源”  。
 - 若要查看控件的事件列表，请单击“事件”按钮，该按钮显示为一个闪电形符号。
-- 若要搜索某个属性，请在搜索框中键入该属性的名称。 在键入时，" **属性** " 窗口将显示与您的搜索匹配的属性。
+- 若要搜索某个属性，请在搜索框中键入该属性的名称。 " **属性** "窗口显示键入时与搜索匹配的属性。
 
 某些属性允许通过选择向下箭头按钮设置高级属性。
 

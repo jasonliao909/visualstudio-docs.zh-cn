@@ -11,17 +11,18 @@ ms.assetid: 33b22b2f-431e-4205-9441-d28a9c928c97
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4f7f6a083c37ece73be488ab0c4f6d4c25ce24c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b4e98aa628765cd165fdb70bcd169ea2436c3f1ea1f542407dfedc75791513ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084150"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121416022"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 将会话附加到程序。

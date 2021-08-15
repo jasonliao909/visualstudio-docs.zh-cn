@@ -11,14 +11,15 @@ ms.assetid: b467ade6-a1db-4c0b-b60f-7850ec4f79eb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb3fa392cd4ed31d907fe5913f8d7965a20df05b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f9085d764378c5e0743d239b3bde427befffb2d7cf1945f9ce8fa054ea780af4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900455"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358995"
 ---
 # <a name="sccrename-function"></a>SccRename 函数
 此函数重命名源代码管理系统中的文件。
@@ -54,7 +55,7 @@ SCCRTN SccRename(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|重命名操作已成功完成。|
 |SCC_E_PROJNOTOPEN|项目未在源代码管理下打开。|

@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 WizardExtension 元素 |Microsoft Docs"
+title: WizardExtension 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 WizardExtension 元素及其包含用于自定义模板向导的注册元素的方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c32f9f2050e04741a2612de30e2718f45c0603de
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 41e17f80d2d0fb2de71a2187f42032a756aee2a21dc5a224579092344f0b234f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061805"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121334947"
 ---
 # <a name="wizardextension-element-visual-studio-templates"></a>WizardExtension 元素（Visual Studio 模板）
 包含用于自定义模板向导的注册元素。
@@ -60,7 +60,7 @@ ms.locfileid: "105061805"
  `WizardExtension` 是 `VSTemplate` 的可选子元素。
 
 ## <a name="example"></a>示例
- 下面的示例演示了 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 下面的示例演示 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -91,6 +91,6 @@ ms.locfileid: "105061805"
 ```
 
 ## <a name="see-also"></a>另请参阅
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
 - [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

@@ -10,14 +10,15 @@ ms.assetid: 01fbbb5b-f747-446c-afe0-2a081626a945
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6442a8475c862693b851be783ae85bbb0a2e90af
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bde953b023b91c3c3e3b06fb3d50770851352da9d441b6277406ed91bbc392a5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082109"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359723"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>选择 VSPackage 的安装目录
 VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是托管的还是非托管的、并排版本控制方案和用户选择。
@@ -49,7 +50,7 @@ VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决
 
  " [管理 vspackage](../../extensibility/managing-vspackages.md) " 一文指示注册表项控制 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 实际查找 VSPACKAGE 的附属 DLL 的位置。 不过， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 尝试按照以下顺序在名为 LCID 值的子目录中加载附属 DLL：
 
-1. Visual Studio LCID (默认 LCID;例如，对于英语) 为 *\ 1033*
+1. 默认 lcid (Visual Studio lcid;例如，对于英语) 为 *\ 1033*
 
 2. 默认的子语言为默认的 LCID。
 
