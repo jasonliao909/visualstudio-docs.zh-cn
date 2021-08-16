@@ -76,7 +76,7 @@ ms.locfileid: "121425710"
 
  有关详细信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)
 - [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)

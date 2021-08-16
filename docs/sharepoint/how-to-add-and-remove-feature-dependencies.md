@@ -1,6 +1,6 @@
 ---
 title: 如何：添加和删除功能依赖项|Microsoft Docs
-description: 查看如何使用 Visual Studio 中的功能设计器向 SharePoint 解决方案添加和删除功能Visual Studio。
+description: 查看如何使用解决方案中的功能设计器向 SharePoint 解决方案添加和删除功能Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121425292"
 ---
 # <a name="how-to-add-and-remove-feature-dependencies"></a>如何：添加和删除功能依赖项
-  你的SharePoint功能可能依赖于功能或数据的其他功能。 在这些情况下，可以将这些其他功能标记为功能的依赖关系。 这样，SharePoint服务器可确保在激活功能之前激活依赖功能。
+  你的SharePoint功能可能依赖于其他功能的功能或数据。 在这些情况下，可以将这些其他功能标记为功能的依赖关系。 这样，SharePoint服务器可确保在激活功能之前激活依赖功能。
 
 ## <a name="add-dependencies"></a>添加依赖项
  可以在解决方案中添加其他功能作为依赖项。 这样，就可以确保在安装功能之前安装并激活所需的功能。
@@ -40,7 +40,7 @@ ms.locfileid: "121425292"
      选择 **Ctrl** 键时，可以通过选择多个标题来添加多个功能。
 
 ## <a name="addi-custom-dependencies"></a>添加自定义依赖项
- 可以将已部署在 SharePoint 上的功能添加为依赖项。 这样，SharePoint激活过程会进行检查，以确保在安装功能之前激活所有从属功能。
+ 可以将已部署在 SharePoint 上的功能添加为依赖项。 这样，SharePoint过程会进行检查，以确保在安装功能之前激活所有从属功能。
 
 #### <a name="to-add-a-dependency-by-the-feature-id"></a>按功能 ID 添加依赖项
 
@@ -67,7 +67,7 @@ ms.locfileid: "121425292"
 
 1. 在功能设计器中，展开" **功能激活依赖项** "节点，选择要删除的功能的名称，然后选择"删除 **"** 按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建SharePoint功能](../sharepoint/creating-sharepoint-features.md)
 - [如何：自定义SharePoint功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [如何：添加和删除项以SharePoint功能](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

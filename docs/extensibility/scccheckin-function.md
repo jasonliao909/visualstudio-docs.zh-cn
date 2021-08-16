@@ -90,5 +90,5 @@ SCCRTN SccCheckin (
 
  可以给参数提供 标志的值，以指示用户签入文件并 `fOptions` `SCC_KEEP_CHECKEDOUT` 再次签出文件的意向。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

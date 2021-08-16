@@ -267,7 +267,7 @@ ms.locfileid: "121401266"
 
  这意味着，如果在 .vsz PROJECT_TYPE包含一个 PROJECT_TYPE=EF 条目，则环境在之前指定的 ProductDir 目录中查找 .vsz 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)
 - [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)

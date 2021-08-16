@@ -78,7 +78,7 @@ ms.locfileid: "121424199"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet15":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet15":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [演练：将文本从操作窗格插入到文档中](../vsto/walkthrough-inserting-text-into-a-document-from-an-actions-pane.md)
 - [如何：管理操作窗格上的控件布局](../vsto/how-to-manage-control-layout-on-actions-panes.md)

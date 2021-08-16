@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121401279"
 ---
 # <a name="projects"></a>项目
-在 Visual Studio 中，项目是开发人员用于组织源代码文件和显示在 中的其他资源的 **解决方案资源管理器。** 通常，项目是 (文件，例如，C# 项目的 .csproj 文件) 存储对源代码文件和资源（如位图文件）的引用。 使用项目可以组织、生成、调试和部署源代码、对 Web 服务和数据库的引用以及其他资源。 VSPackage 可以通过三Visual Studio扩展项目系统：项目类型、项目 *子类型和**自定义工具*。 
+在 Visual Studio中，项目是开发人员用于组织源代码文件和显示在 中的其他资源的 **解决方案资源管理器。** 通常，项目是 (文件，例如，C# 项目的 .csproj 文件) 存储对源代码文件和资源（如位图文件）的引用。 使用项目可以组织、生成、调试和部署源代码、对 Web 服务和数据库的引用以及其他资源。 VSPackage 可以通过三Visual Studio扩展项目系统：项目类型、项目 *子类型和**自定义工具*。 
 
 ## <a name="in-this-section"></a>本节内容
 - [项目类型](../../extensibility/internals/project-types.md)

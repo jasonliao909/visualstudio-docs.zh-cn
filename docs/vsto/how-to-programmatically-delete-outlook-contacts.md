@@ -32,7 +32,7 @@ ms.locfileid: "121394441"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteContacts/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteContacts/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式搜索特定联系人](../vsto/how-to-programmatically-search-for-a-specific-contact.md)
 - [如何：以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)

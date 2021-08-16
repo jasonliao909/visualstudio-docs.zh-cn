@@ -1,6 +1,6 @@
 ---
 title: 使用扩展性接口自定义 UI 功能
-description: 了解 Visual Studio 中的 Office 开发工具提供可帮助您自定义 UI 功能的扩展性接口。
+description: 了解 Office 开发工具Visual Studio提供扩展性接口来帮助你自定义 UI 功能。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -41,14 +41,14 @@ ms.locfileid: "121424406"
 
  使用 Visual Studio 中的 Office 项目模板创建 VSTO 外接程序时，不必实现扩展性接口来自定义功能区之类的功能。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 可为你实现这些接口。 相反，你可以使用 Visual Studio 提供的更为直观的类和设计器。 不过，只要你愿意，你仍然可以直接在 VSTO 外接程序中实现扩展性接口。
 
- 有关 Visual Studio 为这些功能提供的类和设计器的详细信息，请参阅[自定义任务窗格](../vsto/custom-task-panes.md)、[功能区设计器](../vsto/ribbon-designer.md)和[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+ 有关为这些功能提供的类和设计器Visual Studio，请参阅自定义[任务](../vsto/custom-task-panes.md)窗格、功能区设计器[和 创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)。 [](../vsto/ribbon-designer.md)
 
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>可在 VSTO 外接程序中实现的扩展性接口
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>可在外接程序中VSTO扩展性接口
  下表列出了你可以实现的扩展性接口以及支持这些接口的应用程序。
 
 |接口|说明|应用程序|
 |---------------|-----------------|------------------|
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：** 可以向项目添加 **功能区 (XML)** 项，以便 <xref:Microsoft.Office.Core.IRibbonExtensibility> 在 VSTO 外接程序中生成默认实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：** 可以将功能区 **(XML)** 项添加到项目，以在外接程序VSTO <xref:Microsoft.Office.Core.IRibbonExtensibility> 默认实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
 |<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|实现此接口可创建 Outlook 窗体区域。|Outlook|
 
@@ -57,7 +57,7 @@ ms.locfileid: "121424406"
 ## <a name="use-extensibility-interfaces"></a>使用扩展性接口
  要使用扩展性接口自定义 UI 功能，请在 VSTO 外接程序项目中实现相应的接口。 然后，重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以返回实现该接口的类的实例。
 
- 有关演示如何 <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 在 Outlook 的 VSTO 外接程序中实现、和接口的示例应用程序 <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> ，请参阅[Office 开发示例](../vsto/office-development-samples.md)中的 UI 管理器示例。
+ 有关演示如何在 VSTO for Outlook 外接程序中实现 、 和 接口的示例应用程序，请参阅 Office 开发示例中的 <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> UI <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> [管理器示例](../vsto/office-development-samples.md)。
 
 ### <a name="example-of-implementing-an-extensibility-interface"></a>实现扩展性接口的示例
  下面的代码示例演示用于创建自定义任务窗格的 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 接口的简单实现。 此示例定义两个类：
@@ -72,7 +72,7 @@ ms.locfileid: "121424406"
   :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet1":::
   :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet1":::
 
-  有关实现的详细信息 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> ，请参阅 Microsoft Office 文档中的在[2007 Office 系统中创建自定义任务窗格](/previous-versions/office/developer/office-2007/aa338197(v=office.12))。
+  有关实现 的详细信息，请参阅 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> [2007](/previous-versions/office/developer/office-2007/aa338197(v=office.12)) Office 文档中的"创建自定义Microsoft Office窗格。
 
 ### <a name="example-of-overriding-the-requestservice-method"></a>重写 RequestService 方法的示例
  下面的代码示例演示如何重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以从前面的代码示例中返回 `TaskPaneHelper` 类的实例。 它将检查 *serviceGuid* 参数的值以确定请求的是哪个接口，然后返回实现该接口的对象。
@@ -80,10 +80,10 @@ ms.locfileid: "121424406"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_SimpleExtensibilityInterface/ThisAddIn.vb" id="Snippet2":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_SimpleExtensibilityInterface/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="see-also"></a>另请参阅
-- [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
-- [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
-- [开发 Office 解决方案](../vsto/developing-office-solutions.md)
-- [调用来自其他 Office 解决方案的 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
-- [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
+## <a name="see-also"></a>请参阅
+- [Office开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
+- [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)
+- [开发Office解决方案](../vsto/developing-office-solutions.md)
+- [从其他 VSTO 解决方案调用外接程序Office代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [如何：在 Office 创建Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)

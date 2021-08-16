@@ -39,7 +39,7 @@ ms.locfileid: "121425539"
 |包设计器属性|默认设置的说明|
 |-------------------------------|------------------------------------|
 |名称|必需。 包的默认名称设置为 *ProjectName*。|
-|重置 WebServer|可选。 选择是否要在 web 服务器上安装 *.wsp* 文件后重新启动SharePoint服务器。|
+|重置 WebServer|可选。 选择是否要在 web 服务器上安装 *.wsp* 文件后SharePoint服务器。|
 |部署服务器类型|可选。 表示承载包的服务器的类型。 如果未设置，则默认为 WebFrontEnd。<br /><br /> ApplicationServer：描述承载服务的服务器。<br /><br /> WebFrontEnd：描述托管网站的服务器。|
 |解决方案中的项|所有SharePoint项目项和可添加到包的功能。|
 |包中的项|可选。 所有SharePoint项和要部署在包中的功能。|
@@ -47,7 +47,7 @@ ms.locfileid: "121425539"
 ## <a name="configure-the-packaging-process"></a>配置打包过程
  在 Visual Studio 中开发 SharePoint 解决方案后，您可以自定义项目的打包方式。
 
- 下表显示了两个MSBuild，可用于自定义 *.wsp* 文件的创建方式。
+ 下表显示了两个MSBuild自定义 *.wsp* 文件的创建方式的两个目标。
 
 |目标|描述|
 |------------|-----------------|
@@ -57,7 +57,7 @@ ms.locfileid: "121425539"
  有关详细信息，请参阅[如何：使用 SharePoint 目标自定义MSBuild包](../sharepoint/how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets.md)。
 
 ## <a name="packaging-architecture"></a>打包体系结构
- 在 Visual Studio 中SharePoint *.wsp (.wsp)* 时，将执行Visual Studio。
+ 在 Visual Studio 中为 *.wsp SharePoint .wsp (创建*) 步骤。
 
 1. 验证功能和包，以确保包的物理和语义结构正确。
 
@@ -74,8 +74,8 @@ ms.locfileid: "121425539"
 ## <a name="package-folder-structure"></a>包文件夹结构
  打包项目 *SharePoint，SolutionFolder\bin \\ \<BuildConfiguration>* 文件夹中会创建一个 *.wsp* 文件。 例如，如果解决方案位于 *C：\Visual Studio 2013\Projects\ListDefinition1，* 并且生成配置设置为 Release，*则 .wsp* 文件位于 *C：\Visual Studio 2013\Projects\ListDefinition1\bin\Release* 中。
 
-## <a name="see-also"></a>另请参阅
-- [如何：自定义SharePoint包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
+## <a name="see-also"></a>请参阅
+- [如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [如何：使用包设计器向包添加和删除功能和项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [如何：使用 SharePoint 任务创建 MSBuild 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)
 - [如何：使用 SharePoint 任务创建 MSBuild 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

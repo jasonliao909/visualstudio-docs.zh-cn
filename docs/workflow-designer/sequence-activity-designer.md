@@ -1,5 +1,5 @@
 ---
-title: 工作流设计器序列活动设计器
+title: 工作流设计器 - 序列活动设计器
 description: 了解 Sequence 活动如何包含按顺序执行的子活动的有序集合。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -24,11 +24,11 @@ ms.locfileid: "121393546"
 
 <xref:System.Activities.Statements.Sequence> 活动包含子活动的已排序集合，将按该排序执行这些子活动。
 
-按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 当你有一个简单的分支或循环程序流需要为图示建模时，请考虑使用 [流程图](../workflow-designer/flowchart-activity-designer.md) 。
+按顺序执行一组活动的另一个方法是使用 <xref:System.Activities.Statements.Flowchart> 活动。 当你有 [一个简单的](../workflow-designer/flowchart-activity-designer.md) 分支或循环程序流时，请考虑使用流程图，以关系图方式对流进行建模。
 
 ## <a name="using-the-sequence-activity-designer"></a>使用 Sequence 活动设计器
 
-若要添加 <xref:System.Activities.Statements.Sequence> 活动，请将 " **Sequence** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上。 若要向此活动添加子活动 <xref:System.Activities.Statements.Sequence> ，请将 " **工具箱** " 中的某些其他活动拖放到框中的三角形上，并在提示文本 "将活动放在此处"。
+若要添加 <xref:System.Activities.Statements.Sequence> 活动，请将"序列"活动设计器从"工具箱"拖动到工作流设计器图面。 若要将子活动添加到此活动，请从"工具箱"拖动一些其他活动，并将其拖放到框中提示文本为"此处放置活动 <xref:System.Activities.Statements.Sequence> "的三角形上。 
 
 ### <a name="sequence-activity-properties-in-the-workflow-designer"></a>工作流设计器中的 Sequence 活动属性
 
@@ -38,7 +38,7 @@ ms.locfileid: "121393546"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Sequence> 活动设计器在标头中的友好名称。 默认值为 Sequence。 可以在属性网格或直接在活动设计器的标头中编辑该值。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [流程图](../workflow-designer/flowchart-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

@@ -33,7 +33,7 @@ ms.locfileid: "121424102"
 
 ### <a name="to-add-groups-to-a-built-in-tab"></a>将组添加到内置选项卡
 
-1. 在 中右键单击功能区代码 **解决方案资源管理器，** 然后单击 **"视图设计器"。**
+1. 右键单击 解决方案资源管理器 中的 **功能区代码** 文件，然后单击 **"视图设计器"。**
 
     > [!NOTE]
     > 如果功能区代码文件未显示在 **解决方案资源管理器，则必须** 向项目 **添加功能** 区项。 请参阅 [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
@@ -48,7 +48,7 @@ ms.locfileid: "121424102"
 
      有关控件 ID 的列表，请参阅 Office [2010 帮助文件：Office Fluent 用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-5. 从 **"Office"的**"功能区控件"**选项卡中，** 将组拖动到选项卡上。
+5. 从 **"Office"的**"功能区控件"选项卡 **中，** 将组拖动到选项卡上。
 
     > [!NOTE]
     > 设计器中不显示内置组。 因此，确定是否使用内置选项卡的唯一方法就是检查选项卡的 **ControlId** 属性。
@@ -69,7 +69,7 @@ ms.locfileid: "121424102"
 
      有关控件 ID 的列表，请参阅 Office [2010 帮助文件：Office Fluent 用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

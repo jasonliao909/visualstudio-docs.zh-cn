@@ -46,7 +46,7 @@ ms.locfileid: "121394131"
 ## <a name="automate-infopath-by-using-an-add-in"></a>使用外接程序自动执行 InfoPath
  若要从使用 Visual Studio 中的 Office 开发工具创建的 Office VSTO 外接程序访问 InfoPath 对象模型，请在项目中使用 `Application` 类的 `ThisAddIn` 字段。 `Application` 字段返回 <xref:Microsoft.Office.Interop.InfoPath.Application> 对象，该对象表示 InfoPath 的当前实例。 有关详细信息，请参阅[Program VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
 
- 从外接程序调用 InfoPath 对象模型VSTO，将使用 InfoPath 的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和 InfoPath 中的 COM 对象模型之间的桥梁。 InfoPath 主互操作程序集中的所有类型都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空间中定义的。 有关 InfoPath 主互操作程序集的信息，请参阅关于 Microsoft Office [InfoPath 主互操作程序集](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)。 有关主互操作程序集的一般详细信息，请参阅 Office[解决方案](../vsto/office-solutions-development-overview-vsto.md)开发概述 &#40;VSTO&#41;Office[主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
+ 从外接程序调用 InfoPath 对象VSTO，将使用 InfoPath 的主互操作程序集中提供的类型。 该主互操作程序集将作为 VSTO 外接程序中的托管代码和 InfoPath 中的 COM 对象模型之间的桥梁。 InfoPath 主互操作程序集中的所有类型都是在 <xref:Microsoft.Office.Interop.InfoPath> 命名空间中定义的。 有关 InfoPath 主互操作程序集的信息，请参阅关于 Microsoft Office [InfoPath 主互操作程序集](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)。 有关主互操作程序集的一般详细信息，请参阅 Office[解决方案](../vsto/office-solutions-development-overview-vsto.md)开发概述&#40;VSTO&#41;Office[主互操作程序集](../vsto/office-primary-interop-assemblies.md)。
 
 ## <a name="customize-the-user-interface-of-infopath-by-using-an-add-in"></a>使用外接程序自定义 InfoPath 的用户界面
  为 InfoPath VSTO外接程序时，有几个不同的 UI 自定义选项。 下表列出了其中一些选项。
@@ -58,7 +58,7 @@ ms.locfileid: "121394131"
 
  有关自定义 InfoPath 和其他应用程序 UI Microsoft Office，请参阅自定义 Office [UI。](../vsto/office-ui-customization.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [关于 Microsoft Office InfoPath 主互操作程序集](/office/client-developer/infopath/external-automation/about-the-microsoft-office-infopath-primary-interop-assembly)
 - [外接程序VSTO编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
 - [Office解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
