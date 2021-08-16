@@ -8,14 +8,15 @@ ms.assetid: e88224ab-ff61-4a3a-b6b8-6f3694546cac
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f0b7ab161a252e1d3a89ef856325963bddffdc56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51cdb3f5af6f77d67cdcd9342e39aca6a5dcf24730cb9565ce5b0404b24e1543
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866848"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347163"
 ---
 # <a name="how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-or-designer"></a>如何：分配存储流程来执行更新、插入和删除操作（O/R 设计器）
 
@@ -70,4 +71,4 @@ ms.locfileid: "99866848"
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
 - [LINQ to SQL (.NET Framework)](/dotnet/framework/data/adonet/sql/linq/index)
-- [ ( .NET Framework 的插入、更新和删除操作) ](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)
+- [ (.NET Framework 的插入、更新和删除操作) ](/dotnet/framework/data/adonet/sql/linq/insert-update-and-delete-operations)

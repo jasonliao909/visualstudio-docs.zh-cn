@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板的 BuildOnLoad 属性和元素) "
+title: 'BuildOnLoad 属性和元素 (Visual Studio 模板) '
 titleSuffix: ''
 description: 了解 BuildOnLoad 属性和元素以及它如何指定在创建项目后是否立即生成项目。
 ms.custom: SEO-VS-2020
@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8eb563e765c3d50950f61a0ca49e5349a0e7249a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 912616d180d732d987a2ff5aa16fbd522458cafc5b4250ca89fd53bd36867977
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068175"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452649"
 ---
 # <a name="buildonload-attribute-and-element"></a>BuildOnLoad 特性和元素
 

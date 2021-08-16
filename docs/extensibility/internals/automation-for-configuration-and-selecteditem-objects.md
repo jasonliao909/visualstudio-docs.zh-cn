@@ -1,6 +1,6 @@
 ---
 title: Configuration 和 SelectedItem 对象的自动化 |Microsoft Docs
-description: 了解如何通过在 Shell 互操作中使用配置和 SelectedItem 对象自动执行 Visual Studio 生成和选定项处理。
+description: 了解如何在 Shell 互操作中使用配置和 SelectedItem 对象自动执行 Visual Studio 生成和选定项的处理。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,18 +11,19 @@ ms.assetid: 120377f1-51aa-4445-b2f7-06ab7fc2b47f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a95fc06c5d84a936cdb1ada3369f584381dfe7f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: eac3740444d1c48a196d717e073da035f5920aec468ff216ad22ebdc6cb65918
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901625"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359749"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>Configuration 和 SelectedItem 对象的自动化
 
-你可以在 Visual Studio 中自动执行生成和选定项处理。
+可以在 Visual Studio 中自动执行生成和所选项的处理。
 
 ## <a name="automation-for-builds"></a>生成自动化
 
@@ -32,7 +33,7 @@ ms.locfileid: "112901625"
 
 ## <a name="automation-for-selecteditem"></a>SelectedItem 自动化
 
-不需要为对象提供实现， `SelectedItem` 因为 Visual Studio 包含标准实现。 不过，您可以 `SelectedItem` 根据需要实现对象。 必须实现一个包含接口的对象 `SelectedItem` ，并返回对方法的调用的响应，并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> `VSITEMID` 将设置为 [__VSHPROPID。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)。
+`SelectedItem`由于 Visual Studio 包含标准实现，因此不必为对象提供实现。 不过，您可以 `SelectedItem` 根据需要实现对象。 必须实现一个包含接口的对象 `SelectedItem` ，并返回对方法的调用的响应，并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> `VSITEMID` 将设置为 [__VSHPROPID。VSHPROPID_ExtSelectedItem](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_ExtSelectedItem>)。
 
 ## <a name="see-also"></a>另请参阅
 

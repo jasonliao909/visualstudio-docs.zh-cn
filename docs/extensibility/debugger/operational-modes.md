@@ -10,14 +10,15 @@ ms.assetid: f69972d0-809d-40df-9da3-04738791391c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 559df92545f4c14eb0575e7ef758e73028349b76
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: faf52c9fc112caf38b3706f54eaafc486fd4b001f30bb4e7413abed9f9e1b911
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899103"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452480"
 ---
 # <a name="operational-modes"></a>操作模式
 IDE 可以运行三种模式，如下所示：
@@ -31,7 +32,7 @@ IDE 可以运行三种模式，如下所示：
   自定义调试引擎 (DE) 模式之间的转换是一个实现决策，要求你熟悉转换机制。 DE 可能直接实现这些模式，也可能不直接实现这些模式。 这些模式实际上就是调试包模式，这些模式基于用户操作或 DE 中的事件进行切换。 例如，从运行模式转换到中断模式是由 DE 中的停止事件启动的。 从中断模式到运行模式或步骤模式的转换由执行步骤或执行等操作的用户启动。 有关 DE 转换的信息，请参阅 [控制执行](../../extensibility/debugger/control-of-execution.md)。
 
 ## <a name="design-mode"></a><a name="vsconoperationalmodesanchor1"></a> 设计模式
- 设计模式是调试的非Visual Studio状态，在此期间，可以在应用程序中设置调试功能。
+ 设计模式是调试过程Visual Studio运行状态，在此期间，可以在应用程序中设置调试功能。
 
  在设计模式期间，只会使用几个调试功能。 开发人员可以选择设置断点或创建监视表达式。 当 IDE 位于设计模式时，永远不会加载或调用 DE。 仅在运行模式和中断模式期间与 DE 交互。
 

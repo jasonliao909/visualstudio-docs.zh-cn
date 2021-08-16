@@ -11,17 +11,18 @@ ms.assetid: 664e7fe5-9100-4b7d-9dc5-e5a4dd0d0451
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0a902db31cb4d48810e673e7807bd3944c2a875
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17bcdaf97ae37aead254bb04c2ffde96e45bbf55501acd4817d51d9d97e95ec2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053524"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449191"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 获取 (DE) 运行程序的调试引擎的名称和标识符。

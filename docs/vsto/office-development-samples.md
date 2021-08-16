@@ -1,6 +1,6 @@
 ---
-title: Office 开发示例
-description: 了解演示如何使用 Microsoft Office 开发人员工具创建 Office 解决方案的示例 Visual Studio 应用程序。
+title: Office开发示例
+description: 了解示例Visual Studio应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具创建Office解决方案。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -12,23 +12,24 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: caf3178355697b8dba997dbcb66dfa8ef5569e36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44385ed995d716854c3b5b40b1aed4b2c8e3debacc93f13a1c220df1d2bcf975
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926568"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365962"
 ---
-# <a name="office-development-samples"></a>Office 开发示例
+# <a name="office-development-samples"></a>Office开发示例
   Visual Studio 包含示例应用程序，这些应用程序演示如何使用 Microsoft Office 开发人员工具来创建 Office 解决方案。 这些示例中的代码阐释了用于生成 Office 解决方案的语法、结构和技术。
 
- 有关最新示例，请参阅 [MSDN 开发人员示例：通过](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) Microsoft 网站上的代码学习。
+ 有关最新示例，请参阅 MICROSOFT 网站上 [MSDN 开发人员示例：](https://code.msdn.microsoft.com/site/search?query=vsto&f%5B1%5D.Value=vsto&f%5B1%5D.Type=SearchText&f%5B0%5D.Value=11.0&f%5B0%5D.Type=VisualStudioVersion&f%5B0%5D.Text=Visual%20Studio%2011&ac=8) 通过代码学习。
 
  [!INCLUDE[note_security_multiplesample](../vsto/includes/note-security-multiplesample-md.md)]
 
-## <a name="office-development-samples"></a>Office 开发示例
+## <a name="office-development-samples"></a>Office开发示例
 
 |示例|说明|
 |------------|-----------------|
@@ -43,4 +44,4 @@ ms.locfileid: "99926568"
 |VBA 和 VSTO 互操作性示例|演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Excel 文档级自定义项中的方法。<br /><br /> 只能联机访问本示例。|
 
 ## <a name="see-also"></a>另请参阅
-- [Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)
+- [编程中的Office任务](../vsto/common-tasks-in-office-programming.md)

@@ -11,17 +11,18 @@ ms.assetid: 1c7fe777-615e-4929-9ed4-970d9fe0eb81
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84e52867c44fa1387aaf7501a827168651099e9c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87fb81520aba329bae924fa8a639d6a24f082f3db89a8bb691b107f22e30234f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096208"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452326"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 指定要检索的有关调试属性对象的信息。

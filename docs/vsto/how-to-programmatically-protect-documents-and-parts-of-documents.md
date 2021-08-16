@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: af3cc1d9c34bf0d6dc503ca2aabe35de5848265c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d984fb947a4f782fe2a292dd0f28befc50db2f64234e07ecd542d7c092c098e8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827599"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366220"
 ---
 # <a name="how-to-programmatically-protect-documents-and-parts-of-documents"></a>如何：以编程方式保护文档和文档的某些部分
   你可以为 Microsoft Office Word 文档添加保护，以防止用户对文档进行任何编辑操作。
@@ -32,7 +33,7 @@ ms.locfileid: "107827599"
  还可以将文档的特定区域标记为例外，使指定用户只能编辑文档的这些区域。 例如，你可能希望保护整个文档，但某个特定的书签除外。 可选择添加密码，这样一来，除非用户知道此密码，否则无法删除文档保护。
 
 > [!NOTE]
-> 下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的文档保护程序示例。
+> 下面的示例未使用密码保护；但是，在添加文档保护时，你可能想考虑使用密码。 有关详细信息，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的文档保护程序示例。
 
  你也可以使用内容控件来保护文档的各个部分。 有关详细信息，请参阅 [如何：使用内容控件保护文档的各个部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
@@ -73,7 +74,7 @@ ms.locfileid: "107827599"
 
 ## <a name="see-also"></a>另请参阅
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)
-- [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)
+- [Office 文档的密码保护](../vsto/password-protection-on-office-documents.md)
 - [如何：允许代码在具有受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)
 - [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

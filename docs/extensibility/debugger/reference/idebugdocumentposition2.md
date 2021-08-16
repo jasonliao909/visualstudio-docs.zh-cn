@@ -11,14 +11,15 @@ ms.assetid: 0e838ced-12bb-4efc-b811-2b7c034b77b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b7c4c8e469dff76e2af631c4943305b0e3ee8e7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8a81adc37d0d87a7327e25fa870b60cfcf8e4e1e4177e69f4fa3be2313475403
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066394"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452168"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 此接口表示源文件中的抽象位置。

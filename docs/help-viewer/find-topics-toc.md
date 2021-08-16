@@ -14,14 +14,15 @@ ms.assetid: 8b98464d-2b05-4710-ad68-5647e78c6b7b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a6b8bbce5e25bd1de68aa8b8eafd02f741408f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1d5af58cdc36a47489fe911243d96780802fab515db80315fc8bf5bb91e51fb2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944207"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358592"
 ---
 # 如何：在目录中查找主题
 

@@ -11,17 +11,18 @@ ms.assetid: 79f5e765-9aac-4b6e-82ef-bed88095e9ba
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b250654f45f18adcfd9c52a6047b2b8798be75b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0f4de8d07e43246a9d88a3f37a13317a41c0e5c8dad691fdecaf333ce75a81ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096364"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360841"
 ---
 # <a name="debug_address"></a>DEBUG_ADDRESS
 此结构表示地址。
@@ -57,17 +58,17 @@ public struct DEBUG_ADDRESS {
 标识此地址的类或类型的标记。
 
 > [!NOTE]
-> 此值特定于符号提供程序，因此除了作为类类型的标识符外，没有任何常规含义。
+> 此值特定于符号提供程序，因此除了作为类类型的标识符外，没有常规含义。
 
 `addr`\
-一个 [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md) 结构，它包含描述各个地址类型的结构的并集。 值 `addr` 。`dwKind` 来自 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 枚举，该枚举说明了如何解释联合。
+一 [DEBUG_ADDRESS_UNION，](../../../extensibility/debugger/reference/debug-address-union.md) 其中包含描述各个地址类型的结构联合。 值 `addr` 。`dwKind` 来自 [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md) 枚举，该枚举说明了如何解释联合。
 
 ## <a name="remarks"></a>备注
-此结构传递到要填写的 [GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 方法。
+此结构将传递给要填充 [的 GetAddress](../../../extensibility/debugger/reference/idebugaddress-getaddress.md) 方法。
 
-**警告 [仅 c + +]**
+**警告 [仅 C++]**
 
-如果 `addr.dwKind` 为，并且不是 `ADDRESS_KIND_METADATA_LOCAL` `addr.addr.addrLocal.pLocal` null 值，则必须 `Release` 对标记指针调用：
+如果 `addr.dwKind` `ADDRESS_KIND_METADATA_LOCAL` 为 ，并且 `addr.addr.addrLocal.pLocal` 如果 不是 null 值，则必须对 `Release` 标记指针调用 ：
 
 ```
 if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != NULL)
@@ -77,11 +78,11 @@ if (addr.dwKind == ADDRESS_KIND_METADATA_LOCAL && addr.addr.addrLocal.pLocal != 
 ```
 
 ## <a name="requirements"></a>要求
-标头： sh。h
+标头：sh.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

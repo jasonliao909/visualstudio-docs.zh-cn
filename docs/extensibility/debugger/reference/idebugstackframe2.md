@@ -11,14 +11,15 @@ ms.assetid: bd212a6a-dcc6-4756-a77a-e8dfda38b104
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9675627bf3044258a532ca91768619f2c6de3ba
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: efd95513477fce009775e2fb56110e68f2717ae31843b983845e64a970314e40
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053251"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448827"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 此接口表示特定线程中的调用堆栈中的单个堆栈帧。

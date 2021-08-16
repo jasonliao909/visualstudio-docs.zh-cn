@@ -1,6 +1,6 @@
 ---
 description: 检索函数在源文档中的位置。
-title: IDebugFunctionPosition2：： GetOffset |Microsoft Docs
+title: IDebugFunctionPosition2：：GetOffset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 60943782-aec7-4be2-b222-1984ed53a543
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0433f43f89fd3adf1495663149bc5d7bd6497409
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c21f2f69a8995d3b1467c4a77d1b782894b8f325947877bc1b34014770ab6074
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063508"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451947"
 ---
 # <a name="idebugfunctionposition2getoffset"></a>IDebugFunctionPosition2::GetOffset
 检索函数在源文档中的位置。
@@ -42,10 +43,10 @@ int GetOffset(
 
 ## <a name="parameters"></a>参数
 `pPosition`\
-[in，out]一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，它在文档中的位置填充。
+[in， out]一 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，该结构用函数在文档中的位置填充。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

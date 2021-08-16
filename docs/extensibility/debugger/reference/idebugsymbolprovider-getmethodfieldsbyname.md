@@ -11,17 +11,18 @@ ms.assetid: 1f781320-81ef-4037-b068-f1864b271258
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54962d87bcb3de471c9799f4c6be9f969b8eed17
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e4858d9c341ed651ed4d658388f1152e911cb6e5225920c0546679b200d90aad
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086997"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448775"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
 此方法获取表示完全限定方法名称的字段。

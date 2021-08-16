@@ -11,14 +11,15 @@ ms.assetid: 8b73b341-a33a-4ab5-9390-178c9e563d2d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 111e72714f4afd56b7b53e9cc48329ba6ce68162
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87ebb7ebbacbf03dcbf3275fc809ec26bffbada80c2786df10260aa1eab4a075
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074790"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359762"
 ---
 # <a name="checklist-create-a-legacy-language-service"></a>清单：创建旧版语言服务
 以下清单汇总了为核心编辑器创建语言服务时必须执行的基本步骤 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 若要将语言服务集成到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中，必须创建一个调试表达式计算器。 有关详细信息，请参阅[Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)中的 "[编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)"。

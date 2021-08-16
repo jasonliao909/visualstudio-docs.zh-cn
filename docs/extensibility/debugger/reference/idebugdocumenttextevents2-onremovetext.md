@@ -11,17 +11,18 @@ ms.assetid: 1ebeabb2-52a1-4ccc-83cd-9ae7c3541783
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: adc2fc76b9063aa16b134407c9832a57359e0d1a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58e7608a82ab1867171cd8a5aed92c5723a3db0a39810d4de245d44e6b7971db
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066134"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452129"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
 通知调试包文本已从文档中删除。

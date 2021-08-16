@@ -1,6 +1,6 @@
 ---
 title: 如何：自定义 SharePoint 解决方案包 |Microsoft Docs
-description: 使用包设计器可以创建和自定义 SharePoint 解决方案包 ( .wsp) 。 查看或覆盖打包的清单文件。 更改清单模板。
+description: 使用包设计器在 ( .wsp) 上创建和自定义 SharePoint 解决方案包。 查看或覆盖打包的清单文件。 更改清单模板。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,17 +17,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 149e99a3ba86f1eec22d90618abfd8972ed68e97
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 909bb9952ce788418a5372955e1df56ec719ce633685728fc7951188dac6ba87
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959891"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121352924"
 ---
 # <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
-  您可以使用包设计器来创建和自定义包 (*.wsp*) 。 例如，你可以添加 SharePoint 项目项和功能，指定是否在部署解决方案时重置 Web 服务器，并设置部署服务器类型。
+  您可以使用包设计器来创建和自定义包 (*.wsp*) 。 例如，可以添加 SharePoint 项目项和功能，指定是否在部署解决方案时重置 Web 服务器，并设置部署服务器类型。
 
 ## <a name="open-the-package-designer"></a>打开包设计器
 
@@ -52,7 +53,7 @@ ms.locfileid: "99959891"
     > 当你打开包模板的清单 XML 文件时，将自动验证这些文件，你可以忽略出现在 "错误列表" 窗口中的警告。
 
 ## <a name="change-the-manifest-template"></a>更改清单模板
- 您可以在 Visual Studio XML 编辑器或 "清单模板" 窗格中更改打包清单文件的 XML 代码。 对 XML 代码所做的任何更改都将合并到包的打包清单文件中。
+ 可以在 Visual Studio xml 编辑器 "或" 清单模板 "窗格中更改打包清单文件的 XML 代码。 对 XML 代码所做的任何更改都将合并到包的打包清单文件中。
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>使用 "XML 编辑器" 更改清单模板
 

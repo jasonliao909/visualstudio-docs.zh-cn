@@ -11,14 +11,15 @@ ms.assetid: 09618d9d-d115-45b6-bccc-de328994b39c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 930996de7fa5366463ec2d60f7cf96d941f6c243
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 08a1ec6e79624d3f1eb74f9b5251a73523a998c739c7ea215e3622643c5b9926
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898612"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359138"
 ---
 # <a name="wizard-interface-idtwizard"></a>向导界面 (IDTWizard)
 集成开发环境 (IDE) 使用接口与 <xref:EnvDTE.IDTWizard> 向导进行通信。 为了在 IDE 中安装，向导必须实现此接口。
@@ -36,7 +37,7 @@ STDMETHOD(Execute)(THIS_
    );
 ```
 
- 对于 " **新建项目** " 和 " **添加新项** " 向导，启动机制非常相似。 若要启动，请调用 <xref:EnvDTE.IDTWizard> Dteinternal 中定义的接口。 唯一的区别是调用接口时传递到接口的上下文和自定义参数集。
+ 对于新的 " **Project** " 和 "**添加新项**" 向导，启动机制非常相似。 若要启动，请调用 <xref:EnvDTE.IDTWizard> Dteinternal 中定义的接口。 唯一的区别是调用接口时传递到接口的上下文和自定义参数集。
 
  以下信息描述了 <xref:EnvDTE.IDTWizard> 向导在 IDE 中工作时必须实现的接口 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 IDE <xref:EnvDTE.IDTWizard.Execute%2A> 在向导上调用方法，并向其传递以下内容：
 

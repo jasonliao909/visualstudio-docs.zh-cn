@@ -10,14 +10,15 @@ ms.assetid: 7ca93aad-4e83-4d81-90f4-998ee114d9b6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: eceb0776fd1cb5e850dab2b97ab6e7e56a684ebd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9848ff2ad312f3dd7d46f4891d9be25add92b0f2f8291beacdbf1050a29d650
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838017"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121284199"
 ---
 # <a name="transactedreceivescope-activity-designer"></a>TransactedReceiveScope 活动设计器
 
@@ -39,9 +40,9 @@ ms.locfileid: "99838017"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活动的可选友好名称。 默认值为 TransactedReceiveScope。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 名称不是绝对必需的，但最好使用显示名称。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|True|<xref:System.ServiceModel.Activities.Receive>将活动放置在活动设计器图面上的 **请求** 块中。|
-|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|False|将拖 <xref:System.Activities.Activity> 放到活动设计器图面上的 **主体** 块中。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.ServiceModel.Activities.TransactedReceiveScope> 活动的可选友好名称。 默认值为 TransactedReceiveScope。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 名称不是绝对必需的，但最好使用显示名称。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Request%2A>|正确|<xref:System.ServiceModel.Activities.Receive>将活动放置在活动设计器图面上的 **请求** 块中。|
+|<xref:System.ServiceModel.Activities.TransactedReceiveScope.Body%2A>|错误|将拖 <xref:System.Activities.Activity> 放到活动设计器图面上的 **主体** 块中。|
 
 ## <a name="see-also"></a>另请参阅
 

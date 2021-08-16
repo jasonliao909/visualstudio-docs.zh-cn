@@ -10,14 +10,15 @@ ms.assetid: 8d096de3-33b4-427a-a122-4aeff8a72da0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f2fa91b41017512b3f38ad61b800b293e0abaa1
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a0e6aa0f19c8ae8f19fb49a1322e12cae0aa65305217d5ff8a8361132e347a37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898339"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360048"
 ---
 # <a name="editor-imports"></a>编辑器导入
 你可以导入多个编辑器服务、工厂和代理，它们为你的扩展提供对核心编辑器的不同类型的访问。 例如，你可以导入， <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigatorSelectorService> 以便为你提供 <xref:Microsoft.VisualStudio.Text.Operations.ITextStructureNavigator> 给定内容类型的。  (此导航器可对文本缓冲区执行不同种类的搜索。 ) 
@@ -25,7 +26,7 @@ ms.locfileid: "112898339"
  若要使用编辑器导入，请将其作为导出 Managed Extensibility Framework 组件部分的类的字段或属性导入。
 
 > [!NOTE]
-> 有关 Managed Extensibility Framework 的详细信息，请参阅 [Managed Extensibility Framework (MEF) ](/dotnet/framework/mef/index)。
+> 有关 Managed Extensibility Framework 的详细信息，请参阅[Managed Extensibility Framework (MEF) ](/dotnet/framework/mef/index)。
 
 ## <a name="import-syntax"></a>Import 语法
  下面的示例演示如何导入编辑器选项工厂服务。
@@ -59,7 +60,7 @@ internal IEditorOptionsFactoryService m_editorOptions = null;
 - [演练：显示灯泡建议](../extensibility/walkthrough-displaying-light-bulb-suggestions.md)
 
 ## <a name="import-the-service-provider"></a>导入服务提供程序
- 您还可以导入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 在 VisualStudio) 中找到的 (，以获取对 Visual Studio 服务的访问权限：
+ 您还可以导入 <xref:Microsoft.VisualStudio.Shell.SVsServiceProvider> 在 VisualStudio) 中找到的 (，以获取 Visual Studio 服务的访问权限：
 
 ```csharp
 [Import]

@@ -11,17 +11,18 @@ ms.assetid: 0c9c0b2b-7540-4424-adb5-fce7aa37a026
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad540166ff769aaa894ad4142843553951217234
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 996e470d3ee61efde790d95adc367d9b1b86688c4df64cefae9384e0a657d050
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065029"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449048"
 ---
 # <a name="idebugproperty2getextendedinfo"></a>IDebugProperty2::GetExtendedInfo
 获取属性的扩展信息。

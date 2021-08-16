@@ -1,6 +1,6 @@
 ---
-description: 获取调试引擎 (DE) 的 GUID。
-title: IDebugEngine2：： GetEngineID |Microsoft Docs
+description: 获取调试引擎的 GUID (DE) 。
+title: IDebugEngine2：：GetEngineID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 0d5674c8-a9b9-4b72-8211-d2d68695775a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2d7a483517f89c91005f465c539d2af4b9d442a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4b70088fb3681eaadd793d3e0fc0b7549e71c9cdeca0faec4f5f8afd9897f2e6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088024"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452116"
 ---
 # <a name="idebugengine2getengineid"></a>IDebugEngine2::GetEngineID
-获取调试引擎 (DE) 的 GUID。
+获取调试引擎的 GUID (DE) 。
 
 ## <a name="syntax"></a>语法
 
@@ -42,16 +43,16 @@ int GetEngineID(
 
 ## <a name="parameters"></a>参数
 `pguidEngine`\
-弄返回已取消的的 GUID。
+[out]返回 DE 的 GUID。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-典型 Guid 的一些示例包括 `guidScriptEng` 、 `guidNativeEng` 或 `guidSQLEng` 。 新的调试引擎将创建自己的用于标识的 GUID。
+典型 GUID 的一些示例包括 `guidScriptEng` `guidNativeEng` 、 或 `guidSQLEng` 。 新的调试引擎将创建自己的 GUID 进行标识。
 
 ## <a name="example"></a>示例
-下面的示例演示如何对 `CEngine` 实现 [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为实现 `CEngine` [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CEngine::GetEngineId(GUID *pguidEngine) {

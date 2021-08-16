@@ -9,17 +9,18 @@ ms.assetid: 524eb882-0ad5-4bfb-95eb-eb3abb3d0237
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4dd0ffb94f25ae8ac9566571a645d706fa224cd8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e9aa54f6832734709f8fdabd1d3428c4b54e5741972b651eb9ab2cdf3209cf95
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088310"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452285"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 扩展 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 接口，以便能够检索模块和进程接口。

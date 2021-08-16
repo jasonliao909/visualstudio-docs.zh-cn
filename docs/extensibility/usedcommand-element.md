@@ -1,6 +1,6 @@
 ---
-title: UsedCommand 元素 |Microsoft Docs
-description: UsedCommand 元素允许 VSPackage 访问在另一个 .vsct 文件中定义的命令。
+title: UsedCommand 元素|Microsoft Docs
+description: UsedCommand 元素使 VSPackage 能够访问在另一个 .vsct 文件中定义的命令。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 99cd05d3-644a-42ff-b289-8458cd1b20c0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9d120353b9d6191bfcaae38151eb970ab1071b99
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 33d6d5626f8ff96e9c52a71c4edfbc17de65eb749b90aa646d4dd53cf4edb9ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903042"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358852"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
-允许 VSPackage 访问在 .vsct 文件中定义的命令。 例如，如果你的 VSPackage 使用由 shell 定义的标准 **复制** 命令， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 则可以将命令添加到菜单或工具栏，而无需重新实现它。
+使 VSPackage 能够访问在另一个 .vsct 文件中定义的命令。 例如，如果 VSPackage 使用标准 **Copy** 命令（由 shell 定义），可以将该命令添加到菜单或工具栏，而无需 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 重新实现该命令。
 
 ## <a name="syntax"></a>语法
 
@@ -34,26 +35,26 @@ ms.locfileid: "112903042"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
 |GUID|必需。 标识命令的 GUID ID 对的 GUID。|
 |id|必需。 标识命令的 GUID ID 对的 ID。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |无||
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[UsedCommands 元素](../extensibility/usedcommands-element.md)|将 UsedCommand 元素和其他 UsedCommands 分组分组。|
+|[UsedCommands 元素](../extensibility/usedcommands-element.md)|对 UsedCommand 元素和其他 UsedCommands 分组进行分组。|
 
 ## <a name="remarks"></a>备注
- 通过将命令添加到 `<UsedCommands>` 元素，VSPackage 向 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 环境通知 VSPackage 需要该命令。 应 `<UsedCommand>` 为包所需的任何命令添加一个元素，Visual Studio 的所有版本和配置中可能不包含此元素。 例如，如果你的包调用特定于 Visual C++ 的命令，则 Visual Web Developer 的用户将不能使用该命令，除非你 `<UsedCommand>` 为该命令包含一个元素。
+ 通过将命令添加到 `<UsedCommands>` 元素，VSPackage 会通知 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 环境 VSPackage 需要 命令。 应为包要求的任何命令添加一个 元素，该元素可能不会包含在包的所有版本和配置 `<UsedCommand>` Visual Studio。 例如，如果包调用特定于 Visual C++ 的命令，则除非为命令包含 元素，否则该命令将不适用于 Visual Web 开发人员 `<UsedCommand>` 的用户。
 
 ## <a name="example"></a>示例
 

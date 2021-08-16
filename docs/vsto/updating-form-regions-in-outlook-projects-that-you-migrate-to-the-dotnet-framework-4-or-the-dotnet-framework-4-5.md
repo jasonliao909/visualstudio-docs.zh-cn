@@ -1,6 +1,6 @@
 ---
 title: 迁移到 .NET Framework 4.5 时更新 Outlook 窗体区域
-description: 如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 .NET Framework 4 或更高版本，则必须修改代码。
+description: 如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 .NET Framework 4 或更高版本，则必须修改你的代码。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -13,21 +13,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 15b212a8b7dde85e66b18b78d356bdb31c62836a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1cc53e619c9607a77847c1e0dba8ba19f97e2d1d02c0afa7f77d9fcab774471
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921897"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365869"
 ---
 # <a name="update-outlook-form-regions-when-migrated-to-net-framework-45"></a>迁移到 .NET Framework 4.5 时更新 Outlook 窗体区域
 
   如果具有窗体区域的 Outlook VSTO 外接程序项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须对生成的窗体区域代码和在运行时实例化某些窗体区域类的任何代码进行更改。
 
 ## <a name="update-the-generated-form-region-code"></a>更新生成的窗体区域代码
- 如果该项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须更改生成的窗体区域代码。 对在 Visual Studio 中设计的窗体区域和从 Outlook 导入的窗体区域所做的更改是不同的。 有关这些类型的窗体区域之间的差异的详细信息，请参阅 [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+ 如果该项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须更改生成的窗体区域代码。 对在 Visual Studio 中设计的窗体区域和从 Outlook 导入的窗体区域所做的更改是不同的。 有关这些类型的窗体区域之间的差异的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
 ### <a name="to-update-the-generated-code-for-a-form-region-that-you-designed-in-visual-studio"></a>若要更新在 Visual Studio 中设计的窗体区域的生成代码
 
@@ -190,7 +191,7 @@ ms.locfileid: "99921897"
 ## <a name="instantiate-form-region-classes"></a>实例化窗体区域类
  必须修改动态实例化某些窗体区域类的任何代码。 在面向 .NET Framework 3.5 的项目中，你可以直接实例化窗体区域类（比如 `Microsoft.Office.Tools.Outlook.FormRegionManifest`）。 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中，这些类是你无法直接实例化的接口。
 
- 如果项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须使用 `Globals.Factory` 属性提供的方法实例化这些接口。 有关属性的详细信息 `Globals.Factory` ，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
+ 如果项目的目标框架更改为 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本，则必须使用 `Globals.Factory` 属性提供的方法实例化这些接口。 有关属性的详细信息 `Globals.Factory` ，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
 
  下表列出了要用于实例化面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或更高版本的项目中的类型的窗体区域类型和方法。
 

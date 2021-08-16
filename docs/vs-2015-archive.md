@@ -7,12 +7,12 @@ author: ghogen
 ms.author: ghogen
 manager: jmartens
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: d1ddefb07d95901baa70553fdc2a322aa36f6e87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9abc7752358c29a0331497303ebb71a11a235ce726f0a08f0cd28d21856c8c57
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947966"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366480"
 ---
 # <a name="visual-studio-2015-documentation"></a>Visual Studio 2015 文档
 

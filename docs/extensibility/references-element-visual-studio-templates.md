@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 模板 (引用元素) |Microsoft Docs
-description: 了解引用元素以及它如何对模板添加到项目的程序集引用进行分组。
+title: References 元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 References 元素及其如何对模板添加到项目的程序集引用进行分组。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: be367bbd1b466c5df3051af384ccefdcf93f8b44
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9cf14c207d7ffb560612d963571fc11cca6d55e68ac4418afa8ec71bb69c0920
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056566"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359008"
 ---
-# <a name="references-element-visual-studio-templates"></a>Visual Studio 模板 (引用元素) 
-将模板添加到项目的程序集引用分组。
+# <a name="references-element-visual-studio-templates"></a>引用元素 (Visual Studio模板) 
+对模板添加到项目的程序集引用进行分组。
 
  \<VSTemplate> \<TemplateContent>
  \<References>
@@ -49,7 +49,7 @@ ms.locfileid: "105056566"
 
 |元素|说明|
 |-------------|-----------------|
-|[引用](../extensibility/reference-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定向项目添加项时要添加的程序集引用。 元素中必须有一个或多个 `Reference` 元素 `References` 。|
+|[引用](../extensibility/reference-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定向项目添加项时要添加的程序集引用。 元素中必须有一 `Reference` 个或多个 `References` 元素。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -60,10 +60,10 @@ ms.locfileid: "105056566"
 ## <a name="remarks"></a>备注
  `References` 是 `TemplateContent` 的可选子元素。
 
- `Reference`和 `References` 元素只能在属性值为的 *.vstemplate* 文件中使用 `Type` `Item` 。
+ 和 `Reference` `References` 元素只能在特性值为 *的 .vstemplate* `Type` 文件中使用 `Item` 。
 
 ## <a name="example"></a>示例
- 下面的示例演示 `TemplateContent` 项模板的元素。 此 XML 添加对 *System.dll* 和 *System.Data.dll* 程序集的引用。
+ 下面的示例演示项 `TemplateContent` 模板的 元素。 此 XML 添加对 *程序集System.dllSystem.Data.dll**的引用。*
 
 ```xml
 <TemplateContent>

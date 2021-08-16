@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 75be4f32abd5ab0bdf945ad250b73a6f060cae25
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 27b719e153d3545dca0c0c113c173a238bd5901e0a72b94e7740e1c7aed5bac0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074959"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359996"
 ---
 # <a name="fullclassname-element-visual-studio-template-wizard-extension"></a> (Visual Studio 模板向导扩展的 FullClassName 元素) 
 实现接口的类的完全限定名称 `IWizard` 。
@@ -58,7 +58,7 @@ ms.locfileid: "105074959"
  `FullClassName` 是 `WizardExtension` 的必需子元素。
 
 ## <a name="example"></a>示例
- 下面的示例演示了 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 下面的示例演示 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"

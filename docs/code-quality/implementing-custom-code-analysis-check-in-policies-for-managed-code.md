@@ -12,28 +12,29 @@ ms.assetid: fd029003-5671-4b24-8b6f-032e0a98b2e8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8e682c3d3312be5c4f4639fc2642a398e321fc78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d460c6f8e683254d8d7e709d1ab2eedb3dbc144acd12a7f25839b1ae562fca40
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859874"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455304"
 ---
 # <a name="implement-custom-code-analysis-check-in-policies-for-managed-code"></a>实现托管代码的自定义代码分析签入策略
 
-代码分析签入策略指定了一组规则，即，Azure DevOps 项目的成员必须在源代码中运行，然后才能将其签入到版本控制中。 Microsoft 提供一组标准 *规则集* ，将代码分析规则分组到功能区域。 *自定义签入策略规则集* 指定一组特定于项目的代码分析规则。 规则集存储在一个. 规则文件中。
+代码分析签入策略指定了一组规则，这些规则在将 Azure DevOps 项目的成员签入到版本控制之前必须在源代码中运行。 Microsoft 提供一组标准 *规则集* ，将代码分析规则分组到功能区域。 *自定义签入策略规则集* 指定一组特定于项目的代码分析规则。 规则集存储在一个. 规则文件中。
 
-签入策略是在 Azure DevOps 项目级别设置的，并由版本控制树中的规则集文件的位置指定。 团队策略自定义规则集的版本控制位置没有限制。
+签入策略在 Azure DevOps 项目级别设置，并由版本控制树中的规则集文件的位置指定。 团队策略自定义规则集的版本控制位置没有限制。
 
 为每个项目的 "属性" 窗口中的各个代码项目配置代码分析。 代码项目的自定义规则集由本地计算机上的文件组文件的物理位置指定。 如果所指定的 .ruleset 文件位于代码项目所在的驱动器上，则 Visual Studio 将在项目配置中使用文件的相对路径。
 
 创建 Azure DevOps 项目自定义规则集的建议做法是将签入策略 "规则集文件" 存储在不属于任何代码项目的特殊文件夹中。 如果将文件存储在专用文件夹中，则可以应用权限来限制谁可以编辑规则文件，并且可以轻松地将包含项目的目录结构移到另一个目录或计算机。
 
-## <a name="create-the-project-custom-check-in-rule-set"></a>创建项目自定义签入规则集
+## <a name="create-the-project-custom-check-in-rule-set"></a>创建 Project 自定义签入规则集
 
-若要为 Azure DevOps 项目创建自定义规则集，请首先在 **源代码管理器** 中创建签入策略规则集的特殊文件夹。 然后，创建规则集文件并将文件添加到版本控制。 最后，将规则集指定为项目的代码分析签入策略。
+若要为 Azure DevOps 项目创建自定义规则集，请首先在 **源代码管理器** 中为签入策略规则集创建特殊文件夹。 然后，创建规则集文件并将文件添加到版本控制。 最后，将规则集指定为项目的代码分析签入策略。
 
 > [!NOTE]
 > 若要在 Azure DevOps 项目中创建文件夹，首先必须将项目根映射到本地计算机上的某个位置。
@@ -52,7 +53,7 @@ ms.locfileid: "99859874"
 
 2. 在 " **类别** " 列表中，单击 " **常规**"。
 
-3. 在 " **模板** " 列表中，双击 " **代码分析规则集**"。
+3. 在 "**模板**" 列表中，双击 " **Code Analysis 规则集**"。
 
 4. [指定](../code-quality/how-to-create-a-custom-rule-set.md) 规则集中要包含的规则，然后将规则集文件保存到创建的规则集文件夹中。
 
@@ -60,7 +61,7 @@ ms.locfileid: "99859874"
 
 1. 在 **源代码管理器** 中，右键单击新文件夹，然后单击 " **将项添加到文件夹**"。
 
-     有关详细信息，请参阅 [Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true)。
+     有关详细信息，请参阅[Git 和 Azure Repos](/azure/devops/repos/git/overview?view=vsts&preserve-view=true)。
 
 2. 单击您创建的规则集文件，然后单击 " **完成**"。
 
@@ -71,15 +72,15 @@ ms.locfileid: "99859874"
 4. 在 " **签入** " 对话框中，您可以选择添加注释，然后单击 " **签入**"。
 
     > [!NOTE]
-    > 如果已为 Azure DevOps 项目配置了代码分析签入策略，并且选择了 " **强制签入以仅包含属于当前解决方案的文件**"，则会触发策略失败警告。 在 "策略失败" 对话框中，选择 " **重写策略失败并继续签入**"。 添加所需注释，然后单击 **"确定"**。
+    > 如果已为 Azure DevOps 项目配置了代码分析签入策略，并且已选择 "**强制签入只包含属于当前解决方案的文件**"，则会触发策略失败警告。 在 "策略失败" 对话框中，选择 " **重写策略失败并继续签入**"。 添加所需注释，然后单击 **"确定"**。
 
 ### <a name="to-specify-the-rule-set-file-as-the-check-in-policy"></a>将规则集文件指定为签入策略
 
-1. 在 " **团队** " 菜单上，指向 " **项目设置**"，然后单击 " **源代码管理**"。
+1. 在 "**团队**" 菜单上，指向 " **Project 设置**"，然后单击 "**源代码管理**"。
 
 2. 单击 " **签入策略**"，然后单击 " **添加**"。
 
-3. 在 " **签入策略** " 列表中，双击 " **代码分析**"，并确保已选中 " **强制对托管代码执行代码分析** " 复选框。
+3. 在 "**签入策略**" 列表中，双击 " **Code Analysis**"，并确保已选中 "**强制实施托管代码 Code Analysis** " 复选框。
 
 4. 在 " **运行此规则集** " 列表中，单击 "" **\<Select Rule Set from Source Control>** 。
 
@@ -108,13 +109,13 @@ ms.locfileid: "99859874"
 
 2. 在 **解决方案资源管理器** 中，右键单击代码项目，然后单击 " **属性**"。
 
-3. **单击 "代码分析"**。
+3. **单击 "Code Analysis"**。
 
 4. 如有必要，请单击 " **配置** " 和 " **平台** " 列表中的相应选项。
 
 ::: moniker range="vs-2017"
 
-5. 若要在每次使用指定配置生成代码项目时运行代码分析，请选择 **"生成时启用代码分析**"。
+5. 若要在每次使用指定配置生成代码项目时运行代码分析，请选择 **"在生成时启用 Code Analysis"**。
 
 ::: moniker-end
 

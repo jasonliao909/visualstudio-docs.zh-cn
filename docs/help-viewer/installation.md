@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b966ee38298f35b78722d2fe7e43b86773d5e68
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e075b545f2445e024cc3e4ecd58d2676041db606498bd6298b965b2723db1184
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944142"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358466"
 ---
 # <a name="microsoft-help-viewer-installation"></a>Microsoft Help Viewer 安装
 

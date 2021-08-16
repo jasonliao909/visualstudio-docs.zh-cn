@@ -11,17 +11,18 @@ ms.assetid: cbeef85b-3dd7-4f97-adc2-c4d197d979fc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dd720fbfd20e50a682b77cdeff09f9b8ff0708a3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 01c945163e048c37a6dbc8510276c3965516b096a9c5b1ec44022f0f013cdded
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448879"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 获取与堆栈帧关联的线程。

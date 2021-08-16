@@ -11,14 +11,15 @@ ms.assetid: b1d17f63-7146-4076-a588-034cfc6858b9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c51fac369ed91f00c91482dd7069362d758b7346
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c0d4ccd40f9cd921c012282ffeb2f0f26f9b0a8c11b9907d164e7d639a117993
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065094"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121449074"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此接口允许调试引擎 (DE) 或自定义端口供应商注册程序以进行调试。
@@ -30,7 +31,7 @@ IDebugProgramPublisher2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实施者注意事项
-Visual Studio 将实现此接口，以注册要调试的程序，使其在多个进程中可见进行调试。
+Visual Studio 实现此接口以注册要调试的程序，以使它们在多个进程中可见进行调试。
 
 ## <a name="notes-for-callers"></a>调用方说明
 调用 COM 的 `CoCreateInstance` 函数 `CLSID_ProgramPublisher` 以获取此接口 (参见示例) 。 一个 DE 或自定义端口提供程序使用此接口来注册表示正在调试的程序的程序节点。
@@ -47,7 +48,7 @@ Visual Studio 将实现此接口，以注册要调试的程序，使其在多个
 |[SetDebuggerPresent](../../../extensibility/debugger/reference/idebugprogrampublisher2-setdebuggerpresent.md)|设置指示存在调试器的标志。|
 
 ## <a name="remarks"></a>备注
-此接口使程序和程序节点可用 (即 "发布" 它们) 供 DEs 和会话调试管理器 (SDM) 使用。 若要访问发布的程序和程序节点，请使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 接口。 这是 Visual Studio 可识别正在调试的程序的唯一方法。
+此接口使程序和程序节点可用 (即 "发布" 它们) 供 DEs 和会话调试管理器 (SDM) 使用。 若要访问发布的程序和程序节点，请使用 [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md) 接口。 这是 Visual Studio 可以识别正在调试的程序的唯一方法。
 
 ## <a name="requirements"></a>要求
 标头： msdbg

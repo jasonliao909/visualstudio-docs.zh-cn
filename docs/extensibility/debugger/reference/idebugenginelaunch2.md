@@ -11,14 +11,15 @@ ms.assetid: 5eaf2ad8-3fbf-446e-b48b-5327ad3f5255
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8931590ea20373b5350d880d5fe9495dfe53c4f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 54114cd0ffd732f77793620868903dfe8a0f8d392b52c96ae2e43240252f5c8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077377"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452051"
 ---
 # <a name="idebugenginelaunch2"></a>IDebugEngineLaunch2
 由调试引擎使用 (DE) 启动和终止程序。

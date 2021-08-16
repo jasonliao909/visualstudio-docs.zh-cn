@@ -1,6 +1,6 @@
 ---
 title: 自定义工具 |Microsoft Docs
-description: 了解如何在 Visual Studio 中创建自定义工具，以便将工具与项目中的项相关联，并在每次保存文件时运行该工具。
+description: 了解如何在 Visual Studio 中创建自定义工具，该工具可将工具与项目中的项相关联，并在每次保存文件时运行该工具。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: d669f154-9b23-48b6-b9f6-7419c8dd61a6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d714822605178382ec2ef3574db617f7986cf888
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e414b8a27ee64832d13d6f4614e53131bb9bae4dd01bee63715c9c28edf5493a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091040"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359632"
 ---
 # <a name="custom-tools"></a>自定义工具
 *自定义工具* 使你可以将工具与项目中的项相关联，并在每次保存文件时运行该工具。 某些自定义工具（有时称为 *单文件生成器*）经常用于实现从数据生成代码的转换器，反之亦然。 例如，单文件生成器会创建 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和源代码，并将其放 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 在 *. 设置* 和 *.resx* 文件中。 生成的源代码提供对 *设置* 和 *.resx* 文件中的数据的强类型访问。 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)]和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目类型支持自定义工具; [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目类型不支持。 你自己的项目类型还可以支持自定义工具。
