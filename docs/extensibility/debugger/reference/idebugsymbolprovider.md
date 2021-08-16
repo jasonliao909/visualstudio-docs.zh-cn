@@ -11,14 +11,15 @@ ms.assetid: df5f095f-1dee-46f9-84cf-92417c71d5fb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bda1ec3c65e2f3fdc811b6bde636e78f5a787f32
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9bdbf198b65483a8241de571e2f5fde307a312d25225480c63898da9323898f6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053160"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306759"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
 此接口表示一个符号提供程序，该提供程序提供符号和类型，并将它们作为字段返回。
@@ -44,15 +45,15 @@ IDebugSymbolProvider : IUnknown
 |`Uninitialize`|已否决。 请勿使用。|
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|获取包含调试地址的字段。|
 |`GetField`|已否决。 请勿使用。|
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|将文档位置映射到一个调试地址数组。|
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|将文档上下文映射到一个调试地址数组。|
-|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|将调试地址映射到文档上下文。|
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|将文档位置地图为调试地址的数组。|
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|将文档上下文地图为调试地址的数组。|
+|[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|地图调试地址转换为文档上下文。|
 |[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|获取用于在调试地址编译代码的语言。|
 |`GetGlobalContainer`|已否决。 请勿使用。|
 |[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|获取表示完全限定方法名称的字段。|
 |[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|获取表示完全限定类名的类字段类型。|
 |[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|创建与调试地址相关联的命名空间的枚举器。|
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|将符号名称映射到符号类型。|
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|地图符号名称到符号类型。|
 |[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|获取在方法中跟随给定调试地址的调试地址。|
 
 ## <a name="remarks"></a>备注

@@ -11,17 +11,18 @@ ms.assetid: ed1e874c-f289-4c31-8b6c-04dde03ad0f5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0ee3c9246c25517c2b0bc095c4035400e43d29b5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 23319123066e4c78525f2fb57b07da982a8aef1763d97a66a123d44d876e2eba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096715"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434472"
 ---
 # <a name="bp_location"></a>BP_LOCATION
 指定用于描述断点位置的结构类型。

@@ -1,6 +1,6 @@
 ---
-description: 确定调试引擎 (DE) 是否可以与程序分离。
-title: IDebugProgram2：： CanDetach |Microsoft Docs
+description: 确定调试引擎 (DE) 能否与程序分离。
+title: IDebugProgram2：：CanDetach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: dcd9ab6c-49e5-447e-aa7c-89f571f4a052
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e751429fe26060a515f94aa3d402954ff598d39
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 45d4bef36f5b1e283d654bcee4b6eaac09becd6b7f9ffe54f969f78f6ef1f655
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076168"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276602"
 ---
 # <a name="idebugprogram2candetach"></a>IDebugProgram2::CanDetach
-确定调试引擎 (DE) 是否可以与程序分离。
+确定调试引擎 (DE) 能否与程序分离。
 
 ## <a name="syntax"></a>语法
 
@@ -39,7 +40,7 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果可以分离， `S_OK` 则返回; 否则返回错误代码。 `S_FALSE`如果 DE 无法与程序分离，则返回。
+ 如果 可以分离，则 返回 `S_OK` ;否则返回错误代码。 如果 `S_FALSE` DE 无法从程序分离，则返回 。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

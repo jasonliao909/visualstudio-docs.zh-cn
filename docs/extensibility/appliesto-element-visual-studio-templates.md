@@ -1,6 +1,6 @@
 ---
-title: ) 的 Visual Studio 模板 (AppliesTo 元素 |Microsoft Docs
-description: 了解 AppliesTo 元素以及它如何指定一个可选表达式来匹配一个或多个功能。
+title: AppliesTo 元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 AppliesTo 元素及其如何指定用于匹配一个或多个功能的可选表达式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -11,20 +11,20 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 340ac4db04b62abade9c6572335e28c9fb27b495
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 575a1a428c4d3e2816fcb275f6b1609ebf97bab7d4c56e51be3ad24e7f44d27a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097469"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434927"
 ---
-# <a name="appliesto-element-visual-studio-templates"></a>Visual Studio 模板 (AppliesTo 元素) 
+# <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (Visual Studio模板) 
 
-指定与一个或多个功能匹配的可选表达式 (参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>) 。 功能通过层次结构作为 __VSHPROPID5 属性由项目类型公开 [。VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>)。 这使得具有公共适用功能的多个项目类型可以共享此模板。
+指定一个可选表达式来匹配一个或多个功能 (请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.VsProjectCapabilityExpressionMatcher>) 。 功能由项目类型通过层次结构公开为属性 [__VSHPROPID5。VSHPROPID_ProjectCapabilities](<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID5.VSHPROPID_ProjectCapabilities>)。 这使得具有公共适用功能的多个项目类型可以共享此模板。
 
 此元素为可选元素。 一个模板文件中最多只能包含一个实例。 根据当前选择的活动项目的功能，此元素仅启用一个项模板以在适用时选择使用。 此元素无法用于设置不适用的项模板。 如果缺少 `AppliesTo` 或表达式未成功选择使用，则 `TemplateID` 或 `TemplateGroupID` 将用于使模板可用，如使用产品的早期版本一样。
 
-在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅 [在 VISUAL STUDIO 2013 SDK Update 2 中提供的引用程序集](/previous-versions/dn632168(v=vs.120))。
+在 Visual Studio 2013 Update 2 中引入。 若要引用正确的版本，请参阅引用在[Visual Studio 2013 SDK Update 2 中提供的程序集](/previous-versions/dn632168(v=vs.120))。
 
 ```xml
 <VSTemplate>
@@ -62,11 +62,11 @@ ms.locfileid: "105097469"
 
 有效表达式语法按以下方式定义：
 
-- 功能表达式，如 " (VisualC &#124; CSharp) + (MSTest &#124; NUnit) "。
+- 功能表达式，例如" (VisualC &#124; CSharp) + (MSTest &#124; NUnit) "。
 
-- "&#124;" 是 OR 运算符。
+- "&#124;"是 OR 运算符。
 
-- "&" 和 "+" 字符都是和运算符。
+- "&"和"+"字符都是 AND 运算符。
 
 - “!”字符是 NOT 运算符。
 
@@ -74,11 +74,11 @@ ms.locfileid: "105097469"
 
 - null 或空表达式作为匹配计算。
 
-- 项目功能可以是除以下保留字符以外的任何字符： "' '：;，+-*/ \\ ！ ~&#124;&% $ @ ^ () = {} [] <>？ \t\b\n\r
+- Project可能是除以下保留字符之外的任何字符："''：;，+-*/ \\ ！~&#124;&%$@^ () = {} []<>？ \t\b\n\r
 
 ## <a name="example"></a>示例
 
-下面的示例演示三个不同模板。 `Template1` 适用于所有 c # 项目类型或支持该功能的任何其他项目类型 `WindowsAppContainer` 。 `Template2` 适用于所有类型的 c # 项目。 `Template3` 适用于 `WindowsAppContainer` 项目以外的 C# 项目。
+下面的示例演示三个不同模板。 `Template1` 适用于所有 C# 项目类型或支持该功能的其他任何项目 `WindowsAppContainer` 类型。 `Template2` 适用于任何类型的所有 C# 项目。 `Template3` 适用于 `WindowsAppContainer` 项目以外的 C# 项目。
 
 ```xml
 <!--  Template 1 -->

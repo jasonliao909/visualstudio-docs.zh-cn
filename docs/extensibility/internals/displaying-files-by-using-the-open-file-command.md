@@ -1,6 +1,6 @@
 ---
 title: 使用 "打开文件" 命令显示文件 |Microsoft Docs
-description: 了解 Visual Studio 集成开发环境 (IDE) 如何处理 "文件" 菜单上的 "打开文件" 命令以显示文件。
+description: 了解 Visual Studio 集成开发环境如何 (IDE) 处理 "文件" 菜单上的 "打开文件" 命令以显示文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 4fff0576-b2f3-4f17-9769-930f926f273c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b2617050ff26536df5a94d0cb51fe74d37a55725
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0eef493d7a8a37a3d7c83fdaee746b59e09bfaa89cfdd7715971e4cffb3f8b9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061337"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448099"
 ---
 # <a name="display-files-by-using-the-open-file-command"></a>使用 "打开文件" 命令显示文件
 以下步骤介绍了 IDE 如何处理 **打开文件** 命令，该命令可在中的 " **文件** " 菜单上找到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 这些步骤还说明了项目应如何响应源自此命令的调用。

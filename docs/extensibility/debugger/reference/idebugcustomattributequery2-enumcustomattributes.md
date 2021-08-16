@@ -1,6 +1,6 @@
 ---
 description: 获取附加到此字段的所有自定义属性的枚举器。
-title: IDebugCustomAttributeQuery2：： EnumCustomAttributes |Microsoft Docs
+title: IDebugCustomAttributeQuery2：：EnumCustomAttributes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 94bfce74-aa3d-45f0-8e04-5715faf85217
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5bcd11f3058de191a3b0a77f0316afb6140769fc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2615ffce31ce7a27521d6e567c22794d42d76cf03f19ea383a6da9777b0f9a4b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077637"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342318"
 ---
 # <a name="idebugcustomattributequery2enumcustomattributes"></a>IDebugCustomAttributeQuery2::EnumCustomAttributes
 获取附加到此字段的所有自定义属性的枚举器。
@@ -42,13 +43,13 @@ int EnumCustomAttributes(
 
 ## <a name="parameters"></a>参数
 `ppEnum`\
-弄返回表示自定义属性列表的 [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) 对象;否则，如果没有自定义特性，则返回 null 值。
+[out]返回表示 [自定义属性列表的 IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md) 对象;否则，如果没有自定义属性，则 返回 null 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 S_OK 或 S_FALSE 如果此字段没有自定义特性，则为。 否则，将返回错误代码;
+ 如果成功，则S_OK此字段S_FALSE自定义属性时返回属性或属性。 否则， 将返回错误代码;
 
 ## <a name="remarks"></a>备注
- 一个字段可以具有多个自定义属性。
+ 一个字段可以有多个自定义属性。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

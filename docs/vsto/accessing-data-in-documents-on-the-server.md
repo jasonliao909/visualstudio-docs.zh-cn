@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0df6aef3c83d66b84f569e85e953fde8a3f0e16c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 04f0dfba96ac09ff9cc87627f111f814f71d51b5554826ea524360c2af5323f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826767"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440924"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上文档中的数据
-  您可以对文档级自定义项中的数据进行编程，而不必使用 Microsoft Office Word 或 Microsoft Office Excel 的对象模型。 这意味着，你可以访问服务器上的文档中包含的数据，该服务器未安装 Word 或 Excel。 例如，服务器上的代码 (例如，在 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 页面) 可以自定义文档中的数据，并将自定义文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码会将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分开。 有关详细信息，请参阅 [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
+  您可以对文档级自定义项中的数据进行编程，而不必使用 Microsoft Office Word 或 Microsoft Office Excel 的对象模型。 这意味着，你可以访问服务器上的文档中包含的数据，这些数据未安装 Word 或 Excel。 例如，服务器上的代码 (例如，在 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 页面) 可以自定义文档中的数据，并将自定义文档发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码会将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分开。 有关详细信息，请参阅 [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -33,7 +34,7 @@ ms.locfileid: "107826767"
  服务器端代码可以操作数据缓存中的任何数据对象。 绑定到缓存数据实例的控件与用户界面同步，因此在客户端上打开该文档时，对数据所做的任何服务器端更改都将自动显示。
 
 ## <a name="access-data-in-the-cache"></a>访问缓存中的数据
- 可以从办公室以外的应用程序（例如，从控制台应用程序、Windows 窗体应用程序或网页）访问缓存中的数据。 访问缓存数据的应用程序必须具有完全信任;具有部分信任的 Web 应用程序无法插入、检索或更改在 Office 文档中缓存的数据。
+ 可以从 Office 以外的应用程序（例如，从控制台应用程序、Windows 窗体应用程序或网页）访问缓存中的数据。 访问缓存数据的应用程序必须具有完全信任;具有部分信任的 Web 应用程序无法插入、检索或更改缓存在 Office 文档中的数据。
 
  数据缓存可通过类的属性公开的集合的层次结构进行访问 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> ：
 
@@ -77,7 +78,7 @@ ms.locfileid: "107826767"
 - 如果您在数据缓存中生成一个包含 **null** 对象的解决方案，并且您希望在 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 第一次打开文档之前通过使用类来初始化这些对象，则必须确保您初始化数据缓存中的所有对象。 如果只初始化某些对象，则在文档打开时，所有对象都将设置为 **null** ，并且在保存和关闭文档后将清除整个数据缓存。
 
 ## <a name="access-typed-datasets-in-the-cache"></a>访问缓存中的类型化数据集
- 如果要从 Office 解决方案和 Office 外部的应用程序（例如 Windows 窗体应用程序或项目）访问类型化数据集中的数据， [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 则必须在两个项目中引用的单独程序集中定义类型化数据集。 如果使用 " **数据源配置** 向导" 或 " **数据集设计器** 向每个项目添加类型化数据集，则 .NET Framework 会将两个项目中的类型化数据集视为不同的类型。 有关创建类型化数据集的详细信息，请参阅 [在 Visual Studio 中创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+ 如果要从 Office 解决方案和 Office 以外的应用程序（如 Windows 窗体应用程序或项目）访问类型化数据集中的数据， [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 则必须在两个项目中引用的单独程序集中定义类型化数据集。 如果使用 "**数据源配置** 向导" 或 "**数据集设计器** 向每个项目添加类型化数据集，则 .NET Framework 会将两个项目中的类型化数据集视为不同的类型。 有关创建类型化数据集的详细信息，请参阅[在 Visual Studio 中创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
 ## <a name="see-also"></a>另请参阅
 

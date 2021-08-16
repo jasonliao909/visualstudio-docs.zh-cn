@@ -10,47 +10,48 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 743b7deb118bb3506773ec1a82d2331633afa7bc
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d230256d988c16d86e01fc04e363d40473b1ac1a35e1c9bdc45faa3de3c43b25
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388823"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121271324"
 ---
 # <a name="generate-files-with-the-texttransform-utility"></a>用 TextTransform 实用工具生成文件
 
-TextTransform.exe 是一种命令行工具，可用于转换文本模板。 调用 TextTransform.exe 时，请将文本模板文件的名称指定为参数。 TextTransform.exe 调用文本转换引擎，并处理文本模板。 TextTransform.exe 通常是从脚本中调用的。 不过，通常不需要这样做，因为您可以在 Visual Studio 中或在生成过程中执行文本转换。
+TextTransform.exe 是一种命令行工具，可用于转换文本模板。 调用 TextTransform.exe 时，请将文本模板文件的名称指定为参数。 TextTransform.exe 调用文本转换引擎，并处理文本模板。 TextTransform.exe 通常是从脚本中调用的。 不过，通常不需要这样做，因为您可以在 Visual Studio 或在生成过程中执行文本转换。
 
 > [!NOTE]
-> 如果要在生成过程中执行文本转换，请考虑使用 "MSBuild 文本转换" 任务。 有关详细信息，请参阅 [生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)。 在安装了 Visual Studio 的计算机上，还可以编写可转换文本模板的应用程序或 Visual Studio 扩展。 有关详细信息，请参阅 [使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
+> 如果要在生成过程中执行文本转换，请考虑使用 "MSBuild 文本转换任务"。 有关详细信息，请参阅 [生成过程中的代码生成](../modeling/code-generation-in-a-build-process.md)。 在安装了 Visual Studio 的计算机上，还可以编写可转换文本模板的应用程序或 Visual Studio 扩展。 有关详细信息，请参阅 [使用自定义宿主处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md)。
 
 TextTransform.exe 位于以下目录中：
 
 ::: moniker range=">=vs-2019"
 
-**\Program 文件 (x86) \Microsoft Visual Studio\2019\Professional\Common7\IDE**
+**\Program 文件 (x86) \ Microsoft Visual Studio \ 2019 \ Professional \Common7\IDE**
 
-对于专业版，或
+对于 Professional 版本，或
 
-**\Program 文件 (x86) \Microsoft Visual Studio\2019\Enterprise\Common7\IDE**
+**\Program 文件 (x86) \ Microsoft Visual Studio \ 2019 \ Enterprise \Common7\IDE**
 
-适用于 Enterprise edition。
+对于 Enterprise 版本。
 
 ::: moniker-end
 
 ::: moniker range="vs-2017"
 
-**\Program 文件 (x86) \Microsoft Visual Studio\2017\Professional\Common7\IDE**
+**\Program 文件 (x86) \ Microsoft Visual Studio \ 2017 \ Professional \Common7\IDE**
 
-对于专业版，或
+对于 Professional 版本，或
 
-**\Program 文件 (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE**
+**\Program 文件 (x86) \ Microsoft Visual Studio \ 2017 \ Enterprise \Common7\IDE**
 
-适用于 Enterprise edition。
+对于 Enterprise 版本。
 
-在 Visual Studio 的早期版本中，该文件位于以下位置：
+在以前版本的 Visual Studio 中，该文件位于以下位置：
 
 **\Program 文件 (x86) \Common Files\Microsoft Shared\TextTemplating \{ 版本}**
 

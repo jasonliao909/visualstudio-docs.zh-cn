@@ -1,6 +1,6 @@
 ---
 title: 调试器概念 |Microsoft Docs
-description: 了解设计 Visual Studio 调试包中使用的体系结构概念，以帮助你在该包上构建。
+description: 了解设计 Visual Studio 调试包时使用的体系结构概念，以帮助你在该包上构建。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,17 +10,18 @@ ms.assetid: 2d371d38-f1a0-4a9a-8ea3-100e8c0149b7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 94249a6ff7c50fb054a3fc460708a8e36181bff8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: af9349492bbedc9bcf87af5eda58b19f571fa7e6cac6dcc5c6b89f05ce42ca9e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094882"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343177"
 ---
 # <a name="debugger-concepts"></a>调试器概念
-若要在 Visual Studio 调试包上构建，需要熟悉设计包时使用的体系结构概念。
+若要在 Visual Studio 调试包的基础上进行构建，需要熟悉设计包时使用的体系结构概念。
 
 ## <a name="in-this-section"></a>本节内容
  [调试会话](../../extensibility/debugger/debug-session.md) 说明会话在调试体系结构中的角色。
@@ -48,6 +49,6 @@ ms.locfileid: "105094882"
 ## <a name="related-sections"></a>相关章节
  [调试器上下文](../../extensibility/debugger/debugger-contexts.md) 说明调试引擎 (DE) 如何在代码、文档和表达式计算上下文中同时运行。 介绍这三个上下文的位置或相关评估。
 
- [调试器组件](../../extensibility/debugger/debugger-components.md) 概述 Visual Studio 调试组件，其中包括调试引擎 (DE) 、expression 计算器 (EE) 以及符号处理程序 (SH) 。
+ [调试器组件](../../extensibility/debugger/debugger-components.md)概述 Visual Studio 调试组件，其中包括 (DE) 、表达式计算器 (企业版) 和符号处理程序 (SH) 的调试引擎。
 
  [调试任务](../../extensibility/debugger/debugging-tasks.md) 包含指向各种调试任务的链接，如启动程序和计算表达式。

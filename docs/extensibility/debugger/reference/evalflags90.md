@@ -9,17 +9,18 @@ ms.assetid: 64fb0139-8b04-4726-b52c-db2e04d65498
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 32e75b938f45df5d4fa91bec4b59964dfc6a54e5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c935059fc7af18563cc203c5d79ee5887675d1663f94d2b06a99a2233bd89f8e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095922"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434342"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 枚举控制表达式计算的标志的有效值。 此枚举扩展了 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举。

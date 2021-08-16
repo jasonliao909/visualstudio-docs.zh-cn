@@ -1,6 +1,6 @@
 ---
 description: 使用指定的回调方法加载调试符号。
-title: IDebugComPlusSymbolProvider2：： LoadSymbolsFromCallback |Microsoft Docs
+title: IDebugComPlusSymbolProvider2：：LoadSymbolsFromCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,17 +10,18 @@ ms.assetid: 905315ba-8e9b-4889-b9da-98e1441950ad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: eac086594a6474f78bdde8b302e8ec24a64f7925
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 619cebac835d7bf851cc52f325fa9dd34e3924eb4431b0c85889c266c5d67f23
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094154"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342344"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromcallback"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromCallback
 使用指定的回调方法加载调试符号。
@@ -53,31 +54,31 @@ int LoadSymbolsFromCallback(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `pUnkMetadataImport`\
-中包含符号元数据的对象。
+[in]包含符号元数据的对象。
 
 `pUnkCorDebugModule`\
-中实现 [ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的对象。
+[in]实现 [ICorDebugModule 接口 的对象](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
 `bstrModuleName`\
-中模块的名称。
+[in]模块的名称。
 
 `bstrSymSearchPath`\
-中要搜索符号文件的路径。
+[in]要搜索符号文件的路径。
 
 `pCallback`\
-中表示回调方法的对象。
+[in]表示回调方法的对象。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromCallback(

@@ -14,14 +14,15 @@ ms.assetid: 03779774-9401-49ae-997c-0c3ab25ed0d5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cce9bc25cb2ed820d3291ab65d94a868bb401ec9
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 91046edab4693adee21b13616ab8d2f2c1259f11053829bdad23ebcb797bc9ca
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898131"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448177"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用工具
 使用 **CreateExpInstance** 实用工具创建、重置或删除 Visual Studio。 可以使用实验实例来调试和测试Visual Studio扩展，而无需更改基础产品。

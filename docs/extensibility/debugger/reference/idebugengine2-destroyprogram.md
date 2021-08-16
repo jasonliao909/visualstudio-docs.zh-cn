@@ -11,17 +11,18 @@ ms.assetid: 0c9e2698-c70f-4770-a7bb-39650e9c3a1f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c0a58dd5893c3235ded9c7eeb5f5d47e3ddcb380
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a237732b67182225722502c3f35e89a630cba6e1e68e9a5b891e299580dc1e73
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105093842"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342266"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
 通知调试引擎 (DE) 指定的程序已被异常终止，并应清除对程序的所有引用并发送程序销毁事件。

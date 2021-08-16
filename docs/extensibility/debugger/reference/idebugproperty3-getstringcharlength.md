@@ -1,6 +1,6 @@
 ---
-description: 返回关联的属性的字符串中的字符数。
-title: IDebugProperty3：： GetStringCharLength |Microsoft Docs
+description: 返回关联属性的字符串中的字符数。
+title: IDebugProperty3：：GetStringCharLength |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 89a8676b-6da9-4358-91c2-039bf33f99e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 558716cc4b857ee26b7d8bcc8b8d5ac69f96cc5b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d6bdb8a5bb9e85f379d28b9773cfd9e57d650f61a8da51ceb141455a6914eef2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083942"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121338665"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
-返回关联的属性的字符串中的字符数。
+返回关联属性的字符串中的字符数。
 
 ## <a name="syntax"></a>语法
 
@@ -44,13 +45,13 @@ int GetStringCharLength(
 
 |参数|说明|
 |---------------|-----------------|
-|`pLen`|弄返回属性字符串中的字符数。|
+|`pLen`|[out]返回属性字符串中的字符数。|
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-通常，此方法用作 prelude，以便为对 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 方法的调用分配缓冲区。
+通常，此方法用作为调用 [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md) 方法分配缓冲区的前行。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)接口的 **CProperty** 对象实现此方法。

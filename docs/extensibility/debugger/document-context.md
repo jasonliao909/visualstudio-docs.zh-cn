@@ -1,6 +1,6 @@
 ---
 title: 文档上下文 |Microsoft Docs
-description: 了解 Visual Studio 中的文档上下文调试，它表示源文件中的位置或代码上下文的源文档中的位置。
+description: 了解 Visual Studio 调试中的文档上下文，它表示源文件中的位置或代码上下文的源文档中的位置。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: 8e8b5702-5c16-4988-953d-69dd807d8b84
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4b7554e274977f23474f6cf3e8e1af30d9e73b3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 519a5903d01fb8a1abd37939cc7f29b325eae002e8a010db6ca5ca7c7614d7a6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898183"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343054"
 ---
 # <a name="document-context"></a>文档上下文
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中， *文档上下文*：

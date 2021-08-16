@@ -11,14 +11,15 @@ ms.assetid: a6e786bf-744e-4272-9e21-0be44d23b1a1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f49d33ebe70390a364d0ae8336e7f69549b6876f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2dd1501e4d9341241b0c07d67571d362ff0fe1dd0bffc489be8cf5c35b4ecd77
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901079"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447748"
 ---
 # <a name="sccgetversion-function"></a>SccGetVersion 函数
 此函数获取源代码管理插件支持的源代码管理插件 API 的版本号。
@@ -35,10 +36,10 @@ LONG SccGetVersion(void);
 ## <a name="return-value"></a>返回值
  包含 `LONG` 支持的源代码管理插件 API 的版本号的数据类型：
 
-|WORD|描述|
+|WORD|说明|
 |----------|-----------------|
 |HIWORD|主版本|
-|LOWORD|次要版本|
+|LOWORD|次版本|
 
 ## <a name="remarks"></a>备注
  例如，如果源代码管理插件支持源代码管理插件 API 版本 1.3，则此函数将返回0x0103。

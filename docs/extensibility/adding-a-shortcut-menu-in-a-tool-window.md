@@ -1,6 +1,6 @@
 ---
 title: 在工具窗口中添加快捷菜单 |Microsoft Docs
-description: 了解如何向 Visual Studio 中的工具窗口添加快捷菜单，该菜单在鼠标右键单击时显示。
+description: 了解如何将快捷菜单添加到 Visual Studio 中的工具窗口，当鼠标右键单击时，将显示该菜单。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,26 +13,27 @@ ms.assetid: 50234537-9e95-4b7e-9cb7-e5cf26d6e9d2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ba0eb2324812ca7536b361d602bb683d627c743
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d698b0e3ee5e2c629e7d9cc1c1415b40bfbe176208cb87e1f5ee14a2e9a8c3ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097612"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435109"
 ---
 # <a name="add-a-shortcut-menu-in-a-tool-window"></a>在工具窗口中添加快捷菜单
 本演练将快捷菜单放置在工具窗口中。 快捷菜单是在用户右键单击按钮、文本框或窗口背景时显示的菜单。 快捷菜单上的命令与其他菜单或工具栏上的命令具有相同的行为。 若要支持快捷菜单，请在 *.vsct* 文件中指定它并显示，以响应鼠标右键单击。
 
 工具窗口由继承自的自定义工具窗口类中的 WPF 用户控件组成 <xref:Microsoft.VisualStudio.Shell.ToolWindowPane> 。
 
-本演练演示如何通过在 *.vsct* 文件中声明菜单项，然后使用托管包框架在定义该工具窗口的类中实现它们，将快捷菜单创建为 Visual Studio 菜单。 此方法可促进对 Visual Studio 命令、UI 元素和自动化对象模型的访问。
+本演练演示如何通过在 *.vsct* 文件中声明菜单项来创建快捷 Visual Studio 菜单，并使用托管包框架在定义工具窗口的类中实现它们。 此方法有助于 Visual Studio 命令、UI 元素和自动化对象模型的访问。
 
-或者，如果快捷菜单不会访问 Visual Studio 功能，则可以 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 在用户控件中使用 XAML 元素的属性。 有关详细信息，请参阅 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)。
+或者，如果快捷菜单将无法访问 Visual Studio 功能，则可以使用 <xref:System.Windows.FrameworkElement.ContextMenu%2A> 用户控件中的 XAML 元素的属性。 有关详细信息，请参阅 [ContextMenu](/dotnet/framework/wpf/controls/contextmenu)。
 
 ## <a name="prerequisites"></a>先决条件
-从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-the-tool-window-shortcut-menu-package"></a>创建工具窗口快捷菜单包
 
@@ -272,7 +273,7 @@ ms.locfileid: "105097612"
 
 1. 生成项目并启动调试。 这将显示实验实例。
 
-2. 在实验实例中，单击 " **视图"/"其他窗口**"，然后单击 " **快捷菜单**"。 执行此操作应显示工具窗口。
+2. 在实验实例中，单击 "**查看/其他 Windows**"，然后单击 "**快捷菜单**"。 执行此操作应显示工具窗口。
 
 3. 右键单击工具窗口的 "正文"。 应显示具有颜色列表的快捷菜单。
 

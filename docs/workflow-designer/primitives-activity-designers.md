@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器基元活动设计器
-description: 了解如何使用基元活动设计器来创建和配置 System.object 命名空间中的各种活动。
+title: 工作流设计器 - 基元活动设计器
+description: 了解如何使用 Primitives 活动设计器在 System.Activities.Statements 命名空间中创建和配置其他活动。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -8,18 +8,19 @@ ms.assetid: 0a2b613e-dc04-49a1-a787-caec2ec63b90
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e59e0d22d0e7ad0fac645cf1c902df9e2c6e835e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f1e638a61c611c9646a714e8a7fd16f97777c612b16c8af04cdece0c5b89672
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931534"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440443"
 ---
 # <a name="primitives-activity-designers"></a>基元活动设计器
 
-各基元活动设计器用于创建和配置 <xref:System.Activities.Statements> 命名空间中的多种活动，如 Assign 和 Delay。 本节中包含的主题提供了有关如何使用工作流设计器活动和模板设计器的指导。
+各基元活动设计器用于创建和配置 <xref:System.Activities.Statements> 命名空间中的多种活动，如 Assign 和 Delay。 本节中包含的主题提供有关如何使用 工作流设计器和模板设计器的指导。
 
 ## <a name="related-sections"></a>相关章节
  [控制流](../workflow-designer/control-flow-activity-designers.md)

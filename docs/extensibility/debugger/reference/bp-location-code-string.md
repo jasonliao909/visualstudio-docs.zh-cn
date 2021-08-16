@@ -11,16 +11,17 @@ ms.assetid: a4cd71c6-5052-45fe-907b-ebc6ca1df2e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 9c32a75e4976a81498033a656461d897e4f298a3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3ebfdd5605f3f332209d2030b499c70c12582d119d51cceef6f1014875bebe23
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096767"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342656"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 用于根据用户可在集成开发环境中输入的字符串设置代码断点 (IDE) 。

@@ -11,14 +11,15 @@ ms.assetid: 08154aed-ae5c-463c-8694-745d0e332965
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a6df7a801d282113b530f24472419a9735256702
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4f108439082152627024666e0bcd3b751e1d88d221e308de6f50767ca1d5c49c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904677"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121305173"
 ---
 # <a name="scccreatesubproject-function"></a>SccCreateSubProject 函数
 此函数在参数指定的现有父项目下创建具有给定名称的子 `lpParentProjPath` 项目。
@@ -60,7 +61,7 @@ SCCRTN SccCreateSubProject(
 
  lp一文ProjPath
 
-[in， out]用于标识项目参数的辅助 (，SCC_PRJPATH_SIZE NULL 终止符) 。
+[in， out]辅助字符串，用于标识 (项目SCC_PRJPATH_SIZE，包括 NULL 终止符) 。
 
  lpSubProjPath
 
@@ -69,7 +70,7 @@ SCCRTN SccCreateSubProject(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功创建子项目。|
 |SCC_E_INITIALIZEFAILED|无法初始化父项目。|
@@ -88,16 +89,16 @@ SCCRTN SccCreateSubProject(
 
  此函数类似于 [SccGetProjPath，](../extensibility/sccgetprojpath-function.md)只不过它会以无提示方式创建项目，而不是提示用户选择一个项目。 调用 `SccCreateSubProject` 函数时， `lpParentProjName` `lpAuxProjPath` 和 将不为空，并且 将对应于有效的项目。 这些字符串通常由 IDE 从之前对函数的调用或 `SccGetProjPath` [SccGetParentProjectPath 接收](../extensibility/sccgetparentprojectpath-function.md)。
 
- `lpUser`参数是用户名。 IDE 将传递以前从 接收的同一用户名，源代码管理插件应 `SccGetProjPath` 使用该名称作为默认值。 如果用户已与插件建立打开的连接，则插件应尝试消除任何提示，以确保函数以静默方式工作。 但是，如果登录失败，插件应提示用户输入登录名，并且收到有效登录名时，将名称传回 `lpUser` 。 由于插件可能会更改此字符串，因此 IDE 将始终分配大小为 (SCC_USER_LEN+1 或 SCC_USER_SIZE 的缓冲区，其中包括 null 终止符) 。 如果更改了字符串，则新字符串必须是有效的登录名 (至少与旧字符串) 。
+ `lpUser`参数是用户名。 IDE 将传递以前从 接收的同一用户名，源代码管理插件应 `SccGetProjPath` 使用该名称作为默认值。 如果用户已与插件建立打开的连接，则插件应尝试消除任何提示，以确保函数以静默方式工作。 但是，如果登录失败，插件应提示用户输入登录名，并且收到有效登录名时，将名称传回 `lpUser` 。 由于插件可能会更改此字符串，因此 IDE 将始终分配大小为 (SCC_USER_LEN+1 或 SCC_USER_SIZE 的缓冲区，其中包括 null 终止符) 。 如果更改了字符串，则新字符串必须是有效的登录名 (与旧字符串一样) 。
 
 ## <a name="technical-notes-for-scccreatesubproject-and-sccgetparentprojectpath"></a>SccCreateSubProject 和 SccGetParentProjectPath 的技术说明
- 在源代码管理中添加解决方案和项目的过程Visual Studio以最大程度地减少提示用户在源代码管理系统中选择位置的时间。 如果源代码管理插件支持这两个新函数 和 Visual Studio，则这些更改会由 用户 `SccCreateSubProject` 激活 `SccGetParentProjectPath` 。 但是，以下注册表项可用于禁用这些更改并还原到以前的Visual Studio (源代码管理插件 API 版本 1.1) 行为：
+ 在源代码管理中添加解决方案和项目的过程已简化Visual Studio以最大程度地减少提示用户在源代码管理系统中选择位置的时间。 如果源代码管理插件同时Visual Studio 和 这两个新函数，则这些更改由用户 `SccCreateSubProject` 激活 `SccGetParentProjectPath` 。 但是，以下注册表项可用于禁用这些更改并还原到以前的Visual Studio (源代码管理插件 API 版本 1.1) 行为：
 
  **[HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\8.0\SourceControl]"DoNotCreateSolutionRootFolderInSourceControl"=dword：00000001**
 
  如果此注册表项不存在或设置为 dword：000000000，Visual Studio尝试使用新函数 `SccCreateSubProject` 和 `SccGetParentProjectPath` 。
 
- 如果注册表项设置为 dword：000000001，Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理的操作会像在早期版本的 Visual Studio 中一样工作。
+ 如果注册表项设置为 dword：00000001，Visual Studio 不会尝试使用这些新函数，并且添加到源代码管理的操作会像在早期版本的 Visual Studio 中一样工作。
 
 ## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

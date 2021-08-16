@@ -1,6 +1,6 @@
 ---
 title: 使用日历项
-description: 了解 AppointmentItem 类包含用于使用日历项执行任务的方法和属性。
+description: 了解 AppointmentItem 类包含用于通过日历项执行任务的方法和属性。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0651b392563ff90cb349a3a8e737717bf375bea6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 04425ec3b3ec39aa224dd25d878fa716b4ace1f4b7f849926e5f3915e24209ce
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847578"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440651"
 ---
 # <a name="work-with-calendar-items"></a>使用日历项
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 类包含用于使用日历项执行任务的方法和属性。
@@ -37,10 +38,10 @@ ms.locfileid: "99847578"
 |创建日历文件夹并添加约会项。|[如何：以编程方式创建自定义日历](../vsto/how-to-programmatically-create-a-custom-calendar.md)|
 |创建会议请求并发送。|[如何：以编程方式创建会议请求](../vsto/how-to-programmatically-create-a-meeting-request.md)|
 
- 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅 [outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
+ 有关对象Outlook模型Outlook，请参阅对象Outlook[概述](../vsto/outlook-object-model-overview.md)。
 
 ## <a name="see-also"></a>另请参阅
-- [处理联系人项](../vsto/working-with-contact-items.md)
+- [使用联系人项](../vsto/working-with-contact-items.md)
 - [使用文件夹](../vsto/working-with-folders.md)
 - [使用邮件项](../vsto/working-with-mail-items.md)
-- [Outlook 解决方案](../vsto/outlook-solutions.md)
+- [Outlook解决方案](../vsto/outlook-solutions.md)

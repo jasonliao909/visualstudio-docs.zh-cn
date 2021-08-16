@@ -10,14 +10,15 @@ ms.assetid: 2c85d663-b219-4142-9866-7693ffd46379
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ef415763a67232f79b269650abecfe6bcabe6bd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f612fb4b6696352cbeedfd153c25af01763a817a1859ba50cc62221c4b15941
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937194"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440612"
 ---
 # <a name="cancellationscope-activity-designer"></a>CancellationScope 活动设计器
 
@@ -39,9 +40,9 @@ ms.locfileid: "99937194"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.CancellationScope> 活动的可选友好名称。 默认值为 CancellationScope。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.CancellationScope.Body%2A>|True|指定为其提供取消逻辑的活动。 若要添加 <xref:System.Activities.Statements.CancellationScope.Body%2A> 活动，请将 **"工具箱**" 中的活动拖放到 " **CancellationScope** " 活动设计器的 "**正文**" 框中。 添加提示文本 "在此处放置活动"。|
-|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|True|指定在有取消时执行的活动。 若要添加 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 活动，请将活动从 **"工具箱**" 拖放到 " **CancellationScope** " 活动设计器上的 " **CancellationHandler** " 框中。 添加提示文本 "在此处放置活动"。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.CancellationScope> 活动的可选友好名称。 默认值为 CancellationScope。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
+|<xref:System.Activities.Statements.CancellationScope.Body%2A>|正确|指定为其提供取消逻辑的活动。 若要添加 <xref:System.Activities.Statements.CancellationScope.Body%2A> 活动，请将 **"工具箱**" 中的活动拖放到 " **CancellationScope** " 活动设计器的 "**正文**" 框中。 添加提示文本 "在此处放置活动"。|
+|<xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A>|正确|指定在有取消时执行的活动。 若要添加 <xref:System.Activities.Statements.CancellationScope.CancellationHandler%2A> 活动，请将活动从 **"工具箱**" 拖放到 " **CancellationScope** " 活动设计器上的 " **CancellationHandler** " 框中。 添加提示文本 "在此处放置活动"。|
 
 ## <a name="see-also"></a>另请参阅
 

@@ -11,17 +11,18 @@ ms.assetid: a20d0f0b-2ca0-4437-bd22-9213c81d2738
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f81af5686cfc2b99dc3bf5d95e2ec283933297e2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96843835eb1873b6b754f651b853413680981a795e94e97b6aef6cfbd753e5e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084761"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121307617"
 ---
 # <a name="idebugexceptionevent2passtodebuggee"></a>IDebugExceptionEvent2::PassToDebuggee
 指定是否应在执行恢复时将异常传递给正在调试的程序，或是否应丢弃异常。

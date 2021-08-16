@@ -10,14 +10,15 @@ ms.assetid: 0306dc3b-075a-4091-ac3a-96486fbabed5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 3997b72105c22f10500559370d8a23faaa2f24eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d3f3efb6a35a87dadb1b2f70fdf59cdfb3d61691975091b2f9f7f58d557e133
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905173"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440469"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活动设计器
 
@@ -31,7 +32,7 @@ ms.locfileid: "99905173"
 
 ### <a name="using-the-parallel-activity-designer"></a>使用 Parallel 活动设计器
 
-访问 "**工具箱**" 的 "**控制流**" 类别中的 "**并行** 活动设计器"。
+在 "**工具箱**" 的 "**控件 Flow** " 类别中访问 "**并行** 活动设计器"。
 
 可以将 " **并行** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动设计器的任何位置，例如，在 " **Sequence** " 活动设计器内。 将其放入工作流设计器后，它将创建一个 <xref:System.Activities.Statements.Parallel> 活动，该活动默认包含 <xref:System.Activities.Activity.DisplayName%2A> 一个 **并行**
 
@@ -43,9 +44,9 @@ ms.locfileid: "99905173"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定活动设计器在标头中的友好显示名称。 默认值为 " **并行**"。 可以在 " **属性** " 网格中或直接在活动设计器标头中编辑该值。|
-|<xref:System.Activities.Statements.Parallel.Branches%2A>|True|包含要执行的子活动的集合。|
-|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|False|在分支完成后计算。 如果计算结果为 **True**，则取消计划的挂起分支。 如果未将此属性设置为或计算为 **False**，则在完成其所有子活动后，活动完成。 默认值为 **null**。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定活动设计器在标头中的友好显示名称。 默认值为 " **并行**"。 可以在 " **属性** " 网格中或直接在活动设计器标头中编辑该值。|
+|<xref:System.Activities.Statements.Parallel.Branches%2A>|正确|包含要执行的子活动的集合。|
+|<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|错误|在分支完成后计算。 如果计算结果为 **True**，则取消计划的挂起分支。 如果未将此属性设置为或计算为 **False**，则在完成其所有子活动后，活动完成。 默认值为 **null**。|
 
 ## <a name="see-also"></a>另请参阅
 

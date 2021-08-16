@@ -12,17 +12,18 @@ ms.assetid: f79b894f-52c4-43c2-9a68-c71536451f6c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7dd252fae60c60e65d9f164739c6f9a577aa9e0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 47a412cdd825fe85872652a5e240165af3c42524f82908fe6f2de7fa6f326349
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094141"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342331"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolsfromstreamwithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsFromStreamWithCorModule
 给定 **ICorDebugModule** 对象，从数据流加载调试符号。
@@ -53,28 +54,28 @@ int LoadSymbolsFromStreamWithCorModule(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `baseAddress`\
-中基本内存地址。
+[in]基本内存地址。
 
 `pUnkMetadataImport`\
-中包含符号元数据的对象。
+[in]包含符号元数据的对象。
 
 `pUnkCorDebugModule`\
-中实现 [ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的对象。
+[in]实现 [ICorDebugModule 接口 的对象](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
 
 `pStream`\
-中数据流，其中包含要加载的调试符号。
+[in]包含要加载的调试符号的数据流。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsFromStreamWithCorModule(

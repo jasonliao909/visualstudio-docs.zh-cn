@@ -10,14 +10,15 @@ ms.assetid: 0fc63484-5fb6-4887-9ea4-1905b459ca9d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb7249ece3ab38ff6f378f3c48ce36a995677604
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 5fe0f3d7bce5d7e29a87ec45da3968f65299254115b64ad16d16da6a665d03d1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905691"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262953"
 ---
 # <a name="control-events"></a>控制事件
 必须在程序的受控执行期间发送事件。 所有事件都是使用 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 接口发送的，并且具有要求实现 [IDebugEvent2：：GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 方法的属性。

@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 946cbf99fa7836fa8d7ec5aa1d921e7cda93bf46
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e8a9ab2f0cff7e405849c58ed4724f76ad7cd4e74050cda8767348d90fc3771f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388303"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443823"
 ---
 # <a name="vs-shell-deployment"></a>VS Shell 部署
 
@@ -22,7 +23,7 @@ ms.locfileid: "112388303"
 
 若要将 Visual Studio Shell 设置为部署目标：：
 
-1. 在 **DslPackage** 项目中， **打开** source.extension.tt。
+1. 在 **DslPackage 项目中** ， **打开** source.extension.tt。
 
 2. 在 `<SupportedProducts>` "插入"下：
 

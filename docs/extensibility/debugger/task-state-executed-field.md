@@ -9,14 +9,15 @@ ms.assetid: 75b8f9d0-b908-40d0-b109-70feaed2ab0c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca0d2f578cc4e20b71e562d5b82245995bfd2969
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b99471317dd54c4a088af9a9f7d25d9b889a1b2a4a6c2e491d31cbf0e65c79ad
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902847"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121306252"
 ---
 # <a name="task_state_executed-field"></a>TASK_STATE_EXECUTED 字段
 该任务正在运行，但尚未完成。

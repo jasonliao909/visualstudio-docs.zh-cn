@@ -1,6 +1,6 @@
 ---
 title: 向菜单命令添加图标 |Microsoft Docs
-description: 了解如何向可在 Visual Studio 集成开发环境中的菜单和工具栏上显示的命令添加图标 (IDE) 。
+description: 了解如何将图标添加到可在 Visual Studio 集成开发环境中的菜单和工具栏上显示的命令 (IDE) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,14 +12,15 @@ ms.assetid: 362a0c7e-5729-4297-a83f-1aba1a37fd44
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01f159b9f07cd0d530039e0d5707cf38d51610ef
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 008c045ba59db2aea70230a2a177d890fe08f34bf87194019672bb38390fb2c8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097585"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434953"
 ---
 # <a name="add-icons-to-menu-commands"></a>向菜单命令添加图标
 菜单和工具栏上都可以出现命令。 在工具栏上，通常只显示一个图标 (来保存) 空间，而在菜单上，命令通常同时出现同时包含图标和文本。

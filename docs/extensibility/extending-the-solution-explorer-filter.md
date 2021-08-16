@@ -11,20 +11,21 @@ ms.assetid: df976c76-27ec-4f00-ab6d-a26a745dc6c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d1256b807d67f95aa8ca1e952a4dca7bd550e0fc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e0d9b7a3f3dcd1f3641d65a26e9919621cff15f7fcfff5f9968dc692769d2b53
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075011"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275965"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展 **解决方案资源管理器** 筛选器功能以显示或隐藏不同文件。 例如，可以创建一个筛选器，该筛选器仅显示 **解决方案资源管理器** 中的 c # 类工厂文件，如本演练中所示。
 
-## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必备条件
+ 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ### <a name="create-a-visual-studio-package-project"></a>创建 Visual Studio 包项目
 
@@ -56,7 +57,7 @@ ms.locfileid: "105075011"
 
 4. 在 " **源** " 字段中，选择 " **当前解决方案中的项目**"。
 
-5. 在 " **项目** " 字段中，选择 " **FileFilter**"，然后选择 " **确定"** 按钮。
+5. 在 " **Project** " 字段中，选择 " **FileFilter**"，然后选择 "**确定"** 按钮。
 
 ### <a name="add-the-filter-code"></a>添加筛选器代码
 

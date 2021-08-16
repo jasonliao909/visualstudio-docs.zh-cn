@@ -20,14 +20,15 @@ ms.assetid: 553f7d0c-2faa-4c17-b226-dd02855bf1dc
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 3280894ba1634f9775def74a88dcb413c94ba77a
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: c0e894841797064cd458eb558ce548957202dafbbdab1ed3bf1d9dfd160dde97
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215703"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346695"
 ---
 # <a name="turn-off-constraints-while-filling-a-dataset"></a>在填充数据集时关闭约束
 
