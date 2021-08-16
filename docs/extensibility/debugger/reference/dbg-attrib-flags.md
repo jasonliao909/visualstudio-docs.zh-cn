@@ -11,17 +11,18 @@ ms.assetid: 2f13e601-dadc-476e-a8ec-01c4515082e7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: aba733cd1e8ff05adac0cd538da79e4d437e6f60
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8137d5bad817478371fb57dcffc568db616949a1739e5d501ac4fe394d846d16
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096468"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452441"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 描述 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 或 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 接口的各种属性。 [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)结构的成员。

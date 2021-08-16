@@ -1,6 +1,6 @@
 ---
-title: 清单：创建新的项目类型 |Microsoft Docs
-description: 了解在 Visual Studio 中创建和显示新项目类型时必须完成的任务。
+title: 清单：创建新的Project类型|Microsoft Docs
+description: 了解在项目中创建和显示新项目类型时必须完成Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,53 +11,54 @@ ms.assetid: 29eb9c3b-1933-4741-aa85-65a33f0825ba
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac6495a6c2d5edcde00a3eb002f2fc41211a27e3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 302ec482e15b837a8287520170c40e2765f0d09b5693028a132f6af063c8030e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074764"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359736"
 ---
-# <a name="checklist-create-new-project-types"></a>清单：创建新的项目类型
-若要创建新的项目类型，必须完成多个任务。 以下清单提供了这些任务的指南：
+# <a name="checklist-create-new-project-types"></a>清单：创建新项目类型
+必须完成多个任务以创建新项目类型。 以下清单提供了这些任务的指南：
 
-1. 设计新项目类型的功能。 有关详细信息，请参阅 [项目类型设计决策](../../extensibility/internals/project-type-design-decisions.md)。
+1. 为新项目类型设计功能。 有关详细信息，请参阅Project[设计决策](../../extensibility/internals/project-type-design-decisions.md)。
 
-2. 确定哪些编辑器用于代码和其他项目元素。 您可以使用核心或标准编辑器，也可以创建和使用特定于项目的编辑器。 有关详细信息，请参阅 [创建自定义编辑器和设计器](../../extensibility/creating-custom-editors-and-designers.md) 和 [如何：打开项目特定的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。
+2. 确定哪些编辑器用于代码和其他项目元素。 可以使用核心编辑器或标准编辑器，也可以创建和使用特定于项目的编辑器。 有关详细信息，请参阅[创建自定义编辑器和设计器和](../../extensibility/creating-custom-editors-and-designers.md)[如何：打开特定于项目的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。
 
-3. 确定项目项在 **类视图** 和 **对象浏览器** 中的参与程度。 有关详细信息，请参阅 [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
+3. 确定项目项在对象浏览器 和 类视图 **中的参与级别**。  有关详细信息，请参阅 [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
 
-4. 基于你之前为项目和项目项所做的设计决策派生新类。
+4. 基于之前为项目和项目项做出的设计决策派生新类。
 
-5. 为以下项目类型组件编写代码：
+5. 编写以下项目类型组件的代码：
 
-    - 项目工厂，用于管理创建新项目和打开现有项目。 有关详细信息，请参阅 [使用项目工厂创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。
+    - Project工厂，用于管理创建新项目和打开现有项目。 有关详细信息，请参阅 [使用项目工厂 创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。
 
-    - 项目层次结构和命令处理。 有关详细信息，请参阅 [使用 HierUtil7 项目类实现项目类型 (c + +) ](/previous-versions/bb166212(v=vs.100))、 [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md)、 [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)、 [menucommand 与 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。
+    - Project层次结构和命令处理。 有关详细信息，请参阅使用[HierUtil7](/previous-versions/bb166212(v=vs.100))项目类实现项目类型 (C++) 、项目模型的元素[](../../extensibility/internals/elements-of-a-project-model.md)[、Project](../../extensibility/internals/project-model-core-components.md)模型核心组件 和[MenuCommands 与 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。
 
-    - 项目项管理，包括将项目添加到 " **新建项目** " 对话框。 有关详细信息，请参阅 [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md) 和 [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
+    - Project项管理，包括将项目添加到"新建 **Project对话框中。** 有关详细信息，请参阅[添加项目和项目项模板和](../../extensibility/internals/adding-project-and-project-item-templates.md)[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
 
-    - 项目状态和各个项的持久性。 有关详细信息，请参阅 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。 有关解决方案信息的持久性，请参阅 [解决方案](../../extensibility/internals/solutions-overview.md)。
+    - 项目状态和单个项的持久性。 有关详细信息，请参阅打开 [并保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。 有关解决方案信息的持久性，请参阅 [解决方案](../../extensibility/internals/solutions-overview.md)。
 
-    - 要在属性窗口中显示的独立于配置的属性。 有关详细信息，请参阅 [扩展属性](../../extensibility/internals/extending-properties.md)。
+    - 要显示在配置文件中的与配置属性窗口。 有关详细信息，请参阅扩展 [属性](../../extensibility/internals/extending-properties.md)。
 
-    - 在属性页中实现的项目配置属性，用于显示与配置相关的属性。 有关详细信息，请参阅 [管理配置选项](../../extensibility/internals/managing-configuration-options.md)。
+    - Project页中实现的配置属性，以显示与配置相关的属性。 有关详细信息，请参阅管理 [配置选项](../../extensibility/internals/managing-configuration-options.md)。
 
-    - 枚举部署的输出。 有关详细信息，请参阅 [输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)。
+    - 枚举部署的输出。 有关详细信息，请参阅输出[Project配置](../../extensibility/internals/project-configuration-for-output.md)。
 
-    - 项目启动服务。 有关详细信息，请参阅 [项目模型的元素](../../extensibility/internals/elements-of-a-project-model.md) 和 [项目模型核心组件](../../extensibility/internals/project-model-core-components.md)。
+    - Project启动服务。 有关详细信息，请参阅[项目模型的元素和](../../extensibility/internals/elements-of-a-project-model.md)Project[核心组件](../../extensibility/internals/project-model-core-components.md)。
 
-    - 对象或从派生的类 `IDispatch` 可用于实现自动化。
+    - 可用于自动化的对象或派生自 `IDispatch` 的类。
 
-    - XML 命令表 (*.vsct*) 文件。 有关详细信息，请参阅 [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+    - XML 命令表 (*.vsct*) 文件。 有关详细信息，请参阅命令[Visual Studio表 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 6. 测试、调试和启动项目类型。
 
-7. 通过将设置为的值，在 "**添加引用**" 对话框的 "**项目**" 选项卡中显示你的项目 `VARIANT_TRUE` `VSHPROPID_ShowProjInSolutionPage` 。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
+7. 将 设置为 的值 **，Project"** 添加引用"对话框的"项目 `VARIANT_TRUE` "选项卡中 `VSHPROPID_ShowProjInSolutionPage` 显示项目。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
-8. 创建 Microsoft Installer (*.msi*) 文件以安装 vspackage。 有关详细信息，请参阅 [使用 Windows Installer 安装 vspackage](../../extensibility/internals/installing-vspackages-with-windows-installer.md)、 [注册项目类型](../../extensibility/internals/registering-a-project-type.md)和 [vspackage](../../extensibility/internals/vspackages.md)。
+8. 创建 Microsoft Installer *(.msi)* 文件以安装 VSPackage。 有关详细信息，请参阅使用 Windows 安装程序安装[VSPackage、](../../extensibility/internals/installing-vspackages-with-windows-installer.md)[注册](../../extensibility/internals/registering-a-project-type.md)项目类型和[VSPackage。](../../extensibility/internals/vspackages.md)
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

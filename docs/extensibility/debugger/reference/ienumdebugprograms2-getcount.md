@@ -11,17 +11,18 @@ ms.assetid: 84832982-fa68-4090-a5b7-b233817876b7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2bfa24e963b826ad843c6e3f53cd125a9dea21ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: affb506f81acc20aec2bac35940fa572be7fd4be52d376d6e0b9037c4a98a059
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064509"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360061"
 ---
 # <a name="ienumdebugprograms2getcount"></a>IEnumDebugPrograms2::GetCount
 返回枚举中的元素数。

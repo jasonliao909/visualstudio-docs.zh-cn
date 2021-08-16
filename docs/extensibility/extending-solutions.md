@@ -8,14 +8,15 @@ ms.assetid: 5cb60183-2a87-4551-a19f-c7c4e65d60c0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fea1d805e1e3ce9c3f1af7cb25d798e9d8d1725d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5e8e886c2209ff08fe9fec5e8a06fe40f17d887552ff6f1ac8bf249b424beb59
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075102"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360022"
 ---
 # <a name="extend-solutions"></a>扩展解决方案
 解决方案是一个或多个项目的分组，它们一起工作以创建应用程序。

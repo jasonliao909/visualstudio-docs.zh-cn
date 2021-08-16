@@ -20,14 +20,15 @@ ms.assetid: 7c4cd83a-f985-4c85-9022-fadb5dbd2b39
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 4059d2d4b8a5d69c0c3433699c42c5e88bc6b668
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ca74fc63e759b2f74b5b6f886e31650e480bdc18652762012e5277ea522878eb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900530"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452974"
 ---
 # <a name="how-to-publish-a-project-that-has-a-specific-locale"></a>如何：发布具有特定区域设置的项目
 一个应用程序包含多个具有不同区域设置的组件的现象并不少见。 在本方案中，你将创建一个包含若干个项目的解决方案，然后为每个区域设置发布不同的项目。 本过程演示如何使用宏，用“en”区域设置发布解决方案中第一个项目。 如果希望使用“en”之外的其他区域设置来尝试此过程，请务必将宏中的 `localeString` 设置为与所用区域设置（例如，“de”或“de-DE”）相匹配的值。
@@ -151,17 +152,17 @@ ms.locfileid: "99900530"
 
 4. 使用 Visual Studio IDE 发布 PublishLocales。
 
-     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在 "项目设计器" 的 " **发布** " 页上，指定的发布位置 **http://localhost/PublishLocales** ，然后单击 " **立即发布**"。
+     在“解决方案资源管理器”中选择 PublishLocales。 在“项目”菜单上选择“属性”。 在 Project 设计器中的 "**发布**" 页上，指定的发布位置 **http://localhost/PublishLocales** ，然后单击 "**立即发布**"。
 
      当出现发布网页时，关闭它。 （对于此步骤，你只需发布该项目，而不必安装它。）
 
-5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看 "命令提示符" 窗口，请在 "**视图**" 菜单上，指向 "**其他窗口**"，再单击 "**命令窗口**"，或按 **Ctrl** + **Alt** + **A**。 在 "命令提示符" 窗口中，键入 `macros` ; "自动完成" 将提供可用宏的列表。 选择以下宏并按 Enter：
+5. 通过在 Visual Studio 命令提示符窗口中调用宏，再次发布 PublishLocales。 若要查看 "命令提示符" 窗口，请在 "**视图**" 菜单上，指向 "**其他 Windows** 然后单击"**命令窗口**"，或按 **Ctrl** + **Alt** + **A**。 在 "命令提示符" 窗口中，键入 `macros` ; "自动完成" 将提供可用宏的列表。 选择以下宏并按 Enter：
 
      `Macros.MyMacros.PublishSpecificCulture.PublishProjectFirstProjectWithEnLocale`
 
 6. 发布过程成功后，将生成一条消息，其中显示 " *PublishLocales\PublishLocales.vbproj* 的发布已成功。 发布语言为 "en"。在消息框中单击 **"确定"** 。 当发布网页出现时，单击“安装”。
 
-7. 在 *C:\Inetpub\wwwroot\PublishLocales\en* 中查找。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 默认情况下，ClickOnce 在 Exe 和 Dll 上追加了 *.deploy* 扩展名; (可以在部署后删除此扩展。 ) 
+7. 在 *C:\Inetpub\wwwroot\PublishLocales\en* 中查找。 除了已本地化的资源 DLL 外，还应看到已安装的文件，例如，清单、setup.exe 和发布网页文件。 默认情况下， (ClickOnce 在 exe 和 dll 上追加 *.deploy* 扩展名;可以在部署后删除此扩展。 ) 
 
 ## <a name="see-also"></a>另请参阅
 - [发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)

@@ -7,14 +7,15 @@ ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ebf3bbd1fe04b13f31de7ebd8c513de670dd480
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c39c27830d7e629a2a2e19c2b34a2ebff8c17f4833c897bdf681a2e0150ac678
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944129"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358527"
 ---
 # <a name="how-to-search-for-topics"></a>如何：搜索主题
 

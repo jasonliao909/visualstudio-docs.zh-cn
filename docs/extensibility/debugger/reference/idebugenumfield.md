@@ -11,14 +11,15 @@ ms.assetid: 42f685bf-0f39-47f4-98b0-6022efe2bf97
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18671f8f719dc797709677a14417eaa0a54aaea2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cf2dcf8cbec8b8ee183f888ec536c9a2726dbd3acc2866c6a3f432295f496ed3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092522"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452064"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 此接口表示一个枚举类型。

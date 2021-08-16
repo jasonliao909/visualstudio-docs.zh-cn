@@ -1,6 +1,6 @@
 ---
-description: 从当前上下文中减去指定的值并返回一个新的上下文。
-title: IDebugMemoryContext2：：减法 |Microsoft Docs
+description: 从当前上下文减去指定值并返回新上下文。
+title: IDebugMemoryContext2：：Subtract |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,20 +12,21 @@ ms.assetid: 63df14c7-8d7e-47c1-afa7-5a1ab5d8eaba
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1007a50ca42164cfc4e4f58c8d2c877cbba20f5c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ae24ad56fdc0e4e0be3488a1075a4022eed9e0c12da775b5f21790bd28e3f46
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058581"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451830"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
-从当前上下文中减去指定的值并返回一个新的上下文。
+从当前上下文减去指定值并返回新上下文。
 
 ## <a name="syntax"></a>语法
 
@@ -45,18 +46,18 @@ int Subtract(
 
 ## <a name="parameters"></a>参数
 `dwCount`\
-中要递减的内存字节数。
+[in]要减量的内存字节数。
 
 `ppMemCxt`\
-弄返回一个新的 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象。
+[out]返回新的 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 内存上下文是一个地址，因此，从地址中减去值将产生一个新地址，该地址需要新的上下文接口。
+ 内存上下文是一个地址，因此从地址中减去值会生成需要新上下文接口的新地址。
 
- 此方法必须始终生成新的上下文，即使生成的地址超出与此上下文关联的内存空间。 唯一的例外是，如果不能为新上下文分配任何内存，或者如果 `ppMemCxt` 是 null 值，则为 null 值 (这是) 错误。
+ 此方法必须始终生成新上下文，即使生成的地址位于与此上下文关联的内存空间之外。 唯一的例外是，无法为新上下文分配内存，或者 如果 为 null 值， (`ppMemCxt` 错误) 。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

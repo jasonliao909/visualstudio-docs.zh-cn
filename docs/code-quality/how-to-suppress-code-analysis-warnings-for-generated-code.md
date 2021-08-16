@@ -1,21 +1,22 @@
 ---
-title: 取消生成的代码的代码分析冲突
+title: 取消生成的代码的 Code Analysis 冲突
 ms.date: 05/13/2019
-description: 了解如何禁止显示所生成代码的代码分析警告。 请参阅如何阻止 Visual Studio 显示有关生成的代码的旧分析警告。
+description: 了解如何禁止显示所生成代码的代码分析警告。 请参阅如何防止 Visual Studio 显示有关生成的代码的旧分析警告。
 ms.custom: SEO-VS-2020
 ms.topic: how-to
 ms.assetid: 3a96434e-d419-43a7-81ba-95cccac835b8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: a149511b447f1f21d180eaf526ebc3d991c95997
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95ec7fab824160c58d259da2f2f4e5178e7b256ac7bbe310e0544bf3a835b739
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859939"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121455317"
 ---
 # <a name="how-to-suppress-code-analysis-warnings-for-generated-code"></a>如何：取消生成的代码的代码分析警告
 
@@ -30,7 +31,7 @@ ms.locfileid: "99859939"
 
 1. 右键单击 " **解决方案资源管理器** 中的项目，然后单击" **属性**"。
 
-2. 选择 " **代码分析** " 选项卡。
+2. 选择 " **Code Analysis** " 选项卡。
 
 3. 选中 " **禁止显示生成的代码结果** " 复选框。
 

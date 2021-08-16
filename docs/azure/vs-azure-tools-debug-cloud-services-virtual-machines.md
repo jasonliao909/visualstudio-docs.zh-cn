@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.technology: vs-ide-debug
-ms.openlocfilehash: 8669e4636be28d6462c6658a54fc818bae577905
-ms.sourcegitcommit: b770b99034e65c91b29bea87bc6f5fa02348515b
+ms.openlocfilehash: aeaa6bf6230833a350fb2fe8d55178d6c838a5f1d014a5dcdbe959daf6d01838
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112997665"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121364036"
 ---
 # <a name="debugging-an-azure-cloud-service-or-virtual-machine-in-visual-studio"></a>在 Visual Studio 中调试云服务或虚拟机
 
@@ -21,9 +21,9 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
 
 ## <a name="debug-your-cloud-service-on-your-local-computer"></a>在本地计算机上调试云服务
 
-可以通过使用 Azure 计算 Emulator 在本地计算机上调试云服务来节省时间和资金。 部署某个服务之前在本地对其进行调试可以提高可靠性和性能，且不会产生计算时间的相关费用。 但是，仅在 Azure 自身中运行云服务时，某些错误才可能会出现。 如果在发布服务时启用远程调试，然后将调试器附加到角色实例，则可以调试这些错误。
+可以通过在本地计算机上使用 Azure 计算 Emulator调试云服务来节省时间和资金。 部署某个服务之前在本地对其进行调试可以提高可靠性和性能，且不会产生计算时间的相关费用。 但是，仅在 Azure 自身中运行云服务时，某些错误才可能会出现。 如果在发布服务时启用远程调试，然后将调试器附加到角色实例，则可以调试这些错误。
 
-该模拟器模拟 Azure 计算服务并在本地环境中运行，使你可以在部署云服务之前对其进行测试和调试。 该模拟器将处理角色实例的生命周期，并提供对所模拟资源（如本地存储）的访问。 从 Visual Studio 调试或运行服务时，Visual Studio 会自动将模拟器作为后台应用程序启动，然后将服务部署到模拟器。 当模拟器在本地环境中运行时，可以使用它来查看服务。 可以运行完整版或速成版的模拟器。  (Azure 2.3 开始，模拟器的 express 版本为默认值。) 请参阅使用 Emulator Express 在本地运行和调试 [云服务](vs-azure-tools-emulator-express-debug-run.md)。
+该模拟器模拟 Azure 计算服务并在本地环境中运行，使你可以在部署云服务之前对其进行测试和调试。 该模拟器将处理角色实例的生命周期，并提供对所模拟资源（如本地存储）的访问。 从 Visual Studio 调试或运行服务时，Visual Studio 会自动将模拟器作为后台应用程序启动，然后将服务部署到模拟器。 当模拟器在本地环境中运行时，可以使用它来查看服务。 可以运行完整版或速成版的模拟器。  (Azure 2.3 开始，模拟器的 express 版本为默认值。) 请参阅使用[Emulator Express](vs-azure-tools-emulator-express-debug-run.md)在本地运行和调试云服务。
 
 ### <a name="to-debug-your-cloud-service-on-your-local-computer"></a>在本地计算机上调试云服务
 
@@ -77,7 +77,7 @@ Visual Studio 提供了不同的选项来调试 Azure 云服务和虚拟机。
 
     ![选择代码类型对话框](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-4. 若要标识调试器附加到的进程，请在菜单栏上选择"调试  >  **Windows 进程**  >  "，然后打开"**进程"** 对话框。 （键盘操作：Ctrl+Alt+Z）要分离特定的进程，请打开其快捷菜单，然后选择“分离进程”。 或者，在“服务器资源管理器”中找到实例节点，找到该进程，打开其快捷菜单，并选择“分离进程”。
+4. 若要标识调试器附加到的进程，请在菜单栏上选择"调试Windows进程  >    >  **"，** 然后打开"进程 **"** 对话框。 （键盘操作：Ctrl+Alt+Z）要分离特定的进程，请打开其快捷菜单，然后选择“分离进程”。 或者，在“服务器资源管理器”中找到实例节点，找到该进程，打开其快捷菜单，并选择“分离进程”。
 
     ![调试进程](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC690787.gif)
 
@@ -138,7 +138,7 @@ Visual Studio ASP.NET 项目提供了一个选项，可创建用于应用程序�
 
 1. 在 Visual Studio 中创建一个新的 ASP.NET Web 应用程序。
 
-2. 在"新建 ASP.NET"对话框中的"Azure"部分中，选择下拉列表框中的"虚拟机"。 保留 **“创建远程资源”** 复选框的选中状态。 选择“确定”以继续。
+2. 在 "新建 ASP.NET Project" 对话框中的 "Azure" 部分，在下拉列表框中选择 "**虚拟机**"。 保留 **“创建远程资源”** 复选框的选中状态。 选择“确定”以继续。
 
     此时将出现 **“在 Azure 上创建虚拟机”** 对话框。
 
@@ -147,13 +147,13 @@ Visual Studio ASP.NET 项目提供了一个选项，可创建用于应用程序�
     > [!NOTE]
     > 如果尚未登录到 Azure 帐户，系统将要求登录。
 
-3. 选择虚拟机的各种设置，然后选择"确定 **"。** 有关详细信息，请参阅[虚拟机](/azure/virtual-machines/)。
+3. 选择虚拟机的各种设置，然后选择 **"确定"**。 有关详细信息，请参阅[虚拟机](/azure/virtual-machines/)。
 
     为 DNS 名称输入的名称也就是虚拟机的名称。
 
     ![在 Azure 对话框上创建虚拟机](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC746724.png)
 
-    Azure 创建虚拟机，然后设置和配置终结点，例如远程桌面和Web 部署。
+    Azure 会创建虚拟机，然后设置和配置终结点，例如远程桌面和 Web 部署。
 
 4. 完全配置好虚拟机后，请在“服务器资源管理器”中选择该虚拟机的节点。
 
@@ -181,10 +181,10 @@ Visual Studio ASP.NET 项目提供了一个选项，可创建用于应用程序�
 
     ![选择代码类型对话框](./media/vs-azure-tools-debug-cloud-services-virtual-machines/IC718346.png)
 
-10. 选择要在虚拟机上调试的进程，然后选择"附加 **"。** 例如，如果要调试虚拟机上的某个 Web 应用，则可以选择 w3wp.exe 进程。 有关详细信息，请参阅[在 Visual Studio 中调试一个或多个进程](../debugger/debug-multiple-processes.md)。
+10. 选择要在虚拟机上调试的进程，然后选择 " **附加**"。 例如，如果要调试虚拟机上的某个 Web 应用，则可以选择 w3wp.exe 进程。 有关详细信息，请参阅[在 Visual Studio 中调试一个或多个进程](../debugger/debug-multiple-processes.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
-* 使用 **IntelliTrace** 从发布服务器收集调用和事件的日志。 请参阅[使用 IntelliTrace 和 Visual Studio 调试已发布的云服务](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
+* 使用 **IntelliTrace** 从发布服务器中收集调用和事件的日志。 请参阅[使用 IntelliTrace 和 Visual Studio 调试已发布的云服务](vs-azure-tools-IntelliTrace-debug-published-cloud-services.md)。
 
 * 使用“Azure 诊断”以记录在角色内运行的代码的详细信息，角色是否在开发环境或 Azure 中运行。 请参阅[使用 Azure 诊断收集日志记录数据](/azure/cloud-services/cloud-services-dotnet-diagnostics)。

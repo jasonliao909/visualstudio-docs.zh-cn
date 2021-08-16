@@ -1,6 +1,6 @@
 ---
 title: Working with elements in XAML Designer
-description: 了解如何使用 Visual Studio 中的 XAML 设计器中的元素或 Blend for Visual Studio。
+description: 了解如何在 XAML 设计器 或 Visual Studio 中Blend for Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 05/14/2018
 ms.topic: conceptual
@@ -8,12 +8,13 @@ ms.assetid: a29690bf-f212-4ac6-a77a-adc53d14102e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ef09f181176bbab961b0caa97ccfb9910c5a281d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 3af78174e4735a7e38ee6e13c429e6d30685faec1e36102ddfd5c3ae5c5c4f7c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961243"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365362"
 ---
 # <a name="work-with-elements-in-xaml-designer"></a>在 XAML 设计器中使用元素
 
@@ -21,13 +22,13 @@ ms.locfileid: "99961243"
 
 ## <a name="add-an-element-to-a-layout"></a>将元素添加到布局
 
-布局是调整元素在 UI 中的大小和位置的过程。 若要放置可视元素，必须将这些元素置于布局[面板](xref:Windows.UI.Xaml.Controls.Panel)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 类型的集合。 您可以使用各种 `Panel` 子元素（如 [Canvas](xref:Windows.UI.Xaml.Controls.Canvas)、 [system.windows.controls.stackpanel>](xref:Windows.UI.Xaml.Controls.StackPanel)和 [Grid](xref:Windows.UI.Xaml.Controls.Grid)）来充当布局容器以及在页面上放置和排列元素。
+布局是调整元素在 UI 中的大小和位置的过程。 若要放置可视元素，必须将这些元素置于布局[面板](xref:Windows.UI.Xaml.Controls.Panel)中。 `Panel` 具有一个子属性，该子属性是 [FrameworkElement](xref:Windows.UI.Xaml.FrameworkElement) 类型的集合。 可以使用各种子元素（如 `Panel` [Canvas、StackPanel](xref:Windows.UI.Xaml.Controls.StackPanel)和[Grid）](xref:Windows.UI.Xaml.Controls.Grid)作为布局容器，以及定位和排列页面上的元素。 [](xref:Windows.UI.Xaml.Controls.Canvas)
 
 默认情况下，`Grid` 面板用作页面或窗体中的顶级布局容器。 可在顶级页面布局内添加布局面板、控件或其他元素。
 
 若要将元素添加到 XAML 设计器中的布局，请执行以下操作之一：
 
-- 双击 " **工具箱** " 中的某个元素 (或选择工具箱中的某个元素，然后按 **enter**) 。
+- 双击"工具箱"中的元素 (或选择"工具箱"中的元素，然后按 **Enter**) 。
 
 - 将元素从“工具箱”拖到美工板 。
 
@@ -35,7 +36,7 @@ ms.locfileid: "99961243"
 
 ## <a name="change-the-layering-order-of-elements"></a>更改元素的分层顺序
 
-当 XAML 设计器中美工板上有两个元素时，一个元素在分层顺序中将显示在另一个元素之前。 "文档大纲" 窗口中的元素列表的底部是最前面的元素 (在将元素的 **ZIndex** 属性设置) 时除外。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
+当 XAML 设计器中美工板上有两个元素时，一个元素在分层顺序中将显示在另一个元素之前。 在元素列表的底部，"文档大纲"窗口中是最前面的元素 (除非将元素的 **ZIndex** 属性设置为) 。 当将元素插入页面、窗体或布局容器时，元素将自动放置在活动容器元素中的其他元素之前。 若要更改元素的顺序，可使用“排序”命令，或将元素拖入文档大纲窗口的对象树中。
 
 若要更改其分层顺序，请执行以下操作之一：
 
@@ -57,7 +58,7 @@ ms.locfileid: "99961243"
 
 可以通过使用菜单命令或通过将元素拖到对齐线，对齐美工板中的元素。
 
-*对齐线* 是一个视觉提示，可帮助你相对于应用中的其他元素对齐元素。
+*对齐线* 是一种视觉提示，可帮助你相对于应用中的其他元素对齐元素。
 
 使用菜单命令对齐两个或多个元素的步骤：
 
@@ -96,7 +97,7 @@ XAML 设计器中的边距决定了美工板上元素周围的空白区域的大
 
 将元素分组到一个新布局容器的步骤：
 
-1. 选择要分组的元素。  (若要选择多个元素，请按住 **Ctrl** 键，同时单击它们。 ) 
+1. 选择要分组的元素。  (若要选择多个元素，请在单击的同时按住 **Ctrl** 键。) 
 
 2. 右键单击选定的元素，指向“分组”，然后单击想要在其中放置该组的布局容器的类型。
 
@@ -109,7 +110,7 @@ XAML 设计器中的边距决定了美工板上元素周围的空白区域的大
 
 可以通过使用“布局重置”命令还原某个元素特定布局属性的默认值。 通过使用此命令可重置元素的边距、对齐方式、宽度、高度和大小，个别重置或同时全部重置均可。
 
-若要重置元素布局，请在 "文档大纲" 窗口或美工板中右键单击该元素，然后选择 "**布局**  >  **重置** *PropertyName*"，其中 *PropertyName* 是想要重置的属性 (或选择 "全部 **布局**  >  **重置**" 以重置元素的所有布局属性) 。
+若要重置元素布局，请右键单击"文档大纲"窗口或美板中的元素，然后选择"布局重置  >  *属性* 名称"，其中 *PropertyName* 是你想要重置 (的属性，或选择"布局重置全部"以重置元素  >  ) 的所有布局属性。
 
 ## <a name="see-also"></a>另请参阅
 

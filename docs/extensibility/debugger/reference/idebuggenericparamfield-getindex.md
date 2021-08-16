@@ -1,6 +1,6 @@
 ---
 description: 检索此泛型参数的索引。
-title: IDebugGenericParamField：： GetIndex |Microsoft Docs
+title: IDebugGenericParamField：：GetIndex |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: 8e0bdb26-1247-44d9-8d80-ec6e35187fb4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 210a66db89998cff2cde043ceb1c1cf21f23d8ee
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5296d1c8a726903bdc35b4fd510e7821b0e51d3faaa86c4ddf788e22ae357eef
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073477"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360295"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 检索此泛型参数的索引。
@@ -40,13 +41,13 @@ int GetIndex(
 
 ## <a name="parameters"></a>参数
 `pIndex`\
-弄此泛型参数的索引值。
+[out]此泛型参数的索引值。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-例如，对于字典 (K，V) ，K 为索引0，V 为索引1。
+例如，对于 Dictionary (K，V) ，K 是索引 0，V 是索引 1。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的 **CDebugGenericParamFieldType** 对象实现此方法。

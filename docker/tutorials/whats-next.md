@@ -1,19 +1,20 @@
 ---
 title: Docker 教程 - 后续内容
 description: 介绍使用云原生计算基础项目通过编排扩展 Docker 应用的选项。
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: e777d80f44c9a11e4d2a893c968d33e348ca442a
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 831d7bdaaa93067f01178e98fcba9577ee248897da33f04c35e07e2d6c85b519
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222690"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121349100"
 ---
 # <a name="whats-next"></a>后续步骤
 

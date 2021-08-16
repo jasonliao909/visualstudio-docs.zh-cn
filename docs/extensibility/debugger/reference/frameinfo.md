@@ -11,17 +11,18 @@ ms.assetid: 95001b89-dddb-45bb-889d-8327994e38a5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0df1689a6d72e972c2bb0f18082041997511843b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 79354f67bdeb2454a41598b0e941a3f9b0849537006d8228a1b3c1e9e35eab98
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452298"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述堆栈帧。

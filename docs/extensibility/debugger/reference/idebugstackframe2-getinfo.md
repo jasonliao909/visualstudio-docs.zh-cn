@@ -11,17 +11,18 @@ ms.assetid: 19c6870b-b94e-453c-bf19-82ce95b79d26
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 648109d917f7c06d3bf854d9f59fc15e49e7fc8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6d03223e4571a6792dacf0de413a4caaced08ba3c7c53266dfbe004f5434bbfc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053446"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448931"
 ---
 # <a name="idebugstackframe2getinfo"></a>IDebugStackFrame2::GetInfo
 获取堆栈帧的说明。

@@ -1,6 +1,6 @@
 ---
 description: 此方法返回属性对象的代理。
-title: IEEVisualizerService：： GetPropertyProxy |Microsoft Docs
+title: IEEVisualizerService：：GetPropertyProxy |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 748750f4-76e7-4580-9da2-afba07681b37
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a0be668c369143509c000cee767d302b83ba6287
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f73961b2c2d3debd2eeaf3322903d18f8cdbecd74dc85f4193cd7f2ed708f972
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086841"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448684"
 ---
 # <a name="ieevisualizerservicegetpropertyproxy"></a>IEEVisualizerService::GetPropertyProxy
 此方法返回属性对象的代理。
@@ -44,16 +45,16 @@ int GetPropertyProxy(
 
 ## <a name="parameters"></a>参数
 `dwID`\
-中要检索的属性代理的 ID。
+[in]要检索的属性代理的 ID。
 
 `proxy`\
-弄在 [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 接口中实现了所需的代理。
+[out]在 [IPropertyProxyEESide 接口中实现的所需](../../../extensibility/debugger/reference/ipropertyproxyeeside.md) 代理。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 将该请求传递给此方法，作为它对类型可视化工具的支持的一部分。
+- [GetPropertyProxy](../../../extensibility/debugger/reference/ipropertyproxyprovider-getpropertyproxy.md) 将请求传递给此方法，作为对类型可视化工具支持的一部分。
 
 ## <a name="see-also"></a>另请参阅
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

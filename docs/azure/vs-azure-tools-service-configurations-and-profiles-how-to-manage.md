@@ -3,16 +3,17 @@ title: 如何管理服务配置和配置文件 | Microsoft Docs
 description: 了解如何使用服务配置和配置文件，这两种配置文件将存储云服务的部署环境设置和发布设置。
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
-ms.openlocfilehash: e1c97670a91f2d90a01fef24f592e6ce2d5b05fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d26d94a94316a22612002e1b98dd78313577fa46b4c0c5272adaf1242846740
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843808"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121363240"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服务配置和配置文件
 ## <a name="overview"></a>概述
@@ -41,7 +42,7 @@ ms.locfileid: "99843808"
 
     此时将出现 **“管理服务配置”** 对话框。
 2. 要删除服务配置，请从“名称”列表中选择要删除的配置，并选择“删除”。 此时会显示一个对话框框以确认要删除此配置。
-3. 选择“删除”。
+3. 选择“删除” 。
 
      此时该服务配置文件将从解决方案资源管理器的 Azure 项目中删除。
 
@@ -94,4 +95,4 @@ ms.locfileid: "99843808"
 5. （可选）选择“发布”以使用新设置发布云服务。 如果现在不需要发布云服务，并且关闭发布向导，Visual Studio 会询问是否要保存对配置文件的更改。
 
 ## <a name="next-steps"></a>后续步骤
-若要了解如何从 Visual Studio 配置 Azure 项目的其他部分，请参阅 [配置 Azure 项目](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)。
+若要了解如何从 Visual Studio 配置 azure 项目的其他部分，请参阅[配置 azure Project](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)。

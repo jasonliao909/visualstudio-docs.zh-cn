@@ -11,17 +11,18 @@ ms.assetid: cc02c32c-0f65-4210-ad25-a9b1899066e8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00a031d02bba7ffcc1dca6f2cf73cfceeed04838
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 81b18a6e238b71a7c91445b551beb34dd081e53c24b5301cd58c495a04e1e733
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096572"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360958"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 此结构指定了来自元数据的字段类型的相关信息。

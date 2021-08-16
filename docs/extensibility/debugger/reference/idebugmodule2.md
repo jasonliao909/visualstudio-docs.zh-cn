@@ -11,14 +11,15 @@ ms.assetid: 24c2a126-f4ab-4891-8509-8ef99b994c08
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 848aa60ad7b8343d84489f460cfcb5fb6ec2d77d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d6829db5b10ef69a67891847ef763b80b8f710c0e6dfef78d09ace714839c129
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065549"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451817"
 ---
 # <a name="idebugmodule2"></a>IDebugModule2
 此接口表示一个模块，即程序的可执行单元（如 DLL）。

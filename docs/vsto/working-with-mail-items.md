@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 033dece28bad4471560646cdd086b342b3e1357b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5a7020ef93c3067b116eb2fe933af8971e786b0c46c1e56c70ee4b23cb60103
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939235"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121296419"
 ---
 # <a name="work-with-mail-items"></a>使用邮件项
   <xref:Microsoft.Office.Interop.Outlook.MailItem>类包含用于通过电子邮件执行任务的方法和属性。
@@ -36,7 +37,7 @@ ms.locfileid: "99939235"
 |添加附件|[如何：以编程方式将文件附加到 Outlook 电子邮件项](../vsto/how-to-programmatically-attach-files-to-outlook-e-mail-items.md)|
 |循环访问所有未读的消息。|[如何：以编程方式检索收件箱中的未读邮件](../vsto/how-to-programmatically-retrieve-unread-messages-from-the-inbox.md)|
 
- 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅 [outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
+ 有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)

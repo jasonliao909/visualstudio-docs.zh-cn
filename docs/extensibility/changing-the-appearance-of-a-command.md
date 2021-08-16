@@ -12,14 +12,15 @@ ms.assetid: da2474fa-f92d-4e9e-b8bf-67c61bf249c2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ddeed08d7bc33b9a9ae5405876f3b28459d4eaf2
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6344d5d58856c420807e80020d80f0067d0f973c566b3e613782e5fa0b85ef11
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905028"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452623"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
 可以通过更改命令的外观来为用户提供反馈。 例如，你可能希望命令在不可用时看起来不同。 可以使命令可用或不可用，隐藏或显示它们，或在菜单上选中或取消选中它们。
@@ -82,12 +83,12 @@ ms.locfileid: "112905028"
 
 6. 生成项目并启动调试。 应显示 Visual Studio实例。
 
-7. 在" **工具"** 菜单上，单击" **调用 ChangeMenuText"** 命令。 此时，命令名称为 **Invoke ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand () 。**
+7. 在" **工具"** 菜单上，单击 **"调用 ChangeMenuText"** 命令。 此时，命令名称为 **Invoke ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand () 。**
 
 8. 在"**工具"** 菜单上，现在应会看到"**新建文本"。** 单击"**新建文本"。** 命令现在应灰显。
 
 ## <a name="see-also"></a>另请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
-- [VSPackages 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
 - [Visual Studio命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

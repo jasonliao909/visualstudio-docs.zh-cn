@@ -1,6 +1,6 @@
 ---
-title: 如何：向 VSIX 包添加依赖项 |Microsoft Docs
-description: 了解如何设置用于安装目标计算机上尚不存在的所有依赖项的 VSIX 包部署。
+title: 如何：将依赖项添加到 VSIX 包|Microsoft Docs
+description: 了解如何设置 VSIX 包部署，以安装目标计算机上尚未存在的任何依赖项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,32 +13,33 @@ ms.assetid: 8f20177b-dab9-43a3-b959-81a591b451d6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48c6ac0abd5ffb6c36dc894829e29c9304563a5e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58453344957b5264e9f3061878953c2007d56c238f71b4200c6d518df6d7af1c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057397"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359918"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：向 VSIX 包添加依赖项
 
-你可以设置一个 VSIX 包部署，用于安装目标计算机上尚不存在的任何依赖项。 若要实现此目的，请将 VSIX 依赖项包含到 *source.extension.vsixmanifest* 文件。
+可以设置 VSIX 包部署，以安装目标计算机上尚未存在的任何依赖项。 为此，请包括 *source.extension.vsixmanifest 文件的* VSIX 依赖项。
 
 ## <a name="to-add-a-dependency"></a>添加依赖项
 
-1. 在 "**设计**" 视图中打开 *source.extension.vsixmanifest* 文件。 单击 " **依赖项** " 选项卡，然后单击 " **新建**"。
+1. 在"*设计"视图中打开 source.extension.vsixmanifest***文件。** 转到"依赖项 **"选项卡，** 然后单击"新建 **"。**
 
-2. 添加已安装的扩展：在 " **添加新的依赖项** " 对话框中，选择 " **已安装的扩展** "，然后对于 " **名称**"，请在列表中选择一个扩展。
+2. 若要添加已安装的扩展：在"添加新 **依赖项**"对话框中，选择"已安装的扩展"，然后在"名称"列表中选择一个扩展。
 
-3. 添加另一个未安装的 VSIX：在 " **添加新依赖项** " 对话框中，选择 "文件 **系统上的文件** "，然后使用 " **浏览** " 按钮选择该 vsix。
+3. 若要添加另一个未安装的 VSIX：在"添加新依赖项"对话框中，选择"文件系统上的文件"，然后使用"浏览"按钮选择 VSIX。 
 
-## <a name="require-a-specific-visual-studio-release"></a>需要特定的 Visual Studio 版本
+## <a name="require-a-specific-visual-studio-release"></a>需要特定的Visual Studio版本
 
-例如，如果你的扩展需要 Visual Studio 2017 的特定版本，则它依赖于在15.3 中发布的功能，你可以在 VSIX **InstallationTarget** 中指定内部版本号。 例如，版本15.3 的生成号为 "15.0.26730.3"。 可在 [此处](../install/visual-studio-build-numbers-and-release-dates.md)查看生成编号的版本映射。 请注意，使用版本号 "15.3" 将不能正常工作。
+例如，如果扩展需要特定版本的 Visual Studio 2017，则它依赖于 15.3 中发布的功能，可以在 VSIX **InstallationTarget** 中指定生成号。 例如，版本 15.3 的生成号为"15.0.26730.3"。 可在此处查看版本与生成号 [的映射](../install/visual-studio-build-numbers-and-release-dates.md)。 请注意，使用发行号"15.3"将无法正常工作。
 
-如果扩展需要15.3 或更高版本，则需要将 **InstallationTarget 版本** 声明为 [15.0.26730.3，16.0) ：
+如果扩展需要 15.3 或更高版本，则需要将 **InstallationTarget 版本** 声明为 [15.0.26730.3， 16.0) ：
 
 ```xml
 <Installation>
@@ -46,10 +47,10 @@ ms.locfileid: "105057397"
 </Installation>
 ```
 
-VSIXInstaller 将检测早期版本的 Visual Studio，并通知用户需要进行更高版本的更新。
+VSIXInstaller 将检测早期版本Visual Studio并通知用户需要更高版本的更新。
 
 ## <a name="see-also"></a>另请参阅
 
-- [VSIX 扩展架构1.0 引用](/previous-versions/dd393700(v=vs.110))
-- [VSIX 包的解析](../extensibility/anatomy-of-a-vsix-package.md)
-- [为 Windows Installer 部署准备扩展](../extensibility/preparing-extensions-for-windows-installer-deployment.md)
+- [VSIX 扩展架构 1.0 参考](/previous-versions/dd393700(v=vs.110))
+- [VSIX 包剖析](../extensibility/anatomy-of-a-vsix-package.md)
+- [为安装程序部署Windows扩展](../extensibility/preparing-extensions-for-windows-installer-deployment.md)

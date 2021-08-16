@@ -1,6 +1,6 @@
 ---
 description: 获取要销毁的属性。
-title: IDebugPropertyDestroyEvent2：： GetDebugProperty |Microsoft Docs
+title: IDebugPropertyDestroyEvent2：：GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: c96ae785-0ac8-4df4-8df3-15a8d7e13687
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cf3b4931fe6310add5242812c4e1170ec30433cf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4bfa28394bf8d7ea8f923a5bb27d4aad9853dfbcf841c2ecccae78e7b1151860
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083864"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448983"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 获取要销毁的属性。
@@ -42,10 +43,10 @@ int GetDebugProperty (
 
 ## <a name="parameters"></a>参数
 `ppProperty`\
-弄返回表示要销毁的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
+[out]返回表示要销毁的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)

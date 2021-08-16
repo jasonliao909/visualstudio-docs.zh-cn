@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fa6a45a199d4edce924f0e36a971026726d96eca
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: f2a46c68ff957451715c426d1b1effd3f16bfda9cb1d32347c56c44d769ac3fb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824791"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366207"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以编程方式发送电子邮件
   此示例向其电子邮件地址中具有域名 **example.com** 的联系人发送电子邮件。

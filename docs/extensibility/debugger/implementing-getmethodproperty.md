@@ -1,6 +1,6 @@
 ---
 title: 实现 GetMethodProperty |Microsoft Docs
-description: 了解 Visual Studio 如何使用调试引擎的 GetDebugProperty 获取有关堆栈帧上的当前方法的信息。
+description: 了解如何Visual Studio调试引擎的 GetDebugProperty 获取有关堆栈帧上当前方法的信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,33 +11,34 @@ ms.assetid: 6305874f-a2c4-4432-834c-07530ea84bff
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6ab7b0ba5e51ba8ea47b473934e825b82dec320c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 17f846e9dcb70300b27aa7248c4c4c2783b02887f6ba9d6071f636cbf48b78b0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903289"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121361101"
 ---
 # <a name="implement-getmethodproperty"></a>实现 GetMethodProperty
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-Visual Studio 将调用调试引擎 (DE) [GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)，后者又调用 [GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md) 来获取有关堆栈帧上的当前方法的信息。
+Visual Studio调试引擎的 (DE) [GetDebugProperty ，而 GetDebugProperty](../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md)又调用[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)以获取有关堆栈帧上当前方法的信息。
 
-此实现 `IDebugExpressionEvaluator::GetMethodProperty` 执行以下任务：
+的此 `IDebugExpressionEvaluator::GetMethodProperty` 实现执行以下任务：
 
-1. 调用 [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，传入 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) 对象。 符号提供程序 (SP) 返回表示包含指定地址的方法的 [IDebugContainerField](../../extensibility/debugger/reference/idebugcontainerfield.md) 。
+1. 调用 [GetContainerField](../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)，并传递 [IDebugAddress](../../extensibility/debugger/reference/idebugaddress.md) 对象。 SP (符号) 返回表示包含指定地址的方法的[IDebugContainerField。](../../extensibility/debugger/reference/idebugcontainerfield.md)
 
-2. 从获取 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) `IDebugContainerField` 。
+2. 从 获取[IDebugMethodField。](../../extensibility/debugger/reference/idebugmethodfield.md) `IDebugContainerField`
 
-3. 实例化 (`CFieldProperty` 在此示例中调用的类) 实现 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 接口并包含 `IDebugMethodField` 从 SP 返回的对象。
+3. 实例化 (中调用的类) 实现 `CFieldProperty` [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 接口并包含 `IDebugMethodField` 从 SP 返回的对象。
 
-4. `IDebugProperty2`从对象返回接口 `CFieldProperty` 。
+4. 从 `IDebugProperty2` 对象返回 `CFieldProperty` 接口。
 
 ## <a name="managed-code"></a>托管代码
-此示例演示如何 `IDebugExpressionEvaluator::GetMethodProperty` 在托管代码中实现。
+此示例演示托管代码中 `IDebugExpressionEvaluator::GetMethodProperty` 的实现。
 
 ```csharp
 namespace EEMC
@@ -69,7 +70,7 @@ namespace EEMC
 ```
 
 ## <a name="unmanaged-code"></a>非托管代码
-此示例演示如何 `IDebugExpressionEvaluator::GetMethodProperty` 在非托管代码中实现。
+此示例演示非托管代码中 `IDebugExpressionEvaluator::GetMethodProperty` 的实现。
 
 ```
 [CPP]

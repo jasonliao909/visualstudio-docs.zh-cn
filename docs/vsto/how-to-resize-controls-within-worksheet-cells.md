@@ -15,29 +15,30 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7b42c10fd82ec077b295a8bc683fa138c2eb095b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 4df6ea34f13e26ef24b32169a8f3db30298895bf05fc00ef8f4e88438910c817
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825740"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121366116"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：调整工作表单元格中的控件大小
-  当调整工作表中的列或行的大小时，单元中的所有主机控件都将自动调整大小，以调整调整后的单元格的高度或宽度。 默认情况下，Windows 窗体控件不自动调整大小。
+  当调整工作表中的列或行的大小时，单元中的所有主机控件都将自动调整大小，以调整调整后的单元格的高度或宽度。 Windows默认情况下，窗体控件不会自动调整大小。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
  如果在设计时添加控件，则必须设置每个控件的定位选项。
 
- 如果以编程方式添加 Windows 窗体控件并提供 range 参数，则当调整范围内的单元格大小时，控件会自动调整大小。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+ 如果以编程方式添加 Windows 窗体控件并提供 range 参数，则当调整范围内的单元格大小时，控件会自动调整大小。 有关详细信息，请参阅[在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="resize-controls-at-design-time"></a>在设计时调整控件大小
 
 ### <a name="to-make-controls-resize-with-cells-at-design-time"></a>在设计时使控件调整单元格大小
 
-1. 从 " **工具箱**" 中，将 Windows 窗体控件拖到工作表。
+1. 从 "**工具箱**" 中，将 Windows 窗体控件拖到工作表。
 
 2. 右键单击控件，然后单击 " **设置控件格式**"。
 
@@ -80,4 +81,4 @@ ms.locfileid: "107825740"
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [如何：在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
 - [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [Office 文档 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

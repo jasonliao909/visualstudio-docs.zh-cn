@@ -14,14 +14,15 @@ ms.assetid: cb071e93-f297-459c-a6fa-8ae0dabc42a4
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 34eb02621c42282fdd5ec1656edcb175351a1f5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5271d49a6177f0582f6bfbcf94a0ddee7a2d123de9e877f302c9e98882d4799b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944219"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358605"
 ---
 # <a name="find-topics-by-using-the-help-viewer-index"></a>使用 Help Viewer 索引查找主题
 

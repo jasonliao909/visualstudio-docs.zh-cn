@@ -10,17 +10,18 @@ ms.assetid: 1f43ec66-1615-4a4c-8b9d-e933f549f96d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5314bf6d06f291ce7128b3b6ccebd520ef2eafca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a2407caa182656f219194b3bb0ea6299c65c5d96bcb7c50021cf679cd868dd5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072827"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451970"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
 创建一个具有指定长度的字符串对象。

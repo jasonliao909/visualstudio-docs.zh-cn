@@ -11,14 +11,15 @@ ms.assetid: 1f2a4b94-3713-46e9-8272-3917187792bd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c2ceedbf0fad2141f978420909d31be2260818c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 33336093242bbdd89fe93f37fd00155a69a0c205ad2192295c8741bf574f2c50
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065926"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452012"
 ---
 # <a name="idebugerrorbreakpoint2"></a>IDebugErrorBreakpoint2
 此接口表示一个错误或警告断点，如无效位置、无效的表达式，或挂起断点未绑定 (代码尚未加载的原因等) 。

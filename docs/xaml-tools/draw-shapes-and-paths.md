@@ -9,14 +9,15 @@ ms.assetid: d5378c59-e2e5-49f0-91f1-aa82d984a33c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e815b3e4959727dab282fcbe0fcd1f82890bf8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5557413cfed7512d6a429d65beae3771a0f0667c4f9c7b85af05795f1d87fe47
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847344"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121365429"
 ---
 # <a name="draw-shapes-and-paths"></a>绘制形状和路径
 
@@ -90,7 +91,7 @@ ms.locfileid: "99847344"
 
 若要采用与修改路径相同的方式来修改形状，请将形状转换为路径。 选择形状，然后选择 "**格式化**  >  **路径**" "  >  **转换为路径**"。
 
-**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
+**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：将形状转换为路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=147)。
 
 > [!NOTE]
 > “转换为路径”当前不适用于 `TargetPlatformVersion` 至少为 10.0.16299.0 或更高版本的 UWP 应用。
@@ -101,7 +102,7 @@ ms.locfileid: "99847344"
 
 ![合并路径](../designers/media/2df17a5d-a338-4ef4-96c5-dae51cc1ca8a.png)
 
-|数字|操作|
+|Number|操作|
 |-|-|
 |![合并之前的两个形状](../designers/media/b1_1.png)|合并之前的两个形状|
 |![相并](../designers/media/b1_2.png)|相并|
@@ -110,7 +111,7 @@ ms.locfileid: "99847344"
 |![相斥](../designers/media/b1_5.png)|排除重叠|
 |![减](../designers/media/b1_6.png)|减|
 
-**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
+**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：合并路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=195)。
 
 ## <a name="create-a-compound-path"></a>创建复合路径
 
@@ -120,7 +121,7 @@ ms.locfileid: "99847344"
 
 ![中断复合路径](../designers/media/2157a8aa-d9a7-4de4-8de5-b10d28f08a84.png)
 
-**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
+**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：创建复合路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q)。
 
 ## <a name="create-a-clipping-path"></a>创建剪切路径
 
@@ -128,4 +129,4 @@ ms.locfileid: "99847344"
 
 ![剪切路径](../designers/media/22471e98-a841-4f39-a3ef-36090cf5a625.png)
 
-**观看短片：** ![配置已安装的功能](../designers/media/bldadminconsoleinitialconfigicon.png) [使用路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。
+**观看简短视频：** ![配置已安装的功能使用 ](../designers/media/bldadminconsoleinitialconfigicon.png) [路径：创建剪切路径](https://www.youtube.com/watch?v=Io5bC0-nH6Q#t=232)。

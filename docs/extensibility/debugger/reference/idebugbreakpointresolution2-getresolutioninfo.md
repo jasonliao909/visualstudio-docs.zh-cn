@@ -11,17 +11,18 @@ ms.assetid: 828cbdf6-b87d-4c45-be87-d87087b04a60
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4e0f042cc619fcd5016cf493f32ba661af4a449
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 781648f672e16df170051311023b4572e076c6caee92a2c26ea5500dc0223f5c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095675"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452259"
 ---
 # <a name="idebugbreakpointresolution2getresolutioninfo"></a>IDebugBreakpointResolution2::GetResolutionInfo
 获取描述此断点的断点解析信息。
