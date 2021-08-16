@@ -26,7 +26,7 @@ ms.locfileid: "121414891"
 
  扩展状态栏时，可以在四个区域显示信息和 UI：反馈区域、进度栏、动画区域以及设计器区域。 使用反馈区域可以显示文本并突出显示显示的文本。 进度栏显示短时间运行操作（如保存文件）的增量进度。 动画区域为长时间运行的操作或不确定长度的操作（例如，在解决方案中生成多个项目）显示连续循环动画。 设计器区域显示光标位置的行号和列号。
 
- 可以使用来自服务请求的接口 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 获取状态) 。 此外，位于窗口框架上的任何对象都可以通过实现 接口注册为状态栏客户端 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 对象。 每当激活窗口时，Visual Studio查询该窗口上所站点的对象的 `IVsStatusbarUser` 接口。 如果找到，它会在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 返回的接口上调用 方法，对象可以从该方法中更新状态栏。 例如，文档窗口可以使用 方法在设计器 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 区域处于活动状态时更新它们的信息。
+ 可以使用来自服务请求的接口 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbar> 获取 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 状态) 。 此外，位于窗口框架上的任何对象都可以通过实现 接口注册为状态栏客户端 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 对象。 每当激活窗口时，Visual Studio查询该窗口上所站点的对象以寻找 `IVsStatusbarUser` 接口。 如果找到，它会在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 返回的接口上调用 方法，对象可以从该方法中更新状态栏。 例如，文档窗口可以使用 方法在设计器 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser.SetInfo%2A> 区域处于活动状态时更新它们的信息。
 
  以下过程假定你了解如何创建 VSIX 项目并添加自定义菜单命令。 有关信息，请参阅 [使用菜单命令 创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
@@ -37,7 +37,7 @@ ms.locfileid: "121414891"
 
 1. 创建名为 **TestStatusBarExtension** 的 VSIX 项目，并添加名为 **TestStatusBarCommand** 的菜单命令。
 
-2. 在 *TestStatusBarCommand.cs* 中，将命令处理程序 () `MenuItemCallback` 替换为以下内容：
+2. 在 *TestStatusBarCommand.cs* 中，将命令处理程序方法代码 () `MenuItemCallback` 替换为以下内容：
 
     ```csharp
     private void MenuItemCallback(object sender, EventArgs e)
@@ -73,7 +73,7 @@ ms.locfileid: "121414891"
 
 3. 编译代码并开始调试。
 
-4. 打开 **Visual Studio** 实验实例中的"工具"菜单。 单击" **调用 TestStatusBarCommand"** 按钮。
+4. 打开 **Visual Studio** 实验实例中的"工具"Visual Studio。 单击" **调用 TestStatusBarCommand"** 按钮。
 
      应会看到状态栏中的文本现在显示为 **"我们刚刚写入状态栏"。** 和显示的消息框具有相同的文本。
 
@@ -107,7 +107,7 @@ ms.locfileid: "121414891"
 
 3. 编译代码并开始调试。
 
-4. 打开 **Visual Studio** 实验实例中的"工具"菜单。 单击 **"调用 TestStatusBarCommand"** 按钮。
+4. 打开 **Visual Studio** 实验实例中的"工具"Visual Studio。 单击 **"调用 TestStatusBarCommand"** 按钮。
 
      应会看到状态栏中的文本现在显示为" **写入进度栏"。** 还应看到进度栏每隔 20 秒更新一次。 之后，状态栏和进度栏将被清除。
 

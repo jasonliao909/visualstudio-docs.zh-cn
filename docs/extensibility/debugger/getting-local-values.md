@@ -1,6 +1,6 @@
 ---
 title: 获取本地值|Microsoft Docs
-description: 了解如何Visual Studio和托管代码使用 GetPropertyInfo 获取局部变量的值。
+description: 了解如何Visual Studio GetPropertyInfo 获取托管代码和未托管代码的本地变量的值。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -441,7 +441,7 @@ HRESULT FieldGetValue( in IDebugField* pfield, out VARIANT* pvarValue )
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [局部变量的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [获取本地属性](../../extensibility/debugger/getting-local-properties.md)
 - [计算上下文](../../extensibility/debugger/evaluation-context.md)

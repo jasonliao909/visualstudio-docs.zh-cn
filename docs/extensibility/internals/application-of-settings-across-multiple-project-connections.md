@@ -37,5 +37,5 @@ ms.locfileid: "121414709"
 
 `SCCBeginBatch`函数启动一组源代码管理操作。 `SccEndBatch`函数将关闭组。 这些组可能不是嵌套的。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 版本1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

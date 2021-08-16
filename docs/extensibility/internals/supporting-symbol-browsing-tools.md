@@ -51,7 +51,7 @@ ms.locfileid: "121414204"
 > [!NOTE]
 > 若要实现本机代码符号提供程序，请使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsLibrary2> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：使用对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [如何：向对象管理器公开库提供的符号列表](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)
 - [如何：识别库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

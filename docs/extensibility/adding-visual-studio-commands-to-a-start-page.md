@@ -1,6 +1,6 @@
 ---
 title: 将Visual Studio命令添加到起始页|Microsoft Docs
-description: 了解在自定义起始Visual Studio中将命令绑定到 XAML 对象的不同Visual Studio。
+description: 了解在 Visual Studio 中将 Visual Studio 命令绑定到自定义起始页上的 XAML 对象的不同Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,7 +24,7 @@ ms.locfileid: "121403497"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>将Visual Studio添加到起始页
 
-创建自定义起始页时，可以将Visual Studio添加到该起始页。 本文档讨论将命令绑定到起始Visual Studio XAML 对象的不同方法。
+创建自定义起始页时，可以添加Visual Studio命令。 本文档讨论将命令绑定到起始Visual Studio XAML 对象的不同方法。
 
 有关 XAML 中的命令详细信息，请参阅 [命令概述](/dotnet/framework/wpf/advanced/commanding-overview)
 
@@ -37,7 +37,7 @@ xmlns:vs="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.Vis
 xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
 ```
 
-从 程序集为 Microsoft.VisualStudio.Shell 添加另 *一Microsoft.VisualStudio.Shell.Immutable.11.0.dll。*  (可能需要在 project.) 中添加对此程序集的引用。
+从 程序集为 Microsoft.VisualStudio.Shell 添加另 *一Microsoft.VisualStudio.Shell.Immutable.11.0.dll。*  (可能需要在 project.) 中添加对此程序集的引用
 
 ```xml
 xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.Immutable.11.0"
@@ -93,7 +93,7 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
     ```
 
 > [!NOTE]
-> 必须复制程序集，然后将其粘贴到 *.中。 \\{Visual Studio安装文件夹}\Common7\IDE\PrivateAssemblies，以确保在调用之前 \* 加载它。
+> 必须复制程序集，然后将其粘贴到 *.中。 \\{Visual Studio安装文件夹}\Common7\IDE\PrivateAssemblies，以确保在调用它 \* 之前加载它。
 
 ## <a name="add-commands-with-the-dte-object"></a>使用 DTE 对象添加命令
  可以在标记和代码中从起始页访问 DTE 对象。
@@ -113,6 +113,6 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
  有关示例，请参阅 [演练：在起始页上保存用户设置](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

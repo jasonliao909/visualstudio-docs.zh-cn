@@ -1,5 +1,5 @@
 ---
-title: 以编程方式Office缓存文档中的数据源
+title: 以编程方式在Office缓存数据源
 description: 了解如何通过调用宿主项的 StartCaching 方法，以编程方式将数据对象添加到文档中的数据缓存。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -57,7 +57,7 @@ ms.locfileid: "121408768"
     > [!NOTE]
     > 对于文档 `StopCaching` 或工作表的事件，请勿从 `Shutdown` 事件处理程序调用 。 引发事件时， `Shutdown` 修改数据缓存为时已晚。 有关 事件详细信息 `Shutdown` ，请参阅 Office[中的事件](../vsto/events-in-office-projects.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [缓存数据](../vsto/caching-data.md)
 - [如何：缓存数据以脱机或在服务器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)

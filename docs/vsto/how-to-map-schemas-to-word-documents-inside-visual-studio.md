@@ -1,6 +1,6 @@
 ---
-title: 如何：将架构映射到 Visual Studio 中的 Word 文档
-description: 了解如何在 Visual Studio 中打开文档时，如何将 XML 架构映射到 Microsoft Office Word 文档中。
+title: 如何：将架构映射到文档中的 Word Visual Studio
+description: 了解如何在文档打开时将 XML 架构Microsoft Office Word 文档Visual Studio。
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
@@ -25,46 +25,46 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121408807"
 ---
-# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 中的 Word 文档
-  **重要提示** 本主题中的关于 Microsoft Word 的信息是专门针对美国及其区域以外的个人和组织的权益和使用的，或者开发在上运行的程序 Microsoft Word （在2010年1月之前，microsoft 从 Microsoft Word 中的自定义 XML 删除了特定功能的实现。 对于在2010年1月10日之后使用、或开发 Microsoft Word 的程序 Microsoft Word 产品的美国或其所在区域中的个人或组织，可能无法读取或使用与有关的信息。对于该日期之前许可的产品，这些产品的行为并不相同，也不会在美国之外购买和许可。
+# <a name="how-to-map-schemas-to-word-documents-inside-visual-studio"></a>如何：将架构映射到文档中的 Word Visual Studio
+  **重要** 本主题中介绍的关于 Microsoft Word 的信息专门供位于 美国 及其区域之外、正在使用或开发运行于 2010 年 1 月之前由 Microsoft 许可的 Microsoft Word 产品（当 Microsoft 从 Microsoft Word 中删除与自定义 XML 相关的特定功能的实现时）的个人或组织受益和使用。 有关 Microsoft Word 的信息不能由 美国 或其区域使用或开发在 2010 年 1 月 10 日之后由 Microsoft 许可的 Microsoft Word 产品运行的程序的个人或组织读取或使用;这些产品的行为与该日期之前许可的产品或购买和许可在产品外部使用的产品美国。
 
  [!INCLUDE[appliesto_wdalldoc](../vsto/includes/appliesto-wdalldoc-md.md)]
 
- 在 Visual Studio 中打开文档时，可以将 XML 架构映射到文档。 使用与在 Visual Studio 外打开文档时使用的相同 Microsoft Office Word 工具。 无论在创建 Word 解决方案之前还是之后将架构映射到文档，Office 项目都将创建相同的对象。
+ 可以在打开文档时将 XML 架构映射到文档Visual Studio。 使用在Microsoft Office外部打开文档时使用的 Word 工具Visual Studio。 无论Office Word 解决方案之前或之后将架构映射到文档，项目都创建相同的对象。
 
-## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>若要将 XML 架构映射到 Visual Studio 中的 Word 文档
+## <a name="to-map-an-xml-schema-to-a-word-document-in-visual-studio"></a>将 XML 架构映射到文档中的 Word Visual Studio
 
-1. 在 Visual Studio 中打开 Word 文档或模板项目。
+1. 打开 Word 文档或模板项目Visual Studio。
 
-2. 在文档中单击以将焦点移到设计器。
+2. 单击文档以将焦点移动到设计器。
 
-3. 在功能区上，单击 " **开发人员** " 选项卡。
+3. 在功能区上，单击" **开发人员"** 选项卡。
 
     > [!NOTE]
-    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [如何：在功能区上显示 "开发人员" 选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [功能区 上的"如何：显示开发人员"选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
-4. 在 " **XML** " 组中，单击 " **架构**"。
+4. 在 **XML 组中**，单击"架构 **"。**
 
-     此时将打开 " **模板和外接程序** " 对话框。
+     " **模板和外接程序"** 对话框随即打开。
 
-5. 单击 " **XML 架构** " 选项卡。
+5. 单击 **"XML 架构"** 选项卡。
 
-6. 单击 " **添加架构**"。
+6. 单击"**添加架构"。**
 
-     " **添加架构** " 对话框随即打开。
+     " **添加架构"** 对话框随即打开。
 
-7. 浏览到您的架构文件，选择它，然后单击 " **打开**"。
+7. 浏览到架构文件，将其选中，然后单击"打开 **"。**
 
-     此时将打开 "**架构设置**" 对话框。
+     "**架构设置** 对话框随即打开。
 
-8. 分配一个别名，或者单击 **"确定"** 以添加没有别名的架构。
+8. 分配别名或单击 **"确定** "以添加不带别名的架构。
 
 9. 单击“确定”。
 
-     此时将打开 " **XML 结构** " 窗口。
+     "XML **结构"** 窗口随即打开。
 
-10. 将元素从 " **XML 结构** " 窗口拖到您要在其中创建相应控件的文档中的位置。
+10. 将元素从 **"XML 结构** "窗口拖到文档中要创建相应控件的位置。
 
-## <a name="see-also"></a>另请参阅
-- [如何：将架构映射到 Visual Studio 中的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+## <a name="see-also"></a>请参阅
+- [如何：将架构映射到工作表中的Visual Studio](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
 - [文档级自定义项中的 XML 架构和数据](../vsto/xml-schemas-and-data-in-document-level-customizations.md)

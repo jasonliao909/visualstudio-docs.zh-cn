@@ -77,6 +77,6 @@ SCCRTN SccQueryInfo(
 
 - 如果当前用户将文件签出到工作目录以外的目录， `SCC_STATUS_OUTBYUSER` 则会设置，但不会设置 `SCC_STATUS_CHECKEDOUT` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [文件状态代码](../extensibility/file-status-code-enumerator.md)

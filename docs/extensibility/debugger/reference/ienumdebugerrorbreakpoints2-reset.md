@@ -45,5 +45,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后，对 [Next](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-next.md) 方法的下一次调用将返回 枚举的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugErrorBreakpoints2](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2.md)

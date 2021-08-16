@@ -38,6 +38,6 @@ Visual Studio调试 SDK 参考概述了调试器及其组件的运行时体系�
 
 提供与调试相关的术语及其定义的列表。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 调试器可扩展性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

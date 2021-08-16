@@ -1,6 +1,6 @@
 ---
 description: 此方法返回字段枚举中的元素数。
-title: IEnumDebugFields：：GetCount |Microsoft Docs
+title: IEnumDebugFields：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121415515"
 ---
 # <a name="ienumdebugfieldsgetcount"></a>IEnumDebugFields::GetCount
-此方法返回 枚举中的元素数。
+此方法返回枚举中的元素数。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>参数
 `pcelt`\
-[out]返回 枚举中的元素数。
+弄返回枚举中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不是 COM 枚举接口的一部分，该接口指定只需要实现 Next、Clone、Skip 和 Reset。
+ 此方法不是习惯的 COM 枚举接口的一部分，它指定仅需实现下一个、克隆、跳过和重置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

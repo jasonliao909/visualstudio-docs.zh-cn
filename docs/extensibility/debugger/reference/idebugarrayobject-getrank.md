@@ -51,5 +51,5 @@ int GetRank(
 ## <a name="remarks"></a>备注
  使用 [GetDimensions](../../../extensibility/debugger/reference/idebugarrayobject-getdimensions.md) 方法检索数组对象每个维度的大小。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

@@ -28,7 +28,7 @@ ms.locfileid: "121414956"
 
  **程序集：mscorlib** (*mscorlib.dll*) 
 
- 由于无法从 CIL 访问这些内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
+ 由于无法从 CIL 访问这些内部成员，因此.NET Framework CIL 语言语言 (语法) 。
 
 ## <a name="syntax"></a>语法
 
@@ -82,6 +82,6 @@ ms.locfileid: "121414956"
 
 - `InternalWait`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Threading.Tasks.Task?displayProperty=fullName>
 - [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

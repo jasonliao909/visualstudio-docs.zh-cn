@@ -46,6 +46,6 @@ ms.locfileid: "121414943"
 
   当代码已加载并准备好运行，但在执行任何代码之前，DE 将发送 SDM a [IDebugLoadCompleteEvent2](../../extensibility/debugger/reference/idebugloadcompleteevent2.md) load 完成事件。 最后，如果程序未在运行，则 DE 将发送 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 入口点事件，并发出信号表明程序已到达其主入口点，并且已准备好进行调试。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [控制执行](../../extensibility/debugger/control-of-execution.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

@@ -43,7 +43,7 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)对象，描述函数的名称以及函数开头的相对位置。
 
 ## <a name="remarks"></a>备注
-此结构是联合 [BP_LOCATION结构的成员](../../../extensibility/debugger/reference/bp-location.md) 。
+此结构是 [联合BP_LOCATION结构](../../../extensibility/debugger/reference/bp-location.md) 的成员。
 
 `pFuncPos`成员指示在何处设置函数断点。
 
@@ -54,7 +54,7 @@ typedef struct _BP_LOCATION_CODE_FUNC_OFFSET {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)

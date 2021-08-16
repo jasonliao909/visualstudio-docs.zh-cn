@@ -27,7 +27,7 @@ ms.locfileid: "121414475"
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还提供一些未注册的内置服务。 VSPackage 可以通过提供服务替代来替换内置或其他服务。 任何服务只允许一个服务重写。
 
- 服务没有可发现性。 因此，必须知道服务标识符 (SID) 想要使用的服务的 SID 标识符，并且必须知道它提供的接口。 服务的参考文档提供了此信息。
+ 服务没有可发现性。 因此，必须知道 (服务) SID 标识符，并且必须知道该服务提供的接口。 服务的参考文档提供了此信息。
 
 - 提供服务的 VSPackage 称为"服务提供商"。
 
@@ -41,7 +41,7 @@ ms.locfileid: "121414475"
 
 - 为了支持按需加载，服务提供商使用 注册其全局服务 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 [如何：提供服务](../../extensibility/how-to-provide-a-service.md)。
 
-- 获取服务后，请使用 [QueryInterface](/cpp/atl/queryinterface) (非托管) 或强制转换 (托管) 以获取所需的接口，例如：
+- 获取服务后，使用 [QueryInterface](/cpp/atl/queryinterface) (非托管) 或强制转换 (托管) 以获取所需的接口，例如：
 
   ```vb
   TryCast(GetService(GetType(SVsActivityLog)), IVsActivityLog)
@@ -95,7 +95,7 @@ ms.locfileid: "121414475"
 
     此代码获取 SVsActivityLog 服务，并强制转换到 IVsActivityLog 接口，该接口可用于写入活动日志。 有关示例，请参阅 [如何：使用活动日志](../../extensibility/how-to-use-the-activity-log.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [可用服务的列表](../../extensibility/internals/list-of-available-services.md)
 - [使用并提供服务](../../extensibility/using-and-providing-services.md)

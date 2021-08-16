@@ -1,6 +1,6 @@
 ---
-title: CreateNewFolder 元素 (Visual Studio模板) |Microsoft Docs
-description: 了解 CreateNewFolder 元素及其如何确定是否检查要创建项目的目标目录是否不存在。
+title: CreateNewFolder 元素 (Visual Studio 模板) |Microsoft Docs
+description: 了解 CreateNewFolder 元素及其如何确定是否检查要在其中创建项目的目标目录是否不存在。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -22,7 +22,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121403510"
 ---
-# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 元素 (Visual Studio模板) 
+# <a name="createnewfolder-element-visual-studio-templates"></a>CreateNewFolder 元素 (Visual Studio 模板) 
 确定是否检查要创建项目的目标目录不存在。 如果该目录存在，则为项目创建新目录。 该设置通常由所有通用项目类型用来确定是否在新目录中创建新项目的 `NewProjectRequiresNewFolder(VsTemplate)` 注册表标志 (`HKEY_LOCAL_MACHINE/SOFTWARE(/Wow6432Node)/Microsoft/VisualStudio/<version number>/Projects/<project GUID>`) 重写。
 
  \<VSTemplate> \<TemplateData>

@@ -58,7 +58,7 @@ ms.locfileid: "121414397"
 
   添加新的解决方案配置后，用户可以从 "标准" 工具栏上的 "解决方案配置" 下拉列表框中选择它以生成和/或启动该配置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
 - [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)
 - [项目配置对象](../../extensibility/internals/project-configuration-object.md)
