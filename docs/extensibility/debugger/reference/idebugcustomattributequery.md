@@ -1,5 +1,5 @@
 ---
-description: 表示对方法或类型的自定义特性的查询。
+description: 表示对方法或类型上的自定义属性的查询。
 title: IDebugCustomAttributeQuery |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,17 +9,18 @@ ms.assetid: b804b619-70eb-4c38-80d9-c8b32b65ed3e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cd93ea2ab13dd6ab138241b526f0818e24274318
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 47352c8775f26dd8ef1355becd1c5fd2c12f727c0a97625e5ddd5554a47246bb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054265"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402943"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
-表示对方法或类型的自定义特性的查询。
+表示对方法或类型上的自定义属性的查询。
 
 ## <a name="syntax"></a>语法
 
@@ -32,12 +33,12 @@ IDebugCustomAttributeQuery : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|检索自定义属性的名称。|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|确定是否定义了指定的自定义特性。|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|检索给定名称的自定义属性。|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|确定在指定的自定义属性中定义。|
 
 ## <a name="requirements"></a>要求
- 标头： Sh。h
+ 标头：Sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

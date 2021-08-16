@@ -1,6 +1,6 @@
 ---
-title: 项目类型|Microsoft Docs
-description: Visual Studio包括多种适用于语言（如 Visual C# 和 Visual Basic）的项目类型。 Visual Studio还可以创建自己的项目类型。
+title: Project类型|Microsoft Docs
+description: Visual Studio包括多种语言项目类型，如 Visual C# 和 Visual Basic。 Visual Studio还可以创建自己的项目类型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,14 +11,15 @@ ms.assetid: 263a084f-f97a-4e09-add7-f0e8a6a27daf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7ecf54a9a5aa4b19d5ecc079e0bf5a448561f98
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: b3a4b440b5b9fd446eba226431e5dd88e8074591d6bad12815020cb6cba04edd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903553"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401357"
 ---
 # <a name="project-types"></a>项目类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包括多种语言项目类型，如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还允许创建自己的项目类型。
@@ -67,11 +68,11 @@ ms.locfileid: "112903553"
 ## <a name="related-sections"></a>相关章节
 - [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)
 
- 概述 IDE 集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 开发环境 (IDE) 将项目显示为层次结构。
+ 概述 IDE 集成开发环境 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 将项目显示为层次结构。
 
 - [项目子类型](../../extensibility/internals/project-subtypes.md)
 
- 提供指向项目子类型主题的链接。 项目子类型允许扩展大多数类型的项目类型，包括你自己的项目类型。
+ 提供指向项目子类型主题的链接。 Project子类型允许扩展大多数类型的项目类型，包括你自己的项目类型。
 
 - [项目](../../extensibility/internals/projects.md)
 

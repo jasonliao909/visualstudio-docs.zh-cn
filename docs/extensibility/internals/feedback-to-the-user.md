@@ -13,14 +13,15 @@ ms.assetid: 2d472a24-3813-4f5f-9783-b491ad8a71ad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d40ca34ea8d579e85ee56170f621b98a10b89f2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1b4794dcf4293b340390695afa02bb49e552ada8918e9a3184c74f16b987432e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069629"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388729"
 ---
 # <a name="feedback-to-the-user"></a>向用户提供反馈
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 上，有关可用功能的视觉反馈基于用户的当前选择和全局选择上下文。 下表列出了在不同选择上下文中可用的功能。
@@ -49,7 +50,7 @@ ms.locfileid: "105069629"
 
 - 菜单、工具栏和应用程序标题栏应反映 (MDI) 客户端窗口的最顶层多文档界面。
 
-  例如，当打开 Visual Basic Web 应用程序项目中的 **Web 窗体** 的 HTML 视图，并且用户选择了一个标记时，将通过 `<td>` 以下方式提供反馈：
+  例如，当打开 Visual Basic web 应用程序项目中的 **web 窗体** 的 HTML 视图，并且用户选择了一个标记时，将通过 `<td>` 以下方式提供反馈：
 
 - 在活动窗口中指定了选择，并反映在 " **属性** " 窗口中。
 
@@ -57,7 +58,7 @@ ms.locfileid: "105069629"
 
 - 将显示 **编辑器** 工具栏和 **表** 菜单，并且标题栏将更新以反映 Web 窗体窗口。
 
-- 活动层次结构窗口通常是 **解决方案资源管理器** 的，其标题栏更新将反映当前上下文，并且上下文相关 **项目** 菜单命令现在适用于活动 Web 应用程序项目。
+- 活动层次结构窗口通常是 **解决方案资源管理器** 的，并且其标题栏更新以反映当前上下文，并且上下文相关的 **Project** 菜单命令现在应用于活动 Web 应用程序项目。
 
 ## <a name="see-also"></a>另请参阅
 - [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)

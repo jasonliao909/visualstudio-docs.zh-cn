@@ -1,6 +1,6 @@
 ---
-description: 获取承载程序的进程的系统进程标识符。
-title: IDebugProgramNode2：： GetHostPid |Microsoft Docs
+description: 获取托管程序的进程的系统进程标识符。
+title: IDebugProgramNode2：：GetHostPid |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: e65b4b15-46d8-4ca7-9456-2b4c078f7cf9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e3fa384bc22c864f6438fb3c54e044d9fff7368
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 710c148f3fa45c08d103653f0da29124a23c6b7b4f93d1aa5816ef86d336e04a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087244"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402644"
 ---
 # <a name="idebugprogramnode2gethostpid"></a>IDebugProgramNode2::GetHostPid
-获取承载程序的进程的系统进程标识符。
+获取托管程序的进程的系统进程标识符。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int GetHostPid (
 
 ## <a name="parameters"></a>参数
 `pdwHostPid`\
-弄返回宿主进程的系统进程标识符。
+[out]返回承载进程的系统进程标识符。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
- 下面的示例演示如何对 `CProgram` 实现 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 接口的简单对象实现此方法。
+ 下面的示例演示如何为实现 `CProgram` [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {

@@ -1,6 +1,6 @@
 ---
-description: 确定是否已定义了特定的自定义特性。
-title: IDebugMethodField：： IsCustomAttributeDefined |Microsoft Docs
+description: 确定是否定义了特定的自定义属性。
+title: IDebugMethodField：：IsCustomAttributeDefined |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 1b5d95a8-cc87-4acb-9e6a-3928f3632b7c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7cd9e1ae31e893639b41537bb5b09323cc70ff9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5b9e804e74ae43d15f0fc1f179295f107b65b61d5f2a3e38c7d5d4f8baa9e6bf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081888"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433679"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
-确定是否已定义了特定的自定义特性。
+确定是否定义了特定的自定义属性。
 
 ## <a name="syntax"></a>语法
 
@@ -42,10 +43,10 @@ int IsCustomAttributeDefined(
 
 ## <a name="parameters"></a>参数
 `pszCustomAttributeName`\
-中一个字符串，其中包含要查找的自定义特性的名称。
+[in]一个字符串，其中包含要查找的自定义属性的名称。
 
 ## <a name="return-value"></a>返回值
- 如果在此方法中定义了自定义特性，则返回 S_OK; 否则，将返回 S_FALSE。
+ 如果S_OK定义自定义属性，则返回 S_FALSE。
 
 ## <a name="see-also"></a>另请参阅
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

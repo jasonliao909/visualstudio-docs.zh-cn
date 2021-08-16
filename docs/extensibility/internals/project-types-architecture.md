@@ -1,6 +1,6 @@
 ---
-title: 项目类型体系结构 |Microsoft Docs
-description: 本文链接到的文章包含有关 Visual Studio 中的项目类型体系结构的详细信息。
+title: Project类型体系结构 |Microsoft Docs
+description: 本文链接到的文章包含有关 Visual Studio 中的项目类型的体系结构的详细信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 9c1d940f-8a54-41f7-a8aa-c870e324371c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b03ca1db09df7176eb52d5c8141bf87b1637d79
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6d42bda91e9714b8deff4822e2e41c2af1af8dc4d2ef96274727d8b5f7f35ff5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064264"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401364"
 ---
 # <a name="project-types-architecture"></a>项目类型体系结构
 本部分包含有关中的项目类型的体系结构的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

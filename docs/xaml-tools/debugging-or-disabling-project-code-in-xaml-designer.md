@@ -1,6 +1,6 @@
 ---
 title: 在 XAML 设计器中调试或禁用项目代码
-description: 了解如何在 XAML 设计器中调试或禁用项目代码，包括如何调试另一个 Visual Studio 实例中运行的项目代码。
+description: 了解如何调试或禁用项目中的项目XAML 设计器，包括如何调试其他实例中的运行项目代码Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,12 +8,13 @@ ms.assetid: ac600581-8fc8-49e3-abdf-1569a3483d74
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: e03c33de81727c333db8f662232e669e37e78f59
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 8e0563318600c30d595d6fd193aff48f4171d31ae95e39c48c8bb5dd02c154ae
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921761"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121393227"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -37,7 +38,7 @@ ms.locfileid: "99921761"
 
 1. 在未处理的异常对话框中，选择“单击此处重载设计器”  链接。
 
-2. 在菜单栏上，选择 "**调试**" "  >  **开始调试**" 以生成和运行应用程序。
+2. 在菜单栏上，选择 **"调试**  >  **""开始调试**"以生成并运行应用程序。
 
      如果应用程序成功生成和运行，则设计时异常可能由设计器中运行的项目代码引起。
 
@@ -55,7 +56,7 @@ ms.locfileid: "99921761"
 
 5. 在项目代码中设置断点。
 
-6. 在 Visual Studio 的新实例中，在菜单栏上选择 "**调试**" "  >  **附加到进程**"。
+6. 在 Visual Studio 的新实例中，在菜单栏上，选择"**调试**  >  **附加到进程"。**
 
 7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe” ，然后选择“附加”  按钮。
 
@@ -63,7 +64,7 @@ ms.locfileid: "99921761"
 
      这是 Visual Studio 的第一个实例中 XAML 设计器的进程。
 
-8. 在 Visual Studio 的第一个实例中，在菜单栏上选择 "**调试**" "  >  **启动调试**"。
+8. 在第一个 Visual Studio，在菜单栏上，选择"**调试**  >  **开始调试"。**
 
      现即可单步执行设计器中运行的代码。
 
@@ -71,7 +72,7 @@ ms.locfileid: "99921761"
 
 - 在未处理的异常对话框中，选择“单击此处禁用正在运行的项目代码并重载设计器”  链接。
 
-- 或者，在 **XAML 设计器** 的工具栏中，选择 " **禁用项目代码** " 按钮。
+- 或者，在 **XAML** 设计器的工具栏上，选择" **禁用项目代码"** 按钮。
 
      ![“禁用项目代码”按钮](media/xaml_disablecode.png)
 

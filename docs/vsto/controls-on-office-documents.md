@@ -1,6 +1,6 @@
 ---
 title: Office 文档上的控件
-description: 了解如何使用 Visual Studio 中的 Office 开发工具将 Windows 窗体控件和宿主控件添加到 Word 文档和 Excel 工作表中。
+description: 了解如何使用 Visual Studio 中 Office 开发工具将 Windows 窗体控件和宿主控件添加到 Word 文档和 Excel 工作表。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5e94f39f287055cc4812d85abe2a4bfc0d81eb2b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50285a80f0179e78edc88f9e68528ff8fc6c9eef3bd005f4575cd2444699fa31
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947940"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394818"
 ---
 # <a name="controls-on-office-documents"></a>Office 文档上的控件
   你可以在 Visual Studio 中使用 Office 开发工具将 Windows 窗体控件和 *主机控件* 添加到 Word 文档和 Excel 工作表。 主机控件是在 Word 和 Excel 对象模型中扩展各种用户界面 (UI) 对象的对象。
@@ -43,7 +44,7 @@ ms.locfileid: "99947940"
 
  描述在代码中使用主机项和主机控件时可能遇到的问题。
 
-- [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [WindowsOffice 文档上的窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 
  提供有关在 Excel 和 Word 文档上使用 Windows 窗体控件以及它们与 Windows 窗体上控件之间的区别的信息。
 
@@ -52,10 +53,10 @@ ms.locfileid: "99947940"
  描述如何将 Windows 窗体控件和主机控件添加到 Word 和 Excel 文档以及描述有关这些控件如何存留在文档中的限制的信息。
 
 ## <a name="related-sections"></a>相关章节
-- [Office UI 自定义](../vsto/office-ui-customization.md)
+- [OfficeUI 自定义](../vsto/office-ui-customization.md)
 
  提供有关通过使用 Visual Studio 采用不同方式自定义 Microsoft Office 应用程序的 UI 的信息。
 
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 
  介绍如何才能通过将数据绑定到文档内的主机控件以在 Word 和 Excel 文档中显示数据。

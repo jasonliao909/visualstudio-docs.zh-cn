@@ -12,17 +12,18 @@ ms.assetid: 46e3f307-219d-40cd-a929-d41399c60ecf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3a99319aa4269a1f17032a30ea8df02b4f08836a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2e4a0787f75aa3e241f5aa21eb23dc769a8f5db9dec8f51746d39665cdd8464e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084527"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433432"
 ---
 # <a name="idebugpendingbreakpoint2bind"></a>IDebugPendingBreakpoint2::Bind
 将此挂起断点绑定到一个或多个代码位置。

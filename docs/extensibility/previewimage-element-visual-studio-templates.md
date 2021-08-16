@@ -1,6 +1,6 @@
 ---
-title: " (Visual Studio 模板) 的 PreviewImage 元素 |Microsoft Docs"
-description: 了解 PreviewImage 元素及其如何指定将在 "新建项目" 或 "添加新项" 对话框中显示的预览图像的文件名。
+title: PreviewImage 元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 PreviewImage 元素及其如何指定将在"新建"或"添加新项"对话框中Project图像的文件名。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -14,15 +14,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6fc7a370885d24a586262bebd4182daacd84a9b2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a0ddae8f246ccedb6ca004743e7e18c22b38a0ddb4dabb671d55f07140274074
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090220"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121431586"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a> (Visual Studio 模板的 PreviewImage 元素) 
-为将在 " **新建项目** " 或 " **添加新项** " 对话框中显示的预览图像指定预览图像作为文件名。
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (Visual Studio模板) 
+指定预览图像作为文件名，用于预览图像，该预览图像将显示在"新建 **Project或"** 添加新 **项"对话框中**。
 
  \<VSTemplate> \<TemplateData>
  \<PreviewImage>
@@ -46,7 +46,7 @@ ms.locfileid: "105090220"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 将模板分类并定义它在 " **新建项目** " 或 " **添加新项** " 对话框中的显示方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建项"Project **或"** 添加新项"**对话框中的显示** 方式。|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。

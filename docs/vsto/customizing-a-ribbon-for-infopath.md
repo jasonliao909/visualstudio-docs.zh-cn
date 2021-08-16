@@ -1,6 +1,6 @@
 ---
-title: 自定义 InfoPath 功能区
-description: 了解在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中将出现的位置。
+title: 自定义 InfoPath 的功能区
+description: 了解在 InfoPath 中Microsoft Office功能区时，必须考虑自定义功能区在应用程序中的显示位置。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5af7c4ed2f396c5a806cc42c49c8f4209b6b5c2c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: dd83519b850add8642f0858106f1bc83f5d52503614f05612dca5b2bd9f0f342
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828132"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394792"
 ---
-# <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 功能区
+# <a name="customize-a-ribbon-for-infopath"></a>自定义 InfoPath 的功能区
   在 Microsoft Office InfoPath 中自定义功能区时，必须考虑自定义功能区在应用程序中出现的位置。 [!INCLUDE[InfoPath_14_short](../vsto/includes/infopath-14-short-md.md)] 可以在以下三种类型的 InfoPath 应用程序窗口中显示功能区：
 
 - 显示在设计模式下打开的窗体模板的窗口。
@@ -31,7 +32,7 @@ ms.locfileid: "107828132"
 
 - “打印预览”窗口。
 
-  **适用于：** 本主题中的信息适用于 InfoPath 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅 [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
+  **适用于：** 本主题中的信息适用于 InfoPath 2010 的 VSTO 外接程序项目。 有关详细信息，请参阅应用程序[类型和Office提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
 
   用户和设计人员在设计模式下打开一个窗体模板，以修改该模板的外观和布局。 用户打开基于窗体模板的窗体，以添加内容。
 
@@ -43,7 +44,7 @@ ms.locfileid: "107828132"
  必须为希望在其中显示功能区的每个窗口指定功能区类型。
 
 ## <a name="specify-the-ribbon-type-in-the-ribbon-designer"></a>在功能区设计器中指定功能区类型
- 如果正在使用 **功能区 (可视化设计器 ")** 项，请在"**属性**"窗口中单击功能区的" **RibbonType** "属性，然后选择下表中所述的任何功能区 id。
+ 如果使用功能 **区 (可视化设计器)** 项，请在"属性"窗口中单击功能区的 **RibbonType** 属性，然后选择下表中所述的任何功能区标识。
 
 |功能区 ID|运行项目时将在其中显示功能区的窗口|
 |---------------|---------------------------------------------------------------------|
@@ -51,10 +52,10 @@ ms.locfileid: "107828132"
 |**Microsoft.InfoPath.Designer**|显示基于窗体模板的窗体的窗口。|
 |**Microsoft.InfoPath.Designer**|“打印预览”窗口。|
 
- 你可以向项目添加多个功能区。 如果多个功能区共享一个功能区 ID，请重写项目的 `ThisAddin` 类中的 `CreateRibbonExtensibilityObject` 方法，以指定要在运行时显示的功能区。 有关详细信息，请参阅 [功能区概述](../vsto/ribbon-overview.md)。
+ 你可以向项目添加多个功能区。 如果多个功能区共享一个功能区 ID，请重写项目的 `ThisAddin` 类中的 `CreateRibbonExtensibilityObject` 方法，以指定要在运行时显示的功能区。 有关详细信息，请参阅功能 [区概述](../vsto/ribbon-overview.md)。
 
 ## <a name="specify-the-ribbon-type-by-using-ribbon-xml"></a>使用功能区 XML 指定功能区类型
- 如果使用 **功能区 (XML)** 项，请检查方法中 *ribbonID* 参数的值， <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 并返回相应的功能区。
+ 如果使用 Ribbon (**XML)** 项，请检查 方法中 *ribbonID* 参数 <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 的值，并返回相应的功能区。
 
  <xref:Microsoft.Office.Core.IRibbonExtensibility.GetCustomUI%2A> 方法由 Visual Studio 在功能区代码文件中自动生成。 *ribbonID* 参数是一个字符串，标识当前打开的 InfoPath 窗口的类型。
 
@@ -63,8 +64,8 @@ ms.locfileid: "107828132"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/myinfopathproject/ribbon.cs" id="Snippet1":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/myinfopathproject/ribbon.vb" id="Snippet1":::
 
-## <a name="see-also"></a>请参阅
-- [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
+## <a name="see-also"></a>另请参阅
+- [运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

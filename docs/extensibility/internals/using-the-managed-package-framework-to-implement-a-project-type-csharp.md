@@ -12,20 +12,21 @@ ms.assetid: 926de536-eead-415b-9451-f1ddc8c44630
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb047c9ef8c5c47c6509a6a5947be77a488e22f5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e05358c2e8ba33048fbeec4af798e77b66755cb9b9a1c5c6867cc20e630f71fe
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060726"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375593"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用托管包框架实现项目类型 (C#)
-托管包框架 (MPF) 提供可用于实现自己的项目类型的 c # 类。 MPF 实现了许多 Visual Studio 所需的接口，从而让你自由地集中精力实现项目类型的细节。
+托管包框架 (MPF) 提供可用于实现自己的项目类型的 c # 类。 MPF 实现了许多接口 Visual Studio 需要提供一个项目类型，让你自由地集中精力实现项目类型的细节。
 
-## <a name="using-the-mpf-project-source-code"></a>使用 MPF 项目源代码
-  (MPFProj 的项目的托管包框架) 提供用于创建和管理新项目系统的帮助程序类。 与 MPF 中的其他类不同，项目类不包括在随 Visual Studio 一起提供的程序集中。 相反，项目类作为 [2013](https://github.com/tunnelvisionlabs/MPFProj10)中项目的源代码提供。
+## <a name="using-the-mpf-project-source-code"></a>使用 MPF Project 源代码
+  (MPFProj 的项目的托管包框架) 提供用于创建和管理新项目系统的帮助程序类。 与 MPF 中的其他类不同，项目类不包括在 Visual Studio 随附的程序集中。 相反，项目类作为 [2013](https://github.com/tunnelvisionlabs/MPFProj10)中项目的源代码提供。
 
  若要将此项目添加到 VSPackage 解决方案，请执行以下操作：
 
@@ -86,7 +87,7 @@ ms.locfileid: "105060726"
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
 ## <a name="document-handling-classes"></a>Document-Handling 类
- 下表列出了支持文档处理的 MPF 中的类。 有关详细信息，请参阅 [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。
+ 下表列出了支持文档处理的 MPF 中的类。 有关详细信息，请参阅[打开和保存 Project 项](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 |类名|
 |----------------|

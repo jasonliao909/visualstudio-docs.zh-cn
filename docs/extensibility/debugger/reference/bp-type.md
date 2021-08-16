@@ -1,5 +1,5 @@
 ---
-description: 指定断点是位于代码位置、数据位置还是其他类型的断点。
+description: 指定断点是位于代码位置、是数据位置还是另一种类型的断点。
 title: BP_TYPE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: ef07191e-7966-43ab-96fb-1a0b1db3115d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23f7b6c42b1c4736ba0eb76a451bb91e74ca5ff5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 87680df78d4b7ba733f55b5070b1d89f5f2a2d07b664d2f1f38a92848d3a65b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089090"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390451"
 ---
 # <a name="bp_type"></a>BP_TYPE
-指定断点是位于代码位置、数据位置还是其他类型的断点。
+指定断点是位于代码位置、是数据位置还是另一种类型的断点。
 
 ## <a name="syntax"></a>语法
 
@@ -49,7 +50,7 @@ public enum enum_BP_TYPE {
 
 ## <a name="fields"></a>字段
 `BPT_NONE`\
-指定无断点类型。
+不指定断点类型。
 
 `BPT_CODE`\
 指定代码断点。
@@ -64,11 +65,11 @@ public enum enum_BP_TYPE {
 作为参数传递给 [GetBreakpointType](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getbreakpointtype.md) 和 [GetBreakpointType](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getbreakpointtype.md) 方法。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

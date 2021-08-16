@@ -11,17 +11,18 @@ ms.assetid: 260c33cc-a05e-4645-84b6-536d0b3b0537
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b6fe223d67b876dca1604b2617a33a888ec8180c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 504bb26847915c40d2b4701bf3f4206177aa3b994aa1489ad79b6a43aa3105d9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079638"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433055"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 包含有关进程的信息。

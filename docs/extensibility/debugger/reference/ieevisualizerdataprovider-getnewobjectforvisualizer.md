@@ -1,6 +1,6 @@
 ---
 description: 此方法获取可视化工具的新对象。
-title: IEEVisualizerDataProvider：： GetNewObjectForVisualizer |Microsoft Docs
+title: IEEVisualizerDataProvider：：GetNewObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: a898d549-4898-4fde-aad1-e8bb89129652
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af26455e37d0ecf881cd0bed898e1997f00a82ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9e073afadb97d4b0f33e70d2ffce86f10828360d2581728e277d7723e843b17c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083344"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121401981"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
-此方法获取可视化工具的新对象。 此方法将始终基于现有对象创建一个新的对象。
+此方法获取可视化工具的新对象。 此方法将始终从现有 对象创建新对象。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int GetNewObjectForVisualizer(
 
 ## <a name="parameters"></a>参数
 `ppObject`\
-弄新的对象。
+[out]新 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- `This method` 重新计算当前表示的对象，并将结果作为新对象返回。 计算将更新现有对象。
+ `This method` 重新评估它当前表示的对象，并返回作为新对象的结果。 评估后，将更新现有 对象。
 
 ## <a name="see-also"></a>另请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

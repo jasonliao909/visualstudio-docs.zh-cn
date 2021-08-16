@@ -11,17 +11,18 @@ ms.assetid: 46b7ccad-b07b-4ec0-b3ce-13981ffab7e8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ce90b6095fc95902a74697e3957f3ef185e8c2c5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c82868895f41e8af5849b53310ccf1d5c65cd96df2711b82607a8be39fcb573
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091495"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389119"
 ---
 # <a name="ienumdebugmodules2next"></a>IEnumDebugModules2::Next
 返回枚举中的下一个元素集。

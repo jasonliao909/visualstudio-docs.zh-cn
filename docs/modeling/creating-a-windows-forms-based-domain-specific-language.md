@@ -1,26 +1,27 @@
 ---
 title: 创建基于 Windows 窗体的域特定语言
-description: 提供有关如何使用域Windows 窗体显示域特定语言模型的状态的信息。
+description: 提供有关如何使用 Windows 窗体显示域特定语言模型的状态的信息。
 ms.date: 11/04/2016
 ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a77a22b7ed888b28f12154974d735213952899c
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 456eecfbc00c210f4110fb62e96dbaff960e962ab6998cd61faab77ff9c50f85
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389535"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370778"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建Windows 窗体语言Domain-Specific语言
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建Windows窗体的 Domain-Specific 语言
 
-可以使用 Windows 窗体 在 DSL 模型 (域特定语言) 状态，而不是使用 DSL 关系图。 本主题介绍如何使用可视化和建模 SDK 将 Windows 窗体Visual Studio DSL。
+可以使用 Windows 窗体来显示 DSL (模型) 域特定语言的状态，而不是使用 DSL 关系图。 本主题逐步介绍如何使用可视化Windows建模 SDK 将窗体绑定到 DSL Visual Studio DSL。
 
-下图显示了 DSL 实例的 Windows 窗体 UI 和模型资源管理器：
+下图显示了 DSL Windows窗体 UI 和模型资源管理器：
 
 ![VISUAL STUDIO 中的 DSL 实例](../modeling/media/dsl-wpf-2.png)
 
@@ -41,9 +42,9 @@ ms.locfileid: "112389535"
 
    2. 使用 **Ctrl** + **F5** (生成并运行) 。
 
-   3. 在 Visual Studio试验实例中， `Sample` 打开调试项目中的 文件。
+   3. 在 Visual Studio 试验实例中， `Sample` 打开调试项目中的 文件。
 
-        请注意，它显示在一个Windows 窗体控件中。
+        请注意，它显示在窗体Windows窗体控件中。
 
         还可以在资源管理器中查看模型的元素。
 
@@ -51,15 +52,15 @@ ms.locfileid: "112389535"
 
    在主实例Visual Studio，请注意有关 DSL 解决方案的以下几点：
 
-- `DslDefinition.dsl` 不包含关系图元素。 这是因为你将不使用 DSL 关系图来查看此 DSL 的实例模型。 相反，将 Windows 窗体绑定到模型，窗体上的元素将显示模型。
+- `DslDefinition.dsl` 不包含关系图元素。 这是因为你将不使用 DSL 关系图来查看此 DSL 的实例模型。 相反，你将将Windows窗体绑定到模型，窗体上的元素将显示模型。
 
-- 除了 和 项目外，解决方案还包含名为 UI 项目的第三个项目，该项目包含控件Windows 窗体 `Dsl` `DslPackage` `UI.` 定义。 `DslPackage` 依赖于 `UI` ， `UI` 并且依赖于 `Dsl` 。
+- 除了 和 项目外，解决方案还包含名为 UI 项目的第三个项目，其中包含 Windows `Dsl` `DslPackage` `UI.` 窗体控件的定义。 `DslPackage` 依赖于 `UI` ， `UI` 并且依赖于 `Dsl` 。
 
-- 在 `DslPackage` 项目中， `UI\DocView.cs` 包含显示项目中Windows 窗体控件的代码 `UI` 。
+- 在 `DslPackage` 项目中， `UI\DocView.cs` 包含显示项目中Windows窗体控件 `UI` 的代码。
 
 - 该项目 `UI` 包含绑定到 DSL 的窗体控件的工作示例。 但是，更改 DSL 定义后，它将不起作用。 项目 `UI` 包含：
 
-  - 名为 Windows 窗体类 `ModelViewControl` 。
+  - 名为 Windows Forms 类 `ModelViewControl` 。
 
   - 一个名为 `DataBinding.cs` 的文件，其中包含 的其他部分定义 `ModelViewControl` 。 若要查看其内容，请 **解决方案资源管理器，打开** 文件的快捷菜单，然后选择"查看 **代码"。**
 
@@ -131,7 +132,7 @@ ms.locfileid: "112389535"
 
      !["数据源"窗口](../modeling/media/dslwpf-3.png)
 
-### <a name="connect-your-model-to-a-form"></a>将模型连接到窗体
+### <a name="connect-your-model-to-a-form"></a>连接模型到窗体
 
 1. 在 **UI 项目中** ，删除所有现有的 .cs 文件。
 
@@ -214,7 +215,7 @@ ms.locfileid: "112389535"
 
 ## <a name="test-the-dsl"></a>测试 DSL
 
-DSL 解决方案现在可以生成并运行，不过你可能希望稍后添加更多改进。
+DSL 解决方案现在可以生成并运行，不过你可能希望稍后再添加改进。
 
 1. 生成并运行解决方案。
 
@@ -231,7 +232,7 @@ DSL 解决方案现在可以生成并运行，不过你可能希望稍后添加�
 
      在窗体视图中，更改 **场的名称****或** 大小。
 
-     当你离开窗体的每个字段时，相应属性在窗体属性窗口。
+     当你离开窗体的每个字段时，窗体中的相应属性属性窗口。
 
 ## <a name="enhance-the-dsl"></a>增强 DSL
 
@@ -239,7 +240,7 @@ DSL 解决方案现在可以生成并运行，不过你可能希望稍后添加�
 
 1. 在 FarmControl.cs 的设计视图中，选择一个简单的字段，例如"名称"、"大小"或"IsOrganic"。
 
-2. 在"属性窗口"中，展开 **"DataBindings"， ("****高级) "。**
+2. 在"属性窗口"中，展开 **"DataBindings"** 并 **("高级) "。**
 
      在"**格式设置和高级绑定"** 对话框中的"**数据源更新模式"下**，选择 **"OnPropertyChanged"。**
 
@@ -253,7 +254,7 @@ DSL 解决方案现在可以生成并运行，不过你可能希望稍后添加�
 
     编辑按钮的名称和文本，例如， 为 `New Sheep` 。
 
-2. 打开按钮后面的代码 (例如双击按钮) 。
+2. 打开按钮后面的 (，例如双击按钮) 。
 
     按如下所示编辑它：
 

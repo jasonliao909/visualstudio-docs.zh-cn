@@ -11,17 +11,18 @@ ms.assetid: 8e0ef3f0-0107-48e8-a037-6e52b4c4ed9d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 76c02956acd9277f203c67bede7369d6bb7a603a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e2aa32e5bf04e4f5c931ec3e8de3d156f7c8bcebb993749d8e348075523a7be4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096273"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390354"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 标识自定义查看器或类型可视化工具的结构。
@@ -52,32 +53,32 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 ## <a name="members"></a>成员
 `dwID`\
-用于区分由一个或多个实现的查看器的 ID `GUID` 。
+一个 ID，用于区分由一个 实现的多个查看器或可视化工具 `GUID` 。
 
 `bstrMenuName`\
-将显示在下拉菜单中的文本。
+将在下拉菜单中显示的文本。
 
 `bstrDescription`\
-如果未使用) ，则自定义查看器或类型可视化工具的说明 (必须为 null 值。
+如果未使用自定义查看器或类型可视化工具 (，则说明必须为 null) 。
 
 `guidLang`\
-提供表达式计算器的语言。
+提供表达式计算程序的语言。
 
 `guidVendor`\
 提供表达式计算器的供应商。
 
 `bstrMetric`\
-用于存储自定义查看器或类型可视化工具的度量值 `CLSID` 。
+存储自定义查看器或类型可视化工具 `CLSID` 的指标。
 
 ## <a name="remarks"></a>备注
-此结构的列表由对 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法的调用返回， (，并通过扩展 [) 方法进行](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 。
+此结构的列表通过调用 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法 (并扩展为 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

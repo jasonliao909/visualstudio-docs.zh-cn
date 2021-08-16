@@ -1,6 +1,6 @@
 ---
 title: 符号提供程序接口 |Microsoft Docs
-description: 本文链接到 Visual Studio SDK 的符号处理接口说明，它在中断模式期间计算调用堆栈中的变量。
+description: 本文链接到 Visual Studio SDK 的符号处理接口的说明，该说明在中断模式期间计算调用堆栈中的变量。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,19 +12,20 @@ ms.assetid: 4201f10e-c9f7-4b38-bb45-40fe0082d5bf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7be44c623f93d9ecc4f9f5d4488c462ed8a9969d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 14cb7be76bc941fd04eba217f0708ae94817821034b0dd1999ce194e090105a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061428"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389002"
 ---
 # <a name="symbol-provider-interfaces"></a>符号提供程序接口
 下面是的符号处理接口 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
 
-## <a name="discussion"></a>讨论 (Discussion)
+## <a name="discussion"></a>讨论区
  这些接口用于在中断模式期间计算调用堆栈中的变量。 它们仅实现公共语言运行时符号提供程序 (SP) 。
 
 |接口|实现者|说明|

@@ -1,19 +1,20 @@
 ---
 title: 代码指标 - 继承深度
 ms.date: 1/8/2021
-description: 了解代码中代码指标的继承指标的深度Visual Studio。
+description: 了解代码中代码指标的继承指标Visual Studio。
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d6ac085463087fc73aac4429488ab475e91c10f
-ms.sourcegitcommit: cc66c898ce82f9f1159bd505647f315792cac9fc
+ms.openlocfilehash: 6b212f349435f395df9e3acb8a802f51de949f63ae2c494dc30fb08c7091c517
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/10/2021
-ms.locfileid: "109682545"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121405541"
 ---
 # <a name="code-metrics---depth-of-inheritance-dit"></a>代码指标 - DIT (继承) 
 
@@ -25,7 +26,7 @@ ms.locfileid: "109682545"
 
 ![继承深度示例 2](media/depth-of-inheritance-example-2.png)
 
-请注意，树中的节点 `Class2` (，在这种情况下) ，继承深度越高。 你可以继续创建子项目，使深度增加，只要需要。
+请注意，树中节点的下 (`Class2` 在这种情况下) ，继承深度越高。 你可以继续创建子项目，使深度增加，只要愿意。
 
 ## <a name="assumptions"></a>假设
 
@@ -43,40 +44,40 @@ ms.locfileid: "109682545"
 
 下面是读取深度指标的一些说明：
 
-- 深度下限
+- 深度的低数字
 
-  深度较低意味着降低了复杂性，同时也减少了通过继承更少的代码重用。
+  深度数字低意味着复杂性较低，但通过继承减少代码重用的可能性。
 
-- 深度较高
+- 深度数字较高
 
-  如果深度较高，则表示更有可能通过继承进行代码重用，同时也增加了复杂性，代码中出现错误的可能性更高。
+  深度数字较高意味着通过继承重用代码的可能性更大，但复杂性更高，代码中的错误概率较高。
 
 ## <a name="code-analysis"></a>代码分析
 
-代码分析包括一类可维护性规则。 有关详细信息，请参阅可 [维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧代码分析时，扩展的设计准则规则集包含可维护性区域：
+代码分析包括可维护性规则的类别。 有关详细信息，请参阅可 [维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧代码分析时，扩展设计准则规则集包含可维护性区域：
 
-![继承深度设计准则规则集](media/depth-of-inheritance-design-guidelines.png)
+![继承设计准则规则集的深度](media/depth-of-inheritance-design-guidelines.png)
 
-可维护性区域内是继承规则：
+在可维护性区域中，是继承规则：
 
-![继承可维护性规则深度](media/depth-of-inheritance-maintainability-rule.png)
+![继承可维护性规则的深度](media/depth-of-inheritance-maintainability-rule.png)
 
-当继承深度达到6或更大时，此规则会发出警告，因此，这是一个很好的规则，有助于防止过度继承。 若要了解有关规则的详细信息，请参阅 [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)。
+此规则在继承深度达到或大于 6 时发出警告，因此，这是一个有助于防止过度继承的好规则。 若要详细了解规则，请参阅 [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)。
 
-## <a name="putting-it-all-together"></a>将其全部放在一起
+## <a name="putting-it-all-together"></a>全部放在一起
 
-DIT 的高值表示可能出现错误，也可能是低值，这会减少出现错误的可能性。 DIT 的高值通过继承指示更好的代码重用，较低的值建议使用继承来更少地重用代码。 由于没有足够的数据，当前不接受 DIT 值标准。 甚至最近完成的研究没有找到足够的数据来确定可用作此指标 [Shatnawi](#shatnawi)标准数字的有效数字。 尽管没有用于支持它的经验证明，但有几个资源表明大约5或6的 DIT 应为上限。 有关示例，请参阅 [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) 。
+DIT 值高意味着出错的可能性也很高，低值会降低出错的可能性。 DIT 的高值表示通过继承重用代码的可能性更大，低值表示利用继承可以减少代码重用。 由于缺少足够的数据，当前没有接受的 DIT 值标准。 即使是最近所做的研究也找不到足够的数据来确定一个可行的数字，该数字可以用作此指标 [Shatnawi](#shatnawi)的标准数字。 尽管没有经验证据支持它，但一些资源建议 DIT 的上限应为 5 或 6 左右。 例如，请参阅 [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) 。
 
 ## <a name="citations"></a>引文
 
 ### <a name="ck"></a>CK
 
-Chidamber， S. R. & Kemerer， C. F.  (1994) 。 面向面向对象的设计的指标套件 (软件工程上的 IEEE 事务，Vol. 20， No. 6) 。 检索时间：2011 年 5 月 14 日，来自以下大学网站： [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
+Chidamber， S. R. & Kemerer， C. F.  (1994) 。 面向面向对象的设计的指标套件 (软件工程上的 IEEE 事务，Vol. 20， No. 6) 。 检索时间：2011 年 5 月 14 日，来自美国大学网站： [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
 
 ### <a name="krishnan"></a>Krishnan
 
-Subramanyam， R. & Krishnan， M. S. (2003). 设计复杂性的 CK 指标的经验分析Object-Oriented：软件工程上的软件缺陷 (IEEE 事务的影响，Vol. 29， No. 4) 。 检索时间：2011 年 5 月 14 日，最初从北维萨大学）网站获取 [https://ieeexplore.ieee.org/abstract/document/1191795](https://ieeexplore.ieee.org/abstract/document/1191795)
+Subramanyam， R. & Krishnan， M. S. (2003). 设计复杂性的 CK 指标的经验分析Object-Oriented：软件工程上的软件缺陷 (IEEE 事务的影响，Vol. 29， No. 4) 。 检索时间：2011 年 5 月 14 日，最初从北维萨大学（美国）网站获取 [https://ieeexplore.ieee.org/abstract/document/1191795](https://ieeexplore.ieee.org/abstract/document/1191795)
 
 ### <a name="shatnawi"></a>Shatnawi
 
-Shatnawi， R. (2010) . 软件工程上的 Object-Oriented Systems Open-Source IEEE (指标可接受的风险级别的定量调查，Vol. 36， No. 2) 。
+Shatnawi， R. (2010) . 对软件 Object-Oriented工程上 Open-Source Systems (IEEE 事务中可接受指标的可接受风险级别的定量调查，Vol. 36， No. 2) 。

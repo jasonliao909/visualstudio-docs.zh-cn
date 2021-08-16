@@ -1,6 +1,6 @@
 ---
 title: 使用 SignTool.exe (ClickOnce) 对安装文件进行签名
-description: 了解如何使用 SignTool.exe 对 ClickOnce 应用程序的安装程序进行签名，这有助于确保未安装篡改的文件。
+description: 了解如何使用 SignTool.exe 为应用程序ClickOnce安装程序，这有助于确保未安装被篡改的文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,17 +18,18 @@ ms.assetid: 545a4005-d283-4110-9821-c78a9833c250
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: fdfdabf66c48a875f3b4316ac22e1911c141275c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ac7b07a7c01a38221a1420383942b98cd772faac516c3a81cb673075d9cd045
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940522"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403849"
 ---
 # <a name="how-to-sign-setup-files-with-signtoolexe-clickonce"></a>如何：使用 SignTool.exe (ClickOnce) 对安装文件进行签名
-您可以使用 *SignTool.exe* *setup.exe*)  (对安装程序进行签名。 此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。
+可以使用 *SignTool.exe* 对安装程序进行签名 (setup.exe) 。  此过程有助于确保不会在最终用户计算机上安装经过篡改的文件。
 
  默认情况下，ClickOnce 具有签名的清单和一个签名的安装程序。 但是，如果想在以后更改安装程序的参数，则以后必须对该安装程序进行签名。 如果对安装程序签名后更改参数，则签名将会损坏。
 
@@ -40,7 +41,7 @@ ms.locfileid: "99940522"
 
 2. 在解决方案资源管理器中，选择项目。
 
-3. 在“项目”菜单上，单击“ProjectName”属性 。
+3. 在 **"Project"** 菜单上，单击 *"项目""名称属性***"。**
 
 4. 在“签名”页中，清除“为 ClickOnce 清单签名”。
 
@@ -62,9 +63,9 @@ ms.locfileid: "99940522"
 
 11. 在客户站点，打开命令提示符。
 
-12. 更改为包含 *.exe* 文件的目录。
+12. 更改为包含该文件的 *.exe* 目录。
 
-13. 用以下命令签署 *.exe* 文件：
+13. 使用 *.exe* 对文件进行签名：
 
     ```cmd
     signtool sign /sha1 CertificateHash Setup.exe
@@ -79,4 +80,4 @@ ms.locfileid: "99940522"
     ```
 
 ## <a name="see-also"></a>另请参阅
-- [如何：对应用程序和部署清单进行重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)
+- [如何：对应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

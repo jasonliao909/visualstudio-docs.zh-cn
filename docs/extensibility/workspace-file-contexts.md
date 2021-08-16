@@ -9,16 +9,16 @@ ms.author: svukel
 manager: viveis
 ms.workload:
 - vssdk
-ms.openlocfilehash: 271b05d78123136d47cb618e8ed38cea64b7beac
-ms.sourcegitcommit: 0c9155e9b9408fb7481d79319bf08650b610e719
+ms.openlocfilehash: 92658912e6910f21c6e79f779dff66b6c8b85a04b55f138a0971903789d4c8a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97877060"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121374580"
 ---
 # <a name="workspace-file-contexts"></a>工作区文件上下文
 
-[打开的文件夹](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)工作区中的所有见解都由实现该接口的 "文件上下文提供程序" 生成 <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> 。 这些扩展可能会查找文件夹或文件中的模式，读取 MSBuild 文件和生成文件，检测包依赖关系，等等，以便积累定义文件上下文所需的见解。 文件上下文本身不执行任何操作，而是提供另一个扩展随后可以操作的数据。
+[打开的文件夹](../ide/develop-code-in-visual-studio-without-projects-or-solutions.md)工作区中的所有见解都由实现该接口的 "文件上下文提供程序" 生成 <xref:Microsoft.VisualStudio.Workspace.IFileContextProvider> 。 这些扩展可能会查找文件夹或文件中的模式，读取 MSBuild 文件和生成文件，检测包依赖关系等，以便累积它们定义文件上下文所需的见解。 文件上下文本身不执行任何操作，而是提供另一个扩展随后可以操作的数据。
 
 每个 <xref:Microsoft.VisualStudio.Workspace.FileContext> 都有一个 `Guid` 关联的，用于标识它所携带的数据类型。 工作区稍后使用此 `Guid` 项将其与通过属性使用数据的扩展进行匹配 <xref:Microsoft.VisualStudio.Workspace.FileContext.Context> 。 文件上下文提供程序随元数据一起导出，后者标识 `Guid` 它可能生成数据的文件上下文。
 
@@ -37,7 +37,7 @@ ms.locfileid: "97877060"
 
 ## <a name="expensive-file-context-computations"></a>成本高昂的文件上下文计算
 
-从磁盘读取文件内容可能会消耗大量资源，尤其是在提供程序需要解析文件之间的关系时。 例如，可以查询某个提供程序的源文件的文件上下文，但文件上下文依赖于项目文件中的元数据。 分析项目文件或用 MSBuild 对其进行计算非常昂贵。 相反，扩展可以导出 `IFileScanner` 以 `FileDataValue` 在工作区索引期间创建数据。 现在，当系统询问文件上下文时， `IFileContextProvider` 可以快速查询该已索引的数据。 有关索引的详细信息，请参阅 [工作区索引](workspace-indexing.md) 主题。
+从磁盘读取文件内容可能会消耗大量资源，尤其是在提供程序需要解析文件之间的关系时。 例如，可以查询某个提供程序的源文件的文件上下文，但文件上下文依赖于项目文件中的元数据。 分析项目文件或对其进行评估时，MSBuild 开销较高。 相反，扩展可以导出 `IFileScanner` 以 `FileDataValue` 在工作区索引期间创建数据。 现在，当系统询问文件上下文时， `IFileContextProvider` 可以快速查询该已索引的数据。 有关索引的详细信息，请参阅 [工作区索引](workspace-indexing.md) 主题。
 
 >[!WARNING]
 >请注意 `FileContext` ，计算的成本可能很高。 某些 UI 交互是同步的，并且依赖于大量的 `FileContext` 请求。 示例包括打开编辑器选项卡和打开 **解决方案资源管理器** 上下文菜单。 这些操作将生成许多生成上下文类型请求。

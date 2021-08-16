@@ -11,14 +11,15 @@ ms.assetid: 49e7efae-e713-4762-a824-96fdaf92cdc9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d82cda9c91642b094deea50eda02676f9bb73f3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f3c1a09a7000b19980c14cd71fa02b600a2de9aea9fd514c1caa8e28a02307c1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905223"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121400499"
 ---
 # <a name="vsct-xml-schema-reference"></a>.VSCT XML 架构引用
 提供一个表，其中包含命令表编译器架构元素，每个元素都允许使用子元素和属性。
@@ -26,7 +27,7 @@ ms.locfileid: "112905223"
  一个基于 XML 的命令表配置 (. .vsct) file 定义 VSPackage 向集成开发环境 (IDE) 提供的命令元素。 这些元素包括菜单项、菜单、工具栏和组合框。
 
 > [!NOTE]
-> .VSCT 编译器可以对 .vsct 文件运行预处理器。 由于这通常是 c + + 预处理器，因此你可以定义具有与 c + + 文件中所用语法相同的语法的包含和宏。 **新项目** 向导为 VSPackage 项目创建的 .vsct 文件中提供了这种情况的示例。
+> .VSCT 编译器可以对 .vsct 文件运行预处理器。 由于这通常是 c + + 预处理器，因此你可以定义具有与 c + + 文件中所用语法相同的语法的包含和宏。 **新 Project** 向导为 VSPackage 项目创建的 .vsct 文件中提供了这种情况的示例。
 
 ## <a name="optional-elements"></a>可选元素
  某些 .VSCT 元素是可选的。 如果 `Parent` 未指定参数，则 Group_Undefined：0将隐式。 如果 `Icon` 未指定参数，则将隐式 guidOfficeIcon： msotcidNoIcon。 定义快捷键后，通常不使用的仿真是可选的。

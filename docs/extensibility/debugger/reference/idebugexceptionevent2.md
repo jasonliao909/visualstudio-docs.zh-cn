@@ -11,14 +11,15 @@ ms.assetid: 53d32e59-a84b-4710-833e-c5ab08100516
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 58a6b0beab4312b0622501e72a5d2c87ef84ccff
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9a76ee7facb47a76e7d3887c8eb391f076769edb51a9ace6b62899fe57e29e79
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087868"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433926"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 当当前正在执行的程序中引发异常时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。

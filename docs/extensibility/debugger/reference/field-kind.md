@@ -11,17 +11,18 @@ ms.assetid: fd522b9c-52e2-42fa-939d-343347d5c3b1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2476b819d940b5fb6014d00e1bdf920f02a46696
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cfeba85222748642edf2125db51aff6812bd8e4874aaacc5ccde6bbce86b3b21
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085203"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121403216"
 ---
 # <a name="field_kind"></a>FIELD_KIND
 指定 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象中包含的字段类型。
@@ -130,85 +131,85 @@ public enum enum_FIELD_KIND {
 指示该字段仅为类型。
 
 `FIELD_KIND_SYMBOL`\
-指示该字段为符号，其中包含类型、名称和其他信息。
+指示字段是一个符号，包含类型、名称和其他信息。
 
 `FIELD_TYPE_PRIMITIVE`\
-指示该字段为基元数据类型。
+指示字段是基元数据类型。
 
 `FIELD_TYPE_STRUCT`\
-指示该字段为结构。
+指示字段是结构。
 
 `FIELD_TYPE_CLASS`\
-指示该字段是一个类。
+指示字段是类。
 
 `FIELD_TYPE_INTERFACE`\
 指示字段是接口。
 
 `FIELD_TYPE_UNION`\
-指示该字段为联合。
+指示字段是联合。
 
 `FIELD_TYPE_ARRAY`\
-指示该字段为数组。
+指示字段是数组。
 
 `FIELD_TYPE_METHOD`\
-指示该字段是一个方法。
+指示字段是方法。
 
 `FIELD_TYPE_BLOCK`\
-指示该字段为块。
+指示字段是块。
 
 `FIELD_TYPE_POINTER`\
-指示该字段是一个指针。
+指示字段是指针。
 
 `FIELD_TYPE_ENUM`\
-指示该字段为枚举数据类型。
+指示字段是枚举数据类型。
 
 `FIELD_TYPE_LABEL`\
-指示该字段是一个标签。
+指示字段是标签。
 
 `FIELD_TYPE_TYPEDEF`\
-指示该字段为 typedef。
+指示字段是 typedef。
 
 `FIELD_TYPE_BITFIELD`\
-指示该字段是位域。
+指示字段是位域。
 
 `FIELD_TYPE_NAMESPACE`\
-指示该字段是一个命名空间。
+指示字段是命名空间。
 
 `FIELD_TYPE_MODULE`\
-指示该字段为模块。
+指示字段是模块。
 
 `FIELD_TYPE_DYNAMIC`\
-指示该字段是动态的。
+指示字段是动态的。
 
 `FIELD_TYPE_PROP`\
-指示此字段为属性。
+指示字段是属性。
 
 `FIELD_TYPE_INNERCLASS`\
-指示该字段是内部类。
+指示字段是内部类。
 
 `FIELD_TYPE_REFERENCE`\
-指示该字段是一个引用。
+指示字段是引用。
 
 `FIELD_TYPE_EXTENDED`\
 保留供将来使用。
 
 `FIELD_SYM_MEMBER`\
-指示该字段是成员。
+指示字段是成员。
 
 `FIELD_SYM_LOCAL`\
-指示该字段为本地字段。
+指示该字段是本地的。
 
 `FIELD_SYM_PARAMETER`\
-指示该字段是参数。
+指示字段是参数。
 
 `FIELD_SYM_THIS`\
-指示该字段为 "this" 指针。
+指示字段是"this"指针。
 
 `FIELD_SYM_GLOBAL`\
-指示该字段是全局的。
+指示该字段是全局字段。
 
 `FIELD_SYM_PROP_GETTER`\
-指示该字段检索属性。
+指示字段检索属性。
 
 `FIELD_SYM_PROP_SETTER`\
 指示字段设置属性。
@@ -217,7 +218,7 @@ public enum enum_FIELD_KIND {
 保留供将来使用。
 
 `FIELD_KIND_MASK`\
-指示字段种类的掩码。
+指示字段类型的掩码。
 
 `FIELD_TYPE_MASK`\
 指示字段类型的掩码。
@@ -226,16 +227,16 @@ public enum enum_FIELD_KIND {
 指示符号信息的掩码。
 
 ## <a name="remarks"></a>备注
-从对 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 方法的调用返回。
+从调用 [GetKind 方法返回](../../../extensibility/debugger/reference/idebugfield-getkind.md) 。
 
-根据字段的种类，可以在[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)以实现更具体的接口形式。 例如，如果 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 返回 `FIELD_TYPE_METHOD` ，则可以 `QueryInterface` 在 I 上调用 `DebugField` 来获取 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 接口。
+根据字段类型，可以在[IDebugField](../../../extensibility/debugger/reference/idebugfield.md)接口上为更具体的接口形式调用[QueryInterface。](/cpp/atl/queryinterface) 例如，如果 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 返回 `FIELD_TYPE_METHOD` ，则你可以调用 `QueryInterface` I 以获取 `DebugField` [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 接口。
 
 ## <a name="requirements"></a>要求
-标头： sh。h
+标头：sh.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

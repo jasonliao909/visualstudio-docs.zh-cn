@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6de3a8940c845b29d2d0c7454b7c585f4676dba0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f269eff3dc742fe2f397f637f1fb84104cb15a20a8412b27563bffb2fce15b77
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388329"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121398055"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -50,7 +51,7 @@ ms.locfileid: "112388329"
  每个验证方法都将报告它找到的所有错误。
 
 > [!NOTE]
-> 验证方法报告错误，但不更改模型。 如果要调整或阻止某些更改，请参阅 [验证的替代方法](#alternatives)。
+> 验证方法报告错误，但不更改模型。 如果要调整或阻止某些更改，请参阅 [验证 的替代方法](#alternatives)。
 
 #### <a name="to-define-a-validation-constraint"></a>定义验证约束
 
@@ -146,7 +147,7 @@ public partial class ParentsHaveChildren
 ## <a name="validation-categories"></a>验证类别
  在 <xref:Microsoft.VisualStudio.Modeling.Validation.ValidationMethodAttribute> 特性中，指定应何时执行验证方法。
 
-|类别|执行|
+|Category|执行|
 |-|-|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|当用户调用验证菜单命令时。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation.ValidationCategories>|当打开模型文件时。|
@@ -235,7 +236,7 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ## <a name="running-validation-when-a-change-occurs"></a>当发生更改时运行验证
  如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的详细信息，请参阅 [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了验证代码外，还应将自定义代码文件添加到 **DslPackage** 项目，其中包含类似于以下示例的内容。 此代码使用附加到文档的 `ValidationController`。 此控制器在 Visual Studio 错误列表中显示验证错误。
+ 除了验证代码外，还应将自定义代码文件添加到 **DslPackage** 项目，其中包含类似于以下示例的内容。 此代码使用附加到文档的 `ValidationController`。 此控制器显示 Visual Studio 错误列表中的验证错误。
 
 ```csharp
 using System;

@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f2f026f62c5440b48b04d05e080515c47dd11979
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0d2305e63c33e7a8fa5b3a4c7bad68f1ee4fe70039a380384712a73c69b74221
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428882"
 ---
 # <a name="properties-of-domain-properties"></a>域属性的属性
 *域属性* 是可保存值的模型元素的一项功能。 例如，`Person` 域类可以具有属性 `Name` 和 `BirthDate`。 在 DSL 定义中，域属性列出在关系图上的域类框中以及 DSL 资源管理器中的域类下。 有关详细信息，请参阅 [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)。
@@ -44,8 +45,8 @@ ms.locfileid: "112390641"
 |**可浏览**|如果为 `True`，则在此 DSL 的模型处于打开状态时在“属性”窗口中向用户显示域属性。<br /><br /> 如果为 `False`，则域属性将隐藏在 UI 中。<br /><br /> 如果要使域属性可见但为只读，请设置"**是 UI 只读"。**|`True`|
 |**元素名称**|如果为 `True`，则此域属性将在 DSL 资源管理器中显示为其模型元素的名称。<br /><br /> 新模型元素将接收此属性的唯一默认值。 如果要控制这些值的生成方式，请设置 **元素名称提供程序**。|`False`|
 |**UI 只读**|如果为 `True`，则无法使用 UI 更改域属性的值。 它仍可通过程序进行设置，并且将在“属性”窗口中可见。<br /><br /> 如果要向用户隐藏域属性，请设置 **Is Browsable**。 如果要按程序控制访问，请设置 **Setter Access 修饰符**。|`False`|
-|**种类**|域属性的类型（`Normal`、`Calculated` 或 `CustomStorage`）。 有关详细信息，请参阅计算 [和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。|`Normal`|
-|**名称**|此域属性的名称。 它必须是有效的标识符，例如 **SongTitle**。|\<none>|
+|**种类**|域属性的类型（`Normal`、`Calculated` 或 `CustomStorage`）。 有关详细信息，请参阅计算[属性和自定义存储属性](../modeling/calculated-and-custom-storage-properties.md)。|`Normal`|
+|名称|此域属性的名称。 它必须是有效的标识符，例如 **SongTitle**。|\<none>|
 |**备注**|与此域属性相关联的非正式说明。|\<none>|
 |**Setter 访问修饰符**|用于 Setter 的访问修饰符。 这将控制程序代码可设置属性的范围。|`public`|
 |**类型**|属性的类型。 若要添加到可用类型列表，请在 DSL 资源管理器中右键单击 DSL 的根，然后单击"**添加外部类型"。**|`String`|
