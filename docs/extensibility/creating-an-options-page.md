@@ -1,6 +1,6 @@
 ---
-title: 创建选项页 |Microsoft Docs
-description: 了解如何创建使用属性网格检查和设置属性的简单 "工具/选项" 页。
+title: "\"创建选项\"页|Microsoft Docs"
+description: 了解如何创建使用属性网格检查和设置属性的简单"工具/选项"页。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
@@ -20,31 +20,31 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121434758"
 ---
-# <a name="create-an-options-page"></a>创建选项页
+# <a name="create-an-options-page"></a>"创建选项"页
 
-本演练将创建一个简单的 "工具/选项" 页，该页使用属性网格来检查和设置属性。
+本演练创建一个简单的"工具/选项"页，该页面使用属性网格来检查和设置属性。
 
- 若要将这些属性保存到并从设置文件还原它们，请执行以下步骤，然后参阅 [创建设置类别](../extensibility/creating-a-settings-category.md)。
+ 若要将这些属性保存到 设置文件并将其从设置文件中还原，请执行以下步骤，然后查看 [创建设置类别](../extensibility/creating-a-settings-category.md)。
 
- MPF 提供了两个类来帮助你创建工具选项页、 <xref:Microsoft.VisualStudio.Shell.Package> 类和 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类。 通过为类创建子类，创建 VSPackage 以为这些页面提供容器 `Package` 。 可以通过从类派生来创建每个 "工具选项" 页 `DialogPage` 。
+ MPF 提供两个类来帮助你创建"工具选项"页 <xref:Microsoft.VisualStudio.Shell.Package> ：类和 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类。 通过子类化 类，创建 VSPackage 来为这些页面提供 `Package` 容器。 通过从 类派生来创建每个工具选项 `DialogPage` 页。
 
 ## <a name="prerequisites"></a>先决条件
 
- 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ 从 2015 Visual Studio开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="create-a-tools-options-grid-page"></a>创建 "工具选项" 网格页
+## <a name="create-a-tools-options-grid-page"></a>"创建工具选项"网格页
 
- 在本部分中，将创建一个简单的 "工具选项" 属性网格。 使用此网格可以显示和更改属性的值。
+ 在本部分，你将创建一个简单的"工具选项"属性网格。 使用此网格可以显示和更改属性的值。
 
 ### <a name="to-create-the-vsix-project-and-add-a-vspackage"></a>创建 VSIX 项目并添加 VSPackage
 
-1. 每个 Visual Studio 扩展都从一个 VSIX 部署项目开始，该项目将包含扩展资产。 创建一个 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 名为的 VSIX 项目 `MyToolsOptionsExtension` 。 可以通过搜索 "vsix" 在 "**新建 Project** " 对话框中找到 VSIX 项目模板。
+1. 每个Visual Studio扩展都从 VSIX 部署项目开始，该项目将包含扩展资产。 创建名为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 VSIX 项目 `MyToolsOptionsExtension` 。 可以通过搜索"vsix"在"新建Project"找到 VSIX 项目模板。 
 
-2. 通过添加一个名为的 Visual Studio 包项模板来添加 VSPackage `MyToolsOptionsPackage` 。 在“解决方案资源管理器”中，右键单击项目节点并选择“添加” > “新建项”  。 在 "**添加新项" 对话框** 中，选择 " **Visual c # 项**" "  >  **扩展性**"，然后选择 " **Visual Studio 包**"。 在对话框底部的 " **名称** " 字段中，将文件名更改为 `MyToolsOptionsPackage.cs` 。 有关如何创建 VSPackage 的详细信息，请参阅 [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。
+2. 通过添加名为 的包项Visual Studio添加 `MyToolsOptionsPackage` VSPackage。 在“解决方案资源管理器”中，右键单击项目节点并选择“添加” > “新建项”  。 在"**添加新项"对话框中**，转到 **"Visual C#** 项  >  **扩展性**"，然后选择"Visual Studio **包"。** 在 **对话框** 底部的"名称"字段中，将文件名更改为 `MyToolsOptionsPackage.cs` 。 若要详细了解如何创建 VSPackage，请参阅 [使用 VSPackage 创建扩展](../extensibility/creating-an-extension-with-a-vspackage.md)。
 
-### <a name="to-create-the-tools-options-property-grid"></a>创建 "工具选项" 属性网格
+### <a name="to-create-the-tools-options-property-grid"></a>创建"工具选项"属性网格
 
-1. 在代码编辑器中打开 *MyToolsOptionsPackage* 文件。
+1. 在 *代码编辑器中打开 MyToolsOptionsPackage* 文件。
 
 2. 添加以下 using 语句。
 
@@ -52,14 +52,14 @@ ms.locfileid: "121434758"
    using System.ComponentModel;
    ```
 
-3. 声明一个 `OptionPageGrid` 类，并从派生该类 <xref:Microsoft.VisualStudio.Shell.DialogPage> 。
+3. 声明一 `OptionPageGrid` 个类，然后从 派生 <xref:Microsoft.VisualStudio.Shell.DialogPage> 该类。
 
    ```csharp
    public class OptionPageGrid : DialogPage
    {  }
    ```
 
-4. 将应用 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 到 `VSPackage` 类，以便将 OptionPageGrid 的选项类别和选项页名称分配给该类。 结果应如下所示：
+4. 将 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 应用于 `VSPackage` 类，以向类分配 OptionPageGrid 的选项类别和选项页名称。 结果应如下所示：
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -73,11 +73,11 @@ ms.locfileid: "121434758"
 
 5. 将 `OptionInteger` 属性添加到 `OptionPageGrid` 类。
 
-    - 应用 <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> 以分配给属性 "属性" 网格类别。
+    - 应用 <xref:System.ComponentModel.CategoryAttribute?displayProperty=fullName> 以将属性网格类别分配给属性。
 
-    - 应用将 <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> 分配给属性的名称。
+    - 应用 <xref:System.ComponentModel.DisplayNameAttribute?displayProperty=fullName> 以向属性分配名称。
 
-    - 应用将 <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> 分配给属性的说明。
+    - 应用 <xref:System.ComponentModel.DescriptionAttribute?displayProperty=fullName> 以向属性分配说明。
 
     ```csharp
     public class OptionPageGrid : DialogPage
@@ -96,21 +96,21 @@ ms.locfileid: "121434758"
     ```
 
     > [!NOTE]
-    > 的默认实现 <xref:Microsoft.VisualStudio.Shell.DialogPage> 支持具有适当转换器的属性，或者是可以扩展为具有适当转换器的属性的结构或数组的属性。 有关转换器的列表，请参阅 <xref:System.ComponentModel> 命名空间。
+    > 的默认实现支持具有适当转换器的属性，或者具有可扩展为具有适当转换器的属性 <xref:Microsoft.VisualStudio.Shell.DialogPage> 的结构或数组的属性。 有关转换器的列表，请参阅 <xref:System.ComponentModel> 命名空间。
 
 6. 生成项目并启动调试。
 
-7. 在 Visual Studio 的实验实例中，单击 "**工具**" 菜单上的 "**选项**"。
+7. 在 Visual Studio 实验实例中，单击"**工具"菜单** 上的"选项 **"。**
 
-     在左侧窗格中，应会看到 **"我的类别**"。  (选项类别按字母顺序列出，因此它应显示在列表中的下一半。 ) 打开 **"我的类别** "，然后单击 **"我的网格" 页**。 选项网格将显示在右窗格中。 "属性" 类别为 " **我的选项**"，属性名称为 **"我的整数" 选项**。 属性说明 " **我的整数" 选项** 显示在窗格的底部。 将值从其初始值256更改为其他值。 单击 **"确定"**，然后重新打开 **网格页**。 您可以看到新值仍然存在。
+     在左窗格中，应会看到"我的 **类别"。**  (选项类别按字母顺序列出，因此它应出现在列表的大约一半。) 打开我的 **类别**，然后单击"我的 **网格页"。** 选项网格显示在右窗格中。 属性类别为 **"我的选项"，** 属性名称为"**我的整数选项"。** 属性说明" **我的整数"** 选项显示在窗格底部。 将值从初始值 256 更改为其他值。 单击 **"确定**"，然后重新打开"**我的网格页"。** 可以看到新值仍然存在。
 
-     还可以通过 Visual Studio 的搜索框使用 "选项" 页。 在 IDE 顶部附近的 "搜索" 框中，键入 **"我的类别** "，将看到 "我的 **网格" 页** 在结果中列出 >。
+     也可通过搜索框Visual Studio选项页。 在 IDE 顶部附近的搜索框中，键入"我的类别"，你将看到结果 **>"我的网格** 页"。
 
-## <a name="create-a-tools-options-custom-page"></a>创建 "工具选项" 自定义页面
+## <a name="create-a-tools-options-custom-page"></a>"创建工具""选项"自定义页
 
- 在本部分中，将使用自定义 UI 创建 "工具选项" 页。 使用此页可以显示和更改属性的值。
+ 在本部分，你将使用自定义 UI 创建"工具选项"页。 使用此页可以显示和更改属性的值。
 
-1. 在代码编辑器中打开 *MyToolsOptionsPackage* 文件。
+1. 在 *代码编辑器中打开 MyToolsOptionsPackage* 文件。
 
 2. 添加以下 using 语句。
 
@@ -118,7 +118,7 @@ ms.locfileid: "121434758"
     using System.Windows.Forms;
     ```
 
-3. 在 `OptionPageCustom` 类的前面添加一个类 `OptionPageGrid` 。 从派生新类 `DialogPage` 。
+3. 添加 `OptionPageCustom` 类，就在 类 `OptionPageGrid` 之前。 从 派生新类 `DialogPage` 。
 
     ```csharp
     public class OptionPageCustom : DialogPage
@@ -149,7 +149,7 @@ ms.locfileid: "121434758"
     }
     ```
 
-5. 将第二个应用 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 到 VSPackage 类。 此属性为类分配选项类别和选项页名称。
+5. 将第二 <xref:Microsoft.VisualStudio.Shell.ProvideOptionPageAttribute> 个 应用于 VSPackage 类。 此属性为类分配选项类别和选项页名称。
 
     ```csharp
     [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -163,13 +163,13 @@ ms.locfileid: "121434758"
     public sealed class MyToolsOptionsPackage : Package
     ```
 
-6. 将名为 MyUserControl 的新 **用户控件** 添加到项目。
+6. 将名为MyUserControl 的新用户控件添加到项目。
 
-7. 向用户控件添加 **TextBox** 控件。
+7. 向 **用户控件添加 TextBox** 控件。
 
-     在 " **属性** " 窗口的工具栏上，单击 " **事件** " 按钮，然后双击 " **离开** " 事件。 新的事件处理程序显示在 *MyUserControl* 代码中。
+     在" **属性** "窗口中的工具栏上，单击" **事件** "按钮，然后双击" **离开"** 事件。 新的事件处理程序显示在 *MyUserControl.cs* 代码中。
 
-8. 向 `OptionsPage` control 类添加公共字段 `Initialize` 和方法，并更新事件处理程序，以将选项值设置为文本框的内容：
+8. 将公共 `OptionsPage` 字段、方法添加到控件类，并更新事件处理程序以将选项值设置为 `Initialize` 文本框的内容：
 
     ```csharp
     public partial class MyUserControl : UserControl
@@ -193,9 +193,9 @@ ms.locfileid: "121434758"
     }
     ```
 
-     `optionsPage`字段保存对父实例的引用 `OptionPageCustom` 。 `Initialize`方法 `OptionString` 在 **文本框** 中显示。  `OptionString` 当焦点离开 **textbox** 时，事件处理程序会将文本框的当前值写入。
+     `optionsPage`字段保存对父实例 `OptionPageCustom` 的引用。 方法 `Initialize` 显示在 `OptionString` **TextBox 中**。 当焦点离开 TextBox 时，事件处理程序会将 **TextBox** `OptionString` 的当前值 **写入**。
 
-9. 在包代码文件中，将属性的替代添加 `OptionPageCustom.Window` 到类， `OptionPageCustom` 以创建、初始化和返回的实例 `MyUserControl` 。 该类现在应如下所示：
+9. 在包代码文件中，将 属性的重写添加到 类， `OptionPageCustom.Window` `OptionPageCustom` 以创建、初始化和返回 的实例 `MyUserControl` 。 类现在应如下所示：
 
     ```csharp
     [Guid("00000000-0000-0000-0000-000000000000")]
@@ -224,15 +224,15 @@ ms.locfileid: "121434758"
 
 10. 生成并运行该项目。
 
-11. 在实验实例中，单击 "**工具**" "  >  **选项**"。
+11. 在实验实例中，单击"**工具选项**  >  **"。**
 
-12. 查找 **我的类别** ，然后查找 **我的自定义页面**。
+12. 找到 **"我的类别**"，然后 **找到"我的自定义页"。**
 
-13. 更改 **OptionString** 的值。 单击 **"确定"**，然后重新打开 **自定义页面**。 您可以看到新值已保存。
+13. 更改 **OptionString 的值**。 单击 **"确定**"，然后重新打开 **"我的自定义页"。** 可以看到新值已持久化。
 
 ## <a name="access-options"></a>访问选项
 
- 在本部分中，将从承载 "关联的工具选项" 页的 VSPackage 获取选项的值。 可以使用相同的方法来获取任何公共属性的值。
+ 在本部分，你将从托管关联工具选项页的 VSPackage 获取选项的值。 同一技术可用于获取任何公共属性的值。
 
 1. 在包代码文件中，将名为 **OptionInteger** 的公共属性添加到 **MyToolsOptionsPackage** 类。
 
@@ -248,11 +248,11 @@ ms.locfileid: "121434758"
 
     ```
 
-     此代码调用 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 来创建或检索 `OptionPageGrid` 实例。 `OptionPageGrid` 调用 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 以加载其选项，这些选项是公共属性。
+     此代码 <xref:Microsoft.VisualStudio.Shell.Package.GetDialogPage%2A> 调用 来创建或检索 `OptionPageGrid` 实例。 `OptionPageGrid` 调用 <xref:Microsoft.VisualStudio.Shell.DialogPage.LoadSettingsFromStorage%2A> 以加载其选项，即公共属性。
 
-2. 现在，添加一个名为 **MyToolsOptionsCommand** 的自定义命令项模板以显示值。 在 "**添加新项**" 对话框中，选择 " **Visual c #**  >  **扩展性**" 并选择 "**自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *MyToolsOptionsCommand*。
+2. 现在，添加名为 **MyToolsOptionsCommand** 的自定义命令项模板以显示值。 在"**添加新项"对话框中**，转到 **"Visual C#**  >  **扩展性"，** 然后选择"**自定义命令"。** 在 **窗口底部的** "名称"字段中，将命令文件名更改为 *MyToolsOptionsCommand.cs*。
 
-3. 在 *MyToolsOptionsCommand* 文件中，将命令的方法的主体替换 `ShowMessageBox` 为以下内容：
+3. 在 *MyToolsOptionsCommand* 文件中，将命令的 方法的正文 `ShowMessageBox` 替换为以下内容：
 
     ```csharp
     private void ShowMessageBox(object sender, EventArgs e)
@@ -265,10 +265,10 @@ ms.locfileid: "121434758"
 
 4. 生成项目并启动调试。
 
-5. 在实验实例中，单击 " **工具** " 菜单上的 " **调用 MyToolsOptionsCommand**"。
+5. 在实验实例的"工具"**菜单上**，单击"**调用 MyToolsOptionsCommand"。**
 
-     将显示一个消息框，其中显示的当前值 `OptionInteger` 。
+     消息框显示 的当前值 `OptionInteger` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [选项和选项页](../extensibility/internals/options-and-options-pages.md)
+- ["选项"和"选项"页](../extensibility/internals/options-and-options-pages.md)

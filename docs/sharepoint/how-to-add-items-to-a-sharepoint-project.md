@@ -49,6 +49,6 @@ ms.locfileid: "121425318"
 
 4. 浏览到包含要添加的项的文件夹，选择该文件夹，然后选择 " **添加** " 按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [SharePoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

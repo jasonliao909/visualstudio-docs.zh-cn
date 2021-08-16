@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式搜索特定文件夹
-description: 了解如何使用 Visual Studio 以编程方式搜索特定 Microsoft Outlook文件夹中。
+description: 了解如何使用 Visual Studio 以编程方式搜索特定 Microsoft Outlook 文件夹中。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -31,7 +31,7 @@ ms.locfileid: "121394246"
 ## <a name="example"></a>示例
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_SearchFolder/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用文件夹](../vsto/working-with-folders.md)
 - [Outlook对象模型概述](../vsto/outlook-object-model-overview.md)
 - [如何：以编程方式按名称检索文件夹](../vsto/how-to-programmatically-retrieve-a-folder-by-name.md)

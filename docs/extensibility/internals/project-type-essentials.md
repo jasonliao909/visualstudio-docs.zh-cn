@@ -67,5 +67,5 @@ ms.locfileid: "121401368"
 
 - Project 类型可以支持多个配置，例如调试和发布。 用户可以使用所提供的属性页更改项目的不同配置。 有关详细信息，请参阅 [管理配置选项](../../extensibility/internals/managing-configuration-options.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [部署项目类型](../../extensibility/internals/deploying-project-types.md)

@@ -53,7 +53,7 @@ ms.locfileid: "121398016"
 
      `}`
 
-     如果在更改过程中发生异常，因此不会执行最终的提交 () ，则 Store 将重置为以前的状态。 这有助于确保错误不会使模型保持不一致状态。 有关详细信息，请参阅在程序 [代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     如果在更改期间发生异常，因此不会执行最终的提交 () ，则 Store 将重置为以前的状态。 这有助于确保错误不会使模型保持不一致状态。 有关详细信息，请参阅在程序 [代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
 - **二进制关系**。 如果定义两个类之间的关系，则两端的实例都有一个属性，该属性导航到另一端。 两端始终同步。 例如，如果定义与名为 Parent 和 Children 的角色的父子关系，可以编写：
 
@@ -75,6 +75,6 @@ ms.locfileid: "121398016"
 
 - **序列化**。 Store 提供了一种标准方法，用于将包含的对象序列化到文件中。 可以自定义序列化规则和反序列化规则。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义和扩展域特定语言](../modeling/customizing-and-extending-a-domain-specific-language.md)

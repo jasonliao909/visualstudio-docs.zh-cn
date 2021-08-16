@@ -1,7 +1,7 @@
 ---
 title: 在 XAML 设计器中动态显示对象
 titleSuffix: Blend for Visual Studio
-description: 了解如何使用情节提要Blend for Visual Studio时间线和关键帧在动态场景中对对象进行动画处理，在 XAML 设计器。
+description: 了解如何使用情节提要Blend for Visual Studio时间线和关键帧在动画处理中对对象进行动画处理，在 XAML 设计器。
 ms.custom: SEO-VS-2020
 ms.date: 07/31/2019
 ms.topic: how-to
@@ -49,6 +49,6 @@ ms.locfileid: "121393433"
 
 在不同的时间点对矩形进行其他更改。 例如，可以在“属性”窗口中更改填充颜色或翻转方向。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

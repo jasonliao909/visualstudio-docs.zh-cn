@@ -59,6 +59,6 @@ IDE 将在名为正在运行的文档表 (RDT) 的内部结构中维护所有当
 
 - 使用 "层次结构" 或 "项 ID" 请求项目系统获取完整文档路径，然后在 RDT 中查看项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [RDT_ReadLock 用法](../../extensibility/internals/rdt-readlock-usage.md)
 - [持久性和正在运行的文档表](../../extensibility/internals/persistence-and-the-running-document-table.md)

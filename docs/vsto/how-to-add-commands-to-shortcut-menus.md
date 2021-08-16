@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121424200"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：向快捷菜单添加命令
-  本主题演示如何使用 VSTO 外接程序将命令添加到 Office 应用程序中的快捷菜单。
+  本主题演示如何使用外接程序将命令添加到 Office 应用程序中的VSTO菜单。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "121424200"
 
 7. 在代码编辑器中添加 XML，该 XML 描述快捷菜单以及要添加到快捷菜单的控件。
 
-     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 2010 Office控件 ID 的完整列表，请参阅[Office 2010](https://www.microsoft.com/download/details.aspx?id=6627)帮助文件：Office Fluent 用户界面控件标识符。
+     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 2010 Office控件 ID 的完整列表，请参阅[Office 2010](https://www.microsoft.com/download/details.aspx?id=6627)帮助文件：Office Fluent 用户界面控件标识符 。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -82,7 +82,7 @@ ms.locfileid: "121424200"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb" id="Snippet2":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs" id="Snippet2":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [OfficeUI 自定义](../vsto/office-ui-customization.md)
 - [演练：为书签创建快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)
