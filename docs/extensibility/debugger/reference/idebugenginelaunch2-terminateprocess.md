@@ -11,17 +11,18 @@ ms.assetid: f7039e7f-5f57-4222-9ad2-11a66b2da6e0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ede981ee812c69654614cf828fc31a4ccf7849be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b4b13a11def20f2bc6b90133661df6e4375b4dc832e2d91ba26c24644a24aa68
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065952"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390031"
 ---
 # <a name="idebugenginelaunch2terminateprocess"></a>IDebugEngineLaunch2::TerminateProcess
 终止进程。

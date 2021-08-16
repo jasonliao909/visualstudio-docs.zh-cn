@@ -11,17 +11,18 @@ ms.assetid: 07253b74-7d39-48e0-8e85-ac8dfd919f6e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9c482b05620f280b2948aefe7e95eb38682268c6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6b69df586154bdbaf242463a5292232e4ba137201d8b8e169015fed2ebf3fe9c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071436"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402254"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 获取引用的派生程度最高的引用。 保留供将来使用。

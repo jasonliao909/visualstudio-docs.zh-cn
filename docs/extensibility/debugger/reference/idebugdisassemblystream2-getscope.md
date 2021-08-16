@@ -11,17 +11,18 @@ ms.assetid: 71c6e632-642a-42d8-a995-77e4ac190a5b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65d24547aa6439469ac51a40490a12c641f4de1f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 273ddd9b403d727f9a7db5f7997cab702f3f4d87fad6983e8c156a7a8d0a576f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066966"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402956"
 ---
 # <a name="idebugdisassemblystream2getscope"></a>IDebugDisassemblyStream2::GetScope
 获取反汇编流的作用域。

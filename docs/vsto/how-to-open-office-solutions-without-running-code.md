@@ -1,5 +1,5 @@
 ---
-title: 如何：打开 Office 解决方案但不运行代码
+title: 如何：在不运行代码的情况下打开 Office 解决方案
 description: 了解如何在不运行程序集代码的情况下，打开包含托管代码扩展的文档或工作簿。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -18,17 +18,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 99f1a01a745544e7e11e724db9c6eafacf0ca201
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c20ddd8fbf05422bfbc948449c2cf3265c7e89c4212add41e220e6f04c77304b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876584"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394636"
 ---
-# <a name="how-to-open-office-solutions-without-running-code"></a>如何：打开 Office 解决方案但不运行代码
-  即使最终用户的 Office 应用程序中的安全设置设置为 "高"，使用托管代码扩展创建的 Microsoft Office 解决方案也会运行。 这是因为，.NET 程序集代码安全由 Microsoft .NET 框架管理，而不是 Microsoft Office。
+# <a name="how-to-open-office-solutions-without-running-code"></a>如何：在不运行代码的情况下打开 Office 解决方案
+  即使最终用户的 Office 应用程序中的安全设置设置为 "高"，使用托管代码扩展创建的 Microsoft Office 解决方案也会运行。 这是因为 .net 程序集代码安全由 Microsoft .NET Framework 而不是 Microsoft Office 管理。
 
  但是，有时您可能希望在不运行代码的情况下打开文档。 例如，在打开文档时运行的代码可能会改变内容，但你想要在代码更改文档前更新文档的外观。 或者，您可能想要将文档中的某些信息发送给他人，并且您不希望代码运行，可能会改变内容。
 
@@ -52,7 +53,7 @@ ms.locfileid: "99876584"
      如果该解决方案由多个用户使用，则此方法会阻止解决方案运行。 如果在代码或引用的服务器中发现问题并且你想要阻止所有用户执行该问题，则这会很有用。
 
 ## <a name="see-also"></a>另请参阅
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [Office 解决方案中的应用程序和部署清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)

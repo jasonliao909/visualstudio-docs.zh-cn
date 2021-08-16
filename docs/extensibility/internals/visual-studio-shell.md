@@ -1,6 +1,6 @@
 ---
-title: Visual Studio Shell |Microsoft Docs
-description: Visual Studio shell 是 Visual Studio 中集成的主要代理，提供基本功能，并支持 Vspackage 之间的跨通信。
+title: Visual StudioShell |Microsoft Docs
+description: Visual Studio shell 是 Visual Studio 集成的主要代理，它提供基本功能，并支持 vspackage 之间的跨通信。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.assetid: cb124ef4-1a6b-4bfe-bfbf-295ef9c07f36
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5dafd90294fd0968c78846d4162c1ff02c584f3f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0d2d79a36acdc7c210b81b5215d242d95adb947e8dcf17aec23a62bf4e05708a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074335"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375417"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Shell 是中的集成主代理 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 Shell 提供使 Vspackage 共享公共服务所需的功能。 由于的体系结构目标 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是在 vspackage 中背心主要功能，因此 shell 是一个框架，用于提供基本功能，并支持其组件 vspackage 间的跨通信。
@@ -68,7 +69,7 @@ ms.locfileid: "105074335"
 
 - **查找** 和 **替换**
 
-- **打开**"**新建**" 菜单上的 "项目" 和 "**打开文件**" 对话框
+- **打开**"**新建**" 菜单上的 "Project" 和 "**打开文件**" 对话框
 
 - "**工具**" 菜单上的 "**选项**" 对话框
 

@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d2bcc16a6f2be70ae9ba0bfec0f3a24c94213dcf
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a279bbc3a4de88c7f8410a47752b200920c6b30e1f76c39f793107fd389fa482
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387159"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121428973"
 ---
 # <a name="how-to-intercept-a-click-on-a-shape-or-decorator"></a>如何：截获对形状或修饰器的单击
 下面的过程演示如何截获单击形状或图标修饰器的方法。 您可以截获单击、双击、拖动和其他笔势，并使元素响应。

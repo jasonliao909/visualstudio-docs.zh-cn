@@ -1,20 +1,21 @@
 ---
 title: T4 CleanUpBehavior 指令
-description: 了解 CleanUpBehavior 指令，以及如何在处理文本模板后删除 appDomain。
+description: 了解 CleanUpBehavior 指令以及如何在处理文本模板后删除 appDomain。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 078b688c238bea47e4ab38b3302708bf5e5189cf
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 454522337d57f5f480aecdc30ef69efd39d6a11ab181f6a0324a84109e9c09db
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386340"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121370484"
 ---
 # <a name="t4-cleanupbehavior-directive"></a>T4 CleanUpBehavior 指令
 

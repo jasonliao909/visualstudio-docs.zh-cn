@@ -1,6 +1,6 @@
 ---
 title: 如何：为 Windows 提供自动化 |Microsoft Docs
-description: 了解如何使用 VisualStudio 方法在 Visual Studio 中为文档和工具窗口提供自动化。
+description: 了解如何使用 VisualStudio 方法为 Visual Studio 中的文档和工具窗口提供自动化。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 512ab2a4-7987-4912-8f40-8804bf66f829
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 774b32dc1554fb6d6466be7e915fbaeea8185798
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8d84e58bb91d49382fe4713c9ecdb6ca081d13141ef3cc2080781ca2e6b666f1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078742"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388638"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：为 windows 提供自动化
 

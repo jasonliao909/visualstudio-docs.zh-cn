@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c65a7ba67c3972620b3d589188e233827a12ffd
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ab0aa917f79845b7baaad4c65583a5a5a07853f4feec28cab7de9646751aaf3b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387263"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121429142"
 ---
 # <a name="how-to--with-text-templates"></a>如何：使用文本模板 ... 
 文本模板Visual Studio生成任何类型的文本的有用方法。 可以使用文本模板在应用程序的一部分运行时生成文本，在设计时生成一些项目代码。 本主题汇总了最常询问的"如何实现 ...？" 问题。
@@ -35,7 +36,7 @@ ms.locfileid: "112387263"
 
 - 将运行时文本模板添加到项目。 此模板在代码中创建一个类，可以实例化该类并使用它来生成文本。 可以在构造函数参数中将数据传递给它。 有关详细信息，请参阅[使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
-- 如果要从仅运行时可用的模板生成 ，可以使用标准文本模板。 如果要编写文本Visual Studio，可以调用文本模板化服务。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
+- 如果要从仅运行时可用的模板生成 ，可以使用标准文本模板。 如果要编写一个Visual Studio扩展，可以调用文本模板化服务。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。 在其他上下文中，可以使用文本模板化引擎。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName>。
 
      使用 \<#@parameter#> 指令将参数传递给这些模板。 有关详细信息，请参阅 [T4 参数指令](../modeling/t4-parameter-directive.md)。
 
@@ -64,7 +65,7 @@ ms.locfileid: "112387263"
 
    请考虑将类功能放在一个单独的文件中，你可以将其 `<#@include#>` 放入一个或多个模板文件中。
 
-- 在类库的单独程序集中 (方法) 模板调用这些方法。 使用 `<#@assembly#>` 指令加载程序集，并 `<#@import#>` 设置命名空间上下文。 请注意，若要在调试程序集时重新生成程序集，可能需要停止并重启Visual Studio。 有关详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。
+- 将方法写入类库 (程序集中) ，然后从模板调用这些方法。 使用 `<#@assembly#>` 指令加载程序集，并 `<#@import#>` 设置命名空间上下文。 请注意，若要在调试程序集时重新生成程序集，可能需要停止并重启Visual Studio。 有关详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。
 
 ### <a name="generate-many-files-from-one-model-schema"></a>从一个模型架构生成多个文件
  如果经常从具有相同的 XML 或数据库架构的模型生成文件：
@@ -77,10 +78,10 @@ ms.locfileid: "112387263"
 
      `foreach (Book book in this.Library) { ... }`
 
-     有关详细信息，请参阅使用 [入门 语言Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) 生成代码和从 Domain-Specific [语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+     有关详细信息，请参阅 入门 [语言Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) 语言和从语言生成 [Domain-Specific代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="get-data-from-visual-studio"></a>从数据Visual Studio
- 若要使用 Visual Studio中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 例如：
+ 若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 例如：
 
 ```csharp
 <#@ template hostspecific="true" language="C#" #>
@@ -110,7 +111,7 @@ Number of projects in this VS solution:  <#= dte.Solution.Projects.Count #>
 
 ### <a name="what-is-a-model"></a>什么是“模型”？
 
-- 模板读取的输入。 它可以在文件或数据库中。 它可以是 XML、Visio 绘图、特定于域的语言 (DSL) 或 UML 模型，或者可能是纯文本。 它可以分布在多个文件中。 通常，多个模板读取一个模型。
+- 模板读取的输入。 它可以在文件或数据库中。 它可以是 XML、Visio图形、特定于域的语言 (DSL) 或 UML 模型，或者可能是纯文本。 它可以分布在多个文件中。 通常，多个模板读取一个模型。
 
      术语"模型"的含义是，它比生成的程序代码或其他文件更直接地表示业务某些方面。 例如，它可能表示生成的软件将监督的通信网络的计划。
 

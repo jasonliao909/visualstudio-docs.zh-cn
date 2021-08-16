@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: aa0512e5d29cb1b5c5a39715e34667803b752795
-ms.sourcegitcommit: 04954be0c4373f82f79181e1a5e7812be4d3e1f7
+ms.openlocfilehash: 20090419fd73492e60645dc0742505d15da4a21a8fc6811f17611feeb207a565
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496257"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392765"
 ---
 # <a name="how-to-generate-code-metrics-data"></a>如何：生成代码度量数据
 
@@ -26,9 +27,9 @@ ms.locfileid: "100496257"
 
 - 通过启用 [.net 代码质量分析器](#net-code-quality-analyzers-code-metrics-rules) 并启用四个代码度量值 (可维护性) 其包含的规则。
 
-- 选择 Visual Studio 中的 " [**分析**  >  **计算代码度量值**](#calculate-code-metrics-menu-command) " 菜单命令。
+- 通过在 Visual Studio 中选择 " [**分析**  >  **计算代码度量值**](#calculate-code-metrics-menu-command) " 菜单命令。
 
-- 在 c # 和 Visual Basic 项目的 [命令行](#command-line-code-metrics) 中。
+- 在 c # 和 Visual Basic 项目的[命令行](#command-line-code-metrics)中。
 
 ## <a name="net-code-quality-analyzers-code-metrics-rules"></a>.NET 代码质量分析器代码度量规则
 
@@ -45,7 +46,7 @@ ms.locfileid: "100496257"
 dotnet_diagnostic.CA1502.severity = warning
 ```
 
-### <a name="configuration"></a>Configuration
+### <a name="configuration"></a>配置
 
 你可以配置触发代码度量规则的阈值。
 
@@ -59,7 +60,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
    在此示例中，规则 [CA1502](/dotnet/fundamentals/code-analysis/quality-rules/ca1502) 配置为在方法的圈复杂度大于10时激发。
 
-3. 在 Visual Studio 的 " **属性** " 窗口中，或者在项目文件中，将配置文件的生成操作标记为 " [**AdditionalFiles**](../ide/build-actions.md#build-action-values)"。 例如：
+3. 在 Visual Studio 的 "**属性**" 窗口中，或者在项目文件中，将配置文件的生成操作标记为 " [**AdditionalFiles**](../ide/build-actions.md#build-action-values)"。 例如：
 
    ```xml
    <ItemGroup>
@@ -87,7 +88,7 @@ dotnet_diagnostic.CA1502.severity = warning
 
 1. 在 **解决方案资源管理器** 中，选择一个或多个项目。
 
-1. 从菜单栏中，选择 "**分析**  >  计算  >  **所选项目 (的** 代码度量值") 。
+1. 从菜单栏中，选择 "**分析**  >  为选定的 Project (s) **计算代码度量值**"  >  ****。
 
 将生成结果，并显示 " **代码度量结果** " 窗口。 若要查看结果详细信息，请在 **层次结构** 中展开树。
 
@@ -98,17 +99,17 @@ dotnet_diagnostic.CA1502.severity = warning
 >
 > - 改为从 [命令行](#command-line-code-metrics) 计算代码度量值
 >
-> - 升级到 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
+> - 升级到[Visual Studio 2019](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 
 ## <a name="command-line-code-metrics"></a>命令行代码度量值
 
-你可以从 c # 的命令行生成代码度量数据，并 Visual Basic .NET Framework、.NET Core 和 .NET Standard 应用程序的项目。 若要从命令行运行代码度量值，请安装 [CodeAnalysis NuGet 包](#microsoftcodeanalysismetrics-nuget-package) 或自行生成 [Metrics.exe](#metricsexe) 可执行文件。
+你可以从 c # 的命令行生成代码度量数据，并 Visual Basic .NET Framework、.net Core 和 .NET Standard 应用程序的项目。 若要从命令行运行代码度量值，请安装[CodeAnalysis NuGet 包](#microsoftcodeanalysismetrics-nuget-package)或自行生成[Metrics.exe](#metricsexe)可执行文件。
 
 ### <a name="microsoftcodeanalysismetrics-nuget-package"></a>CodeAnalysis NuGet 包
 
-若要从命令行生成代码度量数据，最简单的方法是安装 [CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet 包。 安装程序包后， `msbuild /t:Metrics` 从包含项目文件的目录中运行。 例如：
+若要从命令行生成代码度量数据，最简单的方法是安装[CodeAnalysis](https://www.nuget.org/packages/Microsoft.CodeAnalysis.Metrics/) NuGet package。 安装程序包后， `msbuild /t:Metrics` 从包含项目文件的目录中运行。 例如：
 
 ```shell
 C:\source\repos\ClassLibrary3\ClassLibrary3>msbuild /t:Metrics
@@ -274,7 +275,7 @@ Build succeeded.
 
 ### <a name="metricsexe"></a>Metrics.exe
 
-如果你不想安装 NuGet 包，则可以直接生成并使用 *Metrics.exe* 可执行文件。 生成 *Metrics.exe* 可执行文件：
+如果你不想安装 NuGet 包，则可以直接生成和使用 *Metrics.exe* 可执行文件。 生成 *Metrics.exe* 可执行文件：
 
 1. 克隆 [dotnet/roslyn](https://github.com/dotnet/roslyn-analyzers) 存储库。
 2. 以管理员身份打开 Visual Studio 开发人员命令提示。
@@ -310,14 +311,14 @@ msbuild /m /v:m /t:rebuild /p:LEGACY_CODE_METRICS_MODE=true Metrics.csproj
 
 有关详细信息，请参阅 [在传统模式下启用生成代码度量值](https://github.com/dotnet/roslyn-analyzers/pull/1841)。
 
-### <a name="previous-versions"></a>旧版
+### <a name="previous-versions"></a>以前的版本
 
 ::: moniker range=">=vs-2019"
-Visual Studio 2015 附带了一个命令行代码度量工具，该工具也称为 *Metrics.exe*。 此工具的以前版本执行二进制分析，即基于程序集的分析。 较新版本的 *Metrics.exe* 工具改为分析源代码。 由于较新 *Metrics.exe* 工具是基于源代码的，因此，命令行代码度量结果可能与 VISUAL Studio IDE 和以前版本的 *Metrics.exe* 所生成的结果不同。 从 Visual Studio 2019 开始，Visual Studio IDE 将分析类似于命令行工具的源代码，结果应相同。
+Visual Studio 2015 附带了一个也称为 *Metrics.exe* 的命令行代码度量工具。 此工具的以前版本执行二进制分析，即基于程序集的分析。 较新版本的 *Metrics.exe* 工具改为分析源代码。 由于较新 *Metrics.exe* 工具是基于源代码的，因此，命令行代码度量结果可能与 Visual Studio IDE 和以前版本的 *Metrics.exe* 生成的结果不同。 从 Visual Studio 2019 开始，Visual Studio IDE 会分析类似于命令行工具的源代码，结果应相同。
 
 ::: moniker-end
 ::: moniker range="vs-2017"
-Visual Studio 2015 附带了一个命令行代码度量工具，该工具也称为 *Metrics.exe*。 此工具的以前版本执行二进制分析，即基于程序集的分析。 新的 *Metrics.exe* 工具改为分析源代码。 由于新的 *Metrics.exe* 工具是基于源代码的，因此，命令行代码度量结果与 VISUAL Studio IDE 和以前版本的 *Metrics.exe* 生成的结果不同。
+Visual Studio 2015 附带了一个也称为 *Metrics.exe* 的命令行代码度量工具。 此工具的以前版本执行二进制分析，即基于程序集的分析。 新的 *Metrics.exe* 工具改为分析源代码。 由于新的 *Metrics.exe* 工具是基于源代码的，因此，命令行代码度量结果与 Visual Studio IDE 和以前版本的 *Metrics.exe* 生成的结果不同。
 ::: moniker-end
 
 即使存在源代码错误，新的命令行代码度量工具也会计算度量值，前提是解决方案和项目可以加载。
@@ -325,15 +326,15 @@ Visual Studio 2015 附带了一个命令行代码度量工具，该工具也称�
 #### <a name="metric-value-differences"></a>指标值差异
 
 ::: moniker range=">=vs-2019"
-从 Visual Studio 2019 版本16.4 和 CodeAnalysis Dc 中开始 (2.9.5) ， `SourceLines` 并 `ExecutableLines` 替换以前的 `LinesOfCode` 指标。 有关新指标的说明，请参阅 [代码度量值](../code-quality/code-metrics-values.md)。 此 `LinesOfCode` 指标在旧模式下可用。
+从 Visual Studio 2019 16.4 和 dc (2.9.5) 开始， `SourceLines` 并 `ExecutableLines` 替换以前的 `LinesOfCode` 指标。 有关新指标的说明，请参阅 [代码度量值](../code-quality/code-metrics-values.md)。 此 `LinesOfCode` 指标在旧模式下可用。
 ::: moniker-end
 ::: moniker range="vs-2017"
 此 `LinesOfCode` 指标在新的命令行代码度量工具中更准确且更可靠。 它独立于任何 codegen 差异，并且在工具集或运行时发生更改时不会更改。 新工具将计算代码的实际行数，包括空白行和注释。
 ::: moniker-end
 
-其他指标（例如 `CyclomaticComplexity` 和） `MaintainabilityIndex` 使用与 *Metrics.exe* 以前版本相同的公式，但新的工具会对 (逻辑源指令的数量进行计数， `IOperations` 而不是) 中间语言 (IL) 说明。 这些数字将与 Visual Studio IDE 和以前版本的 *Metrics.exe* 生成的数字略有不同。
+其他指标（例如 `CyclomaticComplexity` 和） `MaintainabilityIndex` 使用与 *Metrics.exe* 以前版本相同的公式，但新的工具会对 (逻辑源指令的数量进行计数， `IOperations` 而不是) 中间语言 (IL) 说明。 Visual Studio IDE 和以前版本的 *Metrics.exe* 所生成的数字略有不同。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 "代码度量结果" 窗口](../code-quality/working-with-code-metrics-data.md)
 - [代码度量值](../code-quality/code-metrics-values.md)

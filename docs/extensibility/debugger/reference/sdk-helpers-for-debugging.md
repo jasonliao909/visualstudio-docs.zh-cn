@@ -1,6 +1,6 @@
 ---
-title: 用于调试的 SDK 帮助程序 |Microsoft Docs
-description: 了解用于实现 c + + 中的调试引擎、表达式计算器和符号提供程序的全局 helper 函数的函数和声明。
+title: 用于调试脚本的 SDK |Microsoft Docs
+description: 了解函数和声明，这些函数和声明是全局帮助程序函数，用于实现 C++ 中的调试引擎、表达式计算程序以及符号提供程序。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,29 +14,30 @@ ms.assetid: 80a52e93-4a04-4ab2-8adc-a7847c2dc20b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f5a34513130ea112393ffbb4935093bcea6e797
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d09b91f0cbe2db0755546932455326a4e78eb13c07c846d8dd55f8984bc0145d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061532"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388977"
 ---
 # <a name="sdk-helpers-for-debugging"></a>用于调试的 SDK 帮助程序
-这些函数和声明是用于实现 c + + 中的调试引擎、表达式计算器和符号提供程序的全局帮助器函数。
+这些函数和声明是全局帮助程序函数，用于实现 C++ 中的调试引擎、表达式计算程序以及符号提供程序。
 
 > [!NOTE]
-> 目前没有这些函数和声明的托管版本。
+> 目前，这些函数和声明没有托管版本。
 
 ## <a name="overview"></a>概述
- 为了使调试引擎、表达式计算器和 Visual Studio 使用的符号提供程序，必须进行注册。 这是通过设置注册表子项和条目来完成的，也称为 "设置度量值"。 以下全局函数旨在简化更新这些度量值的过程。 请参阅注册表位置部分，以了解这些函数更新的每个注册表子项的布局。
+ 为了使调试引擎、表达式评估器以及符号提供程序Visual Studio，必须注册它们。 这通过设置注册表子项和条目（也称为"设置指标"）完成。 以下全局函数旨在简化更新这些指标的过程。 请参阅注册表位置部分，了解这些函数更新的每个注册表子项的布局。
 
-## <a name="general-metric-functions"></a>常规度量函数
- 这些是调试引擎使用的常规功能。 稍后详细介绍了表达式计算器和符号提供程序的专用函数。
+## <a name="general-metric-functions"></a>常规指标函数
+ 这些是调试引擎使用的常规函数。 稍后将详细介绍表达式评估器及符号提供程序的专用函数。
 
 ### <a name="getmetric-method"></a>GetMetric 方法
- 从注册表检索指标值。
+ 从注册表中检索指标值。
 
 ```cpp
 HRESULT GetMetric(
@@ -51,12 +52,12 @@ HRESULT GetMetric(
 
 |参数|说明|
 |---------------|-----------------|
-|pszMachine|中可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
-|pszType|中度量值类型之一。|
-|guidSection|中特定引擎、计算器、异常等的 GUID。这会为特定元素指定指标类型下的子节。|
-|pszMetric|中要获取的指标。 这对应于特定的值名称。|
-|pdwValue|中指标中值的存储位置。 有多种类型的 GetMetric 可以返回 DWORD (，如本示例所示) 、BSTR、GUID 或 Guid 数组。|
-|pszAltRoot|中要使用的备用注册表根目录。 将设置为 `NULL` 以使用默认值。|
+|pszMachine|[in]可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
+|pszType|[in]指标类型之一。|
+|guidSection|[in]特定引擎、评估器、异常等的 GUID。这将指定特定元素的指标类型下的子节。|
+|pszMetric|[in]要获取的指标。 这对应于特定的值名称。|
+|pdwValue|[in]指标中值的存储位置。 有若干种 GetMetric 可以返回 DWORD (，如本示例) 、BSTR、GUID 或 GUID 数组所示。|
+|pszAltRoot|[in]要使用的备用注册表根。 将 设置为 `NULL` 以使用默认值。|
 
 ### <a name="setmetric-method"></a>SetMetric 方法
  在注册表中设置指定的指标值。
@@ -74,12 +75,12 @@ HRESULT SetMetric(
 
 |参数|说明|
 |---------------|-----------------|
-|pszType|中度量值类型之一。|
-|guidSection|中特定引擎、计算器、异常等的 GUID。这会为特定元素指定指标类型下的子节。|
-|pszMetric|中要获取的指标。 这对应于特定的值名称。|
-|dwValue|中度量值中值的存储位置。 在此示例中，有几种类型的 SetMetric 可存储 DWORD () 、BSTR、GUID 或 Guid 数组。|
-|fUserSpecific|中如果度量值是用户特定的，并且应该写入用户的 hive 而不是本地计算机 hive，则为 TRUE。|
-|pszAltRoot|中要使用的备用注册表根目录。 将设置为 `NULL` 以使用默认值。|
+|pszType|[in]指标类型之一。|
+|guidSection|[in]特定引擎、评估器、异常等的 GUID。这将指定特定元素的指标类型下的子节。|
+|pszMetric|[in]要获取的指标。 这对应于特定的值名称。|
+|dwValue|[in]指标中值的存储位置。 此示例中，可以使用多种类型 SetMetric 存储 DWORD (，例如) 、BSTR、GUID 或 GUID 数组。|
+|fUserSpecific|[in]如果指标特定于用户，并且应写入用户的配置单元而不是本地计算机配置单元，则为 TRUE。|
+|pszAltRoot|[in]要使用的备用注册表根。 将 设置为 `NULL` 以使用默认值。|
 
 ### <a name="removemetric-method"></a>RemoveMetric 方法
  从注册表中删除指定的指标。
@@ -95,10 +96,10 @@ HRESULT RemoveMetric(
 
 |参数|说明|
 |---------------|-----------------|
-|pszType|中度量值类型之一。|
-|guidSection|中特定引擎、计算器、异常等的 GUID。这会为特定元素指定指标类型下的子节。|
-|pszMetric|中要删除的度量值。 这对应于特定的值名称。|
-|pszAltRoot|中要使用的备用注册表根目录。 将设置为 `NULL` 以使用默认值。|
+|pszType|[in]指标类型之一。|
+|guidSection|[in]特定引擎、评估器、异常等的 GUID。这将指定特定元素的指标类型下的子节。|
+|pszMetric|[in]要删除的指标。 这对应于特定的值名称。|
+|pszAltRoot|[in]要使用的备用注册表根。 将 设置为 `NULL` 以使用默认值。|
 
 ### <a name="enummetricsections-method"></a>EnumMetricSections 方法
  枚举注册表中的各种指标部分。
@@ -115,33 +116,33 @@ HRESULT EnumMetricSections(
 
 |参数|说明|
 |---------------|-----------------|
-|pszMachine|中可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
-|pszType|中度量值类型之一。|
-|rgguidSections|[in，out]要填充的预先分配的 Guid 数组。|
-|pdwSize|中可在数组中存储的最大 Guid 数目 `rgguidSections` 。|
-|pszAltRoot|中要使用的备用注册表根目录。 将设置为 `NULL` 以使用默认值。|
+|pszMachine|[in]可能远程计算机的名称，其寄存器将写入 (`NULL` 表示本地计算机) 。|
+|pszType|[in]指标类型之一。|
+|rgguidSections|[in， out]要填充的 GUID 的预分配数组。|
+|pdwSize|[in]可以存储在数组中的 GUID 的最大 `rgguidSections` 数目。|
+|pszAltRoot|[in]要使用的备用注册表根。 将 设置为 `NULL` 以使用默认值。|
 
-## <a name="expression-evaluator-functions"></a>表达式计算器函数
+## <a name="expression-evaluator-functions"></a>表达式计算程序函数
 
-|功能|说明|
+|函数|说明|
 |--------------|-----------------|
-|GetEEMetric|从注册表检索指标值。|
+|GetEEMetric|从注册表中检索指标值。|
 |SetEEMetric|在注册表中设置指定的指标值。|
 |RemoveEEMetric|从注册表中删除指定的指标。|
-|GetEEMetricFile|获取指定指标中的文件名，并将其加载，并将文件内容作为字符串返回。|
+|GetEEMetricFile|从指定的指标获取文件名并加载它，以字符串形式返回文件内容。|
 
 ## <a name="exception-functions"></a>异常函数
 
-|功能|说明|
+|函数|说明|
 |--------------|-----------------|
-|GetExceptionMetric|从注册表检索指标值。|
+|GetExceptionMetric|从注册表中检索指标值。|
 |SetExceptionMetric|在注册表中设置指定的指标值。|
 |RemoveExceptionMetric|从注册表中删除指定的指标。|
 |RemoveAllExceptionMetrics|从注册表中删除所有异常指标。|
 
 ## <a name="symbol-provider-functions"></a>符号提供程序函数
 
-|功能|说明|
+|函数|说明|
 |--------------|-----------------|
 |GetSPMetric|从注册表检索指标值。|
 |SetSPMetric|在注册表中设置指定的指标值。|
@@ -149,7 +150,7 @@ HRESULT EnumMetricSections(
 
 ## <a name="enumeration-functions"></a>枚举函数
 
-|功能|说明|
+|函数|说明|
 |--------------|-----------------|
 |EnumMetricSections|枚举指定指标类型的所有指标。|
 |EnumDebugEngine|枚举已注册的调试引擎。|
@@ -194,7 +195,7 @@ HRESULT EnumMetricSections(
 |metricEngineCanWatchProcess|将此值设置为非零值，以指示调试引擎将监视进程事件而不是程序提供程序。|
 |metricRemoteDebugging|将此值设置为非零表示支持远程调试。|
 |metricEncUseNativeBuilder|将此值设置为非零值，表示 "编辑并继续" 管理器应该使用调试引擎的 encbuild.dll 来生成以进行 "编辑并继续"。 **注意：**  自定义调试引擎绝不应设置此设置，否则应始终将其设置为0。|
-|metricLoadUnderWOW64|将此项设置为非零值，指示调试引擎应在调试64位进程时在 WOW 下的调试对象进程中加载;否则，将在 (在 WOW64) 下运行的 Visual Studio 进程中加载调试引擎。|
+|metricLoadUnderWOW64|将此项设置为非零值，指示调试引擎应在调试64位进程时在 WOW 下的调试对象进程中加载;否则，将在 Visual Studio 进程中加载调试引擎， (在 WOW64) 下运行。|
 |metricLoadProgramProviderUnderWOW64|将此项设置为非零值，表示当调试 WOW 下的64位进程时，应在调试对象进程中加载程序提供程序。否则，它将加载到 Visual Studio 进程中。|
 |metricStopOnExceptionCrossingManagedBoundary|将此值设置为非零值，以指示当跨托管/非托管代码边界引发未经处理的异常时，进程应停止。|
 |metricAutoSelectPriority|将此项设置为自动选择调试引擎的优先级 (较高的值等于较高的优先级) 。|
@@ -271,7 +272,7 @@ HRESULT EnumMetricSections(
 |*[指标值]*|分配给度量值的值。 值应具有 (字符串、数字等 ) 取决于指标。|
 
 > [!NOTE]
-> 所有 Guid 都以的格式存储 `{GUID}` 。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}`。
+> 所有 Guid 都以的格式存储 `{GUID}` 。 例如，`{123D150B-FA18-461C-B218-45B3E4589F9B}` 。
 
 ### <a name="debug-engines"></a>调试引擎
  下面是注册表中调试引擎指标的组织。 `Engine` 是调试引擎的度量类型名称，并且对应于上述注册表子树中的 *[指标类型]* 。
@@ -420,7 +421,7 @@ HRESULT EnumMetricSections(
 |*异常*|异常的名称：例如， **_com_error** 或 **控制中断**。 这些名称还用于向用户标识特定异常。|
 
 ## <a name="requirements"></a>要求
- [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]默认情况下，这些文件位于 SDK 安装目录中 (*[drive]* \Program Files\Microsoft VISUAL Studio 2010 SDK \\) 。
+ [!INCLUDE[vs_dev10_ext](../../../extensibility/debugger/reference/includes/vs_dev10_ext_md.md)]默认情况下，这些文件位于 SDK 安装目录中 (" *[drive]* \Program files \ Microsoft Visual Studio 2010 SDK \\) "。
 
  标头： includes\dbgmetric。h
 

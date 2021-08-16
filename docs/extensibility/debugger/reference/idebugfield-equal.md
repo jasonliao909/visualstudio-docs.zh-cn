@@ -11,17 +11,18 @@ ms.assetid: 75369fe6-ddd3-497d-80d1-2488e6100e9f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58673703fa0e585095c9a82fe2c7a4bc3e14827c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8bd276433883b833a56654357cdb4dc8695f79604a11d3e65836b1dc0e10d2bb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077104"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433900"
 ---
 # <a name="idebugfieldequal"></a>IDebugField::Equal
 此方法将此字段与指定的字段进行比较以确定是否相等。

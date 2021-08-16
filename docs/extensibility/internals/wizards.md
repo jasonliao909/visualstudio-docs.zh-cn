@@ -10,25 +10,26 @@ ms.assetid: 59d9a77f-ee80-474b-a14f-90f477ab717b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b5c5cb9649689f711844f97e0b57ab23248e9a00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3dfd9aa95b44fff288f13cf106366da94f73f845d9bb2ad4626830d8b6fe7b02
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074153"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375411"
 ---
 # <a name="wizards"></a>向导
-创建向导后，通常需要将其添加到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境中 (IDE) ，以便其他人可以使用它。 添加的向导随后会出现在 " **添加新项目** " 或 " **添加新项** " 对话框中。 若要查看 " **添加新项目** " 或 " **添加新项** " 对话框，请在 **解决方案资源管理器** 中右键单击打开的解决方案，指向 " **添加**"，然后单击 " **新建项目** " 或 " **新建项**"。
+创建向导后，通常需要将其添加到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境中 (IDE) ，以便其他人可以使用它。 添加的向导随后会出现在 "**添加新的 Project** 或"**添加新项**"对话框中。 若要查看 "**添加新 Project** 或"**添加新项**"对话框，请在 **解决方案资源管理器** 中右键单击打开的解决方案，指向"**添加**"，然后单击"**新建 "Project** 或"**新建项**"。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]当用户打开 "**添加新项目**" 对话框或 "**添加新项**" 对话框，或在 **解决方案资源管理器** 中右键单击某项时，可以在中实现，以允许用户从可用值的树视图中进行选择。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]当用户打开 "**添加新 Project** " 对话框或 "**添加新项**" 对话框，或右键单击 **解决方案资源管理器** 中的项时，可以在中实现以允许用户从可用值的树视图中进行选择。
 
  在向导中，您可以提供对新项目或 ites 的名称进行本地化的选项，并且可以确定用户在选择该向导时将看到的图标。 您还可以控制新项相对于其他可用项的显示顺序;不需要按字母顺序对项进行组织。
 
  你还可以根据在打开时传递到向导的自定义参数，提供以不同方式启动的向导。
 
- 本节中的主题讨论您实现的用于使 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **添加新项目** " 和 " **添加新项** " 对话框在可用向导和模板之间列出向导的文件，以及您的向导在 IDE 中正确运行时必须满足的要求。
+ 本节中的主题讨论了为了使 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **添加新 Project** " 和 "**添加新项**" 对话框在可用向导和模板之间列出向导而实现的文件，以及向导在 IDE 中正确运行所必须满足的要求。
 
 ## <a name="in-this-section"></a>本节内容
 - [模板目录说明 (.Vsdir) 文件](../../extensibility/internals/template-directory-description-dot-vsdir-files.md)

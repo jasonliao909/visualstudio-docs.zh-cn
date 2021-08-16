@@ -1,6 +1,6 @@
 ---
 title: 源代码管理 VSPackage 体系结构 |Microsoft Docs
-description: 了解源代码管理包的体系结构，它是一个 VSPackage，它提供 Visual Studio 的功能作为源代码管理服务。
+description: 了解源代码管理包的体系结构，它是一个 VSPackage，它提供 Visual Studio 为源代码管理服务的功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 453125fc-23dc-49b1-8476-94581f05e6c7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4e9f19506c58f65f80900c08fe339c7478144546
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02507ef3044e89948b9f852c25f662cb3ad330cd0c94d5fbe3985ff295e28d36
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064223"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432134"
 ---
 # <a name="source-control-vspackage-architecture"></a>源代码管理 VSPackage 体系结构
 源代码管理包是使用 IDE 提供的服务的 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 在返回时，源代码管理包将其功能作为源代码管理服务提供。 此外，源代码管理包的替代方法比用于将源代码管理集成到的源代码管理插件更通用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

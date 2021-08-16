@@ -9,14 +9,15 @@ ms.assetid: ced826ae-09a9-4acf-af00-a2343d396bb8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0a3e1bf4fe6a95bd55cf366d1f5b8f56d7ea9c05
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 7a603ace4218acfeb412fc50389c8484cdcdb3a6ce79eacb347e9c8957590a53
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902834"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432938"
 ---
 # <a name="task_state_faulted-field"></a>TASK_STATE_FAULTED 字段
 由于未处理异常的原因而完成的任务。

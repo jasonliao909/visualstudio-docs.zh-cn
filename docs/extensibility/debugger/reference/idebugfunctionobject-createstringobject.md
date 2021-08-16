@@ -11,17 +11,18 @@ ms.assetid: fd6070ab-07d4-4ea1-8d71-b16592d6f1a7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 15ad52d990492d7f78f3f8246e786dc0b037e23f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bde58276a04508f3e402a813a1b3414c3f06617868e0e8dc6670f0abfd357cea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072892"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402735"
 ---
 # <a name="idebugfunctionobjectcreatestringobject"></a>IDebugFunctionObject::CreateStringObject
 创建一个字符串对象。

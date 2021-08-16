@@ -12,17 +12,18 @@ ms.assetid: de337e66-294f-4ac9-b21e-71fac7418e36
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69286a7bf50c32aa3aa720deff78ee957f53fc65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b353ff5f219364ef63a36bea9d52323051a4cf62e0beccaf702555b4ec6f8b53
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065653"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433497"
 ---
 # <a name="idebugmodule2getinfo"></a>IDebugModule2::GetInfo
 获取有关此模块的信息。

@@ -11,14 +11,15 @@ ms.assetid: ea03e7e1-28d6-40b7-8097-bbb61d3b7caa
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d6942bb8388afd596221325f86c3934b684af6f9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 60a02bb50d51304cfef1be95ab375e7e0ef4c428e85820f78c2077e8752db508
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080185"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389392"
 ---
 # <a name="ienumdebugboundbreakpoints2"></a>IEnumDebugBoundBreakpoints2
 此接口枚举与挂起断点或断点绑定事件关联的绑定断点。

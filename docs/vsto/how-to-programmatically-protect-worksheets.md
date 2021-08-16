@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 31c0184cbf8f29db6d33d135cf295f8277b55f2e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 154742672786e5aa32ebfe4a5516c658cdc483556d745d6b06e367c57b20123d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827092"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121394389"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以编程方式保护工作表
   Microsoft Office Excel 中的保护功能可帮助防止用户和代码修改工作表中的对象。 默认情况下，开启保护之后，将锁定所有单元格。
@@ -67,12 +68,12 @@ ms.locfileid: "107827092"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet17":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet17":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式取消工作表保护](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [如何：以编程方式保护工作簿](../vsto/how-to-programmatically-protect-workbooks.md)
 - [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [工作表宿主项](../vsto/worksheet-host-item.md)
-- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

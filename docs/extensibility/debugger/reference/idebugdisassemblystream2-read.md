@@ -11,17 +11,18 @@ ms.assetid: 7db5f6bb-73ee-45bc-b187-c1b6aa2dfdd5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bcabd0cc42f013b579ee32deeb33d68cd9d45f5d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: baa00f49844a4cdfa05905610f3e2ff6e6f6c4a1af7f124be5d55eb036606edc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066914"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121402839"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
 从反汇编流中的当前位置开始读取指令。

@@ -11,17 +11,18 @@ ms.assetid: 041ac5aa-0b80-4310-b9ae-b88f8e7e0e5f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e35082faf076bd0242d9dcc34552c31ba159fb08
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 037fabf80a10a9b5af69c8827cf1c39d3b3651b6df8e59bf342d8133120572f1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058373"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433705"
 ---
 # <a name="idebugmethodfieldgetglobalcontainer"></a>IDebugMethodField::GetGlobalContainer
 获取方法的全局容器。

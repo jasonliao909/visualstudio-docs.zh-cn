@@ -1,5 +1,5 @@
 ---
-title: 项目子类型的初始化序列 |Microsoft Docs
+title: Project 子类型的初始化序列 |Microsoft Docs
 description: 了解 Visual Studio 环境中由多个项目子类型聚合的项目系统的初始化顺序。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -10,19 +10,20 @@ ms.assetid: f657f8c3-5e68-4308-9971-e81e3099ba29
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88a8aa39c513ed6317a6b57509810e16a58f192b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1d4624649cb972c78d8c9cd9bfa8bf3a3ef9f984af3ece0f99e1ae354901467a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069538"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388599"
 ---
 # <a name="initialization-sequence-of-project-subtypes"></a>项目子类型的初始化序列
 环境通过调用的基本项目工厂实现来构造项目 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 。 当环境确定项目文件扩展名的项目类型 GUID 列表不为空时，将开始构造项目子类型。 项目文件扩展名和项目 GUID 指定项目是否为 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 项目类型。 例如，.vbproj extension 和 {F184B08F-C81C-45F6-A57F-5ABD9991F28F} 标识 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目。
 
-## <a name="environments-initialization-of-project-subtypes"></a>环境初始化项目子类型
+## <a name="environments-initialization-of-project-subtypes"></a>环境 Project 子类型的初始化
  下面的过程详细说明了由多个项目子类型聚合的项目系统的初始化顺序。
 
 1. 环境调用基本项目的，而 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory.CreateProject%2A> 项目分析其项目文件，而该项目文件发现聚合项目类型 guid 列表不是 `null` 。 项目将直接停止创建其项目。
