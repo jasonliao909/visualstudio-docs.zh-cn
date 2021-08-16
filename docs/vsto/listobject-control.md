@@ -37,7 +37,7 @@ ms.locfileid: "121408144"
  在文档级项目中，可以在设计时或运行时向工作表中添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 在 VSTO 外接程序项目中，只能在运行时向工作表添加 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件。 有关详细信息，请参阅 [如何：将 ListObject 控件添加到工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)。
 
 > [!NOTE]
-> 默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅[向Office添加控件。](../vsto/adding-controls-to-office-documents-at-run-time.md)
+> 默认情况下，工作表关闭时，动态创建的列表对象不作为宿主控件保留在工作表中。 有关详细信息，请参阅[向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="bind-data-to-the-control"></a>将数据绑定到控件
  <xref:Microsoft.Office.Tools.Excel.ListObject> 控件支持简单和复杂数据绑定。 可以在设计时使用 <xref:Microsoft.Office.Tools.Excel.ListObject> 和 <xref:Microsoft.Office.Tools.Excel.ListObject.DataSource%2A> 属性或在运行时使用 <xref:Microsoft.Office.Tools.Excel.ListObject.DataMember%2A> 方法将 <xref:Microsoft.Office.Tools.Excel.ListObject.SetDataBinding%2A> 控件绑定到数据源。
@@ -110,7 +110,7 @@ ms.locfileid: "121408144"
 
 - <xref:Microsoft.Office.Tools.Excel.ListObject.SelectionChange>
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用Excel对象自动执行自动执行](../vsto/automating-excel-by-using-extended-objects.md)
 - [如何：将 ListObject 控件添加到工作表](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)
@@ -120,7 +120,7 @@ ms.locfileid: "121408144"
 - [Office开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
 - [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [在外接程序Excel扩展 Word 文档VSTO工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [文档Office控件](../vsto/controls-on-office-documents.md)
-- [运行时向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [文档上的Office控件](../vsto/controls-on-office-documents.md)
+- [运行时向Office文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [如何：使用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

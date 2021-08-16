@@ -39,7 +39,7 @@ ms.locfileid: "121408079"
 
  有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [使用邮件项](../vsto/working-with-mail-items.md)
 - [使用日历项](../vsto/working-with-calendar-items.md)

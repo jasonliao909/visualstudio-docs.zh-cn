@@ -1,27 +1,28 @@
 ---
 title: “混合最少量规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的 "混合最低规则" 规则集。 请参阅支持公共语言运行时的 c + + 项目规则的说明。
+description: 了解中设置的混合最低规则规则Visual Studio。 请参阅支持公共语言运行时的 C++ 项目的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 54ba61f3d4f82a5db25d0079193955a5569afa8a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16bfe7655eec38e2f5630950b10034f6d4d7a42b71744493f0ff9cd12a936310
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867875"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240713"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 
-Microsoft 混合的最小规则重点介绍支持公共语言运行时的 c + + 项目中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
+Microsoft 混合最低规则侧重于支持公共语言运行时的 C++ 项目中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
 
-在为支持公共语言运行时的 c + + 项目创建的任何自定义规则集中包含此规则集。
+在为支持公共语言运行时的 C++ 项目创建的任何自定义规则集中包括此规则集。
 
 |规则|描述|
 |----------|-----------------|

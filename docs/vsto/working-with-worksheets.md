@@ -50,7 +50,7 @@ ms.locfileid: "121407962"
 
  某些情况下，在 VSTO 外接程序中执行这些任务的方式与在文档级自定义项中执行它们的方式是不同的。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用Excel对象自动执行自动执行](../vsto/automating-excel-by-using-extended-objects.md)
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [使用范围](../vsto/working-with-ranges.md)

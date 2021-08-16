@@ -30,9 +30,9 @@ ms.locfileid: "121408027"
 
 ### <a name="using-the-clearcollectiont-activity-designer"></a>使用 ClearCollection \<T> 活动设计器
 
-   **ClearCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+   **ClearCollection \<T>** 活动设计器可以在"工具箱"的"集合"类别中找到，单击"工具箱"的"工具箱"选项卡即可工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-可以将 **ClearCollection \<T>** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建一个活动，该活动默认为 <xref:System.Activities.Statements.ClearCollection%601> <xref:System.Activities.Activity.DisplayName%2A> Int32<ClearCollection。 \> *(，TypeArgument* 默认为 **Int32**。 TypeArgument 可以在属性 grid.) 可以在 <xref:System.Activities.Activity.DisplayName%2A> **ClearCollection<T \>** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
+可以将 **ClearCollection \<T>** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建默认为 <xref:System.Activities.Statements.ClearCollection%601> <xref:System.Activities.Activity.DisplayName%2A> ClearCollection<Int32 的活动 \> 。 *(，TypeArgument* 默认为 **Int32**。 TypeArgument 可以在属性 grid 中更改。) 可以在 <xref:System.Activities.Activity.DisplayName%2A> **ClearCollection<T \>** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑该值。 其他属性必须在属性网格上编辑。
 
 ### <a name="the-clearcollectiont-properties"></a>ClearCollection \<T> 属性
 
@@ -44,7 +44,7 @@ ms.locfileid: "121408027"
 |<xref:System.Activities.Statements.ClearCollection%601.Collection%2A>|正确|指定要清除其中项的集合。 此集合的类型为 **ICollection \<TypeArgument> 。** 若要指定集合，请在属性网格中键入 Visual Basic 表达式。|
 |*TypeArgument*|正确|指定包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请更改属性网格中组合框中 *TypeArgument* 的值。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
