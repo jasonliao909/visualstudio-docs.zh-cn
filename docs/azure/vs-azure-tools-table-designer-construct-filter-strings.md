@@ -3,16 +3,17 @@ title: 为表设计器构造筛选字符串 | Microsoft Docs
 description: 为表设计器构造筛选字符串
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
-ms.openlocfilehash: cdfcacf38239e896687a236624bb167573f4bd1f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dca9e8b4cd1a1fd90d67837368ca9d9530fea85c2509c12a5ab9e7d31336f86
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846200"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121282639"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>为表设计器构造筛选字符串
 ## <a name="overview"></a>概述
@@ -25,13 +26,13 @@ WCF 数据服务基于[开放数据协议](https://www.odata.org/) (OData)。 �
 
 | 逻辑运算符 | 说明 | 示例筛选器字符串 |
 | --- | --- | --- |
-| eq |Equal |City eq 'Redmond' |
+| eq |等于 |City eq 'Redmond' |
 | gt |大于 |Price gt 20 |
-| ge |大于或等于 |Price ge 10 |
+| ge |大于等于 |Price ge 10 |
 | lt |小于 |Price lt 20 |
 | le |小于或等于 |Price le 100 |
 | ne |不等于 |City ne 'London' |
-| and |And |Price le 200 and Price gt 3.5 |
+| 和 |且 |Price le 200 and Price gt 3.5 |
 | 或 |或 |Price le 3.5 or Price gt 200 |
 | not |Not |not isAvailable |
 

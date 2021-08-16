@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 76714be09c38f6426626e94ee7734873c823f704
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9e06655db17b3a84fa0d037762c602a45517bdde5f59cfb865a27cfd29d89a5f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389769"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121288732"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 

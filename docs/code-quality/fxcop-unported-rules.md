@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 71c3dd4e30b30c2e71e11ec8159aa805306f0e4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 345edfd27db70e9581951428b0a76067256e0afe5021e91e8cd336d278c1c6f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860264"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121240908"
 ---
 # <a name="unported-rules"></a>已取消移植的规则
 
@@ -25,6 +26,6 @@ ms.locfileid: "99860264"
 - 尚未移植但仍 [可移植](fxcop-unported-rules-may-get-ported.md)的规则。
 - 不推荐使用且 [不会移植](fxcop-unported-deprecated-rules.md)的规则。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [移植的规则](fxcop-rule-port-status.md)

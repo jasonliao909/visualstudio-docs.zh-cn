@@ -67,7 +67,7 @@ ms.locfileid: "121408092"
 
 - [演练：使用单选按钮更新工作表中的图表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)显示在 Excel 工作表上使用选项按钮更改图表样式的基础知识。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用 Word 的演练](../vsto/walkthroughs-using-word.md)
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
 - [Office 解决方案演练中的数据](../vsto/data-in-office-solutions-walkthroughs.md)

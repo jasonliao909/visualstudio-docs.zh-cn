@@ -60,5 +60,5 @@ ms.locfileid: "121408118"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet12":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet12":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

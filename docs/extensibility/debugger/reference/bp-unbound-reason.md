@@ -1,5 +1,5 @@
 ---
-description: 提供取消绑定断点的原因。
+description: 给出断点未绑定的原因。
 title: BP_UNBOUND_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 939b6f9c-113b-471d-9f30-b03871af6285
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13f723c6395b8b271d6f097d811c5a31569c5853
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ddf18bf8a9ce0e31e3ff692f202b9c274854f10ad7f69c0bc4b5edffc92c1fb4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067694"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239303"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-提供取消绑定断点的原因。
+给出断点未绑定的原因。
 
 ## <a name="syntax"></a>语法
 
@@ -55,20 +56,20 @@ public enum enum_BP_UNBOUND_REASON {
 包含断点的代码已卸载。
 
 `BPUR_BREAKPOINT_REBIND`\
-断点已重新绑定到另一个位置。 当断点移动时，或者当断点绑定到的文件的路径不再有效时，可能会发生这种情况。
+断点已重新出现到其他位置。 当断点移动或断点绑定到具有不再有效的路径的文件时，在"编辑并继续"操作后可能会发生这种情况。
 
 `BPUR_ BREAKPOINT_ERROR`\
-确定断点在绑定后出错。 这适用于其条件不再有效的托管断点。
+断点在绑定后被确定为出错。 这种情况发生在其条件不再有效的托管断点上。
 
 ## <a name="remarks"></a>备注
-由 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 方法返回。
+由 [GetReason 方法](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 返回。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

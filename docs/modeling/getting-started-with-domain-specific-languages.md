@@ -1,24 +1,25 @@
 ---
 title: 域特定语言入门
-description: 了解定义和使用特定于域的语言的基本概念 (DSL) SDK for Visual Studio。
+description: 了解使用适用于 Visual Studio 的建模 SDK (DSL) 定义和使用特定于域的语言的基本概念。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ae488056986afbe35763be1eebb500ff0eab9a8
-ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
+ms.openlocfilehash: 3b0fbfd10c7fc50e73f212b2204e70481f85ee1d4f6bf4cfd42ef46537b5e3ea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112602259"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121288875"
 ---
 # <a name="get-started-with-domain-specific-languages"></a>域特定语言入门
 
-本主题介绍使用适用于 Visual Studio 的建模 SDK (DSL) 定义和使用特定于域的语言的Visual Studio。
+本主题介绍定义和使用特定于域的语言的基本概念 (DSL) 为 Visual Studio。
 
 > [!NOTE]
 > 安装文本模板转换 SDK 和Visual Studio建模 SDK 时，会自动安装文本模板Visual Studio。 有关更多详细信息，请参阅[这篇博客文章](https://devblogs.microsoft.com/devops/the-visual-studio-modeling-sdk-is-now-available-with-visual-studio-2017/)。
@@ -29,13 +30,13 @@ ms.locfileid: "112602259"
 
 特定于域的语言是一种表示法，通常是图形的，旨在用于特定目的。 相比之下，UML 等语言是通用语言。 在 DSL 中，可以定义模型元素的类型及其关系，以及如何在屏幕上显示它们。
 
-设计 DSL 后，可以将其分发为 VSIX Visual Studio包 (集成扩展) 一部分。 用户在以下服务中处理 DSL Visual Studio：
+设计 DSL 后，可以将它作为 VSIX Visual Studio集成扩展包 (分发) 包。 用户通过以下方法使用 DSL Visual Studio：
 
 ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
 
 表示法只是 DSL 的一部分。 VSIX 包与表示法一起包含一些工具，用户可以应用这些工具来帮助他们编辑和生成模型中的材料。
 
-DSL 的主要应用程序之一是生成程序代码、配置文件和其他项目。 尤其是在大型项目和产品系列中（将创建产品的多个变体）中，从 DSL 生成许多可变方面可以明显提高可靠性，并迅速响应需求变化。
+DSL 的主要应用程序之一是生成程序代码、配置文件和其他项目。 尤其是在将创建产品的多个变体的大型项目和产品系列中，从 DSL 生成许多可变方面可以明显提高可靠性，并迅速响应需求变化。
 
 本概述的其余部分是一个演练，其中介绍了在 Visual Studio 中创建和使用域特定语言的基本操作。
 
@@ -53,11 +54,11 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
 ## <a name="create-a-dsl-solution"></a>创建 DSL 解决方案
 
-若要创建新的域特定语言，可以使用 Visual Studio 语言项目模板创建新的 Domain-Specific 解决方案。
+若要创建新的特定于域的语言，可以使用 Visual Studio 语言项目模板创建新的 Domain-Specific 解决方案。
 
-1. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
+1. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
 
-2. 在 **"项目类型**"下，展开 **"其他项目类型"节点**，然后单击"**扩展性"。**
+2. 在 **Project类型"** 下，展开"其他Project **类型"** 节点，然后单击"**扩展性"。**
 
 3. 单击 **"特定于域的语言设计器"。**
 
@@ -77,7 +78,7 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
     - 选择一个扩展，该扩展不与计算机或要安装 DSL 的任何计算机的任何应用程序相关联。 例如 **，docx** 和 **htm** 是不允许的文件扩展名。
 
-    - 如果你输入的扩展名已用作 DSL，则该向导将向你发出警告。 请考虑使用不同的文件扩展名。 还可以重置 Visual Studio SDK 实验实例以清除旧的实验设计器。 单击 **"开始**"，**单击"** 所有程序 **"，Microsoft Visual Studio 2010 SDK** **、"工具**"，然后单击"重置 Microsoft Visual Studio **2010 试验实例"。**
+    - 如果你输入的扩展名已用作 DSL，则该向导将向你发出警告。 请考虑使用不同的文件扩展名。 还可以重置 Visual Studio SDK 实验实例以清除旧的实验设计器。 单击 **"开始**"，**单击"** 所有程序 **"，Microsoft Visual Studio 2010 SDK** **、"工具**"，然后重置 Microsoft Visual Studio **2010 试验实例**。
 
 7. 检查其他页面，然后单击"完成 **"。**
 
@@ -96,11 +97,11 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
 请注意新解决方案的以下方面：
 
-- **Dsl\DslDefinition.dsl** 这是创建 DSL 解决方案时看到的文件。 解决方案中几乎所有代码都是从此文件生成的，对 DSL 定义进行大多数更改都在此处进行。 有关详细信息，请参阅使用 DSL [定义关系图](../modeling/working-with-the-dsl-definition-diagram.md)。
+- **Dsl\DslDefinition.dsl** 这是创建 DSL 解决方案时看到的文件。 解决方案中的几乎所有代码都是从此文件生成的，对 DSL 定义进行大多数更改都在此处进行。 有关详细信息，请参阅使用 DSL [定义关系图](../modeling/working-with-the-dsl-definition-diagram.md)。
 
 - **Dsl 项目** 此项目包含定义域特定语言的代码。
 
-- **DslPackage 项目** 此项目包含的代码允许 DSL 实例在 Visual Studio 中打开和编辑。
+- **DslPackage 项目** 此项目包含允许 DSL 实例在 Visual Studio 中打开和编辑的代码。
 
 ## <a name="running-the-dsl"></a><a name="Debugging"></a> 运行 DSL
 
@@ -115,9 +116,9 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
 2. 按“F5” ，或在“调试”  菜单上，单击“开始调试” 。
 
-     DSL 生成并安装在 Visual Studio 的试验实例中。
+     DSL 生成并安装在 Visual Studio 试验实例中。
 
-     启动 的实验Visual Studio实例。 实验实例从注册表的单独子树中采用其设置，Visual Studio注册这些扩展以用于调试。 普通实例Visual Studio无法访问其中注册的扩展。
+     启动 的实验Visual Studio实例。 实验实例从注册表的单独子树中采用其设置，其中Visual Studio注册了用于调试目的的扩展。 普通实例Visual Studio无法访问其中注册的扩展。
 
 3. 在 Visual Studio 的实验实例中，从 解决方案资源管理器 打开名为 **Test** **的模型文件**。
 
@@ -147,136 +148,136 @@ DSL 的主要应用程序之一是生成程序代码、配置文件和其他项�
 
 DSL 定义可以指定模型在关系图上的显示方式。 可以从各种样式的形状和连接器中选择。 可以指定某些形状显示在其他形状内。
 
-编辑模型时，可以在资源管理器视图中将模型作为树进行查看。 向关系图添加形状时，模型元素也会显示在资源管理器中。 即使没有关系图，也可使用资源管理器。
+编辑模型时，可以在资源管理器视图中将模型作为树进行查看。 向关系图添加形状时，模型元素也会显示在资源管理器中。 即使没有关系图，也可以使用资源管理器。
 
-如果在调试实例中看不到资源管理器Visual Studio，请在"视图"菜单上指向"其他 **Windows"，** 然后单击"资源管理器 *\<Your Language>* **"。**
+如果在 Visual Studio 的调试实例中看不到 "资源管理器"，请在 "**视图**" 菜单上指向 **其他 Windows**，然后单击 " *\<Your Language>* **资源管理器**"。
 
 ### <a name="the-api-of-your-dsl"></a>DSL 的 API
 
-DSL 会生成一个 API，用于读取和更新作为 DSL 实例的模型。 API 的一个应用程序是从模型生成文本文件。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
+DSL 生成一个 API，该 API 允许你读取和更新作为 DSL 实例的模型。 API 的一个应用是从模型生成文本文件。 有关详细信息，请参阅[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
-在调试解决方案中，打开扩展名为".tt"的模板文件。 这些示例演示如何从模型生成文本，并允许测试 DSL 的 API。 其中一个示例用 编写 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] ，另一个在 中 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 编写。
+在调试解决方案中，打开扩展名为 "tt" 的模板文件。 这些示例演示如何从模型生成文本，并允许你测试 DSL 的 API。 其中一个示例是用编写 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 的，另一个在中 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
-在每个模板文件下是它生成的文件。 展开模板文件解决方案资源管理器，然后打开生成的文件。
+在每个模板文件下，都是它生成的文件。 展开解决方案资源管理器中的模板文件，然后打开生成的文件。
 
-模板文件包含一段短段代码，其中列出了模型的所有元素。
+模板文件包含一小段代码，其中列出了模型中的所有元素。
 
 生成的文件包含结果。
 
-更改模型文件时，重新生成文件后，将在生成的文件中看到相应的更改。
+更改模型文件时，在重新生成文件后，将在生成的文件中看到相应的更改。
 
-#### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>更改模型文件后重新生成文本文件
+#### <a name="to-regenerate-text-files-after-you-change-the-model-file"></a>更改模型文件之后重新生成文本文件
 
-1. 在 Visual Studio 实例中，保存模型文件。
+1. 在 Visual Studio 的实验实例中，保存模型文件。
 
-2. 确保每个 .tt 文件的文件名参数引用用于试验的模型文件。 保存 .tt 文件。
+2. 请确保每个 tt 文件中的文件名参数是指用于试验的模型文件。 保存 tt 文件。
 
-3. 在 **的工具栏中单击** "转换所有 **模板** 解决方案资源管理器" 。
+3. 单击 "**解决方案资源管理器** 的工具栏中的"**转换所有模板**"。
 
      \- 或 -
 
-     右键单击要重新生成的模板，然后单击"**运行自定义工具"。**
+     右键单击要重新生成的模板，然后单击 " **运行自定义工具**"。
 
-可以将任意数目的文本模板文件添加到项目。 每个模板都会生成一个结果文件。
+可以将任意数量的文本模板文件添加到项目。 每个模板生成一个结果文件。
 
 > [!NOTE]
-> 更改 DSL 定义时，示例文本模板代码将不起作用，除非更新它。
+> 更改 DSL 定义时，示例文本模板代码将不起作用，除非对其进行更新。
 
-有关详细信息，请参阅从语言 [生成代码Domain-Specific编写](../modeling/generating-code-from-a-domain-specific-language.md) 代码以自定义Domain-Specific [语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
+有关详细信息，请参阅 [从 Domain-Specific 语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md) 和 [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)。
 
 ## <a name="customizing-the-dsl"></a>自定义 DSL
 
-若要修改 DSL 定义，请关闭实验实例，并更新主实例Visual Studio定义。
+如果要修改 DSL 定义，请关闭实验实例，并在主 Visual Studio 实例中更新定义。
 
 > [!NOTE]
-> 修改 DSL 定义后，可能会丢失使用早期版本创建的测试模型中的信息。  例如，调试解决方案包含名为 Sample 的文件，其中包含一些形状和连接器。 开始开发 DSL 定义后，它们将不可见，并且将在保存文件时丢失。
+> 修改 DSL 定义后，你可能会丢失使用早期版本创建的测试模型中的信息。  例如，调试解决方案包含名为 Sample 的文件，其中包含某些形状和连接线。 开始开发 DSL 定义后，它们将不会显示，并且在保存文件时它们将丢失。
 
-你可以对 DSL 进行各种扩展。 以下示例将让你对可能性有一个印象。
+你可以向 DSL 提供各种扩展。 下面的示例将为你介绍可能的外观。
 
-每次更改后，保存 DSL 定义，单击 解决方案资源管理器 **中的** "转换所有 **模板"，然后** 按 **F5** 试验更改后的 DSL。
+每次更改后，保存 DSL 定义，单击 "转换 **解决方案资源管理器** 中的 **所有模板**"，然后按 **F5** 试验已更改的 DSL。
 
 ### <a name="rename-the-types-and-tools"></a>重命名类型和工具
 
-重命名现有域类和关系。 例如，从从最小语言模板创建的 Dsl 定义开始，可以执行以下重命名操作，使 DSL 表示系列树。
+重命名现有域类和关系。 例如，从最小语言模板创建的 Dsl 定义开始，可以执行以下重命名操作，使 DSL 表示系列树。
 
 #### <a name="to-rename-domain-classes-relationships-and-tools"></a>重命名域类、关系和工具
 
-1. 在 DslDefinition 关系图中，将 **ExampleModel** 重命名为 **FamilyTreeModel，** 将 **ExampleElement** 重命名为 **Person，** 将 **目标** 重命名为 **"父** 对象"，将"**源"** 重命名为 **"子级"。** 可以单击每个标签来更改它。
+1. 在 Dsldefinition.dsl 关系图中，将 **位于 examplemodel.store** 重命名为 **FamilyTreeModel**，将重 **命名为** **Person**，将 **目标** 更改为 **父级**，将 **源** 更改为 **子级**。 您可以单击每个标签以对其进行更改。
 
-     ![DSL 定义关系图&#45;系列树模型](../modeling/media/familyt_person.png)
+     ![DSL 定义关系图 &#45; 系列树模型](../modeling/media/familyt_person.png)
 
 2. 重命名元素和连接器工具。
 
-    1. 通过单击"DSL 资源管理器"窗口下的选项卡解决方案资源管理器。 如果看不到它，请在"视图"菜单上指向"其他 **窗口"，** 然后单击 **"DSL 资源管理器"。** DSL 资源管理器仅在 DSL 定义关系图为活动窗口时可见。
+    1. 单击 "解决方案资源管理器" 下的选项卡，打开 "DSL 资源管理器" 窗口。 如果看不到该节点，请在 "**视图**" 菜单上指向 "**其他 Windows** "，然后单击 " **DSL 资源管理器**"。 仅当 DSL 定义关系图为活动窗口时，DSL 资源管理器才可见。
 
-    2. 打开属性窗口并定位它，以便你可以同时看到 DSL 资源管理器和属性。
+    2. 打开属性窗口并将其放置在一起，以便你可以同时看到 DSL 资源管理器和属性。
 
-    3. 在 DSL 资源管理器中，展开"**编辑器"、"****工具箱"选项卡** *\<your DSL>* 、，然后展开"**工具"。**
+    3. 在 DSL 资源管理器中，展开 " **编辑器**"， **工具箱选项卡**，，然后按 *\<your DSL>* **工具**。
 
-    4. 单击 **"示例""删除"。** 这是用于创建元素的工具箱项。
+    4. 单击 " **ExampleElement**"。 这是用于创建元素的工具箱项。
 
-    5. 在"属性窗口"中，将 **"名称"** 属性更改为 **"人员"。**
+    5. 在属性窗口中，将 " **名称** " 属性更改为 **Person**。
 
-         请注意 **，Caption** 属性也会更改。
+         请注意， **Caption** 属性还会更改。
 
-    6. 同样，将 **ExampleConnector** 工具的名称更改为 **ParentLink**。 更改 **Caption** 属性，以便它不是 Name 属性的副本。 例如，输入"**父链接"。**
+    6. 同样，将 **ExampleConnector** 工具的名称更改为 **ParentLink**。 更改 **Caption** 属性，使其不是 Name 属性的副本。 例如，输入 **父链接**。
 
 3. 重新生成 DSL。
 
     1. 保存 DSL 定义文件。
 
-    2. 单击 **模板工具栏中的** "转换所有模板解决方案资源管理器
+    2. 单击工具栏中的 " **转换所有模板** " 解决方案资源管理器
 
-    3. 按 F5。 请等待，直到显示 Visual Studio实例。
+    3. 按 F5。 等待，直到出现 Visual Studio 的实验实例。
 
-4. 在 Visual Studio 实验实例的调试解决方案中，打开测试模型文件。 将元素从工具箱拖动到该工具箱上。 请注意，DSL 资源管理器中的工具标题和类型名称已更改。
+4. 在 Visual Studio 的实验实例的调试解决方案中，打开测试模型文件。 将元素从 "工具箱" 拖动到该元素上。 请注意，DSL 资源管理器中的工具标题和类型名称已更改。
 
 5. 保存模型文件。
 
-6. 打开 .tt 文件，将旧类型和属性名称的出现替换为新名称。
+6. 打开一个 tt 文件，并将出现的旧类型和属性名称替换为新名称。
 
-7. 请确保 .tt 文件中指定的文件名指定测试模型。
+7. 请确保在 tt 文件中指定的文件名指定测试模型。
 
-8. 保存 .tt 文件。 打开生成的 文件，查看在 .tt 文件中运行代码的结果。 验证是否正确。
+8. 保存 tt 文件。 打开生成的文件以查看在 tt 文件中运行代码的结果。 验证它是否正确。
 
-### <a name="add-domain-properties-to-classes"></a>将域属性添加到类
- 向域类添加属性，例如，表示某人的出生日期和出生年数。
+### <a name="add-domain-properties-to-classes"></a>向类中添加域属性
+ 将属性添加到域类，例如表示用户的出生年份和死亡。
 
- 若要使新属性在关系图上可见，必须将 *修饰* 器添加到显示模型元素的形状。 还必须将属性映射到修饰器。
+ 若要使新属性在关系图上可见，则必须将 *修饰器* 添加到显示模型元素的形状。 还必须将属性映射到修饰器。
 
-##### <a name="to-add-properties-and-display-them"></a>添加和显示属性
+##### <a name="to-add-properties-and-display-them"></a>添加并显示属性
 
 1. 添加属性。
 
-   1. 在 DSL 定义关系图中，右键单击 **Person** 域类，指向"**添加**"，然后单击"**域属性"。**
+   1. 在 DSL 定义关系图中，右键单击 **Person** 域类，指向 " **添加**"，然后单击 " **域属性**"。
 
-   2. 键入新属性名称的列表，例如 **"出生"** 和"**死"。** 在每个 **键后按 Enter。**
+   2. 键入新属性名称的列表，如 " **出生** " 和 " **死亡**"。 在每个之后按 **enter** 。
 
-2. 添加修饰器，用于显示形状中的属性。
+2. 添加将在形状中显示属性的修饰器。
 
-   1. 遵循从 Person 域类扩展到关系图另一侧的灰色线。 这是关系图元素映射。 它将域类链接到形状类。
+   1. 将从 Person 域类延伸到关系图的另一侧的灰色行跟随。 这是一个关系图元素映射。 它将域类链接到一个 shape 类。
 
-   2. 右键单击此形状类，指向"**添加"，** 然后单击"**文本修饰器"。**
+   2. 右键单击此 shape 类，指向 " **添加**"，然后单击 " **文本修饰** 器"。
 
-   3. 添加两个名称为 的修饰器，如 **BirthDecorator** 和 **BirthDecorator**。
+   3. 添加两个名称为的修饰器，例如 **BirthDecorator** 和 **DeathDecorator**。
 
-   4. 选择每个新的修饰器，然后属性窗口设置 **"位置"** 字段。 这将确定域属性值在形状上的显示位置。 例如，设置 **InnerBottomLeft 和** **InnerBottomRight**。
+   4. 选择每个新的修饰器，然后在 "属性窗口中设置" **位置** "字段。 这会确定域属性值在形状上的显示位置。 例如，设置 " **microsoft.visualstudio.modeling.diagrams.shapedecoratorposition.innerbottomleft** " 和 " **microsoft.visualstudio.modeling.diagrams.shapedecoratorposition.innerbottomright**"。
 
         ![隔离舱形状定义](../modeling/media/familyt_compartment.png)
 
 3. 将修饰器映射到属性。
 
-   1. 打开“DSL 详细信息”窗口。 它通常位于"输出"窗口旁边的选项卡中。 如果看不到它，请在"视图"菜单上指向"其他 **Windows"，** 然后单击 **"DSL 详细信息"。**
+   1. 打开“DSL 详细信息”窗口。 它通常位于 "输出" 窗口旁的选项卡中。 如果看不到该节点，请在 "**视图**" 菜单上，指向 "**其他 Windows**"，然后单击 " **DSL 详细信息**"。
 
-   2. 在 DSL 定义关系图上，单击将 **Person** 域类连接到形状类的行。
+   2. 在 DSL 定义关系图上，单击将 **Person** 域类连接到 shape 类的行。
 
-   3. 在 **DSL 详细信息** 中，在" **修饰器** 映射"选项卡上，单击未映射修饰器上的复选框。 在 **"显示** 属性"中，选择要将其映射到的域属性。 例如，将 **BirthDecorator 映射到** **Birth**。
+   3. 在 " **DSL 详细信息**" 的 "**修饰器地图**" 选项卡上，单击未映射的修饰器上的复选框。 在 " **显示属性**" 中，选择要映射到的域属性。 例如，将 **BirthDecorator** 映射到 **生日**。
 
-4. 保存 DSL，单击"转换所有模板"，然后按 F5。
+4. 保存 DSL，单击 "转换所有模板"，并按 F5。
 
-5. 在示例模型关系图中，验证现在能否单击选择的位置，并键入值。 此外，当你选择"人员" **形状时** ，属性窗口会显示新的属性"出生日期"和"死"。
+5. 在示例模型图中，验证现在是否可以单击所选的位置并在其中键入值。 此外，当你选择 **人员** 形状时，属性窗口会显示新的属性出生和死亡。
 
-6. 在 .tt 文件中，可以添加获取每个人属性的代码。
+6. 在 tt 文件中，可以添加用于获取每个人员的属性的代码。
 
    ![家谱关系图、工具箱和资源管理器](../modeling/media/familyt_instance.png)
 
@@ -311,7 +312,7 @@ DSL 会生成一个 API，用于读取和更新作为 DSL 实例的模型。 API
 
 3. 添加一个形状，用于表示模型关系图上的轮廓。
 
-    1. 将"**几何形状**"从工具箱拖动到关系图中，并重命名它，例如 **"城市""Shape"。**
+    1. 将"**几何形状**"从工具箱拖动到关系图，并将其重命名，例如 **"城市""Shape"。**
 
     2. 在属性窗口中，设置新形状的"外观"字段，例如"填充颜色和几何图形"。
 
@@ -321,9 +322,9 @@ DSL 会生成一个 API，用于读取和更新作为 DSL 实例的模型。 API
 
     1. 单击" **关系图元素地图"** 工具，然后单击"城市"域类，然后单击"市县"形状类。
 
-    2. 在选择了 **地图连接器** 的 **DSL** 详细信息窗口的"修饰器映射"选项卡中，选中"NameDecorator"，将" **显示属性"设置为** "名称"。
+    2. 在 **"DSL 详细信息地图** 窗口的"修饰器"选项卡中，选中"NameDecorator"，将"**显示属性"** 设置为"名称"。
 
-5. 创建一个连接器来显示 Person 和用户之间的关系。
+5. 创建一个连接器，用于显示 Person 和用户之间的关系。
 
     1. 将"连接器"从工具箱拖动到关系图。 重命名它并设置其外观属性。
 
@@ -380,12 +381,12 @@ DSL 会生成一个 API，用于读取和更新作为 DSL 实例的模型。 API
 
     ```
 
-     保存 *.tt 文件时，它将创建一个附属文件，其中包含人员及其居民的列表。 有关详细信息，请参阅从语言 [语言 生成Domain-Specific代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+     保存 *.tt 文件时，它将创建一个附属文件，其中包含人员及其居民的列表。 有关详细信息，请参阅从语言 [语言 Domain-Specific代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ## <a name="validation-and-commands"></a>验证和命令
  可以通过添加验证约束进一步开发此 DSL。 这些约束是你可以定义的方法，用于确保模型的状态正确。 例如，可以定义一个约束，以确保子项的出生日期晚于其父母的出生日期。 如果 DSL 用户尝试保存违反任何约束的模型，验证功能将显示警告。 有关详细信息，请参阅在语言 [中Domain-Specific验证](../modeling/validation-in-a-domain-specific-language.md)。
 
- 还可以定义用户可调用的菜单命令。 命令可以修改模型。 它们还可以与外部资源Visual Studio模型进行交互。 有关详细信息，请参阅 [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 还可以定义用户可调用的菜单命令。 命令可以修改模型。 它们还可以与资源中的其他模型Visual Studio外部资源进行交互。 有关详细信息，请参阅 [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
 ## <a name="deploying-the-dsl"></a>部署 DSL
  若要允许其他用户使用特定于域的语言，请分发 VSIX Visual Studio扩展 (扩展) 文件。 这是在生成 DSL 解决方案时创建的。
@@ -399,17 +400,17 @@ DSL 会生成一个 API，用于读取和更新作为 DSL 实例的模型。 API
 ## <a name="removing-old-experimental-dsls"></a><a name="Reset"></a> 删除旧的实验性 DSL
  如果已创建不再需要的实验性 DSL，则可以通过重置实验性实例Visual Studio删除它们。
 
- 这会从计算机中删除所有实验性 DSL 和其他试验性Visual Studio扩展。 这些扩展已在调试模式下执行。
+ 这会从计算机中删除所有实验性 DSL 和其他试验Visual Studio扩展。 这些扩展已在调试模式下执行。
 
  此过程不会删除通过执行 VSIX Visual Studio完全安装的 DSL 或其他扩展。
 
-#### <a name="to-reset-the-visual-studio-experimental-instance"></a>重置实验Visual Studio实例
+#### <a name="to-reset-the-visual-studio-experimental-instance"></a>重置 Visual Studio 试验实例
 
-1. 单击 **"开始**"，**单击"** 所有程序 **"，Microsoft Visual Studio 2010 SDK** **、"工具**"，然后单击"重置 Microsoft Visual Studio **2010 试验实例"。**
+1. 单击 **"开始**"，**单击"** 所有程序 **"，Microsoft Visual Studio 2010 SDK** **、"工具**"，然后重置 Microsoft Visual Studio **2010 试验实例**。
 
 2. 重新生成任何试验性 DSL 或其他Visual Studio仍然想要使用的试验性扩展。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

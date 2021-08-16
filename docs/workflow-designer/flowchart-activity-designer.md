@@ -32,11 +32,11 @@ ms.locfileid: "121408053"
 
 ### <a name="using-the-flowchart-activity-designer"></a>使用 Flowchart 活动设计器
 
-**可以在"工具箱**"的"流程图"类别中找到流程图活动设计器，单击"工具箱"选项卡即可工作流设计器。  或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+可以在 **"工具箱**"的"流程图"类别中找到"流程图"活动设计器，单击"工具箱"选项卡即可工作流设计器。  或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-可以将 **流程图** 活动设计器从"工具箱"拖动到工作流设计器 图面上，无论活动设计器通常作为根活动还是作为另一个控制流活动的子级放置。 如果将 **流程图** 活动设计器放到空白的 工作流设计器 图面上，它将创建一个 活动，默认情况下，该活动在展开的视图中显示，其中启动执行的启动节点表示 <xref:System.Activities.Statements.Flowchart> 为绿色球。 如果 **流程图活动** 设计器被放入另一个控制流活动，它将自身呈现在最小化视图中，该视图可通过双击流程图活动 **设计器进行扩展** 。 工具箱中的任何 **活动** 都可以直接拖动到 **流程** 图活动设计器上，包括其他控制流活动。
+可以将 **流程图** 活动设计器从"工具箱"拖动到工作流设计器 图面上，无论活动设计器通常作为根活动放置还是作为另一控制流活动的子级放置。 如果将 **流程图** 活动设计器放到空白的 工作流设计器 图面上，它将创建一个 活动，该活动默认在展开的视图中显示，其中启动执行的启动节点表示 <xref:System.Activities.Statements.Flowchart> 为绿色球。 如果 **流程图活动** 设计器被放入另一个控制流活动，它将自身呈现在最小化视图中，该视图可通过双击流程图活动 **设计器进行扩展** 。 工具箱中的任何 **活动** 都可以直接拖动到 **流程** 图活动设计器上，包括其他控制流活动。
 
-将各种活动设计器拖动工作流设计器画布上后，可以将其表示的对象链接在一起以 <xref:System.Activities.Activity> 指定执行顺序。 若要在源活动与目标活动之间创建链接，请将鼠标悬停在源活动的设计器上，此时将在该设计器的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标活动上时该活动周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个活动之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
+将各种活动设计器拖动到工作流设计器画布上后，可以将其表示的对象链接在一起以 <xref:System.Activities.Activity> 指定执行顺序。 若要在源活动与目标活动之间创建链接，请将鼠标悬停在源活动的设计器上，此时将在该设计器的每一侧显示正方形处理框。 单击这些正方形处理框之一并按下鼠标按钮将其拖到当鼠标悬停在目标活动上时该活动周围以类似方式显示的处理框之一。 松开鼠标按钮，此时将在这两个活动之间创建一个链接，表示为从源设计器指向目标设计器的箭头。
 
 ### <a name="flowchart-activity-properties"></a>Flowchart 活动属性
 
@@ -49,7 +49,7 @@ ms.locfileid: "121408053"
 |<xref:System.Activities.Statements.Flowchart.StartNode%2A>|错误|在 <xref:System.Activities.Statements.FlowNode> 启动时执行的 <xref:System.Activities.Statements.Flowchart>。|
 |<xref:System.Activities.Statements.Flowchart.Nodes%2A>|错误|包含 <xref:System.Activities.Statements.FlowNode> 中的 <xref:System.Activities.Statements.Flowchart> 对象的集合。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [流程图](../workflow-designer/flowchart-activity-designers.md)
 - [FlowDecision](../workflow-designer/flowdecision-activity-designer.md)

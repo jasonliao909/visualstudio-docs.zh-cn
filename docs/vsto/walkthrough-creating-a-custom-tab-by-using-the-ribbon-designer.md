@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3886e20d45834f98f36b8d7e48f3b11c9ef7d5dd
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b4099365a1c5709c6b4c74af3eb6eec0a5eb72b2d367527ce9168ce9cc1f51bd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824817"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267359"
 ---
 # <a name="walkthrough-create-a-custom-tab-by-using-the-ribbon-designer"></a>演练：使用功能区设计器创建自定义选项卡
   使用功能区设计器，可以创建自定义选项卡，然后在其中添加和放置控件。
@@ -57,7 +58,7 @@ ms.locfileid: "107824817"
 
 - 创建名为 **MyExcelRibbon** 的 Excel 工作簿项目。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 将在设计器中打开新的工作簿，并将 **MyExcelRibbon** 项目添加到 **解决方案资源管理器**。
+     Visual Studio 在设计器中打开新的工作簿，并将 **MyExcelRibbon** 项目添加到 **解决方案资源管理器** 中。
 
 ## <a name="create-actions-panes"></a><a name="BKMK_CreateActionsPanes"></a> 创建操作窗格
  将两个自定义操作窗格添加到项目。 稍后会将显示和隐藏这些操作窗格的按钮添加到自定义选项卡中。
@@ -134,7 +135,7 @@ ms.locfileid: "107824817"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Ribbon_Custom_Tab/MyRibbon.vb" id="Snippet3":::
 
 ## <a name="test-the-custom-tab"></a>测试自定义选项卡
- 运行该项目时，Excel 将开始，" **我的自定义选项** 卡" 选项卡将显示在功能区上。 选择 "我的 **自定义" 选项卡** 上的按钮以显示和隐藏操作窗格。
+ 运行项目时，Excel 会启动，"我的 **自定义选项** 卡" 选项卡将显示在功能区上。 选择 "我的 **自定义" 选项卡** 上的按钮以显示和隐藏操作窗格。
 
 ### <a name="to-test-the-custom-tab"></a>测试自定义选项卡
 
@@ -159,13 +160,13 @@ ms.locfileid: "107824817"
 
 - 将基于上下文的 UI 添加到任何文档级自定义项。 有关详细信息，请参阅 [操作窗格概述](../vsto/actions-pane-overview.md)。
 
-- 扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅 [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+- 扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
-- [自定义 Outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)
+- [为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)
 - [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [如何：更改功能区上选项卡的位置](../vsto/how-to-change-the-position-of-a-tab-on-the-ribbon.md)
 - [如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)

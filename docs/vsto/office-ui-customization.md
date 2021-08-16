@@ -1,6 +1,6 @@
 ---
-title: Office UI 自定义
-description: 了解如何使用 Visual Studio 中的 Office 开发人员工具，自定义用户界面 (UI) Microsoft Office 应用程序。
+title: OfficeUI 自定义
+description: 了解如何使用 Visual Studio 中的 Office 开发人员工具 (用户界面) Microsoft Office用户界面。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,16 +16,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ed604b1bbbfcd5b217935b541325c121d521e878
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b17d7b79fcdcaf43242c1b619cd2c08f3f576040f67e8f708a75237f194709ab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849809"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121285369"
 ---
-# <a name="office-ui-customization"></a>Office UI 自定义
+# <a name="office-ui-customization"></a>OfficeUI 自定义
   可以使用 Visual Studio 中的 Office 开发人员工具自定义 Microsoft Office 应用程序的用户界面 (UI)。 本主题介绍自定义的 UI 功能，分为以下几个部分：
 
 - [UI 功能的比较](#Comparison)
@@ -36,9 +37,9 @@ ms.locfileid: "99849809"
 
 - [Backstage 视图](#Backstage)
 
-- [Outlook 窗体区域](#FormRegion)
+- [Outlook窗体区域](#FormRegion)
 
-- [文档上的控件](#Controls)
+- [文档控件](#Controls)
 
 - [快捷菜单](#Shortcut)
 
@@ -71,33 +72,33 @@ ms.locfileid: "99849809"
 ## <a name="custom-ribbon-ui"></a><a name="Ribbon"></a> 自定义功能区 UI
  可以自定义功能区 UI，以显示在 Office 中添加到应用程序的功能。 功能区是一种以控件形式整理相关命令（便于查找）的方法。 可以创建你自己的功能区选项卡和组，以便用户能够访问解决方案中提供的功能。 之前通过使用 Microsoft Office System 早期版本中的菜单和工具栏访问的大多数功能，现在都可以通过使用功能区进行访问。
 
- 有关详细信息，请参阅 [功能区概述](../vsto/ribbon-overview.md)。
+ 有关详细信息，请参阅功能 [区概述](../vsto/ribbon-overview.md)。
 
 ## <a name="backstage-view"></a><a name="Backstage"></a> Backstage 视图
- 在 Office 应用程序中，单击 " **文件** " 选项卡将打开 Backstage 视图。 Backstage 视图提供的用户界面可将文件级别任务和操作组合到一起，从而代替可通过 2007 Microsoft Office system 中 Microsoft Office 按钮使用的类似功能。 Backstage 视图可通过使用 XML 完全扩展。
+ 在Office中，单击"**文件"** 选项卡将打开"Backstage"视图。 Backstage 视图提供的用户界面可将文件级别任务和操作组合到一起，从而代替可通过 2007 Microsoft Office system 中 Microsoft Office 按钮使用的类似功能。 Backstage 视图可通过使用 XML 完全扩展。
 
- Visual Studio 不提供用于自定义 Backstage 视图的设计器或 API。 但是，如果将 **功能区 (xml)** 项添加到 Office 项目，则可以向功能区 xml 文件添加 xml 以自定义 Backstage 视图。 有关 **功能区 (XML)** 项的详细信息，请参阅 [功能区 xml](../vsto/ribbon-xml.md)。
+ Visual Studio 不提供用于自定义 Backstage 视图的设计器或 API。 但是，如果将功能 **区 (XML**) 项添加到 Office 项目，可以将 XML 添加到功能区 XML 文件以自定义 Backstage 视图。 有关功能区和 **XML (项) ，** 请参阅 [功能区 XML](../vsto/ribbon-xml.md)。
 
- 有关自定义 Backstage 视图的详细信息，请参阅面向 [开发人员的 office 2010 backstage 视图的简介](/previous-versions/office/developer/office-2010/ee691833(v=office.14)) 和 [为开发人员自定义 office 2010 backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
+ 有关自定义 Backstage 视图的信息，请参阅开发人员的[Office 2010 Backstage](/previous-versions/office/developer/office-2010/ee691833(v=office.14))视图简介和为开发人员自定义[Office 2010 Backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
-## <a name="outlook-form-regions"></a><a name="FormRegion"></a> Outlook 窗体区域
+## <a name="outlook-form-regions"></a><a name="FormRegion"></a>Outlook窗体区域
  使用窗体区域可向标准 Microsoft Office Outlook 窗体添加自定义功能。 你可以使用额外字段或控件创建可扩展任何现有窗体的窗体区域。 如果使用 Visual Studio 中的 Office 开发工具创建新窗体区域，则在窗体区域上仅可使用 Windows 窗体控件。 如果导入在 Outlook 中设计的窗体区域，则仅可使用本机 Outlook 控件。
 
  你可以创建占用 Outlook UI 不同区域的窗体区域。 例如，窗体第一页的底部显示相邻窗体区域，每个相邻窗体区域都可折叠。 还可以添加作为完整窗体页显示的单独窗体区域，并且该区域可以显示在任何现有标准窗体或自定义窗体上。
 
- 有关详细信息，请参阅 [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+ 有关详细信息，请参阅[创建Outlook区域。](../vsto/creating-outlook-form-regions.md)
 
 ## <a name="controls-on-documents"></a><a name="Controls"></a> 文档上的控件
  可以向 Word 文档和 Excel 工作表添加各种控件。 例如，你可能希望向文档添加日期选取器控件，以便用户可以标准格式输入日期，或者在工作表上设置一个按钮，用于将数据发送到数据库。
 
  开发 Excel 或 Word 文档级项目时，可以在设计时使用 Visual Studio 设计器向项目中的文档或工作簿添加控件，或在运行时以编程方式添加控件。 开发 Excel 或 Word VSTO 外接程序项目时，可以在运行时以编程方式向任何打开的文档或工作簿添加控件。
 
- 有关详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md) 和 [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+ 有关详细信息，请参阅[主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)和[Windows 窗体控件 Office 文档概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
 ## <a name="shortcut-menus"></a><a name="Shortcut"></a> 快捷菜单
- 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果向 Office 项目添加 **功能区 (xml)** 项，则可以向功能区 xml 文件添加 XML 以创建快捷菜单。 有关使用 XML 创建快捷菜单的详细信息，请参阅 [如何：将命令添加到快捷菜单](../vsto/how-to-add-commands-to-shortcut-menus.md)。
+ 在文档或应用程序窗口中右键单击时，将出现一个快捷菜单。 可以设置在发生某事件后显示快捷菜单，例如，当用户右键单击文档、工作簿或主机控件时。 可以向快捷菜单添加大量不同的菜单命令或控件。 使用 XML 创建快捷菜单。 如果将 **功能区 (xml)** 项添加到 Office 项目中，则可以向功能区 xml 文件添加 xml 以创建快捷菜单。 有关使用 XML 创建快捷菜单的详细信息，请参阅 [如何：将命令添加到快捷菜单](../vsto/how-to-add-commands-to-shortcut-menus.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [操作窗格概述](../vsto/actions-pane-overview.md)

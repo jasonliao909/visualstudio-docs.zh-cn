@@ -11,17 +11,18 @@ ms.assetid: 478e06a2-07bb-4841-8887-deab0f42ebd0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2dbcc3f967f0569efcfc1287ba2b215760ce0b34
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7172ffbf40642e5a3c9bfe68737f6e5c4f935671682d533e81fc1a77cbeb63cd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076051"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276472"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
 检索源文件中给定位置的代码上下文的列表。
@@ -54,7 +55,7 @@ int EnumCodeContexts(
 ## <a name="remarks"></a>备注
  此方法允许会话调试管理器 (SDM) 或 IDE 将源文件位置映射到代码位置。 如果源生成多个代码块 (例如，c + + 模板) ，则返回多个代码上下文。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)

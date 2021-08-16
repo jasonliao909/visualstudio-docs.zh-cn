@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9c60d66188364ddd18be1d60a92b51ee5d7a9fc8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: af06b402fd9da418c20fb87a573c7a885b04871f7ce661b394d284491acd5e96
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389613"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121288693"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 *修饰* 器是在特定于域的语言 (DSL) 的形状上显示的图标或文本行。 您可以根据模型中属性的状态，使修饰器出现和消失。 例如，在代表人员的形状上，可能会根据人员的性别、子女数等显示不同的图标。
@@ -34,7 +35,7 @@ ms.locfileid: "112389613"
 
 2. 选择 "关系图元素映射"，这是 DSL 定义关系图上的形状类和域类之间的灰色线条。
 
-3. 在 "DSL 详细信息" 窗口的 " **修饰器映射** " 选项卡中，选择一个修饰器。 例如，MaleDecorator。
+3. 在 "DSL 详细信息" 窗口的 "**修饰器地图**" 选项卡中，选择一个修饰器。 例如，MaleDecorator。
 
 4. 检查 " **可见性筛选器** " 框。
 
@@ -68,7 +69,7 @@ ms.locfileid: "112389613"
 
      **类别** = `Boolean`
 
-     有关详细信息，请参阅 [计算的和自定义的存储属性](../modeling/calculated-and-custom-storage-properties.md)。
+     有关详细信息，请参阅[计算存储属性和自定义属性](../modeling/calculated-and-custom-storage-properties.md)。
 
 2. 使新属性控制修饰器的可见性。
 
@@ -105,7 +106,7 @@ ms.locfileid: "112389613"
 
 8. 重新生成并运行解决方案。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)
 - [在图表上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)

@@ -35,6 +35,6 @@ ms.locfileid: "121407990"
 |向表中添加行或列。|[如何：以编程方式将行和列添加到 Word 表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)|
 |向单元格添加文本并设置其格式。|[如何：以编程方式向 Word 表中的单元格添加文本和格式设置](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
 - [Office解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

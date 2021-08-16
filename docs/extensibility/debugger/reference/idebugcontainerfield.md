@@ -11,14 +11,15 @@ ms.assetid: a8bbe061-c382-4fe9-a193-3f7d12216041
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb3a50db80dc2acb075d1c6ec1fe585000468285
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0345582e0429af045f085833be8b41158ca7ac12e3a5b1dda1721ed5b72d270
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077897"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121239043"
 ---
 # <a name="idebugcontainerfield"></a>IDebugContainerField
 此接口表示作为其他符号或类型的容器的符号或类型。
@@ -52,6 +53,6 @@ IDebugContainerField : IDebugField
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

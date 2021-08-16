@@ -46,7 +46,7 @@ ms.locfileid: "121407989"
 |*TypeArgument*|正确|包含在 <xref:System.Collections.Generic.ICollection%601> 中的项的类型 T。 默认情况下，此 *TypeArgument* 类型设置为 **Int32**。 若要更改类型，请在属性网格的组合框中更改 " *TypeArgument* " 的值。|
 |<xref:System.Activities.Activity%601.Result%2A>|错误|一个指示集合中是否存在指定项的值。 若要指定要绑定到结果的变量，请在属性网格中键入 Visual Basic 变量。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [AddToCollection\<T>](../workflow-designer/addtocollection-t-activity-designer.md)
