@@ -45,9 +45,9 @@ ms.locfileid: "121409340"
 |属性|说明|
 |---------------|-----------------|
 |**ProjectId**|必需的 **xs：string** 属性。<br /><br /> 包含要包含的输出的依赖项目的 GUID。 这对应于依赖 **项目文件中 ProjectGuid** 元素。|
-|**ProjectPath**|必需的 **xs：string** 属性。<br /><br /> 包含要包含的输出的依赖项目的相对路径（包括项目文件名）。 此路径相对于包含项目项的 SharePoint 项目的根SharePoint文件夹。|
-|**Target**|可选的 **xs：string** 属性。<br /><br /> 依赖项目输出将部署在 SharePoint服务器（相对于部署根文件夹）的路径。 部署根文件夹由 Type 属性指定的部署 **类型** 确定。<br /><br /> 有关详细信息，请参阅开发解决方案 中的项目SharePoint部署路径和部署SharePoint[属性的说明](../sharepoint/developing-sharepoint-solutions.md)。|
-|**类型**|必需的 **xs：string** 属性。<br /><br /> 要用于依赖项目输出的部署类型。 有关可能值的更多信息，请参阅开发解决方案 中的SharePoint项的部署[SharePoint说明](../sharepoint/developing-sharepoint-solutions.md)。|
+|**ProjectPath**|必需的 **xs：string** 属性。<br /><br /> 包含要包含的输出的依赖项目的相对路径，包括项目文件名。 此路径相对于包含项目项的 SharePoint 项目的根SharePoint文件夹。|
+|**Target**|可选的 **xs：string** 属性。<br /><br /> 依赖项目输出将部署在 SharePoint服务器上（相对于部署根文件夹）的路径。 部署根文件夹由 Type 属性指定的部署 **类型** 确定。<br /><br /> 有关详细信息，请参阅开发解决方案 中的项目SharePoint部署路径和部署SharePoint[属性的说明](../sharepoint/developing-sharepoint-solutions.md)。|
+|**类型**|必需的 **xs：string** 属性。<br /><br /> 要用于依赖项目输出的部署类型。 有关可能值的更多信息，请参阅开发解决方案 中的SharePoint项目项的部署[SharePoint说明](../sharepoint/developing-sharepoint-solutions.md)。|
 
 ### <a name="child-elements"></a>子元素
  无。

@@ -42,7 +42,7 @@ ms.locfileid: "121410952"
 
 默认情况下，设计器资源文件（如图像文件）位于 **Dsl** **项目的 Resources** 文件夹中。
 
-有关详细信息，请参阅 [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的信息，请参阅自定义和扩展Domain-Specific [语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
+有关详细信息，请参阅 [How to Define a Domain-Specific Language](../modeling/how-to-define-a-domain-specific-language.md)。 若要详细了解如何使用这些属性，请参阅自定义和扩展Domain-Specific [语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
 图像形状具有下表中列出的属性。
 
@@ -57,7 +57,7 @@ ms.locfileid: "121410952"
 |文本颜色|用于与此形状关联的文本修饰器的颜色。|黑色|
 |访问修饰符|geometry 形状的访问修饰符 (公共或内部) 。|公共|
 |自定义特性|用于向从此形状生成的源代码类添加属性。|\<none>|
-|生成双派生|如果 `True` 为 ，则基类和分部类 (支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
+|生成双派生|如果 `True` 为 ，则基类和分部 (都支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |具有自定义构造函数|如果 `True` 为 ，将在源代码中提供自定义构造函数。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |继承修饰符|描述从图像形状生成的源代码类的继承类型 (`none` `abstract` 或 `sealed`) 。|无|
 |基础图像形状|此形状的基类。|（无）|
@@ -74,6 +74,6 @@ ms.locfileid: "121410952"
 |帮助关键字|用于索引此元素的 F1 帮助的 关键字。|\<none>|
 |图像|用于此形状的图像文件的路径。|\<none>|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

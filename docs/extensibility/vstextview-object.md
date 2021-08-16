@@ -41,7 +41,7 @@ ms.locfileid: "121413513"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|与文本层交互。|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|从不同的线程对视图执行操作。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [编辑图形](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)

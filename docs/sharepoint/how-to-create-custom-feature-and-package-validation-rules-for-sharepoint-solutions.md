@@ -62,5 +62,5 @@ ms.locfileid: "121409652"
 ## <a name="deploy-the-extension"></a>部署扩展
  若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展SharePoint打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

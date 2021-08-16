@@ -1,6 +1,6 @@
 ---
 title: T4 文本模板编写准则
-description: 如果要在 Visual Studio 中生成程序代码或其他应用程序资源，请参阅常规指南。
+description: 若要在 Visual Studio 中生成程序代码或其他应用程序资源，请参阅常规指南。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -19,7 +19,7 @@ ms.locfileid: "121411030"
 ---
 # <a name="guidelines-for-writing-t4-text-templates"></a>T4 文本模板编写准则
 
-如果要在 Visual Studio 中生成程序代码或其他应用程序资源，则这些常规指南可能会有所帮助。 它们不是固定的规则。
+如果要在 Visual Studio 中生成程序代码或其他应用程序资源，则这些常规指南可能会很有帮助。 它们不是固定的规则。
 
 ## <a name="guidelines-for-design-time-t4-templates"></a>T4 模板 Design-Time 准则
 
@@ -31,7 +31,7 @@ ms.locfileid: "121411030"
 
 对一个或多个源模型中的变量方面进行编码。
 
-模型是每个模板读取的文件或数据库，用于获取要生成的代码的变量部分的特定值。 模型可以是数据库、自己设计的 XML 文件，也可以是特定于域的语言。 通常，一种模型用于在 Visual Studio 项目中生成许多文件。 每个文件都是从单独的模板生成的。
+模型是每个模板读取的文件或数据库，用于获取要生成的代码的变量部分的特定值。 模型可以是数据库、自己设计的 XML 文件，也可以是特定于域的语言。 通常，使用一个模型在 Visual Studio 项目中生成许多文件。 每个文件都是从单独的模板生成的。
 
 可以在一个项目中使用多个模型。 例如，您可以定义一个模型，以便在网页之间导航，并为页面布局定义单独的模型。
 
@@ -49,7 +49,7 @@ ms.locfileid: "121411030"
 
 允许自定义代码：生成分部类。
 
-除生成的代码外，还允许使用自己编写的代码。 代码生成方案不太常见，因为这种情况可能会导致可能出现的所有变体。 因此，您应该会希望添加或重写某些生成的代码。 如果生成的材料是 .net 语言（如 c # 或 Visual Basic），则两个策略特别有用：
+除生成的代码外，还允许使用自己编写的代码。 代码生成方案不太常见，因为这种情况可能会导致可能出现的所有变体。 因此，您应该会希望添加或重写某些生成的代码。 如果生成的材料是 .NET 语言（如 c # 或 Visual Basic），则两个策略特别有用：
 
 - 生成的类应为分部类。 这使您可以将内容添加到生成的代码中。
 
@@ -172,7 +172,7 @@ Team Members:
 
 你还可以将自己的关系图类型设计为域特定语言 (DSL) 。 可从 UML 和 Dsl 生成代码。 有关详细信息，请参阅 [体系结构分析和建模](../modeling/analyze-and-model-your-architecture.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [使用 T4 文本模板的运行时文本生成](../modeling/run-time-text-generation-with-t4-text-templates.md)

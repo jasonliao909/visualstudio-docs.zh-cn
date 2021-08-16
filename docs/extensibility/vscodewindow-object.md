@@ -36,6 +36,6 @@ ms.locfileid: "121413500"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsCodeWindow>|表示包含一个或多个代码 (MDI) 的多个文档接口。|
 |<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane>|填充窗口框架。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [图形编辑](https://www.microsoft.com/download/details.aspx?id=55984)

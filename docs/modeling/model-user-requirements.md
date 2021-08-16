@@ -99,7 +99,7 @@ ms.locfileid: "121410980"
 
 有关如何开发符合服务质量要求的代码，请参阅为 [应用程序的体系结构建模](../modeling/model-your-app-s-architecture.md) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)
 - [应用体系结构建模](../modeling/model-your-app-s-architecture.md)
