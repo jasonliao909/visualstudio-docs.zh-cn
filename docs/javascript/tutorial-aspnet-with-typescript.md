@@ -11,17 +11,21 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-monikerRange: <= vs-2019
-ms.openlocfilehash: 77a6ff52546fe879db74175d100d1be42966fd42
-ms.sourcegitcommit: d5c038792da2c86436750380633ee80c39e4c4ba
+ms.openlocfilehash: 9b8bee5918a85c2a661911ee71dcfd633fce4cb2
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114597017"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094058"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
 在本 Visual Studio 开发 ASP.NET Core 和 TypeScript 教程中，你将创建一个简单的 Web 应用程序，添加一些 TypeScript 代码，然后运行应用。
+
+::: moniker range=">=vs-2022"
+
+从 Visual Studio 2022 开始，请参阅[使用 Angular 在 Visual Studio 中创建 ASP.NET Core 应用](../javascript/tutorial-asp-net-core-with-angular.md)，以使用 Angular 和 TypeScript 创建 ASP.NET Core 应用。
+::: moniker-end
 
 ::: moniker range="vs-2017"
 

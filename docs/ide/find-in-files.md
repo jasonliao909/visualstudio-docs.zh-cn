@@ -2,7 +2,7 @@
 title: 在文件中查找
 description: 了解“在文件中查找”功能，并了解如何使用此功能搜索特定的一组文件。
 ms.custom: SEO-VS-2020
-ms.date: 07/30/2021
+ms.date: 08/02/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.findinfiles
@@ -20,12 +20,12 @@ ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cc6ddc8ce44255d143eb18b4afbefad36300967
-ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
+ms.openlocfilehash: c2f3756b63cc07ed701a36b34a96c581acd9eb38
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2021
-ms.locfileid: "115014850"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094678"
 ---
 # <a name="find-in-files"></a>在文件中查找
 
@@ -97,7 +97,11 @@ ms.locfileid: "115014850"
 
 ## <a name="file-types"></a>文件类型
 
-“文件类型”选项指示要在“查找范围”目录中搜索的文件类型。  选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。 还可以排除文件。 为此，请以“！”字符作为任何路径或文件类型的前缀，以将其从搜索中排除。
+“文件类型”选项指示要在“查找范围”目录中搜索的文件类型。  选择列表中的任意项以输入预配置的搜索字符串，该字符串将查找那些特定类型的文件。
+
+:::image type="content" source="media/find-file-types.png" alt-text="“在文件中查找”对话框“文件类型”部分的屏幕截图。":::
+
+你可以搜索多个文件类型，用分号 (`;`) 进行分隔。 还可以在任意路径或文件类型前面加上感叹号 (`!`) 来排除文件夹和文件。
 
 ### <a name="append-results"></a>附加结果
 
@@ -136,9 +140,7 @@ ms.locfileid: "115014850"
 
 ## <a name="find-options"></a>查找选项
 
-可以展开或折叠“查找选项”部分。 可以选择或清除以下选项：
-
-可以选择或清除以下一个或多个选项：
+可以展开或折叠“查找选项”部分。 可以选择或清除以下一个或多个选项：
 
 **匹配大小写**
 
