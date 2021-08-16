@@ -22,12 +22,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 10f0cd997b9635343837d0e387a6352abf4f60f3
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 1e6adeb4a67272cac90a829069ffc3a65bb7f969
+ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106218056"
+ms.lasthandoff: 08/04/2021
+ms.locfileid: "115094731"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练：在 Visual Studio 中调试并行应用程序（C#、Visual Basic、C++）
 
@@ -254,7 +254,7 @@ ms.locfileid: "106218056"
 
 1. 若要继续执行到命中第二个断点，请在“调试”菜单上单击“继续” 。
 
-     “状态”列以前将所有任务显示为“活动的”，而现在有两个任务处于“已阻止”状态。 任务可能因多种不同原因而被阻止。 在“状态”列中，将鼠标指针悬停在正在等待的任务上可以查看其阻止原因。 例如，在下图中，任务 3 正在等待任务 4。
+     “状态”列以前将所有任务显示为“活动的”，而现在有两个任务处于“已阻止”状态。 任务可能因[多种不同原因](/dotnet/standard/parallel-programming/potential-pitfalls-in-data-and-task-parallelism)而被阻止。 在“状态”列中，将鼠标指针悬停在正在等待的任务上可以查看其阻止原因。 例如，在下图中，任务 3 正在等待任务 4。
 
      ![“任务”窗口中的 2 个正在等待的任务](../debugger/media/pdb_walkthrough_7.png "PDB_Walkthrough_7")
 
