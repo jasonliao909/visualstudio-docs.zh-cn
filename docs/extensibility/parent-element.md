@@ -47,10 +47,10 @@ ms.locfileid: "121414111"
 
 |元素|说明|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向集成开发环境提供的命令的所有元素， (IDE) 。 例如，菜单项、菜单、工具栏和组合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向集成开发环境提供的命令的所有元素 (IDE) 。 例如，菜单项、菜单、工具栏和组合框。|
 |[Buttons 元素](../extensibility/buttons-element.md)|对 [Button 元素元素进行](../extensibility/button-element.md) 分组。|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
 |[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -32,7 +32,7 @@ ms.locfileid: "121414462"
 
  MPF (语言) 的托管包框架完全支持显示 IntelliSense 快速信息工具提示。 你不得不提供要显示的文本并启用快速信息功能。
 
- 通过调用具有 分析原因值 的方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 分析器来获取要显示的文本 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 此原因告知分析器获取类型信息 (或适用于在 对象中指定位置的标识符的) 信息工具提示中显示的任何 <xref:Microsoft.VisualStudio.Package.ParseRequest> 内容。 <xref:Microsoft.VisualStudio.Package.ParseRequest>对象是传递给 方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 的对象。
+ 通过调用具有 分析原因值 的方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 分析器来获取要显示的文本 <xref:Microsoft.VisualStudio.Package.ParseReason> 。 此原因告知分析器获取类型信息 (或适用于在 对象中指定位置的标识符) 快速信息工具提示中显示的任何 <xref:Microsoft.VisualStudio.Package.ParseRequest> 内容。 <xref:Microsoft.VisualStudio.Package.ParseRequest>对象是传递给 方法 <xref:Microsoft.VisualStudio.Package.LanguageService.ParseSource%2A> 的对象。
 
  分析器必须分析对象中所有内容的位置， <xref:Microsoft.VisualStudio.Package.ParseRequest> 以确定所有标识符的类型。 然后，分析器必须在分析请求位置获取标识符。 最后，分析器必须将与该标识符关联的工具提示数据传递给 对象，以便 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 对象可以从 方法返回 <xref:Microsoft.VisualStudio.Package.AuthoringScope.GetDataTipText%2A> 文本。
 

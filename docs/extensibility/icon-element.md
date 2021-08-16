@@ -52,5 +52,5 @@ Icon 标记的 guid 属性是定义的位图的 guid。 `id`属性选择位图�
 |-------------|-----------------|
 |[Buttons 元素](../extensibility/buttons-element.md)||
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

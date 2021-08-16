@@ -50,16 +50,16 @@ public struct TYPE_INFO {
 
 ## <a name="members"></a>成员
  `dwKind`\
- [DwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举中的一个值，该值确定如何解释联合。
+ 一个来自 [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md) 枚举的值，该值确定如何解释联合。
 
  `type.typeMeta`\
- [仅限 c + +]如果为，则包含 [METADATA_TYPE](../../../extensibility/debugger/reference/metadata-type.md) 结构 `dwKind` `TYPE_KIND_METADATA` 。
+ [仅 C++]如果 为 [METADATA_TYPE，](../../../extensibility/debugger/reference/metadata-type.md) 则包含 `dwKind` 一个结构 `TYPE_KIND_METADATA` 。
 
  `type.typePdb`\
- [仅限 c + +]如果为，则包含 [PDB_TYPE](../../../extensibility/debugger/reference/pdb-type.md) 结构 `dwKind` `TYPE_KIND_PDB` 。
+ [仅 C++]如果 为 [PDB_TYPE，](../../../extensibility/debugger/reference/pdb-type.md) 则包含 `dwKind` 一个结构 `TYPE_KIND_PDB` 。
 
  `type.typeBuilt`\
- [仅限 c + +]如果为，则包含 [BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md) 结构 `dwKind` `TYPE_KIND_BUILT` 。
+ [仅 C++]如果 为 [BUILT_TYPE，](../../../extensibility/debugger/reference/built-type.md) 则包含 `dwKind` 一个结构 `TYPE_KIND_BUILT` 。
 
  `type.unused`\
  未使用的填充。
@@ -68,15 +68,15 @@ public struct TYPE_INFO {
  联合的名称。
 
  `unionmember`\
- [仅限 c #]基于将此封送到适当的结构类型 `dwKind` 。
+ [仅 C# ]基于 将此方法封送到适当的结构类型 `dwKind` 。
 
 ## <a name="remarks"></a>备注
- 此结构被传递给 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 方法，其中填充了此结构。 如何解释结构的内容基于 `dwKind` 字段。
+ 此结构将传递给 [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md) 方法，该方法用于填充它。 如何解释结构的内容取决于 `dwKind` 字段。
 
 > [!NOTE]
-> [仅限 c + +]如果 `dwKind` 等于 `TYPE_KIND_BUILT` ，则在销毁结构时需要释放基础 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象 `TYPE_INFO` 。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。
+> [仅 C++]如果 等于 ，则销毁结构时需要释放基础 `dwKind` `TYPE_KIND_BUILT` [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) `TYPE_INFO` 对象。 可以通过调用 `typeInfo.type.typeBuilt.pUnderlyingField->Release()` 来完成此操作。
 
- [仅限 c #]下表显示了如何解释 `unionmember` 每种类型的成员。 该示例演示如何针对一种类型执行此操作。
+ [仅 C# ]下表显示了如何解释 `unionmember` 每种类型的成员。 该示例演示了如何针对某种类型完成此操作。
 
 |`dwKind`|`unionmember` 解释为|
 |--------------|----------------------------------|
@@ -85,7 +85,7 @@ public struct TYPE_INFO {
 |`TYPE_KIND_BUILT`|[BUILT_TYPE](../../../extensibility/debugger/reference/built-type.md)|
 
 ## <a name="example"></a>示例
- 此示例演示如何 `unionmember` `TYPE_INFO` 在 c # 中解释结构的成员。 此示例显示只解释一种类型 (`TYPE_KIND_METADATA`) ，而其他类型则以完全相同的方式解释。
+ 此示例演示如何在 `unionmember` C# 中解释 `TYPE_INFO` 结构的成员。 此示例演示仅解释一个 () `TYPE_KIND_METADATA` 但其他类型以完全相同的方式解释。
 
 ```csharp
 using System;
@@ -109,13 +109,13 @@ namespace MyPackage
 ```
 
 ## <a name="requirements"></a>要求
- 标头： sh。h
+ 标头：sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
 - [GetTypeInfo](../../../extensibility/debugger/reference/idebugfield-gettypeinfo.md)

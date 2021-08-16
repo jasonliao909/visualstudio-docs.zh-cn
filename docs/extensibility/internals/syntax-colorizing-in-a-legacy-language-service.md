@@ -147,7 +147,7 @@ namespace TestLanguagePackage
         }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [旧版语言服务分析器和扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
 - [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

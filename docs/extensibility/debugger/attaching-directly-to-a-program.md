@@ -35,7 +35,7 @@ ms.locfileid: "121403354"
 
    调试包启动调试会话，并传递 ES 列表。 调试会话反过来将此列表以及回调函数传递给所选进程，然后要求进程枚举其正在运行的程序。
 
-   在以编程方式响应用户请求时，调试包会实例化会话调试管理器 (SDM) ，并传递所选 ES 的列表。 调试包连同列表一起向 SDM 传递 [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) 接口。 调试包通过调用 [IDebugProcess2：：Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)将 ES 列表传递给所选进程。 然后，SDM 在端口上调用 [IDebugProcess2：：EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) 以枚举进程中运行的程序。
+   调试包以编程方式响应用户请求，实例化会话调试管理器 (SDM) ，并传递所选 DES 的列表。 调试包连同列表一起向 SDM 传递 [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) 接口。 调试包通过调用 [IDebugProcess2：：Attach](../../extensibility/debugger/reference/idebugprocess2-attach.md)将 ES 列表传递给所选进程。 然后，SDM 在端口上调用 [IDebugProcess2：：EnumPrograms](../../extensibility/debugger/reference/idebugprocess2-enumprograms.md) 以枚举进程中运行的程序。
 
    从此时开始，每个调试引擎都完全按照启动后附加中详述的附加到[](../../extensibility/debugger/attaching-after-a-launch.md)程序，但两个例外。
 
@@ -43,6 +43,6 @@ ms.locfileid: "121403354"
 
    第二个例外是，附加到已运行的程序的 DE 发送的启动事件通常不包括入口点事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [启动后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

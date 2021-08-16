@@ -1,6 +1,6 @@
 ---
 description: 获取此别名的名称。
-title: IDebugAlias：：GetName |Microsoft Docs
+title: IDebugAlias：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,10 +43,10 @@ int GetName(
 
 ## <a name="parameters"></a>参数
 `pbstrName`\
-[out]别名的名称。
+弄别名的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回S_OK;否则，返回错误代码。
+ 如果成功，将返回 S_OK;否则，将返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

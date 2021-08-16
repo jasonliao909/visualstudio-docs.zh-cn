@@ -1,5 +1,5 @@
 ---
-description: 此结构表示一个地址，该地址相对于此指针 (Visual Basic) 中。
+description: 此结构表示一个地址，该地址相对于此指针在 (Me Visual Basic) 。
 title: UNMANAGED_ADDRESS_THIS_RELATIVE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121414930"
 ---
 # <a name="unmanaged_address_this_relative"></a>UNMANAGED_ADDRESS_THIS_RELATIVE
-此结构表示与 `this` Visual Basic) 中 (的指针相关的地址 `Me` 。
+此结构表示一个地址，该地址相对于 (`this` `Me` 中的指针Visual Basic) 。
 
 ## <a name="syntax"></a>语法
 
@@ -47,24 +47,24 @@ public struct UNMANAGED_THIS_RELATIVE {
 
 ## <a name="members"></a>成员
  `dwOffset`\
- 从基位置开始的字节偏移量 (例如，类 vtable) 的开头。
+ 基位置的字节偏移量 (例如，类 vtable) 。
 
  `dwBitOffset`\
- 位与基位置的偏移量 (始终为0，除非引用位域) 。
+ 从基位置偏移的位 (始终为 0，除非引用位字段) 。
 
  `dwBitLength`\
- 表示地址的位数 (始终为0，除非引用位域) 。
+ 表示地址的位数 (始终为 0，除非引用位域) 。
 
 ## <a name="remarks"></a>备注
- 当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+ 当 结构的 字段[设置为](../../../extensibility/debugger/reference/debug-address-union.md)从 ADDRESS_KIND 枚举值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的 `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_UNMANAGED_THIS_RELATIVE` 一) 。 [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>要求
- 标头： sh。h
+ 标头：sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

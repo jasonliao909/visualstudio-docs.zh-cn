@@ -115,7 +115,7 @@ ms.locfileid: "121403914"
 
 7. （可选）将主部署清单 (*publish \\ \<appname>*) 复制到版本部署目录 (*publish\Application Files \\ \<appname> _ \<version>*) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)
 - [ClickOnce 和 Authenticode](../deployment/clickonce-and-authenticode.md)

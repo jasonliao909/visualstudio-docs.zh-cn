@@ -29,11 +29,11 @@ ms.locfileid: "121403341"
 
 1. 调试引擎 (DE) 将 [IDebugBreakpointErrorEvent2](../../extensibility/debugger/reference/idebugbreakpointerrorevent2.md) 发送到会话调试管理器 (SDM) 。
 
-2. SDM 调用 [IDebugBreakpointErrorEvent2：：GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2**) 获取错误断点 `ppErrorBP` 。
+2. SDM 调用 [IDebugBreakpointErrorEvent2：：GetErrorBreakpoint](../../extensibility/debugger/reference/idebugbreakpointerrorevent2-geterrorbreakpoint.md) (IDebugErrorBreakpoint2**) 获取 `ppErrorBP` 错误断点。
 
 3. SDM 调用 [IDebugErrorBreakpoint2：：GetPendingBreakpoint](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getpendingbreakpoint.md) 获取错误断点源自的挂起断点。
 
 4. SDM 调用 [IDebugErrorBreakpoint2：：GetBreakpointResolution](../../extensibility/debugger/reference/idebugerrorbreakpoint2-getbreakpointresolution.md) 获取错误断点无法绑定的原因。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

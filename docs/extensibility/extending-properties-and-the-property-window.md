@@ -1,6 +1,6 @@
 ---
 title: 扩展属性和属性窗口|Microsoft Docs
-description: 了解如何扩展 属性窗口属性，这些属性用于查看和编辑所选对象的设计时属性和事件。
+description: 了解如何扩展 属性窗口 属性，用于查看和编辑所选对象的设计时属性和事件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual

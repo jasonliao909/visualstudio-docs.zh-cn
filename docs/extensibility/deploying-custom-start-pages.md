@@ -1,6 +1,6 @@
 ---
-title: 部署自定义起始页|Microsoft Docs
-description: 了解如何通过使用 VSIX 部署或将文件复制到目标计算机上的正确位置来部署自定义起始页。
+title: 部署自定义起始页 |Microsoft Docs
+description: 了解如何使用 VSIX 部署或通过将文件复制到目标计算机上的正确位置来部署自定义起始页。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,36 +24,36 @@ ms.locfileid: "121414917"
 ---
 # <a name="deploy-custom-start-pages"></a>部署自定义起始页
 
-可以使用 VSIX 部署或将文件复制到目标计算机上的正确位置来部署自定义起始页。
+您可以通过使用 VSIX 部署或通过将文件复制到目标计算机上的正确位置来部署自定义起始页。
 
-## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>使用起始页项目模板进行 VSIX 部署
+## <a name="vsix-deployment-by-using-the-start-page-project-template"></a>使用起始页项目模板的 VSIX 部署
 
-使用起始页项目模板创建起始页，然后生成项目时，Visual Studio创建可分发的 *.vsix* 文件。 在 *.vsix* 文件中打包起始页提供以下部署选项，具体取决于目标受众：
+使用 "起始页" 项目模板创建 "起始页"，然后生成项目时，Visual Studio 会创建一个可分发的 *.vsix* 文件。 打包 *.vsix* 文件中的起始页可以根据你的目标受众，为你提供以下部署选项：
 
-- 可以将 *.vsix* 文件放在网络共享或公共网站上。 当有人打开该文件时，将自动安装起始页。
+- 可以将 *.vsix* 文件放在网络共享或公共网站上。 当某个用户打开该文件时，将自动安装起始页。
 
-- 可以将 *.vsix* 文件上传到 Visual Studio [Marketplace](https://marketplace.visualstudio.com/)网站，以便用户可以使用扩展管理器 **进行安装**。
+- 你可以将 *.vsix* 文件上载到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/)网站，以便用户可以使用 **扩展管理器** 进行安装。
 
-起始页项目模板在起始页Visual Studio创建默认副本，以便修改副本并保留原始副本。
+"起始页" 项目模板创建默认 Visual Studio 起始页的副本，以便您可以修改副本并保留原始副本。
 
-可以使用扩展管理器或从网站下载起始页项目模板来获取该模板。
+您可以使用 **扩展管理器** 或从网站下载 "起始页" 项目模板。
 
-## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>无需使用起始页项目模板即可进行 VSIX 部署
- 成功的 VSIX 部署要求在 VSIX 注册过程和扩展管理器识别的文件夹中 **安装扩展**。 由于起始页项目模板已指定正确的文件夹，因此建议每当要打包 VSIX 部署的扩展时使用它。 但是，如果无法使用模板，可以在不使用的情况下创建 VSIX 部署。
+## <a name="vsix-deployment-without-using-the-start-page-project-template"></a>不使用起始页项目模板的 VSIX 部署
+ 成功的 VSIX 部署需要在由 VSIX 注册过程和 **扩展管理器** 识别的文件夹中安装一个扩展。 由于起始页项目模板已经指定了正确的文件夹，因此，我们建议你在每次需要为 VSIX 部署打包扩展时使用它。 但是，如果你不能使用模板，则可以在不使用模板的情况下创建它。
 
- 若要在不使用起始页项目模板的情况下创建 VSIX 部署，请首先通过以下两种方式之一为起始页创建 *.vsix* 文件：
+ 若要在不使用起始页项目模板的情况下创建 VSIX 部署，请先使用以下两种方法之一创建起始页的 *.vsix* 文件：
 
-- 通过将自定义起始页文件添加到空的 VSIX Project。 有关详细信息，请参阅 [VSIX 项目模板](../extensibility/vsix-project-template.md)。
+- 通过将自定义起始页文件添加到空 VSIX Project。 有关详细信息，请参阅 [VSIX 项目模板](../extensibility/vsix-project-template.md)。
 
-- 通过手动创建 *.vsix* 文件。 若要手动 *创建 .vsix* 文件，请执行：
+- 通过手动创建 *.vsix* 文件。 若要手动创建 *.vsix* 文件：
 
-   1. 创建新 *文件夹中的 extension.vsixmanifest* 文件和 *[Content_Types].xml* 文件。 有关详细信息，请参阅 [VSIX 包剖析](../extensibility/anatomy-of-a-vsix-package.md)。
+   1. 在新文件夹中创建 *source.extension.vsixmanifest* 文件和 *[Content_Types] .xml* 文件。 有关详细信息，请参阅 [VSIX 包的解析](../extensibility/anatomy-of-a-vsix-package.md)。
 
-   2. 在Windows资源管理器中，右键单击包含两个 XML 文件的文件夹，单击"发送到"，然后单击"压缩 (压缩) 文件夹" 。 将生成的 *.zip* 文件重命名为 *Filename.vsix*，其中 Filename 是安装包的可再发行文件的名称。
+   2. 在 Windows 资源管理器中，右键单击包含两个 XML 文件的文件夹，单击 "**发送到**"，然后单击 "压缩 (zipped) 文件夹。 将生成的 *.zip* 文件重命名为 *Filename .Vsix*，其中 filename 是用于安装包的可再发行文件的名称。
 
-若要Visual Studio起始页，VSIX 清单的 必须包含将 属性设置为 `Content Element` 的 `CustomExtension Element` `Type` `"StartPage"` 。 使用 VSIX 部署安装的起始页扩展在"启动选项"页上的"自定义起始页"列表中显示为 **"[已安装扩展]** 扩展 *名"。*
+为了 Visual Studio 识别起始页， `Content Element` VSIX 清单的必须包含一个 `CustomExtension Element` `Type` 将属性设置为的 `"StartPage"` 。 **"启动选项"** 页上的 "**自定义起始页**" 列表中显示了已使用 VSIX 部署安装的起始页 **扩展。** 
 
-如果起始页包包含程序集，则必须添加绑定路径注册，以便它们可在启动Visual Studio可用。 为此，请确保包包含包含以下信息的 *.pkgdef* 文件。
+如果起始页包包含程序集，则必须添加绑定路径注册，使其在 Visual Studio 启动时可用。 为此，请确保你的包包含 *.pkgdef* 文件，其中包含以下信息。
 
 ```
 [$RootKey$\BindingPaths\{Insert a new GUID here}]
@@ -61,44 +61,44 @@ ms.locfileid: "121414917"
 ```
 
 ### <a name="vsix-deployment-for-all-users"></a>所有用户的 VSIX 部署
- 默认情况下，VSIX 包中部署的扩展仅为当前用户安装。 可以通过创建目标计算机部署，为目标计算机的所有All-Users安装。
+ 默认情况下，仅为当前用户安装 VSIX 包中部署的扩展。 可以通过创建 All-Users 部署，为目标计算机的所有用户设置开始页面。
 
-### <a name="to-create-an-all-users-deployment"></a>创建All-Users部署
+### <a name="to-create-an-all-users-deployment"></a>创建 All-Users 部署
 
-1. 在代码 *视图中打开 extension.vsixmanifest* 文件。
+1. 在代码视图中打开 *source.extension.vsixmanifest* 文件。
 
-2. 在 `Identifier` vsix 清单的 元素中，添加值为 `AllUsers` 的元素 `true` 。
+2. 在 `Identifier` vsix 清单的元素中，添加一个 `AllUsers` 值为的元素 `true` 。
 
     ```
     <AllUsers>true</AllUsers>
     ```
 
-     这将导致 vsix 安装程序提示输入管理员权限，然后将文件安装到 *\Common7\IDE\Extensions*。
+     这将导致 vsix 安装程序提示管理员权限，然后将这些文件安装到 *\Common7\IDE\Extensions*。
 
 3. 打开 *.pkgdef* 文件。
 
-4. 通过 *添加以下内容修改 .pkgdef* 以在 HKLM 下设置默认起始页，其中 *MyStartPage.xaml* 是 *包含起始页的 .xaml* 文件的名称。
+4. 通过添加以下项来修改 *.pkgdef* 以设置 HKLM 下的默认起始页，其中 *MyStartPage* 是包含起始页的 *.xaml* 文件的名称。
 
-     [$RootKey$\StartPage\Default]
+     [$RootKey $ \StartPage\Default]
 
-     "Uri"="$PackageFolder$ \\ *MyStartPage.xaml*"
+     "Uri" = "$PackageFolder $ \\ *MyStartPage*"
 
-     这Visual Studio查找新的起始页位置。
+     这会告知 Visual Studio 在新的起始页位置中查找。
 
 ## <a name="file-copy-deployment"></a>文件复制部署
- 不需要创建 *.vsix* 文件来部署自定义起始页。 相反，可以将标记和支持文件直接复制到用户的 <em>\StartPages \* 文件夹中。"启动 *选项"页上</em>* 的"自定义起始页"列表列出了该文件夹中每个 *.xaml* 文件以及路径，例如 *%USERPROFILE%\我的文档\Visual Studio {version}\StartPages \\ {File Name}.xaml 。* 如果起始页包含对私有程序集的引用，则必须复制这些程序集并将其粘贴到 *\PrivateAssemblies \* 文件夹中。
+ 不必创建 *.vsix* 文件来部署自定义起始页。 相反，你可以将标记和支持文件直接复制到用户的 <em>\StartPages \* 文件夹中。"启动选项" 页上的 "*自定义起始页</em>* " 列表中列出了该文件夹中的每个 *.xaml* 文件以及路径，例如 *%USERPROFILE%\My Documents \ Visual Studio {version} \StartPages \\ {file Name} .xaml*。  如果起始页包含对专用程序集的引用，则必须复制这些程序集，并将其粘贴到 * \PrivateAssemblies \* 文件夹中。
 
- 若要分发在未将其打包到 *.vsix* 文件中的情况下创建的起始页，建议使用基本文件复制策略，例如批处理脚本，或允许将文件放入所需目录中的其他任何部署技术。
+ 若要分发已创建的起始页，而不将其打包到 *.vsix* 文件中，我们建议你使用基本的文件复制策略（例如，批处理脚本）或任何其他部署技术，使你能够将这些文件放入所需的目录。
 
 ### <a name="to-manually-install-a-custom-start-page"></a>手动安装自定义起始页
 
-1. 复制包含起始页标记的 *.xaml* 文件以及除程序集外的任何支持文件，并将其粘贴到用户的 *\StartPages \* 文件夹中。
+1. 复制包含起始页标记的 *.xaml* 文件和除程序集之外的任何支持文件，然后将其粘贴到用户的 * \StartPages \* 文件夹中。
 
-2. 如果起始页需要程序集，请复制这些程序集并将其粘贴到 *中。 \\{Visual Studio安装文件夹}\Common7\IDE\PrivateAssemblies \\*。
+2. 如果起始页需要程序集，请将其复制并粘贴到中 *。 \\{Visual Studio 安装文件夹} \Common7\IDE\PrivateAssemblies \\*。
 
-3. 在"**启动选项"页上** 的"自定义起始页"列表中，选择新的起始页。 有关详细信息，请参阅 [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)。
+3. 在 "**启动** 选项" 页面上的 "**自定义起始页**" 列表中，选择新的起始页。 有关详细信息，请参阅 [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义起始页](../ide/customizing-the-start-page-for-visual-studio.md)
 - [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

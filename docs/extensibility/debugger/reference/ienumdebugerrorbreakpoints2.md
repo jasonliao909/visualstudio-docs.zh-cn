@@ -48,7 +48,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|获取枚举器中的错误断点数。|
 
 ## <a name="remarks"></a>备注
- 此接口保存 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 接口的列表，其中每个接口描述了无法绑定的断点以及无法绑定该断点的原因。 Visual Studio `IEnumDebugErrorBreakpoint2` 接口更新 IDE 中显示的断点。
+ 此接口保存 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 接口的列表，其中每个接口描述了无法绑定的断点以及无法绑定该断点的原因。 Visual Studio 接口 `IEnumDebugErrorBreakpoint2` 更新 IDE 中显示的断点。
 
 ## <a name="requirements"></a>要求
  标头：msdbg.h
@@ -57,7 +57,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)
 - [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)
