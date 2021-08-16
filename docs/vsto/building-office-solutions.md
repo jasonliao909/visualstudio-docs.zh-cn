@@ -1,6 +1,6 @@
 ---
 title: 构建 Office 解决方案
-description: 了解生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）之间的差异。
+description: 了解生成和调试 Office 项目之间的差异，以及在 Visual Studio 中生成和调试其他类型的项目（如 Windows 窗体）。
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -26,21 +26,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 31cb28ad2c332d0afea9bef8cbe1c979b58536e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f47b429bdb0ab5275718f45c29c0627cb143efa42e3e275c6d9ff1b82e39cb33
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896719"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121299027"
 ---
 # <a name="build-office-solutions"></a>构建 Office 解决方案
-  通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的一般信息，请参阅 [在 Visual Studio 中编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
+  通常情况下，生成和调试 Office 项目与在 Visual Studio 中生成和调试其他类型的项目（例如 Windows 窗体）相同。 本部分的主题介绍存在的差异。 有关如何生成应用程序的一般信息，请参阅[Visual Studio 中的编译和生成](../ide/compiling-and-building-in-visual-studio.md)。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
-## <a name="project-output-for-office-projects"></a>Office 项目的项目输出
+## <a name="project-output-for-office-projects"></a>Office 项目 Project 输出
  Office 项目的输出位置为 *projectname*\bin\release or *projectname*\bin\debug。 不能生成到部署目录中。
 
 ### <a name="document-level-projects"></a>文档级项目
@@ -50,27 +51,27 @@ ms.locfileid: "99896719"
 
 - 项目程序集以及“复制本地”  属性设置为 **true** 的所有引用的程序集。
 
-- 具有文件扩展名 *.manifest* 的应用程序清单。 有关详细信息，请参阅 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
+- 具有文件扩展名 *.manifest* 的应用程序清单。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
 
-- 具有文件扩展名 *.vsto* 的部署清单。 有关详细信息，请参阅 [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
+- 具有文件扩展名 *.vsto* 的部署清单。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
 
 - 程序数据库 (*PDB*) 文件。
 
 > [!NOTE]
-> 如果将文档级解决方案生成到远程位置（而不生成到本地计算机），请将完全限定路径添加到应用程序信任中心中的“受信任位置”列表。 有关详细信息，请参阅向 [安全 Office 解决方案](../vsto/securing-office-solutions.md)中的文档授予信任的部分。
+> 如果将文档级解决方案生成到远程位置（而不生成到本地计算机），请将完全限定路径添加到应用程序信任中心中的“受信任位置”列表。 有关详细信息，请参阅向[安全 Office 解决方案](../vsto/securing-office-solutions.md)中的文档授予信任一节。
 
 ### <a name="application-level-projects"></a>应用程序级项目
  生成 VSTO 外接程序项目时，项目输出中包含以下各项：
 
 - 项目程序集以及“复制本地”  属性设置为 **true** 的所有引用的程序集。
 
-- 具有文件扩展名 *.manifest* 的应用程序清单。 有关详细信息，请参阅 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
+- 具有文件扩展名 *.manifest* 的应用程序清单。 有关详细信息，请参阅[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)。
 
-- 具有文件扩展名 *.vsto* 的部署清单。 有关详细信息，请参阅 [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
+- 具有文件扩展名 *.vsto* 的部署清单。 有关详细信息，请参阅[Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)。
 
 - 项目程序集的程序数据库 (*PDB*) 文件。
 
-  VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅 [VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
+  VSTO 外接程序项目的生成过程还会在开发计算机上创建加载 VSTO 外接程序所需的一组注册表项。 有关详细信息，请参阅[VSTO 外接程序的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
 
   如果生成包含窗体区域的 Outlook VSTO 外接程序项目，生成过程会向注册表中添加以下附加信息：
 
@@ -88,10 +89,10 @@ ms.locfileid: "99896719"
 
  Office 项目使用证书来验证发布者。 Visual Studio 会自动创建一个临时证书来标识 Office 解决方案，并配置开发计算机以信任该临时证书。
 
- 有关详细信息，请参阅 [保护 Office 解决方案](../vsto/securing-office-solutions.md)。
+ 有关详细信息，请参阅[Secure Office 解决方案](../vsto/securing-office-solutions.md)。
 
 ### <a name="network-projects"></a>网络项目
- 如果程序集或文档位于网络共享位置，则本地（“用户”级别）安全策略更新不足以允许解决方案运行。 要使解决方案运行，管理员必须先在“计算机”级别向网络共享位置上的程序集和文档授予完全信任。 有关如何设置安全策略的详细信息，请参阅 [保护 Office 解决方案的安全](../vsto/securing-office-solutions.md)。
+ 如果程序集或文档位于网络共享位置，则本地（“用户”级别）安全策略更新不足以允许解决方案运行。 要使解决方案运行，管理员必须先在“计算机”级别向网络共享位置上的程序集和文档授予完全信任。 有关如何设置安全策略的详细信息，请参阅[Secure Office 解决方案](../vsto/securing-office-solutions.md)。
 
  对于文档级项目，还必须将文档的完全限定位置添加到 Office 受信任文件夹列表。 有关详细信息，请参阅 [向文档授予信任](../vsto/granting-trust-to-documents.md)。
 
@@ -110,6 +111,6 @@ ms.locfileid: "99896719"
 |Title|说明|
 |-----------|-----------------|
 |[调试 Office 项目](../vsto/debugging-office-projects.md)|存在涉及调试 Office 项目的问题。|
-|[演练：创建您的第一个 Excel 文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|
+|[演练：为 Excel 创建您的第一个文档级自定义项](../vsto/walkthrough-creating-your-first-document-level-customization-for-excel.md)|演示如何创建 Excel 的基本文档级自定义项。|
 |[如何：重新启用已禁用的 VSTO 外接程序](../vsto/how-to-re-enable-a-vsto-add-in-that-has-been-disabled.md)|描述如何重新启用已被硬禁用或软禁用的 VSTO 外接程序。|
 |[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)|提供一些链接，指向与创建 Office 解决方案以及程序集在解决方案中的角色有关的信息。|

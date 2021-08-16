@@ -15,14 +15,15 @@ ms.assetid: 28d094cf-64f5-42b1-bd8a-3697082aab4f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0154816985076373c3ced4981aa714971a9ded29
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b7ca1fb76480738240f2c6a1240e1f243ef534c37fe8f1dd3e9dba4c5b5da10
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949644"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121435317"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;计划 &gt; 元素 (引导程序) 
 `Schedules`元素包含 `Schedule` 元素，这些元素定义应在哪些特定时间运行元素定义的命令 `Command` 。

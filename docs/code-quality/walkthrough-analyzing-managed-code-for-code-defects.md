@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: b9895dc8926f1bb5c7d33e792168ca46297c8196
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e77626c97e24cfb3037bea1e29b09be4567a06c3d4015796f4e2f347baae0811
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859601"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121436690"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>演练：使用静态代码分析查找代码缺陷
 
@@ -27,13 +28,13 @@ ms.locfileid: "99859601"
 
 ## <a name="create-a-class-library"></a>创建类库
 
-1. 打开 Visual Studio，并从类库 **( .NET Framework)** 模板创建一个新项目。
+1. 打开 Visual Studio 并从 **类库 (.NET Framework)** 模板创建一个新项目。
 
 1. 将项目命名为 **CodeAnalysisManagedDemo**。
 
-1. 创建项目后，打开 *Class1.cs* 文件。
+1. 创建项目后，打开 *Class1 .cs* 文件。
 
-1. 将 Class1.cs 中的现有文本替换为以下代码：
+1. 将 Class1 中的现有文本替换为以下代码：
 
    ```csharp
    using System;
@@ -49,21 +50,21 @@ ms.locfileid: "99859601"
    }
    ```
 
-1. 保存 Class1.cs 文件。
+1. 保存 Class1 .cs 文件。
 
 ## <a name="analyze-the-project-for-code-defects"></a>对项目进行代码缺陷分析
 
 1. 在 **解决方案资源管理器** 中选择 "CodeAnalysisManagedDemo" 项目。
 
-2. 在 **“项目”** 菜单上，单击 **“属性”** 。
+2. 在“项目”菜单上，单击“属性”   。
 
    将显示 CodeAnalysisManagedDemo 属性页。
 
-3. 选择 " **代码分析** " 选项卡。
+3. 选择 " **Code Analysis** " 选项卡。
 
 ::: moniker range="vs-2017"
 
-4. 请确保选中 **"生成时启用代码分析"** 。
+4. 请确保已选中 **"启用生成 Code Analysis"** 。
 
 5. 从 " **运行此规则集** " 下拉列表中，选择 " **Microsoft 所有规则**"。
 
@@ -87,15 +88,15 @@ ms.locfileid: "99859601"
 
 1. 在 " **视图** " 菜单上，选择 " **错误列表**"。
 
-    根据所选的开发人员配置文件，可能需要指向 "**视图**" 菜单上的 "**其他窗口**"，然后选择 "**错误列表**"。
+    根据所选的开发人员配置文件，可能需要指向 "**视图**" 菜单上的 "**其他 Windows** ，然后选择"**错误列表**"。
 
 1. 在“解决方案资源管理器”中，选择“显示所有文件”。
 
-1. 展开 "属性" 节点，然后打开 *AssemblyInfo.cs* 文件。
+1. 展开 "属性" 节点，然后打开 " *AssemblyInfo* " 文件。
 
 1. 使用以下提示来更正警告：
 
-   [CA1014：用 CLSCompliantAttribute 标记程序集](/dotnet/fundamentals/code-analysis/quality-rules/ca1014)：将代码添加 `[assembly: CLSCompliant(true)]` 到 AssemblyInfo.cs 文件的末尾。
+   [CA1014：用 CLSCompliantAttribute 标记程序集](/dotnet/fundamentals/code-analysis/quality-rules/ca1014)：将代码添加 `[assembly: CLSCompliant(true)]` 到 AssemblyInfo 文件的末尾。
 
    [CA1032：实现标准异常构造函数](/dotnet/fundamentals/code-analysis/quality-rules/ca1032)：将构造函数添加 `public demo (String s) : base(s) { }` 到类 `demo` 。
 
@@ -117,7 +118,7 @@ ms.locfileid: "99859601"
 
    [CA2210：程序集应具有有效的强名称](../code-quality/ca2210.md)：使用强名称密钥签名 "CodeAnalysisManagedDemo"：
 
-   1. 在 " **项目** " 菜单上，选择 " **CodeAnalysisManagedDemo 属性**"。
+   1. 在 " **Project** " 菜单上，选择 " **CodeAnalysisManagedDemo 属性**"。
 
       项目属性随即出现。
 
@@ -135,7 +136,7 @@ ms.locfileid: "99859601"
 
    1. 在 " **文件** " 菜单上，选择 " **保存选定项**"，然后关闭属性页。
 
-   完成所有更改后，Class1.cs 文件应如下所示：
+   完成所有更改后，Class1 .cs 文件应如下所示：
 
    ```csharp
    using System;

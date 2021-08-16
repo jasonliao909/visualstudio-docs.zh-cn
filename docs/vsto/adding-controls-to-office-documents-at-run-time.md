@@ -1,6 +1,6 @@
 ---
 title: 在运行时将控件添加到 Office 文档
-description: 了解如何在运行时将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿。
+description: 了解如何在运行时将控件添加到 Microsoft Office Word 文档和 Microsoft Office Excel 的工作簿。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -22,14 +22,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 64a4d4dcd2e6115a3b8093a0a9338cb126f49a28
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 2b6f8fdd05bde0714abc90f8c18e6217708deb6313871e41e8600acecf40af10
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825129"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440898"
 ---
 # <a name="add-controls-to-office-documents-at-run-time"></a>在运行时将控件添加到 Office 文档
   可以在运行时向 Microsoft Office Word 文档和 Microsoft Office Excel 工作簿中添加控件。 还可以在运行时删除这些控件。 在运行时添加或删除的控件称为 *动态控件*。
@@ -53,7 +54,7 @@ ms.locfileid: "107825129"
 
 - 在 Word 文档级项目中，使用 <xref:Microsoft.Office.Tools.Word.Document.Controls%2A> 类的 `ThisDocument` 属性。 有关此类的详细信息，请参阅 [文档主机项](../vsto/document-host-item.md)。
 
-- 在 Excel 或 Word 的 VSTO 外接程序项目中，使用在 `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> 运行时生成的或的属性 <xref:Microsoft.Office.Tools.Word.Document> 。 有关在运行时生成这些对象的详细信息，请参阅 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+- 在 Excel 或 Word VSTO 外接程序项目中，使用在 `Controls` <xref:Microsoft.Office.Tools.Excel.Worksheet> 运行时生成的或的属性 <xref:Microsoft.Office.Tools.Word.Document> 。 有关在运行时生成这些对象的详细信息，请参阅在[运行时 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
 ### <a name="add-controls"></a>添加控件
  <xref:Microsoft.Office.Tools.Excel.ControlCollection> 和 <xref:Microsoft.Office.Tools.Word.ControlCollection> 类型包含可用于将宿主控件和公共 Windows 窗体控件添加到文档和工作表中的帮助器方法。 Each method name has the format `Add`*control class*, where *control class* is the class name of the control that you want to add. 例如，若要向文档中添加 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件，请使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddNamedRange%2A> 方法。
@@ -98,15 +99,15 @@ ms.locfileid: "107825129"
 
 有关主机控件的详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
-保存并关闭文档后，动态创建的宿主控件会断开与其事件的连接，并丧失其数据绑定功能。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些宿主控件。 有关详细信息，请参阅 [在 Office 文档中保存动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
+保存并关闭文档后，动态创建的宿主控件会断开与其事件的连接，并丧失其数据绑定功能。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些宿主控件。 有关详细信息，请参阅[在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
 > [!NOTE]
 > 以下宿主控件不具备帮助器方法，因为不能以编程方式将这些控件添加到 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange>、 <xref:Microsoft.Office.Tools.Word.XMLNode>和 <xref:Microsoft.Office.Tools.Word.XMLNodes>文档中。
 
-## <a name="add-windows-forms-controls-to-documents"></a><a name="WindowsForms"></a> 向文档添加 Windows 窗体控件
+## <a name="add-windows-forms-controls-to-documents"></a><a name="WindowsForms"></a>向文档添加 Windows 窗体控件
  当以编程方式向文档中添加 Windows 窗体控件时，必须提供控件的位置和一个可唯一标识该控件的名称。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为每个控件提供帮助器方法。 这些方法将重载，以便可以传递控件位置的范围或具体坐标。
 
- 保存并关闭文档后，会自动从文档中删除所有动态创建的 Windows 窗体控件。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些控件。 如果使用 VSTO 外接程序创建动态 Windows 窗体控件，则控件的 ActiveX 包装会保留在文档中。 有关详细信息，请参阅 [在 Office 文档中保存动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
+ 保存并关闭文档后，会自动从文档中删除所有动态创建的 Windows 窗体控件。 可以向解决方案中添加代码，以在重新打开文档时重新创建这些控件。 如果使用 VSTO 外接程序创建动态 Windows 窗体控件，则控件的 ActiveX 包装将保留在文档中。 有关详细信息，请参阅[在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)。
 
 > [!NOTE]
 > 不能以编程方式向受保护的文档添加 Windows 窗体控件。 如果通过以编程方式取消 Word 文档或 Excel 工作表保护来添加控件，则必须编写额外的代码在关闭文档时删除该控件的 ActiveX 包装。 该控件的 ActiveX 包装不会从受保护的文档中自动删除。
@@ -118,7 +119,7 @@ ms.locfileid: "107825129"
 
 - 对于 Word，使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddControl%2A> 对象的 <xref:Microsoft.Office.Tools.Word.ControlCollection> 方法。
 
-  若要添加控件，请将 <xref:System.Windows.Forms.Control>、控件的位置和可唯一标识控件的名称传递给 `AddControl` 方法。 `AddControl` 方法将返回定义控件与工作表或文档的交互方式的对象。 `AddControl`方法为 <xref:Microsoft.Office.Tools.Excel.ControlSite> Excel) 或 <xref:Microsoft.Office.Tools.Word.ControlSite> (Word) 的对象返回 (。
+  若要添加控件，请将 <xref:System.Windows.Forms.Control>、控件的位置和可唯一标识控件的名称传递给 `AddControl` 方法。 `AddControl` 方法将返回定义控件与工作表或文档的交互方式的对象。 `AddControl`方法返回 <xref:Microsoft.Office.Tools.Excel.ControlSite> Excel) 的 (或 <xref:Microsoft.Office.Tools.Word.ControlSite> Word) 的对象 (。
 
   以下代码示例演示了如何使用 <xref:Microsoft.Office.Tools.Excel.ControlCollection.AddControl%2A> 方法将自定义用户控件动态添加到文档级 Excel 项目的工作表中。 在此示例中，用户控件名为 `UserControl1`， <xref:Microsoft.Office.Interop.Excel.Range> 名为 `range1`。 若要使用此示例，请从项目的 `Sheet`*n* 类中运行。
 
@@ -147,11 +148,11 @@ ms.locfileid: "107825129"
 
 ## <a name="see-also"></a>另请参阅
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
-- [在 Office 文档中保存动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)
+- [在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)
 - [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)
 - [如何：向工作表添加 NamedRange 控件](../vsto/how-to-add-namedrange-controls-to-worksheets.md)
 - [如何：向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
+- [WindowsOffice 文档上的窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)

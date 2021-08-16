@@ -1,6 +1,6 @@
 ---
-title: 获取端口 |Microsoft Docs
-description: 了解 Visual Studio 如何向调试引擎提供一个端口，以便将程序节点注册到端口并满足进程信息的请求。
+title: 获取端口|Microsoft Docs
+description: 了解如何Visual Studio向调试引擎提供一个端口，以向该端口注册程序节点并满足对进程信息的请求。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,29 +11,30 @@ ms.assetid: 745c2337-cfff-4d02-b49c-3ca7c4945c5e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b2d9c58f9a2e58e58fce44cb06827e9039e48c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1fda47e5ea15b1c09a4f08ff050ac15389e129f9408bef90506c64c275d126aa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054863"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342721"
 ---
 # <a name="get-a-port"></a>获取端口
-端口表示到运行进程的计算机的连接。 该计算机可以是本地计算机或远程计算机， (可能运行非基于 Windows 的操作系统;) 的详细信息，请参阅 [端口](../../extensibility/debugger/ports.md) 。
+端口表示与正在运行进程计算机的连接。 该计算机可以是本地计算机或远程计算机 (运行非基于 Windows的操作系统;有关详细信息[，](../../extensibility/debugger/ports.md)请参阅端口) 。
 
-端口由 [IDebugPort2](../../extensibility/debugger/reference/idebugport2.md) 接口表示。 它用于获取有关端口所连接到的计算机上运行的进程的信息。
+端口由 [IDebugPort2 接口](../../extensibility/debugger/reference/idebugport2.md) 表示。 它用于获取有关端口连接到的计算机上运行的进程的信息。
 
-调试引擎需要访问端口才能向端口注册程序节点，并满足进程信息的请求。 例如，如果调试引擎实现了 [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) 接口，则 [GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法的实现可能会要求端口返回必要的进程信息。
+调试引擎需要访问端口才能向端口注册程序节点，并满足对进程信息的请求。 例如，如果调试引擎实现 [IDebugProgramProvider2](../../extensibility/debugger/reference/idebugprogramprovider2.md) 接口， [则 GetProviderProcessData](../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法的实现可能会请求端口返回必要的进程信息。
 
-Visual Studio 向调试引擎提供所需的端口，并从端口供应商那里获取此端口。 如果程序附加到了 (在调试器内或由于引发了异常而引发了异常（这会触发 "实时 [JIT]" 对话框) ），则会为用户提供 (另一名称，供端口供应商) 使用。 否则，如果用户从调试器内启动程序，则项目系统将指定要使用的端口供应商。 在这两种情况下，Visual Studio 将实例化端口提供程序（由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)接口表示），并通过[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)接口调用[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)来请求新端口。 然后，此端口将以一种形式传递到调试引擎。
+Visual Studio向调试引擎提供所需的端口，然后从端口供应商获取此端口。 如果程序从调试器内部附加到 (或由于引发异常（触发实时 [JIT] 对话框) ），则用户可以选择传输 (端口供应商) 使用另一个名称。 否则，如果用户从调试器中启动程序，则项目系统将指定使用的端口供应商。 在任一Visual Studio，实例化由[IDebugPortSupplier2](../../extensibility/debugger/reference/idebugportsupplier2.md)接口表示的端口供应商，并通过使用[IDebugPortRequest2](../../extensibility/debugger/reference/idebugportrequest2.md)接口调用[AddPort](../../extensibility/debugger/reference/idebugportsupplier2-addport.md)来请求新端口。 然后，此端口以一种或另一种形式传递给调试引擎。
 
 ## <a name="example"></a>示例
-此代码段演示如何使用提供给 [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 的端口在 [ResumeProcess](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)中注册程序节点。 为清楚起见，省略了与此概念直接相关的参数。
+此代码片段演示如何使用提供给 [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 的端口在 ResumeProcess 中注册 [程序节点](../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md)。 为清楚起见，省略了与此概念不直接相关的参数。
 
 > [!NOTE]
-> 此示例使用端口启动和恢复进程，并假定在端口上实现了 [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) 接口。 这并不是执行这些任务的唯一方法，也可能不涉及该端口，甚至可能不涉及到将该程序的 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 给它。
+> 此示例使用 端口启动和恢复进程，并假定 [IDebugPortEx2](../../extensibility/debugger/reference/idebugportex2.md) 接口在端口上实现。 这并不是执行这些任务的唯一方法，并且除了向端口提供程序的 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 外，甚至可能不会涉及该端口。
 
 ```cpp
 // This is an IDebugEngineLaunch2 method.

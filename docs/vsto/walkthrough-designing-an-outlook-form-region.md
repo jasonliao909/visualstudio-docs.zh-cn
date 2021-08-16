@@ -12,17 +12,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 80c574799029f3fe8c4769d852886a625ffd93aa
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: a230d5998a71cf9830fec9731aa825a612c9cfb82d779f796c6c108385e33462
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824272"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121267398"
 ---
 # <a name="walkthrough-design-an-outlook-form-region"></a>演练：设计 Outlook 窗体区域
-  自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅 [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+  自定义窗体区域扩展标准或自定义 Microsoft Office Outlook 窗体。 在本演练中，你将设计作为新页出现在联系人项目的检查器窗口中的自定义窗体区域。 通过将地址信息发送到 Windows Live 本地搜索网站，此窗体区域将显示为联系人列出的每个地址的映射。 有关窗体区域的信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -48,23 +49,23 @@ ms.locfileid: "107824272"
 
 - [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)] 或更高版本。
 
-  ![视频链接](../vsto/media/playvideo.gif "链接到视频") 有关本主题的视频版本，请参阅 [视频如何：设计 Outlook 窗体区域](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90))。
+  ![视频链接](../vsto/media/playvideo.gif "链接到视频")有关本主题的视频版本，请参阅[视频操作方法：设计 Outlook 窗体区域](/previous-versions/visualstudio/visual-studio-2008/cc837160(v=vs.90))。
 
-## <a name="create-a-new-outlook-vsto-add-in-project"></a>创建新的 Outlook VSTO 外接程序项目
+## <a name="create-a-new-outlook-vsto-add-in-project"></a>新建 Outlook VSTO 外接程序项目
  首先创建基本的 VSTO 外接程序项目。
 
 ### <a name="to-create-a-new-outlook-vsto-add-in-project"></a>创建新的 Outlook VSTO 外接程序项目
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，创建名为 **MapItAddIn** 的 Outlook VSTO 外接程序项目。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，创建一个名为 **MapItAddIn** 的 Outlook VSTO 外接程序项目。
 
 2. 在 **“新建项目”** 对话框中，选择 **“创建解决方案的目录”**。
 
 3. 将项目保存到任一目录。
 
-     有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>向 Outlook VSTO 外接程序项目添加窗体区域
- Outlook VSTO 外接程序解决方案可包含一个或多个 Outlook 窗体区域项。 使用 " **新建 Outlook 窗体区域** " 向导将窗体区域项添加到项目。
+## <a name="add-a-form-region-to-the-outlook-vsto-add-in-project"></a>将窗体区域添加到 Outlook VSTO 外接程序项目
+ Outlook VSTO 外接程序解决方案可包含一个或多个 Outlook 窗体区域项。 使用 "**新建 Outlook 窗体区域**" 向导将窗体区域项添加到项目。
 
 ### <a name="to-add-a-form-region-to-the-outlook-vsto-add-in-project"></a>向 Outlook VSTO 外接程序项目添加窗体区域
 
@@ -72,7 +73,7 @@ ms.locfileid: "107824272"
 
 2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-3. 在 " **添加新项** " 对话框中，选择 " **Outlook 窗体区域**"，将文件命名为 **Mapit.vb**，然后单击 " **添加**"。
+3. 在 "**添加新项**" 对话框中，选择 " **Outlook 窗体区域**"，将文件命名为 **mapit.vb**，然后单击 "**添加**"。
 
      " **NewOutlook 窗体区域** " 向导将启动。
 
@@ -80,7 +81,7 @@ ms.locfileid: "107824272"
 
 5. 在 " **选择要创建的窗体区域的类型** " 页上，单击 " **独立**"，然后单击 " **下一步**"。
 
-     *单独* 的窗体区域向 Outlook 窗体添加新页。 有关窗体区域类型的详细信息，请参阅 [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
+     *单独* 的窗体区域将向 Outlook 窗体中添加一个新页。 有关窗体区域类型的详细信息，请参阅[创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)。
 
 6. 在 "**提供说明性文本并选择显示首选项**" 页上，在 "**名称**" 框中键入 " **Map** "。
 
@@ -149,7 +150,7 @@ ms.locfileid: "107824272"
 
      Outlook 将打开。
 
-2. 在 Outlook 的 " **主页** " 选项卡上，单击 " **新建项目**"，然后单击 " **联系人**"。
+2. 在 Outlook 的 "**主页**" 选项卡上，单击 "**新建项目**"，然后单击 "**联系人**"。
 
 3. 在 contact 窗体中，键入 **王 Beebe** 作为联系人姓名，然后指定以下三个地址。
 
@@ -163,7 +164,7 @@ ms.locfileid: "107824272"
 
 5. 重新打开 **王 Beebe** contact 项。
 
-    在 Outlook 中，可以通过打开联系人的通讯簿或者在 **搜索人员** 中键入王 Beebe，在 "**查找**" 组中完成此操作。
+    在 Outlook 中，可以通过打开联系人的通讯簿或在 **搜索人员** 中键入王 Beebe 来在 "**查找**" 组中完成此操作。
 
 6. 在项的功能区的 " **显示** " 组中，单击 " **映射** "，以打开映射 it 窗体区域。
 
@@ -172,14 +173,14 @@ ms.locfileid: "107824272"
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何自定义 Outlook 应用程序 UI 的详细信息：
 
-- 若要了解如何自定义 Outlook 项的功能区，请参阅 [自定义 outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
+- 若要了解如何自定义 Outlook 项的功能区，请参阅[自定义 Outlook 的功能区](../vsto/customizing-a-ribbon-for-outlook.md)。
 
 ## <a name="see-also"></a>另请参阅
 - [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [创建 Outlook 窗体区域的准则](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [如何：将窗体区域添加到 Outlook 外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
 - [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
 - [Outlook 窗体区域中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)
-- [如何：防止 Outlook 显示窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [如何：阻止 Outlook 显示窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)

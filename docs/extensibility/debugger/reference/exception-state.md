@@ -11,17 +11,18 @@ ms.assetid: 597f4f4c-9b70-485c-b5dc-3c2e3aecc664
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 297c5de3afd2b5f81444dd29278fc294cd71aa6a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 33c7f939a8f630592890c3c03be662099680e64b87d4179425497ee864a6718c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059439"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121262511"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 指定异常状态。

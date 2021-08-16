@@ -10,14 +10,15 @@ ms.assetid: 800a3403-ba86-41c4-8de1-c4fee9703eb1
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: edf4658743bb719c1c23f93b2d1d3cc33afdbaba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66593b49472a5f4f426b7764bfc0b66128908045432fb63346fdde0b900c52cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847383"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440482"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 
@@ -43,8 +44,8 @@ ms.locfileid: "99847383"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 **互操作**。 尽管显示名称不是必需的，但建议提供一个。|
-|<xref:System.Activities.Statements.Interop.ActivityType%2A>|True|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 **互操作**。 尽管显示名称不是必需的，但建议提供一个。|
+|<xref:System.Activities.Statements.Interop.ActivityType%2A>|正确|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
 
 ## <a name="see-also"></a>另请参阅
 

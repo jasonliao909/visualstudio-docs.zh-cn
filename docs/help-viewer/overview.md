@@ -1,6 +1,6 @@
 ---
 title: 脱机帮助文档
-description: 使用 Microsoft Help Viewer 安装和查看各种产品和技术（如 Visual Studio 和 .NET）的脱机帮助文档。
+description: 使用 Microsoft Help Viewer 安装和查看各种产品和技术（如 Visual Studio 和 .net）的脱机帮助文档。
 ms.date: 11/02/2017
 ms.topic: conceptual
 f1_keywords:
@@ -18,14 +18,15 @@ ms.assetid: 74e41666-2ce8-4ac0-a0e5-3723d1e322c2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 339d424dd0b09404fc135a119606d47cf7570be3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1ad2225e5bf24959502ad559f011efeafd78126882c023bb2a7c8abf64d56c23
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944090"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121304835"
 ---
 # <a name="microsoft-help-viewer"></a>Microsoft Help Viewer
 

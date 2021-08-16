@@ -11,17 +11,18 @@ ms.assetid: 47b48f84-8a96-401f-84df-0baa8a96d26e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f3bc24aa6ae07505f4f1fce16593f11e44e752a9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe9626bfb674ab2938c6209a3e22dcd4aad1f20be9e97f40b55a7066c7f17eb3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066108"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342227"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 设置要为调试符号搜索的一个或哪些路径。

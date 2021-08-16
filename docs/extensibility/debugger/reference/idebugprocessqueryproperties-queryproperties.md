@@ -9,17 +9,18 @@ ms.assetid: 976a9962-b689-45bb-afb6-16b2c5dbc3b8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e2f4d36c911e3b41d86e9cc0480c97979d63897
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 811adc362612bf638eb8be411a36baff01c77406344726fd4528cd80a239f490
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105081381"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276628"
 ---
 # <a name="idebugprocessquerypropertiesqueryproperties"></a>IDebugProcessQueryProperties::QueryProperties
 此方法查询调试进程的指定属性值。

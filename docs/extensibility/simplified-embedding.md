@@ -1,6 +1,6 @@
 ---
 title: 简化的嵌入 |Microsoft Docs
-description: 了解简化嵌入功能，当其文档视图对象为 Visual Studio 的子级时，可以在编辑器中启用此功能。
+description: 了解简化嵌入功能，如果文档视图对象是 Visual Studio 的子级，则可以在编辑器中启用此功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: f1292478-a57d-48ec-8c9e-88a23f04ffe5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: dca3b0c11c916a1fc47e4687bfeeabee35bcdfb4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ea5186872232f3c84ac41567938ea5822915746b37adafffe7263077d3c87b43
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056371"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121260366"
 ---
 # <a name="simplified-embedding"></a>简化的嵌入
 如果在编辑器的文档视图对象的父级为 (即成为) 的子级，则在编辑器中启用简化嵌入， [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowPane> 实现接口以处理其窗口命令。 简化的嵌入编辑器无法承载活动控件。 下图显示了用于创建具有简化嵌入的编辑器的对象。

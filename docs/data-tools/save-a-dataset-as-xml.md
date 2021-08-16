@@ -16,14 +16,15 @@ ms.assetid: 68b8327c-ae05-49ff-b9ba-99183e70b52c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 42974852a3051fd3473b6b23d880eeb38b966b95
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 144412b8e738391e1c0122efaef3dee658010422556541987f09b2ca31881697
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216197"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121346929"
 ---
 # <a name="save-a-dataset-as-xml"></a>将数据集另存为 XML
 
@@ -35,7 +36,7 @@ ms.locfileid: "106216197"
 
 ## <a name="to-save-the-data-in-a-dataset-as-xml-to-a-variable"></a>将数据集中的数据以 XML 形式保存到变量
 
-- <xref:System.Data.DataSet.GetXml%2A> 方法会返回 <xref:System.String>。 声明类型的变量 <xref:System.String> ，并为其分配方法的结果 <xref:System.Data.DataSet.GetXml%2A> 。
+- <xref:System.Data.DataSet.GetXml%2A> 方法返回 <xref:System.String>。 声明类型的变量 <xref:System.String> ，并为其分配方法的结果 <xref:System.Data.DataSet.GetXml%2A> 。
 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet12":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet12":::

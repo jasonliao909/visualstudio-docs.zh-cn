@@ -1,6 +1,6 @@
 ---
 title: 在 XAML 设计器中绑定数据
-description: 了解如何通过使用美工板和属性窗口设置数据绑定属性，在 XAMl 设计器中将数据绑定到控件。
+description: 了解如何通过使用美图板和 XAMl 设计器设置数据绑定属性，将数据绑定到 XAMl 设计器中的属性窗口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,13 @@ dev_langs:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 6bf3bd24b4a232899c64f6c0ecd819b0fe0f83a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: 9b6ad5e0286a6faedf60718fd1533d83cb3a5fcd7fdf2104b89d3bb09e69da91
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961308"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440225"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
@@ -31,7 +32,7 @@ ms.locfileid: "99961308"
 
 1. 将项目命名为“BindingTest”，然后选择“确定”按钮。
 
-1. 打开 **MainWindow.xaml.cs** (或 **mainwindow.xaml**) 文件，并添加以下代码。 在 C# 中，将这段代码添加到 `BindingTest` 命名空间中（在文件中的最后一个右括号之前）。 在 Visual Basic 中，添加新类即可。
+1. 打开 **MainWindow.xaml.cs** (或 **MainWindow.xaml.vb**) 并添加以下代码。 在 C# 中，将这段代码添加到 `BindingTest` 命名空间中（在文件中的最后一个右括号之前）。 在 Visual Basic 中，添加新类即可。
 
    ```csharp
    public class ShoppingCart : DependencyObject
@@ -71,7 +72,7 @@ ms.locfileid: "99961308"
 
 ## <a name="to-bind-the-itemcount-property-to-a-textblock-control"></a>若要将 ItemCount 属性绑定到 TextBlock 控件，请执行以下操作
 
-1. 在解决方案资源管理器中，打开 **mainwindow.xaml** 的快捷菜单，然后选择 " **视图设计器**"。
+1. 在解决方案资源管理器中，打开 **MainWindow.xaml** 的快捷菜单，然后选择 **"视图设计器"。**
 
 1. 在工具箱中，选择[网格](xref:Windows.UI.Xaml.Controls.Grid)控件，并将其添加到窗体。
 
@@ -93,7 +94,7 @@ ms.locfileid: "99961308"
 
      ![“创建数据绑定”对话框](../designers/media/xaml_create_data_binding.png)
 
-1. 按 **F5** 运行应用。
+1. 按 **F5** 运行该应用。
 
      该 `TextBlock` 控件应显示默认值 0 作为文本。
 

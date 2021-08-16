@@ -11,17 +11,18 @@ ms.assetid: c483eaab-db29-46de-bfdb-5c2a9a9cfb68
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddff439aba67248bd2eb706a85c5f91b4bf1628d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ea965c384f3aaa219a1db2c0acedcfa212090fc17ea6ebf479f6ca495f3fadd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085281"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342669"
 ---
 # <a name="bp_error_type"></a>BP_ERROR_TYPE
 指定断点的错误类型。
@@ -87,7 +88,7 @@ public enum enum_BP_ERROR_TYPE {
 指定严重性掩码样式断点错误。
 
 `BPET_GENERAL_WARNING`\
-指定一般警告样式断点错误。
+指定常规警告样式断点错误。
 
 `BPET_GENERAL_ERROR`\
 指定常规错误样式断点错误。
@@ -96,16 +97,16 @@ public enum enum_BP_ERROR_TYPE {
 指定所有断点错误类型。
 
 ## <a name="remarks"></a>备注
-这些值可以与按位与 `OR` `dwType` [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 结构的成员一起使用。 作为参数传递给 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 方法。
+这些值可以与位组合， `OR` 并用于结构BP_ERROR_RESOLUTION_INFO `dwType` 成员。 [](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 作为参数传递给 [EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md) 方法。
 
-断点错误类型由类型和严重性组成。 这意味着断点错误类型永远不只是一种类型 (例如， `BPET_TYPE_ERROR` ) 或严重性 (例如， `BPET_SEV_GENERAL`) 本身。 `BPET_GENERAL_WARNING` 和 `BPET_GENERAL_ERROR` 为常规警告和错误断点提供预定义的值。
+断点错误类型由类型和严重性组成。 这意味着断点错误类型永远不会只是类型 (，例如 ，) 或严重性级别 (`BPET_TYPE_ERROR` 例如，) `BPET_SEV_GENERAL` 本身。 `BPET_GENERAL_WARNING` 和 `BPET_GENERAL_ERROR` 为常规警告和错误断点提供预定义值。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

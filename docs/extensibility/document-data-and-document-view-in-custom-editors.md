@@ -10,14 +10,15 @@ ms.assetid: 71eea623-f566-4feb-84cd-ca1ba71bc493
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 391bec513f1f6d32d7ff2f87d70abdbf491ab8be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7c7d9055d2489f01b711b7d0f0d7e01abde32b28a451dd78a0b9c1c0a07caf5c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091235"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448398"
 ---
 # <a name="document-data-and-document-view-in-custom-editors"></a>自定义编辑器中的文档数据和文档视图
 自定义编辑器由两部分组成：文档数据对象和文档视图对象。 顾名思义，文档数据对象表示要显示的文本数据。 同样，文档视图对象 (或 "视图" ) 表示一个或多个要在其中显示文档数据对象的窗口。
@@ -25,7 +26,7 @@ ms.locfileid: "105091235"
 ## <a name="document-data-object"></a>文档数据对象
  文档数据对象是文本缓冲区中文本的数据表示形式。 它是存储文档文本和其他信息的 COM 对象。 文档数据对象还处理文档持久性，并启用其数据的多个视图。 有关详细信息，请参阅
 
- <xref:EnvDTE80.Window2.DocumentData%2A> 和 [文档窗口](../extensibility/internals/document-windows.md)。
+ <xref:EnvDTE80.Window2.DocumentData%2A>和[文档 Windows](../extensibility/internals/document-windows.md)。
 
  自定义编辑器和设计器可以选择使用该 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 对象或其自己的自定义缓冲区。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer> 遵循标准编辑器的简化嵌入模型，支持多个视图，并提供用于管理多个视图的事件接口。
 

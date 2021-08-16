@@ -15,14 +15,15 @@ ms.assetid: 52b414af-ec80-4d2f-ad14-902543cd268e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6424c2280f3f5eaaedadc6a2f1afebfd1109f1c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fcc52cb4ff95ab1c2899fa74f6cf2f07825ef684f882aadaa72a6aa1e4ccae5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891301"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343425"
 ---
 # <a name="ltproductgt-element-bootstrapper"></a>&lt; (引导程序的产品 &gt; 元素) 
 `Product`元素是产品文件内的顶级 XML 元素。

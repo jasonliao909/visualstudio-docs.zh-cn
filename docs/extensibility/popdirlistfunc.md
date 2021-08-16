@@ -12,17 +12,18 @@ ms.assetid: 0ee90fd2-5467-4154-ab4c-7eb02ac3a14c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c98b35d9f915e16072333c72df2e1e045850f5d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 21ccd6041eb5a6790635975150910bcb31a515aa6f800743ff94be45e36c579f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900390"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447891"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-这是一个回调函数，它向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数提供，用于更新目录和 (（可选) 文件名）以找出哪些目录受源代码管理。
+这是一个回调函数，它向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数提供，用于更新目录的集合 (可以选择) 文件名来找出哪些受源代码管理。
 
  应仅为这些目录和文件名调用回调 (在给定给实际受源代码管理) 函数 `POPDIRLISTFUNC` `SccPopulateDirList` 的列表中。
 
@@ -52,7 +53,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="return-value"></a>返回值
  IDE 返回相应的错误代码：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|继续处理。|
 |SCC_I_OPERATIONCANCELED|停止处理。|

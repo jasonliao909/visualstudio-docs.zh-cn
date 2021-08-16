@@ -1,19 +1,20 @@
 ---
 title: 代码度量-可维护性索引范围和含义
 ms.date: 1/8/2021
-description: 了解 Visual Studio 中的代码度量的可维护性索引范围指标。
+description: 了解 Visual Studio 中代码度量的可维护性索引范围指标。
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: aa825b439b75606da136635d5816ac3e19ea8392
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5149f1620fb371bb13b09566b38001cb35cd4da72871cb404a325c076a1619a1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860459"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121264930"
 ---
 # <a name="code-metrics---maintainability-index-range-and-meaning"></a>代码度量-可维护性索引范围和含义
 

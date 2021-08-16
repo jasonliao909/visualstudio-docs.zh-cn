@@ -12,17 +12,18 @@ ms.assetid: 61cc3704-47fa-4d9b-aa62-bb4585ac8fb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 64e8aed5586dc6e2abf33b540654dcd24437e746
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c2a10b0222e5ef5340b0d16b93d4dfb93289feee98e0de0e61f813febc0d000a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076805"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342175"
 ---
 # <a name="idebugmemorybytes2writeat"></a>IDebugMemoryBytes2::WriteAt
 写入从指定地址开始的指定字节数。

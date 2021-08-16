@@ -16,18 +16,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0910486202bca781ec19b6d5895e68ed93f8c3d5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 460f5ea31913e57dd095f7cbdf6677e24acb3a12a2fa70f80abb0acb67a34f8a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068708"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447800"
 ---
-# <a name="projectitem-element-visual-studio-item-templates"></a>ProjectItem 元素（Visual Studio 项模板）
+# <a name="projectitem-element-visual-studio-item-templates"></a>项目项元素 (Visual Studio 项模板) 
 指定项模板中包含的文件。
 
 > [!NOTE]
-> `ProjectItem`元素根据模板是用于项目还是项来接受不同的属性。 本主题介绍 `ProjectItem` item 的元素。 有关 `ProjectItem` 项目模板元素的说明，请参阅 [ (Visual Studio 项目模板) ](../extensibility/projectitem-element-visual-studio-project-templates.md)的项目项元素。
+> `ProjectItem`元素根据模板是用于项目还是项来接受不同的属性。 本主题介绍 `ProjectItem` item 的元素。 有关 `ProjectItem` 项目模板元素的说明，请参阅[项目模板 (Visual Studio 项目模板) 的项目项元素](../extensibility/projectitem-element-visual-studio-project-templates.md)。
 
  \<VSTemplate> \<TemplateContent>
  \<ProjectItem>

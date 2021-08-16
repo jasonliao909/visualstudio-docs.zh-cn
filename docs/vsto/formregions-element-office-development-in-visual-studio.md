@@ -1,6 +1,6 @@
 ---
-description: Vstov4 命名空间的 s 元素包含与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
-title: '&lt;&gt;Visual Studio 中的 s 元素 (Office 开发) '
+description: vstov4 命名空间的 formRegions 元素包含Microsoft Office Outlook外接程序关联的VSTO区域。
+title: '&lt;formRegions &gt; 元素 (Office开发Visual Studio) '
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7c8fd7e0ced0fadcd945388a9730513b2a591ed0
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e1a4439f5c1dab78ce32c553a4bee98db6fa7da4f072152c3a046ba819222128
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223454"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440859"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 s 元素 (Office 开发) 
-  `formRegions`命名空间的元素 `vstov4` 包含与 VSTO 外接程序关联的 Microsoft Office Outlook 窗体区域。
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions &gt; 元素 (Office开发Visual Studio) 
+  `formRegions`命名空间的 `vstov4` 元素包含Microsoft Office Outlook外接程序关联的窗体VSTO区域。
 
 ## <a name="syntax"></a>语法
 
@@ -46,12 +47,12 @@ ms.locfileid: "102223454"
  `formRegions` 元素具有以下元素。
 
 ### <a name="formregion"></a>formRegion
- 为包含窗体区域的 Outlook VSTO 外接程序所需。 `formRegion` [&#60;n&#62; 元素中定义元素，&#40;Visual Studio 中的 Office 开发&#41;](../vsto/formregion-element-office-development-in-visual-studio.md)。
+ 为包含窗体区域的 Outlook VSTO 外接程序所需。 元素 `formRegion` 在&#60;[formRegion&#62; &#40;Office中Visual Studio&#41;。 ](../vsto/formregion-element-office-development-in-visual-studio.md)
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `formRegions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示应用程序级 Office 解决方案的应用程序清单中的 `formRegions` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -66,8 +67,8 @@ ms.locfileid: "102223454"
 </vstov4:formRegions>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
-- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+- [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
+- [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)

@@ -11,17 +11,18 @@ ms.assetid: e31cdc78-f621-498b-9ca4-aefa790b9f6f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4a34b7160849852da7f1cbe94dae9dc75dc47501
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4db5f1189340e93799fc83bfb9f38e7ac1aa92c5222de6da78e27d2aa487c7cf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086321"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121276160"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 指定引用的比较类型。

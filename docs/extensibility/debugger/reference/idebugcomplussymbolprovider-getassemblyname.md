@@ -10,17 +10,18 @@ ms.assetid: a08cd609-b9b9-47bd-bf73-cbf851285907
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c02eb33c75300d1fc1b88a91c0d4935f554920c2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d89172e7b95dd3dce4c0d124565eb0bb80ec6d231077831067b54619e69386b4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088154"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342435"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
 检索给定模块和应用程序域的程序集的名称。
