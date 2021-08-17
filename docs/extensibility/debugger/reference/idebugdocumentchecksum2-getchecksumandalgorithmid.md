@@ -1,6 +1,6 @@
 ---
-description: 在给定要使用的最大字节数的情况中，检索文档校验和和算法标识符。
-title: IDebugDocumentChecksum2：： GetChecksumAndAlgorithmId |Microsoft Docs
+description: 根据要使用的最大字节数检索文档校验和和算法标识符。
+title: IDebugDocumentChecksum2：：GetChecksumAndAlgorithmId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121433978"
 ---
 # <a name="idebugdocumentchecksum2getchecksumandalgorithmid"></a>IDebugDocumentChecksum2::GetChecksumAndAlgorithmId
-在给定要使用的最大字节数的情况中，检索文档校验和和算法标识符。
+根据要使用的最大字节数检索文档校验和和算法标识符。
 
 ## <a name="syntax"></a>语法
 
@@ -48,22 +48,22 @@ public int GetChecksumAndAlgorithmId(
 
 ## <a name="parameters"></a>参数
 `pRetVal`\
-弄校验和算法的唯一标识符。
+[out]校验和算法的唯一标识符。
 
 `cMaxBytes`\
-中用于校验和的最大字节数。
+[in]要用于校验和的最大字节数。
 
 `pChecksum`\
-弄校验和的值。
+[out]校验和的值。
 
 `pcNumBytes`\
-弄校验和使用的实际字节数。
+[out]校验和使用的实际字节数。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例使用此方法来获取文档的校验和和算法。
+下面的示例使用此方法获取文档的校验和和算法。
 
 ```cpp
 HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorithm, BYTE **ppChecksum, ULONG *pcNumBytes)
@@ -128,5 +128,5 @@ HRESULT CDebugCodeContext::GetDocumentChecksumAndAlgorithmId(GUID *pguidAlgorith
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentChecksum2](../../../extensibility/debugger/reference/idebugdocumentchecksum2.md)

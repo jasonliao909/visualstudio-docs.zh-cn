@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6480b21cc4907e45b174b69418f1d10177f36440597949fd8a1806246016dc27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d6aea0846a8811956bb022975c8efd0fa80a1044
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414150"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041914"
 ---
 # <a name="web-site-support-templates"></a>网站支持模板
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目和项模板提供可重用且可自定义的网站项目和项存根，可通过无需从头开始创建新的网站项目和项来加速开发过程。 有关模板的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，请参阅[创建 Project 和项模板](../../ide/creating-project-and-item-templates.md)。
@@ -152,40 +152,40 @@ ms.locfileid: "121414150"
 
 - Codebehind. *extension*
 
-     实现 webform 类的依赖文件。 代码隐藏语言确定此文件的 *扩展名* 。
+     实现 webform 类的依赖文件。 代码后发语言确定 *此文件* 的扩展名。
 
-- ContentPage .aspx
+- ContentPage.aspx
 
-     作为内容页的网页的起始内容。 此网页没有关联的代码隐藏依赖文件。
+     网页作为内容页的起始内容。 此网页没有关联的代码后发依赖文件。
 
-- ContentPage_cb .aspx
+- ContentPage_cb.aspx
 
-     作为内容页的网页的起始内容。 此网页包含关联的代码隐藏依赖文件。
+     网页作为内容页的起始内容。 此网页具有关联的代码后发依赖文件。
 
-- WebForm
+- WebForm.vstemplate
 
-     确定新网页的内容及其依赖文件（如果有）的模板文件。
+     用于确定新网页的内容及其依赖文件的模板文件（如果有）。
 
-### <a name="new-master-page"></a>新母版页
- 此模板创建一个新的母版页，以响应 " **添加新的母版页** " 命令。
+### <a name="new-master-page"></a>新建母版页
+ 此模板创建新的母版页以响应"添加新 **母版页"** 命令。
 
- 若要创建依赖的代码隐藏源文件，请选择 " **将代码放在单独的文件中**"。 否则，将创建一个具有空脚本块且没有 \<% Page %> 用于挂钩依赖文件的指令的单个网页。
+ 若要创建依赖代码后发源文件，请选择"**将代码放在单独的文件中"。** 否则，将创建一个包含空脚本块且没有用于 \<% Page %> 挂钩依赖文件的指令的网页。
 
-- MasterPage
+- MasterPage.master
 
-     母版页的起始内容。 此母版页没有关联的代码隐藏依赖文件。
+     母版页的起始内容。 此母版页没有关联的代码后发依赖文件。
 
-- MasterPage_cb master
+- MasterPage_cb.master
 
-     母版页的起始内容。 此母版页具有关联的代码隐藏依赖文件。
+     母版页的起始内容。 此母版页具有关联的代码后发依赖文件。
 
-- Codebehind.*扩展*
+- Codebehind。*扩展*
 
-     实现母版页类的依赖文件。 代码隐藏语言确定此文件的 *扩展名* 。
+     实现母版页类的依赖文件。 代码后发语言确定 *此文件* 的扩展名。
 
-- MasterPage
+- MasterPage.vstemplate
 
-     确定新母版页的内容及其依赖文件（如果有）的模板文件。
+     用于确定新母版页的内容及其依赖文件的模板文件（如果有）。
 
 ## <a name="see-also"></a>请参阅
 - [网站支持](../../extensibility/internals/web-site-support.md)

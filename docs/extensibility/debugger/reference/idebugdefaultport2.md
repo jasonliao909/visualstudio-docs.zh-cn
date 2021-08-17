@@ -31,7 +31,7 @@ IDebugDefaultPort2 : IDebugPort2
 ```
 
 ## <a name="notes-for-implementers"></a>实现者说明
- Visual Studio此接口来表示用于访问程序调试端口。 如果自定义端口供应商处理远程调试，它也可以实现此接口。
+ Visual Studio实现此接口来表示用于访问程序调试端口。 如果自定义端口供应商处理远程调试，它也可以实现此接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
  [IDebugProgramProvider2 接口](../../../extensibility/debugger/reference/idebugprogramprovider2.md)上的方法的参数提供此接口。 在[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)也可以获取此接口。
@@ -55,6 +55,6 @@ IDebugDefaultPort2 : IDebugPort2
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

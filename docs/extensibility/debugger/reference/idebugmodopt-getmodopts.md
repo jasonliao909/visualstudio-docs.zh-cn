@@ -1,6 +1,6 @@
 ---
 description: 检索可选修饰符的列表。
-title: IDebugModOpt：： GetModOpts |Microsoft Docs
+title: IDebugModOpt：：GetModOpts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -46,16 +46,16 @@ int GetModOpts(
 
 ## <a name="parameters"></a>参数
 `celt`\
-中要返回的元素的数目。
+[in]要返回的元素数。
 
 `rgelt`\
-弄返回一个包含选项的数组。
+[out]返回包含选项的数组。
 
 `pceltFetched`\
-[in，out]在数组中返回的元素的数目 `rgelt` 。
+[in， out]数组中返回的元素 `rgelt` 数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugModOpt](../../../extensibility/debugger/reference/idebugmodopt.md)

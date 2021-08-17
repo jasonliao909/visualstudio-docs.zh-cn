@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7af2cadaa7747478a1609251d14fe1af6a518a2c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8bc5fcca187603ab4001e38df67eacf0df5b1be80353aa161bc921a3a3fd1b22
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096409"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434004"
 ---
 # <a name="idebugdocument2"></a>IDebugDocument2
 此接口表示源文档。

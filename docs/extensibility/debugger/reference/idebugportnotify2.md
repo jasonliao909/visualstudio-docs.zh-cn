@@ -11,14 +11,15 @@ ms.assetid: 43278b79-bf16-4c08-bcf1-6f7f7a17feab
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a4000426b72472d57b589f26543dd1547f8dc982
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 380592c15a0644fe64ab1e3f68fdd9ab0ec7d9d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072385"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088206"
 ---
 # <a name="idebugportnotify2"></a>IDebugPortNotify2
 此接口可注册或取消注册可使用运行该程序的端口进行调试的程序。
@@ -53,6 +54,6 @@ IDebugPortNotify2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

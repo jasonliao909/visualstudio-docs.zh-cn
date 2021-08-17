@@ -1,6 +1,6 @@
 ---
-description: 通知接收方事件已更新文档属性。
-title: IDebugDocumentTextEvents2：： onUpdateDocumentAttributes |Microsoft Docs
+description: 通知事件接收方文档属性已更新。
+title: IDebugDocumentTextEvents2：：onUpdateDocumentAttributes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121433965"
 ---
 # <a name="idebugdocumenttextevents2onupdatedocumentattributes"></a>IDebugDocumentTextEvents2::onUpdateDocumentAttributes
-通知接收方事件已更新文档属性。
+通知事件接收方文档属性已更新。
 
 ## <a name="syntax"></a>语法
 
@@ -43,11 +43,11 @@ int onUpdateDocumentAttributes(
 
 ## <a name="parameters"></a>参数
 `textdocattr`\
-中 [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) 枚举中的标志的组合，该枚举指定文档的更新特性。
+[in]指定文档的已更新 [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md) 集合中标志的组合。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_DOC_ATTR_2](../../../extensibility/debugger/reference/text-doc-attr-2.md)

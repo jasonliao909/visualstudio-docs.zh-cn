@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dfbd8a47aaf7fa62d4e72842645d1acb709c43f2b11c90893a2867577fb8d459
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7a7e090205c7667877c203f37c0ac1e7a5666424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029432"
 ---
 # <a name="ienumdebugerrorbreakpoints2"></a>IEnumDebugErrorBreakpoints2
 此接口枚举与挂起断点关联的错误断点。
@@ -34,7 +34,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
  调试引擎 (DE) 实现此接口，作为对断点的支持的一部分。
 
 ## <a name="notes-for-callers"></a>调用方说明
- Visual Studio [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)获取表示无法绑定的断点列表的此接口，或调用[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)来获取表示未绑定的断点列表的此接口。
+ Visual Studio [CanBind](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-canbind.md)获取表示无法绑定的断点列表的此接口，或调用[EnumErrorBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumerrorbreakpoints.md)获取表示未绑定的断点列表的此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示了 的方法 `IEnumDebugErrorBreakpoints2` 。
@@ -48,7 +48,7 @@ IEnumDebugErrorBreakpoints2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugerrorbreakpoints2-getcount.md)|获取枚举器中的错误断点数。|
 
 ## <a name="remarks"></a>备注
- 此接口保存 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 接口的列表，其中每个接口描述了无法绑定的断点以及无法绑定该断点的原因。 Visual Studio 接口 `IEnumDebugErrorBreakpoint2` 更新 IDE 中显示的断点。
+ 此接口保存 [IDebugErrorBreakpoint2](../../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 接口的列表，其中每个接口描述了无法绑定的断点以及无法绑定该断点的原因。 Visual Studio `IEnumDebugErrorBreakpoint2` 接口更新 IDE 中显示的断点。
 
 ## <a name="requirements"></a>要求
  标头：msdbg.h

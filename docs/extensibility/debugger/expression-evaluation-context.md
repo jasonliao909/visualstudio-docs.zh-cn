@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 15d22c022f3228643f42e743895d6e9346c200648ba421354a10953430354f4d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4555cf1431b23766085a4174223d3f880d08df45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342812"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089558"
 ---
 # <a name="expression-evaluation-context"></a>表达式计算上下文
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中，表达式 **计算上下文：**
@@ -31,6 +31,6 @@ ms.locfileid: "121342812"
 
      给定 `BSTR` 和 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 接口后，调试引擎 (DE) 可以通过分析表达式来创建 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 接口。 给定 `IDebugExpression2` 接口后，DE 可以通过同步或异步表达式计算获取值。 此值以及变量或参数的名称和类型将发送到 IDE 进行显示。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [表达式计算接口](../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [调试器上下文](../../extensibility/debugger/debugger-contexts.md)

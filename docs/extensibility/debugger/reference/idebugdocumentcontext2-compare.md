@@ -11,17 +11,18 @@ ms.assetid: 2327b1ba-52d0-42fb-a01e-63cb4b332d2f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a680da6f33d3da37995eb26071c0ea5f1ddc2283
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fa10a5dbaf141def906705dfb84dfa2b95f216e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066706"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089246"
 ---
 # <a name="idebugdocumentcontext2compare"></a>IDebugDocumentContext2::Compare
 将此文档上下文与给定的文档上下文数组进行比较。
@@ -65,6 +66,6 @@ int Compare(
 ## <a name="remarks"></a>备注
  在数组中传递的 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象必须由实现在其上调用的对象的相同调试引擎实现 `IDebugDocumentContext2` ; 否则，比较无效。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [DOCCONTEXT_COMPARE](../../../extensibility/debugger/reference/doccontext-compare.md)

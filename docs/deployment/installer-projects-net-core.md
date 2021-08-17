@@ -37,9 +37,9 @@ ms.locfileid: "121418403"
 
 ### <a name="workflow-changes-for-net-core-31"></a>.NET Core 3.1 的工作流更改
 
-1. 选择 **"发布项** "而不是" **主输出** "，获取 .NET Core 3.1 项目的正确输出。  若要打开此对话框，请从Project菜单中选择"添加输出  >  ..."。
+1. 选择 **"发布项** "而不是" **主输出** "，获取 .NET Core 3.1 项目的正确输出。  若要打开此对话框，  >  **请从Project菜单中** 选择"添加输出..."。
 
-    !["添加输出组Project"中的"发布项"输出组](../deployment/media/installer-projects-net-core-publish-items-output.png "选取发布项")
+    !["添加输出组"对话框中Project项输出组](../deployment/media/installer-projects-net-core-publish-items-output.png "选取发布项")
 
 2. 若要创建自包含安装程序，请对安装项目中的"发布项"节点设置 **PublishProfilePath** 属性，使用具有正确属性集的发布配置文件的相对路径。
 
@@ -56,7 +56,7 @@ ms.locfileid: "121418403"
 >[!NOTE]
 >这些项从 2019 Visual Studio 7 版本开始提供。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“系统必备”对话框](../ide/reference/prerequisites-dialog-box.md)
 - [应用程序部署必备](../deployment/application-deployment-prerequisites.md)

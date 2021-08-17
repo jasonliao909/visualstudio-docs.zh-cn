@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3a4b440b5b9fd446eba226431e5dd88e8074591d6bad12815020cb6cba04edd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a218fba88620245c73cf16eb594c91e21db69b3a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042174"
 ---
 # <a name="project-types"></a>项目类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包括多种语言项目类型，如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还允许创建自己的项目类型。
@@ -35,7 +35,7 @@ ms.locfileid: "121401357"
 
 - [将命令添加到解决方案资源管理器工具栏](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- 详细说明向工具栏添加按钮时必须遵循 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **解决方案资源管理器** 步骤。
+ 详细介绍向工具栏添加按钮时必须遵循 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **解决方案资源管理器** 步骤。
 
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 

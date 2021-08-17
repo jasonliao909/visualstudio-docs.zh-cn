@@ -1,6 +1,6 @@
 ---
-title: 源代码管理 |Microsoft Docs
-description: 这些文章介绍了通过插件或 VSPackage 将源代码管理作为 Visual Studio 的集成功能实现的选项。
+title: 源代码管理|Microsoft Docs
+description: 这些文章讨论了通过插件或 VSPackage 将源代码管理实现为 Visual Studio集成功能的选项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,29 +21,29 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121432093"
 ---
 # <a name="source-control"></a>源代码管理
-本部分介绍了 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过源代码管理插件或源代码管理 VSPackage 实现源代码管理作为集成功能的选项。
+本部分讨论通过源代码管理插件或源代码管理 VSPackage 将源代码管理实现为 的集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能的选项。
 
 ## <a name="in-this-section"></a>本节内容
 - [概要](../../extensibility/internals/source-control-integration-essentials.md)
 
- 显示开始使用源代码管理所必须具备的重要信息。
+ 显示开始使用源代码管理时必须掌握的重要信息。
 
 - 概述
 
- 实现源代码管理的两个可用选项的概述。
+ 概述用于实现源代码管理的两个可用选项。
 
 - [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)
 
- 讨论如何创建源代码管理插件，该插件通过 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源代码管理用户界面 (UI) 提供源代码管理功能。
+ 讨论如何创建源代码管理插件，该插件通过源代码管理用户界面和 UI ([!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供) 。
 
 - [创建源代码管理 VSPackage](../../extensibility/internals/creating-a-source-control-vspackage.md)
 
- 讨论如何创建一个源代码管理 VSPackage，该控件不仅提供源代码管理功能，还可用于自定义 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源代码管理 UI。
+ 讨论如何创建源代码管理 VSPackage，该 VSPackage 不仅提供源代码管理功能，还可用于自定义 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源代码管理 UI。
 
 ## <a name="related-sections"></a>相关章节
 - [源代码管理插件](../../extensibility/source-control-plug-ins.md)
 
- 源代码管理插件 API 引用。
+ 源代码管理插件 API 参考。
 
 - [扩展项目](../../extensibility/extending-projects.md)
 

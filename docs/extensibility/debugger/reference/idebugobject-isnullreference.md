@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4c96dd0ec84c88039155300cca19c8b36e3fa8d39245a78343347a368ed82379
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dbc163532bf1f41327d3d9615f6fdf9a1bd3b320
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088492"
 ---
 # <a name="idebugobjectisnullreference"></a>IDebugObject::IsNullReference
 测试此对象是否是空引用。
@@ -51,5 +51,5 @@ int IsNullReference(
 ## <a name="remarks"></a>备注
  空引用表示空对象或尚未分配给的对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

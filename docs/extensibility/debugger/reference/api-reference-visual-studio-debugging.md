@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 244af855dd63942fd2df586a128a1b53c71649e1a518ac516e43dc2afe9cddd5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac51ded5f99fc2d73d09e563bdf05ee0ac40469f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121239355"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073196"
 ---
 # <a name="api-reference-visual-studio-debugging"></a>API 引用（Visual Studio 调试）
 参考部分包括 API 的概念概述、说明所有 API 元素的语法和用法的指南，以及各种代码示例。 所有引用都按类别的字母顺序列出。
@@ -44,7 +44,7 @@ ms.locfileid: "121239355"
 > [!NOTE]
 > 无效或 `NULL` [out] 参数可能导致 IDE 崩溃。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [接口](../../../extensibility/debugger/reference/interfaces-visual-studio-debugging.md)
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

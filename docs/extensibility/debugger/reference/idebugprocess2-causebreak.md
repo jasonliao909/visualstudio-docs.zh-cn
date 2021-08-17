@@ -1,6 +1,6 @@
 ---
-description: 请求运行此进程中的代码的下一个程序停止并发送 IDebugBreakEvent2 事件对象。
-title: IDebugProcess2：： CauseBreak |Microsoft Docs
+description: 请求正在此进程中运行代码的下一个程序停止并发送 IDebugBreakEvent2 事件对象。
+title: IDebugProcess2：：CauseBreak |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121416469"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
-请求运行此进程中的代码的下一个程序停止并发送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件对象。
+请求正在此进程中运行代码的下一个程序停止并发送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件对象。
 
 ## <a name="syntax"></a>语法
 
@@ -40,7 +40,7 @@ int CauseBreak();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

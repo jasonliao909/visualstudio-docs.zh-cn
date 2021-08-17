@@ -1,6 +1,6 @@
 ---
 title: GetVstoSolutionMetadata 函数
-description: 了解 GetVstoSolutionMetadata API 如何支持 Office 基础结构，不应在代码中直接使用。
+description: 了解 GetVstoSolutionMetadata API 如何支持Office基础结构，并且不能直接从代码中使用。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: reference
@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c261bb24d774b8894cbc2c25249b798ef542126971593b69430cc847f1ceddd1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 14cf1d9ab6c8c3a734caa737b99a5edaededb94f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352053"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026416"
 ---
 # <a name="getvstosolutionmetadata-function"></a>GetVstoSolutionMetadata 函数
-  此 API 支持 Office 基础结构，不应在代码中直接使用。
+  此 API 支持Office基础结构，不直接通过代码使用。
 
 ## <a name="syntax"></a>语法
 
@@ -40,4 +40,4 @@ HRESULT WINAPI GetVstoSolutionMetadata(
 |*ppSolutionInfo*|请不要使用。|
 
 ## <a name="return-value"></a>返回值
- 如果该函数成功，则它将返回 **S_OK**。 如果函数失败，则返回错误代码。
+ 如果函数成功， **它将返回** S_OK。 如果函数失败，它将返回错误代码。

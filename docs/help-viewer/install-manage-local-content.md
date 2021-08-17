@@ -1,6 +1,6 @@
 ---
 title: 安装本地帮助文档
-description: 使用 Microsoft Help Viewer 安装和管理本地帮助文档。 添加、删除、更新和移动安装在计算机上的帮助内容。
+description: 使用应用程序安装和管理本地帮助Microsoft Help Viewer。 添加、删除、更新和移动计算机上安装的帮助内容。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: a74e2634ea4190caf603c83af163877bb8196134
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 59ec73b408337e12c8c0d2a17c2d2e3ab78e9dbedaf6da88fc3e576a635b912c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124290"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358423"
 ---
 # <a name="install-and-manage-local-content"></a>安装和管理本地内容
 
@@ -53,7 +53,7 @@ ms.locfileid: "122124290"
 
     - 输入 .msha 文件的路径或服务终结点的 URL。
 
-    - 选择 "浏览 (**...** ") 按钮以导航到 *.msha* 文件。
+    - 选择"浏览 (**...)** 按钮以导航到 *.msha* 文件。
 
     - 在此列表中，选择最近使用的条目。
 
