@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 85f23994292ad7089dbf3215e602347ad7891ddf35ddf933ce13989253150c2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cd174da02a52a86a29494f4edeaf13714b2d5758
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057858"
 ---
 # <a name="get-local-properties"></a>获取本地属性
 > [!IMPORTANT]

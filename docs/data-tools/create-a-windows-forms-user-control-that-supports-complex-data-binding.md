@@ -54,7 +54,7 @@ ms.locfileid: "121347566"
 
 - 通过将新控件从“数据源”窗口拖到“Form1”上来添加新控件。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
@@ -159,7 +159,7 @@ ms.locfileid: "121347566"
 
 - 创建支持查找方案的控件。 有关详细信息，请参阅[创建支持查找数据绑定的 Windows 窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

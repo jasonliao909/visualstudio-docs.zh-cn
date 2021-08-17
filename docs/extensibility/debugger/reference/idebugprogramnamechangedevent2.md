@@ -9,14 +9,15 @@ ms.assetid: be1f1cd5-0b2f-435c-a052-dca28a7c978d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60fbc8aac3fd621a8f19074682bd82fbe957ed3b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 196950b96375612b1e8a541b4ec7abdb78d3d21a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053693"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030082"
 ---
 # <a name="idebugprogramnamechangedevent2"></a>IDebugProgramNameChangedEvent2
 当程序的名称更改时，从调试引擎发送 (取消) 到会话调试管理器 (SDM) 。

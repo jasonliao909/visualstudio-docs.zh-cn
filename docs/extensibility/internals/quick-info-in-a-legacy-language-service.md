@@ -1,5 +1,5 @@
 ---
-title: 旧版语言服务中的快速|Microsoft Docs
+title: 旧版语言服务中的快速信息|Microsoft Docs
 description: 了解 IntelliSense 快速信息操作对显示有关标识符的信息的支持。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c8a9b09ac8ad7391336816f4416a25ebd98484badb21ff81e1ec4604784eead
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d375672fa25949f85da7551a55c606d21e5c266e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414462"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028873"
 ---
 # <a name="quick-info-in-a-legacy-language-service"></a>旧版语言服务中的快速信息
 当用户将插入点置于标识符中，然后从 IntelliSense 菜单中选择"快速信息"或将鼠标光标悬停在标识符上时 **，IntelliSense** 快速信息会显示有关源中标识符的信息。 这会导致显示工具提示，并包含有关标识符的信息。 此信息通常由标识符类型组成。 当调试引擎处于活动状态时，此信息可能包括当前值。 调试引擎提供表达式值 ，而语言服务仅处理标识符。

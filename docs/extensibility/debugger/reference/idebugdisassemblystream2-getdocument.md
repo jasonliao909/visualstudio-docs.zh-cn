@@ -1,6 +1,6 @@
 ---
 description: 获取与此输入流关联的源文档。
-title: IDebugDisassemblyStream2：： GetDocument |Microsoft Docs
+title: IDebugDisassemblyStream2：：GetDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 641a6b3b6601e0e4cac8f82d5d7e375792af1e848bfa77c652b21df84e43d9b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9dab147c8d55b175cf6ac327cb553a44bea5f32e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089272"
 ---
 # <a name="idebugdisassemblystream2getdocument"></a>IDebugDisassemblyStream2::GetDocument
 获取与此输入流关联的源文档。
@@ -45,17 +45,17 @@ int GetDocument(
 
 ## <a name="parameters"></a>参数
 `bstrDocumentUrl`\
-中文档 URL。
+[in]文档 URL。
 
 `ppDocument`\
-弄返回表示文档的 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象。
+[out]返回表示 [文档的 IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法由包含未存储在实际文件中的文本文档的调试引擎实现。
+ 此方法由具有文本文档（未存储在实际文件中）的调试引擎实现。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

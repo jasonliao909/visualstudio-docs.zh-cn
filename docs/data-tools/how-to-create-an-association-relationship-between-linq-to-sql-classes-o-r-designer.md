@@ -29,7 +29,7 @@ ms.locfileid: "121347111"
 ## <a name="association-properties"></a>关联属性
 创建关联后，在 O/R 设计器中选择该关联时，“属性”窗口中将有一些可配置属性。  (关联是相关类之间的线。) 下表提供了关联属性的说明。
 
-|属性|说明|
+|properties|描述|
 |--------------|-----------------|
 |**基数**|控制关联是一对多关系还是一对一关系。|
 |**子属性**|指定是否在父类上创建一个属性，作为关联关系外键一方上的子记录的集合或对这些子记录的引用。 例如，在 和 之间的关联中， `Customer` `Order` 如果 **子** 属性设置为 **True，** 则父类上 `Orders` 将创建名为 的属性。|
@@ -49,7 +49,7 @@ ms.locfileid: "121347111"
 
 5. 单击“确定”创建关联。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练：创建LINQ to SQL类](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

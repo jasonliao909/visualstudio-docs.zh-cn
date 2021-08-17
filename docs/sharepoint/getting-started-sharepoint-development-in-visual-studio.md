@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5c69c709118a544b4384721c20f75d11643c9644f70f936e622f9b8035361c7e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5576a9871e4ca1a8476b89298d84431e69042915
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228891"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060162"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>入门（Visual Studio 中的 SharePoint 开发）
 

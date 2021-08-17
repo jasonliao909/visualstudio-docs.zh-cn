@@ -49,6 +49,6 @@ int SetResponse(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMessageEvent2](../../../extensibility/debugger/reference/idebugmessageevent2.md)
 - [AfxMessageBox](/cpp/mfc/reference/cstring-formatting-and-message-box-display#afxmessagebox)

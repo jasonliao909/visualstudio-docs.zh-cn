@@ -59,57 +59,57 @@
             - name: Visual Basic 入门
               tocHref: /visualstudio/get-started/visual-basic/
               topicHref: /visualstudio/get-started/visual-basic/
-        - name: 扩展性
-          tocHref: /visualstudio/extensibility/
-          topicHref: /visualstudio/extensibility/index
-          items:
-            - name: 深入探究 Visual Studio SDK
-              tocHref: /visualstudio/extensibility/internals/
-              topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
-            - name: 调试器扩展性
-              tocHref: /visualstudio/extensibility/debugger/
-              topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
+            - name: 扩展性
+              tocHref: /visualstudio/extensibility/
+              topicHref: /visualstudio/extensibility/index
               items:
-                - name: 参考
-                  tocHref: /visualstudio/extensibility/debugger/reference/
-                  topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
-            - name: 用户体验指南
-              tocHref: /visualstudio/extensibility/ux-guidelines/
-              topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
-        - name: 入门 (CSharp)
-          tocHref: /visualstudio/get-started/csharp/
-          topicHref: /visualstudio/get-started/csharp/index
-        - name: 入门 (Visual Basic)
-          tocHref: /visualstudio/get-started/visual-basic/
-          topicHref: /visualstudio/get-started/visual-basic/index
-        - name: 容器工具
-          tocHref: /visualstudio/containers/
-          topicHref: /visualstudio/containers/index
+                - name: 深入探究 Visual Studio SDK
+                  tocHref: /visualstudio/extensibility/internals/
+                  topicHref: /visualstudio/extensibility/internals/inside-the-visual-studio-sdk
+                - name: 调试器扩展性
+                  tocHref: /visualstudio/extensibility/debugger/
+                  topicHref: /visualstudio/extensibility/debugger/visual-studio-debugger-extensibility
+                  items:
+                    - name: 参考
+                      tocHref: /visualstudio/extensibility/debugger/reference/
+                      topicHref: /visualstudio/extensibility/debugger/reference/reference-visual-studio-debugging-apis
+                - name: 用户体验指南
+                  tocHref: /visualstudio/extensibility/ux-guidelines/
+                  topicHref: /visualstudio/extensibility/ux-guidelines/visual-studio-user-experience-guidelines
+            - name: 入门 (CSharp)
+              tocHref: /visualstudio/get-started/csharp/
+              topicHref: /visualstudio/get-started/csharp/index
+            - name: 入门 (Visual Basic)
+              tocHref: /visualstudio/get-started/visual-basic/
+              topicHref: /visualstudio/get-started/visual-basic/index
+            - name: 容器工具
+              tocHref: /visualstudio/containers/
+              topicHref: /visualstudio/containers/index
+            - name: Azure 开发
+              tocHref: /visualstudio/azure
+              topicHref: /visualstudio/azure/index
+            - name: Office 和 SharePoint
+              tocHref: /visualstudio/vsto/
+              topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
+              items:
+                - name: SharePoint
+                  tocHref: /visualstudio/sharepoint/
+                  topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
+                - name: VSTO
+                  tocHref: /visualstudio/vsto/
+                  topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
+            - name: JavaScript 和 TypeScript
+              tocHref: /visualstudio/javascript/
+              topicHref: /visualstudio/javascript/index
+            - name: Python
+              tocHref: /visualstudio/python/
+              topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
+            - name: R
+              tocHref: /visualstudio/rtvs/
+              topicHref: /visualstudio/rtvs/index
+            - name: 版本控制
+              tocHref: /visualstudio/version-control
+              topicHref: /visualstudio/version-control/index
         - name: MSBuild
           tocHref: /visualstudio/msbuild/
           topicHref: /visualstudio/msbuild/msbuild
-        - name: JavaScript 和 TypeScript
-          tocHref: /visualstudio/javascript/
-          topicHref: /visualstudio/javascript/index
-        - name: Python
-          tocHref: /visualstudio/python/
-          topicHref: /visualstudio/python/overview-of-python-tools-for-visual-studio
-        - name: R
-          tocHref: /visualstudio/rtvs/
-          topicHref: /visualstudio/rtvs/index
-        - name: Office 和 SharePoint
-          tocHref: /visualstudio/vsto/
-          topicHref: /visualstudio/vsto/office-and-sharepoint-development-in-visual-studio
-          items:
-            - name: SharePoint
-              tocHref: /visualstudio/sharepoint/
-              topicHref: /visualstudio/sharepoint/create-sharepoint-solutions
-            - name: VSTO
-              tocHref: /visualstudio/vsto/
-              topicHref: /visualstudio/vsto/create-vsto-add-ins-for-office-by-using-visual-studio
-        - name: 版本控制
-          tocHref: /visualstudio/version-control
-          topicHref: /visualstudio/version-control/index
-        - name: Azure 开发
-          tocHref: /visualstudio/azure
-          topicHref: /visualstudio/azure/index

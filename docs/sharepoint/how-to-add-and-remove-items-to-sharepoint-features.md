@@ -1,6 +1,6 @@
 ---
-title: 如何：在 SharePoint 功能中添加和移除项 |Microsoft Docs
-description: 使用 Visual Studio 中的功能设计器将 SharePoint 项目项手动添加到 SharePoint 功能并将其删除。
+title: 如何：添加和删除项以SharePoint功能|Microsoft Docs
+description: 使用项目中的功能设计器SharePoint添加SharePoint删除项目Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -14,46 +14,47 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f18c46bb7bab2acd1d97e3154b53ab8ca52520e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c69cd284a6268d132b90242b8c2a461b51718874
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093055"
 ---
-# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：在 SharePoint 功能中添加和移除项
-  当你创建 SharePoint 解决方案时，Visual Studio 会向你的功能添加默认的 SharePoint 项目项。 在部署之前，您可以添加和删除 SharePoint 项目项以修改 SharePoint 功能。
+# <a name="how-to-add-and-remove-items-to-sharepoint-features"></a>如何：添加和删除项以SharePoint功能
+  创建一个SharePoint解决方案时，Visual Studio将默认SharePoint项目项添加到功能。 在部署之前，可以添加和删除SharePoint项目项，以修改SharePoint功能。
 
-## <a name="add-sharepoint-project-items-to-a-feature"></a>向功能中添加 SharePoint 项目项
+## <a name="add-sharepoint-project-items-to-a-feature"></a>将SharePoint项添加到功能
 
-#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>用功能设计器添加 SharePoint 项目项
+#### <a name="to-add-sharepoint-project-items-with-the-feature-designer"></a>使用SharePoint设计器添加项目项
 
-1. 打开 "功能设计器"。
+1. 打开功能设计器。
 
     有关详细信息，请参阅[如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)中的说明进行操作。
 
-2. 通过执行以下一个或多个步骤，将 **"解决方案** " 列表中的项中的一个或多个项添加到 **功能列表中的项** ：
+2. 执行下列一个或多个步骤，将"解决方案"列表中的"项"中的一个或多个项添加到"功能"列表中的"项"：
 
    - 双击要添加的每一项。
 
-   - 选择要添加的项目，然后选择 " **添加** " 按钮 ( # A0) 。
+   - 选择要添加的项，然后选择"添加 **"** 按钮 (>) 。
 
-   - 选择 " **全部添加** " 按钮 ( # A2) 。
+   - 选择" **全部添加"** 按钮 (>>) 。
 
-     SharePoint 项目项显示在功能列表中的 **项** 上。
+     "SharePoint Project项"显示在"**功能"列表中的"项"** 中。
 
-## <a name="remove-sharepoint-project-items-from-a-feature"></a>删除功能中的 SharePoint 项目项
+## <a name="remove-sharepoint-project-items-from-a-feature"></a>从SharePoint项中删除项目项
 
-#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>用功能设计器删除 SharePoint 项
+#### <a name="to-remove-sharepoint-items-with-the-feature-designer"></a>使用SharePoint设计器删除项目
 
-1. 选择 **功能列表项** 中的一个或多个项。
+1. 在"功能"列表中的" **项"中选择一个或多个** 项。
 
-2. 选择 " **删除** " 按钮 ( # A0) 一次删除一个项目，或选择 " **全部删除** " 按钮 ( # A3) 以删除所有项目。
+2. 选择"**删除** (<) 一次删除一个项，或选择"删除所有 (<<) 删除所有项。
 
-     SharePoint 项目项显示在解决方案列表中的 **项** 上。
+     "SharePoint Project项"显示在"解决方案 **"列表中的"项"** 中。
 
-## <a name="see-also"></a>另请参阅
-- [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)
+## <a name="see-also"></a>请参阅
+- [创建SharePoint功能](../sharepoint/creating-sharepoint-features.md)
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

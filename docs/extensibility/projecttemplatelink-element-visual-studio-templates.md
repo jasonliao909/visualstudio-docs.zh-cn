@@ -50,7 +50,7 @@ ms.locfileid: "121359034"
 
 |属性|描述|
 |---------------|-----------------|
-|`ProjectName`|可选特性。<br /><br /> 指定多项目模板中每一个项目的名称。 "**新建Project"** 对话框无法将名称分配给各个项目。|
+|`ProjectName`|可选特性。<br /><br /> 指定多项目模板中每一个项目的名称。 "**新建Project** 对话框无法为单个项目分配名称。|
 |`CopyParameters`|使主要组模板中的所有变量可复制到每个链接模板。<br /><br /> 链接模板中的参数具有前缀 `"$ext_*$"`。 例如，如果父组模板中的 参数具有值 `$projectname$` **ExampleProject1**，则当链接模板获取要执行其轮次时，它将获取参数 ，该参数是父组模板中的参数 `$ext_projectname$` `$projectname$` 的副本。<br /><br /> 这使链接模板能够共享一些只能在父组模板中方便地创建的公用参数。<br /><br /> 此特性为可选特性，未包含此特性时，它将自动默认为 `false`。<br /><br /> 在 Visual Studio 2013 Update 2 中引入。 若要引用正确的产品版本，请参阅 Visual Studio 2013 [SDK Update 2 中提供的引用程序集](/previous-versions/dn632168(v=vs.120))。|
 
 ### <a name="child-elements"></a>子元素

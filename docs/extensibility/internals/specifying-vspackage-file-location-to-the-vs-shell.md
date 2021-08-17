@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 044655e6f1b1eb984e521b26cb9796ae3e5543d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0c3d04c96291c3c7e40fe1c7a7eeb63bb5a3252fc12070700fc1c5d15eaa2ce2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057156"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121432067"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>指定 VS Shell 的 VSPackage 文件位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够找到程序集 DLL 才能加载 VSPackage。 可以通过各种方式找到它，如下表所述。

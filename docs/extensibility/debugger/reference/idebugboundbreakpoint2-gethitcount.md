@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96c93e4a6006060849bab1daf2c0f2ec7d420590d719817a1acbe0b1d35402ba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8bc2fa014bb3ac8f58d61206c5bd828e0570c2ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079917"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 获取此绑定断点的当前命中计数。

@@ -10,14 +10,15 @@ ms.assetid: f523ad47-bbc0-4cda-a35c-41e67c4ba081
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d3ac314d5f8eb7980bdf5102d871546d3167141
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9ccf7591c56b7dbf4ab73750690a47b012a1cb26
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968666"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045822"
 ---
 # <a name="pickbranch-activity-designer"></a>PickBranch 活动设计器
 
@@ -29,7 +30,7 @@ ms.locfileid: "99968666"
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活动设计器
 
-访问 "**工具箱**" 的 "**控制流**" 类别中的 " **PickBranch** " 设计器。
+访问 "**工具箱**" Flow "**控件**" 中的 " **PickBranch** 设计器"。
 
 <xref:System.Activities.Statements.PickBranch>默认情况下，显示名称为 **Branch1** 和 **Branch2** 的两个空对象作为活动的元素 <xref:System.Activities.Statements.Pick> 在工作流设计器上被删除。 <xref:System.Activities.Statements.PickBranch.DisplayName%2A>可在 **PickBranch** 设计器标头或每个分支的 "**属性**" 窗口中编辑这些各自的属性值。
 
@@ -56,11 +57,11 @@ ms.locfileid: "99968666"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|False|在 **PickBranch** 设计器的标头中显示的友好名称。 默认值为 Branch。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|True|每个 <xref:System.Activities.Statements.PickBranch> 都包含一个可调用 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 的 <xref:System.Activities.Statements.PickBranch.Action%2A> 操作。|
-|<xref:System.Activities.Statements.PickBranch.Action%2A>|False|每个 <xref:System.Activities.Statements.PickBranch> 都包含一个触发时将执行的 <xref:System.Activities.Statements.PickBranch.Action%2A>。|
+|<xref:System.Activities.Statements.PickBranch.DisplayName%2A>|错误|在 **PickBranch** 设计器的标头中显示的友好名称。 默认值为 Branch。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Statements.PickBranch.Trigger%2A>|正确|每个 <xref:System.Activities.Statements.PickBranch> 都包含一个可调用 <xref:System.Activities.Statements.PickBranch.Trigger%2A> 的 <xref:System.Activities.Statements.PickBranch.Action%2A> 操作。|
+|<xref:System.Activities.Statements.PickBranch.Action%2A>|错误|每个 <xref:System.Activities.Statements.PickBranch> 都包含一个触发时将执行的 <xref:System.Activities.Statements.PickBranch.Action%2A>。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [控制流](../workflow-designer/control-flow-activity-designers.md)
 - [Pick 活动](/dotnet/framework/windows-workflow-foundation/pick-activity)

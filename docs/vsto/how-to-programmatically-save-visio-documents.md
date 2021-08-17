@@ -77,7 +77,7 @@ ms.locfileid: "121351676"
 
 - 若要保存具有新名称的文档，名为的目录 `Test` 必须位于 "我的 *文档*" 文件夹中 (Windows XP 及更早版本) 或 "*文档*" 文件夹 (用于 Windows Vista) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)
 - [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 - [如何：以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)

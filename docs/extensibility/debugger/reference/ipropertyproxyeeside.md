@@ -11,14 +11,15 @@ ms.assetid: cf227cf8-39d9-4758-8f7e-a697aebb1926
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce7f950455a6b6a6ae2089e762db1aa02428f6a5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0ada25cdf053bdc7176491afab83b4226f4cf40f3eecbe614fa90d2478676286
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082390"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377260"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 此接口提供在关联的对象上查看数据的方法。 此接口是对类型可视化工具的支持的一部分。
@@ -57,7 +58,7 @@ IPropertyProxyEESide : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

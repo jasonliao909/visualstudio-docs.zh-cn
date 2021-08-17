@@ -1,6 +1,6 @@
 ---
-title: 菜单菜单的 GUID Visual Studio|Microsoft Docs
-description: 在 IDE Visual Studio 集成开发环境中包含的 Visual Studio 菜单栏上，查看菜单和组的 GUID 和 ID (值) 。
+title: Visual Studio 菜单的 guid 和 id |Microsoft Docs
+description: 查看 Visual Studio 集成开发环境 (IDE) 中包含的菜单和 Visual Studio 组的 GUID 和 ID 值列表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,57 +15,58 @@ ms.assetid: 84639d86-dd21-4b35-9988-6bb654162488
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bceee5fce8a77ad5169020bd3d21896bdbc71443
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 471f5e2981f9b52df8af7680a23a92349264e6b0aa945282238a5c04341bc2f4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898066"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376165"
 ---
-# <a name="guids-and-ids-of-visual-studio-menus"></a>菜单的 GUID 和 VISUAL STUDIO
-本文枚举菜单栏上菜单和组的 GUID 和 ID Visual Studio值。 这些值在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
+# <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 菜单的 guid 和 id
+本文枚举 Visual Studio 菜单栏上的菜单和组的 GUID 和 ID 值。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
 
- 若要详细了解如何使用 *.vsct* 文件中定义的 (IDE) 集成开发环境，请参阅 [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。
+ 有关如何使用集成开发环境 (*IDE 中定义的)* 对象的详细信息，请参阅 [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)。
 
- 菜单栏上的菜单Visual Studio组使用 GUID `guidSHLMainMenu` 。 菜单栏本身的 ID 为 `IDM_VS_TOOL_MAINMENU` 。
+ Visual Studio 菜单栏上的菜单和组使用 GUID `guidSHLMainMenu` 。 菜单栏本身具有的 ID `IDM_VS_TOOL_MAINMENU` 。
 
-## <a name="groups-on-the-visual-studio-menu-bar"></a>菜单栏Visual Studio组
- 若要将菜单添加到菜单栏，请设置其中一个组作为其父级。
+## <a name="groups-on-the-visual-studio-menu-bar"></a>Visual Studio 菜单栏上的组
+ 若要向菜单栏添加菜单，请将这些组中的一个设置为父项。
 
 |组|ID|
 |-----------|--------|
-|文件/编辑/视图|IDG_VS_MM_FILEEDITVIEW|
+|文件/编辑/查看|IDG_VS_MM_FILEEDITVIEW|
 |重构|IDG_VS_MM_REFACTORING：|
-|Project|IDG_VS_MM_PROJECT|
+|项目|IDG_VS_MM_PROJECT|
 |构建|IDG_VS_MM_BUILDDEBUGRUN|
 |格式/工具|IDG_VS_MM_TOOLSADDINS|
-|窗口/帮助/社区|IDG_VS_MM_WINDOWHELP|
+|Window/Help/Community|IDG_VS_MM_WINDOWHELP|
 |加载项|IDG_VS_MM_MACROS|
 |FullScreenBar|IDG_VS_MM_FULLSCREENBAR|
 
-## <a name="menus-on-the-visual-studio-menu-bar"></a>菜单栏Visual Studio菜单
- 若要将组添加到现有菜单Visual Studio，请设置以下菜单之一作为其父级。 此列表中不包含子项。
+## <a name="menus-on-the-visual-studio-menu-bar"></a>Visual Studio 菜单栏上的菜单
+ 若要将组添加到现有 Visual Studio 菜单，请将以下菜单之一设置为其父项。 此列表中不包括子菜单。
 
 |菜单|ID|
 |----------|--------|
 |文件|IDM_VS_MENU_FILE|
 |编辑|IDM_VS_MENU_EDIT|
-|视图|IDM_VS_MENU_VIEW|
+|查看|IDM_VS_MENU_VIEW|
 |重构|IDM_VS_MENU_REFACTORING|
-|Project|IDM_VS_MENU_PROJECT|
+|项目|IDM_VS_MENU_PROJECT|
 |构建|IDM_VS_MENU_BUILD|
 |格式|IDM_VS_MENU_FORMAT|
 |工具|IDM_VS_MENU_TOOLS|
-|扩展|IDM_VS_MENU_EXTENSIONS|
+|Extensions|IDM_VS_MENU_EXTENSIONS|
 |窗口|IDM_VS_MENU_WINDOW|
 |加载项|IDM_VS_MENU_ADDINS|
 |社区|IDM_VS_MENU_COMMUNITY|
 |帮助|IDM_VS_MENU_HELP|
 
-## <a name="groups-on-visual-studio-menus"></a>菜单上的Visual Studio组
- 以下列表显示直接从菜单栏上的菜单Visual Studio组。 将命令添加到菜单的最Visual Studio就是将其中一个组设置为父级。 从子项降序的组不会出现在此部分中。
+## <a name="groups-on-visual-studio-menus"></a>Visual Studio 菜单上的组
+ 以下列表显示了直接从 Visual Studio 菜单栏上的菜单中进行的组。 将命令添加到 Visual Studio 菜单的最快捷方法是将这些组中的一个设置为父项。 从子菜单继承的组不会出现在此部分中。
 
 ### <a name="file-menu-groups"></a>文件菜单组
 
@@ -79,7 +80,7 @@ ms.locfileid: "112898066"
 |重命名|IDG_VS_FILE_RENAME|
 |浏览者|IDG_VS_FILE_BROWSER|
 |打印|IDG_VS_FILE_PRINT|
-|最近使用|IDG_VS_FILE_MRU|
+|最近使用的|IDG_VS_FILE_MRU|
 |移动|IDG_VS_FILE_MOVE|
 |退出|IDG_VS_FILE_EXIT|
 
@@ -89,8 +90,8 @@ ms.locfileid: "112898066"
 |-----------|--------|
 |撤消/重做|IDG_VS_EDIT_UNDOREDO|
 |剪切/复制/粘贴|IDG_VS_EDIT_CUTCOPY|
-|Select|IDG_VS_EDIT_SELECT|
-|GoTo|IDG_VS_EDIT_GOTO|
+|选择|IDG_VS_EDIT_SELECT|
+|语句|IDG_VS_EDIT_GOTO|
 |查找|IDG_VS_EDIT_FIND|
 |对象|IDG_VS_EDIT_OBJECTS|
 |OLE 谓词|IDG_VS_EDIT_OLEVERBS|
@@ -111,8 +112,8 @@ ms.locfileid: "112898066"
 |浏览者|IDG_VS_VIEW_BROWSER|
 |定义视图|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
-|架构师窗口|IDG_VS_VIEW_ARCH_WINDOWS|
-|组织窗口|IDG_VS_VIEW_ORG_WINDOWS|
+|架构师 Windows|IDG_VS_VIEW_ARCH_WINDOWS|
+|组织 Windows|IDG_VS_VIEW_ORG_WINDOWS|
 |代码浏览器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
 |开发 Windows|IDG_VS_VIEW_DEV_WINDOWS|
 |工具栏|IDG_VS_VIEW_TOOLBARS|
@@ -124,7 +125,7 @@ ms.locfileid: "112898066"
 |属性页|IDG_VS_VIEW_PROPPAGES|
 |刷新|IDG_VS_VIEW_REFRESH|
 
-### <a name="project-menu-groups"></a>项目菜单组
+### <a name="project-menu-groups"></a>Project 菜单组
 
 |组|ID|
 |-----------|--------|
@@ -162,7 +163,7 @@ ms.locfileid: "112898066"
 
 |组|ID|
 |-----------|--------|
-|新建|IDG_VS_WINDOW_NEW|
+|新出现|IDG_VS_WINDOW_NEW|
 |停靠/关闭|IDG_VS_DOCKCLOSE|
 |停靠/隐藏|IDG_VS_DOCKHIDE|
 |排列|IDG_VS_WINDOW_ARRANGE|
@@ -177,7 +178,7 @@ ms.locfileid: "112898066"
 |支持|IDG_VS_HELP_SUPPORT|
 |关于|IDG_VS_HELP_ABOUT|
 
-## <a name="submenus-of-visual-studio-menus"></a>菜单的子Visual Studio菜单
+## <a name="submenus-of-visual-studio-menus"></a>菜单的Visual Studio菜单
  以下层次结构显示与菜单栏上的菜单关联的子菜单Visual Studio菜单。 由于只有组才能将菜单作为父级，因此每个子菜单都必须从菜单上的组降序，而不是直接从菜单降序。 有关菜单、组和子菜单之间的关系详细信息，请参阅 [将子菜单添加到菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。
 
 > [!NOTE]
@@ -215,7 +216,7 @@ ms.locfileid: "112898066"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>另请参阅
-- [工具栏的 GUID Visual Studio的](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
-- [命令的 GUID Visual Studio的](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
+## <a name="see-also"></a>请参阅
+- [工具栏的 GUID Visual Studio的 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
+- [命令的 GUID Visual Studio的 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Visual Studio命令表 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

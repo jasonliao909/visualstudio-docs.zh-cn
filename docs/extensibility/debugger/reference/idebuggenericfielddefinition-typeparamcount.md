@@ -10,17 +10,18 @@ ms.assetid: d41dd5ea-aa25-4bf3-bcfd-e0bf451ead49
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a50f258fe3febdf7c1dd680ea6b731e756abf7e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d9c77cb9a29ba134c8cd7115c7f37b0bcb3cea1d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063391"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078916"
 ---
 # <a name="idebuggenericfielddefinitiontypeparamcount"></a>IDebugGenericFieldDefinition::TypeParamCount
 检索与泛型字段关联的类型参数的数目。
@@ -49,5 +50,5 @@ int TypeParamCount(
 ## <a name="remarks"></a>备注
  如果为 List \<T> ，则此方法返回 1; 如果为 list \<T1,T2> ，则此方法返回2。 如果没有类型参数，则此方法返回0。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

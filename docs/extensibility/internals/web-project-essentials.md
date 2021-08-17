@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54888223ec789babd4af15c6b675a138bdb81520
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 23290b0cccaef596ac2a5d55623f3ddd7ef02ff259e5aba81475bfb638d263e4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042005"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337846"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 您可以使用 Web 项目来创建包含智能网页的 Web 应用程序。 智能网页包含按需呈现网页的服务器端代码。

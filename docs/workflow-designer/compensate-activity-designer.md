@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ca9c66d68913e0791daea6736c7bb5aeeead4df2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: cf967b079fbd499a3e3cf244c5c6dd692aa01e363b7e69db10f7299ca3422448
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068098"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383932"
 ---
 # <a name="compensate-activity-designer"></a>Compensate 活动设计器
 
@@ -34,7 +34,7 @@ ms.locfileid: "122068098"
 
 可以在"工具箱"的"事务 **"** 类别中找到 **"补偿**"**活动设计器**。 若要打开 **"工具箱**"，请选择"工具箱"选项卡工作流设计器。 或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-可 **拖动"** 补偿"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动的位置（例如 位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Compensate> 一个默认为 <xref:System.Activities.Activity.DisplayName%2A> "补偿"的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在"补偿"活动设计器的标头或属性网格的 **"DisplayName"** 框中编辑该值。
+可 **拖动"** 补偿"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动（例如位于 内）的"补偿"图面 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Compensate> 一个默认为 <xref:System.Activities.Activity.DisplayName%2A> "补偿"的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在"补偿"活动设计器的标头或属性网格的 **"DisplayName"** 框中编辑该值。
 
 ### <a name="the-compensate-properties"></a>Compensate 属性
 

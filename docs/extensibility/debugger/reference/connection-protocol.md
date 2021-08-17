@@ -1,5 +1,5 @@
 ---
-description: 指示用于调试服务器与调试包之间通信的协议 (DE) 。
+description: 指示用于在调试服务器与调试包之间通信的协议 (DE) 。
 title: CONNECTION_PROTOCOL |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121434407"
 ---
 # <a name="connection_protocol"></a>CONNECTION_PROTOCOL
-指示用于调试服务器与调试包之间通信的协议 (DE) 。
+指示用于在调试服务器与调试包之间通信的协议 (DE) 。
 
 ## <a name="syntax"></a>语法
 
@@ -55,35 +55,35 @@ public enum CONNECTION_PROTOCOL {
 
 ## <a name="fields"></a>字段
 `CONNECTION_NONE`\
-没有与服务器建立连接。
+未与服务器建立连接。
 
 `CONNECTION_UNKNOWN`\
-已建立连接，但其类型未知。
+已建立连接，但类型未知。
 
 `CONNECTION_LOCAL`\
 连接到本地服务器。
 
 `CONNECTION_PIPE`\
-通过命名管道进行连接。
+连接通过命名管道进行。
 
 `CONNECTION_TCPIP`\
 连接使用 TCP/IP。
 
 `CONNECTION_HTTP`\
-连接通过 Web 服务器) 使用 HTTP (。
+连接使用 HTTP (Web 服务器) 。
 
 `CONNECTION_OTHER`\
-已建立了某些其他类型的连接 (此值当前未) 使用。
+已建立某种其他类型的连接 (当前未使用此值) 。
 
 ## <a name="remarks"></a>备注
-这些值从 [GetConnectionProtocol](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) 方法返回。
+这些值从 [GetConnectionProtocol 方法](../../../extensibility/debugger/reference/idebugcoreserver3-getconnectionprotocol.md) 返回。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

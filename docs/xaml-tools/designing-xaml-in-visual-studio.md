@@ -10,12 +10,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 246bcf06d72cfda39a7498075b4eb4e0b3198cf5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3367574ab52f02d3c6d4c8316eb6f616e5ca80540e5ed8874b8aad60280cd7a2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045666"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351577"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 和 Blend for Visual Studio 中设计 XAML
 

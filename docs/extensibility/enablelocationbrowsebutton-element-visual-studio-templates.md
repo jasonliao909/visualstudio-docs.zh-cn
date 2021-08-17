@@ -1,6 +1,6 @@
 ---
 title: EnableLocationBrowseButton 元素（Visual Studio 模板）
-description: 了解 EnableLocationBrowseButton 元素以及它如何指定 "新建 Project" 对话框中的 "浏览" 按钮是否可用。
+description: 了解 EnableLocationBrowseButton 元素及其如何指定"浏览"按钮是否可用于"新建Project对话框。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -23,8 +23,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121388716"
 ---
-# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton 元素 (Visual Studio 模板) 
-指定 "**新建 Project** " 对话框中的 "**浏览**" 按钮是否可用，以便用户可以轻松地修改保存新项目的默认目录。
+# <a name="enablelocationbrowsebutton-element-visual-studio-templates"></a>EnableLocationBrowseButton (Visual Studio模板) 
+指定 **"新建项目**"对话框中是否Project"浏览"按钮，以便用户可以轻松地修改保存新项目的默认目录。
 
  \<VSTemplate> \<TemplateData>
  \<EnableLocationBrowseButton>
@@ -53,15 +53,15 @@ ms.locfileid: "121388716"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 文本必须是 `true` 或 `false` ，指示是否显示 "**新建 Project** " 对话框中的 "**浏览**" 按钮。
+ 文本必须为 或 ，指示是否显示"新建"对话框中的"浏览 `true` `false` Project按钮。  
 
 ## <a name="remarks"></a>备注
- `EnableLocationBrowseButton` 是可选元素。 默认值为 `true` ，它显示 "**新建 Project** " 对话框中的 "**浏览**" 按钮。
+ `EnableLocationBrowseButton` 是可选元素。 默认值为 `true` ，它显示"新建"对话框中的"浏览 **Project** 按钮。
 
- 在 "**新建 Project** " 对话框中，"**位置**" 文本框指定用于保存新项目的目录。 "**浏览**" 按钮可帮助您通过显示 " **Project 位置**" 对话框来修改此目录，该对话框使您能够轻松地导航到计算机上提供的不同目录，然后选择它作为新项目的保存目录。
+ 在 **"新建Project"** 对话框中，"位置"文本框指定保存新项目的目录。 "浏览"按钮通过显示 **"Project** 位置"对话框帮助你修改此目录，该对话框使你可以轻松地导航到计算机中可用的其他目录，然后选择它作为保存新项目的目录。
 
 ## <a name="example"></a>示例
- 下面的示例说明 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。
+ 下面的示例演示了应用程序Windows [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"

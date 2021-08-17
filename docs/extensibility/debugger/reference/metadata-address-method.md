@@ -49,25 +49,25 @@ public struct METADATA_ADDRESS_METHOD {
  `tokMethod`\
  方法的 ID。
 
- [C++] `_mdToken` 是 `typedef` 32 位 的 `int` 。
+ [C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
 
  `dwOffset`\
- 从 类开始到此方法的偏移量 (表示 vtable 对象中的偏移) 。
+ 从类开始，到此方法的偏移量 (可以表示 vtable) 的偏移量。
 
  `dwVersion`\
- 此方法的版本 (此值对于符号提供程序属性) 。
+ 此值 (方法的版本对符号提供程序) 唯一。
 
 ## <a name="remarks"></a>备注
- 当 结构的 字段[设置为](../../../extensibility/debugger/reference/debug-address-union.md)从 ADDRESS_KIND 枚举值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的 `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_METHOD` 一) 。 [](../../../extensibility/debugger/reference/address-kind.md)
+ 当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_METHOD` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
 
 ## <a name="requirements"></a>要求
- 标头：sh.h
+ 标头： sh。h
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

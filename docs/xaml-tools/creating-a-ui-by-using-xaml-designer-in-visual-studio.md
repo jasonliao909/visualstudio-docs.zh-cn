@@ -15,12 +15,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 448e465c1458d3a931e5c47c0236d0d733d322970ebd9aeaa9cb5c853d6dc627
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c0ba2234cedbc4de9ebf71475c226dbdf838e8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121365727"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045718"
 ---
 # <a name="create-a-ui-by-using-xaml-designer"></a>使用 XAML 设计器创建 UI
 
@@ -146,7 +146,7 @@ Visual Studio 中的“文档大纲”窗口类似于 Blend for Visual Studio �
 
 ## <a name="properties-window"></a>“属性”窗口
 
-" **属性** " 窗口可用于设置控件的属性值。 如下所示：
+" **属性** " 窗口可用于设置控件的属性值。 它的外观如下所示：
 
 ![“属性”窗口](media/xaml-designer-properties-window.png)
 

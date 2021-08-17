@@ -11,17 +11,18 @@ ms.assetid: 89af423b-36eb-479d-b2de-2693455eca15
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f37176d039ede66152f1255dc5a2459525bfe4be
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: df7b64065f331165e33c443f385fc79566fbb131
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043227"
 ---
 # <a name="idebugobjectgetsize"></a>IDebugObject::GetSize
 获取对象的大小（以字节为单位）。
@@ -50,6 +51,6 @@ int GetSize(
 ## <a name="remarks"></a>备注
  使用 [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md) 方法将值检索为一个字节序列。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

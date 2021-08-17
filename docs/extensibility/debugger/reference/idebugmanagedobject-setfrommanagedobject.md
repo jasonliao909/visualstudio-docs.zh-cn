@@ -11,17 +11,18 @@ ms.assetid: 8700ee8d-2704-4580-bccc-046837a24edd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8c00e61de35e0cc9c33845236d8103bcd16cebfa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 58b902732a0dcbfd30c7dd57b5c22a63fbc930ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076844"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078890"
 ---
 # <a name="idebugmanagedobjectsetfrommanagedobject"></a>IDebugManagedObject::SetFromManagedObject
 设置作为参数提供的值类的实例的值类对象的实例值。
@@ -50,5 +51,5 @@ int SetFromManagedObject(
 ## <a name="remarks"></a>备注
  此方法用于更改 [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md) 对象所表示的托管对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

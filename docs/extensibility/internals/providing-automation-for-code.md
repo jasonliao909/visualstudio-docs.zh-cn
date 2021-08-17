@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d81843ebe6782f1f65acb64c0816f94e958ae82343f3d55efb4dbd8094e9625
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 705fa036bdb0d76d02e9d4fcd540c3f3450c4f06
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028886"
 ---
 # <a name="providing-automation-for-code"></a>提供适用于 Code 的自动化
 不需要为代码创建自动化模型。 环境 SDK 并不提供用于执行此操作的示例。 若要深入了解代码模型，请参阅 <xref:EnvDTE.CodeModel> 对象。

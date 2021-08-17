@@ -11,17 +11,18 @@ ms.assetid: a837383f-7b39-4e06-b336-f1715b073dbe
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 60ca2f50512b998683f497fa04ccca96cc746657
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 906aec18fe6e82333e43db0efadd20cfd184eb66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042915"
 ---
 # <a name="ienumdebugports2skip"></a>IEnumDebugPorts2::Skip
 跳过指定数目的元素。
@@ -50,5 +51,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

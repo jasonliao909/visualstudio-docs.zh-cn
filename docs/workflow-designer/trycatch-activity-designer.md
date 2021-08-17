@@ -11,21 +11,22 @@ ms.assetid: 02a326c2-4009-442f-b7cb-e42121fd2992
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 23d9f1b0037600c6612a413cce7b089f6adbc7aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 662bea4838b06843bc529cd41adc3e2bf33425ca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045757"
 ---
 # <a name="trycatch-activity-designer"></a>TryCatch 活动设计器
 
 " **TryCatch** " 活动设计器用于创建和配置 <xref:System.Activities.Statements.TryCatch> 活动。
 
 ## <a name="the-trycatch-activity"></a>TryCatch 活动
- <xref:System.Activities.Statements.TryCatch>活动包含一个 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动、一个 **Catch \<TException>** 和一个 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动集合。 <xref:System.Activities.Statements.Catch%601> **TException** 类型的包含 <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> 和 <xref:System.Activities.Statements.Catch%601.Action%2A> 。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动引发任何异常，则 <xref:System.Activities.Statements.TryCatch> 活动将使用其 **Catch<TException \>** 集合来匹配该异常。 如果存在匹配项，则 <xref:System.Activities.Statements.Catch%601.Action%2A> 会执行相应 **捕获 \<TException>** 的，作为异常的错误处理逻辑。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 有关详细信息，请参阅 [Windows 工作流异常](/dotnet/framework/windows-workflow-foundation/exceptions)。
+ <xref:System.Activities.Statements.TryCatch>活动包含一个 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动、一个 **Catch \<TException>** 和一个 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动集合。 <xref:System.Activities.Statements.Catch%601> **TException** 类型的包含 <xref:System.Activities.Statements.Catch%601.ExceptionType%2A> 和 <xref:System.Activities.Statements.Catch%601.Action%2A> 。 将它们结合使用可实现典型的基于异常的错误处理机制。 <xref:System.Activities.Statements.TryCatch> 活动尝试执行其 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 活动引发任何异常，则 <xref:System.Activities.Statements.TryCatch> 活动将使用其 **Catch<TException \>** 集合来匹配该异常。 如果存在匹配项，则 <xref:System.Activities.Statements.Catch%601.Action%2A> 会执行相应 **捕获 \<TException>** 的，作为异常的错误处理逻辑。 如果 <xref:System.Activities.Statements.TryCatch.Try%2A> 节中的活动已成功完成或 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中的活动已成功完成，则 <xref:System.Activities.Statements.TryCatch> 活动执行其 <xref:System.Activities.Statements.TryCatch.Finally%2A> 活动。 有关详细信息，请参阅[Windows 工作流异常](/dotnet/framework/windows-workflow-foundation/exceptions)。
 
 ### <a name="using-the-trycatch-activity-designer"></a>使用 TryCatch 活动设计器
 
@@ -43,12 +44,12 @@ ms.locfileid: "99889299"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.TryCatch> 活动的可选友好名称。 默认值是 TryCatch。|
-|<xref:System.Activities.Statements.TryCatch.Try%2A>|False|在 <xref:System.Activities.Statements.TryCatch> 执行时首先执行的活动。|
-|<xref:System.Activities.Statements.TryCatch.Catches%2A>|False|活动引发异常时要检查的 **捕获** 元素的集合 <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
-|<xref:System.Activities.Statements.TryCatch.Finally%2A>|False|执行完 <xref:System.Activities.Statements.TryCatch.Try%2A> 以及 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活动时要执行的活动。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.TryCatch> 活动的可选友好名称。 默认值是 TryCatch。|
+|<xref:System.Activities.Statements.TryCatch.Try%2A>|错误|在 <xref:System.Activities.Statements.TryCatch> 执行时首先执行的活动。|
+|<xref:System.Activities.Statements.TryCatch.Catches%2A>|错误|活动引发异常时要检查的 **捕获** 元素的集合 <xref:System.Activities.Statements.TryCatch.Try%2A> 。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
+|<xref:System.Activities.Statements.TryCatch.Finally%2A>|错误|执行完 <xref:System.Activities.Statements.TryCatch.Try%2A> 以及 <xref:System.Activities.Statements.TryCatch.Catches%2A> 集合中的任何必要活动时要执行的活动。<br /><br /> 需要在 <xref:System.Activities.Statements.TryCatch.Catches%2A> 中至少添加一个活动或在 <xref:System.Activities.Statements.TryCatch.Finally%2A> 块中添加一个活动。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [Rethrow](../workflow-designer/rethrow-activity-designer.md)

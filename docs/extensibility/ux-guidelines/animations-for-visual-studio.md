@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 933856cffcf7a012be7d9774b3d703aa92e335fb5d7939d804ef49043875f1a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ded908acf84f4d932c95fe70d8dab209caa2b44
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388323"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028678"
 ---
 # <a name="animations-for-visual-studio"></a>Visual Studio 的动画
 ## <a name="animation-fundamentals"></a>动画基础知识
@@ -170,61 +170,61 @@ ms.locfileid: "121388323"
 
 - 提醒用户有关错误条件
 
-- 中断用户以查看他们是否想要参加其他内容
+- 中断用户以查看他们是否希望参与其他操作
 
-- 轻轻向用户通知进程已完成或已更改，如下载完成时。
+- 通知用户进程已完成或已更改，例如下载完成时。
 
 #### <a name="simulate"></a>Simulate
-此类别涵盖 physicality 和维数。
+此类别涵盖物理性和维度。
 
-- 说明对象来源或对象的目标位置
+- 说明对象来自何处或对象前往何处
 
 - 展开和折叠或打开和关闭
 
-- 平移、滚动和翻页
+- 平移、滚动和页轮次
 
-- 堆叠和 z 顺序
+- 堆叠和 z 排序
 
-- 轮播和折叠
+- Carousel 和可折叠
 
 - 翻转和旋转 UI
 
 #### <a name="response-and-progress-indicators"></a>响应和进度指示器
-进度指示器具有几个显著的优点：
+进度指示器有几个明显的优势：
 
-- 确定性和不确定的进度指示器再次向用户，系统尚未崩溃并正在处理问题。
+- 确定性和不确定的进度指示器都使用户确信系统未崩溃，并且正在解决问题。
 
-- 确定性指示器使用户能够了解该操作的进展情况，并使感觉更接近完成。
+- 确定指示器可让用户了解操作的进度，以及接近完成感。
 
 ## <a name="animation-patterns"></a><a name="BKMK_AnimationPatterns"></a> 动画模式
 
 ### <a name="overview"></a>概述
-Visual Studio 中的动画旨在提供特定的功能，而不会影响用户工作效率。 通常，Visual Studio 中的动画应为：
+动画Visual Studio旨在提供特定功能，而不会妨碍用户工作效率。 通常，动画Visual Studio应为：
 
-- 小型和非引人注目
+- 小且无介入
 
-- 自然和现实
+- 自然且真实
 
-- 微妙和温柔
+- 细微且精细
 
 - 快速高效
 
-- 宽松，不十万火急
+- 宽松，而不是舒适
 
-下图显示了我们建议 Visual Studio 的动画样式。 使用淡入/淡出的动画或细微动画是最常用的。 移动动画的应用程序（如展开和收缩、X 和 Y 位置更改和旋转）会受到限制。
+此图显示了我们建议用于Visual Studio。 最常用动画或细微动画（如淡入/淡出）。 移动动画的应用有限，例如展开和收缩、X 和 Y 位置更改以及旋转。
 
 ![Visual Studio 的建议动画样式](../../extensibility/ux-guidelines/media/1202-a_vsanimstyles.png "1202-a_VSAnimStyles")<br />Visual Studio 的建议动画样式
 
-#### <a name="appear-and-disappear"></a>显示并消失
-使用此模式时，元素可以在无需过渡动画的情况下从可见切换到无视图切换。
+#### <a name="appear-and-disappear"></a>出现和消失
+通过此模式，元素从可见切换到视图外，在无转换动画的情况下切换回。
 
-![显示并消失动画](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />显示并消失动画
+![显示和消失动画](../../extensibility/ux-guidelines/media/1202-b_appearanddisappear.png "1202-b_AppearAndDisappear")<br />显示和消失动画
 
-##### <a name="correct-usage"></a>正确使用
-需要立即显示或消失的全新 UI 元素，以便用户既不分散也不会受到阻碍。 此外，转换速度缓慢的动画可能会被视为性能拖动，这不会出现在外观上并消失的样式。
+##### <a name="correct-usage"></a>正确用法
+需要立即显示或消失的新 UI 元素，以便用户既不会分散注意力，也不会被干扰。 此外，缓慢移动的动画可能被视为性能拖动，它不会与显示和消失样式一起发生。
 
 ##### <a name="incorrect-usage"></a>用法不正确
-UI 出现的情况突然出现，用户不知道发生了什么情况，添加动画会有助于上下文理解。
+UI 突然出现时，用户不知道发生了什么情况，添加动画有助于了解上下文。
 
 ##### <a name="animation-properties"></a>动画属性
 时间延迟通常为零秒。
@@ -237,20 +237,20 @@ UI 出现的情况突然出现，用户不知道发生了什么情况，添加�
 - 展开和折叠代码区域
 
 #### <a name="fade-in-and-fade-out"></a>淡入和淡出
-使用此模式时，UI 元素将从不可见 (0% opacity) 转换为可见 (100% 不透明) ，反之亦然。
+在此模式中，UI 元素从不可见 (0% 不透明度) 转换为可见 (100% 不透明度) 反之亦然。
 
 ![淡入和淡出动画](../../extensibility/ux-guidelines/media/1202-c_fadeinfadeout.png "1202-c_FadeInFadeOut")<br />淡入和淡出动画
 
-##### <a name="correct-usage"></a>正确使用
-这是最常推荐的 UI 动画。 这是一种微妙的影响，它增加了不中断流的兴趣。 在某些情况下，用户甚至可能不会意识到有动画，觉察平滑和流动的 UI 系统。
+##### <a name="correct-usage"></a>正确用法
+这是最常推荐的 UI 动画。 这是一种细微的效果，可增加兴趣而不会中断流。 在某些情况下，用户甚至可能没有意识到存在动画，它可感知平滑且流动的 UI 系统。
 
 ##### <a name="animation-properties"></a>动画属性
 
-- 开始不透明度：0% （对于淡入，100%）
+- 开始不透明度：0% 表示淡入，100% 用于淡出
 
-- 结束不透明度：100% 的淡入，0% 表示淡出
+- 结束不透明度：淡入为 100%，淡出为 0%
 
-- 持续时间：作为组合动画序列的一部分使用时，200毫秒独立，100毫秒
+- 持续时间：200 毫秒独立，用作组合动画序列的一部分时为 100 毫秒
 
 - 缓动样式：正弦 InOut
 
@@ -258,75 +258,75 @@ UI 出现的情况突然出现，用户不知道发生了什么情况，添加�
 
 - 自动隐藏工具窗口
 
-- 菜单打开并关闭
+- 菜单打开和关闭
 
 - 背景和前景选项卡转换
 
 #### <a name="color-blend-from-a-to-b"></a>从 A 到 B 的颜色混合
-使用此模式时，UI 元素从颜色 A 变为颜色 B。
+在此模式中，UI 元素从颜色 A 更改为颜色 B。
 
 ![颜色混合动画](../../extensibility/ux-guidelines/media/1202-d_colorblend.png "1202-d_ColorBlend")<br />颜色混合动画
 
-##### <a name="correct-usage"></a>正确使用
-当 UI 元素将颜色从一个上下文或状态更改为另一个时，转换为动态转换。
+##### <a name="correct-usage"></a>正确用法
+当 UI 元素将颜色从一个上下文或状态更改到另一个上下文或状态时，作为动画转换。
 
 ##### <a name="animation-properties"></a>动画属性
 
-- 开始颜色： UI 特定
+- 起始颜色：特定于 UI
 
-- 结束颜色： UI 特定
+- 结束颜色：特定于 UI
 
-- 持续时间：作为组合动画序列的一部分使用时，200毫秒独立，100毫秒
+- 持续时间：200 毫秒独立，用作组合动画序列的一部分时为 100 毫秒
 
 - 缓动样式：正弦 InOut
 
 ##### <a name="examples"></a>示例
 
-- 文档窗口状态转换 (活动、上次活动和非活动状态) 
+- 文档窗口状态转换 (活动状态、上次活动状态和未活动状态) 
 
-- 工具窗口状态转换 (重点和失去焦点) 
+- 工具窗口状态转换 (焦点和未聚焦) 
 
-#### <a name="expand-and-contract"></a>展开和收缩
-使用此模式时，UI 元素以 X、Y 或双向方向展开。
+#### <a name="expand-and-contract"></a>展开和协定
+在此模式中，UI 元素在 X、Y 或两个方向扩展。
 
-![展开和收缩动画](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />展开和收缩动画
+![展开和协定动画](../../extensibility/ux-guidelines/media/1202-e_expandcontract.png "1202-e_ExpandContract")<br />展开和协定动画
 
-##### <a name="correct-usage"></a>正确使用
-当 UI 元素将大小从一个上下文更改到另一个上下文时，为动态转换。
+##### <a name="correct-usage"></a>正确用法
+当 UI 元素将大小从一个上下文更改到另一个上下文时，作为动画转换。
 
 ##### <a name="animation-properties"></a>动画属性
 
-- X 刻度：% 或特定的维度 (以像素为单位) 
+- X 刻度：以像素为单位 (百分比或特定) 
 
-- Y 刻度：% 或特定的维度 (（以像素为单位）) 
+- Y 刻度：以像素为单位 (百分比或特定) 
 
-- 定位点位置：对于从右到左书写的语言，通常为左上角 () 或右上 () 
+- 定位点位置：通常 (从左到右的语言) 或右上方 (从右到左) 
 
-- 持续时间：作为组合动画序列的一部分使用时，200毫秒独立，100毫秒
+- 持续时间：200 毫秒独立，用作组合动画序列的一部分时为 100 毫秒
 
 ##### <a name="examples"></a>示例
 
-- 体系结构资源管理器面板展开和折叠
+- "体系结构资源管理器"面板展开和折叠
 
-- Visual Studio 2017 开始页面项展开和折叠
+- Visual Studio 2017 起始页项展开和折叠
 
-#### <a name="x-y-position-change"></a>X Y 位置更改
-使用此模式时，UI 元素将更改其 X 或 Y 位置，或同时更改两者。
+#### <a name="x-y-position-change"></a>X-Y 位置更改
+在此模式中，UI 元素会更改其 X 或 Y 位置或两者。
 
-![X Y 位置更改动画](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />X Y 位置更改动画
+![X-Y 位置更改动画](../../extensibility/ux-guidelines/media/1202-f_xypositionchange.png "1202-f_XYPositionChange")<br />X-Y 位置更改动画
 
-##### <a name="correct-usage"></a>正确使用
-当 UI 元素将位置从一个上下文更改到另一个上下文时，为动态转换。
+##### <a name="correct-usage"></a>正确用法
+当 UI 元素将位置从一个上下文更改到另一个上下文时，作为动画转换。
 
 ##### <a name="animation-properties"></a>动画属性
 
-- 开始 X 和 Y 位置： UI 特定
+- 起始 X 和 Y 位置：特定于 UI
 
-- 结束 X 和 Y 位置： UI 特定
+- 结束 X 和 Y 位置：特定于 UI 的位置
 
 - 运动路径：无
 
-- 持续时间：作为组合动画序列的一部分使用时，200毫秒独立，100毫秒
+- 持续时间：200 毫秒独立，用作组合动画序列的一部分时为 100 毫秒
 
 - 缓动样式：正弦 InOut
 

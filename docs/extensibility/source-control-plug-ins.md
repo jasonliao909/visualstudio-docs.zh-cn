@@ -1,6 +1,6 @@
 ---
 title: 源代码管理插件|Microsoft Docs
-description: 本节中的文章介绍了使源代码管理系统能够与源代码管理集成的完整接口Visual Studio。
+description: 本节中的文章介绍使源代码管理系统能够与源代码管理集成的完整接口Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1a16c639e069409bdb4004b1d8680a3361d65c3c04ca13c18c82e94ae1b52eab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: abc8c8f439fa104ae84de8ffdc6f8d96a0909998
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121259911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028639"
 ---
 # <a name="source-control-plug-ins"></a>源代码管理插件
 源代码管理插件 SDK 参考部分包含使源代码管理系统能够与 集成的完整接口规范 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 它指定源代码管理插件必须实现的各种函数和数据类型的语法和语义，以与 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] IDE (集成) 。
@@ -53,6 +53,6 @@ ms.locfileid: "121259911"
 
 - [源代码管理插件测试指南](../extensibility/internals/test-guide-for-source-control-plug-ins.md) 介绍与源代码管理插件相关的测试过程。
 
-- [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md) 讨论如何创建源代码管理插件，该插件提供源代码管理功能，同时将源代码管理用户界面 ([!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] UI) 。
+- [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md) 讨论如何创建源代码管理插件，该插件在使用源代码管理用户界面和 UI (时 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 提供源代码) 。
 
 - [Visual Studio SDK 参考](../extensibility/visual-studio-sdk-reference.md)显示参考主题的列表。
