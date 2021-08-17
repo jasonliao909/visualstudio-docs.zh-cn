@@ -1,6 +1,6 @@
 ---
 title: EnableEditOfLocationField 元素（Visual Studio 模板）
-description: 了解 EnableEditOfLocationField 元素以及它如何指定用户是否可以编辑位置字段。
+description: 了解 EnableEditOfLocationField 元素及其如何指定用户能否编辑位置字段。
 titleSuffix: ''
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,15 +14,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3f2ca8799b0816ffe5c33d954d362183f330f25
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 488d39d0126ca150f440c2eae3a95de9177c5f4d323b4b0f471be6d2840158d6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070188"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376867"
 ---
-# <a name="enableeditoflocationfield-element-visual-studio-templates"></a> (Visual Studio 模板的 EnableEditOfLocationField 元素) 
-指定用户是否可以编辑位置字段。
+# <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (Visual Studio模板) 
+指定用户能否编辑位置字段。
 
  \<VSTemplate> \<TemplateData>
  \<EnableEditOfLocationField>
@@ -51,15 +51,15 @@ ms.locfileid: "105070188"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 文本必须是 `true` 或 `false` ，指示用户是否可以在 "**新建项目**" 对话框中编辑 "**位置**" 文本框。
+ 文本必须是 或 ，指示用户是否可以编辑"新建位置"对话框中的"位置Project `true` `false` 文本框。  
 
 ## <a name="remarks"></a>备注
- `EnableEditOfLocationField` 是可选元素。 默认值为 `true` ，这允许用户在 "**新建项目**" 对话框的 "**位置**" 文本框中编辑值。
+ `EnableEditOfLocationField` 是可选元素。 默认值为 ，允许用户在"新建位置"对话框的"位置"文本框Project `true` 值。  
 
- 在 " **新建项目** " 对话框中，" **位置** " 文本框指定用于保存新项目的目录。
+ 在 **"新建Project"** 对话框中，"位置"文本框指定保存新项目的目录。
 
 ## <a name="example"></a>示例
- 下面的示例演示了 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows 应用程序的元数据。
+ 以下示例演示了应用程序Windows [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

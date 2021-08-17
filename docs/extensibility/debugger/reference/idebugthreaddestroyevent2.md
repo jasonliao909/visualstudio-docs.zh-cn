@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8c91f41129716868a505475b8d447563ec93d5d4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: df18622d970bfc6ccf794eaec0eb52e0a5c15ac97cfe2a9c483bd715f272b6f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095824"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121291930"
 ---
 # <a name="idebugthreaddestroyevent2"></a>IDebugThreadDestroyEvent2
 当线程运行完成时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c20ddd8fbf05422bfbc948449c2cf3265c7e89c4212add41e220e6f04c77304b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7816072d0cb5ee55c753eea4e1d0bdf2e8bafe1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394636"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026229"
 ---
 # <a name="how-to-open-office-solutions-without-running-code"></a>如何：在不运行代码的情况下打开 Office 解决方案
   即使最终用户的 Office 应用程序中的安全设置设置为 "高"，使用托管代码扩展创建的 Microsoft Office 解决方案也会运行。 这是因为 .net 程序集代码安全由 Microsoft .NET Framework 而不是 Microsoft Office 管理。

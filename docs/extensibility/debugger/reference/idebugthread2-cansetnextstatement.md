@@ -56,7 +56,7 @@ int CanSetNextStatement (
 ## <a name="remarks"></a>备注
  如果此方法返回 `S_OK` ，则调用 [SetNextStatement](../../../extensibility/debugger/reference/idebugthread2-setnextstatement.md) 方法以实际设置下一个语句。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

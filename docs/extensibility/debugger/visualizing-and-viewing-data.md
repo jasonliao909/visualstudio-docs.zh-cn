@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bd0fa59cec59e27949bf9d8d209bc66221d3505d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 85cc7d58eccae8a76f13f7d5be1a9a0530b8045ffe5209f57d3e97feef3fc99c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095109"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448450"
 ---
 # <a name="visualizing-and-viewing-data"></a>可视化和查看数据
 类型可视化工具和自定义查看器以对开发人员快速有意义的方式呈现数据。 表达式评估 (企业版) 可以支持第三方类型可视化工具，并提供其自己的自定义查看器。

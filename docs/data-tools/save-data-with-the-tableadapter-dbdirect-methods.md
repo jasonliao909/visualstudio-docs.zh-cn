@@ -42,7 +42,7 @@ ms.locfileid: "121346851"
 
 - 添加方法以直接访问数据库，并执行插入、更新和删除操作。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
@@ -171,6 +171,6 @@ ms.locfileid: "121346851"
 
 - 通过从“数据源”窗口中选择“使用向导配置数据集”，将其他表添加到数据集中。 可以通过将相关节点拖到窗体上来添加显示相关数据的控件。 有关详细信息，请参阅 [数据集中的关系](relationships-in-datasets.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

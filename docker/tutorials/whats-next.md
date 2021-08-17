@@ -9,12 +9,12 @@ ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 831d7bdaaa93067f01178e98fcba9577ee248897da33f04c35e07e2d6c85b519
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e1e8d23628c746c892a20e1769a7c157a425fc6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121349100"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045432"
 ---
 # <a name="whats-next"></a>后续步骤
 

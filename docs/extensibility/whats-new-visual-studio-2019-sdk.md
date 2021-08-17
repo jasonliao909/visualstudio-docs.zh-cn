@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 2019 SDK 的新增功能 |Microsoft Docs
-description: Visual Studio SDK Visual Studio 2019 的新增功能和更新功能，包括编辑器注册增强功能。
+title: Visual Studio 2019 SDK |Microsoft Docs
+description: SDK Visual Studio 2019 Visual Studio新增和更新的功能，包括编辑器注册增强功能。
 ms.custom: SEO-VS-2020
 ms.date: 03/29/2019
 ms.topic: conceptual
@@ -20,31 +20,31 @@ ms.locfileid: "121400460"
 ---
 # <a name="whats-new-in-the-visual-studio-2019-sdk"></a>Visual Studio 2019 SDK 的新增功能
 
-Visual Studio SDK 具有适用于 Visual Studio 2019 的下列新增功能和更新功能。
+Visual Studio SDK 具有以下适用于 Visual Studio 2019 的新增和更新的功能。
 
-## <a name="synchronously-autoloaded-extensions-warning"></a>同步加载扩展警告
+## <a name="synchronously-autoloaded-extensions-warning"></a>同步自动加载扩展警告
 
-如果任何安装的扩展插件在启动时同步加载，则用户现在会看到警告。 你可以在 [同步加载扩展](synchronously-autoloaded-extensions.md)中了解有关警告的详细信息。
+如果用户安装的任何扩展在启动时同步自动加载，则用户现在会看到警告。 可以在同步自动加载的扩展 [中了解有关警告的更多信息](synchronously-autoloaded-extensions.md)。
 
-## <a name="single-unified-visual-studio-sdk"></a>单个统一 Visual Studio SDK
+## <a name="single-unified-visual-studio-sdk"></a>单一、统Visual Studio SDK
 
-现在可以通过单个 NuGet [VisualStudio](https://www.nuget.org/packages/microsoft.visualstudio.sdk)包获取全部 Visual Studio SDK 资产。
+现在，可以通过单个 Visual Studio包[Microsoft.VisualStudio.SDK](https://www.nuget.org/packages/microsoft.visualstudio.sdk)获取NuGet SDK 资产。
 
 ## <a name="editor-registration-enhancements"></a>编辑器注册增强功能
 
-自它创建后，Visual Studio 支持自定义编辑器注册，其中编辑器可以为特定扩展声明其相关性 (例如，.xaml 和 .rc) ，或者它适用于任何扩展名 (. * ) 。 从 Visual Studio 2019 版16.1 开始，我们扩大了对编辑器注册的支持。
+自创建以来，Visual Studio 支持自定义编辑器注册，其中编辑器可以声明其特定扩展（例如 .xaml 和 .rc) ）的关联 (或者它适用于任何扩展 (.*) 。 从 2019 Visual Studio 16.1 开始，我们扩展了对编辑器注册的支持。
 
 ### <a name="filenames"></a>文件名
 
-除了、或而不是注册特定文件扩展名的支持外，编辑器还可以通过将新属性应用于编辑器的包来注册它是否支持特定文件名 `ProvideEditorFilename` 。
+除了注册对特定文件扩展名的支持，编辑器还可以注册它支持特定文件名，具体方法为将新属性应用于编辑器的 `ProvideEditorFilename` 包。
 
-例如，支持所有 json 文件的编辑器会将此 `ProvideEditorExtension` 属性应用到其包：
+例如，支持所有 .json 文件的编辑器将此属性 `ProvideEditorExtension` 应用于其包：
 
 ```cs
 [ProvideEditorExtension(typeof(MyEditor), ".json", MyEditor.Priority)]
 ```
 
-从16.1 开始，如果 MyEditor 仅支持几个已知的 json 文件，则可以将这些 `ProvideEditorFilename` 属性应用到其包：
+从 16.1 开始，如果 MyEditor 仅支持几个已知的 .json 文件，它可以改为将这些属性应用于 `ProvideEditorFilename` 其包：
 
 ```cs
 [ProvideEditorFilename(typeof(MyEditor), "particular.json", MyEditor.Priority)]
@@ -53,16 +53,16 @@ Visual Studio SDK 具有适用于 Visual Studio 2019 的下列新增功能和更
 
 ### <a name="uicontexts"></a>UIContexts
 
-编辑器可以注册一个或多个表示启用时的 UIContexts。 UIContexts 是通过将一个或多个实例应用 `ProvideEditorUIContextAttribute` 于注册编辑器的包来注册的。
+编辑器可以注册一个或多个 UIContext，这些 UIContext 表示启用时。 UIContexts 通过向注册编辑器的包应用 的一 `ProvideEditorUIContextAttribute` 个或多个 实例进行注册。
 
 如果编辑器已注册 UIContexts：
 
-- 如果打开具有给定扩展名的文件时，其中至少有一个已注册的 UIContexts 处于活动状态，则编辑器将包含在编辑器搜索中。
-- 如果没有任何已注册的 UIContexts 处于活动状态，编辑器将不包含在编辑器搜索中。
+- 如果打开具有给定扩展名的文件时，至少有一个已注册的 UIContext 处于活动状态，编辑器将包含在编辑器搜索中。
+- 如果任何已注册的 UIContext 均不处于活动状态，编辑器搜索中不包含编辑器。
 
-如果编辑器未注册任何 UIContexts，则它始终包含在编辑器中搜索该扩展插件。
+如果编辑器未注册任何 UIContext，它始终包含在该扩展的编辑器搜索中。
 
-例如，如果编辑器仅在 c # 项目打开时才可用，则它可以通过应用特性来声明此关联 `ProvideEditorUIContext` ：
+例如，如果编辑器仅在 C# 项目打开时可用，则可以通过应用属性来声明此 `ProvideEditorUIContext` 关联：
 
 ```cs
 [ProvideEditorUIContext(typeof(MyEditor), KnownUIContexts.CSharpProjectContext)]

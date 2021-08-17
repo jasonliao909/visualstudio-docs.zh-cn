@@ -70,6 +70,6 @@ CommandPlacements 元素将 CommandPlacement 元素和其他 CommandPlacements �
 </CommandPlacements>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [CommandPlacement 元素](../extensibility/commandplacement-element.md)
 - [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

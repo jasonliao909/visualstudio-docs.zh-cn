@@ -27,12 +27,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d917ff087005264510b512f0a028c5621e74f8a6f79ab80ac9b119d647a1cc8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 032753f2274f17ab99a80b1df45fc5e1627b36de
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403992"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080684"
 ---
 # <a name="create-clickonce-applications-for-others-to-deploy"></a>创建供其他人部署的 ClickOnce 应用程序
 并非所有创建应用程序部署ClickOnce都计划自行部署应用程序。 他们中的许多只是使用 ClickOnce 打包应用程序，然后将文件上手给客户，例如大型公司。 客户成为负责在其网络上托管应用程序的人。 本主题讨论在版本 3.5 之前版本 .NET Framework部署中固有的一些问题。 然后，它描述了使用 3.5 版中新的"使用清单建立信任"功能.NET Framework解决方案。 最后，最后提供为仍在使用旧版 ClickOnce 部署的客户创建部署的建议.NET Framework。
@@ -47,7 +47,7 @@ ms.locfileid: "121403992"
  与代码签名相关的另一个问题是部署清单中的 元素，它 `deploymentProvider` ClickOnce在何处查找应用程序更新。 此元素在签名之前必须添加到部署清单中。 如果之后添加此元素，则必须重新签名部署清单。
 
 ### <a name="require-the-customer-to-sign-the-deployment-manifest"></a>要求客户对部署清单进行签名
- 这种非唯一部署问题的一种解决方案是让开发人员对应用程序清单进行签名，客户对部署清单进行签名。 虽然此方法有效，但它会引入其他问题。 由于 Authenticode 证书必须仍为受保护的资产，因此客户无法仅将证书授予开发人员对部署进行签名。 尽管客户可以使用随 .NET Framework SDK 免费提供的工具自行对部署清单进行签名，但这可能比客户愿意或能够提供的技术知识要多。 在这种情况下，开发人员通常会创建应用程序、网站或其他机制，客户可以通过这些机制提交其应用程序版本进行签名。
+ 这种非唯一部署问题的一种解决方案是让开发人员对应用程序清单进行签名，客户对部署清单进行签名。 虽然此方法有效，但它会引入其他问题。 由于 Authenticode 证书必须仍为受保护的资产，因此客户无法仅将证书授予开发人员对部署进行签名。 虽然客户可以使用随 .NET Framework SDK 免费提供的工具自行签署部署清单，但这可能需要更多的技术知识，而不是客户愿意或能够提供的知识。 在这种情况下，开发人员通常会创建应用程序、网站或其他机制，客户可以通过这些机制提交其应用程序版本进行签名。
 
 ### <a name="the-impact-of-customer-signing-on-clickonce-application-security"></a>客户签名对应用程序ClickOnce的影响
  即使开发人员和客户同意客户对应用程序清单进行签名，这也引发了围绕应用程序标识的其他问题，尤其是在它适用于受信任的应用程序部署时。  (有关此功能的信息，请参阅受信任的应用程序部署概述 [。) ](../deployment/trusted-application-deployment-overview.md)假设 Adventure Works 想要配置其客户端计算机，以便 Microsoft Corporation 提供给它们的任何应用程序以完全信任方式运行。 如果 Adventure Works 对部署清单进行签名，ClickOnce将使用 Adventure Work 的安全签名来确定应用程序的信任级别。
@@ -59,12 +59,12 @@ ms.locfileid: "121403992"
 
  将自签名证书用于部署清单具有几个优点。 通过消除客户获取或创建自己的 Authenticode 证书的要求，简化了客户的部署，同时允许开发人员在应用程序上维护自己的品牌 `<useManifestForTrust>` 标识。 结果是一组更安全且具有唯一应用程序标识的已签名部署。 这消除了将同一应用程序部署到多个客户时可能会发生的潜在冲突。
 
- 有关如何创建已启用 的 ClickOnce 部署的分步信息，请参阅演练：手动部署不需要重新签名并保留品牌信息的 `<useManifestForTrust>` [ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
+ 有关如何创建已启用 的 ClickOnce 部署的分步信息，请参阅演练：手动部署不需要重新签名并保留品牌信息的 `<useManifestForTrust>` [ClickOnce](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)应用程序。
 
 ### <a name="how-application-manifest-for-trust-works-at-run-time"></a>用于信任的应用程序清单如何运行时工作
  若要更好地了解使用应用程序清单进行信任的工作原理，请考虑以下示例。 面向 ClickOnce 3.5 .NET Framework应用程序由 Microsoft 创建。 应用程序清单使用 `<useManifestForTrust>` 元素，由 Microsoft 签名。 Adventure Works 使用自签名证书对部署清单进行签名。 Adventure Works 客户端配置为信任由 Microsoft 签名的任何应用程序。
 
- 当用户单击指向部署清单的链接时，ClickOnce在用户计算机上安装应用程序。 证书和部署信息将唯一标识应用程序ClickOnce客户端计算机上。 如果用户尝试从其他位置再次安装同一应用程序，ClickOnce使用此标识来确定客户端上已存在该应用程序。
+ 当用户单击指向部署清单的链接时，ClickOnce在用户计算机上安装应用程序。 证书和部署信息唯一地标识应用程序ClickOnce客户端计算机上。 如果用户尝试从其他位置再次安装同一应用程序，ClickOnce使用此标识来确定客户端上已存在该应用程序。
 
  接下来ClickOnce验证码证书，该证书用于对应用程序清单进行签名，该证书确定应用程序ClickOnce级别。 由于 Adventure Works 已配置其客户端以信任 Microsoft 签名的任何应用程序，因此ClickOnce应用程序被授予完全信任。 有关详细信息，请参阅 [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
 
@@ -76,12 +76,12 @@ ms.locfileid: "121403992"
 
  此方法的一个缺点是实现该方法所需的时间和费用。 虽然可以使用 .NET Framework SDK 中提供的工具生成此类服务，但它会为产品生命周期添加更多的开发时间。
 
- 如本主题前面所述，另一个缺点是，每个客户的应用程序版本将具有相同的应用程序标识，这可能会导致冲突。 如果这是一个问题，开发人员可以更改生成部署清单时所使用的"名称"字段，为每个应用程序提供唯一的名称。 这将为每个应用程序版本创建单独的标识，并消除任何潜在的标识冲突。 此字段对应于 Mage.exe 的参数，以及 MageUI.exe 中"名称 `-Name` "字段。 
+ 如本主题前面所述，另一个缺点是，每个客户的应用程序版本将具有相同的应用程序标识，这可能会导致冲突。 如果这是一个问题，开发人员可以更改生成部署清单时所使用的"名称"字段，为每个应用程序提供唯一的名称。 这将为每个应用程序版本创建单独的标识，并消除任何潜在的标识冲突。 此字段对应于 Mage.exe 的 参数，并对应于 MageUI.exe 中"名称" `-Name` 选项卡上的"名称"字段。 
 
  例如，假设开发人员已创建名为 Application1 的应用程序。 开发人员可以创建多个特定于客户的名称变体的部署，例如 Application1-CustomerA、Application1-CustomerB 等，而不是创建"名称"字段设置为 Application1 的单个部署。
 
 ### <a name="deploy-using-a-setup-package"></a>使用安装包进行部署
- 第二种可能的部署策略是生成 Microsoft 安装程序项目，以执行应用程序ClickOnce部署。 这可以使用多种不同格式之一提供：作为 MSI 部署、作为安装程序可执行文件 (.EXE) 或作为 cabinet (.cab) 文件以及批处理脚本。
+ 第二种可能的部署策略是生成 Microsoft 安装程序项目，以执行应用程序ClickOnce部署。 这可以使用多种不同格式之一提供：作为 MSI 部署、作为安装程序可执行文件 (.EXE) 或作为 cabinet (.cab) 文件与批处理脚本一起提供。
 
  使用此技术，开发人员将为客户提供一个部署，其中包括应用程序文件、应用程序清单和用作模板的部署清单。 客户将运行安装程序，该程序会提示用户提供部署 URL (服务器或文件共享位置，用户将从该位置安装 ClickOnce 应用程序) 以及数字证书。 安装程序应用程序还可以选择提示输入其他ClickOnce选项，例如更新检查间隔。 收集此信息后，安装程序将生成实际部署清单，对清单进行签名，ClickOnce应用程序发布到指定的服务器位置。
 
@@ -98,7 +98,7 @@ ms.locfileid: "121403992"
 ### <a name="have-customer-generate-deployment-manifest"></a>使客户生成部署清单
  第三种可能的部署策略是仅将应用程序文件和应用程序清单上线。 在此方案中，客户负责使用 .NET Framework SDK 生成部署清单并签名。
 
- 此方法的缺点是，它要求客户安装 .NET Framework SDK 工具，并拥有具备使用这些工具的开发人员或系统管理员。 某些客户可能要求一个解决方案，而该解决方案几乎不需要或不需要任何技术工作。
+ 此方法的缺点是要求客户安装 .NET Framework SDK 工具，并拥有具备使用这些工具的开发人员或系统管理员。 某些客户可能要求一个解决方案，而该解决方案几乎不需要或不需要任何技术工作。
 
 ## <a name="see-also"></a>请参阅
 - [在不ClickOnce的情况下为测试和生产服务器部署应用程序](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)

@@ -1,6 +1,6 @@
 ---
 title: 演练：创建 Web 部件以用于SharePoint |Microsoft Docs
-description: 为 SharePoint。 Web 部件允许用户通过使用浏览器直接更改SharePoint页面的内容、外观和行为。
+description: 为 SharePoint。 Web 部件允许用户使用浏览器直接更改SharePoint页面的内容、外观和行为。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -45,7 +45,7 @@ Web 部件在数据网格中显示员工。 用户指定包含员工数据的文
     > [!NOTE]
     > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - 支持的 Microsoft Windows 和 SharePoint 版本。
 
@@ -217,7 +217,7 @@ Web 部件在数据网格中显示员工。 用户指定包含员工数据的文
 
      所有员工都显示在 Web 部件中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 [创建 web 部件SharePoint](../sharepoint/creating-web-parts-for-sharepoint.md) 
 [如何：创建SharePoint Web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md) 

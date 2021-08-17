@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68563b8a62cfd1786d791b324c4db834f6a98dc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a8c2f4ceddc70126d1f749831caa5b3816f8f688268cd5245819eae1982e45e0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041836"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336780"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-12"></a>源代码管理插件 API 版本1.2 中的新增功能&#39;
 本部分重点介绍源代码管理插件 API 版本1.2 中的高级源代码控制功能。 下面列出了版本1.2 中的新增功能：

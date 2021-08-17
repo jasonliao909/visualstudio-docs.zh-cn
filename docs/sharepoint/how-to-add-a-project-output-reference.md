@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 9f3b97019003d2cad0109dbbd08b5471f98704abe6614e1ee4d50c77c8fa9cee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d3d7bea0d57e4351fc022b2f4c45ecc1b6423e4b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332321"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060110"
 ---
 # <a name="how-to-add-a-project-output-reference"></a>如何：添加项目输出引用
   若要将不 SharePoint 的项目程序集部署 (或 Silverlight 项目中的 .xap 文件) 到 SharePoint，请将它们添加为项目输出引用。

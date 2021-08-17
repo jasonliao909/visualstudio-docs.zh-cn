@@ -11,17 +11,18 @@ ms.assetid: d552cc92-963f-43c1-949f-ae6b63a427b8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 80420f12369ef038c2faccb51c9b1bfc9b0073a4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9aadc89257d86bac9432026d368c1f84e963152a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088414"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079826"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 获取与此代码上下文相对应的文档上下文。 文档上下文表示源文件中的一个位置，该位置对应于生成此指令的源代码。
@@ -50,6 +51,6 @@ int GetDocumentContext(
 ## <a name="remarks"></a>备注
  通常，可以将文档上下文视为源文件中的一个位置，而代码上下文是代码指令在执行流中的位置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

@@ -43,11 +43,11 @@ int GetOffset(
 
 ## <a name="parameters"></a>参数
 `pPosition`\
-[in， out]一 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，该结构用函数在文档中的位置填充。
+[in， out]一 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，该结构使用函数在文档中的位置进行填充。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionPosition2](../../../extensibility/debugger/reference/idebugfunctionposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

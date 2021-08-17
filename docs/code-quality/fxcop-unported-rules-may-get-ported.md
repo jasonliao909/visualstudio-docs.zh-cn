@@ -1,5 +1,5 @@
 ---
-description: 以下 FxCop 旧分析规则尚未作为分析器实现，但仍可能实现。
+description: 以下 FxCop 旧分析规则尚未实现为分析器，但仍可能是。
 title: 可移植但已取消移植的规则
 ms.date: 05/21/2019
 ms.topic: reference
@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 14772db869256b59deb765684fb2a8aa62d301a01719f062ad041b4aa6e3d63b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b16f089496721f0291c49c2c7e515b2b3c1ce211
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348684"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045133"
 ---
 # <a name="unported-rules-that-may-be-ported"></a>可移植但已取消移植的规则
 
-以下 FxCop 旧分析规则尚未作为分析器实现，但仍可能实现。 这可能是由于阻止技术原因，或只是规则优先级较低。 有关每个规则的移植状态详细信息，请单击"跟踪问题" **列中** 的链接。
+以下 FxCop 旧分析规则尚未实现为分析器，但仍可能是。 这可能是由于技术原因导致的，或者只是规则的优先级较低。 有关每个规则的移植状态的详细信息，请单击 " **跟踪问题** " 列中的链接。
 
 规则 ID | 跟踪问题
 --- | ---

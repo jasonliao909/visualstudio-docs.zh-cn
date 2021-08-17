@@ -37,7 +37,7 @@ ms.locfileid: "121432601"
 
 若要处理此进程，父项目将 `QueryInterface` 在接口上调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> 。 `IVsFireSolutionEvents` 具有指示 IDE 引发 `OnBeforeUnloadProject` 事件以卸载嵌套项目的函数，并引发 `OnAfterLoadProject` 事件以重新加载同一项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [嵌套项目](../../extensibility/internals/nesting-projects.md)

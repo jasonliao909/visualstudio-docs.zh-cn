@@ -1,6 +1,6 @@
 ---
-description: 检索一个值，该值对应于表达式计算器的指定指标。
-title: IDebugSettingsCallback2：： GetEEMetricDword |Microsoft Docs
+description: 检索与表达式计算程序指定指标相对应的值。
+title: IDebugSettingsCallback2：：GetEEMetricDword |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121448957"
 ---
 # <a name="idebugsettingscallback2geteemetricdword"></a>IDebugSettingsCallback2::GetEEMetricDword
-检索一个值，该值对应于表达式计算器的指定指标。
+检索与表达式计算程序指定指标相对应的值。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +47,19 @@ private int GetEEMetricDword(
 
 ## <a name="parameters"></a>参数
 `guidLang`\
-中编程语言的唯一标识符。
+[in]编程语言的唯一标识符。
 
 `guidVendor`\
-中供应商的唯一标识符。
+[in]供应商的唯一标识符。
 
 `pszMetric`\
-中度量值的名称。
+[in]指标的名称。
 
 `pdwValue`\
-弄返回与度量值字符串相对应的值。
+[out]返回与指标字符串对应的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

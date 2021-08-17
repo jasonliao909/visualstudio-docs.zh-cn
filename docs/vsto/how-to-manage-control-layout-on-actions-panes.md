@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 65da62970b798e2a6f608a72199f5c05d2179175
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3759bb07c7dc4ec0548b8178ee561190c410180e34e531463c472a82cf67f3e2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106297"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351871"
 ---
 # <a name="how-to-manage-control-layout-on-actions-panes"></a>如何：管理操作窗格上的控件布局
   默认情况下，操作窗格停靠在文档或工作表的右侧;但是，可以将其停靠在左侧、顶部或底部。 如果使用多个用户控件，则可以编写代码以正确地在操作窗格上堆叠用户控件。 有关详细信息，请参阅 [操作窗格概述](../vsto/actions-pane-overview.md)。

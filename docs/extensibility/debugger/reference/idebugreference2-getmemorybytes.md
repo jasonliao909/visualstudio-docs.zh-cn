@@ -1,6 +1,6 @@
 ---
-description: 获取物理上包含引用值的内存字节数。
-title: IDebugReference2：： GetMemoryBytes |Microsoft Docs
+description: 获取物理上包含引用值的内存字节。
+title: IDebugReference2：：GetMemoryBytes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121415905"
 ---
 # <a name="idebugreference2getmemorybytes"></a>IDebugReference2::GetMemoryBytes
-获取物理上包含引用值的内存字节数。 保留供将来使用。
+获取物理上包含引用值的内存字节。 保留供将来使用。
 
 ## <a name="syntax"></a>语法
 
@@ -43,11 +43,11 @@ int GetMemoryBytes (
 
 ## <a name="parameters"></a>参数
 `ppMemoryBytes`\
-弄返回一个 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 对象，该对象可用于检索包含引用值的内存。
+[out]返回 [一个 IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 对象，该对象可用于检索包含引用值的内存。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

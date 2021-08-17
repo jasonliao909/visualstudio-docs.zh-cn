@@ -1,6 +1,6 @@
 ---
 title: 调试中 SharePoint Tools 的Visual Studio |Microsoft Docs
-description: 调试 Visual Studio 中 SharePoint 工具的扩展。 调试SharePoint实例或 VS 的常规实例中的工具扩展。
+description: 调试 SharePoint 工具的Visual Studio。 调试SharePoint实例或 VS 的常规实例中的工具扩展。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -27,9 +27,9 @@ ms.locfileid: "121353041"
   可以在试验SharePoint或实例的常规实例中调试Visual Studio。 如果需要对扩展的行为进行故障排除，还可以修改注册表值以显示其他错误信息，并配置Visual Studio命令SharePoint方式。
 
 ## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>调试试验实例中的扩展Visual Studio
- 为了Visual Studio开发环境不经测试的扩展意外损坏，Visual Studio SDK 提供了一个称为实验性实例的 Visual Studio 实例，可用于安装和测试扩展。  使用 常规实例开发新的扩展Visual Studio，但在实验实例中调试和运行它们。 有关详细信息，请参阅 [实验实例](../extensibility/the-experimental-instance.md)。
+ 为了Visual Studio开发环境不经测试的扩展意外损坏，Visual Studio SDK 提供了一个称为实验性实例的 Visual Studio 实例，可用于安装和测试扩展。  使用常规实例开发新的扩展Visual Studio，但在实验实例中调试和运行它们。 有关详细信息，请参阅 [实验实例](../extensibility/the-experimental-instance.md)。
 
- 如果使用 VSIX 项目来部署扩展，并且 VSIX 项目是解决方案中的启动项目，Visual Studio调试解决方案时自动在试验实例中安装并运行该扩展。 启动项目是在调试包含多个项目的解决方案时启动的项目。 有关使用 VSIX 项目部署扩展的信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 如果使用 VSIX 项目来部署扩展，而 VSIX 项目是解决方案中的启动项目，Visual Studio调试解决方案时，会自动在试验实例中安装并运行该扩展。 启动项目是在调试包含多个项目的解决方案时启动的项目。 有关使用 VSIX 项目部署扩展的信息，请参阅 在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
  有关演示如何在 Visual Studio 试验实例中调试各种类型的扩展的示例，请参阅以下演练：
 
@@ -54,7 +54,7 @@ ms.locfileid: "121353041"
 
 3. 在 **"Visual Studio** 安装程序"对话框中，选择要Visual Studio扩展的版本，然后选择"安装 **"** 按钮。
 
-     Visual Studio将扩展文件安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 作者扩展 \\  \\ *名* \\ *版本*。 此路径中的最后三个文件夹是使用扩展的 `Author` `Name` `Version` *extension.vsixmanifest* 文件中 、 和 元素构造的。
+     Visual Studio扩展文件安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions \\ *作者* 扩展 \\  \\ *名版本*。 此路径中的最后三个文件夹是使用扩展的 `Author` `Name` `Version` *extension.vsixmanifest* 文件中 、 和 元素构造的。
 
 4. 安装Visual Studio后，选择"关闭 **"** 按钮。
 
@@ -131,7 +131,7 @@ ms.locfileid: "121353041"
 |MaxReceivedMessageSize|REG_DWORD指定在 Visual Studio 和 之间传递的 WCF 消息的最大允许 *大小（以字节vssphost4.exe）。*<br /><br /> 默认值为1048576字节 (1 MB) 。|
 |MaxStringContentLength|REG_DWORD，它指定在 Visual Studio 和 *vssphost4.exe* 之间传递的字符串的最大允许大小（以字节为单位）。<br /><br /> 默认值为1048576字节 (1 MB) 。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

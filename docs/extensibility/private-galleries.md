@@ -92,6 +92,6 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
 3. 在右侧窗格中，选择一个扩展，然后选择 " **更新** " 按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [查找并使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)
 - [装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)

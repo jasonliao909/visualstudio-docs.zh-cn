@@ -60,7 +60,7 @@ ms.locfileid: "121352263"
 |`OLEObject` 和 `OLEControl` 类已重命名。|必须将使用这些类的实例的任何代码改为使用 <xref:Microsoft.Office.Tools.Excel.ControlSite> 或 <xref:Microsoft.Office.Tools.Word.ControlSite> 对象。 有关详细信息，请参阅[更新迁移到 .NET Framework 4 的 Excel 和 Word 项目或 .NET Framework 4.5](../vsto/updating-excel-and-word-projects-that-you-migrate-to-the-dotnet-framework-4-or-the-dotnet-framework-4-5.md)。|
 |主机项类（如 `ThisWorkbook` 、 `Sheet` *n*、 `ThisDocument` 和 `ThisAddIn` ）不再提供 `Dispose` 可以重写的方法。|必须将 `Dispose` 方法替代中的任何代码移动到主机项（如 `ThisAddIn_Shutdown`）中的 `Shutdown` 事件处理程序，并从主机项类中删除 `Dispose` 方法替代。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [Office 开发的新增功能](/previous-versions/86bkz018(v=vs.110))
 - [Visual Studio Tools for Office 运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)

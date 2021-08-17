@@ -11,14 +11,15 @@ ms.assetid: eea69f03-349c-44bb-bd4f-4925c0dc3e55
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d7af9ff4a8f04382cff4999b8c57549f3da3db7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cc17db226176bf806a594778d6a483a713b97b606c1fa662f1c65d3cf01ee3d2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074668"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375918"
 ---
 # <a name="intercepting-legacy-language-service-commands"></a>截获旧版语言服务命令
 使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，你可以让语言服务截获文本视图要处理的命令。 这对于文本视图不管理的特定于语言的行为很有用。 可以通过将一个或多个命令筛选器添加到语言服务中的文本视图来截获这些命令。

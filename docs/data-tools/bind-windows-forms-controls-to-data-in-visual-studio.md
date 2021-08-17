@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d891cc83008c844ddc694b958be6314c9f2de63a7c8383a541fc3ccd265d00bc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 311bdc7d0bf236f29d09804257aaaa8ce991f32f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121240635"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075341"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 Windows 窗体控件绑定到数据
 
@@ -34,7 +34,7 @@ ms.locfileid: "121240635"
 ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 如果"**数据源"** 窗口不可见，则可以通过选择"查看其他数据源Windows或按 Shift Alt D  >  **来**  >   + **打开** + **它**。 必须打开一个项目，Visual Studio"**数据源"** 窗口。
+> 如果"**数据源"** 窗口不可见，则可以通过选择"查看其他数据源Windows  >  或按 Shift Alt D **打开**  >   +  + **它**。 必须打开一个项目，Visual Studio"**数据源"** 窗口。
 
 在拖动项之前，可以设置要绑定到的控件的类型。 将显示不同的值，具体取决于是选择表本身还是单个列。  还可以设置自定义值。 对于表 **，"详细信息** "表示每个列都绑定到单独的控件。
 
@@ -52,7 +52,7 @@ ms.locfileid: "121240635"
 
 - [BindingSource 组件体系结构](/dotnet/framework/winforms/controls/bindingsource-component-architecture)
 
-[BindingNavigator](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)控件提供了一个用户界面，用于导航应用程序Windows数据。
+[BindingNavigator 控件](/dotnet/framework/winforms/controls/bindingnavigator-control-windows-forms)提供了一个用户界面，用于导航应用程序Windows数据。
 
 ## <a name="bind-to-data-in-a-datagridview-control"></a>绑定到 DataGridView 控件中的数据
 

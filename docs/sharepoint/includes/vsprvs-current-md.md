@@ -1,9 +1,9 @@
 ---
-ms.openlocfilehash: ebb6fcd70e598abb1fd0e52f9fd0f4986b14a115
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 1cb4826ff55cf34c620cf13d5083db14336ecbd2ab8aaef57e5709e2d3101b1f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89326599"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122092733"
 ---
 Visual Studio 2019

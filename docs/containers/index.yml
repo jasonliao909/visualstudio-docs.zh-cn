@@ -4,18 +4,17 @@ metadata:
   title: Docker 容器开发工具文档
   description: 了解如何构建和管理基于容器的应用和服务。 获取文档、示例代码、教程等等。
   author: ghogen
-  manager: jillfra
-  ms.prod: visual-studio-windows
-  ms.technology: vs-azure
+  manager: jmartens
+  ms.technology: vs-container-tools
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7dd543b176ac5c95bf084658583bf34db1294c82
-  ms.sourcegitcommit: da7f093db52df5dcd67e0a030e616b307f0dc2a8
+  ms.openlocfilehash: c18b3dc5d645ad264952a23192e89be55613d1fc
+  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/24/2020
-  ms.locfileid: "91211058"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "122105626"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -78,8 +77,8 @@ landingContent:
   - linkListType: quickstart
     links:
     - text: 将 Kubernetes 桥接用于 Visual Studio
-      url: bridge-to-kubernetes.md
+      url: /visualstudio/bridge/bridge-to-kubernetes
   - linkListType: overview
     links:
     - text: Kubernetes 桥接的工作原理
-      url: overview-bridge-to-kubernetes.md
+      url: /visualstudio/bridge/overview-bridge-to-kubernetes

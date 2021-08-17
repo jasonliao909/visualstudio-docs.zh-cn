@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式隐藏文档中的文本
-description: 了解如何通过设置特定文本范围的"字体Microsoft Word隐藏文档中的文本。
+description: 了解如何通过为特定范围的文本设置字体的隐藏属性，隐藏 Microsoft Word 文档中的文本。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,17 +16,17 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 72e869d585f2db5163036b4e8f024d4ca4c0c620c8aec829ffcdd6ccea1cf610
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cbf7215cca3913fdd07b2ebe006f4b2e16a2099
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366246"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106051"
 ---
 # <a name="how-to-programmatically-hide-text-in-documents"></a>如何：以编程方式隐藏文档中的文本
   通过将 <xref:Microsoft.Office.Interop.Word._Font.Hidden%2A> 属性设置为某个特定范围文本的 <xref:Microsoft.Office.Interop.Word.Range.Font%2A> 。
 
- 例如，在将文档发送到打印机之前，可以在文档级自定义项) 或 VSTO 外接程序 () 中暂时隐藏 (中的文本 <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Interop.Word.Bookmark> 。
+ 例如，可以在将文档 <xref:Microsoft.Office.Tools.Word.Bookmark> 发送到打印机之前，暂时隐藏文档级自定义项中的 (中的文本) 或 <xref:Microsoft.Office.Interop.Word.Bookmark> VSTO 外接) 程序中的 (。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -55,11 +55,11 @@ ms.locfileid: "121366246"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet107":::
 
 ## <a name="compile-the-code"></a>编译代码
- 此代码示例假定文档 (位于名为 的 VSTO 外接程序) 文档级自定义项) 或 (控件) <xref:Microsoft.Office.Tools.Word.Bookmark> <xref:Microsoft.Office.Interop.Word.Bookmark> `bookmark1` 中。
+ 此代码示例假定文档包含 <xref:Microsoft.Office.Tools.Word.Bookmark> 文档级自定义项中的控件 () 或 <xref:Microsoft.Office.Interop.Word.Bookmark> 在名为的 VSTO 外接) 程序中的控件 (`bookmark1` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：以编程方式打印文档](../vsto/how-to-programmatically-print-documents.md)
-- [如何：以编程方式定义和选择文档中的范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
 - [如何：以编程方式重置 Word 文档中的范围](../vsto/how-to-programmatically-reset-ranges-in-word-documents.md)
 - [如何：以编程方式更新书签文本](../vsto/how-to-programmatically-update-bookmark-text.md)
-- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
