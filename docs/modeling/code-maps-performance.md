@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: c877554685a3a8111d529fab0fa58be4e4f00f4d8a86716a716391cbc97ac55e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 74c600fecf01290bd6d00ae0472b061402ceb4ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411240"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055557"
 ---
 # <a name="improve-performance-for-code-maps"></a>提高代码图的性能
 
@@ -33,6 +33,6 @@ ms.locfileid: "121411240"
 
 - 直接编辑代码图文件，以删除不需要的节点和链接。 更改代码图不会影响基础代码。 请参阅 [Customize code maps by editing the DGML files](../modeling/customize-code-maps-by-editing-the-dgml-files.md)。
 
-当项目项的"复制到输出目录"属性 **设置为"始终复制"时，可能需要** 解决方案资源管理器创建映射或将项添加到 **映射**。 若要提高性能，请将此属性更改为“如果较新则复制”  或 `PreserveNewest`。 请参阅 [增量生成](../msbuild/incremental-builds.md)。
+当项目项的"复制到输出目录"属性 **设置为**"始终复制"时，可能需要解决方案资源管理器创建映射或将项添加到 **映射中。** 若要提高性能，请将此属性更改为“如果较新则复制”  或 `PreserveNewest`。 请参阅 [增量生成](../msbuild/incremental-builds.md)。
 
 已完成的映射只显示成功生成代码的依赖项。 如果某些组件出现生成错误，这些错误会出现在代码图上。 在基于代码图做出体系结构决策时，请确保组件实际生成并且具有依赖项。

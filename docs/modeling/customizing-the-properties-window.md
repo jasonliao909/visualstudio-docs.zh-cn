@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 785b8bf33decfdc29752027033fe1cece4a7ec62012d348e8b7b26c68198796c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b69d16fdf3d1a4cd3d9540f186734f3cfdb8643
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121356096"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055544"
 ---
 # <a name="customize-the-properties-window"></a>自定义属性窗口
 
@@ -139,7 +139,7 @@ ms.locfileid: "121356096"
 
 ### <a name="set-a-property-editor"></a>设置属性编辑器
 
-将 CLR 特性添加到域属性，格式如下：
+将 CLR 属性添加到域属性，格式如下：
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -147,17 +147,17 @@ ms.locfileid: "121356096"
    typeof(System.Drawing.Design.UITypeEditor))]
 ```
 
-您可以使用属性窗口中的 **自定义特性** 项设置属性的属性。
+可以使用属性中的"自定义属性"条目在属性上设置属性窗口。
 
 的类型 `AnEditor` 必须派生自第二个参数中指定的类型。 第二个参数应为 <xref:System.Drawing.Design.UITypeEditor> 或 <xref:System.ComponentModel.ComponentEditor> 。 有关详细信息，请参阅 <xref:System.ComponentModel.EditorAttribute>。
 
-您可以指定您自己的编辑器或 .NET 编辑器（如 <xref:System.Windows.Forms.Design.FileNameEditor> 或） <xref:System.Drawing.Design.ImageEditor> 。 例如，使用下面的过程可以拥有一个属性，用户可以在其中输入文件名。
+可以指定自己的编辑器或 .NET 编辑器，例如 或 <xref:System.Windows.Forms.Design.FileNameEditor> <xref:System.Drawing.Design.ImageEditor> 。 例如，使用以下过程创建一个属性，用户可以在此属性中输入文件名。
 
 #### <a name="define-a-file-name-domain-property"></a>定义文件名域属性
 
-1. 向 DSL 定义中的域类添加域属性。
+1. 将域属性添加到 DSL 定义中的域类。
 
-2. 选择新属性。 在属性窗口的 " **自定义特性** " 字段中，输入以下属性。 若要输入此属性，请单击省略号 **[...]** ，并分别输入属性名称和参数：
+2. 选择新属性。 在" **自定义属性** "字段中属性窗口，输入以下属性。 若要输入此属性，请单击省略号 **[...]** ，然后分别输入属性名称和参数：
 
     ```csharp
     [System.ComponentModel.Editor (
@@ -166,30 +166,30 @@ ms.locfileid: "121356096"
 
     ```
 
-3. 保留域属性的类型，其默认设置为 " **字符串**"。
+3. 将域属性的"类型"保留为"字符串" **的默认设置**。
 
-4. 若要测试编辑器，请验证用户是否可以打开文件名编辑器来编辑域属性。
+4. 若要测试编辑器，请验证用户能否打开文件名编辑器来编辑域属性。
 
-    1. 按 CTRL + F5 或 F5。 在调试解决方案中，打开测试文件。 创建域类的元素并将其选中。
+    1. 按 CTRL+F5 或 F5。 在调试解决方案中，打开测试文件。 创建域类的元素并选择它。
 
-    2. 在属性窗口中，选择 "域" 属性。 值字段显示省略号 **[...]**。
+    2. 在属性窗口，选择域属性。 值字段显示省略号 **[...]**。
 
-    3. 单击省略号。 此时将显示一个文件对话框。 选择一个文件并关闭对话框。 文件路径现在为域属性的值。
+    3. 单击省略号。 将出现一个文件对话框。 选择一个文件并关闭对话框。 文件路径现在是域属性的值。
 
 ### <a name="define-your-own-property-editor"></a>定义自己的属性编辑器
 
-您可以定义自己的编辑器。 您可以通过此操作来允许用户编辑您定义的类型，或以特殊方式编辑标准类型。 例如，您可以允许用户输入表示公式的字符串。
+可以定义自己的编辑器。 这样做是允许用户编辑已定义的类型，或以特殊方式编辑标准类型。 例如，可以允许用户输入表示公式的字符串。
 
-通过编写派生自的类来定义编辑器 <xref:System.Drawing.Design.UITypeEditor> 。 你的类必须重写：
+通过编写派生自 的类来定义编辑器 <xref:System.Drawing.Design.UITypeEditor> 。 类必须重写：
 
-- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>，用于与用户交互并更新属性值。
+- <xref:System.Drawing.Design.UITypeEditor.EditValue%2A>，以便与用户交互并更新属性值。
 
 - <xref:System.Drawing.Design.UITypeEditor.GetEditStyle%2A>，用于指定编辑器是打开对话框还是提供下拉菜单。
 
-还可以提供属性的值的图形表示形式，该属性的值将显示在属性网格中。 为此，请重写 `GetPaintValueSupported` 和 `PaintValue` 。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor>。
+还可以提供将在属性网格中显示的属性值的图形表示形式。 为此，请重写 `GetPaintValueSupported` 和 `PaintValue` 。  有关详细信息，请参阅 <xref:System.Drawing.Design.UITypeEditor>。
 
 > [!NOTE]
-> 在 **Dsl** 项目的单独代码文件中添加代码。
+> 将代码添加到 Dsl 项目中的 **单独代码文件中** 。
 
 例如：
 
@@ -205,7 +205,7 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 }
 ```
 
-若要使用此编辑器，请将域属性的 **自定义属性** 设置为：
+若要使用此编辑器，将 **域属性的"自定义** 属性"设置为：
 
 ```csharp
 [System.ComponentModel.Editor (
@@ -217,19 +217,19 @@ internal class TextFileNameEditor : System.Windows.Forms.Design.FileNameEditor
 
 ## <a name="provide-a-drop-down-list-of-values"></a>提供值的下拉列表
 
-您可以为用户提供值列表以供选择。
+可以为用户提供值列表供用户选择。
 
 > [!NOTE]
-> 此方法提供了在运行时可以更改的值的列表。 如果希望提供不会更改的列表，请考虑改用枚举类型作为域属性的类型。
+> 此方法提供可运行时更改的值的列表。 如果要提供不会更改的列表，请考虑改为使用枚举类型作为域属性的类型。
 
-若要定义标准值的列表，请将一个具有以下格式的 CLR 特性添加到域属性：
+若要定义标准值的列表，需要向域属性添加具有以下格式的 CLR 属性：
 
 ```csharp
 [System.ComponentModel.TypeConverter
 (typeof(MyTypeConverter))]
 ```
 
-定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 将代码添加到 **Dsl** 项目的单独文件中。 例如：
+定义一个从 <xref:System.ComponentModel.TypeConverter> 派生的类。 将代码添加到 **Dsl** 项目中的单独文件中。 例如：
 
 ```csharp
 /// <summary>
@@ -322,6 +322,6 @@ public class MyTypeConverter : System.ComponentModel.TypeConverter
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)

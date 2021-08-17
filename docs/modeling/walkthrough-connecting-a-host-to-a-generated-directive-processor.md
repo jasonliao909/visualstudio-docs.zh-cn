@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: d60a7bd348bba51009bbab5264fa94d5370ac4246345e283f51eff72eaf3258a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 225391cc764e9cd5d5f120d44b2822a861fb1b16
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443862"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055297"
 ---
 # <a name="walkthrough-connect-a-host-to-a-generated-directive-processor"></a>演练：将主机连接到生成的指令处理器
 
@@ -40,7 +40,7 @@ ms.locfileid: "121443862"
 
 - 用生成的指令处理器测试自定义主机。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 若要定义 DSL，必须安装以下组件：
 

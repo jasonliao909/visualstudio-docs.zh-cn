@@ -9,19 +9,20 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: dadffd0a2950d55145b24d3172564eb572f98d70
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: dc5d96f7fd4381b129b88b388ec6ecfeb8a8198b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389145"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055505"
 ---
 # <a name="develop-tests-from-a-model"></a>基于模型开发测试
 可以使用要求模型和体系结构模型来帮助组织系统及其组件的测试。 这种做法有助于确保你测试了对于用户和其他利益干系人而言非常重要的要求，并可帮助你在要求发生变化时快速更新测试。 如果你使用 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)]，还可以维护模型和测试之间的链接。
 
- 若要查看支持这些功能的 Visual Studio 版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+ 若要查看 Visual Studio 支持这些功能的版本，请参阅[体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="system-and-subsystem-testing"></a>系统和子系统测试
  *系统测试* 也称为 *验收测试*，这意味着测试是否满足用户的需求。 这种测试关注系统的外部可见行为，而不是内部设计。
@@ -149,7 +150,7 @@ Assert (countAfter == countBefore = 1);
 
 1. 在 [!INCLUDE[TCMlong](../modeling/includes/tcmlong_md.md)] 中，创建一个要 求并使测试套件基于该需求。
 
-    所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可能是用户情景、要求或用例工作项，具体取决于项目与 Team Foundation 一起使用的过程模板。 有关详细信息，请参阅 [关于敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)。
+    所创建的要求是 [!INCLUDE[vstsTfsShort](../modeling/includes/vststfsshort_md.md)] 中的工作项。 它可能是用户情景、要求或用例工作项，具体取决于项目与 Team Foundation 一起使用的过程模板。 有关详细信息，请参阅关于 [敏捷工具和敏捷项目管理](/azure/devops/boards/backlogs/backlogs-overview?view=vsts&preserve-view=true)。
 
 2. 将要求工作项链接到模型中的一个或多个元素。
 
@@ -157,7 +158,7 @@ Assert (countAfter == countBefore = 1);
 
 3. 添加到测试套件（即验证模型元素中表示的需求的测试用例）。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)
 - [建立用户需求模型](../modeling/model-user-requirements.md)
