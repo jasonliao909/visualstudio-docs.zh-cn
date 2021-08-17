@@ -12,17 +12,18 @@ ms.assetid: 23481f37-047c-41d2-8286-4da1f4084961
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca015a814956a0b6073e090d17751e623b557429
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 96c93e4a6006060849bab1daf2c0f2ec7d420590d719817a1acbe0b1d35402ba
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088846"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360659"
 ---
 # <a name="idebugboundbreakpoint2gethitcount"></a>IDebugBoundBreakpoint2::GetHitCount
 获取此绑定断点的当前命中计数。
@@ -51,6 +52,6 @@ int GetHitCount(
 ## <a name="remarks"></a>备注
  命中计数是在当前运行会话期间触发此断点的次数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

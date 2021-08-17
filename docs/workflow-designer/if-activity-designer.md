@@ -10,14 +10,15 @@ ms.assetid: 930a8fa2-db98-43e9-ad6d-a85cc7a6519a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 93f36a3c2b587718fe6889688baa50224f663c1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f353cb3f301d09fe5434fd12deaa620b5f0c4ddfe38ca7a82d1d2e9a30f2e8c3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881355"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121243401"
 ---
 # <a name="if-activity-designer"></a>If 活动设计器
 
@@ -29,11 +30,11 @@ ms.locfileid: "99881355"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Statements.If.Condition%2A>|True|用于确定要执行哪个子活动的条件。 若要设置 <xref:System.Activities.Statements.If.Condition%2A> ，请在 " **If** " 活动设计器或属性网格中的 "**条件**" 框中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.If.Else%2A>|False|为 false 时要执行的 <xref:System.Activities.Statements.If.Condition%2A> 活动。 若要添加由分支执行的活动 <xref:System.Activities.Statements.If.Else%2A> ，请将活动从 "**工具箱**" 拖放到 " **If** " 活动设计器上带提示文本 "在此处放置活动" 的 " **Else** " 框中。|
-|<xref:System.Activities.Statements.If.Then%2A>|False|如果为 true，则为要执行的活动 <xref:System.Activities.Statements.If.Condition%2A> 。  若要添加由分支执行的活动 <xref:System.Activities.Statements.If.Then%2A> ，请将活动从 "**工具箱**" 拖放到 " **If** " 活动设计器上带有提示文本 "将活动放置到此处" 的 " **Then** " 框中。|
+|<xref:System.Activities.Statements.If.Condition%2A>|正确|用于确定要执行哪个子活动的条件。 若要设置 <xref:System.Activities.Statements.If.Condition%2A> ，请在 " **If** " 活动设计器或属性网格中的 "**条件**" 框中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.If.Else%2A>|错误|为 false 时要执行的 <xref:System.Activities.Statements.If.Condition%2A> 活动。 若要添加由分支执行的活动 <xref:System.Activities.Statements.If.Else%2A> ，请将活动从 "**工具箱**" 拖放到 " **If** " 活动设计器上带提示文本 "在此处放置活动" 的 " **Else** " 框中。|
+|<xref:System.Activities.Statements.If.Then%2A>|错误|如果为 true，则为要执行的活动 <xref:System.Activities.Statements.If.Condition%2A> 。  若要添加由分支执行的活动 <xref:System.Activities.Statements.If.Then%2A> ，请将活动从 "**工具箱**" 拖放到 " **If** " 活动设计器上带有提示文本 "将活动放置到此处" 的 " **Then** " 框中。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [序列](../workflow-designer/sequence-activity-designer.md)
 - [Parallel](../workflow-designer/parallel-activity-designer.md)

@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ff1d0af4ceedc8ebd4659b44e0a316919e54a92aca9a3a0341c9f9d184e439b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adaa20e57670148c9c7129c5c31d5de6da915515
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343247"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073339"
 ---
 # <a name="deleting-a-breakpoint"></a>删除断点
 下面描述了删除挂起断点的过程：
 
 ## <a name="deletion-process"></a>删除过程
- 会话调试管理器 (SDM) 调用 [IDebugPendingBreakpoint2：:D elete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) 方法，以删除挂起的断点及其绑定的所有断点。
+ 会话调试管理器 (SDM) 调用 [IDebugPendingBreakpoint2：:D elete](../../extensibility/debugger/reference/idebugpendingbreakpoint2-delete.md) 方法以删除挂起的断点和绑定的所有断点。
 
 > [!NOTE]
 > 也可通过调用 [IDebugBoundBreakpoint2：:D删除单个绑定断点](../../extensibility/debugger/reference/idebugboundbreakpoint2-delete.md)。

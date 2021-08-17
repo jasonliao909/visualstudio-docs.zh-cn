@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dc827039253c21effffcc82d70b4f66ff284738
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 19107cdb33e1de0b42f5e1dbdc9953fe2a047adfd83937d65c732d4c54e09074
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388589"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231400"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
 文本模板转换过程会将文本模板文件作为输入，并生成一个新的文本文件作为输出。 例如，您可以使用文本模板来生成 Visual Basic 或 c # 代码，也可以生成 HTML 报表。
@@ -27,9 +28,9 @@ ms.locfileid: "112388589"
 
 ## <a name="components"></a>组件
 
-|组件|描述|可自定义 (是/否) |
+|组件|说明|可自定义 (是/否) |
 |-|-|-|
-|引擎|引擎组件控制文本模板转换过程|否。|
+|引擎|引擎组件控制文本模板转换过程|不是。|
 |主机|宿主是引擎和用户环境之间的接口。 Visual Studio 是文本转换过程的宿主。|是的。 可以编写自定义主机。|
 |指令处理器|指令处理器是在文本模板中处理指令的类。 您可以使用指令向输入源中的文本模板提供数据。|是的。 您可以编写自定义指令处理器|
 

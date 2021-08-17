@@ -1,6 +1,6 @@
 ---
-title: 将自定义任务窗格与功能区按钮同步
-description: 了解如何创建用户可以通过单击功能区上的切换按钮隐藏或显示的自定义任务窗格。
+title: 使用功能区按钮同步自定义任务窗格
+description: 了解如何创建自定义任务窗格，用户可以单击功能区上的切换按钮隐藏或显示该窗格。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -23,17 +23,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5e7fe64d2df3298d53f567d11fe765280843e2ce
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ce9f00bf31013450c25dd3bac6325e7288be50a2b866989fd3b0b9d301b30410
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826780"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121225746"
 ---
-# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：将自定义任务窗格与功能区按钮同步
-  本演练演示如何创建用户可以通过单击功能区上的切换按钮隐藏或显示的自定义任务窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。
+# <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：使用功能区按钮同步自定义任务窗格
+  本演练演示如何创建自定义任务窗格，用户可以单击功能区上的切换按钮隐藏或显示该窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -58,16 +59,16 @@ ms.locfileid: "107826780"
 - Microsoft Excel 或 Microsoft [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)]。
 
 ## <a name="create-the-add-in-project"></a>创建外接程序项目
- 在此步骤中，你将为 Excel 创建一个 VSTO 外接程序项目。
+ 在此步骤中，将为 VSTO 创建一个外接程序Excel。
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 使用 Excel 外接程序项目模板，创建一个名为 **SynchronizeTaskPaneAndRibbon** 的 Excel 外接程序项目。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Excel 外接程序项目模板，创建一个名为 **SynchronizeTaskPaneAndRibbon** 的 Excel 外接程序项目。 有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 打开 **ThisAddIn.cs** 或 **ThisAddIn.vb** 代码文件，并将 **SynchronizeTaskPaneAndRibbon** 项目添加到 **“解决方案资源管理器”**。
 
 ## <a name="add-a-toggle-button-to-the-ribbon"></a>向功能区添加切换按钮
- Office 应用程序的设计准则之一是：用户应始终能控制 Office 应用程序 UI。 若要让用户可以控制自定义任务窗格，可以添加一个可显示和隐藏任务窗格的功能区切换按钮。 若要创建一个切换按钮，则将 **“功能区(可视化设计器)”** 项添加到项目。 设计器可帮助你添加和放置控件、设置控件属性以及处理控件事件。 有关详细信息，请参阅 [功能区设计器](../vsto/ribbon-designer.md)。
+ Office 应用程序的设计准则之一是：用户应始终能控制 Office 应用程序 UI。 若要让用户可以控制自定义任务窗格，可以添加一个可显示和隐藏任务窗格的功能区切换按钮。 若要创建一个切换按钮，则将 **“功能区(可视化设计器)”** 项添加到项目。 设计器可帮助你添加和放置控件、设置控件属性以及处理控件事件。 有关详细信息，请参阅功能 [区设计器](../vsto/ribbon-designer.md)。
 
 ### <a name="to-add-a-toggle-button-to-the-ribbon"></a>向功能区添加切换按钮
 
@@ -103,7 +104,7 @@ ms.locfileid: "107826780"
 3. 从“工具箱”  的“公共控件” 选项卡中，将 **TextBox** 控件拖到用户控件中。
 
 ## <a name="create-the-custom-task-pane"></a>创建自定义任务窗格
- 若要在 VSTO 外接程序启动时创建自定义任务窗格，请将用户控件添加到 VSTO 外接程序的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序中的任务窗格中。 默认情况下，自定义任务窗格将不可见。 稍后在本演练中，你将添加代码，以便在用户单击你添加到功能区的切换按钮时显示或隐藏任务窗格。
+ 若要在 VSTO 外接程序启动时创建自定义任务窗格，请将用户控件添加到 VSTO 外接程序的 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件处理程序中的任务窗格中。 默认情况下，自定义任务窗格将不可见。 本演练稍后将添加代码，当用户单击添加到功能区的切换按钮时，该代码将显示或隐藏任务窗格。
 
 ### <a name="to-create-the-custom-task-pane"></a>若要创建自定义任务窗格
 
@@ -152,9 +153,9 @@ ms.locfileid: "107826780"
 
 1. 按 **F5** 运行项目。
 
-     确认 Excel 打开，"外接 **程序** " 选项卡显示在功能区上。
+     确认Excel打开，功能 **区** 上会显示"外接程序"选项卡。
 
-2. 单击功能区上的 " **外接程序** " 选项卡。
+2. 单击功能 **区上的"** 外接程序"选项卡。
 
 3. 在 **“任务窗格管理器”** 组中，单击 **“显示任务窗格”** 切换按钮。
 
@@ -167,15 +168,15 @@ ms.locfileid: "107826780"
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何创建自定义任务窗格的详细信息：
 
-- 在其他应用程序的 VSTO 外接程序中创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
+- 在外接程序中为VSTO创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
 
-- 从自定义任务窗格自动化应用程序。 有关详细信息，请参阅 [演练：从自定义任务窗格中自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。
+- 从自定义任务窗格自动化应用程序。 有关详细信息，请参阅 [演练：从自定义任务窗格 自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。
 
-- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅 [演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。
+- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅演练：在 中显示包含电子邮件的自定义[Outlook。](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
 
 ## <a name="see-also"></a>请参阅
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
-- [演练：从自定义任务窗格自动化应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
-- [演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- [演练：从自定义任务窗格自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
+- [演练：显示包含电子邮件的自定义任务Outlook](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
 - [功能区概述](../vsto/ribbon-overview.md)

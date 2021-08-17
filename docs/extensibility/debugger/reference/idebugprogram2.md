@@ -11,14 +11,15 @@ ms.assetid: 8d73df73-cfff-4b8b-b426-d6051edb1939
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2f6effa250749f448ed1a02c4b7a699d50b7388e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ada2036c6ae2f82066d6ed12344dc1f301c54d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084397"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087764"
 ---
 # <a name="idebugprogram2"></a>IDebugProgram2
 此接口表示在进程中运行的程序。
@@ -72,7 +73,7 @@ IDebugProgram2 : IUnknown
 ## <a name="remarks"></a>备注
  程序是在特定运行时结构中运行的线程容器，而进程由一个或多个程序组成。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)
 - [下一页](../../../extensibility/debugger/reference/ienumdebugprograms2-next.md)

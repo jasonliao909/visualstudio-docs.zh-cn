@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29a437cc02f71c739ad90e0f4e1cbd975399baa44224acfd010e8ad60e40af62
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e56b2d5883e1c26fbfaa8657b8fed3c5236db348
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415983"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087556"
 ---
 # <a name="idebugreference2compare"></a>IDebugReference2::Compare
 将一个引用与另一个引用进行比较。 保留供将来使用。
@@ -45,7 +45,7 @@ int Compare (
 
 ## <a name="parameters"></a>参数
 `dwCompare`\
-[in]一 [个来自](../../../extensibility/debugger/reference/reference-compare.md) REFERENCE_COMPARE 值，该值指定比较操作，例如，等于、小于或大于。
+[in]指定比较 [REFERENCE_COMPARE（](../../../extensibility/debugger/reference/reference-compare.md) 例如，等于、小于或大于）的枚举中的值。
 
 `pReference`\
 [in]表示 [要比较的引用的 IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象。
@@ -53,6 +53,6 @@ int Compare (
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_COMPARE](../../../extensibility/debugger/reference/reference-compare.md)

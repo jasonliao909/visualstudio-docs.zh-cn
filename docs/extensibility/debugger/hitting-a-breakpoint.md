@@ -30,5 +30,5 @@ ms.locfileid: "121361179"
 
 2. 会话调试管理器 (SDM) 调用 [IDebugBreakpointEvent2：：： EnumBreakpoints](../../extensibility/debugger/reference/idebugbreakpointevent2-enumbreakpoints.md) 以获取命中的断点。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

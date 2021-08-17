@@ -13,14 +13,15 @@ ms.assetid: 5b9c5afe-7499-4ee8-8c33-28aff14bde07
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f61dd3f14ba527e9f5be0e009825902e683fb1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5e3a400509668c7cab2310fcd4c67316f35b8ac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876558"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025377"
 ---
 # <a name="flowswitcht-activity-designer"></a>FlowSwitch\<T> 活动设计器
 
@@ -34,7 +35,7 @@ ms.locfileid: "99876558"
 
 " **FlowSwitch \<T>** " 活动设计器可在 "**工具箱**" 的 "**流程图**" 类别中找到，可通过单击工作流设计器左侧的 "**工具箱**" 选项卡进行访问。 或者，从 "**视图**" 菜单中选择 **"工具箱**"，或按 **Ctrl** + **Alt** + **X**。
 
-可以将 " **\<T> FlowSwitch** " 活动设计器从 "**工具箱**" 拖放到 "**流程图**" 活动设计器内的工作流设计器图面上。 使用显示的 " **选择类型** " 窗口来指定代码中与 (相关联的类型， <xref:System.Activities.Statements.FlowSwitch%601> 其泛型参数) 通过计算得到的 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 。 此过程将 <xref:System.Activities.Statements.FlowSwitch%601> 在活动中创建一个标记为 " **切换** " 的活动 <xref:System.Activities.Statements.Flowchart> 。 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>通过单击提示文本 "输入 VB 表达式" 的位置，可以在 "**属性**" 窗口的 "**表达式**" 框中键入。
+可以将 " **\<T> FlowSwitch** " 活动设计器从 "**工具箱**" 拖放到 "**流程图**" 活动设计器内的工作流设计器图面上。 使用显示的 " **选择类型** " 窗口来指定代码中与 (相关联的类型， <xref:System.Activities.Statements.FlowSwitch%601> 其泛型参数) 通过计算得到的 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 。 此过程将 <xref:System.Activities.Statements.FlowSwitch%601> 在活动中创建一个标记为 " **切换** " 的活动 <xref:System.Activities.Statements.Flowchart> 。 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>通过单击提示文本显示 "输入 VB 表达式" 的位置，可以在 "**属性**" 窗口的 "**表达式**" 框中键入。
 
 将鼠标悬停在 " **FlowSwitch \<T>** " 活动设计器上会导致用于链接的正方形控点 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 出现在其边缘周围。 将 **FlowSwitch<T \>** 活动设计器和其他活动设计器拖到 **流程图** 上之后， <xref:System.Activities.Activity> 它们所表示的对象已准备好链接在一起以指定执行顺序。 若要创建 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 与关联的一个 <xref:System.Activities.Statements.FlowSwitch%601> ，请单击 " **FlowSwitch<T \>** " 外围网络上的一个正方形控点，然后将鼠标按钮拖动) 到在鼠标悬停在其设计器上时与目标活动类似的方法之一，将其拖 (。 释放鼠标按钮，然后将 **FlowSwitch<T \>** 中的箭头显示给目标设计器，表示此事例。 此情况的默认值显示在箭头上，可在 "**属性**" 窗口的 "**事例**" 框中进行编辑。
 
@@ -45,10 +46,10 @@ ms.locfileid: "99876558"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Statements.FlowSwitch%601.Expression%2A>|True|指定表达式，通过计算该表达式来确定在执行路径中可切换到哪个 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>。|
-|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|False|指定通过从 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 的可能计算结果到一组 <xref:System.Activities.Statements.FlowNode> 对象的唯一映射。|
+|<xref:System.Activities.Statements.FlowSwitch%601.Cases%2A>|错误|指定通过从 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 的可能计算结果到一组 <xref:System.Activities.Statements.FlowNode> 对象的唯一映射。|
 |<xref:System.Activities.Statements.FlowSwitch%601.Default%2A>|True|指定当 <xref:System.Activities.Statements.FlowSwitch%601.Expression%2A> 的计算值与 <xref:System.Activities.Statements.FlowSwitch%601.Cases%2A> 对象中包含的值之一不匹配时的映射。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [流程图](../workflow-designer/flowchart-activity-designers.md)
 - [流程图](../workflow-designer/flowchart-activity-designer.md)

@@ -1,6 +1,6 @@
 ---
 title: 了解共同创作和外接程序
-description: 了解合著以及它是 Excel for Windows desktop 的一项功能，它允许你同时编辑在云中托管的工作簿和其他用户。
+description: 了解合著以及它如何成为 Windows desktop Excel 的一项功能，使你能够同时编辑在云中托管的工作簿和其他用户。
 ms.custom: SEO-VS-2020
 ms.date: 07/20/2017
 ms.topic: conceptual
@@ -12,20 +12,21 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e7889965590865639149b79e8c6d285e333b3822
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 39f490ab9f61c231a59000c4b035cd796405db96
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025662"
 ---
 # <a name="understand-coauthoring-and-add-ins"></a>了解共同创作和外接程序
 
-合著是适用于 Windows 桌面的 Excel 的一项功能，它允许你编辑在云 (中托管的工作簿，即 OneDrive、OneDrive for business 或 SharePoint Online) 与其他用户同时进行。 添加此功能后，您可能需要对 Excel 解决方案进行调整，以确保即使在用户进行共同创作时，它也能顺利运行。 请参阅 [关于 Excel 中的合著](/office/vba/excel/concepts/about-coauthoring-in-excel)。
+合著是 Windows 桌面 Excel 的一项功能，它允许你编辑在云 (中托管的工作簿，该工作簿与其他用户同时 OneDrive for Business、OneDrive、SharePoint 或) 联机。 添加此功能后，您可能需要对 Excel 解决方案进行调整，以确保即使用户是合著的用户也能正常工作。 请参阅[关于 Excel 中的合著](/office/vba/excel/concepts/about-coauthoring-in-excel)。
 
-注意： Windows 桌面 Excel 的合著已在2017中引入，当前可供 Office365 订阅者使用。 向 Office 2016 或更早版本购买永久性许可证的用户目前不具备对合著功能的访问权限。 Windows 应用商店中的 excel Online (excel、适用于 Android 的 excel 和 Excel Mobile 还支持合著) 。
+注意：2017中引入了 Windows 桌面 Excel 的共同创作，当前可用于 Office365 订阅者。 为 Office 2016 或更早版本的永久许可证购买的用户目前不具备对合著功能的访问权限。  (Excel Online、Excel for Android、Excel 适用于 iOS，Excel Mobile 存储中的 Windows 还支持合著) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Excel 解决方案](./excel-solutions.md)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e5eb1af28c7a8dd7dccf2c161474f821f004c07e06f11b554f898190971837a0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fc98f580b8619cb68ccc929b0e529dcead683e68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041966"
 ---
 # <a name="web-site-support-attributes"></a>网站支持属性
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 网站项目可以扩展以提供对 Web 编程语言的支持。 语言必须自行注册， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 以便在选择该语言时，项目模板可以出现在 " **新建** 网站" 对话框中。

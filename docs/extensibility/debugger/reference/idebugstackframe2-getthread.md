@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 01c945163e048c37a6dbc8510276c3965516b096a9c5b1ec44022f0f013cdded
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ddb2ba3cae800cfb6d6c8c132c8298e99008c5e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448879"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087478"
 ---
 # <a name="idebugstackframe2getthread"></a>IDebugStackFrame2::GetThread
 获取与堆栈帧关联的线程。
@@ -48,6 +48,6 @@ int GetThread (
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d2ebe084538388174d1c205ab101ade465c694f955c3f481598edb0b1da60827
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4e2eb0e0b702bfa97485bd943da7b9dcc59c328
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324140"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073365"
 ---
 # <a name="debugger-components"></a>调试器组件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试器以 VSPackage 的形式实现并管理整个调试会话。 调试会话包含以下元素：

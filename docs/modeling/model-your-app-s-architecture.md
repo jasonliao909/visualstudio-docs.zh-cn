@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fa2be8f4da963c21d9f7f68939421dd7d2d72d0b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0540c119cfd5b6f6a67b820c46e55539afe2e0244ee2e99db5891ba1d1f901a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390107"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231530"
 ---
 # <a name="model-your-app39s-architecture"></a>为应用&#39;体系结构建模
 若要帮助确保软件系统或应用程序满足用户的需求，你可以在 Visual Studio 中创建模型，将其作为软件系统或应用程序的整体结构和行为的说明的一部分。 使用模型，也可以描述在整个设计中使用的模式。 这些模型可你帮助了解现有的体系结构、讨论更改和清楚地传达你的意图。

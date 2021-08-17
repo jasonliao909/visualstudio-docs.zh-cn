@@ -11,17 +11,18 @@ ms.assetid: 4cb40d12-2e92-4f09-83f4-689928bd65b3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 479a30c85fe16830d49c3d44dc2daea4eed9f31c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 604c8c65ec149814f0a2439658e7a1dbc002c54f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073261"
 ---
 # <a name="ad_process_id"></a>AD_PROCESS_ID
 指定进程 ID，该 ID 可以是系统 ID 或 GUID。
@@ -84,7 +85,7 @@ dwUnused 填充。
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md)
 - [PROCESS_INFO](../../../extensibility/debugger/reference/process-info.md)

@@ -1,6 +1,6 @@
 ---
 description: 此方法获取字段的大小（以字节为单位）。
-title: IDebugField：： GetSize |Microsoft Docs
+title: IDebugField：：GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 73329924-3751-4f44-af54-5986b7943374
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 471b6dce3c4795f8059e64aff5e7522b3ba91842
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 705d597993c0d29ba66a9165c17c65c4ca475cc157c29252bafa27383f430798
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077026"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360321"
 ---
 # <a name="idebugfieldgetsize"></a>IDebugField::GetSize
 此方法获取字段的大小（以字节为单位）。
@@ -42,13 +43,13 @@ int GetSize(
 
 ## <a name="parameters"></a>参数
 `pdwSize`\
-弄返回大小。
+[out]返回大小。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 所有字段都具有类型并且所有类型都具有大小。 例如，类型为 byte 的字段的大小为1字节。
+ 所有字段都有一个类型，并且所有类型都有一个大小。 例如，一个字节类型的字段的大小为 1 个字节。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

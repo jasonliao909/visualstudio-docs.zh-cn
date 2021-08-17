@@ -1,6 +1,6 @@
 ---
 description: 此方法将字段枚举重置为第一个元素。
-title: IEnumDebugFields：：Reset |Microsoft Docs
+title: IEnumDebugFields：： Reset |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cbedf6f73d8a7b914d9614ebe6cca669a0c190c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 34448e389b545a3fe1d4ba7d86cbbe753567876606a4cae25118a573dfca3263
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029419"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360243"
 ---
 # <a name="ienumdebugfieldsreset"></a>IEnumDebugFields::Reset
 此方法将枚举重置为第一个元素。
@@ -41,10 +41,10 @@ int Reset();
  无
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法后，对 [Next](../../../extensibility/debugger/reference/ienumdebugfields-next.md) 的下一次调用将返回 枚举的第一个元素。
+ 调用此方法后，下 [一次调用将返回枚举](../../../extensibility/debugger/reference/ienumdebugfields-next.md) 的第一个元素。
 
 ## <a name="see-also"></a>请参阅
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

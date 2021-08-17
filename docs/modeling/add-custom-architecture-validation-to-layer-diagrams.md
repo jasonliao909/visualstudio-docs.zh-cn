@@ -13,12 +13,12 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c917ecacdfbe95965ae7a571b251e89c62c23eda
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4cf79cd6234b66f60c8b3487a0dcaed0bcd57fba3937269657b34e1ce40856ef
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069355"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443953"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
@@ -206,23 +206,23 @@ ms.locfileid: "122069355"
 
 除非出现以下特征，否则不执行验证：
 
-- 依赖关系图上至少有一个依赖项链接。
+- 依赖项关系图上至少有一个依赖项链接。
 
 - 模型中存在于代码元素相关联的层。
 
-首次启动 Visual Studio 的实验实例来测试验证扩展时，请打开或创建具有这些特征的解决方案。
+首次启动验证扩展的实验实例Visual Studio，打开或创建具有这些特征的解决方案。
 
 ### <a name="run-clean-solution-before-validate-architecture"></a>在验证体系结构之前运行清理解决方案
 
-每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果尚未更新测试依赖关系图或其代码，则不会执行验证方法。
+每当你更新验证代码时，请先在实验解决方案中的“生成”  菜单上使用“清理解决方案”  命令，然后再测试“验证”命令。 这是必要的，因为将缓存验证的结果。 如果尚未更新测试依赖项关系图及其代码，将不会执行验证方法。
 
 ### <a name="launch-the-debugger-explicitly"></a>显式启动调试器
 
 验证在单独的进程中运行。 因此，不会触发验证方法中的断点。 验证开始后，必须将调试器显式附加到进程。
 
-若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当 "调试" 对话框出现时，选择 Visual Studio 的主实例。
+若要将调试器附加到验证进程，请在验证方法的开头插入一个对 `System.Diagnostics.Debugger.Launch()` 的调用。 当"调试"对话框出现时，选择调试Visual Studio。
 
-或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 当消息框出现时，请前往 Visual Studio 的主实例，并在 "**调试**" 菜单上单击 "**附加到进程**"。 选择名为 **Graphcmd.exe** 的进程。
+或者，可以插入一个对 `System.Windows.Forms.MessageBox.Show()`的调用。 出现消息框时，转到 Visual Studio，在"调试"菜单上单击"**附加到进程"。**  选择名为 **Graphcmd.exe** 的进程。
 
 始终通过按 Ctrl + F5（“开始执行(不调试)”）启动实验实例。
 

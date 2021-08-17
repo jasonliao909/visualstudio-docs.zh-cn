@@ -22,15 +22,15 @@ ms.locfileid: "121363762"
 
 ## <a name="overview"></a>概述
 
-如果已安装 Azure Tools for Microsoft Visual Studio，可以从 Azure 的存储帐户中查看 Blob、队列和表数据。 服务器资源管理器中的 "Azure **存储**" 节点显示本地存储模拟器帐户和其他 Azure 存储帐户中的数据。
+如果已安装 Azure Tools for Microsoft Visual Studio，可以从 Azure 的存储帐户中查看 Blob、队列和表数据。 azure **存储** 节点服务器资源管理器显示本地存储模拟器帐户和其他 Azure 存储帐户中的数据。
 
-若要在 Visual Studio 中查看服务器资源管理器，请在菜单栏上选择 "**查看**  >  **服务器资源管理器**"。 “存储”节点显示已连接的每个 Azure 订阅或证书下的所有存储帐户。 如果存储帐户未出现，可以遵循[本文稍后部分](#add-storage-accounts-by-using-server-explorer)的说明来添加帐户。
+若要在服务器资源管理器视图中Visual Studio，请在菜单栏上选择"查看  >  **服务器资源管理器"。** “存储”节点显示已连接的每个 Azure 订阅或证书下的所有存储帐户。 如果存储帐户未出现，可以遵循[本文稍后部分](#add-storage-accounts-by-using-server-explorer)的说明来添加帐户。
 
-从 Azure SDK 2.7 开始，也可使用 Cloud Explorer 来查看和管理 Azure 资源。 有关详细信息，请参阅 [Cloud Explorer 管理 Azure 资源](vs-azure-tools-resources-managing-with-cloud-explorer.md)。
+从 Azure SDK 2.7 开始，也可使用 Cloud Explorer 来查看和管理 Azure 资源。 有关详细信息，请参阅使用 [Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md)管理 Azure 资源。
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>在 Visual Studio 中查看和管理存储资源
 
-服务器资源管理器自动在存储模拟器帐户中显示 Blob、队列和表的列表。 存储模拟器帐户在 "**存储**" 节点下作为 "**开发**" 节点服务器资源管理器列出。
+服务器资源管理器自动在存储模拟器帐户中显示 Blob、队列和表的列表。 存储模拟器帐户在 服务器资源管理器 节点下 **存储"开发**"**节点列出**。
 
 若要查看存储模拟器帐户的资源，请展开“开发”节点。 展开“开发”节点时，如果尚未启动存储模拟器，它会自动启动。 此过程可能需要数秒钟的时间。 当存储模拟器启动时，可以继续在 Visual Studio 的其他区域中工作。
 
@@ -72,7 +72,7 @@ ms.locfileid: "121363762"
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>在 Blob 容器中创建文件夹或子文件夹
 
-1. 在 **Cloud Explorer** 中选择 blob 容器。 在容器窗口中，选择“上传 Blob”按钮。
+1. 在 中选择 blob **Cloud Explorer。** 在容器窗口中，选择“上传 Blob”按钮。
 
 1. 在“上传新文件”对话框中，选择“浏览”按钮并指定要上传的文件，并在“文件夹(可选)”框中输入文件夹名称。
 
@@ -102,7 +102,7 @@ ms.locfileid: "121363762"
 
 ### <a name="to-download-blob-data"></a>下载 Blob 数据
 
-在 **Cloud Explorer** 中，使用以下任何方法：
+在 **Cloud Explorer** 中，使用以下任一方法：
 
 * 打开一个或多个 Blob 的快捷菜单，并选择“打开”。
 * 选择 Blob 名称，并选择“打开”按钮。
@@ -134,7 +134,7 @@ Blob 数据在本地缓存，并且对照 Azure Blob 存储中 Blob 的最后修
 
 ### <a name="to-edit-a-blob"></a>编辑 Blob
 
-选择 "blob"，然后选择 " **打开 blob** " 按钮。
+选择 Blob，然后选择"打开 **Blob"** 按钮。
 
 文件将下载到临时位置，在本地计算机上打开。 进行更改之后，再次上传 Blob。
 
@@ -158,7 +158,7 @@ Blob 数据在本地缓存，并且对照 Azure Blob 存储中 Blob 的最后修
 有关存储服务队列的详细信息，请参阅[通过 .NET 开始使用 Azure 队列存储](/azure/storage/queues/storage-dotnet-how-to-use-queues)。 有关存储服务队列的 Web 服务的详细信息，请参阅 [Queue Service Concepts](/rest/api/storageservices/Queue-Service-Concepts)（队列服务的概念）。 有关如何使用 Visual Studio 将消息发送到存储服务队列的信息，请参阅 [Sending Messages to a Storage Services Queue](/azure/visual-studio/vs-storage-cloud-services-getting-started-queues)（将消息发送到存储服务队列）。
 
 > [!NOTE]
-> 存储服务队列不同于 Azure 服务总线队列。 有关队列服务总线，请参阅服务总线[队列、主题和订阅](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)。
+> 存储服务队列不同于 Azure 服务总线队列。 有关服务总线队列的详细信息，请参阅[服务总线队列、主题和订阅](/azure/service-bus-messaging/service-bus-queues-topics-subscriptions)。
 
 ## <a name="work-with-table-resources"></a>处理表资源
 
@@ -166,12 +166,12 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
 ### <a name="to-create-a-table"></a>创建表
 
-1. 在 **Cloud Explorer** 中，选择存储帐户的 **"** 表"节点，然后选择"**创建表"。**
+1. 在 **Cloud Explorer** 中，选择存储帐户的 " **表** " 节点，然后选择 " **创建表**"。
 1. 在“创建表”对话框中，输入表的名称。
 
 ### <a name="to-view-table-data"></a>查看表数据
 
-1. 在 **Cloud Explorer** 中，打开 **Azure** 节点，然后 **打开存储节点**。
+1. 在 **Cloud Explorer** 中，打开 " **Azure** " 节点，然后打开 "**存储**" 节点。
 1. 打开所需的存储帐户节点，并打开“表”节点以查看存储帐户的表列表。
 1. 打开表的快捷菜单，并选择“查看表”。
 
@@ -181,7 +181,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
 ### <a name="to-edit-table-data"></a>编辑表数据
 
-在 **表设计器** 中，打开实体的快捷菜单 (单个行) 或单个单元格 (的属性) ，然后选择"编辑 **"。**
+在 **表设计器** 中，打开 (单个行) 或 (单个单元) 的属性的实体的快捷菜单，然后选择 " **编辑**"。
 
 ![添加或编辑表实体](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC656238.png)
 
@@ -194,7 +194,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
 ### <a name="to-add-entities"></a>添加实体
 
-1. 在 **表设计器"** 中，选择" **添加实体"** 按钮。
+1. 在 **表设计器** 中，选择 " **添加实体** " 按钮。
 
     ![“添加实体”按钮](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC655336.png)
 
@@ -217,7 +217,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 1. 查询生成完毕后，关闭该对话框。 所生成文本格式的查询以 WCF 数据服务筛选器的形式显示在文本框中。
 1. 若要运行查询，请选择绿色三角形图标。
 
-如果在筛选文本框中直接输入 WCF Data Services 筛选器字符串，还可以筛选“表设计器”中显示的实体数据。 此类字符串类似 SQL WHERE 语句，但它以 HTTP 请求的形式发送到服务器。 若要了解如何构造筛选器字符串，请参阅 [为表设计器 构造筛选器字符串](vs-azure-tools-table-designer-construct-filter-strings.md)。
+如果在筛选文本框中直接输入 WCF Data Services 筛选器字符串，还可以筛选“表设计器”中显示的实体数据。 此类字符串类似 SQL WHERE 语句，但它以 HTTP 请求的形式发送到服务器。 有关如何构造筛选器字符串的信息，请参阅 [构造表设计器的筛选器字符串](vs-azure-tools-table-designer-construct-filter-strings.md)。
 
 下图显示了有效筛选字符串的示例：
 
@@ -225,7 +225,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
 ## <a name="refresh-storage-data"></a>刷新存储数据
 
-当服务器资源管理器连接到存储帐户或从存储帐户获取数据时，可能需要长达一分钟的时间才能完成操作。 如果服务器资源管理器无法连接，则操作可能会退出。检索数据时，可以继续在数据的其他部分Visual Studio。 如果花费了太长时间想要取消操作，请选择服务器资源管理器工具栏上的“停止刷新”按钮。
+当服务器资源管理器连接到存储帐户或从存储帐户获取数据时，可能需要长达一分钟的时间才能完成操作。 如果服务器资源管理器无法连接，则操作可能会超时。检索数据时，可以继续在 Visual Studio 的其他部分中工作。 如果花费了太长时间想要取消操作，请选择服务器资源管理器工具栏上的“停止刷新”按钮。
 
 ### <a name="to-refresh-blob-container-data"></a>刷新 Blob 容器数据
 
@@ -235,7 +235,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 ### <a name="to-refresh-table-data"></a>刷新表数据
 
 * 选择“存储”下的“表”节点，并选择服务器资源管理器工具栏上的“刷新”按钮。
-* 若要刷新在 表设计器 中显示的实体列表，请选择"执行"**按钮表设计器。**
+* 若要刷新 **表设计器** 中显示的实体列表，请在表设计器中选择 " **执行** " 按钮。
 
 ### <a name="to-refresh-queue-data"></a>刷新队列数据
 
@@ -262,7 +262,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
    ![创建 Azure 存储帐户](./media/vs-azure-tools-storage-resources-server-explorer-browse-manage/IC744166.png)
 
-1. 选择“创建”  。
+1. 选择“创建”。
 
 新的存储帐户随即出现在解决方案资源管理器的“存储”列表中。
 

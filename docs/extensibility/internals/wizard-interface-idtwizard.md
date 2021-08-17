@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08a1ec6e79624d3f1eb74f9b5251a73523a998c739c7ea215e3622643c5b9926
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af87757d96097708828ebbdcb017ddf0627ed6e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041784"
 ---
 # <a name="wizard-interface-idtwizard"></a>向导界面 (IDTWizard)
 集成开发环境 (IDE) 使用接口与 <xref:EnvDTE.IDTWizard> 向导进行通信。 为了在 IDE 中安装，向导必须实现此接口。
@@ -66,7 +66,7 @@ STDMETHOD(Execute)(THIS_
     wizardResultBackout = 2
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [上下文参数](../../extensibility/internals/context-parameters.md)
 - [自定义参数](../../extensibility/internals/custom-parameters.md)
 - [向导](../../extensibility/internals/wizards.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 753146d856b9844aa868a2e7e65d0cd82a6e07325fccc88663276a1b26bb5d71
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 94b8c33fe806814e204d8718196b0e424f0738dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087712"
 ---
 # <a name="idebugproperty3setvalueasstringwitherror"></a>IDebugProperty3::SetValueAsStringWithError
 设置此属性的值，并在必要时返回错误消息。
@@ -171,5 +171,5 @@ HRESULT CProperty::SetValueAsStringWithError(
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

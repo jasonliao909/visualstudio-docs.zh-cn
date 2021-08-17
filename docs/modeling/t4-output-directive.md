@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 24578c6bbc9bf5953dcfc4b05bc3118c22447a47e9353c1f2268b00985836790
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b5b8bae97dbed7afbcae7611bd9787979b8ab882
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271025"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055349"
 ---
 # <a name="t4-output-directive"></a>T4 输出指令
 

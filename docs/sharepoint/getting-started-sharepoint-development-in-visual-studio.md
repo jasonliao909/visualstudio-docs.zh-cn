@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a710d71b80f8aa64efef52b891a8c8a760b92c10
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 5c69c709118a544b4384721c20f75d11643c9644f70f936e622f9b8035361c7e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112892"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121228891"
 ---
 # <a name="get-started-sharepoint-development-in-visual-studio"></a>入门（Visual Studio 中的 SharePoint 开发）
 
