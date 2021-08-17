@@ -1,6 +1,6 @@
 ---
-title: " (Visual Studio 模板) 的项目元素 |Microsoft Docs"
-description: 了解项目元素及其如何指定要添加到项目中的文件或目录。
+title: Project元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 Project 元素及其如何指定要添加到项目中的文件或目录。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52bfb5f65aa9d42c46eece619a21152c51e8fa28
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 260b52b23be9857cc3850824b3eda8fe795abb701c21788df7b487ae6f5e111c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068799"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388521"
 ---
-# <a name="project-element-visual-studio-templates"></a>Visual Studio 模板 (项目元素) 
-指定要添加到项目中的文件或目录。
+# <a name="project-element-visual-studio-templates"></a>Project元素 (Visual Studio模板) 
+指定要添加到项目的文件或目录。
 
  \<VSTemplate> \<TemplateContent>
  \<Project>
@@ -48,17 +48,17 @@ ms.locfileid: "105068799"
 
 |属性|描述|
 |---------------|-----------------|
-|`File`|必需的特性。<br /><br /> 指定模板 *.zip* 文件中的项目文件的名称。|
-|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，指定在从模板创建项目时，项目文件是否具有必须替换的参数值。 默认值为 `false`。|
+|`File`|必需的特性。<br /><br /> 指定模板中项目文件的名称 *.zip文件。*|
+|`ReplaceParameters`|可选特性。<br /><br /> 一个布尔值，指定项目文件是否具有从模板创建项目时必须替换的参数值。 默认值为 `false`。|
 |`TargetFileName`|可选特性。<br /><br /> 指定从模板创建项目时项目文件的名称。|
-|`IgnoreProjectParameter`|可选特性。<br /><br /> 指定是否应将项目添加到当前解决方案。 如果自定义参数的值 "$*myCustomParameter*$" 存在于参数替换文件中，则会创建该项目，但不会将其添加为当前打开的解决方案的一部分。|
+|`IgnoreProjectParameter`|可选特性。<br /><br /> 指定项目是否应该添加到当前解决方案。 如果参数替换文件中存在自定义参数"$*myCustomParameter*$"的值，则项目将创建，但不作为当前打开解决方案的一部分添加。|
 
 ### <a name="child-elements"></a>子元素
 
 |元素|说明|
 |-------------|-----------------|
 |[文件夹](../extensibility/folder-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要添加到项目的文件夹。|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要添加到项目中的文件。|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md)|可选元素。<br /><br /> 指定要添加到项目的文件。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -69,14 +69,14 @@ ms.locfileid: "105068799"
 ## <a name="remarks"></a>备注
  `Project` 是 `TemplateContent` 的可选子元素。
 
- `Project`元素用于指定项目，因此仅在项目模板中有效。
+ `Project`元素用于指定项目，因此，仅在项目模板中有效。
 
- `Project` 元素可以包含 [文件夹](../extensibility/folder-element-visual-studio-project-templates.md) 子元素或 [项目](../extensibility/projectitem-element-visual-studio-project-templates.md) 项子元素，但不能同时包含 `Folder` 和 `ProjectItem` 子元素。
+ `Project` 元素可以具有 [Folder](../extensibility/folder-element-visual-studio-project-templates.md) 子元素或 [ProjectItem](../extensibility/projectitem-element-visual-studio-project-templates.md) 子元素，但不能同时包含 和 `Folder` `ProjectItem` 子元素。
 
- [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 会根据用户在 " **新建项目** " 对话框中输入的名称自动重命名项目文件名。 `TargetFileName`如果要为使用模板创建的项目文件提供备用文件名，请使用特性。
+ [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]根据用户在"新建文件"对话框中输入的名称自动重命名 **Project** 名称。 如果要为使用模板创建的项目文件提供备用文件名，请使用 `TargetFileName` 属性。
 
 ## <a name="example"></a>示例
- 下面的示例演示应用程序的项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 以下示例显示了应用程序的项目模板的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"
@@ -105,5 +105,5 @@ ms.locfileid: "105068799"
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-- [项目项元素 (Visual Studio 项目模板) ](../extensibility/projectitem-element-visual-studio-project-templates.md)
-- [文件夹元素 (Visual Studio 项目模板) ](../extensibility/folder-element-visual-studio-project-templates.md)
+- [ProjectItem 元素 (Visual Studio项目模板) ](../extensibility/projectitem-element-visual-studio-project-templates.md)
+- [文件夹元素 (Visual Studio项目模板) ](../extensibility/folder-element-visual-studio-project-templates.md)

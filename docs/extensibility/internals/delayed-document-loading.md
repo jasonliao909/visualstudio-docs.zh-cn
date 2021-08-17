@@ -1,6 +1,6 @@
 ---
 title: 延迟的文档加载 |Microsoft Docs
-description: 了解有关 Visual Studio 中延迟的文档加载的信息，以及如何编写扩展的代码，使其不在加载文档之前查询文档中的元素。
+description: 了解 Visual Studio 中延迟的文档加载以及如何编码扩展，以便在加载文档之前不在文档中查询元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -8,14 +8,15 @@ ms.assetid: fb07b8e2-a4e3-4cb0-b04f-8eb11c491f35
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 959af31f1986a4ff670adc5d74573cfb2bb850ce
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 63fd214225d1999d53c1ff696803499eba9c4b8a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063442"
 ---
 # <a name="delayed-document-loading"></a>延迟的文档加载
 
@@ -59,7 +60,7 @@ ms.locfileid: "105090978"
 
 - 否则，你可以订阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocTableEvents.OnAfterAttributeChange%2A> 。
 
-下面的示例是一个假设的文档访问方案： Visual Studio 扩展需要显示有关打开的文档的一些信息，例如，编辑锁定计数和文档数据。 它使用枚举 RDT 中的文档 <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> ，然后对每个文档进行调用，以便 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 检索编辑锁定计数和文档数据。 如果文档处于挂起初始化状态，请求文档数据将导致其不必要地初始化。
+下面的示例是一个假设的文档访问方案： Visual Studio 扩展插件希望显示有关打开的文档的一些信息，例如，编辑锁定计数和文档数据。 它使用枚举 RDT 中的文档 <xref:Microsoft.VisualStudio.Shell.Interop.IEnumRunningDocuments> ，然后对每个文档进行调用，以便 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable.GetDocumentInfo%2A> 检索编辑锁定计数和文档数据。 如果文档处于挂起初始化状态，请求文档数据将导致其不必要地初始化。
 
 访问文档的一种更有效的方法是使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentEditLockCount%2A> 来获取编辑锁计数，然后使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentFlags%2A> 来确定文档是否已初始化。 如果标志不包含 [_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>)，文档已经初始化，请求的文档数据 <xref:Microsoft.VisualStudio.Shell.Interop.IVsRunningDocumentTable4.GetDocumentData%2A> 不会导致不必要的初始化。 如果标志确实包括 [_VSRDTFLAGS4。RDT_PendingInitialization](<xref:Microsoft.VisualStudio.Shell.Interop._VSRDTFLAGS4.RDT_PendingInitialization>)，在初始化文档之前，扩展应避免请求文档数据。 可以在事件处理程序中检测到此初始化 `OnAfterAttributeChange(Ex)` 。
 

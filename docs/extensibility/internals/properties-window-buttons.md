@@ -1,6 +1,6 @@
 ---
-title: "\"属性\" 窗口按钮 |Microsoft Docs"
-description: 了解属性窗口工具栏上默认显示的按钮以及这些按钮的实现。
+title: 属性窗口按钮|Microsoft Docs
+description: 了解默认显示在按钮工具栏上的按钮属性窗口按钮的实现。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,33 +10,34 @@ ms.assetid: bdd2e3a7-ae6e-4e88-be1a-e0e3b7ddbbcc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a9c45d6cf0f271683c3c708bd71ef46377a5c5ca
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 25cea6a321fe7cf7365f179fd699553bd32b23e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903445"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094576"
 ---
 # <a name="properties-window-buttons"></a>属性窗口按钮
-默认情况下，在 " **属性** " 窗口的工具栏上显示某些按钮，具体取决于开发语言和产品类型。 在所有情况下，将显示 "已 **分类**"、"按 **字母顺序** **" 和 "****属性页**" 按钮。 在 Visual c # 和 Visual Basic 中，还会显示 " **事件** " 按钮。 在某些 Visual C++ 的项目中，将显示 " **vc + +" 消息** 和 " **vc 替代** " 按钮。 对于其他项目类型，可能会显示其他按钮。 有关 " **属性** " 窗口中的按钮的详细信息，请参阅 " [属性" 窗口](../../ide/reference/properties-window.md)。
+根据开发语言和产品类型，某些按钮默认显示在"属性"窗口的 **工具栏** 上。 所有情况下，都将显示 **"分类**"、 **按字母顺序** 排序 **的"** 属性"和" **属性页** "按钮。 在 Visual C# Visual Basic中，还会 **显示**"事件"按钮。 在某些Visual C++项目中，**将显示VC++消息**"和 **"VC** 替代"按钮。 可能会为其他项目类型显示其他按钮。 有关"属性"窗口中按钮 **的信息** ，请参阅 [属性窗口](../../ide/reference/properties-window.md)。
 
-## <a name="implementation-of-properties-window-buttons"></a>"属性" 窗口按钮的实现
- 单击 " **分类** " 按钮时，Visual Studio 将调用 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 对象上的接口，该接口具有焦点以便按类别对其属性进行排序。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 在 `IDispatch` 呈现到 " **属性** " 窗口的对象上实现。
+## <a name="implementation-of-properties-window-buttons"></a>属性窗口按钮的实现
+ 单击"分类 **"** 按钮时，Visual Studio对具有焦点的对象调用 接口，以便 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 按类别对属性进行排序。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties> 在呈现给 `IDispatch` "属性"窗口的 **对象上** 实现。
 
- 有11个预定义的属性类别，它们具有负值。 您可以定义自定义类别，但是我们建议您为它们指定正值，以将它们与预定义的类别区分开来。
+ 有 11 个预定义的属性类别，它们具有负值。 可以定义自定义类别，但我们建议为其分配正值，以将它们与预定义类别区别。
 
- <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A>方法为指定的属性返回相应的属性类别值。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A>方法返回包含类别名称的字符串。 你只需提供对自定义类别值的支持，因为 Visual Studio 会知道标准属性类别的值。
+ <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.MapPropertyToCategory%2A>方法返回指定属性的适当属性类别值。 <xref:Microsoft.VisualStudio.Shell.Interop.ICategorizeProperties.GetCategoryName%2A>方法返回包含类别名称的字符串。 只需为自定义类别值提供支持，Visual Studio标准属性类别值。
 
- 单击 "按 **字母** 顺序" 按钮时，属性将按名称的字母顺序显示。 `IDispatch`根据本地化的排序算法检索名称。
+ 单击"按字母 **顺序"** 按钮时，属性按名称的字母顺序显示。 根据本地化排序 `IDispatch` 算法检索名称。
 
- 当 " **属性** " 窗口处于打开状态时，" **属性** " 按钮会自动显示为选中状态。 在环境的其他部分中，将显示同一个按钮，你可以单击该按钮以显示 " **属性** " 窗口。
+ 当" **属性** "窗口打开时 **，"属性** "按钮将自动显示为选中状态。 在环境的其他部分，将显示相同的按钮，你可以单击它以显示"属性 **"** 窗口。
 
- 如果未为所选对象实现，则 " **属性页** " 按钮不可用 `ISpecifyPropertyPages` 。 属性页显示与解决方案和项目相关的依赖于配置的属性，但它们也可以与项目项关联 (例如 Visual C++) 中。
+ 如果未 **为** 所选对象实现 ， `ISpecifyPropertyPages` 则"属性页"按钮不可用。 属性页显示通常与解决方案和项目关联的与配置相关的属性，但它们也可以与项目项相关联 (例如，在 Visual C++) 。
 
 > [!NOTE]
-> 不能使用非托管代码将工具栏按钮添加到 " **属性** " 窗口。 若要添加工具栏按钮，您必须创建一个派生自的托管对象 <xref:System.Windows.Forms.Design.PropertyTab> 。
+> 无法使用非托管代码将工具栏按钮添加到"属性"窗口。 若要添加工具栏按钮，必须创建派生自 的托管对象 <xref:System.Windows.Forms.Design.PropertyTab> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展属性](../../extensibility/internals/extending-properties.md)

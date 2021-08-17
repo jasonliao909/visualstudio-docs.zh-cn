@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f52c4deda5b934a9b55c5ecfeec95ca633edf15e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8f56c67a16b59b17de5a4bd95ad9a074203b097224844f541adc8b658d60edea
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389262"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121386051"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 在形状中定义文本修饰器时，它由一个文本字段表示。 有关 TextFields 和其他在 mapcontrol.shapefields 的初始化示例，请在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。
@@ -263,7 +264,7 @@ partial class ExampleShape
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)
 - [在图表上设置背景图像](../modeling/setting-a-background-image-on-a-diagram.md)

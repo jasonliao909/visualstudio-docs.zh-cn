@@ -1,6 +1,6 @@
 ---
 description: 指定调试引擎 (DE) 应如何处理给定的异常。
-title: IDebugEngine2：： SetException |Microsoft Docs
+title: IDebugEngine2：：SetException |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,14 +43,14 @@ int SetException(
 
 ## <a name="parameters"></a>参数
 `pException`\
-中描述异常以及如何调试异常的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 结构。
+[in]描述 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 以及如何调试异常的异常结构。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 可以通过一种可能的取消，使程序在第一次机会、第二次机会或根本就停止生成异常。
+ 可以指示 DE 在出现第一次、第二次或完全不生成异常时停止程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

@@ -1,6 +1,6 @@
 ---
-description: 设置字符串的引用值。
-title: IDebugReference2：： SetValueAsString |Microsoft Docs
+description: 设置字符串中引用的值。
+title: IDebugReference2：：SetValueAsString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ad19f6e2f27f09128986c5b99d743061921b95eb7824ad816396860535eaecb1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f582cc79b3feb2eb8a5be431431c405774d1409
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063819"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
-设置字符串的引用值。 保留供将来使用。
+设置字符串中引用的值。 保留供将来使用。
 
 ## <a name="syntax"></a>语法
 
@@ -47,16 +47,16 @@ int SetValueAsString (
 
 ## <a name="parameters"></a>参数
 `pszValue`\
-中字符串形式的值。
+[in]字符串形式的值。
 
 `dwRadix`\
-中用于设置任何数字信息格式的基数。
+[in]用于设置任何数值信息格式的基数。
 
 `dwTimeout`\
-中从此方法返回前等待的最长时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
+[in]从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

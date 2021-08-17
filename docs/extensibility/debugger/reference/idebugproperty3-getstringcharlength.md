@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d6bdb8a5bb9e85f379d28b9773cfd9e57d650f61a8da51ceb141455a6914eef2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 43e4e935e9661e3054b1da4b1d86316c563e4d3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338665"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063884"
 ---
 # <a name="idebugproperty3getstringcharlength"></a>IDebugProperty3::GetStringCharLength
 返回关联属性的字符串中的字符数。
@@ -96,6 +96,6 @@ STDMETHODIMP CProperty::GetStringCharLength(ULONG *pLen)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [GetStringChars](../../../extensibility/debugger/reference/idebugproperty3-getstringchars.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)

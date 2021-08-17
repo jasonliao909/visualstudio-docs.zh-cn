@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 95a3cdaddd10cefabaa166e045f5b2f4b1a8d517
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 973e9403895d69af4d6d2f5a0384fd9f153d64d4506cd3cb9ba64d9e6c350e37
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078618"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121335259"
 ---
 # <a name="visibilityitem-element"></a>VisibilityItem 元素
 `VisibilityItem`元素确定命令和工具栏的静态可见性。 每个条目都标识一个命令或菜单，以及一个关联的命令 UI 上下文。 Visual Studio检测命令、菜单和工具栏及其可见性，而无需加载定义它们的 VSPackage。 IDE 使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 方法确定命令 UI 上下文是否处于活动状态。
@@ -44,7 +44,7 @@ ms.locfileid: "122078618"
 
 ### <a name="attributes"></a>特性
 
-|属性|说明|
+|属性|描述|
 |---------------|-----------------|
 |GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
@@ -56,12 +56,12 @@ ms.locfileid: "122078618"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|说明|
+|元素|描述|
 |-------------|-----------------|
 |[VisibilityConstraints 元素](../extensibility/visibilityconstraints-element.md)|`VisibilityConstraints`元素确定命令和工具栏组的静态可见性。|
 
 ## <a name="remarks"></a>备注
- 标准 Visual Studio UI 上下文在 *Visual Studio SDK* 安装路径 \VisualStudioIntegration\Common\Inc\vsshlids.h 文件中以及 和 类中 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 定义。 类中定义了一组更完整的 UI <xref:Microsoft.VisualStudio.VSConstants> 上下文。
+ 标准 Visual Studio UI 上下文在 *Visual Studio SDK* 安装路径 \VisualStudioIntegration\Common\Inc\vsshlids.h 文件中以及 和 类中 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids> 定义。 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80> 类中定义了一组更完整的 UI <xref:Microsoft.VisualStudio.VSConstants> 上下文。
 
 ## <a name="example"></a>示例
 

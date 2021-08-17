@@ -1,6 +1,6 @@
 ---
-description: 根据给定的名称检索度量值。
-title: IDebugSettingsCallback2：： GetMetricDword |Microsoft Docs
+description: 根据指标的名称检索指标的值。
+title: IDebugSettingsCallback2：：GetMetricDword |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5534e66639c213131c26f7da2b077bf3d5c2f096e7480a06f54ae0109a3e0e1d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d57fbaf17278e3d2a8fac4755f9052252189955
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415775"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063741"
 ---
 # <a name="idebugsettingscallback2getmetricdword"></a>IDebugSettingsCallback2::GetMetricDword
-根据给定的名称检索度量值。
+根据指标的名称检索指标的值。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +47,19 @@ private int GetMetricDword(
 
 ## <a name="parameters"></a>参数
 `pszType`\
-中度量值的类型。
+[in]指标的类型。
 
 `guidSection`\
-中部分的唯一标识符。
+[in]节的唯一标识符。
 
 `pszMetric`\
-中度量值的名称。
+[in]指标的名称。
 
 `pdwValue`\
-弄返回度量值的值。
+[out]返回指标的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

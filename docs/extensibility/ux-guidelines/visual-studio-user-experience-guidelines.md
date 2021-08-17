@@ -8,14 +8,15 @@ ms.assetid: 3abbe495-cbbc-4982-a809-38bda34553a7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fef6315a9962d483b477c5b5f730c5ffe80b9911
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 4f9aa4e919a8cecfb45ff6cbfca5f3717529369c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049267"
 ---
 # <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
 如果为 Visual Studio 设计新功能，请遵循 Visual Studio 用户体验指南。 这些指南包含有关常见用户模型和交互模式的信息，可帮助新用户界面 (UI) 设计师在开发环境中创建无缝且一致的用户体验。

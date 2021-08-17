@@ -1,6 +1,6 @@
 ---
 title: 全球化和本地化Excel解决方案
-description: 了解在具有非英语设置的计算机上运行的 Microsoft Office Excel 解决方案的特殊注意事项Windows。
+description: 了解在具有非英语设置的计算机上运行的Microsoft Office Excel解决方案的特殊注意事项Windows。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -41,7 +41,7 @@ ms.locfileid: "121352040"
 
  例如，如果最终用户将其区域选项设置为德语（德国）区域设置，则他们期望采用以下方式设置日期 2005 年 6 月 29 日的格式：29.06.2005。 但是，如果解决方案以字符串形式将该日期传递到 Excel，则必须依据英语（美国）格式 6/29/2005 设置该日期的格式。 如果将单元格格式化为日期单元格，则 Excel 将采用德语（德国）格式显示日期。
 
-### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>将其他区域设置 EXCEL对象模型
+### <a name="pass-other-locale-ids-to-the-excel-object-model"></a>将其他区域设置EXCEL模型
  公共语言运行时 (CLR) 会自动将区域设置 ID 1033 传递到接受区分区域设置的数据的 Excel 对象模型中的所有方法和属性。 无法为调入对象模型的所有调用自动更改此行为。 但是，通过使用 <xref:System.Type.InvokeMember%2A> 来调用方法以及将区域设置 ID 传递到方法的 *culture* 参数，可以将不同的区域设置 ID 传递到特定的方法。
 
 ## <a name="localize-document-text"></a>本地化文档文本
@@ -60,7 +60,7 @@ ms.locfileid: "121352040"
 ## <a name="install-the-language-packs"></a>安装语言包
  如果 Windows 具有非英语设置，则可安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 来以 Windows 使用的语言查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 消息。 如果最终用户使用 Windows 的非英语设置来运行你的解决方案，则他们必须具有相应的语言包来以 Windows 使用的语言查看运行时消息。 语言 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包可从 Microsoft 下载 [中心获得](https://www.microsoft.com/download)。
 
- 此外，可再发行的.NET Framework 语言包是 ClickOnce 消息所必需的。 可从.NET Framework下载中心获得语言[包](https://www.microsoft.com/download)。
+ 此外，可再发行的.NET Framework 语言包是 ClickOnce 消息所必需的。 可从.NET Framework下载中心获得该语言[包](https://www.microsoft.com/download)。
 
 ## <a name="regional-settings-and-excel-com-calls"></a>区域设置和Excel COM 调用
  每当托管客户端对 COM 对象调用一个方法并且需要传入特定于区域性的信息时，它都使用与当前线程区域设置匹配的 <xref:System.Globalization.CultureInfo.CurrentCulture%2A> （区域设置）来执行这些操作。 默认情况下，当前线程区域设置是从用户的区域设置继承而来的。 但是，当你从使用 Visual Studio 中的 Office 开发工具创建的 Excel 解决方案中调用 Excel 对象模型时，会自动将英语（美国）数据格式（区域设置 ID 1033）传递到 Excel 对象模型。 在将数据传递到 Microsoft Office Excel 或从项目代码中读取数据之前，必须使用英语（美国）数据格式对具有区分区域设置格式的所有数据（如日期和货币）进行格式设置。
@@ -98,7 +98,7 @@ Application.ActiveCell.Value2 = "05/12/04"
 ### <a name="applications-that-use-external-data"></a>使用外部数据的应用程序
  对于打开或以其他方式使用外部数据（如包含从旧系统中导出的逗号分隔值的文件（CSV 文件））的任何代码，如果这些文件是使用除 en-US 格式之外的任何格式导出的，则这些代码也会受到影响。 由于数据库中的所有值都应为二进制格式，因此只要数据库不将日期作为字符串存储且不执行不使用二进制格式的操作，数据库访问就不会受到影响。 另外，如果使用 Excel 中的数据构造 SQL 查询，则可能需要根据使用的函数来确保数据为 en-US 格式。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：面向Office多语言用户界面](../vsto/how-to-target-the-office-multilingual-user-interface.md)
 - [设计和创建Office解决方案](../vsto/designing-and-creating-office-solutions.md)

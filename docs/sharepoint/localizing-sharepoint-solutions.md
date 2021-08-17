@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a216e57bc9da15fca625e71c7e0430d4fbf4164b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6017f54f7e32ddcccc6e9e765d9a850af9a416b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873549"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047648"
 ---
 # <a name="localize-sharepoint-solutions"></a>本地化 SharePoint 解决方案
 

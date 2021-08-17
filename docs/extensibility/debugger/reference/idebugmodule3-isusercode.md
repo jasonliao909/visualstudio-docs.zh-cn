@@ -43,10 +43,10 @@ int IsUserCode(
 
 ## <a name="parameters"></a>参数
 `pfUser`\
-[out]如果模块 () ，则不为零;如果模块 () ，则不 `TRUE` `FALSE` 为零。
+[out]如果模块 () ，则非零 () `TRUE` `FALSE` 为零。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)

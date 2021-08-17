@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c093d61e38b3416fbef1e85dcf5af052c64db590
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 1f3d84e5c16bd6961428552d96468cd46e4049886d85e798f29ab3cbe1362a2d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827404"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384374"
 ---
 # <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以编程方式向工作簿添加新工作表
   可以通过编程方式创建一个工作表，然后将它添加到工作簿中工作表的集合。
@@ -48,11 +49,11 @@ ms.locfileid: "107827404"
 
      新工作表是一个本机 <xref:Microsoft.Office.Interop.Excel.Worksheet> 对象，不是主机项。 你还可以从本机 <xref:Microsoft.Office.Tools.Excel.Worksheet> 对象生成 <xref:Microsoft.Office.Interop.Excel.Worksheet> 主机项。 有关详细信息，请参阅 [Extending Word Documents and Excel Workbooks in VSTO Add-ins at Run Time](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [如何：以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
-- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

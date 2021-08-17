@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a692473176843730f8cb9c1acfeb90ed164e4ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 840ea85abfa995d9fc8df9e417ab13e78b25423e29d12684b3628760b5a61228
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124589"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121337963"
 ---
 # <a name="glyph-control-source-control-vspackage"></a> (源代码管理的标志符号控件 VSPackage) 
 可用于源代码管理的深度集成 Vspackage 是显示自己的标志符号，以指示源代码管理下项的状态的能力。

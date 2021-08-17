@@ -1,6 +1,6 @@
 ---
 title: Visual StudioSDK 术语表|Microsoft Docs
-description: 此术语表提供在 VISUAL STUDIO SDK 文档中使用的术语的定义。
+description: 此术语表提供在 Visual Studio SDK 文档中使用的术语的定义。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 28ef66eb7fc8a004b4d13ea6c3dbc56f7a467e465e4103c6cacf7581b656e209
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1738b39ec320b5272e884a2107ed85e28f507f3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028444"
 ---
 # <a name="visual-studio-sdk-glossary"></a>Visual StudioSDK 术语表
 此术语表提供文档中使用的术语 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 的定义。
 
 ## <a name="terms"></a>术语
- 外接程序 添加到主应用程序的实用工具应用程序、驱动程序或其他软件。 在 Visual Studio IDE (集成) 中，外接程序是一个基于自动化的应用程序，可扩展 IDE 的功能。
+ 外接程序 添加到主应用程序的实用工具应用程序、驱动程序或其他软件。 在 Visual Studio集成开发 (IDE) 中，外接程序是基于自动化的应用程序，可扩展 IDE 的功能。
 
  自动化模型 自动化模型（在早期版本的 Visual Studio称为扩展性模型）是一个编程接口，用于访问驱动 IDE 的基础例程。 外接程序、向导和宏使用自动化模型中的对象来控制或扩展 IDE 的功能。
 
@@ -54,19 +54,19 @@ ms.locfileid: "121335285"
 
   设计器 一种编程接口，允许用户操作 UI 元素 (窗体、按钮和其他控件) 。
 
-  DocData 一个 COM 对象，它封装文档的基础数据，其中存在文档/视图分隔 (例如，在文本编辑器中，这是所有文本编辑器视图的基础文本缓冲区) 。 如果 EditorFactory 未提供此对象，则 IDE 将代表它制造一个。 此对象的职责是管理数据持久性以及针对同一 上的多个视图的共享语义 `DocData` 。 如果 `DocData` 对象支持 `IOleCommandTarget` 接口，它将包含在 UIShell 的命令路由中。
+  DocData 一个 COM 对象，它封装文档的基础数据，其中存在文档/视图分离 (例如，在文本编辑器中，这是所有文本编辑器视图的基础文本缓冲区) 。 如果 EditorFactory 未提供此对象，则 IDE 将代表它制造一个。 此对象的职责是管理数据持久性以及针对同一 上的多个视图的共享语义 `DocData` 。 如果 `DocData` 对象支持 `IOleCommandTarget` 接口，它将包含在 UIShell 的命令路由中。
 
-  DocObject 技术，用于在主机提供的帧内托管 UI。 更具体地说，此术语是指支持 和相关接口 `IOleDocument` 的任何嵌入。 此技术有许多潜在应用程序，例如 COM 文档的实现详细信息、Visual Basic 5.0 中的工具窗口、Visual Basic 6.0 中的 ActiveX 设计器等。
+  DocObject 技术，用于在主机提供的帧内托管 UI。 更具体地说，此术语是指支持 和相关接口 `IOleDocument` 的任何嵌入。 此技术具有许多潜在应用程序，例如 COM 文档的实现详细信息、Visual Basic 5.0 中的工具窗口、Visual Basic 6.0 中的 ActiveX 设计器等。
 
   document 用于以一般方式将文档作为一个整体引用 - 和 `DocData` `DocView` 。 例如，DocumentFrame 包含 ，但它还保留对 的引用 `DocView` `DocData` 以处理持久性。
 
-  DocView 用户与之交互以查看和操作基础 的 DocObject/嵌入/WindowPane。 `DocData` 用户不会利用作为界面设计的一部分的文档/视图 `DocObject` 分隔。 用户使用整个 DocObject 充当视图，而不是使用更抽象 (不太正式) 称为 的基础数据的概念 `DocData` 。 `DocView` 对象始终与文档框架对象 (IDE 的 MDI 子窗口) 嵌入。
+  DocView 用户与之交互以查看和操作基础 的 DocObject/嵌入/WindowPane。 `DocData` 用户不会利用作为界面设计的一部分的文档/视图 `DocObject` 分隔。 用户使用整个 DocObject 充当视图，而不是使用更抽象 (不太正式) 称为 的基础数据的概念 `DocData` 。 `DocView` 对象始终嵌入在 IDE 的 MDI (窗口中) 文档框架对象。
 
   DTE (开发工具扩展性) 对象是 Visual Studio 自动化模型中最顶层的访问点，可用于以编程方式自动执行和扩展 `DTE` IDE。
 
   由 IDE 实现的动态帮助窗口工具窗口，显示查找关键字或 **F1 帮助** 主题的列表。
 
-  editor Code (类， CLSID) 实现 `DocView` 的 。 如果支持 `DocData` 视图和数据分离，则它还实现 。
+  editor Code (类，CLSID) 实现 `DocView` 的 。 如果支持 `DocData` 视图和数据分离，则它还实现 。
 
   扩展：修改、自定义或添加到 IDE 的功能。 使用自动化模型或 VSPackage 创建扩展。
 
@@ -94,9 +94,9 @@ ms.locfileid: "121335285"
 
   特定于项目的设计器或编辑器 不能独立于项目类型使用的设计器。 所有特定于项目的设计器都必须在注册表中输入其编辑器工厂信息。 然后，每当特定项目中打开特定文件类型时，IDE 都可以实例化设计器。
 
-  项目类型窗口：一个窗口，用于持续跟踪全局选择上下文中当前活动的项目层次结构和项。 Project类型的窗口使用 服务来提醒 `SVsTrackSelectionEx` IDE 更改，以及向用户显示反馈。 解决方案资源管理器是项目类型窗口的示例。
+  项目类型窗口：一个窗口，用于持续跟踪全局选择上下文中当前活动的项目层次结构和项。 Project类型的窗口使用 服务来提醒 IDE 更改， `SVsTrackSelectionEx` 以及向用户显示反馈。 解决方案资源管理器是项目类型窗口的示例。
 
-  属性窗口属性浏览器" 。
+  属性窗口属性浏览器。
 
   基于引用Project不需要项目文件在同一目录中。 相反，对来自其他不相关目录的文件的引用由项目本身存储和维护。
 

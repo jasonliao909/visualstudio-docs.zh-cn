@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式重置 Word 文档中的范围
-description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Word 文档中调整现有范围的大小。
+description: 了解如何使用 Visual Studio 以编程方式调整 Microsoft Word 文档中现有范围的大小。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ae3b8f92231b77d81c1ef68e0929ccd000653b14
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 5aba88ca36443d039487444204de6d437db8300d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032740"
 ---
 # <a name="how-to-programmatically-reset-ranges-in-word-documents"></a>如何：以编程方式重置 Word 文档中的范围
   使用 <xref:Microsoft.Office.Interop.Word.Range.SetRange%2A> 方法在 Microsoft Office Word 文档中调整现有范围的大小。
@@ -56,11 +57,11 @@ ms.locfileid: "107824141"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet42":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet42":::
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
 ### <a name="to-reset-an-existing-range-in-a-vsto-add-in"></a>在 VSTO 外接程序中重置现有范围
 
-1. 下面的示例演示了 VSTO 外接程序的完整示例。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
+1. 下面的示例演示 VSTO 外接程序的完整示例。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet42":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet42":::

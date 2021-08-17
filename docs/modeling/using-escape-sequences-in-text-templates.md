@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 2a3cdabd38f2bf4ef38a31807fabed3ac837b26b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e5d77665ddc8f08a5efe2594fb41a8f7424e67b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033949"
 ---
 # <a name="use-escape-sequences-in-text-templates"></a>在文本模板中使用转义序列
 
@@ -38,6 +39,6 @@ ms.locfileid: "112388446"
 
 - 如果转义 (\\) 字符出现在除在 c) # 中转义控制字符或引用 (引号以外的任何其他序列中的其他任何位置，则将直接输出该字符。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：使用转义序列基于模板生成模板](../modeling/how-to-generate-templates-from-templates-by-using-escape-sequences.md)

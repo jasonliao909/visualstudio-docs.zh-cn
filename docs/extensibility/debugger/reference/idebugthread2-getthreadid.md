@@ -1,6 +1,6 @@
 ---
 description: 获取系统线程标识符。
-title: IDebugThread2：：GetThreadId |Microsoft Docs
+title: IDebugThread2：： GetThreadId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,16 +43,16 @@ int GetThreadId (
 
 ## <a name="parameters"></a>参数
 `pdwThreadId`\
-[out]返回系统线程标识符。
+弄返回系统线程标识符。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-线程 ID 用于标识进程中所有其他线程中的线程。
+线程 ID 用于标识进程中的所有其他线程中的线程。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为实现 `CProgram` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 接口的简单对象实现此方法。
+下面的示例演示如何对 `CProgram` 实现 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
@@ -61,5 +61,5 @@ HRESULT CProgram::GetThreadId(DWORD* pdwThreadId) {
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

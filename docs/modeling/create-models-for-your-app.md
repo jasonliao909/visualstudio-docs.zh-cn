@@ -1,6 +1,6 @@
 ---
 title: 为你的应用程序创建模型
-description: 了解建模图如何帮助你了解、阐明和传达你的代码的想法以及软件系统必须支持的用户需求。
+description: 了解建模关系图如何帮助你了解、阐明和传达有关你的代码以及软件系统必须支持的用户要求的想法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -24,18 +24,18 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b9dd7f96304707f00d5301f33c5c390626009bf50b0108f0127a76dc3eb68bfc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d520665e2310b009cc717869edf43ff36f2e3b0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048006"
 ---
 # <a name="create-models-for-your-app"></a>为你的应用程序创建模型
 
 建模图有助于理解、阐明和传达代码的构思和软件系统必须支持的用户需求。
 
-若要查看支持每种类型的关系图的 Visual Studio 版本，请参阅[体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+若要了解哪些版本的 Visual Studio每种关系图，请参阅对体系结构和建模[工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 若要可视化系统的体系结构或现有代码，请创建以下关系图：
 
@@ -49,7 +49,7 @@ ms.locfileid: "121271597"
 
 |**主题**|**任务**|
 |-|-|
-|[代码可视化](../modeling/visualize-code.md)|创建代码图和依赖项关系图，以便更好地了解不熟悉的代码。|
+|[代码可视化](../modeling/visualize-code.md)|创建代码图和依赖项关系图，以更好地了解不熟悉的代码。|
 |[建立用户需求模型](../modeling/model-user-requirements.md)|使用模型来阐明和传达用户的需求。|
 |[应用体系结构建模](../modeling/model-your-app-s-architecture.md)|使用模型来描述系统的整体结构和行为，并确保它满足用户的需求。|
 |[在开发过程中验证系统](../modeling/validate-your-system-during-development.md)|确保软件与用户的需求和系统的整体体系结构保持一致。|
@@ -58,5 +58,5 @@ ms.locfileid: "121271597"
 
 ## <a name="resources"></a>资源
 
-- [Visual Studio可视化 & 建模工具论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
+- [Visual Studio可视化&建模工具论坛](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)
 - [Visual Studio扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)

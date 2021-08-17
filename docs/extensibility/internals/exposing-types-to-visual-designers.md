@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0e3df8f3bba405c6757260c8991a4a07ca2f1059ea2d0c2a7ae297550b065b19
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ffee5f17192cc14346f9da52ce32551dea6daded
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448079"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094849"
 ---
 # <a name="expose-types-to-visual-designers"></a>向可视化设计器公开类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够在设计时访问类和类型定义，才能显示可视化设计器。 从一组预定义的程序集加载类，这些程序集包括当前项目 (引用及其依赖项) 的完整依赖项集。 可视化设计器还可能需要访问自定义工具所生成的文件中定义的类和类型。
@@ -46,7 +46,7 @@ ms.locfileid: "121448079"
 
      编译临时 PE 时，提供给编译器的唯一源文件是自定义工具输出。 因此，使用临时 PE 的自定义工具必须生成可以独立于项目中的其他文件进行编译的输出文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [BuildManager 对象简介](/previous-versions/8f9kffa8(v=vs.140))
 - [实现单文件生成器](../../extensibility/internals/implementing-single-file-generators.md)
 - [注册单文件生成器](../../extensibility/internals/registering-single-file-generators.md)
