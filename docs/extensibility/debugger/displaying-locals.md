@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b4ca685031f33198a0c9aedb7f9ea8c031f05b6af0e3531fb423aca986fab9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bb5706c951dd274579037cd466d6846cbd9d5dd3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343235"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096669"
 ---
 # <a name="display-locals"></a>显示局部区域设置
 > [!IMPORTANT]

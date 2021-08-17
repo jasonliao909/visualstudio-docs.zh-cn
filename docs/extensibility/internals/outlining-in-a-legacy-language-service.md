@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 73b2adbc6dbaab22d5d1888b42db3c0256e31846dcd1633241c6faae7b74a3ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c9a4906b500d7c073f3f17d06e04b656f27be1fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414631"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049787"
 ---
 # <a name="outlining-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示
 大纲显示可将复杂程序折叠为概述或大纲。 例如，在 c # 中，可将所有方法折叠为一行，只显示方法签名。 此外，可以将结构和类折叠为仅显示结构和类的名称。 在单个方法中，可以通过仅显示语句的第一行（如、和），折叠复杂逻辑以显示总体 `foreach` 流 `if` `while` 。

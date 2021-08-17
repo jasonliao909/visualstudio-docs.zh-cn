@@ -1,6 +1,6 @@
 ---
 description: 标记此别名以删除。
-title: IDebugAlias：:D pose |Microsoft Docs
+title: IDebugAlias：:D ispose |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -46,5 +46,5 @@ int Dispose();
 ## <a name="remarks"></a>备注
  调用此方法后，别名将不再可用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

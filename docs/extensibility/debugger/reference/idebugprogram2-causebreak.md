@@ -47,6 +47,6 @@ int CauseBreak();
 
  此方法是异步的，因为方法立即返回，而不一定要等待程序停止。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)

@@ -49,8 +49,8 @@ int GetServer(
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)由 Visual Studio实现，表示端口所在的服务器。
+ [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)由 Visual Studio，表示端口所在的服务器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

@@ -49,7 +49,7 @@ int GetPortName(
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从调试包 (客户端) 传递到服务器 (的端口) 以获取与端口的连接。 调试包和端口供应商都了解端口的可能选择。 如果简单字符串可以描述端口，则 `IDebugPortRequest2::GetPortName` 方法具有足够的信息来建立连接。 否则，客户端可以提供额外的接口，服务器可以使用 获取这些接口 `IDebugPortRequest2::QueryInterface` 。
+ [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)接口通常从调试包 (客户端) 传递给服务器 (的端口) 以获取与端口的连接。 调试包和端口供应商都了解端口的可能选择。 如果简单字符串可以描述端口，则 `IDebugPortRequest2::GetPortName` 方法具有足够的信息来建立连接。 否则，客户端可以提供额外的接口，服务器可以使用 获取这些接口 `IDebugPortRequest2::QueryInterface` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortRequest2](../../../extensibility/debugger/reference/idebugportrequest2.md)

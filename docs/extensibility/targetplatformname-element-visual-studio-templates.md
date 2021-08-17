@@ -1,5 +1,5 @@
 ---
-title: TargetPlatformName 元素 (Visual Studio模板) |Microsoft Docs
+title: TargetPlatformName 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 TargetPlatformName 元素及其如何指定项目模板面向的平台。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -66,6 +66,6 @@ ms.locfileid: "121358880"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [创建Project项模板](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>请参阅
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
 - [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

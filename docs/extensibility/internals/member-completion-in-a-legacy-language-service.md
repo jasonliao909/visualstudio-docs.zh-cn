@@ -1,6 +1,6 @@
 ---
 title: 旧版语言服务中的成员完成|Microsoft Docs
-description: 了解 IntelliSense 成员完成工具提示在旧版语言服务中的工作原理，以及 MPF (包框架) 。
+description: 了解 IntelliSense 成员完成工具提示在旧版语言服务中的工作原理，以及 MPF 中托管包框架 (支持) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: beb0dc40253ddf4280a3cd4854c53151369098a0ef03c1c275769c498570966a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d101001234906558a4fd223e7691c73bd7fb9302
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414644"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049800"
 ---
 # <a name="member-completion-in-a-legacy-language-service"></a>旧版语言服务中的成员完成
 

@@ -21,7 +21,7 @@ ms.locfileid: "121370731"
 
 可以在任何应用程序中打开 DSL 模型。
 
-从Visual Studio扩展中，可以使用 ModelBus 来达到此目的。 ModelBus 提供用于引用模型中的模型或元素的标准机制，以及用于查找模型（如果已移动）的标准机制。 有关详细信息，请参阅使用[Modelbus 集成Visual Studio模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+从Visual Studio扩展中，可以使用 ModelBus 来达到此目的。 ModelBus 提供用于引用模型中的模型或元素的标准机制，以及用于查找模型（如果已移动）的标准机制。 有关详细信息，请参阅[使用模型总线 集成Visual Studio模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="target-framework"></a>目标框架
 
@@ -36,7 +36,7 @@ ms.locfileid: "121370731"
 > [!NOTE]
 > 不应将目标框架.NET Framework **4 客户端配置文件 中**。
 
-## <a name="references"></a>参考
+## <a name="references"></a>参考资料
 
 将以下引用添加到Visual Studio应用程序项目：
 

@@ -36,6 +36,6 @@ VSPackage 必须跟踪它可以处理的命令的状态。 环境无法确定在
 ## <a name="status-notification-failure"></a>状态通知失败
  如果 VSPackage 无法通知环境的命令状态更改，则可能会将 UI 置于不一致的状态。 请记住，用户可以将任何菜单或上下文菜单命令放置在工具栏上。 因此，仅当菜单或上下文菜单打开时，才更新 UI。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [实现](../../extensibility/internals/command-implementation.md)

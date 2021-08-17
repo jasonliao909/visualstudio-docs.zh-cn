@@ -1,6 +1,6 @@
 ---
 title: 使用帮助查看器目录
-description: 使用 Microsoft Help Viewer 在目录查找主题 (TOC) 。 TOC 是一个可展开列表，其中包含已安装书籍中的所有主题。
+description: 使用 Microsoft Help Viewer 在目录 (TOC) 中查找主题。 TOC 是一个可扩展列表，其中包含已安装书籍中的所有主题。
 ms.date: 11/02/2017
 ms.topic: how-to
 f1_keywords:
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: ae8303c42b3bb281b87aba94f66725725ba0c26c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1d5af58cdc36a47489fe911243d96780802fab515db80315fc8bf5bb91e51fb2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124329"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358592"
 ---
 # 如何：在目录中查找主题
 
@@ -33,7 +33,7 @@ ms.locfileid: "122124329"
 
 ## 筛选 TOC
 
-可以筛选 TOC 以缩小"内容"选项卡中显示 **的主题** 范围。只有在标题包含你指定的术语的根时，标题才显示在列表中。 例如，如果将“疑难解答”指定为筛选器，则只会显示包含“排除故障”或“疑难解答”的标题。 标题不包含该术语的节点将折叠为包含省略号的单个节点 (**...) 。**
+可以筛选 TOC，缩小 " **内容** " 选项卡中显示的主题范围。仅当标题包含指定字词的根目录时，它们才会出现在列表中。 例如，如果将“疑难解答”指定为筛选器，则只会显示包含“排除故障”或“疑难解答”的标题。 其标题不包含术语的节点会折叠为具有省略号 (**...**) 的单个节点。
 
 1. 选择“目录”选项卡。
 
@@ -48,12 +48,12 @@ ms.locfileid: "122124329"
 
 1. 查看主题。
 
-2. 单击工具栏 **上的"在内容中** 显示主题"按钮，或按 **Ctrl** + **S**。
+2. 单击工具栏上的 "**在目录中显示主题**" 按钮，或按 **Ctrl** + **S**。
 
      “目录”选项卡将打开并显示 TOC 中的主题位置。
 
 ## 请参阅
 
-- [如何：查找索引中的主题](../help-viewer/find-topics-index.md)
+- [如何：在索引中查找主题](../help-viewer/find-topics-index.md)
 - [如何：搜索主题](../help-viewer/find-topics.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)

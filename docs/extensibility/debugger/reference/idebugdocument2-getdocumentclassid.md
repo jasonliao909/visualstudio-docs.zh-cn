@@ -11,17 +11,18 @@ ms.assetid: 111c2b85-ebfa-487f-b896-2ec4a3eac4d1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 829f0002a79f2fd5ec69f31ef4b59068bc5b5c05
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 57b1d5dfad34df36251fc2ebf863bd8a1447c89c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066849"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096448"
 ---
 # <a name="idebugdocument2getdocumentclassid"></a>IDebugDocument2::GetDocumentClassID
 获取文档的类标识符。
@@ -49,5 +50,5 @@ int GetDocumentClassID(
 ## <a name="remarks"></a>备注
  类 GUID 可用于实例化每个类，每个类表示一个文档。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

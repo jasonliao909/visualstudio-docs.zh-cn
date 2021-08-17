@@ -88,6 +88,6 @@ type="System.Resources.ResXFileRef,System.Windows.Forms">
 
  在安装后从 VSPackage 请求资源时，该包很可能已加载和初始化，因此 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 性能损失最小。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [管理 VSPackages](../../extensibility/managing-vspackages.md)
 - [MFC 应用程序中的本地化资源：附属 DLL](/cpp/build/localized-resources-in-mfc-applications-satellite-dlls)

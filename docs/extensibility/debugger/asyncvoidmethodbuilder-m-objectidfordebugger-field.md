@@ -1,6 +1,6 @@
 ---
-description: 表示调试器用于唯一标识此生成器的延迟初始化对象。
-title: AsyncVoidMethodBuilder.m_objectIdForDebugger字段|Microsoft Docs
+description: 表示调试器用来唯一标识此生成器的延迟初始化的对象。
+title: AsyncVoidMethodBuilder.m_objectIdForDebugger 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -19,14 +19,14 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121434654"
 ---
-# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger字段
-表示调试器用于唯一标识此生成器的延迟初始化对象。
+# <a name="asyncvoidmethodbuilderm_objectidfordebugger-field"></a>AsyncVoidMethodBuilder.m_objectIdForDebugger 字段
+表示调试器用来唯一标识此生成器的延迟初始化的对象。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll) 
+ **Assembly：** mscorlib (mscorlib.dll) 
 
- 由于无法从 CIL .NET Framework访问此内部成员，因此在 CIL (中提供了以下) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -34,6 +34,6 @@ ms.locfileid: "121434654"
 .field private object m_objectIdForDebugger
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
