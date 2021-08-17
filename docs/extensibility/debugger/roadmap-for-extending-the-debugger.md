@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 00da6cede11993e0b498978bc9a18ec0e21781b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ccb48584435debdca17fac31c436a898c70448ad114c7718b30443adc6eeeb0b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063637"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121389015"
 ---
 # <a name="roadmap-for-extending-the-debugger"></a>扩展调试器的路线图
 此文档提供了用来扩展调试器的指南和参考信息 [!INCLUDE[vs_current_short](../../code-quality/includes/vs_current_short_md.md)] [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。

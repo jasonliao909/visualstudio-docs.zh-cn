@@ -23,6 +23,6 @@ VS SDK 包括多种工具，可帮助扩展构建者使用Visual Studio映像服
 
 - 该工具 [Manifest from Resources](../../extensibility/internals/manifest-from-resources.md) 映像资源列表， (.png .xaml) 生成映像清单文件。
 
-- 该工具[Manifest to Code](../../extensibility/internals/manifest-to-code.md)映像清单文件并生成包装文件，以在 C++、C#、VB 或 .vsct 文件中使用。
+- 该工具[Manifest to Code](../../extensibility/internals/manifest-to-code.md)映像清单文件，并生成包装文件以在 C++、C#、VB 或 .vsct 文件中使用。
 
 - 图像 [库查看器](../../extensibility/internals/image-library-viewer.md) 可以加载、编辑和搜索图像清单。

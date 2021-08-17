@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d0a5ffcf0a7c9c3533eee85953b26d9341a537a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 503a4430c144f97de1865a3d89975a7478567a36666085794c4acdd712cc05c5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100018"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440820"
 ---
 # <a name="how-to-install-office-primary-interop-assemblies"></a>如何：安装 Office 主互操作程序集
   当你安装 Office 时，安装 Microsoft Office 主互操作程序集 (PIA)。

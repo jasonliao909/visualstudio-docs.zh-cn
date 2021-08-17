@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c9dbf0d63b13d6f7b66fc24c82a80e7fecea5d4c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: cb7455548923704c3cffcf10a9f56cba17225111130332e0837de0146859e208
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025948"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121351705"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式存储和检索数据范围内Excel值
   可以在控件或本机范围对象中存储和 <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel值。
@@ -77,7 +77,7 @@ ms.locfileid: "122025948"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet26":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet26":::
 
-### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>从本机范围对象中检索Excel值
+### <a name="to-retrieve-a-date-value-from-a-native-excel-range-object"></a>从本机范围对象检索Excel值
 
 1. 从 检索日期值 `rng` 。
 

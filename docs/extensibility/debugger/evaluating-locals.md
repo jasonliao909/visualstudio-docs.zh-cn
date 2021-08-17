@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: adbb5c9a222eee8ac6c0c34d4d8812cfadd8f97efaf77f6a0e04d92add5b6fe9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c355dce5ec9d02b547b6af862a7296a7809972dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089519"
 ---
 # <a name="evaluate-locals"></a>评估局部区域
 > [!IMPORTANT]
@@ -192,7 +192,7 @@ HRESULT FieldGetPrimitiveValue(
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [局部变量的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md)
 - [获取本地值](../../extensibility/debugger/getting-local-values.md)
 - [计算上下文](../../extensibility/debugger/evaluation-context.md)

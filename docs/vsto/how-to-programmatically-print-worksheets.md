@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式打印工作表
-description: 了解如何使用 Visual Studio 以编程方式打印工作簿Microsoft Excel工作表。
+description: 了解如何使用 Visual Studio 以编程方式打印工作簿中Microsoft Excel工作表。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -66,7 +66,7 @@ ms.locfileid: "121440729"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet15":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet15":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式检查工作表中的拼写](../vsto/how-to-programmatically-check-spelling-in-worksheets.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 383f994110eabdb590a79322e3327e0347ca186aa3ec58383958007250c9040c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7a9b4d97f40b8ebfeefa59fb40f0c912461c9828
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416726"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030225"
 ---
 # <a name="idebugportsupplier3enumpersistedports"></a>IDebugPortSupplier3::EnumPersistedPorts
 此方法检索允许枚举持久端口列表的对象。
@@ -56,7 +56,7 @@ int EnumPersistedPorts(
 ## <a name="remarks"></a>备注
  在实例化端口供应商时加载持久化端口，并在销毁端口供应商时保存。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)
 - [BSTR_ARRAY](../../../extensibility/debugger/reference/bstr-array.md)

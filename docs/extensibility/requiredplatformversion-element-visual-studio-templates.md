@@ -12,18 +12,18 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b1d7e3b8cc67f839977eb1e53d80731e59c064e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9f5f72045fdfca073fbc740698c2eefe57a1a932f32751f9fe278e17c280fad9
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105068422"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388525"
 ---
-# <a name="requiredplatformversion-element-visual-studio-templates"></a> (Visual Studio 模板的 RequiredPlatformVersion 元素) 
+# <a name="requiredplatformversion-element-visual-studio-templates"></a>RequiredPlatformVersion 元素 (Visual Studio 模板) 
 
 指定项目模板正常运行所需的操作系统的最低版本。 此元素用于创建应用程序的项目模板 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 。
 
- `RequiredPlatformVersion`该值与操作系统的版本直接进行比较。 如果 `RequiredPlatformVersion` 高于操作系统版本，则该模板不会显示在 " **新建项目** " 对话框中。 若要为 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本指定模板，请将设置 `RequiredPlatformVersion` 为6.2.0。 若要为 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 或更高版本指定模板，请将设置 `RequiredPlatformVersion` 为6.3.0。
+ `RequiredPlatformVersion`该值与操作系统的版本直接进行比较。 如果 `RequiredPlatformVersion` 高于操作系统版本，则该模板不会显示在 "**新建 Project** " 对话框中。 若要为 [!INCLUDE[win8](../debugger/includes/win8_md.md)] 或更高版本指定模板，请将设置 `RequiredPlatformVersion` 为6.2.0。 若要为 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 或更高版本指定模板，请将设置 `RequiredPlatformVersion` 为6.3.0。
 
  指定 `RequiredPlatformVersion` = 8 的模板与以前的客户 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 模板兼容。
 
@@ -78,8 +78,8 @@ ms.locfileid: "105068422"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [ (Visual Studio 模板的 TargetPlatformName 元素) ](../extensibility/targetplatformname-element-visual-studio-templates.md)
+- [TargetPlatformName 元素 (Visual Studio 模板) ](../extensibility/targetplatformname-element-visual-studio-templates.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

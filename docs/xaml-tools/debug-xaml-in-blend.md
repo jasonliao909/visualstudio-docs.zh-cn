@@ -1,6 +1,6 @@
 ---
 title: 在 Blend | 中调试 XAMLMicrosoft Docs
-description: 了解如何使用应用程序中的工具Blend for Visual Studio、调试和解决应用中的 XAML 错误。
+description: 了解如何使用应用程序中的工具Blend for Visual Studio检测、调试和解决应用中的 XAML 错误。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -119,9 +119,9 @@ XAML 语法错误的某些常见原因如下：
 
 ## <a name="debug-in-visual-studio"></a>在 Visual Studio 中进行调试
 
-可以在应用程序中打开 Blend 项目Visual Studio更轻松地调试应用中的代码。 若要在 Visual Studio中打开 Blend 项目，请在"项目"面板中右键单击该项目，然后单击"在 **Visual Studio"。** 完成调试会话后，在 Visual Studio，按 Ctrl+Shift+S 保存所有更改，然后切换回 Blend。 系统将提示你重新加载该项目。 单击 **"是"到"全部** "以继续在 Blend 中工作。
+可以在应用程序中打开 Blend 项目Visual Studio更轻松地调试应用中的代码。 若要在 Visual Studio中打开 Blend 项目，请在"项目"面板中右键单击该项目，然后单击"在 **Visual Studio"。** 在中完成调试会话后Visual Studio按 Ctrl+Shift+S 保存所有更改，然后切换回 Blend。 系统将提示你重新加载该项目。 单击 **"是"到"全部** "以继续在 Blend 中工作。
 
-有关调试应用的信息，请参阅在 中调试[UWP Visual Studio。](../debugger/debugging-windows-store-and-windows-universal-apps.md)
+有关调试应用的信息，请参阅在 Visual Studio 中[调试 UWP 应用](../debugger/debugging-windows-store-and-windows-universal-apps.md)。
 
 ## <a name="get-help"></a>获取帮助
 

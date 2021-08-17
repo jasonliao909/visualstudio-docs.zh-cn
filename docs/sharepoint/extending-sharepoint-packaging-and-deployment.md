@@ -55,7 +55,7 @@ ms.locfileid: "121353017"
 ## <a name="customize-validation-rules"></a>自定义验证规则
  部署解决方案包 (.wsp) 之前，可以创建自定义功能和包验证规则来验证功能或包是否有效。 例如，可以向开发人员报告信息、警告或错误以帮助他们解决验证问题。 有关详细信息，请参阅[如何：为 SharePoint 解决方案创建自定义功能和包验证规则](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)
 - [演练：为项目创建SharePoint步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)
 - [如何：为解决方案创建自定义功能SharePoint验证规则](../sharepoint/how-to-create-custom-feature-and-package-validation-rules-for-sharepoint-solutions.md)

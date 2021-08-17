@@ -63,5 +63,5 @@ int SetValueAsString (
 |`E_SETVALUE_VALUE_CANNOT_BE_SET`|无法将该字符串转换为属性值，或者无法设置该属性的值。|
 |`E_SETVALUE_VALUE_IS_READONLY`|属性为只读属性。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

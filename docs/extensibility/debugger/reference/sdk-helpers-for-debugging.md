@@ -427,5 +427,5 @@ HRESULT EnumMetricSections(
 
  库： libs\ad2de.lib、libs\dbgmetric.lib
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

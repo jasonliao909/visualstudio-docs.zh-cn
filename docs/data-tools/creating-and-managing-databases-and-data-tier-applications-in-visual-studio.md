@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0d9ed2d258fba0e8c6e1970bc758d0285bb4276c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9eb21f68e3f843d4d05ef046dfc7de4c01ff5d12053cf8063eb4f805286fb050
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052819"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121347423"
 ---
 # <a name="database-projects-and-data-tier-applications"></a>数据库项目和数据层应用程序
 

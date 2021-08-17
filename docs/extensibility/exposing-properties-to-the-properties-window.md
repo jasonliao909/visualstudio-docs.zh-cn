@@ -93,13 +93,13 @@ ms.locfileid: "121388690"
    }
    ```
 
-    `TrackSelection`属性使用 `GetService` 获取提供 `STrackSelection` 接口的服务 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。 事件 `OnToolWindowCreated` 处理程序和方法共同创建仅包含工具窗口窗格对象本身的选定 `SelectList` 对象的列表。 `UpdateSelection`方法告知"**属性"** 窗口显示工具窗口窗格的公共属性。
+    `TrackSelection`属性使用 `GetService` 获取服务 `STrackSelection` ，该服务提供 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 接口。 事件 `OnToolWindowCreated` 处理程序和方法共同创建仅包含工具窗口窗格对象本身的选定 `SelectList` 对象的列表。 `UpdateSelection`方法告知"**属性"** 窗口显示工具窗口窗格的公共属性。
 
 6. 生成项目并启动调试。 应显示 Visual Studio实例。
 
 7. 如果" **属性"** 窗口不可见，则按 **F4 打开它**。
 
-8. 打开 **"MyToolWindow"** 窗口。 可以在"**查看其他"Windows**  >  找到它。
+8. 打开 **"MyToolWindow"** 窗口。 可以在"查看其他视图 **"Windows。**  >  
 
     窗口随即打开，窗口窗格的公共属性将显示在"属性 **"** 窗口中。
 
@@ -156,7 +156,7 @@ ms.locfileid: "121388690"
 
 5. 删除按钮，将"工具箱" **中的复选框添加到** 左上角。
 
-6. 添加 Checked 和 Unchecked 事件。 选中设计视图中的复选框。 在"**属性**"窗口中，单击"属性 (窗口右上方的"事件处理程序"**按钮) 。** 在 **文本框** 中checkbox_Checked **Checked"****并键入**"已选中"，然后在文本框 **checkbox_Unchecked键入"** 未选中"。
+6. 添加 Checked 和 Unchecked 事件。 选中设计视图中的复选框。 在"**属性**"窗口中，单击"属性 (窗口右上方的"事件处理程序"**按钮) 。** 在 **文本框****中checkbox_Checked** **Checked"** 并键入"已选中"，然后在文本框 **checkbox_Unchecked"未** 选中"。
 
 7. 添加复选框事件处理程序：
 
@@ -275,6 +275,6 @@ ms.locfileid: "121388690"
 
 Visual Studio会话之间保持Visual Studio窗口。 有关保留工具窗口状态的信息，请参阅 <xref:Microsoft.VisualStudio.Shell.ProvideProfileAttribute> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展属性和"属性"窗口](../extensibility/extending-properties-and-the-property-window.md)

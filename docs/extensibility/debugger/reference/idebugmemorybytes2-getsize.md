@@ -1,6 +1,6 @@
 ---
-description: 检索此 IDebugMemoryBytes2 对象表示的内存大小（以字节为单位）。
-title: IDebugMemoryBytes2：：GetSize |Microsoft Docs
+description: 检索此 IDebugMemoryBytes2 对象表示的内存的大小（以字节为单位）。
+title: IDebugMemoryBytes2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389678"
 ---
 # <a name="idebugmemorybytes2getsize"></a>IDebugMemoryBytes2::GetSize
-检索此 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 对象表示的内存大小（以字节为单位）。
+检索此 [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md) 对象表示的内存的大小（以字节为单位）。
 
 ## <a name="syntax"></a>语法
 
@@ -44,10 +44,10 @@ int GetSize(
 
 ## <a name="parameters"></a>参数
 `pqwSize`\
-[out]返回内存空间的大小（以字节为单位）。
+弄返回内存空间的大小（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMemoryBytes2](../../../extensibility/debugger/reference/idebugmemorybytes2.md)

@@ -51,7 +51,7 @@ int GetDocumentContext (
 ## <a name="remarks"></a>备注
  此方法比调用 [GetCodeContext](../../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md) 方法更快，并在代码上下文上调用 [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md) 方法。 但是，并不保证每个调试引擎 (DE) 都将实现此方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcodecontext2-getdocumentcontext.md)

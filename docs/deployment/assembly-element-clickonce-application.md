@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt; (ClickOnce 应用程序) 的 assembly 元素 |Microsoft Docs'
-description: Assembly 元素是根元素，在 ClickOnce 应用程序中是必需的。 其第一个包含的元素必须是 assemblyIdentity 元素。
+title: '&lt;&gt;ClickOnce 应用程序)  (assembly 元素 |Microsoft Docs'
+description: assembly 元素是根元素，在 ClickOnce 应用程序中是必需的。 其第一个包含的元素必须是 assemblyIdentity 元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,16 +16,17 @@ ms.assetid: 51410569-10f9-4c0a-96b5-d39185edbefc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: f86ed604ae6b893f02da1d4f65a816bd05f34f94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc8fb424c3a6232f27737521604247cf55ebc20e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99837783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090052"
 ---
-# <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 应用程序的 assembly 元素) 
+# <a name="ltassemblygt-element-clickonce-application"></a>&lt;&gt;ClickOnce 应用程序 (的 assembly 元素) 
 应用程序清单的顶级元素。
 
 ## <a name="syntax"></a>语法
@@ -55,7 +56,7 @@ ms.locfileid: "99837783"
 |`manifestVersion`|必需。 `manifestVersion`特性必须设置为 `1.0` 。|
 
 ## <a name="example"></a>示例
- 下面的代码示例演示应用程序的 `assembly` 应用程序清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此代码示例是 [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示应用程序的 `assembly` 应用程序清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此代码示例是[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)中提供的一个更大示例的一部分。
 
 ```xml
 <asmv1:assembly
@@ -71,6 +72,6 @@ ms.locfileid: "99837783"
   xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
 - [\<assembly> 元素](../deployment/assembly-element-clickonce-deployment.md)

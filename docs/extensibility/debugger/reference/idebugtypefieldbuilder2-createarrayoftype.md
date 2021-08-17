@@ -1,6 +1,6 @@
 ---
 description: 创建指定类型和大小的数组。
-title: IDebugTypeFieldBuilder2：： CreateArrayOfType |Microsoft Docs
+title: IDebugTypeFieldBuilder2：：CreateArrayOfType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -46,16 +46,16 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>参数
 `pTypeField`\
-中数组将包含的元素的类型。
+[in]数组将包含的元素的类型。
 
 `rank`\
-中数组中元素的数目。
+[in]数组中的元素数。
 
 `pArrayOfTypeField`\
-弄返回表示新数组的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
+[out]返回 [表示新数组的 IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

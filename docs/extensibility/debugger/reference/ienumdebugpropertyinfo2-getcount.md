@@ -1,6 +1,6 @@
 ---
-description: 返回枚举中 DEBUG_PROPERTY_INFO 元素的数目。
-title: IEnumDebugPropertyInfo2：： GetCount |Microsoft Docs
+description: 返回枚举DEBUG_PROPERTY_INFO元素数。
+title: IEnumDebugPropertyInfo2：：GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 9b0b3ce6-08cb-46fd-a6d9-92b36e60da19
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 21e943ea051599e4d0ba66237132f52a4175c1ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9fd7827e794362b181c10a1db0fdaa69366449bd06e390d0e396e70075dbc8cc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082902"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377258"
 ---
 # <a name="ienumdebugpropertyinfo2getcount"></a>IEnumDebugPropertyInfo2::GetCount
-返回枚举中的元素数。
+返回 枚举中的元素数。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>参数
 `pcelt`\
-弄返回枚举中的元素数。
+[out]返回 枚举中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
+ 此方法不是指定只需实现 、、 和 方法的 com 枚举 `Next` `Clone` `Skip` `Reset` 接口的一部分。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

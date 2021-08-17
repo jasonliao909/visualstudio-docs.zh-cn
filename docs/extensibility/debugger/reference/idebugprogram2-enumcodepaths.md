@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 23d2b0af61df6b84a9ba7b02d0bb73dcd51f8cbfc07dce816383d67eda9bf531
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d5f04a988b7afae1b4b86c38e6fedba4c5d6d896
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292359"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057468"
 ---
 # <a name="idebugprogram2enumcodepaths"></a>IDebugProgram2::EnumCodePaths
 检索源文件中给定位置的代码路径列表。
@@ -62,7 +62,7 @@ int EnumCodePaths(
 [in]表示与当前断点关联的堆栈帧的 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 对象。
 
 `fSource`\
-[in]如果在"源 () ，则不为零;如果 () "视图中，则不 `TRUE`  `FALSE` **为零**。
+[in]如果在"源 () ，则不为零;如果在"反汇编"视图中 () 为 `TRUE`  `FALSE` **零。**
 
 `ppEnum`\
 [out]返回包含 [代码路径列表的 IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md) 对象。

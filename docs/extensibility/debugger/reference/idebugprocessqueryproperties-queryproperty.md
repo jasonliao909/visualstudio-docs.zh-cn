@@ -1,6 +1,6 @@
 ---
 description: 此方法查询调试进程的指定属性值。
-title: IDebugProcessQueryProperties：： QueryProperty |Microsoft Docs
+title: IDebugProcessQueryProperties：：QueryProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -41,7 +41,7 @@ int QueryProperty(
 
 ## <a name="parameters"></a>参数
 `dwPropType`\
-中查询的属性的定义。 有效值为：
+[in]查询的属性的定义。 有效值为：
 
 - PROCESS_PROPERTY_COMMAND_LINE = 1
 
@@ -50,13 +50,13 @@ int QueryProperty(
 - PROCESS_PROPERTY_ENVIRONMENT_VARIABLES = 3
 
 `pvarPropValue`\
-弄属性的值。
+[out]属性的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法很少使用。
+ 很少使用此方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcessQueryProperties](../../../extensibility/debugger/reference/idebugprocessqueryproperties.md)
