@@ -64,6 +64,6 @@ ms.locfileid: "121435668"
 ## <a name="create-a-deployment"></a>创建部署
  有关创建可从不同网络位置部署的部署的分步指导，请参阅[演练：手动部署不需要重新签名并且保留署名信息的 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-app-no-re-signing-required.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [*Mage.exe* (清单生成和编辑工具)](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [*MageUI.exe* (清单生成和编辑工具，图形客户端)](/dotnet/framework/tools/mageui-exe-manifest-generation-and-editing-tool-graphical-client)

@@ -1,6 +1,6 @@
 ---
-title: 为 64 位应用程序部署先决条件|Microsoft Docs
-description: 了解可再发行组件，这些可再发行组件可用作ClickOnce 64 位平台上的应用程序部署的先决条件。
+title: 为64位应用程序部署先决条件 |Microsoft Docs
+description: 了解可用于在64位平台上部署应用程序 ClickOnce 部署的可再发行组件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -46,5 +46,5 @@ ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为�
 
 ## <a name="see-also"></a>请参阅
 - [部署应用程序、服务和组件](../deployment/deploying-applications-services-and-components.md)
-- [如何：使用应用程序安装ClickOnce先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
+- [如何：安装 ClickOnce 应用程序的先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - [64 位应用程序](/dotnet/framework/64-bit-apps)

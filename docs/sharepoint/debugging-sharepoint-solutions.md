@@ -151,5 +151,5 @@ ms.locfileid: "121425565"
 
  有关其他 SharePoint 注册表项的详细信息，请参阅[Visual Studio 中的 SharePoint 工具的调试扩展](../sharepoint/debugging-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [解决 SharePoint 解决方案问题](../sharepoint/troubleshooting-sharepoint-solutions.md)
