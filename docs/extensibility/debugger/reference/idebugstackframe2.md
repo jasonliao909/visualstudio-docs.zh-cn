@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: efd95513477fce009775e2fb56110e68f2717ae31843b983845e64a970314e40
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 69bb2e2f58393311b0867a7ea684b99a8df51676
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448827"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029666"
 ---
 # <a name="idebugstackframe2"></a>IDebugStackFrame2
 此接口表示特定线程中的调用堆栈中的单个堆栈帧。
@@ -62,5 +62,5 @@ IDebugStackFrame2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)

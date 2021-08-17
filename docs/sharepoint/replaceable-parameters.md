@@ -28,7 +28,7 @@ ms.locfileid: "121367482"
   可在项目文件内使用可替换参数或标记，为SharePoint实际值在设计时不知道的解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板令牌。 有关详细信息，请参阅 [模板参数](../ide/template-parameters.md)。
 
 ## <a name="token-format"></a>令牌格式
- 令牌以美元符号开头和结尾， ($) 字符。 在部署时，将项目打包到 *.wsp* 文件包中的 SharePoint 解决方案包 (令牌替换为实际) 。 例如，令牌 **$SharePoint。Package.Name$** 可能解析为字符串"Test SharePoint Package"。
+ 令牌以美元符号开头和结尾， ($) 字符。 在部署时，将项目打包到 *.wsp* 文件包中的 SharePoint 解决方案包 (使用的任何令牌) 。 例如，令牌 **$SharePoint。Package.Name$** 可能解析为字符串"Test SharePoint Package"。
 
 ## <a name="token-rules"></a>令牌规则
  以下规则适用于令牌：
@@ -58,7 +58,7 @@ ms.locfileid: "121367482"
 |$SharePoint。Project。AssemblyFullName$|显示名称 (包含) 程序集的强名称。|
 |$SharePoint。Project。AssemblyFileName$|包含项目的输出程序集的名称。|
 |$SharePoint。Project。AssemblyFileNameWithoutExtension$|包含项目的输出程序集的名称，不带文件扩展名。|
-|$SharePoint。Project。AssemblyPublicKeyToken$|包含项目的输出程序集的公钥标记，已转换为字符串。  ("x2"十六进制格式.) |
+|$SharePoint。Project。AssemblyPublicKeyToken$|包含项目的输出程序集的公钥标记，已转换为字符串。  ("x2"十六进制格式的 16 个字符) |
 |$SharePoint。Package.Name$|包含包的名称。|
 |$SharePoint。Package.FileName$|包含包的定义文件的名称。|
 |$SharePoint。Package.FileNameWithoutExtension$|名称 (不包含) 包的定义文件的扩展名。|
@@ -67,7 +67,7 @@ ms.locfileid: "121367482"
 |$SharePoint。Feature.FileNameWithoutExtension$|功能定义文件的名称，不带文件扩展名。|
 |$SharePoint。Feature.DeploymentPath$|包中包含该功能的文件夹的名称。 此令牌相当于功能设计器中的"部署路径"属性。 例如，"Project1_Feature1"。|
 |$SharePoint。Feature.Id$|包含SharePoint的 ID。 与所有功能级令牌一样，此令牌仅可用于通过功能包含在包中的文件，不能直接添加到功能外部的包中。|
-|$SharePoint。ProjectItem.Name$|项目项的名称 (其文件名) ，如从 ISharePointProjectItem.Name **获取**。|
+|$SharePoint。ProjectItem.Name$|项目项的名称 (其文件名) ，如从 **ISharePointProjectItem.Name 获取**。|
 |$SharePoint。键入 \<GUID> 。。AssemblyQualifiedName$|与标记的 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 匹配的类型的程序集限定名。 [!INCLUDE[TLA2#tla_guid](../sharepoint/includes/tla2sharptla-guid-md.md)] 的格式为小写，并与 Guid.ToString("D") 格式（即 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx）对应。|
 |$SharePoint。键入 \<GUID> 。。FullName$|与令牌中的 GUID 匹配的类型的全名。 GUID 的格式为小写，对应于 Guid.ToString ("D") 格式 (即 xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxxxxx) 。|
 
@@ -86,7 +86,7 @@ ms.locfileid: "121367482"
 
   这些扩展由 `<TokenReplacementFileExtensions>` Microsoft.VisualStudio.SharePoint.targets 文件中位于 ... 中的 元素定义。 \\<\> \MSBuild\Microsoft\VisualStudio\v11.0\SharePointTools 文件夹。
 
-  但是，可以将其他文件扩展名添加到列表中。 将 元素添加到在 SharePoint 目标文件的 之前定义的项目文件SharePoint `<TokenReplacementFileExtensions>` \<Import> PropertyGroup。
+  但是，可以将其他文件扩展名添加到列表中。 将 元素添加到 SharePoint 项目文件的任何 PropertyGroup，该文件在 SharePoint `<TokenReplacementFileExtensions>` \<Import> 文件之前定义。
 
 > [!NOTE]
 > 由于令牌替换在编译项目后发生，因此不应为编译的文件类型（如 *.cs、.vb* 或 *.resx）添加文件扩展* 名。  仅在未编译的文件中替换令牌。
@@ -106,7 +106,7 @@ ms.locfileid: "121367482"
 </PropertyGroup>
 ```
 
- 可以直接将扩展添加到 *.targets* (目标) 目标。 但是，添加扩展会更改打包在本地系统SharePoint所有项目（而不只是你自己的项目）的扩展列表。 如果你是系统的唯一开发人员，或者大多数项目需要此扩展，则此扩展可能很方便。 但是，由于此方法特定于系统，因此不可移植，因此建议改为向项目文件添加任何扩展名。
+ 可以将扩展插件直接添加到 *.targets* (中) 目标。 但是，添加扩展会更改打包在本地系统SharePoint所有项目（而不只是你自己的项目）的扩展列表。 如果你是系统的唯一开发人员，或者大多数项目需要此扩展，则此扩展可能很方便。 但是，由于此方法特定于系统，因此不可移植，因此建议改为向项目文件添加任何扩展名。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

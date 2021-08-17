@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e2aa32e5bf04e4f5c931ec3e8de3d156f7c8bcebb993749d8e348075523a7be4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 683164a2a3c6e6e63d4a783d55ea481d3eb8547f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065093"
 ---
 # <a name="debug_custom_viewer"></a>DEBUG_CUSTOM_VIEWER
 标识自定义查看器或类型可视化工具的结构。
@@ -59,7 +59,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 将在下拉菜单中显示的文本。
 
 `bstrDescription`\
-如果未使用自定义查看器或类型可视化工具 (，则说明必须为 null) 。
+如果未使用自定义查看器或类型可视化工具 (，则说明必须为 null 值) 。
 
 `guidLang`\
 提供表达式计算程序的语言。
@@ -71,7 +71,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 存储自定义查看器或类型可视化工具 `CLSID` 的指标。
 
 ## <a name="remarks"></a>备注
-此结构的列表通过调用 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法 (并扩展为 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 。
+此结构的列表通过调用 [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 方法返回 (并扩展为 [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md) 方法) 。
 
 ## <a name="requirements"></a>要求
 标头：msdbg.h
@@ -80,7 +80,7 @@ public struct DEBUG_CUSTOM_VIEWER {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/ieevisualizerservice-getcustomviewerlist.md)

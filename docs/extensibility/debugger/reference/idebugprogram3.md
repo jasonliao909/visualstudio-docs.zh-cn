@@ -1,5 +1,5 @@
 ---
-description: 此接口表示在进程中运行的程序，通过提供线程信息来扩展 Execute。
+description: 此接口表示在进程中运行的程序，并通过提供线程信息来扩展执行。
 title: IDebugProgram3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121338821"
 ---
 # <a name="idebugprogram3"></a>IDebugProgram3
-此接口表示在进程中运行的程序，通过提供线程信息来扩展[Execute。](../../../extensibility/debugger/reference/idebugprogram2-execute.md)
+此接口表示在进程中运行的程序，并通过提供线程信息来扩展 [执行](../../../extensibility/debugger/reference/idebugprogram2-execute.md) 。
 
 ## <a name="syntax"></a>语法
 
@@ -28,30 +28,30 @@ ms.locfileid: "121338821"
 IDebugProgram3 : IDebugProgram3
 ```
 
-## <a name="notes-for-implementers"></a>实现者说明
- 调试引擎 (DE) ，自定义端口供应商实现此接口来表示进程中的程序。 SDM (会话) 也实现此接口以提供附加 [的信息](../../../extensibility/debugger/reference/idebugprogram2-attach.md)。
+## <a name="notes-for-implementers"></a>实施者注意事项
+ 调试引擎 (DE) ，自定义端口供应商实现此接口来表示进程中的程序。 会话调试管理器 (SDM) 还实现此接口以提供要 [附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)的信息。
 
 ## <a name="notes-for-callers"></a>调用方说明
- [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件返回新程序的此接口。 此接口还用作多个接口上许多方法的参数。
+ [IDebugProgramCreateEvent2](../../../extensibility/debugger/reference/idebugprogramcreateevent2.md)事件将为新程序返回此接口。 此接口还可用作多个接口上许多方法的参数。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
- 下表显示了 的方法 `IDebugProgram3` 。
+ 下表显示的方法 `IDebugProgram3` 。
 
 |方法|说明|
 |------------|-----------------|
-|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|执行程序。 返回线程以向调试器提供用户在执行时正在查看的线程的信息。|
+|[ExecuteOnThread](../../../extensibility/debugger/reference/idebugprogram3-executeonthread.md)|执行程序。 返回线程，以向调试器显示用户在执行时查看的线程的信息。|
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="remarks"></a>备注
- 程序是运行于特定运行时体系结构中的线程容器，而进程由一个或多个程序进行。
+ 程序是在特定运行时结构中运行的线程容器，而进程由一个或多个程序组成。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [GetProgram](../../../extensibility/debugger/reference/idebugthread2-getprogram.md)

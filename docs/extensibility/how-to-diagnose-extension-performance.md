@@ -8,29 +8,30 @@ ms.assetid: 46b0a1e3-7e69-47c9-9d8d-a1815d6c3896
 author: BertanAygun
 ms.author: bertaygu
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - bertaygu
-ms.openlocfilehash: 05dda944ab2aecd429386e0e4c40646d21e9a3d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e875075b4f2a060011746e9058ecec448efdbe58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050359"
 ---
 # <a name="measuring-extension-impact-in-startup"></a>度量扩展对启动的影响
 
-## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>专注于 Visual Studio 2017 中的扩展性能
+## <a name="focus-on-extension-performance-in-visual-studio-2017"></a>重点介绍 Visual Studio 2017 中的扩展性能
 
-根据客户反馈，Visual Studio 2017 版本的重点领域之一是启动和解决方案加载性能。 作为 Visual Studio 平台团队，我们一直致力于改进启动和解决方案加载性能。 通常，我们的度量值建议安装的扩展还会对这些方案产生相当大的影响。
+基于客户反馈，Visual Studio 2017 版本的重点领域之一是启动和解决方案加载性能。 作为 Visual Studio 平台团队，我们一直致力于改进启动和解决方案加载性能。 通常，我们的度量值建议安装的扩展还会对这些方案产生相当大的影响。
 
-为了帮助用户了解这一影响，我们在 Visual Studio 中添加了一项新功能，通知用户的扩展速度缓慢。 有时，Visual Studio 会检测到一个新扩展，该扩展会减缓解决方案加载或启动的速度。 检测到缓慢时，用户会在 IDE 中看到一条指向新的 "管理 Visual Studio 性能" 对话框的通知。 还可以通过 "帮助" 菜单访问此对话框，以浏览以前检测到的扩展。
+为了帮助用户了解这一影响，我们在 Visual Studio 中添加了一项新功能，用于通知慢速扩展的用户。 有时，Visual Studio 会检测到一个新扩展，该扩展会减缓解决方案加载或启动的速度。 检测到减速后，用户会在 IDE 中看到一个指向新的 "管理 Visual Studio 性能" 对话框的通知。 还可以通过 "帮助" 菜单访问此对话框，以浏览以前检测到的扩展。
 
 ![管理 Visual Studio 性能](media/manage-performance.png)
 
 本文档旨在通过说明如何计算扩展影响来帮助扩展开发人员。 本文档还介绍了如何在本地分析扩展影响。 本地分析扩展影响将确定扩展是否可能显示为性能影响的扩展。
 
 > [!NOTE]
-> 本文档重点介绍扩展对启动和解决方案加载的影响。 当扩展导致 UI 无响应时，它们也会影响 Visual Studio 性能。 有关本主题的详细信息，请参阅 [如何：诊断由扩展引起的 UI 延迟](how-to-diagnose-ui-delays-caused-by-extensions.md)。
+> 本文档重点介绍扩展对启动和解决方案加载的影响。 当扩展导致 UI 无响应时，扩展也会影响 Visual Studio 性能。 有关本主题的详细信息，请参阅 [如何：诊断由扩展引起的 UI 延迟](how-to-diagnose-ui-delays-caused-by-extensions.md)。
 
 ## <a name="how-extensions-can-impact-startup"></a>扩展如何影响启动
 
@@ -44,7 +45,7 @@ ms.locfileid: "99966404"
 * 对于异步包，以上操作在后台线程上运行。  因此，不会监视这些操作。
 * 在包初始化期间计划在主线程上运行的任何异步工作所用的时间
 * 事件处理程序所用的时间，特别是 shell 初始化上下文激活或 shell 傀儡状态更改
-* 从 Visual Studio 2017 Update 3 开始，还会在初始化 shell 之前开始监视空闲调用所用的时间。 空闲处理程序中的长时间操作还会导致未响应的 IDE，并导致用户看到的启动时间。
+* 从 Visual Studio 2017 Update 3 开始，我们还会在初始化 shell 之前开始监视空闲调用所用的时间。 空闲处理程序中的长时间操作还会导致未响应的 IDE，并导致用户看到的启动时间。
 
 从 Visual Studio 2015 开始，我们添加了许多功能。 这些功能有助于消除包自动加载的需求。 这些功能还可将包加载的需求推迟到更具体的情况。 这些情况包括一些示例，用户在自动加载时更需要使用该扩展或降低扩展影响。
 
@@ -52,7 +53,7 @@ ms.locfileid: "99966404"
 
 [基于规则的 ui 上下文](how-to-use-rule-based-ui-context-for-visual-studio-extensions.md)：围绕 ui 上下文构建的基于规则的更丰富的引擎使你可以基于项目类型、风格和属性创建自定义上下文。 自定义上下文可用于在更具体的方案中加载包。 这些特定方案包括具有特定功能（而不是启动）的项目。 自定义上下文还允许基于项目组件或其他可用字词 [将命令可见性绑定到自定义上下文](visibilityconstraints-element.md) 。 此功能无需加载包即可注册命令状态查询处理程序。
 
-[异步包支持](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)： visual studio 2015 中的新 AsyncPackage 基类允许在自动加载属性或异步服务查询请求包负载时，以异步方式在后台加载 Visual studio 包。 此后台加载允许 IDE 保持响应。 即使扩展在后台和关键方案（如启动和解决方案加载）中初始化时，IDE 也能响应。
+[异步包支持](how-to-use-asyncpackage-to-load-vspackages-in-the-background.md)：如果自动加载属性或异步服务查询请求了包加载，则 Visual Studio 2015 中的新 AsyncPackage 基类允许以异步方式在后台加载 Visual Studio 包。 此后台加载允许 IDE 保持响应。 即使扩展在后台和关键方案（如启动和解决方案加载）中初始化时，IDE 也能响应。
 
 [异步服务](how-to-provide-an-asynchronous-visual-studio-service.md)：通过异步包支持，我们还添加了对异步查询服务的支持并能够注册异步服务。 更重要的是，我们正在转换核心 Visual Studio 服务以支持异步查询，以便异步查询中的大部分工作都在后台线程中进行。 SComponentModel (Visual Studio MEF 主机) 是一项主要服务，它现在支持异步查询以允许扩展完全支持异步加载。
 
@@ -70,7 +71,7 @@ ms.locfileid: "99966404"
 
 理想情况下，应避免在主线程中进行任何同步文件或网络 IO 请求。 它们的影响将取决于计算机状态，并且在某些情况下可能会在很长一段时间内阻塞。
 
-使用异步包加载和异步 IO Api 应确保包初始化在这种情况下不会阻止主线程。 用户还可以继续与 Visual Studio 交互，同时在后台发生 i/o 请求。
+使用异步包加载和异步 IO Api 应确保包初始化在这种情况下不会阻止主线程。 用户还可以继续与 Visual Studio 进行交互，同时 i/o 请求发生在后台。
 
 ### <a name="early-initialization-of-services-components"></a>服务、组件的早期初始化
 
@@ -80,17 +81,17 @@ ms.locfileid: "99966404"
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-activity-log"></a>使用活动日志度量自动加载的扩展的影响
 
-从 Visual Studio 2017 Update 3 开始，Visual Studio 活动日志现在包含在启动和解决方案加载过程中对包的性能影响的条目。 若要查看这些度量值，必须打开带有/log 开关的 Visual Studio 并打开 *ActivityLog.xml* 文件。
+从 Visual Studio 2017 Update 3 开始，Visual Studio 活动日志现在包含用于在启动和解决方案加载过程中对包进行性能影响的条目。 若要查看这些度量值，必须打开带有/log 开关 Visual Studio，并打开 *ActivityLog.xml* 文件。
 
-在活动日志中，条目将位于 "管理 Visual Studio 性能" 源下，并将如以下示例所示：
+在活动日志中，项将在 "管理 Visual Studio 性能" 源下，如以下示例所示：
 
 ```Component: 3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c, Inclusive Cost: 2008.9381, Exclusive Cost: 2008.9381, Top Level Inclusive Cost: 2008.9381```
 
-此示例显示，在 Visual Studio 启动时，GUID 为 "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" 的包花费了 2008 ms。 请注意，当计算某个包的影响时，Visual Studio 会将顶级成本视为主要数字，因为这是用户在禁用该包的扩展时看到的节省量。
+此示例显示 GUID 为 "3cd7f5bf-6662-4ff0-ade8-97b5ff12f39c" 的包在 Visual Studio 启动时花费了 2008 ms。 请注意，在计算包的影响时，Visual Studio 会将顶级成本视为主要数字，因为这会使用户在禁用该包的扩展时看到的节省量。
 
 ## <a name="measuring-impact-of-auto-loaded-extensions-using-perfview"></a>使用 PerfView 度量自动加载的扩展的影响
 
-尽管代码分析有助于识别可能会减慢包初始化速度的代码路径，但你也可以使用 PerfView 等应用程序来利用跟踪，以了解在 Visual Studio 启动过程中包加载的影响。
+尽管代码分析有助于识别可能会减慢包初始化速度的代码路径，但你也可以使用 PerfView 之类的应用程序来利用跟踪来了解 Visual Studio 启动中包加载的影响。
 
 PerfView 是系统范围内的跟踪工具。 此工具可帮助你了解应用程序中的热路径，原因可能是 CPU 使用率或阻塞系统调用。 下面是使用 [Microsoft 下载中心](https://www.microsoft.com/en-us/download/details.aspx?id=28567)提供的 PerfView 分析示例扩展的快速示例。
 
@@ -139,13 +140,13 @@ private void DoMoreWork()
 
 **使用 PerfView 记录跟踪：**
 
-设置了安装了扩展的 Visual Studio 环境后，可以通过打开 PerfView 并从 "**收集**" 菜单打开 "**收集**" 对话框来记录启动跟踪。
+设置安装了扩展的 Visual Studio 环境后，可以通过打开 PerfView 并从 "**收集**" 菜单打开 "**收集**" 对话框来记录启动跟踪。
 
 ![perfview 收集菜单](media/perfview-collect-menu.png)
 
-默认选项将为 CPU 消耗提供调用堆栈，但由于我们对阻塞时间感兴趣，因此还应启用 **线程时间** 堆栈。 设置准备就绪后，可以单击 " **开始收集** "，然后在录制开始后打开 Visual Studio。
+默认选项将为 CPU 消耗提供调用堆栈，但由于我们对阻塞时间感兴趣，因此还应启用 **线程时间** 堆栈。 设置准备就绪后，可以单击 "**开始收集**"，然后在录制开始后打开 Visual Studio。
 
-在停止收集之前，你需要确保 Visual Studio 已完全初始化，主窗口完全可见，如果你的扩展具有自动显示的任何 UI 段，则它们也会可见。 完全加载 Visual Studio 并初始化扩展时，可以停止记录以分析跟踪。
+在停止收集之前，你需要确保 Visual Studio 已完全初始化，主窗口完全可见，如果你的扩展具有可自动显示的任何 UI 段，则它们也会可见。 当 Visual Studio 完全加载并初始化扩展时，可以停止记录以分析跟踪。
 
 **使用 PerfView 分析跟踪：**
 

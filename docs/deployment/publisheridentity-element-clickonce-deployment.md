@@ -46,7 +46,7 @@ ms.locfileid: "121343411"
 |`name`|必需。 描述发布此应用程序的一方的身份。|
 |`issuerKeyHash`|必需。 包含证书颁发者公钥的 SHA-1 哈希。|
 
-#### <a name="parameters"></a>参数
+#### <a name="parameters"></a>Parameters
 
 ## <a name="property-valuereturn-value"></a>属性值/返回值
 

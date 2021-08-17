@@ -144,7 +144,7 @@ ms.locfileid: "121358644"
 
 3. 在要安装帮助内容的本地计算机上运行 .bat 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [帮助内容管理器的命令行参数](../help-viewer/command-line-arguments.md)
 - [帮助内容管理器替代](../help-viewer/behavior-overrides.md)

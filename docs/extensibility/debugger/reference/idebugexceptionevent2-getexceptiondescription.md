@@ -51,5 +51,5 @@ int GetExceptionDescription(
 ## <a name="remarks"></a>备注
  此方法返回的字符串通常是异常的名称，并在发生异常的情况下显示在 " **输出** " 窗口中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExceptionEvent2](../../../extensibility/debugger/reference/idebugexceptionevent2.md)

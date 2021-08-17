@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b3ee614a0f754307c37e5d48dfb3d9f461ec432
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5b7b200a45dd0fe87ff399917e196e00b3c365cdff854c5caa01ba22ab30672d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041797"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359112"
 ---
 # <a name="what39s-new-in-the-source-control-plug-in-api-version-13"></a>源代码管理插件 API 版本1.3 中的新增功能&#39;
 源代码管理插件 API 版本1.3 引入了以下新函数来提供更高级的控件。
@@ -27,7 +27,7 @@ ms.locfileid: "122041797"
 ## <a name="changes"></a>更改
  以下函数是源代码管理插件 API 版本1.3 中的新增功能：
 
-|功能|概述|
+|函数|概述|
 |--------------|--------------|
 |[SccGetExtendedCapabilities](../../extensibility/sccgetextendedcapabilities-function.md)|允许报告其他功能位|
 |[SccEnumChangedFiles](../../extensibility/sccenumchangedfiles-function.md)|允许检查版本控制数据库中具有比本地磁盘更高的版本的文件|

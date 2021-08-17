@@ -11,14 +11,15 @@ ms.assetid: 57245708-f539-42dc-8963-2754a48f0189
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36c757faacb7fe3193f9acbbd040468f66b0623a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f3e0921c37786c3be755f42a477c20465edfe1c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050203"
 ---
 # <a name="command-contracts-in-interop-assemblies"></a>互操作程序集中的命令约定
 通过接口处理命令的基本协定 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 是，环境调用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法来确定命令是否受支持，如果受支持，则确定其状态和文本。 然后，环境调用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.Exec%2A> 方法来执行命令。
@@ -29,7 +30,7 @@ ms.locfileid: "105086048"
 
  如果命令必须在层次结构窗口中运行，则 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 必须使用接口。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>接口具有具有类似方法的类似协定： <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.ExecCommand%2A> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [Vspackage 中的命令传送](../../extensibility/internals/command-routing-in-vspackages.md)
 - [命令实现](../../extensibility/internals/command-implementation.md)

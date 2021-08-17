@@ -1,6 +1,6 @@
 ---
-description: 获取与堆栈帧关联的物理地址范围的依赖于计算机的表示形式。
-title: IDebugStackFrame2：： GetPhysicalStackRange |Microsoft Docs
+description: 获取与堆栈帧关联的物理地址范围的与计算机相关的表示形式。
+title: IDebugStackFrame2：：GetPhysicalStackRange |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75bba9bd57f544b82dd459ca7e001de8657cbd79a05c3bdc01a6a5d1d72705bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f06a12af02ccf0eff164119a5a9de9058e88ec11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321592"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029679"
 ---
 # <a name="idebugstackframe2getphysicalstackrange"></a>IDebugStackFrame2::GetPhysicalStackRange
-获取与堆栈帧关联的物理地址范围的依赖于计算机的表示形式。
+获取与堆栈帧关联的物理地址范围的与计算机相关的表示形式。
 
 ## <a name="syntax"></a>语法
 
@@ -45,18 +45,18 @@ int GetPhysicalStackRange (
 
 ## <a name="parameters"></a>参数
 `paddrMin`\
-弄返回与此堆栈帧关联的最小物理地址。
+[out]返回与此堆栈帧关联的最低物理地址。
 
 `paddrMax`\
-弄返回与此堆栈帧关联的最高物理地址。
+[out]返回与此堆栈帧关联的最高物理地址。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法返回的信息由会话调试管理器 (SDM) 用于对堆栈帧进行排序。
+ 此方法返回的信息由会话调试管理器 (SDM) 堆栈帧进行排序。
 
- 假设调用堆栈向下减小，也就是说，新的堆栈帧添加到越来越少的内存地址。 运行时体系结构必须提供与此假设匹配的物理堆栈范围。
+ 假定调用堆栈变小，也就是说，新的堆栈帧在内存地址越来越小时添加。 运行时体系结构必须提供符合此假设的物理堆栈范围。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

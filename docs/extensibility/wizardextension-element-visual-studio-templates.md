@@ -90,7 +90,7 @@ ms.locfileid: "121334947"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
 - [如何：使用向导来处理项目模板](../extensibility/how-to-use-wizards-with-project-templates.md)

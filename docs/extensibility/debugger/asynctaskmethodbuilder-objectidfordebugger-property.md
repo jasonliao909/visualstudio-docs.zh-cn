@@ -34,6 +34,6 @@ ms.locfileid: "121434693"
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder%601>
 - [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

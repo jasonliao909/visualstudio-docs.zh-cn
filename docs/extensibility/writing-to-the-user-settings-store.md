@@ -1,6 +1,6 @@
 ---
-title: 写入用户设置 Store |Microsoft Docs
-description: 了解如何使用此记事本Visual Studio向用户设置存储读取和写入数据，以作为外部工具添加数据。
+title: 写入 User 设置 Store |Microsoft Docs
+description: 了解如何使用本记事本Visual Studio向用户设置存储读取和写入数据，以作为外部工具添加数据。
 ms.custom: SEO-VS-2020
 ms.date: 05/23/2019
 ms.topic: how-to
@@ -19,7 +19,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121334921"
 ---
 # <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
-用户设置是可写设置，如"工具 **/** 选项"对话框、属性窗口和某些其他对话框中的设置。 Visual Studio扩展可以使用它们来存储少量数据。 本演练演示如何通过从用户设置存储记事本写入Visual Studio添加数据以用作外部工具。
+用户设置是可写设置，如"工具 **/** 选项"对话框、属性窗口和某些其他对话框中的设置。 Visual Studio扩展可能会使用这些存储少量数据。 本演练演示如何通过记事本向用户Visual Studio存储进行读取和写入操作，将应用程序添加为外部工具。
 
 ## <a name="writing-to-the-user-settings-store"></a>写入用户设置存储
 
@@ -103,10 +103,10 @@ ms.locfileid: "121334921"
     }
     ```
 
-6. 测试代码。 请记住，它将记事本工具添加为外部工具，因此必须在再次运行注册表之前回滚注册表。
+6. 测试代码。 请记住，它将记事本作为外部工具添加，因此必须在再次运行注册表之前回滚注册表。
 
 7. 生成代码并开始调试。
 
 8. 在"**工具"菜单** 上，单击 **"调用 UserSettingsStoreCommand"。** 这会将记事本添加到"**工具"** 菜单。
 
-9. 现在，你应该记事本"工具/选项"菜单上看到 **记事本，此时** 应显示一个记事本。
+9. 现在，你应该记事本"工具/选项"菜单上看到"记事本"按钮，此时应显示记事本。

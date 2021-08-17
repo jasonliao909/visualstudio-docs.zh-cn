@@ -36,7 +36,7 @@ ms.locfileid: "121347501"
 | - |
 |在简单控件上实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>（如 <xref:System.Windows.Forms.TextBox>），此类控件用于显示数据的单个列（或属性）。 （本演练页面描述了此过程）。|
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 有关详细信息，请参阅[创建支持Windows绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。|
-|在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建支持Windows绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
+|在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建Windows查找数据绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
 
 本演练创建了一个简单控件，用于显示表中单个列的数据。 此示例使用 Northwind 示例数据库的 `Phone` 表中的 `Customers` 列。 简单的用户控件使用 ，将掩码设置为电话号码，以标准电话号码格式 <xref:System.Windows.Forms.MaskedTextBox> 显示客户的电话号码。
 
@@ -56,7 +56,7 @@ ms.locfileid: "121347501"
 
 - 创建一个用于在新控件中显示数据的窗体。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 本演练使用 SQL Server Express LocalDB和 Northwind 示例数据库。
 
@@ -80,7 +80,7 @@ ms.locfileid: "121347501"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧 **窗格中展开"Visual C#"****或**"Visual Basic"，然后选择"Windows **桌面"。**
+2. 展开左侧 **窗格中Visual Basic"Visual C#"** 或"Windows"。 
 
 3. 在中间窗格中，选择"Windows **窗体应用"** 项目类型。
 
@@ -171,7 +171,7 @@ ms.locfileid: "121347501"
 
 带有描述性标签的数据绑定控件将显示在窗体上，同时还显示一个工具条 (<xref:System.Windows.Forms.BindingNavigator>)，用于在记录间进行导航。 组件栏中显示[“NorthwindDataSet”](../data-tools/dataset-tools-in-visual-studio.md)、CustomersTableAdapter、<xref:System.Windows.Forms.BindingSource> 和 <xref:System.Windows.Forms.BindingNavigator>。
 
-## <a name="run-the-application"></a>运行应用程序
+## <a name="run-the-application"></a>运行此应用程序
 
 按 **F5** 运行该应用程序。
 
@@ -181,9 +181,9 @@ ms.locfileid: "121347501"
 
 - 将你的自定义控件置于控件库中，以便在其他应用程序中重用它们。
 
-- 创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅创建支持[Windows](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)绑定的窗体用户控件和创建支持Windows数据绑定[的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
+- 创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅创建支持[Windows](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)绑定的窗体用户控件和创建Windows查找数据绑定的[窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

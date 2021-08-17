@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 622213e1eb0f43af3f3e034b76af11d941559724605a6758dd31f9ed3b4081af
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cdcf987151af31e9f8921bfca3f758b20b818e32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433068"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029172"
 ---
 # <a name="process_info_fields"></a>PROCESS_INFO_FIELDS
 指定要检索的进程的信息类型。
