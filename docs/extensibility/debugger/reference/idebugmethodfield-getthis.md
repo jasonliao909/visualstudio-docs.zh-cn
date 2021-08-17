@@ -51,6 +51,6 @@ int GetThis(
 ## <a name="remarks"></a>备注
  在面向对象的语言中，通常存在指向类的当前实例化的隐式指针。 这在 `this` C#/C++ 中称为 ，在 中 `Me` 称为 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

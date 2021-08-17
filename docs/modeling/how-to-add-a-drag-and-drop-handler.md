@@ -572,7 +572,7 @@ namespace Company.CompartmentDrag  // EDIT.
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义复制行为](../modeling/customizing-copy-behavior.md)
 - [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)

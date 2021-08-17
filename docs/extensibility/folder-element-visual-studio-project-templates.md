@@ -1,6 +1,6 @@
 ---
-title: 文件夹元素 (Visual Studio Project模板) |Microsoft Docs
-description: 了解 Folder 元素及其如何指定将添加到项目的文件夹。
+title: 文件夹元素 (Visual Studio Project 模板) |Microsoft Docs
+description: 了解 Folder 元素及其如何指定将添加到项目中的文件夹。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -22,8 +22,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121432626"
 ---
-# <a name="folder-element-visual-studio-project-templates"></a>文件夹元素 (Visual Studio项目模板) 
-指定将添加到项目的文件夹。
+# <a name="folder-element-visual-studio-project-templates"></a>文件夹元素 (Visual Studio 项目模板) 
+指定将添加到项目中的文件夹。
 
  \<VSTemplate> \<TemplateContent>
  \<Project>
@@ -46,27 +46,27 @@ ms.locfileid: "121432626"
 |属性|描述|
 |---------------|-----------------|
 |`Name`|必需的特性。<br /><br /> 项目文件夹的名称。|
-|`TargetFolderName`|可选特性。<br /><br /> 指定从模板创建项目时要提供的文件夹的名称。 此属性可用于使用参数替换来创建文件夹名称，或者使用国际字符串命名文件夹，该字符串不能直接在 *.zip使用。*|
+|`TargetFolderName`|可选特性。<br /><br /> 指定从模板创建项目时为文件夹指定的名称。 此属性可用于使用参数替换创建文件夹名称，或使用无法直接在 *.zip* 文件中使用的国际字符串命名文件夹。|
 
 ### <a name="child-elements"></a>子元素
 
 |元素|说明|
 |-------------|-----------------|
 |`Folder`|指定要添加到项目的文件夹。 `Folder` 元素可以包含子 `Folder` 元素。|
-|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要添加到项目的文件。|
+|[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|指定要添加到项目中的文件。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|描述|
 |-------------|-----------------|
-|[Project](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent 的可选子元素](../extensibility/templatecontent-element-visual-studio-templates.md)。|
+|[Project](../extensibility/project-element-visual-studio-templates.md)|[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)的可选子元素。|
 
 ## <a name="remarks"></a>备注
- `Folder` 是 的可选子级 `Project` 。
+ `Folder` 是的一个可选子级 `Project` 。
 
- 可以使用以下任一方法将项目项组织到模板中的文件夹中：
+ 你可以使用以下任一方法将项目项组织到模板的文件夹中：
 
-- 将文件夹包括在模板.zip文件，然后通过指定元素中的文件路径（不包含任何元素）将它们添加到 *.vstemplate* `ProjectItem` 文件中 `Folder` 的项目。 这是建议的方法。 例如：
+- 在模板 *.zip* 文件中包含文件夹，并通过在元素中指定文件路径 `ProjectItem` （不包含元素）将这些文件夹添加到 .vstemplate 文件中的项目 `Folder` 。 这是建议的方法。 例如：
 
      `...`
 
@@ -76,7 +76,7 @@ ms.locfileid: "121432626"
 
      `...`
 
-- 将文件夹包括在模板 *.zip文件，* 并将其添加到包含 元素的 *.vstemplate* 文件中 `Folder` 的项目。 例如：
+- 在模板 *.zip* 文件中包含文件夹，然后将其添加到包含元素的 *.vstemplate* 文件中的项目 `Folder` 。 例如：
 
      `...`
 
@@ -90,7 +90,7 @@ ms.locfileid: "121432626"
 
      `...`
 
-- 不要将文件夹包括在模板 *.zip文件，* 而是使用 元素的 属性 `TargetFileName` 添加 `ProjectItem` 文件夹。 例如：
+- 不要在模板 *.zip* 文件中包含文件夹，但使用元素的属性添加文件夹 `TargetFileName` `ProjectItem` 。 例如：
 
      `...`
 
@@ -101,7 +101,7 @@ ms.locfileid: "121432626"
      `...`
 
 ## <a name="example"></a>示例
- 以下示例演示了应用程序项目模板的Windows [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
+ 下面的示例演示 Windows 应用程序的项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```
 <VSTemplate Type="Project" Version="3.0.0"

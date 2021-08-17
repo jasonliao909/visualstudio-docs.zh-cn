@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 530c421c3ba4a12356218df2f295d08f18d1e2aeedcdfc0d9578e8afeecda34a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ca44db2c6e6c097cfe26845eb3f60303155257aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042837"
 ---
 # <a name="jmc_code_spec"></a>JMC_CODE_SPEC
 此结构用于设置模块的 JustMyCode 信息。
@@ -45,7 +45,7 @@ public struct JMC_CODE_SPEC {
 
 ## <a name="members"></a>成员
 `fIsUserCode`\
-如果 () 将模块视为用户代码，则不为零;否则，如果模块被视为外部代码而不是要调试，则不 () 为零。 `TRUE` `FALSE`
+如果 () 将模块视为用户代码，则不为零;否则， () 将模块视为外部代码而不是进行调试，则不为零。 `TRUE` `FALSE`
 
 `bstrModuleName`\
 有关模块的名称。
@@ -60,6 +60,6 @@ public struct JMC_CODE_SPEC {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [SetJustMyCodeState](../../../extensibility/debugger/reference/idebugengine3-setjustmycodestate.md)

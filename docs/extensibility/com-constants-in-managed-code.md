@@ -10,17 +10,18 @@ ms.assetid: b6663608-b049-44b0-a75b-080fdc5faafc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bb259d754befa3596e1dff1e49931c8ee81c665b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: a55d9e934f85c6be2dc3822dc8373d8cbcacf40f1abe2eff5536fbabfb5aed0e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904316"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293607"
 ---
 # <a name="com-constants-in-managed-code"></a>托管代码中的 COM 常量
-托管包框架 (MPF) 使一些标准 COM 常量可用于托管代码。 下面列出了这些常量供你参考。
+托管包框架 (MPF) 使一些标准 COM 常量可用于托管代码。 下面列出了这些常量供参考。
 
 ## <a name="boolean-hresult-values"></a>布尔 HRESULT 值
  <xref:Microsoft.VisualStudio.VSConstants.S_FALSE>
@@ -128,5 +129,5 @@ ms.locfileid: "112904316"
 
  <xref:Microsoft.VisualStudio.VSConstants.DISP_E_UNKNOWNNAME>
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [错误处理和返回值](../extensibility/error-handling-and-return-values.md)

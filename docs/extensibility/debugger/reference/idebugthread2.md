@@ -11,14 +11,15 @@ ms.assetid: 221b4b1b-4a26-466e-bc29-5eff800fab13
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24a9cef2e62dc2597871f270c9ee48ad58c0a0e1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 02463f51fc05a6ad4a42dd663e0c0b949d7f0c8badba87d13e2afc459be763e6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086971"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121291943"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 此接口表示在程序中运行的线程。
@@ -68,7 +69,7 @@ IDebugThread2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
 - [GetThread](../../../extensibility/debugger/reference/idebugstackframe2-getthread.md)

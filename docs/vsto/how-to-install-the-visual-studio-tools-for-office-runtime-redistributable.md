@@ -44,20 +44,20 @@ ms.locfileid: "121351936"
 
     - 若要下载 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] ，请参阅[Microsoft .NET Framework 4 (Web 安装程序) 。 ](https://www.microsoft.com/download/details.aspx?id=17851)
 
-    - 若要下载 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] ，请参阅[Microsoft .NET Framework 4 客户端配置文件 (Web 安装程序) 。 ](https://www.microsoft.com/download/details.aspx?id=17113)
+    - 若要下载 [!INCLUDE[net_client_v40_long](../vsto/includes/net-client-v40-long-md.md)] ，请参阅 Microsoft .NET Framework 4 客户端配置文件[ (Web 安装程序) 。 ](https://www.microsoft.com/download/details.aspx?id=17113)
 
     - 若要下载 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] ，请参阅[Microsoft .NET Framework 4.5。](https://www.microsoft.com/download/details.aspx?id=30653)
 
 2. 运行 *vstor_redist.exe* 安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
-     可以从 Visual Studio [2010 Tools for Office 运行时 下载这些安装文件](https://www.microsoft.com/download/details.aspx?id=56961)。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的先决条件与 .NET Framework 的先决条件相匹配。
+     可以从[2010 Tools for Visual Studio 运行时 下载Office文件](https://www.microsoft.com/download/details.aspx?id=56961)。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的先决条件与 .NET Framework 的先决条件相匹配。
 
      [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包括语言包。 如果 Windows 安装设置为非英语语言，则可以以 Windows 使用的语言显示运行时消息。 同样，如果最终用户安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然后在设置为非英语语言的 Windows 安装上运行你的解决方案，则运行时消息将以与 Windows 相同的语言显示。 在某些情况下，可能需要其他语言包。 例如，如果你的 Windows使用多个语言设置，或者安装 后切换到另一种语言，则你可能需要其他语言包 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 可以在 Microsoft Visual Studio [2010 工具（Microsoft Office 4.0](https://www.microsoft.com/download/details.aspx?id=54246) (运行时语言包）) 语言包。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开始&#40;Office开发Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [配置计算机以开发Office解决方案](../vsto/configuring-a-computer-to-develop-office-solutions.md)
 - [如何：配置计算机以开发Office解决方案](../vsto/how-to-configure-a-computer-to-develop-office-solutions.md)
 - [如何：安装Office互操作程序集](../vsto/how-to-install-office-primary-interop-assemblies.md)
 - [使用 ServerDocument 类管理服务器上的文档](../vsto/managing-documents-on-a-server-by-using-the-serverdocument-class.md)
-- [部署Office解决方案](../vsto/deploying-an-office-solution.md)
+- [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)

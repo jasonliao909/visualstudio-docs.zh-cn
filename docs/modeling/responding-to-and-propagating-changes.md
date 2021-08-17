@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 18b64fe557521cbbe5a274b7f3f146d93cbaaf6630f6a1ca29190499fdb22803
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8027b1fa5a2b050a0bb40160d44063857cc76927
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428713"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055336"
 ---
 # <a name="respond-to-and-propagate-changes"></a>响应并传播更改
 
@@ -55,7 +55,7 @@ ms.locfileid: "121428713"
 
 - **将事件参数传递到规则和事件** 事件和规则都被传递了一个 `EventArgs` 参数，该参数包含有关模型如何更改的信息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：截获对形状或修饰器的单击](../modeling/how-to-intercept-a-click-on-a-shape-or-decorator.md)
 - [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

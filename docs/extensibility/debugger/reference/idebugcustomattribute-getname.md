@@ -1,6 +1,6 @@
 ---
 description: 获取自定义属性的名称。
-title: IDebugCustomAttribute：： GetName |Microsoft Docs
+title: IDebugCustomAttribute：：GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 807922628249a38400c86001a27498f3c26fafd30c2b2907e8faa2cb09fd2454
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53345ce6c7cc7a261b15367d926a68701a087ef3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089348"
 ---
 # <a name="idebugcustomattributegetname"></a>IDebugCustomAttribute::GetName
 获取自定义属性的名称。
@@ -43,13 +43,13 @@ int GetName(
 
 ## <a name="parameters"></a>参数
 `bstrName`\
-弄返回一个字符串，该字符串包含自定义特性的名称。
+[out]返回一个包含自定义属性名称的字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法返回的命名对应于用于声明特性的类的名称。 这与自定义特性类本身的名称可能并不完全一致，因为 c # 允许在声明中使用自定义属性名称时将其从自定义属性名称中删除。
+ 此方法返回的命名 对应于用于声明属性的类的名称。 这可能不完全对应于自定义属性类本身的名称，因为 C# 允许在声明中使用"Attribute"后缀时从自定义属性名称删除它。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

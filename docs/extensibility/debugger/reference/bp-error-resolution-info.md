@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 064091d6bfe1bd25cfccc1df486cfad83441d12a8c01c679feae925d58426f83
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3e678d3089032d93eb2974123d9a5c2153c97e95
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073170"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 描述错误断点（包括位置、程序、线程）的解决方法。
@@ -80,7 +80,7 @@ BP_RESOLUTION_LOCATION [联合](../../../extensibility/debugger/reference/bp-res
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

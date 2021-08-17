@@ -43,7 +43,7 @@ ms.locfileid: "121332321"
 
 6. 选择 " **Project 名称**" 旁边的箭头，选择非 SharePoint 项目项的名称，然后选择 "**确定"** 按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在项目项中提供打包和部署信息](../sharepoint/providing-packaging-and-deployment-information-in-project-items.md)
 - [如何：将控件标记为安全控件](../sharepoint/how-to-mark-controls-as-safe-controls.md)
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

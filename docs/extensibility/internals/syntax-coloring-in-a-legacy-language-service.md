@@ -23,7 +23,7 @@ ms.locfileid: "121431926"
 ---
 # <a name="syntax-coloring-in-a-legacy-language-service"></a>在旧版语言服务中进行语法着色
 
-Visual Studio使用着色服务来标识语言的元素，并使用编辑器中的指定颜色显示这些元素。
+Visual Studio着色服务来标识语言的元素，并使用编辑器中的指定颜色显示这些元素。
 
 ## <a name="colorizer-model"></a>着色器模型
  语言服务实现 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsColorizer> 接口，该接口随后由编辑器使用。 此实现是语言服务中的单独对象，如下图所示：
@@ -31,7 +31,7 @@ Visual Studio使用着色服务来标识语言的元素，并使用编辑器中�
  ![SVC 着色程序图](../../extensibility/internals/media/figlgsvccolorizer.gif)
 
 > [!NOTE]
-> 语法着色服务独立于常规Visual Studio文本着色机制。 有关支持着色 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 的常规机制详细信息，请参阅 [使用字体和颜色](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)。
+> 语法着色服务独立于常规文本Visual Studio着色机制。 有关支持着色 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 的常规机制详细信息，请参阅 [使用字体和颜色](/previous-versions/visualstudio/visual-studio-2015/extensibility/using-fonts-and-colors?preserve-view=true&view=vs-2015)。
 
  除了着色器，语言服务还可以提供编辑器使用的自定义可着色项，其广告是它提供自定义可着色项。 为此，可以在实现 接口 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems> 的同一对象上实现 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageInfo> 接口。 它在编辑器调用 方法时返回自定义可着色项的数量，在编辑器调用 方法时返回单个 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetItemCount%2A> 自定义可着色 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsProvideColorableItems.GetColorableItem%2A> 项。
 

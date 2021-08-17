@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3044abff780c0b7798c7c311cf32199166230c0315a12dfc6caf47ca23cc9da4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e264d80bc940d4091f380d401ba24719a46e36fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321384"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042850"
 ---
 # <a name="ipropertyproxyeesidegetmanagedviewercreationdata"></a>IPropertyProxyEESide::GetManagedViewerCreationData
 检索有关此属性类型的查看器的信息，以便实例化该查看器。
@@ -76,7 +76,7 @@ int GetManagedViewerCreationData(
 ## <a name="remarks"></a>备注
  类型可视化工具使用此方法实例化托管查看器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [ASSEMBLYLOCRESOLUTION](../../../extensibility/debugger/reference/assemblylocresolution.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

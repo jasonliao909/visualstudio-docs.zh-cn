@@ -8,15 +8,16 @@ ms.assetid: d67e0c53-9f5a-45fb-a929-b9d2125c3c82
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: f76451ca2a650283125cc7659d0053ef984115fc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34e8f64b0007231ef3c5208d7020d415d65e6d67
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073534"
 ---
 # <a name="creating-a-custom-start-page"></a>创建自定义起始页
 
@@ -24,9 +25,9 @@ ms.locfileid: "105089376"
 
 ## <a name="create-a-blank-start-page"></a>创建空白起始页
 
-首先，创建一个包含 Visual Studio 将识别的标记结构的 *.xaml* 文件，从而创建一个空白起始页。 然后，添加标记和代码隐藏以生成所需的外观和功能。
+首先，创建一个包含标记结构的 .xaml 文件，该文件包含一个 Visual Studio 将识别的 *.xaml* 文件。 然后，添加标记和代码隐藏以生成所需的外观和功能。
 
-1. 在 **Visual c #** Windows Desktop) 中创建 " **WPF 应用程序**" 类型的新项目 ( >   。
+1. 在 **Visual c #** Windows Desktop)  (上创建 " **WPF 应用程序**" 类型的新项目  >   。
 
 2. 添加对 `Microsoft.VisualStudio.Shell.14.0` 的引用。
 
@@ -41,7 +42,7 @@ ms.locfileid: "105089376"
     xmlns:vsfx="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.VisualStudio.Shell.14.0"
     ```
 
-     通过这些命名空间，你可以访问 Visual Studio 命令、控件和 UI 设置。 有关详细信息，请参阅 [将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。
+     通过这些命名空间，你可以访问 Visual Studio 命令、控件和 UI 设置。 有关详细信息，请参阅[将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。
 
      下面的示例演示了一个空白起始页的 *.xaml* 文件中的标记。 所有自定义内容应在内部 <xref:System.Windows.Controls.Grid> 元素中。
 
@@ -63,19 +64,19 @@ ms.locfileid: "105089376"
     </UserControl>
     ```
 
-6. 向空元素添加控件 \<UserControl> 以填充自定义起始页。 有关如何添加特定于 Visual Studio 的功能的信息，请参阅 [将 Visual studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。
+6. 向空元素添加控件 \<UserControl> 以填充自定义起始页。 有关如何添加特定于 Visual Studio 的功能的信息，请参阅[将 Visual Studio 命令添加到起始页](../extensibility/adding-visual-studio-commands-to-a-start-page.md)。
 
 ## <a name="test-and-apply-the-custom-start-page"></a>测试并应用自定义起始页
 
-在验证它不会使 Visual Studio 崩溃之前，不要将 Visual Studio 的主实例设置为运行自定义起始页。 相反，请在实验实例中对其进行测试。
+不要将 Visual Studio 的主实例设置为运行自定义起始页，直到验证它没有崩溃 Visual Studio。 相反，请在实验实例中对其进行测试。
 
 ### <a name="to-test-a-manually-created-custom-start-page"></a>测试手动创建的自定义起始页
 
-1. 将 XAML 文件和任何支持的文本文件或标记文件复制到 *%USERPROFILE%\My Documents\Visual Studio 2015 \ StartPages \\* 文件夹中。
+1. 将 XAML 文件和任何支持的文本文件或标记文件复制到 *%USERPROFILE%\My Documents \ Visual Studio 2015 \ StartPages \\* 文件夹中。
 
-2. 如果起始页引用 Visual Studio 未安装的程序集中的任何控件或类型，请复制这些程序集，然后将其粘贴到 *{Visual studio 安装文件夹} \\ \Common7\IDE\PrivateAssemblies*。
+2. 如果起始页引用未 Visual Studio 安装的程序集中的任何控件或类型，请复制这些程序集，然后将其粘贴到 *{Visual Studio 安装文件夹} \\ \Common7\IDE\PrivateAssemblies*。
 
-3. 在 Visual Studio 命令提示符处，键入 **devenv/Rootsuffix Exp** 来打开 Visual studio 的实验实例。
+3. 在 Visual Studio 命令提示符处，键入 **devenv/rootsuffix Exp** ，以打开 Visual Studio 的实验实例。
 
 4. 在实验实例中，请切换到 "**工具**  >  **选项**  >  **环境**  >  **启动**" 页，然后从 "**自定义起始页**" 下拉列表中选择您的 XAML 文件。
 
@@ -83,11 +84,11 @@ ms.locfileid: "105089376"
 
      应显示自定义起始页。 如果要更改任何文件，则必须关闭实验实例，进行更改，复制并粘贴已更改的文件，然后重新打开实验实例以查看更改。
 
-### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>在 Visual Studio 的主实例中应用自定义起始页
+### <a name="to-apply-the-custom-start-page-in-the-primary-instance-of-visual-studio"></a>若要在的主实例中应用自定义起始页 Visual Studio
 
-- 在测试起始页并发现它稳定后，使用 "**选项**" 对话框中的 "**自定义起始页**" 选项将其选择为 Visual Studio 主实例中的起始页
+- 在测试起始页并发现它稳定后，使用 "**选项**" 对话框中的 "**自定义起始页**" 选项将其选择为主实例中的起始页 Visual Studio
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：将自定义 XAML 添加到起始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)
 - [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

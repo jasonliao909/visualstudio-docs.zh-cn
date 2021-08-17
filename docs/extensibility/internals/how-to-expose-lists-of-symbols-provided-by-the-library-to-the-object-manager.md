@@ -1,6 +1,6 @@
 ---
-title: 公开提供给对象管理器的符号列表 |Microsoft Docs
-description: 了解如何实现 IVsSimpleObjectList2 接口以向对象管理器公开符号列表，Visual Studio 和更新符号浏览工具。
+title: 公开提供给对象管理器对象的符号|Microsoft Docs
+description: 了解如何实现 IVsSimpleObjectList2 接口，以在 Visual Studio 中向对象管理器公开符号列表并更新符号浏览工具。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -17,26 +17,26 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: aa1e700b724a3797aca38fc862e24342e6b3b42ab1a730403801c0576b01b126
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d8d86a09494ad1a130ad4e5dbdcf1b700af6972f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337937"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042538"
 ---
-# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：将库提供的符号列表公开给对象管理器
-符号浏览工具、 **类视图**、 **对象浏览器**、 **调用浏览器** 和 **查找符号结果** 会将新数据的请求传递给 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 对象管理器。 对象管理器查找适当的库，并请求新的符号列表。 这些库通过接口向对象管理器提供请求的数据来做出响应 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]对象管理器调用接口中的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 来获取数据，并使用它来填充或更新符号浏览工具的视图。
+# <a name="how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager"></a>如何：向对象管理器公开库提供的符号列表
+符号浏览工具（类视图、**对象** 浏览器、调用浏览器 **和查找** 符号结果）将新数据的请求传递给 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 对象管理器。 对象管理器查找相应的库并请求新的符号列表。 库通过 接口向对象管理器提供 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 请求的数据来 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 做出响应。 对象管理器调用 接口中的方法以获取数据，并使用它填充或更新符号 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 浏览工具的视图。
 
- 在调用工具、展开节点或刷新视图时，库可能会获取数据请求。 第一次调用符号浏览工具时，对象管理器会请求库提供顶级列表。 当用户展开列表节点时，库将提供该节点下的子节点列表。 每个对象管理器查询都包含相关项的索引。 若要显示新列表，对象管理器必须确定列表中有多少项、项目的类型、名称、辅助功能和其他属性。
+ 调用工具、展开节点或刷新视图时，库可能会获取数据请求。 首次调用符号浏览工具时，对象管理器会请求库提供顶级列表。 当用户展开列表节点时，库会提供该节点下的子级列表。 每个对象管理器查询都包含感兴趣的项的索引。 若要显示新列表，对象管理器必须确定列表中的项数、项的类型、名称、可访问性和其他属性。
 
 > [!NOTE]
-> 下面的托管代码示例演示如何通过实现接口来提供符号列表 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 。 对象管理器调用此接口中的方法，并使用获取的数据填充或更新符号浏览工具。
+> 以下托管代码示例演示如何通过实现 接口提供符号 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2> 列表。 对象管理器调用此接口中的方法，并使用获取的数据填充或更新符号浏览工具。
 >
 > 对于本机代码符号提供程序实现，请使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsObjectList2> 接口。
 
 ## <a name="to-provide-lists-of-symbols-to-the-object-manager"></a>向对象管理器提供符号列表
 
-1. 通过实现方法来获取符号列表中的项数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> 。 下面的示例演示对象管理器如何获取列表中项的数量信息。
+1. 通过实现 方法获取符号列表中的项 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetItemCount%2A> 数。 下面的示例演示对象管理器如何获取有关列表中项数的信息。
 
     ```vb
     Protected m_Methods As System.Collections.Generic.SortedList(Of String, Method) = New System.Collections.Generic.SortedList(Of String, Method)()
@@ -58,7 +58,7 @@ ms.locfileid: "121337937"
 
     ```
 
-2. 通过实现方法获取有关给定列表项的类别和特性的信息 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> 。 项类别是在枚举中指定的 <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> 。 下面的示例演示对象管理器如何获取给定类别的项的特性。
+2. 通过实现 方法获取有关给定列表项的类别和属性 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetCategoryField2%2A> 的信息。 项类别在 枚举 <xref:Microsoft.VisualStudio.Shell.Interop.LIB_CATEGORY> 中指定。 下面的示例演示对象管理器如何获取给定类别的项的属性。
 
     ```vb
     Public Function GetCategoryField2(ByVal index As UInteger, ByVal Category As Integer, ByRef pfCatField As UInteger) As Integer
@@ -153,7 +153,7 @@ ms.locfileid: "121337937"
 
     ```
 
-3. 通过实现方法来获取给定列表项的文本表示形式 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> 。 下面的示例演示如何获取给定项的完整名称。
+3. 通过实现 方法获取给定列表项的文本 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetTextWithOwnership%2A> 表示形式。 下面的示例演示如何获取给定项的全名。
 
     ```vb
     Public Function GetTextWithOwnership(<System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.ULONG")> ByVal index As UInteger, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS")> ByVal tto As Microsoft.VisualStudio.Shell.Interop.VSTREETEXTOPTIONS, <System.Runtime.InteropServices.ComAliasNameAttribute("Microsoft.VisualStudio.OLE.Interop.WCHAR")> ByRef ppszText As String) As Integer
@@ -171,7 +171,7 @@ ms.locfileid: "121337937"
 
     ```
 
-4. 通过实现方法获取给定列表项的图标信息 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> 。 图标表示类型 (类、方法等) 以及列表项)  (private、public 等辅助功能。 下面的示例演示如何根据给定的项特性获取图标信息。
+4. 通过实现 方法获取给定列表项的图标 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetDisplayData%2A> 信息。 图标表示 (类、方法等) ，以及 (私有、公共等) 列表项的可访问性。 下面的示例演示如何基于给定的项属性获取图标信息。
 
     ```vb
     Public Overridable Function GetDisplayData(ByVal index As UInteger, ByVal pData As Microsoft.VisualStudio.Shell.Interop.VSTREEDISPLAYDATA()) As Integer
@@ -253,7 +253,7 @@ ms.locfileid: "121337937"
 
     ```
 
-5. 获取有关给定列表项是否可通过实现方法进行扩展的信息 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> 。 下面的示例演示如何获取有关是否可以展开给定项的信息。
+5. 通过实现 方法获取有关给定列表项是否可展开 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetExpandable3%2A> 的信息。 下面的示例演示如何获取有关是否可以扩展给定项的信息。
 
     ```vb
     Public Function GetExpandable(ByVal index As UInteger, ByRef pfExpandable As Integer) As Integer
@@ -280,7 +280,7 @@ ms.locfileid: "121337937"
 
     ```
 
-6. 通过实现方法获取给定列表项的子符号的子列表 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> 。 下面的示例演示如何获取 **调用** 或 **调用方** 关系图的给定项的子符号列表。
+6. 通过实现 方法获取给定列表项的符号的子 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSimpleObjectList2.GetList2%2A> 列表。 下面的示例演示如何获取"调用"或"调用方"关系图中给定 **项** 的符号 **的子** 列表。
 
     ```vb
     ' Call graph list.
@@ -467,7 +467,7 @@ ms.locfileid: "121337937"
 
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [如何：向对象管理器注册库](../../extensibility/internals/how-to-register-a-library-with-the-object-manager.md)
 - [如何：标识库中的符号](../../extensibility/internals/how-to-identify-symbols-in-a-library.md)

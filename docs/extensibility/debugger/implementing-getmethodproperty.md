@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 17f846e9dcb70300b27aa7248c4c4c2783b02887f6ba9d6071f636cbf48b78b0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e435ce59d13fcc9d60c61468520fddd8185fdd0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361101"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089376"
 ---
 # <a name="implement-getmethodproperty"></a>实现 GetMethodProperty
 > [!IMPORTANT]
@@ -127,5 +127,5 @@ STDMETHODIMP CExpressionEvaluator::GetMethodProperty(
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [局部变量的示例实现](../../extensibility/debugger/sample-implementation-of-locals.md)

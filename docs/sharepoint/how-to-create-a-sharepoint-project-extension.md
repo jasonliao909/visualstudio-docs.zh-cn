@@ -188,9 +188,9 @@ ms.locfileid: "121352937"
   }
   ```
 
-此示例使用 SharePoint 项目服务将消息写入"输出 **"窗口和**"**错误列表"** 窗口。 有关详细信息，请参阅使用[SharePoint 项目服务。](../sharepoint/using-the-sharepoint-project-service.md)
+此示例使用 SharePoint 项目服务将消息写入"输出 **"** 窗口和"**错误列表"** 窗口。 有关详细信息，请参阅使用[SharePoint 项目服务。](../sharepoint/using-the-sharepoint-project-service.md)
 
- 有关演示如何处理 和 事件的示例，请参阅如何：向项目添加SharePoint菜单项和如何：向项目添加SharePoint <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> [项](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)。 [](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
+ 有关演示如何处理 和 事件的示例，请参阅如何：向项目添加SharePoint <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectMenuItemsRequested> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> [菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)和[如何：向](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)项目添加SharePoint项。
 
 ## <a name="compile-the-code"></a>编译代码
  此示例需要引用以下程序集：
@@ -202,7 +202,7 @@ ms.locfileid: "121352937"
 ## <a name="deploy-the-extension"></a>部署扩展
  若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)
 - [如何：向项目添加SharePoint菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)
 - [如何：向项目SharePoint属性](../sharepoint/how-to-add-a-property-to-sharepoint-projects.md)

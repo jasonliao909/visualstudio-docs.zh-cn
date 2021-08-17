@@ -32,7 +32,7 @@ ms.locfileid: "121351858"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_OL_AddContact/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_OL_AddContact/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式创建约会](../vsto/how-to-programmatically-create-appointments.md)
 - [如何：以编程方式Outlook联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)

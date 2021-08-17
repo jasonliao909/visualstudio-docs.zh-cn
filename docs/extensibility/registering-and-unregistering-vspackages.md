@@ -11,14 +11,15 @@ ms.assetid: e25e7a46-6a55-4726-8def-ca316f553d6b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 48067ed883a44870b3b753cb5e3d6943eca91ca5
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 77929647b86f5397fa5986f2223b8e52c9d65c86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041589"
 ---
 # <a name="register-and-unregister-vspackages"></a>注册和注销 Vspackage
 使用特性来注册 VSPackage，但
@@ -38,13 +39,13 @@ public sealed class BasicPackage : Package
 ```
 
 ## <a name="unregister-an-extension"></a>注销扩展
- 如果你已经尝试过大量不同的 Vspackage，并想要将它们从实验实例中删除，则可以直接运行 **Reset** 命令。 在计算机的 "开始" 页上查找 **"重置 Visual Studio 实验实例** "，或从命令行运行以下命令：
+ 如果你已经尝试过大量不同的 Vspackage，并想要将它们从实验实例中删除，则可以直接运行 **Reset** 命令。 在计算机的 "开始" 页上查找 **"重置 Visual Studio 实验实例**"，或从命令行运行以下命令：
 
 ```cmd
 <location of Visual Studio 2015 install>\"Microsoft Visual Studio 14.0\VSSDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe" /Reset /VSInstance=14.0 /RootSuffix=Exp
 ```
 
- 如果要卸载已安装在 Visual Studio 开发实例上的扩展，请依次单击 "工具" "   >  **扩展和更新**" 和 "**卸载**"。
+ 如果要卸载在 Visual Studio 的开发实例上安装的扩展，请依次  >  单击 "工具" "**扩展和更新**" 和 "**卸载**"。
 
  如果出于某种原因，这两种方法都不会在卸载扩展时成功完成，您可以从命令行中注销 VSPackage 程序集，如下所示：
 
@@ -123,5 +124,5 @@ public override void Unregister(RegistrationContext context)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [VSPackages](../extensibility/internals/vspackages.md)
