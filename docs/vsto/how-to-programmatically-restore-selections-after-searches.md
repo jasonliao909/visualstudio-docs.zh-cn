@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2a9f804e218ec9dfa0e0550501dec0c1aa8388ff
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 57f71cad1335c29f4e92bb760de251f6100f51a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824006"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026169"
 ---
 # <a name="how-to-programmatically-restore-selections-after-searches"></a>如何：以编程方式在搜索后还原选定内容
   如果查找并替换文档中的文本，则可能需要在搜索完成后还原用户的原始选择。

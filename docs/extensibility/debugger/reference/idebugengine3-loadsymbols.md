@@ -1,6 +1,6 @@
 ---
-description: 将 (加载到此调试引擎正在调试的所有模块的必要) 符号。
-title: IDebugEngine3：： LoadSymbols |Microsoft Docs
+description: 加载 (调试) 调试的所有模块的符号。
+title: IDebugEngine3：：LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121342240"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
-将 (加载到此调试引擎正在调试的所有模块的必要) 符号。
+加载 (调试) 调试的所有模块的符号。
 
 ## <a name="syntax"></a>语法
 
@@ -41,11 +41,11 @@ int LoadSymbols();
  无。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 这会为此调试引擎所引用的所有模块加载调试符号。 仅在未加载符号时才加载它们。 在通过调用 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)设置的路径上搜索符号。
+ 这会加载此调试引擎引用的所有模块的调试符号。 只有在尚未加载符号时，才加载符号。 通过调用 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)在设置的路径上搜索符号。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

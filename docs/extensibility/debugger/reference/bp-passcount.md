@@ -51,7 +51,7 @@ public struct BP_PASSCOUNT {
 指定断 [点BP_PASSCOUNT_STYLE](../../../extensibility/debugger/reference/bp-passcount-style.md) 的样式的枚举中的值。
 
 ## <a name="remarks"></a>备注
-此结构是 BP_REQUEST_INFO[的成员。](../../../extensibility/debugger/reference/bp-request-info.md)
+此结构是该 [结构BP_REQUEST_INFO成员](../../../extensibility/debugger/reference/bp-request-info.md) 。
 
 此结构也作为参数传递给[SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md) 和[SetPassCount](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-setpasscount.md) 方法。
 
@@ -62,7 +62,7 @@ public struct BP_PASSCOUNT {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)
 - [SetPassCount](../../../extensibility/debugger/reference/idebugboundbreakpoint2-setpasscount.md)

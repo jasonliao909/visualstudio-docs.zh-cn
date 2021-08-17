@@ -11,17 +11,18 @@ ms.assetid: 2be92bea-8133-412b-9015-1833baf16e1b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a333c112db08935896b40e41389284436d7ec6a7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3fa3e81b1151f722c9bc6b6b05da0da213f8a95c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059218"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127553"
 ---
 # <a name="gethostname_type"></a>GETHOSTNAME_TYPE
 指定主机名的类型。
@@ -51,14 +52,14 @@ public enum enum_GETHOSTNAME_TYPE {
 指定主机的文件名。
 
 ## <a name="remarks"></a>备注
-这些值作为参数传递给 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法以检索不同格式的主机名。
+这些值作为参数传递给 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法，以检索不同格式的主机名。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -46,5 +46,5 @@ int CanPersistPorts();
 ## <a name="remarks"></a>备注
  如果端口供应商可以持久保存端口，则应在销毁端口时执行此操作，并在再次实例化后重新加载它们。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

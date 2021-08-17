@@ -46,13 +46,3 @@
           href: docker-compose-properties.md
         - name: 启动设置
           href: container-launch-settings.md
-- name: 通过 Kubernetes 进行开发
-  items:
-    - name: Kubernetes 桥接
-      href: bridge-to-kubernetes.md
-    - name: Kubernetes 桥接的工作原理
-      href: overview-bridge-to-kubernetes.md
-    - name: 配置 Kubernetes 桥接
-      href: configure-bridge-to-kubernetes.md
-    - name: 将 Azure AD 托管标识与 Kubernetes 桥接结合使用
-      href: managed-identity.md

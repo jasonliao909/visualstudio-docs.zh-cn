@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5ff36a48eb4982b4fcd0fb882ba9f6decc64f95303693b5be5dd0e61f5d424b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d389e4f3e2b8bdf4348508760b6894c0eeaf1ec7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267775"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026000"
 ---
 # <a name="how-to-update-a-data-source-with-data-from-a-host-control"></a>如何：使用来自主机控件的数据更新数据源
   可以将宿主控件绑定到数据源，然后使用在此控件中对数据所做的更改来更新该数据源。 此过程包括以下两个主要步骤：
@@ -33,7 +33,7 @@ ms.locfileid: "121267775"
 
 2. 使用内存中数据源中的已更改数据更新数据库。 此步骤仅适用于数据源连接到后端数据库（例如 SQL Server 或 Microsoft Office Access 数据库）的情况。
 
-   有关主机控件和数据绑定的更多信息，请参阅主机[项](../vsto/host-items-and-host-controls-overview.md)和主机控件概述和将数据绑定到 Office[解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
+   有关主机控件和数据绑定的更多信息，请参阅主机[项](../vsto/host-items-and-host-controls-overview.md)和主机控件概述和将数据绑定到解决方案中的Office[控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
    [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -116,7 +116,7 @@ ms.locfileid: "121267775"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreDataExcelCS/Sheet1.cs" id="Snippet21":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreDataExcelVB/Sheet1.vb" id="Snippet21":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 - [使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)

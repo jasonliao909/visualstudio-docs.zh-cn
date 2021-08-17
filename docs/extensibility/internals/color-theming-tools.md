@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f94c777382ee0b045dafde89be7ac873e57d11dbff286b8845d625d8086a2c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: feffecd14e829bbc4f93f4091e2d190a318a1259
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359645"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028990"
 ---
 # <a name="color-theme-tools"></a>颜色主题工具
 Visual Studio SDK 提供多种工具来帮助你创建和管理颜色主题。

@@ -1,6 +1,6 @@
 ---
 title: 向依赖项关系图添加自定义体系结构验证
-description: 提供有关如何将自定义体系结构验证添加到依赖项关系图的信息。
+description: 提供有关如何向依赖项关系图添加自定义体系结构验证的信息。
 ms.date: 11/04/2016
 ms.topic: how-to
 titleSuffix: ''
@@ -13,21 +13,21 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 4cf79cd6234b66f60c8b3487a0dcaed0bcd57fba3937269657b34e1ce40856ef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c917ecacdfbe95965ae7a571b251e89c62c23eda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121443953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069355"
 ---
 # <a name="add-custom-architecture-validation-to-dependency-diagrams"></a>向依赖项关系图添加自定义体系结构验证
 
-在Visual Studio中，用户可以针对层模型验证项目中的源代码，以便他们可以验证源代码是否符合依赖项关系图上的依赖项。 有标准的验证算法，但你可以定义自己的验证扩展。
+在 Visual Studio 中，用户可以对照层模型验证项目中的源代码，以便他们可以验证源代码是否符合依赖关系图上的依赖关系。 有标准的验证算法，但你可以定义自己的验证扩展。
 
-当用户在依赖项关系图上选择"验证体系结构"命令时，将调用标准验证方法，后跟已安装的任何验证扩展。
+当用户在依赖关系图上选择 " **验证体系结构** " 命令时，将调用标准验证方法，然后调用已安装的任何验证扩展。
 
 > [!NOTE]
-> 在依赖项关系图中，验证的主要目的是将关系图与解决方案其他部分中的程序代码进行比较。
+> 在依赖项关系图中，验证的主要目的是将关系图与解决方案中其他部分的程序代码进行比较。
 
 你可以将层验证扩展打包到 Visual Studio 集成扩展 (VSIX) 中，以便将其分发给其他 Visual Studio 用户。 你可以通过其自身将你的验证程序放入 VSIX 中，也可以作为其他扩展在同一 VSIX 中组合使用。 应在其自身的 Visual Studio 项目中编写验证程序的代码，而不是在与其他扩展相同的项目中编写。
 
@@ -44,7 +44,7 @@ ms.locfileid: "121443953"
 
 ### <a name="to-define-an-extension-by-using-a-project-template"></a>若要使用项目模板定义扩展
 
-1. 创建新的层 **设计器验证扩展** 项目。
+1. 创建新的 **层设计器验证扩展** 项目。
 
     该模板将创建包含一个小型示例的项目。
 
@@ -52,7 +52,7 @@ ms.locfileid: "121443953"
    > 若要使模板正常工作：
    >
    > - 编辑对 `LogValidationError` 的调用，以删除可选参数 `errorSourceNodes` 和 `errorTargetNodes`。
-   > - 如果使用自定义属性，请应用将自定义属性添加到 [依赖项关系图 中提到的更新](../modeling/add-custom-properties-to-layer-diagrams.md)。
+   > - 如果使用自定义属性，请将 " [将自定义属性添加到依赖关系图](../modeling/add-custom-properties-to-layer-diagrams.md)" 中所述的更新。
 
 2. 编辑代码以定义验证。 有关详细信息，请参阅 [验证编程](#programming)。
 
@@ -63,13 +63,13 @@ ms.locfileid: "121443953"
 
 ::: moniker range="vs-2017"
 
-4. 若要在主实例或另一Visual Studio安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择" **工具"菜单上的** "扩展 **和更新** "。
+4. 若要在 Visual Studio 的主实例中或在另一台计算机上安装扩展，请在 *bin* 目录中找到 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请在 "**工具**" 菜单上选择 "**扩展和更新**"。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-4. 若要在主实例或另一Visual Studio安装扩展，请查找 *bin* 目录中的 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 **"扩展"菜单上的** " **管理扩展** "。
+4. 若要在 Visual Studio 的主实例中或在另一台计算机上安装扩展，请在 *bin* 目录中找到 *.vsix* 文件。 将此文件复制到想在其上安装它的计算机，然后双击它。 若要卸载它，请选择 "**扩展**" 菜单上的 "**管理扩展**"。
 
 ::: moniker-end
 
@@ -81,9 +81,9 @@ ms.locfileid: "121443953"
 
 1. 创建新的“类库”项目。 此项目将包含层验证类。
 
-2. 在解决方案中查找 **Project VSIX** 应用。 VSIX 项目包含名为 **source.extension.vsixmanifest** 的文件。
+2. 在解决方案中查找或创建 **VSIX Project** 。 VSIX 项目包含名为 **source.extension.vsixmanifest** 的文件。
 
-3. 在 **解决方案资源管理器** 中，在 VSIX 项目的右键单击菜单上，**选择"设置为** 启动Project"。
+3. 在 **解决方案资源管理器** 中，在 VSIX 项目的右键单击菜单上，选择 "**设置为启动 Project**"。
 
 4. 在 **source.extension.vsixmanifest** 中的“资产” 下，将层验证项目添加为 MEF 组件：
 
@@ -91,7 +91,7 @@ ms.locfileid: "121443953"
 
     2. 在“添加新资产”  对话框中，进行如下设置：
 
-         **类型**  = **Microsoft.VisualStudio.MefComponent**
+         **类型**  = **VisualStudio. microsoft.visualstudio.mefcomponent**
 
          **源**  = **当前解决方案中的项目**
 
@@ -103,7 +103,7 @@ ms.locfileid: "121443953"
 
     2. 在“添加新资产”  对话框中，进行如下设置：
 
-         **类型**  = **Microsoft.VisualStudio.ArchitectureTools.Layer.Validator**。 这并不是下拉列表中的选项。 必须从键盘输入。
+         **类型**  = **VisualStudio. microsoft.visualstudio.architecturetools.layer.validator**。 这并不是下拉列表中的选项。 必须从键盘输入。
 
          **源**  = **当前解决方案中的项目**
 
@@ -127,7 +127,7 @@ ms.locfileid: "121443953"
     > [!NOTE]
     > 将仅在特定情况下调用你的方法，且断点将不会自动工作。 有关详细信息，请参阅 [调试层验证](#debugging)。
 
-9. 若要在 VSIX 的主实例或另一Visual Studio安装 VSIX，请查找 VSIX 项目的 **bin** 目录中的 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
+9. 若要在 Visual Studio 的主实例中或在另一台计算机上安装 vsix，请在 vsix 项目的 **bin** 目录中找到 **.vsix** 文件。 将此文件复制到想在其上安装 VSIX 的计算机。 在 Windows 资源管理器中双击该 VSIX 文件。
 
 ## <a name="programming-validation"></a><a name="programming"></a> 验证编程
 
@@ -159,7 +159,7 @@ ms.locfileid: "121443953"
 
 用户调用“验证体系结构”  菜单命令时，层运行时系统将分析层及其项目以生成图形。 图形包含四个部分：
 
-- 图形中Visual Studio节点和链接的表层解决方案的层模型。
+- 表示为图形中的节点和链接的 Visual Studio 解决方案的层模型。
 
 - 代码、项目项、解决方案中定义的表示为节点的其他项目，以及表示由分析过程发现的依赖项的链接。
 
@@ -170,7 +170,7 @@ ms.locfileid: "121443953"
 构造图形后，将调用标准验证方法。 完成此操作后，将以未指定的顺序调用已安装的任何扩展验证方法。 该图形会传递给每个 `ValidateArchitecture` 方法，以便扫描图形并报告找到的任何错误。
 
 > [!NOTE]
-> 这与可在域特定语言中使用的验证过程不同。
+> 这不同于域特定语言中可使用的验证过程。
 
 验证方法不应更改正在验证的层模型或代码。
 
@@ -291,6 +291,6 @@ namespace Validator3
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展依赖项关系图](../modeling/extend-layer-diagrams.md)

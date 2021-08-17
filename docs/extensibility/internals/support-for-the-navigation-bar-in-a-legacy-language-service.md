@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d858d698339a5598765daf151af745ce8e2414607f791a0b0e1c7ac121c53832
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 497fd019b0da6beac7776af6926aa24d677813f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432028"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069632"
 ---
 # <a name="support-for-the-navigation-bar-in-a-legacy-language-service"></a>旧版语言服务中的导航栏支持
 编辑器视图顶部的导航栏显示文件中的类型和成员。 类型显示在左侧的下拉框中，成员显示在右侧下拉框中。 当用户选择某一类型时，插入符号会置于该类型的第一行。 当用户选择某个成员时，插入符号会被放置在该成员的定义上。 下拉框会进行更新，以反映插入符号的当前位置。

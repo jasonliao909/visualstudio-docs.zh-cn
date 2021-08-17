@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fc808765dc4691ea35c8d3fdf91f4af04b4e8efd9221e8b02a98449ab63751d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b00dba4ef6204b37fe5641da02038236e54d7dd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424328"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026455"
 ---
 # <a name="get-started-programming-document-level-customizations-for-excel"></a>开始 Excel 的文档级自定义项编程
   如果只是开始使用 Visual Studio 为 Microsoft Office Excel 创建文档级自定义项，则需要了解以下内容。

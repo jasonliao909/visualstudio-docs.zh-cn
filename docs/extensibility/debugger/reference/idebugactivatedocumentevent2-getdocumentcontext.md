@@ -1,6 +1,6 @@
 ---
-description: 获取描述文档中由调试包激活的位置的文档上下文。
-title: IDebugActivateDocumentEvent2：： GetDocumentContext |Microsoft Docs
+description: 获取描述文档中要由调试包激活的位置的文档上下文。
+title: IDebugActivateDocumentEvent2：：GetDocumentContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121342643"
 ---
 # <a name="idebugactivatedocumentevent2getdocumentcontext"></a>IDebugActivateDocumentEvent2::GetDocumentContext
-获取描述文档中由调试包激活的位置的文档上下文。
+获取描述文档中要由调试包激活的位置的文档上下文。
 
 ## <a name="syntax"></a>语法
 
@@ -44,14 +44,14 @@ int GetDocumentContext (
 
 ## <a name="parameters"></a>参数
 `ppDocContext`\
-弄返回一个 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象，该对象表示源文件文档中的位置。
+[out]返回一 [个 IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象，该对象表示源文件文档中的位置。
 
 ## <a name="remarks"></a>备注
- 例如，此位置可用于显示插入符号。
+ 例如，此位置可用于显示 caret。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

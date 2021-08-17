@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 0f8be1ffcfa63d2b4b5ac8dfe9f8b7d4e793a00a6d5dfa0d3f68d4a4c3a58596
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf2bab7f5e1d859ba4e706614ac6f7ac11852860
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067095"
 ---
 # <a name="one-or-more-selected-database-objects-return-a-schema-that-does-not-match-the-schema-of-the-target-class"></a>一个或多个所选数据库对象返回与目标类的架构不匹配的架构
 
@@ -28,8 +28,8 @@ ms.locfileid: "121347046"
 
 1. 单击“确定”关闭对话框。
 
-2. 选择一个数据库对象，该对象返回与目标类的架构 (在 **O/R** 设计器中将数据库对象放到的类) 。
+2. 选择一个数据库对象，该对象返回的数据与目标类的架构匹配， (要将数据库对象放置到 **O/R 设计器**) 中的类。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

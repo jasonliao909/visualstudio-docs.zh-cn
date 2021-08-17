@@ -63,7 +63,7 @@ IDebugProcess3 : IDebugProcess2
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

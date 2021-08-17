@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 34ce07f873e2dd23f2c2ae296b482e3b7049651c49757dedacf22508d180fc53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fb0163c9c28f1ceb51a2685b92d081b3012757b1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121336702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028691"
 ---
 # <a name="register-a-tool-window"></a>注册工具窗口
 您可以使用和注册您的工具窗口 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 。

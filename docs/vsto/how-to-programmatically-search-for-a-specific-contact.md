@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e163bd172b16841103641befa7e08a87d5bd0cde
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 3fca6be21c03f5de2036e2b38ed9ecbb676f946f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026104"
 ---
 # <a name="how-to-programmatically-search-for-a-specific-contact"></a>如何：以编程方式搜索特定联系人
   此示例按姓氏和名称在 Outlook 联系人文件夹中搜索特定联系人。 该示例假定联系人文件夹中存在名为 **John Evans** 的联系人。
@@ -31,6 +32,6 @@ ms.locfileid: "107828964"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_outlook_rl_searchforcontact/thisaddin.cs" id="Snippet1":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_outlook_rl_searchforcontact/thisaddin.vb" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)

@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: ae16771eb916bc8bda81f84b7f3bd2dc29cf9eb62c3b67e9894fc8a458c38d56
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d16ed4e60d9f0d4b65d8b983b7a57d081ffe0ac1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104918"
 ---
 # <a name="create-bootstrapper-packages"></a>创建引导程序包
 安装程序是可配置为检测并安装可再发行组件（如 Windows Installer (.msi) 文件和可执行程序）的一般安装程序。 安装程序也称为“引导程序”。 它通过一组 XML 清单进行编程，这些清单指定用于管理组件安装的元数据。  出现在 "**系统必备**" ClickOnce 对话框中的每个可再发行组件（或必备组件）都是一个引导程序包。 一个引导程序包是一组目录和文件，其中包含用于说明系统必备组件的安装方式的清单文件。
@@ -118,7 +118,7 @@ CustomBootstrapperPackage
 </FileList>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：安装 ClickOnce 应用程序的先决条件](../deployment/how-to-install-prerequisites-with-a-clickonce-application.md)
 - ["必备组件" 对话框](../ide/reference/prerequisites-dialog-box.md)
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

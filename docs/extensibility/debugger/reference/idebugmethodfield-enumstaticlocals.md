@@ -1,6 +1,6 @@
 ---
-description: 创建方法的静态局部变量的枚举数。
-title: IDebugMethodField：： EnumStaticLocals |Microsoft Docs
+description: 为 方法的静态局部变量创建枚举器。
+title: IDebugMethodField：：EnumStaticLocals |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121417049"
 ---
 # <a name="idebugmethodfieldenumstaticlocals"></a>IDebugMethodField::EnumStaticLocals
-创建方法的静态局部变量的枚举数。
+为 方法的静态局部变量创建枚举器。
 
 ## <a name="syntax"></a>语法
 
@@ -43,15 +43,15 @@ int EnumStaticLocals(
 
 ## <a name="parameters"></a>参数
 `ppLocals`\
-弄返回一个 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象，该对象表示静态局部变量的列表。 如果没有静态局部变量，则返回 null 值。
+[out]返回表示 [静态局部变量列表的 IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象。 如果没有静态局部变量，则返回 null 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 S_OK 或返回 S_FALSE （如果没有静态局部变量）。 否则，返回错误代码。
+ 如果成功，则返回 S_OK，如果没有静态局部S_FALSE，则返回一个 。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 每个元素都是一个 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象，表示不同类型的静态局部变量。 对每个对象调用 [GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 方法，以确定该对象所表示的静态局部变量的类型。
+ 每个元素都是表示不同类型的静态局部变量的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。 在每个 [对象上调用 GetKind](../../../extensibility/debugger/reference/idebugfield-getkind.md) 方法，以准确确定对象表示的静态本地类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

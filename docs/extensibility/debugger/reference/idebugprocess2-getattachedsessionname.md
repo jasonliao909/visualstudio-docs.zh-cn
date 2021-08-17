@@ -44,5 +44,5 @@ HRESULT GetAttachedSessionName(
 ## <a name="return-value"></a>返回值
  此方法应总是返回 `E_NOTIMPL` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
