@@ -1,6 +1,6 @@
 ---
 title: 添加新数据源
-description: 在 Visual Studio 中添加新的数据源。 数据源是一个 .NET 对象，它连接到数据存储并使数据可用于 .NET 应用程序。
+description: 在 Visual Studio 中添加新Visual Studio。 数据源是一个 .NET 对象，它连接到数据存储，使数据可供 .NET 应用程序使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
@@ -13,83 +13,84 @@ ms.assetid: ed28c625-bb89-4037-bfde-cfa435d182a2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a377acba7b8c64503e5e5f821b5f3f833a8d73b2
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: a0d93a2c80afe7863490f0af5578684d699a5980
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067174"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
-> 本文中所述的功能适用于 .NET Framework Windows 窗体和 WPF 开发。 对于 WPF 和 Windows 窗体，.NET Core 开发不支持功能。
+> 本文中所述的功能适用于 .NET Framework Windows 窗体和 WPF 开发。 WPF 和 WPF 窗体不支持 .NET Core Windows功能。
 :::moniker-end
 
-在 Visual Studio 中的 .NET data tools 的上下文中，术语 " *数据源* " 是指连接到数据存储的 .net 对象，并使数据可用于 .net 应用程序。 当您在 " **数据源** " 窗口中拖放数据库对象时，Visual Studio 设计器可以使用数据源的输出生成将数据绑定到窗体的样板代码。 这种类型的数据源可以是：
+在 Visual Studio .NET 数据工具的上下文中，术语"数据源"是指连接到数据存储并可供 .NET 应用程序使用数据的 .NET 对象。 在Visual Studio"数据源"窗口中拖放数据库对象时，设计器可以使用数据源的输出来生成将数据绑定到窗体的样 **板代码。** 此类数据源可以是：
 
-- 与某种数据库相关联的实体框架模型中的类。
+- 与某种实体框架关联的数据库模型中的类。
 
-- 与某种数据库相关联的数据集。
+- 与某种数据库关联的数据集。
 
-- 一个类，表示网络服务，如 Windows Communication Foundation (WCF) 数据服务或 REST 服务。
+- 表示网络服务的类，如 Windows Communication Foundation (WCF) 或 REST 服务。
 
-- 表示 SharePoint 服务的类。
+- 一个表示服务SharePoint类。
 
 - 解决方案中的类或集合。
 
 > [!NOTE]
-> 如果未使用数据绑定功能、数据集、实体框架、LINQ to SQL、WCF 或 SharePoint，则 "数据源" 的概念不适用。 只需使用 SQLCommand 对象直接连接到数据库，并直接与数据库进行通信。
+> 如果不使用数据绑定功能、数据集、实体框架、LINQ to SQL、WCF 或 SharePoint，则"数据源"的概念不适用。 只需使用 SQLCommand 对象直接连接到数据库，并直接与数据库通信。
 
-您可以使用 Windows 窗体或 Windows Presentation Foundation 应用程序中的 " **数据源配置向导** " 来创建和编辑数据源。 对于实体框架，请先创建实体类，然后选择 "项目" "添加新数据源"，然后选择 "**项目**" "  >  **添加新数据源**" (将在本文的后面部分中详细介绍) 。
+通过使用数据源配置向导在窗体或窗体应用程序中创建Windows编辑Windows Presentation Foundation数据源。 对于实体框架，请首先创建实体类，然后通过选择"Project添加新数据源" (在本文稍后部分详细介绍  >  ) 。
 
 ![数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)
 
 ## <a name="data-sources-window"></a>“数据源”窗口
 
-创建数据源后，它将显示在 " **数据源** " 工具窗口中。
+创建数据源后，该数据源将显示在" **数据源"** 工具窗口中。
 
 > [!TIP]
-> 若要打开 "**数据源**" 窗口，请确保您的项目已打开，然后按 **Shift** + **Alt** + **D** 或选择 "**查看**  >  **其他 Windows**  >  **数据源**"。
+> 若要打开 **"数据源"** 窗口，请确保项目已打开，然后按 **Shift** Alt D 或选择"查看其他Windows +  +   >    >  **数据源"。**
 
-您可以将数据源从 " **数据源** " 窗口拖到窗体设计图面或控件上。 这将导致生成用于显示来自数据存储的数据的样板代码。
+可以将数据源从"数据源"窗口拖动到窗体设计图面或控件上。 这将导致生成样本代码，用于显示数据存储的数据。
 
-下图显示了已拖放到 Windows 窗体上的数据集。 如果在应用程序上选择 " **F5** "，则基础数据库中的数据将显示在窗体的控件中。
+下图显示了一个数据集，该数据集已Windows窗体。 如果在应用程序上选择 **F5，** 则基础数据库中的数据将显示在窗体的控件中。
 
 ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 ## <a name="data-source-for-a-database-or-a-database-file"></a>数据库或数据库文件的数据源
 
-您可以创建数据集或实体框架模型，用作数据库或数据库文件的数据源。
+可以创建数据集或实体框架模型，用作数据库或数据库文件的数据源。
 
 ### <a name="dataset"></a>数据集
 
-若要创建数据集作为数据源，请通过选择 "**项目**" "添加新数据源" 运行 **数据源配置向导**  >  。 选择 **数据库** 数据源类型，然后按照提示指定新的或现有的数据库连接或数据库文件。
+若要将数据集创建为数据源，请通过选择"添加新数据源"Project  >  **运行数据源配置向导**。 选择 **"数据库** 数据源类型"，然后按照提示指定新的或现有的数据库连接或数据库文件。
 
 ### <a name="entity-classes"></a>实体类
 
 若要创建实体框架模型作为数据源：
 
-1. 运行 **实体数据模型向导** 创建实体类。 选择 "**项目**" "  >  **添加新项**"  >  **ADO.NET 实体数据模型**。
+1. 运行 **实体数据模型向导** 以创建实体类。 选择  >  **Project"添加新项**  >  **ADO.NET 实体数据模型"。**
 
    ![新建实体框架模型项目项](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
-1. 选择要用来生成模型的方法。
+1. 选择要生成模型的方法。
 
    ![实体数据模型向导](../data-tools/media/raddata-entity-data-model-wizard.png)
 
-1. 添加模型作为数据源。 当您选择 "**对象**" 类别时，生成的类将出现在 "**数据源配置向导**" 中。
+1. 将模型添加为数据源。 选择"对象"类别时 **，** 生成的类将显示在数据源配置 **向导** 中。
 
-   ![具有实体类的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
+   ![包含实体类的数据源配置向导](../data-tools/media/raddata-data-source-configuration-wizard-with-entity-classes.png)
 
 ## <a name="data-source-for-a-service"></a>服务的数据源
 
-若要从服务创建数据源，请运行 " **数据源配置向导** " 并选择 " **服务** 数据源类型"。 这只是 **添加服务引用** 对话框的快捷方式，您还可以通过右键单击 **解决方案资源管理器** 中的项目并选择 " **添加服务引用**" 来访问该对话框。
+若要从服务创建数据源，请运行 **数据源配置向导并选择****"服务** 数据源类型"。 这只是"创建添加服务引用对话框的快捷方式，也可通过右键单击 解决方案资源管理器 并选择"添加服务引用 **"来** 访问 **该对话框**。
 
-当您从服务创建数据源时，Visual Studio 会向您的项目中添加一个服务引用。 Visual Studio 还会创建与服务返回的对象相对应的代理对象。 例如，返回数据集的服务在项目中表示为数据集;返回特定类型的服务在项目中表示为返回的类型。
+从服务创建数据源时，Visual Studio向项目添加服务引用。 Visual Studio还会创建与服务返回的对象相对应的代理对象。 例如，返回数据集的服务在项目中表示为数据集;返回特定类型的服务在项目中表示为返回的类型。
 
 可以从以下类型的服务创建数据源：
 
@@ -100,25 +101,25 @@ ms.locfileid: "112308046"
 - Web 服务
 
     > [!NOTE]
-    > " **数据源** " 窗口中显示的项取决于服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果服务返回非类型化数据集，则在完成该向导时，" **数据源** " 窗口中将不会显示任何项。 这是因为非类型化数据集不提供架构，因此该向导没有足够的信息来创建数据源。
+    > "数据源"窗口中 **显示** 的项目取决于服务返回的数据。 某些服务可能没有为“数据源配置”向导创建可绑定的对象提供足够的信息。 例如，如果服务返回非类型化数据集，则完成向导后，"数据源"窗口中不会显示任何项。 这是因为非类型化数据集不提供架构，因此向导没有足够的信息来创建数据源。
 
 ## <a name="data-source-for-an-object"></a>对象的数据源
 
-您可以通过运行 " **数据源配置向导** "，然后选择 **对象** 数据源类型，从公开一个或多个公共属性的任何对象创建数据源。 对象的所有公共属性都显示在 " **数据源** " 窗口中。 如果使用实体框架并且生成了模型，则可以在此查找作为应用程序的数据源的实体类。
+可以通过运行"数据源配置向导"，然后选择"对象数据源类型"，从公开一个或多个公共属性的任何 **对象** 创建数据源。 对象的所有公共属性都显示在"数据源 **"窗口中** 。 如果使用 实体框架并生成了模型，则在这里可以找到作为应用程序的数据源的实体类。
 
-在 " **选择数据对象** " 页上，展开树视图中的节点以查找要绑定到的对象。 树视图包含您的项目的节点以及您的项目所引用的程序集和其他项目。
+在 **"选择数据对象"** 页上，展开树视图中的节点以找到要绑定到的对象。 树视图包含项目的节点，以及项目引用的程序集和其他项目的节点。
 
-如果要绑定到树视图中未显示的程序集或项目中的对象，请单击 " **添加引用** "，并使用 " **添加引用" 对话框** 添加对程序集或项目的引用。 添加引用后，程序集或项目将添加到树视图中。
-
-> [!NOTE]
-> 在树视图中显示对象之前，你可能需要生成包含对象的项目。
+如果要绑定到未显示在树视图中的程序集或项目中的对象，请单击"添加引用"并使用"添加引用"对话框添加对程序集或项目的引用。 添加引用后，程序集或项目将添加到树视图中。
 
 > [!NOTE]
-> 若要支持拖放数据绑定，实现 <xref:System.ComponentModel.ITypedList> 或接口的对象 <xref:System.ComponentModel.IListSource> 必须具有默认构造函数。 否则，Visual Studio 无法实例化数据源对象，并在将项拖动到设计图面时显示错误。
+> 在树视图中显示对象之前，可能需要生成包含对象的项目。
 
-## <a name="data-source-for-a-sharepoint-list"></a>SharePoint 列表的数据源
+> [!NOTE]
+> 若要支持拖放数据绑定，实现 或 接口 <xref:System.ComponentModel.ITypedList> <xref:System.ComponentModel.IListSource> 的对象必须具有默认构造函数。 否则，Visual Studio实例化数据源对象，并将项拖动到设计图面时显示错误。
 
-通过运行 " **数据源配置向导** " 并选择 " **sharepoint** 数据源类型"，可以从 SharePoint 列表创建数据源。 SharePoint 通过 WCF Data Services 公开数据，因此创建 SharePoint 数据源与从服务创建数据源相同。 在 "**数据源配置向导**" 中选择 **SharePoint** 项将打开 "**添加服务引用**" 对话框，在该对话框中，您可以通过指向 sharepoint 服务器来连接到 sharepoint 数据服务。 这需要 SharePoint SDK。
+## <a name="data-source-for-a-sharepoint-list"></a>数据源列表SharePoint数据源
+
+可以通过运行数据源配置向导并选择SharePoint数据源类型，从 **SharePoint创建数据源**。  SharePoint通过 WCF Data Services 公开数据，因此SharePoint数据源与从服务创建数据源相同。 在 **"SharePoint****配置** 向导"中选择"添加服务引用"项会打开"添加服务引用"对话框，你可在这里通过指向 SharePoint 服务器连接到 SharePoint 数据服务。  这需要 SharePoint SDK。
 
 ## <a name="see-also"></a>请参阅
 

@@ -10,14 +10,15 @@ ms.assetid: 08e632ed-0724-4fb4-9df1-f8d443eaf0ac
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 3f37c862768dd0d72ba66d435478faed9bee8ef3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d4fe0b77c91b36440cbb760b3e192af453c4f58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025402"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活动设计器
 
@@ -39,11 +40,11 @@ ms.locfileid: "99931482"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.Activities.Statements.TerminateWorkflow> 活动的友好名称。 默认值为 TerminateWorkflow。 虽然显示名称不是绝对必需的，但最好使用显示名称。|
-|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|False|终止工作流时要引发的异常。 此属性在属性网格中设置。|
-|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|False|解释终止工作流的原因。 此属性在属性网格中设置。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.TerminateWorkflow> 活动的友好名称。 默认值为 TerminateWorkflow。 虽然显示名称不是绝对必需的，但最好使用显示名称。|
+|<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|错误|终止工作流时要引发的异常。 此属性在属性网格中设置。|
+|<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|错误|解释终止工作流的原因。 此属性在属性网格中设置。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [executionContext](../workflow-designer/runtime-activity-designers.md)
 - [保留](../workflow-designer/persist-activity-designer.md)

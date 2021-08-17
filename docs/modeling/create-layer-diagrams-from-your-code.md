@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b07af93386d5062f28f19f01ce150fba8ec45dd2
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: dbb9cf7f9c3d024a28c0726ff54e0f0a5a981cd3d2242527706a5716de996a02
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389652"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231712"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>从代码创建依赖项关系图
 
@@ -27,7 +28,7 @@ ms.locfileid: "112389652"
 
 ![创建依赖项关系图](../modeling/media/layerdiagramvisualizecode.png)
 
-依赖项关系图使你能够将Visual Studio项组织到名为 层的逻辑抽象 *组中*。 你可以使用层来描述这些项目执行的主要任务或系统的主要组件。 每个层可包含描述更详细任务的其他层。 还可以指定层之间的预期 *或现有* 依赖关系。 这些依赖项（表示为箭头）显示哪些层可以使用或当前正在使用由其他层表示的功能。 若要维护代码的体系结构控制，请在关系图上显示预期的依赖项，然后对照关系图验证代码。
+依赖项关系图使你能够将解决方案Visual Studio组织到名为 层的逻辑抽象 *组中*。 你可以使用层来描述这些项目执行的主要任务或系统的主要组件。 每个层可包含描述更详细任务的其他层。 还可以指定层之间的预期 *或现有* 依赖关系。 这些依赖项（表示为箭头）显示哪些层可以使用或当前正在使用由其他层表示的功能。 若要维护代码的体系结构控制，请在关系图上显示预期的依赖项，然后对照关系图验证代码。
 
 [视频：实时验证你的体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)
 
@@ -43,7 +44,7 @@ ms.locfileid: "112389652"
 ### <a name="add-a-new-dependency-diagram-to-a-modeling-project"></a>将新的依赖项关系图添加到建模项目
 
 > [!NOTE]
-> 从 2019 版本 16.2 Visual Studio开始，支持 .NET Core 项目的依赖项关系图。
+> 自 2019 版本 16.2 起，Visual Studio支持 .NET Core 项目的依赖项关系图。
 
 1. 在"体系结构 **"** 菜单上，选择 **"新建依赖项关系图"。**
 
@@ -51,7 +52,7 @@ ms.locfileid: "112389652"
 
 3. 命名该关系图。
 
-4. 在 **"添加到建模项目"** 中，浏览到并选择解决方案中的现有建模项目。
+4. 在 **"添加到建模Project"** 中，浏览到并选择解决方案中的现有建模项目。
 
      -或-
 
@@ -72,7 +73,7 @@ ms.locfileid: "112389652"
 
 4. 使用"体系结构"菜单为解决方案创建新的 **依赖项** 关系图
 
-5. 选择代码图上的所有节点 (_Ctrl_  +  _A，_ 或在单击、拖动和释放之前按 _Shift_ 键来使用带区选择。
+5. 选择代码图上的所有节点 (_Ctrl_ A，或在单击、拖动和释放之前按 Shift 键来  +  使用带区选择。
 
 6. 将所选元素拖放或复制并粘贴到新的依赖项验证关系图。
 
@@ -87,9 +88,9 @@ ms.locfileid: "112389652"
 
  若要了解链接项是否支持验证，请打开层 **资源管理器** 并检查 **该项的"支持** 验证"属性。 请参阅 [管理指向项目 的链接](#Managing)。
 
-|**收件人**|**需要遵循的步骤**|
+|**To**|**需要遵循的步骤**|
 |-|-|
-|为单个项目创建一个层|<ol><li>将项从以下源拖动到依赖项关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[跨解决方案映射依赖项和使用](../modeling/map-dependencies-across-your-solutions.md)[代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图** 或 **对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要提示：**  将二进制文件拖动到依赖项关系图不会自动添加对建模项目的引用。 你必须将要验证的二进制文件手动添加到建模项目中。 **将二进制文件添加到建模项目中** <ol><li>在 **解决方案资源管理器** 中，打开建模项目的快捷菜单，然后选择"**添加现有项"。**</li><li>在"**添加现有项**"对话框中，浏览到二进制文件，选择它们，然后选择"确定 **"。**     二进制文件将显示在建模项目中。</li><li>在 **解决方案资源管理器** 中，选择已添加的二进制文件，然后按 **F4** 打开"属性 **"** 窗口。</li><li>在每个二进制文件上，将"**生成操作"** 属性设置为"**验证"。**</li></ol>|
+|为单个项目创建一个层|<ol><li>将项从以下源拖动到依赖项关系图上：<br /><br /> <ul><li>**解决方案资源管理器**<br /><br />         例如，您可以拖动文件或项目。</li><li>代码图<br /><br />         请参阅[跨解决方案映射依赖项和使用](../modeling/map-dependencies-across-your-solutions.md)[代码图调试应用程序](../modeling/use-code-maps-to-debug-your-applications.md)。</li><li>**类视图** 或 **对象浏览器**</li></ul><br />     层显示在关系图上，并链接到项目。</li><li>重命名层以反映关联代码或项目的作用。</li></ol> **重要提示：**  将二进制文件拖动到依赖项关系图不会自动添加对建模项目的引用。 你必须将要验证的二进制文件手动添加到建模项目中。 **将二进制文件添加到建模项目中** <ol><li>在 **解决方案资源管理器** 中，打开建模项目的快捷菜单，然后选择"添加 **现有项"。**</li><li>在"**添加现有项**"对话框中，浏览到二进制文件，选择它们，然后选择"确定 **"。**     二进制文件将显示在建模项目中。</li><li>在 **解决方案资源管理器** 中，选择添加的二进制文件，然后按 **F4** 打开"属性 **"** 窗口。</li><li>在每个二进制文件上，将"**生成操作"** 属性设置为"**验证"。**</li></ol>|
 |为所有选择的项目创建单个层|同时将所有项目拖动到依赖项关系图。<br /><br /> 一个层将出现在关系图上，并链接到所有这些项目。|
 |为每个所选的项目创建一个层|在同时 **将所有** 项目拖动到依赖项关系图时，按住 SHIFT 键。 **注意：**  如果使用 **SHIFT** 键选择一系列项，请在选择项目后释放该键。 将这些项目拖到关系图上时再次按住该键。 <br /><br /> 每个项目的层将出现在关系图上，并链接到该项目。|
 |向层中添加项目|将项目拖到层上。|
@@ -117,7 +118,7 @@ ms.locfileid: "112389652"
 
 2. 使用以下任务管理这些链接：
 
-|**收件人**|**在层资源管理器中**|
+|**To**|**在层资源管理器中**|
 |-|-|
 |删除层与项目之间的链接|打开项目链接的快捷菜单，然后选择"删除 **"。**|
 |将链接从一个层移到另一个层|将项目链接拖到关系图上的一个现有层。<br /><br /> - 或 -<br /><br /> 1.打开项目链接的快捷菜单，然后选择"剪切 **"。**<br />2.在依赖项关系图上，打开层的快捷菜单，然后选择"粘贴 **"。**|
@@ -138,7 +139,7 @@ ms.locfileid: "112389652"
 ## <a name="edit-layers-and-dependencies-to-show-the-intended-design"></a><a name="EditDependencies"></a> 编辑层和依赖项以显示预期设计
  若要描述计划对系统或预期体系结构所做的更改，请编辑依赖项关系图：
 
-|**收件人**|**执行这些步骤**|
+|**To**|**执行这些步骤**|
 |-|-|
 |更改或限制依赖项的方向|设置其 **Direction** 属性。|
 |创建新的依赖项|使用 **依赖关系****和双向依赖关系** 工具。<br /><br /> 若要绘制多个依赖关系，请双击该工具。 完成后，选择指针 **工具** 或按 **ESC** 键。|
@@ -158,7 +159,7 @@ ms.locfileid: "112389652"
 
 - [使用代码图分析查找潜在问题](../modeling/find-potential-problems-using-code-map-analyzers.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [体系结构和建模工具的版本支持](../modeling/what-s-new-for-design-in-visual-studio.md#edition-support-for-architecture-and-modeling-tools)
 - [视频：实时验证你的体系结构依赖项](https://sec.ch9.ms/sessions/69613110-c334-4f25-bb36-08e5a93456b5/170ValidateArchitectureDependenciesWithVisualStudio.mp4)

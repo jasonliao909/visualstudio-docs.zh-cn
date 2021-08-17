@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f0f5f71ddc3989a6aa3c3904d8f759c9d83a4bb7eb42587a39f7b23841fb1d4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d3df12a86aef556c450c9861fa98eb2659ac070a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029653"
 ---
 # <a name="idebugsymbolprovidergetlanguage"></a>IDebugSymbolProvider::GetLanguage
 此方法获取在调试地址编译代码所用的语言。
@@ -61,6 +61,6 @@ int GetLanguage(
 ## <a name="remarks"></a>备注
  调试引擎调用此方法来获取所需的信息，以便选择正确的表达式计算器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)

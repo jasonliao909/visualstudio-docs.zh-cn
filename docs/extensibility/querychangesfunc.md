@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e9a28e4f75187cce110280d471f0a6f830d52e96706654c91929b324da70f57d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3d0db2c6c8b42594135a49fb62421134966e0e22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028704"
 ---
 # <a name="querychangesfunc"></a>QUERYCHANGESFUNC
 这是 [SccQueryChanges](../extensibility/sccquerychanges-function.md) 操作用于枚举文件名集合并确定每个文件的状态的回调函数。
@@ -37,7 +37,7 @@ typedef BOOL (*QUERYCHANGESFUNC)(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>Parameters
  pvCallerData
 
 中 `pvCallerData` 调用方传递的参数 (IDE) 为 [SccQueryChanges](../extensibility/sccquerychanges-function.md)。 源代码管理插件不应假设此值的内容。
@@ -99,7 +99,7 @@ struct QUERYCHANGESDATA_W
 
  lpLatestName 此项的当前文件名。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccQueryChanges](../extensibility/sccquerychanges-function.md)
 - [错误代码](../extensibility/error-codes.md)

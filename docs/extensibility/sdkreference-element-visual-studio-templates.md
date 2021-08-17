@@ -1,5 +1,5 @@
 ---
-title: SDKReference 元素 (Visual Studio 模板) |Microsoft Docs
+title: SDKReference 元素 (Visual Studio模板) |Microsoft Docs
 description: 了解 SDKReference 元素及其如何指定项模板使用 SDK 引用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -62,8 +62,8 @@ ms.locfileid: "121431521"
 ...
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [References 元素（Visual Studio 模板）](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 元素（Visual Studio 模板）](../extensibility/reference-element-visual-studio-templates.md)
-- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)
+- [创建Project项模板](../ide/creating-project-and-item-templates.md)
 - [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)

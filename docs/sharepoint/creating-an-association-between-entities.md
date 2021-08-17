@@ -1,6 +1,6 @@
 ---
-title: 创建实体之间的关联 |Microsoft Docs
-description: 在业务数据连接 (BDC) 模型中创建实体之间的关联。 了解关联方法和关联类型。
+title: 创建实体之间的关联|Microsoft Docs
+description: 在业务数据连接和 BDC (模型中) 关联。 了解关联方法和关联类型。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,63 +21,64 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d40c4e5c5d61b9da3cdbdd3fe96f45c4a0cff929
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 46536fc9a0767cbd5ff6d1a682e5e8545b1329ff94139530af0e7167d0ecad6a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106213961"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121228930"
 ---
 # <a name="create-an-association-between-entities"></a>创建实体之间的关联
-  可以通过创建关联来定义业务数据连接中的实体之间的关系 (BDC) 模型。 Visual Studio 生成的方法为模型的使用者提供有关每个关联的信息。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。
+  可以通过创建关联，在 BDC (BDC) 中定义实体之间的关系。 Visual Studio生成方法，这些方法向模型的使用者提供有关每个关联的信息。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。
 
 ## <a name="create-an-association"></a>创建关联
- 通过在 Visual Studio **"工具箱**" 中选择 "**关联**" 控件，选择第一个实体 (称为源实体) ，然后选择名为目标实体)  (的第二个实体，创建关联。 您可以在 " **关联编辑器**" 中定义关联的详细信息。 有关详细信息，请参阅 [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)。
+ 通过选择"Visual Studio 工具箱 **"中的**"关联"控件，选择第一个 (称为源实体) 的实体，然后选择第二个实体 (称为目标实体) 。 可以在关联编辑器 中定义 **关联的详细信息**。 有关详细信息，请参阅 [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)。
 
 ## <a name="association-methods"></a>关联方法
- SharePoint 业务数据 web 部件等应用程序通过调用实体的服务类中的方法来使用关联。 您可以通过在 " **关联编辑器**" 中选择来向实体的服务类添加方法。
+ 业务数据SharePoint Web 部件等应用程序通过调用实体的服务类中的方法来使用关联。 通过在关联编辑器 中选择方法，可以将方法添加到实体 **的服务类**。
 
- 默认情况下，" **关联编辑器** " 向源实体和目标实体添加关联导航方法。 源实体中的关联导航方法使使用者能够检索目标实体的列表。 目标实体中的关联导航方法使使用者能够检索与目标实体相关的源实体。
+ 默认情况下，关联 **编辑器** 将关联导航方法添加到源和目标实体。 源实体中的关联导航方法使使用者能够检索目标实体的列表。 目标实体中的关联导航方法使使用者能够检索与目标实体相关的源实体。
 
- 您必须将代码添加到这些方法中的每个方法才能返回相应的信息。 你还可以添加其他类型的方法来支持更高级的方案。 有关上述每种方法的详细信息，请参阅 [支持的操作](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14))。
+ 必须将代码添加到其中每个方法，以返回相应的信息。 还可以添加其他类型的方法以支持更高级的方案。 有关这些方法中每个方法的信息，请参阅 [支持的操作](/previous-versions/office/developer/sharepoint-2010/ee557363(v=office.14))。
 
 ## <a name="types-of-associations"></a>关联类型
- 可以在 BDC 设计器中创建两种类型的关联：基于外键的关联和外部无键关联。
+ 可以在 BDC 设计器中创建两种类型的关联：基于外键的关联和外键无键关联。
 
 ### <a name="foreign-key-based-association"></a>基于外键的关联
- 可以通过将源实体中的标识符与目标实体中定义的类型描述符关联来创建基于外键的关联。 此关系使模型的使用者可以为其用户提供增强的 UI。 例如，在 Outlook 中允许用户创建可在下拉列表中显示客户的销售订单的窗体;或 SharePoint 中的销售订单列表，使用户能够打开客户的个人资料页。
+ 可以通过将源实体中的标识符与目标实体中定义的类型描述符关联来创建基于外键的关联。 此关系使模型的使用者能够为用户提供增强的 UI。 例如，Outlook窗体，使用户能够创建可在下拉列表中显示客户的销售订单;或中销售订单SharePoint，使用户能够为客户打开个人资料页。
 
- 若要创建基于外键的关联，请关联共享同一名称和类型的标识符和类型描述符。 例如，您可以在实体和实体之间创建基于外键的关联 `Contact` `SalesOrder` 。 实体在查找器的 `SalesOrder` `ContactID` 返回参数或特定 finder 方法的过程中返回类型描述符。 这两个类型说明符都显示在 " **关联编辑器**" 中。 若要在实体和实体之间创建基于外键的关系 `Contact` `SalesOrder` ，请选择 `ContactID` 其中每个字段旁边的标识符。
+ 若要创建基于外键的关联，请关联共享相同名称和类型的标识符和类型描述符。 例如，您可以在实体和实体之间创建基于外键 `Contact` 的 `SalesOrder` 关联。 `SalesOrder`实体将类型描述符作为 Finder 或特定 Finder 方法的返回参数的 `ContactID` 一部分返回。 这两个类型描述符都显示在关联 **编辑器 中**。 若要在实体和实体之间创建基于外键的关系 `Contact` `SalesOrder` ，请选择 `ContactID` 每个字段旁边的标识符。
 
- 将代码添加到源实体的关联导航器方法，该方法返回目标实体的集合。 下面的示例返回联系人的销售订单。
+ 将代码添加到返回目标实体集合的源实体的 Association Navigator 方法。 以下示例返回联系人的销售订单。
 
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet7":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet7":::
 
- 向返回源实体的目标实体的关联导航器方法添加代码。 下面的示例返回与销售订单相关的联系人。
+ 将代码添加到返回源实体的目标实体的 Association Navigator 方法。 以下示例返回与销售订单相关的联系人。
 
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet8":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet8":::
 
-### <a name="foreign-keyless-association"></a>外无键关联
- 你可以创建一个关联，而无需将标识符映射到字段类型描述符。 当源实体与目标实体没有直接关系时，创建这种关联。 例如，表没有 `SalesOrderDetail` 映射到表中主键的外键 `Contact` 。
+### <a name="foreign-keyless-association"></a>外键无键关联
+ 可以创建关联，而无需将标识符映射到字段类型描述符。 当源实体与目标实体没有直接关系时，创建此类关联。 例如， `SalesOrderDetail` 表没有映射到表中的主键的外 `Contact` 键。
 
- 如果要在与相关的表中显示信息 `SalesOrderDetail` `Contact` ，可以在 `Contact` 实体和实体之间创建外部无键关联 `SalesOrderDetail` 。
+ 如果要在表中显示与 相关的信息，可以在实体和实体之间创建外键 `SalesOrderDetail` `Contact` `Contact` 无键 `SalesOrderDetail` 关联。
 
- 在实体的关联导航方法中 `Contact` ， `SalesOrderDetail` 通过联接表或通过调用存储过程来返回实体。
+ 在实体的关联导航方法中，通过联接表或调用存储过程返回 `Contact` `SalesOrderDetail` 实体。
 
- 下面的示例通过联接表来返回所有销售订单的详细信息。
+ 下面的示例通过联接表返回所有销售订单的详细信息。
 
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/contactservice.cs" id="Snippet9":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/contactservice.vb" id="Snippet9":::
 
- 在实体的关联导航方法中 `SalesOrderDetail` ，返回相关的 `Contact` 。 下面的示例演示这一操作。
+ 在实体的关联导航 `SalesOrderDetail` 方法中，返回相关的 `Contact` 。 下面的示例演示这一操作。
                                                                             
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet10":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet10":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)

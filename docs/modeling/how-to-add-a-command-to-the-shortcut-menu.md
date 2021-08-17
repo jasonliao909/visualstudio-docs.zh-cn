@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b578c949b3b5121eb90b2c034766ea15ae6d096
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: db4e032f755337067ba208c0a8a6267c155ba4847b8259e7f5f7cd70822b9509
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386561"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121231621"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -53,9 +54,9 @@ ms.locfileid: "112386561"
 ## <a name="declare-the-command-in-commandsvsct"></a><a name="VSCT"></a> 在 .Vsct 中声明命令。
  菜单命令将在 DslPackage\Commands.vsct 中声明。 这些定义指定菜单项的标签以及它们在菜单上显示的位置。
 
- 所编辑的文件 .vsct 从多个 .h 文件导入定义，这些文件位于目录 *Visual STUDIO SDK 安装路径*\VisualStudioIntegration\Common\Inc。它还包括从 DSL 定义生成的 GeneratedVsct. .vsct。
+ 所编辑的文件 .vsct 从多个 .h 文件导入定义，这些文件位于目录 *Visual Studio SDK 安装路径*\VisualStudioIntegration\Common\Inc。它还包括从 DSL 定义生成的 GeneratedVsct. .vsct。
 
- 有关 .vsct 文件的详细信息，请参阅 [Visual Studio 命令表 (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+ 有关 .vsct 文件的详细信息，请参阅[Visual Studio Command Table (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ### <a name="to-add-the-command"></a>添加命令
 
@@ -331,7 +332,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 4. 在关系图中右键单击各种项，以验证命令是否根据所选择的项正确启用或禁用，以及是否相应地显示或隐藏。
 
-## <a name="troubleshoot"></a>故障排除
+## <a name="troubleshoot"></a>疑难解答
 
 **命令未显示在菜单中：**
 
@@ -359,7 +360,7 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 确保已卸载早期版本的程序包。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)

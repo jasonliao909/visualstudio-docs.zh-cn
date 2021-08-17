@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f3c1a09a7000b19980c14cd71fa02b600a2de9aea9fd514c1caa8e28a02307c1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f6564d563894dfb48d0fea1a008ffffb65ba280
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400499"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028405"
 ---
 # <a name="vsct-xml-schema-reference"></a>VSCT XML 架构参考
 提供命令表编译器架构元素的表，其中每个元素都有允许的子元素和属性。
@@ -40,7 +40,7 @@ ms.locfileid: "121400499"
 
 - { 0x6d484634， 0xe53d， 0x4a2c， { 0xad， 0xcb， 0x55， 0x14， 0x5c， 0x93， 0x62， 0xc8 } }
 
-  可能使用 XML 注释，但使用 GUI 和 GUI 的 (用户界面) 可能会丢弃它们。 无论格式 \<Annotation> 如何，都保证维护元素的内容。
+  可能使用 XML 注释，但 GUI 和 GUI (的) 可能会丢弃它们。 无论格式 \<Annotation> 如何，都保证维护元素的内容。
 
 ## <a name="schema-hierarchy"></a>架构层次结构
  .vsct 文件具有以下主要元素。

@@ -1,6 +1,6 @@
 ---
-title: Extern 元素|Microsoft Docs
-description: Extern 元素引用任何外部标头 (.h) 文件，以在编译时与 .vsct 文件合并。
+title: Extern 元素 |Microsoft Docs
+description: Extern 元素在编译时引用 () 文件与 .vsct 文件合并的任何外部标头。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,17 +16,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22f10cb94421d891f62bc5e57769e740e25dc05089c7dd442a145ebd1077b060
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a9fa1e2979aefa533566ccc4a964c47bde3c701
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070257"
 ---
 # <a name="extern-element"></a>Extern 元素
-Extern 元素引用 *.h* (的任何) 标头，以在编译时与 *.vsct* 文件合并。 要合并的文件必须位于给定给 VSCT 编译器的 Include 路径上，或由 Include 元素 [引用](../extensibility/include-element.md)。 这些文件可能是其他 *.vsct* 文件或 C++ 头文件。
+Extern 元素在编译时 *引用 ()* 文件与 *.vsct* 文件合并的任何外部标头。 要合并的文件必须位于 .VSCT 编译器提供的包含路径上，或由 [include 元素](../extensibility/include-element.md)引用。 这些文件可以是其他 *.vsct* 文件或 c + + 头文件。
 
- 头文件中的定义必须格式为"#define [Symbol] [Value]"，如果该值以前已定义，则该值可能是另一个符号。 定义可用于命令项的条件语句。 将放弃实际未使用的任何符号。
+ 标头文件中的定义的格式必须为 "#define [符号] [值]"。值可以是其他符号（如果以前已定义）。 定义可以在命令项的条件语句中使用。 不实际使用的任何符号将被丢弃。
 
  CommandTable 元素 Extern 元素
 
@@ -43,9 +43,9 @@ Extern 元素引用 *.h* (的任何) 标头，以在编译时与 *.vsct* 文件�
 
 |属性|说明|
 |---------------|-----------------|
-|href|必需。 头文件的路径：<br /><br /> href="stdidcmd.h"|
-|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
-|语言|可选。 命令表中所有 [\<Strings>](../extensibility/strings-element.md) 元素的默认语言：<br /><br /> language="en-us"|
+|href|必需。 标头文件的路径：<br /><br /> href = "stdidcmd"|
+|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|语言|可选。 [\<Strings>](../extensibility/strings-element.md)命令表中所有元素的默认语言：<br /><br /> language = "en-us"|
 
 ### <a name="child-elements"></a>子元素
 
@@ -57,7 +57,7 @@ Extern 元素引用 *.h* (的任何) 标头，以在编译时与 *.vsct* 文件�
 
 |元素|说明|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向 IDE 提供的命令（即菜单项、菜单、工具栏和组合框）的所有元素。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给 IDE 的命令（即菜单项、菜单、工具栏和组合框）。|
 
 ## <a name="example"></a>示例
 
@@ -72,6 +72,6 @@ Extern 元素引用 *.h* (的任何) 标头，以在编译时与 *.vsct* 文件�
 ```
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
-- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

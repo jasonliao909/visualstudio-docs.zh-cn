@@ -1,6 +1,6 @@
 ---
-title: 命令放置准则 |Microsoft Docs
-description: 了解有关在 Visual Studio 集成开发环境中将命令定位到 (IDE) 的准则和最佳方案。
+title: 命令放置指南|Microsoft Docs
+description: 了解在 IDE Visual Studio 集成开发环境中定位 (指南和) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,51 +12,52 @@ ms.assetid: 63b3478e-e08a-420b-a0ec-76767e0cb289
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 46aa6c341313a9d7c9d0a6d1666130d799ddc277
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f0e78221b93d766b8dd0f018501f3fc808a98c16
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029003"
 ---
-# <a name="command-placement-guidelines"></a>命令放置准则
-在 Visual Studio 集成开发环境中定位命令的最佳做法 (IDE) 不同，具体取决于命令集的大小。 命令根据 *.vsct* 文件中的信息进行定义和定位。
+# <a name="command-placement-guidelines"></a>命令放置指南
+在集成开发环境中定位命令Visual Studio IDE (IDE) 取决于命令集的大小。 根据 *.vsct* 文件中的信息定义和定位命令。
 
 ## <a name="best-practices-for-all-command-sets"></a>所有命令集的最佳实践
  对于每组命令，请遵循以下准则：
 
 - 提前准备命令结构的图表。 标识将在多个位置使用的命令、组合框、命令组和快捷菜单。
 
-- 同一组中出现的命令应该是相关的。
+- 在同一组中显示的命令应相关。
 
-- 只包含一个命令的组是可接受的。
+- 仅包含一个命令的组是可接受的。
 
-- 包不应向现有 Visual Studio 菜单添加大量命令。 相反，他们应创建菜单或子菜单来托管新命令。
+- 包不应将大量命令添加到现有Visual Studio菜单中。 相反，它们应创建菜单或子菜单来托管新命令。
 
-- 将命令置于现有菜单上时，请将命令命名为，使其目的清晰，并且不会与现有命令混淆。
+- 将命令放在现有菜单上时，请命名该命令，以便其用途清晰明了，并且不会与现有命令混淆。
 
-## <a name="best-practices-for-small-command-sets"></a>小型命令集的最佳实践
- 如果要开发只包含几个命令的 VSPackage，也请遵循以下准则：
+## <a name="best-practices-for-small-command-sets"></a>适用于小型命令集的最佳实践
+ 如果要开发只有几个命令的 VSPackage，也请遵循以下准则：
 
-- 如果可能，请使用命令、组合框、组或子菜单的 [父](../../extensibility/parent-element.md) 元素将其放入相应的组中。
+- 如果可能，请使用 [命令](../../extensibility/parent-element.md) 、组合框、组或子菜单的 Parent 元素，以将元素放入相应的组中。
 
-- 将这些组分配给 VSPackage 显示的菜单。
+- 将这些组分配到 VSPackage 显示的菜单。
 
-- 子菜单或命令的父项必须是 [组](../../extensibility/group-element.md) 元素。 向组分配命令和子菜单，然后将组分配到父菜单。
+- 子菜单或命令的父级必须是 [Group](../../extensibility/group-element.md) 元素。 将命令和子菜单分配给组，然后将组分配给父菜单。
 
-- 可以通过在该命令的定义后添加 [CommandPlacements](../../extensibility/commandplacements-element.md) 元素部分，然后向 `CommandPlacements` 元素添加每个其他组的 [CommandPlacement](../../extensibility/commandplacement-element.md) 元素，从而将命令放在其他组中。
+- 可以通过在命令定义后添加 [CommandPlacements](../../extensibility/commandplacements-element.md) 元素节，然后为元素添加每个附加组的 `CommandPlacements` [CommandPlacement 元素，将命令放入](../../extensibility/commandplacement-element.md) 其他组。
 
 ## <a name="best-practices-for-large-command-sets"></a>大型命令集的最佳实践
- 如果你的 VSPackage 将有许多命令，这些命令将出现在多个上下文中，也请遵循以下准则：
+ 如果 VSPackage 将有多个命令将出现在多个上下文中，也请遵循以下准则：
 
-- 使菜单、组和命令自父级。 也就是说，不要 `Parent` 在项的定义中分配元素。
+- 使菜单、组和命令成为自父级。 也就是说，请勿在 `Parent` 项的定义中分配 元素。
 
-- 使用 `CommandPlacement` 元素部分中的元素项 `CommandPlacements` 可在其父菜单和组中放置菜单、组和命令。
+- 使用 `CommandPlacement` 元素节中的元素 `CommandPlacements` 条目将菜单、组和命令放在其父菜单和组中。
 
-- 在 `CommandPlacements` 元素部分，填充给定菜单或组的项应相邻。 这有助于提高可读性，并使 `Priority` 排名更易于确定。
+- 在 `CommandPlacements` 元素部分中，填充给定菜单或组的条目应彼此相邻。 这有助于可读性，使 `Priority` 排名更易于确定。
 
-## <a name="see-also"></a>另请参阅
-- [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
-- [Visual Studio 命令表 ( .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅
+- [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Visual Studio命令表 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

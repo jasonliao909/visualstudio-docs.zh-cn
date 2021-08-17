@@ -53,11 +53,11 @@ int GetModule(
 [in， out]返回描述此事件的可选消息。 如果此参数为 null 值，则不请求任何消息。
 
 `pbLoad`\
-[in， out]如果模块 () ，则不为零;如果模块正在卸载， () 零 `TRUE` `FALSE` 。 如果此参数为 null 值，则不请求任何状态。
+[in， out]如果模块 () ，则不为零;如果模块正在卸载， () 零 `TRUE` `FALSE` 值。 如果此参数为 null 值，则不请求任何状态。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugModuleLoadEvent2](../../../extensibility/debugger/reference/idebugmoduleloadevent2.md)
 - [IDebugModule2](../../../extensibility/debugger/reference/idebugmodule2.md)

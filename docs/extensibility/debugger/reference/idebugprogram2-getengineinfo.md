@@ -56,5 +56,5 @@ int GetEngineInfo(
 ## <a name="remarks"></a>备注
  每个 DE 都定义自己的标识的 GUID。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

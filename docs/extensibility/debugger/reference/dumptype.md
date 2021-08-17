@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10815aece24f5fd95990a71406322b5de2b634ee1a82568dd622db9edbbfd1fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3054d86c1d516f79cbf259eaaf4add7ae1befc51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452325"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104620"
 ---
 # <a name="dumptype"></a>DUMPTYPE
 指定要转储的程序状态 (，例如正在运行的线程、堆栈帧和当前) 地址。

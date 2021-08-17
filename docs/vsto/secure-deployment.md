@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 22efe77715cf157a7dba84cb9bd348c7e49859e1ce8e8b3ed113cca7e4a03e3e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df241aa2a2f67b18d11653ba016b39b561866bec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408105"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025740"
 ---
 # <a name="secure-deployment"></a>保护部署
   创建一个Office解决方案时，开发计算机会自动更新，以允许项目中的代码运行。 但是，在部署解决方案时，必须通过使用证书或信任提示密钥对解决方案进行签名来提供信任决策 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 所基于的证据。 有关详细信息，请参阅[向解决方案授予Office信任](../vsto/granting-trust-to-office-solutions.md)。
@@ -48,6 +48,6 @@ ms.locfileid: "121408105"
   若要使Office运行代码，请同时将两个条目设置为 `Disabled` 0 (零) 或删除注册表项。
 
 ## <a name="see-also"></a>请参阅
-- [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- [部署Office解决方案](../vsto/deploying-an-office-solution.md)
 - [准备计算机以运行或托管Office解决方案](/previous-versions/bb772092(v=vs.110))
 - [安全Office解决方案](../vsto/securing-office-solutions.md)

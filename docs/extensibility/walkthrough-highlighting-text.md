@@ -10,26 +10,27 @@ ms.assetid: 64b772ad-4392-42e9-a237-5137f0384bf0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9e69f635b18d4ed67b78751ac6179cad04f002c
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 0ccbc7dd098112706fb26d19a35e7d961fd89842
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028379"
 ---
 # <a name="walkthrough-highlight-text"></a>演练：突出显示文本
 您可以通过创建 Managed Extensibility Framework (MEF) 组件部分来向编辑器添加不同的视觉效果。 本演练演示如何突出显示文本文件中当前单词的每个匹配项。 如果某个单词在文本文件中出现多次，并且您将插入符号放置在一个匹配项中，则将突出显示每个匹配项。
 
-## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必备条件
+ 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio 的 SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>创建 MEF 项目
 
-1. 创建 c # VSIX 项目。  (在 " **新建项目** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX 项目**"。 ) 将解决方案命名为 `HighlightWordTest` 。
+1. 创建 c # VSIX 项目。  (在 "**新建 Project** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX Project**"。 ) `HighlightWordTest` 将解决方案命名为。
 
-2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅 [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 3. 删除现有的类文件。
 
@@ -354,7 +355,7 @@ ms.locfileid: "106217523"
  若要创建标记，必须实现 <xref:Microsoft.VisualStudio.Text.Tagging.IViewTaggerProvider> 。 此类是一个 MEF 组件部件，因此必须设置正确的属性，以便识别此扩展。
 
 > [!NOTE]
-> 有关 MEF 的详细信息，请参阅 [ (MEF) Managed Extensibility Framework ](/dotnet/framework/mef/index)。
+> 有关 mef 的详细信息，请参阅[ (MEF) Managed Extensibility Framework ](/dotnet/framework/mef/index)。
 
 ### <a name="to-create-a-tagger-provider"></a>创建标记器提供程序
 
@@ -408,5 +409,5 @@ ms.locfileid: "106217523"
 
 4. 将光标置于出现的 "hello" 之一中。 每个匹配项都应以蓝色突出显示。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

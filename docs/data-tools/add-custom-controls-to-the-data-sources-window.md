@@ -1,6 +1,6 @@
 ---
 title: 向“数据源”窗口添加自定义控件
-description: 向 Visual Studio 中的 "数据源" 窗口添加自定义控件。 自定义可绑定控件列表。 添加关联控件。
+description: 将自定义控件添加到 Visual Studio 中的 "数据源" 窗口。 自定义可绑定控件列表。 添加关联控件。
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -16,12 +16,13 @@ ms.assetid: 8c43e7d2-ba94-4d9b-96de-3aa971955afd
 author: ghogen
 ms.author: ghogen
 manager: jmartens
-ms.openlocfilehash: 5591dc9c3422918fa8f9c605105ea10c8fbc447d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-data-tools
+ms.openlocfilehash: 2b29026eb9242dae0526f6022658f65c4a7b0a76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867420"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067229"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 
@@ -83,14 +84,14 @@ ms.locfileid: "99867420"
     |<xref:System.ComponentModel.ComplexBindingPropertiesAttribute>|在显示列表 (或表) 数据的控件（如）中实现此特性 <xref:System.Windows.Forms.DataGridView> 。|
     |<xref:System.ComponentModel.LookupBindingPropertiesAttribute>|在 (或表) 显示列表的控件上实现此属性，但也需要显示单个列或属性，例如 <xref:System.Windows.Forms.ComboBox> 。|
 
-2. 对于 Windows 窗体，请在 " **选项** " 对话框中打开 " **数据 UI 自定义** " 页。 或者，对于 WPF，打开 " **自定义控件绑定** " 对话框。 有关详细信息，请参阅 [自定义数据类型的可绑定控件列表](#customize-the-bindable-controls-list)。
+2. 对于 Windows 窗体，请在 "**选项**" 对话框中打开 "**数据 UI 自定义**" 页。 或者，对于 WPF，打开 " **自定义控件绑定** " 对话框。 有关详细信息，请参阅 [自定义数据类型的可绑定控件列表](#customize-the-bindable-controls-list)。
 
 3. 在 " **关联的控件** " 框中，刚刚添加到 " **工具箱** " 中的控件现在应显示。
 
     > [!NOTE]
     > 只有位于当前解决方案或被引用程序集中的控件才能添加到关联控件列表中。  (控件还必须实现上一个表中的一个数据绑定属性。 ) 要将数据绑定到 "数据源" 窗口中不可用的自定义控件，请将该控件从 " **工具箱** " 拖到设计图面上，然后从 " **数据源** " 窗口中将该项拖到控件上。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - ["数据 UI 自定义选项" 对话框](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

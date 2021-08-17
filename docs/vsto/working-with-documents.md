@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f04cdd246d95a4d5757ff64851a12cdede36f1b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74a95849b44c9842133d90bb39b895daf882ee9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068371"
 ---
 # <a name="work-with-documents"></a>使用文档
   本部分中的主题提供了如何使用 Microsoft Office Word 对象模型来处理 Office 项目中的文档的分步过程和代码示例。
@@ -44,6 +45,6 @@ ms.locfileid: "99920219"
 |向文档添加页眉或页脚。|[如何：以编程方式向文档添加页眉和页脚](../vsto/how-to-programmatically-add-headers-and-footers-to-documents.md)|
 |删除文档中的所有注释。|[如何：以编程方式从文档中删除所有注释](../vsto/how-to-programmatically-remove-all-comments-from-documents.md)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
 - [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
