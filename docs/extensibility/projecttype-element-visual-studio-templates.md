@@ -26,7 +26,7 @@ ms.locfileid: "121400928"
 对项目模板进行分类，以便它显示在"新建项目"或 **"Project"****对话框中的** 指定组下。
 
 > [!WARNING]
-> Project 2012 年 10 月开始，C++ 支持Visual Studio模板。 2010 和更早版本中Visual Studio C++ 不支持它们。
+> Project 2012 开始，C++ 支持Visual Studio模板。 在 2010 和更早版本中，C++ Visual Studio支持它们。
 
  \<VSTemplate> \<TemplateData>
  \<ProjectType>
@@ -61,12 +61,12 @@ ms.locfileid: "121400928"
 
 - `VisualBasic`：指定模板创建项目 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 或项。
 
-- `Web`：指定模板创建 Web 项目或项。 如果元素包含此值，则项目或项的语言在"项目""子元素"中定义 `ProjectType` [ (Visual Studio模板) 。 ](../extensibility/projectsubtype-element-visual-studio-templates.md)
+- `Web`：指定模板创建 Web 项目或项。 如果 `ProjectType` 元素包含此值，则项目或项的语言在[ProjectSubType 元素中定义 (Visual Studio模板) 。 ](../extensibility/projectsubtype-element-visual-studio-templates.md)
 
 ## <a name="remarks"></a>备注
  `ProjectType` 是 `TemplateData` 的必需子元素。
 
- 元素的值指定模板在"新建项" `ProjectType` 或"Project项"对话框中的位置。  例如，值为 的模板显示在"新建"对话框 `ProjectType` `CSharp` 的 **"Visual C#"Project** 下。 
+ 元素的值指定模板在"新建项"或"Project `ProjectType` 项"对话框中的位置。  例如，值为 的模板显示在"新建"对话框 `ProjectType` `CSharp` 的 **"Visual C#"Project** 下。 
 
  可以使用 [ProjectSubType](../extensibility/projectsubtype-element-visual-studio-templates.md) 元素指定模板子类型。
 

@@ -24,17 +24,17 @@ ms.locfileid: "121423550"
 Visual Studio Tools for Unity 更改日志。
 
 ## <a name="41020"></a>4.10.2.0
-发布时间：2021 年 5 月 25 日
+发布时间可能为25，2021
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 添加了 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。 优先使用标量计算，而不要考虑矢量计算。
+  - 添加了 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。 为矢量计算的标量计算指定优先级。
 
 - **评估版：**
 
-  - 添加了对使用可移植 pdb 符号正确筛选可见局部区域的支持。
+  - 添加了对使用可移植 pdb 符号正确筛选可见局部变量的支持。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
@@ -42,21 +42,21 @@ Visual Studio Tools for Unity 更改日志。
 
   - 固定资产引用搜索稳定性。
 
-  - 固定播放器宣布使用最新的 Unity 版本进行分析。
+  - 固定玩家公告使用最新 Unity 版本进行分析。
 
 ## <a name="41010"></a>4.10.1.0
-发布时间：2021 年 5 月 11 日
+发布时间为11月11日，2021
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了快速修复 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 的稳定性问题。
+  - 修复了 quickfix 的稳定性问题 [`UNT0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0008.md) 。
 
   - 修复了线程的性能问题。
 
 ## <a name="41000"></a>4.10.0.0
-发布时间：2021 年 4 月 13 日
+2021年4月13日发布
 
 ### <a name="new-features"></a>新增功能
 
@@ -64,22 +64,22 @@ Visual Studio Tools for Unity 更改日志。
 
   - 添加了 [`UNT0019`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0019.md) 诊断。 不必要的间接调用 `GameObject.gameObject` 。
 
-  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 `MenuItem` 在非静态方法中使用的 特性。
+  - 添加了 [`UNT0020`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0020.md) 诊断。 `MenuItem` 用于非静态方法的特性。
 
-  - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应保护 Unity 消息 (选择加入) 。
+  - 添加了 [`UNT0021`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0021.md) 诊断。 应 (选择加入) ，才能保护 Unity 消息。
 
   - 添加了 [`UNT0022`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0022.md) 诊断。 设置位置和旋转的低效方法。
 
-  - 添加了 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 诊断。 Unity 对象上的联合赋值。
+  - 添加了 [`UNT0023`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0023.md) 诊断。 合并 Unity 对象上的分配。
 
-  - 为 `IDE0074` 添加了 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 抑制器。 Unity 对象不应使用联合赋值。
+  - 为 `IDE0074` 添加了 [`USP0017`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0017.md) 抑制器。 Unity 对象不应使用合并分配。
 
-  - 添加了针对 Unity 的未展开 C# 项目的检测。
+  - 添加了针对 Unity 的 unflavored c # 项目的检测。
 
   - 在 CodeLens 中添加了 Unity 资产引用搜索。
 
 ## <a name="4910"></a>4.9.1.0
-发布时间：2021 年 3 月 2 日
+2021年3月发布
 
 ### <a name="new-features"></a>新增功能
 
@@ -116,7 +116,7 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了对抛出异常的过时属性的筛选。
 
 ## <a name="4900"></a>4.9.0.0
-发布时间：2021 年 1 月 20 日
+2021年1月20日发布
 
 ### <a name="new-features"></a>新增功能
 
@@ -124,7 +124,7 @@ Visual Studio Tools for Unity 更改日志。
 
   - 新增了对 `raytrace shaders`、`UXML` 和 `USS` 文件的支持。
 
-  - 添加了 `.vsconfig` 生成支持。 Visual Studio检测缺少的组件，并提示在使用 Unity 项目时安装它们。
+  - 添加了 `.vsconfig` 生成支持。 Visual Studio 现在应检测缺少哪些组件，并在使用 Unity 项目时提示您安装这些组件。
 
   - 更新了 Unity 消息 API（用于所有用作协同例程的方法）。
 
@@ -134,58 +134,58 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 修复了使用实例选择对话框时的进程刷新问题。
+  - 修复了使用实例选择对话框时的进程刷新。
 
   - 修复了对协同例程和 `AssetPostprocessor.OnAssignMaterialModel` 发出错误警告的 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 诊断。
 
 ## <a name="4820"></a>4.8.2.0
-发布时间：2020 年 11 月 10 日
+2020年11月10日发行
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断以应用于从 继承的所有内容 `Component` ，而不只是 `MonoBehaviour` 。
+  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从继承的所有内容 `Component` ，而不仅仅是 `MonoBehaviour` 。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 CodeLens 消息失效问题。
+  - 固定 CodeLens 消息失效。
 
 ## <a name="4810"></a>4.8.1.0
-发布时间：2020 年 10 月 13 日
+2020年10月13日发布
 
 ### <a name="new-features"></a>新增功能
 
 - **评估版：**
 
-  - 添加了对使用调用进行隐式转换的支持。 以前，评估程序强制实施严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
+  - 添加了对具有调用的隐式转换的支持。 之前，计算器强制执行严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
 
 - **集成：**
 
-  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应在性能 `System.Reflection` 关键型消息（如 `Update` `FixedUpdate` 、、 或 ） `LateUpdate` 中使用功能 `OnGUI` 。
+  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用 `System.Reflection` 性能关键消息（如 `Update` 、、或）中的功能 `FixedUpdate` `LateUpdate` `OnGUI` 。
 
-  - 改进了 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 和 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 抑制器，支持所有 `AssetPostprocessor` 静态方法。
+  - 改进 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 了 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressors，支持所有 `AssetPostprocessor` 静态方法。
 
-  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可为空引用类型和不可为 null 的引用类型。 不支持从 继承的类型的初始化 `UnityEngine.Object` 检测，将导致错误。
+  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从继承的类型的初始化检测 `UnityEngine.Object` ，并将导致错误。
 
-  - 现在，对 Unity 2019.x 和 2020.x+ 使用相同的播放器和 asmdef 项目生成机制。
+  - 现在为 Unity 2019. x 和 2020. x 使用相同的播放器和 asmdef 项目生成机制。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了注释中消息意外完成的问题。
+  - 修复了注释中消息的意外完成。
 
 ## <a name="4800"></a>4.8.0.0 
-发布时间：2020 年 9 月 14 日
+2020年9月14日发布
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 Unity 2019.x 的播放器项目生成问题。
+  - 修复了 Unity 2019. x 的播放机项目生成。
 
 ## <a name="4710"></a>4.7.1.0
 发布日期：2020 年 8 月 5 日

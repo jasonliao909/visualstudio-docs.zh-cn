@@ -30,28 +30,28 @@ ms.locfileid: "121402696"
 IDebugProgramHost2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
- 调试引擎在与 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口相同的对象上实现此接口，以提供有关宿主进程的信息。 这是一个可选接口。
+## <a name="notes-for-implementers"></a>实现者说明
+ 调试引擎在 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口的同一对象上实现此接口，以提供有关托管进程的信息。 这是一个可选接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
- 在接口上调用 [QueryInterface](/cpp/atl/queryinterface) `IDebugProgram2` 以获取此接口。
+ 在 [接口上调用 QueryInterface](/cpp/atl/queryinterface) `IDebugProgram2` 以获取此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
- 下表显示的方法 `IDebugProgramHost2` 。
+ 下表显示了 的方法 `IDebugProgramHost2` 。
 
 |方法|说明|
 |------------|-----------------|
-|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|获取此程序的宿主进程的标题、友好名称或文件名。|
-|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|获取此程序的宿主进程的进程标识符。|
-|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|获取运行此程序的承载进程的计算机的名称。|
+|[GetHostName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostname.md)|获取此程序的托管进程的标题、友好名称或文件名。|
+|[GetHostId](../../../extensibility/debugger/reference/idebugprogramhost2-gethostid.md)|获取此程序的承载进程的进程标识符。|
+|[GetHostMachineName](../../../extensibility/debugger/reference/idebugprogramhost2-gethostmachinename.md)|获取运行此程序的托管进程所运行计算机的名称。|
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

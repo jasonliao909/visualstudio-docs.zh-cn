@@ -39,7 +39,7 @@ ms.locfileid: "121424432"
 
 ## <a name="_assemblylocation"></a>\_AssemblyLocation
 
-此属性包含一个字符串，该字符串提供有关自定义项的部署清单的详细信息。 有关清单的更多信息，请参阅应用程序解决方案 中的应用程序和[Office清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
+此属性包含一个字符串，该字符串提供有关自定义项的部署清单的详细信息。 有关清单的更多信息，请参阅应用程序解决方案 中的应用程序和Office[清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)。
 
  \_AssemblyLocation 属性值可以具有不同的格式，具体取决于解决方案的部署方式：
 
@@ -53,9 +53,9 @@ ms.locfileid: "121424432"
 
   *SolutionID* 是一个 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] GUID，用于标识解决方案。 生成项目时，会自动生成 *SolutionID。* **vstolocal** 术语向 指示应从文档相同的文件夹中 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 加载程序集。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [Office 解决方案体系结构Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+- [解决方案Office体系结构Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [解决方案中的应用程序和Office清单](../vsto/application-and-deployment-manifests-in-office-solutions.md)
 - [如何：使用 Office 发布 ClickOnce](/previous-versions/bb386095(v=vs.110))

@@ -1,6 +1,6 @@
 ---
-description: 获取单步执行或单步执行函数时返回的值。
-title: IDebugReturnValueEvent2：：GetReturnValue |Microsoft Docs
+description: 获取跳出或通过函数时返回的值。
+title: IDebugReturnValueEvent2：： GetReturnValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402241"
 ---
 # <a name="idebugreturnvalueevent2getreturnvalue"></a>IDebugReturnValueEvent2::GetReturnValue
-获取单步执行或单步执行函数时返回的值。
+获取跳出或通过函数时返回的值。
 
 ## <a name="syntax"></a>语法
 
@@ -43,11 +43,11 @@ int GetReturnValue (
 
 ## <a name="parameters"></a>参数
 `ppReturnValue`\
-[out]返回表示 [要检索的值的 IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
+弄返回一个 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示要检索的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReturnValueEvent2](../../../extensibility/debugger/reference/idebugreturnvalueevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

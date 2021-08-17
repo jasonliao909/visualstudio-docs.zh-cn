@@ -28,5 +28,5 @@ ms.locfileid: "121401474"
 
  用于语言服务其余部分的命令筛选器还可用于自动格式设置。 还可通过调用 突出显示匹配的大括号 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.HighlightMatchingBrace%2A> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

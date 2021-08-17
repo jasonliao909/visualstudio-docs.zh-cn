@@ -47,7 +47,7 @@ VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 ## <a name="to-examine-the-activity-log"></a>检查活动日志
 
-1. 使用Visual Studio [/Log](../ide/reference/log-devenv-exe.md)命令行开关运行 ActivityLog.xml会话期间写入磁盘。
+1. 使用Visual Studio [/Log](../ide/reference/log-devenv-exe.md)命令行开关运行 ActivityLog.xml会话期间将磁盘写入磁盘。
 
 2. 关闭Visual Studio，在子文件夹查找活动日志，Visual Studio数据：
 
@@ -63,9 +63,9 @@ VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 由于活动日志是服务，因此活动日志在 VSPackage 构造函数中不可用。
 
-在写入活动日志之前，应获取活动日志。 不要缓存或保存活动日志供将来使用。
+应在写入活动日志之前获取活动日志。 不要缓存或保存活动日志供将来使用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [/Log (devenv.exe) ](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>

@@ -1,6 +1,6 @@
 ---
-description: 获取运行线程的程序。
-title: IDebugThread2：：GetProgram |Microsoft Docs
+description: 获取线程正在其中运行的程序。
+title: IDebugThread2：： GetProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402072"
 ---
 # <a name="idebugthread2getprogram"></a>IDebugThread2::GetProgram
-获取运行线程的程序。
+获取线程正在其中运行的程序。
 
 ## <a name="syntax"></a>语法
 
@@ -43,11 +43,11 @@ int GetProgram (
 
 ## <a name="parameters"></a>参数
 `ppProgram`\
-[out]返回一 [个 IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，该对象表示此线程正在运行的程序。
+弄返回一个 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，该对象表示此线程正在其中运行的程序。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

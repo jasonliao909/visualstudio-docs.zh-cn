@@ -1,6 +1,6 @@
 ---
 description: 获取反汇编流的作用域。
-title: IDebugDisassemblyStream2：： GetScope |Microsoft Docs
+title: IDebugDisassemblyStream2：：GetScope |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,14 +43,14 @@ int GetScope(
 
 ## <a name="parameters"></a>参数
 `pdwScope`\
-弄返回 [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 枚举中的一个值，该值描述此反汇编流的作用域。
+[out]从描述此 [反汇编DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 的范围的枚举中返回一个值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 例如，反汇编的作用域可以是函数或整个模块。
+ 例如，反汇编的范围可以是函数或整个模块。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)

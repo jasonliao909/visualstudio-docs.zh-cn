@@ -1,6 +1,6 @@
 ---
-description: 通知程序发布者存在并正在运行调试器。
-title: IDebugProgramPublisher2：： SetDebuggerPresent |Microsoft Docs
+description: 告知程序发布者调试器存在且正在运行。
+title: IDebugProgramPublisher2：：SetDebuggerPresent |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402501"
 ---
 # <a name="idebugprogrampublisher2setdebuggerpresent"></a>IDebugProgramPublisher2::SetDebuggerPresent
-通知程序发布者存在并正在运行调试器。
+告知程序发布者调试器存在且正在运行。
 
 ## <a name="syntax"></a>语法
 
@@ -43,14 +43,14 @@ int SetDebuggerPresent(
 
 ## <a name="parameters"></a>参数
 `fDebuggerPresent`\
-中非零 (`TRUE`) 如果存在调试器，则为零 (`FALSE`) （如果不存在）。
+[in]如果存在调试 () ，则非零 () `TRUE` `FALSE` 为零。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)方法返回的数据中将反映调试器的存在与否：返回的值由以前的方法调用设置或清除 `SetDebuggerPresent` 。
+ 调试器的存在或缺失反映在 [从 GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 方法返回的数据中：返回的值由之前对 方法的调用设置或 `SetDebuggerPresent` 清除。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md)

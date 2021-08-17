@@ -118,5 +118,5 @@ ms.locfileid: "121423847"
 
 6. 在细节窗格中，选择“要求应用程序外接程序由受信任的发布者签名”  或“禁用所有应用程序外接程序” 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [安全 Office 解决方案](../vsto/securing-office-solutions.md)

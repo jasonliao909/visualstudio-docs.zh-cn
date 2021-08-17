@@ -1,5 +1,5 @@
 ---
-description: 描述特定的计算机。
+description: 描述特定计算机。
 title: MACHINE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121401851"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
-描述特定的计算机。
+描述特定计算机。
 
 ## <a name="syntax"></a>语法
 
@@ -47,25 +47,25 @@ public struct MACHINE_INFO {
 
 ## <a name="members"></a>成员
  `Fields`\
- [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)枚举中的标志的组合，用于指定要初始化结构的哪些字段。
+ 集合中标志的组合 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 枚举，用于指定初始化结构的哪些字段。
 
  `bstrName`\
  计算机名称。 等效于调用 [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)。
 
  `Flags`\
- 描述计算机特性的 [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) 枚举中的标志的组合。
+ 描述计算机 [属性MACHINE_INFO_FLAGS集合](../../../extensibility/debugger/reference/machine-info-flags.md) 中的标志组合。
 
 ## <a name="remarks"></a>备注
- 此结构由对 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 方法的调用返回。
+ 此结构通过调用 [GetMachineInfo 方法](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 返回。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)
 - [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md)

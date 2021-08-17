@@ -1,6 +1,6 @@
 ---
-description: 建立要用于任何区域设置特定资源区域设置。
-title: IDebugProgramProvider2：：SetLocale |Microsoft Docs
+description: 确定要用于任何特定于区域设置的资源的区域设置。
+title: IDebugProgramProvider2：： SetLocale |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402514"
 ---
 # <a name="idebugprogramprovider2setlocale"></a>IDebugProgramProvider2::SetLocale
-建立要用于任何区域设置特定资源区域设置。
+确定要用于任何特定于区域设置的资源的区域设置。
 
 ## <a name="syntax"></a>语法
 
@@ -43,10 +43,10 @@ int SetLocale(
 
 ## <a name="parameters"></a>参数
 `wLangID`\
-[in]要建立的语言 ID。 例如，1033 表示英语。
+中要建立的语言 ID。 例如，1033表示英语。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

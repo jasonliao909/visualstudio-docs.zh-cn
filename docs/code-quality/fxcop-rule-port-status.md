@@ -127,8 +127,8 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA2101](/dotnet/fundamentals/code-analysis/quality-rules/ca2101) | 指定对 P/Invoke 字符串参数进行封送处理
 [CA2109](/dotnet/fundamentals/code-analysis/quality-rules/ca2109) | 检查可见的事件处理程序
 [CA2119](/dotnet/fundamentals/code-analysis/quality-rules/ca2119) | 密封满足私有接口的方法
-[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | 不捕获损坏状态异常
-[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | 重新引发以保留堆栈详细信息。
+[CA2153](/dotnet/fundamentals/code-analysis/quality-rules/ca2153) | 请勿捕获损坏状态异常
+[CA2200](/dotnet/fundamentals/code-analysis/quality-rules/ca2200) | 再次引发以保留堆栈详细信息。
 [CA2201](/dotnet/fundamentals/code-analysis/quality-rules/ca2201) | 不要引发保留的异常类型
 [CA2207](/dotnet/fundamentals/code-analysis/quality-rules/ca2207) | 以内联方式初始化值类型的静态字段
 [CA2208](/dotnet/fundamentals/code-analysis/quality-rules/ca2208) | 正确实例化参数异常
@@ -138,13 +138,13 @@ Roslyn 存储库中自动 [生成的文档页](https://github.com/dotnet/roslyn-
 [CA2215](/dotnet/fundamentals/code-analysis/quality-rules/ca2215) | Dispose 方法应调用基类释放
 [CA2216](/dotnet/fundamentals/code-analysis/quality-rules/ca2216) | 可释放类型应声明终结器
 [CA2217](/dotnet/fundamentals/code-analysis/quality-rules/ca2217) | 不要使用 FlagsAttribute 标记枚举
-[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 请勿在 finally 子句中引发异常
+[CA2219](/dotnet/fundamentals/code-analysis/quality-rules/ca2219) | 不在 finally 子句中引发异常
 [CA2225](/dotnet/fundamentals/code-analysis/quality-rules/ca2225) | 运算符重载具有命名的备用项
 [CA2226](/dotnet/fundamentals/code-analysis/quality-rules/ca2226) | 运算符应有对称重载
 [CA2227](/dotnet/fundamentals/code-analysis/quality-rules/ca2227) | 集合属性应为只读
 [CA2229](/dotnet/fundamentals/code-analysis/quality-rules/ca2229) | 实现序列化构造函数
-[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重写值类型 Equals 时重载运算符等于
-[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递系统 URI 对象而不是字符串
+[CA2231](/dotnet/fundamentals/code-analysis/quality-rules/ca2231) | 重写值类型等于时重载相等运算符
+[CA2234](/dotnet/fundamentals/code-analysis/quality-rules/ca2234) | 传递系统 uri 对象而不是字符串
 [CA2235](/dotnet/fundamentals/code-analysis/quality-rules/ca2235) | 标记所有不可序列化的字段
 [CA2237](/dotnet/fundamentals/code-analysis/quality-rules/ca2237) | 用 serializable 标记 ISerializable 类型
 [CA2241](/dotnet/fundamentals/code-analysis/quality-rules/ca2241) | 为格式化方法提供正确的参数
@@ -203,6 +203,6 @@ CA5377 | 使用容器级别访问策略
 CA5379 | 不要使用弱密钥派生函数算法
 CA9999 | 分析器版本不匹配
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [.NET 分析器规则](https://github.com/dotnet/roslyn-analyzers/blob/master/src/NetAnalyzers/Microsoft.CodeAnalysis.NetAnalyzers.md)

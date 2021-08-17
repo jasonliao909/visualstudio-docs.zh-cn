@@ -52,7 +52,7 @@ ms.locfileid: "121394636"
 
      如果该解决方案由多个用户使用，则此方法会阻止解决方案运行。 如果在代码或引用的服务器中发现问题并且你想要阻止所有用户执行该问题，则这会很有用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

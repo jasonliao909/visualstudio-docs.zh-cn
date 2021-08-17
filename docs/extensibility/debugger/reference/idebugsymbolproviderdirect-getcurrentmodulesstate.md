@@ -55,5 +55,5 @@ int GetCurrentModulesState(
 ## <a name="remarks"></a>备注
  每当在符号组中添加或删除模块时，就会更改状态。 因此，此方法可用于检测是否已修改某个符号组。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

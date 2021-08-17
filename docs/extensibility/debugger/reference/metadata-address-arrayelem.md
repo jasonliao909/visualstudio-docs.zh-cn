@@ -47,24 +47,24 @@ public struct METADATA_ADDRESS_ARRAYELEM {
 ## <a name="members"></a>成员
 
 `tokMethod`\
-此元素所属数组的 ID。
+此元素属于的数组的 ID。
 
-[C + +] `_mdToken` 是 `typedef` 32 位的 `int` 。
+[C++] `_mdToken` 是 `typedef` 32 位 的 `int` 。
 
 `dwIndex`\
-此元素在数组中的索引。
+数组中此元素的索引。
 
 ## <a name="remarks"></a>备注
-当结构的[](../../../extensibility/debugger/reference/debug-address-union.md) `dwKind` 字段 `DEBUG_ADDRESS_UNION` 设置为 `ADDRESS_KIND_ARRAYELEM` 从[ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)枚举) 中的值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的一部分。
+当 结构的 字段[设置为](../../../extensibility/debugger/reference/debug-address-union.md)从 ADDRESS_KIND 枚举值 (时，此结构是 DEBUG_ADDRESS_UNION 结构中联合的 `dwKind` `DEBUG_ADDRESS_UNION` `ADDRESS_KIND_ARRAYELEM` 一) 。 [](../../../extensibility/debugger/reference/address-kind.md)
 
 ## <a name="requirements"></a>要求
-标头： sh。h
+标头：sh.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
