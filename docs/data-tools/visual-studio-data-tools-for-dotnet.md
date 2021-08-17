@@ -12,12 +12,12 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - dotnet
-ms.openlocfilehash: e04665d4cf05c8440681ebffbf2223ef1054fcced6d3608aa3c289546e8226c7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adf70d81747cfee833c996acaaecf6b1009f6fed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031544"
 ---
 # <a name="visual-studio-data-tools-for-net"></a>适用于 NET 的 Visual Studio Data Tools
 

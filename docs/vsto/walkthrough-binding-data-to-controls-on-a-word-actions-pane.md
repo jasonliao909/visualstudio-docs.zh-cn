@@ -1,6 +1,6 @@
 ---
 title: 演练：将数据绑定到 Word 操作窗格上的控件
-description: 在 Microsoft Word 中，将数据绑定到操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
+description: 将数据绑定到 Microsoft Word 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d94891520695117c7a395f81feda81e52f909fe6
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 34408a3f1e08165a4269c0f9741d0d645f4576cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032129"
 ---
 # <a name="walkthrough-bind-data-to-controls-on-a-word-actions-pane"></a>演练：将数据绑定到 Word 操作窗格上的控件
   本演练演示如何将数据绑定到 Word 中操作窗格上的控件。 控件演示 SQL Server 数据库中表之间的主/从关系。
@@ -61,9 +62,9 @@ ms.locfileid: "107824492"
 
 1. 使用 " **我的 Word 操作" 窗格** 创建 word 文档项目。 在向导中，选择 " **创建新文档**"。
 
-     有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 将在设计器中打开新的 Word 文档，并将 " **我的 Word 操作" 窗格** 项目添加到 **解决方案资源管理器**。
+     Visual Studio 在设计器中打开新的 word 文档，并将 "**我的 word 操作" 窗格** 项目添加到 **解决方案资源管理器**。
 
 ## <a name="add-controls-to-the-actions-pane"></a>向操作窗格添加控件
  对于本演练，需要一个包含数据绑定 Windows 窗体控件的操作窗格控件。 将数据源添加到项目，然后将控件从 " **数据源** " 窗口拖到 "操作" 窗格控件。
@@ -87,7 +88,7 @@ ms.locfileid: "107824492"
 
 3. 选择 **数据库** ，然后单击 " **下一步**"。
 
-4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
+4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 "**新建连接**" 按钮添加新连接。
 
 5. 单击“下一步”。
 
@@ -135,7 +136,7 @@ ms.locfileid: "107824492"
     |属性|值|
     |--------------|-----------|
     |**名称**|插入|
-    |**Text**|插入|
+    |**文本**|插入|
 
 12. 调整用户控件的大小以适应控件。
 
@@ -149,7 +150,7 @@ ms.locfileid: "107824492"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ActionsControl.vb" id="Snippet1":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet1":::
 
-2. 在 c # 中，必须将事件处理程序附加到 <xref:System.Windows.Forms.UserControl.Load> 事件。 可以在调用后将此代码放在 `ActionsControl` 构造函数中 `InitializeComponent` 。 有关如何创建事件处理程序的详细信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+2. 在 c # 中，必须将事件处理程序附加到 <xref:System.Windows.Forms.UserControl.Load> 事件。 可以在调用后将此代码放在 `ActionsControl` 构造函数中 `InitializeComponent` 。 有关如何创建事件处理程序的详细信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ActionsControl.cs" id="Snippet33":::
 
@@ -204,20 +205,20 @@ ms.locfileid: "107824492"
 
 ### <a name="to-show-the-actions-pane"></a>显示操作窗格
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument**"，然后单击快捷菜单上的 " **查看代码** "。
+1. 在 **解决方案资源管理器** 中，右键单击 **ThisDocument.vb** 或 **ThisDocument.cs**，然后单击快捷菜单上的"查看代码"。
 
-2. 在类的顶部创建控件的新实例， `ThisDocument` 使其类似于下面的示例。
+2. 在 类的顶部创建 控件的新实例， `ThisDocument` 以便它如以下示例所示。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet6":::
 
-3. 将代码添加到 <xref:Microsoft.Office.Tools.Word.Document.Startup> 事件处理程序中， `ThisDocument` 以使其类似于下面的示例。
+3. 将代码添加到 <xref:Microsoft.Office.Tools.Word.Document.Startup> 的事件处理程序 `ThisDocument` ，以便如以下示例所示。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreActionsPaneWordCS/ThisDocument.cs" id="Snippet7":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreActionsPaneWordVB/ThisDocument.vb" id="Snippet7":::
 
 ## <a name="test-the-application"></a>测试应用程序
- 现在，你可以对文档进行测试，以验证在打开文档时是否显示操作窗格。 在 "操作" 窗格上的控件中测试大纲/细节关系，并确保在单击 " **插入** " 按钮时，将数据填充到 Word 表中。
+ 现在，可以测试文档，以验证打开文档时是否显示操作窗格。 在操作窗格上的控件中测试主/详细信息关系，并确保单击"插入"按钮时数据填充在 Word 表中。 
 
 ### <a name="to-test-your-document"></a>测试文档
 
@@ -225,20 +226,20 @@ ms.locfileid: "107824492"
 
 2. 确认操作窗格可见。
 
-3. 在组合框中选择一个公司，并验证 " **产品** " 列表框中的项是否更改。
+3. 在组合框中选择一家公司，并验证"产品"列表 **框中的** 项是否更改。
 
-4. 选择一个产品，单击 "操作" 窗格上的 " **插入** "，然后验证是否已将产品详细信息添加到 Word 的表中。
+4. 选择一个产品， **单击操作** 窗格上的"插入"，并验证产品详细信息是否添加到 Word 中的表中。
 
 5. 插入来自各种公司的其他产品。
 
 ## <a name="next-steps"></a>后续步骤
- 本演练演示如何将数据绑定到 Word 中操作窗格上的控件。 以下是接下来可能要执行的一些任务：
+ 本演练演示了在 Word 的操作窗格上将数据绑定到控件的基础知识。 以下是接下来可能要执行的一些任务：
 
-- 将数据绑定到 Excel 中的控件。 有关详细信息，请参阅 [演练：将数据绑定到 Excel 操作窗格上的控件](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)。
+- 将数据绑定到控件中的Excel。 有关详细信息，请参阅[演练：将数据绑定到](../vsto/walkthrough-binding-data-to-controls-on-an-excel-actions-pane.md)操作窗格 上的Excel控件。
 
-- 部署项目。 有关详细信息，请参阅 [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
+- 部署项目。 有关详细信息，请参阅使用[Office 部署 ClickOnce。](../vsto/deploying-an-office-solution-by-using-clickonce.md)
 
 ## <a name="see-also"></a>请参阅
 - [操作窗格概述](../vsto/actions-pane-overview.md)
-- [如何：向 Word 文档或 Excel 工作簿添加操作窗格](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [如何：将操作窗格添加到 Word 文档或Excel工作簿](../vsto/how-to-add-an-actions-pane-to-word-documents-or-excel-workbooks.md)
+- [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)

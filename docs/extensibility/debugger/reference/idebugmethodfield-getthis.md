@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 382b230e580ac09f81a3c23a3308c5b6c844fbcf04bb89dcb240001f7759b98f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 73c85e1b9073f80d834fad7ba9defa3d70e7c6d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137972"
 ---
 # <a name="idebugmethodfieldgetthis"></a>IDebugMethodField::GetThis
 获取 `this` (`Me` 方法 [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)]) 的对象的指针中的对象。

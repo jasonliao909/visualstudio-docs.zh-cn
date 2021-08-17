@@ -14,21 +14,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b91486c193b7b3fdba3b4c5cbbe86f58ffa7f06c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 130469ddd084a1a044e4af458164f15c82412eef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122704"
 ---
 # <a name="how-to-programmatically-format-text-in-documents"></a>如何：以编程方式在文档中设置文本格式
   你可以使用 <xref:Microsoft.Office.Interop.Word.Range> 对象来格式化 Microsoft Office Word 文档中的文本。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 下面的示例选择文档中的第一个段落并更改字号、字体名称和对齐方式。 然后，它会选择范围并显示一个消息框，以在执行下一段代码前暂停。 下一节调用 <xref:Microsoft.Office.Tools.Word.Document> 文档级自定义项 (的撤消方法，) 或 <xref:Microsoft.Office.Interop.Word.Document> VSTO 外接程序的类 () 三次。 它应用“正文缩进”样式，并显示一个消息框以暂停代码。 然后，该代码调用 <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> 方法一次，并显示一个消息框。
+ 下面的示例选择文档中的第一个段落并更改字号、字体名称和对齐方式。 然后，它会选择范围并显示一个消息框，以在执行下一段代码前暂停。 下一节将 <xref:Microsoft.Office.Tools.Word.Document> 为文档级自定义项调用宿主项 (的 Undo 方法) 或 <xref:Microsoft.Office.Interop.Word.Document> VSTO 外接程序的类 () 三次。 它应用“正文缩进”样式，并显示一个消息框以暂停代码。 然后，该代码调用 <xref:Microsoft.Office.Tools.Word.Document.Undo%2A> 方法一次，并显示一个消息框。
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 

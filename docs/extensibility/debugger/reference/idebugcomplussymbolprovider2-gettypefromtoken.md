@@ -1,6 +1,6 @@
 ---
-description: IDebugComPlusSymbolProvider2：：GetTypeFromToken 根据给定的令牌检索类型。
-title: IDebugComPlusSymbolProvider2：：GetTypeFromToken |Microsoft Docs
+description: 如果给定标记，IDebugComPlusSymbolProvider2：： GetTypeFromToken 会检索该类型。
+title: IDebugComPlusSymbolProvider2：： GetTypeFromToken |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121452207"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
-检索给定其标记的类型。
+在给定其标记的情况中检索类型。
 
 ## <a name="syntax"></a>语法
 
@@ -48,22 +48,22 @@ int GetTypeFromToken(
 
 ## <a name="parameters"></a>参数
 `appDomain`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `guidModule`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 `tdToken`\
-[in]要检索的类型标记。
+中要检索的类型的标记。
 
 `ppField`\
-[out]返回由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的类型。
+弄返回由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)表示的类型。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::GetTypeFromToken(
@@ -91,5 +91,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

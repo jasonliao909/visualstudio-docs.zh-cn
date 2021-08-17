@@ -1,6 +1,6 @@
 ---
-description: IDebugFunctionObject：：计算调用函数并将生成的值作为对象返回。
-title: IDebugFunctionObject：：求值 |Microsoft Docs
+description: IDebugFunctionObject：：Evaluate 调用 函数，并返回结果值作为 对象。
+title: IDebugFunctionObject：：Evaluate |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121451986"
 ---
 # <a name="idebugfunctionobjectevaluate"></a>IDebugFunctionObject::Evaluate
-调用函数并将生成的值作为对象返回。
+调用 函数，将结果值作为 对象返回。
 
 ## <a name="syntax"></a>语法
 
@@ -49,22 +49,22 @@ int Evaluate(
 
 ## <a name="parameters"></a>参数
 `ppParams`\
-中表示输入参数的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组。 其中每个参数都是用 `Create` [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口中的一个方法创建的。
+[in]表示 [输入参数的 IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组。 每个参数都使用 `Create` [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口中的方法之一创建。
 
 `dwParams`\
-中数组中参数的数目 `ppParams` 。
+[in]数组中的参数 `ppParams` 数。
 
 `dwTimeout`\
-中指定从此方法返回之前要等待的最长时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
+[in]指定在从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
 
 `ppResult`\
-弄返回一个 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) ，它表示函数的值作为对象。
+[out]返回 [一个 IDebugObject，](../../../extensibility/debugger/reference/idebugobject.md) 它以 对象表示函数的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法设置并执行对 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象所表示的函数的调用。
+ 此方法设置并执行对 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象表示的函数的调用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

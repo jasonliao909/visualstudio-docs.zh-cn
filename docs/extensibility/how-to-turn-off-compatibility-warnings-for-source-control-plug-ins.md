@@ -43,8 +43,8 @@ ms.locfileid: "121448268"
 
      如果源代码管理插件未显式支持多个项目的重新 (即，如果一次只能签入一个文件和项目，则会显示此) 。
 
-     最好支持重新 (功能 `SCC_CAP_REENTRANT`) ;这样做会删除此警告。 但是，如果无法提供此支持，可以设置这些注册表项。
+     最好支持重新 (功能 `SCC_CAP_REENTRANT`) ;这样做将删除此警告。 但是，如果无法提供此支持，可以设置这些注册表项。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [功能标志](../extensibility/capability-flags.md)

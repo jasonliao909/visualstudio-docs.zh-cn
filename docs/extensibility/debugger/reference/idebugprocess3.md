@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16292416d3d915bb5093de292a491ba91a172d42522fdd78a02f9377182480b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2e1b2961911a44e1eb23a3929146ddfe0a09bb1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057598"
 ---
 # <a name="idebugprocess3"></a>IDebugProcess3
 此接口表示正在运行的进程及其程序。 此接口作为对 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口中多个方法的替换而存在。 它提供对进程中的所有程序的控制。

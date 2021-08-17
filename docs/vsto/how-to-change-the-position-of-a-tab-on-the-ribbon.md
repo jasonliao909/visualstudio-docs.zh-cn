@@ -12,17 +12,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: dc0b4548ffa4e5efa75734b5528a7021cf122bfa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93ce719b8db2280029ad4302adb2afc1e08140de
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106336"
 ---
 # <a name="how-to-change-the-position-of-a-tab-on-the-ribbon"></a>如何：更改功能区上选项卡的位置
-  您可以使用 " **Tab 集合编辑器**" 更改功能区上自定义选项卡的顺序。 可以在功能区上的内置选项卡之前或之后放置自定义选项卡。 内置选项卡是 Microsoft Office 应用程序的功能区上已经存在的选项卡。 例如，" **数据** " 选项卡是 Excel 中的内置选项卡。
+  您可以使用 " **Tab 集合编辑器**" 更改功能区上自定义选项卡的顺序。 可以在功能区上的内置选项卡之前或之后放置自定义选项卡。 内置选项卡是 Microsoft Office 应用程序的功能区上已经存在的选项卡。 例如，"**数据**" 选项卡是 Excel 中的内置选项卡。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -34,7 +35,7 @@ ms.locfileid: "99921918"
 
 3. 右键单击功能区设计器，然后单击 " **属性**"。
 
-4. 在 " **属性** " 窗口中，选择 " **选项卡** " 属性，然后单击省略号按钮 (![ASP.NET mobile 设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号") "" 椭圆形) 。
+4. 在 "**属性**" 窗口中，选择 "**选项卡**" 属性，然后单击省略号按钮 (![ASP.NET mobile 设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"") "。
 
      此时将显示 " **Tab 集合编辑器** "。
 
@@ -56,9 +57,9 @@ ms.locfileid: "99921918"
 
 5. 将 **OfficeId** 属性设置为内置选项卡的控件 ID。
 
-     有关控件 Id 的列表，请参阅 [office 2010 帮助文件： office 熟知用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
+     有关控件 id 的列表，请参阅[Office 2010 帮助文件： Office 熟知的用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

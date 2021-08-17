@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3de687879a74c92c39331ca6668e29d7a3c77014a19cd3c7138eb396f2b52c78
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a2a66db404501048a3eeaffafaf4ab0b51ac813
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384348"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106271"
 ---
 # <a name="how-to-programmatically-apply-color-to-excel-ranges"></a>如何：以编程方式将颜色应用于Excel范围
   若要将颜色应用于单元格范围内的文本，请使用控件或本机Excel <xref:Microsoft.Office.Tools.Excel.NamedRange> 范围对象。

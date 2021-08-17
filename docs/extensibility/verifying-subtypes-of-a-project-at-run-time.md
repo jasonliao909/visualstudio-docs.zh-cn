@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fca9d6b7a85de4e9c63f459d1ace0e832143f182a664cad7b6186007dd703a27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b797d8b13ec9f4c8a2d968fa0e363e74b5fa465c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121387793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056714"
 ---
 # <a name="verify-subtypes-of-a-project-at-run-time"></a>在运行时验证项目的子类型
 依赖于自定义项目子类型的 VSPackage 应该包含用于查找子类型的逻辑，以便在子类型不存在时可以正常失败。 下面的过程演示如何验证是否存在指定的子类型。

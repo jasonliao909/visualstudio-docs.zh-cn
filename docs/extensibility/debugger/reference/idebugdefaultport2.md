@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a606358b708b49f866063eeefc25b4e0c3fec44cab9fa8689492a475faeb3749
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aee136be82e6037a7a860735f6b262c1e6286ca7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417491"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079319"
 ---
 # <a name="idebugdefaultport2"></a>IDebugDefaultPort2
 此接口提供了几种用于访问端口的服务器和通知设施的方法。
@@ -31,7 +31,7 @@ IDebugDefaultPort2 : IDebugPort2
 ```
 
 ## <a name="notes-for-implementers"></a>实现者说明
- Visual Studio实现此接口来表示用于访问程序调试端口。 如果自定义端口供应商处理远程调试，它也可以实现此接口。
+ Visual Studio此接口来表示用于访问程序调试端口。 如果自定义端口供应商处理远程调试，它也可以实现此接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
  [IDebugProgramProvider2 接口](../../../extensibility/debugger/reference/idebugprogramprovider2.md)上的方法的参数提供此接口。 在[IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)也可以获取此接口。

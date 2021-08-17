@@ -57,6 +57,6 @@ IDebugManagedObject : IDebugObject
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [评估](../../../extensibility/debugger/reference/idebugfunctionobject-evaluate.md)

@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式创建新的 Visio 文档
-description: 了解如何以编程方式创建新的 Microsoft Visio 绘图文档并将其添加到打开的 Visio 文档的文档集合中。
+description: 了解如何以编程方式创建新的 Microsoft Visio 绘图文档并将其添加到打开 Visio 文档的文档集合中。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4b12b7e94109391928ad7c83387917e5934ae1c7
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 090ae76b96e4bf108a020474e7b21d6eeabcbc34
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106076"
 ---
 # <a name="how-to-programmatically-create-new-visio-documents"></a>如何：以编程方式创建新的 Visio 文档
   创建新的 Microsoft Office Visio 绘图文档时，会将其添加到所打开 Visio 文档的 `Microsoft.Office.Interop.Visio.Documents` 集合中。 随后，`Microsoft.Office.Interop.Visio.Documents.Add` 方法会创建一个新的 Visio 绘图文档。 有关详细信息，请参阅 [Microsoft.Office.Interop.Visio.Documents.Add](/office/vba/api/Visio.Documents.Add) 方法的 VBA 参考文档。
@@ -55,7 +56,7 @@ ms.locfileid: "107825311"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet3":::
 
 ## <a name="create-documents-based-on-existing-templates"></a>基于现有模板创建文档
- `Microsoft.Office.Interop.Visio.Documents.Add`方法可以 (一个基于现有 Visio 模板 () 文件) *的* *.vsd* 文件创建新文档。 此方法会复制作为模板工作区一部分的模具、样式和设置。 你必须提供模板的文件名称和完全限定路径。
+ `Microsoft.Office.Interop.Visio.Documents.Add`方法可以 (基于) 的现有 Visio (模板的一个 *.vsd* 文件创建新文档) 。  此方法会复制作为模板工作区一部分的模具、样式和设置。 你必须提供模板的文件名称和完全限定路径。
 
 ### <a name="to-create-a-new-document-that-is-based-on-an-existing-template"></a>创建基于现有模板的新文档
 
@@ -67,11 +68,11 @@ ms.locfileid: "107825311"
 ## <a name="compile-the-code"></a>编译代码
  此代码示例要求满足以下条件：
 
-- 名为的 Visio 文档 `myDrawing.vsd` 必须位于 `Test` windows XP 和更早) 版本的 " *我的文档* " 文件夹 (中名为的目录中，或 windows Vista)  (的 *documents* 文件夹中。
+- 名为的 Visio 文档 `myDrawing.vsd` 必须位于 " `Test` *我的文档*" 文件夹中名为 "我的文档" 文件夹中的目录 (用于 Windows XP 和更早版本) 或 (Vista Windows 的 "*文档*" 文件夹) 。
 
-- 名为的 Visio 文档 `myStencil.vss` 必须位于 `Test` windows XP 和更早) 版本的 " *我的文档* " 文件夹 (中名为的目录中，或 windows Vista)  (的 *documents* 文件夹中。
+- 名为的 Visio 文档 `myStencil.vss` 必须位于 " `Test` *我的文档*" 文件夹中名为 "我的文档" 文件夹中的目录 (用于 Windows XP 和更早版本) 或 (Vista Windows 的 "*文档*" 文件夹) 。
 
-- 名为的 Visio 文档 `myTemplate.vst` 必须位于 `Test` windows XP 和更早) 版本的 " *我的文档* " 文件夹 (中名为的目录中，或 windows Vista)  (的 *documents* 文件夹中。
+- 名为的 Visio 文档 `myTemplate.vst` 必须位于 " `Test` *我的文档*" 文件夹中名为 "我的文档" 文件夹中的目录 (用于 Windows XP 和更早版本) 或 (Vista Windows 的 "*文档*" 文件夹) 。
 
 ## <a name="see-also"></a>请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)
