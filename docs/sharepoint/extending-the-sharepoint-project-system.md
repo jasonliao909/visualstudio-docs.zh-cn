@@ -31,7 +31,7 @@ ms.locfileid: "121425383"
 
  项目SharePoint是一Visual Studio项目，其中包含一个或多个SharePoint项目项。 SharePoint还包含其他组件，这些组件定义如何将项目项分组到要部署的功能和包中。
 
- 有关项目项和SharePoint项目SharePoint的详细信息，请参阅为项目项 创建SharePoint[模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
+ 有关项目项和SharePoint项SharePoint的详细信息，请参阅为项目项 创建SharePoint[模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
 ## <a name="how-to-extend-the-sharepoint-project-system"></a>如何扩展SharePoint系统
  可以通过以下SharePoint扩展项目系统：
@@ -49,9 +49,9 @@ ms.locfileid: "121425383"
 
 - 使用项目项和几种不同类型的项目文件保存自定义字符串数据。 有关详细信息，请参阅[将数据保存在项目系统的](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)扩展SharePoint中。
 
-- 将项目系统中SharePoint转换为自动化对象模型Visual Studio或集成对象模型中的相应对象，反之亦然。 有关详细信息，请参阅在项目[SharePoint类型和其他项目类型Visual Studio之间。](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
+- 将项目系统中SharePoint转换为自动化对象模型Visual Studio集成对象模型中的相应对象，反之亦然。 有关详细信息，请参阅在项目[SharePoint类型和其他项目类型Visual Studio之间。](../sharepoint/converting-between-sharepoint-project-system-types-and-other-visual-studio-project-types.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [定义自定义SharePoint项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [扩展SharePoint项](../sharepoint/extending-sharepoint-project-items.md)
 - [扩展SharePoint项目](../sharepoint/extending-sharepoint-projects.md)

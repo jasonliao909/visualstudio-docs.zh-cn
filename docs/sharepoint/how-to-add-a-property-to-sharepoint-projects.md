@@ -38,13 +38,13 @@ ms.locfileid: "121425331"
 3. 在 事件的事件处理程序中，将 properties 类的实例添加到事件参数 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> 参数的集合。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示如何向项目添加两SharePoint属性。 一个属性将数据持久保存于 *.csproj.user 文件或 .vbproj.user*  (中的项目用户选项) 。 另一个属性在 *.csproj 文件或 .vbproj* 文件 (中保存其) 。
+ 下面的代码示例演示如何向项目添加两SharePoint属性。 一个属性将数据持久保存于 *.csproj.user 文件或 .vbproj.user*  (中的项目用户选项) 。 另一个属性在 *.csproj 文件或 .vbproj* (文件中保留其) 。
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet1":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet1":::
 
 ### <a name="understand-the-code"></a>了解代码
- 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象添加到项目的 `CustomProjectProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当再次发生此事件时，代码将检索此对象。 有关使用 属性将数据与项目关联的详细信息，请参阅将自定义数据与 SharePoint <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [工具扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 为了确保每次发生事件时都使用相同的 类实例，代码示例在首次发生此事件时将 properties 对象添加到项目的 `CustomProjectProperties` <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性中。 每当再次发生此事件时，代码将检索此对象。 有关使用 属性将数据与项目关联的详细信息，请参阅将自定义数据与SharePoint <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> [扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
 
  若要保留对属性值的更改，属性的 **set** 访问器使用以下 API：
 
@@ -83,7 +83,7 @@ ms.locfileid: "121425331"
 ## <a name="deploy-the-extension"></a>部署扩展
  若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展SharePoint项目](../sharepoint/extending-sharepoint-projects.md)
 - [如何：创建SharePoint扩展](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 - [如何：向项目添加SharePoint菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-sharepoint-projects.md)

@@ -396,7 +396,7 @@ namespace Company.CompartmentDrag
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [响应并传播更改](../modeling/responding-to-and-propagating-changes.md)
 - [修饰器的属性](../modeling/properties-of-decorators.md)

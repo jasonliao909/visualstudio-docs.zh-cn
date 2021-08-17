@@ -78,7 +78,7 @@ ms.locfileid: "121429142"
 
      `foreach (Book book in this.Library) { ... }`
 
-     有关详细信息，请参阅 入门 [语言Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) 语言和从语言生成 [Domain-Specific代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+     有关详细信息，请参阅使用 [入门 语言Domain-Specific](../modeling/getting-started-with-domain-specific-languages.md) 和从语言生成Domain-Specific [代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="get-data-from-visual-studio"></a>从数据Visual Studio
  若要使用 Visual Studio 中提供的服务，请设置 `hostSpecific` 属性并加载 `EnvDTE` 程序集。 例如：
