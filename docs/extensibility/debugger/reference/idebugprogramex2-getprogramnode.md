@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: edcf9f66bef0ac2c8c5d6a4fd8df807772aee6cca07e319936041596f42783b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9ddef19d4b8e889639c3f7d4deaccfbef0d676ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449230"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071543"
 ---
 # <a name="idebugprogramex2getprogramnode"></a>IDebugProgramEx2::GetProgramNode
 获取与程序关联的程序节点。
@@ -48,6 +48,6 @@ int GetProgramNode(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

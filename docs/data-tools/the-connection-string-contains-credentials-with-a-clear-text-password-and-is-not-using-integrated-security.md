@@ -29,14 +29,14 @@ ms.locfileid: "121346812"
 
 ## <a name="save-options"></a>保存选项
 
-- 若要保存包含敏感信息的连接字符串，请选择"是 **"。**
+- 若要保存包含敏感信息的连接字符串，请选择 **"是"**。
 
    连接字符串将存储为应用程序设置。 连接字符串以纯文本形式包含敏感信息。 DBML 文件不包含敏感信息。
 
-- 若要保存连接字符串而不保存敏感信息，请选择"否 **"。**
+- 若要保存不包含敏感信息的连接字符串，请选择 " **否**"。
 
    连接字符串将存储为应用程序设置，但不包含密码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

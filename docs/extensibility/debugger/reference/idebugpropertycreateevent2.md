@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: edd4b94de54221108962ce6b948fb4a782d57f4cc8a08922c20051a29ed370fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 124f404ef5c43bd09ec4cab4489a5709dfb7f0d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402345"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071251"
 ---
 # <a name="idebugpropertycreateevent2"></a>IDebugPropertyCreateEvent2
 当调试引擎创建与特定文档关联的属性时，此接口由调试引擎 (DE) 发送到会话调试管理器 (SDM) 。

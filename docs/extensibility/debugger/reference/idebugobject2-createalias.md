@@ -51,6 +51,6 @@ int CreateAlias(
 ## <a name="remarks"></a>备注
  别名是一个标签，表示对象在内存中的特定对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)

@@ -1,6 +1,6 @@
 ---
-title: Office 项目中的事件
-description: 了解每个 Office 项目模板如何生成多个事件处理程序以及这些事件处理程序与 VSTO 外接程序的事件处理程序略有不同。
+title: 项目中Office事件
+description: 了解每个Office模板如何生成多个事件处理程序，以及这些事件处理程序与外接程序的事件处理程序VSTO略有不同。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -32,16 +32,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: be1625be3d8c3fce409562be948c83a34d40d7b1
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 4eee6a66e8cd9d0a9868af75bc68ad249be76827
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038040"
 ---
-# <a name="events-in-office-projects"></a>Office 项目中的事件
+# <a name="events-in-office-projects"></a>项目中Office事件
   每个 Office 项目模板都会自动生成若干事件处理程序。 文档级自定义项的事件处理程序与 VSTO 外接程序的事件处理程序略有不同。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -50,7 +51,7 @@ ms.locfileid: "107825675"
  Visual Studio 在文档级自定义项中新的或现有的文档或工作表之后提供生成的代码。 此代码引发两个不同的事件： **Startup** 和 **Shutdown**。
 
 ### <a name="startup-event"></a>Startup 事件
- 在文档正在运行和程序集中的所有初始化代码均已运行之后，将为每个主机项（文档、工作簿或工作表）引发 **Startup** 事件。 它是要在你的代码在其中运行的类的构造函数中运行的最后一步。 有关宿主项的详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
+ 在文档正在运行和程序集中的所有初始化代码均已运行之后，将为每个主机项（文档、工作簿或工作表）引发 **Startup** 事件。 它是要在你的代码在其中运行的类的构造函数中运行的最后一步。 有关主机项详细信息，请参阅主机 [项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
  当创建文档级项目时，Visual Studio 将在生成的代码文件中创建 **Startup** 事件的事件处理程序：
 
@@ -102,7 +103,7 @@ ms.locfileid: "107825675"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet83":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet83":::
 
-### <a name="order-of-events-in-document-level-excel-projects"></a>文档级 Excel 项目中事件的顺序
+### <a name="order-of-events-in-document-level-excel-projects"></a>文档级项目的事件Excel顺序
  Excel 项目中 **Startup** 事件处理程序的调用顺序如下：
 
 1. `ThisWorkbook_Startup`.
@@ -130,21 +131,21 @@ ms.locfileid: "107825675"
     在编译项目时确定顺序。 如果用户在运行时重新排列工作表，则不会更改下次打开或关闭该工作簿时引发事件的顺序。
 
 ## <a name="vsto-add-in-projects"></a>VSTO 外接程序项目
- Visual Studio 在 VSTO 外接程序中提供生成的代码。此代码引发两个不同的事件： <xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 。
+ Visual Studio外接程序中VSTO生成的代码。此代码引发两个不同的事件： <xref:Microsoft.Office.Tools.AddInBase.Startup> 和 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 。
 
 ### <a name="startup-event"></a>Startup 事件
  在已加载 VSTO 外接程序并且已运行程序集中的所有初始化代码之后，将引发 <xref:Microsoft.Office.Tools.AddIn.Startup> 事件。 此事件由生成的代码文件中的 `ThisAddIn_Startup` 方法处理。
 
  `ThisAddIn_Startup` 事件处理程序中的代码是要运行的第一个用户代码，除非你的 VSTO 外接程序替代 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A> 方法。 在这种情况下，将在 `ThisAddIn_Startup` 之后调用 <xref:Microsoft.Office.Tools.AddInBase.RequestComAddInAutomationService%2A>事件处理程序。
 
- `ThisAdd-In_Startup`如果代码要求打开文档，请不要在事件处理程序中添加代码。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅在 [Office 应用程序启动时访问文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。
+ 如果代码需要打开文档，请不要 `ThisAdd-In_Startup` 在事件处理程序中添加代码。 相反，请将该代码添加到用户创建或打开文档时 Office 应用程序引发的事件。 有关详细信息，请参阅在[应用程序启动时访问Office文档](../vsto/programming-vsto-add-ins.md#AccessingDocuments)。
 
- 有关 VSTO 外接程序的启动顺序的详细信息，请参阅 [Vsto 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)。
+ 有关外接程序的启动VSTO，请参阅外接程序[VSTO体系结构](../vsto/architecture-of-vsto-add-ins.md)。
 
 ### <a name="shutdown-event"></a>Shutdown 事件
  即将卸载你的代码加载在其中的应用程序域时，将引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 此事件由生成的代码文件中的 `ThisAddIn_Shutdown` 方法处理。 此事件处理程序是在卸载 VSTO 外接程序时要运行的最后一个用户代码。
 
-#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>Outlook VSTO 外接程序中的 Shutdown 事件
+#### <a name="shutdown-event-in-outlook-vsto-add-ins"></a>外接程序Outlook VSTO关闭事件
  仅当用户使用 Outlook 中的 COM 外接程序对话框禁用 VSTO 外接程序时才引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 在 Outlook 退出时不引发该事件。 如果具有在 Outlook 退出时必须运行的代码，请处理任一以下事件：
 
 - <xref:Microsoft.Office.Interop.Outlook.ApplicationEvents_11_Event.Quit> 对象的 <xref:Microsoft.Office.Interop.Outlook.Application> 事件。
@@ -152,11 +153,11 @@ ms.locfileid: "107825675"
 - <xref:Microsoft.Office.Interop.Outlook.ExplorerEvents_10_Event.Close> 对象的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 事件。
 
 > [!NOTE]
-> 当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅 [Outlook 2010 的关闭更改](/previous-versions/office/developer/office-2010/ee720183(v=office.14))。
+> 当 Outlook 通过修改注册表退出时，可以强制它引发 <xref:Microsoft.Office.Tools.AddInBase.Shutdown> 事件。 但是，如果管理员还原了此设置，则当 Outlook 退出时，你添加到 `ThisAddIn_Shutdown` 方法的任何代码均将不再运行。 有关详细信息，请参阅[2010 Outlook的关闭更改](/previous-versions/office/developer/office-2010/ee720183(v=office.14))。
 
-## <a name="see-also"></a>另请参阅
-- [开发 Office 解决方案](../vsto/developing-office-solutions.md)
-- [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
-- [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
-- [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
-- [Office 项目模板概述](../vsto/office-project-templates-overview.md)
+## <a name="see-also"></a>请参阅
+- [开发Office解决方案](../vsto/developing-office-solutions.md)
+- [如何：在 Office 创建Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
+- [计划文档级自定义项](../vsto/programming-document-level-customizations.md)
+- [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)
+- [Office项目模板概述](../vsto/office-project-templates-overview.md)

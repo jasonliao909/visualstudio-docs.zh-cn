@@ -45,7 +45,7 @@ ms.locfileid: "121452636"
 |GUID|必需。 GUID/ID 命令标识符的 GUID。|
 |id|必需。 GUID/ID 命令标识符的 ID。|
 |priority|可选。 一个指定优先级的数值。|
-|类型|可选。 一个枚举值，该值指定按钮类型。<br /><br /> 如果未提供，则使用 Button。<br /><br /> Button<br /> 工具栏上显示的标准命令通常 (菜单和上下文菜单上的) 按钮。<br /><br /> MenuButton<br /> 不执行命令但生成另一个菜单的菜单项。<br /><br /> SplitDropDown<br /> 控件，如中标准工具栏上的"撤消"和"重做Microsoft Word。|
+|类型|可选。 一个枚举值，该值指定按钮类型。<br /><br /> 如果未提供，则使用 Button。<br /><br /> Button<br /> 工具栏上显示的标准命令通常 (菜单、菜单和上下文菜单) 按钮。<br /><br /> MenuButton<br /> 不执行命令但生成另一个菜单的菜单项。<br /><br /> SplitDropDown<br /> 控件，如标准工具栏上的"撤消"和"重做"Microsoft Word。|
 |条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
@@ -79,5 +79,5 @@ ms.locfileid: "121452636"
 </Button>
  ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

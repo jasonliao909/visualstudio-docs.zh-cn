@@ -11,17 +11,18 @@ ms.assetid: ac103ec5-771c-4667-92de-b5abb53bbb52
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca265d73cf54ce04f4ef3c25ee52ace94d269074
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72ea6404413bb4839789a75b0aaa9314440ec30b633293df49d67d6603fc49b3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059595"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293295"
 ---
 # <a name="bp_resolution_code"></a>BP_RESOLUTION_CODE
 描述代码断点的位置。
@@ -54,7 +55,7 @@ public struct BP_RESOLUTION_CODE {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

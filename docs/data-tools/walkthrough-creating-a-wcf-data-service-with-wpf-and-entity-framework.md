@@ -43,14 +43,14 @@ ms.locfileid: "121346541"
 
 - 可以选择向应用程序添加筛选功能。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 本演练使用 SQL Server Express LocalDB和 Northwind 示例数据库。
 
-1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express) **Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
+1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express)**Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。 **(SQL Server 对象资源管理器** 作为数据存储和处理工作负荷的一部分安装在 Visual Studio 安装程序.) 展开 **SQL Server节点。**  右键单击实例LocalDB并选择"新建 **查询"。**
+    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。 **(SQL Server 对象资源管理器** 作为 Visual Studio 安装程序.) 的数据存储和处理工作负荷的一部分安装，展开 **SQL Server节点。** 右键单击实例LocalDB并选择"新建 **查询"。**
 
        查询编辑器窗口随即打开。
 
@@ -147,7 +147,7 @@ ms.locfileid: "121346541"
 
 8. 关闭浏览器窗口。
 
-在以下步骤中，将创建一Windows Forms 客户端应用程序来使用该服务。
+在接下来的步骤中，将创建一Windows Forms 客户端应用程序以使用该服务。
 
 ## <a name="creating-the-client-application"></a>创建客户端应用程序
 若要创建客户端应用程序，请添加另一个项目，再添加该项目的服务引用，配置数据源，并创建用户界面以显示服务中的数据。
@@ -156,7 +156,7 @@ ms.locfileid: "121346541"
 
 ### <a name="to-create-the-client-application"></a>创建客户端应用程序
 
-1. 在菜单栏上，选择"文件"，然后选择 **"**  >  **添加新Project"。**
+1. 在菜单栏上，选择"文件"，**然后选择"**  >  **添加新Project"。**
 
 2. 在"**新建Project"** 对话框中，展开"Visual Basic"或 **"Visual C#"** 节点，选择 **Windows节点，** 然后选择"Windows **应用程序"。**
 
@@ -182,7 +182,7 @@ ms.locfileid: "121346541"
 
 ### <a name="to-enable-data-binding-to-the-service"></a>启用对服务的数据绑定
 
-1. 在菜单栏上，选择 **"查看**  >  **其他Windows**  >  **数据源"。**
+1. 在菜单栏上，选择"**查看**  >  **其他Windows**  >  **数据源"。**
 
    “数据源”窗口随即打开。
 
@@ -234,20 +234,20 @@ ms.locfileid: "121346541"
    }
    ```
 
-6. 在“解决方案资源管理器”中，打开“NorthwindCustomers.svc”文件的快捷菜单，然后选择“在浏览器中查看”。 Internet Explorer 随即打开，并显示该服务的 XML 架构。
+6. 在“解决方案资源管理器”中，打开“NorthwindCustomers.svc”文件的快捷菜单，然后选择“在浏览器中查看”。 Internet Explorer打开，并显示服务的 XML 架构。
 
 7. 从 Internet Explorer 地址栏中复制 URL。
 
 8. 在步骤 4 中添加的代码中，选择 `http://localhost:53161/NorthwindCustomers.svc/` 并使用刚刚复制的 URL 替换它。
 
-9. 在菜单栏上，选择 "**调试**  >  " "**启动调试**" 以运行应用程序。 显示客户信息。
+9. 在菜单栏上，选择"**调试**  >  **""开始调试**"以运行应用程序。 将显示客户信息。
 
    现在，你有了一个可以使用的应用程序，该应用程序将显示 NorthwindCustomers 服务中的客户的列表。 如果希望通过该服务公开其他数据，则可以修改[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)]以包括 Northwind 数据库中的其他表。
 
-下一个可选步骤介绍如何筛选服务返回的数据。
+下一个可选步骤将了解如何筛选服务返回的数据。
 
 ## <a name="adding-filtering-capabilities"></a>添加筛选功能
-在此步骤中，将自定义应用程序以按客户的城市筛选数据。
+在此步骤中，自定义应用程序以按客户的城市筛选数据。
 
 ### <a name="to-add-filtering-by-city"></a>添加根据城市进行筛选的功能
 
@@ -255,7 +255,7 @@ ms.locfileid: "121346541"
 
 2. 将“工具箱”中的 <xref:System.Windows.Forms.TextBox> 控件和 <xref:System.Windows.Forms.Button> 控件添加到窗体。
 
-3. 打开该控件的快捷菜单 <xref:System.Windows.Forms.Button> ，选择 " **查看代码**"，然后在 `Button1_Click` 事件处理程序中添加以下代码：
+3. 打开 控件的快捷 <xref:System.Windows.Forms.Button> 菜单，选择" **查看代码**"，然后在事件处理程序中添加 `Button1_Click` 以下代码：
 
     ```vb
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
@@ -286,11 +286,11 @@ ms.locfileid: "121346541"
 
 4. 在以上代码中，使用 `http://localhost:53161/NorthwindCustomers.svc` 事件处理程序中的 URL 替换 `Form1_Load`。
 
-5. 在菜单栏上，选择 "**调试**  >  " "**启动调试**" 以运行应用程序。
+5. 在菜单栏上，选择"**调试**  >  **""开始调试**"以运行应用程序。
 
 6. 在文本框中，输入“London”，然后选择该按钮。 将仅显示来自 London 的客户。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [如何：添加、更新或删除 WCF 数据服务引用](../data-tools/how-to-add-update-or-remove-a-wcf-data-service-reference.md)
