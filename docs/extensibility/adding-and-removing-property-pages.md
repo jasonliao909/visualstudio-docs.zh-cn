@@ -18,12 +18,12 @@ dev_langs:
 - VB
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4f0a15678255949d9e7fa9f6110476daf38b85697c338d8ee476a97a46949cd9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4b79377258084cafd41b031504a983f6a23d109
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121418033"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073612"
 ---
 # <a name="add-and-remove-property-pages"></a>添加和删除属性页
 
@@ -209,6 +209,6 @@ Project 设计器提供一个集中位置，用于管理中的项目属性、设
     }
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Project 子类型](../extensibility/internals/project-subtypes.md)

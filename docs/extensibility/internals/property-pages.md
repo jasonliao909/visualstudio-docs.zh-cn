@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63660d52f6b5707d4e667da07e5d4ccfa38dae7d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f849a55822502eb290466ecda5cf712d0ea83d36c968027cb19369c3714ce20b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028951"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275445"
 ---
 # <a name="property-pages"></a>属性页
 用户可以使用属性页查看和更改与项目配置相关的和独立的属性。 "**属性页**"按钮在"属性"窗口或解决方案资源管理器工具栏上为提供所选对象的属性页视图的对象启用。 属性页由环境创建，可用于解决方案和项目。 但是，它们还可用于使用配置依赖属性的项目项。 当项目中的文件需要不同的编译器开关设置以正确生成时，可能会使用此功能。
@@ -28,7 +28,7 @@ ms.locfileid: "122028951"
 ## <a name="using-property-pages"></a>使用属性页
  如果属性页已显示，并且选择 (例如，从解决方案更改到项目) ，则页面中显示的信息会更改以显示新选择的属性。 如果对象上没有支持属性页的属性，则属性页为空。
 
- 如果选择了多个对象，则属性页将显示所有选定项的属性交集。 如果所选项不包含与配置相关的属性，并且单击了解决方案资源管理器工具栏上的"属性页"按钮，则焦点将属性窗口。 有关属性和选择属性窗口，请参阅 [扩展属性](../../extensibility/internals/extending-properties.md)。
+ 如果选择了多个对象，则属性页将显示所有选定项的属性交集。 如果所选项不包含与配置相关的属性，并且单击了解决方案资源管理器工具栏上的"属性页"按钮，则焦点将属性窗口。 有关属性和选择属性窗口，请参阅扩展 [属性](../../extensibility/internals/extending-properties.md)。
 
  如果为多个对象显示属性，并且你在属性页上更改了值，则对象的所有值都设置为新值，即使它们最初不同，并且显示单个对象的属性时页为空。
 
@@ -40,7 +40,7 @@ ms.locfileid: "122028951"
 
  属性页上只有两个顶级 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 类别可用：
 
-- 通用属性，显示所选对象与配置无关的信息。 因此，选择其中一个"通用属性"子类别时，对话框顶部的"配置配置服务器"和"属性"选项将不可用。
+- 通用属性，显示所选对象与配置无关的信息。 因此，选择其中一个"通用属性"子类别时，对话框顶部的"配置配置服务器"和"配置"选项将不可用。
 
 - 配置属性，其中包含与解决方案或项目的调试、优化和生成参数相关的配置相关信息。
 
@@ -60,7 +60,7 @@ ms.locfileid: "122028951"
 
   ![VC 属性页](../../extensibility/internals/media/vsvcproppages.gif "vsVCPropPages") 包含属性网格的"属性页"对话框
 
-  在 `IVSMDPropertyBrowser` vsmanaged.h (中声明的接口和) 用于在对话框或窗口中创建和填充 `IVSMDPropertyGrid` 属性网格。
+  vsmanaged.h (中声明的接口和) 用于在对话框或窗口中创建和填充 `IVSMDPropertyBrowser` `IVSMDPropertyGrid` 属性网格。
 
   项目的体系结构与以前版本的 发生了很大的变化 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 具体而言，哪个项目处于活动状态的概念已更改。 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中，没有活动项目的概念。 在以前的开发环境中，活动项目是生成和部署命令的项目默认为 ，而不考虑上下文。 现在，解决方案控制和配置哪些生成和部署命令适用于哪些项目。
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9d5ca146b3e44b30e73365df9c37cb06bb9b24204f01dd09828b1756c92341
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad634ddce8f42c8bf5e183ebdf8f75389553dba5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434615"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073430"
 ---
 # <a name="breakpoint-related-methods"></a>与断点相关的方法
 DE (调试) 必须支持断点设置。 Visual Studio调试支持以下类型的断点：
@@ -32,10 +32,10 @@ DE (调试) 必须支持断点设置。 Visual Studio调试支持以下类型的
 
      通过 UI 请求但尚未绑定到实际指令
 
-## <a name="discussion"></a>讨论区
+## <a name="discussion"></a>讨论 (Discussion)
  例如，当指令尚未加载时，会出现挂起的断点。 加载代码时，挂起的断点会尝试绑定到指定位置的代码，即，在代码中插入中断指令。 事件发送到会话调试管理器 (SDM) 以指示绑定成功或通知存在绑定错误。
 
- 挂起的断点还管理其自己的相应绑定断点的内部列表。 一个挂起的断点可能会导致在代码中插入多个断点。 调试Visual Studio UI 显示挂起断点及其相应绑定断点的树视图。
+ 挂起的断点还管理其自己的相应绑定断点的内部列表。 一个挂起的断点可能会导致在代码中插入多个断点。 调试VISUAL STUDIO UI 显示挂起断点及其相应绑定断点的树视图。
 
  创建和使用挂起的断点需要实现 [IDebugEngine2：：CreatePendingBreakpoint](../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md) 方法以及 [以下 IDebugPendingBreakpoint2](../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 接口方法。
 
@@ -85,5 +85,5 @@ DE (调试) 必须支持断点设置。 Visual Studio调试支持以下类型的
 
  在断点查看源代码需要实现 [IDebugStackFrame2：：GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) 和/或 [IDebugStackFrame2：：GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)的方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -59,7 +59,7 @@ IEnumDebugPorts2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugcoreserver2-enumports.md)
 - [EnumPorts](../../../extensibility/debugger/reference/idebugportsupplier2-enumports.md)
