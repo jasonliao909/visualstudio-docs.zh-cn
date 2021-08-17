@@ -1,6 +1,6 @@
 ---
-description: 获取数组的尺寸。
-title: IDebugArrayObject：： GetDimensions |Microsoft Docs
+description: 获取数组的维度。
+title: IDebugArrayObject：：GetDimensions |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 113e0aff-9028-49d6-b104-9fe7be4772d7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ba82b8a921a7295b6521622ff45efc84a9b6742
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e637f1139de8ee6caebea92cc5ca1fe494c206e6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058880"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080008"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
-获取数组的尺寸。
+获取数组的维度。
 
 ## <a name="syntax"></a>语法
 
@@ -41,16 +42,16 @@ int GetDimensions(
 
 ## <a name="parameters"></a>参数
 `dwCount`\
-中要检索的维度数。
+[in]要检索的维度数。
 
 `dwDimensions`\
-[in，out]用每个维度的大小填充的数组。 `dwCount` 指定数组的最大大小 `dwDimensions` 。
+[in， out]用每个维度的大小填充的数组。 `dwCount` 指定数组的最大 `dwDimensions` 大小。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 多维数组每个维度的大小可以不同。 例如，假设有一个三维数组 `myarray[3][2][6]` ，则此方法会在 `dwDimensions` 参数中按顺序返回3、2和6。
+ 多维数组可以具有每个维度的不同大小。 例如，给定三维数组 ，此方法将按该顺序在 参数中返回 `myarray[3][2][6]` 3、2 `dwDimensions` 和 6。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

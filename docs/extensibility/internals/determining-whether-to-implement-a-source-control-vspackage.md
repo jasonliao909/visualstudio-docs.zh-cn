@@ -42,6 +42,6 @@ ms.locfileid: "121359524"
 
 4. 处理查询编辑和查询保存事件 (参阅 [查询编辑查询保存](../../extensibility/internals/query-edit-query-save-source-control-vspackage.md)) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)

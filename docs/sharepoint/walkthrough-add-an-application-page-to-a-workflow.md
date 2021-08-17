@@ -1,6 +1,6 @@
 ---
 title: 演练：向工作流添加应用程序页 |Microsoft Docs
-description: 在本演练中，向 SharePoint 工作流解决方案中添加一个应用程序页。 修改工作流代码。 创建、编码和测试应用程序页。
+description: 在本演练中，将一个应用程序页添加到 SharePoint 工作流解决方案。 修改工作流代码。 创建、编码和测试应用程序页。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,21 +15,22 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d07b5272a31a0c649e12f353aefaa7c63c335eb5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50017d9a7c368bdc9cbcfa5438aec09a63d4508b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047538"
 ---
 # <a name="walkthrough-add-an-application-page-to-a-workflow"></a>演练：将应用程序页添加到工作流
   本演练演示如何将显示从工作流派生的数据的应用程序页添加到工作流项目中。 它基于主题 [演练：创建具有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)中所述的项目。
 
  本演练演示了下列任务：
 
-- 将 ASPX 应用程序页添加到 SharePoint 工作流项目。
+- 将 ASPX 应用程序页添加到 SharePoint 的工作流项目。
 
 - 从工作流项目中获取数据并对其进行操作。
 
@@ -40,7 +41,7 @@ ms.locfileid: "99882656"
 ## <a name="prerequisites"></a>先决条件
  您需要满足以下条件才能完成本演练：
 
-- 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 版本。
+- 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 的版本。
 
 - Visual Studio。
 
@@ -53,7 +54,7 @@ ms.locfileid: "99882656"
 
 1. 从主题 [演练：创建具有关联和启动窗体的工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md) [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
-2. 打开 *Workflow1.cs* 或 *workflow1.xaml* (的代码，具体取决于你的编程语言) 。
+2. 打开 *workflow1.xaml* 或 *workflow1.xaml* (的代码，具体取决于你的编程语言) 。
 
 3. 在该方法的底部 `createTask1_MethodInvoking` ，添加以下代码：
 
@@ -68,11 +69,11 @@ ms.locfileid: "99882656"
     ```
 
 ## <a name="create-an-application-page"></a>"创建应用程序" 页
- 接下来，将 ASPX 窗体添加到项目。 此窗体将显示从费用报表工作流项目中获取的数据。 为此，你将添加一个应用程序页。 应用程序页使用与其他 SharePoint 页相同的母版页，这意味着它将与 SharePoint 站点上的其他页类似。
+ 接下来，将 ASPX 窗体添加到项目。 此窗体将显示从费用报表工作流项目中获取的数据。 为此，你将添加一个应用程序页。 应用程序页使用与其他 SharePoint 页面相同的母版页，这意味着它将类似于 SharePoint 网站上的其他页面。
 
 #### <a name="to-add-an-application-page-to-the-project"></a>向项目添加应用程序页
 
-1. 选择 ExpenseReport 项目，然后在菜单栏上选择 "项目" "   >  **添加新项**"。
+1. 选择 "ExpenseReport" 项目，然后在菜单栏上选择 Project "   >  **添加新项**"。
 
 2. 在 " **模板** " 窗格中，选择 " **应用程序" 页** 模板，使用项目 **项 ("**) " 的默认名称，然后选择 " **添加** " 按钮。
 
@@ -99,7 +100,7 @@ ms.locfileid: "99882656"
     ```
 
 ## <a name="code-the-application-page"></a>编写应用程序页面代码
- 接下来，将代码添加到支出报表摘要应用程序页。 当打开该页面时，代码会扫描 SharePoint 中的任务列表，以获取超出分配的支出限制的支出。 该报表将列出每个项以及费用的总和。
+ 接下来，将代码添加到支出报表摘要应用程序页。 打开此页时，该代码将扫描 SharePoint 中超出分配的支出限制的支出的任务列表。 该报表将列出每个项以及费用的总和。
 
 #### <a name="to-code-the-application-page"></a>编写应用程序页面代码
 
@@ -306,15 +307,15 @@ ms.locfileid: "99882656"
 
 1. 选择 **F5** 键以运行项目并将其部署到 SharePoint。
 
-2. 选择 " **主页** " 按钮，然后选择 "快速启动" 栏上的 " **共享文档** " 链接，以显示 SharePoint 站点上的 "共享文档" 列表。
+2. 选择 "**主页**" 按钮，然后选择 "快速启动" 栏上的 "**共享文档**" 链接，以显示 SharePoint 站点上的 "共享文档" 列表。
 
-3. 若要表示此示例的费用报表，请选择页面顶部的 " **LibraryTools** " 选项卡上的 "**文档**" 链接，并选择工具功能区上的 "**上载文档**" 按钮，将一些新文档上载到 "文档" 列表中。
+3. 若要表示此示例的费用报表，请选择页面顶部的 " **LibraryTools** " 选项卡上的 "**文档**" 链接，并选择工具功能区上的 " **Upload 文档**" 按钮，将一些新文档上载到 "文档" 列表中。
 
-4. 上传一些文档后，可通过选择页面顶部的 " **LibraryTools** " 选项卡上的 **库** 链接，然后选择工具功能区上的 "**库设置**" 按钮来实例化工作流。
+4. 上传一些文档后，可通过选择页面顶部的 " **LibraryTools** " 选项卡上的 **库** 链接来实例化工作流，然后在工具功能区上选择 "**库设置**" 按钮。
 
-5. 在 "**文档库设置**" 页中，选择 "**权限和管理**" 部分中的 "**工作流设置**" 链接。
+5. 在 "**文档库设置**" 页中，在 "**权限和管理**" 部分中选择 "**工作流" 设置** 链接。
 
-6. 在 " **工作流设置** " 页中，选择 " **添加工作流** " 链接。
+6. 在 "**工作流设置**" 页中，选择 "**添加工作流**" 链接。
 
 7. 在 " **添加工作流** " 页面中，选择 " **ExpenseReport-workflow1.xaml** " 工作流，输入工作流的名称（例如 " **ExpenseTest**"），然后选择 " **下一步** " 按钮。
 
@@ -322,7 +323,7 @@ ms.locfileid: "99882656"
 
 8. 在关联窗体中，在 "**自动批准限制**" 框中输入 **1000** ，然后选择 "**关联工作流**" 按钮。
 
-9. 选择 " **主页** " 按钮返回到 SharePoint 主页。
+9. 选择 "**主页**" 按钮，返回到 SharePoint 主页。
 
 10. 选择 "快速启动" 栏上的 " **共享文档** " 链接。
 
@@ -341,15 +342,15 @@ ms.locfileid: "99882656"
      "费用报表摘要" 页列出超出了分配金额的所有支出报表、它们超过了的金额以及所有报表的总金额。
 
 ## <a name="next-steps"></a>后续步骤
- 有关 SharePoint 应用程序页的详细信息，请参阅 [为 Sharepoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。
+ 有关 SharePoint 应用程序页的详细信息，请参阅[创建 SharePoint 的应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)。
 
- 若要详细了解如何使用 Visual Studio 中的 Visual Web Designer 设计 SharePoint 页面内容，请参阅以下主题：
+ 您可以使用以下主题中 Visual Studio 的 Visual Web Designer 来了解有关如何设计 SharePoint 页面内容的详细信息：
 
 - [为 SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)。
 
 - [为 web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：使用关联和启动窗体创建工作流](../sharepoint/walkthrough-creating-a-workflow-with-association-and-initiation-forms.md)
 - [如何：创建应用程序页](../sharepoint/how-to-create-an-application-page.md)

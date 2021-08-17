@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b2a812fa59c8017b6a4296d0172fc2225d099470685450c50e2c618b6bd66f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 115d327411cb3d04f26e44ede6fee0f17ff3d9b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034625"
 ---
 # <a name="pdb_type"></a>PDB_TYPE
 
@@ -59,7 +59,7 @@ public struct PDB_TYPE {
 
 ## <a name="remarks"></a>备注
 
-当 结构的 字段[设置为](../../../extensibility/debugger/reference/type-info.md)从 dwTYPE_KIND 枚举值 (时，此结构在 TYPE_INFO 结构中显示为联合的 `dwKind` `TYPE_INFO` `TYPE_KIND_PDB` 一) 。 [](../../../extensibility/debugger/reference/dwtype-kind.md)
+当 结构的 字段[设置为](../../../extensibility/debugger/reference/type-info.md)从 TYPE_INFO 枚举集合中 (值时，此结构在 dwTYPE_KIND 中显示为联合 `dwKind` `TYPE_INFO` `TYPE_KIND_PDB`) 。 [](../../../extensibility/debugger/reference/dwtype-kind.md)
 
 ## <a name="requirements"></a>要求
 

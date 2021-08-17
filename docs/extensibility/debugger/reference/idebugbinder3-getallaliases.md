@@ -1,6 +1,6 @@
 ---
-description: 此方法从程序检索别名列表。
-title: IDebugBinder3：： GetAllAliases |Microsoft Docs
+description: 此方法从程序中检索别名列表。
+title: IDebugBinder3：：GetAllAliases |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 1f9ab2ee-2ab3-4a61-8b99-95dd7fdf3511
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 04e4f9887ff8cfa68ad4fd4b09d160e3ec2d1eaf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72e8b174888e2484a1b065268045a7bf33194957a909fb9ec71dc7c30a716fdd
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085164"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293048"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
-此方法从程序检索别名列表。
+此方法从程序中检索别名列表。
 
 ## <a name="syntax"></a>语法
 
@@ -46,16 +47,16 @@ int GetAllAliases(
 
 ## <a name="parameters"></a>参数
 `uRequest`\
-中要返回的别名的最大数目 (指定传入) 的数组的长度 `ppAliases` 。
+[in]要返回的最大别名数 (指定传入数组的数组 `ppAliases`) 。
 
 `ppAliases`\
-[in，out]要使用别名填充的数组 (如果这是 null 值且 `uRequest` 为0，则) 返回可返回的别名计数 `puFetched` 。
+[in， out]要用别名填充的数组 (如果此值为 null 且为 0，则返回的别名计数将返回 `uRequest` `puFetched`) 。
 
 `puFetched`\
-弄返回获取的别名数。
+[out]返回获取的别名数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

@@ -1,5 +1,5 @@
 ---
-title: 扩展基本项目对象对象|Microsoft Docs
+title: 扩展基对象对象Project |Microsoft Docs
 description: 了解如何使用项目子类型在 Visual Studio扩展基本项目的自动化对象模型。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
@@ -12,27 +12,28 @@ ms.assetid: 2f95cc53-dff6-476c-bacd-500fb0ff7725
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 175571b374c6a54999b212b316301f3f775891ff
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 20f241515e70f161792279a98bac61bb8801377e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899337"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094810"
 ---
 # <a name="extend-the-object-model-of-the-base-project"></a>扩展基础项目的对象模型
 
 项目子类型可以扩展基项目的自动化对象模型，位置如下：
 
-- Project.Extender (" ") ：这允许项目子类型为对象提供来自 对象的 \<ProjectSubtypeName> 自定义 <xref:EnvDTE.Project> 方法。 项目子类型可以使用自动化扩展程序来公开 `Project` 对象。 在主项目子类型聚合器上实现的接口应为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> `itemid` [VSITEMID 的值相对应。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- Project。扩展 (" \<ProjectSubtypeName> ") ：这允许项目子类型提供对象，该对象具有 来自 对象的自定义 <xref:EnvDTE.Project> 方法。 项目子类型可以使用自动化扩展程序来公开 `Project` 对象。 在主项目子类型聚合器上实现的接口应为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSSPROPID2> `itemid` [VSITEMID 的值相对应。CATID](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 根目录。
 
-- ProjectItem.Extender (" ") ：这允许项目子类型提供具有来自项目中特定对象的 \<ProjectSubtypeName> 自定义 <xref:EnvDTE.ProjectItem> 方法的对象。 项目子类型可以使用自动化扩展程序来公开此对象。 在主项目子类型聚合器上实现的接口需要为来自 的 提供其对象 (与所需的 <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` CATID) <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> 对应。
+- ProjectItem.Extender (" ") ：这允许项目子类型为对象提供来自项目中特定 \<ProjectSubtypeName> 对象的 <xref:EnvDTE.ProjectItem> 自定义方法。 项目子类型可以使用自动化扩展程序来公开此对象。 在主项目子类型聚合器上实现的接口需要为来自 的 提供其对象 (对应于所需的) <xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_ExtObjectCATID` <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> <xref:Microsoft.VisualStudio.VSConstants.VSITEMID> CATID。
 
-- Project.Properties：此集合公开对象的与配置无关的 `Project` 属性。 有关 `Project` 属性的详细信息，请参阅 <xref:EnvDTE.Project.Properties%2A>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口需要为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_BrowseObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> `itemid` [VSITEMID 的值相对应。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
+- Project。属性：此集合公开对象的与配置无关的 `Project` 属性。 有关 `Project` 属性的详细信息，请参阅 <xref:EnvDTE.Project.Properties%2A>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口需要为 来自 的 提供其对象 (<xref:EnvDTE80.IInternalExtenderProvider> `VSHPROPID_BrowseObjectCATID` 与 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID2> `itemid` [VSITEMID 的值相对应。ROOT](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) CATID。
 
-- Configuration.Properties：此集合公开特定配置项目的配置依赖属性 (例如，调试) 。 有关详细信息，请参阅 <xref:EnvDTE.Configuration>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口为 <xref:EnvDTE80.IInternalExtenderProvider> 对应于 `VSHPROPID_CfgBrowseObjectCATID` `itemid` VSITEMID 值的 CATID (提供 [其 对象。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>接口用于区分一个配置浏览对象和另一个配置浏览对象。
+- Configuration.Properties：此集合公开特定配置项目的配置依赖属性 (例如，调试) 。 有关详细信息，请参阅 <xref:EnvDTE.Configuration>。 项目子类型可以使用自动化扩展程序将其属性添加到此集合。 在主项目子类型聚合器上实现的接口为 <xref:EnvDTE80.IInternalExtenderProvider> 对应于 `VSHPROPID_CfgBrowseObjectCATID` VSITEMID 值的 CATID (`itemid` [提供其 对象。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID.Root>)) 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgBrowseObject>接口用于区分一个配置浏览对象和另一个配置浏览对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.__VSFPROPID>

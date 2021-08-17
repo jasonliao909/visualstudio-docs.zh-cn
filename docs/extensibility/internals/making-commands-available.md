@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f845644650c3ed87d0a62543da5a8155dcf806b02b8cb65db30e5297350ee185
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c92d9b34c669f5de4df8b9bd42cfb9e9e53996e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063247"
 ---
 # <a name="making-commands-available"></a>使命令可用
 
@@ -150,7 +150,7 @@ ms.locfileid: "121305550"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将命令添加到解决方案资源管理器工具栏](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

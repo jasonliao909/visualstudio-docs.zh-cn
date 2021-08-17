@@ -13,14 +13,15 @@ ms.assetid: 0930640b-eb84-48ef-a8f7-d4268f55c99c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 33345f86c69d0faeaa5863534e21eca5ecc176cc
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0672f7a4d8788c0efac9e11b5ae3359338791ebbf572fed0a9b12d0e185f00b8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902613"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376451"
 ---
 # <a name="intellisensehostflags"></a>IntelliSenseHostFlags
 指定 IntelliSense 主机标志。
@@ -51,5 +52,5 @@ enum IntellisenseHostFlags
 ## <a name="requirements"></a>要求
  SingleFileeditor .idl
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.TextManager.Interop>

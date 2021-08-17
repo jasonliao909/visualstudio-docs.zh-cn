@@ -11,14 +11,15 @@ ms.assetid: 4fe28074-a960-41ad-b74d-b57f04c0c0ad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96a35f11346b769a4329b1212a8202e5e5ded006
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 994d7d6a23638bfdeb78ba8807e5c6e6d19c39e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058165"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095369"
 ---
 # <a name="ienumdebugmodules2"></a>IEnumDebugModules2
 此接口枚举模块列表。
@@ -33,7 +34,7 @@ IEnumDebugModules2 : IUnknown
  调试引擎 (DE) 实现此接口，以表示为程序加载的模块的列表。
 
 ## <a name="notes-for-callers"></a>调用方说明
- Visual Studio 将调用 [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md) 来获取此接口。
+ Visual Studio 调用[EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)以获取此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugModules2` 。
@@ -47,9 +48,9 @@ IEnumDebugModules2 : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugmodules2-getcount.md)|获取模块的数目。|
 
 ## <a name="remarks"></a>备注
- Visual Studio 将主要使用此接口来更新 " **模块** " 窗口。
+ Visual Studio 使用此接口主要用于更新 "**模块**" 窗口。
 
- 为了在 Visual Studio 中进行调试，程序是可跨模块边界的代码指令的逻辑序列，因此需要一个适用于单个 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 接口的模块列表。 列表中的第一个模块通常包含关联程序的初始入口点。
+ 为了在 Visual Studio 中进行调试，程序是可跨模块边界的代码指令的逻辑序列，因此需要单个[IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)接口的模块列表。 列表中的第一个模块通常包含关联程序的初始入口点。
 
 ## <a name="requirements"></a>要求
  标头： msdbg
@@ -58,7 +59,7 @@ IEnumDebugModules2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [EnumModules](../../../extensibility/debugger/reference/idebugprogram2-enummodules.md)

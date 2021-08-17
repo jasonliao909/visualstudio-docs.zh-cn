@@ -72,63 +72,63 @@ public enum enum_BP_LOCATION_TYPE {
 
 ## <a name="fields"></a>字段
 `BPLT_NONE`\
-指定无断点位置。
+不指定断点位置。
 
 `BPLT_FILE_LINE`\
-以文件行形式指定断点的位置类型。
+将断点的位置类型指定为文件行。
 
 `BPLT_FUNC_OFFSET`\
-指定断点的位置类型作为函数偏移量。
+将断点的位置类型指定为函数偏移量。
 
 `BPLT_CONTEXT`\
 指定断点的位置类型作为上下文。
 
 `BPLT_STRING`\
-以字符串的形式指定断点的位置类型。
+将断点的位置类型指定为字符串。
 
 `BPLT_ADDRESS`\
-指定断点的位置类型作为地址。
+将断点的位置类型指定为地址。
 
 `BPLT_RESOLUTION`\
-指定断点的位置类型作为解析。
+指定断点的位置类型作为分辨率。
 
 `BPLT_CODE_FILE_LINE`\
-以源代码行的形式指定断点的位置类型。
+指定断点的位置类型作为源代码行。
 
 `BPLT_CODE_FUNC_OFFSET`\
-指定断点的位置类型作为代码函数偏移量。
+将断点的位置类型指定为代码函数偏移量。
 
 `BPLT_CODE_CONTEXT`\
 将断点的位置类型指定为代码上下文。
 
 `BPLT_CODE_STRING`\
-指定断点的位置类型作为代码字符串。
+将断点的位置类型指定为代码字符串。
 
 `BPLT_CODE_ADDRESS`\
-指定断点的位置类型作为代码地址。
+将断点的位置类型指定为代码地址。
 
 `BPLT_DATA_STRING`\
 指定断点的位置类型作为数据字符串。
 
 `BPLT_TYPE_MASK`\
-指定位掩码，以便可以从值中提取断点类型。
+指定位掩码，以便可以从 值中提取断点类型。
 
 `BPLT_LOCATION_TYPE_MASK`\
-指定位掩码，以便可以从值中提取断点位置类型。
+指定位掩码，以便可以从 值中提取断点位置类型。
 
 ## <a name="remarks"></a>备注
 作为参数传递给 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 方法。
 
-断点位置类型由断点类型和位置类型组成。 这意味着，断点位置类型永远不会只是断点类型 (例如 `BPT_CODE`) 或位置类型 (例如 `BPLT_FILE_LINE`) 。 当前支持的所有断点位置类型的预定义常量都包含在此枚举 (`BPLT_CODE_FILE_LINE` 通过 `BPLT_DATA_STRING`) 。
+断点位置类型由断点类型和位置类型组成。 这意味着断点位置类型永远不会只是断点类型 (例如，) 或位置类型 (`BPT_CODE` 例如 `BPLT_FILE_LINE`) 。 此枚举中包含当前支持的所有断点位置类型的预定义常量 `BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING` () 。
 
-`BPT_CODE` 和 `BPT_DATA` 是 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举的成员。
+`BPT_CODE``BPT_DATA`和 是 BP_TYPE[](../../../extensibility/debugger/reference/bp-type.md)的成员。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

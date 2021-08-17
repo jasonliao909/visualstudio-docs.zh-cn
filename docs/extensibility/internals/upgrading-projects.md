@@ -12,18 +12,19 @@ ms.assetid: e01cb44a-8105-4cf4-8223-dfae65f8597a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a1da17c4bca485bd32aa6604b350b8af80277670
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f796668437ac4cb7b529e9d3db66c7aba4325c147da42132cda649199c9063ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073347"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121375632"
 ---
 # <a name="upgrading-projects"></a>升级项目
 
-从 Visual Studio 的一个版本到下一版本的项目模型的更改可能要求升级项目和解决方案，以便它们能够在较新的版本上运行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可用于在你自己的项目中实现升级支持的接口。
+将项目模型从 Visual Studio 的一个版本更改为下一个版本可能要求升级项目和解决方案，以便它们能够在较新的版本上运行。 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)]提供可用于在你自己的项目中实现升级支持的接口。
 
 ## <a name="upgrade-strategies"></a>升级策略
 
@@ -35,11 +36,11 @@ ms.locfileid: "105073347"
 
 ## <a name="how-upgrade-works"></a>升级的工作方式
 
-在较新版本中打开在 Visual Studio 早期版本中创建的解决方案时，IDE 将检查解决方案文件以确定它是否需要升级。 如果需要升级， **升级向导** 会自动启动，以引导用户完成升级过程。
+如果在较新版本的中打开在 Visual Studio 的早期版本中创建的解决方案，IDE 将检查解决方案文件以确定它是否需要升级。 如果需要升级， **升级向导** 会自动启动，以引导用户完成升级过程。
 
 当解决方案需要升级时，它会查询每个项目工厂的升级策略。 策略确定项目工厂是否支持复制备份或 SxS 备份。 该信息将发送到 **升级向导**，后者收集备份所需的信息，并向用户提供相应的选项。
 
-### <a name="multi-project-solutions"></a>多项目解决方案
+### <a name="multi-project-solutions"></a>多 Project 解决方案
 
 如果解决方案包含多个项目，并且升级策略不同，例如，仅支持 SxS 备份的 c + + 项目和仅支持复制备份的 Web 项目，则项目工厂必须协商升级策略。
 
@@ -62,9 +63,9 @@ ms.locfileid: "105073347"
 
 ## <a name="upgrading-custom-projects"></a><a name="upgrading-custom-projects"></a> 升级自定义项目
 
-如果你更改保留在产品的不同 Visual Studio 版本之间的项目文件中的信息，则你需要支持将项目文件从旧版本升级到新版本。 若要支持允许你参与 **Visual Studio 转换向导** 的升级，请实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 接口。 此接口包含可用于复制升级的唯一机制。 项目的升级作为解决方案打开的一部分而发生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 接口由项目工厂实现或至少应从项目工厂获得。
+如果你更改保留在产品的不同 Visual Studio 版本之间的项目文件中的信息，则你需要支持将项目文件从旧版本升级到新版本。 若要支持允许参与 **Visual Studio 转换向导** 的升级，请实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 接口。 此接口包含可用于复制升级的唯一机制。 项目的升级作为解决方案打开的一部分而发生。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 接口由项目工厂实现或至少应从项目工厂获得。
 
-仍支持使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 接口的旧机制，但该机制将会把项目系统作为项目打开的一部分进行概念上的升级。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>因此，即使调用或实现了接口，Visual Studio 环境也会调用接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 。 此方法允许你使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 来实现复制、仅规划升级的部分并通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 接口委派要就地（可能在新位置）完成的剩余工作。
+仍支持使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 接口的旧机制，但该机制将会把项目系统作为项目打开的一部分进行概念上的升级。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade>因此，即使调用或实现了接口，该接口也会由 Visual Studio 环境调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 。 此方法允许你使用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory> 来实现复制、仅规划升级的部分并通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> 接口委派要就地（可能在新位置）完成的剩余工作。
 
 有关的示例实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade> ，请参阅 [VSSDK 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
@@ -104,7 +105,7 @@ ms.locfileid: "105073347"
 
 #### <a name="to-implement-ivsprojectupgrade"></a>实现 IVsProjectUpgrade
 
-1. 用户尝试打开一个项目时，<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 方法将由环境在项目打开后、在项目上执行任何其他用户操作前调用。 如果已提示用户升级解决方案，则 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 标志将传入 `grfUpgradeFlags` 参数。 如果用户直接打开项目（例如通过使用 " **添加现有项目** " 命令），则 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 不会传递标志，并且项目需要提示用户进行升级。
+1. 用户尝试打开一个项目时，<xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 方法将由环境在项目打开后、在项目上执行任何其他用户操作前调用。 如果已提示用户升级解决方案，则 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 标志将传入 `grfUpgradeFlags` 参数。 如果用户直接打开项目（如使用 "**添加现有 Project** " 命令），则 <xref:Microsoft.VisualStudio.Shell.Interop.__VSUPGRADEPROJFLAGS.UPF_SILENTMIGRATE> 不会传递标志，并且项目需要提示用户进行升级。
 
 2. 在响应 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgrade.UpgradeProject%2A> 调用时，该项目必须评估是否升级该项目文件。 如果项目不需要将项目类型升级到新版本，则可以只返回 <xref:Microsoft.VisualStudio.VSConstants.S_OK> 标志。
 
@@ -179,8 +180,8 @@ ms.locfileid: "105073347"
 
 1. 你必须在项目项实现中仔细管理文件备份过程。 这种情况特别适用于并行备份，其中 `fUpgradeFlag` 方法的参数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 设置为 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> ，其中已备份的文件沿着指定为 ".old" 的侧文件放置。 在升级项目之前，备份的文件早于系统时间，可以指定为过时。 而且，它们可能会被覆盖，除非你采取特定的步骤来防止出现这种情况。
 
-2. 当项目项收到项目升级通知时，仍然会显示 **Visual Studio 转换向导** 。 因此，应使用接口的方法向 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 向导 UI 提供升级消息。
+2. 当项目项收到项目升级通知时，仍然会显示 " **Visual Studio 转换向导**"。 因此，应使用接口的方法向 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 向导 UI 提供升级消息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [项目](../../extensibility/internals/projects.md)

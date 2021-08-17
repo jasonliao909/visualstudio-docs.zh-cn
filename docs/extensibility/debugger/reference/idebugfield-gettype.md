@@ -1,6 +1,6 @@
 ---
 description: 此方法获取字段的类型。
-title: IDebugField：： GetType |Microsoft Docs
+title: IDebugField：：GetType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,10 +43,10 @@ int GetType(
 
 ## <a name="parameters"></a>参数
 `ppType`\
-弄返回作为另一个 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象的字段类型。
+[out]将字段类型作为另一 [个 IDebugField 对象](../../../extensibility/debugger/reference/idebugfield.md) 返回。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

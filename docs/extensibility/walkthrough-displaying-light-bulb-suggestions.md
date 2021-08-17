@@ -19,7 +19,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121374977"
 ---
 # <a name="walkthrough-display-light-bulb-suggestions"></a>演练：显示灯泡建议
-灯泡是编辑器中的图标Visual Studio展开以显示一组操作，例如，对内置代码分析器或代码重构所识别问题的修复。
+灯泡是编辑器中的Visual Studio图标，可展开以显示一组操作，例如，修复由内置代码分析器或代码重构识别的问题。
 
  在 Visual C# 和 Visual Basic 编辑器中，还可使用 .NET Compiler Platform ("Roslyn") 编写和打包自己的代码分析器，以及自动显示灯泡的操作。 有关详细信息，请参阅：
 
@@ -220,7 +220,7 @@ ms.locfileid: "121374977"
 
 ## <a name="implement-light-bulb-actions"></a>实现灯泡操作
 
-1. 在项目中，添加对Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll的引用，将 *"复制本地"* 设置为 `False` 。
+1. 在项目中，添加对Microsoft.VisualStudio.Imaging.Interop.14.0.DesignTime.dll的引用，将 **"复制***本地"* 设置为 `False` 。
 
 2. 创建两个类，第一个名为 `UpperCaseSuggestedAction` ，第二个名为 `LowerCaseSuggestedAction`。 两个类都实现 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedAction>。
 

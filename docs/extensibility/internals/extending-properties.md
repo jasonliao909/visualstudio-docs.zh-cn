@@ -1,6 +1,6 @@
 ---
 title: 扩展属性 |Microsoft Docs
-description: 了解必须实现的接口，并调用来扩展 Visual Studio 属性窗口中的属性列表。
+description: 了解必须实现的接口，并调用以扩展 Visual Studio 属性窗口中的属性列表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 68e2cbd4-861c-453f-8c9f-4ab6afc80e67
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3b1006f74cd2de03b4fe74e090d7ffcd1c921e5d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3f631e09287c6d28aa61ea7832d3f4d5241548e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069642"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063468"
 ---
 # <a name="extend-properties"></a>扩展属性
 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性** " 窗口是 COM 和 com + 组件的通用属性浏览器，支持所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 产品。 " **属性** " 窗口与 `ITypeInfo` 类型信息和 com + 元数据一起使用，以便在集成开发环境 (IDE) 的任何其他窗口中列出当前所选对象的设计时属性。

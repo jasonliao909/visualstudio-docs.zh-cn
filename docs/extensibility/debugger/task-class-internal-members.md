@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a8c6a40cb19315c6b754ef8e81208f78f1e1996837d6ee352d84a6df25041dc4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c552a4069af343ea45721edc9abb841526124163
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095161"
 ---
 # <a name="task-class---internal-members"></a>任务类 - 内部成员
 本文介绍 类的内部成员 <xref:System.Threading.Tasks.Task?displayProperty=fullName> ，这些成员可帮助你实现自定义调试器。 有关此类的一般信息，请参阅 <xref:System.Threading.Tasks.Task> 参考文章。
