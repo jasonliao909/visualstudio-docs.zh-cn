@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23b5564470551b1732e57e4cf07cbd191c069d21afd6ac1f0b563f596c852fcd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 41c826350254939c4f848bd19addca136224e817
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124537"
 ---
 # <a name="test-area-7-share"></a>测试区域 7：共享
 此测试区域涉及到通过 **Share** 命令在位置之间共享项。
@@ -61,5 +61,5 @@ ms.locfileid: "121431768"
 |在加载的 Project 中共享文件夹-递归|1. 创建一个新项目。<br />2. 将解决方案添加到源代码管理。<br />3. 选择项目。<br />4. 打开 "**共享**" 对话框 (**文件**  ->  **源控制**  ->  **共享**) 。<br />5. 选择一个文件夹。<br />6. 以递归方式将文件夹共享到项目。|常见的预期行为。|
 |将多个文件从一个项目共享到另一个项目|1. 创建一个新项目，其中包含多个文件。<br />2. 将解决方案添加到源代码管理。<br />3. 关闭解决方案。<br />4. 在新的解决方案中创建新项目。<br />5. 将解决方案添加到源代码管理。<br />6. 选择该项目。<br />7. 打开 "**共享**" 对话框 (**文件**  ->  **源控制**  ->  **共享**) 。<br />8. 将以前创建的项目中的多个文件共享到当前打开的项目。|常见的预期行为。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件的测试指南](../../extensibility/internals/test-guide-for-source-control-plug-ins.md)

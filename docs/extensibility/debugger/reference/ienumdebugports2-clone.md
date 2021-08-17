@@ -11,17 +11,18 @@ ms.assetid: d5ce77e8-bb99-409a-98fa-20fe5a0de25e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e0ecda929ecf6b0e9c712474f132dbb852a30cd7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a154f734427e69e291d3a4ecad829775e8750bdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052874"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070470"
 ---
 # <a name="ienumdebugports2clone"></a>IEnumDebugPorts2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -50,5 +51,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

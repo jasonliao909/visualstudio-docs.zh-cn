@@ -59,9 +59,9 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
     |控制|属性|值|
     |-------------|--------------|-----------|
-    |`Label1`|**Text**|""|
-    |`Button1`|名称|btnReset|
-    |`Button1`|**Text**|重置|
+    |`Label1`|**文本**|""|
+    |`Button1`|**名称**|btnReset|
+    |`Button1`|**文本**|重置|
 
 ### <a name="code-the-user-control"></a>编码用户控件
 
@@ -217,7 +217,7 @@ Windows 窗体工具箱控件模板可创建未定义的用户控件，并提供
 
 生成 **"工具箱**" 控件时，Visual Studio 将在项目的 \bin\debug\ 文件夹中创建一个名为 *项目名称 .vsix* 的文件。 可以通过将 *.vsix* 文件上载到网络或网站来部署此控件。 当用户打开 *.vsix* 文件时，控件将安装并添加到用户计算机上的 Visual Studio **工具箱** 中。 或者，你可以将 *.vsix* 文件上载到 [Visual Studio Marketplace](https://marketplace.visualstudio.com/) ，以便用户可以通过在 "**工具**" "  >  **扩展和更新**" 对话框中浏览来查找它。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 - [创建 WPF 工具箱控件](../extensibility/creating-a-wpf-toolbox-control.md)

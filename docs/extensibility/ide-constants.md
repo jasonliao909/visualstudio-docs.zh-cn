@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cdec9bea2883e67bf9ff2383319b966b4b73d8caeab7f6c92b1faaf3878fb8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad1d6e159ac1e008112a97bdec76fe2f791433ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359853"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070186"
 ---
 # <a name="ide-constants"></a>IDE 常量
 
@@ -119,6 +119,6 @@ ms.locfileid: "121359853"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IDE 定义的用于扩展项目系统的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

@@ -24,7 +24,7 @@ ms.locfileid: "121414137"
 # <a name="message-enumerator"></a>消息枚举器
 以下标志用于 函数，该函数是 IDE 在调用 `TEXTOUTPROC` [SccOpenProject](../extensibility/sccopenproject-function.md) (时提供的回调函数 (请参阅 [LPTEXTOUTPROC，](../extensibility/lptextoutproc.md) 详细了解回调函数) 。
 
- 如果要求 IDE 取消该进程，则可能会收到其中一条取消消息。 在这种情况下，源代码管理插件使用 来 `SCC_MSG_STARTCANCEL` 要求 IDE 显示"取消 **"** 按钮。 之后，可以发送任何一组正常消息。 如果其中任何一个返回 `SCC_MSG_RTN_CANCEL` ，插件将退出操作并返回 。 插件还会定期轮询 `SCC_MSG_DOCANCEL` 以确定用户是否取消了操作。 完成所有操作后，或者如果用户已取消，插件将发送 `SCC_MSG_STOPCANCEL` 。 `SCC_MSG_INFO`、SCC_MSG_WARNING 和 SCC_MSG_ERROR 类型用于消息滚动列表中显示的消息。 `SCC_MSG_STATUS` 是一种特殊类型，指示文本应显示在状态栏或临时显示区域中。 它不会永久保留在列表中。
+ 如果要求 IDE 取消该进程，则可能会收到其中一条取消消息。 在这种情况下，源代码管理插件使用 来 `SCC_MSG_STARTCANCEL` 要求 IDE 显示"取消 **"** 按钮。 之后，可以发送任何一组正常消息。 如果其中任何一个返回 `SCC_MSG_RTN_CANCEL` ，插件将退出操作并返回 。 插件还会定期轮询 `SCC_MSG_DOCANCEL` 以确定用户是否取消了操作。 完成所有操作后，或者如果用户已取消，插件将发送 `SCC_MSG_STOPCANCEL` 。 、SCC_MSG_WARNING 和 SCC_MSG_ERROR 类型用于消息滚动列表中 `SCC_MSG_INFO` 显示的消息。 `SCC_MSG_STATUS` 是一种特殊类型，指示文本应显示在状态栏或临时显示区域中。 它不会永久保留在列表中。
 
 ## <a name="syntax"></a>语法
 
@@ -61,6 +61,6 @@ enum {
 
  SCC_MSG_STOPCANCEL停止取消循环。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)
 - [LPTEXTOUTPROC](../extensibility/lptextoutproc.md)

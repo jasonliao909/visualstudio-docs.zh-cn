@@ -54,7 +54,7 @@ ms.locfileid: "121335012"
         > [!NOTE]
         > 调用 `QueryService` 以 <xref:Microsoft.VisualStudio.Shell.Interop.SVsFileChangeEx> 获取指向 的指针 `IVsFileChangeEx` 。
 
-7. 使用源代码管理协调文档编辑事件。 按照以下步骤操作：
+7. 使用源代码管理协调文档编辑事件。 请执行以下步骤：
 
     1. 通过调用 获取指向 `IVsQueryEditQuerySave2` 的 `QueryService` 指针 <xref:Microsoft.VisualStudio.Shell.Interop.SVsQueryEditQuerySave> 。
 
@@ -66,13 +66,13 @@ ms.locfileid: "121335012"
 
          如果文件尚未保存，或者自上次保存后更改，此方法将提示用户保存该文件。
 
-8. 启用" **属性** "窗口以显示编辑器中所选文本的属性。 按照以下步骤操作：
+8. 启用" **属性** "窗口以显示编辑器中所选文本的属性。 请执行以下步骤：
 
     1. 每次 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection.OnSelectChange%2A> 文本选择更改时调用 ，并传递 的实现 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer> 。
 
     2. 在 `QueryService` 服务 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 上调用 以获取指向 的指针 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
-9. 使用户能够在编辑器和工具箱之间或外部编辑器之间拖放项 (如Microsoft Word) 工具箱 **。** 按照以下步骤操作：
+9. 使用户能够在编辑器和工具箱之间或外部编辑器之间拖放项 (如Microsoft Word) **工具箱**。 执行以下步骤：
 
     1. 在 `IDropTarget` 编辑器上实现 ，以提醒 IDE 你的编辑器是放置目标。
 
@@ -155,6 +155,6 @@ ms.locfileid: "121335012"
 
   - `Window.Object`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [参与自动化模型](../extensibility/internals/contributing-to-the-automation-model.md)

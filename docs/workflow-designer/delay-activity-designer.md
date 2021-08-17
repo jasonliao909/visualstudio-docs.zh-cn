@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d59f0db70804049a0392350942000d4331715021fb30f7ab43183d7326d02f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71618b2ebbd0abc6f089ad9838942a99d0897e7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099225"
 ---
 # <a name="delay-activity-designer"></a>Delay 活动设计器
 
@@ -30,9 +30,9 @@ Delay 活动设计器用于创建和配置 <xref:System.Activities.Statements.De
 
 ### <a name="use-the-delay-activity-designer"></a>使用 Delay 活动设计器
 
-可以在 **"** 工具箱"的"基元"类别中找到"延迟"活动设计器，单击"工具箱"的"工具箱"选项卡即可工作流设计器。  或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
+可以在 **"** 工具箱"的"基元"类别中找到"延迟"活动设计器，可通过单击"工具箱"选项卡访问工作流设计器。  或者，从"视图 **"菜单中** 选择"**工具箱"，** 或按 **Ctrl** + **Alt** + **X**。
 
-可以将 **Delay** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的"延迟"图面 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Delay> 默认为 Delay <xref:System.Activities.Activity.DisplayName%2A> 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 Delay 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
+可以将 **Delay** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Delay> 默认为 Delay <xref:System.Activities.Activity.DisplayName%2A> 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 Delay 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
 
 ### <a name="the-delay-properties"></a>Delay 属性
 
@@ -43,7 +43,7 @@ Delay 活动设计器用于创建和配置 <xref:System.Activities.Statements.De
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Delay> 活动的友好名称。 默认值为 Delay。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值并非严格要求，但最佳做法是使用值。|
 |<xref:System.Activities.Statements.Delay.Duration%2A>|正确|将工作流延迟的时长。 此属性在属性网格中设置。 键入 00:00:00 格式的文本 <xref:System.TimeSpan> 或 Visual Basic 表达式来指定时长。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [基元](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)

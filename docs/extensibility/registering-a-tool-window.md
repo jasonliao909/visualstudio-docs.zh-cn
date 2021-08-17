@@ -1,6 +1,6 @@
 ---
-title: 注册工具窗口 |Microsoft Docs
-description: 了解如何使用 ProvideToolWindowAttribute 和 ProvideToolWindowVisibilityAttribute 将工具窗口注册到 Visual Studio。
+title: 注册工具窗口|Microsoft Docs
+description: 了解如何使用 ProvideToolWindowAttribute 和 ProvideToolWindowVisibilityAttribute 向 Visual Studio 注册工具窗口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb0163c9c28f1ceb51a2685b92d081b3012757b1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 34ce07f873e2dd23f2c2ae296b482e3b7049651c49757dedacf22508d180fc53
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028691"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121336702"
 ---
 # <a name="register-a-tool-window"></a>注册工具窗口
-您可以使用和注册您的工具窗口 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute>  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 。
+可以使用 和 注册工具 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 窗口  <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowVisibilityAttribute> 。
 
 ## <a name="example"></a>示例
 
@@ -38,4 +38,4 @@ public class PackageToolWindow : Package
 {
 ```
 
- 在上面的代码中，将 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `PersistedWindowPane` 和工具窗口注册到 `DynamicWindowPane` Visual Studio。 保留的工具窗口与 **解决方案资源管理器** 停靠在一起，并为动态窗口提供了一个默认起始位置和大小。 动态窗口被设为暂时性窗口，这表示它不是在启动时创建的。 这会在 `DontForceCreate` 系统注册表的项中写入值 `ToolWindows` 。 有关详细信息，请参阅 [工具窗口显示配置](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015)。
+ 在以上代码中， <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 将 和 `PersistedWindowPane` `DynamicWindowPane` 工具窗口注册到 Visual Studio。 持久化工具窗口停靠并选项卡式 **解决方案资源管理器，动态** 窗口具有默认的起始位置和大小。 动态窗口是暂时性的，表示未在启动时创建。 这会在 `DontForceCreate` 系统注册表的 `ToolWindows` 项中写入值。 有关详细信息，请参阅工具 [窗口显示配置](/previous-versions/visualstudio/visual-studio-2015/extensibility/tool-window-display-configuration?preserve-view=true&view=vs-2015)。

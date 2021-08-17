@@ -1,26 +1,27 @@
 ---
 title: 定向图形标记语言 (DGML) 引用
-description: 了解定向图形标记语言 (DGML) 描述用于可视化的信息以及执行复杂性分析。
+description: 了解 Graph 标记语言的定向语言 (DGML) 描述用于可视化的信息以及执行复杂性分析。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: adaa09ca7c58652c85cf6c3510e9e47bc4af00f3
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: cce4f5484f06d3bbe3f2ed2a7a0db8118cbbce4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389106"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027716"
 ---
 # <a name="directed-graph-markup-language-dgml-reference"></a>定向图形标记语言 (DGML) 引用
 
 定向图形标记语言 (DGML) 描述用于可视化和执行复杂分析的信息，并且是用于存留 Visual Studio 中的代码图的格式。 DGML 使用简单 XML 来描述循环和非循环的定向关系图。 定向关系图是一组由链接或边缘连接的节点。 可以使用节点和链接来表示网络结构，如软件项目中的元素。
 
-请注意，某些版本的 Visual Studio 仅支持 DGML 功能的一个子集，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+请注意，某些版本的 Visual Studio 仅支持 DGML 功能的一个子集，请参阅[体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 > [!NOTE]
 > 在编辑 .dgml 文件时，IntelliSense 可帮助您标识对每个元素及其值可用的特性。 若要指定特性中的颜色，请使用常用颜色的名称，如“Blue”或 ARGB 十六进制值（如“#ffa0b1c3”）。 DGML 使用一小部分 Windows Presentation Foundation (WPF) 颜色定义格式。 有关详细信息，请参阅 [Colors 类](/dotnet/api/system.windows.media.colors?view=netframework-4.8&preserve-view=true)。

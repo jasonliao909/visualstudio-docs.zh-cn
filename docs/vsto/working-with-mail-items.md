@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f5a7020ef93c3067b116eb2fe933af8971e786b0c46c1e56c70ee4b23cb60103
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 399442092a68f745d5b6bf7e01d627c54cdf8142
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025382"
 ---
 # <a name="work-with-mail-items"></a>使用邮件项
   <xref:Microsoft.Office.Interop.Outlook.MailItem>类包含用于通过电子邮件执行任务的方法和属性。
@@ -39,7 +39,7 @@ ms.locfileid: "121296419"
 
  有关 Outlook 任务和 Outlook 对象模型的详细信息，请参阅[Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [处理联系人项](../vsto/working-with-contact-items.md)
 - [使用文件夹](../vsto/working-with-folders.md)
 - [使用日历项](../vsto/working-with-calendar-items.md)

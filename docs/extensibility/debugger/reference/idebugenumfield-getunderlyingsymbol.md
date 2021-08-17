@@ -1,6 +1,6 @@
 ---
 description: 此方法返回表示枚举名称的 IDebugField。
-title: IDebugEnumField：：GetUnderlyingSymbol |Microsoft Docs
+title: IDebugEnumField：： GetUnderlyingSymbol |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121342201"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
-此方法返回表示枚举名称的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
+此方法返回表示枚举名称的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
 
 ## <a name="syntax"></a>语法
 
@@ -43,15 +43,15 @@ int GetUnderlyingSymbol(
 
 ## <a name="parameters"></a>参数
 `ppField`\
-[out]返回[描述此枚举的名称的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
+弄返回描述此枚举名称的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 枚举的名称还包含枚举的类型，该枚举通过使用 Bind 绑定到内存 [位置](../../../extensibility/debugger/reference/idebugbinder-bind.md)。
+ 枚举的名称还包含枚举的类型，该类型使用 [Bind](../../../extensibility/debugger/reference/idebugbinder-bind.md)绑定到内存位置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [绑定](../../../extensibility/debugger/reference/idebugbinder-bind.md)

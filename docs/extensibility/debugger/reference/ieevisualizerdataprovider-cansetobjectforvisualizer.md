@@ -1,6 +1,6 @@
 ---
-description: 此方法确定可视化工具是否可以具有其表示的数据对象进行更新。
-title: IEEVisualizerDataProvider：： CanSetObjectForVisualizer |Microsoft Docs
+description: 此方法确定可视化工具是否可以更新它表示的数据对象。
+title: IEEVisualizerDataProvider：：CanSetObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 70fd3c6f-2f82-43a3-993b-c1dc8aa080bf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 81d958bb7cb931f485f8efa807dc9d322bab1fa4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d0ad23c26a5e989d643fdc16f3437781aa7f0d0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125993"
 ---
 # <a name="ieevisualizerdataprovidercansetobjectforvisualizer"></a>IEEVisualizerDataProvider::CanSetObjectForVisualizer
-此方法确定可视化工具是否可以具有其表示的数据对象进行更新。
+此方法确定可视化工具是否可以更新它表示的数据对象。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int CanSetObjectForVisualizer(
 
 ## <a name="parameters"></a>参数
 `b`\
-弄 `TRUE` 如果可更新可视化工具上的对象，则为非零 () ，如果不能，则为零 (`FALSE`) 。
+[out]如果可视化 () ，则不为零;如果无法更新， () `TRUE` `FALSE` 零值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 例如，如果某个对象绑定到只读内存，则该对象可能无法更改。
+ 例如，如果对象绑定到只读内存，则该对象可能不可更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)

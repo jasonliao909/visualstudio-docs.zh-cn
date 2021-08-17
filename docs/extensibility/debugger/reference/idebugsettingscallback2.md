@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 32cab53c2d6a0d97ae5131994f0c63dab9d32f68ac16df9eac08cc5d1c39661e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: babc486a4c8d683a3557b602273bc2e165a49420
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402228"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126253"
 ---
 # <a name="idebugsettingscallback2"></a>IDebugSettingsCallback2
 使调试引擎能够远程读取指标设置。

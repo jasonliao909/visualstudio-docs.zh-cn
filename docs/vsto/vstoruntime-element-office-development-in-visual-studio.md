@@ -1,7 +1,7 @@
 ---
-title: '&lt;&gt;Visual Studio 中的 v 元素 (Office 开发) '
+title: '&lt;&gt;Visual Studio 中 (Office 开发的 v 元素) '
 titleSuffix: ''
-description: Vstav3 命名空间的 v 元素包含特定 Office 解决方案的受支持的 Visual Studio Tools for Office 运行时版本。
+description: vstav3 命名空间的 v 元素包含特定 Office 解决方案的 Visual Studio Tools for Office 运行时的受支持版本。
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7c856836bd2ba107a2fa6c3017c5ecb2694fcf6b
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 1ce97744f8b7fc93317c80755b01ede222df2a4b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102468567"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025636"
 ---
-# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 v 元素 (Office 开发) 
+# <a name="ltvstoruntimegt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 (Office 开发的 v 元素) 
   `vstoRuntime` 命名空间的 `vstav3` 元素包含针对特定 Office 解决方案的受支持的 Visual Studio Tools for Office Runtime 版本。
 
 ## <a name="syntax"></a>语法
@@ -40,7 +41,7 @@ ms.locfileid: "102468567"
 
  `vstoRuntime` 元素具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`release`|必需。 Visual Studio Tools for Office Runtime 的发布版本。|
 |`version`|必需。 Visual Studio Tools for Office Runtime 的版本号。|
@@ -48,8 +49,8 @@ ms.locfileid: "102468567"
 
  `vstoRuntime` 不包含任何元素。
 
-## <a name="example"></a>示例：
- 下面的代码示例演示 Office 解决方案的应用程序清单中的 `vstoRuntime` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+## <a name="example"></a>示例
+ 下面的代码示例演示 Office 解决方案的应用程序清单中的 `vstoRuntime` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ```xml
 <vstav3:vstoRuntime
@@ -58,7 +59,7 @@ ms.locfileid: "102468567"
     supportUrl="http://www.microsoft.com" />
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
 - [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)

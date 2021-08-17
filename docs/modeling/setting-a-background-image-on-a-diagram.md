@@ -103,7 +103,7 @@ ms.locfileid: "121231452"
 
      有关使用程序代码自定义模型的详细信息，请参阅 [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)
 - [自定义文本和图像字段](../modeling/customizing-text-and-image-fields.md)

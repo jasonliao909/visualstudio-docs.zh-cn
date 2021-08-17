@@ -21,7 +21,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121337911"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>实现旧版语言服务 1
-可以使用托管包框架 (MPF) 中的类来实现支持各种功能（例如语法突出显示、大括号匹配和 IntelliSense 完成）的旧语言服务。
+可以使用 MPF (包框架中的类) 实现支持各种功能（如语法突出显示、大括号匹配和 IntelliSense 完成）的旧语言服务。
 
  旧版语言服务作为 VSPackage 的一部分实现，但实现语言服务功能的较新方式是使用 MEF 扩展。 若要详细了解实现语言服务的新方法，请参阅编辑器 [和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: bbc724040a8005f9a233d8a27c6cada37120bd8e19480d65b40ae7668d44b59d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6dbe76962d525daf22d276c229011ef318ba266d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338418"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126123"
 ---
 # <a name="idebugstackframe3"></a>IDebugStackFrame3
 此接口扩展 [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md) 以处理被截获的异常。
@@ -63,7 +63,7 @@ IDebugStackFrame3 : IDebugStackFrame2
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

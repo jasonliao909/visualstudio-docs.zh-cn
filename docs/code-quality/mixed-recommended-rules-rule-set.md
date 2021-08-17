@@ -70,44 +70,44 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 不匹配|
 |[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 不匹配|
 |[C6280](/cpp/code-quality/c6280)|内存 Allocation-Deallocation 不匹配|
-|[C6281](/cpp/code-quality/c6281)|按位关系优先级|
+|[C6281](/cpp/code-quality/c6281)|按位关系优先顺序|
 |[C6282](/cpp/code-quality/c6282)|赋值替换测试|
-|[C6283](/cpp/code-quality/c6283)|基Array-New Scalar-Delete不匹配|
+|[C6283](/cpp/code-quality/c6283)|基元 Array-New Scalar-Delete 不匹配|
 |[C6284](/cpp/code-quality/c6284)|Format 函数的无效对象自变量|
-|[C6285](/cpp/code-quality/c6285)|Logical-Or常量数|
-|[C6286](/cpp/code-quality/c6286)|非零Logical-Or失去副作用|
+|[C6285](/cpp/code-quality/c6285)|常量 Logical-Or|
+|[C6286](/cpp/code-quality/c6286)|非零 Logical-Or 丢失副作用|
 |[C6287](/cpp/code-quality/c6287)|冗余测试|
-|[C6288](/cpp/code-quality/c6288)|相互包含Logical-And为 False|
-|[C6289](/cpp/code-quality/c6289)|相互排斥Logical-Or为 true|
+|[C6288](/cpp/code-quality/c6288)|Logical-And 上的相互包含为 False|
+|[C6289](/cpp/code-quality/c6289)|Logical-Or 的相互排除为 True|
 |[C6290](/cpp/code-quality/c6290)|逻辑非和按位与的优先级|
 |[C6291](/cpp/code-quality/c6291)|逻辑非和按位或的优先级|
-|[C6292](/cpp/code-quality/c6292)|循环计数从最大值向上|
-|[C6293](/cpp/code-quality/c6293)|循环计数从最小值向下|
-|[C6294](/cpp/code-quality/c6294)|循环正文从未执行|
+|[C6292](/cpp/code-quality/c6292)|循环从最大值计数|
+|[C6293](/cpp/code-quality/c6293)|循环从最小值向下计数|
+|[C6294](/cpp/code-quality/c6294)|从未执行循环体|
 |[C6295](/cpp/code-quality/c6295)|无限循环|
-|[C6296](/cpp/code-quality/c6296)|仅执行一次循环|
-|[C6297](/cpp/code-quality/c6297)|强制转换到更大大小的结果|
-|[C6299](/cpp/code-quality/c6299)|位域到布尔比较|
+|[C6296](/cpp/code-quality/c6296)|循环只执行一次|
+|[C6297](/cpp/code-quality/c6297)|移位强制转换为较大大小的结果|
+|[C6299](/cpp/code-quality/c6299)|位域到布尔值比较|
 |[C6302](/cpp/code-quality/c6302)|Format 函数的无效字符串自变量|
 |[C6303](/cpp/code-quality/c6303)|Format 函数的无效宽字符串自变量|
 |[C6305](/cpp/code-quality/c6305)|不匹配的大小和计数的使用|
 |[C6306](/cpp/code-quality/c6306)|不正确的变量自变量函数的调用|
-|[C6308](/cpp/code-quality/c6308)|重新分配泄漏|
-|[C6310](/cpp/code-quality/c6310)|非法异常筛选器常量|
+|[C6308](/cpp/code-quality/c6308)|Realloc 泄漏|
+|[C6310](/cpp/code-quality/c6310)|非法的异常筛选器常量|
 |[C6312](/cpp/code-quality/c6312)|异常继续执行循环|
-|[C6314](/cpp/code-quality/c6314)|Bitwise-Or优先级|
-|[C6317](/cpp/code-quality/c6317)|Not Not Complement|
+|[C6314](/cpp/code-quality/c6314)|Bitwise-Or 优先级|
+|[C6317](/cpp/code-quality/c6317)|不非补充|
 |[C6318](/cpp/code-quality/c6318)|异常继续搜索|
-|[C6319](/cpp/code-quality/c6319)|逗号忽略|
-|[C6324](/cpp/code-quality/c6324)|字符串复制而不是字符串比较|
+|[C6319](/cpp/code-quality/c6319)|被逗号忽略|
+|[C6324](/cpp/code-quality/c6324)|字符串复制而非字符串比较|
 |[C6328](/cpp/code-quality/c6328)|可能的自变量类型不匹配|
 |[C6331](/cpp/code-quality/c6331)|VirtualFree 无效标志|
-|[C6332](/cpp/code-quality/c6332)|VirtualFree 无效参数|
-|[C6333](/cpp/code-quality/c6333)|VirtualFree 无效大小|
+|[C6332](/cpp/code-quality/c6332)|VirtualFree 参数无效|
+|[C6333](/cpp/code-quality/c6333)|VirtualFree 大小无效|
 |[C6335](/cpp/code-quality/c6335)|泄漏进程句柄|
 |[C6381](/cpp/code-quality/c6381)|缺少关闭信息|
-|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count缓冲区溢出|
-|[C6384](/cpp/code-quality/c6384)|指针大小除法|
+|[C6383](/cpp/code-quality/c6383)|Element-Count Byte-Count 缓冲区溢出|
+|[C6384](/cpp/code-quality/c6384)|指针大小划分|
 |[C6385](/cpp/code-quality/c6385)|读取溢出|
 |[C6386](/cpp/code-quality/c6386)|写入溢出|
 |[C6387](/cpp/code-quality/c6387)|无效的参数值|
@@ -222,7 +222,7 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
+|[C28275](/cpp/code-quality/c28275)|\_宏值的参数 \_ \_ 为 null|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|
@@ -239,8 +239,8 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28303](/cpp/code-quality/c28303)|在批注中找到含义模糊的 \_Deref\_ 运算符。|
 |[C28304](/cpp/code-quality/c28304)|发现未正确放置的 \_Notref\_ 运算符被应用到令牌。|
 |[C28305](/cpp/code-quality/c28305)|在分析标记时发现错误。|
-|[C28306](/cpp/code-quality/c28306)|参数上的批注为过时|
-|[C28307](/cpp/code-quality/c28307)|参数上的批注为过时|
+|[C28306](/cpp/code-quality/c28306)|参数上的批注为 sal|
+|[C28307](/cpp/code-quality/c28307)|参数上的批注为 sal|
 |[C28350](/cpp/code-quality/c28350)|批注介绍了无条件适用的情形。|
 |[C28351](/cpp/code-quality/c28351)|批注介绍了在条件中无法使用动态值（变量）的位置。|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可释放字段的类型应该是可释放的|

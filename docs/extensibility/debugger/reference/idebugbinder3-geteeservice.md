@@ -1,6 +1,6 @@
 ---
 description: 此方法返回请求的服务。
-title: IDebugBinder3：：GetEEService |Microsoft Docs
+title: IDebugBinder3：： GetEEService |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -49,24 +49,24 @@ Int GetEEService(
 
 ## <a name="parameters"></a>参数
 `vendor`\
-[in] `GUID` 如果供应商 (为 null 值，则值为) 。
+[in] `GUID` 对于供应商 (可接受) 的 null 值。
 
 `language`\
-[in] `GUID` 如果语言为 (，则 null 值是可接受的) 。
+[in] `GUID` 对于语言 (可以接受) 的 null 值。
 
 `iid`\
-[in] `IID` 要获取的服务的 。
+[in] `IID` 要获取的服务的。
 
 `ppService`\
-[out]所请求服务的接口。
+弄请求的服务的接口。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 将 `IID` [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 接口的 `IID_IEEVisualizerServiceProvider` () ，以查看类型可视化工具服务是否可用。 如果是这样，表达式计算程序可以获取 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 接口以支持类型可视化工具。 有关详细信息 [，请参阅可视化和查看](../../../extensibility/debugger/visualizing-and-viewing-data.md) 数据。
+ 将 `IID` [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md) 接口的传递 (`IID_IEEVisualizerServiceProvider`) ，以查看类型可视化工具服务是否可用。 如果是这样，表达式计算器可以获取 [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md) 接口以支持类型可视化工具。 有关详细信息，请参阅 [可视化和查看数据](../../../extensibility/debugger/visualizing-and-viewing-data.md) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IEEVisualizerServiceProvider](../../../extensibility/debugger/reference/ieevisualizerserviceprovider.md)
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)

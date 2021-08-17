@@ -34,7 +34,7 @@ ms.locfileid: "121342838"
 
  若要启用表达式求值，DE 必须实现 [IDebugExpression2](../../extensibility/debugger/reference/idebugexpression2.md) 和 [IDebugExpressionContext2](../../extensibility/debugger/reference/idebugexpressioncontext2.md) 接口。 同步和异步计算都需要实现 [IDebugProperty2：： GetPropertyInfo](../../extensibility/debugger/reference/idebugproperty2-getpropertyinfo.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [堆栈帧](../../extensibility/debugger/stack-frames.md)
 - [表达式计算上下文](../../extensibility/debugger/expression-evaluation-context.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

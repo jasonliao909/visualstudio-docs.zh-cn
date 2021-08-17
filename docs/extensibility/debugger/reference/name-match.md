@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 465c5f50f8e15951da4d6d135da12d6d00d15649a3d2e506431f4bf28f674969
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eaff74a363b3431e59ef085836ce2bc387feb028
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029224"
 ---
 # <a name="name_match"></a>NAME_MATCH
 选择匹配名称的 case 选项。

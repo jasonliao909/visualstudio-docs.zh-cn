@@ -7,14 +7,15 @@ ms.assetid: f410325e-9cf2-4f39-b6d7-b672121c2691
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 36b77dc79574b1741c8feaded65104810e58c2fb
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: ca7eea3b88b6cfe38bd0d1be568b9aeaf5e329ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898787"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028925"
 ---
 # <a name="images-and-icons-for-visual-studio"></a>Visual Studio 的图像和图标
 ## <a name="image-use-in-visual-studio"></a><a name="BKMK_ImageUseInVisualStudio"></a> Visual Studio 中的图像使用

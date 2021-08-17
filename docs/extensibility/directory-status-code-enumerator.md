@@ -44,6 +44,6 @@ enum SccDirStatus {
 
  SCC_DIRSTATUS_EMPTYPROJ Project目录对应的行为空。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)
 - [SccDirQueryInfo](../extensibility/sccdirqueryinfo-function.md)

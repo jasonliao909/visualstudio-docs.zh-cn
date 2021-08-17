@@ -55,26 +55,26 @@ public enum enum_THREADSTATE {
  指示线程正在运行。
 
  `THREADSTATE_STOPPED`\
- 指示由于断点而停止线程。
+ 指示线程因断点而停止。
 
  `THREADSTATE_FRESH`\
- 指示线程已创建但尚未运行代码。
+ 指示线程已创建，但尚未运行代码。
 
  `THREADSTATE_DEAD`\
  指示线程已死。
 
  `THREADSTATE_FROZEN`\
- 指示线程已冻结 (无法执行) 。
+ 指示线程已冻结 (无法执行任何) 。
 
 ## <a name="remarks"></a>备注
- 用于 `dwThreadState` [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 结构的字段。
+ 用于 `dwThreadState` [THREADPROPERTIES 结构的](../../../extensibility/debugger/reference/threadproperties.md) 字段。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
