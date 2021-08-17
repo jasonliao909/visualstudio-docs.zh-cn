@@ -17,30 +17,30 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 396325196a4989d89d179fb92f5bffff7419d3ef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: cba61b086a52de4211333d5e2963b30ae02fe6800b55fb3931446b5c029a7d6f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049397"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388209"
 ---
 # <a name="support-for-the-visual-studio-sdk"></a>支持 Visual Studio SDK
-对于对如何在 IDE 中扩展 Visual Studio 集成开发环境 (客户) 。
+如果客户对如何在 IDE 中扩展 Visual Studio 集成开发环境有疑问， (多个) 。
 
 ## <a name="free-support"></a>免费支持
 
 ### <a name="microsoft-newsgroups"></a>Microsoft 新闻组
- 开发Visual Studio的成员以及扩展 Visual Studio开发人员通常参与 microsoft.public.vstudio.extensibility 新闻组。 此新闻组是一个托管新闻组。 如果你是 MSDN 通用订阅服务器，请确保注册无垃圾邮件别名，使 Microsoft 能够做出响应。
+ 开发团队Visual Studio扩展项目的其他开发人员通常Visual Studio microsoft.public.vstudio.extensibility newsgroup。 此新闻组是一个托管新闻组。 如果你是 MSDN 通用订阅服务器，请确保注册无垃圾邮件别名，使 Microsoft 能够做出响应。
 
 ### <a name="msdn-forums"></a>MSDN 论坛
  [MSDN 论坛提供了](https://social.msdn.microsoft.com/Forums/en-US/home)另一种与对等方和专家聊天的方式。 论坛的图形用户界面 (UI) 旨在使其比新闻组更易于使用。 ["Visual Studio扩展](/azure/devops/integrate/index?view=azure-devops&viewFallbackFrom=vsts&preserve-view=true)性论坛"是开始搜索扩展性问题的答案的好去处。 始终在提问之前进行搜索，因为其他人可能已经提出过相同的问题。
 
 ### <a name="visual-studio-gallery"></a>Visual Studio 库
- Visual Studio[市场](https://marketplace.visualstudio.com/)是扩展和示例代码的位置。 可以使用 Visual Studio、展示如何使用 VSPackages 和 Managed Extensibility Framework (MEF) 的示例应用程序以及其他类型的示例找到可提高工作效率和用户体验的工具。
+ Visual Studio[市场](https://marketplace.visualstudio.com/)是扩展和示例代码的位置。 可以使用 Visual Studio、显示如何使用 VSPackages 和 Managed Extensibility Framework (MEF) 的示例应用程序以及其他类型的示例找到可提高工作效率和用户体验的工具。
 
 ### <a name="visual-studio-sdk-samples"></a>Visual StudioSDK 示例
 
-可以在示例 上找到 VS SDK 扩展的GitHub Visual Studio[示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。 此GitHub存储库包含示例，这些示例演示了 Visual Studio。
+可以在示例 上找到 VS SDK 扩展的GitHub Visual Studio[示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。 此GitHub存储库包含示例，这些示例演示了该存储库中的各种可扩展Visual Studio。
 
 ## <a name="included-support"></a>包含的支持
 
@@ -56,7 +56,7 @@ ms.locfileid: "122049397"
 
 还可以购买支持。 Microsoft 帮助和支持中心的 开发人员工具 类别下提供了 [各种支持产品](https://support.microsoft.com/supportforbusiness/productselection?fltadd=sps-business-1&sapId=4fd4947b-15ea-ce01-080f-97f2ca3c76e8)。
 
-想要使用 开发复杂包的客户可以考虑购买与 Microsoft 顶级支持 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 合同。 有关详细信息，请参阅[Microsoft 顶级支持。](https://support.microsoft.com/premier) 对于小型公司， [对合作伙伴的高级](https://partner.microsoft.com/support/advanced-cloud-support) 支持可能是传统产品/服务顶级支持替代方案。
+想要使用 开发复杂包 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)] 的客户可以考虑购买与 Microsoft 顶级支持合同。 有关详细信息，请参阅[Microsoft 顶级支持。](https://support.microsoft.com/premier) 对于小型公司， [对合作伙伴的高级](https://partner.microsoft.com/support/advanced-cloud-support) 支持可能是传统产品/服务顶级支持替代方案。
 
 > [!NOTE]
 > 标准支持不能用于咨询或获取建议。

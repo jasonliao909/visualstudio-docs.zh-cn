@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bde6407304114c7e5fb70388e43c9eabe6d53c31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dc071f765756007ceb2c3e50c424bd758a9111437d3218f0da20db7d2fd50c65
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049748"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388562"
 ---
 # <a name="project-configuration-for-output"></a>用于输出的项目配置
 每个配置都可以支持生成可执行文件或资源文件等输出项的一组生成过程。 这些输出项专用于用户，并且可放置在链接相关类型的输出（如可执行文件 (.exe、.dll、.lib) 和源文件 ( .idl、.h 文件) 的组中。

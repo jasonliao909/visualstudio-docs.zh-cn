@@ -1,6 +1,6 @@
 ---
-description: 此方法获取有关 字段的可显示信息。
-title: IDebugField：：GetInfo |Microsoft Docs
+description: 此方法获取有关字段的可显示信息。
+title: IDebugField：： GetInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c41d00a8f8a42e3c92e88dec911b6d0fd638ecedd77665a240475b417da52072
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aa7d97c86c91a220b21c20a650a685d4c7b2fb73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389847"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138440"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
-此方法获取有关 字段的可显示信息。
+此方法获取有关字段的可显示信息。
 
 ## <a name="syntax"></a>语法
 
@@ -45,14 +45,14 @@ int GetInfo(
 
 ## <a name="parameters"></a>参数
 `dwFields`\
-[in]一个 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 常量的组合，用于选择要显示的信息。 如果字段表示符号，则这通常是符号名称和类型。
+中选择要显示的信息 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 常量的组合。 如果字段表示符号，则这通常是符号名称和类型。
 
 `pFieldInfo`\
-[out]返回所提供的结构[FIELD_INFO信息。](../../../extensibility/debugger/reference/field-info.md)
+弄返回所提供的 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 结构中的信息。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)

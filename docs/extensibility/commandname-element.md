@@ -11,14 +11,15 @@ ms.assetid: a338b767-aa7e-4536-9908-e19a50ab60ac
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 193e97880fbc543568636e1979a847877e42db14
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c76a96c86a9c6e83ca6b787286ce22ed881161bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058079"
 ---
 # <a name="commandname-element"></a>CommandName 元素
 `CommandName`元素指定在"选项"对话框的键盘类别和"自定义"对话框中的"命令"**列表中** 显示的文本。
@@ -40,9 +41,9 @@ ms.locfileid: "112902002"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[Strings 元素](../extensibility/strings-element.md)|对文本元素（如 和 ） `ButtonText` 进行分组 `CommandName` 。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

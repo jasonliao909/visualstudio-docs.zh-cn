@@ -1,6 +1,6 @@
 ---
-title: 实验实例|Microsoft Docs
-description: 了解 Visual Studio SDK 如何提供试验性空间，以在调试模式下运行未经测试的应用程序。
+title: 实验实例 |Microsoft Docs
+description: 了解 Visual Studio SDK 如何在调试模式下提供试验性空间来运行未经测试的应用程序。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,17 +23,17 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121447605"
 ---
 # <a name="the-experimental-instance"></a>实验实例
-为了Visual Studio开发环境，防止未经测试的应用程序更改它，VSSDK 提供了一个可用于试验的实验性空间。 你像往常一样使用 Visual Studio开发新应用程序，但通过使用此实验实例运行它们。
+为了保护您的 Visual Studio 开发环境不受未经测试的应用程序的改变，VSSDK 提供了可用于试验的实验空间。 您可以像平常一样使用 Visual Studio 开发新应用程序，但使用此实验实例运行这些应用程序。
 
- 每个具有 VSIX 包的应用程序都会在调试Visual Studio启动试验实例。
+ 具有 VSIX 包的每个应用程序在调试模式下启动 Visual Studio 的实验实例。
 
- 如果要启动特定解决方案Visual Studio试验实例，请运行命令窗口中的以下命令：
+ 如果要启动特定解决方案外 Visual Studio 的实验实例，请在命令窗口中运行以下命令：
 
- " *\<Visual studio installation path>* \Common7\IDE\devenv.exe" /RootSuffix Exp
+ " *\<Visual studio installation path>* \Common7\IDE\devenv.exe"/RootSuffix Exp
 
 > [!NOTE]
-> 实验实例将写入 和 节点下的 `<version number>Exp` `<version number>Exp_Config` 注册表。 例如，Visual Studio 2015 试验注册表区域为
+> 实验实例将写入到和节点下的注册表 `<version number>Exp` 中 `<version number>Exp_Config` 。 例如，Visual Studio 2015 试验性注册表区域是
 >
 > `HKCU\Software\Microsoft\VisualStudio\14.0Exp` 和 `HKCU\Software\Microsoft\VisualStudio\14.0Exp_Config`
 
- 建议在开发试验实例时在试验实例中运行扩展。 部署扩展时，该扩展在开发实例中运行。 有关注册应用程序的信息，请参阅[注册 VSPackage。](../extensibility/internals/registering-vspackages.md)
+ 建议你在开发时在实验实例中运行扩展。 部署扩展时，它在开发实例中运行。 有关注册应用程序的详细信息，请参阅 [注册 vspackage](../extensibility/internals/registering-vspackages.md)。

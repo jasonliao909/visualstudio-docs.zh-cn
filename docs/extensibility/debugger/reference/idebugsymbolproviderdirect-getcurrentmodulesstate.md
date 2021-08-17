@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: beb8cb13f22e969c197eb59d73e317e2379d45d7f2962e82fbc0a63bc02d45cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a3a02a8d2c45664b2afa2bb021cfbdf08895d9a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137907"
 ---
 # <a name="idebugsymbolproviderdirectgetcurrentmodulesstate"></a>IDebugSymbolProviderDirect::GetCurrentModulesState
 检索有关符号提供程序所属的符号组的信息。

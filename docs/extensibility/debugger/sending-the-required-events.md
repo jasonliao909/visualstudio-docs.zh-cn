@@ -26,7 +26,7 @@ ms.locfileid: "121448489"
 ## <a name="process-for-sending-required-events"></a>发送所需事件的过程
  在 DE 中创建调试引擎并将其附加到程序时 (需要) 事件：
 
-1. 初始化 DE 以调试进程中的一个或多个程序时，将 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 事件对象发送到会话调试管理器 (SDM) 。
+1. 初始化 DE 以调试进程中的一个或多个程序时) 将 [IDebugEngineCreateEvent2](../../extensibility/debugger/reference/idebugenginecreateevent2.md) 事件对象发送到会话调试管理器 (SDM) 。
 
 2. 当要调试的程序附加到时，将 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 事件对象发送到 SDM。 此事件可能是停止事件，具体取决于引擎设计。
 
@@ -37,7 +37,7 @@ ms.locfileid: "121448489"
 5. 如果要调试的应用程序已启动，则当即将执行运行时体系结构中的第一个代码指令时，将 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) 事件对象发送到 SDM。 此事件始终是停止事件。 单步执行调试会话时，IDE 在此事件上停止。
 
 > [!NOTE]
-> 许多语言使用全局初始值设置程序或外部预编译函数 (CRT 库或_Main) 代码的开头。 如果要调试的程序的语言在初始入口点之前包含这些类型的元素之一，则此代码将运行，并且当到达用户入口点（如 **main** 或 ）时，将发送入口点 `WinMain` 事件。
+> 许多语言使用全局初始值或外部预编译函数 (CRT 库或_Main) 代码开头的代码。 如果要调试的程序的语言在初始入口点之前包含这些类型的元素之一，则此代码将运行，并且当到达用户入口点（如 **main** 或 ）时，将发送入口点 `WinMain` 事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

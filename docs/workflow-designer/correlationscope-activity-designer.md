@@ -10,14 +10,15 @@ ms.assetid: 75f20664-9042-464d-8e2b-148d365a2286
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e9edd755465cf812c1572c62f1c6335fc5295281
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b958aa6568461ac9e753bfa8a0e304b3cabaf4e3687e648a9fc9853d113fe51a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955511"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383906"
 ---
 # <a name="correlationscope-activity-designer"></a>CorrelationScope 活动设计器
 
@@ -43,11 +44,11 @@ ms.locfileid: "99955511"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的可选友好名称。|
-|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|False|指定用于管理子消息传递活动的 <xref:System.ServiceModel.Activities.CorrelationHandle>。 如果未设置此属性，则 <xref:System.ServiceModel.Activities.CorrelationScope> 会自动创建一个隐式 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
-|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|False|指定处于相关范围之内的活动。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.ServiceModel.Activities.InitializeCorrelation> 活动的可选友好名称。|
+|<xref:System.ServiceModel.Activities.CorrelationScope.CorrelatesWith%2A>|错误|指定用于管理子消息传递活动的 <xref:System.ServiceModel.Activities.CorrelationHandle>。 如果未设置此属性，则 <xref:System.ServiceModel.Activities.CorrelationScope> 会自动创建一个隐式 <xref:System.ServiceModel.Activities.CorrelationHandle>。|
+|<xref:System.ServiceModel.Activities.CorrelationScope.Body%2A>|错误|指定处于相关范围之内的活动。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)
 - [收](../workflow-designer/receive-activity-designer.md)

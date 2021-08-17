@@ -11,14 +11,15 @@ ms.assetid: df27a8d6-3938-45ff-b47f-b684e80b38a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ffd21fb08e920209d47ff66feb436f8a83aab53e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ecaa14f0b9576ab805aa0a880f82766f6fe546c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059920"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057871"
 ---
 # <a name="how-to-debug-a-custom-debug-engine"></a>如何：调试自定义调试引擎
 项目类型从方法中启动调试引擎 (DE) <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg.DebugLaunch%2A> 。 这意味着在控制项目类型的实例的控制下启动 DE [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 但是，此实例 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 无法调试 DE。 下面是允许您调试自定义 DE 的步骤。
@@ -59,7 +60,7 @@ ms.locfileid: "105059920"
 
 1. [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]在普通注册表配置单元中启动并加载项目类型项目 (这是项目类型的源，而不是项目类型) 的实例化。
 
-2. 打开项目属性，并中转到 " **调试** " 页。 对于 **命令**，在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 默认情况下键入 IDE (的路径，此路径为 *[drive]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe) 。
+2. 打开 Project 属性并中转到 "**调试**" 页。 对于 **命令**，在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 默认情况下键入 IDE (的路径，此路径为 *[drive]* \Program Files\Microsoft [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 8\Common7\IDE\devenv.exe) 。
 
 3. 对于 " **命令参数**"，键入 `/rootsuffix exp` 在安装 VSIP 时 (创建的实验性注册表配置单元) 。
 
@@ -75,5 +76,5 @@ ms.locfileid: "105059920"
 
 9. 如果选择调试启动 DE 的过程，则可以执行 "调试自定义调试引擎" 过程中的步骤，以便在启动后将其附加到您的 DE。 这将提供三个 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 运行实例：一个用于项目类型源，另一个用于实例化项目类型，第三个实例附加到你的 DE。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

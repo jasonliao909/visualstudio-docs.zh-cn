@@ -53,5 +53,5 @@ IDebugEngineLaunch2 : IDebugEngine2
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

@@ -1,6 +1,6 @@
 ---
 description: 获取端口标识符。
-title: IDebugPort2：： GetPortId |Microsoft Docs
+title: IDebugPort2：：GetPortId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 837cb924-c113-4224-aa86-3e02b33dfa70
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cdd740a2182ec321e5c23e09e389b139e09f75eb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1aef66356daabba4d6f712d9363e84b922aa3d1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057741"
 ---
 # <a name="idebugport2getportid"></a>IDebugPort2::GetPortId
 获取端口标识符。
@@ -42,10 +43,10 @@ int GetPortId(
 
 ## <a name="parameters"></a>参数
 `pguidPort`\
-弄返回用于标识端口的 GUID。
+[out]返回标识端口的 GUID。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

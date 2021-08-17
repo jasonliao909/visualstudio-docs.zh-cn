@@ -1,6 +1,6 @@
 ---
 title: 以编程方式在联系人中查找电子邮件地址
-description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Outlook 联系人中查找电子邮件地址。
+description: 了解如何使用 Visual Studio 在 Microsoft 联系人中以编程方式Outlook电子邮件地址。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,14 +17,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ace2fef3a40695ab1165a65dd4a88ae329075b77
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: afd35041cc035bf5a03db0966cb30bafbcadfbd69fdc09f8f5a4c9219cdf8b89
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083097"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384179"
 ---
-# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何：以编程方式在联系人中搜索电子邮件地址
+# <a name="how-to-programmatically-search-for-an-email-address-in-contacts"></a>如何：以编程方式搜索联系人中的电子邮件地址
   以下示例将在联系人文件夹搜索电子邮件地址中具有域名 **example.com** 的联系人。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -38,7 +38,7 @@ ms.locfileid: "122083097"
 - 电子邮件地址中具有域名 **example.com** （例如， `somebody@example.com`且具有的名字和姓氏的联系人。
 
 ## <a name="see-also"></a>请参阅
-- [处理联系人项](../vsto/working-with-contact-items.md)
+- [使用联系人项](../vsto/working-with-contact-items.md)
 - [如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [如何：以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [如何：以编程方式将条目添加到 Outlook 联系人](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)
+- [如何：以编程方式Outlook联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [如何：以编程方式向联系人Outlook条目](../vsto/how-to-programmatically-add-an-entry-to-outlook-contacts.md)

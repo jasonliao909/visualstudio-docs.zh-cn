@@ -1,6 +1,6 @@
 ---
 description: 此方法更改可视化工具表示的对象。
-title: IEEVisualizerDataProvider：： SetObjectForVisualizer |Microsoft Docs
+title: IEEVisualizerDataProvider：：SetObjectForVisualizer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -47,20 +47,20 @@ int SetObjectForVisualizer(
 
 ## <a name="parameters"></a>参数
 `pNewObject`\
-中要设置的对象。
+[in]要设置的对象。
 
 `error`\
-弄如果设置对象时出现错误，则此字符串将保存错误消息。
+[out]如果设置 对象时出错，则此字符串包含错误消息。
 
 `pException`\
-弄如果出现错误，则此对象将保存异常信息。
+[out]如果出现错误，此对象将保存异常信息。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 由实施者决定如何返回错误信息。 但是，某些调用方可能仅查看是否返回了异常对象以知道是否有错误，因此，如果出现错误，此方法应始终返回异常对象。 如果调用方想要使用错误字符串，则还应提供它。
+ 由实现者决定如何返回错误信息。 但是，某些调用方可能只查看是否返回了异常对象，以知道存在错误，因此，如果存在错误，此方法应始终返回异常对象。 如果调用方想要使用错误字符串，还应提供该字符串。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
