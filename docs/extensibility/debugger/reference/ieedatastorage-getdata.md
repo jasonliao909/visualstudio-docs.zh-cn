@@ -1,6 +1,6 @@
 ---
-description: 从 对象中检索指定字节数。
-title: IEEDataStorage：：GetData |Microsoft Docs
+description: 从对象中检索指定的字节数。
+title: IEEDataStorage：：：Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121415723"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
-从 对象中检索指定字节数。
+从对象中检索指定的字节数。
 
 ## <a name="syntax"></a>语法
 
@@ -47,20 +47,20 @@ int GetData(
 
 ## <a name="parameters"></a>参数
 `dataSize`\
-[in]数组中要检索 (字节数必须至少包含此字节 `data`) 。
+中要 (数组中检索的字节数 `data` 必须至少包含此数量) 。
 
 `sizeGotten`\
-[out]返回实际检索的字节数。
+弄返回实际检索到的字节数。
 
 `data`\
-[in， out]用请求的数据填充的数组。
+[in，out]要用请求的数据填充的数组。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 建议使用此方法将所有数据字节检索到本地数组中，因为无法跳过检索过程中字节。 在这种情况下，参数 `dataSize` 应为 [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) 方法返回的值。
+ 此方法的建议使用是将所有数据字节检索到本地数组中，因为无法跳过检索过程中的字节数。 在这种情况下，参数 `dataSize` 应为 [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md) 方法返回的值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetSize](../../../extensibility/debugger/reference/ieedatastorage-getsize.md)

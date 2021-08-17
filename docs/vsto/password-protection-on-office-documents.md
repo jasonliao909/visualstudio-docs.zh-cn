@@ -40,7 +40,7 @@ ms.locfileid: "121394103"
 
  首次在打开启用了 **密码** 的 Visual Studio 中打开 word 文档时，Word 会提示输入密码。 成功输入密码后，将从文档中删除 **"打开密码** "，并且打开文档将不再需要密码。 如果希望解决方案中的文档在可以打开之前需要密码，则必须在最终生成之后和部署解决方案之前启用 **密码打开** 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)
 - [信息权限管理和托管代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [如何：允许代码在具有受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)

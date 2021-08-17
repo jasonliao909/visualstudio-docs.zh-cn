@@ -1,6 +1,6 @@
 ---
 title: 解决方案Office数据
-description: 了解使用解决方案创建解决方案时Microsoft Office处理数据的各种Visual Studio。
+description: 了解使用 Visual Studio 创建解决方案时Microsoft Office处理数据的各种Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -44,7 +44,7 @@ ms.locfileid: "121424380"
 
  描述如何在文档级自定义项中使用 XML 架构来创建绑定到 XML 数据的控件。
 
-- [在解决方案中Office数据库文件概述](../vsto/using-local-database-files-in-office-solutions-overview.md)
+- [在解决方案概述Office本地数据库文件](../vsto/using-local-database-files-in-office-solutions-overview.md)
 
  描述如何将数据库文件导入到项目，以及何时可缓存数据以供脱机使用。
 

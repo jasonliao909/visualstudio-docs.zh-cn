@@ -52,7 +52,7 @@ ms.locfileid: "121401721"
 
      如果文档视图或文档视图对象已成功在窗口框架中进行站点化，则通过调用 来使用其数据初始化该对象 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [打开并保存项目项](../extensibility/internals/opening-and-saving-project-items.md)
 - [如何：打开特定于项目的编辑器](../extensibility/how-to-open-project-specific-editors.md)

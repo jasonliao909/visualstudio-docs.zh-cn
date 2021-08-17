@@ -73,7 +73,7 @@ Visual C++项目系统用于 .vcxproj 文件。 它基于[Visual Studio Common P
 
 ### <a name="add-a-new-platform-toolset"></a>添加新的平台工具集
 
-若要为现有 Win32 平台添加新工具集（例如"MyToolset"，请创建"平台 `$(VCTargetsPath)` *\\ \\ Win32 \\ PlatformToolsets" \\* 下的 MyToolset 文件夹，并在此文件夹中创建 *Toolset.props* 和 *Toolset.targets* 文件。
+若要为现有 Win32 平台添加新工具集（例如"MyToolset"，请创建"平台 `$(VCTargetsPath)` *\\ \\ Win32 \\ PlatformToolsets" \\* 下的"MyToolset"文件夹，并在此文件夹中创建 *Toolset.props* 和 *Toolset.targets* 文件。
 
 *PlatformToolsets* 下的每个文件夹名称都显示在"Project **属性**"对话框中，作为指定平台的可用平台工具集，如下所示：
 
@@ -91,7 +91,7 @@ Visual C++项目系统用于 .vcxproj 文件。 它基于[Visual Studio Common P
 
 ### <a name="add-a-new-application-type"></a>添加新的应用程序类型
 
-若要添加新的应用程序类型，在"应用程序类型"下创建 *MyApplicationType* `$(VCTargetsPath)` *\\ \\* 文件夹，并在此文件夹中创建 *Defaults.props* 文件。 应用程序类型至少需要一个修订版本，因此还要创建应用程序类型 `$(VCTargetsPath)` *\\ \\ MyApplicationType \\ 1.0* 文件夹，并创建 *Defaults.props* 文件。 还应创建 `$(VCTargetsPath)` *\\ ApplicationType \\ MyApplicationType \\ 1.0 \\ Platforms* 文件夹，并至少创建一个平台。
+若要添加新的应用程序类型，在"应用程序类型"下创建 *MyApplicationType* 文件夹，并 `$(VCTargetsPath)` *\\ \\* 在此文件夹中创建 *Defaults.props* 文件。 应用程序类型至少需要一个修订版本，因此还要创建应用程序类型 `$(VCTargetsPath)` *\\ \\ MyApplicationType \\ 1.0* 文件夹，并创建 *Defaults.props* 文件。 还应创建 `$(VCTargetsPath)` *\\ ApplicationType \\ MyApplicationType \\ 1.0 \\ Platforms* 文件夹，并至少创建一个平台。
 
 `$(ApplicationType)``$(ApplicationTypeRevision)`和 属性在用户界面中不可见。 它们在项目模板中定义，创建项目后无法更改。
 
@@ -150,7 +150,7 @@ Windows桌面项目不定义 `$(ApplicationType)` ，因此它们仅导入
 
 *Toolset.props* 和 *Toolset.targets* 文件可以完全控制使用这些工具集时生成期间发生的情况。 他们还可以控制可用的调试器、某些 IDE 用户界面，例如"属性页"对话框中的内容以及项目行为的一些其他方面。
 
-虽然工具集可以替代整个生成过程，但通常只想让工具集修改或添加一些生成步骤，或者使用不同的生成工具作为现有生成过程的一部分。 为了实现此目标，工具集可以导入许多常见属性和目标文件。 根据希望工具集执行哪些操作，这些文件可能用作导入或示例：
+虽然工具集可以替代整个生成过程，但通常只想让工具集修改或添加一些生成步骤，或者将不同的生成工具用作现有生成过程的一部分。 为了实现此目标，工具集可以导入许多常见属性和目标文件。 根据希望工具集执行哪些操作，这些文件可能用作导入或示例：
 
 - `$(VCTargetsPath)`\\*Microsoft.CppCommon.targets*
 
@@ -168,7 +168,7 @@ Windows桌面项目不定义 `$(ApplicationType)` ，因此它们仅导入
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.WindowsSDK.props*
 
-   此文件确定 Windows SDK 位置，并定义面向 Windows 的应用的一Windows。
+   此文件确定Windows SDK 位置，并定义面向 Windows 的应用的一Windows。
 
 ### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>将特定于工具集的目标与默认 C++ 生成过程集成
 
@@ -244,15 +244,15 @@ C++ 生成有三个主要步骤，这些步骤由以下目标表示：
 </Target>
 ```
 
-尽管其名称是在实现跨Visual Studio之前创建的，但目标不必调用 `ClCompile` CL.exe。 它还可以通过使用适当的任务来调用 Clang、gcc MSBuild编译器。
+尽管其名称是在实现跨Visual Studio之前创建的，但目标不必调用 `ClCompile` CL.exe。 它还可以使用适当的任务调用 Clang、gcc 或其他MSBuild编译器。
 
 目标不应具有除 目标之外的任何依赖项，这是单个文件编译命令在 `ClCompile` `SelectClCompile` IDE 中工作所需的。
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>MSBuild工具集目标中使用的任务
 
-若要调用实际的生成工具，目标需要调用MSBuild任务。 有一个基本 [的 Exec](../msbuild/exec-task.md) 任务，可用于指定要运行的命令行。 但是，生成工具通常有许多选项和输入。 和输出，用于跟踪增量生成，因此，为它们分配特殊任务更有意义。 例如，该任务将MSBuild转换为CL.exe开关，将它们写入响应文件，并 `CL` 调用CL.exe。 它还跟踪所有输入和输出文件，供以后增量生成使用。 有关详细信息，请参阅 [增量生成和最新检查](#incremental-builds-and-up-to-date-checks)。
+若要调用实际的生成工具，目标需要调用MSBuild任务。 有一个基本 [的 Exec](../msbuild/exec-task.md) 任务，可用于指定要运行的命令行。 但是，生成工具通常有许多选项和输入。 和输出，用于跟踪增量生成，因此，为它们分配特殊任务更有意义。 例如，该任务将MSBuild转换为CL.exe开关，将它们写入响应文件，并调用 `CL` CL.exe。 它还跟踪所有输入和输出文件，供以后增量生成使用。 有关详细信息，请参阅 [增量生成和最新检查](#incremental-builds-and-up-to-date-checks)。
 
-该Microsoft.Cpp.Common.Tasks.dll实现以下任务：
+任务Microsoft.Cpp.Common.Tasks.dll以下任务：
 
 - `BSCMake`
 
@@ -284,9 +284,9 @@ C++ 生成有三个主要步骤，这些步骤由以下目标表示：
 
 1. 如果很少使用此任务，或者几秒钟对生成并不重要，可以使用MSBuild内联"任务：
 
-   - 自定义生成 (的 Xaml 任务) 
+   - Xaml 任务 (自定义生成规则) 
 
-     有关 Xaml 任务声明的一个示例，请参阅 `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml，* 有关其用法，请参阅 `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.targets*。
+     有关 Xaml 任务声明的一个示例，请参阅 `$(VCTargetsPath)` \\ *BuildCustomizations* masm.xml，有关其用法，请参阅 \\  `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.targets*。
 
    - [代码任务](../msbuild/msbuild-inline-tasks.md)
 
@@ -323,9 +323,9 @@ MSBuild提供以下帮助程序类来读取和写入 .tlog 文件：
 
 ### <a name="read-tlog-format"></a>读取 .tlog 格式
 
-*读取* .tlog (\* .read. \* 。tlog) 包含有关源文件及其依赖项的信息。
+*从* .read (\* .tlog 文件 \* 。tlog) 包含有关源文件及其依赖项的信息。
 
-行 **^** () 的符号指示一个或多个源。 共享相同依赖项的源由垂直条分隔 **\|** () 。
+行 **^** () 的符号指示一个或多个源。 共享相同依赖项的源由垂直条形分隔 **\|** () 。
 
 依赖项文件在源之后列出，每个位于其自己的行上。 所有文件名都是完整路径。
 
@@ -384,7 +384,7 @@ F:\TEST\CONSOLEAPPLICATION1\DEBUG\CONSOLEAPPLICATION1.PDB
   DependsOnTargets="$(DesignTimeBuildInitTargets);$(ComputeCompileInputsTargets)">
 ```
 
-- `DesignTimeBuildInitTargets` - 设计时生成初始化所需的仅设计时目标。 除其他功能外，这些目标会禁用一些常规生成功能以提高性能。
+- `DesignTimeBuildInitTargets` - 设计时生成初始化所需的仅设计时目标。 除了其他功能外，这些目标会禁用一些常规生成功能以提高性能。
 
 - `ComputeCompileInputsTargets` – 修改编译器选项和项的一组目标。 这些目标在设计时和常规生成中运行。
 
@@ -446,15 +446,15 @@ msbuild /p:SolutionDir=*solution-directory-with-trailing-backslash*;Configuratio
 
 ## <a name="visual-c-project-extensibility-in-the-visual-studio-ide"></a>Visual C++ IDE 中Visual Studio扩展性
 
-Visual C++系统基于[VS Project 系统](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，并使用其扩展性点。 但是，项目层次结构实现特定于项目Visual C++而不是基于 CPS，因此层次结构扩展性仅限于项目项。
+Visual C++ 项目系统基于[VS Project 系统](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/Index.md)，并使用其扩展点。 但是，项目层次结构实现特定于 Visual C++ 而不是基于 CPS，因此层次结构扩展性限制为项目项。
 
 ### <a name="project-property-pages"></a>项目属性页
 
-有关常规设计信息，请参阅 Framework [Multi-Targeting for VC++ Projects。](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)
+有关常规设计信息，请参阅[针对 VC++ 项目的框架多目标](https://devblogs.microsoft.com/visualstudio/framework-multi-targeting-for-vc-projects/)。
 
-简单而言，C++ 项目的"属性"对话框中Project页 *由规则文件* 定义。 规则文件指定属性页上要显示的属性集，以及如何在项目文件中保存这些属性。 规则文件.xml Xaml 格式的文件。 [Microsoft.Build.Framework.XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)中介绍了用于序列化它们的类型。 有关在项目中使用规则文件的信息，请参阅属性页 XML [规则文件](/cpp/build/reference/property-page-xml-files)。
+简而言之，在 c + + 项目的 " **Project 属性**" 对话框中看到的属性页由 *规则* 文件定义。 规则文件指定要在属性页上显示的一组属性，以及它们在项目文件中的保存方式和位置。 规则文件是 .xml 使用 Xaml 格式的文件。 [XamlTypes](/dotnet/api/microsoft.build.framework.xamltypes)中介绍了用于对这些类型进行序列化的类型。 有关在项目中使用规则文件的详细信息，请参阅 [属性页 XML 规则文件](/cpp/build/reference/property-page-xml-files)。
 
-必须将规则文件添加到 `PropertyPageSchema` 项组：
+规则文件必须添加到 `PropertyPageSchema` 项组：
 
 ```xml
 <ItemGroup>
@@ -465,13 +465,13 @@ Visual C++系统基于[VS Project 系统](https://github.com/Microsoft/VSProject
 </ItemGroup>
 ```
 
-`Context` 元数据限制规则可见性，该可见性也由规则类型控制，并且可以具有以下值之一：
+`Context` 元数据限制规则可见性，这也是由规则类型控制的，并且可以具有以下值之一：
 
 `Project` | `File` | `PropertySheet`
 
-CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
+CPS 支持上下文类型的其他值，但这些值不用于 Visual C++ 项目。
 
-如果规则应在多个上下文中可见，请使用分号 (**;)** 分隔上下文值，如下所示：
+如果规则应该在多个上下文中可见，请使用分号 (**;**) 将上下文值隔开，如下所示：
 
 ```xml
 <PropertyPageSchema Include="$(MyFolder)\MyRule.xml">
@@ -481,7 +481,7 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
 
 #### <a name="rule-format-and-main-types"></a>规则格式和主要类型
 
-规则格式非常简单，因此本部分仅介绍影响规则在用户界面中的外观的属性。
+规则格式很简单，因此本部分仅介绍影响规则在用户界面中的外观的属性。
 
 ```xml
 <Rule
@@ -492,16 +492,16 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
   xmlns="http://schemas.microsoft.com/build/2009/properties">
 ```
 
-`PageTemplate`属性定义规则在"属性页"对话框中 **的显示** 方式。 属性可以具有以下值之一：
+`PageTemplate`特性定义规则在 "**属性页**" 对话框中的显示方式。 该属性可以具有以下值之一：
 
-| Attribute | 说明 |
+| 属性 | 说明 |
 |------------| - |
-| `generic` | 所有属性都显示在"类别"标题下的一页上<br/>规则对于 和 上下文 `Project` 可见 `PropertySheet` ，但不能可见 `File` 。<br/><br/> 示例 `$(VCTargetsPath)` \\ *：1033* \\ *general.xml* |
-| `tool` | 类别显示为子页。<br/>规则可以在所有上下文中可见 `Project` `PropertySheet` ：、 和 `File` 。<br/>只有当项目具有在 中定义的 Project，规则才在属性中 `ItemType` `Rule.DataSource` 可见，除非规则名称包含在 `ProjectTools` 项组中。<br/><br/>示例 `$(VCTargetsPath)` \\ *：1033* \\ *clang.xml* |
-| `debugger` | 页面显示为"调试"页的一部分。<br/>类别当前被忽略。<br/>规则名称应匹配"调试Launcher MEF 对象的 `ExportDebugger` 属性。<br/><br/>示例 `$(VCTargetsPath)` \\ *：1033* \\ *调试器 \_ 本地 \_windows.xml* |
-| *自 定义* | 自定义模板。 模板的名称应匹配 `ExportPropertyPageUIFactoryProvider` MEF 对象的 `PropertyPageUIFactoryProvider` 属性。 请参阅 **Microsoft.VisualStudio.ProjectSystem.Designers.Properties.IPropertyPageUIFactoryProvider**。<br/><br/> 示例 `$(VCTargetsPath)` \\ *：1033* \\ *userMacros.xml* |
+| `generic` | 所有属性都显示在一页上的类别标题下面<br/>规则对 `Project` 和 `PropertySheet` 上下文可见，但不可见 `File` 。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
+| `tool` | 类别显示为子页。<br/>此规则可在所有上下文中显示： `Project` 、 `PropertySheet` 和 `File` 。<br/>仅当项目具有中定义的项时，才会在 Project 属性中显示规则 `ItemType` `Rule.DataSource` ，除非该规则名称包含在 `ProjectTools` 项组中。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
+| `debugger` | 此页显示为 "调试" 页的一部分。<br/>当前忽略类别。<br/>规则名称应与 Debug Launcher MEF 对象的属性相匹配 `ExportDebugger` 。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033* \\ *调试器 \_ 本地 \_windows.xml* |
+| *客户* | 自定义模板。 模板的名称应与 `ExportPropertyPageUIFactoryProvider` MEF 对象的属性相匹配 `PropertyPageUIFactoryProvider` 。 请参阅 **VisualStudio. ProjectSystem. IPropertyPageUIFactoryProvider**。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033* \\ *userMacros.xml* |
 
-如果规则使用基于属性网格的模板之一，则它可以将以下扩展点用于其属性：
+如果规则使用基于属性网格的一个模板，则可以将这些扩展点用于其属性：
 
 - [属性值编辑器](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/property_value_editors.md)
 
@@ -509,17 +509,17 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
 
 #### <a name="extend-a-rule"></a>扩展规则
 
-如果要使用现有规则，但需要添加 (，即隐藏) 几个属性，可以创建扩展 [规则](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/extending_rules.md)。
+如果要使用现有规则，但需要添加或删除 (即，隐藏仅) 几个属性，则可以创建 [扩展规则](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/extending_rules.md)。
 
-#### <a name="override-a-rule"></a>重写规则
+#### <a name="override-a-rule"></a>覆盖规则
 
-你可能希望工具集使用大多数项目默认规则，但只替换其中一个或几个规则。 例如，假设只想更改 C/C++ 规则以显示不同的编译器开关。 可以提供与现有规则相同的名称和显示名称的新规则，在导入默认 cpp 目标后将其 `PropertyPageSchema` 包括在项组中。 项目中只会使用一个具有给定名称的规则，最后一个规则将包含在 `PropertyPageSchema` 项组中。
+也许您希望您的工具集使用大多数项目默认规则，而只是替换其中的一个或多个默认规则。 例如，假设您只想更改 C/c + + 规则以显示不同的编译器开关。 您可以向现有规则提供名称和显示名称相同的新规则，并在 `PropertyPageSchema` 导入默认 cpp 目标后将其包含在项组中。 在项目中只使用具有给定名称的一个规则，而包含在项组中的最后一个规则 `PropertyPageSchema` 入选。
 
 #### <a name="project-items"></a>项目项
 
-该文件 *ProjectItemsSchema.xml* 项的 和 值，这些项被视为Project项，并定义元素以确定新文件添加到的 Item `ContentType` `ItemType` `FileExtension` 组。
+*ProjectItemsSchema.xml* 文件 `ContentType` `ItemType` 为被视为 Project 项的项定义和值，并定义 `FileExtension` 元素以确定将新文件添加到的项组。
 
-默认 ProjectItemsSchema 文件位于 `$(VCTargetsPath)` \\ *1033* \\ *ProjectItemsSchema.xml。* 若要扩展它，必须使用新名称创建架构文件，例如 *MyProjectItemsSchema.xml：*
+默认的 ProjectItemsSchema 文件位于 `$(VCTargetsPath)` \\ *1033* \\ *ProjectItemsSchema.xml* 中。 若要对其进行扩展，必须创建一个具有新名称的架构文件，如 *MyProjectItemsSchema.xml*：
 
 ```xml
 <ProjectSchemaDefinitions xmlns="http://schemas.microsoft.com/build/2009/properties">
@@ -537,7 +537,7 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
 </ProjectSchemaDefinitions>
 ```
 
-然后在目标文件中，添加：
+然后在目标文件中添加：
 
 ```xml
 <ItemGroup>
@@ -545,29 +545,29 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
 </ItemGroup>
 ```
 
-示例 `$(VCTargetsPath)` \\ *：BuildCustomizations* \\ *masm.xml*
+示例： `$(VCTargetsPath)` \\ *BuildCustomizations* \\ *masm.xml*
 
 ### <a name="debuggers"></a>调试程序
 
-中的调试服务Visual Studio调试引擎的扩展性。 有关详细信息，请参阅以下示例：
+Visual Studio 中的调试服务支持调试引擎的可扩展性。 有关详细信息，请参阅以下示例：
 
-- [MIEngine，支持 lldb 调试的开源项目](https://github.com/Microsoft/MIEngine)
+- [支持 lldb 调试的 MIEngine 开源项目](https://github.com/Microsoft/MIEngine)
 
-- [Visual Studio调试引擎示例](https://code.msdn.microsoft.com/windowsdesktop/Visual-Studio-Debug-Engine-c2e21c0e)
+- [Visual Studio 调试引擎示例](https://code.msdn.microsoft.com/windowsdesktop/Visual-Studio-Debug-Engine-c2e21c0e)
 
-若要为调试会话指定调试引擎和其他属性，必须在[MEF](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md)组件Launcher调试引擎和其他属性，并添加 `debugger` 规则。 有关示例，请参阅 `$(VCTargetsPath)` \\ 1033 \\ 调试器 \_ 本地 \_windows.xml文件。
+若要为调试会话指定调试引擎和其他属性，必须实现一个[调试 Launcher](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDebugLaunchProvider.md) MEF 组件，并添加一 `debugger` 条规则。 有关示例，请参阅 `$(VCTargetsPath)` \\ 1033 \\ 调试器 \_ 本地 \_windows.xml 文件。
 
 ### <a name="deploy"></a>部署
 
-.vcxproj 项目使用Visual Studio Project提供程序 的系统[扩展性](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md)。
+。 .vcxproj 项目使用适用于[部署提供程序](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IDeployProvider.md)的 Project 系统可扩展性 Visual Studio。
 
 ### <a name="build-up-to-date-check"></a>生成最新检查
 
-默认情况下，生成最新检查要求在所有生成输入和输出的生成过程中读取 .tlog 并写入在 文件夹中创建的 .tlog `$(TlogLocation)` 文件。
+默认情况下，"生成最新" 检查需要在 `$(TlogLocation)` 生成过程中为所有生成输入和输出在此文件夹中创建 "读取" 和 "编写 tlog" 文件。
 
-若要使用自定义最新检查，请：
+使用自定义最新检查：
 
-1. 在 Toolset.targets 文件中添加 功能，禁用默认 `NoVCDefaultBuildUpToDateCheckProvider` *最新检查* ：
+1. 通过 `NoVCDefaultBuildUpToDateCheckProvider` 在 *工具集 .targets* 文件中添加功能，禁用默认的最新检查：
 
    ```xml
    <ItemGroup>
@@ -577,25 +577,25 @@ CPS 支持上下文类型的其他值，但它们不用于Visual C++项目。
 
 1. 实现自己的 [IBuildUpToDateCheckProvider](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/extensibility/IBuildUpToDateCheckProvider.md)。
 
-## <a name="project-upgrade"></a>Project升级
+## <a name="project-upgrade"></a>Project 升级
 
-### <a name="default-vcxproj-project-upgrader"></a>默认 .vcxproj 项目升级程序
+### <a name="default-vcxproj-project-upgrader"></a>.Vcxproj 项目升级程序
 
-默认的 .vcxproj 项目升级程序更改 `PlatformToolset` 、、MSBuild `ApplicationTypeRevision` 工具集版本和 .Net Framework。 最后两个始终更改为Visual Studio默认值，但可通过特殊属性MSBuild `PlatformToolset` `ApplicationTypeRevision` 控制。
+.vcxproj 项目升级程序更改 `PlatformToolset` 、 `ApplicationTypeRevision` 、MSBuild 工具集版本和 .net framework。 最后两个将始终更改为 Visual Studio 版本默认值，但 `PlatformToolset` `ApplicationTypeRevision` 可以通过特殊的 MSBuild 属性来控制。
 
 升级程序使用这些条件来决定是否可以升级项目：
 
-1. 对于定义 和 `ApplicationType` 的项目，有一个比当前修订号 `ApplicationTypeRevision` 更高的文件夹。
+1. 对于定义和的 `ApplicationType` 项目 `ApplicationTypeRevision` ，有一个版本号高于当前文件夹的文件夹。
 
-1. 属性 `_UpgradePlatformToolsetFor_<safe_toolset_name>` 为当前工具集定义，其值不等于当前工具集。
+1. `_UpgradePlatformToolsetFor_<safe_toolset_name>`定义当前工具集的属性，并且其值不等于当前工具集。
 
-   在这些属性名称中， 表示工具集名称，所有非字母数字字符都替换为下划线 *\<safe_toolset_name>* **\_** () 。
+   在这些属性名称中， *\<safe_toolset_name>* 表示工具集名称，其中所有非字母数字字符均替换为下划线 (**\_**) 。
 
-当项目可以升级时，它将参与 *解决方案重定目标*。 有关详细信息，请参阅 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)。
+当项目可以升级时，它参与了 *解决方案重定目标*。 有关详细信息，请参阅 [IVsTrackProjectRetargeting2](/dotnet/api/microsoft.visualstudio.shell.interop.ivstrackprojectretargeting2)。
 
-如果要在项目使用特定工具解决方案资源管理器修饰项目名称，请定义 `_PlatformToolsetShortNameFor_<safe_toolset_name>` 属性。
+如果要在 **解决方案资源管理器** 项目使用特定工具集时将项目名称修饰，请定义一个 `_PlatformToolsetShortNameFor_<safe_toolset_name>` 属性。
 
-有关 和 `_UpgradePlatformToolsetFor_<safe_toolset_name>` `_PlatformToolsetShortNameFor_<safe_toolset_name>` 属性定义的示例，请参阅 *Microsoft.Cpp.Default.props* 文件。 有关用法的示例，请参阅 `$(VCTargetPath)` \\ *Microsoft.Cpp.Platform.targets* 文件。
+有关 `_UpgradePlatformToolsetFor_<safe_toolset_name>` 和 `_PlatformToolsetShortNameFor_<safe_toolset_name>` 属性定义的示例，请参阅 *属性* 文件。 有关用法的示例，请参阅 " `$(VCTargetPath)` \\ *Microsoft.*
 
 ### <a name="custom-project-upgrader"></a>自定义项目升级程序
 
@@ -615,7 +615,7 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 }
 ```
 
-代码可以导入并调用默认的 .vcxproj 升级程序对象：
+你的代码可以导入和调用 .vcxproj 升级程序对象：
 
 ```csharp
 // ...
@@ -626,9 +626,9 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 // ...
 ```
 
-`IProjectRetargetHandler` 在 *Microsoft.VisualStudio.ProjectSystem.VS.dll* 中定义，类似于 `IVsRetargetProjectAsync` 。
+`IProjectRetargetHandler` 在 *Microsoft.VisualStudio.ProjectSystem.VS.dll* 中定义，并且类似于 `IVsRetargetProjectAsync` 。
 
-定义 `VCProjectUpgraderObjectName` 属性以告知项目系统使用自定义升级程序对象：
+定义 `VCProjectUpgraderObjectName` 属性，告知项目系统使用您的自定义升级程序对象：
 
 ```xml
 <PropertyGroup>
@@ -646,31 +646,31 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 </PropertyGroup>
 ```
 
-## <a name="project-cache-and-extensibility"></a>Project缓存和扩展性
+## <a name="project-cache-and-extensibility"></a>Project 缓存和扩展性
 
-为了在 2017 Visual Studio中处理大型 C++ 解决方案时提高性能，引入了[项目](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)缓存。 它作为使用项目数据填充的 SQLite 数据库实现，然后用于加载项目，而无需将MSBuild CPS 项目加载到内存中。
+为了提高使用 Visual Studio 2017 中的大型 c + + 解决方案时的性能，引入了[项目缓存](https://devblogs.microsoft.com/cppblog/faster-c-solution-load-with-vs-15/)。 它实现为以项目数据填充的 SQLite 数据库，然后用于加载项目，而无需将 MSBuild 或 CPS 项目加载到内存中。
 
-由于从缓存加载的 .vcxproj 项目没有 CPS 对象，因此无法创建导入或无法创建的扩展的 MEF `UnconfiguredProject` `ConfiguredProject` 组件。 为了支持扩展性，当项目检测到项目是使用 Visual Studio还是可能使用 (MEF 扩展时，) 缓存。
+由于从缓存中加载的 .vcxproj 项目不存在 CPS 对象，因此将导入 `UnconfiguredProject` 或无法创建扩展的 MEF 组件 `ConfiguredProject` 。 为了支持可扩展性，当 Visual Studio 检测到项目是否使用 (或可能使用) MEF 扩展时，不会使用项目缓存。
 
-这些项目类型始终完全加载，内存中有 CPS 对象，因此会为它们创建所有 MEF 扩展：
+这些项目类型始终完全加载并且在内存中具有 CPS 对象，因此会为其创建所有 MEF 扩展：
 
 - 启动项目
 
 - 具有自定义项目升级程序的项目，即定义 `VCProjectUpgraderObjectName` 属性
 
-- 不面向 Desktop Windows的项目，即定义 `ApplicationType` 属性
+- 不以桌面 Windows 为目标的项目，即定义 `ApplicationType` 属性
 
-- 共享项项目 (.vcxitems) 导入 .vcxitems 项目来引用它们的任何项目。
+- 共享项项目 ( .vcxitems) 和通过导入 .vcxitems 项目引用它们的任何项目。
 
-如果未检测到这些条件，则创建项目缓存。 缓存包括响应接口MSBuild查询 `get` 所需的所有 `VCProjectEngine` 数据。 这意味着，扩展插件MSBuild属性和目标文件级别所做的所有修改都只应在从缓存加载的项目中工作。
+如果未检测到上述任何条件，则会创建项目缓存。 缓存包括对 `get` 接口上的查询进行响应所需的 MSBuild 项目的所有数据 `VCProjectEngine` 。 这意味着，扩展所完成的 MSBuild 属性和目标文件级别上的所有修改都应在从缓存加载的项目中工作。
 
-## <a name="shipping-your-extension"></a>寄送扩展
+## <a name="shipping-your-extension"></a>寄送分机
 
-若要了解如何创建 VSIX 文件，请参阅[Shipping Visual Studio Extensions。](../extensibility/shipping-visual-studio-extensions.md) 若要了解如何将文件添加到特殊安装位置，例如，若要在 下添加文件， `$(VCTargetsPath)` 请参阅 [在扩展文件夹 之外安装](../extensibility/set-install-root.md)。
+有关如何创建 VSIX 文件的信息，请参阅[装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。 若要了解如何将文件添加到特殊安装位置，例如，若要在 下添加文件， `$(VCTargetsPath)` 请参阅 [在扩展文件夹 之外安装](../extensibility/set-install-root.md)。
 
 ## <a name="additional-resources"></a>其他资源
 
-Microsoft 生成系统 (MSBuild) [](../msbuild/msbuild.md)为项目文件提供生成引擎和可扩展的基于 XML 的格式。 你应熟悉基本[MSBuild概](../msbuild/msbuild-concepts.md)念MSBuild[如何Visual C++扩展](/cpp/build/reference/msbuild-visual-cpp-overview)Visual C++ 项目系统。
+Microsoft 生成系统 (MSBuild) [为](../msbuild/msbuild.md)项目文件提供生成引擎和可扩展的基于 XML 的格式。 你应熟悉基本[MSBuild概](../msbuild/msbuild-concepts.md)念MSBuild如何Visual C++[扩展](/cpp/build/reference/msbuild-visual-cpp-overview)Visual C++ 项目系统。
 
 MEF Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了 CPS 和项目系统使用的Visual C++ API。 有关 CPS 如何使用 MEF 的概述，请参阅[MEF 的 VSProjectSystem 概述](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)中的[CPS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)和 MEF。
 

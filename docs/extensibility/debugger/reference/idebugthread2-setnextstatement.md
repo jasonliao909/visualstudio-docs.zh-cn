@@ -62,7 +62,7 @@ int SetNextStatement (
 ## <a name="remarks"></a>备注
  指令指针指示要执行的下一条指令或语句。 此方法用于重试一行源代码或强制在其他函数中继续执行（例如）。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

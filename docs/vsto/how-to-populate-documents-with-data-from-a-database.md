@@ -69,7 +69,7 @@ ms.locfileid: "121424081"
 
 有关如何将更新发送到类型化数据集和数据库的信息，请参阅 [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [添加新数据源](../data-tools/add-new-data-sources.md)

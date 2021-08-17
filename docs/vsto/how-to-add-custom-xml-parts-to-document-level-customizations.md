@@ -34,7 +34,7 @@ ms.locfileid: "121424094"
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 > [!NOTE]
-> Visual Studio 不提供 Microsoft Office PowerPoint 的文档级项目。 有关使用 VSTO 外接程序将自定义 XML 部件添加到 PowerPoint 演示文稿的信息，请参阅如何：使用 VSTO 外接程序将自定义 XML 部件[添加到](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)文档。
+> Visual Studio 不提供 Microsoft Office PowerPoint 的文档级项目。 有关使用 VSTO 外接程序将自定义 XML 部件添加到 PowerPoint 演示文稿的信息，请参阅如何：使用 VSTO 外接程序[将](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)自定义 XML 部件添加到文档。
 
 ### <a name="to-add-a-custom-xml-part-to-an-excel-workbook"></a>向 Excel 工作簿添加自定义 XML 部件
 
@@ -61,6 +61,6 @@ ms.locfileid: "121424094"
 ## <a name="robust-programming"></a>可靠编程
  为简单起见，此示例使用在方法中定义为局部变量的 XML 字符串。 通常，应从外部源（如文件或数据库）获取 XML。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)
 - [如何：使用外接程序将自定义 XML 部件VSTO文档](../vsto/how-to-add-custom-xml-parts-to-documents-by-using-vsto-add-ins.md)

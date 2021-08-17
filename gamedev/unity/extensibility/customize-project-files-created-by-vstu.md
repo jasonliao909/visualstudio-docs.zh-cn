@@ -20,7 +20,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121423509"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自定义 VSTU 创建的项目文件
-Unity 在项目文件生成期间提供回调。 实现 `OnGeneratedSlnSolution` `OnGeneratedCSProject` 和 方法， [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 使用 在重新生成项目或解决方案文件时对其进行修改。
+Unity 在项目文件生成期间提供回调。 实现 `OnGeneratedSlnSolution` 和 `OnGeneratedCSProject` 方法，以便在重新 [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 生成项目或解决方案文件时对其进行修改。
 
 ## <a name="demonstrates"></a>演示
 如何自定义由 Visual Studio Tools for Unity 生成的 Visual Studio 项目文件。

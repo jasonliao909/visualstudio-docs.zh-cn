@@ -1,6 +1,6 @@
 ---
-description: 创建一个表示基元类型的对象。
-title: IDebugTypeFieldBuilder：： CreatePrimitive |Microsoft Docs
+description: 创建表示基元类型的 对象。
+title: IDebugTypeFieldBuilder：：CreatePrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402007"
 ---
 # <a name="idebugtypefieldbuildercreateprimitive"></a>IDebugTypeFieldBuilder::CreatePrimitive
-创建一个表示基元类型的对象。
+创建表示基元类型的 对象。
 
 ## <a name="syntax"></a>语法
 
@@ -44,13 +44,13 @@ int CreatePrimitive (
 
 ## <a name="parameters"></a>参数
 `dwElementType`\
-中表示基元类型的 [CorElementType 枚举](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 的值。
+[in]表示基 [元类型的 CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 枚举中的值。
 
 `pTypeField`\
-弄返回新类型的 IDebugField 接口。
+[out]返回新类型的 IDebugField 接口。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

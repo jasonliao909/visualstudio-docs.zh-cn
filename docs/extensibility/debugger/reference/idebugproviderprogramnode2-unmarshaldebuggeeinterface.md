@@ -56,5 +56,5 @@ int UnmarshalDebuggeeInterface(
 ## <a name="remarks"></a>备注
  当调试引擎在进程空间中运行并且正在调试的程序在其自己的进程空间中运行时， [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 使用此方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

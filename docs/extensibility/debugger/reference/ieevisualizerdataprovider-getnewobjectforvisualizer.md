@@ -51,6 +51,6 @@ int GetNewObjectForVisualizer(
 ## <a name="remarks"></a>备注
  `This method` 重新评估它当前表示的对象，并返回作为新对象的结果。 评估后，将更新现有 对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerDataProvider](../../../extensibility/debugger/reference/ieevisualizerdataprovider.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

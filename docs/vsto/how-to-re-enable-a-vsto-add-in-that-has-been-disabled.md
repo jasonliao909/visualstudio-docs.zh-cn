@@ -1,6 +1,6 @@
 ---
 title: 如何：重新启用VSTO禁用的外接程序
-description: 了解如何使用 Visual Studio 来重新启用VSTO应用程序中已禁用的 Microsoft Office 外接程序。
+description: 了解如何使用 Visual Studio 来重新启用已在 Microsoft Office 应用程序中禁用的 VSTO 外接程序。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to

@@ -51,6 +51,6 @@ int GetDocument(
 ## <a name="remarks"></a>备注
  此方法适用于将文档直接提供到 IDE 的调试引擎。 否则，此方法应返回 `E_NOTIMPL` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
