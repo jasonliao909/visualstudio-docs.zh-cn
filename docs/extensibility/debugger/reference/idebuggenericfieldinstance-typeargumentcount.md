@@ -50,5 +50,5 @@ int TypeArgumentCount(
 ## <a name="remarks"></a>备注
  例如，如果列出 \<int> ，则此方法返回 1，如果列出此方法返回 \<int,float2> 2，则返回 。 如果没有类型参数，此方法将返回 0。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

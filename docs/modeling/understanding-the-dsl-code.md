@@ -1,6 +1,6 @@
 ---
 title: 了解 DSL 代码
-description: 了解 Domain-Specific 语言 (DSL) 解决方案如何生成一个 API，该 API 可用于读取和更新 VISUAL STUDIO 中的 DSL 实例。
+description: 了解 Domain-Specific 语言 (DSL) 解决方案如何生成可用于读取和更新 Visual Studio 中 DSL 实例的 API。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,49 +21,49 @@ ms.locfileid: "121398239"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 
-Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读取和更新 VISUAL STUDIO 中的 DSL 实例。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
+Domain-Specific 语言 (DSL) 解决方案生成一个可用于读取和更新 Visual Studio 中 DSL 实例的 API。 此 API 将定义在从 DSL 定义生成的代码中。 本主题介绍了生成的 API。
 
 ## <a name="the-example-solution-component-diagrams"></a>示例解决方案：组件图
 
-若要创建作为本主题中大多数示例来源的解决方案，请从组件模型 **解决方案模板创建** DSL。 这是在创建新 DSL 解决方案时显示的标准模板之一。
+若要创建作为本主题中大多数示例的源的解决方案，请从 " **组件模型** " 解决方案模板创建 DSL。 这是在创建新 DSL 解决方案时显示的标准模板之一。
 
 > [!NOTE]
-> 组件图 DSL 模板称为 **特定于域的语言设计器。**
+> 组件图 DSL 模板称为 **特定于域的语言设计器**。
 
-如果不熟悉此解决方案模板，请按 **F5** 并试验。 特别注意，可通过将端口工具拖动到组件上来创建端口，并可连接端口。
+如果你不熟悉此解决方案模板，请按 **F5** 和试验。 特别注意，可通过将端口工具拖动到组件上来创建端口，并可连接端口。
 
 ![组件及相互连接的端口](../modeling/media/componentsample.png)
 
 ## <a name="the-structure-of-the-dsl-solution"></a>DSL 解决方案的结构
- **Dsl** 项目定义 DSL 的 API。 **DslPackage** 项目定义它如何与 Visual Studio。 还可添加你自己的项目，这些项目还可包含从模型生成的代码。
+ **Dsl** 项目为 DSL 定义 API。 **DslPackage** 项目定义它与 Visual Studio 的集成方式。 还可添加你自己的项目，这些项目还可包含从模型生成的代码。
 
 ### <a name="the-code-directories"></a>代码指令
- 每个项目中的大多数代码都是从 **Dsl\DslDefinition.dsl 生成的**。 生成的代码位于"生成的 **代码"** 文件夹中。 若要查看生成的文件，请单击生成 **.tt** 文件旁边的 **[+]** 。
+ 其中每个项目中的大部分代码都是从 **Dsl\DslDefinition.dsl** 生成的。 生成的代码在生成的 **代码** 文件夹中。 若要查看生成的文件，请单击生成 **tt** 文件旁边的 **[+]** 。
 
  建议你检查生成的代码以帮助你了解 DSL。 若要查看生成的文件，请在“解决方案资源管理器”中展开 *.tt 文件。
 
- \*.tt 文件包含非常少的生成代码。 相反，它们使用 `<#include>` 指令来包括共享的模板文件。 可在 **\Program Files\Microsoft Visual Studio 10.0\Common7\IDE\Extensions\Microsoft\DSL SDK\DSL 设计器\11.0\TextTemplates 找到共享文件**
+ \*Tt 文件包含非常少的生成代码。 相反，它们使用 `<#include>` 指令来包括共享的模板文件。 共享文件可在 **\Program files \ Microsoft Visual Studio 10.0 \ Common7\IDE\Extensions\Microsoft\DSL SDK\DSL Designer\11.0\TextTemplates** 中找到。
 
- 在将你自己的程序代码添加到 DSL 解决方案时，请将它添加在“生成的代码”文件夹之外的单独文件中。 你可能想要创建自定义 **代码** 文件夹。 （在向自定义文件夹添加新代码文件时，请记住在初始代码主干中更正命名空间。）
+ 在将你自己的程序代码添加到 DSL 解决方案时，请将它添加在“生成的代码”文件夹之外的单独文件中。 你可能需要创建一个 **自定义代码** 文件夹。 （在向自定义文件夹添加新代码文件时，请记住在初始代码主干中更正命名空间。）
 
  强烈建议你不要直接编辑生成的代码，因为当重新生成解决方案时你的编辑将会丢失。 相反，若要自定义 DSL，请执行以下操作：
 
 - 调整 DSL 定义中的多个参数。
 
-- 在单独的代码文件中编写分部类，以重写在生成的类中定义的或由生成的类继承的方法。 在某些情况下，必须设置 DSL 定义中类的"生成双派生"选项，才能重写生成的方法。
+- 在单独的代码文件中编写分部类，以重写在生成的类中定义的或由生成的类继承的方法。 在某些情况下，必须在 DSL 定义中设置类的 " **生成双派生** " 选项，才能重写生成的方法。
 
-- 在 DSL 定义中设置导致生成的代码为你自己的代码提供"挂钩"的选项。
+- 设置 DSL 定义中的选项，这些选项会导致生成的代码为您自己的代码提供 "挂钩"。
 
-     例如，如果设置域类的 **"具有** 自定义构造函数"选项，然后生成解决方案，则会看到错误消息。 在双击其中一个错误消息时，你将在生成的代码中看到注释，阐释了你的自定义代码应提供的内容。
+     例如，如果设置域类的 " **具有自定义构造函数** " 选项，然后生成解决方案，则会看到错误消息。 在双击其中一个错误消息时，你将在生成的代码中看到注释，阐释了你的自定义代码应提供的内容。
 
-- 编写你自己的文本模板以生成特定于应用程序的代码。 可以使用包含文件来共享许多项目通用的模板部分，并可以创建 Visual Studio 项目模板，以设置使用你自己的文件结构初始化的项目。
+- 编写你自己的文本模板以生成特定于应用程序的代码。 您可以使用 "包括文件" 来共享多个项目共用的部分模板，也可以创建 Visual Studio 项目模板来设置使用自己的文件结构进行初始化的项目。
 
 ## <a name="generated-files-in-dsl"></a>DSL 中生成的文件
- 以下生成的文件显示在 **Dsl** 项目中。
+ 以下生成的文件将出现在 **Dsl** 项目中。
 
- *YourDsl*`Schema.xsd`
+ *Yourdsl 可*`Schema.xsd`
 
- 包含 DSL 实例的文件的架构。 此文件将复制到 bin (**目录中)** 编译。 安装 DSL 时，可以将此文件复制到 **\Program Files\Microsoft Visual Studio 11.0\Xml\Schemas，** 以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
+ 包含 DSL 实例的文件的架构。 此文件将复制到编译 (**bin**) 目录。 安装 DSL 时，可以将此文件复制到 **\Program 文件 \ Microsoft Visual Studio 11.0 \ Xml\Schemas** ，以便可以验证模型文件。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 
  如果通过在 DSL 资源管理器中设置选项来自定义序列化，则该架构将进行相应的更改。 但是，如果编写自己的序列化代码，则此文件可能不再表示实际架构。 有关详细信息，请参阅[自定义文件存储和 XML 序列化](../modeling/customizing-file-storage-and-xml-serialization.md)。
 
@@ -73,23 +73,23 @@ Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读�
 
  （在组件解决方案示例中，其中一个连接生成器称为 ConnectionBuilder，这是一个巧合，因为域关系名为 Connection。）
 
- 关系是在 Relationship 方法 *中创建* `Builder.Connect()` 的。 默认版本将验证源和目标模型元素是否为可接受，然后实例化该关系。 例如：
+ 关系是在 *关系* 方法中创建的 `Builder.Connect()` 。 默认版本将验证源和目标模型元素是否为可接受，然后实例化该关系。 例如：
 
  `CommentReferencesSubject(sourceAccepted, targetAccepted);`
 
- 每个生成器类都是从 DSL 资源管理器中" **连接生成器"部分中的** 节点生成的。 一个 `Connect` 方法可在一对或多对域类之间创建关系。 每一对都由链接连接指令定义，可在 DSL 资源管理器中的生成器节点下查找该指令。
+ 在 DSL 资源管理器的 " **连接生成器** " 部分中，从节点生成每个生成器类。 一个 `Connect` 方法可在一对或多对域类之间创建关系。 每一对都由链接连接指令定义，可在 DSL 资源管理器中的生成器节点下查找该指令。
 
  例如，可以为示例 DSL 中三种类型关系的每一种添加一个连接生成器链接连接指令。 这将向用户提供单独的连接工具。 实例化的关系类型将依赖于由用户选择的源和目标元素的类型。  若要添加链接连接指令，请在 DSL 资源管理器中右键单击生成器。
 
- 若要编写在创建特定类型的域关系时运行的自定义代码，请在生成器节点下选择相应的链接连接指令。 在"属性窗口"中，将"**使用自定义连接"。** 重新生成解决方案，然后提供代码以更正产生的错误。
+ 若要编写在创建特定类型的域关系时运行的自定义代码，请在生成器节点下选择相应的链接连接指令。 在属性窗口中，设置 "**使用自定义连接**"。 重新生成解决方案，然后提供代码以更正产生的错误。
 
- 若要编写每当用户使用此连接工具时运行的自定义代码，请设置连接生成器的 **"** 是自定义"属性。 可提供代码来确定是否允许源元素、是否允许特定的源和目标的组合，以及在进行连接时应对模型进行哪些更新。 例如，仅当连接不会在关系图中创建循环时才可允许连接。 可以在源和目标之间实例化多个相关元素的更复杂模式，而不是单一关系链接。
+ 若要编写在用户使用此连接工具时运行的自定义代码，请设置连接生成器的 **自定义** 属性。 可提供代码来确定是否允许源元素、是否允许特定的源和目标的组合，以及在进行连接时应对模型进行哪些更新。 例如，仅当连接不会在关系图中创建循环时才可允许连接。 可以在源和目标之间实例化多个相关元素的更复杂模式，而不是单一关系链接。
 
  `Connectors.cs`
 
  包含连接符的类，它们是通常表示引用关系的关系图元素。 每个类都生成自 DSL 定义中的一个连接符。 每个连接符类都派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.BinaryLinkShape>
 
- 若要使颜色和某些其他样式功能可运行时更改，请右键单击 DSL 定义关系图上的 类，并指向"**添加公开"。**
+ 若要使颜色和某些其他样式功能在运行时变量，请右键单击 DSL 定义关系图上的类，然后单击 "添加" " **公开**"。
 
  若要使其他样式功能在运行时可变，请参阅示例 <xref:Microsoft.VisualStudio.Modeling.Diagrams.TextField> 和 <xref:Microsoft.VisualStudio.Modeling.Diagrams.ShapeElement>。
 
@@ -97,7 +97,7 @@ Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读�
 
  包含可定义关系图的类。 它派生自 <xref:Microsoft.VisualStudio.Modeling.Diagrams.Diagram>。
 
- 若要使颜色和某些其他样式功能可运行时更改，请右键单击 DSL 定义关系图上的 类，并指向"**添加公开"。**
+ 若要使颜色和某些其他样式功能在运行时变量，请右键单击 DSL 定义关系图上的类，然后单击 "添加" " **公开**"。
 
  此外，此文件包含 `FixupDiagram` 规则，该规则将在新元素添加到模型时响应。 该规则将添加新的形状并将该形状链接到模型元素。
 
@@ -105,7 +105,7 @@ Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读�
 
  此指令处理器可帮助用户编写读取 DSL 实例的文本模板。 该指令处理器将加载用于 DSL 的程序集 (DLL)，并为命名空间有效地插入 `using` 语句。 这将允许文本模板中的代码使用已在 DSL 中定义的类和关系。
 
- 有关详细信息，请参阅从语言[生成Domain-Specific和](../modeling/generating-code-from-a-domain-specific-language.md)[创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
+ 有关详细信息，请参阅 [从 Domain-Specific 语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md) 和 [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)。
 
  `DomainClasses.cs`
 
@@ -121,9 +121,9 @@ Domain-Specific语言 (DSL) 解决方案生成一个 API，该 API 可用于读�
 
    在示例 DSL 中，`Comment` 类具有通过嵌入关系 `ComponentModelHasComments` 访问其父模型的访问器。
 
-- 构造函数。 如果要重写这些构造函数，请 **对域类设置"** 具有自定义构造函数"。
+- 构造函数。 如果要重写这些参数，则 set 对域类 **具有自定义构造函数** 。
 
-- 元素组原型 (EGP) 处理程序方法。 如果用户可以将其他元素合并 *(，)* 将另一个元素添加到此类的实例上。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
+- 元素组原型 (EGP) 处理程序方法。 如果用户可以 *合并* (将其他元素) 添加到此类的实例上，则这些是必需的。 通常用户通过从元素工具或另一个形状进行拖动或通过粘贴来执行此操作。
 
    在示例 DSL 中，“输入端口”或“输出端口”可以合并到“组件”上。 此外，“组件”和“注释”可以合并到模型上。 必须向
 

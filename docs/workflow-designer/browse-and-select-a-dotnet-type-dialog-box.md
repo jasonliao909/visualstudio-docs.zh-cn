@@ -76,6 +76,6 @@ ms.locfileid: "121423756"
 
 选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用活动设计器](control-flow-activity-designers.md)

@@ -27,7 +27,7 @@ ms.locfileid: "121401708"
 
 1. 使用 Visual C# 扩展性 VSIX (**文件** 新建Project  >    >    >    >    >  **VSIX 项目Project) 。** 将项目名称 **为 TestAsync**。
 
-2. 将 VSPackage 添加到项目。 在"包"中选择解决方案资源管理器，**然后单击"** 添加新项  >    >  **""Visual C#** 项  >  **扩展** 性  >  **Visual Studio包"。** 将此文件命名 *TestAsyncPackage.cs*。
+2. 将 VSPackage 添加到项目。 选择项目中的项目节点解决方案资源管理器"添加新项  >    >  **""Visual C#** 项扩展性Visual Studio  >    >  **包"。** 将此文件命名 *TestAsyncPackage.cs*。
 
 3. 在 *TestAsyncPackage.cs 中*，将包更改为继承自 `AsyncPackage` 而不是 `Package` ：
 
@@ -169,7 +169,7 @@ public sealed class TestAsyncPackage : AsyncPackage
 
      不要忘记更改计算机上有意义的文件名 `userpath` 和路径！
 
-2. 生成并运行代码。 当 实验实例出现Visual Studio，打开解决方案。 这将导致 自动 `AsyncPackage` 加载。 初始值设置项运行后，应找到指定位置中的文件。
+2. 生成并运行代码。 当实验性实例Visual Studio，打开解决方案。 这将导致 自动 `AsyncPackage` 加载。 初始值设置项运行后，应找到指定位置中的文件。
 
 ## <a name="use-an-asynchronous-service-in-a-command-handler"></a>在命令处理程序中使用异步服务
  以下示例演示了如何在菜单命令中使用异步服务。 可以使用此处显示的过程在其他非异步方法中使用该服务。
@@ -182,7 +182,7 @@ public sealed class TestAsyncPackage : AsyncPackage
     TestAsyncCommand.Initialize(this);
     ```
 
-     移动此项 `InitializeAsync()` *AsyncPackageForService.cs* 文件中方法的行。 由于这位于异步初始化中，因此在使用 初始化命令之前，必须切换到主线程 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> 。 它现在应如下所示：
+     移动此项 `InitializeAsync()` *AsyncPackageForService.cs* 文件中的方法。 由于这位于异步初始化中，因此在使用 初始化命令之前，必须切换到主线程 <xref:Microsoft.VisualStudio.Threading.JoinableTaskFactory.SwitchToMainThreadAsync%2A> 。 它现在应如下所示：
 
     ```csharp
 
@@ -241,5 +241,5 @@ public sealed class TestAsyncPackage : AsyncPackage
 
 8. 生成解决方案并启动调试。 当实验实例出现Visual Studio，转到"工具 **"菜单并** 查找"**调用 TestAsyncCommand"** 菜单项。 单击它时，TextWriterService 将写入指定的文件。  (不需要打开解决方案，因为调用 命令也会导致包加载。) 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用和提供服务](../extensibility/using-and-providing-services.md)

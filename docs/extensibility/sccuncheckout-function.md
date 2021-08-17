@@ -1,6 +1,6 @@
 ---
-description: 此函数撤消以前的签出操作，从而将所选文件或文件的内容还原到签出之前的状态。
-title: SccUncheckout 函数|Microsoft Docs
+description: 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。
+title: SccUncheckout 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -22,7 +22,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121400551"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
-此函数撤消以前的签出操作，从而将所选文件或文件的内容还原到签出之前的状态。 自签出以来对文件进行的所有更改将丢失。
+此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。 自签出后对文件进行的所有更改都将丢失。
 
 ## <a name="syntax"></a>语法
 
@@ -40,27 +40,27 @@ SCCRTN SccUncheckout (
 #### <a name="parameters"></a>参数
  pvContext
 
-[in]源代码管理插件上下文结构。
+中源代码管理插件上下文结构。
 
  hWnd
 
-[in]IDE 窗口的句柄，源代码管理插件可以将该窗口用作它提供的任何对话框的父级。
+中IDE 窗口的句柄，源代码管理插件可将其用作它所提供的所有对话框的父级。
 
- nFiles
+ n
 
-[in]数组中指定的文件 `lpFileNames` 数。
+中数组中指定的文件数 `lpFileNames` 。
 
  lpFileNames
 
-[in]要撤消签出的文件的完全限定本地路径名称的数组。
+中要撤消签出的文件的完全限定的本地路径名称数组。
 
- fOptions
+ 用于
 
-[in]命令标志 (不) 。
+中命令标志 (未) 使用。
 
  pvOptions
 
-[in]源代码管理插件特定选项。
+中源代码管理插件特定的选项。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
@@ -68,16 +68,16 @@ SCCRTN SccUncheckout (
 |值|说明|
 |-----------|-----------------|
 |SCC_OK|撤消签出成功。|
-|SCC_E_FILENOTCONTROLLED|所选文件不在源代码控制下。|
-|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，原因可能是网络或争用问题。 建议重试。|
-|SCC_E_NONSPECIFICERROR|非特定故障。 撤消签出未成功。|
+|SCC_E_FILENOTCONTROLLED|所选文件不在源代码管理下。|
+|SCC_E_ACCESSFAILURE|访问源代码管理系统时出现问题，可能是由于网络或争用问题导致的。 建议重试。|
+|SCC_E_NONSPECIFICERROR|非特定故障。 撤消签出失败。|
 |SCC_E_NOTCHECKEDOUT|用户未签出文件。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
-|SCC_E_PROJNOTOPEN|项目尚未从源代码管理打开。|
-|SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
+|SCC_E_PROJNOTOPEN|尚未从源代码管理中打开该项目。|
+|SCC_I_OPERATIONCANCELED|操作在完成前被取消。|
 
 ## <a name="remarks"></a>备注
- 此操作后，将同时为执行撤消签出的文件清除 `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 和 标志。
+ 完成此操作后， `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 将为执行撤消签出的文件清除和标志。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

@@ -39,7 +39,7 @@ ms.locfileid: "121401530"
 
  有关 [添加和](../../extensibility/internals/solution-configuration.md) 重命名解决方案和项目配置的信息，请参阅解决方案配置。
 
- Project依赖项和生成顺序独立于解决方案配置：也就是说，只能为解决方案中所有项目设置一个依赖关系树。 右键单击解决方案或项目，然后选择"Project **依赖项**"或 **Project"生成顺序**"选项 **Project"** 依赖项"对话框。 也可以从菜单菜单 **打开Project菜单**。
+ Project依赖项和生成顺序与解决方案配置无关：也就是说，只能为解决方案中所有项目设置一个依赖关系树。 右键单击解决方案或项目，然后选择"Project **依赖项**"或 **Project"生成顺序**"选项 **Project"** 依赖项"对话框。 也可以从"打开"**菜单Project它**。
 
  ![Project依赖项](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")Project依赖项
 
@@ -58,7 +58,7 @@ ms.locfileid: "121401530"
 
  此外，还可以在项目依赖项窗口中提供网格。 有关详细信息，请参阅属性 [显示网格](../../extensibility/internals/properties-display-grid.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
 - [用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)

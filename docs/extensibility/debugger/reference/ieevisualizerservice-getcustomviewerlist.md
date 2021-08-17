@@ -64,11 +64,11 @@ int GetCustomViewerList(
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 将请求传递给此方法，作为对类型可视化工具支持的一部分。 如果表达式评估程序也为同一类型提供自定义查看器，它可以在这些自定义查看器的 [DEBUG_CUSTOM_VIEWER中追加](../../../extensibility/debugger/reference/debug-custom-viewer.md) 相应的填充内容。 确保 [GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 这些附加查看器。
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 将请求传递给此方法，作为对类型可视化工具支持的一部分。 如果表达式评估程序也为同一类型提供自定义查看器，则它可以在这些自定义查看器的 [DEBUG_CUSTOM_VIEWER结构中](../../../extensibility/debugger/reference/debug-custom-viewer.md) 追加相应的填充内容。 确保 [GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 这些附加查看器。
 
  有关 [可视化工具与查看器之间的差异的详细信息](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) ，请参阅类型可视化工具与自定义查看器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEVisualizerService](../../../extensibility/debugger/reference/ieevisualizerservice.md)
 - [DEBUG_CUSTOM_VIEWER](../../../extensibility/debugger/reference/debug-custom-viewer.md)
 - [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md)

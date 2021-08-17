@@ -52,7 +52,7 @@ int GetStringChars(
 `rgString`\
 [out]返回字符串。
 
- [仅 C++]， `rgString` 是指向接收字符串 Unicode 字符的缓冲区的指针。 此缓冲区必须至少是字符 `buflen` ， (字节) 字节。
+ [仅 C++]， `rgString` 是指向接收字符串 Unicode 字符的缓冲区的指针。 此缓冲区必须至少是字符 `buflen` ， (字节) 大小。
 
 `pceltFetched`\
 [out]返回实际存储在缓冲区中的字符数。  (`NULL` C++.) 
@@ -89,7 +89,7 @@ CStringW RetrievePropertyString(IDebugProperty2 *pPropInfo)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [GetStringCharLength](../../../extensibility/debugger/reference/idebugproperty3-getstringcharlength.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

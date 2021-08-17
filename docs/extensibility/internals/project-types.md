@@ -1,6 +1,6 @@
 ---
 title: Project类型|Microsoft Docs
-description: Visual Studio包括多种语言项目类型，如 Visual C# 和 Visual Basic。 Visual Studio还可以创建自己的项目类型。
+description: Visual Studio包括多种适用于语言（如 Visual C# 和 Visual Basic）的项目类型。 Visual Studio还可以创建自己的项目类型。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -35,7 +35,7 @@ ms.locfileid: "121401357"
 
 - [将命令添加到解决方案资源管理器工具栏](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 
- 详细介绍向工具栏添加按钮时必须遵循 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **解决方案资源管理器** 步骤。
+ 详细说明向工具栏添加按钮时必须遵循 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **解决方案资源管理器** 步骤。
 
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 

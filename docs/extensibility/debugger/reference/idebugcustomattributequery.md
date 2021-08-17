@@ -1,5 +1,5 @@
 ---
-description: 表示对方法或类型上的自定义属性的查询。
+description: 表示对方法或类型的自定义特性的查询。
 title: IDebugCustomAttributeQuery |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402943"
 ---
 # <a name="idebugcustomattributequery"></a>IDebugCustomAttributeQuery
-表示对方法或类型上的自定义属性的查询。
+表示对方法或类型的自定义特性的查询。
 
 ## <a name="syntax"></a>语法
 
@@ -33,12 +33,12 @@ IDebugCustomAttributeQuery : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|检索给定名称的自定义属性。|
-|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|确定在指定的自定义属性中定义。|
+|[GetCustomAttributeByName](../../../extensibility/debugger/reference/idebugcustomattributequery-getcustomattributebyname.md)|检索自定义属性的名称。|
+|[IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery-iscustomattributedefined.md)|确定是否定义了指定的自定义特性。|
 
 ## <a name="requirements"></a>要求
- 标头：Sh.h
+ 标头： Sh。h
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll

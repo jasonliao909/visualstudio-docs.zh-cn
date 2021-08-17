@@ -1,6 +1,6 @@
 ---
 description: 检索元数据导入信息。
-title: IDebugSymbolProviderDirect：：GetMetaDataImport |Microsoft Docs
+title: IDebugSymbolProviderDirect：： GetMetaDataImport |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -46,16 +46,16 @@ int GetMetaDataImport (
 
 ## <a name="parameters"></a>参数
 `guid`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 `appID`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `ppImport`\
-[out]返回包含元数据导入信息的对象。
+弄返回一个包含元数据导入信息的对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

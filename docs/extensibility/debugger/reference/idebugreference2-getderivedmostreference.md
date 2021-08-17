@@ -51,5 +51,5 @@ int GetDerivedMostReference(
 ## <a name="remarks"></a>备注
  例如，如果此属性描述一个对象，该对象实现， `ClassRoot` 但它实际上是 `ClassDerived` 派生自的实例 `ClassRoot` ，则此方法将返回表示对该对象的引用的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象 `ClassDerived` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

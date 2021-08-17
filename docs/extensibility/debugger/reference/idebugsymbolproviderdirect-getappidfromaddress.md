@@ -1,6 +1,6 @@
 ---
-description: 检索给定了调试地址的应用程序域标识符。
-title: IDebugSymbolProviderDirect：： GetAppIDFromAddress |Microsoft Docs
+description: 根据给定的调试地址检索应用程序域标识符。
+title: IDebugSymbolProviderDirect：：GetAppIDFromAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402189"
 ---
 # <a name="idebugsymbolproviderdirectgetappidfromaddress"></a>IDebugSymbolProviderDirect::GetAppIDFromAddress
-检索给定了调试地址的应用程序域标识符。
+根据给定的调试地址检索应用程序域标识符。
 
 ## <a name="syntax"></a>语法
 
@@ -44,13 +44,13 @@ int GetAppIDFromAddress(
 
 ## <a name="parameters"></a>参数
 `pAddress`\
-中调试地址由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示。
+[in]由 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口表示的调试地址。
 
 `pAppID`\
-弄应用程序域的标识符。
+[out]应用程序域的标识符。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

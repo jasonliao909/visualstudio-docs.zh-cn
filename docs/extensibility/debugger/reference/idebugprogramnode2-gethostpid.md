@@ -64,5 +64,5 @@ HRESULT CProgram::GetHostPid(AD_PROCESS_ID* pdwHostPid) {
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

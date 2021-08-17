@@ -29,7 +29,7 @@ ms.locfileid: "121423717"
 |UI 元素|说明|
 |-|-----------------|
 |**消息**|使用 " **消息数据** 表达式" 文本框和 " **消息类型** " 下拉列表框指定类型的消息内容。 默认情况下， **内容定义** 使用 <xref:System.ServiceModel.Activities.ReceiveMessageContent> ，它需要 <xref:System.ServiceModel.Channels.Message> 工作流服务定义中的或消息协定类型。|
-|**Parameters**|单击 " **参数** " 单选按钮以使用 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 需要数据协定的。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
+|**参数**|单击 " **参数** " 单选按钮以使用 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 需要数据协定的。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
 
 " **内容定义** " 对话框由 " **Send**"、" **Receive**"、" **ReceiveAndSendReply**" 和 " **SendAndReceiveReply** " 设计器使用。 在任何情况下访问它们的方式都相同，此处使用“Receive”设计器来演示该过程。
 
@@ -37,6 +37,6 @@ ms.locfileid: "121423717"
 
 可以在活动的 **消息** 部分 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 或活动的 **参数** 部分中指定内容 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [工作流设计器 UI 帮助](browse-and-select-a-dotnet-type-dialog-box.md)

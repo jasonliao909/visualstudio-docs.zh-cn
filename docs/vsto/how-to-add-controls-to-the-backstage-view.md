@@ -33,7 +33,7 @@ ms.locfileid: "121424133"
 # <a name="how-to-add-controls-to-the-backstage-view"></a>如何：向 Backstage 视图添加控件
   可以使用功能区设计器将控件添加到单击"文件"选项卡时打开 **的** 菜单。运行应用程序时，添加到"文件"选项卡 **的控件将显示** 名为 **"外接程序"的组**。
 
- 不能在控件中通过使用功能区设计器在内置控件之前或之后Visual Studio。 内置控件是已出现在 Backstage 视图中的控件。 如果要将控件定位在内置控件之前或之后，则必须使用功能区 XML。 有关功能区和 **XML () ，** 请参阅 [功能区 XML](../vsto/ribbon-xml.md)。 有关自定义 Backstage 视图的信息，请参阅开发人员的[Office 2010 Backstage](/previous-versions/office/developer/office-2010/ee691833(v=office.14))视图简介和为开发人员自定义[Office 2010 Backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
+ 不能在控件中通过使用功能区设计器在内置控件之前或之后Visual Studio。 内置控件是已出现在 Backstage 视图中的控件。 如果要将控件定位在内置控件之前或之后，则必须使用功能区 XML。 有关功能区和 **XML () ，** 请参阅 [功能区 XML](../vsto/ribbon-xml.md)。 有关自定义 Backstage 视图的信息，请参阅开发人员的[Office 2010 Backstage](/previous-versions/office/developer/office-2010/ee691833(v=office.14))视图简介和为[开发人员自定义 Office 2010 Backstage 视图](/previous-versions/office/developer/office-2010/ee815851(v=office.14))。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -41,7 +41,7 @@ ms.locfileid: "121424133"
 
 1. 打开"功能区"中的设计视图。
 
-     若要了解如何将功能区添加到 (**设计器)** 项目，请参阅如何 [：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
+     若要了解如何将功能区添加到 (**设计器**) 项，请参阅如何 [：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
 2. 在功能区设计器中，单击" **文件"** 选项卡。
 
@@ -65,7 +65,7 @@ ms.locfileid: "121424133"
 
 4. 拖动控件以将它们移动到菜单上的新位置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

@@ -1,6 +1,6 @@
 ---
 title: 如何：将窗体区域添加到Outlook外接程序项目
-description: 了解如何使用"新建窗体区域"向导创建Microsoft Office Outlook区域以扩展标准Outlook自定义窗体。
+description: 了解如何使用"新建窗体区域"向导创建Microsoft Office Outlook区域以扩展标准或Outlook窗体。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -51,7 +51,7 @@ ms.locfileid: "121424224"
 6. 在  “选择窗体区域的创建方式”页上，选择是要通过将托管控件拖到可视化设计器来设计窗体区域，还是导入在 Outlook 中设计的窗体区域。
 
     > [!NOTE]
-    > 如果选择导入在 Outlook 中设计的窗体区域，则必须指定 Outlook Form 存储 (*.ofs)* 文件的位置。 不能将托管控件添加到在 Outlook 中设计的窗体区域；只能在现有 UI 背后添加代码。 有关详细信息，请参阅[创建Outlook区域。](../vsto/creating-outlook-form-regions.md)
+    > 如果选择导入在 Outlook 中设计的窗体区域，则必须指定 Outlook 存储 (*.ofs*) 文件的位置。 不能将托管控件添加到在 Outlook 中设计的窗体区域；只能在现有 UI 背后添加代码。 有关详细信息，请参阅[创建Outlook区域。](../vsto/creating-outlook-form-regions.md)
 
 7. 在  “选择要创建的窗体区域的类型”页上，查看窗体区域类型并选择一个，然后单击“下一步” 。 有关窗体区域类型的信息，请参阅创建Outlook[区域](../vsto/creating-outlook-form-regions.md)。
 
@@ -65,13 +65,13 @@ ms.locfileid: "121424224"
 
 10. 单击“下一步”。
 
-11. 在“标识将显示此窗体区域的 message 类”  页上，选择标准 Outlook message 类或者键入一个或多个自定义 message 类的名称，然后单击“完成” 。 有关详细信息，请参阅[将窗体区域与Outlook类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。
+11. 在“标识将显示此窗体区域的 message 类”  页上，选择标准 Outlook message 类或者键入一个或多个自定义 message 类的名称，然后单击“完成” 。 有关详细信息，请参阅[将窗体区域与消息Outlook关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [Outlook解决方案](../vsto/outlook-solutions.md)
 - [创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)
-- [有关创建窗体Outlook指南](../vsto/guidelines-for-creating-outlook-form-regions.md)
+- [创建窗体Outlook指南](../vsto/guidelines-for-creating-outlook-form-regions.md)
 - [演练：设计Outlook区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [演练：导入在窗体中设计的Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [窗体Outlook中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)
+- [窗体区域Outlook中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)

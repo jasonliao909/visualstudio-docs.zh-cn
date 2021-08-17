@@ -33,7 +33,7 @@ ms.locfileid: "121423873"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_DeleteAppointment/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_DeleteAppointment/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用日历项](../vsto/working-with-calendar-items.md)
 - [外接程序VSTO编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
 - [如何：以编程方式创建约会](../vsto/how-to-programmatically-create-appointments.md)

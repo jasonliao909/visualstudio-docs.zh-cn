@@ -1,6 +1,6 @@
 ---
-description: 从反汇编流中的当前位置开始读取指令。
-title: IDebugDisassemblyStream2：： Read |Microsoft Docs
+description: 读取从反汇编流中的当前位置开始的说明。
+title: IDebugDisassemblyStream2：：Read |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402839"
 ---
 # <a name="idebugdisassemblystream2read"></a>IDebugDisassemblyStream2::Read
-从反汇编流中的当前位置开始读取指令。
+读取从反汇编流中的当前位置开始的说明。
 
 ## <a name="syntax"></a>语法
 
@@ -49,28 +49,28 @@ int Read(
 
 ## <a name="parameters"></a>参数
 `dwInstructions`\
-中要反汇编的指令数。 此值也是数组的最大长度 `prgDisassembly` 。
+[in]要反汇编的说明数。 此值也是数组的最大 `prgDisassembly` 长度。
 
 `dwFields`\
-中 [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md) 枚举中的标志的组合，指示要填写的字段 `prgDisassembly` 。
+[in]来自 DISASSEMBLY_STREAM_FIELDS [标志的组合](../../../extensibility/debugger/reference/disassembly-stream-fields.md) ，用于指示 `prgDisassembly` 要填充 的哪些字段。
 
 `pdwInstructionsRead`\
-弄返回实际反汇编的指令数。
+[out]返回实际反汇编的指令数。
 
 `prgDisassembly`\
-弄一个 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 结构数组，其中使用反汇编的代码填充，每个反汇编指令一个结构。 此数组的长度由 `dwInstructions` 参数决定。
+[out]使用反 [汇编代码](../../../extensibility/debugger/reference/disassemblydata.md) 填充的反汇编数据结构数组，每个反汇编指令一个结构。 此数组的长度由 参数 `dwInstructions` 决定。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 可以通过调用 [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) 方法来获取当前范围内可用的指令的最大数量。
+ 可以通过调用 [GetSize](../../../extensibility/debugger/reference/idebugdisassemblystream2-getsize.md) 方法获取当前作用域中可用的最大指令数。
 
- 从中读取下一条指令的当前位置可以通过调用 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法进行更改。
+ 可以通过调用 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法更改下一个指令的读取位置。
 
- `DSF_OPERANDS_SYMBOLS`可以将标志添加到 `DSF_OPERANDS` 参数中的标志 `dwFields` ，以指示在反汇编指令时应使用符号名称。
+ 可以将 标志添加到 参数中的 标志，以指示在反汇编指令时 `DSF_OPERANDS_SYMBOLS` `DSF_OPERANDS` `dwFields` 应该使用符号名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)

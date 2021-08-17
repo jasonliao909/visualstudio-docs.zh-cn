@@ -41,7 +41,7 @@ Visual Studio 有助于使你的软件与用户的要求和系统的体系结构
 |**视频**|![链接到视频 ](../data-tools/media/playvideo.gif) [频道9： Doug 7：代码理解和系统设计与 Visual Studio 2010](https://channel9.msdn.com/shows/VS2010Launch/Doug-Seven-Code-Understanding-and-Systems-Design-with-Visual-Studio-2010)<br /><br /> ![链接到视频 ](../data-tools/media/playvideo.gif) [通道9：构建应用程序](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-5-architecting-an-application)) |
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 扩展性](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [建立用户需求模型](../modeling/model-user-requirements.md)
 - [对体系结构进行分析和建模](../modeling/analyze-and-model-your-architecture.md)

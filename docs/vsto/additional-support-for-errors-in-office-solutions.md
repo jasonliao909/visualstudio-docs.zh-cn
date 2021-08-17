@@ -94,7 +94,7 @@ ms.locfileid: "121424601"
 
 提供指向其他资源的链接，以了解有关开发 Office 解决方案和 Office 开发 Visual Studio 的详细信息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [排查 Office 解决方案中的错误](../vsto/troubleshooting-errors-in-office-solutions.md)
 - [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)

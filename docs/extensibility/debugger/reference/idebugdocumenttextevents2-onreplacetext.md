@@ -1,6 +1,6 @@
 ---
-description: 通知调试包文本已在文档中被替换。
-title: IDebugDocumentTextEvents2：： onReplaceText |Microsoft Docs
+description: 通知调试包文档中已替换文本。
+title: IDebugDocumentTextEvents2：：onReplaceText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121402826"
 ---
 # <a name="idebugdocumenttextevents2onreplacetext"></a>IDebugDocumentTextEvents2::onReplaceText
-通知调试包文本已在文档中被替换。
+通知调试包文档中已替换文本。
 
 ## <a name="syntax"></a>语法
 
@@ -45,14 +45,14 @@ int onReplaceText(
 
 ## <a name="parameters"></a>参数
 `pos`\
-中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) ，指示文本的替换位置。
+[in]一 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 指示文本的替换位置。
 
 `dwNumToReplace`\
-中指定替换的文本的字符数。
+[in]指定已替换的文本的字符数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)
