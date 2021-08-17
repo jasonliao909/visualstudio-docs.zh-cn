@@ -62,7 +62,7 @@ ms.locfileid: "121351923"
 
 4. 在 " **属性** " 窗口中，将 " **修饰符** " 属性设置为 **Public** (默认情况下，它是 **内部**) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [缓存数据](../vsto/caching-data.md)
 - [如何：以编程方式在 Office 文档中缓存数据源](../vsto/how-to-programmatically-cache-a-data-source-in-an-office-document.md)
 - [如何：在受密码保护的文档中缓存数据](../vsto/how-to-cache-data-in-a-password-protected-document.md)

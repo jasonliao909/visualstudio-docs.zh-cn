@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 45d4c946e78a611d7e4837366fbbf618f317c775d7d362f2807ccd40d084b1c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf9753900bcccaf92cd1813103ad41173355c2c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049462"
 ---
 # <a name="source-control-plug-in-glossary"></a>源代码管理插件词汇表
 以下有用的术语和定义与源代码管理插件 SDK 文档相关。

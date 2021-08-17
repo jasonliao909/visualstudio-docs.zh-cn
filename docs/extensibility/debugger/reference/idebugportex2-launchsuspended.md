@@ -11,17 +11,18 @@ ms.assetid: 34b2cf99-2e52-4757-8969-1d12ac517ec0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fdffb6f87285e9f33d6abaf864b4d45345a304ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0c6db6cc7f67cc8cb4106215d33eb791c551a66b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105072489"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030277"
 ---
 # <a name="idebugportex2launchsuspended"></a>IDebugPortEx2::LaunchSuspended
 启动可执行文件。
@@ -87,7 +88,7 @@ int LaunchSuspended(
 
  还可以从调试引擎启动程序。 有关详细信息，请参阅 [启动程序](../../../extensibility/debugger/launching-a-program.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [ResumeProcess](../../../extensibility/debugger/reference/idebugportex2-resumeprocess.md)

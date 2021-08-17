@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e7c95876f51fe33224a246a530cb02f0b36a7cdbee2ee61201bc74aa6b08ce6d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2e126941a3519891a69692fd218ebefc7238be30
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401903"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095343"
 ---
 # <a name="ienumdebugobjectsnext"></a>IEnumDebugObjects::Next
 此方法返回枚举中的下一组元素。

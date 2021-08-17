@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 04/20/2020
 ms.faqid: Section3
-ms.openlocfilehash: a628bd7c5398f346d4371b466e132a54c27a6b08
-ms.sourcegitcommit: 367a2d9df789aa617abaa09b0cd0a18db7357d0c
+ms.openlocfilehash: c85d5f4bb2cdf7b0b763c259acfeb9214d22263f133fc3d8ebddcd505ec8fc74
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107800836"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121392937"
 ---
 # <a name="visual-studio-subscription-benefits"></a>Visual Studio 订阅权益
 

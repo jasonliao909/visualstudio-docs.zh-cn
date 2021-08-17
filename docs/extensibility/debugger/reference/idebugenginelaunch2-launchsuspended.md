@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c263b331ff33f0fbd146cb9eb9fdc29a92880b7a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 27d4ae71dfa2c5a1c0f1d7806e1fa83c511a1bfd7131667880dce3dc5b3db54a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079098"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121390081"
 ---
 # <a name="idebugenginelaunch2launchsuspended"></a>IDebugEngineLaunch2::LaunchSuspended
 此方法通过 DE (调试引擎启动) 。
@@ -88,7 +88,7 @@ int LaunchSuspended(
 [in]可执行文件的选项。
 
 `dwLaunchFlags`\
-[in]指定 [LAUNCH_FLAGS](../../../extensibility/debugger/reference/launch-flags.md) 会话的会话。
+[in]指定 [LAUNCH_FLAGS的](../../../extensibility/debugger/reference/launch-flags.md) 会话。
 
 `hStdInput`\
 [in]备用输入流的句柄。 如果不需要重定向，则可能为 0。
@@ -109,7 +109,7 @@ int LaunchSuspended(
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 通常， [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 使用 [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) 方法启动程序，然后将调试器附加到挂起的程序。 但是，在某些情况下，调试引擎可能需要启动程序 (例如，如果调试引擎是解释器一部分，并且正在调试的程序是解释语言) ，在这种情况下使用 方法 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `IDebugEngineLaunch2::LaunchSuspended` 。
+ 通常， [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 使用 [LaunchSuspended](../../../extensibility/debugger/reference/idebugportex2-launchsuspended.md) 方法启动程序，然后将调试器附加到挂起的程序。 但是，在某些情况下，调试引擎可能需要启动程序 (例如，如果调试引擎是解释器的一部分，并且正在调试的程序是解释语言) ，在这种情况下使用 方法 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] `IDebugEngineLaunch2::LaunchSuspended` 。
 
  调用 [ResumeProcess](../../../extensibility/debugger/reference/idebugenginelaunch2-resumeprocess.md) 方法，在进程成功启动后以挂起状态启动进程。
 

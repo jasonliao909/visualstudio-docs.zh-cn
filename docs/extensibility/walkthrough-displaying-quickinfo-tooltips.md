@@ -10,17 +10,18 @@ ms.assetid: 23fb8384-4f12-446f-977f-ce7910347947
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 dev_langs:
 - csharp
 - vb
-ms.openlocfilehash: d374aa41d85b1d64b6623cb99f6183787a2afc53
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 6039f8a3bbdc2f2263886486b3be17ec3e0b5053
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049046"
 ---
 # <a name="walkthrough-display-quickinfo-tooltips"></a>演练：显示 QuickInfo 工具提示
 QuickInfo 是一项 IntelliSense 功能，当用户将指针移到方法名称上时，它将显示方法签名和说明。 可以通过定义要为其提供 QuickInfo 说明的标识符，然后创建用于显示内容的工具提示，来实现基于语言的功能（如 QuickInfo）。 你可以在语言服务的上下文中定义 QuickInfo，或者可以定义自己的文件扩展名和内容类型，并只为该类型显示 QuickInfo，也可以为现有内容类型 (如 "text" ) 显示 QuickInfo。 本演练演示如何为 "文本" 内容类型显示 QuickInfo。
@@ -39,16 +40,16 @@ QuickInfo 是一项 IntelliSense 功能，当用户将指针移到方法名称�
 
   在此示例中，QuickInfo 源使用方法名称和说明的硬编码列表，但在完整实现中，语言服务和语言文档负责提供该内容。
 
-## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必备条件
+ 从 Visual Studio 2015 开始，不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>创建 MEF 项目
 
 ### <a name="to-create-a-mef-project"></a>创建 MEF 项目
 
-1. 创建 c # VSIX 项目。  (在 " **新建项目** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX 项目**"。 ) 将解决方案命名为 `QuickInfoTest` 。
+1. 创建 c # VSIX 项目。  (在 "**新建 Project** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX Project**"。 ) `QuickInfoTest` 将解决方案命名为。
 
-2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅 [使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
+2. 将编辑器分类器项模板添加到项目。 有关详细信息，请参阅[使用编辑器项模板创建扩展](../extensibility/creating-an-extension-with-an-editor-item-template.md)。
 
 3. 删除现有的类文件。
 
@@ -179,5 +180,5 @@ QuickInfo 是一项 IntelliSense 功能，当用户将指针移到方法名称�
 
 4. 将指针移到 "添加" 的一个匹配项上方。 应显示该方法的签名和说明 `add` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [演练：将内容类型链接到文件扩展名](../extensibility/walkthrough-linking-a-content-type-to-a-file-name-extension.md)

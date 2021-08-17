@@ -1,6 +1,6 @@
 ---
 description: 此方法将方法位置和偏移量转换为内存地址。
-title: IDebugExpressionEvaluator：： GetMethodLocationProperty |Microsoft Docs
+title: IDebugExpressionEvaluator：：GetMethodLocationProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 52c42a2e-f144-476b-8bef-442464c8fe8e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ddc9c17b90be6d65786d58ff2bf585461c4fc69f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6e5b520fc15d5cd1edff3331f4622c6086b3b58d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096175"
 ---
 # <a name="idebugexpressionevaluatorgetmethodlocationproperty"></a>IDebugExpressionEvaluator::GetMethodLocationProperty
 此方法将方法位置和偏移量转换为内存地址。
@@ -50,29 +51,29 @@ int GetMethodLocationProperty(
 
 ## <a name="parameters"></a>参数
 `upstrFullyQualifiedMethodPlusOffset`\
-中表示为字符串的方法位置和偏移量。
+[in]方法位置和偏移量，以字符串形式表示。
 
 `pSymbolProvider`\
-中表示为 [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 对象的符号提供程序。
+[in]表示为 [IDebugSymbolProvider 对象的符号](../../../extensibility/debugger/reference/idebugsymbolprovider.md) 提供程序。
 
 `pAddress`\
-中方法中的一个地址，以 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 对象的形式表示。
+[in]方法中的地址，以 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 对象表示。
 
 `pBinder`\
-中表示为 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 对象的联编程序。
+[in]表示为 [IDebugBinder 对象的](../../../extensibility/debugger/reference/idebugbinder.md) 联编程序。
 
 `ppProperty`\
-弄返回表示内存地址的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 接口。
+[out]返回表示 [内存地址的 IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 接口。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 返回的地址可用于设置断点，例如。
+ 例如，返回的地址可用于设置断点。
 
- 不管名称 `upstrFullyQualifiedMethodPlusOffset` 如何，都可以向此参数传递部分限定的方法名称。 在这种情况下，所选方法是括起来的方法 `pAddress` 。 如何解释此参数取决于表达式计算器的实现以及它所支持的语言。
+ 尽管名称 `upstrFullyQualifiedMethodPlusOffset` 为 ，但此参数可以传递部分限定的方法名称。 在这种情况下，所选方法是包含 的方法 `pAddress` 。 此参数的解释方式由表达式计算程序及其支持的语言的实现决定。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

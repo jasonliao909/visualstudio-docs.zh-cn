@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 65972621980b311dc3a396836c4c85286e10a00e2e93589a9b3aeaffc8627528
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 676ef23c57569819e462e15c1d386c8cd0559933
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063377"
 ---
 # <a name="get-started-with-source-control-plug-ins"></a>源代码管理插件入门
 若要创建源代码管理插件，您必须创建一个 DLL 来实现源代码管理插件 API 中定义的函数，然后将该 DLL 注册 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 到，使其可在源代码版本控制中使用。

@@ -1,5 +1,5 @@
 ---
-title: " (Visual Studio 模板) 的 TemplateID 元素 |Microsoft Docs"
+title: TemplateID 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 TemplateID 元素以及它如何为通过 TemplateGroupID 元素分类到一组项模板的项模板指定标识符。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -16,12 +16,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: e33f2d5c424e5d48cff212dc736bbc13e58801d5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aa94da28cf02916b0961da722785c4f51d14d171ca61b69630f1a6c027491468
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056007"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388170"
 ---
 # <a name="templateid-element-visual-studio-templates"></a>TemplateID 元素（Visual Studio 模板）
 指定由 [TemplateGroupID](../extensibility/templategroupid-element-visual-studio-templates.md) 元素分类到一组项模板的项模板的标识符。
@@ -60,6 +60,6 @@ ms.locfileid: "105056007"
 
  元素的值 `TemplateID` 与项目系统注册 (HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\11.0\Projects一起使用 \\) 来筛选在 " **添加新项** " 对话框中显示的模板。
 
-## <a name="see-also"></a>另请参阅
-- [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建项目和项模板](../ide/creating-project-and-item-templates.md)
+## <a name="see-also"></a>请参阅
+- [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)

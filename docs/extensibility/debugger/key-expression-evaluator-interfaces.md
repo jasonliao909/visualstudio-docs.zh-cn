@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c9f484b485910b6fd10cec24863f89f0a49de92c6933ab8fcd62427f948b995b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38d5fa76cb816d67f1146f3db97350900403a827
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361075"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080268"
 ---
 # <a name="key-expression-evaluator-interfaces"></a>键表达式计算器接口
 > [!IMPORTANT]

@@ -11,14 +11,15 @@ ms.assetid: eba2b76e-f90d-486b-ae5c-c47f1b8ba2e5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 38791456500fc5996345314a0a779f5ccd03d940
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9902ea1ea882c9d5ba0bf3f9770cce0cbc741f9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095902"
 ---
 # <a name="idebugstepcompleteevent2"></a>IDebugStepCompleteEvent2
 当正在调试的程序完成单步执行、逐过程执行或跳出源代码或语句或指令行时，调试引擎会将此接口发送 (DE) 到会话调试管理器 (SDM) 。
@@ -45,7 +46,7 @@ IDebugStepCompleteEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

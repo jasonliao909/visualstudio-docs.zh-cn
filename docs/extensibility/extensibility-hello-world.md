@@ -8,14 +8,15 @@ ms.assetid: f74e1ad1-1ee5-4360-9bd5-d82467b884ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ec465eda5a0bd7d017c3822390d68b43f76b5c47
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7ae5cb6712a872844685e167996f1d68c4771a40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070175"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063611"
 ---
 # <a name="tutorial---create-your-first-extension-hello-world"></a>教程 - 编写自己的第一个扩展：Hello World
 

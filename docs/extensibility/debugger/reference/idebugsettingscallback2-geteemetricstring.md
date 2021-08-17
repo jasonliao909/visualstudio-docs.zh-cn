@@ -1,6 +1,6 @@
 ---
-description: 根据表达式评估器指标的名称检索其值字符串。
-title: IDebugSettingsCallback2：：GetEEMetricString |Microsoft Docs
+description: 根据给定的名称检索表达式计算器指标的值字符串。
+title: IDebugSettingsCallback2：： GetEEMetricString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389535"
 ---
 # <a name="idebugsettingscallback2geteemetricstring"></a>IDebugSettingsCallback2::GetEEMetricString
-根据表达式评估器指标的名称检索其值字符串。
+根据给定的名称检索表达式计算器指标的值字符串。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +47,19 @@ private int GetEEMetricString(
 
 ## <a name="parameters"></a>参数
 `guidLang`\
-[in]编程语言的唯一标识符。
+中编程语言的唯一标识符。
 
 `guidVendor`\
-[in]供应商的唯一标识符。
+中供应商的唯一标识符。
 
 `pszMetric`\
-[in]指标的名称。
+中度量值的名称。
 
 `pbstrValue`\
-[out]返回指标值字符串。
+弄返回指标值字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

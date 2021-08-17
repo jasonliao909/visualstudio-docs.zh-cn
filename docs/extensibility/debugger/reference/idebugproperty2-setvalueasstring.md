@@ -1,6 +1,6 @@
 ---
-description: 设置给定字符串的属性的值。
-title: IDebugProperty2：： SetValueAsString |Microsoft Docs
+description: 设置给定字符串中属性的值。
+title: IDebugProperty2：：SetValueAsString |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d71f6926e9b973f83ae8f6d8e4a64ac127eaca6cf85e335cb6970c261c56840
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b9c1c83dc86b76d38f1f36a38f7e01d24a37f201
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449009"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096045"
 ---
 # <a name="idebugproperty2setvalueasstring"></a>IDebugProperty2::SetValueAsString
-设置给定字符串的属性的值。
+设置给定字符串中属性的值。
 
 ## <a name="syntax"></a>语法
 
@@ -47,20 +47,20 @@ int SetValueAsString (
 
 ## <a name="parameters"></a>参数
 `pszValue`\
-中包含要设置的值的字符串。
+[in]包含要设置的值的字符串。
 
 `nRadix`\
-中用于解释任何数值信息的基数。 这可以是0，尝试自动确定基数。
+[in]用于解释任何数值信息的基数。 此为 0 可尝试自动确定基数。
 
 `dwTimeout`\
-中指定从此方法返回之前要等待的最长时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
+[in]指定在从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 下表显示了其他可能的值。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。 下表显示了其他可能的值。
 
 |值|说明|
 |-----------|-----------------|
-|`E_SETVALUE_VALUE_CANNOT_BE_SET`|无法将该字符串转换为属性值，或者无法设置该属性的值。|
+|`E_SETVALUE_VALUE_CANNOT_BE_SET`|字符串无法转换为属性值，或者无法设置属性值。|
 |`E_SETVALUE_VALUE_IS_READONLY`|属性为只读属性。|
 
 ## <a name="see-also"></a>请参阅

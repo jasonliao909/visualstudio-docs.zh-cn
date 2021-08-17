@@ -1,6 +1,6 @@
 ---
 title: Visual Studio SDK)  (事件源 |Microsoft Docs
-description: 在 Visual Studio 调试中了解两个事件源：调试引擎和会话调试管理器。
+description: 了解 Visual Studio 调试中事件的两个源：调试引擎和会话调试管理器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: b9ba0908-ae4c-4a64-aab1-bee453dd7a22
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8a1956cb3643b9f49fae6bb42bbb46675b7b2398
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e927d95c7d6ea526fc1400ea22be8243809fba4591833eb442268180aa1b4847
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898560"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378249"
 ---
 # <a name="event-sources-visual-studio-sdk"></a>Visual Studio SDK (事件源) 
 事件有两个源：调试引擎 (DE) 和会话调试管理器 (SDM) 。 从 DE 发送的事件具有非 NULL 引擎，而从 SDM 发送的事件具有 NULL 引擎。
@@ -74,5 +75,5 @@ HRESULT CEvent::SendAsynchronousEvent(IDebugEventCallback2 *pCallback, IDebugEng
 
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [发送事件](../../extensibility/debugger/sending-events.md)

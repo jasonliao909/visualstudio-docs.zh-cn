@@ -1,6 +1,6 @@
 ---
 description: 获取断点类型。
-title: IDebugErrorBreakpointResolution2：： GetBreakpointType |Microsoft Docs
+title: IDebugErrorBreakpointResolution2：：GetBreakpointType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 0bdb1152-4752-4464-ae7c-6d666dc293b7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f66b98ad47fdfca953a5cf2f2c14e483e450dae8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5907e77a95f6d3d91f9b8898197d7364e70a815451bd3e62a36bd10175bcc47e
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092483"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377784"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 获取断点类型。
@@ -42,16 +43,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>参数
 `pBPType`\
-弄返回 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举中的一个值，该值描述断点的类型。
+[out]从描述断点 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举返回一个值。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法返回无法绑定的断点的类型，因此需要一个错误断点事件。
+此方法返回未能绑定的断点的类型，因此需要错误断点事件。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为 `CDebugErrorBreakpointResolution` 公开 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为公开 `CDebugErrorBreakpointResolution` [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -84,6 +85,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

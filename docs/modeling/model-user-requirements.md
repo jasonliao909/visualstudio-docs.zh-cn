@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 860b63f5ae01d74df27b4a15f5f5769b2deffffa6bd258c147e4ce63d0abc0aa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 29970ff3c50a0e28e35751e1c9807f201f48f51f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410980"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047863"
 ---
 # <a name="model-user-requirements"></a>建立用户需求模型
 
