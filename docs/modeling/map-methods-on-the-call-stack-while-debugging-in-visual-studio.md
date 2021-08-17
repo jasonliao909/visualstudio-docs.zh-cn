@@ -31,12 +31,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 0850112c2e5c7e670c776920613c73916c19b2707d2840f4dc21579d03ef99f3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d71be4e4bdf57616078b35a3fddcc0907ea3e5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121257922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047928"
 ---
 # <a name="map-methods-on-the-call-stack-while-debugging-in-visual-studio"></a>在 Visual Studio 中调试时映射调用堆栈上的方法
 
@@ -44,7 +44,7 @@ ms.locfileid: "121257922"
 
  ![使用代码图上的调用堆栈调试](../debugger/media/debuggermap_overview.png)
 
- 需要：
+ 你将需要：
 
  ::: moniker range="vs-2017"
 
@@ -62,7 +62,7 @@ ms.locfileid: "121257922"
 
   请参阅：
 
-- [视频：使用代码图调试器集成进行可视调试 (第 9 频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
+- [视频：使用代码图调试器集成进行可视化调试 (第 9 频道) ](https://channel9.msdn.com/Series/Visual-Studio-2012-Premium-and-Ultimate-Overview/Visual-Studio-Ultimate-2012Debug-visually-with-Code-Map-debugger-integration)
 
 - [映射调用堆栈](#MapStack)
 
@@ -163,7 +163,7 @@ ms.locfileid: "121257922"
 
    在你上次更新图后，代码可能已发生更改。 例如，图中的某个调用可能已在代码中不存在了。 请关闭此消息，然后在再次更新图之前，尝试重新生成解决方案。
 
-- **如何实现地图布局吗？**
+- **如何实现地图的布局？**
 
    打开地图 **工具栏** 上的"布局"菜单：
 
@@ -175,7 +175,7 @@ ms.locfileid: "121257922"
 
 - **我能否与他人共享此图？**
 
-   可以导出地图、将其发送给其他人（如果有 Microsoft Outlook，或将其保存到解决方案中，以便将其签入源代码管理。
+   可以导出地图、将其发送给其他人（如果有 Microsoft Outlook或将其保存到解决方案中，以便将其签入源代码管理中。
 
    ![与他人共享调用堆栈代码图](../debugger/media/debuggermap_sharewithothers.png)
 

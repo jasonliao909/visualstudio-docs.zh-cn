@@ -1,6 +1,6 @@
 ---
 description: 此方法确定此端口是否在本地计算机上。
-title: IDebugDefaultPort2：： QueryIsLocal |Microsoft Docs
+title: IDebugDefaultPort2：：QueryIsLocal |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,14 +11,15 @@ ms.assetid: 1a42e774-c6ed-419a-a0e3-cab5778652ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e678e1219bfc9c64fe33be545e82e7fbb596b2db
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c84e7d52425b6060995d7713e4aee72d931d894d9a9afc6e100c6d408d4d442f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067122"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292723"
 ---
 # <a name="idebugdefaultport2queryislocal"></a>IDebugDefaultPort2::QueryIsLocal
 此方法确定此端口是否在本地计算机上。
@@ -36,7 +37,7 @@ int QueryIsLocal();
 ```
 
 ## <a name="return-value"></a>返回值
- `S_OK`如果此端口在与调用) 方相同的计算机上 (本地，则返回; `S_FALSE` 如果端口在另一台计算机上，则返回。
+ 如果此端口是本地端口 (调用方位于同一计算机上) 则返回 ;如果端口在另一台计算机中， `S_OK` `S_FALSE` 则返回 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)

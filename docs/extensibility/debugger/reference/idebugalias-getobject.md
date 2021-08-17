@@ -48,6 +48,6 @@ int GetObject(
 ## <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

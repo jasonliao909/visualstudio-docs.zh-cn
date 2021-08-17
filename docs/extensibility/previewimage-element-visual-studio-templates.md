@@ -21,7 +21,7 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121431586"
 ---
-# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage (Visual Studio模板) 
+# <a name="previewimage-element-visual-studio-templates"></a>PreviewImage 元素 (Visual Studio模板) 
 指定预览图像作为文件名，用于预览图像，该预览图像将显示在"新建 **Project或"** 添加新 **项"对话框中**。
 
  \<VSTemplate> \<TemplateData>
@@ -46,7 +46,7 @@ ms.locfileid: "121431586"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建项"Project **或"** 添加新项"**对话框中的显示** 方式。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建项目"Project"添加新项"**对话框中的显示** 方式。|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。

@@ -9,14 +9,15 @@ ms.assetid: 9cfdbca5-052c-48e9-8411-e2e9e4065d00
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 78361429e371bf19ee1fea27c090af80c2b79b73
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9562b5d89b0602140a84620b97e4ec43b9cab7b292c8698d229c8f5b604197a8
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078079"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121378011"
 ---
 # <a name="idebugbreakpointchecksumrequest2"></a>IDebugBreakpointChecksumRequest2
 表示断点请求的文档校验和。
@@ -27,20 +28,20 @@ ms.locfileid: "105078079"
 IDebugBreakpointChecksumRequest2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
- 由 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 调试包实现并由调试引擎使用。
+## <a name="notes-for-implementers"></a>实现者说明
+ 由调试 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 包实现，由调试引擎使用。
 
 ## <a name="methods"></a>方法
- 下表显示的方法 `IDebugBreakpointChecksumRequest2` 。
+ 下表显示了 的方法 `IDebugBreakpointChecksumRequest2` 。
 
 |方法|说明|
 |------------|-----------------|
-|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|根据要使用的校验和算法的唯一标识符，为断点请求检索文档校验和。|
-|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|确定是否为此文档启用校验和。|
+|[GetChecksum](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-getchecksum.md)|根据要使用的校验和算法的唯一标识符，检索断点请求的文档校验和。|
+|[IsChecksumEnabled](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2-ischecksumenabled.md)|确定是否为此文档启用了校验和。|
 
 ## <a name="requirements"></a>要求
- 标头： Msdbg
+ 标头：Msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

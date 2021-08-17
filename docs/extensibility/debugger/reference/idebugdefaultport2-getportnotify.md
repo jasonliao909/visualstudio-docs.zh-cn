@@ -51,6 +51,6 @@ int GetPortNotify(
 ## <a name="remarks"></a>备注
  通常， `QueryInterface` 对实现 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 接口的对象调用 方法以获取 [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md) 接口。 但是，在某些情况下，所需接口在不同的对象上实现。 此方法隐藏这些情况，并返回 `IDebugPortNotify2` 最合适的 对象的 接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDefaultPort2](../../../extensibility/debugger/reference/idebugdefaultport2.md)
 - [IDebugPortNotify2](../../../extensibility/debugger/reference/idebugportnotify2.md)

@@ -10,14 +10,15 @@ ms.assetid: bb87a322-bac4-4258-92bc-9a876f05d653
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d6409b5e624cd8596e669f191b2644aaf27a88c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 24ff181b541cc2f7d46dcfb30bca38fa0f1e297b3ec4bcee61417d0ada6be943
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090923"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376269"
 ---
 # <a name="design-xml-command-table-vsct-files"></a>设计 XML 命令表 ( .vsct) 文件
 XML 命令表 (*.vsct*) 文件描述 VSPackage 的命令项的布局和外观。 命令项包括按钮、组合框、菜单、工具栏和命令项组。 本文介绍 XML 命令表文件、它们如何影响命令项和菜单，以及如何创建它们。
@@ -117,11 +118,11 @@ XML 命令表 (*.vsct*) 文件描述 VSPackage 的命令项的布局和外观。
 ## <a name="vsct-file-notes"></a>.vsct 文件说明
  如果在对 *.vsct* 文件进行编译并将其放入本机附属 DLL 之后对该文件进行任何更改，则应运行 **devenv.exe/setup/nosetupvstemplates**。 这样做会强制重新读取实验注册表中指定的 VSPackage 资源，并强制重新读取要重新生成的内部数据库 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 在开发过程中，可能会在实验注册表配置单元中创建和注册多个 VSPackage 项目，从而导致在 IDE 中出现混乱。 若要解决此问题，可以将实验性 hive 重置为默认设置，以删除所有已注册的 Vspackage 和他们可能对 IDE 所做的任何更改。 若要重置实验性 hive，请使用 Visual Studio SDK 附带的 CreateExpInstance.exe 工具。 可在以下位置找到：
+ 在开发过程中，可能会在实验注册表配置单元中创建和注册多个 VSPackage 项目，从而导致在 IDE 中出现混乱。 若要解决此问题，可以将实验性 hive 重置为默认设置，以删除所有已注册的 Vspackage 和他们可能对 IDE 所做的任何更改。 若要重置实验性 hive，请使用 Visual Studio SDK 随附的 CreateExpInstance.exe 工具。 可在以下位置找到：
 
  *% PROGRAMFILES (x86) % \ Visual Studio \\ \<version> SDK\VisualStudioIntegration\Tools\Bin\CreateExpInstance.exe*
 
  使用命令 **CreateExpInstance/Reset** 运行该工具。 请记住，此工具从实验性 hive 中删除通常不随一起安装的所有已注册的 Vspackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

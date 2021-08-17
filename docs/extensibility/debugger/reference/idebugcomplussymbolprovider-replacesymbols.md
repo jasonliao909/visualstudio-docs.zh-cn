@@ -1,6 +1,6 @@
 ---
 description: 将当前调试符号替换为指定数据流中的符号。
-title: IDebugComPlusSymbolProvider：：ReplaceSymbols |Microsoft Docs
+title: IDebugComPlusSymbolProvider：： ReplaceSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b9ac9c1101d162456fa66773076eda49172cec7263a5ff28e3223b95efb04566
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4fc12a5445297e0d91be69ca0f1ec3db7ea1d98e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079735"
 ---
 # <a name="idebugcomplussymbolproviderreplacesymbols"></a>IDebugComPlusSymbolProvider::ReplaceSymbols
 将当前调试符号替换为指定数据流中的符号。
@@ -46,16 +46,16 @@ int ReplaceSymbols(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `guidModule`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 `pStream`\
-[in]包含新符号的数据流。
+中包含新符号的数据流。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。

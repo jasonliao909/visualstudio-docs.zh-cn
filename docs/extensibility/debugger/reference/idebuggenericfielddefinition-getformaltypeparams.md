@@ -10,17 +10,18 @@ ms.assetid: cadbd6a1-bc7c-4aff-8777-5396b7a23c3e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3aba284bab3299bf6ef300f9493c20e9c0d230ee
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: aabc2f8854cfd59c56c453173b9c6b0c494619ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064144"
 ---
 # <a name="idebuggenericfielddefinitiongetformaltypeparams"></a>IDebugGenericFieldDefinition::GetFormalTypeParams
 根据参数的数量检索类型参数。
@@ -59,5 +60,5 @@ int GetFormalTypeParams(
 ## <a name="remarks"></a>备注
  按从左至右的顺序返回类型参数。 例如，Dictionary \<K,V> 返回 IDebugFormalGenericParameters {K，V}。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

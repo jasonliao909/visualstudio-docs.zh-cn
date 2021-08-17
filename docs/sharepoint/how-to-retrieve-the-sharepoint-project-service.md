@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c82bc11d969f457515fbf1331d1ac1c8cb83135e9e9ebf381503cc72f6d6fcd2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aa962e3b82ec994cfceee3d82566029c536af283
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332008"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047616"
 ---
 # <a name="how-to-retrieve-the-sharepoint-project-service"></a>如何：检索SharePoint 项目服务
   可以在以下SharePoint 项目服务访问应用程序：
@@ -55,7 +55,7 @@ ms.locfileid: "121332008"
 
 2. 使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemType.ProjectService%2A> *projectItemType* 参数的 属性检索服务。
 
-     下面的代码示例演示如何使用 项目服务在列表定义项目项的简单扩展中将消息写入"输出"窗口和"错误 **列表**"窗口。
+     下面的代码示例演示如何使用 项目服务在列表定义项目项的简单扩展中将消息写入"输出"窗口和"**错误列表**"窗口。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.vb" id="Snippet2":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromprojectsystemextensions.getprojectservice/extension/extension.cs" id="Snippet2":::
@@ -84,12 +84,12 @@ ms.locfileid: "121332008"
 
 2. 使用 <xref:System.IServiceProvider.GetService%2A> 方法请求 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectService> 对象。
 
-     下面的代码示例演示如何使用 项目服务 从扩展添加到列表中节点的快捷菜单中将消息写入到"输出"窗口和"错误 **列表"服务器资源管理器。**
+     下面的代码示例演示如何使用 项目服务 从扩展添加到 服务器资源管理器 中的列表节点的快捷菜单中将消息写入到"输出"**窗口和"错误列表"服务器资源管理器。**
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.vb" id="Snippet1":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/spextensibility.projectservice.fromspexplorerextensions.getprojectservice/extension/extension.cs" id="Snippet1":::
 
-     有关扩展 SharePoint 中的 SharePoint **连接** 节点 **服务器资源管理器，请参阅** 如何：扩展 SharePoint [中的 服务器资源管理器。](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
+     有关扩展 SharePoint 中的 SharePoint **连接** 节点 **服务器资源管理器，请参阅** 如何：扩展 SharePoint [中的](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)服务器资源管理器。
 
 ## <a name="retrieve-the-service-in-other-visual-studio-extensions"></a>检索其他扩展Visual Studio服务
  可以在 VSPackage 项目服务或有权访问自动化对象模型中的对象的任何 Visual Studio 扩展（如实现 接口的项目模板向导）中检索对象。 <xref:EnvDTE80.DTE2> <xref:Microsoft.VisualStudio.TemplateWizard.IWizard>

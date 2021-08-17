@@ -1,6 +1,6 @@
 ---
-title: '对 c # (的项目类型使用托管包框架 ) '
-description: 了解托管包框架，该框架提供可用于实现自己的项目类型的 .NET 类，您可以使用这些类或从继承这些类。
+title: '将托管包框架用于 C# (项目) '
+description: 了解托管包框架，它提供可用于实现自己的项目类型的 .NET 类，或者从 继承这些类。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -23,12 +23,12 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121375593"
 ---
 # <a name="using-the-managed-package-framework-to-implement-a-project-type-c"></a>使用托管包框架实现项目类型 (C#)
-托管包框架 (MPF) 提供可用于实现自己的项目类型的 c # 类。 MPF 实现了许多接口 Visual Studio 需要提供一个项目类型，让你自由地集中精力实现项目类型的细节。
+托管包框架 (MPF) 提供 C# 类，可以使用或继承自 来实现自己的项目类型。 MPF 实现许多需要Visual Studio类型的接口，让你可以专注于实现项目类型的特定内容。
 
-## <a name="using-the-mpf-project-source-code"></a>使用 MPF Project 源代码
-  (MPFProj 的项目的托管包框架) 提供用于创建和管理新项目系统的帮助程序类。 与 MPF 中的其他类不同，项目类不包括在 Visual Studio 随附的程序集中。 相反，项目类作为 [2013](https://github.com/tunnelvisionlabs/MPFProj10)中项目的源代码提供。
+## <a name="using-the-mpf-project-source-code"></a>使用 MPF Project源代码
+ 用于项目的托管包框架 (MPFProj) 提供了用于创建和管理新项目系统的帮助程序类。 与 MPF 中的其他类不同，项目类不包含在随 MPF 附带的程序集Visual Studio。 相反，项目类作为源代码在 [MPF for Projects 2013 中提供](https://github.com/tunnelvisionlabs/MPFProj10)。
 
- 若要将此项目添加到 VSPackage 解决方案，请执行以下操作：
+ 若要将此项目添加到 VSPackage 解决方案，请执行以下步骤：
 
 1. 将 MPFProj 文件下载到 *MPFProjectDir*。
 
@@ -45,7 +45,7 @@ ms.locfileid: "121375593"
 
 2. 卸载 VSPackage 项目。
 
-3. 编辑 VSPackage 文件，方法是在其他块之前添加以下块 `<Import>` ：
+3. 通过在其他块之前添加以下块来编辑 VSPackage .csproj `<Import>` 文件：
 
 ```
 <Import Project="MPFProjectDir\Dev10\Src\CSharp\ProjectBase.files" />
@@ -63,14 +63,14 @@ ms.locfileid: "121375593"
 
 3. 重新打开 VSPackage 项目。 应会看到名为 ProjectBase 的新目录。
 
-4. 将以下引用添加到 VSPackage 项目：
+4. 添加对 VSPackage 项目的以下引用：
 
-     Microsoft. 4。0
+     Microsoft.Build.Tasks.4.0
 
 5. 生成项目。
 
 ## <a name="hierarchy-classes"></a>层次结构类
- 下表汇总了支持项目层次结构的 MPFProj 中的类。 有关详细信息，请参阅 [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)。
+ 下表总结了 MPFProj 中支持项目层次结构的类。 有关详细信息，请参阅 [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)。
 
 |类名|
 |----------------|
@@ -86,8 +86,8 @@ ms.locfileid: "121375593"
 |`Microsoft.VisualStudio.Package.AssemblyReferenceNode`|
 |`Microsoft.VisualStudio.Package.BuildDependency`|
 
-## <a name="document-handling-classes"></a>Document-Handling 类
- 下表列出了支持文档处理的 MPF 中的类。 有关详细信息，请参阅[打开和保存 Project 项](../../extensibility/internals/opening-and-saving-project-items.md)。
+## <a name="document-handling-classes"></a>Document-Handling类
+ 下表列出了 MPF 中支持文档处理的类。 有关详细信息，请参阅[打开和保存Project项。](../../extensibility/internals/opening-and-saving-project-items.md)
 
 |类名|
 |----------------|
@@ -95,7 +95,7 @@ ms.locfileid: "121375593"
 |`Microsoft.VisualStudio.Package.FileDocumentManager`|
 
 ## <a name="configuration-and-output-classes"></a>配置和输出类
- 下表列出了 MPF 中的类，这些类允许项目类型支持多个配置，例如调试和发布以及项目输出的集合。 有关详细信息，请参阅 [管理配置选项](../../extensibility/internals/managing-configuration-options.md)。
+ 下表列出了 MPF 中的类，这些类允许项目类型支持多个配置，例如调试和发布，以及项目输出的集合。 有关详细信息，请参阅管理 [配置选项](../../extensibility/internals/managing-configuration-options.md)。
 
 |类名|
 |----------------|
@@ -105,8 +105,8 @@ ms.locfileid: "121375593"
 |`Microsoft.VisualStudio.Package.OutputGroup`|
 |`Microsoft.VisualStudio.Package.ProjectElement`|
 
-## <a name="automation-support-classes"></a>Automation-Support 类
- 下表列出了支持自动化的 MPF 中的类，以便您的项目类型的用户可以编写外接程序。
+## <a name="automation-support-classes"></a>Automation-Support类
+ 下表列出了 MPF 中支持自动化的类，以便项目类型的用户可以编写外接程序。
 
 |类名|
 |----------------|
@@ -116,7 +116,7 @@ ms.locfileid: "121375593"
 |`Microsoft.VisualStudio.Package.Automation.OAProjectItem`|
 |`Microsoft.VisualStudio.Package.Automation.OANestedProjectItem`|
 
-## <a name="properties-classes"></a>Properties 类
+## <a name="properties-classes"></a>属性类
  下表列出了 MPF 中的类，这些类允许项目类型添加用户可以在属性浏览器中浏览和修改的属性。
 
 |类名|

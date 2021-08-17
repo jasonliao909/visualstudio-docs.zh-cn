@@ -1,6 +1,6 @@
 ---
-description: 返回允许构造用户可读错误消息的信息。
-title: IDebugErrorEvent2：： GetErrorMessage |Microsoft Docs
+description: 返回允许构造可读错误消息的信息。
+title: IDebugErrorEvent2：：GetErrorMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121417309"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
-返回允许构造用户可读错误消息的信息。
+返回允许构造可读错误消息的信息。
 
 ## <a name="syntax"></a>语法
 
@@ -53,29 +53,29 @@ int GetErrorMessage(
 
 ## <a name="parameters"></a>参数
 `pMessageType`\
-弄从 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 枚举返回一个值，用于描述消息的类型。
+[out]从 [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md) 枚举返回一个值，该值描述消息的类型。
 
 `pbstrErrorFormat`\
-弄用户的最终消息格式 (参阅 "备注" 以了解详细信息) 。
+[out]要详细了解详细信息，请参阅 ("备注"，了解向用户发送的最终) 。
 
 `hrErrorReason`\
-弄消息的错误代码。
+[out]消息所关于的错误代码。
 
 `pdwType`\
-弄错误的严重性 (将 MB_XXX 常量用于 `MessageBox` ; 例如 `MB_EXCLAMATION` 或 `MB_WARNING`) 。
+[out]错误的严重性 (使用 MB_XXX `MessageBox` 常量;例如 `MB_EXCLAMATION` 或 `MB_WARNING`) 。
 
 `pbstrHelpFileName`\
-弄帮助文件的路径 (如果没有) 的帮助文件，则将设置为 null 值。
+[out]如果没有帮助文件， (将帮助文件的路径设置为 null) 。
 
 `pdwHelpId`\
-弄要显示的帮助主题的 ID (如果没有) 的帮助主题，则设置为0。
+[out]如果没有帮助主题，则显示帮助 (ID 设置为 0) 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 错误消息应按照的行格式设置 `"What I was doing.  %1"` 。 `"%1"`然后，调用方会将其替换为错误代码，此错误消息派生自) 中返回 (`hrErrorReason` 。 `pMessageType`参数告知调用方应如何显示最终的错误消息。
+ 错误消息应采用 行的格式 `"What I was doing.  %1"` 。 然后，调用方将替换为从错误代码派生的错误消息， (`"%1"` 中返回 `hrErrorReason`) 。 `pMessageType`参数告知调用方最终错误消息的显示方式。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugErrorEvent2](../../../extensibility/debugger/reference/idebugerrorevent2.md)
 - [MESSAGETYPE](../../../extensibility/debugger/reference/messagetype.md)

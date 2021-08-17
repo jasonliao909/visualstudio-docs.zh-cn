@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42d53d2d3af1853c42c51f5d990102d0db951ba81fa0c7ad6dd6d1f6e0b8981d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df9bd243af1b50ef6b1fcfaed277da82b8dcca95
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095681"
 ---
 # <a name="ienumdebugaddressesreset"></a>IEnumDebugAddresses::Reset
 此方法将枚举重置为第一个元素。
@@ -46,6 +46,6 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后，下 [一次调用将返回枚举](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md) 的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)
 - [下一页](../../../extensibility/debugger/reference/ienumdebugaddresses-next.md)

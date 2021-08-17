@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d0a289d77ee0b7263d58c9781bc29fa27afcbaea6d395ad39cd85002c635fcec
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5c9cd9ea47ef21ea8cef2349ccd9ccb9e3a47141
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268282"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046966"
 ---
 # <a name="how-to-create-and-modify-custom-document-properties"></a>如何：创建和修改自定义文档属性
   上面列出的 Microsoft Office 应用程序提供与文档存储在一起的内置属性。 此外，如果要将其他信息与文档一起存储，可以创建和修改自定义文档属性。
@@ -40,7 +40,7 @@ ms.locfileid: "121268282"
 ## <a name="robust-programming"></a>可靠编程
  尝试访问未定义的属性的 `Value` 属性会引发异常。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)
 - [计划文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [如何：读取和写入文档属性](../vsto/how-to-read-from-and-write-to-document-properties.md)

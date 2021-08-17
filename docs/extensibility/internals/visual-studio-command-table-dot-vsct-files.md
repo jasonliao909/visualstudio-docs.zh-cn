@@ -1,5 +1,5 @@
 ---
-title: Visual Studio命令表 (。.Vsct) 文件 |Microsoft Docs
+title: Visual Studio命令表 (。Vsct) Files |Microsoft Docs
 description: 了解命令表配置文件，这些文件是描述 VSPackage 包含的命令集的文本文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,25 +22,25 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121375450"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表格 (.Vsct) 文件
-命令表配置文件是一个文本文件，用于描述 VSPackage 包含的一组命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]命令表 (.vsct) 编译器将基于 XML 的配置文件 () 到二进制命令表输出 ( cto) 文件。 生成的 cto 文件与使用命令表创建的文件相同， (.CTC) 编译器编译 .ctc 配置文件。 但是，.vsct 文件有一些优点，例如 XML 编辑器和 XML IntelliSense。
+命令表配置文件是描述 VSPackage 包含的命令集的文本文件。 VSCT (编译器) 将基于 XML 的配置文件 (.vsct) 编译为二进制命令表输出 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (.cto) 文件。 结果 .cto 文件与使用命令表创建的文件相同，这些命令表 (使用) 编译 .compiler 配置文件。 但是，基于 XML 的 .vsct 文件具有一些优点，例如 XML 编辑器和 XML IntelliSense。
 
- 若要了解有关 .vsct 文件语法和语义的详细信息，请参阅 [设计 XML 命令表 (。.Vsct) 文件](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
+ 若要详细了解 .vsct 文件的语法和语义，请参阅设计 XML 命令表 [ (。Vsct) 文件](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
 ## <a name="in-this-section"></a>本节内容
  [设计 XML 命令表格 (.Vsct) 文件](../../extensibility/internals/designing-xml-command-table-dot-vsct-files.md)
 
- 描述如何设计 .vsct 文件。
+ 介绍如何设计 .vsct 文件。
 
  [如何：创建 .Vsct 文件](../../extensibility/internals/how-to-create-a-dot-vsct-file.md)
 
- 比较用于创建 .vsct 文件的方法。 介绍手动创建 .vsct 文件的过程。
+ 比较用于创建 .vsct 文件的方法。 描述手动创建新的 .vsct 文件的过程。
 
 ## <a name="related-sections"></a>相关章节
  [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)
 
  提供有关命令表 XML 配置文件的每个部分的详细信息。
 
- [命令表配置 (。.Ctc) 文件](/previous-versions/bb165153(v=vs.100)) 提供了 .ctc 文件格式的概述。
+ [命令表配置 (。") ](/previous-versions/bb165153(v=vs.100)) 提供已弃用 .保存文件格式的概述。
 
  [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
@@ -48,7 +48,7 @@ ms.locfileid: "121375450"
 
  [VSPackage 中的资源](../../extensibility/internals/resources-in-vspackages.md)
 
- 介绍如何在托管 Vspackage 中使用托管资源和非托管资源。
+ 介绍如何在托管 VSPackages 中使用托管资源以及非托管资源。
 
  [命令、菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)
 

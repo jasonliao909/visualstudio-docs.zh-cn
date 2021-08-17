@@ -1,6 +1,6 @@
 ---
-title: 确定在项目中打开文件的编辑器 |Microsoft Docs
-description: 了解 Visual Studio 用来确定在项目中打开文件的编辑器的注册表项和 Visual Studio SDK 方法。
+title: 确定在 Project 中打开文件的编辑器 |Microsoft Docs
+description: 了解 Visual Studio 使用的注册表项和 Visual Studio SDK 方法，以确定在项目中打开文件的编辑器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,14 +13,15 @@ ms.assetid: acbcf4d8-a53a-4727-9043-696a47369479
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fb6f142ea25748f6798fb60d7c03862c51819349
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 197b310c37ba3c9395cd5120d4e0e8fb4d066e0669b3e409b06af0b10475137d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090858"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376230"
 ---
 # <a name="determine-which-editor-opens-a-file-in-a-project"></a>确定在项目中打开文件的编辑器
 当用户打开项目中的文件时，环境将经历一个轮询过程，最后打开该文件的相应编辑器或设计器。 环境使用的初始过程对于标准编辑器和自定义编辑器都是相同的。 环境在轮询用于打开文件的编辑器时使用各种条件，而 VSPackage 必须在此过程中与环境进行协调。
@@ -31,7 +32,7 @@ ms.locfileid: "105090858"
 
  **HKEY_LOCAL_MACHINE\Software\Microsoft\VisualStudio\\ \<version> \Editors \\ \<editor factory guid> \Extensions**
 
- 环境还会检查 **HKEY_CLASSES_ROOT\CLSID** 项中具有子项 **DocObject** 的任何对象的类标识符。 如果在此处找到文件扩展名，则会在 Visual Studio 中就地创建应用程序的嵌入式版本，如 Microsoft Word。 这些文档对象必须是实现接口的复合文件 <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> ，或者对象必须实现 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 接口。
+ 环境还会检查 **HKEY_CLASSES_ROOT\CLSID** 项中具有子项 **DocObject** 的任何对象的类标识符。 如果在此处找到文件扩展名，则会在 Visual Studio 中就地创建应用程序的嵌入版本，如 Microsoft Word。 这些文档对象必须是实现接口的复合文件 <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage> ，或者对象必须实现 <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat> 接口。
 
  如果在注册表中没有针对 *.rtf* 文件的编辑器工厂，则环境将查找 **HKEY_CLASSES_ROOT \\ .rtf** 密钥并打开其中指定的编辑器。 如果在 **HKEY_CLASSES_ROOT** 中找不到该文件扩展名，则该环境将使用 Visual Studio core 文本编辑器打开该文件（如果它是文本文件）。
 
@@ -41,7 +42,7 @@ ms.locfileid: "105090858"
 
  该环境现在复查列为其内部注册编辑器的列表，以便查找 *.rtf* 文件的新注册编辑器工厂。 环境调用方法的实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> ，并传入要创建的文件名称和视图类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IPersistFileFormat>
 - <xref:Microsoft.VisualStudio.OLE.Interop.IPersistStorage>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.SetSite%2A>

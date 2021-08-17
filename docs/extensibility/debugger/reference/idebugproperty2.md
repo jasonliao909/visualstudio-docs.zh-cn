@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a368969251eb4f47746a1cb56491cf8f0dcf3d63664835177ea690b3ecab2b6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ee75a964ba578891a18273fae032b0013a2d5c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306993"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029913"
 ---
 # <a name="idebugproperty2"></a>IDebugProperty2
 此接口表示堆栈帧属性、程序文档属性或其他属性。 属性通常是表达式计算的结果。
@@ -78,7 +78,7 @@ IDebugProperty2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_PROPERTY_INFO](../../../extensibility/debugger/reference/debug-property-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

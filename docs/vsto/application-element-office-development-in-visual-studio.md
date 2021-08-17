@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 111d993082464409f7a6689779292b1b27dbf349e20f373baec3290f68566b44
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8389cc3ed162c4d1717810fa6d95037ce4db1595
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047239"
 ---
 # <a name="ltapplicationgt-element-office-development-in-visual-studio"></a>&lt;应用程序 &gt; 元素 (Office开发Visual Studio) 
   `application` 命名空间的 `vstav3` 元素包装 Office 解决方案的描述。 对于文档级自定义项和 VSTO 外接程序，子元素是不同的。
@@ -64,7 +64,7 @@ ms.locfileid: "121440872"
  `application` 元素具有以下元素。
 
 ### <a name="customization"></a>自定义
- 命名空间中 元素的角色在&#60;中&#62; `customization` `vstov3` Element &#40;Office[开发Visual Studio&#41;。 ](../vsto/customization-element-office-development-in-visual-studio.md)
+ 命名空间中元素的角色在&#60;中&#62; `customization` `vstov3` Element &#40;Office[开发Visual Studio&#41;。 ](../vsto/customization-element-office-development-in-visual-studio.md)
 
 ## <a name="document-level-customization-example"></a>文档级自定义示例
 
@@ -122,7 +122,7 @@ ms.locfileid: "121440872"
 </vstav3:application>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
 - [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
