@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式关闭文档
-description: 了解如何关闭活动文档，或指定要Microsoft Office Word 文档。
+description: 了解如何关闭活动文档，也可以指定要关闭的 Microsoft Office Word 文档。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -64,9 +64,9 @@ ms.locfileid: "121394493"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet4":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet4":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)
 - [如何：以编程方式保存文档](../vsto/how-to-programmatically-save-documents.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
-- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)
+- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

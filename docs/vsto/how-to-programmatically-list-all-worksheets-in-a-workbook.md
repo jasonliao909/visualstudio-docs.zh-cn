@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式列出工作簿中的所有工作表
-description: 了解如何使用 Visual Studio 以编程方式列出 Microsoft Excel 工作簿中的所有工作表。
+description: 了解如何使用 Visual Studio 以编程方式列出 Microsoft Excel 工作簿中的所有Visual Studio。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -43,8 +43,8 @@ ms.locfileid: "121394428"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet13":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet13":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以编程方式向工作簿添加新工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [如何：以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [如何：以编程方式在工作簿中移动工作表](../vsto/how-to-programmatically-move-worksheets-within-workbooks.md)
-- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [对项目中对象的全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)

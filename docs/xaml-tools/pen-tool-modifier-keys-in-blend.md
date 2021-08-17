@@ -39,7 +39,7 @@ ms.locfileid: "121393313"
 |在联接两个路径时创建平滑的角|选择两个路径，单击“笔”工具，并单击其中一个路径的终结点，然后拖动另一路径的终结点|![在联接两个路径时创建平滑的角](../designers/media/bd12dfa4-112e-4f37-9765-3479e6b69894.png)<br /><br /> “钢笔”联接指针|
 |创建一个新路径|按住 **Ctrl** 并单击上一路径之外以停止向上一路径添加点，然后单击或拖动希望新路径开始的地方|![创建一个新路径](../designers/media/69758176-5f53-465b-808c-f13fd1a0b3f2.png)<br /><br /> “钢笔”开始指针|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [“美工板”修改键](artboard-modifier-keys-in-blend.md)
 - [路径选择工具修饰符键](direct-selection-tool-modifier-keys-in-blend.md)

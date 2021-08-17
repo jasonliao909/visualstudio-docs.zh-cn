@@ -49,6 +49,6 @@ ms.locfileid: "121423782"
 |在打印文档前隐藏书签中的文本。|[如何：以编程方式隐藏文档中的文本](../vsto/how-to-programmatically-hide-text-in-documents.md)|
 |向文本添加注释。|[如何：以编程方式将注释添加到文档中的文本](../vsto/how-to-programmatically-add-comments-to-text-in-documents.md)|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
 - [Office解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)

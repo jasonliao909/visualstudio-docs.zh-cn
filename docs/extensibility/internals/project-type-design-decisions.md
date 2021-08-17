@@ -50,7 +50,7 @@ ms.locfileid: "121401409"
 
 - 在本地保存文件，然后发布到服务器，或当项表示与远程对象的数据连接时，使用另一种方法保存项目项。
 
-  有关持久性详细信息，请参阅持久性Project[打开](../../extensibility/internals/project-persistence.md)和保存Project[项。](../../extensibility/internals/opening-and-saving-project-items.md)
+  有关持久性详细信息，[请参阅暂留](../../extensibility/internals/project-persistence.md)Project打开和保存Project[项](../../extensibility/internals/opening-and-saving-project-items.md)。
 
 ## <a name="project-commitment-model"></a>Project承诺模型
  持久化数据对象是直接模式还是事务处理模式打开？
@@ -59,7 +59,7 @@ ms.locfileid: "121401409"
 
  使用事务处理模式打开数据对象时，更改将保存到内存中的临时位置，在用户手动选择保存文件之前不会提交。 此时，所有更改必须一起发生，否则不会进行更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [清单：创建新的项目类型](../../extensibility/internals/checklist-creating-new-project-types.md)
 - [打开和保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)
 - [项目持久性](../../extensibility/internals/project-persistence.md)

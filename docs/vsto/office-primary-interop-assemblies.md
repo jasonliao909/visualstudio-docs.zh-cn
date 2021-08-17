@@ -1,6 +1,6 @@
 ---
 title: Office 主互操作程序集
-description: 了解如何使用 PIA (主互操作程序集) 从 Office 项目访问 Microsoft Office 应用程序的功能。
+description: 了解如何使用 PIA () 主互操作程序集从 Microsoft Office 项目访问 Office 功能。
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -66,10 +66,10 @@ Visual Studio 在开发计算机上使用不同的 PIA 集。 这些不同的程
 
 - `%ProgramFiles%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
--  (`%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` 64 位操作系统或) 
+-  (64 位操作系统或) `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
 > [!NOTE]
-> 对于早期版本的 Visual Studio，这些 PIA 将安装到该版本 Visual Studio Tools for Office 文件夹下的 Visual Studio Tools for Office\PIA `%ProgramFiles%` 文件夹中Visual Studio。
+> 对于旧版 Visual Studio，这些 PIA 将安装到该版本 Visual Studio Tools for Office 文件夹下的 Visual Studio Tools for Office\PIA `%ProgramFiles%` 文件夹中Visual Studio。
 > 例如： `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>全局程序集缓存中的主互操作程序集
@@ -84,12 +84,12 @@ Visual Studio 在开发计算机上使用不同的 PIA 集。 这些不同的程
 
 Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office 应用程序配合使用。 若要使用多个 Microsoft Office 应用程序的功能，或者使用 Visual Studio 中没有项目的应用程序或组件的功能，必须添加对所需 PIA 的引用。
 
-在大多数情况下，应该添加对目录下由 Visual Studio安装的 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` PIA 的引用。 这些版本的程序集显示在"引用管理器" **对话框的"** 框架 **"** 选项卡上。 有关详细信息，请参阅[如何：通过主Office程序集将应用程序作为目标](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
+在大多数情况下，应该添加对目录下由 Visual Studio安装的 `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\` PIA 的引用。 这些版本的程序集显示在"引用管理器" **对话框的"** 框架 **"** 选项卡上。 有关详细信息，请参阅[如何：通过主Office程序集面向应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)。
 
 如果你在全局程序集缓存中安装并注册了 PIA，则这些版本的程序集显示在 **“引用管理器”** 对话框的 **“COM”** 选项卡上。 你应当避免添加对这些版本的程序集的引用，因为使用它们时可能会出现某些开发问题。 例如，如果你在全局程序集缓存中注册了 PIA 的不同版本，则项目将自动绑定到你最后一次注册的程序集版本，即使在 **“引用管理器”** 对话框的 **“COM”** 选项卡上指定了其他程序集版本也是如此。
 
 > [!NOTE]
-> 添加一个引用某些程序集的程序集时，这些被引用的程序集将自动添加到项目中。 例如，添加对 Word、Excel、Outlook、Microsoft Forms 或 Graph 程序集的引用时，将自动添加 `Office.dll` `Microsoft.Vbe.Interop.dll` 对 和 程序集的引用。
+> 添加一个引用某些程序集的程序集时，这些被引用的程序集将自动添加到项目中。 例如，添加对 Word、Excel、Outlook、Microsoft Forms 或 Graph 的引用时，会自动添加对 `Office.dll` `Microsoft.Vbe.Interop.dll` 和 程序集的引用。
 
 <a name="pialist"></a>
 
@@ -130,9 +130,9 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 有关详细信息，请参阅 [如何：启用和禁用自动绑定重定向](/dotnet/framework/configure-apps/how-to-enable-and-disable-automatic-binding-redirection)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [如何：通过Office程序集面向应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [如何：通过Office互操作程序集面向应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
 - [Excel对象模型概述](../vsto/excel-object-model-overview.md)
 - [InfoPath 解决方案](../vsto/infopath-solutions.md)
 - [Outlook对象模型概述](../vsto/outlook-object-model-overview.md)

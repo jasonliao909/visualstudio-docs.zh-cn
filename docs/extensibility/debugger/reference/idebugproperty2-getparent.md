@@ -48,5 +48,5 @@ int GetParent (
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。 如果没有父对象，则返回 `S_GETPARENT_NO_PARENT`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

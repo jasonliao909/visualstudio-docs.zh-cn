@@ -1,6 +1,6 @@
 ---
 title: 在 XAML 设计器中调试或禁用项目代码
-description: 了解如何调试或禁用项目中的项目XAML 设计器，包括如何调试其他实例中的运行项目代码Visual Studio。
+description: 了解如何调试或禁用项目中的项目XAML 设计器，包括如何调试其他项目实例中的运行项目Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -99,6 +99,6 @@ ms.locfileid: "121393227"
 
 当你选中“仅显示平台控件”后，SDK 中的所有自定义控件、客户用户控件等都不会完整呈现。 相反，它们会被替换为回退控件，以展示控件的大小和位置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 和 Blend for Visual Studio 中设计 XAML](designing-xaml-in-visual-studio.md)

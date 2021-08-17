@@ -51,5 +51,5 @@ ms.locfileid: "121401292"
 
  基本项目提供上述属性的默认实现。 基项目通过对 `QueryInterface` <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 最外面的项目子类型调用来获取这些属性，从而允许项目子类型重写属性的实现。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [项目子类型设计](../../extensibility/internals/project-subtypes-design.md)

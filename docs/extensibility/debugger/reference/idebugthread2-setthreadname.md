@@ -1,6 +1,6 @@
 ---
 description: 设置线程的名称。
-title: IDebugThread2：： SetThreadName |Microsoft Docs
+title: IDebugThread2：：SetThreadName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,14 +43,14 @@ int SetThreadName (
 
 ## <a name="parameters"></a>参数
 `pszName`\
-中线程的名称。
+[in]线程的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
  若要获取线程名称，请调用 [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [GetName](../../../extensibility/debugger/reference/idebugthread2-getname.md)

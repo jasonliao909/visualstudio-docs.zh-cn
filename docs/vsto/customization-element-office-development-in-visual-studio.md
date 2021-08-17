@@ -59,7 +59,7 @@ ms.locfileid: "121394779"
 
  `customization` 元素具有以下属性。
 
-|Attribute|说明|
+|属性|说明|
 |---------------|-----------------|
 |`id`|对于多项目部署是必需的。 `id` 元素唯一地标识 Office 解决方案。|
 
@@ -92,7 +92,7 @@ ms.locfileid: "121394779"
 ## <a name="example-of-a-vsto-add-in"></a>外接程序VSTO示例
 
 ### <a name="description"></a>说明
- 下面的代码示例演示了 `customization` 外接程序VSTO元素。 这是一个包含窗体区域的 Outlook VSTO 外接程序。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
+ 下面的代码示例演示了 `customization` VSTO 外接程序的 元素。 这是一个包含窗体区域的 Outlook VSTO 外接程序。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -121,7 +121,7 @@ ms.locfileid: "121394779"
 </vstov4:customization>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
 - [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
