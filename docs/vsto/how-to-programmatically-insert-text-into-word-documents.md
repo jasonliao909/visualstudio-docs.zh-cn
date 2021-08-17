@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f17828b4617f84cb104761918787b4bbb79f7afc
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c2acc09b04ba08543faa449788f61f7fa72c8c72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827352"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026182"
 ---
 # <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式在 Word 文档中插入文本
   向 Microsoft Office Word 文档中插入文本主要有三种方式：

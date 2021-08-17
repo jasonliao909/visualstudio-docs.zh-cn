@@ -1,6 +1,6 @@
 ---
-title: 排查 Office 解决方案问题
-description: 了解一些用于解决在使用 Visual Studio 中的 Office 开发工具创建解决方案时可能遇到的常见问题的提示。
+title: 解决 Office 解决方案问题
+description: 了解在 Visual Studio 中使用 Office 开发工具创建解决方案时可能遇到的常见问题的一些提示。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ae7ddc628d364fb57e835af63c595d416fdf688e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b2b41c3bcf2498a070eb96936bf453b628ff66b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895175"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025727"
 ---
-# <a name="troubleshoot-office-solutions"></a>排查 Office 解决方案问题
+# <a name="troubleshoot-office-solutions"></a>解决 Office 解决方案问题
   本部分包含用于解决常见问题的提示，你在通过使用 Visual Studio 中的 Office 开发工具创建解决方案时可能会遇到这些问题。
 
 ## <a name="in-this-section"></a>本节内容
@@ -35,16 +36,16 @@ ms.locfileid: "99895175"
 
  描述如何重新启用已被硬禁用或软禁用的 VSTO 外接程序。
 
-- [Office 解决方案中的错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)
+- [对 Office 解决方案中的错误的其他支持](../vsto/additional-support-for-errors-in-office-solutions.md)
 
  描述用于排除 Office 解决方案中的错误和警告的其他资源。
 
 ## <a name="related-sections"></a>相关章节
-- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
+- [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
 
  描述在保护 Office 解决方案时可能遇到的常见问题。
 
-- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)
+- [解决 Office 解决方案部署问题](../vsto/troubleshooting-office-solution-deployment.md)
 
  描述在部署 Office 解决方案时可能遇到的常见问题。
 
@@ -52,7 +53,7 @@ ms.locfileid: "99895175"
 
  提供指向部署解决方案的有关信息的链接，其中包括安全问题以及选择部署模型时要考虑的问题。
 
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 
  包含说明 Office 解决方案如何合并随 .NET Framework 提供的安全功能的主题。
 

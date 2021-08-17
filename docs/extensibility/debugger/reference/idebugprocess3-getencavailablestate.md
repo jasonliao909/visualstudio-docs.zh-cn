@@ -54,7 +54,7 @@ int GetENCAvailableState(
 ## <a name="remarks"></a>备注
  此状态可能受 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)影响。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

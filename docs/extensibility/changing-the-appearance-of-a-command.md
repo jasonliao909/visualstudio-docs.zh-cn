@@ -87,7 +87,7 @@ ms.locfileid: "121452623"
 
 8. 在"**工具"** 菜单上，现在应会看到"**新建文本"。** 单击"**新建文本"。** 命令现在应灰显。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
 - [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)

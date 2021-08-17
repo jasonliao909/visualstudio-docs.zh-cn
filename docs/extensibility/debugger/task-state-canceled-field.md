@@ -35,7 +35,7 @@ ms.locfileid: "121338080"
 ```
 
 ## <a name="remarks"></a>备注
- 如果m_stateFlags [字段](../../extensibility/debugger/m-stateflags-field.md) 包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
+ 如果m_stateFlags [包含](../../extensibility/debugger/m-stateflags-field.md) 此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

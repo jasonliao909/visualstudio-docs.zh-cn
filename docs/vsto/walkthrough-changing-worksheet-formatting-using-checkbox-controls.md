@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c51872c10e015f0e40332ae3d4c64c7182ab1e35e55386b6125323ed73608ecb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0f3a543d99b5b701256f1f738d4d79721f96cc5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025493"
 ---
 # <a name="walkthrough-change-worksheet-formatting-using-checkbox-controls"></a>演练：使用 CheckBox 控件更改工作表格式
   本演练演示如何使用 Microsoft Office Excel 工作表上的复选框来更改格式设置的基础知识。 你将使用 Visual Studio 中 Office 开发工具创建代码并将其添加到你的项目。 若要查看已完成示例的结果，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
@@ -71,22 +71,22 @@ ms.locfileid: "121296523"
 
     |属性|值|
     |--------------|-----------|
-    |名称|**applyBoldFont**|
-    |**Text**|**加粗**|
+    |**名称**|**applyBoldFont**|
+    |**文本**|**加粗**|
 
 5. 将第二个复选框拖到或附近的单元格 **B4** 上，并更改以下属性：
 
     |属性|值|
     |--------------|-----------|
-    |名称|**applyItalicFont**|
-    |**Text**|**斜体**|
+    |**名称**|**applyItalicFont**|
+    |**文本**|**斜体**|
 
 6. 将第三个复选框拖到单元格 **B6** 上或附近，并更改以下属性：
 
     |属性|值|
     |--------------|-----------|
-    |名称|**applyUnderlineFont**|
-    |**Text**|**划线**|
+    |**名称**|**applyUnderlineFont**|
+    |**文本**|**划线**|
 
 7. 按住 **Ctrl** 键的同时选中所有三个复选框控件。
 
@@ -115,7 +115,7 @@ ms.locfileid: "121296523"
 
    |属性|值|
    |--------------|-----------|
-   |名称|**textFont**|
+   |**名称**|**textFont**|
    |**Value2**|**单击复选框以更改此文本的格式设置。**|
 
    接下来，在选择选项时编写代码来设置文本格式。
@@ -163,7 +163,7 @@ ms.locfileid: "121296523"
 - 部署项目。 有关详细信息，请参阅[使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)。
 - 使用按钮填充文本框。 有关详细信息，请参阅 [演练：使用按钮在工作表的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
 - [NamedRange 控件](../vsto/namedrange-control.md)
 - [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

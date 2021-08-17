@@ -11,14 +11,15 @@ ms.assetid: 994e30ad-435a-4f9e-9272-d96d9e01099c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6a0351e1eb964506074c13dd68e9eb132ee5b578
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f658b5fdaa5d65185f845790f5342e5c8b7a2422
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091664"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103346"
 ---
 # <a name="ienumdebugframeinfo2"></a>IEnumDebugFrameInfo2
 此接口枚举 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构。
@@ -33,7 +34,7 @@ IEnumDebugFrameInfo2 : IUnknown
  调试引擎 (DE) 实现此接口，以提供描述当前调用堆栈的结构的列表。
 
 ## <a name="notes-for-callers"></a>调用方说明
- 每当正在调试的程序中发生断点、异常或停止时，Visual Studio 都会调用 [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 来获取此接口。
+ Visual Studio 调用[EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) ，以便在正在调试的程序中发生断点、异常或停止时获取此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugFrameInfo2` 。
@@ -56,7 +57,7 @@ IEnumDebugFrameInfo2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumFrameInfo](../../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md)
 - [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md)

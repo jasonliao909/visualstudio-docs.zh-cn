@@ -10,14 +10,15 @@ ms.assetid: a60030c5-e1d1-47e1-84bb-cbfe838ab479
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0bdc42901cbdad3b30bb6739ec93b8979b0d56ad
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4451735a5fa5127614a385be3010f1ea4bf9ad01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075271"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070337"
 ---
 # <a name="enumerators"></a>枚举器
 本节列出源代码管理插件必须知道的源代码管理插件 API 中的枚举器数据类型。

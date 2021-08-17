@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: ce958e5cd4b5cbc6374e065b14be9d2c35b8709b1fe79484ab2bb5fb89524eeb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fc06eaaa7bd54ff42a087016dae30e674de4023
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440391"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025350"
 ---
 # <a name="switcht-activity-designer"></a>Switch\<T> 活动设计器
 
@@ -58,6 +58,6 @@ ms.locfileid: "121440391"
 
 请注意，必须选中 case 本身才能删除它。 选中并删除 case 内的活动只会删除该活动而不会删除该 case。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

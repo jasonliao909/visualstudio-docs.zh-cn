@@ -1,6 +1,6 @@
 ---
-title: ClickOnce在 Vista Windows 部署|Microsoft Docs
-description: 了解如何Visual Studio为需要外部清单的 ClickOnce Registration-Free COM 应用程序生成外部 UAC 清单。
+title: ClickOnceWindows Vista 上的部署 |Microsoft Docs
+description: 了解 Visual Studio 如何为需要外部清单的 ClickOnce 和 Registration-Free COM 应用程序生成外部 UAC 清单。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -29,31 +29,31 @@ ms.locfileid: "121452987"
 ---
 # <a name="clickonce-deployment-on-windows-vista"></a>Windows Vista 上的 ClickOnce 部署
 
-在 Windows Vista 上的 Visual Studio for User Account Control (UAC) 中生成应用程序通常会生成嵌入清单，在应用程序的可执行文件中编码为二进制 XML 数据。  ClickOnce COM Registration-Free应用程序需要外部清单，因此Visual Studio生成包含 UAC 数据的项目的文件，而不是嵌入的清单。 对于ClickOnce COM Registration-Free，Visual Studio *app.manifest* 文件中的信息生成外部 UAC 清单信息。 对于所有其他情况，Visual Studio将 UAC 数据嵌入应用程序的可执行文件中。
+在 Visual Studio 中为用户帐户控制生成应用程序 (Windows Vista 上的 UAC) 通常会生成在应用程序的可执行文件中编码为二进制 XML 数据的嵌入清单。  ClickOnce 和 Registration-Free COM 应用程序需要外部清单，因此 Visual Studio 会为包含 UAC 数据而不是嵌入清单的这些项目生成一个文件。 对于 ClickOnce 和 Registration-Free COM 部署，Visual Studio 使用名为 *app.config* 的文件中的信息生成外部 UAC 清单信息。 对于所有其他情况，Visual Studio 将 UAC 数据嵌入应用程序的可执行文件中。
 
-Visual Studio为清单生成提供以下选项：
+Visual Studio 提供了以下清单生成选项：
 
-- 使用嵌入的清单。 在应用程序的可执行文件中嵌入 UAC 数据，并作为普通用户运行。
+- 使用嵌入的清单。 在应用程序的可执行文件中嵌入 UAC 数据，并以普通用户身份运行。
 
-   除非使用 (，否则这是默认设置ClickOnce) 。 此设置支持在 Vista Visual Studio操作的常用Windows，同时使用 生成内部和外部清单 `AsInvoker` 。
+   这是默认设置，除非使用 ClickOnce)  (。 此设置支持 Visual Studio 在 Windows Vista 上运行的常见方式，并使用生成内部和外部清单 `AsInvoker` 。
 
-- 使用外部清单。 使用 *app.manifest 生成外部清单*。
+- 使用外部清单。 使用 *app.config* 生成外部清单。
 
-   这会使用 *app.manifest* 中的信息仅生成外部清单。 使用 ClickOnce 或 Registration-Free COM 发布Visual Studio时，Visual Studio *app.manifest* 添加到项目，然后添加此选项。
+   仅通过使用 *app.config* 中的信息生成外部清单。 使用 ClickOnce 或 Registration-Free COM 发布应用程序时，Visual Studio 会将 *app.config* 添加到项目中，然后添加此选项。
 
 - 不使用清单。 创建不带清单的应用程序。
 
-   此方法 *也称为虚拟化*。 使用此选项可以与早期版本的 Visual Studio 中的现有应用程序兼容。
+   此方法也称为 *虚拟化*。 使用此选项与 Visual Studio 早期版本中的现有应用程序兼容。
 
-  新属性仅在 Visual C# Project设计器 (的"应用程序"页上) ，MSBuild文件格式提供。 
+  新属性在 "Project 设计器" 的 "**应用程序**" 页上提供 (仅适用于 Visual c # 项目) 和 MSBuild 项目文件格式。
 
-  在 IDE 中配置 UAC 清单生成的方法Visual Studio Visual C# 或 (项目Visual Basic) 。
+  在 Visual Studio IDE 中配置 UAC 清单生成的方法有所不同，具体取决于 Visual c # 或 Visual Basic)  (项目类型。
 
-  * 有关配置 Visual C# 项目以生成清单的信息，请参阅应用程序页，Project[设计器 (C#) 。 ](../ide/reference/application-page-project-designer-csharp.md)
+  * 有关为生成清单配置 Visual c # 项目的信息，请参阅[应用程序页 Project 设计器 (c # ) ](../ide/reference/application-page-project-designer-csharp.md)。
 
-  * 有关为清单生成Visual Basic项目的信息，请参阅应用程序页，Project[设计器 (Visual Basic) 。 ](../ide/reference/application-page-project-designer-visual-basic.md)
+  * 有关为清单生成配置 Visual Basic 项目的信息，请参阅[应用程序页 Project 设计器 (Visual Basic) ](../ide/reference/application-page-project-designer-visual-basic.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [用户权限与 Visual Studio](/previous-versions/ms165100(v=vs.100))
 - [“项目设计器”->“应用程序”页 (C#)](../ide/reference/application-page-project-designer-csharp.md)

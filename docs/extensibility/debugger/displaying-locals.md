@@ -27,7 +27,7 @@ ms.locfileid: "121343235"
 
  执行始终在方法的上下文中发生，也称为包含方法或当前方法。 执行暂停时，Visual Studio调用调试引擎 (DE) 获取局部变量和参数的列表，统称为 方法的局部变量。 Visual Studio"局部变量"窗口中显示这些 **局部变量及其** 值。
 
- 为了显示局部点，DE 调用属于 企业版 的[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)方法，并赋予其一个计算上下文，即符号提供程序 (SP) 、当前执行地址和联编程序对象。 有关详细信息，请参阅评估 [上下文](../../extensibility/debugger/evaluation-context.md)。 如果调用成功，该方法将 `IDebugExpressionEvaluator::GetMethodProperty` 返回 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示包含当前执行地址的方法。
+ 为了显示局部点，DE 调用属于 企业版 的[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)方法，并赋予其计算上下文，即符号提供程序 (SP) 、当前执行地址和联编程序对象。 有关详细信息，请参阅评估 [上下文](../../extensibility/debugger/evaluation-context.md)。 如果调用成功，该方法将 `IDebugExpressionEvaluator::GetMethodProperty` 返回 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 对象，该对象表示包含当前执行地址的方法。
 
  DE 调用[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)获取[IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)对象，该对象经过筛选，仅返回局部值并枚举以生成[DEBUG_PROPERTY_INFO列表。](../../extensibility/debugger/reference/debug-property-info.md) 每个结构都包含本地的名称、类型和值。 类型和值存储为适合显示的格式化字符串。 名称、类型和值通常一起显示在"局部区域"窗口 **的一** 行中。
 
@@ -40,5 +40,5 @@ ms.locfileid: "121343235"
 ## <a name="related-sections"></a>相关章节
  [评估上下文](../../extensibility/debugger/evaluation-context.md)说明当调试引擎 (DE) 调用表达式计算 (企业版) 时，它将传递三个参数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [编写 CLR 表达式计算程序](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)

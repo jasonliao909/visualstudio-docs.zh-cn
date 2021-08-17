@@ -68,7 +68,7 @@ public enum enum_EVENTATTRIBUTES {
 指示异步停止事件。 当前没有此类事件。 此标志只是占位符。
 
 `EVENT_SYNC_STOP`\
-指示同步停止事件 (和 `EVENT_SYNCHRONOUS` `EVENT_STOPPING`) 。 在发送停止事件时，调试引擎 (DE) 使用此值。 通过调用"执行"、"步骤"或[](../../../extensibility/debugger/reference/idebugprogram2-execute.md)"继续[](../../../extensibility/debugger/reference/idebugprogram2-step.md)["进行答复](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
+指示同步停止事件 (和 `EVENT_SYNCHRONOUS` `EVENT_STOPPING`) 。 当调试引擎发送停止事件 (DE) 使用此值。 通过调用"执行"、"步骤"或[](../../../extensibility/debugger/reference/idebugprogram2-execute.md)"继续[](../../../extensibility/debugger/reference/idebugprogram2-step.md)["进行答复](../../../extensibility/debugger/reference/idebugprogram2-continue.md)。
 
 `EVENT_IMMEDIATE`\
 指示立即同步发送到 IDE 的事件。 此标志与其他标志（如 、 或 ）结合使用，以指示事件的类型以及答复机制在 (`EVENT_ASYNCHRONOUS` `EVENT_SYNCHRONOUS` 已知) `EVENT_SYNC_STOP` 这一事实。

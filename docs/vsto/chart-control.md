@@ -1,6 +1,6 @@
 ---
 title: 图表控件
-description: 请注意，当您向工作表添加图表时，Visual Studio 将创建一个您可以直接对其进行编程的图表对象。
+description: 了解将图表添加到工作表时，Visual Studio创建可直接编程的图表对象。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3530e0821d4569381f610f44ae541c04b484b469
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 957f9a8a1959879f32e3eb4ee9b75645308d7ea6b57358ec37e04e9ea433f42c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903771"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121226404"
 ---
 # <a name="chart-control"></a>图表控件
   <xref:Microsoft.Office.Tools.Excel.Chart> 控件是公开事件的图表对象。 当将图表添加到工作表时，Visual Studio 将创建 <xref:Microsoft.Office.Tools.Excel.Chart> 对象，你可以直接针对此对象编程而无需遍历 Microsoft Office Excel 对象模型。
@@ -31,12 +32,12 @@ ms.locfileid: "99903771"
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
 ## <a name="create-the-control"></a>创建控件
- 您可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 设计时或在运行时将控件添加到文档级项目中的 Microsoft Office Excel 工作表。
+ 可以在设计时或Microsoft Office Excel向文档级项目中的工作表 <xref:Microsoft.Office.Tools.Excel.Chart> 添加控件。
 
  在 VSTO 外接程序中，你可以在运行时将 <xref:Microsoft.Office.Tools.Excel.Chart> 控件添加到工作表中。 有关详细信息，请参阅 [如何：向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)。
 
 > [!NOTE]
-> 工作表关闭时，动态创建的图表控件不作为主机控件保留在工作表中。 有关详细信息，请参阅 [在运行时向 Office 文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
+> 工作表关闭时，动态创建的图表控件不作为主机控件保留在工作表中。 有关详细信息，请参阅[向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)。
 
 ## <a name="formatting"></a>格式设置
  可应用于 <xref:Microsoft.Office.Interop.Excel.Chart> 的所有格式设置也可应用于 <xref:Microsoft.Office.Tools.Excel.Chart> 控件。 这包括边框、字体、图表类型、网格线、图例和数据标签。
@@ -74,12 +75,12 @@ ms.locfileid: "99903771"
 
 - <xref:Microsoft.Office.Tools.Excel.Chart.SeriesChange>
 
-## <a name="see-also"></a>另请参阅
-- [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
-- [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
-- [Office 文档上的控件](../vsto/controls-on-office-documents.md)
-- [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
+## <a name="see-also"></a>请参阅
+- [Office开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
+- [在外接程序Excel扩展 Word 文档VSTO工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [文档上的Office控件](../vsto/controls-on-office-documents.md)
+- [运行时向Office文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [使用Excel对象自动执行自动执行](../vsto/automating-excel-by-using-extended-objects.md)
 - [如何：向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

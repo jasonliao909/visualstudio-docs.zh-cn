@@ -8,14 +8,15 @@ ms.assetid: c730edb6-5099-4c16-85a8-08def09f1455
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 331a219210c990aed2f9601cd1f9b1f0bc5710ed
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1f0aeff420a5a043a6f6a9fd3dbfbf4c5975eba1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070225"
 ---
 # <a name="install-the-visual-studio-sdk"></a>安装 Visual Studio SDK
 

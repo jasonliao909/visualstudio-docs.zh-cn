@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 68a3d8817e3a61b36c704fbfb2fb8f861f161eadec287c0fd21558368293b908
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 09c83eabb15c1ba4573bc35925529f46d4fb9ad6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448112"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069960"
 ---
 # <a name="detect-system-requirements"></a>检测系统要求
 除非安装 Visual Studio，否则 VSPackage 无法正常工作。 使用 Microsoft Windows Installer 管理 VSPackage 的安装时，可以配置安装程序以检测是否安装了 Visual Studio。 你还可以将其配置为检查系统中是否有其他要求，例如 Windows 的特定版本或特定的 RAM 量。
@@ -48,5 +48,5 @@ ms.locfileid: "121448112"
 ## <a name="detect-when-visual-studio-is-running"></a>检测 Visual Studio 何时运行
  如果安装 VSPackage 时 Visual Studio 正在运行，则无法正确注册 VSPackage。 安装程序必须检测 Visual Studio 正在运行的时间，然后拒绝安装该程序。 Windows安装程序不允许使用表项来启用此类检测。 相反，您必须创建自定义操作，如下所示：使用 `EnumProcesses` 函数检测 *devenv.exe* 进程，然后设置在启动条件中使用的安装程序属性，或按条件显示一个对话框，提示用户关闭 Visual Studio。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [安装 vspackage 与 Windows Installer](../../extensibility/internals/installing-vspackages-with-windows-installer.md)
