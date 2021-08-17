@@ -1,29 +1,30 @@
 ---
 title: 托管代码的“基本设计准则规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的 "基本设计准则规则" 规则集，这有助于使代码更易于理解和使用。 请参阅规则说明。
+description: 了解 Visual Studio 中的基本设计准则规则规则集，这有助于更轻松地理解和使用代码。 请参阅规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 7eb384f5-f961-400b-b151-115d92addc6a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: bde7081f69a4f92092ac6f3c5b0e8b8059e17a1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea01858239cff0c189149598abf96fd5024ca2f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849744"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053261"
 ---
 # <a name="basic-design-guideline-rules-rule-set-for-managed-code"></a>托管代码的“基本设计准则规则”规则集
 
-您可以使用 Microsoft 基本设计准则规则集来集中精力使您的代码更易于理解和使用。 如果你的项目包含库代码，或者如果你希望为易于维护的代码强制实施最佳实践，则应包含此规则集。
+可以使用 Microsoft 基本设计准则规则集专注于使代码更易于理解和使用。 如果项目包含库代码，或者想要对易于维护的代码强制执行最佳做法，应包含此规则集。
 
-基本设计准则规则包括 " [托管建议规则](managed-recommended-rules-rule-set-for-managed-code.md) " 规则集中的所有规则。
+基本设计准则规则包括托管建议 [规则规则集中](managed-recommended-rules-rule-set-for-managed-code.md) 的所有规则。
 
-下表介绍了 Microsoft 基本设计准则规则集中的所有规则。
+下表描述了 Microsoft 基本设计准则规则规则集内的所有规则。
 
 |规则|描述|
 |----------|-----------------|

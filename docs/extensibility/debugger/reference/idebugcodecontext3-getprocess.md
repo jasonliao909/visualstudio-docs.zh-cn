@@ -1,6 +1,6 @@
 ---
 description: 检索对调试进程的接口的引用。
-title: IDebugCodeContext3：： GetProcess |Microsoft Docs
+title: IDebugCodeContext3：：GetProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,17 +9,18 @@ ms.assetid: e082e494-2255-4d9d-a5a9-6dadd904bea8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0479da6f61ae80de2b780af0ac932b0e607e3f29
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 68338a582bbdc3246522abaf510265d9bb051bcacede99cc0d58397448751211
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088323"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292788"
 ---
 # <a name="idebugcodecontext3getprocess"></a>IDebugCodeContext3::GetProcess
 检索对调试进程的接口的引用。
@@ -40,10 +41,10 @@ public int GetProcess(
 
 ## <a name="parameters"></a>参数
 `ppProcess`\
-弄对调试过程接口的引用。
+[out]对调试进程接口的引用。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的 **CDebugCodeContext** 对象实现此方法。
@@ -68,5 +69,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCodeContext3](../../../extensibility/debugger/reference/idebugcodecontext3.md)

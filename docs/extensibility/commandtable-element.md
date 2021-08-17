@@ -13,17 +13,18 @@ ms.assetid: 15c38159-660a-4ef4-9643-aa6fcfca82a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 55faf4ee8bdc7ec261508fd07f5a573e7a29560f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: afedf0b5e6e761d9b9801cdc88aad16cba922c981904ef50399ae90cd00d8578
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901846"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293568"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
-CommandTable 是 *.vsct* 文件的根元素。 此文件定义 VSPackage 向 IDE 提供的命令的实际布局和类型。 命令可能包括菜单项、菜单、工具栏和组合框。 有关详细信息，请参阅命令 [Visual Studio表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+CommandTable 是 *.vsct* 文件的根元素。 此文件定义 VSPackage 向 IDE 提供的命令的实际布局和类型。 命令可能包括菜单项、菜单、工具栏和组合框。 有关详细信息，请参阅命令[Visual Studio表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="syntax"></a>语法
 
@@ -46,14 +47,14 @@ CommandTable 是 *.vsct* 文件的根元素。 此文件定义 VSPackage 向 IDE
 
 ### <a name="attributes"></a>特性
 
-| 属性 | 描述 |
+| 属性 | 说明 |
 |-----------| - |
 | xmlns | 必需。 XML 命名空间：<br /><br /> `xmlns=http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable`<br /><br /> xmlns：xs=" <http://www.w3.org/2001/XMLSchema> " |
 | 语言 | 可选。 语言属性可用于指定命令表中所有 \<Strings> 元素的默认语言。  如果未指定语言，则使用当前进程的语言：<br /><br /> language="en-us" |
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[Extern 元素](../extensibility/extern-element.md)|可选。 包含编译器的预处理器指令。|
 |[Include 元素](../extensibility/include-element.md)|可选。 包含要包含在编译中的任何文件的路径。|
@@ -67,9 +68,9 @@ CommandTable 是 *.vsct* 文件的根元素。 此文件定义 VSPackage 向 IDE
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |无||
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

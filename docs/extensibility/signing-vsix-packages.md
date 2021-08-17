@@ -39,15 +39,15 @@ ms.locfileid: "121413903"
 
 1. 将 VSIX 添加到项目。
 
-2. 右键单击"包"中的项目解决方案资源管理器，然后选择"**添加&#124;管理NuGet包"。**  有关创建和NuGet包NuGet，请参阅 NuGet[文档和](/NuGet)[程序包管理器 UI](/NuGet/Tools/Package-Manager-UI)主题。
+2. 右键单击"包"中的项目解决方案资源管理器，然后选择"**添加&#124;管理NuGet包"。**  有关创建和NuGet包NuGet，请参阅 NuGet[文档](/NuGet)和 程序包管理器[UI](/NuGet/Tools/Package-Manager-UI)主题。
 
 3. 从 VisualStudioExtensibility 中搜索 VSIXSignTool，并安装NuGet包。
 
-4. 现在可以从项目的本地包位置运行 VSIXSignTool。 请参阅该工具的命令行帮助，以使用 /？ (VSIXSignTool.exe /？) 。
+4. 现在可以从项目的本地包位置运行 VSIXSignTool。 有关 /？) 的签名方案，请参阅该工具的命令行 (VSIXSignTool.exe帮助。
 
    例如，使用受密码保护的证书文件进行签名：
 
    VSIXSignTool.exe符号 /f \<certfile> /p \<password>\<VSIXfile>
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)

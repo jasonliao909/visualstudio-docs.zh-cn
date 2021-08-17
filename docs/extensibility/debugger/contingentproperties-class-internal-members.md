@@ -27,7 +27,7 @@ ms.locfileid: "121452493"
 
  **程序集：mscorlib** (mscorlib.dll) 
 
- 由于无法从 CIL .NET Framework访问这些内部成员，因此在公共中间语言 (CIL) 。
+ 由于无法从 CIL .NET Framework访问这些内部成员，因此在 CIL (中提供了以下) 。
 
 ## <a name="syntax"></a>语法
 
@@ -47,5 +47,5 @@ ms.locfileid: "121452493"
 ## <a name="remarks"></a>备注
  .NET Framework仅在需要时初始化此类的字段。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

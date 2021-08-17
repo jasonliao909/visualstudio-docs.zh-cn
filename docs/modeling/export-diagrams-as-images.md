@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 777d78bb9739ffc51db1e271e4e9bc6979256d359b123930b5556705b9cad0f0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9482d24bee3d941724a633b77ec878c69df3d36e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411069"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040380"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 
@@ -43,7 +43,7 @@ ms.locfileid: "121411069"
 
 3. 在 **"将文件另存** 为"对话框中，将文件另存 **为 \* .xps** (XPS) 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)
 - [共享模型和导出关系图](../modeling/share-models-and-exporting-diagrams.md)

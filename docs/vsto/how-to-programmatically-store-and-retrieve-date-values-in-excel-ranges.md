@@ -23,19 +23,19 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cb7455548923704c3cffcf10a9f56cba17225111130332e0837de0146859e208
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c9dbf0d63b13d6f7b66fc24c82a80e7fecea5d4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351705"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025948"
 ---
 # <a name="how-to-programmatically-store-and-retrieve-date-values-in-excel-ranges"></a>如何：以编程方式存储和检索数据范围内Excel值
   可以在控件或本机范围对象中存储和 <xref:Microsoft.Office.Tools.Excel.NamedRange> Excel值。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
- 如果使用 Visual Studio 中的 Office 开发工具将日期值存储在 1900/1/1/1 或之后，则该值以 OLE Automation (OA) 格式存储。 必须使用 方法检索 OLE Automation (<xref:System.DateTime.FromOADate%2A> OA) 值。 如果日期早于 1900/1/1/1，则它存储为字符串。
+ 如果使用 Visual Studio 中的 Office 开发工具将日期值存储在 1900/1/1/1 或之后，则该值以 OLE Automation (OA) 格式存储。 必须使用 方法 <xref:System.DateTime.FromOADate%2A> 检索 OLE Automation (OA) 日期。 如果日期早于 1900/1/1/1，则它存储为字符串。
 
 > [!NOTE]
 > Excel日期不同于 1900 年前两个月的 OLE 自动化日期。 如果选中 **"1904 日期系统"选项，则也** 存在差异。 下面的代码示例未解决这些差异。
@@ -84,7 +84,7 @@ ms.locfileid: "121351705"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet27":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet27":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [Excel对象模型概述](../vsto/excel-object-model-overview.md)
 - [NamedRange 控件](../vsto/namedrange-control.md)

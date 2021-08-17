@@ -1,6 +1,6 @@
 ---
-description: 获取引用值的大小（以字节为单位）。
-title: IDebugReference2：：GetSize |Microsoft Docs
+description: 获取引用的值的大小（以字节为单位）。
+title: IDebugReference2：： GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121292151"
 ---
 # <a name="idebugreference2getsize"></a>IDebugReference2::GetSize
-获取引用值的大小（以字节为单位）。 保留供将来使用。
+获取引用的值的大小（以字节为单位）。 保留供将来使用。
 
 ## <a name="syntax"></a>语法
 
@@ -43,10 +43,10 @@ int GetSize (
 
 ## <a name="parameters"></a>参数
 `pdwSize`\
-[out]返回引用值的大小（以字节为单位）。
+弄返回引用的值的大小（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

@@ -9,14 +9,15 @@ ms.assetid: 38213060-451d-46e6-8b4a-efc123e01a2c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b12e93d52fe841b66baae341a6854e0217dcb00
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d8271fe7d639ab937f3b3a51ff66b86649b90693
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071163"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070892"
 ---
 # <a name="idebugsourceservermodule"></a>IDebugSourceServerModule
 表示 PDB 文件中包含的源服务器信息。

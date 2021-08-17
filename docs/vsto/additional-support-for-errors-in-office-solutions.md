@@ -59,12 +59,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f9f44c3acaf500f282612a16112814618bc4bad16d18857e6e929dbe165e0470
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 24b799a6cf46b462e4c09600123230d36791df26
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038300"
 ---
 # <a name="additional-support-for-errors-in-office-solutions"></a>对 Office 解决方案中的错误的其他支持
 

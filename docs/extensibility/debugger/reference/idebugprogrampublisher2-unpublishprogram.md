@@ -1,6 +1,6 @@
 ---
-description: 使程序无法调试。
-title: IDebugProgramPublisher2：：UnpublishProgram |Microsoft Docs
+description: 使程序不可用于调试。
+title: IDebugProgramPublisher2：： UnpublishProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b59ad80b61b29efeb7c035d93ef21932101982fe5e7bf6cdf61f37d47c2fff4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e51d327f8b5a6963a87c13aa7c19b2d6ab297b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449100"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071348"
 ---
 # <a name="idebugprogrampublisher2unpublishprogram"></a>IDebugProgramPublisher2::UnpublishProgram
-使程序无法调试。
+使程序不可用于调试。
 
 ## <a name="syntax"></a>语法
 
@@ -43,14 +43,14 @@ int UnpublishProgram(
 
 ## <a name="parameters"></a>参数
 `pDebuggeeInterface`\
-[in] `IUnknown` 程序的接口。 这是提供给 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法的相同值，并唯一标识要删除的程序 (即，它用作 cookie) 。
+中 `IUnknown` 程序的接口。 此值与 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法提供的值相同，并且唯一标识要移除的程序 (也就是说，它用作 cookie) 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
  若要使程序可用于调试引擎和会话调试管理器，请使用 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md)

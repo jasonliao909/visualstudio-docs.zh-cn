@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4e98aa628765cd165fdb70bcd169ea2436c3f1ea1f542407dfedc75791513ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c97b8711f788c35c4e586c43f9c95c384076831a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071575"
 ---
 # <a name="idebugprogramex2attach"></a>IDebugProgramEx2::Attach
 将会话附加到程序。
@@ -64,5 +64,5 @@ int Attach(
 > [!NOTE]
 > 传入的接口将 `pSession` 仅被视为 cookie，这是唯一标识会话调试管理器附加到此程序的值; 提供的接口上的任何方法都不起作用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)

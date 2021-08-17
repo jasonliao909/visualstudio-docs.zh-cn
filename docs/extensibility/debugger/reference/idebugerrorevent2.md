@@ -11,14 +11,15 @@ ms.assetid: 275b6f38-b3d4-4cae-8491-491177f524fb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d531180ca2fad9a6605837105c4ec5d626584a19
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9753bfa50bba639a2eba5931131be8212e0e96d3ed5024801e6e019f7ef711df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054226"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292619"
 ---
 # <a name="idebugerrorevent2"></a>IDebugErrorEvent2
 此接口指定向用户报告的错误消息。
@@ -43,7 +44,7 @@ IDebugErrorEvent2 : IUnknown
 |`GetErrorMessage`|以用户可读的字符串形式返回错误。|
 
 ## <a name="remarks"></a>备注
- 如果调试引擎遇到错误，则可以使用此接口向用户报告消息通过 Visual Studio。
+ 如果调试引擎遇到错误，则可以使用此接口向用户报告消息 Visual Studio。
 
 ## <a name="requirements"></a>要求
  标头： msdbg
@@ -52,6 +53,6 @@ IDebugErrorEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

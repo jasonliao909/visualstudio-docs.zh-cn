@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e7282fbd105491edb0aac45e116d10da5abf3d1ca77f16a75ae63d6b8c863f04
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 152af5d3be5385e6f5c91fb510d62ea7bc336218
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424458"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053919"
 ---
 # <a name="common-tasks-in-office-programming"></a>Office 编程中的常见任务
   本主题旨在帮助针对使用 Visual Studio 对 Office 解决方案编程的下列常见问题找到解决方法。
@@ -219,21 +219,21 @@ ms.locfileid: "121424458"
 
 ## <a name="deployment-tasks"></a><a name="deployment"></a> 部署任务
 
-- [如何：使用 Office 发布 ClickOnce。](/previous-versions/bb386095(v=vs.110))
+- [如何：使用 ClickOnce 发布 Office 解决方案](/previous-versions/bb386095(v=vs.110))。
 
-- [如何：使用 Office](/previous-versions/bb608595(v=vs.110))将文档Office解决方案发布到 SharePoint ClickOnce 服务器。
+- [如何：使用 ClickOnce 将文档级 Office 解决方案发布到 SharePoint 服务器](/previous-versions/bb608595(v=vs.110))。
 
-- [如何：安装ClickOnce Office解决方案](/previous-versions/bb608592(v=vs.110))。
+- [如何：安装 ClickOnce Office 解决方案](/previous-versions/bb608592(v=vs.110))。
 
-- [如何：在最终用户计算机上安装必备组件以运行Office解决方案](/previous-versions/bb608608(v=vs.110))。
+- [如何：在最终用户计算机上安装必备组件以运行 Office 解决方案](/previous-versions/bb608608(v=vs.110))。
 
-- [如何：准备 IIS 以部署Office解决方案](/previous-versions/bb608629(v=vs.110))。
+- [如何：为部署 Office 解决方案准备 IIS](/previous-versions/bb608629(v=vs.110))。
 
-- [如何：更新已部署Office解决方案](/previous-versions/bb157871(v=vs.110))。
+- [如何：更新部署的 Office 解决方案](/previous-versions/bb157871(v=vs.110))。
 
-- [如何：更改解决方案 的Office路径](/previous-versions/bb608626(v=vs.110))。
+- [如何：更改 Office 解决方案的安装路径](/previous-versions/bb608626(v=vs.110))。
 
 ## <a name="see-also"></a>请参阅
-- [开始&#40;Office开发Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
-- [应用程序类型和Office可用的功能](../vsto/features-available-by-office-application-and-project-type.md)
-- [Office开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
+- [&#40;Visual Studio 中的 Office 开发入门&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
+- [Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)
+- [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
