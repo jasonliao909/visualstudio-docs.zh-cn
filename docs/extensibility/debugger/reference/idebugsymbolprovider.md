@@ -1,5 +1,5 @@
 ---
-description: 此接口表示一个符号提供程序，该提供程序提供符号和类型，并将它们作为字段返回。
+description: 此接口表示一个提供符号和类型的符号提供程序，以字段返回它们。
 title: IDebugSymbolProvider |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9bdbf198b65483a8241de571e2f5fde307a312d25225480c63898da9323898f6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ba1475f62ff1732fd7b4a4e8554a428bf053be6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306759"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087413"
 ---
 # <a name="idebugsymbolprovider"></a>IDebugSymbolProvider
-此接口表示一个符号提供程序，该提供程序提供符号和类型，并将它们作为字段返回。
+此接口表示一个提供符号和类型的符号提供程序，以字段返回它们。
 
 ## <a name="syntax"></a>语法
 
@@ -30,14 +30,14 @@ ms.locfileid: "121306759"
 IDebugSymbolProvider : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
-符号提供程序必须实现此接口，才能向表达式计算器提供符号和类型信息。
+## <a name="notes-for-implementers"></a>实现者说明
+符号提供程序必须实现此接口，以向表达式计算器提供符号和类型信息。
 
 ## <a name="notes-for-callers"></a>调用方说明
-此接口是通过以下方法获取的：使用 COM 的 `CoCreateInstance` 函数 (用于非托管符号提供程序) 或者加载相应的托管代码程序集，并根据该程序集中找到的信息来实例化符号提供程序。 调试引擎实例化符号提供程序，以便与表达式计算器协调工作。 有关实例化此接口的方法，请参阅示例。
+对于非托管符号提供程序) ，通过使用 COM 的函数 (或加载相应的托管代码程序集并基于该程序集中发现的信息实例化符号提供程序，可获取此 `CoCreateInstance` 接口。 调试引擎实例化符号提供程序，以与表达式计算程序协调工作。 有关实例化此接口的一种方法，请参阅示例。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
-下表显示的方法 `IDebugSymbolProvider` 。
+下表显示了 的方法 `IDebugSymbolProvider` 。
 
 |方法|说明|
 |------------|-----------------|
@@ -45,29 +45,29 @@ IDebugSymbolProvider : IUnknown
 |`Uninitialize`|已否决。 请勿使用。|
 |[GetContainerField](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontainerfield.md)|获取包含调试地址的字段。|
 |`GetField`|已否决。 请勿使用。|
-|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|将文档位置地图为调试地址的数组。|
-|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|将文档上下文地图为调试地址的数组。|
+|[GetAddressesFromPosition](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromposition.md)|地图文档位置转换为调试地址数组。|
+|[GetAddressesFromContext](../../../extensibility/debugger/reference/idebugsymbolprovider-getaddressesfromcontext.md)|地图文档上下文转换为调试地址数组。|
 |[GetContextFromAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getcontextfromaddress.md)|地图调试地址转换为文档上下文。|
 |[GetLanguage](../../../extensibility/debugger/reference/idebugsymbolprovider-getlanguage.md)|获取用于在调试地址编译代码的语言。|
 |`GetGlobalContainer`|已否决。 请勿使用。|
-|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|获取表示完全限定方法名称的字段。|
+|[GetMethodFieldsByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getmethodfieldsbyname.md)|获取表示完全限定的方法名称的字段。|
 |[GetClassTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)|获取表示完全限定类名的类字段类型。|
-|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|创建与调试地址相关联的命名空间的枚举器。|
-|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|地图符号名称到符号类型。|
-|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|获取在方法中跟随给定调试地址的调试地址。|
+|[GetNamespacesUsedAtAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnamespacesusedataddress.md)|为与调试地址关联的命名空间创建枚举器。|
+|[GetTypeByName](../../../extensibility/debugger/reference/idebugsymbolprovider-gettypebyname.md)|地图符号名称为符号类型。|
+|[GetNextAddress](../../../extensibility/debugger/reference/idebugsymbolprovider-getnextaddress.md)|获取方法中给定调试地址后跟的调试地址。|
 
 ## <a name="remarks"></a>备注
-此接口将文档位置映射到调试地址中，反之亦然。
+此接口将文档位置映射到调试地址，反之亦然。
 
 ## <a name="requirements"></a>要求
-标头： sh。h
+标头：sh.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="example"></a>示例
-此示例演示如何实例化符号提供程序（给定其 GUID (调试引擎必须知道此值) 。
+此示例演示如何实例化符号提供程序，给定其 GUID (调试引擎必须知道此值) 。
 
 ```cpp
 // A debug engine uses its own symbol provider and would know the GUID
@@ -105,5 +105,5 @@ IDebugSymbolProvider *GetSymbolProvider(GUID *pSymbolProviderGuid)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)

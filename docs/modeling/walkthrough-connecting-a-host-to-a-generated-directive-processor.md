@@ -363,6 +363,6 @@ ms.locfileid: "121443862"
     Linked from: ExampleElement1
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)

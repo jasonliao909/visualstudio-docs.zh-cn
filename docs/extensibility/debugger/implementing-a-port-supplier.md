@@ -34,5 +34,5 @@ ms.locfileid: "121361127"
 ## <a name="related-sections"></a>相关章节
  [调试器概念](../../extensibility/debugger/debugger-concepts.md) 介绍主要的调试体系结构概念。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
  [Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

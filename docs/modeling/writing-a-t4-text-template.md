@@ -1,6 +1,6 @@
 ---
 title: 编写 T4 文本模板
-description: 了解 T4 文本模板，以及如何编写包含指令、文本块和控制块的文本模板。
+description: 了解 T4 文本模板以及如何编写包含指令、文本块和控制块的文本模板。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,29 +11,30 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8034e0d1df6410c842f7d93a4ee3023957904744
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 63f86f8e0b753d3f15f000a7f3846aeafec87f4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388082"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055193"
 ---
 # <a name="writing-a-t4-text-template"></a>编写 T4 文本模板
-文本模板包含将从其生成的文本。 例如，用于创建网页的模板将包含 " \<html> ..."以及 HTML 页的所有其他标准部分。 插入到模板中的是 *控制块*，它们是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
+文本模板包含将从其生成的文本。 例如，创建网页的模板将包含 \<html> "..."和 HTML 页的所有其他标准部分。 插入到模板中的是 *控制块*，这些块是程序代码的片段。 控制块提供变化值，允许文本部件是条件和重复的。
 
  使用这一结构很容易开发模板，因为可以以生成文件为原型，然后逐步插入用于改变结果的控制块。
 
  文本模板由以下部件组成：
 
-- **指令** -控制如何处理模板的元素。
+- **指令** - 控制如何处理模板的元素。
 
-- **文本块** -直接复制到输出的内容。
+- **文本块** - 直接复制到输出的内容。
 
-- **控制块** -将变量值插入到文本中并控制文本的有条件或重复部分的程序代码。
+- **控制块** - 将变量值插入到文本中的程序代码，并控制文本的条件部分或重复部分。
 
-若要尝试本主题中的示例，请将它们复制到模板文件中，如 [使用 T4 文本模板的设计时代码生成](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中所述。 编辑模板文件后，保存该文件，然后检查输出 **.txt** 文件。
+若要尝试本主题中的示例，请将它们复制到模板文件中，如使用 T4 文本模板 生成设计时 [代码中所述](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。 编辑模板文件后，保存该文件，然后检查 **.txt输出。**
 
 ## <a name="directives"></a>指令
  文本模板指令向文本模板化引擎提供关于如何生成转换代码和输出文件的一般指令。
@@ -44,7 +45,7 @@ ms.locfileid: "112388082"
 <#@ output extension=".txt" #>
 ```
 
- 有关指令的详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。
+ 有关 指令详细信息，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。
 
 ## <a name="text-blocks"></a>文本块
  文本块直接向输出文件插入文本。 文本块没有特殊格式。 例如，下面的文本模板将生成一个包含单词“Hello”的文本文件：
@@ -80,7 +81,7 @@ Hello
 #> Hello!
 ```
 
- 你可以交错文本和代码，而不必使用显式 `Write()` 语句。 下面的示例将打印 "Hello！" 四次：
+ 你可以交错文本和代码，而不必使用显式 `Write()` 语句。 以下示例打印"Hello！" 四次：
 
 ```
 <#
@@ -96,7 +97,7 @@ Hello!
  在代码中，可以使用 `Write();` 语句的位置都可以插入文本块。
 
 > [!NOTE]
-> 在复合语句（如循环或条件）中嵌入文本块时，始终使用大括号 {...} 包含文本块。
+> 在复合语句（如循环或条件语句）中嵌入文本块时，请始终使用大括号 {...} 如果包含文本块，为 。
 
 ### <a name="expression-control-blocks"></a>表达式控制块
  表达式控制块计算表达式并将其转换为字符串。 该字符串将插入到输出文件中。
@@ -109,7 +110,7 @@ Hello!
 <#= 2 + 3 #>
 ```
 
- 请注意，左符号包含三个字符 "< # ="。
+ 请注意，开始符号有三个字符"<#="。
 
  表达式可以包含作用域中的任何变量。 例如，下面的块输出数字行：
 
@@ -126,7 +127,7 @@ This is hello number <#= i+1 #>: Hello!
 ```
 
 ### <a name="class-feature-control-blocks"></a>类功能控制块
- 类功能控制块定义属性、方法或不应包含在主转换中的所有其他代码。 类功能块常用于编写帮助器函数。  通常情况下，类功能块放在单独的文件中，以便可以将它们 [包含](#Include) 在多个文本模板中。
+ 类功能控制块定义属性、方法或不应包含在主转换中的所有其他代码。 类功能块常用于编写帮助器函数。  通常，类功能块放置在单独的文件中，以便 [它们可以通过多个](#Include) 文本模板包含。
 
  类功能控制块以 `<#+ ... #>` 符号分隔。
 
@@ -154,7 +155,7 @@ private int Square(int i)
 
  类功能必须编写在文件末尾。 不过，即使 `<#@include#>` 指令后跟标准块和文本，也可以 `include` 包含类功能的文件。
 
- 有关控制块的详细信息，请参阅 [文本模板控制块](../modeling/text-template-control-blocks.md)。
+ 有关控制块详细信息，请参阅 [文本模板控件块](../modeling/text-template-control-blocks.md)。
 
 ### <a name="class-feature-blocks-can-contain-text-blocks"></a>类功能块可以包含文本块
  可以编写生成文本的方法。 例如：
@@ -193,9 +194,9 @@ private void WriteSquareLine(int i)
 <#@ assembly name="$(SolutionDir)library\MyAssembly.dll" #>
 ```
 
- Assembly 指令对 [预处理文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md)无效。
+ 程序集指令在预处理的文本模板 [中不起作用](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
- 有关详细信息，请参阅 [T4 Assembly 指令](../modeling/t4-assembly-directive.md)。
+ 有关详细信息，请参阅 [T4 程序集指令](../modeling/t4-assembly-directive.md)。
 
 ### <a name="namespaces"></a>命名空间
  import 指令与 C# 中的 `using` 子句或 Visual Basic 中的 `imports` 子句相同。 通过该指令，不使用完全限定名就可以在代码中引用类型：
@@ -231,16 +232,16 @@ private void WriteSquareLine(int i)
 
  有几种方法可以读取源文件。
 
- **读取文本模板中的文件**。 下面是将数据读入模板的最简单的方法：
+ **读取文本模板 中的文件**。 下面是将数据读入模板的最简单的方法：
 
 ```
 <#@ import namespace="System.IO" #>
 <# string fileContent = File.ReadAllText(@"C:\myData.txt"); ...
 ```
 
- **将文件作为可导航模型加载**。 更有效的方法是将数据作为模型读取，文本模板代码可以导航该模型。 例如，可以加载 XML 文件，然后使用 XPath 表达式对其导航。 你还可以使用 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe) 创建一组可用于读取 XML 数据的类。
+ **将文件作为可导航模型加载**。 更有效的方法是将数据作为模型读取，文本模板代码可以导航该模型。 例如，可以加载 XML 文件，然后使用 XPath 表达式对其导航。 还可 [ 使用 ](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)xsd.exe创建一组可用于读取 XML 数据的类。
 
- **在关系图或窗体中编辑模型文件。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 提供使您可以将模型作为关系图或 Windows 窗体进行编辑的工具。 这样便于与生成的应用程序的用户讨论模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 还会创建一组反映模型结构的强类型类。 有关详细信息，请参阅 [从 Domain-Specific 语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
+ **在关系图或窗体中编辑模型文件。** [!INCLUDE[dsl](../modeling/includes/dsl_md.md)]提供了一些工具，可用于将模型编辑为关系图或Windows窗体。 这样便于与生成的应用程序的用户讨论模型。 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 还会创建一组反映模型结构的强类型类。 有关详细信息，请参阅 [从 Domain-Specific 语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)。
 
 ### <a name="relative-file-paths-in-design-time-templates"></a>设计时模板中的相对文件路径
  在 [设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)中，如果要引用相对于文本模板的位置中的文件，请使用 `this.Host.ResolvePath()` 。 还必须在 `hostspecific="true"` 指令中设置 `template`：
@@ -257,7 +258,7 @@ Content of MyFile.txt is:
 <#= myFile #>
 ```
 
-还可以获取主机提供的其他服务。 有关详细信息，请参阅 [从模板访问 Visual Studio 或其他主机](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
+还可以获取主机提供的其他服务。 有关详细信息，请参阅[从模板访问 Visual Studio 或其他主机](/previous-versions/visualstudio/visual-studio-2010/gg604090\(v\=vs.100\))。
 
 ### <a name="design-time-text-templates-run-in-a-separate-appdomain"></a>设计时文本模板在单独的 AppDomain 中运行
 
@@ -275,6 +276,6 @@ Content of MyFile.txt is:
 |编写模板。|[T4 文本模板编写准则](../modeling/guidelines-for-writing-t4-text-templates.md)|
 |使用程序代码生成文本。|[文本模板结构](../modeling/writing-a-t4-text-template.md)|
 |在 Visual Studio 解决方案中生成文件。|[使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)|
-|在 Visual Studio 外部运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
+|在 Visual Studio 之外运行文本生成。|[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)|
 |以域特定语言的形式转换数据。|[从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)|
 |编写指令处理器转换自己的数据源。|[自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)|

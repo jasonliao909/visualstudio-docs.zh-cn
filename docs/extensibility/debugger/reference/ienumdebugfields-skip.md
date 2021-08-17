@@ -11,17 +11,18 @@ ms.assetid: b3bc51c4-21ae-4913-800c-c2ca9dc18443
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d5b411b17c5609f24f2a9b57189538264d8ba726
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 009442060ff37a429edb9a7a768f772dda664da946be55b88dd39d1c26ed56ab
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075505"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360230"
 ---
 # <a name="ienumdebugfieldsskip"></a>IEnumDebugFields::Skip
 此方法跳过指定数目的元素。
@@ -50,5 +51,5 @@ int Skip(
 ## <a name="remarks"></a>备注
  如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: aeffcc63f841b2a01b613173e0df87a841af7b1c0e993da468c157af0b24b686
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b08f2814fc20cf97da0e0c081ea2d8a6d49e0129
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370538"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055440"
 ---
 # <a name="dependency-diagrams-reference"></a>依赖项关系图：参考
 
@@ -59,7 +59,7 @@ ms.locfileid: "121370538"
 
 下表描述了可在依赖项关系图上使用的元素。
 
-|**整形**|**元素**|**说明**|
+|**形状**|**元素**|**说明**|
 |-|-|-|
 |1|**层**|系统中的物理项目的逻辑组。 这些项目可以是命名空间、项目、类、方法等。<br /><br /> 若要查看链接到某个层的项目，请打开该层的快捷菜单，然后选择 " **查看链接** " 以打开 " **层资源管理器**"。<br /><br /> 有关详细信息，请参阅 [层资源管理器](#Explorer)。<br /><br /> -   **禁止的命名空间依赖项** -指定与此层关联的项目不能依赖于指定的命名空间。<br />-   **禁止的命名空间** -指定与此层关联的项目不能属于指定的命名空间。<br />-   **必需的命名空间** -指定与此层关联的项目必须属于某个指定的命名空间。|
 |2|**依赖项**|指示某个层可以使用另一层的功能，但反之则不然。<br /><br /> -   **方向** -指定依赖关系的方向。|
@@ -99,6 +99,6 @@ ms.locfileid: "121370538"
 |**支持验证**|如果 **为 True**，则层验证过程可以验证项目是否符合与此元素的依赖关系。<br /><br /> 如果 **为 False**，则链接不参与层验证过程。<br /><br /> 有关详细信息，请参阅 [依赖关系图：准则](../modeling/layer-diagrams-guidelines.md)。|
 |**Identifier**|对链接的项目的引用|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

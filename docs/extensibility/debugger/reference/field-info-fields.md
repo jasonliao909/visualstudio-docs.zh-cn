@@ -1,5 +1,5 @@
 ---
-description: 指定要检索的有关 IDebugField 对象的信息。
+description: 指定要检索有关 IDebugField 对象的信息。
 title: FIELD_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: a69487d2-e701-4165-804a-8a011df9a3bd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0bd13473be5817e821f61b646bd1634cfe06388b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 03b89d7337888033b2a2ce02e71d37a1340a4580
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059418"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073027"
 ---
 # <a name="field_info_fields"></a>FIELD_INFO_FIELDS
-指定要检索的有关 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象的信息。
+指定要检索有关 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象的信息。
 
 ## <a name="syntax"></a>语法
 
@@ -53,30 +54,30 @@ public enum enum_FIELD_INFO_FIELDS {
 
 ## <a name="fields"></a>字段
 `FIF_FULLNAME`\
-初始化/使用 `bstrFullName` [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 结构中的字段。
+初始化/使用 `bstrFullName` 结构FIELD_INFO字段。 [](../../../extensibility/debugger/reference/field-info.md)
 
 `FIF_NAME`\
-初始化/使用 `bstrName` 结构中的字段 `FIELD_INFO` 。
+初始化/使用 `bstrName` 结构中的 `FIELD_INFO` 字段。
 
 `FIF_TYPE`\
-初始化/使用 `bstrType` 结构中的字段 `FIELD_INFO` 。
+初始化/使用 `bstrType` 结构中的 `FIELD_INFO` 字段。
 
 `FIF_MODIFIERS`\
-初始化/使用 `bstrModifiers` 结构中的字段 `FIELD_INFO` 。
+初始化/使用 `bstrModifiers` 结构中的 `FIELD_INFO` 字段。
 
 ## <a name="remarks"></a>备注
-还会将这些值作为参数传递给 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 方法，以指定要初始化 [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md) 结构的哪些字段。
+这些值也作为参数传递给[GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md)方法，以指定要初始化FIELD_INFO的字段。 [](../../../extensibility/debugger/reference/field-info.md)
 
-还在结构的成员中使用这些值 `dwFields` `FIELD_INFO` 来指示使用和有效的字段。
+这些值还用于 结构的成员， `dwFields` `FIELD_INFO` 以指示使用哪些字段并且有效。
 
-这些标志可以与按位组合 `OR` 。
+这些标志可以与位 合并 `OR` 。
 
 ## <a name="requirements"></a>要求
-标头： sh。h
+标头：sh.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

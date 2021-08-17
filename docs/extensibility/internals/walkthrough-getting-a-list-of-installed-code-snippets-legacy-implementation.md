@@ -1,6 +1,6 @@
 ---
-title: 获取旧版代码片段 (代码) |Microsoft Docs
-description: 了解如何获取特定语言 GUID 的所有代码片段。 这些代码片段的快捷方式可以插入到 IntelliSense 完成列表中。
+title: 获取已安装代码段的列表 (旧) |Microsoft Docs
+description: 了解如何获取特定语言 GUID 的所有代码片段。 这些代码段的快捷方式可以插入 IntelliSense 完成列表。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,25 +12,26 @@ ms.assetid: 7d142f8b-35b1-44c4-a13e-f89f6460c906
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 051f356e7b6b6f1a92ba475617f48e5c6074f402
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 1d41475bef1a4da3a0eff1583a81c8e4953a3832
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898869"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042031"
 ---
 # <a name="walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation"></a>演练：获取包含已安装的代码片段的列表（旧版实现）
-代码片段是一段代码，可以使用菜单命令 (（允许从已安装的代码片段列表) 或从 IntelliSense 完成列表中选择代码片段快捷方式）插入到源缓冲区中。
+代码段是一段代码，可以使用菜单命令将其插入到源缓冲区中 (这允许在已安装的代码段列表中进行选择) 或从 IntelliSense 完成列表中选择代码段快捷方式。
 
- <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法获取特定语言 GUID 的所有代码片段。 这些代码片段的快捷方式可以插入到 IntelliSense 完成列表中。
+ <xref:Microsoft.VisualStudio.TextManager.Interop.IVsExpansionManager.EnumerateExpansions%2A>方法获取特定语言 GUID 的所有代码段。 这些代码段的快捷方式可以插入 IntelliSense 完成列表。
 
- 请参阅 [对旧版语言服务](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) 中的代码片段的支持，详细了解如何通过 MPF 语言服务在托管包框架中 (代码) 代码片段。
+ 有关在托管包框架中实现代码片段的详细信息，请参阅 [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md) (MPF) Language service。
 
-### <a name="to-retrieve-a-list-of-code-snippets"></a>检索代码片段列表
+### <a name="to-retrieve-a-list-of-code-snippets"></a>检索代码段列表
 
-1. 下面的代码演示如何获取给定语言的代码片段列表。 结果存储在 结构的数组 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 中。 此方法使用静态 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 方法从 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 服务获取 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 接口。 但是，也可使用为 VSPackage 给定的服务提供程序并调用 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 方法。
+1. 下面的代码演示如何获取给定语言的代码段列表。 结果存储在结构的数组中 <xref:Microsoft.VisualStudio.TextManager.Interop.VsExpansion> 。 此方法使用静态 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 方法 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextManager> 从服务获取接口 <xref:Microsoft.VisualStudio.TextManager.Interop.SVsTextManager> 。 但是，还可以使用提供给 VSPackage 的服务提供程序，并调用 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 方法。
 
     ```csharp
     using System;
@@ -105,10 +106,10 @@ ms.locfileid: "112898869"
 
 ### <a name="to-call-the-getsnippets-method"></a>调用 GetSnippets 方法
 
-1. 下面的方法演示如何在完成 `GetSnippets` 分析操作时调用 方法。 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A>在以 原因启动的分析操作之后调用 方法 <xref:Microsoft.VisualStudio.Package.ParseReason> 。
+1. 下面的方法演示如何 `GetSnippets` 在分析操作完成时调用方法。 此 <xref:Microsoft.VisualStudio.Package.LanguageService.OnParseComplete%2A> 方法在使用原因启动的分析操作后调用 <xref:Microsoft.VisualStudio.Package.ParseReason> 。
 
 > [!NOTE]
-> `expansionsList`出于性能原因，将缓存数组列表。 对代码片段的更改不会反映在列表中，除非停止语言服务并重新加载 (，例如停止并重启 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 。
+> `expansionsList`出于性能原因，将缓存数组列表。 代码段的更改不会反映在列表中，直到语言服务停止并重新加载 (例如，通过停止并重新启动 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]) 。
 
 ```csharp
 class TestLanguageService : LanguageService
@@ -127,13 +128,13 @@ class TestLanguageService : LanguageService
 }
 ```
 
-### <a name="to-use-the-snippet-information"></a>使用代码片段信息
+### <a name="to-use-the-snippet-information"></a>使用代码段信息
 
-1. 下面的代码演示如何使用 方法返回的代码片段 `GetSnippets` 信息。 从分析器调用 方法，以响应用于填充代码片段列表的任何 `AddSnippets` 分析原因。 这应在首次完成完整分析后发生。
+1. 下面的代码演示如何使用方法返回的代码段信息 `GetSnippets` 。 `AddSnippets`从分析器调用方法，以响应用于填充代码段列表的任何分析原因。 这应在第一次完成完全分析之后发生。
 
-     `AddDeclaration`方法生成声明列表，该列表稍后将显示在完成列表中。
+     `AddDeclaration`方法生成稍后显示在完成列表中的声明列表。
 
-     `TestDeclaration`类包含可在完成列表中显示的所有信息以及声明的类型。
+     `TestDeclaration`类包含可以在完成列表中显示的所有信息以及声明类型。
 
     ```csharp
     class TestAuthoringScope : AuthoringScope
@@ -178,5 +179,5 @@ class TestLanguageService : LanguageService
 
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [旧版语言服务中的代码片段支持](../../extensibility/internals/support-for-code-snippets-in-a-legacy-language-service.md)

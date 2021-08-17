@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4549fbcd8f342816cec490ac6b461d3448f8827e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c02e143a37c48b0ced99d605ffd7a9cd9d2d33ce85857681c2ac955934123228
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027755"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121443979"
 ---
 # <a name="customize-t4-text-transformation"></a>自定义 T4 文本转换
 
@@ -34,7 +34,7 @@ ms.locfileid: "122027755"
 
  [使用自定义主机处理文本模板](../modeling/processing-text-templates-by-using-a-custom-host.md) 执行文本模板的代码时，主机提供对外部文件和应用程序状态的访问权限。 例如，在 Visual Studio 中运行文本转换的主机可以提供对 **解决方案资源管理器** 的访问权限。 它还在错误消息窗口中显示错误。 如果要在不同的上下文中运行文本转换，可以定义自己的主机，以访问该上下文中可用的服务。
 
- 如果要编写一个Visual Studio，请考虑使用现有的文本转换服务，而不是编写自己的主机。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+ 如果要编写扩展Visual Studio，请考虑使用现有的文本转换服务，而不是编写自己的主机。 有关详细信息，请参阅调用 [VS 扩展中的文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 ## <a name="reference"></a>参考
 

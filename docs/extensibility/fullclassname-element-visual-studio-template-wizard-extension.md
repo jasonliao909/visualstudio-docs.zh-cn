@@ -1,5 +1,5 @@
 ---
-title: 'FullClassName 元素 (VS template wizard extension) '
+title: 'FULLClassName 元素 (VS 模板向导扩展) '
 description: 了解 FullClassName 元素，以及它是实现 IWizard 接口的类的完全限定名称。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,8 +22,8 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121359996"
 ---
-# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a> (Visual Studio 模板向导扩展的 FullClassName 元素) 
-实现接口的类的完全限定名称 `IWizard` 。
+# <a name="fullclassname-element-visual-studio-template-wizard-extension"></a>FullClassName 元素 (Visual Studio模板向导扩展) 
+实现 接口的类的完全限定 `IWizard` 名称。
 
  \<VSTemplate> \<WizardExtension>
 ... \<FullClassName>
@@ -52,13 +52,13 @@ ms.locfileid: "121359996"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 此文本指定实现接口的类 `IWizard` 。 指定的类必须存在于 [assembly](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 元素指定的程序集中。
+ 此文本指定实现 接口的 `IWizard` 类。 指定的类必须存在于 Assembly 元素指定的 [程序集](../extensibility/assembly-element-visual-studio-template-wizard-extension.md) 中。
 
 ## <a name="remarks"></a>备注
  `FullClassName` 是 `WizardExtension` 的必需子元素。
 
 ## <a name="example"></a>示例
- 下面的示例演示 Windows 应用程序的标准项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
+ 以下示例演示了应用程序的标准项目模板的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] Windows元数据。
 
 ```
 <VSTemplate Version="3.0.0" Type="Item"
@@ -91,4 +91,4 @@ ms.locfileid: "121359996"
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)
-- [如何：将向导与项目模板结合使用](../extensibility/how-to-use-wizards-with-project-templates.md)
+- [如何：将向导与项目模板一同使用](../extensibility/how-to-use-wizards-with-project-templates.md)

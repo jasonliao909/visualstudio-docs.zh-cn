@@ -1,5 +1,5 @@
 ---
-description: 指定比较两个文档上下文的条件。
+description: 指定用于比较两个文档上下文的条件。
 title: DOCCONTEXT_COMPARE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121360815"
 ---
 # <a name="doccontext_compare"></a>DOCCONTEXT_COMPARE
-指定比较两个文档上下文的条件。
+指定用于比较两个文档上下文的条件。
 
 ## <a name="syntax"></a>语法
 
@@ -50,28 +50,28 @@ enum enum_DOCCONTEXT_COMPARE {
 
 ## <a name="fields"></a>字段
 `DOCCONTEXT_EQUAL`\
-查找列表中与目标文档上下文相等的第一个文档上下文。
+在列表中查找与目标文档上下文相同的第一个文档上下文。
 
 `DOCCONTEXT_LESS_THAN`\
-查找列表中小于目标文档上下文的第一个文档上下文。
+在列表中查找小于目标文档上下文的第一个文档上下文。
 
 `DOCCONTEXT_GREATER_THAN`\
-查找列表中大于目标文档上下文的第一个文档上下文。
+在列表中查找大于目标文档上下文的第一个文档上下文。
 
 `DOCCONTEXT_SAME_DOCUMENT`\
-查找列表中与目标文档上下文位于同一文档中的第一个文档上下文。
+在与目标文档上下文相同的文档中查找列表中的第一个文档上下文。
 
 ## <a name="remarks"></a>备注
 作为参数传递给 [Compare](../../../extensibility/debugger/reference/idebugdocumentcontext2-compare.md) 方法。
 
-这些值用于指定用于查找列表中第一个文档上下文的比较条件。 为文档上下文提供一个文档上下文列表，以通过 方法将其 `IDebugDocumentContext2::Compare` 与自身进行比较。 然后返回列表中要返回比较运算符的第 `true` 一个文档上下文。
+这些值用于指定在列表中查找第一个文档上下文的比较条件。 将为文档上下文提供一个文档上下文列表，以通过方法对自身进行比较 `IDebugDocumentContext2::Compare` 。 然后返回该列表中比较运算符所属的第一个文档上下文 `true` 。
 
 ## <a name="requirements"></a>要求
-标头：msdbg.h
+标头： msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

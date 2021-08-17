@@ -10,14 +10,15 @@ ms.assetid: b3440ac3-80af-40c6-bef4-cbf00fa67885
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b0c3169039115432758cfdcd3f0612c3578b74c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8472be00d961d5532f3e4c86e5cf63c268fb6be0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073378"
 ---
 # <a name="call-debugger-events"></a>调用调试器事件
 调试会话中的事件按特定顺序发生。
@@ -49,5 +50,5 @@ ms.locfileid: "105055045"
 
 12. [异常处理](../../extensibility/debugger/exception-handling-visual-studio-sdk.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

@@ -1,5 +1,5 @@
 ---
-description: 给定符号提供程序和计算帧的地址，将表达式字符串转换为分析的表达式。
+description: 给定符号提供程序和计算帧的地址，将表达式字符串转换为已分析的表达式。
 title: IDebugExpressionEvaluator3：:P arse2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,20 +9,21 @@ ms.assetid: 78099628-d600-4f76-b7c8-ee07c864af1e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d80b7613b85e07b83b34ebd0d13cc6f6ec182d81
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5a10db1315249a78ebbc786dec3e54da92532ba7262294490c76c145c9a11fc6
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084722"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360386"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-给定符号提供程序和计算帧的地址，将表达式字符串转换为分析的表达式。
+给定符号提供程序和计算帧的地址，将表达式字符串转换为已分析的表达式。
 
 ## <a name="syntax"></a>语法
 
@@ -54,34 +55,34 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>参数
 `upstrExpression`\
-中要分析的表达式字符串。
+[in]要分析的表达式字符串。
 
 `dwFlags`\
-中确定如何分析表达式的 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 常量的集合。
+[in] [PARS一系列 PARS一AGAGS](../../../extensibility/debugger/reference/parseflags.md) 常量，用于确定如何分析表达式。
 
 `nRadix`\
-中用于解释任何数值信息的基数。
+[in]用于解释任何数值信息的基数。
 
 `pSymbolProvider`\
-中符号提供程序的接口。
+[in]符号提供程序的接口。
 
 `pAddress`\
-中计算帧的地址。
+[in]计算帧的地址。
 
 `pbstrError`\
-弄以用户可读的文本形式返回错误。
+[out]将错误作为可读文本返回。
 
 `pichError`\
-弄返回表达式字符串中错误开头的字符位置。
+[out]返回表达式字符串中错误开头的字符位置。
 
 `ppParsedExpression`\
-弄返回 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 对象中分析的表达式。
+[out]返回 [IDebugParsedExpression 对象中已分析的](../../../extensibility/debugger/reference/idebugparsedexpression.md) 表达式。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法生成一个分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
+此方法生成已分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)接口的 **CEE** 对象实现此方法。
@@ -138,5 +139,5 @@ HRESULT CEE::Parse2 ( LPCOLESTR in_szExprText,
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)

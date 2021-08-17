@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4bfa28394bf8d7ea8f923a5bb27d4aad9853dfbcf841c2ecccae78e7b1151860
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f5fa08ed66dbdc2bcf6f1f1a7f58918fb13d9e23
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448983"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087673"
 ---
 # <a name="idebugpropertydestroyevent2getdebugproperty"></a>IDebugPropertyDestroyEvent2::GetDebugProperty
 获取要销毁的属性。
@@ -48,6 +48,6 @@ int GetDebugProperty (
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPropertyDestroyEvent2](../../../extensibility/debugger/reference/idebugpropertydestroyevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

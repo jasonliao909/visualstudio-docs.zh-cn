@@ -1,6 +1,6 @@
 ---
 description: 设置或更改与此绑定断点关联的条件。
-title: IDebugBoundBreakpoint2：： SetCondition |Microsoft Docs
+title: IDebugBoundBreakpoint2：：SetCondition |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -12,17 +12,18 @@ ms.assetid: 5d366876-efed-43d0-8ea1-dfdb009cbfac
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 792c0464b6c1beced9903e3dc21783d1841ab455
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 5491dd67851c645762512736eac3ed6b1db820f53b2eb1299d7c1199d9ae29bf
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088869"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121360633"
 ---
 # <a name="idebugboundbreakpoint2setcondition"></a>IDebugBoundBreakpoint2::SetCondition
 设置或更改与此绑定断点关联的条件。
@@ -43,15 +44,15 @@ int SetCondition(
 
 ## <a name="parameters"></a>参数
 `bpCondition`\
-中用于描述条件的 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 枚举中的一个值。
+[in]描述条件 [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md) 枚举中的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 `E_BP_DELETED`如果绑定断点对象的状态设置为 `BPS_DELETED` [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)枚举)  (部分，则返回。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。 如果 `E_BP_DELETED` 绑定断点对象的状态设置为 (枚举的一部分 `BPS_DELETED` [，BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 返回) 。
 
 ## <a name="remarks"></a>备注
- 先前与此断点关联的任何条件都将丢失。
+ 以前与此断点关联的任何条件将丢失。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

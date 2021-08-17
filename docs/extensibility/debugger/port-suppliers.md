@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96eaaea45afc5b61334d8a1701c02768d3176bc5707cdd931dd6b94ab67337ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 098e1546dea997f83f0c73b5d337657b1a8d77a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452519"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073274"
 ---
 # <a name="port-suppliers"></a>端口供应商
 在调试程序体系结构中， *端口供应商*：
@@ -34,7 +34,7 @@ ms.locfileid: "121452519"
 
   [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供默认端口供应商和默认端口。 如果需要实现自定义端口，还需要实现自定义端口提供商以提供这些自定义端口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [服务器](../../extensibility/debugger/servers-visual-studio-sdk.md)
 - [端口](../../extensibility/debugger/ports.md)
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)

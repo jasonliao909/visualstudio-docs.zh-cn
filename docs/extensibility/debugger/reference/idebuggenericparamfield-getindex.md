@@ -70,5 +70,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

@@ -13,14 +13,15 @@ ms.assetid: 2f6f18d1-acd8-454d-a856-9a4d81155052
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0fb65a63b99f625f8d32af8436db753a0f17322e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e167d963592e6f555082978c07d3fd7a70cb5fa82636864f5518665bffc6d38f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105080900"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121275185"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的选择和货币
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 使用选择 *上下文* 维护用户当前选择的对象的相关信息。 使用选择上下文，Vspackage 可以通过两种方式参与货币跟踪：
@@ -64,6 +65,6 @@ ms.locfileid: "105080900"
 
 - 更改窗口框架选择上下文中所跟踪元素的事件。 示例包括更改 DocObject 中的选定内容或更改项目类型窗口中的选定内容。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [选择上下文对象](../../extensibility/internals/selection-context-objects.md)
 - [为用户提供反馈](../../extensibility/internals/feedback-to-the-user.md)
