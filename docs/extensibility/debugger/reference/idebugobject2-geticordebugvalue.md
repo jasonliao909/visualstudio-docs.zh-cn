@@ -11,17 +11,18 @@ ms.assetid: bcd4355d-3fbe-483f-bb23-a44348323c6a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b25d5147283ad14b77e216a23a45f69516951908
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 054bf154aaa5ceadd386e4b3ff7e0b9a15f62e77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053745"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043109"
 ---
 # <a name="idebugobject2geticordebugvalue"></a>IDebugObject2::GetICorDebugValue
 获取表示与此对象关联的值的托管代码对象。
@@ -50,5 +51,5 @@ int GetICorDebugValue(
 ## <a name="remarks"></a>备注
  `ICorDebugValue`对象是一个表示值的公共语言运行时接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

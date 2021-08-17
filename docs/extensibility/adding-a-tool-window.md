@@ -1,6 +1,6 @@
 ---
-title: 添加工具窗口 |Microsoft Docs
-description: 了解如何创建一个工具窗口并将其集成到 Visual Studio，方法是将一个控件和一个包含命令的工具栏添加到工具窗口。
+title: 添加工具窗口|Microsoft Docs
+description: 了解如何通过将控件和包含命令的工具栏添加到工具窗口Visual Studio工具窗口并将其集成到工具窗口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -23,13 +23,13 @@ ms.locfileid: "121434979"
 ---
 # <a name="add-a-tool-window"></a>添加工具窗口
 
-在本演练中，你将了解如何创建一个工具窗口，并通过以下方式将其集成到 Visual Studio 中：
+本演练将了解如何创建工具窗口并将其集成到Visual Studio中：
 
 - 将控件添加到工具窗口。
 
 - 将工具栏添加到工具窗口。
 
-- 向工具栏添加命令。
+- 将命令添加到工具栏。
 
 - 实现命令。
 
@@ -37,34 +37,34 @@ ms.locfileid: "121434979"
 
 ## <a name="prerequisites"></a>先决条件
 
-Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+Visual Studio SDK 作为可选功能包含在安装程序Visual Studio中。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-tool-window"></a>创建工具窗口
 
-1. 使用 VSIX 模板创建名为 **FirstToolWin** 的项目，并添加一个名为 **FirstToolWindow** 的自定义工具窗口项模板。
+1. 使用 VSIX 模板创建 **名为 FirstToolWin** 的项目，并添加名为 **FirstToolWindow** 的自定义工具窗口项模板。
 
     > [!NOTE]
-    > 有关使用工具窗口创建扩展的详细信息，请参阅 [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
+    > 有关使用工具窗口创建扩展的信息，请参阅使用工具窗口 [创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)。
 
 ## <a name="add-a-control-to-the-tool-window"></a>向工具窗口添加控件
 
-1. 删除默认控件。 打开 *FirstToolWindowControl* 并删除 "**单击我！** " 按钮。
+1. 删除默认控件。 打开 *FirstToolWindowControl.xaml* 并删除" **单击我！"** 按钮。
 
-2. 在 " **工具箱**" 中，展开 " **所有 WPF 控件** " 部分，然后将 " **媒体元素** " 控件拖动到 " **FirstToolWindowControl** " 窗体。 选择控件，然后在 " **属性** " 窗口中，将此元素命名为 **mediaElement1**。
+2. 在" **工具箱"** 中，展开" **所有 WPF 控件** "部分，并将 **"媒体元素** "控件拖动到 **"FirstToolWindowControl"** 窗体。 选择控件，在"属性 **"** 窗口中，将此元素命名 **mediaElement1**。
 
-## <a name="add-a-toolbar-to-the-tool-window"></a>将工具栏添加到工具窗口
-通过以下列方式添加工具栏，可保证其梯度和颜色与 IDE 的其余部分保持一致。
+## <a name="add-a-toolbar-to-the-tool-window"></a>向工具窗口添加工具栏
+通过按以下方式添加工具栏，可以保证其渐变和颜色与 IDE 的其余部分一致。
 
-1. 在 **解决方案资源管理器** 中，打开 *.vsct*。 *.Vsct* 文件使用 XML 定义工具窗口中 (GUI) 元素的图形用户界面。
+1. 在 **解决方案资源管理器** 中，打开 *FirstToolWindowPackage.vsct*。 *.vsct* 文件使用 XML 定义 (GUI) 工具窗口中元素的图形用户界面。
 
-2. 在 `<Symbols>` 部分中，找到 `<GuidSymbol>` `name` 属性为的节点 `guidFirstToolWindowPackageCmdSet` 。 将以下两个 `<IDSymbol>` 元素添加到 `<IDSymbol>` 此节点中的元素列表，以定义工具栏和工具栏组。
+2. 在 `<Symbols>` 部分中，找到 `<GuidSymbol>` 其属性 `name` 为 的节点 `guidFirstToolWindowPackageCmdSet` 。 将以下两个元素添加到此节点中的元素 `<IDSymbol>` `<IDSymbol>` 列表中，以定义工具栏和工具栏组。
 
     ```xml
     <IDSymbol name="ToolbarID" value="0x1000" />
     <IDSymbol name="ToolbarGroupID" value="0x1001" />
     ```
 
-3. 在该部分的正上方 `<Buttons>` ，创建一个 `<Menus>` 类似于下面的内容：
+3. 在 节 `<Buttons>` 的正上方， `<Menus>` 创建类似于以下内容的部分：
 
     ```xml
     <Menus>
@@ -78,11 +78,11 @@ Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 �
     </Menus>
     ```
 
-    有几种不同类型的菜单。 此菜单是工具窗口中的一个工具栏，由其 `type` 属性定义。 `guid`和 `id` 设置构成了工具栏的完全限定 ID。 通常， `<Parent>` 菜单的是包含组。 但是，工具栏定义为其自身的父级。 因此，同一标识符用于 `<Menu>` 和 `<Parent>` 元素。 此 `priority` 属性只是 "0"。
+    有几种不同类型的菜单。 此菜单是工具窗口中的工具栏，由其 属性 `type` 定义。 `guid`和 `id` 设置是工具栏的完全限定 ID。 通常， `<Parent>` 菜单的 是包含组。 但是，工具栏定义为其自己的父级。 因此， 和 元素使用相同的 `<Menu>` `<Parent>` 标识符。 属性 `priority` 只是"0"。
 
-4. 工具栏类似于菜单。 例如，正如菜单可能包含命令组，工具栏也可能具有组。  (菜单上，命令组由水平线分隔。 在工具栏上，不会使用视觉分隔符分隔组。 ) 
+4. 工具栏以多种方式类似于菜单。 例如，正如菜单可能包含一组命令一样，工具栏也可能有组。  (菜单上，命令组由水平行分隔。 在工具栏上，组不由可视分隔符分隔。) 
 
-    添加 `<Groups>` 包含元素的部分 `<Group>` 。 这会定义在部分中声明其 ID 的组 `<Symbols>` 。 将节添加到 `<Groups>` 节的紧后面 `<Menus>` 。
+    添加 `<Groups>` 包含 元素的 `<Group>` 节。 这将定义在 节中声明其 ID 的 `<Symbols>` 组。 在 节 `<Groups>` 的正后添加 `<Menus>` 部分。
 
     ```xml
     <Groups>
@@ -92,20 +92,20 @@ Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 �
     </Groups>
     ```
 
-    通过将父 GUID 和 ID 设置为工具栏的 GUID 和 ID，可以将组添加到工具栏中。
+    将父 GUID 和 ID 设置为工具栏的 GUID 和 ID，即可将组添加到工具栏。
 
 ## <a name="add-a-command-to-the-toolbar"></a>将命令添加到工具栏
 
-将命令添加到工具栏，该工具栏显示为按钮。
+将命令添加到工具栏，该命令显示为按钮。
 
-1. 在 `<Symbols>` 部分中，将以下 IDSymbol 元素声明在工具栏和工具栏组声明之后。
+1. 在 `<Symbols>` 部分中，在工具栏和工具栏组声明之后声明以下 IDSymbol 元素。
 
     ```xml
     <IDSymbol name="cmdidWindowsMedia" value="0x0100" />
     <IDSymbol name="cmdidWindowsMediaOpen" value="0x132" />
     ```
 
-2. 在部分中添加 Button 元素 `<Buttons>` 。 此元素将显示在工具窗口中的工具栏上， **搜索** (放大镜) 图标。
+2. 在 节中添加 Button `<Buttons>` 元素。 此元素将显示在工具窗口的工具栏上，具有"搜索 **" (放大** 镜) 图标。
 
     ```xml
     <Button guid="guidFirstToolWindowPackageCmdSet" id="cmdidWindowsMediaOpen" priority="0x0101" type="Button">
@@ -118,7 +118,7 @@ Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 �
     </Button>
     ```
 
-3. 打开 *FirstToolWindowCommand* 并将以下行添加到类中的现有字段之后。
+3. 打开 *FirstToolWindowCommand.cs，* 将以下行添加到 类中现有字段的正之后。
 
     ```csharp
     public const string guidFirstToolWindowPackageCmdSet = "00000000-0000-0000-0000-0000";  // get the GUID from the .vsct file
@@ -127,12 +127,12 @@ Visual Studio SDK 作为 Visual Studio 安装程序中的可选功能提供。 �
     public const int ToolbarID = 0x1000;
     ```
 
-    这样做可以在代码中使用命令。
+    这样做可使命令在代码中可用。
 
 ## <a name="add-a-mediaplayer-property-to-firsttoolwindowcontrol"></a>将 MediaPlayer 属性添加到 FirstToolWindowControl
-在工具栏控件的事件处理程序中，你的代码必须能够访问 Media Player 控件，该控件是 FirstToolWindowControl 类的子控件。
+从工具栏控件的事件处理程序中，代码必须能够访问 Media Player 控件，该控件是 FirstToolWindowControl 类的子级。
 
-在 **解决方案资源管理器** 中，右键单击 *FirstToolWindowControl*，单击 " **查看代码**"，然后将以下代码添加到 FirstToolWindowControl 类。
+在 **解决方案资源管理器** 中，右键单击 *"FirstToolWindowControl.xaml"，* 单击"查看代码"，将以下代码添加到 FirstToolWindowControl 类。 
 
 ```csharp
 public System.Windows.Controls.MediaElement MediaPlayer
@@ -142,9 +142,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 ```
 
 ## <a name="instantiate-the-tool-window-and-toolbar"></a>实例化工具窗口和工具栏
-添加用于调用 " **打开文件** " 对话框并播放所选媒体文件的工具栏和菜单命令。
+添加一个工具栏和一个菜单命令，用于调用"打开 **文件** "对话框并播放选定的媒体文件。
 
-1. 打开 *FirstToolWindow* ，添加以下 `using` 指令：
+1. 打开 *FirstToolWindow.cs* 并添加以下 `using` 指令：
 
     ```csharp
     using System.ComponentModel.Design;
@@ -152,7 +152,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     using Microsoft.VisualStudio.Shell.Interop;
     ```
 
-2. 在 FirstToolWindow 类中，添加对 FirstToolWindowControl 控件的公开引用。
+2. 在 FirstToolWindow 类中，添加对 FirstToolWindowControl 控件的公共引用。
 
     ```csharp
     public FirstToolWindowControl control;
@@ -165,7 +165,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     base.Content = control;
     ```
 
-4. 在构造函数中实例化工具栏。
+4. 实例化构造函数内的工具栏。
 
     ```csharp
     this.ToolBar = new CommandID(new Guid(FirstToolWindowCommand.guidFirstToolWindowPackageCmdSet),
@@ -189,13 +189,13 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-6. 向工具栏添加菜单命令。 在 FirstToolWindowCommand 类中，添加以下 using 指令：
+6. 将菜单命令添加到工具栏。 在 FirstToolWindowCommand.cs 类中，添加以下 using 指令：
 
     ```csharp
     using System.Windows.Forms;
     ```
 
-7. 在 FirstToolWindowCommand 类中，在 ShowToolWindow () 方法的末尾添加以下代码。 下一节将实现 ButtonHandler 命令。
+7. 在 FirstToolWindowCommand 类中，将以下代码添加到 ShowToolWindow () 末尾。 ButtonHandler 命令将在下一部分中实现。
 
     ```csharp
     // Create the handles for the toolbar command.
@@ -209,15 +209,15 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ### <a name="to-implement-a-menu-command-in-the-tool-window"></a>在工具窗口中实现菜单命令
 
-1. 在 FirstToolWindowCommand 类中，添加调用 " **打开文件** " 对话框的 ButtonHandler 方法。 选择文件后，它会播放媒体文件。
+1. 在 FirstToolWindowCommand 类中，添加调用"打开文件"对话框的 ButtonHandler **方法。** 选择文件后，它播放媒体文件。
 
-2. 在 FirstToolWindowCommand 类中，添加对 FindToolWindow () 方法中创建的 FirstToolWindow 窗口的私有引用。
+2. 在 FirstToolWindowCommand 类中，添加对在 FindToolWindow () 中创建的 FirstToolWindow 窗口的私有引用。
 
     ```csharp
     private FirstToolWindow window;
     ```
 
-3. 将 ShowToolWindow () 方法更改为设置前面定义的窗口 (以便 ButtonHandler 命令处理程序可以访问窗口控件。 下面是完整的 ShowToolWindow () 方法。
+3. 更改 ShowToolWindow () 方法以设置上面定义的窗口 (以便 ButtonHandler 命令处理程序可以访问窗口控件。 下面是完整的 ShowToolWindow () 方法。
 
     ```csharp
     private void ShowToolWindow(object sender, EventArgs e)
@@ -240,7 +240,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
     }
     ```
 
-4. 添加 ButtonHandler 方法。 它将为用户创建 OpenFileDialog 以指定要播放的媒体文件，然后播放所选文件。
+4. 添加 ButtonHandler 方法。 它会创建一个 OpenFileDialog，供用户指定要播放的媒体文件，然后播放所选文件。
 
     ```csharp
     private void ButtonHandler(object sender, EventArgs arguments)
@@ -256,9 +256,9 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 ## <a name="set-the-default-position-for-the-tool-window"></a>设置工具窗口的默认位置
 
-接下来，在 IDE 中指定工具窗口的默认位置。 工具窗口的配置信息位于 *FirstToolWindowPackage* 文件中。
+接下来，在 IDE 中为工具窗口指定默认位置。 工具窗口的配置信息位于 *FirstToolWindowPackage.cs* 文件中。
 
-1. 在 *FirstToolWindowPackage* 中，找到类的 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> 属性，该属性将 `FirstToolWindowPackage` FirstToolWindow 类型传递给构造函数。 若要指定默认位置，必须在下面的示例中向构造函数添加更多参数。
+1. 在 *FirstToolWindowPackage.cs* 中，查找 类上的 属性，该属性将 <xref:Microsoft.VisualStudio.Shell.ProvideToolWindowAttribute> `FirstToolWindowPackage` FirstToolWindow 类型传递给构造函数。 若要指定默认位置，必须将更多参数添加到以下示例的构造函数。
 
     ```csharp
     [ProvideToolWindow(typeof(FirstToolWindow),
@@ -266,22 +266,22 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    第一个命名参数为 `Style` ，其值为 `Tabbed` ，这意味着窗口将是现有窗口中的一个选项卡。 停靠位置由 `Window` 参数指定，即 n 本例中 **解决方案资源管理器** 的 GUID。
+    第一个命名参数为 `Style` ，其值为 `Tabbed` ，这意味着窗口将是现有窗口中的选项卡。 停靠位置由 参数（ `Window` 本例中为 ）指定，解决方案资源管理器。
 
     > [!NOTE]
-    > 有关 IDE 中的窗口类型的详细信息，请参阅 <xref:EnvDTE.vsWindowType> 。
+    > 有关 IDE 中窗口类型的信息，请参阅 <xref:EnvDTE.vsWindowType> 。
 
 ## <a name="test-the-tool-window"></a>测试工具窗口
 
-1. 按 **F5** 打开 Visual Studio 试验性生成的新实例。
+1. 按 **F5** 打开试验性Visual Studio实例。
 
-2. 在 "**视图**" 菜单上，指向 "**其他 Windows** "，然后单击 "**第一个工具窗口**"。
+2. 在"**视图"** 菜单上，指向"**其他** Windows，然后单击"第 **一个工具窗口"。**
 
-    Media player 工具窗口应在与 **解决方案资源管理器** 相同的位置打开。 如果它仍显示在与以前相同的位置，则重置窗口布局 (**窗口/重置窗口布局**) 。
+    媒体播放器工具窗口应与 打开 **时位于** 解决方案资源管理器。 如果窗口布局仍与以前相同，请重置窗口布局 **(/重置窗口布局) 。**
 
-3. 单击 ") " 按钮 (工具窗口中的 " **搜索** " 图标。 选择受支持的声音或视频文件，例如 " *C:\windows\media\chimes.wav*"，然后按 " **打开**"。
+3. 单击按钮 (**工具窗口中**) "搜索"图标。 选择受支持的声音或视频文件，例如 *C：\windows\media\wav，* 然后按 **"打开"。**
 
-    你应该会听到钟声声音。
+    应会听到声音。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

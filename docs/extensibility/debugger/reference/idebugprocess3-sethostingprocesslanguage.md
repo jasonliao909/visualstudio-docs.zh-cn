@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3de958589480821c4a0682c94a7f54333e2e473d80c9d718b6586792fddfe72d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5b8b5cb12d287e1f63ff4fa9a766a49de1ab9454
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030186"
 ---
 # <a name="idebugprocess3sethostingprocesslanguage"></a>IDebugProcess3::SetHostingProcessLanguage
 此方法设置将承载进程的语言。 然后，调试引擎可以使用此语言 (DE) 加载相应的表达式计算器。
@@ -51,6 +51,6 @@ int SetHostingProcessLanguage(
 ## <a name="remarks"></a>备注
 - [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md) 可用于检索当前语言设置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [GetHostingProcessLanguage](../../../extensibility/debugger/reference/idebugprocess3-gethostingprocesslanguage.md)

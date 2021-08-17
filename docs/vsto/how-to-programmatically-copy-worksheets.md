@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 2a5b24d7896ec1f81c7e8d5d4c41a5e6af807b13
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 7aed53b3579e656d3b00e200b38075859174b8cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106194"
 ---
 # <a name="how-to-programmatically-copy-worksheets"></a>如何：以编程方式复制工作表
   你可以创建一份工作表的副本，并将该工作表插入工作簿中现有的工作表之前或之后。 如果不指定要插入工作表的位置，则 Excel 将创建一个新的工作簿来容纳新工作表。
@@ -44,13 +45,13 @@ ms.locfileid: "107828574"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet12":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet12":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [如何：以编程方式向工作簿添加新工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
 - [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [如何：以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
-- [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
+- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
 - [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
 - [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

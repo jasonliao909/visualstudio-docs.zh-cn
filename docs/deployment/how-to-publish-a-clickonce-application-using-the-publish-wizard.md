@@ -17,22 +17,23 @@ ms.assetid: 2e4aa67c-4445-4f7b-9e03-9acb95829127
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 7591513bc52807b87e9df2f0fb65364d5aff2db8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 195dc94991def92e1612e7f1752d348e1eb8d578
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089961"
 ---
 # <a name="how-to-publish-a-clickonce-application-using-the-publish-wizard"></a>如何：使用发布向导发布 ClickOnce 应用程序
 ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可移动媒体，才能供用户使用。 可以使用发布向导发布应用程序；与发布相关的其他属性位于“项目设计器”的“发布”页中。 有关详细信息，请参阅[发布 ClickOnce 应用程序](../deployment/publishing-clickonce-applications.md)。
 
-在运行发布向导前，应适当地设置发布属性。 例如，如果要指定密钥为 ClickOnce 应用程序签名，则可以在“项目设计器”的“签名”页中执行该操作。 有关详细信息，请参阅 [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
+在运行发布向导前，应适当地设置发布属性。 例如，如果要指定密钥为 ClickOnce 应用程序签名，则可以在“项目设计器”的“签名”页中执行该操作。 有关详细信息，请参阅[Secure ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
 
 > [!NOTE]
-> 使用 ClickOnce 安装多个版本的应用程序时，安装会将应用程序的早期版本移动到指定发布位置中名为 *Archive* 的文件夹中。 按照这种方式对早期版本进行存档，可以使安装目录与早期版本所在的文件夹分开。
+> 使用 ClickOnce 安装应用程序的多个版本时，安装会将早期版本的应用程序移到你指定的发布位置的名为 *Archive* 的文件夹中。 按照这种方式对早期版本进行存档，可以使安装目录与早期版本所在的文件夹分开。
 
 > [!NOTE]
 > 显示的对话框和菜单命令可能会与“帮助”中的描述不同，具体取决于你的当前设置或版本。 若要更改设置，请单击 **“工具”** 菜单上的 **“导入和导出设置”** 。 有关详细信息，请参阅[重置设置](../ide/environment-settings.md#reset-settings)。
@@ -49,7 +50,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
 
 4. 在“用户如何安装应用程序?”页面中，选择用户安装应用程序的位置：
 
-   - 如果用户从网站安装，则单击“从网站”，并输入与上一步中输入的文件路径相对应的 URL。 单击 **“下一步”** 。 （此选项通常在将 FTP 地址指定为发布位置时使用。 不支持从 FTP 直接下载。 因此，必须在此处输入 URL。）
+   - 如果用户从网站安装，则单击“从网站”，并输入与上一步中输入的文件路径相对应的 URL。 单击“下一步”。 （此选项通常在将 FTP 地址指定为发布位置时使用。 不支持从 FTP 直接下载。 因此，必须在此处输入 URL。）
 
    - 如果用户将直接从文件共享安装应用程序，请单击“从 UNC 路径或文件共享”，然后单击“下一步”。 （此选项用于形式为“c:\deploy\myapp”或“\\\server\myapp”的发布位置。）
 
@@ -99,7 +100,7 @@ ClickOnce 应用程序必须发布到文件共享或路径、FTP 服务器或可
    > [!NOTE]
    > 完成发布后，必须使用 CD 刻录机或 DVD 刻录机从步骤 3 中指定的位置将文件复制到 CD-ROM 或 DVD-ROM 媒体。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

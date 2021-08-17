@@ -3,26 +3,27 @@ title: 使用连接的服务添加适用于 Redis 的 Azure 缓存 |Microsoft Do
 description: 使用 Visual Studio 添加连接的服务，将用于 Redis 支持的 Azure 缓存添加到应用
 author: AngelosP
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: dd08cc9cc44b0866d718fe03392e99d5fa6467b7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16d67b8436368bc4b32f20e714a5c397817a1847
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075601"
 ---
 # <a name="add-azure-cache-for-redis-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加适用于 Redis 的 Azure 缓存
 
-使用 Visual Studio，可以使用 **连接的服务** 功能将以下任意内容连接到用于 Redis 的 Azure 缓存：
+使用 Visual Studio，可以通过使用 **连接的服务** 功能将以下任意内容连接到用于 Redis 的 Azure 缓存：
 
 - .NET Framework 控制台应用
-- ASP.NET MVC ( .NET Framework)  
+- ASP.NETMVC (.NET Framework)  
 - ASP.NET Core
-- .NET Core (包括控制台应用程序、WPF、Windows 窗体、类库) 
+- .net Core (包括控制台应用程序、WPF、Windows 窗体、类库) 
 - .NET Core 辅助角色
 - Azure Functions
 - 通用 Windows 平台应用
@@ -33,9 +34,9 @@ ms.locfileid: "99841164"
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-- 已安装 Azure 工作负荷的 Visual Studio。
+- Visual Studio 安装 Azure 工作负荷。
 - 受支持类型之一的项目
 
 ## <a name="connect-to-azure-cache-for-redis-using-connected-services"></a>使用连接的服务连接到用于 Redis 的 Azure 缓存
@@ -58,7 +59,7 @@ ms.locfileid: "99841164"
 
     如果需要创建新的组件，请参阅下一步。 否则，请跳到步骤 7。
 
-    ![连接到 Redis 的现有 Azure 缓存](./media/azure-redis-cache-add-connected-service/created-azure-redis-cache.png)
+    ![连接 Redis 的现有 Azure 缓存](./media/azure-redis-cache-add-connected-service/created-azure-redis-cache.png)
 
 1. 若要创建 Azure Redis 缓存：
 
@@ -82,8 +83,8 @@ ms.locfileid: "99841164"
 
    ![服务依赖项](./media/azure-redis-cache-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Azure Cache for Redis 产品页](https://azure.microsoft.com/services/cache)
-- [适用于 Redis 的 Azure 缓存文档](/azure/azure-cache-for-redis/)
+- [Azure Cache for Redis 文档](/azure/azure-cache-for-redis/)
 - [连接服务 (Visual Studio for Mac)](/visualstudio/mac/connected-services)

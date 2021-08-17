@@ -1,6 +1,6 @@
 ---
 title: 将 VSPackage 文件位置指定为 VS Shell |Microsoft Docs
-description: 了解如何使用户能够Visual Studio程序集 DLL 来加载 VSPackage。
+description: 了解如何使用户能够Visual Studio程序集 DLL 以加载 VSPackage。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0c3d04c96291c3c7e40fe1c7a7eeb63bb5a3252fc12070700fc1c5d15eaa2ce2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 044655e6f1b1eb984e521b26cb9796ae3e5543d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432067"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057156"
 ---
 # <a name="specifying-vspackage-file-location-to-the-vs-shell"></a>指定 VS Shell 的 VSPackage 文件位置
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须能够找到程序集 DLL 才能加载 VSPackage。 可以通过各种方式找到它，如下表所述。
@@ -32,4 +32,4 @@ ms.locfileid: "121432067"
 | 将 DLL 放入 **PublicAssemblies** 目录。 | 最后，程序集也可以放入 **PublicAssemblies** 子目录中。 将自动检测位于 **PublicAssemblies** 中的程序集，并且也会显示在 中的 **"添加引用** "对话框中 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。<br /><br /> VSPackage 程序集应仅放置在 **PublicAssemblies** 目录中，如果它们包含旨在供其他 VSPackage 开发人员重用的托管组件。 大多数程序集不满足此条件。 |
 
 > [!NOTE]
-> 将强名称签名程序集用于所有依赖程序集。 这些程序集还应安装在你自己的目录中或 GAC (全局) 。 这可防范与基文件名相同的程序集（称为弱名称绑定）发生冲突。
+> 将强名称签名程序集用于所有依赖程序集。 这些程序集还应安装在你自己的目录中，或者安装在 GAC (全局) 。 这可防范与基文件名相同的程序集（称为弱名称绑定）发生冲突。

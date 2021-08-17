@@ -1,5 +1,5 @@
 ---
-description: 当处理截获的异常已完成时调用。
+description: 当已截获异常的处理完成时调用。
 title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -26,7 +26,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389691"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-当处理截获的异常已完成时调用。
+当已截获异常的处理完成时调用。
 
 ## <a name="syntax"></a>语法
 
@@ -44,14 +44,14 @@ int GetInterceptCookie(
 
 ## <a name="parameters"></a>参数
 `pqwCookie`\
-弄与被截获的异常关联的唯一值。
+[out]与被截获的异常关联的唯一值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法完成截获的异常处理后，它将发送[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)事件。 处理程序可以使用 `GetInterceptCookie` 方法检索与异常相关联的唯一值 (传递给方法) 相同的值 `InterceptCurrentException` 。
+ 在 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 方法完成已截获异常的处理后，它会发送 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 事件。 处理程序可以使用 方法检索与异常关联的唯一值， (传递给方法的 `GetInterceptCookie` `InterceptCurrentException` 相同) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

@@ -10,14 +10,15 @@ ms.assetid: 9ff0a8f8-1ee6-4fdd-8b80-206436ff589b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 055c8972643a94bd8f13aa6e5e6bc5dde600140b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a5ac418731fc3676c4813ff3e346f452342f7df9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061467"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057390"
 ---
 # <a name="structures-and-unions"></a>结构和联合
 下面是 Visual Studio 调试 SDK 中的结构和联合。
@@ -132,7 +133,7 @@ ms.locfileid: "105061467"
 
 - [UNMANAGED_ADDRESS_PHYSICAL](../../../extensibility/debugger/reference/unmanaged-address-physical.md) 描述物理地址。
 
-- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md) 描述与 `this` Visual Basic) 中 (的指针相关的地址 `Me` 。
+- [UNMANAGED_ADDRESS_THIS_RELATIVE](../../../extensibility/debugger/reference/unmanaged-address-this-relative.md)描述与 `this` Visual Basic) 中 (的指针相关的地址 `Me` 。
 
 ## <a name="requirements"></a>要求
  标头： msdbg、sh .h 或 ee
@@ -141,5 +142,5 @@ ms.locfileid: "105061467"
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [API 参考](../../../extensibility/debugger/reference/api-reference-visual-studio-debugging.md)

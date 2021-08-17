@@ -1,6 +1,6 @@
 ---
-description: 监视执行 (或停止监视执行) 在给定线程上发生。
-title: IDebugEngineProgram2：： WatchForThreadStep |Microsoft Docs
+description: 监视执行 (或停止监视) 线程上发生的执行事件。
+title: IDebugEngineProgram2：：WatchForThreadStep |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389990"
 ---
 # <a name="idebugengineprogram2watchforthreadstep"></a>IDebugEngineProgram2::WatchForThreadStep
-监视执行 (或停止监视执行) 在给定线程上发生。
+监视执行 (或停止监视) 线程上发生的执行事件。
 
 ## <a name="syntax"></a>语法
 
@@ -49,25 +49,25 @@ int WatchForThreadStep(
 
 ## <a name="parameters"></a>参数
 `pOriginatingProgram`\
-中表示正在进行的程序的 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象。
+[in]表示 [要逐步执行的程序的 IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象。
 
 `dwTid`\
-中指定要监视的线程的标识符。
+[in]指定要监视的线程的标识符。
 
 `fWatch`\
-中非零 (`TRUE`) 表示开始监视由标识的线程上的执行 `dwTid` ; 否则，零 (`FALSE`) 表示停止在上监视执行 `dwTid` 。
+[in]非零 () 表示开始监视 由 标识的线程上的执行;否则，零 () 表示停止监视 上的 `TRUE` `dwTid` `FALSE` 执行 `dwTid` 。
 
 `dwFrame`\
-中指定控制步骤类型的帧索引。 如果此值为零 (0) ，则步骤类型为 "单步执行"，并在通过执行识别的线程时，程序应停止 `dwTid` 。 如果 `dwFrame` 为非零，则步骤类型为 "逐过程"，程序应仅在 `dwTid` 其索引与堆栈上的索引等于或高于的帧中运行时才应停止 `dwFrame` 。
+[in]指定控制步骤类型的帧索引。 如果此值为零 (0) ，则步骤类型为"单步执行"，只要执行 标识的线程，程序就会 `dwTid` 停止。 当 为非零时，步骤类型为"单步执行"，并且程序应仅在 标识的线程在堆栈上等于或高于 的帧中运行时 `dwFrame` `dwTid` 停止 `dwFrame` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 当会话调试管理器 (SDM) 执行由参数标识的程序时， `pOriginatingProgram` 它会通过调用此方法通知所有其他附加程序。
+ 当会话调试管理器 (SDM) 由 参数标识的程序时，它会通过调用此方法通知 `pOriginatingProgram` 所有其他附加程序。
 
- 此方法仅适用于线程单步执行。
+ 此方法仅适用于同线程单步执行。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

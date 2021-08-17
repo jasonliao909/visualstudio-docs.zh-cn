@@ -1,6 +1,6 @@
 ---
 title: 属性列出了两次
-description: 无法创建一次列出的关联属性。 查看有关此 Visual Studio 的信息，对象关系设计器 (O/R 设计器) 消息。
+description: 无法创建一次列出的关联属性。 查看有关此 Visual Studio 的信息对象关系设计器 (O/R 设计器) 消息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4466515f390db2ac3c03d302fd6ffb8da3a6176f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 391d24219063d2c1973361260a36b14d7a30a09e6d00a73476867d15c777130a
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867342"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380723"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>无法创建关联 &lt;关联名称&gt; - 属性已列出两次
 

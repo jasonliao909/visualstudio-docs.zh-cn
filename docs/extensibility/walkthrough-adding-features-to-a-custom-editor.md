@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 155906d5dfa35a66cd85053cac3c66c2a11a9b45ea94c7fc4f850e8656d5bf4c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 73b1eccb945a55011f08347e9b9402976e954ced
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335012"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056675"
 ---
 # <a name="walkthrough-add-features-to-a-custom-editor"></a>演练：向自定义编辑器添加功能
 创建自定义编辑器后，可以添加更多功能。
@@ -90,7 +90,7 @@ ms.locfileid: "121335012"
 
     - 如果要在编辑器中使用状态栏，请实现 并 <xref:Microsoft.VisualStudio.Shell.Interop.IVsStatusbarUser> 调用 `QueryService` 获取指向 <xref:Microsoft.VisualStudio.Shell.Interop.SVsStatusbar> 的指针 `IVsStatusBar` 。
 
-         例如，编辑器可以显示行/列信息、选择模式 (流/框) 以及插入/ (插入/) 。
+         例如，编辑器可以显示行/列信息、选择模式 (流/框) 以及插入/ (插入) 。
 
     - 如果希望编辑器支持 命令，则建议 `Undo` 的方法是使用 OLE 撤消管理器模型。 作为替代方法，你可以使编辑器直接处理 `Undo` 命令。
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: fbbeffb8d0ec0ffb8d7532ca117e32afd5d24d9c77aefa3ed4f5b1407fa20aa8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a31fbbc8a0e655418425416ffdcae3aa16810788
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121420975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075315"
 ---
 # <a name="install-third-party-analyzers"></a>安装第三方分析器
 
@@ -70,7 +70,7 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
    扩展已下载。
 
-5. 选择 **"** 确定"关闭对话框，然后关闭所有 Visual Studio以启动 **VSIX 安装程序**。
+5. 选择 **"** 确定"以关闭对话框，然后关闭所有 Visual Studio以启动 **VSIX 安装程序**。
 
    **"VSIX 安装程序**"对话框随即打开。
 

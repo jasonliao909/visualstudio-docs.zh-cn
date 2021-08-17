@@ -1,6 +1,6 @@
 ---
-title: Bitmap 元素 |Microsoft Docs
-description: Bitmap 元素定义位图。 位图是从资源或从文件加载的。 本文包含一个示例。
+title: Bitmap 元素|Microsoft Docs
+description: Bitmap 元素定义位图。 位图从资源或文件中加载。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 260a771157b9463ad0b0484e8fc3464f1b23b84396c3a86d1cb693bf5ea22a74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fcf2b2eb60bfb99708d78424eaf4f084aca1c6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308439"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089766"
 ---
 # <a name="bitmap-element"></a>Bitmap 元素
-定义位图。 位图是从资源或从文件加载的。
+定义位图。 位图从资源或文件中加载。
 
 ## <a name="syntax"></a>语法
 
@@ -37,11 +37,11 @@ ms.locfileid: "121308439"
 
 |属性|说明|
 |---------------|-----------------|
-|GUID|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组相关联。  它应该是位图定义的唯一，不能用于任何其他目的。|
-|Resid 标识|GUID/ID 命令标识符的 ID。 Resid 标识或 href 属性是必需的。<br /><br /> Resid 标识属性是一个整数资源 ID，用于确定在命令表合并期间要加载的位图条带。  加载命令表时，将从同一个模块的资源加载资源 ID 指定的位图。|
-|usedList|如果存在 Resid 标识属性，则为必需。 选择位图条带中的可用图像。|
-|href|位图的路径。 Resid 标识或 href 属性是必需的。<br /><br /> 在包含路径中搜索指定的图像文件，该文件嵌入到生成的二进制文件中。  在命令表合并期间，会复制映像，无需进行额外的资源查找或加载。  如果 usedList 属性不存在，则带中的所有图像都可用。 **注意：**  可以采用多种格式之一提供图像，其中包括 *.bmp*、 *.png* 和 *.gif*。  早期版本的编译器不支持包含部分透明度的 alpha 信息的32位位图映像。 这些版本的解决方法是使用 *.png* 格式。|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|GUID|必需。 GUID/ID 命令标识符的 GUID。<br /><br /> 位图的 guid 属性不与任何 VSPackage 或其他命令组关联。  它应对于位图定义是唯一的，不应用于任何其他目的。|
+|渣 油|GUID/ID 命令标识符的 ID。 resID 或 href 属性是必需的。<br /><br /> resID 属性是一个整数资源 ID，用于确定在命令表合并期间加载的位图条。  加载命令表时，资源 ID 指定的位图会从同一模块的资源加载。|
+|usedList|如果存在 resID 属性，则是必需的。 选择位图条中的可用图像。|
+|href|位图的路径。 resID 或 href 属性是必需的。<br /><br /> 将搜索包含路径，以查找嵌入在生成的二进制文件中的指示图像文件。  在命令表合并期间，将复制映像，并且无需额外的资源查找或加载。  如果 usedList 属性不存在，则条带中所有图像都可用。 **注意：** 图像可能以多种格式之一提供，其中包括.bmp、.png和 *.gif。* ** **  早期版本的编译器不支持具有 alpha 信息的 32 位位图图像，这些图像具有部分透明度信息。 这些版本的解决方法是使用.png *格式。*|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -50,7 +50,7 @@ ms.locfileid: "121308439"
 
 |元素|说明|
 |-------------|-----------------|
-|[位图元素](../extensibility/bitmaps-element.md)|组位图元素。|
+|[Bitmaps 元素](../extensibility/bitmaps-element.md)|对位图元素进行分组。|
 
 ## <a name="example"></a>示例
 
@@ -60,5 +60,5 @@ ms.locfileid: "121308439"
   usedList="1, 2, 3, 4"/>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: add2f353b432d5a7a935a7206ece2113382182ca06aa0755c084fe8123fd7298
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6cd9fe2bee5bfd7dc609cc8c99bdaa4981e29504
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417088"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043422"
 ---
 # <a name="idebugmemorybytes2"></a>IDebugMemoryBytes2
 此接口表示内存的字节数。

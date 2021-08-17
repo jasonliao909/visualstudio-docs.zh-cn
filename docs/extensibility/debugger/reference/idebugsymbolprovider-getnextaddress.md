@@ -1,6 +1,6 @@
 ---
-description: 获取方法中给定调试地址后跟的调试地址。
-title: IDebugSymbolProvider：：GetNextAddress |Microsoft Docs
+description: 获取在方法中跟随给定调试地址的调试地址。
+title: IDebugSymbolProvider：： GetNextAddress |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35016b6b332e1ed4fe81ca784242f1081cb885d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9b1e8e1d954fddae1887e9a2aa488f5ecacbe503547c3b026d4da0294f4aba6d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029627"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121448762"
 ---
 # <a name="idebugsymbolprovidergetnextaddress"></a>IDebugSymbolProvider::GetNextAddress
-获取方法中给定调试地址后跟的调试地址。
+获取在方法中跟随给定调试地址的调试地址。
 
 ## <a name="syntax"></a>语法
 
@@ -47,16 +47,16 @@ int GetNextAddress(
 
 ## <a name="parameters"></a>参数
 `pAddress`\
-[in]给定的调试地址。
+中给定的调试地址。
 
 `fStatementOnly`\
-[in]如果为 TRUE，则将调试地址限制为单个语句。
+中如果为 TRUE，则将调试地址限制为单个语句。
 
 `ppAddress`\
-[out]返回下一个调试地址。
+弄返回下一个调试地址。
 
 ## <a name="return-value"></a>返回值
- 返回有效的 `HRESULT` ，通常为 S_OK。
+ 返回有效的 `HRESULT` ，通常 S_OK。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

@@ -1,6 +1,6 @@
 ---
-title: 在中断模式下单步执行|Microsoft Docs
-description: 了解调试器进入中断模式时发生的过程。 然后，调试器必须分步执行代码。
+title: 中断模式下的单步执行 |Microsoft Docs
+description: 了解调试器处于中断模式时所发生的过程。 然后，调试器必须单步调试代码。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -22,14 +22,14 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121448476"
 ---
-# <a name="stepping-in-break-mode"></a>在中断模式下单步执行
-以下部分介绍调试器进入中断模式并且必须逐步执行代码时发生的过程：
+# <a name="stepping-in-break-mode"></a>中断模式下的单步执行
+以下部分介绍调试器处于中断模式下时所发生的过程，并且必须单步执行代码：
 
 ## <a name="stepping-process"></a>单步执行过程
 
-1. 使用[STEPKIND](../../extensibility/debugger/reference/stepkind.md)和[STEPUNIT](../../extensibility/debugger/reference/stepunit.md)参数调用[IDebugProgram2：：Step](../../extensibility/debugger/reference/idebugprogram2-step.md)以执行步骤。
+1. 调用 [IDebugProgram2：： Step](../../extensibility/debugger/reference/idebugprogram2-step.md) ，并使用 [STEPKIND](../../extensibility/debugger/reference/stepkind.md) 和 [STEPUNIT](../../extensibility/debugger/reference/stepunit.md) 参数执行步骤。
 
-2. 完成此步骤后，发送 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 作为停止事件。
+2. 步骤完成后，发送 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 作为停止事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

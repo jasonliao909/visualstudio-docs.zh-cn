@@ -69,5 +69,5 @@ SCCRTN SccRename(
 ## <a name="remarks"></a>备注
  此函数可用于重命名文件或将其从源代码管理系统中的一个位置移到另一个位置。 源代码管理插件不应尝试访问磁盘上的文件。 IDE 负责重命名本地文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

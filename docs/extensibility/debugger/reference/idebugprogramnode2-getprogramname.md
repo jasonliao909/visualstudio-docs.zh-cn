@@ -1,6 +1,6 @@
 ---
-description: IDebugProgramNode2：： GetProgramName 获取程序的名称。
-title: IDebugProgramNode2：： GetProgramName |Microsoft Docs
+description: IDebugProgramNode2：：GetProgramName 获取程序的名称。
+title: IDebugProgramNode2：：GetProgramName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,16 +43,16 @@ int GetProgramName (
 
 ## <a name="parameters"></a>参数
 `pbstrProgramName`\
-弄返回程序的名称。
+[out]返回程序的名称。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-程序的名称与程序的路径并不相同，但程序的名称可能是这样的路径的一部分。
+程序的名称与程序的路径不同，尽管程序的名称可能是此类路径的一部分。
 
 ## <a name="example"></a>示例
-下面的示例演示如何对 `CProgram` 实现 [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 接口的简单对象实现此方法。 `MakeBstr`函数将指定字符串的副本分配为 BSTR。
+下面的示例演示如何为实现 `CProgram` [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md) 接口的简单对象实现此方法。 `MakeBstr`函数将指定字符串的副本分配为 BSTR。
 
 ```cpp
 HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
@@ -65,5 +65,5 @@ HRESULT CProgram::GetProgramName(BSTR* pbstrProgramName) {
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

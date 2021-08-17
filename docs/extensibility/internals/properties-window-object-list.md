@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7ce39d335d48335408eea192c23bd5a091900a48055dcad0d65671b158b7b6e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ed4b3fc37d4110d6cd6dfd02c2dea503cbee194
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042122"
 ---
 # <a name="properties-window-object-list"></a>属性窗口对象列表
 "属性"窗口中 **的对象** 列表是一个下拉列表，可用于将所选内容更改为一个或多个选定窗口中可用的其他对象。 从此列表中选择其他对象会触发对 的调用，以通知环境已 <xref:Microsoft.VisualStudio.Shell.Interop.ISelectionContainer.SelectObjects%2A> 选择新对象。 然后，"属性 **"** 窗口中显示的信息将更改为显示与新选择的对象关联的属性。

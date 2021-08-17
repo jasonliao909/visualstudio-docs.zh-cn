@@ -1,6 +1,6 @@
 ---
 title: 如何：向工作表添加 XMLMappedRange 控件
-description: 请注意，在将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动将 XmlMappedRange 控件添加到工作表中。
+description: 请注意，当您将 XML 元素映射到 Microsoft Office Excel 中的单元时，Visual Studio 会自动将 XmlMappedRange 控件添加到工作表中。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,17 +13,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 065a904047630d15a8e9ed167a6a4a2764858387
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8fa5b3037b29cf15537215c9bf623c57ac8a119d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106323"
 ---
 # <a name="how-to-add-xmlmappedrange-controls-to-worksheets"></a>如何：向工作表添加 XMLMappedRange 控件
-  将 XML 元素映射到 Microsoft Office Excel 中的单元格时，Visual Studio 会自动将 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控件添加到工作表中。
+  将 XML 元素映射到 Microsoft Office Excel 中的单元时，Visual Studio 会自动将 <xref:Microsoft.Office.Tools.Excel.XmlMappedRange> 控件添加到工作表中。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -32,7 +33,7 @@ ms.locfileid: "99970317"
 
 ## <a name="to-add-an-xmlmappedrange-control-to-a-worksheet"></a>向工作表添加 XMLMappedRange 控件
 
-1. 在 Visual Studio 设计器中打开 Excel 工作簿。
+1. 在 "Visual Studio 设计器" 中打开 Excel 工作簿。
 
 2. 打开要在其中添加控件的工作表。
 
@@ -43,17 +44,17 @@ ms.locfileid: "99970317"
 
      此时将显示 " **XML 源** " 任务窗格。
 
-4. 在 " **Xml 源** " 任务窗格中，单击 " **xml Maps**"。
+4. 在 " **Xml 源**" 任务窗格中，单击 " **xml 地图**。
 
-5. 在 " **XML 映射** " 对话框中，单击 " **添加**"。
+5. 在 " **XML 地图**" 对话框中，单击 "**添加**"。
 
      此时将显示 " **XML 源** " 对话框。
 
 6. 从 " **Xml 源** " 对话框中选择一个 xml 架构，并单击 " **打开**"。
 
-     架构将添加到 " **XML 映射** " 对话框中。
+     架构将添加到 " **XML 地图**" 对话框中。
 
-7. 在 " **XML 映射** " 对话框中，单击 **"确定"**。
+7. 在 " **XML 地图**" 对话框中，单击 **"确定"**。
 
 8. 将 " **XML 源** " 任务窗格中的元素拖到工作表上的单元格中。
 
@@ -62,9 +63,9 @@ ms.locfileid: "99970317"
     > [!NOTE]
     > 如果从 " **XML 源** " 任务窗格中拖动父元素， <xref:Microsoft.Office.Tools.Excel.ListObject> 则会创建一个控件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
+- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [如何：将架构映射到 Visual Studio 内部的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)
+- [如何：将架构映射到 Visual Studio 中的工作表](../vsto/how-to-map-schemas-to-worksheets-inside-visual-studio.md)

@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3754c40ec1142684b5041341b22035eaec06ec8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2cdb6869435acf3a9e059b66492479b12135ad16671a38d9c0c4d7dcf76ff63b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056254"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121388118"
 ---
 # <a name="supporting-editorconfig-for-your-language-service"></a>支持语言服务的 EditorConfig
 
-使用[EditorConfig](https://editorconfig.org/)文件，您可以基于每个项目描述常见文本编辑器选项，如缩进大小。 若要了解有关 Visual Studio 对 EditorConfig 文件的支持的详细信息，请参阅 [使用 EditorConfig 创建可移植的编辑器设置](../ide/create-portable-custom-editor-options.md)。
+使用[EditorConfig](https://editorconfig.org/)文件，您可以基于每个项目描述常见文本编辑器选项，如缩进大小。 若要详细了解 Visual Studio 对 EditorConfig 文件的支持，请参阅[使用 EditorConfig 创建可移植编辑器设置](../ide/create-portable-custom-editor-options.md)。
 
 在大多数情况下，实现 Visual Studio 语言服务时，无需任何其他工作即可支持 EditorConfig 通用属性。 当用户打开文件时，核心编辑器将自动发现并读取 .editorconfig 文件，并设置相应的文本缓冲区和视图选项。 但是，对于选项卡和空格之类的编辑，某些语言服务选择使用合适的上下文文本视图选项，而不是使用全局设置。 在这些情况下，必须更新语言服务以支持 EditorConfig 文件。
 
@@ -45,7 +46,7 @@ Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uIndentSize<br/>Micro
 -------|--------
 Microsoft.VisualStudio.TextManager.Interop.LANGPREFERENCES.uTabSize<br/>Microsoft.VisualStudio.Package.LanguagePreferences.InsertTabs.TabSize|textBufferOptions.GetOptionValue(DefaultOptions.TabSizeOptionId)<br/>textView.Options.GetOptionValue(DefaultOptions.TabSizeOptionId)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 EditorConfig 创建可移植编辑器设置](../ide/create-portable-custom-editor-options.md)
 - [扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)

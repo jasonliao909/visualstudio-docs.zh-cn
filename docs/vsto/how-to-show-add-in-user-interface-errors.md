@@ -1,6 +1,6 @@
 ---
 title: 如何：显示外接程序用户界面错误
-description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Office 应用程序中显示 VTSO 外接程序用户界面错误。
+description: 了解如何使用 Visual Studio 以编程方式在应用程序中显示 VTSO 外接程序Microsoft Office错误。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 29e07e49d901b44b534d9d274e5535be663e97ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90bb6c458d53e293cd5128e6b2b461082fd1eeb5bda593fb18a5b74f5d7867e3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927673"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384127"
 ---
 # <a name="how-to-show-add-in-user-interface-errors"></a>如何：显示外接程序用户界面错误
-  默认情况下，如果 VSTO 外接程序尝试操作 Microsoft Office 用户界面 (UI) 并失败，则不会显示错误消息。 但是，你可以配置 Microsoft Office 应用程序以显示与 UI 相关的错误的消息。 您可以使用这些消息来帮助确定自定义功能区未出现的原因，或出现功能区但不显示控件的原因。
+  默认情况下，如果VSTO外接程序尝试在 UI Microsoft Office用户界面 (操作) 失败，则不显示错误消息。 但是，你可以配置 Microsoft Office 应用程序以显示与 UI 相关的错误的消息。 可以使用这些消息来帮助确定自定义功能区不显示的原因，或者功能区出现但不显示控件的原因。
 
  [!INCLUDE[appliesto_ribbon](../vsto/includes/appliesto-ribbon-md.md)]
 
@@ -44,8 +45,8 @@ ms.locfileid: "99927673"
     > [!NOTE]
     > 对于 Outlook，“显示 VSTO 外接程序用户界面错误”  复选框位于细节窗格的“开发工具”  部分。 对于其他应用程序，该复选框位于细节窗格的“常规”  部分。
 
-## <a name="see-also"></a>另请参阅
-- [Office UI 自定义](../vsto/office-ui-customization.md)
-- [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
+## <a name="see-also"></a>请参阅
+- [OfficeUI 自定义](../vsto/office-ui-customization.md)
+- [创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [操作窗格概述](../vsto/actions-pane-overview.md)

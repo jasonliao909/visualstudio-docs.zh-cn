@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a55d9e934f85c6be2dc3822dc8373d8cbcacf40f1abe2eff5536fbabfb5aed0e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ab3857e9a668169345c780bb7481cbcccb66a7e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293607"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043773"
 ---
 # <a name="com-constants-in-managed-code"></a>托管代码中的 COM 常量
 托管包框架 (MPF) 使一些标准 COM 常量可用于托管代码。 下面列出了这些常量供参考。
