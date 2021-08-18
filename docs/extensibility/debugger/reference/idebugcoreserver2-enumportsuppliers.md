@@ -11,17 +11,18 @@ ms.assetid: ce0c90e4-8e02-4b08-b558-7677fb2c88f7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7e608bd2dd20de6ac8e519301e8502ee0dbec292
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a78646a09c1b420921db0bd2c96ce280967102c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144959"
 ---
 # <a name="idebugcoreserver2enumportsuppliers"></a>IDebugCoreServer2::EnumPortSuppliers
 检索所有可用端口供应商的列表。
@@ -47,6 +48,6 @@ int EnumPortSuppliers(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IEnumDebugPortSuppliers2](../../../extensibility/debugger/reference/ienumdebugportsuppliers2.md)

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cbe0c1544cb2d99b8958385affe1d972d5dc71c5f7a8192adcd63257f1cacd71
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 27efa4a1191840cc312700c3361b7c35ea9d251b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268425"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130697"
 ---
 # <a name="collaborative-development-of-office-solutions"></a>协作开发 Office 解决方案
   多个开发人员可以采用与在其他 Visual Studio 项目上协作的相同方式来处理 Office 项目。 Visual Studio 在每台计算机上正确地查找 Microsoft Office 安装，即使 Office 安装在不同的位置。 但是，需要注意一些重要的注意事项。
@@ -45,7 +45,7 @@ ms.locfileid: "121268425"
 
  在生成时自动生成的临时证书不受密码保护。 证书包含开发人员的登录名和其他个人信息。 如果部署由临时证书签名的自定义项，则其他人可以访问此信息。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [构建 Office 解决方案](../vsto/building-office-solutions.md)

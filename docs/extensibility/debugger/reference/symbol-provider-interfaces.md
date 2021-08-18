@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 14cb7be76bc941fd04eba217f0708ae94817821034b0dd1999ce194e090105a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c686b87346487d452a166d41b94a4a8b17d3e82d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117964"
 ---
 # <a name="symbol-provider-interfaces"></a>符号提供程序接口
 下面是 的符号处理接口 [!INCLUDE[vsipsdk](../../../extensibility/includes/vsipsdk_md.md)] 。
 
-## <a name="discussion"></a>讨论区
+## <a name="discussion"></a>讨论 (Discussion)
  这些接口用于在中断模式期间计算调用堆栈中的变量。 它们仅针对 SP (公共语言运行时) 。
 
 |接口|实现者|说明|

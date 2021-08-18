@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b99d32cb3ab5fbef859ea6d9b460b95426ac9149ca905b7058d19bf6a8326ef9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6537f5fe122dd0d5093893efedf121de1393fbbf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145869"
 ---
 # <a name="bp_res_data_flags"></a>BP_RES_DATA_FLAGS
 指定是在硬件中模拟还是实现数据断点。

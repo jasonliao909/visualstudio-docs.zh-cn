@@ -1,6 +1,6 @@
 ---
-description: 获取承载此程序的进程正在其上运行的计算机的名称。
-title: IDebugProgramHost2：： GetHostMachineName |Microsoft Docs
+description: 获取运行此程序的进程所运行计算机的名称。
+title: IDebugProgramHost2：：GetHostMachineName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9b94c4a8478036c27ec964ef7f0d197bf205fe4d2b247d9c6d5a4c252101dd6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ee45f9c46ed9bbab870bafcdfee306ffd4f2957
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132595"
 ---
 # <a name="idebugprogramhost2gethostmachinename"></a>IDebugProgramHost2::GetHostMachineName
-获取承载此程序的进程正在其上运行的计算机的名称。
+获取运行此程序的进程所运行计算机的名称。
 
 ## <a name="syntax"></a>语法
 
@@ -43,10 +43,10 @@ int GetHostMachineName(
 
 ## <a name="parameters"></a>参数
 `pbstrHostMachineName`\
-弄返回计算机的名称。
+[out]返回计算机的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)

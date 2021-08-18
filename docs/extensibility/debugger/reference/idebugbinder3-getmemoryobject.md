@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93ee6fda48ecb6cabb2d0a86204ea522491628c4d51f8e86a10c10df183e0d0d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eeffc3d63afe3a950cff6da04c777b7a18357af0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145310"
 ---
 # <a name="idebugbinder3getmemoryobject"></a>IDebugBinder3::GetMemoryObject
 此方法检索一个内存对象，该对象表示此 对象绑定到的内存。
@@ -58,7 +58,7 @@ int GetMemoryObject(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)

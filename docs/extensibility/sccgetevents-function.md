@@ -11,14 +11,15 @@ ms.assetid: 32f8147d-6dcc-465e-b07b-42da5824f9b0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9438ac10301e2da43b26a88575e44a8ad2c0bf82
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2a5c382b7c7a5bd48d1b2db22a4c0469d0f16b2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901053"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144439"
 ---
 # <a name="sccgetevents-function"></a>SccGetEvents 函数
 此函数检索排队状态事件。
@@ -54,7 +55,7 @@ SCCRTN SccGetEvents (
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|获取事件成功。|
 |SCC_E_OPNOTSUPPORTED|不支持此函数。|
@@ -65,6 +66,6 @@ SCCRTN SccGetEvents (
 
  如果没有要报告的状态更新，则源代码管理插件会将空字符串存储在指向的缓冲区中 `lpFileName` 。 否则，该插件存储状态信息已更改的文件的完整路径名称，并 ([文件状态代码](../extensibility/file-status-code-enumerator.md)) 中详细说明的值之一返回相应的状态代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [文件状态代码](../extensibility/file-status-code-enumerator.md)

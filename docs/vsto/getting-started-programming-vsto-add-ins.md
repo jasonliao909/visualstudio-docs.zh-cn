@@ -18,16 +18,16 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f3dd42fa4356fc298a1b6e267554b1e9cc37ff1884d65cb9054fcda8b3e12937
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 65ccd3385ca33e098eb5cec073ea56fd742e4d65
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121331346"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130515"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>外接程序VSTO编程入门
 > [!IMPORTANT]
-> VSTO依赖于[.NET Framework。](https://docs.microsoft.com/dotnet/framework/get-started/overview) COM 外接程序也可使用 .NET Framework。 Office无法使用 .NET Core 和[.NET 5+](https://docs.microsoft.com/dotnet/core/dotnet-five)（最新版本的 .NET）创建外接程序。 这是因为 .NET Core/.NET 5+ 不能与同一进程中.NET Framework，并且可能会导致外接程序加载失败。 可以继续使用 .NET Framework 为 VSTO 和 COM 外接程序Office。 Microsoft 不会更新 VSTO COM 外接程序平台以使用 .NET Core 或 .NET 5+。 可以利用 .NET Core 和 .NET 5+（包括 ASP.NET Core）来创建 Web 外接程序 Office[服务器端](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)。
+> VSTO依赖于[.NET Framework。](https://docs.microsoft.com/dotnet/framework/get-started/overview) COM 外接程序也可使用 .NET Framework。 Office无法使用 .NET Core 和[.NET 5+](https://docs.microsoft.com/dotnet/core/dotnet-five)（最新版本的 .NET）创建外接程序。 这是因为 .NET Core/.NET 5+ 不能与同一进程中.NET Framework，并且可能会导致外接程序加载失败。 可以继续使用 .NET Framework 为VSTO和 COM 外接程序编写Office。 Microsoft 不会更新 VSTO COM 外接程序平台以使用 .NET Core 或 .NET 5+。 可以利用 .NET Core 和 .NET 5+（包括 ASP.NET Core）来创建 Web 外接程序 Office[服务器端](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)。
 
   你可以使用 VSTO 外接程序来实现 Microsoft Office 应用程序自动化、扩展应用程序的功能，以及自定义应用程序的用户界面 (UI)。 有关外接程序VSTO与可以使用 Visual Studio 创建的其他类型的 Office 解决方案相比，请参阅 Office[解决方案开发&#40;VSTO&#41;。 ](../vsto/office-solutions-development-overview-vsto.md)
 
@@ -61,7 +61,7 @@ ms.locfileid: "121331346"
 - [Visio对象模型概述](../vsto/visio-object-model-overview.md)
 
 ## <a name="customize-the-user-interface-of-applications"></a>自定义应用程序的用户界面
- 在外接程序中，有几种不同的方式来自定义主机VSTO UI：
+ 在外接程序中，有几种不同的方法可以自定义主机VSTO UI：
 
 - 对于 Excel 和 Word，可以向文档中添加托管控件。 有关详细信息，请参阅扩展[Word 文档和Excel运行时VSTO外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
@@ -80,19 +80,19 @@ ms.locfileid: "121331346"
 
 - [演练：为 VSTO 创建第一个Excel](../vsto/walkthrough-creating-your-first-vsto-add-in-for-excel.md)
 
-- [演练：为 VSTO Add-In 创建Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
+- [演练：创建第一个VSTO Add-In应用Outlook](../vsto/walkthrough-creating-your-first-vsto-add-in-for-outlook.md)
 
 - [演练：为VSTO创建第一个PowerPoint](../vsto/walkthrough-creating-your-first-vsto-add-in-for-powerpoint.md)
 
-- [演练：为 VSTO 创建第一个Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
+- [演练：为VSTO创建第一个Project](../vsto/walkthrough-creating-your-first-vsto-add-in-for-project.md)
 
 - [演练：为 Word VSTO第一个外接程序](../vsto/walkthrough-creating-your-first-vsto-add-in-for-word.md)
 
   这些演练介绍 Visual Studio 中的 Office开发工具和 VSTO 外接程序的编程模型。
 
-  有关演练项目中的一些常见任务的主题Office，请参阅编程中的[Office任务](../vsto/common-tasks-in-office-programming.md)。
+  有关演练项目中的一些常见任务的主题Office，请参阅编程 中的[Office任务](../vsto/common-tasks-in-office-programming.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：在 Office 创建Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [开始&#40;Office开发Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [在解决方案中Office代码](../vsto/writing-code-in-office-solutions.md)

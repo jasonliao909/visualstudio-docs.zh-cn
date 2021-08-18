@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6b69df586154bdbaf242463a5292232e4ba137201d8b8e169015fed2ebf3fe9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2980792572a6ac9c2d833a0fef62350db968d00
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402254"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132582"
 ---
 # <a name="idebugreference2getderivedmostreference"></a>IDebugReference2::GetDerivedMostReference
 获取引用的派生程度最高的引用。 保留供将来使用。

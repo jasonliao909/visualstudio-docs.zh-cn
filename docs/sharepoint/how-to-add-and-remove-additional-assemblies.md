@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: aa1017ec2dd27ddb46281a6f8c047641f4117b9f39818ed091f5174d91e79240
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 113b881759f523d7b2f583fb33b25d4186ff30e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228709"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131061"
 ---
 # <a name="how-to-add-and-remove-additional-assemblies"></a>如何：添加和移除附加程序集
   如果 SharePoint 包依赖于其他程序集以获取功能或数据，则可以将程序集添加到解决方案包 ( .wsp) 。 这样，SharePoint 服务器就可以确保使用包安装自定义程序集。

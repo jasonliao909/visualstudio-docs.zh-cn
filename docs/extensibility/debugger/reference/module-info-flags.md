@@ -11,17 +11,18 @@ ms.assetid: e22d3723-b4d4-4524-8a2f-3adb55bbd273
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bfe1639ea187c6f03327a2278aaa9f849309a2af
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 812c4292e388ee1644023e9519d03c56038fd57e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118107"
 ---
 # <a name="module_info_flags"></a>MODULE_INFO_FLAGS
 指定模块的符号状态。
@@ -43,17 +44,17 @@ public enum enum_MODULE_INFO_FLAGS {
 
 ## <a name="fields"></a>字段
  `MIF_SYMBOLS_LOADED`\
- 模块至少加载了一组符号 (否则) 不加载任何符号。
+ 模块加载了至少一组符号 (否则未加载任何) 。
 
 ## <a name="remarks"></a>备注
- 此值由 [GetSymbolSearchInfo](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) 方法返回。
+ 此值由 [GetSymbolSearchInfo 方法](../../../extensibility/debugger/reference/idebugsymbolsearchevent2-getsymbolsearchinfo.md) 返回。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

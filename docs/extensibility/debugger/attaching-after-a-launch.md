@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01043ad1f04ddb36acc50ac0d3a36247e8461a23e420ef70366f4625506ee4e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3f16df10717ae0d13ac4add90d25ea5be7d3208c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111848"
 ---
 # <a name="attach-after-a-launch"></a>启动后附加
 在程序启动后，调试会话已准备好将调试引擎附加 (DE) 。
