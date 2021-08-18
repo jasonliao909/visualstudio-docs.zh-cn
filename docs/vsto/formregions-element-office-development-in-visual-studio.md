@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e1a4439f5c1dab78ce32c553a4bee98db6fa7da4f072152c3a046ba819222128
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e880590846d30c01e8f3f1925445be6c8431c0f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130541"
 ---
 # <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions &gt; 元素 (Office开发Visual Studio) 
   `formRegions`命名空间的 `vstov4` 元素包含Microsoft Office Outlook外接程序关联的窗体VSTO区域。
@@ -67,7 +67,7 @@ ms.locfileid: "121440859"
 </vstov4:formRegions>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
 - [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)

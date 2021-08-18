@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 76485d62ce3b2bcc8bc646910eaba738e306919dd2ab545ee366d8869652ad57
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7efc545ac298830d2dd3a5ce85649941eb16fdfe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133362"
 ---
 # <a name="create-custom-project-and-item-templates"></a>创建自定义项目和项模板
 

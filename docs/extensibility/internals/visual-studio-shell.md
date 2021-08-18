@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d2d79a36acdc7c210b81b5215d242d95adb947e8dcf17aec23a62bf4e05708a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7f57defce4eb9b46185f0d266822b5f4a0d2e719
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375417"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117639"
 ---
 # <a name="visual-studio-shell"></a>Visual Studio Shell
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Shell 是中的集成主代理 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 Shell 提供使 Vspackage 共享公共服务所需的功能。 由于的体系结构目标 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是在 vspackage 中背心主要功能，因此 shell 是一个框架，用于提供基本功能，并支持其组件 vspackage 间的跨通信。
@@ -81,7 +81,7 @@ ms.locfileid: "121375417"
 
 - **工具箱**
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsShell>

@@ -11,17 +11,18 @@ ms.assetid: 2c18889d-074a-4b95-87b4-bf1a067f44ed
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fd7665af4f88c695dd74b51293da3eced3861230
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 35139838a879aa742ded8d3aac2b57cd71500821
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064885"
 ---
 # <a name="idebugaddress2getprocessid"></a>IDebugAddress2::GetProcessID
 检索拥有此 [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md) 接口所表示的对象的进程的 ID。
@@ -47,5 +48,5 @@ int GetProcessID (
 ## <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugAddress2](../../../extensibility/debugger/reference/idebugaddress2.md)

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e06655db17b3a84fa0d037762c602a45517bdde5f59cfb865a27cfd29d89a5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e862500f8e8518cc4f2b47402544431ef6706c25
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061436"
 ---
 # <a name="code-generation-and-t4-text-templates"></a>代码生成和 T4 文本模板
 

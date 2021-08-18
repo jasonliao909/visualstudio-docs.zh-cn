@@ -1,6 +1,6 @@
 ---
 title: Outlook 窗体区域中的自定义操作
-description: 了解操作显示按钮（如答复和全部答复）如何使用户能够响应 Microsoft Office Outlook 项目。
+description: 了解操作显示按钮（如答复和全部答复）如何使用户能够响应 Microsoft Office Outlook 项。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -13,24 +13,25 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1f95c5bfcd0dda73b3cd3392c5a8b0bb7384bd9f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75fcc83dc06a9503b5ab1571315dc95028734446
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99947875"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130684"
 ---
 # <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
-  操作显示使用户能够响应 Microsoft Office Outlook 项目的按钮。 例如，若要对邮件项做出响应，用户可单击 " **答复**"、" **全部答复**" 或 " **转发** " 操作按钮。 其中每个操作都将创建一个新的邮件项，并使用原始项中的信息填充该项的字段。
+  操作显示使用户能够响应 Microsoft Office Outlook 项的按钮。 例如，若要对邮件项做出响应，用户可单击 " **答复**"、" **全部答复**" 或 " **转发** " 操作按钮。 其中每个操作都将创建一个新的邮件项，并使用原始项中的信息填充该项的字段。
 
- 你可以创建一个自定义操作，该操作将打开任何类型的 Outlook 项。 例如，你可以添加一个打开新约会或任务项的自定义操作。 设置自定义操作的属性，或使用自定义代码填充新项的字段。 自定义操作显示在 Outlook 检查器窗口中打开的项的 " **自定义操作** " 下拉菜单中。
+ 你可以创建一个自定义操作，该操作将打开任何类型的 Outlook 项。 例如，你可以添加一个打开新约会或任务项的自定义操作。 设置自定义操作的属性，或使用自定义代码填充新项的字段。 自定义操作显示在 Outlook 检查器窗口中打开的项的 "**自定义操作**" 下拉菜单中。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
 ## <a name="add-custom-actions-to-a-form-region"></a>向窗体区域添加自定义操作
- 若要向窗体区域添加自定义操作，请使用 " **自定义操作** " 对话框。 您可以通过 **解决方案资源管理器** 在 "属性" 窗口中选择窗体区域，展开 "**属性" 窗口** 中的 "**清单**" 节点，选择 " **CustomActions** " 属性，然后单击省略号按钮 (![ASP.NET mobile 设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"") "，来打开"**自定义操作**"对话框。
+ 若要向窗体区域添加自定义操作，请使用 " **自定义操作** " 对话框。 您可以通过 **解决方案资源管理器** 在 "属性" 窗口中选择窗体区域，展开 "**属性" 窗口** 中的 "**清单**" 节点，选择 **CustomActions** 属性，然后单击省略号按钮 (![ASP.NET 移动设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"省略号) 来打开"**自定义操作**"对话框。
 
  您可以使用 " **自定义操作** " 对话框指定 *目标窗体*。 目标窗体是用户执行自定义操作时显示的窗体。
 
@@ -53,7 +54,7 @@ ms.locfileid: "99947875"
 ## <a name="customize-a-custom-action-at-run-time"></a>在运行时自定义自定义操作
  你还可以使用代码将行为添加到自定义操作。 例如，你可以添加采用电子邮件收件人名称的代码，并在新约会项中将这些姓名添加为与会者。 为此，请处理[MailItem 对象](/office/vba/api/Outlook.MailItem)的[CustomAction](/office/vba/api/Outlook.MailItem.CustomAction)事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

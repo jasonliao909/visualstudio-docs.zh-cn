@@ -1,5 +1,5 @@
 ---
-title: 演练：创建基本网站定义项目 |Microsoft Docs
+title: 演练：创建基本网站定义 Project |Microsoft Docs
 description: 在此 SharePoint 演练中，请参阅如何创建包含具有某些控件的可视 Web 部件的基本网站定义。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a505ff059b347c6adbef15a8fe8bcfe7b274eaa4
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2d8de9b5da1a9bff70b8332b9b6804295996af5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106218017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130801"
 ---
 # <a name="walkthrough-create-a-basic-site-definition-project"></a>演练：创建基本网站定义项目
   本演练演示如何创建包含可视 Web 部件的基本网站定义，其中包含某些控件。 为清楚起见，你创建的可视 Web 部件只有几个控件。 不过，您可以创建更复杂的 SharePoint 站点定义，这些定义包含更多功能。
@@ -49,21 +50,21 @@ ms.locfileid: "106218017"
 
 #### <a name="to-create-a-site-definition-project"></a>创建网站定义项目
 
-1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上选择 "**文件**" "  >  **新建项目**"。
+1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。 如果 IDE 设置为使用 Visual Basic 开发设置，请在菜单栏上选择 "**文件**" "  >  **新建 Project**"。
 
     此时将出现“新建项目”对话框。
 
 2. 展开 " **Visual c #** " 节点或 **Visual Basic** "节点，展开" **SharePoint** "节点，然后选择" **2010** "节点。
 
-3. 在 " **模板** " 列表中，选择 " **SharePoint 2010 项目** " 模板。
+3. 在 "**模板**" 列表中，选择 **SharePoint 2010 Project** 模板。
 
 4. 在 " **名称** " 框中，输入 **TestSiteDef**，然后选择 " **确定"** 按钮。
 
-    " **SharePoint 自定义向导** " 随即出现。
+    此时将显示 " **SharePoint 自定义向导**"。
 
-5. 在 " **指定用于调试的站点和安全级别** " 页上，输入要在其中调试站点定义的 SharePoint 站点的 URL，或使用 (Http://<em>System Name</em>/) 的默认位置。
+5. 在 "**指定用于调试的站点和安全级别**" 页上，输入要在其中调试站点定义的 SharePoint 站点的 URL，或使用 (http://<em>System Name</em>/) 的默认位置。
 
-6. 在 " **此 SharePoint 解决方案的信任级别是什么？** " 部分中，选择 " **部署为场解决方案** " 选项按钮。
+6. 在 "**此 SharePoint 解决方案的信任级别是什么？** " 部分中，选择 "**部署为场解决方案**" 选项按钮。
 
     所有站点定义项目都必须部署为场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅 [沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。
 
@@ -71,9 +72,9 @@ ms.locfileid: "106218017"
 
     项目将显示在 **解决方案资源管理器** 中。
 
-8. 在 **解决方案资源管理器** 中，选择 "项目" 节点，然后在菜单栏上选择 "**项目**" "  >  **添加新项**"。
+8. 在 **解决方案资源管理器** 中，选择 "项目" 节点，然后在菜单栏上选择 " **Project**  >  **添加新项**"。
 
-9. 在 " **Visual c #** " 或 " **Visual Basic** 下，展开" **SharePoint** "节点，然后选择" **2010** "节点。
+9. 在 " **Visual c #** " 或 " **Visual Basic**" 下，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 
 10. 在 " **模板** " 窗格中，选择 " **站点定义** " 模板，将 " **名称** " 保留为 " **SiteDefinition1**"，然后选择 " **添加** " 按钮。
 
@@ -84,7 +85,7 @@ ms.locfileid: "106218017"
 
 1. 在 **解决方案资源管理器** 中，选择 " **显示所有文件** " 按钮。
 
-2. 选择 " **SiteDefinition1** " 项目节点，然后在菜单栏上选择 "**项目**" "  >  **添加新项**"。
+2. 选择 " **SiteDefinition1** " 项目节点，然后在菜单栏上选择 Project "   >  **添加新项**"。
 
      “添加新项”  对话框随即出现。
 
@@ -153,7 +154,7 @@ ms.locfileid: "106218017"
 
 - 选择 F5。
 
-     Visual Studio 将编译代码、添加其功能、将所有文件打包到 SharePoint 解决方案 (WSP) 文件中，并将 WSP 文件部署到 SharePoint Server。 然后，SharePoint 将安装这些文件，然后激活这些功能。
+     Visual Studio 编译代码、添加其功能、将所有文件打包到 SharePoint 解决方案 (WSP) 文件中，并将 wsp 文件部署到 SharePoint Server。 然后 SharePoint 安装这些文件，然后激活这些功能。
 
 ## <a name="create-a-site-based-on-the-site-definition"></a>基于站点定义创建站点
  接下来，使用新的站点定义创建站点。
@@ -166,7 +167,7 @@ ms.locfileid: "106218017"
 
 3. 在 "**网站地址**" 部分的 " **URL 名称**" 框中，输入 **mynewsite** 。
 
-4. 在 " **模板** " 部分中，选择 " **SharePoint 自定义** " 选项卡。
+4. 在 "**模板**" 部分，选择 " **SharePoint 自定义** 选项卡。
 
 5. 在 " **选择模板** " 列表中，选择 " **SiteDefinition1**"。
 
@@ -183,6 +184,6 @@ ms.locfileid: "106218017"
 
      该文本显示在按钮右侧的标签中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

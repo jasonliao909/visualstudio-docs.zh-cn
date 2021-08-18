@@ -11,17 +11,18 @@ ms.assetid: cf34583b-6530-4dcc-89f8-eb27e4e8d594
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 84d6e807e3be6d0fbdaa94834fbc8cad37f8e4d2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bbb962a31061c24fc9b51e56b0b5c63c25f2a27a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088076"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127306"
 ---
 # <a name="idebugcustomattributegetattributebytes"></a>IDebugCustomAttribute::GetAttributeBytes
 获取作为字节 blob 的属性信息。
@@ -57,5 +58,5 @@ int GetAttributeBytes(
 
  属性 bytes 表示自定义属性的原始数据。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

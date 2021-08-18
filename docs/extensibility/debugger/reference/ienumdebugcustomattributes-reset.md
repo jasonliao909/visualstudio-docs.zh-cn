@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6bf9e2d4562fe3c0245997f861dff2ed7ad319f4f4a6bdbe778d8d0def3e5f76
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 42fd433034469bfe813209e7eed011d3368a04c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152921"
 ---
 # <a name="ienumdebugcustomattributesreset"></a>IEnumDebugCustomAttributes::Reset
 将枚举序列重置到开头。

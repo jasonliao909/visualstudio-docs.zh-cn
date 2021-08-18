@@ -1,6 +1,6 @@
 ---
-title: 交互模式Visual Studio |Microsoft Docs
-description: 了解在生成新应用功能时可以使用的常见交互模式Visual Studio。
+title: 应用程序交互Visual Studio |Microsoft Docs
+description: 了解在生成新特性时可使用的常见交互模式库Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 05/13/2020
 ms.topic: reference
@@ -11,18 +11,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e47879db77ebe5888291e9c5b3b622ab66f85461d1993df670c5c2b22c567d3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5bc1d93d4b99b99a2a833d3301f32a5005d6dda3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152037"
 ---
 # <a name="interaction-patterns-for-visual-studio"></a>Visual Studio 的交互模式
 ## <a name="overview"></a>概述
  一般而言，设计模式是设计的核心，可在特定情况下应用，以解决类似约束集的问题。 特性和系统设计器使用这些设计模式作为起点，然后可以适应其特定情况。
 
- Visual Studio具有一个常见交互模式库，在生成新功能时，应考虑这些模式。 设计模式有两个核心上下文：Visual Studio 客户端 (devenv) 和 GitHub Codespaces (以前Visual Studio Online) 。 对于一些设计问题，存在一种在所有情况下都效果良好的通用模式。 但是，在许多情况下，对于浏览器内呈现的 UI 和托管在客户端应用程序上的 UI，解决方案可能有所不同。
+ Visual Studio一个常用交互模式库，在生成新功能时，应考虑这些模式。 设计模式有两个核心上下文：Visual Studio 客户端 (devenv) 和 GitHub Codespaces (之前Visual Studio Online) 。 对于一些设计问题，存在一种在所有情况下都效果良好的通用模式。 但是，在许多情况下，对于浏览器内呈现的 UI 和托管在客户端应用程序上的 UI，解决方案可能有所不同。
 
 ### <a name="visual-studio-client-pattern-types"></a>Visual Studio客户端模式类型
 
@@ -54,7 +54,7 @@ ms.locfileid: "121375125"
 ## <a name="common-control-patterns"></a>常见控件模式
  控件模式主要与各个控件的行为方式有关。 这是一致性最重要的一方面。
 
- 应用程序中的最常见Visual Studio应遵循桌面Windows指南。 我们的指南仅包括需要通过特定于 Visual Studio 的交互来增强常见约定的区域，或我们完全取代准则的位置，以便定制 Visual Studio 以满足复杂用户的需求。
+ Visual Studio中的最常见控件应遵循桌面Windows指南。 我们的指南仅包括需要通过特定于 Visual Studio 的交互来增强常见约定的区域，或我们完全取代准则的位置，以便定制 Visual Studio 以满足复杂用户的需求。
 
 - [Visual Studio 的公共控件模式](../../extensibility/ux-guidelines/common-control-patterns-for-visual-studio.md)
 

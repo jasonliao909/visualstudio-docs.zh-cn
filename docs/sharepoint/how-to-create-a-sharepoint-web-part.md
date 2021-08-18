@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b5b698547bf74553e3a2e37c1e3f6d4c9d08a0cc36bb165797eb7c6413975b18
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad3761012732f6191d40bfdf47da84221b78209e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130983"
 ---
 # <a name="how-to-create-a-sharepoint-web-part"></a>如何：创建 SharePoint web 部件
   您可以通过将 **web 部件** 项添加到任何 SharePoint 项目，然后编辑 web 部件的代码文件或使用设计器来创建和自定义 web 部件。 有关详细信息，请参阅[如何：使用设计器创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)。

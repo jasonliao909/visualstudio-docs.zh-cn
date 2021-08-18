@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5eb966ef49d4de7533b9022c37113b05a46fa42b7e985a36086215a445e7b406
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e6df11b81a48a95d9c401ff801be548923c6f52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132270"
 ---
 # <a name="selection-context-objects"></a>选择上下文对象
 IDE (集成) 使用全局选择上下文对象来确定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 应在 IDE 中显示的内容。 IDE 中的每个窗口都可以将其自己的选择上下文对象推送到全局选择上下文。 当窗口具有焦点时，IDE 使用窗口中的值更新全局选择上下文。 有关详细信息，请参阅 [向用户反馈](../../extensibility/internals/feedback-to-the-user.md)。
@@ -42,7 +42,7 @@ IDE (集成) 使用全局选择上下文对象来确定 [!INCLUDE[vsprvs](../../
 
 3. VSPackage 通过执行更新层次结构、重新激活工具或其他类似任务等活动来处理它接收的事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackSelectionEx>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection>
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)

@@ -11,17 +11,18 @@ ms.assetid: 2d8b78f6-0aef-4d79-809a-cff9b2c24659
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a76e051e146985338564d497323b6232b35a4a1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0042109e1d71506117f2e8029d8eef6065703f02
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079847"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125304"
 ---
 # <a name="metadata_type"></a>METADATA_TYPE
 此结构指定了来自元数据的字段类型的相关信息。
@@ -59,7 +60,7 @@ public struct METADATA_TYPE {
 ## <a name="remarks"></a>备注
  当结构的[](../../../extensibility/debugger/reference/type-info.md) `dwKind` 字段 `TYPE_INFO` 设置为 `TYPE_KIND_METADATA` 从[dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)枚举) 中的值 (时，此结构显示为 TYPE_INFO 结构中联合的一部分。
 
- `tokClass`该值是唯一标识某个类型的元数据标记。 有关如何解释元数据标记 ID 的上限的详细信息，请参阅 `CorTokenType` .NET FRAMEWORK SDK 中 corhdr.h 文件中的枚举。
+ `tokClass`该值是唯一标识某个类型的元数据标记。 有关如何解释元数据标记 ID 的上限的详细信息，请参阅 `CorTokenType` .NET Framework SDK 中 corhdr.h 文件中的枚举。
 
 ## <a name="requirements"></a>要求
  标头： sh。h
@@ -68,7 +69,7 @@ public struct METADATA_TYPE {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)

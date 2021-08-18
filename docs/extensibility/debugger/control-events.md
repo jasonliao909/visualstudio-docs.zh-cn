@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5fe0f3d7bce5d7e29a87ec45da3968f65299254115b64ad16d16da6a665d03d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7ca8f78172613a41a6864490bedd99fc1f32393c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111770"
 ---
 # <a name="control-events"></a>控制事件
 必须在程序的受控执行期间发送事件。 所有事件都是使用 [IDebugEvent2](../../extensibility/debugger/reference/idebugevent2.md) 接口发送的，并且具有要求实现 [IDebugEvent2：：GetAttributes](../../extensibility/debugger/reference/idebugevent2-getattributes.md) 方法的属性。
@@ -40,5 +40,5 @@ ms.locfileid: "121262953"
 
   若要让引擎编写字符串样式的输出，必须实现 [IDebugOutputStringEvent2：：GetString](../../extensibility/debugger/reference/idebugoutputstringevent2-getstring.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dede0cad4da45ccb5df4fe528214f4e0e22d2cdc9d5fe472a41be544e248c1cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 47acaa5d1776bd35fd6c418dab9abd3158b6ac8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132829"
 ---
 # <a name="idebugprocess2"></a>IDebugProcess2
 此接口表示在端口上运行的进程。 如果端口是本地端口，则 `IDebugProcess2` 通常表示本地计算机上的物理进程。
@@ -36,7 +36,7 @@ IDebugProcess2 : IUnknown
  如果调试引擎支持通过 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)启动程序，调试引擎也会实现此接口。
 
 ## <a name="notes-for-callers"></a>调用方说明
- 此接口主要由 SDM (调试管理器) ，以便与此过程中标识的一组程序进行交互。
+ 此接口主要由会话调试管理器 (SDM) ，以便与此过程中标识的一组程序进行交互。
 
  调用 [GetProcess](../../../extensibility/debugger/reference/idebugprogram2-getprocess.md) 或 [GetProcess](../../../extensibility/debugger/reference/idebugport2-getprocess.md) 获取此接口。 此接口也通过调用 返回 `IDebugEngineLaunch2::LaunchSuspended` 。
 

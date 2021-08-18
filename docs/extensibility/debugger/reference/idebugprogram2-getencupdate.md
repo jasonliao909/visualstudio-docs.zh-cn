@@ -11,17 +11,18 @@ ms.assetid: 9832aac8-6320-4fd8-91dd-2a0852febb00
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6d6b60c8b17a8db1420222a7242164ce1c0eedd1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 9d124a1cd00f999c41bfc5259183658aada84696
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105075921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132751"
 ---
 # <a name="idebugprogram2getencupdate"></a>IDebugProgram2::GetENCUpdate
 此方法获取此程序的 "编辑并继续" (ENC) update。 自定义调试引擎总是返回 `E_NOTIMPL` 。
@@ -50,5 +51,5 @@ int GetENCUpdate(
 > [!NOTE]
 > 自定义调试引擎应总是返回 `E_NOTIMPL` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

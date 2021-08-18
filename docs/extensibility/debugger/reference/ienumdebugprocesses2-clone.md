@@ -11,17 +11,18 @@ ms.assetid: 3d4196d3-5a80-4f76-b8b2-f72e80c8d406
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 964aa8d280ec5d3a2803c88ea40284ed6d10110b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7fb9534f5bbf7783afcbf28e2e8492804b7f30a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058113"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118159"
 ---
 # <a name="ienumdebugprocesses2clone"></a>IEnumDebugProcesses2::Clone
 以单独的对象的形式返回当前枚举的副本。
@@ -50,5 +51,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

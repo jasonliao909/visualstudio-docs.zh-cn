@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 33f07b0dd91654216e1465223a04bc5e1ab21300e1fdd6a2f3f70a0fde6bc218
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f30671c883c06834e9c00fadd81760b123ae9f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384153"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115221"
 ---
 # <a name="how-to-resize-namedrange-controls"></a>如何：调整 NamedRange 控件的大小
   将 <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件添加到 Microsoft Office Excel 文档时，可以设置该控件的大小；但是，你可能需要在以后调整其大小。

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c47ac0e0250c5164775de94bd82ec0499f6ea1b3d30e9905f3ec2b8fd7b32782
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b1faedbca01e1e37ef50894526a7c775205ea215
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342240"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111094"
 ---
 # <a name="idebugengine3loadsymbols"></a>IDebugEngine3::LoadSymbols
 加载 (调试) 调试的所有模块的符号。

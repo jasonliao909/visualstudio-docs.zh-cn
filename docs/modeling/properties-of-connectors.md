@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: bcc53dda3ce19fb962cd7fe30b0dc7e6fdf6e45d6e27f2194750c36425afe166
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ada7d2c78b818c18c9fdf21618ce66595eb9acfd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370497"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100759"
 ---
 # <a name="properties-of-connectors"></a>连接线的属性
 连接器表示生成的设计器中的域关系。
@@ -34,7 +34,7 @@ ms.locfileid: "121370497"
 |目标结束样式|此连接器的目标结束样式包括"EmptyArrow (EmptyArrow、FilledArrow、EmptyDiamond、FilledDiamond 或 None) 。|无|
 |文本颜色|用于与此连接器关联的文本修饰器的颜色。|黑色|
 |Thickness|此连接器的线条粗细，以英寸为单位。|0.03125|
-|访问修饰符|类的访问级别 (`public` 或 `internal`) 。|公共|
+|访问修饰符|类的访问级别 (`public` 或 `internal`) 。|公开|
 |自定义特性|用于向从此连接器生成的源代码类添加属性。|\<none>|
 |生成双派生|如果 `True` 为 ，则基类和分部 (都支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |具有自定义构造函数|如果 `True` 为 ，将在源代码中提供自定义构造函数。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|

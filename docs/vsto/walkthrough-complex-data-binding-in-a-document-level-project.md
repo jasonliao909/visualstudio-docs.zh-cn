@@ -1,6 +1,6 @@
 ---
 title: 演练：文档级项目中的复杂数据绑定
-description: 了解如何将 Microsoft Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
+description: 了解如何可以将 Microsoft Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a85f46cf9c234ad662966372a8d014ae0f98be84
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ac951f07fc31c901f79b0116ff325be9fb64c0d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826364"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147565"
 ---
 # <a name="walkthrough-complex-data-binding-in-a-document-level-project"></a>演练：文档级项目中的复杂数据绑定
   本演练演示文档级项目中的复杂数据绑定的基本知识。 可以将 Microsoft Office Excel 工作表中的多个单元格绑定到 Northwind SQL Server 数据库中的字段。
@@ -52,7 +53,7 @@ ms.locfileid: "107826364"
 - 用于读取和写入 SQL Server 数据库的权限。
 
 ## <a name="create-a-new-project"></a>创建新项目
- 第一步是创建一个 Excel 工作簿项目。
+ 第一步是创建 Excel 工作簿项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
@@ -60,7 +61,7 @@ ms.locfileid: "107826364"
 
      有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 **我的复杂数据绑定** 项目添加到 **解决方案资源管理器**。
+     Visual Studio 在设计器中打开新的 Excel 工作簿，并将 **我的复杂数据绑定** 项目添加到 **解决方案资源管理器**。
 
 ## <a name="create-the-data-source"></a>创建数据源
  使用 **“数据源”** 窗口将类型化数据集添加到项目中。
@@ -73,7 +74,7 @@ ms.locfileid: "107826364"
 
 3. 选择 **数据库** ，然后单击 " **下一步**"。
 
-4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
+4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 "**新建连接**" 按钮添加新连接。
 
 5. 选择或创建连接后，单击 " **下一步**"。
 
@@ -94,7 +95,7 @@ ms.locfileid: "107826364"
 
 #### <a name="to-add-a-list-object"></a>添加 list 对象
 
-1. 验证是否在 Visual Studio 设计器中打开了 " **我的复杂数据 Binding.xlsx** 工作簿"，其中显示了 **Sheet1** 。
+1. 验证是否在 "Visual Studio 设计器" 中打开了 "**我的复杂数据 Binding.xlsx** 工作簿"，其中显示了 **Sheet1** 。
 
 2. 打开 " **数据源** " 窗口并选择 " **员工** " 节点。
 
@@ -145,7 +146,7 @@ ms.locfileid: "107826364"
 
 ### <a name="to-test-the-data-binding"></a>测试数据绑定
 
-- 按 F5 。
+- 按 **F5**。
 
      验证在打开工作簿时，列表对象是否用 **Employees** 表中的数据进行填充。
 
@@ -222,11 +223,11 @@ ms.locfileid: "107826364"
 
 - 缓存数据，以便可以脱机使用。 有关详细信息，请参阅 [如何：缓存数据以便脱机使用或在服务器上使用](../vsto/how-to-cache-data-for-use-offline-or-on-a-server.md)。
 
-- 部署该解决方案。 有关详细信息，请参阅 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署该解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
 - 创建字段和表之间的主/从关系。 有关详细信息，请参阅 [演练：使用缓存的数据集创建主/从关系](../vsto/walkthrough-creating-a-master-detail-relation-using-a-cached-dataset.md)。
 
 ## <a name="see-also"></a>请参阅
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
 - [演练：文档级项目中的简单数据绑定](../vsto/walkthrough-simple-data-binding-in-a-document-level-project.md)
