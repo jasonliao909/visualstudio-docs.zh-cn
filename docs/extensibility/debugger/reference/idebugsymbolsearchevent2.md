@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8ad39e2f9bdd08f4d6af13308635f54167c746a830c331d022a9d93b6b9170c5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d61bcc7c77295b59bc6cc66cd1cf9aac3486e6c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103645"
 ---
 # <a name="idebugsymbolsearchevent2"></a>IDebugSymbolSearchEvent2
 此接口由调试引擎 (DE) ，以指示已加载正在调试的模块的调试符号。

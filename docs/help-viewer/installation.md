@@ -45,7 +45,7 @@ Help Viewer 是 Visual Studio 的可选安装组件。 要通过 Visual Studio �
 
    ![“安装”按钮](media/installation/install.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Microsoft Help Viewer](../help-viewer/overview.md)
 - [SQL Server 的帮助查看器和脱机内容](/sql/sql-server/sql-server-help-installation)

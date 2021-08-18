@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4626e76d84b49411045578b337085d90ebee3ad5af25562443e6382801a8ac8c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce700d7f002689d4257f93f079862504c902d0ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293230"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104451"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 此接口表示项的地址。 它由符号处理程序返回。

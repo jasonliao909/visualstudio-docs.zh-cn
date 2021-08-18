@@ -1,6 +1,6 @@
 ---
-title: 使用 ClickOnce 设计器按需下载附属程序集
-description: 了解如何使用设计器将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。
+title: 使用设计器按需下载附属ClickOnce程序集
+description: 了解如何使用设计器将附属程序集标记为可选，并仅下载客户端计算机当前区域性设置所需的程序集。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -20,19 +20,20 @@ ms.assetid: 82b85a47-b223-4221-a17c-38a52c3fb6e2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e9166dbd3d6cd7ba4500e2390bd611a31bcee7b
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 42973e84237de5095676809e3f861b2726f44f87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133583"
 ---
-# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集
+# <a name="walkthrough-download-satellite-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：使用设计器通过 ClickOnce 部署 API 按需下载附属程序集
 通过使用附属程序集，可以为多个区域性配置 Windows 窗体应用程序。 *附属程序集* 是一种包含除应用程序默认区域性以外区域性的应用程序资源的程序集。
 
- 如 [本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)中所述，可以在同一部署中包含多个区域性的多个附属程序集 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。
+ 如本地化[应用程序ClickOnce中讨论，](../deployment/localizing-clickonce-applications.md)可以在同一部署中包括多个区域性的多个附属 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 程序集。 默认情况下，即使单个客户端可能只需要一个附属程序集， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 也会将部署中的所有附属程序集下载到客户端计算机中。
 
  本演练演示如何将附属程序集标记为可选，并且只下载客户端计算机的当前区域性设置需要的程序集。
 
@@ -49,9 +50,9 @@ ms.locfileid: "106216873"
 
 4. 选中“显示所有文件”复选框以显示附属程序集。 默认情况下，所有附属程序集都会包含在部署中，且在此对话框中可见。
 
-     附属程序集的名称采用 *\<isoCode>\ApplicationName.resources.dll* 格式，其中 \<isoCode> 是 RFC 1766 格式的语言标识符。
+     附属程序集将具有格式为\ApplicationName.resources.dll的名称，*\<isoCode> 其中* 是 \<isoCode> RFC 1766 格式的语言标识符。
 
-5. 在每个语言标识符的“下载组”列表中单击“新建”。 如果提示输入下载组名称，请输入语言标识符。 例如，对于日语附属程序集，您可以指定下载组的名称 `ja-JP` 。
+5. 在每个语言标识符的“下载组”列表中单击“新建”。 如果提示输入下载组名称，请输入语言标识符。 例如，对于日语附属程序集，可以指定下载组名称 `ja-JP` 。
 
 6. 关闭“应用程序文件”对话框。
 
@@ -69,7 +70,7 @@ ms.locfileid: "106216873"
 
 2. 在选项卡页的底部，单击“查看应用程序事件”。
 
-3. 将以下导入添加到 *applicationevents.vb* 文件的开头。
+3. 将以下导入添加到 *ApplicationEvents.VB* 文件的开头。
 
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnce.SatelliteAssembliesVB/VB/ApplicationEvents.vb" id="Snippet1":::
 
@@ -80,6 +81,6 @@ ms.locfileid: "106216873"
 ## <a name="next-steps"></a>后续步骤
  在生产环境中，可能需要删除代码示例中将 <xref:System.Threading.Thread.CurrentUICulture%2A> 设置为特定值的行，因为在默认情况下，客户端计算机会设置正确的值。 例如，当在日语客户端计算机上运行应用程序时，默认情况下， <xref:System.Threading.Thread.CurrentUICulture%2A> 将设置为 `ja-JP` 。 在部署应用程序之前，以编程的方式执行设置是测试附属程序集的一种好方法。
 
-## <a name="see-also"></a>另请参阅
-- [演练：通过 ClickOnce 部署 API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
+## <a name="see-also"></a>请参阅
+- [演练：使用 ClickOnce API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)
 - [本地化 ClickOnce 应用程序](../deployment/localizing-clickonce-applications.md)

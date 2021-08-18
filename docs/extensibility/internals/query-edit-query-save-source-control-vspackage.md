@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3ce9aef41af1cb0b11e5098ce2c6767716510eec8632fdf419d1b1f143afa72d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d1945628c68002db457fd0a6751542e3009ded9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028912"
 ---
 # <a name="query-edit-query-save-source-control-vspackage"></a>查询编辑查询保存（源代码管理 VSPackage）
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 编辑器可以广播查询编辑查询保存 (QEQS) 事件。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 源代码管理存根实现 QEQS 服务，以便它是 QEQS 事件的接收者。 然后，这些事件将委托给当前处于活动状态的源代码管理 VSPackage。 活动源代码管理 VSPackage 实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> 及其方法。 接口的方法通常在首次编辑文档之前和保存文档之前 `IVsQueryEditQuerySave2` 立即调用。

@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04425ec3b3ec39aa224dd25d878fa716b4ace1f4b7f849926e5f3915e24209ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 30c7c92b1f29a0dc8c01f8d7d0bb27f4853a2f0a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440651"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135528"
 ---
 # <a name="work-with-calendar-items"></a>使用日历项
   <xref:Microsoft.Office.Interop.Outlook.AppointmentItem> 类包含用于使用日历项执行任务的方法和属性。
@@ -40,7 +40,7 @@ ms.locfileid: "121440651"
 
  有关对象Outlook模型Outlook，请参阅对象Outlook[概述](../vsto/outlook-object-model-overview.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用联系人项](../vsto/working-with-contact-items.md)
 - [使用文件夹](../vsto/working-with-folders.md)
 - [使用邮件项](../vsto/working-with-mail-items.md)

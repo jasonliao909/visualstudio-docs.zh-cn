@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ae74aa3cf759ba006acd36c168eecceac4b2ee4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2384d98c2f0f2872bb7aba0ce505264ce531da8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135877"
 ---
 # <a name="package-and-deploy-sharepoint-solutions"></a>打包和部署 SharePoint 解决方案
   通常，使用解决方案包 (.wsp) 文件将 SharePoint 解决方案部署到 SharePoint 服务器。 可以使用 Visual Studio 将 SharePoint 项目项组织为功能，并创建包来部署 SharePoint 功能。

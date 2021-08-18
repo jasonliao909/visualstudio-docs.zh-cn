@@ -9,14 +9,15 @@ ms.assetid: f1b05db3-50d8-453f-a72f-e68b239236a4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01815a7dcae5a469db20b9288918b4e2aaf9ffed
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f6fdb3fc220a4495146ad9ca66e4b2cee73f1909
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066316"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119432"
 ---
 # <a name="idebugdocumentpositionoffset2"></a>IDebugDocumentPositionOffset2
 将源文件中的位置表示为字符偏移量。
@@ -27,25 +28,25 @@ ms.locfileid: "105066316"
 IDebugDocumentPositionOffset2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
- 由 IDE 实现并由调试引擎使用。
+## <a name="notes-for-implementers"></a>实现者说明
+ 由 IDE 实现，由调试引擎使用。
 
 ## <a name="methods"></a>方法
- 下表显示的方法 `IDebugDocumentPositionOffset2` 。
+ 下表显示了 的方法 `IDebugDocumentPositionOffset2` 。
 
 |方法|说明|
 |------------|-----------------|
 |[GetRange](../../../extensibility/debugger/reference/idebugdocumentpositionoffset2-getrange.md)|检索当前文档位置的范围。|
 
 ## <a name="remarks"></a>备注
- 这会返回与 [GetRange](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) 相同的信息，但会返回 `char` 文档开头的偏移量。 这会提供类似于磁盘上存在的文档，即一维字符数组，而不是通常返回的行和列信息。
+ 这会返回与 [GetRange 相同的信息](../../../extensibility/debugger/reference/idebugdocumentposition2-getrange.md) ，但 `char` 与文档开头的偏移量相同。 这会像在磁盘上（即一维字符数组）一样呈现文档，而不是通常返回的行和列信息。
 
 ## <a name="requirements"></a>要求
- 标头： Msdbg
+ 标头：Msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

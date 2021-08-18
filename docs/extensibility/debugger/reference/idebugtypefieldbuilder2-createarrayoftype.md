@@ -1,6 +1,6 @@
 ---
 description: 创建指定类型和大小的数组。
-title: IDebugTypeFieldBuilder2：：CreateArrayOfType |Microsoft Docs
+title: IDebugTypeFieldBuilder2：： CreateArrayOfType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3d64de27d36e73f860345393f687d72b3af28d934ee2d9a662ec7ba5ead5bc3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e10913df71cd3bebbb2ae889dc40a8c418b1d0b1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103606"
 ---
 # <a name="idebugtypefieldbuilder2createarrayoftype"></a>IDebugTypeFieldBuilder2::CreateArrayOfType
 创建指定类型和大小的数组。
@@ -46,16 +46,16 @@ int CreateArrayOfType (
 
 ## <a name="parameters"></a>参数
 `pTypeField`\
-[in]数组将包含的元素的类型。
+中数组将包含的元素的类型。
 
 `rank`\
-[in]数组中的元素数。
+中数组中元素的数目。
 
 `pArrayOfTypeField`\
-[out]返回 [表示新数组的 IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
+弄返回表示新数组的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugTypeFieldBuilder2](../../../extensibility/debugger/reference/idebugtypefieldbuilder2.md)

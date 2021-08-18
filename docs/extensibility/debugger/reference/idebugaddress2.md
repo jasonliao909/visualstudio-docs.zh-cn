@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: be12b088771484f1202fbb4cc806ae041d6d23778aa2e7efcb2ceee2cf1d1dd0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef1058f11cc377b9c1b0ccc3a37f0d4d1ad57014
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104424"
 ---
 # <a name="idebugaddress2"></a>IDebugAddress2
 此接口提供对拥有其地址由此接口表示的对象的进程的 ID 的访问。

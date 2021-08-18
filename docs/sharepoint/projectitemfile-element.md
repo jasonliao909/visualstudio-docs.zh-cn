@@ -12,17 +12,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a7c6dd7fc46dc8616eddc164bcf2ec801657cb00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 065bb202420549462597ccea7cece0a3c3485c4b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955133"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135840"
 ---
 # <a name="projectitemfile-element"></a>ProjectItemFile 元素
-  表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件（如功能元素文件）。
+  表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件，例如功能元素文件。
 
 ## <a name="syntax"></a>语法
 
@@ -40,11 +41,11 @@ ms.locfileid: "99955133"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |**Source**|必需的 **xs： string** 特性。<br /><br /> 要与项目项一起部署的文件的名称。|
-|**Target**|可选 **xs： string** 特性。<br /><br /> 相对于部署根文件夹，将在 SharePoint 上部署文件的路径。 部署根文件夹由 **type** 特性指定的部署类型决定。 如果未指定 **目标** 属性，则会将该文件部署到 **源** 属性中指定的名称的文件夹中。<br /><br /> 有关详细信息，请参阅 [开发 sharepoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中的 sharepoint 项目项的 **部署路径** 和 **部署根** 属性的说明。|
-|**类型**|必需的 **xs： string** 特性。<br /><br /> 文件的部署类型。 有关可能值的详细信息，请参阅 [开发 sharepoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 项目项的 **部署类型** 属性的说明。|
+|**Target**|可选 **xs： string** 特性。<br /><br /> 文件将部署到 SharePoint 上的相对于部署根文件夹的路径。 部署根文件夹由 **type** 特性指定的部署类型决定。 如果未指定 **目标** 属性，则会将该文件部署到 **源** 属性中指定的名称的文件夹中。<br /><br /> 有关详细信息，请参阅 [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 项目项的 **部署路径** 和 **部署根** 属性的描述。|
+|**类型**|必需的 **xs： string** 特性。<br /><br /> 文件的部署类型。 有关可能值的详细信息，请参阅 [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 项目项的 **部署类型** 属性的说明。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -56,14 +57,14 @@ ms.locfileid: "99955133"
 |[文件](../sharepoint/files-element.md)|指定将 SharePoint 项目项部署到 SharePoint 时要包含的文件。|
 
 ## <a name="remarks"></a>备注
- 通常在 **ProjectItemFile** 元素中引用的 SharePoint 文件包括功能元素文件 (*Elements.xml*) 、列表定义的架构文件 (*Schema.xml*) 和 Web 部件 (的 Web 部件定义 *文件) 。*
+ 通常在 **ProjectItemFile** 的元素中引用 SharePoint 文件包括功能元素文件 (*Elements.xml*) 、列表定义的架构文件 (*Schema.xml*) 和 *Web 部件 (web* 部件定义文件) 。
 
 ## <a name="element-information"></a>元素信息
 
 |属性|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**架构名称**|SharePoint 项目项架构|
+|**架构名称**|SharePoint Project 项架构|
 |**验证文件**|ProjectItemModelSchema|
 |**可以为空**|否|
 

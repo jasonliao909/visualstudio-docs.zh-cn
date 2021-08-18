@@ -1,6 +1,6 @@
 ---
 title: 搜索主题（帮助查看器）
-description: 了解如何在 Microsoft Help Viewer 中搜索主题。 使用通配符表达式、逻辑运算符和高级搜索运算符自定义搜索。
+description: 了解如何在搜索中搜索主题Microsoft Help Viewer。 使用通配符表达式、逻辑运算符和高级搜索运算符自定义搜索。
 ms.date: 11/02/2017
 ms.topic: how-to
 ms.assetid: 683f1b0c-1551-4bba-91fe-3855f03fdd69
@@ -21,7 +21,7 @@ ms.locfileid: "121358527"
 
 可以使用全文搜索功能找到包含特定单词的所有主题。 还可以通过使用通配符表达式、逻辑运算符和高级搜索运算符优化与自定义搜索。
 
-若要打开 "**搜索**" 选项卡，请在 "**帮助查看器**" 窗口中选择 "**搜索**" 选项卡; 如果是键盘用户，请选择 " **Ctrl** + **E**"。
+若要打开"**搜索"** 选项卡，请选择"帮助查看器"窗口中的"搜索"选项卡;如果你是键盘用户，请选择 **Ctrl** + **E**。
 
 ## <a name="to-perform-a-full-text-search"></a>执行全文搜索
 
@@ -58,7 +58,7 @@ ms.locfileid: "121358527"
 
 > [!IMPORTANT]
 > - 不支持短语搜索。 如果在搜索字符串中指定多个单词，返回的主题将包含所有指定的单词，但不一定是确切指定的短语。
-> - 使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅 [搜索表达式中的逻辑运算符](../help-viewer/logical-operators-search-expressions.md)。
+> - 使用逻辑运算符指定搜索短语中各单词之间的关系。 可以使用逻辑运算符（如 AND、OR NOT 和 NEAR）进一步优化搜索。 例如，如果搜索“declaring NEAR union”，搜索结果将包括包含“declaring”和“union”单词的主题，除这两个词之外，仅有几个单词。 有关详细信息，请参阅搜索 [表达式 中的逻辑运算符](../help-viewer/logical-operators-search-expressions.md)。
 
 ### <a name="filters"></a>筛选器
 
@@ -74,13 +74,13 @@ ms.locfileid: "121358527"
 
 3. 包含较多搜索词的内容排名高于包含较少搜索词的内容。
 
-### <a name=""></a><a name="stopwords"> 搜索中忽略的单词 (停止词) </a>
+### <a name=""></a><a name="stopwords"> 搜索中忽略的 (词) </a>
 
 全文索引搜索期间，会自动忽略经常出现的单词或数字（有时也称停用字）。 例如，如果搜索短语“pass through”，搜索结果将显示包含“pass”而非“through”的主题。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [逻辑运算符和高级运算符](../help-viewer/logical-operators-search-expressions.md)
-- [如何：在索引中查找主题](../help-viewer/find-topics-index.md)
-- [如何：在 TOC 中查找主题](../help-viewer/find-topics-toc.md)
+- [如何：查找索引中的主题](../help-viewer/find-topics-index.md)
+- [如何：查找 TOC 中的主题](../help-viewer/find-topics-toc.md)
 - [Microsoft Help Viewer](../help-viewer/overview.md)
