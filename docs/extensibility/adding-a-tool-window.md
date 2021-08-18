@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1ca15236ee7a077a79308b46f9f4a57f43ee3e295cda9ca6694d0af23a89ce5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3bf82de2fd491f786ed3a882ee44adb20b38d442
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434979"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035277"
 ---
 # <a name="add-a-tool-window"></a>添加工具窗口
 
@@ -35,7 +35,7 @@ ms.locfileid: "121434979"
 
 - 设置工具窗口的默认位置。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 Visual Studio SDK 作为可选功能包含在安装程序Visual Studio中。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
@@ -266,7 +266,7 @@ public System.Windows.Controls.MediaElement MediaPlayer
         Window = "3ae79031-e1bc-11d0-8f78-00a0c9110057")]
     ```
 
-    第一个命名参数为 `Style` ，其值为 `Tabbed` ，这意味着窗口将是现有窗口中的选项卡。 停靠位置由 参数（ `Window` 本例中为 ）指定，解决方案资源管理器。
+    第一个命名参数为 `Style` ，其值为 `Tabbed` ，这意味着窗口将是现有窗口中的选项卡。 停靠位置由 参数（本例中为 `Window` ）指定，解决方案资源管理器。 
 
     > [!NOTE]
     > 有关 IDE 中窗口类型的信息，请参阅 <xref:EnvDTE.vsWindowType> 。
@@ -275,11 +275,11 @@ public System.Windows.Controls.MediaElement MediaPlayer
 
 1. 按 **F5** 打开试验性Visual Studio实例。
 
-2. 在"**视图"** 菜单上，指向"**其他** Windows，然后单击"第 **一个工具窗口"。**
+2. 在"**视图"** 菜单上，指向"**其他Windows，** 然后单击"第 **一个工具窗口"。**
 
-    媒体播放器工具窗口应与 打开 **时位于** 解决方案资源管理器。 如果窗口布局仍与以前相同，请重置窗口布局 **(/重置窗口布局) 。**
+    媒体播放器工具窗口应与 打开 **解决方案资源管理器。** 如果窗口布局仍与以前相同，请重置窗口布局 **(/重置窗口布局) 。**
 
-3. 单击按钮 (**工具窗口中**) "搜索"图标。 选择受支持的声音或视频文件，例如 *C：\windows\media\wav，* 然后按 **"打开"。**
+3. 单击按钮 (**工具窗口中有** "搜索) 图标。 选择受支持的声音或视频文件，例如 *C：\windows\media\wav，* 然后按 **"打开"。**
 
     应会听到声音。
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 952df4bec381fdce0850d2f74f0bc81329f14c2c10a7f6dc2ad3de019761c355
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 93a7d85899a84b8cced0cf12efaba19a29449476
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448658"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125746"
 ---
 # <a name="ienumcodepaths2"></a>IEnumCodePaths2
 此接口表示代码路径的列表。
@@ -57,5 +57,5 @@ IEnumCodePaths2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)

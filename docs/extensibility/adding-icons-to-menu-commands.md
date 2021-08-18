@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 008c045ba59db2aea70230a2a177d890fe08f34bf87194019672bb38390fb2c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c6ffca49ee3b3c89293be9d9bbc18ebf3f1bb0fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035301"
 ---
 # <a name="add-icons-to-menu-commands"></a>向菜单命令添加图标
 菜单和工具栏上都可以出现命令。 在工具栏上，通常只显示一个图标 (来保存) 空间，而在菜单上，命令通常同时出现同时包含图标和文本。
@@ -84,6 +84,6 @@ ms.locfileid: "121434953"
 
 8. 测试图标。 生成项目并启动调试。 在实验实例中，找到命令。 它应显示你添加的图标。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
 - [.VSCT XML 架构引用](../extensibility/vsct-xml-schema-reference.md)

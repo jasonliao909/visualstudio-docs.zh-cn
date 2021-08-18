@@ -1,6 +1,6 @@
 ---
-description: 创建一个具有指定长度的字符串对象。
-title: IDebugFunctionObject2：： CreateStringObjectWithLength |Microsoft Docs
+description: 创建具有指定长度的字符串对象。
+title: IDebugFunctionObject2：：CreateStringObjectWithLength |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 813d223931339044cc0538f891a563857a6e3d76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5a2407caa182656f219194b3bb0ea6299c65c5d96bcb7c50021cf679cd868dd5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122138193"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121451970"
 ---
 # <a name="idebugfunctionobject2createstringobjectwithlength"></a>IDebugFunctionObject2::CreateStringObjectWithLength
-创建一个具有指定长度的字符串对象。
+创建具有指定长度的字符串对象。
 
 ## <a name="syntax"></a>语法
 
@@ -46,16 +46,16 @@ int CreateStringObjectWithLength (
 
 ## <a name="parameters"></a>参数
 `pcstrString`\
-中字符串对象的字符串值。
+[in]字符串对象的字符串值。
 
 `uiLength`\
-中字符串的长度（以字节为单位）。
+[in]字符串的长度（以字节为单位）。
 
 `ppObject`\
-弄返回一个 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象，该对象表示新创建的字符串对象。
+[out]返回表示 [新创建的字符串对象的 IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

@@ -1,6 +1,6 @@
 ---
 description: 获取此断点请求的断点位置类型。
-title: IDebugBreakpointRequest2：： GetLocationType |Microsoft Docs
+title: IDebugBreakpointRequest2：：GetLocationType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,13 +43,13 @@ int GetLocationType(
 
 ## <a name="parameters"></a>参数
 `pBPLocationType`\
-弄返回 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 枚举中的一个值，该值描述此断点请求的位置。
+[out]从描述此断 [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md) 的位置的枚举返回一个值。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。 `E_FAIL`如果 `bpLocation` 关联的[BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构中的字段无效，则返回。
+如果成功，则返回 `S_OK` ;否则返回错误代码。 如果 `E_FAIL` 关联的 `bpLocation` 结构中的字段BP_REQUEST_INFO无效，[](../../../extensibility/debugger/reference/bp-request-info.md)则返回 。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为 `CDebugBreakpointRequest` 公开[IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为公开 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationType)
@@ -82,7 +82,7 @@ HRESULT CDebugBreakpointRequest::GetLocationType(BP_LOCATION_TYPE* pBPLocationTy
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BP_LOCATION_TYPE](../../../extensibility/debugger/reference/bp-location-type.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

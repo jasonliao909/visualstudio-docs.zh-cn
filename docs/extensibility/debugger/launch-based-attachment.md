@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d674dd26a8908b26a53bf212692faebdd3e9589af49c9641513c1fb526a9981b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f3839c1edb8b8406e5b5ae0645205f0316b88d62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121324010"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065158"
 ---
 # <a name="launch-based-attachment"></a>基于启动的附件
 程序的基于启动的附件是自动的。 当托管程序的进程由 SDM 启动时，基于启动的附件将遵循类似于手动附件方法的路径。 有关信息，请参阅 [附加到程序](../../extensibility/debugger/attaching-to-the-program.md)。
@@ -35,6 +35,6 @@ ms.locfileid: "121324010"
 
 4. 发送 [IDebugThreadCreateEvent2](../../extensibility/debugger/reference/idebugthreadcreateevent2.md) 事件对象以通知 SDM 为启动的进程创建了一个新线程。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [发送所需的事件](../../extensibility/debugger/sending-the-required-events.md)
 - [启用要调试的程序](../../extensibility/debugger/enabling-a-program-to-be-debugged.md)

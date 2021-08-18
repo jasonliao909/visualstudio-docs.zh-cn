@@ -51,5 +51,5 @@ int GetName(
 ## <a name="remarks"></a>备注
  此方法返回的名称始终是描述程序的友好、用户可显示的名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

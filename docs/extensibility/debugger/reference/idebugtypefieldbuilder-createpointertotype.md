@@ -1,6 +1,6 @@
 ---
 description: 创建指向指定类型的指针。
-title: IDebugTypeFieldBuilder：： CreatePointerToType |Microsoft Docs
+title: IDebugTypeFieldBuilder：：CreatePointerToType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e21087e081d316984fa2ded998cb6b6c120f9fc220be903d24631ab01a08585
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 50270c122c2be9daf99089c129e9e97b7684cc49
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126019"
 ---
 # <a name="idebugtypefieldbuildercreatepointertotype"></a>IDebugTypeFieldBuilder::CreatePointerToType
 创建指向指定类型的指针。
@@ -44,13 +44,13 @@ int CreatePointerToType(
 
 ## <a name="parameters"></a>参数
 `pTypeField`\
-中要指向的类型。 它由 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 接口表示。
+[in]要指向的类型。 它由 [IDebugField 接口](../../../extensibility/debugger/reference/idebugfield.md) 表示。
 
 `pPtrToTypeField`\
-弄返回由新的 **IDebugField** 对象表示的指针。
+[out]返回由新的 **IDebugField 对象表示的** 指针。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugTypeFieldBuilder](../../../extensibility/debugger/reference/idebugtypefieldbuilder.md)

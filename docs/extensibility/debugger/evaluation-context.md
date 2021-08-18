@@ -37,7 +37,7 @@ ms.locfileid: "121417816"
 
  `IDebugParsedExpression::EvaluateSync` 返回表示结果值及其类型的 [IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md) 接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [键表达式计算器接口](../../extensibility/debugger/key-expression-evaluator-interfaces.md)
 - [显示局部变量](../../extensibility/debugger/displaying-locals.md)
 - [EvaluateSync](../../extensibility/debugger/reference/idebugparsedexpression-evaluatesync.md)

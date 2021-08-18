@@ -25,7 +25,7 @@ ms.locfileid: "121428728"
 
 本主题假定你正在处理一个大项目，这个项目大到需要多名团队成员，还可能有多个团队。 项目的代码和模型存储在源代码管理系统，例如 [!INCLUDE[esprtfs](../code-quality/includes/esprtfs_md.md)]。 至少某些团队成员使用 Visual Studio 来开发模型，其他团队成员可以通过使用其他版本的 Visual Studio 来查看模型。
 
-若要了解哪些版本的 Visual Studio支持每个工具和建模功能，请参阅对体系结构和[建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+若要了解哪些版本的 Visual Studio每种工具和建模功能，请参阅对体系结构和建模[工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="solution-structure"></a>解决方案结构
 
@@ -109,6 +109,6 @@ ms.locfileid: "121428728"
 
 [组织和管理模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)

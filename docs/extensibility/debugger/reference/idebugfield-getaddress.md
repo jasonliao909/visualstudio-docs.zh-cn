@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a34d512161873d302c44a57eb39e8607266201bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d9163549f10c3d6ed42cd6746464b03ff14722dadde1ead70cb5638e8a0e962d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122088869"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121342188"
 ---
 # <a name="idebugfieldgetaddress"></a>IDebugField::GetAddress
 此方法获取字段的调试地址。
