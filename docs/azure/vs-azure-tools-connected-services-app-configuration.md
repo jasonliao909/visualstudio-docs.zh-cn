@@ -1,6 +1,6 @@
 ---
 title: 使用连接的服务添加 Azure 应用配置 |Microsoft Docs
-description: 使用 Visual Studio 连接的服务向应用添加 Azure 配置服务依赖项
+description: 使用 Visual Studio 将 Azure 配置服务依赖项添加到应用连接的服务
 author: ghogen
 manager: ''
 ms.custom: vs-azure
@@ -9,28 +9,28 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: d19d65943745aabd078173d6362ba186fa312959eeaca22b974d98b6718ee09c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683278"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121380956"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加 Azure 应用配置
 
-在本教程中，你将了解如何使用 Azure 应用配置轻松添加开始使用的所有内容，以便在 Visual Studio 中管理 web 项目的配置和功能标志。 通过使用 Visual Studio 中的连接的服务功能，可以让 Visual Studio 自动添加连接到 Azure 中的应用配置资源所需的所有代码、NuGet 包和配置设置。 若要使用此功能，必须使用 Visual Studio 2019 版本16.9 或更高版本。
+在本教程中，你将了解如何轻松添加开始使用 Azure 应用配置来管理 Visual Studio 中 web 项目的配置和功能标志所需的所有内容。 通过使用 Visual Studio 中的连接的服务功能，你可以 Visual Studio 自动添加连接到 Azure 中的应用配置资源所需的所有代码、NuGet 包和配置设置。 若要使用此功能，必须使用 Visual Studio 2019 16.9 或更高版本。
 
-您可以使用 ASP.NET Core、.NET Core 控制台和 .NET Framework 项目中的应用配置连接的服务功能。
+您可以使用 ASP.NET Core、.net Core 控制台和 .NET Framework 项目中的应用配置连接的服务功能。
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
 
 ## <a name="prerequisites"></a>先决条件
 
-- 已安装 Azure 工作负荷的 Visual Studio。
+- Visual Studio 安装 Azure 工作负荷。
 - 受支持类型之一的项目
 
-## <a name="connect-to-azure-app-configuration-using-connected-services"></a>使用连接的服务连接到 Azure 应用配置
+## <a name="connect-to-azure-app-configuration-using-connected-services"></a>使用连接的服务连接 Azure 应用配置
 
 1. 在 Visual Studio 中打开项目。
 
@@ -48,7 +48,7 @@ ms.locfileid: "101683278"
 
     如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/free/dotnet)。
 
-1. 在 " **配置 Azure 应用配置** " 屏幕上，选择你的订阅和现有的配置存储。 然后，选择“下一步”。
+1. 在 " **配置 Azure 应用配置** " 屏幕上，选择你的订阅和现有的配置存储。 然后选择“下一步”。
 
     如果需要创建应用配置存储，请参阅下一步。 否则，请跳到步骤 6。
 
@@ -78,7 +78,7 @@ ms.locfileid: "101683278"
 
 了解 [Azure 应用配置文档](/azure/azure-app-configuration/overview)中的 Azure 应用配置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在连接 ASP.NET Core 应用的应用配置中使用动态配置的教程](/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core)
 - [连接服务 (Visual Studio for Mac)](/visualstudio/mac/connected-services)

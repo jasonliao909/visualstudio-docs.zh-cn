@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6d42bda91e9714b8deff4822e2e41c2af1af8dc4d2ef96274727d8b5f7f35ff5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de1e6c30908db5d43540e5a93420095b636b76e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401364"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049722"
 ---
 # <a name="project-types-architecture"></a>项目类型体系结构
 本部分包含有关 中项目类型体系结构的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。

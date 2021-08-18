@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4c279bdadb692007a66eed38ccd595d94be3c05f5c2777a3a30eae6af33666c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd615c80c23ce3714208b7b09d1de8480698f52c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034690"
 ---
 # <a name="parseflags"></a>PARSEFLAGS
 指定如何分析表达式。

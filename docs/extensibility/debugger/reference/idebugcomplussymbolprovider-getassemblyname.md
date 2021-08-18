@@ -1,6 +1,6 @@
 ---
-description: 检索给定模块和应用程序域的程序集的名称。
-title: IDebugComPlusSymbolProvider：： GetAssemblyName |Microsoft Docs
+description: 根据程序集的模块和应用程序域检索程序集的名称。
+title: IDebugComPlusSymbolProvider：：GetAssemblyName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -24,7 +24,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121342435"
 ---
 # <a name="idebugcomplussymbolprovidergetassemblyname"></a>IDebugComPlusSymbolProvider::GetAssemblyName
-检索给定模块和应用程序域的程序集的名称。
+根据程序集的模块和应用程序域检索程序集的名称。
 
 ## <a name="syntax"></a>语法
 
@@ -46,16 +46,16 @@ int GetAssemblyName(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `pbstrName`\
-弄返回程序集的名称。
+[out]返回程序集的名称。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
@@ -86,5 +86,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

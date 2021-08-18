@@ -12,14 +12,15 @@ ms.assetid: 85e73b73-29dc-464f-8734-ed308742c435
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: d64f195d13aca75b3b037ff14401395c03bd3d29
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8333179533bec73379944cead37e359ecf8ae609
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105097352"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051334"
 ---
 # <a name="best-practices-for-implementing-a-source-control-plug-in"></a>实现源代码管理插件的最佳实践
 以下技术详细信息可帮助你在中可靠地实现源代码管理插件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -59,6 +60,6 @@ ms.locfileid: "105097352"
 
  大多数用户可配置的设置选项不是以这种方式定义的，因为它们在源代码管理插件之间存在很大的差异。因此，建议的机制是 " **高级** " 按钮。 例如，在 " **获取** " 对话框中，IDE 只显示它理解的信息，如果该插件具有此命令的选项，它还会显示 " **高级** " 按钮。 当用户单击 " **高级** " 按钮时，IDE 将调用 [SccGetCommandOptions](../extensibility/sccgetcommandoptions-function.md) ，以使源代码管理插件可以提示用户输入信息，如 bitflags 或日期/时间。 此插件在命令期间传递回的结构中返回此信息 `SccGet` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)
 - [创建源代码管理插件](../extensibility/internals/creating-a-source-control-plug-in.md)

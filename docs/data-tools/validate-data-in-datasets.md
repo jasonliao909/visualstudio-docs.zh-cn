@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94c167ab1709597a8e25b9dea52bc68ac8649bfa364eab574533c6acaa94b437
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9f714b4e66f14e313fa53466db80c99dfbef50f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081914"
 ---
 # <a name="validate-data-in-datasets"></a>验证数据集中的数据
 验证数据是确认输入到数据对象中的值是否符合数据集架构中的约束的过程。 验证过程还会确认这些值遵循了已为应用程序建立的规则。 在将更新发送到基础数据库之前对数据进行验证是一种很好的做法。 这可以减少错误，以及应用程序和数据库之间可能出现的往返次数。
@@ -141,60 +141,60 @@ ms.locfileid: "121346630"
     ```
 
 ## <a name="to-retrieve-changed-rows"></a>检索已更改的行
-数据表中的每一行都有一个 <xref:System.Data.DataRow.RowState%2A> 属性，该属性使用枚举中的值跟踪该行的当前状态 <xref:System.Data.DataRowState> 。 您可以通过调用或的方法，从数据集或数据表返回已更改的行 `GetChanges` <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 在调用数据集的 方法之前，可以验证 `GetChanges` <xref:System.Data.DataSet.HasChanges%2A> 更改是否存在。
+数据表中的每一行都有一个 <xref:System.Data.DataRow.RowState%2A> 属性，该属性使用枚举中的值跟踪该行的当前状态 <xref:System.Data.DataRowState> 。 您可以通过调用或的方法，从数据集或数据表返回已更改的行 `GetChanges` <xref:System.Data.DataSet> <xref:System.Data.DataTable> 。 可以 `GetChanges` 通过调用 dataset 的方法来验证在调用之前是否存在更改 <xref:System.Data.DataSet.HasChanges%2A> 。
 
 > [!NOTE]
-> 通过调用 (方法将更改提交到数据集或数据表 <xref:System.Data.DataSet.AcceptChanges%2A> `GetChanges`) ，该方法不会返回任何数据。 如果应用程序需要处理更改的行，则必须在调用 方法之前处理 `AcceptChanges` 更改。
+> 通过) 调用方法将对数据集或数据表的更改提交 (后 <xref:System.Data.DataSet.AcceptChanges%2A> ，该 `GetChanges` 方法不会返回任何数据。 如果应用程序需要处理已更改的行，则必须在调用方法之前处理这些更改 `AcceptChanges` 。
 
-调用数据集或数据表的 方法将返回仅包含已更改记录的新数据集 <xref:System.Data.DataSet.GetChanges%2A> 或数据表。 如果要获取特定记录（例如，仅获取新记录或仅修改的记录），可以将枚举中的值作为参数传递给 <xref:System.Data.DataRowState> `GetChanges` 方法。
+调用 <xref:System.Data.DataSet.GetChanges%2A> 数据集或数据表的方法将返回仅包含已更改的记录的新数据集或数据表。 如果要获取特定记录（例如，仅新记录或仅修改记录），可以将枚举中的值 <xref:System.Data.DataRowState> 作为参数传递给 `GetChanges` 方法。
 
-使用 枚举访问不同版本的行 (例如，在处理行之前，行中的原始值 <xref:System.Data.DataRowVersion>) 。
+使用 <xref:System.Data.DataRowVersion> 枚举访问行的不同版本 (例如，在处理行之前在行中的原始值) 。
 
-### <a name="to-get-all-changed-records-from-a-dataset"></a>从数据集获取所有更改的记录
+### <a name="to-get-all-changed-records-from-a-dataset"></a>从数据集中获取所有已更改的记录
 
-- 调用 <xref:System.Data.DataSet.GetChanges%2A> 数据集的 方法。
+- 调用 <xref:System.Data.DataSet.GetChanges%2A> 数据集的方法。
 
-     以下示例创建名为 的新数据集，并使用另一个数据集中所有已更改 `changedRecords` 的记录填充该数据集 `dataSet1` 。
+     下面的示例创建一个名为的新数据集 `changedRecords` ，并将其与另一个名为的数据集的所有已更改记录一起填充 `dataSet1` 。
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet14":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet14":::
 
-### <a name="to-get-all-changed-records-from-a-data-table"></a>从数据表中获取所有更改的记录
+### <a name="to-get-all-changed-records-from-a-data-table"></a>从数据表获取所有更改的记录
 
-- 调用 <xref:System.Data.DataTable.GetChanges%2A> DataTable 的 方法。
+- 调用 <xref:System.Data.DataTable.GetChanges%2A> DataTable 的方法。
 
-     以下示例创建名为 的新数据表，并使用另一个数据表中的所有更改 `changedRecordsTable` 记录填充该表 `dataTable1` 。
+     下面的示例将创建一个名为的新数据表 `changedRecordsTable` ，并使用另一个名为的数据表中已更改的所有记录填充该数据表 `dataTable1` 。
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet15":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet15":::
 
 ### <a name="to-get-all-records-that-have-a-specific-row-state"></a>获取具有特定行状态的所有记录
 
-- 调用 `GetChanges` 数据集或数据表的 方法，并传递 <xref:System.Data.DataRowState> 枚举值作为参数。
+- 调用 `GetChanges` 数据集或数据表的方法，并 <xref:System.Data.DataRowState> 以参数的形式传递枚举值。
 
-     以下示例演示如何创建名为 的新数据集，并仅用已添加到数据集的记录 `addedRecords` 填充 `dataSet1` 该数据集。
+     下面的示例演示如何创建一个名为的新数据集 `addedRecords` ，并使用已添加到该数据集的记录来填充它 `dataSet1` 。
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet16":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet16":::
 
-     以下示例演示如何返回最近添加到表中的所有 `Customers` 记录：
+     下面的示例演示如何返回最近添加到表中的所有记录 `Customers` ：
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet17":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet17":::
 
 ## <a name="access-the-original-version-of-a-datarow"></a>访问 DataRow 的原始版本
-对数据行进行更改时，数据集将同时保留原始 () <xref:System.Data.DataRowVersion.Original> 行 () <xref:System.Data.DataRowVersion.Current> 的新行版本。 例如，在调用 方法之前，应用程序可以访问枚举 (中定义的不同版本的) 并 `AcceptChanges` <xref:System.Data.DataRowVersion> 相应地处理更改。
+对数据行进行更改时，数据集将保留原始 (<xref:System.Data.DataRowVersion.Original>) 和新 (<xref:System.Data.DataRowVersion.Current> 行) 版本。 例如，在调用方法之前 `AcceptChanges` ，应用程序可以访问枚举中定义 (的不同版本的记录 <xref:System.Data.DataRowVersion>) 并相应地处理更改。
 
 > [!NOTE]
-> 行的不同版本仅在编辑后以及调用 方法之前 `AcceptChanges` 存在。 调用 `AcceptChanges` 方法后，当前版本和原始版本相同。
+> 行的不同版本仅在已编辑或在 `AcceptChanges` 调用方法之前存在。 `AcceptChanges`调用方法后，当前版本和原始版本是相同的。
 
-将值与列索引一起 (或列名作为字符串) 返回该列 <xref:System.Data.DataRowVersion> 的特定行版本中的值。 更改的列在 和 <xref:System.Data.DataTable.ColumnChanging> 事件期间 <xref:System.Data.DataTable.ColumnChanged> 标识。 这是检查不同行版本以进行验证的不错时间。 但是，如果暂时挂起了约束，则这些事件不会引发，并且你需要以编程方式标识已更改的列。 为此，可以浏览集合 <xref:System.Data.DataTable.Columns%2A> 并比较不同的 <xref:System.Data.DataRowVersion> 值。
+将 <xref:System.Data.DataRowVersion> 值连同列索引 (或列名作为字符串传递) 从该列的特定行版本返回值。 在和事件期间，会标识已更改的列 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.ColumnChanged> 。 这是检查不同行版本以进行验证的好时机。 但是，如果您暂时挂起了约束，则不会引发这些事件，您将需要以编程方式标识哪些列已更改。 为此，可以循环访问 <xref:System.Data.DataTable.Columns%2A> 集合并比较不同的 <xref:System.Data.DataRowVersion> 值。
 
 ### <a name="to-get-the-original-version-of-a-record"></a>获取记录的原始版本
 
-- 通过传递要返回的行的 来 <xref:System.Data.DataRowVersion> 访问列的值。
+- 通过传入要返回的行的来访问该列的值 <xref:System.Data.DataRowVersion> 。
 
-     下面的示例演示如何使用 值获取 <xref:System.Data.DataRowVersion> 中的 `CompanyName` 字段的原始值 <xref:System.Data.DataRow> ：
+     下面的示例演示如何使用 <xref:System.Data.DataRowVersion> 值获取中的字段的原始值 `CompanyName` <xref:System.Data.DataRow> ：
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet21":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet21":::
@@ -203,9 +203,9 @@ ms.locfileid: "121346630"
 
 ### <a name="to-get-the-current-version-of-a-record"></a>获取记录的当前版本
 
-- 访问列的值，然后将参数添加到索引中，该索引指示要返回的行版本。
+- 访问列的值，然后向该索引添加一个参数，用于指示要返回的行的版本。
 
-     下面的示例演示如何使用 值 <xref:System.Data.DataRowVersion> 获取 中的字段 `CompanyName` 的当前值 <xref:System.Data.DataRow> ：
+     下面的示例演示如何使用 <xref:System.Data.DataRowVersion> 值获取中的字段的当前值 `CompanyName` <xref:System.Data.DataRow> ：
 
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataEditing/CS/Form1.cs" id="Snippet22":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataEditing/VB/Form1.vb" id="Snippet22":::
@@ -213,5 +213,5 @@ ms.locfileid: "121346630"
 ## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
-- [如何：验证 Windows 窗体 DataGridView 控件中的数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
-- [如何：使用窗体 ErrorProvider 组件Windows窗体验证的错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)
+- [如何：在 Windows 窗体 DataGridView 控件中验证数据](/dotnet/framework/winforms/controls/how-to-validate-data-in-the-windows-forms-datagridview-control)
+- [如何：在 Windows 窗体 ErrorProvider 组件中显示用于窗体验证的错误图标](/dotnet/framework/winforms/controls/display-error-icons-for-form-validation-with-wf-errorprovider)

@@ -1,6 +1,6 @@
 ---
 title: 附加到程序 |Microsoft Docs
-description: 了解 Visual Studio 如何实现在将程序注册到适当端口之后，如何实现调试器附加到程序。
+description: 了解 Visual Studio 如何实现在将程序注册到适当的端口后附加到程序的调试器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,14 +10,15 @@ ms.assetid: 9a3f5b83-60b5-4ef0-91fe-a432105bd066
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d880edbea79f56cbd2c90905b0bc2f712dba59b1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70576204c655725ea68908424b6caad145cf21f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051074"
 ---
 # <a name="attach-to-the-program"></a>附加到程序
 使用适当的端口注册程序后，必须将调试器附加到要调试的程序。
@@ -59,7 +60,7 @@ ms.locfileid: "105055266"
     > [!NOTE]
     > 这不同于 `IDebugProgram2` 传递到方法中的对象 `IDebugEngine2::Attach` 。 之前传递的 `IDebugProgram2` 对象仅由端口识别，并且是一个单独的对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [基于启动的附件](../../extensibility/debugger/launch-based-attachment.md)
 - [发送事件](../../extensibility/debugger/sending-events.md)
 - [LaunchSuspended](../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

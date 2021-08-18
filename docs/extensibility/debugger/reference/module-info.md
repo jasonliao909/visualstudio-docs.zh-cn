@@ -1,5 +1,5 @@
 ---
-description: 描述 DLL、EXE (程序集的特定模块) 。
+description: 描述特定模块 (DLL、EXE 或程序集) 。
 title: MODULE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121338236"
 ---
 # <a name="module_info"></a>MODULE_INFO
-描述 DLL、EXE (程序集的特定模块) 。
+描述特定模块 (DLL、EXE 或程序集) 。
 
 ## <a name="syntax"></a>语法
 
@@ -65,7 +65,7 @@ public struct MODULE_INFO {
 
 ## <a name="members"></a>成员
  `dwValidFields`\
- 集合中标志的组合 [MODULE_INFO_FIELDS，](../../../extensibility/debugger/reference/module-info-fields.md) 用于指定要填充哪些字段。
+ [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)枚举中的标志的组合，用于指定要填写的字段。
 
  `m_bstrName`\
  模块名。
@@ -77,7 +77,7 @@ public struct MODULE_INFO {
  模块版本。
 
  `m_bstrDebugMessage`\
- 有关模块的可选消息，例如"无法加载符号"。
+ 有关模块的可选消息，例如 "无法加载符号"。
 
  `m_addrLoadAddress`\
  模块加载地址。
@@ -95,24 +95,24 @@ public struct MODULE_INFO {
  上次修改符号文件的时间。
 
  `m_bstrUrlSymbolLocation`\
- 符号文件的位置 (例如 \\ ""。) 模块中指定的参数。 用作查找模块符号的起始位置。
+ 符号文件的位置 (例如，". \\ "模块中指定 ) 。 用作查找模块符号的起始位置。
 
  `m_dwModuleFlags`\
- 描述模块的MODULE_FLAGS集合中的[](../../../extensibility/debugger/reference/module-flags.md)标志组合。
+ 描述模块的 [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md) 枚举中的标志的组合。
 
 ## <a name="remarks"></a>备注
- 此结构将传递到 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法中填充它。
+ 此结构被传递给 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法，其中填充了此结构。
 
- 此结构对应于"模块"窗口中列出的 **每个** 模块。
+ 此结构对应于 " **模块** " 窗口中列出的每个模块。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [MODULE_INFO_FIELDS](../../../extensibility/debugger/reference/module-info-fields.md)
 - [MODULE_FLAGS](../../../extensibility/debugger/reference/module-flags.md)

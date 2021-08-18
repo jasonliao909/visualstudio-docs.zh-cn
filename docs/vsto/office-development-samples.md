@@ -43,5 +43,5 @@ ms.locfileid: "121365962"
 |UI 管理器示例|演示如何通过在 VSTO 外接程序中实现扩展性接口来为 Outlook 创建功能区自定义项、自定义任务窗格和自定义窗体区域。 功能区、任务窗格和窗体区域的每个实例都能够正确地相互通信。|
 |VBA 和 VSTO 互操作性示例|演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Excel 文档级自定义项中的方法。<br /><br /> 只能联机访问本示例。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [编程中的Office任务](../vsto/common-tasks-in-office-programming.md)

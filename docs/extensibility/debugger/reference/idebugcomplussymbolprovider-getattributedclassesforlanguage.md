@@ -1,5 +1,5 @@
 ---
-description: 检索具有指定的特性（在指定的编程语言中实现）的类。
+description: 检索具有指定特性的类，这些特性以指定的编程语言实现。
 title: IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -12,20 +12,21 @@ ms.assetid: e5b1b8b6-52a6-4ade-9a36-644abfa9f4b2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 99898ec45f7a09dc1123a46e2e95d3dba2dbb856
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f502a9249688f9d94691342ef3b9d60254a66698b64674b77b6676e01c15c881
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058919"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377946"
 ---
 # <a name="idebugcomplussymbolprovidergetattributedclassesforlanguage"></a>IDebugComPlusSymbolProvider::GetAttributedClassesForLanguage
-检索具有指定的特性（在指定的编程语言中实现）的类。
+检索具有指定特性的类，这些特性以指定的编程语言实现。
 
 ## <a name="syntax"></a>语法
 
@@ -47,16 +48,16 @@ int GetAttributedClassesForLanguage (
 
 ## <a name="parameters"></a>参数
 `guidLanguage`\
-中语言的唯一标识符。
+[in]语言的唯一标识符。
 
 `pstrAttribute`\
-中特性字符串。
+[in]属性字符串。
 
 `ppEnum`\
-弄返回特性类的枚举。
+[out]返回特性类的枚举。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
@@ -189,5 +190,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

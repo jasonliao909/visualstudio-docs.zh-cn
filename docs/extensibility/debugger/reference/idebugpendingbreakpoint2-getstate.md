@@ -1,6 +1,6 @@
 ---
 description: 获取挂起断点的状态。
-title: IDebugPendingBreakpoint2：：GetState |Microsoft Docs
+title: IDebugPendingBreakpoint2：： GetState |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -44,11 +44,11 @@ int GetState(
 
 ## <a name="parameters"></a>参数
 `pState`\
-[in， out]一 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 结构，该结构用此挂起断点的说明进行填充。
+[in，out]使用此挂起断点的说明填充的 [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 结构。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md)

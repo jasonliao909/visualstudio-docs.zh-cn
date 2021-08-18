@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c24fc5a1e685c80cbc1d122538fbcbae520995614591085effed104e6e094215
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a166f33222515163b330ac0f8a22a7d36b10177a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403414"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051217"
 ---
 # <a name="create-a-basic-project-system-part-1"></a>创建基本项目系统，第1部分
 在 Visual Studio 中，项目是开发人员用来组织源代码文件和其他资产的容器。 项目在 **解决方案资源管理器** 中显示为解决方案的子项目。 项目使你可以组织、构建、调试和部署源代码，并创建对 Web 服务、数据库和其他资源的引用。
@@ -58,7 +58,7 @@ ms.locfileid: "121403414"
 
 - 实现基本模板参数替换。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
  从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
  还必须下载 [项目的托管包框架](https://github.com/tunnelvisionlabs/MPFProj10)的源代码。 将文件提取到要创建的解决方案可访问的位置。
@@ -446,7 +446,7 @@ Templates
 
 1. 按 **F5** 启动调试。 在实验实例中，创建新的 SimpleProject。
 
-2. Visual Studio调用项目工厂以创建项目。
+2. Visual Studio应调用项目工厂来创建项目。
 
 3. 关闭 Visual Studio 的实验实例。
 
@@ -455,7 +455,7 @@ Templates
 
 ### <a name="to-add-a-custom-project-node-icon"></a>添加自定义项目节点图标
 
-1. 在 Resources **文件夹中**，添加名为 的位图 *SimpleProjectNode.bmp。*
+1. 在 Resources **文件夹中** ，添加名为SimpleProjectNode.bmp的 *位图文件*。
 
 2. 在" **属性** "窗口中，将位图减少 16 x 16 像素。 使位图独一无二。
 
@@ -523,16 +523,16 @@ Templates
 
 - *SimpleProject.Resources.SimpleProjectNode.bmp*
 
-  在实例构造期间，基类加载Resources.imagelis.bmp，其中嵌入了中常用的 `ProjectNode` 16 ** x 16 位Resources\imagelis.bmp。 ** 此位图列表以 格式 `SimpleProjectNode` 提供给 `ImageHandler.ImageList` 。 `SimpleProjectNode` 将项目节点位图追加到列表。 将缓存 "图像" 列表中项目节点位图的偏移量，以便以后将其用作公共属性的值 `ImageIndex` 。 Visual Studio 使用此属性来确定显示为项目节点图标的位图。
+  在实例构造期间，基类加载Resources.imagelis.bmp，其中嵌入了中常用的 `ProjectNode` 16 ** x 16 位Resources\imagelis.bmp。 ** 此位图列表以 格式 `SimpleProjectNode` 提供给 `ImageHandler.ImageList` 。 `SimpleProjectNode` 将项目节点位图追加到列表中。 将缓存图像列表中的项目节点位图的偏移量，供以后用作公共 `ImageIndex` 属性的值。 Visual Studio此属性来确定要显示为项目节点图标的位图。
 
 ## <a name="test-the-custom-project-node-icon"></a>测试自定义项目节点图标
- 测试项目工厂，以查看它是否创建了包含自定义项目节点图标的项目层次结构。
+ 测试项目工厂，查看它是否创建具有自定义项目节点图标的项目层次结构。
 
-### <a name="to-test-the-custom-project-node-icon"></a>测试 "自定义项目节点" 图标
+### <a name="to-test-the-custom-project-node-icon"></a>测试自定义项目节点图标
 
-1. 开始调试，并在实验实例中创建新的 SimpleProject。
+1. 开始调试，在实验实例中创建新的 SimpleProject。
 
-2. 请注意，在新创建的项目中，将 *SimpleProjectNode.bmp* 用作项目节点图标。
+2. 请注意，在新建的 *项目中，SimpleProjectNode.bmp* 用作项目节点图标。
 
      ![简单项目“新建项目节点”](../extensibility/media/simpleprojnewprojectnode.png "SimpleProjNewProjectNode")
 
@@ -556,22 +556,22 @@ Templates
     }
     ```
 
-     请注意，$nameSpace $ 和 $className $ 的模板参数没有新值。 在下一部分中，你将学习如何实现模板参数替换。
+     请注意，$nameSpace$ 和 $className$ 的模板参数没有新值。 下一部分将了解如何实现模板参数替换。
 
 ## <a name="substitute-template-parameters"></a>替换模板参数
- 在前面的部分中，已使用属性将项目模板注册 Visual Studio `ProvideProjectFactory` 。 通过以这种方式注册模板文件夹的路径，可以通过重写和扩展类来启用基本模板参数替换 `ProjectNode.AddFileFromTemplate` 。 有关详细信息，请参阅 [新项目生成：在幕后，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
+ 在前一部分中，使用 属性向 Visual Studio模板 `ProvideProjectFactory` 注册了项目模板。 通过按此方式注册模板文件夹的路径，可以重写和展开 类来启用基本模板参数 `ProjectNode.AddFileFromTemplate` 替换。 有关详细信息，请参阅 [新建项目生成：在底层，第二部分](../extensibility/internals/new-project-generation-under-the-hood-part-two.md)。
 
  现在，将替换代码添加到 `AddFileFromTemplate` 类。
 
 ### <a name="to-substitute-template-parameters"></a>替换模板参数
 
-1. 在 *SimpleProjectNode* 文件中，添加以下 `using` 指令。
+1. 在 *SimpleProjectNode.cs* 文件中，添加以下 `using` 指令。
 
    ```csharp
    using System.IO;
    ```
 
-2. `AddFileFromTemplate`使用以下代码替换方法。
+2. 使用 `AddFileFromTemplate` 下面的代码替换 方法。
 
    ```csharp
    public override void AddFileFromTemplate(
@@ -589,28 +589,28 @@ Templates
    }
    ```
 
-3. 在方法中设置断点，就在 `className` 赋值语句之后。
+3. 在 方法中设置断点，就在 `className` 赋值语句之后。
 
-   赋值语句确定命名空间和新类名的合理值。 这两个 `ProjectNode.FileTemplateProcessor.AddReplace` 方法调用使用这些新值替换相应的模板参数值。
+   赋值语句确定命名空间和新类名的合理值。 这两 `ProjectNode.FileTemplateProcessor.AddReplace` 个方法调用通过使用这些新值替换相应的模板参数值。
 
 ## <a name="test-the-template-parameter-substitution"></a>测试模板参数替换
  现在可以测试模板参数替换。
 
 ### <a name="to-test-the-template-parameter-substitution"></a>测试模板参数替换
 
-1. 开始调试，并在实验实例中创建新的 SimpleProject。
+1. 开始调试，在实验实例中创建新的 SimpleProject。
 
-2. 执行在方法中的断点处停止 `AddFileFromTemplate` 。
+2. 执行在 方法的断点 `AddFileFromTemplate` 处停止。
 
-3. 检查和参数的值 `nameSpace` `className` 。
+3. 检查 和 `nameSpace` 参数 `className` 的值。
 
-   - `nameSpace` 提供 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj* 项目模板文件中元素的值。 在本例中，该值为 `MyRootNamespace`。
+   - `nameSpace` 给定 \<RootNamespace> *\Templates\Projects\SimpleProject\SimpleProject.myproj 项目* 模板文件中 元素的值。 在本例中，该值为 `MyRootNamespace`。
 
-   - `className` 为提供类源文件名的值，没有文件扩展名。 在这种情况下，要复制到目标文件夹的第一个文件为 *AssemblyInfo*;因此，className 的值为 `AssemblyInfo` 。
+   - `className` 给定类源文件名的值，不带文件扩展名。 在这种情况下，要复制到目标文件夹的第一个文件是 *AssemblyInfo.cs*;因此，className 的值为 `AssemblyInfo` 。
 
 4. 删除断点，然后按 **F5** 继续执行。
 
-    Visual Studio 应完成创建项目。
+    Visual Studio应完成项目的创建。
 
 5. 在代码编辑器中打开“Program.cs”。 应会看到类似于以下代码的源代码。
 
@@ -633,10 +633,10 @@ Templates
    }
    ```
 
-    请注意，命名空间现在为 `MyRootNamespace` ，类名称现在为 `Program` 。
+    请注意，命名空间现在为 ， `MyRootNamespace` 类名现在为 `Program` 。
 
-6. 开始调试项目。 新项目应编译、运行和显示 "Hello VSX!!!" 显示文本字符串“Hello World!”。
+6. 开始调试项目。 新项目应编译、运行并显示"Hello VSX!!!" 显示文本字符串“Hello World!”。
 
     ![简单项目命令](../extensibility/media/simpleprojcommand.png "SimpleProjCommand")
 
-   祝贺你！ 您已经实现了一个基本的托管项目系统。
+   祝贺你！ 你已实现一个基本的托管项目系统。

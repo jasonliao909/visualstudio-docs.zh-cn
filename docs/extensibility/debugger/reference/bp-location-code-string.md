@@ -52,6 +52,6 @@ typedef struct _BP_LOCATION_CODE_STRING {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)

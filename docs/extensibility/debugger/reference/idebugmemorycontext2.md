@@ -48,7 +48,7 @@ IDebugMemoryContext2 : IUnknown
 |[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|按比较标志指示的方式比较两个上下文。|
 
 ## <a name="remarks"></a>备注
- Visual Studio **的"** 内存"窗口调用 [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)以获取接口，该接口包含用于内存 `IDebugMemoryContext2` 地址的已计算表达式。 然后将此上下文传递给 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt，](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) 以指定要读取或写入的地址。
+ Visual Studio **的"** 内存"窗口调用 [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)以获取接口，该接口包含用于内存地址的评估 `IDebugMemoryContext2` 表达式。 然后将此上下文传递给 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt，](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) 以指定要读取或写入的地址。
 
 ## <a name="requirements"></a>要求
  标头：msdbg.h
@@ -57,7 +57,7 @@ IDebugMemoryContext2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)
 - [GetMemoryContext](../../../extensibility/debugger/reference/idebugreference2-getmemorycontext.md)

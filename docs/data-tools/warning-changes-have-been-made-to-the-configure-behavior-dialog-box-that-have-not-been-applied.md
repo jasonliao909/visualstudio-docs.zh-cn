@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 16bde9a511a01e9928f61075b61b92d7e0b1d4b3897f5a8aed69d3155a94134b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 52e4a35e066e1672bef225f7aafa2a5f7703e1a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122066908"
 ---
 # <a name="warning-changes-have-been-made-to-the-configure-behavior-dialog-box-that-have-not-been-applied"></a>警告：对“配置行为”对话框进行了更改但未应用这些更改
 
@@ -30,6 +30,6 @@ ms.locfileid: "121346448"
 
 - 若要取消以前的更改并继续，请单击 " **否**"。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,6 +1,6 @@
 ---
-description: 此方法通过调用 EvaluateAsync) 方法来取消异步表达式计算。
-title: IDebugExpression2：： Abort |Microsoft Docs
+description: 此方法取消异步表达式计算，因为调用 EvaluateAsync) 方法。
+title: IDebugExpression2：：Abort |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121417283"
 ---
 # <a name="idebugexpression2abort"></a>IDebugExpression2::Abort
-此方法通过调用 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法来取消异步表达式计算。
+此方法取消通过调用 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法启动的异步表达式计算。
 
 ## <a name="syntax"></a>语法
 
@@ -40,12 +40,12 @@ int Abort();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 取消异步表达式计算后，请不要向传递到[附加](../../../extensibility/debugger/reference/idebugprogram2-attach.md)或[附加](../../../extensibility/debugger/reference/idebugengine2-attach.md)方法的事件回调发送[IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)事件。
+ 取消异步表达式计算时，不要将 [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 事件发送到传递给 [Attach](../../../extensibility/debugger/reference/idebugprogram2-attach.md) 或 [Attach](../../../extensibility/debugger/reference/idebugengine2-attach.md) 方法的事件回调。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

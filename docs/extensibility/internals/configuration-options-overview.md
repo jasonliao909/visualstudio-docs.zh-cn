@@ -11,14 +11,15 @@ ms.assetid: f4ad4dd3-b39e-42df-ad89-d403cdf24a2b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ad30e3f7b91e8a76715f66d9f6701597f3830bd6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0bde8342961136cddf5a89bb5799abacef462e5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028964"
 ---
 # <a name="configuration-options-overview"></a>配置选项概述
 中的项目 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可以支持可生成、调试、运行和/或部署的多个配置。 配置是用命名的属性集（通常是编译器开关和文件位置）描述的生成类型。 默认情况下，新的解决方案包含两个配置： " *调试* " 和 " *发布*"。 可以使用默认设置应用这些配置，或修改这些配置以满足特定的解决方案和/或项目要求。 可以通过两种方式生成某些包：作为 ActiveX 编辑器或就地组件。 但项目不需要支持多个配置。 如果只有一个配置可用，则该配置将映射到所有解决方案配置中。
@@ -46,7 +47,7 @@ ms.locfileid: "105057125"
 
  用户可以通过选择层次结构中的解决方案来查看和设置解决方案配置参数， (解决方案资源管理器) 并打开属性页。 同样，您可以通过在解决方案资源管理器中选择一个项目，然后打开该项目的属性页来查看和设置项目配置参数。
 
- 用户还可以使用 "发布" 配置设置生成一个项目，并在必要时使用 "调试" 配置设置。 有关详细信息，请参阅 [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)。
+ 用户还可以使用 "发布" 配置设置生成一个项目，并在必要时使用 "调试" 配置设置。 有关详细信息，请参阅[用于生成的 Project 配置](../../extensibility/internals/project-configuration-for-building.md)。
 
  下图显示了如何实现支持解决方案和项目配置的接口：
 
@@ -68,9 +69,9 @@ ms.locfileid: "105057125"
 
 - 某些对象是单独实现的。 例如，在单独的线程上生成项目和解决方案，并将该对象与描述生成配置的对象分开管理。
 
-  有关上图中的配置对象接口和配置提供程序对象接口的详细信息，请参阅 [项目配置对象](../../extensibility/internals/project-configuration-object.md)。 此外， [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md) 提供了有关配置生成器和构建依赖对象接口的详细信息，以及 [用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md) 。 最后， [输出的项目配置](../../extensibility/internals/project-configuration-for-output.md) 描述输出组和输出对象接口，并使用属性页查看和设置依赖于配置的属性。
+  有关上图中的配置对象接口和配置提供程序对象接口的详细信息，请参阅[Project 配置对象](../../extensibility/internals/project-configuration-object.md)。 此外， [Project 的生成配置](../../extensibility/internals/project-configuration-for-building.md)提供了有关配置生成器和构建依赖对象接口的详细信息，以及[用于管理部署的 Project 配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)。 最后， [Project 输出的配置](../../extensibility/internals/project-configuration-for-output.md)描述输出组和输出对象接口，并使用属性页来查看和设置与配置相关的属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2>
-- [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)
+- [用于生成的 Project 配置](../../extensibility/internals/project-configuration-for-building.md)
 - [解决方案配置](../../extensibility/internals/solution-configuration.md)

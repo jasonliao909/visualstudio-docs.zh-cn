@@ -52,6 +52,6 @@ int SetCondition(
 ## <a name="remarks"></a>备注
  先前与挂起断点关联的任何条件都将丢失。 将调用从此挂起断点绑定的所有断点，以将其条件设置为参数中指定的值 `bpCondition` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)
 - [BP_CONDITION](../../../extensibility/debugger/reference/bp-condition.md)

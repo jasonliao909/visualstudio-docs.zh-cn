@@ -11,17 +11,18 @@ ms.assetid: 5f95fd0c-fdce-497f-9f54-2ad8749494e9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41d004a9b226646dd1196f1debc244cdf11efe32
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 692d5fd16912be8645e99fd2b54a8fbb4871b007
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035093"
 ---
 # <a name="idebugenumfieldgetstringfromvalue"></a>IDebugEnumField::GetStringFromValue
 此方法获取给定其值的枚举常量的名称。
@@ -55,5 +56,5 @@ int GetStringFromValue(
 ## <a name="remarks"></a>备注
  如果有多个与同一值关联的名称，则将返回在枚举中定义的第一个名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)

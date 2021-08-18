@@ -1,6 +1,6 @@
 ---
 title: 实现语法着色 |Microsoft Docs
-description: 了解如何使用托管包框架的语言服务功能 (MPF) 在 Visual Studio 中实现语法着色。
+description: 了解如何通过使用托管包框架的语言服务功能 (MPF) 实现 Visual Studio 语法着色。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,19 +12,20 @@ ms.assetid: 96e762ca-efd0-41e7-8958-fda4897c8c7a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c46cea481eceadef5118388633f84402870a209
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fd8686ddae6654ab4ff1411c21b342b77ba4ba65
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105069603"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049982"
 ---
 # <a name="implementing-syntax-coloring"></a>实现语法着色
 当语言服务提供语法着色时，分析器会将一行文本转换为可着色项的数组，并返回对应于这些可着色项的标记类型。 分析器应返回属于可着色项列表的标记类型。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据 colorizer 对象分配给相应标记类型的属性，在代码窗口中显示每个可着色项。
 
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 不指定分析器接口，并且分析器实现完全由你完成。 但是，Visual Studio 语言包项目中提供了默认的分析器实现。 对于托管代码，托管包框架 (MPF) 提供对着色文本的完整支持。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 不指定分析器接口，并且分析器实现完全由你完成。 但 Visual Studio 语言包项目中提供了默认的分析器实现。 对于托管代码，托管包框架 (MPF) 提供对着色文本的完整支持。
 
  旧版语言服务是作为 VSPackage 的一部分实现的，但实现语言服务功能的更新方法是使用 MEF 扩展。 若要深入了解如何实现语法着色，请参阅 [演练：突出显示文本](../../extensibility/walkthrough-highlighting-text.md)。
 
@@ -64,7 +65,7 @@ ms.locfileid: "105069603"
 ## <a name="managed-package-framework-colorizer"></a>托管包框架 Colorizer
  托管包框架 (MPF) 提供实现 colorizer 所需的所有类。 语言服务类应继承 <xref:Microsoft.VisualStudio.Package.LanguageService> 类并实现所需的方法。 必须通过实现接口提供扫描程序和分析器 <xref:Microsoft.VisualStudio.Package.IScanner> ，并从方法返回该接口的实例， <xref:Microsoft.VisualStudio.Package.LanguageService.GetScanner%2A> (必须在类) 中实现的方法之一 <xref:Microsoft.VisualStudio.Package.LanguageService> 。 有关详细信息，请参阅 [旧版语言服务中的语法着色](../../extensibility/internals/syntax-colorizing-in-a-legacy-language-service.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：使用内置的可着色项](../../extensibility/internals/how-to-use-built-in-colorable-items.md)
 - [自定义可着色项](../../extensibility/internals/custom-colorable-items.md)
 - [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

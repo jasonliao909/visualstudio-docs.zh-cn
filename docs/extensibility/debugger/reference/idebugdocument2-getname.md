@@ -11,17 +11,18 @@ ms.assetid: 6f09ff09-b0cf-4472-8fc8-143991f0ceb1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 49c9a2b4fd95fbb24b28b69003c8e462b09be38b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 214bd95d1dec9917e89c9f3cf284599ca4115c78
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096435"
 ---
 # <a name="idebugdocument2getname"></a>IDebugDocument2::GetName
 获取文档的名称，格式为多个窗体中的一种。
@@ -55,6 +56,6 @@ int GetName(
 ## <a name="remarks"></a>备注
  例如，此方法可以将文档名称作为标题返回，或以文件名或文件名称的一部分形式返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

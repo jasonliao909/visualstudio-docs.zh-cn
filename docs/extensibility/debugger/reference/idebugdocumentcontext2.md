@@ -11,14 +11,15 @@ ms.assetid: 2a446c71-8100-4c09-a1cc-fd446bd74030
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a20473d2076932987ecc352c8719f1d9133ed198
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b28f18061f6a0bc76ad69da6a2fc27b0d30593f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066511"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096383"
 ---
 # <a name="idebugdocumentcontext2"></a>IDebugDocumentContext2
 此接口表示源文件文档中的位置。
@@ -56,7 +57,7 @@ IDebugDocumentContext2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugcanstopevent2-getdocumentcontext.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugactivatedocumentevent2-getdocumentcontext.md)
 - [GetDocumentContext](../../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md)

@@ -1,6 +1,6 @@
 ---
-title: 从 VSTO 外接程序项目中的服务绑定到数据
-description: 了解如何向 Microsoft Word 文档添加控件，如何将控件绑定到从 MSDN Content Service 检索到的数据，以及如何在运行时对事件做出响应。
+title: 绑定到外接程序项目中VSTO服务的数据
+description: 了解如何将控件添加到Microsoft Word文档、将控件绑定到从 MSDN 内容服务检索到的数据，以及运行时响应事件。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b6993cb3eebc7641f4486bdc617ecb78e40aa05c
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 1a80c4f6dea1861bd91cfcfe4985975fc7a5e10e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082668"
 ---
-# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>演练：在 VSTO 外接程序项目中绑定到服务中的数据
+# <a name="walkthrough-bind-to-data-from-a-service-in-a-vsto-add-in-project"></a>演练：绑定到外接程序项目中VSTO服务的数据
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件。 本演练演示如何在运行时将控件添加到 Microsoft Office Word 文档中、将控件绑定到从 MSDN Content Service 检索到的数据以及响应事件。
 
  **适用于：** 本主题中的信息适用于 Word 2010 的应用程序级项目。 有关详细信息，请参阅[按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。
@@ -32,7 +33,7 @@ ms.locfileid: "107824523"
 
 - 在运行时将 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控件添加到文档中。
 
-- 将 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控件绑定到 web 服务中的数据。
+- 将 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 控件绑定到 Web 服务的数据。
 
 - 响应 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Entering> 控件的 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 事件。
 
@@ -52,14 +53,14 @@ ms.locfileid: "107824523"
 
 1. 使用 Visual Basic 或 C# 创建一个名为 **MTPS Content Service** 的 Word VSTO 外接程序项目。
 
-     有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+     有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 
      Visual Studio 会打开 `ThisAddIn.vb` 或 `ThisAddIn.cs` 文件并将项目添加到“解决方案资源管理器” 中。
 
-## <a name="add-a-web-service"></a>添加 web 服务
- 对于本演练，请使用名为 MTPS Content Service 的 web 服务。 此 web 服务以 XML 字符串或纯文本的形式返回指定 MSDN 文章中的信息。 下一步演示如何在内容控件中显示返回的信息。
+## <a name="add-a-web-service"></a>添加 Web 服务
+ 对于本演练，请使用名为 MTPS 内容服务的 Web 服务。 此 Web 服务以 XML 字符串或纯文本的形式从指定的 MSDN 项目返回信息。 下一步演示如何在内容控件中显示返回的信息。
 
-### <a name="to-add-the-mtps-content-service-to-the-project"></a>向项目中添加 MTPS 内容服务
+### <a name="to-add-the-mtps-content-service-to-the-project"></a>将 MTPS 内容服务添加到项目
 
 1. 在 **“数据”** 菜单上，单击 **“添加新数据源”**。
 
@@ -75,8 +76,8 @@ ms.locfileid: "107824523"
 
 6. 在“添加引用向导”  对话框中单击“完成” 。
 
-## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>在运行时添加内容控件并绑定到数据
- 在 VSTO 外接程序项目中，在运行时添加和绑定控件。 对于本演练，请将内容控件配置为当用户在控件内单击时，从 web 服务检索数据。
+## <a name="add-a-content-control-and-bind-to-data-at-run-time"></a>添加内容控件并运行时绑定到数据
+ 在 VSTO 外接程序项目中，在运行时添加和绑定控件。 对于本演练，请配置内容控件，以在用户单击控件内部时从 Web 服务检索数据。
 
 ### <a name="to-add-a-content-control-and-bind-to-data"></a>添加内容控件并绑定到数据
 
@@ -90,7 +91,7 @@ ms.locfileid: "107824523"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet4":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet4":::
 
-3. 将以下方法添加到 `ThisAddIn` 类。 此方法初始化创建请求并将请求发送到 web 服务所需的对象。
+3. 将以下方法添加到 `ThisAddIn` 类。 此方法初始化创建请求并将请求发送到 Web 服务所需的对象。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_bindingdatatocontentcontrol/ThisAddIn.vb" id="Snippet6":::
@@ -110,11 +111,11 @@ ms.locfileid: "107824523"
 
 ### <a name="to-test-the-vsto-add-in"></a>若要测试 VSTO 外接程序
 
-1. 按 F5 。
+1. 按 **F5**。
 
 2. 在内容控件内单击。
 
      随即从 MTPS Content Service 下载信息并将信息显示在内容控件中。
 
-## <a name="see-also"></a>另请参阅
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+## <a name="see-also"></a>请参阅
+- [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)

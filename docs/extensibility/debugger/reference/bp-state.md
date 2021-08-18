@@ -1,5 +1,5 @@
 ---
-description: 指定是否存在绑定断点，并指定是否启用该断点。
+description: 指定绑定断点是否存在，还指定是否已启用。
 title: BP_STATE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121434446"
 ---
 # <a name="bp_state"></a>BP_STATE
-指定是否存在绑定断点，并指定是否启用该断点。
+指定绑定断点是否存在，还指定是否已启用。
 
 ## <a name="syntax"></a>语法
 
@@ -50,7 +50,7 @@ public enum enum_BP_STATE {
 
 ## <a name="fields"></a>字段
 `BPS_NONE`\
-指定不存在断点。
+指定不存在任何断点。
 
 `BPS_DELETED`\
 指定已删除断点。
@@ -62,14 +62,14 @@ public enum enum_BP_STATE {
 指定启用断点。
 
 ## <a name="remarks"></a>备注
-从 [GetState 方法](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 返回。
+从 [GetState](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getstate.md) 方法返回。
 
 ## <a name="requirements"></a>要求
-标头：msdbg.h
+标头： msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

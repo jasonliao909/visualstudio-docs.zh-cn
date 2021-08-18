@@ -10,14 +10,15 @@ ms.assetid: 70737387-c52f-4dae-8865-77d4b203bf25
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 622d61c6083288f7293258feb3743ef7cfdd0b8b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 128877b9a5324f78eb4b935586020bbdb999fdf5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105055279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051061"
 ---
 # <a name="bind-breakpoints"></a>绑定断点
 如果用户通过按 **F9** 设置断点，则 IDE 会形成请求，并提示调试会话创建断点。
@@ -29,7 +30,7 @@ ms.locfileid: "105055279"
 
 2. 将断点请求发送到调试会话，并将其发送到所有相关的 DEs。 选择处理断点的任何 DE 都将创建一个相应的挂起断点。
 
-3. 调试会话收集挂起的断点，并将其发送回 (Visual Studio) 调试组件的调试包。
+3. 调试会话收集挂起的断点，并将其发送回调试包 (Visual Studio) 的调试组件。
 
 4. 调试包将提示调试会话将挂起断点绑定到代码或数据。 调试会话将此请求发送到所有相关的 DEs。
 
@@ -55,5 +56,5 @@ ms.locfileid: "105055279"
 
  如果 DE 处理断点，则无法绑定它，但其他一些 DE 可能会绑定它，它会返回警告。 IDE 通过将问题标志符号放置在源代码行左侧的断点标志符号中来做出响应。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)
