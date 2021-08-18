@@ -1,6 +1,6 @@
 ---
 title: 如何：添加删除器方法 |Microsoft Docs
-description: 了解如何在 Visual Studio 的 BDC 设计器中添加删除器方法，使最终用户可以从 SharePoint 站点上的外部列表中删除数据记录。
+description: 了解如何在 Visual Studio 的 BDC 设计器中添加删除器方法，使最终用户可以从 SharePoint 网站上的外部列表中删除数据记录。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,17 +19,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f5c9dc0a5ca6b7651b4ddc1f4b58a8b72305a1a5
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 2ecdb9a9dde1ac10e1d4037078fe272f7e3229952830bc6fca3308e8f7bf4105
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217991"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121385310"
 ---
 # <a name="how-to-add-a-deleter-method"></a>如何：添加删除器方法
-  您可以通过向模型中添加删除器方法，使最终用户能够从 SharePoint 站点上的外部列表中删除数据记录。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
+  您可以通过向模型中添加删除器方法，使最终用户可以从 SharePoint 站点的外部列表中删除数据记录。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
 
 ### <a name="to-create-a-deleter-method"></a>创建删除器方法
 
@@ -68,7 +69,7 @@ ms.locfileid: "106217991"
     :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet6":::
     :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet6":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)

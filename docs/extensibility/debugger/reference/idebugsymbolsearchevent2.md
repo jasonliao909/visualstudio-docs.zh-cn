@@ -46,7 +46,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 ## <a name="remarks"></a>备注
  即使无法加载符号，也会发送此事件。 调用 `IDebugSymbolSearchEvent2::GetSymbolSearchInfo` 允许此事件的处理程序确定模块是否实际具有任何符号。
 
- Visual Studio此事件来更新"模块"窗口中已加载 **符号的状态。**
+ Visual Studio此事件在"模块"窗口中更新已加载 **符号的状态。**
 
 ## <a name="requirements"></a>要求
  标头：msdbg.h
@@ -55,7 +55,7 @@ IDebugSymbolSearchEvent2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

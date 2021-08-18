@@ -1,6 +1,6 @@
 ---
-title: IDE 中的选择和货币 |Microsoft Docs
-description: 了解 Vspackage 如何参与货币跟踪。 Visual Studio IDE 使用选择上下文维护当前选定对象的相关信息。
+title: IDE 中的选择和货币|Microsoft Docs
+description: 了解 VSPackage 如何参与货币跟踪。 IDE Visual Studio使用选择上下文维护有关当前所选对象的信息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,54 +16,54 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e167d963592e6f555082978c07d3fd7a70cb5fa82636864f5518665bffc6d38f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f540618c6b125012d332a683ba534fbaa5082990
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275185"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049540"
 ---
 # <a name="selection-and-currency-in-the-ide"></a>IDE 中的选择和货币
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]集成开发环境 (IDE) 使用选择 *上下文* 维护用户当前选择的对象的相关信息。 使用选择上下文，Vspackage 可以通过两种方式参与货币跟踪：
+IDE (集成) 通过使用选择上下文 来维护有关用户当前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 所选对象 *的信息*。 借助选择上下文，VSPackage 可以通过两种方式参与货币跟踪：
 
-- 将有关 Vspackage 的货币信息传播到 IDE。
+- 将 VSPackage 的货币信息传播到 IDE。
 
-- 监视用户当前在 IDE 内处于活动状态的选定内容。
+- 通过监视用户当前在 IDE 中的活动选择。
 
 ## <a name="selection-context"></a>选择上下文
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]Ide 全局地在其自己的全局选择上下文对象中跟踪 IDE 货币。 下表显示组成选择上下文的元素。
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 在其自己的全局选择上下文对象中全局跟踪 IDE 货币。 下表显示了组成选择上下文的元素。
 
 |元素|说明|
 |-------------|-----------------|
-|当前层次结构|通常为当前项目;空的当前层次结构表示整个解决方案是最新的。|
-|当前 ItemID|当前层次结构中的选定项;如果项目窗口中有多个选择，则可以有多个当前项。|
-|当前 `SelectionContainer`|保存一个或多个属性窗口应显示其属性的对象。|
+|当前层次结构|通常为当前项目;NULL 当前层次结构指示整个解决方案是最新的。|
+|当前 ItemID|当前层次结构中的选定项;当项目窗口中有多个选择时，可以有多个当前项。|
+|当前 `SelectionContainer`|保存对象应显示其属性属性窗口一个或多个对象。|
 
  此外，环境维护两个全局列表：
 
 - 活动 UI 命令标识符的列表
 
-- 当前处于活动状态的元素类型的列表。
+- 当前活动元素类型的列表。
 
-### <a name="window-types-and-selection"></a>窗口类型和选定内容
- [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 将窗口分为两种类型：
+### <a name="window-types-and-selection"></a>窗口类型和选择
+ [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]IDE 将窗口组织为两种常规类型：
 
-- 层次结构-类型窗口
+- 层次结构类型窗口
 
-- 框架窗口，如工具窗口和文档窗口
+- 框架窗口，例如工具和文档窗口
 
-  IDE 会以不同的方式跟踪每个窗口类型的货币。
+  IDE 以不同方式跟踪其中每种窗口类型的货币。
 
-  最常见的项目类型窗口是 IDE 控制的解决方案资源管理器。 项目类型窗口跟踪全局选择上下文的全局层次结构和 ItemID，窗口依赖于用户的选择来确定当前层次结构。 对于项目类型窗口，环境提供了全局服务 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> ，通过该服务，vspackage 可以监视开放式元素的当前值。 环境中的属性浏览由这一全局服务驱动。
+  最常见的项目类型窗口是 IDE 控制的解决方案资源管理器。 项目类型窗口跟踪全局选择上下文的全局层次结构和 ItemID，该窗口依赖于用户的选择来确定当前层次结构。 对于项目类型窗口，环境提供全局服务 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> ，VSPackage 可以通过该服务监视打开元素的当前值。 环境中的属性浏览由此全局服务驱动。
 
-  另一方面，框架窗口使用框架窗口中的 DocObject 将 SelectionContext 值推送 (层次结构/ItemID/SelectionContainer 三个) 。 . 框架 windows 使用该服务 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 实现此目的。 DocObject 可以仅推送选择容器的值，而将层次结构和 ItemID 的本地值保持不变，这对于 MDI 子文档而言是典型值。
+  另一方面，框架窗口使用框架窗口中的 DocObject 推送 hierarchy/ItemID/SelectionContainer t一 (SelectionContext 值) 。 . 框架窗口使用此 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 服务。 DocObject 只能推送选择容器的值，使层次结构和 ItemID 的本地值保持不变，就像 MDI 子文档的典型一样。
 
 ### <a name="events-and-currency"></a>事件和货币
- 可能会发生两种类型的事件，这些事件会影响环境的货币概念：
+ 可能会发生两种类型的事件，这些事件可能会影响环境的货币概念：
 
-- 传播到全局级别并更改窗口框架选择上下文的事件。 此类事件的示例包括正在打开的 MDI 子窗口、打开的全局工具窗口或正在打开的项目类型工具窗口。
+- 传播到全局级别并更改窗口框架选择上下文的事件。 此类事件的示例包括正在打开的 MDI 子窗口、正在打开的全局工具窗口或正在打开的项目类型工具窗口。
 
-- 更改窗口框架选择上下文中所跟踪元素的事件。 示例包括更改 DocObject 中的选定内容或更改项目类型窗口中的选定内容。
+- 更改窗口框架选择上下文中跟踪的元素的事件。 示例包括更改 DocObject 中的选择或更改项目类型窗口中的选择。
 
 ## <a name="see-also"></a>请参阅
 - [选择上下文对象](../../extensibility/internals/selection-context-objects.md)

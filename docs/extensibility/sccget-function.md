@@ -11,14 +11,15 @@ ms.assetid: 09a18bd2-b788-411a-9da6-067d806e46f6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 805c19b0c326e8389b4e1905edf370ad042aac92
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 0c2b3927da5b7d59100a31e9c347d4f32e2118e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049514"
 ---
 # <a name="sccget-function"></a>SccGet 函数
 此函数检索一个或多个文件的副本，以便进行查看和编译，但不能进行编辑。 在大多数系统中，文件被标记为只读。
@@ -64,7 +65,7 @@ SCCRTN SccGet(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|获取操作成功。|
 |SCC_E_FILENOTCONTROLLED|此文件不受源代码管理。|
@@ -107,6 +108,6 @@ SCCRTN SccGet(
 
     6. 现在可以签入更新后的 *b.txt* 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的 Bitflags](../extensibility/bitflags-used-by-specific-commands.md)

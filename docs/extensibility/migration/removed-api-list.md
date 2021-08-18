@@ -11,18 +11,18 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 4501fdb465452eff1623e39c50e8c97f3bb5ca5b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 707002e3ec7038b15c7ef813b76e0d9691b264840b4134c701b2fbedbed51df1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041641"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447917"
 ---
 # <a name="visual-studio-2022-sdk-removed-apis"></a>Visual Studio 2022 SDK 已删除 API
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-以下 API 已从 Visual Studio SDK 中删除，无法再使用，请参阅每个部分，详细了解如何更新代码。
+以下 API 已从 Visual Studio SDK 中删除，无法再使用。请参阅每个部分，详细了解如何更新代码。
 
 * [`IVsImageService`](#ivsimageservice)
 * [`IBlockContextProvider`](#iblockcontextprovider)
@@ -49,7 +49,7 @@ ms.locfileid: "122041641"
 | GetIconForFile             | GetImageMonikerForFile                 |
 | GetIconForFileEx           | GetImageMonikerForFile                 |
 
-`IVsImageService`的 Add 和 Get 方法按名称引用自定义图像 (字符串) 而不是名字对象。  最好将代码切换为仅使用名字对象来引用自定义图像，但如果这证明不切实际，则有几个方法允许你将名称与名字对象 `IVsImageService2` 关联：
+`IVsImageService`的 Add 和 Get 方法按名称引用自定义图像 (字符串) ，而不是名字对象。  最好将代码切换为仅使用名字对象来引用自定义图像，但如果这证明不切实际，则有几个方法允许你将名称与名字对象 `IVsImageService2` 关联：
 
 * `TryAssociateNameWithMoniker`
 * `GetImageMonikerForName`
@@ -134,7 +134,7 @@ Visual Studio 2022 (中删除异步解决方案加载 (ASL) 和轻型解决方�
 
 ## <a name="new-wpf-xaml-designer-for-net-framework"></a>面向 .NET Framework 的新版 WPF XAML 设计器
 
-.NET Framework 的当前 WPF XAML 设计器 已弃用，并且将替换为适用于 .NET Framework 的新 WPF XAML 设计器，该版本基于用于 .NET 的 WPF XAML 设计器 (.NET Core) 的相同体系结构。 这也意味着 WPF .NET Framework和 Microsoft 控制扩展性.design.dll模型。Windows。不再支持 Design.Extensibility。 适用于 XAML 设计器 的新 WPF .NET Framework 将提供与适用于 .NET 的 WPF XAML 设计器 (.NET Core) 。 如果已创建 .NET .designtools.dll (.NET Core) 的一个扩展，该扩展适用于适用于 .NET Framework 的新 WPF XAML 设计器。 请参阅下面的迁移链接，以进一步了解如何迁移到 WPF 平台的新扩展性模型 (.NET Framework.NET Core) 和 UWP 平台。 
+.NET Framework 的当前 WPF XAML 设计器 已弃用，并且将替换为适用于 .NET Framework 的新 WPF XAML 设计器，该体系结构与用于 .NET 的 WPF XAML 设计器 (.NET Core) 的体系结构相同。 这也意味着 WPF .NET Framework和 Microsoft 控制扩展性.design.dll模型。Windows。不再支持 Design.Extensibility。 适用于 XAML 设计器 的新 WPF .NET Framework 将提供与适用于 .NET (.NET Core) 的 WPF XAML 设计器相同的扩展性模型。 如果已创建 .NET .designtools.dll (.NET Core) 的 WPF 扩展，则同一扩展适用于适用于 .NET Framework 的新 WPF XAML 设计器。 请参阅下面的迁移链接，以进一步了解如何迁移到 WPF 平台的新扩展性模型 (.NET Framework以及 .NET Core) 和 UWP 平台。 
 
 ### <a name="recommended-updates"></a>建议的更新
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5b9e804e74ae43d15f0fc1f179295f107b65b61d5f2a3e38c7d5d4f8baa9e6bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: afecc77ef3b38c9c6e7b106ce0f76fb5c167719f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433679"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035041"
 ---
 # <a name="idebugmethodfieldiscustomattributedefined"></a>IDebugMethodField::IsCustomAttributeDefined
 确定是否定义了特定的自定义属性。
@@ -48,5 +48,5 @@ int IsCustomAttributeDefined(
 ## <a name="return-value"></a>返回值
  如果S_OK定义自定义属性，则返回 S_FALSE。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)

@@ -61,7 +61,7 @@ int EnumFrameInfo (
 ## <a name="remarks"></a>备注
  线程的帧按顺序枚举，当前帧首先枚举，最后枚举最早的帧。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

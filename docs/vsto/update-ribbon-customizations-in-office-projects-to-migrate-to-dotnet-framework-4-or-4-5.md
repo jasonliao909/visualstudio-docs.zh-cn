@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3c0bfb5920a4e6b005fb8a707732132854d7a99d6ce686450bcf813867ef6c51
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0f40e0e3bfd2e5aed59cddb9d99f7d89c3b2aaaa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121285148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025688"
 ---
 # <a name="update-ribbon-customizations-migrated-to-net-framework-45"></a>更新已迁移到 .NET Framework 4.5 的功能区自定义项
 
@@ -188,6 +188,6 @@ Me.tab1.Position = Me.Factory.RibbonPosition.AfterOfficeId("TabHome")
 this.tab1.Position = this.Factory.RibbonPosition.AfterOfficeId("TabHome");
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [将 Office 解决方案迁移到 .NET Framework 4 或更高版本](../vsto/migrating-office-solutions-to-the-dotnet-framework-4-or-later.md)
 - [功能区设计器](../vsto/ribbon-designer.md)

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0fdc97b8ef15b4fdfd8fee13affb52b1935b80f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ace86c0661fa694e9e728cf38ba302626242836ba24ae0232cc8bd0cb3b281a4
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041706"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121447943"
 ---
 # <a name="wizard-support-for-nested-projects"></a>嵌套项目的向导支持
 IDE 运行可实现嵌套项目的父项目的两个向导： "**新建 Project** 向导" 和 "**添加项** 向导"。

@@ -1,6 +1,6 @@
 ---
-description: 继续执行线程。
-title: IDebugThread2：： Resume |Microsoft Docs
+description: 恢复线程的执行。
+title: IDebugThread2：：Resume |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 36aad682-b0b9-40a2-b3fc-f0e61d41cdbc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 93552bac60d16a21212bfa89816481cf7099d399
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3bde7f2f80e64b04bdccc0c75006553f813b5763a352e1ecbae22d37781c70f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053017"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292007"
 ---
 # <a name="idebugthread2resume"></a>IDebugThread2::Resume
-继续执行线程。
+恢复线程的执行。
 
 ## <a name="syntax"></a>语法
 
@@ -42,16 +43,16 @@ int Resume (
 
 ## <a name="parameters"></a>参数
 `pdwSuspendCount`\
-弄返回恢复操作后的挂起计数。
+[out]返回恢复操作后的挂起计数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 对此方法的每个调用都将减少挂起计数，直到达到0，此时将实际恢复执行。 此挂起计数显示在 " **线程** 调试" 窗口中。
+ 每次调用此方法时，挂起计数会一直减到 0，此时实际会恢复执行。 此挂起计数显示在"线程调试 **"** 窗口中。
 
- 对于对此方法的每个调用，必须有对 [挂起](../../../extensibility/debugger/reference/idebugthread2-suspend.md) 方法的以前调用。 "挂起计数" 确定到 `IDebugThread2::Suspend` 目前为止已调用方法的次数。
+ 每次调用此方法时，都必须以前调用 [Suspend](../../../extensibility/debugger/reference/idebugthread2-suspend.md) 方法。 挂起计数确定到目前为止调用方法 `IDebugThread2::Suspend` 多少次。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [挂起](../../../extensibility/debugger/reference/idebugthread2-suspend.md)

@@ -70,6 +70,6 @@ int SetValueAsReference(
 |`E_SETVALUE_VALUE_IS_READONLY`|该值是只读的，无法设置。|
 |`E_NOTIMPL`|该方法未实现。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

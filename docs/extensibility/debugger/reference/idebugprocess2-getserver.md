@@ -1,6 +1,6 @@
 ---
-description: 获取正在运行此过程的服务器。
-title: IDebugProcess2：：GetServer |Microsoft Docs
+description: 获取运行此进程的服务器。
+title: IDebugProcess2：： GetServer |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -25,7 +25,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121416269"
 ---
 # <a name="idebugprocess2getserver"></a>IDebugProcess2::GetServer
-获取正在运行此过程的服务器。
+获取运行此进程的服务器。
 
 ## <a name="syntax"></a>语法
 
@@ -43,14 +43,14 @@ int GetServer(
 
 ## <a name="parameters"></a>参数
 `ppServer`\
-[out]返回一 [个 IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 对象，该对象表示正在运行此过程的服务器。
+弄返回一个 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 对象，该对象表示运行此进程的服务器。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 可以在单个计算机上运行多个服务器。
+ 一台计算机上可以运行多台服务器。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

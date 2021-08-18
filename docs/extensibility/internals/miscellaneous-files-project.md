@@ -1,5 +1,5 @@
 ---
-title: 其他文件Project |Microsoft Docs
+title: 杂项文件Project |Microsoft Docs
 description: 了解两种类型的编辑器，这些编辑器可用于打开 Visual Studio 项目中的文件，以及项目在确定使用哪个编辑器时的角色。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -38,7 +38,7 @@ ms.locfileid: "121337885"
 
  杂项文件项目不要求用户使用"新建文件"对话框 **Project创建它**。 此外，杂项文件项目不会永久管理项目成员列表。 它使用可选功能来记录每个用户最近使用的文件列表。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

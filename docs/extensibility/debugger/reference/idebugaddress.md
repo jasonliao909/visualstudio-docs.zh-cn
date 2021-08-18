@@ -11,14 +11,15 @@ ms.assetid: bc709ff7-4966-4f36-9af2-690efe2cea1d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 89e192f61e4cda809e8e6c90106cbe081392a044
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4626e76d84b49411045578b337085d90ebee3ad5af25562443e6382801a8ac8c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094414"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121293230"
 ---
 # <a name="idebugaddress"></a>IDebugAddress
 此接口表示项的地址。 它由符号处理程序返回。
@@ -52,6 +53,6 @@ IDebugAddress : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [DEBUG_ADDRESS](../../../extensibility/debugger/reference/debug-address.md)

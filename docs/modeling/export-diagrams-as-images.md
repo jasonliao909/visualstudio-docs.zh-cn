@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 9482d24bee3d941724a633b77ec878c69df3d36e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 777d78bb9739ffc51db1e271e4e9bc6979256d359b123930b5556705b9cad0f0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040380"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121411069"
 ---
 # <a name="export-diagrams-as-images"></a>将关系图导出为图像
 

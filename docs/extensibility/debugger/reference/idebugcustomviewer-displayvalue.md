@@ -11,17 +11,18 @@ ms.assetid: 7a538248-5ced-450e-97cd-13fabe35fb1c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 11a93ba7a3367a9ff61debfe338c349549ee429d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a3ff715cadd6499d74d3704faa9ad0e078d0838ee931b4fc6b68c4588fb45cc2
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077572"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377816"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 调用此方法以显示指定的值。
@@ -67,7 +68,7 @@ int DisplayValue(
 
  若要支持更改给定 [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md) 对象上的值，可以使用 [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md) 方法（如果值可以表示为字符串）。 否则，必须 `DisplayValue` 在实现接口的同一对象上创建自定义接口，该接口独占到实现此方法的表达式计算器 `IDebugProperty3` 。 此自定义接口将提供用于更改任意大小或复杂性的数据的方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCustomViewer](../../../extensibility/debugger/reference/idebugcustomviewer.md)
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [SetValueAsStringWithError](../../../extensibility/debugger/reference/idebugproperty3-setvalueasstringwitherror.md)

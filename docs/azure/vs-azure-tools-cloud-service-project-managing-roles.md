@@ -8,12 +8,12 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
-ms.openlocfilehash: 072fe84c0ca9c4fd4ef817457f912c0c43c81d69
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d7f89334d4552fa56a046c4a4723bffeeb52d5681f30430f49d783875bbc2357
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091729"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121363972"
 ---
 # <a name="managing-roles-in-azure-cloud-services-with-visual-studio"></a>使用 Visual Studio 管理 Azure 云服务中的角色
 创建 Azure 云服务后，即可向其添加新角色或从中删除现有角色。 也可以导入现有项目并将其转换为角色。 例如，可以导入 ASP.NET Web 应用程序并将其指定为 Web 角色。
@@ -45,7 +45,7 @@ ms.locfileid: "122091729"
 ## <a name="readding-a-role-to-an-azure-cloud-service-project"></a>将角色重新添加到 Azure 云服务项目
 如果从云服务项目中删除了角色，但后来又决定将该角色添加回项目中，则只会添加角色声明和基本特性，如终结点和诊断信息。 不会向 `ServiceDefinition.csdef` 文件或 `ServiceConfiguration.cscfg` 文件添加其他资源或引用。 如果想添加此类信息，则需要将其手动添加回这些文件中。
 
-例如，你可能删除了 Web 服务角色，但后来又决定将此角色添加回解决方案中。 如果这样做，会出现错误。 为了防止出现此错误，必须将以下 XML 中显示的 `<LocalResources>` 元素添加回 `ServiceDefinition.csdef` 文件中。 使用添加回项目中的 Web 服务角色的名称作为元素的名称属性的一 **\<LocalStorage>** 部分。 在此示例中，Web 服务角色的名称为 **WCFServiceWebRole1**。
+例如，你可能删除了 Web 服务角色，但后来又决定将此角色添加回解决方案中。 如果这样做，会出现错误。 为了防止出现此错误，必须将以下 XML 中显示的 `<LocalResources>` 元素添加回 `ServiceDefinition.csdef` 文件中。 使用添加回项目中的 web 服务角色的名称作为元素的名称属性的一部分 **\<LocalStorage>** 。 在此示例中，Web 服务角色的名称为 **WCFServiceWebRole1**。
 
 ```xml
 <WebRole name="WCFServiceWebRole1">

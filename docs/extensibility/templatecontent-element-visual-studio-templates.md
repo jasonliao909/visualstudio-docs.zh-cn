@@ -1,5 +1,5 @@
 ---
-title: TemplateContent 元素 (Visual Studio模板) |Microsoft Docs
+title: TemplateContent 元素 (Visual Studio 模板) |Microsoft Docs
 description: 了解 TemplateContent 元素及其如何指定模板的内容。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -55,10 +55,10 @@ ms.locfileid: "121447722"
 |元素|说明|
 |-------------|-----------------|
 |[ProjectCollection](../extensibility/projectcollection-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定多项目模板的组织和内容。|
-|[项目](../extensibility/project-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定要添加到项目的文件或目录。|
+|[项目](../extensibility/project-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定要添加到项目中的文件或目录。|
 |[参考](../extensibility/references-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定项模板所需的程序集引用。|
 |[ProjectItem](../extensibility/projectitem-element-visual-studio-item-templates.md)|可选元素。<br /><br /> 指定模板中包含的文件。|
-|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定从模板创建项目或项时使用的任何自定义参数。|
+|[CustomParameters](../extensibility/customparameters-element-visual-studio-templates.md)|可选元素。<br /><br /> 指定从模板创建项目或项时要使用的任何自定义参数。|
 
 ### <a name="parent-elements"></a>父元素
 
@@ -67,10 +67,10 @@ ms.locfileid: "121447722"
 |[VSTemplate](../extensibility/vstemplate-element-visual-studio-templates.md)|必需的元素。<br /><br /> 包含项目模板、项模板或初学者工具包的所有元数据。|
 
 ## <a name="remarks"></a>备注
- `TemplateContent` 是必需元素。
+ `TemplateContent` 是必需的元素。
 
 ## <a name="example"></a>示例
- 以下示例显示了应用程序的项目模板的 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 元数据。
+ 下面的示例演示应用程序的项目模板的元数据 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -96,7 +96,7 @@ ms.locfileid: "121447722"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
-- [创建Project项模板](../ide/creating-project-and-item-templates.md)
+- [创建 Project 和项模板](../ide/creating-project-and-item-templates.md)

@@ -48,6 +48,6 @@ int GetMemoryContext(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。 `S_GETMEMORYCONTEXT_NO_MEMORY_CONTEXT`如果没有要检索的内存上下文，则返回。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

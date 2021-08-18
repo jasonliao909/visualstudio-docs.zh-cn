@@ -1,5 +1,5 @@
 ---
-description: 此接口用于通知Visual Studio引擎提供的源文档的更改。
+description: 此接口用于通知 Visual Studio 对调试引擎提供的源文档所做的更改。
 title: IDebugDocumentTextEvents2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -22,7 +22,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121390211"
 ---
 # <a name="idebugdocumenttextevents2"></a>IDebugDocumentTextEvents2
-此接口用于通知Visual Studio引擎提供的源文档的更改。
+此接口用于通知 Visual Studio 对调试引擎提供的源文档所做的更改。
 
 ## <a name="syntax"></a>语法
 
@@ -30,34 +30,34 @@ ms.locfileid: "121390211"
 IDebugDocumentTextEvents2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实现者说明
+## <a name="notes-for-implementers"></a>实施者注意事项
  DE 实现此接口以支持对源代码进行更改。 此接口通常在实现 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 接口的同一对象上实现。
 
 ## <a name="notes-for-callers"></a>调用方说明
- [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 通过对 方法的调用获取此 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 接口。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口从对 方法的调用 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 获取。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>通过调用[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口上的[QueryInterface](/cpp/atl/queryinterface)方法获取接口。
+ [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 通过调用方法获取此接口 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint.Advise%2A> 。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPoint>接口是通过调用方法获取的 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer.EnumConnectionPoints%2A> 。 <xref:System.Runtime.InteropServices.ComTypes.IConnectionPointContainer>接口是通过在[IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)接口上调用[QueryInterface](/cpp/atl/queryinterface)方法获取的。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
- 下表显示了 的方法 `IDebugDocumentTextEvents2` 。
+ 下表显示的方法 `IDebugDocumentTextEvents2` 。
 
 |方法|说明|
 |------------|-----------------|
 |[onDestroy](../../../extensibility/debugger/reference/idebugdocumenttextevents2-ondestroy.md)|指示整个文档已销毁。|
-|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|通知调试包已将文本插入到文档中。|
-|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|通知调试包已从文档中删除文本。|
-|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|通知调试包文档中已替换文本。|
-|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|通知调试包文档中的文本属性已更新。|
-|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|通知事件接收方文档属性已更新。|
+|[onInsertText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-oninserttext.md)|通知调试包文本已插入到文档中。|
+|[onRemoveText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onremovetext.md)|通知调试包文本已从文档中删除。|
+|[onReplaceText](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onreplacetext.md)|通知调试包文本已在文档中被替换。|
+|[onUpdateTextAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatetextattributes.md)|通知调试包文本属性已在文档中更新。|
+|[onUpdateDocumentAttributes](../../../extensibility/debugger/reference/idebugdocumenttextevents2-onupdatedocumentattributes.md)|通知接收方事件已更新文档属性。|
 
 ## <a name="remarks"></a>备注
- 只有提供自己的文档的调试引擎才能利用 `IDebugDocumentTextEvent2` 接口。 例如，脚本调试引擎。 在解释脚本的过程中，可以生成未存在于任何磁盘文件中且只有 DE 已知的新源代码。
+ 只有提供自己的文档的调试引擎才能利用 `IDebugDocumentTextEvent2` 界面。 这种情况的一个示例就是脚本调试引擎。 在解释脚本的过程中，可能会生成不存在于任何磁盘文件中的新源代码，并且只有取消。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

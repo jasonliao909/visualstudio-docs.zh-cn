@@ -1,6 +1,6 @@
 ---
-description: 从连续的字节序列中设置对象的值。
-title: IDebugObject：： SetValue |Microsoft Docs
+description: 从连续的字节序列设置 对象的值。
+title: IDebugObject：：SetValue |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8469773cf57d8cac2c24f04260a6d1037de125b2691115b270a3b0c693cd675b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68e2f923088ce16958ffbcd197baaf76f16c5733
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034872"
 ---
 # <a name="idebugobjectsetvalue"></a>IDebugObject::SetValue
-从连续的字节序列中设置对象的值。
+从连续的字节序列设置 对象的值。
 
 ## <a name="syntax"></a>语法
 
@@ -45,17 +45,17 @@ int SetValue(
 
 ## <a name="parameters"></a>参数
 `pValue`\
-中表示新值的字节数组。
+[in]表示新值的字节数组。
 
 `nSize`\
-中值的大小（以字节为单位）。
+[in]值的大小（以字节为单位）。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 数组中的值将复制到此 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象中，并替换任何现有值。 新值的大小可以大于或小于现有值。 此 `IDebugObject` 值不能为 null 引用。
+ 数组中的值将复制到此 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象中，替换任何现有值。 新值的大小可以大于或小于现有值。 这 `IDebugObject` 不能为空引用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [GetValue](../../../extensibility/debugger/reference/idebugobject-getvalue.md)

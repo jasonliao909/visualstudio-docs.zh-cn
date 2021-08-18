@@ -53,7 +53,7 @@ int CreateArrayObject(
 
 ## <a name="parameters"></a>参数
 `ot`\
-[in]指定来自 OBJECT_TYPE [枚举的值](../../../extensibility/debugger/reference/object-type.md) ，该值指示新数组对象的类型。
+[in]指定来自 OBJECT_TYPE 枚举[](../../../extensibility/debugger/reference/object-type.md)的值，该值指示新数组对象的类型。
 
 `pClassField`\
 [in]一 [个 IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象，表示对象的类（如果创建对象实例值的数组）。 如果创建基元对象的数组，则此参数为 null 值。
@@ -76,5 +76,5 @@ int CreateArrayObject(
 ## <a name="remarks"></a>备注
  调用此方法以创建一个 对象，该对象表示由 [IDebugFunctionObject 接口表示的函数的数组](../../../extensibility/debugger/reference/idebugfunctionobject.md) 参数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

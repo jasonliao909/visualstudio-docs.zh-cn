@@ -1,5 +1,5 @@
 ---
-description: 将指定的消息字符串发送到调试器的 "输出" 窗口。
+description: 将指定的消息字符串发送到调试器的输出窗口。
 title: IDebugIDECallback：:D isplayMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121389730"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-将指定的消息字符串发送到调试器的 "输出" 窗口。
+将指定的消息字符串发送到调试器的输出窗口。
 
 ## <a name="syntax"></a>语法
 
@@ -41,10 +41,10 @@ int DisplayMessage (
 
 ## <a name="parameters"></a>参数
 `szMessage`\
-中要在调试器的输出窗口中显示的消息字符串。
+[in]要显示在调试器输出窗口中的消息字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ffdd9872431e670833ce6639706f1c27ba1f69218049f2daf4d8cbb169f8298d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ec9df6fb069994144503f89808d2b6cf64a14883
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121331190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025935"
 ---
 # <a name="microsoft-office-word-keyboard-settings-options-dialog-box"></a>Microsoft OfficeWord 键盘、设置、"选项" 对话框
   Microsoft OfficeWord 和 Visual Studio 都处理快捷键。 在 Word 和 Visual Studio 中，同一快捷键组合可用于不同的命令。 在 Visual Studio 中的文档级项目中打开 Word 时，一次只能有一个应用程序收到快捷键命令。 默认情况下，Visual Studio 接收所有快捷键命令，但你可以通过选择 "**动态键盘方案**" 使 Word 在文档具有焦点时接收这些命令。
@@ -39,5 +39,5 @@ ms.locfileid: "121331190"
 
  **动态键盘方案** Visual Studio 仅在其具有焦点时才接收快捷键命令。 当 Word 文档有焦点时，Word 会接收所有快捷键命令。 例如，如果在 Word 文档具有焦点时按 "函数键 **F5** "，word 将打开 " **查找和替换** " 对话框，并选中 " **转到** " 选项卡。 如果在 Visual Studio 有焦点时按 **F5** ，Visual Studio 将开始调试解决方案。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Microsoft Office Excel 键盘，Microsoft Office 键盘设置，"选项" 对话框](../vsto/microsoft-office-excel-keyboard-microsoft-office-keyboard-settings-options-dialog-box.md)

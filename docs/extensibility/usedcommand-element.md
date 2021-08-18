@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0333b3a83333eebdb25da83206b9da2a4c9082ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 33d6d5626f8ff96e9c52a71c4edfbc17de65eb749b90aa646d4dd53cf4edb9ed
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049280"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121358852"
 ---
 # <a name="usedcommand-element"></a>UsedCommand 元素
 使 VSPackage 能够访问在另一个 .vsct 文件中定义的命令。 例如，如果 VSPackage 使用标准 **Copy** 命令（由 shell 定义），可以将该命令添加到菜单或工具栏，而无需 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 重新实现该命令。

@@ -1,5 +1,5 @@
 ---
-description: 使Visual Studio UI 能够在"附加到进程"对话框的"传输信息"部分内显示文本。
+description: 启用 Visual Studio UI 以显示 "附加到进程" 对话框的 "传输信息" 部分中的文本。
 title: IDebugPortSupplierDescription2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -20,7 +20,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121416581"
 ---
 # <a name="idebugportsupplierdescription2"></a>IDebugPortSupplierDescription2
-使 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] UI 能够在"附加到进程"对话框的"传输信息"**部分内显示** 文本。
+允许 UI 在 " [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] **附加到进程**" 对话框的 "**传输信息**" 部分中显示文本。
 
 ## <a name="syntax"></a>语法
 
@@ -28,19 +28,19 @@ ms.locfileid: "121416581"
 IDebugPortSupplierDescription2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实现者说明
+## <a name="notes-for-implementers"></a>实施者注意事项
  此接口由端口供应商实现。
 
 ## <a name="methods"></a>方法
- 下表显示了 的方法 `IDebugPortSupplierDescription2` 。
+ 下表显示的方法 `IDebugPortSupplierDescription2` 。
 
 |方法|说明|
 |------------|-----------------|
-|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|检索端口供应商的说明和说明元数据。|
+|[GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md)|检索端口提供程序的说明和说明元数据。|
 
 ## <a name="requirements"></a>要求
- 标头：Msdbg.h
+ 标头： Msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll

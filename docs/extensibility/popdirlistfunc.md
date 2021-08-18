@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121447891"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
-这是一个回调函数，它向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数提供，用于更新目录的集合 (可以选择) 文件名来找出哪些受源代码管理。
+这是一个回调函数，它向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数提供，用于更新目录的集合 () 选择使用文件名来找出哪些受源代码管理。
 
  应仅为这些目录和文件名调用回调 (在给定给实际受源代码管理) 函数 `POPDIRLISTFUNC` `SccPopulateDirList` 的列表中。
 
@@ -62,7 +62,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 ## <a name="remarks"></a>备注
  如果 `fOptions` 函数的 参数包含 标志，则列表可能包含文件名 `SccPopulateDirList` `SCC_PDL_INCLUDEFILES` 和目录名。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [由 IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md)
 - [错误代码](../extensibility/error-codes.md)
