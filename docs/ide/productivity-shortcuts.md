@@ -6,14 +6,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cd11a05ed6b19fe5d6236bec2c6b4926bbcdefd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a945a3c8fe06fee411c5c19c84281540c2b2f85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951103"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151920"
 ---
 # <a name="shortcut-tips-for-visual-studio"></a>Visual Studio 的快捷方式提示
 

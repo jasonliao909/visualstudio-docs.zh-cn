@@ -11,12 +11,13 @@ ms.assetid: 17fcafce-76f9-4411-9389-6e5376eab236
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: bcef8b73eaf4709e8e636d4719784606019bdcbf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a9eb8ef1df65ceb20968ff9887d4750d3b629a84
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139993"
 ---
 # <a name="how-to-create-custom-graphs-in-load-test-results"></a>如何：在负载测试结果中创建自定义关系图
 

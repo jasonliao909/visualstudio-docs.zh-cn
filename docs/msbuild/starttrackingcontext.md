@@ -15,14 +15,15 @@ ms.assetid: 720cd295-38e7-4974-86db-b8106b1207ba
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 15121f050fd5af9a5cb36ce15ffc2161076df06d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: afd46ac5ed538f4773e35c7c727f1cf5fdbcc69a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99929116"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142983"
 ---
 # <a name="starttrackingcontext"></a>StartTrackingContext
 

@@ -18,14 +18,15 @@ ms.assetid: a977e072-37ad-4941-84a6-32a4483be55d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 91a155e340f9ab246935f7b8cd6da46f3f364010
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28b26047a0893cc9e0ab783e83988b5c7ea1fb08
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914714"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143373"
 ---
 # <a name="getassemblyidentity-task"></a>GetAssemblyIdentity 任务
 

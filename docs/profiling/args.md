@@ -8,15 +8,16 @@ ms.assetid: 20c35949-1f29-4282-ac75-4e6c237d71bc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e68822ebd444b8683b85b2df0c49b14d78bcaa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b91d00896b72f95b3340e8741867b58d4c2494b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142411"
 ---
 # <a name="args"></a>Args
 VSPerfCmd.exe **参数** 选项指定传递给 **Launch** 子命令的目标应用程序的参数列表。

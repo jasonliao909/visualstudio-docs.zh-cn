@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jillfra
   ms.date: 10/15/2019
-  ms.openlocfilehash: 265c9d4eaa2f4f0cc95746bd5747f50c18d77fed
-  ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+  ms.openlocfilehash: 59307a58a3e6618d78ec76d3489a4e61ed6b3282
+  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 03/26/2021
-  ms.locfileid: "105617034"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "122040484"
 landingContent:
 - title: 入门
   linkLists:
@@ -33,14 +33,26 @@ landingContent:
       url: quickstart-ide-orientation-js.md
 - title: 创建 JavaScript 和 TypeScript 应用
   linkLists:
+  - linkListType: quickstart
+    links:
+    - text: 创建 Angular 应用
+      url: tutorial-create-angular-app.md?view=vs-2022
+    - text: 创建 React 应用
+      url: tutorial-create-react-app.md
+    - text: 创建 Vue 应用
+      url: tutorial-create-vue-app.md
+    - text: 使用 Node.js 和 Vue.js 创建 web 应用
+      url: quickstart-vuejs-with-nodejs.md
   - linkListType: tutorial
     links:
+    - text: 使用 Angular 和 ASP.NET Core 创建 Web 应用
+      url: tutorial-asp-net-core-with-angular.md?view=vs-2022
+    - text: 使用 React 和 ASP.NET Core 创建 Web 应用
+      url: tutorial-asp-net-core-with-react.md?view=vs-2022
     - text: 使用 Node.js 和 Express 创建 Web 应用
       url: tutorial-nodejs.md
     - text: 使用 Node.js 和 React 创建 Web 应用
       url: tutorial-nodejs-with-react-and-jsx.md
-    - text: 使用 Node.js 和 Vue.js 创建 web 应用
-      url: quickstart-vuejs-with-nodejs.md
     - text: 使用 TypeScript 创建 ASP.NET Core 应用
       url: tutorial-aspnet-with-typescript.md
 - title: 学习 Visual Studio

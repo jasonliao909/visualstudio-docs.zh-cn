@@ -25,14 +25,15 @@ ms.assetid: e062c7f9-cc69-4a83-9361-1bb5355e5fe8
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2141818c13a187b8afddf337aa11677097940f23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b0f7f475b8226630133fa6c4617c7c3c4fe8060
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143165"
 ---
 # <a name="lib-task"></a>LIB 任务
 

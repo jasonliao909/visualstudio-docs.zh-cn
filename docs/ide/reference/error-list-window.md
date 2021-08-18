@@ -13,14 +13,15 @@ ms.assetid: b7f6d45a-733b-4ad8-bc2f-737a37509e56
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 90d3f8f95cb4b6aef3b2538a26226f5bad40f33b
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 3690bdcfd80593599d792c2091583e95fdc513b6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924937"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143997"
 ---
 # <a name="error-list-window"></a>“错误列表”窗口
 

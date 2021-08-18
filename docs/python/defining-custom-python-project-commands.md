@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 43270ee1ec956f45b76d23a6b649ad2d870638c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63679d590e341cce8f5ee76d4b359821b3f213b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140435"
 ---
 # <a name="define-custom-commands-for-python-projects"></a>为 Python 项目定义自定义命令
 
@@ -131,9 +132,9 @@ Visual Studio 中的某些 Python 项目模板已使用其 .targets 文件添加
 
 ### <a name="target-attributes"></a>Target 属性
 
-| 特性 | 必需 | 描述 |
+| 特性 | 必需 | 说明 |
 | --- | --- | --- |
-| “属性” | 是 | Visual Studio 项目中命令的标识符。 必须将此名称添加到 `<PythonCommands>` 组，Python 子菜单上才会显示命令。 |
+| 名称 | 是 | Visual Studio 项目中命令的标识符。 必须将此名称添加到 `<PythonCommands>` 组，Python 子菜单上才会显示命令。 |
 | Label | 是 | Python 子菜单中出现的 UI 显示名称。 |
 | 返回 | 是 | 必须包含将目标标识为命令的 `@(Commands)`。 |
 

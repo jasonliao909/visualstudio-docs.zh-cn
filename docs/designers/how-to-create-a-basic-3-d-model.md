@@ -8,14 +8,15 @@ ms.assetid: a0d97966-2df8-449b-a8cf-5a19684dc773
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c60c30c593e67f47a620062e2b2f4958120a1a1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9bb4e2c847cdc198f3955cccb2f3b86cd85dcff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153662"
 ---
 # <a name="how-to-create-a-basic-3d-model"></a>如何：创建基本三维模型
 

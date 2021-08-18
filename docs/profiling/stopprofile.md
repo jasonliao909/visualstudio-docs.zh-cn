@@ -9,15 +9,16 @@ ms.assetid: be75b03c-7af5-4abe-a54a-6ee5479ad877
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: ac62edc3830d60a99448e2faf4cb20949b7081e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aef913543c56c1a70f6f2b26db305f9342d734c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141319"
 ---
 # <a name="stopprofile"></a>StopProfile
 `StopProfile` 函数将指定分析级别的计数器设置为 0（关闭）。
