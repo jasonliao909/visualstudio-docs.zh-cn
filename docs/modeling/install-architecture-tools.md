@@ -7,16 +7,16 @@ author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
 ms.technology: vs-ide-modeling
-ms.openlocfilehash: 16bd5c9bf77b3ec6aa91912e416434d730f5fd6cd3dc2fa2a3f0dd79a31a3a91
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1a72a181fb57157a7d3fbcc6f5ead56e2c57483
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100902"
 ---
 # <a name="install-code-map-and-live-dependency-validation"></a>安装代码图和实时依赖项验证
 
-若要在 Visual Studio创建代码图，请首先安装代码 **映射** 和 **实时依赖项验证** 组件：
+若要在中创建代码Visual Studio，请首先安装代码 **映射和** 实时 **依赖项验证** 组件：
 
 1. 打开 **Visual Studio 安装程序**。 可以通过选择"工具""获取工具和Windows "开始"菜单，在Visual Studio  >  **中打开它**。
 

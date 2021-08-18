@@ -1,5 +1,5 @@
 ---
-title: 使用 IntelliTrace 调试已发布的 Azure 云服务
+title: 用 IntelliTrace 调试已发布的 Azure 云服务
 ms.custom: SEO-VS-2020
 description: 了解如何使用 Visual Studio 和 IntelliTrace 调试云服务
 author: mikejo5000
@@ -21,7 +21,7 @@ ms.locfileid: "121456263"
 
 如果已安装 Visual Studio Enterprise，且 Azure 应用程序以 .NET Framework 4 或更高版本为目标，则可使用 IntelliTrace。 IntelliTrace 收集 Azure 角色的信息。 这些角色的虚拟机始终运行 64 位操作系统。
 
-或者，可以使用 [远程调试](vs-azure-tools-debugging-cloud-services-overview.md) 直接附加到在 Azure 中运行的云服务。
+作为替代方法，可以使用 [远程调试](vs-azure-tools-debugging-cloud-services-overview.md) 直接连接到在 Azure 中运行的云服务。
 
 > [!IMPORTANT]
 > IntelliTrace 仅适用于调试方案，而不应用于生产部署。

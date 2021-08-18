@@ -1,6 +1,6 @@
 ---
 title: API 参考 (SharePoint工具扩展性) |Microsoft Docs
-description: 查看 API 参考文档，以在 Visual Studio 中扩展 SharePoint 工具。 请参阅相关命名空间的列表，例如 Microsoft.VisualStudio。SharePoint。
+description: 查看 API 参考文档，以在 SharePoint 中扩展Visual Studio。 请参阅相关命名空间的列表，例如 Microsoft.VisualStudio。SharePoint。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -36,11 +36,11 @@ ms.locfileid: "121353184"
 
  <xref:Microsoft.VisualStudio.SharePoint.Deployment>
 
- 包含用于扩展项目部署过程SharePoint的类型。
+ 包含用于扩展项目部署过程SharePoint类型。
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer>
 
- 包含用于扩展 SharePoint节点 **的类型服务器资源管理器或** 定义自己的节点类型。
+ 包含用于扩展 SharePoint 节点 **的类型服务器资源管理器或** 定义自己的节点类型。
 
  <xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions>
 
@@ -70,7 +70,7 @@ ms.locfileid: "121353184"
 
  包含用于为 SharePoint 项目自定义功能和包验证行为的类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [参考&#40;SharePoint扩展性&#41;](../sharepoint/reference-sharepoint-tools-extensibility.md)
 - [SharePoint 工具扩展的编程模型概述](../sharepoint/overview-of-the-programming-model-of-sharepoint-tools-extensions.md)
 - [扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)

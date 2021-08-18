@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: c3729e4f386ec5a21c8f30ee3f0df6e7ffa8d891
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 7b4f6deca3320a5c2182030d8e5cdec99a36c023
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385495"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085372"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 在 Visual Studio可视化和建模 SDK 中，可以创建一个不完整的 DSL 定义，该定义可以导入到另一个 DSL 中。 这样，你可考虑相似模型的常见部分。
@@ -43,7 +44,7 @@ ms.locfileid: "112385495"
 
 6. 生成项目。
 
-7. 分发供其他人使用的 DSL 时，必须提供已编译的程序集 (DLL) 文件 `DslDefinition.dsl` 。 可以在 下的文件夹中找到已编译的程序集 `Dsl\bin\*`
+7. 分发 DSL 供其他人使用时，必须提供已编译的程序集 (DLL) 文件 `DslDefinition.dsl` 。 可以在 下的文件夹中找到已编译的程序集 `Dsl\bin\*`
 
 #### <a name="to-import-a-dsl-library"></a>导入 DSL 库
 
@@ -53,17 +54,17 @@ ms.locfileid: "112385495"
 
     导入的库在 DSL 资源管理器中以只读模式显示。
 
-3. 可以将导入的类用作基类。 在导入 DSL 中创建域类，在 属性窗口中，将"基类"设置为导入的类。
+3. 可以将导入的类用作基类。 在导入 DSL 中创建域类，在 属性窗口中，将"基类 **"设置为导入** 的类。
 
 4. 单击“转换所有模板”。
 
-5. 向 DSL 项目添加对 DSL 库项目 (DLL) 程序集的引用。
+5. 向 DSL 项目添加对 DLL (程序集的引用) DSL 库项目所生成。
 
 6. 生成解决方案。
 
    DSL 库可以导入其他库。 导入库时，其导入也会自动显示在 DSL 资源管理器中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 

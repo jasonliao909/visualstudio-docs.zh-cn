@@ -11,31 +11,32 @@ ms.assetid: 99c2b06f-47aa-414e-8057-a3453712fd23
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed0df13f1dd281fcf56056809419af5d7ed6d3dc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cecf47d023b98ce8ad3cf67799e4bdfff66f45fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867199"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037143"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>在 Visual Studio 中创建一个数据库并添加表
 
-可以使用 Visual Studio 来创建和更新 SQL Server Express LocalDB 中的本地数据库文件。 还可以通过在 Visual Studio 的 " **SQL Server 对象资源管理器** 工具" 窗口中执行 transact-sql 语句来创建数据库。 在本主题中，我们将创建一个 *.mdf* 文件并使用表设计器添加表和键。
+您可以使用 Visual Studio 在 SQL Server Express LocalDB 中创建和更新本地数据库文件。 还可以通过在 Visual Studio 中的 **SQL Server 对象资源管理器**"工具" 窗口中执行 SQL transact-sql 语句来创建数据库。 在本主题中，我们将创建一个 *.mdf* 文件并使用表设计器添加表和键。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-若要完成本演练，你需要安装在 Visual Studio 中的 **.net 桌面开发** 和 **数据存储和处理** 工作负荷。 若要进行安装，请打开 **Visual Studio 安装程序**，然后选择 "**修改**" (或 **更多**"修改") ，使其与  >  要修改的 Visual Studio 的版本相邻。
+若要完成本演练，需要在 Visual Studio 中安装 **.net 桌面开发**、**数据存储和处理** 工作负荷。 若要进行安装，请打开 **Visual Studio 安装程序**，然后选择 "**修改**" (或 **更多**  >   "修改") 旁边 Visual Studio 的 "修改" 修改。
 
 > [!NOTE]
-> 本文中的过程仅适用于 .NET Framework Windows 窗体项目，不适用于 .NET Core Windows 窗体项目。
+> 本文中的过程仅适用于 .NET Framework Windows 窗体项目，不适用于 .net Core Windows 窗体项目。
 
 ## <a name="create-a-project-and-a-local-database-file"></a>创建一个项目及本地数据库文件
 
-1.  ( .NET Framework) 项目创建新的 **Windows 窗体应用程序** ，并将其命名为 **SampleDatabaseWalkthrough**。
+1.  (.NET Framework) 项目创建新的 **Windows 窗体应用程序**，并将其命名为 **SampleDatabaseWalkthrough**。
 
-2. 在菜单栏上，选择 "**项目**" "  >  **添加新项**"。
+2. 在菜单栏上，选择 " **Project**"  >  **添加新项**"。
 
 3. 在项模板列表中，向下滚动并选择 " **基于服务的数据库**"。
 
@@ -67,12 +68,12 @@ ms.locfileid: "99867199"
 
 可以通过打开数据连接的属性窗口，查看 *sampledatabase.mdf* 文件的连接字符串：
 
-- 选择 "**查看**  >  **SQL Server 对象资源管理器**" 以打开 " **SQL Server 对象资源管理器**" 窗口。 展开 **(localdb) \mssqllocaldb**  >  **数据库**，然后右键单击 *sampledatabase.mdf* ，然后选择 "**属性**"。
+- 选择 "**查看**  >  **SQL Server 对象资源管理器** 以打开 **SQL Server 对象资源管理器**" 窗口。 展开 **(localdb) \mssqllocaldb**  >  **数据库**，然后右键单击 *sampledatabase.mdf* ，然后选择 "**属性**"。
 
 - 或者，如果该窗口尚未打开，还可以选择 "**查看**  >  **服务器资源管理器**"。 展开 "**数据连接**" 节点，右键单击 sampledatabase.mdf，然后选择 "**属性**"，以打开属性窗口 *。*
 
   > [!TIP]
-  > 如果无法展开 "数据连接" 节点，或未列出 Sampledatabase.mdf 连接，请在服务器资源管理器工具栏中选择 " **连接到数据库** " 按钮。 在 "**添加连接**" 对话框中，确保在 "**数据源**" 下选择 " **Microsoft SQL Server 数据库文件**"，然后浏览到并选择 sampledatabase.mdf 文件。 通过选择 **"确定"** 完成添加连接。
+  > 如果无法展开 "数据连接" 节点，或未列出 sampledatabase.mdf 连接，请在服务器资源管理器工具栏中选择 "**连接到数据库**" 按钮。 在 "**添加连接**" 对话框中，确保在 "**数据源**" 下选择 " **Microsoft SQL Server 数据库文件**"，然后浏览到并选择 sampledatabase.mdf 文件。 通过选择 **"确定"** 完成添加连接。
 
 ## <a name="create-tables-and-keys-by-using-table-designer"></a>使用表设计器创建表和键
 
@@ -82,7 +83,7 @@ ms.locfileid: "99867199"
 
 1. 在 **服务器资源管理器** 中，展开 " **数据连接** " 节点，然后展开 " **sampledatabase.mdf** " 节点。
 
-   如果无法展开 "数据连接" 节点，或未列出 Sampledatabase.mdf 连接，请在服务器资源管理器工具栏中选择 " **连接到数据库** " 按钮。 在 "**添加连接**" 对话框中，确保在 "**数据源**" 下选择 " **Microsoft SQL Server 数据库文件**"，然后浏览到并选择 sampledatabase.mdf 文件。 通过选择 **"确定"** 完成添加连接。
+   如果无法展开 "数据连接" 节点，或未列出 sampledatabase.mdf 连接，请在服务器资源管理器工具栏中选择 "**连接到数据库**" 按钮。 在 "**添加连接**" 对话框中，确保在 "**数据源**" 下选择 " **Microsoft SQL Server 数据库文件**"，然后浏览到并选择 sampledatabase.mdf 文件。 通过选择 **"确定"** 完成添加连接。
 
 2. 右键单击 " **表** "，然后选择 " **添加新表**"。
 
@@ -148,11 +149,11 @@ ms.locfileid: "99867199"
 
 1. 在 Orders 表的表设计器网格右侧的上下文窗格中，右键单击 " **外键** "，然后选择 " **添加新外键**"。
 
-   ![在 Visual Studio 中的表设计器中添加外键](../data-tools/media/add-foreign-key.png)
+   ![在表设计器中添加外键 Visual Studio](../data-tools/media/add-foreign-key.png)
 
 2. 在出现的文本框中，将文本 " **ToTable** " 替换为 " **客户**"。
 
-3. 在 T-sql 窗格中，更新最后一行以与以下示例匹配：
+3. 在 SQL 窗格中，更新最后一行以与以下示例匹配：
 
    ```sql
    CONSTRAINT [FK_Orders_Customers] FOREIGN KEY ([CustomerID]) REFERENCES [Customers]([CustomerID])

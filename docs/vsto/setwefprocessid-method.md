@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e066da4c1c294669ad4baf4932c6d934e283a9c4914e9c23efc45ef3b1f2335d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d3fee5832c96de8fddec605399c9bd6ef565c2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121226097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032168"
 ---
 # <a name="setwefprocessid-method"></a>SetWefProcessId 方法
   提供将 (WEF) 内容运行 Web 扩展框架的进程标识符。

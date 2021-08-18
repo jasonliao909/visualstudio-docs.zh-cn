@@ -11,14 +11,15 @@ ms.assetid: a9ec7b3e-a59c-4069-b2ee-6f45916eeb78
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5bead60e23c708d8a23fcd382b4db0f3f9f7e4c1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 44eca905c761fceae02f879f8891098f9d6932c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065237"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050515"
 ---
 # <a name="idebugprogramprovider2"></a>IDebugProgramProvider2
 此注册接口允许会话调试管理器 (SDM) 获取有关通过 [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md) 接口 "已发布" 的程序的信息。
@@ -83,7 +84,7 @@ IDebugProgramProvider2 *GetProgramProvider(GUID *pDebugEngineGuid)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramPublisher2](../../../extensibility/debugger/reference/idebugprogrampublisher2.md)
 - [用于调试的 SDK 帮助程序](../../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

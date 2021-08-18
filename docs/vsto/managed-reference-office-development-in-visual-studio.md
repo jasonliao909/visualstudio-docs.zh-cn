@@ -1,6 +1,6 @@
 ---
-title: 'Visual Studio 中的托管引用 (Office 开发) '
-description: 了解面向 .NET Framework 的 Office 项目中使用的命名空间和类型的 API 参考文档。
+title: 'Visual Studio 中 Office 开发的托管引用 () '
+description: 了解面向 .NET Framework Office 项目中使用的命名空间和类型的 API 参考文档。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9364b191886408e509aa09a83bde70ce8240707e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5452ea5990b4facb108deffe87870100ec17ca0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032506"
 ---
-# <a name="managed-reference-office-development-in-visual-studio"></a>Visual Studio 中的托管引用 (Office 开发) 
-  本部分包含在针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 项目中使用的命名空间和类型的 API 参考文档。 有关面向 .NET Framework 3.5 的 Office 项目中使用的命名空间和类型的 API 参考文档，请参阅 Visual Studio 文档中的以下参考部分： visual studio [中的 "托管引用" (Office 开发) ](managed-reference-office-development-in-visual-studio.md)"。
+# <a name="managed-reference-office-development-in-visual-studio"></a>Visual Studio 中 Office 开发的托管引用 () 
+  本部分包含在针对 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](includes/net-v45-md.md)]的 Office 项目中使用的命名空间和类型的 API 参考文档。 有关面向 .NET Framework 3.5 Office 项目中使用的命名空间和类型的 API 参考文档，请参阅 Visual Studio 文档中的以下参考部分： (Office Visual Studio[中的开发的托管引用](managed-reference-office-development-in-visual-studio.md)。
 
 [!include[Add-ins note](includes/addinsnote.md)]
 
@@ -73,8 +74,8 @@ ms.locfileid: "99958747"
 
  包含用于生成 Office 项目的 MSBuild 任务类。
 
-## <a name="see-also"></a>另请参阅
-- [Visual Studio tools for Office runtime 概述](visual-studio-tools-for-office-runtime-overview.md)
-- [开始 &#40;Visual Studio 中的 Office 开发&#41;](getting-started-office-development-in-visual-studio.md)
+## <a name="see-also"></a>请参阅
+- [Office 运行时 Visual Studio 工具概述](visual-studio-tools-for-office-runtime-overview.md)
+- [&#40;Visual Studio 中的 Office 开发入门&#41;](getting-started-office-development-in-visual-studio.md)
 - [Office 开发示例和演练](office-development-samples-and-walkthroughs.md)
 - [设计和创建 Office 解决方案](designing-and-creating-office-solutions.md)

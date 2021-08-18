@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69e97ffb887221ddba297d7376a41a269e42b399a6d03e346dc75fd12d5613ef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2b7ea5cf8ff7d37f8ab05bbf84d91f6c55673707
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433302"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050671"
 ---
 # <a name="idebugprogram2enumthreads"></a>IDebugProgram2::EnumThreads
 检索在程序中运行的线程的列表。

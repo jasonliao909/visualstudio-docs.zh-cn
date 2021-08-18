@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a21a1dc08f0dcc47298e546520a85de3f4e3df8a3a0a563d173eb723531ecd37
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 11205634b75c3ae1892e7a4d964ae049ec50afbd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448272"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050294"
 ---
 # <a name="how-to-provide-a-service"></a>如何：提供服务
 VSPackage 可以提供其他 VSPackage 可以使用的服务。 若要提供服务，VSPackage 必须将服务注册到 Visual Studio并添加该服务。

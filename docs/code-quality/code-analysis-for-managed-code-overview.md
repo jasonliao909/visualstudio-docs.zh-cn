@@ -13,13 +13,13 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 08a90f1d2157088f060fe15a5a370413a55b79e7e04e736f7ac0e5a4c9b76e7b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5fbd9e0df806e038e4016a128a4340aa46777470
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405599"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031726"
 ---
 # <a name="overview-of-code-analysis-for-net-in-visual-studio"></a>中 .NET 的代码分析Visual Studio
 
-Visual Studio两种方式对托管代码执行代码分析：使用旧分析，也称为托管[](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)程序集的 FxCop 静态分析，以及更新式的基于 .NET Compiler Platform 的代码分析器[。](../code-quality/roslyn-analyzers-overview.md) .NET Compiler Platform代码分析器（在键入时实时分析代码）替换旧版 FxCop 静态代码分析，该分析仅分析已编译的代码。
+Visual Studio两种方式执行托管代码的代码分析：使用旧分析（也称为托管程序集[](../code-quality/walkthrough-analyzing-managed-code-for-code-defects.md)的 FxCop 静态分析）和基于 .NET Compiler Platform 的新式代码分析[器。](../code-quality/roslyn-analyzers-overview.md) .NET Compiler Platform代码分析器（在键入时实时分析代码）替换旧版 FxCop 静态代码分析，该分析仅分析已编译的代码。

@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d2305e63c33e7a8fa5b3a4c7bad68f1ee4fe70039a380384712a73c69b74221
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 82fa25201813e6a4380162a11fdcfcf5736c82be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034027"
 ---
 # <a name="properties-of-domain-properties"></a>域属性的属性
 *域属性* 是可以保存值的模型元素的一项功能。 例如，`Person` 域类可以具有属性 `Name` 和 `BirthDate`。 在 DSL 定义中，域属性列出在关系图上的域类框中以及 DSL 资源管理器中的域类下。 有关详细信息，请参阅 [如何定义 Domain-Specific 语言](../modeling/how-to-define-a-domain-specific-language.md)。

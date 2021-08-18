@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;Visual Studio 中的 postAction 元素 (Office 开发) '
-description: Vstav3 命名空间的 postAction 元素包含入口点元素以及与部署后操作（在安装 Office 解决方案后运行）相关联的所有 postActionData 元素。
+title: '&lt;&gt;Visual Studio 中 (Office 开发的 postAction 元素) '
+description: vstav3 命名空间的 postAction 元素包含入口点元素和所有与部署后操作关联的 postActionData 元素，这些操作在安装 Office 解决方案之后运行。
 ms.date: 02/02/2017
 ms.topic: reference
 dev_langs:
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04f8c92c52aeee9f7f1dd5ab67b3dcef3a295474
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: ec3988628f579023cddf5ff9f49a47d323fa9742
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102470048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032285"
 ---
-# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 postAction 元素 (Office 开发) 
+# <a name="ltpostactiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 (Office 开发的 postAction 元素) 
   `postAction` 命名空间的 `vstav3` 元素包含与部署后操作（在安装 Office 解决方案后运行）相关联的 `entrypoint` 元素和所有 `postActionData` 元素。
 
 ## <a name="syntax"></a>语法
@@ -44,15 +45,15 @@ ms.locfileid: "102470048"
  `postAction` 具有下列元素。
 
 ### <a name="entrypoint"></a>entryPoint
- 可选。 `entryPoint`命名空间中元素的角色 `vstav3` 是在[Visual Studio&#41;中 &#40;Office 开发&#60;s&#62; 元素](../vsto/entrypoints-element-office-development-in-visual-studio.md)中定义的。
+ 可选。 `entryPoint`命名空间中元素的角色 `vstav3` 在[&#60;s&#62; 元素中定义 &#40;Office 在 Visual Studio&#41;中进行开发](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
 
 ### <a name="postactiondata"></a>postActionData
- 可选。 `postActionData`命名空间中元素的角色 `vstav3` 是在[Visual Studio&#41;中 &#40;Office 开发&#60;postActionData&#62; 元素](../vsto/postactiondata-element-office-development-in-visual-studio.md)中定义的。
+ 可选。 `postActionData`命名空间中元素的角色 `vstav3` 在[&#60;postActionData&#62; 元素中定义 &#40;Office 在 Visual Studio&#41;中进行开发](../vsto/postactiondata-element-office-development-in-visual-studio.md)。
 
 ## <a name="post-deployment-action-example"></a>部署后操作示例
 
 ### <a name="description"></a>说明
- 下面的代码示例演示 Office 解决方案的应用程序清单中的 `postAction` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示 Office 解决方案的应用程序清单中的 `postAction` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
