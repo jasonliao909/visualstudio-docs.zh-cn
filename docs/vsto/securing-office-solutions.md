@@ -1,5 +1,5 @@
 ---
-title: 保护 Office 解决方案
+title: 安全 Office 解决方案
 description: 了解 Office 解决方案的安全模型如何涉及多种技术，包括 Visual Studio Tools for Office 运行时和 ClickOnce。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -14,16 +14,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3576bdc41f25b95b68230e09e07b1a5ed97016c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abe2d548fc79788c650debde06fa1a6847026839
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906652"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115052"
 ---
-# <a name="secure-office-solutions"></a>保护 Office 解决方案
+# <a name="secure-office-solutions"></a>安全 Office 解决方案
   Office 解决方案的安全模型涉及几种技术： [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 、 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 、Microsoft Office 中的信任中心以及 Internet Explorer 受限站点区域。 以下各节介绍不同安全功能的工作方式：
 
 - [向 Office 解决方案授予信任](#GrantingTrustToSolutions)
@@ -40,23 +41,23 @@ ms.locfileid: "99906652"
 
   [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
-## <a name="grant-trust-to-office-solutions"></a><a name="GrantingTrustToSolutions"></a> 向 Office 解决方案授予信任
+## <a name="grant-trust-to-office-solutions"></a><a name="GrantingTrustToSolutions"></a>向 Office 解决方案授予信任
  向 Office 解决方案授予信任信任意味着修改每个最终用户的安全策略，以便基于以下证据信任 Office 解决方案：
 
 - 用于对部署清单进行签名的证书。
 
 - 部署清单的 URL。
 
-  有关详细信息，请参阅 [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。
+  有关详细信息，请参阅[向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)。
 
 ## <a name="grant-trust-to-documents"></a><a name="GrantingTrustToDocuments"></a> 向文档授予信任
  文档级自定义项要求文档位于被指定为可信位置的目录中。 有关详细信息，请参阅 [向文档授予信任](../vsto/granting-trust-to-documents.md)。
 
-## <a name="grant-trust-when-using-windows-installer"></a><a name="GrantingTrustWindowsInstaller"></a> 使用时授予信任 Windows Installer
- 可使用 Windows Installer 创建 MSI 文件以将 Office 解决方案安装到 Program Files 目录，此操作需要管理员权限。 对于 Program Files 目录中的 Office 解决方案，Visual Studio 2010 Tools for Office runtime 认为这些 Office 解决方案是受信任的，并且不显示 ClickOnce 信任提示。
+## <a name="grant-trust-when-using-windows-installer"></a><a name="GrantingTrustWindowsInstaller"></a>使用时授予信任 Windows Installer
+ 可使用 Windows Installer 创建 MSI 文件以将 Office 解决方案安装到 Program Files 目录，此操作需要管理员权限。 对于 Program Files 目录中的 Office 解决方案，用于 Office 运行时的 Visual Studio 2010 工具会将这些 Office 解决方案视为受信任的解决方案，而不显示 ClickOnce 信任提示。
 
-## <a name="specific-security-considerations-for-office-solutions"></a><a name="Security"></a> Office 解决方案的特定安全注意事项
- [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 Microsoft Office 提供的安全功能有助保护 Office 解决方案免受各种可能的安全威胁。 有关详细信息，请参阅 [Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。
+## <a name="specific-security-considerations-for-office-solutions"></a><a name="Security"></a>Office 解决方案的特定安全注意事项
+ [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)]、[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 和 Microsoft Office 提供的安全功能有助保护 Office 解决方案免受各种可能的安全威胁。 有关详细信息，请参阅[Office 解决方案的特定安全注意事项](../vsto/specific-security-considerations-for-office-solutions.md)。
 
 ## <a name="security-during-development"></a><a name="SecurityDuringDeployment"></a> 开发过程中的安全性
  为了简化开发过程，Visual Studio 设置了每次生成项目时在计算机上运行和调试解决方案所需的安全策略。 在某些方案中，可能需要采取其他安全措施来开发项目。
@@ -68,7 +69,7 @@ ms.locfileid: "99906652"
 
 - 使用 *.doc* 或 *Docm* 文件的 Word 文档级解决方案。
 
-  在向可信位置列表中添加文档位置时，请包括子目录，或者专门包括调试和生成文件夹。 有关详细信息，请参阅 Microsoft Office 联机帮助文章为 [文件创建、删除或更改受信任的位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。
+  在向可信位置列表中添加文档位置时，请包括子目录，或者专门包括调试和生成文件夹。 有关详细信息，请参阅 Microsoft Office 联机帮助文章为[文件创建、删除或更改受信任的位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。
 
 ### <a name="temporary-certificates"></a>临时证书
  如果不存在签名证书，则 Visual Studio 会创建一个临时证书。 只应在开发过程中使用此临时证书，在部署时应该购买正式证书。
@@ -77,7 +78,7 @@ ms.locfileid: "99906652"
 
  在经过一段时间后，可能会有很多临时证书，因此应不定期地清除临时证书。
 
-## <a name="visual-studio-tools-for-office-runtime"></a><a name="VisualStudioToolsForOfficeRuntime"></a> Visual Studio Tools for Office 运行时
+## <a name="visual-studio-tools-for-office-runtime"></a><a name="VisualStudioToolsForOfficeRuntime"></a>Visual Studio Tools for Office 运行时
  [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]具有用于验证发布服务器标识的功能，以及授予自定义项的权限。 它通过一系列安全检查来验证这些权限。
 
 ### <a name="security-during-customization-loading"></a>自定义加载过程中的安全性
@@ -98,18 +99,18 @@ ms.locfileid: "99906652"
 
  如果 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 允许信任提示，但尚未向解决方案授予信任，则运行时将允许最终用户做出信任决策。 如果用户向解决方案授予信任，则会向用户包含列表中添加一项。 用户包含列表中的所有解决方案都具有完全信任，可以安装和运行。
 
- 从 Visual Studio 2010 开始，如果使用 Windows Installer (MSI) 将 Office 解决方案安装到 Program Files 目录，则会跳过包含列表。 有关详细信息，请参阅 [使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
+ 从 Visual Studio 2010 开始，如果使用 Windows Installer (MSI) 将 Office 解决方案安装到 Program Files 目录，则会跳过包含列表。 有关详细信息，请参阅[使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)。
 
  ![VSTO 安全 - 使用 Setup 程序安装](../vsto/media/setup-vstoinstaller.png "VSTO 安全 - 使用 Setup 程序安装")
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)
 - [向文档授予信任](../vsto/granting-trust-to-documents.md)
 - [使用包含列表信任 Office 解决方案](../vsto/trusting-office-solutions-by-using-inclusion-lists.md)
 - [如何：配置包含列表安全性](../vsto/how-to-configure-inclusion-list-security.md)
 - [如何：对 Office 解决方案进行签名](../vsto/how-to-sign-office-solutions.md)
-- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
+- [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
 - [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
 - [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
 - [ClickOnce 参考](../deployment/clickonce-reference.md)

@@ -6,8 +6,8 @@ ms.date: 03/18/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2019
-ms.openlocfilehash: b6f7cd57a1753ca5926ac73a9bb4c8c918d1bd10
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8fa77063e5d440cd22c48da1baff6281f3a191b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144205"
 ---
 # <a name="tutorial-open-a-project-from-a-repo"></a>教程：打开存储库中的项目
 

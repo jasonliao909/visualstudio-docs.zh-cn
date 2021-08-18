@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: de7adb47f6972d5c22330d76afbadec8a592c6821f9411fc078fd7b983cff230
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: efd725b094ac720f954a0075093ed683e965674d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408131"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155754"
 ---
 # <a name="how-to-programmatically-search-for-and-replace-text-in-documents"></a>如何：以编程方式搜索和替换文档中的文本
   <xref:Microsoft.Office.Interop.Word.Find> 对象是 <xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 对象的成员，可使用其中任何一个来搜索 Microsoft Office Word 文档中的文本。 替换命令是查找命令的扩展。

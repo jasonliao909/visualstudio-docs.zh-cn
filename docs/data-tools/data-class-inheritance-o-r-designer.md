@@ -1,6 +1,6 @@
 ---
 title: 数据类继承（O-R 设计器）
-description: 在 O/R 设计器 对象关系设计器 (（) 中LINQ to SQL类工具）Visual Studio。
+description: 在 对象关系设计器 (O/R 设计器) （LINQ to SQL类工具）Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 9e0b8b1d0a3139370a4ae817d3ca6740ec3c469a07c4a60acc3e5f0883ae4ce9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 82c1c07ec9fb7e19a2d4e126358d124d88c79ff1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347397"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154909"
 ---
 # <a name="data-class-inheritance-or-designer"></a>数据类继承（O/R 设计器）
 
@@ -44,7 +44,7 @@ ms.locfileid: "121347397"
 |[如何：通过 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md)|介绍如何使用 **O/R** 设计器 配置使用单表继承的实体类。|
 |[演练：在 O/R 设计器LINQ to SQL使用单表继承创建 (类) ](../data-tools/walkthrough-creating-linq-to-sql-classes-by-using-single-table-inheritance-o-r-designer.md)|提供有关如何使用 O/R 设计器 配置使用单表继承的实体 **类的分步说明**。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练：创建 LINQ to SQL 类（O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

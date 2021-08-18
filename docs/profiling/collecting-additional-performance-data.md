@@ -7,15 +7,16 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2929f6b9e82a7a156034178f7e7f5f5d678ac842
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f9713abdc08a5d99695a0e8d06e05abb783d790
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142372"
 ---
 # <a name="collect-additional-performance-data"></a>收集其他性能数据
 

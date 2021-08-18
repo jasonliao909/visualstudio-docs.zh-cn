@@ -9,14 +9,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 50d78909e7abf27c8bd1a813041a85df47ea831c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 711aec7e37c4595be9ee149ebe0392b9789a0b79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143672"
 ---
 # <a name="options-text-editor-f-codelens"></a>“选项”>“文本编辑器”>“F#”>“CodeLens”
 

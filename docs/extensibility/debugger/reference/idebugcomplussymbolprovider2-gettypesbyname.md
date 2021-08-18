@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f407ebf44a9dbb0b678805d5eed38ef19098cd096a594e116d2d67370fdbaad7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2116f8aba1a44b01d07ad14aadb7c71b498666e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342383"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144972"
 ---
 # <a name="idebugcomplussymbolprovider2gettypesbyname"></a>IDebugComPlusSymbolProvider2::GetTypesByName
 根据类型的名称检索类型。
@@ -49,7 +49,7 @@ int GetTypesByName(
 [in]类型的名称。
 
 `nameMatch`\
-[in]选择匹配类型，例如区分大小写。 来自 NAME_MATCH [枚举的值](../../../extensibility/debugger/reference/name-match.md) 。
+[in]选择匹配类型，例如区分大小写。 一个来自 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 的值。
 
 `ppEnum`\
 [out]包含具有给定名称的类型或类型的枚举器。
@@ -126,5 +126,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

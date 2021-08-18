@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2faabb8d37cdebf1bdd6c83d10356edc1ce78690
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8106bd071eefc6d2ad08ee147420aa81ffe9044
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140839"
 ---
 # <a name="understand-memory-allocation-and-object-lifetime-data-values"></a>了解内存分配数据值和对象生存期数据值
 

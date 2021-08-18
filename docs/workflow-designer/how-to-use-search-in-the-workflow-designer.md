@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 32cb7752ec79545055d6305ff4016613251730a21e255da6633cb1cc8ad4b882
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 846fbcae4cde785234048696d43466251a663f57
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155182"
 ---
 # <a name="how-to-use-search-in-the-workflow-designer"></a>如何：在工作流设计器中使用搜索
 
