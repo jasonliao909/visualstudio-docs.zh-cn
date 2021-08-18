@@ -1,6 +1,6 @@
 ---
 description: 此方法返回此指针对象指向的对象的类型。
-title: IDebugPointerField：： GetDereferencedField |Microsoft Docs
+title: IDebugPointerField：：GetDereferencedField |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 8de988ab-cd79-4287-be72-3c900f2fe407
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e54b378475cec191ca8395a7af5652ea6e93125f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70ceab57784de916b9f6941e97f70d65d3d7826e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053667"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088362"
 ---
 # <a name="idebugpointerfieldgetdereferencedfield"></a>IDebugPointerField::GetDereferencedField
 此方法返回此指针对象指向的对象的类型。
@@ -42,14 +43,14 @@ int GetDereferencedField(
 
 ## <a name="parameters"></a>参数
 `ppField`\
-弄返回描述目标对象类型的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
+[out]返回[描述目标对象的类型的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 例如，如果 [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) 对象指向一个整数，则此方法返回的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 类型将描述该整数类型。
+ 例如，如果 [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md) 对象指向整数，则此方法返回的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 类型将描述该整数类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPointerField](../../../extensibility/debugger/reference/idebugpointerfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

@@ -1,6 +1,6 @@
 ---
 title: 如何：连接到服务中的数据
-description: 通过运行 "数据源配置向导" 并选择 "选择数据源类型" 页上的 "服务"，将应用程序连接到从服务返回的数据。
+description: 通过运行 "数据源配置向导" 并选择 "选择数据源类型" 页上的 "服务"，将应用程序连接从服务返回的数据。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: a6b54353-05fe-4e5c-8631-90231fc95504
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d8e3692f376a502a2cd924fa9604eddab445333f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6854b1cd7647f6bc4ac7ca92c920f7454b7ab1fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052741"
 ---
 # <a name="how-to-connect-to-data-in-a-service"></a>如何：连接到服务中的数据
 
@@ -51,15 +52,15 @@ ms.locfileid: "99858756"
 
 5. 单击 **"确定"** 将服务引用添加到项目。
 
-6. 单击“完成” 。
+6. 单击“完成”。
 
      数据源随即添加到“数据源”窗口中。
 
 ## <a name="next-steps"></a>后续步骤
 
-若要向应用程序添加功能，请在 " **数据源** " 窗口中选择一个项，然后将其拖到窗体上以创建绑定控件。 有关详细信息，请参阅 [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
+若要向应用程序添加功能，请在 " **数据源** " 窗口中选择一个项，然后将其拖到窗体上以创建绑定控件。 有关详细信息，请参阅[在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)
-- [在 Visual Studio 中 Windows Communication Foundation Services 和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
+- [WindowsVisual Studio 中的 Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

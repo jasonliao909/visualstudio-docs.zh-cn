@@ -18,20 +18,21 @@ ms.assetid: 104d1d19-b5a9-4071-b81e-1b3af08e9c7b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: d747459abc62462864e94ed9b8af9b11c6b9eabe
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 53ede3f31574ec2bbbd9b5cc2ce1f588b4ed5233
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052832"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化 TableAdapter 查询
 
 参数化查询将返回满足查询内的 WHERE 子句条件的数据。 例如，通过在返回客户列表的 SQL 语句的末尾添加 `WHERE City = @City`，可以参数化客户列表，使之只显示某个城市的客户。
 
-在 **数据集设计器** 中创建参数化 TableAdapter 查询。你还可以在 Windows 应用程序中使用 "**数据**" 菜单上的 "**参数化数据源**" 命令来创建它们。 " **参数化数据源** " 命令创建窗体上的控件，您可以在其中输入参数值和运行查询。
+在 **数据集设计器** 中创建参数化 TableAdapter 查询。你还可以使用 "**数据**" 菜单上的 "**参数化数据源**" 命令在 Windows 应用程序中创建它们。 " **参数化数据源** " 命令创建窗体上的控件，您可以在其中输入参数值和运行查询。
 
 > [!NOTE]
 > 构造参数化查询时，请使用特定于要编码的数据库的参数表示法。 例如，Access 和 OleDb 数据源使用问号“?”表示参数，所以 WHERE 子句将类似于：`WHERE City = ?`。
@@ -48,7 +49,7 @@ ms.locfileid: "106215925"
 
 ### <a name="to-create-a-parameterized-query-while-designing-a-data-bound-form"></a>在设计数据绑定窗体时创建参数化查询
 
-1. 在窗体中选择已绑定到数据集的控件。 有关详细信息，请参阅 [将 Windows 窗体控件绑定到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
+1. 在窗体中选择已绑定到数据集的控件。 有关详细信息，请参阅[将 Windows 窗体控件绑定到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)。
 
 2. 在 " **数据** " 菜单上，选择 " **添加查询**"。
 
@@ -100,6 +101,6 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 3. 选择允许空值的参数，并将 **AllowDbNull** 属性设置为 `true` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9dd9a3d46823ed53310b355fc8d122c5f64d1234d584cd85b8a7c43959ff4c4a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9eee0002f426fb1134370b1f7bd8a90fdea79b14
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352079"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047005"
 ---
 # <a name="extend-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time"></a>在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿
   你可以通过下列方式使用 VSTO 外接程序来自定义 Word 文档和 Excel 工作簿：
@@ -124,7 +124,7 @@ ms.locfileid: "121352079"
 
  当希望仅在指定 Office 对象包括扩展对象的情况下运行代码时，可以使用 `HasVstoObject` 方法。 例如，如果您有一个 Word VSTO 外接程序，该外接程序处理该 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件，以便在保存文档之前从文档中删除托管控件，请使用 `HasVstoObject` 方法来确定文档是否已扩展。 如果文档尚未扩展，则它不能具有托管控件，并且事件处理程序可以返回，而不会尝试清理文档上的控件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
 - [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)

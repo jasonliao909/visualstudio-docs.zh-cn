@@ -18,17 +18,17 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c75c41a68c4c6ba2cebf0b7d16bbf5b5ff064aee8f25d4c2962c9574b5c78ef1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1b01a254283befcd790b0e2ecbb0a35084c5b944
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026936"
 ---
 # <a name="how-to-define-a-method-instance"></a>如何：定义方法实例
   必须为模型中每个方法至少定义一个方法实例。
 
- 使用 **"BDC** 方法详细信息"窗口添加方法实例。 添加方法实例时，Visual Studio向项目中 `<MethodInstance>` 模型文件的 XML 添加 元素。 有关元素的属性详细信息，请参阅 `<MethodInstance>` [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
+ 使用 **"BDC** 方法详细信息"窗口添加方法实例。 添加方法实例时，Visual Studio向项目中 `<MethodInstance>` 模型文件的 XML 添加元素。 有关元素的属性详细信息，请参阅 `<MethodInstance>` [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。
 
 ### <a name="to-define-a-method-instance"></a>定义方法实例
 

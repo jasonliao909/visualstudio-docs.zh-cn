@@ -11,17 +11,18 @@ ms.assetid: 4478b3d5-aa30-4105-8d05-e3bae2f8917a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5c4f8516d33b6df04afbb09c9b5b98fff56ccce5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 11a4bf9f2486f7b9baa2d55f9c3af73291d27da1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087491"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072256"
 ---
 # <a name="idebugport2getportname"></a>IDebugPort2::GetPortName
 获取端口名称。
@@ -47,5 +48,5 @@ int GetPortName(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

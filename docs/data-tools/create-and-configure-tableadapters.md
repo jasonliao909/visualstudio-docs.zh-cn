@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 024511b6bec5d060018c2a4976b17d22357ccaa8789a716af14debb037e91169
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f08a8c6d441a8b38f367ecfbdab95e1eabc113a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052962"
 ---
 # <a name="create-and-configure-tableadapters"></a>创建和配置 TableAdapter
 

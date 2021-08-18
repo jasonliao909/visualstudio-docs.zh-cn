@@ -13,12 +13,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 084f91e368c4addaebe53d768966459080f9d7a1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9b6ad5e0286a6faedf60718fd1533d83cb3a5fcd7fdf2104b89d3bb09e69da91
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037780"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440225"
 ---
 # <a name="walkthrough-bind-to-data-in-xaml-designer"></a>演练：在 XAML 设计器中绑定数据
 
@@ -32,7 +32,7 @@ ms.locfileid: "122037780"
 
 1. 将项目命名为“BindingTest”，然后选择“确定”按钮。
 
-1. 打开 **MainWindow.xaml.cs** (或 **MainWindow.xaml.vb**) 并添加以下代码。 在 C# 中，将这段代码添加到 `BindingTest` 命名空间中（在文件中的最后一个右括号之前）。 在 Visual Basic 中，添加新类即可。
+1. 打开 **MainWindow.xaml.cs** (**或 MainWindow.xaml.vb**) 并添加以下代码。 在 C# 中，将这段代码添加到 `BindingTest` 命名空间中（在文件中的最后一个右括号之前）。 在 Visual Basic 中，添加新类即可。
 
    ```csharp
    public class ShoppingCart : DependencyObject

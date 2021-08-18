@@ -1,6 +1,6 @@
 ---
 title: 在 XAML 设计器中调试或禁用项目代码
-description: 了解如何调试或禁用项目中的项目XAML 设计器，包括如何调试其他项目实例中的运行项目Visual Studio。
+description: 了解如何调试或禁用项目中的项目XAML 设计器，包括如何调试其他实例中的运行项目代码Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -9,12 +9,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 8e0563318600c30d595d6fd193aff48f4171d31ae95e39c48c8bb5dd02c154ae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 07107cac541f8845b031d39976be4041a7826551
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045692"
 ---
 # <a name="debug-or-disable-project-code-in-xaml-designer"></a>在 XAML 设计器中调试或禁用项目代码
 
@@ -56,7 +56,7 @@ ms.locfileid: "121393227"
 
 5. 在项目代码中设置断点。
 
-6. 在 Visual Studio 的新实例中，在菜单栏上，选择"**调试**  >  **附加到进程"。**
+6. 在新实例的 Visual Studio菜单栏上，选择"**调试**  >  **附加到进程"。**
 
 7. 在“附加到进程”  对话框中，从“可用进程”  列表中选择“XDesProc.exe” ，然后选择“附加”  按钮。
 

@@ -1,6 +1,6 @@
 ---
-title: 在联机 ClickOnce 应用程序中检索查询字符串信息
-description: 了解 ClickOnce 应用程序如何可以读取 URL 的查询部分以及如何使用 Mageui.exe 将应用程序配置为接受查询字符串参数。
+title: 在联机查询应用中检索ClickOnce信息
+description: 了解ClickOnce应用程序如何读取 URL 的查询部分，以及如何使用 MageUI 将应用程序配置为接受查询字符串参数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 48ce098a-a075-481b-a5f5-c8ba11f63120
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f53d2d005ad9b706f318ec82d48898f73ce0f07
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 13a3a02b8853ede34ec257c01c0300e22fba136a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106213922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089935"
 ---
 # <a name="how-to-retrieve-query-string-information-in-an-online-clickonce-application"></a>如何：在联机 ClickOnce 应用程序中检索查询字符串信息
 *查询字符串* 是 URL 的一部分，它以问号 (?) 开头，并且以 *名称=值* 的形式包含任意信息。 假设你有一个在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上承载的名为 `WindowsApp1` 的 `servername`应用程序，并且要在该应用程序启动时传入变量 `username` 的值。 你的 URL 可能类似于下面这样：
@@ -41,14 +42,14 @@ ms.locfileid: "106213922"
 > [!NOTE]
 > 决定启用此功能之前，请参阅本主题后面的“安全性”一节。
 
- 有关如何 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 使用 *Mage.exe* 或 *MageUI.exe* 创建部署的信息，请参阅 [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+ 有关如何使用Mage.exe或MageUI.exe创建部署的信息，请参阅演练：手动部署ClickOnce [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。  **
 
 > [!NOTE]
 > 从 .NET Framework 3.5 SP1 开始，可以将命令行参数传递给脱机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 如果要向应用程序提供参数，则可以将参数传入具有 .APPREF-MS 扩展名的快捷方式文件。
 
 ### <a name="to-obtain-query-string-information-from-a-clickonce-application"></a>从 ClickOnce 应用程序获取查询字符串信息
 
-1. 将以下代码置于项目中。 为了使此代码正常运行，您必须对 system.web、system.web 和 System.object 都具有对 system.web 的引用以及对该函数的 add `using` 或 `Imports` 指令。
+1. 将以下代码置于项目中。 若要使此代码正常工作，必须引用 System.Web，并添加 或 针对 `using` `Imports` System.Web、System.Collections.Specialized 和 System.Deployment.Application 的 指令。
 
     :::code language="csharp" source="../snippets/csharp/VS_Snippets_Winforms/ClickOnceQueryString/CS/Form1.cs" id="Snippet1":::
     :::code language="vb" source="../snippets/visualbasic/VS_Snippets_Winforms/ClickOnceQueryString/VB/Form1.vb" id="Snippet1":::
@@ -81,5 +82,5 @@ ms.locfileid: "106213922"
 ## <a name="net-framework-security"></a>.NET Framework 安全性
  仅当你计划在使用包含任何恶意字符的输入之前清除它时，才允许向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序传递 URL 参数。 例如，如果在针对数据库进行的 SQL 查询中未经筛选地使用嵌入有引号、斜杠或分号的字符串，则该字符串可能会执行任意数据操作。 有关查询字符串安全性的详细信息，请参阅[脚本入侵概述](/previous-versions/w1sw53ds(v=vs.140))。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)

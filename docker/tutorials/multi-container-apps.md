@@ -1,19 +1,20 @@
 ---
-title: Docker 教程 - 第 6 部分：多容器应用
+title: Docker 教程 - 第 7 部分：多容器应用
 description: 如何在容器之间设置网络连接，以及如何为 MySQL 数据库添加容器。
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: d23d1f5d94729741630ee76263fd5b32041e9cfd
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: a006435b6513d3cecf87f61c576dd253e3a68ef6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045510"
 ---
 # <a name="multi-container-apps"></a>多容器应用
 

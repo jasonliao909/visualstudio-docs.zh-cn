@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3ed9dd2e86c04771b8bb3b6c5fa87279d7bb41738b959b22ce51ce487029851c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2bcbe5e48918087f9252c26c0b8a9fc1f52eb3b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338236"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042798"
 ---
 # <a name="module_info"></a>MODULE_INFO
 描述特定模块 (DLL、EXE 或程序集) 。

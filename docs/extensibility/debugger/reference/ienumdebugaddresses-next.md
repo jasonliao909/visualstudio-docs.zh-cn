@@ -1,6 +1,6 @@
 ---
-description: 此方法从地址枚举返回下一组元素。
-title: IEnumDebugAddresses：： Next |Microsoft Docs
+description: 此方法从 addresses 枚举返回下一组元素。
+title: IEnumDebugAddresses：：Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35fb7c1a383d879197b87da7201b10d9d07ddebae2503bc0372a372438ff371a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5715570c3dd95b6ddeede4b090afbe4205cb27f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415465"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070612"
 ---
 # <a name="ienumdebugaddressesnext"></a>IEnumDebugAddresses::Next
-此方法返回枚举中的下一组元素。
+此方法从 枚举返回下一组元素。
 
 ## <a name="syntax"></a>语法
 
@@ -47,16 +47,16 @@ int Next(
 
 ## <a name="parameters"></a>参数
 `celt`\
-中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
+[in]要检索的元素数。 还指定数组的最大 `rgelt` 大小。
 
 `rgelt`\
-[in，out]要填充的 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 元素的数组。
+[in， out]要填充 [的 IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 元素的数组。
 
 `pceltFetched`\
-弄返回中实际返回的元素数 `rgelt` 。
+[out]返回 中实际返回的元素数 `rgelt` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果可能返回的元素数少于请求的元素数，则返回 `S_FALSE` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IEnumDebugAddresses](../../../extensibility/debugger/reference/ienumdebugaddresses.md)

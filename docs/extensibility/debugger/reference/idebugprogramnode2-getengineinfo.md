@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 17bcdaf97ae37aead254bb04c2ffde96e45bbf55501acd4817d51d9d97e95ec2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 86b8e1be197feb94f203346105754c42a080a1fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449191"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071469"
 ---
 # <a name="idebugprogramnode2getengineinfo"></a>IDebugProgramNode2::GetEngineInfo
 获取 (DE) 运行程序的调试引擎的名称和标识符。
@@ -53,5 +53,5 @@ int GetEngineInfo(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

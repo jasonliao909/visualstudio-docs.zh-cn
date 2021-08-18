@@ -1,6 +1,6 @@
 ---
 title: 如何：读取和写入文档属性
-description: 了解如何使用 Visual Studio 在 Microsoft Excel 和 Microsoft Word 中获取或设置文档属性。
+description: 了解如何使用 Visual Studio 获取或设置 Microsoft Excel 和 Microsoft Word 中的文档属性。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3474d86a7408e841d383c82e5ab38da90253dbbf
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 981f9da1138034dd108a438a69683f4107358ee4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826676"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032714"
 ---
 # <a name="how-to-read-from-and-write-to-document-properties"></a>如何：读取和写入文档属性
   可以存储文档以及文档属性。 Office 应用程序提供了许多内置的属性，例如作者、标题和主题。 本主题演示如何在 Microsoft Office Excel 和 Microsoft Office Word 中设置文档属性。

@@ -1,6 +1,6 @@
 ---
-description: 获取此过程的 GUID。
-title: IDebugProcess2：：GetProcessId |Microsoft Docs
+description: 获取此进程的 GUID。
+title: IDebugProcess2：： GetProcessId |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ca026ad8885056f4c05a57646207c2403058ccec0500430319f740ce6608f35a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3551218edeee1cf22ec44e8a76e5b49d89223b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087933"
 ---
 # <a name="idebugprocess2getprocessid"></a>IDebugProcess2::GetProcessId
-获取此过程的 GUID。
+获取此进程的 GUID。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int GetProcessId(
 
 ## <a name="parameters"></a>参数
 `pguidProcessId`\
-[out]返回此过程的 GUID。
+弄返回此进程的 GUID。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- GUID (全局唯一) 标识系统中运行的所有其他进程的进程。
+ 全局唯一标识符 (GUID) 从系统中运行的所有其他进程中标识此进程。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

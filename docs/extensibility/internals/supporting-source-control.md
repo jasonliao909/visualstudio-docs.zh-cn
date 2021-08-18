@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2769e6a6633214e2f7e95d20f2bd61cb360d492f8d850e48d95b8ec6134a97c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4601c7e10d3f3092ad274e0570148bb348a7f41a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086477"
 ---
 # <a name="supporting-source-control"></a>支持源代码管理
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 支持项目或编辑器的文件签出、签入和其他源代码管理操作。 作为源代码管理客户端， 旨在与源代码管理包（如 ）交互，该包为动态定义的一组文件提供存档、版本控制和 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] 控制功能。

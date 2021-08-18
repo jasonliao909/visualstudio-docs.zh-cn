@@ -16,15 +16,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 21723deada493dd5e3d6ab6a16c6dc6366829bbb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 04f0dfba96ac09ff9cc87627f111f814f71d51b5554826ea524360c2af5323f3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135567"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440924"
 ---
 # <a name="access-data-in-documents-on-the-server"></a>访问服务器上文档中的数据
-  可以针对文档级自定义项中的数据进行编程，而无需使用 Word 或 Microsoft Office 对象Microsoft Office Excel。 这意味着，可以访问未安装 Word 或 Excel服务器上文档中包含的数据。 例如，服务器上的 (例如，在页) 可以自定义文档中的数据，并将自定义的文档发送给 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分离。 有关详细信息，请参阅 [文档级自定义项 中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
+  可以针对文档级自定义项中的数据进行编程，而无需使用 Word 或 Microsoft Office 对象Microsoft Office Excel。 这意味着可以访问未安装 Word 或 Excel服务器上文档中包含的数据。 例如，服务器上的代码 (例如，在页) 自定义文档中的数据，并将自定义的文档 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 发送给最终用户。 当最终用户打开文档时，解决方案程序集中的数据绑定代码将自定义数据绑定到文档中。 这是可能的，因为文档中的数据与用户界面分离。 有关详细信息，请参阅 [文档级自定义项 中的缓存数据](../vsto/cached-data-in-document-level-customizations.md)。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -63,7 +63,7 @@ ms.locfileid: "122135567"
     - 如果要对缓存数据的更改执行自己的序列化，可以直接写入 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.Xml%2A> 属性。 如果使用 **通过更改** 、 或类型数据集中的数据来更新数据库，请指定 DiffGram <xref:System.Data.Common.DataAdapter> <xref:System.Data.DataSet> <xref:System.Data.DataTable> 格式。 否则， <xref:System.Data.Common.DataAdapter> 会通过添加新行而不是修改现有行来更新数据库。
 
 ### <a name="modify-data-without-deserializing-the-current-value"></a>修改数据而不反初始化当前值
- 在某些情况下，你可能想要修改缓存对象的值，而无需先反化当前值。 例如，如果要更改具有简单类型（如字符串或整数）的对象的值，或者正在初始化服务器上文档中缓存的 ，可以这样做 <xref:System.Data.DataSet> 。 在这些情况下，可以使用 方法，而无需先反化缓存对象的 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 当前值。
+ 在某些情况下，你可能想要修改缓存对象的值，而无需先对当前值进行反初始化。 例如，如果要更改具有简单类型（如字符串或整数）的对象的值，或者正在初始化服务器上文档中缓存的 ，可以这样做 <xref:System.Data.DataSet> 。 在这些情况下，可以使用 方法，而无需先反化缓存对象的 <xref:Microsoft.VisualStudio.Tools.Applications.CachedDataItem.SerializeDataInstance%2A> 当前值。
 
  下面的代码示例演示如何在工作簿项目的 类中更改缓存Excel `Sheet1` 的值。 此示例是为 方法提供的较大示例的一 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.Save%2A> 部分。
 
@@ -78,7 +78,7 @@ ms.locfileid: "122135567"
 - 如果在数据缓存中生成具有 **null** 对象的解决方案，并且想要在首次打开文档之前使用 类初始化这些对象，则必须确保初始化数据缓存中所有 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 对象。 如果只初始化某些 对象，则打开文档时，所有对象都将设置为 **null，** 并且保存和关闭文档时将清除整个数据缓存。
 
 ## <a name="access-typed-datasets-in-the-cache"></a>访问缓存中的类型数据集
- 如果要从 Office 解决方案和 Office 外部的应用程序（例如 Windows Forms 应用程序或项目）访问类型数据集中的数据，则必须在两个项目引用的单独程序集中定义类型数据集。 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 如果使用数据源配置向导或 **数据集设计器** 向每个项目添加类型数据集，则 .NET Framework 将两个项目中的类型数据集视为不同的类型。 有关创建类型数据集的信息，请参阅在 中创建[和配置Visual Studio。](../data-tools/create-and-configure-datasets-in-visual-studio.md)
+ 如果要从 Office 解决方案和 Office 外部的应用程序（例如 Windows Forms 应用程序或项目）访问类型数据集中的数据，则必须在两个项目引用的单独程序集中定义类型数据集。 [!INCLUDE[vstecasp](../sharepoint/includes/vstecasp-md.md)] 如果使用数据源配置向导或 **数据集设计器** 将类型数据集添加到每个项目，则 .NET Framework 将两个项目中的类型数据集视为不同的类型。 有关创建类型数据集的信息，请参阅[在](../data-tools/create-and-configure-datasets-in-visual-studio.md)Visual Studio。
 
 ## <a name="see-also"></a>请参阅
 

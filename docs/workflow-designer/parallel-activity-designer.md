@@ -48,7 +48,7 @@ ms.locfileid: "121440469"
 |<xref:System.Activities.Statements.Parallel.Branches%2A>|正确|包含要执行的子活动的集合。|
 |<xref:System.Activities.Statements.Parallel.CompletionCondition%2A>|错误|在分支完成后计算。 如果计算结果为 **True**，则取消计划的挂起分支。 如果未将此属性设置为或计算为 **False**，则在完成其所有子活动后，活动完成。 默认值为 **null**。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [序列](../workflow-designer/sequence-activity-designer.md)
 - [ParallelForEach\<T>](../workflow-designer/parallelforeach-t-activity-designer.md)

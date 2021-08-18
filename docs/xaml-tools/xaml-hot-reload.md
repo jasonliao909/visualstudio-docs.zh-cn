@@ -21,12 +21,12 @@ ms.locfileid: "121351508"
 ---
 # <a name="write-and-debug-running-xaml-code-with-xaml-hot-reload-in-visual-studio"></a>在 Visual Studio 中使用 XAML 热重载编写和调试正在运行的 XAML 代码
 
-XAML 热重载在应用运行时更改 XAML 代码， (UI) 生成 WPF 或 UWP 应用用户界面。 热重载在 Visual Studio 和 Blend for Visual Studio 中均可用。 借助此功能，可以增量生成和测试 XAML 代码，其优点包括正在运行的应用的数据上下文、身份验证状态和其他在设计时难以模拟的实际复杂性。 如果需要帮助排查问题XAML 热重载，请参阅 [故障排除XAML 热重载](xaml-hot-reload-troubleshooting.md) 故障排除。
+XAML 热重载在应用运行时更改 XAML 代码， (UI) 生成 WPF 或 UWP 应用用户界面。 热重载和 Visual Studio 中Blend for Visual Studio。 借助此功能，可以增量生成和测试 XAML 代码，其优点包括正在运行的应用的数据上下文、身份验证状态和其他在设计时难以模拟的实际复杂性。 如果需要帮助排查问题XAML 热重载，请参阅 [故障排除XAML 热重载](xaml-hot-reload-troubleshooting.md) 故障排除。
 
 > [!NOTE]
-> 如果使用 Xamarin.Forms，请参阅[XAML 热重载 Xamarin.Forms 。](/xamarin/xamarin-forms/xaml/hot-reload)
+> 如果使用的是 Xamarin.Forms，请参阅[XAML 热重载 Xamarin.Forms 。](/xamarin/xamarin-forms/xaml/hot-reload)
 
-XAML 热重载在这些情况下尤其有用：
+XAML 热重载以下情况中， 尤其有用：
 
 * 修复在调试模式下启动应用后在 XAML 代码中发现的 UI 问题。
 
@@ -42,16 +42,16 @@ XAML 热重载在这些情况下尤其有用：
 ![XAML 热重载](../debugger/media/xaml-hot-reload-using.gif)
 
 > [!NOTE]
-> Visual StudioXAML 热重载在已连接到 **F5** 的调试器Visual Studio或 Blend for Visual Studio 中运行应用程序或启动调试 (才支持) 。  除非手动设置环境变量 ，否则无法通过使用 ["](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) 附加到进程" [来启用此体验](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)。
+> Visual StudioXAML 热重载在已连接到 **F5** 的调试器Visual Studio或Blend for Visual Studio或"开始调试" (时，才支持) 。  除非手动设置环境变量 ，否则无法通过使用 ["](../debugger/attach-to-running-processes-with-the-visual-studio-debugger.md) 附加到进程" [来启用此体验](xaml-hot-reload-troubleshooting.md#verify-that-you-use-start-debugging-rather-than-attach-to-process)。
 
 ## <a name="known-limitations"></a>已知限制
 
-以下是已知限制XAML 热重载。 若要处理你遇到的任何限制，只需停止调试器，然后完成操作。
+以下是上述方法的已知XAML 热重载。 若要处理你遇到的任何限制，只需停止调试器，然后完成操作。
 
 |限制|WPF|UWP|说明|
 |-|-|-|-|
 |应用运行时将事件与控件连接|不支持|不支持|请参阅错误： *确保事件失败*。 请注意，在 WPF 中，可以引用现有的事件处理程序。 在 UWP 应用中，不支持引用现有事件处理程序。|
-|在资源字典（如应用页面/窗口或 *App.xaml* 中的资源字典）中创建资源对象|从 2019 Visual Studio 2 开始支持|支持|示例：将 `SolidColorBrush` 添加到资源字典中，以用作 `StaticResource` 。</br>注意：在使用资源字典时，可以应用/使用静态资源、样式转换器和其他XAML 热重载。 不支持仅创建资源。</br> 更改资源字典 `Source` 属性。|
+|在资源字典（如应用页面/窗口或 *App.xaml* 中的资源字典）中创建资源对象|从 2019 Visual Studio 2 开始支持|支持|示例：将 `SolidColorBrush` 添加到资源字典中，以用作 `StaticResource` 。</br>注意：使用资源字典时，可以应用/使用写入资源字典的静态资源、样式转换器XAML 热重载。 不支持仅创建资源。</br> 更改资源字典 `Source` 属性。|
 |在应用运行时向项目添加新控件、类、窗口或其他文件|不支持|不支持|无|
 |管理NuGet包 (添加/删除/更新包) |不支持|不支持|无|
 |更改使用 {x：Bind} 标记扩展的数据绑定|不适用|从 2019 Visual Studio开始支持|这需要Windows 10版本 1809 (版本 10.0.17763) 。 在 2017 Visual Studio版本中不受支持。|
@@ -65,9 +65,9 @@ XAML 热重载在这些情况下尤其有用：
 |错误消息|说明|
 |-|-|
 |确保事件失败|错误指示你正在尝试将事件连接到其中一个控件，而应用程序运行时不支持该事件。|
-|此更改不受 XAML 热重载，并且不会在调试会话期间应用。|错误指示用户不支持你尝试XAML 热重载。 停止调试会话，进行更改，然后重启调试会话。 如果发现不受支持的方案，请使用开发人员指南中的新"建议功能[Visual Studio"Community。](https://aka.ms/feedback/suggest?space=8) |
+|此更改不受 XAML 热重载，并且不会在调试会话期间应用。|错误指示用户不支持你尝试XAML 热重载。 停止调试会话，进行更改，然后重启调试会话。 如果发现不支持的方案，请参阅开发人员指南中的新"建议功能["Visual Studio Community。](https://aka.ms/feedback/suggest?space=8) |
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [排查 XAML 热重载问题](xaml-hot-reload-troubleshooting.md)
 * [适用于 Xamarin.Forms 的 XAML 热重载](/xamarin/xamarin-forms/xaml/hot-reload)

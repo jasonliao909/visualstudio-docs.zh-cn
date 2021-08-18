@@ -9,14 +9,15 @@ ms.assetid: b491499c-af57-47da-87d6-34b7398f6591
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8214703fb1ffc05d3f58f8348870a8505cc8f59
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8190ee63b7d1e49e3e115389201b8b8f95597a65
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077182"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088921"
 ---
 # <a name="idebugextendedfield"></a>IDebugExtendedField
 扩展可用于支持托管代码泛型的字段类型。

@@ -1,5 +1,5 @@
 ---
-description: 描述给定文本中的行和列的位置。
+description: 描述给定文本中的行和列位置。
 title: TEXT_POSITION |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 6dcec574-a852-49fa-8c2e-2e71cbb5e3c6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1b99b5dcede7f0e40e0ff77d1e3f7f64b5943c18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 497e412b75ee1c37c28da018e3a9f67ec2cab184
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102917"
 ---
 # <a name="text_position"></a>TEXT_POSITION
-描述给定文本中的行和列的位置。
+描述给定文本中的行和列位置。
 
 ## <a name="syntax"></a>语法
 
@@ -45,16 +46,16 @@ public struct TEXT_POSITION {
 ## <a name="members"></a>成员
 
 `dwLine`\
-源文件中的行的索引。
+源文件中行的索引。
 
 `dwColumn`\
-行的字符偏移量。
+字符偏移量到行中。
 
 ## <a name="remarks"></a>备注
 
-此结构用于 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 和 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 结构。
+此结构[用于CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)[反汇编数据](../../../extensibility/debugger/reference/disassemblydata.md)结构。
 
-通过调用以下方法填充此结构：
+通过调用以下方法来填充此结构：
 
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
 
@@ -78,13 +79,13 @@ public struct TEXT_POSITION {
 
 ## <a name="requirements"></a>要求
 
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)
