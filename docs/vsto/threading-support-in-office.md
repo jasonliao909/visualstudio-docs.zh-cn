@@ -1,5 +1,5 @@
 ---
-title: 中的线程Office
+title: 线程处理支持Office
 description: 在对象模型中支持Microsoft Office线程。 对象Office不是线程安全的，但可以在一个解决方案中使用多个Office线程。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 0313a6c0b263cfb47cbde84524682db446fc29050fa42b639e2fed407d33b9ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3bd8ea22fc78f0acd4f9474f56ca4cd9353688dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046199"
 ---
-# <a name="threading-support-in-office"></a>中的线程Office
-  本文提供有关如何在对象模型中支持线程Microsoft Office的信息。 对象Office不是线程安全的，但可以与一个解决方案中的多个线程Office。 Office是 COM 服务器 (组件) 模型。 COM 允许客户端在任意线程上调用 COM 服务器。 对于非线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便随时只有一个逻辑线程在服务器上执行。 此机制称为 STA 模型 (单元) 单元。 由于调用是序列化的，因此当服务器繁忙或正在后台线程上处理其他调用时，调用方可能会阻塞一段时间。
+# <a name="threading-support-in-office"></a>线程处理支持Office
+  本文提供有关如何在对象模型中支持线程Microsoft Office的信息。 对象Office不是线程安全的，但可以与一个解决方案中的多个线程Office。 Office COM 服务器中的组件对象 (模型) 应用程序。 COM 允许客户端在任意线程上调用 COM 服务器。 对于非线程安全的 COM 服务器，COM 提供了一种机制来序列化并发调用，以便随时只有一个逻辑线程在服务器上执行。 此机制称为 STA 模型 (单元) 单元。 由于调用是序列化的，因此当服务器繁忙或正在后台线程上处理其他调用时，调用方可能会阻塞一段时间。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -48,7 +48,7 @@ ms.locfileid: "121423808"
   Office STA 中运行。 通过了解这一点的含义，可以了解如何将多个线程用于Office。
 
 ## <a name="basic-multithreading-scenario"></a>基本多线程方案
- 解决方案中的Office始终在主 UI 线程上运行。 你可能想要通过在后台线程上运行单独的任务来优化应用程序性能。 目标是一次似乎完成两个任务，而不是一个任务后跟另一个任务，这应使执行更顺畅 (使用多个线程) 。 例如，你可能在 Excel UI 主线程上具有事件代码，并且在后台线程上，可以运行一个任务，该任务从服务器收集数据，然后使用服务器的数据更新 Excel UI 中的单元格。
+ 解决方案中的Office始终在主 UI 线程上运行。 你可能想要通过在后台线程上运行单独的任务来优化应用程序性能。 目标是同时完成两个看似而不是后跟另一个任务的任务，这应使执行更顺畅 (使用多个线程) 。 例如，你可能在 Excel UI 主线程上具有事件代码，并且在后台线程上，可以运行从服务器收集数据的任务，然后使用服务器的数据更新 Excel UI 中的单元格。
 
 ## <a name="background-threads-that-call-into-the-office-object-model"></a>调用对象模型的后台Office线程
  当后台线程调用 Office时，该调用会自动跨 STA 边界封送。 但是，无法保证应用程序Office后台线程执行调用时处理调用。 有几种可能的情况：

@@ -10,14 +10,15 @@ ms.assetid: 5ee2d1ba-478a-4cb7-898f-c3b4b2ee834e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6436d05d3b15be1c1fe8d7c7bb9c8592dee091dc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ce2dce5735fa665ff127736db2df6d7dfb53b9f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090273"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041602"
 ---
 # <a name="prepare-extensions-for-windows-installer-deployment"></a>为 Windows Installer 部署准备扩展
 不能使用 Windows Installer 包 (MSI) 来部署 VSIX 包。 不过，您可以提取用于 MSI 部署的 VSIX 包的内容。 本文档演示如何准备一个项目，该项目的默认输出是一个要包含在安装项目中的 VSIX 包。
@@ -56,6 +57,6 @@ ms.locfileid: "105090273"
 
 5. 将剩余文件添加到安装项目。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 安装程序部署](/previous-versions/2kt85ked(v=vs.120))
 - [演练：创建自定义操作](/previous-versions/visualstudio/visual-studio-2010/d9k65z2d(v=vs.100))

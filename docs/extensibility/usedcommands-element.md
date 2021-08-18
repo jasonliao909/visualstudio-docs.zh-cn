@@ -67,6 +67,6 @@ UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。
 </UsedCommands>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [UsedCommand 元素](../extensibility/usedcommand-element.md)
 - [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

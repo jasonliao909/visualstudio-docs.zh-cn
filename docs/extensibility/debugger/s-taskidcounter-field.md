@@ -1,6 +1,6 @@
 ---
-description: System.Threading.Tasks.Task 对象的下一个可用标识符。
-title: s_taskIdCounter字段|Microsoft Docs
+description: "\"System.object\" 对象的下一个可用标识符。"
+title: s_taskIdCounter 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,23 +9,24 @@ ms.assetid: 7e5a1907-c652-4046-b207-d2f1ef7b8029
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7676012e6cf140fb4a93d4735169d05de37f5de4
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 88e673be6736e7570a068e4c1d728063bdb39aa2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902379"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102891"
 ---
 # <a name="s_taskidcounter-field"></a>s_taskIdCounter 字段
-对象的下一个可用 <xref:System.Threading.Tasks.Task> 标识符。
+对象的下一个可用标识符 <xref:System.Threading.Tasks.Task> 。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll) 
+ **Assembly：** mscorlib (mscorlib.dll) 
 
- 由于无法从 CIL 访问此内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -35,5 +36,5 @@ ms.locfileid: "112902379"
 
 ## <a name="remarks"></a>备注
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

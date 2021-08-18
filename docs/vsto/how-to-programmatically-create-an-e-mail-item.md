@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式创建电子邮件项
-description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Outlook 创建电子邮件。
+description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Outlook 中创建电子邮件。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: bf0ed43b3c27a14c8d746d6bb0851b36180f523d29f139ae10df27383e21f1d8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3c2a763957004b622250514535a9ebe1c80b0cf8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423912"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046576"
 ---
 # <a name="how-to-programmatically-create-an-email-item"></a>如何：以编程方式创建电子邮件项
-  此示例在 Microsoft Office Outlook。
+  此示例在 Microsoft Office Outlook 中创建一封电子邮件。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -34,4 +34,4 @@ ms.locfileid: "121423912"
 
 ## <a name="see-also"></a>请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
-- [外接程序VSTO编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
+- [VSTO 外接程序编程入门](../vsto/getting-started-programming-vsto-add-ins.md)

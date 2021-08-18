@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: dbb9cf7f9c3d024a28c0726ff54e0f0a5a981cd3d2242527706a5716de996a02
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b475e8c7e259acc6dcac42eefb6b1bd35d4f32c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040458"
 ---
 # <a name="create-dependency-diagrams-from-your-code"></a>从代码创建依赖项关系图
 

@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e97d498abbd7cbc650a0438a96570c172e5cf1d48031c92f8bef7b09de8f1860
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f8d104d4e3515e2023408c4d17a7260ac12a6e9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338886"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057507"
 ---
 # <a name="idebugprocesssecurity"></a>IDebugProcessSecurity
 `IDebugProcessSecurity` 由端口供应商实现，以警告用户附加到进程不安全。
@@ -46,7 +46,7 @@ IDebugProcessSecurity : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [端口](../../../extensibility/debugger/ports.md)
 - [端口提供程序](../../../extensibility/debugger/port-suppliers.md)
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)

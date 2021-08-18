@@ -11,18 +11,19 @@ ms.assetid: cef390cd-eeda-42e6-9d2e-18c8325a4f06
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 73027013916d909fd5d9f4c9f00949ce9a863708
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29074e32fb232af7e89581368a6067b9db668da1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091976"
 ---
 # <a name="systemactivities-tab-choose-toolbox-items-dialog-box"></a>"系统活动" 选项卡，"选择工具箱项" 对话框
 
-" **选择工具箱项** " 对话框的此选项卡显示可用 WINDOWS WORKFLOW FOUNDATION (WF) 活动、模板和项目的列表。 若要显示此列表，请从 "**工具**" 菜单中选择 "**工具箱项**"，或通过右键单击 **工具箱** 并选择 "**选择项**" 以显示 "**选择工具箱项**" 对话框，然后选择其 "**系统**" 选项卡。从现成的列表中，列表包含来自 System.object、system.web 和 System.object 程序集的工作流活动;但是，默认情况下，仅检查显示的系统提供的活动和通过 **工具箱** 中显示的其他程序集添加的活动。 当你在对话框上单击 **"确定"** 时，将自动检查并显示最近 **添加的活动**。 此外，这些项将显示在 **工具箱** 中与活动/项/模板所在的命名空间对应的新类别中。
+"**选择工具箱项**" 对话框的此选项卡显示可用 Windows Workflow Foundation (WF) 活动、模板和项目的列表。 若要显示此列表，请从 "**工具**" 菜单中选择 "**工具箱项**"，或通过右键单击 **工具箱** 并选择 "**选择项**" 以显示 "**选择工具箱项**" 对话框，然后选择其 "**系统**" 选项卡。从现成的列表中，列表包含来自 System.object、system.web 和 System.object 程序集的工作流活动;但是，默认情况下，仅检查显示的系统提供的活动和通过 **工具箱** 中显示的其他程序集添加的活动。 当你在对话框上单击 **"确定"** 时，将自动检查并显示最近 **添加的活动**。 此外，这些项将显示在 **工具箱** 中与活动/项/模板所在的命名空间对应的新类别中。
 
 > [!WARNING]
 > 如果您试图添加未包含任何工作流活动的程序集，则将显示一个错误对话框，指出该程序集没有包含任何活动。

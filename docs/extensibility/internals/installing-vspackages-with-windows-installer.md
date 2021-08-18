@@ -14,17 +14,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 63a0b57479ab8355031c9cf70df6caa1d19f2272865b380b431895dc856a4499
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 57d8ea2b8ab15ebb90a0d0160a5316f1b08d1d04
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375946"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042304"
 ---
 # <a name="installing-vspackages-with-windows-installer"></a>使用 Windows Installer 安装 VSPackage
-将 VSPackage 集成到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中不仅需要将文件复制到用户的计算机。 VSPackage 的安装程序必须安装 VSPackage 及其依赖文件，并注册并将其集成到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中。 VSPackage 可以利用集成功能，如在初始屏幕上显示图标 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和"关于"对话框。
+将 VSPackage 集成到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中不仅需要将文件复制到用户的计算机。 VSPackage 的安装程序必须安装 VSPackage 及其依赖文件，并注册并将其集成到 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中。 VSPackage 可以利用集成功能，例如，在初始屏幕上显示图标 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和"关于"对话框。
 
- 建议使用 Microsoft Windows 安装程序文件来分发 VSPackage。 易于使用的安装程序Windows可以在 支持的任何Windows操作系统中运行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 Windows[安装程序](/previous-versions/2kt85ked(v=vs.120))。
+ Microsoft Windows 安装程序文件是分发 VSPackage 的建议方法。 易于使用的安装程序Windows可以在 支持的任何Windows操作系统上运行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 有关详细信息，请参阅 Windows[安装程序](/previous-versions/2kt85ked(v=vs.120))。
 
 ## <a name="in-this-section"></a>本节内容
 - [Windows Installer 基本知识](../../extensibility/internals/windows-installer-basics.md)

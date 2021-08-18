@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 66593b49472a5f4f426b7764bfc0b66128908045432fb63346fdde0b900c52cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 785fa491d78c0286404918f01149752af2f0dc69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045848"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 
@@ -47,6 +47,6 @@ ms.locfileid: "121440482"
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Interop> 活动的友好名称。 默认值为 **互操作**。 尽管显示名称不是必需的，但建议提供一个。|
 |<xref:System.Activities.Statements.Interop.ActivityType%2A>|正确|指定 <xref:System.Activities.Statements.Interop> 活动包含的活动类型。 指定的此类型必须派生自 <xref:System.Workflow.ComponentModel.Activity>。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [迁移](../workflow-designer/migration-activity-designers.md)

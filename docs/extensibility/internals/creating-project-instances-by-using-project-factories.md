@@ -47,7 +47,7 @@ ms.locfileid: "121448190"
 
    项目还可以不使用文件，而是将其项目状态存储在文件系统以外的存储机制中，如数据库或 Web 服务器。 在这种情况下，传递给方法的文件名参数 `CreateProject` 实际上不是文件系统路径，而是用于标识项目数据的唯一字符串（URL）。 不需要复制传递到的模板文件 `CreateProject` 来触发要执行的相应构造序列。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsOwnedProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectFactory>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsRegisterProjectTypes>

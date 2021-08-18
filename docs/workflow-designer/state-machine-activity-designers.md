@@ -8,14 +8,15 @@ ms.assetid: 97f0bff5-7e48-4914-8f04-8015a1c6bfae
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d304e2579be2ea75cd8ff30c263c0ebdd517a4e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 50cd69ea0b46d54095faebf2981de1f1ba0299f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943589"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135138"
 ---
 # <a name="state-machine-activity-designers"></a>状态机活动设计器
 

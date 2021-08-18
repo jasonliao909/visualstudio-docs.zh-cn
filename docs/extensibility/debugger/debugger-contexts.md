@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2d4df19ac3287788010a9db54cd1f237aaf13089b16e418068cbcd334dfc2cb3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d7c06855b7ec216ec90d77fc0c0b9968d8da1be1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089545"
 ---
 # <a name="debugger-contexts"></a>调试器上下文
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 调试中，调试引擎 (DE) 在多个不同的上下文中同时运行，如下所示：

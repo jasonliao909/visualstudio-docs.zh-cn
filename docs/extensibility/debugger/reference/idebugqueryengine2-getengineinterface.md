@@ -1,5 +1,5 @@
 ---
-description: 获取 DE 脚本接口 (调试) 引擎。
+description: 获取 DE (接口) 调试引擎。
 title: IDebugQueryEngine2：：GetEngineInterface |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c28a1627599c7701daa2c34a6259524f385fcb09f2b12187994ac0c97fc594e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5458ec92e121fcfe954e03a660370ec207d3ba55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415957"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118626"
 ---
 # <a name="idebugqueryengine2getengineinterface"></a>IDebugQueryEngine2::GetEngineInterface
-获取 DE 脚本接口 (调试) 引擎。
+获取 DE (接口) 调试引擎。
 
 ## <a name="syntax"></a>语法
 
@@ -51,7 +51,7 @@ int GetEngineInterface(
 ## <a name="remarks"></a>备注
  应谨慎使用生成的接口，因为通过从此方法检索的接口调用 会绕过会话调试管理器的处理，并且可能会导致 SDM 在调试时进入错误状态或生成错误。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugQueryEngine2](../../../extensibility/debugger/reference/idebugqueryengine2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)

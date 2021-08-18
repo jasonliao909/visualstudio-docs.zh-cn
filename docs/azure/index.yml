@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 7a7740ad4fffd80bc4b96ef7096b3bdd7c7a31bd
-  ms.sourcegitcommit: 2a50f4c1705baeee5c05580f04e3f468550f44e3
+  ms.openlocfilehash: 18b59cf46e5a4c35b543c48cba60ae5135b91379
+  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 04/05/2021
-  ms.locfileid: "106381576"
+  ms.lasthandoff: 08/13/2021
+  ms.locfileid: "122082421"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -54,7 +54,7 @@ landingContent:
     - text: Visual Studio 中的容器工具
       url: ../containers/overview.md
     - text: Kubernetes 工具
-      url: ../containers/bridge-to-kubernetes.md
+      url: /visualstudio/bridge/bridge-to-kubernetes
 - title: 调试 Azure 服务并分析性能
   linkLists:
   - linkListType: tutorial

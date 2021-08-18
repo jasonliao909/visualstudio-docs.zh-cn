@@ -12,14 +12,15 @@ ms.assetid: 1c1dce9f-bbe2-4fc3-a736-5f78a237f4cc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 31c62f50cfff8662c543d24dceabdb429a9b9b05
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6af8e2ff58fe5515d0cdd55bad5abdb8b96416ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102683"
 ---
 # <a name="how-to-provide-hidden-text-support-in-a-legacy-language-service"></a>如何：在旧版语言服务中提供隐藏的文本支持
 除了大纲区域外，还可以创建隐藏的文本区域。 隐藏的文本区域可以是客户端控制的，也可以是由编辑器控制的，用于完全隐藏文本区域。 编辑器将隐藏区域显示为水平线条。 在 HTML 编辑器中，这是 **仅限脚本** 的视图。

@@ -1,6 +1,6 @@
 ---
-title: 启动后附加|Microsoft Docs
-description: 程序启动时，调试会话已准备好将调试引擎附加到程序。 选择用于与调试引擎通信的设计方法。
+title: 启动后附加 |Microsoft Docs
+description: 当程序启动时，调试会话便已准备好将调试引擎附加到程序中。 选择用于与调试引擎进行通信的设计方法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,32 +21,32 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121452545"
 ---
 # <a name="attach-after-a-launch"></a>启动后附加
-程序启动后，调试会话已准备好将调试引擎附加到 (DE) 程序。
+在程序启动后，调试会话已准备好将调试引擎附加 (DE) 。
 
 ## <a name="design-decisions"></a>设计决策
- 由于共享地址空间中的通信更容易，因此必须在两种设计方法之间选择：在调试会话和 DE 之间设置通信。 或者，设置 DE 与程序之间的通信。 在下列选项之间选择：
+ 由于通信在共享地址空间内更容易，因此您必须选择两种设计方法：在调试会话和 DE 之间设置通信。 或者，在 DE 和程序之间设置通信。 选择以下各项：
 
-- 如果设置调试会话与 DE 之间的通信更合理，则调试会话将共同创建 DE 并要求 DE 附加到程序。 此设计将调试会话和 DE 一起放在一个地址空间中，将运行时环境和程序一起放在另一个地址空间中。
+- 如果在调试会话和 DE 之间设置通信更有意义，则调试会话会创建 DE，并请求取消附加到程序。 此设计使调试会话并将其放在一个地址空间中，并将运行时环境和程序组合在一起。
 
-- 如果设置 DE 与程序之间的通信更合理，则运行时环境将共同创建 DE。 此设计将 SDM 保留为一个地址空间，将 DE、运行时环境以及程序一起放在另一个地址空间中。 此设计是 DE 的典型设计，该 DE 通过解释器实现，用于运行脚本化语言。
+- 如果在 DE 和程序之间设置通信更有意义，则运行时环境会共同创建 DE。 这种设计使 SDM 保留在一个地址空间中，并在另一个地址空间中运行。 这种设计通常是使用解释器实现的一种 DE，用来运行脚本语言。
 
     > [!NOTE]
-    > DE 如何附加到程序取决于实现。 DE 与程序之间的通信也依赖于实现。
+    > DE 附加到该程序的方式依赖于实现。 DE 与程序之间的通信也依赖于实现。
 
 ## <a name="implementation"></a>实现
- 以编程方式，当会话调试管理器 (SDM) 首先接收表示要启动的程序的 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 对象时，它会调用 [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) 方法，并将 [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) 对象传递给该对象，该对象稍后用于将调试事件传递回 SDM。 然后 `IDebugProgram2::Attach` ， 方法调用 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 方法。 有关 SDM 如何接收接口的信息 `IDebugProgram2` ，请参阅 [通知端口](../../extensibility/debugger/notifying-the-port.md)。
+ 以编程方式，当会话调试管理器 (SDM) 首先收到表示要启动的程序的 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 对象时，它将调用 [Attach](../../extensibility/debugger/reference/idebugprogram2-attach.md) 方法，并向其传递一个 [IDebugEventCallback2](../../extensibility/debugger/reference/idebugeventcallback2.md) 对象，该对象稍后用于将调试事件传递回 SDM。 然后，该 `IDebugProgram2::Attach` 方法调用 [OnAttach](../../extensibility/debugger/reference/idebugprogramnodeattach2-onattach.md) 方法。 有关 SDM 如何接收接口的详细信息 `IDebugProgram2` ，请参阅 [通知端口](../../extensibility/debugger/notifying-the-port.md)。
 
- 如果 DE 需要在与正在调试的程序相同的地址空间中运行：因为 DE 通常是运行脚本解释器的一部分，所以 `IDebugProgramNodeAttach2::OnAttach` 该方法返回 `S_FALSE` 。 `S_FALSE`返回指示它已完成附加过程。
+ 如果您的 DE 需要在与要调试的程序相同的地址空间中运行：因为 DE 通常是运行脚本的解释器的一部分，所以该 `IDebugProgramNodeAttach2::OnAttach` 方法返回 `S_FALSE` 。 `S_FALSE`返回指示它已完成附加过程。
 
- 但是，如果 DE 在 SDM 的地址空间中运行：方法返回 ，或者 `IDebugProgramNodeAttach2::OnAttach` `S_OK` [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) 接口在与正在调试的程序关联的 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 对象上未实现。 在这种情况下， [最终调用 Attach](../../extensibility/debugger/reference/idebugengine2-attach.md) 方法以完成附加操作。
+ 但是，如果在 SDM 的地址空间中运行的 DE 为，则该 `IDebugProgramNodeAttach2::OnAttach` 方法返回 `S_OK` ，或 [IDebugProgramNodeAttach2](../../extensibility/debugger/reference/idebugprogramnodeattach2.md) 接口根本不是在与要调试的程序关联的 [IDebugProgramNode2](../../extensibility/debugger/reference/idebugprogramnode2.md) 对象上实现的。 在这种情况下，将最终调用 [attach](../../extensibility/debugger/reference/idebugengine2-attach.md) 方法来完成附加操作。
 
- 在后一种情况下，必须对传递给 方法的对象调用 [GetProgramId](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md) 方法，将 存储在本地程序对象中，然后在此对象上调用该方法时返回 `IDebugProgram2` `IDebugEngine2::Attach` `GUID` `GUID` `IDebugProgram2::GetProgramId` 此方法。 `GUID`用于跨各种调试组件唯一标识程序。
+ 在后一种情况下，您必须[](../../extensibility/debugger/reference/idebugprogram2-getprogramid.md)对 `IDebugProgram2` 传递给方法的对象调用 GetProgramId 方法 `IDebugEngine2::Attach` ，将存储 `GUID` 在本地程序对象中，并在 `GUID` `IDebugProgram2::GetProgramId` 随后对此对象调用方法时返回此方法。 `GUID`用于跨各种调试组件唯一标识程序。
 
- 在返回 的方法中，用于程序的 将传递给该方法，它是在本地程序对象上 `IDebugProgramNodeAttach2::OnAttach` `S_FALSE` 设置 `GUID` `IDebugProgramNodeAttach2::OnAttach` `GUID` 的方法。
+ 在方法返回的情况下 `IDebugProgramNodeAttach2::OnAttach` `S_FALSE` ，要用于该程序的将 `GUID` 传递到该方法，并且它是在 `IDebugProgramNodeAttach2::OnAttach` `GUID` 本地程序对象上设置的方法。
 
- DE 现已附加到程序，并准备好发送任何启动事件。
+ 现在已将 DE 附加到节目，并已准备好发送任何启动事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [直接附加到程序](../../extensibility/debugger/attaching-directly-to-a-program.md)
 - [通知端口](../../extensibility/debugger/notifying-the-port.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)
