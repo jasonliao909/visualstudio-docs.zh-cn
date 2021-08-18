@@ -56,15 +56,15 @@ public struct COMPUTER_INFO
 操作系统版本号。
 
 ## <a name="remarks"></a>备注
-此结构由 [GetComputerInfo 方法](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 返回。
+此结构由 [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md) 方法返回。
 
 ## <a name="requirements"></a>要求
-标头：Msdbg.h
+标头： Msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetComputerInfo](../../../extensibility/debugger/reference/idebugwindowscomputerport2-getcomputerinfo.md)

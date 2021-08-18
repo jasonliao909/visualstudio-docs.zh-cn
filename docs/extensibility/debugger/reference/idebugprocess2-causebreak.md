@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2ec4939575e1c31ccbc5114ec3c3676d34a7c74e0b0510cd80218df97211e5e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c8431c4b283a7ec235483eeb4637f5f6bef60697
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087998"
 ---
 # <a name="idebugprocess2causebreak"></a>IDebugProcess2::CauseBreak
 请求正在此进程中运行代码的下一个程序停止并发送 [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 事件对象。

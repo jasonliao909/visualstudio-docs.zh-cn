@@ -1,6 +1,6 @@
 ---
-description: IDebugFunctionObject2：：Evaluate 调用 函数，并返回结果值作为 对象。
-title: IDebugFunctionObject2：：Evaluate |Microsoft Docs
+description: IDebugFunctionObject2：：计算调用函数并将生成的值作为对象返回。
+title: IDebugFunctionObject2：：求值 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d83ca6ffb7899d6a144dc823a5849a41c6188c7569256446ca3688771facfae
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 86139b29b08fde8141dc905e98047a29520e6362
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088609"
 ---
 # <a name="idebugfunctionobject2evaluate"></a>IDebugFunctionObject2::Evaluate
-调用 函数，将结果值作为 对象返回。
+调用函数并将生成的值作为对象返回。
 
 ## <a name="syntax"></a>语法
 
@@ -49,22 +49,22 @@ int Evaluate (
 
 ## <a name="parameters"></a>参数
 `ppParams`\
-[in]表示 [输入参数的 IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组。 每个参数都使用此接口中的 Create 方法之一创建。
+中表示输入参数的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组。 其中每个参数都是通过使用此接口中的某个 Create 方法创建的。
 
 `dwParams`\
-[in]数组中的参数 `ppParams` 数。
+中数组中参数的数目 `ppParams` 。
 
 `dwEvalFlags`\
-[in] [来自 EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举的标志的组合，用于指定如何执行计算。
+中 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举中的标志的组合，该枚举指定如何执行计算。
 
 `dwTimeout`\
-[in]指定在从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 **INFINITE** 无限期等待。
+中指定从此方法返回之前要等待的最长时间（以毫秒为单位）。 使用 **无限大** 无限期等待。
 
 `ppResult`\
-[out]返回 **一个 IDebugObject，该 IDebugObject** 将函数的值表示为 对象。
+弄返回一个 **IDebugObject** ，它将函数的值表示为对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

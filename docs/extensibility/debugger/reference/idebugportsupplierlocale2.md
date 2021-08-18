@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f2e3aa7025c12b74fa77c1256b686c2cf12e1e46d04e11417719e4a69c0c97e8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fb273e38e207f36f7d438b7fba0bfe093f1c8344
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088011"
 ---
 # <a name="idebugportsupplierlocale2"></a>IDebugPortSupplierLocale2
 为端口供应商提供区域设置支持。
@@ -45,7 +45,7 @@ IDebugPortSupplierLocale2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugPortSupplier3](../../../extensibility/debugger/reference/idebugportsupplier3.md)

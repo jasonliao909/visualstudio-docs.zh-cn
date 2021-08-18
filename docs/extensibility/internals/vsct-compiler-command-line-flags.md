@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: de48995abe6547b9f73c27a3c749609e8f99cfd8c8f17aa74f5200106238d205
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0ce1e699901f6f4aab0145a41c606d05ea083c04
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034562"
 ---
 # <a name="vsct-compiler-command-line-flags"></a>VSCT 编译器命令行标志
 Visual Studio 命令表 (.vsct) 编译器提供了命令行开关，以确保 .vsct 文件编译成功。

@@ -1,6 +1,6 @@
 ---
-description: 获取一个对象，该对象可用于唯一标识调试器此生成器。
-title: AsyncVoidMethodBuilder.ObjectIdForDebugger 属性|Microsoft Docs
+description: 获取一个对象，该对象可用于将此生成器唯一标识到调试器。
+title: AsyncVoidMethodBuilder. ObjectIdForDebugger 属性 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -9,23 +9,24 @@ ms.assetid: 97c48c49-3fb2-4778-accd-8585fa4feabf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 782277cec64f27419d078a8493c7eb45d43d5b0f
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 821e40a11edfba616eeca622f555e79c33b413da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903692"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043669"
 ---
-# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder.ObjectIdForDebugger 属性
-获取一个对象，该对象可用于唯一标识调试器此生成器。
+# <a name="asyncvoidmethodbuilderobjectidfordebugger-property"></a>AsyncVoidMethodBuilder. ObjectIdForDebugger 属性
+获取一个对象，该对象可用于将此生成器唯一标识到调试器。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll) 
+ **Assembly：** mscorlib (mscorlib.dll) 
 
- 由于无法从 CIL .NET Framework访问此内部成员，因此 CIL (中提供了以下) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -33,6 +34,6 @@ ms.locfileid: "112903692"
 private object ObjectIdForDebugger
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Runtime.CompilerServices.AsyncVoidMethodBuilder>
-- [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

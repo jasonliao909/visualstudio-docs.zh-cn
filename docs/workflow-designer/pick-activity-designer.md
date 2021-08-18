@@ -10,14 +10,15 @@ ms.assetid: 642c0a47-1b47-45de-a19a-ca0606cedd7a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b616cf3d9b7eba5b2a2e9de23546a8a5f9c36ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e871e38cb9f675e1a76edae0410cbd5ac45aee10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968692"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092028"
 ---
 # <a name="pick-activity-designer"></a>Pick 活动设计器
 
@@ -29,7 +30,7 @@ ms.locfileid: "99968692"
 
 ### <a name="how-to-use-the-pick-activity-designer"></a>如何使用 Pick 活动设计器
 
-访问 "**工具箱**" 的 "**控制流**" 类别中的 " **Pick** " 活动设计器。 可以将 " **Pick** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动设计器的任何位置，例如，在 " **Sequence** " 活动设计器内。 将其放入工作流设计器后，它将创建一个 <xref:System.Activities.Statements.Pick> 活动，该活动默认情况下包含两个空 <xref:System.Activities.Statements.PickBranch> 活动，作为显示名称为 Branch1 和 Branch2 的元素。 <xref:System.Activities.Statements.PickBranch.DisplayName%2A>可以在 " **PickBranch** " 活动设计器标头或每个分支的 "**属性**" 窗口中编辑这些各自的属性值。
+访问 "**工具箱**" 的 "**控件 Flow** " 类别中的 " **Pick** " 活动设计器。 可以将 " **Pick** " 活动设计器从 " **工具箱** " 拖放到工作流设计器图面上通常放置活动设计器的任何位置，例如，在 " **Sequence** " 活动设计器内。 将其放入工作流设计器后，它将创建一个 <xref:System.Activities.Statements.Pick> 活动，该活动默认情况下包含两个空 <xref:System.Activities.Statements.PickBranch> 活动，作为显示名称为 Branch1 和 Branch2 的元素。 <xref:System.Activities.Statements.PickBranch.DisplayName%2A>可以在 " **PickBranch** " 活动设计器标头或每个分支的 "**属性**" 窗口中编辑这些各自的属性值。
 
 可以通过两种方法将 <xref:System.Activities.Statements.PickBranch> 活动添加到对象的集合中 <xref:System.Activities.Statements.Pick> ：从 "**工具箱**" 拖放 " **PickBranch** " 设计器，或者使用 " **Pick** " 设计图面中的右键单击菜单。 有关详细信息，请参阅 [PickBranch](../workflow-designer/pickbranch-activity-designer.md) 主题。 请注意，可以放置在 " **Pick** " 活动设计器中的唯一项是 " **PickBranch** " 活动设计器。
 
@@ -39,9 +40,9 @@ ms.locfileid: "99968692"
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
-|<xref:System.Activities.Activity.DisplayName%2A>|False|指定 <xref:System.Activities.Statements.Pick> 活动设计器在标头中的友好名称。 默认值为 Pick。 可以在属性网格或直接在活动设计器的标头中编辑该值。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
+|<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Pick> 活动设计器在标头中的友好名称。 默认值为 Pick。 可以在属性网格或直接在活动设计器的标头中编辑该值。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [控制流](../workflow-designer/control-flow-activity-designers.md)
 - [Pick 活动](/dotnet/framework/windows-workflow-foundation/pick-activity)

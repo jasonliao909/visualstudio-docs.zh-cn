@@ -1,6 +1,6 @@
 ---
 title: 使用Visual Studio互操作程序集|Microsoft Docs
-description: 了解如何Visual Studio互操作程序集允许托管应用程序访问提供扩展性Visual Studio COM 接口。
+description: 了解Visual Studio互操作程序集如何允许托管应用程序访问提供扩展性Visual Studio COM 接口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 03538a95d430f14118b253bf6b9fa612e374a23c7213666bb3e7c32cbecfb0c8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 108e2bf16cd109f954752207cb966c472241730e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034586"
 ---
 # <a name="using-visual-studio-interop-assemblies"></a>使用 Visual Studio 互操作程序集
-Visual Studio互操作程序集允许托管应用程序访问提供扩展性Visual Studio COM 接口。 直接 COM 接口及其互操作版本之间存在一些差异。 例如，HRESULT 通常表示为 int 值，并且需要以与异常相同的方式进行处理，而参数 (特别是 out 参数) 处理方式不同。
+Visual Studio互操作程序集允许托管应用程序访问提供扩展性Visual Studio COM 接口。 直接 COM 接口及其互操作版本之间存在一些差异。 例如，HRESULT 通常表示为 int 值，并且需要以与异常相同的方式进行处理，并且参数 (特别是 out 参数) 处理方式不同。
 
 ## <a name="handling-hresults-returned-to-managed-code-from-com"></a>处理从 COM 返回到托管代码的 HRESULT
  当从托管代码调用 COM 接口时，请检查 HRESULT 值并根据需要引发异常。 <xref:Microsoft.VisualStudio.ErrorHandler> 类包含 <xref:Microsoft.VisualStudio.ErrorHandler.ThrowOnFailure%2A> 方法，该方法根据传递给它的 HRESULT 值引发 COM 异常。
@@ -103,7 +103,7 @@ else
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>
 
 ## <a name="optional-out-parameters"></a>可选 [out] 参数
- 在 COM 接口中查找定义为 [out] 数据类型 (、 等) ，但在互操作程序集方法原型中定义为相同数据类型的数组 `int` `object` [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的参数。
+ 查找在 COM 接口中定义为 [out] 数据类型 (、 等) 的参数，但在互操作程序集方法原型中定义为相同数据类型的 `int` `object` [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 数组的参数。
 
  某些 COM 接口（如 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgs%2A> ）将 [out] 参数视为可选参数。 如果不需要对象，这些 COM 接口将指针返回为该参数的值，而不是 `null` 创建 [out] 对象。 这是设计的结果。 对于这些接口，假定指针是 VSPackage 正确行为的一部分， `null` 并且不会返回任何错误。
 

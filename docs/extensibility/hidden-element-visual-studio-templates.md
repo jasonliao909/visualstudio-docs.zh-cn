@@ -1,6 +1,6 @@
 ---
-title: Visual Studio 模板 (隐藏元素) |Microsoft Docs
-description: 了解隐藏元素以及它如何指定模板是否显示在 "新建项目" 或 "添加新项" 对话框中。
+title: 隐藏元素 (Visual Studio模板) |Microsoft Docs
+description: 了解 Hidden 元素及其如何指定模板是出现在新项目还是"添加新项"对话框中。
 ms.custom: SEO-VS-2020
 ms.date: 04/17/2019
 ms.technology: vs-ide-general
@@ -22,9 +22,9 @@ ms.contentlocale: zh-CN
 ms.lasthandoff: 08/12/2021
 ms.locfileid: "121448307"
 ---
-# <a name="hidden-element-visual-studio-templates"></a>Visual Studio 模板 (隐藏元素) 
+# <a name="hidden-element-visual-studio-templates"></a>隐藏元素 (Visual Studio模板) 
 
-指定模板是否出现在 "新建项目" 或 " **添加新项** " 对话框中。
+指定模板是出现在新项目还是"添加新 **项"** 对话框中。
 
 ```xml
 <VSTemplate>
@@ -61,17 +61,17 @@ ms.locfileid: "121448307"
 
 需要一个文本值。
 
-文本必须是 `true` 或 `false` ，指示模板是否将出现在 "**新建 Project** " 或 "**添加新项**" 对话框中。
+文本必须为 或 ，指示模板是否将显示在"新建项Project或"添加新项" `true` `false` 对话框中。  
 
 ## <a name="remarks"></a>备注
 
 `Hidden` 是可选元素。
 
-如果已指定，则不需要元素的其他子元素 `TemplateData` 。
+如果指定，则不需要元素的其他 `TemplateData` 子元素。
 
 ## <a name="example"></a>示例
 
-下面的示例演示 c # 模板的元数据。
+下面的示例演示了 C# 模板的元数据。
 
 ```xml
 <VSTemplate Type="Project" Version="3.0.0"
@@ -98,7 +98,7 @@ ms.locfileid: "121448307"
 </VSTemplate>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [模板架构引用](../extensibility/visual-studio-template-schema-reference.md)
 - [创建项目和项模板](../ide/creating-project-and-item-templates.md)

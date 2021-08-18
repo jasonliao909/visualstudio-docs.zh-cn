@@ -1,6 +1,6 @@
 ---
 title: 向 n 层应用程序中的数据集添加代码
-description: 向 Visual Studio 中的 n 层应用程序的数据集添加代码。 为数据集创建分部类文件，并将代码添加到 (而不是 DatasetName) 。
+description: 向 Visual Studio 中的 n 层应用中的数据集添加Visual Studio。 为数据集创建分部类文件，并添加代码 (而不是 DatasetName.Dataset.Designer) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,42 +13,43 @@ ms.assetid: d43c2ccd-4902-43d8-b1a8-d10ca5d3210c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c1a6e424fe76b94321ca79ab08496cd160969890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7df5c2fd963ce628f146bde5b8df754866898b20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867524"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134813"
 ---
 # <a name="add-code-to-datasets-in-n-tier-applications"></a>向 n 层应用程序中的数据集添加代码
 
-您可以扩展数据集的功能，方法是为数据集创建一个分部类文件并向其添加代码 (而不是将代码添加到 *DatasetName* 中。Dataset 文件) 。 分部类使特定类的代码可以在多个物理文件之间进行分隔。 有关详细信息，请参阅 [分部](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
+可以通过为数据集创建分部类文件并添加代码来扩展数据集的功能 (而不是将代码添加到 *DatasetName*。Dataset.Designer 文件) 。 分部类允许特定类的代码在多个物理文件之间划分。 有关详细信息，请参阅[分部或](/dotnet/visual-basic/language-reference/modifiers/partial)[分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
-每次对数据集定义进行更改时，都会生成定义数据集的代码，) 中的数据集定义 (。 当你在运行任何修改数据集配置的向导期间进行更改时，也会生成此代码。 若要防止在重新生成数据集的过程中删除代码，请将代码添加到数据集的分部类文件中。
+每次对类型数据集中的数据集定义 (更改时，都会生成定义数据集) 。 在运行修改数据集配置的任何向导期间进行更改时，也会生成此代码。 若要防止在重新生成数据集期间删除代码，请向数据集的分部类文件添加代码。
 
-默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs*) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* (或 *DatasetName.DataSet.Designer.cs*) 的文件。此文件包含数据集代码。
-
-> [!NOTE]
-> 通过将 **数据集项目** 属性)  (分离数据集和 tableadapter 时，项目中的现有部分数据集类将不会自动移动。 必须将现有数据集分部类手动移动到 dataset 项目。
+默认情况下，将数据集和 TableAdapter 代码分开后，结果是每个项目中的一个离散类文件。 原始项目具有名为 *DatasetName.Designer.vb* (*或 DatasetName.Designer.cs*) 包含 TableAdapter 代码的文件。 **在 DataSet Project** 属性中指定的项目具有名为 *DatasetName.DataSet.Designer.vb* (或 *DatasetName.DataSet.Designer.cs*) 的文件。此文件包含数据集代码。
 
 > [!NOTE]
-> 需要添加验证代码时，类型化数据集提供生成 <xref:System.Data.DataTable.ColumnChanging> 和 <xref:System.Data.DataTable.RowChanging> 事件处理程序的功能。 有关详细信息，请参阅 [将验证添加到 n 层数据集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
+> 通过设置 DataSet Project 属性 (**DataSet** 和 TableAdapters) 时，不会自动移动项目中的现有分部数据集类。 必须将现有数据集分部类手动移动到数据集项目。
 
-## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>将代码添加到 n 层应用程序中的数据集
+> [!NOTE]
+> 需要添加验证代码时，类型数据集提供生成和事件处理程序 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 的功能。 有关详细信息，请参阅向 [n 层数据集 添加验证](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
-1. 找到包含 *.xsd* 文件的项目。
+## <a name="to-add-code-to-datasets-in-n-tier-applications"></a>将代码添加到 n 层应用程序中的 DataSet
+
+1. 找到包含 *.xsd 文件* 的项目。
 
 2. 选择 **.xsd** 文件以打开数据集。
 
-3. 右键单击要向其添加代码的数据表 (标题栏中的表名) ，然后选择 " **查看代码**"。
+3. 右键单击要向其中添加代码的数据表 (标题栏中的表名称，然后选择"查看 **) "。**
 
-     将创建一个分部类并在代码编辑器中打开它。
+     分部类在代码编辑器中创建并打开。
 
-4. 将代码添加到分部类声明中。
+4. 在分部类声明中添加代码。
 
-     下面的示例演示在 NorthwindDataSet 中将代码添加到 CustomersDataTable 的位置：
+     以下示例显示将代码添加到 NorthwindDataSet 中的 CustomersDataTable 的何处：
 
     ```vb
     Partial Public Class CustomersDataTable
@@ -65,10 +66,10 @@ ms.locfileid: "99867524"
     }
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
 - [向 n 层应用程序中的 TableAdapter 添加代码](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)
 - [创建和配置 TableAdapter](create-and-configure-tableadapters.md)
 - [分层更新概述](hierarchical-update.md)
-- [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
+- [数据集工具Visual Studio](../data-tools/dataset-tools-in-visual-studio.md)

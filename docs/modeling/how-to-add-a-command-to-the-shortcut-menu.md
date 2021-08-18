@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: db4e032f755337067ba208c0a8a6267c155ba4847b8259e7f5f7cd70822b9509
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f9e4110402a9ca557f8fbb85aee9c0e9592a4dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040315"
 ---
 # <a name="how-to-add-a-command-to-the-shortcut-menu"></a>如何：向快捷菜单中添加命令
 
@@ -295,12 +295,12 @@ private const int grpidMyMenuGroup = 0x01001;
 private const int cmdidMyContextMenuCommand = 1;
 ```
 
- 使用与在 **Commands.vsct** 中插入的 GUID 值相同的 GUID 值。
+ 使用与 **.vsct** 中插入的 GUID 相同的值。
 
 > [!NOTE]
 > 如果更改 VSCT 文件的“符号”部分，还必须更改这些要匹配的声明。 还应在 Package.tt 中递增版本号
 
- 将菜单命令注册为此命令集的一部分。 `GetMenuCommands()` 在初始化关系图时调用一次：
+ 将菜单命令注册为此命令集的一部分。 `GetMenuCommands()` 初始化关系图后，调用一次：
 
 ```csharp
 protected override IList<MenuCommand> GetMenuCommands()
@@ -324,9 +324,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ### <a name="to-exercise-the-command"></a>演练命令
 
-1. 在工具栏 **解决方案资源管理器，** 单击 **"转换所有模板"。**
+1. 在 **解决方案资源管理器** 工具栏上，单击 " **转换所有模板**"。
 
-2. 按 **F5** 重新生成解决方案，并开始在实验性生成中调试特定于域的语言。
+2. 按 **F5** 重新生成解决方案，并在实验生成中开始调试域特定语言。
 
 3. 在实验性生成中，打开示例关系图。
 
@@ -340,11 +340,11 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 - 确保实验性示例具有此 DSL 的正确文件扩展名。 若要检查该文件扩展名，请在 Visual Studio 的主实例中打开 DslDefinition.dsl。 随后，在 DSL 资源管理器中，右键单击“编辑器”节点，然后单击“属性”。 在“属性”窗口中，检查 FileExtension 属性。
 
-- 你是否 [递增了包版本号](#version)？
+- 是否 [递增了包版本号](#version)？
 
 - 在 OnStatus 方法的开头设置断点。 在右键单击关系图的任意部分时，应发生中断。
 
-**未调用 OnStatus 方法**：
+**不调用 OnStatus 方法**：
 
 - 确保 CommandSet 代码中的 GUID 和 ID 匹配 Commands.vsct 的“符号”部分中的 GUID 和 ID。
 
@@ -362,9 +362,9 @@ protected override IList<MenuCommand> GetMenuCommands()
 
 ## <a name="see-also"></a>请参阅
 
-- [编写代码以自定义特定于域的语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [如何：修改标准菜单命令](../modeling/how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)
-- [部署特定于域的语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)
+- [部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)
 - [示例代码：线路图](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

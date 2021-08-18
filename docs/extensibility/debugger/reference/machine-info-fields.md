@@ -11,17 +11,18 @@ ms.assetid: 2d61d206-7d40-4df1-8c88-1b3c9c78821e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3361ed090dc724f948d98aa0037949e0c573d56d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 448edb134ba6065c85ee1547c73f45f9df769563
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103138"
 ---
 # <a name="machine_info_fields"></a>MACHINE_INFO_FIELDS
 指定要为特定计算机检索的信息类型。

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a1ee06aa58004dd08ec70f42f68c0267a9f567dc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4395e3704be431a167e10d3a5095bb3c6a563867fb08c89bf4480b179fe5b4b5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029939"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121433185"
 ---
 # <a name="idebugprogramnode2gethostname"></a>IDebugProgramNode2::GetHostName
 获取承载程序的进程的名称。
