@@ -1,6 +1,6 @@
 ---
 title: 部署自定义指令处理器
-description: 了解可用于在计算机或任何计算机上部署Visual Studio指令处理器的方法。
+description: 了解可用于在计算机或任何计算机上Visual Studio指令处理器的方法。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dcc9f12a65ad163acd07724da534039c772b385446f00b30dab627d441a42fc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7659d5ab851704e686bb7ed63bb4b10fccd57f46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316859"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150594"
 ---
 # <a name="deploying-a-custom-directive-processor"></a>部署自定义指令处理器
 
@@ -25,13 +25,13 @@ ms.locfileid: "121316859"
 
 可用的方法包括：
 
-- [Visual Studio扩展。](../extensibility/shipping-visual-studio-extensions.md) 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。
+- [Visual Studio 扩展。](../extensibility/shipping-visual-studio-extensions.md) 通过这种方法，可以在自己或他人的计算机上安装和卸载指令处理器。 通常，可能会在同一 VSIX 中包含其他功能。
 
 - [VSPackage](../extensibility/internals/vspackages.md)。 如果要定义一个包含指令处理器和其他功能的 VSPackage，有一种方便的方法可以注册指令处理器。
 
 - 设置注册表项。 如果采用此方法，则会为指令处理器添加一个注册表项。
 
-只有在要转换文本模板的 Visual Studio 或 MSBuild 时，才需要使用这些方法之一。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。
+只有在希望将文本模板转换为 Visual Studio 或 MSBuild 时，才需要使用这些方法之一。 如果在自己的应用程序中使用自定义宿主，则由自定义宿主负责查找每条指令的指令处理器。
 
 ## <a name="deploying-a-directive-processor-in-a-vsix"></a>在 VSIX 中部署指令处理器
 
@@ -199,6 +199,6 @@ ms.locfileid: "121316859"
 |类|REG_SZ|\<**Your Fully Qualified Class Name**>|
 |程序集|REG_SZ|\<**Your Assembly Name in the GAC**>|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [创建自定义 T4 文本模板指令处理器](../modeling/creating-custom-t4-text-template-directive-processors.md)

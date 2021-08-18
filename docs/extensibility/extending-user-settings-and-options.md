@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f9e5a718f9f2a45d071b5f03b6fcb5602817a2b2eadd8d33d404c7d702bbf13f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c22f1804354c9eafe69475123a6f7d336105dfcc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275822"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144686"
 ---
 # <a name="extend-user-settings-and-options"></a>扩展用户设置和选项
 在Visual Studio有两种主要方法来维护用户首选项。 "**工具** 选项"页允许用户为许多不同类型的设置（常规设置和特定于语言的设置  >  ）设置自己的值。 用户设置允许用户指定常规Visual Studio配置属性。 有关选项页的详细信息，请参阅 [选项和选项页](../extensibility/internals/options-and-options-pages.md)。 有关用户设置详细信息，请参阅 [支持用户设置](../extensibility/internals/support-for-user-settings.md)。

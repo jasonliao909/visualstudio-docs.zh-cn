@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5551d9fa9e5bb6f1510f912c131165998cbecef06da0f0f0a4e35f788ab70a69
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2662631a4c3b5ab4420fc5f14740138596435d77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307786"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111081"
 ---
 # <a name="idebugengine3setallexceptions"></a>IDebugEngine3::SetAllExceptions
 此方法设置所有未处理异常的状态。
@@ -48,6 +48,6 @@ int SetAllExceptions(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)
 - [EXCEPTION_STATE](../../../extensibility/debugger/reference/exception-state.md)

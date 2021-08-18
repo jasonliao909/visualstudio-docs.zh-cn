@@ -1,6 +1,6 @@
 ---
 title: 文档级自定义项中的缓存数据
-description: 了解如何Visual Studio将数据嵌入为数据缓存，从而将数据与文档级自定义项中的视图分离。
+description: 了解如何Visual Studio将数据嵌入为数据缓存，从而在文档级自定义项中将数据与视图分离。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cac4ed52e82664fd5aca2fd4e924f24b3eb68e58e18cd6142db9c7c236af35be
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 528e452142bbac81654a6f55878265ee544ddb39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384582"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083728"
 ---
 # <a name="cached-data-in-document-level-customizations"></a>文档级自定义项中的缓存数据
   文档级自定义项的一个主要目标是将数据与文档中的视图Office分离。 数据是指文档中存储的信息，包括数字和文本。 视图是指 Word 和 Microsoft Office Excel 的用户界面Microsoft Office对象Microsoft Office Excel。

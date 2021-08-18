@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f6fb5f50ecdf3c8f3b7af1d5b7e8e9615024365a31217949c052e974fb3a596
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d33c23585234bd72094bb666b85921a3ab4eae1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360282"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152947"
 ---
 # <a name="ienumdebugcodecontexts2clone"></a>IEnumDebugCodeContexts2::Clone
 将当前枚举的副本作为单独的 对象返回。

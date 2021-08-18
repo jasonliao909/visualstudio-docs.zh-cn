@@ -11,14 +11,15 @@ ms.assetid: 06a1368f-10f0-44eb-af61-e388c2327111
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1272c57b58b4e2656775bf746d470a3514c886ea
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f3b46aa13e492017f54e452e37eca025ecab842b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125512"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 此接口枚举调试端口上运行的进程。
@@ -33,7 +34,7 @@ IEnumDebugProcesses : IUnknown
  自定义端口供应商实现此接口，以提供在端口上运行的进程的列表。
 
 ## <a name="notes-for-callers"></a>调用方说明
- Visual Studio 将调用 [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md) 来获取此接口。
+ Visual Studio 调用[EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)以获取此接口。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示的方法 `IEnumDebugProcesses2` 。
@@ -47,7 +48,7 @@ IEnumDebugProcesses : IUnknown
 |[GetCount](../../../extensibility/debugger/reference/ienumdebugprocesses2-getcount.md)|获取枚举器中的进程数。|
 
 ## <a name="remarks"></a>备注
- Visual Studio 使用此接口来填充 " **进程** " 窗口。
+ Visual Studio 使用此接口来填充 "**进程**" 窗口。
 
 ## <a name="requirements"></a>要求
  标头： msdbg
@@ -56,6 +57,6 @@ IEnumDebugProcesses : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

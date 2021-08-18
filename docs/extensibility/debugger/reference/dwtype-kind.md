@@ -11,17 +11,18 @@ ms.assetid: 6ff56b0f-c502-4e6c-9829-bfa05361b783
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 25b7fd89de0af624425767f21b81780459068372
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 71579d77883246e4dd945276668eb2ca3ed26205
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127605"
 ---
 # <a name="dwtype_kind"></a>dwTYPE_KIND
 指定如何解释 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象的类型。

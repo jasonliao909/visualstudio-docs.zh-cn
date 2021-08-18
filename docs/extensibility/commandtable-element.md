@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: afedf0b5e6e761d9b9801cdc88aad16cba922c981904ef50399ae90cd00d8578
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fe604d47cc6fcf1382bb58dd53cc8cde40cab4f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293568"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051256"
 ---
 # <a name="commandtable-element"></a>CommandTable 元素
 CommandTable 是 *.vsct* 文件的根元素。 此文件定义 VSPackage 向 IDE 提供的命令的实际布局和类型。 命令可能包括菜单项、菜单、工具栏和组合框。 有关详细信息，请参阅命令[Visual Studio表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。

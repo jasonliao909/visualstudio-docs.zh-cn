@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-help-viewer
 ms.workload:
 - multiple
-ms.openlocfilehash: 684f867b5191eb7fe0d51c53acef6ab907d75014453ba689b68223894244b9b8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bde8a8b4b68e7e40eaa25a0df044028dd641a85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121373473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109677"
 ---
 # <a name="shortcut-keys-in-help-viewer"></a>帮助查看器中的快捷键
 
@@ -59,17 +59,17 @@ ms.locfileid: "121373473"
 |主题| Ctrl + T |在前景中打开另一个“内容”选项卡。|
 |主题|**Ctrl** +**单击**|在前景中新的选项卡上打开链接。|
 |主题|Ctrl + Tab|在选项卡之间按从左到右的顺序切换。|
-|主题|**Ctrl** +**移位** +**选项卡**|在选项卡之间按从右到左的顺序切换。|
+|主题|**Ctrl** +**Shift** +**选项卡**|在选项卡之间按从右到左的顺序切换。|
 |主题|**Ctrl**+**W**|关闭当前选项卡。|
-|主题|**Ctrl** +**_编号_**|切换到特定选项卡，其中“数字”介于 1 到 9 之间，表示序列中相应的选项卡 ****。|
+|主题|**Ctrl** +**_数字_**|切换到特定选项卡，其中“数字”介于 1 到 9 之间，表示序列中相应的选项卡 ****。|
 |主题|**Ctrl** +**Alt** +**F4**|关闭其他的内容选项卡。|
-|主题|**Ctrl** +**移位** +**加号**|缩放比例增大 10%。|
-|主题|**Ctrl** +**负号**|缩放比例减小 10%。|
+|主题|**Ctrl** +**Shift** +**加号**|缩放比例增大 10%。|
+|主题|**Ctrl** +**减号**|缩放比例减小 10%。|
 |主题|Ctrl + 0（零）|将缩放比例更改为 100%。|
 |索引|Tab|将焦点从关键字条目移动到关键字列表。|
 |索引|**Ctrl** +**K**|在包含指定关键字的显示条目和以指定关键字开头的条目之间切换。|
-|收藏夹|**Ctrl** +**移位** +**Del**|清除浏览历史记录。|
-|收藏夹|**Del**|删除指定的项。|
+|收藏夹|**Ctrl** +**Shift** +**Del**|清除浏览历史记录。|
+|收藏夹|**戴尔**|删除指定的项。|
 |收藏夹|**Ctrl**+**N**|在收藏夹中创建文件夹。|
 |收藏夹|F2|重命名指定的收藏夹或文件夹。|
 |内容 & 索引 & 搜索|**Ctrl**+**D**|将指定的主题添加到“收藏夹”选项卡。|
@@ -115,6 +115,6 @@ ms.locfileid: "121373473"
 |**空间**|将项从“挂起的更改”列表移除。|
 |**Alt** +**T**|应用所有挂起的更改。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [帮助查看器的辅助功能](accessibility-features.md)
