@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 63bfc09edca9a87df95893758ffe4a6a8c85a465eb8cb23cc6c7d97416361eea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9c70044b4a15bd0058a8bfb63ddcff44c149937d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352937"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131035"
 ---
 # <a name="how-to-create-a-sharepoint-project-extension"></a>如何：创建SharePoint扩展
   若要将功能添加到在 SharePoint 打开的任何项目，请创建项目Visual Studio。 有关详细信息，请参阅[扩展 SharePoint 项目系统](../sharepoint/extending-the-sharepoint-project-system.md)。

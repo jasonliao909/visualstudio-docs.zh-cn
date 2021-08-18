@@ -7,14 +7,15 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a4572a7210203d6c7525a278430210c954c3405
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 450a55427b9b41b8f05278c9b830acddde15608c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388875"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047889"
 ---
 # <a name="extend-your-dsl-by-using-mef"></a>使用 MEF 扩展 DSL
 
@@ -22,7 +23,7 @@ ms.locfileid: "112388875"
 
 此外，当你在 DSL 中启用 MEF 时，你可以更轻松地编写 DSL 的某些功能，即使它们都与 DSL 一起生成。
 
-有关 MEF 的详细信息，请参阅 [ (MEF) Managed Extensibility Framework ](/dotnet/framework/mef/index)。
+有关 mef 的详细信息，请参阅[ (MEF) Managed Extensibility Framework ](/dotnet/framework/mef/index)。
 
 ### <a name="to-enable-your-dsl-to-be-extended-by-mef"></a>若要使 DSL 能够由 MEF 扩展
 
@@ -117,7 +118,7 @@ ms.locfileid: "112388875"
 
 8. 生成并运行解决方案，验证它是否仍然正常工作。
 
-DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证约束作为 MEF 扩展来编写。 可以在 DSL 解决方案中将这些扩展与其他自定义代码一起编写。 此外，你或其他开发人员可以编写单独的 Visual Studio 扩展，以扩展 DSL。
+DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证约束作为 MEF 扩展来编写。 可以在 DSL 解决方案中将这些扩展与其他自定义代码一起编写。 此外，你或其他开发人员可以编写扩展 DSL 的单独 Visual Studio 扩展。
 
 ## <a name="create-an-extension-for-a-mef-enabled-dsl"></a>为启用 MEF 的 DSL 创建扩展
 
@@ -149,11 +150,11 @@ DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证�
 
 4. 创建新的 **VSIX 项目** 项目。
 
-5. 在 **解决方案资源管理器** 中，右键单击 VSIX 项目，然后选择 " **设为启动项目**"。
+5. 在 **解决方案资源管理器** 中，右键单击 VSIX 项目，然后选择 "**设为启动 Project**"。
 
 6. 在新项目中，打开 **source.extension.vsixmanifest**。
 
-7. 单击 " **添加内容**"。 在对话框中，将 " **内容类型** " 设置为 " **MEF 组件**"，将 " **源项目** " 设置为类库项目。
+7. 单击 " **添加内容**"。 在对话框中，将 "**内容类型**" 设置为 " **MEF 组件**"，并将 "**源 Project** 到类库项目。
 
 8. 向 DSL 添加 VSIX 引用。
 
@@ -163,7 +164,7 @@ DSL 现在已启用 MEF。 可以将菜单命令、笔势处理程序和验证�
 
        这允许用户同时安装 DSL 和你的扩展。 如果用户已安装 DSL，则仅安装你的扩展。
 
-9. 查看并更新 **source.extension.vsixmanifest** 的其他字段。 单击 " **选择版本** "，并验证是否设置了正确的 Visual Studio 版本。
+9. 查看并更新 **source.extension.vsixmanifest** 的其他字段。 单击 "**选择版本**" 并验证是否设置了正确的 Visual Studio 版本。
 
 10. 将代码添加到类库项目。 使用下一部分中的示例作为指南。
 
@@ -247,7 +248,7 @@ namespace MyMefExtension
 
 ### <a name="gesture-handlers"></a>笔势处理程序
 
-笔势处理程序可处理从 Visual Studio 内部或外部的任何位置拖到关系图上的对象。 以下示例允许用户将文件从 Windows 资源管理器拖到关系图上。 它创建包含文件名的元素。
+笔势处理程序可处理从 Visual Studio 中的任何位置拖到关系图上的对象。 以下示例允许用户将文件从 Windows 资源管理器拖到关系图上。 它创建包含文件名的元素。
 
 您可以编写处理程序来处理其他 DSL 模型和 UML 模型中的拖动。 有关详细信息，请参阅 [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)。
 
@@ -374,7 +375,7 @@ namespace MefExtension
 } } } }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [传送 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
 - [Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)

@@ -1,6 +1,6 @@
 ---
 description: 获取要激活的文档。
-title: IDebugActivateDocumentEvent2：：GetDocument |Microsoft Docs
+title: IDebugActivateDocumentEvent2：： GetDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f7bc89983b0470bcff37eb1f4d76b16f35d07505ca1e2b1a278d75fd07b79b34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 529f981476bd2db7655fa86a6c9182998656fe97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323841"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064924"
 ---
 # <a name="idebugactivatedocumentevent2getdocument"></a>IDebugActivateDocumentEvent2::GetDocument
 获取要激活的文档。
@@ -44,11 +44,11 @@ int GetDocument (
 
 ## <a name="parameters"></a>参数
 `ppDoc`\
-[out]返回表示 [要激活的文档的 IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象。
+弄返回一个 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象，该对象表示要激活的文档。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugActivateDocumentEvent2](../../../extensibility/debugger/reference/idebugactivatedocumentevent2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)
