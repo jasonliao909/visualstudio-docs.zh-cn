@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: af813e57420cfcb5c583af18790f5399cb54be47f1f1dc959ec1d6d451951711
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 17afce8065377053494132644b33eb6389d98c74
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102189"
 ---
 # <a name="manage-vspackages"></a>管理 VSPackage
 在大多数情况下，无需担心如何管理 VSPackage，因为项目和项模板会自动注册和加载包。 但是，在某些情况下，可能需要了解一些知识才能管理包。

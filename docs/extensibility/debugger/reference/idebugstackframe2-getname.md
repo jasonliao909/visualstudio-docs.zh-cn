@@ -11,17 +11,18 @@ ms.assetid: 069d4f96-363f-404e-9c89-5318c4c9821b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0098d6fc6c308fa61c270b77c3fa3749cd67c6f0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4a839b99ebae9cfe201feb4e3d9e3e84bd81b080
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053394"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126149"
 ---
 # <a name="idebugstackframe2getname"></a>IDebugStackFrame2::GetName
 获取堆栈帧的名称。
@@ -50,5 +51,5 @@ int GetName (
 ## <a name="remarks"></a>备注
  堆栈帧的名称通常是正在执行的方法的名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

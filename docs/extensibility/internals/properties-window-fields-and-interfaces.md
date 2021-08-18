@@ -1,6 +1,6 @@
 ---
 title: 属性窗口字段和接口|Microsoft Docs
-description: 了解根据 IDE 中具有焦点的窗口属性窗口在数据集中显示哪些Visual Studio选择。
+description: 了解根据 IDE 中具有焦点的窗口属性窗口在数据集中显示哪些Visual Studio的选择。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,20 +10,21 @@ ms.assetid: 0328f0e5-2380-4a7a-a872-b547cb775050
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7a74e82480d1a4c71179c0e0b0671bac4ae97191
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 99185ac6fe9d54a21e22fd2ea291089315ed0946
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112899623"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094550"
 ---
 # <a name="properties-window-fields-and-interfaces"></a>Properties Window Fields and Interfaces
-用于确定"属性"窗口中显示的信息的选择模型基于IDE 中具有焦点的窗口。 每个窗口和所选窗口中的对象都可以将所选上下文对象推送到全局选择上下文。 当窗口具有焦点时，环境使用窗口框架中的值更新全局选择上下文。 当焦点更改时，选择上下文也更改。
+用于确定"属性"窗口中显示的信息的选择模型基于IDE 中具有焦点的窗口。 每个窗口和所选窗口中的对象都可以将选择上下文对象推送到全局选择上下文。 当窗口具有焦点时，环境使用窗口框架中的值更新全局选择上下文。 当焦点更改时，选择上下文也更改。
 
 ## <a name="tracking-selection-in-the-ide"></a>在 IDE 中跟踪选择
- IDE 拥有的窗口框架或站点具有名为 的服务 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 。 以下步骤显示如何实现由用户将焦点更改为另一个打开窗口或在 解决方案资源管理器 中选择其他项目 **项** 引起的选择更改，以更改"属性"窗口中 **显示的内容** 。
+ IDE 拥有的窗口框架或站点具有名为 的服务 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> 。 以下步骤显示用户将焦点更改为另一个打开窗口或在 解决方案资源管理器 中选择其他项目项导致的选择更改 **是如何** 实现的，以更改"属性"窗口中 **显示的内容** 。
 
 1. VSPackage 创建的对象（位于所选窗口中）调用 <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider.QueryService%2A> 以调用 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。
 
@@ -39,7 +40,7 @@ ms.locfileid: "112899623"
 
    更改"属性 **"窗口中** 的值时，VSPackage 实现 和 以报告 `IVsTrackSelectionEx::OnElementValueChangeEx` `IVsTrackSelectionEx::OnSelectionChangeEx` 元素值的变化。 然后，环境调用 或 ，使"属性"窗口中 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> <xref:Microsoft.VisualStudio.OLE.Interop.IConnectionPointContainer> **显示的信息** 与属性值保持同步。 有关详细信息，请参阅 [更新属性窗口中的属性值](#updating-property-values-in-the-properties-window)。
 
-   除了在 解决方案资源管理器 中选择其他项目项以显示与该项相关的属性外，还可使用"属性"窗口上的下拉列表从窗体或文档窗口中选择 **不同的对象**。 有关详细信息，请参阅属性 [窗口对象列表](../../extensibility/internals/properties-window-object-list.md)。
+   除了在 解决方案资源管理器中选择其他项目项以显示与该项相关的属性外，还可使用"属性"窗口上的下拉列表从窗体或文档窗口中选择 **不同的对象**。 有关详细信息，请参阅属性 [窗口对象列表](../../extensibility/internals/properties-window-object-list.md)。
 
    可以更改"属性"窗口网格中信息的显示方式，从字母顺序更改为分类，如果可用，还可以单击"属性"窗口上的相应按钮打开所选 **对象的属性页**。 有关详细信息，请参阅属性[窗口按钮和](../../extensibility/internals/properties-window-buttons.md)[属性页](../../extensibility/internals/property-pages.md)。
 
@@ -116,6 +117,6 @@ STDAPI DLLGetDocumentation
 
  获取某一属性的本地化名称和说明的另一方法是实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPerPropertyBrowsing.GetLocalizedPropertyInfo%2A>。 有关此方法的实现的详细信息，请参阅 [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展属性](../../extensibility/internals/extending-properties.md)

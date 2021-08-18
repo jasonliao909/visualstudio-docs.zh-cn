@@ -11,17 +11,18 @@ ms.assetid: 8f512704-12d0-46d2-959a-4f8dffe117b5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: de1d7a544987b3a70e3798a77b55d81f5a43e1fa
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b2702b092102cc0a918a1604c79b27885d1e002a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066953"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111263"
 ---
 # <a name="idebugdisassemblystream2getsize"></a>IDebugDisassemblyStream2::GetSize
 获取此反汇编流的说明中的大小。
@@ -50,7 +51,7 @@ int GetSize(
 ## <a name="remarks"></a>备注
  从此方法返回的值可用于分配 [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md) 结构数组，然后将该数组传递给 [Read](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [DisassemblyData](../../../extensibility/debugger/reference/disassemblydata.md)
 - [读取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)

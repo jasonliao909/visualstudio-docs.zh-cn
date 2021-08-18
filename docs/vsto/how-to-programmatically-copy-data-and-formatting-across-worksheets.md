@@ -1,6 +1,6 @@
 ---
-title: 以编程方式在工作表之间复制数据和格式设置
-description: 了解如何使用 FillAcrossSheets 方法将数据从一个工作表中的一个范围复制到工作簿中的所有其他表。
+title: 以编程方式跨工作表复制数据和格式设置
+description: 了解如何使用 FillAcrossSheets 方法将数据从一个工作表上的范围复制到工作簿中的所有其他工作表。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -19,15 +19,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fb87be6aefda46033c13911be0d1781ceaa8999bf26d7111204cb4a9dd7fa0d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5640984c0de325f1b2e699a3658f914f627b87a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121268087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083253"
 ---
-# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以编程方式在工作表之间复制数据和格式设置
-  您可以使用方法将数据从一个工作表中的一个范围复制到工作簿中的所有其他表 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> 。 指定一个范围，以及是要复制数据、设置格式还是同时复制两者。
+# <a name="how-to-programmatically-copy-data-and-formatting-across-worksheets"></a>如何：以编程方式跨工作表复制数据和格式设置
+  可以使用 方法将数据从一个工作表上的范围复制到工作簿中的所有其他 <xref:Microsoft.Office.Interop.Excel.Worksheets.FillAcrossSheets%2A> 工作表。 指定范围，以及是否要复制数据、格式设置或同时复制两者。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -36,10 +36,10 @@ ms.locfileid: "121268087"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet44":::
 
 ## <a name="compile-the-code"></a>编译代码
- 此示例需要 `rangeData` 在工作表中指定一个范围。
+ 此示例需要工作表中名为 `rangeData` 的范围。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以编程方式向工作簿添加新工作表](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
-- [如何：以编程方式在包含选定单元格的工作表行中更改格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [如何：以编程方式将新工作表添加到工作簿](../vsto/how-to-programmatically-add-new-worksheets-to-workbooks.md)
+- [如何：以编程方式更改包含所选单元格的工作表行中的格式设置](../vsto/how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

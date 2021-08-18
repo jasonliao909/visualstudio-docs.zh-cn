@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e26f2bb00ed8a9f612db6643b4bed8d3e5db3d04910ea939f346fc388716a157
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c7c6f471a1b238f7773876cbf7fb28aaab8679c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152596"
 ---
 # <a name="machine_info_flags"></a>MACHINE_INFO_FLAGS
 用于描述计算机。
@@ -47,14 +47,14 @@ public enum enum_MACHINE_INFO_FLAGS {
  指示终端服务可用。
 
 ## <a name="remarks"></a>备注
- 用作 `Flags` [MACHINE_INFO](../../../extensibility/debugger/reference/machine-info.md) 结构的成员。
+ 用作 `Flags` 结构MACHINE_INFO成员。 [](../../../extensibility/debugger/reference/machine-info.md)
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

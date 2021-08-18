@@ -1,6 +1,6 @@
 ---
-title: 使用互操作程序集的命令和菜单 |Microsoft Docs
-description: 了解通过使用互操作程序集实现 VSPackage 中的菜单和工具栏命令时必须完成的任务。
+title: 使用互操作程序集命令和菜单|Microsoft Docs
+description: 了解在使用互操作程序集在 VSPackage 中实现菜单和工具栏命令时必须完成的任务。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,32 +16,32 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0198490f6792654a95e9bea0f2b270dadd85a17e959a9817e0f74165a14a11bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 12f6cd61eb7e5f3e6bc96722f8d2ad8f29f5ee97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124706"
 ---
 # <a name="commands-and-menus-that-use-interop-assemblies"></a>使用互操作程序集的命令和菜单
 使用互操作程序集实现菜单和工具栏命令的 VSPackage 必须：
 
-- 通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 它支持的命令以及它们当前是否已启用。
+- 通知 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 其支持的命令以及它们当前是否已启用。
 
-- 遵循用于处理命令 (约定) 的规则。
+- 遵循用于处理命令 (协定) 规则。
 
-- 使用或接口显式实现命令处理 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 。
+- 使用 或 接口显式实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 命令 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> 处理。
 
   以下部分介绍如何执行这些任务。
 
 ## <a name="in-this-section"></a>本节内容
 - [使用互操作程序集确定命令状态](../../extensibility/internals/determining-command-status-by-using-interop-assemblies.md)
 
- 介绍 VSPackage 如何通知 IDE 它所支持的命令以及它们当前是否已启用。
+ 描述 VSPackage 如何通知 IDE 它支持哪些命令，以及它们当前是否已启用。
 
-- [互操作程序集中的命令约定](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
+- [互操作程序集中的命令协定](../../extensibility/internals/command-contracts-in-interop-assemblies.md)
 
- 提供使用互操作程序集的所有 Vspackage 实现命令所使用的基本命令协定的定义。
+ 提供使用互操作程序集实现命令的所有 VSPackage 使用的基本命令协定的定义。
 
 - [命令实现](../../extensibility/internals/command-implementation.md)
 
@@ -54,12 +54,12 @@ ms.locfileid: "121432639"
 ## <a name="related-sections"></a>相关章节
 - [命令可用性](../../extensibility/internals/command-availability.md)
 
- 描述 IDE 使用哪些条件来确定哪些 VSPackage 命令可用以及哪些对象处理它们。
+ 描述 IDE 用于确定哪些 VSPackage 命令可用以及哪些对象处理这些命令的条件。
 
-- [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 
- 提供有关如何创建使用命令支持的 UI 的详细信息 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+ 提供有关如何创建使用命令支持的 UI [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 的详细信息。
 
-- [Vspackage 中的命令传送](../../extensibility/internals/command-routing-in-vspackages.md)
+- [VSPackages 中的命令路由](../../extensibility/internals/command-routing-in-vspackages.md)
 
- 使用正确的命令请求将对象与对象相关联的过程的概述。
+ 概述用于将对象与正确的命令请求关联的过程。

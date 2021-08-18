@@ -15,14 +15,15 @@ ms.assetid: 98bcab65-ab8b-4ed1-9adc-fdacf92b8106
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: f4c20689c79529edf4a34edca857dedf1420b03f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e3b518218204aa6eaeb06bae1cb519f8b4270dc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073911"
 ---
 # <a name="choose-a-clickonce-deployment-strategy"></a>选择 ClickOnce 部署策略
 有三种不同的策略用于部署 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序；所选择的策略主要取决于要部署的应用程序的类型。 下面介绍了这三种部署策略：
@@ -34,14 +35,14 @@ ms.locfileid: "99895110"
 - 从 Web 或网络共享启动应用程序
 
     > [!NOTE]
-    > 除了选择部署策略外，您可能还想选择提供应用程序更新的策略。 有关详细信息，请参阅 [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
+    > 除了选择部署策略外，您可能还想选择提供应用程序更新的策略。 有关详细信息，请参阅[选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)。
 
 ## <a name="install-from-the-web-or-a-network-share"></a>从 Web 或网络共享安装
  在使用此策略时，应用程序会部署到 Web 服务器或网络文件共享。 当最终用户要安装应用程序时，该用户在网页上单击图标或是在文件共享上双击图标。 然后会在最终用户的计算机上下载、安装并启动应用程序。 项被添加到“开始”菜单和“控制面板”中的“添加/删除程序”中。
 
  因为此策略依赖于网络连接，所以最适合将部署到可以访问局域网或高速 Internet 连接的用户的应用程序。
 
- 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将参数传递给应用程序。 有关详细信息，请参阅 [如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。
+ 如果从 Web 部署应用程序，则可以在使用 URL 激活应用程序时将参数传递给应用程序。 有关详细信息，请参阅[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。 无法将参数传递给使用本文档中描述的任何其他方法激活的应用程序。
 
  若要在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此部署策略，请在发布向导的“安装方式”页上单击“从 Web”或“从 UNC 路径或文件共享”。
 
@@ -73,7 +74,7 @@ ms.locfileid: "99895110"
 
  面向 .NET Framework 2.0 的应用程序需要 Internet Explorer。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [选择 ClickOnce 更新策略](../deployment/choosing-a-clickonce-update-strategy.md)
 - [如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)

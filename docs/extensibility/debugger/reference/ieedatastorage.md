@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a975190aebbb26ac77614e1fc0e0d7a358bda3440da0b5f8bcdb7562390902e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1f8597a62f319247ca607d4b1f5221665f3de186
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415684"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152986"
 ---
 # <a name="ieedatastorage"></a>IEEDataStorage
 此接口表示字节数组。

@@ -10,24 +10,25 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: a301df6edaf8558ade5c8a297f233b58de6d8f4e
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ed2f7b273948bac1ba07322ed079dd5cbd92711a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390927"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100746"
 ---
 # <a name="process-text-templates-by-using-a-custom-host"></a>使用自定义主机处理文本模板
 
-*文本模板转换* 过程会将 *文本模板* 文件作为输入，并生成一个文本文件作为输出。 你可以从 Visual Studio 扩展或在安装了 Visual Studio 的计算机上运行的独立应用程序调用文本转换引擎。 但是，必须提供 *文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。
+*文本模板转换* 过程会将 *文本模板* 文件作为输入，并生成一个文本文件作为输出。 可以从 Visual Studio 扩展或在安装了 Visual Studio 的计算机上运行的独立应用程序调用文本转换引擎。 但是，必须提供 *文本模板化宿主*。 该类将模板连接到环境，查找资源（如程序集和包含文件），并处理输出和错误消息。
 
 > [!TIP]
-> 如果正在编写将在 Visual Studio 中运行的包或扩展，请考虑使用文本模板化服务，而不是编写自己的主机。 有关详细信息，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+> 如果你正在编写将在 Visual Studio 中运行的包或扩展，请考虑使用文本模板化服务，而不是编写自己的主机。 有关详细信息，请参阅 [在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 > [!NOTE]
-> 不建议在服务器应用程序中使用文本模板转换。 除非是在单个线程中，否则不建议使用文本模板转换。 这是因为文本模板化引擎可以重用单个 AppDomain，以便转换、编译和执行模板。 转换的代码未被设计为线程安全的。 引擎旨在按顺序处理文件，因为这些文件在设计时位于 Visual Studio 项目中。
+> 不建议在服务器应用程序中使用文本模板转换。 除非是在单个线程中，否则不建议使用文本模板转换。 这是因为文本模板化引擎可以重用单个 AppDomain，以便转换、编译和执行模板。 转换的代码未被设计为线程安全的。 引擎旨在按顺序处理文件，因为在设计时它们位于 Visual Studio 项目中。
 >
 > 对于运行时应用程序，请考虑使用预处理文本模板：请参阅使用 [T4 文本模板生成运行时文本](../modeling/run-time-text-generation-with-t4-text-templates.md)。
 
@@ -53,7 +54,7 @@ string output = engine.ProcessTemplate(templateString, host);
  <xref:Microsoft.VisualStudio.TextTemplating.Engine?displayProperty=fullName> 是在 **Microsoft.VisualStudio.TextTemplating.\*0.dll 中定义的。**[ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110)) 是在 **Microsoft.VisualStudio.TextTemplating.Interfaces\*0.dll** 中定义的。
 
 ## <a name="in-this-section"></a>本节内容
- [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md) 说明如何创建自定义文本模板宿主，使文本模板功能在 Visual Studio 外部可用。
+ [演练：创建自定义文本模板宿主](../modeling/walkthrough-creating-a-custom-text-template-host.md)说明如何创建自定义文本模板宿主，使文本模板功能在 Visual Studio 外部可用。
 
 ## <a name="reference"></a>参考
  [ITextTemplatingEngineHost](/previous-versions/visualstudio/visual-studio-2012/bb126505(v=vs.110))

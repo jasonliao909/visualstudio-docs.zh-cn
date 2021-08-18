@@ -1,6 +1,6 @@
 ---
 title: 如何：解决服务问题 |Microsoft Docs
-description: 了解如何对尝试在 Visual Studio SDK 中获取服务时可能出现的几个常见问题进行故障排除。
+description: 了解如何解决在 Visual Studio SDK 中尝试获取服务时可能出现的几个常见问题。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -10,14 +10,15 @@ ms.assetid: 001551da-4847-4f59-a0b2-fcd327d7f5ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a105f38166ecea958bb0e5bbfe790170b020e354
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d84e178f8dd3c7006dd3213fdb60eea9b96dac24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124849"
 ---
 # <a name="how-to-troubleshoot-services"></a>如何：排除服务故障
 尝试获取服务时可能会出现几个常见问题：
@@ -66,9 +67,9 @@ if (log == null) return;
 
     并非所有服务提供商都都一样。 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]传递到工具窗口的服务提供程序与它传递给 VSPackage 的服务提供程序不同。 工具窗口服务提供商知道 <xref:Microsoft.VisualStudio.Shell.Interop.STrackSelection> ，但并不知道 <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> 。 您可以调用 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 来从工具窗口内获取 VSPackage 服务提供程序。
 
-    如果工具窗口承载用户控件或任何其他控件容器，则该容器将由 Windows 组件模型放置，并且将无法访问任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 服务。 您可以调用 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 来从控件容器中获取 VSPackage 服务提供程序。
+    如果工具窗口承载用户控件或任何其他控件容器，则容器将由 Windows 组件模型放置，并且将无法访问任何 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 服务。 您可以调用 <xref:Microsoft.VisualStudio.Shell.Package.GetGlobalService%2A> 来从控件容器中获取 VSPackage 服务提供程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [可用服务列表](../extensibility/internals/list-of-available-services.md)
 - [使用并提供服务](../extensibility/using-and-providing-services.md)
 - [服务基础](../extensibility/internals/service-essentials.md)

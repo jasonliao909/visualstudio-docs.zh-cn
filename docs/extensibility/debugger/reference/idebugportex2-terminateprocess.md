@@ -1,6 +1,6 @@
 ---
-description: IDebugPortEx2：：TerminateProcess 终止进程。
-title: IDebugPortEx2：：TerminateProcess |Microsoft Docs
+description: IDebugPortEx2：： TerminateProcess 终止进程。
+title: IDebugPortEx2：： TerminateProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2e08ece86df7f9ab03b71bb8410a5873de406066f68fe1f13923e55f06fac1a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 564b46268658a03234baca7d1621bed2ea5ecf11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276914"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126851"
 ---
 # <a name="idebugportex2terminateprocess"></a>IDebugPortEx2::TerminateProcess
 终止进程。
@@ -43,11 +43,11 @@ int TerminateProcess(
 
 ## <a name="parameters"></a>参数
 `pPortProcess`\
-[in]表示 [要终止的进程的 IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
+中表示要终止的进程的 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

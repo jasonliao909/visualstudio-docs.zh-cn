@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ccab2ce336852ded90037d1dc183276cef2180d8a0c6ea04b26e53570f06ea8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aa6691a4606b6724eacd6386a569af02ceb2cddd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145141"
 ---
 # <a name="idebugclassfield"></a>IDebugClassField
 此接口将类表示为类型。
@@ -57,6 +57,6 @@ IDebugClassField : IDebugContainerField
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
