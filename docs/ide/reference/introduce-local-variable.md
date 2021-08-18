@@ -6,14 +6,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 35850293b1ef739506fe6848e000396f6bacf1d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b6e6dabf79cdd3c1774f016991098a1bde337568
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852292"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151530"
 ---
 # <a name="introduce-a-local-variable-in-visual-studio"></a>在 Visual Studio 中引入局部变量
 
@@ -44,9 +45,9 @@ ms.locfileid: "99852292"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”  + **。** 触发“快速操作和重构”  菜单。
+      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
    - **鼠标**
-      - 右键单击并选择“快速操作和重构”菜单  。
+      - 右键单击并选择“快速操作和重构”菜单。
       - 单击 ![“快速操作和重构”菜单的左边缘中显示的螺丝刀图标的屏幕截图。](media/screwdriver.png) 图标（如果文本光标已在具有突出显示的表达式的行上，它会出现在左边缘）。
 
    ![引入本地预览](media/local-preview-cs.png)

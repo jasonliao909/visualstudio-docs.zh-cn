@@ -1,6 +1,6 @@
 ---
 title: 设置拖动时要创建的控件
-description: 了解如何在将控件从"数据源"窗口拖动到 WPF 设计器或窗体设计器Windows控件时Visual Studio。
+description: 了解如何在将控件从"数据源"窗口拖动到 WPF 设计器或 Windows 窗体设计器中时Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 1033ffad781efe15507c5a484cd83f88a837d00fb6bc28fc5df78404076d6361
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38d43074275db57180938e20fc242ff0a1524711
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075042"
 ---
 # <a name="set-the-control-to-be-created-when-dragging-from-the-data-sources-window"></a>设置从“数据源”窗口中拖动时要创建的控件
 

@@ -1,6 +1,6 @@
 ---
 title: 扩展和自定义工具Windows |Microsoft Docs
-description: 了解如何扩展和自定义 Visual Studio提供的工具窗口，包括属性窗口、输出窗口和任务列表窗口。
+description: 了解如何扩展和自定义Visual Studio窗口，包括属性窗口、输出窗口和任务列表窗口。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b09b0101e7bcab1f342a214d4585e9b54979e099decf3295d705a10a68fc1da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 182a1816e692277aa214b8682e6137b515784d29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152401"
 ---
 # <a name="extend-and-customize-tool-windows"></a>扩展和自定义工具窗口
 Visual Studio提供了几种不同类型的窗口，例如工具窗口、文档窗口和对话框窗口。 其他窗口（如" **属性"** 窗口 **、"输出** "窗口和 **任务列表窗口）** 是工具窗口的类型。
@@ -44,12 +44,12 @@ Visual Studio提供了几种不同类型的窗口，例如工具窗口、文档�
  可以订阅工具窗口事件： [订阅事件](../extensibility/subscribing-to-an-event.md)。
 
 ## <a name="extend-existing-tool-windows"></a>扩展现有工具窗口
- 可以将有关工具窗口的信息添加到新的"选项"页和"属性"页上的新设置，并写入任务列表 **和输出** 窗口。 有关详细信息，请参阅扩展 [属性、任务列表、输出和选项窗口](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)。
+ 可以将有关工具窗口的信息添加到新的"选项"页和"属性"**页上** 的新设置，并写入任务列表 **和输出** 窗口。 有关详细信息，请参阅扩展属性 [、任务列表、输出和选项窗口](../extensibility/extending-the-properties-task-list-output-and-options-windows.md)。
 
 ## <a name="modal-dialog-boxes"></a>模式对话框
  在Visual Studio扩展中，应该通过从 派生模式对话框来创建这些对话框，这样就可以控制这些对话框和 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow?displayProperty=fullName> UI 的其余部分。 有关详细信息，请参阅 [创建和管理模式对话框](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工具窗口创建扩展](../extensibility/creating-an-extension-with-a-tool-window.md)
 - [扩展项目](../extensibility/extending-projects.md)
 - [扩展解决方案](../extensibility/extending-solutions.md)

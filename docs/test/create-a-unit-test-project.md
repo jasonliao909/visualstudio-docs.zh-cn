@@ -6,15 +6,16 @@ ms.date: 01/29/2019
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8ca3cbe82bf4253e660ce69960570e40702c5512
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7b5629cc50a2a9d08d00daabd2b4579e628a6cb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942355"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140045"
 ---
 # <a name="create-a-unit-test-project"></a>创建单元测试项目
 

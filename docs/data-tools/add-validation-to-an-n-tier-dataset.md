@@ -1,6 +1,6 @@
 ---
 title: 向 n 层数据集添加验证
-description: 在 Visual Studio 中将验证添加到 n 层数据集。 验证对个别列或整行所做的更改。
+description: 将验证添加到 Visual Studio 中的 n 层数据集。 验证对个别列或整行所做的更改。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 34ce4db6-09bb-4b46-b435-b2514aac52d3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 4911cc5ced991389d2c7b03a405c4fe9e28c5cc0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d9774b45743b57941d08903375d29b663b64192
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059289"
 ---
 # <a name="add-validation-to-an-n-tier-dataset"></a>向 n 层数据集添加验证
 向分隔到 n 层解决方案中的数据集添加验证与将验证添加到单个项目)  (数据集的方式基本相同。 对数据执行验证的建议位置是在表的 <xref:System.Data.DataTable.ColumnChanging> 和/或 <xref:System.Data.DataTable.RowChanging> 事件中。
@@ -30,7 +31,7 @@ ms.locfileid: "99859354"
 数据集提供了创建分部类的功能，你可以将用户代码添加到数据集中的数据表的列和行变化事件。 有关将代码添加到 n 层解决方案中的数据集的详细信息，请参阅在 [n 层应用程序中将代码添加到数据集](../data-tools/add-code-to-datasets-in-n-tier-applications.md)，并 [将代码添加到 n 层应用程序中的 tableadapter](../data-tools/add-code-to-tableadapters-in-n-tier-applications.md)。 有关分部类的详细信息，请参阅 [如何：将类拆分为分部类 (类设计器) ](../ide/class-designer/how-to-split-a-class-into-partial-classes.md) 或 [分部类和方法](/dotnet/csharp/programming-guide/classes-and-structs/partial-classes-and-methods)。
 
 > [!NOTE]
-> 如果通过将 **数据集项目** 属性设置) 将数据集从 tableadapter (分离，则项目中的现有部分数据集类将不会自动移动。 必须将现有部分数据集类手动移动到数据集项目。
+> 通过将 **数据集 Project** 属性)  (将数据集与 tableadapter 分离时，项目中的现有部分数据集类将不会自动移动。 必须将现有部分数据集类手动移动到数据集项目。
 
 > [!NOTE]
 > 数据集设计器不会为和事件自动创建 c # 中的事件处理程序 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 。 必须手动创建一个事件处理程序，并将事件处理程序挂钩到基础事件。 下面的过程介绍如何在 Visual Basic 和 c # 中创建所需的事件处理程序。
@@ -168,7 +169,7 @@ End Sub
     }
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
 - [演练：创建 N 层数据应用程序](../data-tools/walkthrough-creating-an-n-tier-data-application.md)

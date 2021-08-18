@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7c51d36ca9900731f816961f4cedf362762d26c5267666bbe5c3135d730dbd85
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cbc9763de348cdcedda6da216665294417418140
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064976"
 ---
 # <a name="frameinfo_flags"></a>FRAMEINFO_FLAGS
 指定要检索有关堆栈帧对象的信息。

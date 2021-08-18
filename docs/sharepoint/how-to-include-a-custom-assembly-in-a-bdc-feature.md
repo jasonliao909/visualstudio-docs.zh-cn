@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c45867e769f14323b10c3d42fb5bf52a9560823da1eb3b62246297e19dd69396
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 14026e6de7a376e4548723b4b540d314e499bbf1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409548"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092990"
 ---
 # <a name="how-to-include-a-custom-assembly-in-a-bdc-feature"></a>如何：在 BDC 功能中包括自定义程序集
   项目可以引用同一解决方案中其他项目中的程序集。 但是，必须使用"将引用的程序集分配到 **LobSystems"** 对话框，将这些程序集添加到项目的功能文件。

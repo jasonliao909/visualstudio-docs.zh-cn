@@ -13,14 +13,15 @@ ms.assetid: a8b20bf2-81d2-4069-aea8-23e6b15b4347
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ccb55b1c00621f6e97c8f1297e2cedf2abebe73b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7984cc74cf2116c72b9c9a35aa2cf0f272ec6cd3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852097"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151478"
 ---
 # <a name="list-call-stack-command"></a>“列出调用堆栈”命令
 显示当前的调用堆栈。

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e87248314a97301fb49a8f4c4fef7db1a44f3e9d4eca7a84b58ea139ef12d188
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72322527a2a5614061e4c30bc71654d8002f8f0f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138414"
 ---
 # <a name="idebugfieldgetcontainer"></a>IDebugField::GetContainer
 此方法获取字段的容器。
@@ -51,6 +51,6 @@ int GetContainer(
 ## <a name="remarks"></a>备注
  如果此字段没有容器，则返回的 将为 `ppContainerField` null 值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)

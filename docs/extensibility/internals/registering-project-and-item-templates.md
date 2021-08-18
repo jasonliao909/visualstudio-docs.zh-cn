@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 30b1d3f3f555056115f419f074cb5d922e6e155b4177c82d7cd63e86958ed8f0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 791e8d9713b1f12cf7e388d87449b4a171c029a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062974"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 Project 类型必须在其项目和项目项模板所在位置注册目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用与你的项目类型关联的注册信息来确定要在 "**添加新的 Project** 和"**添加新项**"对话框中显示的内容。
@@ -119,7 +119,7 @@ Project 类型必须在其项目和项目项模板所在位置注册目录。 [!
 
  \WizardFiles
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [向导](../../extensibility/internals/wizards.md)

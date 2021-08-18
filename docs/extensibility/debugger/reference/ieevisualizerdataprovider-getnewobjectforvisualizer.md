@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e073afadb97d4b0f33e70d2ffce86f10828360d2581728e277d7723e843b17c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 19c8a3b0e6c91c1751462660a5c9f08913419890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095694"
 ---
 # <a name="ieevisualizerdataprovidergetnewobjectforvisualizer"></a>IEEVisualizerDataProvider::GetNewObjectForVisualizer
 此方法获取可视化工具的新对象。 此方法将始终从现有 对象创建新对象。

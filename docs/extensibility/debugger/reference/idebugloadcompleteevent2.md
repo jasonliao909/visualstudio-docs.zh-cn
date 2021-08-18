@@ -11,14 +11,15 @@ ms.assetid: 37eb7360-28e9-4273-862a-4c17f22af690
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53351ca836658d55cdef1b793e0162b8573f6c6e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ec70db7a5c10bfd153c3fe225ef27009b5d36ecb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064094"
 ---
 # <a name="idebugloadcompleteevent2"></a>IDebugLoadCompleteEvent2
 此接口由调试引擎 (DE) 发送到会话调试管理器 (SDM) 在程序加载时，但在执行任何代码之前。
@@ -42,7 +43,7 @@ IDebugLoadCompleteEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

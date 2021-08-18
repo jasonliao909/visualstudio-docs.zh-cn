@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 42deca29129ed25aabf2f7dc1ce7cd40480abfe306eaf11c58be73a65193d4f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6039cff32588296e861a83126fc3541bc49c43f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452454"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080177"
 ---
 # <a name="program-control"></a>程序控制
 在 Visual Studio 调试中，以下所有单步执行和继续例程都在程序级别进行：

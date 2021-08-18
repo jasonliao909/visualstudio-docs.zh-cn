@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 72b0e4dd4bccb38a89d9acb97490e05dbbb36057aa1ec9894a02d7cdec9a8b67
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cc13b9f7e9b063de3fb0c8b12157cba87c4bb8f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428700"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150581"
 ---
 # <a name="t4-template-directive"></a>T4 模板指令
 

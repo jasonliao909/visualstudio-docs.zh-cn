@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 16b82ce91fea9fe3b841b449651d42c66a82af32302332d94eded8bb6f6076bc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4836141f50f2db13ad0fd303168d291b56ab1643
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390501"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111744"
 ---
 # <a name="debug-engine"></a>调试引擎
 调试引擎 (DE) 与解释器或操作系统一起使用来提供调试服务，如执行控制、断点和表达式计算。 DE 负责监视正在调试的程序的状态。 为实现此目的，DE 使用支持的运行时中的任何可用方法，无论是从 CPU 还是由运行时提供的 Api。

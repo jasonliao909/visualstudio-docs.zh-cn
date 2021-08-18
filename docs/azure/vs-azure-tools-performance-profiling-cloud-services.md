@@ -3,16 +3,17 @@ title: 测试云服务的性能 | Microsoft Docs
 description: 使用 Visual Studio 探查器测试云服务的性能
 author: mikejo5000
 manager: jmartens
+ms.technology: vs-azure
 ms.topic: conceptual
 ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
-ms.openlocfilehash: 83d7372fd6942f8f29e7244b1f57d40c2b64009b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79fd599b58a951f67c4fb095528e8be00bcd2a17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059667"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>测试云服务的性能
 ## <a name="overview"></a>概述

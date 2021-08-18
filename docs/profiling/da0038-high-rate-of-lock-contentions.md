@@ -11,15 +11,16 @@ ms.assetid: ae0c8b2f-17b2-4f3d-a834-aa2f6371753b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1dcf86ac1fb54c8898427c5b0166dc0f0175027
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: a1d8e84b935f2e4db7b4a3cf7699c5ac1bb16740
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465920"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142190"
 ---
 # <a name="da0038-high-rate-of-lock-contentions"></a>DA0038：锁争用率高
 

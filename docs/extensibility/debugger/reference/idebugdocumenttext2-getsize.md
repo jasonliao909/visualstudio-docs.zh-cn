@@ -1,6 +1,6 @@
 ---
 description: 检索文档中此位置的文本大小。
-title: IDebugDocumentText2：： GetSize |Microsoft Docs
+title: IDebugDocumentText2：：GetSize |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: bf515a8f-dcee-4004-8f81-543d547ceaae
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d9499af30f9e9139d0ff64fcf17695b7a4ad69c9
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 25fa2f9c4a36e292bf58c80cbfdb01c6ad021ce4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111244"
 ---
 # <a name="idebugdocumenttext2getsize"></a>IDebugDocumentText2::GetSize
 检索文档中此位置的文本大小。
@@ -44,19 +45,19 @@ int GetSize(
 
 ## <a name="parameters"></a>参数
 `pcNumLines`\
-弄返回文本的行数。
+[out]返回文本行数。
 
 `pcNumChars`\
-弄返回文本的字符数。
+[out]返回文本的字符数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
 
- [仅限 c + +]如果不需要特定值，则为参数传递 NULL。
+ [仅 C++]如果不需要特定值，请为 参数传递 NULL。
 
- [仅限 c #]必须指定这两个参数。
+ [仅 C# ]必须指定这两个参数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentText2](../../../extensibility/debugger/reference/idebugdocumenttext2.md)

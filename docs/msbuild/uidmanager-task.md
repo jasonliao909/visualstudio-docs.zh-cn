@@ -19,14 +19,15 @@ ms.assetid: 4fc7b5a5-11b0-46ca-9656-8c2a0b08d1fe
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6287abee811d406ef7aafa5ce3cc3dc62624b0d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 323756067e8c553eb13729e305cb76677ccf3a3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142710"
 ---
 # <a name="uidmanager-task"></a>UidManager 任务
 

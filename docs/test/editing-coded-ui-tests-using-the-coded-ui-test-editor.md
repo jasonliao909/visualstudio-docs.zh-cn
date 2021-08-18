@@ -10,15 +10,16 @@ helpviewer_keywords:
 - coded UI test, Coded UI Test Editor
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: dbb4f7b14c6da1e81f35253d7bcf96c0ddc6b756
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3939debb9ee62a1bb5e621a9e1a99f1b6e99752
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926672"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140071"
 ---
 # <a name="edit-coded-ui-tests-using-the-coded-ui-test-editor"></a>使用编码的 UI 测试编辑器编辑编码的 UI 测试
 
