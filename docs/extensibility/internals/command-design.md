@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c02049819487df474898c2c40319ed4a6d13db294ed5d34da84743c0eb4b50a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 48b438f457dea5aad5c241b0fd1e60daac3761a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110561"
 ---
 # <a name="command-design"></a>命令设计
 将命令添加到 VSPackage 时，必须指定命令的显示位置、可用时间以及处理方式。
@@ -59,7 +59,7 @@ ms.locfileid: "121376256"
 
  环境按顺序将命令从最 (本地) 命令上下文（基于当前选择）路由到最 (全局) 上下文。 能够执行命令的第一个上下文是处理该命令的上下文。 有关详细信息，请参阅命令 [路由算法](../../extensibility/internals/command-routing-algorithm.md)。
 
- 在大多数情况下，环境使用 接口处理 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 命令。 由于命令路由方案允许许多不同的对象处理命令，因此可以通过任意数目的对象实现;这些对象包括 Microsoft ActiveX 控件、窗口视图实现、文档对象、项目层次结构和 VSPackage 对象本身 (全局命令 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) 。 在某些专用情况下（例如，在层次结构中路由命令） <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 中，必须实现 接口。
+ 在大多数情况下，环境使用 接口处理 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 命令。 由于命令路由方案允许许多不同的对象处理命令，因此可通过任意数目的对象实现;这些对象包括 Microsoft ActiveX 控件、窗口视图实现、文档对象、项目层次结构和 VSPackage 对象本身 (全局命令 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) 。 在某些专用情况下（例如，在层次结构中路由命令） <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 中，必须实现 接口。
 
 ## <a name="related-topics"></a>相关主题
 

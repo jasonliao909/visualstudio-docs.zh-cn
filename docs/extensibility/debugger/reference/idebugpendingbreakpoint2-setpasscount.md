@@ -1,6 +1,6 @@
 ---
 description: 设置或更改与挂起断点关联的传递计数。
-title: IDebugPendingBreakpoint2：： SetPassCount |Microsoft Docs
+title: IDebugPendingBreakpoint2：：SetPassCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6e9a91f9d78e69af8c23b8bf1c43cddd8ac0fe8fded6af9f18049974b449d0bb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d1d72cc83d66bc0bd553db9ef392bb62d22c3af
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050853"
 ---
 # <a name="idebugpendingbreakpoint2setpasscount"></a>IDebugPendingBreakpoint2::SetPassCount
 设置或更改与挂起断点关联的传递计数。
@@ -44,13 +44,13 @@ int SetPassCount(
 
 ## <a name="parameters"></a>参数
 `bpPassCount`\
-中包含传递计数的 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 结构。
+[in]包含 [BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md) 计数的一个对象结构。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 `E_BP_DELETED`如果已删除断点，则返回。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。 如果 `E_BP_DELETED` 断点已删除，则返回 。
 
 ## <a name="remarks"></a>备注
- 以前与挂起断点关联的任何传递计数都将丢失。 将调用从此挂起断点绑定的所有断点，以将其传递计数设置为 `bpPassCount` 参数。
+ 以前与挂起断点关联的任何传递计数将丢失。 将调用从此挂起断点绑定的所有断点，以将传递计数设置为 `bpPassCount` 参数。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md)

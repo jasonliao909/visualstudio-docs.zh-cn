@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 585d78cb5fb4a70e55ac8188a0fe26c9107ef3086f7789020b3df38b6daa3422
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 55d5119df4da874f4f27c4de001ca6462c262a2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408079"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099316"
 ---
 # <a name="work-with-folders"></a>使用文件夹
   <xref:Microsoft.Office.Interop.Outlook.MAPIFolder> 类包含可用于访问、创建和自定义文件夹的方法和属性。

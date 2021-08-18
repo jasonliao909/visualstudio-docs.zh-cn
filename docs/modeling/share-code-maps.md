@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: d6efe3f860749ac24e35af944122ec8a9d121f6039270117e7eb52eb57fcf6f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d9e89ed659969074553e366f0e35581c319801c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410928"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085450"
 ---
 # <a name="share-code-maps"></a>共享代码图
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d8ff002c7f17abe0f33900fb7f798405dde78ee755965bfe2d24713eaea33d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d4136444a1d48a5ba70a9ed138897a008bbc036
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120252"
 ---
 # <a name="bp_state"></a>BP_STATE
 指定绑定断点是否存在，还指定是否已启用。

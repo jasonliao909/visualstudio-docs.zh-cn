@@ -8,14 +8,15 @@ ms.assetid: 45e477c0-5c6b-41f9-b2d0-2808fb4f6537
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 20473125814b1ee0569579c7248b7b940cd31500
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d79562c02aa5c7d8081a0a4f8b200d73ba9ec96b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052702"
 ---
 # <a name="linq-to-sql-tools-in-visual-studio"></a>Visual Studio 中的 LINQ to SQL 工具
 

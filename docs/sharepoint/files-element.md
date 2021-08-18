@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 54344e98aaa8982143fd595ac7e6fb4245905c4ee9645953af889fafe15dde80
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 84c3ab0837680fe815f644d6b0456ce0fe066326
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121269179"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093224"
 ---
 # <a name="files-element"></a>Files 元素
   指定要与 SharePoint 项目项一起部署的文件，例如功能元素文件和依赖非 SharePoint 项目的输出。

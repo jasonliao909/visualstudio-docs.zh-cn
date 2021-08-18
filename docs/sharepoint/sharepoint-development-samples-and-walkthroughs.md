@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 7e32bc03728916d7990938e36faa8bb7533357bf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46ae610ef08dfad19bbc36252054255d1be506d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881524"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084033"
 ---
 # <a name="sharepoint-development-samples-and-walkthroughs"></a>SharePoint 开发示例和演练
   本部分包含示例应用程序、示例代码和分步演练，它们反映了用于生成 SharePoint 解决方案的语法、结构和技术。
