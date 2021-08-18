@@ -13,12 +13,12 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: 77118bf184e8fed7f6b2f9b057f631379c165e173a24b7761fb3cc69efa7c4fc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b66b17a1ffdab71f7aa20a8bc9cc985b0b398838
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121320955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049293"
 ---
 # <a name="upgrade-custom-project-and-item-templates-for-visual-studio-2017"></a>升级自定义 Project 和 Visual Studio 2017 的项模板
 
@@ -191,7 +191,7 @@ ms.locfileid: "121320955"
 
 为项目和项模板创建单独的清单，并应指向上面指定的根模板目录。 为每个扩展和区域设置创建一个清单。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [模板发现疑难解答](troubleshooting-template-discovery.md)
 - [创建自定义项目和项模板](creating-custom-project-and-item-templates.md)

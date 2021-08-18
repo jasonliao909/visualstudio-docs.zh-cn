@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: c842988f3e5c9f1bbed5a859e73680cb109ecd43
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6c3163910921bbf5d84e14df9554ca43cde17427
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385898"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048032"
 ---
 # <a name="customizing-the-model-explorer"></a>自定义模型资源管理器
 可以更改特定于域的语言设计器的资源管理器的外观和行为，如下所示：
@@ -42,13 +43,13 @@ ms.locfileid: "112385898"
 
 #### <a name="to-add-an-icon-to-an-explorer-node"></a>向资源管理器节点添加图标
 
-1. 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 任务流解决方案模板创建解决方案。
+1. 使用 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] Task Flow 解决方案模板创建解决方案。
 
-2. 在解决方案.bmp **Dsl\Resources** 文件夹中放入一个包含 16x16 像素图标的 16x16 像素的文件。
+2. 在解决方案.bmp **Dsl\Resources** 文件夹中，放入包含 16x16 像素图标的 16x16 像素的文件。
 
-3. 在 **DSL 资源管理器中**，右键单击"**资源管理器行为"，** 然后单击"**添加新资源管理器节点设置"。**
+3. 在 **DSL 资源管理器中**，右键单击"**资源管理器行为**"，然后单击"添加新 **资源管理器节点设置"。**
 
-    **ExplorerNodeSettings** 节点显示在"**自定义节点设置"节点** 下。
+    **ExplorerNodeSettings** 节点显示在"自定义节点"节点 **设置** 下。
 
 4. 选择 **"资源管理器""节点""** 设置"，然后在"属性 **"** 窗口中，将 **"类"设置为**"执行 **组件"。**
 
@@ -70,13 +71,13 @@ ms.locfileid: "112385898"
 
 1. 打开在之前过程中创建的解决方案。
 
-2. 确保 Comment **仅引用单个** 域类，将属性名称 **"主题** "的角色的倍数设置为 0..1。 属性名称应变为 **Subject**，关系名称应变为 **CommentReferencesSubject**。
+2. 确保 Comment **仅引用单个** 域类，只需将属性名称 **"主题** "的角色的乘数设置为 0..1。 属性名称应变为 **Subject**，关系名称应变为 **CommentReferencesSubject**。
 
-3. 在 **DSL 资源管理器中**，右键单击"**资源管理器行为"，** 然后单击"**添加新资源管理器节点设置"。**
+3. 在 **DSL 资源管理器中**，右键单击"**资源管理器行为**"，然后单击"添加新 **资源管理器节点设置"。**
 
-     **ExplorerNodeSettings** 节点显示在"**自定义节点设置"节点** 下。
+     **ExplorerNodeSettings** 节点显示在"自定义节点"节点 **设置** 下。
 
-4. 选择 **"资源管理器""节点""** 设置"，然后在"属性 **"** 窗口中，将 **"类"设置为**"**注释"。**
+4. 选择 **"资源管理器""节点""** 设置"，然后在"属性 **"** 窗口中，将 **"类"** 设置为"**注释"。**
 
 5. 右键单击"**注释"** 节点，然后单击"**添加新属性路径"。**
 
@@ -113,6 +114,6 @@ ms.locfileid: "112385898"
 
      资源管理器应只显示 **Actors** 节点，并且不应显示 **"注释"** 节点。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

@@ -1,6 +1,6 @@
 ---
-description: 根据给定的基元类型检索类型。
-title: IDebugDynamicFieldCOMPlus：： GetTypeFromPrimitive |Microsoft Docs
+description: 检索给定基元类型的类型。
+title: IDebugDynamicFieldCOMPlus：：GetTypeFromPrimitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -10,20 +10,21 @@ ms.assetid: d7f51e2a-1b72-489c-b7b6-4af7b7e4d663
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b222546f529aca563d6e54a674d7c361111decb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c201fc97f6c401786300182577fff5d72464a788
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119173"
 ---
 # <a name="idebugdynamicfieldcomplusgettypefromprimitive"></a>IDebugDynamicFieldCOMPlus::GetTypeFromPrimitive
-根据给定的基元类型检索类型。
+检索给定基元类型的类型。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +44,13 @@ int GetTypeFromPrimitive(
 
 ## <a name="parameters"></a>参数
 `dwCorElementType`\
-中表示基元类型的 [CorElementType 枚举](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 的值。
+[in]表示基 [元类型的 CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 枚举中的值。
 
 `ppType`\
-弄返回表示类型的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
+[out]返回[表示类型的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDynamicFieldCOMPlus](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus.md)

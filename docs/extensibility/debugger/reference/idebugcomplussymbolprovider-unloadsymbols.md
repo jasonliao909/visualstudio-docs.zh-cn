@@ -1,6 +1,6 @@
 ---
 description: 从内存中卸载指定模块的调试符号。
-title: IDebugComPlusSymbolProvider：：UnloadSymbols |Microsoft Docs
+title: IDebugComPlusSymbolProvider：： UnloadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b57c4f9c0e58e8757ee7b2e89ed7e6e35337e5eca4fcbd7bf66bd55be39eefa7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cca0463c2b79d42b2af6d8da9d9f9e65bba49a40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342396"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119680"
 ---
 # <a name="idebugcomplussymbolproviderunloadsymbols"></a>IDebugComPlusSymbolProvider::UnloadSymbols
 从内存中卸载指定模块的调试符号。
@@ -44,13 +44,13 @@ int UnloadSymbols(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `guidModule`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。

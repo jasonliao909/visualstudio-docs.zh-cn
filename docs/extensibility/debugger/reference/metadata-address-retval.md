@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a323d934cceff20b5e89215dfb9a6d49020a707e07f5d3ca5f37a5fe189627c2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a95ac1b17cfec2a2b78b74233ad5f4c5addafdd0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377283"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103099"
 ---
 # <a name="metadata_address_retval"></a>METADATA_ADDRESS_RETVAL
 此结构表示方法或函数的返回值。

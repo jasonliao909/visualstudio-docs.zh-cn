@@ -11,14 +11,15 @@ ms.assetid: d538fc19-55bf-4231-9595-eb01e84fd1d8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b30b61c0b7a9a9f3e06465a6b194c882213afb34
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f6690c2bd598b0662cc5ef54170726ac8efe99e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118731"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2"></a>IDebugExpressionEvaluationCompleteEvent2
 当异步表达式计算完成时，调试引擎会将此接口 (DE) 发送到会话调试管理器 (SDM) 。
@@ -55,7 +56,7 @@ IDebugExpressionEvaluationCompleteEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md)

@@ -1,6 +1,6 @@
 ---
-title: 创建Outlook窗体区域
-description: 了解如何使用窗体区域自定义 Microsoft Outlook窗体，以便更轻松地设计、开发和调试窗体区域。
+title: 创建 Outlook 窗体区域
+description: 了解如何使用窗体区域自定义 Microsoft Outlook 窗体，以便更轻松地设计、开发和调试窗体区域。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,14 +19,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 31c843d1d8a0a8a1ee06cbde33d9f229d0954d0914deb1dde912f50d2dbebfd3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 99049652ba378bf3a73a73412369145a0f695b9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121226266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047122"
 ---
-# <a name="create-outlook-form-regions"></a>创建Outlook窗体区域
+# <a name="create-outlook-form-regions"></a>创建 Outlook 窗体区域
   窗体区域可用于自定义 Microsoft Office Outlook 窗体。 Visual Studio 提供了高级工具，可使你更轻松地设计、开发和调试窗体区域。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
@@ -35,11 +35,11 @@ ms.locfileid: "121226266"
 
 - [使用窗体区域的优点](#Enhance)
 
-- [将Outlook区域添加到项目](#Adding)
+- [将 Outlook 窗体区域添加到项目](#Adding)
 
 - [使用窗体区域设计器](#UsingFormRegionDesigner)
 
-- [使用在窗体中设计的Outlook](#UsingFormRegionDesignedOutlook)
+- [使用在 Outlook 中设计的窗体区域](#UsingFormRegionDesignedOutlook)
 
 - [将自定义代码添加到窗体区域](#AddingCustomCode)
 
@@ -60,15 +60,15 @@ ms.locfileid: "121226266"
 
 - 在阅读窗格和检查器中显示自定义 UI。
 
-  有关详细信息，请参阅自定义 [窗体页和窗体区域](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)。
+  有关详细信息，请参阅 [自定义窗体页和窗体区域](/office/vba/outlook/Concepts/Forms/customizing-form-pages-and-form-regions)。
 
-## <a name="add-an-outlook-form-region-to-your-project"></a><a name="Adding"></a>将Outlook区域添加到项目
- 可以使用"新建 **Outlook窗体** 区域"向导设计新的窗体区域，或导入在窗体中设计的Outlook。 此外，如果有在其他 Outlook VSTO 外接程序项目中使用的窗体区域，则可以重新使用现有的窗体区域。
+## <a name="add-an-outlook-form-region-to-your-project"></a><a name="Adding"></a>将 Outlook 窗体区域添加到项目
+ 您可以使用 "**新建 Outlook 窗体区域** 向导" 设计新的窗体区域，或导入在 Outlook 中设计的窗体区域。 此外，如果有在其他 Outlook VSTO 外接程序项目中使用的窗体区域，则可以重新使用现有的窗体区域。
 
 ### <a name="create-a-new-form-region-by-using-the-wizard"></a><a name="CreatingFormRegion"></a> 使用向导创建新的窗体区域
- 若要创建窗体区域，请Outlook **窗体区域** 项添加到Outlook VSTO外接程序项目。 这会启动"**新建Outlook窗体区域"** 向导。
+ 若要创建窗体区域，请将 **Outlook 窗体区域** 项添加到 Outlook VSTO 外接程序项目中。 这将启动 "**新建 Outlook 窗体区域** 向导"。
 
- 使用向导来指示是要设计新的窗体区域还是导入在 Outlook 中设计的窗体区域。 有关设计新窗体区域的信息，请参阅 [使用窗体区域设计器](#UsingFormRegionDesigner)。 有关使用在 Outlook 中设计的窗体区域Outlook，请参阅导入在 Outlook 中设计的窗体[区域](#UsingFormRegionDesignedOutlook)。
+ 使用向导来指示是要设计新的窗体区域还是导入在 Outlook 中设计的窗体区域。 有关设计新窗体区域的详细信息，请参阅 [使用窗体区域设计器](#UsingFormRegionDesigner)。 有关使用 Outlook 中设计的窗体区域的详细信息，请参阅[导入在 Outlook 中设计的窗体区域](#UsingFormRegionDesignedOutlook)。
 
  使用向导来指定要创建的窗体区域类型。 下表介绍每种窗体区域类型。
 
@@ -79,18 +79,18 @@ ms.locfileid: "121226266"
 |Replacement|将窗体区域作为替换 Outlook 窗体默认页的新页添加。|
 |全部替换|使用窗体区域替换整个 Outlook 窗体。|
 
- 也可使用向导来指定显示条件及选择要扩展的窗体类型。 有关详细信息，请参阅[如何：将窗体区域添加到Outlook外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
+ 也可使用向导来指定显示条件及选择要扩展的窗体类型。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目中添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
- 在向导中所做的选择将影响其他向导页中可用的选项。 例如，如果在"创建新窗体Outlook"页中选择 **"相邻**"或"单独"，则"提供描述性文本"页中将无法使用"标题"和"说明"字段，并选择显示 **首选项** 页。 这是因为 Outlook 在显示相邻或独立的窗体区域时并不使用这些字段。
+ 在向导中所做的选择将影响其他向导页中可用的选项。 例如，如果在 "**创建新的 Outlook 窗体区域**" 页中选择 "**相邻**" 或 "**单独**"，则 "**标题**" 和 "**说明**" 字段在 "提供说明性文本" 中不可用 **，并选择 "显示首选项**" 页。 这是因为 Outlook 在显示相邻或独立的窗体区域时并不使用这些字段。
 
 #### <a name="form-region-files"></a>窗体区域文件
- 完成"新建窗体 **Outlook向导** 后，Visual Studio自动将以下文件添加到项目：
+ 完成 "**新建 Outlook 窗体区域**" 向导时，Visual Studio 会自动将以下文件添加到项目中：
 
-- 窗体区域代码文件。 此文件具有为"添加新项"对话框中 **Outlook"窗体区域**"**项指定的名称**。 向此文件添加用于处理窗体区域事件的代码。
+- 窗体区域代码文件。 此文件具有你在 "**添加新项**" 对话框中为 " **Outlook 窗体区域**" 项指定的名称。 向此文件添加用于处理窗体区域事件的代码。
 
 - 窗体区域设计器代码文件。 此文件包含窗体区域设计器生成的代码，不应直接对其进行编辑。
 
-- 一Outlook窗体存储 (*.ofs)* 文件。
+- 存储 (*.ofs*) 文件的 Outlook 形式。
 
     > [!NOTE]
     > 如果导入在 Outlook 中设计的窗体区域，那么仅将此文件添加到项目。
@@ -98,50 +98,50 @@ ms.locfileid: "121226266"
 #### <a name="form-region-factory-class"></a>窗体区域工厂类
  窗体区域代码文件包含实现 <xref:Microsoft.Office.Tools.Outlook.IFormRegionFactory> 接口的分部类。 这是窗体区域工厂类。 窗体区域工厂类负责创建窗体区域的新实例。
 
- 可以通过展开"窗体区域工厂" **区域来查找此类** 。
+ 可以通过展开 **窗体区域工厂** 区域找到此类。
 
- "**新建Outlook窗体** 区域"向导向此类添加属性，用于指定窗体区域的内部名称和显示窗体区域的消息类。 将文件添加到项目中后，可手动修改这些特性。
+ "**新建 Outlook 窗体区域** 向导" 将属性添加到此类中，此类指定窗体区域的内部名称和显示窗体区域的邮件类。 将文件添加到项目中后，可手动修改这些特性。
 
- 大部分窗体区域工厂类在窗体区域设计器文件中实现。 但是，`FormRegionInitializing` 事件处理程序在窗体区域代码文件中公开。 可使用此事件处理程序来指定 Outlook 是否应显示窗体区域。 有关详细信息，请参阅处理 [窗体区域事件](#HandlingFormRegionEvents)。
+ 大部分窗体区域工厂类在窗体区域设计器文件中实现。 但是，`FormRegionInitializing` 事件处理程序在窗体区域代码文件中公开。 可使用此事件处理程序来指定 Outlook 是否应显示窗体区域。 有关详细信息，请参阅 [处理窗体区域事件](#HandlingFormRegionEvents)。
 
 ### <a name="add-an-existing-form-region-to-your-project"></a><a name="AddingExistingFormRegion"></a> 将现有窗体区域添加到项目
  如果具有在其他 Outlook 项目中使用的 Outlook 窗体区域，可通过使用 **“添加现有项”** 对话框在当前 Outlook VSTO 外接程序项目中重新使用它。
 
- 现有窗体区域必须具有 *.vb* 或 *.cs (的代码) ;* 不能使用"Outlook"存储 (*") "，* 将窗体添加到 .ofs **文件。** 但是，可通过导入 Outlook 窗体存储文件来创建新的窗体区域。 有关详细信息，请参阅[如何：将窗体区域添加到Outlook外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
+ 现有窗体区域的代码文件必须 (*.vb* 或 .cs) *中*;不能使用 "**添加现有项**" 对话框将 Outlook 窗体存储 (*.ofs*) 文件中。 但是，可通过导入 Outlook 窗体存储文件来创建新的窗体区域。 有关详细信息，请参阅[如何：向 Outlook 外接程序项目中添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
 ## <a name="use-the-form-region-designer"></a><a name="UsingFormRegionDesigner"></a> 使用窗体区域设计器
- 窗体区域设计器可帮助你设计窗体区域的布局和外观。 可以将托管控件拖动到设计器的图面，双击控件以打开事件处理程序，以及设置" **属性"窗口中** 的属性。
+ 窗体区域设计器可帮助你设计窗体区域的布局和外观。 您可以将托管控件拖到设计器的图面上，双击控件以打开事件处理程序，并在 " **属性** " 窗口中设置属性。
 
 > [!NOTE]
-> 可以在"属性"窗口的"清单"节点下找到 **Outlook窗体区域** 显示 **方式的属性**。
+> 可以在 "**属性**" 窗口中的 "**清单**" 节点下 Outlook，查找影响窗体区域显示方式的属性。
 
- 只有在"新建窗体区域"向导的"选择创建窗体区域的方式"页中选择"设计新窗体区域 **"Outlook窗体区域** 设计器才可用。
+ 仅当在 "**新建 Outlook 窗体区域** 向导" 的 "**选择要创建窗体区域的方式**" 页中选择 "**设计新的窗体** 区域" 时，窗体区域设计器才可用。
 
  可通过三种方法打开窗体区域设计器：
 
 - 在 **解决方案资源管理器** 中，双击窗体区域代码文件。
 
-- 在 **解决方案资源管理器** 中，右键单击窗体区域代码文件，然后单击 **视图设计器。**
+- 在 **解决方案资源管理器** 中，右键单击窗体区域代码文件，然后单击 " **视图设计器**"。
 
-- 在 **解决方案资源管理器** 中，选择窗体区域代码文件，然后在"视图 **"** 菜单上单击"设计器 **"。**
+- 在 **解决方案资源管理器** 中，选择窗体区域代码文件，然后在 " **视图** " 菜单上单击 " **设计器**"。
 
   窗体区域设计器仅支持托管的控件。 不能添加本机 Outlook 控件。
 
-## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a>导入在窗体中设计的Outlook
+## <a name="import-a-form-region-designed-in-outlook"></a><a name="UsingFormRegionDesignedOutlook"></a>导入在 Outlook 中设计的窗体区域
  在 Outlook 中进行设计时，可向窗体区域添加本机 Outlook 控件。 本机 Outlook 控件使你能够在设计时绑定到 Outlook 数据。 但不能使用窗体区域设计器来添加托管的控件或更改窗体区域的设计。
 
- 可以使用"新建窗体Outlook VSTO"向导将窗体区域导入Outlook **外接程序** 项目中。 在"**选择要创建窗体区域** 的方式"页上，选择"导入窗体 Outlook **存储 (.ofs) 文件"。** 然后，可以浏览到 *.ofs* Outlook 存储 (窗体) 的位置。  (Outlook将窗体区域保存为 *.ofs* files.) 
+ 您可以使用 "**新建 Outlook 窗体区域**" 向导将窗体区域导入到 Outlook VSTO 外接程序项目中。 在 "**选择窗体区域的创建方式**" 页上，选择 "**导入 Outlook 窗体存储 ( .ofs) 文件**。 然后，可以浏览到 Outlook 窗体存储文件 (*.ofs*) 文件的位置。  (Outlook 将窗体区域保存为 *.ofs* 文件。 ) 
 
- "**新建Outlook窗体区域**"向导将 *.ofs* 文件复制到项目目录，并将控件引用添加到窗体区域设计器文件。 然后可处理窗体区域代码文件中的控件事件。
+ **新建 Outlook 窗体区域** 向导将 *.ofs* 文件复制到项目目录，并将控件引用添加到窗体区域设计器文件中。 然后可处理窗体区域代码文件中的控件事件。
 
  若要处理 Visual Basic 项目中的事件，从代码编辑器顶部的方法名列表中选择一个事件。
 
- 若要处理 C# 项目中的事件，订阅 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中的控件事件。 有关详细信息，请参阅如何：订阅和取消订阅事件&#40;C&#35;[编程指南&#41;。 ](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)
+ 若要处理 C# 项目中的事件，订阅 <xref:Microsoft.Office.Tools.Outlook.FormRegionControl.FormRegionShowing> 方法中的控件事件。 有关详细信息，请参阅 [如何：订阅和取消订阅事件 &#40;C&#35; 编程指南&#41;](/dotnet/csharp/programming-guide/events/how-to-subscribe-to-and-unsubscribe-from-events)。
 
  可在窗体区域工厂类的 `InitializeManifest` 方法中更改窗体区域属性。
 
 > [!NOTE]
-> 若要导入窗体区域，进行的项目所面向的 Outlook 版本必须与开发计算机上安装的版本相同。 例如，如果已安装 Outlook 2010，则导入窗体区域仅在使用 **Outlook 2010 外接程序项目模板创建的项目** 中工作。
+> 若要导入窗体区域，进行的项目所面向的 Outlook 版本必须与开发计算机上安装的版本相同。 例如，如果已安装 Outlook 2010，则导入窗体区域将仅在通过使用 **Outlook 2010 外接程序** 项目模板创建的项目中工作。
 
 ### <a name="update-an-imported-form-regions-design"></a>更新导入的窗体区域的设计
  可以添加、删除或更改窗体区域上的控件。 执行此操作之前，请备份添加到窗体区域代码文件的所有代码。 然后，在 Outlook 中打开 *.ofs* 文件，修改窗体区域，然后保存更改。 使用 "**新建 Outlook 窗体区域** 向导" 导入修改后的 *.ofs* 文件。 然后可将代码粘贴到新的窗体区域代码文件中。

@@ -1,6 +1,6 @@
 ---
-title: 选择 ClickOnce 更新策略 |Microsoft Docs
-description: 了解 ClickOnce 应用程序如何支持自动更新以及可使用哪些更新策略。
+title: 选择ClickOnce策略|Microsoft Docs
+description: 了解ClickOnce应用程序如何支持自动更新以及可以使用哪些更新策略。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,14 +16,15 @@ ms.assetid: d8b6e7bb-4ea0-47f3-91cd-48580bdceccc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: d546b48ffbbb4d44fb5f2ced11f41826370403e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cfe475c3d608acb0fb2fb513e740879e9a38bad6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133778"
 ---
 # <a name="choose-a-clickonce-update-strategy"></a>选择 ClickOnce 更新策略
 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 可以提供应用程序自动更新。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序会定期读取其部署清单文件，以查看是否有可用的应用程序更新。 如果有，则会下载并运行应用程序的新版本。 为提高效率，仅下载那些已更改的文件。
@@ -36,7 +37,7 @@ ms.locfileid: "99895071"
 > 应用程序更新需要网络连接。 如果不存在网络连接，则应用程序会在不检查更新的情况下运行，而无论选择的是何种更新策略。
 
 > [!NOTE]
-> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 \<xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 `deploymentProvider`元素对应于 Visual Studio 中 "**发布**" 选项卡的 "**更新**" 对话框上的 "**更新位置**" 字段。此规则在 .NET Framework 3.5 中非常宽松。 有关详细信息，请参阅 [部署 ClickOnce 应用程序用于测试和生产服务器而无需让步](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
+> 在 .NET Framework 2.0 和 .NET Framework 3.0 中，任何时候应用程序检查更新（无论在启动应用程序之前、之后，还是使用 \<xref:System.Deployment.Application> API 时），都必须在部署清单中设置 `deploymentProvider`。 元素 `deploymentProvider` 对应于"Visual Studio"选项卡的"更新"对话框中的"更新位置 **"** 字段。 此规则在 .NET Framework 3.5 中已放宽。 有关详细信息，请参阅[在不ClickOnce的情况下为测试和生产服务器部署应用程序](../deployment/deploying-clickonce-applications-for-testing-and-production-without-resigning.md)。
 
 ## <a name="check-for-updates-after-application-startup"></a>在应用程序启动后检查更新
  通过使用此策略，应用程序会在运行期间尝试在后台查找并读取部署清单文件。 如果有某个更新可用，则当用户下一次运行应用程序时，会提示用户下载并安装该更新。
@@ -56,7 +57,7 @@ ms.locfileid: "99895071"
 </subscription>
 ```
 
-## <a name="check-for-updates-before-application-startup"></a>在应用程序启动前检查更新
+## <a name="check-for-updates-before-application-startup"></a>在应用程序启动之前检查更新
  默认策略是在应用程序启动前尝试查找并读取部署清单文件。 通过使用此策略，每当用户启动应用程序时，应用程序都会尝试查找并读取部署清单文件。 如果有某个更新可用，则会下载并启动该更新；否则，会启动现有版本的应用程序。
 
  此策略最适用于高带宽的网络连接；在低带宽连接上启动应用程序时的长时间延迟可能令人无法接受。
@@ -74,9 +75,9 @@ ms.locfileid: "99895071"
 </subscription>
 ```
 > [!NOTE]
-> 对于 .NET 3.1 和更高版本的应用程序，在应用程序启动之前检查更新是支持的唯一更新选项。
+> 对于 .NET 3.1 和更高版本的应用程序，在应用程序启动之前检查更新是唯一受支持的更新选项。
 
-## <a name="make-updates-required"></a>需要更新
+## <a name="make-updates-required"></a>进行所需的更新
  在有些情况下，您可能需要要求用户运行更新版本的应用程序。 例如，你可能对诸如 Web 服务等外部资源进行了某种更改，而这种更改会使得较早版本的应用程序不能正常工作。 在这种情况下，您需要将更新标记为“必需”，并阻止用户运行较早的版本。
 
 > [!NOTE]
@@ -99,7 +100,7 @@ ms.locfileid: "99895071"
 
  例如，您可能希望在应用程序每次运行时都进行检查，或是一周检查一次，或一个月检查一次。 如果在指定时间不存在网络连接，则更新检查会在应用程序下一次运行时执行。
 
-## <a name="provide-a-user-interface-for-updates"></a>提供更新的用户界面
+## <a name="provide-a-user-interface-for-updates"></a>提供用于更新的用户界面
  在使用此策略时，应用程序开发人员会提供一个用户界面，用户可通过该用户界面选择应用程序检查更新的时间或频率。 例如，可以提供一个“立即检查更新”命令，或是一个提供有不同更新时间间隔选项的“更新设置”对话框。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署 API 提供了一个框架，此框架用于对自己的更新用户界面进行编程。 有关更多信息，请参见 <xref:System.Deployment.Application> 命名空间。
 
  如果应用程序使用部署 API 控制它自己的更新逻辑，则应按以下部分在“阻止更新检查”中介绍的那样阻止更新检查。
@@ -109,7 +110,7 @@ ms.locfileid: "99895071"
 ## <a name="block-update-checking"></a>阻止更新检查
  还可以阻止应用程序检查更新。 例如，您可能有一个永不更新的简单应用程序，但您希望利用 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署所提供的安装便利。
 
- 如果你的应用程序使用部署 Api 来执行其自己的更新，还应阻止更新检查;请参阅本主题前面的 "为更新提供用户界面"。
+ 还应阻止更新检查应用程序是否使用部署 API 执行自己的更新;请参阅本主题前面部分中的"提供用于更新的用户界面"。
 
  若要阻止更新检查，请清除“应用程序更新”对话框中的“应用程序应该检查更新”复选框。
 
@@ -120,10 +121,10 @@ ms.locfileid: "99895071"
 
  如果使用受信任的应用程序部署，则不会出现任何信任级别提示。 有关详细信息，请参阅 [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Deployment.Application>
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [选择 ClickOnce 部署策略](../deployment/choosing-a-clickonce-deployment-strategy.md)
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 如何执行应用程序更新](../deployment/how-clickonce-performs-application-updates.md)
-- [如何：管理 ClickOnce 应用程序的更新](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
+- [如何：管理应用程序ClickOnce更新](../deployment/how-to-manage-updates-for-a-clickonce-application.md)
