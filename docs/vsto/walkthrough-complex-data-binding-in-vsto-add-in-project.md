@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 49f87968c545e9fcca7548cd2fbda866d18b660b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 8f9a554d485abf329a5f3a2933f306035cefa27c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826351"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032001"
 ---
 # <a name="walkthrough-complex-data-binding-in-vsto-add-in-project"></a>演练： VSTO 外接程序项目中的复杂数据绑定
   可以将数据绑定到 VSTO 外接程序项目中的宿主控件和 Windows 窗体控件。 本演练演示如何在运行时向 Microsoft Office Excel 工作表中添加控件并将控件绑定到数据。
@@ -44,11 +45,11 @@ ms.locfileid: "107826351"
 
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
-- 对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 可以 `AdventureWorksLT` 从 [SQL Server 示例 GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)存储库下载该数据库。 有关附加数据库的详细信息，请参阅下列主题：
+- 对附加了 `AdventureWorksLT` 示例数据库且正在运行的 SQL Server 2005 或 SQL Server 2005 Express 实例的访问权限。 你可以 `AdventureWorksLT` 从[SQL Server 示例 GitHub](https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks)存储库下载数据库。 有关附加数据库的详细信息，请参阅下列主题：
 
-  - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加数据库，请参阅 [如何：附加数据库 (SQL Server Management Studio) ](/sql/relational-databases/databases/attach-a-database)。
+  - 若要使用 SQL Server Management Studio 或 SQL Server Management Studio Express 附加数据库，请参阅[如何：附加数据库 (SQL Server Management Studio) ](/sql/relational-databases/databases/attach-a-database)。
 
-  - 若要使用命令行来附加数据库，请参阅 [如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
+  - 若要使用命令行来附加数据库，请参阅[如何：将数据库文件附加到 SQL Server Express](/previous-versions/sql/)。
 
 ## <a name="create-a-new-project"></a>创建新项目
  第一步是创建 Excel VSTO 外接程序项目。
@@ -93,7 +94,7 @@ ms.locfileid: "107826351"
 ## <a name="create-controls-and-bind-controls-to-data"></a>创建控件并将控件绑定到数据
  对于本演练，只要用户打开工作薄， <xref:Microsoft.Office.Tools.Excel.ListObject> 控件就会在所选表中显示所有数据。 列表对象使用 <xref:System.Windows.Forms.BindingSource> 将控件连接到数据库。
 
- 有关将控件绑定到数据的详细信息，请参阅将 [数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
+ 有关将控件绑定到数据的详细信息，请参阅[在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
 ### <a name="to-add-the-list-object-dataset-and-table-adapter"></a>添加列表对象、数据集和表适配器
 
@@ -107,7 +108,7 @@ ms.locfileid: "107826351"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb" id="Snippet2":::
 
-3. 将以下代码添加到 `ThisAddIn_Startup` 方法中。 这会生成一个可扩展工作表的宿主项。 有关详细信息，请参阅 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+3. 将以下代码添加到 `ThisAddIn_Startup` 方法中。 这会生成一个可扩展工作表的宿主项。 有关详细信息，请参阅在[运行时 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_ExcelAddInDatabase_O12/ThisAddIn.cs" id="Snippet3":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_ExcelAddInDatabase_O12/ThisAddIn.vb" id="Snippet3":::
@@ -127,14 +128,14 @@ ms.locfileid: "107826351"
 
 ### <a name="to-test-the-vsto-add-in"></a>若要测试 VSTO 外接程序
 
-- 按 F5 。
+- 按 **F5**。
 
      已在工作表中创建了一个名为 <xref:Microsoft.Office.Tools.Excel.ListObject> 的 `addressListObject` 控件。 同时，向项目添加了一个名为 `adventureWorksLTDataSet` 的数据集对象和一个名为 <xref:System.Windows.Forms.BindingSource> 的 `addressBindingSource` 。 已将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到 <xref:System.Windows.Forms.BindingSource>，而后者又绑定到该数据集对象。
 
 ## <a name="see-also"></a>请参阅
 
 - [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [如何：用数据库中的数据填充工作表](../vsto/how-to-populate-worksheets-with-data-from-a-database.md)
 - [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
 - [如何：用服务中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-services.md)

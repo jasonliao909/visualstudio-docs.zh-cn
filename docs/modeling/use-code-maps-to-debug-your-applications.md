@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8888191a2b482aba2ff1fed2233e7156a0bf52564f1cac3339d8293d10fb36e2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8376b7f5fa54f7c51ae9f55841778c8cbcdbdf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121399018"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034079"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 

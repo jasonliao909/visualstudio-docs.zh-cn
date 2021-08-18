@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 592441e057e5b726f6fb474bf4dae66365203d73a64eb569b6e785ac1d1f2d48
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c38817ce41131c936138078f0dc8787854a4116
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051048"
 ---
 # <a name="breakpoint-errors"></a>断点错误
 下面描述了断点尝试绑定到代码但失败时的过程。

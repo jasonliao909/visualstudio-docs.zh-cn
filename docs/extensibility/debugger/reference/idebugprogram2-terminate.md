@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a78679b57f4d10679d9aa0bd36efe79d7d52970a3eb4dd919371934acfea9a98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 285ec0ddab554888503588577ede7df99fd9ddde
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050606"
 ---
 # <a name="idebugprogram2terminate"></a>IDebugProgram2::Terminate
 终止程序。

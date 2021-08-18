@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f4de4b0c30b697f96c65250b89002abdfccafa20a0cfe14f1267a537ad2b7841
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dc5bdfd6d019ccc9740ca00fbe3f70ae0a23419b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377738"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111445"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 检索服务器的友好名称。

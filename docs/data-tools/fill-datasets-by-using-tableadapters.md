@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ce4c351bb2226fb1fee5e574b7a35fa7f4d380898d99be1805dce42aed9b0226
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 70013e4943e256871dfe12e38b364da1cc67c94f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347258"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036948"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -55,7 +55,7 @@ TableAdapters 是设计器生成的组件，用于连接到数据库、运行查
 
 ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
-虽然 TableAdapter 是使用数据集设计器设计的，但 TableAdapter 类不会作为 的嵌套类生成 <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的单独命名空间中。 例如，如果有一个名为 的数据集，则 与 中的 `NorthwindDataSet` 关联的 TableAdapters  <xref:System.Data.DataTable> `NorthwindDataSet` 将放在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定的 TableAdapter，必须声明 TableAdapter 的新实例。 例如： 。
+虽然 TableAdapter 是使用数据集设计器设计的，但 TableAdapter 类不会生成为 的嵌套类 <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的单独命名空间中。 例如，如果有一个名为 的数据集，则 与 中的 `NorthwindDataSet` 关联的 TableAdapters  <xref:System.Data.DataTable> `NorthwindDataSet` 将放在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定的 TableAdapter，必须声明 TableAdapter 的新实例。 例如：
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs" id="Snippet7":::
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb" id="Snippet7":::
@@ -76,7 +76,7 @@ TableAdapters 可以包含多个查询来填充其关联的数据表。 只要�
 
 例如，如果应用程序包含一个包含客户名称的表，可以创建一个查询，该查询使用以特定字母开头的每一个客户名称填充该表，创建一个查询，该查询用位于同一状态的所有客户填充该表。 若要向具有给定状态的客户填充表，可以创建一个查询，该查询采用状态 `Customers` `FillByState` 值的参数，如下所示 `SELECT * FROM Customers WHERE State = @State` ：。 通过调用 方法并传递如下所示的参数值 `FillByState` 来运行查询 `CustomerTableAdapter.FillByState("WA")` ：。
 
-除了添加返回 TableAdapter 数据表相同架构数据的查询外，还可以添加返回标量值 (查询) 值。 例如，即使返回的数据不符合表的架构， () 客户计数的查询对于 `SELECT Count(*) From Customers` `CustomersTableAdapter,` 也有效。
+除了添加返回 TableAdapter 数据表相同架构数据的查询外，还可以添加返回标量值 (单个) 查询。 例如，返回客户计数 () 即使返回的数据不符合表的架构，该查询对 `SELECT Count(*) From Customers` `CustomersTableAdapter,` 也有效。
 
 ## <a name="clearbeforefill-property"></a>ClearBeforeFill 属性
 
@@ -84,11 +84,11 @@ TableAdapters 可以包含多个查询来填充其关联的数据表。 只要�
 
 ## <a name="tableadapter-inheritance"></a>TableAdapter 继承
 
-TableAdapters 通过封装配置的类来扩展标准数据适配器 <xref:System.Data.Common.DataAdapter> 的功能。 默认情况下，TableAdapter 继承自 <xref:System.ComponentModel.Component> 类，不能强制转换到 <xref:System.Data.Common.DataAdapter> 类。 将 TableAdapter 强制 <xref:System.Data.Common.DataAdapter> 转换到 类会导致 <xref:System.InvalidCastException> 错误。 若要更改 TableAdapter 的基类，可以在表Adapter 的基类属性中指定从 派生的类 <xref:System.ComponentModel.Component> ，数据集设计器。  
+TableAdapters 通过封装配置的类来扩展标准数据适配器 <xref:System.Data.Common.DataAdapter> 的功能。 默认情况下，TableAdapter 继承自 <xref:System.ComponentModel.Component> 类，不能强制转换到 <xref:System.Data.Common.DataAdapter> 类。 将 TableAdapter 强制 <xref:System.Data.Common.DataAdapter> 转换到 类会导致 <xref:System.InvalidCastException> 错误。 若要更改 TableAdapter 的基类，可以在 表的 TableAdapter 的基类属性中指定派生自 的 <xref:System.ComponentModel.Component> **类** 数据集设计器。 
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和属性
 
-TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象 **浏览器**。 它是在设计时创建的，使用前面提到的向导之一。 创建 TableAdapter 时分配给它的名称基于所处理表的名称。 例如，在基于名为 的数据库中的表创建 `Orders` TableAdapter 时，TableAdapter 命名为 `OrdersTableAdapter` 。 可以使用表中的 Name 属性更改 TableAdapter的类 **数据集设计器。**
+TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象 **浏览器**。 它是在设计时创建的，使用前面提到的向导之一。 创建 TableAdapter 时分配给它的名称基于所处理表的名称。 例如，在基于名为 的数据库中的表创建 `Orders` TableAdapter 时，TableAdapter 命名为 `OrdersTableAdapter` 。 可以使用表 中的 Name 属性更改 TableAdapter的类 **数据集设计器。**
 
 下面是 TableAdapters 的常用方法和属性：
 
@@ -102,18 +102,18 @@ TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象
 
 ## <a name="tableadapter-update-method"></a>TableAdapter 更新方法
 
-TableAdapters 使用数据命令读取和写入数据库。 使用 TableAdapter 的初始 (主) 查询作为创建关联数据表的架构以及与 方法关联的 、 和 命令 `Fill` `InsertCommand` `UpdateCommand` `DeleteCommand` `TableAdapter.Update` 的基础。 调用 TableAdapter 的 方法将运行最初配置 TableAdapter 时创建的语句，而不是使用 `Update` **TableAdapter** 查询配置向导 添加的其他查询之一。
+TableAdapters 使用数据命令读取和写入数据库。 使用 TableAdapter (main) 查询作为创建关联数据表的架构以及与 方法关联的 、 和 命令 `Fill` `InsertCommand` `UpdateCommand` `DeleteCommand` `TableAdapter.Update` 的基础。 调用 TableAdapter 的 方法将运行最初配置 TableAdapter 时创建的语句，而不是使用 `Update` **TableAdapter** 查询配置向导 添加的其他查询之一。
 
-使用 TableAdapter 时，它使用通常会执行的命令有效地执行相同的操作。 例如，调用适配器的 方法时，适配器在其 属性中运行数据命令，并使用数据读取器 (例如，) 将结果集加载到 `Fill` `SelectCommand` <xref:System.Data.SqlClient.SqlDataReader> 数据表中。 同样，调用适配器的 方法时，它会在 、 (属性中运行相应的命令，) 表中每个已更改的记录 `Update` `UpdateCommand` `InsertCommand` `DeleteCommand` 。
+使用 TableAdapter 时，它使用通常会执行的命令有效地执行相同的操作。 例如，调用适配器的 方法时，适配器在其 属性中运行数据命令，并使用数据读取器 (例如，) 将结果集加载到数据 `Fill` `SelectCommand` <xref:System.Data.SqlClient.SqlDataReader> 表中。 同样，调用适配器的 方法时，它会在 、 (属性中运行相应的命令，) 表中每个已更改的记录 `Update` `UpdateCommand` `InsertCommand` `DeleteCommand` 。
 
 > [!NOTE]
 > 如果主查询中有足够的信息，则生成 `InsertCommand` TableAdapter 时，默认情况下会 `UpdateCommand` 创建 、 和 `DeleteCommand` 命令。 如果 TableAdapter 的主查询不止一个表语句，则设计器可能无法生成 `SELECT` `InsertCommand` 、 和 `UpdateCommand` `DeleteCommand` 。 如果未生成这些命令，则运行 方法时可能会收到 `TableAdapter.Update` 错误。
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 
-除了 、 和 之外，还使用可以直接针对数据库运行的方法创建 `InsertCommand` `UpdateCommand` `DeleteCommand` TableAdapters。 可以直接调用 、 (和) `TableAdapter.Insert` `TableAdapter.Update` `TableAdapter.Delete` 来操作数据库中的数据。 这意味着可以从代码中调用这些单独的方法，而不是调用 来处理挂起的关联数据表 `TableAdapter.Update` 的插入、更新和删除。
+除了 、 和 之外，还使用可以直接针对数据库运行的方法创建 `InsertCommand` `UpdateCommand` `DeleteCommand` TableAdapters。 可以直接调用 、 (和 `TableAdapter.Insert` `TableAdapter.Update` `TableAdapter.Delete`) 来操作数据库中的数据。 这意味着可以从代码中调用这些单独的方法，而不是调用 来处理挂起的关联数据表 `TableAdapter.Update` 的插入、更新和删除。
 
-如果不想创建这些直接方法，请设置 TableAdapter 的 **GenerateDbDirectMethods** 属性 `false` ， ("属性"窗口中) 。  添加到 TableAdapter 的其他查询是独立查询 - 它们不会生成这些方法。
+如果不想创建这些直接方法，请设置 TableAdapter 的 **GenerateDbDirectMethods** 属性， ("属性 `false` "窗口中) 。  添加到 TableAdapter 的其他查询是独立查询 - 它们不会生成这些方法。
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 对可为空类型的支持
 

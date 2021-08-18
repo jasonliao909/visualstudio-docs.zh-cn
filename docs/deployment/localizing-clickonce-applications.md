@@ -21,14 +21,15 @@ ms.assetid: c92b193b-054d-4923-834b-d4226a4c7a1a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 8a8e1dea5fb3716d593ca9b28f52ca0cd59a054f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97756456d192921c2fff4ef9f283a89e775165c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938494"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051529"
 ---
 # <a name="localize-clickonce-applications"></a>本地化 ClickOnce 应用程序
 本地化是使你的应用程序适用于特定区域性的过程。 此过程涉及使用正确的日期和货币格式、调整窗体上控件的大小以及根据需要从右到左镜像处理控件，从而将用户界面 (UI) 文本转换为特定于区域的语言。
@@ -53,7 +54,7 @@ ms.locfileid: "99938494"
  此方法的好处在于它可创建单个部署，并简化已本地化的部署。 在运行时，将根据用户 Windows 操作系统的默认区域性使用适当的附属程序集。 此方法的缺点为只要客户端计算机上安装或更新了应用程序，此方法就会下载所有附属程序集。 如果你的应用程序具有大量字符串，或客户的网络连接速度慢，则此过程在应用程序更新期间会影响性能。
 
 > [!NOTE]
-> 此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅 [如何：使用 AutoSize 和 TableLayoutPanel 控件支持对 Windows 窗体进行本地化](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))。
+> 此方法假定你的应用程序将自动调整控件的高度、宽度和位置以适应不同区域性中不同的文本字符串大小。 Windows 窗体包含各种控件和技术，这些控件和技术使你可以设计更易于本地化的窗体，其中包括 <xref:System.Windows.Forms.FlowLayoutPanel> 和 <xref:System.Windows.Forms.TableLayoutPanel> 控件以及 <xref:System.Windows.Forms.Control.AutoSize%2A> 属性。  另请参阅[如何：使用 AutoSize 和 TableLayoutPanel 控件支持对 Windows 窗体进行本地化](/previous-versions/visualstudio/visual-studio-2010/1zkt8b33(v=vs.100))。
 
 ## <a name="generate-one-deployment-for-each-culture"></a>为每种区域性生成一个部署
  在此部署策略中，可以生成多个部署。 在每个部署中，仅包括特定区域性所需的附属程序集，并将该部署标记为特定于该区域性。
@@ -67,7 +68,7 @@ ms.locfileid: "99938494"
 ## <a name="download-satellite-assemblies-on-demand"></a>按需下载附属程序集
  如果决定在单个部署中包括所有附属程序集，则可通过使用按需下载来提高性能，这使你能够将程序集标记为可选。 安装或更新应用程序时，将不会下载已标记的程序集。 可通过调用 <xref:System.Deployment.Application.ApplicationDeployment> 类上的 <xref:System.Deployment.Application.ApplicationDeployment.DownloadFileGroup%2A> 方法，根据需要安装程序集。
 
- 按需下载附属程序集与按需下载其他类型的程序集略有不同。 有关如何使用的工具启用此方案的详细信息和代码示例 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，请参阅 [演练：使用 ClickOnce 部署 API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。
+ 按需下载附属程序集与按需下载其他类型的程序集略有不同。 有关如何使用的工具启用此方案的详细信息和代码示例 [!INCLUDE[winsdkshort](../debugger/debug-interface-access/includes/winsdkshort_md.md)] [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，请参阅[演练：使用 ClickOnce 部署 API 按需下载附属程序集](../deployment/walkthrough-downloading-satellite-assemblies-on-demand-with-the-clickonce-deployment-api.md)。
 
  还可以在 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 中启用此方案。  另请参阅 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](/previous-versions/visualstudio/visual-studio-2012/ms366788(v=vs.110)) 或 [演练：在设计器中使用 ClickOnce 部署 API 按需下载附属程序集](/previous-versions/visualstudio/visual-studio-2013/ms366788(v=vs.120))。
 
@@ -80,7 +81,7 @@ ms.locfileid: "99938494"
 
 - 可在应用程序中以编程方式设置 <xref:System.Threading.Thread.CurrentUICulture%2A> 属性。 （必须在调用 <xref:System.Windows.Forms.Application.Run%2A> 方法前设置该属性。）
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [\<assemblyIdentity> 元素](../deployment/assemblyidentity-element-clickonce-deployment.md)
 - [ClickOnce 安全性和部署](../deployment/clickonce-security-and-deployment.md)
 - [全球化 Windows 窗体](/dotnet/framework/winforms/advanced/globalizing-windows-forms)

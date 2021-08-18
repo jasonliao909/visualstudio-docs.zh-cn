@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70f9d10595e1d0b458fc7102b48a1e1df8ee9daf6d2f04b993e7814891c41273
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 515183771fd4063b20d7ea2ade416d1b84c31cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137452"
 ---
 # <a name="the-experimental-instance"></a>实验实例
 为了保护您的 Visual Studio 开发环境不受未经测试的应用程序的改变，VSSDK 提供了可用于试验的实验空间。 您可以像平常一样使用 Visual Studio 开发新应用程序，但使用此实验实例运行这些应用程序。

@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 24e65c92cacd7cbc7f3fd9cbda772e24c511cc21edfc7c465034af70557fe2a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ec2586cd7474feee1fbd03bec3ba6a1b0c3cd40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046420"
 ---
 # <a name="office-ui-customization-walkthroughs"></a>OfficeUI 自定义演练
   下列演练演示了如何使用文档级自定义项和 VSTO 外接程序来自定义 Microsoft Office 应用程序的用户界面 (UI)。

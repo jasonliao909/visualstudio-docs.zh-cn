@@ -1,6 +1,6 @@
 ---
 title: 如何：自定义 SharePoint 功能 |Microsoft Docs
-description: 在 Visual Studio 中自定义 SharePoint 功能。 在解决方案资源管理器或 SharePoint 包资源管理器中添加新功能时，将打开功能设计器。
+description: 自定义 Visual Studio 中的 SharePoint 功能。 在解决方案资源管理器或 SharePoint 包资源管理器中添加新功能时，将打开功能设计器。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 0604b6497920e1e6df0a792ce758519f425ac155
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7f4df055447221d563d4725f2a49ccb826b23002
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093029"
 ---
 # <a name="how-to-customize-a-sharepoint-feature"></a>如何：自定义 SharePoint 功能
   您可以使用 Visual Studio 中的功能设计器来创建和自定义 SharePoint 功能。 例如，可以设置功能范围并将其他功能添加为依赖项。 默认情况下，当你在解决方案资源管理器或 SharePoint 包资源管理器中添加新功能时，将打开功能设计器。
@@ -54,7 +55,7 @@ ms.locfileid: "99959943"
     > 当你打开功能模板清单 XML 文件时，将自动验证这些文件并忽略在 "错误列表" 窗口中显示的警告。
 
 ## <a name="change-the-manifest-template"></a>更改清单模板
- 您可以在 Visual Studio XML 编辑器或 "清单模板" 窗格中更改功能清单文件的 XML 代码。 对 XML 代码所做的任何更改都将合并到该功能的打包清单文件中。 例如，你可能想要更改清单模板以自定义功能属性。
+ 可以在 Visual Studio xml 编辑器 "或" 清单模板 "窗格中更改功能清单文件的 XML 代码。 对 XML 代码所做的任何更改都将合并到该功能的打包清单文件中。 例如，你可能想要更改清单模板以自定义功能属性。
 
 #### <a name="to-change-the-manifest-template-by-using-the-xml-editor"></a>使用 "XML 编辑器" 更改清单模板
 
@@ -72,7 +73,7 @@ ms.locfileid: "99959943"
  您可以禁用功能设计器并手动创建 *feature.xml* 文件。 第一次执行此过程时，功能设计器中的当前设置将保存到功能模板 XML 文件中。 然后，您可以修改或覆盖 XML 代码。
 
 > [!NOTE]
-> 如果在禁用功能设计器的情况下添加或删除 XML 文件中的 SharePoint 项目项，则不会打包这些项目项。
+> 如果在禁用功能设计器的情况下，在 XML 文件中添加或删除 SharePoint 项目项，则不会打包这些项目项。
 
 #### <a name="to-overwrite-packaged-manifest-file-by-disabling-the-designer"></a>通过禁用设计器覆盖打包的清单文件
 
@@ -91,5 +92,5 @@ ms.locfileid: "99959943"
 
 2. 模板会刷新为原始文本，对 XML 所做的任何更改都将丢失。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

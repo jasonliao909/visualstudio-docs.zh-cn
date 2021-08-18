@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a7002cdc0787850fc7be5a782f3cf3a2101d7593
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 0b9b70630708ebc558a798371a6d39ff30aed6f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825714"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082928"
 ---
 # <a name="how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control"></a>如何：在向 ListObject 控件添加新行时验证数据
   用户可以向绑定到数据的 <xref:Microsoft.Office.Tools.Excel.ListObject> 控件添加新行。 可以在将更改提交到数据源之前验证用户数据。
@@ -42,7 +43,7 @@ ms.locfileid: "107825714"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet8":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet8":::
 
-2. 创建新的 <xref:System.Data.DataTable> ，并将示例列和数据添加到 `Startup` (中的类的事件处理程序 `Sheet1` 中的) 或 `ThisAddIn` VSTO 外接程序项目中的类 () 。
+2. 创建新的 <xref:System.Data.DataTable> ，并在 `Startup` (在文档级项目中的类的事件处理程序中添加示例列和数据 `Sheet1`) 或 `ThisAddIn` VSTO 外接程序项目中的类 () 。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreHostControlsExcelCS/Sheet1.cs" id="Snippet9":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsExcelVB/Sheet1.vb" id="Snippet9":::
@@ -56,9 +57,9 @@ ms.locfileid: "107825714"
  此代码示例假定在此代码出现的工作表中有一个名为 <xref:Microsoft.Office.Tools.Excel.ListObject> 的现有 `list1` 。
 
 ## <a name="see-also"></a>请参阅
-- [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [ListObject 控件](../vsto/listobject-control.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
+- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [如何：将 ListObject 列映射到数据](../vsto/how-to-map-listobject-columns-to-data.md)

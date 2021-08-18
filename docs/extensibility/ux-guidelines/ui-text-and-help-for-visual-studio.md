@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e946715687b46f651ac301f4e95207dbde23451011e9a48d0c20ae6a200e073
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ca987c3f4b311b75b6a6070f8340c179c2ea6e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078708"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio 的 UI 文本和帮助
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文本和术语
@@ -66,7 +66,7 @@ ms.locfileid: "121335415"
 
  **Visual Studio 中的补充文本**
 
- !["选择源代码管理"对话框的屏幕截图Visual Studio其中显示了描述每个源代码管理系统选项的补充文本。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ !["选择源代码管理"对话框Visual Studio屏幕截图，其中显示了描述每个源代码管理系统选项的补充文本。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Visual Studio 中的补充文本**
 
@@ -92,7 +92,7 @@ ms.locfileid: "121335415"
 #### <a name="control-labels"></a>控件标签
  控件标签应简短、简洁，并遵循Windows[桌面指南](/windows/desktop/uxguide/controls)。
 
- 有关控件标签格式和 UI 中位置的信息，请参阅控件[的布局Visual Studio。](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
+ 有关 UI 中的控件标签格式和位置详细信息，请参阅[布局Visual Studio。](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 
 #### <a name="help-links"></a>“帮助”链接
  帮助链接可以放置在说明文本中或 UI 的正文中。 它们可以是指向"帮助"的链接或启动内部对话。
