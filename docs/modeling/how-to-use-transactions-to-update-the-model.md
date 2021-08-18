@@ -7,19 +7,20 @@ ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: e91e569573076d1614a9fa946b67f3bda01e6fba
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8b1d0914c83a8cc36a389006560401619fab1ef7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390537"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150633"
 ---
 # <a name="how-to-use-transactions-to-update-the-model"></a>如何：使用事务更新模型
 事务确保对存储区所做的更改被视为组。 可以将已分组的更改作为一个单元提交或回滚。
 
- 每当程序代码修改、添加或删除 Visual Studio 可视化和建模 SDK 中的存储区中的任何元素时，它都必须在事务内执行此操作。 <xref:Microsoft.VisualStudio.Modeling.Transaction>发生更改时，必须有与存储关联的活动实例。 这适用于所有模型元素、关系、形状、关系图及其属性。
+ 每当程序代码在 Visual Studio 可视化和建模 SDK 中修改、添加或删除存储中的任何元素时，它都必须在事务内执行此操作。 <xref:Microsoft.VisualStudio.Modeling.Transaction>发生更改时，必须有与存储关联的活动实例。 这适用于所有模型元素、关系、形状、关系图及其属性。
 
  事务机制可帮助避免不一致的状态。 如果在事务中发生错误，则回滚所有更改。 如果用户执行撤消命令，则每个最近的事务将被视为单个步骤。 用户不能撤消最近更改的某些部分，除非您将它们显式放置在单独的事务中。
 

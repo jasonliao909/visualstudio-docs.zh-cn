@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 63a58dba9c6698b46786c665df0262c580b9048c3675a3715787459005405999
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7c8abdb8b3eff82c7dc36ec9be8bb7e9c1be7d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121271376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150568"
 ---
 # <a name="embed-a-diagram-in-a-windows-form"></a>在 Windows 窗体中嵌入图表
 
@@ -144,7 +144,7 @@ ms.locfileid: "121271376"
 
      请注意，列表框显示模型中元素的列表，并且在任何添加或删除之后以及在撤消和重做之后都是正确的。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [编写代码以自定义域特定语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)

@@ -1,22 +1,25 @@
 ---
-title: Docker 教程 - 第 1 部分：生成并运行待办事项列表示例应用
+title: Docker 教程 - 第 2 部分：生成并运行待办事项列表示例应用
 description: 概述在 Node.js 中运行的待办事项列表示例应用。
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
-ms.technology: vs-azure
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 00eb3a7cff3ffeaac783b929a000d9258fae7e63
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: a80358f74d949eb10686004466d91a8116101a1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053470"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>生成并运行待办事项示例应用
+
+>[!NOTE]
+> 这是教程的延续，单击[此处](docker-tutorial.md)开始
 
 在本教程的其余部分中，你将使用在 Node.js 中运行的简单待办事项列表管理器。 如果你不熟悉 Node.js，别担心！ 我们并不需要实际的 JavaScript 经验！
 
@@ -28,7 +31,7 @@ ms.locfileid: "112042934"
 
 在运行应用程序之前，需要将应用程序源代码放到计算机上。 对于实际项目，通常会克隆存储库。 但在本教程中，我们创建了一个包含应用程序的 ZIP 文件。
 
-1. 请确保你已在本地计算机上安装用于 Windows 的 Docker 或 Docker 社区版。 请参阅[用于 Windows 的 Docker 安装文档](https://docs.docker.com/docker-for-windows/install/)。 安装过程会创建 ZIP 文件，该文件包含在 localhost 地址提供的示例。
+1. 如果你使用的是 Windows，请确保已在本地计算机上安装用于 Windows 的 Docker 或 Docker 社区版。 请参阅[用于 Windows 的 Docker 安装文档](https://docs.docker.com/docker-for-windows/install/)。 安装过程会创建 ZIP 文件，该文件包含在 localhost 地址提供的示例。 对于 Mac，请安装[用于 Mac 的 Docker Desktop](https://docs.docker.com/docker-for-mac/install/)。
 
 1. 从 [Docker](https://github.com/docker/getting-started) 存储库下载应用的源。 可以下载存储库的 ZIP 文件。 若要下载 ZIP 文件，请使用绿色的“代码”按钮，然后选择“下载 ZIP” 。 打开 ZIP 文件和“全部提取”，将应用的源从应用文件夹提取到硬盘上的文件夹。
 

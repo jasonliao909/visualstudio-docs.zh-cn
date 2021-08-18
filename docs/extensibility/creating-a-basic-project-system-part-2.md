@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 644921dac3a82da3ad618eda8787ee6866689753696268d026e73955ae286078
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4aa62227051b68307c0bb4ab301a218d8e535461
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452697"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058014"
 ---
 # <a name="create-a-basic-project-system-part-2"></a>创建基本项目系统，第 2 部分
 本系列的第一个演练（创建基本项目系统，第 [1](../extensibility/creating-a-basic-project-system-part-1.md)部分）演示如何创建基本项目系统。 本演练基于基本项目系统，Visual Studio模板、属性页和其他功能。 在开始本演练之前，必须完成第一个演练。
@@ -45,11 +45,11 @@ ms.locfileid: "121452697"
 ## <a name="create-a-visual-studio-template"></a>创建Visual Studio模板
 - [创建基本项目系统，第 1](../extensibility/creating-a-basic-project-system-part-1.md) 部分演示如何创建基本项目模板并将其添加到项目系统。 它还演示如何使用 属性向 Visual Studio注册此模板，该属性在系统注册表中写入 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> *\\ Templates\Projects\SimpleProject \\* 文件夹的完整路径。
 
-通过使用 Visual Studio模板 (*.vstemplate* 文件) 而不是基本项目模板，可以控制模板在"新建 **Project"** 对话框中的显示方式以及模板参数的替换方式。 *.vstemplate* 文件是一个 XML 文件，描述在使用项目系统模板创建项目时如何包括源文件。 项目系统本身通过收集 *.vstemplate* 文件和 *.zip* 文件中源文件来生成，并且通过将 *.zip* 文件复制到已知位置进行部署Visual Studio。 本演练稍后将更详细地介绍此过程。
+通过使用 Visual Studio模板 (*.vstemplate* 文件) 而不是基本项目模板，可以控制模板在"新建 **Project"对话框中** 的显示方式以及模板参数的替换方式。 *.vstemplate* 文件是一个 XML 文件，描述在使用项目系统模板创建项目时如何包括源文件。 项目系统本身通过收集 *.vstemplate* 文件和 *.zip* 文件中源文件来生成，并且通过将 *.zip* 文件复制到已知位置进行部署Visual Studio。 本演练稍后将更详细地介绍此过程。
 
 1. 在 中，打开按照创建基本项目系统第 1 部分创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [的简单项目解决方案](../extensibility/creating-a-basic-project-system-part-1.md)。
 
-2. 在 *SimpleProjectPackage.cs* 文件中，找到 ProvideProjectFactory 属性。 将项目名称 (参数替换为 null) ，将第四个参数替换为 ("作为项目模板文件夹) 路径。 \\\NullPath"，如下所示。
+2. 在 *SimpleProjectPackage.cs* 文件中，找到 ProvideProjectFactory 属性。 将第二个参数 (项目) null，第四个参数 (项目模板文件夹的路径) "。 \\\NullPath"，如下所示。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -113,13 +113,13 @@ ms.locfileid: "121452697"
 
   所有三个文件 `ReplaceParameters` 都设置为 true，这将启用参数替换。 *Program.cs* 文件已设置为 true，这会导致创建项目时在代码 `OpenInEditor` 编辑器中打开该文件。
 
-  有关模板架构中的元素Visual Studio，请参阅模板Visual Studio[架构引用](../extensibility/visual-studio-template-schema-reference.md)。
+  有关模板架构中的元素Visual Studio，请参阅模板[Visual Studio引用](../extensibility/visual-studio-template-schema-reference.md)。
 
 > [!NOTE]
 > 如果一个项目具有多个Visual Studio模板，则每个模板都位于单独的文件夹中。 该文件夹中每个文件都必须将"**生成操作**"设置为 **"ZipProject"。**
 
 ## <a name="adding-a-minimal-vsct-file"></a>添加最小的 .vsct 文件
- Visual Studio必须在安装模式下运行，以识别新模板或修改Visual Studio模板。 安装模式要求 *存在 .vsct* 文件。 因此，必须将最小的 *.vsct* 文件添加到项目。
+ Visual Studio在安装模式下运行，以识别新模板或修改Visual Studio模板。 安装模式要求 *存在 .vsct* 文件。 因此，必须将最小的 *.vsct* 文件添加到项目。
 
 1. 将名为 *SimpleProject.vsct* 的 XML 文件添加到 SimpleProject 项目。
 
@@ -150,7 +150,7 @@ ms.locfileid: "121452697"
 
     4. 项目文件并关闭编辑器。
 
-    5. 保存 SimpleProject 节点，然后在 **解决方案资源管理器重载****Project。**
+    5. 保存"SimpleProject"节点，然后在"解决方案资源管理器 **单击"****重载Project"。**
 
 ## <a name="examine-the-visual-studio-template-build-steps"></a>检查Visual Studio模板生成步骤
  当更改 *.vstemplate* 文件或重新生成包含 *.vstemplate* 文件的项目时，VSPackage 项目生成系统Visual Studio在安装模式下运行。 可以按照以下方法操作：将属性的MSBuild级别设置为"正常"或更高。
@@ -189,7 +189,7 @@ Visual Studio模板不包含路径信息。 因此 *，.zip* 模板文件必须�
 
     在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 上：在"开始"菜单上，找到 **"Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools"** 文件夹，然后选择"重置Microsoft Visual Studio **实验实例"。**
 
-    在更高版本的 Windows：**在"开始**"屏幕上，键入"重置Microsoft Visual Studio **\<version> 实验实例"。**
+    在更高版本的 Windows：在"开始 **"屏幕上，** 键入"重置Microsoft Visual Studio **\<version> 实验实例"。**
 
 2. 将出现命令提示符窗口。 看到"按任意 **键继续"字样时，单击**"**输入"。** 窗口关闭后，打开Visual Studio。
 

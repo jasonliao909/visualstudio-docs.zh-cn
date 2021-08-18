@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式向文档中的文本添加注释
-description: 以编程方式向文档中的文本添加注释。 文档类的 "注释" 属性向 Microsoft Word 文档中的文本范围添加注释。
+description: 以编程方式向文档中的文本添加注释。 document 类的 comment 属性向 Microsoft Word 文档中的文本范围添加注释。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4e03f189f2236131308b8f9ea5d90c52ffa3147d
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 3e8b8d2f89b87d312b0a3868974fa6d9f7d039f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083344"
 ---
 # <a name="how-to-programmatically-add-comments-to-text-in-documents"></a>如何：以编程方式向文档中的文本添加注释
   文档类的 "注释" 属性将注释添加到 Microsoft Office Word 文档中的文本范围。

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4fa3de2f8fc505aa6baaffd5c4370ef407c09029a33f9d2c2c14d02b8174f8e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5e09dc87423eef2327100385e5c1a823aea5f042
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262420"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119797"
 ---
 # <a name="idebugbinder3gettypearguments"></a>IDebugBinder3::GetTypeArguments
 此方法检索与此 对象关联的参数类型列表。
@@ -52,7 +52,7 @@ int GetTypeArguments(
 [in]获取参数类型之前要跳过的字段数。
 
 `count`\
-[in]要返回的参数字段 (还指定数组数组 `ppFields`) 。
+[in]要返回参数字段 (还指定数组大小 `ppFields`) 。
 
 `ppFields`\
 [in， out]将在返回此方法时填充的字段数组。
@@ -66,6 +66,6 @@ int GetTypeArguments(
 ## <a name="remarks"></a>备注
  可以使用 [GetTypeArgumentCount 预先获取参数类型的数量](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)
 - [GetTypeArgumentCount](../../../extensibility/debugger/reference/idebugbinder3-gettypeargumentcount.md)

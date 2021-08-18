@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 7e9c654b683c0a308fc7ead8aafeacc7b730d8720650bf0c19b7128acd2ac08f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 214330d50059a4f1021e5c3e9983613e8b488c76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394701"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100070"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-c-project"></a>如何：在 Visual C# 项目中向 VBA 公开代码
-  如果希望两种类型的代码相互交互，Visual Basic for Applications (Visual C# 项目中的代码) VBA 代码。
+  如果希望两种类型的代码相互交互，Visual Basic for Applications (Visual C# 项目中) VBA 代码。
 
  Visual C# 过程不同于Visual Basic过程。 有关详细信息，请参阅[如何：向](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)项目 中的 VBA Visual Basic代码。
 
@@ -90,7 +90,7 @@ ms.locfileid: "121394701"
    [System.Runtime.InteropServices.ComVisible(true)]
    ```
 
-9. 打开 Word (的文档) 或 (工作表Excel) 在 的设计器中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
+9. 打开 Word (的文档) 或工作表 (，Excel) 设计器中的文档 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 10. 在 **“属性”** 窗口中，选择 **“ReferenceAssemblyFromVbaProject”** 属性，并将值更改为 **“True”**。
 

@@ -1,6 +1,6 @@
 ---
 title: 布局Visual Studio |Microsoft Docs
-description: 了解自定义Visual Studio的布局，包括无名称对话框和具有"有色"外观的新对话。
+description: 了解所有Visual Studio的布局，包括无名称对话框和具有""有色外观的新对话。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,15 +11,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e30d3895fcc6e17988fea69d9b70ed05cd30dddca8104667b1fa1ab0a14f0825
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce29e7f2d8d75cf60423cbb65ca3b2da449e4c6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413676"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094537"
 ---
 # <a name="layout-for-visual-studio"></a>Visual Studio 的布局
-大多数对话框Visual Studio实用工具对话框布局 ，这是[](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)遵循标准对话框Windows布局原则 的[未主题对话](/windows/desktop/uxguide/win-dialog-box)。 随着Visual Studio UI 的刷新，一些更突出的对话采用新设计，可将其建立为产品定义体验。 这些 ["以"为"的](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 对话框布局具有一个以""为"的"外观"。
+大多数对话框Visual Studio实用工具对话布局 ，这是[](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_UtilityDialogLayout)遵循标准对话框Windows布局原则[的未主题对话](/windows/desktop/uxguide/win-dialog-box)。 随着Visual Studio UI 的刷新，一些更突出的对话采用新设计，可将其建立为产品定义体验。 这些 ["以"为"的](../../extensibility/ux-guidelines/layout-for-visual-studio.md#BKMK_ThemedDialogLayout) 对话框布局具有一个以""为"的"外观"。
 
 ## <a name="utility-dialog-layout"></a><a name="BKMK_UtilityDialogLayout"></a> 实用工具对话框布局
 
@@ -106,9 +106,9 @@ ms.locfileid: "121413676"
 #### <a name="interior-command-buttons"></a><a name="BKMK_InteriorCommandButtons"></a> 内部命令按钮
  在更复杂的对话框中，内部控件可能有其自己的相关按钮，这可能会影响对话框的提交按钮所在的位置。
 
-- 当"确定取消 (右下角水平方向时，) 内侧按钮的列框使用 / 垂直对齐方式。
+- 当"确定取消 (右下角) 时，使用垂直对齐方式) 内 / 侧按钮的列对齐方式。
 
-- 当"确定取消 (右上角) 时，使用水平对齐方式) 内 / 侧按钮的行对齐方式。 这种情况不太常见。
+- 当右上角垂直 ("取消) 时，使用水平对齐方式) 内 / 侧按钮的行对齐方式。 这种情况不太常见。
 
 - 内部按钮大小应面向标准按钮大小 75x23 像素，尽可能匹配"确定取消 / "按钮的大小。 如果按钮标签使按钮超过标准按钮大小，则该集内的其他按钮应符合该较宽的大小。
 
@@ -124,7 +124,7 @@ ms.locfileid: "121413676"
  **[浏览...]** 文本框后跟的按钮应拼写出"浏览..."完整，包括省略号。 如果空间很紧或屏幕上有多个 **[Browse...]** 按钮，该按钮可以缩减为省略号。
 
 ## <a name="themed-dialog-layout"></a><a name="BKMK_ThemedDialogLayout"></a> "以"为"的对话框布局
- 对话框中的"Visual Studio具有更浅的外观，并提供更多空白。 版式提供了更多重点和兴趣，提供了更多的开放行距以及字号和粗细的变体。 在可能的情况下，已减少或删除了 chrome 和标题栏。 这些对话框的布局应遵循以下基本模式：
+ 对话框中的"Visual Studio对话框的外观更浅，并提供更多空白。 版式提供了更多重点和兴趣，提供了更多的开放行距以及字号和粗细的变体。 在可能的情况下，已减少或删除了 chrome 和标题栏。 这些对话框的布局应遵循以下基本模式：
 
 1. 对话框的背景为白色。
 
@@ -138,7 +138,7 @@ ms.locfileid: "121413676"
 
 6. 默认链接没有下划线。 悬停和按下状态具有颜色更改和下划线。
 
-7. 提交按钮 **("确定** 取消) / 位于右下角。
+7. 提交按钮 **("确定** / ""取消) 位于右下角。
 
 ### <a name="themed-dialog-layout-examples"></a>"以对话为示例"的对话框布局示例
  ![主题对话框布局](../../extensibility/ux-guidelines/media/0801-h_themeddialog.png "0801-h_ThemedDialog")
@@ -155,9 +155,9 @@ ms.locfileid: "121413676"
 
  ![主题对话框颜色](../../extensibility/ux-guidelines/media/0801-k_themeddialogcolors.png "0801-k_ThemedDialogColors")
 
- **图 08.01-k：主题对话框-颜色**
+ **图 08.01-k：主题对话框 - 颜色**
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 的应用程序模式](../../extensibility/ux-guidelines/application-patterns-for-visual-studio.md)
 - [控件 (Windows) ](/windows/desktop/uxguide/controls)
-- [Windows (的对话框) ](/windows/desktop/uxguide/win-dialog-box)
+- [对话框 (Windows) ](/windows/desktop/uxguide/win-dialog-box)

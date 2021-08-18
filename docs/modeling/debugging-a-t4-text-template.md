@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 360c007363e8e5b559e3c95481a014c4c453093fa1ecac804b42f986ad2f8988
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d1b8c0bb6aa166ee31b9e6d8248e0bef6755f47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398224"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150763"
 ---
 # <a name="debugging-a-t4-text-template"></a>调试 T4 文本模板
 可以在文本模板中设置断点。 若要调试设计时文本模板，请保存文本模板文件，然后在文本模板中文件的快捷菜单上选择"调试 **T4** 模板解决方案资源管理器。 若要调试运行时文本模板，只需调试它所属的应用程序。

@@ -1,6 +1,6 @@
 ---
-title: '发布页，项目设计器 (Office 开发) '
-description: 了解如何使用 Visual Studio 中的 "项目设计器" 的 "发布" 页来配置部署属性。
+title: 'Office 开发 (的 "发布" 页 Project 设计器) '
+description: 了解如何使用 Visual Studio 中 Project 设计器的 "发布" 页来配置部署属性。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,22 +16,23 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: bc80a71516f1de8f2a6943d9df7b02341ea786aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7e375133788c40184d63a696f684f58bde1d2d55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082772"
 ---
-# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>发布页，项目设计器 (Visual Studio 中的 Office 开发) 
+# <a name="publish-page-project-designer-office-development-in-visual-studio"></a>发布页，Project 设计器 (Visual Studio 中的 Office 开发) 
   “项目设计器”  的“发布”  页面用于针对部署配置属性。
 
- 若要访问此页，请在 **解决方案资源管理器** 中选择项目，然后在 "**项目**" 菜单上选择 "项目 *名称***属性**"。 如果“发布”  页面未显示，请选择“发布”  选项卡。
+ 若要访问此页，请在 **解决方案资源管理器** 中选择项目，然后在 " **Project** " 菜单上选择 "*项目名称***属性**"。 如果“发布”  页面未显示，请选择“发布”  选项卡。
 
 > [!NOTE]
-> 你也可以在“发布向导” 中设置发布位置。 有关详细信息，请参阅 [如何：使用 ClickOnce 发布 Office 解决方案](/previous-versions/bb386095(v=vs.110))。
+> 你也可以在“发布向导” 中设置发布位置。 有关详细信息，请参阅[如何：使用 ClickOnce 发布 Office 解决方案](/previous-versions/bb386095(v=vs.110))。
 
 ## <a name="uielement-list"></a>UIElement 列表
  **发布文件夹位置 (网站、ftp 服务器或文件路径)** 必填。
@@ -52,7 +53,7 @@ ms.locfileid: "99971721"
 
  如果安装文件位于相对于文档或安装程序的位置（例如使用 CD 的时候），则将此框保留为空。
 
- 此值可由管理员以后分配。 有关详细信息，请参阅 [如何：更改 Office 解决方案的安装路径](/previous-versions/bb608626(v=vs.110))。
+ 此值可由管理员以后分配。 有关详细信息，请参阅[如何：更改 Office 解决方案的安装路径](/previous-versions/bb608626(v=vs.110))。
 
  **先决条件** 系统必备组件可以随安装程序提供，也可以在安装过程中按需下载。
 
@@ -78,7 +79,7 @@ ms.locfileid: "99971721"
 
 - 支持 URL：可供最终用户与 Office 解决方案的技术支持人员联系的位置。
 
-  **Office settings (选项)** 可以设置以下属性的发布选项：
+  **选项 (Office 设置)** 可以设置以下属性的发布选项：
 
 - 解决方案名称：出现在 Office 应用程序中的 Office 解决方案名称。
 
@@ -100,8 +101,8 @@ ms.locfileid: "99971721"
 
   **立即发布** 使用当前设置发布应用程序。 等效于“发布向导”  中的“完成” 按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [使用 ClickOnce 部署 Office 解决方案](../vsto/deploying-an-office-solution-by-using-clickonce.md)
-- [部署的 Office 解决方案先决条件](/previous-versions/bb608617(v=vs.110))
+- [Office 解决方案部署的先决条件](/previous-versions/bb608617(v=vs.110))

@@ -16,15 +16,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: a85b45dbe8ffd616b89078795f0cd9ffe11da7fd97e92339dab8ed2162ae2d2f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4694ca84475aa569b047e8de818613fe30d04c29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100252"
 ---
 # <a name="how-to-add-commands-to-shortcut-menus"></a>如何：向快捷菜单添加命令
-  本主题演示如何使用外接程序将命令添加到 Office 应用程序中的VSTO菜单。
+  本主题演示如何使用 VSTO 外接程序将命令添加到 Office 应用程序中的快捷菜单。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -51,7 +51,7 @@ ms.locfileid: "121424200"
 
 7. 在代码编辑器中添加 XML，该 XML 描述快捷菜单以及要添加到快捷菜单的控件。
 
-     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 2010 Office控件 ID 的完整列表，请参阅[Office 2010](https://www.microsoft.com/download/details.aspx?id=6627)帮助文件：Office Fluent 用户界面控件标识符 。
+     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 2010 Office控件 ID 的完整列表，请参阅 Office [2010 帮助文件：Office Fluent 用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>

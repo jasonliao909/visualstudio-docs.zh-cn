@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c46356124b7ed957d3ff61d4118ade2638538d242686875f4a69972b254a3a16
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d287552b07f67c7415688fefd87f876242b230f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367422"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084059"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 解决方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含以下功能，以帮助增强 SharePoint 应用程序的安全性。

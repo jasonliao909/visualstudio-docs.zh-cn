@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 715b9c5aa672fae29b349f30470e1f6e210f1ff926cf447c08bc4e0528eca416
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8c3a0cdec47be7ce5d29ff5b43ac6cd7e05cc07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049774"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-1"></a>旧版语言服务中的参数信息1
 IntelliSense 参数信息工具提示向用户提供有关其在语言构造中的位置的提示。
