@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07559518e0873d2392b35594cc5fbff6f7de0c32d1a8810895a8e348da83f4f5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b22ea9e537adaf0c6178b5c9f7aff1702b84bbcd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102371"
 ---
 # <a name="project-type-design-decisions"></a>项目类型设计决策
 创建新项目类型之前，必须对项目类型做出多个设计决策。 必须确定项目将包含的项目类型、项目文件的持久化方式以及将使用的承诺模型。

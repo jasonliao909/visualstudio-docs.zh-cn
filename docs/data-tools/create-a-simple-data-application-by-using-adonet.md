@@ -1,6 +1,6 @@
 ---
 title: 使用 ADO.NET 创建简单的数据应用程序
-description: 了解如何使用 Visual Studio 中的 Windows 窗体和 ADO.NET 创建简单的窗体到数据应用程序。
+description: 了解如何在 Visual Studio 中通过使用 Windows Forms 和 ADO.NET 创建简单的表单到数据Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -11,57 +11,58 @@ ms.assetid: 2222841f-e443-4a3d-8c70-4506aa905193
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c499e36b7ee6bb15980fe89c6185a105681d4d05
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 506983ffacf846969f6e74fd503344d90180ca91
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161988"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
-当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过遵循本主题，可以了解如何使用 Visual c # 或 Visual Basic 和 ADO.NET 在简单的 Windows 窗体 "Forms over data" 应用程序中与数据库交互。  所有 .NET 数据技术（包括数据集、LINQ to SQL 和实体框架）最终执行的步骤与本文中所示的步骤非常类似。
+当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过遵循本主题，你可以了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 从简单的 Windows 窗体"基于数据"应用程序中与数据库进行交互。  所有 .NET 数据技术（包括数据集、LINQ to SQL和 实体框架）最终执行的步骤与本文中所示的步骤非常相似。
 
-本文介绍了一种简单的方法，可快速从数据库中获取数据。 如果你的应用程序需要以不重要的方式修改数据并更新数据库，则应考虑使用实体框架，并使用数据绑定自动将用户界面控件同步到基础数据中的更改。
+本文演示了一种快速从数据库获取数据的简单方法。 如果应用程序需要以非普通方式修改数据并更新数据库，则应考虑使用 实体框架 和数据绑定来自动将用户界面控件与基础数据中的更改同步。
 
 > [!IMPORTANT]
 > 要使代码保持简单，请不要包括生产就绪的异常处理。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 要创建应用程序，你将需要：
 
 - Visual Studio。
 
-- SQL Server Express LocalDB。 如果没有 SQL Server Express 的 LocalDB，则可以从 [SQL Server Express 下载页](https://www.microsoft.com/sql-server/sql-server-editions-express)安装它。
+- SQL Server Express LocalDB。 如果没有安装SQL Server Express LocalDB，可以从下载页[SQL Server Express它](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主题假定你熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows 窗体应用程序，向项目中添加窗体，放置按钮和窗体上的其他控件，设置控件的属性以及编写简单事件。 如果你不熟悉这些任务，建议你先完成 [Visual c # 入门并 Visual Basic](../ide/quickstart-visual-basic-console.md) 主题，然后再开始本演练。
+本主题假定你熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows Forms 应用程序、将窗体添加到项目、将按钮和其他控件放在窗体上、设置控件的属性以及编写简单事件代码。 如果对这些任务不太熟悉，建议在开始本演练之前完成[Visual C# Visual Basic](../ide/quickstart-visual-basic-console.md)入门主题。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 
 按照以下步骤创建示例数据库：
 
-1. 在 Visual Studio 中，打开 " **服务器资源管理器** " 窗口。
+1. 在Visual Studio中，**打开服务器资源管理器窗口**。
 
-2. 右键单击 " **数据连接** "，然后选择 " **新建 SQL Server 数据库**"。
+2. 右键单击"数据 **连接"，** 然后选择 **"新建SQL Server数据库"。**
 
-3. 在 " **服务器名称** " 文本框中，输入 **(localdb) \mssqllocaldb**。
+3. 在" **服务器名称"** 文本框中 **， (localdb) \mssqllocaldb**。
 
-4. 在 " **新数据库名称** " 文本框中，输入 **Sales**，然后选择 **"确定"**。
+4. 在"**新建数据库名称"** 文本框中，输入 **"Sales"，** 然后选择"确定 **"。**
 
-     将创建空的 **销售** 数据库并将其添加到服务器资源管理器中的 "数据连接" 节点。
+     将创建 **空的 Sales** 数据库，并添加到 服务器资源管理器 中的"数据连接"节点。
 
-5. 右键单击 " **销售** " 数据连接，然后选择 " **新建查询**"。
+5. 右键单击"销售 **数据连接**"，然后选择"新建 **查询"。**
 
-     此时将打开查询编辑器窗口。
+     查询编辑器窗口随即打开。
 
-6. 将 [Sales transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql) 复制到剪贴板。
+6. 将[Sales Transact-SQL脚本](https://github.com/MicrosoftDocs/visualstudio-docs/raw/master/docs/data-tools/samples/sales.sql)复制到剪贴板。
 
-7. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+7. 将 T-SQL脚本粘贴到查询编辑器中，然后选择"执行 **"** 按钮。
 
-     一小段时间后，查询将完成运行，并创建数据库对象。 该数据库包含两个表：客户和订单。 这些表最初不包含数据，但你可以在运行将创建的应用程序时添加数据。 该数据库还包含四个简单的存储过程。
+     在短时间内，查询完成运行并创建数据库对象。 数据库包含两个表：Customer 和 Orders。 这些表最初不包含任何数据，但可以在运行要创建的应用程序时添加数据。 该数据库还包含四个简单的存储过程。
 
 ## <a name="create-the-forms-and-add-controls"></a>创建窗体并添加控件
 
@@ -122,27 +123,27 @@ ms.locfileid: "106216496"
 |Button|Name = btnFinishUpdates|
 
 ## <a name="store-the-connection-string"></a>存储连接字符串
-当应用程序尝试打开数据库的连接时，应用程序必须能够访问连接字符串。 若要避免在每个窗体上手动输入字符串，请将该字符串存储在项目中的 *App.config* 文件中，并创建一个方法，该方法在从应用程序中的任何窗体中调用方法时返回字符串。
+当应用程序尝试打开数据库的连接时，应用程序必须能够访问连接字符串。 为了避免在每个窗体上手动输入字符串，请将字符串存储在项目中 *的App.config* 文件中，并创建一个方法，该方法在从应用程序的任何窗体调用 方法时返回字符串。
 
-您可以通过在 **服务器资源管理器** 中右键单击 **Sales** 数据连接，然后选择 "**属性**" 来查找连接字符串。 找到 **ConnectionString** 属性，然后使用 **ctrl** + **A**、 **ctrl** + **C** 选择字符串并将其复制到剪贴板。
+右键单击"销售数据连接"并选择"属性"，即可服务器资源管理器 **字符串**。   找到 **ConnectionString 属性**，然后使用 **Ctrl** + **A** 和 **Ctrl** C 选择字符串 + ，然后将字符串复制到剪贴板。
 
-1. 如果使用的是 c #，请在 **解决方案资源管理器** 中，展开项目下的 " **属性** " 节点，然后打开 " **设置** " 文件。
-    如果使用的是 Visual Basic，请在 **解决方案资源管理器** 中单击 " **显示所有文件**"，展开 " **我的项目** " 节点，然后打开 " **设置** " 文件。
+1. 如果使用 C#，则 **解决方案资源管理器，展开** 项目下的"属性"节点，然后打开 **设置.settings** 文件。
+    如果使用的是 Visual Basic，请在 解决方案资源管理器 中单击"显示所有文件"，展开"我的Project"节点，然后打开 **设置.settings** 文件。 
 
-2. 在 " **名称** " 列中，输入 `connString` 。
+2. 在" **名称"** 列中，输入 `connString` 。
 
-3. 在 " **类型** " 列表中，选择 **(连接字符串 ")**。
+3. 在"**类型"** 列表中，选择 (**字符串) 。**
 
-4. 在 " **作用域** " 列表中，选择 " **应用程序**"。
+4. 在"**作用域"** 列表中，选择"应用程序 **"。**
 
-5. 在 " **值** " 列中，输入你的连接字符串， (不) 任何外引号，然后保存所做的更改。
+5. 在" **值** "列中，输入连接字符串 (不带任何外部引号) ，然后保存所做的更改。
 
 > [!NOTE]
-> 在实际应用程序中，应安全地存储连接字符串，如 [连接字符串和配置文件](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)中所述。
+> 在真实应用程序中，应安全存储连接字符串，如连接字符串和 [配置文件 中所述](/dotnet/framework/data/adonet/connection-strings-and-configuration-files)。
 
 ## <a name="write-the-code-for-the-forms"></a>编写窗体代码
 
-本部分简要概述了每种形式的用途。 它还提供了在单击窗体上的按钮时定义基础逻辑的代码。
+本部分包含每个窗体的简要概述。 它还提供在单击窗体上的按钮时定义基础逻辑的代码。
 
 ### <a name="navigation-form"></a>Navigation 窗体
 
@@ -152,32 +153,32 @@ ms.locfileid: "106216496"
 
 如果使用 C#，则在“解决方案资源管理器”中，打开 Program.cs，然后将 `Application.Run` 行更改为 `Application.Run(new Navigation());`
 
-如果使用 Visual Basic，请在 **解决方案资源管理器** 中打开 "**属性**" 窗口，选择 "**应用程序**" 选项卡，然后在 "**启动窗体**" 列表中选择 " **simpledataapp.navigation** "。
+如果使用的是 Visual Basic，请在 解决方案资源管理器 中打开"属性"窗口，选择"应用程序"选项卡，然后在"启动窗体"列表中选择 **"SimpleDataApp.Navigation"。** 
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 
-双击导航窗体上的三个按钮创建空的事件处理程序方法。 双击按钮还会在设计器代码文件中添加自动生成的代码，该代码启用按钮单击以引发事件。
+双击"导航"窗体上的三个按钮，以创建空事件处理程序方法。 双击按钮还会在设计器代码文件中添加自动生成的代码，使按钮单击能够引发事件。
 
 #### <a name="add-code-for-the-navigation-form-logic"></a>为导航窗体逻辑添加代码
 
-在导航窗体的代码页中，完成三个按钮单击事件处理程序的方法主体，如下面的代码所示。
+在"导航"窗体的代码页中，完成三个按钮单击事件处理程序的方法主体，如以下代码所示。
 
 :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/Navigation.cs" id="Snippet1":::
 :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/Navigation.vb" id="Snippet1":::
 
 ### <a name="newcustomer-form"></a>NewCustomer 窗体
 
-输入客户名称，然后选择 " **创建帐户** " 按钮时，NewCustomer 窗体将创建客户帐户，并 SQL SERVER 返回标识值作为新的客户 ID。 然后，您可以通过指定一个金额和订单日期并选择 " **下订单** " 按钮，为新帐户下订单。
+输入客户名称并选择"创建帐户"按钮时，NewCustomer 窗体将创建一个客户帐户，SQL Server IDENTITY 值作为新的客户 ID 返回。 然后，可以通过指定金额和订单日期并选择"下单"按钮来下 **新帐户** 的订单。
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 
-双击四个按钮，为 NewCustomer 窗体上的每个按钮创建一个空的 Click 事件处理程序。 双击按钮还会在设计器代码文件中添加自动生成的代码，该代码启用按钮单击以引发事件。
+双击四个按钮中的每个按钮，为 NewCustomer 窗体上的每个按钮创建空的 Click 事件处理程序。 双击按钮还会在设计器代码文件中添加自动生成的代码，使按钮单击能够引发事件。
 
 #### <a name="add-code-for-the-newcustomer-form-logic"></a>为 NewCustomer 窗体逻辑添加代码
 
-若要完成 NewCustomer 窗体逻辑，请按照以下步骤操作。
+若要完成 NewCustomer 窗体逻辑，请执行以下步骤。
 
-1. 将 `System.Data.SqlClient` 命名空间置于范围中，这样就不必完全限定其成员的名称。
+1. 将 `System.Data.SqlClient` 命名空间纳入范围，以便不必完全限定其成员的名称。
 
      ```csharp
      using System.Data.SqlClient;
@@ -187,29 +188,29 @@ ms.locfileid: "106216496"
      Imports System.Data.SqlClient
      ```
 
-2. 将一些变量和帮助器方法添加到类，如下面的代码所示。
+2. 将一些变量和帮助程序方法添加到 类，如以下代码所示。
 
      :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet1":::
      :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet1":::
 
-3. 完成四个按钮单击事件处理程序的方法主体，如下面的代码所示。
+3. 完成四个按钮单击事件处理程序的方法主体，如以下代码所示。
 
      :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/NewCustomer.cs" id="Snippet2":::
      :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/NewCustomer.vb" id="Snippet2":::
 
 ### <a name="fillorcancel-form"></a>FillOrCancel 窗体
 
-当您输入订单 ID，然后单击 " **查找订单** " 按钮时，FillOrCancel 窗体将运行查询以返回订单。 返回的行在只读数据网格中显示。 如果选择 " **取消订单** " 按钮，则可以将订单标记为已取消 (X) ; 如果选择 " **填充顺序** " 按钮，则可以将订单标记为已填充 (F) 。 如果再次选择 " **查找订单** " 按钮，则会出现更新的行。
+当输入订单 ID，然后单击"查找订单"按钮时，FillOrCancel 窗体将运行查询以 **返回** 订单。 返回的行在只读数据网格中显示。 如果选择"取消订单"按钮 (X) ，可以将订单标记为已取消;如果选择"填充订单"按钮 (F) 可以将订单标记为已填充。  如果再次选择" **查找顺序"** 按钮，则会显示更新的行。
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 
-通过双击按钮，为 FillOrCancel 窗体上的四个按钮创建空的 Click 事件处理程序。 双击按钮还会在设计器代码文件中添加自动生成的代码，该代码启用按钮单击以引发事件。
+通过双击这些按钮，为 FillOrCancel 窗体上的四个按钮创建空的 Click 事件处理程序。 双击按钮还会在设计器代码文件中添加自动生成的代码，使按钮单击能够引发事件。
 
 #### <a name="add-code-for-the-fillorcancel-form-logic"></a>为 FillOrCancel 窗体逻辑添加代码
 
-若要完成 FillOrCancel 窗体逻辑，请按照以下步骤操作。
+若要完成 FillOrCancel 窗体逻辑，请执行以下步骤。
 
-1. 将以下两个命名空间置于范围内，以便您无需完全限定其成员的名称。
+1. 将以下两个命名空间纳入范围，以便你不必完全限定其成员的名称。
 
      ```csharp
      using System.Data.SqlClient;
@@ -221,12 +222,12 @@ ms.locfileid: "106216496"
      Imports System.Text.RegularExpressions
      ```
 
-2. 将变量和 helper 方法添加到类，如下面的代码所示。
+2. 将变量和 helper 方法添加到 类，如以下代码所示。
 
      :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet1":::
      :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet1":::
 
-3. 完成四个按钮单击事件处理程序的方法主体，如下面的代码所示。
+3. 完成四个按钮单击事件处理程序的方法主体，如以下代码所示。
 
      :::code language="csharp" source="../data-tools/codesnippet/CSharp/SimpleDataApp/FillOrCancel.cs" id="Snippet2":::
      :::code language="vb" source="../data-tools/codesnippet/VisualBasic/SimpleDataApp/FillOrCancel.vb" id="Snippet2":::

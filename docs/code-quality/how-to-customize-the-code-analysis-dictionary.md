@@ -12,20 +12,21 @@ ms.assetid: 667e3b4e-beff-48be-b3d1-376e1716a895
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 10466acedcd5c7f5fda835d66e654128a556d0a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f22d14e5cfeff8bc79327d62a10abd9a54c8bf2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147409"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 
-代码分析使用内置字典检查代码中的标识符，以了解 .NET 设计准则的拼写、语法用例和其他命名约定中的错误。 您可以创建自定义字典 Xml 文件，以添加、删除或修改内置字典的术语、缩写和首字母缩写词。
+Code Analysis 使用内置字典检查代码中的标识符，以了解 .net 设计准则的拼写、语法用例和其他命名约定中的错误。 您可以创建自定义字典 Xml 文件，以添加、删除或修改内置字典的术语、缩写和首字母缩写词。
 
-例如，假设代码包含一个名为 **DoorKnokker** 的类。 代码分析会将名称标识为两个词的组合： **门** 和 **knokker**。 然后，它会发出警告，指出 **knokker** 拼写不正确。 若要强制代码分析识别拼写，可以将字词 **knokker** 添加到自定义字典中。
+例如，假设代码包含一个名为 **DoorKnokker** 的类。 Code Analysis 会将名称标识为两个词的组合：**门** 和 **knokker**。 然后，它会发出警告，指出 **knokker** 拼写不正确。 若要强制代码分析识别拼写，可以将字词 **knokker** 添加到自定义字典中。
 
 ## <a name="to-create-a-custom-dictionary"></a>创建自定义字典
 
@@ -62,7 +63,7 @@ ms.locfileid: "99860095"
 
 ## <a name="custom-dictionary-elements"></a>自定义字典元素
 
-您可以通过将字词作为以下元素的内部文本添加到自定义字典中来修改代码分析字典的行为：
+可以通过在自定义字典中添加字词作为以下元素的内部文本来修改 Code Analysis 字典的行为：
 
 - [字典/字词/识别/字](../code-quality/how-to-customize-the-code-analysis-dictionary.md#BKMK_DictionaryWordsRecognizedWord)
 

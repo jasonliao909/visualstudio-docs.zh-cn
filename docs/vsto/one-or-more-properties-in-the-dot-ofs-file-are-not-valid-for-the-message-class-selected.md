@@ -12,18 +12,19 @@ dev_langs:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b22870cdb038adee84adc0fd7a56c269cb048626
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 603a0a8aaa25ac8ec203780f9b509613c33f6c3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841908"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147813"
 ---
 # <a name="invalid-properties-in-the-ofs-file-for-the-message-class"></a>Message 类的 .ofs 文件中的属性无效
 
-  当您导入在 Outlook 中设计的窗体区域时，.ofs 文件中的一个或多个属性对于所选邮件类无效，但窗体区域中的一个或多个字段与在 " **新建窗体区域** " 向导的最后一页上选择的邮件类不兼容。
+  当您导入在 Outlook 中设计的窗体区域时，.ofs 文件中的一个或多个属性对于所选邮件类无效，但窗体区域中的一个或多个字段与在 "**新建窗体区域**" 向导的最后一页上选择的邮件类不兼容。
 
 例如，你可能在“新建窗体区域”  向导最后一页上选择了“任务(IPM.Task)”  。 如果窗体区域包含 " **业务地址** " 字段，则会收到此错误，因为任务没有企业地址。 因此，" **业务地址** " 字段与 `IPM.Task` 邮件类不兼容。
 
@@ -35,5 +36,5 @@ ms.locfileid: "99841908"
 
 - 在 Outlook 的窗体设计器中，删除与消息类不兼容的字段。 删除你计划在 " **新建窗体区域** " 向导的最后一页上选择的字段。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)

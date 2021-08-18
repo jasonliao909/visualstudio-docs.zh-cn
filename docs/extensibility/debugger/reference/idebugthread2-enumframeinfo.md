@@ -1,6 +1,6 @@
 ---
-description: 检索此线程的堆栈帧的列表。
-title: IDebugThread2：： EnumFrameInfo |Microsoft Docs
+description: 检索此线程的堆栈帧列表。
+title: IDebugThread2：：EnumFrameInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 07ede35a1014d9c192740af58e5a5bdcc4ff93851c8204905384955a77da2b00
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 81f44920bfec45f4ba6860343e1fc5f19569714a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389509"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153129"
 ---
 # <a name="idebugthread2enumframeinfo"></a>IDebugThread2::EnumFrameInfo
-检索此线程的堆栈帧的列表。
+检索此线程的堆栈帧列表。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +47,19 @@ int EnumFrameInfo (
 
 ## <a name="parameters"></a>参数
 `dwFieldSpec`\
-中 [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md) 枚举中的标志的组合，用于指定要填写 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构的哪些字段。指定 `FIF_FUNCNAME_FORMAT` 用于将函数名称设置为单个字符串的标志。
+[in]来自 FRAMEINFO_FLAGS [标志的组合](../../../extensibility/debugger/reference/frameinfo-flags.md) ，该枚举指定要填充 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构的哪些字段。指定 `FIF_FUNCNAME_FORMAT` 标志以将函数名称格式化为单个字符串。
 
 `nRadix`\
-中格式化枚举器中的数值信息时使用的基数。
+[in]用于设置枚举器中数值信息格式的基数。
 
 `ppEnum`\
-弄返回一个 [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 对象，该对象包含描述堆栈帧的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构的列表。
+[out]返回一 [个 IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 对象，该对象包含描述堆栈帧的 [FRAMEINFO](../../../extensibility/debugger/reference/frameinfo.md) 结构的列表。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 线程的帧按顺序枚举，当前帧首先枚举，最后枚举最早的帧。
+ 线程的帧按顺序排列，当前帧先枚举，最后枚举最旧帧。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

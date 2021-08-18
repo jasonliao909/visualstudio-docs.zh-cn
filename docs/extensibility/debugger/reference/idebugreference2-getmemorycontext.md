@@ -1,6 +1,6 @@
 ---
 description: 获取引用的内存上下文。
-title: IDebugReference2：： GetMemoryContext |Microsoft Docs
+title: IDebugReference2：：GetMemoryContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7148be6288df7a494d64732a73d52281d622a0b761794cd2c0c55ae370e89de8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bda8c1fa28e66506e3c761f33b962300b167b0f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118497"
 ---
 # <a name="idebugreference2getmemorycontext"></a>IDebugReference2::GetMemoryContext
 获取引用的内存上下文。 保留供将来使用。
@@ -43,11 +43,11 @@ int GetMemoryContext (
 
 ## <a name="parameters"></a>参数
 `ppMemory`\
-弄返回 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，该对象表示与引用的值关联的内存。
+[out]返回 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 对象，该对象表示与引用的值关联的内存。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

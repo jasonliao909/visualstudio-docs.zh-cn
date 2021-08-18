@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a34f3eabf5206210c09edc5a2f3719a9d8f9074963b75ff5175b01e0bbdb5ba9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6e6ea08deee948b9675d73748a0285fb3af27965
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307539"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064196"
 ---
 # <a name="idebugexpressionevaluationcompleteevent2getresult"></a>IDebugExpressionEvaluationCompleteEvent2::GetResult
 获取表达式计算的结果。
@@ -50,6 +50,6 @@ int GetResult(
 ## <a name="remarks"></a>备注
  返回的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象包含计算表达式的值。 请注意，此值可能是复杂值（如数组）但最终结果必须是向用户显示的数值或字符串值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExpressionEvaluationCompleteEvent2](../../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

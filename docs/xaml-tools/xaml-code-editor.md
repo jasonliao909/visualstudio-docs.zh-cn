@@ -10,12 +10,13 @@ ms.custom: contperf-fy21q4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 672bfa6b28e364351f262cb2a2c6e2258ecd9746
-ms.sourcegitcommit: 3e1ff87fba290f9e60fb4049d011bb8661255d58
+ms.technology: vs-xaml-tools
+ms.openlocfilehash: b99a75dd6c03183b49154a6c3ea4d68edc7130b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/22/2021
-ms.locfileid: "107879390"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130346"
 ---
 # <a name="xaml-code-editor"></a>XAML 代码编辑器
 

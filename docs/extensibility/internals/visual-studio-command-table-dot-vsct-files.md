@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e7f85d60d12fcb4cd04aacb9281e8bbb9d973e6dfe2e5732379c6387fdabf173
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8eb8c98586300644b3aef8be8a68c9ae1fd8196e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132253"
 ---
 # <a name="visual-studio-command-table-vsct-files"></a>Visual Studio 命令表格 (.Vsct) 文件
 命令表配置文件是描述 VSPackage 包含的命令集的文本文件。 VSCT (编译器) 将基于 XML 的配置文件 (.vsct) 编译为二进制命令表输出 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (.cto) 文件。 结果 .cto 文件与使用命令表创建的文件相同，这些命令表 (使用) 编译 .compiler 配置文件。 但是，基于 XML 的 .vsct 文件具有一些优点，例如 XML 编辑器和 XML IntelliSense。

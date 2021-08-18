@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f839f4148054b4e10a7fc1703aa8f03549bdbf36
-ms.sourcegitcommit: 1f27f33852112702ee35fbc0c02fba37899e4cf5
+ms.openlocfilehash: 1998cad37c5fa5f8eecb6a1a7ea34154105662b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112112907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060214"
 ---
 # <a name="develop-sharepoint-solutions"></a>开发 SharePoint 解决方案
 

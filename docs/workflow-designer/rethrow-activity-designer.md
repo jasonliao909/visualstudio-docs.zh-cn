@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: d758f754a7c8e57b913bd7f1211cc70355f62ca20b93c973cbd3709a60684b00
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5508555d2e4347a96e1eaf7319270cf3f95f3177
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243349"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130424"
 ---
 # <a name="rethrow-activity-designer"></a>Rethrow 活动设计器
 
@@ -30,7 +30,7 @@ ms.locfileid: "121243349"
 
 ### <a name="use-the-rethrow-activity-designer"></a>使用 ReThrow 活动设计器
 
-访问 **工具箱 的** "错误处理 **"** 类别中的"重新引发" **活动设计器**。 可以将 **Rethrow** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如 位于 内）上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Rethrow> 一个默认 **DisplayName** 为 Throw 的活动。 可以在 Rethrow 活动设计器的标头或属性网格的 <xref:System.Activities.Activity.DisplayName%2A> **DisplayName** 框中编辑该值。
+访问 **工具箱 的** "错误处理 **"** 类别中的"重新引发" **活动设计器**。 可以将 **Rethrow** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如，位于 内）上 <xref:System.Activities.Statements.Sequence> 。 删除活动设计器会创建 <xref:System.Activities.Statements.Rethrow> 一个默认 **DisplayName** 为 Throw 的活动。 可以在 Rethrow 活动设计器的标头或属性网格的 <xref:System.Activities.Activity.DisplayName%2A> **DisplayName** 框中编辑该值。
 
 ### <a name="the-rethrow-properties"></a>Rethrow 属性
 
@@ -40,7 +40,7 @@ ms.locfileid: "121243349"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Rethrow> 活动的可选友好名称。 默认值为 Rethrow。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [集合](../workflow-designer/collection-activity-designers.md)
 - [扔](../workflow-designer/throw-activity-designer.md)

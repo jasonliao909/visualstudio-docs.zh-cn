@@ -11,17 +11,18 @@ ms.assetid: 196ec2cc-8569-4780-b217-23b24e7f50ca
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 226e8471d83208e9647578fca0fa16cc7b49e4eb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8ceac7506d7196461462119f4404e01983df41c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153259"
 ---
 # <a name="idebugpointerobjectdereference"></a>IDebugPointerObject::Dereference
 获取指向的对象。
@@ -55,5 +56,5 @@ int Dereference(
 ## <a name="remarks"></a>备注
  指向的对象可以是基元类型，也可以是更复杂的类型，例如类或结构。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPointerObject](../../../extensibility/debugger/reference/idebugpointerobject.md)
