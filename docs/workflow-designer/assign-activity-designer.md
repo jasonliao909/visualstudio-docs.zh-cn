@@ -1,6 +1,6 @@
 ---
-title: 工作流设计器分配活动设计器
-description: 了解如何使用 Assign 活动设计器来创建和配置 Assign 活动，以及 Assign 活动如何为变量或参数赋值。
+title: 工作流设计器 - 分配活动设计器
+description: 了解如何使用 Assign 活动设计器创建和配置 Assign 活动，以及 Assign 活动如何将值分配给变量或参数。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: b10e12302b2fd11a2e4aec9266e5ad517a1edb4ad47e8b64dde44df79847825e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 524d55608b8cc75deea1c876ab03a4a437ad2049
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135372"
 ---
 # <a name="assign-activity-designer"></a>Assign 活动设计器
 
-" **分配** " 活动设计器用于创建和配置 <xref:System.Activities.Statements.Assign> 活动。
+Assign 活动设计器用于创建和配置 <xref:System.Activities.Statements.Assign> 活动。
 
 ## <a name="the-assign-activity"></a>Assign 活动
 
@@ -30,19 +30,19 @@ ms.locfileid: "121408066"
 
 ### <a name="using-the-assign-activity-designer"></a>使用 Assign 活动设计器
 
-"**分配**" 活动设计器可在 "**工具箱**" 的 "**基元**" 类别中找到，可通过单击 "**工具箱**" 选项卡访问， (或者，从 "**视图**" 菜单中选择 "**工具箱**" 或按 CTRL + ALT + X。 ) 
+可以在 **"** 工具箱"的"基元"类别中找到"分配"活动设计器，可通过单击"工具箱"选项卡 (或者从"视图"菜单中选择"工具箱"或CTRL+ALT+X.) 
 
-可以将 " **分配** " 活动设计器从 " **工具箱** " 拖放到所放置活动的工作流设计器表面上，例如中 <xref:System.Activities.Statements.Sequence> 。 删除 " **assign** " 活动设计器将创建一个 <xref:System.Activities.Statements.Assign> 活动，该活动具有 "分配" 的默认 **DisplayName** 。 <xref:System.Activities.Activity.DisplayName%2A>可以在 "**分配**" 活动设计器的标头中或在属性网格的 " **DisplayName** " 框中编辑。
+可以将 **"** 分配"活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如，位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 删除 **"分配** "活动设计器会 <xref:System.Activities.Statements.Assign> 创建默认 **DisplayName** 为 Assign 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在"分配"活动设计器的标头或属性网格的 **"DisplayName"** 框中编辑 。
 
 ### <a name="the-assign-properties"></a>Assign 属性
 
-下表列出 <xref:System.Activities.Statements.Assign> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中进行编辑，其中一些属性可以在工作流设计器图面上进行编辑。
+下表列出 <xref:System.Activities.Statements.Assign> 属性并说明如何在设计器中使用它们。 这些属性可以在属性网格中编辑，其中一些属性可以在工作流设计器编辑。
 
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Assign> 活动的友好名称。 默认值为 Assign。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
-|<xref:System.Activities.Statements.Assign.To%2A>|正确|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的 Visual Basic 标识符。 若要设置属性，请在 " **Assign** " 活动设计器或属性网格中的 " **To** " 框中键入 Visual Basic 表达式。|
-|<xref:System.Activities.Statements.Assign.Value%2A>|正确|赋给变量的值。 若要设置 <xref:System.Activities.Statements.Assign.Value%2A> ，请在 " **Assign** " 活动设计器或属性网格中的 "**值**" 框中键入 Visual Basic 表达式。|
+|<xref:System.Activities.Statements.Assign.To%2A>|正确|为其赋 <xref:System.Activities.Statements.Assign.Value%2A> 的变量或自变量。 该值必须是有效的Visual Basic标识符。 若要设置 属性，请Visual Basic"分配活动设计器"或属性网格中的"To"框中键入一个表达式。 |
+|<xref:System.Activities.Statements.Assign.Value%2A>|True|赋给变量的值。 若要设置 <xref:System.Activities.Statements.Assign.Value%2A> ，在"分配Visual Basic或属性网格的"值"框中键入一个表达式。|
 
 ## <a name="see-also"></a>请参阅
 

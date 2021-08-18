@@ -1,6 +1,6 @@
 ---
-description: 通知调试包文本属性已在文档中更新。
-title: IDebugDocumentTextEvents2：： onUpdateTextAttributes |Microsoft Docs
+description: 通知调试包文档中的文本属性已更新。
+title: IDebugDocumentTextEvents2：：onUpdateTextAttributes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d2645427e283dcef6a8d0f05e6f9cd9d7b847b6eb9509145bfda207a899da3f7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8317bf8374aaff625401f11c576a77d34112630b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390198"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119212"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
-通知调试包文本属性已在文档中更新。
+通知调试包文档中的文本属性已更新。
 
 ## <a name="syntax"></a>语法
 
@@ -45,13 +45,13 @@ int onUpdateTextAttributes(
 
 ## <a name="parameters"></a>参数
 `pos`\
-中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，它指示文本特性的更新位置。
+[in]一 [TEXT_POSITION，](../../../extensibility/debugger/reference/text-position.md) 指示文本属性的更新位置。
 
 `dwNumToUpdate`\
-中指定已更新文本的字符数。
+[in]指定已更新的文本的字符数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

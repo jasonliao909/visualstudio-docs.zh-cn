@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: c4ac9e9426d782c32a4cd75fb73a29f2839edf35ba8f94b8bd8708cc3223a622
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a93906f50fb332b05c7894c80d581d49d3f3be22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346773"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052572"
 ---
 # <a name="the-objects-you-are-adding-to-the-designer-use-a-different-data-connection-than-the-designer"></a>要添加到设计器的对象使用的数据连接与设计器不同
 

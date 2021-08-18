@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 669e690059acb6854eceee224b5439e07c08072d26ba08b3aa69c7fab0a8fe0f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d602cb536edfc535a88314a6a8f7bf40bc02fed0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032662"
 ---
 # <a name="improve-the-performance-of-a-vsto-add-in"></a>提高外接程序VSTO性能
   可以通过优化为 Office 应用程序创建的 VSTO 外接程序为用户提供更好的体验，以便他们快速启动、关闭和打开项，以及执行其他任务。 如果你的 VSTO 外接程序是用于 Outlook 的，则还可以降低由于性能不佳而禁用 VSTO 外接程序的风险。 可以通过实现以下策略来提高 VSTO 外接程序的性能：
@@ -31,7 +31,7 @@ ms.locfileid: "121267723"
 
 - [在单独的执行线程 中执行成本高昂的操作](#Perform)。
 
-  若要详细了解如何优化外接程序Outlook VSTO，请参阅使外接程序保持VSTO[的性能条件](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)。
+  若要详细了解如何优化外接程序Outlook VSTO，请参阅性能条件[，VSTO外接程序保持启用](/previous-versions/office/jj228679(v=office.15)#performance-criteria-for-keeping-add-ins-enabled)状态。
 
 ## <a name="load-vsto-add-ins-on-demand"></a><a name="Load"></a>按需VSTO加载项
  可以将 VSTO 外接程序配置为仅在下列情况下加载：
@@ -84,7 +84,7 @@ ms.locfileid: "121267723"
 
      若要了解如何在 C# 项目中创建生成后事件，请参阅如何：指定 C &#40;[生成&#35;&#41;。 ](../ide/how-to-specify-build-events-csharp.md)
 
-     若要了解如何在项目中创建生成后Visual Basic，请参阅如何：为 指定[生成&#40;Visual Basic&#41;。 ](../ide/how-to-specify-build-events-visual-basic.md)
+     若要了解如何在项目内创建生成后Visual Basic，请参阅如何：在 中[指定&#40;Visual Basic&#41;。 ](../ide/how-to-specify-build-events-visual-basic.md)
 
 ## <a name="publish-office-solutions-by-using-windows-installer"></a><a name="Publish"></a>使用 Office 安装程序发布 Windows 解决方案
  如果使用 Windows 安装程序发布解决方案，Visual Studio 2010 Tools for Office 运行时将在加载 VSTO 外接程序时跳过以下步骤。
@@ -96,7 +96,7 @@ ms.locfileid: "121267723"
 - 验证部署清单的数字签名。
 
   > [!NOTE]
-  > 如果将外接程序部署到用户计算机上的VSTO位置，此方法不是必需的。
+  > 如果将外接程序部署到用户计算机上的安全VSTO，此方法不是必需的。
 
   有关详细信息，请参阅使用 Office[安装程序部署Windows解决方案](../vsto/deploying-a-vsto-solution-by-using-windows-installer.md)。
 

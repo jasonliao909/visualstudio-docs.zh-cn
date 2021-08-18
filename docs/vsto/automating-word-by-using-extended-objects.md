@@ -1,6 +1,6 @@
 ---
-title: 使用扩展对象自动执行 Word
-description: 了解如何在解决方案中开发 Word 解决方案时在解决方案中Visual Studio。
+title: 使用扩展对象实现 Word 自动化
+description: 了解在 Visual Studio 中开发 Word 解决方案时，如何使用解决方案中的主机项和主机控件。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -23,24 +23,24 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 04385ef6f9074270b640ad392f5456a896034cd0d361e61a7a5f63e1f69f4950
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 21451788a1d52671c2b00163edd6f117fda3413d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053932"
 ---
-# <a name="automate-word-by-using-extended-objects"></a>使用扩展对象自动执行 Word
+# <a name="automate-word-by-using-extended-objects"></a>使用扩展对象实现 Word 自动化
   当在 Visual Studio 中开发 Word 解决方案时，可以使用解决方案中的 *宿主项* 和 *宿主控件*。 这些对象可扩展 Word 对象模型（即由 Word 主互操作程序集公开的对象模型）中的一些常用对象，例如 <xref:Microsoft.Office.Interop.Word.Document> 和 <xref:Microsoft.Office.Interop.Word.ContentControl> 对象。 扩展对象的行为类似于其所基于的 Word 对象，但它们可以将其他事件和数据绑定功能添加到对象。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
- 虽然使用宿主项和宿主控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关详细信息，请参阅主机 [项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
+ 虽然使用宿主项和宿主控件所在的上下文对于每种类型的解决方案有所不同，但它们均可用于 VSTO 外接程序和文档级自定义项。 有关详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
 ## <a name="document-host-item"></a>文档宿主项
  Word 项目可授予你访问 <xref:Microsoft.Office.Tools.Word.Document> 宿主项的权限。 <xref:Microsoft.Office.Tools.Word.Document> 宿主项还可充当其他控件（包括宿主控件和 Windows 窗体控件）的容器，并且还可保留有关其界面上的控件的信息。 <xref:Microsoft.Office.Tools.Word.Document> 宿主项还提供了大部分与 <xref:Microsoft.Office.Interop.Word.Document> 类相同的成员，该类是 Word 对象模型中的对应类。
 
- 有关详细信息，请参阅文档 [宿主项](../vsto/document-host-item.md)。
+ 有关详细信息，请参阅 [文档主机项](../vsto/document-host-item.md)。
 
 ## <a name="word-host-controls"></a>Word 宿主控件
  有多个可用于 Word 的宿主控件，这些控件有助于你创建、组织和自动处理文档。 它们的大部分功能包含了导入、呈现和保护数据。 这些宿主控件可提供本机 Word 对象模型中的相应控件所无法提供的事件和数据绑定功能。
@@ -51,7 +51,7 @@ ms.locfileid: "121352248"
 
 - [内容控件](../vsto/content-controls.md)
 
-- [书签控件](../vsto/bookmark-control.md)
+- [Bookmark 控件](../vsto/bookmark-control.md)
 
 - [XMLNode 控件](../vsto/xmlnode-control.md)
 
@@ -62,11 +62,11 @@ ms.locfileid: "121352248"
 - [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
 - [如何：将 XMLNode 控件添加到 Word 文档](../vsto/how-to-add-xmlnode-controls-to-word-documents.md)
 - [如何：将 XMLNodes 控件添加到 Word 文档](../vsto/how-to-add-xmlnodes-controls-to-word-documents.md)
-- [如何：重设书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)
+- [如何：调整书签控件的大小](../vsto/how-to-resize-bookmark-controls.md)
 - [演练：使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
 - [演练：将内容控件绑定到自定义 XML 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)
-- [演练：为书签创建快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [演练：创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
 - [Word 解决方案](../vsto/word-solutions.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
-- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [在外接程序Excel扩展 Word 文档VSTO工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

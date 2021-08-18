@@ -11,17 +11,18 @@ ms.assetid: 679e771e-4a79-484e-af37-f962ef4aa245
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc0d24d07f5c7473df7e963ee56ca6023fffa16d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 88288b6d3c57e65f5f59f580468bde3180f877c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120226"
 ---
 # <a name="bpreqi_fields"></a>BPREQI_FIELDS
 指定要检索的有关断点请求的信息。

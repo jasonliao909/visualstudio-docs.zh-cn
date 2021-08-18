@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b51c89095bd4b99fdd815198d1b6ced3b599d8e29d35c5ad2892f21c8990c8ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ea01db137d7c1f6144f43e84f901e92702815fdf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424102"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046875"
 ---
 # <a name="how-to-customize-a-built-in-tab"></a>如何：自定义内置选项卡
   可以将组和控件添加到内置选项卡。内置选项卡是已位于应用程序功能区上的选项卡Microsoft Office选项卡。 例如，"**数据"** 选项卡是"数据"选项卡中的内置Excel。 创建自定义组时，它显示在选项卡末尾，但可以在选项卡上任意移动你的组。

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 241c47d6bf76324d762bb96e5ba7e154b6216fb71c16e1547037dca12b362be6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 539a61fc6e1967b779ad2eccc6349e7fbbe00ee0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104360"
 ---
 # <a name="idebugbinder3geteeservice"></a>IDebugBinder3::GetEEService
 此方法返回请求的服务。

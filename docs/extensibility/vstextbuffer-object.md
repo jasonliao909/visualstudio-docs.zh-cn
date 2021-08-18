@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c3a3766b17b59023cd810106724a2794d68521c4f45f242503fc84324aaef0c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 97af9ff3cf30954212de6918e83aaa52ef4e3852
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335025"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028366"
 ---
 # <a name="vstextbuffer-object"></a>VSTextBuffer 对象
 文本缓冲区对象表示 Unicode 文本流，该流通常与文件关联。 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextBuffer>对象可以在核心编辑器的上下文之外使用，就像在向导中一样。

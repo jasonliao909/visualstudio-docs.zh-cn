@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a7280305b3241e2aa04fac3b47d6f73ba153e239ecc8eb12af94d3bdf7f196b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ded700cb5f9e6c7ff725f0b7049842d3e308b014
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416763"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088102"
 ---
 # <a name="idebugportsupplier2"></a>IDebugPortSupplier2
 此接口向会话调试管理器提供端口 (SDM) 。
@@ -34,7 +34,7 @@ IDebugPortSupplier2 : IUnknown
 自定义端口供应商实现此接口来表示端口供应商。
 
 ## <a name="notes-for-callers"></a>调用方说明
-使用端口供应商的 调用将返回此接口 (这是获取此接口的一种 `CoCreateInstance` `GUID`) 。 例如：
+使用端口供应商的 调用将返回此接口 (这是获取此接口的 `CoCreateInstance` `GUID`) 。 例如：
 
 ```cpp
 IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
@@ -82,7 +82,7 @@ IDebugPortSupplier2 *GetPortSupplier(GUID *pPortSupplierGuid)
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugport2-getportsupplier.md)
 - [GetPortSupplier](../../../extensibility/debugger/reference/idebugcoreserver2-getportsupplier.md)

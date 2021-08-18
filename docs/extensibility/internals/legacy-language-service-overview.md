@@ -1,6 +1,6 @@
 ---
-title: 旧版语言服务概述 |Microsoft Docs
-description: 了解 Visual Studio 中的旧版语言服务以及托管包框架支持的功能 (MPF) 语言服务类。
+title: 旧版语言服务概述|Microsoft Docs
+description: 了解中旧版语言服务Visual Studio以及托管包框架支持的功能 (MPF) 语言服务类。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,26 +10,27 @@ ms.assetid: bb44e27b-d228-463c-b2cf-cd5c24c7c1b5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 236fc2a2923ffd0829f74ab56a119ff81b29cd7f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d129e02dec3770a1a2288c68ff99d6b6ac2cf0a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042265"
 ---
 # <a name="legacy-language-service-overview"></a>旧版语言服务概述
-语言服务提供编辑器支持，使你能够实现某些 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能。 托管包框架 (MPF) 语言服务类为常用功能提供完全支持，并对其他功能提供部分支持。
+语言服务提供编辑器支持，使你能够实现某些 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能。 托管包框架 (MPF) 语言服务类提供对常用功能的完全支持，并部分支持其他功能。
 
-## <a name="fully-supported-features-in-the-mpf"></a>MPF 中完全受支持的功能
+## <a name="fully-supported-features-in-the-mpf"></a>MPF 中完全支持的功能
  MPF 语言服务类支持以下功能：
 
 - 语法突出显示
 
 - 大纲显示
 
-- 注释代码块
+- 对代码块进行注释
 
 - 大括号匹配
 
@@ -43,21 +44,21 @@ ms.locfileid: "105061168"
 
 - IntelliSense 成员完成
 
-- IntelliSense word 完成
+- IntelliSense 单词完成
 
 ## <a name="partially-supported-features-in-the-mpf"></a>MPF 中部分支持的功能
- MPF 仅提供对以下功能的部分支持。 这意味着必须实现由 MPF 调用的方法。
+ MPF 仅对以下功能提供部分支持。 这意味着必须实现 MPF 调用的方法。
 
 - 重新格式化代码。 提供实现重新格式化的代码。
 
-- 通过标识有效的代码范围来验证断点。 提供标识代码跨越的代码。
+- 通过标识有效的代码范围来验证断点。 提供用于标识代码范围的代码。
 
-- 支持 **调试器的** "自动" 窗口用于显示变量。 提供用于确定要在窗口中显示的内容的代码。
+- 支持调试器 **"自动"** 窗口以显示变量。 提供确定要显示在窗口中的代码。
 
-- 支持 **导航栏** 用于类型和成员之间的快速导航。 您可以实现并返回一个帮助器类，用于填充 **导航栏** 组合框中的列表。
+- 支持导航 **栏，** 以在类型和成员之间快速导航。 实现并返回一个帮助程序类，该类填充导航栏组合 **框中** 的列表。
 
 ## <a name="implementation"></a>实现
- 必须完成几个步骤才能实现语言服务本身，以及你想要为你的语言提供支持的语言服务功能。 以下主题介绍了这些步骤：
+ 必须完成几个步骤，实现语言服务本身以及想要支持语言的语言服务功能。 下列主题将讨论这些步骤：
 
 - [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service2.md)
 
@@ -91,6 +92,6 @@ ms.locfileid: "105061168"
 
 - [验证旧版语言服务中的断点](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)

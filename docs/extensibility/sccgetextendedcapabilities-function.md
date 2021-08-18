@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 986a5f33b4b2476cc327b5e2e4b287f1e29cc5d95487d61ace6ebf22e9d23916
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: df8c80eb5644d00cc6130d329b9d2cb7bdf75f8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321046"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086334"
 ---
 # <a name="sccgetextendedcapabilities-function"></a>SccGetExtendedCapabilities 函数
 此函数返回源代码管理插件支持的其他功能。
@@ -58,7 +58,7 @@ SCCRTN SccGetExtendedCapabilities(
 ## <a name="remarks"></a>备注
  此方法按需调用;也就是说，当某个功能需要进行测试时，将调用此方法来确定是否支持该功能。 一次只能指定一个标志。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [错误代码](../extensibility/error-codes.md)
 - [功能标志](../extensibility/capability-flags.md)

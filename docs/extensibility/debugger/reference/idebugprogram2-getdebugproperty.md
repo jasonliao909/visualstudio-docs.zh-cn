@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e733c57b83cce517bad5680f409abe23ef1432db134276389bbb54880f4328ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adac39c45a001a45d57b7e2cc5ac816ba4d6dd87
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087842"
 ---
 # <a name="idebugprogram2getdebugproperty"></a>IDebugProgram2::GetDebugProperty
 获取程序的属性。
@@ -53,7 +53,7 @@ int GetDebugProperty(
 
  程序可能会公开任何数量和类型的其他属性，可通过 接口 `IDebugProperty2` 描述这些属性。 IDE 可以通过泛型属性浏览器用户界面显示其他程序属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md)

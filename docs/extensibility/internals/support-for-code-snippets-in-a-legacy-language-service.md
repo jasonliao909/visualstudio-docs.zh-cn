@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2684e0f369320889f74656cd8b10003ee5187bf6c24d1daf5aa4932cbb993377
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71d12bb0bd80c10140aaaa6f276cf772397d699f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086607"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是插入到源文件中的一段代码。 代码片段本身是基于 XML 的模板，包含一组字段。 这些字段在插入代码片段后突出显示，并且可以具有不同的值，具体取决于插入代码片段的上下文。 插入代码片段后立即，语言服务可以设置代码片段的格式。
@@ -206,7 +206,7 @@ ms.locfileid: "121432041"
 
     ```
 
-     在插入代码片段的过程中，Visual Studio按给定顺序调用 类 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 中的以下方法：
+     在插入代码片段的过程中，Visual Studio以给定顺序调用 类 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 中的以下方法：
 
 4. <xref:Microsoft.VisualStudio.Package.ExpansionProvider.OnItemChosen%2A>
 

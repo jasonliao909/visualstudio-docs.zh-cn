@@ -9,14 +9,15 @@ ms.assetid: ba24f499-5ba7-4c67-83e6-923229b52327
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2dc01aaf3485e89ac32b4a4fd86c7491a1f96853
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6960983be5b71162f95a0fcbd5a3152ee4c7362d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105091924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088531"
 ---
 # <a name="idebuggenericparamfield"></a>IDebugGenericParamField
 表示托管代码泛型类型的参数。
