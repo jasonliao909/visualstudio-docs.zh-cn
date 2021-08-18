@@ -16,14 +16,15 @@ ms.assetid: 49d8741b-f1ea-4470-94fd-a1ac27341a6a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 29259d71a610a4d83740c139c1309db477288004
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6e5156d0d128bce8b927bbdc8faacdd93834e167
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965988"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142749"
 ---
 # <a name="task-element-of-usingtask-msbuild"></a>UsingTask 的 Task 元素 (MSBuild)
 
@@ -44,7 +45,7 @@ ms.locfileid: "99965988"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |`Evaluate`|可选布尔属性。<br /><br /> 如果值为 `true`，任务实例化时，MSBuild 对所有内部元素求值，并在将信息传递到 `TaskFactory` 前扩展项和属性。|
 

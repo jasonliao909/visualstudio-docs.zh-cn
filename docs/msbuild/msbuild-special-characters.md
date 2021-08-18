@@ -12,14 +12,15 @@ ms.assetid: 545e6a59-1093-4514-935e-78679a46fb3c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c5db0b870e050a9235f719d83710747101b95c3c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab12aef7ad75a3f5dd877015f2a0d5afb8451a4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143100"
 ---
 # <a name="msbuild-special-characters"></a>MSBuild 特殊字符
 

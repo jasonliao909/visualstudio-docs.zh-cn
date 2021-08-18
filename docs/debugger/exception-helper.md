@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e10dc341ce33ba91c05348e9d3fba545437ce497
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b93a717d4a3f22db860f2bbef51bc51e0f8cc85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870852"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139049"
 ---
 # <a name="inspect-an-exception-using-the-exception-helper"></a>使用异常帮助程序检查异常 
 

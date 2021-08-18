@@ -11,14 +11,15 @@ ms.assetid: 529fa251-b7b3-49cf-863c-10e0b82ac7cc
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fffe6f453dc179d363e9f3aaba0f6582d821750
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 935e0ef2e8e8c104978e2551d7f46fbbe75cfe8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143841"
 ---
 # <a name="go-to-line-dialog-box"></a>“转到行”对话框
 

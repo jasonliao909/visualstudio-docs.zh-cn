@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 1b0534c8d2e4e47260d9a908cfc4b46ed72e9cb2
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: dfc7eb2bfd2e2ace86d97174377b35096f6279df
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140279"
 ---
 # <a name="rtvs-current-version"></a>RTVS 当前版本
 

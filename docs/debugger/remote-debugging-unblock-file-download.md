@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ffefa70c59658382073a10db8ae1832b0d9b03c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ec0b81a6e97faf6a3dae42ea90a66cb62fb57c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153792"
 ---
 # <a name="how-to-unblock-the-download-of-the-remote-tools-on-windows-server"></a>如何：取消阻止在 Windows Server 上下载远程工具
 

@@ -6,15 +6,16 @@ ms.topic: overview
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd57dd13bdb487307c416cd5013f197172d5fc6c
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: d33a33cacd1c5fb6c2d7cd4c45a14fa32d2cc1bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796211"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140500"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 

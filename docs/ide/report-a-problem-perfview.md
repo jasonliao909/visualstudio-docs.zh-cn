@@ -9,6 +9,7 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Use perfview.exe to collect ETL traces for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 81cf6469a14fb3559d37056ba5193d9018ccc1c8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: e68b8ab22ea4c045c54195381502458f915c3008
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143438"
 ---
 # <a name="collect-an-etl-trace-with-perfview"></a>使用 PerfView 收集 ETL 跟踪
 

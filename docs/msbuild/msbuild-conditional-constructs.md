@@ -22,14 +22,15 @@ ms.assetid: dd54258e-f4fb-448f-9da4-d1817e0cbaf2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b26e9bdc0c632f924a29cd2ad09c21f8048d31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0b371f4aceef5baadd7a00738d885974b88c584
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919130"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143126"
 ---
 # <a name="msbuild-conditional-constructs"></a>MSBuild 条件构造
 

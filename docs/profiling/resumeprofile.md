@@ -9,15 +9,16 @@ ms.assetid: 876f145b-ec07-4240-ade6-4f6e44baadce
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5607efbf9e979ff427d772089731af01cdd71867
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d52e2dccda89829d05bac6e17f5fc0dcdc70cc62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141464"
 ---
 # <a name="resumeprofile"></a>ResumeProfile
 `ResumeProfile` 方法递减指定分析级别的挂起/继续计数器的值。

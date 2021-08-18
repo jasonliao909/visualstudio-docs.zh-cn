@@ -18,14 +18,15 @@ ms.assetid: 5a8cafca-f7b4-4a2d-92ce-6894a7673d00
 author: akhera99
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 517745fd302bcc19e46a8a0e7b8e4ed629950062
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abe1a46305ad656dca843fbb217f34eacca86410
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151257"
 ---
 # <a name="options-text-editor-basic-visual-basic-advanced"></a>“选项”>“文本编辑器”>“基本(Visual Basic)”>“高级”
 在“选项”  （“工具”  菜单）对话框中“文本编辑器”  文件夹的“基本”  文件夹内，“VB 专用”  属性页包含以下属性：

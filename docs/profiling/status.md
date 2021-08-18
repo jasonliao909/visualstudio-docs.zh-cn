@@ -7,15 +7,16 @@ ms.assetid: ba656fa4-ef9d-4d8c-a3b6-739c3b5d23ae
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 894afcbf8827fe0b5d5662a4c20e302f8224263f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d72f8062f607da08775d369dc7a154a8016e45c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960034"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141306"
 ---
 # <a name="status"></a>状态
 VSPerfCmd.exe Status 选项显示有关探查器状态以及当前正在分析的任何进程的信息 。

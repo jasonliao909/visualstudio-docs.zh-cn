@@ -7,14 +7,15 @@ ms.assetid: 509d2d4f-48a5-4cdf-acad-6f7b75421303
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d6558264bb51f011d8f04b5a3096e95702c49b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a31872097d34a6ad7c8ce052c635c9b48770b5c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141592"
 ---
 # <a name="perftips"></a>性能提示
 

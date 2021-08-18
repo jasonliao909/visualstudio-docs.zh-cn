@@ -18,14 +18,15 @@ ms.assetid: 350f6fc2-86b3-45f2-a31e-ece0e6bd4dca
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 231ffd185eaf06fb91a709631082c2b68db372ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35b4153eab1bbe2d320019c46d4b8e854f2ca6a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966118"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142853"
 ---
 # <a name="target-element-msbuild"></a>Target 元素 (MSBuild)
 
@@ -59,7 +60,7 @@ ms.locfileid: "99966118"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Name`|必需的特性。<br /><br /> 目标的名称。 目标名称可以包含除 `$@()%*?.` 之外的任何字符。|
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 如果该条件评估结果为 `false`，那么目标不会执行目标主体或任何在 `DependsOnTargets` 属性中设置的目标。 有关条件的详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|

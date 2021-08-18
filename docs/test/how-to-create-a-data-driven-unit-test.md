@@ -13,15 +13,16 @@ helpviewer_keywords:
 - data-driven unit tests
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 94dcc3aed8d41f9ece0f9b51410fc749330b01df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7bcea924cd571e24003bcb66373862fdd0c7ef1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139980"
 ---
 # <a name="how-to-create-a-data-driven-unit-test"></a>操作说明：创建数据驱动的单元测试
 
