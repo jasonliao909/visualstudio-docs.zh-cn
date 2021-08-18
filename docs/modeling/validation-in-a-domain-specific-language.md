@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f269eff3dc742fe2f397f637f1fb84104cb15a20a8412b27563bffb2fce15b77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b57b4d22d94aebec58303b124cd549690aa64de2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398055"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116534"
 ---
 # <a name="validation-in-a-domain-specific-language"></a>域特定语言中的验证
 作为域特定语言 (DSL) 的作者，你可以定义验证约束，以验证由用户创建的模型是否有意义。 例如，如果你的 DSL 允许用户绘制人员及其祖先的家族树，你可以编写一个约束，用于确保孩子的出生日期在其父母之后。
@@ -234,9 +234,9 @@ if (!validator.Validate(store, ValidationCategories.Save))
 ```
 
 ## <a name="running-validation-when-a-change-occurs"></a>当发生更改时运行验证
- 如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的详细信息，请参阅 [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
+ 如果你想要确保用户在该模型变为无效时立即收到警告，可以定义运行验证的存储事件。 有关存储事件的信息，请参阅事件 [处理程序传播模型外部的更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
- 除了验证代码外，还应将自定义代码文件添加到 **DslPackage** 项目，其中包含类似于以下示例的内容。 此代码使用附加到文档的 `ValidationController`。 此控制器显示 Visual Studio 错误列表中的验证错误。
+ 除了验证代码之外，还向 **DslPackage** 项目添加一个自定义代码文件，其内容类似于以下示例。 此代码使用附加到文档的 `ValidationController`。 此控制器在错误列表中显示Visual Studio错误。
 
 ```csharp
 using System;
@@ -330,9 +330,9 @@ validationController.ValidateCustom
 
  但是，不建议使用这些技术。 通常，最好让用户决定如何更正无效的模型。
 
- **调整更改以还原模型有效性。** 例如，如果用户将属性设置为允许的最大值之上，则可以将该属性重置为最大值。 若要实现此目的，请定义一个规则。 有关详细信息，请参阅 [规则在模型内部传播更改](../modeling/rules-propagate-changes-within-the-model.md)。
+ **调整更改以还原模型有效性。** 例如，如果用户将属性设置为允许的最大值之上，则可以将该属性重置为最大值。 若要实现此目的，请定义一个规则。 有关详细信息，请参阅 [规则在模型中传播更改](../modeling/rules-propagate-changes-within-the-model.md)。
 
- **如果尝试无效的更改，则回滚事务。** 你还可以为此目的定义规则，但在某些情况下，可以重写属性处理程序 **OnValueChanging ()** 或重写方法（如） `OnDeleted().` 以回滚事务，使用 `this.Store.TransactionManager.CurrentTransaction.Rollback().` 有关详细信息，请参阅 [域属性值更改处理程序](../modeling/domain-property-value-change-handlers.md)。
+ **如果尝试无效的更改，则回滚事务。** 还可以为此定义规则，但在某些情况下，可以重写属性处理程序 **OnValueChanging () ，** 或重写方法（如回滚事务）。有关详细信息，请参阅 `OnDeleted().` `this.Store.TransactionManager.CurrentTransaction.Rollback().` 域 [属性值](../modeling/domain-property-value-change-handlers.md)更改处理程序。
 
 > [!WARNING]
 > 请确保用户知道更改已调整或已回滚。 例如，使用 `System.Windows.Forms.MessageBox.Show("message").`

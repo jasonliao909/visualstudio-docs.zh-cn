@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f0095510b45da5029173db590611255f83ca4e6edcc3fb0be695754064a39c6e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 621a33d8808b167bc17dd76b265ee0990bb11686
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100031"
 ---
 # <a name="how-to-hide-controls-on-worksheets-when-printing"></a>如何：在打印时隐藏工作表上的控件
   打印包含 Windows 窗体控件的 Microsoft Office Excel 文档时，这些控件在打印的工作表中可见。 打印工作表时，可以隐藏控件。

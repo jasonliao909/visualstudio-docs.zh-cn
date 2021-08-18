@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d3b9ae0fe4379f0573a6ef7e7a31b3fabed4f07b8dd569c3a6d196223ac1e93f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a622fa1d85ed916a393d7ea4cac56a335d550f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115585"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>如何：为 SharePoint 应用程序页或 Web 部件创建用户控件
   可以创建为 SharePoint 解决方案提供自定义功能的自定义用户控件，您可以在项目中重复使用此功能。 可以在 Web 部件或应用程序页中包含用户控件、添加其他 ASP.NET 控件和 SharePoint 控件、定义控件的属性和方法。 有关用户控件详细信息，请参阅为[Web](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)部件或应用程序页创建可重用控件和用户控件和[SharePoint。](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)
@@ -41,7 +41,7 @@ ms.locfileid: "121385206"
 
 4. 在"**已安装**"窗格中，选择 **Office/SharePoint** 节点。
 
-5. 在模板列表中，SharePoint"用户控制 **" ("仅场解决方案) "。**
+5. 在模板列表中，SharePoint"用户 **控制" ("仅场解决方案) "。**
 
     > [!NOTE]
     > 用户控件仅适用于场解决方案。
@@ -54,7 +54,7 @@ ms.locfileid: "121385206"
 
 7. 如果要处理控件中发生的事件，请将代码添加到此用户控件的代码文件。
 
-     此文件 **显示在解决方案资源管理器文件** 下，并且扩展名为 *.cs* 或 *.vb，* 具体取决于项目的语言。
+     此文件显示在用户 **解决方案资源管理器** 文件下，并且具有 *.cs* 或 *.vb* 扩展名，具体取决于项目的语言。
 
 ## <a name="see-also"></a>请参阅
 - [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

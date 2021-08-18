@@ -1,6 +1,6 @@
 ---
 title: 在其他 Visual Studio 版本中读取模型和关系图
-description: 了解如何在 Visual Studio 中读取模型和关系图，以及在使用不支持模型创建的 Visual Studio 版本时的只读行为。
+description: 了解如何在 Visual Studio 中读取模型和关系图，以及如何在使用不支持模型创建的 Visual Studio 版本时执行只读操作。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -10,20 +10,21 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 95fbf6451a3f07581ff2bdb098428f41904d4276
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4adcdb442e31a0de834a05a06ea96981b761ea73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389899"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100772"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 
 如果你在一个不支持创建模型的 Visual Studio 中打开模型，该模型将以只读模式打开。 在此模式下，你可以更改的关系图的布局，但不能更改该模型。
 
-若要查看支持模型创建的版本，请参阅 [体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+若要查看 Visual Studio 支持模型创建的版本，请参阅[体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>获取对某一模型和关系图的访问权限
 
@@ -57,7 +58,7 @@ ms.locfileid: "112389899"
 
 你可以保存这些更改。 如果要使您的更改对其他用户可见，则至少必须发送更新后的 **. layout** 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

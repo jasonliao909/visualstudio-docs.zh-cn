@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: eb6297ae0d39c5507168ee84aa0fc3c60c0d7386e936b37aaa3be6704c48afd3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d191318172700a12552341c5bd3c7a2c03e63734
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411303"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157600"
 ---
 # <a name="analyze-and-model-your-architecture"></a>对体系结构进行分析和建模
 

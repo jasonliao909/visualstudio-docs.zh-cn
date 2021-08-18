@@ -1,6 +1,6 @@
 ---
 title: 文本模板控制块
-description: 了解文本模板控制块以及控件块如何允许您在文本模板中编写代码，以便改变输出。
+description: 了解文本模板控制块，以及控制块如何使你在文本模板中编写代码以改变输出。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 90a4efea7d37b83d3d5ff7a085abcf3439d99263
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 286bc3b1eba71f3c875e3cdf519a01464b19c6aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388719"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116612"
 ---
 # <a name="text-template-control-blocks"></a>文本模板控制块
 控制块可使你在文本模板中编写代码以便改变输出。 有三种类型的控制块，通过其左大括号来区分：
@@ -64,7 +65,7 @@ Found another one!
 ```
 
 > [!WARNING]
-> 始终使用 {...} 分隔包含内嵌纯文本的嵌套语句。 以下示例可能无法正常工作：
+> 始终使用 {...} 分隔包含嵌入纯文本的嵌套语句。 以下示例可能无法正常工作：
 >
 > `<# if (ShouldPrint) #> Some text. -- WRONG`
 >
@@ -143,11 +144,11 @@ Some text.
 ```
 
 ## <a name="how-to-use-control-blocks"></a>如何使用控制块
- 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。  (有关将其他文本模板包含在指令中的详细信息 `include` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。 ) 
+ 将单个模块中所有标准和表达式控制块中的所有代码（包括包含模板中的所有代码）组合在一起，以便形成所生成代码的 `TransformText()` 方法。  (有关使用 指令包括其他文本模板的信息 `include` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md).) 
 
  在使用控制块时，请记住考虑以下事项：
 
-- **语言。** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。  (有关指令的详细信息 `template` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md)。 ) 
+- **语言。** 你可以使用文本模板中的 C# 或 Visual Basic 代码。 默认语言为 C#，但你可以使用 `template` 指令的 `language` 参数指定 Visual Basic。  (有关 指令的信息 `template` ，请参阅 [T4 文本模板指令](../modeling/t4-text-template-directives.md).) 
 
      控制块中使用的语言与文本模板中生成的文本的语言或格式无关。 你可以使用 Visual Basic 代码生成 C#，反之亦然。
 
@@ -169,4 +170,4 @@ Some text.
     <# } #>
     ```
 
-- **重构.** 为了使你的文本模板简短并易于理解，强烈建议你避免重复代码，可通过将可重用的代码分解到类功能块中的帮助程序函数或通过创建你自己的文本模板类（继承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 类）实现。
+- **重 构。** 为了使你的文本模板简短并易于理解，强烈建议你避免重复代码，可通过将可重用的代码分解到类功能块中的帮助程序函数或通过创建你自己的文本模板类（继承自 Microsoft.VisualStudio.TextTemplating.TextTransformation 类）实现。

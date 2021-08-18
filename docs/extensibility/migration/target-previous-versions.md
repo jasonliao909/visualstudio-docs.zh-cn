@@ -11,20 +11,20 @@ monikerRange: vs-2022
 ms.workload:
 - vssdk
 feedback_system: GitHub
-ms.openlocfilehash: 0abd690d5c9d1af9e58bfa856d8880f01e34e8f0c4758188c6f2dd7f15303564
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b7509e53108d9b33570c92f6d6bedb8f200a1fe6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400889"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086399"
 ---
 # <a name="target-a-previous-version-when-creating-an-extension-in-visual-studio-2022-preview"></a>在 2022 预览版中创建扩展时，Visual Studio以前的版本
 
 [!INCLUDE [preview-note](../includes/preview-note.md)]
 
-使用 Visual Studio 2022 预览版创建新的 VSIX 项目时，该项目从面向 Visual Studio 2022 的模板创建。 如果要以 2019 Visual Studio版本为目标，则必须修改创建的项目。
+使用 Visual Studio 2022 预览版创建新的 VSIX 项目时，项目从面向 Visual Studio 2022 的模板创建。 如果要以 2019 Visual Studio版本为目标，则必须修改创建的项目。
 
-考虑使用[共享项目](update-visual-studio-extension.md#use-shared-projects-for-multi-targeting)面向 Visual Studio 2019 和 Visual Studio 2022，同时共享扩展中的大部分或所有代码。
+考虑使用[共享项目](update-visual-studio-extension.md#use-shared-projects-for-multi-targeting)面向 2019 Visual Studio 2022 Visual Studio 2022 年，同时共享扩展中的大部分或所有代码。
 
 在应面向 2019 年 1 月Visual Studio VSIX 项目执行以下步骤：
 

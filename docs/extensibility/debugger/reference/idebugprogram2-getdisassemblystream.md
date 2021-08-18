@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 24a210654c359995d4dbcde9ecc705638e74ee151c7b65ddec5b7a9a92de1baa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 562edd4bf17216a1baa6248966d61e33083341dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126565"
 ---
 # <a name="idebugprogram2getdisassemblystream"></a>IDebugProgram2::GetDisassemblyStream
 获取此程序或此程序的一部分的反汇编流。
@@ -47,7 +47,7 @@ int GetDisassemblyStream(
 
 ## <a name="parameters"></a>参数
 `dwScope`\
-[in]从定义反汇编 [流DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 枚举中指定一个值。
+[in]指定定义反汇编 [流DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 的枚举中的值。
 
 `pCodeContext`\
 [in] [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 对象，表示开始反汇编流的位置。
@@ -61,7 +61,7 @@ int GetDisassemblyStream(
 ## <a name="remarks"></a>备注
  如果 参数具有 DISASSEMBLY_STREAM_SCOPE 集的标志，则反汇编应返回大量反汇编指令，例如，针对整个文件或 `dwScopes` `DSS_HUGE` 模块。 [](../../../extensibility/debugger/reference/disassembly-stream-scope.md) 如果未设置 标志，则反汇编应仅限于一个小区域， `DSS_HUGE` 通常是单个函数的区域。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [DISASSEMBLY_STREAM_SCOPE](../../../extensibility/debugger/reference/disassembly-stream-scope.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

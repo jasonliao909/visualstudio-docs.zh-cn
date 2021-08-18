@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2e5014f3ba96d11fc5a851e5255404fae50289322062786a6952bf4bec192cb9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e8036b4a5e8caf026da2e4da9e2347f595eaa12e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070244"
 ---
 # <a name="file-status-code-enumerator"></a>文件状态代码枚举器
 `SccStatus`枚举器包含指定源代码管理系统中文件状态的命名常量值。 此枚举由 [SccQueryInfo](../extensibility/sccqueryinfo-function.md) 和 `POPLISTFUNC` 回调函数使用 (请参阅 [POPLISTFUNC](../extensibility/poplistfunc.md) 了解详细信息) 。
@@ -88,7 +88,7 @@ enum SccStatus {
 
  SCC_STATUS_RESERVED_2 保留供内部使用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)
 - [SccQueryInfo](../extensibility/sccqueryinfo-function.md)
 - [POPLISTFUNC](../extensibility/poplistfunc.md)

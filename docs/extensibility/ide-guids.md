@@ -14,16 +14,16 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b7101f9e23bba9b44287a4cb8e01e8c61551b01e5c3fc3a9d82811214b87b0e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 535dfe4126bd1dbeeca69a89f1bd4df86df7ea98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086932"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-类发布集成开发环境的某些部分的 GUID (<xref:Microsoft.VisualStudio.VSConstants> IDE) 如下表所列。
+类发布集成开发环境的某些部分的 GUID (IDE) 如下 <xref:Microsoft.VisualStudio.VSConstants> 表所列。
 
 ## <a name="core-systems"></a>核心系统
 
@@ -128,7 +128,7 @@ ms.locfileid: "121275731"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)
 - [IDE 常量](../extensibility/ide-constants.md)

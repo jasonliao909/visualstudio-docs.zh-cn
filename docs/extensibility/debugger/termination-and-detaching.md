@@ -11,14 +11,15 @@ ms.assetid: 268c1e51-6363-45d1-964c-1ab99bdfa4f9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8662809b50dbfec3046af1d0d6b6fa151c3a33e0
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 40a559a110792e5c010d37164ab1db96277ca544
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057827"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087231"
 ---
 # <a name="termination-and-detaching"></a>终止和分离
 以下部分介绍了正常终止。
@@ -28,5 +29,5 @@ ms.locfileid: "105057827"
 
  必须发送 [IDebugProgramDestroyEvent2](../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 以实现正常终止。 正常终止要求运行 [IDebugProgramDestroyEvent2：： GetExitCode](../../extensibility/debugger/reference/idebugprogramdestroyevent2-getexitcode.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)

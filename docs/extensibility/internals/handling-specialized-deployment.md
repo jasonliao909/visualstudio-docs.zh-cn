@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6de38ecefce3fe8b953523a61317af6fc808d92361ad0c89348269e4cacf679
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88cb63133cbe3dbe8c41c64cdae1f0bdc64ff5f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069908"
 ---
 # <a name="handle-specialized-deployment"></a>处理专用部署
 部署是项目的可选操作。 例如，Web 项目支持部署，以允许项目更新 Web 服务器。 同样，智能 **设备项目** 支持将生成应用程序复制到目标设备的部署。 Project子类型可以通过实现 接口提供专用部署 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 行为。 此接口定义一组完整的部署操作：
@@ -292,5 +292,5 @@ ms.locfileid: "121359515"
 > [!NOTE]
 > 本主题中提供的所有代码示例都是 VSSDK 示例中较大示例 [的一部分](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Project子类型](../../extensibility/internals/project-subtypes.md)

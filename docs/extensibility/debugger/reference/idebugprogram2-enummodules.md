@@ -11,17 +11,18 @@ ms.assetid: 876ac9da-3b7c-4156-b79a-8f340e9fcea6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af640cf7e76da0e6cf7bb202cda08792c783e0d5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4c2d24fefab1e948c636f30ed4d7764a5ab83cc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076025"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126617"
 ---
 # <a name="idebugprogram2enummodules"></a>IDebugProgram2::EnumModules
 检索此程序已加载且正在执行的模块的列表。
@@ -50,6 +51,6 @@ int EnumModules(
 ## <a name="remarks"></a>备注
  模块是一个 DLL 或程序集，通常在 " **模块** 调试" 窗口中列出。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)

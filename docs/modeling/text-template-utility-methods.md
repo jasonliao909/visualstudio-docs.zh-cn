@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 75cde4c3323e15d498fc6373c90ac9c3ba4176213ac7a0b7aa8ff9280b66080a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7ee6eff6c47a818eca29673b5aad6905e6f52e28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121231413"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085333"
 ---
 # <a name="text-template-utility-methods"></a>文本模板实用工具方法
 

@@ -13,17 +13,18 @@ ms.assetid: 01d05e77-8cac-4d1b-b19f-25756767ed27
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 820babb655f04da40fdd44aae55f963539e5ffa8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c6f7563adf23ce6a75c504cca675e0f6ac7e9e84
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105093855"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127215"
 ---
 # <a name="idebugengineprogram2watchforexpressionevaluationonthread"></a>IDebugEngineProgram2::WatchForExpressionEvaluationOnThread
 允许 (或不允许) 表达式计算在给定线程上发生，即使程序已停止也是如此。
@@ -74,7 +75,7 @@ int WatchForExpressionEvaluationOnThread(
 
  由于函数求值或对任何属性的计算，一个程序中的表达式计算可能会导致代码在其他程序中运行 `IDispatch` 。 因此，此方法允许表达式计算运行并完成，即使此程序中的线程可能已停止也是如此。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

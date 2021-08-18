@@ -11,17 +11,18 @@ ms.assetid: e4c2ffce-9810-4088-8162-eac9ef04f2a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2470c62215c8c708056f7c123adc5eac3a5e389d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 038c490fb9e889199193463f098e44386556b3fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105084488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071639"
 ---
 # <a name="idebugprogram2step"></a>IDebugProgram2::Step
 执行步骤。
@@ -66,7 +67,7 @@ int Step(
 > [!WARNING]
 > 处理此调用时，不要将停止事件或立即 (同步) 事件发送到 [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md) ;否则，调试器可能会停止响应。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugEngineProgram2](../../../extensibility/debugger/reference/idebugengineprogram2.md)
 - [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)
