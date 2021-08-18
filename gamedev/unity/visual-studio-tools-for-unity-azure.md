@@ -14,12 +14,12 @@ manager: crdun
 ms.workload:
 - azure
 - unity
-ms.openlocfilehash: 30494283fd652a1f3c5ca9a12d68982714a73309
-ms.sourcegitcommit: f4b49f1fc50ffcb39c6b87e2716b4dc7085c7fb5
+ms.openlocfilehash: 9e9ac33e3b165894a3415bb656513d42f731a4fd56a27673fc4c6e17f78e19c7
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/05/2020
-ms.locfileid: "94341117"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121383374"
 ---
 # <a name="program-with-unity-and-azure"></a>使用 Unity 和 Azure 进行编程
 

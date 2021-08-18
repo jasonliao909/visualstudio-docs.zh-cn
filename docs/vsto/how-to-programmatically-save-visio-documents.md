@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 676281c289d565e4e8ffc07e68c6ced0199b10d0c3f5270e60b43fea222de025
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7deb727e956adb9e7ba80a083f774aaca9b5b864
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351676"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026143"
 ---
 # <a name="how-to-programmatically-save-visio-documents"></a>如何：以编程方式保存 Visio 文档
   可通过几种方法来保存 Microsoft Office Visio 文档：

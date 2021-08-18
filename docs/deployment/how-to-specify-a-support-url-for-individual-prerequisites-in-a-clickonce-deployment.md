@@ -1,6 +1,6 @@
 ---
-title: ClickOnce 部署中的先决条件支持 URL
-description: 了解 ClickOnce 部署如何测试 ClickOnce 应用程序的先决条件，以及部署如何处理缺少的必备组件。
+title: 部署中先决条件的支持 URL ClickOnce URL
+description: 了解应用程序ClickOnce先决条件的部署测试ClickOnce部署如何处理缺少的先决条件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,27 +15,28 @@ ms.assetid: 590742c3-a286-4160-aa75-7a441bb2207b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 585ea1a558b91ac733670ad94a9a3e0be33f1348
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 048d379aa3194eb7e6fca46019e6c5a2ddbd60c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876311"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035808"
 ---
 # <a name="how-to-specify-a-support-url-for-individual-prerequisites-in-a-clickonce-deployment"></a>如何：为 ClickOnce 部署中的各个系统必备项指定一个支持 URL
-[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]部署可以测试客户端计算机上必须提供的用于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 运行应用程序的多个先决条件。 这些依赖项包括所需的最低版本的 .NET Framework、操作系统的版本，以及必须在全局程序集缓存中预安装的任何程序集 (GAC) 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，不能自行安装任何这些必备组件;如果找不到先决条件，它只是暂停安装并显示一个对话框，说明安装失败的原因。
+部署可以测试许多必备组件，这些先决条件必须在客户端计算机 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 上提供，应用程序 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 才能运行。 这些依赖项包括所需的最低版本 .NET Framework、操作系统的版本，以及必须预装在全局程序集缓存 (GAC) 。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]但是，无法自行安装任何这些先决条件;如果找不到必备组件，则只会停止安装并显示一个对话框，说明安装失败的原因。
 
- 安装必备组件有两种方法。 可以使用引导程序应用程序进行安装。 或者，您可以为单个必备项指定一个支持 URL，如果找不到先决条件，则会向用户显示该 URL。 该 URL 引用的页面可以包含指向有关安装所需必备组件的说明的链接。 如果应用程序没有为单独的先决条件指定支持 URL，则将 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在应用程序的部署清单（如果已定义）中显示指定的支持 url。
+ 有两种方法用于安装必备组件。 可以使用引导程序应用程序安装它们。 或者，可以指定单个先决条件的支持 URL，如果找不到先决条件，该 URL 将在对话框中向用户显示。 该 URL 引用的页面可以包含指向安装所需先决条件的说明的链接。 如果应用程序未指定单个先决条件的支持 URL，则显示整个应用程序的部署清单中指定的支持 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] URL（如果已定义）。
 
- 尽管 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 、 *Mage.exe* 和 *MageUI.exe* 均可用于生成 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署，但这些工具都不能直接支持为单独的先决条件指定支持 URL。 本文档介绍如何修改部署的应用程序清单和部署清单，以包含这些支持 Url。
+ 虽然 、Mage.exe和MageUI.exe都可用于生成部署，但这些工具都直接不支持为各个先决条件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)]  [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 指定支持 URL。 本文档介绍如何修改部署的应用程序清单和部署清单，以包含这些支持 URL。
 
-### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>为单个必备项指定一个支持 URL
+### <a name="specify-a-support-url-for-an-individual-prerequisite"></a>为单个先决条件指定支持 URL
 
-1. 在文本编辑器中打开应用程序清单， (该应用程序) 的 *清单* 文件。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]
+1. 在文本编辑器 (*打开应用程序的 .manifest*) [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单。
 
-2. 对于操作系统必备，请将属性添加 `supportUrl` 到元素中 `dependentOS` ：
+2. 对于操作系统先决条件，将 `supportUrl` 属性添加到 `dependentOS` 元素：
 
    ```xml
     <dependency>
@@ -47,7 +48,7 @@ ms.locfileid: "99876311"
      </dependency>
    ```
 
-3. 对于特定版本的公共语言运行时的先决条件，请将特性添加 `supportUrl` 到 `dependentAssembly` 指定公共语言运行时依赖项的项：
+3. 对于特定版本的公共语言运行时的先决条件，将 属性添加到指定公共语言 `supportUrl` `dependentAssembly` 运行时依赖项的条目：
 
    ```xml
      <dependency>
@@ -57,7 +58,7 @@ ms.locfileid: "99876311"
      </dependency>
    ```
 
-4. 对于必须预安装在全局程序集缓存中的程序集的先决条件，请为 `supportUrl` `dependentAssembly` 指定所需程序集的元素设置：
+4. 对于必须预装在全局程序集缓存中的程序集的先决条件，请为指定所需程序集 `supportUrl` `dependentAssembly` 的元素设置 ：
 
    ```xml
      <dependency>
@@ -67,9 +68,9 @@ ms.locfileid: "99876311"
      </dependency>
    ```
 
-5. 可选。 对于面向 .NET Framework 4 的应用程序，请 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 在文本编辑器中打开应用程序 (应用程序文件) 的部署清单。
+5. 可选。 对于面向 .NET Framework 4 的应用程序，在 (*中打开应用程序的 .application*) [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 清单。
 
-6. 对于 .NET Framework 4 必备项，请将 `supportUrl` 属性添加到 `compatibleFrameworks` 元素：
+6. 对于.NET Framework 4 先决条件，将 `supportUrl` 属性添加到 `compatibleFrameworks` 元素：
 
    ```xml
    <compatibleFrameworks  xmlns="urn:schemas-microsoft-com:clickonce.v2" supportUrl="http://adatum.com/MyApplication/CompatibleFrameworks.htm">
@@ -78,12 +79,12 @@ ms.locfileid: "99876311"
    </compatibleFrameworks>
    ```
 
-7. 手动更改应用程序清单后，必须使用数字证书对应用程序清单进行重新签名，然后更新并重新签署部署清单。 使用 *Mage.exe* 或 *MageUI.exe* SDK 工具来完成此任务，因为重新生成这些文件时使用的是 " [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 擦除手动更改"。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
+7. 手动更改应用程序清单后，必须使用数字证书对应用程序清单重新签名，然后更新部署清单并重新签名。 使用 *Mage.exe* 或 *MageUI.exe* SDK 工具来完成此任务，因为使用 重新生成这些文件会清除 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 手动更改。 有关使用 Mage.exe 清单进行重新签名的详细信息，请参阅[如何：为应用程序和部署清单重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)。
 
 ## <a name="net-framework-security"></a>.NET Framework 安全性
- 如果将应用程序标记为在部分信任环境中运行，则不会在对话框中显示支持 URL。
+ 如果将应用程序标记为在部分信任下运行，则支持 URL 不会显示在对话框中。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Mage.exe（清单生成和编辑工具）](/dotnet/framework/tools/mage-exe-manifest-generation-and-editing-tool)
 - [演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)
 - [\<compatibleFrameworks> 元素](../deployment/compatibleframeworks-element-clickonce-deployment.md)

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5ef96a878c11b51a99a501b448362a8ee0146c3815d94a32b9e4ef5893b545f6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b087ab396920cbf25d0559b74915a17606b472ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401214"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049579"
 ---
 # <a name="running-document-table"></a>运行文档表
 IDE 将在名为正在运行的文档表 (RDT) 的内部结构中维护所有当前打开的文档的列表。 此列表包括内存中所有打开的文档，无论当前是否正在编辑这些文档。 文档是保存的任何项，包括项目中的文件或主项目文件 (例如，.vcxproj 文件) 。

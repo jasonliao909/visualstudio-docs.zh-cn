@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: d56ed5560eb8df8083a2ca26b447e14825417775625a8daf89230549eea766ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 20c4d0c6fc5583686648507be2a36c5183ca70c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121264800"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097990"
 ---
 # <a name="how-to-synchronize-code-project-rule-sets-with-an-azure-devops-project-check-in-policy"></a>如何：将代码Project规则集与Azure DevOps Project签入策略同步
 
 通过指定至少包含签入策略的规则集内指定的规则集，将代码项目的代码分析设置同步到 Azure DevOps 项目的签入策略。 开发人员主管可以告知你签入策略的规则集的名称和位置。 可以使用以下选项之一来确保项目的代码分析使用正确的规则集：
 
-- 如果签入策略使用 Microsoft 内置规则集之一，请打开代码项目的属性对话框，显示Code Analysis页，然后选择规则集。 Microsoft 标准规则集随 Visual Studio设置为只读，不应编辑。 如果未编辑规则集，则保证策略和本地规则集中的规则匹配。
+- 如果签入策略使用某个 Microsoft 内置规则集，请打开代码项目的属性对话框，显示"Code Analysis"页，然后选择规则集。 Microsoft 标准规则集随 Visual Studio设置为只读，不应编辑。 如果未编辑规则集，则保证策略和本地规则集中的规则匹配。
 
 - 如果签入策略使用自定义规则集，请在版本控制中对规则集文件执行 get 操作，以创建本地副本。 然后在代码项目的代码分析设置中指定该本地位置。 如果签入策略的规则集是最新的，则保证规则匹配。
 
