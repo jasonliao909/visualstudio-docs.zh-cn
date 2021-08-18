@@ -1,6 +1,6 @@
 ---
-title: 图像库查看器|Microsoft Docs
-description: 了解用于Visual Studio和搜索图像清单的映像库查看器工具，以便查看和操作图像属性。
+title: 图像库查看器 |Microsoft Docs
+description: 了解 Visual Studio 的图像库查看器工具，该工具可以加载和搜索图像清单，使您可以查看和操作图像属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,31 +11,31 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e6c39a53fe2462b0e516d10ba4ab68cf2c6f6f6fab9911364649596e6b705b45
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee92f235bc973d0929e89ceae8d24f8ca77b9865
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359364"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042369"
 ---
 # <a name="image-library-viewer"></a>图像库查看器
-图像Visual Studio查看器工具可以加载和搜索图像清单，允许用户以与用户相同的方式Visual Studio清单。 用户可以更改背景、大小、DPI、高对比度和其他设置。 该工具还显示每个映像清单的加载信息，并显示映像清单中每个图像的源信息。 此工具可用于：
+Visual Studio 图像库查看器工具可以加载和搜索图像清单，使用户能够以相同的方式处理它们 Visual Studio。 用户可以更改背景、大小、DPI、高对比度和其他设置。 该工具还显示每个映像清单的加载信息，并显示映像清单中每个映像的源信息。 此工具适用于：
 
 1. 诊断错误
 
 2. 确保在自定义映像清单中正确设置属性
 
-3. 在图像目录中Visual Studio图像，以便Visual Studio扩展可以使用适合图像样式Visual Studio
+3. 在 Visual Studio 映像目录中搜索图像，使 Visual Studio 扩展可以使用适合的样式的图像 Visual Studio
 
    ![图像库查看器 Hero](../../extensibility/internals/media/image-library-viewer-hero.png "图像库查看器 Hero")
 
    **图像名字对象**
 
-   图像名字对象 (或名字对象) 是 GUID：ID 对，用于唯一标识图像库中的图像资产或图像列表资产。
+   简短) 的图像名字对象 (或名字对象是一个 GUID： ID 对，用于在映像库中唯一标识图像资产或图像列表资产。
 
    **映像清单文件**
 
-   映像清单 (.imagemanifest) 文件是 XML 文件，用于定义一组图像资产、表示这些资产的名字对象，以及表示每个资产的真实图像或图像。 映像清单可以定义独立映像或图像列表，以支持旧版 UI。 此外，还可以在资产上或每个资产后面的单个图像上设置属性，以更改显示这些资产时和方式。
+   图像清单 (。 imagemanifest) 文件是 XML 文件，用于定义一组图像资产、表示这些资产的名字对象以及表示每个资产的真实图像或图像。 图像清单可以为旧版 UI 支持定义单独的图像或图像列表。 此外，还可以在资产上或每个资产后面的单个图像上设置属性，更改这些资产的显示时间和方式。
 
    **映像清单架构**
 
@@ -60,7 +60,7 @@ ms.locfileid: "121359364"
 
  **符号**
 
- 作为可读性和维护辅助，映像清单可以将符号用于属性值。 符号定义如下：
+ 作为可读性和维护帮助，图像清单可以使用符号作为属性值。 符号定义如下：
 
 ```xml
 <Symbols>
@@ -73,12 +73,12 @@ ms.locfileid: "121359364"
 
 |**子元素**|**定义**|
 |-|-|
-|导入|导入给定清单文件的符号，以用于当前清单。|
-|Guid|符号表示 GUID，并且必须与 GUID 格式匹配。|
-|ID|符号表示一个 ID，并且必须是非正整数。|
-|String|符号表示任意字符串值。|
+|导入|导入给定清单文件的符号，以便在当前清单中使用。|
+|Guid|符号表示 GUID 并且必须与 GUID 格式匹配。|
+|ID|符号表示 ID，必须为非负整数。|
+|字符串|符号表示任意字符串值。|
 
- 符号区分大小写，使用 $ (符号名称和语法) 引用：
+ 符号区分大小写，并使用 $ (符号名) 语法进行引用：
 
 ```xml
 <Image Guid="$(ShellCommandGuid)" ID="$(cmdidSaveAll)" >
@@ -86,23 +86,23 @@ ms.locfileid: "121359364"
 </Image>
 ```
 
- 某些符号已针对所有清单进行预定义。 这些可在 或 元素的 Uri \<Source> 属性 \<Import> 中用于引用本地计算机上的路径。
+ 某些符号是为所有清单预定义的。 它们可在或元素的 Uri 特性中使用 \<Source> \<Import> ，以引用本地计算机上的路径。
 
 |**符号**|**说明**|
 |-|-|
-|CommonProgramFiles|%CommonProgramFiles% 环境变量的值|
-|LocalAppData|%LocalAppData% 环境变量的值|
+|CommonProgramFiles|% CommonProgramFiles% 环境变量的值|
+|LocalAppData|% LocalAppData% 环境变量的值|
 |ManifestFolder|包含清单文件的文件夹|
-|MyDocuments|当前用户我的文档文件夹的完整路径|
-|ProgramFiles|%ProgramFiles% 环境变量的值|
-|系统|Windows\System32 文件夹|
-|WinDir|%WinDir% 环境变量的值|
+|MyDocuments|当前用户的 "我的文档" 文件夹的完整路径|
+|ProgramFiles|% ProgramFiles% 环境变量的值|
+|系统|Windows \System32 文件夹|
+|WinDir|% WinDir% 环境变量的值|
 
  **图像**
 
- \<Image>元素定义一个可通过名字对象引用的图像。 GUID 和 ID 共同构成了图像名字对象。 图像的名字对象在整个图像库中必须是唯一的。 如果多个映像具有给定的名字对象，则生成库时遇到的第一个映像是保留的映像。
+ \<Image>元素定义可由名字对象引用的图像。 同时占用图像名字对象的 GUID 和 ID。 映像的名字对象在整个图像库中必须是唯一的。 如果有多个映像具有给定名字对象，则在生成库时遇到的第一个映像是保留的映像。
 
- 它必须包含至少一个源。 尽管与大小无关的源可跨各种大小提供最佳结果，但这不是必需的。 如果要求服务提供未在 元素中定义的大小的图像，并且没有与大小无关的源，则服务将选择特定于大小的最佳源，并缩放到 \<Image> 请求的大小。
+ 它必须至少包含一个源。 虽然非特定大小的源将在各种大小范围内提供最佳结果，但它们并不是必需的。 如果请求服务的映像的大小未在元素中定义 \<Image> ，并且没有大小中立的源，则该服务将选择最佳的大小特定源，并将其缩放为请求的大小。
 
 ```xml
 <Image Guid="guid" ID="int" AllowColorInversion="true/false">
@@ -113,13 +113,13 @@ ms.locfileid: "121359364"
 
 |**Attribute**|**定义**|
 |-|-|
-|Guid|[必需]图像名字对象的 GUID 部分|
-|ID|[必需]图像名字对象的 ID 部分|
-|AllowColorInversion|[可选，默认为 true]指示在深色背景上使用图像时，是否可以以编程方式反转其颜色。|
+|Guid|请求图像名字对象的 GUID 部分|
+|ID|请求图像名字对象的 ID 部分|
+|AllowColorInversion|[可选，默认值为 true]指示在深色背景上使用时，图像是否可以通过编程方式进行反转。|
 
  **Source**
 
- 元素 \<Source> 定义 XAML 和 PNG (单个图像源) 。
+ \<Source>元素定义单个图像源资产 (XAML 和 PNG) 。
 
 ```xml
 <Source Uri="uri" Background="background">
@@ -129,17 +129,17 @@ ms.locfileid: "121359364"
 
 |**Attribute**|**定义**|
 |-|-|
-|Uri|[必需]一个 URI，用于定义可以从何处加载映像。 该参数可以是下列值之一：<br /><br /> - [使用证书](/dotnet/framework/wpf/app-development/pack-uris-in-wpf) 颁发机构 application:/// URI<br /><br /> - 绝对组件资源引用<br /><br /> - 包含本机资源的文件的路径|
-|背景|[可选]指示源使用的背景类型。<br /><br /> 该参数可以是下列值之一：<br /><br /> - *浅* 色：源可用于浅色背景。<br /><br /> - *深色*：源可用于深色背景。<br /><br /> - *HighContrast：* 源可以在任何背景上用于高对比度模式。<br /><br /> - *HighContrastLight：* 源可以在浅色背景上用于高对比度模式。<br /><br /> -*HighContrastDark：* 源可以在深色背景上以高对比度使用。<br /><br /> 如果 **省略 Background** 属性，则源可用于任何背景。<br /><br /> 如果 **背景** 为 *浅* 色 *、* 深色、 *高ContrastLight* 或 *HighContrastDark，* 则源的颜色永远不会反转。 如果 **省略 Background** 或设置为 *HighContrast，* 则源颜色的反转由图像的 **AllowColorInversion** 属性控制。|
+|Uri|请求一个 URI，用于定义图像的加载位置。 该参数可以是下列值之一：<br /><br /> -使用 application:///机构的[PACK URI](/dotnet/framework/wpf/app-development/pack-uris-in-wpf)<br /><br /> -绝对组件资源引用<br /><br /> -指向包含本机资源的文件的路径|
+|背景|可有可无指示源要使用的背景类型。<br /><br /> 该参数可以是下列值之一：<br /><br /> - *浅*：源可在浅色背景上使用。<br /><br /> - *深色*：可在深色背景上使用源。<br /><br /> - *System.windows.forms.systeminformation.highcontrast*：源可在高对比度模式下的任何背景上使用。<br /><br /> - *HighContrastLight*：在高对比度模式下，可在浅色背景上使用源。<br /><br /> -*HighContrastDark*：在高对比度模式下，可以在深色背景上使用源。<br /><br /> 如果省略 **背景** 属性，则可以在任何背景上使用源。<br /><br /> 如果 **背景** 为 *浅*、 *暗*、 *HighContrastLight* 或 *HighContrastDark*，则源的颜色永远不会反转。 如果省略背景或将 **背景** 设置为 *system.windows.forms.systeminformation.highcontrast*，则源颜色的反转由图像的 **AllowColorInversion** 属性控制。|
 
- 元素 \<Source> 只能有以下可选子元素之一：
+ \<Source>元素可以具有以下一个可选子元素：
 
 |**元素**|**属性 (所有必需的)**|**定义**|
 |-|-|-|
-|\<Size>|值|源将用于给定大小图像（ (设备单位) 。 图像将为正方形。|
-|\<SizeRange>|MinSize、MaxSize|源将用于从 MinSize 到 MaxSize (设备单位（含) 图像）。 图像将为正方形。|
-|\<Dimensions>|Width, Height|源将用于给定宽度和高度的图像， (设备单位) 。|
-|\<DimensionRange>|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|源将用于从最小宽度/高度到最大宽度/高度（以设备单位为单位 (（含) ）的图像。|
+|\<Size>|值|源将用于设备单位)  (给定大小的图像。 图像将为方形。|
+|\<SizeRange>|MinSize，MaxSize|源将用于 MinSize 中的到 MaxSize (的图像，) 包括在内。 图像将为方形。|
+|\<Dimensions>|Width, Height|源将用于以设备单位)  (给定的宽度和高度的图像。|
+|\<DimensionRange>|MinWidth、MinHeight、<br /><br /> MaxWidth、MaxHeight|源将用于从最小宽度/高度到最大宽度/高度的图像，以设备单位 (（含) 为单位）。|
 
  \<Source>元素还可以具有可选的子元素，该子元素定义从本机程序集而不是托管程序集 \<NativeResource> \<Source> 加载的 。
 
@@ -202,7 +202,7 @@ ms.locfileid: "121359364"
 
  **搜索图像目录 KnownMonikers**
 
- 为了更好地匹配Visual Studio样式，Visual Studio扩展可以使用映像目录中Visual Studio图像，而不是创建和使用自己的图像。 这样做的好处是无需维护这些图像，并且保证图像具有高 DPI 支持图像，因此在支持的所有 DPI 设置中Visual Studio正确。
+ 为了更好地匹配Visual Studio样式，Visual Studio扩展可以使用映像目录中Visual Studio图像，而不是创建和使用自己的图像。 这样做的好处是无需维护这些图像，并且保证图像具有高 DPI 支持图像，因此，该图像在支持的所有 DPI 设置中Visual Studio正确。
 
  图像库查看器允许搜索清单，以便用户可以找到表示图像资产的名字对象，并使用该名字对象在代码中。 若要搜索图像，请在搜索框中输入所需的搜索词，然后按 Enter。 底部的状态栏将显示在所有清单中发现的图像总数中的匹配项数。
 
@@ -220,7 +220,7 @@ ms.locfileid: "121359364"
 
 ## <a name="notes"></a>说明
 
-- 默认情况下，该工具将拉取映像安装目录中Visual Studio清单。 只有 **Microsoft.VisualStudio.ImageCatalog** 清单具有可公开使用的名字对象。 GUID：ae27a6b0-e345-4288-96df-5eaf394ee369 (**请勿** 在自定义清单) 类型： KnownMonikers 中重写此 GUID
+- 默认情况下，该工具将拉取安装目录中Visual Studio清单。 只有 **Microsoft.VisualStudio.ImageCatalog** 清单具有可公开使用的名字对象。 GUID：ae27a6b0-e345-4288-96df-5eaf394ee369 (**请勿** 在自定义清单中重写此 GUID) 类型： KnownMonikers
 
 - 该工具在启动时尝试加载找到的所有映像清单，因此应用程序可能需要几秒钟时间，应用程序实际显示。 加载清单时，它也可能很慢或无响应。
 

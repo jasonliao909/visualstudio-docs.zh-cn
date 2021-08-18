@@ -1,6 +1,6 @@
 ---
 title: 如何：向"项目"SharePoint添加|Microsoft Docs
-description: 使用项目扩展将属性添加到SharePoint项目。 在项目中选择属性窗口时，属性将显示在解决方案资源管理器。
+description: 使用项目扩展将属性添加到SharePoint项目。 在项目名称中选择属性窗口时，属性将显示在解决方案资源管理器。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c6b7e0d5a361321f1173688c8501a97d14b7e326119c4854c0fcd4310f1ac5ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9daebc52f63acdf6e165ea162c90189fab534193
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149021"
 ---
 # <a name="how-to-add-a-property-to-sharepoint-projects"></a>如何：向项目SharePoint属性
-  可以使用项目扩展将属性添加到任何SharePoint项目。 在 "属性 **"** 窗口中选择项目时， 属性 **解决方案资源管理器。**
+  可以使用项目扩展将属性添加到任何SharePoint项目。 在 "属性 **"** 窗口中选择项目时， **该属性将显示在** 解决方案资源管理器。
 
  以下步骤假定已创建项目扩展。 有关详细信息，请参阅[如何：创建SharePoint扩展。](../sharepoint/how-to-create-a-sharepoint-project-extension.md)
 
@@ -38,7 +38,7 @@ ms.locfileid: "121425331"
 3. 在 事件的事件处理程序中，将 properties 类的实例添加到事件参数 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectEvents.ProjectPropertiesRequested> <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectPropertiesRequestedEventArgs.PropertySources%2A> 参数的集合。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示如何向项目添加两SharePoint属性。 一个属性将数据持久保存于 *.csproj.user 文件或 .vbproj.user*  (中的项目用户选项) 。 另一个属性在 *.csproj 文件或 .vbproj* (文件中保留其) 。
+ 下面的代码示例演示如何向项目添加两SharePoint属性。 一个属性将数据持久保存于 *.csproj.user 文件或 .vbproj.user*  (中的项目用户选项) 。 另一个属性在 *.csproj 文件或 .vbproj* 文件 (中保存其) 。
 
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/customspproperty/customproperty.vb" id="Snippet1":::
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/customspproperty/customproperty.cs" id="Snippet1":::

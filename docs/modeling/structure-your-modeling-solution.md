@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 4fa1a9136d4972897231a33fe477514769b9330e38fd9fad46bac196624c5278
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4937ad4322d7aed06890c138d70c66a577540153
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040068"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 

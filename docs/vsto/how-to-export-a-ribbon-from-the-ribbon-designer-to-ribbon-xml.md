@@ -19,14 +19,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1514410094deaf9c77e088c3b69e2d39d29175c2
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 88c4e0be4ccab3d83c7dcd9ebe024493d2beab52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046823"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：将功能区从功能区设计器导出到功能区 XML
   **功能区 (可视化设计器)** 项不支持功能区自定义项的所有可能的类型。 若要以高级方式自定义功能区，可以将功能区从设计器导出到功能区 XML，并直接编辑 XML。
@@ -42,7 +43,7 @@ ms.locfileid: "107825584"
 
 2. 右键单击功能区设计器，然后单击 " **将功能区导出到 XML**"。
 
-     Visual Studio 将功能区 XML 文件和功能区 XML 代码文件添加到项目。
+     Visual Studio 将功能区 xml 文件和功能区 xml 代码文件添加到项目。
 
 3. 在功能区代码类中，找到以开头的注释 `TODO:` 。
 
@@ -67,7 +68,7 @@ ms.locfileid: "107825584"
 
      有关编写回调方法和使用 RibbonX 编程模型的信息，请参阅 [功能区 XML](../vsto/ribbon-xml.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

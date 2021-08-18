@@ -9,14 +9,15 @@ ms.assetid: 2dfed0be-6972-4bec-baec-f0b78df9ef97
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8bf2199766cd0e78940c38e8441fe9fb0ab3c320
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d3bd84eff7b52c48ad9f419e3d69e3a57fed485c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103619"
 ---
 # <a name="idebugtypefieldbuilder"></a>IDebugTypeFieldBuilder
 表示创建表示类型的字段的功能。

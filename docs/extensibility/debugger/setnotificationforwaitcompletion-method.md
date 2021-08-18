@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 53ebe51ed6896cb8c8130c0489c2fc6aadcb554f6294c1d246f03ff349e82d31
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88a0140ce27816592a7c43f1304f16638a2935b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338093"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102878"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 设置或清除TASK_STATE_WAIT_COMPLETION_NOTIFICATION位。

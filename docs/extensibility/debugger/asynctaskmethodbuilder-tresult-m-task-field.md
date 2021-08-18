@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23a5f53a305d731bf35e4d5c9a634db86c93ac5b3f55c973ffa9808ffcfbc3a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0ac2fdae74e497149648742dbca352f2e5d8cdb1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089597"
 ---
 # <a name="asynctaskmethodbuilderlttresultgtm_task-field"></a>AsyncTaskMethodBuilder &lt; TResult &gt; .m_task 字段
 表示延迟初始化的生成任务。

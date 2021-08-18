@@ -14,19 +14,20 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 17d9ac144b97c090292395dd5ae5e85319dd1308
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: cde438dc6a43f158d119ac380a28bd276c04c7e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149086"
 ---
 # <a name="how-to-add-a-property-to-a-custom-sharepoint-project-item-type"></a>如何：向自定义 SharePoint 项目项类型添加属性
   定义自定义 SharePoint 项目项类型时，可以将属性添加到项目项。 在 **解决方案资源管理器** 中选择项目项时，属性将显示在 "**属性**" 窗口中。
 
- 以下步骤假定您已定义了自己的 SharePoint 项目项类型。 有关详细信息，请参阅 [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
+ 以下步骤假定您已定义了自己的 SharePoint 项目项类型。 有关详细信息，请参阅[如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)。
 
 ### <a name="to-add-a-property-to-a-definition-of-a-project-item-type"></a>将属性添加到项目项类型的定义中
 
@@ -43,9 +44,9 @@ ms.locfileid: "106215508"
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet11":::
 
 ### <a name="understand-the-code"></a>了解代码
- 若要确保 `CustomProperties` 每次发生事件时均使用该类的同一实例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，则在第一次发生此事件时，该代码示例会将 properties 对象保存到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 每当再次发生此事件时，代码就会检索此对象。 有关使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性将数据保存到项目项的详细信息，请参阅 [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 若要确保 `CustomProperties` 每次发生事件时均使用该类的同一实例 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemEvents.ProjectItemPropertiesRequested> ，则在第一次发生此事件时，该代码示例会将 properties 对象保存到 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 项目项的属性。 每当再次发生此事件时，代码就会检索此对象。 有关使用 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> 属性保存项目项的数据的详细信息，请参阅[将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
 
- 若要将更改保存到属性值，则的 **set** 访问器用于将 `ExampleProperty` 新值保存到 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 与属性关联的对象的属性。 若要详细了解如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 属性来保存带有项目项的数据，请参阅 [在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 若要将更改保存到属性值，则的 **set** 访问器用于将 `ExampleProperty` 新值保存到 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> 与属性关联的对象的属性。 若要详细了解如何使用 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> 属性来保存带有项目项的数据，请参阅[在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
 
 ### <a name="specify-the-behavior-of-custom-properties"></a>指定自定义属性的行为
  通过将命名空间中的特性应用于属性定义，可以定义自定义属性在 " **属性** " 窗口中的显示方式和行为方式 <xref:System.ComponentModel> 。 以下属性在许多情况下都很有用：
@@ -63,16 +64,16 @@ ms.locfileid: "106215508"
 ## <a name="compile-the-code"></a>编译代码
  这些代码示例需要一个类库项目，其中包含对以下程序集的引用：
 
-- VisualStudio
+- VisualStudio。SharePoint
 
 - System.ComponentModel.Composition
 
 ## <a name="deploy-the-project-item"></a>部署项目项
- 若要使其他开发人员可以使用您的项目项，请创建项目模板或项目项模板。 有关详细信息，请参阅 [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
+ 若要使其他开发人员可以使用您的项目项，请创建项目模板或项目项模板。 有关详细信息，请参阅为[SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
- 若要部署项目项，请为 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 程序集、模板和要与项目项分发的任何其他文件创建一个扩展 (VSIX) 包。 有关详细信息，请参阅 [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
+ 若要部署项目项，请为 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 程序集、模板和要与项目项分发的任何其他文件创建一个扩展 (VSIX) 包。 有关详细信息，请参阅[Visual Studio 中的 SharePoint 工具的部署扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：定义 SharePoint 项目项类型](../sharepoint/how-to-define-a-sharepoint-project-item-type.md)
 - [如何：向自定义 SharePoint 项目项类型添加快捷菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-custom-sharepoint-project-item-type.md)
 - [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)

@@ -1,6 +1,6 @@
 ---
-description: 跳过程序枚举中指定数量的元素。
-title: IEnumDebugPrograms2：： Skip |Microsoft Docs
+description: 跳过程序枚举中的指定元素数。
+title: IEnumDebugPrograms2：：Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: b283858b-b375-4760-bfec-ab37de89958d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5148308a2b489697df0410eba80a9478521b0215
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 12dc5daf48345685abf92d1665996acff2847d98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079938"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070446"
 ---
 # <a name="ienumdebugprograms2skip"></a>IEnumDebugPrograms2::Skip
-跳过指定数目的元素。
+跳过指定数量的元素。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int Skip(
 
 ## <a name="parameters"></a>参数
 `celt`\
-中要跳过的元素数。
+[in]要跳过的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果 `celt` 大于剩余元素的数目，则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果 `S_FALSE` `celt` 大于剩余元素的数量，则返回 ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
+ 如果 `celt` 指定一个大于剩余元素数的值，则枚举将设置为末尾并 `S_FALSE` 返回 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

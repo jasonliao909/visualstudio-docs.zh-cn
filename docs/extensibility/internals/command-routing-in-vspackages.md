@@ -1,6 +1,6 @@
 ---
-title: Vspackage 中的命令传送 |Microsoft Docs
-description: 了解 Vspackage 中的命令路由，以及如何根据在 Visual Studio 中执行这些命令的上下文来路由命令。
+title: VSPackages 中的命令|Microsoft Docs
+description: 了解 VSPackage 中的命令路由，以及如何根据命令在 VSPackage 中执行的上下文路由Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,22 +11,23 @@ ms.assetid: a9c7f9ae-3594-4557-a314-8cf76f5f8772
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 35ab5e7989fdeb46592f38cb7e55854885e076d1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 71c662fc268a5db121a7699e97e1fa03c364a785
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057294"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102813"
 ---
-# <a name="command-routing-in-vspackages"></a>Vspackage 中的命令传送
-命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 根据执行它的上下文进行路由。 它从初始上下文到全局上下文的外部路由。
+# <a name="command-routing-in-vspackages"></a>VSPackages 中的命令路由
+根据执行 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 命令的上下文在 中路由命令。 它从初始上下文向外路由到全局上下文。
 
 ## <a name="in-this-section"></a>本节内容
-- [命令传送算法](../../extensibility/internals/command-routing-algorithm.md)
+- [命令路由算法](../../extensibility/internals/command-routing-algorithm.md)
 
- 描述命令路由解决方案的顺序。
+ 描述命令路由解析的顺序。
 
 - [命令可用性](../../extensibility/internals/command-availability.md)
 
@@ -34,12 +35,12 @@ ms.locfileid: "105057294"
 
 - [使用互操作程序集的命令和菜单](../../extensibility/internals/commands-and-menus-that-use-interop-assemblies.md)
 
- 讨论托管代码与 COM 之间路由命令的注意事项。
+ 讨论在托管代码和 COM 之间路由命令的注意事项。
 
 ## <a name="related-sections"></a>相关章节
 - [选择上下文对象](../../extensibility/internals/selection-context-objects.md)
 
- 讨论如何在窗口上确定用户的选择上下文焦点的模型。
+ 讨论如何确定用户选择上下文焦点在窗口上的模型。
 
 - [命令、菜单和工具栏](../../extensibility/internals/commands-menus-and-toolbars.md)
 

@@ -1,6 +1,6 @@
 ---
-title: 旧版语言服务中的语句完成|Microsoft Docs
-description: 了解语句完成的工作原理以及如何在 VSPackage 中的旧版语言服务中实现它。
+title: 旧版语言服务中的语句完成 |Microsoft Docs
+description: 了解语句完成的工作原理，以及如何在 VSPackage 的旧版语言服务中实现它。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,30 +14,30 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4ba875b8835f323709926d1323a233ff148f2cb06057178c8e383cff19047483
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6b84a36b61aeed08de0aeb9c359fe9d32653e939
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432054"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137686"
 ---
 # <a name="statement-completion-in-a-legacy-language-service"></a>旧版语言服务中的语句完成
-语句完成是语言服务帮助用户完成开始在核心编辑器中键入的语言关键字或元素的过程。 本主题讨论语句完成的工作原理以及如何在语言服务中实现它。
+语句完成是语言服务帮助用户完成在核心编辑器中键入的语言关键字或元素的过程。 本主题讨论语句完成的工作原理以及如何在语言服务中实现它。
 
- 旧版语言服务作为 VSPackage 的一部分实现，但实现语言服务功能的较新方式是使用 MEF 扩展。 若要详细了解实现语句完成的新方法，请参阅 [演练：显示语句完成](../../extensibility/walkthrough-displaying-statement-completion.md)。
+ 旧版语言服务是作为 VSPackage 的一部分实现的，但实现语言服务功能的更新方法是使用 MEF 扩展。 若要了解有关实现语句结束的新方法的详细信息，请参阅 [演练：显示语句完成](../../extensibility/walkthrough-displaying-statement-completion.md)。
 
 > [!NOTE]
-> 建议尽快开始使用新的编辑器 API。 这将提高语言服务的性能，并让你能够利用新的编辑器功能。
+> 建议你尽快开始使用新的编辑器 API。 这将提高语言服务的性能，并使你能够利用新的编辑器功能。
 
 ## <a name="implementing-statement-completion"></a>实现语句完成
- 在核心编辑器中，语句完成会激活一个特殊的 UI，它以交互方式帮助你更轻松地快速编写代码。 语句完成有助于根据需要显示相关对象或类，这样可以避免你记住特定元素或在帮助参考主题中查找它们。
+ 在核心编辑器中，语句结束会激活一个特殊的 UI，该 UI 以交互方式帮助您更轻松、更快速地编写代码。 语句完成有助于在需要相关对象或类时显示这些对象或类，这样就不必记住特定元素，也不必在帮助参考主题中查找它们。
 
- 若要实现语句完成，你的语言必须具有可分析的语句完成触发器。 例如， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 使用点 (.) 运算符，而 使用 ( [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ->) 运算符。 语言服务可以使用多个触发器来启动语句完成。 这些触发器在命令筛选器中编程。
+ 若要实现语句完成，您的语言必须具有语句完成触发器，该触发器可以进行分析。 例如， [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 使用 ( 点 ) 运算符，而 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 使用箭头 ( >) 运算符。 语言服务可以使用多个触发器来启动语句完成。 这些触发器在命令筛选器中进行编程。
 
 ## <a name="command-filters-and-triggers"></a>命令筛选器和触发器
- 命令筛选器截获触发器或触发器的出现次数。 若要将命令筛选器添加到视图，请实现 接口，然后通过调用 方法 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 将其附加到 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 视图。 对于语言服务的所有方面（例如语句完成、错误标记和方法提示 () 使用相同的命令 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 筛选器筛选器。 有关详细信息，请参阅 [截获旧版语言服务命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)。
+ 命令筛选器会截获触发器或触发器的发生次数。 若要向视图添加命令筛选器，请实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口，并通过调用方法将其附加到视图 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.AddCommandFilter%2A> 。 你可以为语言服务的所有方面使用相同的命令筛选器 (<xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>) ，如语句完成、错误标记和方法提示。 有关详细信息，请参阅 [截获旧版语言服务命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)。
 
- 在编辑器中输入触发器（特别是文本缓冲区）时，语言服务随后调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 方法。 这将导致编辑器打开 UI，以便用户可以从语句完成候选项中选择。 此方法要求实现 和 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 标志作为参数。 完成项列表将显示在滚动列表框中。 随着用户继续键入，列表框中的选择将更新，以反映与键入的最新字符最接近的匹配项。 核心编辑器实现用于语句完成的 UI，但语言服务必须实现 接口，以定义语句 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 的一组候选完成项。
+ 当在编辑器中输入触发器时（特别是文本缓冲区），您的语言服务将调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextView.UpdateCompletionStatus%2A> 方法。 这将导致编辑器打开 UI，以便用户可以从语句完成候选项中进行选择。 此方法要求将 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 和 <xref:Microsoft.VisualStudio.TextManager.Interop.UpdateCompletionFlags> 标志作为参数实现。 完成项列表将显示在滚动列表框中。 用户继续键入内容时，会更新列表框中的选定内容，以反映最接近键入的最新字符的匹配项。 核心编辑器为语句完成实现 UI，但语言服务必须实现 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsCompletionSet> 接口才能定义语句的候选完成项集。
 
 ## <a name="see-also"></a>请参阅
 - [截获旧版语言服务命令](../../extensibility/internals/intercepting-legacy-language-service-commands.md)

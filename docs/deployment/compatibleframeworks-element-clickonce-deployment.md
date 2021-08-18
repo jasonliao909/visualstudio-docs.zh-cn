@@ -1,6 +1,6 @@
 ---
 title: '&lt;&gt; (ClickOnce 部署) 的 compatibleFrameworks 元素 |Microsoft Docs'
-description: CompatibleFrameworks 元素标识可以安装和运行此应用程序的 .NET Framework 的版本。
+description: compatibleFrameworks 元素标识可以安装和运行此应用程序的 .NET Framework 的版本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,15 @@ ms.assetid: f6c3ee55-9e65-403d-8664-3ebde872c7d4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b0a87e36a176a01b8f243c4646e2711220f807f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ed84d7f7ed60a95baba293a33059a05093400bbb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138923"
 ---
 # <a name="ltcompatibleframeworksgt-element-clickonce-deployment"></a>&lt;&gt; (ClickOnce 部署的 compatibleFrameworks 元素) 
 标识此应用程序可在其上安装和运行的 .NET Framework 版本。
@@ -74,5 +75,5 @@ ms.locfileid: "99881173"
 </compatibleFrameworks>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)

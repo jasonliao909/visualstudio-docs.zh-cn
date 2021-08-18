@@ -11,17 +11,18 @@ ms.assetid: e5a3345b-d460-4e40-8f5b-3111c56a2ed9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0fec6984ffc30c3c368193079fdabc1752f63a65
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bcf3fe8bc0c71340681e913dcbe117146944299d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065796"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089038"
 ---
 # <a name="idebugeventcallback2event"></a>IDebugEventCallback2::Event
 发送调试事件的通知。
@@ -82,7 +83,7 @@ int Event(
 
  所有调试事件都是异步发布的，而不管事件本身是否是异步的。 当 DE 调用此方法时，返回值不指示是否已处理事件，而只指示事件是否已收到。 事实上，在大多数情况下，此方法返回时尚未处理事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

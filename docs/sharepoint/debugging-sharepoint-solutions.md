@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 13b486f9975c6a8f42c638b1a2eac0f84c373bba22a003dc0dbf3f108e4fa2da
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 63ae84fb6b7450a65962383b986625945440e432
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425565"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149320"
 ---
 # <a name="debug-sharepoint-solutions"></a>调试 SharePoint 解决方案
   您可以使用调试器调试 SharePoint 解决方案 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 开始调试时， [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会将项目文件部署到 SharePoint 服务器，然后在 Web 浏览器中打开 SharePoint 网站的实例。 以下部分说明如何在中调试 SharePoint 的应用程序 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。

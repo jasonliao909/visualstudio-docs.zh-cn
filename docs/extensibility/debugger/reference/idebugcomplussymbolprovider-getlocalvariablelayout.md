@@ -1,6 +1,6 @@
 ---
-description: 检索一组方法的本地变量的布局。
-title: IDebugComPlusSymbolProvider：：GetLocalVariablelayout |Microsoft Docs
+description: 检索一组方法的局部变量布局。
+title: IDebugComPlusSymbolProvider：： GetLocalVariablelayout |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ad54f769814fd94085a22bd91737b7219bbd1ce7b00e1d94e54776a0b4ec8e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6729237033d16d15624cc98d1f42efad7cde2e3f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103892"
 ---
 # <a name="idebugcomplussymbolprovidergetlocalvariablelayout"></a>IDebugComPlusSymbolProvider::GetLocalVariablelayout
-检索一组方法的本地变量的布局。
+检索一组方法的局部变量布局。
 
 ## <a name="syntax"></a>语法
 
@@ -50,22 +50,22 @@ int GetLocalVariablelayout(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `guidModule`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 `cMethods`\
-[in]数组中的方法标记 `rgMethodTokens` 数。
+中数组中的方法标记数 `rgMethodTokens` 。
 
 `rgMethodTokens`\
-[in]方法标记的数组。
+中方法标记的数组。
 
 `pStreamLayout`\
-[out]包含变量布局的文本流。
+弄包含变量布局的文本流。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
