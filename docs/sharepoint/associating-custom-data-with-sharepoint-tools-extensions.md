@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: dcd6e00fa9a934a159b49aec225813cec92b08ec11076d29716c30e38e76a891
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6650af3f431fcd2168812be1d589050926ba2d5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121315338"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060370"
 ---
 # <a name="associate-custom-data-with-sharepoint-tools-extensions"></a>将自定义数据与 SharePoint 工具扩展相关联
   您可以将自定义数据添加到 SharePoint 工具扩展中的某些对象。 当你在扩展中的一个部分中包含要从扩展中的其他代码访问的数据时，这非常有用。 您可以将数据与扩展中的对象关联起来，然后在以后从同一对象中检索数据，而不是实现自定义方法来存储和访问数据。
@@ -83,7 +83,7 @@ ms.locfileid: "121315338"
   :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/projectitemmenuandproperty/extension/projectitemtypeproperty.vb" id="Snippet13":::
   :::code language="csharp" source="../sharepoint/codesnippet/CSharp/projectitemmenuandproperty/extension/projectitemtypeproperty.cs" id="Snippet13":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [SharePoint 工具扩展的编程概念和功能](../sharepoint/programming-concepts-and-features-for-sharepoint-tools-extensions.md)
 - [演练：使用项模板创建自定义操作项目项（第1部分）](../sharepoint/walkthrough-creating-a-custom-action-project-item-with-an-item-template-part-1.md)
 - [演练：扩展服务器资源管理器以显示 web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)

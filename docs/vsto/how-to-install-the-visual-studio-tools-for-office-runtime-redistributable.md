@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8850259e152bcd88fe1b20d9db9a9dd0ed1b3e29eb64d08d58148ef0a3983559
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c9c74cd354f89725352c5c8b22557956fcd9624c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351936"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083474"
 ---
 # <a name="how-to-install-the-visual-studio-tools-for-office-runtime-redistributable"></a>如何：安装Visual Studio Tools for Office可再发行组件
   必须在Visual Studio开发人员工具创建的Office计算机上安装适用于 Office Microsoft Office 运行时的 2010 工具 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 安装 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 和 Microsoft Office 时会自动安装运行时。 有关详细信息，请参阅 Visual Studio Tools for Office[安装方案](../vsto/visual-studio-tools-for-office-runtime-installation-scenarios.md)。
@@ -52,7 +52,7 @@ ms.locfileid: "121351936"
 
      可以从[2010 Tools for Visual Studio 运行时 下载Office文件](https://www.microsoft.com/download/details.aspx?id=56961)。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 的先决条件与 .NET Framework 的先决条件相匹配。
 
-     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包括语言包。 如果 Windows 安装设置为非英语语言，则可以以 Windows 使用的语言显示运行时消息。 同样，如果最终用户安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然后在设置为非英语语言的 Windows 安装上运行你的解决方案，则运行时消息将以与 Windows 相同的语言显示。 在某些情况下，可能需要其他语言包。 例如，如果你的 Windows使用多个语言设置，或者安装 后切换到另一种语言，则你可能需要其他语言包 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 可以在 Microsoft Visual Studio [2010 工具（Microsoft Office 4.0](https://www.microsoft.com/download/details.aspx?id=54246) (运行时语言包）) 语言包。
+     [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包括语言包。 如果 Windows 安装设置为非英语语言，则可以以 Windows 使用的语言显示运行时消息。 同样，如果最终用户安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]，然后在设置为非英语语言的 Windows 安装上运行你的解决方案，则运行时消息将以与 Windows 相同的语言显示。 在某些情况下，可能需要其他语言包。 例如，如果你的 Windows使用多个语言设置，或者安装 后切换到另一种语言，则你可能需要其他语言包 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 可以在适用于 Microsoft Office Microsoft Office 4.0 (运行时语言包 的 Microsoft Visual Studio [2010 工具) 语言包](https://www.microsoft.com/download/details.aspx?id=54246)。
 
 ## <a name="see-also"></a>请参阅
 - [开始&#40;Office开发Visual Studio&#41;](../vsto/getting-started-office-development-in-visual-studio.md)

@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: dcb73396c1c73c69c851134dac3302f9e0ffbae5bc3d7c67a4cccfa171b14e53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a8cf9b5aa392e04865b0755fdc7dc8933c77bac1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409652"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135892"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>为解决方案创建SharePoint验证
 

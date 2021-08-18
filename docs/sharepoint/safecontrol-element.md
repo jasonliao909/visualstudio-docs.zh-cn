@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 04db1be46cbc2ff3830b00f9c3866e2859485a6f755514ea28333cada757190d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cdcd591ff2e742296a23fdf9dfa1d6324bf1e1bf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121244168"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092821"
 ---
 # <a name="safecontrol-element"></a>SafeControl 元素
   表示一个 ASPX 控件或 Web 部件，它被指定为在 SharePoint 站点上的任何 ASPX 页上访问的安全。

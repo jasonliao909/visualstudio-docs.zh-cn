@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 471f5e2981f9b52df8af7680a23a92349264e6b0aa945282238a5c04341bc2f4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a35af9a88d42bcc413c5c926d74f34b840d4ea59
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376165"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110483"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 菜单的 guid 和 id
 本文枚举 Visual Studio 菜单栏上的菜单和组的 GUID 和 ID 值。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -39,7 +39,7 @@ ms.locfileid: "121376165"
 |-----------|--------|
 |文件/编辑/查看|IDG_VS_MM_FILEEDITVIEW|
 |重构|IDG_VS_MM_REFACTORING：|
-|项目|IDG_VS_MM_PROJECT|
+|Project|IDG_VS_MM_PROJECT|
 |构建|IDG_VS_MM_BUILDDEBUGRUN|
 |格式/工具|IDG_VS_MM_TOOLSADDINS|
 |Window/Help/Community|IDG_VS_MM_WINDOWHELP|
@@ -55,11 +55,11 @@ ms.locfileid: "121376165"
 |编辑|IDM_VS_MENU_EDIT|
 |查看|IDM_VS_MENU_VIEW|
 |重构|IDM_VS_MENU_REFACTORING|
-|项目|IDM_VS_MENU_PROJECT|
+|Project|IDM_VS_MENU_PROJECT|
 |构建|IDM_VS_MENU_BUILD|
 |格式|IDM_VS_MENU_FORMAT|
 |工具|IDM_VS_MENU_TOOLS|
-|Extensions|IDM_VS_MENU_EXTENSIONS|
+|扩展|IDM_VS_MENU_EXTENSIONS|
 |窗口|IDM_VS_MENU_WINDOW|
 |加载项|IDM_VS_MENU_ADDINS|
 |社区|IDM_VS_MENU_COMMUNITY|
@@ -95,7 +95,7 @@ ms.locfileid: "121376165"
 |查找|IDG_VS_EDIT_FIND|
 |对象|IDG_VS_EDIT_OBJECTS|
 |OLE 谓词|IDG_VS_EDIT_OLEVERBS|
-|命令良好|IDG_VS_EDIT_COMMANDWELL|
+|命令井|IDG_VS_EDIT_COMMANDWELL|
 
 ### <a name="refactor-menu-groups"></a>重构菜单组
 
@@ -108,24 +108,24 @@ ms.locfileid: "121376165"
 
 |组|ID|
 |-----------|--------|
-|表单代码|IDG_VS_VIEW_FORMCODE|
+|窗体代码|IDG_VS_VIEW_FORMCODE|
 |浏览者|IDG_VS_VIEW_BROWSER|
 |定义视图|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
-|架构师 Windows|IDG_VS_VIEW_ARCH_WINDOWS|
-|组织 Windows|IDG_VS_VIEW_ORG_WINDOWS|
+|架构师Windows|IDG_VS_VIEW_ARCH_WINDOWS|
+|组织Windows|IDG_VS_VIEW_ORG_WINDOWS|
 |代码浏览器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
-|开发 Windows|IDG_VS_VIEW_DEV_WINDOWS|
+|开发Windows|IDG_VS_VIEW_DEV_WINDOWS|
 |工具栏|IDG_VS_VIEW_TOOLBARS|
 |符号|IDG_VS_VIEW_SYMBOLNAVIGATE|
 |导航|IDG_VS_VIEW_NAVIGATE|
-|小型导航|IDG_VS_VIEW_SMALLNAVIGATE|
+|小导航|IDG_VS_VIEW_SMALLNAVIGATE|
 |对象浏览器|IDG_VS_VIEW_OBJBRWSR|
-|命令良好|IDG_VS_VIEW_COMMANDWELL|
+|命令井|IDG_VS_VIEW_COMMANDWELL|
 |属性页|IDG_VS_VIEW_PROPPAGES|
 |刷新|IDG_VS_VIEW_REFRESH|
 
-### <a name="project-menu-groups"></a>Project 菜单组
+### <a name="project-menu-groups"></a>Project菜单组
 
 |组|ID|
 |-----------|--------|
@@ -144,10 +144,10 @@ ms.locfileid: "121376165"
 |解决方案|IDG_VS_BUILD_SOLUTION|
 |选择|IDG_VS_BUILD_SELECTION|
 |按配置优化|IDG_VS_PGO_SELECTION|
-|杂项|IDG_VS_BUILD_MISC|
+|其他|IDG_VS_BUILD_MISC|
 |取消|IDG_VS_BUILD_CANCEL|
 
-### <a name="tools-menu-groups"></a>工具菜单组
+### <a name="tools-menu-groups"></a>"工具"菜单组
 
 |组|ID|
 |-----------|--------|
@@ -155,15 +155,15 @@ ms.locfileid: "121376165"
 |代码片段|IDG_VS_TOOLS_SNIPPETS|
 |对象子集|IDG_VS_TOOLS_OBJSUBSET|
 |选项|IDG_VS_TOOLS_OPTIONS|
-|其他2|IDG_VS_TOOLS_OTHER2|
+|其他 2 个|IDG_VS_TOOLS_OTHER2|
 |外部工具|IDG_VS_TOOLS_EXT_TOOLS|
-|外部自定义|IDG_VS_TOOLS_EXT_CUST|
+|外部自定义项|IDG_VS_TOOLS_EXT_CUST|
 
 ### <a name="window-menu-groups"></a>窗口菜单组
 
 |组|ID|
 |-----------|--------|
-|新出现|IDG_VS_WINDOW_NEW|
+|新建|IDG_VS_WINDOW_NEW|
 |停靠/关闭|IDG_VS_DOCKCLOSE|
 |停靠/隐藏|IDG_VS_DOCKHIDE|
 |排列|IDG_VS_WINDOW_ARRANGE|

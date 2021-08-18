@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8b8273d5eeaaa1e08ea2a8eae07d3831de6d0faa6259ccb32f25ae981ef57c1c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 34de9b336138ca85e96be835ba71fc86a4797810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225642"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135554"
 ---
 # <a name="windows-forms-controls-on-office-documents-overview"></a>Windows文档上的窗体Office概述
   Windows 窗体控件是用户可与之交互以便输入或操作数据的对象。 在 Microsoft Office Excel 和 Microsoft Office Word 的文档级项目中，你可以在设计时向项目中的文档或工作簿添加 Windows 窗体控件，也可以在运行时以编程方式添加这些控件。 你可以以编程方式将这些控件运行时添加到任何打开的文档或工作表中，VSTO或 Word Excel中。
@@ -151,18 +151,18 @@ ms.locfileid: "121225642"
 
 ## <a name="see-also"></a>请参阅
 - [文档上的Office控件](../vsto/controls-on-office-documents.md)
-- [运行时向Office文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [运行时向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [操作窗格概述](../vsto/actions-pane-overview.md)
 - [Windows 窗体控件](/dotnet/framework/winforms/controls/index)
-- [文档Windows窗体控件Office限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
-- [如何：添加Windows窗体控件以Office文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [如何：调整工作表单元格中的控件大小](../vsto/how-to-resize-controls-within-worksheet-cells.md)
-- [如何：打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
-- [演练：使用 CheckBox 控件更改工作表格式设置](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
+- [如何：在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)
+- [演练：使用 CheckBox 控件更改工作表格式](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)
 - [演练：使用 CheckBox 控件更改文档格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)
 - [演练：使用按钮在工作表的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-worksheet-using-a-button.md)
-- [演练：使用按钮在文档中的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
-- [文档Windows窗体控件Office限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [演练：使用按钮在文档的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)
+- [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
 - [演练：使用单选按钮更新文档中的图表](../vsto/walkthrough-updating-a-chart-in-a-document-using-radio-buttons.md)
 - [演练：使用单选按钮更新工作表中的图表](../vsto/walkthrough-updating-a-chart-in-a-worksheet-using-radio-buttons.md)
