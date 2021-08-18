@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 63179ad1ca7c6e5f3c2a8173439bb5a4e2c915f6e4ae22578003b18a63259df6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cad76bf7158357a8087fbf075a5682ff88e17294
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064846"
 ---
 # <a name="idebugaliasgetname"></a>IDebugAlias::GetName
 获取此别名的名称。

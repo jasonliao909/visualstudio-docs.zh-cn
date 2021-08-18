@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 358d0301ae0fc3ad0d9c35ede96734288836fb896b755d8c3fa6f128cf3e10e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b95c08ab5adc5140bfcfc21b9e9fa7cc9f46c78a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064989"
 ---
 # <a name="getname_type"></a>GETNAME_TYPE
 指定要检索的文件的名称类型。
@@ -62,7 +62,7 @@ public enum enum_GETNAME_TYPE {
 指定文档或上下文的完整路径。
 
 `GN_BASENAME`\
-指定基文件名，而不是文档或上下文的完整路径。
+指定基本文件名，而不是文档或上下文的完整路径。
 
 `GN_MONIKERNAME`\
 以名字对象的形式指定文档或上下文的唯一名称。
@@ -71,20 +71,20 @@ public enum enum_GETNAME_TYPE {
 指定文档或上下文的 URL 名称。
 
 `GN_TITLE`\
-指定文档的标题（如果有）。
+指定文档的标题（如果存在）。
 
 `GN_STARTPAGEURL`\
-获取进程的起始页 URL。
+获取进程起始页 URL。
 
 ## <a name="remarks"></a>备注
-这些值作为参数传递到 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)、 [GetName](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md)和 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 方法，以指定要返回的名称的类型。
+这些值作为参数传递给[GetName、GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md)和[](../../../extensibility/debugger/reference/idebugdocumentcontext2-getname.md) [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md)方法，以指定要返回的名称类型。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
