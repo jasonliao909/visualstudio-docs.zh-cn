@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5af73031750a19fd3fe42ae78d44540ad347d2e7848e440d444b57721dc51022
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 40ca1ca19e15e0e25e4decf6a3b932a3bcbf78b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332386"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149437"
 ---
 # <a name="create-site-columns-content-types-and-lists-for-sharepoint"></a>创建 SharePoint 的站点栏、内容类型和列表
   Visual Studio 为许多不同的基本 SharePoint 项（包括 *列表* 和 *内容类型*）提供项目项模板，这两者都可以将网站列 (或 *字段*) 中。 用于内容类型和列表的新设计器可更简单地创建这些项。
@@ -52,5 +52,5 @@ ms.locfileid: "121332386"
 |-----------|-----------------|
 |[演练：创建 SharePoint 的网站栏、内容类型和列表](../sharepoint/walkthrough-create-a-site-column-content-type-and-list-for-sharepoint.md)|演示如何创建网站栏以用于自定义内容类型。 此内容类型随后将用于自定义列表。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [入门SharePoint 2010 上的开发](/sharepoint/dev/)

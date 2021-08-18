@@ -1,6 +1,6 @@
 ---
-title: Buttons 元素|Microsoft Docs
-description: Buttons 元素对表示单个命令的 Button 元素进行分组。 本文包含一个示例。
+title: 按钮元素 |Microsoft Docs
+description: Button 元素对表示各个命令的 Button 元素进行分组。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 9f2cf94d-dec5-4776-a836-9a89c75f0c87
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2952f9f6747e52604e9f24cd173ab07f8d5a4756
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: acb2ece6603a4b9707a02f510d50488e93c8e1de
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900793"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089753"
 ---
-# <a name="buttons-element"></a>Buttons 元素
-对 [表示单个](../extensibility/button-element.md) 命令的 Button 元素进行分组。
+# <a name="buttons-element"></a>按钮元素
+组 [Button](../extensibility/button-element.md) 元素，用于表示各个命令。
 
 ## <a name="syntax"></a>语法
 
@@ -39,20 +40,20 @@ ms.locfileid: "112900793"
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[Buttons 元素](../extensibility/buttons-element.md)|对 Button 元素进行分组。|
-|[Button 元素](../extensibility/button-element.md)|定义用户可与之交互的命令。|
+|[按钮元素](../extensibility/buttons-element.md)|组按钮元素。|
+|[Button 元素](../extensibility/button-element.md)|定义可与用户交互的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令集合。|
+|[命令元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
 
 ## <a name="example"></a>示例
 
@@ -68,6 +69,6 @@ ms.locfileid: "112900793"
 </Buttons>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [VSPackages 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>请参阅
+- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

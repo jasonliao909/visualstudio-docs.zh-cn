@@ -12,14 +12,15 @@ ms.assetid: 2a5f04b8-6c65-4232-bddd-9093653a22c4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: de0e052fd42f1603889f7521a1e45e50b0f36eea
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 07f0db5c24f8f9251d503162f0581aad454b0b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102864"
 ---
 # <a name="sample-implementation-of-expression-evaluation"></a>表达式计算的实现示例
 > [!IMPORTANT]

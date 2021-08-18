@@ -12,14 +12,15 @@ ms.assetid: 34fe5b58-15d5-4387-a266-72120f90a4b6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 932bebecf4eea73cfae579bbea58e024b4388ffb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7dbf82e8586dbd12b99b2c360b1da3fb021133d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089428"
 ---
 # <a name="expression-evaluation-in-break-mode"></a>中断模式下的表达式计算
 以下部分介绍调试器处于中断模式时，必须执行表达式计算的过程。
@@ -41,5 +42,5 @@ ms.locfileid: "105067863"
 
     - 使用时 `IDebugExpression2::EvaluateAsync` ，给定的回调接口会传达正在进行的计算过程。 完成评估后，EvaluateAsync 将通过回调发送 [IDebugExpressionEvaluationCompleteEvent2](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2.md) 接口。 对于此事件接口，最终值为 [GetResult](../../extensibility/debugger/reference/idebugexpressionevaluationcompleteevent2-getresult.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

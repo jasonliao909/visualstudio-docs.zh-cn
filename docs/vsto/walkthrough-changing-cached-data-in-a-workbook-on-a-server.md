@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 03e0a76e71fd7cab0eb66ed3cd468447e9d658a253ab06f09d9e958984435653
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a98370ee84f914b5f556276a6d83d7713246d615
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384036"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032090"
 ---
 # <a name="walkthrough-change-cached-data-in-a-workbook-on-a-server"></a>演练：更改服务器上工作簿中的缓存数据
   本演练演示如何修改缓存在 Microsoft Office Excel 工作簿中的数据集，而无需Excel 类启动 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 数据。
@@ -87,7 +87,7 @@ ms.locfileid: "121384036"
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **AdventureWorksDataSet** 项目 **添加到** 解决方案资源管理器并打开 **Class1.cs** 或 **Class1.vb** 代码文件。
 
-9. 在 **解决方案资源管理器** 中，右键单击 **"Class1.cs"** 或 **"Class1.vb"，** 然后单击"删除 **"。** 本演练不需要此文件。
+9. 在 **解决方案资源管理器** 中，右键单击 **Class1.cs** 或 **Class1.vb，** 然后单击"删除 **"。** 本演练不需要此文件。
 
 ## <a name="define-a-dataset-in-the-class-library-project"></a>在类库项目中定义数据集
  定义包含 AdventureWorksLT 数据库中 2005 年 SQL Server 的数据的类型数据集。 本演练的稍后部分将引用此数据集，Excel工作簿项目和控制台应用程序项目中。
@@ -133,7 +133,7 @@ ms.locfileid: "121384036"
 
 1. 在 **解决方案资源管理器** 中，右键单击 **AdventureWorksDataSet** 解决方案，指向"添加"，然后单击"新建 **Project"。**
 
-2. 在模板窗格中，展开 **"Visual C#"** 或 **Visual Basic"，** 然后展开 **"Office"。**
+2. 在模板窗格中，展开 **"Visual C#"** 或 **Visual Basic，然后** 展开 **"Office"。**
 
 3. 在展开的 **"Office"** 节点下，选择 **"2010"** 节点。
 
@@ -188,132 +188,132 @@ ms.locfileid: "121384036"
      从 <xref:Microsoft.Office.Tools.Excel.ListObject> 单元格 `productListObject` A1 开始，在工作表上创建名为 的控件。 同时，向项目添加了一个名为 `adventureWorksLTDataSet` 的数据集对象和一个名为 <xref:System.Windows.Forms.BindingSource> 的 `productBindingSource` 。 已将 <xref:Microsoft.Office.Tools.Excel.ListObject> 绑定到 <xref:System.Windows.Forms.BindingSource>，而后者又绑定到该数据集对象。
 
 ## <a name="add-the-dataset-to-the-data-cache"></a>将数据集添加到数据缓存
- 若要使工作簿Excel外部的代码访问工作簿中的数据集，必须将数据集添加到数据缓存。 有关数据缓存详细信息，请参阅文档级自定义 [项](../vsto/cached-data-in-document-level-customizations.md) 中的缓存数据和 [缓存数据](../vsto/caching-data.md)。
+ 若要允许 Excel 工作簿项目外的代码访问工作簿中的数据集，必须将数据集添加到数据缓存。 有关数据缓存的详细信息，请参阅 [文档级自定义项中的缓存数据](../vsto/cached-data-in-document-level-customizations.md) 和 [缓存数据](../vsto/caching-data.md)。
 
 ### <a name="to-add-the-dataset-to-the-data-cache"></a>将数据集添加到数据缓存
 
-1. 在设计器中，单击 **"adventureWorksLTDataSet"。**
+1. 在设计器中，单击 " **adventureworksltdataset.xsd**"。
 
-2. 在"**属性"** 窗口中，将 **"修饰符"** 属性设置为 **"公共"。**
+2. 在 " **属性** " 窗口中，将 " **修饰符** " 属性设置为 " **公共**"。
 
-3. 将 **CacheInDocument** 属性设置为 **True。**
+3. 将 **CacheInDocument** 属性设置为 **True**。
 
 ## <a name="initialize-the-dataset-in-the-workbook"></a>初始化工作簿中的数据集
- 必须先使用数据填充缓存数据集，然后才能使用控制台应用程序从缓存数据集检索数据。
+ 必须先使用数据填充缓存的数据集，然后才能使用控制台应用程序从缓存的数据集中检索数据。
 
 ### <a name="to-initialize-the-dataset-in-the-workbook"></a>初始化工作簿中的数据集
 
-1. 在 **解决方案资源管理器** 中，右键单击 **Sheet1.cs** 或 **Sheet1.vb** 文件，然后单击"**查看代码"。**
+1. 在 **解决方案资源管理器** 中，右键单击 " **sheet1** " 或 " **sheet1** " 文件，然后单击 " **查看代码**"。
 
-2. 将 `Sheet1_Startup` 事件处理程序替换为以下代码。 此代码使用 AdventureWorksDataSet 项目中定义的 类的实例来填充缓存的数据集（如果 `ProductTableAdapter` 当前为空）。 
+2. 将 `Sheet1_Startup` 事件处理程序替换为以下代码。 此代码使用 `ProductTableAdapter` 在 **AdventureWorksDataSet** 项目中定义的类的实例，用数据填充缓存的数据集（如果该数据集当前为空）。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/AdventureWorksReport/Sheet1.cs" id="Snippet8":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/AdventureWorksReport/Sheet1.vb" id="Snippet8":::
 
 ## <a name="checkpoint"></a>Checkpoint
- 生成并运行Excel工作簿项目，以确保它编译和运行时不会出错。 此操作还会填充缓存的数据集，并保存工作簿中的数据。
+ 生成并运行 Excel 工作簿项目，以确保它在编译和运行时不会出错。 此操作还会填充缓存的数据集，并将数据保存在工作簿中。
 
 ### <a name="to-build-and-run-the-project"></a>生成并运行此项目
 
-1. 在 **解决方案资源管理器** 中，右键单击 **AdventureWorksReport** 项目，选择"调试 **"，然后单击**"**启动新实例"。**
+1. 在 **解决方案资源管理器** 中，右键单击 **AdventureWorksReport** 项目，选择 " **调试**"，然后单击 " **启动新实例**"。
 
-     项目已生成，工作簿将在 Excel。 检查下列各项：
+     项目已生成，工作簿将在 Excel 中打开。 检查下列各项：
 
-    - 填充 <xref:Microsoft.Office.Tools.Excel.ListObject> 数据。
+    - <xref:Microsoft.Office.Tools.Excel.ListObject>用数据填充。
 
-    - 第一行 **的 ListPrice** 列中的值为 <xref:Microsoft.Office.Tools.Excel.ListObject> 1431.5。 本演练稍后将使用控制台应用程序修改 **ListPrice** 列中的值。
+    - 第一行的 **ListPrice** 列中的值 <xref:Microsoft.Office.Tools.Excel.ListObject> 为1431.5。 稍后在本演练中，你将使用控制台应用程序来修改 **ListPrice** 列中的值。
 
-2. 保存该工作簿。 请勿修改文件名或工作簿的位置。
+2. 保存该工作簿。 不要修改工作簿的文件名或位置。
 
 3. 关闭 Excel。
 
 ## <a name="create-a-console-application-project"></a>创建控制台应用程序项目
- 创建一个控制台应用程序项目，用于修改工作簿中缓存数据集中的数据。
+ 创建一个控制台应用程序项目，用于修改工作簿中缓存的数据集中的数据。
 
 ### <a name="to-create-the-console-application-project"></a>创建控制台应用程序项目
 
-1. 在 **解决方案资源管理器** 中，右键单击 **AdventureWorksDataSet** 解决方案，指向"添加"，然后单击"新建 **Project"。**
+1. 在 **解决方案资源管理器** 中，右键单击 **AdventureWorksDataSet** 解决方案，指向 "**添加**"，然后单击 "**新建 Project**"。
 
-2. 在 **"Project"** 窗格中，展开 **"Visual C#"** 或 **Visual Basic"，** 然后单击"Windows"。 
+2. 在 " **Project 类型**" 窗格中，展开 " **Visual c #** " 或 " **Visual Basic**"，然后单击 " **Windows**"。
 
 3. 在 **“模板”** 窗格中，选择 **“控制台应用程序”**。
 
-4. 在" **名称"** 框中，键入 **DataWriter**。 不要修改位置。
+4. 在 " **名称** " 框中，键入 **DataWriter**。 请勿修改位置。
 
 5. 单击“确定”。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataWriter** 项目添加到 **解决方案资源管理器** 并打开 **Program.cs** 或 **Module1.vb** 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将 **DataWriter** 项目添加到 **解决方案资源管理器** 并打开 **程序 .cs** 或 **Module1** 的代码文件。
 
 ## <a name="change-data-in-the-cached-dataset-by-using-the-console-application"></a>使用控制台应用程序更改缓存数据集中的数据
- 在控制台应用程序中使用 类将数据读取到本地对象中，修改此数据，然后将它保存 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> `AdventureWorksLTDataSet` 回缓存的数据集。
+ 使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 控制台应用程序中的类将数据读入本地 `AdventureWorksLTDataSet` 对象，修改此数据，然后将其保存回缓存的数据集。
 
 ### <a name="to-change-data-in-the-cached-dataset"></a>更改缓存数据集中的数据
 
-1. 在 **解决方案资源管理器** 中，右键单击 **DataWriter 项目**，然后单击"**添加引用"。**
+1. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，然后单击 " **添加引用**"。
 
-2. 在 **".NET"选项卡** 上，选择 **"Microsoft.VisualStudio.Tools.Applications"。**
+2. 在 " **.net** " 选项卡上，选择 " **VisualStudio**"。
 
 3. 单击“确定”。
 
-4. 在 **解决方案资源管理器** 中，右键单击 **DataWriter 项目**，然后单击"**添加引用"。**
+4. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，然后单击 " **添加引用**"。
 
-5. 在"**项目"选项卡上**，选择 **"AdventureWorksDataSet"，** 然后单击"确定 **"。**
+5. 在 " **项目** " 选项卡上，选择 " **AdventureWorksDataSet**"，然后单击 **"确定"**。
 
-6. 在代码 *编辑器中打开 Program.cs* 或 *Module1.vb* 文件。
+6. 在代码编辑器中打开 *Program* 或 *Module1* 文件。
 
-7. 使用 **C# (** 的 ) 或 (for Visual Basic) 语句的 **Imports** 代码添加到代码文件的顶部。
+7. **使用** 适用于 c # 的 (添加以下代码 ) 或将 Visual Basic) 语句的 (**导入** 到代码文件的顶部。
 
     :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet1":::
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet1":::
 
-8. 将以下代码添加到 `Main` 方法中。 此代码声明以下对象：
+8. 将以下代码添加到 `Main` 方法中。 此代码声明了下列对象：
 
-   - `AdventureWorksLTDataSet` **AdventureWorksDataSet** 项目中定义的类型的实例。
+   - `AdventureWorksLTDataSet`在 **AdventureWorksDataSet** 项目中定义的类型的实例。
 
-   - AdventureWorksReport 项目生成文件夹中 **AdventureWorksReport 工作簿** 的路径。
+   - **AdventureWorksReport** 项目的 build 文件夹中 AdventureWorksReport 工作簿的路径。
 
-   - <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument>用于访问工作簿中数据缓存的 对象。
+   - 用于 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 访问工作簿中的数据缓存的对象。
 
      > [!NOTE]
-     > 以下代码假定你使用的工作簿具有 *.xlsx扩展名* 。 如果项目中的工作簿具有不同的文件扩展名，请根据需要修改路径。
+     > 以下代码假定你使用的是具有 *.xlsx* 文件扩展名的工作簿。 如果项目中的工作簿具有不同的文件扩展名，请根据需要修改路径。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet6":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet6":::
 
-9. 在上一步骤 `Main` 中添加的代码之后，将以下代码添加到 方法。 此代码执行以下任务：
+9. 在 `Main` 上一步中添加的代码之后，将以下代码添加到方法。 此代码执行以下任务：
 
-   - 它使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 类的 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 属性访问工作簿中的缓存数据集。
+   - 它使用 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.CachedData%2A> 类的属性 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 访问工作簿中缓存的数据集。
 
    - 它将缓存数据集中的数据读入本地数据集。
 
-   - 它更改 `ListPrice` 数据集的 Product 表中的每个产品的值。
+   - 它会更改 `ListPrice` 数据集的 product 表中的每个产品的值。
 
    - 它将更改保存到工作簿中的缓存数据集。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/AdventureWorksDataSet/DataWriter/Program.cs" id="Snippet7":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/AdventureWorksDataSet/DataWriter/Module1.vb" id="Snippet7":::
 
-10. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，指向"调试 **"，然后单击**"**启动新实例"。**
+10. 在 **解决方案资源管理器** 中，右键单击 **DataWriter** 项目，指向 " **调试**"，然后单击 " **启动新实例**"。
 
-     控制台应用程序在将缓存的数据集读取到本地数据集时显示消息，修改本地数据集中的产品价格，将新值保存到缓存的数据集。 按 **Enter** 关闭应用程序。
+     当控制台应用程序将缓存的数据集读入本地数据集、修改本地数据集中的产品价格并将新值保存到缓存的数据集时，控制台应用程序会显示这些消息。 按 **enter** 关闭该应用程序。
 
 ## <a name="test-the-workbook"></a>测试工作簿
- 打开工作簿时， 现在会显示对缓存数据集 <xref:Microsoft.Office.Tools.Excel.ListObject> `ListPrice` 中数据列所做的更改。
+ 打开工作簿时，现在会 <xref:Microsoft.Office.Tools.Excel.ListObject> 显示对缓存数据集中的数据列所做的更改 `ListPrice` 。
 
 ### <a name="to-test-the-workbook"></a>测试工作簿
 
-1. 如果 AdventureWorksReport 工作簿仍处于打开Visual Studio设计器中，请关闭该工作簿。
+1. 如果 AdventureWorksReport 工作簿仍处于打开状态，请在 Visual Studio 设计器中将其关闭。
 
-2. 打开 AdventureWorksReport 项目的生成文件夹中的 **AdventureWorksReport** 工作簿。 默认情况下，生成文件夹位于以下位置之一：
+2. 打开位于 **AdventureWorksReport** 项目的生成文件夹中的 AdventureWorksReport 工作簿。 默认情况下，build 文件夹位于以下位置之一：
 
-    - *%UserProfile%\我的文档\AdventureWorksReport\bin\Debug* (Windows XP 及更早版本) 
+    - 适用于 Windows XP 和更早) 版本的 *%UserProfile%\My Documents\AdventureWorksReport\bin\Debug* (
 
-    - *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (Windows Vista) 
+    - Windows Vista) 的 *%UserProfile%\Documents\AdventureWorksReport\bin\Debug* (
 
-3. 验证 第一行 **的 ListPrice** 列中的值现在为 <xref:Microsoft.Office.Tools.Excel.ListObject> 1574.65。
+3. 验证的第一行的 **ListPrice** 列中的值 <xref:Microsoft.Office.Tools.Excel.ListObject> 现在为1574.65。
 
 4. 关闭工作簿。
 
 ## <a name="see-also"></a>请参阅
 
-- [演练：将数据插入到服务器的工作簿中](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)
+- [演练：将数据插入到服务器上的工作簿](../vsto/walkthrough-inserting-data-into-a-workbook-on-a-server.md)

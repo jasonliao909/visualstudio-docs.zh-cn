@@ -1,6 +1,6 @@
 ---
-title: 创建软件开发工具包 |Microsoft Docs
-description: 了解 Sdk 的通用基础结构以及如何创建平台 SDK 和扩展 SDK。
+title: 创建软件开发工具包|Microsoft Docs
+description: 了解 SDK 的常规基础结构，以及如何创建平台 SDK 和扩展 SDK。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -8,38 +8,39 @@ ms.assetid: 8496afb4-1573-4585-ac67-c3d58b568a12
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bc762912abdc58b33e49406dd46cadd152f732b6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ab8110670b03bac73fa5a27d205e0a28fc6fe0ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089363"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051165"
 ---
 # <a name="create-a-software-development-kit"></a>创建软件开发工具包
 
-软件开发工具包 (SDK) 是一系列 Api，你可以在 Visual Studio 中将其作为单个项引用。 " **引用管理器** " 对话框将列出与项目相关的所有 sdk。 将 SDK 添加到项目时，Api 在 Visual Studio 中可用。
+SDK (SDK) 是一组 API，可以在其中作为单个项引用Visual Studio。 " **引用** 管理器"对话框列出与项目相关的所有 SDK。 将 SDK 添加到项目时，API 可在 Visual Studio。
 
-有两种类型的 Sdk：
+有两种类型的 SDK：
 
-- 平台 Sdk 是用于为平台开发应用程序的必需组件。 例如， [!INCLUDE[win81](../debugger/includes/win81_md.md)] 需要 SDK 来开发 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 应用。
+- 平台 SDK 是开发平台应用必需的组件。 例如， [!INCLUDE[win81](../debugger/includes/win81_md.md)] 开发应用需要 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] SDK。
 
-- 扩展 Sdk 是扩展平台的可选组件，但不是为该平台开发应用程序所必需的。
+- 扩展 SDK 是扩展平台的可选组件，但不是必需的组件，用于开发该平台的应用。
 
-以下各节介绍了 Sdk 的通用基础结构，以及如何创建平台 SDK 和扩展 SDK。
+以下部分介绍 SDK 的常规基础结构，以及如何创建平台 SDK 和扩展 SDK。
 
 ## <a name="platform-sdks"></a>平台 SDK
 
-开发平台应用需要平台 Sdk。 例如， [!INCLUDE[win81](../debugger/includes/win81_md.md)] 需要 SDK 来开发适用于的应用程序 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 。
+开发平台应用需要平台 SDK。 例如 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ，SDK 是开发 的应用所需的 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 。
 
 ### <a name="installation"></a>安装
 
-所有平台 Sdk 都将安装在 *HKLM\Software\Microsoft\Microsoft sdk \\ [TPI] \V [TPV] \\ @InstallationFolder = [SDK root]* 上。 相应地， [!INCLUDE[win81](../debugger/includes/win81_md.md)] SDK 安装在 *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1*。
+所有平台 SDK 都将安装在 *HKLM\Software\Microsoft\Microsoft SDK \\ [TPI]\v[TPV] \\ @InstallationFolder = [SDK 根]* 上。 相应地 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ，SDK 安装在 *HKLM\Software\Microsoft\Microsoft SDKs\Windows\v8.1。*
 
 ### <a name="layout"></a>Layout
 
-平台 Sdk 具有以下布局：
+平台 SDK 具有以下布局：
 
 ```
 \[InstallationFolder root]
@@ -54,39 +55,39 @@ ms.locfileid: "105089363"
 
 | 节点 | 说明 |
 |------------------------| - |
-| *引用* 文件夹 | 包含二进制文件，这些二进制文件包含可针对编写的 Api。 其中可能包括 Windows 元数据 (WinMD) 文件或程序集。 |
-| *DesignTime* 文件夹 | 包含仅在运行前/调试时需要的文件。 其中可能包括 XML 文档、库、标头、工具箱设计时二进制文件、MSBuild 项目等等<br /><br /> 理想情况下，XML 文档将放置在 *\DesignTime* 文件夹中，但引用的 xml 文档将继续与 Visual Studio 中的引用文件放置在一起。 例如，引用 <em>\References \\ [config] \\ [\sample.xml\sample.dll</em> 的 XML 文档将是 *\References \\ [config] \\ []*，而该文档的本地化版本将为 *\References \\ [config] [] \\ \\ [locale] \sample.xml*。 |
-| *配置* 文件夹 | 只能有三个文件夹： " *调试*"、" *零售* " 和 " *CommonConfiguration*"。 如果应使用相同的一组 SDK 文件，SDK 作者可以将其文件放在 *CommonConfiguration* 下，而不管 sdk 使用者将面向的配置如何。 |
-| *体系结构* 文件夹 | 任何受支持的 *体系结构* 文件夹都可能存在。 Visual Studio 支持以下体系结构： x86、x64、ARM 和非特定语言。 注意： Win32 映射到 x86，而 AnyCPU 映射到非特定语言。<br /><br /> MSBuild 仅在适用于平台 Sdk 的 *\CommonConfiguration\neutral* 下显示。 |
-| *SDKManifest.xml* | 此文件介绍 Visual Studio 应如何使用 SDK。 查看以下 SDK 清单 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ：<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName：** 对象浏览器在 "浏览" 列表中显示的值。<br /><br /> **PlatformIdentity：** 此属性的存在会告诉 Visual Studio 和 MSBuild，SDK 是平台 SDK，不应在本地复制从它添加的引用。<br /><br /> **TargetFramework：** 此属性由 Visual Studio 用于确保只有面向此属性值中指定的相同框架的项目才能使用 SDK。<br /><br /> **MinVSVersion：** Visual Studio 使用此属性来仅使用适用于它的 Sdk。<br /><br /> **参考：** 必须仅为包含控件的引用指定此属性。 有关如何指定引用是否包含控件的信息，请参阅下面的。 |
+| *References* 文件夹 | 包含包含可编码的 API 的二进制文件。 这些元数据可能包括Windows元数据 (WinMD) 或程序集。 |
+| *DesignTime* 文件夹 | 包含仅在预运行/调试时需要的文件。 这些可能包括 XML 文档、库、标头、工具箱设计时二进制文件MSBuild项目等<br /><br /> 理想情况下，XML 文档将放置在 *\DesignTime* 文件夹中，但用于引用的 XML 文档将继续与引用文件一起放置在 Visual Studio。 例如，引用 <em>\References \\ [config] \\ [arch]\sample.dll</em> 的 XML 文档将为 *\References \\ [config] \\ [arch]\sample.xml，* 而该文档的本地化版本将为 *\References \\ [config] \\ [arch] \\ [locale]\sample.xml*。 |
+| *配置* 文件夹 | 只能有三个文件夹："*调试"、"**零* 售"和 *"CommonConfiguration"。* SDK 作者可以将文件放在 *CommonConfiguration* 下（如果应该使用同一组 SDK 文件，而不考虑 SDK 使用者将面向的配置）。 |
+| *体系结构* 文件夹 | 任何支持的 *体系结构* 文件夹都可以存在。 Visual Studio支持以下体系结构：x86、x64、ARM 和 neutral。 注意：Win32 映射到 x86，AnyCPU 映射到中性。<br /><br /> MSBuild平台 SDK 的 *\CommonConfiguration\n下* 查找。 |
+| *SDKManifest.xml* | 此文件介绍如何Visual Studio SDK。 查看 的 SDK 清单 [!INCLUDE[win81](../debugger/includes/win81_md.md)] ：<br /><br /> `<FileList             DisplayName = "Windows"             PlatformIdentity = "Windows, version=8.1"             TargetFramework = ".NET for Windows Store apps, version=v4.5.1; .NET Framework, version=v4.5.1"             MinVSVersion = "14.0">              <File Reference = "Windows.winmd">                <ToolboxItems VSCategory = "Toolbox.Default" />             </File> </FileList>`<br /><br /> **DisplayName：** 对象浏览器在"浏览"列表中显示的值。<br /><br /> **PlatformIdentity：** 此属性的存在告知Visual Studio和MSBuild SDK 是平台 SDK，并且不应在本地复制从它添加的引用。<br /><br /> **TargetFramework：** 此属性由 Visual Studio，以确保只有面向此属性的值中指定的相同框架的项目才能使用 SDK。<br /><br /> **MinVSVersion：** 此属性由 Visual Studio用于仅使用应用于它的 SDK。<br /><br /> **参考：** 必须仅为包含控件的引用指定此属性。 若要了解如何指定引用是否包含控件，请参阅下文。 |
 
 ## <a name="extension-sdks"></a>扩展 SDK
 
-以下各节介绍了部署扩展 SDK 需要执行的操作。
+以下部分介绍部署扩展 SDK 需要执行哪些操作。
 
 ### <a name="installation"></a>安装
 
-可以为特定用户或所有用户安装扩展 Sdk，无需指定注册表项。 若要为所有用户安装 SDK，请使用以下路径：
+无需指定注册表项即可为特定用户或所有用户安装扩展 SDK。 若要为所有用户安装 SDK，请使用以下路径：
 
-*% Program Files%\Microsoft Sdk \<target platform\> \v<平台版本号 \> \ExtensionSDKs*
+*%Program Files%\Microsoft SDK \<target platform\> \v<平台版本号 \> \ExtensionSDKs*
 
-对于用户特定的安装，请使用以下路径：
+对于特定于用户的安装，请使用以下路径：
 
-*%USERPROFILE%\AppData\Local\Microsoft Sdk \<target platform\> \v<平台版本号 \> \ExtensionSDKs*
+*%USERPROFILE%\AppData\Local\Microsoft SDK \<target platform\> \v<平台版本号 \> \ExtensionSDKs*
 
-如果要使用其他位置，则必须执行以下两个操作之一：
+如果要使用不同的位置，必须执行两项操作之一：
 
-1. 在注册表项中指定：
+1. 在注册表项中指定它：
 
-     **HKLM\Software\Microsoft\Microsoft Sdk \<target platform> \v<平台版本号 \> \ExtensionSDKs\<SDKName>\<SDKVersion>**\
+     **HKLM\Software\Microsoft\Microsoft SDK \<target platform> \v<平台版本号 \> \ExtensionSDKs\<SDKName>\<SDKVersion>**\
 
-     并添加一个值为的 (默认) 子项 `<path to SDK><SDKName><SDKVersion>` 。
+     和 添加一 (默认值) 值为 的子项 `<path to SDK><SDKName><SDKVersion>` 。
 
-2. 将 MSBuild 属性添加 `SDKReferenceDirectoryRoot` 到项目文件。 此属性的值是一个以分号分隔的目录列表，其中包含要引用的扩展 Sdk。
+2. 将 MSBuild `SDKReferenceDirectoryRoot` 属性添加到项目文件。 此属性的值是要引用的扩展 SDK 所在的目录的分号分隔列表。
 
 ### <a name="installation-layout"></a>安装布局
 
-扩展 Sdk 具有以下安装布局：
+扩展 SDK 具有以下安装布局：
 
 ```
 \<ExtensionSDKs root>
@@ -105,13 +106,13 @@ ms.locfileid: "105089363"
 
 ```
 
-1. \\<SDKName \> \\<SDKVersion \> ：扩展 sdk 的名称和版本从 SDK 根路径中的相应文件夹名称派生而来。 MSBuild 使用此标识在磁盘上查找 SDK，Visual Studio 在 " **属性** " 窗口和 " **引用管理器** " 对话框中显示此标识。
+1. \\<SDKName<SDKVersion：扩展 SDK 的名称和版本派生自 SDK 根路径中的相应 \> \\ \> 文件夹名称。 MSBuild此标识在磁盘上查找 SDK，Visual Studio"属性"窗口和"引用管理器"对话框中 **显示此** 标识。 
 
-2. *引用* 文件夹：包含 api 的二进制文件。 它们可以是 Windows 元数据 (WinMD) 文件或程序集。
+2. *References* 文件夹：包含 API 的二进制文件。 这些元数据Windows WinMD (或) 元数据。
 
-3. 再 *发行* 文件夹：运行时/调试所需的文件，应打包为用户应用程序的一部分。 所有二进制文件都应放置在 *\redist \\<config \> \\<\>* 下，二进制名称应采用以下格式，以确保唯一性： *]* \<company> ... \<product> \<purpose> \<extension><em>.例如，* Microsoft.Cpp.Build.dll</em>。 所有名称都可能与其他 Sdk (的文件名（例如 javascript、css、pri、xaml、png 和 jpg 文件）的所有文件都应放置在<em>\redist \\<config<<) 下（ \> \\ \> \\ \> \* 与 xaml 控件关联的文件除外）。应将这些文件放在 * \redist \\<config \> \\<\> \\<componentname \> \\ 下</em>。
+3. *Redist* 文件夹：运行时/调试所需的文件，应打包为用户应用程序的一部分。 所有二进制文件都应放置在 *\redist<\\ config<\> \\ \> arch* 下，并且二进制名称应采用以下格式以确保唯一性 *：]* \<company> . . \<product> \<purpose> 。 \<extension><em>.例如，*Microsoft.Cpp.Build.dll。</em> 名称可能与其他 SDK 的文件名冲突的所有文件 (例如 javascript、css、pri、xaml、png 和 jpg 文件) 都应放置在<em>\redist \\<config \> \\<arch<\> \\ sdkname \> 下面，与 \* XAML 控件关联的文件除外。这些文件应位于 *\redist \\<config<\> \\ 组件 \> \\<下 \> \\ </em>。
 
-4. *DesignTime* 文件夹：只需预运行/调试时间所需的文件，不应将其打包为用户的应用程序的一部分。 它们可以是 XML 文档、库、标头、工具箱设计时二进制文件、MSBuild 项目等。 旨在供本机项目使用的任何 SDK 都必须有 *SDKName 属性* 文件。 下面显示了此类型文件的示例。
+4. *DesignTime* 文件夹：仅在预运行/调试时需要的文件，不应打包为用户应用程序的一部分。 这些可能是 XML 文档、库、标头、工具箱设计时二进制文件、MSBuild项目等。 任何供本机项目使用 SDK 都必须具有 *SDKName.props* 文件。 下面显示了此类文件的示例。
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -129,15 +130,15 @@ ms.locfileid: "105089363"
 
    ```
 
-    XML 引用文档与引用文件放在一起。 例如， *\References \\<config \> \\<拱 \>\sample.dll* 程序集的 XML 引用文档为 *\References \\<config \> \\ \>*<！，而该文档的本地化版本 *\References \\\sample.xml\> \\ \> \\ \>*<<<\sample.xml
+    XML 引用文档与引用文件一起放置。 例如 *，\References \\<config \> \\<arch \>\sample.dll* 程序集的 XML 参考文档是 *\References<\\ config \> \\<arch \>\sample.xml，* 而该文档的本地化版本是 *\References<\\ config<\> \\ arch<\> \\ locale \>\sample.xml。*
 
-5. *配置* 文件夹：三个子文件夹： *调试*、 *零售* 和 *CommonConfiguration*。 当使用相同的一组 SDK 文件时，SDK 作者可以将其文件放在 *CommonConfiguration* 下，而不管 sdk 使用者的目标配置如何。
+5. *配置* 文件夹：三个子文件夹 *：Debug、Retail* 和 *CommonConfiguration*。 SDK 作者可以在使用同一组 SDK 文件时，将文件放在 *CommonConfiguration* 下，而不考虑 SDK 使用者所针对的配置。
 
-6. *体系结构* 文件夹：支持以下体系结构： x86、X64、ARM、非特定语言。 Win32 映射到 x86，而 AnyCPU 映射到非特定语言。
+6. *体系结构* 文件夹：支持以下体系结构：x86、x64、ARM、neutral。 Win32 映射到 x86，AnyCPU 映射到非特定。
 
 ### <a name="sdkmanifestxml"></a>SDKManifest.xml
 
-*SDKManifest.xml* 文件描述了 Visual Studio 应如何使用 SDK。 以下是一个示例：
+SDKManifest.xml *文件* 介绍了Visual Studio SDK 的使用方式。 以下是一个示例：
 
 ```
 <FileList>
@@ -161,31 +162,31 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
 </FileList>
 ```
 
-下面的列表提供了文件的元素：
+以下列表提供了文件的元素：
 
-1. DisplayName：在引用管理器中显示的值，解决方案资源管理器、对象浏览器和 Visual Studio 用户界面中的其他位置。
+1. DisplayName：在引用管理器、解决方案资源管理器、对象浏览器和用户界面的其他位置中显示的值，Visual Studio。
 
-2. ProductFamilyName：总体 SDK 产品名称。 例如， [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] sdk 名为 "WinJS" 和 "WinJS"，属于同一系列 SDK 产品系列，即 "WinJS" 中的 ""。 此特性允许 Visual Studio 和 MSBuild 进行该连接。 如果此属性不存在，则将 SDK 名称用作产品系列名称。
+2. ProductFamilyName：整个 SDK 产品名称。 例如 [!INCLUDE[winjs_long](../debugger/includes/winjs_long_md.md)] ，SDK 名为"Microsoft.WinJS.1.0"和"Microsoft.WinJS.2.0"，它们属于同一系列 SDK 系列产品"Microsoft.WinJS"。 此属性允许Visual Studio MSBuild建立该连接。 如果此属性不存在，则 SDK 名称用作产品系列名称。
 
-3. FrameworkIdentity：指定一个或多个 Windows 组件库的依赖项。 此属性的值将放入正在使用的应用的清单中。 此属性仅适用于 Windows 组件库。
+3. FrameworkIdentity：指定一个或多个组件Windows依赖项。 此属性的值将放入使用应用的清单中。 此属性仅适用于Windows库。
 
-4. TargetFramework：指定在 "引用管理器" 和 "工具箱" 中可用的 Sdk。 这是一个以分号分隔的目标框架名字对象的列表，例如 ".NET Framework，version = v2.0; .NET Framework，version = v1.0"。 如果指定了多个版本的相同目标框架，则引用管理器将使用指定的最低版本进行筛选。 例如，如果指定了 ".NET Framework，version = v2.0; .NET Framework，version = v 4.5.1"，则引用管理器将使用 ".NET Framework，version = v2.0"。 如果指定了特定目标框架配置文件，则引用管理器将仅使用该配置文件进行筛选。 例如，如果指定了 "Silverlight，version = v4.0，profile = WindowsPhone"，则仅 Windows Phone 配置文件上的参考管理器筛选器;面向完整 Silverlight 4.0 Framework 的项目在引用管理器中看不到 SDK。
+4. TargetFramework：指定引用管理器和工具箱中可用的 SDK。 这是以分号分隔的目标框架名字对象列表，例如".NET Framework，version=v2.0;.NET Framework，版本=v4.5.1"。 如果指定了同一目标框架的几个版本，则引用管理器将使用最低指定版本进行筛选。 例如，如果 ".NET Framework，version=v2.0;.NET Framework version=v4.5.1"时，引用管理器将使用".NET Framework，version=v2.0"。 如果指定了特定的目标框架配置文件，则引用管理器将仅将该配置文件用于筛选目的。 例如，如果指定了"Silverlight， version=v4.0， profile=WindowsPhone"，则引用管理器仅筛选Windows Phone配置文件;面向完整 Silverlight 4.0 Framework 的项目在引用管理器中看不到 SDK。
 
-5. MinVSVersion：最低 Visual Studio 版本。
+5. MinVSVersion：最低Visual Studio版本。
 
-6. MaxPlatformVerson：应使用最大目标平台版本来指定扩展 SDK 将无法在其上运行的平台版本。 例如，Microsoft Visual C++ 运行时包版本11.0 应仅由 Windows 8 项目引用。 因此，Windows 8 项目的 MaxPlatformVersion 为8.0。 这意味着，引用管理器会筛选出 Windows 8.1 项目 Microsoft Visual C++ 运行时包，而当项目引用该项目时，MSBuild 将引发错误 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 。 注意：从开始，支持此元素 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 。
+6. MaxPlatformVerson：最大目标平台版本应该用于指定扩展 SDK 将不起作用的平台版本。 例如，Microsoft Visual C++运行时包 v11.0 应仅由Windows 8引用。 因此，Windows 8 项目的 MaxPlatformVersion 为8.0。 这意味着，引用管理器筛选出 Windows 8.1 项目 Microsoft Visual C++ 运行时包，并且 MSBuild 在 [!INCLUDE[win81](../debugger/includes/win81_md.md)] 项目引用它时引发错误。 注意：从开始，支持此元素 [!INCLUDE[vs_dev12](../extensibility/includes/vs_dev12_md.md)] 。
 
-7. AppliesTo：通过指定适用的 Visual Studio 项目类型来指定引用管理器中可用的 Sdk。 可识别九个值： WindowsAppContainer、VisualC、VB、CSharp、WindowsXAML、JavaScript、托管和本机。 SDK 作者可以使用并 ( "+" ) 或 ( "&#124;" ) ，而不是 ( "！") 运算符来精确指定应用于 SDK 的项目类型的范围。
+7. AppliesTo：通过指定适用的 Visual Studio 项目类型来指定引用管理器中可用的 sdk。 可识别九个值： WindowsAppContainer、VisualC、VB、CSharp、WindowsXAML、JavaScript、托管和本机。 SDK 作者可以使用并 ( "+" ) 或 ( "&#124;" ) ，而不是 ( "！") 运算符来精确指定应用于 SDK 的项目类型的范围。
 
     WindowsAppContainer 标识应用的项目 [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 。
 
-8. SupportPrefer32Bit：支持的值为 "True" 和 "False"。 默认值为 "True"。 如果此值设置为 "False"，则 MSBuild 将为 (项目返回错误， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 如果引用 SDK 的项目已启用 Prefer32Bit，则对于桌面项目) 会出现警告。 有关 Prefer32Bit 的详细信息，请参阅 " [生成" 页、项目设计器 (c # ) ](../ide/reference/build-page-project-designer-csharp.md) 或 [编译页、项目设计器 (Visual Basic) ](../ide/reference/compile-page-project-designer-visual-basic.md)。
+8. SupportPrefer32Bit：支持的值为 "True" 和 "False"。 默认值为 "True"。 如果此值设置为 "False"，则 MSBuild 为项目 (返回错误， [!INCLUDE[win8_appname_long](../debugger/includes/win8_appname_long_md.md)] 如果引用 SDK 的项目已启用 Prefer32Bit，则为) 桌面项目警告。 有关 Prefer32Bit 的详细信息，请参阅[Project 设计器 (](../ide/reference/compile-page-project-designer-visual-basic.md)Visual Basic) 中的 "[生成" 页 Project 设计器 (c # ) ](../ide/reference/build-page-project-designer-csharp.md)或 "编译" 页。
 
-9. SupportedArchitectures：以分号分隔的 SDK 支持的体系结构列表。 如果不支持使用项目中的目标 SDK 体系结构，MSBuild 将显示警告。 如果未指定此属性，则 MSBuild 永远不会显示此类警告。
+9. SupportedArchitectures：以分号分隔的 SDK 支持的体系结构列表。 如果不支持使用项目中的目标 SDK 体系结构，MSBuild 将显示警告。 如果未指定此属性，MSBuild 将不会显示此类警告。
 
-10. SupportsMultipleVersions：如果此属性设置为 " **错误** " 或 " **警告**"，则 MSBuild 将指示同一个项目无法引用同一 SDK 系列的多个版本。 如果此属性不存在或设置为 " **允许**"，则 MSBuild 不会显示此类型的错误或警告。
+10. SupportsMultipleVersions：如果此属性设置为 "**错误**" 或 "**警告**"，则 MSBuild 表示同一个项目无法引用同一 SDK 系列的多个版本。 如果此属性不存在或设置为 "**允许**"，MSBuild 不会显示此类型的错误或警告。
 
-11. AppX：指定磁盘上 Windows 组件库的应用包的路径。 在本地调试期间，此值将传递给 Windows 组件库的注册组件。 文件名的命名约定为 *\<Company> ... \<Product> 。 \<Architecture> \<Configuration> \<Version>appx*。 如果属性名称和属性值不适用于 Windows 组件库，则配置和体系结构是可选的。 此值仅适用于 Windows 组件库。
+11. AppX：指定磁盘上 Windows 组件库的应用包的路径。 在本地调试期间，此值将传递到 Windows 组件库的注册组件。 文件名的命名约定为 *\<Company> ... \<Product> 。 \<Architecture> \<Configuration> \<Version>appx*。 如果属性名称和属性值不适用于 Windows 组件库，则配置和体系结构是可选的。 此值仅适用于 Windows 组件库。
 
 12. CopyRedistToSubDirectory：指定应相对于应用程序包根 (复制 *\redist* 文件夹下的文件，即在 "**创建应用包**" 向导中选择的 **包位置**) 和运行时布局 "根"。 默认位置是应用包和 **F5** 布局的根。
 
@@ -238,7 +239,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-5. 以不同的方式枚举 Blend 和 Visual Studio 中的特定控件。
+5. 以不同的方式枚举混合和 Visual Studio 中的特定控件。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -249,7 +250,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-6. 枚举特定的控件，并将它们放在 Visual Studio 公用路径下，或仅置于 "所有控件" 组中。
+6. 枚举特定的控件，并将它们放置在 Visual Studio 通用路径下，或仅置于 "所有控件" 组中。
 
     ```xml
     <File Reference = "sample.winmd">
@@ -269,7 +270,7 @@ MoreInfo = "https://msdn.microsoft.com/MySDK">
     </File>
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [演练：使用 c + + 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [演练：使用 c # 或 Visual Basic 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-csharp-or-visual-basic.md)

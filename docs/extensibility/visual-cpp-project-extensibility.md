@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 96f9199cf93603b288dd5f92817349ec69a0fcddd36ebdfa21625803190849cd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c57e285e939825f70762a8b9edb0dbda258acac8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400516"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056727"
 ---
 # <a name="visual-studio-c-project-system-extensibility-and-toolset-integration"></a>Visual StudioC++ Project扩展性和工具集集成
 
@@ -69,7 +69,7 @@ Visual C++项目系统用于 .vcxproj 文件。 它基于[Visual Studio Common P
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*PlatformToolsets*\\ \
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;`$(PlatformToolset)`
 
-" `$(VCTargetsPath)` \\ *平台* \\ "文件夹在 `$(ApplicationType)` 为空时用于Windows桌面项目。
+" `$(VCTargetsPath)` \\ *平台* \\ "文件夹在 `$(ApplicationType)` 为空时用于Windows项目。
 
 ### <a name="add-a-new-platform-toolset"></a>添加新的平台工具集
 
@@ -77,7 +77,7 @@ Visual C++项目系统用于 .vcxproj 文件。 它基于[Visual Studio Common P
 
 *PlatformToolsets* 下的每个文件夹名称都显示在"Project **属性**"对话框中，作为指定平台的可用平台工具集，如下所示：
 
-![项目"属性页"对话框中的"平台工具集"属性](media/vc-project-extensibility-platform-toolset-property.png "项目&quot;属性页&quot;对话框中的&quot;平台工具集&quot;属性")
+![项目"属性页"对话框中的"平台工具集"属性](media/vc-project-extensibility-platform-toolset-property.png "&quot;项目属性页&quot; 对话框中的 &quot;平台工具集&quot; 属性")
 
 在工具集支持的每个现有平台文件夹中创建类似的 *MyToolset* 文件夹和 *Toolset.props* 和 *Toolset.targets* 文件。
 
@@ -87,7 +87,7 @@ Visual C++项目系统用于 .vcxproj 文件。 它基于[Visual Studio Common P
 
 每个 的" *平台"* 文件夹下的所有文件夹名称，在 `$(ApplicationType)` IDE 中 `$(ApplicationTypeRevision)` 显示为项目的可用 **平台** 选项。
 
-!["新建平台"对话框中Project平台选择](media/vc-project-extensibility-new-project-platform.png "&quot;新建平台&quot;对话框中Project平台选择")
+!["新建平台"对话框中Project平台选择](media/vc-project-extensibility-new-project-platform.png "&quot;新建 Project 平台&quot; 对话框中的新平台选项")
 
 ### <a name="add-a-new-application-type"></a>添加新的应用程序类型
 
@@ -168,7 +168,7 @@ Windows桌面项目不定义 `$(ApplicationType)` ，因此它们仅导入
 
 - `$(VCTargetsPath)`\\*Microsoft.Cpp.WindowsSDK.props*
 
-   此文件确定Windows SDK 位置，并定义面向 Windows 的应用的一Windows。
+   此文件确定 Windows SDK 位置，并定义面向 Windows 的应用的一Windows。
 
 ### <a name="integrate-toolset-specific-targets-with-the-default-c-build-process"></a>将特定于工具集的目标与默认 C++ 生成过程集成
 
@@ -244,13 +244,13 @@ C++ 生成有三个主要步骤，这些步骤由以下目标表示：
 </Target>
 ```
 
-尽管其名称是在实现跨Visual Studio之前创建的，但目标不必调用 `ClCompile` CL.exe。 它还可以使用适当的任务调用 Clang、gcc 或其他MSBuild编译器。
+尽管其名称是在实现跨Visual Studio之前创建的，但目标不必调用 `ClCompile` CL.exe。 它还可以通过使用适当的任务来调用 Clang、gcc MSBuild编译器。
 
 目标不应具有除 目标之外的任何依赖项，这是单个文件编译命令在 `ClCompile` `SelectClCompile` IDE 中工作所需的。
 
 ## <a name="msbuild-tasks-to-use-in-toolset-targets"></a>MSBuild工具集目标中使用的任务
 
-若要调用实际的生成工具，目标需要调用MSBuild任务。 有一个基本 [的 Exec](../msbuild/exec-task.md) 任务，可用于指定要运行的命令行。 但是，生成工具通常有许多选项和输入。 和输出，用于跟踪增量生成，因此，为它们分配特殊任务更有意义。 例如，该任务将MSBuild转换为CL.exe开关，将它们写入响应文件，并调用 `CL` CL.exe。 它还跟踪所有输入和输出文件，供以后增量生成使用。 有关详细信息，请参阅 [增量生成和最新检查](#incremental-builds-and-up-to-date-checks)。
+若要调用实际的生成工具，目标需要调用MSBuild任务。 有一个基本 [的 Exec](../msbuild/exec-task.md) 任务，可用于指定要运行的命令行。 但是，生成工具通常有许多选项和输入。 和输出，用于跟踪增量生成，因此，为它们分配特殊任务更有意义。 例如，任务会将MSBuild转换为CL.exe开关，将其写入响应文件，并 `CL` 调用CL.exe。 它还跟踪所有输入和输出文件，供以后增量生成使用。 有关详细信息，请参阅 [增量生成和最新检查](#incremental-builds-and-up-to-date-checks)。
 
 任务Microsoft.Cpp.Common.Tasks.dll以下任务：
 
@@ -290,7 +290,7 @@ C++ 生成有三个主要步骤，这些步骤由以下目标表示：
 
    - [代码任务](../msbuild/msbuild-inline-tasks.md)
 
-1. 如果希望提高任务性能或只需要更复杂的功能，请使用常规MSBuild[编写任务。](../msbuild/task-writing.md)
+1. 如果希望提高任务性能或只需要更复杂的功能，请使用常规MSBuild[编写任务的过程](../msbuild/task-writing.md)。
 
    如果未在工具命令行上列出该工具的所有输入和输出（如 、 和 事例中一样）。如果要自动输入和输出文件跟踪和 `CL` `MIDL` `RC` .tlog 文件创建，请从 类派生任务。 `Microsoft.Build.CPPTasks.TrackedVCToolTask` 目前，虽然有基础 [ToolTask](/dotnet/api/microsoft.build.utilities.tooltask) 类的文档，但该类的详细信息没有示例或 `TrackedVCToolTask` 文档。 如果对此特别感兴趣，请通过开发人员请求将语音[Community。](https://aka.ms/feedback/suggest?space=62)
 
@@ -323,7 +323,7 @@ MSBuild提供以下帮助程序类来读取和写入 .tlog 文件：
 
 ### <a name="read-tlog-format"></a>读取 .tlog 格式
 
-*从* .read (\* .tlog 文件 \* 。tlog) 包含有关源文件及其依赖项的信息。
+*读取* .tlog (\* .read. \* 。tlog) 包含有关源文件及其依赖项的信息。
 
 行 **^** () 的符号指示一个或多个源。 共享相同依赖项的源由垂直条形分隔 **\|** () 。
 
@@ -494,7 +494,7 @@ CPS 支持上下文类型的其他值，但这些值不用于 Visual C++ 项目�
 
 `PageTemplate`特性定义规则在 "**属性页**" 对话框中的显示方式。 该属性可以具有以下值之一：
 
-| 属性 | 说明 |
+| Attribute | 说明 |
 |------------| - |
 | `generic` | 所有属性都显示在一页上的类别标题下面<br/>规则对 `Project` 和 `PropertySheet` 上下文可见，但不可见 `File` 。<br/><br/> 示例： `$(VCTargetsPath)` \\ *1033* \\ *general.xml* |
 | `tool` | 类别显示为子页。<br/>此规则可在所有上下文中显示： `Project` 、 `PropertySheet` 和 `File` 。<br/>仅当项目具有中定义的项时，才会在 Project 属性中显示规则 `ItemType` `Rule.DataSource` ，除非该规则名称包含在 `ProjectTools` 项组中。<br/><br/>示例： `$(VCTargetsPath)` \\ *1033* \\ *clang.xml* |
@@ -666,12 +666,12 @@ internal class MyProjectUpgrader: IProjectRetargetHandler
 
 ## <a name="shipping-your-extension"></a>寄送分机
 
-有关如何创建 VSIX 文件的信息，请参阅[装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。 若要了解如何将文件添加到特殊安装位置，例如，若要在 下添加文件， `$(VCTargetsPath)` 请参阅 [在扩展文件夹 之外安装](../extensibility/set-install-root.md)。
+有关如何创建 VSIX 文件的信息，请参阅[装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。 有关如何向特定安装位置添加文件（例如，在下添加文件）的信息， `$(VCTargetsPath)` 请参阅在 [extension 文件夹外部安装](../extensibility/set-install-root.md)。
 
 ## <a name="additional-resources"></a>其他资源
 
-Microsoft 生成系统 (MSBuild) [为](../msbuild/msbuild.md)项目文件提供生成引擎和可扩展的基于 XML 的格式。 你应熟悉基本[MSBuild概](../msbuild/msbuild-concepts.md)念MSBuild如何Visual C++[扩展](/cpp/build/reference/msbuild-visual-cpp-overview)Visual C++ 项目系统。
+Microsoft 生成系统 ([MSBuild](../msbuild/msbuild.md)) 为项目文件提供生成引擎和基于 XML 的可扩展格式。 你应该熟悉基本[MSBuild 概念](../msbuild/msbuild-concepts.md)，并了解 Visual C++ 如何[MSBuild](/cpp/build/reference/msbuild-visual-cpp-overview)来扩展 Visual C++ 项目系统。
 
-MEF Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了 CPS 和项目系统使用的Visual C++ API。 有关 CPS 如何使用 MEF 的概述，请参阅[MEF 的 VSProjectSystem 概述](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)中的[CPS](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef)和 MEF。
+Managed Extensibility Framework ([MEF](/dotnet/framework/mef/)) 提供了 CPS 和 Visual C++ 项目系统所使用的扩展 api。 有关 CPS 如何使用 MEF 的概述，请参阅[VSProjectSystem 概述](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md)中的[cps 和 mef](https://github.com/Microsoft/VSProjectSystem/blob/master/doc/overview/mef.md#cps-and-mef) 。
 
-可以自定义现有生成系统以添加生成步骤或新文件类型。 有关详细信息，请参阅 MSBuild (Visual C++) [概述](/cpp/build/reference/msbuild-visual-cpp-overview)[和使用项目属性](/cpp/build/working-with-project-properties)。
+您可以自定义现有生成系统以添加生成步骤或新的文件类型。 有关详细信息，请参阅[MSBuild (Visual C++) 概述](/cpp/build/reference/msbuild-visual-cpp-overview)和使用[项目属性](/cpp/build/working-with-project-properties)。

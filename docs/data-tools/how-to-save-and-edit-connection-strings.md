@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 440a9b9458d0357235489d69a75e9e9980aa6a3adbe9d513241455d0af751336
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d6ff3b07d05430ebb8ce26d4003f8ce74ab8ac4d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347059"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059276"
 ---
 # <a name="how-to-save-and-edit-connection-strings"></a>如何：保存和编辑连接字符串
 应用程序Visual Studio中的连接字符串保存在应用程序配置文件 (也称为应用程序设置) 或直接在应用程序中硬编码。 在应用程序配置文件中保存连接字符串简化了维护应用程序的任务。 如果连接字符串需要进行更改，则可以在应用程序设置文件中对其进行更新（这与必须在源代码中对其进行更改并重新编译应用程序相反）。
@@ -35,7 +35,7 @@ ms.locfileid: "121347059"
 1. 输入连接字符串的“名称”。 当在代码中访问该连接字符串时引用此名称。
 1. 将“类型”设置为“连接字符串”。
 1. 将“范围”保留为“应用程序”。
-1. 在"值"字段中键入连接字符串，或单击"值"字段中的省略号" (...) "按钮，打开"连接属性"对话框以生成连接字符串。
+1. 在"值"字段中键入连接字符串，或单击"值 (...) **按钮以** 打开"连接属性"对话框以生成连接字符串。 
 
 ## <a name="edit-connection-strings-stored-in-application-settings"></a>编辑存储在应用程序设置中的连接字符串
 通过使用“项目设计器”，可修改在应用程序设置中保存的连接信息。
@@ -44,13 +44,13 @@ ms.locfileid: "121347059"
 1. 在“解决方案资源管理器”中，双击“我的项目”图标 (Visual Basic) 或“属性”图标 (C#) 以打开项目设计器。
 1. 选择“设置”选项卡。
 1. 找到要编辑的连接，然后选择"值 **"字段中的文本** 。
-1. 在"值"字段中编辑连接字符串，或单击"值" (...) **按钮以** 编辑与"连接属性"对话框的连接。 
+1. 在"值"字段中编辑连接字符串，或单击"值 (...) **按钮以** 编辑与"连接属性"对话框的连接。 
 
 ## <a name="edit-connection-strings-for-datasets"></a>编辑数据集的连接字符串
 可以修改数据集中每个 TableAdapter 的连接信息。
 
 ### <a name="to-edit-a-connection-string-for-a-tableadapter-in-a-dataset"></a>编辑数据集中 TableAdapter 的连接字符串
-1. 在 **解决方案资源管理器** 中，双击具有要 (**连接的 .xsd**) 数据集。
+1. 在 **解决方案资源管理器** 中，双击具有 (**连接的 .xsd**) 数据集。
 1. 选择具有要编辑的连接的 **TableAdapter** 或查询。
 1. 在" **属性"** 窗口中，展开"连接 **"节点**。
 1. 若要快速修改连接字符串，请编辑 **ConnectionString** 属性，或单击"连接"属性上的向下 **箭头，然后选择**"新建 **连接"。**

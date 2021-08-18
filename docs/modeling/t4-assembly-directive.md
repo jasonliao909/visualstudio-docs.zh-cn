@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 02eee819bec26614e8ddf4860c258973174689ff1b6480726b1474ac6f463533
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5b376d71a23469f551be6230b7d9f16eb4637da8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428674"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034014"
 ---
 # <a name="t4-assembly-directive"></a>T4 程序集指令
 

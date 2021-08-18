@@ -6,15 +6,16 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 836c77f3651b7686e9366fe75ea7922a248fd28f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8f62d78e573f0fa2379fb3c36e91f0db971b8270
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061371"
 ---
 # <a name="controlling-color-line-style-and-other-shape-properties"></a>控制颜色、线型和其他形状属性
 

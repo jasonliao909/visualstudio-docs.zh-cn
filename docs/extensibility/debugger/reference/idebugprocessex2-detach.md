@@ -1,5 +1,5 @@
 ---
-description: 此方法通知进程，会话不再调试该进程。
+description: 此方法通知进程会话不再调试进程。
 title: IDebugProcessEx2：:D etach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,20 +11,21 @@ ms.assetid: 66d54c2c-9302-47c8-9975-f30ed988ab29
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c5ad25fe6461f1df89ada83623ab4e28194ca207
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f67ba1d07e1b92ed80e330ee279130061d0a647e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076324"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057559"
 ---
 # <a name="idebugprocessex2detach"></a>IDebugProcessEx2::Detach
-此方法通知进程，会话不再调试该进程。
+此方法通知进程会话不再调试进程。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int Detach(
 
 ## <a name="parameters"></a>参数
 `pSession`\
-中一个值，该值唯一标识要从其分离此进程的会话。
+[in]一个 值，该值唯一标识要分离此过程的会话。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 传入的接口 `pSession` 仅被视为 cookie，这是唯一标识最初附加到此进程的会话调试管理器的值; 提供的接口上的任何方法都不起作用。
+ 传入的接口只被视为 Cookie，这是一个唯一标识最初附加到该进程的会话调试管理器的值;所提供的接口上的方法均 `pSession` 不起作用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcessEx2](../../../extensibility/debugger/reference/idebugprocessex2.md)

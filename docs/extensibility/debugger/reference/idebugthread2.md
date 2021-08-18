@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02463f51fc05a6ad4a42dd663e0c0b949d7f0c8badba87d13e2afc459be763e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e0618ab89a49849f86ee2560c928470e699ffd0d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291943"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070810"
 ---
 # <a name="idebugthread2"></a>IDebugThread2
 此接口表示在程序中运行的线程。

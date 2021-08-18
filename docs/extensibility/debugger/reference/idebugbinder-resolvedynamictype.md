@@ -1,6 +1,6 @@
 ---
 description: 此方法返回变量的确切类型。
-title: IDebugBinder：： ResolveDynamicType |Microsoft Docs
+title: IDebugBinder：：ResolveDynamicType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 2c36ef92-5b44-4cfd-988e-54a2e5a6710c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 149cb7fc88a5bc3619cb8b87b08bc2018040410a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 52dcd07e20ee00ed96ef918dda75773ab5ad8cff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105067408"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119914"
 ---
 # <a name="idebugbinderresolvedynamictype"></a>IDebugBinder::ResolveDynamicType
 此方法返回变量的确切类型。
@@ -44,15 +45,15 @@ int ResolveDynamicType(
 
 ## <a name="parameters"></a>参数
 `pDynamic`\
-中表示变量类型的 [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) 。
+[in]表示[变量类型的 IDebugDynamicField。](../../../extensibility/debugger/reference/idebugdynamicfield.md)
 
 `ppResolved`\
-弄返回 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) ，提供有关变量类型的特定信息。
+[out]返回 [IDebugField，](../../../extensibility/debugger/reference/idebugfield.md) 提供有关变量类型的特定信息。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md)

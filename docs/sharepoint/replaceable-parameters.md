@@ -17,12 +17,12 @@ ms.author: johnhart
 manager: jmartens
 ms.technology: sharepoint-development
 ms.workload: office
-ms.openlocfilehash: 7f7def73b011134a670cc79346d1a4e289d9e67252c9889a01a8599ebd603190
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e36edf6d8482fcb48a6a77695a6631aed1868203
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367482"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092938"
 ---
 # <a name="replaceable-parameters"></a>可替换参数
   可在项目文件内使用可替换参数或标记，为SharePoint实际值在设计时不知道的解决方案项提供值。 它们在功能上类似于标准 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 模板令牌。 有关详细信息，请参阅 [模板参数](../ide/template-parameters.md)。

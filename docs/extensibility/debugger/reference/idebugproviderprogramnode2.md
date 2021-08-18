@@ -11,14 +11,15 @@ ms.assetid: f0bca1cc-afbe-44cf-b5aa-d078aa685d24
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3d09046d70d6bc766d17963ea4cdd6469c0981fb
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 43a66e927d2a1d2e1afc84688bb3a36451fffecc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083669"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070987"
 ---
 # <a name="idebugproviderprogramnode2"></a>IDebugProviderProgramNode2
 此接口将跨进程边界封送程序相关的接口。
@@ -43,7 +44,7 @@ IDebugProviderProgramNode2 : IUnknown
 |[UnmarshalDebuggeeInterface](../../../extensibility/debugger/reference/idebugproviderprogramnode2-unmarshaldebuggeeinterface.md)|获取跨进程边界的指定接口。|
 
 ## <a name="remarks"></a>备注
- 当从正在调试的程序的不同进程空间中运行时，将实现此接口：例如，在 Visual Studio 进程空间中运行 DE，而不是在正在调试的程序的进程空间中运行。
+ 当从正在调试的程序的不同进程空间中运行该 de 时，将实现此接口：例如，当正在调试的程序的 Visual Studio 进程空间而不是正在调试的程序的进程空间中运行时。
 
 ## <a name="requirements"></a>要求
  标头： msdbg
@@ -52,6 +53,6 @@ IDebugProviderProgramNode2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

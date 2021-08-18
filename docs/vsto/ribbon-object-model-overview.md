@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8018eed6f621e81a7ee57ae2e4087ff30615cac1c29cbd6401413c12716f054e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7d840db368f61c0e85b5b21d7ff1c0a32b4a472
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121226125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032207"
 ---
 # <a name="ribbon-object-model-overview"></a>功能区对象模型概述
   [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)]公开了一个强类型对象模型，可用于在运行时获取和设置功能区控件的属性。 例如，可以动态填充菜单控件，或显示和隐藏控件根据上下文。 你还可以将选项卡、组和控件添加到功能区，但在 Office 应用程序加载功能区之前。 有关信息，请参阅 [设置变成只读属性](#SettingReadOnlyProperties)。
@@ -117,12 +117,12 @@ ms.locfileid: "121226125"
 
  在从 Visual Studio 2008 升级的 Visual c # 项目中，该构造函数将显示在功能区代码文件中。
 
- 在 Visual Basic 项目或在中创建的 Visual c # 项目中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，构造函数显示在功能区设计器代码文件中。 此文件名为 *YourRibbonItem*。.Cs 或 *YourRibbonItem*。设计器 .vb。 若要在 Visual Basic 项目中查看此文件，必须先单击解决方案资源管理器中的 "**显示所有文件**" 按钮。
+ 在 Visual Basic 项目或在中创建的 Visual c # 项目中 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，构造函数显示在功能区设计器代码文件中。 此文件名为 *YourRibbonItem*。.Cs 或 *YourRibbonItem*。设计器 .vb。 若要在项目中Visual Basic此文件，必须先单击"显示所有文件"按钮解决方案资源管理器。 
 
 ### <a name="set-properties-in-the-createribbonextensibilityobject-method"></a>在 CreateRibbonExtensibilityObject 方法中设置属性
- `Ribbon`当你在 `CreateRibbonExtensibilityObject` `ThisAddin` 项目的、 `ThisWorkbook` 或类中重写方法时，可以设置控件的属性 `ThisDocument` 。 有关方法的详细信息 `CreateRibbonExtensibilityObject` ，请参阅 [功能区概述](../vsto/ribbon-overview.md)。
+ 重写项目的 、 或 类中的 方法时 `Ribbon` `CreateRibbonExtensibilityObject` ，可以设置 `ThisAddin` `ThisWorkbook` `ThisDocument` 控件的属性。 有关 方法详细信息 `CreateRibbonExtensibilityObject` ，请参阅功能 [区概述](../vsto/ribbon-overview.md)。
 
- 下面的示例在 `CreateRibbonExtensibilityObject` `ThisWorkbook` Excel 工作簿项目的类的方法中设置功能区属性。
+ 以下示例在工作簿项目的 类的 方法中 `CreateRibbonExtensibilityObject` `ThisWorkbook` 设置功能Excel属性。
 
  添加以下代码。
 
@@ -130,10 +130,10 @@ ms.locfileid: "121226125"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_Ribbon_objectmodel_dotnet4/ThisWorkbook.cs" id="Snippet2":::
 
 ### <a name="properties-that-become-read-only"></a><a name="ReadOnlyProperties"></a> 变为只读的属性
- 下表显示了只可在功能区加载之前设置的属性。
+ 下表显示了只能在功能区加载之前设置的属性。
 
 > [!NOTE]
-> 你可以随时在动态菜单上设置控件的属性。 此表不适用于这种情况。
+> 你随时都可以在动态菜单上设置控件的属性。 在这种情况下，此表不适用。
 
 |属性|功能区控件类|
 |--------------|--------------------------|
@@ -160,13 +160,13 @@ ms.locfileid: "121226125"
 |**选项卡**|<xref:Microsoft.Office.Tools.Ribbon.OfficeRibbon>|
 |**标题**|<xref:Microsoft.Office.Tools.Ribbon.RibbonSeparator>|
 
-### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>为 Outlook 检查器中显示的功能区设置属性
- 每次用户打开出现功能区的检查器时，都会创建功能区的新实例。 但是，您只能在创建功能区的第一个实例之前，设置上表中列出的属性。 在创建第一个实例之后，这些属性将变为只读，因为第一个实例定义 Outlook 用于加载功能区的 XML 文件。
+### <a name="set-properties-for-ribbons-that-appear-in-outlook-inspectors"></a>设置显示在检查器中的功能Outlook属性
+ 每次用户打开显示功能区的检查器时，将创建功能区的新实例。 但是，只能在创建功能区的第一个实例之前设置上表中所列的属性。 创建第一个实例后，这些属性变为只读，因为第一个实例定义了用于加载功能Outlook XML 文件。
 
- 如果在创建功能区的其他实例时有条件逻辑将这些属性设置为不同的值，则此代码将不起作用。
+ 如果在创建功能区的其他实例时，条件逻辑将这些属性中的任意一个设置为不同的值，则此代码将不起作用。
 
 > [!NOTE]
-> 确保为添加到 Outlook 功能区的每个控件设置 **Name** 属性。 如果在运行时将控件添加到 Outlook 功能区，则必须在代码中设置此属性。 如果在设计时将控件添加到 Outlook 功能区，则会自动设置 Name 属性。
+> 确保 **为添加到** 功能区的每个控件设置 Name Outlook属性。 如果运行时向 Outlook功能区添加控件，则必须在代码中设置此属性。 如果在设计时向功能区Outlook控件，则会自动设置 Name 属性。
 
 ## <a name="ribbon-control-events"></a>功能区控件事件
  每个控件类都包含一个或多个事件。 下表将描述这些事件。
@@ -174,27 +174,27 @@ ms.locfileid: "121226125"
 |事件|说明|
 |-----------|-----------------|
 |单击|在单击控件时发生。|
-|TextChanged|当编辑框或组合框的文本更改时发生。|
-|ItemsLoading|Office 请求控件的项集合时发生。 Office 在代码更改控件的属性或调用方法之前缓存项集合 <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> 。|
-|System.windows.forms.toolbar.buttonclick>|当单击或中的按钮 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 时发生 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 。|
-|SelectionChanged|当中的所选内容 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 更改时发生。|
-|DialogLauncherClick|在单击组右下角的对话框启动器图标时发生。|
+|TextChanged|在更改编辑框或组合框的文本时发生。|
+|ItemsLoading|在系统请求控件的 Items 集合时Office。 Office项集合，直到代码更改控件的属性，或者调用 <xref:Microsoft.Office.Core.IRibbonUI.InvalidateControl%2A> 方法。|
+|ButtonClick|在单击 或 中的按钮 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 时发生。|
+|SelectionChanged|在 或 中的选择更改 <xref:Microsoft.Office.Tools.Ribbon.RibbonDropDown> 时 <xref:Microsoft.Office.Tools.Ribbon.RibbonGallery> 发生。|
+|DialogLauncherClick|在单击组右下角的对话启动器图标时发生。|
 
  这些事件的事件处理程序具有以下两个参数。
 
 |参数|说明|
 |---------------|-----------------|
-|*寄信*|一个 <xref:System.Object>，表示引发事件的控件。|
-|*e*|一个包含 <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> 的 <xref:Microsoft.Office.Core.IRibbonControl>。 使用此控件可访问提供的功能区对象模型中不可用的任何属性 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。|
+|*发送*|一个 <xref:System.Object>，表示引发事件的控件。|
+|*e*|一个包含 <xref:Microsoft.Office.Tools.Ribbon.RibbonControlEventArgs> 的 <xref:Microsoft.Office.Core.IRibbonControl>。 使用此控件可以访问在 提供的功能区对象模型中不可用的任何属性 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。|
 
 ## <a name="see-also"></a>请参阅
-- [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
+- [运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
 - [功能区概述](../vsto/ribbon-overview.md)
 - [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
-- [演练：在运行时更新功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)
+- [演练：运行时更新功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
+- [自定义用于自定义Outlook](../vsto/customizing-a-ribbon-for-outlook.md)
 - [如何：自定义内置选项卡](../vsto/how-to-customize-a-built-in-tab.md)
 - [如何：向 Backstage 视图添加控件](../vsto/how-to-add-controls-to-the-backstage-view.md)
 - [如何：将功能区从功能区设计器导出到功能区 XML](../vsto/how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml.md)

@@ -22,14 +22,15 @@ ms.assetid: 8a813a74-e158-4308-be78-565937f6af83
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e91bdb2e842692224564374e3f9f4d23cf71cf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cc3d08921100d05bea77e22bbec4659862b90143
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945014"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120681"
 ---
 # <a name="lttrustinfogt-element-clickonce-application"></a>&lt;trustInfo&gt; 元素（ClickOnce 应用程序）
 描述应用程序要在客户端计算机上运行所需的最低安全权限。
@@ -71,7 +72,7 @@ ms.locfileid: "99945014"
 ## <a name="elements-and-attributes"></a>元素和属性
  `trustInfo` 元素是必需的，它位于 `asm.v2` 命名空间中。 它没有属性，并包含下列元素。
 
-## <a name="security"></a>security
+## <a name="security"></a>安全性
  必需。 此元素是 `trustInfo` 元素的子元素。 它包含 `applicationRequestMinimum` 元素，但没有属性。
 
 ## <a name="applicationrequestminimum"></a>applicationRequestMinimum
@@ -163,7 +164,7 @@ ms.locfileid: "99945014"
 
  将授予所有使用 `defaultAssemblyRequest` 和 `assemblyRequest` 请求的权限，而无需提示用户该部署清单是否具有有效的信任许可证。
 
- 有关权限提升的详细信息，请参阅 [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。 有关策略部署的详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。
+ 有关权限提升的详细信息，请参阅[保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。 有关策略部署的详细信息，请参阅 [Trusted Application Deployment Overview](../deployment/trusted-application-deployment-overview.md)。
 
 ## <a name="examples"></a>示例
  下面的三个代码示例说明了默认命令的安全区域的 `trustInfo` 元素 - Internet、LocalIntranet 和 FullTrust - 用于 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署的应用程序清单中。
@@ -269,6 +270,6 @@ ms.locfileid: "99945014"
 </trustInfo>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

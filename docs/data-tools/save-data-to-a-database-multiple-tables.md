@@ -1,6 +1,6 @@
 ---
 title: 将数据保存到数据库（多个表）
-description: 在本演练中，使用 Visual Studio 中的数据集工具将数据从多个表保存到数据库。
+description: 在本演练中，使用 Visual Studio 中的数据集工具将多个表中的数据保存到数据库。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -16,14 +16,15 @@ ms.assetid: 7ebe03da-ce8c-4cbc-bac0-a2fde4ae4d07
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 6f4b174e10eae63044c547d8ed87c46db03d23c6
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 772a4001ad999ce4c585eeac5bf5ea9b3ba97ab1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106216041"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067018"
 ---
 # <a name="save-data-to-a-database-multiple-tables"></a>将数据保存到数据库（多个表）
 
@@ -43,21 +44,21 @@ ms.locfileid: "106216041"
 
 - 修改用于将数据集中的更新后的数据发回数据库的代码。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 SQL Server Express 的 LocalDB，请从 [SQL Server Express 下载 "页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装它。 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **数据存储和处理** 工作负荷的一部分进行安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (SQL Server 对象资源管理器在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
+    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (SQL Server 对象资源管理器作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) 复制到剪贴板。 此 T-sql 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    2. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
 
-    3. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+    3. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
 
        一小段时间后，查询将完成运行，并创建 Northwind 数据库。
 
@@ -138,7 +139,7 @@ ms.locfileid: "106216041"
 
 ## <a name="test-the-application"></a>测试应用程序
 
-1. 按 F5 。
+1. 按 **F5**。
 
 2. 对每个表中的一条或多条记录的数据执行一些更改。
 
@@ -146,6 +147,6 @@ ms.locfileid: "106216041"
 
 4. 检查数据库中的值以验证更改是否已保存。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

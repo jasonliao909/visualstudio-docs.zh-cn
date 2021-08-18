@@ -1,6 +1,6 @@
 ---
-title: Vspackage |Microsoft Docs
-description: 了解 Vspackage，它是通过提供 UI 元素、服务、项目、编辑器和设计器来扩展 Visual Studio IDE 的软件模块。
+title: VSPackages |Microsoft Docs
+description: 了解 VSPackages，VSPackages 是软件模块，Visual Studio UI 元素、服务、项目、编辑器和设计器来扩展 IDE。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,26 +10,27 @@ ms.assetid: cad0893a-9c5f-45b7-952a-e2294f83e324
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 695cddbc76f81ee606b2f19d367e503f754f1ed4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 16284ec7bb2481bbbfca758bb9ccbd0c9f062c34
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105060648"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086426"
 ---
 # <a name="vspackages"></a>VSPackages
-Vspackage 是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过提供 UI 元素、服务、项目、编辑器和设计器来扩展集成开发环境 (IDE) 的软件模块。
+VSPackage 是软件模块，通过提供 UI 元素、服务、项目、编辑器和设计器 (IDE) IDE 集成开发 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 环境。
 
 ## <a name="in-this-section"></a>本节内容
 - [指定 VS Shell 的 VSPackage 文件位置](../../extensibility/internals/specifying-vspackage-file-location-to-the-vs-shell.md)
 
- 说明如何将 VSPackage 位置指定到 Visual Studio shell。
+ 说明如何将 VSPackage 位置指定为 Visual Studio shell。
 
 - [VSPackage 中的资源](../../extensibility/internals/resources-in-vspackages.md)
 
- 说明如何在 Vspackage 中管理资源。
+ 说明如何管理 VSPackage 中的资源。
 
 - [VSPackage 中安全性的最佳做法](../../extensibility/internals/best-practices-for-security-in-vspackages.md)
 

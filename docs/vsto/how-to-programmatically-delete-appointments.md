@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3d82e8a0b3ba042a50faf653322de1b715dd228273feb99b324020557e023cbf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e11f36d3745833ec244240730a44463601181cd0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046511"
 ---
 # <a name="how-to-programmatically-delete-appointments"></a>如何：以编程方式删除约会
   此示例将删除定期约会的一个实例。 该示例假定定期约会实例发生在 2006 年 6 月 28 日 08:00。
