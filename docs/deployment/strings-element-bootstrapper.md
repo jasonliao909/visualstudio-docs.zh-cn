@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt; (引导程序) 的字符串元素 |Microsoft Docs'
-description: String 元素定义了产品名称、包名称和安装错误消息的本地化字符串。
+title: '&lt;Strings &gt; 元素 (引导程序) |Microsoft Docs'
+description: Strings 元素定义产品名称、包名称和安装错误消息的本地化字符串。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -18,16 +18,17 @@ ms.assetid: d5ea3613-5fc9-4a11-bef3-46a01178bf60
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: a2c8cac705f4e6ae8d72f3a2e9bd5ec4c8ed68bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c962435431164f78e542d9186bfe44c4659a3923
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877468"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073703"
 ---
-# <a name="ltstringsgt-element-bootstrapper"></a>&lt; (引导程序的字符串 &gt; 元素) 
+# <a name="ltstringsgt-element-bootstrapper"></a>&lt;引导 &gt; (字符串) 
 定义产品名称、包名称和安装错误消息的本地化字符串。
 
 ## <a name="syntax"></a>语法
@@ -42,10 +43,10 @@ ms.locfileid: "99877468"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和属性
- `Strings`元素是元素的子元素 `Package` 。 它没有属性。
+ `Strings`元素是 元素的 `Package` 子元素。 它没有任何属性。
 
 ## <a name="string"></a>字符串
- `String`元素是元素的子元素 `Strings` 。 `Strings`元素可以有一个或多个 `String` 元素。
+ `String`元素是 元素的 `Strings` 子元素。 元素 `Strings` 可以有一个或多个 `String` 元素。
 
  `String` 具有以下属性。
 
@@ -54,7 +55,7 @@ ms.locfileid: "99877468"
 |`Name`|必需。 字符串的名称。|
 
 ## <a name="example"></a>示例
- 下面的代码示例指定 .NET Framework 安装程序的所有英文字符串。
+ 下面的代码示例指定该安装程序的所有英语.NET Framework字符串。
 
 ```xml
 <Strings>
@@ -75,5 +76,5 @@ ms.locfileid: "99877468"
 </Strings>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [\<Package> 元素](../deployment/package-element-bootstrapper.md)

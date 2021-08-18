@@ -1,6 +1,6 @@
 ---
-title: 演练：部署项目任务列表定义 |Microsoft Docs
-description: 在本演练中，使用 Visual Studio 来创建、自定义、调试和部署 SharePoint 列表，以跟踪项目任务。
+title: 演练：部署 Project 任务列表定义 |Microsoft Docs
+description: 在本演练中，使用 Visual Studio 来创建、自定义、调试和部署 SharePoint 列表以跟踪项目任务。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b0692b676ec701b40edd12d1634ab9cdf419f85f
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 88b4be482cc0ad99829a065b8bc423258b69de49
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135866"
 ---
 # <a name="walkthrough-deploy-a-project-task-list-definition"></a>演练：部署项目任务列表定义
 
@@ -27,7 +28,7 @@ ms.locfileid: "106217718"
 
 [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - 支持的 Microsoft Windows 和 SharePoint 版本。
 
@@ -37,21 +38,21 @@ ms.locfileid: "106217718"
 
 创建 SharePoint 列表项目，并将该列表定义与任务相关联。
 
-1. 打开 " **新建项目** " 对话框，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
+1. 打开 "**新建 Project** " 对话框，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 
-2. 在 " **模板** " 窗格中，选择 " **SharePoint 2010 项目** " 模板，将项目命名为 **ProjectTaskList**，然后选择 **"确定"** 按钮。
+2. 在 "**模板**" 窗格中，选择 **SharePoint 2010 Project** 模板，将项目命名为 **ProjectTaskList**，然后选择 **"确定"** 按钮。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     此时将显示 " **SharePoint 自定义向导**"。
 
-3. 指定用于调试的本地 SharePoint 站点，选择 " **部署为场解决方案** " 选项按钮，然后选择 " **完成** " 按钮。
+3. 指定用于调试的本地 SharePoint 站点，选择 "**部署为场解决方案**" 选项按钮，然后选择 "**完成**" 按钮。
 
 4. 打开项目的快捷菜单，然后选择 "**添加**  >  **新项**"。
 
 5. 在 " **模板** " 窗格中选择 **列表** 模板，然后选择 " **添加** " 按钮。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     此时将显示 " **SharePoint 自定义向导**"。
 
-6. 在 " **要为你的列表显示什么名称？"** 框中，输入 **Project 任务列表**。
+6. 在 "**要为你的列表显示什么名称？"** 框中，输入 **Project 任务列表**。
 
 7. 选择 " **基于现有列表类型创建不可自定义的列表** " 选项按钮，然后在其列表中选择 " **任务**"，然后选择 " **完成** " 按钮。
 
@@ -63,11 +64,11 @@ ms.locfileid: "106217718"
 
 1. 打开项目节点的快捷菜单，选择 " **添加**"，然后选择 " **新建项**"。
 
-2. 在 SharePoint 模板列表中，选择 " **事件接收器** " 模板，然后将其命名为 **ProjectTaskListEventReceiver**。
+2. 在 SharePoint 模板列表中，选择 "**事件接收器**" 模板，然后将其命名为 **ProjectTaskListEventReceiver**。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     此时将显示 " **SharePoint 自定义向导**"。
 
-3. 在 " **选择事件接收器设置** " 页上，选择 " **列表项事件** " 作为 "事件接收 **方类型** " 列表中的事件接收器类型。
+3. 在 "**选择事件接收方设置**" 页上，选择 "**列表项事件**" 作为 "事件接收 **方类型**" 列表中的事件接收器类型。
 
 4. 在 " **哪个项应为事件源"** 列表中，选择 " **任务**"。
 
@@ -82,13 +83,13 @@ ms.locfileid: "106217718"
 
 ## <a name="customize-the-project-task-list-feature"></a>自定义项目任务列表功能
 
-创建 SharePoint 解决方案时，Visual Studio 会自动为默认项目项创建功能。 您可以通过使用功能设计器来自定义 SharePoint 站点的项目任务列表设置。
+创建 SharePoint 解决方案时，Visual Studio 会自动为默认项目项创建功能。 您可以使用功能设计器自定义 SharePoint 站点的项目任务列表设置。
 
 1. 在 **解决方案资源管理器** 中，展开 " **功能**"。
 
 2. 打开 **Feature1** 的快捷菜单，然后选择 " **查看设计器**"。
 
-3. 在 " **标题** " 框中，输入 **项目任务列表功能**。
+3. 在 "**标题**" 框中，输入 **Project 任务列表功能**。
 
 4. 在 " **作用域** " 列表中，选择 " **Web**"。
 
@@ -106,17 +107,17 @@ ms.locfileid: "106217718"
 
 ## <a name="build-and-test-the-project-task-list"></a>生成和测试项目任务列表
 
-运行该项目时，SharePoint 网站将打开。 但是，您必须手动导航到任务列表的位置。
+运行该项目时，将打开 SharePoint 站点。 但是，您必须手动导航到任务列表的位置。
 
 1. 选择 **F5** 键生成并部署项目任务列表。
 
-     SharePoint 站点将打开。
+     此时将打开 SharePoint 站点。
 
 2. 选择 " **主页** " 选项卡。
 
-3. 在左侧边栏中，选择 " **项目任务列表** " 链接。
+3. 在左侧边栏中，选择 " **Project 任务列表**" 链接。
 
-     此时将显示 "项目任务列表" 页。
+     此时将显示 "Project 任务列表" 页。
 
 4. 在 " **列表工具** " 选项卡中，选择 " **项目** " 选项卡。
 
@@ -140,7 +141,7 @@ ms.locfileid: "106217718"
 
 在 Visual Studio 菜单栏上，选择 "**生成**" "  >  **部署解决方案**"。
 
-Visual Studio 将回收 IIS 应用程序池，收回解决方案的任何现有版本，将解决方案 *包 ()* 文件复制到 SharePoint，然后激活其功能。 你现在可以在 SharePoint 中使用该解决方案。 有关部署配置步骤的详细信息，请参阅 [如何：编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
+Visual Studio 回收 IIS 应用程序池，收回解决方案的任何现有版本，将解决方案包 (*.wsp*) 文件复制到 SharePoint，然后激活其功能。 你现在可以在 SharePoint 中使用该解决方案。 有关部署配置步骤的详细信息，请参阅[如何：编辑 SharePoint 部署配置](../sharepoint/how-to-edit-a-sharepoint-deployment-configuration.md)。
 
 ### <a name="to-deploy-the-project-task-list-to-a-remote-system"></a>将项目任务列表部署到远程系统
 
@@ -158,13 +159,13 @@ Visual Studio 将回收 IIS 应用程序池，收回解决方案的任何现有�
 
 5. 使用 PowerShell `Add-SPUserSolution` 命令在远程 SharePoint 安装上安装包。  (场解决方案，请使用 `Add-SPSolution` 命令。 ) 
 
-     例如，`Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
+     例如 `Add-SPUserSolution C:\MyProjects\ProjectTaskList\ProjectTaskList\bin\Debug\ProjectTaskList.wsp`。
 
 6. 使用 PowerShell `Install-SPUserSolution` 命令来部署解决方案。  (场解决方案，请使用 `Install-SPSolution` 命令。 ) 
 
-     例如，`Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
+     例如 `Install-SPUserSolution -Identity ProjectTaskList.wsp -Site http://NewSiteName`。
 
-     有关远程部署的详细信息，请参阅在 SharePoint 2010 中 [使用解决方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14)) 以及使用 [PowerShell 添加和部署解决方案](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)。
+     有关远程部署的详细信息，请参阅[SharePoint 2010 中的在 PowerShell 中](http://www.dotnetmafia.com/blogs/dotnettipoftheday/archive/2009/12/02/adding-and-deploying-solutions-with-powershell-in-sharepoint-2010.aspx)[使用解决方案](/previous-versions/office/developer/sharepoint-2010/ee534972(v=office.14))和添加和部署解决方案。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -174,7 +175,7 @@ Visual Studio 将回收 IIS 应用程序池，收回解决方案的任何现有�
 
 - [如何：创建事件接收器](../sharepoint/how-to-create-an-event-receiver.md)
 
-- [Windows PowerShell for SharePoint Server 2010](/powershell/module/sharepoint-server)
+- [SharePoint 服务器2010的 Windows PowerShell](/powershell/module/sharepoint-server)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -11,14 +11,15 @@ ms.assetid: a636d9d3-47c1-4b48-ac6b-bcfde19d6cf9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1208bd0cb13661f1aa60bb9f97c9e4502e517e6d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6373a634d628021f4527cb4bb834e6a928f24259
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902535"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049488"
 ---
 # <a name="scchistory-function"></a>SccHistory 函数
 此函数显示指定文件的历史记录。
@@ -64,10 +65,10 @@ SCCRTN SccHistory(
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|已成功获取版本历史记录。|
-|SCC_I_RELOADFILE|源代码管理系统实际上在提取历史记录时修改了 (，例如，通过获取旧版本的) ，因此 IDE 应重新加载此文件。|
+|SCC_I_RELOADFILE|源代码管理系统实际上在提取历史记录时修改了磁盘上的文件 (例如，通过获取该文件的) ，因此 IDE 应重新加载此文件。|
 |SCC_E_FILENOTCONTROLLED|该文件不在源代码管理下。|
 |SCC_E_OPNOTSUPPORTED|源代码管理系统不支持此操作。|
 |SCC_E_NOTAUTHORIZED|不允许用户执行此操作。|
@@ -83,6 +84,6 @@ SCCRTN SccHistory(
 > [!NOTE]
 > 如果源代码管理插件不支持文件数组的此函数，则只能显示第一个文件的文件历史记录。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccOpenProject](../extensibility/sccopenproject-function.md)

@@ -9,17 +9,18 @@ ms.assetid: c3a25f27-327a-4bdb-b026-27d436ddcd0c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: f365bcadba5349ae43e1b75683ec100fdabbf338
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ff91784dab5f3a2b66a35d3233f3d9280379bd9f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094011"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119186"
 ---
 # <a name="idebugdynamicfieldcomplus"></a>IDebugDynamicFieldCOMPlus
-表示 [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md) 对象的动态字段。
+表示 [IDebugBinder 对象的动态](../../../extensibility/debugger/reference/idebugbinder.md) 字段。
 
 ## <a name="syntax"></a>语法
 
@@ -28,16 +29,16 @@ IDebugDynamicFieldCOMPlus : IDebugDynamicField
 ```
 
 ## <a name="methods"></a>方法
- 除了 [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) 接口上的方法，此接口还实现以下方法：
+ 除了 [IDebugDynamicField](../../../extensibility/debugger/reference/idebugdynamicfield.md) 接口上的方法外，此接口还实现以下方法：
 
 |方法|说明|
 |------------|-----------------|
-|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|根据给定的基元类型检索类型。|
-|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|在给定其标记的情况中检索类型。|
+|[GetTypeFromPrimitive](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromprimitive.md)|检索给定基元类型的类型。|
+|[GetTypeFromTypeDef](../../../extensibility/debugger/reference/idebugdynamicfieldcomplus-gettypefromtypedef.md)|检索给定其标记的类型。|
 
 ## <a name="requirements"></a>要求
- 标头： Sh。h
+ 标头：Sh.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

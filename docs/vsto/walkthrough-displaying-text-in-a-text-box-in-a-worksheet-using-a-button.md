@@ -1,6 +1,6 @@
 ---
 title: 使用按钮在工作表的文本框中显示文本
-description: 了解在 Microsoft Excel 工作表上使用按钮和文本框的基础知识。 还可使用 Visual Studio 中的 Office 开发工具创建 Excel 项目。
+description: 了解在 Microsoft Excel 工作表上使用按钮和文本框的基础知识。 此外，还可以使用 Visual Studio 中 Office 开发工具创建 Excel 项目。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b1209bf903f5a5b9c0005d9ba4ba6a891752aedd
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d909db152521749a21ff418c004756d2b77e0b43
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031908"
 ---
 # <a name="walkthrough-display-text-in-a-text-box-in-a-worksheet-using-a-button"></a>演练：使用按钮在工作表的文本框中显示文本
-  本演练演示了在 Microsoft Office Excel 工作表上使用按钮和文本框的基础知识，以及如何使用 Visual Studio 中的 Office 开发工具创建 Excel 项目。 若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
+  本演练演示了在 Microsoft Office Excel 工作表上使用按钮和文本框的基础知识，以及如何使用 Visual Studio 中的 Office 开发工具创建 Excel 项目。 若要查看已完成示例的结果，请参阅[Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Excel 控件示例。
 
  [!INCLUDE[appliesto_xlalldoc](../vsto/includes/appliesto-xlalldoc-md.md)]
 
@@ -48,20 +49,20 @@ ms.locfileid: "107827781"
 - [!INCLUDE[Excel_15_short](../vsto/includes/excel-15-short-md.md)] 或 [!INCLUDE[Excel_14_short](../vsto/includes/excel-14-short-md.md)]。
 
 ## <a name="create-the-project"></a>创建项目
- 在此步骤中，你将使用 Visual Studio 创建一个 Excel 工作簿项目。
+ 在此步骤中，你将使用 Visual Studio 创建 Excel 工作簿项目。
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 使用 " **我的 excel" 按钮** 创建一个 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 创建一个名为 **"我的 Excel" 按钮** 的 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-     Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 " **我的 excel" 按钮** 项目添加到 **解决方案资源管理器**。
+     Visual Studio 在设计器中打开新的 Excel 工作簿，并将 "**我的 Excel" 按钮** 项目添加到 **解决方案资源管理器**。
 
 ## <a name="add-controls-to-the-worksheet"></a>向工作表添加控件
  对于本演练，您将需要第一个工作表上的按钮和文本框。
 
 ### <a name="to-add-a-button-and-a-text-box"></a>添加一个按钮和一个文本框
 
-1. 验证是否已在 Visual Studio 设计器中打开 " **我的 Excel Button.xlsx** 工作簿"，并 `Sheet1` 显示。
+1. 验证是否已在 Visual Studio 设计器中打开 "**我的 Excel" Button.xlsx** 工作簿，并 `Sheet1` 显示。
 
 2. 从 "工具箱" 的 " **公共控件** " 选项卡中，将拖动 <xref:Microsoft.Office.Tools.Excel.Controls.TextBox> 到 `Sheet1` 。
 
@@ -74,7 +75,7 @@ ms.locfileid: "107827781"
    |属性|值|
    |--------------|-----------|
    |**名称**|**insertText**|
-   |**Text**|**插入文本**|
+   |**文本**|**插入文本**|
 
    现在，编写在单击按钮时要运行的代码。
 
@@ -90,7 +91,7 @@ ms.locfileid: "107827781"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet11":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet11":::
 
-3. 在 c # 中，必须向事件添加事件处理程序，如下 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 所示。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+3. 在 c # 中，必须向事件添加事件处理程序，如下 <xref:Microsoft.Office.Tools.Excel.Worksheet.Startup> 所示。 有关创建事件处理程序的信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet12":::
 
@@ -106,13 +107,13 @@ ms.locfileid: "107827781"
 3. 确认 **Hello World！** 出现在文本框中。
 
 ## <a name="next-steps"></a>后续步骤
- 本演练演示在 Excel 工作表上使用按钮和文本框的基础知识。 以下是接下来可能要执行的一些任务：
+ 本演练演示了在 Excel 工作表上使用按钮和文本框的基础知识。 以下是接下来可能要执行的一些任务：
 
-- 部署项目。 有关详细信息，请参阅 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署项目。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
 
 - 使用复选框来更改格式设置。 有关详细信息，请参阅 [演练：使用 CheckBox 控件更改工作表格式](../vsto/walkthrough-changing-worksheet-formatting-using-checkbox-controls.md)。
 
 ## <a name="see-also"></a>请参阅
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [使用 Excel 的演练](../vsto/walkthroughs-using-excel.md)
-- [Office 文档 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office 文档上 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

@@ -16,14 +16,15 @@ ms.assetid: 3b531120-1325-4734-90c6-6e6113bd12ac
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 909291e3f9762593a58df93a9ccc7fe2e82b7952
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 649204a074980c547fc238ba0c7db923c7ff199b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031596"
 ---
 # <a name="troubleshoot-service-references"></a>服务引用疑难解答
 
@@ -98,12 +99,12 @@ ms.locfileid: "99866354"
 
 1. 在 Internet Explorer 的“工具”菜单上，单击“Internet 选项”。
 
-2. 在 " **内容** " 选项卡上的 " **源** " 部分中，单击 " **设置**"。
+2. 在 "**内容**" 选项卡上的 "**源**" 部分中，单击 "**设置**"。
 
-3. 在 " **源设置** " 对话框中，清除 " **打开源阅读视图** " 复选框，然后单击 **"确定"**。
+3. 在 "**源设置**" 对话框中，清除 "**打开源阅读视图**" 复选框，然后单击 **"确定"**。
 
 4. 单击 **"确定"** 以关闭 " **Internet 选项** " 对话框。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

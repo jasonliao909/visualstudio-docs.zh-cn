@@ -1,6 +1,6 @@
 ---
 description: 获取进程的标题、友好名称或文件名。
-title: IDebugProcess2：： GetName |Microsoft Docs
+title: IDebugProcess2：：GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 920db4fbd7702b0a01997dee1570128d6d38285a35f0893985e6480fa72b25ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e010d17191e6f039e13647908661bab4b22df5c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416308"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087972"
 ---
 # <a name="idebugprocess2getname"></a>IDebugProcess2::GetName
 获取进程的标题、友好名称或文件名。
@@ -45,14 +45,14 @@ int GetName(
 
 ## <a name="parameters"></a>参数
 `gnType`\
-中 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举中的一个值，该值指定要返回的名称的类型。
+[in]一个来自 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 值，该值指定要返回的名称类型。
 
 `pbstrName`\
-弄返回进程的名称。
+[out]返回进程的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

@@ -1,6 +1,6 @@
 ---
 title: 自定义文件存储和 XML 序列化
-description: 了解当你在 Visual Studio 中保存域特定语言 (DSL) 的实例或模型时创建或更新的 XML 文件。
+description: 了解在将域特定语言的实例或模型保存到 Visual Studio (DSL) 时创建或更新的 XML 文件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,18 +11,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: be19b3026010e37108ca1b19096d48a3c8d88ab6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: cf3f80c51866f278f4cf9a72876963d60ab17e4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061306"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
-当用户在 Visual Studio 中保存特定于域的语言 (DSL) 的实例或 *模型* 时，将创建或更新 XML 文件。 可以重新加载该文件以在应用商店中重新创建该模型。
+当用户将域特定语言的实例或 *模型* 保存 (DSL) 在 Visual Studio 中时，将创建或更新 XML 文件。 可以重新加载该文件以在应用商店中重新创建该模型。
 
 可以通过在 DSL 资源管理器中调整 **Xml 序列化行为** 下的设置，自定义序列化方案。 对于每个域类、属性和关系， **Xml 序列化行为** 下有一个节点。 关系位于其源类下。 还有对应于形状、连接符和关系图类的节点。
 
@@ -240,7 +241,7 @@ ms.locfileid: "112389366"
     </person>
     ```
 
-- 若要更改属性和关系的序列化顺序，请右键单击"元素数据"下的项，并使用"上移"或"下移 **"菜单** 命令。
+- 若要更改属性和关系的序列化顺序，请右键单击"元素数据"下的项，并使用"上移"或"下移 **"** 菜单命令。
 
 ## <a name="major-customization-using-program-code"></a>使用程序代码的主要自定义项
 
@@ -262,20 +263,20 @@ ms.locfileid: "112389366"
 
 在 DSL 资源管理器中，Xml 序列化行为节点包含每个域类、关系、形状、连接器和关系图类的子节点。 每个节点下都是一个属性和关系列表，这些属性和关系都来自该元素。 关系在其自己的右侧和源类下都表示。
 
-下表总结了可以在 DSL 定义的此部分中设置的选项。 在每种情况下，在 DSL 资源管理器中选择一个元素，并设置"选项"中的属性窗口。
+下表总结了可以在 DSL 定义的此部分中设置的选项。 在每种情况下，在 DSL 资源管理器中选择一个元素，并设置"属性窗口"。
 
 ### <a name="xml-class-data"></a>Xml 类数据
 
 这些元素位于 DSL 资源管理器中的 **Xml 序列化行为\类数据 下**。
 
-|属性|描述|
+|属性|说明|
 |-|-|
 |具有自定义元素架构|如果为 True，则指示域类具有自定义元素架构|
 |是自定义的|如果要为此 **域** 类编写自己的序列化和反序列化代码，请设置为 True。<br /><br /> 生成解决方案并调查错误以发现详细说明。|
 |域类|此类数据节点应用到的域类。 只读。|
 |元素名称|此类的元素的 Xml 节点名称。 默认值是域类名称的小写版本。|
 |名字对象属性名称|名字对象元素中用于包含引用的属性的名称。 如果为空，则使用键属性或 ID 的名称。<br /><br /> 此示例中，它是"name"：  `<personMoniker name="/Mike Nash"/>`|
-|名字对象元素名称|用于引用此类元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是带有"名字对象"后缀的类名的一个小写版本。 例如，`personMoniker`。|
+|名字对象元素名称|用于引用此类元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是带有"名字对象"后缀的类名的一个小写版本。 例如 `personMoniker`。|
 |名字对象类型名称|为此类元素的名字对象生成的 xsd 类型的名称。 XSD 位于 **Dsl\Generated \\ \* Code Schema.xsd 中**|
 |序列化 ID|如果为 True，则元素 GUID 包含在文件中。 如果没有标记为"是名字对象键"的属性，并且DSL 定义对此类的引用关系，则此属性必须为 true。|
 |类型名称|从指定的域类在 xsd 中生成的 xml 类型的名称。|
@@ -285,7 +286,7 @@ ms.locfileid: "112389366"
 
 Xml 属性节点位于类节点下。
 
-|属性|描述|
+|属性|说明|
 |-|-|
 |域属性|xml 序列化配置数据应用于的属性。 只读。|
 |名字对象键|如果为 True，则属性用作创建引用此域类的实例的名字对象的键。|
@@ -298,7 +299,7 @@ Xml 属性节点位于类节点下。
 
 角色数据节点位于源类节点下。
 
-|属性|描述|
+|属性|说明|
 |-|-|
 |具有自定义名字对象|如果要提供自己的代码来生成和解析遍历此关系的名字对象，请设置为 true。<br /><br /> 有关详细说明，请生成解决方案，然后双击错误消息。|
 |域关系|指定这些选项应用于的关系。 只读。|
@@ -306,7 +307,7 @@ Xml 属性节点位于类节点下。
 |Role 元素名称|指定派生自源角色的 XML 元素的名称。 默认值为角色属性名称。|
 |使用完整窗体|如果为 true，则每个目标元素或名字对象都包含在表示关系的 XML 节点中。 如果关系具有其自己的域属性，应设置为 true。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

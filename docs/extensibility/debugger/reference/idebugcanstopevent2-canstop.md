@@ -1,6 +1,6 @@
 ---
-description: 通知调试引擎 (取消) 是否在当前代码位置停止或只是继续执行。
-title: IDebugCanStopEvent2：： CanStop |Microsoft Docs
+description: 通知调试引擎 (DE) 是在当前代码位置停止还是只继续执行。
+title: IDebugCanStopEvent2：：CanStop |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 7d61adbe-6b3d-41f3-86a1-45d9cc01a7f8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bc536b9a4f0bb0ce41e48c16cc85a53db11732b2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dd575d6bb1afdf296eff6ec3ac3a08a9551618b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088596"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104152"
 ---
 # <a name="idebugcanstopevent2canstop"></a>IDebugCanStopEvent2::CanStop
-通知调试引擎 (取消) 是否在当前代码位置停止或只是继续执行。
+通知调试引擎 (DE) 是在当前代码位置停止还是只继续执行。
 
 ## <a name="syntax"></a>语法
 
@@ -42,17 +43,17 @@ int CanStop (
 
 ## <a name="parameters"></a>参数
 `fCanStop`\
-中 `TRUE` 如果 DE 应停止在当前代码位置，则为非零 () ; 否则为零 (`FALSE`) 。
+[in]如果 DE 应 () ，则不为零;否则 `TRUE` `FALSE` ， () 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此事件的接收方通常会调用 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法来确定 DE 要停止的原因，然后调用 `IDebugCanStopEvent2::CanStop` 方法并提供适当的响应。
+ 此事件的接收方通常调用 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法以确定 DE 想要停止的原因，然后使用相应的响应 `IDebugCanStopEvent2::CanStop` 调用方法。
 
- 如果停止，则会发送描述停止原因的事件。 通常发送两个事件： [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 接口表示的用户或信号中断，以及由 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 接口表示的断点事件。
+ 如果 DE 停止，它将发送描述停止原因的事件。 通常发送两个事件 [：IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md) 接口表示的用户或信号中断，以及 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 接口表示的断点事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [IDebugBreakEvent2](../../../extensibility/debugger/reference/idebugbreakevent2.md)
 - [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md)

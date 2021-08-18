@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 625b0c6aa9ebf728945afa01655f641a779c1422686c055c986140646c99b0fa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c48b814629e01e370696bb30f8ee15af60098ec3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046641"
 ---
 # <a name="how-to-programmatically-close-visio-documents"></a>如何：以编程方式关闭Visio文档
   可以使用 `Microsoft.Office.Interop.Visio.Document.Close` 方法关闭活动 Microsoft Office Visio 文档。
@@ -34,7 +34,7 @@ ms.locfileid: "121423951"
 
 - 调用 `Microsoft.Office.Interop.Visio.Document.Close` 方法关闭活动文档。
 
-     若要使用以下代码示例，请将其在 VSTO `ThisAddIn` 外接程序项目中的 类中运行Visio。
+     若要使用以下代码示例，请将其运行在 VSTO `ThisAddIn` 外接程序项目中的 类中，Visio。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorevisioautomationaddin/ThisAddIn.cs" id="Snippet7":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcorevisioautomationaddin/ThisAddIn.vb" id="Snippet7":::

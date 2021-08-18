@@ -11,17 +11,18 @@ ms.assetid: 47ce4f45-3816-4b40-909c-5032d0692d75
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ce8a492ea4d45a54a295617d7863b0623fd6a87
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1e51d1e31cee9124ed913b1233a05fbbfb20390f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088544"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104178"
 ---
 # <a name="idebugclassfieldgetdefaultindexer"></a>IDebugClassField::GetDefaultIndexer
 获取默认索引器的名称。
@@ -79,5 +80,5 @@ Function GetItem(Index as Integer) as Integer
 End Function
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)
