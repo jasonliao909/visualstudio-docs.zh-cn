@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e004939d27cbf579143716b1cc49968c1f520e7176492608706a5c0f283e6ded
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9cf9d57eefbe69be131a5aa041606ba99dbce973
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433757"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153350"
 ---
 # <a name="idebugmemorycontext2"></a>IDebugMemoryContext2
 此接口表示运行正在调试的程序计算机的地址空间中的位置。
@@ -48,7 +48,7 @@ IDebugMemoryContext2 : IUnknown
 |[比较](../../../extensibility/debugger/reference/idebugmemorycontext2-compare.md)|按比较标志指示的方式比较两个上下文。|
 
 ## <a name="remarks"></a>备注
- Visual Studio **的"** 内存"窗口调用 [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)以获取接口，该接口包含用于内存地址的评估 `IDebugMemoryContext2` 表达式。 然后将此上下文传递给 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt，](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) 以指定要读取或写入的地址。
+ Visual Studio **的"** 内存"窗口调用 [GetMemoryContext](../../../extensibility/debugger/reference/idebugproperty2-getmemorycontext.md)以获取接口，该接口包含用于内存 `IDebugMemoryContext2` 地址的已计算表达式。 然后将此上下文传递给 [ReadAt](../../../extensibility/debugger/reference/idebugmemorybytes2-readat.md) 和 [WriteAt，](../../../extensibility/debugger/reference/idebugmemorybytes2-writeat.md) 以指定要读取或写入的地址。
 
 ## <a name="requirements"></a>要求
  标头：msdbg.h

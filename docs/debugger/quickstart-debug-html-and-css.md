@@ -16,15 +16,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - uwp
-ms.openlocfilehash: 8132e3f26352bada4d06910e40a7ca662dae874e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32e12e8646b25adff81c217626de6cacee724600
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99840972"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153844"
 ---
 # <a name="debug-html-and-css-in-uwp-apps-in-visual-studio"></a>在 Visual Studio 中调试 UWP 应用中的 HTML 和 CSS
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1298bd394209927b4563ff325149865db59a3f65b061e29d18e826d9f57bf7fd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac3cf9dcb8160b8b9241573331829acb3e20f628
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291982"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118393"
 ---
 # <a name="idebugthread2suspend"></a>IDebugThread2::Suspend
 挂起线程。
@@ -53,6 +53,6 @@ HRESULT Suspend (
 
  对于对此方法的每个调用，必须在以后调用 [Resume](../../../extensibility/debugger/reference/idebugthread2-resume.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [恢复](../../../extensibility/debugger/reference/idebugthread2-resume.md)

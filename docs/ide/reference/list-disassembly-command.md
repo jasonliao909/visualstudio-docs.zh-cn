@@ -13,14 +13,15 @@ ms.assetid: eb363e35-e86a-4121-966f-991210c27e2a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0de7becc46205e5fb8865a0419102bf65afde14e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f41021b3b0d8c4dd0d0d688573bdc2e5c37da8f6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143802"
 ---
 # <a name="list-disassembly-command"></a>“列出反汇编”命令
 开始调试进程，并允许指定如何处理错误。

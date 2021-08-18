@@ -14,16 +14,16 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 14fbaa5cd309bf048fa5c09fbb4b9521b3b3bf9b0fa09977751077d535d9fa70
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: adb28a3ffd44e1cfcd744ab603d9c7e8555cafc3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440586"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155221"
 ---
 # <a name="workflow-project-templates"></a>工作流项目模板
 
-可以使用项目模板创建工作流、Windows Communication Foundation (WCF) 工作流服务、自定义活动和Visual Studio设计器。 本文介绍如何使用中提供的项目模板创建库Visual Studio。
+可以使用项目模板创建工作流、Windows Communication Foundation (WCF) 工作流服务、自定义活动和自定义Visual Studio设计器。 本文介绍如何使用中提供的项目模板创建库Visual Studio。
 
 ## <a name="create-a-workflow-project"></a>创建工作流项目
 
@@ -54,7 +54,7 @@ Visual Studio提供了四个不同的工作流项目模板：
 
 ## <a name="wcf-workflow-service-app"></a>WCF 工作流服务应用
 
-如果选择 **"WCF 工作流服务应用程序"** 模板，Visual Studio创建一个作为 XAML 的服务定义。 该工作流设计器将打开设计视图，其中包含一组 <xref:System.Activities.Statements.Sequence> 和 <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> 活动。
+如果选择 WCF 工作流 **服务应用程序模板**，Visual Studio将服务定义创建为 XAML。 该工作流设计器打开设计视图，其中包含一组 和 <xref:System.Activities.Statements.Sequence> <xref:System.ServiceModel.Activities.Receive> <xref:System.ServiceModel.Activities.SendReply> 活动。
 
 ## <a name="activity-library"></a>活动库
 
@@ -72,7 +72,7 @@ Visual Studio提供了四个不同的工作流项目模板：
 > [!NOTE]
 > 自定义活动设计器可用于自定义活动和默认 .NET 活动。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用工作流设计器](developing-applications-with-the-workflow-designer.md)
 - [设计工作流 (.NET Framework) ](/dotnet/framework/windows-workflow-foundation/designing-workflows)

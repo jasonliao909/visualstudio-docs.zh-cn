@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c5b8ff5fb176b05576abf89e1bfdf4f49a22ed069bae2e1b459bc9bcedf696b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 454f916a80cda1b2b485cc6385218bfc88fb0490
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155234"
 ---
 # <a name="debug-workflows-with-the-workflow-designer"></a>使用命令调试工作流设计器
 

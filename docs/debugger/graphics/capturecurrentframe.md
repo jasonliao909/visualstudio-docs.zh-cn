@@ -8,14 +8,15 @@ ms.assetid: 4509311d-6fe2-4b65-9b4a-ff0522585d6a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 17c917c6c23dff41a5692e95588ce757a8d08293
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 0271ccd7b1a9a90ae683e86a141d41d269cac773
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232721"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154260"
 ---
 # <a name="capturecurrentframe"></a>CaptureCurrentFrame
 将当前帧的剩余部分捕获到图形日志文件。

@@ -16,14 +16,15 @@ ms.assetid: e3db5122-202d-43a9-b2f4-3e0ec4ed3d08
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f48c57769ff6f969e68a50418b017d9928149fd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: aca05e3711d23e8346770fb45523f98c0c72da38
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913817"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143178"
 ---
 # <a name="itemmetadata-element-msbuild"></a>ItemMetadata 元素 (MSBuild)
 
@@ -44,7 +45,7 @@ ms.locfileid: "99913817"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Condition`|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 

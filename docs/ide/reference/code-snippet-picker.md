@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 93fea67056c73a6e9b0b265253479fbecee63767
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ea8ffeb61cd83377e18d2e59a45ed1aa5d57d0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144114"
 ---
 # <a name="code-snippet-picker"></a>代码段选择器
 
