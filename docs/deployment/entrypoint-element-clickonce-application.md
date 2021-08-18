@@ -1,6 +1,6 @@
 ---
-title: '&lt;&gt;)  (ClickOnce 应用程序的入口点元素 |Microsoft Docs'
-description: EntryPoint 元素标识在客户端计算机上运行此 ClickOnce 应用程序时应执行的程序集。
+title: '&lt;&gt;ClickOnce 应用程序)  (入口点元素 |Microsoft Docs'
+description: entryPoint 元素标识在客户端计算机上运行 ClickOnce 应用程序时应执行的程序集。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,16 +18,17 @@ ms.assetid: 10ad3083-10c1-4189-a870-9bba2eab244f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: d5c35d94001ae1e883e2bd76650f248d7e0364d2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a6268f2ff1c8d60184ddb290260fa33c841b1d51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893888"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146389"
 ---
-# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 应用程序的入口点元素) 
+# <a name="ltentrypointgt-element-clickonce-application"></a>&lt;&gt;ClickOnce 应用程序的入口点元素 () 
 标识在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 客户端计算机上运行此应用程序时应执行的程序集。
 
 ## <a name="syntax"></a>语法
@@ -83,21 +84,21 @@ ms.locfileid: "99893888"
  此元素没有属性，没有任何子级。
 
 ## <a name="customux"></a>customUX
- 可选。 指定应用程序由自定义安装程序安装和维护，并且不创建开始菜单项、快捷方式或 "添加或删除程序" 项。
+ 可选。 指定应用程序由自定义安装程序安装和维护，并且不创建 "开始"菜单条目、快捷方式或 "添加或删除程序" 项。
 
 ```xml
 <customUX xmlns="urn:schemas-microsoft-com:clickonce.v1" />
 ```
 
- 包含 customUX 元素的应用程序必须提供一个使用类的自定义安装程序 <xref:System.Deployment.Application.InPlaceHostingManager> 来执行安装操作。 使用此元素的应用程序不能通过双击其清单或 setup.exe 必备组件引导程序来安装。 自定义安装程序可以创建开始菜单项、快捷方式以及 "添加或删除程序" 项。 如果自定义安装程序不创建 "添加或删除程序" 项，则它必须存储属性提供的订阅标识符， <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> 并使用户能够在以后通过调用方法来卸载应用程序 <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> 。 有关详细信息，请参阅 [演练：为 ClickOnce 应用程序创建自定义安装](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)程序。
+ 包含 customUX 元素的应用程序必须提供一个使用类的自定义安装程序 <xref:System.Deployment.Application.InPlaceHostingManager> 来执行安装操作。 使用此元素的应用程序不能通过双击其清单或 setup.exe 必备组件引导程序来安装。 自定义安装程序可以创建 "开始"菜单条目、快捷方式和 "添加或删除程序" 条目。 如果自定义安装程序不创建 "添加或删除程序" 项，则它必须存储属性提供的订阅标识符， <xref:System.Deployment.Application.GetManifestCompletedEventArgs.SubscriptionIdentity%2A> 并使用户能够在以后通过调用方法来卸载应用程序 <xref:System.Deployment.Application.InPlaceHostingManager.UninstallCustomUXApplication%2A> 。 有关详细信息，请参阅[演练：创建 ClickOnce 应用程序的自定义安装](../deployment/walkthrough-creating-a-custom-installer-for-a-clickonce-application.md)程序。
 
 ## <a name="remarks"></a>备注
  此元素标识应用程序的程序集和入口点 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
 
- 不能使用在 `commandLine` 运行时将参数传递到应用程序。 可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从应用程序的部署访问查询字符串参数 <xref:System.AppDomain> 。 有关详细信息，请参阅 [如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。
+ 不能使用在 `commandLine` 运行时将参数传递到应用程序。 可以 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 从应用程序的部署访问查询字符串参数 <xref:System.AppDomain> 。 有关详细信息，请参阅[如何：在联机 ClickOnce 应用程序中检索查询字符串信息](../deployment/how-to-retrieve-query-string-information-in-an-online-clickonce-application.md)。
 
 ## <a name="example"></a>示例
- 下面的代码示例演示应用程序的 `entryPoint` 应用程序清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此代码示例是为 [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md) 主题提供的更大示例的一部分。
+ 下面的代码示例演示应用程序的 `entryPoint` 应用程序清单中的元素 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。 此代码示例是为[ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)主题提供的更大示例的一部分。
 
 ```xml
 <!-- Identify the main code entrypoint. -->
@@ -112,5 +113,5 @@ ms.locfileid: "99893888"
   </entryPoint>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

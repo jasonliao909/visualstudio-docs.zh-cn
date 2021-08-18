@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: f33e24c9284a785eeef2ba87d9f63855fc4d9c8259f6adc6ac44d1090a85dc34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4a11c41b76bff61ed5af0916f0d43aa5739da78a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121398068"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116547"
 ---
 # <a name="validate-your-system-during-development"></a>在开发过程中验证系统
 

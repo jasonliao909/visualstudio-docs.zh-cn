@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7237d03907a961135a767a246c4f9d291ef17d293b0d04f8020915b8ab0e31e7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8775c8b726bbc75472da8b286fca5b7640c918a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389561"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050554"
 ---
 # <a name="idebugprogramnode2"></a>IDebugProgramNode2
 此接口表示可调试的程序。
@@ -50,7 +50,7 @@ IDebugProgramNode2 : IUnknown
 |[DetachDebugger_V7](../../../extensibility/debugger/reference/idebugprogramnode2-detachdebugger-v7.md)|废弃。 请勿使用。|
 
 ## <a name="remarks"></a>备注
- 会话调试管理器 (SDM) 调用 [GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) 来获取此接口。
+ 会话调试管理器 (SDM) [调用 GetProviderProgramNode](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprogramnode.md) 来获取此接口。
 
 ## <a name="requirements"></a>要求
  标头：Msdbg.h
@@ -59,7 +59,7 @@ IDebugProgramNode2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramNodeAttach2](../../../extensibility/debugger/reference/idebugprogramnodeattach2.md)
 - [AddProgramNode](../../../extensibility/debugger/reference/idebugportnotify2-addprogramnode.md)

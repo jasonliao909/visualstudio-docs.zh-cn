@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 3311e660d3d485c2a75aa1134e5c31516e39873c62fd8c05d90cdbd61169d133
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 65df491989278f768f44cb0f768a216e082a6570
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411004"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100824"
 ---
 # <a name="msi-and-vsix-deployment-of-a-dsl"></a>DSL 的 MSI 和 VSIX 部署
 可以在自己的计算机或其他计算机上安装域特定语言。 Visual Studio 必须已安装在目标计算机上。

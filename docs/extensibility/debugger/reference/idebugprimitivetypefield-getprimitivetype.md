@@ -1,6 +1,6 @@
 ---
 description: 检索与此字段关联的基元类型。
-title: IDebugPrimitiveTypeField：： GetPrimitiveType |Microsoft Docs
+title: IDebugPrimitiveTypeField：：GetPrimitiveType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19a96d3853a3fede97574046ed69007f1a8a567ffb58baa9ceba248996db5b20
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d5256165db724dbfc06399aa4bedeb6c59df249d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416529"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050791"
 ---
 # <a name="idebugprimitivetypefieldgetprimitivetype"></a>IDebugPrimitiveTypeField::GetPrimitiveType
 检索与此字段关联的基元类型。
@@ -42,10 +42,10 @@ int GetPrimitiveType (
 
 ## <a name="parameters"></a>参数
 `pdwType`\
-弄表示基元类型的 [CorElementType 枚举](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 的值。
+[out]表示基 [元类型的 CorElementType](/dotnet/framework/unmanaged-api/metadata/corelementtype-enumeration) 枚举中的值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回 `S_FALSE` 。
+ 如果成功，则返回 `S_OK` ;否则返回 `S_FALSE` 。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugPrimitiveTypeField](../../../extensibility/debugger/reference/idebugprimitivetypefield.md)

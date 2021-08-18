@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d48de91ebe28ef50b5529800b2777b845a3833fa79cd51c888ef290d5249a338
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6f07c19f96ef7151a8c08464388e011b371a8827
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121243531"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032480"
 ---
 # <a name="manage-documents-on-a-server-by-using-the-serverdocument-class"></a>使用 ServerDocument 类管理服务器上的文档
   可以使用 中的 类来管理文档级自定义项的几个方面，即使未Microsoft Office Word 和 `ServerDocument` [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] Microsoft Office Excel。 你可以执行下列任务：
@@ -35,11 +35,11 @@ ms.locfileid: "121243531"
   [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
 ## <a name="understand-the-serverdocument-class"></a>了解 ServerDocument 类
- `ServerDocument`类旨在用于未安装 Office 的计算机上。 因此，通常在未与 Office 集成的应用程序（如控制台项目或 Windows Forms 项目）中，而不是在 Office 项目中使用此类。 在 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 程序集中Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll类。
+ `ServerDocument`类旨在用于未安装 Office 的计算机上。 因此，通常在未与 Office 集成的应用程序（例如控制台项目或 Windows Forms 项目）中，而不是在 Office 项目中使用此类。 在 <xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument> 程序集中Microsoft.VisualStudio.Tools.Applications.ServerDocument.dll类。
 
  `ServerDocument`类可用于对使用 创建的文档级自定义进行操作 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] 。
 
- 有关 Office Runtime 的 Visual Studio 2010 工具以及 Office 扩展.NET Framework，请参阅 Visual Studio Tools for Office[运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+ 有关 Office 运行时的 Visual Studio 2010 工具以及 .NET Framework 的 Office 扩展，请参阅 Visual Studio Tools for Office[运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
 > [!NOTE]
 > 如果旧版应用程序使用系统 (版本 3.0 运行时) 中的 类，则必须在运行该应用程序的计算机上安装系统 (版本 `ServerDocument` `Visual Studio Tools for Office` `Visual Studio Tools for Office` 3.0 运行时) 。 `Visual Studio 2010 Tools for Office runtime`无法运行这些应用程序。
@@ -66,7 +66,7 @@ ms.locfileid: "121243531"
 |以编程方式运行时从文档中删除自定义项。<br /><br /> 有关详细信息，请参阅 [如何：从文档 中删除托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.RemoveCustomization%2A> 方法。|
 |获取与文档关联的部署清单的 URL。|<xref:Microsoft.VisualStudio.Tools.Applications.ServerDocument.DeploymentManifestUrl%2A> 属性。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：将托管代码扩展附加到文档](../vsto/how-to-attach-managed-code-extensions-to-documents.md)
 - [如何：从文档中删除托管代码扩展](../vsto/how-to-remove-managed-code-extensions-from-documents.md)
 - [Visual Studio Tools for Office运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)

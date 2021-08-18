@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ff15209b60fb40200388eac2d9b1d90bb153fcfbba5c204f391c5bc7fbd70343
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9d88bd7c28ae5d9d7aa078eb5e0006f233765514
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346489"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036740"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：使用单表继承 (O/R 设计器创建 LINQ to SQL 类) 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支持单表继承，因为它通常在关系系统中实现。 本演练扩展了 [如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 主题中提供的一般步骤，并提供了一些真实数据来演示中的继承使用 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 。
@@ -95,7 +95,7 @@ ms.locfileid: "121346489"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 展开左侧 **窗格中Visual Basic"Visual C#"** 或"Windows"。 
+2. 在左侧 **窗格中展开"Visual C#"****或**"Visual Basic"，然后选择"Windows **桌面"。**
 
 3. 在中间窗格中，选择"Windows **窗体应用"** 项目类型。
 
@@ -185,9 +185,9 @@ ms.locfileid: "121346489"
 
 2. 检验是否仅显示了“Type”列值为 2 的记录。
 
-3. 关闭窗体。  ("调试 **"菜单上** ，单击" **停止调试**.) 
+3. 关闭窗体。  ("调试" **菜单上** ，单击" **停止调试**.) 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练：创建 LINQ to SQL 类（O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

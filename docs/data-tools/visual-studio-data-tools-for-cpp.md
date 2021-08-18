@@ -9,15 +9,16 @@ dev_langs:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 - cplusplus
-ms.openlocfilehash: 4cf316e0d892e8c6ba229a7a46ee0439797d032f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8376adeeedbb4bbdae10d147573799813da95bec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036792"
 ---
 # <a name="visual-studio-data-tools-for-c"></a>适用于 C++ 的 Visual Studio Data Tools
 

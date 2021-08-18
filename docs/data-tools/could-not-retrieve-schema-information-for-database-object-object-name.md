@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 51bb3eebf28792b5a46d6ab666c7101af0f4f89da2cb59f0417b37cc635d38d8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2c0492e4dde353993dcf531f9cee36daf9f5abdb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037182"
 ---
 # <a name="could-not-retrieve-schema-information-for-database-object-object-name"></a>无法检索数据库对象的架构信息 \<object name>
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: acf0e2d5cd5d72670b00e4cffa05a74c09f8f7e19604edeaabcc82ce834c0afe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7687d9174b9275cce791f39c05d41450e1687df7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050255"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中调试 VSPackage 特别有用。
@@ -47,7 +47,7 @@ VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 ## <a name="to-examine-the-activity-log"></a>检查活动日志
 
-1. 使用Visual Studio [/Log](../ide/reference/log-devenv-exe.md)命令行开关运行 ActivityLog.xml会话期间将磁盘写入磁盘。
+1. 使用Visual Studio [/Log](../ide/reference/log-devenv-exe.md)命令行开关运行 ActivityLog.xml，以在会话期间将磁盘写入磁盘。
 
 2. 关闭Visual Studio，在子文件夹查找活动日志，Visual Studio数据：
 
@@ -63,7 +63,7 @@ VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 由于活动日志是服务，因此活动日志在 VSPackage 构造函数中不可用。
 
-应在写入活动日志之前获取活动日志。 不要缓存或保存活动日志供将来使用。
+在写入活动日志之前，应获取活动日志。 不要缓存或保存活动日志供将来使用。
 
 ## <a name="see-also"></a>请参阅
 

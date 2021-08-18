@@ -40,16 +40,16 @@ ms.locfileid: "121356299"
 
 - Visual C# 或Visual Basic或程序集 (.dll *或**.exe)*
 
-- 项目、头文件Visual C++ *.h* 或) 或二进制文件中的本机 (托管 C 或 `#include` C++ 代码
+- 本机或托管 C 或 C++ 代码Visual C++项目、头文件 (*.h* 或) `#include` 或二进制文件
 
 - 通过 Microsoft Dynamics AX 的 .NET 模块生成的 X++ 项目和程序集
 
 > [!NOTE]
-> 对于 C# 或 Visual Basic项目，启动代码图或将项添加到现有代码图的选项更少。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是，可以从 、解决方案资源管理器 和对象浏览器 **类视图** 和删除单个 **代码元素或文件**。
+> 对于 C# 或 Visual Basic，启动代码图或将项添加到现有代码图的选项更少。 例如，不能用鼠标右键单击 C++ 项目的文本编辑器中的对象并将其添加到代码图。 但是 **，解决方案资源管理器** 可以从 、类视图 和 对象浏览器 拖放单个代码元素 **或****文件**。
 
 ## <a name="prerequisites"></a>先决条件
 
-若要在 Visual Studio 创建代码图，请首先 [安装代码 **映射** 和 **实时依赖项验证** 组件](install-architecture-tools.md)
+若要在 Visual Studio创建代码图，请首先安装代码 [**映射** 和 **实时依赖项验证** 组件](install-architecture-tools.md)
 
 若要创建和编辑代码图，需要Visual Studio Enterprise **版本**。 但是，在 Visual Studio Community 和 Professional 版本中，可以打开在 Enterprise 版本中生成的关系图，但不能对其进行编辑。
 
@@ -134,7 +134,7 @@ ms.locfileid: "121356299"
 
    ![向下钻取到类和成员级别](../modeling/media/dependencygraph_expandedselectedgroups_2012.png)
 
-10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 在 **选择要聚焦** 的项时按住 Ctrl，打开快捷菜单，然后从"选择 **"Graph"新建"。**
+10. 集中精力处理复杂的解决方案代码图的另一种方式是从现有代码图生成包含选定项的新代码图。 在选择要聚焦的项时按住 **Ctrl，** 打开快捷菜单，然后从"选择"Graph""**新建"。**
 
     ![显示新代码映射上的选定项](../modeling/media/codemapsshowonnewmap.png)
 
@@ -236,7 +236,7 @@ ms.locfileid: "121356299"
 
    ![使用“筛选器”窗格以简化显示](../modeling/media/almcodemapfilterpane.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [共享代码图](share-code-maps.md)
 - [创建 c + + 代码图](code-maps-for-cpp.md)

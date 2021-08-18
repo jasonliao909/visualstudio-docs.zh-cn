@@ -1,20 +1,21 @@
 ---
 title: T4 参数指令
-description: 了解，在 Visual Studio 中，参数指令声明模板代码中从外部上下文传入的值初始化的属性。
+description: 请注意，在 Visual Studio 中，参数指令声明模板代码中从外部上下文传入的值初始化的属性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ef80179d43996669b9d883fd2ca9163208d18d7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a8a6101915112c1d7035611bec84c6c8d6bf6bc4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386093"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085359"
 ---
 # <a name="t4-parameter-directive"></a>T4 参数指令
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f30c6a45d4ff43811e34ec4357961e0c80ae0eb9637b9fd7aee661a54296f75f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7be4be6b08c5ea9b0813e4782a0ac1a77cec2890
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366064"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032649"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   在加载托管 VSTO 外接程序时调用。

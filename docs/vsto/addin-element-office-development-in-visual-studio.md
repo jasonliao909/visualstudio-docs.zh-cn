@@ -1,6 +1,6 @@
 ---
-description: Vstav3 命名空间的 addin 元素包含特定于在 Visual Studio 中开发的 Microsoft Office VSTO 外接程序和文档级自定义项的信息。
-title: '&lt;&gt; (Visual Studio 中的 Office 开发) 的 addin 元素'
+description: vstav3 命名空间的 addin 元素包含特定于 Microsoft Office VSTO 外接程序和 Visual Studio 开发的文档级自定义项的信息。
+title: '&lt;&gt;Office 在 Visual Studio 中进行开发 (addin 元素) '
 titleSuffix: ''
 ms.date: 02/02/2017
 ms.topic: reference
@@ -14,17 +14,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4cfc59475b01fbf42c387b4a7a5ca533b313a322
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 63d5adb7d4fab31d7f4d24f40948d8e4acd26f10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102227380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100315"
 ---
-# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt; (Visual Studio 中的 Office 开发) 的 addin 元素
-  命名空间的 **addin** 元素 `vstav3` 包含特定于在 Visual Studio 中开发的 Microsoft Office VSTO 外接程序和文档级自定义项的信息。
+# <a name="ltaddingt-element-office-development-in-visual-studio"></a>&lt;&gt;Office 在 Visual Studio 中进行开发 (addin 元素) 
+  命名空间的 **addin** 元素 `vstav3` 包含特定于 Microsoft Office VSTO 外接程序和 Visual Studio 开发的文档级自定义项的信息。
 
 ## <a name="syntax"></a>语法
 
@@ -58,21 +59,21 @@ ms.locfileid: "102227380"
  `addin` 元素具有以下子元素。
 
 ### <a name="entrypoints"></a>entryPoints
- 必需。 [&#60;s&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/entrypoints-element-office-development-in-visual-studio.md)中介绍了 **s** 元素。
+ 必需。 [&#60;s&#62; 元素](../vsto/entrypoints-element-office-development-in-visual-studio.md)中介绍了 **s** 元素 &#40;Office 开发 Visual Studio&#41;。
 
 ### <a name="update"></a>update
- 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;更新&#62; 元素](../vsto/update-element-office-development-in-visual-studio.md)中介绍了 **update** 元素。
+ 必需。 **update** 元素在&#60;更新&#62; 元素中进行了介绍， [&#40;Office 在 Visual Studio&#41;中进行开发](../vsto/update-element-office-development-in-visual-studio.md)。
 
 ### <a name="postactions"></a>postActions
- 可选。 [&#60;postActions&#62; 元素 &#40;Visual Studio 中的 Office 开发&#41;](../vsto/postactions-element-office-development-in-visual-studio.md)中介绍了 **postActions** 元素。
+ 可选。 [&#60;postActions&#62; 元素](../vsto/postactions-element-office-development-in-visual-studio.md)中介绍了 **postActions** 元素 &#40;Office 开发 Visual Studio&#41;。
 
 ### <a name="application"></a>application
- 必需。 [&#40;Visual Studio 中的 Office 开发&#41;中&#60;应用程序&#62; 元素](../vsto/application-element-office-development-in-visual-studio.md)中描述了 **应用程序** 元素。
+ 必需。 **应用程序** 元素在 [&#60;应用程序&#62; 元素](../vsto/application-element-office-development-in-visual-studio.md)中进行了介绍 &#40;Office 开发 Visual Studio&#41;。
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>描述
- 下面的代码示例说明了使用部署的文档级 Office 解决方案中的 **addin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示文档级 Office 解决方案中的 **addin** 元素，该解决方案是使用部署的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
@@ -133,10 +134,10 @@ ms.locfileid: "102227380"
 </vstav3:addIn>
 ```
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示应用程序级 Office 解决方案中的 **addin** 元素，该解决方案是使用部署的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示使用部署的应用程序级 Office 解决方案中的 **addin** 元素 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 

@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc3a1854277552f1134f29907ec78a0dc1804c1aebaa0f8ce2afc2abe552f845
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2ec997bdc13c8981ae2d0aa1d419ebe61bd3a7a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050619"
 ---
 # <a name="idebugprogramdestroyeventflags2getflags"></a>IDebugProgramDestroyEventFlags2::GetFlags
 检索程序销毁标志。

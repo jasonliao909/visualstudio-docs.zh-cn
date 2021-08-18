@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 60061af52e6344cc500d2c00dbeb11b350f3fc8c35560b26ef7bc524e1198a13
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bf8e185030f459e758a578c38ede44e14588326a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410952"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116599"
 ---
 # <a name="properties-of-image-shapes"></a>图像形状的属性
 
@@ -55,7 +55,7 @@ ms.locfileid: "121410952"
 |大纲短划线样式|此形状的轮廓短划线样式 (Solid、Dash、Dot、DashDot、DashDotDot 或自定义) 。|单色|
 |轮廓粗细|此形状的轮廓粗细。|0.03125|
 |文本颜色|用于与此形状关联的文本修饰器的颜色。|黑色|
-|访问修饰符|geometry 形状的访问修饰符 (公共或内部) 。|公共|
+|访问修饰符|geometry 形状的访问修饰符 (公共或内部) 。|公开|
 |自定义特性|用于向从此形状生成的源代码类添加属性。|\<none>|
 |生成双派生|如果 `True` 为 ，则基类和分部 (都支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |具有自定义构造函数|如果 `True` 为 ，将在源代码中提供自定义构造函数。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|

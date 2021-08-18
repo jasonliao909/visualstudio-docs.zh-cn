@@ -18,24 +18,25 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9c95842ac2c6d77a2312ac5c4c197ba22ed2020e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: ab02913bb165f6f3ca7c240a27ee838fa5cf8e3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825415"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032337"
 ---
 # <a name="optional-parameters-in-office-solutions"></a>Office 解决方案中的可选参数
   Microsoft Office 应用程序的对象模型中的许多方法都接受可选参数。 如果使用 Visual Basic 在 Visual Studio 中开发 Office 解决方案，你不必为可选参数传递值，因为系统会为每个缺少的参数自动使用默认值。 在大多数情况下，你还可以在 Visual C# 项目中省略可选参数。 但是，在 `ThisDocument` 文档级 Word 项目中，不能省略类的可选 ref 参数。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
- 有关使用 Visual c # 和 Visual Basic 项目中的可选参数的详细信息，请参阅 [&#41;的命名参数和可选参数 &#40;C&#35; 编程指南 ](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments) 和 [可选参数 &#40;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)Visual Basic&#41;。
+ 有关使用 Visual c # 和 Visual Basic 项目中的可选参数的详细信息，请参阅[&#41;的命名参数和可选参数 &#40;C&#35; 编程指南](/dotnet/csharp/programming-guide/classes-and-structs/named-and-optional-arguments)和[可选参数 &#40;](/dotnet/visual-basic/programming-guide/language-features/procedures/optional-parameters)Visual Basic&#41;。
 
 > [!NOTE]
-> 在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual Studio 中的 Office visual c # 项目仍包含 `missing` 变量，但当你在中开发 office 解决方案时，通常不需要使用它 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] ，除非你在 `ThisDocument` Word 文档级项目中的类中调用方法时，才需要使用可选的 ref 参数。
+> 在 Visual Studio 的早期版本中，必须为 Visual C# 项目中的每个可选参数传递一个值。 为了方便起见，这些项目包括一个名为 `missing` 的全局变量，当你想要使用某个可选参数的默认值时，可以将该变量传递给该可选参数。 Visual Studio 中 Office 的 Visual c # 项目仍包含 `missing` 变量，但在中开发 Office 解决方案时，通常不需要使用它，但在 [!INCLUDE[vs_dev12](../vsto/includes/vs-dev12-md.md)] Word 的 `ThisDocument` 文档级项目的类中调用方法时除外。
 
 ## <a name="example-in-excel"></a>Excel 中的示例
  <xref:Microsoft.Office.Tools.Excel.Worksheet.CheckSpelling%2A> 方法具有多个可选参数。 可以为某些参数指定值，并接受其他参数的默认值，如下面的代码示例所示。 此示例需要一个具有名为 `Sheet1` 的工作表类的文档级项目。
@@ -68,7 +69,7 @@ ms.locfileid: "107825415"
 
   :::code language="csharp" source="../vsto/codesnippet/CSharp/worddocument1/ThisDocument.cs" id="Snippet5":::
 
-  有关值和引用类型参数的详细信息，请参阅 [按值和按引用传递参数 &#40;Visual Basic ](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) Visual Basic) 的&#41;(和将 [参数传递 &#40;C&#35; 编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。
+  有关值和引用类型参数的详细信息，请参阅[按值和按引用传递参数 &#40;Visual Basic](/dotnet/visual-basic/programming-guide/language-features/procedures/passing-arguments-by-value-and-by-reference) Visual Basic) 的&#41;(和将[参数传递 &#40;C&#35; 编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/passing-parameters)。
 
 ## <a name="see-also"></a>请参阅
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
