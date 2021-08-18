@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c0d4ccd40f9cd921c012282ffeb2f0f26f9b0a8c11b9907d164e7d639a117993
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2a3ba004fdce8b82fedf7dc2e2205b56ba52ff29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449074"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126331"
 ---
 # <a name="idebugprogrampublisher2"></a>IDebugProgramPublisher2
 此接口允许调试引擎 (DE) 或自定义端口供应商注册程序以进行调试。
@@ -91,6 +91,6 @@ void CProgram::Start(IDebugEngine2 * pEngine)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgramProvider2](../../../extensibility/debugger/reference/idebugprogramprovider2.md)

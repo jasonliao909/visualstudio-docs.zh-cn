@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3636afa4eea04feaa8aaa58a00c8d1af6ffaf4a28e80e90c4a9ac4d5643a72e7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9f60e1b8c3245c299f9c251185b644b191968228
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424627"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100304"
 ---
 # <a name="access-the-ribbon-at-run-time"></a>在运行时访问功能区
   可编辑代码以显示、隐藏和修改功能区以及使用户能够从自定义任务窗格、操作窗格或 Outlook 窗体区域中的控件运行代码。
@@ -34,7 +34,7 @@ ms.locfileid: "121424627"
 ## <a name="access-the-ribbon-by-using-the-globals-class"></a>使用 Globals 类访问功能区
  可以使用 `Globals` 类从项目中的任何位置访问文档级项目或 VSTO 外接程序项目中的功能区。
 
- 有关类的详细信息 `Globals` ，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
+ 有关类的详细信息 `Globals` ，请参阅[对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
 
  下面的示例使用 `Globals` 类来访问名为 `Ribbon1` 的自定义功能区，并将在功能区中组合框上显示的文本设置为 `Hello World`。
 
@@ -42,7 +42,7 @@ ms.locfileid: "121424627"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet4":::
 
 ## <a name="access-a-collection-of-ribbons-that-appear-in-a-specific-outlook-inspector-window"></a>访问在特定 Outlook 检查器窗口中显示的功能区的集合
- 可以访问显示在 Outlook *检查* 器中的功能区的集合。 检查器是在用户执行某些任务时（例如创建电子邮件）打开的 Outlook 窗口。 若要访问检查器窗口的功能区，请调用 `Globals` 类的 `Ribbons` 属性，并传入表示该检查器的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。
+ 可以访问在 Outlook *检查* 器中显示的功能区的集合。 检查器是在用户执行某些任务时（例如创建电子邮件）打开的 Outlook 窗口。 若要访问检查器窗口的功能区，请调用 `Globals` 类的 `Ribbons` 属性，并传入表示该检查器的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。
 
  下面的示例获取当前位于最前的检查器的功能区集合。 此示例随后访问名为 `Ribbon1` 的功能区，并将功能区的组合框上显示的文本设置为 `Hello World`。
 
@@ -50,7 +50,7 @@ ms.locfileid: "121424627"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet5":::
 
 ## <a name="access-a-collection-of-ribbons-that-appear-for-a-specific-outlook-explorer"></a>访问针对特定 Outlook 资源管理器显示的功能区的集合
- 可以访问显示在 Outlook *资源管理器* 中的功能区的集合。 资源管理器是 Outlook 实例的主要应用程序用户界面 (UI)。 若要访问资源管理器窗口的功能区，请调用 `Globals` 类的 `Ribbons` 属性，并传入表示该资源管理器的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象。
+ 可以访问在 Outlook *资源管理器* 中显示的功能区的集合。 资源管理器是 Outlook 实例的主要应用程序用户界面 (UI)。 若要访问资源管理器窗口的功能区，请调用 `Globals` 类的 `Ribbons` 属性，并传入表示该资源管理器的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象。
 
  下面的示例获取当前位于最前的资源管理器的功能区集合。 此示例随后访问名为 `Ribbon1` 的功能区，并将功能区的组合框上显示的文本设置为 `Hello World`。
 
@@ -64,5 +64,5 @@ ms.locfileid: "121424627"
 - [功能区对象模型概述](../vsto/ribbon-object-model-overview.md)
 - [演练：使用功能区设计器创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-the-ribbon-designer.md)
 - [演练：在运行时更新功能区上的控件](../vsto/walkthrough-updating-the-controls-on-a-ribbon-at-run-time.md)
-- [自定义 Outlook 功能区](../vsto/customizing-a-ribbon-for-outlook.md)
+- [为 Outlook 自定义功能区](../vsto/customizing-a-ribbon-for-outlook.md)
 - [在运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)

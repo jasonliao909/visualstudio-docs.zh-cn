@@ -1,6 +1,6 @@
 ---
-description: 此方法为 (DE) 指定的每个调试引擎添加一个程序节点。
-title: IDebugProcessEx2：： AddImplicitProgramNodes |Microsoft Docs
+description: 此方法为指定的 DE 引擎添加 (程序) 节点。
+title: IDebugProcessEx2：：AddImplicitProgramNodes |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 8b491b00-f9e7-45b3-9115-fe58c3464289
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30e5943ca0326a05b98b9fb833004c0ba7e342d3
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 0721c4cdeaae4d0109e8b130abc40d61d712bb70
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076389"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126630"
 ---
 # <a name="idebugprocessex2addimplicitprogramnodes"></a>IDebugProcessEx2::AddImplicitProgramNodes
-此方法为 (DE) 指定的每个调试引擎添加一个程序节点。
+此方法为指定的 DE 引擎添加 (程序) 节点。
 
 ## <a name="syntax"></a>语法
 
@@ -46,20 +47,20 @@ int AddImplicitProgramNodes(
 
 ## <a name="parameters"></a>参数
 `guidLaunchingEngine`\
-中 `GUID` 用于启动 (的程序的 DE 的，假定将其自己的程序节点添加) 。
+[in]DE 的 ，用于启动 (，并假定在 `GUID`) 。
 
 `rgguidSpecificEngines`\
-中要 `GUID` 为其添加程序节点的 DEs 的数组。
+[in]要 `GUID` 添加程序节点的 DES 数组。
 
 `celtSpecificEngines`\
-中数组中的的数目 `GUID` `rgguidSpecificEngines` 。
+[in]数组中的 `GUID` 数 `rgguidSpecificEngines` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-- 将为中列出的每个 DE 添加[程序节点](../../../extensibility/debugger/program-nodes.md) `rgguidSpecificEngines` （不包括启动引擎 (在) 中指定） `guidLaunchingEngine` ，这在启动程序时假定添加自己的程序节点。
+- [将为 中列出的](../../../extensibility/debugger/program-nodes.md) 每个 DE 添加程序节点 -不包括) 中给定的 (引擎节点，该引擎假定在启动程序时添加 `rgguidSpecificEngines` 自己的程序 `guidLaunchingEngine` 节点。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramEx2](../../../extensibility/debugger/reference/idebugprogramex2.md)
 - [程序节点](../../../extensibility/debugger/program-nodes.md)

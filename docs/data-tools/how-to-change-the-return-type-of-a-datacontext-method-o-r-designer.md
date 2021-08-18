@@ -1,6 +1,6 @@
 ---
 title: 更改 DataContext 方法的返回类型
-description: 在将存储过程或函数拖放到对象关系设计器 (O/R 设计器) 时，知道如何更改 DataContext 方法的返回类型。
+description: 了解如何在 O/R 设计器中删除存储过程或函数时更改 DataContext 方法的对象关系设计器 (类型) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,15 +11,15 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 31a3377dea9bf269f4491bbc20157553ff3012acdc2a0392d68f9f06dc456109
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7429a9d9f3cbc7353322a65cd1f5f1be5381704d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121264423"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113921"
 ---
 # <a name="how-to-change-the-return-type-of-a-datacontext-method-or-designer"></a>如何：更改 DataContext 方法的返回类型（O/R 设计器）
-<xref:System.Data.Linq.DataContext>基于存储过程或函数创建 (方法的返回类型) 不同，具体取决于您在 **O/R 设计器** 中删除存储过程或函数的位置。 如果直接将项放置在现有实体类上，则将创建具有该实体类返回类型的 <xref:System.Data.Linq.DataContext> 方法（如果该存储过程或函数返回的数据架构与实体类的形状相匹配）。 如果将项放到 **O/R 设计器** 的空白区域， <xref:System.Data.Linq.DataContext> 则将创建返回自动生成类型的方法。 在将 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格后可以更改该方法的返回类型。 若要检查或更改 <xref:System.Data.Linq.DataContext> 方法的返回类型，请选中该方法并在“属性”窗口中单击“返回类型”属性。
+基于存储过程或 (创建的方法的返回类型) 在 O/R 设计器中放置存储过程或函数 <xref:System.Data.Linq.DataContext> **的位置不同**。 如果直接将项放置在现有实体类上，则将创建具有该实体类返回类型的 <xref:System.Data.Linq.DataContext> 方法（如果该存储过程或函数返回的数据架构与实体类的形状相匹配）。 如果将项拖放到 **O/R** 设计器的空白区域，将创建一 <xref:System.Data.Linq.DataContext> 个返回自动生成的类型的方法。 在将 <xref:System.Data.Linq.DataContext> 方法添加到方法窗格后可以更改该方法的返回类型。 若要检查或更改 <xref:System.Data.Linq.DataContext> 方法的返回类型，请选中该方法并在“属性”窗口中单击“返回类型”属性。
 
 > [!NOTE]
 > 不能使用“属性”窗口将返回类型设置为实体类的 <xref:System.Data.Linq.DataContext> 方法恢复为返回自动生成类型。 若要将 <xref:System.Data.Linq.DataContext> 方法恢复为返回自动生成类型，必须将原始数据库对象再次拖动到 O/R 设计器上。
@@ -30,21 +30,21 @@ ms.locfileid: "121264423"
 
 1. 在方法窗格中选择该 <xref:System.Data.Linq.DataContext> 方法。
 
-2. 在“属性”窗口中选择“返回类型”，然后从“返回类型”列表中选择一个可用的实体类。 如果所需的实体类不在列表中，请将其添加到 **O/R 设计器** 中或在其中创建，以将其添加到列表。
+2. 在“属性”窗口中选择“返回类型”，然后从“返回类型”列表中选择一个可用的实体类。 如果所需实体类不在列表中，请将其添加到 ，或在 **O/R** 设计器中创建它以将其添加到列表中。
 
 3. 保存 *.dbml* 文件。
 
 ## <a name="to-change-the-return-type-of-a-datacontext-method-from-an-entity-class-back-to-the-auto-generated-type"></a>将 DataContext 方法的返回类型从实体类重新更改为自动生成类型
 
-1. <xref:System.Data.Linq.DataContext>在 **方法** 窗格中选择方法并删除它。
+1. 在" <xref:System.Data.Linq.DataContext> 方法"窗格中 **选择方法** 并将其删除。
 
-2. 将数据库对象从 **服务器资源管理器** 或 **数据库资源管理器** 拖到 **O/R 设计器** 的空白区域。
+2. 将数据库 **对象从** 服务器资源管理器 **或** 数据库资源管理器拖动到 O/R 设计器 **的空白区域**。
 
 3. 保存 *.dbml* 文件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)
-- [DataContext 方法 (O/R 设计器) ](../data-tools/datacontext-methods-o-r-designer.md)
-- [如何：创建映射到存储过程和函数的 DataContext 方法 (O/R 设计器) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)
+- [O/R 设计器 (DataContext) ](../data-tools/datacontext-methods-o-r-designer.md)
+- [如何：使用 O/R 设计器创建映射到存储过程和函数 (DataContext) ](../data-tools/how-to-create-datacontext-methods-mapped-to-stored-procedures-and-functions-o-r-designer.md)

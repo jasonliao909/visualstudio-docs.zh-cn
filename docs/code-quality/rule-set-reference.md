@@ -1,7 +1,7 @@
 ---
 title: 代码分析规则集参考
 ms.date: 04/04/2018
-description: 了解 Visual Studio 旧版代码分析中的内置规则集。 请参阅规则集的资源。 了解如何在自定义规则集中使用这些集。
+description: 了解 Visual Studio 旧代码分析中的内置规则集。 请参阅规则集的资源。 了解如何在自定义规则集中使用这些集。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 helpviewer_keywords:
@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: cead2d51a13ce4ec137edcd55c7db91d84b04f7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c6f23dcc5646d4516f9e00e50f8bf742b94502a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867771"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113960"
 ---
 # <a name="code-analysis-rule-set-reference"></a>代码分析规则集参考
 

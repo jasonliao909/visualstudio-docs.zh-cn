@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf95f47dc1eb4d4e6d64333fa847222db0dc388b81c70afff667d346becaf367
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b32c80a904e9ec96fd5f49b3d54c75fce26327b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126669"
 ---
 # <a name="idebugprocess3execute"></a>IDebugProcess3::Execute
 从停止状态继续运行此过程。 任何以前的执行状态 (如步骤) 清除，并且进程将再次开始执行。

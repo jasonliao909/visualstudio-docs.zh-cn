@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 41281a9e62891fcb9cef3ab0928c5ecd447d2e87eff74ad992a73e8954bf6796
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6a9aad102cd5b4e701715d245bde20942d8abd50
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358839"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144361"
 ---
 # <a name="symbols-element"></a>Symbols 元素
 定义其他 .VSCT 元素使用的 Guid 和 Id。 对于非托管代码，此信息通常来自 [Extern 元素](../extensibility/extern-element.md)指定的标头文件。 托管代码使用符号元素的子元素来定义此信息。
@@ -72,5 +72,5 @@ ms.locfileid: "121358839"
 </Symbols>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 命令表格 (.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

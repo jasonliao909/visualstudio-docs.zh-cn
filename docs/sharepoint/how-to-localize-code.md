@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a3cb812003543571bcd6fc2fea9307cc725247c8347aa4f108cdb7b494adb995
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c65edab726fb0def889364f37f2eed41778bcfe6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084228"
 ---
 # <a name="how-to-localize-code"></a>如何：本地化代码
   未本地化代码使用硬编码的字符串值。 若要对代码字符串进行本地化，请将其替换为对的调用 <xref:System.Web.HttpContext.GetGlobalResourceObject%2A> ，这是一个引用本地化资源的方法。

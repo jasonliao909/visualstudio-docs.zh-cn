@@ -11,14 +11,15 @@ ms.assetid: c74e3ccf-d771-48c8-a2f9-df323b166784
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 738e326c0e6300520d66d64fda4bb5040f231c75
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f2874909b772d6427dfa8869b203c1843f6ac153
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074738"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086867"
 ---
 # <a name="command-availability"></a>命令可用性
 
@@ -32,7 +33,7 @@ Visual Studio 上下文确定哪些命令可用。 上下文可能会更改，�
 
 - VSPackage： Vspackage 可以定义要显示或隐藏命令的时间。
 
-- 项目：仅显示当前所选项目的项目命令。
+- Project：仅为当前选定的项目显示 Project 命令。
 
 - 编辑器：一次只能有一个编辑器处于活动状态。 活动编辑器中的命令可用。 编辑器与语言服务密切合作。 语言服务必须在关联编辑器的上下文中处理其命令。
 
@@ -55,7 +56,7 @@ Visual Studio 上下文确定哪些命令可用。 上下文可能会更改，�
 > [!CAUTION]
 > 请确保 VSPackage 不会影响任何现有的上下文 Guid，因为其他 Vspackage 可能依赖于它们。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [选择上下文对象](../../extensibility/internals/selection-context-objects.md)
 - [Vspackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
