@@ -11,17 +11,18 @@ ms.assetid: c1ec5a4d-5d42-4660-932c-7348550140cb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 28335176a70213f61bfbb77bf6f91cc6155902e7
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d4640ee39a936318b5e200fc46135e1fc271c46b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119992"
 ---
 # <a name="disassembly_flags"></a>DISASSEMBLY_FLAGS
 指定反汇编的标志。

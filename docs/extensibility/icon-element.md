@@ -1,6 +1,6 @@
 ---
-title: Icon 元素|Microsoft Docs
-description: 了解 Icon 元素，该元素表示 Visual Studio IDE 扩展中使用的图标，其中包括所使用的位图和位图条中的槽的属性。
+title: Icon 元素 |Microsoft Docs
+description: 了解 Icon 元素，该元素表示在 Visual Studio IDE 扩展中使用的图标，其中包括所使用的位图的属性，以及位图条带中的槽。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 861bca1bc4a0f43f8e5165ae4fdf172fc858dfaf575683a921f52f3428e9c0d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26f942461a8d9be31e7802fb63f0249b69046663
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070199"
 ---
 # <a name="icon-element"></a>Icon 元素
-Icon 标记的 guid 属性是定义的位图的 guid。 `id`属性选择位图条中的槽。 此元素为可选元素。 如果未包含此元素，则 **隐含 guidOfficeIcon：msotcidNoIcon** 的值。
+图标标记的 guid 属性是定义的位图的 guid。 该 `id` 属性在位图条带中选择槽。 此元素为可选元素。 如果此元素不包含在 **guidOfficeIcon： msotcidNoIcon** ，则将隐式赋值。
 
 ## <a name="syntax"></a>语法
 
@@ -50,7 +50,7 @@ Icon 标记的 guid 属性是定义的位图的 guid。 `id`属性选择位图�
 
 |元素|说明|
 |-------------|-----------------|
-|[Buttons 元素](../extensibility/buttons-element.md)||
+|[按钮元素](../extensibility/buttons-element.md)||
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

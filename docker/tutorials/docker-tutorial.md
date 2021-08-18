@@ -1,24 +1,32 @@
 ---
-title: 教程：Docker 和 Visual Studio Code 入门
+title: 教程：Windows 或 Mac 上的 Docker 和 Visual Studio Code 入门
 description: 一个多步骤教程，其中介绍了配合使用 Docker 与 Visual Studio Code 的基础知识。
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 75a51f478e4e58700f6025dd6a87fcc38439ed87
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 11bf11a0f01cb4faf93fca702d18c0801ec5fe77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222651"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053496"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教程：Docker 入门
 
-在本教程中，你将了解如何创建和部署 Docker 应用，包括将多个数据库与容器结合使用，以及使用 Docker Compose。 还会将容器化应用部署到 Azure。
+在本教程中，你将了解如何使用 Visual Studio Code 在 Windows 或 Mac 上创建和部署 Docker 应用，包括将多个容器与数据库结合使用，以及使用 Docker Compose。 还会将容器化应用部署到 Azure。
+
+容器是精简的虚拟环境，如虚拟机 (VM)，提供用于生成和运行应用的平台，但没有完整操作系统的完整大小和开销。 [Docker](https://www.docker.com) 是一个行业标准的第三方容器提供程序和容器管理系统。 Docker Desktop 在计算机上运行，并管理本地容器。 Visual Studio 和 VS Code 等开发工具提供了扩展，让你可以使用本地安装的 Docker Desktop 服务来创建容器化应用、将应用部署到容器，以及调试容器上运行的应用。
+
+## <a name="prerequisites"></a>必备条件
+
+- [Visual Studio Code](https://code.microsoft.com/download)
+- Docker Desktop（[Windows](https://docs.docker.com/docker-for-windows/install/) 或 [Mac](https://docs.docker.com/docker-for-mac/install/) 版）。
 
 ## <a name="start-the-tutorial"></a>开始教程
 

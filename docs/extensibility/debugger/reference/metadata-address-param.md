@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dabcf2b31de54a5a344eaf795798e05d84bdb282b949c6b5c2b50e78a8f37f27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2a160789b4b5e19ffd6e9eb1974f85396b2d8f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276225"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103112"
 ---
 # <a name="metadata_address_param"></a>METADATA_ADDRESS_PARAM
 此结构表示方法或函数的参数。
@@ -65,7 +65,7 @@ public struct METADATA_ADDRESS_PARAM {
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)
 - [ADDRESS_KIND](../../../extensibility/debugger/reference/address-kind.md)

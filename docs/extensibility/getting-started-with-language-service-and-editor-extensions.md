@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b9518179b0096dcb7527ea5e9eba4e72cbc70727c7d6f73af4b59f6cb22d08cc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6ec5af209d9dc5c28c1c741058502b5be1b44000
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359970"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087153"
 ---
 # <a name="get-started-with-language-service-and-editor-extensions"></a>语言服务和编辑器扩展入门
 

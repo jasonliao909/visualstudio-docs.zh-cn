@@ -93,7 +93,7 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 
   在 **“高级安全设置”** 对话框中， **“使用所选的权限集调试此应用程序”** 复选框被选中然后禁用。 这是因为不能关闭浏览器托管的应用程序的“在区域中调试”。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [如何：启用ClickOnce安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：为应用程序设置ClickOnce区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)

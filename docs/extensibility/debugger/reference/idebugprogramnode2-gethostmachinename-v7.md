@@ -1,6 +1,6 @@
 ---
-title: IDebugProgramNode2：： GetHostMachineName_V7 |Microsoft Docs
-description: 这是旧的、不推荐使用的方法，用于获取 Visual Studio 2005 之前使用的主机名。
+title: IDebugProgramNode2：：GetHostMachineName_V7 |Microsoft Docs
+description: 这是一种弃用的旧方法，用于获取 2005 年 5 月之前使用的Visual Studio名称。
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,22 +11,23 @@ helpviewer_keywords:
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 20d62c180848c4875fa3312e0194ebdb467a93ca
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 70cf6efde1b42b2cf0c381ae1c979c94c16d89bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105053537"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071430"
 ---
 # <a name="idebugprogramnode2gethostmachinename_v7"></a>IDebugProgramNode2::GetHostMachineName_V7
 
 > [!Note]
-> 弃用. 请勿使用。
+> 废弃。 请勿使用。
 
 ## <a name="syntax"></a>语法
 
@@ -45,17 +46,17 @@ int GetHostMachineName_V7 (
 ## <a name="parameters"></a>参数
 
 `pbstrHostMachineName`\
-弄返回正在运行程序的计算机的名称。
+[out]返回运行程序计算机的名称。
 
 ## <a name="return-value"></a>返回值
 
-实现应总是返回 `E_NOTIMPL` 。
+实现应始终返回 `E_NOTIMPL` 。
 
 ## <a name="remarks"></a>备注
 
 > [!WARNING]
-> 在 Visual Studio 2005 中，此方法不再使用，应始终返回 `E_NOTIMPL` 。
+> 从 Visual Studio 2005 起，此方法不再使用，应始终返回 `E_NOTIMPL` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

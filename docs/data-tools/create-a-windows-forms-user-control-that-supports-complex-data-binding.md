@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 12b9c84b7df958c5fd504eb5fe35db79e9727ae8a35fc405898846c49886f1bf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b179c957320badae098d0f82107d26ebf0859df1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052975"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-complex-data-binding"></a>创建支持复杂数据绑定的 Windows 窗体用户控件
 
@@ -54,7 +54,7 @@ ms.locfileid: "121347566"
 
 - 通过将新控件从“数据源”窗口拖到“Form1”上来添加新控件。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 

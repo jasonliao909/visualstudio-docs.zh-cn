@@ -1,6 +1,6 @@
 ---
 description: 在内存中加载指定的调试符号。
-title: IDebugComPlusSymbolProvider：： LoadSymbols |Microsoft Docs
+title: IDebugComPlusSymbolProvider：：LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 041b6fde00efaae5934d793738fe85584511a372
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 676ff3d93c1b7126829a5593adc7377ea28794e2b4129602640cf588d7ce17bc
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079748"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121434069"
 ---
 # <a name="idebugcomplussymbolproviderloadsymbols"></a>IDebugComPlusSymbolProvider::LoadSymbols
 在内存中加载指定的调试符号。
@@ -52,25 +52,25 @@ int LoadSymbols(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中Mondule 的唯一标识符。
+[in]mondule 的唯一标识符。
 
 `baseAddress`\
-中基本内存地址。
+[in]基本内存地址。
 
 `pUnkMetadataImport`\
-中包含符号元数据的对象。
+[in]包含符号元数据的对象。
 
 `bstrModuleName`\
-中模块的名称。
+[in]模块的名称。
 
 `bstrSymSearchPath`\
-中要搜索符号文件的路径。
+[in]要搜索符号文件的路径。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。

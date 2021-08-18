@@ -1,6 +1,6 @@
 ---
-description: 按给定的语句或行数移动文档上下文。
-title: IDebugDocumentContext2：： Seek |Microsoft Docs
+description: 按给定数量的语句或行移动文档上下文。
+title: IDebugDocumentContext2：：Seek |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 71501356-8a82-4d36-b354-6625bdd2baa0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9fcc430102ec974f2492a8e65894faa45978693
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d18e00071d23e22ed2cbd99f9b88f95c13aee253
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119485"
 ---
 # <a name="idebugdocumentcontext2seek"></a>IDebugDocumentContext2::Seek
-按给定的语句或行数移动文档上下文。
+按给定数量的语句或行移动文档上下文。
 
 ## <a name="syntax"></a>语法
 
@@ -44,13 +45,13 @@ int Seek(
 
 ## <a name="parameters"></a>参数
 `nCount`\
-中要向前移动的语句或行数，具体取决于文档上下文。
+[in]要向前移动的语句或行数，具体取决于文档上下文。
 
 `ppDocContext`\
-弄返回一个新的 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象，该对象具有新位置。
+[out]返回具有新 [位置的新 IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

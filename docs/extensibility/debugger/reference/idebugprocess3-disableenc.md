@@ -1,5 +1,5 @@
 ---
-description: 此方法显式禁用此进程上的 "编辑并继续" (以及它包含的所有程序) 。
+description: 此方法在进程及其包含的所有程序上显式 ("编辑并继续") 。
 title: IDebugProcess3：:D isableENC |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 429cacbc4ef87224459493b0815d9e5dcff7fac3f61ca510d334501226a08eef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 88be8c57bac99761ac4bcfb6d92451ba0245c483
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122071982"
 ---
 # <a name="idebugprocess3disableenc"></a>IDebugProcess3::DisableENC
-此方法显式禁用此进程上的 "编辑并继续" (以及它包含的所有程序) 。 自定义端口供应商应该总是返回 `E_NOTIMPL` 。
+此方法在进程及其包含的所有程序上显式 ("编辑并继续") 。 自定义端口供应商应始终返回 `E_NOTIMPL` 。
 
 ## <a name="syntax"></a>语法
 
@@ -42,17 +42,17 @@ HRESULT DisableENC(
 
 ## <a name="parameters"></a>参数
 `reason`\
-中 [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md) 枚举中的一个值。
+[in] [EncUnavailableReason 枚举中的](../../../extensibility/debugger/reference/encunavailablereason.md) 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 > [!NOTE]
-> 自定义端口供应商应该总是返回 `E_NOTIMPL` 。
+> 自定义端口供应商应始终返回 `E_NOTIMPL` 。
 
 ## <a name="remarks"></a>备注
- 为某个进程禁用了 "编辑并继续" 后，只能通过重新启动该过程来重新启用它。
+ 为进程禁用"编辑并继续"后，只有重启进程才能重新启用它。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess3](../../../extensibility/debugger/reference/idebugprocess3.md)
 - [EncUnavailableReason](../../../extensibility/debugger/reference/encunavailablereason.md)

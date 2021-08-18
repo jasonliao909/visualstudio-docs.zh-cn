@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 77d3d076df7bef55f0c68040d578b4627bdfe030e7118bec37497ac98d65d143
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 47ad13cc0f3f01665535e6b9d8168af79eb299f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029978"
 ---
 # <a name="idebugprogramnode2detachdebugger_v7"></a>IDebugProgramNode2::DetachDebugger_V7
 
@@ -48,7 +48,7 @@ int DetachDebugger_V7 ();
 ## <a name="remarks"></a>备注
 
 > [!WARNING]
-> 自 Visual Studio 2005 起，不再使用此方法，应始终返回 `E_NOTIMPL` 。
+> 从 Visual Studio 2005 起，此方法不再使用，应始终返回 `E_NOTIMPL` 。
 
 当调试器意外退出时，将调用此方法。 调用此方法时，DE 应像用户分离程序一样恢复程序。 不应再发送调试事件。 程序应位于从调试器的另一个实例附加的状态。
 

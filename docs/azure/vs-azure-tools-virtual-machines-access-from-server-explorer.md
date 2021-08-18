@@ -8,18 +8,18 @@ ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 8/31/2017
 ms.author: ghogen
-ms.openlocfilehash: 4f7cf0d8c51415ae70bef5a9c556a0d2bda96cbd7f95cd8c194d62ca71060c25
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 689317f3789188a4551aaee588d7f0c006bcb4f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121312594"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053300"
 ---
 # <a name="accessing-azure-virtual-machines-from-server-explorer"></a>从服务器资源管理器访问 Azure 虚拟机
 
 ::: moniker range=">=vs-2022"
 > [!Important]
-> 服务器资源管理器 2022 年 1 月Visual Studio Azure 节点。 可以使用 Azure 门户或继续使用早期版本的 azure 门户中的 服务器资源管理器 Azure Visual Studio。
+> 2022 服务器资源管理器已停用 Visual Studio 的 Azure 节点。 可以使用 Azure 门户或继续使用早期版本的 azure 门户服务器资源管理器 Azure Visual Studio。
 >
 > 此外[，Microsoft Azure 存储资源管理器](/azure/vs-azure-tools-storage-manage-with-storage-explorer)是 Microsoft 提供的免费独立应用。 可以通过它在 Windows、macOS 和 Linux 上直观地使用 Azure 存储数据。
 >

@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1b4794dcf4293b340390695afa02bb49e552ada8918e9a3184c74f16b987432e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: be19f6bb9b1879746542d73e67f6b77b0d28d792
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388729"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102711"
 ---
 # <a name="feedback-to-the-user"></a>向用户反馈
 在集成开发 (IDE) 中，有关可用功能的可视反馈基于用户的当前 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 选择和全局选择上下文。 下表列出了不同选择上下文中可用的功能。
@@ -56,7 +56,7 @@ ms.locfileid: "121388729"
 
 - 特定于 **文档的工具箱已** 更新以反映活动文档。
 
-- 将显示 **"** 编辑器 **"** 工具栏和"表"菜单，标题栏将更新以反映"Web 窗体"窗口。
+- 将显示 **"** 编辑器 **"** 工具栏和"表"菜单，并更新标题栏以反映"Web 窗体"窗口。
 
 - 活动层次结构窗口（通常 **解决方案资源管理器）及其** 标题栏更新以反映当前上下文和上下文相关的 Project **菜单命令** 现在应用于活动 Web 应用程序项目。
 

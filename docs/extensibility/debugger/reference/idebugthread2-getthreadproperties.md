@@ -1,6 +1,6 @@
 ---
 description: 获取描述此线程的属性。
-title: IDebugThread2：： GetThreadProperties |Microsoft Docs
+title: IDebugThread2：：GetThreadProperties |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 304403fd-f4f8-4096-ac2c-bd3b59663aad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fc681ff8258988c5a7f708d9ae2342f013010bd6
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3e85d08bfe0604914942f81965bc28f86e5a91f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105070929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070866"
 ---
 # <a name="idebugthread2getthreadproperties"></a>IDebugThread2::GetThreadProperties
 获取描述此线程的属性。
@@ -44,19 +45,19 @@ int GetThreadProperties (
 
 ## <a name="parameters"></a>参数
 `dwFields`\
-中 [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md) 枚举中的标志的组合，用于确定 `ptp` 要填写的字段。
+[in]来自 THREADPROPERTY_FIELDS [标志的组合](../../../extensibility/debugger/reference/threadproperty-fields.md) ，用于确定要填充 `ptp` 的哪些字段。
 
 `ptp`\
-[in，out]使用线程的属性填充的 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 结构。
+[in， out]使用 [线程的属性填充的 THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 结构。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法返回的信息通常显示在 " **线程** 调试" 窗口中。
+此方法返回的信息通常显示在"线程调试 **"** 窗口中。
 
 ## <a name="example"></a>示例
-下面的示例演示如何对 `CProgram` 实现 [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为实现 `CProgram` [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
@@ -94,7 +95,7 @@ HRESULT CProgram::GetThreadProperties(THREADPROPERTY_FIELDS dwFields,
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)
 - [THREADPROPERTY_FIELDS](../../../extensibility/debugger/reference/threadproperty-fields.md)
 - [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md)

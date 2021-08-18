@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e2cda85d209b753480f168d2e4c5a9744f6bb03f6b34de75a4bb77431f718548
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2f0040b4c816ee55e6db7c59c3a74c53cedb51d5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135343"
 ---
 # <a name="persist-activity-designer"></a>Persist 活动设计器
 
@@ -32,7 +32,7 @@ Persist 活动设计器用于创建和配置 <xref:System.Activities.Statements.
 
 可以在 **"** 工具箱"的"运行时"类别中找到"持久化"活动设计器，可通过单击"工具箱"选项卡 (或者从"视图"菜单中选择"工具箱"或CTRL+ALT+X.) 
 
-"**持久** 化"活动设计器可以从"工具箱"拖动到工作流设计器放置活动的位置（例如，位于 内）上 <xref:System.Activities.Statements.Sequence> 。 这会创建默认 <xref:System.Activities.Statements.Persist> **DisplayName** 为 Persist 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 Persist 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
+可以将 **"** 持久化"活动设计器从"工具箱"拖动到工作流设计器放置活动（例如位于 内）的"持久化"活动图面 <xref:System.Activities.Statements.Sequence> 。 这会创建默认 <xref:System.Activities.Statements.Persist> **DisplayName** 为 Persist 的活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 Persist 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
 
 ### <a name="the-persist-properties"></a>Persist 属性
 
@@ -42,7 +42,7 @@ Persist 活动设计器用于创建和配置 <xref:System.Activities.Statements.
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.Persist> 活动的友好名称。 默认值为 Persist。 虽然显示名称不是绝对必需的，但最好使用显示名称。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [executionContext](../workflow-designer/runtime-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

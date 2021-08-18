@@ -1,6 +1,6 @@
 ---
-description: 返回代码上下文，该上下文表示发生堆栈展开操作时的位置。
-title: IDebugStackFrame3：：GetUnwindCodeContext |Microsoft Docs
+description: 如果堆栈展开操作发生，则返回表示位置的代码上下文。
+title: IDebugStackFrame3：： GetUnwindCodeContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8a3b88da3473ca6557f2aae36b87f13f2b3fc0be3dc7bfcea6d9ce2645959535
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b63a552db20730318c332968b2f12861e81f4065
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070904"
 ---
 # <a name="idebugstackframe3getunwindcodecontext"></a>IDebugStackFrame3::GetUnwindCodeContext
-返回代码上下文，该上下文表示发生堆栈展开操作时的位置。
+如果堆栈展开操作发生，则返回表示位置的代码上下文。
 
 ## <a name="syntax"></a>语法
 
@@ -43,14 +43,14 @@ int GetUnwindCodeContext(
 
 ## <a name="parameters"></a>参数
 `ppCodeContext`\
-[out]返回一个 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 对象，该对象表示发生堆栈展开时的代码上下文位置。
+弄返回一个 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 对象，该对象表示发生堆栈展开时的代码上下文位置。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 即使此方法可能在堆栈展开后返回位置的代码上下文，但不一定意味着堆栈展开实际上可以在当前堆栈帧中发生。
+ 尽管此方法可能会在堆栈展开后返回位置的代码上下文，但并不一定意味着堆栈展开实际上可以在当前堆栈帧中发生。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugStackFrame3](../../../extensibility/debugger/reference/idebugstackframe3.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

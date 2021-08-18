@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c35d0bda87ded6de95b7bc744c01ea82a97ab3354a2dbf0330dd2abcd18a5097
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2cf7b18d84ae8279c5d15f9404a6d8d500d44d82
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417309"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118900"
 ---
 # <a name="idebugerrorevent2geterrormessage"></a>IDebugErrorEvent2::GetErrorMessage
 返回允许构造可读错误消息的信息。

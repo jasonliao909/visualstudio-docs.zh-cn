@@ -11,14 +11,15 @@ ms.assetid: bbe4aa4e-b4b0-403e-b7a0-5dd6eb24e5a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7972d874668649b8bb86adc15008880c5fc4152e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 6b6fc42c15900b48826422d2474fb6a8048656ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903926"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086347"
 ---
 # <a name="sccgetcommandoptions-function"></a>SccGetCommandOptions 函数
 此函数会提示用户输入给定命令的高级选项。
@@ -49,12 +50,12 @@ SCCRTN SccGetCommandOptions(
 
  ppvOptions
 
-[in]还可以 (选项结构 `NULL`) 。
+[in]也可以 (选项结构 `NULL`) 。
 
 ## <a name="return-value"></a>返回值
  此函数的源代码管理插件实现应返回以下值之一：
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |SCC_OK|成功。|
 |SCC_I_ADV_SUPPORT|源代码管理插件支持命令的高级选项。|
@@ -65,11 +66,11 @@ SCCRTN SccGetCommandOptions(
 |SCC_E_NONSPECIFICERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- IDE 首次使用 调用此函数，以确定源代码管理插件是否支持指定命令 `ppvOptions` = `NULL` 的高级选项功能。 如果插件确实支持该命令的功能，则当用户请求高级选项时，IDE 将再次调用此函数 (通常作为对话框) 中的"高级"按钮实现，并为此指向指针的 指针提供非 NULL 指针。 `ppvOptions` `NULL` 插件将用户指定的任何高级选项存储在私有 结构中，并返回指向 中该结构的指针 `ppvOptions` 。 然后，此结构将传递给需要知道它的所有其他源代码管理插件 API 函数，包括对函数的后续 `SccGetCommandOptions` 调用。
+ IDE 首次使用 调用此函数，以确定源代码管理插件是否支持指定命令 `ppvOptions` = `NULL` 的高级选项功能。 如果插件确实支持该命令的功能，则当用户请求高级选项时，IDE 将再次调用此函数 (通常作为对话框) 中的"高级"按钮实现，并为此指向指针的指针提供非 NULL 指针。 `ppvOptions` `NULL` 插件将用户指定的任何高级选项存储在私有结构中，并返回指向 中该结构的指针 `ppvOptions` 。 然后，此结构将传递给需要知道它的所有其他源代码管理插件 API 函数，包括对函数的后续 `SccGetCommandOptions` 调用。
 
  一个示例有助于阐明这种情况。
 
- 用户选择"获取 **"** 命令，IDE 将显示" **获取"** 对话框。 IDE 调用 函数 `SccGetCommandOptions` ， `iCommand` 将 设置为 `SCC_COMMAND_GET` `ppvOptions` ，将 设置为 `NULL` 。 源代码管理插件将此问题解释为"你是否有此命令的高级选项？" 如果插件返回 `SCC_I_ADV_SUPPORT` ，则 IDE 在其"获取 **"** 对话框中显示" **高级"** 按钮。
+ 用户选择"获取 **"** 命令，IDE 将显示" **获取"** 对话框。 IDE 调用 函数 `SccGetCommandOptions` ， `iCommand` 将 设置为 `SCC_COMMAND_GET` `ppvOptions` ，将 设置为 `NULL` 。 源代码管理插件对此解释为"此命令是否有高级选项？" 如果插件返回 `SCC_I_ADV_SUPPORT` ，则 IDE 在其"获取 **"** 对话框中显示" **高级"** 按钮。
 
  用户首次单击"高级 **"** 按钮时，IDE 会再次调用 函数，这次使用指向指针 `SccGetCommandOptions` 的非 `NULL``ppvOptions` `NULL` 。 该插件显示其自己的"获取选项"对话框，提示用户输入信息，将该信息放入其自己的 结构中，并返回指向 中的该结构的指针 `ppvOptions` 。
 
@@ -80,6 +81,6 @@ SCCRTN SccGetCommandOptions(
 > [!NOTE]
 > 当 IDE 显示"选项"对话框时，使用 命令，该对话框允许用户设置 `SCC_COMMAND_OPTIONS` 控制集成工作方式的首选项。  如果源代码管理插件想要提供自己的首选项对话框，它可以从 IDE 首选项对话框中的"高级"按钮显示它。 插件只负责获取和保留此信息;IDE 不使用它或修改它。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [命令代码](../extensibility/command-code-enumerator.md)
