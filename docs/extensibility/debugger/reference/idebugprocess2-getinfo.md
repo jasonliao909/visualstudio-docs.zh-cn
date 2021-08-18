@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c96b936172db8841d9d293816647664dbe04803db39cede17710a9f2de1f747c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f9f7306630bdb50fef58b0d61c7f875fda6f348d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132881"
 ---
 # <a name="idebugprocess2getinfo"></a>IDebugProcess2::GetInfo
 获取进程的说明。

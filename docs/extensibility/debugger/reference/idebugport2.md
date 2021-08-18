@@ -11,14 +11,15 @@ ms.assetid: 8fd87f05-a950-4d14-b925-98be29d4facc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d0b173f362418171def93ee92e3883b2910ad18
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ca97bd3a89358f374e66a1c35693ca4f2801641c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105087335"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133011"
 ---
 # <a name="idebugport2"></a>IDebugPort2
 此接口表示计算机上的调试端口。
@@ -59,7 +60,7 @@ IDebugPort2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)

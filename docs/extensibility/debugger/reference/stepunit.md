@@ -1,5 +1,5 @@
 ---
-description: 指定步进的步骤单元。
+description: 指定单步执行的步骤单元。
 title: STEPUNIT |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48b9a6c4b008fe44dcfcbfe0599d871bc609513c79801510369b657eaa819b9c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c078f7f2840ed4123c83850bea5843992e460e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448541"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132296"
 ---
 # <a name="stepunit"></a>STEPUNIT
-指定步进的步骤单元。
+指定单步执行的步骤单元。
 
 ## <a name="syntax"></a>语法
 
@@ -48,23 +48,23 @@ enum enum_STEPUNIT {
 
 ## <a name="fields"></a>字段
  `STEP_STATEMENT`\
- 步骤 by 语句。
+ 按语句分步执行。
 
  `STEP_LINE`\
- 逐行。
+ 按行执行步骤。
 
  `STEP_INSTRUCTION`\
- 按说明操作。
+ 按指令分步执行。
 
 ## <a name="remarks"></a>备注
- 作为参数传递到 [步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md) 方法。
+ 作为参数传递给 [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

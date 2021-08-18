@@ -1,23 +1,24 @@
 ---
 title: 诊断 Visual Studio 中的扩展 UI 延迟 |Microsoft Docs
-description: 如果 UI 延迟可能是由扩展引起的，则 Visual Studio 会通知你。 了解如何诊断扩展代码中导致 UI 延迟的内容。
+description: 如果 UI 延迟可能是由扩展引起的，Visual Studio 会通知您。 了解如何诊断扩展代码中导致 UI 延迟的内容。
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload: multiple
-ms.openlocfilehash: 7bc43d806595c7653421daec6efabb087cc1071c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6309d014e2ec2c520a7cba24c8642c27fbb6f339
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102171352"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125005"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：诊断由扩展引起的 UI 延迟
 
-当 UI 无响应时，Visual Studio 将检查 UI 线程的调用堆栈，从叶开始，到基础。 如果 Visual Studio 确定调用堆栈帧所属的模块属于已安装和已启用的扩展的一部分，则它将显示一个通知。
+当 ui 无响应时，Visual Studio 会检查 ui 线程的调用堆栈，从叶开始，到基的作用。 如果 Visual Studio 确定调用堆栈帧所属的模块属于已安装和已启用的扩展的一部分，则它将显示一个通知。
 
 ![UI 延迟 (无响应) 通知](media/ui-delay-notification-in-vs.png)
 
@@ -45,13 +46,13 @@ ms.locfileid: "102171352"
 
 ## <a name="restart-vs-with-activity-logging-on"></a>重新启动 VS with 活动日志记录
 
-Visual Studio 可以生成 "活动日志"，它可提供在调试问题时有用的信息。 若要在 Visual Studio 中启用活动日志记录，请用 `/log` 命令行选项打开 Visual studio。 Visual Studio 启动后，活动日志存储在下列位置：
+Visual Studio 可以生成 "活动日志"，它可提供在调试问题时有用的信息。 若要在 Visual Studio 中启用活动日志记录，请用 `/log` 命令行选项打开 Visual Studio。 Visual Studio 启动之后，活动日志将存储在以下位置：
 
 ```DOS
 %APPDATA%\Microsoft\VisualStudio\<vs_instance_id>\ActivityLog.xml
 ```
 
-若要详细了解如何查找你的 VS 实例 ID，请参阅 [用于检测和管理 Visual Studio 实例的工具](../install/tools-for-managing-visual-studio-instances.md)。 稍后我们将使用此活动日志来了解有关 UI 延迟和相关通知的详细信息。
+若要详细了解如何查找您的 VS 实例 ID，请参阅[用于检测和管理 Visual Studio 实例的工具](../install/tools-for-managing-visual-studio-instances.md)。 稍后我们将使用此活动日志来了解有关 UI 延迟和相关通知的详细信息。
 
 ## <a name="starting-etw-tracing"></a>开始 ETW 跟踪
 
@@ -61,7 +62,7 @@ Visual Studio 可以生成 "活动日志"，它可提供在调试问题时有用
 Perfview.exe collect C:\trace.etl /BufferSizeMB=1024 -CircularMB:2048 -Merge:true -Providers:*Microsoft-VisualStudio:@StacksEnabled=true -NoV2Rundown /kernelEvents=default+FileIOInit+ContextSwitch+Dispatcher
 ```
 
-这将启用 "VisualStudio" 提供程序，该提供程序是 Visual Studio 提供的用于与 UI 延迟通知相关的事件的。 它还为 PerfView 可用于生成 " **线程时间堆栈** " 视图的内核提供程序指定关键字。
+这将启用 "VisualStudio" 提供程序，该提供程序 Visual Studio 用于与 UI 延迟通知相关的事件。 它还为 PerfView 可用于生成 " **线程时间堆栈** " 视图的内核提供程序指定关键字。
 
 ## <a name="trigger-the-notification-to-appear-again"></a>触发通知再次出现
 
@@ -73,10 +74,10 @@ PerfView 启动跟踪集合后，可以使用步骤 1) 中 (的触发器操作�
 
 ## <a name="examine-the-activity-log-to-get-the-delay-id"></a>检查活动日志以获取延迟 ID
 
-如前文所述，可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 找到活动日志。 每次 Visual Studio 检测到扩展 UI 延迟时，都会将一个节点作为源写入活动日志 `UIDelayNotifications` 。 此节点包含有关 UI 延迟的四个信息片段：
+如前文所述，可以在 *%APPDATA%\Microsoft\VisualStudio \<vs_instance_id>\ActivityLog.xml* 找到活动日志。 每次 Visual Studio 检测到扩展 UI 延迟时，都会将节点作为源写入活动日志 `UIDelayNotifications` 。 此节点包含有关 UI 延迟的四个信息片段：
 
 - UI 延迟 ID，是在 VS 会话中唯一标识 UI 延迟的序列号
-- 会话 ID，它从开始到关闭唯一标识你的 Visual Studio 会话
+- 会话 ID，用于唯一标识从开始到结束的 Visual Studio 会话
 - UI 延迟是否显示了通知
 - 可能导致 UI 延迟的扩展
 
@@ -150,12 +151,12 @@ PerfView 处理并打开跟踪可能需要几分钟时间。 打开跟踪后，�
 
 ![在线程时间堆栈视图中设置 GroupPath 和 IncPath](media/perfview-tts-group-path-inc-path.png)
 
-PerfView 提供了 " **帮助** " 菜单下的详细指导，可用于标识代码中的性能瓶颈。 此外，以下链接提供了有关如何使用 Visual Studio 线程 Api 优化代码的详细信息：
+PerfView 提供了 " **帮助** " 菜单下的详细指导，可用于标识代码中的性能瓶颈。 此外，以下链接提供了有关如何利用 Visual Studio 线程 api 来优化代码的详细信息：
 
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
 
-你还可以在 [此处](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers))  (NuGet 包的新的 Visual Studio 静态分析器用于扩展，提供有关编写有效扩展的最佳实践的指导。 请参阅 [VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) 和 [线程分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)列表。
+你还可以将新的 Visual Studio 静态分析器用于扩展 ([在此处](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)) NuGet 包 "，该分析器提供有关编写有效扩展的最佳实践的指导。 请参阅 [VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) 和 [线程分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)列表。
 
 > [!NOTE]
 > 如果由于不能对无响应进行 (控制而无法解决此类情况，例如，如果你的扩展必须在 UI 线程) 上调用同步 VS services，我们希望了解这一点。 如果你是 Visual Studio 合作伙伴计划的成员，则可以通过提交开发人员支持请求与我们联系。 否则，请使用 "报告问题" 工具提交反馈，并将其包括 `"Extension UI Delay Notifications"` 在标题中。 还应包括分析的详细说明。

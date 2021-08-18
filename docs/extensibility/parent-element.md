@@ -1,6 +1,6 @@
 ---
-title: 父元素|Microsoft Docs
-description: Parent 元素指定元素是按钮、组合框、菜单或组的父级。
+title: 父元素 |Microsoft Docs
+description: 父元素指定元素是按钮、组合框、菜单或组的父级。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 52f3f1986a6cba794d0a46f04668c1f40e787e11dc14da37d89e1a99c752bd0f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb2ce0ddcf779d5c6c9e0b880d99f169d762065d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414111"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152063"
 ---
 # <a name="parent-element"></a>父元素
-按钮或组合框的父级只能是一个组。 菜单或组的父级可能是任何其他菜单或组。 在 [CommandPlacement 元素中](../extensibility/commandplacement-element.md)，此元素是必需的;在所有其他实例中，它是可选的。 如果省略此元素，则隐含 `Group_Undefined:0` 的父级。
+按钮或组合框的父级只能是组。 菜单或组的父级可以是任何其他菜单或组。 在 [CommandPlacement 元素](../extensibility/commandplacement-element.md)中，此元素是必需的;在所有其他实例中，它是可选的。 如果省略此元素，则 `Group_Undefined:0` 将隐含的父。
 
 ## <a name="syntax"></a>语法
 
@@ -47,10 +47,10 @@ ms.locfileid: "121414111"
 
 |元素|说明|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向集成开发环境提供的命令的所有元素 (IDE) 。 例如，菜单项、菜单、工具栏和组合框。|
-|[Buttons 元素](../extensibility/buttons-element.md)|对 [Button 元素元素进行](../extensibility/button-element.md) 分组。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给集成开发环境 (IDE) 的命令。 例如，菜单项、菜单、工具栏和组合框。|
+|[按钮元素](../extensibility/buttons-element.md)|组 [按钮元素](../extensibility/button-element.md) 元素。|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
-|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的条目。|
+|[Groups 元素](../extensibility/groups-element.md)|包含定义 VSPackage 的命令组的项。|
 
 ## <a name="see-also"></a>请参阅
-- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

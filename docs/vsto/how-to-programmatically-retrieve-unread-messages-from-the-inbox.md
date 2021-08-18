@@ -1,6 +1,6 @@
 ---
 title: 以编程方式从收件箱获取未读消息
-description: 了解如何在 Microsoft Visual Studio 中通过编程方式从收件箱中检索未读Outlook。
+description: 了解如何在 Microsoft Visual Studio中以编程方式从收件箱中检索未读Outlook。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 10de77f2ab2d23d1f63643cd7f37094d62402f26d9d57ca2d03df4db844a681f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e86ff6198def71423076b62a0da6206887903676
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115260"
 ---
 # <a name="how-to-programmatically-retrieve-unread-messages-from-the-inbox"></a>如何：以编程方式从收件箱中检索未读消息
   此示例从收件箱中检索未读Outlook **并显示** 项数。
@@ -34,7 +34,7 @@ ms.locfileid: "121366181"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_RL_UnreadItems/thisaddin.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_RL_UnreadItems/thisaddin.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
 - [外接程序VSTO编程入门](../vsto/getting-started-programming-vsto-add-ins.md)
 - [如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)

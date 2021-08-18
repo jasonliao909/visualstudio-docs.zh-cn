@@ -1,6 +1,6 @@
 ---
-title: Combos 元素 |Microsoft Docs
-description: Combos 元素对组合元素进行分组，这些元素定义在组合框中显示的命令。 本文包含一个示例。
+title: Combos 元素|Microsoft Docs
+description: Combos 元素对组合元素进行分组，这些元素定义显示在组合框中的命令。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3396a7c8587ea9a4d8a6da660df467c2d9baeaf686c42c68efbdcce754650195
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de5beb57536a3683ec2096d118b661022175dca1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121278911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146129"
 ---
 # <a name="combos-element"></a>Combos 元素
-组 [组合元素](../extensibility/combo-element.md) 元素。
+对 [组合元素元素进行](../extensibility/combo-element.md) 分组。
 
 ## <a name="syntax"></a>语法
 
@@ -40,20 +40,20 @@ ms.locfileid: "121278911"
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
 |元素|说明|
 |-------------|-----------------|
-|[Combos 元素](../extensibility/combos-element.md)|组组合元素。|
-|[组合元素](../extensibility/combo-element.md)|定义在组合框中显示的命令。|
+|[Combos 元素](../extensibility/combos-element.md)|对组合元素进行分组。|
+|[组合元素](../extensibility/combo-element.md)|定义组合框中显示的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|说明|
 |-------------|-----------------|
-|[命令元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
+|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令集合。|
 
 ## <a name="example"></a>示例
 
@@ -79,6 +79,6 @@ ms.locfileid: "121278911"
 </Combos>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>请参阅
+- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

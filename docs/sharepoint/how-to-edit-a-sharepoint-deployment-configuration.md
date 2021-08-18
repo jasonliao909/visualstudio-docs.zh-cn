@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 3f2fb293494be7e659aac3635dd1840d302a2909b78006bbf765d7f98ee19545
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 295c756457cbc8326bcd80d3b92c2ad233d2cb7a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121332243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115520"
 ---
 # <a name="how-to-edit-a-sharepoint-deployment-configuration"></a>如何：编辑 SharePoint 部署配置
   您可以创建部署配置或修改现有的部署配置。 例如，你可以运行单个步骤或更改部署过程中的步骤顺序。 你可能希望创建或修改部署配置，因为无法更改内置和以编程方式添加的配置。

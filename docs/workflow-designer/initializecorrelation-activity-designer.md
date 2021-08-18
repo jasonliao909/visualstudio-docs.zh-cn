@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: aff2353f0ea681935ff576545f6eb14b957f2c1d58136e240917bd4f86653f75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 71756f4ed01253607efae47193ea8ddaa6b52a75
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440495"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130437"
 ---
 # <a name="initializecorrelation-activity-designer"></a>InitializeCorrelation 活动设计器
 

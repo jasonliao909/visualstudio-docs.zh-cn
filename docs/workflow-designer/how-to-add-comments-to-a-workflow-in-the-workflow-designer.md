@@ -14,12 +14,12 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: acb8b98f72f09349e7a96d9d2ec1438928d2432cd614bde15ed5c770868741ca
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 81de5a8b27626066fb8c85b5d13da2f387bae8c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114753"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 

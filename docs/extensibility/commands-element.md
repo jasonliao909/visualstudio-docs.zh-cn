@@ -13,14 +13,15 @@ ms.assetid: 47cf16a5-d78b-452e-86f6-b5893856dddf
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e4c7b058acdd634079d0ca60dddb9f80e0e26ff0
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 35cea63308ffaef653904f4c959164bd09b73df0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146090"
 ---
 # <a name="commands-element"></a>Commands 元素
 表示 VSPackage 工具栏上的命令集合。 集合可以有最多五个子节，如下所示：菜单、组、按钮、组合和位图。
@@ -44,13 +45,13 @@ ms.locfileid: "112901865"
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
 |包|一个 GUID，用于标识提供命令的 VSPackage。<br /><br /> 例如，package="guidVsPackage1Pkg"。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[菜单元素](../extensibility/menus-element.md)|定义 VSPackage 实现的所有菜单。|
 |[Groups 元素](../extensibility/groups-element.md)|包含用于定义 VSPackage 中的命令组的条目。|
@@ -60,7 +61,7 @@ ms.locfileid: "112901865"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向 IDE 提供的命令的所有元素。 可能的元素包括菜单项、菜单、工具栏和组合框。|
 
@@ -90,6 +91,6 @@ ms.locfileid: "112901865"
 <Commands>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [VSPackages 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>请参阅
+- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

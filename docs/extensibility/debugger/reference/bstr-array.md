@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a84ec868a7bd2aaa6cd1326e08b0b8a869b7311672cbfeca47e584c723a95a68
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 43a4b68824b613cb0701ea5ccfb3ed334f715b69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262680"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145726"
 ---
 # <a name="bstr_array"></a>BSTR_ARRAY
 描述字符串数组的 结构。
@@ -62,6 +62,6 @@ struct BSTR_ARRAY {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)

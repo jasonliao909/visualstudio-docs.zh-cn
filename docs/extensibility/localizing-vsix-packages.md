@@ -12,14 +12,15 @@ ms.assetid: 10e80b13-b39e-466c-a7c8-774a862355af
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7d2e297484e89f1ae2cfb9f2be7af25f1fe92714
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c818c05831f48875c1ad15c47d3d5f3c1610997e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073217"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152219"
 ---
 # <a name="localizing-vsix-packages"></a>本地化 VSIX 包
 
@@ -29,7 +30,7 @@ ms.locfileid: "105073217"
 
 ## <a name="directory-structure"></a>目录结构
 
- 当用户安装扩展时， **扩展和更新** 将检查其名称与目标计算机的 Visual Studio 区域设置匹配的文件夹的 VSIX 包顶级。 如果 **扩展和更新** 在文件夹中找到 *vsixlangpack* 文件，则会将该文件中的本地化值替换为 *source.extension.vsixmanifest* 文件中的相应值。 安装扩展时，将显示这些值。 下面的示例演示了本地化为西班牙语 (es) 和法语 (fr-fr) 的 VSIX 包的目录结构。
+ 当用户安装扩展时，**扩展和更新** 将检查其名称与目标计算机的 Visual Studio 区域设置匹配的文件夹的 VSIX 包的顶层。 如果 **扩展和更新** 在文件夹中找到 *vsixlangpack* 文件，则会将该文件中的本地化值替换为 *source.extension.vsixmanifest* 文件中的相应值。 安装扩展时，将显示这些值。 下面的示例演示了本地化为西班牙语 (es) 和法语 (fr-fr) 的 VSIX 包的目录结构。
 
 ```text
 .
@@ -43,7 +44,7 @@ ms.locfileid: "105073217"
 ```
 
 > [!NOTE]
-> [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]生成 vsix 清单并将其命名为 *source.extension.vsixmanifest* 的支持 vsix 的项目模板。 当 Visual Studio 生成项目时，它会将该文件的内容复制到 VSIX 包的 Source.extension.vsixmanifest 中。
+> [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]生成 vsix 清单并将其命名为 *source.extension.vsixmanifest* 的支持 vsix 的项目模板。 Visual Studio 生成项目时，它会将该文件的内容复制到 VSIX 包中的 source.extension.vsixmanifest。
 
 ## <a name="the-extensionvsixlangpack-file"></a>Vsixlangpack 文件
 
@@ -61,7 +62,7 @@ ms.locfileid: "105073217"
 
 ### <a name="description"></a>说明
 
-下面的示例显示 *source.extension.vsixmanifest* 文件的相关部分。 该文件还包含适用于西班牙语的 *vsixlangpack* 文件。 如果目标计算机的 Visual Studio 区域设置为西班牙语，则语言包中的值将替换清单中的值。
+下面的示例显示 *source.extension.vsixmanifest* 文件的相关部分。 该文件还包含适用于西班牙语的 *vsixlangpack* 文件。 如果目标计算机的 Visual Studio 区域设置设置为西班牙语，语言包中的值将替换清单中的值。
 
 ### <a name="code"></a>代码
 

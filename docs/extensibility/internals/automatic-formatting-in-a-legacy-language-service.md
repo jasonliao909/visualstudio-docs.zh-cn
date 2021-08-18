@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: be59d5101c07e361056142bfda96a82b06d4389c2928f1d1750d370f0947b7c3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1d5e824c96860030f0299fe6e1178515b7d1693d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124797"
 ---
 # <a name="automatic-formatting-in-a-legacy-language-service"></a>旧版语言服务中的自动格式设置
 使用自动格式设置时，当用户开始键入已知代码构造时，语言服务会自动插入代码片段。

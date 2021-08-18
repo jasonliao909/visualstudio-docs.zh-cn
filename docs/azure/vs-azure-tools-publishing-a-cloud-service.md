@@ -3,16 +3,17 @@ title: 使用 Azure Tools 发布云服务 | Microsoft Docs
 description: 了解如何使用 Visual Studio 发布 Azure 云服务项目。
 author: ghogen
 manager: jmartens
+ms.technology: vs-azure
 ms.workload: azure-vs
 ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
-ms.openlocfilehash: 3a6bc08d3c293f67e10d79996968eeb483203095
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cd41925fb1b9078b108213870b95d328c81103a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99843977"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114441"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 发布云服务
 
@@ -65,13 +66,13 @@ Visual Studio 可以将应用程序直接发布到 Azure，同时支持云服务
 
 ### <a name="requirements-for-using-web-deploy"></a>使用 Web 部署的要求
 
-- **仅用于开发和测试目的**：更改直接在运行 web 角色的虚拟机上进行。 如果必须回收此虚拟机，则将丢失此更改，因为发布的原始包已用于重建角色虚拟机。 重新发布应用程序才能获取 Web 角色的最新更改。
+- **仅出于开发和测试** 目的：直接对运行 Web 角色的虚拟机进行更改。 如果必须回收此虚拟机，则将丢失此更改，因为发布的原始包已用于重建角色虚拟机。 重新发布应用程序才能获取 Web 角色的最新更改。
 
-- **只能更新 web 角色**：无法更新辅助角色。 此外，无法更新 `web role.cs` 中的 `RoleEntryPoint`。
+- **只能更新 Web 角色**：无法更新辅助角色。 此外，无法更新 `web role.cs` 中的 `RoleEntryPoint`。
 
-- **只能支持 web 角色的单个实例**：你的部署环境中不能有任何 web 角色的多个实例。 但是，支持仅含一个实例的多个 Web 角色。
+- **只能支持 Web 角色的** 单个实例：部署环境中不能有多个 Web 角色的实例。 但是，支持仅含一个实例的多个 Web 角色。
 
-- **启用远程桌面连接**：此要求允许 Web 部署使用用户和密码来连接到虚拟机，以将更改部署到 INTERNET INFORMATION SERVICES (IIS) 中运行的服务器。 此外，可能需要连接到虚拟机才能将可信证书添加到此虚拟机上的 IIS。 （此证书可以确保 Web 部署使用的 IIS 远程连接是安全的。）
+- 启用 **远程桌面** 连接：此要求允许Web 部署使用用户和密码连接到虚拟机，以将更改部署到运行 Internet Information Services (IIS) 。 此外，可能需要连接到虚拟机才能将可信证书添加到此虚拟机上的 IIS。 （此证书可以确保 Web 部署使用的 IIS 远程连接是安全的。）
 
 以下过程假设你正在使用 **“发布 Azure 应用程序”** 向导。
 

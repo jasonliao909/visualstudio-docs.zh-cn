@@ -7,17 +7,18 @@ ms.topic: how-to
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: c2e5ffbc7dde0bd1274756d1721088b18ea6ec34
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 38c5979a73d73c7a183ec677efdba9605eec138a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389405"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150841"
 ---
 # <a name="customizing-copy-behavior"></a>自定义复制行为
-在使用 Visual Studio 可视化和建模 SDK (DSL) 域特定语言中，可以更改用户复制和粘贴元素时发生的情况。
+在使用 Visual Studio 可视化和建模 SDK (DSL) 的特定于域的语言中，可以更改用户复制和粘贴元素时发生的情况。
 
 ## <a name="standard-copy-and-paste-behavior"></a>标准的复制和粘贴行为
  若要启用复制，请设置 DSL 资源管理器 **中** "编辑器 **"** 节点的"启用复制粘贴"属性。
@@ -48,7 +49,7 @@ ms.locfileid: "112389405"
 将 **角色的"传播复制** "属性设置为 **"传播副本"以仅链接**。 有关详细信息，请参阅 [自定义链接复制行为](#customizeLinks)。
 
  复制链接的元素。 例如，在复制新元素时，还建立了任何链接的注释框的副本。
-将 **角色的"传播复制**"属性设置为 **"将复制传播到链接"和"反向角色播放器"。** 有关详细信息，请参阅 [自定义链接复制行为](#customizeLinks)。
+将 **角色的"传播复制**"属性设置为 **"将副本传播到链接"和"反向角色播放器"。** 有关详细信息，请参阅 [自定义链接复制行为](#customizeLinks)。
 
  **通过复制和粘贴快速复制元素。** 通常，刚复制的项仍处于选中状态，并且你无法将相同类型的元素粘贴到该项上。
 将元素合并指令添加到域类，并将其设置为向前合并到父类。 这将在拖动操作上产生相同的效果。 有关详细信息，请参阅 [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。
@@ -81,7 +82,7 @@ partial class MyDslClipboardCommandSet
 
  重写 `ClipboardCommandSet.ProcessOnPasteCommand()` 以在调用基方法后创建附加链接。
 
- **自定义元素可** 复制到外部应用程序的格式，例如，向位图窗体添加边框。
+ **自定义元素可** 复制到外部应用程序的格式-例如，向位图窗体添加边框。
 替代 `ClipboardCommandSet.ProcessOnMenuCopyCommand()` DslPackage 项目中的 MyDsl。
 
  **自定义通过复制命令（而非采用拖动操作）将元素复制到剪贴板的方式。**
@@ -367,9 +368,9 @@ private ElementGroupPrototype ConvertDraggedTypeToLocal (MyTargetShape snapshot,
 ## <a name="standard-copy-behavior"></a>标准复制行为
  此部分中的代码将显示可进行重写以更改复制行为的方法。 为了帮助你了解如何实现自己的自定义，此部分显示了可重写涉及复制的方法但不更改标准行为的代码。
 
- 当用户按 CTRL+C 或使用“复制”菜单命令时，将调用方法 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>。 你可以在 **DslPackage\Generated Code\CommandSet.cs** 中了解这是如何设置的。 有关如何设置命令的详细信息，请参阅 [如何：向快捷菜单中添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
+ 当用户按 CTRL+C 或使用“复制”菜单命令时，将调用方法 <xref:Microsoft.VisualStudio.Modeling.Shell.ClipboardCommandSet.ProcessOnMenuCopyCommand%2A>。 可以在 **DslPackage\Generated Code\CommandSet.cs** 中查看此设置方式。 若要详细了解如何设置命令，请参阅 [如何：向快捷菜单添加命令](../modeling/how-to-add-a-command-to-the-shortcut-menu.md)。
 
- 可以通过 `ClipboardCommandSet` 在 DslPackage 项目中添加 MyDsl 的分部类定义来替代 ProcessOnMenuCopyCommand。
+ 可以通过在 DslPackage 项目中添加 *MyDsl* 的分部类定义来替代 ProcessOnMenuCopyCommand。 `ClipboardCommandSet`
 
 ```csharp
 using System.Collections.Generic;
@@ -554,10 +555,10 @@ namespace Company.MyDsl
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)
 - [如何：添加拖放处理程序](../modeling/how-to-add-a-drag-and-drop-handler.md)
-- [示例： VMSDK 线路图示例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
+- [示例：VMSDK 线路图示例](https://code.msdn.microsoft.com/Visualization-Modeling-SDK-763778e8)
 
 [!INCLUDE[modeling_sdk_info](includes/modeling_sdk_info.md)]

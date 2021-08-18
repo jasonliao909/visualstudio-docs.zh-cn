@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1f9592569b436808b5e8d713e1e11ce6b890e20e6a1e5f8d2972d8173cc97b77
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ee22e24dc2bb8047cec6e9fd96c4b978ed5eb3c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145570"
 ---
 # <a name="enumerations-visual-studio-debugging"></a>枚举 (Visual Studio Debugging)
 下面是 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 调试 SDK 的枚举。

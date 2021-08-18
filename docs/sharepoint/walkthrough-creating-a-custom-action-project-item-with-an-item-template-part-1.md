@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 8662dfb53be04ef86e6587b26ff2897f869939bef2bbdea99c747e3d79145daa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 79894d13457096ab15e7990fc10b9bcb0e8d7f22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385128"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130775"
 ---
 # <a name="walkthrough-create-a-custom-action-project-item-with-an-item-template-part-1"></a>演练：使用项模板创建自定义操作项目项，第 1 部分
   可以通过创建自己的SharePoint项类型Visual Studio扩展项目系统。 本演练将创建一个项目项，该项目项可添加到 SharePoint 项目，以在 SharePoint 站点上创建自定义操作。 自定义操作将菜单项添加到自定义站点的"站点操作"SharePoint菜单中。
@@ -50,12 +50,12 @@ ms.locfileid: "121385128"
 > [!NOTE]
 > 可以从 [Github](https://github.com/SharePoint/PnP/tree/master/Samples/Workflow.Activities) 下载演示如何为工作流创建自定义活动的示例。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
  需要开发计算机上以下组件才能完成本演练：
 
 - 支持的 Microsoft Windows、SharePoint 和 Visual Studio 版本。
 
-- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)]。 本演练使用 **SDK 中的 VSIX Project** 模板创建 VSIX 包来部署项目项。 有关详细信息，请参阅扩展 SharePoint[中的 Visual Studio。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
+- [!INCLUDE[vssdk_current_long](../sharepoint/includes/vssdk-current-long-md.md)] 本演练使用 **SDK 中的 VSIX Project** 模板创建 VSIX 包来部署项目项。 有关详细信息，请参阅扩展 SharePoint[中的 Visual Studio。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 
   了解以下概念有助于完成演练，但这不是必需的：
 
@@ -82,7 +82,7 @@ ms.locfileid: "121385128"
 
 3. 在"新建Project"对话框顶部的列表中，确保.NET Framework **4.5。**
 
-4. 在"**新建Project"** 对话框中，展开 **Visual C#** 或Visual Basic **节点，** 然后选择"**扩展性"** 节点。
+4. 在 **"新建Project"** 对话框中，展开 **Visual C#** 或Visual Basic **节点，** 然后选择"**扩展性"** 节点。
 
     > [!NOTE]
     > "**扩展性"** 节点仅在安装 Visual Studio SDK 时可用。 有关详细信息，请参阅本主题前面的先决条件部分。
@@ -91,7 +91,7 @@ ms.locfileid: "121385128"
 
 6. 在" **名称"** 框中，输入 **CustomActionProjectItem**，然后选择"确定 **"** 按钮。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 **CustomActionProjectItem** 项目添加到 **解决方案资源管理器。**
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]将 **CustomActionProjectItem 项目** 添加到 **解决方案资源管理器。**
 
 #### <a name="to-create-the-item-template-project"></a>创建项模板项目
 
@@ -99,7 +99,7 @@ ms.locfileid: "121385128"
 
 2. 在"新建Project"对话框顶部的列表中，确保.NET Framework **4.5。**
 
-3. 在"**新建Project"** 对话框中，展开 **Visual C#** 或Visual Basic **节点，** 然后选择"**扩展性"** 节点。
+3. 在 **"新建Project"** 对话框中，展开 **Visual C#** 或Visual Basic **节点，** 然后选择"**扩展性"** 节点。
 
 4. 在项目模板列表中，选择 **"C#** 项模板"或 **"Visual Basic模板"。**
 
@@ -113,7 +113,7 @@ ms.locfileid: "121385128"
 
 2. 在"新建Project"对话框顶部的列表中，确保.NET Framework **4.5。**
 
-3. 在 **"新建Project"** 对话框中，展开 **"Visual C#"** 或Visual Basic节点，选择"Windows"节点，**然后选择**"类 **库**"项目模板。
+3. 在"**新建Project"** 对话框中，展开 **"Visual C#"** 或Visual Basic节点，选择"Windows"节点，然后选择"类库 **"项目模板**。
 
 4. 在" **名称"** 框中，输入 **"ProjectItemDefinition"，** 然后选择"确定 **"** 按钮。
 
@@ -168,7 +168,7 @@ ms.locfileid: "121385128"
 2. 在项目项列表中，选择"图标 **文件"** 项。
 
     > [!NOTE]
-    > 在Visual Basic中，必须选择"常规 **"** 节点以显示"图标 **文件"** 项。
+    > 在Visual Basic中，必须选择"常规 **"** 节点以显示"**图标文件"** 项。
 
 3. 在" **名称"** 框中， **输入 CustomAction_SolutionExplorer.ico**，然后选择"添加 **"** 按钮。
 
@@ -396,7 +396,7 @@ ms.locfileid: "121385128"
 
 #### <a name="to-test-the-custom-action-in-sharepoint"></a>测试自定义操作SharePoint
 
-1. 在 myCustomAction Visual Studio实例中，Elements.xml **MyCustomAction** 项目项的子级文件。
+1. 在 myCustomAction Visual Studio实例中，Elements.xml **MyCustomAction** 项目项的子级文件。 
 
 2. 在 *Elements.xml* 文件中，进行以下更改，然后保存该文件：
 
@@ -461,4 +461,4 @@ ms.locfileid: "121385128"
 - [使用SharePoint 项目服务](../sharepoint/using-the-sharepoint-project-service.md)
 - [Visual Studio 模板架构参考](../extensibility/visual-studio-template-schema-reference.md)
 - [图标的图像编辑器](/cpp/windows/image-editor-for-icons)
-- [在图标图像编辑器&#40;图标编辑器创建图标或其他&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)
+- [在图标图像编辑器&#40;图标或其他图像&#41;](/cpp/windows/creating-an-icon-or-other-image-image-editor-for-icons)

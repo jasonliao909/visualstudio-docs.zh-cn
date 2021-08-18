@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 87fb81520aba329bae924fa8a639d6a24f082f3db89a8bb691b107f22e30234f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 89e440c199347bfb28709d97f4a93c0ccb537ab2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452326"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145557"
 ---
 # <a name="debugprop_info_flags"></a>DEBUGPROP_INFO_FLAGS
 指定要检索的有关调试属性对象的信息。

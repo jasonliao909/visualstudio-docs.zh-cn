@@ -1,5 +1,5 @@
 ---
-title: 分析应用程序SharePoint性能|Microsoft Docs
+title: 分析应用程序SharePoint的性能|Microsoft Docs
 description: 分析应用程序SharePoint运行缓慢或效率低下时的性能。 使用Visual Studio分析功能查找有问题的代码。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: fc01ef43e750ccbff5b85b85b550c1254447f44828e1e18edfc4a169b1682d5a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d230bc3f5f99f03661ec8322fa6e478b39c4048
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121244285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130931"
 ---
 # <a name="profile-the-performance-of-sharepoint-applications"></a>分析应用程序SharePoint性能
 
@@ -42,7 +42,7 @@ ms.locfileid: "121244285"
 
 ## <a name="performance-session-process"></a>性能会话进程
 
-若要分析应用程序，首先使用分析工具向导创建性能会话。 在菜单栏上，选择"**分析"和****"启动性能向导"。** 完成向导后，请输入性能会话的所需信息，例如所需的配置文件方法和要分析的应用程序。 有关详细信息，请参阅 [如何：使用性能向导](../profiling/how-to-collect-performance-data-for-a-web-site.md)分析网站或 Web 应用程序。 或者，可以使用命令行选项来设置和运行性能会话。 有关详细信息，请参阅 [Using the 分析工具 From the Command-Line](../profiling/using-the-profiling-tools-from-the-command-line.md)。 若要手动配置性能会话的各个方面，请参阅 [如何：](../profiling/how-to-manually-create-performance-sessions.md)手动创建性能会话分析工具。 还可以通过以下方法从单元测试 **创建** 性能会话：在测试结果窗口中打开单元测试的快捷菜单，然后选择"创建性能 **会话"。**
+若要分析应用程序，首先使用分析工具向导创建性能会话。 在菜单栏上，选择"**分析"和****"启动性能向导"。** 完成向导后，请输入性能会话的所需信息，例如所需的配置文件方法和要分析的应用程序。 有关详细信息，请参阅 [如何：使用性能向导](../profiling/how-to-collect-performance-data-for-a-web-site.md)分析网站或 Web 应用程序。 或者，可以使用命令行选项来设置和运行性能会话。 有关详细信息，请参阅 [Using the 分析工具 From the Command-Line](../profiling/using-the-profiling-tools-from-the-command-line.md)。 若要手动配置性能会话的各个方面，请参阅 [如何：](../profiling/how-to-manually-create-performance-sessions.md)手动创建性能会话分析工具。 还可以通过以下方法从单元测试创建性能会话：在 **测试结果窗口中打开** 单元测试的快捷菜单，然后选择"创建性能 **会话"。**
 
 设置性能会话后，将保存会话配置，将服务器配置为提供分析数据，并运行应用程序。 使用应用程序时，性能数据将写入日志文件。 性能会话在 **"目标性能资源管理器** 下 **列出** 。 性能会话完成后，其报表将显示在 性能资源管理器 中的 **Reports 文件夹中**。 若要显示报表，请从 打开 **性能资源管理器。** 若要查看或配置性能会话的属性，请打开性能会话的快捷 **性能资源管理器，然后选择**"属性 **"。** 有关性能会话的特定属性详细信息，请参阅为性能会话[配置分析工具。](../profiling/configuring-performance-sessions.md) 若要了解如何解释性能会话的结果，请参阅 [分析分析工具数据](../profiling/analyzing-performance-tools-data.md)。
 
@@ -54,22 +54,22 @@ ms.locfileid: "121244285"
 
 ![运行负载测试图形视图](../sharepoint/media/load-webgraphs.png "运行负载测试图形视图")
 
-Web 性能测试模拟最终用户如何与应用程序SharePoint交互。 可以通过在浏览器会话中记录 HTTP 请求或通过使用 Web 性能测试记录器 来创建 **Web 性能测试**。 浏览器会话完成后，web **Web 性能测试编辑器** 显示在浏览器中。 然后，可以在 Web 性能查看器 中调试 **测试结果结果**。 此外，还可使用 Web 性能测试编辑器 来 **手动生成 Web 性能Web 性能测试编辑器。**
+Web 性能测试模拟最终用户如何与应用程序SharePoint交互。 可以通过在浏览器会话中记录 HTTP 请求或通过使用 Web 性能测试记录器 来创建 **Web 性能测试**。 浏览器会话完成后，web **Web 性能测试编辑器** 显示在浏览器中。 然后，可以在 Web 性能查看器 中调试 **测试结果结果**。 还可使用 Web 性能测试编辑器 手动 **生成 Web 性能Web 性能测试编辑器。**
 
 ## <a name="test-user-interfaces"></a>测试用户界面
 
-编码的 UI 测试通过其用户界面SharePoint UI 应用程序自动驱动 (UI) 。 这些测试涵盖 UI 控件（如按钮和菜单）以验证它们是否正常工作。 如果在 UI（例如网页）中执行验证或其他逻辑，此类测试特别有用。 还可使用编码的 UI 测试自动执行手动测试。 为应用程序创建编码的 UI SharePoint与为其他类型的应用程序创建测试的方式相同。 有关详细信息，请参阅[使用编码SHAREPOINT测试测试 2010 应用程序](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)。
+编码的 UI 测试通过其用户界面SharePoint UI 应用程序自动驱动 (UI) 。 这些测试涵盖 UI 控件（如按钮和菜单）以验证它们是否正常工作。 如果在 UI（例如网页）中执行验证或其他逻辑，此类测试特别有用。 还可使用编码的 UI 测试自动执行手动测试。 为应用程序创建编码的 UI SharePoint与为其他类型的应用程序创建测试的方式相同。 有关详细信息，请参阅[使用编码的 UI SharePoint测试 2010 应用程序](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)。
 
 ## <a name="related-topics"></a>相关主题
 
 |Title|说明|
 |-----------|-----------------|
 |[演练：分析SharePoint应用程序](../sharepoint/walkthrough-profiling-a-sharepoint-application.md)|演示如何对应用程序执行采样SharePoint分析。|
-|[发布前对应用进行性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|介绍如何创建负载测试，这有助于对应用程序进行SharePoint测试。|
+|[发布前对应用进行性能测试](/azure/devops/test/load-test/run-performance-tests-app-before-release?view=vsts&preserve-view=true)|介绍如何创建负载测试，以帮助对应用程序SharePoint测试。|
 |[对代码进行单元测试](../test/unit-test-your-code.md)|介绍如何使用单元测试在代码中查找逻辑错误。|
 |[使用编码的 UI 测试来测试 SharePoint 2010 应用程序](/previous-versions/visualstudio/visual-studio-2015/test/testing-sharepoint-2010-applications-with-coded-ui-tests?preserve-view=true&view=vs-2015)|介绍如何测试应用程序应用程序的SharePoint接口。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)
 - [提高代码质量](../test/improve-code-quality.md)

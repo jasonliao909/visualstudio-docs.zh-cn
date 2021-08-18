@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e0d9b7a3f3dcd1f3641d65a26e9919621cff15f7fcfff5f9968dc692769d2b53
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2c41830892b6199a5cd844b365898efa83c83fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125070"
 ---
 # <a name="extend-the-solution-explorer-filter"></a>扩展解决方案资源管理器筛选器
 您可以扩展 **解决方案资源管理器** 筛选器功能以显示或隐藏不同文件。 例如，可以创建一个筛选器，该筛选器仅显示 **解决方案资源管理器** 中的 c # 类工厂文件，如本演练中所示。

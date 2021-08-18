@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8b1dce6d9f8e410f4cf0b642a2f50eeb864a0d54d7fedafa3a524e76615ebb83
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c69ab2bedfda4394c0256db7040de39e8a520ca4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124810"
 ---
 # <a name="how-to-update-a-visual-studio-extension"></a>如何：更新 Visual Studio 扩展
 你可以使用 "**扩展和更新**" 来更新系统上的 Visual Studio 扩展，以便安装更新的版本。 如果你创建扩展的更新版本，则可以通过在 VSIX 清单中递增版本号来将其表示为已更新。
