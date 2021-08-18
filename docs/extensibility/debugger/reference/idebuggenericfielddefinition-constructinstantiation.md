@@ -10,17 +10,18 @@ ms.assetid: ef8ae261-a98b-4dc2-93b3-7c5191818ba2
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4565077357678725a6601ac14c48cfce21ec9101
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: b6047737d7b4aeee9d1ec74e4fe1fea57b1722ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096149"
 ---
 # <a name="idebuggenericfielddefinitionconstructinstantiation"></a>IDebugGenericFieldDefinition::ConstructInstantiation
 给定类型参数的数组，构造一个字段实例。
@@ -59,5 +60,5 @@ int ConstructInstantiation(
 ## <a name="remarks"></a>备注
  不检查约束。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericFieldDefinition](../../../extensibility/debugger/reference/idebuggenericfielddefinition.md)

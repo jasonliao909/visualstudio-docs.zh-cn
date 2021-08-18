@@ -1,6 +1,6 @@
 ---
-title: 在运行时访问窗体区域
-description: 了解如何在运行时访问各种项目类型和版本 Microsoft Office 中的窗体区域。
+title: 运行时访问窗体区域
+description: 了解如何以各种项目类型和版本的窗体区域Microsoft Office运行时访问窗体区域。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -14,26 +14,27 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: dbd60f5773392af2066e4693751dd6fff99128b9
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 45b09372438fbe25f35f5b96bf711f0fdd387881
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047343"
 ---
-# <a name="access-a-form-region-at-run-time"></a>在运行时访问窗体区域
+# <a name="access-a-form-region-at-run-time"></a>运行时访问窗体区域
 
 |适用于|
 |----------------|
-|本主题中的信息仅适用于以下项目类型和 Microsoft Office 版本。 有关详细信息，请参阅 [按 Office 应用程序和项目类型提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。<br /><br /> **项目类型**<br /><br /> -VSTO 外接程序项目<br /><br /> **Microsoft Office 版本**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
+|本主题中的信息仅适用于以下项目类型和 Microsoft Office 版本。 有关详细信息，请参阅应用程序[类型和项目Office提供的功能](../vsto/features-available-by-office-application-and-project-type.md)。<br /><br /> **Project类型**<br /><br /> - VSTO外接程序项目<br /><br /> **Microsoft Office 版本**<br /><br /> -   [!INCLUDE[Outlook_14_short](../vsto/includes/outlook-14-short-md.md)]|
 
- 使用 `Globals` 类可以从 Outlook 项目中的任何位置访问窗体区域。 有关类的详细信息 `Globals` ，请参阅 [对 Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)。
+ 使用 `Globals` 类可以从 Outlook 项目中的任何位置访问窗体区域。 有关 类详细信息，请参阅对项目 中的对象的 `Globals` [全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>访问在特定 Outlook 检查器窗口中显示的窗体区域
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-inspector-window"></a>访问特定"检查器"窗口中Outlook区域
  若要访问在特定 Outlook 检查器中显示的所有窗体区域，请调用 `FormRegions` 类的 `Globals` 属性，并传入一个表示该检查器的 <xref:Microsoft.Office.Interop.Outlook.Inspector> 对象。
 
  下面的示例获取在当前获得焦点的检查器中显示的窗体区域的集合。 然后，此示例访问名为 `formRegion1` 的集合中的窗体区域，并将文本框中显示的文本设置为 `Hello World`。
@@ -41,7 +42,7 @@ ms.locfileid: "107827963"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet2":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet2":::
 
-## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>访问在特定 Outlook 资源管理器窗口中显示的窗体区域
+## <a name="access-form-regions-that-appear-in-a-specific-outlook-explorer-window"></a>访问特定"资源管理器"窗口中Outlook区域
  若要访问在特定 Outlook 资源管理器中显示的所有窗体区域，请调用 `FormRegions` 类的 `Globals` 属性，并传入一个表示该资源管理器的 <xref:Microsoft.Office.Interop.Outlook.Explorer> 对象。
 
  下面的示例获取在当前获得焦点的资源管理器中显示的窗体区域的集合。 然后，此示例访问名为 `formRegion1` 的集合中的窗体区域，并将文本框中显示的文本设置为 `Hello World`。
@@ -57,7 +58,7 @@ ms.locfileid: "107827963"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Access_O12/ThisAddIn.vb" id="Snippet1":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_Outlook_FR_Access_O12/ThisAddIn.cs" id="Snippet1":::
 
-## <a name="access-controls-on-a-form-region"></a>访问窗体区域中的控件
+## <a name="access-controls-on-a-form-region"></a>窗体区域上的访问控制
  若要使用 `Globals` 类来访问窗体区域中的控件，必须使窗体区域代码文件外部的代码可以访问控件。
 
 ### <a name="form-regions-designed-in-the-form-region-designer"></a>在窗体区域设计器中设计的窗体区域
@@ -70,17 +71,17 @@ ms.locfileid: "107827963"
 
  若要能够从窗体区域代码文件外部访问控件，请在窗体区域代码文件中创建属性来返回该控件。
 
- 有关如何在 c # 中创建属性的详细信息，请参阅 [如何：声明和使用读写属性 &#40;C&#35; 编程指南&#41;](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)。
+ 若要详细了解如何在 C# 中创建属性，请参阅如何：声明和使用 C &#40;编程&#35;中的读写[&#41;。 ](/dotnet/csharp/programming-guide/classes-and-structs/how-to-declare-and-use-read-write-properties)
 
- 有关如何在 Visual Basic 中创建属性的详细信息，请参阅 [如何： Visual Basic) 创建属性 (](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)。
+ 若要详细了解如何在 Visual Basic 创建属性，请参阅[如何：](/dotnet/visual-basic/programming-guide/language-features/procedures/how-to-create-a-property)使用 (Visual Basic) 。
 
 ## <a name="see-also"></a>请参阅
-- [创建 Outlook 窗体区域的准则](../vsto/guidelines-for-creating-outlook-form-regions.md)
-- [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [如何：向 Outlook 外接程序项目添加窗体区域](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
-- [Outlook 窗体区域中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)
-- [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
-- [演练：导入在 Outlook 中设计的窗体区域](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
-- [如何：防止 Outlook 显示窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
-- [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
-- [在运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)
+- [创建表单Outlook指南](../vsto/guidelines-for-creating-outlook-form-regions.md)
+- [演练：设计Outlook区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [如何：将窗体区域添加到Outlook外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)
+- [窗体Outlook中的自定义操作](../vsto/custom-actions-in-outlook-form-regions.md)
+- [将窗体区域与Outlook类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+- [演练：导入在窗体中设计的Outlook](../vsto/walkthrough-importing-a-form-region-that-is-designed-in-outlook.md)
+- [如何：Outlook窗体区域](../vsto/how-to-prevent-outlook-from-displaying-a-form-region.md)
+- [创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)
+- [运行时访问功能区](../vsto/accessing-the-ribbon-at-run-time.md)

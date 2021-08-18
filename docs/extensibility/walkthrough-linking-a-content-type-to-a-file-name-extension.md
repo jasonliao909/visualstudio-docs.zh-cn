@@ -1,6 +1,6 @@
 ---
 title: 将内容类型链接到文件扩展名
-description: 在本演练中，了解如何使用编辑器 Managed Extensibility Framework 扩展名将您自己的内容类型链接到文件扩展名。
+description: 本演练中了解如何使用编辑器和扩展名将Managed Extensibility Framework类型链接到文件扩展名。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,26 +10,27 @@ ms.assetid: 21ee64ce-9afe-4b08-94a0-8389cc4dc67c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 990f10fe82b9230c12ba13d736750f2f644c3ee5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d49c7241d952270a7ca394e445ef777189a39b9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078443"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078526"
 ---
 # <a name="walkthrough-link-a-content-type-to-a-file-name-extension"></a>演练：将内容类型链接到文件扩展名
-你可以定义自己的内容类型，并使用编辑器 Managed Extensibility Framework (MEF) 扩展将文件扩展名链接到该类型。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要将其与 MEF 一起使用，还必须将其链接到内容类型。
+可以使用 MEF 扩展名的编辑器定义自己的内容类型，Managed Extensibility Framework (文件) 扩展名。 在某些情况下，文件扩展名已由语言服务定义。 但是，若要与 MEF 一起使用它，仍必须链接到内容类型。
 
-## <a name="prerequisites"></a>先决条件
- 从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+## <a name="prerequisites"></a>必备条件
+ 从 Visual Studio 2015 开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="create-a-mef-project"></a>创建 MEF 项目
 
-1. 创建 c # VSIX 项目。  (在 " **新建项目** " 对话框中，依次选择 " **Visual c #/扩展性**"、" **VSIX 项目**"。 ) 将解决方案命名为 `ContentTypeTest` 。
+1. 创建 C# VSIX 项目。  ("**新建** Project对话框中，选择 **"Visual C#/** 扩展性"，然后选择 **"VSIX Project**.) 将解决方案命名 `ContentTypeTest` "。
 
-2. 在 **source.extension.vsixmanifest** 文件中，中转到 " **资产** " 选项卡，并将 " **类型** " 字段设置为 " **microsoft.visualstudio.mefcomponent**"，将 " **源** " 字段设置为 **当前解决方案中的项目**，将 " **项目** " 字段设置为项目的名称。
+2. 在 **source.extension.vsixmanifest** 文件中，转到"资产"选项卡，将"类型"字段设置为 **Microsoft.VisualStudio.MefComponent，** 将"源"字段设置为当前解决方案中的 **A** 项目，将 **Project** 字段设置为项目名称。 
 
 ## <a name="define-the-content-type"></a>定义内容类型
 
@@ -39,9 +40,9 @@ ms.locfileid: "105078443"
 
     1. System.ComponentModel.Composition
 
-    2. VisualStudio。
+    2. Microsoft.VisualStudio.Text.Logic
 
-    3. VisualStudio. CoreUtility
+    3. Microsoft.VisualStudio.CoreUtility
 
 3. 添加以下 `using` 指令。
 
@@ -52,14 +53,14 @@ ms.locfileid: "105078443"
 
     ```
 
-4. 声明一个包含定义的静态类。
+4. 声明包含定义的静态类。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
     {. . .}
     ```
 
-5. 在此类中，导出 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 名为 "hid" 的，并将其基本定义声明为 "text"。
+5. 在此类中，导出 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 名为"hid"的 ，并声明其基定义为"text"。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -73,7 +74,7 @@ ms.locfileid: "105078443"
 
 ## <a name="link-a-file-name-extension-to-a-content-type"></a>将文件扩展名链接到内容类型
 
-- 若要将此内容类型映射到文件扩展名，请导出 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 扩展名为 *hid* 和内容类型为 "hid" 的。
+- 若要将此内容类型映射到文件扩展名，请导出扩展名 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> *为 .hid* 且内容类型为"hid"的 。
 
     ```csharp
     internal static class FileAndContentTypeDefinitions
@@ -90,13 +91,13 @@ ms.locfileid: "105078443"
     }
     ```
 
-## <a name="add-the-content-type-to-an-editor-export"></a>向编辑器导出添加内容类型
+## <a name="add-the-content-type-to-an-editor-export"></a>将内容类型添加到编辑器导出
 
-1. 创建编辑器扩展。 例如，可以使用 [演练：创建边距标志符号](../extensibility/walkthrough-creating-a-margin-glyph.md)中所述的边距标志符号扩展。
+1. 创建编辑器扩展。 例如，可以使用演练：创建边距字形 中所述的 [边距字形扩展](../extensibility/walkthrough-creating-a-margin-glyph.md)。
 
-2. 添加您在此过程中定义的类。
+2. 添加在此过程中定义的类。
 
-3. 导出扩展类时，请向其添加 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 类型为 "hid" 的。
+3. 导出扩展类时，向该类添加 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 类型为"hid"的 。
 
     ```csharp
     [Export]

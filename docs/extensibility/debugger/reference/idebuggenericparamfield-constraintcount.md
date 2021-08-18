@@ -1,6 +1,6 @@
 ---
-description: 返回与此泛型参数关联的约束的数目。
-title: IDebugGenericParamField：： ConstraintCount |Microsoft Docs
+description: 返回与此泛型参数关联的约束数。
+title: IDebugGenericParamField：：ConstraintCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2f49b98fe463977790230201a146a79375f005321aa353d9a2a59e9ac6dd7296
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66f559b6c4e4967fdf1e649b5116780728b01dbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138115"
 ---
 # <a name="idebuggenericparamfieldconstraintcount"></a>IDebugGenericParamField::ConstraintCount
-返回与此泛型参数关联的约束的数目。
+返回与此泛型参数关联的约束数。
 
 ## <a name="syntax"></a>语法
 
@@ -42,10 +42,10 @@ int ConstraintCount(
 
 ## <a name="parameters"></a>参数
 `pcConst`\
-[in，out]与此字段关联的约束的数目。
+[in， out]与此字段关联的约束数。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)接口的 **CDebugGenericParamFieldType** 对象实现此方法。

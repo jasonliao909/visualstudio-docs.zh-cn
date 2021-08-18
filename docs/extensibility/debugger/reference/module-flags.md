@@ -11,17 +11,18 @@ ms.assetid: 0e555b42-b846-4dbb-812e-8e3d11c85b2d
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b78e0ec9f720307a60485283b98939dee954ff29
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 83aa45e4fdcac756dbd623abcb1203fa160c9820
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105079782"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110782"
 ---
 # <a name="module_flags"></a>MODULE_FLAGS
 用于描述模块。

@@ -15,15 +15,16 @@ ms.assetid: 6d4e2a5d-9f17-4ece-a6f1-75836e1fc382
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1f30fa815030204b5f2d306151fe815ed819f8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 27aaa8d043ffce98e5d3a03a57226478d49a634f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141540"
 ---
 # <a name="process-view"></a>“进程”视图
 “进程”视图显示在分析运行期间执行的进程和线程的分析数据。

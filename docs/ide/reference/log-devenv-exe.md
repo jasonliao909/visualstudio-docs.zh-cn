@@ -12,14 +12,15 @@ ms.assetid: ae23c4ae-2376-4fe3-b8d2-81d34e61c8ba
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a7a4f8f3fc7fe0e0f8b7ff6bd460ea2efd8192d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 244ff78a82838bcd2d65766680fe86c059cd43d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919391"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151374"
 ---
 # <a name="log-devenvexe"></a>/Log (devenv.exe)
 

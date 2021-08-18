@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02a1fd8316e3fcb048169fdbaf635116e677389e8f417fb47a3d2be5bd654f68
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3d0fd5f82e3696e2783116a6f9d35ea124e5ade8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432732"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094771"
 ---
 # <a name="model-of-a-legacy-language-service"></a>旧版语言服务模型
 语言服务定义特定语言的元素和功能，并用于向编辑器提供特定于该语言的信息。 例如，编辑器需要了解语言的元素和关键字，以便支持语法着色。
