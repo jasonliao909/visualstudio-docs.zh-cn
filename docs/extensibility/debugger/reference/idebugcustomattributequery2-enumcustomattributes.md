@@ -51,6 +51,6 @@ int EnumCustomAttributes(
 ## <a name="remarks"></a>备注
  一个字段可以有多个自定义属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)

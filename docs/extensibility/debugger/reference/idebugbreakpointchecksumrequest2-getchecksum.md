@@ -1,6 +1,6 @@
 ---
-description: 根据要使用的校验和算法的唯一标识符，检索断点请求的文档校验和。
-title: IDebugBreakpointChecksumRequest2：：GetChecksum |Microsoft Docs
+description: 根据要使用的校验和算法的唯一标识符，为断点请求检索文档校验和。
+title: IDebugBreakpointChecksumRequest2：： GetChecksum |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -23,7 +23,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121342526"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
-根据要使用的校验和算法的唯一标识符，检索断点请求的文档校验和。
+根据要使用的校验和算法的唯一标识符，为断点请求检索文档校验和。
 
 ## <a name="syntax"></a>语法
 
@@ -43,16 +43,16 @@ public int GetChecksum(
 
 ## <a name="parameters"></a>参数
 `guidAlgorithm`\
-[in]校验和算法的唯一标识符。
+中校验和算法的唯一标识符。
 
 `pChecksumData`\
-[out]断点请求的文档校验和。
+弄用于断点请求的文档校验和。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示一个函数，该函数检查即将绑定的文档校验和是否与 UI 中的校验和匹配。
+下面的示例演示一个函数，该函数检查要绑定的文档的校验和是否与 UI 中的校验和匹配。
 
 ```cpp
 bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCodeContext *pContext)
@@ -106,5 +106,5 @@ bool CDebugProgram::DoChecksumsMatch(CDebugPendingBreakpoint *pPending, CDebugCo
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBreakpointChecksumRequest2](../../../extensibility/debugger/reference/idebugbreakpointchecksumrequest2.md)

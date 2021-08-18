@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 42a42c36eef04f1e858f2025703a74501e3c785a0bb5f2e17cd3b4e891ecf793
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3676390d81e4f95d523d6164f2664ec8337c1a32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401890"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125941"
 ---
 # <a name="ieevisualizerservicegetcustomviewerlist"></a>IEEVisualizerService::GetCustomViewerList
 此方法返回此服务了解的类型可视化工具的列表。
@@ -64,7 +64,7 @@ int GetCustomViewerList(
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 将请求传递给此方法，作为对类型可视化工具支持的一部分。 如果表达式评估程序也为同一类型提供自定义查看器，则它可以在这些自定义查看器的 [DEBUG_CUSTOM_VIEWER结构中](../../../extensibility/debugger/reference/debug-custom-viewer.md) 追加相应的填充内容。 确保 [GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 这些附加查看器。
+- [GetCustomViewerList](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewerlist.md) 将请求传递给此方法，作为对类型可视化工具支持的一部分。 如果表达式评估器也为同一类型提供自定义查看器，它可以在这些自定义查看器的 [DEBUG_CUSTOM_VIEWER追加到](../../../extensibility/debugger/reference/debug-custom-viewer.md) 列表中。 确保 [GetCustomViewerCount 反映](../../../extensibility/debugger/reference/idebugproperty3-getcustomviewercount.md) 这些附加查看器。
 
  有关 [可视化工具与查看器之间的差异的详细信息](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md) ，请参阅类型可视化工具与自定义查看器。
 

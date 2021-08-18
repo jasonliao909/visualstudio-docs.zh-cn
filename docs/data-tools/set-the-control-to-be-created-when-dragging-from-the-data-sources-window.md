@@ -1,6 +1,6 @@
 ---
 title: 设置拖动时要创建的控件
-description: 了解如何在将控件从"数据源"窗口拖动到 WPF 设计器或 Windows 窗体设计器时设置要创建的Visual Studio。
+description: 了解如何在将控件从"数据源"窗口拖动到 WPF 设计器或窗体设计器Windows控件时Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -31,7 +31,7 @@ ms.locfileid: "121346825"
 
 在从"数据源"窗口中拖动表示数据表或对象的项之前，可以选择在一个控件中显示所有数据，或在单独的控件中显示每个列或属性。
 
-在此上下文中，术语 *"对象* "是指自定义业务对象、 (实体对象实体数据模型) 服务返回的对象。
+在此上下文中，术语 *"对象* "是指自定义业务对象、 (中实体数据模型) 实体对象或服务返回的对象。
 
 ### <a name="to-set-the-controls-to-be-created-for-data-tables-or-objects"></a>设置要为数据表或对象创建的控件
 
@@ -72,6 +72,6 @@ ms.locfileid: "121346825"
 
      如果不想为列或属性创建控件，请在下拉菜单中选择"无"。  如果要将父表或对象拖动到设计器，但不希望包含特定列或属性，则此方法很有用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

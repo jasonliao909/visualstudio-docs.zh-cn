@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7cf9ae3908b2edf6fbaf65c5e67ff428eb999afe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8137d5bad817478371fb57dcffc568db616949a1739e5d501ac4fe394d846d16
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065119"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121452441"
 ---
 # <a name="dbg_attrib_flags"></a>DBG_ATTRIB_FLAGS
 介绍 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 或 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 接口的各种属性。 结构 [DEBUG_PROPERTY_INFO成员](../../../extensibility/debugger/reference/debug-property-info.md) 。

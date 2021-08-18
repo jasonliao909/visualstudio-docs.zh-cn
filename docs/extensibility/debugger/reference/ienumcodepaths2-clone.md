@@ -1,6 +1,6 @@
 ---
-description: 以单独的对象的形式返回当前代码路径枚举的副本。
-title: IEnumCodePaths2：： Clone |Microsoft Docs
+description: 将当前代码路径枚举的副本作为单独的 对象返回。
+title: IEnumCodePaths2：：Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d4b79db67011992d6cd6b98a419644604696f1c0475ee12af2d080de9aaab4a3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e288cc1b7ba10cfcda9fac2684ef0804b018f5b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291813"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125837"
 ---
 # <a name="ienumcodepaths2clone"></a>IEnumCodePaths2::Clone
-以单独的对象的形式返回当前枚举的副本。
+将当前枚举的副本作为单独的 对象返回。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int Clone(
 
 ## <a name="parameters"></a>参数
 `ppEnum`\
-弄以单独的对象的形式返回此枚举的副本。
+[out]以单独的 对象返回此枚举的副本。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
+ 调用此方法时，枚举的副本的状态与原始 副本相同。 但是，副本的 和原始 状态是分开的，可以单独更改。
 
 ## <a name="see-also"></a>请参阅
 - [IEnumCodePaths2](../../../extensibility/debugger/reference/ienumcodepaths2.md)

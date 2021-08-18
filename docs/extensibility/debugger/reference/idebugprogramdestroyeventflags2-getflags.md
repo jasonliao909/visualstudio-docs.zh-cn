@@ -1,6 +1,6 @@
 ---
 description: 检索程序销毁标志。
-title: IDebugProgramDestroyEventFlags2：：GetFlags |Microsoft Docs
+title: IDebugProgramDestroyEventFlags2：： GetFlags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -42,11 +42,11 @@ public int GetFlags(
 
 ## <a name="parameters"></a>参数
 `pdwFlags`\
-[out]表示程序销毁标志。
+弄表示程序销毁标志。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramDestroyEventFlags2](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2.md)
 - [PROGRAM_DESTROY_FLAGS](../../../extensibility/debugger/reference/program-destroy-flags.md)

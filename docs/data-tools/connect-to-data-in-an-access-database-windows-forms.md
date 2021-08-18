@@ -26,7 +26,7 @@ ms.locfileid: "121347752"
 
 可以使用 *.mdb (.accdb* 文件或 *.accdb* 文件) Access 数据库Visual Studio。 在定义此连接后，数据会显示在“数据源”窗口中。 可以在那里将表或视图拖动到设计图面上。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要使用这些过程，需要 Windows Forms 或 WPF 项目以及 Access 数据库 (*.accdb* 文件) 或 Access 2000-2003 数据库 (*.mdb*) 。 按照与你的文件类型对应的过程操作。
 
@@ -118,7 +118,7 @@ ms.locfileid: "121347752"
 
 - 将验证逻辑添加到数据集 <xref:System.Data.DataTable.ColumnChanging> 中数据表的 <xref:System.Data.DataTable.RowChanging> 或 事件， (验证数据集[中的数据) 。](../data-tools/validate-data-in-datasets.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [添加连接](../data-tools/add-new-connections.md)
 - [WPF 数据绑定概述](/dotnet/framework/wpf/data/data-binding-overview)

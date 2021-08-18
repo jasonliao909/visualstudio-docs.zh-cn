@@ -45,11 +45,11 @@ ms.locfileid: "121452697"
 ## <a name="create-a-visual-studio-template"></a>创建Visual Studio模板
 - [创建基本项目系统，第 1](../extensibility/creating-a-basic-project-system-part-1.md) 部分演示如何创建基本项目模板并将其添加到项目系统。 它还演示如何使用 属性向 Visual Studio注册此模板，该属性在系统注册表中写入 <xref:Microsoft.VisualStudio.Shell.ProvideProjectFactoryAttribute> *\\ Templates\Projects\SimpleProject \\* 文件夹的完整路径。
 
-通过使用 Visual Studio *.vstemplate* (模板) 而不是基本项目模板，可以控制模板在"新建 **Project"对话框中** 的显示方式以及模板参数的替换方式。 *.vstemplate* 文件是一个 XML 文件，描述在使用项目系统模板创建项目时如何包括源文件。 项目系统本身通过收集 *.vstemplate* 文件和 *.zip* 文件中源文件来生成，并且通过将 *.zip* 文件复制到已知位置进行部署Visual Studio。 本演练稍后将更详细地介绍此过程。
+通过使用 Visual Studio模板 (*.vstemplate* 文件) 而不是基本项目模板，可以控制模板在"新建 **Project"** 对话框中的显示方式以及模板参数的替换方式。 *.vstemplate* 文件是一个 XML 文件，描述在使用项目系统模板创建项目时如何包括源文件。 项目系统本身通过收集 *.vstemplate* 文件和 *.zip* 文件中源文件来生成，并且通过将 *.zip* 文件复制到已知位置进行部署Visual Studio。 本演练稍后将更详细地介绍此过程。
 
 1. 在 中，打开按照创建基本项目系统第 1 部分创建 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] [的简单项目解决方案](../extensibility/creating-a-basic-project-system-part-1.md)。
 
-2. 在 *SimpleProjectPackage.cs* 文件中，找到 ProvideProjectFactory 属性。 将第二个参数 (项目) null，将第四个参数替换为 ("作为项目模板文件夹) 路径。 \\\NullPath"，如下所示。
+2. 在 *SimpleProjectPackage.cs* 文件中，找到 ProvideProjectFactory 属性。 将项目名称 (参数替换为 null) ，将第四个参数替换为 ("作为项目模板文件夹) 路径。 \\\NullPath"，如下所示。
 
     ```
     [ProvideProjectFactory(typeof(SimpleProjectFactory), null,
@@ -98,7 +98,7 @@ ms.locfileid: "121452697"
 
 - 元素 \<Icon> 指定与 SimpleProject 项目类型一起出现的图标。
 
-- 元素 \<ProjectType> 在"新建Project"对话框中将Project类型。  此名称替换 ProvideProjectFactory 属性的项目名称参数。
+- 元素 \<ProjectType> 在"新建Project"对话框中将Project类型。 此名称替换 ProvideProjectFactory 属性的项目名称参数。
 
   > [!NOTE]
   > \<ProjectType>元素必须与 `LanguageVsTemplate` `ProvideProjectFactory` SimpleProjectPackage.cs 文件中 特性的 参数匹配。
@@ -113,13 +113,13 @@ ms.locfileid: "121452697"
 
   所有三个文件 `ReplaceParameters` 都设置为 true，这将启用参数替换。 *Program.cs* 文件已设置为 true，这会导致创建项目时在代码 `OpenInEditor` 编辑器中打开该文件。
 
-  有关模板架构中元素Visual Studio，请参阅模板Visual Studio[引用](../extensibility/visual-studio-template-schema-reference.md)。
+  有关模板架构中的元素Visual Studio，请参阅模板Visual Studio[架构引用](../extensibility/visual-studio-template-schema-reference.md)。
 
 > [!NOTE]
 > 如果一个项目具有多个Visual Studio模板，则每个模板都位于单独的文件夹中。 该文件夹中每个文件都必须将"**生成操作**"设置为 **"ZipProject"。**
 
 ## <a name="adding-a-minimal-vsct-file"></a>添加最小的 .vsct 文件
- Visual Studio在安装模式下运行，以识别新模板或修改Visual Studio模板。 安装模式要求 *存在 .vsct* 文件。 因此，必须将最小的 *.vsct* 文件添加到项目。
+ Visual Studio必须在安装模式下运行，以识别新模板或修改Visual Studio模板。 安装模式要求 *存在 .vsct* 文件。 因此，必须将最小的 *.vsct* 文件添加到项目。
 
 1. 将名为 *SimpleProject.vsct* 的 XML 文件添加到 SimpleProject 项目。
 
@@ -150,7 +150,7 @@ ms.locfileid: "121452697"
 
     4. 项目文件并关闭编辑器。
 
-    5. 保存"SimpleProject"节点，然后在"解决方案资源管理器 **单击"****重载Project"。**
+    5. 保存 SimpleProject 节点，然后在 **解决方案资源管理器重载****Project。**
 
 ## <a name="examine-the-visual-studio-template-build-steps"></a>检查Visual Studio模板生成步骤
  当更改 *.vstemplate* 文件或重新生成包含 *.vstemplate* 文件的项目时，VSPackage 项目生成系统Visual Studio在安装模式下运行。 可以按照以下方法操作：将属性的MSBuild级别设置为"正常"或更高。
@@ -178,7 +178,7 @@ ZipProjects:
 ```
 
 ## <a name="deploy-a-visual-studio-template"></a>部署Visual Studio模板
-Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须部署到已知Visual Studio。 ProjectTemplates 文件夹的位置通常为 *<%LOCALAPPDATA%>\Microsoft\VisualStudio\14.0Exp\ProjectTemplates*。
+Visual Studio模板不包含路径信息。 因此 *，.zip* 模板文件必须部署到已知Visual Studio。 ProjectTemplates 文件夹的位置通常为 *<%LOCALAPPDATA%>\Microsoft\VisualStudio\14.0Exp\ProjectTemplates*。
 
 若要部署项目工厂，安装程序必须具有管理员权限。 它将模板部署在 Visual Studio 节点下 *：...\Microsoft Visual Studio 14.0\Common7\IDE\ProjectTemplates*。
 
@@ -189,7 +189,7 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
 
     在 [!INCLUDE[win7](../debugger/includes/win7_md.md)] 上：在"开始"菜单上，找到 **"Microsoft Visual Studio/Microsoft Visual Studio SDK/Tools"** 文件夹，然后选择"重置Microsoft Visual Studio **实验实例"。**
 
-    在更高版本的 Windows：在"开始 **"屏幕上，** 键入"重置Microsoft Visual Studio **\<version> 实验实例"。**
+    在更高版本的 Windows：**在"开始**"屏幕上，键入"重置Microsoft Visual Studio **\<version> 实验实例"。**
 
 2. 将出现命令提示符窗口。 看到"按任意 **键继续"字样时，单击**"**输入"。** 窗口关闭后，打开Visual Studio。
 
@@ -222,11 +222,11 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
 
     这将导致控制台应用程序模板同时显示在控制台子节点和 SimpleProject 父节点中，该父节点位于子节点上方的一个级别。
 
-4. 保存 *SimpleProject.vstemplate* 文件。
+4. 保存 *SimpleProject* 文件。
 
-5. 在 *.csproj* 文件中，将 \<OutputSubPath> 添加到每个 ZipProject 元素。 像以前一样卸载项目，并编辑项目文件。
+5. 在 *.csproj* 文件中，将添加 \<OutputSubPath> 到每个 ZipProject 元素。 像以前一样卸载项目，然后编辑项目文件。
 
-6. 找到 \<ZipProject> 元素。 对于每个 \<ZipProject> 元素，请添加 \<OutputSubPath> 一个元素，并赋予其值 Console。 The ZipProject
+6. 找到 \<ZipProject> 元素。 对于每个 \<ZipProject> 元素，添加一个 \<OutputSubPath> 元素并为其指定值控制台。 ZipProject
 
     ```
     <ZipProject Include="Templates\Projects\ConsoleApp\AssemblyInfo.cs">
@@ -246,7 +246,7 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
     </ZipProject>
     ```
 
-7. 将此 \<PropertyGroup> 添加到项目文件：
+7. 将以下 \<PropertyGroup> 内容添加到项目文件：
 
     ```
     <PropertyGroup>
@@ -254,47 +254,47 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
     </PropertyGroup>
     ```
 
-8. 保存项目文件并重新加载项目。
+8. 保存项目文件，然后重新加载项目。
 
 ## <a name="test-the-project-type-child-node"></a>测试项目类型子节点
-测试修改后的项目文件，查看 **控制台子节点** 是否显示在"新建 **Project对话框中。**
+测试修改后的项目文件，以查看 "**新建 Project** " 对话框中是否显示了 **控制台** 子节点。
 
-1. 运行"**重置Microsoft Visual Studio实例"** 工具。
+1. 运行 "**重置 Microsoft Visual Studio 实验实例**" 工具。
 
 2. 重新生成 SimpleProject 项目并开始调试。 应显示实验实例
 
-3. 在"**新建Project** 对话框中，单击 **"SimpleProject"** 节点。 控制台 **应用程序** 模板应显示在" **模板"窗格中** 。
+3. 在 "**新建 Project** " 对话框中，单击 " **SimpleProject** " 节点。 " **控制台应用程序** " 模板应出现在 " **模板** " 窗格中。
 
-4. 展开 **SimpleProject** 节点。 控制台 **子** 节点应显示。 **SimpleProject 应用程序** 模板将继续显示在"**模板"窗格中**。
+4. 展开 " **SimpleProject** " 节点。 **控制台** 子节点应会出现。 " **SimpleProject" 应用程序** 模板将继续出现在 " **模板** " 窗格中。
 
-5. 单击 **"取消** "并停止调试。
+5. 单击 " **取消** " 和 "停止调试"。
 
-    ![简单Project汇总](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
+    ![简单 Project 汇总](../extensibility/media/simpproj2_rollup.png "SimpProj2_Rollup")
 
-    ![简单Project控制台节点](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
+    ![简单 Project 控制台节点](../extensibility/media/simpproj2_subfolder.png "SimpProj2_Subfolder")
 
 ## <a name="substitute-project-template-parameters"></a>替换项目模板参数
-- [创建基本项目系统的第 1](../extensibility/creating-a-basic-project-system-part-1.md) 部分展示了如何覆盖 `ProjectNode.AddFileFromTemplate` 方法以执行基本类型的模板参数替换。 本部分介绍如何使用更复杂的模板Visual Studio参数。
+- [创建基本项目系统，第1部分](../extensibility/creating-a-basic-project-system-part-1.md) 演示了如何覆盖 `ProjectNode.AddFileFromTemplate` 方法，以执行基本类型的模板参数替换。 本部分介绍如何使用更复杂的 Visual Studio 模板参数。
 
-在"新建项目"对话框中Visual Studio模板创建项目时，模板参数 **Project** 字符串来自定义项目。 模板参数是一种以美元符号开头和结尾的特殊令牌，例如，$time$。 以下两个参数对于在基于模板的项目中启用自定义特别有用：
+使用 "**新建 Project** " 对话框中的 Visual Studio 模板创建项目时，模板参数将替换为字符串以自定义项目。 模板参数是以美元符号开头和结尾的特殊标记，例如 $time $。 以下两个参数对于启用基于模板的项目中的自定义特别有用：
 
-- $GUID[1-10]$ 替换为新的 Guid。 可以指定最多 10 个唯一 GUID，例如 $guid 1$。
+- $GUID [1-10] $ 替换为新的 Guid。 最多可以指定10个唯一的 Guid，例如 $guid $1。
 
-- $safeprojectname$ 是用户在"新建Project中提供的名称，经过修改 **以** 删除所有不安全字符和空格。
+- $safeprojectname $ 是用户在 "**新建 Project** " 对话框中提供的名称，则将其修改为删除所有不安全字符和空格。
 
   有关模板参数的完整列表，请参阅[模板参数](../ide/template-parameters.md)。
 
 ### <a name="to-substitute-project-template-parameters"></a>替换项目模板参数
 
-1. 在 *SimpleProjectNode.cs* 文件中，删除 `AddFileFromTemplate` 方法。
+1. 在 *SimpleProjectNode* 文件中，删除 `AddFileFromTemplate` 方法。
 
-2. 在 *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 文件中，找到 属性，并更改其值 \<RootNamespace> $safeprojectname$。
+2. 在 *\\ Templates\Projects\ConsoleApp\SimpleProject.myproj* 文件中，找到 \<RootNamespace> 属性，并将其值更改为 $safeprojectname $。
 
     ```
     <RootNamespace>$safeprojectname$</RootNamespace>
     ```
 
-3. 在 *\\ Templates\Projects\SimpleProject\Program.cs* 文件中，将文件的内容替换为以下代码：
+3. 在 *\\ Templates\Projects\SimpleProject\Program.cs* 文件中，将该文件的内容替换为以下代码：
 
     ```
     using System;
@@ -318,9 +318,9 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
 
 4. 重新生成 SimpleProject 项目并开始调试。 应显示实验实例。
 
-5. 创建新的 SimpleProject 控制台应用程序。  (在 **"Project"窗格中**，选择"**简单""项目"。** 在 **Visual Studio模板"下，** 选择"**控制台应用程序**.) 
+5. 创建新的 SimpleProject 控制台应用程序。  (在 " **Project 类型**" 窗格中，选择 " **SimpleProject**"。 在 **Visual Studio 安装的模板**"下，选择"**控制台应用程序**"。 ) 
 
-6. 在新建的项目中，打开 *Program.cs*。 该文件应如下所示， (GUID 值会有所不同。) ：
+6. 在新创建的项目中，打开 " *.cs*"。 其外观应如下所示 (文件中的 GUID 值会有所不同。 ) ：
 
     ```csharp
     using System;
@@ -343,28 +343,28 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
     ```
 
 ## <a name="create-a-project-property-page"></a>创建项目属性页
-你可以为项目类型创建属性页，以便用户可以查看和更改基于模板的项目的属性。 本部分演示如何创建与配置无关的属性页。 此基本属性页使用属性网格来显示在属性页类中公开的公共属性。
+您可以为您的项目类型创建属性页，以便用户可以在基于模板的项目中查看和更改属性。 本部分说明如何创建独立于配置的属性页。 此基本属性页使用属性网格显示您在属性页类中公开的公共属性。
 
-从基类派生属性页 `SettingsPage` 类。 类提供的属性网格 `SettingsPage` 了解大多数基元数据类型，并知道如何显示它们。 此外， `SettingsPage` 类知道如何将属性值保留到项目文件。
+从基类派生属性页类 `SettingsPage` 。 类提供的 "属性" 网格 `SettingsPage` 可识别大多数基元数据类型，并知道如何显示它们。 此外，类还 `SettingsPage` 知道如何将属性值保存到项目文件。
 
-通过本部分创建的属性页，可以更改和保存这些项目属性：
+您在本部分中创建的属性页使您可以更改和保存这些项目属性：
 
 - AssemblyName
 
 - OutputType
 
-- RootNamespace。
+- RootNamespace.
 
-1. 在 *SimpleProjectPackage.cs* 文件中，将 `ProvideObject` 此属性添加到 `SimpleProjectPackage` 类：
+1. 在 *SimpleProjectPackage* 文件中，将以下属性添加 `ProvideObject` 到 `SimpleProjectPackage` 类：
 
     ```
     [ProvideObject(typeof(GeneralPropertyPage))]
     public sealed class SimpleProjectPackage : ProjectPackage
     ```
 
-    这会向 COM 注册属性页 `GeneralPropertyPage` 类。
+    这会向 COM 注册属性页类 `GeneralPropertyPage` 。
 
-2. 在 *SimpleProjectNode.cs* 文件中，将以下两个重写方法添加到 `SimpleProjectNode` 类：
+2. 在 *SimpleProjectNode* 文件中，将以下两个重写方法添加到 `SimpleProjectNode` 类：
 
     ```csharp
     protected override Guid[] GetConfigurationIndependentPropertyPages()
@@ -381,11 +381,11 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
     }
     ```
 
-    这两种方法都返回属性页 GUID 的数组。 GeneralPropertyPage GUID 是数组中的唯一元素，因此"属性 **页** "对话框将只显示一页。
+    这两种方法都返回属性页 Guid 的数组。 GeneralPropertyPage GUID 是数组中的唯一元素，因此，" **属性页** " 对话框将只显示一页。
 
-3. 将名为 *GeneralPropertyPage.cs* 的类文件添加到 SimpleProject 项目。
+3. 将名为 *GeneralPropertyPage* 的类文件添加到 SimpleProject 项目。
 
-4. 使用下列代码替换此文件的内容：
+4. 使用以下代码替换该文件的内容：
 
     ```csharp
     using System;
@@ -455,36 +455,36 @@ Visual Studio模板不包含路径信息。 因此，*模板.zip* 文件必须�
     }
     ```
 
-    类 `GeneralPropertyPage` 公开 AssemblyName、OutputType 和 RootNamespace 这三个公共属性。 由于 AssemblyName 没有 set 方法，因此它显示为只读属性。 OutputType 是一个枚举常量，因此它显示为下拉列表。
+    `GeneralPropertyPage`类公开三个公共属性 AssemblyName、OutputType 和 RootNamespace。 由于 AssemblyName 没有 set 方法，因此它显示为只读属性。 OutputType 是一个枚举常数，因此它显示为下拉列表。
 
-    基 `SettingsPage` 类提供 `ProjectMgr` 以保留属性。 `BindProperties`方法使用 `ProjectMgr` 检索持久化属性值并设置相应的属性。 `ApplyChanges`方法使用 `ProjectMgr` 获取属性的值，并保留它们到项目文件。 属性集方法将 `IsDirty` 设置为 true，以指示属性必须持久化。 保存项目或解决方案时发生持久性。
+    `SettingsPage`提供基类 `ProjectMgr` 以保持属性。 `BindProperties`方法使用 `ProjectMgr` 检索持久化属性值并设置相应的属性。 `ApplyChanges`方法使用 `ProjectMgr` 获取属性的值，并将这些值保存到项目文件。 属性 set 方法将设置 `IsDirty` 为 true，以指示必须保存属性。 保存项目或解决方案时，将发生持久性。
 
-5. 重新生成 SimpleProject 解决方案并开始调试。 应显示实验实例。
+5. 重新生成 SimpleProject 解决方案并启动调试。 应显示实验实例。
 
-6. 在实验实例中，创建新的 SimpleProject 应用程序。
+6. 在实验实例中，创建一个新的 SimpleProject 应用程序。
 
-7. Visual Studio调用项目工厂，以使用 Visual Studio 模板创建项目。 新的 *Program.cs* 文件在代码编辑器中打开。
+7. Visual Studio 通过使用 Visual Studio 模板来调用项目工厂来创建项目。 新的 *Program .cs* 文件将在代码编辑器中打开。
 
-8. 右键单击中项目节点 **解决方案资源管理器，** 然后单击"属性 **"。** 随即显示“属性页”对话框。
+8. 右键单击 " **解决方案资源管理器** 中的项目节点，然后单击" **属性**"。 随即显示“属性页”对话框。
 
-    ![简单Project属性页](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
+    ![简单 Project 属性页](../extensibility/media/simpproj2_proppage.png "SimpProj2_PropPage")
 
 ## <a name="test-the-project-property-page"></a>测试项目属性页
-现在，可以测试是否可以修改和更改属性值。
+现在，你可以测试是否可以修改和更改属性值。
 
-1. 在 **"MyConsoleApplication 属性页** "对话框中，将 **DefaultNamespace** 更改为 **MyApplication**。
+1. 在 " **MyConsoleApplication 属性页** " 对话框中，将 " **DefaultNamespace** " 更改为 " **MyApplication**"。
 
-2. 选择 **OutputType 属性**，然后选择"**类库"。**
+2. 选择 " **OutputType** " 属性，然后选择 **"类库"。**
 
 3. 单击“应用”，然后单击“确定”。
 
-4. 重新打开 **"属性页** "对话框，并验证所做的更改是否持久保存。
+4. 重新打开 " **属性页** " 对话框，并验证所做的更改是否已保存。
 
 5. 关闭 Visual Studio 的实验实例。
 
 6. 重新打开实验实例。
 
-7. 重新打开 **"属性页** "对话框，并验证所做的更改是否持久保存。
+7. 重新打开 " **属性页** " 对话框，并验证所做的更改是否已保存。
 
 8. 关闭 Visual Studio 的实验实例。
     ![关闭实验实例](../extensibility/media/simpproj2_proppage2.png "SimpProj2_PropPage2")

@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b4778cf4b8aa461b3c60ef6f4c6a209a2f4f597
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: bc2908a8c279e5badbf25bd79f8191be0ea13ca76adf0f56e058424386636580
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104906"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121343529"
 ---
 # <a name="clickonce-deployment-samples-and-walkthroughs"></a>ClickOnce 部署示例和演练
 本部分包含示例应用程序、示例代码和分步演练，它们阐释了用于部署 Windows 窗体、WPF 和控制台应用程序的语法、结构和方法。

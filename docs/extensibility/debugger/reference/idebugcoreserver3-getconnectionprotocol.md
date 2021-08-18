@@ -48,6 +48,6 @@ int GetConnectionProtocol(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [CONNECTION_PROTOCOL](../../../extensibility/debugger/reference/connection-protocol.md)

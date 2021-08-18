@@ -1,6 +1,6 @@
 ---
 description: 获取程序的退出代码。
-title: IDebugProgramDestroyEvent2：：GetExitCode |Microsoft Docs
+title: IDebugProgramDestroyEvent2：： GetExitCode |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -43,10 +43,10 @@ int GetExitCode(
 
 ## <a name="parameters"></a>参数
 `pdwExit`\
-[out]返回程序的退出代码。
+弄返回程序的退出代码。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)

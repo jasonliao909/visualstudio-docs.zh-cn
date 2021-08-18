@@ -52,7 +52,7 @@ ms.locfileid: "121346695"
 
 2. 在“属性”  窗口中，将 <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为 `false`。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
 - [数据集中的关系](../data-tools/relationships-in-datasets.md)

@@ -40,5 +40,5 @@ ms.locfileid: "121417790"
 ## <a name="remarks"></a>备注
  此方法不是线程安全的，不应同时与的其他实例一起使用 <xref:System.Threading.Tasks.TaskScheduler> 。 仅当调试器挂起了所有其他线程时，才从调试器调用此方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [TaskScheduler 类](../../extensibility/debugger/taskscheduler-class-internal-members.md)
