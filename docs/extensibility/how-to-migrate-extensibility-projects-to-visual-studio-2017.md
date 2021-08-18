@@ -13,16 +13,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 monikerRange: vs-2017
-ms.openlocfilehash: d99c5142d078b6206064af26c0195767f9566367715d55585b62482496127a45
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9e10a9061eae777728b9874c959483edfc7abe15
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376636"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050333"
 ---
 # <a name="how-to-migrate-extensibility-projects-to-visual-studio-2017"></a>如何：将扩展性项目迁移到 Visual Studio 2017
 
-本文档介绍如何将扩展性项目升级到 Visual Studio 2017。 除了介绍如何更新项目文件外，它还介绍了如何从扩展清单版本 2 (VSIX v2) 升级到新版本 3 VSIX 清单格式 (VSIX v3) 。
+本文档介绍如何将扩展性项目升级到 Visual Studio 2017。 除了介绍如何更新项目文件外，还介绍了如何从扩展清单版本 2 (VSIX v2) 升级到新版本 3 VSIX 清单格式 (VSIX v3) 。
 
 ## <a name="install-visual-studio-2017-with-required-workloads"></a>安装Visual Studio工作负载的 2017 年 1 月
 
@@ -31,9 +31,9 @@ ms.locfileid: "121376636"
 * .NET 桌面开发
 * Visual Studio 扩展开发
 
-## <a name="open-vsix-solution-in-visual-studio-2017"></a>在 2017 Visual Studio中打开 VSIX 解决方案
+## <a name="open-vsix-solution-in-visual-studio-2017"></a>在 2017 Visual Studio打开 VSIX 解决方案
 
-所有 VSIX 项目都需要从主版本单向升级到 Visual Studio 2017。
+所有 VSIX 项目都需要从主版本单向升级到 2017 Visual Studio版本。
 
 项目文件 (例如 **.csproj*) 将更新：
 
@@ -63,9 +63,9 @@ ms.locfileid: "121376636"
 > [!Note]
 > 所有扩展至少应指定Visual Studio编辑器组件作为先决条件。
 
-* 编辑扩展清单文件 (通常称为 *source.extension.vsixmanifest*) 。
+* 编辑扩展清单文件 (通常称为 *source.extension.vsixmanifest) 。*
 * 确保 `InstallationTarget` 包含 15.0。
-* 添加所需的安装 (如以下示例所示) 。
+* 添加所需的安装 (，如以下示例所示) 。
   * 建议仅为安装先决条件指定组件 ID。
   * 有关标识组件标识的说明，请参阅本文档末尾 [的 部分](#find-component-ids)。
 
@@ -88,7 +88,7 @@ ms.locfileid: "121376636"
 可以使用清单设计器中的新"先决条件"选项卡来选择先决条件，而不是直接编辑清单 XML，XML 将更新。
 
 > [!Note]
-> 清单设计器将仅允许你选择"组件" (当前实例上安装的"工作负荷) 包Visual Studio包"。 如果需要为当前未安装的工作负荷、包或组件添加先决条件，请直接编辑清单 XML。
+> 清单设计器将仅允许你选择"组件"， (当前实例上安装的"工作负荷) 包"Visual Studio包" 。 如果需要为当前未安装的工作负荷、包或组件添加先决条件，请直接编辑清单 XML。
 
 * 打开 *source.extension.vsixmanifest [Design]* 文件。
 * 选择 **"先决条件"** 选项卡，然后按 **"新建"** 按钮。
@@ -111,14 +111,14 @@ ms.locfileid: "121376636"
 
 ## <a name="update-debug-settings-for-the-project"></a>更新项目的调试设置
 
-如果要在 Visual Studio 试验实例中调试扩展，请确保"调试开始"操作的项目设置具有"启动外部程序：值"设置为  >  Visual Studio 2017安装的devenv.exe文件。
+如果要在 Visual Studio 试验实例中调试扩展，请确保"调试启动"操作的项目设置具有"启动外部程序： 值"设置为  >  Visual Studio 2017安装的devenv.exe文件。
 
 它可能如下所示 *：C：\Program Files (x86) \Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe*
 
 ![启动外部程序](media/start-external-program.png)
 
 > [!Note]
-> 调试启动操作通常存储在 *.csproj.user* 文件中。 此文件通常包含在 *.gitignore* 文件中，因此，在提交到源代码管理时，通常不会与其他项目文件一起保存。 因此，如果从源代码管理中拉取解决方案，则项目很可能没有为"启动操作"设置任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将创建一个 *.csproj.user* 文件，其默认值指向当前 Visual Studio 安装目录。 但是，如果要迁移 VSIX v2 扩展，*则 .csproj.user* 文件可能包含对以前 Visual Studio 版本的安装目录的引用。 设置"调试 **开始**"操作  >  **的值** 将允许在尝试调试扩展Visual Studio启动正确的试验实例。
+> 调试启动操作通常存储在 *.csproj.user* 文件中。 此文件通常包含在 *.gitignore* 文件中，因此，在提交到源代码管理时，通常不会与其他项目文件一起保存。 因此，如果从源代码管理中拉取解决方案，则项目很可能没有为"启动操作"设置任何值。 使用 Visual Studio 2017 创建的新 VSIX 项目将创建一个 *.csproj.user* 文件，其默认值指向当前 Visual Studio 安装目录。 但是，如果要迁移 VSIX v2 扩展，*则 .csproj.user* 文件可能包含对以前 Visual Studio 版本的安装目录的引用。 设置"调试 **开始**  >  **"操作的值** 将允许在尝试调试扩展Visual Studio启动正确的试验实例。
 
 ## <a name="check-that-the-extension-builds-correctly-as-a-vsix-v3"></a>检查扩展生成是否正确 (VSIX v3) 
 
@@ -158,7 +158,7 @@ ms.locfileid: "121376636"
 等待进程关闭或手动结束任务。 可以按列出的名称或括号中列出的 PID 查找进程。
 
 > [!Note]
-> 当实例实例正在运行时，这些进程Visual Studio关闭。 确保已关闭计算机上所有 Visual Studio实例（包括来自其他用户的实例）然后继续重试。
+> 这些进程不会在实例实例运行时Visual Studio关闭。 确保已关闭计算机上所有 Visual Studio实例（包括来自其他用户的实例）然后继续重试。
 
 ## <a name="check-when-missing-the-required-prerequisites"></a>检查何时缺少所需的先决条件
 

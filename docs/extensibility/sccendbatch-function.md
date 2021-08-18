@@ -1,6 +1,6 @@
 ---
-description: 此函数结束一批源代码管理操作。
-title: SccEndBatch 函数|Microsoft Docs
+description: 此函数将结束一批源代码管理操作。
+title: SccEndBatch 函数 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c3fa3c7485add8773a550aabff76501f08d585bc05ceed3cbcebe56f60a67c3a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a608f05cada958a56f3fb5403793c70f5ece5ba9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124420"
 ---
 # <a name="sccendbatch-function"></a>SccEndBatch 函数
-此函数结束一批源代码管理操作。 这些批不能嵌套。
+此函数将结束一批源代码管理操作。 这些批处理不能嵌套。
 
 ## <a name="syntax"></a>语法
 
@@ -38,11 +38,11 @@ SCCRTN SccEndBatch(void);
 
 |值|说明|
 |-----------|-----------------|
-|SCC_OK|批处理操作已成功完成。|
+|SCC_OK|成功结束批处理操作。|
 |SCC_E_UNKNOWNERROR|非特定故障。|
 
 ## <a name="remarks"></a>备注
- 源代码管理批处理用于跨多个项目或多个上下文执行相同的源代码管理操作。 批处理可用于在批处理操作期间消除用户体验中的冗余对话框。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)和 函数用作对来指示 `SccEndBatch` 操作开始和结束。 它们不能嵌套。
+ 源代码管理批处理用于在多个项目或多个上下文中执行相同的源代码管理操作。 批处理可用于消除批处理操作期间用户体验中的冗余对话框。 [SccBeginBatch](../extensibility/sccbeginbatch-function.md)和函数用作 `SccEndBatch` 指示操作的开始和结束的对。 它们不能嵌套。
 
 ## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

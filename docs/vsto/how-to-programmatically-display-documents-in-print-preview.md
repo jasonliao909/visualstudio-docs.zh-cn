@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式在打印预览中显示文档
-description: 了解如何在 Microsoft Word 文档中以编程方式在打印预览中显示文档。
+description: 了解如何在文档打印预览中以编程方式Microsoft Word文档。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 855aea5fefede1e454a8f273ad1cdf402cae4b9aea6159f0ac6f86fb93d64818
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 391115fb1ba263e8ddff0878c5284f42ba458897
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122717"
 ---
 # <a name="how-to-programmatically-display-documents-in-print-preview"></a>如何：以编程方式在打印预览中显示文档
   如果你的解决方案生成了报告，你可能需要以打印预览模式向用户显示报告。
@@ -61,7 +61,7 @@ ms.locfileid: "121366233"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet14":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet14":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：以编程方式打印文档](../vsto/how-to-programmatically-print-documents.md)
 - [如何：以编程方式打开现有文档](../vsto/how-to-programmatically-open-existing-documents.md)
 - [如何：以编程方式创建新文档](../vsto/how-to-programmatically-create-new-documents.md)

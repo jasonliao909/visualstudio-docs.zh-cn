@@ -1,5 +1,5 @@
 ---
-description: 指定要检索的符号信息类型。
+description: 指定要检索的符号信息的种类。
 title: SYMBOL_SEARCH_INFO_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b83ca25a3bd2d9f97f5646e98189f4400885be622859ea1594889f260b8b49f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 16c9ea9aebd562a88963bfd1f23aac3805c095a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448528"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102969"
 ---
 # <a name="symbol_search_info_fields"></a>SYMBOL_SEARCH_INFO_FIELDS
-指定要检索的符号信息类型。
+指定要检索的符号信息的种类。
 
 ## <a name="syntax"></a>语法
 
@@ -58,14 +58,14 @@ public enum enum_SYMBOL_SEARCH_INFO_FIELDS
  这些标志作为参数传递给 [GetSymbolInfo](../../../extensibility/debugger/reference/idebugmodule3-getsymbolinfo.md) 方法，以确定返回的信息量。
 
 > [!NOTE]
-> 目前仅 `SSIF_VERBOSE_SEARCH_INFO` 支持 ，并且必须指定为 `dwFlags` 的参数 `IDebugModule3::GetSymbolInfo` 。 所有其他值都返回错误。
+> 目前仅 `SSIF_VERBOSE_SEARCH_INFO` 支持，且必须将其指定为的 `dwFlags` 参数 `IDebugModule3::GetSymbolInfo` 。 所有其他值都将返回错误。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

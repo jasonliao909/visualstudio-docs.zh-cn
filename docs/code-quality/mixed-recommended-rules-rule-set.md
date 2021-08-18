@@ -1,7 +1,7 @@
 ---
 title: “混合建议规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的 "混合建议规则" 规则集。 请参阅支持公共语言运行时的 c + + 项目规则的说明。
+description: 了解"建议混合规则"规则集Visual Studio。 请参阅支持公共语言运行时的 C++ 项目的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 author: mikejo5000
@@ -10,18 +10,18 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 72028bf039c3291a161cb1a6b4eab6895876d566605212c6f21eb6940a9ddcc5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 999c41f50bc1ded593fd529e45acd876665303ce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121392713"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031648"
 ---
 # <a name="mixed-recommended-rules-rule-set"></a>“混合建议规则”规则集
 
-Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 项目中最常见和最关键的问题，包括潜在的安全漏洞、应用程序崩溃和其他重要的逻辑和设计错误。 此规则集包含 " [混合最低规则](mixed-minimum-rules-rule-set.md) " 规则集中的所有规则。
+Microsoft 混合建议规则侧重于支持公共语言运行时的 C++ 项目中最常见的和关键的问题，包括潜在的安全漏洞、应用程序崩溃以及其他重要的逻辑和设计错误。 此规则集包括混合最低规则规则集 [内](mixed-minimum-rules-rule-set.md) 的所有规则。
 
-在为支持公共语言运行时的 c + + 项目创建的任何自定义规则集中包含此规则集。
+在为支持公共语言运行时的 C++ 项目创建的任何自定义规则集中包括此规则集。
 
 |规则|描述|
 |----------|-----------------|
@@ -30,7 +30,7 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C6029](/cpp/code-quality/c6029)|未选中的值的使用|
 |[C6031](/cpp/code-quality/c6031)|已忽略返回值|
 |[C6053](/cpp/code-quality/c6053)|来自调用的零终止|
-|[C6054](/cpp/code-quality/c6054)|缺少终止|
+|[C6054](/cpp/code-quality/c6054)|零终止缺失|
 |[C6059](/cpp/code-quality/c6059)|不正确的串联|
 |[C6063](/cpp/code-quality/c6063)|缺少 Format 函数的字符串自变量|
 |[C6064](/cpp/code-quality/c6064)|缺少 Format 函数的整型自变量|
@@ -39,27 +39,27 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C6101](/cpp/code-quality/c6101)|返回未初始化的内存|
 |[C6200](/cpp/code-quality/c6200)|索引超出最大缓冲区大小|
 |[C6201](/cpp/code-quality/c6201)|索引超出最大堆栈缓冲区大小|
-|[C6214](/cpp/code-quality/c6214)|将 HRESULT 转换为 BOOL 无效|
-|[C6215](/cpp/code-quality/c6215)|无效的转换布尔值到 HRESULT|
-|[C6216](/cpp/code-quality/c6216)|将 BOOL 转换为 HRESULT Compiler-Inserted 无效|
-|[C6217](/cpp/code-quality/c6217)|不包含的 HRESULT 测试无效|
-|[C6220](/cpp/code-quality/c6220)|HRESULT 与-1 的比较无效|
-|[C6226](/cpp/code-quality/c6226)|HRESULT 赋值无效-1|
-|[C6230](/cpp/code-quality/c6230)|HRESULT 用作 Boolean 无效|
-|[C6235](/cpp/code-quality/c6235)|具有 Logical-Or 的非零常量|
-|[C6236](/cpp/code-quality/c6236)|Logical-Or 包含非零常量|
-|[C6237](/cpp/code-quality/c6237)|零，Logical-And 失去副作用|
+|[C6214](/cpp/code-quality/c6214)|将 HRESULT 强制转换到 BOOL 无效|
+|[C6215](/cpp/code-quality/c6215)|将 BOOL 强制转换到 HRESULT 无效|
+|[C6216](/cpp/code-quality/c6216)|无效Compiler-Inserted BOOL 强制转换到 HRESULT|
+|[C6217](/cpp/code-quality/c6217)|使用 NOT 的 HRESULT 测试无效|
+|[C6220](/cpp/code-quality/c6220)|HRESULT 与 -1 的比较无效|
+|[C6226](/cpp/code-quality/c6226)|对 -1 的 HRESULT 分配无效|
+|[C6230](/cpp/code-quality/c6230)|HRESULT 用作布尔值无效|
+|[C6235](/cpp/code-quality/c6235)|具有非零常量Logical-Or|
+|[C6236](/cpp/code-quality/c6236)|Logical-Or非零常量的|
+|[C6237](/cpp/code-quality/c6237)|零与Logical-And失去副作用|
 |[C6242](/cpp/code-quality/c6242)|强制本地展开|
 |[C6248](/cpp/code-quality/c6248)|创建 Null DACL|
-|[C6250](/cpp/code-quality/c6250)|未发布地址描述符|
-|[C6255](/cpp/code-quality/c6255)|不受保护的 Alloca 使用|
+|[C6250](/cpp/code-quality/c6250)|未提供的地址描述符|
+|[C6255](/cpp/code-quality/c6255)|Alloca 的未受保护使用|
 |[C6258](/cpp/code-quality/c6258)|使用终止线程|
-|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 有限交换机中的死信|
-|[C6260](/cpp/code-quality/c6260)|使用字节算术|
-|[C6262](/cpp/code-quality/c6262)|堆栈使用过多|
-|[C6263](/cpp/code-quality/c6263)|在循环中使用 Alloca|
+|[C6259](/cpp/code-quality/c6259)|Bitwise-Or 受限交换机中的死代码|
+|[C6260](/cpp/code-quality/c6260)|字节算术的使用|
+|[C6262](/cpp/code-quality/c6262)|堆栈使用率过高|
+|[C6263](/cpp/code-quality/c6263)|使用 Alloca In 循环|
 |[C6268](/cpp/code-quality/c6268)|强制转换中缺少括号|
-|[C6269](/cpp/code-quality/c6269)|忽略指针取消引用|
+|[C6269](/cpp/code-quality/c6269)|已忽略指针取消引用|
 |[C6270](/cpp/code-quality/c6270)|缺少 Format 函数的浮点型自变量|
 |[C6271](/cpp/code-quality/c6271)|Format 函数的额外自变量|
 |[C6272](/cpp/code-quality/c6272)|Format 函数的非浮点型自变量|
@@ -67,9 +67,9 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C6274](/cpp/code-quality/c6274)|Format 函数的非字符自变量|
 |[C6276](/cpp/code-quality/c6276)|无效字符串的强制转换|
 |[C6277](/cpp/code-quality/c6277)|无效 CreateProcess 的调用|
-|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete 不匹配|
-|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete 不匹配|
-|[C6280](/cpp/code-quality/c6280)|内存 Allocation-Deallocation 不匹配|
+|[C6278](/cpp/code-quality/c6278)|Array-New Scalar-Delete不匹配|
+|[C6279](/cpp/code-quality/c6279)|Scalar-New Array-Delete不匹配|
+|[C6280](/cpp/code-quality/c6280)|内存Allocation-Deallocation不匹配|
 |[C6281](/cpp/code-quality/c6281)|按位关系优先顺序|
 |[C6282](/cpp/code-quality/c6282)|赋值替换测试|
 |[C6283](/cpp/code-quality/c6283)|基元 Array-New Scalar-Delete 不匹配|
@@ -169,22 +169,22 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28182](/cpp/code-quality/c28182)|取消引用 NULL 指针。 该指针包含与另一指针相同的 NULL 值。|
 |[C28183](/cpp/code-quality/c28183)|参数可以是一个值，并且是在指针中找到的值的副本|
 |[C28193](/cpp/code-quality/c28193)|变量保存一个必须检查的值|
-|[C28196](/cpp/code-quality/c28196)|不满足要求。  (表达式计算结果不为 true.) |
+|[C28196](/cpp/code-quality/c28196)|不满足要求。  (表达式的计算结果不为 true。 ) |
 |[C28202](/cpp/code-quality/c28202)|非法引用非静态成员|
 |[C28203](/cpp/code-quality/c28203)|对类成员的不明确的引用。|
-|[C28205](/cpp/code-quality/c28205)|\_在 \_ 非法 \_ \_ 上下文中 \_ 使用的成功或失败|
+|[C28205](/cpp/code-quality/c28205)|\_\_ \_ \_ \_ 在非法上下文中使用成功或失败|
 |[C28206](/cpp/code-quality/c28206)|若左操作数指向结构，则使用“->”|
 |[C28207](/cpp/code-quality/c28207)|若左操作数是一个结构，则使用“.”|
-|[C28209](/cpp/code-quality/c28209)|符号的声明具有冲突声明|
+|[C28209](/cpp/code-quality/c28209)|符号的声明具有冲突的声明|
 |[C28210](/cpp/code-quality/c28210)|__on_failure 上下文的批注不得位于显式的 pre 上下文中|
 |[C28211](/cpp/code-quality/c28211)|SAL_context 所需的静态上下文名称|
 |[C28212](/cpp/code-quality/c28212)|批注所需的指针表达式|
-|[C28213](/cpp/code-quality/c28213)|" \_ 使用 decl 注释"批注必须用于引用之前的声明 \_ \_ ，而无需 \_ 进行修改。|
+|[C28213](/cpp/code-quality/c28213)|\_Use \_ decl \_ 批注 \_ 批注必须用于引用之前的声明，而无需修改。|
 |[C28214](/cpp/code-quality/c28214)|特性参数的名称必须为 p1...p9|
 |[C28215](/cpp/code-quality/c28215)|不能将 typefix 应用于已包含 typefix 的参数|
 |[C28216](/cpp/code-quality/c28216)|checkReturn 批注仅应用于特定函数参数的后置条件。|
 |[C28217](/cpp/code-quality/c28217)|对于函数，批注的参数数目与在文件中找到的数目不匹配|
-|[C28218](/cpp/code-quality/c28218)|对于函数参数，批注的 参数与在 文件中找到的参数不匹配|
+|[C28218](/cpp/code-quality/c28218)|对于函数参数，批注的参数与在文件中找到的参数不匹配|
 |[C28219](/cpp/code-quality/c28219)|批注中的批注参数所需的枚举成员|
 |[C28220](/cpp/code-quality/c28220)|批注中的批注参数所需的整数表达式|
 |[C28221](/cpp/code-quality/c28221)|批注中的参数所需的字符串表达式|
@@ -209,7 +209,7 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28240](/cpp/code-quality/c28240)|参数上的批注包含 param2，但不包含 param1|
 |[C28241](/cpp/code-quality/c28241)|未识别参数上的函数的批注|
 |[C28243](/cpp/code-quality/c28243)|参数上函数的批注需要的取消引用次数多于已批注的实际类型所允许的次数|
-|[C28244](/cpp/code-quality/c28244)|函数的批注具有无法分析的参数/外部批注|
+|[C28244](/cpp/code-quality/c28244)|函数的批注包含无法分析的参数/外部批注|
 |[C28245](/cpp/code-quality/c28245)|函数的批注将在非成员函数上批注“this”|
 |[C28246](/cpp/code-quality/c28246)|函数的参数批注与参数的类型不匹配|
 |[C28250](/cpp/code-quality/c28250)|函数的批注不一致：上一实例发生错误。|
@@ -222,7 +222,7 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|\_宏值的参数 \_ \_ 为 null|
+|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|
@@ -239,8 +239,8 @@ Microsoft 混合推荐的规则重点介绍支持公共语言运行时的 c + + 
 |[C28303](/cpp/code-quality/c28303)|在批注中找到含义模糊的 \_Deref\_ 运算符。|
 |[C28304](/cpp/code-quality/c28304)|发现未正确放置的 \_Notref\_ 运算符被应用到令牌。|
 |[C28305](/cpp/code-quality/c28305)|在分析标记时发现错误。|
-|[C28306](/cpp/code-quality/c28306)|参数上的批注为 sal|
-|[C28307](/cpp/code-quality/c28307)|参数上的批注为 sal|
+|[C28306](/cpp/code-quality/c28306)|参数上的批注为过时|
+|[C28307](/cpp/code-quality/c28307)|参数上的批注为过时|
 |[C28350](/cpp/code-quality/c28350)|批注介绍了无条件适用的情形。|
 |[C28351](/cpp/code-quality/c28351)|批注介绍了在条件中无法使用动态值（变量）的位置。|
 |[CA1001](/dotnet/fundamentals/code-analysis/quality-rules/ca1001)|具有可释放字段的类型应该是可释放的|

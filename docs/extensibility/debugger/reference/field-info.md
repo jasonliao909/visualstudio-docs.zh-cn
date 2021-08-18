@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2a0d549ef0327b9894e50a7d849be4b6688df83c8e903e14778b3827f7e82f2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9b2a07611a3bae712f714c318cf5f3e4446235e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072923"
 ---
 # <a name="field_info"></a>FIELD_INFO
 此结构描述局部变量、参数或其他字段。
@@ -51,7 +51,7 @@ public struct FIELD_INFO {
 
 ## <a name="members"></a>成员
 `dwFields`\
-指定填充哪些FIELD_INFO_FIELDS枚举中的[](../../../extensibility/debugger/reference/field-info-fields.md)标志的组合。
+集合中标志的组合 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 枚举，用于指定填充哪些成员。
 
 `bstrFullName`\
 字段的全名。

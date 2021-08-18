@@ -1,6 +1,6 @@
 ---
-title: 属性列出了两次
-description: 无法创建一次列出的关联属性。 查看有关此 Visual Studio 的信息对象关系设计器 (O/R 设计器) 消息。
+title: 属性已列出两次
+description: 无法创建关联 - 属性列出两次。 查看有关此Visual Studio 对象关系设计器 (O/R 设计器) 消息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -11,16 +11,16 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - data-storage
-ms.openlocfilehash: 391d24219063d2c1973361260a36b14d7a30a09e6d00a73476867d15c777130a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ed577ac9c0ca5263e651433da9cfea1f8bf613ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134798"
 ---
 # <a name="cannot-create-an-association-ltassociation-namegt---property-listed-twice"></a>无法创建关联 &lt;关联名称&gt; - 属性已列出两次
 
-无法创建关联 \<association name> 。 多次列出相同的属性： \<property name> 。
+无法创建关联 \<association name> 。 多次列出同一属性 \<property name> ：。
 
 关联由在“关联编辑器”对话框中选择的“关联属性”定义。 对于关联中的每个类，属性只能列出一次。
 
@@ -38,5 +38,5 @@ ms.locfileid: "121380723"
 
 ## <a name="see-also"></a>请参阅
 
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
-- [如何：在 LINQ to SQL 类之间创建关联 (O/R 设计器) ](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)
+- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [如何：在 O/R 设计器LINQ to SQL创建 (类之间的) ](../data-tools/how-to-create-an-association-relationship-between-linq-to-sql-classes-o-r-designer.md)

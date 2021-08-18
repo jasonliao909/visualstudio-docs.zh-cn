@@ -1,6 +1,6 @@
 ---
 title: 管理通用 Windows 项目 |Microsoft Docs
-description: 若要支持通用 Windows 应用，管理项目 Visual Studio 扩展应了解通用 Windows 应用项目结构。
+description: 为了支持通用 Windows 应用程序，管理项目的 Visual Studio 扩展应知道通用 Windows 应用程序项目结构。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -11,24 +11,24 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 08c44675c2fcae1035f292a4b2247aef7aad285633b24c28fa2375ef14e4e1de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d6e34a8cb8da8158eae9e6c245da45fa37d59b4e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078734"
 ---
 # <a name="manage-universal-windows-projects"></a>管理通用 Windows 项目
 
-通用 Windows 应用是面向 Windows 8.1 和 Windows Phone 8.1 的应用，允许开发人员在这两个平台上使用代码和其他资产。 共享代码和资源保留在共享项目中，而特定于平台的代码和资源保留在单独的项目中，一个用于 Windows，另一个用于 Windows Phone。 有关通用 Windows 应用的详细信息，请参阅[通用 Windows 应用](/windows/uwp/get-started/create-uwp-apps)。 管理项目 Visual Studio 扩展应该知道，通用 Windows 应用项目的结构不同于单平台应用。 本演练演示如何导航共享项目并管理共享项。
+通用 Windows 应用是面向 Windows 8.1 和 Windows Phone 8.1 的应用，使开发人员能够在这两个平台上使用代码和其他资产。 共享代码和资源保留在共享项目中，而特定于平台的代码和资源保留在单独的项目中，一个用于 Windows，另一个用于 Windows Phone。 有关通用 Windows 应用的详细信息，请参阅 [通用 windows 应用](/windows/uwp/get-started/create-uwp-apps)。 用于管理项目的 Visual Studio 扩展应该知道，通用 Windows 应用程序项目的结构与单平台应用程序不同。 本演练演示如何导航共享项目并管理共享项。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ### <a name="navigate-the-shared-project"></a>导航共享项目
 
-1. 创建一个名为 **TestUniversalProject** 的 c # VSIX 项目。  (**文件**  >  **新**  >  **Project** ，然后是 **c #**  >  **扩展**  >  **Visual Studio 包**) 。 添加 **自定义命令** 项目项模板 (在 **解决方案资源管理器** 上，右键单击项目节点并选择 "**添加**  >  **新项**"，然后中转到 "**扩展性**) "。 将该文件命名为 **TestUniversalProject**。
+1. 创建一个名为 **TestUniversalProject** 的 c # VSIX 项目。  ("**文件**" "  >  **新建**  >  **项目**"，然后 " **c #**  >  **扩展性**"  >  **Visual Studio 包**) 。 添加 **自定义命令** 项目项模板 (在 **解决方案资源管理器** 上，右键单击项目节点并选择 "**添加**  >  **新项**"，然后中转到 "**扩展性**) "。 将该文件命名为 **TestUniversalProject**。
 
 2. 在) 的 "**扩展**" 部分中添加对 *Microsoft.VisualStudio.Shell.Interop.12.1.DesignTime.dll* 和 *Microsoft.VisualStudio.Shell.Interop.14.0.DesignTime.dll* (的引用。
 
@@ -294,7 +294,7 @@ ms.locfileid: "121401071"
     output.OutputStringThreadSafe("set active project: " + platformCaption +'\n');
     ```
 
-16. 现在试试看。按 F5 启动实验实例。 在实验实例中创建一个 c # 通用中心应用项目 (在 "**新建 Project** " 对话框的 " **Visual c #**"  >  **Windows**  >  **Windows 8**  >  **通用**  >  **集线器应用**) "。 加载解决方案后，请切换到 " **工具** " 菜单，单击 " **调用 TestUniversalProject**"，然后在 " **输出** " 窗格中查看文本。 会看到下面这样的内容：
+16. 现在试试看。按 F5 启动实验实例。  (在 "新建项目" 对话框中的 "**新建项目**" 对话框中，在 **Visual c #**  >  **windows**  >  **windows 8**  >  **通用**  >  **集线器应用**) 中创建 c # 通用中心应用程序项目。 加载解决方案后，请切换到 " **工具** " 菜单，单击 " **调用 TestUniversalProject**"，然后在 " **输出** " 窗格中查看文本。 会看到下面这样的内容：
 
     ```
     Found shared project: HubApp.Shared
@@ -356,7 +356,7 @@ ms.locfileid: "121401071"
     output.OutputStringThreadSafe(string.Format("Shared item full path: {0}\n", fullPath));
     ```
 
-4. 现在试试看。按 **F5** 启动实验实例。 在实验实例中创建一个 c # 通用中心应用项目 (在 **"新建 Project** " 对话框中的 " **Visual c #**"  >  **Windows**  >  **Windows 8**  >  **通用**  >  **集线器应用**) 中转到 "**工具**" 菜单，单击 "**调用 TestUniversalProject**"，然后在 "**输出**" 窗格中检查文本。 会看到下面这样的内容：
+4. 现在试试看。按 **F5** 启动实验实例。  (在 "**新建项目**" 对话框的 "新建项目" 对话框中的 " **Visual c #** windows 8 通用中心应用程序" 中，创建一个 c # 通用中心应用程序项目，  >    >    >    >  ) 中转到 "**工具**" 菜单，单击 "**调用 TestUniversalProject**"，然后在 "**输出**" 窗格中检查文本。 会看到下面这样的内容：
 
     ```
     Found shared project: HubApp.Shared

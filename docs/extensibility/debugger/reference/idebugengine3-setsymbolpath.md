@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: fe9626bfb674ab2938c6209a3e22dcd4aad1f20be9e97f40b55a7066c7f17eb3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 73e7d4cb8ed36546e60326bc0935817d9b647adb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118978"
 ---
 # <a name="idebugengine3setsymbolpath"></a>IDebugEngine3::SetSymbolPath
 设置要为调试符号搜索的一个或哪些路径。
@@ -70,6 +70,6 @@ int SetSymbolPath(
 
  [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)方法执行符号的实际加载。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [LoadSymbols](../../../extensibility/debugger/reference/idebugengine3-loadsymbols.md)
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

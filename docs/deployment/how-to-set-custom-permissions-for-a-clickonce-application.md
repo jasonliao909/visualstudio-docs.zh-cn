@@ -1,6 +1,6 @@
 ---
-title: " (ClickOnce 应用程序设置自定义权限) "
-description: 了解如何部署使用默认权限的 ClickOnce 应用程序，或为应用程序所需的特定权限创建自定义区域。
+title: '为应用设置 (ClickOnce权限) '
+description: 了解如何部署使用ClickOnce权限的应用程序，或为应用程序所需的特定权限创建自定义区域。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,14 +15,15 @@ ms.assetid: 660459ca-ef73-44a8-b323-610001f63b93
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 2050f3534caba8aba12fa8550eb6e573a3d0db08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 240903c1f3335752986972131b17a27ed40bb3a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885035"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073807"
 ---
 # <a name="how-to-set-custom-permissions-for-a-clickonce-application"></a>如何：设置 ClickOnce 应用程序的自定义权限
 可以部署对 Internet 或本地 Intranet 区域使用默认权限的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序。 或者，可以为应用程序所需的特定权限创建自定义区域。 可以通过在“项目设计器”  的“安全” 页上自定义安全权限来执行此操作。
@@ -31,7 +32,7 @@ ms.locfileid: "99885035"
 
 1. 在“解决方案资源管理器” 中选择了项目的情况下，在“项目”  菜单上单击“属性” 。
 
-2. 单击 **“安全”** 选项卡。
+2. 单击“安全”选项卡。 
 
 3. 选中“启用 ClickOnce 安全设置”  复选框。
 
@@ -50,6 +51,6 @@ ms.locfileid: "99885035"
     > [!NOTE]
     > 可以使用权限集的 `ToXml` 方法为应用程序清单生成 XML 代码。 例如，若要为 <xref:System.Security.Permissions.EnvironmentPermission> 权限集生成 XML，请调用 <xref:System.Security.Permissions.EnvironmentPermission.ToXml%2A> 方法。
 
-## <a name="see-also"></a>另请参阅
-- [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
+## <a name="see-also"></a>请参阅
+- [保护ClickOnce应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)

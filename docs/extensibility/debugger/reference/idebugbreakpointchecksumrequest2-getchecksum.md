@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3b338cacbe3228aa48dc89b632eecaab6ce3fa02bfe90ac6af2a82b182a0071f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad0c8a501b654bbe62c5fb86dc974b940e6d321d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342526"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072676"
 ---
 # <a name="idebugbreakpointchecksumrequest2getchecksum"></a>IDebugBreakpointChecksumRequest2::GetChecksum
 根据要使用的校验和算法的唯一标识符，为断点请求检索文档校验和。

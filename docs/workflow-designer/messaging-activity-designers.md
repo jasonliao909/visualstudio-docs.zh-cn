@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 0b4866d0ad11aef18e2e8e2975908893d8e879966e9530a200d8a9a300fd62f3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 92228687c5158a4f0bd896090a1aa349686b7074
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121383737"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037897"
 ---
 # <a name="messaging-activity-designers"></a>消息传递活动设计器
 

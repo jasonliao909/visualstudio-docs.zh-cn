@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6412e27386ac0744ecaae607d83c7297900f464cd9ff843983019331ca6f17db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d57979e3913f9bfbfd4b782574de012b3f8523bf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375619"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086427"
 ---
 # <a name="using-the-automation-model"></a>使用自动化模型
 将 VSPackage 连接到自动化后，可以通过在 对象上调用 方法来获取属性和方法，并传递表示要检索 <xref:EnvDTE.DTEClass.GetObject%2A> <xref:EnvDTE._DTE> 的对象的字符串。
@@ -74,5 +74,5 @@ Next
 
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:EnvDTE.DTEClass.GetObject%2A>

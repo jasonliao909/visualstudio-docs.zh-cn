@@ -1,6 +1,6 @@
 ---
 description: 指示整个文档已销毁。
-title: IDebugDocumentTextEvents2：： onDestroy |Microsoft Docs
+title: IDebugDocumentTextEvents2：：onDestroy |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 60e4689c-c899-4c14-9d18-96393b741e1f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 011be7f08f6af124dd78e082ce5cd0d38afe982b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 4ab0b9a7e0812bd4091d43057e47fd87f2b4daae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066290"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119394"
 ---
 # <a name="idebugdocumenttextevents2ondestroy"></a>IDebugDocumentTextEvents2::onDestroy
 指示整个文档已销毁。
@@ -39,7 +40,7 @@ int onDestroy();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)

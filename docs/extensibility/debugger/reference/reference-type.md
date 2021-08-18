@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 10348f1b5913fb8d01f0b45f30e66854325af72b271aa39546c22ca752a15f0c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dadd8d9b66e2d26c6ec60a34f0af0ebad596a16e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377205"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050489"
 ---
 # <a name="reference_type"></a>REFERENCE_TYPE
 指定引用类型。
@@ -46,22 +46,22 @@ public enum enum_REFERENCE_TYPE {
 
 ## <a name="fields"></a>字段
  `REF_TYPE_WEAK`\
- 指定弱引用。 不能与 结合使用 `REF_TYPE_STRONG` 。
+ 指定弱引用。 不能与组合 `REF_TYPE_STRONG` 。
 
  `REF_TYPE_STRONG`\
- 指定强引用。 不能与 结合使用 `REF_TYPE_WEAK` 。
+ 指定强引用。 不能与组合 `REF_TYPE_WEAK` 。
 
 ## <a name="remarks"></a>备注
- 用作 `dwRefType` 结构DEBUG_REFERENCE_INFO成员。 [](../../../extensibility/debugger/reference/debug-reference-info.md)
+ 用作 `dwRefType` [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构的成员。
 
  作为参数传递给 [SetReferenceType](../../../extensibility/debugger/reference/idebugreference2-setreferencetype.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
