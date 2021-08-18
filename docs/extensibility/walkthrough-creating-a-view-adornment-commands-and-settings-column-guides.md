@@ -1,6 +1,6 @@
 ---
 title: 创建视图修饰、命令和设置 |Microsoft Docs
-description: 了解如何使用本演练将 Visual Studio 代码编辑器与列参考线一起扩展。
+description: 了解如何使用此演练Visual Studio使用列指南扩展代码编辑器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,67 +11,67 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0ae56da8cc30e40048fd454b2f99105d4dcce2dbd9d97e679bfca5be4d4f3b06
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 91885ed680e68770b73c8e6fcd7d131ee02814f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121234819"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109742"
 ---
-# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练：创建 "视图修饰"、"命令" 和 "设置" ("列参考线") 
-可以通过命令和视图效果来扩展 Visual Studio 文本/代码编辑器。 本文介绍了如何开始使用常见的扩展功能（列指南）。 列参考线是在文本编辑器的视图上绘制的细线，可帮助您将代码管理到特定列宽。 具体而言，格式代码对于包含在文档、博客文章或 bug 报表中的示例非常重要。
+# <a name="walkthrough-create-a-view-adornment-commands-and-settings-column-guides"></a>演练：使用列指南创建视图修饰、命令 (设置) 
+可以使用命令和Visual Studio扩展文本/代码编辑器。 本文演示如何开始使用常用扩展功能列指南。 列指南是文本编辑器视图上绘制的浅色线条，可帮助你管理特定列宽的代码。 具体而言，格式化代码对于包括在文档、博客文章或 bug 报告中的示例非常重要。
 
 本演练中的操作：
 - 创建 VSIX 项目
 - 添加编辑器视图修饰
-- 添加对保存和获取设置的支持 (在何处绘制列参考线及其颜色) 
-- 添加/删除列参考线 (的命令，更改其颜色) 
-- 将命令放在 "编辑" 菜单和文本文档上下文菜单上
-- 添加了对从 "Visual Studio 命令" 窗口调用命令的支持
+- 添加了对保存和获取设置的支持 (在何处绘制列指南及其颜色) 
+- 添加命令 (添加/删除列指南，更改其颜色) 
+- 将命令放在"编辑"菜单和文本文档上下文菜单上
+- 添加对从命令窗口调用Visual Studio的支持
 
-  您可以使用此 Visual Studio 库[扩展](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)来尝试使用列指南功能的版本。
+  可以使用此库扩展 来试用Visual Studio指南[功能的版本](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
 
   > [!NOTE]
-  > 在本演练中，您将大量代码粘贴到 Visual Studio 扩展模板生成的几个文件中。 但在本演练中，我们将在与其他扩展示例一起介绍 GitHub 的完整解决方案。 完成的代码略有不同，因为它具有真实的命令图标而不是使用 generictemplate 的图标。
+  > 本演练将大量代码粘贴到扩展模板生成的Visual Studio文件中。 但是，本演练很快将参考一个已完成的解决方案，GitHub其他扩展示例。 完成的代码略有不同，因为它具有真正的命令图标，而不是使用泛型模板图标。
 
 ## <a name="get-started"></a>入门
-从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+从 2015 Visual Studio开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
 ## <a name="set-up-the-solution"></a>设置解决方案
-首先，创建一个 VSIX 项目，添加一个编辑器视图修饰，然后添加一个命令 (，它将 VSPackage 命令) 。 基本体系结构如下所示：
-- 有一个创建每个视图的对象的文本视图创建侦听器 `ColumnGuideAdornment` 。 此对象侦听有关视图更改或设置更改、更新或重绘列参考线的事件（如有必要）。
-- 有一个 `GuidesSettingsManager` 用于处理从 Visual Studio 设置存储进行读取和写入的。 设置管理器还具有用于更新设置的操作，这些设置支持用户命令 (添加列、删除列、更改颜色) 。
-- 如果你有用户命令，则有一个 VSIP 包是必需的，但它只是用于初始化命令实现对象的样板代码。
-- 有一个 `ColumnGuideCommands` 对象运行用户命令并挂钩 *.vsct* 文件中声明的命令的命令处理程序。
+首先，创建 VSIX 项目，添加编辑器视图修饰，然后添加命令 (添加 VSPackage 以拥有命令) 。 基本体系结构如下所示：
+- 你有一个文本视图创建侦听器，用于为每个 `ColumnGuideAdornment` 视图创建对象。 此对象侦听有关视图更改或设置更改、更新或重绘列指南的事件（如有必要）。
+- 有一个 `GuidesSettingsManager` ，用于处理从 Visual Studio 存储进行读取和写入。 设置管理器还具有用于更新支持用户命令的设置的操作， (列、删除列、更改颜色) 。
+- 如果有用户命令，则有必要使用 VSIP 包，但它只是初始化命令实现对象的样板代码。
+- 有一个 `ColumnGuideCommands` 对象运行用户命令，并挂钩 *.vsct* 文件中声明的命令的命令处理程序。
 
-  **VSIX**。 使用 **File &#124; New ...** "命令创建项目。 在左侧导航窗格中选择 " **c #** " 下的 "**扩展性**" 节点，然后在右窗格中选择 " **VSIX Project** "。 输入名称 **ColumnGuides** ，并选择 **"确定"** 以创建项目。
+  **VSIX**。 使用 **"&#124;新建..."** 命令创建项目。 在左侧 **导航窗格中的****"C#"** 下选择"扩展性"节点，然后选择 **Project窗格中的 VSIX** 扩展节点。 输入名称 **ColumnGuides，然后选择****"确定**"以创建项目。
 
-  **查看修饰**。 在解决方案资源管理器中，按项目节点上的右指针按钮。 选择 " **添加 &#124; 新项 ...** " 命令，以添加新的视图修饰项。 选择左侧导航窗格中的 " **扩展性 &#124; 编辑器** "，然后在右窗格中选择 " **编辑视口修饰** "。 输入名称 **ColumnGuideAdornment** 作为项名称，然后选择 " **添加** " 以添加该名称。
+  **查看装饰**。 按项目节点上的右指针按钮解决方案资源管理器。 选择" **添加新&#124;..."** 命令以添加新的视图修饰项。 在 **左侧导航&#124;** 选择"扩展性""编辑器"，然后选择右侧窗格中的" **编辑器视区** 修饰"。 输入名称 **ColumnGuideAdornment** 作为项名称，然后选择" **添加** "以添加它。
 
-  你可以看到此项模板将两个文件添加到了项目 (和引用，等等) ： **ColumnGuideAdornment** 和 **ColumnGuideAdornmentTextViewCreationListener**。 模板在视图上绘制一个紫色矩形。 在下一部分中，你将在视图创建侦听器中更改几行并替换 **ColumnGuideAdornment** 的内容。
+  可以看到，此项模板向项目 (添加了两个文件以及引用等 **) ：ColumnGuideAdornment.cs** 和 **ColumnGuideAdornmentTextViewCreationListener.cs**。 模板在视图上绘制紫色矩形。 下一部分将更改视图创建侦听器中的几行，并替换 **ColumnGuideAdornment.cs 的内容**。
 
-  **命令**。 在 **解决方案资源管理器** 中，按项目节点上的右指针按钮。 选择 " **添加 &#124; 新项 ...** " 命令，以添加新的视图修饰项。 选择左侧导航窗格中的 " **扩展性 &#124; VSPackage** ，然后在右窗格中选择" **自定义命令** "。 输入名称 **ColumnGuideCommands** 作为项名称，然后选择 " **添加**"。 除了多个引用外，添加命令和包还添加了 **ColumnGuideCommands**、 **ColumnGuideCommandsPackage** 和 **ColumnGuideCommandsPackage。** 在下一部分中，将替换第一个和最后一个文件的内容来定义和实现这些命令。
+  **命令**。 在 **解决方案资源管理器** 中，按项目节点上的右指针按钮。 选择" **添加新&#124;..."** 命令以添加新的视图修饰项。 在 **左侧导航&#124;中选择"扩展性""VSPackage"，** 然后选择右侧 **窗格中** 的"自定义命令"。 输入名称 **ColumnGuideCommands** 作为项名称，然后选择"添加 **"。** 除了多个引用，添加命令和包还添加了 ColumnGuideCommands.cs、ColumnGuideCommandsPackage.cs 和 **ColumnGuideCommandsPackage.vsct**。   在下面的部分中，将替换第一个文件和最后一个文件的内容，以定义和实现命令。
 
 ## <a name="set-up-the-text-view-creation-listener"></a>设置文本视图创建侦听器
-在编辑器中打开 *ColumnGuideAdornmentTextViewCreationListener* 。 每当 Visual Studio 创建文本视图时，此代码就实现了一个处理程序。 有一些属性可控制调用处理程序的时间，具体取决于视图的特征。
+在 *编辑器中打开 ColumnGuideAdornmentTextViewCreationListener.cs。* 每当用户创建文本视图时，此代码Visual Studio处理程序。 有一些属性可控制何时调用处理程序，具体取决于视图的特征。
 
-此代码还必须声明一个修饰层。 当编辑器更新视图时，它将获取视图的修饰层以及获取修饰元素的。 您可以声明您的层相对于具有属性的其他层的顺序。 替换以下行：
+代码还必须声明装饰层。 当编辑器更新视图时，它会获取视图的装饰层，以及从 获取装饰元素的 修饰层。 可以使用属性声明层相对于其他层的顺序。 替换以下行：
 
 ```csharp
 [Order(After = PredefinedAdornmentLayers.Caret)]
 ```
 
-以下两行：
+这两行代码：
 
 ```csharp
 [Order(Before = PredefinedAdornmentLayers.Text)]
 [TextViewRole(PredefinedTextViewRoles.Document)]
 ```
 
-替换的行位于声明修饰层的一组属性中。 您更改的第一行只更改列参考线出现的位置。 在视图中的文本之前绘制行 "之前"，这意味着它们显示在文本的后面或下方。 第二行声明列参考装饰适用于适合您的文档概念的文本实体，但您可以声明修饰，例如仅适用于可编辑的文本。 [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)中提供了更多信息
+替换的行位于声明装饰层的一组属性中。 更改的第一行只会更改列指南行的显示位置。 在视图中"之前"绘制文本行意味着它们显示在文本后面或下方。 第二行声明列指南修饰适用于符合文档概念的文本实体，但你可以声明修饰，例如，只能用于可编辑文本。 语言服务和编辑器扩展 [点中提供详细信息](../extensibility/language-service-and-editor-extension-points.md)
 
 ## <a name="implement-the-settings-manager"></a>实现设置管理器
-将 *GuidesSettingsManager* 的内容替换为以下代码 (如下所述) ：
+将 *GuidesSettingsManager.cs* 的内容替换为以下 (说明) ：
 
 ```csharp
 using Microsoft.VisualStudio.Settings;
@@ -322,32 +322,32 @@ namespace ColumnGuides
 
 ```
 
-此代码的大部分创建并分析设置格式： "RGB (\<int> 、 \<int> \<int>) \<int> 、 \<int> ..."。  末尾的整数是要列参考线的基于1的列。 列参考线扩展在单个设置值字符串中捕获其所有设置。
+大多数此代码创建和分析设置格式："RGB (\<int> \<int> 、、) \<int> \<int> \<int> 、、..."。  末尾的整数是需要列指南的从 1 开始列。 列指南扩展在单个设置值字符串中捕获其所有设置。
 
-代码有一些值得注意的部分。 下面的代码行获取设置存储的 Visual Studio 托管包装器。 大多数情况下，这会在 Windows 注册表上进行抽象，但此 API 独立于存储机制。
+代码的某些部分值得突出显示。 以下代码行获取Visual Studio存储的托管包装器。 大多数情况下，这会抽象化Windows注册表，但此 API 独立于存储机制。
 
 ```csharp
 internal static SettingsManager VsManagedSettingsManager =
     new ShellSettingsManager(ServiceProvider.GlobalProvider);
 ```
 
-Visual Studio 设置存储使用类别标识符和设置标识符来唯一标识所有设置：
+该Visual Studio设置存储使用类别标识符和设置标识符来唯一标识所有设置：
 
 ```csharp
 private const string _collectionSettingsName = "Text Editor";
 private const string _settingName = "Guides";
 ```
 
-您不必将 `"Text Editor"` 用作类别名称。 你可以选择你喜欢的任何内容。
+不需要使用 作为 `"Text Editor"` 类别名称。 可以选取任何喜欢的。
 
-前几个函数是更改设置的入口点。 它们检查高级约束，如允许的最大指南数。  然后，它们调用 `WriteSettings` ，其中组合了设置字符串并设置属性 `GuideLinesConfiguration` 。 设置此属性会将设置值保存到 Visual Studio 设置存储中，并激发 `SettingsChanged` 事件以更新所有 `ColumnGuideAdornment` 对象，每个对象都与文本视图关联。
+前几个函数是更改设置的入口点。 它们检查高级约束，例如允许的最大指南数。  然后，调用 `WriteSettings` ，它组成设置字符串并设置属性 `GuideLinesConfiguration` 。 设置此属性会将设置值保存到Visual Studio存储中，并触发 事件以更新所有对象，每个对象都与文本 `SettingsChanged` `ColumnGuideAdornment` 视图相关联。
 
-有一些入口点函数，如 `CanAddGuideline` ，用于实现更改设置的命令。 当 Visual Studio 显示菜单时，它会查询命令实现，以查看该命令当前是否已启用、其名称是什么等。  下面你将了解如何为命令实现挂接这些入口点。 有关命令的详细信息，请参阅 [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)。
+有几个入口点函数（如 ）用于 `CanAddGuideline` 实现更改设置的命令。 当Visual Studio菜单时，它会查询命令实现，以查看命令当前是否已启用、其名称如何等。  下面将了解如何挂接命令实现中的这些入口点。 有关命令详细信息，请参阅扩展 [菜单和命令](../extensibility/extending-menus-and-commands.md)。
 
 ## <a name="implement-the-columnguideadornment-class"></a>实现 ColumnGuideAdornment 类
-`ColumnGuideAdornment`为每个可具有修饰的文本视图实例化类。 此类侦听有关视图更改或设置更改的事件，以及根据需要更新或重绘列参考线的相关事件。
+对于 `ColumnGuideAdornment` 可以具有修饰的每个文本视图，将实例化 类。 此类侦听有关视图更改或设置更改的事件，并在必要时侦听更新或重绘列指南。
 
-将 *ColumnGuideAdornment* 的内容替换为以下代码 (如下所述) ：
+将 *ColumnGuideAdornment.cs* 的内容替换为以下 (代码) ：
 
 ```csharp
 using System;
@@ -489,33 +489,33 @@ namespace ColumnGuides
 }
 ```
 
-此类的实例保存到关联的 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> 上，并在 `Line` 视图中绘制对象的列表。
+此类的实例保留视图上绘制的关联的 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextView> `Line` 和 对象的列表。
 
-`ColumnGuideAdornmentTextViewCreationListener`当 Visual Studio 创建新视图) 创建列参考线对象时， (从调用构造函数 `Line` 。  构造函数还为 `SettingsChanged` `GuidesSettingsManager`) 和视图事件和中定义的 (事件添加处理 `LayoutChanged` 程序 `Closed` 。
+构造函数 (创建列Visual Studio对象时从 `ColumnGuideAdornmentTextViewCreationListener`) 调用 `Line` 。  构造函数还添加事件处理程序 (在) `SettingsChanged` `GuidesSettingsManager` 视图事件 和 中 `LayoutChanged` 定义 `Closed` 。
 
-`LayoutChanged`由于视图中有多种类型的更改（包括 Visual Studio 创建视图时），事件激发。 `OnViewLayoutChanged`要执行的处理程序调用 `AddGuidelinesToAdornmentLayer` 。 中的代码 `OnViewLayoutChanged` 确定是否需要根据更改（如字体大小更改、查看装订线、水平滚动等）来更新行位置。 中的代码 `UpdatePositions` 会导致在字符行或文本行中的文本列之后绘制参考线。
+`LayoutChanged`事件由于视图中的多种更改而触发，包括Visual Studio视图时。 处理程序 `OnViewLayoutChanged` 调用 `AddGuidelinesToAdornmentLayer` 以执行。 中的代码根据字号更改、视图滚动条、水平滚动等更改确定是否需要 `OnViewLayoutChanged` 更新行位置。 中的代码会导致参考线在字符之间绘制，或绘制在文本行中指定字符偏移量中的文本 `UpdatePositions` 列之后。
 
-只要设置更改， `SettingsChanged` 函数就会将所有对象重新创建为 `Line` 新的设置。 设置行位置后，代码 `Line` 从修饰层中删除所有以前的对象 `ColumnGuideAdornment` 并添加新的对象。
+每当设置更改 `SettingsChanged` 时，函数只需使用 `Line` 任何新设置重新创建所有对象。 设置行位置后，代码会从装饰层中删除所有以前的 `Line` 对象， `ColumnGuideAdornment` 并添加新对象。
 
-## <a name="define-the-commands-menus-and-menu-placements"></a>定义命令、菜单和菜单放置
-声明命令和菜单、将命令组或菜单组放在各种其他菜单上以及挂钩命令处理程序可能有很多。 本演练强调了命令在此扩展中的工作方式，但有关更深入的信息，请参阅 [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)。
+## <a name="define-the-commands-menus-and-menu-placements"></a>定义命令、菜单和菜单位置
+声明命令和菜单、将命令组或菜单放置在各种其他菜单上以及挂接命令处理程序可能有很多。 本演练重点介绍命令在此扩展中如何工作，但有关更深入的信息，请参阅 [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)。
 
 ### <a name="introduction-to-the-code"></a>代码简介
-列参考线扩展显示声明一组命令 (添加列、删除列、更改线条颜色) ，然后将该组放置在编辑器上下文菜单的子菜单上。  "列参考线扩展" 还会将命令添加到主 " **编辑** " 菜单中，但会使其不可见，并在下面讨论为常见模式。
+列指南扩展显示声明一组命令，这些命令属于 (添加列、删除列、更改行) ，然后将该组放置在编辑器上下文菜单的子菜单上。  列指南扩展还会将命令添加到主"编辑 **"** 菜单，但使命令不可见，下面将介绍为常见模式。
 
-命令实现包含三个部分： ColumnGuideCommandsPackage、ColumnGuideCommandsPackage 和 ColumnGuideCommands。 模板生成的代码会将一个命令放在 " **工具** " 菜单中，该菜单将打开一个对话框作为实现。 可以查看在 *.vsct* 和 *ColumnGuideCommands* 文件中的实现方式，因为它非常简单。 替换以下文件中的代码。
+命令实现有三个部分：ColumnGuideCommandsPackage.cs、ColumnGuideCommandsPackage.vsct 和 ColumnGuideCommands.cs。 模板生成的代码在"工具"菜单上添加一个命令，该命令将弹出一个对话框作为实现。 你可以查看在 *.vsct* 和 *ColumnGuideCommands.cs* 文件中实现的方式，因为它非常简单。 替换以下这些文件中的代码。
 
-包代码包含 Visual Studio 发现扩展提供命令和查找命令放置位置所需的样本声明。 当包进行初始化时，它将实例化命令实现类。 有关与命令相关的包的详细信息，请参阅 [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)。
+包代码包含发现扩展提供命令Visual Studio查找命令放置位置所需的样本声明。 当包初始化时，它会实例化命令实现类。 有关与命令相关的包详细信息，请参阅 [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)。
 
-### <a name="a-common-commands-pattern"></a>常见的命令模式
-列参考线扩展中的命令是 Visual Studio 中非常常见的模式的示例。 你将相关命令放在一个组中，并将该组放在主菜单上，通常 `<CommandFlag>CommandWellOnly</CommandFlag>` 将 "" 设置为使命令不可见。  将命令放在主菜单 (如 **edit**) 为它们提供了很好的名称 (如 **AddColumnGuide**) ，这对于在 **工具选项** 中重新分配键绑定时查找命令很有用。 在从 **命令窗口** 中调用命令时，此功能也非常有用。
+### <a name="a-common-commands-pattern"></a>常见命令模式
+列指南扩展中的命令是列指南中非常常见的模式Visual Studio。 将相关命令放在组中，将该组放在主菜单上，通常将""设置为 `<CommandFlag>CommandWellOnly</CommandFlag>` 使命令不可见。  将命令放在主菜单上 (如"编辑) "会为它们提供很好的名称 (例如 **Edit.AddColumnGuide**) ，这可用于在"工具选项"中重新分配键绑定时查找 **命令。**  从命令窗口 调用命令时，它对于完成 **也很有用**。
 
-然后，将命令组添加到希望用户使用这些命令的上下文菜单或子菜单中。 Visual Studio 视为 `CommandWellOnly` 仅用于主菜单的不可见标志。 当你在上下文菜单或子菜单上放置相同的一组命令时，这些命令将可见。
+然后，将命令组添加到希望用户使用命令的上下文菜单或子菜单。 Visual Studio仅 `CommandWellOnly` 视为主菜单的不显示标志。 将同一组命令放在上下文菜单或子菜单上时，这些命令可见。
 
-作为常见模式的一部分，列参考线扩展会创建一个包含单个子菜单的第二个组。 子菜单又包含具有四列指导命令的第一个组。 保存子菜单的第二个组是放置在各种上下文菜单上的可重复使用的资产，它们将子菜单放置在这些上下文菜单上。
+作为通用模式的一部分，列指南扩展将创建包含单个子菜单的第二个组。 子菜单又包含包含四列指南命令的第一个组。 保存子菜单的第二个组是放置于各种上下文菜单上的可重用资产，该资源将子菜单置于这些上下文菜单上。
 
-### <a name="the-vsct-file"></a>.Vsct 文件
-*.Vsct* 文件将声明命令和图标，以及图标等。 将 *.vsct* 文件的内容替换为以下代码 (如下所述) ：
+### <a name="the-vsct-file"></a>.vsct 文件
+*.vsct* 文件声明命令及其位置，以及图标等。 将 *.vsct* 文件的内容替换为以下代码 (以下) ：
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -751,22 +751,22 @@ namespace ColumnGuides
 
 ```
 
-**Guid**。 为了 Visual Studio 查找你的命令处理程序并调用它们，你需要确保从项目项模板 (生成的 *ColumnGuideCommandsPackage* 文件中声明的包 guid) 与从上面) 复制的 .vsct (文件中声明的包 guid 相匹配 *。* 如果重复使用此示例代码，则应确保使用不同的 GUID，以便不会与可能已复制此代码的任何其他用户冲突。
+**GUIDS**。 若要Visual Studio命令处理程序并调用它们，需要确保在从项目项模板) 生成的 *ColumnGuideCommandsPackage.cs* 文件 (中声明的包 GUID 与从上述) 复制的 *.vsct* 文件 (中声明的包 GUID 相匹配。 如果重新使用此示例代码，应确保具有不同的 GUID，这样你将不会与可能复制了此代码的其他人发生冲突。
 
-在 *ColumnGuideCommandsPackage* 中找到此行，并从引号之间复制 GUID：
+在 *ColumnGuideCommandsPackage.cs* 中查找此行，并复制引号之间的 GUID：
 
 ```csharp
 public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 ```
 
-然后，将 GUID 粘贴到 *.vsct* 文件中，以便在声明中使用以下行 `Symbols` ：
+然后，将 GUID 粘贴 *到 .vsct* 文件中，以便声明中包含以下 `Symbols` 行：
 
 ```xml
 <GuidSymbol name="guidColumnGuideCommandsPkg"
             value="{ef726849-5447-4f73-8de5-01b9e930f7cd}" />
 ```
 
-对于你的扩展，命令集的 Guid 和位图映像文件应该是唯一的：
+对于扩展，命令集和位图图像文件的 GUID 也应是唯一的：
 
 ```xml
 <GuidSymbol name="guidColumnGuidesCommandSet"
@@ -774,13 +774,13 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 <GuidSymbol name="guidImages" value="{2C99F852-587C-43AF-AA2D-F605DE2E46EF}">
 ```
 
-但在本演练中，无需更改命令集和位图图像 Guid 即可使代码正常运行。 命令集 GUID 需要与 *ColumnGuideCommands* 文件中的声明匹配，但也会替换该文件的内容;因此，Guid 将匹配。
+但是，无需更改本演练中的命令集和位图图像 GUID 即可使代码正常工作。 命令集 GUID 需要匹配 *ColumnGuideCommands.cs* 文件中的声明，但也需要替换该文件的内容;因此，GUID 将匹配。
 
-*.Vsct* 文件中的其他 guid 标识向其添加列参考线命令的预先存在的菜单，因此它们永远不会发生更改。
+*.vsct* 文件的其他 GUID 标识将列指南命令添加到的预先存在的菜单，因此它们永远不会更改。
 
-**文件节**。 *.Vsct* 有三个外部部分：命令、放置和符号。 命令部分定义了命令组、菜单、按钮、菜单项和图标的位图。 位置部分声明了组在菜单上的位置或附加到预先存在的菜单的位置。 符号部分声明在 *.vsct* 文件中的其他位置使用的标识符，这使得 *.vsct* 代码更易于阅读，而不是在任何位置使用 guid 和十六进制数字。
+**文件部分**。 *.vsct* 有三个外部部分：命令、位置和符号。 命令部分定义命令组、菜单、按钮或菜单项以及图标的位图。 "放置"部分声明组在菜单上的位置或预先存在的菜单上的其他位置。 symbols 节声明 *.vsct* 文件中其他位置使用的标识符，这使得 *.vsct* 代码比所有位置都有 GUID 和十六进制数字更具可读性。
 
-**命令部分，组定义**。 命令部分首先定义命令组。 命令组是在菜单中看到的命令，这些命令在分隔组的灰色行中显示。 组还可以填充整个子菜单（如本示例所示），并且在这种情况下看不到灰色分隔行。 *.Vsct* 文件声明了两个组，即作为 `GuidesMenuItemsGroup` `IDM_VS_MENU_EDIT` 主 **编辑** 菜单 (的父级) 以及 `GuidesContextMenuGroup` `IDM_VS_CTXT_CODEWIN` (代码编辑器的上下文菜单) 中的父级。
+**"命令"部分，对定义进行分组**。 命令部分首先定义命令组。 命令组是菜单上看到的命令，这些命令的灰色线条略微隔开了组。 如本示例所示，组也可以填充整个子菜单，在这种情况下，看不到灰色分隔线。 *.vsct* 文件声明两个组，一个组是主"编辑"菜单 (的父级) 一个是 (代码编辑器上下文菜单 `GuidesMenuItemsGroup` `IDM_VS_MENU_EDIT`  `GuidesContextMenuGroup` `IDM_VS_CTXT_CODEWIN`) 。
 
 第二个组声明具有 `0x0600` 优先级：
 
@@ -789,21 +789,21 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
              priority="0x0600">
 ```
 
-其思路是将列参考线子菜单放置在您向其中添加子菜单组的任何上下文菜单的末尾。 但是，您不应假设您不知道最佳方法，而是强制子菜单始终使用优先级 `0xFFFF` 。 您必须对数字进行试验，才能看到子菜单位于放置它的上下文菜单上的位置。 在这种情况下， `0x0600` 足够高，将其放在菜单的末尾，就像你所看到的那样，但如果需要，它还会使其他人可以将其扩展设计为低于列参考线扩展。
+其思路是，将列指南子菜单放在要添加子菜单组的任何上下文菜单的末尾。 但是，不应假定你最了解 ，而是使用 的优先级强制子菜单始终为最后 `0xFFFF` 一个。 必须试验数字，以查看子菜单位于放置它的上下文菜单上的位置。 在这种情况下， 足够高，可以尽可能放在菜单的末尾，但它为其他人设计其扩展名留有空间，以低于列指南扩展名（如果需要）。 `0x0600`
 
-**命令部分，菜单定义**。 接下来，命令部分定义子菜单 `GuidesSubMenu` ，其父级为 `GuidesContextMenuGroup` 。 `GuidesContextMenuGroup`是添加到所有相关上下文菜单中的组。 在 "位置" 部分中，该代码会将具有四列参考线命令的组放在此子菜单中。
+**"命令"部分，菜单定义**。 接下来，命令部分定义子菜单 `GuidesSubMenu` ，其父级为 `GuidesContextMenuGroup` 。 `GuidesContextMenuGroup`是添加到所有相关上下文菜单的组。 在 placements 部分中，代码将包含四列指南命令的组放在此子菜单上。
 
-**命令部分，按钮定义**。 然后，"命令" 部分将定义作为四列参考线命令的菜单项或按钮。 `CommandWellOnly`上面所述的是，将命令置于主菜单上时不可见。  (添加参考线和删除指南) 两个菜单项按钮声明还具有 `AllowParams` 标志：
+**"命令"部分，按钮定义**。 然后，命令部分定义作为四列指南命令的菜单项或按钮。 `CommandWellOnly`（如上所述）表示命令在放置在主菜单上时不可见。 添加指南和删除 (的两个菜单项按钮) 也具有 `AllowParams` 标志：
 
 ```xml
 <CommandFlag>AllowParams</CommandFlag>
 ```
 
-此标志除了具有主菜单位置，还支持在 Visual Studio 调用命令处理程序时接收参数的命令。  如果用户从命令窗口运行命令，则会将参数传递给事件参数中的命令处理程序。
+此标志使 命令除了具有主菜单位置外，还可以在调用命令处理程序Visual Studio接收参数。  如果用户从命令窗口运行命令，则参数将传递到事件参数中的命令处理程序。
 
-**命令部分，位图定义**。 最后，命令部分声明用于命令的位图或图标。 本部分是一个简单的声明，用于标识项目资源，并列出已使用图标的从1开始的索引。 *.Vsct* 文件的符号部分声明用作索引的标识符的值。 本演练使用添加到项目的自定义命令项模板附带的位图条带。
+**命令节，位图定义**。 最后，命令部分声明用于命令的位图或图标。 本部分是一个简单的声明，用于标识项目资源并列出已用图标的基于一的索引。 *.vsct* 文件的 symbols 节声明用作索引的标识符的值。 本演练使用随添加到项目的自定义命令项模板一起提供的位图条。
 
-**放置部分**。 命令部分之后是放置部分。 第一种情况是，代码会将上面讨论的第一个组（包含四列指南命令）添加到显示命令的子菜单：
+**Placements 节**。 命令部分之后是 placements 节。 第一个字段是代码将上面讨论的第一个组添加到显示命令的子菜单中，该组包含四列指南命令：
 
 ```xml
 <CommandPlacement guid="guidColumnGuidesCommandSet" id="GuidesMenuItemsGroup"
@@ -812,14 +812,14 @@ public const string PackageGuidString = "ef726849-5447-4f73-8de5-01b9e930f7cd";
 </CommandPlacement>
 ```
 
-所有其他位置都将 `GuidesContextMenuGroup` 包含) 的 (添加 `GuidesSubMenu` 到其他编辑器上下文菜单中。 当代码声明时 `GuidesContextMenuGroup` ，它是代码编辑器上下文菜单的父级。 这就是为什么看不到代码编辑器上下文菜单的位置。
+所有其他位置都添加包含 (`GuidesContextMenuGroup` 编辑器上下文) `GuidesSubMenu` 的行。 当代码声明 `GuidesContextMenuGroup` 时，它是代码编辑器的上下文菜单的父级。 这就是看不到代码编辑器上下文菜单的位置的原因。
 
-**符号部分**。 如上所述，符号部分声明在 *.vsct* 文件中的其他地方使用的标识符，这使得 *.vsct* 代码更易于阅读，而不是在任何地方使用 guid 和十六进制数字。 本节中的重要事项是包 GUID 必须与包类中的声明一致。 而且，命令集 GUID 必须与命令实现类中的声明一致。
+**符号部分**。 如上所述，symbols 节声明 *.vsct* 文件中其他位置使用的标识符，这使得 *.vsct* 代码比所有位置都有 GUID 和十六进制数字更具可读性。 本部分的要点是包 GUID 必须与包类中的声明一致。 而且，命令集 GUID 必须与命令实现类中的声明一致。
 
 ## <a name="implement-the-commands"></a>实现命令
-*ColumnGuideCommands* 文件实现命令并挂钩处理程序。 当 Visual Studio 加载包并对其进行初始化时，包将对 `Initialize` 命令实现类调用。 命令初始化只是实例化类，并且构造函数与所有命令处理程序挂钩。
+*ColumnGuideCommands.cs* 文件实现命令并挂钩处理程序。 当Visual Studio加载并初始化包时，包将调用 `Initialize` 命令实现类。 命令初始化只是实例化 类，构造函数会挂接所有命令处理程序。
 
-将 *ColumnGuideCommands* 文件的内容替换为以下代码 (如下所述) ：
+将 *ColumnGuideCommands.cs* 文件的内容替换为以下 (说明) ：
 
 ```csharp
 using System;
@@ -1160,11 +1160,11 @@ namespace ColumnGuides
 
 ```
 
-**修复引用**。 此时缺少引用。 按下 "解决方案资源管理器中的" 引用 "节点上的右指针按钮。 选择 " **添加 ...** " 命令。 " **添加引用** " 对话框的右上角有一个搜索框。 输入 "editor" (没有双引号) 。 选择 **VisualStudio** 项 (必须选中该项左侧的框，而不只是选择项) ，然后选择 **"确定"** 以添加引用。
+**修复引用**。 此时缺少引用。 按"引用"节点上的右指针按钮解决方案资源管理器。 选择" **添加..."** 命令。 " **添加** 引用"对话框的右上角有一个搜索框。 输入不带双引号 ("editor") 。 选择 **"Microsoft.VisualStudio.Editor"** 项 (必须选中该项左侧的框，而不只是选择该项) 然后选择"确定"以添加引用。 
 
-**初始化**。  当包类进行初始化时，它会 `Initialize` 在命令实现类上调用。 `ColumnGuideCommands`初始化实例化类，并将类实例和包引用保存在类成员中。
+**初始化**。  当包类初始化时，它会对 `Initialize` 命令实现类调用 。 初始化 `ColumnGuideCommands` 实例化类，将类实例和包引用保存在类成员中。
 
-让我们从类构造函数中查看一个命令处理程序挂钩：
+让我们看看类构造函数中的命令处理程序挂钩之一：
 
 ```csharp
 _addGuidelineCommand =
@@ -1175,15 +1175,15 @@ _addGuidelineCommand =
 
 ```
 
-你创建一个 `OleMenuCommand` 。 Visual Studio 使用 Microsoft Office 命令系统。 实例化时的关键参数 `OleMenuCommand` 是实现命令的函数 (`AddColumnGuideExecuted`) ，Visual Studio 显示带有命令 () 的菜单和命令 ID 时要调用的函数 `AddColumnGuideBeforeQueryStatus` 。 Visual studio 将在显示菜单上的命令之前调用查询状态函数，以便该命令可以使其自身不可见或灰显以显示菜单 (例如，如果没有选择) ，请禁用 **复制** ，更改其图标，甚至更改其名称 (例如，从 "添加内容" 以删除) 等内容。 命令 ID 必须与 *.vsct* 文件中声明的命令 id 匹配。 命令集和列参考线 add 命令的字符串在 *.vsct* 文件和 *ColumnGuideCommands* 之间必须匹配。
+创建 `OleMenuCommand` 。 Visual Studio使用 Microsoft Office 命令系统。 实例化 时的关键参数是实现命令 () 的函数、Visual Studio 显示包含命令 () 和命令 ID 的菜单时要调用的函数。 `OleMenuCommand` `AddColumnGuideExecuted` `AddColumnGuideBeforeQueryStatus` Visual Studio 在菜单上显示命令之前调用查询状态函数，以便该命令可以使自身不可见或灰显为菜单的特定显示 (例如，如果没有选择) ，则禁用复制、更改其图标，甚至更改其名称 (例如，从"添加内容"更改为"删除内容) "等。 命令 ID 必须与 *.vsct* 文件中声明的命令 ID 匹配。 命令集和列指南 add 命令的字符串必须在 *.vsct* 文件和 *ColumnGuideCommands.cs 之间匹配*。
 
-以下行提供有关用户通过 "命令" 窗口调用命令的帮助 (下面) 所述：
+以下行提供有关用户何时通过命令窗口调用命令的帮助 (下面所述) ：
 
 ```csharp
 _addGuidelineCommand.ParametersDescription = "<column>";
 ```
 
- **查询状态**。 查询状态函数 `AddColumnGuideBeforeQueryStatus` 和 `RemoveColumnGuideBeforeQueryStatus` 检查某些设置 (例如，最大参考线数或最大列数) 如果有要删除的列指南。 如果条件正确，它们会启用命令。  查询状态函数需要高效，因为每次 Visual Studio 显示菜单和菜单上的每个命令时它们都运行。
+ **查询状态**。 查询状态函数和检查某些设置 (如最大参考线数或最大列数) 或者是否有要删除的 `AddColumnGuideBeforeQueryStatus` `RemoveColumnGuideBeforeQueryStatus` 列指南。 如果条件正确，则启用命令。  查询状态函数需要高效，因为它们每次运行时Visual Studio菜单和菜单上的每个命令。
 
  **AddColumnGuideExecuted 函数**。 添加指南的有趣部分是找出当前编辑器视图和点线位置。  首先，此函数调用 ，用于检查命令处理程序的事件参数中是否有用户提供的参数，如果没有 ，该函数将检查 `GetApplicableColumn` 编辑器的视图：
 
@@ -1333,16 +1333,16 @@ private int GetApplicableColumn(EventArgs e)
 ```
 
 ## <a name="try-your-extension"></a>试用扩展
-现在可以按 **F5** 执行列指南扩展。 打开文本文件，并使用编辑器的上下文菜单添加指南行、删除它们并更改其颜色。 单击文本 (空格未通过行尾) 添加列指南，或者编辑器将其添加到行的最后一列。 如果使用命令窗口并使用参数调用命令，可以在任意位置添加列指南。
+现在可以按 **F5** 执行列指南扩展。 打开文本文件，并使用编辑器的上下文菜单添加指南行、删除它们并更改其颜色。 单击文本" (未通过行尾的空格) 添加列指南，或者编辑器将其添加到行的最后一列。 如果使用命令窗口并使用参数调用命令，可以在任意位置添加列指南。
 
-如果要尝试不同的命令放置、更改名称、更改图标等，并且对在菜单中显示最新代码的 Visual Studio 存在任何问题，可以重置正在调试的实验性配置单元。 打开"开始 **Windows菜单，** 然后键入"重置"。 查找并运行命令"重置下一Visual Studio **实验实例"。** 此命令将清理所有扩展组件的实验性注册表配置单元。 它不会从组件中清除设置，因此，当代码下次启动时读取设置存储Visual Studio关闭实验性配置单元时，你拥有的任何指南仍然存在。
+如果要尝试不同的命令放置、更改名称、更改图标等，并且对在菜单中显示最新代码的 Visual Studio 存在任何问题，可以重置正在调试的实验性配置单元。 打开"开始 **Windows，然后** 键入"重置"。 查找并运行命令"重置下一Visual Studio **实验实例"。** 此命令将清理所有扩展组件的实验性注册表配置单元。 它不会从组件中清除设置，因此，当你的代码下次启动时读取设置存储时，关闭Visual Studio实验性配置单元时，你拥有的任何指南都仍然存在。
 
 ## <a name="finished-code-project"></a>已完成的代码项目
-即将有一个GitHub扩展Visual Studio，已完成的项目将在那里。 本文将更新为在发生这种情况时指向该位置。 已完成的示例项目可能具有不同的 guid，并且命令图标具有不同的位图条。
+即将有一个GitHub扩展性Visual Studio项目，已完成的项目将在那里。 本文将更新为在发生这种情况时指向该位置。 已完成的示例项目可能具有不同的 guid，并且命令图标具有不同的位图条。
 
-可以使用此库扩展 来试用列Visual Studio功能[的版本](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
+可以使用此库扩展 来试用Visual Studio指南[功能的版本](https://marketplace.visualstudio.com/items?itemName=PaulHarrington.EditorGuidelines)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [在编辑器中](../extensibility/inside-the-editor.md)
 - [扩展编辑器和语言服务](../extensibility/extending-the-editor-and-language-services.md)
 - [语言服务和编辑器扩展点](../extensibility/language-service-and-editor-extension-points.md)

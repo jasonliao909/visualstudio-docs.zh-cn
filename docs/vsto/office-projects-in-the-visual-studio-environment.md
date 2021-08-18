@@ -1,6 +1,6 @@
 ---
 title: Office环境中Visual Studio项目
-description: 了解Microsoft Office项目的开发体验如何与项目中的其他类型的项目Visual Studio类似，例如 Windows Forms 项目。
+description: 了解Microsoft Office项目的开发体验如何与项目中的其他类型的项目Visual Studio类似，例如Windows窗体项目。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -44,12 +44,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cb57e55561db69f295bfef3aaad46103ce755e05e3e43ce79c6e5345f124aa52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1fb601543c6650fc87be15adcd7ffc2e689d575f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267645"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082850"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office环境中Visual Studio项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”** 中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。
@@ -69,12 +69,12 @@ ms.locfileid: "121267645"
 
 - 应用程序节点。 此节点的名称与宿主应用程序相同，例如 **“Word”**、 **“Excel”** 或 **“Outlook”**。 应用程序节点包含 ThisAddIn 代码文件。 它还提供 **“宿主项的命名空间”** 属性。 有关此属性的信息，请参阅项目[Office属性](../vsto/properties-in-office-projects.md)。
 
-- ThisAddIn 代码文件。 此文件包含 VSTO 外接程序的 `ThisAddIn` 生成类。 有关此类的信息，请参阅 Program [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
+- ThisAddIn 代码文件。 此文件包含 VSTO 外接程序的 `ThisAddIn` 生成类。 有关此类的信息，请参阅外接程序[VSTO程序](../vsto/programming-vsto-add-ins.md)。
 
 - 你不打算直接编辑的隐藏项目文件。 有关详细信息，请参阅隐藏 [项目文件](#hiddenfiles)。
 
 ### <a name="temporary-certificates"></a>临时证书
- Office 项目还包括名为 *Project Name* _TemporaryKey.pfx 的临时证书。 此证书用于在开发期间对项目的应用程序和部署清单进行签名。 有关详细信息，请参阅向解决方案[授予Office和安全](../vsto/granting-trust-to-office-solutions.md)[Office解决方案](../vsto/securing-office-solutions.md)。
+ Office 项目还包括名为 *Project Name* _TemporaryKey.pfx 的临时证书。 此证书用于在开发期间对项目的应用程序和部署清单进行签名。 有关详细信息，请参阅向解决方案授予[Office和安全](../vsto/granting-trust-to-office-solutions.md)Office[解决方案](../vsto/securing-office-solutions.md)。
 
 ### <a name="hidden-project-files"></a><a name="hiddenfiles"></a> 隐藏项目文件
  默认情况下，某些项目文件是隐藏的。 这些文件由 Visual Studio 生成，它们因项目类型而异。 若要显示隐藏文件，请在 **“解决方案资源管理器”** 中，单击 **“显示所有文件”**。
@@ -108,12 +108,12 @@ ms.locfileid: "121267645"
 ### <a name="design-mode-vs-runtime-mode"></a>设计模式与运行时模式
  当文档在 Visual Studio 环境中打开时，它始终处于设计模式 。 某些任务（例如将宿主控件拖动到文档图面）只能在设计模式下执行。
 
- 若要在运行时模式下 *查看文档，* 必须打开应用程序，并打开 Visual Studio。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。
+ 若要在运行时模式下 *查看文档*，必须打开应用程序，并打开 Visual Studio。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。
 
 ## <a name="code-editor"></a>代码编辑器
  通过代码编辑器，可以查看和修改解决方案中的可见代码文件。 这些文件包含定义解决方案行为的代码。
 
- 有关代码编辑器的信息，请参阅 [在代码和文本编辑器 中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)。 若要详细了解如何在项目中编写Office，请参阅在解决方案[中Office代码](../vsto/writing-code-in-office-solutions.md)。
+ 有关代码编辑器的信息，请参阅 [在代码和文本编辑器 中编写代码](../ide/writing-code-in-the-code-and-text-editor.md)。 若要详细了解如何在项目中编写Office，请参阅在解决方案 中[Office代码](../vsto/writing-code-in-office-solutions.md)。
 
 ## <a name="properties-window"></a>“属性”窗口
  **“属性”** 窗口显示 **“解决方案资源管理器”** 中选择的项目项的属性，以及设计器中选择的 UI 元素的属性，具体如文档级项目中的控件或文档的属性。 有些属性是特定于应用程序和文档的，而有些属性则是所有项目共有的。
@@ -121,7 +121,7 @@ ms.locfileid: "121267645"
 ## <a name="data-sources-window"></a>“数据源”窗口
  可以在文档级 Office 项目中使用 **“数据源”** 窗口将数据源拖到文档上，以及创建绑定到数据源的控件。 有关详细信息，请参阅[将控件绑定到](../data-tools/bind-controls-to-data-in-visual-studio.md)Visual Studio。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [设计和创建Office解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [Office项目模板概述](../vsto/office-project-templates-overview.md)

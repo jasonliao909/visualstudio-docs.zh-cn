@@ -1,6 +1,6 @@
 ---
 title: 演练：使用 Windows 窗体收集数据
-description: 从 Microsoft Excel 的文档级自定义项打开 Windows 窗体、从用户处收集信息并将该信息写入工作表单元格。
+description: 从用于 Microsoft Excel 的文档级自定义项打开 Windows 窗体，从用户那里收集信息，然后将该信息写入工作表单元格。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 62a49919522c5d4a88b6f4b6876b567c8d275dec
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 422fe752d75caad04023da2306428a2e26e82afd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107826416"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099355"
 ---
 # <a name="walkthrough-collect-data-by-using-a-windows-form"></a>演练：使用 Windows 窗体收集数据
   本演练演示如何从 Microsoft Office Excel 文档级自定义项打开 Windows 窗体、从用户处收集信息并将这些信息写入工作表单元格。
@@ -46,7 +47,7 @@ ms.locfileid: "107826416"
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 创建名为 **WinFormInput** 的 Excel 工作簿项目，然后在向导中选择“创建新文档”  。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 创建名为 **WinFormInput** 的 Excel 工作簿项目，然后在向导中选择“创建新文档”  。 有关详细信息，请参阅[如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
      Visual Studio 将在设计器中打开新的 Excel 工作簿，并将“WinFormInput”  项目添加到“解决方案资源管理器” 中。
 
@@ -64,7 +65,7 @@ ms.locfileid: "107826416"
 
      <xref:Microsoft.Office.Tools.Excel.NamedRange> 控件即会添加到 **A1** 单元格。 工作表上没有可见的指示，但选择 **A1** 单元格时， **formInput** 会显示在  “名称”框（左侧工作表的正上方）和  “属性”窗口中。
 
-## <a name="add-a-windows-form-to-the-project"></a>向项目添加 Windows 窗体
+## <a name="add-a-windows-form-to-the-project"></a>将 Windows 窗体添加到项目
  创建 Windows 窗体以向用户提供信息提示。
 
 ### <a name="to-add-a-windows-form"></a>添加 Windows 窗体
@@ -93,7 +94,7 @@ ms.locfileid: "107826416"
 2. 在 <xref:Microsoft.Office.Tools.Excel.Workbook.Open> 的 `ThisWorkbook`事件处理程序中，添加以下代码以声明窗体 `GetInputString` 的变量，然后显示窗体。
 
    > [!NOTE]
-   > 在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+   > 在 C# 中，必须如下方 <xref:Microsoft.Office.Tools.Excel.Workbook.Startup> 事件中所示添加事件处理程序。 有关创建事件处理程序的信息，请参阅[如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
 
     :::code language="csharp" source="../vsto/codesnippet/CSharp/WinFormInputCS/ThisWorkbook.cs" id="Snippet1":::
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/WinFormInput/ThisWorkbook.vb" id="Snippet1":::
@@ -134,11 +135,11 @@ ms.locfileid: "107826416"
 ## <a name="next-steps"></a>后续步骤
  本演练演示了显示 Windows 窗体和将数据传递到工作表的基础知识。 你可能想要执行的其他任务包括：
 
-- 在 Excel 工作簿或 Word 文档中使用 Windows 窗体控件。 有关详细信息，请参阅 [Office 文档中的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+- 在 Excel 工作簿或 Word 文档中使用 Windows 窗体控件。 有关详细信息，请参阅[Office 文档上的 Windows 窗体控件概述](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
-- 从文档级自定义项或 VSTO 外接程序修改 Microsoft Office 应用程序的用户界面。 有关详细信息，请参阅 [OFFICE UI 自定义](../vsto/office-ui-customization.md)。
+- 从文档级自定义项或 VSTO 外接程序修改 Microsoft Office 应用程序的用户界面。 有关详细信息，请参阅[Office UI 自定义](../vsto/office-ui-customization.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
 - [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)

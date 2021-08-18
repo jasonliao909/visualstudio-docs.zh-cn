@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b6d0ebd5b608fbcc2a1f93f1cf938701df13ef84d0f741fda107233836b797c4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2adea2605acb71969f369228d073ba4b13e53a46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111003"
 ---
 # <a name="idebuggenericfielddefinition"></a>IDebugGenericFieldDefinition
 表示托管代码泛型类型的字段定义。

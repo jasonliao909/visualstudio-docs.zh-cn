@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 60011ca0bec1b984a645960e3e55359e7dff7a00ad1956d07392c3d609b454d2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9f32d6d99545f1daed9aed2c927c7987fe95dcd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261133"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110301"
 ---
 # <a name="word-completion-in-a-legacy-language-service"></a>旧版语言服务中的文字完成
 单词完成填写部分类型的单词上缺少的字符。 如果只有一个可能的完成，则在输入完成字符时将完成单词。 如果部分单词匹配多个可能的完成，则会显示一个可能的完成列表。 完成字符可以是任何不用于标识符的字符。

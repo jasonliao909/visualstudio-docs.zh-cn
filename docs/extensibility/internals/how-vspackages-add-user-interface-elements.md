@@ -12,19 +12,20 @@ ms.assetid: abc5d9d9-b267-48a1-92ad-75fbf2f4c1b9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f1d01c2ed91a5f4aad55c196dfb2e689aeea288a
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8234183455083a05095acef1d73ad87917100660
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105086035"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063234"
 ---
 # <a name="how-vspackages-add-user-interface-elements"></a>Vspackage 如何添加用户界面元素
-VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏和工具窗口）添加到 Visual Studio 的用户界面。
+VSPackage 可以将用户界面 (UI) 元素（例如，菜单、工具栏和工具窗口）添加到通过 *.vsct* 文件 Visual Studio 的方式。
 
-可在 [Visual Studio 用户体验指南](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中找到 UI 元素的设计指南。
+可以按照[Visual Studio 的用户体验指南](../../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)查找 UI 元素的设计指南。
 
 ## <a name="the-visual-studio-command-table-architecture"></a>Visual Studio 命令表体系结构
 如上所述，命令表体系结构支持上述体系结构原则。 此命令表体系结构的抽象、数据结构和工具背后的原则如下：
@@ -35,10 +36,10 @@ VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏�
 
 - 每个项都有一个描述项的父项的位置。 一个项可以有多个父项，因此它可以出现在 UI 中的多个位置。
 
-每个命令都必须将组作为其父项，即使它是该组中唯一的子节点也是如此。 每个标准菜单还必须有一个父组。 工具栏和工具窗口充当其自身的父级。 组可以将主 Visual Studio 菜单栏或菜单、工具栏或工具窗口作为其父项。
+每个命令都必须将组作为其父项，即使它是该组中唯一的子节点也是如此。 每个标准菜单还必须有一个父组。 工具栏和工具窗口充当其自身的父级。 组可以将主 Visual Studio 菜单栏或任何菜单、工具栏或工具窗口作为其父项。
 
 ### <a name="how-items-are-defined"></a>如何定义项
-*.Vsct* 文件采用 XML 格式。 它定义包的 UI 元素并确定这些元素在 IDE 中的显示位置。 包中的每个菜单、组或命令首先在部分中分配了 GUID 和 ID `Symbols` 。 在 *.vsct* 文件的其余部分中，每个菜单、命令和组都由其 GUID 和 ID 组合标识。 以下示例显示在 `Symbols` 模板中选择了 **菜单命令** 时 Visual Studio 包模板生成的典型节。
+*.Vsct* 文件采用 XML 格式。 它定义包的 UI 元素并确定这些元素在 IDE 中的显示位置。 包中的每个菜单、组或命令首先在部分中分配了 GUID 和 ID `Symbols` 。 在 *.vsct* 文件的其余部分中，每个菜单、命令和组都由其 GUID 和 ID 组合标识。 下面的示例演示在 `Symbols` 模板中选择了 **菜单命令** 时 Visual Studio 包模板生成的典型节。
 
 ```xml
 <Symbols>
@@ -64,9 +65,9 @@ VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏�
 部分的顶级元素 `Symbols` 是 [GuidSymbol 元素](../../extensibility/guidsymbol-element.md)。 `GuidSymbol` 元素将名称映射到由 IDE 用于标识包及其组件部分的 Guid。
 
 > [!NOTE]
-> Guid 由 Visual Studio 包模板自动生成。 还可以通过单击 "**工具**" 菜单上的 "**创建 guid** " 来创建唯一的 guid。
+> guid 由 Visual Studio 包模板自动生成。 还可以通过单击 "**工具**" 菜单上的 "**创建 guid** " 来创建唯一的 guid。
 
-第一个 `GuidSymbol` 元素 `guid<PackageName>Pkg` 是包本身的 GUID。 这是 Visual Studio 用来加载包的 GUID。 通常，它不具有子元素。
+第一个 `GuidSymbol` 元素 `guid<PackageName>Pkg` 是包本身的 GUID。 这是 Visual Studio 用于加载包的 GUID。 通常，它不具有子元素。
 
 按照约定，菜单和命令在第二个元素下分组， `GuidSymbol` `guid<PackageName>CmdSet` 位图位于第三个 `GuidSymbol` 元素下 `guidImages` 。 您不必遵循此约定，但每个菜单、组、命令和位图都必须是元素的子 `GuidSymbol` 元素。
 
@@ -96,7 +97,7 @@ VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏�
 
 每个 `Menu` 元素都必须有一个组作为其父元素，除非它是一个可停靠的元素（如工具栏）。 可停靠菜单是其自身的父级。 有关属性的菜单和值的详细信息 `type` ，请参阅 [Menu 元素](../../extensibility/menu-element.md) 文档。
 
-下面的示例显示一个菜单，该菜单显示在 Visual Studio 菜单栏上的 " **工具** " 菜单旁边。
+下面的示例显示一个菜单，该菜单显示在 "**工具**" 菜单旁边的 Visual Studio 菜单栏上。
 
 ```xml
 <Menu guid="guidTopLevelMenuCmdSet" id="TopLevelMenu" priority="0x700" type="Menu">
@@ -111,7 +112,7 @@ VSPackage 可以通过 *.vsct* 文件 (UI) 元素（例如，菜单、工具栏�
 #### <a name="groups"></a>组
 组是在 .vsct 文件的部分中定义的项 `Groups` 。  组只是容器。 它们不会在 IDE 中显示，除非是菜单上的分隔线。 因此， [Group 元素](../../extensibility/group-element.md) 仅由其签名、优先级和父项定义。
 
-一个组可以有一个菜单、另一个组或其本身作为父项。 但是，父级通常是菜单或工具栏。 前面示例中的菜单是组的子级 `IDG_VS_MM_TOOLSADDINS` ，该组是 Visual Studio 菜单栏的子组。 以下示例中的组是前面示例中的菜单的子组。
+一个组可以有一个菜单、另一个组或其本身作为父项。 但是，父级通常是菜单或工具栏。 前面示例中的菜单是组的子组 `IDG_VS_MM_TOOLSADDINS` ，该组是 Visual Studio 菜单栏的子组。 以下示例中的组是前面示例中的菜单的子组。
 
 ```xml
 <Group guid="guidTopLevelMenuCmdSet" id="MyMenuGroup" priority="0x0600">
@@ -273,7 +274,7 @@ Combos 在部分中定义 `Combos` 。 每个 `Combo` 元素都表示 IDE 中的
 - 当用户单击你的命令时，它将受到 [路由算法](../../extensibility/internals/command-routing-algorithm.md)中所述的过程的制约。
 
 ## <a name="call-pre-defined-commands"></a>调用预定义的命令
-[UsedCommands 元素](../../extensibility/usedcommands-element.md)使 vspackage 可以访问由其他 VSPACKAGE 或 IDE 提供的命令。 为此，请创建一个 [UsedCommand 元素](../../extensibility/usedcommand-element.md) ，该元素具有要使用的命令的 GUID 和 ID。 这可确保命令将由 Visual Studio 加载，即使它不是当前 Visual Studio 配置的一部分也是如此。 有关详细信息，请参阅 [UsedCommand 元素](../../extensibility/usedcommand-element.md)。
+[UsedCommands 元素](../../extensibility/usedcommands-element.md)使 vspackage 可以访问由其他 VSPACKAGE 或 IDE 提供的命令。 为此，请创建一个 [UsedCommand 元素](../../extensibility/usedcommand-element.md) ，该元素具有要使用的命令的 GUID 和 ID。 这可以确保 Visual Studio 加载命令，即使它不是当前 Visual Studio 配置的一部分也是如此。 有关详细信息，请参阅 [UsedCommand 元素](../../extensibility/usedcommand-element.md)。
 
 ## <a name="interface-element-appearance"></a>接口元素外观
 选择和定位命令元素的注意事项如下：
@@ -290,5 +291,5 @@ Combos 在部分中定义 `Combos` 。 每个 `Combo` 元素都表示 IDE 中的
 
 - 若要使某些 UI 元素在 IDE 中显示，您必须实现一个或多个接口或编写一些代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)

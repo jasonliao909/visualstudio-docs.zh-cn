@@ -8,14 +8,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b98f814e1f310c7d7f281457589a1a9f7d21653
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b42efe1299d6e2a05e03de5aa99893b97603805
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037858"
 ---
 # <a name="modify-the-style-of-objects-in-blend-for-visual-studio"></a>修改 Blend for Visual Studio 中对象的样式
 
@@ -95,7 +96,7 @@ ms.locfileid: "99966547"
 
 ![鼠标悬停状态](../designers/media/a95c671a-5639-40b9-83db-1e6b214330d5.png)
 
-观看短片： ![播放按钮](../designers/media/bldadminconsoleinitialconfigicon.PNG) [管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
+**观看简短视频：** !["播放 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [" 按钮管理 WPF 控件的状态](https://www.youtube.com/watch?v=m0PlkF5i6uw)。
 
 ## <a name="resources-create-colors-styles-and-templates-and-reuse-them-later"></a>资源：创建颜色、样式和模板，并在以后重复使用它们
 
@@ -103,6 +104,6 @@ ms.locfileid: "99966547"
 
 ![将颜色转换为资源按钮](../designers/media/89203705-cf66-46e0-b153-52a23cd744f7.png) ![“创建颜色资源”对话框](../designers/media/6bff8b19-3cd5-41a0-bbf9-ff65532d5aae.png)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bf520d68a47b8a7e8f4ed7b71c7544ffdf0a947fcdc2c140c68f0ce7ef328bf1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 16de3f0cb0c7179a3fadd9fb69f10cc5f44e4840
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096110"
 ---
 # <a name="idebugprogramprovider2getproviderprogramnode"></a>IDebugProgramProvider2::GetProviderProgramNode
 检索特定程序的程序节点。

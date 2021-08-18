@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f5ae3c9664bca8540ead29e6b646aa61a5698cd9d683013ec42996a5c5ef8acd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 53fa4543bd56bd85f58b5c4251af19300a12fecf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121320331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109807"
 ---
 # <a name="walkthrough-publish-a-visual-studio-extension"></a>演练：发布Visual Studio扩展
 
@@ -47,7 +47,7 @@ ms.locfileid: "121320331"
 
 ## <a name="test-the-extension"></a>测试扩展
 
- 在分发扩展之前，请生成并测试它，以确保该扩展已正确安装在 Visual Studio。
+ 在分发扩展之前，请生成并测试该扩展，以确保该扩展已正确安装在 Visual Studio。
 
 1. 在Visual Studio中，开始调试以打开 Visual Studio。
 
@@ -69,7 +69,7 @@ ms.locfileid: "121320331"
 
    ![Upload市场](media/upload-to-marketplace.png)
 
-6. 选择要用于上传扩展的发布者。 可以通过单击左侧列出的发布者名称来更改发布者。 单击 **"新建扩展**"并选择 **"Visual Studio"。**
+6. 选择要用于上传扩展的发布者。 可以通过单击左侧列出的发布者名称来更改发布者。 单击 **"新建扩展"** 并选择 **"Visual Studio"。**
 
 7. 在 **1：Upload** 扩展中，可以选择将 VSIX 文件直接上传到 Visual Studio Marketplace，或者只需添加指向你自己的网站的链接。 此示例上传了扩展 *TestPublish.vsix。* 拖放扩展名或使用单击 **链接** 浏览文件。 在项目的 \bin\Release 文件夹中查找扩展。  单击 **“继续”** 。
 
@@ -103,7 +103,7 @@ ms.locfileid: "121320331"
 
     * **源代码存储库** 允许与社区共享源代码链接。
 
-    * **"允许&的问答** "允许用户在扩展输入页上提问。
+    * **"允许&问答** "允许用户在扩展输入页上提问。
 
 9. 单击"**保存& Upload"。** 此选项将返回到发布者管理页。 扩展尚未发布。
 
@@ -125,7 +125,7 @@ ms.locfileid: "121320331"
 
 1.  单击 **"发布扩展**"，然后选择要用于上传更新的扩展的发布者。
 
-    :::image type="content" source="media/marketplace-select-extension-version.png" alt-text="&quot;Visual Studio&quot;的屏幕截图，其中突出显示了&quot;发布扩展&quot;链接。":::
+    :::image type="content" source="media/marketplace-select-extension-version.png" alt-text="市场Visual Studio屏幕截图，其中突出显示了&quot;发布扩展&quot;链接。":::
 
 1.  在要更新的扩展旁边，将鼠标悬停在三个水平点上，然后选择"编辑 **"。**
 
@@ -165,19 +165,19 @@ ms.locfileid: "121320331"
 
     - **类别**。 最多选择三个最适合你的扩展。
 
-    - **标记** 是可帮助用户查找扩展的关键字。 标记可帮助提高扩展在市场中的搜索Visual Studio相关性。
+    - **标记** 是可帮助用户查找扩展的关键字。 标记可帮助提高扩展在 Visual Studio 的相关性。
 
     - **定价** 类别是扩展的成本。
 
     - **源代码存储库** 允许与社区共享源代码链接。
 
-    - **"允许&的问答** "允许用户在扩展输入页上提问。
+    - **"允许&问答** "允许用户在扩展输入页上提问。
 
        \* 无法更改扩展更新的此详细信息。
 
 1. 单击"**保存& Upload"。** 此选项将返回到发布者管理页。 扩展尚未发布。
 
-1. 若要发布扩展，请右键单击扩展并选择"**公开"。** 若要查看扩展在市场中的显示Visual Studio，请选择"查看 **扩展"。** 对于采购编号，请单击"报表 **"。** 若要对扩展进行更改，请单击"编辑 **"。**
+1. 若要发布扩展，请右键单击扩展并选择"**公开"。** 若要查看扩展在市场中的外观，Visual Studio"**查看扩展"。** 对于采购编号，请单击"报表 **"。** 若要对扩展进行更改，请单击"编辑 **"。**
 
 ## <a name="add-additional-users-to-manage-your-publisher-account"></a>添加其他用户以管理发布者帐户
 

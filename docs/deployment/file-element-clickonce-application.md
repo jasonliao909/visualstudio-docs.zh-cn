@@ -1,5 +1,5 @@
 ---
-title: '&lt;&gt; (ClickOnce 应用程序) 的文件元素 |Microsoft Docs'
+title: '&lt;&gt;ClickOnce 应用程序 (的文件元素) |Microsoft Docs'
 description: File 元素标识应用程序下载和使用的所有 nonassembly 文件。 File 元素是可选的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -22,16 +22,17 @@ ms.assetid: 56e3490c-eed5-4841-b1bf-eefe778b6ac9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ad19de19176b7c8ee1d2c2872126a19abb93b67
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 68733629b26b4640e63919aaa4f9d07d0c70f972
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99895084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051594"
 ---
-# <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt; (ClickOnce 应用程序) 的文件元素
+# <a name="ltfilegt-element-clickonce-application"></a>&lt;&gt;ClickOnce 应用程序 (的文件元素) 
 标识应用程序下载和使用的所有 nonassembly 文件。
 
 ## <a name="syntax"></a>语法
@@ -133,7 +134,7 @@ ms.locfileid: "99895084"
 |`numMethods`|可选。 接口实现的方法数。|
 |`name`|可选。 将在代码中显示的接口的名称。|
 |`tlbid`|可选。 类型库，其中包含由属性指定的接口的说明 `iid` 。|
-|`proxyStubClass32`|可选。 将 IID 映射到32位代理 Dll 中的 CLSID。|
+|`proxyStubClass32`|可选。 将 IID 地图到32位代理 Dll 中的 CLSID。|
 
 ## <a name="cominterfaceproxystub"></a>comInterfaceProxyStub
  `comInterfaceProxyStub`元素是元素的一个可选子级 `file` ，但如果 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序包含它打算使用免注册 COM 部署的 COM 组件，则可能需要该元素。 元素包含以下属性。
@@ -145,7 +146,7 @@ ms.locfileid: "99895084"
 |`numMethods`|可选。 接口实现的方法数。|
 |`Name`|可选。 将在代码中显示的接口的名称。|
 |`Tlbid`|可选。 类型库，其中包含由属性指定的接口的说明 `iid` 。|
-|`proxyStubClass32`|可选。 将 IID 映射到32位代理 Dll 中的 CLSID。|
+|`proxyStubClass32`|可选。 将 IID 地图到32位代理 Dll 中的 CLSID。|
 |`threadingModel`|可选。 可选。 进程内 COM 类使用的线程模型。 如果此属性为 null，则不使用线程模型。 在客户端的主线程上创建组件，并将来自其他线程的调用封送到此线程。 以下列表显示了有效值：<br /><br /> `Apartment`、`Free`、`Both` 和 `Neutral`。|
 
 ## <a name="windowclass"></a>windowClass
@@ -200,5 +201,5 @@ ms.locfileid: "99895084"
 </file>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

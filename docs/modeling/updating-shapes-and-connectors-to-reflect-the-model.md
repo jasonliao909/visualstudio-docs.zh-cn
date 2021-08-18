@@ -1,24 +1,25 @@
 ---
 title: 更新形状和连接线以反映模型
-description: 了解，在 Visual Studio 中的域特定语言中，可以使形状的外观反映基础模型的状态。
+description: 请注意，在 Visual Studio 中的域特定语言中，可以使形状的外观反映基础模型的状态。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6439a01de2a02361914ce227c43d903f1b24b405
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0f667821a9940603f887850a9b26fc1d8ca2f073
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388563"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085320"
 ---
 # <a name="update-shapes-and-connectors-to-reflect-the-model"></a>更新形状和连接线以反映模型
 
-在 Visual Studio 中的域特定语言中，你可以使形状的外观反映基础模型的状态。
+在 Visual Studio 中的域特定语言中，可以使形状的外观反映基础模型的状态。
 
 应将本主题中的代码示例添加到 `.cs` 项目中的文件 `Dsl` 。 你需要在每个文件中执行以下指令：
 

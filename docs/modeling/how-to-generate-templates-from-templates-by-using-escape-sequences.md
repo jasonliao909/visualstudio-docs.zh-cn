@@ -12,12 +12,12 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: c0dbad0b68e0245073124254940f17e1cdb5147b0550846871fe40db546eb091
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b406fc50f2527c7e2c6f1f3a553967fe836a1477
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288628"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085582"
 ---
 # <a name="how-to-generate-templates-from-templates-by-using-escape-sequences"></a>如何：使用转义序列从模板生成模板
 你可以创建一个文本模板，用于创建另一个文本模板作为其生成的文本输出。 为此，必须使用转义序列来描绘文本模板标记。 如果不使用转义序列，则生成的文本模板将具有预定义的含义。 有关在文本模板中使用转义序列的详细信息，请参阅 [在文本模板中使用转义序列](../modeling/using-escape-sequences-in-text-templates.md)。

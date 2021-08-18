@@ -50,12 +50,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: fdb068ad34e2261d99e24b7f836d74c642311949345795d8a2d8e34511bbcd54
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e021a8ab30829aedd0a695a53993998e312ff81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122036987"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 
@@ -70,13 +70,13 @@ ms.locfileid: "121347360"
 
 ## <a name="dataset-workflow"></a>数据集工作流
 
-Visual Studio工具简化数据集的使用。 基本的端到端工作流是：
+Visual Studio工具来简化数据集的使用。 基本的端到端工作流是：
 
 - 使用 ["数据源"](add-new-data-sources.md#data-sources-window) 窗口从一个或多个数据源创建新数据集。 使用 **数据集设计器** 配置数据集并设置其属性。 例如，需要指定数据源中要包含的表以及每个表中的列。 请谨慎选择以节省数据集所需的内存量。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
 - 指定表之间的关系，以便正确处理外键。 有关详细信息，请参阅使用 [TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)填充数据集。
 
-- 使用 **TableAdapter** 配置向导指定填充数据集的查询或存储过程，以及要 (更新、删除等) 数据库操作。 有关详细信息，请参阅以下主题：
+- 使用 **TableAdapter** 配置向导指定用于填充数据集的查询或存储过程，以及要 (更新、删除等) 数据库操作。 有关详细信息，请参阅以下主题：
 
   - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -86,7 +86,7 @@ Visual Studio工具简化数据集的使用。 基本的端到端工作流是：
 
   - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 
-- 查询和搜索数据集中的数据。 有关详细信息，请参阅 [查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 启用 [LINQ (语言集成查询 ](/dotnet/csharp/linq/)) 对象中数据 <xref:System.Data.DataSet> 进行查询。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
+- 查询和搜索数据集中的数据。 有关详细信息，请参阅 [查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 启用 [LINQ (语言集成查询 ](/dotnet/csharp/linq/)) 对象中数据的 <xref:System.Data.DataSet> 查询。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 
 - 使用 **"数据源** "窗口将用户界面控件绑定到数据集或数据集的单个列，并指定用户可编辑的列。 有关详细信息，请参阅[将控件绑定到](../data-tools/bind-controls-to-data-in-visual-studio.md)Visual Studio。
 
