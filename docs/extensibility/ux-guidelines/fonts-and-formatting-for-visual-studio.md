@@ -413,7 +413,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
  下表包含设计详细信息和用于显示字体的可视化示例，这些字体Visual Studio。 某些显示字体变体将大小和权重（如 Semilight 或 Light）编码到其外观中。
 
- 可以在格式设置中找到所有显示字体的实现代码片段 ([缩放/粗体) 引用](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)。
+ 可以在格式设置中找到所有显示字体的实现代码片段 ([缩放/) 引用](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)。
 
 #### <a name="375-environment-font--light"></a>375% 环境字体 + 浅色
 
@@ -461,30 +461,30 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 签名对话框中的节标题<br />- 树视图中的顶级节点<br />- 垂直选项卡导航<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> - 粗体、italic 或粗体<br />- 用于正文文本<br />- 在标准控件Visual Studio使用<br />- 在工具窗口中使用|**显示为：11** pt Segoe UI<br /><br /> **视觉对象示例：**<br /><br /> ![122% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
+|**用法：**<br /><br /> -签名对话框中的节标题<br />-树视图中的顶级节点<br />-垂直选项卡导航<br /><br /> **Do：** 使用句子 case<br /><br /> **不要：**<br /><br /> -粗体、斜体或粗体斜体<br />-用于正文文本<br />-在标准 Visual Studio 控件中使用<br />-在工具窗口中使用|**显示为：** 11 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![122% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-e_ef122.png "0202-e_EF122")|
 
 #### <a name="environment-font--bold"></a>环境字体 + 粗体
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 签名对话框中的标签和子标题<br />- 报表的标签和子标题<br />- 文档井 UI 中的标签和子标题<br /><br /> **执行：**<br /><br /> - 使用句子大小写<br />- 使用粗体粗细<br /><br /> **不要：**<br /><br /> - Italic 或粗体的 italic<br />- 用于正文文本<br />- 在标准控件Visual Studio使用<br />- 在工具窗口中使用|**显示为：** 粗体显示 9 pt Segoe UI<br /><br /> **视觉对象示例：**<br /><br /> ![环境字体示例&#43;粗体标题](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
+|**用法：**<br /><br /> -签名对话框中的标签和副标题<br />-报表中的标签和副标题<br />-文档好 UI 中的标签和副标题<br /><br /> **看**<br /><br /> -Use 句型 case<br />-使用粗体<br /><br /> **不要：**<br /><br /> -斜体或斜体<br />-用于正文文本<br />-在标准 Visual Studio 控件中使用<br />-在工具窗口中使用|**显示为：** 加粗 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体 &#43; 粗体标题的示例](../../extensibility/ux-guidelines/media/0202-f_efb.png "0202-f_EFB")|
 
 #### <a name="environment-font"></a>环境字体
 
 |使用情况|外观|
 |-|-|
-|**用法：** 所有其他文本<br /><br /> **执行：** 使用句子大小写<br /><br /> **请勿：** Italic 或 bold italic|**显示为：9** pt Segoe UI<br /><br /> **视觉对象示例：**<br /><br /> ![环境字体的示例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
+|**用法：** 所有其他文本<br /><br /> **Do：** 使用句子 case<br /><br /> **请勿：** 斜体或斜体|**显示为：** 9 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![环境字体的示例](../../extensibility/ux-guidelines/media/0202-g_ef.png "0202-g_EF")|
 
 ### <a name="padding-and-spacing"></a>填充和间距
- 标题周围需要空格，以提供适当的强调。 此空间因点大小和标题附近的内容而异，例如水平规则或环境字体中的文本行。
+ 标题需要围绕它们的空间来为他们指定适当的强调。 此空间因点大小而异，其他在标题附近，例如水平标尺或环境字体中的文本行。
 
-- 标题的理想填充本身应为大写字符高度空间的 90%。 例如，28 pt Segoe UI光标题的上限高度为 26 pt，填充应约为 23 pt 或大约 31 像素。
+- 标题的理想填充方式应为大写字符高度空间的90%。 例如，一个 28 pt Segoe UI 光源标题的高度为26磅，并且填充长度应约为23磅，或者约31像素。
 
-- 标题周围的最小空间应为大写字符高度的 50%。 当标题附带规则或其他紧密拟合元素时，可能会使用较少的空间。
+- 标题周围的最小空间应为大写字符高度的50%。 当标题附带一个规则或其他严格的元素时，可以使用较少的空间。
 
-- 粗体环境字体文本应遵循默认行高间距和填充。
+- 粗体环境字体文本应遵循默认行高度间距和填充。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [字体 (Windows) ](/windows/desktop/uxguide/vis-fonts)
 - [用户界面文本 (Windows) ](/windows/desktop/uxguide/text-ui)

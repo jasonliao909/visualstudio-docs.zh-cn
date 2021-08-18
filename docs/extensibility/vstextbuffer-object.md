@@ -46,7 +46,7 @@ ms.locfileid: "121335025"
 ## <a name="remarks"></a>备注
  `VSTextBuffer`通常通过上的 调用 `QueryInterface` 找到 `IVsTextBuffer` 。 有关详细信息，请参阅文本 [缓冲区](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-the-text-buffer-by-using-the-legacy-api?preserve-view=true&view=vs-2015)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextBuffer>
 - <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView>
 - [图形编辑](https://www.microsoft.com/download/details.aspx?id=55984)

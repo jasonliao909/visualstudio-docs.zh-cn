@@ -1,6 +1,6 @@
 ---
 title: 公开 Visual Studio SDK |Microsoft Docs
-description: 了解公开Visual Studio项的事件的 SDK 方法和注册表项。
+description: 了解公开Visual Studio和项目项的事件的 SDK 方法和注册表项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,15 @@ ms.assetid: 70bbc258-c221-44f8-b0d7-94087d83b8fe
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 99298329b969df3b9d7dbb46a3f4b9e7d4ed7091
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 97d655885e8a6ee670274eaeba172c7e950dc324d2b9324cf7db6e73fa57baaa
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898323"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121376206"
 ---
 # <a name="expose-events-in-the-visual-studio-sdk"></a>公开 Visual Studio SDK 中的事件
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 允许使用自动化来源事件。 建议为项目和项目项源事件。
@@ -29,7 +30,7 @@ ms.locfileid: "112898323"
 
 1. 环境启动。
 
-2. 它从注册表中读取所有 VSPackage的 **Automation、AutomationEvents** 和 **AutomationProperties** 键下的所有值名称，并存储这些名称。
+2. 它从注册表中读取所有 VSPackage的 Automation **、AutomationEvents** 和 **AutomationProperties** 键下的所有值名称，并存储这些名称。
 
 3. 自动化使用者调用 （本示例中为 `DTE.Events.AutomationProjectsEvents` ）或 `DTE.Events.AutomationProjectItemsEvents` 。
 
@@ -43,9 +44,9 @@ ms.locfileid: "112898323"
 
 8. `get_`方法创建另一个基于 IDispatch 的事件对象，该对象实现 接口和 接口，并 `IConnectionPointContainer` `IConnectionPoint` `IDispatchpointer` 返回给 对象。
 
-   若要使用自动化公开事件，必须响应并监视添加到注册表的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 字符串。 在基本项目示例中，字符串为 *BscProjectsEvents* 和 *BscProjectItemsEvents*。
+   若要使用自动化公开事件，必须响应并监视添加到注册表的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A> 字符串。 在基本Project示例中，字符串为 *BscProjectsEvents* 和 *BscProjectItemsEvents*。
 
-## <a name="registry-entries-from-the-basic-project-sample"></a>基本项目示例中的注册表项
+## <a name="registry-entries-from-the-basic-project-sample"></a>"基本"示例的注册表Project条目
  本部分显示在何处向注册表添加自动化事件值。
 
  **[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0\Packages<\\ PkgGUID \> \AutomationEvents]**
@@ -54,15 +55,15 @@ ms.locfileid: "112898323"
 
  **AutomationProjectItemEvents** = 返回 `AutomationProjectItemsEvents` 对象。
 
-|名称|类型|范围|描述|
+|名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
 |默认 (@) |REG_SZ|未使用|未使用。 可以将数据字段用于文档。|
-|*AutomationProjectsEvents*|REG_SZ|事件对象的名称。|仅密钥名称相关。 可以将数据字段用于文档。<br /><br /> 此示例来自基本项目示例。|
-|*AutomationProjectItemEvents*|REG_SZ|事件对象的名称|仅密钥名称相关。 可以将数据字段用于文档。<br /><br /> 此示例来自基本项目示例。|
+|*AutomationProjectsEvents*|REG_SZ|事件对象的名称。|仅密钥名称相关。 可以将数据字段用于文档。<br /><br /> 此示例来自基本Project示例。|
+|*AutomationProjectItemEvents*|REG_SZ|事件对象的名称|仅密钥名称相关。 可以将数据字段用于文档。<br /><br /> 此示例来自基本Project示例。|
 
  当自动化使用者请求任何事件对象时，请创建一个根对象，该对象包含 VSPackage 支持的任何事件的方法。 环境对此对象 `get_` 调用适当的方法。 例如， `DTE.Events.AutomationProjectsEvents` 如果调用 ， `get_AutomationProjectsEvents` 则调用根对象上的 方法。
 
- ![Visual Studio项目事件](../../extensibility/internals/media/projectevents.gif "ProjectEvents") 事件的自动化模型
+ ![Visual Studio项目事件](../../extensibility/internals/media/projectevents.gif "ProjectEvents")事件的自动化模型
 
  类 `CProjectEventsContainer` 表示 *BscProjectsEvents* 的源对象，并 `CProjectItemsEventsContainer` 表示 *BscProjectItemsEvents 的源对象*。
 
@@ -70,7 +71,7 @@ ms.locfileid: "112898323"
 
  *AutomationEvents.h* 和 *AutomationEvents.cpp* 包含下表中类的声明和实现。
 
-|类|描述|
+|类|说明|
 |-----------|-----------------|
 |`CAutomationEvents`|实现从 对象检索的事件根 `DTE.Events` 对象。|
 |`CProjectsEventsContainer` 和 `CProjectItemsEventsContainer`|实现可发射相应事件的事件源对象。|
@@ -110,5 +111,5 @@ STDMETHODIMP CVsPackage::GetAutomationObject(
 
  从同一中心位置（即 对象）检索事件 `DTE.Events` 对象。 这样，所有事件对象都组合在一起，以便最终用户无需浏览整个对象模型来查找特定事件。 这还允许提供特定的 VSPackage 对象，而无需为系统范围事件实现自己的代码。 但是，对于最终用户（必须查找接口的事件）来说，无法立即从检索 `ProjectItem` 该事件对象的地方进行清除。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetAutomationObject%2A>

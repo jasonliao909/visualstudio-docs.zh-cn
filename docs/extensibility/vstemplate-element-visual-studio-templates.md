@@ -49,7 +49,7 @@ ms.locfileid: "121335207"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定对模板进行分类的数据，并定义它在"新建项"或"Project项 **"****对话框中的显示**。|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定对模板进行分类的数据，并定义它在"新建项"或"Project项 **"****对话框中** 的显示。|
 |[TemplateContent](../extensibility/templatecontent-element-visual-studio-templates.md)|必需的元素。<br /><br /> 指定模板的内容。|
 |[WizardExtension](../extensibility/wizardextension-element-visual-studio-templates.md)|可选元素。|
 |[WizardData](../extensibility/wizarddata-element-visual-studio-templates.md)|可选元素。|

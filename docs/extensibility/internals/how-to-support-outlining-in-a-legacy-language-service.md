@@ -12,14 +12,15 @@ ms.assetid: bb6e74c3-93e4-4ef7-afc7-1c9b342f083b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 028d1a9aae21aae8c6368e4eea3820aabd200be6
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: cef8f5520ebd0034ff5d8852129b1f076bf53b28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112901794"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050008"
 ---
 # <a name="how-to-support-outlining-in-a-legacy-language-service"></a>如何：支持旧版语言服务中的大纲显示
 大纲显示用于展开或折叠不同文本区域。 使用大纲显示的方式可以通过不同的语言以不同方式定义。 有关详细信息，请参阅[大纲显示](../../ide/outlining.md)。
@@ -40,13 +41,13 @@ ms.locfileid: "112901794"
 ## <a name="robust-programming"></a>可靠编程
  当用户在"**大纲显示"** 菜单上选择"折叠到定义"时，IDE 会调用 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningCapableLanguage.CollapseToDefinitions%2A> 语言服务。
 
- 调用此方法时，IDE 将传递一个指针 (指向文本缓冲区的指针) 一个指向当前大纲显示会话 (的指针 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>) 。
+ 调用此方法时，IDE 将传递一个指针， (指向文本缓冲区的指针) 将指针 (指向当前大纲显示会话的指针 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsTextLines> <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession>) 。
 
  可以通过在 参数中指定这些区域，为多个大纲区域 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsOutliningSession.AddOutlineRegions%2A> 调用 `rgOutlnReg` 方法。 参数 `rgOutlnReg` 是一个 <xref:Microsoft.VisualStudio.TextManager.Interop.NewOutlineRegion> 结构。 此过程允许指定隐藏区域的不同特征，例如特定区域是展开还是折叠。
 
 > [!NOTE]
 > 请谨慎隐藏换行符。 隐藏文本应从第一行的开始处扩展到节中最后一行的最后一个字符，使最后一个换行符可见。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：在旧版语言服务中提供隐藏文本支持](../../extensibility/internals/how-to-provide-hidden-text-support-in-a-legacy-language-service.md)
 - [如何：在旧版语言服务中提供扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)

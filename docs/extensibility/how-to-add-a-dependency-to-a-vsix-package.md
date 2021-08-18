@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0335e243fe0779060282cecdc58ad9deb608c948
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 58453344957b5264e9f3061878953c2007d56c238f71b4200c6d518df6d7af1c
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050411"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359918"
 ---
 # <a name="how-to-add-a-dependency-to-a-vsix-package"></a>如何：向 VSIX 包添加依赖项
 
@@ -37,9 +37,9 @@ ms.locfileid: "122050411"
 
 ## <a name="require-a-specific-visual-studio-release"></a>需要特定的Visual Studio版本
 
-例如，如果扩展需要特定版本的 Visual Studio 2017，则它依赖于 15.3 中发布的功能，可以在 VSIX **InstallationTarget** 中指定内部版本号。 例如，版本 15.3 的生成号为"15.0.26730.3"。 可在此处查看版本与生成号 [的映射](../install/visual-studio-build-numbers-and-release-dates.md)。 请注意，使用发行号"15.3"将无法正常工作。
+例如，如果扩展需要特定版本的 Visual Studio 2017，则它依赖于 15.3 中发布的功能，可以在 VSIX **InstallationTarget** 中指定生成号。 例如，版本 15.3 的生成号为"15.0.26730.3"。 可在此处查看版本与生成号 [的映射](../install/visual-studio-build-numbers-and-release-dates.md)。 请注意，使用发行号"15.3"将无法正常工作。
 
-如果扩展需要 15.3 或更高版本，则需要将 **InstallationTarget 版本** 声明为 [15.0.26730.3， 16.0) ：
+如果扩展需要 15.3 或更高版本，则需要将 **InstallationTarget** 版本声明为 [15.0.26730.3， 16.0) ：
 
 ```xml
 <Installation>

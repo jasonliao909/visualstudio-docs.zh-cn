@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 07112d61162f4007db1581c75188295e152e809cd733ff6b3220c5ed1ca742b3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ef4ab11bd4f5dca68e07a3084371024728336e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401530"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049761"
 ---
 # <a name="project-configuration-for-building"></a>用于生成的项目配置
 给定解决方案的解决方案配置列表由"解决方案配置"对话框管理。

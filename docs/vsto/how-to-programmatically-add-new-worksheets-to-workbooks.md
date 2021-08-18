@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式向工作簿添加新工作表
-description: 了解如何以编程方式创建工作表，然后将工作表添加到工作簿中工作表的集合。
+title: 如何：以编程方式将新工作表添加到工作簿
+description: 了解如何以编程方式创建工作表，然后将工作表添加到工作簿中的工作表集合。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -19,14 +19,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 1f3d84e5c16bd6961428552d96468cd46e4049886d85e798f29ab3cbe1362a2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 171608021bb967306a89e22bff68c7d3cd3ce639
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121384374"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026247"
 ---
-# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以编程方式向工作簿添加新工作表
+# <a name="how-to-programmatically-add-new-worksheets-to-workbooks"></a>如何：以编程方式将新工作表添加到工作簿
   可以通过编程方式创建一个工作表，然后将它添加到工作簿中工作表的集合。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -54,6 +54,6 @@ ms.locfileid: "121384374"
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
 - [如何：以编程方式选择工作表](../vsto/how-to-programmatically-select-worksheets.md)
-- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
-- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [使用Excel对象自动执行自动执行](../vsto/automating-excel-by-using-extended-objects.md)
+- [对项目中对象的全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

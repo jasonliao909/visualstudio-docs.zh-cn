@@ -1,6 +1,6 @@
 ---
-title: 旧版语言服务 Features2 |Microsoft Docs
-description: 了解你可以通过使用 Visual Studio SDK 中 Managed Extensibility Framework (MEF) 扩展来提供的一些旧版语言服务功能。
+title: 旧版语言服务功能2 |Microsoft Docs
+description: 了解通过使用 Managed Extensibility Framework (SDK 中的 meF 扩展) 提供Visual Studio服务功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,22 +10,23 @@ ms.assetid: 97c38622-ae0b-4ae0-90ed-604072c298d3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a12ee207f7fb7e4f4e2d202d5d63d468e9cea547
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 11305d2a63b2e461629302e4a9bf88ed6d7c21b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105074478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049826"
 ---
-# <a name="legacy-language-service-features-2"></a>旧版语言服务功能2
-以下主题列出了你可以提供的一些旧版语言服务功能。
+# <a name="legacy-language-service-features-2"></a>旧版语言服务功能 2
+以下主题列出了可以提供的一些旧版语言服务功能。
 
- 旧版语言服务是作为 VSPackage 的一部分实现的，但实现语言服务功能的更新方法是使用 MEF 扩展。 若要了解有关实现语言服务的新方法的详细信息，请参阅 [编辑器和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
+ 旧版语言服务作为 VSPackage 的一部分实现，但实现语言服务功能的较新方式是使用 MEF 扩展。 若要详细了解实现语言服务的新方法，请参阅编辑器 [和语言服务扩展](../../extensibility/editor-and-language-service-extensions.md)。
 
 > [!NOTE]
-> 建议你尽快开始使用新的编辑器 API。 这将提高语言服务的性能，并使你能够利用新的编辑器功能。
+> 建议尽快开始使用新的编辑器 API。 这将提高语言服务的性能，并让你能够利用新的编辑器功能。
 
 ## <a name="in-this-section"></a>本节内容
 - [在旧版语言服务中进行语法着色](../../extensibility/internals/syntax-coloring-in-a-legacy-language-service.md)

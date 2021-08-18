@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13ae620928aa3afce92ef12b43e3ac70f49a2467
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3edb2fe2634d11285900327312b979b54e1d398a40a926890f1428f0f6fa1ae1
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118614"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121417062"
 ---
 # <a name="idebugmethodfieldenumarguments"></a>IDebugMethodField::EnumArguments
 为调用 方法所需的每个参数的类型创建枚举器。
@@ -46,7 +46,7 @@ int EnumArguments(
 [out]返回表示 [参数类型列表的 IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象。 如果没有参数，则返回 null 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 S_OK，如果没有参数S_FALSE则返回值。 否则，返回错误代码。
+ 如果成功，则S_OK，或者S_FALSE参数时返回值。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
  每个元素都是一个 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象，表示每个参数的类型。 调用 [GetInfo](../../../extensibility/debugger/reference/idebugfield-getinfo.md) 方法检索有关每个参数类型的信息。

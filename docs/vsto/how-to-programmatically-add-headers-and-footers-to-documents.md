@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式向文档添加页眉和页脚
-description: 了解如何使用节的 "标头属性" 和 "页脚" 属性将文本添加到文档中的页眉和页脚。
+title: 如何：以编程方式将页眉和页脚添加到文档
+description: 了解如何使用 节的"页眉"属性和"页脚"属性向文档中的页眉和页脚添加文本。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,16 +16,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 73844d19ef6bb85c623706ab0d359836e42a3b14
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 5ae22cd1f04e49dd697bd9a791973b0038a54710bc505746d49f813cf280d7bb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828733"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121384387"
 ---
-# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以编程方式向文档添加页眉和页脚
+# <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以编程方式将页眉和页脚添加到文档
   可以通过使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 属性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 属性将文本添加到文档中的页眉和页脚。 文档各部分均包含三个页眉和页脚：
 
 - <xref:Microsoft.Office.Interop.Word.WdHeaderFooterIndex.wdHeaderFooterPrimary>
@@ -74,5 +75,5 @@ ms.locfileid: "107828733"
 
 ## <a name="see-also"></a>请参阅
 - [如何：以编程方式创建新文档](../vsto/how-to-programmatically-create-new-documents.md)
-- [如何：以编程方式在文档中扩展范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
-- [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+- [如何：以编程方式循环访问文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

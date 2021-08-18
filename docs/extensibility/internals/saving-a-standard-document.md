@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 71e4aaa99a17e8643af104a30e12caf3300e0570a00cc1715d80016333aff64f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 00dcb3d9d5f93c8c412302ad67dfa8a5bd379e12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049527"
 ---
 # <a name="saving-a-standard-document"></a>保存标准文档
 环境处理"保存"、"另存为"和"全部保存"命令。 当用户从"文件"菜单中选择 **"** 保存"、另存为或"全部保存"或关闭解决方案时，导致"全部 **保存**"时，将发生以下过程。
 
- ![标准编辑器](../../extensibility/internals/media/public.gif "公共") 标准编辑器的"另存为"和"全部保存"命令处理
+ ![标准编辑器](../../extensibility/internals/media/public.gif "公开") 标准编辑器的"另存为"和"全部保存"命令处理
 
  以下步骤详细介绍了此过程：
 
@@ -47,7 +47,7 @@ ms.locfileid: "121375647"
 
     如果文件的名称已更改，则层次结构负责通过调用 (VSFPROPID_MkDocument) 来 <xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame.SetProperty%2A> 更新文档框架的缓存 (VSFPROPID_MkDocument) 。
 
-   如果 **"另** 存为"命令移动文档的位置，并且层次结构对文档位置敏感，则层次结构负责将打开的文档窗口的所有权转移给其他层次结构。 例如，如果项目跟踪文件是内部文件还是外部文件， (文件) 与项目相关的其他文件。 使用以下过程将文件的所有权更改为杂项文件项目。
+   如果 **"另** 存为"命令移动文档的位置，并且层次结构对文档位置敏感，则层次结构负责将打开的文档窗口的所有权转移给其他层次结构。 例如，如果项目跟踪文件是内部文件还是外部文件， (与) 相关的其他文件。 使用以下过程将文件的所有权更改为杂项文件项目。
 
 ## <a name="changing-file-ownership"></a>更改文件所有权
 

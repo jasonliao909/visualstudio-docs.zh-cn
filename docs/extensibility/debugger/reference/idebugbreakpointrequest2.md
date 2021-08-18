@@ -11,14 +11,15 @@ ms.assetid: 01ac4013-96f9-4235-b289-f55f9e99558f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8788e7a78bcd4c03567e5d07c96a310fa6970fb1
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dcf40e4fa60544662b7a825e7ab06825c25809b64d65c74acd3beff6bd8c492f
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054447"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121292957"
 ---
 # <a name="idebugbreakpointrequest2"></a>IDebugBreakpointRequest2
 此接口表示创建和绑定任何类型的断点所需的信息。
@@ -53,7 +54,7 @@ IDebugBreakpointRequest2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [CreatePendingBreakpoint](../../../extensibility/debugger/reference/idebugengine2-creatependingbreakpoint.md)
 - [GetBreakpointRequest](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-getbreakpointrequest.md)
 - [绑定](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-bind.md)

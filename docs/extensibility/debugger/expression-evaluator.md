@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d434666fb2264f102681472935e428225f86a40b839b997cd035f43b5b1d67b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3316252d5958e2e1a685e7b09a90eaee0fba07e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417829"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096634"
 ---
 # <a name="expression-evaluator"></a>表达式计算器
 表达式计算器 (企业版) 检查一种语言的语法，以便在运行时对其进行分析和计算，从而在 IDE 处于中断模式时，用户可以查看它们。
@@ -43,5 +43,5 @@ ms.locfileid: "121417829"
 ## <a name="implementation-notes"></a>实现说明
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]调试引擎需要使用公共语言运行时 (CLR) 接口与表达式计算器进行通信。 因此，与调试引擎一起使用的表达式计算器 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 必须支持 clr (可以在 debugref.doc （这是) 的一部分）中找到所有 clr 调试接口的完整列表 [!INCLUDE[winsdklong](../../deployment/includes/winsdklong_md.md)] 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调试器组件](../../extensibility/debugger/debugger-components.md)

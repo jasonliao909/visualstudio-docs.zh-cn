@@ -21,7 +21,7 @@ ms.lasthandoff: 08/12/2021
 ms.locfileid: "121338015"
 ---
 # <a name="editor-and-language-service-extensions"></a>编辑器和语言服务扩展
-可以扩展代码编辑器Visual Studio功能。 编辑器基于 WPF Windows Presentation Foundation (，) 托管代码编写。 尽管此设计不同于早期版本的 Visual Studio，但它提供了大多数相同的功能。 若要扩展编辑器，请使用 Managed Extensibility Framework (MEF) 。
+可以扩展代码编辑器Visual Studio功能。 编辑器基于 WPF Windows Presentation Foundation (，) 以托管代码编写。 尽管此设计不同于早期版本的 Visual Studio，但它提供大多数相同的功能。 若要扩展编辑器，请使用 Managed Extensibility Framework (MEF) 。
 
  Visual Studio SDK 提供 *称为填充码* 的适配器，以支持为早期版本编写的 VSPackage。 不过，如果你有现有的 VSPackage，我们建议将其更新为新技术，以获得更好的性能和可靠性。
 
@@ -34,5 +34,5 @@ ms.locfileid: "121338015"
 |[编辑器中的旧接口](/previous-versions/visualstudio/visual-studio-2015/extensibility/legacy-interfaces-in-the-editor?preserve-view=true&view=vs-2015)|指向说明如何从现有代码访问核心编辑器的文档的链接。|
 |[创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md)|指向说明如何创建自定义编辑器的文档的链接。|
 |[旧版语言服务扩展性](../extensibility/internals/legacy-language-service-extensibility.md)|文档链接，这些文档描述如何将编程语言集成到 Visual Studio。|
-|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|介绍 MEF Managed Extensibility Framework () 。|
+|[Managed Extensibility Framework (MEF)](/dotnet/framework/mef/index)|介绍MANAGED EXTENSIBILITY FRAMEWORK (MEF) 。|
 |[Windows Presentation Foundation](/dotnet/framework/wpf/index)|介绍 WPF Windows Presentation Foundation () 。|

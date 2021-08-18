@@ -28,7 +28,7 @@ ms.locfileid: "121359736"
 
 2. 确定哪些编辑器用于代码和其他项目元素。 可以使用核心编辑器或标准编辑器，也可以创建和使用特定于项目的编辑器。 有关详细信息，请参阅[创建自定义编辑器和设计器和](../../extensibility/creating-custom-editors-and-designers.md)[如何：打开特定于项目的编辑器](../../extensibility/how-to-open-project-specific-editors.md)。
 
-3. 确定项目项在对象浏览器 和 类视图 **中的参与级别**。  有关详细信息，请参阅 [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
+3. 确定项目项在对象浏览器 和对象类视图 **的参与级别**。  有关详细信息，请参阅 [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)。
 
 4. 基于之前为项目和项目项做出的设计决策派生新类。
 
@@ -56,11 +56,11 @@ ms.locfileid: "121359736"
 
 6. 测试、调试和启动项目类型。
 
-7. 将 设置为 的值 **，Project"** 添加引用"对话框的"项目 `VARIANT_TRUE` "选项卡中 `VSHPROPID_ShowProjInSolutionPage` 显示项目。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
+7. 将 设置为 的值 **，Project"** 添加引用"对话框的"项目" `VARIANT_TRUE` 选项卡中显示项目 `VSHPROPID_ShowProjInSolutionPage` 。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A>。
 
 8. 创建 Microsoft Installer *(.msi)* 文件以安装 VSPackage。 有关详细信息，请参阅使用 Windows 安装程序安装[VSPackage、](../../extensibility/internals/installing-vspackages-with-windows-installer.md)[注册](../../extensibility/internals/registering-a-project-type.md)项目类型和[VSPackage。](../../extensibility/internals/vspackages.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visual Studio 中的层次结构](../../extensibility/internals/hierarchies-in-visual-studio.md)
 - [何时创建项目类型](../../extensibility/internals/when-to-create-project-types.md)
 - [创建项目类型](../../extensibility/internals/creating-project-types.md)

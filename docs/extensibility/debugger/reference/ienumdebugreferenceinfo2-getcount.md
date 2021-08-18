@@ -1,6 +1,6 @@
 ---
-description: 返回枚举DEBUG_REFERENCE_INFO元素数。
-title: IEnumDebugReferenceInfo2：：GetCount |Microsoft Docs
+description: 返回枚举中 DEBUG_REFERENCE_INFO 元素的数目。
+title: IEnumDebugReferenceInfo2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 045bdf53bd131a970dd17811dbf43b7d1b5589a8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f22197625989a3fbc74852729fc2166778da0d92decc17c70c8b81746e5183df
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125434"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121377232"
 ---
 # <a name="ienumdebugreferenceinfo2getcount"></a>IEnumDebugReferenceInfo2::GetCount
-返回 枚举中的元素数。
+返回枚举中的元素数。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>参数
 `pcelt`\
-[out]返回 枚举中的元素数。
+弄返回枚举中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不是指定只需实现 、、 和 方法的 com 枚举 `Next` `Clone` `Skip` `Reset` 接口的一部分。
+ 此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
 
 ## <a name="see-also"></a>请参阅
 - [IEnumDebugReferenceInfo2](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2.md)

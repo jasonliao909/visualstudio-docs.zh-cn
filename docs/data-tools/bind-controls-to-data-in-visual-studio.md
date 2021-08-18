@@ -13,24 +13,25 @@ ms.assetid: be8b6623-86a6-493e-ab7a-050de4661fd6
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a237d07af14cd6f31af300eff050c8952fd9840e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: adbe3262e1da3c0d28f16bf32d94952c6565e142
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081927"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将控件绑定到数据
 
-通过将数据绑定到控件，可以向应用程序的用户显示数据。 可以通过将项从 " **数据源** " 窗口拖到设计图面上或 Visual Studio 中的图面上，来创建这些数据绑定控件。
+通过将数据绑定到控件，可以向应用程序的用户显示数据。 您可以通过将 "**数据源**" 窗口中的项拖到设计图面上或 Visual Studio 的图面上的控件来创建这些数据绑定控件。
 
-本主题描述可用于创建数据绑定控件的数据源。 它还描述了数据绑定中涉及的一些常规任务。 有关如何创建数据绑定控件的更具体的详细信息，请参阅 [在 Visual studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md) 和 [将 WPF 控件绑定到 visual studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+本主题描述可用于创建数据绑定控件的数据源。 它还描述了数据绑定中涉及的一些常规任务。 有关如何创建数据绑定控件的更具体的详细信息，请参阅[将 Windows 窗体控件绑定到 Visual Studio 中的数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)，并[将 WPF 控件绑定到 Visual Studio 中的数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
 ## <a name="data-sources"></a>数据源
 
-在数据绑定的上下文中，数据源表示内存中的数据，这些数据可以绑定到您的用户界面。 在实际情况下，数据源可以是实体框架类、数据集、封装在 .NET 代理对象中的服务终结点、LINQ to SQL 类或任何 .NET 对象或集合。 某些数据源支持通过从“数据源”窗口拖动项来创建数据绑定控件，而其他数据源则不能。 下表显示了支持的数据源。
+在数据绑定的上下文中，数据源表示内存中的数据，这些数据可以绑定到您的用户界面。 在实际情况下，数据源可以是实体框架类、数据集、封装在 .net 代理对象中的服务终结点、LINQ to SQL 类或任何 .net 对象或集合。 某些数据源支持通过从“数据源”窗口拖动项来创建数据绑定控件，而其他数据源则不能。 下表显示了支持的数据源。
 
 | 数据源 | Windows 窗体设计器中的拖放支持 | WPF 设计器中的拖放支持 | Silverlight 设计器中的拖放支持 |
 | - | - | - | - |
@@ -43,7 +44,7 @@ ms.locfileid: "99859341"
 
 1. 使用 **实体数据模型** 向导生成模型，然后将这些对象拖到设计器中。
 
-2. LINQ to SQL 类不会出现在“数据源”窗口中。 不过，你可以添加基于 LINQ to SQL 类的新对象数据源，然后将这些对象拖到设计器来创建数据绑定控件。 有关详细信息，请参阅 [演练：创建 LINQ to SQL 类 (O-R 设计器) ](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
+2. LINQ to SQL 类不会出现在“数据源”窗口中。 不过，你可以添加基于 LINQ to SQL 类的新对象数据源，然后将这些对象拖到设计器来创建数据绑定控件。 有关详细信息，请参阅[演练：创建 LINQ to SQL 类 (O-R 设计器) ](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)。
 
 ## <a name="data-sources-window"></a>“数据源”窗口
 
@@ -71,4 +72,4 @@ ms.locfileid: "99859341"
 ## <a name="see-also"></a>请参阅
 
 - [适用于 NET 的 Visual Studio Data Tools](../data-tools/visual-studio-data-tools-for-dotnet.md)
-- [数据绑定 Windows 窗体](/dotnet/framework/winforms/windows-forms-data-binding)
+- [Windows窗体数据绑定](/dotnet/framework/winforms/windows-forms-data-binding)

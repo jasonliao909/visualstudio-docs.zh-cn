@@ -48,10 +48,10 @@ int DetachDebugger_V7 ();
 ## <a name="remarks"></a>备注
 
 > [!WARNING]
-> 从 Visual Studio 2005 起，不再使用此方法，应始终返回 `E_NOTIMPL` 。
+> 自 Visual Studio 2005 起，不再使用此方法，应始终返回 `E_NOTIMPL` 。
 
 当调试器意外退出时，将调用此方法。 调用此方法时，DE 应像用户分离程序一样恢复程序。 不应再发送调试事件。 程序应位于从调试器的另一个实例附加的状态。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [IDebugProgramNode2](../../../extensibility/debugger/reference/idebugprogramnode2.md)

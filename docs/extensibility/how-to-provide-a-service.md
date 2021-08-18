@@ -32,9 +32,9 @@ VSPackage 可以提供其他 VSPackage 可以使用的服务。 若要提供服�
 
 ## <a name="implement-a-service"></a>实现服务
 
-1. 使用 Visual C# 扩展性 VSIX (**文件**"Project  >    >    >    >  创建  >  **VSIX 项目Project) 。**
+1. 使用 Visual C# 扩展性 VSIX (**Visual** C# 扩展性 Project 创建  >    >    >    >    >  **VSIX 项目Project) 。**
 
-2. 将 VSPackage 添加到项目。 在"包"中选择解决方案资源管理器，**然后单击"** 添加新项  >    >  **""Visual C#** 项  >  **扩展** 性  >  **Visual Studio包"。**
+2. 将 VSPackage 添加到项目。 选择项目中的项目节点解决方案资源管理器"添加新项  >    >  **""Visual C#** 项扩展性Visual Studio  >    >  **包"。**
 
 3. 若要实现服务，需要创建三种类型：
 
@@ -141,7 +141,7 @@ VSPackage 可以提供其他 VSPackage 可以使用的服务。 若要提供服�
 
      的值 `helloString` 应为"Hello"。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：获取服务](../extensibility/how-to-get-a-service.md)
 - [使用和提供服务](../extensibility/using-and-providing-services.md)
 - [服务要素](../extensibility/internals/service-essentials.md)

@@ -1,6 +1,6 @@
 ---
 description: 检索此实例的类型参数参数。
-title: IDebugGenericFieldInstance：： GetTypeArguments |Microsoft Docs
+title: IDebugGenericFieldInstance：：GetTypeArguments |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -46,16 +46,16 @@ int GetTypeArguments(
 
 ## <a name="parameters"></a>参数
 `cArgs`\
-中类型参数的数目。
+[in]类型参数的数量。
 
 `ppArgs`\
-弄返回类型参数的数组。
+[out]返回类型参数的数组。
 
 `pcArgs`\
-[in，out]数组中的成员数 `ppArgs` 。
+[in， out]数组中的成员 `ppArgs` 数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericFieldInstance](../../../extensibility/debugger/reference/idebuggenericfieldinstance.md)

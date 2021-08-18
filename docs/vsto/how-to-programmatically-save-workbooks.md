@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fdfcd38aa89d292998f1f1b7997f449b657fb6f4a89efa38c2bcae68516cd8ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf95ff4a74b2ad722f279a6a4125b7a505347afb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267918"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026156"
 ---
 # <a name="how-to-programmatically-save-workbooks"></a>如何：以编程方式保存工作簿
   可通过多种方式保存工作簿。 可以保存工作簿而不更改路径。 如果以前没有保存过工作簿，则应该通过指定一个路径来保存工作簿。 如果没有显式路径，Microsoft Office Excel 会使用创建文件时为其指定的名称将文件保存在当前文件夹中。 还可以保存工作簿的副本，而不修改内存中打开的工作簿。
@@ -85,7 +85,7 @@ ms.locfileid: "121267918"
 ## <a name="robust-programming"></a>可靠编程
  以交互方式取消任何保存或复制工作簿的方法将在代码中引发运行时错误。 例如，如果过程调用 方法，但不禁用来自 Excel 的提示，并且用户在出现提示时单击"取消"，Excel将引发 <xref:Microsoft.Office.Tools.Excel.Workbook.SaveAs%2A> 运行时错误。 
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [工作簿宿主项](../vsto/workbook-host-item.md)
 - [如何：以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)

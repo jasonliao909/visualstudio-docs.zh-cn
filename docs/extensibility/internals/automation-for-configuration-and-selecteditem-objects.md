@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6764e074bf061f3b6426e2b1577bb5b16c85043e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: eac3740444d1c48a196d717e073da035f5920aec468ff216ad22ebdc6cb65918
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095044"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121359749"
 ---
 # <a name="automation-for-configuration-and-selecteditem-objects"></a>配置和 SelectedItem 对象的自动化
 

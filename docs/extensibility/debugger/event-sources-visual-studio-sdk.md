@@ -1,6 +1,6 @@
 ---
-title: Visual Studio SDK)  (事件源 |Microsoft Docs
-description: 了解 Visual Studio 调试中事件的两个源：调试引擎和会话调试管理器。
+title: 事件源 (Visual Studio SDK) |Microsoft Docs
+description: 了解调试中的两个Visual Studio源：调试引擎和会话调试管理器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,18 +13,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e927d95c7d6ea526fc1400ea22be8243809fba4591833eb442268180aa1b4847
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f760b56599d91ba5f8cdcadf9e2eb0f826dee664
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096604"
 ---
-# <a name="event-sources-visual-studio-sdk"></a>Visual Studio SDK (事件源) 
-事件有两个源：调试引擎 (DE) 和会话调试管理器 (SDM) 。 从 DE 发送的事件具有非 NULL 引擎，而从 SDM 发送的事件具有 NULL 引擎。
+# <a name="event-sources-visual-studio-sdk"></a>事件源 (Visual Studio SDK) 
+有两个事件源：调试引擎 (DE) 和会话调试管理器 (SDM) 。 从 DE 发送的事件具有非 NULL 引擎，而从 SDM 发送的事件具有 NULL 引擎。
 
 ## <a name="example"></a>示例
-下面的示例演示如何将 **IDebugProgramCreateEvent2** 从 DE 发送到 SDM。
+以下示例演示如何将 **IDebugProgramCreateEvent2** 从 DE 发送到 SDM。
 
 ```csharp
 CDebugProgramCreateEvent* pProgramCreateEvent = new CDebugProgramCreateEvent();
