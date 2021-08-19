@@ -1,5 +1,5 @@
 ---
-title: 演练：使用 C++ 模板创建 SDK |Microsoft Docs
+title: 演练：使用 C++ 语言创建 SDK |Microsoft Docs
 description: 了解如何创建本机 C++ 数学库 SDK，将 SDK 打包为 Visual Studio 扩展，然后使用此演练创建应用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6298300127cbcbfec706bb5cf9fcda89a68c12cf
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 8be3320976e8a51acb37be95334f609d8e4f6b3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049228"
 ---
 # <a name="walkthrough-create-an-sdk-using-c"></a>演练：使用 C++ 创建 SDK
 本演练演示如何创建本机 C++ 数学库 SDK，将 SDK 打包为 Visual Studio 扩展 (VSIX) ，然后使用它创建应用。 演练分为以下步骤：
@@ -34,7 +34,7 @@ ms.locfileid: "122334630"
 
 1. 在菜单栏上，依次选择“文件” > “新建” > “项目”。
 
-2. 在模板列表中，展开"Visual C++Windows"，然后选择"通用应用" (Windows DLL)  >  模板。  在" **名称** "框中，指定 `NativeMath` ，然后选择"确定 **"** 按钮。
+2. 在模板列表中，展开"Visual C++Windows  >  **通用**"，然后选择"**通用** 应用" (Windows DLL) 模板。 在" **名称** "框中，指定 `NativeMath` ，然后选择"确定 **"** 按钮。
 
 3. 更新 *NativeMath.h* 以匹配以下代码。
 
@@ -68,7 +68,23 @@ ms.locfileid: "122334630"
 
 4. 使用以下 XML 替换现有 XML。
 
-    :::code language="xml" source="../snippets/cpp/VS_Snippets_VSSDK/creatingansdkusingcpp/cpp/nativemathvsix/source.extension.vsixmanifest" id="Snippet6":::
+    ```xml
+    <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+      <Metadata>
+        <Identity Id="NativeMathVSIX..c6b3cae1-e7e2-4e71-90f6-21017ea0dff7" Version="1.0" Language="en-US" Publisher="MyName" />
+        <DisplayName>Native Math SDK</DisplayName>
+        <Description>Native Math Library w/ Windows Runtime Additions</Description>
+      </Metadata>
+      <Installation Scope="Global" AllUsers="true">
+        <InstallationTarget Id="Microsoft.ExtensionSDK" TargetPlatformIdentifier="Windows" TargetPlatformVersion="v8.0" SdkName="NativeMathSDK" SdkVersion="1.0" />
+      </Installation>
+      <Dependencies>
+      </Dependencies>
+      <Assets>
+        <Asset Type="Microsoft.ExtensionSDK" d:Source="File" Path="SDKManifest.xml" />
+      </Assets>
+    </PackageManifest>
+    ```
 
 5. 在 **解决方案资源管理器** 中，打开 **NativeMathVSIX** 项目的快捷菜单，然后选择"**添加新**  >  **项"。**
 
@@ -95,20 +111,20 @@ ms.locfileid: "122334630"
                 \Neutral
     ```
 
-9. 在 **解决方案资源管理器** 中，打开"解决方案 **""NativeMath"** 的快捷菜单，然后选择"打开"文件资源管理器。 
+9. 在 **解决方案资源管理器** 中，打开解决方案 **"NativeMath"** 的快捷菜单，然后选择"打开"中的 **文件资源管理器。**
 
 10. 在 **文件资源管理器** 中，复制 *$SolutionRoot$\NativeMath\NativeMath.h，* 然后在 **解决方案资源管理器** 的 **NativeMathVSIX** 项目下，将其粘贴到 *$SolutionRoot$\NativeMathVSIX\DesignTime\CommonConfiguration\Neutral\Include \\* 文件夹中。
 
      复制 *$SolutionRoot$\Debug\NativeMath\NativeMath.lib，* 然后将其粘贴到 *\\ $SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86* 文件夹中。
 
-     复制 *$SolutionRoot$\Debug\NativeMath\NativeMath.dll* 并将其粘贴到 *\\ $SolutionRoot$\NativeMathVSIX\Redist\Debug\x86* 文件夹中。
+     复制 *$SolutionRoot$\Debug\NativeMath\NativeMath.dll* 并将其粘贴到 *$SolutionRoot$\NativeMathVSIX\Redist\Debug\x86 \\* 文件夹中。
 
      复制 *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.dll* 并将其粘贴到 *$SolutionRoot$\NativeMathVSIX\Redist\Debug\x86* 文件夹中。
      复制 *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.winmd* 并将其粘贴到 *$SolutionRoot$\NativeMathVSIX\References\CommonConfiguration\Neutral* 文件夹中。
 
      复制 *$SolutionRoot$\Debug\NativeMathWRT\NativeMathWRT.pri，* 并将其粘贴到 *$SolutionRoot$\NativeMathVSIX\References\CommonConfiguration\Neutral* 文件夹中。
 
-11. 在 *$SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86 \\* 文件夹中，创建名为 *NativeMathSDK.props* 的文本文件，然后将以下内容粘贴到该文件夹中：
+11. 在 *$SolutionRoot$\NativeMathVSIX\DesignTime\Debug\x86 \\* 文件夹中，创建名为 *NativeMathSDK.props* 的文本文件，然后将以下内容粘贴到该文件中：
    
     ```xml
     <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
@@ -127,7 +143,7 @@ ms.locfileid: "122334630"
 
 12. 在菜单栏上，选择 **"查看** 其他Windows  >    >  **属性窗口** (键盘：选择 **F4** 键) 。
 
-13. 在 **解决方案资源管理器** 中，选择 **NativeMathWRT.winmd** 文件。 在"**属性"** 窗口中，将"**生成操作**"属性更改为 **"内容**"，然后将 **"在 VSIX 中包括"属性** 更改为 **True。**
+13. 在 **解决方案资源管理器** 中，选择 **NativeMathWRT.winmd** 文件。 在" **属性"** 窗口中，将" **生成操作** "属性更改为 **"内容**"，然后将 **"在 VSIX 中包括"属性** 更改为 **True**。
 
      对 **NativeMath.h 文件重复** 此过程。
 
@@ -147,7 +163,7 @@ ms.locfileid: "122334630"
 
 15. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
-16. 在 **解决方案资源管理器** 中，打开 **NativeMathVSIX** 项目的快捷菜单，然后选择 "在 **文件资源管理器"**。
+16. 在 **解决方案资源管理器** 中，打开 **NativeMathVSIX** 项目的快捷菜单，然后选择"打开"中的 **文件资源管理器。**
 
 17. 在 **文件资源管理器** 中，导航到 *$SolutionRoot$\NativeMathVSIX\bin\Debug* 文件夹，然后运行 *NativeMathVSIX.vsix* 开始安装。
 

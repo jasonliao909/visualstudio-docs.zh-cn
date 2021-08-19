@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d19d6b92b4b7eb3196d42c6c18d93ebfb091c364eaed4e3656e1c9706abc3cfd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: da8c86bb52c09c91b0bde2f309eb212e88cf0a03
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153246"
 ---
 # <a name="idebugthread2cansetnextstatement"></a>IDebugThread2::CanSetNextStatement
 确定是否可以将当前指令指针设置为给定的堆栈帧。

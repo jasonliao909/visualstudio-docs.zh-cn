@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9fb7a8a2a3ae7a8b0f7f3898fdf5b13b105f58886f1d5586f98ad625cbaa5d0a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a2d82c4b55fbc037843f80fef113ba2f7a3e1502
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424119"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100005"
 ---
 # <a name="how-to-map-schemas-to-worksheets-inside-visual-studio"></a>如何：将架构映射到 Visual Studio 中的工作表
   在 Visual Studio 中打开工作表时，可以将 XML 架构映射到工作表。 使用与在 Visual Studio 之外打开工作簿时使用的相同 Microsoft Office Excel 工具。 无论在创建 Excel 解决方案之前还是之后将架构映射到工作表，Office 项目都将创建相同的对象。

@@ -1,5 +1,5 @@
 ---
-title: 持久保存项目Project属性|Microsoft Docs
+title: 持久保存项Project属性|Microsoft Docs
 description: 了解如何通过将 属性存储在扩展项目类型的项目文件中来保留添加到项目项的属性。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e201b60ea4634c6960d6e98c64214deadd62a6b7608cb73d15b71bf2a497254f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6747329014eced976fd6b21737c86dd7e073943d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121305277"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102124"
 ---
 # <a name="persist-the-property-of-a-project-item"></a>保留项目项的 属性
 你可能想要保留添加到项目项的属性，例如源文件的作者。 为此，可以将 属性存储在项目文件中。

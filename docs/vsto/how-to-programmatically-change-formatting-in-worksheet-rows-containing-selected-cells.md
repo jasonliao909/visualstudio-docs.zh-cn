@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 641457a61f368db9ded75f27b335b345aab3019665c573d7589cea10beed5b3f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3b262db1aa9fe9d97a6d89fa99a49c11c75945aa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099940"
 ---
 # <a name="how-to-programmatically-change-formatting-in-worksheet-rows-containing-selected-cells"></a>如何：以编程方式更改包含所选单元格的工作表行中的格式设置
   可以更改包含所选单元格的整个行的字体，使文本为粗体。

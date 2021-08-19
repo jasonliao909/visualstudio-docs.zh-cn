@@ -12,14 +12,15 @@ ms.assetid: a117365d-320d-4bb5-b61d-3e6457b8f6bc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0488c9d6570d9ed127c5b021ddfcf7d74f0dd856
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e5e7c2e39ad5cd1068c49001b2803297277d39e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062923"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102397"
 ---
 # <a name="parameter-info-in-a-legacy-language-service-2"></a>旧版语言服务中的参数信息2
 IntelliSense 参数信息是一个工具提示，当用户键入参数列表开始字符时，该工具会显示方法的签名 (通常为方法参数列表的左括号) 。 在输入每个参数并且参数分隔符 (通常是键入逗号) 时，工具提示将更新以显示以粗体显示的下一个参数。

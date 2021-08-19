@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ee53fffbe97461d61d4857be1bf347cf1aa60738446c68b8814c6024e5880743
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c70e331de05b3288e1105832616acb1d3359b049
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137829"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
 指定要检索的有关线程的信息。

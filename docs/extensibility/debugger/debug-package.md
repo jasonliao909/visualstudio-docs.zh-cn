@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 98ed83de7eab5045ac74b96c8615fa795abd27bca00df2ed2fe0bbc25ff9b02e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c2692f99388fe5cba3103605480dda1f27b62ff3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153597"
 ---
 # <a name="debug-package"></a>调试包
 调试包在 Visual Studio shell 中运行并处理所有 UI。 它使用 Visual Studio 调试接口，并与会话调试管理器 (SDM) 通信。
@@ -29,7 +29,7 @@ ms.locfileid: "121417856"
 
  调试包由 *vsdebug.dll* 实现。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [会话调试管理器](../../extensibility/debugger/session-debug-manager.md)
 - [堆栈帧](../../extensibility/debugger/stack-frames.md)
 - [线程](../../extensibility/debugger/threads.md)
