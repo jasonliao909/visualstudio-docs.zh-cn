@@ -1,6 +1,6 @@
 ---
-description: 此方法获取表示完全限定的方法名称的字段。
-title: IDebugSymbolProvider：：GetMethodFieldsByName |Microsoft Docs
+description: 此方法获取表示完全限定方法名称的字段。
+title: IDebugSymbolProvider：： GetMethodFieldsByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e4858d9c341ed651ed4d658388f1152e911cb6e5225920c0546679b200d90aad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0cd7053f8d4bea283a47d6cce8042c9a303cb8e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448775"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063702"
 ---
 # <a name="idebugsymbolprovidergetmethodfieldsbyname"></a>IDebugSymbolProvider::GetMethodFieldsByName
-此方法获取表示完全限定的方法名称的字段。
+此方法获取表示完全限定方法名称的字段。
 
 ## <a name="syntax"></a>语法
 
@@ -47,19 +47,19 @@ int GetMethodFieldsByName(
 
 ## <a name="parameters"></a>参数
 `pszFullName`\
-[in]方法名称。
+中方法名称。
 
 `nameMatch`\
-[in]选择匹配类型，例如区分大小写。
+中选择匹配的类型，例如区分大小写。
 
 `ppEnum`\
-[out]返回 [与此方法关联的字段的 IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 枚举器。
+弄返回与此方法关联的字段的 [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 枚举器。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 例如，如果方法重载，则该方法可以与多个字段相关联。
+ 例如，如果重载了多个字段，则可以将该方法关联。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)

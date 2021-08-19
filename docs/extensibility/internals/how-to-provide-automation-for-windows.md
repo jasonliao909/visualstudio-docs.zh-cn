@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8d84e58bb91d49382fe4713c9ecdb6ca081d13141ef3cc2080781ca2e6b666f1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4631c05514382c5fc082a650178ea0b7f78191f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388638"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063273"
 ---
 # <a name="how-to-provide-automation-for-windows"></a>如何：为 windows 提供自动化
 
@@ -43,6 +43,6 @@ ms.locfileid: "121388638"
 
 此外，编辑器还可以 <xref:EnvDTE.Document.Object%2A> 通过实现或接口，提供通过方法检索到的 VSPackage 特定的自动化对象 `IVsExtensibleObject` `IExtensibleObject` 。 [VSSDK 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)提供了 RTF 文档特定的自动化对象。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsExtensibleObject>

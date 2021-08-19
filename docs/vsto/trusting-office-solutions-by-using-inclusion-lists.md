@@ -1,6 +1,6 @@
 ---
 title: 使用包含列表信任 Office 解决方案
-description: 了解包含列表如何使用户能够向使用标识发布者的证书进行签名的 Office 解决方案授予信任。
+description: 了解包含列表如何使用户能够向使用标识发布者的证书签名 Office 解决方案授予信任。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9a084ad152f178b4dd03e986eb06718b0fb47c98
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c651a3659d4165d359453df5f64080a2d57b229f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968796"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046251"
 ---
 # <a name="trust-office-solutions-by-using-inclusion-lists"></a>使用包含列表信任 Office 解决方案
   包含列表让用户能够向使用标识发布者的证书进行签名的 Office 解决方案授予信任。 包含列表是用户特定的，并可用于文档级自定义项和 VSTO 外接程序。
@@ -32,7 +33,7 @@ ms.locfileid: "99968796"
  当用户启动未针对该用户授予信任的 Office 解决方案时，Microsoft Office 解决方案将使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 信任提示来提示该用户进行安全决策。 如果用户决定信任该解决方案，则将运行自定义项，并且下次不再提示该用户。
 
 ## <a name="inclusion-list-and-windows-installer"></a>包含列表和 Windows Installer
- 使用 Windows Installer 将 Office 解决方案安装到 *Program Files* 目录中需要管理员权限。 对于 *Program Files* 目录中的 Office 解决方案，Visual Studio Tools for Office 运行时将不再检查包含列表，因为已向 office 解决方案授予 FullTrust 权限。
+ 使用 Windows Installer 将 Office 解决方案安装到 *Program Files* 目录中需要管理员权限。 对于 *Program Files* 目录中的 Office 解决方案，Visual Studio Tools for Office 运行时将不再检查包含列表，因为 Office 解决方案已被授予 FullTrust 权限。
 
 ## <a name="clickonce-trust-prompt"></a>ClickOnce 信任提示
  通过使用 Office 解决方案的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)] 实现，管理员可以将信任提示级别配置为允许提示、禁用提示或需要受信任的证书。 使用控制包含列表访问权限的注册表项完成此配置。
@@ -44,6 +45,6 @@ ms.locfileid: "99968796"
 ## <a name="structure-of-the-inclusion-list"></a>包含列表的结构
  一个有效的包含列表条目由两部分组成：部署清单的路径和用于对解决方案进行签名的公钥。 将解决方案添加到包含列表后，则将其视为受信任。 运行 Office 解决方案时，Office 应用程序将比较包含列表中的公钥与部署清单中的签名密钥，从而验证当前正在运行的解决方案与原始受信任版本是否相同。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [向 Office 解决方案授予信任](../vsto/granting-trust-to-office-solutions.md)
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)

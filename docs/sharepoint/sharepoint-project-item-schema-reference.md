@@ -1,6 +1,6 @@
 ---
-title: SharePoint 项目项架构参考 |Microsoft Docs
-description: 请参阅 SharePoint 项目项 XML 架构引用 (ProjectItemModelSchema) 的概述，用于验证 spdata 文件的内容。
+title: SharePoint Project项架构参考|Microsoft Docs
+description: 请参阅 ProjectItemModelSchema.xsd) 项目项 XML 架构参考 () 项目项 XML 架构参考的概述，该引用用于验证 .spdata 文件的内容。 SharePoint
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -23,35 +23,36 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 466bc68ca002914b64698d7cd87f98ff276bfc0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5dbeefe02cf917ac03aeb558acdb5c609543952e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115507"
 ---
-# <a name="sharepoint-project-item-schema-reference"></a>SharePoint 项目项架构参考
-  Visual Studio 使用 SharePoint 项目项架构来验证 *spdata* 文件的内容。 *Spdata* 文件指定 SharePoint 项目项的内容和行为。 有关 SharePoint 项目项的内容的详细信息，请参阅 [为 sharepoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
+# <a name="sharepoint-project-item-schema-reference"></a>SharePoint项目项架构引用
+  Visual Studio项目SharePoint架构来验证 *.spdata 文件* 的内容。 *.spdata* 文件指定项目项SharePoint和行为。 有关项目项SharePoint的详细信息，请参阅为项目项 创建SharePoint[模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)。
 
- SharePoint 项目项架构名为 ProjectItemModelSchema，默认情况下安装在 (x86) % \ Microsoft Visual Studio 11.0 \ Xml\schemas 的% Program Files 中。
+ SharePoint项目项架构名为 ProjectItemModelSchema.xsd，默认情况下安装在 %Program Files (x86) %\Microsoft Visual Studio 11.0\Xml\Schemas 中。
 
- 根元素是 [项目](../sharepoint/projectitem-element.md) 项元素。 下表描述了该架构定义的所有元素。
+ 根元素是 [ProjectItem](../sharepoint/projectitem-element.md) 元素。 下表描述了架构定义的所有元素。
 
 |元素|说明|
 |-------------|-----------------|
-|[ExtensionData](../sharepoint/extensiondata-element.md)|表示与 SharePoint 项目项关联的自定义数据项的集合。|
-|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|表示与 SharePoint 项目项关联的自定义数据项，以键/值格式表示。 键和值都必须是字符串。|
-|[FeatureProperties](../sharepoint/featureproperties-element.md)|表示在将功能部署到 SharePoint 时包含的属性值的集合。 部署功能后，可以在代码中访问属性值。|
-|[FeatureProperty](../sharepoint/featureproperty-element.md)|表示在将功能部署到 SharePoint 时包含的自定义属性。 部署功能后，可在代码中访问属性。|
-|[文件](../sharepoint/files-element.md)|指定要与 SharePoint 项目项一起部署的文件，例如功能元素文件或项目的输出。|
-|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。|
-|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|表示在将项目项部署到 SharePoint 时要包含的 SharePoint 文件（如功能元素文件）。|
-|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|表示映射文件夹。|
-|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|表示在将项目项部署到 SharePoint 时要包含的项目的输出。|
-|[SafeControl](../sharepoint/safecontrol-element.md)|表示一个 ASPX 控件或 Web 部件，在 SharePoint 站点上的任何 ASPX 页上，此控件或 Web 部件被指定为安全，可供任何用户访问。|
-|[SafeControls](../sharepoint/safecontrols-element.md)|表示 ASPX 控件和 Web 部件的集合，这些控件和在 SharePoint 站点上的任何 ASPX 页上被指定为可供任何用户访问的安全。|
+|[ExtensionData](../sharepoint/extensiondata-element.md)|表示与项目项关联的自定义数据SharePoint的集合。|
+|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|表示与项目项关联的自定义数据SharePoint键/值格式。 键和值都必须是字符串。|
+|[FeatureProperties](../sharepoint/featureproperties-element.md)|表示一个属性值集合，这些属性值在部署到功能时随功能SharePoint。 部署功能后，可以访问代码中的属性值。|
+|[FeatureProperty](../sharepoint/featureproperty-element.md)|表示一个自定义属性，该属性在部署到配置时随功能SharePoint。 部署功能后，可以访问代码中的 属性。|
+|[文件](../sharepoint/files-element.md)|指定要与项目SharePoint一起部署的文件，例如 Feature 元素文件或项目的输出。|
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示SharePoint项。|
+|[ProjectItemFile](../sharepoint/projectitemfile-element.md)|表示SharePoint项目项时要与项目项一起包含的一个SharePoint。|
+|[ProjectItemFolder](../sharepoint/projectitemfolder-element.md)|表示映射的文件夹。|
+|[ProjectOutputFile](../sharepoint/projectoutputfile-element.md)|表示将项目项部署到项目项时要包含的项目SharePoint。|
+|[SafeControl](../sharepoint/safecontrol-element.md)|表示一个 ASPX 控件或 Web 部件，该控件或 Web 部件被指定为安全，任何用户都有权访问该站点的任何 ASPX SharePoint页。|
+|[SafeControls](../sharepoint/safecontrols-element.md)|表示 ASPX 控件和Web 部件集合，这些控件和对象被指定为安全，任何用户都有权访问 SharePoint 站点上的任何 ASPX 页。|
 
-## <a name="see-also"></a>另请参阅
-- [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+## <a name="see-also"></a>请参阅
+- [为项目项创建项模板SharePoint模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

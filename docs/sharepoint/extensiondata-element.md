@@ -1,6 +1,6 @@
 ---
-title: ExtensionData 元素 |Microsoft Docs
-description: 查看有关 ExtensionData 元素的参考信息，该元素是 SharePoint 项目项架构中的一个元素。
+title: ExtensionData 元素|Microsoft Docs
+description: 查看有关 ExtensionData 元素的参考信息，该元素是项目SharePoint架构中的元素。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: f175c0b4cdc4a9b5fb9537821d2ffcc646d44bf14119a132d7561439e92f5e6a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ec317073601f766dab2042ab6c77542914e87b59
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425370"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115741"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 元素
-  表示与 SharePoint 项目项关联的自定义数据项的集合。
+  表示与项目项关联的自定义数据SharePoint的集合。
 
 ## <a name="syntax"></a>语法
 
@@ -43,25 +43,25 @@ ms.locfileid: "121425370"
 
 |元素|说明|
 |-------------|-----------------|
-|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|可选元素。<br /><br /> 表示与 SharePoint 项目项关联的自定义数据项（以键/值格式表示）。 键和值都必须是字符串。|
+|[ExtensionDataItem](../sharepoint/extensiondataitem-element.md)|可选元素。<br /><br /> 表示与项目项关联的自定义数据SharePoint键/值格式。 键和值都必须是字符串。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|说明|
 |-------------|-----------------|
-|[ProjectItem](../sharepoint/projectitem-element.md)|表示 SharePoint 项目项。 此元素是文件必需的根元素 `.spdata` 。|
+|[ProjectItem](../sharepoint/projectitem-element.md)|表示SharePoint项。 此元素是文件必需的根 `.spdata` 元素。|
 
 ## <a name="remarks"></a>备注
- 使用对象的属性将自定义数据与 SharePoint 项目项相关联时 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> ，Visual Studio 将数据保存到项目项的文件中的 **ExtensionData** 元素 `.spdata` 。 有关详细信息，请参阅[在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)。
+ 使用 对象的 属性SharePoint自定义数据与项目项关联时，Visual Studio将数据保存到项目项的 文件的 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem.ExtensionData%2A> <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItem> **ExtensionData** `.spdata` 元素。 有关详细信息，请参阅[将数据保存在项目系统的](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)扩展SharePoint中。
 
 ## <a name="element-information"></a>元素信息
 
 |属性|值|
 |-|-|
-|**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
-|**架构名称**|SharePoint Project 项架构|
-|**验证文件**|ProjectItemModelSchema|
+|**Namespace**|\/ \/ http：schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
+|**架构名称**|SharePoint Project项架构|
+|**验证文件**|ProjectItemModelSchema.xsd|
 |**可以为空**|否|
 
 ## <a name="see-also"></a>另请参阅
-- [SharePoint 项目项架构参考](../sharepoint/sharepoint-project-item-schema-reference.md)
+- [SharePoint项目项架构引用](../sharepoint/sharepoint-project-item-schema-reference.md)

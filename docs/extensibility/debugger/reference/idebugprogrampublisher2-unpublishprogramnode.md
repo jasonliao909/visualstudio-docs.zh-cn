@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b541228a86f765044f84f72cead737ff7e688f4bfa9ef05bf16c444d002c47cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 73a0c57baba0cd068d0950371de2e5bb14c4bd4d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121449087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029965"
 ---
 # <a name="idebugprogrampublisher2unpublishprogramnode"></a>IDebugProgramPublisher2::UnpublishProgramNode
  (DEs) 和会话调试管理器 (SDM) ，从可用性中删除指定的程序节点。

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 4fb899400ebae03d92d473e94012341f89acff197d53f76b710052801f2432a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b99d9a267b8fb18ec8e238191382d71f558fc3d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115598"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   与 SharePoint 项目项关联的自定义数据项（以键/值格式）。 键和值都必须是字符串。
@@ -40,7 +40,7 @@ ms.locfileid: "121352950"
 |属性|说明|
 |---------------|-----------------|
 |**Key**|必需的 **xs： string** 特性。<br /><br /> 用于存储和检索数据项的键。|
-|**值**|必需的 **xs： string** 特性。<br /><br /> 数据项的值。|
+|值|必需的 **xs： string** 特性。<br /><br /> 数据项的值。|
 
 ### <a name="child-elements"></a>子元素
  无。

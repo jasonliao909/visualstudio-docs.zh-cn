@@ -17,15 +17,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 30c8bd62801dfa26cc53f4660948e2f75d44e974a7a7126fc71a66bd3dc8791c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98a48f2c1f67c8758f9d5019e01f711192ab59b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082707"
 ---
 # <a name="use-windows-forms-controls-on-excel-worksheets"></a>在Windows工作表上Excel窗体控件
-  可以将窗体Windows添加到 Microsoft Office Excel 工作簿，其方式与向窗体Windows相同。 有关对文档使用控件的一般信息，请参阅 Windows[文档概述上的 Office 窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+  可以将窗体Windows添加到 Microsoft Office Excel 工作簿，其方式与向窗体Windows相同。 有关对文档使用控件的一般信息，请参阅 Windows[文档概述 上的 Office 窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
