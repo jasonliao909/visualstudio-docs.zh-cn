@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 234087bee08a7e0653e679ccc1a5202c4f8dc1340ae0e0d8c1dbbb2377751c88
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d03563fe84d8985ab1fd1b746a05cd0c8d43e485
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144413"
 ---
 # <a name="single-and-multi-tab-views"></a>单选项卡和多选项卡视图
 编辑器可以创建不同类型的视图。 一个示例是代码编辑器窗口，另一个是窗体设计器。
@@ -115,7 +115,7 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [支持多个文档视图](../extensibility/supporting-multiple-document-views.md)
 - [如何：将视图附加到文档数据](../extensibility/how-to-attach-views-to-document-data.md)
 - [创建自定义编辑器和设计器](../extensibility/creating-custom-editors-and-designers.md)

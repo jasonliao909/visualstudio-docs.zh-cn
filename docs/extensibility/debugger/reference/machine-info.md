@@ -1,5 +1,5 @@
 ---
-description: 描述特定计算机。
+description: 描述特定的计算机。
 title: MACHINE_INFO |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b59699c5ec284c2bb1d9534de8960b7706c1804ea95310f1a14b93fd7085d472
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e230937de42ebda2697fe4cc43fc77bbee340cfb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125369"
 ---
 # <a name="machine_info"></a>MACHINE_INFO
-描述特定计算机。
+描述特定的计算机。
 
 ## <a name="syntax"></a>语法
 
@@ -47,23 +47,23 @@ public struct MACHINE_INFO {
 
 ## <a name="members"></a>成员
  `Fields`\
- 集合中标志的组合 [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md) 枚举，用于指定初始化结构的哪些字段。
+ [MACHINE_INFO_FIELDS](../../../extensibility/debugger/reference/machine-info-fields.md)枚举中的标志的组合，用于指定要初始化结构的哪些字段。
 
  `bstrName`\
  计算机名称。 等效于调用 [GetMachineName](../../../extensibility/debugger/reference/idebugcoreserver2-getmachinename.md)。
 
  `Flags`\
- 描述计算机 [属性MACHINE_INFO_FLAGS集合](../../../extensibility/debugger/reference/machine-info-flags.md) 中的标志组合。
+ 描述计算机特性的 [MACHINE_INFO_FLAGS](../../../extensibility/debugger/reference/machine-info-flags.md) 枚举中的标志的组合。
 
 ## <a name="remarks"></a>备注
- 此结构通过调用 [GetMachineInfo 方法](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 返回。
+ 此结构由对 [GetMachineInfo](../../../extensibility/debugger/reference/idebugcoreserver2-getmachineinfo.md) 方法的调用返回。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

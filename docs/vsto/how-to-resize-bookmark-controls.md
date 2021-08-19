@@ -1,6 +1,6 @@
 ---
-title: 如何：调整书签控件的大小
-description: 了解在将书签控件添加到 Microsoft Word 文档中时，如何使用 Visual Studio 设置该控件的大小。
+title: 如何：重设书签控件的大小
+description: 了解如何在Visual Studio书签控件添加到书签文档时，使用Microsoft Word大小。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b2b2bd963b2f0b4eb574630382930eb0805909be
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 34026efaa0a5f9396c5daf3eb6b987435ca9e414
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155715"
 ---
-# <a name="how-to-resize-bookmark-controls"></a>如何：调整书签控件的大小
+# <a name="how-to-resize-bookmark-controls"></a>如何：重设书签控件的大小
   当你将 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件添加到 Microsoft Office Word 文档时，可以设置它的大小。 稍后还可以重设其大小。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
@@ -41,7 +42,7 @@ ms.locfileid: "107825779"
 
    如果将对书签的大小或位置作出重大更改，此方法很有用。
 
-  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 有关详细信息，请参阅 [如何：将书签控件添加到 Word 文档](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
+  在文档级项目中，你可以在设计时或在运行时向项目中的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档添加 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件。 有关详细信息，请参阅 [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -69,7 +70,7 @@ ms.locfileid: "107825779"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcorehostcontrolsword/ThisDocument.cs" id="Snippet3":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreHostControlsWordVB/ThisDocument.vb" id="Snippet3":::
 
-### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>在运行时在 VSTO 外接程序项目中调整书签大小
+### <a name="to-resize-a-bookmark-in-a-vsto-add-in-project-at-run-time"></a>运行时在外接程序VSTO重设书签大小
 
 1. 修改在运行时创建的 <xref:Microsoft.Office.Tools.Word.Bookmark.Start%2A> 的 <xref:Microsoft.Office.Tools.Word.Bookmark.End%2A> 和 <xref:Microsoft.Office.Tools.Word.Bookmark> 属性。
 
@@ -89,10 +90,10 @@ ms.locfileid: "107825779"
 
 3. 在“书签”  对话框中，选择想要重设其大小的书签的名称，并单击“添加” 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：向 Word 文档添加书签控件](../vsto/how-to-add-bookmark-controls-to-word-documents.md)
-- [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)
+- [使用扩展对象自动执行 Word](../vsto/automating-word-by-using-extended-objects.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [如何：调整 NamedRange 控件的大小](../vsto/how-to-resize-namedrange-controls.md)
 - [如何：调整 ListObject 控件的大小](../vsto/how-to-resize-listobject-controls.md)
-- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

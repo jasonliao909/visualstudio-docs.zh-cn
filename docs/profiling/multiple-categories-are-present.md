@@ -11,14 +11,15 @@ ms.assetid: f5c7ec07-8052-4df7-a0ca-7ec8bb3eee18
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 440a7e48414e2eddcbb0911ba3e8a6605deea22d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba1a9918a784f70519f54ea856f3b13ecd487291
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141605"
 ---
 # <a name="multiple-categories-are-present"></a>出现多个类别
 将选中在给定时间范围内包含多个活动类型的部分。 请注意，将会显示两种颜色，并且一种颜色垂直堆叠在另一种颜色之上。 这两种颜色表示给定时间范围内最常见的两种活动。 这两种活动出现的频率在竖条上以 2:1 或 1:1 的比例显示。 若要查看更多详细信息，请尝试放大线程视图的这一部分。

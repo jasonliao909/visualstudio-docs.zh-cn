@@ -12,14 +12,15 @@ ms.assetid: 8f1f6449-e03d-4a5b-9076-d3b1f84ada48
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a8f4d5612fe8ceaa4470f441133767178b119cc
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 70bd5357844dcfc9d58e09ae49cef6361b9fa995
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151764"
 ---
 # <a name="assembly-information-dialog-box"></a>“程序集信息”对话框
 

@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cceb38026a3c5c7241477f167cec1bb5a08f8f3524ac7157c79ec72d9de3d81
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb217da984fd23acdedc446724984d667e0006bf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121263278"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120746"
 ---
 # <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;引导程序 &gt; (RelatedProducts) 
 `RelatedProducts`元素定义依赖于当前产品或包含在当前产品中的其他产品。
@@ -60,7 +60,7 @@ ms.locfileid: "121263278"
 
  `DependsOnProduct` 具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Code`|包含的产品的代码名称，由 元素 `ProductCode` 的 属性 `Product` 指定。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -72,7 +72,7 @@ ms.locfileid: "121263278"
 
  `IncludesProduct` 具有以下属性。
 
-|属性|说明|
+|Attribute|说明|
 |---------------|-----------------|
 |`Code`|包含的产品的代码名称，由 元素 `ProductCode` 的 属性 `Product` 指定。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
@@ -85,5 +85,5 @@ ms.locfileid: "121263278"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)

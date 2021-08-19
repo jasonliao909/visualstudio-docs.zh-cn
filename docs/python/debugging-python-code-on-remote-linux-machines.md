@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1b6ca2f36fc85818331cd1a224b67bf97b732adf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1aeec469756ae67346fad3183a9933fa3e7bf8bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916585"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140517"
 ---
 # <a name="remotely-debug-python-code-on-linux"></a>在 Linux 上远程调试 Python 代码
 

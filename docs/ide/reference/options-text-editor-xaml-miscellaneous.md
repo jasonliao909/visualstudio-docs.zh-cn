@@ -28,14 +28,15 @@ ms.assetid: 2a420e58-a408-4e8d-9220-44eeb4f67801
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: 5679c6fd2fa0f11af045105df722ca13abf53fb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3b3a3193eeaf9d05ceeb872e32eb6c972fe013a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143659"
 ---
 # <a name="options-text-editor-xaml-miscellaneous"></a>选项, 文本编辑器, XAML, 杂项
 

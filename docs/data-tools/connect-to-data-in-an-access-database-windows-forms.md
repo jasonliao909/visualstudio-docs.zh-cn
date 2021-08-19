@@ -15,18 +15,18 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: a10073af291f927d23974c80f244255e76c659a4fbbc8617b9d9c99514c1bb9d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b8280c29649a792839e2bc18a409e76f276b71e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347752"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154935"
 ---
 # <a name="connect-to-data-in-an-access-database"></a>连接到 Access 数据库中的数据
 
 可以使用 *.mdb (.accdb* 文件或 *.accdb* 文件) Access 数据库Visual Studio。 在定义此连接后，数据会显示在“数据源”窗口中。 可以在那里将表或视图拖动到设计图面上。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 若要使用这些过程，需要 Windows Forms 或 WPF 项目以及 Access 数据库 (*.accdb* 文件) 或 Access 2000-2003 数据库 (*.mdb*) 。 按照与你的文件类型对应的过程操作。
 

@@ -1,6 +1,6 @@
 ---
 title: 优化菜单和工具栏命令 |Microsoft Docs
-description: 了解 Visual Studio 如何最大程度地减少因添加 Vspackage 和其相应命令而导致的命令混淆。
+description: 了解 Visual Studio 如何最大程度地减少因添加 vspackage 及其相应命令而导致的命令混淆。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,14 +14,15 @@ ms.assetid: 8385f1a6-1e98-4dca-83d2-fcbed7177242
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9c7d289f9dadf7b3442f937c5b50cf038c802516
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d95fd16a9d2582018313a47bea214e1788acd67c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105063053"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102579"
 ---
 # <a name="optimizing-menu-and-toolbar-commands"></a>优化菜单和工具栏命令
 添加 Vspackage 及其相应的命令 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可能会导致拥挤的 UI。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 提供有助于最大程度地减少 UI 命令混淆的方法。

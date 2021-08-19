@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: aec13b3b35c75ecaad938cd3200f3af2a87d2441
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c35563a44bdcba5de9df820cb363def7818cb5ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156395"
 ---
 # <a name="set-up-unit-testing-for-python-code"></a>为 Python 代码设置单元测试
 

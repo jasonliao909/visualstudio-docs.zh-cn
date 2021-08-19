@@ -10,12 +10,13 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 564d1598dd4458a902df5cf0ddcae37afbf9c423
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: de3734650efc8831a30f6460b32ede93449280fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868148"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148670"
 ---
 # <a name="collect-diagnostic-information-using-test-settings"></a>使用测试设置收集诊断信息
 

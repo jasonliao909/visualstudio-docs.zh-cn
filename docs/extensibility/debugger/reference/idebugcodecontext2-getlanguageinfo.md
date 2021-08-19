@@ -1,6 +1,6 @@
 ---
 description: 获取此代码上下文的语言信息。
-title: IDebugCodeContext2：： GetLanguageInfo |Microsoft Docs
+title: IDebugCodeContext2：：GetLanguageInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: be16e29ae21cec11aee264fa468b35c28cd3d348770fc856edbfa7d7e04008a8
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f1f3c2ac4eb0a41e94415ab83605f978e691311d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145128"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 获取此代码上下文的语言信息。
@@ -45,16 +45,16 @@ int GetLanguageInfo(
 
 ## <a name="parameters"></a>参数
 `pbstrLanguage`\
-[in，out]返回一个字符串，其中包含语言的名称，如 "c + +"。
+[in， out]返回一个包含语言名称的字符串，例如"C++"。
 
 `pguidLanguage`\
-[in，out]返回代码上下文语言的 GUID，例如 `guidCPPLang` 。
+[in， out]返回代码上下文的语言的 GUID，例如 `guidCPPLang` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
  至少一个参数必须返回非 null 值。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
