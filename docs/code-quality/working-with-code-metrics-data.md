@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: d68f8b43e675aa3e07b392ca8e0dfa77232245b0d8e652ee6570cd3869350e5c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 316f03d737f2e7d294eb5d743496652f8635d58d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405378"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113947"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用"代码指标结果"窗口
 

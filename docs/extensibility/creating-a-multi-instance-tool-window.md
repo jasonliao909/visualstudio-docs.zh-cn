@@ -11,14 +11,15 @@ ms.assetid: 4a7872f1-acc9-4f43-8932-5a526b36adea
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ce6122cbf4d6f85ab50e067fbbd643053ac4e4dd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 61b9f21163fd9382575aa97693e955a5cf710b6e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105089350"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089727"
 ---
 # <a name="create-a-multi-instance-tool-window"></a>创建多实例工具窗口
 您可以对工具窗口进行编程，以便可以同时打开该工具窗口的多个实例。 默认情况下，工具窗口只能打开一个实例。

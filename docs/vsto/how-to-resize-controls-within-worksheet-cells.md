@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4df6ea34f13e26ef24b32169a8f3db30298895bf05fc00ef8f4e88438910c817
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4874215879b0b9e0070b7c108226f6baf4c4296
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366116"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147942"
 ---
 # <a name="how-to-resize-controls-within-worksheet-cells"></a>如何：调整工作表单元格中的控件大小
   当调整工作表中的列或行的大小时，单元中的所有主机控件都将自动调整大小，以调整调整后的单元格的高度或宽度。 Windows默认情况下，窗体控件不会自动调整大小。
@@ -76,7 +76,7 @@ ms.locfileid: "121366116"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my excel chart/Sheet1.vb" id="Snippet6":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsExcelCS/Sheet1.cs" id="Snippet6":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [如何：在打印时隐藏工作表上的控件](../vsto/how-to-hide-controls-on-worksheets-when-printing.md)

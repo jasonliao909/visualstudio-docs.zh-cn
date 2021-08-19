@@ -1,6 +1,6 @@
 ---
 title: ClickOnce 部署疑难解答 |Microsoft Docs
-description: 本文介绍如何使用 ClickOnce 部署来诊断和解决最常见的问题。
+description: 本文将帮助你诊断和解决 ClickOnce 部署的最常见问题。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: troubleshooting
@@ -18,14 +18,15 @@ ms.assetid: 58e90012-f68b-4852-8ae9-58e361cbcc32
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: fa16c38f7e2bad03578d51da6db829ae708c4e71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 78789574a07568aeed1b5f4990bc0d1d0f9bf6cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876207"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089844"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 部署疑难解答
 本主题将帮助你诊断和解决部署中最常见的问题 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
@@ -38,7 +39,7 @@ ms.locfileid: "99876207"
 
  描述如何将计算机上的所有激活失败都重定向 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 到单个日志文件。
 
- [如何：指定 ClickOnce 部署的详细日志文件](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
+ [如何：为 ClickOnce 部署指定详细日志文件](../deployment/how-to-specify-verbose-log-files-for-clickonce-deployments.md)
 
  描述如何增加 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 写入日志文件的详细信息。
 
@@ -54,11 +55,11 @@ ms.locfileid: "99876207"
 
  介绍 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 部署不能成功的特定方案，并提供解决这些问题的步骤。
 
- [调试使用 System.web 的 ClickOnce 应用程序](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
+ [调试使用 ClickOnce 的应用程序](../deployment/debugging-clickonce-applications-that-use-system-deployment-application.md)
 
- 介绍用于调试使用 System.web 的 ClickOnce 应用程序的技术。
+ 描述用于调试使用 "ClickOnce" 的应用程序的技术。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

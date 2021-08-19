@@ -7,15 +7,16 @@ ms.assetid: 294a6f9e-b49f-4c83-b322-5ac5411b66fb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 66815265544afdee263490ed5eec92301911e3cb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c5f1f0908e3696f2f1172b50fb793b030100a9a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868161"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157067"
 ---
 # <a name="sys-vsperfcmd"></a>Sys (VSPerfCmd)
 VSPerfCmd.exe Sys 选项将采样的分析事件设置为系统调用事件（被分析的应用程序中对操作系统的函数调用），还可以选择将采样间隔内的系统调用数从默认值 10 改为其他值 。

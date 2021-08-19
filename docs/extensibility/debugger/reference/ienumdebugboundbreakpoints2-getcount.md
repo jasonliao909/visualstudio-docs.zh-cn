@@ -1,6 +1,6 @@
 ---
 description: 返回绑定断点枚举中的元素数。
-title: IEnumDebugBoundBreakpoints2：：GetCount |Microsoft Docs
+title: IEnumDebugBoundBreakpoints2：： GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: ae0284e4a0fb2d5255f10fa7098beccd7bd2ce4aa4a83e82e30602b1edf8b01b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a49a30a27f8349aee5d502565eda58eb2764dd41
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338340"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137856"
 ---
 # <a name="ienumdebugboundbreakpoints2getcount"></a>IEnumDebugBoundBreakpoints2::GetCount
-返回 枚举中的元素数。
+返回枚举中的元素数。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>参数
 `pcelt`\
-[out]返回 枚举中的元素数。
+弄返回枚举中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不是指定只需实现 、、 和 方法的 com 枚举 `Next` `Clone` `Skip` `Reset` 接口的一部分。
+ 此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)

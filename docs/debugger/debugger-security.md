@@ -17,14 +17,15 @@ ms.assetid: d4fc3c43-e844-419c-8dbb-551cc2a9b09e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d204f99dd955609dcc082d5d9bd607cfad75bb1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b86d0826cc55a7c65a0331e1d136e5af4ee4836
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154519"
 ---
 # <a name="debugger-security"></a>调试器安全
 调试其他进程的能力赋予你极广泛的权力，这是无法通过其他途经获得的，在进行远程调试时更是如此。 恶意的调试器可能对正在调试的计算机造成大范围的损害。

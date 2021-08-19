@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d83319ed679a08b8c940774b723ce3e919b4b94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4bfdecc836056cc1a786ee36937c64aac564575d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957655"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151023"
 ---
 # <a name="set-language-specific-editor-options"></a>设置语言特定的编辑器选项
 

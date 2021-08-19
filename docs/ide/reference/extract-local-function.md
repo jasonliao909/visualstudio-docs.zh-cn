@@ -6,16 +6,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 80ac8f23b5404d70b70166915cd791f2c0d7ed07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8b1f05e564f5d26c3c470917dbdf9bb9045a689a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860966"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143906"
 ---
 # <a name="extract-local-function-refactoring"></a>提取本地函数重构
 

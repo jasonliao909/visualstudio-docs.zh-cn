@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79354f67bdeb2454a41598b0e941a3f9b0849537006d8228a1b3c1e9e35eab98
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6c2f2da572c18dfce5aac6a8aa748a07347ff088
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104607"
 ---
 # <a name="frameinfo"></a>FRAMEINFO
 描述堆栈帧。
@@ -115,7 +115,7 @@ public struct FRAMEINFO {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [FRAMEINFO_FLAGS](../../../extensibility/debugger/reference/frameinfo-flags.md)
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)

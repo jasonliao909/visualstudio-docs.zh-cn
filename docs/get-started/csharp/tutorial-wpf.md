@@ -9,17 +9,17 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 ms.assetid: f84339c7-d617-4f56-bfcd-af2215c347ba
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: 268797369fbd878d99028303fa17ba71626a07fb
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9f9de66433b9795df31ea708f54012bcf8818538
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390263"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144244"
 ---
 # <a name="tutorial-create-a-simple-application-with-c"></a>教程：使用 C\# 创建简单应用
 

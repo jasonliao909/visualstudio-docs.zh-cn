@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 08ae2e13f094535eae0447cc3b8d4acf4c806a99
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 920822cca275f0285f922fc49a60af3a3b152d6b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920624"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140305"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 

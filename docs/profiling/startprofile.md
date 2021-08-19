@@ -9,15 +9,16 @@ ms.assetid: 1761311d-c9d5-48f5-b1f8-b3605829940a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a2fee1e5c7a091af1ed996d374f4ed7e60b8f2f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0501ef7fb0e5572c08a0712efa711130d21dabe0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949917"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157225"
 ---
 # <a name="startprofile"></a>StartProfile
 `StartProfile` 函数将指定分析级别的计数器设置为 1（开启）。

@@ -1,6 +1,6 @@
 ---
 title: VSIX 清单设计器|Microsoft Docs
-description: 了解 VSIX 清单设计器如何修改 VSIX 包清单文件，该文件设置扩展插件Visual Studio行为。
+description: 了解 VSIX 清单设计器如何修改 VSIX 包清单文件，该文件设置扩展插件的Visual Studio行为。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,19 +17,19 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4fc696d14ca7eb7c9efd3f038ce399cb19f1a926be8bbe515f694b5aa23d4af1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 884acc6c4af165b9174c814d47e08489dcaa3291
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158070"
 ---
 # <a name="vsix-manifest-designer"></a>VSIX 清单设计器
 修改 VSIX 包清单文件，该文件设置扩展插件Visual Studio行为。
 
  **VSIX 清单设计器** 映射到基础 VSIX 架构。 架构中的每个元素都可以通过使用设计器中的相应控件进行设置。 有关架构详细信息，请参阅 [VSIX 扩展架构 2.0 参考](../extensibility/vsix-extension-schema-2-0-reference.md)。
 
- 若要打开 **VSIX 清单设计器**，请在 解决方案资源管理器 找到 *source.extension.vsixmanifest* 文件并打开该文件。  如果文件不包含有效的 XML，则清单设计器不会打开。
+ 若要打开 **VSIX 清单设计器**，请在 解决方案资源管理器 找到 *source.extension.vsixmanifest* 文件，然后打开该文件。  如果文件不包含有效的 XML，则清单设计器不会打开。
 
 > [!NOTE]
 > 生成 *包时，source.extension.vsixmanifest* 文件将输出到 *extension.vsixmanifest。*
@@ -63,9 +63,9 @@ ms.locfileid: "121335233"
 
   **许可证** 指定包含用户许可证的文本文件（如果存在）。
 
-  **图标** 指定图形文件 (.png、.bmp、.jpeg、.ico) ，其中包含要显示在扩展管理器 中的图标（如果存在图标）。 ** **   图标图像必须为 32x32 像素，或者大小调整为这些尺寸。 如果未指定图标，则 **扩展管理器** 使用默认图标。
+  **图标** 指定图形文件 (.png、.bmp、.jpeg、.ico) ，如果图标存在，则包含要显示在扩展管理器中的图标。 ** **   图标图像必须为 32x32 像素，或者大小调整为这些尺寸。 如果未指定图标，则 **扩展管理器** 使用默认图标。
 
-  **预览图像** 指定图形文件 (.png、.bmp、.jpeg、.ico ) ，其中包含要显示在扩展管理器 中的预览图像（如果存在预览图像）。 ** **  预览图像必须为 200x200 像素。 如果未指定预览映像， **则扩展管理器** 将使用默认映像。
+  **预览图像** 指定图形文件 (.png、.bmp、.jpeg、.ico ) ，其中包含要显示在扩展管理器中的预览图像（如果存在预览图像）。 ** **  预览图像必须为 200x200 像素。 如果未指定预览映像， **则扩展管理器** 将使用默认映像。
 
   **标记** 添加要用于搜索提示的文本标记。
 
@@ -77,9 +77,9 @@ ms.locfileid: "121335233"
 
   " **安装目标"** 选项卡包含以下控件。
 
-  **安装类型** 列出 **Visual Studio扩展** 和 **扩展 SDK** 作为目标安装类型。 选项因选择的类型不同而不同。
+  **安装类型** 列出 **Visual Studio扩展****和扩展 SDK** 作为目标安装类型。 选项因选择的类型不同而不同。
 
-  **Visual Studio 扩展** 列出 **InstallationTarget** 元素，这些元素描述如何安装包以及Visual Studio此扩展的哪些产品。 每个产品按名称和版本范围单独标识。 可以将产品添加到列表、修改和删除产品。 产品的名称和版本对应于关联的 **InstallationTarget** 元素的 **Id** 和 Version 属性。
+  **Visual Studio扩展** 列出 **InstallationTarget** 元素，这些元素描述如何安装包以及Visual Studio此扩展的哪些产品。 每个产品按名称和版本范围单独标识。 可以将产品添加到列表、修改和删除产品。 产品的名称和版本对应于关联的 **InstallationTarget** 元素的 **Id** 和 Version 属性。
 
   **版本范围** 为 [12.0， 14.0]，并采用以下表示法：
 

@@ -14,15 +14,16 @@ ms.assetid: d3511bcf-cce0-4cbe-aecb-b94c7c80ad1b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 375c0f366fb32fcbe8187c2c4b5d1d3d632f7260
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: c6f7999b6b81316a28e329a3691d00f2acf5ba15
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223701"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142385"
 ---
 # <a name="callercallee-view"></a>“调用方/被调用方”视图
 “调用方/被调用方”视图显示所选函数及其父函数和子函数的分析信息。 “调用方/被调用方”视图包含三个网格：
@@ -39,7 +40,7 @@ ms.locfileid: "102223701"
 
  可通过单击列名对数据进行排序。 可将其他列添加到“调用方/被调用方”视图。 有关详细信息，请参阅[如何：自定义报告视图列](../profiling/how-to-customize-report-view-columns.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [“调用方/被调用方”视图 - 采样数据](../profiling/caller-callee-view-sampling-data.md)
 - [“调用方/被调用方”视图 - 检测数据](../profiling/caller-callee-view-instrumentation-data.md)
 - [“调用方/被调用方”视图 - .NET 内存检测数据](../profiling/caller-callee-view-net-memory-instrumentation-data.md)

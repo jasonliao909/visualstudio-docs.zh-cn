@@ -12,14 +12,15 @@ ms.assetid: 853a21ed-69f7-4817-af00-57f73e2c74b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 99cee9cfbf779bbee97c00fb76f9670e1d609b00
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e4e6ac24c6b362b0fd811baae1488b8b06840597
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965897"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142515"
 ---
 # <a name="use-memory-efficiently-when-you-build-large-projects"></a>在生成大型项目时有效使用内存
 

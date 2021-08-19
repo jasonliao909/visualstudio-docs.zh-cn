@@ -16,14 +16,15 @@ ms.assetid: bb1fe2c4-4383-436f-8326-c24cc4a46150
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3a2f124fa7e83e9f85e572276eed1851f42f7047
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ceafb3a687d533705d278fb0ca76496f1d27acdf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150607"
 ---
 # <a name="calltarget-task"></a>CallTarget 任务
 

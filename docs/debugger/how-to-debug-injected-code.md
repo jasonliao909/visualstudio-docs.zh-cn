@@ -24,14 +24,15 @@ ms.assetid: a1b4104d-d49e-451f-a91e-e39ceaf35875
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c776303d22ad7f0b48a5f7c5361750f70c1ce6b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51f2a04621f81fa4ea56b2598f48a2eefb4899ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161136"
 ---
 # <a name="how-to-debug-injected-code"></a>如何：调试插入的代码
 

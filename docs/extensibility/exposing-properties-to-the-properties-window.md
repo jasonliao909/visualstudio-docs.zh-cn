@@ -15,26 +15,26 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 957a6445934d9d3af7cb0f9d61b72171d48521755a1ff9ff4410b31fbe9893a4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 048a8e0316ae4c98e9e2673b017d98cfc1b15144
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057312"
 ---
-# <a name="expose-properties-to-the-properties-window"></a>向对象公开属性窗口
+# <a name="expose-properties-to-the-properties-window"></a>向用户公开属性窗口
 
 本演练向"属性"窗口公开对象 **的公共** 属性。 对这些属性所做的更改将反映在"属性 **"** 窗口中。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 从 2015 Visual Studio开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
-## <a name="expose-properties-to-the-properties-window"></a>向对象公开属性窗口
+## <a name="expose-properties-to-the-properties-window"></a>向用户公开属性窗口
 
 在本部分，你将创建自定义工具窗口，并显示"属性"窗口中关联窗口窗格 **对象的公共** 属性。
 
-### <a name="to-expose-properties-to-the-properties-window"></a>向对象公开属性窗口
+### <a name="to-expose-properties-to-the-properties-window"></a>向用户公开属性窗口
 
 1. 每个Visual Studio扩展都从 VSIX 部署项目开始，该项目将包含扩展资产。 创建名为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的 VSIX 项目 `MyObjectPropertiesExtension` 。 可以通过搜索"vsix"在"新建Project"找到 VSIX 项目模板。 
 
@@ -93,7 +93,7 @@ ms.locfileid: "121388690"
    }
    ```
 
-    `TrackSelection`属性使用 `GetService` 获取服务 `STrackSelection` ，该服务提供 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 接口。 事件 `OnToolWindowCreated` 处理程序和方法共同创建仅包含工具窗口窗格对象本身的选定 `SelectList` 对象的列表。 `UpdateSelection`方法告知"**属性"** 窗口显示工具窗口窗格的公共属性。
+    `TrackSelection`属性使用 `GetService` 获取提供 `STrackSelection` 接口的服务 <xref:Microsoft.VisualStudio.Shell.Interop.ITrackSelection> 。 事件 `OnToolWindowCreated` 处理程序和方法共同创建仅包含工具窗口窗格对象本身的选定 `SelectList` 对象的列表。 `UpdateSelection`方法告知"**属性"** 窗口显示工具窗口窗格的公共属性。
 
 6. 生成项目并启动调试。 应显示 Visual Studio实例。
 
@@ -156,7 +156,7 @@ ms.locfileid: "121388690"
 
 5. 删除按钮，将"工具箱" **中的复选框添加到** 左上角。
 
-6. 添加 Checked 和 Unchecked 事件。 选中设计视图中的复选框。 在"**属性**"窗口中，单击"属性 (窗口右上方的"事件处理程序"**按钮) 。** 在 **文本框****中checkbox_Checked** **Checked"** 并键入"已选中"，然后在文本框 **checkbox_Unchecked"未** 选中"。
+6. 添加 Checked 和 Unchecked 事件。 选中设计视图中的复选框。 在"**属性**"窗口中，单击"属性 (窗口右上方的"事件处理程序") 。  在 **文本框** 中 **checkbox_Checked** **Checked"** 并键入"已选中"，然后在文本框 **checkbox_Unchecked键入"** 未选中"。
 
 7. 添加复选框事件处理程序：
 
