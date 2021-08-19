@@ -8,14 +8,15 @@ ms.assetid: 62afa6da-97cf-48b9-8de3-33e4d72a0377
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 94e9f1f91aa5c879e0e3ed0034e0d1f554901513
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8dcf07340584a3103a854dae3ffa7787cabee448
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866367"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129904"
 ---
 # <a name="this-related-method-is-the-backing-method-for-the-following-default-insert-update-or-delete-methods"></a>此相关方法是以下默认插入、更新或删除方法的支持方法
 
@@ -33,6 +34,6 @@ ms.locfileid: "99866367"
 
    消息框关闭，不进行任何更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

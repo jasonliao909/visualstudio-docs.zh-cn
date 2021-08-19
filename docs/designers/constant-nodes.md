@@ -8,14 +8,15 @@ ms.assetid: 2c798a50-a2d7-459b-9879-ad4ad8290c9b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 79fd16f42629bdf242d70432065d077efd5883eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ecab9a768c7103838e2f79ee668ccf81081a7d4c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153727"
 ---
 # <a name="constant-nodes"></a>常量节点
 

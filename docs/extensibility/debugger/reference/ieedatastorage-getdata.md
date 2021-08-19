@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: df7e30e966352a36983053d80f84f0ed4bc35f5bab577594bbefbc84c8b93879
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d8f646e137d5709bb49acac9074a1ad08981ffa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137881"
 ---
 # <a name="ieedatastoragegetdata"></a>IEEDataStorage::GetData
 从对象中检索指定的字节数。

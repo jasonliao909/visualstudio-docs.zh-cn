@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 369acd0f0b459aa4d5e5691c0159087c0bdf152edeb5388d3f62d3978f58ac30
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e16519a4c2545db6fae8cc69bbdc8d32e6ac164f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431456"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158263"
 ---
 # <a name="source-control-plug-in-api-functions"></a>源代码管理插件 API 函数
 源代码管理插件 API 提供以下函数，这些函数必须根据此 API 由源代码管理插件实现。 此参考中详细介绍了每个函数的签名以及与位标志和其他参数关联的语义。

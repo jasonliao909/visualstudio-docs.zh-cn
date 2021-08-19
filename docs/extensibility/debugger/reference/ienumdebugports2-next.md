@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 771500cc1b6a14f43a2d3b9ea05df3f6fd1995c7de219770b98bf1ef77f7b6bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4ab651f7bb0cd022490bfa8a8d645048c3ec9618
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291722"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125552"
 ---
 # <a name="ienumdebugports2next"></a>IEnumDebugPorts2::Next
 返回枚举中的下一个元素集。
