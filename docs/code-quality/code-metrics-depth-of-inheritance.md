@@ -1,7 +1,7 @@
 ---
-title: 代码指标 - 继承深度
+title: 代码度量-继承深度
 ms.date: 1/8/2021
-description: 了解代码中代码指标的继承指标Visual Studio。
+description: 了解 Visual Studio 中代码度量值的继承深度。
 ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
@@ -9,75 +9,75 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b212f349435f395df9e3acb8a802f51de949f63ae2c494dc30fb08c7091c517
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c08a35a622eeb30a51b4dea2ab4914b0105b01cd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405541"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075393"
 ---
-# <a name="code-metrics---depth-of-inheritance-dit"></a>代码指标 - DIT (继承) 
+# <a name="code-metrics---depth-of-inheritance-dit"></a>代码度量- (DIT 的继承深度) 
 
-本文介绍专为面向对象的分析而设计的指标之一：继承深度。 继承深度（也称为继承树深度 (DIT) ）定义为"从节点到树根的最大长度["CK。](#ck) 可以通过一个简单的示例来查看这一点。 创建新的类库项目，在编写任何代码之前，通过选择"分析">为解决方案计算代码指标"来计算 **代码指标**。
+本文介绍专用于面向对象分析的度量值之一：继承深度。 继承深度（也称为继承树 (DIT) ）定义为 "从节点到树根的最大长度" 的 [CK](#ck)。 您可以使用一个简单的示例来了解这一点。 创建新的类库项目，并在编写任何代码之前，通过选择 " **分析 > 为解决方案计算代码度量值**" 来计算代码度量值。
 
-![继承深度示例 1](media/depth-of-inheritance-example-1.png)
+![继承深度示例1](media/depth-of-inheritance-example-1.png)
 
-由于所有类都继承自 `System.Object` ，因此深度当前为 1。 如果从此类继承并检查新类，则可以看到结果：
+由于所有类都继承自 `System.Object` ，因此当前深度为1。 如果从此类继承并检查新类，则可以查看结果：
 
-![继承深度示例 2](media/depth-of-inheritance-example-2.png)
+![继承深度示例2](media/depth-of-inheritance-example-2.png)
 
-请注意，树中节点的下 (`Class2` 在这种情况下) ，继承深度越高。 你可以继续创建子项目，使深度增加，只要愿意。
+请注意，在这种情况下，树中的节点越低 (`Class2`) ，继承深度越多。 您可以继续创建子级，并使深度增加所需的数量。
 
 ## <a name="assumptions"></a>假设
 
-继承深度基于 [CK](#ck)的三个基本假设：
+继承深度依据三个基本假设 [CK](#ck)：
 
-1. 层次结构中的类越深，它可能继承的方法就越大，因此很难预测其行为。
+1. 层次结构中的类越多，它可能会继承的方法越多，这使得预测其行为变得更加困难。
 
-2. 深度树涉及更大的设计复杂性，因为涉及更多的类和方法。
+2. 更深层的树涉及到更大的设计复杂性，因为涉及到更多的类和方法。
 
-3. 树中的更深层类具有更大的重新使用继承方法的可能性。
+3. 树中的更深层类更有可能重复使用继承的方法。
 
-假设 1 和 2 告诉你，深度数字越高，则错误。 如果这是它的结束位置，则你会状态良好;但是，假设 3 表示深度数字越高，就适合重用代码。
+假设 "1" 和 "2" 会告诉你深度较高的数字已损坏。 如果是这样，则您的工作方式不错;但是，假设值为3表示较高的深度数值适用于可能的代码重用。
 
 ## <a name="analysis"></a>分析
 
-下面是读取深度指标的一些说明：
+下面是读取深度指标的方式：
 
-- 深度的低数字
+- 深度下限
 
-  深度数字低意味着复杂性较低，但通过继承减少代码重用的可能性。
+  深度较低意味着降低了复杂性，同时也减少了通过继承更少的代码重用。
 
-- 深度数字较高
+- 深度较高
 
-  深度数字较高意味着通过继承重用代码的可能性更大，但复杂性更高，代码中的错误概率较高。
+  如果深度较高，则表示更有可能通过继承进行代码重用，同时也增加了复杂性，代码中出现错误的可能性更高。
 
 ## <a name="code-analysis"></a>代码分析
 
-代码分析包括可维护性规则的类别。 有关详细信息，请参阅可 [维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧代码分析时，扩展设计准则规则集包含可维护性区域：
+代码分析包括一类可维护性规则。 有关详细信息，请参阅可 [维护性规则](/dotnet/fundamentals/code-analysis/quality-rules/maintainability-warnings)。 使用旧代码分析时，扩展的设计准则规则集包含可维护性区域：
 
-![继承设计准则规则集的深度](media/depth-of-inheritance-design-guidelines.png)
+![继承深度设计准则规则集](media/depth-of-inheritance-design-guidelines.png)
 
-在可维护性区域中，是继承规则：
+可维护性区域内是继承规则：
 
-![继承可维护性规则的深度](media/depth-of-inheritance-maintainability-rule.png)
+![继承可维护性规则深度](media/depth-of-inheritance-maintainability-rule.png)
 
-此规则在继承深度达到或大于 6 时发出警告，因此，这是一个有助于防止过度继承的好规则。 若要详细了解规则，请参阅 [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)。
+当继承深度达到6或更大时，此规则会发出警告，因此，这是一个很好的规则，有助于防止过度继承。 若要了解有关规则的详细信息，请参阅 [CA1501](/dotnet/fundamentals/code-analysis/quality-rules/ca1501)。
 
-## <a name="putting-it-all-together"></a>全部放在一起
+## <a name="putting-it-all-together"></a>将其全部放在一起
 
-DIT 值高意味着出错的可能性也很高，低值会降低出错的可能性。 DIT 的高值表示通过继承重用代码的可能性更大，低值表示利用继承可以减少代码重用。 由于缺少足够的数据，当前没有接受的 DIT 值标准。 即使是最近所做的研究也找不到足够的数据来确定一个可行的数字，该数字可以用作此指标 [Shatnawi](#shatnawi)的标准数字。 尽管没有经验证据支持它，但一些资源建议 DIT 的上限应为 5 或 6 左右。 例如，请参阅 [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) 。
+DIT 的高值表示可能出现错误，也可能是低值，这会减少出现错误的可能性。 DIT 的高值通过继承指示更好的代码重用，较低的值建议使用继承来更少地重用代码。 由于没有足够的数据，当前不接受 DIT 值标准。 甚至最近完成的研究没有找到足够的数据来确定可用作此指标 [Shatnawi](#shatnawi)标准数字的有效数字。 尽管没有用于支持它的经验证明，但有几个资源表明大约5或6的 DIT 应为上限。 有关示例，请参阅 [http://www.devx.com/architect/Article/45611](http://www.devx.com/architect/Article/45611) 。
 
 ## <a name="citations"></a>引文
 
 ### <a name="ck"></a>CK
 
-Chidamber， S. R. & Kemerer， C. F.  (1994) 。 面向面向对象的设计的指标套件 (软件工程上的 IEEE 事务，Vol. 20， No. 6) 。 检索时间：2011 年 5 月 14 日，来自美国大学网站： [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
+Chidamber，S. R。 & Kemerer，c。  (1994) 。 用于面向对象的设计的指标套件 (软件工程上的 IEEE 事务， 6) 。 从 Pittsburgh 网站的大学检索到5月14日2011： [http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf](http://www.pitt.edu/~ckemerer/CK%20research%20papers/MetricForOOD_ChidamberKemerer94.pdf)
 
 ### <a name="krishnan"></a>Krishnan
 
-Subramanyam， R. & Krishnan， M. S. (2003). 设计复杂性的 CK 指标的经验分析Object-Oriented：软件工程上的软件缺陷 (IEEE 事务的影响，Vol. 29， No. 4) 。 检索时间：2011 年 5 月 14 日，最初从北维萨大学（美国）网站获取 [https://ieeexplore.ieee.org/abstract/document/1191795](https://ieeexplore.ieee.org/abstract/document/1191795)
+Subramanyam、& Krishnan、M. S。 (2003). Object-Oriented 设计复杂性的 CK 指标的经验分析：软件设计 (IEEE 事务上的软件缺陷的影响， 4) 。 检索到的可能为14，2011，最初从马萨诸塞州 Dartmouth 网站获得 [https://ieeexplore.ieee.org/abstract/document/1191795](https://ieeexplore.ieee.org/abstract/document/1191795)
 
 ### <a name="shatnawi"></a>Shatnawi
 
-Shatnawi， R. (2010) . 对软件 Object-Oriented工程上 Open-Source Systems (IEEE 事务中可接受指标的可接受风险级别的定量调查，Vol. 36， No. 2) 。
+Shatnawi、 (2010) 。 调查 Open-Source 系统中的 Object-Oriented 指标的可接受风险级别， (软件工程，36，无。 2) 。

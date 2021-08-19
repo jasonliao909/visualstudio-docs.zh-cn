@@ -24,14 +24,15 @@ ms.assetid: bbc02cf7-a7e6-44fe-99af-87a43e1d7251
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6728b498da91f540d92182ad60f23e490d614948
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: e3d47b749813fe4d60fde4086e5b4eeb66cff651
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102160390"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161292"
 ---
 # <a name="how-to-debug-an-activex-control"></a>如何：调试 ActiveX 控件
 
