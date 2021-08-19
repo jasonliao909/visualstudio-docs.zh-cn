@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf96ed181996d0539e9524de1b5b487bd8763b4c139ddcee779510336458b145
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba6ea460d16491d651c52e9dec1ca430c33fefd6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145973"
 ---
 # <a name="change-the-value-of-a-local"></a>更改本地的值
 > [!IMPORTANT]

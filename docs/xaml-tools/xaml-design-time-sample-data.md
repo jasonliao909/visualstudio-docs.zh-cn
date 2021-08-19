@@ -1,5 +1,5 @@
 ---
-title: 将设计时示例数据与XAML 设计器一Visual Studio
+title: 将设计时示例数据与 XAML 设计器 Visual Studio
 description: 了解如何在 XAML 中使用设计时示例数据。
 ms.date: 06/01/2021
 ms.topic: conceptual
@@ -8,14 +8,14 @@ ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e129875a4ac4c5d66e72e7180c58131c48cd486ddc24e24923556d2261dc094e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cf3fbfc29b79d04ae71fa4ba50815b22045997c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296302"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114532"
 ---
-# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>将设计时示例数据与XAML 设计器一Visual Studio
+# <a name="use-design-time-sample-data-with-the-xaml-designer-in-visual-studio"></a>将设计时示例数据与 XAML 设计器 Visual Studio
 
 如果没有数据，某些数据依赖控件（如 ListView、ListBox 或 DataGrid）难以可视化。 本文档将介绍一种新方法，使使用新设计器处理 **WPF .NET Core** 项目或 **WPF .NET Framework** 项目的开发人员能够在这些控件中启用示例数据。 
 
@@ -90,9 +90,9 @@ mc:Ignorable="d"
 
 - 示例数据Visual Studio 2019 版本[16.10](/visualstudio/releases/2019/release-notes-v16.10)或更高版本。
 
-- 支持Windows面向 .NET Core Windows Presentation Foundation (WPF) ，或者.NET Framework设计器时面向的桌面项目。 若要为 .NET Framework启用新设计器，请转到"工具>选项"> 环境 > 预览功能"，为 .NET Framework 选择"新建 WPF XAML 设计器"，然后Visual Studio。
+- 支持Windows面向 .NET Core Windows Presentation Foundation (WPF) ，或者.NET Framework设计器时面向的桌面项目。 若要为新设计器启用.NET Framework请转到"工具">"选项">"环境 > 预览功能"，选择".NET Framework 的新 WPF XAML 设计器"，然后Visual Studio。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [XAML 设计时属性](../xaml-tools/xaml-designtime-data.md)
 - [WPF 应用中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 785fa491d78c0286404918f01149752af2f0dc69
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 66593b49472a5f4f426b7764bfc0b66128908045432fb63346fdde0b900c52cb
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045848"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440482"
 ---
 # <a name="interop-activity-designer"></a>Interop 活动设计器
 

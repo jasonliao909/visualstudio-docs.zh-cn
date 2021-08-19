@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 00b025ac3d14ee9c2d6bd767ff45c28222c71009ffe6702e183ffe705e3eaf31
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 18e6f019bb6a06d9c1718239b69c6a80dd4fd434
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080047"
 ---
 # <a name="evalflags"></a>EVALFLAGS
 指定控制表达式计算的标志。

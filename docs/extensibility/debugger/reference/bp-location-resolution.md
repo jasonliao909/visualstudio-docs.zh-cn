@@ -11,16 +11,17 @@ ms.assetid: 86ea2c8a-54a3-48e8-83c7-18a515273129
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 21462e7762a608e2b69a5ce32309fe0ac5cc2537
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 10c0f2dceda90184df194c2013449c97db004585
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105096741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145960"
 ---
 # <a name="bp_location_resolution"></a>BP_LOCATION_RESOLUTION
 描述特定位置的断点解析。
@@ -35,19 +36,19 @@ typedef struct _BP_LOCATION_RESOLUTION {
 
 ## <a name="members"></a>成员
 `pResolution`\
-确定断点类型及其解决方法信息的 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 对象。
+[IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)对象，用于确定断点的类型及其解析信息。
 
 ## <a name="remarks"></a>备注
-此结构是作为联合的一部分的 [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md) 结构的成员。
+此结构是 [联合BP_LOCATION结构](../../../extensibility/debugger/reference/bp-location.md) 的成员。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_LOCATION](../../../extensibility/debugger/reference/bp-location.md)
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)

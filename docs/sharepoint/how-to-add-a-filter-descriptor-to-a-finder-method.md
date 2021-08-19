@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 47fcc7e388f240d8b9636a733df4b6b8767f0df4
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 62d05e77d808744da1fbb8d639e762f55103b7d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106218004"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027131"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：向 Finder 方法添加筛选器描述符
   筛选器描述符允许模型的使用者在执行之前将值传递给方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -69,10 +70,10 @@ ms.locfileid: "106218004"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet11":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet11":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)
 - [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
-- [将业务数据集成到 SharePoint 中](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

@@ -10,14 +10,15 @@ ms.assetid: 9b5f1b5f-fd42-4de5-a3e1-d8e7e2e8cf1a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 49bdf59b5076bd4f30ab219fbf4e00899d03ba96
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d611a41de1e7295bba61a566b6b985ab80d13268
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906354"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146467"
 ---
 # <a name="window-menu-commands"></a>“窗口”菜单命令
 “窗口”菜单提供用于管理 Spy++ 窗口的命令。

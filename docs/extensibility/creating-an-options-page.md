@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e8ca8233495fd6db2d7a238483ef81a83b1ff28a5e59cb51f9075584bdcf9e27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7ff61649cfa9c2d78256751e9c25fb0a4b670bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434758"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146077"
 ---
 # <a name="create-an-options-page"></a>"创建选项"页
 
@@ -28,7 +28,7 @@ ms.locfileid: "121434758"
 
  MPF 提供两个类来帮助你创建"工具选项"页 <xref:Microsoft.VisualStudio.Shell.Package> ：类和 <xref:Microsoft.VisualStudio.Shell.DialogPage> 类。 通过子类化 类，创建 VSPackage 来为这些页面提供 `Package` 容器。 通过从 类派生来创建每个工具选项 `DialogPage` 页。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
  从 2015 Visual Studio开始，不会从下载Visual Studio安装 Visual Studio SDK。 它作为可选功能包含在安装程序Visual Studio中。 也可稍后安装 VS SDK。 有关详细信息，请参阅安装[Visual Studio SDK。](../extensibility/installing-the-visual-studio-sdk.md)
 
@@ -102,7 +102,7 @@ ms.locfileid: "121434758"
 
 7. 在 Visual Studio 实验实例中，单击"**工具"菜单** 上的"选项 **"。**
 
-     在左窗格中，应会看到"我的 **类别"。**  (选项类别按字母顺序列出，因此它应出现在列表的大约一半。) 打开我的 **类别**，然后单击"我的 **网格页"。** 选项网格显示在右窗格中。 属性类别为 **"我的选项"，** 属性名称为"**我的整数选项"。** 属性说明" **我的整数"** 选项显示在窗格底部。 将值从初始值 256 更改为其他值。 单击 **"确定**"，然后重新打开"**我的网格页"。** 可以看到新值仍然存在。
+     在左窗格中，应会看到"我的 **类别"。**  (选项类别按字母顺序列出，因此它应出现在列表的大约一半。) **打开"** 我的类别"，然后单击"我的 **网格页"。** 选项网格显示在右窗格中。 属性类别为 **"我的选项"，** 属性名称为"**我的整数选项"。** 属性说明" **我的整数"** 选项显示在窗格底部。 将值从初始值 256 更改为其他值。 单击 **"确定**"，然后重新打开"**我的网格页"。** 可以看到新值仍然存在。
 
      也可通过搜索框Visual Studio选项页。 在 IDE 顶部附近的搜索框中，键入"我的类别"，你将看到结果 **>"我的网格** 页"。
 
