@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 85cc94dcb95025eae5d7d19f152b1b78001b5f317177767d36a0fc116e27adf5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f6c6e039a04f8e30cec024370fed94c0f025f51f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440664"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147814"
 ---
 # <a name="iwefdebuggingsupport-interface"></a>IWefDebuggingSupport 接口
   由调试环境（如 Visual Studio）实现，以便调试 Office。 应用程序Office Word 或 Excel 从 Visual Studio 获取此接口，然后在调试会话期间的某些点调用接口上的方法。

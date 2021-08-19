@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3708d56f9eaeaa6f11124107056f67e10c33a7135ccc3998a11095c4a53acef1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 28aaadb7bd4e319a47d77f9577e7e58206b72d46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121238978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079566"
 ---
 # <a name="idebugcoreserver3createinstanceinserver"></a>IDebugCoreServer3::CreateInstanceInServer
 在服务器上创建调试引擎的实例。

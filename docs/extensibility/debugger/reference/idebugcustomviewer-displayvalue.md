@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a3ff715cadd6499d74d3704faa9ad0e078d0838ee931b4fc6b68c4588fb45cc2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ab561a692b4f9fa96d8138079a68064558733792
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377816"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079345"
 ---
 # <a name="idebugcustomviewerdisplayvalue"></a>IDebugCustomViewer::DisplayValue
 调用此方法以显示指定的值。

@@ -1,6 +1,6 @@
 ---
-description: 表示此非泛型实例委托给的泛型生成器对象。
-title: AsyncTaskMethodBuilder.m_builder字段|Microsoft Docs
+description: 表示此非泛型实例委托的泛型生成器对象。
+title: AsyncTaskMethodBuilder.m_builder 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5469c7e454d4c800d27771c35d6d30438b0cac105bb3c3156c2d10cc79a73071
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3dbc7090ca937d389d993e13ec96571792c33df3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434719"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133323"
 ---
-# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder字段
-表示此非泛型实例委托给的泛型生成器对象。
+# <a name="asynctaskmethodbuilderm_builder-field"></a>AsyncTaskMethodBuilder.m_builder 字段
+表示此非泛型实例委托的泛型生成器对象。
 
  **命名空间：** <xref:System.Runtime.CompilerServices?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll) 
+ **Assembly：** mscorlib (mscorlib.dll) 
 
- 由于无法从 CIL .NET Framework访问此内部成员，因此在 CIL (中提供了以下) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -36,6 +36,6 @@ ms.locfileid: "121434719"
 
 ## <a name="remarks"></a>备注
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - <xref:System.Runtime.CompilerServices.AsyncTaskMethodBuilder>
-- [并行扩展插件的内部.NET Framework](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)
+- [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -1,6 +1,6 @@
 ---
 title: 命令、菜单和工具栏 |Microsoft Docs
-description: 了解 Visual Studio 中的命令、菜单和工具栏，包括这些命令、菜单和工具栏，以及它们在 Vspackage 中的工作方式。
+description: 了解 Visual Studio 中的命令、菜单和工具栏，包括这些命令、菜单和工具栏，以及它们在 vspackage 中的工作方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,14 +12,15 @@ ms.assetid: 07b4ed90-dbbd-40df-b6c9-8395fd6f2ab6
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2a1b4cdb95fa5b053bc75efb559ea77b84ae56dd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a38bee13afb83afed022dc69f046f87ec64f7adb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105057151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159064"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、菜单和工具栏
 菜单和工具栏是用户访问 VSPackage 中的命令的方式。 命令是完成任务（如打印文档、刷新视图或创建新文件）的函数。 菜单和工具栏是用于向用户呈现命令的方便图形方式。 通常，相关命令在相同菜单或工具栏上聚集在一起。
@@ -30,9 +31,9 @@ ms.locfileid: "105057151"
 
 - 创建命令时，还必须为它创建事件处理程序。 事件处理程序确定命令何时可见或启用、使你可以修改其文本并确保命令在激活时以合适方式进行响应（“路由”）。 在大多数情况下，IDE 使用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口处理命令。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 中的命令以分层方式进行路由，基于本地选择从最内层命令上下文开始，然后基于全局选择继续执行到最外层上下文。 添加到主菜单的命令可立即用于脚本编写。 有关详细信息，请参阅 [menucommand 和 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015) 以及 [选择上下文对象](../../extensibility/internals/selection-context-objects.md)。
 
-  若要定义新的菜单和工具栏，必须在 Visual Studio 命令表中描述它们 (*.vsct*) 文件中。 Visual Studio 包模板会为你创建此文件，以及支持你在模板中选择的任何命令、工具栏和编辑器所需的元素。 或者，您可以使用此处所述的 XML 架构编写您自己的 *.vsct* 文件： [.vsct XML schema reference](../../extensibility/vsct-xml-schema-reference.md)。
+  若要定义新的菜单和工具栏，必须在 Visual Studio 命令表中描述它们 (*.vsct*) 文件中。 Visual Studio 包模板为你创建此文件，以及支持你在模板中选择的任何命令、工具栏和编辑器所需的元素。 或者，您可以使用此处所述的 XML 架构编写您自己的 *.vsct* 文件： [.vsct XML schema reference](../../extensibility/vsct-xml-schema-reference.md)。
 
-  有关使用 *.vsct* 文件的详细信息，请参阅 [Visual Studio 命令表 (. .vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+  有关使用 *.vsct* 文件的详细信息，请参阅 [Visual Studio command table (. .vsct) files](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
   本节中的主题介绍如何在 Vspackage 中使用命令、菜单和工具栏。
 

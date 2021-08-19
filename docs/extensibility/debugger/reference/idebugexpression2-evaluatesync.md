@@ -11,17 +11,18 @@ ms.assetid: 88964915-dce3-4005-b4f3-9f37415e41e4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 85e0dd1c334ce57b5e466ab66a74db4b29a40adc
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d2a7236b3589666afcb99bfbc9ced356bcb06cdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105092431"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078994"
 ---
 # <a name="idebugexpression2evaluatesync"></a>IDebugExpression2::EvaluateSync
 此方法同步计算表达式。
@@ -118,7 +119,7 @@ HRESULT CExpression::EvalExpression(BOOL bSynchronous,
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)
 - [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

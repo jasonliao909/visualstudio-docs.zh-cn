@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 21e0928396327911ea794c6270340c6efd27a43e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: edde3dc96ed0440981b79828c82331608e0f2f7a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824596"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147630"
 ---
 # <a name="walkthrough-call-code-in-a-vsto-add-in-from-vba"></a>演练：从 VBA 调用 VSTO 外接程序中的代码
   本演练演示如何向其他 Microsoft Office 解决方案（包括 Visual Basic for Applications (VBA) 和 COM VSTO 外接程序）公开 VSTO 外接程序中的对象。
@@ -104,7 +105,7 @@ ms.locfileid: "107824596"
      验证解决方案已生成且未发生错误。
 
 ## <a name="test-the-vsto-add-in"></a>测试 VSTO 外接程序
- 可以从多种不同类型的 Office 解决方案中调入 `AddInUtilities` 类。 在本演练中，你将在 Excel 工作簿中使用 VBA 代码。 有关其他类型的 Office 解决方案的详细信息，请参阅 [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。
+ 可以从多种不同类型的 Office 解决方案中调入 `AddInUtilities` 类。 在本演练中，你将在 Excel 工作簿中使用 VBA 代码。 有关其他类型的 Office 解决方案的详细信息，请参阅[从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)。
 
 ### <a name="to-test-your-vsto-add-in"></a>测试 VSTO 外接程序
 
@@ -137,7 +138,7 @@ ms.locfileid: "107824596"
     End Sub
     ```
 
-7. 按 F5 。
+7. 按 **F5**。
 
 8. 验证是否已将新的 **Imported Data** 表添加到工作簿。 此外，请验证 A1 单元格是否包含字符串 **This is my data**。
 
@@ -146,15 +147,15 @@ ms.locfileid: "107824596"
 ## <a name="next-steps"></a>后续步骤
  可以从以下主题了解有关 VSTO 外接程序编程的详细信息：
 
-- 使用 `ThisAddIn` 类实现主机应用程序自动化并在 VSTO 外接程序项目中执行其他任务。 有关详细信息，请参阅 [PROGRAM VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。
+- 使用 `ThisAddIn` 类实现主机应用程序自动化并在 VSTO 外接程序项目中执行其他任务。 有关详细信息，请参阅[Program VSTO 加载项](../vsto/programming-vsto-add-ins.md)。
 
 - 在 VSTO 外接程序中创建自定义任务窗格。 有关详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md) 和 [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)。
 
 - 在 VSTO 外接程序中自定义功能区。 有关详细信息，请参阅 [功能区概述](../vsto/ribbon-overview.md) 和 [如何：开始自定义功能区](../vsto/how-to-get-started-customizing-the-ribbon.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
-- [从其他 Office 解决方案调用 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
+- [调用来自其他 Office 解决方案的 VSTO 外接程序中的代码](../vsto/calling-code-in-vsto-add-ins-from-other-office-solutions.md)
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [VSTO 外接程序的体系结构](../vsto/architecture-of-vsto-add-ins.md)

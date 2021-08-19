@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: a244f08c4c455edce778732d1f93bbe023e3112379480c535e0471eed0c8a4d3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9b3616376617e6fcc88f9de7bae15bcca072130
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402852"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079215"
 ---
 # <a name="idebugdocumentcontext2getdocument"></a>IDebugDocumentContext2::GetDocument
 获取包含此文档上下文的文档。

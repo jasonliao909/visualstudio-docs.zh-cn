@@ -8,14 +8,15 @@ ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: d352c118bd8b21b9dcbf62f7dd32eaf2999ed471
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: da90e8325caf591759cf7914e89dac06d68de21d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039821"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析资源消耗情况和 UI 线程活动 (XAML)
 

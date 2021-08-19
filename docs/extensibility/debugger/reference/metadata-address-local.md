@@ -11,17 +11,18 @@ ms.assetid: 635f6bc5-c486-4e0e-83db-36f15e543843
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c265f8312b9a23b3b10f06595240dae20894f001
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 71b8b4ef578646a63ec64fbbde506dd71984fe35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105061545"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042811"
 ---
 # <a name="metadata_address_local"></a>METADATA_ADDRESS_LOCAL
 
@@ -80,7 +81,7 @@ public struct METADATA_ADDRESS_LOCAL {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [DEBUG_ADDRESS_UNION](../../../extensibility/debugger/reference/debug-address-union.md)

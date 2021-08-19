@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式向 Word 表中添加行和列
-description: 了解如何使用 Rows 对象的 Add 方法将行添加到表中。 你还可以使用 Columns 对象的 Add 方法来添加列。
+title: 如何：以编程方式将行和列添加到 Word 表
+description: 了解如何使用 Rows 对象的 Add 方法向表中添加行。 还可使用 Columns 对象的 Add 方法添加列。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -18,19 +18,19 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cc4064677d35ada2a03baa1b4212a101bb6bd9a6df20f797596f9c31a961567e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6bf994d622384e52aa98f0192234a749c66ebf24
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424003"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083305"
 ---
-# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以编程方式向 Word 表中添加行和列
+# <a name="how-to-programmatically-add-rows-and-columns-to-word-tables"></a>如何：以编程方式将行和列添加到 Word 表
   在 Microsoft Office Word 表中，单元格组织为行和列。 你可以使用 <xref:Microsoft.Office.Interop.Word.Rows> 对象的 <xref:Microsoft.Office.Interop.Word.Rows.Add%2A> 方法将行添加到表，并可以使用 <xref:Microsoft.Office.Interop.Word.Columns> 对象的 <xref:Microsoft.Office.Interop.Word.Columns.Add%2A> 方法添加列。
 
  [!INCLUDE[appliesto_wdalldocapp](includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="document-level-customization-examples"></a>文档级自定义项示例
+## <a name="document-level-customization-examples"></a>文档级自定义示例
  可以在文档级自定义项中使用下列代码示例。 若要使用这些示例，请从项目中的 `ThisDocument` 类运行它们。 这些示例假定与你的自定义相关联的文档已具有至少一个表。
 
 > [!IMPORTANT]
@@ -41,7 +41,7 @@ ms.locfileid: "121424003"
 > - Word 2010 文档
 > - Word 2010 模板
 >
->   如果要在任何其他类型的项目中执行此任务，则必须添加对 Office 的引用 **。** 然后，必须使用程序集中的类来向表中添加行和列。 有关详细信息，请参阅[如何：通过主互操作程序集以 Office 应用程序为目标](how-to-target-office-applications-through-primary-interop-assemblies.md)，以及[Word 2010 主互操作程序集引用](office-primary-interop-assemblies.md)。
+>   如果要在任何其他类型的项目中执行此任务，则必须添加对 **Microsoft.Office。Interop.Word** 程序集，然后必须使用该程序集中的类将行和列添加到表中。 有关详细信息，请参阅如何：通过主[互操作](how-to-target-office-applications-through-primary-interop-assemblies.md)Office面向应用程序，Word [2010 主互操作程序集参考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-add-a-row-to-a-table"></a>向表中添加行
 
@@ -63,7 +63,7 @@ ms.locfileid: "121424003"
 > [!IMPORTANT]
 > 此代码仅在你使用 Word VSTO 外接程序模板创建的项目中运行。
 >
-> 如果要在任何其他类型的项目中执行此任务，则必须添加对 Office 的引用 **。** 然后，必须使用程序集中的类来向表中添加行和列。 有关详细信息，请参阅[如何：通过主互操作程序集以 Office 应用程序为目标](how-to-target-office-applications-through-primary-interop-assemblies.md)，以及[Word 2010 主互操作程序集引用](office-primary-interop-assemblies.md)。
+> 如果要在任何其他类型的项目中执行此任务，则必须添加对 **Microsoft.Office。Interop.Word** 程序集，然后必须使用该程序集中的类将行和列添加到表中。 有关详细信息，请参阅如何：通过主[互操作](how-to-target-office-applications-through-primary-interop-assemblies.md)Office面向应用程序，Word [2010 主互操作程序集参考](office-primary-interop-assemblies.md)。
 
 ### <a name="to-add-a-row-to-a-table"></a>向表中添加行
 
@@ -82,4 +82,4 @@ ms.locfileid: "121424003"
 ## <a name="see-also"></a>请参阅
 - [如何：以编程方式创建 Word 表](how-to-programmatically-create-word-tables.md)
 - [如何：以编程方式向 Word 表中的单元格添加文本和格式设置](how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [如何：以编程方式用文档属性填充 Word 表](how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [如何：以编程方式使用文档属性填充 Word 表](how-to-programmatically-populate-word-tables-with-document-properties.md)

@@ -1,6 +1,6 @@
 ---
-description: 给定自定义属性的名称，获取自定义属性字节。
-title: IDebugCustomAttributeQuery2：： GetCustomAttributeByName |Microsoft Docs
+description: 根据自定义特性的名称获取自定义属性字节。
+title: IDebugCustomAttributeQuery2：：GetCustomAttributeByName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5ec3dcb514097f495aa323948d7491a80811fdecf95269793e61f82545f49930
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e20f4cba0d826a7a9b608f1fc56fde1a35ae54c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307942"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079410"
 ---
 # <a name="idebugcustomattributequery2getcustomattributebyname"></a>IDebugCustomAttributeQuery2::GetCustomAttributeByName
-给定自定义属性的名称，获取自定义属性字节。
+根据自定义特性的名称获取自定义属性字节。
 
 ## <a name="syntax"></a>语法
 
@@ -47,24 +47,24 @@ int GetCustomAttributeByName(
 
 ## <a name="parameters"></a>参数
 `pszCustomAttributeName`\
-中一个字符串，其中包含要查找的自定义特性的名称。
+[in]包含要查找的自定义属性的名称的字符串。
 
 `ppBlob`\
-[in，out]使用自定义属性字节填充的数组。
+[in， out]用自定义属性字节填充的数组。
 
 `pdwLen`\
-[in，out]指定要在数组中返回的最大字节数 `ppBlob` ，并返回实际写入到数组中的字节数。
+[in， out]指定在数组中返回的最大字节数，并 `ppBlob` 返回实际写入数组的字节数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 S_OK 或返回 S_FALSE （如果自定义特性不存在）。 否则，返回错误代码。
+ 如果成功，则S_OK，或者S_FALSE自定义属性不存在时返回 。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 将 `ppBlob` 参数设置为 null 值，以返回可用的属性字节数。 然后，分配一个数组，然后将该数组传递给中的 `ppBlob` 参数。
+ 将 `ppBlob` 参数设置为 null 值，以返回可用的属性字节数。 然后分配一个数组，然后为 参数传递该 `ppBlob` 数组。
 
- 属性 bytes 表示自定义属性的原始数据。
+ 属性字节表示自定义属性的原始数据。
 
- 如果 `ppBlob` 将和 `pdwLen` 参数设置为 null 值，则可以使用此方法来确定自定义属性是否只存在。 但更简单的方法是调用 [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) 方法。
+ 如果 和 参数设置为 null 值，则此方法可用于 `ppBlob` `pdwLen` 确定自定义属性是否仅存在。 但是，一种更简单的替代方法是调用 [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)
 - [IsCustomAttributeDefined](../../../extensibility/debugger/reference/idebugcustomattributequery2-iscustomattributedefined.md)

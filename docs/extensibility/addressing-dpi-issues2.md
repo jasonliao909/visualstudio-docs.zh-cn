@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fecd47dd43d3c5f075c3e6794ee0a1cdb16815a9bf4b4bf6deb4777632a3736b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3ca4544b153d5b365d3200a79a519cf6271d29bc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133401"
 ---
 # <a name="address-dpi-issues"></a>解决 DPI 问题
 越来越多的设备通过"高分辨率"屏幕交付。 这些屏幕通常具有每英寸超过 200 像素的 ppi (像素) 。 在这些计算机上使用应用程序需要扩展内容，以满足在设备的正常查看距离查看内容的需求。 截至 2014 年，高密度显示器的主要目标是移动计算设备 (平板电脑、) 。
@@ -150,7 +150,7 @@ VsUI::DpiHelper::LogicalToDeviceUnits(&hBitmap);
 
 - 对于菜单项和图标图像，当 不会导致其他扭曲项目消除模糊化时， (<xref:System.Windows.Media.BitmapScalingMode> 200% 和 300%) 。
 
-- 对于不为 100% (倍数（例如，250% 或 350%) ）的大型缩放级别，缩放具有二元效果的图标图像会导致模糊、模糊的 UI。 通过首先使用 NearestNeighbor 将映像缩放为 100% (的最大倍数（例如，200% 或 300%) ）以及从其中缩放双倍数，可以获得更好的结果。 有关详细信息，请参阅特殊情况：为较大的 DPI 级别预缩放 WPF 图像。
+- 对于不为 100% (倍数（例如，250% 或 350%) ）的大型缩放级别，缩放具有二元效果的图标图像会导致模糊、模糊的 UI。 通过首先将具有 NearestNeighbor 的图像缩放为 100% (的最大倍数（例如，200% 或 300%) ）以及从该位置缩放双倍数，可以获得更好的结果。 有关详细信息，请参阅特殊情况：为较大的 DPI 级别预缩放 WPF 图像。
 
   Microsoft.VisualStudio.PlatformUI 命名空间中的 DpiHelper 类提供可用于 <xref:System.Windows.Media.BitmapScalingMode> 绑定的成员。 它将允许 Visual Studio shell 统一控制产品中的位图缩放模式，具体取决于 DPI 缩放因子。
 
@@ -167,18 +167,18 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 
 某些 UI 可以独立于系统设置的 DPI 缩放级别进行缩放，例如基于 Visual Studio 文本编辑器和基于 WPF 的设计器 (WPF Desktop 和 Windows Store) 。 在这些情况下，不应使用 DpiHelper.BitmapScalingMode。 为了在编辑器中解决此问题，IDE 团队创建了一个标题为 RenderOptions.BitmapScalingMode 的自定义属性。 根据系统和 UI 的组合缩放级别，将属性值设置为 HighQuality 或 NearestNeighbor。
 
-## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特殊情况：为高 DPI 级别预缩放 WPF 图像
-对于不是 100% (倍数的非常大的缩放级别（例如，250%、350%，等等）) ，缩放具有二元结果的图标图像时，UI 会模糊、模糊化。 这些图像与简洁文本一起留下印象几乎与光学错像一样。 相对于文本，图像看起来更靠近眼睛和焦点。 可以先使用 NearestNeighbor 将图像缩放为最大倍数 100% (（例如 200% 或 300%) ）和缩放（将二次缩放为其余大小 (再缩放 50%) ）来改进此放大大小的缩放结果。
+## <a name="special-case-prescaling-wpf-images-for-large-dpi-levels"></a>特例： prescaling 适用于大型 DPI 级别的 WPF 映像
+对于不是 100% (的倍数的非常大的缩放级别（例如250%、350% 等) ），通过双立方缩放插图图像会导致模糊的、冲蚀的 UI。 这些图像与明锐文本的印象几乎与一种视觉效果一样。 图像看起来更接近于与文本相关的眼睛和焦点。 通过首先将具有 NearestNeighbor 的图像缩放为 100% (的最大倍数，例如200% 或 300% ) 并使用三倍调整到剩余部分 (额外的 50% ) ，可以提高此放大大小的缩放结果。
 
-下面是结果差异的示例，其中，第一个图像使用改进的双缩放算法 100%->200%->250% 进行缩放，第二个图像仅缩放双精度 100%->250%。
+下面是结果差异的示例，其中，第一个图像使用改进后的双缩放算法 100%->200%->250%，第二个图像使用三倍双精度 100%->250%。
 
 ![DPI 问题双缩放示例](../extensibility/media/dpi-issues-double-scaling-example.png "DPI 问题双缩放示例")
 
-为了使 UI 能够使用此双重缩放，需要修改用于显示每个 Image 元素的 XAML 标记。 以下示例演示如何使用 DpiHelper 库和 Shell.12/14 在 Visual Studio WPF 中使用双重缩放。
+为了使 UI 能够使用这种双缩放，需要修改用于显示每个图像元素的 XAML 标记。 下面的示例演示如何在使用 DpiHelper 库和 Shell 的 Visual Studio 中使用 WPF 进行双重缩放。
 
-步骤 1：使用 NearestNeighbor 将映像预缩放为 200%、300%，等等。
+步骤1：使用 NearestNeighbor 将图像 Prescale 为200%、300% 等。
 
-使用应用于绑定的转换器或 XAML 标记扩展来预缩放映像。 例如：
+使用应用于绑定的转换器或使用 XAML 标记扩展 Prescale 图像。 例如：
 
 ```xaml
 <vsui:DpiPrescaleImageSourceConverter x:Key="DpiPrescaleImageSourceConverter" />
@@ -189,7 +189,7 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 
 ```
 
-如果还需要将图像作为 (（如果不是全部）进行) ，则标记可以使用另一个转换器，该转换器先对图像进行标记，然后进行预缩放。 标记可以使用 或 <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> ，具体取决于所需的转换输出。
+如果还需要对映像进行主题 (大多数情况下（如果不是全部）都应该) ，则标记可以使用第一种转换器，该转换器首先执行图像的主题，然后进行预缩放。 标记可以使用 <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageConverter> 或 <xref:Microsoft.VisualStudio.PlatformUI.DpiPrescaleThemedImageSourceConverter> ，具体取决于所需的转换输出。
 
 ```xaml
 <vsui:DpiPrescaleThemedImageSourceConverter x:Key="DpiPrescaleThemedImageSourceConverter" />
@@ -206,17 +206,17 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
 </Image>
 ```
 
-步骤 2：确保当前 DPI 的最终大小正确。
+步骤2：确保最终大小对于当前 DPI 是正确的。
 
-由于 WPF 使用 UIElement 上设置的 BitmapScalingMode 属性缩放当前 DPI 的 UI，因此使用预缩放图像作为源的图像控件将看起来比它看起来大两到三倍。 下面是几种应对此效果的方法：
+因为 WPF 将使用 UIElement 上设置的 System.windows.media.bitmapscalingmode> 属性缩放当前 DPI 的 UI，所以，使用 prescaled 图像作为其源的图像控件的外观将会比它的大小大两倍。 下面是用于应对这种效果的几种方法：
 
-- 如果知道原始图像的维度为 100%，可以指定"图像"控件的确切大小。 这些大小将在应用缩放之前反映 UI 的大小。
+- 如果您知道原始图像在100% 的维度，则可以指定图像控件的精确大小。 在应用缩放之前，这些大小将反映 UI 的大小。
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" Width="16" Height="16" />
     ```
 
-- 如果原始图像的大小未知，可以使用 LayoutTransform 来缩小最终的 Image 对象。 例如：
+- 如果原始映像的大小未知，则可以使用 System.windows.frameworkelement.layouttransform 来缩减最终图像对象。 例如：
 
     ```xaml
     <Image Source="{Binding Path=SelectedImage, Converter={StaticResource DpiPrescaleImageSourceConverter}}" >
@@ -228,10 +228,10 @@ xmlns:vsui="clr-namespace:Microsoft.VisualStudio.PlatformUI;assembly=Microsoft.V
     </Image>
     ```
 
-## <a name="enabling-hdpi-support-to-the-weboc"></a>启用对 WebOC 的 HDPI 支持
-默认情况下，WebOC (WPF 中的 WebBrowser 控件或 IWebBrowser2 接口) 不启用 HDPI 检测和支持。 结果将是嵌入式控件，其显示内容在高分辨率显示器上太小。 下面介绍如何在特定的 Web WebOC 实例中启用高 DPI 支持。
+## <a name="enabling-hdpi-support-to-the-weboc"></a>为 WebOC 启用 HDPI 支持
+默认情况下，WebOC 控件 (如 WPF 中的 WebBrowser 控件或 IWebBrowser2 接口) 不启用 HDPI 检测和支持。 结果将是在高分辨率显示器上显示内容太小的嵌入控件。 下面介绍如何在特定的 web WebOC 实例中启用高 DPI 支持。
 
-实现 IDocHostUIHandler 接口 (请参阅 [有关 IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))的 MSDN 文章：
+实现 IDocHostUIHandler 接口 (参阅 [IDocHostUIHandler](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753260(v=vs.85))上的 MSDN 文章：
 
 ```idl
 [ComImport, InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -310,7 +310,7 @@ public interface IDocHostUIHandler
     }
 ```
 
-（可选）实现 ICustomDoc 接口 (请参阅有关 [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85))的 MSDN 文章：
+或者，实现 ICustomDoc 接口 (参阅 [ICustomDoc](/previous-versions/windows/internet-explorer/ie-developer/platform-apis/aa753272(v=vs.85))上的 MSDN 文章：
 
 ```idl
 [InterfaceType(ComInterfaceType.InterfaceIsIUnknown),
@@ -321,7 +321,7 @@ public interface ICustomDoc
 }
 ```
 
-将实现 IDocHostUIHandler 的类与 WebOC 的文档关联。 如果实现了上面的 ICustomDoc 接口，则只要 WebOC 的文档属性有效，立即将该属性强制转换到 ICustomDoc 并调用 SetUIHandler 方法，并传递实现 IDocHostUIHandler 的类。
+将实现 IDocHostUIHandler 的类与 WebOC 的文档相关联。 如果在上面实现了 ICustomDoc 接口，则 WebOC 的文档属性有效后，会立即将其转换为 ICustomDoc，并调用 SetUIHandler 方法，同时传递实现 IDocHostUIHandler 的类。
 
 ```csharp
 // "this" references that class that owns the WebOC control and in this case also implements the IDocHostUIHandler interface
@@ -330,7 +330,7 @@ customDoc.SetUIHandler(this);
 
 ```
 
-如果未实现 ICustomDoc 接口，则只要 WebOC 的文档属性有效，需要将该属性强制转换到 IOleObject 并调用 方法，并传递实现 `SetClientSite` IDocHostUIHandler 的 类。 在DOCHOSTUIFLAG_DPI_AWARE方法调用的 DOCHOSTUIINFO 上设置以下 `GetHostInfo` 标志：
+如果未实现 ICustomDoc 接口，则只要 WebOC 的文档属性有效，就需要将其强制转换为 IOleObject，并调用 `SetClientSite` 方法，并传入实现 IDocHostUIHandler 的类。 将 DOCHOSTUIINFO 上的 DOCHOSTUIFLAG_DPI_AWARE 标志设置为传递给 `GetHostInfo` 方法调用：
 
 ```csharp
 public int GetHostInfo(DOCHOSTUIINFO info)
@@ -343,13 +343,13 @@ public int GetHostInfo(DOCHOSTUIINFO info)
 }
 ```
 
-这应该是获取 WebOC 控件以支持 HPDI 所需的全部内容。
+这应该是使 WebOC 控件支持 HPDI 所需的全部工作。
 
 ## <a name="tips"></a>提示
 
-1. 如果 WebOC 控件上的文档属性发生更改，可能需要将文档与 IDocHostUIHandler 类重新关联。
+1. 如果 WebOC 控件上的文档属性更改，则可能需要将文档与 IDocHostUIHandler 类重新关联。
 
-2. 如果上述方法不起作用，则 WebOC 无法选取 DPI 标志更改存在已知问题。 解决此问题的最可靠方法就是切换 WebOC 的光学缩放，这意味着两次调用的缩放百分比有两个不同的值。 此外，如果需要此解决方法，可能需要每次导航调用时执行它。
+2. 如果上述操作不起作用，则会出现一个已知问题，WebOC 不会选取 DPI 标志。 解决这种情况的最可靠方法是切换 WebOC 的光纤缩放，这意味着，两次调用具有两个不同的值来表示缩放百分比。 此外，如果需要解决此问题，则可能需要对每个导航调用执行此方法。
 
     ```csharp
     // browser2 is a SHDocVw.IWebBrowser2 in this case

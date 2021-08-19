@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: b368c0090878bdd25bccf068df9ce19e3457e43349376dfb0249d01e590c5c4f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b3432853ce9e6aaf4f37c4a0c363099f4a61d988
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423717"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099238"
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 
@@ -29,7 +29,7 @@ ms.locfileid: "121423717"
 |UI 元素|说明|
 |-|-----------------|
 |**消息**|使用 " **消息数据** 表达式" 文本框和 " **消息类型** " 下拉列表框指定类型的消息内容。 默认情况下， **内容定义** 使用 <xref:System.ServiceModel.Activities.ReceiveMessageContent> ，它需要 <xref:System.ServiceModel.Channels.Message> 工作流服务定义中的或消息协定类型。|
-|**参数**|单击 " **参数** " 单选按钮以使用 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 需要数据协定的。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
+|**Parameters**|单击 " **参数** " 单选按钮以使用 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 需要数据协定的。 使用数据网格设置 <xref:System.Activities.OutArgument> 键/值对的泛型集合，这些键/值对的值将赋给当前工作流中的可变参数。|
 
 " **内容定义** " 对话框由 " **Send**"、" **Receive**"、" **ReceiveAndSendReply**" 和 " **SendAndReceiveReply** " 设计器使用。 在任何情况下访问它们的方式都相同，此处使用“Receive”设计器来演示该过程。
 

@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 3bc1b674caf46dc84ff7bf57c983131b79cfde51
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d5959df0d24db2807bead8331d04befb7f769ae8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827807"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099485"
 ---
 # <a name="troubleshoot-errors-in-office-solutions"></a>排查 Office 解决方案中的错误
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：
@@ -53,7 +54,7 @@ ms.locfileid: "107827807"
 ### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>基于现有项目中的文档创建新项目时，控件属性将丢失
  如果基于现有项目中的文档创建新 Office 项目，则不会将该文档中任何控件的属性复制到新项目中。 必须为任何先前存在的控件手动重置其属性。 或者，可以通过以下方法保留控件属性：创建现有项目的副本（而不是创建新项目）；或者将现有项目加载到新解决方案（在设计器中），然后将控件从现有文档复制并粘贴到新文档中。
 
-### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>基于现有工作簿创建 Excel 工作簿项目时出现的错误
+### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>基于现有工作簿创建 Excel 工作簿项目时出现错误
  如果基于现有工作簿创建新的 Excel 工作簿项目，可能会看到以下错误的组合。
 
  来自 Excel：“隐私问题警告: 此文档中包含宏、ActiveX 控件、XML 扩展包信息或 Web 组件。 其中可能包含个人信息，并且这些信息不能通过“文档检查器”删除。”
@@ -81,7 +82,7 @@ ms.locfileid: "107827807"
 
  或者，确保仅在安装了 Microsoft Office 2010 的开发计算机上打开迁移的项目。
 
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>升级的 Office 2003 文档级项目中包含 Windows 窗体控件的错误
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>升级 Office 2003 包含 Windows 窗体控件的文档级项目中的错误
  如果升级 Microsoft Office 2003 文档级项目，并且该文档包含 Windows 窗体控件，则升级后的项目可能包含编译或运行时错误。 若要避免此问题，请在升级项目之前在开发计算机上安装 Visual Studio 2005 Tools for Office Second Edition Runtime。 可以从 Microsoft 下载中心（网址为： [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392)）下载此版本的运行时作为可再发行组件包。
 
  完成项目升级后，如果它未被任何其他 Office 解决方案使用，你可以将 Visual Studio 2005 Tools for Office Second Edition Runtime 从开发计算机上卸载。
@@ -101,11 +102,11 @@ ms.locfileid: "107827807"
 ### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>控件在文档或工作表中显示为黑色矩形
  如果对文档或工作表中的控件进行分组，则 Visual Studio 不再识别这些控件。 在 " **属性** " 窗口中无法访问已分组的控件，它们在文档或工作表中显示为黑色矩形。 若要还原控件的功能，必须取消对控件进行分组。
 
-### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 模板上的控件在 Visual Studio 中不可见
- 如果在 Visual Studio 设计器中打开 Word 模板，则该模板中未嵌入文本中的控件可能不可见。 这是因为 Visual Studio 在 **普通** 视图中打开 Word 模板。 若要查看控件，请单击 " **视图** " 菜单，指向 **Microsoft Office Word "视图** ，然后单击" **打印布局**"。
+### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 模板上的控件不显示在 Visual Studio
+ 如果在 Visual Studio 设计器中打开 Word 模板，则该模板中未嵌入文本中的控件可能不可见。 这是因为 Visual Studio 在 **普通** 视图中打开 Word 模板。 若要查看控件，请单击 "**视图**" 菜单，指向 **Microsoft Office Word "视图**，然后单击"**打印布局**"。
 
 ### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>在 Visual Studio 设计器中插入剪贴画命令不执行任何操作
- 当在 Visual Studio 设计器中打开 Excel 或 Word 时，单击功能区中的 "**图例**" 选项卡上的 "**剪贴画**" 按钮不会打开 "**剪贴画**" 任务窗格。 若要添加 "剪贴画"，必须打开主项目文件夹中的工作簿或文档的副本， (不是 Visual Studio 外部的 *\bin*) 文件夹中的副本，请添加剪贴画，然后保存该工作簿或文档。
+ 当在 Visual Studio 设计器中打开 Excel 或 Word 时，单击功能区中的 "**图例**" 选项卡上的 "**剪贴画**" 按钮不会打开 "**剪贴画**" 任务窗格。 若要添加 "剪贴画"，您必须打开主项目文件夹中的工作簿或文档的副本， (不在 Visual Studio 外部) *\bin* 文件夹中的副本，请添加剪贴画，然后保存该工作簿或文档。
 
 ## <a name="write-code"></a><a name="code"></a> 编写代码
  在 Office 项目中编写代码时，可能会遇到以下错误。
@@ -123,9 +124,9 @@ ms.locfileid: "107827807"
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
- 有关 Office Pia 中的事件接口的详细信息，请参阅 [office 主互操作程序集中的类和接口概述](/previous-versions/office/office-12//ms247299(v=office.12))。
+ 有关 Office pia 中的事件接口的详细信息，请参阅[Office 主互操作程序集中的类和接口的概述](/previous-versions/office/office-12//ms247299(v=office.12))。
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>无法引用面向或的项目中的 Office PIA 类 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>无法在面向或的项目中引用 Office PIA 类 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
  在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目中，默认情况下 Office PIA 中定义的类的代码不进行编译。 Pia 中的类使用命名约定 *objectname* 类，如 <xref:Microsoft.Office.Interop.Word.DocumentClass> 和 <xref:Microsoft.Office.Interop.Excel.WorkbookClass> 。 例如，Word VSTO 外接程序项目中的以下代码将不进行编译。
 
 ```vb
@@ -152,7 +153,7 @@ Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument
 Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ```
 
- 默认情况下，面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目会自动嵌入 Office PIA 中的所有互操作类型。 发生此编译错误的原因是嵌入互操作类型功能仅适用于接口，而不适用于类。 有关 Office Pia 中的接口和类的详细信息，请参阅 [office 主互操作程序集中的类和接口概述](/previous-versions/office/office-12/ms247299(v=office.12))。 有关 Office 项目中嵌入的互操作类型功能的详细信息，请参阅 [设计和创建 office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
+ 默认情况下，面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目会自动嵌入 Office PIA 中的所有互操作类型。 发生此编译错误的原因是嵌入互操作类型功能仅适用于接口，而不适用于类。 有关 Office pia 中的接口和类的详细信息，请参阅[Office 主互操作程序集中的类和接口的概述](/previous-versions/office/office-12/ms247299(v=office.12))。 有关 Office 项目中的嵌入互操作类型功能的详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
 ### <a name="references-to-office-classes-are-not-recognized"></a>无法识别对 Office 类的引用
  某些类名（例如应用程序）位于多个命名空间中，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 出于此原因，项目模板顶部 **的 import** / **using** 语句包含简写的限定常数，例如：
@@ -170,7 +171,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet4":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet4":::
 
- 即使您已经导入了 Word 或 Excel 命名空间并有权访问其中的所有类，也必须使用 Word 或 Excel 完全限定所有类型，以消除命名空间的歧义。
+ 即使已导入 Word 或 Excel 命名空间，并且有权访问其中的所有类，也必须使用 Word 或 Excel 完全限定所有类型，以消除命名空间的多义性。
 
 ## <a name="build-projects"></a><a name="building"></a> 生成项目
  生成 Office 项目时，可能会遇到以下错误。
@@ -209,14 +210,14 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
  在加载 Office 解决方案之前，Visual Studio 使用 Fusion（.NET Framework 程序集加载程序）来缓存程序集。 请确保 Visual Studio 可以写入 Fusion 缓存，然后重试。 有关详细信息，请参阅 [卷影副本程序集](/dotnet/framework/app-domains/shadow-copy-assemblies)。
 
 ### <a name="error-when-stopping-the-debugger-in-a-document-level-project-after-using-edit-and-continue"></a>使用 "编辑并继续" 后在文档级项目中停止调试器时出错
- 如果您在项目处于中断模式时使用 " **编辑** 并 **继续** " 对 Excel 或 Word 的文档级项目中的代码进行更改，则您可能会看到一个对话框，如果您随后停止调试器，会显示以下错误消息。
+ 如果使用 "**编辑** 并 **继续**" 在项目处于中断模式时对 Excel 或 Word 的文档级项目中的代码进行更改，则在您随后停止调试器时，可能会看到一个对话框，其中包含以下错误消息。
 
  “在当前状态下终止进程可能导致意外结果，包括数据丢失和系统不稳定。”
 
- 无论是在对话框中单击 **"是" 还是 "** **否** "，Visual Studio 都将终止 Excel 或 Word 进程并停止调试器。 若要停止调试项目而不显示此对话框，请直接退出 Excel 或 Word，而不是在 Visual Studio 中停止调试器。
+ 无论是在对话框中单击 **"是" 还是 "** **否**"，Visual Studio 都将终止 Excel 或 Word 进程，并停止调试器。 若要停止调试项目而不显示此对话框，请直接退出 Excel 或 Word，而不是在 Visual Studio 中停止调试器。
 
 ## <a name="see-also"></a>请参阅
-- [排查 Office 解决方案问题](../vsto/troubleshooting-office-solutions.md)
-- [Office 解决方案安全性疑难解答](../vsto/troubleshooting-office-solution-security.md)
-- [Office 解决方案部署疑难解答](../vsto/troubleshooting-office-solution-deployment.md)
+- [解决 Office 解决方案问题](../vsto/troubleshooting-office-solutions.md)
+- [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
+- [解决 Office 解决方案部署问题](../vsto/troubleshooting-office-solution-deployment.md)
 - [Visual Studio 故障排除](/troubleshoot/visualstudio/welcome-visual-studio/)

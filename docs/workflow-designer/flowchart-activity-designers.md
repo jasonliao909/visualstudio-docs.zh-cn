@@ -8,14 +8,15 @@ ms.assetid: 8b7b4aa6-d27d-45c8-87c2-641440d38afc
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 600b500ae5672dfd5332168ec11f05c7b27b14bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 369d1ba066fb1a87a13c9204bd0bb45a897153d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894161"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099069"
 ---
 # <a name="flowchart-activity-designers"></a>流程图活动设计器
 

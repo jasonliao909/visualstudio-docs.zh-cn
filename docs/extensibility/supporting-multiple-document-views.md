@@ -1,6 +1,6 @@
 ---
 title: 支持多个文档视图 |Microsoft Docs
-description: 了解如何通过使用 Visual Studio SDK 中的自定义编辑器的单独文档数据和文档视图对象来提供文档的多个视图。
+description: 了解如何通过在 Visual Studio SDK 中为自定义编辑器使用单独的文档数据和文档视图对象来提供文档的多个视图。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: c7ec2366-91c4-477f-908d-e89068bdb3e3
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e54ee028c6a7db2d5d2ea1ab609be6c2887c9829
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 67c61071ee877e147d806a29f7c36c0dad1eb848
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105056202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117431"
 ---
 # <a name="supporting-multiple-document-views"></a>支持多个文档视图
 可以通过为编辑器创建单独的文档数据和文档视图对象来提供文档的多个视图。 在某些情况下，其他文档视图会很有用：
@@ -40,4 +41,4 @@ ms.locfileid: "105056202"
 
  默认情况下，每个视图 (文档视图对象) 包含在其自己的窗口框架 (<xref:Microsoft.VisualStudio.Shell.Interop.IVsWindowFrame>) 中。 但正如前文所述，文档数据可以显示在多个视图中。 若要启用此项，Visual Studio 将检查 RDT 以确定是否已在编辑器中打开了相关文档。 当 IDE 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory.CreateEditorInstance%2A> 创建编辑器时，在参数中返回的非 NULL 值 `punkDocDataExisting` 表示文档已在另一个编辑器中打开。 有关 RDT 函数的详细信息，请参阅 [运行文档表](../extensibility/internals/running-document-table.md)。
 
- 在您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 实现中，检查中返回的文档数据对象， `punkDocDataExisting` 以确定文档数据是否适合您的编辑器。  (例如，HTML 编辑器应该只显示 HTML 数据。 ) 如果适用，则编辑器工厂应提供数据的另一个视图。 如果 `punkDocDataExisting` 参数不为 `NULL` ，则可能是在另一个编辑器中打开了文档数据对象，或者，如果文档数据已在具有相同编辑器的不同视图中打开，则可能是如此。 如果文档数据在编辑器工厂不支持的其他编辑器中打开，则 Visual Studio 将无法打开编辑器工厂。 有关详细信息，请参阅 [如何：将视图附加到文档数据](../extensibility/how-to-attach-views-to-document-data.md)。
+ 在您的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsEditorFactory> 实现中，检查中返回的文档数据对象， `punkDocDataExisting` 以确定文档数据是否适合您的编辑器。  (例如，HTML 编辑器应该只显示 HTML 数据。 ) 如果适用，则编辑器工厂应提供数据的另一个视图。 如果 `punkDocDataExisting` 参数不为 `NULL` ，则可能是在另一个编辑器中打开了文档数据对象，或者，如果文档数据已在具有相同编辑器的不同视图中打开，则可能是如此。 如果文档数据在编辑器工厂不支持的其他编辑器中打开，则 Visual Studio 无法打开编辑器工厂。 有关详细信息，请参阅 [如何：将视图附加到文档数据](../extensibility/how-to-attach-views-to-document-data.md)。

@@ -11,17 +11,18 @@ ms.assetid: 5dc3e36c-46e5-4556-bf41-1870aa67d2a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8707bf7cdaf21c8f600d4404120fa7ed41165190
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: dd020bc55a9b4cc93a963064c935c9917f93aa72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105058100"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042889"
 ---
 # <a name="ienumdebugprocesses2getcount"></a>IEnumDebugProcesses2::GetCount
 返回枚举中的元素数。
@@ -50,5 +51,5 @@ int GetCount(
 ## <a name="remarks"></a>备注
  此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

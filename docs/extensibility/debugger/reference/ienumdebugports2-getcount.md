@@ -1,6 +1,6 @@
 ---
 description: 返回端口枚举中的元素数。
-title: IEnumDebugPorts2：： GetCount |Microsoft Docs
+title: IEnumDebugPorts2：：GetCount |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: d714455c-e4fc-48dc-a6d4-7e8b5d7c1bce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6201b24c7134815c6958a50ff355dd7d2d406ec
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: e569602d6d7824f320674443be41a3a59c7bf69a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105052783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042954"
 ---
 # <a name="ienumdebugports2getcount"></a>IEnumDebugPorts2::GetCount
-返回枚举中的元素数。
+返回 枚举中的元素数。
 
 ## <a name="syntax"></a>语法
 
@@ -42,13 +43,13 @@ int GetCount(
 
 ## <a name="parameters"></a>参数
 `pcelt`\
-弄返回枚举中的元素数。
+[out]返回 枚举中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不是习惯的 COM 枚举接口的一部分，它指定只 `Next` `Clone` `Skip` 需实现、、和 `Reset` 方法。
+ 此方法不是指定只需实现 、、 和 方法的 com 枚举 `Next` `Clone` `Skip` `Reset` 接口的一部分。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugPorts2](../../../extensibility/debugger/reference/ienumdebugports2.md)

@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 177b21e2278153693601adf7b7dc18b751cf184e
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: c4d8d32ea4abfd7b81e6e86bc8d1affa32d1c3b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824843"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059863"
 ---
 # <a name="walkthrough-create-a-master-detail-relation-using-a-cached-dataset"></a>演练：使用缓存的数据集创建主/从关系
   本演练演示如何在工作表上创建主/从关系以及缓存数据，以便可以脱机使用该解决方案。
@@ -56,9 +57,9 @@ ms.locfileid: "107824843"
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 使用 Visual Basic 或 c # 创建一个名为 **Master-Detail** 的 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 使用 Visual Basic 或 c # 创建一个名为 **"我的大纲-详细信息**" 的 Excel 工作簿项目。 请确保已选中 " **创建新文档** "。 有关详细信息，请参阅 [How to: Create Office Projects in Visual Studio](../vsto/how-to-create-office-projects-in-visual-studio.md)。
 
-   Visual Studio 将在设计器中打开新的 Excel 工作簿，并将 **我的母版页-Detail** 项目添加到 **解决方案资源管理器**。
+   Visual Studio 在设计器中打开新的 Excel 工作簿，并将 **我的母版页-Detail** 项目添加到 **解决方案资源管理器**。
 
 ## <a name="create-the-data-source"></a>创建数据源
  使用 **“数据源”** 窗口将类型化数据集添加到项目中。
@@ -71,7 +72,7 @@ ms.locfileid: "107824843"
 
 3. 选择 **数据库** ，然后单击 " **下一步**"。
 
-4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 " **新建连接** " 按钮添加新连接。
+4. 选择与 Northwind 示例 SQL Server 数据库的数据连接，或使用 "**新建连接**" 按钮添加新连接。
 
 5. 选择或创建连接后，单击 " **下一步**"。
 
@@ -90,7 +91,7 @@ ms.locfileid: "107824843"
 
 ### <a name="to-add-a-named-range-and-a-list-object"></a>添加命名范围和列表对象
 
-1. 验证是否在 Visual Studio 设计器中打开了 **"我的 Master-Detail.xlsx** 工作簿"，其中显示了 **Sheet1** 。
+1. 验证是否在 "Visual Studio 设计器" 中打开了 "**我的 Master-Detail.xlsx** 工作簿"，其中显示了 **Sheet1** 。
 
 2. 打开 " **数据源** " 窗口并展开 " **Orders** " 节点。
 
@@ -169,29 +170,29 @@ ms.locfileid: "107824843"
 
 ### <a name="to-test-the-data-caching"></a>测试数据缓存
 
-1. 按 F5 。
+1. 按 **F5**。
 
 2. 验证命名范围和列表对象是否用数据源中的数据进行填充。
 
 3. 单击按钮，滚动查看一些记录。
 
-4. 保存工作簿，然后关闭工作簿和 Visual Studio。
+4. 保存工作簿，然后关闭工作簿并 Visual Studio。
 
 5. 禁用与数据库的连接。 如果数据库位于服务器上，则从计算机拔下网线，如果数据库位于开发计算机上，则停止 SQL Server 服务。
 
-6. 打开 "Excel"，然后从 *\bin* 目录中打开 **"我的 Master-Detail.xlsx** (*\My Master-Detail\bin* in c # ) 中的 Visual Basic 或 *\My Master-Detail\bin\debug* 。
+6. 打开 Excel，然后从 *\bin* 目录中打开 **"我的 Master-Detail.xlsx** (*\My Master-Detail\bin* in Visual Basic 或 *\My Master-Detail\bin\debug* in c # ) "。
 
 7. 滚动查看一些记录，查看在断开连接时工作表的运行是否正常。
 
-8. 重新连接到数据库。 如果数据库位于服务器上，则再次将计算机连接到网络，如果数据库位于开发计算机上，则启动 SQL Server 服务。
+8. 重新连接到数据库。 如果数据库位于服务器上，则再次连接计算机到网络，如果数据库位于开发计算机上，则启动 SQL Server 服务。
 
 ## <a name="next-steps"></a>后续步骤
  本演练演示了在工作表上创建主/详细数据关系并缓存数据集的基本知识。 以下是接下来可能要执行的一些任务：
 
-- 部署该解决方案。 有关详细信息，请参阅 [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- 部署该解决方案。 有关详细信息，请参阅[部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 
-## <a name="see-also"></a>另请参阅
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+## <a name="see-also"></a>请参阅
+- [在 Office 解决方案中将数据绑定到控件](../vsto/binding-data-to-controls-in-office-solutions.md)
 - [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
 - [缓存数据](../vsto/caching-data.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)

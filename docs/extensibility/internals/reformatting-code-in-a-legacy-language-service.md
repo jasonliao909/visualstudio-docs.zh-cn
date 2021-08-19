@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0af9dc7bf25e448a1e5a128276f55016a1049db49f55e14689fce9a6e8376972
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d0778b5f60abe8c72e12783fa65017d86c11aa7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159056"
 ---
 # <a name="reformatting-code-in-a-legacy-language-service"></a>在旧版语言服务中重新格式化代码
 

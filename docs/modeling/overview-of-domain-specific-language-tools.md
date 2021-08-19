@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: fa76c545019dd1b2faca45d25ba7dfdafc267fc74dcee0f7e3ba826b6ebab5e1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 697c3ee97562cff0a91984cbcfe467a82574a508
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121410965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040133"
 ---
 # <a name="overview-of-domain-specific-language-tools"></a>域特定语言工具的概述
 特定于域的语言工具（DSL 工具）托管在 Visual Studio 中，可用于设计域特定语言，然后生成用户创建基于该语言的模型必需的所有内容。
