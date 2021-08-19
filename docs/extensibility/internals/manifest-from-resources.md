@@ -8,14 +8,15 @@ ms.assetid: 0234109b-5dcb-4d9d-acb9-a63f8bd5699c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f69a46362b3076025a63625adb1ee4a478622259
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f750f61532c3e9c6491698c3d936848243d4979a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069674"
 ---
 # <a name="manifest-from-resources"></a>Manifest from Resources
 Manifest from Resources 工具是一个控制台应用程序，它采用图像资源列表 (.png 或 .xaml 文件) 并生成一个 .imagemanifest 文件，该文件允许这些图像与 Visual Studio 映像服务一起使用。 此外，此工具还可用于将图像添加到现有 .imagemanifest。 此工具可用于向扩展插件添加对图像的高 DPI 和Visual Studio支持。 生成的 .imagemanifest 文件应包含在 中，并部署为 Visual Studio.vsix (.vsix) 。
@@ -29,13 +30,13 @@ Manifest from Resources 工具是一个控制台应用程序，它采用图像�
 
 |**交换机名称**|**备注**|**必需或可选**|
 |-|-|-|
-|/resources|以分号分隔的图像或目录列表。 此列表应始终包含清单中将包含的图像的完整列表。 如果只提供部分列表，则不包括的条目将丢失。<br /><br /> 如果给定的资源文件是一个图像条带，该工具会先将该文件拆分为单独的图像，然后再将每个子映像添加到清单。<br /><br /> 如果图像是.png文件，建议设置名称的格式，以便该工具可以填充图像正确的属性 \<Name> \<Width> \<Height> ：...png。|必须|
-|/assembly|托管程序集的名称 (不包括扩展) ，也不包括托管资源的本机程序集的运行时路径 (相对于清单的运行时位置) 。|必须|
+|/resources|以分号分隔的图像或目录列表。 此列表应始终包含清单中将包含的图像的完整列表。 如果只提供部分列表，则不包括的条目将丢失。<br /><br /> 如果给定的资源文件是一个图像条带，该工具会先将该文件拆分为单独的图像，然后再将每个子映像添加到清单。<br /><br /> 如果图像是.png，建议设置名称的格式，以便该工具可以填充图像正确的属性 \<Name> \<Width> \<Height> ：...png。|必需|
+|/assembly|托管程序集的名称 (不包括扩展) ，也不包括托管资源的本机程序集的运行时 (相对于清单的运行时位置) 。|必需|
 |/manifest|要赋予生成的 .imagemanifest 文件的名称。 这还可以包括一个绝对路径或相对路径，以在不同的位置创建文件。 默认名称与程序集名称匹配。<br /><br /> 默认值 \<Current Directory> \\ ：<\> 程序集 .imagemanifest|可选|
 |/guidName|要为生成的清单中所有图像的 GUID 符号提供的名称。<br /><br /> 默认值：AssetsGuid|可选|
 |/rootPath|在创建托管资源 URI 之前需要去除的根路径。  (此标志有助于处理工具获取相对 URI 路径错误，导致资源无法加载的情况。) <br /><br /> 默认：\<Current Directory>|可选|
-|/recursive|设置此标志会告知工具以递归方式搜索 /resources 参数中的任何目录。 省略此标志将导致对目录进行仅顶级搜索。|可选|
-|/isNative|当程序集参数是本机程序集的路径时，设置此标志。 当程序集参数是托管程序集的名称时，请省略此标志。  (有关此标志的其他信息，请参阅 Notes 部分。) |可选|
+|/recursive|设置此标志会告知工具以递归方式搜索 /resources 参数中任何目录。 省略此标志将导致对目录进行仅顶级搜索。|可选|
+|/isNative|当程序集参数是本机程序集的路径时，设置此标志。 当程序集参数是托管程序集的名称时，请省略此标志。  (有关此标志的其他信息，请参阅 Notes 部分) |可选|
 |/newGuids|设置此标志会告知工具为图像的 GUID 符号创建新值，而不是合并现有清单中的 GUID 符号。|可选|
 |/newIds|设置此标志会告知工具为每个图像创建新的 ID 符号值，而不是合并现有清单中的值。|可选|
 |/noLogo|设置此标志会阻止打印产品和版权信息。|可选|

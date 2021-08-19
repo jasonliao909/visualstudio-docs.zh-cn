@@ -1,5 +1,5 @@
 ---
-description: 指定启动进程进行调试的原因。
+description: 指定为调试启动进程的原因。
 title: DEBUG_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 790dbcf8988af2751a8ce2eafda854797c89538ff3ca425b1bc11b9e53c9c795
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 493328f0dbad03030c3f817177a5adb4dc213bc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160278"
 ---
 # <a name="debug_reason"></a>DEBUG_REASON
-指定启动进程进行调试的原因。
+指定为调试启动进程的原因。
 
 ## <a name="syntax"></a>语法
 
@@ -52,29 +52,29 @@ public enum enum_DEBUG_REASON {
 
 ## <a name="fields"></a>字段
 `DEBUG_REASON_ERROR`\
-出现非特定错误 (当其他任何原因都不符合条件时，此错误用作默认) 。
+发生了非特定的错误 (如果其他原因均不符合) ，则使用此值作为默认条件。
 
 `DEBUG_REASON_USER_LAUNCHED`\
-进程是在用户请求时启动的。
+该进程是在用户请求时启动的。
 
 `DEBUG_REASON_USER_ATTACHED`\
-已运行的进程已由用户附加到 。
+用户已将已运行的进程附加到。
 
 `DEBUG_REASON_AUTO_ATTACHED`\
-进程在启动时自动附加到 。
+进程在启动时自动附加到。
 
 `DEBUG_REASON_CAUSALITY`\
-由于实时运行 JIT  (调试事件) 进程。
+由于 *实时* (JIT) 调试事件，进程已启动。
 
 ## <a name="remarks"></a>备注
-从 [GetDebugReason 方法](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) 返回。
+从 [GetDebugReason](../../../extensibility/debugger/reference/idebugprocess3-getdebugreason.md) 方法返回。
 
 ## <a name="requirements"></a>要求
-标头：msdbg.h
+标头： msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

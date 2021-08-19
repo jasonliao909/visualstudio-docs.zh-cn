@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e76a231891235f26ea4b4cd675f341376de4ff97ef7e6b2540a1cd1318504ce6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 46d9fd4f255709c98d6a45e7b78d32312889deca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160239"
 ---
 # <a name="disassemblydata"></a>DisassemblyData
 描述用于显示 (IDE) 的集成开发环境的一种反汇编说明。
@@ -228,7 +228,7 @@ namespace MyNamespace
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [读取](../../../extensibility/debugger/reference/idebugdisassemblystream2-read.md)
 - [DISASSEMBLY_STREAM_FIELDS](../../../extensibility/debugger/reference/disassembly-stream-fields.md)

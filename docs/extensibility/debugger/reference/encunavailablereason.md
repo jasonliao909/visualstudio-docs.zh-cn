@@ -1,5 +1,5 @@
 ---
-description: 表示 "编辑并继续" 不可用的原因。
+description: 表示"编辑并继续"不可用的原因。
 title: EncUnavailableReason |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a47c29f07a590667a22ed123ba660202b4de9c449e606a8d921dd02eb0b7f52
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d14b48d4cc3e32c48886222919b5e1f80f72fc69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434394"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160188"
 ---
 # <a name="encunavailablereason"></a>EncUnavailableReason
-`This is for internal use only!` 表示 " **编辑并继续** " 不可用的原因。
+`This is for internal use only!` 表示"编辑 **并继续"** 不可用的原因。
 
 ## <a name="syntax"></a>语法
 
@@ -56,35 +56,35 @@ public enum EncUnavailableReason {
 
 ## <a name="fields"></a>字段
 `ENCUN_NONE`\
-"编辑并继续" 不可用的特定原因。
+"编辑并继续"不可用的具体原因。
 
 `ENCUN_INTEROP`\
-在互操作调用期间，"编辑并继续" 不可用。
+在 InterOp 调用期间，"编辑并继续"不可用。
 
 `ENCUN_SQLCLR`\
-使用公共语言运行时 (CLR) 时，"编辑并继续" 不可 SQL 用。
+在使用公共语言运行时和 CLR SQL的调用过程中，"编辑并继续 (不可用) 。
 
 `ENCUN_MINIDUMP`\
-处理小型转储时，"编辑并继续" 不可用。
+处理微型转储时，"编辑并继续"不可用。
 
 `ENCUN_EMBEDDED`\
-在处理嵌入代码时，"编辑并继续" 不可用。
+处理嵌入代码时，"编辑并继续"不可用。
 
 `ENCUN_ATTACH`\
-"编辑并继续" 不可用，因为该会话已附加到调试器，而不是由调试器启动。
+"编辑并继续"不可用，因为会话已附加到调试器，而不是由 调试器启动。
 
 `ENCUN_WIN64`\
-处理64位 Windows 代码时，"编辑并继续" 不可用。
+处理 64 位代码时，"编辑并继续Windows可用。
 
 ## <a name="remarks"></a>备注
-此枚举仅供内部使用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。 自定义端口供应商实现的 [GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) 和 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) 方法应始终返回 `E_NOTIMPL` 。
+此枚举仅供 内部使用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。 由 [自定义端口供应商实现的 GetENCAvailableState](../../../extensibility/debugger/reference/idebugprocess3-getencavailablestate.md) 和 [DisableENC](../../../extensibility/debugger/reference/idebugprocess3-disableenc.md) 方法应始终返回 `E_NOTIMPL` 。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.idl
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

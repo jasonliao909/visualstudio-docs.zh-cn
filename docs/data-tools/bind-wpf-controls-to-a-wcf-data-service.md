@@ -1,6 +1,6 @@
 ---
 title: 将 WPF 控件绑定到 WCF 数据服务
-description: 在 Visual Studio 中将 WPF 控件绑定到 WCF 数据服务。 这些控件将绑定到 WCF 数据服务中封装的客户记录。
+description: 将 WPF 控件绑定到 VISUAL STUDIO 中的 WCF 数据服务。 这些控件绑定到封装在 WCF 数据服务中的客户记录。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,30 +15,31 @@ ms.assetid: 8823537c-82f0-41f7-bf30-705f0e5e59fd
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ae6a2fd6eac9f59a7836dae23d442962e1b2b27e
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 214975aa03da6181108e2d10046610d1afa20580
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215547"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067161"
 ---
 # <a name="bind-wpf-controls-to-a-wcf-data-service"></a>将 WPF 控件绑定到 WCF 数据服务
 
-在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件将绑定到 WCF 数据服务中封装的客户记录。 你还将添加客户可用于查看和更新记录的按钮。
+在本演练中，你将创建一个包含数据绑定控件的 WPF 应用程序。 这些控件绑定到封装在 WCF 数据服务中的客户记录。 你还将添加客户可用于查看和更新记录的按钮。
 
 本演练演示以下任务：
 
 - 创建一个利用 AdventureWorksLT 示例数据库中的数据生成的实体数据模型。
 
-- 创建一个将实体数据模型中的数据公开给 WPF 应用程序的 WCF 数据服务。
+- 创建向 WPF 应用程序公开 实体数据模型 WCF 数据服务。
 
 - 通过将项从“数据源”窗口拖到 WPF 设计器来创建一组数据绑定控件。
 
 - 创建用于向前/向后导航客户记录的按钮。
 
-- 创建一个按钮，用于将对控件中的数据所做的更改保存到 WCF 数据服务和基础数据源。
+- 创建一个按钮，用于将控件中数据的更改保存到 WCF 数据服务和基础数据源。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
@@ -48,7 +49,7 @@ ms.locfileid: "106215547"
 
 - Visual Studio
 
-- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 可以从 [CodePlex 网站](https://archive.codeplex.com/?p=SqlServerSamples)下载 AdventureWorksLT 数据库。
+- 对附加了 AdventureWorksLT 示例数据库的 SQL Server 或 SQL Server Express 的正在运行的实例的访问权限。 可以从 [CodePlex](https://archive.codeplex.com/?p=SqlServerSamples)网站 下载 AdventureWorksLT 数据库。
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 
@@ -56,25 +57,25 @@ ms.locfileid: "106215547"
 
 - [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 中的数据模型。
 
-- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅 [实体框架概述](/dotnet/framework/data/adonet/ef/overview)。
+- 实体数据模型和 ADO.NET 实体框架。 有关详细信息，请参阅 实体框架 [概述](/dotnet/framework/data/adonet/ef/overview)。
 
-- WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](/dotnet/desktop-wpf/data/data-binding-overview)。
+- WPF 数据绑定。 有关详细信息，请参阅数据 [绑定概述](/dotnet/desktop-wpf/data/data-binding-overview)。
 
 ## <a name="create-the-service-project"></a>创建服务项目
 
-1. 通过创建 c # 或 Visual Basic **ASP.NET Web 应用程序** 项目开始本演练。 将项目命名为 **AdventureWorksService**。
+1. 通过创建 C# 或 web 应用程序Visual Basic ASP.NET **开始本** 演练。 将项目名称为 **AdventureWorksService**。
 
-2. 在“解决方案资源管理器”中，右键单击“Default.aspx”，然后选择“删除”。 本演练不需要此文件。
+2. 在“解决方案资源管理器”中，右键单击“Default.aspx”，然后选择“删除”。 此演练不需要此文件。
 
-## <a name="create-an-entity-data-model-for-the-service"></a>为服务创建实体数据模型
+## <a name="create-an-entity-data-model-for-the-service"></a>为实体数据模型创建一个服务
 
-若要使用 WCF 数据服务向应用程序公开数据，您必须为该服务定义一个数据模型。 WCF 数据服务支持两种类型的数据模型：实体数据模型，以及通过使用公共语言运行时 (CLR) 实现接口的对象定义的自定义数据模型 <xref:System.Linq.IQueryable%601> 。 在本演练中，你将为该数据模型创建一个实体数据模型。
+若要使用 WCF 数据服务向应用程序公开数据，必须为该服务定义数据模型。 WCF 数据服务支持两种类型的数据模型：实体数据模型和通过使用公共语言运行时定义的自定义数据模型 (CLR) 实现 <xref:System.Linq.IQueryable%601> 接口的对象。 在本演练中，你将为该数据模型创建一个实体数据模型。
 
 1. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
 2. 在“已安装的模板”列表中，单击“数据”，然后选择“ADO.NET 实体数据模型”项目项。
 
-3. 将名称更改为 `AdventureWorksModel.edmx` ，然后单击 " **添加**"。
+3. 将名称更改为 `AdventureWorksModel.edmx` ，然后单击"添加 **"。**
 
      “实体数据模型”向导随即打开。
 
@@ -94,15 +95,15 @@ ms.locfileid: "106215547"
 
 ## <a name="create-the-service"></a>创建服务
 
-创建一个 WCF 数据服务，用于向 WPF 应用程序公开实体数据模型中的数据：
+创建 WCF 数据服务以向 WPF 应用程序公开实体数据模型数据：
 
 1. 在“项目”菜单上，选择“添加新项”。
 
 2. 在“已安装的模板”列表中，单击“Web”，然后选择“WCF Data Service”项目项。
 
-3. 在 " **名称** " 框中键入 `AdventureWorksService.svc` ，然后单击 " **添加**"。
+3. 在"**名称"** 框中，键入 `AdventureWorksService.svc` ，然后单击"添加 **"。**
 
-     Visual Studio 将添加 `AdventureWorksService.svc` 到项目。
+     Visual Studio将 `AdventureWorksService.svc` 添加到项目。
 
 ## <a name="configure-the-service"></a>配置服务
 
@@ -113,13 +114,13 @@ ms.locfileid: "106215547"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_ProTools/data_wpfwcf/cs/adventureworksservice.svc.cs" id="Snippet1":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfwcf/vb/adventureworksservice.svc.vb" id="Snippet1":::
 
-     此代码将更新 **AdventureWorksService** 类，以便它派生自在 <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 实体数据模型中的对象上下文类上运行的。 此代码还将更新 `InitializeService` 方法，以使服务的客户端具有对 `SalesOrderHeader` 实体的完全读/写访问权限。
+     此代码更新 **AdventureWorksService** 类，以便它派生自 ，该派生自 ，它在你的代码中对对象 <xref:System.Data.Services.DataService%601> `AdventureWorksLTEntities` 上下文类实体数据模型。 此代码还将更新 `InitializeService` 方法，以使服务的客户端具有对 `SalesOrderHeader` 实体的完全读/写访问权限。
 
 2. 生成项目，并确认生成过程中未发生错误。
 
 ## <a name="create-the-wpf-client-application"></a>创建 WPF 客户端应用程序
 
-若要显示 WCF 数据服务中的数据，请使用基于该服务的数据源创建一个新的 WPF 应用程序。 在本演练后面的部分中，你将向该应用程序中添加数据绑定控件。
+若要显示 WCF 数据服务的数据，请创建一个包含基于该服务的数据源的新 WPF 应用程序。 在本演练后面的部分中，你将向该应用程序中添加数据绑定控件。
 
 1. 在“解决方案资源管理器”中，右键单击解决方案节点、单击“添加”，然后选择“新建项目”。
 
@@ -129,7 +130,7 @@ ms.locfileid: "106215547"
 
 4. 在“名称”框中，键入 `AdventureWorksSalesEditor`，然后单击“确定”。
 
-   Visual Studio 会将 `AdventureWorksSalesEditor` 项目添加到解决方案中。
+   Visual Studio项目 `AdventureWorksSalesEditor` 添加到解决方案。
 
 5. 在 **“数据”** 菜单上，单击 **“显示数据源”**。
 
@@ -137,13 +138,13 @@ ms.locfileid: "106215547"
 
 6. 在 **“数据源”** 窗口中，单击 **“添加新数据源”**。
 
-   " **数据源配置** 向导" 将打开。
+   " **数据源配置"向导** 随即打开。
 
 7. 在该向导的“选择数据源类型”页面上，选择“服务”，然后单击“下一步”。
 
 8. 在 **“添加服务引用”** 对话框中，单击 **“发现”**。
 
-   Visual Studio 会在当前解决方案中搜索可用服务，并将添加 `AdventureWorksService.svc` 到 " **服务** " 框中的可用服务列表。
+   Visual Studio当前解决方案中搜索可用服务，并添加到"服务"框中的可用 `AdventureWorksService.svc` **服务** 列表。
 
 9. 在“命名空间”框中，键入“AdventureWorksService”。
 
@@ -159,7 +160,7 @@ ms.locfileid: "106215547"
 
 通过在 WPF 设计器中修改 XAML，将多个按钮添加到该窗口中。 在本演练后面的部分中，你将添加可让用户通过使用这些按钮来查看和更新销售记录的代码。
 
-1. 在 **解决方案资源管理器** 中，双击 " **mainwindow.xaml**"。
+1. 在 **解决方案资源管理器** 中，双击 **MainWindow.xaml**。
 
    将在 WPF 设计器中打开相应的窗口。
 
@@ -179,7 +180,7 @@ ms.locfileid: "106215547"
 
 ## <a name="create-the-data-bound-controls"></a>创建数据绑定控件
 
-通过 `SalesOrderHeaders` 将节点从 " **数据源** " 窗口拖到设计器来创建显示客户记录的控件。
+将节点从"数据源"窗口拖动到设计器，创建显示客户 `SalesOrderHeaders` **记录的** 控件。
 
 1. 在“数据源”窗口中，单击“SalesOrderHeaders”节点的下拉菜单，然后选择“详细信息”。
 
@@ -197,11 +198,11 @@ ms.locfileid: "106215547"
 
     - **rowguid**
 
-    此操作将阻止 Visual Studio 在下一步中为这些节点创建数据绑定控件。 对于本演练，假设最终用户不需要查看此数据。
+    此操作将阻止 Visual Studio 在下一步中为这些节点创建数据绑定控件。 对于本演练，假定最终用户不需要查看此数据。
 
 4. 从“数据源”窗口中，将“SalesOrderHeaders”节点拖到包含按钮的行的下方的网格行。
 
-     Visual Studio 将生成 XAML 和代码，它们将创建一组绑定到“Product”表中的数据的控件。 有关生成的 XAML 和代码的详细信息，请参阅 [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     Visual Studio 将生成 XAML 和代码，它们将创建一组绑定到“Product”表中的数据的控件。 有关生成的 XAML 和代码详细信息，请参阅[将 WPF](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)控件绑定到 Visual Studio。
 
 5. 在设计器中，单击“客户 ID”标签旁边的文本框。
 
@@ -297,10 +298,10 @@ ms.locfileid: "106215547"
 
 - 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅 [演练：在 WPF 应用程序中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [将 WPF 控件绑定到数据集](../data-tools/bind-wpf-controls-to-a-dataset.md)
-- [WCF 概述 ( .NET Framework) ](/dotnet/framework/data/wcf/wcf-data-services-overview)
-- [实体框架概述 ( .NET Framework) ](/dotnet/framework/data/adonet/ef/overview)
-- [数据绑定概述 ( .NET Framework) ](/dotnet/desktop-wpf/data/data-binding-overview)
+- [WCF 概述 (.NET Framework) ](/dotnet/framework/data/wcf/wcf-data-services-overview)
+- [实体框架概述 (.NET Framework) ](/dotnet/framework/data/adonet/ef/overview)
+- [数据绑定概述 (.NET Framework) ](/dotnet/desktop-wpf/data/data-binding-overview)

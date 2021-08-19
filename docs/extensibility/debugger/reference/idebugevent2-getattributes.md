@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5278cee4c10c38d370baece79cf9d652aac41a3ad56f4f5ccc18ea25cac7a4ff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba1b39a74497633e7a6cd1a2655b83550ae3a51c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111054"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 获取此调试事件的属性。

@@ -9,15 +9,16 @@ ms.assetid: 7c8de6e6-bb88-4353-92c3-ce7290310d61
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6be94fafb1e41390236977a7a06b59cf7ac71a84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0826afe211de54723f49fa29b40fb0f91ede026f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868200"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157145"
 ---
 # <a name="suspendprofile"></a>SuspendProfile
 `SuspendProfile` 方法递增指定分析级别的挂起/继续计数器的值。

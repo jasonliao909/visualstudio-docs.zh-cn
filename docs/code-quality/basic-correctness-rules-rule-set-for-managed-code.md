@@ -1,7 +1,7 @@
 ---
 title: 托管代码的“基本更正规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的基本正确性规则规则集，该规则侧重于逻辑错误和常见的框架 API 错误。 请参阅规则说明。
+description: 了解 Visual Studio 中的 "基本更正规则" 规则集，其中重点介绍逻辑错误和常见框架 API 错误。 请参阅规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 631f0daf-1d42-4c90-a7dc-1a6a9de64c93
@@ -11,18 +11,18 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: e0c8d23c6370f1869c514875119ddb6504b9a9a02eca2694af6405e002a3fbcf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02c7b660c6aba7f25e631a14146582f08c3d5117
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121456214"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155143"
 ---
 # <a name="basic-correctness-rules-rule-set-for-managed-code"></a>托管代码的“基本更正规则”规则集
 
-"基本正确性规则"规则集侧重于使用框架 API 时的逻辑错误和常见错误。 基本正确性规则包括托管建议规则 [规则集中](managed-recommended-rules-rule-set-for-managed-code.md) 的规则。
+基本更正规则规则集重点介绍了使用框架 Api 时的逻辑错误和常见错误。 基本更正规则包括 " [托管建议规则](managed-recommended-rules-rule-set-for-managed-code.md) " 规则集中的规则。
 
-下表描述了 Microsoft 基本正确性规则规则集内的所有规则。
+下表介绍了 Microsoft 基本更正规则集中的所有规则。
 
 |规则|描述|
 |----------|-----------------|

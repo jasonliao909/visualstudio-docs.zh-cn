@@ -16,15 +16,16 @@ ms.assetid: 7b1334f7-f9b0-4a82-a145-d0607bfa8467
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 476822abe665bee18d082b7187bfa657cc360d3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dfa8e4fda1200a9e364ef689c8eef32d2771baf7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911644"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156807"
 ---
 # <a name="vsinstr"></a>VSInstr
 VSInstr 工具用于检测二进制文件。 使用以下语法调用该工具：

@@ -10,14 +10,15 @@ ms.assetid: 841c5908-4f3f-400b-a7b0-96a95f362817
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7b9d6b5fbdcb8195709a751117056bcaa0617eff
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f4ba75017e277f12c6d3727ddc3d14a7dfd3483a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112904212"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160369"
 ---
 # <a name="notifydebuggerofwaitcompletion-method"></a>NotifyDebuggerOfWaitCompletion 方法
 调试器用作断点目标的占位符方法。 此方法不得是内向或优化的。

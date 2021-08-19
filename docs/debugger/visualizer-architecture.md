@@ -13,14 +13,15 @@ ms.assetid: 6aad395f-7170-4d9e-b2b8-a5faf453380e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9df1dfa1912c54d30c5c428ec59de9432fe68051
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3def27cc4960852bce00fdc65f575231c9be871f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884242"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160993"
 ---
 # <a name="visualizer-architecture"></a>可视化工具体系结构
 调试器可视化工具的结构由两部分组成：

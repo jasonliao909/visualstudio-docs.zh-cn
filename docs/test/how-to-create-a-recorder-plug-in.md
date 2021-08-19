@@ -10,12 +10,13 @@ ms.assetid: 6fe13be1-aeb5-4927-9bff-35950e194da9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: da17af68f7aebe52ad208bf2b83d3221a0640be6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 55a12f6ea6fb342adf3aacc8967f8fc62020696a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148579"
 ---
 # <a name="how-to-create-a-recorder-plug-in"></a>如何：创建记录器插件
 

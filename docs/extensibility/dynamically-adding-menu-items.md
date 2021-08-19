@@ -12,23 +12,24 @@ ms.assetid: d281e9c9-b289-4d64-8d0a-094bac6c333c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6867baafa45ca794f65b4cb0cc365dbebfbd4219
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: e7875b939748ff5140d65a1b17ffe30c6ecfac88
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898352"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159421"
 ---
 # <a name="dynamically-add-menu-items"></a>动态添加菜单项
-你可以在运行时添加菜单项，方法是在 `DynamicItemStart` Visual Studio 命令表中的占位符按钮定义上指定命令标志 (*.Vsct*) 文件中，然后在代码中定义 () 要显示的菜单项的数目，并处理 (s 的命令。 加载 VSPackage 时，会将占位符替换为动态菜单项。
+您可以在运行时添加菜单项，方法是在 `DynamicItemStart` Visual Studio 命令)  (表中的占位符按钮定义上指定命令标志，然后在代码中定义 ()  () 的菜单项的数目。 加载 VSPackage 时，会将占位符替换为动态菜单项。
 
- Visual Studio 使用 **最近使用** 的 (MRU) 列表中的动态列表，该列表显示最近打开的文档的名称，以及 **windows** 列表，其中显示当前打开的 windows 的名称。   `DynamicItemStart`命令定义上的标志指定在 VSPackage 打开之前，该命令是占位符。 打开 VSPackage 后，占位符将被替换为0个或多个在运行时创建并添加到动态列表中的命令。 在打开 VSPackage 之前，你可能无法在菜单上看到显示动态列表的位置。  为了填充动态列表，Visual Studio 会要求 VSPackage 查找 ID 的命令，该命令的第一个字符与占位符的 ID 相同。 当 Visual Studio 查找匹配的命令时，它会将命令的名称添加到动态列表。 然后，它会递增 ID 并查找另一个匹配的命令，以将其添加到动态列表，直到没有更多动态命令。
+ Visual Studio 使用 **最近使用** 过的 (MRU) 列表中的动态列表，显示最近打开的文档的名称，以及显示当前打开的 Windows 的名称的 **Windows** 列表。   `DynamicItemStart`命令定义上的标志指定在 VSPackage 打开之前，该命令是占位符。 打开 VSPackage 后，占位符将被替换为0个或多个在运行时创建并添加到动态列表中的命令。 在打开 VSPackage 之前，你可能无法在菜单上看到显示动态列表的位置。  若要填充动态列表，Visual Studio 会要求 VSPackage 查找 id 的命令，该命令的第一个字符与占位符的 id 相同。 当 Visual Studio 找到匹配的命令时，它会将命令的名称添加到动态列表。 然后，它会递增 ID 并查找另一个匹配的命令，以将其添加到动态列表，直到没有更多动态命令。
 
- 本演练演示如何在 Visual Studio 解决方案中使用 **解决方案资源管理器** 工具栏上的命令来设置启动项目。 它使用具有活动解决方案中项目的动态下拉列表的菜单控制器。 若要使此命令在没有打开解决方案时显示，或当打开的解决方案只有一个项目时显示，VSPackage 仅在解决方案有多个项目时才会加载。
+ 本演练演示如何使用 **解决方案资源管理器** 工具栏上的命令在 Visual Studio 解决方案中设置启动项目。 它使用具有活动解决方案中项目的动态下拉列表的菜单控制器。 若要使此命令在没有打开解决方案时显示，或当打开的解决方案只有一个项目时显示，VSPackage 仅在解决方案有多个项目时才会加载。
 
- 有关 *.vsct* 文件的详细信息，请参阅 [Visual Studio 命令表 (. .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
+ 有关 *.vsct* 文件的详细信息，请参阅 [Visual Studio command table (. .vsct) files](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)。
 
 ## <a name="create-an-extension-with-a-menu-command"></a>使用菜单命令创建扩展
 
@@ -265,7 +266,7 @@ ms.locfileid: "112898352"
 ## <a name="implement-the-handlers"></a>实现处理程序
  若要在菜单控制器上实现动态菜单项，则必须在单击动态项时处理该命令。 还必须实现逻辑来设置菜单项的状态。 将处理程序添加到 `DynamicMenu` 类。
 
-1. 若要实现 " **设置启动项目** " 命令，请添加 **OnInvokedDynamicItem** 事件处理程序。 它会查找名称与已调用命令的文本相同的项目，并将其设置为启动项目，方法是在属性中设置其绝对路径 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 。
+1. 若要实现 **Set Startup Project** 命令，请添加 **OnInvokedDynamicItem** 事件处理程序。 它会查找名称与已调用命令的文本相同的项目，并将其设置为启动项目，方法是在属性中设置其绝对路径 <xref:EnvDTE.SolutionBuild.StartupProjects%2A> 。
 
     ```csharp
     private void OnInvokedDynamicItem(object sender, EventArgs args)
@@ -333,7 +334,7 @@ private bool IsValidDynamicItem(int commandId)
 ```
 
 ## <a name="set-the-vspackage-to-load-only-when-a-solution-has-multiple-projects"></a>将 VSPackage 设置为仅在解决方案有多个项目时加载
- 因为除非活动解决方案包含多个项目，否则 " **设置启动项目** " 命令没有意义，因此，你可以将 VSPackage 设置为仅在这种情况下自动加载。 将 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 与 UI 上下文一起使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> 。 在 *DynamicMenuPackage* 文件中，将以下属性添加到 DynamicMenuPackage 类：
+ 因为除非活动解决方案包含多个项目，否则 "**设置启动 Project** " 命令没有意义，因此，你可以将 VSPackage 设置为仅在这种情况下自动加载。 将 <xref:Microsoft.VisualStudio.Shell.ProvideAutoLoadAttribute> 与 UI 上下文一起使用 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids.SolutionHasMultipleProjects> 。 在 *DynamicMenuPackage* 文件中，将以下属性添加到 DynamicMenuPackage 类：
 
 ```csharp
 [PackageRegistration(UseManagedResourcesOnly = true)]
@@ -358,6 +359,6 @@ public sealed class DynamicMenuItemsPackage : Package
 
 4. 关闭解决方案或打开只包含一个项目的解决方案时，工具栏图标应会消失。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
 - [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)

@@ -11,17 +11,18 @@ ms.assetid: 5e8d88b0-a8d4-4746-88c0-ad332ee73f33
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2e9e7527ee13c703bbf7e1ba5a15ae225cf87c0b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7bd5596d8d38375a1310aeaee1290039ad45c9a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076090"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159784"
 ---
 # <a name="idebugprogram2detach"></a>IDebugProgram2::Detach
 从程序分离调试引擎。
@@ -39,10 +40,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 分离的程序将继续运行，但不再是调试会话的一部分。 分离调试引擎后，不会再发送程序调试事件。
+ 分离的程序将继续运行，但它不再是调试会话的一部分。 分离调试引擎后，不再发送任何程序调试事件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

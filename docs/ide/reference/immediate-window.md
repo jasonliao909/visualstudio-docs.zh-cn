@@ -16,14 +16,15 @@ ms.assetid: d33e7937-73f3-4c69-9df0-777a8713c6f2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 73d3d2cc42e958c59ef058a1f69921145ea18475
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dcc91c8f7b9fa5cc33d9368d377c2a002b55107
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157782"
 ---
 # <a name="immediate-window"></a>即时窗口
 

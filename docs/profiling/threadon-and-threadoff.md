@@ -7,15 +7,16 @@ ms.assetid: 5cd5a695-0a14-484a-8952-ed47e13d8e92
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 059e7dfc9d7c16be3aa699eea47b1a64882e689e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48c40d24c10c4370c8d35eebc89d6b438059f3f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157015"
 ---
 # <a name="threadon-and-threadoff"></a>ThreadOn 和 ThreadOff
 VSPerfCmd.exe ThreadOff 和 ThreadOn 子命令只能在使用检测方法的命令行分析会话中使用 。 **ThreadOff** 和 **ThreadOn** 可暂停和继续指定线程的分析。 **ThreadOff** 停止线程分析，而 **ThreadOn** 启动线程分析。
