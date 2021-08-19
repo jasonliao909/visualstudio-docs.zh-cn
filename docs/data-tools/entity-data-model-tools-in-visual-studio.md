@@ -8,14 +8,15 @@ ms.assetid: 1b06b573-84aa-4458-b3f5-e238df47bf45
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ee4bb5e56c5ae9ffb5f5266c8ef80804c8e96597
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28a703518405bfedd4a786a583e8688dcb7db134
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161942"
 ---
 # <a name="entity-framework-tools-in-visual-studio"></a>Visual Studio 中的 Entity Framework Tools
 
@@ -30,7 +31,7 @@ Entity Framework Tools 旨在帮助您生成实体框架 (EF) 应用程序。 �
 
 实体框架工具作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 你还可以将它们作为单个组件安装在 " **sdk、库和框架** " 类别下。
 
-这些是在 Visual Studio 中构成实体框架工具的特定工具：
+这些是在 Visual Studio 中组成实体框架工具的特定工具：
 
 - 您可以使用 [!INCLUDE[vstecado](../data-tools/includes/vstecado_md.md)] **[!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 设计器** (**Entity Designer**) 以直观方式创建和修改实体、关联、映射以及继承关系。 **Entity Designer** 还生成 [!INCLUDE[TLA#tla_cshrp](../data-tools/includes/tlasharptla_cshrp_md.md)] 或 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 对象层代码。
 
@@ -54,7 +55,7 @@ Entity Framework Tools 旨在帮助您生成实体框架 (EF) 应用程序。 �
 | [ADO.NET 实体框架](/dotnet/framework/data/adonet/ef/index) | 介绍如何使用 [!INCLUDE[adonet_edm](../data-tools/includes/adonet_edm_md.md)] 提供的工具 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 来创建应用程序。 |
 | [实体数据模型](/dotnet/framework/data/adonet/entity-data-model) | 提供用于处理在上构建的应用程序所使用的数据的链接和信息 [!INCLUDE[adonet_ef](../data-tools/includes/adonet_ef_md.md)] 。 |
 | [实体框架 (EF) 文档) ](/ef/ef6/get-started) | 提供视频、教程和高级文档的索引，以帮助您充分利用实体框架。 |
-| [ASP.NET 5 应用程序到新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 介绍如何使用实体框架7创建新的 ASP.NET 5 应用程序。 |
+| [ASP.NET 5 应用程序到新数据库](https://docs.efproject.net/en/latest/platforms/aspnetcore/new-db.html) | 描述如何使用实体框架7创建新的 ASP.NET 5 应用程序。 |
 
 ## <a name="see-also"></a>请参阅
 

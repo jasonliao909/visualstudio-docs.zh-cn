@@ -14,15 +14,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 857fa7e76e0f8830d9a892ba123106ff2add736e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f56d93ff5ff58122d8a1db88d22183f3dd85b978
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906959"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150113"
 ---
 # <a name="how-to-set-the-current-session"></a>如何：设置当前会话
 

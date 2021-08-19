@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 70ee15328b6f89c5df5323951a11a0ce26d9d2393d25ced6b6434c098354a19e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01ecd11c47edf00fb6e7126d496bb55c24f74973
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431820"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158822"
 ---
 # <a name="template-directory-description-vsdir-files"></a>模板目录说明 (.Vsdir) 文件
 模板目录说明文件 (.vsdir) 是一个文本文件，它使集成开发环境 (IDE) 能够在对话框中显示与项目关联的文件夹、向导 .vsz 文件和模板文件。 内容包括每个文件或文件夹一条记录。 尽管通常只提供一个 .vsdir 文件来描述多个文件夹、向导或模板文件，但引用位置的所有 .vsdir 文件都是合并的。

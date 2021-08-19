@@ -1,6 +1,6 @@
 ---
 description: 获取描述此断点请求的断点请求信息。
-title: IDebugBreakpointRequest2：： GetRequestInfo |Microsoft Docs
+title: IDebugBreakpointRequest2：：GetRequestInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: 5defd8d7-6daa-479b-8909-fcc4ae0b357a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 69fac031f12e27916bb945aa2dde88fee29939f2
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 17221f1ac28ff3f0f7e587b78900ee3ece83b713
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105054460"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064625"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 获取描述此断点请求的断点请求信息。
@@ -44,16 +45,16 @@ int GetRequestInfo(
 
 ## <a name="parameters"></a>参数
 `dwFields`\
-中 [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md) 枚举中的标志的组合，用于确定要填充参数中的哪些字段 `pBPRequestInfo` 。
+[in]来自参数 [BPREQI_FIELDS标志的组合](../../../extensibility/debugger/reference/bpreqi-fields.md) ，用于确定要填充参数 `pBPRequestInfo` 中的哪些字段。
 
 `pBPRequestInfo`\
-弄指定要在其中填充断点请求说明的 [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 结构。
+[out]指定 [BP_REQUEST_INFO断](../../../extensibility/debugger/reference/bp-request-info.md) 点请求的说明填充的构造。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
- 下面的示例演示如何为 `CDebugBreakpointRequest` 公开 [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 接口的简单对象实现此方法。
+ 下面的示例演示如何为公开 `CDebugBreakpointRequest` [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CDebugBreakpointRequest::GetRequestInfo(
@@ -217,7 +218,7 @@ HRESULT CDebugBreakpointRequest::CopyBP_REQUEST_INFO(
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

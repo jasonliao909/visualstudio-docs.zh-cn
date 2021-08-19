@@ -14,15 +14,16 @@ ms.assetid: dbfd8d91-4430-4b82-81b9-97ac61412a6c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 507ea5a90aa17ba252a95714f488f5ea22dff4f3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ef7d9f356cd0babe78e1364aacb3657f762f31ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911502"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156748"
 ---
 # <a name="vsperfreport"></a>VSPerfReport
 VSPerfReport 命令行工具可用于创建报表，这些报表使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具分析数据文件。 默认的报表格式为 .csv 文件。

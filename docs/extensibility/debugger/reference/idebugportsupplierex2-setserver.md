@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0d296a4403d07b4f9312fb2fbc04402c89a97d5c4ad049361b0427d90117299d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f33a9ba9609c64ef474002680ada9a86998f3e07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159927"
 ---
 # <a name="idebugportsupplierex2setserver"></a>IDebugPortSupplierEx2::SetServer
 设置端口供应商的核心服务器。
@@ -46,5 +46,5 @@ int SetServer(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortSupplierEx2](../../../extensibility/debugger/reference/idebugportsupplierex2.md)

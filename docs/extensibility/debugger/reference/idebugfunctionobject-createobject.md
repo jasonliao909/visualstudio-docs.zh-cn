@@ -1,6 +1,6 @@
 ---
-description: 使用构造函数创建对象。
-title: IDebugFunctionObject：： CreateObject |Microsoft Docs
+description: 使用构造函数创建 对象。
+title: IDebugFunctionObject：：CreateObject |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: c4c99dd5-609a-4e7c-8f29-eb728f57e995
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 27608634859ae96a8fb9461076397bb6df53570d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d5385aff3c0b50239192a95efcf4789cc2f0900c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088726"
 ---
 # <a name="idebugfunctionobjectcreateobject"></a>IDebugFunctionObject::CreateObject
-使用构造函数创建对象。
+使用构造函数创建 对象。
 
 ## <a name="syntax"></a>语法
 
@@ -48,25 +49,25 @@ int CreateObject(
 
 ## <a name="parameters"></a>参数
 `pConstructor`\
-中一个 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象，表示要创建的对象的构造函数。
+[in]一 [个 IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象，表示要创建的对象的构造函数。
 
 `dwArgs`\
-中数组中参数的数目 `pArg` 。 表示传递给构造函数的参数的数目。
+[in]数组中的参数 `pArg` 数。 表示传递给构造函数的参数数。
 
 `pArg`\
-中 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) 对象的数组，这些对象表示传递给构造函数的参数。
+[in] [IDebugObject 对象的数组](../../../extensibility/debugger/reference/idebugobject.md) ，表示传递给构造函数的参数。
 
 `ppObject`\
-弄返回一个， `IDebugObject` 它表示新创建的对象。
+[out]返回 `IDebugObject` 一个 ，它表示新创建的 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，将返回 S_OK;否则，将返回错误代码。
+ 如果成功，则返回S_OK;否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法可创建一个对象，该对象表示类 (或其他复杂类型的实例，该实例需要构造函数) 该构造函数由 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口表示。
+ 调用此方法以创建一个对象，该对象表示类 (或其他需要构造函数) 且该构造函数是函数的参数（由 [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 接口表示）的实例。
 
  如果对象参数不需要构造函数，请调用 [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)
 - [CreateObjectNoConstructor](../../../extensibility/debugger/reference/idebugfunctionobject-createobjectnoconstructor.md)

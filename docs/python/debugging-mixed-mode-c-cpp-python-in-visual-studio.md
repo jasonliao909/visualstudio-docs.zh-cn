@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 85118cebfa862a1575762985d41df61ef76b5cc5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a93abff7aa65e61830065c3217fb0fb4b37bd93a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156716"
 ---
 # <a name="debug-python-and-c-together"></a>一起调试 Python 和 C++
 

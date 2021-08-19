@@ -1,6 +1,6 @@
 ---
-description: Vstav3 命名空间的 entryPointsCollection 元素包含与 Office 解决方案关联的所有 s 元素。
-title: '&lt;&gt;Visual Studio 中的 entryPointsCollection 元素 (Office 开发) '
+description: vstav3 命名空间的 entryPointsCollection 元素包含与 Office 解决方案相关联的所有 s 元素。
+title: '&lt;&gt;Visual Studio 中 (Office 开发的 entryPointsCollection 元素) '
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: da689b71f50d43d60d78cf702a28eb5ba7ae0bb1
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 65ba6319caed660f0ee752ce1aa7a2804c48b53a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106362"
 ---
-# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中的 entryPointsCollection 元素 (Office 开发) 
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 (Office 开发的 entryPointsCollection 元素) 
   `entryPointsCollection` 命名空间的 `vstav3` 元素包含所有与 Office 解决方案关联的 `entryPoints` 元素。
 
 ## <a name="syntax"></a>语法
@@ -50,12 +51,12 @@ ms.locfileid: "102223597"
  `entryPointsCollection` 具有下列元素。
 
 ### <a name="entrypoints"></a>entryPoints
- 必需。 `entryPoints`命名空间中元素的角色 `vstav3` 是在[Visual Studio&#41;中 &#40;Office 开发&#60;s&#62; 元素](../vsto/entrypoints-element-office-development-in-visual-studio.md)中定义的。
+ 必需。 `entryPoints`命名空间中元素的角色 `vstav3` 在[&#60;s&#62; 元素中定义 &#40;Office 在 Visual Studio&#41;中进行开发](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
 
 ## <a name="document-level-customization-example"></a>文档级自定义项示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示使用 `entryPointsCollection` 部署的文档级解决方案的应用程序清单中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示使用 `entryPointsCollection` 部署的文档级解决方案的应用程序清单中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
@@ -98,10 +99,10 @@ ms.locfileid: "102223597"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示应用程序级解决方案的应用程序清单中的 `entryPointsCollection` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示应用程序级解决方案的应用程序清单中的 `entryPointsCollection` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 
@@ -120,10 +121,10 @@ ms.locfileid: "102223597"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="multi-project-deployment-example"></a>多项目部署示例
+## <a name="multi-project-deployment-example"></a>多 Project 部署示例
 
-### <a name="description"></a>描述
- 下面的代码示例演示使用两个 Office 解决方案进行的多项目部署的应用程序清单中的 `entryPointsCollection` 元素。 此代码示例是 [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+### <a name="description"></a>说明
+ 下面的代码示例演示使用两个 Office 解决方案进行的多项目部署的应用程序清单中的 `entryPointsCollection` 元素。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
 
 ### <a name="code"></a>代码
 

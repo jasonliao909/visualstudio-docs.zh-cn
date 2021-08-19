@@ -8,14 +8,15 @@ ms.assetid: 24b22ad9-5ad0-4161-809a-9b518eb924bf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 96f202663b1b325f7a4ac86876abc94563a02fb2
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: a1713dba828af71b1a6a23cc7de0f46fd28bab70
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154312"
 ---
 # <a name="16-bpp-render-target-format-variant"></a>16 bpp 呈现器目标格式变体
 将所有呈现器目标和后台缓冲区的像素格式设置为 DXGI_FORMAT_B5G6R5_UNORM。

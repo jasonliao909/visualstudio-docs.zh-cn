@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c34a56c9dc1a66750c5e924a904b9f96e0253b997eec8c61f77a7815ff0f7133
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 23172ee92923faab31a6b5c534076ddf067dc0a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267476"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155546"
 ---
 # <a name="ribbon-xml"></a>Ribbon XML
   功能区 (XML) 项使你可以通过使用 XML 来自定义功能区。 如果要以功能区 (可视化设计器) 项不支持的方式自定义功能区，请使用功能区 (XML) 项。 有关可对每个项执行的操作的比较，请参阅 [功能区概述](../vsto/Ribbon-overview.md)。
@@ -126,7 +126,7 @@ ms.locfileid: "121267476"
 
  这些元素具有指定自定义功能区的外观和行为的特性。 下表介绍功能区 XML 文件中的默认特性。
 
-|属性|父元素|描述|
+|Attribute|父元素|描述|
 |---------------|--------------------|-----------------|
 |**onLoad**|**customUI**|标识当应用程序加载功能区时调用的方法。|
 |**idMso**|**"选项卡**|标识要显示在功能区中的内置选项卡。|
@@ -146,7 +146,7 @@ ms.locfileid: "121267476"
 |`OnLoad`|将 <xref:Microsoft.Office.Core.IRibbonControl> 参数分配给 `Ribbon` 字段。 Microsoft Office 应用程序在加载自定义功能区时调用此方法。 您可以使用此字段动态更新自定义功能区。 有关详细信息，请参阅技术文章[为开发人员自定义 Office (2007) 功能区用户界面 (第1部分（共) 3 部分](/previous-versions/office/developer/office-2007/aa338202(v=office.12))）。|
 |`GetResourceText`|由 `GetCustomUI` 方法调用，以获取功能区 XML 文件的内容。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [演练：使用功能区 XML 创建自定义选项卡](../vsto/walkthrough-creating-a-custom-tab-by-using-ribbon-xml.md)
 - [OfficeUI 自定义](../vsto/office-ui-customization.md)

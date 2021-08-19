@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 02641abad497a1f7ecde68e9f29c9e9b7fa3ca452cca52678510418b5fbe5c93
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c3daeb48b7206214ee291e52edc25f38e408946
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416503"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159914"
 ---
 # <a name="idebugprimitivetypefield"></a>IDebugPrimitiveTypeField
 表示 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 接口中的基元类型枚举值。
