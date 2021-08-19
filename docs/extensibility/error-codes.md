@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 929e12a83b13fa0acd39bc6defb19e6b3249d9181afefbcc18af972c14f0ac35
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7e7af991cc00b482dae3475fdc9a36a9b9fde032
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121291644"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122070325"
 ---
 # <a name="error-codes"></a>错误代码
 当源代码管理插件 API 函数返回错误时，它应为以下错误代码之一。 所有错误都是否定的、警告或信息错误代码为正值，成功为0。

@@ -1,6 +1,6 @@
 ---
 title: '&lt;命令 &gt; 元素 (引导程序) |Microsoft Docs'
-description: 命令元素在 InstallChecks 下的元素中实现测试，并在 ClickOnce 引导程序测试失败时声明要安装的包。
+description: 命令元素在 InstallChecks 下的元素中实现测试，并在 ClickOnce 引导程序测试失败的情况下声明要安装的程序包。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: e61d5787-fe1f-4ebf-b0cf-0d7909be7ffb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f53ca683e40be8e3cc428d013d2b8d3c8c5773e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a343ae58306b85a7bd6dcb0332f1b69cbe5d04a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881225"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104945"
 ---
 # <a name="ltcommandsgt-element-bootstrapper"></a>&lt;命令 &gt; 元素 (引导程序) 
 `Commands`元素实现元素下的元素所描述的测试 `InstallChecks` ，并在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 测试失败时声明要安装引导程序的包。
@@ -72,7 +73,7 @@ ms.locfileid: "99881225"
 
 |Attribute|说明|
 |---------------|-----------------|
-|`Reboot`|可选。 确定在任何包返回重新启动退出代码时是否应重新启动系统。 以下列表显示了有效值：<br /><br /> `Defer`. 重新启动将推迟到将来的某个时间。<br /><br /> `Immediate`. 如果其中一个包返回了重新启动退出代码，则会立即重新启动。<br /><br /> `None`. 导致忽略任何重新启动请求。<br /><br /> 默认值为 `Immediate`。|
+|`Reboot`|可选。 确定在任何包返回重新启动退出代码时是否应重新启动系统。 以下列表显示了有效值：<br /><br /> `Defer`. 重新启动将推迟到将来的某个时间。<br /><br /> `Immediate`. 如果其中一个包返回了重新启动退出代码，则会立即重新启动。<br /><br /> `None`. 导致忽略任何重新启动请求。<br /><br /> 默认为 `Immediate`。|
 
 ## <a name="command"></a>命令
  `Command` 元素是 `Commands` 元素的一个子元素。 `Commands`元素可以有一个或多个 `Command` 元素。 元素具有以下属性。
@@ -124,11 +125,11 @@ ms.locfileid: "99881225"
 |---------------|-----------------|
 |`Value`|必需。 此元素应用到的退出代码值 `ExitCode` 。|
 |`Result`|必需。 安装应如何应对此退出代码。 以下列表显示了有效值：<br /><br /> `Success`. 将包标记为已成功安装。<br /><br /> `SuccessReboot`. 将包标记为已成功安装，并指示系统重启。<br /><br /> `Fail`. 将包标记为失败。<br /><br /> `FailReboot`. 将包标记为失败，并指示系统重启。|
-|`String`|可选。 为响应此退出代码而向用户显示的值。|
-|`FormatMessageFromSystem`|可选。 确定是使用系统提供的错误消息和退出代码，还是使用中提供的值 `String` 。 有效值为 `true` ，这意味着使用系统提供的错误和 `false` ，这意味着使用提供的字符串 `String` 。 默认值为 `false`。 如果此属性为 `false` ，但 `String` 未设置，则将使用系统提供的错误。|
+|`String`|可选。 要向用户显示以响应此退出代码的值。|
+|`FormatMessageFromSystem`|可选。 确定是使用系统提供的与退出代码对应的错误消息，还是使用 中提供的值 `String` 。 有效值为 `true` ，表示使用系统提供的错误， `false` 和 ，表示使用 提供的字符串 `String` 。 默认为 `false`。 如果此属性为 `false` ， `String` 但没有设置，则使用系统提供的错误。|
 
 ## <a name="example"></a>示例
- 下面的代码示例定义了用于安装 .NET Framework 2.0 的命令。
+ 下面的代码示例定义用于安装 2.0 .NET Framework的命令。
 
 ```xml
 <Commands Reboot="Immediate">
@@ -205,6 +206,6 @@ ms.locfileid: "99881225"
 </Commands>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [产品和包架构引用](../deployment/product-and-package-schema-reference.md)
+## <a name="see-also"></a>请参阅
+- [产品和包架构参考](../deployment/product-and-package-schema-reference.md)
 - [\<InstallChecks> 元素](../deployment/installchecks-element-bootstrapper.md)

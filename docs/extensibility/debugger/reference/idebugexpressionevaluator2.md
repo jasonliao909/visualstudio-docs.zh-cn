@@ -1,5 +1,5 @@
 ---
-description: 表示表达式计算器 (EE) 的增强版本。
+description: 表示企业版) 的表达式计算器 (的增强版本。
 title: IDebugExpressionEvaluator2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -9,20 +9,21 @@ ms.assetid: cebe649f-1c77-4d33-854f-30d4f00eceb4
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3689f667508f6453f0e4cd4181d14f42ca7b7541
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 6910b41431442819cf7641ced3763cc3ab316217
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105077299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138505"
 ---
 # <a name="idebugexpressionevaluator2"></a>IDebugExpressionEvaluator2
 > [!IMPORTANT]
-> 在 Visual Studio 2015 中，不推荐使用这种实现表达式计算器的方式。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
+> 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [Clr 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 表示表达式计算器 (EE) 的增强版本。
+ 表示企业版) 的表达式计算器 (的增强版本。
 
 ## <a name="syntax"></a>语法
 
@@ -38,9 +39,9 @@ IDebugExpressionEvaluator2 : IDebugExpressionEvaluator
 
 |方法|说明|
 |------------|-----------------|
-|[GetService](../../../extensibility/debugger/reference/idebugexpressionevaluator2-getservice.md)|根据给定的唯一标识符检索服务对象。|
+|GetService|根据给定的唯一标识符检索服务对象。|
 |[PreloadModules](../../../extensibility/debugger/reference/idebugexpressionevaluator2-preloadmodules.md)|预加载指定的符号提供程序指定的模块。|
-|[SetCallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcallback.md)|使表达式计算器 (EE) 指定 (DE) 将用于读取指标设置的回调接口。|
+|[SetCallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcallback.md)|启用表达式计算器 (企业版) 指定调试器引擎 (DE) 用于读取指标设置的回调接口。|
 |[SetCorPath](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setcorpath.md)|设置 (CLR) 加载到调试器中的公共语言运行时的路径。|
 |[SetIDebugIDECallback](../../../extensibility/debugger/reference/idebugexpressionevaluator2-setidebugidecallback.md)|使调试引擎能够在初始化期间向表达式计算器传递回调。|
 |Terminate|停止并清除表达式计算器。|

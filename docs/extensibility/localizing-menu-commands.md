@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 12a8801e9629de97bed6e35dbdcc3bc8d14a1653f0692aca3a46f4deddd91430
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 421072452214828560234aeb3a23128a38d0d515
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152232"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 
@@ -168,7 +168,7 @@ ms.locfileid: "121401084"
 
      这会为每个语言创建主程序集和资源程序集。 有关本地化部署过程的信息，请参阅 [本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
 - [全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)

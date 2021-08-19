@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5fbd978bf415565c4fab016d08bbe50729124fb2683141acdcba611659bd07a1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ecdff1d78326dd55f0b666b77611e3034e653014
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072818"
 ---
 # <a name="idebugbindergetfunctionobject"></a>IDebugBinder::GetFunctionObject
 此方法获取用于创建 [函数参数的 IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md) 对象。
@@ -48,6 +48,6 @@ int GetFunctionObject(
 ## <a name="return-value"></a>返回值
  如果成功，则返回S_OK;否则，返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugFunctionObject](../../../extensibility/debugger/reference/idebugfunctionobject.md)

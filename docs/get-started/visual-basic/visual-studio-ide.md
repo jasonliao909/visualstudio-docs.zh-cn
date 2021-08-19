@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 486201d61f6bd2d149c9aea66efee1814ce667e7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2b7649af4136c13688a6f2311d715b7c4bb113bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152206"
 ---
 # <a name="welcome-to-the-visual-studio-ide--visual-basic"></a>欢迎使用 Visual Studio IDE | Visual Basic
 
@@ -40,9 +40,9 @@ Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调
 
 此图像显示 Visual Studio 具有一个打开的项目和若干可能会使用的关键工具窗口：
 
-- 可通过[解决方案资源管理器](../../ide/solutions-and-projects-in-visual-studio.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](tutorial-projects-solutions.md)，从而帮助整理代码  。
+- 使用“解决方案资源管理器”（右上角），可以查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](tutorial-projects-solutions.md)，从而帮助整理代码  。
 
-- [编辑器窗口](../../ide/writing-code-in-the-code-and-text-editor.md)（中心）用于显示文件内容，你可能会在该窗口花费大部分时间。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
+- 编辑器窗口（中心）用于显示文件内容，你的大部分时间可能都是在此窗口中度过的。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
 
 - [“输出”窗口](../../ide/reference/output-window.md)（底部中心）是 Visual Studio 发送通知（例如，调试和错误消息、编译器警告、发布状态消息等）的位置。 每个消息源都有自己的选项卡。
 
@@ -433,7 +433,7 @@ Visual Studio 中的一些常用功能可帮助你在开发软件时提高工作
 
    该变量会在整个项目中进行重命名，本例中只有两处。
 
-4. 接下来介绍 IntelliSense。 在 `Console.WriteLine("Hello &quot; + username + &quot;!")` 行下方，键入以下代码片段：
+4. 接下来介绍 IntelliSense。 在 `Console.WriteLine("Hello " + username + "!")` 行下方，键入以下代码片段：
 
     ```vb
    Dim now = Date.

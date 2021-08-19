@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2c09fd6f9862fb3c3426b74bb7c0f62e947bc6050ea02edcbc81990f283bee58
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 231934a246a5ce57f87bf08b134c0e288c6f5534
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121343007"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138882"
 ---
 # <a name="enable-a-program-to-be-debugged"></a>启用要调试的程序
 在调试引擎 (DE) 可以调试程序之前，必须先启动 DE，或将其附加到现有的程序。

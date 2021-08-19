@@ -1,6 +1,6 @@
 ---
 title: 语言服务和编辑器扩展点 |Microsoft Docs
-description: 了解可扩展的 Visual Studio 代码编辑器中的扩展点，包括大多数语言服务功能。
+description: 了解 Visual Studio 代码编辑器中可扩展的扩展点，包括大多数语言服务功能。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -10,14 +10,15 @@ ms.assetid: 91a6417e-a6fe-4bc2-9d9f-5173c634a99b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 293851f1f3e72508a9bc119fb7551b0118ab2a9b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: c3a97b75f1df66d8353c06acf74f8d69b26a6e8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152245"
 ---
 # <a name="language-service-and-editor-extension-points"></a>语言服务和编辑器扩展点
 编辑器提供了扩展点，您可以将其作为 Managed Extensibility Framework (MEF) 组件部件（包括大多数语言服务功能）扩展。 下面是主要扩展点类别：
@@ -28,7 +29,7 @@ ms.locfileid: "112903142"
 
 - 边距和滚动条
 
-- 标记
+- Tags
 
 - 修饰
 
@@ -79,7 +80,7 @@ internal static ContentTypeDefinition TestContentTypeDefinition;
 
 - Sighelp：签名帮助文档。 继承自 "intellisense"。
 
-  下面是 Visual Studio 定义的一些内容类型，以及 Visual Studio 中承载的一些语言：
+  这些是由 Visual Studio 定义的一些内容类型和 Visual Studio 中承载的一些语言：
 
 - 基本
 
@@ -115,7 +116,7 @@ internal IContentTypeRegistryService ContentTypeRegistryService { get; set; }
  若要将内容类型与文件扩展名关联，请使用 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> 。
 
 > [!NOTE]
-> 在 Visual Studio 中，文件扩展名是通过 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 对语言服务包使用来注册的。 将 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 内容类型与已以这种方式注册的文件扩展名相关联。
+> 在 Visual Studio 中，通过 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageExtensionAttribute> 在语言服务包上使用来注册文件扩展名。 将 <xref:Microsoft.VisualStudio.Utilities.FileExtensionToContentTypeDefinition> MEF 内容类型与已以这种方式注册的文件扩展名相关联。
 
  若要将文件扩展名导出到内容类型定义中，必须包括以下属性：
 
@@ -422,7 +423,7 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
   10. 可序列化
 
-  11. SymbolicLink
+  11. 符号链接
 
   12. Xaml
 
@@ -450,9 +451,9 @@ internal sealed class TestMouseProcessorProvider : IMouseProcessorProvider
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>：放置处理程序的名称。
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：放置处理程序在默认放置处理程序之前或之后的顺序。 Visual Studio 的默认丢弃处理程序名为 "DefaultFileDropHandler"。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：删除处理程序在默认放置处理程序之前或之后的顺序。 默认删除处理程序Visual Studio名为"DefaultFileDropHandler"。
 
-  下面的示例演示了如何在 drop handler 提供程序上导出属性。
+  以下示例演示删除处理程序提供程序上的导出属性。
 
 ```
 [Export(typeof(IDropHandlerProvider))]
@@ -463,7 +464,7 @@ internal class TestDropHandlerProvider : IDropHandlerProvider
 ```
 
 ## <a name="extending-editor-options"></a>扩展编辑器选项
- 您可以定义仅在特定作用域（例如，在文本视图中）有效的选项。 编辑器提供此预定义选项集：编辑器选项、视图选项和 Windows Presentation Foundation (WPF) 视图选项。 可以在、和中找到这些选项 <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions> <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions> 。
+ 可以将选项定义为仅在特定范围内有效，例如，在文本视图中。 编辑器提供这组预定义选项：编辑器选项、视图选项Windows Presentation Foundation (WPF) 视图选项。 可以在 、 和 <xref:Microsoft.VisualStudio.Text.Editor.DefaultOptions> 中 <xref:Microsoft.VisualStudio.Text.Editor.DefaultTextViewOptions> 找到这些选项 <xref:Microsoft.VisualStudio.Text.Editor.DefaultWpfViewOptions> 。
 
  若要添加新选项，请从以下选项定义类之一派生类：
 
@@ -481,24 +482,24 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 ```
 
 ## <a name="extend-intellisense"></a>扩展 IntelliSense
- IntelliSense 是一组功能的通用术语，提供有关结构化文本和语句完成的信息。 这些功能包括语句完成、签名帮助、快速信息和轻型电灯泡。 语句完成有助于用户正确地键入语言关键字或成员名称。 签名帮助显示用户刚刚键入的方法的签名或签名。 当鼠标停留在某个类型或成员名称上时，"快速信息" 显示该类型或成员名称的完整签名。 灯泡为某些上下文中的某些标识符提供其他操作，例如，重命名一个出现的变量后，重命名该变量的所有匹配项。
+ IntelliSense 是一组功能的一般术语，提供有关结构化文本及其语句完成的信息。 这些功能包括语句完成、签名帮助、快速信息和灯泡。 语句完成可帮助用户正确键入语言关键字或成员名称。 签名帮助显示用户刚键入的方法的签名或签名。 当鼠标悬停在类型或成员名称上时，快速信息将显示该类型或成员名称的完整签名。 灯泡为某些上下文中的某些标识符提供其他操作，例如，重命名一个变量的所有匹配项后重命名一个变量。
 
- 在所有情况下，IntelliSense 功能的设计都是相同的：
+ IntelliSense 功能的设计在所有情况下都完全相同：
 
-- IntelliSense *broker* 负责整个过程。
+- IntelliSense *代理* 负责整个过程。
 
-- IntelliSense *会话* 表示在触发表示器与所选内容的提交或取消之间发生的事件的顺序。 会话通常由某些用户手势触发。
+- IntelliSense *会话* 表示触发演示者与提交或取消选择之间的事件序列。 会话通常由某些用户手势触发。
 
-- IntelliSense *控制器* 负责确定会话应何时开始和结束。 它还决定何时应提交信息以及何时应取消会话。
+- IntelliSense控制器负责确定会话的开始时间和结束时间。 它还决定何时应提交信息以及何时应取消会话。
 
-- IntelliSense *源* 提供内容并确定最佳匹配项。
+- IntelliSense *源* 提供内容，并决定最佳匹配。
 
-- *IntelliSense 显示器负责显示* 内容。
+- IntelliSense演示者负责显示内容。
 
-  在大多数情况下，建议至少提供源和控制器。 如果要自定义显示，还可以提供表示器。
+  在大多数情况下，我们建议你至少提供源和控制器。 如果要自定义显示，还可以提供演示者。
 
 ### <a name="implement-an-intellisense-source"></a>实现 IntelliSense 源
- 若要自定义源，您必须实现一个 (或多个以下源接口) ：
+ 若要自定义源，必须在以下 (接口) 一个或多个源接口：
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>
 
@@ -509,9 +510,9 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用，以支持 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 。
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSource> 已弃用 ，支持 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSource> 。
 
- 此外，还必须实现相同种类的访问接口：
+ 此外，必须实现相同类型的提供程序：
 
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSourceProvider>
 
@@ -522,17 +523,17 @@ internal sealed class TestOption : EditorOptionDefinition<bool>
 - <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider>
 
 > [!IMPORTANT]
-> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用，以支持 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。
+> <xref:Microsoft.VisualStudio.Language.Intellisense.ISmartTagSourceProvider> 已弃用 ，支持 <xref:Microsoft.VisualStudio.Language.Intellisense.ISuggestedActionsSourceProvider> 。
 
- 必须连同以下属性一起导出提供程序：
+ 必须导出提供程序以及以下属性：
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>：源的名称。
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>：内容的类型 (例如，源所应用的 "text" 或 "code" ) 。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>：源 (的内容类型，例如"text"或"code") 应用于的内容。
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：源应出现的顺序与其他源)  (相关。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：源的显示顺序 (源的) 。
 
-- 下面的示例演示如何在完成源提供程序上导出属性。
+- 以下示例演示完成源提供程序上的导出属性。
 
 ```
 Export(typeof(ICompletionSourceProvider))]
@@ -542,7 +543,7 @@ Export(typeof(ICompletionSourceProvider))]
 internal class TestCompletionSourceProvider : ICompletionSourceProvider
 ```
 
- 有关实现 IntelliSense 源的详细信息，请参阅以下演练：
+ 有关实现 IntelliSense 源的信息，请参阅以下演练：
 
 - [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)
 
@@ -551,15 +552,15 @@ internal class TestCompletionSourceProvider : ICompletionSourceProvider
 - [演练：显示语句完成](../extensibility/walkthrough-displaying-statement-completion.md)
 
 ### <a name="implement-an-intellisense-controller"></a>实现 IntelliSense 控制器
- 若要自定义控制器，必须实现 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> 接口。 此外，还必须实现控制器提供程序以及以下属性：
+ 若要自定义控制器，必须实现 <xref:Microsoft.VisualStudio.Language.Intellisense.IIntellisenseController> 接口。 此外，还必须将控制器提供程序与以下属性一起实现：
 
 - <xref:Microsoft.VisualStudio.Utilities.NameAttribute>：控制器的名称。
 
-- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>：内容的类型 (例如，控制器适用的 "text" 或 "code" ) 。
+- <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute>：控制器 (的内容类型，例如"text"或"code") 应用的内容。
 
-- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：控制器应出现的顺序与其他控制器)  (相关。
+- <xref:Microsoft.VisualStudio.Utilities.OrderAttribute>：控制器的显示顺序 (控制器的) 。
 
-  下面的示例演示如何在完成控制器提供程序上导出特性。
+  以下示例演示完成控制器提供程序上的导出属性。
 
 ```
 Export(typeof(IIntellisenseControllerProvider))]
@@ -569,6 +570,6 @@ Export(typeof(IIntellisenseControllerProvider))]
 internal class TestIntellisenseControllerProvider : IIntellisenseControllerProvider
 ```
 
- 有关使用 IntelliSense 控制器的详细信息，请参阅以下演练：
+ 有关使用 IntelliSense 控制器的信息，请参阅以下演练：
 
 - [演练：显示 QuickInfo 工具提示](../extensibility/walkthrough-displaying-quickinfo-tooltips.md)

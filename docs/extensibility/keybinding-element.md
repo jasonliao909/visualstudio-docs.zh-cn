@@ -11,14 +11,15 @@ ms.assetid: e55a1098-15df-42a9-9f87-e3a99cf437dd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6afd0a9658f088b66f2c18c632ffcd7b9a09f555
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: be359809e973d8fbb0e1fe0b964d04bc3e41b5d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152297"
 ---
 # <a name="keybinding-element"></a>KeyBinding 元素
 KeyBinding 元素指定命令的键盘快捷方式。
@@ -36,28 +37,28 @@ KeyBinding 元素指定命令的键盘快捷方式。
 
 ### <a name="attributes"></a>特性
 
-|属性|描述|
+|属性|说明|
 |---------------|-----------------|
 |GUID|必需。|
 |id|必需。|
 |编辑器|必需。 编辑器 GUID 指示此键盘快捷方式将处于活动状态的编辑上下文。 全局绑定范围值为"guidVSStd97"。|
-|key1|必需。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants 的两位数[十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
+|key1|必需。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants[的两位数十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
 |mod1|可选。 **Ctrl、Alt** 和Shift 的任意组合 **，用** 空格分隔。|
-|key2|可选。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants 的两位数[十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
+|key2|可选。 有效值包括所有可键入的字母数字，以及前面带有 0x 和 VK_constants[的两位数十六进制VK_constants。](/windows/desktop/inputdev/virtual-key-codes)|
 |mod2|可选。 **Ctrl、Alt** 和Shift 的任意组合 **，用** 空格分隔。|
-|模拟器|可选。|
+|emulator|可选。|
 |条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |Parent||
 |Annotation||
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[KeyBindings 元素](../extensibility/keybindings-element.md)|对 KeyBinding 元素和其他 KeyBindings 分组进行分组。|
 
@@ -72,6 +73,6 @@ KeyBinding 元素指定命令的键盘快捷方式。
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [KeyBindings 元素](../extensibility/keybindings-element.md)
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

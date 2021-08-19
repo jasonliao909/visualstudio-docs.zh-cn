@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4feae4e00fb21b1092156fcaf09d3dfab863000b23d497a1067e104e5c6dfdba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dec1b2e3965ddc55b57832308c2a560c361b16a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416282"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087946"
 ---
 # <a name="idebugprocess2getport"></a>IDebugProcess2::GetPort
 获取进程正在其上运行的端口。
