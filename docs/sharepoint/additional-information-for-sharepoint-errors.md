@@ -1,6 +1,6 @@
 ---
-title: SharePoint 错误的其他信息 |Microsoft Docs
-description: 获取有关解决 Visual Studio SharePoint 工具中出现的错误和警告的其他信息。
+title: 有关错误SharePoint的其他|Microsoft Docs
+description: 获取有关排查工具中发生的错误和警告Visual Studio SharePoint信息。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,35 +19,35 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 5c4eac1e41ca7cf12003e28723bcc3889c787f15460e6a334f1328aa7111b141
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2343212faa44d2085f216e8e44ba3e45eb807f5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121385466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060411"
 ---
 # <a name="additional-information-for-sharepoint-errors"></a>SharePoint 错误的其他信息
-  你可以在故障 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 排除主题和公共论坛中查找有关排查 SharePoint 工具错误和警告的帮助。
+  可以在故障排除主题和公共论坛SharePoint解决工具错误和 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 警告的帮助。
 
 ## <a name="troubleshoot-errors-and-issues"></a>排查错误和问题
- 若要帮助解决 SharePoint 工具中的一些常见错误和其他问题 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，请参阅以下主题：
+ 有关工具中一些常见错误和其他SharePoint [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 的帮助，请参阅以下主题：
 
-- [解决 SharePoint 解决方案问题](../sharepoint/troubleshooting-sharepoint-solutions.md)
+- [解决方案SharePoint疑难解答](../sharepoint/troubleshooting-sharepoint-solutions.md)
 
-- [调试 SharePoint 解决方案](../sharepoint/debugging-sharepoint-solutions.md)
+- [调试SharePoint解决方案](../sharepoint/debugging-sharepoint-solutions.md)
 
-- [排查 SharePoint 打包和部署问题](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
+- [对SharePoint和部署进行故障排除](../sharepoint/troubleshooting-sharepoint-packaging-and-deployment.md)
 
 ## <a name="other-resources"></a>其他资源
- 下表列出了 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 可用的 SharePoint 工具论坛和其他资源。
+ 下表列出了可用的 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] SharePoint和其他可用资源。
 
 |术语|定义|
 |----------|----------------|
-|[SharePoint 开发](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|提供有关中 SharePoint 开发问题的论坛 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
-|[Visual Studio论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|提供有关的问题的论坛 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
+|[SharePoint 开发](https://social.msdn.microsoft.com/Forums/office/home?forum=sharepointdevelopmentprevious)|提供一个论坛，解答有关 SharePoint开发的问题 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
+|[Visual Studio论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?category=visualstudio)|提供有关 的问题的论坛 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。|
 |[Microsoft 帮助和支持](https://support.microsoft.com/)|提供对知识库 (KB) 文章、下载和更新、支持 Webcast 以及其他服务的访问。|
 
- 如果仍找不到所需的答案，可以访问联机支持选项，例如联系 Microsoft 产品支持服务或搜索知识库文章。 有关详细信息，请参阅 [Microsoft 帮助和支持](https://support.microsoft.com/) 页。
+ 如果仍然找不到所需的答案，可以访问联机支持选项，例如联系 Microsoft 产品支持服务或搜索 KnowledgeBase 文章。 有关详细信息，请参阅 Microsoft [帮助和支持](https://support.microsoft.com/) 页。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [生成和调试 SharePoint 解决方案](../sharepoint/building-and-debugging-sharepoint-solutions.md)

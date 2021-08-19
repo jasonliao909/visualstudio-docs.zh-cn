@@ -11,14 +11,15 @@ ms.assetid: 9e2e01d9-7beb-42b2-99b2-86995578afda
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4a0798cb7763ff2766d2de2bb00a80759be8fd3e
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: c1f491bdbf1b27c19f324c2cbee076cb8f9124f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078807"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042434"
 ---
 # <a name="how-to-install-a-source-control-plug-in"></a>如何：安装源代码管理插件
 创建源代码管理插件涉及三个步骤：
@@ -118,5 +119,5 @@ ms.locfileid: "105078807"
 
  如果同时满足这两个条件，则可以调用版本1.2 和1.3 中支持的新函数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件入门](../../extensibility/internals/getting-started-with-source-control-plug-ins.md)

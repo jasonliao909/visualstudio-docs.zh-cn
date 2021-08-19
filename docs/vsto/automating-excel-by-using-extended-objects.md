@@ -1,6 +1,6 @@
 ---
-title: 使用扩展对象实现 Excel 自动化
-description: 请注意，在 Visual Studio 中开发 Excel 解决方案时，可以使用解决方案中的主机项和主机控件。
+title: 使用扩展对象自动 Excel
+description: 了解在 Visual Studio 中开发 Excel 解决方案时，可以使用解决方案中的主机项和主机控件。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,16 +20,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e20251d695f36940fec3831d3fa78fd995a058e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b2e77cc663a20ff914a3f2bf52ea8c25b7e150a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038183"
 ---
-# <a name="automate-excel-by-using-extended-objects"></a>使用扩展对象实现 Excel 自动化
+# <a name="automate-excel-by-using-extended-objects"></a>使用扩展对象自动 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
@@ -62,7 +63,7 @@ ms.locfileid: "99882487"
 
 - [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [如何：向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)
@@ -73,7 +74,7 @@ ms.locfileid: "99882487"
 - [如何：在向 ListObject 控件添加新行时验证数据](../vsto/how-to-validate-data-when-a-new-row-is-added-to-a-listobject-control.md)
 - [如何：将 ListObject 列映射到数据](../vsto/how-to-map-listobject-columns-to-data.md)
 - [演练：针对 NamedRange 控件的事件进行编程](../vsto/walkthrough-programming-against-events-of-a-namedrange-control.md)
-- [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)

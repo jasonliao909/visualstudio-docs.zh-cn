@@ -1,6 +1,6 @@
 ---
-title: ButtonText 元素|Microsoft Docs
-description: 使用 ButtonText 元素可以指定各种菜单中显示的文本。 即使指定了其他文本字段，ButtonText 元素也不能为空。
+title: ButtonText 元素 |Microsoft Docs
+description: ButtonText 元素可用于指定在各种菜单中显示的文本。 即使指定了其他文本字段，ButtonText 元素也不能为空。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 56aba884-0356-4894-ae4e-32d3938f6865
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf20a6876dd7ba52413a11f30a3d0130b32e535d
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: f45a97ca24d61554e5901ed0322e49696dd5375c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112900704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133342"
 ---
 # <a name="buttontext-element"></a>ButtonText 元素
-使用此字段可以指定各种菜单中显示的文本。 默认情况下，该 `ButtonText` 元素显示在菜单控制器中。 如果 `ButtonText` 其他文本字段为空，则 元素也将成为默认值。 即使 `ButtonText` 指定了其他文本字段，元素也不能为空。
+此字段允许指定在各种菜单中显示的文本。 默认情况下，该 `ButtonText` 元素显示在菜单控制器中。 `ButtonText`如果其他文本字段为空，则元素也会成为默认值。 `ButtonText`即使指定了其他文本字段，元素也不能为空。
 
 ## <a name="syntax"></a>语法
 
@@ -40,12 +41,12 @@ ms.locfileid: "112900704"
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[Strings 元素](../extensibility/strings-element.md)|对文本元素（如 和 ） `ButtonText` 进行分组 `CommandName` 。|
+|[Strings 元素](../extensibility/strings-element.md)|组合文本元素，例如 `ButtonText` 和 `CommandName` 。|
 
 ## <a name="text-value"></a>文本值
- 元素的文本值提供为菜单项、组合和其他用户界面显示的文本，这些用户界面 (UI) `ButtonText` 具有可见文本的元素。
+ 元素的文本值提供了为 `ButtonText` 菜单项、combos 和其他用户界面显示的文本， (UI) 具有可见文本的元素。
 
-## <a name="see-also"></a>另请参阅
-- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅
+- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

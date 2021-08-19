@@ -1,6 +1,6 @@
 ---
-title: 演练：在 Visual Basic 项目中调用 VBA 中的代码
-description: 了解如何在 Microsoft Word 的文档级自定义项中调用方法，Visual Basic for Applications 文档中的 (VBA) 代码。
+title: 演练：从应用程序项目中的 VBA Visual Basic代码
+description: 了解如何在文档级自定义项中调用方法，Microsoft Word文档中Visual Basic for Applications (VBA) 调用方法。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -20,16 +20,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f4fe056f70e0af03809b43d60968bd8a1a50bf08
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 631511ba470b42d07878d175c953bb7047914fc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147643"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：在 Visual Basic 项目中调用 VBA 中的代码
+# <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：从应用程序项目中的 VBA Visual Basic代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -67,12 +68,12 @@ ms.locfileid: "107824479"
 
 1. 启动 Word。
 
-2. 将活动文档另存为 **启用宏的 Word 文档 (\*)** 名称为 **DocumentWithVBA** 的 docm。 将它保存在一个方便的位置，例如桌面。
+2. 将活动文档另存为 **\* .docm** (启用了 Word 宏) **DocumentWithVBA**。 将它保存在一个方便的位置，例如桌面。
 
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [如何：在功能区上显示 "开发人员" 选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [功能区 上的"如何：显示开发人员"选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在 **“代码”** 组中，单击 **“Visual Basic”**。
 
@@ -98,7 +99,7 @@ ms.locfileid: "107824479"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。 如果 IDE 设置为使用 Visual Basic 开发设置，请在 **“文件”** 菜单上，单击 **“新建项目”**。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。 如果 IDE 设置为使用 Visual Basic 开发设置，请在 **“文件”** 菜单上，单击 **“新建项目”**。
 
 3. 在模板窗格中，展开 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -108,7 +109,7 @@ ms.locfileid: "107824479"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击 **“确定”** 。
+7. 单击“确定”。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -116,7 +117,7 @@ ms.locfileid: "107824479"
 
 9. 单击“完成”。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **DocumentWithVBA** 文档，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在设计器 **中打开 DocumentWithVBA** 文档，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器。**
 
 ## <a name="trust-the-location-of-the-document"></a>信任文档的位置
  向文档中的 VBA 代码公开解决方案中的代码之前，必须先信任 VBA 中的文档运行。 有多种方法可实现此目的。 对于本演练，在 Word 的 **“信任中心”** 信任文档的位置。
@@ -164,7 +165,7 @@ ms.locfileid: "107824479"
 
 3. 生成项目。
 
-## <a name="expose-the-method-to-vba-code"></a>向 VBA 代码公开方法
+## <a name="expose-the-method-to-vba-code"></a>向 VBA 代码公开 方法
  若要向文档中的 VBA 代码公开 `CreateTable` 方法，请将 **主机项的** “EnableVbaCallers” `ThisDocument` 属性设置为 **“True”**。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>向 VBA 代码公开方法
@@ -179,11 +180,11 @@ ms.locfileid: "107824479"
 
 4. 生成项目。
 
-## <a name="call-the-method-from-vba-code"></a>从 VBA 代码调用方法
+## <a name="call-the-method-from-vba-code"></a>从 VBA 代码调用 方法
  现在即可从文档中的 VBA 代码调用 `CreateTable` 方法。
 
 > [!NOTE]
-> 在本演练中，你将在调试项目时向文档添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅 [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
+> 在本演练中，你将在调试项目时向文档添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅合并[VBA 和文档级自定义。](../vsto/combining-vba-and-document-level-customizations.md)
 
 ### <a name="to-call-the-method-from-vba-code"></a>从 VBA 代码调用方法
 
@@ -205,7 +206,7 @@ ms.locfileid: "107824479"
     End Sub
     ```
 
-5. 按 F5 。
+5. 按 **F5**。
 
 6. 验证新表格已添加到文档。
 
@@ -214,13 +215,13 @@ ms.locfileid: "107824479"
 ## <a name="next-steps"></a>后续步骤
  在以下主题中，你可以了解有关从 VBA 调用 Office 解决方案中的代码的详细信息：
 
-- 从 VBA 调用 Visual C# 自定义项中的代码。 此过程不同于 Visual Basic 过程。 有关详细信息，请参阅 [演练：在 Visual C&#35; 项目中调用 VBA 中的代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。
+- 从 VBA 调用 Visual C# 自定义项中的代码。 此过程不同于 Visual Basic 过程。 有关详细信息，请参阅 [演练：在 Visual C&#35;项目中从 VBA 调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)。
 
-- 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅 [演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
+- 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅演练：从 VBA 调用VSTO[外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)
-- [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
-- [如何：在 Visual Basic 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
-- [如何：在 Visual C&#35; 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [演练：在 Visual C&#35; 项目中调用 VBA 中的代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [计划文档级自定义项](../vsto/programming-document-level-customizations.md)
+- [如何：向项目中的 VBA Visual Basic代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [如何：在 Visual C&#35;项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
+- [演练：在 Visual C&#35; 项目中从 VBA 调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)

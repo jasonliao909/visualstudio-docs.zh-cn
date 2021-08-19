@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 87c201f40b158fda97b8fbb8d0d0e036ee897909597224ddc47b4c150f1784c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 82346b3bd8e5b30179977554826beb95d1291e8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394441"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099810"
 ---
 # <a name="how-to-programmatically-delete-outlook-contacts"></a>如何：以编程方式删除 Outlook 联系人
   此示例演示如何删除联系人。 此示例假设“联系人”  文件夹中存在名为“Armando Pinto”的联系人。

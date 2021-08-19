@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d7f8fec702baa493183753c2f23f945842f48bc3b9fbbad80833e33a3ea6c313
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 831fe9dfe29744a395dc07a7c3d2d0ac901a43ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353002"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060188"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>设计业务数据连接模型
   您可以通过将实体和方法添加到模型文件来开发业务数据连接 (BDC) 服务的模型。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行添加、删除或更新实体表示的数据等任务。 有关详细信息，请参阅将[业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
@@ -91,7 +91,7 @@ ms.locfileid: "121353002"
 |任务|选项|
 |----------|------------|
 |将模型部署到 BDC 服务。|编辑|
-|使用外部内容Web 部件创建列表和 (模型中) 实体。|客户端中的可选项|
+|若要使用外部内容Web 部件创建列表和 (，) 模型中的实体。|客户端中的可选项|
 |创建、读取、更新和删除实体数据。|执行|
 
  有关这些设置详细信息，请参阅 [业务数据连接服务管理](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14))。
@@ -99,12 +99,12 @@ ms.locfileid: "121353002"
  还可以为单个模型或外部内容类型设置安全权限。 若要详细了解如何设置模型的安全权限，请参阅 [BDC 模型管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14))。 若要详细了解如何设置外部内容类型的安全权限，请参阅 [外部内容类型管理](/previous-versions/office/sharepoint-server-2010/ee524076(v=office.14))。
 
 > [!NOTE]
-> 使用这些设置在本地服务器中调试SharePoint解决方案。 有关如何在生产环境中配置与 BDC 相关的安全设置SharePoint，请参阅[业务数据连接服务安全概述](/previous-versions/office/sharepoint-server-2010/ee661743(v=office.14))。
+> 使用这些设置调试本地 SharePoint 服务器上的解决方案。 若要详细了解如何在生产环境中配置与 BDC 相关的安全设置SharePoint，请参阅[业务数据连接服务安全概述](/previous-versions/office/sharepoint-server-2010/ee661743(v=office.14))。
 
 ### <a name="retract-models-that-become-corrupt"></a>收回损坏的模型
  当您第一次启动调试器时，Visual Studio 会将整个模型部署到 SharePoint。 此后，每次Visual Studio，SharePoint在部署之间做出的任何更改来更新模型中的模型。
 
- 在某些情况下，你可能希望Visual Studio模型完全收回SharePoint模型。 例如，模型可能会损坏。  若要将模型重新部署SharePoint，将模型的 **Incremental Update** 属性设置为 **False，** 然后启动调试器。 选择 **在** **BDC** 资源管理器中表示模型的节点时，"增量更新"属性将显示在"属性"窗口中。 默认情况下，模型的名称为 **BdcModel1**。
+ 在某些情况下，你可能希望Visual Studio完全收回SharePoint模型。 例如，模型可能会损坏。  若要将模型重新部署SharePoint，将模型的 **Incremental Update** 属性设置为 **False，** 然后启动调试器。 选择 **在** **BDC** 资源管理器中表示模型的节点时，"增量更新"属性将显示在"属性"窗口中。 默认情况下，模型的名称为 **BdcModel1**。
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>更改模型中实体的标识符名称
  如果在部署模型后更改标识符的名称，可能会收到部署错误。 无法将模型的 Incremental **Update** 属性设置为 False 来解决 **此错误**。 必须手动收回模型，然后再次部署解决方案。 有关详细信息，请参阅故障排除[SharePoint解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。 在最初部署模型之前，可以通过将 **"增量更新** "属性设置为 **False** 来避免此错误。
@@ -121,9 +121,9 @@ ms.locfileid: "121353002"
 |[如何：添加查找器方法](../sharepoint/how-to-add-a-finder-method.md)|演示如何添加使用户能够查看列表或 Web 部件中的实体列表的方法。|
 |[如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)|演示如何添加使用户能够查看特定实体详细信息的方法。|
 |[如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)|演示如何添加方法，使用户可以直接从列表或 Web 部件向数据源添加记录。|
-|[如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)|演示如何添加一种方法，以便用户通过使用列表或 Web 部件用户界面 (UI) 中删除数据源的数据。|
+|[如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)|演示如何添加一个方法，该方法使用户能够通过使用列表或 Web 部件用户界面 (UI) 中删除数据。|
 |[如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)|演示如何添加使用户能够直接从列表或 Web 部件更改数据源中数据记录的方法。|
-|[如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)|演示如何使用方法中的"方法详细信息Visual Studio向方法添加输入和返回参数。|
+|[如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)|演示如何使用方法详细信息窗口中的Visual Studio向方法添加输入和返回参数。|
 |[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|演示如何在模型中定义参数数据类型。|
 |[如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)|演示如何创建 BDC 执行的方法的实例。|
 |[如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|演示如何让用户限制 Finder 方法返回的实例数。|

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fdeb1b84bc8ee257a6da90389b46a990e4aa6a8dffda98b1f80964710e56bdac
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56d2365df1e613976943bd8ba33f6d49a32566f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117587"
 ---
 # <a name="sccuninitialize-function"></a>SccUninitialize 函数
 此函数将清理先前调用 [SccInitialize](../extensibility/sccinitialize-function.md) 创建的任何分配或打开连接，以准备关闭源代码管理插件。
@@ -47,6 +47,6 @@ SCCRTN SccUninitialize (
 ## <a name="remarks"></a>备注
  源代码管理插件负责准备关闭和释放插件为上下文结构分配的内存。 对于每个插件的给定实例，调用该函数一次。 在此调用之前调用[SccInitialize。](../extensibility/sccinitialize-function.md) 调用 时，仍无法打开任何项目 `SccUninitialize` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccInitialize](../extensibility/sccinitialize-function.md)

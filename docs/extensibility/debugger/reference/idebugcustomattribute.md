@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1007e82474093a04321bb3e550913fdc587f1dacf5d39c75ce9491c095588fb7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb62849f82b2fdbbcc6e2942fbeebcb7c1dd60d3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402930"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122079514"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此接口表示一个自定义属性，它可以提供属性的名称、父类型和类类型。

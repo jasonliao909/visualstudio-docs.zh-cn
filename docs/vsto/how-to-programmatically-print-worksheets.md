@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9671e678c28523bf3ab0aaeb443845b795f7b208b9db5db459afcd2692a08e7d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d02691d20748a9b982b30f49b1ec5426b7932e83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440729"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099745"
 ---
 # <a name="how-to-programmatically-print-worksheets"></a>如何：以编程方式打印工作表
 

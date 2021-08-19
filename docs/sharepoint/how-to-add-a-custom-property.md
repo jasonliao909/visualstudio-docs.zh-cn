@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 35dd7210258d48a446704d02aae09303ed274a1bdc3d5c1fb764692721821c2e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d72343bff4367e813bc8e75c1afffc2be5af9742
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121228787"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060123"
 ---
 # <a name="how-to-add-a-custom-property"></a>如何：添加自定义属性
   您可以使用 **属性编辑器** 向模型中添加自定义属性。 您可以在代码中访问这些属性，以便在运行时检索连接字符串和其他数据等信息。

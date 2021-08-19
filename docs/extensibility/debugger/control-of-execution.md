@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 26a063fd6eac65efd5f6d1dea46b764c0594cbb85e064ecee9078599fdd9ec85
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c93c767513592ff7e0fc2c971f7b1eeeca4873c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262927"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133271"
 ---
 # <a name="control-of-execution"></a>控制执行
 调试引擎 (DE) 通常会将以下事件之一作为上一个启动事件发送：
@@ -62,5 +62,5 @@ ms.locfileid: "121262927"
 
    SDM 进行的调用（即 `Step` **Execute** 和 **Continue** ）是异步的，这意味着 sdm 需要调用快速返回。 如果在执行、执行或继续返回之前，取消在同一线程上向 SDM 发送停止事件， `Step` 则 sdm 将停止响应。  
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

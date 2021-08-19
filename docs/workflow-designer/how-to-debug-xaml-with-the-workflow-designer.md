@@ -8,14 +8,15 @@ ms.assetid: d9305dbc-af62-4bdd-b03f-c54e3fe9ecc7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - uwp
-ms.openlocfilehash: 78141b6f3c33903603d7cbb082eca6de55ee757c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 721ee723c6f7d0e28c4d7da376233641a580d21d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037962"
 ---
 # <a name="how-to-debug-xaml-with-the-workflow-designer"></a>如何：使用工作流设计器调试 XAML
 
@@ -36,7 +37,7 @@ ms.locfileid: "99971656"
 
 5. 当代码执行到你设置的其中一个断点处时，与该断点关联的 XAML 元素将突出显示。 若要移动到下一个断点，请使用 **F10** 或 **F11** 键。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：在工作流中设置断点](../workflow-designer/how-to-set-breakpoints-in-workflows.md)
 - [调试工作流](debugging-workflows-with-the-workflow-designer.md)

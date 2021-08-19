@@ -1,19 +1,20 @@
 ---
-title: Docker 教程 - 第 8 部分：映像分层
+title: Docker 教程 - 第 9 部分：映像分层
 description: 如何检查和管理 Docker 映像中的映像层。
-ms.date: 08/04/2020
+ms.date: 08/06/2021
 author: nebuk89
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-docker
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 8f669baf6f3275f54c7e4a6ff2b31f9c260b2bb9
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 7b8d3aeb6406b11a8bbfe2f49e39fcfa356db5f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222664"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059680"
 ---
 # <a name="image-layering"></a>映像分层
 

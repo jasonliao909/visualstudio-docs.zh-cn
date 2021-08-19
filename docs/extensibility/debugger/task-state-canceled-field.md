@@ -1,6 +1,6 @@
 ---
-description: 任务在达到运行状态之前已取消，或者已确认其取消并完成，无异常。
-title: TASK_STATE_CANCELED字段|Microsoft Docs
+description: 任务在达到 "正在运行" 状态之前已被取消，或已确认取消并完成，但未发生异常。
+title: TASK_STATE_CANCELED 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: c6e20f40111f88ad304e5ce86cf4f60a8449418b7d83b6ae9879c6598f0c7f0a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ea74eb264f6706fb02b03304e50baa4ee86207f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042615"
 ---
-# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED字段
-任务在达到运行状态之前已取消，或者已确认其取消并完成，无异常。
+# <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED 字段
+任务在达到 "正在运行" 状态之前已被取消，或已确认取消并完成，但未发生异常。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll) 
+ **Assembly：** mscorlib (mscorlib.dll) 
 
- 由于无法从 CIL 访问此内部成员.NET Framework，因此在 CIL (中提供了以下) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -35,7 +35,7 @@ ms.locfileid: "121338080"
 ```
 
 ## <a name="remarks"></a>备注
- 如果m_stateFlags [包含](../../extensibility/debugger/m-stateflags-field.md) 此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
+ 如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
 ## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

@@ -1,6 +1,6 @@
 ---
-title: 实现嵌套项目的命令处理 |Microsoft Docs
-description: 了解如何在 Visual Studio 集成开发环境 (IDE) 中实现嵌套项目的命令处理。
+title: 为嵌套项目实现命令处理|Microsoft Docs
+description: 了解如何在 IDE Visual Studio 集成开发环境中为嵌套项目 (命令) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -13,20 +13,20 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54a3412050a8034a5941bbcb445795a28a86a1329bfa174678e067f7ef463729
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9489f37fff9fe1e798a42825a29cf59ec49336e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375931"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122042317"
 ---
 # <a name="implementing-command-handling-for-nested-projects"></a>实现嵌套项目的命令处理
-IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 到嵌套项目，也可以使用父项目来筛选或重写命令。
+IDE 可以将通过 和 接口传递的命令传递给嵌套项目，或者 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 父项目可以筛选或替代这些命令。
 
 > [!NOTE]
-> 只能筛选父项目通常处理的命令。 不能对 IDE 处理的命令（如 " **生成** " 和 " **部署** "）进行筛选。
+> 只能筛选通常由父项目处理的命令。 无法筛选 **由** IDE 处理的 **生成** 和部署等命令。
 
- 以下步骤描述了实现命令处理的过程。
+ 以下步骤介绍了实现命令处理的过程。
 
 ## <a name="procedures"></a>过程
 
@@ -34,13 +34,13 @@ IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.S
 
 1. 当用户选择嵌套项目或嵌套项目中的节点时：
 
-   1. IDE 将调用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法。
+   1. IDE 调用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法。
 
       — 或 —
 
-   2. 如果命令源自层次结构窗口（如解决方案资源管理器中的快捷菜单命令），IDE 将对 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 项目的父项调用方法。
+   2. 如果命令源自层次结构窗口（如 解决方案资源管理器 中的快捷菜单命令）中，则 IDE 将调用项目父级上的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy.QueryStatusCommand%2A> 方法。
 
-2. 父项目可以检查要传递到 `QueryStatus` 的参数（例如 `pguidCmdGroup` 和）， `prgCmds` 以确定父项目是否应筛选命令。 如果为筛选命令实现了父项目，则应将其设置为：
+2. 父项目可以检查要传递给 的参数，如 和 `QueryStatus` `pguidCmdGroup` ，以确定 `prgCmds` 父项目是否应该筛选命令。 如果实现父项目以筛选命令，则它应设置：
 
    ```
    prgCmds[0].cmdf = OLECMDF_SUPPORTED;
@@ -50,9 +50,9 @@ IDE 可以将通过和接口传递的命令传递 <xref:Microsoft.VisualStudio.S
 
     然后，父项目应返回 `S_OK` 。
 
-    如果父项目未筛选此命令，则它应该只返回 `S_OK` 。 在这种情况下，IDE 会自动将命令路由到子项目。
+    如果父项目不筛选命令，则它只应返回 `S_OK` 。 在这种情况下，IDE 会自动将命令路由到子项目。
 
-    父项目不需要将命令路由到子项目。 IDE 将执行此任务。
+    父项目无需将命令路由到子项目。 IDE 执行此任务。
 
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIHierarchy>

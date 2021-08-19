@@ -1,7 +1,7 @@
 ---
 title: “笔”工具修改键
 titleSuffix: Blend for Visual Studio
-description: 了解使用 Pen 工具创建路径时Blend for Visual Studio中的 Pen 工具修饰符键，这些修改命令用于修改路径。
+description: 了解使用 Pen 工具创建路径时Blend for Visual Studio中的 Pen 工具修饰符键，以访问用于修改路径的命令。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 23639240b7331983392902985676ceff322ec14b82059b93d221abb98c0d956d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 01e861e21540fdfba9ac869838c3f080e2fe2422
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393313"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037806"
 ---
 # <a name="pen-tool-modifier-keys-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的“笔”工具修改键
 

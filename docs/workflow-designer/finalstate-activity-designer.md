@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: e51fd5a806a9ede74d824c94d3eda84dc0541e9ebe235cb76242c6a783d02c9a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a44cf8413e60b0dd5049f7ce31d699e6cfbbca47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122099082"
 ---
 # <a name="finalstate-activity-designer"></a>FinalState 活动设计器
 

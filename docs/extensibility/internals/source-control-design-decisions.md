@@ -13,23 +13,23 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 79cbc22b16835e0f6c3fa9caa41ac9720c7022d8786520b1baf89d33c3b64948
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f0901d3cbdd6e73db85e7b56df3bca3af38fde0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275172"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159043"
 ---
 # <a name="source-control-design-decisions"></a>源代码管理设计决策
 实现源代码管理时，应针对项目考虑以下设计决策。
 
 ## <a name="will-information-be-shared-or-private"></a>信息是共享信息还是私有信息？
- 可以做出最重要的设计决策是可共享的信息和私有信息。 例如，项目的文件列表是共享的，但在此文件列表中，某些用户可能希望具有私有文件。 编译器设置是共享的，但启动项目通常是私有的。 设置是纯共享、与重写共享或纯专用。 根据设计，私有项（如解决方案用户选项 (.suo) 文件）不会签入 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] 。 请确保将任何私有信息存储在专用文件中，例如 .suo 文件或你创建的特定专用文件，例如 Visual C# 的 .csproj.user 文件或 Visual Basic 的 .vbproj.user 文件。
+ 你可以做出最重要的设计决策是可共享的信息和私有信息。 例如，项目的文件列表是共享的，但在此文件列表中，某些用户可能希望具有私有文件。 编译器设置是共享的，但启动项目通常是私有的。 设置是纯共享、与重写共享或纯专用。 根据设计，私有项（如解决方案用户选项 (.suo) 文件）不会签入 [!INCLUDE[vsvss](../../extensibility/includes/vsvss_md.md)] 。 请确保将任何私有信息存储在专用文件中，例如 .suo 文件或你创建的特定专用文件，例如 Visual C# 的 .csproj.user 文件或 Visual Basic 的 .vbproj.user 文件。
 
  此决策并非包含所有内容，可以按项做出。
 
 ## <a name="will-the-project-include-special-files"></a>项目是否包含特殊文件？
- 另一个重要的设计决策是项目结构是否使用特殊文件。 特殊文件是隐藏文件，它们基于在解决方案资源管理器和签入和签出对话框中可见的文件。 如果使用特殊文件，请遵循以下准则：
+ 另一个重要的设计决策是项目结构是否使用特殊文件。 特殊文件是隐藏文件，这些文件在解决方案资源管理器和签入和签出对话框中可见。 如果使用特殊文件，请遵循以下准则：
 
 1. 不要将特殊文件与项目根节点（即项目文件本身）关联。 项目文件必须是单个文件。
 
