@@ -34,14 +34,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: d0669f9838073571018eb762e98aa6d907456f12
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 073b29afe8af9b6b23d7eda1b30631018674e9c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386457"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146714"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
 

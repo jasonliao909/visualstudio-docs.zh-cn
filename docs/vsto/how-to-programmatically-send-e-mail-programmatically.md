@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式发送电子邮件
-description: 使用 Visual Studio 以编程方式从 Microsoft Outlook 发送电子邮件。 此示例将电子邮件发送到域名为 example.com 的联系人。
+description: 使用 Visual Studio 以编程方式从 Microsoft Outlook。 此示例向域名为 example.com 的联系人发送电子邮件。
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: how-to
@@ -18,15 +18,15 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f2a46c68ff957451715c426d1b1effd3f16bfda9cb1d32347c56c44d769ac3fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1a8f2fb5843ccb39808250ef847e8e5b4355960
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121366207"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115234"
 ---
 # <a name="how-to-programmatically-send-email"></a>如何：以编程方式发送电子邮件
-  此示例向其电子邮件地址中具有域名 **example.com** 的联系人发送电子邮件。
+  此示例向电子邮件地址中具有域名的联系人 example.com **发送电子邮件。**
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -38,13 +38,13 @@ ms.locfileid: "121366207"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要：
 
-- 其电子邮件地址中具有域名 **example.com** 的联系人。
+- 具有域名的联系人 **example.com** 电子邮件地址中。
 
 ## <a name="robust-programming"></a>可靠编程
- 请勿删除搜索域名 **example.com** 的筛选器代码。 如果删除筛选器，你的解决方案将向你的所有联系人发送电子邮件。
+ 不要删除在 中搜索域名的 **example.com。** 如果删除筛选器，解决方案会向所有联系人发送电子邮件。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
 - [如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)
-- [如何：以编程方式访问 Outlook 联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
-- [如何：在收到电子邮件时以编程方式执行操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)
+- [如何：以编程方式Outlook联系人](../vsto/how-to-programmatically-access-outlook-contacts.md)
+- [如何：收到电子邮件时以编程方式执行的操作](../vsto/how-to-programmatically-perform-actions-when-an-e-mail-message-is-received.md)

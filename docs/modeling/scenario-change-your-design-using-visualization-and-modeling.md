@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b6cf4b8c941168f396c8beb80be8d6f7b824dfbd6dc1b0ae77a0c08ca5607677
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ce1a760bd51a9d3476354cdd63fdcebcad311552
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370595"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085619"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 

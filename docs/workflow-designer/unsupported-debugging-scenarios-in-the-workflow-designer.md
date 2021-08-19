@@ -7,15 +7,16 @@ ms.topic: reference
 ms.assetid: 6adbe379-41d0-4681-9cd0-b91f187c3c2c
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 author: TerryGLee
-ms.openlocfilehash: 70620528bd3e2d50b85d67eef5990d9843ea5178
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbc2e7c2c465196bfc4781bf7cda7e3d0bd9dd8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875128"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098926"
 ---
 # <a name="unsupported-debugging-scenarios-in-the-workflow-designer"></a>工作流设计器中不受支持的调试方案
 

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d3f3efb6a35a87dadb1b2f70fdf59cdfb3d61691975091b2f9f7f58d557e133
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d4b1c5315933e2e29e29774b94804846d5317723
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440469"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114688"
 ---
 # <a name="parallel-activity-designer"></a>Parallel 活动设计器
 

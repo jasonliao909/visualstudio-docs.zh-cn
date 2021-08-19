@@ -1,6 +1,6 @@
 ---
 title: 自定义用户界面 (源代码管理 VSPackage) |Microsoft Docs
-description: 了解如何通过使用源代码管理 VSPackage (UI 元素) 在 Visual Studio 中创建自定义用户界面。
+description: 了解如何使用源代码管理 VSPackage 在 (UI) 创建自定义用户界面Visual Studio VSPackage 来指定 UI 元素。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b688933859a4993b3032ab5b3fd1672eeae7261a4afb0788f5329435f12f98d7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: beff4e1ca4d0f3bef8b8e32d30ebeecae0aaf3a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275510"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063481"
 ---
 # <a name="custom-user-interface-source-control-vspackage"></a>自定义用户界面 (VSPackage) 
 VSPackage 通过 *.vsct* Visual Studio 命令表声明其 (及其) 状态。 集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 开发环境 (IDE) 在加载 VSPackage 之前以默认状态显示菜单项。 随后，调用 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 方法以启用或禁用菜单项。
@@ -56,7 +56,7 @@ VSPackage 通过 *.vsct* Visual Studio 命令表声明其 (及其) 状态。 集
 | - | - |
 | 菜单和工具栏 | 源代码管理包必须将初始菜单和工具栏可见性状态设置为 *.vsct* 文件的 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md)节中的源代码管理包 ID。 这使 IDE 可以适当地设置菜单项的状态，而无需加载 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage 并调用 方法的 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A> 实现。 |
 | 工具窗口 | 当源代码管理处于非活动状态时，源代码管理 VSPackage 将隐藏它拥有的任何工具窗口。 |
-| 特定于源代码管理 VSPackage 的选项页 | 注册表 **项 HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** 允许 VSPackage 设置需要显示其选项页的上下文。 必须使用此项下的注册表项，使用源代码管理服务的 SID (ID) 并为其分配 DWORD 值 1。 每当在注册了源代码管理 VSPackage 的上下文中发生 UI 事件时，如果 VSPackage 处于活动状态，将调用 VSPackage。 |
+| 特定于源代码管理 VSPackage 的选项页 | 注册表 **项 HKLM\SOFTWARE\Microsoft\VisualStudio\X.Y\ToolsOptionsPages\VisibilityCmdUIContexts** 允许 VSPackage 设置需要显示其选项页的上下文。 必须使用此项下的注册表项，使用源代码管理服务的服务 ID (SID) ，并为其分配 DWORD 值 1。 每当在注册了源代码管理 VSPackage 的上下文中发生 UI 事件时，如果 VSPackage 处于活动状态，将调用 VSPackage。 |
 
 ## <a name="see-also"></a>请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget.QueryStatus%2A>

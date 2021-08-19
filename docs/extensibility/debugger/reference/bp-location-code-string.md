@@ -16,12 +16,12 @@ ms.workload:
 - vssdk
 dev_langs:
 - CPP
-ms.openlocfilehash: 3ebfdd5605f3f332209d2030b499c70c12582d119d51cceef6f1014875bebe23
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7b29bf10ec30452465b5e8106378d48b3086f0b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120486"
 ---
 # <a name="bp_location_code_string"></a>BP_LOCATION_CODE_STRING
 用于根据用户可在集成开发环境中输入的字符串设置代码断点 (IDE) 。

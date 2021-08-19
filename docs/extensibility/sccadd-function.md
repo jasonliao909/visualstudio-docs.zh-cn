@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7e8d671483f2e141aa2971fca6a60bdaf433db21d10ce829617dc55c25a3de01
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cd73e3735478a89cb203aff8835f7535cecd0b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121388131"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158341"
 ---
 # <a name="sccadd-function"></a>SccAdd 函数
 此函数将新文件添加到源代码管理系统。

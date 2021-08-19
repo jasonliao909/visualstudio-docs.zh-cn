@@ -1,6 +1,6 @@
 ---
 description: 任务已完成执行其委托，并隐式等待附加的子任务完成。
-title: TASK_STATE_WAITING_ON_CHILDREN字段|Microsoft Docs
+title: TASK_STATE_WAITING_ON_CHILDREN 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e63ef2032b4d3ac2bd874276c690b84a36b4abaf598b9eb44a37fca810ad1b1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 161e482a791cbf9189d864bdf45c3934803fbf2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095096"
 ---
-# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN字段
+# <a name="task_state_waiting_on_children-field"></a>TASK_STATE_WAITING_ON_CHILDREN 字段
 任务已完成执行其委托，并隐式等待附加的子任务完成。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程序集：mscorlib** (*mscorlib.dll*) 
+ **Assembly：** mscorlib (*mscorlib.dll*) 
 
- 由于无法从 CIL 访问此内部成员，因此.NET Framework CIL 语言中的公共中间语言 (语法) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -35,7 +35,7 @@ ms.locfileid: "121306226"
 ```
 
 ## <a name="remarks"></a>备注
- 如果m_stateFlags [字段](../../extensibility/debugger/m-stateflags-field.md) 包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
+ 如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

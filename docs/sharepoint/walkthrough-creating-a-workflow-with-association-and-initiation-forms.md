@@ -1,6 +1,6 @@
 ---
-title: 创建具有关联窗体和启动窗体的工作流
-description: 在此 SharePoint 演练中，创建一个包含关联和初始窗体使用的基本顺序工作流。
+title: 创建具有关联和启动窗体的工作流
+description: 在此SharePoint演练中，创建包含关联和启动窗体使用的基本顺序工作流。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,29 +17,30 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: cb759b155b119c29f20a39cdbf35338ec5a305b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f3852452d163f14e93b73e7fd894759f7aa0197
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847734"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148813"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和启动窗体创建工作流
-  本演练演示如何创建包含关联和初始窗体使用的基本顺序工作流。 这是一种 ASPX 窗体，当在工作流第一次与 SharePoint 管理员 (关联窗体) 时，以及当用户 (启动窗体) 启动工作流时，将参数添加到工作流。
+  本演练演示如何创建包含关联和启动窗体使用的基本顺序工作流。 这些 ASPX 窗体支持在 SharePoint 管理员首次关联工作流时 (关联窗体) ，以及当用户启动工作流时 (启动窗体) 。
 
- 本演练概述了这样一种情况：用户想要为满足以下要求的支出报表创建审批工作流：
+ 本演练概述了用户希望为具有以下要求的支出报表创建审批工作流的方案：
 
-- 当工作流与列表相关联时，会提示管理员输入关联窗体，在该窗体中输入支出报表的美元限制。
+- 当工作流与列表关联时，系统会提示管理员使用关联表单，他们在此窗体中输入支出报表的美元限制。
 
-- 员工将其支出报表上传到共享文档列表，启动工作流，然后在工作流启动窗体中输入支出总计。
+- 员工将其支出报表上传到"共享文档"列表，启动工作流，然后在工作流启动表单中输入支出总额。
 
-- 如果员工支出报表总数超出了管理员的预定义限制，则会为该员工的经理创建一个任务以批准该支出报表。 但是，如果员工的支出报表总数小于或等于支出限制，则自动批准的消息将写入工作流的历史记录列表。
+- 如果员工支出报表总计超过管理员的预定义限制，则创建一个任务供员工的经理批准支出报表。 但是，如果员工的支出报表总计小于或等于支出限制，则自动批准的消息将写入工作流的历史记录列表。
 
   本演练演示以下任务：
 
-- 在中创建 SharePoint 列表定义顺序工作流项目 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
+- 在 中SharePoint列表定义顺序工作流项目 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
 
 - 创建工作流计划。
 
@@ -52,33 +53,33 @@ ms.locfileid: "99847734"
 - 手动启动工作流。
 
 > [!NOTE]
-> 虽然本演练使用顺序工作流项目，但对于状态机工作流，该过程是相同的。
+> 尽管本演练使用顺序工作流项目，但状态机工作流的过程是相同的。
 >
-> 此外，在以下说明中，计算机可能会为某些用户界面元素显示不同的名称或位置 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]你拥有的版本以及你使用的设置将确定这些元素。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
+> 此外，在下面的说明中，计算机可能会显示某些用户界面 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 元素的不同名称或位置。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]你拥有的版本和使用的设置决定了这些元素。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
 ## <a name="prerequisites"></a>先决条件
  您需要满足以下条件才能完成本演练：
 
-- 支持的 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] 和 SharePoint 版本。
+- 支持的 和 [!INCLUDE[TLA#tla_win](../sharepoint/includes/tlasharptla-win-md.md)] SharePoint。
 
 - Visual Studio。
 
-## <a name="create-a-sharepoint-sequential-workflow-project"></a>创建 SharePoint 顺序工作流项目
- 首先，在中创建一个顺序工作流项目 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 顺序工作流是按顺序执行的一系列步骤，直到最后一个活动完成。 在此过程中，您将创建一个应用于 SharePoint 中 "共享文档" 列表的顺序工作流。 工作流的向导允许你将工作流与网站或列表定义关联，并使你能够确定工作流的启动时间。
+## <a name="create-a-sharepoint-sequential-workflow-project"></a>创建SharePoint工作流项目
+ 首先，在 中创建顺序工作流项目 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 顺序工作流是一系列步骤，按顺序执行，直到最后一个活动完成。 在此过程中，你将创建一个应用于"共享文档"列表的顺序SharePoint。 工作流的向导允许将工作流与站点或列表定义关联，并允许您确定工作流何时启动。
 
-#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>创建 SharePoint 顺序工作流项目
+#### <a name="to-create-a-sharepoint-sequential-workflow-project"></a>创建一个SharePoint工作流项目
 
-1. 在菜单栏上，选择 "**文件**"  >  "**新建**  >  **项目**" 以显示 "**新建项目**" 对话框。
+1. 在菜单栏上，选择"**文件**  >    >  **""新建Project** 以显示"新建Project对话框。
 
-2. 展开 " **Visual c #** " 或 " **Visual Basic**" 下的 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
+2. 在 Visual **C#** SharePoint下展开"Visual Basic"**节点**，然后选择 **"2010"** 节点。
 
-3. 在 " **模板** " 窗格中，选择 " **SharePoint 2010 项目** " 项目模板。
+3. 在"**模板"窗格中**，选择SharePoint **2010 Project** 模板。
 
-4. 在 " **名称** " 框中，输入 **ExpenseReport** ，然后选择 " **确定"** 按钮。
+4. 在" **名称"** 框中，输入 **ExpenseReport，** 然后选择"确定 **"** 按钮。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     将显示 **SharePoint自定义向导**。
 
-5. 在 " **指定用于调试的站点和安全级别** " 页上，选择 " **部署为场解决方案** " 选项按钮，然后选择 " **完成** " 按钮以接受 "信任级别" 和 "默认站点"。
+5. 在"**指定** 用于调试的站点和安全级别"页中，选择"部署 **为** 场解决方案"选项按钮，然后选择"完成"按钮以接受信任级别和默认站点。
 
      此步骤还将解决方案的信任级别设置为场解决方案，这是工作流项目的唯一可用选项。
 
@@ -86,45 +87,45 @@ ms.locfileid: "99847734"
 
 7. 在菜单栏上，依次选择“项目” > “添加新项”。
 
-8. 在 " **Visual c #** " 或 " **Visual Basic** 下，展开" **SharePoint** "节点，然后选择" **2010** "节点。
+8. 在 **Visual C#** 或 **Visual Basic** 下，展开 **SharePoint节点，** 然后选择 **"2010"** 节点。
 
-9. 在 " **模板** " 窗格中，选择 " **顺序工作流 (场解决方案仅)** 模板"，然后选择 " **添加** " 按钮。
+9. 在" **模板"窗格中** ，选择"仅场解决方案 **(顺序** 工作流) 模板"，然后选择"添加 **"** 按钮。
 
-     " **SharePoint 自定义向导** " 随即出现。
+     将显示 **SharePoint自定义向导**。
 
-10. 在 " **指定用于调试的工作流名称** " 页上，接受默认名称 (**ExpenseReport-workflow1.xaml**) 。 保留默认工作流模板类型值 (**List workflow)**。 选择“下一步”按钮  。
+10. 在 **"指定调试的工作流** 名称"页中，接受 **ExpenseReport - Workflow1** (的默认) 。 将默认工作流模板类型值 (**列出工作流) 。** 选择“下一步”按钮  。
 
-11. 在 " **是否希望 Visual Studio 在调试会话中自动关联工作流？"** 页上，清除自动关联工作流模板的框（如果已选中）。
+11. 在 **"是否希望Visual Studio会话中自动** 关联工作流？"页中，清除自动关联工作流模板（如果已选中）的框。
 
-     此步骤允许您手动将工作流与 "共享文档" 列表相关联，后者将显示关联窗体。
+     此步骤允许你稍后手动将工作流与"共享文档"列表关联，该列表将显示关联窗体。
 
 12. 选择 **“完成”** 按钮。
 
 ## <a name="add-an-association-form-to-the-workflow"></a>向工作流添加关联窗体
- 接下来，创建一个。当 SharePoint 管理员第一次将工作流与支出报表文档关联时显示的 ASPX 关联窗体。
+ 接下来，创建 。当管理员首次将工作流与支出SharePoint文档关联时出现的 ASPX 关联窗体。
 
 #### <a name="to-add-an-association-form-to-the-workflow"></a>向工作流添加关联窗体
 
-1. 在 **解决方案资源管理器** 中选择 " **workflow1.xaml** " 节点。
+1. 选择 中的 **Workflow1** **解决方案资源管理器。**
 
-2. 在菜单栏上，选择  >  "项目" "**添加新项**" 以显示 "**添加新项**" 对话框。
+2. 在菜单栏上，选择  >  **Project"添加新项**"以显示"**添加新项**"对话框。
 
-3. 在 "对话框" 树视图中，展开 " **Visual c #** " 或 " **Visual Basic** (具体取决于你的项目语言) ，展开" **SharePoint** "节点，然后选择" **2010** "节点。
+3. 在对话框树视图中，根据项目语言 **Visual Basic (** 展开 **Visual C#** 或) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
 
-4. 在模板列表中，选择 " **工作流关联窗体** " 模板。
+4. 在模板列表中，选择" **工作流关联窗体"** 模板。
 
-5. 在 " **名称** " 文本框中，输入 **ExpenseReportAssocForm**。
+5. 在" **名称"** 文本框中，输入 **ExpenseReportAssocForm.aspx**。
 
-6. 选择 " **添加** " 按钮，将窗体添加到项目。
+6. 选择" **添加** "按钮，将窗体添加到项目。
 
 ## <a name="designing-and-coding-the-association-form"></a>设计和编码关联窗体
- 在此过程中，通过向关联窗体添加控件和代码来向其引入功能。
+ 在此过程中，你将通过向关联窗体添加控件和代码来引入功能。
 
-#### <a name="to-design-and-code-the-association-form"></a>设计关联窗体并对其进行编码
+#### <a name="to-design-and-code-the-association-form"></a>设计和编码关联窗体
 
-1. 在 (ExpenseReportAssocForm) 的关联窗体中，找到 `asp:Content` 具有的元素 `ID="Main"` 。
+1. 在 ExpenseReportAssocForm.aspx (关联窗体) ，找到 `asp:Content` 具有 的元素 `ID="Main"` 。
 
-2. 在此 content 元素中的第一行之后，添加以下代码，以创建提示输入支出批准限制 (*AutoApproveLimit*) 的标签和文本框：
+2. 直接在此内容元素的第一行之后，添加以下代码以创建一个标签和文本框，该文本框提示在 *AutoApproveLimit* (支出审批) ：
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -133,12 +134,12 @@ ms.locfileid: "99847734"
     <br /><br />
     ```
 
-3. 展开 **解决方案资源管理器** 中的 **ExpenseReportAssocForm** 文件以显示其依赖文件。
+3. 展开中的 **ExpenseReportAssocForm.aspx** **解决方案资源管理器** 以显示其依赖文件。
 
     > [!NOTE]
-    > 如果你的项目处于中 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] ，则必须选择 " **查看所有文件** " 按钮以执行此步骤。
+    > 如果项目位于 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 中，则必须选择"查看 **所有文件** "按钮以执行此步骤。
 
-4. 打开 ExpenseReportAssocForm 文件的快捷菜单，然后选择 " **查看代码**"。
+4. 打开 ExpenseReportAssocForm.aspx 文件的快捷菜单，然后选择"**查看代码"。**
 
 5. 将 `GetAssociationData` 方法替换为：
 
@@ -162,30 +163,30 @@ ms.locfileid: "99847734"
     ```
 
 ## <a name="add-an-initiation-form-to-the-workflow"></a>向工作流添加启动窗体
- 接下来，创建当用户针对其支出报表运行工作流时显示的启动窗体。
+ 接下来，创建当用户针对其支出报表运行工作流时出现的启动窗体。
 
 #### <a name="to-create-an-initiation-form"></a>创建启动窗体
 
-1. 在 **解决方案资源管理器** 中选择 " **workflow1.xaml** " 节点。
+1. 选择 中的 **Workflow1** **解决方案资源管理器。**
 
-2. 在菜单栏上，依次选择 "**项目**  >  " "**添加新项**" 和 "**添加新项**" 对话框。
+2. 在菜单栏上，选择  >  **Project"添加新项"** 显示"**添加新项**"对话框。
 
-3. 在 "对话框" 树视图中，展开 " **Visual c #** " 或 " **Visual Basic**  (具体取决于你的项目语言) ，展开" **SharePoint** "节点，然后选择" **2010** "节点。
+3. 在对话框树视图中，根据项目语言 **Visual Basic (** 展开 **Visual C#** 或) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
 
-4. 在模板列表中，选择 " **工作流启动窗体** " 模板。
+4. 在模板列表中，选择" **工作流启动窗体"** 模板。
 
-5. 在 " **名称** " 文本框中，输入 **ExpenseReportInitForm**。
+5. 在" **名称"** 文本框中，输入 **ExpenseReportInitForm.aspx**。
 
-6. 选择 " **添加** " 按钮，将窗体添加到项目。
+6. 选择" **添加** "按钮，将窗体添加到项目。
 
 ## <a name="designing-and-coding-the-initiation-form"></a>设计和编码启动窗体
- 接下来，向启动窗体添加控件和代码。
+ 接下来，通过向启动窗体添加控件和代码来引入功能。
 
-#### <a name="to-code-the-initiation-form"></a>编写启动窗体代码
+#### <a name="to-code-the-initiation-form"></a>编写启动表单代码
 
-1. 在 (ExpenseReportInitForm) 的启动窗体中，找到 `asp:Content` 包含的元素 `ID="Main"` 。
+1. 在 ExpenseReportInitForm.aspx (的启动) 中，找到 `asp:Content` 包含 的元素 `ID="Main"` 。
 
-2. 在此 content 元素中的第一行之后，添加以下代码，以创建一个标签和文本框，其中显示在关联窗体中输入的 *AutoApproveLimit*) 的支出批准 (限制，另一个标签和文本框提示输入支出总计 (*ExpenseTotal*) ：
+2. 直接在此内容元素的第一行之后，添加以下代码以创建一个标签和文本框，显示在关联窗体中输入的支出批准限制 (*AutoApproveLimit*) ，并添加另一个标签和文本框来提示费用总额 (*ExpenseTotal*) ：
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -198,9 +199,9 @@ ms.locfileid: "99847734"
     <br /><br />
     ```
 
-3. 展开 **解决方案资源管理器** 中的 **ExpenseReportInitForm** 文件以显示其依赖文件。
+3. 展开中的 **ExpenseReportInitForm.aspx** **解决方案资源管理器** 以显示其依赖文件。
 
-4. 打开 ExpenseReportInitForm 文件的快捷菜单，然后选择 " **查看代码**"。
+4. 打开 ExpenseReportInitForm.aspx 文件的快捷菜单，然后选择"**查看代码"。**
 
 5. 将 `Page_Load` 方法替换为以下示例：
 
@@ -248,44 +249,44 @@ ms.locfileid: "99847734"
     }
     ```
 
-## <a name="cutomize-the-workflow"></a>Cutomize 工作流
- 接下来，自定义工作流。 稍后，您将两个窗体关联到工作流。
+## <a name="cutomize-the-workflow"></a>剪切工作流
+ 接下来，自定义工作流。 稍后，将两个窗体关联到工作流。
 
 #### <a name="to-customize-the-workflow"></a>自定义工作流
 
-1. 通过在项目中打开 Workflow1.xaml，在工作流设计器中显示工作流。
+1. 通过打开项目中的 Workflow1，在工作流设计器中显示工作流。
 
-2. 在 " **工具箱**" 中，展开 " **Windows Workflow 3.0** " 节点，找到 " **IfElse** " 活动。
+2. 在"**工具箱"** 中，展开Windows **工作流 v3.0** 节点并找到 **IfElse** 活动。
 
-3. 通过执行以下步骤之一将此活动添加到工作流中：
+3. 执行以下步骤之一，将此活动添加到工作流：
 
-    - 打开 " **IfElse** " 活动的快捷菜单，选择 " **复制**"，在工作流设计器中的 " **onWorkflowActivated1** " 活动下打开行的快捷菜单，然后选择 " **粘贴**"。
+    - 打开 **IfElse** 活动的快捷菜单，选择"复制"，在工作流设计器中打开 **onWorkflowActivated1** 活动下行的快捷菜单，然后选择"粘贴 **"。**
 
-    - 从 **工具箱** 中拖动 **IfElse** 活动，并将其连接到工作流设计器中 **onWorkflowActiviated1** 活动下的行。
+    - 从" **工具箱"拖动 IfElse** **活动，并将其** 连接到工作流设计器中 **onWorkflowActiviated1** 活动下的行。
 
-4. 在 "工具箱" 中，展开 " **SharePoint 工作流** " 节点并找到 " **CreateTask** " 活动。
+4. 在"工具箱"中，展开SharePoint **工作流"** 节点并找到 **CreateTask** 活动。
 
-5. 通过执行以下步骤之一将此活动添加到工作流中：
+5. 执行以下步骤之一，将此活动添加到工作流：
 
-    - 打开 " **CreateTask** " 活动的快捷菜单，选择 "**复制**"，在工作流设计器中的 " **IfElseActivity1** " 中，在 "此处" 区域中打开两个 "**删除" 活动** 之一的快捷菜单，然后选择 "**粘贴**"。
+    - 打开 **CreateTask** 活动的快捷菜单，选择"复制"，打开工作流设计器 **中 IfElseActivity1** 内两个"删除活动""此处"区域之一的快捷菜单，然后选择"粘贴 **"。** 
 
-    - 将 " **CreateTask** " 活动从 "**工具箱**" 拖动到 " **IfElseActivity1**" 中的两个 "**放置活动**" 区域之一。
+    - 将 **CreateTask** 活动从"工具箱"拖动到 **IfElseActivity1** 中的两个"放置活动 **"区域** 之一。
 
-6. 在 "**属性**" 窗口中，为 " **CorrelationToken** " 属性输入 *taskToken* 属性值。
+6. 在"**属性**"窗口中，输入 *CorrelationToken 属性的 taskToken* 属性值。 
 
-7. 展开 " **CorrelationToken** " 属性，方法是：选择加号 (![树视图](../sharepoint/media/plus.gif "TreeView 加号")) 旁边的加号。
+7. 通过选择 TreeView 旁边的加号 (并) **CorrelationToken** 属性。 ![](../sharepoint/media/plus.gif "TreeView 加号")
 
 8. 选择 **OwnerActivityName** 子属性上的下拉箭头，并设置 *workflow1.xaml* 值。
 
-9. 选择 **TaskId** 属性，然后选择省略号 (![ASP.NET Mobile 设计器 "椭圆形](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")) " 按钮以显示 " **绑定属性** " 对话框。
+9. 选择 **TaskId** 属性，然后选择省略号 (![ASP.NET 移动设计器 "椭圆形](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")) " 按钮，以显示 "**绑定属性**" 对话框。
 
 10. 选择 " **绑定到新成员** " 选项卡，选择 " **创建字段** " 选项按钮，然后选择 " **确定"** 按钮。
 
-11. 选择 " **任务** " 属性，然后选择省略号 (![ASP.NET 移动设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号") "" 椭圆形 ") 按钮以显示" **绑定属性** "对话框。
+11. 选择 "**任务**" 属性，然后选择省略号 (![ASP.NET 移动设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"" 椭圆形 ") " 按钮以显示 "**绑定属性**" 对话框。
 
 12. 选择 " **绑定到新成员** " 选项卡，选择 " **创建字段** " 选项按钮，然后选择 " **确定"** 按钮。
 
-13. 在 " **工具箱**" 中，展开 " **SharePoint 工作流** " 节点，找到 " **LogToHistoryListActivity** " 活动。
+13. 在 "**工具箱**" 中，展开 " **SharePoint 工作流**" 节点，并找到 " **LogToHistoryListActivity** " 活动。
 
 14. 通过执行以下步骤之一将此活动添加到工作流中：
 
@@ -389,15 +390,15 @@ ms.locfileid: "99847734"
      这会对应用程序进行编译、打包、部署、激活其功能、回收 [!INCLUDE[TLA2#tla_iis5](../sharepoint/includes/tla2sharptla-iis5-md.md)] 应用程序池，然后在 " **站点 Url** " 属性中指定的位置启动浏览器。
 
 ## <a name="associating-the-workflow-to-the-documents-list"></a>将工作流关联到 "文档" 列表
- 接下来，通过将工作流与 SharePoint 站点上的 **SharedDocuments** 列表关联来显示工作流关联窗体。
+ 接下来，通过将工作流与 SharePoint 网站上的 **SharedDocuments** 列表关联来显示工作流关联窗体。
 
 #### <a name="to-associate-the-workflow"></a>关联工作流
 
 1. 选择 "快速启动" 栏上的 " **共享文档** " 链接。
 
-2. 选择 "**库工具**" 选项卡上的 "**库**" 链接，然后选择 "**库设置**" 功能区按钮。
+2. 选择 "**库工具**" 选项卡上的 "**库**" 链接，然后选择 "**库" 设置** 功能区 "按钮。
 
-3. 在 "**权限和管理**" 部分中，选择 "**工作流设置**" 链接，然后在 "**工作流**" 页上选择 "**添加工作流**" 链接。
+3. 在 "**权限和管理**" 部分中，选择 "**工作流设置**" 链接，然后选择 "**工作** 流" 页上的 "**添加工作流**" 链接。
 
 4. 在 "工作流设置" 页的顶部列表中，选择 " **ExpenseReport-workflow1.xaml** " 模板。
 
@@ -412,13 +413,13 @@ ms.locfileid: "99847734"
 
 #### <a name="to-start-the-workflow"></a>启动工作流
 
-1. 在 SharePoint 页上，选择 " **主页** " 按钮。
+1. 在 "SharePoint" 页上，选择 "**主页**" 按钮。
 
 2. 选择 "快速启动" 栏上的 " **共享文档** " 链接以显示 " **共享文档** " 列表。
 
-3. 选择页面顶部的 "**库工具**" 选项卡上的 "**文档**" 链接，然后选择功能区上的 "**上载文档**" 按钮，将新文档上载到 "**共享文档**" 列表中。
+3. 选择页面顶部的 "**库工具**" 选项卡上的 "**文档**" 链接，然后选择功能区上的 " **Upload 文档**" 按钮，将新文档上载到 "**共享文档**" 列表中。
 
-4. 在 " **上载文档** " 对话框中，选择 " **浏览** " 按钮，选择任何文档文件，选择 " **打开** " 按钮，然后选择 " **确定"** 按钮。
+4. 在 " **Upload 文档**" 对话框中，选择 "**浏览**" 按钮，选择任何文档文件，选择 "**打开**" 按钮，然后选择 "**确定"** 按钮。
 
      您可以在此对话框中更改文档的设置，但通过选择 " **保存** " 按钮将其保留为默认值。
 
@@ -445,8 +446,8 @@ ms.locfileid: "99847734"
 ## <a name="next-steps"></a>后续步骤
  可以从以下主题中了解有关如何创建工作流模板的详细信息：
 
-- 若要了解有关 SharePoint 工作流的详细信息，请参阅 [Windows SharePoint Services 中的工作流](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))。
+- 若要详细了解 SharePoint 工作流，请参阅[Windows SharePoint Services 中的工作流](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

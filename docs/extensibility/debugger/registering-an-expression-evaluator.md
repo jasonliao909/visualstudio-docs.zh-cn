@@ -1,6 +1,6 @@
 ---
-title: 注册表达式计算|Microsoft Docs
-description: 了解表达式计算程序如何将自身注册为类工厂，同时Windows COM 环境和Visual Studio。
+title: 注册表达式计算器 |Microsoft Docs
+description: 了解表达式计算器如何使用 Windows COM 环境和 Visual Studio，将自身注册为类工厂。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,27 +14,27 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: b61f14810834e8d019811f2385b1596d2afde911825d03d81bdf233630be56dd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f928c97961076eaa9d6062d3d812963b1522451b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117925"
 ---
-# <a name="register-an-expression-evaluator"></a>注册表达式计算程序
+# <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
 > 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 表达式计算 (企业版) 必须同时使用 COM 环境和 Windows 将自身注册为Visual Studio。 企业版设置为 DLL，以便注入调试引擎 (DE) 地址空间或 Visual Studio 地址空间，具体取决于实例化 企业版 的实体。
+ 表达式计算器 (企业版) 必须在 Windows COM 环境和 Visual Studio 中将自身注册为类工厂。 将企业版设置为 DLL，以便将其插入调试引擎 (DE) 地址空间或 Visual Studio 地址空间，具体取决于实例化企业版的实体。
 
-## <a name="managed-code-expression-evaluator"></a>托管代码表达式评估程序
- 托管代码企业版作为类库实现，该类库是一个 DLL，它向 COM 环境注册自身，通常通过调用 VSIP 程序启动 *，regpkg.exe。* 为 COM 环境编写注册表项的实际过程会自动处理。
+## <a name="managed-code-expression-evaluator"></a>托管代码表达式计算器
+ 托管代码企业版实现为类库，类库是一个 DLL，它将自身注册到 COM 环境（通常通过调用 VSIP 程序而启动）， *regpkg.exe*。 系统会自动处理编写 COM 环境的注册表项的实际过程。
 
- 主类的一个方法标记为 ，指示在向 COM 注册 DLL 时 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> 将调用方法。 此注册方法（通常称为 ）执行向 Visual Studio `RegisterClass` 注册 DLL 的任务。 使用 `UnregisterClass` (标记的相应 <xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute>) ，撤消 `RegisterClass` 卸载 DLL 时 的效果。
-对于以非托管代码编写的企业版注册表项相同;唯一的区别是，没有帮助程序函数（例如 `SetEEMetric` ）来执行工作。 下面是注册和注销过程的示例。
+ 主类的方法标记有 <xref:System.Runtime.InteropServices.ComRegisterFunctionAttribute> ，这表示当使用 COM 注册 DLL 时，将调用方法。 此注册方法（通常称为 `RegisterClass` ）执行将 DLL 注册到 Visual Studio 的任务。 `UnregisterClass`标记有) 的相应 (<xref:System.Runtime.InteropServices.ComUnregisterFunctionAttribute> `RegisterClass` 会撤消卸载 DLL 时的影响。
+对于以非托管代码编写的企业版，将执行相同的注册表项;唯一的区别在于，不存在任何帮助程序函数，例如 `SetEEMetric` 来完成工作。 下面是注册和注销过程的示例。
 
 ### <a name="example"></a>示例
- 以下函数演示托管代码如何企业版注册和注销自身Visual Studio。
+ 下面的函数演示托管代码企业版如何向 Visual Studio 注册和注销自身。
 
 ```csharp
 namespace EEMC
@@ -100,33 +100,33 @@ namespace EEMC
 }
 ```
 
-## <a name="unmanaged-code-expression-evaluator"></a>非托管代码表达式计算程序
- 该企业版 DLL 实现 函数，以向 COM 环境注册自身 `DllRegisterServer` 以及Visual Studio。
+## <a name="unmanaged-code-expression-evaluator"></a>非托管代码表达式计算器
+ 企业版 DLL 实现 `DllRegisterServer` 函数以便向 COM 环境和 Visual Studio 注册自身。
 
 > [!NOTE]
-> 可以在文件 *dllentry.cpp* 中查找 MyCEE 代码示例注册表代码，该文件位于 ENVSDK\MyCPkgs\MyCEE 下的 VSIP 安装中。
+> 你可以在文件 dllentry 中找到 MyCEE 代码示例注册表代码，该文件位于 EnVSDK\MyCPkgs\MyCEE. 中的 VSIP 安装下 *。*
 
 ### <a name="dll-server-process"></a>DLL 服务器进程
- 在注册企业版时，DLL 服务器：
+ 注册企业版时，DLL 服务器：
 
-1. 根据常规 COM 约定 `CLSID` 注册其类工厂。
+1. 按正常的 COM 约定注册其类工厂 `CLSID` 。
 
-2. 调用帮助程序函数 `SetEEMetric` 以注册Visual Studio企业版下表中所示的一些指标。 如下所示 `SetEEMetric` 指定的函数和指标是 *dbgmetric.lib 库的一* 部分。 有关详细信息 [，请参阅用于调试的 SDK](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 帮助程序。
+2. 调用 helper 函数 `SetEEMetric` 以便向注册 Visual Studio 下表中所示的企业版指标。 `SetEEMetric`下面指定的函数和度量值是 *dbgmetric* 库的一部分。 有关详细信息，请参阅 [SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md) 。
 
     |指标|说明|
     |------------|-----------------|
     |`metricCLSID`|`CLSID`企业版类工厂的|
-    |`metricName`|以可企业版字符串形式显示的名称|
-    |`metricLanguage`|用于评估企业版语言的名称|
-    |`metricEngine`|`GUID`调试引擎的 (DE) 可处理此企业版|
+    |`metricName`|作为可显示字符串的企业版名称|
+    |`metricLanguage`|用于计算企业版的语言名称|
+    |`metricEngine`|`GUID` (DE) 使用此企业版调试引擎|
 
     > [!NOTE]
-    > `metricLanguage``GUID`按名称标识语言，但选择该语言的 `guidLang` 是 `SetEEMetric` 的参数。 当编译器生成调试信息文件时，它应编写适当的 ，以便 DE 知道企业版 `guidLang` 版本。 DE 通常会请求此语言的符号提供程序 `GUID` ，该提供程序存储在调试信息文件中。
+    > `metricLanguage``GUID`按名称标识语言，但它是 `guidLang` 用于选择语言的的参数 `SetEEMetric` 。 当编译器生成调试信息文件时，它应写入适当的， `guidLang` 以使该方法知道要使用哪一个企业版。 DE 通常会要求符号提供程序提供此语言，该提供程序 `GUID` 存储在调试信息文件中。
 
-3. 通过创建Visual Studio X.Y 下的HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio注册到 Visual Studio，其中 \\ *X.Y* 是要注册的 Visual Studio版本。 
+3. 通过在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y* 下创建键来注册 Visual Studio，其中， *x* 是要向其注册的 Visual Studio 版本。
 
 ### <a name="example"></a>示例
- 以下函数演示 C++ 中的非托管 (如何使用) 企业版 注册和注销自身Visual Studio。
+ 下面的函数演示如何使用非托管代码 (c + +) 企业版向 Visual Studio 注册和注销自身。
 
 ```cpp
 /*---------------------------------------------------------
@@ -212,6 +212,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>另请参阅
-- [编写 CLR 表达式计算程序](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
-- [用于调试的 SDK 帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
+## <a name="see-also"></a>请参阅
+- [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
+- [SDK 调试帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

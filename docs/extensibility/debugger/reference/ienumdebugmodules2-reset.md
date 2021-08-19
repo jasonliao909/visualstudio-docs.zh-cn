@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9e3b6e04bf6f7f7582e2162164218ab01b04bbaa10255c8c5ab36f3f17587d27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 40b014842989dba0c92760821cb3b371ffc019a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121261471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118198"
 ---
 # <a name="ienumdebugmodules2reset"></a>IEnumDebugModules2::Reset
 将枚举重置为第一个元素。
@@ -45,5 +45,5 @@ int Reset();
 ## <a name="remarks"></a>备注
  调用此方法后，对 [Next](../../../extensibility/debugger/reference/ienumdebugmodules2-next.md) 方法的下一次调用将返回 枚举的第一个元素。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugModules2](../../../extensibility/debugger/reference/ienumdebugmodules2.md)
