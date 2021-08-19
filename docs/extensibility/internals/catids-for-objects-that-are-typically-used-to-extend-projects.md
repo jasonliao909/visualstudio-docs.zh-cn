@@ -1,6 +1,6 @@
 ---
 title: 通常用于扩展项目的 对象的 CATID
-description: 了解对象的 CATID，这些对象用于扩展项目、Visual C# 和 Visual Basic 项目的 Project 和 ProjectItem Visual C++对象。
+description: 了解用于为 Visual Basic、Visual C# 和 Visual C++ 项目扩展 Project 和 ProjectItem 自动化对象的对象的 CATID。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,15 @@ ms.assetid: 0c7fdb66-ed96-4b36-89f6-021bca573572
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: abc0df47c243cff4bf80ab18b15f1cbaa9526cdd
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 04253f9bfe45cd893ecbf1401fc9d7e12391a4c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112898666"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159199"
 ---
 # <a name="catids-for-objects-that-are-typically-used-to-extend-projects"></a>通常用于扩展项目的 对象的 CATID
 下表列出了用于为 、 和 项目扩展和 `Project` `ProjectItem` 自动化对象的 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] CATID。 这些 CATID 在 *VSLangProj.olb 中定义*。
@@ -31,7 +32,7 @@ ms.locfileid: "112898666"
 |<xref:VSLangProj.PrjCATID.prjCATIDProject>|{610D4614-D0D5-11D2-8599-006097C68E81}|
 |<xref:VSLangProj.PrjCATID.prjCATIDProjectItem>|{610D4615-D0D5-11D2-8599-006097C68E81}|
 
-## <a name="visual-basic-catids"></a>Visual Basic CATID
+## <a name="visual-basic-catids"></a>Visual BasicCATID
  下表列出了用于扩展浏览对象的 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] CATD。 它们全部在 *VSLangProj.olb 中定义*。
 
 |名称|GUID|
@@ -88,13 +89,13 @@ const LPOLESTR CVCActiveXReferenceNode::s_wszCATID = L"{9E8182D3-C60A-44f4-A74B-
 const LPOLESTR CVCReferences::s_wszCATID = L"{FE8299CA-19B6-4f20-ABEA-E1FD9A33B683}";
 ```
 
- 下表显示了 和 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 项目类型的 GUID。
+ 下表显示了 和 项目 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 类型的 GUID。
 
 | 项目类型 | GUID |
 | - | - |
 | [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] | {FAE04EC0-301F-11D3-BF4B-00C04F79EFBC} |
 | [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] | {F184B08F-C81C-45F6-A57F-5ABD9991F28F} |
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)

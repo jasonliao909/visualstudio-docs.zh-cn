@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 95baabddf077b930bc1e2bfce3c24cbb8b209bb6d0695af13f451bba5aa2245b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 15b47ac8286edda99ed6115f3c6eca1aa36edcbe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121441626"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060266"
 ---
 # <a name="browse-sharepoint-connections-by-using-server-explorer"></a>使用服务器资源管理器浏览 SharePoint 连接
   你现在可以在“服务器资源管理器”中浏览本地 SharePoint 连接。 通过使用这种方法，您可以在系统上浏览 SharePoint 网站的组件。 SharePoint 网站组件（例如列表定义和内容类型）显示在“服务器资源管理器”树状视图中一个名为“SharePoint 连接”的节点中 。 若要显示“服务器资源管理器”，请在菜单栏上选择“视图” > “服务器资源管理器”  。 除了显示 SharePoint 网站组件以外，通过使用快捷菜单命令，你还可以移除项、查看它们的属性或刷新树视图。
