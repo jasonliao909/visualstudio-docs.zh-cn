@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: cb444f1f3378f62061e4116967e4fc0f525860e92e44234e571c8fb3f2e51275
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 296c1e960d33a8d5e74a98d52a21810c8256b2ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411114"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157548"
 ---
 # <a name="customizing-tools-and-the-toolbox"></a>自定义工具和工具箱
 
@@ -157,12 +157,12 @@ using Microsoft.VisualStudio.Modeling.Diagrams;
  连接生成器包含一个或多个链接连接指令，可指定域关系以及源和目标元素。 例如，在"任务Flow模板中，可以在 **DSL** 资源管理器 中查看 **CommentReferencesSubjectsBuilder。** 此连接生成器包含一个名为 **CommentReferencesSubjects** 的链接连接指令，该指令映射到域关系 **CommentReferencesSubjects**。 此链接连接指令包含一个指向 `Comment` 域类的源角色指令，和一个指向 `FlowElement` 域类的目标角色指令。
 
 ### <a name="using-connection-builders-to-restrict-source-and-target-roles"></a>使用连接生成器来限制源和目标角色
- 可使用连接生成器限制使某些类显示在给定域关系的源角色或目标角色中。 例如，你可能有一个与另一个域类具有域关系的基域类，但是你可能不希望该基类的所有派生类在该关系中具有相同角色。 在 Task Flow 解决方案中，有四个直接从抽象域类 **FlowElement** 继承的具体域类 (**StartPoint、EndPoint、MergeBranch** 和 **Synchronization**) ，以及间接继承自它的两个具体域类 (**Task** 和 **ObjectInState**) 。   还有一个 **Flow** 关系，它在其源角色和目标角色中采用 **FlowElement** 域类。 但是 **，EndPoint** 域类的实例不应是 **Flow** 关系的实例的源，也不应将 **StartPoint** 类的实例作为 Flow **关系实例的目标**。 **FlowBuilder** 连接生成器具有名为 **Flow** 的链接连接指令，该指令指定哪些域类可以扮演源角色 (**Task、MergeBranch、StartPoint** 和 **Synchronization**) ，以及哪些域类可以扮演目标角色 (**MergeBranch、Endpoint** 和 **Synchronization**) 。  
+ 可使用连接生成器限制使某些类显示在给定域关系的源角色或目标角色中。 例如，你可能有一个与另一个域类具有域关系的基域类，但是你可能不希望该基类的所有派生类在该关系中具有相同角色。 在 Task Flow 解决方案中，有四个直接从抽象域类 **FlowElement** 继承的具体域类 (**StartPoint、EndPoint、MergeBranch** 和 **Synchronization**) ，以及两个间接继承自抽象域类 (Task 和 **ObjectInState**) 的具体域类。   还有一个 **Flow** 关系，它在其源角色和目标角色中采用 **FlowElement** 域类。 但是 **，EndPoint** 域类的实例不应是 **Flow** 关系的实例的源，也不应将 **StartPoint** 类的实例作为 Flow **关系实例的目标**。 **FlowBuilder** 连接生成器具有名为 **Flow** 的链接连接指令，该指令指定哪些域类可以扮演源角色 (**Task、MergeBranch、StartPoint** 和 **Synchronization**) ，以及哪些域类可以扮演目标角色 (**MergeBranch、Endpoint** 和 **Synchronization**) 。  
 
 ### <a name="connection-builders-with-multiple-link-connect-directives"></a>具有多个链接连接指令的连接生成器
  可向连接生成器添加多个链接连接指令。 这可以帮助你向用户隐藏域模型的一些复杂性，并阻止 **工具箱** 过于混乱。 可将多种不同的域关系的链接连接指令添加到单个连接生成器。 但是，应在域关系执行大致相同的函数时合并域关系。
 
- 在 Task Flow 解决方案中，Flow连接工具用于绘制 Flow **和 ObjectFlow** 域关系的实例。 除了 **前面所述的链接连接Flow，FlowBuilder** 连接生成器还具有两个名为 **ObjectFlow 的链接连接指令**。 这些指令指定 **ObjectFlow** 关系的实例可以在 ObjectInState 域类的实例之间绘制，也可以从 **ObjectInState** 的实例绘制到Task 的实例，但不能在 Task 的两个实例之间绘制，也可以从 Task 的实例绘制到 **ObjectInState** 的实例。 但是，可以在任务 **Flow** 实例之间绘制一个关系 **的实例**。 如果编译并运行 Task Flow 解决方案，则可以看到将 **Flow** 从 **ObjectInState** 的实例绘制到任务实例会创建 **ObjectFlow** 的实例，但在 Task 的两个实例之间绘制 **Flow** 会创建 **Flow 的实例**。
+ 在 Task Flow 解决方案中，Flow连接工具用于绘制 Flow **域** 关系的实例。  除了 **前面所述的链接连接Flow，FlowBuilder** 连接生成器还具有两个名为 **ObjectFlow 的链接连接指令**。 这些指令指定 **ObjectFlow** 关系的实例可以在 ObjectInState 域类的实例之间绘制，也可以从 **ObjectInState** 的实例绘制到Task 的实例，但不能在 Task 的两个实例之间绘制，也可以从 Task 的实例绘制到 **ObjectInState** 的实例。 但是，可以在任务 **Flow** 实例之间绘制一个关系 **的实例**。 如果编译并运行 Task Flow 解决方案，则可以看到将 **Flow** 从 **ObjectInState** 的实例绘制到任务实例会创建 **ObjectFlow** 的实例，但在 Task 的两个实例之间绘制 **Flow** 会创建 **Flow 的实例**。
 
 ### <a name="custom-code-for-connection-builders"></a>为连接生成器自定义代码
  在用户界面中有四个用于定义不同类型的连接生成器的自定义的复选框：

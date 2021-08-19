@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 508672c8397df47862ed53a7546c7f8dd063d2e4670b1816fec0ef94d8dc5a74
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6cd77725906a2780f9345bb4c64131ad943e8ceb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433094"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118133"
 ---
 # <a name="launch_flags"></a>LAUNCH_FLAGS
 指定调试启动标志。
@@ -50,28 +50,28 @@ public enum enum_LAUNCH_FLAGS {
 
 ## <a name="fields"></a>字段
 `LAUNCH_DEBUG`\
-启动调试进程。
+启动用于调试的进程。
 
 `LAUNCH_NODEBUG`\
-在不调试的情况下启动进程。
+启动进程而不进行调试。
 
 `LAUNCH_ENABLE_ENC`\
-不推荐使用，请不要使用。
+已弃用，请勿使用。
 
 `LAUNCH_MERGE_ENV`\
-启动进程，并将环境与启动主机合并。
+启动进程，将环境与启动主机合并。
 
 ## <a name="remarks"></a>备注
 这些值作为参数传递给 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 方法。
 
-这些标志可以与按位组合 `OR` 。
+这些标志可以与位 合并 `OR` 。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -1,6 +1,6 @@
 ---
 title: 配置 ClickOnce 信任提示行为 |Microsoft Docs
-description: 了解如何配置 ClickOnce 信任提示，以控制是否为最终用户提供安装 ClickOnce 应用程序的选项。
+description: 了解如何配置 ClickOnce 信任提示，以控制最终用户是否提供安装 ClickOnce 应用程序的选项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,24 +18,25 @@ ms.assetid: cc04fa75-012b-47c9-9347-f4216be23cf2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 8cb23eeee53990113d779e241adb8dcf1ab0cf16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13c408cb4a95daba3676275ffceb032d3a772fbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99890300"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160759"
 ---
 # <a name="how-to-configure-the-clickonce-trust-prompt-behavior"></a>如何：配置 ClickOnce 信任提示行为
-您可以配置 ClickOnce 信任提示，以控制最终用户是否提供安装 ClickOnce 应用程序的选项，例如 Windows 窗体应用程序、Windows Presentation Foundation 应用程序、控制台应用程序、WPF 浏览器应用程序和 Office 解决方案。 可以通过在每个最终用户的计算机上设置注册表项来配置信任提示。
+你可以配置 ClickOnce 信任提示，以控制最终用户是否提供安装 ClickOnce 应用程序的选项，如 Windows 窗体应用程序、Windows Presentation Foundation 应用程序、控制台应用程序、WPF 浏览器应用程序和 Office 解决方案。 可以通过在每个最终用户的计算机上设置注册表项来配置信任提示。
 
  下表显示了可应用于每个 (Internet、UntrustedSites、MyComputer、LocalIntranet 和 TrustedSites) 的五个区域的配置选项。
 
 |选项|注册表设置值|说明|
 |------------|----------------------------|-----------------|
-|启用信任提示。|`Enabled`|显示 ClickOnce 信任提示，以便最终用户能够向 ClickOnce 应用程序授予信任。|
-|限制信任提示。|`AuthenticodeRequired`|仅当 ClickOnce 应用程序使用标识发布者的证书进行签名时，才会显示 ClickOnce 信任提示。|
+|启用信任提示。|`Enabled`|显示 ClickOnce 信任提示，以便最终用户能够向 ClickOnce 的应用程序授予信任。|
+|限制信任提示。|`AuthenticodeRequired`|仅当使用标识发布者的证书对 ClickOnce 应用程序进行签名时才会显示 ClickOnce 信任提示。|
 |禁用信任提示。|`Disabled`|对于未使用显式信任的证书进行签名的任何 ClickOnce 应用程序，不会显示 ClickOnce 信任提示。|
 
  下表显示了每个区域的默认行为。 "应用程序" 列是指 Windows 窗体应用程序、Windows Presentation Foundation 应用程序、WPF 浏览器应用程序和控制台应用程序。
@@ -48,10 +49,10 @@ ms.locfileid: "99890300"
 |`Internet`|`Enabled`|`AuthenticodeRequired`|
 |`UntrustedSites`|`Disabled`|`Disabled`|
 
- 可以通过启用、限制或禁用 ClickOnce 信任提示来重写这些设置。
+ 可以通过启用、限制或禁用 ClickOnce 信任提示来替代这些设置。
 
 ## <a name="enable-the-clickonce-trust-prompt"></a>启用 ClickOnce 信任提示
- 当你希望向最终用户提供安装和运行来自该区域的任何 ClickOnce 应用程序的选项时，为该区域启用信任提示。
+ 如果希望向最终用户提供安装和运行来自该区域的任何 ClickOnce 应用程序的选项，请启用区域的信任提示。
 
 #### <a name="to-enable-the-clickonce-trust-prompt-by-using-the-registry-editor"></a>使用注册表编辑器启用 ClickOnce 信任提示
 
@@ -83,7 +84,7 @@ ms.locfileid: "99890300"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs 文件进行编辑并添加以下代码。
+2. 打开 *program* 或 *program .cs* 文件以进行编辑，并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -140,7 +141,7 @@ ms.locfileid: "99890300"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs 文件进行编辑并添加以下代码。
+2. 打开 *program* 或 *program .cs* 文件以进行编辑，并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -197,7 +198,7 @@ ms.locfileid: "99890300"
 
 1. 在 Visual Studio 中创建 Visual Basic 或 Visual c # 控制台应用程序。
 
-2. 打开 Program.cs 文件进行编辑并添加以下代码。
+2. 打开 *program* 或 *program .cs* 文件以进行编辑，并添加以下代码。
 
     ```vb
     Dim key As Microsoft.Win32.RegistryKey
@@ -231,7 +232,7 @@ ms.locfileid: "99890300"
 - [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)
 - [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
 - [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [如何：为 ClickOnce 应用程序设置自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [如何：使用受限权限对 ClickOnce 应用程序进行调试](securing-clickonce-applications.md)
-- [如何：为 ClickOnce 应用程序向客户端计算机添加受信任的发布者](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
+- [如何将受信任的发布者添加到 ClickOnce 应用程序的客户端计算机](../deployment/how-to-add-a-trusted-publisher-to-a-client-computer-for-clickonce-applications.md)
 - [如何：对应用程序和部署清单进行重新签名](../deployment/how-to-re-sign-application-and-deployment-manifests.md)

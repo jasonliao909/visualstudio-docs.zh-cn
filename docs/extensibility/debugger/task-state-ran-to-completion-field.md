@@ -9,14 +9,15 @@ ms.assetid: 0f4830af-fe0c-4141-b768-817f4e426b8c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4d168fe7e878471af4f70f2e58aab9748060c99e
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: bb8f7c72da6e48dcd8b24a6b871e5138764494a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117886"
 ---
 # <a name="task_state_ran_to_completion-field"></a>TASK_STATE_RAN_TO_COMPLETION 字段
 已成功完成执行的任务。
@@ -36,5 +37,5 @@ ms.locfileid: "112902808"
 ## <a name="remarks"></a>备注
  如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

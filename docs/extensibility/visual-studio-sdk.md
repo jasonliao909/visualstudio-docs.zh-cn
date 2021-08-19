@@ -1,6 +1,6 @@
 ---
-title: Visual Studio SDK |Microsoft Docs
-description: Visual Studio SDK 可帮助你扩展功能或向 Visual Studio 添加新功能。 了解可用于扩展 Visual Studio 的一些方式。
+title: Visual StudioSDK |Microsoft Docs
+description: Visual Studio SDK 有助于扩展功能或向 Visual Studio 添加新功能。 了解可用于扩展 Visual Studio 的一些方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,17 +14,18 @@ ms.assetid: 1f7c348a-114c-4243-b392-3531e9c9c6fd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 91411ec183e6c51abd825af1080c4330ca46fc90
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f61ad24a7a94827720de388ed957f1c33dc7bc8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105062520"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078604"
 ---
 # <a name="visual-studio-sdk"></a>Visual Studio SDK
-Visual Studio SDK 可帮助你扩展 Visual Studio 的功能，或将新功能集成到 Visual Studio 中。 可以将扩展分发给其他用户以及 Visual Studio Marketplace。 以下是一些扩展 Visual Studio 的方式：
+Visual Studio SDK 可帮助你扩展 Visual Studio 功能或将新功能集成到 Visual Studio 中。 可以将扩展分发给其他用户以及 Visual Studio Marketplace。 以下是一些扩展 Visual Studio 的方式：
 
 - 向 IDE 添加命令、按钮、菜单和其他 UI 元素
 
@@ -38,44 +39,44 @@ Visual Studio SDK 可帮助你扩展 Visual Studio 的功能，或将新功能�
 
 - 添加自定义项目类型
 
-- 通过 Visual Studio Marketplace 与数百万个开发人员联系
+- 通过 Visual Studio Marketplace 向数百万开发人员提供
 
-  如果你之前从未编写过 Visual Studio 扩展，则应在 [开始开发 Visual studio 扩展](../extensibility/starting-to-develop-visual-studio-extensions.md)时找到有关这些功能的详细信息。
+  如果之前从未编写过 Visual Studio 扩展，则应该了解有关这些功能的详细信息，并[开始开发 Visual Studio 扩展](../extensibility/starting-to-develop-visual-studio-extensions.md)。
 
 ## <a name="install-the-visual-studio-sdk"></a>安装 Visual Studio SDK
- Visual Studio SDK 是 Visual Studio 安装程序中的一项可选功能。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+ Visual Studio SDK 是 Visual Studio 安装程序中的一项可选功能。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="whats-new-in-the-visual-studio-sdk"></a>Visual Studio SDK 的新增功能
- Visual Studio SDK 具有一些新功能，例如同步加载扩展警告和 VSIX v3 格式以及重大更改，这可能要求你更新扩展。 有关详细信息，请参阅 [Visual studio 2019 sdk 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md) 和 [VISUAL studio 2017 sdk 的新增](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)功能。
+ Visual Studio SDK 具有一些新功能，例如同步加载扩展警告和 VSIX v3 格式以及重大更改，这可能要求你更新扩展。 有关详细信息，请参阅[Visual Studio 2019 sdk 的新增功能](../extensibility/whats-new-visual-studio-2019-sdk.md)和[Visual Studio 2017 sdk 的新增功能](../extensibility/what-s-new-in-the-visual-studio-2017-sdk.md)。
 
 ## <a name="visual-studio-user-experience-guidelines"></a>Visual Studio 用户体验指南
- 获取有关在 [Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中设计扩展 UI 的极佳技巧。
+ 获取有关在[Visual Studio 用户体验指南](../extensibility/ux-guidelines/visual-studio-user-experience-guidelines.md)中设计扩展 UI 的极佳技巧。
 
  你还可以了解如何在高 DPI 设备上提供扩展，并显示 [地址 DPI 问题](../extensibility/addressing-dpi-issues2.md) 一文。
 
  利用 [映像服务和目录](../extensibility/image-service-and-catalog.md) 获得极佳的图像管理，并提供高 DPI 和主题的支持。
 
-## <a name="find-and-install-existing-visual-studio-extensions"></a>查找并安装现有的 Visual Studio 扩展
- 可以在 "**工具**" 菜单上的 "**扩展和更新**" 对话框中找到 Visual Studio 扩展。 有关详细信息，请参阅 [查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)。 你还可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到扩展
+## <a name="find-and-install-existing-visual-studio-extensions"></a>查找并安装现有 Visual Studio 扩展
+ 可以在 "**工具**" 菜单上的 "**扩展和更新**" 对话框中找到 Visual Studio 扩展。 有关详细信息，请参阅[查找和使用 Visual Studio 扩展](../ide/finding-and-using-visual-studio-extensions.md)。 你还可以在[Visual Studio Marketplace](https://marketplace.visualstudio.com/)中找到扩展
 
-## <a name="visual-studio-sdk-reference"></a>Visual Studio SDK 参考
- 可在 [Visual STUDIO Sdk 参考](../extensibility/visual-studio-sdk-reference.md)中找到 VISUAL STUDIO sdk API 参考。
+## <a name="visual-studio-sdk-reference"></a>Visual StudioSDK 参考
+ 可以在[Visual Studio sdk 参考](../extensibility/visual-studio-sdk-reference.md)中找到 Visual Studio sdk API 引用。
 
-## <a name="visual-studio-sdk-samples"></a>Visual Studio SDK 示例
- 可在 GitHub 上的 [Visual Studio 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)中找到 VS SDK 扩展的开源示例。 此 GitHub 存储库包含说明 Visual Studio 中各种可扩展功能的示例。
+## <a name="visual-studio-sdk-samples"></a>Visual StudioSDK 示例
+ 你可以在[Visual Studio 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)中找到 GitHub 上 VS SDK 扩展的开源示例。 此 GitHub 存储库包含演示 Visual Studio 中的各种可扩展功能的示例。
 
 ## <a name="other-visual-studio-sdk-resources"></a>其他 Visual Studio SDK 资源
- 如果对 VSSDK 有疑问或想要分享开发扩展的经验，可以使用 [Visual Studio 扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx) 或 [ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs)。
+ 如果对 VSSDK 有疑问或想要分享开发扩展的经验，可以使用[Visual Studio 扩展性论坛](https://social.msdn.microsoft.com/Forums/vstudio/home?forum=vsx)或[ExtendVS Gitter Chatroom](https://gitter.im/Microsoft/extendvs)。
 
  可以在 [VSX Arcana 博客](/archive/blogs/vsx/) 和 Microsoft mvp 编写的大量博客中找到详细信息：
 
-- [最喜爱的 Visual Studio 扩展](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
+- [收藏夹 Visual Studio 扩展](https://scottdorman.blog/2014/10/05/favorite-visual-studio-extensions/)
 
 - [Visual Studio 扩展性](http://www.visualstudioextensibility.com/overview/vs/)
 
 - [扩展 Visual Studio](https://blog.slaks.net/2013-10-18/extending-visual-studio-part-1-getting-started/)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)
 - [如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)
@@ -92,8 +93,8 @@ Visual Studio SDK 可帮助你扩展 Visual Studio 的功能，或将新功能�
 - [扩展 Visual Studio 的其他部分](../extensibility/extending-other-parts-of-visual-studio.md)
 - [使用和提供服务](../extensibility/using-and-providing-services.md)
 - [管理 VSPackage](../extensibility/managing-vspackages.md)
-- [Visual Studio 独立 shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
-- [提供 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
+- [Visual Studio 隔离 shell](https://visualstudio.microsoft.com/vs/older-downloads/isolated-shell/)
+- [装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
 - [深入探究 Visual Studio SDK](../extensibility/internals/inside-the-visual-studio-sdk.md)
 - [支持 Visual Studio SDK](../extensibility/support-for-the-visual-studio-sdk.md)
-- [Visual Studio SDK 参考](../extensibility/visual-studio-sdk-reference.md)
+- [Visual StudioSDK 参考](../extensibility/visual-studio-sdk-reference.md)

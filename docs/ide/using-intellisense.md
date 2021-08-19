@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e6b984a9f885f137cf387837a242cc1207e45ae
-ms.sourcegitcommit: 52b093e000334f53d87c6165d1418347e4f45dec
+ms.openlocfilehash: a87ca5252e51262cdc70835e910ca67f6fedcb10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/09/2021
-ms.locfileid: "107221713"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150867"
 ---
 # <a name="intellisense-in-visual-studio"></a>Visual Studio 中的 IntelliSense
 

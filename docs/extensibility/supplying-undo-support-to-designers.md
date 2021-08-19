@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c8801dd0e9ca740a64a94a7f8ea5f251ab78950cbf7f0829ebd86bd6607da29f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e53cf66118bbc98526c3daa029b07fba0df2d3ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413916"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144400"
 ---
 # <a name="supply-undo-support-to-designers"></a>为设计器提供撤消支持
 
@@ -102,7 +102,7 @@ Visual Studio 中实现的大多数设计器都具有环境自动提供的 "撤�
 
 - 设计器选择使用由的实现提供的标准撤消单元或从派生的 Visual Studio 特定的实现来显式创建撤消单元， <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine.UndoUnit> <xref:System.ComponentModel.Design.UndoEngine.UndoUnit> 同时还提供和的实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleUndoUnit> <xref:Microsoft.VisualStudio.OLE.Interop.IOleParentUndoUnit> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ComponentModel.Design.UndoEngine>
 - <xref:Microsoft.VisualStudio.Shell.Design.OleUndoEngine>

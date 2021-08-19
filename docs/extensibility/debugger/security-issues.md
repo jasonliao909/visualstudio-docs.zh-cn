@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: eaf0df177b59d14f07a1b71499841ffb447a45ab3df022ef03e5724d85e49310
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 63d8c78767cf6a32d541a37370a5b2742cfcc087
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377010"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057299"
 ---
 # <a name="security-issues"></a>安全问题
 若要使用 Visual Studio 调试程序，只需使用开发人员运行程序所需的权限。 这包括在大多数情况下的远程调试。 某些情况下，涉及其他服务（如 Internet 信息服务）可能需要更高级别的权限。

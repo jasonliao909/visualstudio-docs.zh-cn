@@ -7,17 +7,18 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0bd75a40f52a6148a6c50b212183bb8dc7a52d56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d42cbd379550d8abb739aafacca5698f164048f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852240"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151504"
 ---
 # <a name="invert-conditional-expressions-and-conditional-andor-operators"></a>反转条件表达式和条件 AND/OR 运算符
 

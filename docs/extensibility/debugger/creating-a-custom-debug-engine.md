@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 54a80144102426d264351da4db79f0f4ddb812427b1327b0a9e007b0643f8bfe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dd04ac2183b726d777b180e1be127efec2284135
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417881"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111757"
 ---
 # <a name="create-a-custom-debug-engine"></a>创建自定义调试引擎
  (DE) 的调试引擎是允许调试特定运行时体系结构的组件。 每个运行时环境通常只有一个 DE 实现。
