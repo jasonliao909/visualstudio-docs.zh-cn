@@ -1,6 +1,6 @@
 ---
-description: 为此属性创建一个唯一的 ID，以确保它在所有其他属性中是唯一的。
-title: IDebugProperty3：： CreateObjectID |Microsoft Docs
+description: 为此属性创建唯一 ID，以确保它在所有其他属性中是唯一的。
+title: IDebugProperty3：：CreateObjectID |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: f2fa81e7-822f-456e-8729-a96a18eea771
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: af90f360e59e04cc5d55017c5d986e6682bab2ed
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 8072bc2d7689677b27ccc3ef63f6d9176927603c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063975"
 ---
 # <a name="idebugproperty3createobjectid"></a>IDebugProperty3::CreateObjectID
-为此属性创建一个唯一的 ID，以确保它在所有其他属性中是唯一的。
+为此属性创建唯一 ID，以确保它在所有其他属性中是唯一的。
 
 ## <a name="syntax"></a>语法
 
@@ -39,16 +40,16 @@ int CreateObjectID();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 当会话调试管理器需要确保在所有其他属性中唯一标识该属性时，将调用此方法。 调试引擎 (DE) 支持此方法，除非它处理的属性已唯一标识。 如果 DE 不支持此方法，则返回 `E_NOTIMPL` 。
+ 当会话调试管理器希望确保此属性在所有其他属性之间唯一标识时，将调用此方法。 DE () 引擎支持此方法，除非已唯一标识了它处理的属性。 如果 DE 不支持此方法，则返回 `E_NOTIMPL` 。
 
- 在 `CreateObjectID` 调用 [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md) 方法时，将销毁用创建的任何唯一 ID; 这还会发出信号，以唯一标识此属性。
+ 调用 DestroyObjectID 方法时，将销毁使用 创建的任何唯一 ID;这也表明对唯一标识此属性 `CreateObjectID` 的需要已结束。 [](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)
 
 > [!NOTE]
-> 没有方法可以检索此唯一 ID，因此，在调用方法时，DE 可以为唯一 Id 执行任何所需的操作 `CreateObjectID` 。
+> 没有检索此唯一 ID 的方法，因此 DE 可以在调用方法时对唯一 ID `CreateObjectID` 执行所需的任何操作。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty3](../../../extensibility/debugger/reference/idebugproperty3.md)
 - [DestroyObjectID](../../../extensibility/debugger/reference/idebugproperty3-destroyobjectid.md)

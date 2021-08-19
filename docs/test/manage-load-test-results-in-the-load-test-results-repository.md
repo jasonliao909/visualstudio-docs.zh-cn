@@ -13,12 +13,13 @@ ms.assetid: 1cd63c4b-4f74-4133-b675-5e8fbeab25f3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 5245ccdb9130d3fac9639e7befc63ee2a5ebf70a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 407e265424863d7018fc6b3e12fc23bddd0a9812
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887609"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139902"
 ---
 # <a name="manage-load-test-results-in-the-load-test-results-repository"></a>管理“负载测试结果存储库”中的负载测试结果
 

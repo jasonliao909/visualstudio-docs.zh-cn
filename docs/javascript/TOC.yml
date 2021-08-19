@@ -30,6 +30,8 @@
       href: tutorial-asp-net-core-with-react.md
     - name: 使用 Angular 创建 ASP.NET Core 应用
       href: tutorial-asp-net-core-with-angular.md
+    - name: 使用 Vue 创建 ASP.NET Core 应用
+      href: tutorial-asp-net-core-with-vue.md
     - name: 使用 TypeScript 创建 ASP.NET Core 应用
       href: tutorial-aspnet-with-typescript.md
     - name: 将 Node.js 应用发布到 Linux 应用服务

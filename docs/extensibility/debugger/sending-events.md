@@ -10,14 +10,15 @@ ms.assetid: 064231e7-59b5-4437-8240-a23c0a7ec2a9
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6e9af2618150df522a459e47f312c1dc1e6a220c
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 1f993639e8c79760d24502f2c58afc7c9ab8cdb0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137636"
 ---
 # <a name="send-events"></a>发送事件
 调试器和调试引擎之间通信的机制 (DE) 是基于 DCOM 的事件模型。 事件作为 COM 对象发送，并且每个事件都有指定以下各项的参数：
@@ -32,7 +33,7 @@ ms.locfileid: "112902249"
 
   所有调试事件都是使用 [IDebugEventCallback2：： Event](../../extensibility/debugger/reference/idebugeventcallback2-event.md)方法发送的。
 
-## <a name="in-this-section"></a>在本节中
+## <a name="in-this-section"></a>本节内容
  [事件源](../../extensibility/debugger/event-sources-visual-studio-sdk.md) 说明两个事件源：调试引擎 (DE) 和会话调试管理器 (SDM) 。
 
  [支持的事件类型](../../extensibility/debugger/supported-event-types.md) 讨论当前支持的事件类型：异步和同步。

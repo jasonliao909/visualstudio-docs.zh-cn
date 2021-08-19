@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 123fa7a3b9a9cbc65ed458ab5b412268f00dd15001148db26915c4ddf882845a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 391ff86b47b766b01066913b492d4f963361d49c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121267047"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155169"
 ---
 # <a name="initialize-correlation-dialog-box"></a>“初始化相关”对话框
 
@@ -35,6 +35,6 @@ ms.locfileid: "121267047"
 
 单击 " **InitializeCorrelation** " 活动设计器上的 "**查看**"，或 <xref:System.ServiceModel.Activities.InitializeCorrelation> 在工作流设计器中选择一个活动。 然后，在属性网格中单击属性旁的省略号按钮 <xref:System.ServiceModel.Activities.InitializeCorrelation.CorrelationData%2A> 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 550c8c3f7a436fa2321d42ced1744650d4de679f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56dee60e63ce2f6d3d298c3c70e57f59910a16ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150217"
 ---
 # <a name="how-to-set-permissions"></a>如何：设置权限
 

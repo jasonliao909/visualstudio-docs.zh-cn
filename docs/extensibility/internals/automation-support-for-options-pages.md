@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7f8157f94121799d9b75874f4a5ee9a4724162247c9ff8dea3bdf52ff87e210d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 789239eb2d11ed2abaec3d031dd7bce0da2cbfce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159264"
 ---
 # <a name="automation-support-for-options-pages"></a>"选项" 页的自动化支持
 Vspackage 可以) 中的 "**工具**" 菜单 ("工具"**选项** 页提供自定义 **选项** 对话框 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，并使它们可用于自动化模型。
@@ -39,5 +39,5 @@ Vspackage 可以) 中的 "**工具**" 菜单 ("工具"**选项** 页提供自定
 
    有关实现自定义 **工具选项** 页的示例，请参阅 [VSSDK 示例](https://github.com/Microsoft/VSSDK-Extensibility-Samples)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [公开项目对象](../../extensibility/internals/exposing-project-objects.md)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 20fe0885186fefd2514be40e04cb27f3d92220c579f02f5679b48cabefde5c59
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bd98cd2d27c7693b5c5fb991125355ff92e60b82
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415398"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125629"
 ---
 # <a name="ienumdebugfields"></a>IEnumDebugFields
 此接口表示实现 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 接口的对象的集合。

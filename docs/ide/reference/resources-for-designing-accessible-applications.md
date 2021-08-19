@@ -3,8 +3,6 @@ title: 用于设计易于访问的应用程序的资源
 description: 了解如何创建易于访问的应用程序，以便让残障人士更轻松地使用它们。
 ms.date: 08/27/2019
 ms.topic: conceptual
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - accessibility, Windows applications
 - Windows applications, accessibility
@@ -14,14 +12,15 @@ ms.assetid: 426bf023-bb34-43c4-9edb-c307191c8170
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f6fb030f1f8377ac6e2f7a458f68d6ababf9a6b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 720bed7bdf73fbcdbb59b7b19ff9c9be7a5fbc1d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957941"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151049"
 ---
 # <a name="resources-for-designing-accessible-applications"></a>用于设计易于访问的应用程序的资源
 
@@ -40,11 +39,11 @@ ms.locfileid: "99957941"
 
 ## <a name="windows-applications"></a>Windows 应用程序
 
-* **[演练：创建可访问的基于 Windows 的应用程序](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)** ：本文提供用于在示例 Windows 应用程序中包含针对 Certified for Windows 徽标的五个辅助功能需求的分步说明。
+* **[演练：创建可访问的基于 Windows 的应用程序](/dotnet/framework/winforms/advanced/walkthrough-creating-an-accessible-windows-based-application)**：本文提供用于在示例 Windows 应用程序中包含针对 Certified for Windows 徽标的五个辅助功能需求的分步说明。
 
 * **键盘用户界面设计的准则** 此技术文章介绍如何设计用户可以从键盘导航的 Windows 应用程序。 有关详细信息，请参阅[键盘用户界面设计的准则](/previous-versions/windows/desktop/dnacc/guidelines-for-keyboard-user-interface-design)。
 
-*  控制台辅助功能：此技术文章介绍用于公开 Windows XP 中面向辅助工具的控制台的 API 和事件。 有关详细信息，请参阅[控制台辅助功能](/previous-versions/windows/desktop/dnacc/console-accessibility)。
+* 控制台辅助功能：此技术文章介绍用于公开 Windows XP 中面向辅助工具的控制台的 API 和事件。 有关详细信息，请参阅[控制台辅助功能](/previous-versions/windows/desktop/dnacc/console-accessibility)。
 
 ## <a name="websites"></a>网站
 

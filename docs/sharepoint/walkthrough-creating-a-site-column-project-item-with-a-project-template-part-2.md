@@ -15,17 +15,17 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: c4530a43787b2e29c2600476a44c808132d668ceaa89b851efeddd403c2c30e6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f82d6ca09e67cd2911a0dc9803e65f14b85cca6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123302"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-2"></a>演练：使用项目模板创建站点列项目项，第 2 部分
   定义项目项的自定义SharePoint并将其与 Visual Studio 中的项目模板关联后，可能还需要为模板提供向导。 当用户使用模板创建包含项目项的新项目时，可以使用向导从用户收集信息。 收集的信息可用于初始化项目项。
 
- 在此演练中，你将向"站点列"项目模板添加一个向导，该模板在演练：使用模板创建站点列Project项第[1](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)部分Project演示。 当用户创建站点列项目时，向导将收集有关站点列 (例如其基类型和组) 的信息，并将此信息添加到新项目中的 *Elements.xml* 文件。
+ 在此演练中，你将向"站点列"项目模板添加一个向导，该模板在演练：创建具有站点模板的站点列Project项，第[1 部分Project模板中演示](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)。 当用户创建站点列项目时，向导将收集有关站点列 (例如其基类型和组) 的信息，并将此信息添加到新项目中的 *Elements.xml* 文件。
 
  本演练演示了下列任务：
 
@@ -33,7 +33,7 @@ ms.locfileid: "121352808"
 
 - 定义一个自定义向导 UI，该 UI 类似于 SharePoint 项目中的内置Visual Studio。
 
-- 创建两 *SharePoint，* 用于在向导运行时调用本地 SharePoint 站点。 SharePoint命令是一些扩展Visual Studio调用 SharePoint 对象模型中的 API 的方法。 有关详细信息，请参阅调用[对象SharePoint模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
+- 创建两 *SharePoint，* 用于在向导运行时调用本地 SharePoint 站点。 SharePoint命令是一些扩展Visual Studio调用 SharePoint 对象模型中的 API 的方法。 有关详细信息，请参阅[调用对象SharePoint模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
 - 使用可替换参数SharePoint向导中收集的数据初始化项目文件。
 
@@ -51,7 +51,7 @@ ms.locfileid: "121352808"
 
 - 支持的 Windows、SharePoint 和 Visual Studio 版本。
 
-- Visual Studio SDK。 本演练使用 SDK 中的 **VSIX Project** 模板创建 VSIX 包来部署项目项。 有关详细信息，请参阅扩展 SharePoint[中的 Visual Studio](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)工具。
+- Visual Studio SDK。 本演练使用 **SDK 中的 VSIX Project** 模板创建 VSIX 包来部署项目项。 有关详细信息，请参阅扩展 SharePoint[中的 Visual Studio。](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 
   了解以下概念有助于完成演练，但这不是必需的：
 
@@ -64,7 +64,7 @@ ms.locfileid: "121352808"
 
 |组件|说明|
 |---------------|-----------------|
-|向导实现|这是一个名为 的类 `SiteColumnProjectWizard` ，它实现 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接口。 此接口定义在向导Visual Studio完成时，以及向导运行时某些时间调用的方法。|
+|向导实现|这是一个名为 的类 `SiteColumnProjectWizard` ，它实现 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 接口。 此接口定义在向导Visual Studio和完成时，以及向导运行时在特定时间调用的方法。|
 |向导 UI|这是一个名为 的基于 WPF 的窗口 `WizardWindow` 。 此窗口包括名为 和 的两个用户 `Page1` 控件 `Page2` 。 这些用户控件表示向导的两页。<br /><br /> 在此演练中，向导 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard.RunStarted%2A> 实现的方法显示向导 UI。|
 |向导数据模型|这是一个名为 的中间类 `SiteColumnWizardModel` ，它提供向导 UI 和向导实现之间的层。 此示例使用此类帮助抽象化向导实现和向导 UI;此类不是所有向导的必需组件。<br /><br /> 在此演练中，向导实现在显示向导 UI 时 `SiteColumnWizardModel` 将 对象传递给向导窗口。 向导 UI 使用此对象的方法在 UI 中保存控件的值，并执行验证输入站点 URL 是否有效的任务。 用户完成向导后，向导实现将使用 `SiteColumnWizardModel` 对象来确定 UI 的最终状态。|
 |Project签名管理器|这是一个名为 的帮助程序类，向导实现使用该类在每个新项目实例中创建新的 `ProjectSigningManager` key.snk 文件。|
@@ -99,9 +99,9 @@ ms.locfileid: "121352808"
 
 1. 在 **解决方案资源管理器** 中，打开 SiteColumnProjectItem 解决方案节点的快捷菜单，选择"添加"，然后选择"新建 **Project"。**
 
-2. 在"**添加新版本Project** 对话框的顶部，.NET Framework版本列表中选择 **"3.5".NET Framework。**
+2. 在"添加新版本"**对话框Project，** 在 .NET Framework 版本列表中选择 **3.5** .NET Framework。
 
-3. 展开 **Visual C#** 节点或 **Visual Basic节点，****然后选择Windows节点**。
+3. 展开 **Visual C#** 节点 **或Visual Basic节点**，**然后选择Windows节点**。
 
 4. 选择类 **库** 项目模板，将项目命名 **SharePointCommands**，然后选择"确定 **"** 按钮。
 
@@ -116,7 +116,7 @@ ms.locfileid: "121352808"
 
 1. 在 **解决方案资源管理器** 中，打开 **ProjectTemplateWizard** 项目节点的快捷菜单，然后选择"属性 **"。**
 
-2. 在 Project **设计器** 中，为 Visual  C# 项目选择"应用程序"选项卡，或为项目选择"Visual Basic"选项卡。
+2. 在 **Project** 设计器中，为 Visual  C# 项目选择"应用程序"选项卡，或为项目选择"Visual Basic选项卡。
 
 3. 请确保目标框架设置为 .NET Framework 4.5，而不是 .NET Framework 4.5 客户端配置文件。
 
@@ -124,7 +124,7 @@ ms.locfileid: "121352808"
 
 4. 打开 **ProjectTemplateWizard 项目的快捷菜单，选择**"**添加**"，然后选择"**新建项"。**
 
-5. 选择" **窗口 (WPF)** 项，将项 **命名 WizardWindow**，然后选择"添加 **"** 按钮。
+5. 选择 **"窗口 (WPF)** 项，将项命名 **WizardWindow**，然后选择"添加 **"** 按钮。
 
 6. 将两 **个用户控件 (WPF)** 项目，并命名 **Page1** 和 **Page2。**
 
@@ -156,144 +156,144 @@ ms.locfileid: "121352808"
 
     - Microsoft.VisualStudio.TemplateWizardInterface
 
-10. 选择 " **确定"** 按钮，将程序集添加到项目。
+10. 选择 **"确定** "按钮，将程序集添加到项目。
 
-11. 在 **解决方案资源管理器** 的 **ProjectTemplateWizard** 项目的 "**引用**" 文件夹下，选择 " **EnvDTE**"。
+11. 在 **解决方案资源管理器** 中，在 **ProjectTemplateWizard 项目的"引用**"文件夹下，选择 **"EnvDTE"。** 
 
-12. 在 " **属性** " 窗口中，将 " **嵌入互操作类型** " 属性的值更改为 " **False**"。
+12. 在" **属性** "窗口中，将"嵌入 **互操作类型"属性的值更改为** **False**。
 
-13. 如果要开发 Visual Basic 项目，请使用 **Project 设计器** 将 ProjectTemplateWizard 命名空间导入项目中。
+13. 如果要开发项目，Visual Basic设计器 将 ProjectTemplateWizard 命名空间导入 **Project项目中**。
 
-     有关详细信息，请参阅[如何：添加或移除导入的命名空间 &#40;Visual Basic&#41;](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)。
+     有关详细信息，请参阅[如何：添加或删除导入的命名空间&#40;Visual Basic&#41;。 ](../ide/how-to-add-or-remove-imported-namespaces-visual-basic.md)
 
 #### <a name="to-configure-the-sharepointcommands-project"></a>配置 SharePointcommands 项目
 
-1. 在 **解决方案资源管理器** 中，选择 " **SharePointCommands** " 项目节点。
+1. 在 **解决方案资源管理器** 中，选择 **SharePointCommands** 项目节点。
 
-2. 在菜单栏上，选择 " **Project**" "**添加现有项**"。
+2. 在菜单栏上，选择"Project"，**然后选择"添加现有项"。**
 
-3. 在 " **添加现有项** " 对话框中，浏览到包含 ProjectTemplateWizard 项目的代码文件的文件夹，然后选择 " **CommandIds** " 代码文件。
+3. 在" **添加现有项** "对话框中，浏览到包含 ProjectTemplateWizard 项目的代码文件的文件夹，然后选择 **CommandIds** 代码文件。
 
-4. 选择 " **添加** " 按钮旁边的箭头，然后在出现的菜单上选择 " **添加为链接** " 选项。
+4. 选择"添加"按钮旁边的 **箭头，** 然后在出现的菜单上选择"添加为链接"选项。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将代码文件作为链接添加到 **SharePointCommands** 项目。 代码文件位于 **ProjectTemplateWizard** 项目中，但文件中的代码也在 **SharePointCommands** 项目中编译。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 将代码文件作为链接添加到 **SharePointCommands** 项目。 代码文件位于 **ProjectTemplateWizard** 项目中，但该文件中的代码也编译在 **SharePointCommands** 项目中。
 
-5. 在 **SharePointCommands** 项目中，添加另一个名为命令的代码文件。
+5. 在 **SharePointCommands** 项目中，添加另一个名为 Commands 的代码文件。
 
-6. 选择 SharePointCommands 项目，然后在菜单栏上选择 **Project**  >  **添加引用**"。
+6. 选择 SharePointCommands 项目，然后在菜单栏上，选择"Project  >  **添加引用"。**
 
-7. 展开 " **程序集** " 节点，选择 " **扩展** " 节点，然后选中以下程序集旁的复选框：
+7. 展开 **"程序集"** 节点，选择"扩展 **"** 节点，然后选择以下程序集旁边的复选框：
 
-    - 微软.SharePoint
+    - 微软。SharePoint
 
-    - VisualStudio。SharePoint。命令
+    - Microsoft.VisualStudio。SharePoint。命令
 
-8. 选择 " **确定"** 按钮，将程序集添加到项目。
+8. 选择 **"确定** "按钮，将程序集添加到项目。
 
-## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>创建向导模型、签名管理器和 SharePoint 命令 id
- 将代码添加到 ProjectTemplateWizard 项目，以实现示例中的以下组件：
+## <a name="create-the-wizard-model-signing-manager-and-sharepoint-command-ids"></a>创建向导模型、签名管理器和 SharePoint命令 ID
+ 将代码添加到 ProjectTemplateWizard 项目，以在示例中实现以下组件：
 
-- SharePoint 的命令 id。 这些字符串标识向导使用的 SharePoint 命令。 稍后在本演练中，您将向 SharePointCommands 项目添加代码以实现这些命令。
+- SharePoint命令的 ID。 这些字符串标识SharePoint向导使用的命令。 本演练稍后会向 SharePointCommands 项目添加代码，以实施命令。
 
 - 向导数据模型。
 
 - 项目签名管理器。
 
-  有关这些组件的详细信息，请参阅 [了解向导组件](#understand-the-wizard-components)。
+  有关这些组件的信息，请参阅 [了解向导组件](#understand-the-wizard-components)。
 
-#### <a name="to-define-the-sharepoint-command-ids"></a>定义 SharePoint 命令 id
+#### <a name="to-define-the-sharepoint-command-ids"></a>定义 SharePoint命令的 ID
 
-1. 在 ProjectTemplateWizard 项目中，打开 CommandIds 代码文件，并将此文件的全部内容替换为以下代码。
+1. 在 ProjectTemplateWizard 项目中，打开 CommandIds 代码文件，然后将此文件的全部内容替换为以下代码。
 
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/commandids.cs" id="Snippet5":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/commandids.vb" id="Snippet5":::
 
 #### <a name="to-create-the-wizard-model"></a>创建向导模型
 
-1. 打开 SiteColumnWizardModel 代码文件，并将此文件的全部内容替换为以下代码。
+1. 打开 SiteColumnWizardModel 代码文件，将此文件的全部内容替换为以下代码。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.vb" id="Snippet6":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnwizardmodel.cs" id="Snippet6":::
 
 #### <a name="to-create-the-project-signing-manager"></a>创建项目签名管理器
 
-1. 打开 ProjectSigningManager 代码文件，并将此文件的全部内容替换为以下代码。
+1. 打开 ProjectSigningManager 代码文件，然后将此文件的全部内容替换为以下代码。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.vb" id="Snippet8":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/projectsigningmanager.cs" id="Snippet8":::
 
 ## <a name="create-the-wizard-ui"></a>创建向导 UI
- 添加 XAML 以定义向导窗口的 UI 和两个为向导页提供 UI 的用户控件，并添加代码以定义窗口和用户控件的行为。 你创建的向导与 Visual Studio 中的 SharePoint 项目的内置向导类似。
+ 添加 XAML 以定义向导窗口的 UI 和提供向导页的 UI 的两个用户控件，并添加代码来定义窗口和用户控件的行为。 创建的向导类似于内置向导，用于SharePoint项目中Visual Studio。
 
 > [!NOTE]
-> 在下面的步骤中，你的项目将在你将 XAML 或代码添加到你的项目后出现一些编译错误。 当你在后续步骤中添加代码时，这些错误将消失。
+> 在以下步骤中，向项目添加 XAML 或代码后，项目将发生一些编译错误。 在稍后的步骤中添加代码时，这些错误将消失。
 
 #### <a name="to-create-the-wizard-window-ui"></a>创建向导窗口 UI
 
-1. 在 ProjectTemplateWizard 项目中，打开 WizardWindow 文件的快捷菜单，然后选择 " **打开** " 以在设计器中打开该窗口。
+1. 在 ProjectTemplateWizard 项目中，打开 WizardWindow.xaml 文件的快捷菜单，然后选择"打开"以在设计器中打开窗口。
 
-2. 在设计器的 "XAML" 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义了一个 UI，其中包含一个标题、一个 <xref:System.Windows.Controls.Grid> 包含向导页的和一个导航按钮。
+2. 在设计器的 XAML 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义一个 UI，其中包括标题、包含向导页的 和窗口底部的导航 <xref:System.Windows.Controls.Grid> 按钮。
 
      :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml" id="Snippet10":::
 
     > [!NOTE]
-    > 在此 XAML 中创建的窗口派生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基类。 当您将自定义 WPF 对话框添加到 Visual Studio 时，我们建议您从此类派生对话框，以便与其他 Visual Studio 对话框保持一致的样式，并避免出现可能出现的模式对话框问题。 有关详细信息，请参阅 [创建和管理模式对话框](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
+    > 在此 XAML 中创建的窗口派生自 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 基类。 向 Visual Studio 添加自定义 WPF 对话框时，建议从此类派生对话框，使样式与其他 Visual Studio 对话框保持一致，并避免其他可能发生的模式对话框问题。 有关详细信息，请参阅 [创建和管理模式对话框](../extensibility/creating-and-managing-modal-dialog-boxes.md)。
 
-3. 如果要开发 Visual Basic 项目，请 `ProjectTemplateWizard` 从 `WizardWindow` 元素的属性中的类名称中删除该命名空间 `x:Class` `Window` 。 此元素位于 XAML 的第一行。 完成后，第一行应如下例所示。
+3. 如果要开发一个Visual Basic，请从 元素的 属性中的类名中删除 `ProjectTemplateWizard` `WizardWindow` `x:Class` `Window` 命名空间。 此元素位于 XAML 的第一行中。 完成后，第一行应如以下示例所示。
 
     ```xml
     <Window x:Class="WizardWindow"
     ```
 
-4. 打开 WizardWindow 文件的代码隐藏文件。
+4. 打开 WizardWindow.xaml 文件的代码隐藏文件。
 
-5. 将此文件的内容替换为 `using` 以下代码，但文件顶部的声明除外。
+5. 将此文件的内容（文件顶部的声明除外） `using` 替换为以下代码。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.vb" id="Snippet4":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/wizardwindow.xaml.cs" id="Snippet4":::
 
 #### <a name="to-create-the-first-wizard-page-ui"></a>创建第一个向导页 UI
 
-1. 在 ProjectTemplateWizard 项目中，打开 "Page1" 文件的快捷菜单，然后选择 " **打开** " 以在设计器中打开该用户控件。
+1. 在 ProjectTemplateWizard 项目中，打开 Page1.xaml 文件的快捷菜单，然后选择"打开"以在设计器中打开用户控件。
 
-2. 在设计器的 "XAML" 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义了一个 UI，其中包含一个文本框，用户可以在其中输入要用于调试的本地网站的 URL。 UI 还包括选项按钮，用户可通过这些按钮指定是否对项目进行沙盒处理。
+2. 在设计器的 XAML 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义一个 UI，其中包括一个文本框，用户可以在此文本框中输入要用于调试的本地网站的 URL。 UI 还包括选项按钮，用户可以使用这些按钮指定项目是否沙盒。
 
      :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page1.xaml" id="Snippet11":::
 
-3. 如果要开发 Visual Basic 项目，请 `ProjectTemplateWizard` `Page1` 在元素的属性中从类名称中删除该命名空间 `x:Class` `UserControl` 。 这位于 XAML 的第一行。 完成后，第一行应该如下所示。
+3. 如果要开发一个Visual Basic，请从 元素的 属性中的 `ProjectTemplateWizard` 类名 `Page1` 中删除 `x:Class` `UserControl` 命名空间。 这是 XAML 的第一行。 完成后，第一行应如下所示。
 
     ```xml
     <UserControl x:Class="Page1"
     ```
 
-4. 将 Page1 文件的内容替换为除文件顶部的声明之外的内容， `using` 并提供以下代码。
+4. 将 Page1.xaml 文件的内容（文件顶部的声明除外） `using` 替换为以下代码。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.vb" id="Snippet2":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page1.xaml.cs" id="Snippet2":::
 
 #### <a name="to-create-the-second-wizard-page-ui"></a>创建第二个向导页 UI
 
-1. 在 ProjectTemplateWizard 项目中，打开 Page2 文件的快捷菜单，然后选择 " **打开**"。
+1. 在 ProjectTemplateWizard 项目中，打开 Page2.xaml 文件的快捷菜单，然后选择"打开 **"。**
 
      用户控件将在设计器中打开。
 
-2. 在 XAML 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义了一个 UI，该 UI 包含一个下拉列表，用于选择网站列的基类型、用于指定在库中显示 "网站" 列的内置或自定义组的组合框以及用于指定网站列名称的文本框。
+2. 在 XAML 视图中，将当前 XAML 替换为以下 XAML。 XAML 定义一个 UI，其中包括用于选择站点列基类型的下拉列表、用于指定内置组或自定义组的组合框（用于显示库中的站点列）和用于指定站点列名称的文本框。
 
      :::code language="xml" source="../sharepoint/codesnippet/Xaml/sitecolumnprojectitem/projecttemplatewizard/page2.xaml" id="Snippet12":::
 
-3. 如果要开发 Visual Basic 项目，请 `ProjectTemplateWizard` `Page2` 在元素的属性中从类名称中删除该命名空间 `x:Class` `UserControl` 。 这位于 XAML 的第一行。 完成后，第一行应该如下所示。
+3. 如果要开发一个Visual Basic，请从 元素的 属性中的 `ProjectTemplateWizard` 类名 `Page2` 中删除 `x:Class` `UserControl` 命名空间。 这是 XAML 的第一行。 完成后，第一行应如下所示。
 
     ```xml
     <UserControl x:Class="Page2"
     ```
 
-4. 将 Page2 文件的代码隐藏文件的内容替换为除文件顶部的声明之外的代码， `using` 并提供以下代码。
+4. 将 Page2.xaml 文件的代码隐藏文件的内容（文件顶部的声明除外）替换为 `using` 以下代码。
 
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.vb" id="Snippet3":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/page2.xaml.cs" id="Snippet3":::
 
 ## <a name="implement-the-wizard"></a>实现向导
- 通过实现接口，定义向导的主要功能 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 。 此接口定义在向导启动和完成时 Visual Studio 调用的方法，以及在向导运行时的特定时间。
+ 通过实现 接口定义向导的主要 <xref:Microsoft.VisualStudio.TemplateWizard.IWizard> 功能。 此接口定义在向导Visual Studio完成时，以及向导运行时在特定时间调用的方法。
 
 #### <a name="to-implement-the-wizard"></a>实现向导
 
@@ -304,12 +304,12 @@ ms.locfileid: "121352808"
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.vb" id="Snippet7":::
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/projecttemplatewizard/sitecolumnprojectwizard.cs" id="Snippet7":::
 
-## <a name="create-the-sharepoint-commands"></a>创建 SharePoint 命令
- 创建两个调用 SharePoint 服务器对象模型的自定义命令。 一个命令确定用户在向导中键入的网站 URL 是否有效。 另一个命令获取指定 SharePoint 站点中的所有字段类型，以便用户可以选择要用作其新网站列的基础的字段类型。
+## <a name="create-the-sharepoint-commands"></a>创建SharePoint命令
+ 创建两个自定义命令，这些命令SharePoint服务器对象模型。 一个命令确定用户在向导中输入的站点 URL 是否有效。 另一个命令从指定的站点获取SharePoint类型，以便用户可以选择要用作新站点列的基础的字段类型。
 
-#### <a name="to-define-the-sharepoint-commands"></a>定义 SharePoint 命令
+#### <a name="to-define-the-sharepoint-commands"></a>定义SharePoint命令
 
-1. 在 **SharePointCommands** 项目中，打开命令代码文件。
+1. 在 **SharePointCommands** 项目中，打开"命令"代码文件。
 
 2. 将此文件的全部内容替换为以下代码。
 
@@ -317,22 +317,22 @@ ms.locfileid: "121352808"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/sitecolumnprojectitem/sharepointcommands/commands.cs" id="Snippet9":::
 
 ## <a name="checkpoint"></a>Checkpoint
- 在本演练的这一阶段，向导的所有代码现在都在项目中。 生成项目以确保它在编译时不会出错。
+ 在演练的此时，向导的所有代码现在都位于项目中。 生成项目以确保它编译时不会出错。
 
 #### <a name="to-build-your-project"></a>若要生成你的项目
 
 1. 在菜单栏上，依次选择“生成” > “生成解决方案” 。
 
-## <a name="removing-the-keysnk-file-from-the-project-template"></a>从项目模板删除密钥 .snk 文件
- [演练：使用项目模板创建网站栏项目项（第1部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)）你创建的项目模板包含一个用于对每个网站列项目实例进行签名的 .snk 文件。 此密钥 .snk 文件不再是必需的，因为向导现在为每个项目生成新的密钥 .snk 文件。 从项目模板中删除密钥 .snk 文件，并删除对此文件的引用。
+## <a name="removing-the-keysnk-file-from-the-project-template"></a>从项目模板中删除 key.snk 文件
+ 在 [演练：](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)使用项目模板（第 1 部分）创建站点列项目项中，所创建的项目模板包含用于为每个站点列项目实例签名的 key.snk 文件。 不再需要此 key.snk 文件，因为向导现在会为每个项目生成新的 key.snk 文件。 从项目模板中删除 key.snk 文件，并删除对此文件的引用。
 
-#### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>从项目模板中删除密钥 .snk 文件
+#### <a name="to-remove-the-keysnk-file-from-the-project-template"></a>从项目模板中删除 key.snk 文件
 
-1. 在 **解决方案资源管理器** 的 " **SiteColumnProjectTemplate** " 节点下，打开 " **密钥 .snk** " 文件的快捷菜单，然后选择 " **删除**"。
+1. 在 **解决方案资源管理器** 中，在 **SiteColumnProjectTemplate** 节点下，打开 **key.snk** 文件的快捷菜单，然后选择"删除 **"。**
 
 2. 在随即出现的确认对话框中，选择 **“确定”** 按钮。
 
-3. 在 **SiteColumnProjectTemplate** 节点下，打开 SiteColumnProjectTemplate 文件，然后从其删除以下元素。
+3. 在 **SiteColumnProjectTemplate** 节点下，打开 SiteColumnProjectTemplate.vstemplate 文件，然后从该文件中删除以下元素。
 
     ```xml
     <ProjectItem ReplaceParameters="false" TargetFileName="key.snk">key.snk</ProjectItem>
@@ -340,7 +340,7 @@ ms.locfileid: "121352808"
 
 4. 保存并关闭该文件。
 
-5. 在 **SiteColumnProjectTemplate** 节点下，打开 ProjectTemplate 或 ProjectTemplate 文件，然后从中删除以下 `PropertyGroup` 元素。
+5. 在 **SiteColumnProjectTemplate** 节点下，打开 ProjectTemplate.csproj 或 ProjectTemplate.vbproj 文件，然后从该文件中删除 `PropertyGroup` 以下元素。
 
     ```xml
     <PropertyGroup>
@@ -357,8 +357,8 @@ ms.locfileid: "121352808"
 
 7. 保存并关闭该文件。
 
-## <a name="associating-the-wizard-with-the-project-template"></a>将向导与项目模板关联
- 现在，你已实现向导，你必须将该向导与 " **网站列** " 项目模板相关联。 要执行此操作，必须完成三个过程：
+## <a name="associating-the-wizard-with-the-project-template"></a>将向导与项目模板相关联
+ 实现向导后，必须将向导与站点列 **项目模板** 关联。 要执行此操作，必须完成三个过程：
 
 1. 使用强名称对向导程序集进行签名。
 
@@ -542,7 +542,7 @@ ms.locfileid: "121352808"
 
      有关如何部署扩展的信息 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，请参阅[装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [演练：使用项目模板创建网站栏项目项（第1部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-1.md)
 - [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
 - [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)

@@ -1,6 +1,6 @@
 ---
 title: 以编程方式创建范围时排除段落标记
-description: 了解如何在 Microsoft Word 文档中创建范围时以编程方式排除段落标记。
+description: 了解如何以编程方式在 Microsoft Word 文档中创建范围时排除段落标记。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: c0929ccf3bb2567099dc7f3b795ad2257da0edb3
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b5dbe9a51a41cca82dad43207eb103e51c6f1797
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148059"
 ---
 # <a name="how-to-programmatically-exclude-paragraph-marks-when-creating-ranges"></a>如何：以编程方式在创建范围时排除段落标记
   当你创建基于段落的 <xref:Microsoft.Office.Interop.Word.Range> 对象时，所有非打印字符（如段落标记）都将纳入范围。 可将源段落的文本插入到目标段落。 如果不希望将目标段落拆分为单独的段落，则必须先从源段落中删除段落标记。 此外，由于段落标记中存储着段落格式设置信息，所以当你将范围插入到现有段落时可能需要删除它。
@@ -109,16 +110,16 @@ ms.locfileid: "107825792"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet26":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet26":::
 
-## <a name="vsto-add-in-example"></a>VSTO 外接程序示例
+## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
 ### <a name="to-control-paragraph-structure-when-inserting-text-in-a-vsto-add-in"></a>在 VSTO 外接程序中插入文本时控制段落结构
 
-1. 下面的示例演示了 VSTO 外接程序的完整方法。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
+1. 下面的示例演示 VSTO 外接程序的完整方法。 若要使用此代码，请从项目中的 `ThisAddIn` 类运行它。
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet26":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet26":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：以编程方式在文档中扩展范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [如何：以编程方式折叠文档中的范围或选定内容](../vsto/how-to-programmatically-collapse-ranges-or-selections-in-documents.md)
 - [如何：以编程方式在 Word 文档中插入文本](../vsto/how-to-programmatically-insert-text-into-word-documents.md)

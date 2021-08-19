@@ -14,18 +14,18 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 66077d66d7de951af60ab6cfb0d4f3fb3c96aea5cf6a9653a3bd340533e59e2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f7937c3e78a9f9d113fa3394a7d7be948a22059e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089714"
 ---
 # <a name="create-a-windows-forms-toolbox-control"></a>创建 Windows 窗体工具箱控件
 
 Visual Studio 扩展性工具 (VS SDK) 中包含的 Windows 窗体工具箱控件项模板使你能够创建在安装扩展时自动添加的 **工具箱** 控件。 本演练演示如何使用模板创建可分发给其他用户的简单计数器控件。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 

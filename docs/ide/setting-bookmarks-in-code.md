@@ -10,14 +10,15 @@ ms.assetid: a752ed5f-5cf9-4bf2-865a-2131ca600ed5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7158e9cf6e25463dd16cf15886b499cd9e6a3f1a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3387a210515be1a6db82d9c5e15f87ca4128a1f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150893"
 ---
 # <a name="set-bookmarks-in-code"></a>在代码中设置书签
 

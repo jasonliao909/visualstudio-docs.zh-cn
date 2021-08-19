@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 8f56c67a16b59b17de5a4bd95ad9a074203b097224844f541adc8b658d60edea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 13cde2406402f6afc2d61deca4e6e95e838e5dff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121386051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085632"
 ---
 # <a name="customizing-text-and-image-fields"></a>自定义文本和图像字段
 在形状中定义文本修饰器时，它由一个文本字段表示。 有关 TextFields 和其他在 mapcontrol.shapefields 的初始化示例，请在 DSL 解决方案中检查 Dsl\GeneratedCode\Shapes.cs。

@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: dbf7260bfa0119bf4ffe4ba9ea06c1a59e76fdbaa83d54a3696fdf9d3e34c894
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b0e4e55872da333089d91eddd8edb54d7ce99f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078903"
 ---
 # <a name="idebugmemorycontext2compare"></a>IDebugMemoryContext2::Compare
 按比较标志所指示的方式，将内存上下文与给定数组中的每个上下文进行比较，并返回第一个匹配的上下文的索引。

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: af06b402fd9da418c20fb87a573c7a885b04871f7ce661b394d284491acd5e96
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54dd15b59628883d42f28ab9988ae75d0c7bbd52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121288693"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061358"
 ---
 # <a name="controlling-the-visibility-of-an-icon-or-decorator"></a>控制图标或修饰器的可见性
 *修饰* 器是在特定于域的语言 (DSL) 的形状上显示的图标或文本行。 您可以根据模型中属性的状态，使修饰器出现和消失。 例如，在代表人员的形状上，可能会根据人员的性别、子女数等显示不同的图标。

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: b9fbe526c1c7ec14e85f312c60736ba924f32cf7735e51dd13ce979149d0689a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c825c10b6adf3a64972fa0f9c17d2e7f4c5dc381
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409314"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084007"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 开发示例
   您可以使用 Visual Studio 从[MSDN 代码库](https://code.msdn.microsoft.com/)下载和安装 SharePoint 应用程序的示例。
