@@ -10,12 +10,13 @@ ms.assetid: 0c86918b-cd63-4468-8f49-6d547a1276dc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: a606f2cb9547250db79de9defba57dc95a402bf1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 0c3231bcd9f9ce5da8ee85323bca058c82829662
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868083"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140123"
 ---
 # <a name="configure-load-test-run-settings"></a>配置负载测试运行设置
 

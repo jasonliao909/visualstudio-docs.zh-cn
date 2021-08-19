@@ -14,14 +14,15 @@ ms.assetid: 34b665c0-d46f-4c1a-a066-b678eba5ac54
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3abcd7182c8bb5b94b2f35a9463f845cc6bb5bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2585399f9e63286eb6c846054eb30e80fad8fe20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919378"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151439"
 ---
 # <a name="list-threads-command"></a>“列出线程”命令
 显示当前程序中线程的列表。

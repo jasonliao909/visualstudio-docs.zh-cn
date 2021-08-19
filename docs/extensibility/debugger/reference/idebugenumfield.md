@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cf2dcf8cbec8b8ee183f888ec536c9a2726dbd3acc2866c6a3f432295f496ed3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fb8cb02d178a9efcb9b3d03423b722a4950c6511
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452064"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127202"
 ---
 # <a name="idebugenumfield"></a>IDebugEnumField
 此接口表示一个枚举类型。

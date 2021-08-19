@@ -1,6 +1,6 @@
 ---
 title: 服务器 (Visual Studio SDK) |Microsoft Docs
-description: 本文介绍 Visual Studio 中调试器体系结构中服务器的定义和角色。
+description: 本文介绍服务器在调试器体系结构中的定义和Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,23 +14,23 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 402e6df722cb0c5e3bceb88614e0b137e3ef5e488378c357b3788a441e59baa4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06317f9249371076ddc306ac5a38e3fe764996f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122087257"
 ---
 # <a name="servers-visual-studio-sdk"></a>服务器 (Visual Studio SDK)
-在调试程序体系结构中， *服务器*：
+在调试器体系结构中，服务器 *：*
 
-- 是端口和端口供应商的容器，可将端口和端口供应商传达给会话调试管理器 (SDM) 和调试引擎。
+- 是端口和端口供应商的容器，它通过 SDM) 引擎将端口和端口供应商与会话调试管理器 (通信。
 
 - 可以按名称标识自身，并枚举其端口和端口供应商。
 
-- 由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)接口表示，此接口仅通过 Visual Studio (运行) 的每个 Visual Studio 实例的服务器实例来实现。
+- 由[IDebugCoreServer2](../../extensibility/debugger/reference/idebugcoreserver2.md)接口表示，该接口仅由运行 Visual Studio (实例的每个实例的服务器实例Visual Studio实现) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [端口](../../extensibility/debugger/ports.md)
 - [端口供应商](../../extensibility/debugger/port-suppliers.md)
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)

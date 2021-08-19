@@ -5,19 +5,19 @@ ms.custom: vs-acquisition, get-started
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2a6b01e9c26ea816e05a1d2186d904bdb080f098
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4ea8f071907ab4bb5c2d95d392cb9b17c1b9d5c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157900"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>了解如何将代码编辑器用于 C\#
 

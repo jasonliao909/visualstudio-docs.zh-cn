@@ -10,14 +10,15 @@ ms.assetid: 21547ba7-6e81-44df-9277-265bf34f877a
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 357644f67da9a3bbc468d708cf39e44f737dbf0f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 34435f3427296d9a82291275c2b74438ee60e669
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105090416"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158484"
 ---
 # <a name="open-a-dynamic-tool-window"></a>打开动态工具窗口
 工具窗口通常从菜单上的命令或等效的键盘快捷方式打开。 但是，有时您可能需要在应用特定 UI 上下文时打开的工具窗口，并在 UI 上下文不再适用时关闭。 这些类型的工具窗口称为 " *动态* " 或 " *自动可见*"。
@@ -50,7 +51,7 @@ ms.locfileid: "105090416"
     {. . .}
     ```
 
-     上面的属性将名为 DynamicWindowPane 的工具窗口注册为一个临时窗口，该窗口在关闭并重新打开 Visual Studio 时不会保持。 DynamicWindowPane 会在应用时打开 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> ，否则将会关闭。
+     上面的属性将名为 DynamicWindowPane 的工具窗口注册为暂时性窗口，该窗口在关闭并重新打开 Visual Studio 时不会保持。 DynamicWindowPane 会在应用时打开 <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionExists_string> ，否则将会关闭。
 
 3. 生成项目并启动调试。 应显示实验实例。 你将看不到工具窗口。
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5043f91cc89806a9f834fb82619fef31a4105f3effa7203577a869fc18f289e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 190b0ae3a9b9072b666fde389a12f7979c7c5a6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448502"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110691"
 ---
 # <a name="sample-implementation-of-changing-values"></a>更改值的实现示例
 > [!IMPORTANT]

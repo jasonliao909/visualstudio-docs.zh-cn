@@ -1,6 +1,6 @@
 ---
-description: IDebugProgram2：：GetName 获取程序的名称。
-title: IDebugProgram2：：GetName |Microsoft Docs
+description: IDebugProgram2：： GetName 获取程序的名称。
+title: IDebugProgram2：： GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 41c8747b41b37946e5545b72b296c50bb2d81981d6b2ffd605343848a756a1c5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98af9a3634c540bb6d60f689964678fda8190c34
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338834"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159745"
 ---
 # <a name="idebugprogram2getname"></a>IDebugProgram2::GetName
 获取程序的名称。
@@ -43,13 +43,13 @@ int GetName(
 
 ## <a name="parameters"></a>参数
 `pbstrName`\
-[out]返回程序的名称。
+弄返回程序的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法返回的名称始终是描述程序的友好、用户可显示的名称。
+ 此方法返回的名称始终是描述该程序的、用户可显示的友好名称。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

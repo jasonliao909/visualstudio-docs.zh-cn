@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9dad8262b2c8add1787d07dbd4589c2398d9c807abef5aaa06fc3ba46244f193
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e71603039747356ab1f3ba68b7f8750d4e21986d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433406"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159836"
 ---
 # <a name="idebugprocessqueryproperties"></a>IDebugProcessQueryProperties
 此接口是由 [IDebugProcess2 实现程序实现的](../../../extensibility/debugger/reference/idebugprocess2.md) 扩展接口。 它允许实现者获取有关调试进程环境的信息。
@@ -52,6 +52,6 @@ IDebugProcessQueryProperties: IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

@@ -14,24 +14,24 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 01392932831ab7ba5fec867a427b4a2c8868070abdda93de53593e9c3f27beb2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f301330cb586ff838efb4fe5278b0158a8f9129a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121378215"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057910"
 ---
 # <a name="enumerate-locals"></a>枚举区域设置
 > [!IMPORTANT]
 > 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式计算器的信息，请参阅 [CLR 表达式计算器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators)和[托管表达式计算器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
-当Visual Studio准备填充"局部"窗口时，它会对从[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)返回的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象调用[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) (请参阅[实现 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)) 。 `IDebugProperty2::EnumChildren` 返回 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 对象。
+当Visual Studio"局部设置"窗口时，它会对从[GetMethodProperty](../../extensibility/debugger/reference/idebugexpressionevaluator-getmethodproperty.md)返回的[IDebugProperty2](../../extensibility/debugger/reference/idebugproperty2.md)对象调用[EnumChildren](../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) (请参阅[实现 GetMethodProperty](../../extensibility/debugger/implementing-getmethodproperty.md)) 。 `IDebugProperty2::EnumChildren` 返回 [IEnumDebugPropertyInfo2](../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md) 对象。
 
 实现 `IDebugProperty2::EnumChildren` 将执行以下任务：
 
 1. 确保此 表示方法。
 
-2. 使用 `guidFilter` 参数确定对 [IDebugMethodField 对象调用的方法](../../extensibility/debugger/reference/idebugmethodfield.md) 。 如果 `guidFilter` 等于：
+2. 使用 `guidFilter` 参数确定对 [IDebugMethodField](../../extensibility/debugger/reference/idebugmethodfield.md) 对象调用的方法。 如果 `guidFilter` 等于：
 
     1. `guidFilterLocals`，调用 [EnumLocals](../../extensibility/debugger/reference/idebugmethodfield-enumlocals.md) 以获取 [IEnumDebugFields](../../extensibility/debugger/reference/ienumdebugfields.md) 对象。
 
@@ -39,7 +39,7 @@ ms.locfileid: "121378215"
 
     3. `guidFilterLocalsPlusArgs`，合成合并 来自 和 的结果的 `IDebugMethodField::EnumLocals` 枚举 `IDebugMethodField::EnumArguments` 。 此合成由 类表示 `CEnumMethodField` 。
 
-3. 实例化 (`CEnumPropertyInfo` 中调用的类) 实现 `IEnumDebugPropertyInfo2` 接口并包含 `IEnumDebugFields` 对象。
+3. 实例化 (实例化) 接口并包含 `CEnumPropertyInfo` `IEnumDebugPropertyInfo2` 对象的 `IEnumDebugFields` 类。
 
 4. 从 `IEnumDebugProperty2Info2` 对象返回 `CEnumPropertyInfo` 接口。
 

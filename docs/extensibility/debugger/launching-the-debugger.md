@@ -11,14 +11,15 @@ ms.assetid: f24da1a1-f923-48b4-989f-18a22b581d1b
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 67764a7f59c1b44e7e8cbc7a81befb120c541461
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 72f819e9500c6a553cfe7ee73079ad439e9558d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094661"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160577"
 ---
 # <a name="launch-the-debugger"></a>启动调试程序
 启动调试器要求发送正确的方法和事件顺序及其正确的特性。
@@ -53,6 +54,6 @@ ms.locfileid: "105094661"
 
 8. DE 使用特性向 SDM 发送 [IDebugEntryPointEvent2](../../extensibility/debugger/reference/idebugentrypointevent2.md) `EVENT_SYNC` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)
 - [启动程序](../../extensibility/debugger/launching-a-program.md)

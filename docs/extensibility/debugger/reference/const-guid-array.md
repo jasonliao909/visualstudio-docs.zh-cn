@@ -1,5 +1,5 @@
 ---
-description: 一个结构，该结构包含 GUID 的列表。
+description: 保存 GUID 列表的结构。
 title: CONST_GUID_ARRAY |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c69f45ea0ef67ee388db719dc07360c51e53bfbff82af37661750cd46b966483
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1a4c19ee81c5684d46c9a913bdaa66f9c5d8a70
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360919"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145622"
 ---
 # <a name="const_guid_array"></a>CONST_GUID_ARRAY
-包含的列表的结构 `GUID` 。
+保存 列表 `GUID` 的 结构。
 
 ## <a name="syntax"></a>语法
 
@@ -45,22 +45,22 @@ public struct CONST_GUID_ARRAY {
 
 ## <a name="members"></a>成员
 `dwCount`\
-`GUID`数组中的的数目 `Members` 。
+数组 `GUID` 中的 数 `Members` 。
 
 `Members`\
-的数组 `GUID` 。
+`GUID`的数组。
 
 ## <a name="remarks"></a>备注
-此结构传递给 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法，并从 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 和 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 方法返回。
+此结构传递给 [PublishProgram](../../../extensibility/debugger/reference/idebugprogrampublisher2-publishprogram.md) 方法，并且从 [GetProviderProcessData](../../../extensibility/debugger/reference/idebugprogramprovider2-getproviderprocessdata.md) 和 [WatchForProviderEvents](../../../extensibility/debugger/reference/idebugprogramprovider2-watchforproviderevents.md) 方法返回。
 
-此结构实例的所有者负责释放已分配的任何内存。
+此结构的实例的所有者负责释放分配的任何内存。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)

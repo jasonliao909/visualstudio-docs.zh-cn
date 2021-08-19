@@ -7,16 +7,17 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: a4c243ab46858a4c8eb944d485900718b685bf5c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb6ffb06436b36382925fb33ff4fbb35626e8a21
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151647"
 ---
 # <a name="generate-a-deconstructor-in-visual-studio"></a>在 Visual Studio 中生成解构函数
 

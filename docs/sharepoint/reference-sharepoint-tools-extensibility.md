@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 00fe4d01816ed6c4fddd17edc1d01d74f5144f412a2f4636e91d1c8619b80f34
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e1e1e0a2fec09feb6080392d7eb1d9fbd6419f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121244259"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084072"
 ---
 # <a name="reference-sharepoint-tools-extensibility"></a>SharePoint 工具扩展性 (引用) 
 

@@ -1,5 +1,5 @@
 ---
-description: 指定与导致断点激发的断点传递计数相关联的条件。
+description: 指定与导致断点被发射的断点传递计数关联的条件。
 title: BP_PASSCOUNT_STYLE |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4e7704e7211d2bab6e845a72b55a5a5de3559bd5375d43c07a50767679c2e6d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02aae6a4ef4939660639004602b539b0f68c4fa2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434433"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145908"
 ---
 # <a name="bp_passcount_style"></a>BP_PASSCOUNT_STYLE
-指定与导致断点激发的断点传递计数相关联的条件。
+指定与导致断点被发射的断点传递计数关联的条件。
 
 ## <a name="syntax"></a>语法
 
@@ -50,26 +50,26 @@ public enum enum_BP_PASSCOUNT_STYLE {
 
 ## <a name="fields"></a>字段
 `BP_PASSCOUNT_NONE`\
-指定没有断点传递计数样式。
+指定无断点传递计数样式。
 
 `BP_PASSCOUNT_EQUAL`\
-将断点传递计数样式设置为相等。 命中断点的次数等于传递计数时，将激发断点。
+将断点传递计数样式设置为相等。 当断点命中次数等于通过计数时，将触发断点。
 
 `BP_PASSCOUNT_EQUAL_OR_GREATER`\
-将断点传递计数样式设置为等于或大于。 命中断点的次数等于或大于传递计数时，将激发断点。
+将断点传递计数样式设置为等于或大于。 断点在命中断点次数等于或大于通过计数时触发。
 
 `BP_PASSCOUNT_MOD`\
-指定模 pass 计数。 例如，如果传递计数为类型 `BP_PASSCOUNT_MOD` 并且传递计数值为4，则每次命中计数为4的倍数时都会触发断点。
+指定模数传递计数。 例如，如果传递计数的类型为 ，并且传递计数值为 4，则每次命中计数为 4 的倍数时都会触发 `BP_PASSCOUNT_MOD` 断点。
 
 ## <a name="remarks"></a>备注
-用于作为 `stylePassCount` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)和[BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)结构的成员的[BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)结构的成员。
+用于 `stylePassCount` 结构的成员[，BP_PASSCOUNT](../../../extensibility/debugger/reference/bp-passcount.md)[](../../../extensibility/debugger/reference/bp-request-info.md)结构的成员，而该结构又成为BP_REQUEST_INFO BP_REQUEST_INFO2的成员。 [](../../../extensibility/debugger/reference/bp-request-info2.md)
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

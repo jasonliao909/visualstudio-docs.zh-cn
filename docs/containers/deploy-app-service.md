@@ -4,17 +4,17 @@ description: 了解如何使用 Visual Studio 容器工具将 Docker 容器中�
 ms.custom: SEO-VS-2020
 author: ghogen
 manager: jmartens
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 02/21/2021
 ms.author: ghogen
-ms.openlocfilehash: f9a4f26227d2cd3bd065fab88ba294f7341ea4ed
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 6dd3a1bf0dd7b40f101f95e74c18dee071b4cfc6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122162027"
 ---
 # <a name="deploy-an-aspnet-core-container-to-azure-app-service-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET Core 容器部署到 Azure 应用服务
 
@@ -22,7 +22,7 @@ ms.locfileid: "101684306"
 
 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 完成本教程：
 

@@ -1,6 +1,6 @@
 ---
-title: UsedCommands 元素 |Microsoft Docs
-description: UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。 UsedCommands 元素是可选的。
+title: UsedCommands 元素|Microsoft Docs
+description: UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 分组分组。 UsedCommands 元素是可选的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,17 +16,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: be720228c3ea53e9bfc5f5b5f2da44e919d94199120a3fbafeb3a575e8d56266
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ddeaf7e4c06a264a31311d1458b8e99bfc005be4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358813"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158120"
 ---
 # <a name="usedcommands-element"></a>UsedCommands 元素
-UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。
+UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 分组分组。
 
- UsedCommands 元素是可选的。 如果未调用在包外定义的命令，则不需要在 .vsct 文件中包含此部分。
+ UsedCommands 元素是可选的。 如果不调用在包外部定义的命令，则不需要在 .vsct 文件中包含此部分。
 
 ## <a name="syntax"></a>语法
 
@@ -43,19 +43,19 @@ UsedCommands 元素将 UsedCommand 元素和其他 UsedCommands 组分组。
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
 |元素|说明|
 |-------------|-----------------|
-|[UsedCommand 元素](../extensibility/usedcommand-element.md)|其他代码实现的命令。|
+|[UsedCommand 元素](../extensibility/usedcommand-element.md)|由其他代码实现的命令。|
 
 ### <a name="parent-elements"></a>父元素
 
 |元素|说明|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给集成开发环境 (IDE) ) 的命令 (例如，菜单项、菜单、工具栏和组合框。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素 (如菜单项、菜单、工具栏和组合框) VSPackage 为集成开发环境 (IDE) 。|
 
 ## <a name="example"></a>示例
 
