@@ -14,12 +14,12 @@ author: leslierichardson95
 ms.author: lerich
 manager: jmartens
 ms.technology: vs-ide-sdk
-ms.openlocfilehash: 4770e69b48571ee9c47d85956e0c47ec60fa126ed55272fdf49a1b0c33d04550
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ade27ac47c25a3170c5c7c6048aa1c6c21181e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335246"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109885"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构2.0 引用
 

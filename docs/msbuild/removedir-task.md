@@ -18,14 +18,15 @@ ms.assetid: 7ab214be-26b2-4bcd-9de8-c1b2091c0b74
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 879cbe356f9da52ce0679ee63355d54aec0c9d1c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 342f1da7d476f95397d474d8edf972f36f49b5c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931820"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143074"
 ---
 # <a name="removedir-task"></a>RemoveDir 任务
 

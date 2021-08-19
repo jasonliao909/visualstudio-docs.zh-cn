@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式保护工作簿
-description: 了解如何保护 Microsoft Excel 工作簿，使用户无法添加或删除工作表，还可以通过编程方式取消保护工作簿。
+description: 了解如何保护 Microsoft Excel 工作簿，使用户不能添加或删除工作表，还可以通过编程方式取消保护工作簿。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,17 +17,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 9f0b479c56be6da7b14f87263c8c01d66910ac20
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 41875cb3be9ee49d696991c1eb4bc33605123cd2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827101"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092210"
 ---
 # <a name="how-to-programmatically-protect-workbooks"></a>如何：以编程方式保护工作簿
-  您可以保护 Microsoft Office Excel 工作簿，使用户不能添加或删除工作表，也不能以编程方式取消保护工作簿。 您可以选择指定一个密码，指出您是否希望 (受保护的结构，以使用户不能在) 周围移动工作表，并指示是否要保护工作簿的 windows。
+  您可以保护 Microsoft Office Excel 工作簿，使用户不能添加或删除工作表，还可以通过编程方式取消保护工作簿。 您可以选择指定一个密码，指出您是否希望 (受保护的结构，以使用户不能在) 周围移动工作表，并指示是否要保护工作簿的 windows。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 

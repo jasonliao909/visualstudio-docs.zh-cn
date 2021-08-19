@@ -6,16 +6,17 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: tutorial
 ms.workload:
 - azure
 next_page: app.md
-ms.openlocfilehash: 11bf11a0f01cb4faf93fca702d18c0801ec5fe77
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a3ab7377f17db208347f830162d536fbe3934b9e
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053496"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334475"
 ---
 # <a name="tutorial-get-started-with-docker"></a>教程：Docker 入门
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a097e22bb483a638e1b02a73ff31a37261d4f5ecb99aca89dc5354ea78ece0b6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac1ff1aff18aca87f94ad1b771766401254994c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413843"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110015"
 ---
 # <a name="troubleshooting-vspackages"></a>VSPackages 故障排除
 下面是你可能会遇到的一些常见问题和解决问题的技巧。

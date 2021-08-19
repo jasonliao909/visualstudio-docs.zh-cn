@@ -18,18 +18,18 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: e32ef34e26084df149509a3172d748794784fb45adaead0935db8097cc8cd1c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9307884be7ae0ded9d679cd1d3f60a3661b28b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367377"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156144"
 ---
 # <a name="verify-and-debug-sharepoint-code"></a>验证和调试SharePoint代码
-通过使用 IntelliTrace 和单元测试，您可以更轻松地调试 SharePoint 解决方案，并确保解决方案中的每个方法都正常运行。 可以按照与其他类型的Visual Studio相同的过程，将这些功能用于 SharePoint 中的项目。
+通过使用 IntelliTrace 和单元测试，您可以更轻松地调试 SharePoint 解决方案，并确保解决方案中的每个方法都正常运行。 可以按照与其他类型的SharePoint相同的过程Visual Studio中的项目使用这些功能。
 
 ## <a name="intellitrace"></a>Intellitrace
-通过使用 IntelliTrace，您不仅能确定 SharePoint 解决方案的当前状态，还能确定过去发生的事件以及这些事件发生的上下文。 您可在 SharePoint 解决方案中记录了感兴趣的事件的不同时间点来回切换，并可查看变量在每个时间点的状态和值。 通过使用此动态导航，您可以快捷方便地调试 SharePoint 解决方案，而不必设置很多断点。 还可以将调试会话保存到 IntelliTrace 日志 (*.iTrace*) 文件中，稍后在 Visual Studio Enterprise 中打开它，并执行故障后调试。 *.iTrace* 文件包含有关特定错误发生SharePoint位置的详细信息，以便更轻松地找出导致错误的原因。 *.iTrace* 文件中的信息是统一日志记录系统 (ULS) 创建SharePoint日志的子集。 此信息包括特定于 SharePoint 的事件，例如打开或关闭用户配置文件的时间，以及加载、读取或更改 SharePoint 项目中的属性的时间。 您可以配置 IntelliTrace 记录的事件。 有关详细信息，请参阅[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
+通过使用 IntelliTrace，您不仅能确定 SharePoint 解决方案的当前状态，还能确定过去发生的事件以及这些事件发生的上下文。 您可在 SharePoint 解决方案中记录了感兴趣的事件的不同时间点来回切换，并可查看变量在每个时间点的状态和值。 通过使用此动态导航，您可以快捷方便地调试 SharePoint 解决方案，而不必设置很多断点。 还可以将调试会话保存到 IntelliTrace 日志 (*.iTrace*) 文件中，稍后在 Visual Studio Enterprise 中将其打开，并执行故障后调试。 *.iTrace* 文件包含有关特定错误发生SharePoint位置的详细信息，以便更轻松地找出导致错误的原因。 *.iTrace* 文件中的信息是统一日志记录系统创建的完整错误日志的 (ULS) SharePoint部分。 此信息包括特定于 SharePoint 的事件，例如打开或关闭用户配置文件的时间，以及加载、读取或更改 SharePoint 项目中的属性的时间。 您可以配置 IntelliTrace 记录的事件。 有关详细信息，请参阅[使用保存的 IntelliTrace 数据](../debugger/using-saved-intellitrace-data.md)。
 
 当 SharePoint 发生错误时，错误对话框将显示该特定错误的“相关 ID”标识符。 还可以从 *.iTrace* 文件中列出的事件获取相关 ID。 若要显示使用给定关联 ID 发生的所有事件的列表，可以在 IntelliTrace 摘要页的"分析"部分输入 ID。 在此部分中，可以选择是仅显示所发生事件的名称，还是显示事件名称及其调用信息（例如函数名、出口点和入口点、参数及返回值）。
 
@@ -49,6 +49,6 @@ SharePoint 项目支持 Microsoft Fakes，Microsoft Fakes 是一种隔离框架�
 |[演练：使用 IntelliTrace SharePoint调试应用程序](../sharepoint/walkthrough-debugging-a-sharepoint-application-by-using-intellitrace.md)|演示如何使用 IntelliTrace 找出 SharePoint 项目中的编码错误。|
 |[对代码进行单元测试](../test/unit-test-your-code.md)|介绍如何使用单元测试在代码中查找逻辑错误。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [提高代码质量](../test/improve-code-quality.md)

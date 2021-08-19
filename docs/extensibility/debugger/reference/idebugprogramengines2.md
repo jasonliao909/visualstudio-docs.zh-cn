@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ed842651af84991233a5e1f61eadb16d01074972eae896ffaa178748447aebc4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: eedc4dd60ce3fbd8581e91ee14404abbe6454a62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433224"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126409"
 ---
 # <a name="idebugprogramengines2"></a>IDebugProgramEngines2
 此接口由程序节点用来指定可调试此 (DE) 的所有可能的调试引擎。

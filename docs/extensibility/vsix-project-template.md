@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 781ee248999510bf28323d34e6fe8025bd40f9c317656045b3c196f15499d029
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d6cb7112d404b0ecc9decbc7e5b7caea251ab35
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335220"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109768"
 ---
 # <a name="vsix-project-template"></a>VSIX 项目模板
 

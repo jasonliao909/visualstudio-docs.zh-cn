@@ -10,14 +10,15 @@ ms.assetid: 083b8ba3-e4ad-45af-bb5d-3bc81d406131
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f9b83c83f2826334b5f43d387a2d7c6941ba4d91
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1da1b7af0d20d5b1f20778a2818745a42b5e33f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919181"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143152"
 ---
 # <a name="msbuild-concepts"></a>MSBuild 概念
 

@@ -1,6 +1,6 @@
 ---
-title: 键绑定元素 |Microsoft Docs
-description: 键绑定元素将键绑定元素和其他键绑定组分组。 本文包含一个示例。
+title: KeyBindings 元素|Microsoft Docs
+description: KeyBindings 元素对 KeyBinding 元素和其他 KeyBindings 分组进行分组。 本文包含一个示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +13,18 @@ ms.assetid: 26a15d5c-ddea-4977-af7f-d795ff09c7ad
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 128b28ff77515ac4b567ecdb8f536851da4d33ce
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 2ba02fee1d647dfd1813fdc0cf33588c553b5bce
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903367"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110288"
 ---
-# <a name="keybindings-element"></a>键绑定元素
-键绑定元素将键绑定元素和其他键绑定组分组。
+# <a name="keybindings-element"></a>KeyBindings 元素
+KeyBindings 元素对 KeyBinding 元素和其他 KeyBindings 分组进行分组。
 
 ## <a name="syntax"></a>语法
 
@@ -41,18 +42,18 @@ ms.locfileid: "112903367"
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[键绑定元素](../extensibility/keybinding-element.md)|指定命令的键盘快捷方式。|
-|[键绑定](../extensibility/keybindings-element.md)|将键绑定元素和其他键绑定分组分组。|
+|[KeyBinding 元素](../extensibility/keybinding-element.md)|指定命令的键盘快捷方式。|
+|[KeyBindings](../extensibility/keybindings-element.md)|对 KeyBinding 元素和其他 KeyBindings 分组进行分组。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
 |[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示命令的所有元素。|
 
@@ -67,6 +68,6 @@ ms.locfileid: "112903367"
 </KeyBindings>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [键绑定元素](../extensibility/keybinding-element.md)
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>请参阅
+- [KeyBinding 元素](../extensibility/keybinding-element.md)
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

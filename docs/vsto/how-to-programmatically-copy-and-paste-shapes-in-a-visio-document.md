@@ -1,5 +1,5 @@
 ---
-title: 以编程方式将形状Visio粘贴到文档中
+title: 以编程方式在文档中Visio形状
 description: 了解如何以编程方式在文档的一页上复制形状，并将其粘贴到同一文档中的新页面中。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 25614ebc43e57f3bf21e922d6e4dd6d325dde11b4e62642f77c21ac8082a356d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fb913dc14437f9593a656a5ae4eb02368b82493b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423886"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046602"
 ---
 # <a name="how-to-programmatically-copy-and-paste-shapes-in-a-visio-document"></a>如何：以编程方式将形状复制和粘贴到Visio文档中
   你可以以编程方式复制文档中某一页上的形状，并将其粘贴到同一文档中新的一页。 你可以选择将其粘贴到默认位置（活动窗口的中央），或将其粘贴到与在其原始页相同的坐标位置。

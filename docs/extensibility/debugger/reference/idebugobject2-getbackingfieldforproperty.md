@@ -1,6 +1,6 @@
 ---
-description: 获取字段或变量 (如果) 支持此对象表示的属性的任何变量。
-title: IDebugObject2：：GetBackingFieldForProperty |Microsoft Docs
+description: 如果任何可能支持此对象所表示的属性的) ，则获取字段或变量 (。
+title: IDebugObject2：： GetBackingFieldForProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0019f890f8f487d455e92854f812296fa7dffd94fdde62c13505db2ba69bfe4f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c1f89f6158620578be58884a764773cb77b930a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043162"
 ---
 # <a name="idebugobject2getbackingfieldforproperty"></a>IDebugObject2::GetBackingFieldForProperty
-获取字段或变量 (如果) 支持此对象表示的属性的任何变量。
+如果任何可能支持此对象所表示的属性的) ，则获取字段或变量 (。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int GetBackingFieldForProperty(
 
 ## <a name="parameters"></a>参数
 `ppObject`\
-[out]描述 [支持字段的 IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 对象。
+弄描述支持字段的 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回S_OK;否则，返回错误代码。
+ 如果成功，将返回 S_OK;否则，将返回错误代码。
 
 ## <a name="remarks"></a>备注
- [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)对象表示托管代码类属性，即具有 get 和/或 set 访问器的方法。 此类属性通常需要变量来包含 由 属性操作的值。 此变量称为支持字段。 如果对象没有支持字段，请确保返回 null 值：某些调用方可能不会注意返回值，而是查看 中是否返回了 null 值 `ppObject` 。
+ [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)对象表示托管代码类属性，即具有 get 和/或 set 访问器的方法。 此类属性通常需要一个变量来包含属性操作的值。 此变量称为支持字段。 如果该对象没有支持字段，则确保返回空值：某些调用方可能不会注意到返回值，而是查看中是否返回了 null 值 `ppObject` 。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

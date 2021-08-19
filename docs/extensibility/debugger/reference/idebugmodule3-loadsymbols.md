@@ -1,6 +1,6 @@
 ---
-description: 加载当前模块的符号。
-title: IDebugModule3：：LoadSymbols |Microsoft Docs
+description: 为当前模块加载符号。
+title: IDebugModule3：： LoadSymbols |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2b332182574f9801f1a1ef6eb139d46958851d725191bc1355f800c8161b1183
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ca735fe22c1bcb8aca5ae4150df7d4606c508e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307292"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043279"
 ---
 # <a name="idebugmodule3loadsymbols"></a>IDebugModule3::LoadSymbols
-加载当前模块的符号。
+为当前模块加载符号。
 
 ## <a name="syntax"></a>语法
 
@@ -43,10 +43,10 @@ int LoadSymbols();
  如果该方法成功，则它会返回 `S_OK`。 如果该方法失败，则会返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法从当前搜索路径加载符号 (调用 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) 方法) 。
+ 此方法从当前搜索路径加载符号 (可以通过调用 [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md) 方法) 来更改该符号。
 
- 此方法比方法[ReloadSymbols_Deprecated首选。](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md)
+ 此方法优于 [ReloadSymbols_Deprecated](../../../extensibility/debugger/reference/idebugmodule2-reloadsymbols-deprecated.md) 方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugModule3](../../../extensibility/debugger/reference/idebugmodule3.md)
 - [SetSymbolPath](../../../extensibility/debugger/reference/idebugengine3-setsymbolpath.md)

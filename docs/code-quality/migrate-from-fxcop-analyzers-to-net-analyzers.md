@@ -1,7 +1,7 @@
 ---
 title: 从 FxCop 分析器迁移到 .NET 分析器
 ms.custom: SEO-VS-2020
-description: 了解如何从 FxCop 分析器迁移到 .NET 分析器
+description: 了解如何从 FxCop 分析器迁移到 .NET 分析器。
 ms.date: 03/06/2020
 ms.topic: conceptual
 f1_keywords:
@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: ba0b545b41c3c23bef93b7dee86b0f188a01a7cd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 479c5cfdffa8c25960f2172592de37731dc6e5b2
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122106"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334617"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>从 FxCop 分析器迁移到 .NET 分析器
 
