@@ -6,6 +6,7 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.remove
 - vs.csharp.refactoring.reorder
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 01acbab7725effff5b2edbf8a80ab4f115fd2eff
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6a999635c8e59d8cac2969fe8fd80a98425cdfdf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935841"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151777"
 ---
 # <a name="change-a-method-signature-refactoring"></a>“更改方法签名”重构
 

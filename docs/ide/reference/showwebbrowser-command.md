@@ -13,14 +13,15 @@ ms.assetid: c6a4fbd6-8e9d-45cc-8b2f-93990d065e78
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9117360d795a8027812b2534311a846d0ee56e09
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66da9ebb378d16bb73910ed2b84e379ab5bfaa2c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957603"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150971"
 ---
 # <a name="showwebbrowser-command"></a>ShowWebBrowser 命令
 

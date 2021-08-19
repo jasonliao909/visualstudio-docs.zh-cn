@@ -12,17 +12,18 @@ ms.assetid: 3c47e646-ce9e-4dd3-8f1a-6dbd3827d407
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 48847a65a1c5b6f514a96e702b9d8e666ad09630
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 3d3926b151cc078dc879ebbe44ba3b902919bca3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105076792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127033"
 ---
 # <a name="idebugmemorycontext2add"></a>IDebugMemoryContext2::Add
 将指定的值添加到当前上下文，并返回新的上下文。
@@ -58,5 +59,5 @@ int Add(
 
  此方法必须始终生成新的上下文，即使生成的地址超出与此上下文关联的内存空间。 唯一的例外是，如果不能为新上下文分配任何内存，或者如果 `ppMemCxt` 是 null 值，则为 null 值 (这是) 错误。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

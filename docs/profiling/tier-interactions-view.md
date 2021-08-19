@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 350810bba477f5a86963862fb496cf05eaf2c810
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 16d2e3d6dd64ff5827376ffba1f1ee65f6b9860e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963180"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141098"
 ---
 # <a name="tier-interactions-view"></a>“层交互”视图
 

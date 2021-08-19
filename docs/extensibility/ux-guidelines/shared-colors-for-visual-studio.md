@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2389e47f132d6a3e45624d71709fdfba2a449650731baa37001bef38809c83bb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0818826989132a67be54d8aa35db8bad69251a82
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145349"
 ---
 # <a name="shared-colors-for-visual-studio"></a>Visual Studio 的共享颜色
 设计使用常见 Visual Studio shell 元素的 UI，或者希望 interface 元素与类似功能一致时，使用包定义文件中的现有标记名称来选择和分配颜色。 这可确保 UI 与整体 Visual Studio 环境保持一致，并确保它在添加或更新主题时自动更新。
@@ -141,7 +141,7 @@ ms.locfileid: "121339419"
 
 **复选框：按下状态**
 
-![按下复选框](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303-165_CheckboxPressed")<br />按下复选框
+![按下的复选框](../../extensibility/ux-guidelines/media/0303-165_checkboxpressed.png "0303-165_CheckboxPressed")<br />按下的复选框
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -152,7 +152,7 @@ ms.locfileid: "121339419"
 
 **复选框：焦点状态**
 
-![重点复选框](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />重点复选框
+![焦点复选框](../../extensibility/ux-guidelines/media/0303-166_checkboxfocused.png "0303-166_CheckboxFocused")<br />焦点复选框
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -161,15 +161,15 @@ ms.locfileid: "121339419"
 | 文本 | `CommonControls.CheckBoxTextFocused` |
 | 标志符号 | `CommonControls.CheckBoxGlyphFocused` |
 
-### <a name="drop-downs-and-combo-boxes"></a>下拉框和组合框
-![下拉/组合框 (红线) ](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />下拉/组合框 (红线) 
+### <a name="drop-downs-and-combo-boxes"></a>下拉列表和组合框
+![下拉/组合框 (红色) ](../../extensibility/ux-guidelines/media/0303-167_dropdowncomboboxredline.png "0303-167_DropDownComboBoxRedline")<br />下拉/组合框 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...对于文档中的下拉框和组合框。 | ...对于不是下拉框或组合框的任何 UI。 |
-| | ...对于命令栏[下拉](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)[框或组合框](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox)。 |
+| ...用于文档井中的下拉框和组合框。 | ...对于不是下拉框或组合框的任何 UI， 。 |
+| | ...命令栏[下拉列表或](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)组合[框 。](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandComboBox) |
 
-**下拉框和组合框：默认状态**
+**下拉列表和组合框：默认状态**
 
 ![默认下拉/组合框](../../extensibility/ux-guidelines/media/0303-168_dropdowncombobox.png "0303-168_DropDownComboBox")<br />默认下拉/组合框
 
@@ -182,9 +182,9 @@ ms.locfileid: "121339419"
 | 标志符号 | `CommonControls.ComboBoxGlyph` |
 | 标志符号背景 | `CommonControls.ComboBoxGlyphBackground` |
 
-**下拉框和组合框：禁用状态**
+**下拉列表和组合框：已禁用状态**
 
-![禁用的下拉/组合框](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />禁用的下拉/组合框
+![已禁用的下拉/组合框](../../extensibility/ux-guidelines/media/0303-169_dropdowncomboboxdisabled.png "0303-169_DropDownComboBoxDisabled")<br />已禁用的下拉/组合框
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -195,7 +195,7 @@ ms.locfileid: "121339419"
 | 标志符号 | `CommonControls.ComboBoxGlyphDisabled` |
 | 标志符号背景 | `CommonControls.ComboBoxGlyphBackgroundDisabled` |
 
-**下拉框和组合框：悬停状态**
+**下拉列表和组合框：悬停状态**
 
 ![悬停时的下拉/组合框](../../extensibility/ux-guidelines/media/0303-170_dropdowncomboboxhover.png "0303-170_DropDownComboBoxHover")<br />悬停时的下拉/组合框
 
@@ -208,9 +208,9 @@ ms.locfileid: "121339419"
 | 标志符号 | `CommonControls.ComboBoxGlyphHover` |
 | 标志符号背景 | `CommonControls.ComboBoxGlyphBackgroundHover` |
 
-**下拉框和组合框：按下状态**
+**下拉列表和组合框：按下状态**
 
-![按下的下拉/组合框](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />按下的下拉/组合框
+![按下的下拉框/组合框](../../extensibility/ux-guidelines/media/0303-171_dropdowncomboboxpressed.png "0303-171_DropDownComboBoxPressed")<br />按下的下拉框/组合框
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -232,9 +232,9 @@ ms.locfileid: "121339419"
 | 项文本 | `CommonControls.ComboBoxListItemText`<br /> `CommonControls.ComboBoxListItemTextHover`<br />`CommonControls.ComboBoxListItemTextPressed`<br />`CommonControls.ComboBoxListItemTextFocused` |
 | 背景阴影 | `CommonControls.ComboBoxListBackgroundShadow` |
 
-**下拉框和组合框：焦点状态**
+**下拉列表和组合框：聚焦状态**
 
-![具有焦点的下拉/组合框](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />具有焦点的下拉/组合框
+![具有焦点的下拉列表/组合框](../../extensibility/ux-guidelines/media/0303-172_dropdowncomboboxfocused.png "0303-172_DropDownComboBoxFocused")<br />具有焦点的下拉列表/组合框
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -245,7 +245,7 @@ ms.locfileid: "121339419"
 | 标志符号 | `CommonControls.ComboBoxGlyphFocused` |
 | 标志符号背景 | `CommonControls.ComboBoxGlyphBackgroundFocused` |
 
-**下拉列表和组合框：文本输入选择**
+**下拉框和组合框：文本输入选择**
 
 ![下拉/组合框文本输入选择](../../extensibility/ux-guidelines/media/0303-173_dropdowncomboboxtextinput.png "0303-173_DropDownComboBoxTextInput")<br />下拉/组合框文本输入选择
 
@@ -256,11 +256,11 @@ ms.locfileid: "121339419"
 ### <a name="tabular-data-grid-controls"></a>表格数据（网格）控件
 表格数据控件（也称为网格控件）是可以用于在多列中呈现大量数据的 Visual Studio 公共控件。 可以在 Visual Studio 中的多个位置中找到标准表格数据控件：错误列表工具窗口、IntelliTrace 报告和内存堆视图及其他位置。 始终使用提供的标准表格数据控件。 在某些极少数情况下，你可能无法访问标准表格数据控件。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他表格数据控件保持一致。
 
-![表格数据/网格控件 (红色) ](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />表格数据/网格控件 (红色) 
+![表格数据/网格控件 (红线) ](../../extensibility/ux-guidelines/media/0303-197_tabulardatagridcontrolredline.png "0303-197_TabularDataGridControlRedline")<br />表格数据/网格控件 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...对于表格或网格控件。 | ...对于不是表格控件或网格控件的任何 UI，为 。 |
+| ...对于表格或网格控件。 | ...对于不是表格或网格控件的任何 UI。 |
 
 #### <a name="column-headers"></a>列标题
 列标题由背景、边框、标题文本和可选标志符号（通常在网格按该列进行排序时使用）组成。
@@ -303,7 +303,7 @@ ms.locfileid: "121339419"
 | 前景（文本） | `Environment.CommandBarTextActive` |
 | 边框 | 无 |
 
-**列出视图项：活动状态**
+**列表视图项：活动状态**
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -311,7 +311,7 @@ ms.locfileid: "121339419"
 | 前景（文本） | `TreeView.SelectedItemActiveText` |
 | 边框 | 无 |
 
-**列出视图项：非活动状态**
+**列表视图项：非活动状态**
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -322,7 +322,7 @@ ms.locfileid: "121339419"
 ### <a name="ui-text"></a>UI 文本
 
 #### <a name="instructional-text"></a>说明文本
-说明文本对对话框或文档页中要执行哪些操作提供了重要的主要说明。
+说明文本简要说明了如何在对话框或文档页中执行的操作。
 
 ![默认说明文本](../../extensibility/ux-guidelines/media/0303_InstructionalText.png "0303_InstructionalText.png")<br />默认说明文本
 
@@ -331,7 +331,7 @@ ms.locfileid: "121339419"
 | 前景 (文本)  | `Environment.ControlText` |
 
 #### <a name="secondary-instructional-text"></a>辅助说明文本
-在包含大量文本和控件的文档页中，某些说明文本使用不同的颜色值。 这有助于传达最重要的信息，降低 UI 元素的总体密度。  (另请参阅以下提示 text.) 
+在包含大量文本和控件的文档页面中，某些说明文本将使用不同的颜色值。 这有助于传达最重要的信息并减小 UI 元素的总体密度。  (另请参阅下面有关提示文本的部分。 ) 
 
 ![辅助说明文本](../../extensibility/ux-guidelines/media/0303_SecondaryInstructionalText.png "0303_SecondaryInstructionalText.png")<br />辅助说明文本
 
@@ -340,7 +340,7 @@ ms.locfileid: "121339419"
 | 前景 (文本)  | `Environment.ControlEditHintText` |
 
 #### <a name="hint-text"></a>提示文本
-提示文本显示在空控件中、控件下方或空文档图面上，以向用户显示下一步要执行什么操作。 可以将提示文本与窗口或控件背景一同使用。
+提示文本显示在空控件中、控件下方或空文档图面上，以向用户显示下一步操作。 可以通过窗口或控件背景使用提示文本。
 
 **默认提示文本**
 
@@ -413,7 +413,7 @@ ms.locfileid: "121339419"
 ### <a name="infobars"></a>信息栏
 信息栏用于提供有关给定上下文的详细信息，始终出现在文档窗口或工具窗口顶部。
 
-![Infobar (红线) ](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infobar (红色) 
+![Infobar (红色) ](../../extensibility/ux-guidelines/media/0303-138_infobarredline.png "0303-138_InfobarRedline")<br />Infobar (红色) 
 
 | 使用。。。 | 请勿使用 ... |
 | --- | --- |
@@ -441,7 +441,7 @@ ms.locfileid: "121339419"
 
 **Infobar 关闭 &times; () 按钮：悬停状态**
 
-![信息栏 悬停 &times; () 按钮关闭](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />在悬停 &times; () "信息栏关闭"按钮
+![信息栏 悬停 &times; () 按钮关闭](../../extensibility/ux-guidelines/media/0303_InfobarCloseHover.png "0303_InfobarCloseHover.png")<br />信息栏 悬停 &times; () 按钮关闭
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -608,7 +608,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.ScrollBarArrowMouseOverBackground`<br /> (设置为与滚动条相同的颜色。 )  |
+| 背景 | `Environment.ScrollBarArrowMouseOverBackground`<br /> (设置为与滚动条相同的颜色。)  |
 | 前景（标志符号） | `Environment.ScrollBarArrowGlyphMouseOver` |
 
 **滚动条箭头：按下状态**
@@ -617,7 +617,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.ScrollBarArrowPressedBackground`<br /> (设置为与滚动条相同的颜色。 )  |
+| 背景 | `Environment.ScrollBarArrowPressedBackground`<br /> (设置为与滚动条相同的颜色。)  |
 | 前景（标志符号） | `Environment.ScrollBarArrowGlyphPressed` |
 
 ### <a name="search-boxes"></a><a name="BKMK_SearchBoxes"></a>搜索框
@@ -633,16 +633,16 @@ ms.locfileid: "121339419"
 
 - “已禁用”表示为当前上下文关闭了搜索功能。
 
-![搜索框 (红线) ](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />搜索框 (红线) 
+![搜索框 (红线) ](../../extensibility/ux-guidelines/media/0303-110_searchboxredline.png "0303-110_SearchBoxRedline")<br />搜索框 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...设计自定义搜索框时。 | ...对于不是搜索框的任何内容。 |
-| | ...对于不希望始终与搜索框 UI 匹配的任何内容。 |
+| ...设计自定义搜索框时。 | ...对于不是搜索框的 。 |
+| | ...对于不想始终与搜索框 UI 匹配任何内容。 |
 
-**聚焦搜索输入字段**
+**焦点搜索输入字段**
 
-![聚焦搜索输入字段](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />聚焦搜索输入字段
+![焦点搜索输入字段](../../extensibility/ux-guidelines/media/0303-111_searchinputfieldfocused.png "0303-111_SearchInputFieldFocused")<br />焦点搜索输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -651,9 +651,9 @@ ms.locfileid: "121339419"
 | 边框 | `SearchControl.FocusedBorder` |
 | Separator | `SearchControl.FocusedDropDownSeparator` |
 
-**失去焦点，活动搜索输入字段**
+**未聚焦的活动搜索输入字段**
 
-![失去焦点的搜索输入字段](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />失去焦点，活动搜索输入字段
+![失去焦点的搜索输入字段](../../extensibility/ux-guidelines/media/0303-114_searchinputfieldunfocused.png "0303-114_SearchInputFieldUnfocused")<br />未聚焦的活动搜索输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -662,9 +662,9 @@ ms.locfileid: "121339419"
 | 边框 | `SearchControl.UnfocusedBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
-**失去焦点，非活动搜索输入字段**
+**未聚焦的非活动搜索输入字段**
 
-![失去焦点，非活动搜索输入字段](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />失去焦点，非活动搜索输入字段
+![未聚焦的非活动搜索输入字段](../../extensibility/ux-guidelines/media/0303-114-1_searchinputfieldunfocusedinactive.png "0303-114-1_SearchInputFieldUnfocusedInactive")<br />未聚焦的非活动搜索输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -673,7 +673,7 @@ ms.locfileid: "121339419"
 | 边框 | `SearchControl.UnfocusedBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
-**突出显示的搜索输入字段 (纯文本)**
+**突出显示的搜索输入字段 (文本)**
 
 ![突出显示的搜索输入字段](../../extensibility/ux-guidelines/media/0303-120_searchinputfieldhighlight.png "0303-120_SearchInputFieldHighlight")<br />突出显示的搜索输入字段
 
@@ -684,9 +684,9 @@ ms.locfileid: "121339419"
 | 边框 | 无 |
 | Separator | `SearchControl.FocusedDropDownSeparator` |
 
-**已禁用搜索输入字段**
+**禁用的搜索输入字段**
 
-![已禁用搜索输入字段](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />已禁用搜索输入字段
+![禁用的搜索输入字段](../../extensibility/ux-guidelines/media/0303-121_searchinputfielddisabled.png "0303-121_SearchInputFieldDisabled")<br />禁用的搜索输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -695,9 +695,9 @@ ms.locfileid: "121339419"
 | 边框 | `SearchControl.DisabledBorder` |
 | Separator | `SearchControl.DropDownSeparator` |
 
-**聚焦搜索操作按钮**
+**"重点搜索操作"按钮**
 
-![已设定焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />聚焦搜索操作按钮
+![已设定焦点的搜索操作按钮](../../extensibility/ux-guidelines/media/0303-112_searchactionbuttonfocused.png "0303-112_SearchActionButtonFocused")<br />"重点搜索操作"按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -707,9 +707,9 @@ ms.locfileid: "121339419"
 | 前景（清除标志符号） | `SearchControl.ClearGlyph` |
 | 边框 | 不适用 |
 
-**失去焦点搜索操作按钮**
+**无焦点搜索操作按钮**
 
-![失去焦点搜索操作按钮](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />失去焦点搜索操作按钮
+![无焦点搜索操作按钮](../../extensibility/ux-guidelines/media/0303-115_searchactionbuttonunfocused.png "0303-115_SearchActionButtonUnfocused")<br />无焦点搜索操作按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -739,9 +739,9 @@ ms.locfileid: "121339419"
 | 前景（标志符号） | `SearchControl.ActionButtonDisabledGlyph` |
 | 边框 | 无 |
 
-**"重点搜索"下拉按钮**
+**聚焦搜索下拉按钮**
 
-!["重点搜索"下拉按钮](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />"重点搜索"下拉按钮
+![聚焦搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-113_searchdropdownbuttonfocused.png "0303-113_SearchDropdownButtonFocused")<br />聚焦搜索下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -749,9 +749,9 @@ ms.locfileid: "121339419"
 | 前景（标志符号） | `SearchControl.FocusedDropDownButtonGlyph` |
 | 边框 | `SearchControl.FocusedDropDownButtonBorder` |
 
-**"无焦点搜索"下拉按钮**
+**失去焦点搜索下拉按钮**
 
-!["无焦点搜索"下拉按钮](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />"无焦点搜索"下拉按钮
+![失去焦点搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-116_searchdropdownbuttonunfocused.png "0303-116_SearchDropdownButtonUnfocused")<br />失去焦点搜索下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -759,9 +759,9 @@ ms.locfileid: "121339419"
 | 前景（标志符号） | `SearchControl.UnfocusedDropDownButtonGlyph` |
 | 边框 | `SearchControl.UnfocusedDropDownButtonBorder` |
 
-**按下的搜索下拉按钮**
+**按下搜索下拉按钮**
 
-![按下的搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />按下的搜索下拉按钮
+![按下搜索下拉按钮](../../extensibility/ux-guidelines/media/0303-116-2_searchdropdownbuttonpressed.png "0303-116-2_SearchDropdownButtonPressed")<br />按下搜索下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -780,14 +780,14 @@ ms.locfileid: "121339419"
 | 边框 | 无 |
 
 #### <a name="search-drop-down-lists"></a>搜索下拉列表
-搜索框下拉菜单可能比搜索框中的其他下拉菜单稍微复杂一Visual Studio。 "建议的搜索"和"搜索选项"部分可以单独显示或一起显示在菜单中，并且每个部分单独着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。
+搜索框下拉菜单可能会比 Visual Studio 中的其他下拉菜单稍微复杂一些。 "建议的搜索" 和 "搜索选项" 部分可以在菜单中单独或一起显示，每个部分单独着色。 当这两个部分一起出现时，还会有一条线分隔它们，并且有一个边框环绕整个下拉菜单。
 
-![搜索下拉列表 (红线) ](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />搜索下拉列表 (红色) 
+![红线)  (搜索下拉列表 ](../../extensibility/ux-guidelines/media/0303-124_searchdropdownredline.png "0303-124_SearchDropdownRedline")<br />红线)  (搜索下拉列表
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...创建自定义搜索下拉列表时。 | ...对于显示在其他上下文中的下拉列表。 |
-| ...正确的列表组件的正确标记名称。 | ...在除指定外的任何背景/前景组合中。 |
+| ...在创建自定义搜索下拉列表时。 | ...对于在其他上下文中出现的下拉列表。 |
+| ...正确的列表组件的正确标记名称。 | ...在除指定之外的任何背景/前景组合中。 |
 
 **搜索下拉列表元素**
 
@@ -799,35 +799,35 @@ ms.locfileid: "121339419"
 
 **建议的搜索：默认状态**
 
-![默认建议搜索](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />默认建议搜索
+![建议的默认搜索](../../extensibility/ux-guidelines/media/0303-125_searchsuggested.png "0303-125_SearchSuggested")<br />建议的默认搜索
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupItemsListBackgroundGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `SearchControl.PopupItemsListBackgroundGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `SearchControl.PopupItemText` |
 
 **建议的搜索：悬停状态**
 
-![悬停时建议的搜索](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />悬停时建议的搜索
+![悬停时的建议搜索](../../extensibility/ux-guidelines/media/0303-128_searchsuggestedhover.png "0303-128_SearchSuggestedHover")<br />悬停时的建议搜索
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `SearchControl.PopupControlMouseOverBackgroundGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `SearchControl.PopupMouseOverItemText` |
 | 边框 | `SearchControl.PopupControlMouseOverBorder` |
 
 **搜索选项：默认状态**
 
-![搜索复选框](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />默认搜索选项 (复选框) 
+![搜索复选框](../../extensibility/ux-guidelines/media/0303-126_searchcheckbox.png "0303-126_SearchCheckbox")<br />默认的搜索选项 (复选框) 
 
-![搜索选项](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303-127_SearchOptions")<br />默认搜索选项 (链接) 
+![搜索选项](../../extensibility/ux-guidelines/media/0303-127_searchoptions.png "0303-127_SearchOptions")<br /> (链接的默认搜索选项) 
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `SearchControl.PopupSectionBackgroundGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `SearchControl.PopupSectionBackgroundGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（复选框文本） | `SearchControl.PopupCheckboxText` |
 | 前景（链接文本） | `SearchControl.PopupButtonText` |
-| 标题背景 | `SearchControl.PopupSectionHeaderGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 标题背景 | `SearchControl.PopupSectionHeaderGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（标题文本） | `SearchControl.PopupSectionHeaderText` |
 
 **搜索选项：悬停状态**
@@ -946,16 +946,16 @@ ms.locfileid: "121339419"
 ## <a name="shell-appearance"></a>Shell 外观
 
 ### <a name="background"></a>背景
-环境背景由两层组成。 下层是覆盖整个 IDE 的纯色。 上层位于命令架下，以及 IDE 左边缘和右边缘上的工具窗口自动隐藏通道之间。 在浅色和深色主题中，顶部和底部背景层设置为相同的颜色。
+环境背景由两层组成。 下层是覆盖整个 IDE 的纯色。 上层位于命令架下，以及 IDE 左边缘和右边缘上的工具窗口自动隐藏通道之间。 顶部和底部背景层在浅色和深色主题中设置为相同的颜色。
 
-![Visual Studio shell 背景 (红线) ](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Visual Studio shell 背景 (红线) 
+![Visual Studio shell 背景 (红色) ](../../extensibility/ux-guidelines/media/0303-187_shellbackgroundredline.png "0303-187_ShellBackgroundRedline")<br />Visual Studio shell 背景 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...要与 Visual Studio 环境的背景匹配的位置。 | ...作为不是背景图面的位置的填充。 |
-| | ...作为要在其上放置前景元素的背景。 |
+| ...用于要匹配环境背景Visual Studio的位置。 | ...作为不是背景图面的位置的填充。 |
+| | ...作为要放置前景元素的背景。 |
 
-**底层 shell 外观**
+**下层 shell 外观**
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -972,12 +972,12 @@ ms.locfileid: "121339419"
 ### <a name="command-shelf"></a>命令架
 有两组标记名称用于命令架背景：一组用于菜单栏所在的位置，另一组用于命令栏所在的位置。 单个命令栏组具有自己的背景色值（在“命令栏”部分中进行更详细的讨论）。 菜单栏和命令栏文本分别在菜单和命令栏部分中进行了讨论。
 
-![Visual Studio command 架子 (红线) ](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio command 架子 (红线) 
+![Visual Studio命令架 (红线) ](../../extensibility/ux-guidelines/media/0303-188_commandshelfredline.png "0303-188_CommandShelfRedline")<br />Visual Studio红线 (命令架) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
 | ...用于放置菜单或工具栏的区域。 | ...对于与命令架不相似的区域。 |
-|...具有正确背景/前景标记名称组合的。 | |
+|...使用正确的背景/前台令牌名称组合。 | |
 
 **命令架菜单栏**
 
@@ -987,7 +987,7 @@ ms.locfileid: "121339419"
 | --- | --- |
 | 背景 | `Environment.CommandShelfHighlightGradientBegin`<br /><br />`Environment.CommandShelfHighlightGradientMiddle`<br />`Environment.CommandShelfHighlightGradientEnd` |
 
-**命令盘架命令栏**
+**命令架命令栏**
 
 > 在 Visual Studio 2013 浅色和深色主题中设置为相同颜色值的梯度停止点。
 
@@ -1000,19 +1000,19 @@ ms.locfileid: "121339419"
 
 ![清单设计器 (红线) ](../../extensibility/ux-guidelines/media/0303-175_manifestdesignerredline.png "0303-175_ManifestDesignerRedline")<br />清单设计器 (红线) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...对于类似于清单设计器的设计器。 | ...如果有六个以上的选项卡。 |
-| ...在文档中的编辑器的顶部使用公共选项卡控件。 | ...对于不像清单设计器那样构造的任何 UI。 |
+| ...对于类似于清单设计器的设计器。 | ...如果选项卡超过 6 个，则为 。 |
+| ...，用于使用文档井中编辑器顶部的常用选项卡控件。 | ...对于未像清单设计器那样结构化的任何 UI。 |
 
-**清单设计器选定的选项卡：默认状态**
+**"清单设计器"所选选项卡：默认状态**
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.TabActive` |
 | 边框 | 无 |
 
-**清单设计器选定的说明窗格：默认状态**
+**清单设计器所选说明窗格：默认状态**
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1023,7 +1023,7 @@ ms.locfileid: "121339419"
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `ManifestDesigner.Background` |
-| 对话框帮助程序文本 | `ManifestDesigner.WatermarkText`<br /> (此标记名称与其功能不匹配。 )  |
+| 对话框帮助程序文本 | `ManifestDesigner.WatermarkText`<br /> (此令牌名称与它的 function.)  |
 
 **清单设计器选项卡：未选择状态**
 
@@ -1039,15 +1039,15 @@ ms.locfileid: "121339419"
 
 ## <a name="command-structures"></a>命令结构
 
-### <a name="menus"></a><a name="BKMK_CommandMenus"></a> 弹出式
-菜单可能出现在 Visual Studio 中的多个位置：主菜单栏、嵌入在文档或工具窗口中，或者在整个 IDE 的各个位置右键单击。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。
+### <a name="menus"></a><a name="BKMK_CommandMenus"></a> 菜单
+菜单可以出现在 Visual Studio 中的多个位置：主菜单栏，嵌入在文档或工具窗口中，或者右键单击整个 IDE 的各个位置。 与其他 UI 元素关联的菜单的实现在针对相应元素的部分中进行讨论。 应始终使用由 Visual Studio 环境提供的标准菜单实现。 但是，在某些极少数情况下，你可能无法访问标准 Visual Studio 菜单。 在这些情况下，请使用以下标记名称以确保 UI 与 Visual Studio 中的其他菜单保持一致。
 
-![Visual Studio "菜单 (红线) ](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Visual Studio "菜单 (红线) 
+![Visual Studio菜单 (红色) ](../../extensibility/ux-guidelines/media/0303-000_menuredline.png "0303-000_MenuRedline")<br />Visual Studio菜单 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...需要创建自定义菜单时。| ...单独的背景色。 始终使用指定的背景/前景组合。 |
-| ...当你有一个要与 Visual Studio 菜单匹配的新 UI 组件时。| |
+| ...需要创建自定义菜单时。| ...背景色。 始终使用指定的背景/前景组合。 |
+| ...如果具有要与菜单匹配的新 UI Visual Studio。| |
 
 #### <a name="menu-titles"></a>菜单标题
 菜单标题由背景、边框和标题文本以及可选的标志符号（通常是在菜单位于命令栏中使用）组成。
@@ -1266,7 +1266,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `Environment.CommandBarTextMouseDown` |
 | 边框 | `Environment.CommandBarBorder` |
 
@@ -1283,18 +1283,18 @@ ms.locfileid: "121339419"
 #### <a name="command-bar-combo-boxes"></a><a name="BKMK_CommandComboBox"></a> 命令栏组合框
 
 > [!IMPORTANT]
-> 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉列表不包含可编辑的文本区域，请使用命令栏下拉列表 [的颜色标记](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)。
+> 组合框类似于下拉列表，但包含一个可编辑文本区域。 如果下拉不包含可编辑文本区域，请使用 [命令栏下拉](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandDropDown)标记的颜色标记。
 
-![命令栏组合框红线](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />命令栏组合框 (红色) 
+!["命令栏" 组合框红线](../../extensibility/ux-guidelines/media/0303-029_comboboxredline.png "0303-029_ComboBoxRedline")<br />"命令栏" 组合框 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...生成自定义组合框时。 | ...对于不希望始终与命令栏 UI 匹配任何内容。 |
-| ...创建类似于组合框的命令栏控件时。 | ...如果有权访问样式组合框，为 。 |
+| ...生成自定义组合框时。 | ...对于您不希望始终与命令栏 UI 匹配的任何内容。 |
+| ...创建类似于组合框的命令栏控件时。 | ...当你有权访问具有样式的组合框时。 |
 
-**命令栏组合框输入字段：默认状态**
+**"命令栏" 组合框输入字段：默认状态**
 
-![命令栏组合框输入字段](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />命令栏组合框输入字段
+!["命令栏" 组合框输入字段](../../extensibility/ux-guidelines/media/0303-030_comboboxinputfield.png "0303-030_ComboBoxInputField")<br />"命令栏" 组合框输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1305,7 +1305,7 @@ ms.locfileid: "121339419"
 
 **命令栏下拉按钮：默认状态**
 
-![组合框下拉&#45;按钮](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />命令栏下拉按钮
+![组合框拖放&#45;向下按钮](../../extensibility/ux-guidelines/media/0303-031_comboboxdropdownbutton.png "0303-031_ComboBoxDropdownButton")<br />命令栏下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1318,24 +1318,24 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxPopupBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.ComboBoxPopupBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `Environment.ComboBoxItemText` |
 | 边框 | `Environment.ComboBoxPopupBorder` |
 
-**命令栏组合框输入字段：悬停状态**
+**"命令栏" 组合框输入字段：悬停状态**
 
-![悬停时的命令栏组合框输入字段](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />悬停时的命令栏组合框输入字段
+![悬停时的 "命令栏" 组合框输入字段](../../extensibility/ux-guidelines/media/0303-033_comboboxinputfieldhover.png "0303-033_ComboBoxInputFieldHover")<br />悬停时的 "命令栏" 组合框输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.ComboBoxMouseOverBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.ComboBoxMouseOverBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `Environment.ComboBoxMouseOverText` |
 | 边框 | `Environment.ComboBoxMouseOverBorder` |
 | Separator | `Environment.ComboBoxMouseOverSeparator` |
 
  **命令栏下拉按钮：悬停状态**
 
-![悬停时的命令栏组合框下拉按钮](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />悬停时的命令栏下拉按钮
+![悬停时的 "命令栏" 组合框下拉按钮](../../extensibility/ux-guidelines/media/0303-034_comboboxdropdownbuttonhover.png "0303-034_ComboBoxDropdownButtonHover")<br />悬停时的命令栏下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1344,7 +1344,7 @@ ms.locfileid: "121339419"
 
 **命令栏下拉列表：悬停状态**
 
- ![悬停时的命令栏组合框下拉列表](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />悬停时的命令栏下拉列表
+ ![悬停时的 "命令栏" 组合框下拉列表](../../extensibility/ux-guidelines/media/0303-035_comboboxdropdownlisthover.png "0303-035_ComboBoxDropdownListHover")<br />悬停时的命令栏下拉列表
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1352,9 +1352,9 @@ ms.locfileid: "121339419"
 | 前景（文本） | `Environment.ComboBoxItemMouseOverText` |
 | 边框（菜单项） | `Environment.ComboBoxItemMouseOverBorder` |
 
- **命令栏组合框输入字段：焦点状态**
+ **"命令栏" 组合框输入字段：焦点状态**
 
-![聚焦的命令栏组合框输入字段](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />聚焦的命令栏组合框输入字段
+![焦点命令栏组合框输入字段](../../extensibility/ux-guidelines/media/0303-036_comboboxinputfieldfocused.png "0303-036_ComboBoxInputFieldFocused")<br />焦点命令栏组合框输入字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1365,14 +1365,14 @@ ms.locfileid: "121339419"
 
 **命令栏下拉按钮：焦点状态**
 
-![焦点命令栏下拉按钮](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />焦点命令栏下拉按钮
+![重点命令栏下拉按钮](../../extensibility/ux-guidelines/media/0303-037_comboboxdropdownbuttonfocused.png "0303-037_ComboBoxDropdownButtonFocused")<br />重点命令栏下拉按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ComboBoxFocusedButtonBackground` |
 | 前景（标志符号） | `Environment.ComboBoxFocusedGlyph` |
 
- **命令栏组合框输入字段：按下状态**
+ **"命令栏" 组合框输入字段：按下状态**
 
 ![按下的命令栏组合框输入字段](../../extensibility/ux-guidelines/media/0303-038_comboboxinputfieldpressed.png "0303-038_ComboBoxInputFieldPressed")<br />按下的命令栏组合框输入字段
 
@@ -1505,9 +1505,9 @@ ms.locfileid: "121339419"
 | 背景 | `Environment.DropDownButtonMouseDownBackground` |
 | 前景（标志符号） | `Environment.DropDownMouseDownGlyph` |
 
-**命令栏下拉选择字段：已禁用状态**
+**命令栏下拉列表选择字段：禁用状态**
 
-![禁用的命令栏下拉选择字段](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />禁用的命令栏下拉选择字段
+![禁用的命令栏下拉列表选择字段](../../extensibility/ux-guidelines/media/0303-051_dropdownselectionfielddisabled.png "0303-051_DropdownSelectionFieldDisabled")<br />禁用的命令栏下拉列表选择字段
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1526,14 +1526,14 @@ ms.locfileid: "121339419"
 | 前景（标志符号） | `Environment.DropDownDisabledGlyph` |
 
 #### <a name="command-bar-split-buttons"></a>命令栏拆分按钮
-拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是 [命令栏菜单](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)的实现。
+拆分按钮与其他命令栏控件（如按钮、菜单和命令栏文本）共享许多令牌名称。 为方便起见，在此处重复了所有必要的操作和下拉按钮令牌名称。 拆分按钮下拉列表是命令栏 [菜单 的实现](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_CommandMenus)。
 
-![“拆分”按钮红线](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />命令栏拆分按钮 (红线) 
+![“拆分”按钮红线](../../extensibility/ux-guidelines/media/0303-053_splitbuttonredline.png "0303-053_SplitButtonRedline")<br />命令栏拆分按钮 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...创建自定义拆分按钮时。 | ...对于其他类型的按钮。 |
-| | ...在除指定之外的任何背景/前景组合中。 |
+| ...创建自定义拆分按钮时。 | ...对于其他类型的按钮，为 。 |
+| | ...在除指定外的任何背景/前景组合中。 |
 
 **命令栏拆分按钮：默认状态**
 
@@ -1553,7 +1553,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
+| 背景 | `Environment.CommandBarMouseOverBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
 | 前景（文本） | `Environment.CommandBarTextHover` |
 | 前景（标志符号） | `Environment.CommandBarSplitButtonMouseOverGlyph` |
 | 边框 | `Environment.CommandBarBorder` |
@@ -1561,17 +1561,17 @@ ms.locfileid: "121339419"
 
 **命令栏拆分按钮：按下状态**
 
-![按下命令栏拆分按钮](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />按下命令栏拆分按钮
+![按下的命令栏拆分按钮](../../extensibility/ux-guidelines/media/0303-056_splitbuttonpressed.png "0303-056_SplitButtonPressed")<br />按下的命令栏拆分按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
+| 背景 | `Environment.CommandBarMouseDownBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
 | 前景（文本） | `Environment.CommandBarTextMouseDown` |
 | 前景（标志符号） | `Environment.CommandBarSplitButtonMouseDownGlyph` |
 | 边框 | `Environment.CommandBarBorder` |
 | Separator | 不适用 |
 
-**命令栏拆分按钮：已禁用状态**
+**命令栏拆分按钮：禁用状态**
 
 ![禁用的命令栏拆分按钮](../../extensibility/ux-guidelines/media/0303-057_splitbuttondisabled.png "0303-057_SplitButtonDisabled")<br />禁用的命令栏拆分按钮
 
@@ -1583,63 +1583,63 @@ ms.locfileid: "121339419"
 | 边框 | 不适用 |
 | Separator | 不适用 |
 
-#### <a name="command-bar-more-options-and-overflow-buttons"></a>命令栏的 "更多选项" 和 "溢出" 按钮
+#### <a name="command-bar-more-options-and-overflow-buttons"></a>命令栏"更多选项"和"溢出"按钮
 通过添加或删除相关命令栏按钮来自定义命令栏组时，可使用“更多选项”按钮。 命令栏由于水平空间不足而被截断，以及在单击操作中显示包含无法显示的命令栏按钮的菜单时，会出现“溢出”按钮。 这两个按钮的颜色通过一组相同的标记名称进行控制。
 
-![命令栏中的 "更多选项" 按钮 (红线) ](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />命令栏中的 "更多选项" 按钮 (红线) 
+![命令栏"更多选项"按钮 (红色) ](../../extensibility/ux-guidelines/media/0303-058_moreoptionsredline.png "0303-058_MoreOptionsRedline")<br />命令栏"更多选项"按钮 (红色) 
 
-| 使用 .。。 | 请勿使用 .。。 |
+| 使用。。。 | 请勿使用 ... |
 | --- | --- |
-| ...对于自定义 "更多选项" 或 "溢出" 按钮。 | ...对于没有类似于 "更多选项" 或 "溢出" 按钮的功能的按钮。 |
+| ...用于自定义"更多选项"或"溢出"按钮。 | ...对于没有类似于"更多选项"或"溢出"按钮功能的按钮。 |
 
-**命令栏的 "更多选项" 和 "溢出" 按钮：默认状态**
+**命令栏"更多选项"和"溢出"按钮：默认状态**
 
-![默认命令栏的 "更多选项" 按钮](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />默认命令栏的 "更多选项" 按钮
+![默认命令栏"更多选项"按钮](../../extensibility/ux-guidelines/media/0303-059_moreoptions.png "0303-059_MoreOptions")<br />默认命令栏"更多选项"按钮
 
-![默认命令栏 "溢出" 按钮](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />默认命令栏 "溢出" 按钮
+![默认命令栏"溢出"按钮](../../extensibility/ux-guidelines/media/0303-060_overflow.png "0303-060_Overflow")<br />默认命令栏"溢出"按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.CommandBarOptionsBackground` |
 | 前景（标志符号） | `Environment.CommandBarOptionsGlyph` |
 
-**命令栏"更多选项"和"溢出"按钮：悬停状态**
+**命令栏的 "更多选项" 和 "溢出" 按钮：悬停状态**
 
-![悬停时的命令栏"更多选项"按钮](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />悬停时的命令栏"更多选项"按钮
+![悬停时的命令栏 "更多选项" 按钮](../../extensibility/ux-guidelines/media/0303-061_moreoptionshover.png "0303-061_MoreOptionsHover")<br />悬停时的命令栏 "更多选项" 按钮
 
-![悬停时的命令栏"溢出"按钮](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />悬停时的命令栏"溢出"按钮
+![悬停时的命令栏 "溢出" 按钮](../../extensibility/ux-guidelines/media/0303-062_overflowoptions.png "0303-062_OverflowOptions")<br />悬停时的命令栏 "溢出" 按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.CommandBarOptionsMouseOverBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（标志符号） | `Environment.CommandBarOptionsMouseDownGlyph` |
 
-**命令栏"更多选项"和"溢出"按钮：按下状态**
+**命令栏的 "更多选项" 和 "溢出" 按钮：按下状态**
 
-![按下的命令栏"更多选项"按钮](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />按下的命令栏"更多选项"按钮
+![按下命令栏的 "更多选项" 按钮](../../extensibility/ux-guidelines/media/0303-063_moreoptionspressed.png "0303-063_MoreOptionsPressed")<br />按下命令栏的 "更多选项" 按钮
 
-![按下的“溢出”](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />按下的命令栏"溢出"按钮
+![按下的“溢出”](../../extensibility/ux-guidelines/media/0303-064_overflowpressed.png "0303-064_OverflowPressed")<br />按下命令栏的 "溢出" 按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.CommandBarOptionsMouseDownBackgroundBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（标志符号） | `Environment.CommandBarOptionsMouseDownGlyph` |
 
 ## <a name="document-windows"></a>文档窗口
-无需复制文档窗口，因为它们由Visual Studio提供。 但是，你可能会决定要利用文档窗口中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。
+无需复制文档窗口，因为它们由 Visual Studio 环境提供。 但是，你可能会决定要利用文档窗口中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。
 
-使用文档窗口颜色标记时，请注意仅将其用于类似的元素，并且始终成对使用。 如果不这样做，UI 中可能会收到意外结果。
+使用文档窗口颜色标记时，请注意仅将它们用于类似元素，并且始终成对使用。 否则，你可能会在 UI 中收到意外结果。
 
 ### <a name="document-window-frames"></a>文档窗口框架
-文档窗口可以在 IDE 中停靠或作为单独窗口浮动。 当文档窗口在 IDE 外部浮动时，它仍位于文档井中，并且具有与作为 IDE 一部分时相同的背景、边框、文本和选项卡颜色。 但是，文档位于具有自己的背景、边框和文本颜色的框架中。 当工具窗口停靠在文档井中时，它们会从文档窗口标记名称继承其选项卡的行为和颜色。
+文档窗口可以在 IDE 中停靠或作为单独窗口浮动。 当文档窗口在 IDE 外部浮动时，它仍然处于文档中，并且具有与在 IDE 的一部分时相同的背景、边框、文本和选项卡颜色。 但是，文档位于具有自己的背景、边框和文本颜色的框架中。 当工具窗口停靠在文档井中时，它们会从文档窗口标记名称继承其选项卡的行为和颜色。
 
-![停靠的文档窗口 (红色) ](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />停靠的文档窗口 (红色) 
+![停靠文档窗口 (红线) ](../../extensibility/ux-guidelines/media/0303-065_dockeddocumentwindowredline.png "0303-065_DockedDocumentWindowRedline")<br />停靠文档窗口 (红线) 
 
-![浮动文档窗口 (红色) ](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />浮动文档窗口 (红色) 
+![浮动文档窗口 (红线) ](../../extensibility/ux-guidelines/media/0303-066_floatingdocumentwindowredline.png "0303-066_FloatingDocumentWindowRedline")<br />浮动文档窗口 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...要创建与文档窗口匹配的 UI 的任何位置。 | ... 对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
+| ...在其中创建要与文档窗口匹配的 UI 的任何位置。 | ... 对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
 
 **停靠或浮动文档窗口：默认状态**
 
@@ -1649,9 +1649,9 @@ ms.locfileid: "121339419"
 | 前景（文本） | 取决于文档类型 |
 | 边框 | `Environment.ToolWindowBorder` |
 
-**有焦点的浮动文档窗口框架：默认状态**
+**聚焦的浮动文档窗口框架：默认状态**
 
-![默认聚焦的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />默认聚焦的浮动文档窗口框架
+![默认焦点，浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-067_framefocused.png "0303-067_FrameFocused")<br />默认焦点，浮动文档窗口框架
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1661,9 +1661,9 @@ ms.locfileid: "121339419"
 | 边框 | `Environment.MainWindowActiveDefaultBorder` |
 | 边框（标志符号） | `Environment.RaftedWindowButtonActiveBorder`<br /> (设置为透明)  |
 
-**无焦点的浮动文档窗口框架：默认状态**
+**失去焦点，浮动文档窗口框架：默认状态**
 
-![默认未聚焦的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />默认未聚焦的浮动文档窗口框架
+![默认的失去焦点，浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-068_frameunfocused.png "0303-068_FrameUnfocused")<br />默认的失去焦点，浮动文档窗口框架
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1675,7 +1675,7 @@ ms.locfileid: "121339419"
 
 **聚焦的浮动文档窗口框架：悬停状态**
 
-![悬停时聚焦的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />悬停时聚焦的浮动文档窗口框架
+![悬停时的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-069_framefocusedhover.png "0303-069_FrameFocusedHover")<br />悬停时的浮动文档窗口框架
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1683,9 +1683,9 @@ ms.locfileid: "121339419"
 | 前景（标志符号） | `Environment.RaftedWindowButtonHoverActiveGlyph` |
 | 边框（标志符号） | `Environment.RaftedWindowButtonHoverActiveBorder` |
 
-**未聚焦的浮动文档窗口框架：悬停状态**
+**失去焦点，浮动文档窗口框架：悬停状态**
 
-![悬停时未聚焦的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />悬停时未聚焦的浮动文档窗口框架
+![悬停时的失去焦点，浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-070_frameunfocusedhover.png "0303-070_FrameUnfocusedHover")<br />悬停时的失去焦点，浮动文档窗口框架
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1695,7 +1695,7 @@ ms.locfileid: "121339419"
 
 **聚焦的浮动文档窗口框架：按下状态**
 
-![按下时有焦点的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />按下时有焦点的浮动文档窗口框架
+![专注于按下的浮动文档窗口框架](../../extensibility/ux-guidelines/media/0303-071_framefocusedpressed.png "0303-071_FrameFocusedPressed")<br />专注于按下的浮动文档窗口框架
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1732,7 +1732,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabSelectedGradientTop`<br /> (的 UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.FileTabSelectedGradientTop`<br /> (UI.) 中未用于此标记的渐变停止)  |
 | 前景（文本） | `Environment.FileTabSelectedText` |
 | 边框 | `Environment.FileTabSelectedBorder`<br /> (设置为与 background.)  |
 | 文档边框 | `Environment.FileTabDocumentBorderBackground` |
@@ -1743,7 +1743,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabInactiveGradientTop`<br /> (的 UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.FileTabInactiveGradientTop`<br /> (UI.) 中未用于此标记的渐变停止)  |
 | 前景（文本） | `Environment.FileTabInactiveText` |
 | 边框 | `Environment.FileTabInactiveBorder`<br /> (设置为与 background.)  |
 | 文档边框 | `Environment.FileTabInactiveDocumentBorderBackground` |
@@ -1764,7 +1764,7 @@ ms.locfileid: "121339419"
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.FileTabHotGradientTop`<br /> (的 UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.FileTabHotGradientTop`<br /> (UI.) 中未用于此标记的渐变停止)  |
 | 前景（文本） | `Environment.FileTabHotText` |
 | 边框 | `Environment.FileTabHotBorder`<br /> (设置为与 background.)  |
 
@@ -1911,7 +1911,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 **关闭 &times; () 标志符号：默认状态**
 
-![默认关闭 &times; () 标记标志符号](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />默认关闭 &times; () 标记标志符号
+![默认关闭 &times; () 标志符号](../../extensibility/ux-guidelines/media/0303-181_tagglyph.png "0303-181_TagGlyph")<br />默认关闭 &times; () 标记标志符号
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1920,7 +1920,7 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 
 **关闭 &times; () 标志符号：悬停状态**
 
-![悬 &times; () 标记标志符号关闭](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />悬停 &times; () 标记标志符号
+![悬 &times; () 标记标志符号关闭](../../extensibility/ux-guidelines/media/0303-182_tagglyphhover.png "0303-182_TagGlyphHover")<br />悬 &times; () 标记标志符号关闭
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1928,9 +1928,9 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 | 前景（标志符号） | `Tag.TagHoverGlyphHover` |
 | 边框 | `Tag.TagHoverGlyphHoverBorder` |
 
-**关闭 &times; () 标志符号：按下状态**
+**关闭 (&times;) 标记字形：按下状态**
 
-![按"关闭 &times; () 标记标志符号](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />按"关闭 &times; () 标记标志符号
+![按下的关闭 (&times;) 标记标志符号](../../extensibility/ux-guidelines/media/0303-183_tagglyphpressed.png "0303-183_TagGlyphPressed")<br />按下的关闭 (&times;) 标记标志符号
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1938,18 +1938,18 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 | 前景（标志符号） | `Tag.TagHoverGlyphPressed` |
 | 边框 | `Tag.TagHoverGlyphPressedBorder` |
 
-**具有"关闭" () &times; 标志符号的选定标记：默认状态**
+**具有 Close (&times;) 标志符号的选定标记：默认状态**
 
-![使用"关闭"标志符号 &times; () 标记](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />使用"关闭"标志符号 &times; () 标记
+![默认选定标记 (&times;) 标志符号关闭](../../extensibility/ux-guidelines/media/0303-184_tagselected.png "0303-184_TagSelected")<br />默认选定标记 (&times;) 标志符号关闭
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | 不适用 |
 | 前景（标志符号） | `Tag.TagSelectedGlyph` |
 
-**使用"关闭"标记 &times; () 标志符号：悬停状态**
+**选定标记 (&times;) 标志符号关闭）：悬停状态**
 
-![悬停时具有"关闭 &times; () 标志符号的选定标记](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />悬停时具有"关闭 &times; () 标志符号的选定标记
+![&times;悬停时 () 标志符号的选定标记](../../extensibility/ux-guidelines/media/0303-185_tagselectedhover.png "0303-185_TagSelectedHover")<br />&times;悬停时 () 标志符号的选定标记
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1957,9 +1957,9 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 | 前景（标志符号） | `Tag.TagSelectedGlyphHover` |
 | 边框 | `Tag.TagSelectedGlyphHoverBorder` |
 
-**使用"关闭 &times; " () 标志符号的选定标记：按下状态**
+**选定标记 (&times;) 标志符号：按下状态**
 
-![选定，按下标记，使用"关闭 &times; () 标志符号](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />选定并按下标记，使用"关闭 &times; () 标志符号
+![按下的选定标记 (&times;) 标志符号](../../extensibility/ux-guidelines/media/0303-186_tagselectedpressed.png "0303-186_TagSelectedPressed")<br />按下的选定标记 (&times;) 标志符号
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -1968,44 +1968,44 @@ Visual Studio 支持标记，这使用户可以声明可搜索的关键字以用
 | 边框 | `Tag.TagSelectedGlyphPressedBorder` |
 
 ## <a name="tool-windows"></a>工具窗口
-无需复制工具窗口，因为它们由Visual Studio提供。 但是，你可能会决定要利用工具窗口中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。
+无需复制工具窗口，因为它们由 Visual Studio 环境提供。 但是，你可能会决定要利用工具窗口中使用的颜色，以便你的 UI 显示方式始终与这部分 Visual Studio 环境一致。
 
-![工具窗口 (红色) ](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />工具窗口 (红色) 
+![工具窗口 (红线) ](../../extensibility/ux-guidelines/media/0303-087_toolwindowredline.png "0303-087_ToolWindowRedline")<br />工具窗口 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...要创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
+| ...在其中创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
 
 ### <a name="tool-window-frame"></a>工具窗口框架
 Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个不同状态中的一个状态存在。 如果工具窗口处于打开状态，则它可以分配到文档区域四边的任何一边。 工具窗口还可以在 IDE 外部浮动，从而使它们可以在用户屏幕中的任何位置重新定位。 浮动窗口始终位于 IDE 顶部。 最后，工具窗口可以作为文档窗口停靠，并显示为文档井中的选项卡。 作为文档窗口停靠的工具窗口会使用文档窗口标记名称进行部分着色。
 
-![工具窗口框架 (红线) ](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />工具窗口框架 (红色) 
+![工具窗口框架 (红线) ](../../extensibility/ux-guidelines/media/0303-088_toolwindowframeredline.png "0303-088_ToolWindowFrameRedline")<br />工具窗口框架 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ... 要创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
+| ... 在其中创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
 
-**停靠的工具窗口**
+**停靠工具窗口**
 
-![停靠的工具窗口](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />停靠的工具窗口
+![停靠工具窗口](../../extensibility/ux-guidelines/media/0303-089_toolwindowdocked.png "0303-089_ToolWindowDocked")<br />停靠工具窗口
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowBackground` |
 | 边框 | `Environment.ToolWindowBorder` |
 
-**浮动的聚焦工具窗口**
+**浮动、聚焦的工具窗口**
 
-![浮动的聚焦工具窗口](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />浮动的聚焦工具窗口
+![浮动、聚焦的工具窗口](../../extensibility/ux-guidelines/media/0303-090_toolwindowfocused.png "0303-090_ToolWindowFocused")<br />浮动、聚焦的工具窗口
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolWindowBackground` |
 | 边框 | `Environment.MainWindowActiveDefaultBorder` |
 
-**浮动、未聚焦的工具窗口**
+**浮动，失去焦点工具窗口**
 
-![浮动、未聚焦的工具窗口](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />浮动、未聚焦的工具窗口
+![浮动，失去焦点工具窗口](../../extensibility/ux-guidelines/media/0303-091_toolwindowunfocused.png "0303-091_ToolWindowUnfocused")<br />浮动，失去焦点工具窗口
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -2013,13 +2013,13 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 边框 | `Environment.MainWindowInactiveBorder` |
 
 ### <a name="toolbox-like-windows"></a>类似工具箱的窗口
-工具箱是工具中最常用的工具窗口之一Visual Studio。 它实质上是应用了特殊主题和样式的树控件。
+工具箱是 Visual Studio 最常用的常见工具窗口之一。 它实质上是应用了特殊主题和样式的树控件。
 
-![类似工具箱的窗口 (红色) ](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />类似工具箱的窗口 (红色) 
+![类似工具箱的窗口 (红线) ](../../extensibility/ux-guidelines/media/0303-189_toolboxredline.png "0303-189_ToolboxRedline")<br />类似工具箱的窗口 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...设计希望始终与 shell 工具箱一致的工具窗口时。 | ...对于与工具箱 UI 不相似的任何内容，或者不确定如果 shell 工具箱颜色更改，UI 是否出现问题。 |
+| ...在设计希望始终与 shell 工具箱保持一致的工具窗口时。 | ...对于不类似于工具箱 UI 的任何内容，或者如果不确定 UI 在 shell 工具箱颜色更改时是否会出现问题。 |
 
 **工具箱节点：默认状态**
 
@@ -2030,7 +2030,7 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 元素 | 标记名称：Category.color |
 | --- | --- |
 | 背景 | `Environment.ToolboxContent`<br /> (标题)  |
-| 背景 | `Environment.ToolWindowBackground`<br /> (单个项，如果没有可用的控件，则显示整个)  |
+| 背景 | `Environment.ToolWindowBackground`<br /> (单个项，或整个窗口（如果没有可用控件）)  |
 | 边框 | 无 |
 | 前景（标志符号） | `Environment.ToolboxContent` |
 | 前景（文本） | `Environment.ToolboxContent` |
@@ -2041,15 +2041,15 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.ToolboxContentMouseOver`<br /> (单个项)  |
+| 背景 | `Environment.ToolboxContentMouseOver`<br />仅 (单个项)  |
 | 边框 | 无 |
-| 前景（文本） | `Environment.ToolboxContentMouseOver`<br /> (单个项)  |
+| 前景（文本） | `Environment.ToolboxContentMouseOver`<br />仅 (单个项)  |
 
 **选定的工具箱节点：焦点状态**
 
-![聚焦的选定工具箱父节点](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />聚焦的选定工具箱父节点
+![重点，选定的工具箱父节点](../../extensibility/ux-guidelines/media/0303-193_toolboxparentnodefocused.png "0303-193_ToolboxParentNodeFocused")<br />重点，选定的工具箱父节点
 
-![聚焦的选定工具箱子节点](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />聚焦的选定工具箱子节点
+![重点，选定的工具箱子节点](../../extensibility/ux-guidelines/media/0303-194_toolboxchildnodefocused.png "0303-194_ToolboxChildNodeFocused")<br />重点，选定的工具箱子节点
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -2058,11 +2058,11 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 前景（标志符号） | `TreeView.SelectedItemActive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 | 前景（文本） | `TreeView.SelectedItemActive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 
-**选定的工具箱节点：未聚焦状态**
+**选定的工具箱节点：失去焦点状态**
 
-![选定的未聚焦工具箱父节点](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />选定的未聚焦工具箱父节点
+![已选择，失去焦点工具箱父节点](../../extensibility/ux-guidelines/media/0303-195_toolboxparentnodeunfocused.png "0303-195_ToolboxParentNodeUnfocused")<br />已选择，失去焦点工具箱父节点
 
-![选定的未聚焦工具箱子节点](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />选定的未聚焦工具箱子节点
+![已选择，失去焦点工具箱子节点](../../extensibility/ux-guidelines/media/0303-196_toolboxchildnodeunfocused.png "0303-196_ToolboxChildNodeUnfocused")<br />已选择，失去焦点工具箱子节点
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -2072,13 +2072,13 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 前景（文本） | `TreeView.SelectedItemInactive`<br />来自 [Tree view](../../extensibility/ux-guidelines/shared-colors-for-visual-studio.md#BKMK_TreeView) 类别 |
 
 ### <a name="tool-window-title-bar"></a>工具窗口标题栏
-标题栏边框不是真正的边框，它是标题栏顶部的粗线。 它没有标记名称来表示其未聚焦状态。
+标题栏边框不是真实边框，而是标题栏顶部的粗线。 它的失去焦点状态没有标记名称。
 
-![工具窗口标题栏 (红色) ](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />工具窗口标题栏 (红色) 
+![工具窗口标题栏 (红线) ](../../extensibility/ux-guidelines/media/0303-092_toolwindowtitlebarredline.png "0303-092_ToolWindowTitleBarRedline")<br />工具窗口标题栏 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...要创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
+| ...在其中创建要与工具窗口匹配的 UI 的任何位置。 | ...对于不希望在 shell 具有主题更新时自动更改的任何 UI。 |
 
 **已设定焦点的标题栏**
 
@@ -2086,9 +2086,9 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.TitleBarActiveGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.TitleBarActiveGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `Environment.TitleBarActiveText` |
-| 边框 | `Environment.TitleBarActiveBorder`<br /> (设置为与 background.)  |
+| 边框 | `Environment.TitleBarActiveBorder`<br /> (设置为与背景相同的颜色 )  |
 | 拖拽句柄 | `Environment.TitleBarDragHandleActive` |
 
 **失去焦点的标题栏**
@@ -2097,22 +2097,22 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
-| 背景 | `Environment.TitleBarInactiveGradientBegin`<br /> (UI.) 中未用于此标记的渐变停止)  |
+| 背景 | `Environment.TitleBarInactiveGradientBegin`<br />未在主题 UI 中使用此标记 (梯度停止点 )  |
 | 前景（文本） | `Environment.TitleBarInactiveText` |
 | 边框 | 不适用 |
 | 拖拽句柄 | `Environment.TitleBarDragHandle` |
 
 #### <a name="tool-window-title-bar-buttons"></a>工具窗口标题栏按钮
-![标题栏按钮 (红色) ](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />标题栏按钮 (红色) 
+![标题栏按钮 (红线) ](../../extensibility/ux-guidelines/media/0303-095_titlebarbuttonredline.png "0303-095_TitleBarButtonRedline")<br />标题栏按钮 (红线) 
 
-| 使用。。。 | 请勿使用 ... |
+| 使用 .。。 | 请勿使用 .。。 |
 | --- | --- |
-| ...对于显示在 UI 中的按钮，这些按钮使用工具窗口标题栏的颜色标记。 | ...对于显示在其他位置的按钮。 |
-| | ...在除指定外的任何背景/前景组合中。 |
+| ...对于在 UI 中显示的按钮，这些按钮使用工具窗口标题栏中的颜色标记。 | ...对于在其他位置出现的按钮。 |
+| | ...在除指定之外的任何背景/前景组合中。 |
 
-**焦点标题栏按钮：默认状态**
+**聚焦标题栏按钮：默认状态**
 
-![默认焦点标题栏按钮](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />默认焦点标题栏按钮
+![默认值，重点标题栏按钮](../../extensibility/ux-guidelines/media/0303-096_titlebarbuttonfocused.png "0303-096_TitleBarButtonFocused")<br />默认值，重点标题栏按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |
@@ -2120,9 +2120,9 @@ Visual Studio 中的工具窗口用于许多不同的任务，可以采用多个
 | 前景（标志符号） | `Environment.ToolWindowButtonActiveGlyph` |
 | 边框 | 不适用 |
 
-**未聚焦的标题栏按钮：默认状态**
+**失去焦点标题栏按钮：默认状态**
 
-![默认、未聚焦的标题栏按钮](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />默认、未聚焦的标题栏按钮
+![默认值，失去焦点标题栏按钮](../../extensibility/ux-guidelines/media/0303-097_titlebarbuttonunfocused.png "0303-097_TitleBarButtonUnfocused")<br />默认值，失去焦点标题栏按钮
 
 | 元素 | 标记名称：Category.color |
 | --- | --- |

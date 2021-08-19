@@ -16,14 +16,15 @@ ms.assetid: 1291fd33-b89e-4e15-8fb1-69f9625cf2d2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b8bb090b66a52e9c2931e8bf4afc878d87a0ae36
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8cde4f2fcc9b226aeda9066da083a1a37979dfe9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902507"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142593"
 ---
 # <a name="updatemanifest-task"></a>UpdateManifest 任务
 

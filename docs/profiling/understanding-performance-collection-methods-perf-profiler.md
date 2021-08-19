@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: '>= vs-2017'
 ms.workload:
 - multiple
-ms.openlocfilehash: f9128700f6ad54f3d92108d92e25e13b9ee4266c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ca31215b5b9d27725f6feaa5ba65f91ebc119ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99921866"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156950"
 ---
 # <a name="understand-profiler-performance-collection-methods"></a>了解探查器性能收集方法
 

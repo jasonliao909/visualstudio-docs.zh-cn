@@ -13,14 +13,15 @@ ms.assetid: 6c3f6238-b9f0-4325-b8b0-de61090bd0a2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bf6bc7cf353a8a1da7854a350f352e69013eb52e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8d033a3cfd993ffb31af49f0276637302b7fc819
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966092"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142840"
 ---
 # <a name="task-base-class"></a>任务基类
 

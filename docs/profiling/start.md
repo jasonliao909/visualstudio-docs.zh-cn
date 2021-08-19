@@ -7,15 +7,16 @@ ms.assetid: b85d0fe9-f67a-4b7c-8d48-7eecf3f2dfe9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 98c1fa8a5d95b9819c6b988282fe9fcdb6259bd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c3c309a63cd24b5dd50b42132086a3daee17fc3f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960053"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141463"
 ---
 # <a name="start"></a>开始
 Start 选项是一个 VSPerfCmd.exe 选项，可将探查器初始化为指定分析方法。

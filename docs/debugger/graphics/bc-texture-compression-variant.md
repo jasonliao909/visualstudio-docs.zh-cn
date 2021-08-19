@@ -8,14 +8,15 @@ ms.assetid: 2d0f5305-585b-4b01-bc9a-7a32d6e991da
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c1a8699980599a590b6f6e58e14ea504f52db609
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 6723493257ef7df194c0987d60879a3222651b2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154273"
 ---
 # <a name="bc-texture-compression-variant"></a>BC 纹理压缩变量
 对采用像素格式（B8G8R8X8、B8G8R8A8 或 R8G8B8A8 的变体）的纹理启用块压缩。

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9ef5e643002840f37824050460659c25d5512a5c630210fb89266234cb8663cb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 98c1b58fe3d06e9ea9c9e85679b13a0cfdb50ce2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102098"
 ---
 # <a name="fonts-and-formatting-for-visual-studio"></a>Visual Studio 的字体和格式
 ## <a name="the-environment-font"></a><a name="BKMK_TheEnvironmentFont"></a> 环境字体
@@ -409,17 +409,17 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 - 在标题中使用颜色时，必须遵守[Windows 颜色准则](/windows/desktop/uxguide/vis-color)，包括对比度和其他辅助功能注意事项。
 
 ### <a name="font-size"></a>字体大小
- Visual StudioUI 设计具有更轻量的外观，具有更多的空白。 在可能的情况下，已减少或删除了 chrome 和标题栏。 尽管信息密度是Visual Studio要求，但版式仍然很重要，强调更开放的行距以及字号和粗细的变体。
+ Visual StudioUI 设计具有更好的外观，具有更多空白。 如果可能，则会减少或删除 chrome 和 title 栏。 尽管信息密度是 Visual Studio 中的要求，但版式仍是重要的，强调更开放的线间距和字体大小和粗细的变体。
 
- 下表包含设计详细信息和用于显示字体的可视化示例，这些字体Visual Studio。 某些显示字体变体将大小和权重（如 Semilight 或 Light）编码到其外观中。
+ 下表包含 Visual Studio 中使用的显示字体的设计详细信息和视觉对象示例。 某些显示字体变体具有大小和权重，如 "Semilight" 或 "浅色"，编码为其外观。
 
- 可以在格式设置中找到所有显示字体的实现代码片段 ([缩放/) 引用](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)。
+ 所有显示字体的实现代码片段可在 [格式设置中找到 (缩放/粗体) 引用](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md#BKMK_Formatting)。
 
 #### <a name="375-environment-font--light"></a>375% 环境字体 + 浅色
 
 |使用情况|外观|
 |-|-|
-|**用法：** 罕见。 仅唯一品牌 UI。<br /><br /> **执行：**<br /><br /> - 使用句子大小写<br />- 始终使用轻型<br /><br /> **不要：**<br /><br /> - 用于签名 UI 而不是签名 UI，例如起始页<br />- 粗体、italic 或粗体<br />- 用于正文文本<br />- 在工具窗口中使用|**显示为：34** pt Segoe UI浅<br /><br /> **视觉对象示例：**<br /><br /> *当前未使用。可以在 2017 Visual Studio页中使用。*|
+|**用法：** 极少数. 仅限唯一品牌的 UI。<br /><br /> **看**<br /><br /> -Use 句型 case<br />-始终使用轻量<br /><br /> **不要：**<br /><br /> -用于除签名 UI （如起始页）以外的 UI<br />-粗体、斜体或粗体斜体<br />-用于正文文本<br />-在工具窗口中使用|**显示为：** 34 Pt Segoe UI 浅色<br /><br /> **Visual 示例：**<br /><br /> *当前未使用。可在 Visual Studio 2017 起始页中使用。*|
 
 #### <a name="310-environment-font--light"></a>310% 环境字体 + 浅色
 
@@ -427,7 +427,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 签名对话框中的较大标题<br />- 主报表标题<br /><br /> **执行：**<br /><br /> - 使用句子大小写<br />- 始终使用轻型<br /><br /> **不要：**<br /><br /> - 用于签名 UI 而不是签名 UI，例如起始页<br />- 粗体、italic 或粗体<br />- 用于正文文本<br />- 在工具窗口中使用|**显示为：28** pt Segoe UI浅<br /><br /> **视觉对象示例：**<br /><br /> ![310% 环境字体&#43;浅色标题的示例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**用法：**<br /><br /> -签名对话框中的更大标题<br />-主报表标题<br /><br /> **看**<br /><br /> -Use 句型 case<br />-始终使用轻量<br /><br /> **不要：**<br /><br /> -用于除签名 UI （如起始页）以外的 UI<br />-粗体、斜体或粗体斜体<br />-用于正文文本<br />-在工具窗口中使用|**显示为：** 28 Pt Segoe UI 浅色<br /><br /> **Visual 示例：**<br /><br /> ![310% 环境字体 &#43; 浅色标题的示例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -435,7 +435,7 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 签名对话框中的较大标题<br />- 主报表标题<br /><br /> **执行：**<br /><br /> - 使用句子大小写<br />- 始终使用轻型<br /><br /> **不要：**<br /><br /> - 用于签名 UI 而不是 UI<br />- 粗体、italic 或粗体<br />- 用于正文文本<br />- 在工具窗口中使用|**显示为：28** pt Segoe UI浅<br /><br /> **视觉对象示例：**<br /><br /> ![310% 环境字体&#43;浅色标题的示例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
+|**用法：**<br /><br /> -签名对话框中的更大标题<br />-主报表标题<br /><br /> **看**<br /><br /> -Use 句型 case<br />-始终使用轻量<br /><br /> **不要：**<br /><br /> -用于除签名 UI 外的 UI<br />-粗体、斜体或粗体斜体<br />-用于正文文本<br />-在工具窗口中使用|**显示为：** 28 Pt Segoe UI 浅色<br /><br /> **Visual 示例：**<br /><br /> ![310% 环境字体 &#43; 浅色标题的示例](../../extensibility/ux-guidelines/media/0202-a_ef310.png "0202-a_EF310")|
 
 ::: moniker-end
 
@@ -443,19 +443,19 @@ protected static void SetFontStyles(Control topControl, Control parent, Font ref
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 子标题<br />- 中小对话框中的标题<br /><br /> **执行：**<br /><br /> - 使用句子大小写<br />- 始终使用 Semilight 权重<br /><br /> **不要：**<br /><br /> - 粗体、italic 或粗体<br />- 用于正文文本<br />- 在工具窗口中使用|**显示为：18** pt Segoe UI Semillight<br /><br /> **视觉对象示例：**<br /><br /> ![Semilight 200% 环境字体&#43;示例](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
+|**用法：**<br /><br /> -副标题<br />-小型和中型对话框中的标题<br /><br /> **看**<br /><br /> -Use 句型 case<br />-始终使用 Semilight 权重<br /><br /> **不要：**<br /><br /> -粗体、斜体或粗体斜体<br />-用于正文文本<br />-在工具窗口中使用|**显示为：** 18 Pt Segoe UI Semillight<br /><br /> **Visual 示例：**<br /><br /> ![&#43; Semilight 的200% 环境字体的示例](../../extensibility/ux-guidelines/media/0202-b_ef200.png "0202-b_EF200")|
 
 #### <a name="155-environment-font"></a>155% 环境字体
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 文档井 UI 中的节标题<br />- 报表<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> - 粗体、italic 或粗体<br />- 用于正文文本<br />- 在标准控件Visual Studio使用<br />- 在工具窗口中使用|**显示为：14** pt Segoe UI<br /><br /> **视觉对象示例：**<br /><br /> ![155% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
+|**用法：**<br /><br /> -文档好 UI 中的节标题<br />-报表<br /><br /> **Do：** 使用句子 case<br /><br /> **不要：**<br /><br /> -粗体、斜体或粗体斜体<br />-用于正文文本<br />-在标准 Visual Studio 控件中使用<br />-在工具窗口中使用|**显示为：** 14 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![155% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-c_ef155.png "0202-c_EF155")|
 
 #### <a name="133-environment-font"></a>133% 环境字体
 
 |使用情况|外观|
 |-|-|
-|**用法：**<br /><br /> - 签名对话框中较小的子标题<br />- 文档井 UI 中的较小子标题<br /><br /> **执行：** 使用句子大小写<br /><br /> **不要：**<br /><br /> - 粗体、italic 或粗体<br />- 用于正文文本<br />- 在标准控件Visual Studio使用<br />- 在工具窗口中使用|**显示为：12** pt Segoe UI<br /><br /> **视觉对象示例：**<br /><br /> ![133% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
+|**用法：**<br /><br /> -签名对话框中较小的子标题<br />-文档良好 UI 中的小标题<br /><br /> **Do：** 使用句子 case<br /><br /> **不要：**<br /><br /> -粗体、斜体或粗体斜体<br />-用于正文文本<br />-在标准 Visual Studio 控件中使用<br />-在工具窗口中使用|**显示为：** 12 pt Segoe UI<br /><br /> **Visual 示例：**<br /><br /> ![133% 环境字体标题的示例](../../extensibility/ux-guidelines/media/0202-d_ef133.png "0202-d_EF133")|
 
 #### <a name="122-environment-font"></a>122% 环境字体
 

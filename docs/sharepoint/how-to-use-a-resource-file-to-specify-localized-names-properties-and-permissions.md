@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 49546d11dbf4f19bb2fd826ace2850468f780d13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a909462908c26e6ed1af7fbf6458a54b57e901f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156261"
 ---
 # <a name="how-to-use-a-resource-file-in-a-sharepoint-project"></a>如何使用 SharePoint 项目中的资源文件
 
@@ -51,9 +52,9 @@ ms.locfileid: "99851551"
 
      有关如何定义这些元素的详细信息，请参阅 [模型和资源文件](/previous-versions/office/developer/sharepoint-2010/aa674515(v=office.14))。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：将现有 BDC 模型文件添加到 SharePoint 项目](../sharepoint/how-to-add-an-existing-bdc-model-file-to-a-sharepoint-project.md)
 - [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md)
 - [如何：创建 BDC 模型](../sharepoint/how-to-create-a-bdc-model.md)
 - [如何：在 BDC 功能中包含自定义程序集](../sharepoint/how-to-include-a-custom-assembly-in-a-bdc-feature.md)
-- [将业务数据集成到 SharePoint 中](../sharepoint/integrating-business-data-into-sharepoint.md)
+- [将业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)

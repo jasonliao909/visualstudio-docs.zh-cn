@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式保护工作表
-description: 了解如何使用 Microsoft Excel 中的保护功能来防止用户和代码修改工作表中的对象。
+description: 了解如何使用工作表中的保护Microsoft Excel防止用户和代码修改工作表中的对象。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 154742672786e5aa32ebfe4a5516c658cdc483556d745d6b06e367c57b20123d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7de3df087bc275153ebd7a0bfc50c087ea559ee3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394389"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155832"
 ---
 # <a name="how-to-programmatically-protect-worksheets"></a>如何：以编程方式保护工作表
   Microsoft Office Excel 中的保护功能可帮助防止用户和代码修改工作表中的对象。 默认情况下，开启保护之后，将锁定所有单元格。
@@ -39,19 +39,19 @@ ms.locfileid: "121394389"
 
 ### <a name="to-protect-a-worksheet-in-the-designer"></a>若要在设计器中保护工作表
 
-1. 在 "**审阅**" 选项卡的 "**更改**" 组中，单击 "**保护工作表**"。
+1. 在"**审阅"选项卡** 的"**更改"组中**，单击"**保护工作表"。**
 
-    此时将显示 " **保护工作表** " 对话框。 可以设置密码，并根据需要指定用户可利用工作表执行的特定操作，例如设置单元格格式或插入行。
+    将显示 **"保护表** "对话框。 可以设置密码，并根据需要指定用户可利用工作表执行的特定操作，例如设置单元格格式或插入行。
 
    还可以允许用户编辑受保护工作表中的特定范围。
 
 ### <a name="to-allow-editing-in-specific-ranges"></a>若要允许在特定范围内编辑
 
-1. 在 "**审阅**" 选项卡的 "**更改**" 组中，单击 "**允许用户编辑范围**"。
+1. 在"**审阅"** 选项卡的"**更改"组中**，单击 **"允许用户编辑范围"。**
 
-     此时将显示 " **允许用户编辑范围** " 对话框。 可以指定使用密码解锁的范围，以及指定不需要密码就可以编辑范围的用户。
+     将出现 **"允许用户编辑范围** "对话框。 可以指定使用密码解锁的范围，以及指定不需要密码就可以编辑范围的用户。
 
-## <a name="use-code-at-run-time"></a>在运行时使用代码
+## <a name="use-code-at-run-time"></a>运行时使用代码
  下面的代码会设置密码（使用变量 getPasswordFromUser，其中包含从用户处获得的密码），并仅允许排序。
 
 ### <a name="to-protect-a-worksheet-by-using-code-in-a-document-level-customization"></a>若要通过在文档级自定义项中使用代码来保护工作表
@@ -70,10 +70,10 @@ ms.locfileid: "121394389"
 
 ## <a name="see-also"></a>请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
-- [如何：以编程方式取消工作表保护](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
+- [如何：以编程方式从工作表中删除保护](../vsto/how-to-programmatically-remove-protection-from-worksheets.md)
 - [如何：以编程方式保护工作簿](../vsto/how-to-programmatically-protect-workbooks.md)
 - [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [工作表宿主项](../vsto/worksheet-host-item.md)
-- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [对项目中对象的全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

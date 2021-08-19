@@ -34,14 +34,15 @@ ms.assetid: 4ac21e48-3243-4141-9058-7eaf12b3cde7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e39febb27a74b0a2cef54098542bba087e2e0180
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cfd0ef18f85511d23825468f1b208c34bc7e209
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943869"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151231"
 ---
 # <a name="options-dialog-box-text-editor--general"></a>“选项”对话框：“文本编辑器”\>“常规”
 

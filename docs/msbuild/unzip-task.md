@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 213d37108e37b9002b2241e6c0806d6d7db7caf6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30120b45a26fe46e80f6dca1eb6f68e1f4ce7e93
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902495"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142736"
 ---
 # <a name="unzip-task"></a>Unzip 任务
 

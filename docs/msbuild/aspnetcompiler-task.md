@@ -18,14 +18,15 @@ ms.assetid: f811c019-a67b-4d54-82e6-e29549496f6e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - aspnet
-ms.openlocfilehash: 504ea606994e06847c2e093bc1701b11ad92e278
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23639025f7592f0b688adc2402dae9f81ee7865b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923878"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150503"
 ---
 # <a name="aspnetcompiler-task"></a>AspNetCompiler 任务
 

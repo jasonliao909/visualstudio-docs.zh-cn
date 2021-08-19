@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: bdf9b3ebd8512cdec8558e66401f520cab6e3d778f99ce73139aa89e7adbebfe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9bdeb3397c3c958912010af9f822b48a66add8e6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123276"
 ---
 # <a name="walkthrough-create-a-web-part-for-sharepoint"></a>演练：为 SharePoint 创建 Web 部件
 
@@ -45,7 +45,7 @@ Web 部件在数据网格中显示员工。 用户指定包含员工数据的文
     > [!NOTE]
     > 以下说明中的某些 Visual Studio 用户界面元素在计算机上出现的名称或位置可能会不同。 这些元素取决于你所使用的 Visual Studio 版本和你所使用的设置。 有关详细信息，请参阅[个性化设置 Visual Studio IDE](../ide/personalizing-the-visual-studio-ide.md)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 - 支持的 Microsoft Windows 和 SharePoint 版本。
 

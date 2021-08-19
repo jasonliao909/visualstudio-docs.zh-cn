@@ -13,14 +13,15 @@ ms.assetid: 201e1dd2-6701-467d-8cc1-faec2ef20511
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 29f81e5a17a573fdca25482479111a9f83e95a16
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ebc75b92886ea4d6938a2dd517418a3fac41e8f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143828"
 ---
 # <a name="go-to-command"></a>Go To 命令
 将光标移到指定的行。

@@ -13,15 +13,16 @@ ms.assetid: 6593fa82-181e-4009-a0ed-02aa24c2c063
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cfb8f26486c731d3900522d72ac62ff6997005e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e954fe8eb6bef735b90d73ac9384f321ae6c8320
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885945"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140847"
 ---
 # <a name="use-the-profiling-tools-from-the-command-line"></a>通过命令行使用分析工具
 可以使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的命令行工具在命令提示符处分析应用程序，以及使用批处理文件和脚本自动执行分析。 还可以在命令提示符处生成报告文件。 可以使用轻量级独立探查器在未安装 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的计算机上收集数据。

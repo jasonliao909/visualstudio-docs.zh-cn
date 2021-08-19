@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bd7f47466074536c9088840e726f768f62f9346b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53fa2e2631bff2eb3fd9438a97f190b9766a1407
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965923"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142567"
 ---
 # <a name="update-an-existing-application-for-msbuild-15"></a>将现有的应用程序更新到 MSBuild 15
 

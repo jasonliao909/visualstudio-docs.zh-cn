@@ -13,15 +13,16 @@ ms.assetid: cb6f6d30-52a5-4d92-ab07-1d5ddb67884c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: deb377c37675071e3c35006e07ee7a795185f838
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd67cab9a729eeaf6280c01ef4315900c9640de0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886127"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150178"
 ---
 # <a name="how-to-customize-report-view-columns"></a>如何：自定义报表视图列
 Visual Studio Team System Development Edition 中的性能工具与集成开发环境 (IDE) 全面集成，旨在提供无缝的用户体验。 下表显示了可通过添加、删除和重新排列列自定义的视图：

@@ -3,17 +3,18 @@ title: 客户体验改善计划
 description: 了解如何在 Visual Studio 中管理隐私设置。
 ms.date: 05/21/2018
 ms.topic: conceptual
-author: PoulChapman
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c7f425d87ba6316c3a3cab66f2b342b4c1141f4
-ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
+ms.openlocfilehash: a70cc43572d912c0d948a8853ab6cb695a6451ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106110592"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150815"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 

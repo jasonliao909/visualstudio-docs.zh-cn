@@ -10,14 +10,15 @@ ms.assetid: 8b2b627a-f236-4479-aa09-525df65e3413
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: b4f371da2570d5573ce84c7e29393889202ae940
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0730853bb2f7e67445a85c4a05d6adbfc22dc3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155260"
 ---
 # <a name="correlateson-definition-dialog-box"></a>“CorrelatesOn 定义”对话框
 
@@ -36,7 +37,7 @@ ms.locfileid: "99955536"
 
 可以将 " **接收** " 活动设计器从 **"工具箱** " 拖放到工作流设计器图面上通常放置活动的任何位置。 删除活动设计器将创建一个 <xref:System.ServiceModel.Activities.Receive> 活动，其中默认为 <xref:System.Activities.Activity.DisplayName%2A> Receive。 若要打开 " **CorrelatesOn 定义** " 对话框，请选择 " **接收** " 活动设计器，然后在属性网格中，选择 **CorrelatesOn** 属性的集合文本旁边的省略号按钮。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:System.ServiceModel.Activities.Receive>
 - [“添加相关初始值设定项”对话框](../workflow-designer/add-correlationinitializers-dialog-box.md)

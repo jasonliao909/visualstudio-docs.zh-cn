@@ -11,14 +11,15 @@ ms.assetid: affa04cc-8bba-4848-9301-b19846d3c2cb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6469c1020f125dd28798ad4bff5ccc9d3e7aa06
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 118fa48f6c818c366d733fc29fbcc4a12883a6c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157132"
 ---
 # <a name="synchronization-time"></a>同步时间
 时间线中的这些段与归类为同步的阻止时间关联。 当线程被标记为在同步中阻止时，表示出现了下列情况之一：

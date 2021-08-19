@@ -10,18 +10,19 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: b8435f37ebe68e954af135be0f513247191ea8a9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 661daaea4908a674e97c28f672ffc7f709429a8f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386392"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123549"
 ---
 # <a name="supported-visual-studio-editions-for-visualization--modeling-sdk"></a>可视化和建模 SDK 支持的 Visual Studio 版本
 
-以下是创作和Visual Studio环境中支持的版本 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 列表。 有关这些版本的信息，请参阅 Microsoft Visual Studio [开发人员中心](https://visualstudio.microsoft.com/)。
+以下是创作和Visual Studio环境中支持的版本 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 列表。 有关这些版本的信息，请参阅 Microsoft Visual Studio[开发人员中心](https://visualstudio.microsoft.com/)。
 
 ## <a name="authoring-edition"></a>创作版
 

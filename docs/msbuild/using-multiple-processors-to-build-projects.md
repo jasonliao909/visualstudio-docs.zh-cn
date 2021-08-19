@@ -11,14 +11,15 @@ ms.assetid: 49fa36c9-8e14-44f5-8a2b-34146cf6807b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c1560b40fe94af8dae5223981dd8e0c790320085
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 814db4514454659780021c17e873a8e2363cb54f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142437"
 ---
 # <a name="use-multiple-processors-to-build-projects"></a>使用多个处理器生成项目
 

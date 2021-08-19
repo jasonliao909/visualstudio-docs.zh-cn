@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式在工作表范围内搜索文本
-description: 了解如何使用 Visual Studio 以编程方式在 Microsoft Excel 工作表范围内搜索文本。
+description: 了解如何使用 Visual Studio 以编程方式搜索 Microsoft Excel 工作表范围内的文本。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 762cb3fc35b43bfd3ad15aea669adff2d370b632
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: dd001c197f9c64c5d0fa5c89a3920a40f427cf58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107827937"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155728"
 ---
 # <a name="how-to-programmatically-search-for-text-in-worksheet-ranges"></a>如何：以编程方式在工作表范围内搜索文本
   <xref:Microsoft.Office.Interop.Excel.Range.Find%2A>对象的方法 <xref:Microsoft.Office.Interop.Excel.Range> 使您能够在范围内搜索文本。 此文本还可以是工作表单元格（如或）中可能出现的任何错误字符串 `#NULL!` `#VALUE!` 。 有关错误字符串的详细信息，请参阅 [单元错误值](/office/vba/excel/Concepts/Cells-and-Ranges/cell-error-values)。
@@ -77,7 +78,7 @@ ms.locfileid: "107827937"
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet57":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet57":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [如何：以编程方式将样式应用于工作簿中的范围](../vsto/how-to-programmatically-apply-styles-to-ranges-in-workbooks.md)
 - [如何：以编程方式在代码中引用工作表范围](../vsto/how-to-programmatically-refer-to-worksheet-ranges-in-code.md)

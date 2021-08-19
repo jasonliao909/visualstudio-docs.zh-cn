@@ -4,23 +4,22 @@ titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步创建简单的 Hello World 控制台应用。
 ms.custom: vs-acquisition
 ms.date: 03/23/2019
-ms.technology: vs-ide-general
-ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: bf7a52b6dbf36c25590292c3272f1e63d07156b9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6711ae64261e3ca11de07bdbc72e86f604e11c5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387614"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151946"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-c-console-app"></a>快速入门：使用 Visual Studio 创建第一个 C# 控制台应用
 

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 3128409e25a4f0a44b62383e34af171c76ecd2eaa2699c36d77f69c9286fa145
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 27987f582606f1978c90ff09f36c6e75714040ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452103"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111211"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 删除指定的异常，以使其不再由调试引擎处理。
