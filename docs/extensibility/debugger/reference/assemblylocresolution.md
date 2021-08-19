@@ -11,17 +11,18 @@ ms.assetid: 0bcfe85c-5f37-4a9d-bf2b-141acd96ad67
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 191e22dc7b0a70fc6eb83e6237bdcadd25995c2b
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f76437d28c9adccd3e98ab31dae4c19c0411230c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105085437"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080125"
 ---
 # <a name="assemblylocresolution"></a>ASSEMBLYLOCRESOLUTION
 指定程序集所在的位置。
@@ -61,16 +62,16 @@ public enum enum_ASSEMBLYLOCRESOLUTION {
 程序集位于远程目录中。
 
 ## <a name="remarks"></a>备注
-这些值由 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 和 [GetManagedViewerCreationData](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 方法返回。
+这些值由 [ResolveAssemblyRef](../../../extensibility/debugger/reference/ipropertyproxyeeside-resolveassemblyref.md) 和 [GetManagedViewerCreationData 方法](../../../extensibility/debugger/reference/ipropertyproxyeeside-getmanagedviewercreationdata.md) 返回。
 
-这些值可以与操作组合在一起 `OR` 。
+这些值可以与 运算 `OR` 结合使用。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

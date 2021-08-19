@@ -1,6 +1,6 @@
 ---
 description: vstov4 命名空间的 formRegions 元素包含Microsoft Office Outlook外接程序关联的VSTO区域。
-title: '&lt;formRegions &gt; 元素 (Office开发Visual Studio) '
+title: '&lt;formRegions &gt; 元素 (Office Visual Studio) '
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -18,14 +18,14 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e880590846d30c01e8f3f1925445be6c8431c0f8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e1a4439f5c1dab78ce32c553a4bee98db6fa7da4f072152c3a046ba819222128
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130541"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121440859"
 ---
-# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions &gt; 元素 (Office开发Visual Studio) 
+# <a name="ltformregionsgt-element-office-development-in-visual-studio"></a>&lt;formRegions &gt; 元素 (Office Visual Studio) 
   `formRegions`命名空间的 `vstov4` 元素包含Microsoft Office Outlook外接程序关联的窗体VSTO区域。
 
 ## <a name="syntax"></a>语法

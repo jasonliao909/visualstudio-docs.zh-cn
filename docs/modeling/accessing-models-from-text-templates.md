@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 05e21dacfe56f41f1d2c0da51659ab55203db1a0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 451f9963b61d213b8aa95fe83ab68806d6c88bdc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027820"
 ---
 # <a name="access-models-from-text-templates"></a>从文本模板访问模型
 
@@ -100,7 +101,7 @@ Here is a list of elements in the model:
 ## <a name="accessing-multiple-models-from-a-text-template"></a><a name="Multiple"></a> 从文本模板访问多个模型
 
 > [!NOTE]
-> 此方法使您可以读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取由 ModelBus 引用了的模型，请参阅 [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
+> 此方法使您可以读取同一模板中的多个模型，但不支持 ModelBus 引用。 若要读取由 ModelBus 引用了的模型，请参阅[在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
  如果要从同一文本模板访问多个模型，则必须为每个模型调用一次生成的指令处理器。 必须在参数中指定每个模型的文件名 `requires` 。 必须在参数中指定要用于根域类的名称 `provides` 。 必须为 `provides` 每个指令调用中的参数指定不同的值。 例如，假设有三个名为 Library.xyz、School.xyz 和 Work.xyz 的模型文件。 若要从同一文本模板访问它们，必须编写三个类似于下面的指令调用。
 
@@ -142,9 +143,9 @@ For Each element As ExampleElement In Me.WorkModel.Elements
 
  但是，DSL 专用指令的功能之一是导入 DSL 命名空间，以便模板代码可以使用该 DSL 中定义的域类。 由于不使用指令，因此必须 **\<assembly>** **\<import>** 为可能加载的所有模型添加和指令。 如果可以加载的不同模型都是同一 DSL 的所有实例，这很容易。
 
- 若要加载该文件，最有效的方法是使用 Visual Studio ModelBus。 在典型方案中，文本模板将使用特定于 DSL 的指令以常规方式加载第一个模型。 该模型将包含对另一个模型的 ModelBus 引用。 您可以使用 ModelBus 打开引用的模型并访问特定的元素。 有关详细信息，请参阅 [在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
+ 若要加载该文件，最有效的方法是使用 Visual Studio ModelBus。 在典型方案中，文本模板将使用特定于 DSL 的指令以常规方式加载第一个模型。 该模型将包含对另一个模型的 ModelBus 引用。 您可以使用 ModelBus 打开引用的模型并访问特定的元素。 有关详细信息，请参阅[在文本模板中使用 Visual Studio ModelBus](../modeling/using-visual-studio-modelbus-in-a-text-template.md)。
 
- 在不太常见的情况下，你可能想要打开的模型文件只有一个文件名，并且该文件可能不在当前的 Visual Studio 项目中。 在这种情况下，可以使用 [如何：在程序代码中打开文件中的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)中所述的方法来打开文件。
+ 在不太常见的情况下，你可能想要打开一个只具有文件名且不在当前 Visual Studio 项目中的模型文件。 在这种情况下，可以使用 [如何：在程序代码中打开文件中的模型](../modeling/how-to-open-a-model-from-file-in-program-code.md)中所述的方法来打开文件。
 
 ## <a name="generating-multiple-files-from-a-template"></a>从模板生成多个文件
  如果要生成几个文件（例如，为了为模型中的每个元素生成一个单独的文件），则有几种可能的方法。 默认情况下，每个模板文件仅生成一个文件。

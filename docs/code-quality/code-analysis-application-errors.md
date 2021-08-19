@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: 5b7358c266b40d900670c00cd2f24cb91f20b7b3c5e454f84559474cd5d554be
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 62ee5dd35eaa779292f89696f6ab18f6d1dbbeec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121405625"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098068"
 ---
 # <a name="code-analysis-application-errors"></a>代码分析应用程序错误
 

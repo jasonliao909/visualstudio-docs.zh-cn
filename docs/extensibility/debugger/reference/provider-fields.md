@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: bbe12a51af968ccc88a1a572553e6278cc12c4890042a6777f97e45fb23a427f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 80d00d1f9c385fc4ab568c0c8051801772f0d0bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306317"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122029159"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 指定与程序提供程序相关联的属性。

@@ -1,6 +1,6 @@
 ---
 title: Office 主互操作程序集
-description: 了解如何使用 PIA () 主互操作程序集从 Microsoft Office 项目访问 Office 功能。
+description: 了解如何使用 PIA (主互操作程序集) 从 Office 项目访问 Microsoft Office 应用程序的功能。
 ms.custom: SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d6f610e9cd1667b84f382f7b1f48c231a69ec44797bafc343f11a7c508636df1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af8f6e830458ea106860e3a2fc1fc0347b294746
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121394157"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115091"
 ---
 # <a name="office-primary-interop-assemblies"></a>Office 主互操作程序集
 
@@ -69,7 +69,7 @@ Visual Studio 在开发计算机上使用不同的 PIA 集。 这些不同的程
 -  (64 位操作系统或) `%ProgramFiles(x86)%\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\`
 
 > [!NOTE]
-> 对于旧版 Visual Studio，这些 PIA 将安装到该版本 Visual Studio Tools for Office 文件夹下的 Visual Studio Tools for Office\PIA `%ProgramFiles%` 文件夹中Visual Studio。
+> 对于早期版本的 Visual Studio，这些 PIA 将安装到该版本 Visual Studio Tools for Office 文件夹下的 Visual Studio Tools for Office\PIA `%ProgramFiles%` 文件夹中Visual Studio。
 > 例如： `%ProgramFiles(x86)%\Microsoft Visual Studio 14.0\Visual Studio Tools for Office\PIA\`
 
 ### <a name="primary-interop-assemblies-in-the-global-assembly-cache"></a>全局程序集缓存中的主互操作程序集
@@ -93,7 +93,7 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 <a name="pialist"></a>
 
-## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>应用程序的主互操作Microsoft Office程序集
+## <a name="primary-interop-assemblies-for-microsoft-office-applications"></a>应用程序的主要互操作Microsoft Office程序集
 
 下表列出了可用于 、 和 的主互操作 [!INCLUDE[Office_16_short](../vsto/includes/office-16-short-md.md)] [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 程序集 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 。
 
@@ -124,7 +124,7 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 ### <a name="binding-redirect-assemblies"></a>绑定重定向程序集
 
-在全局程序集缓存中安装并注册 Office PIA（通过 Office，或通过为 PIA 安装可再发行组件包）时，绑定重定向程序集也只会安装在全局程序集缓存中。 这些程序集可帮助确保运行时加载主互操作程序集的正确版本。
+在全局程序集缓存中安装并注册 Office PIA（通过 Office，或通过为 PIA 安装可再发行组件包）时，绑定重定向程序集也只会安装在全局程序集缓存中。 这些程序集有助于确保在运行时加载主互操作程序集的正确版本。
 
 例如，当引用 [!INCLUDE[office14_long](../vsto/includes/office14-long-md.md)] 程序集的解决方案在装有同一主互操作程序集的 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的计算机上运行时，绑定重定向程序集会指示 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 运行时加载 [!INCLUDE[Office_15_short](../vsto/includes/office-15-short-md.md)] 版本的主互操作程序集。
 
@@ -132,12 +132,12 @@ Visual Studio 中的每个 Office 项目模板旨在与单个 Microsoft Office �
 
 ## <a name="see-also"></a>请参阅
 
-- [如何：通过Office互操作程序集面向应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
-- [Excel对象模型概述](../vsto/excel-object-model-overview.md)
+- [如何：通过主互操作程序集面向 Office 应用程序](../vsto/how-to-target-office-applications-through-primary-interop-assemblies.md)
+- [Excel 对象模型概述](../vsto/excel-object-model-overview.md)
 - [InfoPath 解决方案](../vsto/infopath-solutions.md)
-- [Outlook对象模型概述](../vsto/outlook-object-model-overview.md)
-- [PowerPoint解决方案](../vsto/powerpoint-solutions.md)
-- [Project解决方案](../vsto/project-solutions.md)
-- [Visio对象模型概述](../vsto/visio-object-model-overview.md)
+- [Outlook 对象模型概述](../vsto/outlook-object-model-overview.md)
+- [PowerPoint 解决方案](../vsto/powerpoint-solutions.md)
+- [Project 解决方案](../vsto/project-solutions.md)
+- [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
-- [&#40;Office开发一般Visual Studio&#41;](../vsto/general-reference-office-development-in-visual-studio.md)
+- [Visual Studio 中 Office 开发的常规参考 &#40;&#41;](../vsto/general-reference-office-development-in-visual-studio.md)

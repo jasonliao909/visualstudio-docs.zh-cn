@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 88c1f943fd7c8579673047acbc533ca4577992bc7e13258276496a2499129e5c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a7565e9dd7c1382daabe14b9ce80a641a69813d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121293451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146064"
 ---
 # <a name="create-and-manage-modal-dialog-boxes"></a>创建和管理模式对话框
 在 Visual Studio 内创建模式对话框时，必须确保对话框的父窗口在显示对话框时处于禁用状态，然后在对话框关闭后重新启用父窗口。 如果不这样做，可能会收到以下错误：Microsoft Visual Studio模式对话处于活动状态，因此无法 *关闭。关闭活动对话框，然后重试。*
@@ -31,7 +31,7 @@ ms.locfileid: "121293451"
 
 1. 创建名为 **OpenDialogTest** 的 VSIX 项目，并添加名为 **OpenDialog 的菜单命令**。 若要详细了解如何这样做，请参阅 [使用菜单命令 创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
-2. 若要使用 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 类，必须在"添加引用"对话框的 ("框架"选项卡中添加对以下程序集) ： 
+2. 若要使用 类，必须在"添加引用"对话框的"框架"选项卡 (添加对以下程序集 <xref:Microsoft.VisualStudio.PlatformUI.DialogWindow> 的引用) ： 
 
     - *PresentationCore*
 

@@ -9,18 +9,19 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: 21a151f7d2da18f1c498269504f216b1f7fbd44c
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7804d8dc3baa9df631ae721ea3a2c89328293642
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102144697"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045185"
 ---
 # <a name="deprecated-rules"></a>弃用的规则
 
-以下 FxCop 旧分析规则已弃用，不能作为分析器实现。 有关详细信息，你可以在 [roslyn-分析器 GitHub 问题页](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID (搜索，例如 **CA1009**) 。
+以下 FxCop 旧分析规则已弃用，不能作为分析器实现。 有关详细信息，可以在 [roslyn GitHub 问题 "页](https://github.com/dotnet/roslyn-analyzers/issues?utf8=%E2%9C%93&q=is:issue+label:FxCop-Port)上按规则 ID (搜索，例如 **CA1009**) 。
 
 - [CA1006](ca1006.md)
 - [CA1009](ca1009.md)

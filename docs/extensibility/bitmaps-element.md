@@ -1,6 +1,6 @@
 ---
-title: 位图元素 |Microsoft Docs
-description: Bitmap 元素对一个或多个位图元素进行分组。 本文包含一个位图元素示例。
+title: 位图元素|Microsoft Docs
+description: Bitmaps 元素将一个或多个位图元素分组。 本文包含 Bitmaps 元素的示例。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -11,17 +11,18 @@ ms.assetid: 74652e1b-fcfa-421b-aa9f-fbc081d3b476
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a86943e683502bdd1cd19668e9aafcb8fe7e1bc8
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 873daaa0e491b85c001a82aec0a17e4255c64ea7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112903302"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146194"
 ---
-# <a name="bitmaps-element"></a>位图元素
-组 [位图元素](../extensibility/bitmap-element.md) 元素。
+# <a name="bitmaps-element"></a>Bitmaps 元素
+对 [位图元素元素进行](../extensibility/bitmap-element.md) 分组。
 
 ## <a name="syntax"></a>语法
 
@@ -39,20 +40,20 @@ ms.locfileid: "112903302"
 
 |属性|说明|
 |---------------|-----------------|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[位图元素](../extensibility/bitmaps-element.md)|组位图元素。|
+|[Bitmaps 元素](../extensibility/bitmaps-element.md)|对位图元素进行分组。|
 |[Bitmap 元素](../extensibility/bitmap-element.md)|定义位图。|
 
 ### <a name="parent-elements"></a>父元素
 
-|元素|描述|
+|元素|说明|
 |-------------|-----------------|
-|[命令元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上命令的集合。|
+|[Commands 元素](../extensibility/commands-element.md)|表示 VSPackage 工具栏上的命令集合。|
 
 ## <a name="example"></a>示例
 
@@ -64,6 +65,6 @@ ms.locfileid: "112903302"
 </Bitmaps>
 ```
 
-## <a name="see-also"></a>另请参阅
-- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+## <a name="see-also"></a>请参阅
+- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

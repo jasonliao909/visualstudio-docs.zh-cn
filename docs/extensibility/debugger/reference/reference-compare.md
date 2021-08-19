@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4db5f1189340e93799fc83bfb9f38e7ac1aa92c5222de6da78e27d2aa487c7cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 419eb3927b0ee857f2a42234dae22bd605943f1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276160"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132335"
 ---
 # <a name="reference_compare"></a>REFERENCE_COMPARE
 指定引用的比较类型。
@@ -48,7 +48,7 @@ public enum enum_REFERENCE_COMPARE {
 
 ## <a name="fields"></a>字段
  `REF_COMPARE_EQUAL`\
- 指定一个等于比较。
+ 指定等于比较。
 
  `REF_COMPARE_LESS_THAN`\
  指定小于比较。
@@ -60,11 +60,11 @@ public enum enum_REFERENCE_COMPARE {
  作为参数传递给 [Compare](../../../extensibility/debugger/reference/idebugreference2-compare.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

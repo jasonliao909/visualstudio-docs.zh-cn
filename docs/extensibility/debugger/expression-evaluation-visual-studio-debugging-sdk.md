@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5e4244f9ad537d42bcbcb5b5373877e068008de6dd1eb5ea84f42859c67a353b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3c362b03dd6da91630b324fd659f0977c15a96c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043578"
 ---
 # <a name="expression-evaluation-visual-studio-debugging-sdk"></a>调试 SDK (Visual Studio表达式) 
 在中断模式下，IDE 必须计算涉及多个程序变量的简单表达式。 若要完成其计算， (DE) 必须分析和计算输入到 IDE 窗口之一的表达式。
