@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4b7fbf671b20cd923e8adc181179ce3d042ed9326f69638eaee3d5e57d7c1ffa
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bc258f8662d6ad44cb3e222ed130a79cfa7ce912
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159316"
 ---
 # <a name="inside-the-editor"></a>在编辑器内
 
@@ -135,79 +135,79 @@ abcdefghij
 abXefYj
 ```
 
-第二个编辑的坐标是在应用第一个编辑之前，根据事务开始时缓冲区的内容计算的。
+在应用第一个编辑之前，将根据事务开始时缓冲区的内容计算第二个编辑的坐标。
 
-当通过调用 其 方法提交对象时，对 <xref:Microsoft.VisualStudio.Text.ITextEdit> 缓冲区的更改 `Apply()` 将生效。 如果至少有一个非空编辑，将创建一个新的 ，创建一个新的 ， <xref:Microsoft.VisualStudio.Text.ITextVersion> <xref:Microsoft.VisualStudio.Text.ITextSnapshot> 并引发 `Changed` 一个事件。 每个文本版本都有不同的文本快照。 文本快照表示编辑事务后文本缓冲区的完整状态，但文本版本仅描述从一个快照到下一个快照的更改。 通常，文本快照应使用一次，然后丢弃，而文本版本必须保持活动状态一段时间。
+当 <xref:Microsoft.VisualStudio.Text.ITextEdit> 通过调用对象的方法提交对象时，对缓冲区所做的更改将生效 `Apply()` 。 如果至少有一个非空的编辑，则会创建一个新的， <xref:Microsoft.VisualStudio.Text.ITextVersion> 并会创建一个新的 <xref:Microsoft.VisualStudio.Text.ITextSnapshot> ，并 `Changed` 引发一个事件。 每个文本版本都有不同的文本快照。 文本快照表示编辑事务后文本缓冲区的完整状态，但文本版本仅描述了从一个快照到下一个快照的更改。 通常，文本快照应使用一次，然后将其丢弃，而文本版本必须保持活动状态一段时间。
 
-文本版本包含 <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection> 。 此集合描述在应用于快照时生成后续快照的更改。 集合 <xref:Microsoft.VisualStudio.Text.ITextChange> 中的每个都包含更改的字符位置、替换的字符串和替换字符串。 对于基本插入，替换的字符串为空，对于基本删除，替换字符串为空。 规范化集合始终 `null` 适用于最新版本的文本缓冲区。
+文本版本包含 <xref:Microsoft.VisualStudio.Text.INormalizedTextChangeCollection> 。 此集合描述了应用于快照时产生后续快照的更改。 集合中的每个都 <xref:Microsoft.VisualStudio.Text.ITextChange> 包含更改的字符位置、替换的字符串和替换字符串。 用于基本插入的已替换字符串为空，并且在基本删除时替换字符串为空。 规范化集合始终 `null` 适用于最新版本的文本缓冲区。
 
-任何时间只能为文本缓冲区实例化一个 对象，并且必须在拥有文本缓冲区的线程上执行所有文本编辑 (如果已声明所有权 <xref:Microsoft.VisualStudio.Text.ITextEdit>) 。 可以通过调用文本编辑的 方法或 `Cancel` 方法放弃 `Dispose` 文本编辑。
+<xref:Microsoft.VisualStudio.Text.ITextEdit>在任何时候，都只能为文本缓冲区实例化一个对象，而且必须在拥有文本缓冲区 (的线程上执行所有文本编辑（如果已声明所有权) 。 可以通过调用其 `Cancel` 方法或其方法放弃文本编辑 `Dispose` 。
 
-<xref:Microsoft.VisualStudio.Text.ITextBuffer> 还提供 `Insert()` 、 `Delete()` 和 `Replace()` 方法，这些方法类似于在 接口上 <xref:Microsoft.VisualStudio.Text.ITextEdit> 找到的方法。 调用它们的效果与创建对象、 <xref:Microsoft.VisualStudio.Text.ITextEdit> 进行类似的调用，然后应用编辑的效果相同。
+<xref:Microsoft.VisualStudio.Text.ITextBuffer> 还提供 `Insert()` 与 `Delete()` `Replace()` 在接口上找到的方法类似的、和方法 <xref:Microsoft.VisualStudio.Text.ITextEdit> 。 调用这些与创建 <xref:Microsoft.VisualStudio.Text.ITextEdit> 对象、进行类似调用，然后应用编辑的效果相同。
 
 #### <a name="tracking-points-and-tracking-spans"></a>跟踪点和跟踪范围
 
-表示 <xref:Microsoft.VisualStudio.Text.ITrackingPoint> 文本缓冲区中的字符位置。 如果以导致字符位置移动的方式编辑缓冲区，跟踪点将随它移动。 例如，如果跟踪点引用缓冲区中的位置 10，并且在缓冲区的开头插入了五个字符，则跟踪点将引用位置 15。 如果插入发生在跟踪点表示的位置，则其行为由其 （可以是 或 ） <xref:Microsoft.VisualStudio.Text.PointTrackingMode> `Positive` 确定 `Negative` 。 如果跟踪模式为正，则跟踪点引用相同的字符，该字符现在位于插入的末尾。 如果跟踪模式为负，则跟踪点引用原始位置的第一个插入的字符。 如果删除跟踪点表示的位置中的字符，则跟踪点将转移到已删除范围之后的第一个字符。 例如，如果跟踪点引用位置 5 中的字符，并删除位置 3 到 6 的字符，则跟踪点引用位置 3 的字符。
+<xref:Microsoft.VisualStudio.Text.ITrackingPoint>表示文本缓冲区中的字符位置。 如果缓冲区的编辑方式导致字符的位置改变，则跟踪点会随之移动。 例如，如果跟踪点引用缓冲区中的位置10，并且在缓冲区的开头插入5个字符，则跟踪点将引用位置15。 如果插入操作正好精确地出现在跟踪点指示的位置，则其行为取决于其 <xref:Microsoft.VisualStudio.Text.PointTrackingMode> ，它可以是 `Positive` 或 `Negative` 。 如果跟踪模式为正，则跟踪点指的是同一字符，这现在位于插入的末尾。 如果跟踪模式为负数，则跟踪点将引用原始位置的第一个插入字符。 如果删除了跟踪点表示的位置的字符，则跟踪点将移到已删除范围之后的第一个字符。 例如，如果跟踪点引用位于位置5的字符，并且删除位置3到步骤6的字符，则跟踪点将引用位置3处的字符。
 
-表示 <xref:Microsoft.VisualStudio.Text.ITrackingSpan> 字符范围，而不是只表示一个位置。 其行为由 其 确定 <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> 。 如果范围跟踪模式为 [SpanTrackingMode.EdgeInclusive，](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive)则跟踪范围会增大，以合并在其边缘插入的文本。 如果范围跟踪模式为 [SpanTrackingMode.EdgeExclusive，](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive)则跟踪范围不会合并在其边缘插入的文本。 但是，如果范围跟踪模式为 [SpanTrackingMode.EdgePositive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive)，则插入操作将当前位置推送到开始位置;如果范围跟踪模式为 [SpanTrackingMode.EdgeNegative，](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative)则插入操作将当前位置推送到末尾。
+<xref:Microsoft.VisualStudio.Text.ITrackingSpan>表示一系列字符，而不只是一个位置。 其行为由其来确定 <xref:Microsoft.VisualStudio.Text.SpanTrackingMode> 。 如果范围跟踪模式为 [SpanTrackingMode. EdgeInclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeInclusive)，则跟踪跨度会增长以合并其边缘处插入的文本。 如果范围跟踪模式为 [SpanTrackingMode. EdgeExclusive](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeExclusive)，则跟踪跨度不会合并在边缘处插入的文本。 但是，如果范围跟踪模式为 [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgePositive)，则插入会将当前位置推入开头，如果范围跟踪模式为 [SpanTrackingMode](xref:Microsoft.VisualStudio.Text.SpanTrackingMode.EdgeNegative)，则插入会将当前位置向末尾推送。
 
-可以获取跟踪点的位置或跟踪范围的范围，以找到跟踪点所属的文本缓冲区的任何快照。 可以安全地从任何线程引用跟踪点和跟踪范围。
+您可以获取跟踪点或其所属文本缓冲区的任何快照的跟踪范围的跨度。 可以从任何线程安全地引用跟踪点和跟踪范围。
 
 #### <a name="content-types"></a>内容类型
 
-内容类型是定义不同类型的内容的一种机制。 内容类型可以是文件类型（如"text"、"code"或"binary"）或技术类型（如"xml"、"vb"或"c#"）。 例如，"using"一词在 C# 和 Visual Basic中都是关键字，但在其他编程语言中不是。 因此，此关键字的定义将限制为"c#"和"vb"内容类型。
+内容类型是一种用于定义不同种类的内容的机制。 内容类型可以是文件类型，如 "文本"、"代码" 或 "二进制" 或 "xml"、"vb" 或 "c #" 之类的技术类型。 例如，单词 "using" 是 c # 和 Visual Basic 中的关键字，而不是其他编程语言中的关键字。 因此，此关键字的定义将限制为 "c #" 和 "vb" 内容类型。
 
-内容类型用作编辑器的修饰和其他元素的筛选器。 许多编辑器功能和扩展点都是按内容类型定义的。 例如，纯文本文件、XML 文件和源代码文件的文本着色Visual Basic不同。 创建文本缓冲区时，通常会为其分配内容类型，并且可更改文本缓冲区的内容类型。
+内容类型用作修饰和编辑器的其他元素的筛选器。 许多编辑器功能和扩展点按内容类型进行定义。 例如，纯文本文件、XML 文件和 Visual Basic 源代码文件的文本颜色不同。 通常，在创建文本缓冲区时，将为其分配内容类型，并且可以更改文本缓冲区的内容类型。
 
-内容类型可以从其他内容类型进行多继承。 允许 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition> 将多个基类型指定为给定内容类型的父类型。
+内容类型可以多个继承自其他内容类型。 <xref:Microsoft.VisualStudio.Utilities.ContentTypeDefinition>允许您指定多个基类型作为给定内容类型的父级。
 
-开发人员可以定义自己的内容类型，然后使用 注册它们 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> 。 许多编辑器功能都可以通过使用 来定义特定内容类型 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 。 例如，可以定义编辑器边距、装饰和鼠标处理程序，以便它们仅应用于显示特定内容类型的编辑器。
+开发人员可以定义自己的内容类型，并使用对其进行注册 <xref:Microsoft.VisualStudio.Utilities.IContentTypeRegistryService> 。 对于特定内容类型，可以使用来定义许多编辑器功能 <xref:Microsoft.VisualStudio.Utilities.ContentTypeAttribute> 。 例如，可以定义编辑器边距、修饰和鼠标处理程序，使其仅应用于显示特定内容类型的编辑器。
 
 ### <a name="the-text-view"></a>文本视图
 
-模型视图控制器的视图部分 (MVC) 模式定义文本视图、视图的格式设置、图形元素（如滚动条）和符号。 编辑器的所有Visual Studio元素都基于 WPF。
+模型视图控制器 (MVC) 模式的视图部分定义文本视图、视图的格式、图形元素（如滚动条）和插入符号。 Visual Studio 编辑器的所有呈现元素都基于 WPF。
 
 #### <a name="text-views"></a>文本视图
 
-<xref:Microsoft.VisualStudio.Text.Editor.ITextView>接口是文本视图的独立于平台的表示形式。 它主要用于在窗口中显示文本文档，但也可以用于其他目的，例如，在工具提示中。
+<xref:Microsoft.VisualStudio.Text.Editor.ITextView>接口是文本视图的与平台无关的表示形式。 它主要用于在窗口中显示文本文档，但也可用于其他目的，例如，在工具提示中。
 
-文本视图引用不同类型的文本缓冲区。 属性引用一个对象，该对象指向这三个不同的文本缓冲区：数据缓冲区（顶级数据级缓冲区）和编辑缓冲区（其中进行编辑）和可视缓冲区（即文本视图中显示的缓冲区）。 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A> <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel>
+文本视图引用不同种类的文本缓冲区。 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.TextViewModel%2A>属性指的是 <xref:Microsoft.VisualStudio.Text.Editor.ITextViewModel> 指向这三个不同文本缓冲区的对象：数据缓冲区，数据缓冲区是顶级的数据缓冲区、编辑缓冲区、发生编辑的缓冲区以及显示在文本视图中的缓冲区。
 
-文本基于附加到基础文本缓冲区的分类器设置格式，并且使用附加到文本视图本身的修饰提供程序进行修饰。
+文本基于附加到基础文本缓冲区的分类器进行设置，并使用附加到文本视图本身的修饰提供程序进行装饰。
 
-#### <a name="the-text-view-coordinate-system"></a>文本视图坐标系
+#### <a name="the-text-view-coordinate-system"></a>文本视图坐标系统
 
-文本视图坐标系指定文本视图中的位置。 在此坐标系中，x 值 0.0 对应于要显示的文本的左边缘，y 值 0.0 对应于所显示文本的上边缘。 x 坐标从左向右增加，y 坐标从上到下增加。
+文本视图坐标系统在文本视图中指定位置。 在此坐标系中，x 值0.0 对应于正在显示的文本的左边缘，y 值0.0 对应于要显示的文本的上边缘。 X 坐标从左到右增加，y 坐标从上到下增加。
 
-视区 (文本窗口中可见文本的一部分) 其水平滚动方式不能与垂直滚动的方式相同。 视区通过更改其左坐标水平滚动，以便它根据绘图图面移动。 但是，只有更改呈现的文本，才能垂直滚动视区，这将导致 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 引发事件。
+视区 (在文本窗口中可见) 文本部分在垂直滚动时无法水平滚动。 通过更改视区的左坐标，使其在水平方向上滚动，使其相对于绘图图面移动。 但是，视区只能通过更改呈现的文本来垂直滚动，这将导致 <xref:Microsoft.VisualStudio.Text.Editor.ITextView.LayoutChanged> 引发事件。
 
-坐标系中的距离对应于逻辑像素。 如果文本呈现图面在未进行缩放转换的情况下显示，则文本呈现坐标系中的一个单元对应于显示器上的一个像素。
+坐标系统中的距离对应于逻辑像素。 如果显示文本呈现图面的情况下没有缩放变换，则文本呈现坐标系统中的一个单元对应于显示的一个像素。
 
 #### <a name="margins"></a>边距
 
-<xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin>接口表示边距，并启用对边距及其大小的可见性的控制。 有四个预定义边距，它们名为"Top"、"Left"、"Right"和"Bottom"，并附加到视图的上边缘、下边缘、左边缘或右边缘。 这些边距是可在其中放置其他边距的容器。 接口定义返回边距大小和边距可见性的方法。 边距是视觉对象元素，提供有关它们所附加到的文本视图的其他信息。 例如，行号边距显示文本视图的行号。 字形边距显示 UI 元素。
+<xref:Microsoft.VisualStudio.Text.Editor.ITextViewMargin>接口表示边距，并允许控制边距及其大小的可见性。 有四个预定义的边距，分别名为 "Top"、"左"、"右" 和 "下"，并附加到视图的上、下、左或右边缘。 这些边距是可以在其中放置其他边距的容器。 接口定义返回边距大小和边距可见性的方法。 边距是可视元素，这些元素提供有关其附加到的文本视图的其他信息。 例如，行号边距显示文本视图的行号。 字形边距显示 UI 元素。
 
-<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider>接口处理边距的创建和放置。 可以按其他边距对边距排序。 高优先级边距靠近文本视图。 例如，如果有两个左边距（边距 A 和边距 B）和边距 B 的优先级低于边距 A，则边距 B 显示在边距 A 的左侧。
+<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewMarginProvider>接口处理边距的创建和放置。 可根据其他边距对边距进行排序。 优先级较高的边距更接近文本视图。 例如，如果有两个左边距，边距 A 和边距 B，边距 B 的优先级低于边距 A，则边距 B 显示在边距 A 的左侧。
 
 #### <a name="the-text-view-host"></a>文本视图宿主
 
-<xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost>接口包含文本视图以及该视图附带的任何修饰，例如滚动条。 文本视图宿主还包含附加到视图边框的边距。
+该 <xref:Microsoft.VisualStudio.Text.Editor.IWpfTextViewHost> 界面包含文本视图以及该视图附带的任何邻接修饰，例如滚动条。 文本视图宿主还包含附加到视图边框的边距。
 
 #### <a name="formatted-text"></a>带格式文本
 
-文本视图中显示的文本由 对象 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 组成。 每个文本视图行对应于文本视图中的一行文本。 如果未启用换行，则基础文本缓冲区中的长 (可以部分遮盖，也可以) 多个文本视图行。 接口包含用于坐标和字符之间的映射的方法和属性，以及可能与行关联的 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 修饰的方法和属性。
+文本视图中显示的文本由 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 对象组成。 每个文本视图行对应于文本视图中的一行文本。 如果未启用 "自动换行" 功能，则基础文本缓冲区中的长行可以部分遮盖 () 或拆分为多个文本视图行。 此 <xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 接口包含坐标和字符之间的映射方法和属性，以及可能与该行关联的修饰的方法和属性。
 
-<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 对象是使用 接口 <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> 创建的。 如果只关心视图中当前显示的文本，可以忽略格式设置源。 如果对视图中未显示的文本格式感兴趣 (例如，若要支持富文本剪切和粘贴) ，可以使用 在文本缓冲区中设置文本 <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> 格式。
+<xref:Microsoft.VisualStudio.Text.Formatting.ITextViewLine> 使用接口创建对象 <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> 。 如果你只是想要了解当前在视图中显示的文本，则可以忽略格式设置源。 如果对视图中不显示的文本格式感兴趣 (例如，若要支持 rtf 剪切和粘贴) ，可以使用 <xref:Microsoft.VisualStudio.Text.Formatting.IFormattedLineSource> 设置文本缓冲区中的文本格式。
 
-文本视图一次 <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> 格式化一个。
+文本视图 <xref:Microsoft.VisualStudio.Text.ITextSnapshotLine> 一次设置一个。
 
 ## <a name="editor-features"></a>编辑器功能
 
-编辑器的功能经过设计，因此功能的定义独立于其实现。 编辑器包括以下功能：
+设计编辑器的功能，以使该功能的定义与它的实现分离。 该编辑器包含以下功能：
 
 - 标记和分类器
 
-- 装饰品
+- 修饰
 
 - 投影
 
@@ -221,7 +221,7 @@ abXefYj
 
 ### <a name="tags-and-classifiers"></a>标记和分类器
 
-标记是与文本范围关联的标记。 它们可以通过不同方式呈现，例如，使用文本着色、下划线、图形或弹出窗口。 分类器是一种标记。
+标记是与文本范围关联的标记。 它们可以以不同的方式显示，例如，使用文本颜色、下划线、图形或弹出窗口。 分类器是一种标记。
 
 其他类型的标记 <xref:Microsoft.VisualStudio.Text.Tagging.TextMarkerTag> 用于文本突出显示、 <xref:Microsoft.VisualStudio.Text.Tagging.OutliningRegionTag> 大纲显示和 <xref:Microsoft.VisualStudio.Text.Tagging.ErrorTag> 编译错误。
 
@@ -319,7 +319,7 @@ P: ABCDEvwxyz
 
 IntelliSense 支持语句完成、签名帮助 (也称为参数信息) 、快速信息和浅电灯泡。
 
-语句完成为方法名称、XML 元素以及其他编码或标记元素提供可能的完成的弹出列表。 通常，用户笔势调用完成会话。 该会话将显示可能的完成的列表，用户可以选择一个列表或取消列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> 。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算会话的 <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 完成项的。
+语句完成为方法名称、XML 元素以及其他编码或标记元素提供可能的完成的弹出列表。 通常，用户笔势调用完成会话。 该会话将显示可能的完成的列表，用户可以选择一个列表或取消列表。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionBroker>负责创建和触发 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSession> 。 <xref:Microsoft.VisualStudio.Language.Intellisense.ICompletionSource>计算会话 <xref:Microsoft.VisualStudio.Language.Intellisense.CompletionSet> 的完成项的 。
 
 ## <a name="see-also"></a>另请参阅
 

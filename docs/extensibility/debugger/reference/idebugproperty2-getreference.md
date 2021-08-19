@@ -1,6 +1,6 @@
 ---
-description: 返回对该属性值的引用。
-title: IDebugProperty2：： GetReference |Microsoft Docs
+description: 返回对 属性的值的引用。
+title: IDebugProperty2：：GetReference |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 2fa97d9b-c3d7-478e-ba5a-a933f40a0103
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cc8a922ad29b7f6b3ecff57ee5df7ad0e7dded1d
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: be8e0b73ec8fe11a5fc5ad2eff5c1f38b2511d4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105064756"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159589"
 ---
 # <a name="idebugproperty2getreference"></a>IDebugProperty2::GetReference
-返回对该属性值的引用。
+返回对 属性的值的引用。
 
 ## <a name="syntax"></a>语法
 
@@ -42,11 +43,11 @@ int GetReference(
 
 ## <a name="parameters"></a>参数
 `ppRererence`\
-弄返回一个 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象，该对象表示对属性值的引用。
+[out]返回 [一个 IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象，该对象表示对 属性值的引用。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码，通常为 `E_NOTIMPL` 或 `E_GETREFERENCE_NO_REFERENCE` 。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码，通常为 `E_NOTIMPL` 或 `E_GETREFERENCE_NO_REFERENCE` 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

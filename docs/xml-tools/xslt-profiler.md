@@ -8,15 +8,16 @@ ms.assetid: 87387c9a-2e89-4801-ad51-83740cd6ea25
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 9dc37ceddd87fa0b6c8029c0acb8ea195f9ce10b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4e4c15f9185a967f2c200a00ad2312343600c73e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99900814"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147487"
 ---
 # <a name="the-xslt-profiler"></a>XSLT 探查器
 

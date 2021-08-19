@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5080564527d2037c4ea376bc11c5df5a397c623616b6c08e62ab79e684256548
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d54118dd6702b9c1df89cc0a7ba0175232a7cbe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448489"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159576"
 ---
 # <a name="send-the-required-events"></a>发送所需的事件
 使用此过程发送所需的事件。

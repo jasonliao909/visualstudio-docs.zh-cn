@@ -732,6 +732,12 @@
               href: ide/fsharp-visual-studio.md
             - name: 面向 .NET 较旧版本
               href: ide/fsharp-target-older-dotnet-versions.md
+        - name: Python >>
+          href: python/index.yml
+        - name: JavaScript/TypeScript >>
+          href: javascript/index.yml
+        - name: Azure >>
+          href: azure/index.yml
         - name: 3D 图形资产
           items:
             - name: 处理游戏和应用的 3D 资产
@@ -1434,21 +1440,13 @@
     - name: Docs 中的新增内容
       href: ide/whats-new-visual-studio-docs.md
     - name: 发行说明
-      items:
-        - name: 发行节奏
-          href: /visualstudio/productinfo/release-rhythm/
-        - name: Visual Studio 2022 说明
-          href: /visualstudio/releases/2022/release-notes-preview/
-        - name: Visual Studio 2019 说明
-          href: /visualstudio/releases/2019/release-notes/
-        - name: Visual Studio 2017 说明
-          href: /visualstudio/releasenotes/vs2017-relnotes/
-        - name: Visual Studio 2015 文档
-          href: vs-2015-archive.md
-        - name: 许可条款
-          href: 'https://visualstudio.microsoft.com/license-terms/'
-        - name: 支持生命周期和维护服务
-          href: /visualstudio/productinfo/vs-servicing-vs/
+      href: /visualstudio/releases/
+    - name: 发行节奏
+      href: /visualstudio/productinfo/release-rhythm/
+    - name: 许可条款
+      href: 'https://visualstudio.microsoft.com/license-terms/'
+    - name: 支持生命周期和维护服务
+      href: /visualstudio/productinfo/vs-servicing-vs/
     - name: 客户体验改善
       items:
         - name: 关于程序

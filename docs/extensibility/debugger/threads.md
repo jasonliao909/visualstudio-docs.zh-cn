@@ -11,14 +11,15 @@ ms.assetid: 2243d24a-c3d2-41d1-abbb-6db21a2db9ee
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: dc745a4361c0935896048bbf72a4084f007ecf7b
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 58eed8c14faebfa60f2c87846ceefb7d93ac3a79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112905730"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159550"
 ---
 # <a name="threads"></a>线程数
 在调试器体系结构 *中，线程*：
@@ -29,7 +30,7 @@ ms.locfileid: "112905730"
 
 - 由 [IDebugThread2](../../extensibility/debugger/reference/idebugthread2.md) 接口表示，该接口通常由调试引擎 (DE) 或虚拟机（由于执行程序而创建）。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - Programs 
 - [堆栈帧](../../extensibility/debugger/stack-frames.md)
 - [调试引擎](../../extensibility/debugger/debug-engine.md)

@@ -28,12 +28,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 80421e85832d43d5dbdd0816ccd19139312236952a8d0397748faa9403a80f90
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 942ff50e8384cac8d3ed03aeb747868e7eb9f95b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314766"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148384"
 ---
 # <a name="custom-task-panes"></a>自定义任务窗格
   任务窗格是一个用户界面面板，通常停靠在 Microsoft Office 应用程序中某一窗口的一侧。 自定义任务窗格为你提供了一钟方法，使你可以创建自己的任务窗格并为用户提供熟悉的界面来访问你的解决方案的功能。 例如，界面中可以包含运行代码以修改文档或显示来自数据源的数据的控件。
@@ -86,7 +86,7 @@ ms.locfileid: "121314766"
 ## <a name="access-the-application-from-the-task-pane"></a>从"任务"窗格访问应用程序
  如果想要通过用户控件实现应用程序的自动化，则可以通过在代码中使用 `Globals.ThisAddIn.Application` 来直接访问对象模型。 静态 `Globals` 类提供对 `ThisAddIn` 对象的访问权限。 此对象的 `Application` 字段是进入应用程序对象模型的入口点。
 
- 有关 对象的 字段 `Application` 详细信息 `ThisAddIn` ，请参阅 Program [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何从自定义任务窗格自动执行应用程序的演练，请参阅演练：从自定义任务窗格[自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关 类的信息 `Globals` ，请参阅对项目 中的对象的全局[Office访问](../vsto/global-access-to-objects-in-office-projects.md)。
+ 有关 对象的 字段 `Application` 详细信息 `ThisAddIn` ，请参阅 Program [VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。有关演示如何从自定义任务窗格自动执行应用程序的演练，请参阅演练：从自定义任务窗格[自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。 有关 类详细信息，请参阅对项目 中的对象的 `Globals` [全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)。
 
 ## <a name="manage-the-user-interface-of-the-task-pane"></a>管理任务窗格的用户界面
  创建任务窗格之后，可以使用 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象的属性和事件来控制任务窗格的用户界面，并在用户更改任务窗格时进行响应。
@@ -123,11 +123,11 @@ ms.locfileid: "121314766"
 |当用户隐藏任务窗格或使其可见时进行响应。|<xref:Microsoft.Office.Tools.CustomTaskPane.VisibleChanged>|
 
 ## <a name="clean-up-resources-used-by-the-task-pane"></a>清理任务窗格使用的资源
- 创建自定义任务窗格之后，只要 VSTO 外接程序在运行，<xref:Microsoft.Office.Tools.CustomTaskPane> 对象就会保留在内存中。 即使用户单击任务窗格角的"关闭"按钮 (X) 对象仍保留在内存中。
+ 创建自定义任务窗格之后，只要 VSTO 外接程序在运行，<xref:Microsoft.Office.Tools.CustomTaskPane> 对象就会保留在内存中。 即使用户单击任务窗格角的 X ("关闭") 对象仍保留在内存中。 
 
  若要在 VSTO 外接程序仍在运行时清理任务窗格使用的资源，请使用 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 或 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 方法。 这些方法从 `CustomTaskPanes` 集合中删除指定的 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象，并调用该对象的 `Dispose` 方法。
 
- [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在卸载 VSTO 外接程序时自动清理自定义任务窗格使用的资源。 请勿在 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 项目中 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 的事件处理程序 `ThisAddIn_Shutdown` 中调用 或 方法。 这些方法将引发 <xref:System.ObjectDisposedException>，因为 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在调用 `ThisAddIn_Shutdown` 之前清理 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象使用的资源。 有关 ， `ThisAddIn_Shutdown` 请参阅项目中[Office事件](../vsto/events-in-office-projects.md)。
+ [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在卸载 VSTO 外接程序时自动清理自定义任务窗格使用的资源。 请勿在 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.Remove%2A> 项目中 <xref:Microsoft.Office.Tools.CustomTaskPaneCollection.RemoveAt%2A> 的事件处理程序 `ThisAddIn_Shutdown` 中调用 或 方法。 这些方法将引发 <xref:System.ObjectDisposedException>，因为 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 会在调用 `ThisAddIn_Shutdown` 之前清理 <xref:Microsoft.Office.Tools.CustomTaskPane> 对象使用的资源。 有关 有关详细信息 `ThisAddIn_Shutdown` ，请参阅项目中[Office事件](../vsto/events-in-office-projects.md)。
 
 ## <a name="manage-custom-task-panes-in-multiple-application-windows"></a><a name="Managing"></a> 在多个应用程序窗口中管理自定义任务窗格
  在使用多个窗口显示文档和其他项的应用程序中创建自定义任务窗格时，你需要进行额外的步骤来确保在用户希望显示任务窗格时任务窗格是可见的。
@@ -218,7 +218,7 @@ ms.locfileid: "121314766"
 
 - [微软。Office。互操作。PowerPoint。EApplication_Event.WindowDeactivate](/previous-versions/office/developer/office-2010/ff763093(v=office.14))
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [演练：从自定义任务窗格自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)
 - [演练：使用功能区按钮同步自定义任务窗格](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

@@ -18,14 +18,15 @@ ms.assetid: f98c91c0-447a-4533-85b6-87170a0dc4c3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0835746b94412380bee314bc3fac59b4c48f86d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28fee1e361afbd40e8ebd134dfd702beb9c2b270
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871996"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147009"
 ---
 # <a name="edit-and-continue-error-message"></a>“编辑并继续”错误消息
 

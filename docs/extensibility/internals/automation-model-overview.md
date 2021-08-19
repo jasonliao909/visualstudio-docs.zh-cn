@@ -1,6 +1,6 @@
 ---
 title: 自动化模型概述|Microsoft Docs
-description: 了解Visual Studio自动化模型，该模型由一组 对象组成，你可以针对这些对象编写Visual Studio或扩展。
+description: 了解Visual Studio自动化模型，该模型由一组 对象组成，可以针对这些对象编写Visual Studio或扩展。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 24fdf3e87e4e8e58237052527e595bd60908373388d1e127f2607c88a609bfac
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ed2f1491b9e692662de282e6f78f9f44c59aa5d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432758"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159342"
 ---
 # <a name="automation-model-overview"></a>自动化模型概述
-自动化模型由一组 对象组成，你可以针对这些对象编写Visual Studio或扩展。 外接程序是一个应用程序，它可以操作Visual Studio和自动执行常见任务。 一Visual Studio扩展可以创建自定义Visual Studio组件，或添加到标准组件（如文本编辑器）的功能。
+自动化模型由一组 对象组成，你可以针对这些对象编写Visual Studio或扩展。 外接程序是一个应用程序，可以操作Visual Studio和自动执行常见任务。 一Visual Studio扩展可以创建自定义Visual Studio组件或添加到标准组件（如文本编辑器）的功能。
 
 ## <a name="objects-in-the-automation-model"></a>自动化模型中的对象
  自动化模型由控制公共环境的主要方面的相关对象组组成。 下图显示了构成自动化模型的Visual Studio对象集。
@@ -35,7 +35,7 @@ ms.locfileid: "121432758"
 
  可以考虑扩展环境的自动化模型的位置：
 
-- 项目
+- Project
 
 - 文档
 
@@ -45,5 +45,5 @@ ms.locfileid: "121432758"
 
 有关自动化详细信息，请参阅自动化和扩展[性Visual Studio。](/previous-versions/visualstudio/visual-studio-2015/extensibility/extensibility-in-visual-studio?preserve-view=true&view=vs-2015) 本文档及其提供的链接可帮助你决定如何为 VSPackage 提供自动化。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [如何：创建外接程序](/previous-versions/80493a3w(v=vs.140))

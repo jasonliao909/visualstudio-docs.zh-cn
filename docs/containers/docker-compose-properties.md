@@ -5,14 +5,14 @@ description: 了解如何编辑 Docker Compose 生成属性以自定义 Visual S
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 04/06/2021
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: reference
-ms.openlocfilehash: b3744640aada798179c86cc60d2c8ce7b02ccfaa
-ms.sourcegitcommit: 162be102d2c22a1c4ad2c447685abd28e0e85d15
+ms.openlocfilehash: 1d2e367f066fc683c1a29ce2dab1b692abe5fce9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "109973474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147292"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 生成属性
 

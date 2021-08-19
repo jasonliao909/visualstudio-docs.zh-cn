@@ -14,14 +14,15 @@ ms.assetid: e45f08d2-f4a3-49c3-9452-aa60508e2f74
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4efd5ab0ddd94b17fa6a683366707d635f844bb6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03f62140322bca8efb3a3f8ba006293ab52ce665
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919432"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143750"
 ---
 # <a name="list-source-command"></a>“列出源”命令
 显示源代码的指定行。
