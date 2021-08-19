@@ -1,6 +1,6 @@
 ---
-description: 通知调试包文本已从文档中删除。
-title: IDebugDocumentTextEvents2：： onRemoveText |Microsoft Docs
+description: 通知调试包已从文档中删除文本。
+title: IDebugDocumentTextEvents2：：onRemoveText |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 58e7608a82ab1867171cd8a5aed92c5723a3db0a39810d4de245d44e6b7971db
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 378510588f3b647cd7f4447797b58183f5875b32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119251"
 ---
 # <a name="idebugdocumenttextevents2onremovetext"></a>IDebugDocumentTextEvents2::onRemoveText
-通知调试包文本已从文档中删除。
+通知调试包已从文档中删除文本。
 
 ## <a name="syntax"></a>语法
 
@@ -45,14 +45,14 @@ int onRemoveText(
 
 ## <a name="parameters"></a>参数
 `pos`\
-中一个 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，它指示删除文本的位置。
+[in]一 [TEXT_POSITION，](../../../extensibility/debugger/reference/text-position.md) 指示文本的删除位置。
 
 `dwNumToRemove`\
-中指定已删除文本的字符数。
+[in]指定已删除的文本的字符数。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

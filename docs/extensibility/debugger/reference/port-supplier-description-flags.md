@@ -1,5 +1,5 @@
 ---
-description: 定义可以检索有关端口供应商的元数据。
+description: 定义可检索的有关端口提供程序的元数据。
 title: PORT_SUPPLIER_DESCRIPTION_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,16 +15,16 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8cbb209600e2748378488142d0655d3856500ec186051208148f335428a7a6e9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cb0f0bdc78081bf358418df357199ca56140aafa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122057416"
 ---
 # <a name="port_supplier_description_flags"></a>PORT_SUPPLIER_DESCRIPTION_FLAGS
 
-定义可以检索有关端口供应商的元数据。
+定义可检索的有关端口提供程序的元数据。
 
 ## <a name="syntax"></a>语法
 
@@ -46,19 +46,19 @@ public enum enum_PORT_SUPPLIER_DESCRIPTION_FLAGS
 ## <a name="fields"></a>字段
 
 `PSDFLAG_SHOW_WARNING_ICON`\
-如果选中，则警告图标将显示在 UI 中。
+如果选择此选项，则 UI 中将显示警告图标。
 
 ## <a name="remarks"></a>备注
 
-此枚举由 [GetDescription 方法](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 返回。
+此枚举由 [GetDescription](../../../extensibility/debugger/reference/idebugportsupplierdescription2-getdescription.md) 方法返回。
 
 ## <a name="requirements"></a>要求
 
-标头：Msdbg.h
+标头： Msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 

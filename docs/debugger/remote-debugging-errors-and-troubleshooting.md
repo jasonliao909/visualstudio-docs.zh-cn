@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d046bfb0801229cd9f317ff2bcc8b715207ac2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3a111fef09a702cc122b391d2d1f864d0bf5117d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934580"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153805"
 ---
 # <a name="remote-debugging-errors-and-troubleshooting"></a>远程调试错误和疑难解答
 

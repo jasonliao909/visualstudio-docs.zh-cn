@@ -8,14 +8,15 @@ ms.assetid: 57d14fc9-b5f7-45ee-9717-48086886742d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0d89db195b94bcf31d2ce2c7482c5b7315a979e9
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: bdec03536054c5f4380fc1412ff192e34b343bdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154078"
 ---
 # <a name="point-bilinear-trilinear-and-anisotropic-texture-filtering-variants"></a>Point、Bilinear、Trilinear 和 Anisotropic 纹理过滤变量
 重写相应纹理取样器上的筛选模式。

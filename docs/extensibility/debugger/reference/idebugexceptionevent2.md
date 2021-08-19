@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a76ee7facb47a76e7d3887c8eb391f076769edb51a9ace6b62899fe57e29e79
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fe5176217e0c683c2a68b36b0276015ccdc16c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433926"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118887"
 ---
 # <a name="idebugexceptionevent2"></a>IDebugExceptionEvent2
 当当前正在执行的程序中引发异常时，调试引擎 (DE) 将此接口发送到会话调试管理器 (SDM) 。
@@ -56,7 +56,7 @@ IDebugExceptionEvent2 : IUnknown
 ## <a name="remarks"></a>备注
  在发送事件之前，将检查是否已通过之前对 [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)的调用将此异常事件指定为第一次或第二次异常。 如果已将该事件指定为第一次异常，则会将 `IDebugExceptionEvent2` 事件发送到 SDM。 否则，这会使应用程序有机会处理异常。 如果未提供异常处理程序，并且异常已被指定为第二次异常，则 `IDebugExceptionEvent2` 会将事件发送到 SDM。 否则，将继续执行程序，操作系统或运行时将处理此异常。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [SetException](../../../extensibility/debugger/reference/idebugengine2-setexception.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

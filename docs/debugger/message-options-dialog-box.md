@@ -10,14 +10,15 @@ ms.assetid: 88ad85af-3f56-4df1-98b6-fab34c1e5874
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5963bcbfb74c6a7722c02b59459a6334d461b980
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 31db089d32a40d660c08dc5e1c06533f171d219f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891782"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154000"
 ---
 # <a name="message-options-dialog-box"></a>“消息选项”对话框
 使用此对话框可选择在[消息视图](../debugger/messages-view.md)中列出的消息。 若要显示此对话框，请在“监视”菜单中选择“日志消息” 。

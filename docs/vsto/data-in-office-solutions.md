@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fe3dcc9a17e6018ce80249b8f205f910f25668cd806ce70eb5687fa833328a83
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e9cc75372da8026ea2d5adc0ca44ca6753023bbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053679"
 ---
 # <a name="data-in-office-solutions"></a>解决方案Office数据
   多种 Office 解决方案使用户能够检索或修改数据。 当通过使用 Visual Studio 创建 Office 解决方案时，可通过多种不同方法使用数据。

@@ -11,17 +11,18 @@ ms.assetid: 008c87f7-a76e-43d3-8904-11b225d6a9a5
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 54ab1ec2ad37517a7a7fbfd7059022e1c5a26f82
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a5934c73460cb6256865d431e19765a6518556e2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078196"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120356"
 ---
 # <a name="bp_request_info2"></a>BP_REQUEST_INFO2
 包含实现断点所需的信息，包括供应商 GUID、约束和跟踪点。
@@ -114,7 +115,7 @@ public struct BP_REQUEST_INFO2 {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo2](../../../extensibility/debugger/reference/idebugbreakpointrequest3-getrequestinfo2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

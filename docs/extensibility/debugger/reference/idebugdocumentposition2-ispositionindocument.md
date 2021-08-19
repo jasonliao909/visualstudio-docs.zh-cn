@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 849b6989f4e777e00d262019bb5fc5159e55a80fa2b4cc037e70e9eaffe9bd82
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c72b0a3494018f8dc2bda518507d4b13da9cfe74
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119459"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 确定文档位置是否包含在给定文档中。
@@ -51,6 +51,6 @@ int IsPositionInDocument(
 ## <a name="remarks"></a>备注
  此方法主要用于在 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 接口中设置断点。 加载文档时，将调用断点位置以确定文档是否包含此位置。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

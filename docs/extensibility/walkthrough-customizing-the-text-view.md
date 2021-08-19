@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 493d11fe5c024631bc333a0bea6bd834f54eefccac9e97d24c4d22d16f2de60f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd60c6e9c6253a214de7a08173462895cdf29fc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121400473"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078539"
 ---
 # <a name="walkthrough-customize-the-text-view"></a>演练：自定义文本视图
 可以通过在其编辑器格式映射中修改以下任何属性来自定义文本视图：
@@ -35,7 +35,7 @@ ms.locfileid: "121400473"
 
 - 可见空白
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
  从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-mef-project"></a>创建 MEF 项目

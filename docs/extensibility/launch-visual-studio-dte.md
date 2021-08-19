@@ -1,6 +1,6 @@
 ---
 title: 使用 DTE 启动 Visual Studio
-description: 了解如何使用 DTE 启动Visual Studio以支持主版本并行安装。 本文包含一个代码示例。
+description: 了解如何使用 DTE 启动Visual Studio，以支持主版本并行安装。 本文包含一个代码示例。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
@@ -8,18 +8,19 @@ ms.topic: how-to
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: b3f5aa141d73879e61a06e7a2b19f03bd53243a7
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: 1cea6b082a5cdb51f0de2053bbc7912cd32ce500
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102358"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 启动 Visual Studio
 
-从 2017 Visual Studio开始，使用 DTE 启动Visual Studio的机制不同于启动早期版本的 Visual Studio。 此更改是必需的，因为 Visual Studio 2017 及更高版本支持主版本的并行安装 (例如，可以同时安装预览版和发布) 。
+从 2017 Visual Studio开始，使用 DTE 启动 Visual Studio 的机制不同于启动早期版本的 Visual Studio。 此更改是必需的，因为 Visual Studio 2017 及更高版本支持主版本的并行安装 (例如，可以同时安装预览版和发布) 。
 
 本文的其余部分演示了可用于使用 DTE 启动 2019 Visual Studio的代码。
 
@@ -29,13 +30,13 @@ ms.locfileid: "113046022"
 
 1. 为应用程序 **创建新的控制台** 应用.NET Framework。
 
-2. 安装 [Microsoft.VisualStudio.Setup.Configuration。互操作](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet 包，并添加对程序集的引用。
+2. 安装[Microsoft.VisualStudio.Setup.Configuration。互操作](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/)NuGet包并添加对程序集的引用。
 
 3. 添加对 EnvDTE 的引用。
 
 4. 将 [下面的示例代码](#example-code) 粘贴到 *Program.cs* 文件中。
 
-5. 按 **F5** 运行程序。 在程序Visual Studio之前，应会看到 2019 年已打开。
+5. 按 **F5** 运行程序。 在程序退出Visual Studio应看到 2019 年打开。
 
 ## <a name="example-code"></a>示例代码
 
@@ -181,7 +182,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [找到 Visual Studio](locating-visual-studio.md)
-- [演练：从编辑器扩展访问 DTE 对象](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)
+- [演练：通过编辑器扩展访问 DTE 对象](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

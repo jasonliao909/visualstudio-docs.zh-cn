@@ -1,6 +1,6 @@
 ---
-title: 更改命令命令|Microsoft Docs
-description: 了解如何提供更改命令外观的反馈，例如使命令可用/不可用、隐藏/显示或已选中/未选中。
+title: 更改命令的外观 |Microsoft Docs
+description: 了解如何提供更改命令外观的反馈，如使命令可用/不可用、隐藏/显示或选中/取消选中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,43 +15,43 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 6344d5d58856c420807e80020d80f0067d0f973c566b3e613782e5fa0b85ef11
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a13b9a33819aa8b1546fc1139497daa1adf21339
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452623"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058131"
 ---
 # <a name="change-the-appearance-of-a-command"></a>更改命令的外观
-可以通过更改命令的外观来为用户提供反馈。 例如，你可能希望命令在不可用时看起来不同。 可以使命令可用或不可用，隐藏或显示它们，或在菜单上选中或取消选中它们。
+可以通过更改命令的外观向用户提供反馈。 例如，你可能希望某个命令在不可用时的外观有所不同。 您可以使命令可用或不可用、隐藏或显示它们，或在菜单中选中或取消选中它们。
 
 若要更改命令的外观，请执行以下操作之一：
 
-- 在命令表文件的命令定义中指定相应的标志。
+- 在命令表文件的命令定义中指定适当的标志。
 
 - 使用 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> 服务。
 
 - 实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口并修改原始命令对象。
 
-  以下步骤显示如何使用 MPF 中的托管包框架查找和更新命令 (的外观) 。
+  以下步骤演示了如何使用托管包框架 (MPF) 查找和更新命令的外观。
 
 ### <a name="to-change-the-appearance-of-a-menu-command"></a>更改菜单命令的外观
 
-1. 按照更改菜单 [命令的文本中的说明创建](../extensibility/changing-the-text-of-a-menu-command.md) 名为 的菜单项 `New Text` 。
+1. 按照 [更改菜单命令的文本](../extensibility/changing-the-text-of-a-menu-command.md) 中的说明创建一个名为的菜单项 `New Text` 。
 
-2. 在 *ChangeMenuText.cs* 文件中，添加以下 using 语句：
+2. 在 *ChangeMenuText* 文件中，添加以下 using 语句：
 
     ```csharp
     using System.Security.Permissions;
     ```
 
-3. 在 *ChangeMenuTextPackageGuids.cs* 文件中，添加以下行：
+3. 在 *ChangeMenuTextPackageGuids* 文件中，添加以下行：
 
     ```csharp
     public const string guidChangeMenuTextPackageCmdSet= "00000000-0000-0000-0000-00000000";  // get the GUID from the .vsct file
     ```
 
-4. 在 *ChangeMenuText.cs* 文件中，将 ShowMessageBox 方法中的代码替换为以下内容：
+4. 在 *ChangeMenuText* 文件中，将 ShowMessageBox 方法中的代码替换为以下代码：
 
     ```csharp
     private void Execute(object sender, EventArgs e)
@@ -63,7 +63,7 @@ ms.locfileid: "121452623"
     }
     ```
 
-5. 从 对象获取要更新的命令 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> ，然后在命令对象上设置相应的属性。 例如，以下方法使 VSPackage 命令集的指定命令可用或不可用。 以下代码使名为 的菜单项 `New Text` 在单击后不可用。
+5. 获取要从对象更新的命令 <xref:Microsoft.VisualStudio.Shell.OleMenuCommandService> ，然后在命令对象上设置相应的属性。 例如，下面的方法使 VSPackage 命令集中的指定命令可用或不可用。 下面的代码在单击菜单项后将其命名为 " `New Text` 不可用"。
 
     ```csharp
     public bool ChangeMyCommand(int cmdID, bool enableCmd)
@@ -81,14 +81,14 @@ ms.locfileid: "121452623"
     }
     ```
 
-6. 生成项目并启动调试。 应显示 Visual Studio实例。
+6. 生成项目并启动调试。 应显示 Visual Studio 的实验实例。
 
-7. 在" **工具"** 菜单上，单击 **"调用 ChangeMenuText"** 命令。 此时，命令名称为 **Invoke ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand () 。**
+7. 在 " **工具** " 菜单上，单击 " **调用 ChangeMenuText** " 命令。 此时，命令名称会 **调用 ChangeMenuText**，因此命令处理程序不会调用 **ChangeMyCommand ()**。
 
-8. 在"**工具"** 菜单上，现在应会看到"**新建文本"。** 单击"**新建文本"。** 命令现在应灰显。
+8. 此时，你应该会看到 " **工具** " 菜单上的 " **新文本**"。 单击 " **新文本**"。 该命令现在应显示为灰色。
 
 ## <a name="see-also"></a>请参阅
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)
-- [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
+- [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
-- [Visual Studio命令表 (。Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+- [Visual Studio 命令表 (。.Vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -11,17 +11,18 @@ ms.assetid: 91a06ee7-253a-4215-be22-04bf57305aa8
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 14aefb2e1ccc481a71cd32813f2ebf882834f12c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 211003c3d54b7f37979240e400e373db2782ac2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066446"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122119472"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 获取此文档位置的范围。
@@ -62,6 +63,6 @@ Line 6: x = 1;
 
  第5行对正在调试的程序不提供任何代码。 如果在第5行设置断点的调试器希望在第一行中向前搜索分配代码的时间，则调试器将指定一个范围，其中包含可正确放置断点的其他候选行。 然后，取消搜索这些行，直到找到可接受断点的行。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

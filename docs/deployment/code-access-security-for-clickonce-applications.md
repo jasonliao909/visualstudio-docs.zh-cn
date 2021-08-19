@@ -1,6 +1,6 @@
 ---
-title: 应用程序代码ClickOnce访问|Microsoft Docs
-description: 了解应用程序的代码访问ClickOnce以及如何配置代码访问安全权限。
+title: ClickOnce 应用程序的代码访问安全性 |Microsoft Docs
+description: 了解 ClickOnce 应用程序的代码访问安全性以及如何配置代码访问安全权限。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d55ea85fe1075ef9c5bd8a7af238beaafc76e4ce6a142f9ecb16f639dd3cb1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1d60cc8e982e094a3deff406763c234c755a1c32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153740"
 ---
 # <a name="code-access-security-for-clickonce-applications"></a>ClickOnce 应用程序的代码访问安全性
 ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约束。 因此，了解代码访问安全性的含义并且相应地编写 ClickOnce 应用程序是十分重要的。
@@ -95,9 +95,9 @@ ClickOnce 应用程序基于 .NET Framework，需遵从代码访问安全性约�
 
 ## <a name="see-also"></a>请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
-- [如何：启用ClickOnce安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
-- [如何：为应用程序设置ClickOnce区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
-- [如何：为应用程序设置ClickOnce权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
+- [如何：启用 ClickOnce 安全设置](../deployment/how-to-enable-clickonce-security-settings.md)
+- [如何：为 ClickOnce 应用程序设置安全区域](../deployment/how-to-set-a-security-zone-for-a-clickonce-application.md)
+- [如何：设置 ClickOnce 应用程序的自定义权限](../deployment/how-to-set-custom-permissions-for-a-clickonce-application.md)
 - [如何：使用受限权限对 ClickOnce 应用程序进行调试](securing-clickonce-applications.md)
 - [受信任的应用程序部署概述](../deployment/trusted-application-deployment-overview.md)
 - [”项目设计器“ -&gt;“安全”页](../ide/reference/security-page-project-designer.md)

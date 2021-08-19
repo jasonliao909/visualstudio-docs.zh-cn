@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 88334ae13ca4941749c2a7434e0829b880074cde5397d4251849fc7bf67a6331
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 794da0fdccdeee1da47181e5d243bd22734602b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417738"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120447"
 ---
 # <a name="bp_location_type"></a>BP_LOCATION_TYPE
 指定断点请求的断点的位置类型。
@@ -119,7 +119,7 @@ public enum enum_BP_LOCATION_TYPE {
 ## <a name="remarks"></a>备注
 作为参数传递给 [GetLocationType](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getlocationtype.md) 方法。
 
-断点位置类型由断点类型和位置类型组成。 这意味着断点位置类型永远不会只是断点类型 (例如，) 或位置类型 (`BPT_CODE` 例如 `BPLT_FILE_LINE`) 。 此枚举中包含当前支持的所有断点位置类型的预定义常量 `BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING` () 。
+断点位置类型由断点类型和位置类型组成。 这意味着断点位置类型永远不会只是断点类型 (例如) 或位置类型 (`BPT_CODE` 例如 `BPLT_FILE_LINE`) 。 此枚举中包含当前支持的所有断点位置类型的预定义常量 `BPLT_CODE_FILE_LINE` `BPLT_DATA_STRING` () 。
 
 `BPT_CODE``BPT_DATA`和 是 BP_TYPE[](../../../extensibility/debugger/reference/bp-type.md)的成员。
 

@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: d1a5b5086ef90b9d8399a6f0f76bdee77c07288e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3873a4cbf50d216f3574c2ef8ce90255d3eb5d7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950570"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084124"
 ---
 # <a name="projectitemfolder-element"></a>ProjectItemFolder 元素
   表示映射文件夹。
@@ -39,10 +40,10 @@ ms.locfileid: "99950570"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
-|**Target**|必需的 **xs： string** 特性。<br /><br /> SharePoint 安装中映射文件夹相对于部署根文件夹的对应文件夹的路径。 部署根文件夹由 **type** 特性指定的部署类型决定。<br /><br /> 有关详细信息，请参阅 [开发 sharepoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中的 sharepoint 项目项的 **部署路径** 和 **部署根** 属性的说明。|
-|**类型**|必需的 **xs： string** 特性。<br /><br /> 映射文件夹的部署类型。 有关可能值的详细信息，请参阅 [开发 sharepoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 sharepoint 项目项的 **部署类型** 属性的说明。|
+|**Target**|必需的 **xs： string** 特性。<br /><br /> 映射文件夹相对于部署根文件夹 SharePoint 安装中的文件夹的路径。 部署根文件夹由 **type** 特性指定的部署类型决定。<br /><br /> 有关详细信息，请参阅 [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 项目项的 **部署路径** 和 **部署根** 属性的描述。|
+|**类型**|必需的 **xs： string** 特性。<br /><br /> 映射文件夹的部署类型。 有关可能值的详细信息，请参阅 [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)中 SharePoint 项目项的 **部署类型** 属性的说明。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -61,7 +62,7 @@ ms.locfileid: "99950570"
 |属性|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/2010/<br>SharePointTools/SharePointProjectItemModel|
-|**架构名称**|SharePoint 项目项架构|
+|**架构名称**|SharePoint Project 项架构|
 |**验证文件**|ProjectItemModelSchema|
 |**可以为空**|否|
 

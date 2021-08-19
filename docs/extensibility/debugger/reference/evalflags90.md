@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c935059fc7af18563cc203c5d79ee5887675d1663f94d2b06a99a2233bd89f8e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a7d4916f5070792b7169303060b078acca422ef2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434342"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153389"
 ---
 # <a name="evalflags90"></a>EVALFLAGS90
 枚举控制表达式计算的标志的有效值。 此枚举扩展了 [EVALFLAGS](../../../extensibility/debugger/reference/evalflags.md) 枚举。
