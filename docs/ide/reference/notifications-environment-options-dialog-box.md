@@ -10,15 +10,16 @@ ms.assetid: 71cf7380-f2c6-436f-a17c-fdd5f90f5865
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 7429b66dd1e8e70fdf8690b0c92a8d01518b3900
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2ebffb8f4fbd22660cc2f96969172ddabc6dc49
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971071"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143737"
 ---
 # <a name="notifications-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“通知”
 

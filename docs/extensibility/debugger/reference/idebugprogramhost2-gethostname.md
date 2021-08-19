@@ -1,6 +1,6 @@
 ---
-description: 获取此程序的托管进程的标题、友好名称或文件名。
-title: IDebugProgramHost2：：GetHostName |Microsoft Docs
+description: 获取此程序的宿主进程的标题、友好名称或文件名。
+title: IDebugProgramHost2：： GetHostName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b43d6c3edde39b137116dc5215745f066207e25d00c75e8a1dc351e8c1ccefc6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 02583eca88274dc998d2fc85fce8cadc247e8e93
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433211"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159602"
 ---
 # <a name="idebugprogramhost2gethostname"></a>IDebugProgramHost2::GetHostName
-获取此程序的托管进程的标题、友好名称或文件名。
+获取此程序的宿主进程的标题、友好名称或文件名。
 
 ## <a name="syntax"></a>语法
 
@@ -45,17 +45,17 @@ int GetHostName(
 
 ## <a name="parameters"></a>参数
 `dwType`\
-[in]来自 GETHOSTNAME_TYPE [枚举的值](../../../extensibility/debugger/reference/gethostname-type.md) 。
+中 [GETHOSTNAME_TYPE](../../../extensibility/debugger/reference/gethostname-type.md) 枚举中的一个值。
 
 `pbstrHostName`\
-[out]返回托管进程的请求名称。
+弄返回宿主进程的请求的名称。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 在此方法的典型实现中，将忽略 参数并返回主机 `dwType` 的友好名称。 另一种可能的实现是，将 参数传递给 `dwType` 对 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法的调用，以获取名称。
+ 在此方法的典型实现中，将 `dwType` 忽略参数，并返回主机的友好名称。 另一种可能的实现方法是将 `dwType` 参数传递给 [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md) 方法的调用以获取名称。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProgramHost2](../../../extensibility/debugger/reference/idebugprogramhost2.md)
 - [GetHostName](../../../extensibility/debugger/reference/idebugprogramnode2-gethostname.md)

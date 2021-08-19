@@ -17,14 +17,15 @@ ms.assetid: e85a3ff4-dedd-4ff4-9b22-3a1e94755362
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a010ce3ff090b50557bedb62b7a611705fb9638a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c1e7fde5440859f76cef6fe1ca0b41122f2e932b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142424"
 ---
 # <a name="wpf-targets-files"></a>WPF .targets 文件
 

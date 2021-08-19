@@ -1,6 +1,6 @@
 ---
-description: 确定会话调试管理器 (SDM) 是否可以分离进程。
-title: IDebugProcess2：： CanDetach |Microsoft Docs
+description: 确定会话调试管理器是否 (SDM) 进程。
+title: IDebugProcess2：：CanDetach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: f89e96ca584ea6bcbe2f3f5e24e919c352cb450de2ffc915c1e9f4bd81a203cf
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c891ac19158cb5f37f13dd0c93696a0cfe1671e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339042"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159849"
 ---
 # <a name="idebugprocess2candetach"></a>IDebugProcess2::CanDetach
-确定会话调试管理器 (SDM) 是否可以分离进程。
+确定会话调试管理器是否 (SDM) 进程。
 
 ## <a name="syntax"></a>语法
 
@@ -40,8 +40,8 @@ int CanDetach();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回， `S_OK.` `S_FALSE` 如果调试器无法与进程分离，则返回。 否则，返回错误代码。
+ 如果成功，如果 `S_OK.` `S_FALSE` 调试器无法与进程分离，则返回"返回"。 否则，返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [CanDetach](../../../extensibility/debugger/reference/idebugprogram2-candetach.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

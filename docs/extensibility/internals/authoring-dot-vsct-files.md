@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 44b8dff74a15434e91e55efa37454a0827447f76a936f35ec7aafb54c7840f54
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0f28286276bf2616ed84b68caf84949398b3f20e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432602"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159290"
 ---
 # <a name="author-vsct-files"></a>创作 .vsct 文件
 本文档演示如何创作 *.vsct* 文件，以将菜单项、工具栏和其他用户界面 (UI) 元素添加到 Visual Studio 集成开发环境 (IDE) 。 将 UI 元素添加到没有 *.vsct* Visual Studio (VSPackage) 的 VSPackage 包时，请使用以下步骤。
@@ -60,7 +60,7 @@ ms.locfileid: "121432602"
 
 2. 如果包调用由 Visual Studio或其他包定义的任何命令，请添加 `UsedCommands` 元素之后 `Commands` 的元素。 对于不是包的一部分调用的每个命令，使用 [UsedCommand](../../extensibility/usedcommand-element.md) 元素填充此元素。 将 `guid` 元素 `id` 的 和 属性设置为要调用的命令的 GUID 和 `UsedCommand` ID 值。
 
-   若要详细了解如何查找命令的 GUID 和 VISUAL STUDIO，请参阅命令 的[GUID Visual Studio的 ID。](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md) 若要从其他包调用命令，请使用这些包的 *.vsct* 文件中定义的 GUID 和命令 ID。
+   若要详细了解如何查找命令的 GUID 和 VISUAL STUDIO，请参阅命令 的[GUID Visual Studio。](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md) 若要从其他包调用命令，请使用这些包的 *.vsct* 文件中定义的 GUID 和命令 ID。
 
 ### <a name="declare-ui-elements"></a>声明 UI 元素
  声明 `Symbols` *.vsct* 文件的 节中的所有新 UI 元素。
@@ -224,7 +224,7 @@ ms.locfileid: "121432602"
 
    有关详细信息，请参阅 [CommandFlag](../../extensibility/command-flag-element.md) 元素。
 
-5. 若要将依赖于菜单的键盘快捷方式附加到菜单或菜单上的项，请为菜单或菜单项 (&) 元素中添加一个与字符 `ButtonText` 相关的字符。 当父菜单打开时，与 号后的字符是活动键盘快捷方式。
+5. 若要将依赖于菜单的键盘快捷方式附加到菜单或菜单上的项，请为菜单或菜单项 (&) 元素中添加一个和 `ButtonText` 字符。 当父菜单打开时，与 号后的字符是活动键盘快捷方式。
 
 6. 若要将与菜单无关的键盘快捷方式附加到命令，请使用 [KeyBindings](../../extensibility/keybindings-element.md) 元素。 有关详细信息，请参阅 [KeyBinding](../../extensibility/keybinding-element.md) 元素。
 
@@ -236,7 +236,7 @@ ms.locfileid: "121432602"
 
    - 菜单控制器：菜单控制器是旁边有箭头的按钮。 单击箭头将打开列表。 若要将菜单控制器添加到 UI，请创建 元素，将其 属性设置为 `Menu` `type` 或 `MenuController` `MenuControllerLatched` ，具体取决于你的行为。 若要填充菜单控制器，请设置它作为元素的 `Group` 父级。 菜单控制器将在其下拉列表中显示该组的所有子级。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展菜单和命令](../../extensibility/extending-menus-and-commands.md)
 - [Visual Studio命令表 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
 - [VSCT XML 架构参考](../../extensibility/vsct-xml-schema-reference.md)

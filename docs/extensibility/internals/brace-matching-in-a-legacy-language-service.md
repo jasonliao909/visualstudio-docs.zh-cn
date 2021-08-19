@@ -1,5 +1,5 @@
 ---
-title: 旧版语言服务中的大括号匹配|Microsoft Docs
+title: 旧版语言服务中的大括号|Microsoft Docs
 description: 了解旧版语言服务中的大括号匹配，这有助于跟踪必须一起出现的语言元素，如括号和大括号。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: a172a62e993539f990bf1281095725c8d34b2fc727e4f86fc252ebe3a5191283
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e63f9c065e629d768e73cc0c9433c4467883597f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275692"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159147"
 ---
 # <a name="brace-matching-in-a-legacy-language-service"></a>旧版语言服务中的大括号匹配
 大括号匹配可帮助开发人员跟踪需要一起出现的语言元素，如括号和大括号。 当开发人员输入右大括号时，左大括号将突出显示。
@@ -138,6 +138,6 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [旧版语言服务分析器与扫描程序](../../extensibility/internals/legacy-language-service-parser-and-scanner.md)
