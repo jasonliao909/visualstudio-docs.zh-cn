@@ -16,14 +16,15 @@ ms.assetid: dac3fa2d-6678-4017-af35-93686f53f302
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e5ece72d83dd530a855d583ce061a22554d45a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7c21f9c967203db05a68e79436204aca9878fd42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914091"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143308"
 ---
 # <a name="importgroup-element"></a>ImportGroup 元素
 
@@ -50,7 +51,7 @@ ms.locfileid: "99914091"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Condition`|可选特性。<br /><br /> 要评估的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 

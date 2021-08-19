@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9b31c956fa5cc94c8c595b5cf92f10498ea40a1ddb7fc5d4f2e830c3ea946d9d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 199ae11fc5d0b7fc3e0fd307de5328308552fadb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121307305"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043370"
 ---
 # <a name="idebugmethodfieldenumalllocals"></a>IDebugMethodField::EnumAllLocals
 为 方法的所有局部变量（包括编译器在内部生成的局部变量）创建枚举器。
@@ -58,7 +58,7 @@ int EnumAllLocals(
 
  方法可以包含多个范围上下文或块。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)

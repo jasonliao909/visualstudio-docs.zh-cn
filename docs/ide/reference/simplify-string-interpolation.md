@@ -7,17 +7,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee23429980accbbedaa2cf14aaf8a673864179a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9b4c1c6caf43bcdb51ecb09e7dc09ebad3ab1d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897788"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143555"
 ---
 # <a name="simplify-string-interpolation-refactoring"></a>简化字符串内插重构
 

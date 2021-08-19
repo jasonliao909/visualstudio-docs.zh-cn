@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 86a2a9a5d0522c33ea5d6633532173e3f5936e425765d0752c3ab11453cd9060
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: abe165dc59aa5782bd555c7034e17924ac3d8015
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121440794"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046693"
 ---
 # <a name="how-to-programmatically-add-shapes-to-a-visio-document"></a>如何：以编程方式将形状添加到 Visio 文档
   可以通过从模具中检索主控形状并将形状放置在活动页面上，向 Microsoft Office Visio 文档添加形状。

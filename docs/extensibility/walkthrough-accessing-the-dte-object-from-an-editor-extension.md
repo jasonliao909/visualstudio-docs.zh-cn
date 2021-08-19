@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: dd2b529aa4bb2af9cd5d48bbe4d0e5c75e81bee6e2a540b3a5f98b5a3898826c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ffac31d74412e8f0d7a99e62374762e0dc9adad9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121334999"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049202"
 ---
 # <a name="walkthrough-access-the-dte-object-from-an-editor-extension"></a>演练：通过编辑器扩展访问 DTE 对象
 

@@ -15,14 +15,15 @@ ms.assetid: 9f8c5994-2dfc-43c3-a5fb-89b2f8990429
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e74e44289e4fd04acf82170584af8645767b63e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c076f0f5fbf591e0ca7ca6f91a7700185a2aea05
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142892"
 ---
 # <a name="stoptrackingandcleanup"></a>StopTrackingAndCleanup
 

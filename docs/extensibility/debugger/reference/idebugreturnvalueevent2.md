@@ -1,5 +1,5 @@
 ---
-description: 此接口由调试引擎 de (de) 在单步执行或 (SDM) 发送到会话调试管理器。
+description: 此接口由调试引擎 de (DE) 在单步执行或 (SDM) 发送到会话调试管理器。
 title: IDebugReturnValueEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: cb91d865cac5794022f489de67043dfe457d2d6b96ddf787fddd2a4ce8f482d0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8fb0c74c955ba27590916e3b48f801db4f6dc9ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448970"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126305"
 ---
 # <a name="idebugreturnvalueevent2"></a>IDebugReturnValueEvent2
-此接口由调试引擎 de (de) 在单步执行或 (SDM) 发送到会话调试管理器。
+此接口由调试引擎 de (DE) 在单步执行或 (SDM) 发送到会话调试管理器。
 
 ## <a name="syntax"></a>语法
 
@@ -53,6 +53,6 @@ IDebugReturnValueEvent2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)

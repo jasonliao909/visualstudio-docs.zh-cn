@@ -18,14 +18,15 @@ ms.assetid: 04f549dd-3591-4dda-9c3a-cf6ede9df2c3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 23fe04834ebd66bae2bce50a63f7db9cb8281f2c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 79b9b607de3a8b4d8eafe46817612c62995d3a51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902518"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142775"
 ---
 # <a name="unregisterassembly-task"></a>UnregisterAssembly 任务
 

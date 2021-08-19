@@ -15,14 +15,15 @@ ms.assetid: 05298fc5-fc4e-4bb2-b942-1f7d2dcdff0f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f163f1aca78832f38e73eaaed882ae1ac6cff17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03c34393805343f7ebe70bcfc75bfdd5b285dd98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943934"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143685"
 ---
 # <a name="options-text-editor-file-extension"></a>选项，文本编辑器，文件扩展名
 

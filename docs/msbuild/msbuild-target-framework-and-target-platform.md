@@ -8,14 +8,15 @@ ms.assetid: df6517c5-edd6-4cc4-97ad-b3cdfc78e799
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f30308e2ccb66494251347c5fc29de5a115d8d77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: edc39690f057054092dc311709886187d0d1abdd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143087"
 ---
 # <a name="msbuild-target-framework-and-target-platform"></a>MSBuild 目标框架和目标平台
 

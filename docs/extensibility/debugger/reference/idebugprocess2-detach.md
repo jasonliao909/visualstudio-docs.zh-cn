@@ -1,5 +1,5 @@
 ---
-description: 通过分离进程中的所有程序，将调试器从此进程中分离。
+description: 通过分离进程中的所有程序，将调试器与此进程分离。
 title: IDebugProcess2：:D etach |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 957579bb2a19bffb0774ecd400218e5f8105127734969c26c43772dbea743bdc
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 44e45fa717f1292b57626df3fc68f90c8f0a9639
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276862"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126721"
 ---
 # <a name="idebugprocess2detach"></a>IDebugProcess2::Detach
-通过分离进程中的所有程序，将调试器从此进程中分离。
+通过分离进程中的所有程序，将调试器与此进程分离。
 
 ## <a name="syntax"></a>语法
 
@@ -40,10 +40,10 @@ int Detach();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 所有程序和进程继续运行，但不再是调试会话的一部分。 分离操作完成后，将发送此进程 (及其程序) 调试事件。
+ 所有程序和进程都将继续运行，但不再是调试会话的一部分。 分离操作完成后，不会再发送此进程 (的调试事件，) 将发送其程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)

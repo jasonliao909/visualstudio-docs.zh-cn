@@ -16,14 +16,15 @@ ms.assetid: 08bb8059-b7e2-4565-89ba-d9034d4f0e16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6692cb16b3861d72bf713c22b2ecfb2ee95bc036
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 56bdde67acb9432cb02e89735a137ca3f094d6cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142762"
 ---
 # <a name="taskextension-base-class"></a>TaskExtension 基类
 

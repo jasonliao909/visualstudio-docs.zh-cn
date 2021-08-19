@@ -7,16 +7,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: e4f10f3555f4edcec031cd4c144bf5a28e9c055d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad9ef98bff7100f5e0750790e17f32ea35de97d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967145"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143503"
 ---
 # <a name="sync-namespace-and-folder-name"></a>同步命名空间和文件夹名称
 
