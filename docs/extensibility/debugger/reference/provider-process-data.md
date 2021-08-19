@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c9345080eddebe1a7bf596263de93e46464114cc17e27b06c05a1bbe28adef6c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b0b96cd79035dcb6643cec2aefcbe84da52ef8a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132361"
 ---
 # <a name="provider_process_data"></a>PROVIDER_PROCESS_DATA
 此结构提供有关在计算机上运行的进程的信息。

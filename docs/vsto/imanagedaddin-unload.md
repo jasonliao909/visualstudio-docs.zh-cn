@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e45fd9e6385388b9c6bc32098cf59799618d511b
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: f877150a747984d0d04f779b16338d04fd55f1ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469705"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082889"
 ---
 # <a name="imanagedaddinunload"></a>IManagedAddin::Unload
   只在托管 VSTO 外接程序卸载之前调用。
@@ -35,6 +36,6 @@ HRESULT Unload();
 ## <a name="remarks"></a>备注
  当前版本的 Microsoft Office 不调用此方法。 此方法保留供将来使用。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IManagedAddin 接口](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Load](../vsto/imanagedaddin-load.md)

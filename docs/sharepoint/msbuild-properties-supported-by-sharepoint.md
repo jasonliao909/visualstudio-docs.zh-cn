@@ -1,6 +1,6 @@
 ---
-title: MSBuild支持的属性SharePoint |Microsoft Docs
-description: 阅读特定于MSBuild 和 支持的属性名称和说明的列表SharePoint。
+title: MSBuildSharePoint 支持的属性 |Microsoft Docs
+description: 阅读支持的 MSBuild 属性名称和说明的列表，它们特定于 SharePoint。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,45 +15,45 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: a0d180dae17ac6e905fa5eedf6bef27e41f3d96661e25474f791bac3d08d5cbd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66024105ac41c6c72d7eec019d507183fdd7479a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121331983"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115546"
 ---
-# <a name="msbuild-properties-supported-by-sharepoint"></a>项目支持的 MsBuild SharePoint
-  Microsoft.VisualStudio.SharePoint.targets 文件、项目文件或项目用户文件中定义的任何属性都可用于SharePoint [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 项目。 除了项目提供的常见属性，SharePoint定义特定于项目 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 的其他SharePoint属性。
+# <a name="msbuild-properties-supported-by-sharepoint"></a>SharePoint 支持的 MsBuild 属性
+  [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)]可以在 SharePoint 项目中使用在 SharePoint VisualStudio 文件、项目文件或项目用户文件中定义的任何属性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 除了项目提供的公共 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 属性以外，SharePoint 还定义了特定于 SharePoint 项目的附加属性。
 
- 有关常见属性 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 的列表，请参阅[Common MSBuild Project Properties](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100))。 有关编程语言支持的属性的完整列表，请查找 *.targets* 文件、项目文件 (*.csproj* 或 *.vbproj*) ，或项目用户文件 (*csproj.user* 或 *.vbproj.user*) 。
+ 有关公共属性的列表 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] ，请参阅[common MSBuild Project properties](/previous-versions/dotnet/netframework-4.0/bb629394(v=vs.100))。 有关编程语言支持的属性的完整列表，请查看 *.targets* 文件、项目文件 (*.csproj* 或 *.vbproj*) 或项目用户文件 (*.csproj. user* 或 *. .vbproj) 。*
 
-## <a name="msbuild-properties-specific-to-sharepoint"></a>特定于属性的 MsBuild SharePoint
- 下表列出了专用于 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 中的项目SharePoint属性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 存在其他属性，但它们供内部使用。
+## <a name="msbuild-properties-specific-to-sharepoint"></a>特定于 SharePoint 的 MsBuild 属性
+ 下表列出了 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 专门适用于中的 SharePoint 项目的属性 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 存在其他属性，但它们供内部使用。
 
 |属性名称|说明|
 |-------------------|-----------------|
-|SharePointSiteUrl|一个字符串，表示SharePoint [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 站点。|
-|SandboxedSolution|一个布尔值，指示解决方案是否是沙盒解决方案。|
+|SharePointSiteUrl|表示 SharePoint 站点的的字符串 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 。|
+|SandboxedSolution|指示解决方案是否为沙盒解决方案的布尔值。|
 |ActiveDeploymentConfiguration|活动部署配置。|
-|IncludeAssemblyInPackage|一个布尔值，指示程序集是否包含在包文件中。|
-|PreDeploymentCommand|一个字符串值，表示在部署前命令步骤中执行的命令。|
-|PostDeploymentCommand|一个字符串值，该值表示在部署后命令步骤中执行的命令。|
-|CustomBeforeSharePointTargets|一个表示目标文件路径 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 的字符串。 如果目标文件存在且已定义，则在任何目标文件以数据SharePoint该文件。 使用此属性，无需修改附带的 SharePoint 目标文件即可预定义与打包相关的属性，以自定义包过程，但目标文件仍适用于所有SharePoint项目。|
-|CustomAfterSharePointTargets|一个表示目标文件路径 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 的字符串。 如果目标文件存在且已定义，则在所有目标文件以数据SharePoint该文件。 此属性允许通过重写与打包相关的属性和目标来自定义包过程，而无需修改附带的 SharePoint 目标文件，但目标文件仍应用于所有SharePoint项目。|
-|LayoutPath|一个字符串，表示要打包的每个文件在添加到 *.wsp* 文件之前临时放置的根目录。 此路径可用于了解何时重写 BeforeLayout 和 AfterLayout 目标以添加、删除或修改要打包的文件，因为可以使用它来更改 *.wsp* 文件的内容。|
-|BasePackagePath|一个字符串，表示放置包的文件夹。 此值使用项目的输出目录，例如 Bin\Debug。|
+|IncludeAssemblyInPackage|指示程序集是否包含在包文件中的布尔值。|
+|PreDeploymentCommand|一个字符串值，该值表示要在预先部署命令步骤中执行的命令。|
+|PostDeploymentCommand|一个字符串值，该值表示要在后期部署命令步骤中执行的命令。|
+|CustomBeforeSharePointTargets|一个字符串，表示目标文件的路径 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 。 如果目标文件存在并且已定义，则在任何 SharePoint 目标数据之前导入它。 此属性使你可以通过预定义与包装相关的属性来自定义包过程，而无需修改发货 SharePoint 目标文件，但目标文件仍适用于所有 SharePoint 项目。|
+|CustomAfterSharePointTargets|一个字符串，表示目标文件的路径 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] 。 如果目标文件存在并且已定义，则在所有 SharePoint 目标数据之后导入它。 此属性使你可以通过以下方式自定义包进程：重写与包装相关的属性和目标，而无需修改发货 SharePoint 目标文件，但目标文件仍适用于所有 SharePoint 项目。|
+|LayoutPath|一个字符串，表示在将每个要打包的文件添加到 *.wsp* 文件之前，要将其打包的根目录。 当你重写 BeforeLayout 和 AfterLayout 目标以便添加、删除或修改要打包的文件时，可以使用此路径来了解，因为你可以使用它来更改 *.wsp* 文件的内容。|
+|BasePackagePath|一个字符串，表示在其中放置包的文件夹。 此值使用项目的输出目录，例如 Bin\debug。|
 |PackageExtension|一个字符串，表示要追加到包的文件扩展名。 默认值为 wsp。|
-|AssemblyDeploymentTarget|一个字符串，表示项目程序集部署在 SharePoint 服务器上的位置。 其值为 GlobalAssemblyCache (默认值) WebApplication。 此属性还可以在 属性窗口 中设置。|
-|PackageWithValidation|一个布尔值，指定是否在打包之前执行验证。 此属性允许你在生成包时忽略验证错误。|
-|ValidatePackageDependsOn|一个字符串，定义在 ValidatePackage 目标之前要执行的其他目标。|
-|TokenReplacementFileExensions|一个字符串，用于定义在打包过程中替换其令牌的文件。|
+|AssemblyDeploymentTarget|一个字符串，表示项目程序集部署在 SharePoint 服务器上的位置。 其值为 GlobalAssemblyCache (默认) 或 WebApplication。 还可以在属性窗口中设置此属性。|
+|PackageWithValidation|一个布尔值，指定在打包之前是否执行验证。 此属性可让你在生成包时忽略验证错误。|
+|ValidatePackageDependsOn|一个字符串，定义要在 ValidatePackage 目标之前执行的其他目标。|
+|TokenReplacementFileExensions|一个字符串，用于定义打包期间替换其标记的文件。|
 
-## <a name="use-msbuild-properties-in-the-properties-page"></a>在属性页使用 MsBuild 属性
- 为灵活地使用 SharePoint 属性页上的"预部署命令行"和"部署后命令行"框中的硬编码字符串，可以使用 SharePoint 属性作为参数。 例如，可以改为使用 ，而不是为SharePoint [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] 指定特定字符串 `$(SharePointSiteUrl)` 。
+## <a name="use-msbuild-properties-in-the-properties-page"></a>在 "属性" 页中使用 MsBuild 属性
+ 出于灵活性，你可以使用 SharePoint 属性作为参数，而不是在 "SharePoint 属性" 页上的 "**预先部署命令行**" 和 "**后期部署命令行**" 框中使用硬编码的字符串。 例如，可以改为使用，而不是为 [!INCLUDE[TLA2#tla_url](../sharepoint/includes/tla2sharptla-url-md.md)] SharePoint 站点指定特定字符串 `$(SharePointSiteUrl)` 。
 
 > [!NOTE]
-> 可以使用变量语法 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] `$(` *propertyName* `)` 或环境变量语法 `%` *propertyName* `%` 来指定属性。
+> 您可以使用 [!INCLUDE[vstecmsbuild](../sharepoint/includes/vstecmsbuild-md.md)] variable 语法 `$(` *propertyname* `)` 或环境变量语法 `%` *propertyname* `%` 来指定属性。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [MSBuild 参考](../msbuild/msbuild-reference.md)

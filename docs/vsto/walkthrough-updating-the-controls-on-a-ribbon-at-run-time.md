@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ee3fd72ef1ad75512b87d3fae61efa271c2773ba155663502bb5d489b243b0ee
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2d53e3ca57781052cf4691dd010496246a6010f7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121408157"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046069"
 ---
 # <a name="walkthrough-update-the-controls-on-a-ribbon-at-run-time"></a>演练：在运行时更新功能区上的控件
 
@@ -265,7 +265,7 @@ ms.locfileid: "121408157"
 
      Outlook 启动。
 
-2. 在Outlook"菜单 **上**，指向"**新建**"，然后单击"邮件 **"。**
+2. 在Outlook"菜单上，指向"**新建**"，然后单击"邮件 **"。**
 
      执行以下操作：
 
@@ -295,7 +295,7 @@ ms.locfileid: "121408157"
 
 - 将基于上下文的 UI 添加到任何文档级自定义项。 有关详细信息，请参阅操作 [窗格概述](../vsto/actions-pane-overview.md)。
 
-- 扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练：设计窗体Outlook区域](../vsto/walkthrough-designing-an-outlook-form-region.md)。
+- 扩展标准的或自定义的 Microsoft Office Outlook 窗体。 有关详细信息，请参阅[演练：设计Outlook区域 。](../vsto/walkthrough-designing-an-outlook-form-region.md)
 
 - 将自定义任务窗格添加到 Outlook。 有关详细信息，请参阅自定义 [任务窗格](../vsto/custom-task-panes.md)。
 

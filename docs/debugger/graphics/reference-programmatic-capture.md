@@ -8,14 +8,15 @@ ms.assetid: ef60eb8d-1ac2-4e3a-9b4b-f6da0bdd9da8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 572629235e3b64028b70ff59090f9c4f7991d323
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 9d8f51a79f47889a1cad4c331c6fc941a6ddd2e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232695"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146972"
 ---
 # <a name="reference-programmatic-capture"></a>引用（编程捕获）
 图形诊断支持通过编程捕获 API 对其捕获功能进行编程控制。 此 API 可用于切换消息和将消息添加到图形诊断 HUD（提醒显示）、初始化和创建图形日志文件以及捕获图形信息。

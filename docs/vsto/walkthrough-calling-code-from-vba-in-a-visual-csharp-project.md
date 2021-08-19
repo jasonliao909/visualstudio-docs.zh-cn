@@ -1,6 +1,6 @@
 ---
-title: '演练：在 Visual c # 项目中调用 VBA 中的代码'
-description: 了解如何在 Microsoft Excel 的文档级自定义项中调用方法，以便从工作簿中 Visual Basic for Applications (VBA) 代码中调用。
+title: 演练：从 Visual C# 项目中的 VBA 调用代码
+description: 了解如何在文档级自定义项中调用方法，Microsoft Excel工作簿中的 Visual Basic for Applications (VBA) 调用方法。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -19,16 +19,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 260872096f36f91a2618f636e297d3c48b3fe51b
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 1556eab077a56bc3b6880cc9a0a413e782f98c2d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107824466"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122046160"
 ---
-# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>演练：在 Visual c # 项目中调用 VBA 中的代码
+# <a name="walkthrough-call-code-from-vba-in-a-visual-c-project"></a>演练：从 Visual C# 项目中的 VBA 调用代码
   此演练演示如何从工作簿的 Visual Basic for Applications (VBA) 代码调用 Microsoft Office Excel 文档级自定义项中的方法。 该过程包括三个基本步骤：向 `Sheet1` 主机项类添加方法、向工作簿中的 VBA 代码公开方法，然后从工作簿的 VBA 代码中调用该方法。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
@@ -68,12 +69,12 @@ ms.locfileid: "107824466"
 
 1. 启动 Excel。
 
-2. 将活动文档另存为名为 **WorkbookWithVBA** 的 **Excel Macro-Enabled 工作簿 (\* xlsm)** 。 将其保存在一个方便的位置，例如桌面。
+2. 将活动文档另存为Excel Macro-Enabled工作簿 (**\* .xlsm**) **名称 WorkbookWithVBA**。 将其保存在一个方便的位置，例如桌面。
 
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
     > [!NOTE]
-    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [如何：在功能区上显示 "开发人员" 选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
+    > 如果看不到 **“开发人员”** 选项卡，则必须首先显示它。 有关详细信息，请参阅 [功能区 上的"如何：显示开发人员"选项卡](../vsto/how-to-show-the-developer-tab-on-the-ribbon.md)。
 
 4. 在 **“代码”** 组中，单击 **“Visual Basic”**。
 
@@ -99,7 +100,7 @@ ms.locfileid: "107824466"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
 
 3. 在模板窗格中，展开 **“Visual C#”**，然后展开 **“Office/SharePoint”**。
 
@@ -109,7 +110,7 @@ ms.locfileid: "107824466"
 
 6. 在“名称”  框中，键入 **CallingCodeFromVBA**。
 
-7. 单击 **“确定”** 。
+7. 单击“确定”。
 
      将打开“Visual Studio Tools for Office 项目向导”  。
 
@@ -117,7 +118,7 @@ ms.locfileid: "107824466"
 
 9. 单击“完成”。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 在设计器中打开 **WorkbookWithVBA** 工作簿，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器**。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在设计器 **中打开 WorkbookWithVBA** 工作簿，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器。**
 
 ## <a name="trust-the-location-of-the-workbook"></a>信任工作簿的位置
  必须先信任要运行的工作簿中的 VBA，然后才可向工作簿中的 VBA 代码公开解决方案中的代码。 有多种方法可实现此目的。 在本演练中，将通过在 Excel 的 **“信任中心”** 信任工作薄的位置来完成此任务。
@@ -148,7 +149,7 @@ ms.locfileid: "107824466"
 
 12. 在 **“Excel 选项”** 对话框中，单击 **“确定”**。
 
-13. 退出 **Excel**。
+13. 退出 **Excel。**
 
 ## <a name="add-a-method-to-the-sheet1-class"></a>向 Sheet1 类添加方法
  既然已设置 VBA 项目，请向可以从 VBA 代码中调用的 `Sheet1` 主机项类添加一个公共方法。
@@ -182,9 +183,9 @@ ms.locfileid: "107824466"
 
 3. 在 **“提取接口”** 对话框中，在 **“选择构成接口的公共成员”** 框中，单击 `CreateVstoNamedRange` 方法项。
 
-4. 单击 **“确定”** 。
+4. 单击“确定”。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会生成名为 `ISheet1`的新接口，并修改 `Sheet1` 的定义，以便实现 `ISheet1` 接口。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 还将在代码编辑器中打开 **ISheet1** 文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 会生成名为 `ISheet1`的新接口，并修改 `Sheet1` 的定义，以便实现 `ISheet1` 接口。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 还会在代码 **编辑器中打开 ISheet1.cs** 文件。
 
 5. 在 **ISheet1.cs** 文件中，将 `ISheet1` 接口声明替换为以下代码。 此代码使 `ISheet1` 接口成为公共接口，并且应用 <xref:System.Runtime.InteropServices.ComVisibleAttribute> 特性使该接口对于 COM 可见。
 
@@ -192,7 +193,7 @@ ms.locfileid: "107824466"
 
 6. 生成项目。
 
-## <a name="expose-the-method-to-vba-code"></a>向 VBA 代码公开方法
+## <a name="expose-the-method-to-vba-code"></a>向 VBA 代码公开 方法
  若要向工作簿中的 VBA 代码公开 `CreateVstoNamedRange` 方法，请将 **主机项的** “ReferenceAssemblyFromVbaProject” `Sheet1` 属性设置为 **“True”**。
 
 ### <a name="to-expose-the-method-to-vba-code"></a>向 VBA 代码公开方法
@@ -207,11 +208,11 @@ ms.locfileid: "107824466"
 
 4. 生成项目。
 
-## <a name="call-the-method-from-vba-code"></a>从 VBA 代码调用方法
+## <a name="call-the-method-from-vba-code"></a>从 VBA 代码调用 方法
  现在可以从工作簿的 VBA 代码中调用 `CreateVstoNamedRange` 方法。
 
 > [!NOTE]
-> 在本演练中，将在调试项目时向工作薄中添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅 [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)。
+> 在本演练中，将在调试项目时向工作薄中添加 VBA 代码。 在下次生成项目时，添加到此文档中的 VBA 代码将被覆盖，因为 Visual Studio 会将生成输出文件夹中的文档替换为主项目文件夹中文档的副本。 如果想要保存 VBA 代码，可以将其复制到项目文件夹中的文档。 有关详细信息，请参阅合并[VBA 和文档级自定义。](../vsto/combining-vba-and-document-level-customizations.md)
 
 ### <a name="to-call-the-method-from-vba-code"></a>从 VBA 代码调用方法
 
@@ -235,7 +236,7 @@ ms.locfileid: "107824466"
     End Sub
     ```
 
-5. 按 F5 。
+5. 按 **F5**。
 
 6. 在打开的工作簿中，单击 **“Sheet1”** 上的单元格 **“A1”**。 验证是否显示消息框。
 
@@ -244,13 +245,13 @@ ms.locfileid: "107824466"
 ## <a name="next-steps"></a>后续步骤
  在以下主题中，你可以了解有关从 VBA 调用 Office 解决方案中的代码的详细信息：
 
-- 从 VBA 调用 Visual Basic 自定义项的主机项中的代码。 此过程不同于 Visual C# 过程。 有关详细信息，请参阅 [演练：在 Visual Basic 项目中调用 VBA 中的代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。
+- 从 VBA 调用 Visual Basic 自定义项的主机项中的代码。 此过程不同于 Visual C# 过程。 有关详细信息，请参阅演练：从项目 中的[VBA Visual Basic代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)。
 
-- 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅 [演练：从 VBA 调用 VSTO 外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
+- 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅演练：从 VBA 调用VSTO[外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
 ## <a name="see-also"></a>请参阅
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)
-- [程序文档级自定义项](../vsto/programming-document-level-customizations.md)
-- [如何：在 Visual Basic 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
+- [计划文档级自定义项](../vsto/programming-document-level-customizations.md)
+- [如何：向项目中的 VBA Visual Basic代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [如何：在 Visual C&#35; 项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [演练：在 Visual Basic 项目中调用 VBA 中的代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)
+- [演练：从应用程序项目中的 VBA Visual Basic代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-basic-project.md)

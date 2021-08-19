@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
-ms.openlocfilehash: 182ee8764875de6dca5c7f9e314300e0b77988dcfac261f05f3b394febb55a87
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7980e01f23dab3ddb927af207e4e2ce67ab515a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121393546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098991"
 ---
 # <a name="sequence-activity-designer"></a>Sequence 活动设计器
 

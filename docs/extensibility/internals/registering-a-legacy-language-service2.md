@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 649f4039baa6d899aaa560fbaa0712c3e905b5c8db0edb46d95c18e8f55d0312
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d33ce0af87df2e3d6506fef48aeb91f1b9ebdeef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062939"
 ---
 # <a name="registering-a-legacy-language-service-2"></a>注册旧版语言服务2
 以下部分提供中提供的各种语言服务选项的注册表项列表 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -143,7 +143,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|编辑器处于活动状态时要默认设置的工具箱选项卡的名称。|
 |DisplayName|REG_SZ|渣 油|在"打开方式"对话框中 **显示** 的名称。 名称是字符串资源 ID 或标准格式的名称。|
 |ExcludeDefTextEditor|REG_DWORD|0-1|用于"打开 **方式"** 菜单命令。 如果不希望在特定文件类型的可用编辑器列表中列出默认文本编辑器，请将此值设置为 1。|
-|LinkedEditorGUID|REG_SZ|*\<GUID>*|用于可以打开具有代码页支持的文件的任何语言服务。 例如，使用 Open **With** .txt打开文件时，会提供用于将源代码编辑器与编码和不带编码一起使用的选项。<br /><br /> 在子项的名称中指定的 GUID 用于代码页编辑器工厂;此特定注册表项中指定的链接 GUID 用于常规编辑器工厂。 此项的用途是，如果 IDE 不使用默认编辑器打开文件，则 IDE 将尝试使用列表中的下一个编辑器。 下一个编辑器不应是代码页编辑器工厂，因为此编辑器工厂基本上与失败的编辑器工厂相同。|
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|用于可以打开具有代码页支持的文件的任何语言服务。 例如，使用 Open **With** .txt打开源代码文件时，会提供用于将源代码编辑器与编码和不带编码的源代码编辑器一起使用的选项。<br /><br /> 在子项的名称中指定的 GUID 用于代码页编辑器工厂;此特定注册表项中指定的链接 GUID 用于常规编辑器工厂。 此项的用途是，如果 IDE 不使用默认编辑器打开文件，则 IDE 将尝试使用列表中的下一个编辑器。 下一个编辑器不应是代码页编辑器工厂，因为此编辑器工厂基本上与失败的编辑器工厂相同。|
 |包裹|REG_SZ|*\<GUID>*|显示名称的 ResID 的 VSPackage GUID。|
 
 ### <a name="example"></a>示例
@@ -206,23 +206,23 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 ```
 
 ## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>托管包框架语言服务选项的注册表项
- 以下注册表项特定于 MPF 的托管包框架 (语言) 类。 这些注册表项表示语言服务支持各种 IntelliSense 功能和其他高级编辑功能。
+ 以下注册表项特定于 MPF (语言服务类) 包框架。 这些注册表项表示语言服务支持各种 IntelliSense 功能和其他高级编辑功能。
 
  这些注册表项是通过 类 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 访问的。
 
 |名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|支持 IntelliSense 操作。|
-|MatchBraces|REG_DWORD|0-1|支持匹配语言对，如大括号、括号和括号。|
+|MatchBraces|REG_DWORD|0-1|支持匹配语言对，如大括号、圆括号和方括号。|
 |QuickInfo|REG_DWORD|0-1|支持 IntelliSense 快速信息操作。|
 |ShowMatchingBrace|REG_DWORD|0-1|支持在状态栏中显示匹配的语言对。|
 |MatchBracesAtCaret|REG_DWORD|0-1|支持显示匹配的语言对，通常通过突出显示这两个元素。|
-|MaxErrorMessages|REG_DWORD|0-n|可在"错误列表"窗口中显示的最大 **错误** 数。|
-|CodeSenseDelay|REG_DWORD|0-n|为 IntelliSense 操作启动任何后台分析之前要延迟的毫秒数。|
+|MaxErrorMessages|REG_DWORD|0-n|**错误列表** 窗口中可显示的最大错误数。|
+|CodeSenseDelay|REG_DWORD|0-n|为 IntelliSense 操作启动任何后台分析之前延迟的毫秒数。|
 |EnableAsyncCompletion|REG_DWORD|0-1|支持后台分析。|
-|EnableCommenting|REG_DWORD|0-1|支持注释掉选定的文本块，还意味着支持取消注释所选文本。|
-|EnableFormatSelection|REG_DWORD|0-1|支持设置文本格式，例如自动缩进或调整大括号的位置。|
-|AutoOutlining|REG_DWORD|0-1|支持大纲显示 (可折叠的区域) 。|
+|EnableCommenting|REG_DWORD|0-1|支持注释掉选定的文本块，同时也表示支持取消注释选定文本。|
+|EnableFormatSelection|REG_DWORD|0-1|支持设置文本格式，如自动缩进或调整大括号的位置。|
+|AutoOutlining|REG_DWORD|0-1|支持 (可以折叠) 的区域的大纲。|
 |MaxRegions|REG_DWORD|0-n|每个文件的最大隐藏区域数。|
 
 ```
@@ -240,5 +240,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 77ca0dbfd8476aae3b7dc8a12a0a449eb074da4480aa2f2546bc12c7282690ce
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f44c9449181734299e6fb46ce2b76bab1d8d453a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063338"
 ---
 # <a name="hierarchies-and-selection"></a>层次结构和选择
 自定义 时，应了解如何处理层次结构（如项目）以及它如何使用选择上下文来确定 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 向用户显示的内容。 本部分讨论层次结构 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 和选择的概念。

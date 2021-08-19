@@ -19,14 +19,15 @@ ms.assetid: 080fd8f1-72b0-461f-8451-3c84d5dc51df
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 85092f6a339fdaaa3ddaa56112cc351d8b8e9bdc
-ms.sourcegitcommit: dd2fc6e03a789c044f8438096b8f112e4dba5557
+ms.openlocfilehash: 52d50d7e2bf204de7907f568318b100aa53349d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108640833"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146675"
 ---
 # <a name="string-visualizer-dialog-box"></a>“字符串可视化工具”对话框
 

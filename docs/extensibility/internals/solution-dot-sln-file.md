@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9a8b857905a4e0a599584d6eecc03879b7e656081772071885bd25461b2220bd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5c036504bd5a7b881edab2d2bf4ef373706d65f9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062740"
 ---
 # <a name="solution-sln-file"></a>解决方案 (.sln) 文件
 
@@ -28,7 +28,7 @@ ms.locfileid: "121432197"
 
 - .sln 文件 (基于文本的共享) 
 
-- .suo 文件 (用户特定的二进制解决方案选项) 
+- .suo 文件 (特定于用户的二进制解决方案选项) 
 
 有关 .suo 文件的详细信息，请参阅解决方案 [用户选项 (。Suo) 文件](../../extensibility/internals/solution-user-options-dot-suo-file.md)。
 
@@ -60,7 +60,7 @@ MinimumVisualStudioVersion = 10.0.40219.1
 最近一次Visual Studio保存 (文件) 版本。 此信息控制解决方案图标中的版本号。
 
 `VisualStudioVersion = 15.0.26730.15`\
-最近一次Visual Studio保存 (的完整) 版本。 如果解决方案文件由具有相同主版本的 Visual Studio版本保存，则此值不会更新，以减少解决方案文件中流失。
+最近一次Visual Studio保存 (的完整) 版本。 如果解决方案文件由具有相同主版本的较新版本的 Visual Studio保存，则此值不会更新，以减少解决方案文件中流失。
 
 `MinimumVisualStudioVersion = 10.0.40219.1`\
 可以 (此解决方案) Visual Studio版本的最低版本。

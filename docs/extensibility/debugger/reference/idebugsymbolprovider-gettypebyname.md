@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b4b27b5dc829ab68405c4cbcda6ece4a8a625fb7b9d4e2c7ffe86d9df0faf75d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fd14af4e9002505e422ecf53994bb183451d2c50
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121306798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063715"
 ---
 # <a name="idebugsymbolprovidergettypebyname"></a>IDebugSymbolProvider::GetTypeByName
 此方法将符号名称映射到符号类型。
@@ -50,7 +50,7 @@ int GetTypeByName(
 [in]符号名称。
 
 `nameMatch`\
-[in]选择匹配类型，例如区分大小写。 来自 NAME_MATCH [枚举的值](../../../extensibility/debugger/reference/name-match.md) 。
+[in]选择匹配类型，例如区分大小写。 一个来自 [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md) 的值。
 
 `ppField`\
 [out]将符号类型作为 [IDebugField 对象](../../../extensibility/debugger/reference/idebugfield.md) 返回。
@@ -61,7 +61,7 @@ int GetTypeByName(
 ## <a name="remarks"></a>备注
  此方法是 [GetClassTypeByName 的泛型版本](../../../extensibility/debugger/reference/idebugsymbolprovider-getclasstypebyname.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSymbolProvider](../../../extensibility/debugger/reference/idebugsymbolprovider.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [NAME_MATCH](../../../extensibility/debugger/reference/name-match.md)

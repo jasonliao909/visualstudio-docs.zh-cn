@@ -20,14 +20,15 @@ ms.assetid: 594b894c-e652-4e13-a980-9909473d5712
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f4ea2004680a60fcd2c90a57b19f719c0412ee53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 23ae0b5e07271b9829702432f4d15cfec31d216e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861239"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146740"
 ---
 # <a name="stale-code-warning-dialog-box"></a>“陈旧代码警告”对话框
 

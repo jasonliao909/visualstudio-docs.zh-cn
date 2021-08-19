@@ -1,6 +1,6 @@
 ---
 description: 检索元数据导入信息。
-title: IDebugSymbolProviderDirect：： GetMetaDataImport |Microsoft Docs
+title: IDebugSymbolProviderDirect：：GetMetaDataImport |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 831a95390d1a81e8fee786fb202ac79b0eb4452b64bded729130f96c8c73e727
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 504ad9f7d995376e5e7bd848fb9cdb983cddce20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132452"
 ---
 # <a name="idebugsymbolproviderdirectgetmetadataimport"></a>IDebugSymbolProviderDirect::GetMetaDataImport
 检索元数据导入信息。
@@ -46,16 +46,16 @@ int GetMetaDataImport (
 
 ## <a name="parameters"></a>参数
 `guid`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `appID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `ppImport`\
-弄返回一个包含元数据导入信息的对象。
+[out]返回包含元数据导入信息的对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugSymbolProviderDirect](../../../extensibility/debugger/reference/idebugsymbolproviderdirect.md)

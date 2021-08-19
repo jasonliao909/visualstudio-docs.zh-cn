@@ -20,14 +20,15 @@ ms.assetid: f5754363-8a56-417b-b904-b05d9dd26d03
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d000d2757321701c2e14427c6bbb4d3e4164d26f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c2d7d7a4225c3a2711e238f7100054b1342a65eb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122146649"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 C++ 项目的“编辑并继续”可处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。

@@ -1,6 +1,6 @@
 ---
-description: 检索源文件中给定位置的代码上下文的列表。
-title: IDebugProgram2：： EnumCodeContexts |Microsoft Docs
+description: 检索源文件中给定位置的代码上下文列表。
+title: IDebugProgram2：：EnumCodeContexts |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 7172ffbf40642e5a3c9bfe68737f6e5c4f935671682d533e81fc1a77cbeb63cd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 669c513b07e91299be7c3b9d600995eca886b9ab
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276472"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132777"
 ---
 # <a name="idebugprogram2enumcodecontexts"></a>IDebugProgram2::EnumCodeContexts
-检索源文件中给定位置的代码上下文的列表。
+检索源文件中给定位置的代码上下文列表。
 
 ## <a name="syntax"></a>语法
 
@@ -45,15 +45,15 @@ int EnumCodeContexts(
 
 ## <a name="parameters"></a>参数
 `pDocPos`\
-中表示 IDE 中已知的抽象位置的 [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) 对象。
+[in] [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md) 对象，表示 IDE 已知的源文件中的抽象位置。
 
-`ppEnum` 弄返回一个 [IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 对象，该对象包含代码上下文的列表。
+`ppEnum` [out]返回包含 [代码上下文列表的 IEnumDebugCodeContexts2](../../../extensibility/debugger/reference/ienumdebugcodecontexts2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法允许会话调试管理器 (SDM) 或 IDE 将源文件位置映射到代码位置。 如果源生成多个代码块 (例如，c + + 模板) ，则返回多个代码上下文。
+ 此方法允许会话调试管理器 (SDM) IDE 将源文件位置映射到代码位置。 如果源生成多个代码块，则返回多个代码上下文 (例如，C++ 模板) 。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
