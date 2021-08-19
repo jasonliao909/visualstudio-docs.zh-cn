@@ -21,17 +21,17 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 91209a76acc754a900bfc88d5d488f0b4729703121d1125abc9f25990ca1c9c9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f63acf1616aa7d8c3725362851cde0df10e82d19
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051607"
 ---
 # <a name="deploy-prerequisites-for-64-bit-applications"></a>部署 64 位应用程序的系统必备
 ClickOnce 部署支持 64 位平台上的应用程序安装。 目标平台为“x86”（32 位平台）、“x64”（支持 AMD64 和 EM64T 指令集的计算机）以及“Itanium”（64 位 Itanium 处理器）。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
  下表列出了可用作 64 位应用程序安装的系统必备组件的可再发行组件。
 
  如果选择不具有 64 位组件的系统必备组件，则可能会看到一条警告，该警告声明选择的程序包不能用于 64 位平台。

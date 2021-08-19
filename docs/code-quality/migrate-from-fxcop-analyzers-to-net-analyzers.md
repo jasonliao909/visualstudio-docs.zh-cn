@@ -14,12 +14,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-code-analysis
-ms.openlocfilehash: b900c886703aeed3edb3ae069cbdbc3e5bceea11945ef6d8ba92fc85aa3c76b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ba0b545b41c3c23bef93b7dee86b0f188a01a7cd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121363209"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122106"
 ---
 # <a name="migrate-from-fxcop-analyzers-to-net-analyzers"></a>从 FxCop 分析器迁移到 .NET 分析器
 

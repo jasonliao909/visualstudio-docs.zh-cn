@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33c7f939a8f630592890c3c03be662099680e64b87d4179425497ee864a6718c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 26729a2b7be80f60c0eb3720bf1853247558314f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262511"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072988"
 ---
 # <a name="exception_state"></a>EXCEPTION_STATE
 指定异常状态。

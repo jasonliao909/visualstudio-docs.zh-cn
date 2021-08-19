@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: d90705ec4aee88e06209996fc47506ec23cf545e2132b37a245ef4bc111f0cd7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 696ba253090bdec5c31ed814e465b2a5afca87f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276940"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088232"
 ---
 # <a name="idebugportex2getportprocessid"></a>IDebugPortEx2::GetPortProcessId
 获取端口本身的进程 ID。
@@ -51,5 +51,5 @@ int GetPortProcessId (
 ## <a name="remarks"></a>备注
  例如，在 Win32 运行时中，此方法通常调用 Win32 函数 `GetCurrentProcessId` 获取物理进程 ID。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortEx2](../../../extensibility/debugger/reference/idebugportex2.md)

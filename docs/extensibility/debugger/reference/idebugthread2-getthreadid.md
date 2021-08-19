@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5d371149fb654be02b895f1faa6d52eb5024017a08b90d253335eee66c2f9ebb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1e8ac54a27ca799f263e156d79bee057fcb90c3c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338392"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122153090"
 ---
 # <a name="idebugthread2getthreadid"></a>IDebugThread2::GetThreadId
 获取系统线程标识符。

@@ -1,6 +1,6 @@
 ---
-description: 使表达式计算器 (企业版) 指定调试器引擎 (DE) 用于读取指标设置的回调接口。
-title: IDebugExpressionEvaluator2：： SetCallback |Microsoft Docs
+description: 启用表达式计算 (企业版) 指定调试器引擎在 DE (将) 用于读取指标设置的回调接口。
+title: IDebugExpressionEvaluator2：：SetCallback |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: cba32a5ab0b934a1ba2426f8b731247bad2598cd77b4ae794e9f682f3c617bde
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 66d69dc119b23f06efebb9c8d87cf96792118bd1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138661"
 ---
 # <a name="idebugexpressionevaluator2setcallback"></a>IDebugExpressionEvaluator2::SetCallback
-使表达式计算器 (企业版) 指定调试器引擎 (DE) 用于读取指标设置的回调接口。
+启用表达式计算 (企业版) 指定调试器引擎在 DE (将) 用于读取指标设置的回调接口。
 
 ## <a name="syntax"></a>语法
 
@@ -42,16 +42,16 @@ int SetCallback (
 
 ## <a name="parameters"></a>参数
 `pCallback`\
-中用于设置回调的接口。
+[in]用于设置回调的接口。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法为会话调试管理器提供一个接口，表达式计算器可以使用该接口来读取指标设置。 这对于在计算机上读取度量值非常有用 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
+此方法为会话调试管理器提供接口，表达式评估程序可以使用该接口读取指标设置。 它在远程调试中可用于读取计算机上 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 的指标。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口的 **CEE** 对象实现此方法。
+以下示例演示如何为公开 [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)接口的 **CEE** 对象实现此方法。
 
 ```cpp
 HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
@@ -78,5 +78,5 @@ HRESULT CEE::SetCallback(IDebugSettingsCallback2* in_pCallback)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugExpressionEvaluator2](../../../extensibility/debugger/reference/idebugexpressionevaluator2.md)

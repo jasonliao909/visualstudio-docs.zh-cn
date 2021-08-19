@@ -11,14 +11,15 @@ ms.assetid: 451d5bce-b9c1-48ff-beaa-2b4c3e1ceea0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 107309fb92a6d180e3b2ae99c72e23e2923f1bb4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 1fb8883374a84a25d27370fbe43e41ebe31025d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122072479"
 ---
 # <a name="idebugbreakpointresolution2"></a>IDebugBreakpointResolution2
 此接口表示描述绑定断点的信息。
@@ -50,5 +51,5 @@ IDebugBreakpointResolution2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [GetBreakpointResolution](../../../extensibility/debugger/reference/idebugboundbreakpoint2-getbreakpointresolution.md)

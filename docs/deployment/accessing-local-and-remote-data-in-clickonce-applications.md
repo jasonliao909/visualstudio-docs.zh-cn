@@ -1,6 +1,6 @@
 ---
-title: " (ClickOnce 应用访问本地 & 远程数据) "
-description: 了解 ClickOnce 为本地和远程读取和写入数据提供的各种选项。
+title: '访问本地&远程 (ClickOnce应用) '
+description: 了解本地和远程ClickOnce读取和写入数据的各种选项。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,14 +15,15 @@ ms.assetid: be5cbe12-6cb6-49c9-aa59-a1624e1eef3d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: cbffa062e1115264f9496081cdcf63d17d2a36c7
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: da8f70a77c2d130184b6a4b6737c802204eb624b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217484"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051737"
 ---
 # <a name="access-local-and-remote-data-in-clickonce-applications"></a>在 ClickOnce 应用程序中访问本地数据和远程数据
 大多数应用程序使用或生成数据。 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 为你提供多种选项用于在本地及远程读取和写入数据。
@@ -44,11 +45,11 @@ ms.locfileid: "106217484"
 > [!NOTE]
 > 卸载 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序时，也会删除其数据目录。 切勿使用数据目录来存储最终用户管理的数据，如文档。
 
-#### <a name="mark-data-files-in-a-clickonce-distribution"></a>在 ClickOnce 分发中标记数据文件
- 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅 [如何：在 ClickOnce 应用程序中包含数据文件](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)。
+#### <a name="mark-data-files-in-a-clickonce-distribution"></a>在数据分发中ClickOnce数据文件
+ 若要将现有文件放入数据目录，必须在 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序的应用程序清单文件中将现有文件标记为数据文件。 有关详细信息，请参阅[如何：在](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)应用程序 ClickOnce数据文件。
 
-#### <a name="read-from-and-write-to-the-data-directory"></a>读取和写入数据目录
- 读取数据目录要求你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序请求读取权限；同样，写入目录也需要写入权限。 如果它被配置为使用完全信任的权限运行，则你的应用程序将自动拥有此权限。 有关通过使用权限提升或受信任的应用程序部署提升应用程序权限的详细信息，请参阅 [保护 ClickOnce 应用](../deployment/securing-clickonce-applications.md)程序。
+#### <a name="read-from-and-write-to-the-data-directory"></a>从数据目录读取和写入数据目录
+ 读取数据目录要求你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序请求读取权限；同样，写入目录也需要写入权限。 如果它被配置为使用完全信任的权限运行，则你的应用程序将自动拥有此权限。 有关使用权限提升或受信任的应用程序部署提升应用程序权限的信息，请参阅安全ClickOnce[应用程序](../deployment/securing-clickonce-applications.md)。
 
 > [!NOTE]
 > 如果你的组织不使用信任的应用程序部署，并且已经关闭了权限提升，则断言权限将失效。
@@ -62,7 +63,7 @@ ms.locfileid: "106217484"
 
  你还可以使用 <xref:System.Windows.Forms.Application> 类上的相关变量（如 <xref:System.Windows.Forms.Application.LocalUserAppDataPath%2A>）来获取数据目录路径。
 
- 处理其他类型的文件可能需要其他权限。 例如，如果你想要使用 Access *数据库 ()* 文件，则你的应用程序必须声明完全信任才能使用相关的 \<xref:System.Data> 类。
+ 处理其他类型的文件可能需要其他权限。 例如，如果要将 Access 数据库 (*.mdb*) 文件中，则应用程序必须断言完全信任才能使用相关 \<xref:System.Data> 类。
 
 #### <a name="data-directory-and-application-versions"></a>数据目录和应用程序版本
  应用程序的每个版本都具有其自己的数据目录，每个版本的数据目录相互独立。 无论数据文件是否包括到部署中，[!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 都将创建此目录，以便该应用程序在运行时有一个位置可以创建新的数据文件。 安装新的应用程序版本时， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 会将现有全部数据文件从以前版本的数据目录复制到新版本的数据目录，而无论这些数据文件是原始部署中包括的还是应用程序创建的数据文件。
@@ -97,10 +98,10 @@ ms.locfileid: "106217484"
 |文件共享安装|不能访问任何 Web 服务器|
 |CD-ROM 安装|不能访问任何 Web 服务器|
 
- 如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序因安全限制而不能访问 Web 服务器，则应用程序必须为该网站断言 <xref:System.Net.WebPermission> 。 有关增加应用程序安全权限的详细信息 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] ，请参阅 [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)。
+ 如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序因安全限制而不能访问 Web 服务器，则应用程序必须为该网站断言 <xref:System.Net.WebPermission> 。 有关增加应用程序安全权限的信息，请参阅安全ClickOnce [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] [应用程序](../deployment/securing-clickonce-applications.md)。
 
-### <a name="access-data-through-an-xml-web-service"></a>通过 XML Web service 访问数据
- 如果以 XML Web 服务形式公开你的数据，则可以通过使用 XML Web 服务代理来访问数据。 代理是你使用创建的 .NET Framework 类 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 XML Web 服务的操作（如检索客户、下订单等）在代理中作为方法公开。 这使得 Web 服务相比原始文本和 XML 文件更易于使用。
+### <a name="access-data-through-an-xml-web-service"></a>通过应用程序访问XML Web service
+ 如果以 XML Web 服务形式公开你的数据，则可以通过使用 XML Web 服务代理来访问数据。 代理是使用 .NET Framework创建的一个类 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 XML Web 服务的操作（如检索客户、下订单等）在代理中作为方法公开。 这使得 Web 服务相比原始文本和 XML 文件更易于使用。
 
  如果你的 XML Web 服务通过 HTTP 操作，该服务将与 <xref:System.Net.WebClient> 和 <xref:System.Net.HttpWebRequest> 类受到相同的安全限制约束。
 
@@ -109,6 +110,6 @@ ms.locfileid: "106217484"
 
  大多数情况下，你将不必直接访问数据，但将改为通过写入 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 的 Web 服务器应用程序或 XML Web 服务访问。 如果你的 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序是从 Web 服务器部署的，则以这种方式访问数据库通常是最好的方法。 你可以使用部分信任的权限访问服务器，而无需提升你的应用程序权限。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [如何：在 ClickOnce 应用程序中包含数据文件](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)
+- [如何：在应用程序ClickOnce数据文件](../deployment/how-to-include-a-data-file-in-a-clickonce-application.md)

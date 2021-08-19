@@ -1,6 +1,6 @@
 ---
 title: 创建包清单|Microsoft Docs
-description: 了解如何使用引导程序包为应用程序部署ClickOnce必备组件，其中包含每个区域设置包清单。
+description: 了解如何使用引导程序包为 ClickOnce应用程序部署必备组件，其中包含每个区域设置包清单。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 077926f3e2649a9e3fa49d39168e89e73c0af9fd313afe32bbfd8c20602d7609
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 06b7eefddb7c824140b277f1e85b7ce774c8c286
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121435486"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051542"
 ---
 # <a name="how-to-create-a-package-manifest"></a>如何：创建程序包清单
 若要部署应用程序的先决条件，可以使用引导程序包。 引导程序包包含单个产品清单文件，但每个区域设置都有一个包清单。 不同本地化版本的共享功能应进入产品清单。
@@ -41,7 +41,7 @@ ms.locfileid: "121435486"
 
 2. 使用区域设置的名称创建子目录，例如 *en* 表示英语。
 
-3. 在 Visual Studio，创建名为package.xml *的* XML 文件，并将其保存到 *C：\package\en* 文件夹中。
+3. 在 Visual Studio，创建名为package.xml *的* XML 文件，并将其保存到 *C：\package\en* 文件夹。
 
 4. 添加 XML 以列出引导程序包的名称、此本地化包清单的区域性以及可选的许可协议。 以下 XML 使用变量 `DisplayName` 和 `Culture` ，这两个变量在稍后的 元素中定义。
 

@@ -13,16 +13,16 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: c62658c14754a317554fd7e06960cd2f87ff3f2a43bc98811a7479b98700bd3c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: caed437da38206b351634e8f59d04463a221e267
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414969"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152505"
 ---
 # <a name="document-lock-holder-management"></a>文档锁持有者管理
 
-RDT (运行) 维护打开的文档计数及其拥有的任何编辑锁。 当文档在后台以编程方式编辑时，可以在 RDT 中对文档放置编辑锁，而用户不会在文档窗口中看到打开的文档。 通过图形用户界面修改多个文件的设计器通常使用此功能。
+RDT (正在运行的) 维护打开的文档计数及其拥有的任何编辑锁。 当文档在后台以编程方式编辑时，可以在 RDT 中对文档放置编辑锁，而用户不会在文档窗口中看到打开的文档。 通过图形用户界面修改多个文件的设计器通常使用此功能。
 
 ## <a name="document-lock-holder-scenarios"></a>文档锁持有者方案
 
@@ -40,7 +40,7 @@ RDT (运行) 维护打开的文档计数及其拥有的任何编辑锁。 当文
 
 ## <a name="additional-document-edit-lock-considerations"></a>其他文档编辑锁定注意事项
 
-如果编辑器"A"是唯一对文件"b"具有文档编辑锁的编辑器，与编辑器"B"也持有文件"b"上的文档编辑锁时的行为不同。 在 中类设计器是可视化设计器的一个示例，该设计器不持有关联代码 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文件的编辑锁。  也就是说，如果用户具有在设计视图中打开的类图，并且关联的代码文件同时打开，并且用户修改代码文件但不保存更改，则更改也会丢失到类图 (.cd) 文件中。 如果 **类设计器** 对代码文件具有唯一的文档编辑锁，则关闭代码文件时不会要求用户保存更改。 IDE 要求用户仅在用户关闭更改后保存 **类设计器。** 保存的更改将反映在这两个文件中。 如果 **类设计器和** 代码文件编辑器对代码文件都持有文档编辑锁，则关闭代码文件或窗体时，系统会提示用户保存。 此时，保存的更改会同时反映在窗体和代码文件中。 有关类图详细信息，请参阅使用类[图 (类设计器) 。 ](../ide/class-designer/designing-and-viewing-classes-and-types.md)
+如果编辑器"A"是唯一对文件"b"具有文档编辑锁的编辑器，与编辑器"B"也持有文件"b"上的文档编辑锁时的行为不同。 在 中类设计器是可视化设计器的一个示例，该设计器不持有关联代码 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 文件的编辑锁。  也就是说，如果用户具有在设计视图中打开的类图，并且关联的代码文件同时打开，并且用户修改代码文件但不保存更改，则更改也会丢失到类图 (.cd) 文件中。 如果 **类设计器** 对代码文件具有唯一的文档编辑锁，则关闭代码文件时不会要求用户保存更改。 IDE 要求用户仅在用户关闭更改后保存 **类设计器。** 保存的更改将反映在这两个文件中。 如果 **类设计器和** 代码文件编辑器对代码文件都持有文档编辑锁，则关闭代码文件或窗体时，系统会提示用户保存。 此时，保存的更改会同时反映在窗体和代码文件中。 有关类图详细信息，请参阅[使用类图 (类设计器) 。 ](../ide/class-designer/designing-and-viewing-classes-and-types.md)
 
 请注意，如果需要对非编辑器的文档设置编辑锁，则必须实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDocumentLockHolder> 接口。
 
