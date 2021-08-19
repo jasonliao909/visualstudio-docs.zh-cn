@@ -1,6 +1,6 @@
 ---
 title: 向工具窗口添加搜索 |Microsoft Docs
-description: 了解如何在 Visual Studio 的工具窗口中添加搜索功能，包括搜索框、筛选和进度指示器。
+description: 了解如何向 Visual Studio 中的工具窗口添加搜索功能，包括搜索框、筛选和进度指示器。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -10,17 +10,18 @@ ms.assetid: f78c4892-8060-49c4-8ecd-4360f1b4d133
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: ca1998b5ca3ad78b269c50244ddf51796c9e4005
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: e3c581f1f2c5fbd1c80860241ef4d33608489143
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133388"
 ---
 # <a name="add-search-to-a-tool-window"></a>向工具窗口添加搜索
-当你在扩展中创建或更新工具窗口时，可以添加在 Visual Studio 中的其他位置显示的相同搜索功能。 此功能包括以下功能：
+创建或更新扩展中的工具窗口时，可以添加在 Visual Studio 中的其他位置显示的相同搜索功能。 此功能包括以下功能：
 
 - 始终位于工具栏自定义区域中的搜索框。
 
@@ -82,9 +83,9 @@ ms.locfileid: "106215521"
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/toolwindowsearch/cs/mycontrol.xaml.cs" id="Snippet1":::
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/toolwindowsearch/vb/mycontrol.xaml.vb" id="Snippet1":::
 
-5. 生成项目并启动调试。 此时将显示 Visual Studio 的实验实例。
+5. 生成项目并启动调试。 将显示 Visual Studio 的实验实例。
 
-6. 在菜单栏上，选择 "**查看**  >  **其他窗口**  >  **TestSearch**"。
+6. 在菜单栏上，选择 "**查看**  >  **其他 Windows**  >  **TestSearch**"。
 
      此时将显示工具窗口，但不会显示 "搜索" 控件。
 

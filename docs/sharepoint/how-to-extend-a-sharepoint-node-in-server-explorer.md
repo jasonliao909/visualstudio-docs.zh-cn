@@ -1,5 +1,5 @@
 ---
-title: 如何：扩展 SharePoint 节点服务器资源管理器 |Microsoft Docs
+title: 如何：在 SharePoint 中扩展 服务器资源管理器 |Microsoft Docs
 description: 了解如何使用 SharePoint 连接服务器资源管理器扩展 SharePoint 节点。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 13402693d965e4cf15bdcf60c6b6d3496cd57ff0cb84fab612dbb48d4f346d08
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8ae10e800473eccd347f5dc1398510255d5b7ee4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409561"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130970"
 ---
 # <a name="how-to-extend-a-sharepoint-node-in-server-explorer"></a>如何：扩展SharePoint节点服务器资源管理器
   可以在 中扩展 SharePoint **连接** 节点下的 **服务器资源管理器。** 当你想要将新的子节点、快捷菜单项或属性添加到现有节点时，这很有用。 有关详细信息，请参阅[扩展服务器资源管理器中的 SharePoint 连接节点](../sharepoint/extending-the-sharepoint-connections-node-in-server-explorer.md)。
@@ -52,7 +52,7 @@ ms.locfileid: "121409561"
 
 6. 在 方法的 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension.Initialize%2A> 实现中，使用 *nodeType* 参数的成员向节点添加功能。 此参数是 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeType> 一个对象，提供对接口中定义的事件 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents> 的访问。 例如，可以处理以下事件：
 
-    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：处理此事件以将新的子节点添加到节点。 有关详细信息，请参阅[如何：将自定义节点SharePoint节点添加到 服务器资源管理器。](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
+    - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeChildrenRequested>：处理此事件以将新的子节点添加到节点。 有关详细信息，请参阅[如何：将自定义SharePoint节点添加到 服务器资源管理器。](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)
 
     - <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeEvents.NodeMenuItemsRequested>：处理此事件以向节点添加自定义快捷菜单项。
 
@@ -82,7 +82,7 @@ ms.locfileid: "121409561"
 - System.Windows.Forms
 
 ## <a name="deploy-the-extension"></a>部署扩展
- 若要部署 **服务器资源管理器** 扩展，请为 (的 VSIX) 包以及要随扩展一起分发的其他任何文件创建 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 扩展。 有关详细信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
+ 若要部署 **服务器资源管理器** 扩展，请 (程序集的 VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
 ## <a name="see-also"></a>请参阅
 - [如何：将自定义SharePoint节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

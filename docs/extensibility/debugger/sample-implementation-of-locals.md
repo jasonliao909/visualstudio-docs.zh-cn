@@ -11,14 +11,15 @@ ms.assetid: 66a2e00a-f558-4e87-96b8-5ecf5509e04c
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ac52f1524c4be2e4a7afcbd21fb437977fb663e3
-ms.sourcegitcommit: bab002936a9a642e45af407d652345c113a9c467
+ms.openlocfilehash: 71b358543463e8c780a122dfa466651639f5a906
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112902275"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122063624"
 ---
 # <a name="sample-implementation-of-locals"></a>局部变量的示例实现
 > [!IMPORTANT]

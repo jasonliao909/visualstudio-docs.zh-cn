@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 9038fafaccef8d73b15684fef8d425645ab55dcf6296487fa4993685dc5a17ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5659c2adbe3b7d8f74ccf0a3a28feefdd7d9421c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121401488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122050177"
 ---
 # <a name="commands-that-must-be-run-after-installation"></a>必须在安装后运行的命令
 如果通过 *.msi* 文件部署扩展，则必须在安装过程中运行 **devenv/setup** ，以便 Visual Studio 发现扩展。

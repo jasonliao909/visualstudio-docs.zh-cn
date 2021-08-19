@@ -2,7 +2,7 @@
 title: 删除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
-ms.date: 12/19/2019
+ms.date: 08/17/2021
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -15,19 +15,19 @@ f1_keywords:
 - clean up
 - clean up Visual Studio
 ms.assetid: 9c81a777-9c95-4934-b517-c60c6dc78799
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5af0cf31d3a53b12910ea8108c93a99cbaf3e87f
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 82545d775d03b13ce87ea11682124f43e70856cf
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306951"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334695"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
@@ -54,7 +54,7 @@ ms.locfileid: "112306951"
 1. 输入 `InstallCleanup.exe` 工具的完整路径，并添加所需的命令行开关。 默认情况下，此工具的路径如下所示。 使用双引号将包含空格的命令括起来：
 
    ```shell
-   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\resources\app\layout\InstallCleanup.exe"
+   "C:\Program Files (x86)\Microsoft Visual Studio\Installer\InstallCleanup.exe"
    ```
 
    > [!NOTE]

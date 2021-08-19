@@ -1,6 +1,6 @@
 ---
 title: SharePoint Project和Project项模板|Microsoft Docs
-description: 查看可用项目SharePoint项模板及其使用方式的说明。
+description: 查看项目和项目SharePoint模板的可用说明及其使用方式。
 ms.custom: SEO-VS-2020
 ms.date: 02/22/2017
 ms.topic: conceptual
@@ -23,15 +23,15 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ebcc7ec280cf91558a775348a6d9539444368389a63286917f8347c5f6c20f0f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2949bf27910f90cee2e109e64d0d6741439806fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121409366"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115559"
 ---
 # <a name="sharepoint-project-and-project-item-templates"></a>SharePoint项目和项目项模板
-  以下各节介绍了SharePoint和项目项模板的可用模板及其使用方式。
+  以下部分介绍了项目和SharePoint模板的可用模板及其使用方式。
 
 ## <a name="project-and-project-item-templates-overview"></a>Project和项目项模板概述
  在 SharePoint 项目Visual Studio，SharePoint项目与该项目类型所需的所有项目项一起添加到解决方案中。 例如，如果创建 Silverlight Web 部件项目，Visual Studio 将创建一个解决方案，其中包含 Visual Web 部件项目项和 Silverlight 应用程序项目项以及这些项目项所需的所有文件。 Project项模板用于将项目项添加到现有SharePoint项目，例如添加事件接收器、站点列或列表。
@@ -52,12 +52,12 @@ ms.locfileid: "121409366"
 
 - 包含 **.feature** 配置文件 *的 Features* 文件夹，用于将功能部署到SharePoint服务器。
 
-- 包含 *Package.package* 文件的 Package 文件夹，用于将解决方案部署到SharePoint。 
+- 包含 *Package.package 文件的 Package* 文件夹，用于将解决方案部署到SharePoint。
 
-- key.snk (强名称密钥) ，该文件用于使用强名称对程序集进行签名，以增强安全性。
+- key.snk (强名称密钥) 文件，该文件用于使用强名称对程序集进行签名，以增强安全性。
 
 ### <a name="sharepoint-2010-silverlight-web-part"></a>SharePoint 2010 Silverlight Web 部件
- *SharePoint 2010 Silverlight Web 部件* 项目，你可以为显示 Silverlight SharePoint创建 Web 部件。 创建此项目时，可以指定是向它添加新的 Silverlight 应用程序还是引用现有的 Silverlight 应用程序。 有关详细信息，请参阅[为](../sharepoint/creating-web-parts-for-sharepoint.md)SharePoint 创建 Web 部件和演练：创建显示 OData for SharePoint 的[Silverlight web 部件](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。
+ *SharePoint 2010 Silverlight Web 部件* 项目，你可以为显示 Silverlight SharePoint创建 Web 部件。 创建此项目时，可以指定是向它添加新的 Silverlight 应用程序还是引用现有的 Silverlight 应用程序。 有关详细信息，请参阅[为](../sharepoint/creating-web-parts-for-sharepoint.md)SharePoint 创建 Web 部件和演练：创建显示 OData 的 Silverlight web[部件SharePoint。](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)
 
 ### <a name="sharepoint-2010-visual-web-part"></a>SharePoint 2010 视觉对象 Web 部件
  *2010 SharePoint 2010 Visual*  Web 部件项目包括Elements.xml定义文件 **、Web** 部件项和用户 **控件** 项。 可以通过将控件从"工具箱"Visual Studio拖动或复制到用户控件的图面上来设计可视 Web 部件的外观。 有关详细信息，请参阅[如何：](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)使用设计器创建SharePoint Web 部件和构建基块[：Web 部件。](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))
@@ -115,33 +115,33 @@ ms.locfileid: "121409366"
  顺序 *工作流* 是一系列业务逻辑步骤，按顺序执行，直到最后一个步骤完成。 顺序工作流用于管理涉及列表SharePoint文档等项目的进程。 可以创建站点级 (全局) 工作流或列表级别 (本地) 工作流，还可以选择是自动还是手动启动工作流。 此项目项只能在场解决方案中使用。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅[创建SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)解决方案[、SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))中的工作流和[新增功能：工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
 ### <a name="silverlight-web-part"></a>Silverlight Web 部件
- *Silverlight Web 部件* 项目项允许为显示 Silverlight SharePoint创建 Web 部件。 将此项目项添加到解决方案时，可以选择是添加新的 Silverlight 应用程序，还是稍后引用现有的 Silverlight 应用程序。 有关详细信息，请参阅[为](../sharepoint/creating-web-parts-for-sharepoint.md)SharePoint 创建 Web 部件和演练：创建显示 OData 的 Silverlight web[部件SharePoint。](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)
+ *silverlight web 部件* 项目项使你可以为显示 Silverlight 应用程序 SharePoint 创建 web 部件。 将此项目项添加到解决方案中时，可以选择是添加新的 Silverlight 应用程序还是稍后引用现有的 Silverlight 应用程序。 有关详细信息，请参阅为[SharePoint 创建 web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)和[演练：创建显示 OData 的 Silverlight web 部件 SharePoint](../sharepoint/walkthrough-creating-a-silverlight-web-part-that-displays-odata-for-sharepoint.md)。
 
-### <a name="site-column"></a>站点列
- 站点 *列*（也称为 *字段*）是可添加到项目SharePoint元素之一。 站点列表示数据类型，例如电话号码、文本注释或联系人列表中联系人的城市名称。 有关详细信息，请参阅为列[和列](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)创建站点SharePoint和[列表](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))。
+### <a name="site-column"></a>网站列
+ *网站列* 也称为 *字段*，是可添加到 SharePoint 项目中的最基本的元素之一。 网站列代表一种类型的数据，例如电话号码、文本注释或联系人列表中联系人的城市名称。 有关详细信息，请参阅为 SharePoint 和[列](/previous-versions/office/developer/sharepoint-2010/ms196085(v=office.14))[创建网站列、内容类型和列表](../sharepoint/creating-site-columns-content-types-and-lists-for-sharepoint.md)。
 
-### <a name="site-definition-farm-solution-only"></a>站点定义 (场解决方案) 
- *站点定义* 项目项包含包含以下文件的站点定义文件夹：
+### <a name="site-definition-farm-solution-only"></a>站点定义 (场解决方案仅) 
+ *网站定义* 项目项包含包含以下文件的站点定义文件夹：
 
-- 默认 .aspx 页，用作站点的默认网页。
+- Default.aspx 页，用作站点的默认网页。
 
-- 一 *onet.xml* 站点组件的文件。
+- 定义站点组件的 *onet.xml* 文件。
 
-- 一个 webtemp xml 文件，指定"新建站点"页的"模板选择"部分SharePoint **配置**。
+- 一个 webtemp xml 文件，该文件指定在 "**新建 SharePoint 网站**" 页的 "**模板选择**" 部分中显示的站点定义配置。
 
-  添加站点定义后，添加代码和文件以引入功能。 此项目项只能在场解决方案中使用。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅为应用程序[创建](../sharepoint/creating-site-definitions-for-sharepoint.md)站点定义SharePoint[站点定义和配置](/previous-versions/office/developer/sharepoint-2010/aa978512(v=office.14))。
+  添加站点定义后，添加代码和文件以引入功能。 此项目项只能用于场解决方案。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅为 SharePoint 和[站点定义和配置](/previous-versions/office/developer/sharepoint-2010/aa978512(v=office.14))[创建站点定义](../sharepoint/creating-site-definitions-for-sharepoint.md)。
 
-### <a name="state-machine-workflow-farm-solution-only"></a>状态机工作流 (场解决方案) 
- 状态 *机工作流* 是一组业务逻辑状态、转换和操作。 状态机工作流中的步骤不按顺序执行;相反，它们由操作和状态触发。 与顺序工作流一样，状态机工作流SharePoint列表和文档等项相关联。 同样，可以在全局工作流 (创建站点级) ，也可以创建 (列表) 工作流。 还可以选择工作流是自动启动还是手动启动。 此项目项只能在场解决方案中使用。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅[创建SharePoint](../sharepoint/creating-sharepoint-workflow-solutions.md)解决方案[、SharePoint Server 2010](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))中的工作流和[新增功能：工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
+### <a name="state-machine-workflow-farm-solution-only"></a>状态机工作流 (场解决方案仅) 
+ *状态机工作流* 是一组业务逻辑状态、转换和操作。 不按顺序执行状态机工作流中的步骤;相反，它们由操作和状态触发。 与顺序工作流一样，状态机工作流与列表和文档等 SharePoint 项相关联。 同样，你可以创建网站级 (全局) 工作流或列表级别 (本地) 工作流。 你还可以选择工作流是自动启动还是手动启动。 此项目项只能用于场解决方案。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅[创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)、 [SharePoint 服务器2010中的工作流](/previous-versions/office/developer/sharepoint-2010/ms549489(v=office.14))和[新增功能：工作流改进](/previous-versions/office/developer/sharepoint-2010/ee537015(v=office.14))。
 
-### <a name="user-control-farm-solution-only"></a>用户控制 (场解决方案) 
- 用户 *控件* 是一种可重复使用的自定义控件，可以将其他控件 ASP.NET 控件SharePoint控件。 可以将用户控件添加到应用程序页和在 SharePoint 中运行的 web 部件。 此项目项只能在场解决方案中使用。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅为应用程序[页或应用程序Web 部件可重用控件](creating-reusable-controls-for-web-parts-or-application-pages.md)。
+### <a name="user-control-farm-solution-only"></a>仅限用户控件 (场解决方案) 
+ *用户控件* 是一种自定义的可重用控件，可以将其他 ASP.NET 控件和 SharePoint 控件添加到该控件。 可以将用户控件添加到 SharePoint 中运行的应用程序页和 web 部件。 此项目项只能用于场解决方案。 只能将此项目项添加到场解决方案。 有关详细信息，请参阅为[Web 部件或应用程序页创建可重用控件](creating-reusable-controls-for-web-parts-or-application-pages.md)。
 
-### <a name="visual-web-part"></a>Visual Web 部件
- 可视化 *Web 部件* 项目项包括 *Elements.xml文件***、Web** 部件项和用户 **控件** 项。 可以通过将控件从"工具箱"Visual Studio拖动或复制到用户控件的图面上来设计可视 Web 部件的外观。 有关详细信息，请参阅[如何：](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md)使用设计器创建SharePoint Web 部件和构建基块[：Web 部件。](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))
+### <a name="visual-web-part"></a>可视 web 部件
+ *可视 web 部件* 项目项包含 *Elements.xml* 定义文件、 **Web 部件** 项和 **用户控件** 项。 您可以通过将控件从 "Visual Studio" 工具箱拖到用户控件的表面来设计可视 web 部件的外观。 有关详细信息，请参阅[如何：使用设计器和构建块创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part-by-using-a-designer.md) [： Web 部件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
 
 ### <a name="web-part"></a>Web 部件
- Web *部件* 是一种服务器端控件，在称为"Web 部件页"的特殊类型页面中运行。 它们是显示在 web 站点中的页面SharePoint块。 Web 部件项提供文件，使你可以为 web 站点设计SharePoint部件。 有关详细信息，请参阅[如何：创建](../sharepoint/how-to-create-a-sharepoint-web-part.md)SharePoint Web 部件和构建基块[：Web 部件。](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))
+ *Web 部件* 是在一种称为 Web 部件页的特殊类型的页中运行的服务器端控件。 它们是显示在 SharePoint 网站上的页面的构建基块。 web 部件项目提供了一些文件，使您能够为 SharePoint 站点设计 web 部件。 有关详细信息，请参阅[如何：创建 SharePoint web 部件](../sharepoint/how-to-create-a-sharepoint-web-part.md)和[构建基块： Web 部件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。
 
 ## <a name="see-also"></a>请参阅
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

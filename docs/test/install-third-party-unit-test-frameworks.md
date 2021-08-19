@@ -6,15 +6,16 @@ ms.date: 07/09/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: c59a9d9055dd6a5788eec4d4904d9ec41262dae2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6cee707882c9cf4b8c16749922e844eee1c596a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148449"
 ---
 # <a name="install-unit-test-frameworks"></a>安装单元测试框架
 
