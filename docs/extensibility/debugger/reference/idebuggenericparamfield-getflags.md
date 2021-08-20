@@ -1,6 +1,6 @@
 ---
 description: 检索此泛型参数的标志。
-title: IDebugGenericParamField：： GetFlags |Microsoft Docs
+title: IDebugGenericParamField：：GetFlags |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6126b02dee4f07360bfcc4debca1d97c1b57e713b95b6cf1b5ecfa29ef412b0f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f77a97c3c558055bb2f92f7c98112c0e8b483a17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121451882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127098"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 检索此泛型参数的标志。
@@ -42,10 +42,10 @@ int GetFlags(
 
 ## <a name="parameters"></a>参数
 `pdwFlags`\
-弄返回此泛型参数的标志。
+[out]返回此泛型参数的标志。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
 这些标志包含有关各种特殊约束的信息。
@@ -71,5 +71,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

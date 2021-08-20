@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 28d0f99743535965b3cf203d461fac5d0193607c
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 692e730135bd1f62ef98c83669d133da552d6b3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386600"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150555"
 ---
 # <a name="how-to-access-and-constrain-the-current-selection"></a>如何：访问和约束当前所选内容
 
@@ -38,7 +39,7 @@ ms.locfileid: "112386600"
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsDiagramSelected%2A> 方法|如果在 `true` 模型设计器中选择了关系图，则返回 ;否则返回 `false` 。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleDocumentSelection%2A> 方法|如果在 `true` 模型设计器中仅选择了一个元素，则返回 ;否则返回 `false` 。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.IsSingleSelection%2A> 方法|如果在 `true` 活动窗口中仅选择了一个元素，则返回 ;否则返回 `false` 。|
-    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 属性|获取在模型设计器中选定的元素的只读集合。|
+    |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentDocumentSelection%2A> 属性|获取模型设计器中所选元素的只读集合。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.CurrentSelection%2A> 属性|获取活动窗口中所选元素的只读集合。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleDocumentSelection%2A> 属性|获取模型设计器中所选内容的主元素。|
     |<xref:Microsoft.VisualStudio.Modeling.Shell.CommandSetLibrary.SingleSelection%2A> 属性|获取活动窗口中所选内容的主元素。|
@@ -53,7 +54,7 @@ ms.locfileid: "112386600"
 
 ## <a name="determine-which-window-is-active"></a>确定哪个窗口处于活动状态
 
-<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>接口包含定义成员，这些成员提供对 shell 中当前选择状态的访问权限。 可以通过每个包类的基类中定义的 属性，从特定于域的语言的包类 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> `MonitorSelection` 或命令集类获取对象。 包类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 类，命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 类。
+<xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService>接口包含定义成员，这些成员提供对 shell 中当前选择状态的访问权限。 可以通过每个包类的基类中定义的 属性，从特定于域的语言的包类 <xref:Microsoft.VisualStudio.Modeling.Shell.IMonitorSelectionService> 或命令集类 `MonitorSelection` 获取对象。 包类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage> 类，命令集类派生自 <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet> 类。
 
 ### <a name="to-determine-from-a-command-handler-what-type-of-window-is-active"></a>从命令处理程序确定哪个类型的窗口处于活动状态
 
@@ -211,7 +212,7 @@ namespace CompanyName.ProductName.GroupingDsl
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - <xref:Microsoft.VisualStudio.Modeling.Shell.CommandSet>
 - <xref:Microsoft.VisualStudio.Modeling.Shell.ModelingPackage>

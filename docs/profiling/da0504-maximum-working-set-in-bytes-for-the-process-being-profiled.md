@@ -11,15 +11,16 @@ ms.assetid: 36e71603-ece7-4000-85fc-9da4eed61bf2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 7810646f14c61683fc3fc5e3e70eee33ba01dde1
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 5e72f83038724d2b3e05e2bee33dc6d8fcaedb1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465785"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142112"
 ---
 # <a name="da0504-maximum-working-set-in-bytes-for-the-process-being-profiled"></a>DA0504：所分析进程的最大工作集（字节）
 

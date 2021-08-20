@@ -1,6 +1,6 @@
 ---
 description: 获取此绑定断点的状态。
-title: IDebugBoundBreakpoint2：：GetState |Microsoft Docs
+title: IDebugBoundBreakpoint2：： GetState |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ac9066b0b7719cf6cfe248b2faddb0d7fbc4e2d8d96d88a176729700678a916
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c651e539e58b7e642074b718f96f074c00024b13
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121262407"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111718"
 ---
 # <a name="idebugboundbreakpoint2getstate"></a>IDebugBoundBreakpoint2::GetState
 获取此绑定断点的状态。
@@ -44,13 +44,13 @@ int GetState(
 
 ## <a name="parameters"></a>参数
 `pState`\
-[out]从描述断BP_STATE的状态[](../../../extensibility/debugger/reference/bp-state.md)的枚举中返回一个值。
+弄返回 [BP_STATE](../../../extensibility/debugger/reference/bp-state.md) 枚举中的一个值，该值描述断点的状态。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 `CBoundBreakpoint` [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为 `CBoundBreakpoint` 公开 [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
@@ -72,6 +72,6 @@ HRESULT CBoundBreakpoint::GetState(BP_STATE* pState)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBoundBreakpoint2](../../../extensibility/debugger/reference/idebugboundbreakpoint2.md)
 - [BP_STATE](../../../extensibility/debugger/reference/bp-state.md)

@@ -1,5 +1,5 @@
 ---
-description: 指定开始在反汇编流中寻找的位置。
+description: 指定在反汇编流中开始查找的位置。
 title: SEEK_START |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 580c52a3df54f32beba45b4f44c1062e7197f766ae1ae9d25db6da29099537f2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a7940ca7689da1dab20141191489800c2a3810c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433016"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125226"
 ---
 # <a name="seek_start"></a>SEEK_START
-指定开始在反汇编流中寻找的位置。
+指定在反汇编流中开始查找的位置。
 
 ## <a name="syntax"></a>语法
 
@@ -52,29 +52,29 @@ public enum enum_SEEK_START {
 
 ## <a name="fields"></a>字段
  `SEEK_START_BEGIN`\
- 从当前文档的开头开始寻找。
+ 开始在当前文档的开头进行查找。
 
  `SEEK_START_END`\
- 在当前文档的末尾开始寻找。
+ 开始在当前文档的末尾进行查找。
 
  `SEEK_START_CURRENT`\
- 从当前文档的当前位置开始寻找。
+ 在当前文档的当前位置开始查找。
 
  `SEEK_START_CODECONTEXT`\
- 开始在当前文档的给定代码上下文中进行寻找。
+ 开始在当前文档的给定代码上下文中查找。
 
  `SEEK_START_CODELOCID`\
- 开始在给定的代码位置标识符处进行寻找。 通过调用 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)获取代码位置标识符。
+ 开始查找给定的代码位置标识符。 通过调用 [GetCurrentLocation](../../../extensibility/debugger/reference/idebugdisassemblystream2-getcurrentlocation.md)获取代码位置标识符。
 
 ## <a name="remarks"></a>备注
  作为参数传递给 [Seek](../../../extensibility/debugger/reference/idebugdisassemblystream2-seek.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

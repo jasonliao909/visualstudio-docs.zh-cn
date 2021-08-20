@@ -1,6 +1,6 @@
 ---
-description: 确定字段是否表示已关闭类型。
-title: IDebugExtendedField：：IsClosedType |Microsoft Docs
+description: 确定字段是否表示闭合类型。
+title: IDebugExtendedField：： IsClosedType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,15 +16,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 47844555c2f900e46dd0218fe3763a877d9fa711b562b5601be8adc27a98b0a9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 00cb69073f3e975d170578c8b026d40440341502
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138427"
 ---
 # <a name="idebugextendedfieldisclosedtype"></a>IDebugExtendedField::IsClosedType
-确定字段是否表示已关闭类型。
+确定字段是否表示闭合类型。
 
 ## <a name="syntax"></a>语法
 
@@ -39,7 +39,7 @@ int IsClosedType();
 ```
 
 ## <a name="return-value"></a>返回值
- 如果字段是闭合类型，则 返回 `S_OK` ;否则返回 `S_FALSE` 。
+ 如果该字段为关闭类型，则返回 `S_OK` ; 否则返回 `S_FALSE` 。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugExtendedField](../../../extensibility/debugger/reference/idebugextendedfield.md)

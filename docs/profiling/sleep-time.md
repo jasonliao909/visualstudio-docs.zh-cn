@@ -11,14 +11,15 @@ ms.assetid: 3ddb96f9-9bda-4a68-ad4d-ef488a0a68dc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a433d11c2684a4a39660759f33d49bd719c2b2ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1b1ddc13733f9613ee168b1e4a218ec4f08f0d10
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960164"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141579"
 ---
 # <a name="sleep-time"></a>睡眠时间
 时间线中的这些时间段与归类为睡眠的阻塞时间关联。 睡眠类别意味着某线程自动放弃其逻辑内核并且不执行任何工作。 在此时间内，线程已在被并发可视化工具计数为睡眠的 API 中阻塞。 `Sleep()` 和 `SwitchToThread()` 等 API 就归为此组。

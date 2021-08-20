@@ -1,5 +1,5 @@
 ---
-description: 此接口允许调用方确定端口供应商是否可以通过在 (之间将端口写入磁盘) 来保留这些端口，然后获取这些保留端口的列表。
+description: 此接口允许调用方确定端口供应商是否可以保留端口 (，方法为在两次调试器调用) 将端口写入磁盘，然后获取这些保留端口的列表。
 title: IDebugPortSupplier3 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 84dc23cf1c750d539d043b1993490a523c70ebaaacf04cc44c8702d8383278ad
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 56d4d0dd0f7ddef677c8e32696deaea41678a621
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121416750"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159992"
 ---
 # <a name="idebugportsupplier3"></a>IDebugPortSupplier3
-此接口允许调用方确定端口供应商是否可以通过在 (之间将端口写入磁盘) 来保留这些端口，然后获取这些保留端口的列表。
+此接口允许调用方确定端口供应商是否可以保留端口 (，方法为在两次调试器调用) 将端口写入磁盘，然后获取这些保留端口的列表。
 
 ## <a name="syntax"></a>语法
 
@@ -41,7 +41,7 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
 |方法|说明|
 |------------|-----------------|
-|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|返回端口供应商是否可以通过在 (之间将端口写入磁盘) 来持久保存端口。|
+|[CanPersistPorts](../../../extensibility/debugger/reference/idebugportsupplier3-canpersistports.md)|返回端口供应商是否可以通过将端口写入 (调试器调用之间的磁盘) 来保留这些端口。|
 |[EnumPersistedPorts](../../../extensibility/debugger/reference/idebugportsupplier3-enumpersistedports.md)|返回一个对象，该对象可用于枚举此端口供应商写入磁盘的所有端口。|
 
 ## <a name="remarks"></a>备注
@@ -56,6 +56,6 @@ IDebugPortSupplier3 : IDebugPortSupplier2
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPortSupplier2](../../../extensibility/debugger/reference/idebugportsupplier2.md)

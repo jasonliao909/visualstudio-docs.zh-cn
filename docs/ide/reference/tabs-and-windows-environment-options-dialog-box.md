@@ -10,14 +10,15 @@ ms.assetid: f5167564-0a4e-4f98-9580-fc6cb7d9dd8d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d69bfae35d610928a95f2db1b071bb2cde37ea56
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19960b5bb8f429e974fdd0571efa64e4ddd07f5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838548"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150906"
 ---
 # <a name="options-dialog-box-environment--tabs-and-windows"></a>“选项”对话框：环境 \> 选项卡和窗口
 

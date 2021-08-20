@@ -9,15 +9,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e050879fc9a1bd74f95ae5d24a92dc7a59a73c8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 80e525b078fb5743d9181361d26230faf740c01a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140788"
 ---
 # <a name="understand-resource-contention-data-values"></a>了解资源争用数据值
 

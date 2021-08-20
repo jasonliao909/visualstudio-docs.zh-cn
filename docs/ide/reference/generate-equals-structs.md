@@ -7,14 +7,15 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05792636e1094c53869f0235145aec73b26deea9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a95d7c890d651dcddb90f1eafd431830e621cd9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952975"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151569"
 ---
 # <a name="generate-iequatable-operators-when-generating-equals-for-structs"></a>在为结构生成 Equals 时生成 IEquatable 运算符
 

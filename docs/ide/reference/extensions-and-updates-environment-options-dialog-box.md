@@ -9,14 +9,15 @@ ms.assetid: c73859eb-3c33-4f39-86bf-6788387b5937
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 46cbb03d05dc3445c4d1d6e2c61faca10df44aef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: baa8f005322fb2cdef764ee450e49da2c0b9437f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969758"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143958"
 ---
 # <a name="options-dialog-box-environment--extensions"></a>“选项”对话框：环境 \> 扩展
 

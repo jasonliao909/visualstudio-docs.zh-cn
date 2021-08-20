@@ -11,17 +11,18 @@ ms.assetid: afec3008-b1e0-4803-ad24-195dbfb6497e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 02277bf84bdc12e904b2651ef5ba9fc2356d9090
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 2dc5c80d58ceb3efbf7007178252dadcb66a0692
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105066927"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127293"
 ---
 # <a name="idebugdisassemblystream2seek"></a>IDebugDisassemblyStream2::Seek
 相对于指定位置，将给定数量的指令移动到反汇编流中的读取指针。
@@ -65,7 +66,7 @@ int Seek(
 ## <a name="remarks"></a>备注
  如果查找到列表开头之前的位置，则将读取位置设置为列表中的第一个指令。 如果 "查看" 的位置晚于列表末尾，则会将 "读取位置" 设置为列表中的最后一个指令。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugDisassemblyStream2](../../../extensibility/debugger/reference/idebugdisassemblystream2.md)
 - [SEEK_START](../../../extensibility/debugger/reference/seek-start.md)
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

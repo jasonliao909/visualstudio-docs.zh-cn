@@ -1,6 +1,6 @@
 ---
 description: 检索非托管代码使用的符号读取器。
-title: IDebugComPlusSymbolProvider：： GetSymUnmanagedReader |Microsoft Docs
+title: IDebugComPlusSymbolProvider：：GetSymUnmanagedReader |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 65c1075ab249347c3ec6762da44710cf6ae77807dd525e8e6c258ee4e6e21c95
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: cccc1fbbc745a214ddd7e190ba81ca5dff891ade
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417543"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103827"
 ---
 # <a name="idebugcomplussymbolprovidergetsymunmanagedreader"></a>IDebugComPlusSymbolProvider::GetSymUnmanagedReader
 检索非托管代码使用的符号读取器。
@@ -46,16 +46,16 @@ int GetSymUnmanagedReader(
 
 ## <a name="parameters"></a>参数
 `ulAppDomainID`\
-中应用程序域的标识符。
+[in]应用程序域的标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `ppSymUnmanagedReader`\
-弄返回表示符号读取器的对象。
+[out]返回表示符号读取器的 对象。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。

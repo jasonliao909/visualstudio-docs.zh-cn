@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 4854b04848e99e605fbb26587c8b4a1abafe4741ec74b6d84568cf2b729232a0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b433f7b58753408c916074539d9d0b6275d1ce17
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390438"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145817"
 ---
 # <a name="bp_resolution_location"></a>BP_RESOLUTION_LOCATION
 指定断点解析位置的结构。

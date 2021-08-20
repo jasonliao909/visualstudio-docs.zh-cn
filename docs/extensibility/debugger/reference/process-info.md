@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 504bb26847915c40d2b4701bf3f4206177aa3b994aa1489ad79b6a43aa3105d9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2fc29833c8d3f6b64e5bbc683ad6f5fc82231ef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433055"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118094"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 包含有关进程的信息。
@@ -59,22 +59,22 @@ public struct PROCESS_INFO {
 
 ## <a name="members"></a>成员
  `Fields`\
- [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)枚举中的标志的组合，用于指定要填写的字段。
+ 指定填充哪些字段 [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md) 枚举中的标志组合。
 
  `bstrFileName`\
- 进程的完整路径名称。 等效于调用具有参数的 [GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 方法 `GN_FILENAME` 。
+ 进程的完整路径名称。 等效于使用 [参数 调用 GetName](../../../extensibility/debugger/reference/idebugprocess2-getname.md) 方法 `GN_FILENAME` 。
 
  `bstrBaseName`\
- 进程的文件名称和扩展名。 等效于调用 `IDebugProcess2::Getname` 具有参数的方法 `GN_BASENAME` 。
+ 进程的文件名和扩展名。 等效于使用 `IDebugProcess2::Getname` 参数 调用 方法 `GN_BASENAME` 。
 
  `bstrTitle`\
- 进程的标题（如果有）。 等效于调用 `IDebugProcess2::Getname` 具有参数的方法 `GN_TITLE` 。
+ 进程的标题（如果存在）。 等效于使用 `IDebugProcess2::Getname` 参数 调用 方法 `GN_TITLE` 。
 
  `ProcessId`\
- 标识进程的 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 结构。 等效于调用 [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) 方法。
+ 标识 [AD_PROCESS_ID](../../../extensibility/debugger/reference/ad-process-id.md) 的一个结构。 等效于调用 [GetPhysicalProcessId](../../../extensibility/debugger/reference/idebugprocess2-getphysicalprocessid.md) 方法。
 
  `dwSessionId`\
- 此进程正在其中运行的调试会话的标识符。
+ 运行此过程的调试会话的标识符。
 
  `bstrAttachedSessionName`\
  附加的会话名称。 等效于调用 [GetAttachedSessionName](../../../extensibility/debugger/reference/idebugprocess2-getattachedsessionname.md) 方法。
@@ -83,19 +83,19 @@ public struct PROCESS_INFO {
  创建进程的时间。
 
  `Flags`\
- 指定进程属性的 [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) 枚举中的标志的组合。
+ 指定进程属性PROCESS_INFO_FLAGS集合中[](../../../extensibility/debugger/reference/process-info-flags.md)标志的组合。
 
 ## <a name="remarks"></a>备注
- 此结构被传递给 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 方法，其中填充了此结构。
+ 此结构将传递到 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 方法中填充它。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

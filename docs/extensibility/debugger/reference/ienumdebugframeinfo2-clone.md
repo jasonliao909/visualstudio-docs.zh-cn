@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 79053ad2bc01c0e3af9b78647c482509354caf866df708fcc75eb84f1b381c5e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1059b7ba4e25b6536aba59092755643a6c530822
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338314"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095551"
 ---
 # <a name="ienumdebugframeinfo2clone"></a>IEnumDebugFrameInfo2::Clone
 将当前枚举的副本作为单独的 对象返回。
@@ -51,5 +51,5 @@ int Clone(
 ## <a name="remarks"></a>备注
  调用此方法时，枚举的副本的状态与原始 副本相同。 但是，副本的 和原始 状态是分开的，可以单独更改。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugFrameInfo2](../../../extensibility/debugger/reference/ienumdebugframeinfo2.md)

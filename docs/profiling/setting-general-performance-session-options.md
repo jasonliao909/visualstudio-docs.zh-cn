@@ -8,15 +8,16 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 78082e8937f497af915c23e6db75b4b9836591fc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a42998a30856765dcd7c3eaea32a67bcb13f59e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960177"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141514"
 ---
 # <a name="set-general-performance-session-options"></a>设置常规的性能会话选项
 

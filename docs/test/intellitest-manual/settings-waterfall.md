@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Settings waterfall
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 283cb7b4a485389fa19e3756e79c35f1cec1041a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d8ed6df537c46f810f765c3b7d1b23eab9a3e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920500"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139915"
 ---
 # <a name="settings-waterfall"></a>设置瀑布图
 

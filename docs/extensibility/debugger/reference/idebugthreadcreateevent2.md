@@ -1,5 +1,5 @@
 ---
-description: 此接口由调试引擎 DE (DE) 发送到会话调试管理器 (SDM) 在正在调试的程序中创建线程时。
+description: 此接口由调试引擎 de (DE) 在正在调试的程序中创建线程时 (SDM) 发送到会话调试管理器。
 title: IDebugThreadCreateEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,15 +14,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f912441fbcc12953f9fd3d1bdf4fbc3f11d466292405113744e2104fdf54c2a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de1d636f236b3c3d90508070525b1b8632991cb2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415697"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118380"
 ---
 # <a name="idebugthreadcreateevent2"></a>IDebugThreadCreateEvent2
-此接口由调试引擎 DE (DE) 发送到会话调试管理器 (SDM) 在正在调试的程序中创建线程时。
+此接口由调试引擎 de (DE) 在正在调试的程序中创建线程时 (SDM) 发送到会话调试管理器。
 
 ## <a name="syntax"></a>语法
 

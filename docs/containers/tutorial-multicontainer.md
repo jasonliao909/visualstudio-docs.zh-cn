@@ -5,14 +5,14 @@ description: 了解如何将多个容器与 Docker Compose 配合使用
 ms.custom: SEO-VS-2020
 ms.author: ghogen
 ms.date: 03/15/2021
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: 78af96eaa8f340129b2b445dd92419f84cf91ab1
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: f2185bf025bc880a7461a9e1618953f734a7083a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307812"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155052"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 

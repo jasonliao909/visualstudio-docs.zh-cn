@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 8e9d55d9c1c22edea1ff826b23beb6d0ec6b392c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 124245b4fb0a711fcf680d53b7fc75bc46cbbaaf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942407"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140357"
 ---
 # <a name="step-2-create-a-flask-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Flask 应用
 

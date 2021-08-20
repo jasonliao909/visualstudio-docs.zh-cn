@@ -1,6 +1,6 @@
 ---
-description: 表示在 System.Threading.Tasks.Task 对象中执行的代码的委托。
-title: m_action字段|Microsoft Docs
+description: 委托，它表示要在 system.exception 对象中执行的代码。
+title: m_action 字段 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -12,21 +12,21 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0b2c5b4927a07bcb05c0ada97d4aed9f6c6da8c6cc65e21aa65fc3e40af1996c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3da9d8da2a5ebeac580a66844ff08cb5a6010715
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121361049"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160590"
 ---
-# <a name="m_action-field"></a>m_action字段
-表示在 对象中执行的代码的 <xref:System.Threading.Tasks.Task> 委托。
+# <a name="m_action-field"></a>m_action 字段
+委托，它表示要在对象中执行的代码 <xref:System.Threading.Tasks.Task> 。
 
  **命名空间：** <xref:System.Threading.Tasks?displayProperty=fullName>
 
- **程序集：mscorlib** (mscorlib.dll *)*
+ **Assembly：** mscorlib (*mscorlib.dll*) 
 
- 由于无法从 CIL 访问此内部成员.NET Framework，因此在 CIL (中提供了以下) 。
+ 由于无法从 .NET Framework 访问此内部成员，因此在公共中间语言 (CIL) 中提供了以下语法。
 
 ## <a name="syntax"></a>语法
 
@@ -37,5 +37,5 @@ ms.locfileid: "121361049"
 ## <a name="remarks"></a>备注
  这是 `action` 构造函数中的 <xref:System.Threading.Tasks.Task.%23ctor%2A> 参数。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)
