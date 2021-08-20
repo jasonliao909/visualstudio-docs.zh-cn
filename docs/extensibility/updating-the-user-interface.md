@@ -14,17 +14,17 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 046484eaba6ff131d5f39522b7dc04460380c0f0aed0496acc537c9c60d522e5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ef946f99589ba0bd0a2d334866e247b9a99aae2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121413838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144374"
 ---
 # <a name="updating-the-user-interface"></a>更新用户接口
 实现命令后，可以添加代码以使用新命令的状态更新用户界面。
 
- 在典型的 Win32 应用程序中，可以对命令集进行持续轮询，并在用户查看它们时调整各个命令的状态。 但是，因为 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] shell 可以托管无限数量的 vspackage，所以，广泛轮询可能会降低响应能力，尤其是在托管代码与 COM 之间的互操作程序集之间轮询。
+ 在典型的 Win32 应用程序中，可以持续轮询命令集，并可以在用户查看各个命令时调整其状态。 但是，由于 shell 可以托管无限数量的 VSPackage，因此广泛的轮询可能会降低响应能力，尤其是跨托管代码和 COM 之间的互操作程序集 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 进行轮询。
 
 ### <a name="to-update-the-ui"></a>更新 UI
 
@@ -32,7 +32,7 @@ ms.locfileid: "121413838"
 
     - 调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 方法。
 
-         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>可以从服务中获取接口 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> ，如下所示。
+         <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell>接口可以从服务获取 <xref:Microsoft.VisualStudio.Shell.Interop.SVsUIShell> ，如下所示。
 
         ```csharp
         void UpdateUI(Microsoft.VisualStudio.Shell.ServiceProvider sp)
@@ -47,12 +47,12 @@ ms.locfileid: "121413838"
 
         ```
 
-         如果的参数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> () 为非零 `TRUE` ，则更新将同步和立即执行。 建议为此参数传递零 (`FALSE`) ，以帮助保持良好的性能。 如果要避免缓存，请 `DontCache` 在 .vsct 文件中创建该命令时应用标志。 尽管如此，请谨慎使用标志，否则性能可能会降低。 有关命令标志的详细信息，请参阅 [命令标志元素](../extensibility/command-flag-element.md) 文档。
+         如果 的参数不 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A> 为零 `TRUE` () ，则立即同步执行更新。 建议为此参数传递零 `FALSE` () ，以帮助保持良好的性能。 若要避免缓存，在 .vsct 文件中创建命令时 `DontCache` 应用 标志。 不过，请谨慎使用 标志，否则性能可能会降低。 有关命令标志的信息，请参阅 [命令标志元素](../extensibility/command-flag-element.md) 文档。
 
-    - 在 vspackage 中，通过在窗口中使用就地激活模型承载 ActiveX 控件，使用方法可能更方便 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>接口中的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 和 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 接口中的方法在 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 功能上是等效的。 这两种方法都会导致环境重新查询所有命令的状态。 通常不会立即执行更新。 相反，更新将推迟到空闲时间。 Shell 将缓存命令状态以帮助保持良好的性能。 如果要避免缓存，请 `DontCache` 在 .vsct 文件中创建该命令时应用标志。 尽管如此，请谨慎使用标志，因为性能可能会降低。
+    - 在通过窗口中的就ActiveX托管控件的 VSPackage 中，使用 方法可能更方便 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell.UpdateCommandUI%2A>接口中的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShell> 方法和 接口中的 方法在功能 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager.UpdateUI%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 上是等效的。 这两种操作都会导致环境重新查询所有命令的状态。 通常，不会立即执行更新。 相反，更新将延迟到空闲时间。 shell 缓存命令状态以帮助保持良好性能。 若要避免缓存，在 .vsct 文件中创建命令时 `DontCache` 应用 标志。 不过，请谨慎使用 标志，因为性能可能会降低。
 
-         请注意，可以 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> 通过 `QueryInterface` 对对象调用方法 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> 或从服务中获取接口来获取接口 <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 。
+         请注意，可以通过对 对象调用 方法或从服务获取 接口 <xref:Microsoft.VisualStudio.Shell.Interop.IOleInPlaceComponentUIManager> `QueryInterface` 来获取 <xref:Microsoft.VisualStudio.Shell.Interop.IOleComponentUIManager> <xref:Microsoft.VisualStudio.Shell.Interop.SOleComponentUIManager> 接口。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [VSPackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [实现](../extensibility/internals/command-implementation.md)

@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f5065c3eafc9fb1cd9e36227a09bbf26ed321c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cdcefa6559aea6ed59bb2097e2a2285eabc4b07a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950203"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142320"
 ---
 # <a name="collect-thread-and-process-concurrency-data"></a>收集线程和进程并发数据
 

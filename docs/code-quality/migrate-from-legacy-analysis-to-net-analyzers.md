@@ -13,16 +13,17 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 9a673e7467816e71b8240de9e5f68840c9188dcd
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.technology: vs-ide-code-analysis
+ms.openlocfilehash: 06c25f9667b677a7afdf639a05442fbb8a49831e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113973"
 ---
 # <a name="migrate-from-legacy-analysis-fxcop-to-source-analysis-net-analyzers"></a>从旧版分析 (FxCop) 迁移到源分析 (.NET 分析器) 
 
-"Roslyn".NET Compiler Platform (分析器) 替换 [托管代码的旧](../code-quality/code-analysis-for-managed-code-overview.md) 分析。 对于较新的项目模板（如 .NET Core 和 .NET Standard，旧分析不可用。
+"Roslyn".NET Compiler Platform (分析器) 替换[托管代码的旧](../code-quality/code-analysis-for-managed-code-overview.md)分析。 对于较新的项目模板（如 .NET Core 和 .NET Standard，旧分析不可用。
 
 许多旧版 FxCop (规则) .NET 分析器（一组 Roslyn 代码分析器）已重写。 Roslyn 分析器在编译器执行期间运行基于源代码的分析。 报告分析器结果以及编译器结果。
 
@@ -37,7 +38,7 @@ ms.locfileid: "108798227"
 若要迁移到源分析， [请启用或安装 .NET 分析器](install-net-analyzers.md)。 与传统的分析规则冲突一样，源代码分析冲突会出现在 Visual Studio 的“错误列表”窗口中。 此外，源代码分析冲突也会在代码编辑器中显示，表现为违规代码下有波浪线。 规则的[严重性设置](../code-quality/use-roslyn-analyzers.md#configure-severity-levels)决定波浪线的颜色。 若要查看移植到新的 .NET 分析器的规则的状态，请参阅 [移植和未移植的规则](../code-quality/fxcop-rule-port-status.md)。
 
 > [!NOTE]
-> 在 2019 Visual Studio 16.8 和 .NET 5.0 之前，这些分析器作为 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包 提供。 从 Visual Studio 2019 16.8 和 .NET 5.0 开始，这些分析器 [包含在 .NET SDK 中](/dotnet/fundamentals/code-analysis/overview)。 它们还作为 `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 包 提供](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)。 有关详细信息，请参阅从 [FxCop 分析器迁移到 .NET 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)。
+> 在 2019 Visual Studio 16.8 和 .NET 5.0 之前，这些分析器作为包 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet提供](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)。 从 Visual Studio 2019 16.8 和 .NET 5.0 开始，这些分析器[包含在 .NET SDK 中](/dotnet/fundamentals/code-analysis/overview)。 它们还作为包 `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet提供](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)。 有关详细信息，请参阅从 [FxCop 分析器迁移到 .NET 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)。
 
 ## <a name="configuration"></a>配置
 

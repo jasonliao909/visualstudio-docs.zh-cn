@@ -14,14 +14,15 @@ ms.assetid: f116066a-4f65-4f2c-94ef-12cbd8cfb598
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 32980161281cf36c54ad15d536870a96694a461a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4c71b73ccfd26a0b2e890bbd5014bcbcf932b7b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958006"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151088"
 ---
 # <a name="replace-in-files-command"></a>“在文件中替换”命令
 使用“查找和替换”窗口的“在文件中替换”选项卡上的可用选项子集替换文件中的文本。

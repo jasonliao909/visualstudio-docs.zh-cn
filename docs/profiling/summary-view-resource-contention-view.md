@@ -9,15 +9,16 @@ ms.assetid: 6da57b83-7b42-4d7c-9aea-8e0a830faf6b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e6f0b629aa14cf465dcaa8abec48e3eea110c4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1519f55ef089ea770575676329abaf4aabc37a3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959995"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157184"
 ---
 # <a name="summary-view---resource-contention-view"></a>“摘要”视图 - 资源争用视图
 “摘要”视图显示有关应用程序中线程或进程在其中挂起、同时等待访问资源的事件的信息。

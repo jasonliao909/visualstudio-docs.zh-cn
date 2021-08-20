@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 13add9633223fbcddbdee96db5b217ca12273f8954b0bd158e7c3429f5d47fcb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 14e3fc459288e9119c47d6a3256c961cf893197f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121339068"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122126864"
 ---
 # <a name="idebugpendingbreakpoint2virtualize"></a>IDebugPendingBreakpoint2::Virtualize
 切换此挂起断点的虚拟化状态。 当挂起的断点虚拟化时，调试引擎将尝试在每次将新代码加载到程序时绑定该断点。

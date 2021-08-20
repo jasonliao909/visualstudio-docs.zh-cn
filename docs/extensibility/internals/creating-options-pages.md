@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 3f236d38a4bde8a13bb49e6cbc8700811fac9d846962ace7c47ef2ede4047919
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d2724a8ce237f238c75e5f63f1621a5ae548f36d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124680"
 ---
 # <a name="create-options-pages"></a>创建选项页
 在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 托管包框架中， <xref:Microsoft.VisualStudio.Shell.DialogPage> 通过在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] "**工具**" 菜单下添加 "**选项**" 页，从派生的类扩展 IDE。
@@ -85,6 +85,6 @@ ms.locfileid: "121448216"
 :::code language="csharp" source="../../snippets/csharp/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/cs/uiusersettingstoolsoptionspagespackage.cs" id="Snippet08":::
 :::code language="vb" source="../../snippets/visualbasic/VS_Snippets_VSSDK/ui_usersettings_toolsoptionpages/vb/uiusersettingstoolsoptionspagespackage.vb" id="Snippet08":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [扩展用户设置和选项](../../extensibility/extending-user-settings-and-options.md)
 - ["选项" 页的自动化支持](../../extensibility/internals/automation-support-for-options-pages.md)

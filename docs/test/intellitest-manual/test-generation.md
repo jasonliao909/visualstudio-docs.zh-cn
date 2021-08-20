@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Test generation
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 92071a3bdaf32f06a77f8502b251f1f3af019203
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd7c9b667e2c355267a22212684141a40bca9f7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148423"
 ---
 # <a name="test-generation"></a>测试生成
 

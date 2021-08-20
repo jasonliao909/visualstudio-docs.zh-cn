@@ -1,6 +1,6 @@
 ---
-title: 演练：创建您的第一个 Word VSTO 外接程序
-description: 创建用于 Microsoft Word 的应用程序级外接程序。 此功能可用于应用程序本身，无论打开的是哪个文档。
+title: 演练：为 Word VSTO第一个外接程序
+description: 为应用程序创建应用程序级外接程序Microsoft Word。 无论打开哪些文档，应用程序本身都可以使用此功能。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -15,16 +15,17 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: fd3509ab674faa220ed7bbea15a9762f52b1a525
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 0c6f06400e1f35af9cce874d601c03f6cf1dc4a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828275"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155455"
 ---
-# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练：创建您的第一个 Word VSTO 外接程序
+# <a name="walkthrough-create-your-first-vsto-add-in-for-word"></a>演练：为 Word VSTO第一个外接程序
   本介绍性演练说明如何创建 Microsoft Office Word 的 VSTO 外接程序。 你在此类解决方案中创建的功能可用于应用程序本身，而与所打开的文档无关。
 
  [!INCLUDE[appliesto_wdallapp](../vsto/includes/appliesto-wdallapp-md.md)]
@@ -54,7 +55,7 @@ ms.locfileid: "107828275"
 
 1. 启动 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]。
 
-2. 在 **“文件”** 菜单上，指向 **“新建”** ，然后单击 **“项目”** 。
+2. 在 **“文件”** 菜单上，指向 **“新建”** ，再单击 **“项目”** 。
 
 3. 在模板窗格中，展开 **“Visual C#”** 或 **“Visual Basic”**，然后展开 **“Office/SharePoint”**。
 
@@ -62,18 +63,18 @@ ms.locfileid: "107828275"
 
 5. 在项目模板列表中，选择 Word VSTO 外接程序项目。
 
-6. 在 " **名称** " 框中，键入 **FirstWordAddIn**。
+6. 在" **名称"框中** ，键入 **FirstWordAddIn**。
 
-7. 单击 **“确定”** 。
+7. 单击“确定”。
 
-     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstWordAddIn** 项目，并在编辑器中打开 ThisAddIn 代码文件。
+     [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建 **FirstWordAddIn** 项目，并打开编辑器中的 ThisAddIn 代码文件。
 
-## <a name="write-code-to-add-text-to-the-saved-document"></a>编写用于向保存的文档添加文本的代码
+## <a name="write-code-to-add-text-to-the-saved-document"></a>编写代码以将文本添加到保存的文档
  接下来，将代码添加到 ThisAddIn 代码文件。 新的代码则使用 Word 的对象模型向每个已保存文档添加样本文本。 默认情况下，ThisAddIn 代码文件包含以下生成的代码：
 
-- `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Word 对象模型的访问权限。 有关详细信息，请参阅 [PROGRAM VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。类的其余部分 `ThisAddIn` 是在不应修改的隐藏代码文件中定义的。
+- `ThisAddIn` 类的部分定义。 此类提供代码的入口点，并提供对 Word 对象模型的访问权限。 有关详细信息，请参阅[Program VSTO 外接程序](../vsto/programming-vsto-add-ins.md)。类的其余部分在不应 `ThisAddIn` 修改的隐藏代码文件中定义。
 
-- `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 Word 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载 VSTO 外接程序时清理其使用的资源。 有关详细信息，请参阅 [Office 项目中的事件](../vsto/events-in-office-projects.md)。
+- `ThisAddIn_Startup` 和 `ThisAddIn_Shutdown` 事件处理程序。 Word 加载和卸载 VSTO 外接程序时会调用这些事件处理程序。 使用这些事件处理程序，可在加载 VSTO 外接程序对其进行初始化，并在卸载 VSTO 外接程序时清理其使用的资源。 有关详细信息，请参阅[项目中Office事件](../vsto/events-in-office-projects.md)。
 
 ### <a name="to-add-a-paragraph-of-text-to-the-saved-document"></a>向已保存的文档添加文本段落
 
@@ -85,7 +86,7 @@ ms.locfileid: "107828275"
     :::code language="csharp" source="../vsto/codesnippet/CSharp/FirstWordAddIn/ThisAddIn.cs" id="Snippet1":::
 
    > [!NOTE]
-   > 此代码使用索引值为 1 来访问 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅 [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)。
+   > 此代码使用索引值为 1 来访问 <xref:Microsoft.Office.Interop.Word._Document.Paragraphs%2A> 集合中的第一个段落。 尽管 Visual Basic 和 Visual C# 使用从 0 开始的数组，但 Word 对象模型中大多数集合的数组下限都是 1。 有关详细信息，请参阅在解决方案[中Office代码](../vsto/writing-code-in-office-solutions.md)。
 
 2. 如果你使用的是 C#，请将以下必需代码添加到 `ThisAddIn_Startup` 事件处理程序中。 此代码用于将 `Application_DocumentBeforeSave` 事件处理程序与 <xref:Microsoft.Office.Interop.Word.ApplicationEvents4_Event.DocumentBeforeSave> 事件连接在一起。
 
@@ -103,7 +104,7 @@ ms.locfileid: "107828275"
 
 1. 按 **F5** 生成并运行项目。
 
-     生成项目时，代码会编译成一个程序集，此程序集包含在项目的生成输出文件夹中。 Visual Studio 还会创建一组注册表项，通过这些注册表项，Word 能够发现和加载 VSTO 外接程序，Visual Studio 还将开发计算机上的安全设置配置为允许 VSTO 外接程序运行。 有关详细信息，请参阅 [生成 Office 解决方案](../vsto/building-office-solutions.md)。
+     生成项目时，代码会编译成一个程序集，此程序集包含在项目的生成输出文件夹中。 Visual Studio 还会创建一组注册表项，通过这些注册表项，Word 能够发现和加载 VSTO 外接程序，Visual Studio 还将开发计算机上的安全设置配置为允许 VSTO 外接程序运行。 有关详细信息，请参阅生成[Office解决方案](../vsto/building-office-solutions.md)。
 
 2. 在 Word 中，保存活动文档。
 
@@ -123,24 +124,24 @@ ms.locfileid: "107828275"
 ## <a name="next-steps"></a>后续步骤
  既然你已经创建了一个基本的 Word VSTO 外接程序，就可以从下面这些主题中了解有关如何开发 VSTO 外接程序的详细信息：
 
-- 可在 VSTO 外接程序中执行的常规编程任务： [PROGRAM VSTO 外](../vsto/programming-vsto-add-ins.md)接程序。
+- 可以在外接程序中执行VSTO常规编程任务：VSTO[外接程序。](../vsto/programming-vsto-add-ins.md)
 
-- 特定于 Word VSTO 外接程序的编程任务： [word 解决方案](../vsto/word-solutions.md)。
+- 特定于 Word 和外接程序的VSTO任务[：Word 解决方案](../vsto/word-solutions.md)。
 
-- 使用 Word 的对象模型： [word 对象模型概述](../vsto/word-object-model-overview.md)。
+- 使用 Word 的对象模型 [：Word 对象模型概述](../vsto/word-object-model-overview.md)。
 
-- 自定义 Word 的 UI，例如通过向功能区添加自定义选项卡或创建自己的自定义任务窗格： [OFFICE UI 自定义](../vsto/office-ui-customization.md)。
+- 自定义 Word 的 UI，例如，将自定义选项卡添加到功能区或创建自己的自定义任务窗格：Office UI[自定义](../vsto/office-ui-customization.md)。
 
-- 生成和调试 Word 的 VSTO 外接程序： [生成 Office 解决方案](../vsto/building-office-solutions.md)。
+- 为 Word 生成VSTO调试外接程序[：生成Office解决方案](../vsto/building-office-solutions.md)。
 
-- 部署 Word 的 VSTO 外接程序： [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)。
+- 部署VSTO Word 的外接程序[：部署](../vsto/deploying-an-office-solution.md)Office 解决方案 。
 
-## <a name="see-also"></a>另请参阅
-- [Office 解决方案开发概述 &#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
+## <a name="see-also"></a>请参阅
+- [Office解决方案开发概述&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)
 - [Word 解决方案](../vsto/word-solutions.md)
-- [程序 VSTO 外接程序](../vsto/programming-vsto-add-ins.md)
+- [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
-- [Office UI 自定义](../vsto/office-ui-customization.md)
-- [构建 Office 解决方案](../vsto/building-office-solutions.md)
+- [OfficeUI 自定义](../vsto/office-ui-customization.md)
+- [生成Office解决方案](../vsto/building-office-solutions.md)
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
-- [Office 项目模板概述](../vsto/office-project-templates-overview.md)
+- [Office项目模板概述](../vsto/office-project-templates-overview.md)

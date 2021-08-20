@@ -10,14 +10,15 @@ ms.assetid: f3ec919e-63e5-484b-adbf-8f0e79342e75
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fc7e8d9a7c39a0bb7953c309adb9f2abb1c0dc43
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bdc63b316f76ea048223af61a0822077d11c0b9e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916715"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150412"
 ---
 # <a name="flag-markers"></a>标志标记
 标志标记表示某一瞬间在应用中发生的事。 标志可以表示许多应用程序事件。 例如，标志可以显示特定工作项的计划时间或引发异常的时间。 诸如任务并行库等运行时也可以生成标志。

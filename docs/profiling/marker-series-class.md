@@ -11,14 +11,15 @@ ms.assetid: b8445ed0-c512-4f92-b6b4-3d05c044f939
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4df579ff4eb43dfca4c386716c49f12dae04e9fa
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: f02c554c9df8a71fd6ae8b7a045d1ae4e3cc0917
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223610"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150048"
 ---
 # <a name="marker_series-class"></a>marker_series 类
 表示由单个提供程序生成的一系列事件通道。

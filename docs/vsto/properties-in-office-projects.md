@@ -1,6 +1,6 @@
 ---
 title: Office 项目中的属性
-description: 了解可通过属性窗口在 Visual Studio 中使用 Office 项目的属性。
+description: 了解可 Office 用于 Visual Studio 通过属性窗口的项目的属性。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 5f7a2ab04e1926a53c3d3aa05023103206c6aa01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b26826769c86bc23064f9475df595a10abd47050
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155585"
 ---
 # <a name="properties-in-office-projects"></a>Office 项目中的属性
   有几个重要属性可用于 Visual Studio 中的 Office 项目。 可在 **“属性”** 窗口中访问这些属性。
@@ -33,7 +34,7 @@ ms.locfileid: "99971760"
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
 ## <a name="namespace-for-host-item"></a>主机项的命名空间
- 使用 " **主机项的命名空间** " 属性可以更改主机项类的命名空间 (例如， `ThisAddIn` `ThisWorkbook` `ThisDocument` 在 Visual c # 项目中) 的、或类。 选择文档级项目中的 "文档" 节点时，此属性将出现在 " **属性** " 窗口中 (例如 *ExcelWorkbook1.xlsx* 或 *WordDocument1.docx*) 或 VSTO 外接程序项目中的应用程序节点 (例如 **)** 中的 Excel 或 Word 解决方案资源管理器等。
+ 使用 " **主机项的命名空间** " 属性可以更改主机项类的命名空间 (例如， `ThisAddIn` `ThisWorkbook` `ThisDocument` 在 Visual c # 项目中) 的、或类。 选择文档级项目中的文档节点时，此属性将出现在 "**属性**" 窗口中 (例如 *ExcelWorkbook1.xlsx* 或 *WordDocument1.docx*) 或 VSTO 外接程序项目中的应用程序节点 (例如 Excel 或 **)** 中的 Word 解决方案资源管理器。
 
  创建 Visual C# Office 项目时，将根据项目名称为主机项指定命名空间。 建议使用 **“主机项的命名空间”** 属性来更改命名空间，而不要直接编辑代码文件。 使用此属性时，将在生成的（隐藏）代码文件中和可见代码文件中更改命名空间。
 
@@ -53,7 +54,7 @@ ms.locfileid: "99971760"
 
  使用 **“属性”** 窗口中的 **“Value2”** 属性将 <xref:Microsoft.Office.Tools.Excel.NamedRange.Value2%2A> 的 <xref:Microsoft.Office.Tools.Excel.NamedRange> 属性绑定到数据源中的字段。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [Office 项目模板概述](../vsto/office-project-templates-overview.md)
 - [Office 项目中的事件](../vsto/events-in-office-projects.md)

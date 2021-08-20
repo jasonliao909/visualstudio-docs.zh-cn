@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式将文件附加到 Outlook 电子邮件项
-description: 了解如何将文件附加到 Microsoft Office Outlook 项目。 此示例将文件附加到新的邮件项，并将其发送给 Armando Pinto。
+title: 如何：以编程方式将文件附加到Outlook电子邮件项
+description: 了解如何将文件附加到Microsoft Office Outlook项。 此示例将文件附加到新的邮件项，并将其发送到 Armando Pinto。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -16,17 +16,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: f3e1f54efea0295a5fa1dc4b852ddc60820880ae
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: 69712cd93e03f8dc18877113e1174d45adb39290
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155936"
 ---
-# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以编程方式将文件附加到 Outlook 电子邮件项
-  此示例将文件附加到新的邮件项，并将其发送给 Armando Pinto。 该示例假定名为 Armando Pinto 的人员作为接收方存在。
+# <a name="how-to-programmatically-attach-files-to-outlook-email-items"></a>如何：以编程方式将文件附加到Outlook电子邮件项
+  此示例将文件附加到新的邮件项，并将其发送到 Armando Pinto。 该示例假定名为 Armando Pinto 的人作为收件人存在。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -37,5 +38,5 @@ ms.locfileid: "107828249"
 ## <a name="see-also"></a>请参阅
 - [使用邮件项](../vsto/working-with-mail-items.md)
 - [如何：以编程方式发送电子邮件](../vsto/how-to-programmatically-send-e-mail-programmatically.md)
-- [如何：以编程方式保存 Outlook 电子邮件项的附件](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
+- [如何：以编程方式从电子邮件Outlook附件](../vsto/how-to-programmatically-save-attachments-from-outlook-e-mail-items.md)
 - [如何：以编程方式创建电子邮件项](../vsto/how-to-programmatically-create-an-e-mail-item.md)

@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b5a86f600f9145742f6447af54fccb10dbc302a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ef8fc7ef3de032d4c4fba25e0e3b64a47b76ac1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931768"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156625"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 
@@ -161,10 +162,10 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 
 除[标准 REPL 命令](python-interactive-repl-in-visual-studio.md#meta-commands)外，调试交互窗口还支持特殊元命令：
 
-| 命令 | 自变量 | 描述 |
+| 命令 | 自变量 | 说明 |
 | --- | --- | --- |
 | `$continue`, `$cont`, `$c` | 从当前语句开始运行程序。 |
-| `$down`，`$d` | 在堆栈跟踪中将当前帧下移一级。 |
+| `$down`, `$d` | 在堆栈跟踪中将当前帧下移一级。 |
 | `$frame` | | 显示当前的帧 ID。
 | `$frame` | 帧 ID | 将当前帧切换为指定帧 ID。
 | `$load` | 从文件加载命令并执行，直到完成 |
@@ -177,7 +178,7 @@ Python 调试交互窗口（“调试” > “窗口” > “Python 调试交互
 | `$thread` | | 显示当前的线程 ID。 |
 | `$thread` | 线程 ID | 将当前线程切换为指定线程 ID。 |
 | `$threads` | | 列出当前正在调试的线程。 |
-| `$up`，`$u` | | 在堆栈跟踪中将当前帧上移一级。 |
+| `$up`, `$u` | | 在堆栈跟踪中将当前帧上移一级。 |
 | `$where`, `$w`, `$bt` | 列出当前线程的帧。 |
 
 请注意，标准调试器窗口（如进程、线程和调用堆栈）不与调试交互窗口同步   。 更改调试交互窗口中的活动进程、线程或帧不会影响其他调试器窗口。 同样，更改其他调试器窗口中的活动进程、线程或帧也不会影响调试交互窗口。
