@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 8530cb857310b20b8bcc83a654232df65d703fa23c61ee77913bf25f2f28740f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e31f3d39e5a05a0d2ea22b1bdc520682c05d6eef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321228"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117873"
 ---
 # <a name="migrating-a-legacy-language-service"></a>迁移旧版语言服务
 您可以通过更新项目并将 source.extension.vsixmanifest 文件添加到项目中，将旧版语言服务迁移到 Visual Studio 的更高版本。 语言服务本身将继续像以前一样工作，因为 Visual Studio 编辑器会改编它。
@@ -110,5 +110,5 @@ ms.locfileid: "121321228"
 
 12. 开始调试。 Visual Studio 打开的第二个实例。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)

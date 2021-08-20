@@ -8,14 +8,15 @@ ms.assetid: fd0a86b9-015d-408e-aa58-59a0a97826ac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aee937b382e3fa4731516c05acf46276d3059e8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 759020b393568147bc4d74273b2c302ae0762e47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934541"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161097"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#、Visual Basic)
 

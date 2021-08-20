@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: e92d1ca55d15979d7e2e8c91cda18983fcec6bebed7f6a26b5902f8f5650af1a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5c4f56242e0db4fbd0cf0938ee93fc9675dd7d6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121342617"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104399"
 ---
 # <a name="idebugarrayobject"></a>IDebugArrayObject
 > [!IMPORTANT]
@@ -42,7 +42,7 @@ IDebugArrayObject : IDebugObject
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  除了接口上的方法之外 `IDebugObject` ，还会在接口上实现以下方法 `IDebugArrayObject` 。
 
-|方法|描述|
+|方法|说明|
 |------------|-----------------|
 |[GetCount](../../../extensibility/debugger/reference/idebugarrayobject-getcount.md)|获取数组中元素的计数。|
 |[GetElement](../../../extensibility/debugger/reference/idebugarrayobject-getelement.md)|获取数组的元素。|

@@ -1,7 +1,7 @@
 ---
 title: “本机最少量规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的 "本机最低规则" 规则集。 请参阅针对安全、可靠性和本机代码中的其他关键问题的规则说明。
+description: 了解中本机最低规则规则集Visual Studio。 请参阅本机代码中的安全性、稳定性和其他关键问题的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: 2d898bc4-fba5-472e-8f09-b0c6b511c5a3
@@ -11,18 +11,18 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: de4d23633de1c511e75d55b41e7b5f7f0d2568f187619227c4dd6479232783ab
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 844e69e990d3abc9398d32f7d969572ff0a0db66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121348567"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114012"
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
 
-Microsoft 本机最小规则重点关注本机代码中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
+Microsoft 本机最低规则侧重于本机代码中最重要的问题，包括潜在的安全漏洞和应用程序崩溃。
 
-在您为本机项目创建的任何自定义规则集中包含此规则集。
+在为本机项目创建的任何自定义规则集中包括此规则集。
 
 |规则|描述|
 |----------|-----------------|

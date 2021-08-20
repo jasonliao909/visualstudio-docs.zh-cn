@@ -38,14 +38,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b0d55daba4dee07454a31fcb6fc5fa210e8bcc34
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: b6b086ece516a350963f03268064a526ed566dbc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107825051"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130736"
 ---
 # <a name="content-controls"></a>内容控件
   借助内容控件，可设计出具有以下功能的文档和模板：
@@ -58,7 +59,7 @@ ms.locfileid: "107825051"
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-  ![视频链接](../vsto/media/playvideo.gif "链接到视频") 有关相关的视频演示，请参阅 [使用 Office system (3.0) 的 Visual Studio Tools 将数据绑定到 Word 2007 内容控件 ](/previous-versions/office/developer/office-2007/bb967663(v=office.12))。
+  ![视频链接](../vsto/media/playvideo.gif "链接到视频")有关相关的视频演示，请参阅[将数据绑定到使用 Office 系统 Visual Studio Tools (3.0) 的 Word 2007 内容控件](/previous-versions/office/developer/office-2007/bb967663(v=office.12))。
 
 ## <a name="overview-of-content-controls"></a>内容控件概述
  内容控件提供了已针对用户输入和打印进行优化的 UI。 将内容控件添加到文档时，该控件通过边框、标题以及能够为用户提供说明的临时文本进行识别。 打印版本的文档中不会出现控件的边框和标题。
@@ -74,7 +75,7 @@ ms.locfileid: "107825051"
   在文档级项目中，可以在设计时或运行时向文档中添加内容控件。 在 VSTO 外接程序项目中，可以在运行时向任何打开的文档中添加内容控件。 有关详细信息，请参阅 [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)。
 
 > [!NOTE]
-> 只能在以 Open XML 格式保存的文档中使用内容控件。 不能使用保存在 Word 97-2003 *文档 ()* 格式的文档中的内容控件。
+> 只能在以 Open XML 格式保存的文档中使用内容控件。 不能使用保存在 Word 97-2003 文档 (*.doc*) 格式的文档中的内容控件。
 
 ## <a name="types-of-content-controls"></a>内容控件的类型
  有九种不同类型的内容控件可添加到文档中。 大多数内容控件在 <xref:Microsoft.Office.Tools.Word> 命名空间内都具有对应的类型。 还可以使用通用 <xref:Microsoft.Office.Tools.Word.ContentControl> 以表示任一可用的内容控件。 有关演示如何使用每个可用内容控件的演练，请参阅 [演练：使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)。
@@ -96,7 +97,7 @@ ms.locfileid: "107825051"
 ### <a name="drop-down-list"></a>下拉列表
  下拉列表显示了用户可以选择的项目列表。 和组合框不同的是，下拉列表不允许用户添加或编辑项。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 类型。
 
-### <a name="group"></a>Group
+### <a name="group"></a>组
  分组控件定义了文档中用户无法编辑或删除的受保护区域。 分组控件可以包含任何文档项，例如文本、表格、图形和其他内容控件。 有关详细信息，请参阅 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 类型。
 
 ### <a name="picture"></a>图片
@@ -127,21 +128,21 @@ ms.locfileid: "107825051"
 |在内容控件由于恢复或撤销操作而被添加到文档之后，运行代码。|处理控件的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Added> 事件。|
 |在正要从文档中删除内容控件之前，运行代码。|处理控件的 <xref:Microsoft.Office.Tools.Word.ContentControlBase.Deleting> 事件。|
 
-## <a name="protect-parts-of-documents-by-using-content-controls"></a><a name="Protection"></a> 使用内容控件保护文档的某些部分
+## <a name="protect-parts-of-documents-by-using-content-controls"></a><a name="Protection"></a> 使用内容控件保护文档的各个部分
  当保护文档的某一部分时，将阻止用户更改或删除文档该部分中的内容。 有以下几种可使用内容控件保护文档各部分的方式。
 
  如果要保护的区域位于内容控件中，则可以使用内容控件的属性来阻止用户编辑或删除控件：
 
-- **LockContents** 属性可防止用户编辑内容。
+- **LockContents** 属性可阻止用户编辑内容。
 
-- **LockContentControl** 属性阻止用户删除控件。
+- **LockContentControl** 属性可阻止用户删除控件。
 
   如果要保护的区域不在内容控件中，或者要保护的区域中包含内容控件和其他类型的内容，则可以将整个区域置于 <xref:Microsoft.Office.Tools.Word.GroupContentControl> 中。 与其他内容控件不同，<xref:Microsoft.Office.Tools.Word.GroupContentControl> 不提供任何对用户可见的 UI。 其唯一的目的是定义用户无法编辑的区域。
 
 > [!NOTE]
-> 如果创建包含嵌入式内容控件的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则不会自动保护嵌入的内容控件。 必须使用每个嵌入控件的 **LockContents** 属性来阻止用户编辑其内容。
+> 如果创建包含嵌入式内容控件的 <xref:Microsoft.Office.Tools.Word.GroupContentControl>，则不会自动保护嵌入的内容控件。 必须使用每个嵌入 **控件的 LockContents** 属性来防止用户编辑其内容。
 
- 有关如何使用内容控件来保护文档的各个部分的详细信息，请参阅 [如何：使用内容控件保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
+ 若要详细了解如何使用内容控件保护文档的某些部分，请参阅如何：使用内容控件 [保护文档的某些部分](../vsto/how-to-protect-parts-of-documents-by-using-content-controls.md)。
 
 ## <a name="bind-data-to-content-controls"></a><a name="DataBinding"></a> 将数据绑定到内容控件
  可通过将内容控件绑定到数据源，来显示文档中的数据。 数据源更新时，内容控件会反映出更改。 还可以将更改保存回数据源。
@@ -150,16 +151,16 @@ ms.locfileid: "107825051"
 
 - 可以使用与 Windows 窗体相同的数据绑定模型，将内容控件绑定到数据库字段或托管对象。
 
-- 你可以将内容控件绑定到 XML 部分中的元素 (也称为嵌入文档中的 *自定义 xml 部件*) 。
+- 可以将内容控件绑定到 XML 部件中的元素 (文档内) 的自定义 *XML* 部件。
 
-  有关将 Office 解决方案中的主机控件绑定到数据的概述，请参阅将 [数据绑定到 office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
+  有关将数据绑定到数据的解决方案Office宿主控件的概述，请参阅将数据绑定到 Office[解决方案 中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
 
 ### <a name="use-the-windows-forms-data-binding-model"></a>使用 Windows 窗体数据绑定模型
- 大多数内容控件都支持 Windows 窗体使用的简单数据绑定模型。 简单数据绑定意味着将控件绑定到单个数据元素，例如数据表中某一列的值。 有关详细信息，请参阅 [数据绑定和 Windows 窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)。
+ 大多数内容控件都支持 Windows 窗体使用的简单数据绑定模型。 简单数据绑定意味着将控件绑定到单个数据元素，例如数据表中某一列的值。 有关详细信息，请参阅数据[绑定和Windows窗体](/dotnet/framework/winforms/data-binding-and-windows-forms)。
 
- 在文档级项目中，您可以使用中的 " **数据源** " 窗口将数据绑定到内容控件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关如何将数据绑定内容控件添加到文档的详细信息，请参阅 [如何：使用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md) 和 [如何：用对象中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-objects.md)。
+ 在文档级项目中，可以使用 中的"数据源"窗口 **将数据绑定到内容** 控件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 若要详细了解如何将数据绑定内容控件添加到文档，请参阅 [如何：](../vsto/how-to-populate-documents-with-data-from-a-database.md) 使用数据库中的数据填充文档和 [如何：使用](../vsto/how-to-populate-documents-with-data-from-objects.md)对象的数据填充文档。
 
- 下表列出了可以绑定到 " **数据源** " 窗口中的每个数据类型的内容控件。
+ 下表列出了可绑定到"数据源"窗口中每种数据类型 **的内容** 控件。
 
 |数据类型|默认内容控件|可以绑定到此数据类型的其他内容控件|
 |---------------|-----------------------------|----------------------------------------------------------------|
@@ -167,17 +168,17 @@ ms.locfileid: "107825051"
 |<xref:System.DateTime>|<xref:Microsoft.Office.Tools.Word.DatePickerContentControl>|<xref:Microsoft.Office.Tools.Word.BuildingBlockGalleryContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.PlainTextContentControl><br /><br /> <xref:Microsoft.Office.Tools.Word.RichTextContentControl>|
 |<xref:System.Drawing.Image><br /><br /> <xref:System.Byte> 数组|<xref:Microsoft.Office.Tools.Word.PictureContentControl>|无|
 
- 在文档级和 VSTO 外接程序项目中，可以使用控件中 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 属性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以编程方式将内容控件绑定到数据源。 如果执行此操作，请将字符串 **文本** 传入方法的 *propertyName* 参数 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 。 **Text** 属性是内容控件的默认数据绑定属性。
+ 在文档级和 VSTO 外接程序项目中，可以使用控件中 <xref:System.Windows.Forms.IBindableComponent.DataBindings%2A> 属性的 <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 方法，以编程方式将内容控件绑定到数据源。 如果这样做，将字符串 **Text** 传递到 *方法的 propertyName* <xref:System.Windows.Forms.ControlBindingsCollection.Add%2A> 参数。 **Text** 属性是内容控件的默认数据绑定属性。
 
- 内容控件还支持双向数据绑定，在这种绑定形式下，控件中的更改会更新到数据源。 有关详细信息，请参阅 [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
+ 内容控件还支持双向数据绑定，在这种绑定形式下，控件中的更改会更新到数据源。 有关详细信息，请参阅 [如何：使用主机控件 中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)。
 
 > [!NOTE]
 > 内容控件不支持复杂数据绑定。 如果使用 Windows 窗体数据模型将 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 绑定到数据源，用户在单击控件时只能看到单个值。 如果希望将这些控件绑定到可供用户选择的一组数据值，则可以将这些控件绑定到自定义 XML 部件中的元素。
 
 ### <a name="bind-content-controls-to-custom-xml-parts"></a>将内容控件绑定到自定义 XML 部件
- 可以将某些内容控件绑定到文档中内嵌的自定义 XML 部件的元素。 有关自定义 XML 部件的详细信息，请参阅 [自定义 xml 部件概述](../vsto/custom-xml-parts-overview.md)。
+ 可以将某些内容控件绑定到文档中内嵌的自定义 XML 部件的元素。 有关自定义 XML 部件的信息，请参阅 [自定义 XML 部件概述](../vsto/custom-xml-parts-overview.md)。
 
- 若要将内容控件绑定到自定义 XML 部件中的元素，请使用控件的 **XMLMapping** 属性。 以下代码示例演示了如何将 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 绑定到 `Product` 节点下的 `Price` 元素，其中该节点位于已添加到文档的自定义 XML 部分中。
+ 若要将内容控件绑定到自定义 XML 部件中的元素，请使用 控件的 **XMLMapping** 属性。 以下代码示例演示了如何将 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 绑定到 `Product` 节点下的 `Price` 元素，其中该节点位于已添加到文档的自定义 XML 部分中。
 
 ```vb
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
@@ -187,7 +188,7 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price")
 plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, null);
 ```
 
- 有关演示如何更详细地将内容控件绑定到自定义 XML 部件的演练，请参阅 [演练：将内容控件绑定到自定义 xml 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
+ 有关演示如何将内容控件绑定到自定义 XML 部件的演练，请参阅 [演练：](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)将内容控件绑定到自定义 XML 部件。
 
  将内容控件绑定到自定义 XML 部件时，会自动启用双向数据绑定。 当用户编辑控件中的文本时，相应的 XML 元素会自动更新。 同样，如果自定义 XML 部件中的元素值发生更改，则绑定到 XML 元素的内容控件将显示新的数据。
 
@@ -216,30 +217,30 @@ plainTextContentControl1.XMLMapping.SetMapping("/Product/Price", String.Empty, n
 ## <a name="limitations-of-content-controls"></a>内容控件的限制
  在 Office 项目中使用内容控件时，请注意以下限制。
 
-### <a name="behavior-differences-between-design-time-and-runtime"></a>设计时和运行时的行为差异
+### <a name="behavior-differences-between-design-time-and-runtime"></a>设计时和运行时之间的行为差异
  Microsoft Office Word 在运行时对内容控件施加的许多限制条件在设计时并不会执行。 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中设计文档级解决方案时，务必仅通过在运行时受支持的方式修改内容控件。
 
  如果你在设计时修改内容控件的方式是该控件在运行时并不支持的方式，则 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 设计器将不会提醒你注意不受支持的更改。 然而，当你调试或运行项目时，或者在保存并重新打开该项目时，Word 将显示一条错误消息并请求权限以修复文档。 修复文档时，Word 会删除控件中所有不受支持的内容和格式。
 
  例如在设计时，Word 不会阻止你将表格添加到 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl>。 然而，因为 <xref:Microsoft.Office.Tools.Word.PlainTextContentControl> 对象在运行时不能包含表格，所以在打开文档时 Word 会显示错误消息。
 
- 另请注意，定义内容控件行为的很多属性在设计时不产生任何影响。 例如，如果在设计时将内容控件的 **LockContents** 属性设置为 **True** ，则仍可在设计器中编辑控件中的文本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 此属性只会在运行时阻止用户编辑控件。
+ 另请注意，定义内容控件行为的很多属性在设计时不产生任何影响。 例如，如果在设计时将内容控件的 **LockContents** 属性设置为 **True，** 则仍然可以在设计器中编辑控件 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中的文本。 此属性只会在运行时阻止用户编辑控件。
 
 ### <a name="event-limitations"></a>事件限制
  内容控件不提供当用户更改控件中的文本或其他项时引发的事件。 例如，当用户选择 <xref:Microsoft.Office.Tools.Word.DropDownListContentControl> 或 <xref:Microsoft.Office.Tools.Word.ComboBoxContentControl> 中的不同项时，不会引发任何事件。
 
- 若要确定用户何时编辑内容控件的内容，可以将该控件绑定到自定义 XML 部件，然后处理 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 事件。 当用户更改已绑定到自定义 XML 部件的控件的内容时，引发此事件。 有关演示如何将内容控件绑定到自定义 XML 部件的演练，请参阅 [演练：将内容控件绑定到自定义 xml 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
+ 若要确定用户何时编辑内容控件的内容，可以将该控件绑定到自定义 XML 部件，然后处理 <xref:Microsoft.Office.Tools.Word.ContentControlBase.StoreUpdating> 事件。 当用户更改已绑定到自定义 XML 部件的控件的内容时，引发此事件。 有关演示如何将内容控件绑定到自定义 XML 部件的演练，请参阅演练：将内容控件绑定到自定义 [XML 部件](../vsto/walkthrough-binding-content-controls-to-custom-xml-parts.md)。
 
 ### <a name="check-box-content-controls-in-word-projects"></a><a name="checkbox"></a> Word 项目中的复选框内容控件
- Word 2010 引入了一种表示复选框的新型内容控件。 但是， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 并不提供要在 Office 项目中使用的相应 CheckBoxContentControl 类型。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 项目中创建复选框内容控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法创建 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，然后将 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值传递到该方法，以指定复选框内容控件。 下面的代码示例演示如何执行此操作。
+ Word 2010 引入了一种表示复选框的新型内容控件。 但是， [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 不提供相应的 CheckBoxContentControl 类型，因此无法用于Office项目。 若要在 [!INCLUDE[Word_15_short](../vsto/includes/word-15-short-md.md)] 或 Word 2010 项目中创建复选框内容控件，请使用 <xref:Microsoft.Office.Tools.Word.ControlCollection.AddContentControl%2A> 方法创建 <xref:Microsoft.Office.Tools.Word.ContentControl> 对象，然后将 <xref:Microsoft.Office.Interop.Word.WdContentControlType.wdContentControlCheckBox> 值传递到该方法，以指定复选框内容控件。 下面的代码示例演示如何执行此操作。
 
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_contentcontrolreference/checkbox.vb" id="Snippet800":::
  :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordcontentcontrolreference/checkbox.cs" id="Snippet800":::
 
-## <a name="see-also"></a>另请参阅
-- [使用扩展对象实现 Word 自动化](../vsto/automating-word-by-using-extended-objects.md)
+## <a name="see-also"></a>请参阅
+- [使用扩展对象自动执行 Word](../vsto/automating-word-by-using-extended-objects.md)
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [演练：使用内容控件创建模板](../vsto/walkthrough-creating-a-template-by-using-content-controls.md)
-- [Office 解决方案中的数据](../vsto/data-in-office-solutions.md)
-- [将数据绑定到 Office 解决方案中的控件](../vsto/binding-data-to-controls-in-office-solutions.md)
-- [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
+- [解决方案Office数据](../vsto/data-in-office-solutions.md)
+- [将数据绑定到解决方案中的Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)
+- [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

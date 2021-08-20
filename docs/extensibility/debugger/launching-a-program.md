@@ -11,14 +11,15 @@ ms.assetid: 6857e9c6-e44a-468a-afa4-f7c4a0b77844
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: a21036d3a9661306d1efff5a66ae47f8f7404209
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ef92dc5b0884d0415e5b7b5245315929cf144258
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094713"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160616"
 ---
 # <a name="launch-a-program"></a>启动程序
 要调试程序的用户可以按 **F5** 从 IDE 中运行调试器。 这将开始一系列事件，这些事件最终会导致 IDE 连接到调试引擎， (DE) ，然后将其连接或附加到程序，如下所示：

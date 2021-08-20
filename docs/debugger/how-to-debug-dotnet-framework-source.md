@@ -10,14 +10,15 @@ ms.assetid: fc12e472-ac6a-4e77-8e22-a769e13a03b8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2e762b28cfaf239e5edb38b1be3981496e56d72d
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 5340cacf63f2371134641cfa09f873528e11fd94
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102154985"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161201"
 ---
 # <a name="how-to-debug-net-framework-source"></a>如何：调试 .NET Framework 源代码
 

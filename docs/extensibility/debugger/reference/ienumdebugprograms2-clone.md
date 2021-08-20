@@ -1,6 +1,6 @@
 ---
-description: 将当前程序枚举的副本作为单独的 对象返回。
-title: IEnumDebugPrograms2：：Clone |Microsoft Docs
+description: 以单独的对象的形式返回当前程序枚举的副本。
+title: IEnumDebugPrograms2：： Clone |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 29b7c2789e9d244f5255f975b11262e2852000b4e18a62bc153f3aa5800777c6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8f2903308d65893ee2c8838174c9086fc62518c5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415190"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144842"
 ---
 # <a name="ienumdebugprograms2clone"></a>IEnumDebugPrograms2::Clone
-将当前枚举的副本作为单独的 对象返回。
+以单独的对象的形式返回当前枚举的副本。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int Clone(
 
 ## <a name="parameters"></a>参数
 `ppEnum`\
-[out]以单独的 对象返回此枚举的副本。
+弄以单独的对象的形式返回此枚举的副本。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 调用此方法时，枚举的副本的状态与原始 副本相同。 但是，副本的 和原始 状态是分开的，可以单独更改。
+ 调用此方法时，该枚举的副本具有与原始的相同的状态。 但是，副本的和原始状态是独立的，可以单独更改。
 
 ## <a name="see-also"></a>请参阅
 - [IEnumDebugPrograms2](../../../extensibility/debugger/reference/ienumdebugprograms2.md)

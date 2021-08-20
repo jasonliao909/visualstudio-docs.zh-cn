@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68bfc7654824285e6fe99d51e17dbf9f73e67c914786b3a03459cb9506b0b207
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 07c1739067de0ebb8a0f260db506a9a1cc48e380
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417244"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088791"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 此方法获取字段的类型。

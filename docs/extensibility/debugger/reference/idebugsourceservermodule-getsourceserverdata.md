@@ -9,17 +9,18 @@ ms.assetid: f15d86aa-1bd9-4b16-a64a-21b01c27db2e
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 35e6f73d74006d4db4135f9202968896a6023cf5
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a897ee524cebb836b3780289600f0c5b665f71a8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105071176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118419"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 检索源服务器信息的数组。
@@ -75,5 +76,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

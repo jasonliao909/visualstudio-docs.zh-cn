@@ -1,6 +1,6 @@
 ---
-description: 继续执行进程。
-title: IDebugEngineLaunch2：： ResumeProcess |Microsoft Docs
+description: 恢复进程执行。
+title: IDebugEngineLaunch2：：ResumeProcess |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 61ccc14e-75c6-44e7-aae4-57a9aac52089
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 05c53be36884f60585025cf73da8301b9e51df14
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: ae6abb2817a59602205c765a3934acb4e5b0813e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122111016"
 ---
 # <a name="idebugenginelaunch2resumeprocess"></a>IDebugEngineLaunch2::ResumeProcess
-继续执行进程。
+恢复进程执行。
 
 ## <a name="syntax"></a>语法
 
@@ -42,15 +43,15 @@ int ResumeProcess (
 
 ## <a name="parameters"></a>参数
 `pProcess`\
-中一个 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象，该对象表示要恢复的进程。
+[in]表示 [要恢复的进程的 IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 在通过调用 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 方法启动进程后，将调用此方法。
+ 在通过调用 [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md) 方法启动进程后调用此方法。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugEngineLaunch2](../../../extensibility/debugger/reference/idebugenginelaunch2.md)
 - [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md)
 - [LaunchSuspended](../../../extensibility/debugger/reference/idebugenginelaunch2-launchsuspended.md)

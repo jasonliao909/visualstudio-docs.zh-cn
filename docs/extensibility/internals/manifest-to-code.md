@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5b8cc87ccc4fd6118a8c04fcfb1786aab4012f4a3a9a6805e272c397f8d9cd75
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54bf0a3161fda86699b2bec07034b8732a099168
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337898"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094784"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code 工具是一种控制台应用程序，它使用 Visual Studio 映像服务的 imagemanifest 文件，并生成一个包装器文件，用于引用 c + +、c #、VB 或. .vsct 文件中用于 Visual Studio 扩展的图像清单值。 此工具将生成包装文件，该文件可用于直接从 Visual Studio 映像服务请求图像，或用于在代码未处理任何自己的 UI 和呈现时通过 api 传递清单值。

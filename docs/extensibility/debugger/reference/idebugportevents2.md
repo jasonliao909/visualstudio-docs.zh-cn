@@ -11,14 +11,15 @@ ms.assetid: 2c017094-3ba2-4067-83f9-147df1d96bce
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: d8e1ccbb2726fb0f90fae2d31a4b07daad9bae91
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 571c82cbb84686dd863e431c9956aa077b16f976
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105065380"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132972"
 ---
 # <a name="idebugportevents2"></a>IDebugPortEvents2
 此接口在特定端口上通知侦听器 (通常是会话调试管理器 [SDM] 或调试引擎) 进程和程序创建和销毁。 此信息可用于显示在端口上运行的进程和程序的实时视图。
@@ -54,6 +55,6 @@ IDebugPortEvents2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

@@ -13,15 +13,16 @@ ms.assetid: 778bc105-7643-46c4-a338-f3620e31125a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a501a3f815d48630afe1a849e91c1fdb52c979fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 828f88219883a9e6c2db145e7ad3b8c703fd165e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156729"
 ---
 # <a name="vsperfcmd"></a>VSPerfCmd
 VSPerfCmd.exe 工具用于启动和停止性能数据收集。 它使用以下语法：

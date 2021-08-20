@@ -1,6 +1,6 @@
 ---
-description: 创建绑定到此事件的断点的枚举器。
-title: IDebugBreakpointBoundEvent2：：EnumBoundBreakpoints |Microsoft Docs
+description: 创建在此事件上绑定的断点的枚举器。
+title: IDebugBreakpointBoundEvent2：： EnumBoundBreakpoints |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 68358ca3153ddff04e64ecf7e199616ce5ed8f8caac851c0f3683aa53aa37ead
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ff02f2ac81f6dc21999b9b327608bbe47a31b9dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308085"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122064729"
 ---
 # <a name="idebugbreakpointboundevent2enumboundbreakpoints"></a>IDebugBreakpointBoundEvent2::EnumBoundBreakpoints
-创建绑定到此事件的断点的枚举器。
+创建在此事件上绑定的断点的枚举器。
 
 ## <a name="syntax"></a>语法
 
@@ -43,13 +43,13 @@ int EnumBoundBreakpoints(
 
 ## <a name="parameters"></a>参数
 `ppEnum`\
-[out]返回一个 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象枚举从此事件绑定的所有断点。
+弄返回一个 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象枚举此事件绑定的所有断点。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK`。 如果没有 `S_FALSE` 绑定断点，则返回 ;否则返回错误代码。
+如果成功，则返回 `S_OK`。 `S_FALSE`如果没有绑定断点，则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-绑定断点列表适用于绑定到此事件的断点，并且可能不是从挂起断点绑定的整个断点列表。 若要获取绑定到挂起断点的所有断点的列表，请调用 [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 方法获取关联的 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 对象，然后调用 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 方法获取 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，该对象包含挂起断点的所有绑定断点。
+绑定断点的列表适用于绑定到此事件的断点，可能不是从挂起断点绑定的断点的完整列表。 若要获取绑定到挂起断点的所有断点的列表，请调用 [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md) 方法获取关联的 [IDebugPendingBreakpoint2](../../../extensibility/debugger/reference/idebugpendingbreakpoint2.md) 对象，然后调用 [EnumBoundBreakpoints](../../../extensibility/debugger/reference/idebugpendingbreakpoint2-enumboundbreakpoints.md) 方法来获取 [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md) 对象，其中包含挂起断点的所有绑定断点。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)接口的 **CBreakpointSetDebugEventBase** 对象实现此方法。
@@ -79,7 +79,7 @@ STDMETHODIMP CBreakpointSetDebugEventBase::EnumBoundBreakpoints(
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBreakpointBoundEvent2](../../../extensibility/debugger/reference/idebugbreakpointboundevent2.md)
 - [IEnumDebugBoundBreakpoints2](../../../extensibility/debugger/reference/ienumdebugboundbreakpoints2.md)
 - [GetPendingBreakpoint](../../../extensibility/debugger/reference/idebugbreakpointboundevent2-getpendingbreakpoint.md)

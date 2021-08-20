@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 19029364411df0fa086b6821f4a7107072845a4edafbf17a7904f08aef3c9871
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: aa657cb6b74a7415f9e90849c8e37ec26f8dbfc8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402085"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095837"
 ---
 # <a name="idebugthread2setnextstatement"></a>IDebugThread2::SetNextStatement
 将当前指令指针设置为给定的代码上下文。

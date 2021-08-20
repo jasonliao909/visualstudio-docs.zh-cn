@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 46834dea30f41ebf0eb8629fe4dde0525288e82d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 6e419f144b44076e1108988cf1123a6a87b410ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151179"
 ---
 # <a name="options-dialog-box-windows-forms-designer--data-ui-customization"></a>“选项”对话框：Windows 窗体设计器 > 自定义数据 UI
 

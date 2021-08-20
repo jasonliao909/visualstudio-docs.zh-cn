@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 0d578cf61a1201881aef74968ab33ffe97c5d4dd9b573c3ac97f5e89fa2a723c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: be01acb11c9f3314a12383acafce465bfad5603c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448463"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102826"
 ---
 # <a name="visual-studio-debugging-samples"></a>Visual Studio调试示例
 两个示例显示如何使用 扩展Visual Studio调试器 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] 。

@@ -1,7 +1,7 @@
 ---
 title: VBA 访问权限，用于创建/打开VSTO系统项目
 titleSuffix: ''
-description: 了解必须显式启用对 Office VBA 项目系统的访问权限，然后才能创建或打开 Visual Studio Tools for Office 系统项目。
+description: 了解必须先显式启用对 Office VBA 项目系统的访问权限，然后才能创建或打开 Visual Studio Tools for Office 系统项目。
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -20,16 +20,16 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: e76aa3b3035a3c713c07ef56f67de393b6411cbac7d69bced415581eb0e2bd3d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8c6e7d980301c0ad426c54e5f5838d64a11ca0bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121314727"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106375"
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 的访问，以创建或打开Visual Studio Tools系统Microsoft Office的虚拟机
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 的访问权限，以创建或打开 Visual Studio Tools 系统Microsoft Office应用程序
 
-必须先显式启用对 Visual Basic for Applications (中 Visual Basic for Applications (VBA) 项目系统的访问权限，然后才能为 Microsoft Office 系统项目创建Visual Studio Tools打开 Microsoft Office。
+必须先显式启用对 Microsoft Office 中 Visual Basic for Applications (VBA) 项目系统的访问，然后才能为 Visual Studio Tools 系统项目创建Microsoft Office应用程序。
 
  Microsoft Office项目需要访问 Microsoft Office Word 和 Microsoft Office Excel 中的 Visual Basic for Applications (VBA) 项目系统，即使这些项目不使用 Visual Basic for Applications。 Visual Basic 和 C# 项目中控件的设计时支持均需依赖 Visual Basic for Applications 项目系统。
 
@@ -42,7 +42,7 @@ ms.locfileid: "121314727"
 
  针对 Office 宏病毒的最佳保护是在"高"或"非常高"安全级别运行 Office，仅信任来自已验证已知源的宏，并随时使用安全修补程序和病毒扫描程序保持最新。
 
- 可以手动启用或禁用"信任 **访问Visual Basic Project** 选项。
+ 可以手动启用或禁用"**信任访问Visual Basic Project** 选项。
 
  如果看到 VBA 或 COM 错误，则可以修复 Office 的安装。
 
@@ -98,7 +98,7 @@ ms.locfileid: "121314727"
 
 1. 在控制面板，运行 **"添加或删除程序或****程序和功能"。**
 
-2. 在Office安装 **的程序"列表中选择"已安装"。**
+2. 在Office安装 **的程序"列表中选择"安装"。**
 
 3. 单击“更改”。
 

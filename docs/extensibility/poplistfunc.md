@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bdd7a8fea7725d9152036bbf0b23d351d62596692118c2ef7f904c5ec886e35b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: dbed07b0ae1e12e6b449e9fccf30e1a2ec27293b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121336715"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158510"
 ---
 # <a name="poplistfunc"></a>POPLISTFUNC
 此回调由 IDE 提供给 [SccPopulateList，](../extensibility/sccpopulatelist-function.md) 由源代码管理插件用来更新文件或目录的列表 (也提供给函数 `SccPopulateList`) 。
@@ -50,7 +50,7 @@ typedef BOOL (*POPLISTFUNC) (
 
 ## <a name="return-value"></a>返回值
 
-|值|描述|
+|值|说明|
 |-----------|-----------------|
 |`TRUE`|该插件可以继续调用此函数。|
 |`FALSE`|IDE 端存在问题， (内存不足的情况) 。 插件应停止操作。|
