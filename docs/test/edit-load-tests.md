@@ -11,12 +11,13 @@ ms.assetid: ba16ed02-137e-40bf-a4cb-45d87d922d37
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ad79be0850191cd2e7ab28aa7a30ff10d867b271
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 8269651b9cb5453f0ecd9c40b214b560b09570be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887869"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140019"
 ---
 # <a name="edit-load-tests"></a>编辑负载测试
 

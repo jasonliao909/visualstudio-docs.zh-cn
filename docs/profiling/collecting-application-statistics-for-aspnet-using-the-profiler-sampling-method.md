@@ -11,15 +11,16 @@ ms.assetid: f8383ab1-eb49-4d3f-8608-d8b4d51a81be
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 190e67b3471162f29273d56f3e1cbeee6d09e557
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37ab8f286f9c21c98899e94cd197473b50620675
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952819"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142359"
 ---
 # <a name="collect-statistics-for-aspnet-web-apps"></a>收集 ASP.NET Web 应用的统计信息
 

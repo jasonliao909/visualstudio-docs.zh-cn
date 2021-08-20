@@ -1,6 +1,6 @@
 ---
 title: 演练：在事务中保存数据
-description: 在此演练中，请参阅如何在事务中通过使用 Visual Studio 中的 System.Transactions 命名空间保存Visual Studio。
+description: 在此演练中，请参阅如何使用事务中的 System.Transactions 命名空间将数据保存在Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 09/08/2017
 ms.topic: how-to
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: 8b7b843e7cec3974a96c8af49912bc366bed714edb41440b72d2fabf99c010d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3cc1516eb083f6446a30adba8a0973878cd99654
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121346864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161897"
 ---
 # <a name="walkthrough-save-data-in-a-transaction"></a>演练：在事务中保存数据
 
@@ -35,11 +35,11 @@ ms.locfileid: "121346864"
 
 本演练使用 SQL Server Express LocalDB和 Northwind 示例数据库。
 
-1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express) **Visual Studio 安装程序。** 在 Visual Studio 安装程序中，SQL Server Express LocalDB **作为 .NET** 桌面开发工作负载的一部分安装，也可以作为单个组件安装。
+1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express)**Visual Studio 安装程序。** 在 Visual Studio 安装程序中，SQL Server Express LocalDB **作为 .NET** 桌面开发工作负载的一部分安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。  (SQL Server 对象资源管理器作为数据存储和处理工作负荷的一部分安装在Visual Studio 安装程序.) **展开SQL Server节点**。 右键单击实例LocalDB并选择"新建 **查询"。**
+    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。  (SQL Server 对象资源管理器作为数据存储和处理工作负荷的一部分安装在Visual Studio 安装程序.) 展开 **SQL Server节点。** 右键单击实例LocalDB并选择"新建 **查询"。**
 
        查询编辑器窗口随即打开。
 
@@ -172,7 +172,7 @@ ms.locfileid: "121346864"
 
 按 **F5** 运行该应用程序。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：使用事务保存数据](../data-tools/save-data-by-using-a-transaction.md)
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

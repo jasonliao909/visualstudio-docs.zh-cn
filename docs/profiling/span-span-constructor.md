@@ -11,14 +11,15 @@ ms.assetid: 8b5578aa-5e5c-4ac7-87c7-ce87c4246e2c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fdffdc59b31f5f04817536769d9a712484e6cdd7
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: a1f3a073caa56dba1bc680a1e2205a7be0448f44
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157275"
 ---
 # <a name="spanspan-constructor"></a>span::span 构造函数
 

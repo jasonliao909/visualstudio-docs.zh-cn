@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ec4af56afce3568577279fb1cefc09da0be22c974eb9acf1dd7d364e7c272d1
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a9745c3027ef9e6d86f831f4a1773c27268d90fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417517"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127371"
 ---
 # <a name="idebugcoreserver3diagnosewebdebuggingerror"></a>IDebugCoreServer3::DiagnoseWebDebuggingError
 尝试确定自动附加失败的原因。
@@ -43,16 +43,16 @@ int DiagnoseWebDebuggingError(
 
 ## <a name="parameters"></a>参数
 `pszUrl`\
-中当前未使用;应始终设置为 null 值。
+[in]当前未使用;应始终设置为 null 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。 下面是其他典型的返回代码：
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。 下面是其他典型的返回代码：
 
 |代码|说明|
 |----------|-----------------|
-|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|无法确定远程服务器启动调试失败的原因。|
-|`S_WEBDBG_DEBUG_VERB_BLOCKED`|无法在远程服务器上进行调试，可能是由于权限不足或没有启用调试谓词。|
-|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web 服务器已被锁定，并阻止调试谓词，这是启用调试所必需的。|
+|`S_WEBDBG_UNABLE_TO_DIAGNOSE`|无法确定远程服务器无法启动调试的原因。|
+|`S_WEBDBG_DEBUG_VERB_BLOCKED`|由于权限不足或未启用 DEBUG 谓词，无法在远程服务器上调试。|
+|`E_WEBDBG_DEBUG_VERB_BLOCKED`|Web 服务器已锁定，正在阻止 DEBUG 谓词，启用调试需要该谓词。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)

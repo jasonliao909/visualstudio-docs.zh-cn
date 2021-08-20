@@ -6,14 +6,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 78f847acaf67a61064e64b765d9c138ec2fe93a9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 567f23ea4997a9497b3ef2160f86b3a46beaf432
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959020"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150386"
 ---
 # <a name="gpu-usage"></a>GPU 使用情况
 

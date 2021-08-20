@@ -13,14 +13,15 @@ ms.assetid: 79929dfd-22c9-4cec-a0d0-a16f15b8f7e4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d4c3fdc30737a2266241e19ae40f840a41784cc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60a31056683c636d202b391ac9dbfba46a90121e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963284"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151725"
 ---
 # <a name="clean-devenvexe"></a>/Clean (devenv.exe)
 

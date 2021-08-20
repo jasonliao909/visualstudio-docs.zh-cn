@@ -1,6 +1,6 @@
 ---
 title: 演练：使用单选按钮更新文档中的图表
-description: 了解如何在 Microsoft Word 的文档级自定义项中使用单选按钮，以使用户可以选择在文档中选择图表样式。
+description: 了解如何使用文档级自定义项中的单选按钮Microsoft Word为用户提供选择文档上的图表样式的选项。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -14,14 +14,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 4d6689d82051ef5f8c887c19ec91cbb6d513b8b8
-ms.sourcegitcommit: 4b40aac584991cc2eb2186c3e4f4a7fcd522f607
+ms.openlocfilehash: d95ab38581945c61000b3cfcca26ed1ba3fd2c5d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/21/2021
-ms.locfileid: "107828197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155403"
 ---
 # <a name="walkthrough-update-a-chart-in-a-document-using-radio-buttons"></a>演练：使用单选按钮更新文档中的图表
   此演练演示如何使用 Microsoft Office Word 文档级自定义中的单选按钮，为用户提供在文档中选择图表样式的选项。
@@ -36,7 +37,7 @@ ms.locfileid: "107828197"
 
 - 在选择了某个选项时更改图表样式。
 
-  若要查看已完成示例的结果，请参阅 [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)中的 Word 控件示例。
+  若要将结果作为已完成的示例查看，请参阅本文中的 Word 控件示例Office[示例和演练](../vsto/office-development-samples-and-walkthroughs.md)。
 
   [!INCLUDE[note_settings_general](../sharepoint/includes/note-settings-general-md.md)]
 
@@ -52,90 +53,90 @@ ms.locfileid: "107828197"
 
 ### <a name="to-create-a-new-project"></a>创建新项目的步骤
 
-1. 创建一个名为 **"我的图表" 选项** 的 Word 文档项目。 在向导中，选择 " **创建新文档**"。 有关详细信息，请参阅 [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)。
+1. 创建一个名称为"我的图表选项"的 Word **文档项目**。 在向导中，选择 **"创建新文档"。** 有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 
-     Visual Studio 将在设计器中打开新的 Word 文档，并将 " **我的图表选项** " 项目添加到 **解决方案资源管理器**。
+     Visual Studio设计器中打开新的 Word 文档，并将"**我的** 图表选项"项目添加到 **解决方案资源管理器。**
 
-## <a name="add-a-chart-to-the-document"></a>向文档中添加图表
+## <a name="add-a-chart-to-the-document"></a>向文档添加图表
 
 ### <a name="to-add-a-chart"></a>添加图表
 
-1. 在 Visual Studio 设计器承载的 Word 文档中，单击功能区上的 " **插入** " 选项卡。
+1. 在托管在设计器中的 Word 文档中Visual Studio功能区上，单击"插入 **"** 选项卡。
 
-2. 在 " **文本** " 组中，单击 " **插入对象** " 下拉按钮，然后单击 " **对象**"。
+2. 在"**文本"** 组中，单击"**插入对象**"下拉按钮，然后单击"对象 **"。**
 
-     此时将打开 " **对象** " 对话框。
+     " **对象** "对话框随即打开。
 
-3. 在 **"新建" 选项卡** 上的 "**对象类型**" 列表中，选择 **Microsoft Graph 图表**，然后单击 **"确定"**。
+3. 在"**新建"选项卡上的**"对象类型"**列表中，选择****"Microsoft Graph图表"，** 然后单击"确定 **"。**
 
-     将在文档中的插入点处添加一个图表，并且 " **数据表** " 窗口将显示某些默认数据。
+     插入点处会向文档添加图表，此时会显示" **数据表** "窗口，其中显示了一些默认数据。
 
-4. 关闭 **"数据表** " 窗口以接受图表中的默认值，然后在文档内单击以将焦点移到图表之外。
+4. 关闭 **"数据表** "窗口以接受图表中的默认值，然后单击文档内部以将焦点从图表移开。
 
-5. 右键单击图表，然后单击 " **设置对象格式**"。
+5. 右键单击图表，然后单击"设置 **对象格式"。**
 
-6. 在 "**设置对象格式**" 对话框的 "**布局**" 选项卡上，选择 "**正方形**" 并单击 **"确定"**。
+6. 在"**格式对象**"对话框的"**布局**"选项卡上，选择"**正方形**"，然后单击"确定 **"。**
 
 ## <a name="add-a-user-control-to-the-project"></a>将用户控件添加到项目中
  文档上的单选按钮默认情况下不互相排斥。 通过将这些按钮添加到用户控件中，然后编写代码来控制选择，可使这些按钮正常工作。
 
 ### <a name="to-add-a-user-control"></a>要添加用户控件
 
-1. 在 **解决方案资源管理器** 中选择 "**我的图表选项**" 项目。
+1. 在 中选择 **"我的图表选项****"解决方案资源管理器。**
 
 2. 在 **“项目”** 菜单上，单击 **“添加新项”**。
 
-3. 在 " **添加新项** " 对话框中，单击 " **用户控件**"，将控件命名为 " **ChartOptions"，** 然后单击 " **添加**"。
+3. 在"**添加新项"对话框中**，单击"**用户控件"，** 将控件命名 **ChartOptions，然后单击**"添加 **"。**
 
 ### <a name="to-add-windows-form-controls-to-the-user-control"></a>向用户控件添加 Windows 窗体控件
 
-1. 如果用户控件在设计器中不可见，请在 **解决方案资源管理器** 中双击 " **ChartOptions** "。
+1. 如果用户控件在设计器中不可见，请在 中双击 **"ChartOptions"解决方案资源管理器。** 
 
-2. 从 "**工具箱**" 的 "**公共控件**" 选项卡中，将第一个 **单选按钮** 控件拖到用户控件，并更改以下属性。
+2. 从" **工具箱"的** "公共控件" **选项卡中，** 将第一个 **单** 选按钮控件拖到用户控件，并更改以下属性。
 
     |属性|值|
     |--------------|-----------|
     |**名称**|**columnChart**|
-    |**Text**|**柱形图**|
+    |**文本**|**柱形图**|
 
-3. 将第二个 **单选按钮** 添加到用户控件，并更改以下属性。
+3. 向用户控件 **添加** 第二个单选按钮，并更改以下属性。
 
     |属性|值|
     |--------------|-----------|
     |**名称**|**barChart**|
-    |**Text**|**条形图**|
+    |**文本**|**条形图**|
 
-4. 将第三个 **单选按钮** 添加到用户控件，并更改以下属性。
+4. 向用户控件 **添加** 第三个单选按钮，并更改以下属性。
 
     |属性|值|
     |--------------|-----------|
     |**名称**|**lineChart**|
-    |**Text**|**折线图**|
+    |**文本**|**线条图**|
 
-5. 将第四个 **单选按钮** 添加到用户控件，并更改以下属性。
+5. 向用户控件 **添加** 第四个单选按钮，并更改以下属性。
 
     |属性|值|
     |--------------|-----------|
     |**名称**|**areaBlockChart**|
-    |**Text**|**面积图**|
+    |**文本**|**面积图**|
 
 ## <a name="add-references"></a>添加引用
- 若要从文档中的用户控件访问图表，您必须对 `Microsoft.Office.Interop.Graph` 项目中的程序集具有引用。
+ 若要从文档的用户控件访问图表，必须具有对项目中 `Microsoft.Office.Interop.Graph` 程序集的引用。
 
 ### <a name="to-add-a-reference-to-the-microsoftofficeinteropgraph-assembly"></a>添加对 Microsoft.Office.Interop.Graph 程序集的引用
 
-1. 在“项目”菜单上，单击“添加引用”。
+1. 在“项目”菜单上，单击“添加引用” 。
 
      此时会显示“添加引用”对话框。
 
-2. 在 " **.net** " 选项卡上 **，选择 ""，然后** 单击 **"确定"**。 选择该程序集的 14.0.0.0 版。
+2. 在 **".NET"选项卡** 上，选择 **"Microsoft.Office"。互操作。Graph** 然后单击"确定 **"。** 选择该程序集的 14.0.0.0 版。
 
-## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>选中单选按钮时更改图表样式
+## <a name="change-the-chart-style-when-a-radio-button-is-selected"></a>选择单选按钮时更改图表样式
  若要使这些按钮正常工作，请创建用户控件的公共事件，添加属性以设置选择类型，并为每个单选按钮的 `CheckedChanged` 事件创建过程。
 
 ### <a name="to-create-an-event-and-property-on-a-user-control"></a>创建用户控件的事件和属性
 
-1. 在 **解决方案资源管理器** 中，右键单击用户控件，然后单击 " **查看代码**"。
+1. 在 **解决方案资源管理器** 中，右键单击用户控件，然后单击"**查看代码"。**
 
 2. 向 `SelectionChanged` 类添加代码以创建 `Selection` 事件和 `ChartOptions` 属性。
 
@@ -164,24 +165,24 @@ ms.locfileid: "107828197"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet13":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/my chart options/ChartOptions.vb" id="Snippet13":::
 
-5. 在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关创建事件处理程序的信息，请参阅 [如何：在 Office 项目中创建事件处理程序](../vsto/how-to-create-event-handlers-in-office-projects.md)。
+5. 在 C# 中，必须为单选按钮添加事件处理程序。 可以将此代码添加到 `ChartOptions` 构造函数中 `InitializeComponent` 调用的下面。 有关创建事件处理程序的信息，请参阅[如何：](../vsto/how-to-create-event-handlers-in-office-projects.md)在项目 Office处理程序。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreProgrammingControlsWordCS/ChartOptions.cs" id="Snippet14":::
 
-## <a name="add-the-user-control-to-the-document"></a>向文档添加用户控件
- 生成解决方案时，新的用户控件将自动添加到 " **工具箱**"。 然后，可以将该控件从 " **工具箱** " 拖动到文档中。
+## <a name="add-the-user-control-to-the-document"></a>将"用户"控件添加到文档
+ 生成解决方案时，新用户控件会自动添加到"工具箱 **"中**。 然后，可以将控件从"工具箱 **"** 拖动到文档中。
 
 ### <a name="to-add-the-user-control-your-document"></a>向文档添加用户控件
 
 1. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
-     将 **ChartOptions** 用户控件添加到 " **工具箱**"。
+     **ChartOptions** 用户控件将 **添加到工具箱**。
 
-2. 在 **解决方案资源管理器** 中，右键单击 " **ThisDocument** " 或 " **ThisDocument**"，然后单击 " **视图设计器**"。
+2. 在 **解决方案资源管理器** 中，右键单击 **ThisDocument.vb** 或 **ThisDocument.cs，** 然后单击 **视图设计器。**
 
-3. 将 `ChartOptions` 控件从 " **工具箱** " 拖动到文档。
+3. 将 `ChartOptions` 控件从"工具箱 **"** 拖动到文档。
 
-     在 " **属性** " 窗口中，为刚添加到文档中的控件命名  `ChartOptions1` 。
+     在 **"属性** "窗口中，将刚添加到文档的控件命名  `ChartOptions1` 。
 
 ## <a name="change-the-chart-type"></a>更改图表类型
  创建一个事件处理程序，以根据在用户控件中选择的选项更改图表类型。
@@ -211,11 +212,11 @@ ms.locfileid: "107828197"
 ## <a name="next-steps"></a>后续步骤
  以下是接下来可能要执行的一些任务：
 
-- 使用按钮填充文本框。 有关详细信息，请参阅 [演练：使用按钮在文档的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。
+- 使用按钮填充文本框。 有关详细信息，请参阅演练：使用按钮 在文档中 [的文本框中显示文本](../vsto/walkthrough-displaying-text-in-a-text-box-in-a-document-using-a-button.md)。
 
 - 通过从组合框中选择样式来更改格式设置。 有关详细信息，请参阅 [演练：使用 CheckBox 控件更改文档格式](../vsto/walkthrough-changing-document-formatting-using-checkbox-controls.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [使用 Word 的演练](../vsto/walkthroughs-using-word.md)
-- [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
-- [Office 文档 Windows 窗体控件的限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)
+- [Office开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
+- [文档Windows窗体控件Office限制](../vsto/limitations-of-windows-forms-controls-on-office-documents.md)

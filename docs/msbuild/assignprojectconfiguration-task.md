@@ -13,14 +13,15 @@ ms.assetid: 09633a0b-8f6f-4aba-8058-7cb4d13ce2c0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 18dab3d34f4c1c11fa2c212f12ca875cb1b7f3b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d0f6adb8bd03225bffe7efe885c0d295b65f7e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150490"
 ---
 # <a name="assignprojectconfiguration-task"></a>AssignProjectConfiguration 任务
 
@@ -49,7 +50,7 @@ ms.locfileid: "99964948"
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

@@ -14,12 +14,12 @@ ms.workload:
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: ea974e4ff65ccf027a28db9ceb35664a6d62a64559789c0bf3d865986d0831fb
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 36afa727498c71892130a352f1c8eac35c84760f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121320201"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144257"
 ---
 # <a name="walkthrough-create-an-sdk-using-c-or-visual-basic"></a>演练：使用 c # 或 Visual Basic 创建 SDK
 在本演练中，你将学习如何使用 Visual c # 创建一个简单的数学库 SDK，然后将 SDK 打包为 Visual Studio 扩展 (VSIX) 。 你将完成以下过程：
@@ -424,7 +424,7 @@ End Class
 
     你已成功创建并使用了扩展 SDK。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [演练：使用 c + + 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-cpp.md)
 - [演练：使用 JavaScript 创建 SDK](../extensibility/walkthrough-creating-an-sdk-using-javascript.md)
 - [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

@@ -1,6 +1,6 @@
 ---
-title: 将菜单添加到 Visual Studio 菜单栏 |Microsoft Docs
-description: 了解如何将菜单添加到 Visual Studio 集成开发环境的菜单栏 (IDE) 。
+title: 向 Visual Studio 菜单栏添加菜单 |Microsoft Docs
+description: 了解如何 (IDE) 将菜单添加到 Visual Studio 集成开发环境的菜单栏中。
 ms.custom: SEO-VS-2020
 ms.date: 3/16/2019
 ms.topic: how-to
@@ -11,20 +11,21 @@ ms.assetid: 58fc1a31-2aeb-441c-8e48-c7d5cbcfe501
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 22ce9bc00f24278fd2c0533052d7bd5e944b1ebf
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: f622200066192304b2d066ad3bd3839ab2cbc0c9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105078339"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112004"
 ---
-# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>将菜单添加到 Visual Studio 菜单栏
+# <a name="add-a-menu-to-the-visual-studio-menu-bar"></a>向 Visual Studio 菜单栏添加菜单
 
 本演练演示如何将菜单添加到 Visual Studio 集成开发环境 (IDE) 的菜单栏中。 IDE 菜单栏包含 " **文件**"、" **编辑**"、" **视图**"、" **窗口**" 和 " **帮助**" 等菜单类别。
 
-在将新菜单添加到 Visual Studio 菜单栏之前，请考虑是否应将命令置于现有菜单中。 有关命令放置的详细信息，请参阅 [Visual Studio 的菜单和命令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。
+在将新菜单添加到 Visual Studio 菜单栏之前，请考虑是否应将命令置于现有菜单中。 有关命令放置的详细信息，请参阅[Visual Studio 的菜单和命令](../extensibility/ux-guidelines/menus-and-commands-for-visual-studio.md)。
 
 菜单在项目的 *.vsct* 文件中声明。 有关菜单和 *.vsct* 文件的详细信息，请参阅 [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)。
 
@@ -32,26 +33,26 @@ ms.locfileid: "105078339"
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
-> 从 Visual Studio 2019 开始，由扩展提供的顶级菜单放置在 " **扩展** " 菜单下。
+> 从 Visual Studio 2019 开始，由扩展提供的顶级菜单放置在 "**扩展**" 菜单下。
 :::moniker-end
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
-从 Visual Studio 2015 开始，你不需要从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅 [安装 Visual STUDIO SDK](../extensibility/installing-the-visual-studio-sdk.md)。
+从 Visual Studio 2015 开始，你不会从下载中心安装 Visual Studio SDK。 它作为 Visual Studio 安装程序中的可选功能提供。 也可稍后安装 VS SDK。 有关详细信息，请参阅[安装 Visual Studio SDK](../extensibility/installing-the-visual-studio-sdk.md)。
 
 ## <a name="create-a-vsix-project-that-has-a-custom-command-item-template"></a>创建具有自定义命令项模板的 VSIX 项目
 
-1. 创建一个名为的 VSIX 项目 `TopLevelMenu` 。 可以通过搜索 "vsix" 在 " **新建项目** " 对话框中找到 VSIX 项目模板。  有关详细信息，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
+1. 创建一个名为的 VSIX 项目 `TopLevelMenu` 。 可以通过搜索 "vsix" 在 "**新建 Project** " 对话框中找到 VSIX 项目模板。  有关详细信息，请参阅 [使用菜单命令创建扩展](../extensibility/creating-an-extension-with-a-menu-command.md)。
 
 ::: moniker range="vs-2017"
 
-2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
+2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在“解决方案资源管理器”中，右键单击项目节点并选择“添加” >  “新建项”  。 在 " **添加新项** " 对话框中，切换到 " **Visual c #/扩展性** "，然后选择 " **自定义命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在 **解决方案资源管理器** 中，右键单击项目节点，然后选择 "**添加**  >   **新项**"。 在 " **添加新项** " 对话框中，选择 " **Visual c #/扩展性** "，然后选择 " **命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
+2. 当项目打开时，添加一个名为 **testcommand (** 的自定义命令项模板。 在“解决方案资源管理器”中，右键单击项目节点并选择“添加” >  “新建项”  。 在 " **添加新项** " 对话框中，选择 " **Visual c #/扩展性** "，然后选择 " **命令**"。 在窗口底部的 " **名称** " 字段中，将命令文件名更改为 *testcommand (*。
 
 ::: moniker-end
 
@@ -83,7 +84,7 @@ ms.locfileid: "105078339"
 
     `guid`菜单的和 `id` 值指定命令集和命令集中的特定菜单。
 
-    在 `guid` `id` Visual Studio 菜单栏中包含 "工具" 和 "外接程序" 菜单的部分中，父位置的和值。
+    `guid` `id` Visual Studio 菜单栏中包含 "工具" 和 "外接程序" 菜单的部分中的菜单的和值。
 
     `<ButtonText>`元素指定文本应该出现在菜单项中。
 
@@ -127,7 +128,7 @@ ms.locfileid: "105078339"
 
     `guid`菜单的和 `id` 值指定命令集和命令集中的特定菜单。
 
-    在 `guid` `id` Visual Studio 菜单栏中包含 "工具" 和 "外接程序" 菜单的部分中，父位置的和值。
+    `guid` `id` Visual Studio 菜单栏中包含 "工具" 和 "外接程序" 菜单的部分中的菜单的和值。
 
     `<ButtonText>`元素指定文本应该出现在菜单项中。
 
@@ -169,6 +170,6 @@ ms.locfileid: "105078339"
 
     将出现一个消息框，并显示消息 "Testcommand (内部 TopLevelMenu. Testcommand (. MenuItemCallback () "。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

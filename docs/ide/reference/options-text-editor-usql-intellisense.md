@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fe7fc81fdc27fc2cdb126e2bf50d07dd3048ec9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0455aa2420e260af0239100513cd7a042a8bcaf6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970824"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151192"
 ---
 # <a name="options-text-editor-u-sql-intellisense"></a>“选项”>“文本编辑器”>“U-SQL”>“IntelliSense”
 

@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 24db8e45efbe732c69dedcce8b3c1b14463a0a0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee2333e73e6fbc22e25f12da49c7e6586885215d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99911489"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140552"
 ---
 # <a name="vsperfclrenv"></a>VSPerfCLREnv
 

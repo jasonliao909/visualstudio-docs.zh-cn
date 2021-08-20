@@ -6,18 +6,19 @@ ms.topic: quickstart
 ms.custom: vs-acquisition
 author: cartermp
 ms.author: phcart
-manager: andrehal
+manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - FSharp
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 298b55120a5e4d0efea1ec5eeeacc2dfa3da274f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a22eb43c85c1b123270c5414c9f84ee6a5288cd5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386431"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151894"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入门：使用 Visual Studio 以 F\# 创建首个 ASP.NET Core Web 服务
 

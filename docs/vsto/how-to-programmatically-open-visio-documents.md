@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d44b5d4f7880317705a1b30427359f891d1451eb4dc1610a36636b35ee594c27
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1c3126f3f5ac73632996079a070c426afc20d656
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121296809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122155819"
 ---
 # <a name="how-to-programmatically-open-visio-documents"></a>如何：以编程方式打开 Visio 文档
   可以通过两种方法打开现有 Microsoft Office Visio 文档： Open 和 microsoft.office.interop.visio.documents.open。 Microsoft.office.interop.visio.documents.open 方法与 Open 方法相同，不同之处在于它提供调用方可以在其中指定文档打开方式的参数。
@@ -51,7 +51,7 @@ ms.locfileid: "121296809"
 
 - 名为的 Visio 文档 `myDrawing.vsd` 必须位于 " `Test` *我的文档*" 文件夹中名为 "我的文档" 文件夹中的目录 (用于 Windows XP 和更早版本) 或 (Vista Windows 的 "*文档*" 文件夹) 。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Visio 解决方案](../vsto/visio-solutions.md)
 - [Visio 对象模型概述](../vsto/visio-object-model-overview.md)
 - [如何：以编程方式创建新的 Visio 文档](../vsto/how-to-programmatically-create-new-visio-documents.md)

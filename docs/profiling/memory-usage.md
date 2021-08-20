@@ -7,14 +7,15 @@ ms.topic: tutorial
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ef2ddd4011f807099c6bc82447f888b56f151e72
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70fc947cc707fa397088f6dbc75542884de5696a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969407"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141722"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
 
