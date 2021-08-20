@@ -15,14 +15,15 @@ ms.assetid: 177420b9-568b-4dad-9d16-1b0e98a24d71
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: b67e70792f6e7864749b603f30ab868ef177336a
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: c0913e3d4f54f312e7d706ec6ab9771732e7b85c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106215560"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059304"
 ---
 # <a name="bind-wpf-controls-to-a-dataset"></a>将 WPF 控件绑定到数据集
 
@@ -50,7 +51,7 @@ ms.locfileid: "106215560"
 
 事先了解以下概念也很有用，但对于完成本演练并不是必需的：
 
-- 数据集和 TableAdapter。 有关详细信息，请参阅 [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md) 和 [tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+- 数据集和 TableAdapter。 有关详细信息，请参阅 Visual Studio 和[tableadapter](../data-tools/create-and-configure-tableadapters.md)[中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)。
 
 - WPF 数据绑定。 有关详细信息，请参阅 [数据绑定概述](/dotnet/desktop-wpf/data/data-binding-overview)。
 
@@ -112,7 +113,7 @@ ms.locfileid: "106215560"
 
 8. 单击“完成”。
 
-   Visual Studio 会向项目中添加一个新 `AdventureWorksLTDataSet.xsd` 文件，并将相应的 **adventureworksltdataset.xsd** 项添加到 " **数据源** " 窗口中。 `AdventureWorksLTDataSet.xsd`文件定义名为的类型化数据集 `AdventureWorksLTDataSet` 和名为的 TableAdapter `ProductTableAdapter` 。 在本演练后面的部分中，你将使用 `ProductTableAdapter` 向数据集填充数据，并将更改保存回数据库中。
+   Visual Studio 将新 `AdventureWorksLTDataSet.xsd` 文件添加到项目中，并将相应的 **adventureworksltdataset.xsd** 项添加到 "**数据源**" 窗口。 `AdventureWorksLTDataSet.xsd`文件定义名为的类型化数据集 `AdventureWorksLTDataSet` 和名为的 TableAdapter `ProductTableAdapter` 。 在本演练后面的部分中，你将使用 `ProductTableAdapter` 向数据集填充数据，并将更改保存回数据库中。
 
 9. 生成项目。
 
@@ -185,7 +186,7 @@ ms.locfileid: "106215560"
 
 5. 从“数据源”窗口，将“Product”节点拖到包含按钮的行下方的网格行。
 
-     Visual Studio 生成 XAML，它定义了一组绑定到“Products”表中的数据的控件。 它还会生成用于加载数据的代码。 有关生成的 XAML 和代码的详细信息，请参阅 [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
+     Visual Studio 生成 XAML，它定义了一组绑定到“Products”表中的数据的控件。 它还会生成用于加载数据的代码。 有关生成的 XAML 和代码的详细信息，请参阅[在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)。
 
 6. 在设计器中，单击“Product ID”标签旁边的文本框。
 
@@ -230,19 +231,19 @@ ms.locfileid: "106215560"
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_ProTools/data_wpfdataset/vb/mainwindow.xaml.vb" id="Snippet4":::
 
     > [!NOTE]
-    > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅 [tableadapter](../data-tools/create-and-configure-tableadapters.md)。
+    > 此示例使用 `Save` 的 `TableAdapter` 方法来保存更改。 这对于本演练很合适，因为本演练中只会更改一个数据表。 如果你需要保存对多个数据表所做的更改，则还可以使用 Visual Studio 利用你的数据集生成的 `UpdateAll` 的 `TableAdapterManager` 方法。 有关详细信息，请参阅 [TableAdapters](../data-tools/create-and-configure-tableadapters.md)。
 
 ## <a name="test-the-application"></a>测试应用程序
 
 生成并运行应用程序。 验证你是否可以查看和更新产品记录。
 
-1. 按 F5 。
+1. 按 **F5**。
 
      这将生成并运行应用程序。 检查下列各项：
 
     - 文本框显示具有图片的第一条产品记录的数据。 此产品的产品 ID 为 713，名称为“Long-Sleeve Logo Jersey, S”。
 
-    - 您可以单击 **>** 或 **<** 按钮来浏览其他产品记录。
+    - 可以单击 **>** 或 **<** 按钮来浏览其他产品记录。
 
 2. 在某一产品记录中，更改“大小”值，然后依次“保存更改”。
 
@@ -254,13 +255,13 @@ ms.locfileid: "106215560"
 
 ## <a name="next-steps"></a>后续步骤
 
-完成本演练后，你可能会尝试以下相关任务：
+完成本演练后，可以尝试以下相关任务：
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅 [将 WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口将 WPF 控件绑定到其他类型的数据源上。 有关详细信息，请参阅将 [WPF 控件绑定到 WCF 数据服务](../data-tools/bind-wpf-controls-to-a-wcf-data-service.md)。
 
-- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅 [演练：在 WPF 应用中显示相关数据](../data-tools/display-related-data-in-wpf-applications.md)。
+- 了解如何使用 Visual Studio 中的“数据源”窗口在 WPF 控件中显示相关数据（即父-子关系中的数据）。 有关详细信息，请参阅 [演练：在 WPF 应用中显示相关的数据](../data-tools/display-related-data-in-wpf-applications.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)

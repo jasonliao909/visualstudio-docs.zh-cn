@@ -10,16 +10,16 @@ ms.technology: vs-ide-modeling
 ms.custom: SEO-VS-2020
 ms.workload:
 - multiple
-ms.openlocfilehash: 456eecfbc00c210f4110fb62e96dbaff960e962ab6998cd61faab77ff9c50f85
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3355a84d34e297bb7394ca0e0feb8c3e635f615b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121370778"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061319"
 ---
-# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建Windows窗体的 Domain-Specific 语言
+# <a name="create-a-windows-forms-based-domain-specific-language"></a>创建Windows窗体的Domain-Specific语言
 
-可以使用 Windows 窗体来显示 DSL (模型) 域特定语言的状态，而不是使用 DSL 关系图。 本主题逐步介绍如何使用可视化Windows建模 SDK 将窗体绑定到 DSL Visual Studio DSL。
+可以使用"Windows窗体"来显示 DSL 模型 (域) 语言的状态，而不是使用 DSL 关系图。 本主题逐步介绍如何使用可视化Windows建模 SDK 将窗体绑定到 DSL Visual Studio DSL。
 
 下图显示了 DSL Windows窗体 UI 和模型资源管理器：
 
@@ -42,7 +42,7 @@ ms.locfileid: "121370778"
 
    2. 使用 **Ctrl** + **F5** (生成并运行) 。
 
-   3. 在 Visual Studio 试验实例中， `Sample` 打开调试项目中的 文件。
+   3. 在 Visual Studio试验实例中， `Sample` 打开调试项目中的 文件。
 
         请注意，它显示在窗体Windows窗体控件中。
 
@@ -54,9 +54,9 @@ ms.locfileid: "121370778"
 
 - `DslDefinition.dsl` 不包含关系图元素。 这是因为你将不使用 DSL 关系图来查看此 DSL 的实例模型。 相反，你将将Windows窗体绑定到模型，窗体上的元素将显示模型。
 
-- 除了 和 项目外，解决方案还包含名为 UI 项目的第三个项目，其中包含 Windows `Dsl` `DslPackage` `UI.` 窗体控件的定义。 `DslPackage` 依赖于 `UI` ， `UI` 并且依赖于 `Dsl` 。
+- 除了 和 项目外，解决方案还包含名为 UI 项目的第三个项目，该项目包含 Windows `Dsl` `DslPackage` `UI.` 窗体控件的定义。 `DslPackage` 依赖于 `UI` ， `UI` 并且依赖于 `Dsl` 。
 
-- 在 `DslPackage` 项目中， `UI\DocView.cs` 包含显示项目中Windows窗体控件 `UI` 的代码。
+- 在 `DslPackage` 项目中， `UI\DocView.cs` 包含显示项目中Windows窗体控件的代码 `UI` 。
 
 - 该项目 `UI` 包含绑定到 DSL 的窗体控件的工作示例。 但是，更改 DSL 定义后，它将不起作用。 项目 `UI` 包含：
 
@@ -126,7 +126,7 @@ ms.locfileid: "121370778"
 
      展开 **Dsl** **、Company.FarmApp，** 然后选择 **"场**"，这是模型的根类。 选择“完成”。
 
-     在 解决方案资源管理器 中 **，UI** 项目现在包含 **Properties\DataSources\Farm.datasource**
+     在解决方案资源管理器中 **，UI** 项目现在包含 **Properties\DataSources\Farm.datasource**
 
      模型类的属性和关系显示在"数据源"窗口中。
 
@@ -155,7 +155,7 @@ ms.locfileid: "121370778"
    > [!NOTE]
    > 另一步是将"动物"和"字段"项从"数据源"窗口拖动到控件上。 此操作会自动在网格视图和数据源之间创建数据网格和绑定。 但是，此绑定对于 DSL 无法正常工作。 因此，最好手动创建数据网格和绑定。
 
-7. 如果工具箱不包含 **ModelingBindingSource** 工具，请添加它。 在"数据"选项卡的 **快捷菜单上**，选择"**选择项"。** 在"**选择工具箱项"** 对话框中，从"工具箱"选项卡中选择"ModelingBindingSource.NET Framework"。  
+7. 如果工具箱不包含 **ModelingBindingSource** 工具，请添加它。 在"数据"选项卡的 **快捷菜单上**，选择"**选择项"。** 在"**选择工具箱项"** 对话框中，从"工具箱"选项卡中选择"modelingBindingSource.NET Framework"。  
 
 8. 使用工具箱创建 **ModelingBindingSource** 的两个实例，并命名它们 `AnimalBinding` 和 `FieldBinding` 。
 
@@ -171,17 +171,17 @@ ms.locfileid: "121370778"
 
 - 它将更新包装在 VMSDK 存储事务中。
 
-   例如，当用户从数据视图网格中删除行时，常规绑定将导致事务异常。
+   例如，当用户从数据视图网格中删除某行时，常规绑定将导致事务异常。
 
-- 它确保当用户选择行时，属性窗口显示相应模型元素的属性，而不是数据网格行。
+- 它可确保在用户选择某一行时，属性窗口显示相应模型元素的属性，而不是显示数据网格行。
 
   ![DSL 绑定的架构](../modeling/media/dslwpf4.png)
   
   数据源和视图之间的链接架构。
 
-### <a name="complete-the-bindings-to-the-dsl"></a>完成与 DSL 的绑定
+### <a name="complete-the-bindings-to-the-dsl"></a>完成到 DSL 的绑定
 
-1. 在 UI 项目中的单独代码文件中添加 **以下** 代码：
+1. 在 **UI** 项目的单独代码文件中添加以下代码：
 
     ```csharp
     using System.ComponentModel;
@@ -215,48 +215,48 @@ ms.locfileid: "121370778"
 
 ## <a name="test-the-dsl"></a>测试 DSL
 
-DSL 解决方案现在可以生成并运行，不过你可能希望稍后再添加改进。
+现在，可以生成并运行 DSL 解决方案，但以后可能需要添加更多改进。
 
 1. 生成并运行解决方案。
 
-2. 在 Visual Studio 试验实例中，打开 **Sample** 文件。
+2. 在 Visual Studio 的实验实例中，打开 **示例** 文件。
 
-3. 在 **FarmApp Explorer 中**，打开"场"根节点上的 **快捷菜单，** 然后选择"**添加新的子项"。**
+3. 在 **FarmApp 资源管理器** 中，打开 **场** 根节点上的快捷菜单，然后选择 " **添加新 Goat**"。
 
-     `Goat1` 显示在" **动物"** 视图中。
+     `Goat1` 显示在 " **动物** " 视图中。
 
     > [!WARNING]
-    > 必须使用"场"节点上的 **快捷菜单，** 而不是" **动物"** 节点。
+    > 必须使用 **场** 节点上的快捷菜单，而不是 " **动物** " 节点。
 
-4. 选择" **场"** 根节点并查看其属性。
+4. 选择 **场** 根节点并查看其属性。
 
-     在窗体视图中，更改 **场的名称****或** 大小。
+     在窗体视图中，更改场的 **名称** 或 **大小** 。
 
-     当你离开窗体的每个字段时，窗体中的相应属性属性窗口。
+     离开窗体中的每个字段时，相应的属性更改属性窗口中。
 
 ## <a name="enhance-the-dsl"></a>增强 DSL
 
 ### <a name="make-the-properties-update-immediately"></a>立即更新属性
 
-1. 在 FarmControl.cs 的设计视图中，选择一个简单的字段，例如"名称"、"大小"或"IsOrganic"。
+1. 在 FarmControl 的 "设计" 视图中，选择 "名称"、"大小" 或 "IsOrganic" 等简单字段。
 
-2. 在"属性窗口"中，展开 **"DataBindings"** 并 **("高级) "。**
+2. 在属性窗口中 **，展开 "** databinding" 并打开 **(高级)**"。
 
-     在"**格式设置和高级绑定"** 对话框中的"**数据源更新模式"下**，选择 **"OnPropertyChanged"。**
+     在 " **格式设置和高级绑定** " 对话框的 " **数据源更新模式**" 下，选择 " **OnPropertyChanged**"。
 
 3. 生成并运行解决方案。
 
-     验证更改字段内容时，场模型的相应属性是否立即更改。
+     验证在更改字段内容时，场模型的相应属性会立即更改。
 
-### <a name="provide-add-buttons"></a>提供"添加"按钮
+### <a name="provide-add-buttons"></a>提供 "添加" 按钮
 
-1. 在 FarmControl.cs 的设计视图中，使用工具箱在窗体上创建按钮。
+1. 在 FarmControl 的 "设计" 视图中，使用 "工具箱" 来创建窗体上的按钮。
 
-    编辑按钮的名称和文本，例如， 为 `New Sheep` 。
+    编辑按钮的名称和文本（例如） `New Sheep` 。
 
-2. 打开按钮后面的 (，例如双击按钮) 。
+2. 打开按钮后面的代码 (例如，双击它) 。
 
-    按如下所示编辑它：
+    按如下所示对其进行编辑：
 
    ```csharp
    private void NewSheepButton_Click(object sender, EventArgs e)
@@ -295,17 +295,17 @@ DSL 解决方案现在可以生成并运行，不过你可能希望稍后再添�
    using Microsoft.VisualStudio.Modeling;
    ```
 
-3. 为"动物"和"字段"添加类似的按钮。
+3. 为 "Goats" 和 "字段" 添加类似的按钮。
 
 4. 生成并运行解决方案。
 
-5. 验证新按钮是否添加了项。 新项应同时显示在 FarmApp Explorer 和相应的数据网格视图中。
+5. 验证 "新建" 按钮是否添加项。 新项应同时出现在 "FarmApp 资源管理器" 和相应的数据网格视图中。
 
-    应该能够在数据网格视图中编辑元素的名称。 也可以从中删除它。
+    您应该能够在数据网格视图中编辑元素的名称。 你还可以从此处删除它。
 
    ![示例数据网格视图](../modeling/media/dsl-wpf-2.png)
 
-### <a name="about-the-code-to-add-an-element"></a>关于添加元素的代码
+### <a name="about-the-code-to-add-an-element"></a>关于要添加元素的代码
 
 对于新元素按钮，以下替代代码稍微简单一些。
 
@@ -320,12 +320,12 @@ private void NewSheepButton_Click(object sender, EventArgs e)
 }
 ```
 
-但是，此代码不会设置新项的默认名称。 它不会运行可能在 DSL 的元素合并指令中定义的任何自定义合并，也不运行任何已定义的自定义合并代码。
+但是，此代码不会设置新项的默认名称。 它不会运行你可能在 DSL 的 **元素合并指令** 中定义的任何自定义的合并，并且它不会运行可能已定义的任何自定义合并代码。
 
-因此，建议使用 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 创建新元素。 有关详细信息，请参阅 [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。
+因此，我们建议你使用 <xref:Microsoft.VisualStudio.Modeling.ElementOperations> 来创建新元素。 有关详细信息，请参阅 [自定义元素创建和移动](../modeling/customizing-element-creation-and-movement.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
-- [如何定义Domain-Specific语言](../modeling/how-to-define-a-domain-specific-language.md)
-- [编写代码以自定义Domain-Specific语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
+- [如何定义 Domain-Specific 语言](../modeling/how-to-define-a-domain-specific-language.md)
+- [编写代码以自定义 Domain-Specific 语言](../modeling/writing-code-to-customise-a-domain-specific-language.md)
 - [Visual Studio 的建模 SDK - 特定于域的语言](../modeling/modeling-sdk-for-visual-studio-domain-specific-languages.md)

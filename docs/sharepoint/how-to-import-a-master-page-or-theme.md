@@ -1,6 +1,6 @@
 ---
-title: 如何：导入母版页或主题 |Microsoft Docs
-description: 在 SharePoint 设计器中为母版页和主题生成模板，然后将其导入到 Visual Studio，以使您的 SharePoint 站点上的页面具有一致的外观。
+title: 如何：导入母版页或主题|Microsoft Docs
+description: 在设计器中为母版页和主题SharePoint模板，然后导入Visual Studio，使SharePoint站点中的页面具有一致的外观。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -13,50 +13,51 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 331ae3964de40e6590345aadae59776fe37f467a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 69d304d476be4b1e0ab97500b1f13b04bd68ff1f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093003"
 ---
 # <a name="how-to-import-a-master-page-or-theme"></a>如何：导入母版页或主题
-  您可以通过创建和使用母版页和主题，为您的 SharePoint 站点上的页面指定一致的外观。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 不提供这些元素的模板，但您可以在 SharePoint Designer 中创建模板，然后将其导入到中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 Microsoft 网站上的 [构建基块：页面和用户界面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 。
+  可以通过创建和使用母版页和SharePoint为站点中的页面提供一致的外观。 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]不提供这些元素的模板，但可以在设计器SharePoint模板，然后将它们导入 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。 有关详细信息，请参阅 Microsoft 网站上 [构建基块：用户界面](/previous-versions/office/developer/sharepoint-2010/ee539040(v=office.14)) 和页面。
 
 ### <a name="to-import-a-master-page-or-theme"></a>导入母版页或主题
 
-1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，创建或打开一个 SharePoint 项目。
+1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中，创建或打开SharePoint项目。
 
-     有关如何创建 SharePoint 项目的信息，请参阅 [sharepoint 项目和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
+     若要了解如何创建项目SharePoint，请参阅SharePoint[和项目项模板](../sharepoint/sharepoint-project-and-project-item-templates.md)。
 
 2. 在菜单栏上，依次选择“项目” > “添加新项”。
 
-3. 在 " **添加新项** " 对话框中，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
+3. 在"**添加新项"** 对话框中，展开"SharePoint"**节点**，然后选择 **"2010"** 节点。
 
-4. 在 SharePoint 模板列表中，选择 " **模块** " 模板，然后指定模块的名称。
+4. 在模板SharePoint，选择"模块"模板，然后指定模块的名称。
 
-     模块包含文件 (例如，要部署到在 SharePoint 中指定的位置) 母版页或主题文件。
+     模块包含 (文件，例如母版页或主题) ，用于部署到在 SharePoint 中指定的位置。
 
-5. 在模块中，删除名为 *Sample.txt* 的默认文件。
+5. 在模块中，删除名为 的默认文件，该文件 *Sample.txt。*
 
-6. 选择 "模块" 节点。
+6. 选择模块节点。
 
-7. 在菜单栏上，选择 "**项目**  >  " "**添加现有项**"，然后选择母版页或主题文件。
+7. 在菜单栏上，选择  >  **Project"添加现有项**"，然后选择母版页或主题文件。
 
-     母版页文件具有扩展名 .master，主题文件具有扩展名 thmx。
+     母版页文件具有 .master 扩展名，主题文件具有 .thmx 扩展名。
 
-8. 如果已添加母版页，请在模块的属性中将其 " **部署冲突解决方法** " 设置更改为 " **自动** "。
+8. 如果添加了母版页，请在其模块属性 **中将"部署冲突** 解决"设置更改为"自动"。 
 
     > [!NOTE]
-    > 如果母版页名称与已标记为默认母版页或自定义母版页的现有母版页的名称相同，则会发生错误。 有关如何解决此问题的信息，请参阅 [演练：使用图像导入自定义母版页和网站页面](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
+    > 如果母版页的名称与标记为"默认母版页"或"自定义母版页"的现有母版页的名称相同，则可能会发生错误。 若要了解如何解决此问题，请参阅演练：导入具有映像 的自定义母版页 [和站点页](../sharepoint/walkthrough-import-a-custom-master-page-and-site-page-with-an-image.md)。
 
-9. 在模块中，打开 *Elements.xml*。
+9. 在模块中 *，打开* Elements.xml。
 
-     必须更新 *Elements.xml* 文件，才能引用所添加的母版页或主题。
+     必须 *更新Elements.xml以* 引用添加的母版页或主题。
 
-10. 对于母版页，请将现有的模块标记替换为以下标记。
+10. 对于母版页，请将现有模块标记替换为以下标记。
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/masterpage">
@@ -65,7 +66,7 @@ ms.locfileid: "99913675"
     </Module>
     ```
 
-     对于主题，请将现有的模块标记替换为以下标记。
+     对于主题，请将现有模块标记替换为以下标记。
 
     ```xml
     <Module Name="[Module Name]" Url="_catalogs/theme"
@@ -74,25 +75,25 @@ ms.locfileid: "99913675"
     </Module>
     ```
 
-     请确保将占位符值替换为模块和母版页或主题的实际名称。
+     请务必将占位符值替换为模块的实际名称以及母版页或主题。
 
-     特性 `Type="GhostableInLibrary"` 指示项已添加到内容数据库， `Url` 模块的特性指定在 SharePoint 内容数据库中存储文件的位置。
+     属性指示将项添加到内容数据库，模块的 属性指定文件在内容数据库中的SharePoint `Type="GhostableInLibrary"` `Url` 位置。
 
-11. 若要更改母版页的部署范围，请在 **解决方案资源管理器** 中打开功能设计器中的功能文件，然后从 " **作用域** " 列表中选择新的部署范围。
+11. 若要更改母版页的部署范围，解决方案资源管理器，在"功能设计器"中打开功能文件，然后从"范围"列表中选择新的 **部署** 范围。
 
-     值为 " **Web** " 表示母版页仅适用于当前在项目中指定的网站。 " **站点** " 值表示母版页适用于当前网站集，其中包括所有子网站和根 web。 其他值不适用。
+     值为 **Web** 表示母版页仅适用于项目中当前指定的网站。 值为 **Site** 表示母版页适用于当前网站集，其中包括所有子网站和根 Web。 其他值不适用。
 
     > [!NOTE]
-    > 因为主题仅适用于网站集级别，所以建议您不要将主题的作用域设置为 **网站** 以外的任何内容。 如果子站点中使用主题，则会发生错误。
+    > 由于主题仅适用于网站集级别，因此建议不要将主题的范围设置为除"站点"外 **的其他任何内容**。 如果在子站点中使用了主题，则可能会出现错误。
 
-12. 在菜单栏上，选择 "**生成**" "  >  **部署解决方案**"。
+12. 在菜单栏上，选择"**生成部署**  >  **解决方案"。**
 
-13. 若要验证是否已正确部署这些文件，请打开 SharePoint 站点，选择 " **站点操作** " 菜单，选择 " **站点设置** " 命令，然后选择 " **母版页** " 链接或 " **主题** " 链接。
+13. 若要验证文件是否已正确部署，请打开 SharePoint 站点，选择"站点操作"菜单，选择"站点 **设置"命令，** 然后选择"母版页"链接或"**主题"链接**。
 
-     母版页或主题的列表随即显示，其中包含已导入的母版页或主题。
+     将显示母版页或主题的列表，其中包含已导入的母版页或主题。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [母版页](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))
-- [从现有 SharePoint 站点导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
+- [从现有站点导入SharePoint项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [为 SharePoint 创建页](../sharepoint/creating-pages-for-sharepoint.md)
 - [使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)

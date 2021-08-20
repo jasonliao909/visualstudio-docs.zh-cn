@@ -19,14 +19,15 @@ ms.assetid: e6e0fa4f-75c4-4a52-af15-281cd61876ca
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ddbfb4d001f73e30296a35c2cff4aae0e0c527f9
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 364067fd5661d71ab97f6d30de7ea1db35598e8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221114"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122151140"
 ---
 # <a name="properties-window"></a>“属性”窗口
 

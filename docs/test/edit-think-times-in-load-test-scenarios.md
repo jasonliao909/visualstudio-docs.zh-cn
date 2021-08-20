@@ -12,12 +12,13 @@ ms.assetid: 8e03bee5-ab7b-4b40-9497-9dbe91ccb90e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 0c6dc458fed9f03a4b9176817e243dca3a048b4a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: cc11872aa238ee1b3b72a171193de6b7d0ee972b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887843"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148592"
 ---
 # <a name="edit-think-times-to-simulate-website-human-interaction-delays-in-load-tests-scenarios"></a>编辑思考时间以模拟负载测试方案中的网站人工交互延迟
 

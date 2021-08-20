@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 5674486ec330dc804fa43836f64dcc439e0fc4a169244db217a41fe4cecd193c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 644b31985d6e187ef757ec1c0cb37827776ac022
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121316911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157587"
 ---
 # <a name="api-reference-for-modeling-sdk-for-visual-studio"></a>Visual Studio 的建模 SDK 的 API 参考
 
@@ -45,6 +45,6 @@ Visual Studio 可视化和建模 SDK 提供了一种平台，用于构建域特�
 |<xref:Microsoft.VisualStudio.Modeling.Shell.ExtensionEnablement?displayProperty=fullName>|允许您 (上下文) 菜单命令定义快捷方式。|
 |<xref:Microsoft.VisualStudio.Modeling.Validation?displayProperty=fullName>|允许您定义验证约束。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [自定义 T4 文本转换](../modeling/customizing-t4-text-transformation.md)

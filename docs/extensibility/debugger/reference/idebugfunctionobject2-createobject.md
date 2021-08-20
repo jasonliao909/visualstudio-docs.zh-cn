@@ -16,12 +16,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: abe71179784d69ed78d372fd5e3b3bb1e8728c0b52d20b532556f145e052f7e3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bb4ea8d82a10eb5ed7dc4e0b427d7b966a30faf3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389782"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088648"
 ---
 # <a name="idebugfunctionobject2createobject"></a>IDebugFunctionObject2::CreateObject
 创建一个对象，该对象使用给定评估标志设置和超时值的构造函数。
@@ -75,5 +75,5 @@ int CreateObject (
 ## <a name="remarks"></a>备注
  调用此方法以创建一个对象，该对象表示类的实例或其他需要构造函数（即参数）的复杂类型。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugFunctionObject2](../../../extensibility/debugger/reference/idebugfunctionobject2.md)

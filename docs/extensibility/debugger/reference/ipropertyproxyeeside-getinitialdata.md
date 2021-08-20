@@ -1,6 +1,6 @@
 ---
-description: 返回此对象的初始数据。
-title: IPropertyProxyEESide：： GetInitialData |Microsoft Docs
+description: 返回此 对象的初始数据。
+title: IPropertyProxyEESide：：GetInitialData |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 36cceb19-2604-4ef9-b42b-5dd30cbe24b1
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 96129d254ad153b6a0ad754931cd18abba803849
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: bee25b2857d06b49a97a20789f6708e678cc15af
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105082525"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122118172"
 ---
 # <a name="ipropertyproxyeesidegetinitialdata"></a>IPropertyProxyEESide::GetInitialData
-返回此对象的初始数据。
+返回此 对象的初始数据。
 
 ## <a name="syntax"></a>语法
 
@@ -42,11 +43,11 @@ int GetInitialData(
 
 ## <a name="parameters"></a>参数
 `dataOut`\
-弄返回一个 [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象，该对象包含此对象的初始数据。
+[out]返回包含 [此对象的初始数据的 IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IPropertyProxyEESide](../../../extensibility/debugger/reference/ipropertyproxyeeside.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
