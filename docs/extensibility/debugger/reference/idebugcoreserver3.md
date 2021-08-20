@@ -11,14 +11,15 @@ ms.assetid: 51f5f41b-a5a4-4df0-a703-41f3d1811d7f
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: ab605db6a49b8b7cc9893692ff1bb9e6da15171f
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 38e839ef5c653bfe21541371f8320c74cfa4679b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105088141"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127358"
 ---
 # <a name="idebugcoreserver3"></a>IDebugCoreServer3
 此接口可用于访问有关进程正在其中运行的服务器的信息。
@@ -59,6 +60,6 @@ IDebugCoreServer3 : IDebugCoreServer2
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [GetServer](../../../extensibility/debugger/reference/idebugdefaultport2-getserver.md)

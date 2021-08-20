@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: f676e64dc8f79afb6ff9256b0f85d19054f4a00594a5d8fd420e543b048a6e6f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 18abf137354f6b5a752c217a68e7d70e74dd13fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121264605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154883"
 ---
 # <a name="directly-access-the-database-with-a-tableadapter"></a>使用 TableAdapter 直接访问数据库
 
@@ -73,6 +73,6 @@ ms.locfileid: "121264605"
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Class1.vb" id="Snippet21":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Class1.cs" id="Snippet21":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)

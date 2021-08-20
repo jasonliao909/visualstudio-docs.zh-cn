@@ -1,5 +1,5 @@
 ---
-description: 启用使用 DCOM 来请求 Visual Studio UI 的调试引擎，以确保防火墙不会阻止远程调试。
+description: 启用一个调试引擎，该引擎使用 DCOM Visual Studio UI，以确保防火墙不会阻止远程调试。
 title: IDebugFirewallConfigurationCallback2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,15 +12,15 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 18dd45fa041732f733d121d7304650ea82cf5983a76fa58e434b088ba8fcb684
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 899413fa9064b463732fd2985bb0ddaf8dddf5a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121402761"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088739"
 ---
 # <a name="idebugfirewallconfigurationcallback2"></a>IDebugFirewallConfigurationCallback2
-启用使用 DCOM 来要求 UI 的调试引擎， [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 以确保防火墙不会阻止远程调试。
+启用使用 DCOM 来请求 UI 确保防火墙不会阻止远程调试的 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 调试引擎。
 
 ## <a name="syntax"></a>语法
 
@@ -28,19 +28,19 @@ ms.locfileid: "121402761"
 IDebugFirewallConfigurationCallback2 : IUnknown
 ```
 
-## <a name="notes-for-implementers"></a>实施者注意事项
+## <a name="notes-for-implementers"></a>实现者说明
  由会话调试管理器的端口对象实现。
 
 ## <a name="methods"></a>方法
- 下表显示的方法 `IDebugFirewallConfigurationCallback2` 。
+ 下表显示了 的方法 `IDebugFirewallConfigurationCallback2` 。
 
 |方法|说明|
 |------------|-----------------|
 |[EnsureDCOMUnblocked](../../../extensibility/debugger/reference/idebugfirewallconfigurationcallback2-ensuredcomunblocked.md)|请求防火墙不阻止远程调试。|
 
 ## <a name="requirements"></a>要求
- 标头： Msdbg
+ 标头：Msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll

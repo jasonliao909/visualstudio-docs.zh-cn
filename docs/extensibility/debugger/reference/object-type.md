@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8ab24503e025707b77141cafa272f4db1c9f78ac6d54bda1c486c53c5d4f24b9
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fa8720b86771cf2dfd0a46213ff493a3319c9a9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338171"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103086"
 ---
 # <a name="object_type"></a>Object_Type
 指定表达式计算器中的对象的类型。
@@ -75,56 +75,56 @@ public enum enum_OBJECT_TYPE {
  指示对象是布尔值。
 
  `OBJECT_TYPE_CHAR`\
- 指示对象是一个字符。
+ 指示对象是字符。
 
  `OBJECT_TYPE_I1`\
- 指示对象为单字节有符号整数。
+ 指示对象是一个单字节有符号整数。
 
  `OBJECT_TYPE_U1`\
- 指示对象为单字节无符号整数。
+ 指示对象是一个单字节无符号整数。
 
  `OBJECT_TYPE_I2`\
- 指示对象是一个2字节的有符号整数。
+ 指示对象是一个双字节有符号整数。
 
  `OBJECT_TYPE_U2`\
- 指示对象是一个2字节无符号整数。
+ 指示对象是一个双字节无符号整数。
 
  `OBJECT_TYPE_I4`\
- 指示对象为四字节有符号整数。
+ 指示对象是一个四字节有符号整数。
 
  `OBJECT_TYPE_U4`\
- 指示对象为四字节无符号整数。
+ 指示对象是一个四字节无符号整数。
 
  `OBJECT_TYPE_I8`\
- 指示对象是一个8字节的有符号整数。
+ 指示对象是一个八字节有符号整数。
 
  `OBJECT_TYPE_U8`\
- 指示对象是一个8字节的无符号整数。
+ 指示对象是一个八字节无符号整数。
 
  `OBJECT_TYPE_R4`\
  指示对象是一个四字节浮点数。
 
  `OBJECT_TYPE_R8`\
- 指示对象是一个8字节的浮点数。
+ 指示对象是一个八字节浮点数。
 
  `OBJECT_TYPE_OBJECT`\
- 指示对象是一个对象。
+ 指示对象是对象。
 
  `OBJECT_TYPE_NULL`\
  指示对象为 NULL。
 
  `OBJECT_TYPE_CLASS`\
- 指示对象是一个类。
+ 指示对象是类。
 
 ## <a name="remarks"></a>备注
  作为参数传递给 [CreatePrimitiveObject](../../../extensibility/debugger/reference/idebugfunctionobject-createprimitiveobject.md) 和 [CreateArrayObject](../../../extensibility/debugger/reference/idebugfunctionobject-createarrayobject.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头： ee。h
+ 标头：ee.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b786e8e81758f5b0ec832477a78721548fe3c353f050492482c5d047238ff25
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 572f0daff0d4ca114f3c718f0334eeced32e42fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157561"
 ---
 # <a name="code-maps-for-c-projects"></a>C + + 项目的代码映射
 
@@ -52,6 +52,6 @@ C 和 C++ 代码不支持这些项：
 ||已从 .pdb 文件中去除调试信息。|如果链接器中已使用 **/PDBSTRIPPED** 选项，则改为包含完整的 .pdb 文件。|
 ||调用方不是函数，它是二进制文件中的形式转换 (thunk) 或数据节中的指针。|当调用方是形式转换 (thunk) 时，尝试使用 `_declspec(dllimport)` 以避免形式转换 (thunk)。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用代码图映射依赖关系](../modeling/map-dependencies-across-your-solutions.md)

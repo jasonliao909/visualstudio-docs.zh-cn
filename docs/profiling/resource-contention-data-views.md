@@ -10,15 +10,16 @@ ms.assetid: be79ec41-f1dd-4984-993f-5c2962355a32
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 148e72cedafa075c8b03229a5f44063713d7cd23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1dc355c9543b6407fd4956cc0362344b227ba7a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952767"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141449"
 ---
 # <a name="resource-contention-data-views"></a>资源争用数据视图
 本节介绍有关探查器数据文件的视图和报表的参考信息，这些文件包含线程争用分析数据。

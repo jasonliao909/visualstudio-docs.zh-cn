@@ -1,6 +1,6 @@
 ---
 description: 检索枚举序列中指定数量的自定义属性。
-title: IEnumDebugCustomAttributes：： Next |Microsoft Docs
+title: IEnumDebugCustomAttributes：：Next |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,17 +11,18 @@ ms.assetid: e36f856b-2619-42d1-b73e-4f2390fc22bd
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8b1e65f993d91bedde8fb02631a0e2c369d43522
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: d840d079df50d6df9fa08235dcf19f47c7d08f89
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105083084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122103372"
 ---
 # <a name="ienumdebugcustomattributesnext"></a>IEnumDebugCustomAttributes::Next
 检索枚举序列中指定数量的自定义属性。
@@ -46,17 +47,17 @@ int Next(
 
 ## <a name="parameters"></a>参数
 `celt`\
-中要检索的元素的数目。 还指定数组的最大大小 `rgelt` 。
+[in]要检索的元素数。 还指定数组的最大 `rgelt` 大小。
 
 `rgelt`\
-弄要填充的 [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 对象的数组。
+[out]要填充 [的 IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md) 对象的数组。
 
 `pceltFetched`\
-弄返回中实际返回的元素数 `rgelt` 。
+[out]返回 中实际返回的元素数 `rgelt` 。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果返回的元素数少于所请求的数目，则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果可能返回的元素数少于请求的元素数，则返回 `S_FALSE` ;否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEnumDebugCustomAttributes](../../../extensibility/debugger/reference/ienumdebugcustomattributes.md)
 - [IDebugCustomAttribute](../../../extensibility/debugger/reference/idebugcustomattribute.md)

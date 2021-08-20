@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6741866b2b056792ea58d03bdd3abd6ed0f28d1d532ff2b5070b1f3cbe8af5c0
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: fb2d6ff025ab98e20a2251df993e400912ac1eef
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121292580"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127150"
 ---
 # <a name="idebugexceptionevent2canpasstodebuggee"></a>IDebugExceptionEvent2::CanPassToDebuggee
 确定调试引擎是否 (DE) 支持在继续执行时将此异常传递给正在调试的程序的选项。

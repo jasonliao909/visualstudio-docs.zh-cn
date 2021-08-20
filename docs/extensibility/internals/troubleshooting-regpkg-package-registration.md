@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: fbefcdd5bbb0193339fab1b91335e16fcc0e820afd97ad35a7d39ee71582ff06
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 103e04bbfb32000e5e3a533988e6727f4323fcda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431755"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124524"
 ---
 # <a name="troubleshooting-regpkg-package-registration"></a>RegPkg 包注册疑难解答
 > [!NOTE]

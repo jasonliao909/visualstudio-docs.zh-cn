@@ -1,6 +1,6 @@
 ---
-description: 此方法获取包含符号当前值的内存上下文或对象。
-title: IDebugBinder：： Bind |Microsoft Docs
+description: 此方法获取包含符号的当前值的内存上下文或对象。
+title: IDebugBinder：：Bind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e6efe8d946721c11a664c89aefdb21fd4c8b513dd6d99c6f8680970a80e692ea
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: de3cbb35245fad317014136177a4a410edfb25b5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121403021"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104386"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
-此方法获取包含符号当前值的内存上下文或对象。
+此方法获取包含符号的当前值的内存上下文或对象。
 
 ## <a name="syntax"></a>语法
 
@@ -47,16 +47,16 @@ int Bind(
 
 ## <a name="parameters"></a>参数
 `pContainer`\
-中包含由引用的子级的 [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md) `pField` 。
+[in]包含[引用的子项的 IDebugObject。](../../../extensibility/debugger/reference/idebugobject.md) `pField`
 
 `pField`\
-中表示符号的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。
+[in]表示[符号的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
 
 `ppObject`\
-弄返回 `IDebugObject` 表示符号实例的。
+[out]返回 `IDebugObject` 表示符号实例的 。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="see-also"></a>请参阅
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)

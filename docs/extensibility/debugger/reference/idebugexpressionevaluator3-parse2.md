@@ -1,5 +1,5 @@
 ---
-description: 给定符号提供程序和计算帧的地址，将表达式字符串转换为已分析的表达式。
+description: 给定符号提供程序和计算帧的地址，将表达式字符串转换为分析的表达式。
 title: IDebugExpressionEvaluator3：:P arse2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,15 +15,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 5a10db1315249a78ebbc786dec3e54da92532ba7262294490c76c145c9a11fc6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 6d8a227bb8cf340dd0b3dc3125bd67a3d9108a66
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121360386"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122088960"
 ---
 # <a name="idebugexpressionevaluator3parse2"></a>IDebugExpressionEvaluator3::Parse2
-给定符号提供程序和计算帧的地址，将表达式字符串转换为已分析的表达式。
+给定符号提供程序和计算帧的地址，将表达式字符串转换为分析的表达式。
 
 ## <a name="syntax"></a>语法
 
@@ -55,34 +55,34 @@ HRESULT Parse2 (
 
 ## <a name="parameters"></a>参数
 `upstrExpression`\
-[in]要分析的表达式字符串。
+中要分析的表达式字符串。
 
 `dwFlags`\
-[in] [PARS一系列 PARS一AGAGS](../../../extensibility/debugger/reference/parseflags.md) 常量，用于确定如何分析表达式。
+中确定如何分析表达式的 [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md) 常量的集合。
 
 `nRadix`\
-[in]用于解释任何数值信息的基数。
+中用于解释任何数值信息的基数。
 
 `pSymbolProvider`\
-[in]符号提供程序的接口。
+中符号提供程序的接口。
 
 `pAddress`\
-[in]计算帧的地址。
+中计算帧的地址。
 
 `pbstrError`\
-[out]将错误作为可读文本返回。
+弄以用户可读的文本形式返回错误。
 
 `pichError`\
-[out]返回表达式字符串中错误开头的字符位置。
+弄返回表达式字符串中错误开头的字符位置。
 
 `ppParsedExpression`\
-[out]返回 [IDebugParsedExpression 对象中已分析的](../../../extensibility/debugger/reference/idebugparsedexpression.md) 表达式。
+弄返回 [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md) 对象中分析的表达式。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法生成已分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
+此方法生成一个分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugExpressionEvaluator3](../../../extensibility/debugger/reference/idebugexpressionevaluator3.md)接口的 **CEE** 对象实现此方法。

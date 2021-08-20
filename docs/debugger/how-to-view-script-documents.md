@@ -15,14 +15,15 @@ ms.assetid: 8b621e53-4508-4b4a-9995-70995b0b9ac8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cfaa4e2558d8d1f102b0e442e9c509313f860e4b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 72ad42572eadff6434677d0a67357ed684758a20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99853093"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161149"
 ---
 # <a name="how-to-view-script-documents-javascript"></a>如何：查看脚本文档 (JavaScript)
 

@@ -11,15 +11,16 @@ ms.assetid: 1ee53df5-b0dc-4265-9d4f-527830d08725
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 45071fb94b00be721e8c76c69dc5135a59f3a9b1
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 1d7d0ef9e592d5b8f3c1197a115b8df01aec2c60
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465772"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142164"
 ---
 # <a name="da0502-maximum-cpu-consumption-by-the-process-being-profiled"></a>DA0502：所分析的进程的 CPU 最大消耗量
 

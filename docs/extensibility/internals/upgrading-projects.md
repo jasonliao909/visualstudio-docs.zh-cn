@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f796668437ac4cb7b529e9d3db66c7aba4325c147da42132cda649199c9063ed
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 426fb7499e9c6ce9fa5fc5c9e212f30b6a73a0f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121375632"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158601"
 ---
 # <a name="upgrading-projects"></a>升级项目
 
@@ -143,7 +143,7 @@ ms.locfileid: "121375632"
 
 - 如果你处理自己的项目重载，则环境将调用你的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem2.ReloadItem%2A> (VSITEMID_ROOT) 实现。 当你收到此调用时，请重新加载项目的第一个实例 (Project1) 并继续升级项目文件。 如果你为 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) 返回 `true`，则环境知道你将处理自己的项目重载。
 
-- 如果你不处理自己的项目重载，则需为 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) 返回 `false`。 在这种情况下，在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> (QEF_ForceEdit_NoPrompting 之前，QEF_DisallowInMemoryEdits) 返回，环境将创建项目的另一个新实例（例如 Project2），如下所示：
+- 如果你不处理自己的项目重载，则需为 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.GetProperty%2A> (<xref:Microsoft.VisualStudio.Shell.Interop.__VSHPROPID.VSHPROPID_HandlesOwnReload>) 返回 `false`。 在这种情况下，在 (QEF_ForceEdit_NoPrompting QEF_DisallowInMemoryEdits) ，环境会创建项目的另一个新实例，例如 <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2.QueryEditFiles%2A> Project2，如下所示：
 
     1. 环境在你的第一个项目对象 Project1 上调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy.Close%2A>，因此使此对象处于非活动状态。
 
@@ -164,23 +164,23 @@ ms.locfileid: "121375632"
 
 ## <a name="upgrading-project-items"></a>升级项目项
 
-如果在不实现的项目系统内添加或管理项，可能需要参与项目升级过程。 Crystal Reports 是可以添加到项目系统中的项的一个示例。
+如果在未实现的项目系统中添加或管理项，可能需要参与项目升级过程。 "报表"是可添加到项目系统的项的示例。
 
-通常，项目项实施人员希望利用已经完全实例化和升级的项目，因为他们需要知道项目引用是什么，以及有哪些其他项目属性来做出升级决策。
+通常，项目项实现者希望利用已完全实例化且已升级的项目，因为他们需要知道项目引用是什么，以及存在哪些其他项目属性来做出升级决策。
 
 ### <a name="to-get-the-project-upgrade-notification"></a>获取项目升级通知
 
-1. <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading>在项目项实现中设置 vsshell80) 中定义 (标志。 当 Visual Studio shell 确定项目系统正在升级时，这会导致项目项 VSPackage 自动加载。
+1. 在项目 <xref:Microsoft.VisualStudio.Shell.Interop.UIContextGuids80.SolutionOrProjectUpgrading> 项 (中设置 vsshell80.idl) 定义的标志。 这会导致项目项 VSPackage 在 Visual Studio shell 确定项目系统正在升级时自动加载。
 
-2. <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade>通过方法通知接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> 。
+2. 通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 方法建议 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution2.AdviseSolutionEvents%2A> 接口。
 
-3. 在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 项目系统实现完成其升级操作并创建新的已升级项目之后，将触发接口。 根据具体方案， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 接口将在 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> 、 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 或方法之后激发 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> 。
+3. 在项目系统实现完成其升级操作并创建了新的升级项目后， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 将触发 接口。 根据方案， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEventsProjectUpgrade> 接口在 、 或 方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenSolution%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterOpenProject%2A> 之后 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3.OnAfterLoadProject%2A> 触发。
 
 ### <a name="to-upgrade-the-project-item-files"></a>升级项目项文件
 
-1. 你必须在项目项实现中仔细管理文件备份过程。 这种情况特别适用于并行备份，其中 `fUpgradeFlag` 方法的参数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> 设置为 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> ，其中已备份的文件沿着指定为 ".old" 的侧文件放置。 在升级项目之前，备份的文件早于系统时间，可以指定为过时。 而且，它们可能会被覆盖，除非你采取特定的步骤来防止出现这种情况。
+1. 必须在项目项实现中仔细管理文件备份过程。 这尤其适用于并行备份，其中 方法的 参数设置为 ，其中已备份的文件与指定为 `fUpgradeFlag` <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectUpgradeViaFactory.UpgradeProject%2A> ".old"的并行文件一起 <xref:Microsoft.VisualStudio.Shell.Interop.__VSPPROJECTUPGRADEVIAFACTORYFLAGS.PUVFF_SXSBACKUP> 放置。 可以将在升级项目时系统时间之前备份的文件指定为过时文件。 此外，除非采取特定步骤来防止这种情况，否则可能会覆盖它们。
 
-2. 当项目项收到项目升级通知时，仍然会显示 " **Visual Studio 转换向导**"。 因此，应使用接口的方法向 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 向导 UI 提供升级消息。
+2. 当项目项收到项目升级通知时，仍然Visual Studio **转换** 向导。 因此，应该使用 接口 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUpgradeLogger> 的方法向向导 UI 提供升级消息。
 
 ## <a name="see-also"></a>请参阅
 

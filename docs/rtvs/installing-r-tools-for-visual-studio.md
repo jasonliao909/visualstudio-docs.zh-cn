@@ -7,15 +7,16 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
 monikerRange: vs-2017
-ms.openlocfilehash: 9abcdbe0c9e9f74b2e8d0424230100441804ed2a
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 028746c19729395f36ae7035a34d82386f89af72
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140266"
 ---
 # <a name="how-to-install-r-tools-for-visual-studio"></a>如何安装针对 Visual Studio 的 R 工具
 

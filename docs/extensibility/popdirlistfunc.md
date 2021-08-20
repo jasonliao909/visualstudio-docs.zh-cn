@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 21ccd6041eb5a6790635975150910bcb31a515aa6f800743ff94be45e36c579f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: af9e4c350801b7ee14c577194d4df384d7bb42a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121447891"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158491"
 ---
 # <a name="popdirlistfunc"></a>POPDIRLISTFUNC
 这是一个回调函数，它向 [SccPopulateDirList](../extensibility/sccpopulatedirlist-function.md) 函数提供，用于更新目录的集合 () 选择使用文件名来找出哪些受源代码管理。
@@ -37,7 +37,7 @@ typedef BOOL (*POPDIRLISTFUNC)(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>Parameters
  pvCallerData
 
 [in]给定给 [SccPopulateDirList 的用户值](../extensibility/sccpopulatedirlist-function.md)。

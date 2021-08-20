@@ -14,14 +14,15 @@ ms.assetid: b697ef2d-3f5d-40df-b113-7068a5bec0d4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 72e69300e9dc621ea346c05923168c33bc7065c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 96258c0318098f7a7bb5abb5481192cc7808c7ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150997"
 ---
 # <a name="symbol-path-command"></a>“符号路径”命令
 设置调试器的目录列表，以搜索符号。

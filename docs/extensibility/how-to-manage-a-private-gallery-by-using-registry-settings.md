@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e1048f5af6457d8429694c73f37e82f5b420bc66f08abd198016388441346f40
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 38cc90f557bb901f2ef9710bc1cd129e471a3781
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124928"
 ---
 # <a name="how-to-manage-a-private-gallery-by-using-registry-settings"></a>如何：使用注册表设置管理专用库
 如果你是独立 Shell 扩展的管理员或开发人员，可以控制对 Visual Studio 库、示例库或专用库中的控件、模板和工具的访问。 若要使库可用或不可用，请创建一个 *.pkgdef* 文件，用于描述修改后的注册表项及其值。
@@ -53,7 +53,7 @@ DisplayNamePackageGuid={GUID} (REG_SZ)
 
   必须 `DisplayName` 指定 或 `DisplayNameResourceID` 同时 `DisplayNamePackageGuid` 指定 和 。 如果指定了所有 ，则 `DisplayNameResourceID` 使用 `DisplayNamePackageGuid` 和 对。
 
-## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>使用 .pkgdef Visual Studio库
+## <a name="disable-the-visual-studio-gallery-using-a-pkgdef-file"></a>使用 .pkgdef 文件Visual Studio库
  可以在 *.pkgdef* 文件中禁用库。 以下条目禁用Visual Studio库：
 
 ```

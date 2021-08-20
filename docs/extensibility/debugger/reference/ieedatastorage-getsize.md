@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 2ae0785d7c146c1fe9ca1765165540ae6243f50c5c760c77e0598b32eddd0425
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0b0de358f2f207da7586c09be094ec14f6dadfbf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121321527"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122095785"
 ---
 # <a name="ieedatastoragegetsize"></a>IEEDataStorage::GetSize
 返回此 对象中包含的字节数。
@@ -51,6 +51,6 @@ int GetSize(
 ## <a name="remarks"></a>备注
  使用 [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md) 方法检索实际数据字节。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)
 - [GetData](../../../extensibility/debugger/reference/ieedatastorage-getdata.md)

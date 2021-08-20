@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: e77626c97e24cfb3037bea1e29b09be4567a06c3d4015796f4e2f347baae0811
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: b93e0cb2a3b74fe26b60094eb74d010e0b1f77ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121436690"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122162001"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>演练：使用静态代码分析查找代码缺陷
 

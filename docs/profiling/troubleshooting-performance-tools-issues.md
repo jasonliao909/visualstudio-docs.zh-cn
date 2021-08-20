@@ -7,15 +7,16 @@ ms.assetid: 0b61cdf7-75b7-4abd-aff2-7bd997717626
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d371384d70c6a6a7a57620839eca2c41c292d0b1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93be734d0f7abc6c1e839ba5940575455c6e6847
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922043"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141059"
 ---
 # <a name="troubleshoot-performance-tools-issues"></a>性能工具问题疑难解答
 使用分析工具时，可能会遇到以下问题之一：
