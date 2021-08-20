@@ -1,6 +1,6 @@
 ---
 title: 使用扩展性接口自定义 UI 功能
-description: 了解 Office 开发工具Visual Studio提供扩展性接口来帮助你自定义 UI 功能。
+description: 了解中Office开发工具Visual Studio提供扩展性接口来帮助你自定义 UI 功能。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: b09bef8bfedc1420172c11ab8913d2ba9b305964ef0cd4d0212477d84490de43
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 4e4c37a90774cdbd148900a8df9ddb6b3d58bb1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121424406"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106531"
 ---
 # <a name="customize-ui-features-by-using-extensibility-interfaces"></a>使用扩展性接口自定义 UI 功能
   Visual Studio 中的 Office 开发工具提供了一些类和设计器，使用它们在 VSTO 外接程序中创建自定义任务窗格、功能区自定义项和 Outlook 窗体区域时可处理许多实现细节。 不过，如果你有特殊要求，也可以自己为每项功能实现 *扩展性接口* 。
@@ -41,15 +41,15 @@ ms.locfileid: "121424406"
 
  使用 Visual Studio 中的 Office 项目模板创建 VSTO 外接程序时，不必实现扩展性接口来自定义功能区之类的功能。 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 可为你实现这些接口。 相反，你可以使用 Visual Studio 提供的更为直观的类和设计器。 不过，只要你愿意，你仍然可以直接在 VSTO 外接程序中实现扩展性接口。
 
- 有关为这些功能提供的类和设计器Visual Studio，请参阅自定义[任务](../vsto/custom-task-panes.md)窗格、功能区设计器[和 创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)。 [](../vsto/ribbon-designer.md)
+ 有关为这些功能提供的Visual Studio和设计器的详细信息，[请参阅自定义任务](../vsto/custom-task-panes.md)窗格、功能区设计器 和[创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)。 [](../vsto/ribbon-designer.md)
 
-## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>可在外接程序中VSTO扩展性接口
+## <a name="extensibility-interfaces-you-can-implement-in-a-vsto-add-in"></a>可以在外接程序中VSTO扩展性接口
  下表列出了你可以实现的扩展性接口以及支持这些接口的应用程序。
 
 |接口|说明|应用程序|
 |---------------|-----------------|------------------|
-|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：** 可以将功能区 **(XML)** 项添加到项目，以在外接程序VSTO <xref:Microsoft.Office.Core.IRibbonExtensibility> 默认实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
-|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Word|
+|<xref:Microsoft.Office.Core.IRibbonExtensibility>|实现此接口可自定义功能区 UI。 **注意：** 可以将功能区 **(XML)** 项添加到项目，以在外接程序VSTO <xref:Microsoft.Office.Core.IRibbonExtensibility> 生成默认实现。 有关更多信息，请参见 [Ribbon XML](../vsto/ribbon-xml.md)。|Excel<br /><br /> [!INCLUDE[InfoPath_15_short](../vsto/includes/infopath-15-short-md.md)]<br /><br /> InfoPath 2010<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> Project<br /><br /> Visio<br /><br /> Word|
+|<xref:Microsoft.Office.Core.ICustomTaskPaneConsumer>|实现此接口可创建自定义任务窗格。|Excel<br /><br /> Outlook<br /><br /> PowerPoint<br /><br /> 单词|
 |<xref:Microsoft.Office.Interop.Outlook.FormRegionStartup>|实现此接口可创建 Outlook 窗体区域。|Outlook|
 
  Microsoft Office 还定义了其他一些扩展性接口，例如 <xref:Microsoft.Office.Core.IBlogExtensibility>、 <xref:Microsoft.Office.Core.EncryptionProvider>和 <xref:Microsoft.Office.Core.SignatureProvider>。 Visual Studio 不支持在使用 Office 项目模板创建的 VSTO 外接程序中实现这些接口。
@@ -57,7 +57,7 @@ ms.locfileid: "121424406"
 ## <a name="use-extensibility-interfaces"></a>使用扩展性接口
  要使用扩展性接口自定义 UI 功能，请在 VSTO 外接程序项目中实现相应的接口。 然后，重写 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法以返回实现该接口的类的实例。
 
- 有关演示如何在 VSTO for Outlook 外接程序中实现 、 和 接口的示例应用程序，请参阅 Office 开发示例中的 <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> UI <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> [管理器示例](../vsto/office-development-samples.md)。
+ 有关演示如何在 VSTO for Outlook 外接程序中实现 、 和 接口的示例应用程序，请参阅 Office 开发示例中的 UI 管理器 <xref:Microsoft.Office.Core.IRibbonExtensibility> <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> <xref:Microsoft.Office.Interop.Outlook.FormRegionStartup> [示例](../vsto/office-development-samples.md)。
 
 ### <a name="example-of-implementing-an-extensibility-interface"></a>实现扩展性接口的示例
  下面的代码示例演示用于创建自定义任务窗格的 <xref:Microsoft.Office.Core.ICustomTaskPaneConsumer> 接口的简单实现。 此示例定义两个类：

@@ -15,17 +15,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 796c41ae50a33f00f72e0286d5e9680f9016cf58
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 555f805203e7f0f4097d97d0950d85be859b1c1e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952559"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122148696"
 ---
 # <a name="walkthrough-profile-a-sharepoint-application"></a>演练：分析 SharePoint 应用程序
-  本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 探查器使你可以查找和消除最昂贵的 (执行项目的) 部分，也称为 *热路径*。
+  本演练演示在 Visual Studio 中如何使用分析工具优化 SharePoint 应用程序的性能。 此示例应用程序是 SharePoint 功能事件接收器，其中包含降低功能事件接收器性能的空闲循环。 Visual Studio 事件探查器使你可以查找和消除最昂贵的 (项目的最慢执行) 部分，也称为 *热路径*。
 
  本演练演示了下列任务：
 
@@ -51,19 +52,19 @@ ms.locfileid: "99952559"
 
 ### <a name="to-create-a-sharepoint-project"></a>创建 SharePoint 项目
 
-1. 在菜单栏上，选择 "**文件**"  >  "**新建**  >  **项目**" 以显示 "**新建项目**" 对话框。
+1. 在菜单栏上，选择 "**文件**" "  >  **新建**  >  **Project** " 以显示 "**新建 Project** " 对话框。
 
 2. 展开 " **Visual c #** " 或 " **Visual Basic**" 下的 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
 
-3. 在 "模板" 窗格中，选择 " **SharePoint 2010 项目** " 模板。
+3. 在 "模板" 窗格中，选择 **SharePoint 2010 Project** 模板。
 
 4. 在 " **名称** " 框中，输入 **ProfileTest**，然后选择 " **确定"** 按钮。
 
-    " **SharePoint 自定义向导** " 随即出现。
+    此时将显示 " **SharePoint 自定义向导**"。
 
-5. 在 " **指定用于调试的站点和安全级别** " 页上，输入要在其中调试站点定义的 SharePoint 服务器站点的 URL，或使用 (http://<em>system name</em>/) 的默认位置。
+5. 在 "**指定用于调试的站点和安全级别**" 页上，输入要在其中调试站点定义的 SharePoint 服务器站点的 URL，或使用 (http://<em>system name</em>/) 的默认位置。
 
-6. 在 " **此 SharePoint 解决方案的信任级别是什么？** " 部分中，选择 " **部署为场解决方案** " 选项按钮。
+6. 在 "**此 SharePoint 解决方案的信任级别是什么？** " 部分中，选择 "**部署为场解决方案**" 选项按钮。
 
     目前，只能分析场解决方案。 有关沙盒解决方案与场解决方案的详细信息，请参阅 [沙盒解决方案注意事项](../sharepoint/sandboxed-solution-considerations.md)。
 
@@ -182,7 +183,7 @@ ms.locfileid: "99952559"
 
 6. 在 **解决方案资源管理器** 中，打开项目 (**ProfileTest**) 的快捷菜单，然后选择 " **属性**"。
 
-7. 在 " **属性** " 对话框中，选择 " **SharePoint** " 选项卡。
+7. 在 "**属性**" 对话框中，选择 " **SharePoint** " 选项卡。
 
 8. 在 " **活动部署配置** " 列表中，选择 " **无激活**"。
 
@@ -211,14 +212,14 @@ ms.locfileid: "99952559"
 
 5. 在 " **性能向导**" 的第四页上，选中 "在 **向导完成后启动分析** " 复选框处于选中状态，然后选择 " **完成** " 按钮。
 
-     该向导在服务器上启用应用程序分析，显示 " **性能资源管理器** " 窗口，然后生成、部署和运行 SharePoint 应用程序。
+     该向导在服务器上启用应用程序分析，显示 "**性能资源管理器**" 窗口，然后生成、部署和运行 SharePoint 应用程序。
 
 ## <a name="run-the-sharepoint-application"></a>运行 SharePoint 应用程序
  激活 SharePoint 中的功能，触发要运行的 `FeatureActivation` 事件代码。
 
 ### <a name="to-run-the-sharepoint-application"></a>运行 SharePoint 应用程序
 
-1. 在 SharePoint 中，打开 " **站点操作** " 菜单，然后选择 " **站点设置**"。
+1. 在 SharePoint 中，打开 "**站点操作**" 菜单，然后选择 "**站点设置**"。
 
 2. 在 " **站点操作** " 列表中，选择 " **管理站点功能** " 链接。
 
@@ -274,7 +275,7 @@ ms.locfileid: "99952559"
 
      现在已消除对空闲循环的调用，功能应更快激活。 示例分析报告应反映此情况。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [性能会话概述](../profiling/performance-session-overview.md)
 - [性能分析初学者指南](../profiling/beginners-guide-to-performance-profiling.md)
 - [使用 Visual Studio 探查器查找应用程序瓶颈](/archive/msdn-magazine/2008/march/find-application-bottlenecks-with-visual-studio-profiler)

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 465340b0252acf75fc9a083e2990e4857d300c911e939ea8d4bb726c1fff6a3e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 703c0717a93cd2a201bad708830c42497758edb3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275783"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086997"
 ---
 # <a name="groups-element"></a>Groups 元素
 包含定义 VSPackage 的命令组的项。
@@ -65,6 +65,6 @@ ms.locfileid: "121275783"
 </Groups>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Vspackage 如何添加用户界面元素](../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [命令、菜单和工具栏](../extensibility/internals/commands-menus-and-toolbars.md)

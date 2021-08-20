@@ -11,14 +11,15 @@ ms.assetid: 546121bc-67e0-4a5a-a456-12bd78fd6de2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 71a7e1783e470ee5ca1b7f1f18cd3d06cf1b5f49
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 483ee104f2141888d5f4468278f7b1707fe6b7bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149684"
 ---
 # <a name="marker_serieswrite_message-method"></a>marker_series::write_message 方法
 向并发可视化工具跟踪文件写入一条消息。

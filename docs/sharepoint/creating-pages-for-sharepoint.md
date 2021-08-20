@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: 6893171ab5154e91e04aa64604b295f785bc5624d30be943d31eb83bea8afab2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ea354e391be2f94e2d80c3c549219c3d9e1b0787
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121425578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149528"
 ---
 # <a name="create-pages-for-sharepoint"></a>为 SharePoint 创建页
   可为 SharePoint 网站创建应用程序页、网站页、母版页和页面布局。

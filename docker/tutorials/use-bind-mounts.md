@@ -6,16 +6,15 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
-ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 6be724056171bd2d7b70c3d3fa726fcdad1df1f8
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: a33f185152e147b804d561a0511ebde62dcbc717
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334286"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067835"
 ---
 # <a name="use-bind-mounts"></a>使用绑定装载
 

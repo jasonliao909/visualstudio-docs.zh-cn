@@ -1,6 +1,6 @@
 ---
-description: 此方法发送的事件表示在端口上创建和销毁进程和程序。
-title: IDebugPortEvents2：：Event |Microsoft Docs
+description: 此方法发送表示在端口上创建和销毁进程和程序的事件。
+title: IDebugPortEvents2：： Event |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 30731bddcde55f34cf3e568434909bcd68f728735d44b757ec0da898f31189d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 72fba2dcbe82879ab22783cf07727d5c00d546d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121323464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133024"
 ---
 # <a name="idebugportevents2event"></a>IDebugPortEvents2::Event
-此方法发送的事件表示在端口上创建和销毁进程和程序。
+此方法发送表示在端口上创建和销毁进程和程序的事件。
 
 ## <a name="syntax"></a>语法
 
@@ -53,19 +53,19 @@ int Event(
 
 ## <a name="parameters"></a>参数
 `pMachine`\
-[in]一 [个 IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 对象，该对象表示调试服务器 (发生事件) 实例都有 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 一个。
+中表示 (调试服务器的 [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md) 对象，该对象针对发生事件的) 的每个实例都有一个 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 。
 
 `pPort`\
-[in]一 [个 IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 对象，表示事件发生的端口。
+中一个 [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md) 对象，该对象表示发生事件的端口。
 
 `pProcess`\
-[in]一 [个 IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象，表示事件发生的进程。
+中一个 [IDebugProcess2](../../../extensibility/debugger/reference/idebugprocess2.md) 对象，该对象表示发生事件的进程。
 
 `pProgram`\
-[in]一 [个 IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，表示事件发生的程序。
+中一个 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，该对象表示发生事件的程序。
 
 `pEvent`\
-[in]标识 [事件的 IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 对象。 可能的事件如下所示：
+中标识事件的 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) 对象。 可能的事件如下所示：
 
 - [IDebugProcessCreateEvent2](../../../extensibility/debugger/reference/idebugprocesscreateevent2.md)
 
@@ -76,12 +76,12 @@ int Event(
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 
 `riidEvent`\
-[in]事件的 GUID。 由于事件在调用此方法之前被强制转换到 [IDebugEvent2，](../../../extensibility/debugger/reference/idebugevent2.md) 因此此标识符可以更轻松地确定要发送的事件。
+中事件的 GUID。 由于在调用此方法之前该事件会强制转换为 [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md) ，因此，此标识符可以更轻松地确定要发送的事件。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugPortEvents2](../../../extensibility/debugger/reference/idebugportevents2.md)
 - [IDebugCoreServer2](../../../extensibility/debugger/reference/idebugcoreserver2.md)
 - [IDebugPort2](../../../extensibility/debugger/reference/idebugport2.md)

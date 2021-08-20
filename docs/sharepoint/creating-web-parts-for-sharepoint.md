@@ -23,14 +23,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: ae28ab44b12c979f3c405bd7d853d7a2d196aae4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a21ec422677dfa0a2de03f8822046000b06a0293
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122149281"
 ---
 # <a name="create-web-parts-for-sharepoint"></a>为 SharePoint 创建 Web 部件
   通过使用 Web 部件，你可以使用浏览器来修改 SharePoint 站点页的内容、外观和行为。 Web 部件是在 Web 部件页中运行的服务器端控件：它们是在 SharePoint 站点上显示的页的构建基块。 请参阅[构建基块：Web 部件](/previous-versions/office/developer/sharepoint-2010/ee535520(v=office.14))。

@@ -14,21 +14,22 @@ ms.assetid: dafac00e-df9d-4d4a-95a6-e34b4d099425
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: da4db396d718fcd8b88b476278a2470663b58a8b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55b6a64953944bacd8fcda73a9edeab00a99afc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99859471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067203"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
 可以通过为 TableAdapter 创建分部类文件并向其添加代码 (而不是将代码添加到 *DatasetName* 文件) 来扩展 tableadapter 的功能。 分部类使特定类的代码可以在多个物理文件之间进行分隔。 有关详细信息，请参阅 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分 (类型) ](/dotnet/csharp/language-reference/keywords/partial-type)。
 
 每次对数据集中的 TableAdapter 进行更改时，都将生成定义 TableAdapter 的代码。 如果在修改 TableAdapter 的配置的任何向导运行期间进行了更改，也会生成此代码。 若要防止在重新生成 TableAdapter 时删除代码，请将代码添加到 TableAdapter 的分部类文件中。
 
-默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName.Designer.cs*) 。 **数据集项目** 属性中指定的项目包含一个名为 *DatasetName* 的文件 (或包含数据集代码的 *DatasetName.DataSet.Designer.cs*) 。
+默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName*) 。 **数据集 Project** 属性中指定的项目包含一个名为 " *DatasetName* " 的文件 (或包含数据集代码的 *DatasetName*) 。
 
 > [!NOTE]
 > 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 必须将现有部分数据集类手动移动到数据集项目。
@@ -67,7 +68,7 @@ ms.locfileid: "99859471"
     }
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
 - [向 n 层应用程序中的数据集添加代码](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

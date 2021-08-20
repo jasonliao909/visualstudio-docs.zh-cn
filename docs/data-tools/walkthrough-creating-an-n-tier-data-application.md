@@ -14,21 +14,22 @@ ms.assetid: d15e4d31-2839-48d9-9e0e-2e73404d82a2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ed395c60ec16eeff6a5aac88a99698193e8bacbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbdd4b7ffbfdef2cfce9904a92cc392594e6508f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866146"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129930"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
 
 在 N 层应用程序中，分离各层的一种方法是为要包括在应用程序中的每一层创建相互独立的项目。 类型化数据集包含一个 `DataSet Project` 属性，该属性决定了生成的数据集和 `TableAdapter` 代码应归属到哪些项目中。
 
-本演练演示如何使用“数据集设计器”将数据集和 `TableAdapter` 代码分离到相互独立的类库项目中。 分离数据集和 TableAdapter 代码后，将 [在 Visual Studio 服务中创建 Windows Communication Foundation 服务和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以调入数据访问层。 最后，将 Windows 窗体应用程序创建为表示层。 该层将访问数据服务中的数据。
+本演练演示如何使用“数据集设计器”将数据集和 `TableAdapter` 代码分离到相互独立的类库项目中。 分离数据集和 TableAdapter 代码后，你可以[在 Visual Studio 服务中创建 Windows Communication Foundation 服务和 WCF Data Services](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md) ，以调入数据访问层。 最后，将 Windows 窗体应用程序创建为表示层。 该层将访问数据服务中的数据。
 
 在本演练中，你将执行以下步骤：
 
@@ -52,20 +53,20 @@ ms.locfileid: "99866146"
 
 ![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 N 层数据应用程序](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果没有 SQL Server Express 的 LocalDB，请从 [SQL Server Express 下载 "页](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装它。 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB 作为 **.net 桌面开发** 工作负荷的一部分进行安装，也可以作为单个组件安装。
+1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **.net 桌面开发** 工作负载的一部分进行安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在 Visual Studio 中，打开 " **SQL Server 对象资源管理器** " 窗口。  (**SQL Server 对象资源管理器** 在 Visual Studio 安装程序的 **数据存储和处理** 工作负荷中安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 " **新建查询**"。
+    1. 在 Visual Studio 中，打开 **SQL Server 对象资源管理器**"窗口。  (**SQL Server 对象资源管理器** 作为 Visual Studio 安装程序中的 **数据存储和处理** 工作负荷的一部分安装。 ) 展开 **SQL Server** 节点。 右键单击 LocalDB 实例，然后选择 "**新建查询**"。
 
        此时将打开查询编辑器窗口。
 
-    2. 将 [Northwind transact-sql 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true) 复制到剪贴板。 此 T-sql 脚本从头开始创建 Northwind 数据库，并用数据填充它。
+    2. 将[Northwind transact-sql SQL 脚本](https://github.com/MicrosoftDocs/visualstudio-docs/blob/master/docs/data-tools/samples/northwind.sql?raw=true)复制到剪贴板。 此 t-sql SQL 脚本从头开始创建 Northwind 数据库，并用数据填充它。
 
-    3. 将 T-sql 脚本粘贴到查询编辑器中，然后选择 " **执行** " 按钮。
+    3. 将 SQL 脚本粘贴到查询编辑器中，然后选择 "**执行**" 按钮。
 
        一小段时间后，查询将完成运行，并创建 Northwind 数据库。
 
@@ -96,7 +97,7 @@ ms.locfileid: "99866146"
 
 1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
-2. 在 " **新建项目** " 对话框中，在中间窗格 **中选择 "类库"**。
+2. 在 "**新建 Project** " 对话框中，在中间窗格 **中选择 "类库"**。
 
 3. 将项目命名为 **DataAccessTier** ，然后选择 **"确定"**。
 
@@ -152,11 +153,11 @@ ms.locfileid: "99866146"
 
 3. 在“属性”窗口中查找“数据集项目”节点。
 
-4. 在 " **数据集项目** " 列表中，选择 " **DataEntityTier**"。
+4. 在 **数据集 Project** 列表中，选择 " **DataEntityTier**"。
 
 5. 在“生成”菜单上，选择“生成解决方案” 。
 
-   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集 () 的项目 `DataAccessTier` 现在仅包含 tableadapter。 **数据集项目** 属性中指定的项目 (`DataEntityTier`) 包含类型化数据集 *NorthwindDataSet* (或 *NorthwindDataSet.Dataset.Designer.cs*) 。
+   将数据集和 TableAdapter 分离到两个类库项目中。 最初包含整个数据集 () 的项目 `DataAccessTier` 现在仅包含 tableadapter。 **数据集 Project** 属性中指定的项目 (`DataEntityTier`) 包含类型化数据集 (或 *NorthwindDataSet*) 的数据 *集。*
 
 > [!NOTE]
 > 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 你必须手动将它们移到数据集项目中。
@@ -168,7 +169,7 @@ ms.locfileid: "99866146"
 
 1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
-2. 在 " **新建项目** " 对话框的左侧窗格中，选择 " **WCF**"。 在中间窗格中，选择 " **WCF 服务库**"。
+2. 在 "**新建 Project** " 对话框的左侧窗格中，选择 " **WCF**"。 在中间窗格中，选择 " **WCF 服务库**"。
 
 3. 将项目命名为 **DataService** ，然后选择 **"确定"**。
 
@@ -191,7 +192,7 @@ ms.locfileid: "99866146"
 
 6. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetCustomers”。
 
-7. 单击“完成” 。
+7. 单击“完成”。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>在数据访问层中创建返回 Orders 表的方法
 
@@ -205,7 +206,7 @@ ms.locfileid: "99866146"
 
 5. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetOrders”。
 
-6. 单击“完成” 。
+6. 单击“完成”。
 
 7. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
@@ -250,7 +251,7 @@ ms.locfileid: "99866146"
     DataEntityTier.NorthwindDataSet.OrdersDataTable GetOrders();
     ```
 
-3. 在 DataService 项目中，双击 " **Service1** (或 **Service1.cs** ") 。
+3. 在 DataService 项目中，双击 " **Service1** (或" **Service1** ") 。
 
 4. 将以下代码添加到 **Service1** 类：
 
@@ -292,7 +293,7 @@ ms.locfileid: "99866146"
 
 1. 右键单击“解决方案资源管理器”中的解决方案，然后选择“添加” > “新建项目”。
 
-2. 在 " **新建项目** " 对话框的左侧窗格中，选择 " **Windows 桌面**"。 在中间窗格中，选择 " **Windows 窗体应用**"。
+2. 在 "**新建 Project** " 对话框的左侧窗格中，选择 " **Windows 桌面**"。 在中间窗格中，选择 " **Windows 窗体应用**"。
 
 3. 将该项目命名为“PresentationTier”，然后单击“确定”。
 
@@ -381,7 +382,7 @@ ms.locfileid: "99866146"
 
 - 将其他方法添加到服务，以将数据更新回数据库。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 N 层应用程序中使用数据集](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [分层更新](../data-tools/hierarchical-update.md)
