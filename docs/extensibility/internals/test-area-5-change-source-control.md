@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 541a904789b3e3d9dc7334790fa473cde2e40e63479e84b3ee61e4d376a9ba50
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 24cbcc50b3641bc62242ee7216d6ce4c1f290efd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158770"
 ---
 # <a name="test-area-5-change-source-control"></a>测试区域 5：更改源代码管理
 此源代码管理插件测试区域介绍如何通过"更改源代码管理"命令 **更改** 源代码管理。

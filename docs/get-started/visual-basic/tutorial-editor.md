@@ -8,19 +8,19 @@ ms.custom:
 ms.date: 11/20/2018
 ms.technology: vs-ide-general
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: fe411074c95db15fde4819ffb07eca39a05e844d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 1387e430278b7216e49592efc413d99ad93699ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390159"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152076"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>了解如何将代码编辑器用于 Visual Basic
 

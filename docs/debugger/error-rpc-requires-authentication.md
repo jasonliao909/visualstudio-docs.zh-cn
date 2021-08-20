@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f22998bc1c71a242b985739b2b92ba9743535d83
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 6de57ce80e15087b7c66986e0c44a3d7a1e3868e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146712"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122154477"
 ---
 # <a name="error-rpc-requires-authentication"></a>错误：RPC 要求身份验证
 Visual Studio 调试器无法连接到远程计算机。 本地计算机上启用了阻止远程调试的 RPC 策略。

@@ -18,17 +18,18 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 8fc6a37a327c26ec46777575c3976c227e2d1de9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fb32bc23de2335a912d1f2f6d3047af140961404
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881485"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147891"
 ---
 # <a name="information-rights-management-and-managed-code-extensions-overview"></a>信息权限管理和托管代码扩展概述
-  Microsoft Office Word 和 Microsoft Office Excel 提供 Rights Management (IRM) 的信息，这是一项功能，可帮助防止未经授权的人员查看或更改敏感信息。 有关信息 Rights Management 工作原理的详细信息，请参阅特定 Office 应用程序中的帮助。
+  Microsoft OfficeWord 和 Microsoft Office Excel 提供 Rights Management (IRM) 的信息，这是一项可帮助防止未经授权的人员查看或更改敏感信息的功能。 有关信息 Rights Management 工作原理的详细信息，请参阅特定 Office 应用程序中的帮助。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -42,9 +43,9 @@ ms.locfileid: "99881485"
 
  若要解决此问题，对文档或工作簿具有完全控制访问权限的用户必须更改默认权限设置，以允许以编程方式访问对象模型。 有关详细信息，请参阅 [如何：允许代码在具有受限权限的文档的后台运行](../vsto/how-to-permit-code-to-run-behind-documents-with-restricted-permissions.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)
-- [Office 文档上的密码保护](../vsto/password-protection-on-office-documents.md)
-- [保护 Office 解决方案](../vsto/securing-office-solutions.md)
+- [Office 文档的密码保护](../vsto/password-protection-on-office-documents.md)
+- [安全 Office 解决方案](../vsto/securing-office-solutions.md)
 - [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)

@@ -15,12 +15,13 @@ ms.assetid: 211edbd7-9fe4-4251-ba85-8bec4363261b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 78c6dd0f9ffa89f7b1a2ac7ac7a2344b67a47970
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: c12affe5d2979aefbc8776264fade321e4950818
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868044"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140058"
 ---
 # <a name="configure-ports-for-test-controllers-and-test-agents"></a>为测试控制器和测试代理配置端口
 

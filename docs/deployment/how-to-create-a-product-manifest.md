@@ -1,6 +1,6 @@
 ---
 title: 创建产品清单 |Microsoft Docs
-description: 了解如何使用包含单个产品清单的包和每个区域设置的包清单，为 ClickOnce 应用程序部署必备组件。
+description: 了解如何使用包含单个产品清单的包和每个区域设置的包清单，为 ClickOnce 应用程序部署先决条件。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,14 +18,15 @@ ms.assetid: 2d316aaa-8bc0-4ce5-90ab-23b3eac0b5dd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 40a620023dad754e3de4fedb9bc4fdbe7b7835a5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e58dbabb15b0d0a3643b38693d614aaf16a4a60c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122160733"
 ---
 # <a name="how-to-create-a-product-manifest"></a>如何：创建产品清单
 若要为应用程序部署必备组件，可以创建一个引导程序包。 引导程序包包含单个产品清单文件，但每个区域设置都包含包清单。 包清单包含包的特定于本地化的方面。 这包括字符串、最终用户许可协议和语言包。
@@ -66,7 +67,7 @@ ms.locfileid: "99861226"
 
 6. 将 *CorePackage.msi* 文件复制或移动到 *C:\package* 文件夹。
 
-7. 添加 XML 以便使用引导程序命令安装包。 引导程序自动将 **/qn** 标志添加到 *.msi* 文件中，该文件将以无提示方式进行安装。 如果文件是 *.exe*，则引导程序将使用 shell 运行 *.exe* 文件。 以下 XML 不显示 *CorePackage.msi* 的任何参数，但你可以将命令行参数放入 `Arguments` 属性。
+7. 添加 XML 以便使用引导程序命令安装包。 引导程序自动将 **/qn** 标志添加到 *.msi* 文件，该文件将以无提示方式进行安装。 如果该文件是 *.exe*，则引导程序将使用 shell 运行 *.exe* 文件。 以下 XML 不显示 *CorePackage.msi* 的任何参数，但你可以将命令行参数放入 `Arguments` 属性。
 
     ```xml
     <Commands>
@@ -114,7 +115,7 @@ ms.locfileid: "99861226"
     </Commands>
     ```
 
-12. 将 *C:\package* 文件夹移到 Visual Studio 引导程序目录。 对于 Visual Studio 2010，这是 *\Program Files\Microsoft SDKs\Windows\v7.0A\Bootstrapper\Packages* 目录。
+12. 将 *C:\package* 文件夹移到 Visual Studio 引导程序目录。 对于 Visual Studio 2010，这是 *\Program Files\Microsoft sdk \ Windows \v7.0A\Bootstrapper\Packages* 目录。
 
 ## <a name="example"></a>示例
  产品清单包含自定义必备组件的安装说明。
@@ -160,5 +161,5 @@ ms.locfileid: "99861226"
 </Product>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

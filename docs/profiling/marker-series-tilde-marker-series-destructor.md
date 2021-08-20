@@ -11,14 +11,15 @@ ms.assetid: 5632523b-fd58-40aa-8523-f29ee9083a65
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 481ca4967e43dc1af6a994d6298f8173b96ddbf8
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 97b14ff032d432b2b806fc1a3e1645cdbb9078c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150165"
 ---
 # <a name="marker_seriesmarker_series-destructor"></a>marker_series::~marker_series 析构函数
 销毁 marker_series 对象并释放所有已分配的资源。

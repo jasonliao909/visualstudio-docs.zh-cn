@@ -4,18 +4,19 @@ description: 连接体验从客户端计算机连接到 Internet，并向客户�
 ms.date: 05/20/2021
 ms.topic: conceptual
 helpviewer_keywords: ''
-author: SayyedaM
-ms.author: sayyedamussa
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
-ms.openlocfilehash: 689fc40be8aee959023777a3fac6d9134ee979ea
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: c1b2121b69db3efd053a55aaf25ad0e9750351c4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222885"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144088"
 ---
 # <a name="connected-experiences-in-visual-studio"></a>**Visual Studio 中的连接体验** #
 

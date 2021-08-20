@@ -1,6 +1,6 @@
 ---
-description: 获取此解析所表示的断点的类型。
-title: IDebugBreakpointResolution2：： GetBreakpointType |Microsoft Docs
+description: 获取此解析表示的断点的类型。
+title: IDebugBreakpointResolution2：：GetBreakpointType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -11,20 +11,21 @@ ms.assetid: 2b707fb9-f703-4c78-91bf-7434f57790a0
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 1cc7eed63a2eed3a3fd1f526e01e60ed1f1d41a8
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 7f2213a2f112bf84817532210c457da534c8d86c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105095740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127449"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
-获取此解析所表示的断点的类型。
+获取此解析表示的断点的类型。
 
 ## <a name="syntax"></a>语法
 
@@ -42,16 +43,16 @@ int GetBreakpointType(
 
 ## <a name="parameters"></a>参数
 `pBPType`\
-弄返回 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举中的一个值，该值指定此断点的类型。
+[out]从指定此断 [点BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举返回一个值。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。 如果 `bpResLocation` 关联的 [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 结构中的字段无效，则返回 E_FAIL。
+如果成功，则返回 `S_OK` ;否则返回错误代码。 如果E_FAIL结构 `bpResLocation` 中的字段 [无效，BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 返回值。
 
 ## <a name="remarks"></a>备注
-例如，断点可以是代码或数据断点。
+例如，断点可能是代码或数据断点。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为 `CDebugBreakpointResolution` 公开 [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为公开 `CDebugBreakpointResolution` [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -84,7 +85,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

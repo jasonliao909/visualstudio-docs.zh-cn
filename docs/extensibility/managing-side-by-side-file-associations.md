@@ -1,6 +1,6 @@
 ---
 title: 管理并行文件关联 |Microsoft Docs
-description: 如果你的 VSPackage 提供文件关联，请决定如何处理在其中特定版本的 Visual Studio 中打开文件的并行安装。
+description: 如果你的 VSPackage 提供文件关联，请决定如何处理 Visual Studio 的特定版本打开文件的并行安装。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -10,14 +10,15 @@ ms.assetid: 9b6df3bc-d15c-4a5d-9015-948a806193b7
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 083eef2454a9e805b1cb8b3e85a6d7d81263a0dd
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 306643116e295342bcfb602eef370af418c87733
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105073048"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122152193"
 ---
 # <a name="manage-side-by-side-file-associations"></a>管理并行文件关联
 
@@ -43,25 +44,25 @@ ms.locfileid: "105073048"
 
    CustomAction 表中的以下行将 DEVENV_EXE_LATEST 属性设置为由 [必须在安装后运行的命令](../extensibility/internals/commands-that-must-be-run-after-installation.md)中讨论的 AppSearch 和 RegLocator 表所设置的属性。 InstallExecuteSequence 表中的行在执行顺序初期计划自定义操作。 "条件" 列中的值使逻辑工作：
 
-  - 如果是最新版本，则 Visual Studio .NET 2002 是最新版本。
+  - Visual Studio .net 2002 是最新版本（如果它是唯一的版本）。
 
-  - 仅当 Visual Studio .NET 2003 存在且不存在时，它才是最新版本 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
+  - 仅当 .net 2003 存在且不存在时，它才是最新版本 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 Visual Studio
 
   - [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 是最新版本（如果它是唯一的版本）。
 
     最终结果是 DEVENV_EXE_LATEST 包含 devenv.exe 的最新版本的路径。
 
-  **确定 Visual Studio 最新版本的 CustomAction 表行**
+  **确定 Visual Studio 的最新版本的 CustomAction 表行**
 
-  |操作|类型|Source|目标|
+  |操作|类型|源|目标|
   |------------|----------|------------|------------|
   |CA_SetDevenvLatest_2002|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2002]|
   |CA_SetDevenvLatest_2003|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2003]|
   |CA_SetDevenvLatest_2005|51|DEVENV_EXE_LATEST|[DEVENV_EXE_2005]|
 
-  **确定 Visual Studio 最新版本的 InstallExecuteSequence 表行**
+  **确定 Visual Studio 的最新版本的 InstallExecuteSequence 表行**
 
-  |操作|天气条件|序列|
+  |操作|条件|序列|
   |------------|---------------|--------------|
   |CA_SetDevenvLatest_2002|DEVENV_EXE_2002 不 (DEVENV_EXE_2003 或 DEVENV_EXE_2005) |410|
   |CA_SetDevenvLatest_2003|DEVENV_EXE_2003 且不 DEVENV_EXE_2005|420|
@@ -77,7 +78,7 @@ ms.locfileid: "105073048"
 
 ## <a name="uninstall-and-file-associations"></a>卸载和文件关联
 
-卸载为文件关联写入注册表项的 VSPackage 将删除文件关联。 因此，该扩展没有关联的程序。 Windows Installer 不会 "恢复" 安装 VSPackage 时添加的注册表项。 以下是修复用户文件关联的一些方法：
+卸载为文件关联写入注册表项的 VSPackage 将删除文件关联。 因此，该扩展没有关联的程序。 Windows安装程序不会 "恢复" 安装 VSPackage 时添加的注册表项。 以下是修复用户文件关联的一些方法：
 
 - 如前文所述，使用共享启动器组件。
 
@@ -87,7 +88,7 @@ ms.locfileid: "105073048"
 
 - 提供 "配置选项" 页或对话框，使用户可以选择文件关联并回收丢失的关联。 指示用户在卸载后运行该命令。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [为并行部署注册文件扩展名](../extensibility/registering-file-name-extensions-for-side-by-side-deployments.md)
 - [注册文件扩展名的谓词](../extensibility/registering-verbs-for-file-name-extensions.md)

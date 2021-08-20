@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 081e4b75644b51539327083b5e51be5f715507b126a59934a429a80cd0cfdd39
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f8134e9105c9dbe99c1052a072211ddc31c9504c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414358"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122159017"
 ---
 # <a name="source-control-runtime-details"></a>源代码管理运行时详细信息
 当用户将项目中的文件添加到源代码管理中时，或者通过自动化控制器（如向导）将项目添加到源代码管理。 项目不自行指定它受源代码管理;它支持源代码管理，但必须手动添加到源代码管理中。

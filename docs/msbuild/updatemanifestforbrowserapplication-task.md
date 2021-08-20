@@ -18,14 +18,15 @@ ms.assetid: 653339f7-654b-4d64-a26a-5c9f27036895
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e71e11988d4dd853b0f97c745b6d720a45adcdc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2bedda1d9d923a7c01cde21ae4404038e956f9e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961542"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142580"
 ---
 # <a name="updatemanifestforbrowserapplication-task"></a>UpdateManifestForBrowserApplication 任务
 

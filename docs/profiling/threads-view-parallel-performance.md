@@ -11,14 +11,15 @@ ms.assetid: 2e441103-a266-407b-88c3-fb58716257a3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 77655e2e040b6a14a5c82151dac451e8373ea674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c715267fe002b136ee07e2a925b979437fe97b0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141111"
 ---
 # <a name="threads-view-in-the-concurrency-visualizer"></a>并发可视化工具中的线程视图
 

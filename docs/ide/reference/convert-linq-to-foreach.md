@@ -7,17 +7,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 09d29df994ef6e4f2d96a5dcae53642ec33739c4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6ef812f37ec4d13d2270ebf7e5471ec82d9efbe4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971123"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122144062"
 ---
 # <a name="refactoring-to-convert-linq-to-a-foreach-statement"></a>重构以将 LINQ 转换为 foreach 语句
 

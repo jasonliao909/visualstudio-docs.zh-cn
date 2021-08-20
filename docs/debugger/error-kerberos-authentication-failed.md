@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 41ffc4e5cb71c78462c9dbfd18472a4fc4e57c7d
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: e884e92ad5ad6669746cee28adc3dccf60d2c468
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161384"
 ---
 # <a name="error-kerberos-authentication-failed"></a>错误：Kerberos 身份验证失败
 当尝试进行远程调试时，可能会收到以下错误消息：

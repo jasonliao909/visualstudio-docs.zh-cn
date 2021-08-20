@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: d8733a3cd26a663276e424d8d6550fc0b8729a80917a0abd2243243a2b662f5f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 331b68bdcf2ed65de6f60b5abb79d45e2b4a07ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121352040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139876"
 ---
 # <a name="globalization-and-localization-of-excel-solutions"></a>全球化和本地化Excel解决方案
   本节包含有关 Microsoft Office Excel 解决方案的特殊注意事项的信息，这些解决方案将在具有 Windows 非英语设置的计算机上运行。 全球化和本地化 Microsoft Office 解决方案过程中所遇到的大多数问题与使用 Visual Studio 创建其他各种解决方案时遇到的问题相同。 有关常规信息，请参阅 [全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)。
@@ -60,7 +60,7 @@ ms.locfileid: "121352040"
 ## <a name="install-the-language-packs"></a>安装语言包
  如果 Windows 具有非英语设置，则可安装 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 来以 Windows 使用的语言查看 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 消息。 如果最终用户使用 Windows 的非英语设置来运行你的解决方案，则他们必须具有相应的语言包来以 Windows 使用的语言查看运行时消息。 语言 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 包可从 Microsoft 下载 [中心获得](https://www.microsoft.com/download)。
 
- 此外，可再发行的.NET Framework 语言包是 ClickOnce 消息所必需的。 可从.NET Framework下载中心获得该语言[包](https://www.microsoft.com/download)。
+ 此外，可再发行的.NET Framework 语言包是 ClickOnce 消息所必需的。 Microsoft .NET Framework中心提供了语言[包](https://www.microsoft.com/download)。
 
 ## <a name="regional-settings-and-excel-com-calls"></a>区域设置和Excel COM 调用
  每当托管客户端对 COM 对象调用一个方法并且需要传入特定于区域性的信息时，它都使用与当前线程区域设置匹配的 <xref:System.Globalization.CultureInfo.CurrentCulture%2A> （区域设置）来执行这些操作。 默认情况下，当前线程区域设置是从用户的区域设置继承而来的。 但是，当你从使用 Visual Studio 中的 Office 开发工具创建的 Excel 解决方案中调用 Excel 对象模型时，会自动将英语（美国）数据格式（区域设置 ID 1033）传递到 Excel 对象模型。 在将数据传递到 Microsoft Office Excel 或从项目代码中读取数据之前，必须使用英语（美国）数据格式对具有区分区域设置格式的所有数据（如日期和货币）进行格式设置。

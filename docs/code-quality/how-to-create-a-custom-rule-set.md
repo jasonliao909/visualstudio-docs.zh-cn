@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
-ms.openlocfilehash: dda89e9822e361438346300a2f60c05bcfd64d6f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 181f94ccc9b83053673e49746d757708afdbf966
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139608"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -30,7 +31,7 @@ ms.locfileid: "99860147"
 
 1. 在 **解决方案资源管理器** 中，右键单击项目，然后选择 " **属性**"。
 
-2. 在 " **属性** " 页上，选择 " **代码分析** " 选项卡。
+2. 在 "**属性**" 页上，选择 " **Code Analysis** " 选项卡。
 
 ::: moniker range="vs-2017"
 
@@ -53,7 +54,7 @@ ms.locfileid: "99860147"
 4. 选择 " **打开** " 以在规则集编辑器中显示规则。
 
 > [!NOTE]
-> 如果你有一个 .NET Core 或 .NET Standard 项目，该过程会稍有不同，因为项目属性中的 " **代码分析** " 选项卡不支持相同的选项。 按照以下步骤将 [预定义的规则集复制到项目中，并将其设置为活动规则集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。 复制规则集之后，可以 [在 Visual Studio 规则集编辑器中进行编辑](working-in-the-code-analysis-rule-set-editor.md) ，方法是从 **解决方案资源管理器** 中打开它。
+> 如果你有 .net Core 或 .NET Standard 项目，该过程会稍有不同，因为项目属性中的 " **Code Analysis** " 选项卡不支持相同的选项。 按照以下步骤将 [预定义的规则集复制到项目中，并将其设置为活动规则集](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。 复制规则集之后，可以 [在 "Visual Studio 规则集编辑器" 中对其进行编辑](working-in-the-code-analysis-rule-set-editor.md)，方法是从 **解决方案资源管理器** 打开它。
 
 ## <a name="create-a-new-rule-set"></a>创建新规则集
 
@@ -61,7 +62,7 @@ ms.locfileid: "99860147"
 
 1. 选择  >    >  "文件" "新建 **文件**"，或按 **Ctrl** + **N**。
 
-2. 在 " **新建文件** " 对话框中，选择左侧的 " **常规** " 类别，然后选择 " **代码分析规则集**"。
+2. 在 "**新建文件**" 对话框中，选择左侧的 "**常规**" 类别，然后选择 " **Code Analysis 规则集**"。
 
 3. 选择“打开”  。
 
@@ -70,11 +71,11 @@ ms.locfileid: "99860147"
 ## <a name="create-a-custom-rule-set-from-multiple-rule-sets"></a>从多个规则集创建自定义规则集
 
 > [!NOTE]
-> 以下过程不适用于 .NET Core 或 .NET Standard 项目，这些项目不支持 **代码分析** 属性选项卡中的相同功能。
+> 以下过程不适用于 .net Core 或 .NET Standard 项目，这些项目不支持 **Code Analysis** 属性 "选项卡中的相同功能。
 
 1. 在 **解决方案资源管理器** 中，右键单击项目，然后选择 " **属性**"。
 
-2. 在 " **属性** " 页上，选择 " **代码分析** " 选项卡。
+2. 在 "**属性**" 页上，选择 " **Code Analysis** " 选项卡。
 
 ::: moniker range="vs-2017"
 
@@ -100,7 +101,7 @@ ms.locfileid: "99860147"
 
 ## <a name="rule-precedence"></a>规则优先级
 
-- 如果在具有不同严重性的规则集中多次列出相同的规则，则编译器将生成错误。 例如： 。
+- 如果在具有不同严重性的规则集中多次列出相同的规则，则编译器将生成错误。 例如：
 
    ```xml
    <RuleSet Name="Rules for ClassLibrary21" Description="Code analysis rules for ClassLibrary21.csproj." ToolsVersion="15.0">
@@ -115,7 +116,7 @@ ms.locfileid: "99860147"
 
    **CA0063：无法加载规则集文件 " \[ 你的]. 规则集" 或其依赖规则集文件之一。此文件不符合规则集架构。**
 
-- 如果规则集包括使用 **包含** 标记的子规则集，并且子规则和父规则集都列出相同的规则但严重性不同，则父规则集中的严重性优先。 例如： 。
+- 如果规则集包括使用 **包含** 标记的子规则集，并且子规则和父规则集都列出相同的规则但严重性不同，则父规则集中的严重性优先。 例如：
 
    ```xml
    <!-- Parent rule set -->
@@ -147,7 +148,7 @@ ms.locfileid: "99860147"
 > [!div class="nextstepaction"]
 > [修改规则集编辑器中的规则](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [如何：配置托管代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [代码分析规则集参考](../code-quality/rule-set-reference.md)
