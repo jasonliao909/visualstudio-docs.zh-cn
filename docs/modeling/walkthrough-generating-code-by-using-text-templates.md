@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mgoertz-msft
 ms.author: mgoertz
 manager: jmartens
+ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 22940fb86ab0cfd7262a3ca7845521847add2dff
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f01a19b1329c994e8f76a549e7f5dbbf70542adf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112388121"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123484"
 ---
 # <a name="walkthrough-generate-code-by-using-text-templates"></a>演练：使用文本模板生成代码
 
@@ -30,7 +31,7 @@ System.Xml 命名空间提供用于加载 XML 文档的综合工具，然后将�
 在此示例项目中，模板读取示例 XML 文件，并生成对应于每种节点类型的类。 在手动编写的代码中，可以使用这些类来导航 XML 文件。 此外，还可以在使用相同节点类型的任何其他文件上运行应用程序。 示例 XML 文件的目的是提供想要应用程序处理的所有节点类型的示例。
 
 > [!NOTE]
-> 应用程序 [xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)（包含在 Visual Studio 中）可以从 XML 文件生成强类型类。 此处显示的模板作为示例提供。
+> 应用程序[xsd.exe](/dotnet/standard/serialization/xml-schema-definition-tool-xsd-exe)（包含在 Visual Studio 中）可以从 XML 文件生成强类型类。 此处显示的模板作为示例提供。
 
 下面是示例文件：
 
@@ -79,13 +80,13 @@ foreach (XmlNode artist in catalog.SelectNodes("artist"))
 
 在此项目中，使用单个模板文件生成使类型化版本成为可能的类。
 
-## <a name="set-up-the-project"></a>设置项目
+## <a name="set-up-the-project"></a>设置Project
 
 ### <a name="create-or-open-a-c-project"></a>创建或打开 C# 项目
 
 可以将此技术应用于任何代码项目。 本演练使用 C# 项目，出于测试目的，我们使用控制台应用程序。
 
-1. 在"**文件"菜单** 上，单击 **"新建**"，然后单击"项目 **"。**
+1. 在"**文件"菜单** 上，单击"**新建**"，然后单击 **"Project"。**
 
 2. 单击“”  节点，然后在“模板”  窗格中，单击“控制台应用程序” 
 
@@ -430,7 +431,7 @@ namespace MyProject
 
 若在“错误列表”中看到模板转换或编译错误，或者若未正确生成输出文件，可以借助[使用 TextTransform 实用工具生成文件](../modeling/generating-files-with-the-texttransform-utility.md)中所述的技术解决文本模板的问题。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)

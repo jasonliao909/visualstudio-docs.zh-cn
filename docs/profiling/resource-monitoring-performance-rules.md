@@ -7,15 +7,16 @@ ms.assetid: f0f77faf-0a05-4718-a2c5-47934be40868
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fc17bd86868a7b3e87c47ec44fd5caabf7a6cfd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d9a683aa6b3beaeea11c696ab1dbac66f9c94685
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950138"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157340"
 ---
 # <a name="resource-monitoring-performance-rules"></a>资源监控性能规则
 资源监控类别中的性能消息提供有关应用程序性能的其他数据。 可以使用此数据分析性能问题。 这些规则是消息性的，针对每次分析运行报告。

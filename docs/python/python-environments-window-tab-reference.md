@@ -6,16 +6,17 @@ ms.topic: reference
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d00f8cc05e4a2a2ce1e947207997cc2e46d9d9f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec08fbc30f6a03929e778361c08b03281d997d1b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912371"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140370"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -75,7 +76,7 @@ ms.locfileid: "99912371"
 ![Python 环境配置选项卡](media/environments/environments-configure-tab-2019.png)
 ::: moniker-end
 
-| 字段 | 描述 |
+| 字段 | 说明 |
 | --- | --- |
 | **说明** | 为环境提供的名称。 |
 | **前缀路径** | 解释程序的基本文件夹位置。 通过填写此值并单击“自动检测”，Visual Studio 会尝试填充其他字段。 |

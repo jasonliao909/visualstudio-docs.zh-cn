@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: e35c4d407f9a09af2714ece6972fcb9e76595e0d0dc59c680a82dbb2ec776f86
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 781281c6abce5031166b00d9cdde0b175619f79b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121367611"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135918"
 ---
 # <a name="how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks"></a>如何：通过使用 MSBuild 任务创建 SharePoint 解决方案包
   可以在开发计算机上使用命令行 MSBuild 任务来生成、清理和验证 SharePoint 包 (*.wsp*) 。 你还可以使用这些命令通过在生成计算机上使用 Team Foundation Server 来自动执行生成过程。
@@ -108,7 +108,7 @@ ms.locfileid: "121367611"
     msbuild /property:WarningLevel = 2
     ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [创建 SharePoint 功能](../sharepoint/creating-sharepoint-features.md)
 - [如何：自定义 SharePoint 功能](../sharepoint/how-to-customize-a-sharepoint-feature.md)
 - [如何：在 SharePoint 功能中添加和移除项](../sharepoint/how-to-add-and-remove-items-to-sharepoint-features.md)

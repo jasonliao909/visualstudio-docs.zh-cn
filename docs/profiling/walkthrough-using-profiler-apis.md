@@ -10,15 +10,16 @@ ms.assetid: c2ae0b3e-a0ca-4967-b4df-e319008f520e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e1405169ae7f4734463428405cf90cce631fba3a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 99fdbae8612de92c178ebb502e63e4c974224da4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99915952"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156742"
 ---
 # <a name="walkthrough-using-profiler-apis"></a>演练：使用探查器 API
 

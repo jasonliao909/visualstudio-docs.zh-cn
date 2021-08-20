@@ -1,5 +1,5 @@
 ---
-description: 提供可用于在设置断点时指定附加信息的可选标志。
+description: 提供可选标志，这些标志可用于在设置断点时指定其他信息。
 title: BP_FLAGS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: c1bc858ee22b388d5a782a572f2267f78450c1048d4bb8a7c6718656d4d049b5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5f0d79bd6e3c1495f85ed6f8436a781445173810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121390480"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104646"
 ---
 # <a name="bp_flags"></a>BP_FLAGS
-提供可用于在设置断点时指定附加信息的可选标志。
+提供可选标志，这些标志可用于在设置断点时指定其他信息。
 
 ## <a name="syntax"></a>语法
 
@@ -48,25 +48,25 @@ public enum enum_BP_FLAGS {
 
 ## <a name="fields"></a>字段
 `BP_FLAG_NONE`\
-指定无断点标志。
+不指定断点标志。
 
 `BP_FLAG_MAP_DOCPOSITION`\
-指定调试引擎 (DE) 应使用文档位置映射断点。 这仅适用于在面向脚本的源文件中设置的断点，例如 (ASP) 的 Active Server Pages。
+指定调试引擎 (DE) 应该使用文档位置映射断点。 这仅适用于在面向脚本的源文件中设置的断点，例如 ACTIVE Server Pages (ASP) 。
 
 `BP_FLAG_DONT_STOP`\
-指定应由调试引擎处理断点，但调试引擎最终不应 (停止，也就是说，不应) 发送 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 事件对象。 此标志设计为主要与跟踪点一起使用。
+指定调试引擎应处理断点，但调试引擎最终不应停止 (也就是说，不应将 [IDebugBreakpointEvent2](../../../extensibility/debugger/reference/idebugbreakpointevent2.md) 事件对象) 。 此标志主要用于跟踪点。
 
 ## <a name="remarks"></a>备注
-用于 `dwFlags` [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md) 和 [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md) 结构的成员。
+用于 `dwFlags` 成员和BP_REQUEST_INFO BP_REQUEST_INFO2[](../../../extensibility/debugger/reference/bp-request-info.md)成员。 [](../../../extensibility/debugger/reference/bp-request-info2.md)
 
-这些值可以与按位组合 `OR` 。
+这些值可以与位 合并 `OR` 。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

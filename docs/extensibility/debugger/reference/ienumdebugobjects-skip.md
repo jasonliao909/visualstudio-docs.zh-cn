@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 33360dfb411945063b9066180ffdab9ea146faf662890ea02b715293be0e9062
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d7c4708e8fee84b136a77903873006cb5d27d509
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276368"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125590"
 ---
 # <a name="ienumdebugobjectsskip"></a>IEnumDebugObjects::Skip
 此方法跳过指定数目的元素。

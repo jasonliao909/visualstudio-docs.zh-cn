@@ -12,14 +12,15 @@ ms.assetid: 3ebc5f87-8f00-46fc-82a1-228f35a6823b
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0db9504404142e5bfdd17a66471820ddad790130
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: cb9d35c236210b9fa7eb1ceacfc5aa205b49ee70
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214546"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142723"
 ---
 # <a name="task-writing"></a>任务写入
 
@@ -262,6 +263,6 @@ namespace SimpleTask2
 </Project>
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: bde953b023b91c3c3e3b06fb3d50770851352da9d441b6277406ed91bbc392a5
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1a8b90fb00bed1e27a974924b07a5ddbc78dd37c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359723"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124732"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>选择 VSPackage 的安装目录
 VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是托管还是非托管、并行版本控制方案和用户选择。

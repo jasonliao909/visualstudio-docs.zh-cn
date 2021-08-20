@@ -11,15 +11,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a304006a778dc4766e6b4be9ceb133450c0dfb52
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2a79f24d2d9b3c8a9ea2bd0844f3d2ff3279a0d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876909"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150204"
 ---
 # <a name="how-to-choose-collection-methods"></a>如何：选择收集方法
 

@@ -10,17 +10,18 @@ ms.assetid: f021fd16-9fc7-4c41-86af-e54e6224cfbb
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 263d50a0c9f3f9b2ab0aa74a05647abc1930970c
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: cd51a8e916372d1daa63a86132269b0afa60c355
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094219"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145336"
 ---
 # <a name="idebugbinder3getmemorycontext64"></a>IDebugBinder3::GetMemoryContext64
 将对象位置或64位内存地址转换为内存上下文。
@@ -130,5 +131,5 @@ HRESULT CValueProperty::GetMemoryContext ( IDebugMemoryContext2** out_ppMemoryCo
 }
 ```
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

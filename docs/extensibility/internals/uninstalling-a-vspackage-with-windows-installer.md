@@ -15,15 +15,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 688a438934f1b5a522e2fec211a4b134af143bcc40de4244f5538c5e084409b2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e1c616b366e18cc6bba0bb9eb2906193022a6289
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121414178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122158614"
 ---
 # <a name="uninstalling-a-vspackage-with-windows-installer"></a>使用 Windows Installer 卸载 VSPackage
-大多数情况下，Windows安装程序只需"撤消"安装 VSPackage 的操作，就可以卸载 VSPackage。 安装后必须运行的命令[](../../extensibility/internals/commands-that-must-be-run-after-installation.md)中讨论的自定义操作也必须在卸载后运行。 由于对 devenv.exe调用发生在 InstallFinalize 标准操作（用于安装和卸载）之前，CustomAction 和 InstallExecuteSequence 表条目适用于这两种情况。
+大多数情况下，Windows安装程序只需"撤消"安装 VSPackage 的操作，就可以卸载 VSPackage。 安装后必须运行的命令[](../../extensibility/internals/commands-that-must-be-run-after-installation.md)中讨论的自定义操作也必须在卸载后运行。 由于对 devenv.exe的调用发生在 InstallFinalize 标准操作（用于安装和卸载）之前，CustomAction 和 InstallExecuteSequence 表条目适用于这两种情况。
 
 > [!NOTE]
 > 卸载 `devenv /setup` MSI 包后运行 。

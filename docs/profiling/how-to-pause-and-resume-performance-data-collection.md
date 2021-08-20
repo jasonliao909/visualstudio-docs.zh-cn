@@ -9,15 +9,16 @@ ms.assetid: b8e76363-65cd-424d-8173-3e2b5f54203b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 523649c8147cb007ff360cc0a4b9e3e5dfb551a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 518aa042609b830709d8671a8b0a68156efa6314
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907111"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122141813"
 ---
 # <a name="how-to-pause-and-resume-performance-data-collection"></a>如何：暂停和恢复性能数据收集
 在分析会话页窗口中，您可以交互控制分析数据的收集。

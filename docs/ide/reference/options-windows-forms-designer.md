@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: c55d3dae96ff2757c8a9ba1969c378aa2290d716
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: df8b064277d57ab0696ad48fa7a5778654701009
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99932249"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122143711"
 ---
 # <a name="options-dialog-box-windows-forms-designer"></a>“选项”对话框：Windows Forms Designer — Windows 窗体设计器
 

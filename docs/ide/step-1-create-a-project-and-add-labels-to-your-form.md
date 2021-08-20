@@ -4,20 +4,19 @@ description: 了解如何创建项目，如何向窗体添加标签、按钮和�
 ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0400c29e53c45ad9a98e7edca78fd2cf9741fcf0
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: cb535463f2f7213923e6c7964d5663dcad5dc2a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307747"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150932"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
 

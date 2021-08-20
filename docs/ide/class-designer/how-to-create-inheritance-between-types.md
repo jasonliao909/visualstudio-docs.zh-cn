@@ -13,14 +13,15 @@ ms.assetid: 3786a21c-8022-4bf5-9d13-740fd354e93c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 17939a9c800e99d8adcf1e59e32bb362cf4796ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3af93de5ad31e17786a75ac6183d18d66b3aa1a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850147"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122157795"
 ---
 # <a name="how-to-create-inheritance-between-types-in-class-designer"></a>如何：在类设计器中创建类型之间的继承
 

@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 302ec482e15b837a8287520170c40e2765f0d09b5693028a132f6af063c8030e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e7cb031b55a83dbc2694b8532c91b013a343ffa3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359736"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124784"
 ---
 # <a name="checklist-create-new-project-types"></a>清单：创建新项目类型
 必须完成多个任务以创建新项目类型。 以下清单提供了这些任务的指南：
@@ -36,15 +36,15 @@ ms.locfileid: "121359736"
 
     - Project工厂，用于管理创建新项目和打开现有项目。 有关详细信息，请参阅 [使用项目工厂 创建项目实例](../../extensibility/internals/creating-project-instances-by-using-project-factories.md)。
 
-    - Project层次结构和命令处理。 有关详细信息，请参阅使用[HierUtil7](/previous-versions/bb166212(v=vs.100))项目类实现项目类型 (C++) 、项目模型的元素[](../../extensibility/internals/elements-of-a-project-model.md)[、Project](../../extensibility/internals/project-model-core-components.md)模型核心组件 和[MenuCommands 与 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。
+    - Project层次结构和命令处理。 有关详细信息，请参阅使用[HierUtil7](/previous-versions/bb166212(v=vs.100))项目类实现项目类型 (C++) 、项目模型的元素[、Project 模型](../../extensibility/internals/project-model-core-components.md)核心组件 和[MenuCommands 与 OleMenuCommands](/previous-versions/visualstudio/visual-studio-2015/misc/menucommands-vs-olemenucommands?preserve-view=true&view=vs-2015)。 [](../../extensibility/internals/elements-of-a-project-model.md)
 
-    - Project项管理，包括将项目添加到"新建 **Project对话框中。** 有关详细信息，请参阅[添加项目和项目项模板和](../../extensibility/internals/adding-project-and-project-item-templates.md)[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
+    - Project项管理，包括将项目添加到"新建 **Project对话框。** 有关详细信息，请参阅[添加项目和项目项模板和](../../extensibility/internals/adding-project-and-project-item-templates.md)[注册项目和项模板](../../extensibility/internals/registering-project-and-item-templates.md)。
 
     - 项目状态和单个项的持久性。 有关详细信息，请参阅打开 [并保存项目项](../../extensibility/internals/opening-and-saving-project-items.md)。 有关解决方案信息的持久性，请参阅 [解决方案](../../extensibility/internals/solutions-overview.md)。
 
     - 要显示在配置文件中的与配置属性窗口。 有关详细信息，请参阅扩展 [属性](../../extensibility/internals/extending-properties.md)。
 
-    - Project页中实现的配置属性，以显示与配置相关的属性。 有关详细信息，请参阅管理 [配置选项](../../extensibility/internals/managing-configuration-options.md)。
+    - Project属性页中实现的配置属性，以显示与配置相关的属性。 有关详细信息，请参阅管理 [配置选项](../../extensibility/internals/managing-configuration-options.md)。
 
     - 枚举部署的输出。 有关详细信息，请参阅输出[Project配置](../../extensibility/internals/project-configuration-for-output.md)。
 

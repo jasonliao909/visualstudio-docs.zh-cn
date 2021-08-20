@@ -13,14 +13,15 @@ ms.assetid: 258ae433-f68a-49f1-b276-da20e3472e68
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a12607a6e4f603c86e7714ff87db085d3bf3b9c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbb55608d1fd01d6cb8aad04943006c733bc9c9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965936"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122142697"
 ---
 # <a name="tooltaskextension-base-class"></a>ToolTaskExtension 基类
 

@@ -11,17 +11,18 @@ ms.assetid: 42a31412-5b6b-47fe-a762-0c2bc769e1cc
 author: leslierichardson95
 ms.author: lerich
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 40c88d1c07d3610ff6d098fbbf8517476cc07103
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: fe85c279173932adc3ccc4dab98cc5b0727d1b3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105059647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122145882"
 ---
 # <a name="bp_request_info"></a>BP_REQUEST_INFO
 包含实现断点所需的信息。
@@ -101,7 +102,7 @@ public struct BP_REQUEST_INFO {
 
 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)

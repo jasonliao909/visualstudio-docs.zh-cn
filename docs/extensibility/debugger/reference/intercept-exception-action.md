@@ -1,6 +1,6 @@
 ---
 title: INTERCEPT_EXCEPTION_ACTION |Microsoft Docs
-description: INTERCEPT_EXCEPTION_ACTION枚举指定在调试过程中截获异常时要Visual Studio操作。
+description: INTERCEPT_EXCEPTION_ACTION 枚举指定在截获 Visual Studio 调试中的异常时要执行的操作。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,15 +18,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 0b704e8f6379312eee25be7106f4d4db6c64bf626aee4e0dfe0b899a735fe9a7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0fddfa37457a4783066a2319b081bf4372e7e06d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121377233"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122125382"
 ---
 # <a name="intercept_exception_action"></a>INTERCEPT_EXCEPTION_ACTION
-指定在截获异常时要采取的操作。
+指定截获异常时要执行的操作。
 
 ## <a name="syntax"></a>语法
 
@@ -48,17 +48,17 @@ public enum enum_INTERCEPT_EXCEPTION_ACTION
 ## <a name="parameters"></a>参数
 
 `IEA_INTERCEPT`\
-允许截获当前异常。 这是目前唯一支持的值，必须指定该值。
+启用截获当前异常。 这是目前支持的唯一值，并且必须指定。
 
 ## <a name="remarks"></a>备注
 这些值将传递到 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 方法中。
 
 ## <a name="requirements"></a>要求
-标头：msdbg.h
+标头： msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
