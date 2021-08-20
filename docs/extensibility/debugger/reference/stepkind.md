@@ -1,5 +1,5 @@
 ---
-description: 指定单步执行的步骤类型。
+description: 指定步进的步骤类型。
 title: STEPKIND |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,15 +17,15 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 9a972617b071f3c6f45a289a5fc01647bf3adee7fd9ebfa4ba4e2712c4774816
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 521a185b3733ef8f5c4f862b992d1953031fd5fb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121276173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110769"
 ---
 # <a name="stepkind"></a>STEPKIND
-指定单步执行的步骤类型。
+指定步进的步骤类型。
 
 ## <a name="syntax"></a>语法
 
@@ -53,23 +53,23 @@ public enum enum_STEPKIND {
  执行函数的步骤。
 
  `STEP_OVER`\
- 对函数执行的步骤。
+ 逐过程执行函数。
 
  `STEP_OUT`\
- 退出函数。
+ 跳出函数。
 
  `STEP_BACKWARDS`\
- 后退到函数。
+ 向后移动到函数。
 
 ## <a name="remarks"></a>备注
- 作为参数传递给 [Step](../../../extensibility/debugger/reference/idebugprocess3-step.md) 方法。
+ 作为参数传递到 [步骤](../../../extensibility/debugger/reference/idebugprocess3-step.md) 方法。
 
 ## <a name="requirements"></a>要求
- 标头：msdbg.h
+ 标头： msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

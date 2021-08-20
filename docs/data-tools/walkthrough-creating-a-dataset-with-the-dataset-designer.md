@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: be2657c94d49c73d245e7bf8bbb59e3b0b018ba84d942f6144b5e0360f968d5e
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: d502812179b0449c2dca6be800f69c30d211a28b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121327755"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059185"
 ---
 # <a name="walkthrough-create-a-dataset-with-the-dataset-designer"></a>演练：创建具有数据集设计器的数据集
 
@@ -111,7 +111,7 @@ ms.locfileid: "121327755"
 
 - 将验证逻辑添加到 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 数据集中数据表的或事件。 有关详细信息，请参阅 [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [在 Visual Studio 中创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

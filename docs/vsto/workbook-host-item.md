@@ -1,6 +1,6 @@
 ---
 title: 工作簿宿主项
-description: 了解工作簿宿主项是一个类型，该类型从 Microsoft Excel 的主互操作程序集扩展工作簿类型。
+description: 了解工作簿宿主项是一种类型，它从 Microsoft Excel 的主互操作程序集扩展工作簿类型。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,14 +20,15 @@ helpviewer_keywords:
 author: John-Hart
 ms.author: johnhart
 manager: jmartens
+ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: 24f32f8799d2bac5c23a0f8a2ef92857d2a6f7c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa695ec392a6e04f1c28e1133ee2e931060e3852
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847591"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068421"
 ---
 # <a name="workbook-host-item"></a>工作簿宿主项
   <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项这种类型从 Excel 的主互操作程序集扩展 <xref:Microsoft.Office.Interop.Excel.Workbook> 类型。 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项提供与 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象完全相同的属性、方法和事件，但它还提供其他功能。
@@ -39,7 +40,7 @@ ms.locfileid: "99847591"
 ## <a name="understand-the-workbook-host-item-in-document-level-projects"></a>了解文档级项目中的工作簿宿主项
  若要访问项目中的工作簿，请使用 `ThisWorkbook` 类。 通过使用 `ThisWorkbook` 类，可以访问 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项的成员，以执行自定义项中的基本任务，例如在打开或关闭工作簿时运行代码。 有关详细信息，请参阅 [程序文档级自定义项](../vsto/programming-document-level-customizations.md)。
 
- `ThisWorkbook` 类提供了一个位置，你可以在该位置开始编写项目中的代码。 因为该类提供与 Excel 主互操作程序集中的 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象完全相同的属性、方法和事件，所以也可以使用 `ThisWorkbook` 访问 Excel 的对象模型。 有关详细信息，请参阅 [Excel 对象模型概述](../vsto/excel-object-model-overview.md)。
+ `ThisWorkbook` 类提供了一个位置，你可以在该位置开始编写项目中的代码。 因为该类提供与 Excel 主互操作程序集中的 <xref:Microsoft.Office.Interop.Excel.Workbook> 对象完全相同的属性、方法和事件，所以也可以使用 `ThisWorkbook` 访问 Excel 的对象模型。 有关详细信息，请参阅[Excel 对象模型概述](../vsto/excel-object-model-overview.md)。
 
  在“解决方案资源管理器”  中双击“ThisWorkbook”  项目项以显示工作簿设计器，并在“属性”  窗口中查看工作簿的属性和事件。
 
@@ -54,12 +55,12 @@ ms.locfileid: "99847591"
 > Visual Studio 中的 Office 开发工具不支持共享工作簿。
 
 ## <a name="understand-workbook-host-items-in-vsto-add-in-projects"></a>了解 VSTO 外接程序项目中的工作簿宿主项
- 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅 [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
+ 在 VSTO 外接程序项目中，可以在运行时为 Excel 中打开的任何工作簿生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项。 若要生成 <xref:Microsoft.Office.Tools.Excel.Workbook> 宿主项，请使用 `GetVstoObject` 方法。 有关详细信息，请参阅在[运行时 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 - [Office 开发示例和演练](../vsto/office-development-samples-and-walkthroughs.md)
-- [在运行时在 VSTO 外接程序中扩展 Word 文档和 Excel 工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [工作表宿主项](../vsto/worksheet-host-item.md)
-- [使用扩展对象实现 Excel 自动化](../vsto/automating-excel-by-using-extended-objects.md)
+- [使用扩展对象自动 Excel](../vsto/automating-excel-by-using-extended-objects.md)
 - [宿主项和宿主控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)

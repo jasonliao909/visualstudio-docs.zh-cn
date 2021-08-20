@@ -1,5 +1,5 @@
 ---
-title: 将 Web 应用程序迁移并发布到云服务
+title: 将 web 应用程序迁移和发布到云服务
 description: 了解如何使用 Visual Studio 将 Web 应用程序迁移和发布到 Azure 云服务
 ms.custom: SEO-VS-2020
 author: ghogen
@@ -9,26 +9,26 @@ ms.workload: azure-vs
 ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
-ms.openlocfilehash: 28403c0d33eb9e1076b334a977deaecf6a0a99801a87a33edbcb25f7c9aa7b2d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f4e4093edfdc5ff9d2d4ef14bd6cf670c2b9b613
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121456229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067687"
 ---
-# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：从门户迁移 Web 应用程序并发布到 Azure 云服务Visual Studio
+# <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：从 Visual Studio 将 web 应用程序迁移和发布到 Azure 云服务
 
 要利用 Azure 的托管服务和缩放功能，可能需要将 Web 应用程序迁移和部署到 Azure 云服务。 只需要很小的更改。 本文仅介绍了如何部署到云服务；对于应用服务，请参阅[在 Azure 应用服务中部署 Web 应用](/azure/app-service/app-service-deploy-local-git)。
 
 > [!Important]
-> 此迁移仅支持特定 ASP.NET、WCF 和 WCF 工作流项目。 而 ASP.NET Core 项目不支持。 请参阅[支持的项目模板](#supported-project-templates)。
+> 仅特定 ASP.NET、wcf 和 wcf 工作流项目支持此迁移。 而 ASP.NET Core 项目不支持。 请参阅[支持的项目模板](#supported-project-templates)。
 
 ## <a name="migrate-a-project-to-cloud-services"></a>将项目迁移到云服务
 
-1. 右键单击解决方案节点，然后选择 **">"Project..."，** 将新的 Azure 云服务 **(经典**) 添加到现有解决方案。
-1. 在 **"Microsoft Azure云服务 (经典**) 对话框中，单击"确定"，而不向项目添加任何角色。
-1. 右键单击新添加的云服务项目下的角色节点，然后选择"在解决方案Project **Web 角色..."。**
-1. 在"**与角色Project** 对话框中，选择要作为 Web 角色关联的项目。
+1. 右键单击 "解决方案" 节点，然后选择 "**添加 > 新建 Project ...** "，并将新的 **Azure 云服务 (经典)** 项目添加到现有解决方案。
+1. 在 "**新建 Microsoft Azure 云服务 (经典)** " 对话框中，单击 "确定"，而不向项目添加任何角色。
+1. 右键单击新添加的 "云服务" 项目下的 "角色" 节点，然后选择 "**在解决方案中添加 Web 角色 Project"**。
+1. 在 "**与角色 Project 关联**" 对话框中，选择想要关联为 web 角色的项目。
 
    > [!Important]
    > 如果有此 Web 应用程序所需的其他程序集或文件，必须手动设置这些文件的属性。 有关如何设置这些属性的信息，请参阅[在服务包中包含文件](vs-azure-tools-publishing-a-cloud-service.md#include-files-in-the-service-package)。

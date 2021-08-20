@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: sharepoint-development
 ms.workload:
 - office
-ms.openlocfilehash: eac554fbfb1d7558b7d705e46aba3430fb97171141304e9685d36241872edcff
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bdb02592d55cc05781a77d2c88aecf3982f1c4fe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121353017"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106895"
 ---
 # <a name="extend-sharepoint-packaging-and-deployment"></a>扩展SharePoint打包和部署
   可以扩展 SharePoint 项目的打包和部署过程。
@@ -35,7 +35,7 @@ ms.locfileid: "121353017"
 
  有关演示如何创建部署配置的演练，请参阅演练：为项目[创建自定义SharePoint步骤](../sharepoint/walkthrough-creating-a-custom-deployment-step-for-sharepoint-projects.md)。
 
-## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>部署或收回SharePoint时运行代码
+## <a name="run-code-when-a-sharepoint-solution-is-deployed-or-retracted"></a>部署或收回SharePoint解决方案时运行代码
  可以处理事件以在部署或收回 SharePoint 解决方案时执行其他任务。 Visual Studio 会在以下情况下引发你可以处理的事件：
 
 - 为 SharePoint 项目项执行每个部署步骤之前和之后。 有关详细信息，请参阅 [如何：在执行部署步骤时运行代码](../sharepoint/how-to-run-code-when-deployment-steps-are-executed.md)。

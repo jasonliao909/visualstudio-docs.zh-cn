@@ -26,12 +26,12 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: ce9f00bf31013450c25dd3bac6325e7288be50a2b866989fd3b0b9d301b30410
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e76b25516001143842422481eb6055be95a99178
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121225746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135580"
 ---
 # <a name="walkthrough-synchronize-a-custom-task-pane-with-a-ribbon-button"></a>演练：使用功能区按钮同步自定义任务窗格
   本演练演示如何创建自定义任务窗格，用户可以单击功能区上的切换按钮隐藏或显示该窗格。 应始终创建一个可供用户单击以显示或隐藏你的自定义任务窗格的用户界面 (UI) 元素，如按钮，因为 Microsoft Office 应用程序不提供用户用于显示或隐藏自定义任务窗格的默认方式。
@@ -168,11 +168,11 @@ ms.locfileid: "121225746"
 ## <a name="next-steps"></a>后续步骤
  可从以下主题了解有关如何创建自定义任务窗格的详细信息：
 
-- 在外接程序中为VSTO创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
+- 在外接程序中为另一VSTO创建自定义任务窗格。 有关支持自定义任务窗格的应用程序的详细信息，请参阅 [自定义任务窗格](../vsto/custom-task-panes.md)。
 
 - 从自定义任务窗格自动化应用程序。 有关详细信息，请参阅 [演练：从自定义任务窗格 自动执行应用程序](../vsto/walkthrough-automating-an-application-from-a-custom-task-pane.md)。
 
-- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅演练：在 中显示包含电子邮件的自定义[Outlook。](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
+- 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅演练：在 Outlook 中显示包含电子邮件[的自定义Outlook。](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)
 
 ## <a name="see-also"></a>请参阅
 - [自定义任务窗格](../vsto/custom-task-panes.md)

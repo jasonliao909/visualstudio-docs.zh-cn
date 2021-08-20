@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: abdd04428695e105b7e9f3e14e740beef3a347574171296768af9a9637eaa592
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3e75ec051787cfb08754e459012e4df3556e113
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121415267"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122110756"
 ---
 # <a name="module_info_fields"></a>MODULE_INFO_FIELDS
 指定调试模块信息的标志。
@@ -68,57 +68,57 @@ public enum enum_MODULE_INFO_FIELDS {
 
 ## <a name="fields"></a>字段
  `MIF_NONE`\
- 初始化/不使用结构中的任何字段。
+ 初始化/使用 结构中没有任何字段。
 
  `MIF_NAME`\
- 初始化/使用 `m_bstrName` [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 结构中的字段。
+ 初始化/使用 `m_bstrName` 结构MODULE_INFO字段。 [](../../../extensibility/debugger/reference/module-info.md)
 
  `MIF_URL`\
- 初始化/使用 `m_bstrUrl` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_bstrUrl` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_VERSION`\
- 初始化/使用 `m_bstrVersion` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_bstrVersion` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_DEBUGMESSAGE`\
- 初始化/使用 `m_bstrDebugMessage` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_bstrDebugMessage` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_LOADADDRESS`\
- 初始化/使用 `m_addrLoadAddress` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_addrLoadAddress` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_PREFFEREDADDRESS`\
- 初始化/使用 `m_addrPreferredLoadAddress` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_addrPreferredLoadAddress` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_SIZE`\
- 初始化/使用 `m_dwSize` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_dwSize` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_LOADORDER`\
- 初始化/使用 `m_dwLoadOrder` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_dwLoadOrder` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_TIMESTAMP`\
- 初始化/使用 `m_TimeStamp` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_TimeStamp` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_URLSYMBOLLOCATION`\
- 初始化/使用 `m_bstrUrlSymbolLocation` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_bstrUrlSymbolLocation` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_FLAGS`\
- 初始化/使用 `m_dwModuleFlags` 结构中的字段 `MODULE_INFO` 。
+ 初始化/使用 `m_dwModuleFlags` 结构中的 `MODULE_INFO` 字段。
 
  `MIF_ALLFIELDS`\
- 初始化/使用结构中的所有字段 `MODULE_INFO` 。
+ 初始化/使用 结构中的所有 `MODULE_INFO` 字段。
 
 ## <a name="remarks"></a>备注
- 这些值作为参数传递给 [GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md) 方法，以指示要初始化 [MODULE_INFO](../../../extensibility/debugger/reference/module-info.md) 结构的哪些字段。
+ 这些值作为参数传递给[GetInfo](../../../extensibility/debugger/reference/idebugmodule2-getinfo.md)方法，以指示要初始化MODULE_INFO的字段。 [](../../../extensibility/debugger/reference/module-info.md)
 
- 这些值还在结构中用于 `MODULE_INFO` 指示哪些字段已使用并且有效。
+ 这些值还用于 结构 `MODULE_INFO` ，以指示哪些字段已使用且有效。
 
- 这些标志可以与按位组合 `OR` 。
+ 这些标志可以与位 合并 `OR` 。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)
