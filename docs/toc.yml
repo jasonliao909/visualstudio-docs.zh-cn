@@ -1426,8 +1426,12 @@
           href: ide/dotfuscator/capabilities.md
         - name: 安装 Dotfuscator Community
           href: ide/dotfuscator/install.md
+        - name: 注册 Dotfuscator Community
+          href: ide/dotfuscator/register.md
         - name: 升级 Dotfuscator Community
           href: ide/dotfuscator/upgrades.md
+        - name: 从 Dotfuscator Community 5 进行升级
+          href: ide/dotfuscator/upgrade-from-5.md
 - name: 资源
   expanded: true
   items:
