@@ -3,10 +3,10 @@ title: Visual Studio 工作负荷和组件 ID
 titleSuffix: ''
 description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -17,12 +17,12 @@ ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: eeb2ee162a87b066c853d89e6920dce23a5370e0
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 5b68dc5de33b914e241680581fd70ce98774a9fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306587"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122150789"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作负荷和组件 ID
 
@@ -51,7 +51,7 @@ ms.locfileid: "112306587"
 
 ::: moniker range=">=vs-2019"
 
-已针对[版本 16.8](/visualstudio/releases/2019/release-notes/) 进行更新
+已针对[版本 16.11](/visualstudio/releases/2019/release-notes/) 进行更新
 
 | **版本** | **ID** | **说明** |
 | ----------- | ------ | --------------- |
