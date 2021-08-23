@@ -7,17 +7,18 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: c02135074ee4a4907bb9c4ee235655fc3908a64c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc6c525b0846270158f4d795be92535cfa4a6e8f
+ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838591"
+ms.lasthandoff: 08/18/2021
+ms.locfileid: "122334604"
 ---
 # <a name="sync-a-type-to-a-filename-or-a-filename-to-a-type-refactoring"></a>将类型同步到文件名或反向操作
 
