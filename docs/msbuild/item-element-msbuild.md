@@ -16,14 +16,15 @@ ms.assetid: dcef5f91-0613-4bfc-8ee9-d7004bb6d3a9
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b5fd7129cfb21e5b59e8cdf0049b4ee75d59c87
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: e0ae068ad1137ff83b77839fe09b2baa6cccbefe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672730"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108715"
 ---
 # <a name="item-element-msbuild"></a>Item 元素 (MSBuild)
 

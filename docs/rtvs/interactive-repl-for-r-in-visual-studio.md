@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 40ecca9e6381095d292b9a5205419acc9957499c
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: bc00c97029daabc6b13a08f9a40a47cd612cbc7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679675"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075991"
 ---
 # <a name="work-with-the-r-interactive-window"></a>使用 R 交互窗口
 

@@ -21,14 +21,15 @@ ms.assetid: b71be6dc-57e0-4730-99d2-b540a0863e49
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1496c50d6a4022083a5cd093a0682ef36c70bbaa
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f446b1d7e23245739a94b1b7c99fecefb0d00c85
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389223"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090247"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的转储文件
 

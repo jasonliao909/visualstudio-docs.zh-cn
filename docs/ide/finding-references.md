@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cc7702ae07c83c5798945c4a9bb2ab787fc9cd3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a942755238a356032f41e7cff9e5a462196275c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945560"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109209"
 ---
 # <a name="find-references-in-your-code"></a>在代码中查找引用
 

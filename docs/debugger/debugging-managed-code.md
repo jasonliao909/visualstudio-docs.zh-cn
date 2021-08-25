@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1cac60b6b7187164780a67be24c7d8bdfb3b4eb2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a5f56710ea026cdd1962ea5fc43f914549bec300
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097509"
 ---
 # <a name="debug-managed-code-c-visual-basic-f-ccli"></a>调试托管代码（C#、Visual Basic、F#、C++/CLI）
 

@@ -3,22 +3,21 @@ title: 使用 C# 创建 Windows 窗体应用
 description: 了解如何在 Visual Studio 中使用 C# 分步创建 Windows 窗体应用。
 ms.date: 09/26/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.devlang: CSharp
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0efdb7d35549a32e1151a134ce3a665337bb27ce
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 464a75441a0f32ba3ca1196c9a6ed43b3bc0940f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308306"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124056"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 

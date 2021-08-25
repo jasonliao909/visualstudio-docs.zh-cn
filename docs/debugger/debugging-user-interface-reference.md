@@ -18,14 +18,15 @@ ms.assetid: 57f1cad8-c908-42bf-8ec5-6eb567df08e9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3788567cc3c8f75581ab0131ab5dda2196c07a2e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4286524ad955e2e857c8298288bf2497cdffec37
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113021"
 ---
 # <a name="debugging-user-interface-reference"></a>调试用户界面参考
 您在调试应用程序时可能会遇到以下对话框。

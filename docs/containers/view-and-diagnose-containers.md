@@ -5,14 +5,14 @@ author: ghogen
 ms.author: ghogen
 ms.topic: how-to
 ms.date: 01/20/2020
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 monikerRange: vs-2019
-ms.openlocfilehash: fd876e86cefcd0ce50aab02de8e7f4cf37d3ab51
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 63f21f83e677e391c14b71a8cccec6c49ee6f60e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729218"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122002"
 ---
 # <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看和诊断容器与图像
 

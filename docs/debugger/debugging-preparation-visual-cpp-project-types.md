@@ -15,14 +15,15 @@ ms.assetid: 912b4ba2-7719-43d5-b087-db33e3f9329a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 258671ca0426cb877d7cdf4bfc0b0f8f6095253c
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6b7c3f9c7f76f94232c2bacc986821641e544897
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387835"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097358"
 ---
 # <a name="debugging-preparation-c-project-types"></a>调试准备：C++ 项目类型
 本节描述如何调试用 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目模板创建的基本项目类型。

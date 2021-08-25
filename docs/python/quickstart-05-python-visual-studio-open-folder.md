@@ -6,17 +6,18 @@ ms.topic: quickstart
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: bc47f2a91b0ce42c319651cad22dbe05fe32623f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6553ffcc80dbe650b3b1775292599bc20d67cbfd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076134"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入门：打开并运行文件夹中的 Python 代码
 

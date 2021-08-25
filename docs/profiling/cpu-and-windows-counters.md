@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 3553106c9c2bea0d4d4c24b2e51b59e4fcf42722
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce6ea2adca59be61c225be4388204c3302c4b7d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956056"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039249"
 ---
 # <a name="cpu-and-windows-counters"></a>CPU 和 Windows 计数器
 

@@ -11,14 +11,15 @@ ms.assetid: 3cae844c-7c6d-4144-82dc-efad10ba458f
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3ac0295b2d6f4300fa29c893d61616977ad44b87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 87fc8cb1870d2c99a7e654b8f9fa3ecc31773be3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914410"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093746"
 ---
 # <a name="how-to-display-an-item-list-separated-with-commas"></a>如何：显示用逗号分隔的项列表
 
@@ -48,7 +49,7 @@ ms.locfileid: "99914410"
 
 ## <a name="example"></a>示例
 
-在此示例中，[Exec](../msbuild/exec-task.md) 任务会运行 findstr 工具，在文件 Phrases.txt 中查找指定的文本字符串。 在 findstr 命令中，文本搜索字符串由 -c: 开关指示，因此 `@(Phrase)` 项列表中各项之间插入的是项分隔符 `-c:`。
+在此示例中，[Exec](../msbuild/exec-task.md) 任务会运行 findstr 工具，在文件 Phrases.txt 中查找指定的文本字符串。 在 findstr 命令中，文本搜索字符串由 /c: 开关指示，因此 `@(Phrase)` 项列表中各项之间应插入分隔符 ` /c:`。
 
 对于此示例，等效的命令行命令为：
 

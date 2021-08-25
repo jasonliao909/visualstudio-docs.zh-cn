@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c2f3756b63cc07ed701a36b34a96c581acd9eb38
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 8bc709578539ff299647bae583f8370a3ba1b8d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101825"
 ---
 # <a name="find-in-files"></a>在文件中查找
 

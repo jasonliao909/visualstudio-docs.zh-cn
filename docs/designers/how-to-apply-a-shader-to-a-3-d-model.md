@@ -8,14 +8,15 @@ ms.assetid: a3877bd6-abd8-4a9d-842c-6848b6c2f335
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: bdaf4b86bfc773df678c03875a9ec260cd72084f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 08f078d07ad1a3d408c25f5cda2d8d19754ae881
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127813"
 ---
 # <a name="how-to-apply-a-shader-to-a-3d-model"></a>如何：向三维模型应用着色器
 

@@ -8,13 +8,13 @@ ms.assetid: 480e3062-aae7-48ef-9701-e4f9ea041382
 ms.topic: how-to
 ms.workload: multiple
 ms.date: 03/08/2021
-ms.technology: vs-azure
-ms.openlocfilehash: 2f2b5c0ff9b6a78f4917a517c06f3ce96ea7c1d7
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.technology: vs-container-tools
+ms.openlocfilehash: 7faf85d07d0c6de4f559e038b47e1935886ac0c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592019"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122093"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 

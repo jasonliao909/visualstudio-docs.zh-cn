@@ -8,14 +8,15 @@ ms.assetid: 0222e8bf-d29f-421b-9b1f-123d500fa179
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ac90077831d852ba0361c46186d18fe39cf9e81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd312e8934d14a986606020558adc57339250706
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112056"
 ---
 # <a name="how-to-create-a-basic-texture"></a>如何：创建基本纹理
 

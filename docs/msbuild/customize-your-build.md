@@ -11,14 +11,15 @@ ms.assetid: d0bceb3b-14fb-455c-805a-63acefa4b3ed
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 19dafcbb956634eeea5fa0ed967e93a8a8d5e546
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: bf19be21d95c4ac271772e8101e0c077e5af7f55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123354"
 ---
 # <a name="customize-your-build"></a>自定义生成
 

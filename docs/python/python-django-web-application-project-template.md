@@ -6,16 +6,17 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 462c66229b6f28d281bf03650e4d22d0d1dab64f
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 0307e36b102d452ee8ce0d7830b4e27bd30c3284
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806038"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068717"
 ---
 # <a name="django-web-project-template"></a>Django Web 项目模板
 ::: moniker range="vs-2017"

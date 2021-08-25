@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 3f8dc8ddb5cc17f2ac575ea023283f60f579ccbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: f2722835f21ac5fb3c3cf2c493943f281921f098
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875388"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086139"
 ---
 # <a name="how-to-create-item-templates"></a>如何：创建项模板
 

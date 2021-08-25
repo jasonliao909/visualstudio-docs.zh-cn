@@ -6,26 +6,27 @@ keywords: ai, visual studio
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 41f38b73163af6a249ec9b41aac3672a4ebbef0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f9723c2b6101678c8a95c451783b31e0e162b744
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841635"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067848"
 ---
 # <a name="visual-studio-tools-for-ai"></a>Visual Studio Tools for AI
 
-Visual Studio Tools for AI 是用于生成、测试和部署深度学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
+Visual Studio Tools for AI 是用于生成、测试和部署深入学习/AI 解决方案的扩展。 它与 Azure 机器学习无缝集成以实现强大的试验功能，包括但不限于提交数据准备以及以透明方式将训练作业建模为不同的计算目标。 此外，它提供对自定义指标和运行历史记录跟踪的支持，从而可实现数据科学的可再现性和审核。 通过企业就绪协作，可以安全地与他人一起处理项目。
 
 立即开始使用 [Microsoft 认知工具包 (CNTK)](/cognitive-toolkit/)、[Google TensorFlow](https://www.tensorflow.org) 或其他深入学习框架进行深入学习。
 
 ## <a name="develop-debug-and-deploy-deep-learning-models-and-ai-solutions"></a>开发、调试和部署深度学习模型和 AI 解决方案
-立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深度学习应用程序。
+立即使用 Visual Studio 的高效功能加快 AI 创新。 使用内置代码编辑器功能，如语法突出显示、IntelliSense 和文本自动格式设置。 可以通过对本地变量和模型使用单步调试，在本地环境中以交互方式测试深入学习应用程序。
 
 ![深入学习 ide](media/about/ide.png)
 
@@ -43,7 +44,7 @@ Visual Studio Tools for AI 与 Azure 机器学习集成在一起，用户可以�
 
 [详细了解如何在云中训练模型](tensorflow-vm.md)
 
-## <a name="supported-operating-systems"></a>Supported Operating Systems
+## <a name="supported-operating-systems"></a>支持的操作系统
 此扩展目前支持 Windows 64 位操作系统。
 
 ## <a name="support"></a>支持

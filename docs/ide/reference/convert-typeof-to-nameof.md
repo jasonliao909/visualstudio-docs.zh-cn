@@ -6,17 +6,18 @@ ms.topic: reference
 author: m-redding
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: f93c5232f852e1390eac9e2ebb57235abc5e1f6e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 98f1680b63060f820bf8c7a8b23efd2731e18f98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919689"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101513"
 ---
 # <a name="convert-typeof-to-nameof"></a>将 `typeof` 转换为 `nameof`
 

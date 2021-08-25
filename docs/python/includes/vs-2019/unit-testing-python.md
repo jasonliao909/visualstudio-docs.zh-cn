@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd63d927e41a8b360eb7d934693bb3c83a30ea4f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06c6fcec211cad4944c556aaddc29952dee40d2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920677"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156394"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>选择适用于 Python 项目的测试框架
 

@@ -8,14 +8,15 @@ ms.assetid: 4a914de0-9ffc-4526-9603-92e460e52513
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 98ead8b2f0ddc7edc84449c3f80deeb7598fdfab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f317ea59fd7f3318669a71d4480c5b53a182b327
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849757"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098679"
 ---
 # <a name="sorting-filtering-and-grouping-xml-schema-explorer"></a>排序、筛选和分组（XML 架构资源管理器）
 

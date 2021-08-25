@@ -31,14 +31,15 @@ ms.assetid: 4e3ccf1b-cd68-4db6-9470-710c911b47fc
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9ed6833bd60854cf2e3bcfbab76d57c7010f7863
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5f6efebfb3cfe61707b14ed39f2ae4ca2ca79585
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094069"
 ---
 # <a name="options-dialog-box-environment--documents"></a>“选项”对话框：环境 \> 文档
 

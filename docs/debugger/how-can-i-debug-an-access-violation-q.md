@@ -18,14 +18,15 @@ ms.assetid: 9311d754-0ce9-4145-b147-88b6ca77ba63
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 3689942c9db9fde3598590cf30100fc590c50753
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ae42f11fa04f3f4fa2121756a382f7a8676778ec
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080801"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何调试 C++ 访问冲突？
 

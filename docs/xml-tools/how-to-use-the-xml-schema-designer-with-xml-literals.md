@@ -8,16 +8,17 @@ ms.assetid: d11803e7-f81a-41a2-a145-ba494a45cc93
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: f233eaed4b08e499b3a7543d10caafd36c77a480
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9c97b0c5bf8224b31dcab1974b697c35150afed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969069"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130177"
 ---
 # <a name="how-to-use-the-xml-schema-designer-with-xml-literals"></a>如何：结合使用 XML 架构设计器和 XML 文本
 

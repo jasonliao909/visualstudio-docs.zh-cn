@@ -21,14 +21,15 @@ ms.assetid: 35cbd591-4c4f-4035-8731-8162ba1c8318
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b8d672d5d28d10beecf72d482d9859975e2c927e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ce2e0f4d53147e635adc7281a1d5118636daad4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865886"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122081862"
 ---
 # <a name="choose-breakpoints-dialog-box"></a>“选择断点”对话框
 尝试从“新建断点”对话框的不明确输入中设置断点时，将打开“选择断点”对话框 。 不明确输入的一个常见示例是重载函数名称。

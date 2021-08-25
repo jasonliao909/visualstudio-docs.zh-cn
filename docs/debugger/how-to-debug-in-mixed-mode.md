@@ -17,14 +17,15 @@ ms.assetid: 2859067d-7fcc-46b0-a4df-8c2101500977
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1144fa2f775427a3a46feda46d8bba015e960f2a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e25cd55efbd7d686a8251b2fb6da399e4977e50
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913252"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105231"
 ---
 # <a name="how-to-debug-in-mixed-mode-c-c-visual-basic"></a>如何：在混合模式下调试（C#、C++、Visual Basic）
 

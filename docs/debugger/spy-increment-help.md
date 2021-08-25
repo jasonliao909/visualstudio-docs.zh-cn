@@ -10,14 +10,15 @@ ms.assetid: 82155004-8d9e-4875-b7db-237a3cffb530
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b34c661e7a5bd2bd4e2bc24882bf98f00c1e4c5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 965a1e015a4a5889cb1624ebfb25dbfb213a4f86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903465"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096877"
 ---
 # <a name="spy-help"></a>Spy++ 帮助
 Spy++ 实用工具文档包括两组有关使用 Spy++ 和 Spy++ 视图的常规主题。 接下来是 Spy++ 参考，其中提供了有关每个可用菜单命令和对话框的更多详细信息。

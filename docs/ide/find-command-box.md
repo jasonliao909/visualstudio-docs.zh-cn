@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e650acd4dabec3dd3c657a91e4258b1678918e61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4492836ed06ea65a829d659ba81f261f0f99fe69
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945664"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078357"
 ---
 # <a name="findcommand-box"></a>“查找/命令”框
 

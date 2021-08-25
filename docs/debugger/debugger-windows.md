@@ -8,14 +8,15 @@ ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9959c73802e15ca25dcce62631e4faa81391d47a
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 52093660a867ddac2080c68480d1138bbb6ecf12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389886"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080934"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>在 Visual Studio 中使用调试器窗口检查数据
 

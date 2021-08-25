@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 181ce2071d780c9ef481d281f543c49d65262078
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 42316256751a61b468198eb09472fe4c8c24f280
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296776"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062454"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 实用指南
 

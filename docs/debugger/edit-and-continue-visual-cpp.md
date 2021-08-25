@@ -17,14 +17,15 @@ ms.assetid: 1815251e-a877-433e-9e5e-69bd9ba254c7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0c4fd6d5214211318e2271418425a117a73eb0ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1f4bae68781cec00a61cb67f08450cc978418099
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99871879"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065720"
 ---
 # <a name="edit-and-continue-c"></a>编辑并继续 (C++)
 可以在 C++ 项目中使用“编辑并继续”。 请参阅[支持的代码更改 (C++)](../debugger/supported-code-changes-cpp.md)，了解有关 Edit and Continue 的限制的信息。

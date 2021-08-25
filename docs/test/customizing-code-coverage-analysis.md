@@ -6,15 +6,16 @@ ms.date: 08/21/2019
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 65044baf78e6f49e35f011a4853111063e82a192
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b422efc8e3f8e6ec9c39b02089e22c5eab6ed3cc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964402"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083929"
 ---
 # <a name="customize-code-coverage-analysis"></a>自定义代码覆盖率分析
 

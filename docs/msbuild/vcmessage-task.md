@@ -19,14 +19,15 @@ ms.assetid: 956675fd-05dc-40b4-856f-616145103498
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c8db60044080726b61a02a59cad68d93f683e282
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 705298bf73bceda32ca82a9dc85f96816794d8e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908824"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108208"
 ---
 # <a name="vcmessage-task"></a>VCMessage 任务
 

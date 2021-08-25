@@ -11,14 +11,15 @@ ms.assetid: ccd42c07-0fb6-4e8b-9ebb-a6a6db18aa2e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 855a07ab21d0396fea4605e5117e312608cb625e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bcb1307714b33e87a886cef18dd97e3d6000e0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108416"
 ---
 # <a name="override-toolsversion-settings"></a>重写 ToolsVersion 设置
 

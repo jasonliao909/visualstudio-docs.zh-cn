@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce656c43dd04ab91bd3fd34dcd01dbad27cc644
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ed8aeefb35ec0659646a19d055f85743ef643d81
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041524"
 ---
 # <a name="learn-to-use-the-code-editor"></a>了解如何使用代码编辑器
 

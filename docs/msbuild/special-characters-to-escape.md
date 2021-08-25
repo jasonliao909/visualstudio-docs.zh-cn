@@ -16,14 +16,15 @@ ms.assetid: 5b5172c3-41e4-4f38-a16f-2aeac831a5fc
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e665c214ea75de67a6c339bb516dfb812936448
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d51afda7866fbf38642b47a99b970a6407ac4d19
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878144"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100577"
 ---
 # <a name="special-characters-to-escape"></a>要转义的特殊字符
 

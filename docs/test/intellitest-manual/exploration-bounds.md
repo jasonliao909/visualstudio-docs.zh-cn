@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Exploration bounds
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 44af9fc50e81727d534e7c5a79dba0ccf2edde75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be5e90949089f92289c5f6b32ebafd9e81e658c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059980"
 ---
 # <a name="exploration-bounds"></a>浏览边界
 

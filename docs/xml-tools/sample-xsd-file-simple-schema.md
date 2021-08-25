@@ -8,14 +8,15 @@ ms.assetid: f7e1dde1-b4f6-4371-add4-935b68ec77d7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0529a80ac88d33d4f24f5933a814fde3c1fbbef7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60ce74d0d9463870ea021470fb3a46909fe6416f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876363"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114467"
 ---
 # <a name="sample-xsd-file-simple-schema"></a>示例 XSD 文件：简单架构
 

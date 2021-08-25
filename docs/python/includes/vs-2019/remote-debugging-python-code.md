@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: dcc5d9746a556af54ea206528fcb9a402e25d700
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 74b4e25bccf52893302adf4bca6bb81a5e7e3794
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916604"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122140515"
 ---
 Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应用程序（请参阅[远程调试](../../../debugger/remote-debugging.md)）。 它还可以使用 [debugpy 库](https://pypi.org/project/debugpy/)在除 CPython 之外的其他操作系统、设备或 Python 实现中进行远程调试。
 

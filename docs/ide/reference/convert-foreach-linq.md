@@ -6,16 +6,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 8ff489e11cc5c61c5e840b4b12d05ba5da46ce41
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 564c18a439da1f12c5be36b53839f57ad07fb440
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117457"
 ---
 # <a name="convert-a-foreach-loop-to-linq"></a>将 foreach 循环转换为 LINQ
 

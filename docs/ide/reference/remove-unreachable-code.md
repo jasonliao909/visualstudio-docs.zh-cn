@@ -7,17 +7,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: a7ce04b38c13b0994d47974488b90114a63495e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 66ea34ff9cf8ba60775d12da001d49b58747d1c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117197"
 ---
 # <a name="remove-unreachable-code-refactoring"></a>“删除无法访问的代码”重构
 

@@ -11,14 +11,15 @@ ms.assetid: ef4f6259-a110-43b6-a325-364154e1ba00
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 31ad1fbdf44283a0dc7f5f6374299aab27303db1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6046e7622369e34108adc3ca8996752e86de1203
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131204"
 ---
 # <a name="report-based-on-visible-time-range"></a>基于可见时间范围的报表
 “分析”视图显示基于当前可见的时间范围和通道的报表。 若要查看不同数据子集的详细信息，请单击图例中的相应项。

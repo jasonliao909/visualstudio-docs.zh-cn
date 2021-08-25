@@ -7,14 +7,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93365ea32ce2ad0b07b8285e3787a7a7edefffbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02227e6f57761aa08ed0110442e58d31b1d06fd8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956654"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034391"
 ---
 # <a name="add-explicit-cast"></a>添加显式强制转换
 

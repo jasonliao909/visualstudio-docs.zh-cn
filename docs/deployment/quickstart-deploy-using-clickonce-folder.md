@@ -9,15 +9,16 @@ ms.assetid: adb461c4-812a-4b8c-b2ab-96002379f6a9
 author: john-hart
 ms.author: JohnHart
 manager: jmartens
+ms.technology: vs-ide-deployment
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: d3977408f191aabc734226fd6b637fcfaaf5e9de
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 1a093cbf609e2226967b0879e23f13631db91a79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102165704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035769"
 ---
 # <a name="deploy-a-net-windows-desktop-application-using-clickonce"></a>使用 ClickOnce 部署 .NET Windows 桌面应用程序
 

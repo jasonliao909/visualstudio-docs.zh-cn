@@ -23,14 +23,15 @@ ms.assetid: 7f7a0439-10e4-4966-bb2d-51f04cda4fe2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ddb7a9f22033c24d4e2e925caec73a86f24e4985
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8a725ced36f886054094cc0ce97da34a1a74d3da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885178"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090715"
 ---
 # <a name="use-the-memory-windows-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中使用“内存”窗口（C#、C++、Visual Basic、F#）
 

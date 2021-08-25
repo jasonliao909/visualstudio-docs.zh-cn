@@ -12,15 +12,16 @@ ms.assetid: 8a5b78aa-7b3d-476c-a47d-abfaff3fae7c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 483b08972d768e8c0d492f467d845642b5afcea7
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 2b12813f7e0da051a0b6d96ac907638acf04517f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469892"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084332"
 ---
 # <a name="da0008-few-samples-collected"></a>DA0008：收集的样本过少
 

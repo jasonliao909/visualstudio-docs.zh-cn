@@ -28,14 +28,15 @@ ms.assetid: 2d7b0121-71aa-414b-bbb6-ede1093d0bfc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e347bd8de6342a79d7523a1085f0e40cad8b0cbf
-ms.sourcegitcommit: 691d2a47f92f991241fdb132a82c53a537198d50
+ms.openlocfilehash: 2ed7f138b41cc71cd4964bb50e3358e020905355
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103571488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129761"
 ---
 # <a name="cc-assertions"></a>C/C++ 断言
 

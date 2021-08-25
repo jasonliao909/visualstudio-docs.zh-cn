@@ -8,15 +8,16 @@ ms.assetid: 056b10a0-952b-4790-89e0-02aebe902e87
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b01f77a530f42b7834af8f16ddbbdda170467a2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 107918d6f87ac5c9c3c0db99014eb4ad59d2c596
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897725"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107662"
 ---
 # <a name="how-to-filter-report-views-from-the-summary-timeline"></a>如何：从摘要时间线中筛选报表视图
 可通过在“摘要”视图的时间线图中指定时间段来筛选显示在性能报告中的数据。 筛选报告时，会对分析数据文件进行重新分析，以仅包含指定的时间段。

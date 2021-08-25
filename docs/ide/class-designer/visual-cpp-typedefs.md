@@ -13,14 +13,15 @@ ms.assetid: c1984108-71fc-4d3a-b4d4-3eac2c6b4ebf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: b50b4be5552b3c6a0ba965b97aa2e1668a7369d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9e00588b8ba0367be6f28873ec0f8940f92f04a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954457"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078396"
 ---
 # <a name="c-typedefs-in-class-designer"></a>类设计器中的 C++ Typedef
 

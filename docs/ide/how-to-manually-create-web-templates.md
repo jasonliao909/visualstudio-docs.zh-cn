@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 430faba462075335bbc8a3aa6e89f1c7f348ffb5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 05a3bbe59c290ade7871d63a7a89d900638c5afe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924633"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101695"
 ---
 # <a name="how-to-manually-create-web-templates"></a>如何：手动创建 Web 模板
 

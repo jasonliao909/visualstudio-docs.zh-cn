@@ -15,14 +15,15 @@ ms.assetid: 4d9815ae-3e80-4b4d-933d-f8309aee18d5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 77402f7503818b310a592a39706ac717ac728852
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4411ab1280bc8c39fcbf49a5ee80f1722a84d1d5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847955"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086152"
 ---
 # <a name="develop-globalized-and-localized-apps"></a>开发全球化和本地化应用
 
