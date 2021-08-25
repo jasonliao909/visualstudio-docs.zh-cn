@@ -7,17 +7,18 @@ ms.topic: conceptual
 helpviewer_keywords:
 - developer community privacy
 - privacy, developer community
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e521a8291947922d856819b637cd262db434c7eb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ecfcbb6cf6e7681bfd68375f1e4b447c23fac83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048994"
 ---
 # <a name="developer-community-data-privacy"></a>开发人员社区数据隐私
 

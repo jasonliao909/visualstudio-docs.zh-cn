@@ -11,15 +11,16 @@ ms.assetid: 33ccff45-c33a-4672-b41f-5b317b848cd1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2518a7dbd97643b1eaa49daa8dd3e6007dcdbb93
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bf5d25cd0d2bd31177129bdeda36e4fd698311db
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131815"
 ---
 # <a name="commentmarkprofile"></a>CommentMarkProfile
 `CommentMarkProfile` 函数在 .vsp 文件中插入数值标记和文本字符串。 为了插入标记和注释，对包含 `CommentMarkProfile` 函数的线程进行的分析必须为 ON。

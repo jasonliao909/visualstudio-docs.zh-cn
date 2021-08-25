@@ -13,14 +13,15 @@ ms.assetid: 1aa3669c-1647-4960-b770-752e2532102f
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 44e4e713bf8f796f31fcca69a9451a77d120bcfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bd111e53e2b2765614808b808ee1744681bfbce0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914348"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136958"
 ---
 # <a name="how-to-escape-special-characters-in-msbuild"></a>如何：转义 MSBuild 中的特殊字符
 

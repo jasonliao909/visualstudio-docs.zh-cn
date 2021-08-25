@@ -8,15 +8,16 @@ ms.assetid: 7c81e88b-a748-4cf5-a7a1-3429608e1b54
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: bc1c215359f6b891239cd7b39f33d412bbf40dd5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 988d2590c070c9561bcc335bbbc33a9a935a9c9b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131581"
 ---
 # <a name="gc-vsperfcmd"></a>GC (VSPerfCmd)
 “GC”选项启用 .NET Framework 内存分配数据和对象生存期数据的收集。 “GC”选项只能用于采样分析方法，且只能与“Launch”选项一起使用。

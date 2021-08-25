@@ -16,14 +16,15 @@ ms.assetid: 81114b67-520f-43b5-8891-224f68a78516
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a9a05ce16289c012b067faa5bc302a3921cbe1c7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 300b64f3de940d7be3c28a8a13afe7b1bfc7b0e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888090"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137126"
 ---
 # <a name="formaturl-task"></a>FormatUrl 任务
 
@@ -33,7 +34,7 @@ ms.locfileid: "99888090"
 
  下表描述了 `FormatUrl` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`InputUrl`|可选 `String` 参数。<br /><br /> 指定要格式化的 URL。|
 |`OutputUrl`|可选 `String` 输出参数。<br /><br /> 指定已格式化的 URL。|
@@ -42,7 +43,7 @@ ms.locfileid: "99888090"
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

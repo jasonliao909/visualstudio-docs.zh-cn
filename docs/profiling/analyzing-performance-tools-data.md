@@ -16,15 +16,16 @@ ms.assetid: ae3e198a-b994-4ecb-a633-dec98bd4fd45
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 20718e0ef9351b055bbefa28eb751eac88a67b1b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95574cb468421f34ff222788242410f679e86670
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901160"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132010"
 ---
 # <a name="analyze-performance-tools-data"></a>分析性能工具数据
 通过 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具的性能报告可查看并分析应用程序性能问题。 本部分概述了可用于检查性能数据的性能报告和视图。

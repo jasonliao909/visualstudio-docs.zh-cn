@@ -8,14 +8,15 @@ ms.assetid: 348dbf64-3f09-4fff-b47a-a7ecdf3221cc
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 158f51ddc8db8f83d98c34aa03b3ee4f5a1a4d01
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3077cd59a9ab9e051a1e11e9bb1d19117cc0feb7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874816"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031843"
 ---
 # <a name="xml-snippets"></a>XML 代码片断
 

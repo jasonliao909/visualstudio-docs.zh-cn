@@ -11,15 +11,16 @@ ms.assetid: 5224ac52-0fc2-4269-8eb2-ead7fda3afd4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1be2c43d876124945cce6cb9e3ae9605b8127394
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 46d91c15fb43a735856e537fe09c94ba33aa439a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136321"
 ---
 # <a name="customize-performance-tools-report-views"></a>自定义性能工具报告视图
 本节介绍如何自定义使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具生成的报告。

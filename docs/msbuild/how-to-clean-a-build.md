@@ -13,14 +13,15 @@ ms.assetid: 999ba473-b0c4-45c7-930a-63ea7a510509
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e6c0beb70379d8b79a3e1826ba74f34202eea19f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6b10eb89a5ad833c2f2bac09af68ac500dacfe58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914458"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137088"
 ---
 # <a name="how-to-clean-a-build"></a>如何：清理生成
 

@@ -10,12 +10,13 @@ ms.assetid: 2cefe8c2-430a-4cb4-bbe0-f3edb2e5bc03
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 2ca477e25daa76e63e786698e7e2fa1e39c7f77f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3ccc9970c3e668a5242a5d409670da544d628992
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033208"
 ---
 # <a name="how-to-include-recordings-of-the-screen-and-voice-during-tests-using-test-settings"></a>如何：使用测试设置在测试期间包括屏幕和语音录制
 

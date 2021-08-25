@@ -7,17 +7,18 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d9c257bcf0e2a88a384c22010abb08894483ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9128a9b488c5f7ab76ce398aa2a087e7ccf1481
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951090"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137270"
 ---
 # <a name="quick-actions"></a>快速操作
 

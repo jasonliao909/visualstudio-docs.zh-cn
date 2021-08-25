@@ -10,14 +10,15 @@ ms.assetid: f0e64c0e-cdb3-4ad4-9723-09934166f3a2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 018f15fe8c57912294b6b5e6d2772dfa2fcff56a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d2ab67236d33b2f298f4542931010970c901775
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916330"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052005"
 ---
 # <a name="how-to-display-thread-properties"></a>如何：显示线程属性
 若要详细了解[线程视图](../debugger/threads-view.md)中列出的线程，请使用[“线程属性”对话框](../debugger/thread-properties-dialog-box.md)。

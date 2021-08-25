@@ -8,14 +8,15 @@ ms.assetid: 5881afde-3f24-4eb9-bff8-6cb3fc8aade7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 39a988ed4742f34fa2a3e6e2680d5eec8ccd2b07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 82e5b51628bd4589b27095c7591a7d4683faaa55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122025155"
 ---
 # <a name="graph-view"></a>图形视图
 

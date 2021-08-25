@@ -12,14 +12,15 @@ ms.assetid: 80c100f8-2502-4613-bfef-4f4f2e09cc8d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5c62c57e3037b38c2729917d2b882550b9c2d126
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48455b4411994f61864a08aa05032bf8b0caafb3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861603"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131568"
 ---
 # <a name="execution-time-threads-view"></a>执行时间（“线程”视图）
 当系统中的线程主动在逻辑内核上工作时，线程视图时间线中的这些段表示执行时间。

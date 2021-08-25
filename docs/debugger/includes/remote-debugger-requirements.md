@@ -13,12 +13,12 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: fe2927a7a863b3825a680096da44afa6d68f1cba
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: cd7b9ac5959cdd03b2e2bef576ddc10b402ae12b6dc8aad3ded9fe49ed3bd019
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "92298688"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122058259"
 ---
 ### <a name="supported-operating-systems"></a>Supported Operating Systems  
 

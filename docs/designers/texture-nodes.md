@@ -8,14 +8,15 @@ ms.assetid: b7df5ef3-dd4f-4964-9d96-34e0e180515e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bf9ea986fde744ec384f68338eca0d2239a3e73
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b10df636d87cb8fcb2ea88a3422998a4773adc56
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902265"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058170"
 ---
 # <a name="texture-nodes"></a>纹理节点
 

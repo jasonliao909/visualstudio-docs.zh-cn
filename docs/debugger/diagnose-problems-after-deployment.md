@@ -8,14 +8,15 @@ ms.assetid: a3463eab-a352-4d17-8551-adbaad526db0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 300aec5fc2b9fb31c848e92f212f7df466111263
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 192389c32a8ff5193b545a1a4159441bab298a8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872087"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031008"
 ---
 # <a name="diagnose-problems-after-deployment-using-intellitrace-c-visual-basic"></a>使用 IntelliTrace在部署后诊断问题（C#、Visual Basic）
 

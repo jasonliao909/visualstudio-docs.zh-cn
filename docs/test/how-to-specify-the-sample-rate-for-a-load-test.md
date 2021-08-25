@@ -10,12 +10,13 @@ ms.assetid: 51cbe7d6-5dfd-4842-bca3-f7f8a665dc84
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 7d591ad7cc97543f9167b698b0a5f0664e59b5c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 2e397dec54a29f3a660c4cc91d21094a99986e5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135593"
 ---
 # <a name="how-to-specify-the-sample-rate-for-a-load-test-run-setting"></a>如何：为负载测试运行设置指定采样率
 

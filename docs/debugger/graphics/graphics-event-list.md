@@ -10,14 +10,15 @@ ms.assetid: a1252e19-b27d-4dc7-a16b-fdac894c1f0e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c964cda5cbe2903cf9511659b9a8f9bfb9f4aad6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2cb03305b036e5954340dc04a3c14d786b7735d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884515"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052078"
 ---
 # <a name="graphics-event-list"></a>图形事件列表
 使用 Visual Studio 图形分析器中的图形事件列表来浏览在呈现游戏或应用的帧时所记录的 Direct3D 事件。

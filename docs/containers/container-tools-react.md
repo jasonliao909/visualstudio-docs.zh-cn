@@ -6,14 +6,14 @@ author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和 Docker 创建容器化 React SPA 应用
 ms.author: ghogen
 ms.date: 02/21/2021
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: 177a44f8af73226d4352c4a48c23c65eadc3e608
-ms.sourcegitcommit: 674d3fafa7c9e0cb0d1338027ef419a49c028c36
+ms.openlocfilehash: 4c1bc184b2244de0babfd368e22de3bda3af808a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112602023"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053014"
 ---
 # <a name="quickstart-use-docker-with-a-react-single-page-app-in-visual-studio"></a>快速入门：将 Docker 与 Visual Studio 中的 React 单页面应用结合使用
 
@@ -235,7 +235,7 @@ CONTAINER ID        IMAGE                      COMMAND               CREATED    
 1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
 1. 在“发布目标”对话框中，选择“容器注册表”。
 1. 选择“创建新的 Azure 容器注册表”并单击“发布” 。
-1. 在“创建新 Azure 容器注册表”中填写所需的值。
+1. 在“创建新 Azure 容器注册表”中填写所需的值  。
 
     | 设置      | 建议的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |

@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3bdd35056706491ace6e5e6b2f7c3f6a45464d2e
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: f07adcdf073500dda859c30e77fc4e21879f139e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729242"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031058"
 ---
 # <a name="debug-using-the-just-in-time-debugger-in-visual-studio"></a>在 Visual Studio 中使用实时调试器进行调试
 

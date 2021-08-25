@@ -8,14 +8,15 @@ ms.assetid: 3a27375b-81cc-48f6-a884-e1cb8c4f78f5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 4ada7beb72c27594b637b2c090c96581d4a6eb49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7a8a46c388286f88739535b17be2e723c5b89f40
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934567"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045471"
 ---
 # <a name="how-to-use-xml-snippets"></a>如何：使用 XML 片段
 

@@ -19,14 +19,15 @@ ms.assetid: b62a482e-8fb5-4999-b50b-6605a078e291
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a5b3d48c4556cfd05e5ce3f2b893b3f0e9a07226
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65437104a04de8fe08f21b077a093483ec3209df
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901442"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054946"
 ---
 # <a name="cppclean-task"></a>CPPClean 任务
 

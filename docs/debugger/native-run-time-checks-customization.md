@@ -22,14 +22,15 @@ ms.assetid: 76a365fe-6439-49db-8603-34058b78e5a8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 33c3da5387c67e14ced99918273800709b3b67b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0be145d41fbc2ae112372ba1653caca983118605
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913112"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030706"
 ---
 # <a name="native-run-time-checks-customization"></a>本机运行时检查自定义
 在使用 /RTC（运行时检查）进行编译或使用 `runtime_checks` 杂注时，C 运行时库会提供本机运行时检查。 某些情况下，可能需要自定义运行时检查：

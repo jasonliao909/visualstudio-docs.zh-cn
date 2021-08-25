@@ -11,15 +11,16 @@ ms.assetid: 4cfc8a29-b29b-4a72-b386-03d8856fdf8a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d39318433194693ee2b2cbbc8a94753cf2acd75d
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: bba917f5e0ac16c053efcc9e361f5dbdc95277f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136139"
 ---
 # <a name="da0026-excessive-kernel-cpu-time-processing"></a>DA0026：处理过程的内核 CPU 时间过长
 

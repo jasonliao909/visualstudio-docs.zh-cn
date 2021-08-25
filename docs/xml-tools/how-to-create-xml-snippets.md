@@ -8,14 +8,15 @@ ms.assetid: d8556dd7-1382-4af7-ba80-3e873c9416be
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: ad907175f0826a5dd040f77c03517e00d4e1391c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee6dfe8990cf5e85a35a0d538c2bfbd50c3462e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959774"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045446"
 ---
 # <a name="how-to-create-xml-snippets"></a>如何：创建 XML 片段
 

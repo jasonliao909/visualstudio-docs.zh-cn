@@ -12,15 +12,16 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: f20c7bf1060dc09783722c20254db7ed8c167b07
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86e783448b7b845f9bf6b5f526cbbd725f1b14be
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893199"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051815"
 ---
 # <a name="keyboard-shortcuts-html-and-javascript"></a>键盘快捷键（HTML 和 JavaScript）
 

@@ -6,15 +6,16 @@ ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 8c4a846fe9425af7dc62ef93276c0272f480b7f9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71ab67e5457d4616d9abbba0570443e6a1b2a817
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026754"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>扩展编码的 UI 测试和操作录制
 

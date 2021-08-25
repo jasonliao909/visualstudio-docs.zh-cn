@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 813a6ce10b0c5bcc385ac72ba6fdf99495c457ee
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 86f9760806296b8c3906ef70d1557395d225ba23
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056584"
 ---
 # <a name="learn-about-projects-and-solutions-using-visual-basic"></a>通过 Visual Basic 了解项目和解决方案
 

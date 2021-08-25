@@ -11,14 +11,15 @@ ms.assetid: 3aebf9c8-b62c-4cb2-b2d6-8cdfcd369a24
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ffe175d9ea73640cae1197fe91656d3565525f6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4f8cc9ec0658ffcfaa9be8bc971222d77d14373
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054803"
 ---
 # <a name="create-forwarding-loggers"></a>创建转发记录器
 

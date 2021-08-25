@@ -21,14 +21,15 @@ ms.assetid: 9d7dfc1b-9fe0-4f54-9c50-9c0e0f8358c5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4c33065feff6b4a2a0d3e292004b51fda744cf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 53d8bbb4a4d053e4120cacfb1d44ca14295a3d22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99858028"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052481"
 ---
 # <a name="a-dcom-error-occurred-trying-to-contact-the-remote-computer-access-is-denied"></a>尝试联系远程计算机时出现 DCOM 错误。 拒绝访问。
 在以下情况下，远程调试使用 DCOM 在本地和远程计算机之间进行通信：

@@ -3,23 +3,22 @@ title: Visual Studio 的辅助功能
 description: 详细了解辅助功能和实用程序，它们可以帮助每位用户（包括残疾人士）更加轻松地使用 Windows 操作系统和 Visual Studio 开发人员套件。
 ms.date: 08/23/2019
 ms.topic: conceptual
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 helpviewer_keywords:
 - Visual Studio, accessibility
 - accessibility [Visual Studio]
 ms.assetid: aa1ada29-4d93-4bf0-af8b-03633fcb0fba
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 43a2db3f3585dbfa68bf217cc29fb7b73cc35485
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 880863d483845f75d316db0f088ab8bcc6f98972
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939794"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137192"
 ---
 # <a name="accessibility-features-of-visual-studio"></a>Visual Studio 的辅助功能
 
@@ -38,7 +37,7 @@ ms.locfileid: "99939794"
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅 [Visual Studio for Mac 辅助功能](/visualstudio/mac/accessibility)。
 
-有关详细信息，请参阅下列主题：
+有关详细信息，请参阅以下主题：
 
 - [如何：设置 IDE 辅助功能选项](../../ide/reference/how-to-set-ide-accessibility-options.md)
 

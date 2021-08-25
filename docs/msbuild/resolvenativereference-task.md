@@ -18,14 +18,15 @@ ms.assetid: 56acd101-de77-4eec-92c6-f5c6d2187579
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7cb987ec458e91c4190e2e0c264a80592f8133e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 212239348ba1f4caf80be1ac9feb029bb702cee3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912471"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136672"
 ---
 # <a name="resolvenativereference-task"></a>ResolveNativeReference 任务
 
@@ -50,7 +51,7 @@ ms.locfileid: "99912471"
 
  除上面列出的参数外，此任务还从 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数，后者自身继承自 <xref:Microsoft.Build.Utilities.Task> 类。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

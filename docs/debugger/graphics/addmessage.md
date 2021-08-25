@@ -8,14 +8,15 @@ ms.assetid: 102a0404-a00c-4566-93f3-01bc8df63280
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1046b7d8a71efb7d628302041a83fb9d20138a29
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 98b37dd5df91bd4907869c36e40938a075d67396
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138973"
 ---
 # <a name="addmessage"></a>AddMessage
 将自定义消息添加到图形诊断 HUD（提醒显示）  。

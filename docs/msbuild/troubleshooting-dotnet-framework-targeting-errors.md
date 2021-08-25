@@ -17,14 +17,15 @@ ms.assetid: 830e3e45-9a93-4279-a249-75b84599aefb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7b4e6f14eb5ba771ff83b0aa5fedc8ae261ca69d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1dce9842b9248b118e618cd7e9b8d7a93b5fe22
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902632"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136620"
 ---
 # <a name="troubleshoot-net-framework-targeting-errors"></a>.NET Framework 目标错误疑难解答
 

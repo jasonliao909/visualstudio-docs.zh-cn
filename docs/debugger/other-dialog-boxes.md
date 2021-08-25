@@ -11,14 +11,15 @@ ms.assetid: 81710456-2600-4468-a448-3fb21c7bda82
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f052fa518df42f7e9fcea0a6d49049ada63c8178
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36362c04ef2fe72035ba41afe122c07ad0819e51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030667"
 ---
 # <a name="other-dialog-boxes"></a>其他对话框
 这些对话框显示有关 Spy++ 程序的信息。

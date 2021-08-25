@@ -8,14 +8,15 @@ ms.assetid: 1b9aa3ea-29a0-4e21-bc57-936f33537b5c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a0689238bf30947fa36ff58b969afa35a55003b5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 70ac7cbc1081e2c7a9a04c96393a5ac6af51cede
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133830"
 ---
 # <a name="how-to-change-the-graphics-diagnostics-playback-machine"></a>如何：更改图形诊断播放计算机
 你可以使用本地计算机、远程计算机或设备播放图形信息。

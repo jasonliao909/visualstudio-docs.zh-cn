@@ -11,12 +11,13 @@ ms.assetid: 4414a638-1fa2-40ad-b1f4-b99f90b62e62
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 36c93d11e64b01820a3a31c73beccadb24ffa08c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 9d27790915c545b7e3cd83538f8e0b41041244bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887661"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047369"
 ---
 # <a name="load-test-scenario-properties"></a>负载测试方案属性
 

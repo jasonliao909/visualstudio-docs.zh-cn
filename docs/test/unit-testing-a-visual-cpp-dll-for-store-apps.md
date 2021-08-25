@@ -6,15 +6,16 @@ ms.date: 05/01/2019
 ms.topic: how-to
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - uwp
 author: corob-msft
-ms.openlocfilehash: f1981b3876d2e42e992ef261738da2443edfc114
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: e39e2c6db8f7bc80bcc4a1f8ce267cab9b6891a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054075"
 ---
 # <a name="how-to-test-a-c-dll"></a>如何测试 C++ DLL
 

@@ -8,14 +8,15 @@ ms.assetid: ea8dc357-2e66-455a-aec2-7ccaccfc9adf
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 45d0bb8b47162966974499fed20c826b52dcfaa4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 563f629ed21d524eb302d55af2550c86a89922e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875076"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045497"
 ---
 # <a name="walkthrough-use-xml-editor-features"></a>演练：使用 XML 编辑器功能
 

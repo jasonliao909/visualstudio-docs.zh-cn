@@ -8,15 +8,16 @@ ms.assetid: 24b0ed68-d19e-473e-9af3-252c11d82bcf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c940cc06142fc69460ed1e4a32303a6e3f919164
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 93d20cd77d5aa6bde02a8bef922a21bdbf997e8f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131490"
 ---
 # <a name="globalon-and-globaloff"></a>GlobalOn 和 GlobalOff
 VSPerfCmd.exe 的“GlobalOff” 和“GlobalOn”选项可暂停和继续命令行分析会话中所有进程和线程的分析 。

@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2c4da809455a859479d0421bffaa1b257a18c4b5
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: c2b18f6443d6460350683e0f4feb53ebd8ccff5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032961"
 ---
 # <a name="live-unit-testing-overview"></a>Live Unit Testing 概述
 

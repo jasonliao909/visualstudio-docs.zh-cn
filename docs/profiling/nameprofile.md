@@ -10,15 +10,16 @@ ms.assetid: 1bb05441-c4ff-4323-9fef-f3924fba4430
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 53d6dcc6cdc903f0050eeb326ebd3c5fa36252ae
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55656f03516544c9ba7b2c7c06ff24b70c0bc02f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964740"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027547"
 ---
 # <a name="nameprofile"></a>NameProfile
 `NameProfile` 函数会将字符串分配给指定的进程或线程。

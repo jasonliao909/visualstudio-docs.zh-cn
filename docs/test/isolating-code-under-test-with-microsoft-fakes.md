@@ -6,18 +6,19 @@ ms.date: 06/03/2020
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - VB
 - CSharp
-ms.openlocfilehash: 8800116393df30df59b9fbe9544c1bbd0ee1bc18
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 0155aae4ef2feb022bf0f8e9d56502e68244852d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295645"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032987"
 ---
 # <a name="isolate-code-under-test-with-microsoft-fakes"></a>用 Microsoft Fakes 隔离测试代码
 

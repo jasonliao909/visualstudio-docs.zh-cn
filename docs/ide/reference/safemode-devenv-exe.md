@@ -12,14 +12,15 @@ ms.assetid: b191f6a5-8f12-47ec-bcc7-b68149a22aa8
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1626776ec41bdbdfe5ad2b611516e62ada4f15a3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abc61c4a92bfab394fab783196ff2ca9fab831d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957863"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056168"
 ---
 # <a name="safemode-devenvexe"></a>/SafeMode (devenv.exe)
 

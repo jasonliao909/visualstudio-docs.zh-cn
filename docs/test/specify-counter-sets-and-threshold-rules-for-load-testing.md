@@ -15,12 +15,13 @@ ms.assetid: 9e14d955-f3a4-4717-bbfe-7f08cdda5678
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: fda390640d627a91d4ab534192cba9bd9e30f00f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 70e74129590f867d15c83d1419762d7162474c5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962634"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054192"
 ---
 # <a name="specify-counter-sets-and-threshold-rules-for-computers-in-a-load-test"></a>为负载测试中的计算机指定计数器集和阈值规则
 

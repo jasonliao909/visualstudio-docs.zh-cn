@@ -18,14 +18,15 @@ ms.assetid: edef1819-ddeb-4e09-95de-fc7063ba9388
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9eef76a3757d9a2ff8ece5da5c18968097bd7618
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d65187b74dc17c9211a6b3ac8b750606c1c4ae3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878157"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136633"
 ---
 # <a name="signfile-task"></a>SignFile 任务
 

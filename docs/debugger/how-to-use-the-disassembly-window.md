@@ -21,14 +21,15 @@ ms.assetid: eaf84dd0-c82d-481b-af51-690b74e7794c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c8cc67b2f8136ea426eb56c25fb3c345198701f1
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: cc563c6ffc7a97af684edb49b9bb7466ed7bd24a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387458"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051841"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中查看反汇编代码（C#、C++、Visual Basic、F#）
 

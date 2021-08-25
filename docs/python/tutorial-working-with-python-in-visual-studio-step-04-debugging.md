@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 13080f69de9a8bfc6b1da35a7126f1f0c89a64c7
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: d4ec2aacb6ba0eb06e6603928da623c7b5bb9d7c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027287"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 

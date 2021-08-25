@@ -10,14 +10,15 @@ helpviewer_keywords:
 ms.author: mikejo
 author: mikejo5000
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 86544ad36874ec2a99fac0f8505b24548e83c7c0
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 9af275fe53925c2814c1c43a72ec4512d1e2c1b2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102168356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032831"
 ---
 # <a name="vstestconsoleexe-command-line-options"></a>VSTest.Console.exe 命令行选项
 

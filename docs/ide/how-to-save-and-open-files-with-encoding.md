@@ -13,14 +13,15 @@ ms.assetid: cb52b732-b395-4ba1-a3ef-104b3942a12a
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d19b6f8e2e614ed397dee2e75807ded895a82d81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3769689f28f1a14c39942c6cdcb0103e01bb8a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99927907"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137374"
 ---
 # <a name="how-to-save-and-open-files-with-encoding"></a>如何：保存和打开带有编码的文件
 

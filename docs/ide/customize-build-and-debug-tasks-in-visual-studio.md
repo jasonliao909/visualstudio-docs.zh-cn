@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 659e0f4e46d6960a2a1350c605e55357a84ec115
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: d05ffcc5140edcf04dd03b591df100831304fc6b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102161295"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049020"
 ---
 # <a name="customize-build-and-debug-tasks-for-open-folder-development"></a>自定义“打开文件夹”开发的生成和调试任务
 

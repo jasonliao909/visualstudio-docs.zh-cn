@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: fbbae8b974a7e88abffd9a12eb253dfea6c7165b
-ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+ms.openlocfilehash: fe16aa384584c567e992a4d893a0bfbfac44b686
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "113280492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055882"
 ---
 # <a name="how-to-use-solution-explorer"></a>如何使用解决方案资源管理器
 

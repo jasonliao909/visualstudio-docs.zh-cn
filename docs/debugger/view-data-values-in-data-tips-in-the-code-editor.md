@@ -17,14 +17,15 @@ ms.assetid: ffa7bd18-439b-4685-a9b3-c7884b5de41f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a84c3379c04799aa1faea5b0e62afe0ef1aa11e9
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: f2e3424f7a94358895ac89d6c4da4d8a9c251b21
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058222"
 ---
 # <a name="view-data-values-in-datatips-in-the-code-editor"></a>在代码编辑器中查看数据提示中的数据值
 

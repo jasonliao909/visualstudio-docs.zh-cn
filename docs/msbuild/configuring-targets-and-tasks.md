@@ -8,14 +8,15 @@ ms.assetid: 9aabe67a-1720-4bbf-80d3-822b3ccf75c0
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5548478e5404c69acc92d7ca7dc4deb6a2e29fdf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e51a42e0dbe8eff311f22d704b15b2d558cc23b1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922553"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054998"
 ---
 # <a name="configure-targets-and-tasks"></a>配置目标和任务
 

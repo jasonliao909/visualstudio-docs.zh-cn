@@ -15,15 +15,16 @@ ms.assetid: 513c6174-071d-48a4-9e25-04debbb63e5c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 94bbce64cbcb8a5b6106682b89dd87383f985197
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 36d764112e02dde7686f5cca2be4b67d5360bda0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907381"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131529"
 ---
 # <a name="functions-view"></a>“函数”视图
 “函数”视图列出分析过程中调用的函数。

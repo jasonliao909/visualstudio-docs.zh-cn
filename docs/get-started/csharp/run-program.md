@@ -2,7 +2,7 @@
 title: 如何运行 C# 程序
 description: 初学者指南介绍如何在 Visual Studio 中运行 C# 程序。
 ms.custom: vs-acquisition, get-started
-ms.date: 10/16/2019
+ms.date: 08/24/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -15,12 +15,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: e20caabb55e65801224177168f5c936f81402bbd
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e2a5e2997a15f3d91c9a12d3aff5c1d1e31aff90
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385222"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785918"
 ---
 # <a name="how-to-run-a-c-program-in-visual-studio"></a>如何：在 Visual Studio 中运行 C# 程序
 

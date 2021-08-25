@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a6af0cd98e69a3c43ba70f5609567243e6285201
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: ec323cea6d2a5e5ed41b226a3994b5084a70968c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387965"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131984"
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用情况
 

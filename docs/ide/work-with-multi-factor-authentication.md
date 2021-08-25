@@ -4,18 +4,19 @@ ms.date: 05/27/2020
 ms.custom: SEO-VS-2020
 ms.topic: conceptual
 description: 了解如何将 Visual Studio 与需要多重身份验证的帐户一起使用。
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9ac42ccff8c7bffcc22c453002aad1caf6935d28
-ms.sourcegitcommit: e4630a3bb89b4d606fe2cbd709bc773c5b538b78
+ms.openlocfilehash: 8f9d8445f2bfac17a077ed9bf3a444350209ad58
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/26/2021
-ms.locfileid: "112975671"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055895"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何将 Visual Studio 与需要多重身份验证的帐户一起使用
 

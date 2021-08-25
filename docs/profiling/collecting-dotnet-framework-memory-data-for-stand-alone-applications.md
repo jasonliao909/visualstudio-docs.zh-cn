@@ -8,15 +8,16 @@ ms.assetid: 7bce69e2-407c-4342-8516-641586968928
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 328a75b6502cd0e825b6d954a88ef97c8ef48ff1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7c5f57b81899ead03b96fd7d26dbcaf63ffeda6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960293"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136373"
 ---
 # <a name="collect-net-framework-memory-data-by-using-the-profiler-command-line"></a>使用探查器命令行收集 .NET Framework 内存数据
 

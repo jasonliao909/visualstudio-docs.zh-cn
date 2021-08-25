@@ -11,12 +11,13 @@ ms.assetid: a8a0b97e-8040-4711-85ab-36548b130ed2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 732f8e0cb88443533f74e843dde04ec977f24ebd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3a843f6991f77886c6b5b5b0fb3943b720790698
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026676"
 ---
 # <a name="how-to-add-context-parameters-to-a-load-test-run-setting"></a>如何：向负载测试运行设置中添加上下文参数
 

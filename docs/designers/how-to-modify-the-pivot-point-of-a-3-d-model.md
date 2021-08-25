@@ -8,14 +8,15 @@ ms.assetid: c20b4ec8-29f5-4ca5-bc39-d4548ca6f573
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 4eaa3d671a8c9aeb3ed942e57278160af73dec19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17c02f56d29fbda871cbe74cf156deffbb1908e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930832"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133557"
 ---
 # <a name="how-to-modify-the-pivot-point-of-a-3d-model"></a>如何：修改三维模型的透视点
 

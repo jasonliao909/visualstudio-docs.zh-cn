@@ -8,14 +8,15 @@ ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 218b263d7e971a0d2bdaa72020bb7cb58c31e000
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6f359715bebdab4323bba21637f8a3f4be0f98f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387081"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133908"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查由于着色器 Bug 而错误着色的对象。

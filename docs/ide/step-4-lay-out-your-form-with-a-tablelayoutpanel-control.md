@@ -5,19 +5,18 @@ ms.date: 08/30/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 61acde79-e115-4bad-bb06-1fbe37717a3e
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 63d49abbba604027dd567ae1ea4d7c155a66ce92
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 22ae56bace1620971563914b2c2c1e7291404242
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296399"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056077"
 ---
 # <a name="step-4-lay-out-your-form-with-a-tablelayoutpanel-control"></a>步骤 4：使用 TableLayoutPanel 控件设置窗体布局
 

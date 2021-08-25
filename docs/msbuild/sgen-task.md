@@ -18,14 +18,15 @@ ms.assetid: 22c5ade4-4159-4667-b891-0c1aa06f4df5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 476255e92326b7e9dae950512a5d27871ede2cc4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c90e98ae3164c6f975ba5c960c7eb9e6e03e350b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937844"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136646"
 ---
 # <a name="sgen-task"></a>SGen 任务
 

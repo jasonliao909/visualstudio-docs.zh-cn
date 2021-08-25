@@ -11,15 +11,16 @@ ms.assetid: be2dbdd0-fc88-45f9-a1d5-bcb4f64e17ad
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 053f846b15968ad7a5714f99779944bd63a8b6d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 425119d1793bef1ddac99c36f15b91664241a3bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868382"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136412"
 ---
 # <a name="collect-application-statistics-for-stand-alone-applications-by-using-the-profiler-command-line"></a>使用探查器命令行收集独立应用程序的应用程序统计信息
 本部分介绍从命令行使用采样方法收集客户端（独立）应用程序的性能统计信息的步骤和选项。

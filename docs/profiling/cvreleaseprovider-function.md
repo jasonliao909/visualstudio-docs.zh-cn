@@ -12,14 +12,15 @@ ms.assetid: 8d74379e-295d-452b-bd5f-0769df387d4f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ae363f1909f169d2d5dc4004a79cfe3c2919bdf3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19dbf0acd7f3522632cce83fee90e18a21a104cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948226"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136152"
 ---
 # <a name="cvreleaseprovider-function"></a>CvReleaseProvider 函数
 发布标记提供程序。 发布标记提供程序不会影响此提供程序以前创建的标记系列。 标记系列必须由 CvReleaseMarkerSeries 调用单独发布。 提供程序发布失败会导致内存泄漏。

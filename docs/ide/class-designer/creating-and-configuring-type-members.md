@@ -29,14 +29,15 @@ ms.assetid: 42af8738-3738-4ca7-82ff-edf573a68f96
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 897001a5ac10e8a8e1eef96feca4113afa5e1ebf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 793b4262e457301f79f625156194573d63664e9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880562"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056480"
 ---
 # <a name="create-and-configure-type-members-in-class-designer"></a>在类设计器中创建和配置类型成员
 

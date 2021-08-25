@@ -13,14 +13,15 @@ ms.assetid: 81b69bf8-ec87-4bb6-9ad4-1fa7b7802d16
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: b9a6c2ceeb9a3c384329f167ec158b213f3d15a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3695aa387e9bb51c7918b95d0092c41f1f894fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887583"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030628"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 

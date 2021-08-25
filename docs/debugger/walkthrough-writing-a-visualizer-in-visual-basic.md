@@ -16,14 +16,15 @@ ms.assetid: c93bf5a1-3e5e-422f-894e-bd72c9bc1b57
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b1a4fc7d6f33d1bdfd469ec352674b08dd2495e6
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9e9515291f15a8f59dec6d8c956bb03653ce7b3d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384997"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133791"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-visual-basic"></a>演练：用 Visual Basic 编写可视化工具
 

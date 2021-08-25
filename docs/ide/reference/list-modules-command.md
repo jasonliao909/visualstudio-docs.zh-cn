@@ -14,14 +14,15 @@ ms.assetid: 3cb73774-6ac0-43b2-b781-75ed47175bfd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a38a5423568528d267fd92894b8b06b4e5667c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 75375db0abfd49e62d209c7ba7fd8139862d3553
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132075"
 ---
 # <a name="list-modules-command"></a>“列出模块”命令
 列出当前进程的模块。

@@ -8,15 +8,16 @@ ms.assetid: 9976b6fd-d052-4017-b848-35b5bf4b2f66
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
 monikerRange: '>=vs-2017'
-ms.openlocfilehash: e0fe78e781af4f2fafa52a230036bc20b657fd8e
-ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
+ms.openlocfilehash: bcf84506f44e6aab30e0d5ce10e19f05a4a87c09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109848261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132023"
 ---
 # <a name="whats-new-in-msbuild-15"></a>MSBuild 15 中的新增功能
 

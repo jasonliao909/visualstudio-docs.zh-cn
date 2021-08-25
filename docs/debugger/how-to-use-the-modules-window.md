@@ -24,14 +24,15 @@ ms.assetid: d840fdca-b035-4452-b652-72580c831896
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f82b8a5051cf1c338c4b1aab6e78209fb2bc08b0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: c377e5a962e6b4e8a0d2b274d5c0376ae863aa9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051828"
 ---
 # <a name="view-dlls-and-executables-in-the-modules-window-c-c-visual-basic-f"></a>在模块窗口中查看 DLL 和可执行文件（C＃、C++、Visual Basic、F＃）
 

@@ -18,14 +18,15 @@ ms.assetid: de3997e9-1595-4263-a886-95530b56a319
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c5e78723ee6cc0f8ed1da0d5e913be0d84eb1050
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a11331b751a491c3c39562b0b3cd509a5e3d1d9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905330"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027703"
 ---
 # <a name="otherwise-element-msbuild"></a>Otherwise 元素 (MSBuild)
 

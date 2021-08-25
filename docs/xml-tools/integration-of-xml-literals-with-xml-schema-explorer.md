@@ -8,14 +8,15 @@ ms.assetid: 57a29998-c6e8-48ac-bdb0-5788e73f9164
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: f46020dc8423da617deb8f4f70c2a159b4a32014
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c38938621bef5db924943ab7c807d828c0960f7e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851537"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135060"
 ---
 # <a name="integration-of-xml-literals-with-xml-schema-explorer"></a>XML 文本与 XML 架构资源管理器的集成
 

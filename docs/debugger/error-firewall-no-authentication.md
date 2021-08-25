@@ -13,14 +13,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb46b09af4f87ac93fd7001ff1de02a782ae263
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 7e42a9dd2856c9bee14b480b261231932dc30236
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146985"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030948"
 ---
 # <a name="error-firewall-no-authentication"></a>错误：防火墙无身份验证
 远程计算机上的 Internet 连接防火墙未设置为允许远程调试。 对于遇到 `No Authentication` 错误的远程调试，必须将 msvsmon.exe 添加到例外列表。 可能还需要打开某些 IPSEC 端口。

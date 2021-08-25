@@ -11,12 +11,13 @@ ms.assetid: 1118c604-4b1b-4b21-a04e-45995b676fa8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e2773165b37600eb214893de91f8fc8c4467c0d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 10bab04db18962c592cac96eb707b0303874d5b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937623"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135632"
 ---
 # <a name="how-to-create-an-add-in-for-the-web-performance-test-results-viewer"></a>如何：为 Web 性能测试结果查看器创建加载项
 

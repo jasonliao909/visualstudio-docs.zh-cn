@@ -5,17 +5,18 @@ keywords: ai, visual studio
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: cdbabcc9288a2f878b4c8cd86dbba97922f471c6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e8867064e4392cdbf3c2dbc72810ddf22f0cded
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841440"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053457"
 ---
 # <a name="installation"></a>安装
 

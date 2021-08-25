@@ -15,15 +15,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 32ad6b4b699f9cfe02739f341a4f9ddf29360f37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4948a4a3b82e4b713d590ffc9c8f8283ca495ea4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884307"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051802"
 ---
 # <a name="visual-cc-custom-visualizer-compatibility"></a>Visual C/C++ 自定义可视化工具兼容性
 

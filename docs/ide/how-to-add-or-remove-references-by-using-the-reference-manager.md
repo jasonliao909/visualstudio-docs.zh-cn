@@ -4,6 +4,8 @@ description: 了解如何使用“引用管理器”对话框添加和管理对�
 ms.custom: SEO-VS-2020
 ms.date: 08/02/2019
 ms.topic: how-to
+f1_keywords:
+- VS.ReferenceManager
 helpviewer_keywords:
 - C# projects, references
 - references [Visual Studio], adding
@@ -19,14 +21,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 552ec8364bb58b72199bacecca99283303eb174c
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 17285f8e5ed55cde9381d338f6f68ecd681fc8c6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924911"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028184"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 

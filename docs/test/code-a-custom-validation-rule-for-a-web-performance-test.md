@@ -17,12 +17,13 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ae5228c4da9abef9b5bee417d5d3d71bb28d416d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 5eb34377ab17bec9a1e8bb51e213eb24b7415e48
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964584"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122026897"
 ---
 # <a name="code-a-custom-validation-rule-for-a-web-performance-test"></a>为 Web 性能测试编码自定义验证规则
 

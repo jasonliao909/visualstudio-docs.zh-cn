@@ -12,14 +12,15 @@ ms.assetid: 7b6dd40e-2f78-4b50-8e68-41fac1bcb81e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d18e65fe14d231fa7cc9ea515eddaf89fc5c2b81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37170a41f348a2892055aa39877c8ba74837d34d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971474"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055908"
 ---
 # <a name="troubleshoot-snippets"></a>代码片段疑难解答
 

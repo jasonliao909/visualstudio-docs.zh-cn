@@ -10,13 +10,14 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: stsu
 manager: jmartens
+ms.technology: vs-ide-general
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: ea30edbaac7248af8e1a58b76aebd66cf44befba
-ms.sourcegitcommit: a667ce8394a800906d633737f4fcbc77f0fcba7b
+ms.openlocfilehash: 52c06a218c14fa09a6c879fa90805ddc48b22d8d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/30/2021
-ms.locfileid: "108298725"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049007"
 ---
 # <a name="filtered-solutions-in-visual-studio"></a>Visual Studio 中筛选的解决方案
 

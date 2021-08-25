@@ -8,14 +8,15 @@ ms.assetid: f25e7a2f-7469-4279-b2f4-ee2dfd4d3af1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: ac5ad8169cf7cabcce8d072a723c0535b129408c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db981b7be135bed38c284fb0a7182dbf5f02056c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135047"
 ---
 # <a name="start-view"></a>起始视图
 

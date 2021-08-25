@@ -14,12 +14,13 @@ ms.assetid: 27806972-1b15-4388-833d-6d0632816f1f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: f8ba810665bce520b82777512b396a693e580a0e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 1a29de66f87cd83b67fa688194da4f86eff5533b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878001"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135658"
 ---
 # <a name="how-to-create-a-load-test-plug-in"></a>如何：创建负载测试插件
 

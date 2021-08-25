@@ -17,14 +17,15 @@ ms.assetid: edaa65ec-ab8a-42a1-84cb-d76d5b2f4584
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: dcb11fd9bfec3fc2818751dd74ba3c0ac4dd12d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c179ca35cd10f944a3a4c966b02267a53550de61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919151"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136867"
 ---
 # <a name="msbuild-command-line-reference"></a>MSBuild 命令行参考
 

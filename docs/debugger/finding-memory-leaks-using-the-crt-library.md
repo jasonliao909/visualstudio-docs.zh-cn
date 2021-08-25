@@ -26,14 +26,15 @@ ms.assetid: cf6dc7a6-cd12-4283-b1b6-ea53915f7ed1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f98bfb3aca5be844018c4c7d9736ab2fa74ebb71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6f248d29640f6d8e3cb629d083f6589ec1e173f3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870670"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030888"
 ---
 # <a name="find-memory-leaks-with-the-crt-library"></a>使用 CRT 库查找内存泄漏
 

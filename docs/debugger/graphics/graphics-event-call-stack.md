@@ -10,14 +10,15 @@ ms.assetid: 8a30168d-8b39-4de1-b094-c7356ba101a3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c7c8d415da1de7be9cafdad6e5dea531dd59a7b4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 29bc023dcc4eae885746396f77b27f27188ada61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99845134"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044036"
 ---
 # <a name="graphics-event-call-stack"></a>图形事件调用堆栈
 Visual Studio 图形分析器中的图形事件调用堆栈可帮助你映射有问题的图形事件和应用的源代码之间的关系。

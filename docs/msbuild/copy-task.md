@@ -20,14 +20,15 @@ ms.assetid: a46ba9da-3e4e-4890-b4ea-09a099b6bc40
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: fa1bc94663eaf06de48743e23e468b752b1d6e84
-ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
+ms.openlocfilehash: f8bcaf1e13a9b6f26d3c838c8cbd739d91c99d62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114995605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054985"
 ---
 # <a name="copy-task"></a>Copy 任务
 
@@ -37,7 +38,7 @@ ms.locfileid: "114995605"
 
 下表描述了 `Copy` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`CopiedFiles`|可选的 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 输出参数。<br /><br /> 包含已成功复制的项，包括尚未进行实际复制但由于其已为最新且 `SkipUnchangedFiles` 为 `true` 因此被跳过的项。|
 |`DestinationFiles`|可选 <xref:Microsoft.Build.Framework.ITaskItem>`[]` 参数。<br /><br /> 指定要对其复制源文件的文件的列表。 此列表应与 `SourceFiles` 参数中指定的列表具有一对一的映射关系。 也就是说，`SourceFiles` 中指定的第一个文件将复制到 `DestinationFiles` 中指定的第一个位置，依次类推。|

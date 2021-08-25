@@ -8,16 +8,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: d4ea086d20f5a1000067343ac7571a9a8f8309db
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: dae63215fe41d42f1a20f5d21e7c51e05163281a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386808"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027976"
 ---
 # <a name="tutorial-create-a-nodejs-and-express-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 Express 应用
 

@@ -8,14 +8,15 @@ ms.assetid: a3d2ea29-be5d-4012-9820-44b06adbb7dd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 396981533502f2687040f470ded9b490cab1ef7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360db67aa0daf09916ae21c9cd1028c0a285e35b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048448"
 ---
 # <a name="synchronize-visual-studio-settings-across-multiple-computers"></a>跨多台计算机同步 Visual Studio 设置
 

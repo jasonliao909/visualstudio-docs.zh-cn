@@ -15,14 +15,15 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dda627f748773bc4cb5598b133ac05597ffe1d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4a893a516d8c9237e2dd4ebf06812fcbcd02de9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99839304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055076"
 ---
 # <a name="common-msbuild-item-metadata"></a>通用 MSBuild 项元数据
 

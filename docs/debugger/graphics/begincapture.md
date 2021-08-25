@@ -8,14 +8,15 @@ ms.assetid: 9edbb52d-ee0b-4cc4-a382-972bcee067d3
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c9fc81bdd058d3a8c1dbe26bbe944bcb0e354ac7
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: c9c461bdae97e1fd26491e72bad1791ce529e2ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232727"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052065"
 ---
 # <a name="begincapture"></a>BeginCapture
 开始一个捕获间隔，该间隔将以 `EndCapture` 结束。

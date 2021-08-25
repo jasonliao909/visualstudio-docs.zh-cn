@@ -10,14 +10,15 @@ ms.assetid: 46907a60-25e2-470d-a650-ae7349f868fd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: daee4b0295d42607177031f5ea8a3a512ee9b68e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e63112581cedbab680d4c1e70891963f1ff26120
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99892419"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131919"
 ---
 # <a name="c-library-reference"></a>C 库参考
 此节包含并发可视化工具 SDK 的参考信息。
