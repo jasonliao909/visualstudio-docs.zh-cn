@@ -10,14 +10,15 @@ ms.assetid: c9f8eea2-c964-485d-9ad0-55a4bf425ae7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: f5a8d34c5a0e39b52949c1b60a6e73d18fff3d26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 430d392d4f483a131251636f0b12876259887fcb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99954301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039262"
 ---
 # <a name="c-library-reference"></a>C++ 库参考
 

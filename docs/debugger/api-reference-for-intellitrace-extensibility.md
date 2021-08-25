@@ -10,14 +10,15 @@ ms.assetid: 46e6c648-293b-45c2-a29e-cca9c36cd865
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f8e243369b444640803450c0945b205fcb216ebf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9c342f830842fd1cb49baf15e17b9052bded1c0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052468"
 ---
 # <a name="api-reference-for-intellitrace-extensibility"></a>IntelliTrace 扩展性的 API 参考
 

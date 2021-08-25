@@ -6,17 +6,18 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: b2848a54ddbce41b538bf58f82db42ede76026d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f8338ea3810c45758029694fd3725e0ecf924b01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912409"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027300"
 ---
 # <a name="publish-to-azure-app-service"></a>发布到 Azure 应用服务
 
@@ -29,7 +30,7 @@ ms.locfileid: "99912409"
 
 ## <a name="publish-to-app-service-on-linux-using-git-deploy"></a>使用 Git 部署流程发布到 Linux 上的应用服务
 
-Git 部署流程可将 Linux 上的应用服务连接到 Git 存储库的特定分支。 向相应分支提交的代码会自动部署到应用服务，并且应用服务会自动安装 requirements.txt  中列出的任何依赖项。 在此示例中，Linux 上的应用服务在使用 Gunicorn Web 服务器的预配置容器映像中运行代码。 目前，此服务处于预览阶段，不支持用于生产。
+Git 部署流程可将 Linux 上的应用服务连接到 Git 存储库的特定分支。 向相应分支提交的代码会自动部署到应用服务，并且应用服务会自动安装 requirements.txt 中列出的任何依赖项。 在此示例中，Linux 上的应用服务在使用 Gunicorn Web 服务器的预配置容器映像中运行代码。 目前，此服务处于预览阶段，不支持用于生产。
 
 有关详细信息，请参阅 Azure 文档中的以下文章：
 
@@ -48,4 +49,4 @@ Git 部署流程可将 Linux 上的应用服务连接到 Git 存储库的特定�
 
 ## <a name="publish-to-iis"></a>发布到 IIS
 
-在 Visual Studio 中，可以将应用发布到 Windows 虚拟机，或其他运行 IIS 且包含“发布”  命令的计算机。 使用 IIS 时，请务必在应用中创建或修改 web.config  文件，以指示 IIS 在哪里能找到 Python 解释器。 有关详细信息，请参阅[为 Web 应用配置 IIS](configure-web-apps-for-iis-windows.md)。
+在 Visual Studio 中，可以将应用发布到 Windows 虚拟机，或其他运行 IIS 且包含“发布”命令的计算机。 使用 IIS 时，请务必在应用中创建或修改 web.config 文件，以指示 IIS 在哪里能找到 Python 解释器。 有关详细信息，请参阅[为 Web 应用配置 IIS](configure-web-apps-for-iis-windows.md)。

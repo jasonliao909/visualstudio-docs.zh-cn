@@ -18,14 +18,15 @@ ms.assetid: f95f312f-ff92-41eb-9469-ad99e236a307
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b7b186fa1d7a5ecb8297045d4b0bbb111d136d1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0fbf7760af7275172bc57ce0aac097e70182b4f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077096"
 ---
 # <a name="projectextensions-element-msbuild"></a>ProjectExtensions 元素 (MSBuild)
 

@@ -22,14 +22,15 @@ ms.assetid: 2fd26c75-a056-4dda-9f7e-2f90d3748d88
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f00e0b5cd0575613add2698058ba6b1357aec0f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 393e34bf68745df58f7f3e7dc4d45afb308c6c80
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077083"
 ---
 # <a name="rc-task"></a>RC 任务
 

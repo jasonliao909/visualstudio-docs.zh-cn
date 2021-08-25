@@ -7,16 +7,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: bf637106dbf89b533c90b86b2cc50649064fd577
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f00d555f1a06718c5127f98d05b2c17158b433f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919581"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094121"
 ---
 # <a name="datetime-and-timespan-completion-by-using-the-intellisense-menu"></a>使用 IntelliSense 菜单完成 DateTime 和 TimeSpan
 

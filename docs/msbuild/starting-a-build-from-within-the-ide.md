@@ -10,14 +10,15 @@ ms.assetid: 936317aa-63b7-4eb0-b9db-b260a0306196
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2ee685ebf542dbf9405afce8cfdf5c4a7e060b79
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e8c13ca9d8c5cbbb42e11ca9c17d4c5b1381dcba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956043"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093617"
 ---
 # <a name="start-a-build-from-within-the-ide"></a>在 IDE 中启动生成
 

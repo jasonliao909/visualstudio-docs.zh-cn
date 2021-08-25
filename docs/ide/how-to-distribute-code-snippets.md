@@ -10,16 +10,17 @@ ms.assetid: 5f717abd-e167-47ae-818c-6b0bae100ceb
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 65b60eb1156fe3d64081724e310a41a38b54af50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ab7146c9240358ded884f0170d53b9e342b4ebcc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086113"
 ---
 # <a name="how-to-distribute-code-snippets"></a>如何：分发代码片段
 

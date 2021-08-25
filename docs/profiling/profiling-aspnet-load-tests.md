@@ -7,15 +7,16 @@ ms.assetid: c3f5c363-be79-40b5-bfa7-db8d21378d8d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: 4bb52c2ba89e9f335504b0e67cb140c9c9ef8ea0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1bbd0b138687a8842c8e991f1a4bce8f9e8f234a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936374"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076316"
 ---
 # <a name="profile-aspnet-load-tests"></a>分析 ASP.NET 负载测试
 可以从在 ASP.NET 网站项目上运行的自动 [!INCLUDE[TCMext](../misc/includes/tcmext_md.md)] Web 测试收集分析数据。 可以收集采样和层交互数据。 有关详细信息，请参阅下列主题：

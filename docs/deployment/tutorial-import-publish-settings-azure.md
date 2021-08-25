@@ -8,14 +8,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 50a65d681693bd9c1421767d2cac47f65b685e6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fbb2f336d318216de178ca295c5d9d56c91175da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945040"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133661"
 ---
 # <a name="publish-an-application-to-azure-app-service-by-importing-publish-settings-in-visual-studio"></a>通过在 Visual Studio 中导入发布设置将应用程序发布到 Azure 应用服务
 

@@ -13,14 +13,15 @@ ms.assetid: aa02e647-d9f5-4905-a651-52a8df595795
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e7c0530cf91467ec6c9bb2e6937b38510059041b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2258c704e8a91b2b00942a8dcae5ca5215da028d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836171"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056038"
 ---
 # <a name="watch-command"></a>“监视”命令
 创建并打开指定“监视”  窗口的实例。 可使用“监视”窗口计算变量、表达式或寄存器的值，然后编辑这些值并保存结果。

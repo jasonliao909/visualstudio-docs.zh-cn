@@ -6,15 +6,16 @@ ms.date: 03/31/2020
 ms.topic: troubleshooting
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: d99dcc3a141bc3734c5c356601d0e1e7474f06a7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ea2976e01f8f02b0d6ea858afceb43ecad7ef1c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054114"
 ---
 # <a name="troubleshoot-code-coverage"></a>代码覆盖率疑难解答
 

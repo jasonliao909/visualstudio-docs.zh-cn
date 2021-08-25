@@ -12,14 +12,15 @@ ms.assetid: 1be36e45-01da-451c-972d-f9fc0e7d663c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e838460f1e42f34e92a99198b9d4a0e34ce71dcd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7d75523b50cddf5270480747345fbcf021ea655e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914377"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136945"
 ---
 # <a name="how-to-exclude-files-from-the-build"></a>如何：将文件排除在生成过程外
 

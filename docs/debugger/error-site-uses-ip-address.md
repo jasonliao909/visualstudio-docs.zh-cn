@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fa18ea975bacbda38a18c27d19d438ab5b4da0b5
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: f141cf050e41e5f2a30b66c47e68b1b3c35aeb5c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146737"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030901"
 ---
 # <a name="error-site-uses-ip-address"></a>错误：站点使用 IP 地址
 调试器尝试自动附加到正在使用 IP 地址的 Web 应用程序时，会发生该错误。 如果在 IIS 中将“网站标识”更改为“使用特定 IP 地址”，会发生这种情况 。

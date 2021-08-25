@@ -15,15 +15,16 @@ ms.assetid: d0501fdd-4b3a-4e74-b6ac-51d950a2e15b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 124782a832d818cb405fd980f9d224f9e0b62fbe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8adebbbcbf3bbafab6d3b2a53ceae140bc085802
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922454"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107116"
 ---
 # <a name="object-lifetime-view"></a>“对象生存期”视图
 在“性能会话”属性页上选中“还收集 .NET 对象的生存期数据”时，可以使用“对象生存期”视图。

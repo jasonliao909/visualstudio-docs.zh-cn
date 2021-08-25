@@ -22,14 +22,15 @@ ms.assetid: 1eef7498-6a1f-4fba-8146-510adc6375c9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e62c6a7a6e30bac6d054f3e5484498047426d96d
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 4dfe838e4539b0d23ec20c087e548896195da104
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090767"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：使用“编辑并继续”在中断模式下应用编辑 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。

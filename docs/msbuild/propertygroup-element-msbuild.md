@@ -18,14 +18,15 @@ ms.assetid: ff1e6c68-b9a1-4263-a1ce-dc3b829a64d4
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 5182708e848587439795f5d6c04d87382b36f84a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ca05a0f96a159d354c09d9542327cfa73ff76e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931989"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084878"
 ---
 # <a name="propertygroup-element-msbuild"></a>PropertyGroup 元素 (MSBuild)
 
@@ -48,7 +49,7 @@ ms.locfileid: "99931989"
 
 ### <a name="attributes"></a>特性
 
-|特性|说明|
+|属性|说明|
 |---------------|-----------------|
 |条件|可选特性。<br /><br /> 要计算的条件。 有关详细信息，请参阅[条件](../msbuild/msbuild-conditions.md)。|
 

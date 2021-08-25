@@ -15,14 +15,15 @@ ms.assetid: 112d3ea3-fdd2-4bce-92b4-167a76258934
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bac2f04ab77e34186a4f0ee202fa8d16f6e45e38
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 050a0f486be9e39f69b80013586a9755ba03d410
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387341"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080984"
 ---
 # <a name="debugger-cannot-display-source-code-or-disassembly"></a>调试器不能显示源代码或反汇编
 此错误显示如下：

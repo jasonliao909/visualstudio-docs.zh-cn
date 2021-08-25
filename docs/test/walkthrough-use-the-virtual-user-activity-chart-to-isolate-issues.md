@@ -11,12 +11,13 @@ ms.assetid: d1c10fb9-cfeb-4e7f-9991-2d1e1103699e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: afe692a8333ff93f764a308bae2c1366e353b4a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: b9c27a1cb76ab17e53331508381d0b6db0447993
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047330"
 ---
 # <a name="walkthrough-using-the-virtual-user-activity-chart-to-isolate-issues"></a>演练：使用虚拟用户活动图隔离问题
 

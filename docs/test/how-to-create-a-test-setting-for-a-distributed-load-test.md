@@ -10,12 +10,13 @@ ms.assetid: b63d4b71-3b74-4872-b2d1-f0bd1a9a8544
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 4ca0058d1f06e00941766ed1ecf6f81d73939a8c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 7e08163be95d2249b091ce40072d54111e35ef2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877988"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033273"
 ---
 # <a name="how-to-create-a-test-settings-file-for-a-distributed-load-test"></a>操作说明：为分布式负载测试创建测试设置文件
 

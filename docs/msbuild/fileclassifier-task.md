@@ -17,14 +17,15 @@ ms.assetid: 14e03310-fcc0-4bb2-a84d-cda12be66367
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0f030a240bf02b3261ce903803095b83555a4531
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1758b671b8151bb851074190c6afcd2468f9f1c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957356"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085099"
 ---
 # <a name="fileclassifier-task"></a>FileClassifier 任务
 

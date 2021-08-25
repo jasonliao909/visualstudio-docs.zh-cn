@@ -7,15 +7,16 @@ ms.assetid: afa7db3b-8c1d-473a-81ac-24ede112a17f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2514d6893c205a1c48c76983c859528be6ad938b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 858a49a02e335f169bda60182d5388971cc6f29b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054543"
 ---
 # <a name="profiling-tools-usage-rules"></a>分析工具使用规则
 分析工具使用类别中的性能规则提供有关最有效地使用探查器收集数据的指南。

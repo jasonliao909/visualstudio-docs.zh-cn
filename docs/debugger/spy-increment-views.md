@@ -11,14 +11,15 @@ ms.assetid: c60867af-f814-4fac-8f06-3c39cbefc7ea
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 77de42a0b10643396bbc0360cf66b00866057ebd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c670cbb34da33d4745a4480cce28934ceebd6e79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903410"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112316"
 ---
 # <a name="spy-views"></a>Spy++ 视图
 Spy++ 显示计算机上可用的窗口、消息、进程和线程的树状视图。

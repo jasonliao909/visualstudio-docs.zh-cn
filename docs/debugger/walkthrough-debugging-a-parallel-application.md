@@ -20,14 +20,15 @@ ms.assetid: 2820ac4c-c893-4d87-8c62-83981d561493
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e6adeb4a67272cac90a829069ffc3a65bb7f969
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 4663892ef011841ed401331009c2d8f05b63814a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133882"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练：在 Visual Studio 中调试并行应用程序（C#、Visual Basic、C++）
 

@@ -8,19 +8,19 @@ ms.custom:
 - get-started
 - SEO-VS-2020
 ms.topic: overview
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 0e3625e272f6279fa06a863c4feb12adab8c016f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d4d3d853709a9b818429350728927e57190d15ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390576"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056835"
 ---
 # <a name="welcome-to-the-visual-studio-ide--c"></a>欢迎使用 Visual Studio IDE | C\#
 

@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 10/16/2019
 ms.assetid: 525815c8-2845-45e8-be96-100d1f144725
 ms.topic: tutorial
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: af9e8e71a7188e8ee2c8f0a7809830f82fb8f15a
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 596236c1770623b244219164c2d8c555b413c620
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296646"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040588"
 ---
 # <a name="tutorial-3-create-a-matching-game"></a>教程 3：创建匹配游戏
 

@@ -11,12 +11,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: a823d6a519da286e5c6df8947d64934a244c1985
-ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
+ms.technology: vs-ide-general
+ms.openlocfilehash: e1e4a31f0e82c262527da80fc85246de7d7c6c1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105933766"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086126"
 ---
 # <a name="how-to-create-project-templates"></a>如何：创建项目模板
 

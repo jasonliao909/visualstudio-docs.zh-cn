@@ -16,14 +16,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a374afef2dea92fbad72c45e35ca06904d75cbbe
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: aa422872c2c57d9fb4515692e051f7eb795766dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065600"
 ---
 # <a name="error-unable-to-automatically-step-into-the-server"></a>错误：无法自动单步执行服务器
 此错误显示如下：

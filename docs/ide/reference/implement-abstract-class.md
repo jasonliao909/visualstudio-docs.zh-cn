@@ -7,14 +7,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 05527e8ab1414b3f372f6db22c258d51fcd119a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 201ebe54d84803ab0621afd5754ce507b1d32ac7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852500"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101305"
 ---
 # <a name="implement-an-abstract-class-in-visual-studio"></a>在 Visual Studio 中实现抽象类
 
@@ -45,7 +46,7 @@ ms.locfileid: "99852500"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”  + **。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。

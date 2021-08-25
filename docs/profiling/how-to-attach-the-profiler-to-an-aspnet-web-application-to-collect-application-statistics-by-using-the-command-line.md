@@ -8,15 +8,16 @@ ms.assetid: 3725ddbe-ce91-4469-991e-8c5ed048c618
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: acf625bc5762dbc90265ffc81ab0920ea778f010
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 76272c69b636da2bb104a28049f2dd31c88f9527
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887973"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033689"
 ---
 # <a name="how-to-attach-the-profiler-to-an-aspnet-web-application-to-collect-application-statistics-by-using-the-command-line"></a>如何：将探查器附加到 ASP.NET Web 应用程序，以使用命令行收集应用程序统计信息
 本文介绍如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具将探查器附加 ASP.NET Web 应用程序，以及如何使用采样方法收集性能统计信息。
@@ -103,7 +104,7 @@ ms.locfileid: "99887973"
 ## <a name="end-the-profiling-session"></a>结束分析会话
  要结束分析会话，请关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用，然后使用 Internet Information Services (IIS) IISReset 命令来关闭 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 工作进程  。 调用 VSPerfCmd [/shutdown](../profiling/shutdown.md) 选项关闭探查器和分析数据文件  。
 
- VSPerfClrEnv /globaloff 命令会清除分析环境变量  。 必须重启计算机才能应用新的环境设置。
+ VSPerfClrEnv /globaloff 命令会清除分析环境变量。 必须重启计算机才能应用新的环境设置。
 
  **VSPerfClrEnv /globaloff** 命令可清除分析环境变量，但在重新启动计算机前不会重置系统配置。
 

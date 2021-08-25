@@ -15,14 +15,15 @@ ms.assetid: f5e06e5a-8083-444c-99c1-07ba834226b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e8be768bc48c1815fc00069640e5bf3f4370f434
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b1f9224eafe2e2186c87ba4d503e8a78f49abc4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108234"
 ---
 # <a name="suspendtracking"></a>SuspendTracking
 

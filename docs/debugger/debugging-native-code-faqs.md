@@ -20,14 +20,15 @@ ms.assetid: 9a497032-cf73-441e-923b-4bbd5d37a6da
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82e384c714b02f02adf105e0d23551ee66caa5df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d195a89936254706f3a9b3bd065a1916cce23cf6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097436"
 ---
 # <a name="debugging-native-code-faqs"></a>调试本机代码常见问题
 下面的主题包含一些常见问题的答案：

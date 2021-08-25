@@ -10,12 +10,13 @@ ms.assetid: ed6ff546-acfa-4dd8-b3a2-6e7455930ca4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: c93c636d8321affead3c3fce6f3074801cb9ae87
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 0f85602761444283f13a32ef3709a1e417c46d9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047408"
 ---
 # <a name="how-to-select-the-active-run-setting-for-a-load-test"></a>如何：为负载测试选择活动运行设置
 

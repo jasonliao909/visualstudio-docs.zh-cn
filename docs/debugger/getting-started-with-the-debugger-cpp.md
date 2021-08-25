@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: e5d3b4e277fc7ab2c97ccf72b7b1dd7898160c8d
-ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
+ms.openlocfilehash: 2517df9763a824449a96ce13c5f8e70e350dd7fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113725555"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122139007"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 

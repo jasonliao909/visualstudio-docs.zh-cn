@@ -12,14 +12,15 @@ ms.assetid: 2f798c17-2363-42a4-be94-a5751d208eac
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 135796b09689915d81132abb4f8f36888b64f393
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f3c04112ff216ecbf2fc683206a30d9be6b44971
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084592"
 ---
 # <a name="channels-threads-view"></a>通道（线程视图）
 并发可视化工具显示四类通道：线程通道、磁盘通道、标记通道和 GPU 通道。

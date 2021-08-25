@@ -11,14 +11,15 @@ ms.assetid: 5edf1a30-9307-43c3-9b8b-831217be0104
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: d9a9ccebb82c9a47ca1ea5ab780a033870316cd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 32c5a26a529318bfe2e828de8fdb5529152907b3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051477"
 ---
 # <a name="model-editor"></a>模型编辑器
 

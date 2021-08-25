@@ -5,14 +5,15 @@ ms.custom: SEO-VS-2020
 author: madskristensen
 ms.author: madsk
 manager: jmartens
+ms.technology: vs-ide-general
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: d3db409c67ab961adfceaeb8e3236cd964f95399
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d51c04cc579433f3f6e72c55a60529088d724237
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962894"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086087"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高解决性能问题的几率
 

@@ -16,12 +16,13 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 74269872992935568362a061d47f7335dbaedec8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 02e86eb41a05d880066be5aa102597b114d727d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936413"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083786"
 ---
 # <a name="generate-and-run-a-coded-web-performance-test"></a>生成和运行编码的 Web 性能测试
 

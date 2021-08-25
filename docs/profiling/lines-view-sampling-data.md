@@ -9,15 +9,16 @@ ms.assetid: 46497249-c797-42c5-a02c-3e4bb3b4ee60
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 28dd2c6132905e4c5610d2a7a0f598650ce06692
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc344c640a2b075b3795fb694ab076555a8b4083
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917858"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038638"
 ---
 # <a name="lines-view---sampling-data"></a>“行”视图 - 采样数据
 采样数据的“行”视图列出分析运行期间收集样本时所执行语句的性能数据。

@@ -13,14 +13,15 @@ ms.assetid: 0e830e31-3bcf-4259-b2a8-a5df49b92d51
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f3a46b16bc689e0753b806c4239544e1ddbd73f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a28e6dd3c49796967944a8a9fee0b53b96f5035d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964935"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085269"
 ---
 # <a name="assigntargetpath-task"></a>AssignTargetPath 任务
 

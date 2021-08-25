@@ -13,14 +13,15 @@ ms.assetid: 767868d6-a525-425b-a43b-2198f636ab6b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a75678e8f29a282deef6f3d443a6e1c96d3edd7f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4cb9e82ea6f44ddeb0e16ed8e70eed92612c0c07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101032"
 ---
 # <a name="new-file-command"></a>“新建文件”命令
 创建新文件并将其打开。 该文件显示在“杂项文件”文件夹下。

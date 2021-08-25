@@ -11,14 +11,15 @@ ms.assetid: 438194cb-668c-41a9-a7e2-c118d14c1ea7
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f8a4e39d38f81684b5d090152ec720d45438b3b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e91ba93007cb721d8045ff1253ae39796b227124
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907464"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108156"
 ---
 # <a name="walkthrough-create-an-inline-task"></a>演练：创建内联任务
 

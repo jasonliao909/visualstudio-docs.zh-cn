@@ -9,14 +9,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: ca1b3816786ab611af8acb1cb99eea406ca6ad45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2f63076cdccf2324ab85602054babecb27628ec5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943947"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041121"
 ---
 # <a name="options-text-editor--f--code-fixes"></a>选项:文本编辑器 > F# > 代码修补程序
 

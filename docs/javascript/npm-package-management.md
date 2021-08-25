@@ -8,16 +8,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 2fcf1bd9e9ef5c3ff0663cf12684e6e638d1e5e4
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: 8735310b0c1729cec7a10d51c9708ccb18205bc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729281"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048175"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 

@@ -8,14 +8,15 @@ ms.assetid: 0f0df097-bbaf-46ad-9ad1-ef5f40435079
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d4ea8bb6a1d03d3b61ab5be51992a7b51f661d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9f3c65d76fd76eaf8391bd3757f9fbe112eed8fc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893251"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090741"
 ---
 # <a name="debug-only-user-code-with-just-my-code"></a>使用“仅我的代码”仅调试用户代码
 
@@ -143,14 +144,14 @@ ms.locfileid: "99893251"
 
  **模块元素属性**
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 模块的完整路径。 可以使用 Windows 通配符 `?`（零个或一个字符）和 `*`（零个或多个字符）。 例如，应用于对象的<br /><br /> `<Module Name="?:\3rdParty\UtilLibs\*" />`<br /><br /> 告知调试器中的所有模块都视为 *\3rdParty\UtilLibs* 外部代码的任何驱动器上。|
 |`Company`|可选。 发布在可执行文件中嵌入的模块的公司的名称。 可以使用此特性消除模块歧义。|
 
  **文件元素属性**
 
-|特性|说明|
+|特性|描述|
 |---------------|-----------------|
 |`Name`|必需。 要视为外部代码的源文件的完整路径。 可以在指定路径时使用 Windows 通配符 `?` 和 `*`。|
 

@@ -12,12 +12,13 @@ ms.assetid: 92dff25c-36ee-4135-acdd-315c4962fa11
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 5d1e1c35feba87ada3b98d13c5d43c436fd91b1d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 00e6b1883f34f0beb9a6ae82e4513a63852d81e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936556"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092834"
 ---
 # <a name="fix-non-detectable-dynamic-parameters-in-a-web-performance-test"></a>在 Web 性能测试中修复无法检测的动态参数
 

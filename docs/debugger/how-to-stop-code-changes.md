@@ -17,14 +17,15 @@ ms.assetid: 9e72a50c-bb0a-4eaa-9ac1-d00930b68d38
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aebf3b4a5a7556b2e2a3f6fdff7554539812d8f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8968bac298983eef2101d170a52de897b131ee71
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122051893"
 ---
 # <a name="how-to-stop-code-changes"></a>如何：停止代码更改
 当“编辑并继续”处于应用代码更改的过程中时，您可以停止该操作。

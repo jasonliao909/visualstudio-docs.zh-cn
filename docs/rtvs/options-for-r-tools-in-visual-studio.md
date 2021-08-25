@@ -12,14 +12,15 @@ f1_keywords:
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: fc46d7ed1e369d31a9d0675f0595073f51f28d17
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 76c6994546e380b9a599c9cdcbbc8a9392333007
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679796"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060695"
 ---
 # <a name="r-tools-for-visual-studio-options"></a>针对 Visual Studio 的 R 工具选项
 

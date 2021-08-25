@@ -16,14 +16,15 @@ ms.assetid: e1e14f67-9b69-433f-94d4-a783a68676b2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b67483c82e19c51da776d6ec40066ba5223a238a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 339dc003ff5c9275567633e05746ab042fd34439
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136698"
 ---
 # <a name="resolvemanifestfiles-task"></a>ResolveManifestFiles 任务
 
@@ -33,7 +34,7 @@ ms.locfileid: "99912521"
 
  下表描述了 `ResolveManifestFiles` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`DeploymentManifestEntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定部署清单的名称。|
 |`EntryPoint`|可选 <xref:Microsoft.Build.Framework.ITaskItem> 参数。<br /><br /> 指定作为清单入口点的托管程序集或 ClickOnce 清单引用。|
@@ -54,7 +55,7 @@ ms.locfileid: "99912521"
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

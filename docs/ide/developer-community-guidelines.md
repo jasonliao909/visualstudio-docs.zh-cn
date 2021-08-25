@@ -6,14 +6,15 @@ ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 21cf3bd6a0c208a78cd391f93702865e905482e0
-ms.sourcegitcommit: 3c6c263a1c0b20f084290ce45295a46027da33b6
+ms.openlocfilehash: 7e007c87a855ae5c05cce1b48e36edb166cd9762
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113756882"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137401"
 ---
 # <a name="developer-community-guidelines"></a>开发者社区指南
 

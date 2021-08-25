@@ -18,14 +18,15 @@ ms.assetid: 737fda23-b852-45c4-a9fe-41cbce6ba70f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6b520d3bedf31bc09dc0cf48e86777872176e2e0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 070d58d8fc4561c37dfce66fd89c2e6905184daa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957616"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117106"
 ---
 # <a name="shell-command"></a>shell 命令
 从 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 内启动可执行程序。

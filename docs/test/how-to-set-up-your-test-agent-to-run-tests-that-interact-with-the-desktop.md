@@ -10,12 +10,13 @@ ms.assetid: 3a94dd07-6d17-402c-ae8f-7947143755c9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 830469525429d298f1c9bf03b845a1132021373a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 238c266d11c1057ab59fe5296edc514cfdc2d937
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926633"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075835"
 ---
 # <a name="how-to-set-up-your-test-agent-to-run-tests-that-interact-with-the-desktop"></a>如何：设置测试代理以运行与桌面交互的测试
 

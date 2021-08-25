@@ -17,14 +17,15 @@ ms.assetid: 4390c09c-fc73-4cc3-ab8e-6f07a7d70be2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 44855237adb4eb9edfb7d4ee383ff5777cf4b6b6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 05a76497cca821221db1c9f14a8a000228d22b68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872009"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105362"
 ---
 # <a name="edit-and-continue-dialog-box"></a>“编辑并继续”对话框
 （仅限本机）当你在调试过程中编辑了代码并且 **编辑并继续** 识别出可以应用代码更改时，会显示该对话框。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。

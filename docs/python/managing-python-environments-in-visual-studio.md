@@ -6,15 +6,16 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 26bcf0fa4d56d4e8df100a0d3e65904d065d8757
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: e75f433c3949ecb623dbe14ee7289060f7cc463b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254870"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038586"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 

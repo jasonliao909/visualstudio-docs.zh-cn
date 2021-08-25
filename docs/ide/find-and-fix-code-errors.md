@@ -7,14 +7,15 @@ ms.assetid: c3a14d28-d811-4ff3-bd09-21dce14025ca
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5af76de5dbcc7a70722acf0ee01cfed93dbad761
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: ba92c8142104f8d31be22f1699b0a395da46a715
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308254"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109274"
 ---
 # <a name="make-code-work-in-visual-studio"></a>确保代码在 Visual Studio 中正常运行
 

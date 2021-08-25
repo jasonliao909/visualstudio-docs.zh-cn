@@ -14,12 +14,13 @@ ms.assetid: 57ed43ae-4e67-4139-8aec-3e9fceb0a745
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 163cb3d541b054d22dc46df0b8e1e4735ac3fd50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 1caf441e0dab8ef1216380dbc5d7bc8c1ec1b461
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964662"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038482"
 ---
 # <a name="assign-roles-to-a-test-controller-and-test-agent"></a>为测试控制器和测试代理分配角色
 

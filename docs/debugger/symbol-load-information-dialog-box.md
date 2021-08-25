@@ -15,14 +15,15 @@ ms.assetid: 414580a0-175e-4a61-b82e-6755c8f7d208
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 73766012220d2c77d667dd01f922abc539aaf108
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e954e25413152746ae70b009a03374d39dbca2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112278"
 ---
 # <a name="symbol-load-information-dialog-box"></a>“符号加载信息”对话框
 右键单击“模块”窗口并选择“符号加载信息”后，将打开“符号加载信息”对话框  。

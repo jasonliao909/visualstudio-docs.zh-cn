@@ -7,16 +7,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 56a1b20854cdd2c1821490bb4972d67bbe912056
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7d01862774fd36bc5c9347df3fce6bd02c56263
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919666"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094147"
 ---
 # <a name="convert-switch-statement-to-switch-expression"></a>将 Switch 语句转换为 Switch 表达式
 

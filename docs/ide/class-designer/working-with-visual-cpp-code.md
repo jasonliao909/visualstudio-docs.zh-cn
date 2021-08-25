@@ -18,14 +18,15 @@ ms.assetid: f5b40921-2ef7-4de0-b595-45b44c79ffa6
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 62993611ef7359095512f494767bbd3ea4cce5d9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f1bfa6a64d8c48b92118d7a21fe9e10fce2e84c3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946574"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041381"
 ---
 # <a name="work-with-c-code-in-class-designer"></a>在类设计器中使用 C++ 代码
 

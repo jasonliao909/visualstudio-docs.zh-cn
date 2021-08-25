@@ -7,14 +7,15 @@ ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 740a1b9385c53c87e8d52d2e80729586557f7ce0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eb56e1dfe2e5410761fc52e2c9edc5fa04095b91
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869149"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086009"
 ---
 # <a name="how-to-customize-the-scroll-bar"></a>如何：自定义滚动条
 

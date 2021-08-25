@@ -33,14 +33,15 @@ ms.assetid: 020b2e97-3b3e-4b2c-872d-b5c6025e120e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 29661c633e41c0640829caff2452d65907944773
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: 1b714de7bd050430eae1a45e36fa877acc7aa2b8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090325"
 ---
 # <a name="use-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中使用断点
 

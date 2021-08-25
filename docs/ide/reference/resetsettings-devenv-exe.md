@@ -13,14 +13,15 @@ ms.assetid: 1d41021c-6f58-4bd5-b122-d1c995812192
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e523738ff23b40c80b5df21d90b582d94c59087f
-ms.sourcegitcommit: a8031c1387d2090129ed33e063744f9f31653dcd
+ms.openlocfilehash: cbc3b329b4a525a525823169d63ebbda2770727e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/01/2021
-ms.locfileid: "110724533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062142"
 ---
 # <a name="resetsettings-devenvexe"></a>/ResetSettings (devenv.exe)
 

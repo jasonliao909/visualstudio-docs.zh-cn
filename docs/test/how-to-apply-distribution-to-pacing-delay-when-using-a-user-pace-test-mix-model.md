@@ -10,12 +10,13 @@ ms.assetid: ae8b35f9-d465-4d72-8d7d-7b56ae6ffd22
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: c6f4efd21da1d10f3885bdb0202baf6f42992522
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: db93dbbfadc33c8653bd44e6343cfcea5bbc5f1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966872"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092548"
 ---
 # <a name="how-to-apply-distribution-to-pacing-delay-for-a-user-pace-test-mix-model"></a>如何：用户节奏测试组合模型的对节奏延迟应用分布
 

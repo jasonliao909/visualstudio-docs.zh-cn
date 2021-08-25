@@ -18,14 +18,15 @@ ms.assetid: 9095b4f1-88da-4194-914b-ee1456826830
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 69a7c6a472023dd8bd41b087b3749e5451382a5e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 13d052402196126c53f327fd1cc2033f99da548b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950301"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069024"
 ---
 # <a name="mergelocalizationdirectives-task"></a>MergeLocalizationDirectives 任务
 

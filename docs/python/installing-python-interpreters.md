@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 239a8f40aa669aa60853405621a0b335aabdcb3c
-ms.sourcegitcommit: 879ba768364f3bfdaeb9004f740478489ab15c3a
+ms.openlocfilehash: 4ab809ea4aced244ecccd2ba04e7e3f0dbbda162
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114796159"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122106869"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 

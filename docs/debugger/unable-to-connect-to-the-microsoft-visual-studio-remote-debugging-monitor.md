@@ -16,14 +16,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e333bbe4198dfeda9ceb90ed23263ef1b6e06495
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 618d6dedca13915e430c1931447b86d1749f8a79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870358"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030459"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 出现此消息的原因可能是远程计算机上的远程调试监视器未正确设置，或者由于网络问题或存在防火墙而导致远程计算机不可访问。

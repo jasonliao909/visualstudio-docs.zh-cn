@@ -11,14 +11,15 @@ ms.assetid: aa5ae9d0-561d-4ef8-b36b-258ce553d50a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dcc4cd3241c4d2fffdf2637790869dfc5ac524f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bfb26f6f632d62eceea3f897297ff338f3fe978
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922433"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107181"
 ---
 # <a name="no-thread-activity-to-show-threads-view"></a>没有要显示的线程活动（线程视图）
 此区域显示有关当前可见时间范围内的非隐藏线程的数据。

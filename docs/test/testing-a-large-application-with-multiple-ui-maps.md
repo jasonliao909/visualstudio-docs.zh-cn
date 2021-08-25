@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 9995623265b4f72e75f76827c2acbdf508c4e657
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 49655aa1aa33f962f3cbaa13ed0d991376f7c700
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038404"
 ---
 # <a name="test-a-large-application-with-multiple-ui-maps"></a>使用多个 UI 映射测试大型应用程序
 

@@ -16,14 +16,15 @@ ms.assetid: 3ca60816-4bb0-4fef-ae43-ca0bfb63def3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 831f6fa76ba3d6cfdebbb6b850862155ad280641
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d2f31a8726f81ba98f32b6f98ca8bd76b3537cd0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914728"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077382"
 ---
 # <a name="generatetrustinfo-task"></a>GenerateTrustInfo 任务
 
@@ -45,7 +46,7 @@ ms.locfileid: "99914728"
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

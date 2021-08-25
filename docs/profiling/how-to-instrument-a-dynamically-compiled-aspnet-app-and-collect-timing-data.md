@@ -7,15 +7,16 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: fbb1ec181e028abc7e987d5ed61be050481fb49a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02e486fd87c51af7237e7fed59330612dc46e36d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107597"
 ---
 # <a name="how-to-instrument-a-dynamically-compiled-aspnet-web-application-and-collect-detailed-timing-data-with-the-profiler-by-using-the-command-line"></a>如何：使用探查器命令行检测动态编译的 ASP.NET web 应用程序，并收集详细计时数据
 

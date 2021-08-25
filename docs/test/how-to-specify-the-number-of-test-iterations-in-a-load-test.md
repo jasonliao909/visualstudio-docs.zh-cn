@@ -11,12 +11,13 @@ ms.assetid: 45a625db-b3e7-4d64-beda-b9a76248096d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: a257b5800166e840194a28cba0ca99849b05f579
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3af6b33cb2c611023790f3f70ac4446ac6f99a36
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936192"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092457"
 ---
 # <a name="how-to-specify-the-number-of-test-iterations-in-a-load-test-run-setting"></a>如何：在负载测试运行设置中指定测试迭代数
 

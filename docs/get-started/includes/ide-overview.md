@@ -2,16 +2,16 @@
 ms.date: 07/01/2021
 ms.technology: vs-ide-general
 ms.custom: vs-get-started
-ms.author: tglee
-author: TerryGLee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.topic: include
-ms.openlocfilehash: 007327dc525f515523f98323bc95e133209e1531
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: e2caa881ca2d27cc149e2a364d45ca8d6886dc51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113279780"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056838"
 ---
 Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用  。 集成开发环境 (IDE) 是一个功能丰富的程序，可用于软件开发的许多方面。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以简化软件开发过程。
 
@@ -29,9 +29,9 @@ Visual Studio 集成开发环境是一种创新启动板，可用于编辑、调
 
 此图像显示 Visual Studio 具有一个打开的项目和若干可能会使用的关键工具窗口：
 
-- 可通过[解决方案资源管理器](../../ide/use-solution-explorer.md)（右上方）查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)，从而帮助整理代码  。
+- 使用“解决方案资源管理器”（右上角），可以查看、导航和管理代码文件。 解决方案资源管理器可将代码文件分组为[解决方案和项目](../../ide/solutions-and-projects-in-visual-studio.md)，从而帮助整理代码  。
 
-- [编辑器窗口](../../ide/writing-code-in-the-code-and-text-editor.md)（中心）用于显示文件内容，你可能会在该窗口花费大部分时间。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
+- 编辑器窗口（中心）用于显示文件内容，你的大部分时间可能都是在此窗口中度过的。 可在该窗口编辑代码或设计用户界面，例如带有按钮和文本框的窗口。
 
 ::: moniker range="vs-2017"
 

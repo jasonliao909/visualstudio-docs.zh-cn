@@ -15,14 +15,15 @@ ms.assetid: 1eba3721-cc12-4b80-9987-84923ede5e2e
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ceb6b01f06964b8c79fa7357da6688e2e0229799
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 0b2804f86b26b8e274804c3f504b1f19cb6f83d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672821"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055082"
 ---
 # <a name="common-msbuild-project-items"></a>常用的 MSBuild 项目项
 

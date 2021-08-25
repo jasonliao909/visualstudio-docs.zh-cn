@@ -14,15 +14,16 @@ ms.assetid: 85161cc4-18ee-49b3-9487-33680e687597
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 07a0593e5139479c1b2d82f7b2f4cd78fde8a884
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 8187b7543ba603cd23239a463b1ae9875e46c09e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108117"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用 **采样** 数据。

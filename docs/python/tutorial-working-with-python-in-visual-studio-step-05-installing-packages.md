@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c47eacf0c9977e7342bfda17e03ea53728ee9215
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be201d5d9897dd803f9eac3c012d3124c141c26e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901155"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076108"
 ---
 # <a name="step-5-install-packages-in-your-python-environment"></a>步骤 5：在 Python 环境中安装程序包
 

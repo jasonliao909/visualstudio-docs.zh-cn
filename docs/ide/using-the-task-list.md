@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 599623fc5c069c6c402de3718b1b16d20176eaad
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c20f0b6eb2a496455469f3bc7404839954add74d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99925640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116794"
 ---
 # <a name="use-the-task-list"></a>使用任务列表
 

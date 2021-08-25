@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: 86bc2a1b73b492dc5f8d9977f05c3b2ba0dde6dc
-ms.sourcegitcommit: 13cf7569f62c746708a6ced1187d8173eda7397c
+ms.openlocfilehash: e207a3e52b61ca7da896a3c3531884c3e5a833d244815eb9b041d0009c5346be
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/25/2020
-ms.locfileid: "91376500"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122058257"
 ---
 在要调试的远程设备或服务器上（而不是 Visual Studio 计算机上），请从下表中的链接下载并安装正确的远程工具版本。
 

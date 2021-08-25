@@ -12,15 +12,16 @@ ms.assetid: 4d85bdd6-b571-47e0-afd6-ba3764e4eed5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f8399dbe43c20a8c888ac4e4bac9ec8b03e9610
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 0abdfb412d4adada9f4e41fd98258abfa1cb88e1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466136"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107883"
 ---
 # <a name="da0006-override-equals-for-value-types"></a>DA0006：替代值类型的 Equals()
 

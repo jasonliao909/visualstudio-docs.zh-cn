@@ -6,15 +6,16 @@ ms.date: 11/04/2016
 ms.topic: conceptual
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 41863ccc845b0f74c300e927708e238193f223ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6459b6d5d91980f8963d45368695b0e6e2f5c0a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934853"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092691"
 ---
 # <a name="analyzing-coded-ui-tests-using-coded-ui-test-logs"></a>使用编码的 UI 测试日志分析编码的 UI 测试
 

@@ -22,14 +22,15 @@ ms.assetid: 88327e04-fa3e-48db-995b-ad89e0dc4ed2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 59eba4addc21c47db19de212c527e744428973f4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 380ffd8f39590218ecbe82cde464b227a1046e8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99838361"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056051"
 ---
 # <a name="options-dialog-box-environment--task-list"></a>“选项”对话框：环境 \> 任务列表
 

@@ -14,15 +14,16 @@ ms.assetid: 76247259-c6f3-44c4-b3f9-d8dac16b5e0d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b3f5e5129bed479273e141af70121d5a344972e2
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 608135e6600dd64e7edd14eeccfe279962e412b9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102465837"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084319"
 ---
 # <a name="da0029-unsupported-clr-version"></a>DA0029：不支持的 CLR 版本
 

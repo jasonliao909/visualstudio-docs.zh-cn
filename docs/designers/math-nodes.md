@@ -8,14 +8,15 @@ ms.assetid: adc225cc-1cf5-4f7c-9b00-e7ac8450b6b9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: c386027391c02c9645836c98eab37d97a3967066
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d48ed02b12315f741beab59d05d4fa15b422b7a4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880250"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035496"
 ---
 # <a name="math-nodes"></a>数学运算节点
 

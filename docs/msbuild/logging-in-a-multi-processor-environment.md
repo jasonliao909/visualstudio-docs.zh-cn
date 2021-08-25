@@ -11,14 +11,15 @@ ms.assetid: dd4dae65-ed04-4883-b48d-59bcb891c4dc
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d58f9f29d88d7988b4ead3c2d96eadbbf95a8f46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4eade469104fae968fbc91939266964cae7869e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108676"
 ---
 # <a name="logging-in-a-multi-processor-environment"></a>多处理器环境下的日志记录
 

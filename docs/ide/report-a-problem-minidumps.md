@@ -9,6 +9,7 @@ helpviewer_keywords:
 author: corob-msft
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -16,12 +17,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect minidumps to send to Microsoft for help with troubleshooting issues with Visual Studio
-ms.openlocfilehash: 44ab0873580c7c541fc5e7fdde56cc1780929b75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 169401462589b12c9d0d337d442c4288bf4e16ad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970772"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048578"
 ---
 # <a name="create-minidumps-for-a-visual-studio-process-with-all-call-stacks"></a>使用所有调用堆栈为 Visual Studio 进程创建小型转储
 

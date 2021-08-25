@@ -12,14 +12,15 @@ ms.assetid: ff987d1b-1798-4803-9ef6-cc8fcc263516
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1e7cf5998645230f038c6de12c79b53b44c09dfc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4b972eb1af16a922a9fe66081ada4467d39e27c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136607"
 ---
 # <a name="write-multi-processor-aware-loggers"></a>编写可识别多处理器的记录器
 

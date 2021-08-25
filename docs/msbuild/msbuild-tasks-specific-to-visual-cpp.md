@@ -15,14 +15,15 @@ ms.assetid: 05410f0c-7356-4692-bc00-20664421c9ff
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 82ba5ad3beb8a676df23cc69184c8766bca72f77
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2a630842092f18d81257877742f872d3a01fe862
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878261"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077135"
 ---
 # <a name="msbuild-tasks-specific-to-c"></a>特定于 C++ 的 MSBuild 任务
 

@@ -8,14 +8,15 @@ ms.assetid: f767d8e4-24d8-4803-80eb-e857202dbe2c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: e6e5ef85ffc4a10719cfbef79cbaf6dad08bdbf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3da3236b9d8cef954c4457b5710956751679b059
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919125"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085021"
 ---
 # <a name="msbuild-glossary"></a>MSBuild 词汇表
 
@@ -27,7 +28,7 @@ ms.locfileid: "99919125"
 
 ## <a name="batching"></a>批处理
 
-批处理是指根据项元数据，将项划分为不同类别（称为批次  ），然后使用每个批次运行目标或任务。 批处理相当于 MSBuild for 循环构造。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
+批处理是指根据项元数据，将项划分为不同类别（称为批次），然后使用每个批次运行目标或任务。 批处理相当于 MSBuild for 循环构造。 有关详细信息，请参阅[批处理](../msbuild/msbuild-batching.md)。
 
 ## <a name="build-scope"></a>生成范围
 
@@ -107,7 +108,7 @@ ms.locfileid: "99919125"
 
 ## <a name="project-file"></a>项目文件
 
-项目文件包含控制生成的 MSBuild 脚本。 项目文件通常具有以“proj”结尾的文件扩展名（如 .csproj 或 .vbproj）    。 项目文件可能会导入属性文件和目标文件。
+项目文件包含控制生成的 MSBuild 脚本。 项目文件通常具有以“proj”结尾的文件扩展名（如 .csproj 或 .vbproj）  。 项目文件可能会导入属性文件和目标文件。
 
 ## <a name="property"></a>property
 
@@ -119,7 +120,7 @@ ms.locfileid: "99919125"
 
 ## <a name="property-file"></a>属性文件
 
-属性文件是包含大部分指导生成的属性组和项组的项目文件。 按照约定，其文件扩展名为 .props  。 通常在关联的项目文件的开头导入属性文件。
+属性文件是包含大部分指导生成的属性组和项组的项目文件。 按照约定，其文件扩展名为 .props。 通常在关联的项目文件的开头导入属性文件。
 
 ## <a name="property-function"></a>属性，函数
 
@@ -127,7 +128,7 @@ ms.locfileid: "99919125"
 
 ## <a name="property-function-nested"></a>属性函数，嵌套
 
-可将属性函数组合成更复杂的函数。 例如，应用于对象的
+可将属性函数组合成更复杂的函数。 例如，
 
  `$([MSBuild]::BitwiseAnd(32,   $([System.IO.File]::GetAttributes(tempFile))))`
 
@@ -203,7 +204,7 @@ ms.locfileid: "99919125"
 
 ## <a name="targets-file"></a>目标文件
 
-目标文件是包含大部分指导生成的目标和任务的项目文件。 按照约定，其文件扩展名为 .targets  。 通常在关联的项目文件的结尾导入目标文件。
+目标文件是包含大部分指导生成的目标和任务的项目文件。 按照约定，其文件扩展名为 .targets。 通常在关联的项目文件的结尾导入目标文件。
 
 ## <a name="task"></a>task
 
@@ -217,6 +218,6 @@ ms.locfileid: "99919125"
 
 请参阅 *元数据，已知*。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [MSBuild](../msbuild/msbuild.md)

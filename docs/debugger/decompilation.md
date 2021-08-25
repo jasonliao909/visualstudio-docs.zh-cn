@@ -12,15 +12,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 84ba27607a594862905ef77b7979e89009eb098e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 024d202122452c21594ed04dbf9c96256e73ca6f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872152"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112849"
 ---
 # <a name="generate-source-code-from-net-assemblies-while-debugging"></a>在调试时从 .NET 程序集生成源代码
 

@@ -10,14 +10,15 @@ ms.assetid: 802549be-dbd8-4df0-a18b-971900eaa769
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: af8a0cb8e102369398046f2c4a27cd54073e3f26
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5786ac9ad94de46c9dfebffc862730f8fb63c646
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861291"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096864"
 ---
 # <a name="spy-menu-commands"></a>“监视”菜单命令
 “监视”菜单提供了用于使用 Spy++ 窗口和视图的命令。

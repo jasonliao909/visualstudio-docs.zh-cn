@@ -12,14 +12,15 @@ ms.assetid: 3468045c-5cc9-4157-9a9d-622452145d27
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e7dc759cefae4ae262362265daf67ee5b1cb50f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b82eb2d9be21464b0f160a114972ab6ae7df4d0b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960554"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048617"
 ---
 # <a name="upgrade-devenvexe"></a>/Upgrade (devenv.exe)
 

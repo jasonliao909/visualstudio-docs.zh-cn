@@ -8,15 +8,16 @@ helpviewer_keywords:
 - lab environment, test lab
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: a16b8df2539272f96f0211fdf08e32fe4e4eaac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e411beddb093a75528e2cacd2d3eba945e134b62
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887817"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033013"
 ---
 # <a name="use-a-lab-environment-for-your-devops"></a>使用实验室环境进行开发
 

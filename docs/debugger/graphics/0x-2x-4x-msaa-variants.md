@@ -8,14 +8,15 @@ ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 15cf6c257b54c8998b32213e7abf021b8b8ef816
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 60133b32d65adc3f58dc430b1fe2d4ae9e5f91e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232630"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074359"
 ---
 # <a name="0x2x4x-msaa-variants"></a>0x/2x/4x MSAA 变量
 重写所有呈现器目标和交换链上的多重采样抗锯齿 (MSAA) 设置。

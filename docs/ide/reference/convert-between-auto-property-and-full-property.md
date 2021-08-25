@@ -7,16 +7,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3680444c07658da8e77b6058f5a71b9dcf119193
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0e3a2f2c5ea08375a9a6596717ab43cd17fd5228
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094329"
 ---
 # <a name="convert-between-auto-property-and-full-property"></a>在自动属性和完整属性之间转换
 

@@ -6,18 +6,19 @@ ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 7d5e4d8fb598434bfaa2a8a699c546cdc84febb0
-ms.sourcegitcommit: e262f4c2a147c3fa2d27de666aae3a0497317867
+ms.openlocfilehash: 091789ea55ce323072a64c7564431af7f7a6f89c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/09/2021
-ms.locfileid: "100006434"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059941"
 ---
 # <a name="use-stubs-to-isolate-parts-of-your-application-from-each-other-for-unit-testing"></a>使用存根隔离应用程序的各个部分以进行单元测试
 

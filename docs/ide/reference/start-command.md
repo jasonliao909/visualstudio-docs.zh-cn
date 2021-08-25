@@ -13,14 +13,15 @@ ms.assetid: dc4e4aa2-b0ab-4e00-92db-6dc3058ddc21
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cae9d4630a854bc24c952380a1e27cbab42d261
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5eb9036b12d066e03eb6e4de346d99f78b04c79
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99938650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048695"
 ---
 # <a name="start-command"></a>“启动”命令
 开始调试启动项目。

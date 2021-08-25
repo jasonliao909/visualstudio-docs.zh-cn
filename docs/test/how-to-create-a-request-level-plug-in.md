@@ -11,12 +11,13 @@ ms.assetid: d0b5b23c-7e94-4637-be6c-2620a5442d46
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: f546d0433ff5fa3a55f49f559597f1c7a45b1596
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a50d16a98f6a504e845fcc54ae750ba65e58fc6a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877923"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047473"
 ---
 # <a name="how-to-create-a-request-level-plug-in"></a>如何：创建请求级插件
 

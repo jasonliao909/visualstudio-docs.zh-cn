@@ -8,14 +8,15 @@ ms.assetid: ed8ac02d-b38f-4055-82fb-67757c2ccbb9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b2ce885969ec8b9e382f453eddf388a850e8ac7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1e45a0e45e0806fb5614be3aecbd9011c2bfa57a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99906502"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058516"
 ---
 # <a name="walkthrough-missing-objects-due-to-misconfigured-pipeline"></a>演练：因管道误配置而缺少对象
 本演练演示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具来调查由于未设置的像素着色器而缺失的对象。

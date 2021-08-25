@@ -8,15 +8,16 @@ ms.assetid: e825ba66-1383-46ad-8712-396bc9c14036
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 242a5234c2b7368a992676e12ecbdcd5ea36219f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: caaadb9329ef277cc5e82e787f56f9b3b2b96696
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955406"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039509"
 ---
 # <a name="console"></a>控制台
 VSPerfCmd.exe“Console”选项在新的命令提示符窗口中启动指定的应用程序。 “Console”只能与 VSPerfCmd“Launch”选项一起使用。 如果应用程序不是命令行应用程序，“Console”不起作用。

@@ -8,14 +8,15 @@ ms.assetid: 7cc5ddf2-2f7c-4f83-b7ca-58e92e9bfdd2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a6bf07cc7905fc48bcc82c8b38fa5b6f6e7cfa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d3198e5fb784cac999097167ef2499004823781
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99904417"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122074145"
 ---
 # <a name="historical-debugging-c-visual-basic-c"></a>历史调试（C#、Visual Basic、C++）
 

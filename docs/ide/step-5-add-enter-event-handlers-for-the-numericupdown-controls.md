@@ -4,8 +4,6 @@ description: 在“创建计时数学测验”教程中为 NumericUpDown 控件�
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -13,14 +11,15 @@ ms.assetid: 45a99a5d-c881-4298-b74d-adb481dec5ee
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ef6207ebfa30401896a7681b599128cfb9648e96
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 2032ae8db33600a232b30c144ae0919d748eec31
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296321"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078127"
 ---
 # <a name="step-5-add-enter-event-handlers-for-the-numericupdown-controls"></a>步骤 5：为 NumericUpDown 控件添加 Enter 事件处理程序
 

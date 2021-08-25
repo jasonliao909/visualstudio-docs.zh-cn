@@ -10,14 +10,15 @@ ms.assetid: 52ecb289-9b86-455c-a52b-3dcd3f7255bf
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: afcbbcb1990f27a09ec74814b67dbdd77bc28ec9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dcb569c930a5bc2e801f5731799b6ecc3caff1d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940613"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096851"
 ---
 # <a name="thread-search-dialog-box"></a>“线程搜索”对话框
 使用此对话框可在[线程视图](../debugger/threads-view.md)中查找并选择特定线程的节点。 若要显示此对话框，请将焦点移至线程视图窗口。 然后从“搜索”菜单中选择“查找线程”。

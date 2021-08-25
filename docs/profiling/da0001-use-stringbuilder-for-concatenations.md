@@ -12,15 +12,16 @@ ms.assetid: a7cc7613-ad5f-48c8-bd2b-56372cc12dfc
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 11ec65fc4131b4ad4d33fa25c616ecacc6a2fc79
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 08edba581d7b88fb0e0a71a7caf99ee66fa0ba3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102470022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076732"
 ---
 # <a name="da0001-use-stringbuilder-for-concatenations"></a>DA0001：将 StringBuilder 用于串联
 

@@ -10,16 +10,17 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.performancecenter
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c1be9ef034f4c11fde22e8aa811785631321f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d8842764d81aa40c13865975e2d5dd28ae55eefa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909122"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062467"
 ---
 # <a name="optimize-visual-studio-performance"></a>优化 Visual Studio 性能
 
