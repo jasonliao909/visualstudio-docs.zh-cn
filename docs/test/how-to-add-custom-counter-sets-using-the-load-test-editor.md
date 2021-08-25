@@ -12,12 +12,13 @@ ms.assetid: 499aca80-1069-408d-ac68-326da6a50645
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: ce34a4e30c9d612bd37afb61c354b7a4b5df7aed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 5980dc94d4be706730c9d9e053e907e6b6267424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966924"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092561"
 ---
 # <a name="how-to-add-custom-counter-sets-using-the-load-test-editor"></a>如何：使用负载测试编辑器添加自定义计数器集
 

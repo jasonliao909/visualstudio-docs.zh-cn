@@ -18,14 +18,15 @@ ms.assetid: c9b7525a-b1c9-40fc-8bce-77a5b8f960d8
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c3b89e074a4c67e8d16a07eb48431ebe1ade694f
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 989cea132815ef8b431e05cdf5f5ba6cdcd6d169
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106083563"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093978"
 ---
 # <a name="exec-task"></a>Exec 任务
 

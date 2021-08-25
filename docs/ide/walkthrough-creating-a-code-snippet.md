@@ -15,16 +15,17 @@ ms.assetid: 0dcaae11-39cf-4463-9c90-2494321251c2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 39565b95b93e489a739c2da3a0f88fb9f683a2bc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 866f4880caf90977e3da809e63def40932c8f024
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873796"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116638"
 ---
 # <a name="walkthrough-create-a-code-snippet"></a>演练：创建代码片段
 

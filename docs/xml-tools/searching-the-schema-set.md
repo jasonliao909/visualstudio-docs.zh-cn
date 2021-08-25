@@ -8,14 +8,15 @@ ms.assetid: ec1395e0-d03c-4130-810d-f2db656937bd
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f924e46fa4d32fbea9071bd8a19268f2ee1652e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 95e5437cc7eeeed2a43a3fdedd5dc829a8f66c42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891873"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130164"
 ---
 # <a name="search-the-schema-set"></a>搜索架构集
 

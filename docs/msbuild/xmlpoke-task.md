@@ -16,14 +16,15 @@ ms.assetid: 6ba1953c-be3b-4df8-8561-e133408f8270
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d829376fcece336434fa5e816c725d5be61ac1a0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b57e71c407d8ea671ec076a5432fd4f0b3ab612a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956030"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093640"
 ---
 # <a name="xmlpoke-task"></a>XmlPoke 任务
 

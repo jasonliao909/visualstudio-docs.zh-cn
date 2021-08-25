@@ -16,14 +16,15 @@ ms.assetid: c3275e69-a427-4889-bc1d-51bff2c285fa
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 56ff9c63de40f6a352c10f92b937a397c683fc65
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c56eb3b3bfb79bd7896657719157fc6a4bd8e99c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905303"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100668"
 ---
 # <a name="parametergroup-element"></a>ParameterGroup 元素
 

@@ -12,14 +12,15 @@ ms.assetid: e144e70e-eef2-45a7-a562-a177f177d9a1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d48be382e222c9ca494237ae6b72bae54bb90d62
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b7030c8bc6f8df01579640f02fc22dce07f46d5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99891444"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090533"
 ---
 # <a name="processes-view"></a>进程视图
 进程视图显示系统上所有活动进程的树。 进程 ID 和模块名称会进行显示。 如果要检查特定系统进程（通常对应于正在执行的程序），请使用进程视图。 进程由模块名称标识，或者指定为“系统进程”。

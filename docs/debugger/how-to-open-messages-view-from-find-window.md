@@ -11,14 +11,15 @@ ms.assetid: 601a193e-432a-417b-9406-6fec9e401264
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7bdfb59d6232706551534d0b8b395cd476dcf2d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 852769189cf7294696f562d4d7ed6e89ce962cbd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918465"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128229"
 ---
 # <a name="how-to-open-messages-view-from-find-window"></a>如何：从“查找”窗口打开消息视图
 你可能会发现使用“查找窗口”对话框选择目标窗口，然后打开该窗口的消息视图会十分方便。

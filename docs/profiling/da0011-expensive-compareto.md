@@ -12,15 +12,16 @@ ms.assetid: 239a381d-0d97-4367-8668-746c93f5af2c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 91219bed2ca0e8b4bbc28825e1505b9d5f78bbc8
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 261327205f0ee8a297ad5fda333394a002dc7e9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466149"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093289"
 ---
 # <a name="da0011-expensive-compareto"></a>DA0011：高开销 CompareTo
 

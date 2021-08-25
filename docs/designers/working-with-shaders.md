@@ -8,14 +8,15 @@ ms.assetid: 6b2ea1ed-b995-4e75-af19-c68fd37a3bc5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: bff5aee4337a464498fc4ac027eb05b2da912b61
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ae0365760045dd6e8e36bcb01920116d92707c21
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844887"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112017"
 ---
 # <a name="work-with-shaders"></a>使用着色器
 

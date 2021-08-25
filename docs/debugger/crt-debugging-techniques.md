@@ -19,14 +19,15 @@ ms.assetid: 9be561f6-14a8-44ff-925d-d911d5b8e6ff
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 84d5f85584403cc18cd00708a8d4698723d614ef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4874b2fc3c60d6365579cbbca808b566cf6f8189
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121699"
 ---
 # <a name="crt-debugging-techniques"></a>CRT 调试方法
 如果调试使用 C 运行时库的程序，这些调试方法可能会有用。

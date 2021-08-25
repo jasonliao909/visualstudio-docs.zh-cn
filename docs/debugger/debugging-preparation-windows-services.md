@@ -16,14 +16,15 @@ ms.assetid: ac0a99f7-ec3d-4a20-b17f-698a817fdcc2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 01448fcd477f5b17b78ad2b142b965f30798746b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 3b1a83c5343b185780556ff3a7132d1d7a1a5baa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387731"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113047"
 ---
 # <a name="debugging-preparation-windows-services"></a>调试准备：Windows 服务
 Windows 服务是一种在 Microsoft Windows 的后台中运行的程序。 Telnet 服务和 Windows 时间服务（它更新计算机的可见时钟）都属于 Windows 服务。 Windows 服务不能从 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 内部运行；它必须在服务控制管理器的上下文中运行。 有关详细信息，请参阅[创建 Windows 服务](/dotnet/framework/windows-services/how-to-create-windows-services)、[调试 Windows 服务应用程序](/dotnet/framework/windows-services/how-to-debug-windows-service-applications)和 [Windows 服务应用程序](/dotnet/framework/windows-services/index)。

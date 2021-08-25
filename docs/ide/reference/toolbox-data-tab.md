@@ -12,14 +12,15 @@ ms.assetid: 2ae38b2a-29d2-461c-a67d-29dad274bf45
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1f27f2fb082c478aecff3d64f418ed0e864e15df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c9016f6cd77f750b2b1a03ef799652f1c3afbb1a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964974"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117054"
 ---
 # <a name="toolbox-data-tab"></a>工具箱，“数据”选项卡
 

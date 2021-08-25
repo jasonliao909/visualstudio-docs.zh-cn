@@ -15,14 +15,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a08f1a7638233e2633a34287aad500ee81245be6
-ms.sourcegitcommit: 4b323a8a8bfd1a1a9e84f4b4ca88fa8da690f656
+ms.openlocfilehash: 986fdcdd9b22c76ba87ba31a9e9a256363c40a01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102146686"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112797"
 ---
 # <a name="error-the-visual-studio-remote-debugger-service-on-the-target-computer-cannot-connect-back-to-this-computer"></a>错误：目标计算机上的 Visual Studio 远程调试器服务无法重新连接到此计算机 | Microsoft Docs
 此错误表示远程调试器服务正在运行，但是运行它的用户帐户在连接到正在从中进行调试的计算机时无法进行身份验证。 使用旧版调试引擎进行远程调试，且远程调试器作为服务运行时，可能会发生此错误。

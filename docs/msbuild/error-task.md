@@ -18,14 +18,15 @@ ms.assetid: e96a90ee-a8ae-4e5b-8ef2-b5cf5fedd8b2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e4e1a91bc018bdf77671b13994ce57e4e10e694
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad3b206dbbbc65b2a3a08bc4bee7e8a4e4e85773
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877195"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108962"
 ---
 # <a name="error-task"></a>Error 任务
 
@@ -35,7 +36,7 @@ ms.locfileid: "99877195"
 
 下表描述了 `Error` 任务的参数。
 
-| 参数 | 说明 |
+| 参数 | 描述 |
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与错误关联的错误代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 包含错误的文件的名称。 如果未提供任何文件名称，将使用包含 Error 任务的文件。 |

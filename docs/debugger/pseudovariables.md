@@ -17,14 +17,15 @@ ms.assetid: fae84f68-2138-4144-9bd4-c9e271b6182a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 88880110ca00141382d7038ec001f3cc4159f2b3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bc4e1d16ee7a79ed3de15ed987939a89373e5c2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908337"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122120824"
 ---
 # <a name="pseudovariables-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的伪变量
 伪变量是用于在变量窗口或“快速监视”对话框中显示某些信息的术语。 你可以像输入普通变量那样输入伪变量。 但伪变量不是变量，它不与程序中的变量名相对应。

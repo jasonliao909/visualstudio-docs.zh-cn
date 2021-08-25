@@ -23,14 +23,15 @@ ms.assetid: 932269fe-94e3-43cb-8931-078f31afd177
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7fb7b7625e8e08e291f4f27606d03f9066828e0a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5ecffb2bb8a6cf616b75386cac5823763534bb30
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903490"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112472"
 ---
 # <a name="select-code-type-dialog-box"></a>“选择代码类型”对话框
 

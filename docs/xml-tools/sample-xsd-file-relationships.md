@@ -8,14 +8,15 @@ ms.assetid: 60126510-b7dd-4cb4-92d3-9883590b92f2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dbfd5459ae750236afde63574959fd6b7c7b37c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ff00520892dddfaed6813f76732668bac5bd8ca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956563"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122114454"
 ---
 # <a name="sample-xsd-file-relationships"></a>示例 XSD 文件：关系
 

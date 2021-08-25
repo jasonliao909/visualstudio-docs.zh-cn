@@ -10,12 +10,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 4229b0dcaf1c1cdacd7dd5a44cbb56afdfe9707d
-ms.sourcegitcommit: 9c831a7f39e5b3e3c5db000b2545715bf12225f3
+ms.technology: vs-ide-general
+ms.openlocfilehash: 4f007c5c8d00a3d1232bf3a611f1ad80946c92f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105933779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109417"
 ---
 # <a name="customize-project-and-item-templates"></a>自定义项目和项模板
 

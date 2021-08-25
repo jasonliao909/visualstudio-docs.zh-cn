@@ -8,14 +8,15 @@ ms.assetid: 080bed0f-0ca9-4be7-aecd-6bdaebc04007
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: df9bff28e68b373bb932f33ff8fb34439f0b4e7c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 636d681080239dc80a210d590407e77c062bdc20
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969082"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130229"
 ---
 # <a name="edit-xslt-style-sheets"></a>编辑 XSLT 样式表
 

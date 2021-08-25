@@ -17,14 +17,15 @@ ms.assetid: f50efb78-5206-4803-bb42-426ef8133f2f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 7b92f4e2faf2043c26c7119b6f9754edd3bdc990
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b88c488f73c99cd5a86e6bbe88acbeb379724f88
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884385"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090273"
 ---
 # <a name="view-threads-and-tasks-in-the-parallel-stacks-window-c-visual-basic-c"></a>在“并行堆栈”窗口中查看线程和任务（C#、Visual Basic 和 C++）
 

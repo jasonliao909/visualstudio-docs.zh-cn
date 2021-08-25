@@ -16,14 +16,15 @@ ms.assetid: de8bb378-8c1c-4087-a9a5-537fa8314c19
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 54a33d56542065311b2614bad72593132b7908cc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e735a2a4d519cb785ca37f3cf57a55f2d901c4ee
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116846"
 ---
 # <a name="visual-studio-command-aliases"></a>Visual Studio Command Aliases
 

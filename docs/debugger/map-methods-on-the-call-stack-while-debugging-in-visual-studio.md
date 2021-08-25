@@ -29,14 +29,15 @@ ms.assetid: d6a72e5e-f88d-46fc-94a3-1789d34805ef
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a9f047708383cdcf3cb8bc06ab2d835e2a2cf300
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a726f73a866fc6b275877f3a457d3b2f6ed08dc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893186"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097072"
 ---
 # <a name="create-a-visual-map-of-the-call-stack-while-debugging-c-visual-basic-c-javascript"></a>在调试时创建调用堆栈的可视图（C#、Visual Basic、C++ 和 JavaScript）
 

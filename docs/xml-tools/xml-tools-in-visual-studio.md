@@ -32,14 +32,15 @@ ms.assetid: 1fd5de47-2d61-4180-9539-c2c4bf9ab768
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: c3e376980fb7c1e7f2378f23ae8230e6e45264ea
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4ff3edfedecc3598ba2571723f4757a60ffc8c45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874764"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098562"
 ---
 # <a name="overview-of-xml-tools-in-visual-studio"></a>Visual Studio 中的 XML 工具概述
 

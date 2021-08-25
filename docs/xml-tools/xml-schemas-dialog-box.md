@@ -10,14 +10,15 @@ ms.assetid: 0271fa26-2205-49bd-96e0-ae1441571808
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 1c91e97d0508ab85893409386ddd3ab9dded7f45
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ce4aee5707144abd086056f0022cc4aac44618db
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874829"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122122574"
 ---
 # <a name="xml-schemas-dialog-box"></a>XML 架构对话框
 

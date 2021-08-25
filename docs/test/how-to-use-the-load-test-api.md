@@ -12,12 +12,13 @@ ms.assetid: e15567bc-1f21-4feb-b81d-f17ba35cfde5
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 281e64f83766b6b42dd9f076726c429c9432245b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 4e11e100d6a97ee8c60834e4feefb667926eb599
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879548"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092431"
 ---
 # <a name="how-to-use-the-load-test-api"></a>如何：使用负载测试 API
 

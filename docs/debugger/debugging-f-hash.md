@@ -16,14 +16,15 @@ ms.assetid: 20bcd51c-2d06-4281-9a1e-ef2b91d1a779
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2d2fed2765d04fa55c790afb7251a24b98a4d74f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 48bbd10fa01d048e19d80095658045a2e64e411c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872620"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113060"
 ---
 # <a name="debugging-f"></a>调试 F\#
 调试 F# 与调试任何托管语言类似，但有以下几种例外情况：

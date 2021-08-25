@@ -17,14 +17,15 @@ ms.assetid: e3a8815c-6995-4099-8e88-34f91fad55b2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d9dc19c69bf99ba6f66648f396468ff36444eb3f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b0efa5a6afa002e935e67fe56586195c41979a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101162"
 ---
 # <a name="options-dialog-box-environment--international-settings"></a>“选项”对话框：环境 \> 国际设置
 

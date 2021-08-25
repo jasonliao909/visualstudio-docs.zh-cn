@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a186c63cf695184b74780eeb6ab16b85c8aef5e
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 3c1f9ca139f60fa5d25874745af0e263af71d717
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112924963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123614"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目有哪些？
 

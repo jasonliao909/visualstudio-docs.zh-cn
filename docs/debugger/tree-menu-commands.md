@@ -10,14 +10,15 @@ ms.assetid: ffc1b893-17b1-477f-92a1-e4a59261ca1a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9dc99ca9652e0df1027b4aeab3519291c8f12034
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8ea0f810354b56aaf4ddeb38b19fb1ba061e113e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870449"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096903"
 ---
 # <a name="tree-menu-commands"></a>“树”菜单命令
 “树”菜单提供用于展开或折叠视图的命令。

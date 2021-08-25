@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 133fbec68ff0e6b04793c2e168c730ee37024ad4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: bd48e160b4134ff3439a1258386328b27f84b184
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970643"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116807"
 ---
 # <a name="template-parameters"></a>模板参数
 

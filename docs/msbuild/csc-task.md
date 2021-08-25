@@ -18,14 +18,15 @@ ms.assetid: d8c19b36-f5ca-484b-afa6-8ff3b90e103a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 10a63b114379f56ca5f253f853a1ff6bdd6c60dc
-ms.sourcegitcommit: 3fe04d5b931ae459a802a1b965f84186757cbc08
+ms.openlocfilehash: cae7ff3a8c413051e38d9a6c5209717d1b5b481f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111588470"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123419"
 ---
 # <a name="csc-task"></a>Csc 任务
 

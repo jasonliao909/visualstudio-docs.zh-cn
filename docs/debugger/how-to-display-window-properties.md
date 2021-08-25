@@ -10,14 +10,15 @@ ms.assetid: 4c2f52de-bd91-42cf-9028-67aa75f8bd26
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 901ec0b6954981622601883a83e27f6f89ca5a71
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f64b4f6183b6878eb934c0125fe85ada86b697c0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916296"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128502"
 ---
 # <a name="how-to-display-window-properties"></a>如何：显示窗口属性
 若要详细了解[窗口视图](../debugger/windows-view.md)中列出的窗口，请使用[“窗口属性”对话框](../debugger/window-properties-dialog-box.md)。

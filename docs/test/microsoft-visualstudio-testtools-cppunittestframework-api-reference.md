@@ -6,15 +6,16 @@ ms.date: 09/27/2019
 ms.topic: reference
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: corob-msft
-ms.openlocfilehash: 355259f784d496fae574a331382d03d3fbe5bfd6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8530bcdcdd47a57d97260a1b48f05df1e8661b80
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99844523"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092236"
 ---
 # <a name="microsoftvisualstudiotesttoolscppunittestframework-api-reference"></a>Microsoft.VisualStudio.TestTools.CppUnitTestFramework API 参考
 

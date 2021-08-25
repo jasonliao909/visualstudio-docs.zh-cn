@@ -18,14 +18,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 10b914ac60e19e39fb7712aa8021c5d988aada50
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f04f31922b5ffb1a9fedad62d5b46a14adab5e09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930299"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097085"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>用于 Visual Studio Enterprise 的 IntelliTrace（C#、Visual Basic、C++）
 

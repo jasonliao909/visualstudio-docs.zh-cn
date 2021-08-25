@@ -8,14 +8,15 @@ ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d7046a08ac61ac0c23e98a47fb5eda75e38846c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 19585e36094868cedad279f0f7b4d982647da1d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874998"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091820"
 ---
 # <a name="xml-document-validation"></a>XML 文档验证
 

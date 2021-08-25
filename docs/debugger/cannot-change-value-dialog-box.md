@@ -18,14 +18,15 @@ ms.assetid: 19e930c2-5fbf-4c83-aae8-a1dc3f8fcae8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3dfedc12a1634e6f804c0cb3a9fceee9e9d43216
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcdb605421c1e18b6a27e5d93999dc6e3d2320f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857885"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129748"
 ---
 # <a name="cannot-change-value-dialog-box"></a>“无法更改值”对话框
 ## <a name="error"></a>错误

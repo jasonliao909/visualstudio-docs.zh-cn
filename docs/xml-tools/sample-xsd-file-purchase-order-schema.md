@@ -8,14 +8,15 @@ ms.assetid: f92b63b5-ec61-43b5-ae1e-63432a7a7e30
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 32140ce05761fa5b8a067dfde04b65efa2a91a66
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 145f3b71535baae809097df9ffa4f9293bd1d307
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951636"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098705"
 ---
 # <a name="sample-xsd-file-purchase-order-schema"></a>示例 XSD 文件：订单架构
 

@@ -9,15 +9,16 @@ helpviewer_keywords:
 - unit tests, and generics
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 16d1348d74bb459a73dd4a5a4f8de21e367865c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8870ac1bbfd7195ae850046279deaf9196ab450b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962491"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115247"
 ---
 # <a name="unit-tests-for-generic-methods"></a>泛型方法的单元测试
 

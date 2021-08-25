@@ -13,12 +13,13 @@ ms.assetid: a955b3d2-c8ad-40dd-8ea3-9f1a271e1eed
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: df32fa09b95a9adfbc245ff5c3ec3ab9fbabd1d6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 61b0fdf8ea07ba7ad5106fccdd3543228651cd2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092483"
 ---
 # <a name="how-to-import-load-test-results-into-a-repository"></a>如何：将负载测试结果导入存储库中
 

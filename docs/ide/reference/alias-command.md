@@ -16,14 +16,15 @@ ms.assetid: bdf857df-b5d5-450f-8c10-a6fd4dccc130
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a20a14cc0f48e86840b770aca934b188bf152dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f5c1b3f07a563484b70e36ed4257ee4dac005faf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969784"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101630"
 ---
 # <a name="alias-command"></a>“别名”命令
 为完整命令、完整命令和参数或另一个别名创建新别名。

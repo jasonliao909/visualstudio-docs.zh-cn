@@ -6,16 +6,17 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: f8ae039144d0c66f362b88cbbace142ccff77281
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 93b5541ace035fb9606355865974657faf83ec32
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106217978"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116859"
 ---
 # <a name="use-pattern-matching"></a>使用模式匹配
 

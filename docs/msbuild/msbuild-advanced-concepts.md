@@ -10,14 +10,15 @@ ms.assetid: f34a558a-ebd9-49bd-8510-32a2b581a4af
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c92a9270198fc7dfb5035afd35a1c92269450133
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e09a31f2bd105ea51d15466ad7fa9590f75ccbb2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918160"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115780"
 ---
 # <a name="msbuild-advanced-concepts"></a>MSBuild 高级概念
 

@@ -7,14 +7,15 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2b177092b04d5042f62dfd0b34d2bfbf4f1f0228
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f902d90de1260b1dde17bb4570a4841bd73bbe42
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933864"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094342"
 ---
 # <a name="add-file-header"></a>添加文件头
 

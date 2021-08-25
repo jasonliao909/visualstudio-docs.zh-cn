@@ -7,14 +7,15 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: c1e623bea0eab4b45aec3d331864db49a2787f8c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c48e062ec4187fad479f5013fb8786c7eb018cc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846343"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123965"
 ---
 # <a name="add-a-parameter-to-a-method-using-a-quick-action"></a>使用快速操作向方法添加参数
 

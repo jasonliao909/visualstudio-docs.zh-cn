@@ -11,14 +11,15 @@ ms.assetid: 1ae37275-96bf-4e6e-897b-6b048e5bbe93
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 64a45bae9665c0c39e9b709cec185f0434f3889b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f307143c89f36c62e45a08a98c78a7c9ba03d1ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914172"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108728"
 ---
 # <a name="how-to-use-reserved-xml-characters-in-project-files"></a>如何：在项目文件中使用保留的 XML 字符
 

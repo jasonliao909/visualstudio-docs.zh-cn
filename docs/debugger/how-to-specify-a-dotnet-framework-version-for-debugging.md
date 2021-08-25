@@ -16,14 +16,15 @@ ms.assetid: 7a4893ba-4620-4774-893f-378d4ca28893
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 83b30067530b9a48769879f3a222fee2afa725c0
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b434116a835f5e86e1e579a2e6fb4d4c9be1452e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112384663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128138"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>指定用于调试的早期 .NET Framework 版本（C#、Visual Basic、F#）
 

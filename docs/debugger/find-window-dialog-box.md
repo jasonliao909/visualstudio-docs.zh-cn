@@ -11,14 +11,15 @@ ms.assetid: ee733077-d17a-4439-8a49-bc2f5dbc60d0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 58812616e36a52668af908ec1af287579a1ca83f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 604074774c01a3b170f33bf263fd9e75ed0042a0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870735"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090882"
 ---
 # <a name="find-window-dialog-box"></a>“查找窗口”对话框
 使用此对话框以选择一个窗口并显示其属性或消息。 若要显示此对话框，从 **Spy** 菜单中选择 **查找窗口**。

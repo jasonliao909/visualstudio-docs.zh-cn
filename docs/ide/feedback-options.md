@@ -8,19 +8,18 @@ helpviewer_keywords:
 - product support [Visual Studio]
 - Help [Visual Studio], product support
 ms.assetid: e0846d4d-2ce1-48e3-b219-674ff070bf4e
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
-ms.openlocfilehash: 349483a672b8240f7ca622638221766d6da4864c
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 6fa96043ee54041f77bea01aa8dbad572be23daa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308150"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094355"
 ---
 # <a name="visual-studio-feedback-options"></a>Visual Studio 反馈选项
 

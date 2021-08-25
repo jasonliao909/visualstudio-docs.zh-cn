@@ -19,14 +19,15 @@ ms.assetid: c24c006f-f2ac-429f-89db-677fc0c6e1ea
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f2beccbc4004b9b36b7ff1c39b3ad60cc39120
-ms.sourcegitcommit: 24dd8fbdf88eca005e9f01328ab57150de37d432
+ms.openlocfilehash: 5a61a11c9aa7f9d2f6a3af54cd85d642b083916a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/01/2021
-ms.locfileid: "115014823"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129696"
 ---
 # <a name="create-custom-data-visualizers"></a>创建自定义数据可视化工具
 

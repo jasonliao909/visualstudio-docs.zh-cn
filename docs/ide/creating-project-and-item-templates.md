@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: e5a3a555a9c0674c70e93ec557416c05d282fbcf
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: f6f70f6daa549834cbc2bbe8874722de07d0ea76
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109430"
 ---
 # <a name="project-and-item-templates"></a>项目和项模板
 

@@ -17,14 +17,15 @@ ms.assetid: 1624e4af-018e-4b7c-9a00-063bfe97fb7d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 01b298d84bd626a73c0b21526281dc788f7e2f8b
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: c014b62e319ddad65a3ba5c22edae0e3bff73da8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387718"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112888"
 ---
 # <a name="debugging-web-applications-troubleshooting"></a>调试 Web 应用程序：疑难解答
 本节包含可用于解决错误的公共过程。

@@ -3,18 +3,18 @@ title: 管理 Docker Compose 项目的启动配置文件
 description: 了解如何使用 Docker Compose 启动配置文件，以及如何控制在 Visual Studio 中使用 Docker Compose 时要启动的服务。
 author: ghogen
 manager: jmartens
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e740ea3b7950c14bf11522c4e438a105b09eb7f6
-ms.sourcegitcommit: ab5735d64a6ad7aecabf5d6df159888e3246bff5
+ms.openlocfilehash: f1176a106abaad7a5806f91e0fbf8a515e6c20e4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111433696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105639"
 ---
 # <a name="manage-launch-profiles-for-docker-compose"></a>管理 Docker Compose 的启动配置文件
 

@@ -11,14 +11,15 @@ ms.assetid: d0bcfc3c-14fa-455e-805c-63ccffa4a3bf
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: ba6a71373026a5a41905efc7c91520a9f6b7c5c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1428019cad4c057c41721f30c9375a60c3cbc55f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878202"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108494"
 ---
 # <a name="msbuild-transforms"></a>MSBuild 转换
 

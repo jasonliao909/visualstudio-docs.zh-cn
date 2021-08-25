@@ -16,14 +16,15 @@ ms.assetid: 6f3a7d81-3ae3-4703-9a06-870b32b69d80
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f779fc5d222fdd0985adef203f0bb20fc601a429
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 488af4bb29292d428b33a526c92768906868dfc4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847941"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093484"
 ---
 # <a name="xsltransformation-task"></a>XslTransformation 任务
 

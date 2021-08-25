@@ -11,14 +11,15 @@ ms.assetid: 7d32c4cf-8bec-4307-a2a8-42f0ceddf3eb
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f3dcd034a76fbc371c95a2bbf386687830e3b63d
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: d95b640fc6daae8c9fe6734ab6cec5c73f96cd1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123653"
 ---
 # <a name="secure-applications"></a>安全应用程序
 
