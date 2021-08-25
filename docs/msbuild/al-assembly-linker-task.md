@@ -18,14 +18,15 @@ ms.assetid: 2ddefbf2-5662-4d55-99a6-ac383bf44560
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3d99c33a74512b380d7b5260d5b7e747c6a39e41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fa25fe5b06aa461b0628fff90a3a383228c9a5ca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055154"
 ---
 # <a name="al-assembly-linker-task"></a>AL（程序集链接器）任务
 

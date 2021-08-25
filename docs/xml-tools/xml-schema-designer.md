@@ -8,14 +8,15 @@ ms.assetid: ffdf63ee-faa6-45b7-bbf9-a5644dc8aca2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: daf4f145afe6b94884912ab974e96262b04f229a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ec18cce8cb99eccf4ae38bd3f49f14d8fce67b39
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946080"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135021"
 ---
 # <a name="xml-schema-designer-overview"></a>XML 架构设计器概述
 

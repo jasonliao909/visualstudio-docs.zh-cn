@@ -6,13 +6,13 @@ ms.date: 12/04/2018
 ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
-ms.manager: jillfra
-ms.openlocfilehash: a7089defb41c3ba8379d1020cbf1225d6333b912
-ms.sourcegitcommit: bbed6a0b41ac4c4a24e8581ff3b34d96345ddb00
+ms.manager: jmartens
+ms.openlocfilehash: 85d007ae7aec5bb56b85e4b1861845f81687dd68
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/03/2020
-ms.locfileid: "96560988"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785866"
 ---
 # <a name="team-explorer-reference"></a>团队资源管理器参考
 

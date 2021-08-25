@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 89a84198256657ae7f94d0a923780163bee73e48
-ms.sourcegitcommit: 5c0e20fc6005bc1f8ca38f4122378c4ac21ba89a
+ms.openlocfilehash: 528471301c1de6d44d5de6464fa24c81f13b8b36
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106110605"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054504"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 

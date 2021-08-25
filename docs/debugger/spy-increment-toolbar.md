@@ -10,14 +10,15 @@ ms.assetid: 949c18fb-bb25-42ed-9130-c4a47869f24d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: af6db0f367c73804197ef35d0b3734d68f15a332
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97c03fe68b810cbd7e907b4020b8487ae5c547f2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99903532"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030602"
 ---
 # <a name="spy-toolbar"></a>Spy++ 工具栏
 工具栏出现在 Spy++ 菜单栏下方。 若要显示或隐藏工具栏，请在“视图”菜单上单击“工具栏”。

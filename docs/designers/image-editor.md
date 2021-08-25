@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: bf8610f1db4b08d822d8a6c32172efde5efd0966
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47bcc37f0fe000066f8e2585098601b71e606a12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880289"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122133544"
 ---
 # <a name="image-editor"></a>图像编辑器
 

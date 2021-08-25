@@ -13,14 +13,15 @@ ms.assetid: 6ffd1554-7530-4da4-b5f5-e276a5034f3b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 50d0097debbd7e91906202b85e8e9e6dab36a27d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f693391cea9ccb17a5e5427d7508424c05c3d457
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957681"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048734"
 ---
 # <a name="set-radix-command"></a>“设置基数”命令
 设置或返回用来显示整数值的数值基数。

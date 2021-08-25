@@ -11,15 +11,16 @@ helpviewer_keywords:
 - unit tests, running
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - uwp
 author: mikejo5000
-ms.openlocfilehash: 52b7712c3e2e283dc92da3b920eccdcb0c312cd4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5db95d6125a923a8990af6cf9586f95de19c409d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948031"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122032792"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-uwp-apps"></a>演练：创建并运行 UWP 应用的单元测试
 

@@ -8,14 +8,15 @@ ms.assetid: 773dd34e-67d3-4997-8df9-b71e7f880d88
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 74b4cfebc7a6160577f1e817c9171f2eae69533c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4c6fa558a11966045865bd4da079d3266ed61a5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99874751"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135008"
 ---
 # <a name="xslt-default-templates"></a>XSLT 默认模板
 

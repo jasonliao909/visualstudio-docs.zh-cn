@@ -4,18 +4,18 @@ metadata:
   title: Azure 开发
   description: 关于将应用和服务连接到 Azure 以及开发 Azure 服务的教程和概念文章。
   author: ghogen
-  manager: jillfra
+  manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-azure
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: 18b59cf46e5a4c35b543c48cba60ae5135b91379
-  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+  ms.openlocfilehash: c0edb595d8e03495c43c76cd191dcf3ab01c4341
+  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "122082421"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "122785629"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:

@@ -12,14 +12,15 @@ ms.assetid: 442f33ef-9f52-4515-b55f-fb816d664645
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 57e218dadfe04d8cad034f2638ffefb9346e5a41
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 626ecc63152ca2ee46b2d2a132975c0039a02daf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99894590"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132101"
 ---
 # <a name="how-to-manage-word-wrap-in-the-editor"></a>如何：在编辑器中管理自动换行
 

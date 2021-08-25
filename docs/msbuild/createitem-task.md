@@ -18,14 +18,15 @@ ms.assetid: c4311f38-979e-4324-b524-9e8c1cbdc41a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f2d0e165171cb3619d3690e129e18f778504969e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c36723600d09adf622d7facf4e434bdea7714425
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901403"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054881"
 ---
 # <a name="createitem-task"></a>CreateItem 任务
 

@@ -7,17 +7,18 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ee5776e9fc39b77f8059146848d847e0976a5664
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9abfe9498d1b6bda0c9423566172395d0aca5096
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958279"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056233"
 ---
 # <a name="pull-members-up"></a>拉取成员
 

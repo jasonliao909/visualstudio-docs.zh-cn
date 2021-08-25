@@ -10,14 +10,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: b0418c8f3928ae2004055db7dfa70be123719377
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 01832b96a9505a9883896cc60027e2029d6b3b45
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048630"
 ---
 # <a name="xaml-designer-options-page"></a>XAML 设计器选项页
 

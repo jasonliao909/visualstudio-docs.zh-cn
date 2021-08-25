@@ -8,14 +8,14 @@ metadata:
   ms.technology: vs-javascript
   author: mikejo5000
   ms.author: mikejo
-  manager: jillfra
+  manager: jmartens
   ms.date: 10/15/2019
-  ms.openlocfilehash: 59307a58a3e6618d78ec76d3489a4e61ed6b3282
-  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+  ms.openlocfilehash: 31db0087a3261a39c344a26784eb33cf550e6623
+  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "122040484"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "122785642"
 landingContent:
 - title: 入门
   linkLists:

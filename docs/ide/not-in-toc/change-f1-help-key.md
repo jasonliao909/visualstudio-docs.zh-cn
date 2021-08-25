@@ -6,14 +6,15 @@ ms.topic: how-to
 ms.custom: contperf-fy21q1
 robots: noindex,nofollow
 manager: jmartens
+ms.technology: vs-ide-general
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 30073b31fb98f604313c8de5d45687f3f768a374
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 817c281bfbed2e21d390bfcfc7fae1ff1023b0fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99961685"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137348"
 ---
 # <a name="change-the-f1-help-key-in-visual-studio"></a>在 Visual Studio 中更改 F1 帮助键
 

@@ -17,14 +17,15 @@ monikerRange: vs-2019
 author: profexorgeek
 ms.author: jusjohns
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 101875b3a600a71c832498d05073187d2cf0b774
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1299810fa015f9e54d418209e13d366ff47bfb33
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99873900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048383"
 ---
 # <a name="use-visual-studio-search"></a>使用 Visual Studio 搜索
 

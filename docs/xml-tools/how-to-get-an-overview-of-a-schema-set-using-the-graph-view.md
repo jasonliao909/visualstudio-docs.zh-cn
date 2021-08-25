@@ -8,14 +8,15 @@ ms.assetid: c0df4b0d-52ef-4a6c-9676-1d8311aad7c7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 896522f6d7f057d359cb5502c42edf34d0a2d823
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1461653dff8e757ec462a3d47eb76ba7ed4f0ed5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897450"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135073"
 ---
 # <a name="how-to-get-an-overview-of-a-schema-set-by-using-the-graph-view"></a>操作说明：使用图形视图获取架构集概览
 

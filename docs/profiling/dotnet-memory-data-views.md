@@ -11,15 +11,16 @@ ms.assetid: 79184d8e-769b-4ace-be2b-521147772081
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1a60b51571d33a619cdc04c534f6b77fafcb584f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d5b4dd043d50135427042a435adf9465036265cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131659"
 ---
 # <a name="net-memory-data-views"></a>.NET 内存数据视图
 本部分包含有关视图的参考信息以及包含 .NET 内存分析数据的探查器数据文件的报告。

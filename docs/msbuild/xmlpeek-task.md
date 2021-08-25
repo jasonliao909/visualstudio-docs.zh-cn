@@ -16,14 +16,15 @@ ms.assetid: 19196031-a3bc-41b5-9c4a-f2572630e179
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d387d44ba06bb3a5a8ef5e73e2d8900b356996e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8bf7e5548223733574b49322dfca21a51d758de5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964857"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136581"
 ---
 # <a name="xmlpeek-task"></a>XmlPeek 任务
 

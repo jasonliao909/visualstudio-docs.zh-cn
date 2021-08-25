@@ -10,14 +10,15 @@ ms.assetid: 3d434de3-ee5f-419d-9a94-ac4ac02d635b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - azure
-ms.openlocfilehash: a77f1291621e84eb2e13075a791e9c6735447137
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d28bf31d5a7f7fe6a2bd095a0f96c76cccc35152
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857617"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031341"
 ---
 # <a name="debug-azure-services-in-visual-studio"></a>使用 Visual Studio 调试 Azure 服务
 

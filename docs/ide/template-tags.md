@@ -5,6 +5,7 @@ ms.date: 04/30/2019
 author: minsa110
 ms.author: somin
 manager: jmartens
+ms.technology: vs-ide-general
 ms.topic: reference
 helpviewer_keywords:
 - item templates, updating
@@ -13,12 +14,12 @@ helpviewer_keywords:
 - updating templates [Visual Studio]
 - template tagging, updating
 - template tags, updating
-ms.openlocfilehash: ac4757464d720ca50632833b3911f0d594e1becb
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 7d32fa2c4cd9327df22467646100be7da06e3a5b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222976"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048461"
 ---
 # <a name="add-tags-to-project-templates"></a>向项目模板添加标签
 

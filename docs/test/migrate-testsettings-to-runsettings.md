@@ -9,14 +9,15 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1cfe921777fa75d4f69251668934e8d78d9bec
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 749bb5e57770d76dfca69af40913d8d80c006679
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106087193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122047317"
 ---
 # <a name="upgrade-from--testsettings-to-runsettings"></a>从 .testsettings 升级到 .runsettings
 

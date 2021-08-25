@@ -5,17 +5,18 @@ ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 7746d8dd39bb4400a7779ad43e489cf6e7475fb9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f3ff4f40a42cfb7f4e3582abdb760af5dfffde9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841622"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045523"
 ---
 # <a name="create-an-ai-project-from-existing-code"></a>通过现有代码创建 AI 项目
 

@@ -13,12 +13,12 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.openlocfilehash: 2e5782c49f26925d9eda81f04653b1a20666c6b1
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: 3994f1bbbf707fad59907d0bd178f61a9629c32f498bb179f8edaa24ff1d2cf5
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89312090"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122058258"
 ---
 1. 在远程计算机上，从“开始”菜单中查找并启动“远程调试器” 。 
    

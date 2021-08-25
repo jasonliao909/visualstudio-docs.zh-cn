@@ -4,8 +4,6 @@ description: 了解如何向每个标签分配一个随机图标，从而使图�
 ms.custom: SEO-VS-2020
 ms.date: 03/21/2020
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -13,14 +11,15 @@ ms.assetid: 0ba5ed7a-9aaa-41f4-95d2-e3c2d567bc79
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 282f9ecc7b4f1f083eebe21c93a5bcc5c8fcc8d0
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: ecd824bcfe1fad320f42c8240530c0d480975c12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296451"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132062"
 ---
 # <a name="step-3-assign-a-random-icon-to-each-label"></a>步骤 3：向每个标签分配一个随机图标
 

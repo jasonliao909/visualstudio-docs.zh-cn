@@ -18,14 +18,15 @@ ms.assetid: 433cab30-d191-460b-96f7-90d2530ca243
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b6ad51d6b791def360f12b2d64e4ef6841c7bcda
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba25ff92131f9f044e0b81d25cf49e865563161b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872789"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134111"
 ---
 # <a name="debug-dlls-in-visual-studio-c-c-visual-basic-f"></a>在 Visual Studio 中调试 DLL 项目（C#、C++、Visual Basic、F#）
 

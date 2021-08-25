@@ -18,14 +18,15 @@ ms.assetid: 34bc7cd1-efd3-4b57-b691-4584eeb6a0e9
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d69f1e4960ad2f9e11b8ac0248033e5ff425262d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 07449cb310d3f362d32791c20d8e903481e68663
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905315"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027651"
 ---
 # <a name="output-element-msbuild"></a>Output 元素 (MSBuild)
 
@@ -49,7 +50,7 @@ ms.locfileid: "99905315"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`TaskParameter`|必需的特性。<br /><br /> 任务输出参数的名称。|
 |`PropertyName`|`PropertyName` 或 `ItemName` 特性是必需的。<br /><br /> 接收任务输出参数值的属性。 然后，项目可引用具有 $(\<PropertyName>) 语法的属性。 此属性名称可以是新属性名称，也可以是项目中已定义的名称。<br /><br /> 在已使用 `ItemName` 的情况下，不能使用该特性。|

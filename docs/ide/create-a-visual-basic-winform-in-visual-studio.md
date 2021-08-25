@@ -3,22 +3,21 @@ title: 使用 Visual Basic 创建 Windows 窗体应用
 description: 了解如何在 Visual Studio 中使用 Visual Basic 分步创建 Windows 窗体应用。
 ms.date: 09/27/2019
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 ms.devlang: vb
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d3c1aac5bb06ba29b1c70c39db900e704b2f3ec
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 46c23f0fb94286852b1f15e81fcb90ba5440e842
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308319"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056376"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 

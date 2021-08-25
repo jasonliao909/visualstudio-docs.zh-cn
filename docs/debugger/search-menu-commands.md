@@ -10,14 +10,15 @@ ms.assetid: f36dff9a-49ef-46ce-8c9a-76246458c0d0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fe9b432c2006038ba87ff92d8b84ed0bb4d743d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 256f506fa2355edcd93fce59c20a91995ddd0d18
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887492"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030524"
 ---
 # <a name="search-menu-commands"></a>“搜索”菜单命令
 “搜索”菜单提供用于搜索特定窗口的命令。

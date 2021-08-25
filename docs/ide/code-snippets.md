@@ -13,18 +13,19 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 - CPP
 ms.workload:
 - multiple
-ms.openlocfilehash: 642bfe9fdccaa607476facb792120502437cb4b8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: feb6da780d14404599254e6dafc021e3ce4e431f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841958"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056337"
 ---
 # <a name="code-snippets"></a>代码片段
 

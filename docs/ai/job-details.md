@@ -5,17 +5,18 @@ ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: 13d78913e0d5d708c5e75a80611ae9cc1c2f7366
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6377acf831db6ce7f14a2a3e7605f01777f49496
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841427"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045484"
 ---
 # <a name="view-recent-job-performance-and-details"></a>查看最近的作业性能和详细信息
 

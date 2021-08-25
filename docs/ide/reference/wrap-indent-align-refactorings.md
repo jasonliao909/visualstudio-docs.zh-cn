@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 7c218d914bc234533af674fc5d138a1c102d85c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 951bc8fa65991daaad2661744efd6bcbd17bdcd4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836263"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056064"
 ---
 # <a name="wrap-indent-and-align-refactorings"></a>自动换行、缩进和对齐重构
 

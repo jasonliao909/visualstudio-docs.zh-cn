@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 02baf454fe53a27e875d53cf983fce81a2c86874
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e650cc4d3bdcb9d7f0043c80e60620cdacae3e83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965026"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048760"
 ---
 # <a name="toolbox-html-tab"></a>“工具箱”->“HTML”选项卡
 

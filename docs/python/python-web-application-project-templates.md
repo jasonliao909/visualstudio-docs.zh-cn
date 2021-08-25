@@ -6,16 +6,17 @@ ms.topic: conceptual
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 159dc7cbab42fbfa8474e922f960f48bf0d2d7f0
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 5e587682bd8e4257d14c0c6602cf45255effeede
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592120"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054361"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 

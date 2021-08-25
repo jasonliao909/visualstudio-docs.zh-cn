@@ -8,14 +8,14 @@ metadata:
   ms.technology: vs-ide-deployment
   author: mikejo5000
   ms.author: mikejo
-  manager: jillfra
+  manager: jmartens
   ms.date: 09/17/2019
-  ms.openlocfilehash: f3ec7ac35844d149a63a76144f9fe6ba54db12e1
-  ms.sourcegitcommit: 86e98df462b574ade66392f8760da638fe455aa0
+  ms.openlocfilehash: b3786277fa8708bdd2d280f692773520749624d1
+  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 11/19/2020
-  ms.locfileid: "94903905"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "122785879"
 landingContent:
 - title: 关于部署
   linkLists:

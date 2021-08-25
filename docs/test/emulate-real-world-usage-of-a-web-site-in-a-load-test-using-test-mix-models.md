@@ -11,12 +11,13 @@ ms.assetid: b7fae849-0538-40d1-ab35-2bb3a0fe4393
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: e79d6e92df6f2b22fdced488b74f072b57fb8d84
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: a6d01648998e02797e4b7c069e2096aa54b3e353
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99887856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135788"
 ---
 # <a name="test-mix-models-overview"></a>测试组合模型概述
 

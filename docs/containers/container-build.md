@@ -4,14 +4,14 @@ author: ghogen
 description: 容器工具生成和调试过程概述
 ms.author: ghogen
 ms.date: 03/15/2021
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: conceptual
-ms.openlocfilehash: 6b860abeab0745ebae580e3020c94e446f2441c8
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: 60b6381ca90c4313fbd407eed9a709e7d49f1fc1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315948"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052988"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何构建容器化应用
 

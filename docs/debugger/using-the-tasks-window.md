@@ -17,14 +17,15 @@ ms.assetid: bd5e0612-a0dc-41cf-a7af-1e87d0d5c35f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fcae019e8854ecee9cdc553eedd3e9d2d0f28a63
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f4a804c88f48274f67debee492c3452fa4086004
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948578"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030485"
 ---
 # <a name="using-the-tasks-window-c-visual-basic-c"></a>使用“任务”窗口（C#、Visual Basic、C++）
 

@@ -2,21 +2,22 @@
 title: 创建单元测试方法存根
 description: 了解如何使用“创建单元测试”命令，以便通过它轻松配置测试项目、测试类和其中的测试方法存根。
 ms.custom: SEO-VS-2020
-ms.date: 07/26/2021
+ms.date: 08/19/2021
 ms.topic: how-to
 helpviewer_keywords:
 - unit testing, create unit tests
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 4edef0815b6923ea204c1a0d1890837ec9bead6c
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 35eb729b08e969ded00bb2f6eb428ccdfece1032
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703330"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603575"
 ---
 # <a name="create-unit-test-method-stubs-from-code"></a>从代码创建单元测试方法存根
 
@@ -28,7 +29,7 @@ ms.locfileid: "114703330"
 ::: moniker-end
 ::: moniker range=">=vs-2019"
 > [!NOTE]
-> “创建单元测试”菜单命令仅适用于 C# 代码  。
+> “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
 ::: moniker-end
 
 “创建单元测试”菜单命令可扩展，并可用于为 MSTest、MSTest V2、NUnit 和 xUnit 生成测试  。

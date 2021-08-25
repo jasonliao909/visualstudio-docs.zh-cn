@@ -10,12 +10,13 @@ ms.assetid: f66d5d43-4121-4487-b27f-d0a0baaf7601
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: bd7c23218fca3a501aa0c56684a4fea98d304252
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 917c83afd652a21e8edfbe094bf9d942ff0cfe46
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943765"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122135619"
 ---
 # <a name="how-to-specify-the-percentage-of-virtual-users-that-use-web-cache-data"></a>如何：指定使用 Web 高速缓存数据的虚拟用户的百分比
 

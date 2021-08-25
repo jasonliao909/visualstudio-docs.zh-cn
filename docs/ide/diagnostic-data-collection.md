@@ -4,17 +4,18 @@ description: 了解 Visual Studio 系统生成的日志、收集的数据类型�
 ms.custom: SEO-VS-2020
 ms.date: 05/24/2018
 ms.topic: conceptual
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d357b5e21ca86d7ccf11f576a15bbd0e7a90e466
-ms.sourcegitcommit: a339547aa2f4e0f64b7afbcc3e1ade0a4f9287d2
+ms.openlocfilehash: 1c273da8e1be162eccae100db817ab78c58f8582
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/01/2021
-ms.locfileid: "106171831"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028197"
 ---
 # <a name="system-generated-logs-collected-by-visual-studio"></a>由 Visual Studio 收集的系统生成的日志
 

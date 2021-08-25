@@ -23,14 +23,15 @@ ms.assetid: 9969e9b2-9008-4729-8a14-0d6deaa61576
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: c054d3bcfbb06d0093f04190ab8b4825b5cbf20f
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 327e8d74120555a4a121775f79b8ac5afe923f77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865795"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122052429"
 ---
 # <a name="create-custom-views-of-managed-objects-c-visual-basic-f-ccli"></a>创建托管对象的自定义视图（C#、Visual Basic、F#、C++/CLI）
 可以在调试器变量窗口中自定义 Visual Studio 显示数据类型的方式。

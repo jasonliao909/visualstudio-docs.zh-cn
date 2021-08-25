@@ -16,14 +16,15 @@ ms.assetid: 931a7597-b0f0-4a28-931d-46e63344435f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 11526639975924fd9984dce33a08e54c9a5405b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fd2bf1a08eeaf1467ae948c78f84d7bfbab67d12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122043942"
 ---
 # <a name="find-the-name-of-the-aspnet-process"></a>查找 ASP.NET 进程的名称
 

@@ -10,14 +10,15 @@ ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea3f441428f5edb214542116d6046e39dedcd293
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 0a857fc74fe76703361d260062c447f139cedc61
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703386"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122134177"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -83,7 +84,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 使用此按钮类似于设置临时断点。 此命令对于快速到达应用代码的可见区域也很方便。 你可在任何打开的文件中使用“运行到单击处”。
 
-## <a name="advance-the-debugger-out-of-the-current-function&quot;></a>使调试器从当前函数中跳出
+## <a name="advance-the-debugger-out-of-the-current-function"></a>使调试器从当前函数中跳出
 
 有时你可能希望继续调试会话，但在整个当前函数中一直使调试器前进。
 
@@ -91,11 +92,11 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 此命令将恢复应用执行（并使调试器前进），直到当前函数返回。
 
-## <a name=&quot;run-to-cursor&quot;></a>运行到光标处
+## <a name="run-to-cursor"></a>运行到光标处
 
 编辑代码（而不是在调试器中暂停）时，右键单击应用中的代码行，然后选择“运行到光标处”（或按 Ctrl 到 F10）。   此命令将启动调试并在当前代码行上设置临时断点。
 
-![运行到光标处](../debugger/media/dbg-tour-run-to-cursor.png &quot;运行到光标处")
+![运行到光标处](../debugger/media/dbg-tour-run-to-cursor.png "运行到光标处")
 
 如果设置了断点，则调试器会在其命中的第一个断点处暂停。
 

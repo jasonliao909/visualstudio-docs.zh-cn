@@ -11,14 +11,15 @@ ms.assetid: b04d1327-a45e-4c12-a0d0-67672b3fa855
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9947551fce9bc05b44c3d7f22a11966793b87e55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8ff06fbde43071dce911349babf0dd737bc6a48
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878677"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122028145"
 ---
 # <a name="how-to-change-text-case-in-the-editor"></a>如何：在编辑器中更改文本大小写
 

@@ -11,15 +11,16 @@ ms.assetid: aba875fe-9cbc-418d-a2c4-6eb47519a5bb
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: eccf44528b18d43a97a5a9c202c72b59abbdf431
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 859c0cb12e76b5e6a12235a51e01efdc8449e207
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466072"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131763"
 ---
 # <a name="da0023-high-gc-cpu-time"></a>DA0023：垃圾回收占用的 CPU 时间很多
 

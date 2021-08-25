@@ -8,14 +8,15 @@ ms.assetid: 7261e01d-3c72-46ce-9fb3-5f33b2ddb901
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 809b33fe3339da56507d09fcf15ec51481b751e0
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 15c232c89bf7f0a502bd98127498bc8047d01fda
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232487"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044023"
 ---
 # <a name="togglehud"></a>ToggleHUD
 打开或关闭图形诊断的 HUD（平视显示）覆盖。

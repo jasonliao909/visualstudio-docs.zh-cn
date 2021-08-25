@@ -7,16 +7,17 @@ ms.topic: overview
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: a7d0f5a683a627999076969dbc9077ba03d65208
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: de0bfdb24b3e1bb6377387385927256af8460d2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948552"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045562"
 ---
 # <a name="debugging-xslt"></a>调试 XSLT
 

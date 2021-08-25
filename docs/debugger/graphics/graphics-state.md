@@ -10,14 +10,15 @@ ms.assetid: 97e7757e-c372-4626-8149-99a81367a0e1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c6f909d7e250be193bb446d25cd4182d4f062ebe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a33f50be257c3e484d99ca6851d125f414edb424
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888597"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122138895"
 ---
 # <a name="graphics-state"></a>图形状态
 Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件（如绘图调用）时为活动状态的图形状态。
@@ -50,7 +51,7 @@ Visual Studio 图形诊断中的“状态”窗口可帮助你了解当前事件
 ### <a name="state-table-format"></a>状态表格式
  “状态”窗口显示了多个信息列。
 
-|列|说明|
+|列|描述|
 |------------|-----------------|
 |“属性”|状态项的名称。 如果此项表示状态的捆绑包，则可以展开该项以显示它。<br /><br /> 在“API 输入状态视图”和“逻辑状态视图”状态中，缩进名称以显示状态之间的层次结构关系 。<br /><br /> 在“固定状态视图”状态中，完全限定名显示在简单列表中。|
 |“值”|状态项的值。|

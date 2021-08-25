@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 9070e515fd59f7b29427f20322ef6cb1a01afaee
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f185cf57e118c923d8fbdfda6caa30a23059b9d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136438"
 ---
 # <a name="add-tier-interaction-data-from-the-command-line"></a>从命令行添加层交互数据
 

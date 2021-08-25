@@ -15,14 +15,15 @@ ms.assetid: 54e39838-2fc9-4dc2-85b6-7e88a743108e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4e446925b2ee46bc846a3edfbf09fb2eb695ce
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8e94f1d13bd880be5e7f2ceed83b2788af158ea1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912640"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137411"
 ---
 # <a name="how-to-visualize-a-collection-association-in-class-designer"></a>如何：在类设计器中可视化集合关联
 

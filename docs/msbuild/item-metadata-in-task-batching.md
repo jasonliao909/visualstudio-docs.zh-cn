@@ -13,14 +13,15 @@ ms.assetid: 31e480f8-fe4d-4633-8c54-8ec498e2306d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1675cf43cb9632d4480265f00a377c1f5c530b51
-ms.sourcegitcommit: c5f2a142ebf9f00808314f79a4508a82e6df1198
+ms.openlocfilehash: b3afd2b860d56fd78d01cf9509c7e3c75fc9c4e5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111395353"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136880"
 ---
 # <a name="item-metadata-in-task-batching"></a>任务批处理中的项元数据
 

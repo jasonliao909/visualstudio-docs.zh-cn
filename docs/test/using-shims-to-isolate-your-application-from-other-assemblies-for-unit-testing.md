@@ -6,16 +6,17 @@ ms.date: 11/04/2016
 ms.topic: how-to
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 author: mikejo5000
 dev_langs:
 - CSharp
 - VB
-ms.openlocfilehash: 72a976ccd487abdfa2c6501c0dcafee07dc5f4ae
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: 9bba159da05ad3e1c893c3fc241c44cd1c6de8d1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112042855"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122053971"
 ---
 # <a name="use-shims-to-isolate-your-app-for-unit-testing"></a>使用填充码隔离应用以进行单元测试
 

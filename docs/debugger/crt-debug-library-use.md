@@ -28,14 +28,15 @@ ms.assetid: 464de16b-4215-4787-9bfa-921aaff9d9f4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fe50082f8ff62c4a19b7725facc18f43d672e353
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b571f8cf47e78da939e67732b9676c7fc507e778
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99865704"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122031362"
 ---
 # <a name="crt-debug-library-use"></a>CRT 调试库使用
 C 运行时库提供了广泛的调试支持。 若要使用其中一个 CRT 调试库，则必须与 [/DEBUG](/cpp/build/reference/debug-generate-debug-info) 链接，并使用 /MDd  、/MTd  或 /LDd  进行编译

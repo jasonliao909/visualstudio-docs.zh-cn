@@ -8,15 +8,15 @@ metadata:
   ms.date: 02/24/2020
   author: madskristensen
   ms.author: madsk
-  manager: jillfra
+  manager: jmartens
   ms.prod: visual-studio-windows
   ms.technology: vs-ide-general
-  ms.openlocfilehash: bbdd5a58411b6cee96eb8521e5339fcf7bdf24f8
-  ms.sourcegitcommit: 4b29efeb3a5f05888422417c4ee236e07197fb94
+  ms.openlocfilehash: cc63b6d9b96e297b985e2eb3afe6a654e18b6a00
+  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/11/2020
-  ms.locfileid: "90011939"
+  ms.lasthandoff: 08/24/2021
+  ms.locfileid: "122785892"
 landingContent:
 - title: 开始使用
   linkLists:

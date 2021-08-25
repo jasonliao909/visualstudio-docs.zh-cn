@@ -18,14 +18,15 @@ ms.assetid: 3c6d58b0-36e8-47aa-bfca-b73dd2045d91
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 82275b14fbda0d63e6235b87b55a0dbb5f2416b0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c10b8818481e85cb83c7e293d90be793dd41880e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949423"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137142"
 ---
 # <a name="findunderpath-task"></a>FindUnderPath 任务
 

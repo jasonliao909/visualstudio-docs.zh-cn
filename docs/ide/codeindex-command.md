@@ -12,14 +12,15 @@ ms.assetid: b79568d4-6a64-4ca9-a1ee-3e57f92a9c5c
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 47875bcece910433a1d20ad66867acd7fdbee8d8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a16d1ec94ad958f7a93b061c23650148fe38398d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841915"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122056324"
 ---
 # <a name="codeindex-command"></a>CodeIndex 命令
 

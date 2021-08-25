@@ -10,14 +10,15 @@ ms.assetid: 8e3dc223-f9e5-4974-aa0e-5dc7967419cb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 754080defd50bc10af501fdbaf509bafe549dcbd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f56772bec8d0e4e62a58976b5c084f99c1e6f6e9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913973"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136893"
 ---
 # <a name="item-definitions"></a>项定义
 

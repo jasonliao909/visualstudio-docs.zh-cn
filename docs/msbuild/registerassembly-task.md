@@ -18,14 +18,15 @@ ms.assetid: ba5f19ac-6764-4d28-9b79-a86de58f8987
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 55625cb1611fec8ed0e8925a671e43505b96c2b9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dbcac044afdfa7439947ed1b4d22e466cb58391a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931835"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136685"
 ---
 # <a name="registerassembly-task"></a>RegisterAssembly 任务
 
