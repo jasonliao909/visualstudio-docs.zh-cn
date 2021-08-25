@@ -11,17 +11,18 @@ ms.assetid: 6f6b0b30-3996-4569-9200-20482b3adf90
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a29aed406d216e2fd72d9763cd9d0522f9cdd17
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dd3fa82e4309ed5a6aacd1f8218737f9db2db9a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951818"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034521"
 ---
 # <a name="how-to-split-a-class-into-partial-classes-in-class-designer"></a>如何：在类设计器中将类拆分为分部类
 

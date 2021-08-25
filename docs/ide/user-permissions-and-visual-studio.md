@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b3d2a22533137bf2c1f2e7cfeb3802f5824c3926
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.openlocfilehash: 1c0f1aa61371a3caecad6dbc30874db6299a2283
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607244"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061553"
 ---
 # <a name="user-permissions-and-visual-studio"></a>用户权限与 Visual Studio
 

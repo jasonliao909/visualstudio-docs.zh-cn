@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 11696d095623d27811b1fb02ef295350d9e33e1b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c4e91ce87d2bf3738fa4454b6f1410981fd7fc8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99898018"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086165"
 ---
 # <a name="environment-settings-for-visual-studio"></a>Visual Studio 的环境设置
 

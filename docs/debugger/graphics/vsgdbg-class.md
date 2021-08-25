@@ -7,14 +7,15 @@ ms.assetid: 6722263c-ccef-40c7-a0ae-87a863fbab00
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2bb3a9009c38da483b0792b89c115c2e8e9908eb
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: ff1383b8ff7fdf1557415cda2616ecbfd7d2585a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232448"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080853"
 ---
 # <a name="vsgdbg-class"></a>VsgDbg 类
 表示一个接口，用于以编程方式控制图形诊断的应用内组件。

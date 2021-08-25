@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: acfaf1f74f856bb90bfc16cacef20579abdcf8c2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 608870ed029eb15b205ae10da4c21daba04a8dea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886543"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069465"
 ---
 # <a name="manage-application-settings-net"></a>管理应用程序设置 (.NET)
 

@@ -9,14 +9,15 @@ f1_keywords:
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: d8005a427aeb0e07235c077d23f12906ab2d29ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cffc3b941bdecf6c7ff814be2c7cbef0be7e8ec7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062246"
 ---
 # <a name="options-text-editor-f-intellisense"></a>“选项”>“文本编辑器”>“F#”>“IntelliSense”
 

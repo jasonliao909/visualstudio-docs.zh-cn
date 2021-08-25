@@ -8,14 +8,15 @@ ms.assetid: fce2b708-1aef-454f-be59-52b76f359351
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 0bb4a293e4879838d53093b41cacf004b57de7e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1860fa79502701a0adaa233302d99092c7724dde
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99968601"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037728"
 ---
 # <a name="security-considerations-when-working-with-xml-data"></a>使用 XML 数据时的安全注意事项
 

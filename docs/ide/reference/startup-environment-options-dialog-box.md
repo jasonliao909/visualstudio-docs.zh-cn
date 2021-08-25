@@ -10,14 +10,15 @@ ms.assetid: 9d517203-3c62-4660-b7b4-ea7d032dcb1e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 62057dcc4b7410e31f5f27dc31976b49ee25a132
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 33058b950e7d9d0a3da0e3b12caf7592f4f54ced
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062051"
 ---
 # <a name="options-dialog-box-environment--startup"></a>“选项”对话框：环境 \> 启动
 

@@ -9,14 +9,15 @@ ms.assetid: d762eff4-c92a-4b5f-a944-1ca30aa22319
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d4bfc58c9be578514598fce2d447ef921d091177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 520349f829a696e2b34aef262efd01e937ad1998
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919066"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077226"
 ---
 # <a name="msbuild-items"></a>MSBuild 项
 

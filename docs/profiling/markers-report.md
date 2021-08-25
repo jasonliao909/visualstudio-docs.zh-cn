@@ -9,14 +9,15 @@ ms.assetid: 829ce099-172e-4c7e-bbd0-578b110c59bd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 3b674a2051a0b8b7b96a9c9bf0fb114f0fef46e1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a2a406279d8e9123d342cd63d648206fd35c7b5f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99876922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033312"
 ---
 # <a name="markers-report"></a>标记报告
 标记报告列出所显示时间范围内的标记。  平移、缩放或隐藏通道，可能会导致标记显示或消失。 报告中包含有关各个标记的以下信息：

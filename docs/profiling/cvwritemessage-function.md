@@ -26,14 +26,15 @@ ms.assetid: e20ae7be-bfa7-437a-b8c1-fa0f1baa7f83
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6e6b3724f3633ce03474ee9915b8d1a4b43a3d46
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 67e6b88c34520f805bffb7af5d12465d4f2ee427
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948122"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084436"
 ---
 # <a name="cvwritemessage-function"></a>CvWriteMessage 函数
 向并发可视化工具跟踪文件写入一条消息。

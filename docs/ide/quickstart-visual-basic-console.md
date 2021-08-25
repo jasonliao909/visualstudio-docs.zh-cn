@@ -3,23 +3,22 @@ title: 使用 Visual Basic 创建首个控制台应用
 description: 了解如何在 Visual Studio 中使用 Visual Basic 逐步创建简单的 Hello World 控制台应用。
 ms.custom: vs-acquisition
 ms.date: 03/23/2019
-ms.technology: vs-ide-general
-ms.prod: visual-studio-windows
 ms.topic: quickstart
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 658faaf5b044f1c4fed70fa62f205c2fa025f640
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: d468a47a2624040d96e915a84e84b406b1428af6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386236"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078266"
 ---
 # <a name="quickstart-create-your-first-console-app-in-visual-studio-with-visual-basic"></a>快速入门：使用 Visual Basic 在 Visual Studio 中创建第一个控制台应用
 
@@ -53,7 +52,7 @@ ms.locfileid: "112386236"
 
 2. 从顶部菜单栏中选择“文件”>“新建”>“项目”    。
 
-3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”  。 随后将项目命名为 HelloWorld。
+3. 在“新建项目”对话框左侧的窗格中，展开“Visual Basic”，然后选择“.NET Core”。 在中间窗格中，选择“控制台应用(.NET Core)”。 随后将项目命名为 HelloWorld。
 
    ![Visual Studio IDE 中“新建项目”对话框中的控制台应用 (.NET Core) 项目模板](../ide/media/new-project-vb-dotnetcore-helloworld-console-app.png)
 

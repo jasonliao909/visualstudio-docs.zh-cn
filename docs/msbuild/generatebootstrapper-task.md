@@ -18,14 +18,15 @@ ms.assetid: ca3ba2c6-d2ea-41f2-b7e3-0fc2b0730460
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 93dbe9d3bf49118328cb53dcd6602bb5fda77b13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b198b62a7931d2bb88e3194cc8f159d67602c98d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069246"
 ---
 # <a name="generatebootstrapper-task"></a>GenerateBootstrapper 任务
 

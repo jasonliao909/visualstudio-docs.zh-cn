@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cef610da1bcbfe7cb9c6c7ab5a806b74e07e177
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e67a0bde42854e39b21670e612ebf4b42015cf54
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99959410"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069452"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 

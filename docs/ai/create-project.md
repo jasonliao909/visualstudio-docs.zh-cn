@@ -5,17 +5,18 @@ ms.custom: SEO-VS-2020
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: how-to
 ms.workload:
 - multiple
-ms.openlocfilehash: dbef3f71678f899a41e7b4db7e1d8123952d4f75
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e1a9cbdd4449282076703134862178f3a866851f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841479"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122067720"
 ---
 # <a name="create-an-ai-project-from-a-template-in-visual-studio"></a>从 Visual Studio 中的模板创建 AI 项目
 

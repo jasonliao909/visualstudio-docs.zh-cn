@@ -11,15 +11,16 @@ ms.assetid: 5c4e8ec3-d0d3-485a-93bd-9060df4eb739
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c3a2f54f9cdd576a5c4d90c3a471febe516e6549
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44aaa125b464b90a101693f7dd6357123e6f7afa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950268"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084761"
 ---
 # <a name="call-tree-view---sampling-data"></a>“调用树”视图 - 采样数据
 “调用关系树”视图显示在分析应用程序中遍历的函数执行路径。
@@ -39,7 +40,7 @@ ms.locfileid: "99950268"
 
  设置根节点后，将从视图中排除所选节点的子树之外的所有其他条目。 若要将根节点重置回原始节点，请在“调用树视图”窗口中右键单击并选择“重置根节点”。
 
-|列|说明|
+|列|描述|
 |------------|-----------------|
 |**进程 ID**|分析运行的进程 ID (PID)。|
 |**进程名**|进程的名称。|

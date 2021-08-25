@@ -7,16 +7,17 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: bc3b80ad625c58fbe9127978ebc23fd8c764f4d3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4fddd4ef64c27ccc41b7fcc640d80570105c1db4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99889897"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040952"
 ---
 # <a name="use-expression-body-or-block-body-for-lambda-expressions"></a>将表达式主体或程序块主体用于 lambda 表达式
 

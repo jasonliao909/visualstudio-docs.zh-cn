@@ -24,14 +24,15 @@ ms.assetid: 1fb48027-d870-439f-8b72-4a0321390748
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 112fbd727f28ce1dd3f72626c03e3cc6594da213
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 88d615cc82de737fda485a5a179ac14e0a92f607
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99935880"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086074"
 ---
 # <a name="how-to-manage-editor-modes"></a>如何：管理编辑器模式
 

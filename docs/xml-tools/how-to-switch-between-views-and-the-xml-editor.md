@@ -8,14 +8,15 @@ ms.assetid: cb69fbbd-d99c-439e-9498-5df9050f8df0
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: e14947bfb31fbf6fcb2246223a2394194a45035e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1a6f9be548b725aa664cd6223ee2eb9891c77fdc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970967"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037741"
 ---
 # <a name="how-to-switch-between-views-and-the-xml-editor"></a>如何：在视图和 XML 编辑器之间切换
 

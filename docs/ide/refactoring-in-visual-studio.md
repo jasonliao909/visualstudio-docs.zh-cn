@@ -1,5 +1,5 @@
 ---
-title: Refactoring
+title: 重构
 description: Visual Studio 中最常见的重构，其中包含说明和示例。
 ms.date: 01/10/2018
 ms.topic: conceptual
@@ -11,14 +11,15 @@ ms.devlang: CSharp
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8c1399689b2df82102a193b5ab698c0cd9bd2f7a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 65eb2f7992e15751fe67380423cd5999f03b5011
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078162"
 ---
 # <a name="refactor-code"></a>重构代码
 
@@ -32,7 +33,7 @@ ms.locfileid: "99939781"
 - 有关重构 C++ 代码的信息，请参阅[编写和重构代码 (C++)](/cpp/ide/writing-and-refactoring-code-cpp)。
 - [Visual F# Power Tools](https://marketplace.visualstudio.com/items?itemName=FSharpSoftwareFoundation.VisualFPowerTools)（第三方 Visual Studio 扩展）提供 F# 的重构支持。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [快速操作](../ide/quick-actions.md)
 - [Visual Studio IDE](../get-started/visual-studio-ide.md)

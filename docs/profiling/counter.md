@@ -8,15 +8,16 @@ ms.assetid: aa4b4cdb-e6ea-433a-9579-56f3785e1385
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c465e85337be017679d1a4994d84f911564cb66e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b1d49ac97d783457634a82705033ac7a2d043d84
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958981"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039275"
 ---
 # <a name="counter"></a>计数器
 “计数器”选项从处理器（硬件）性能计数器收集数据。

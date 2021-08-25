@@ -10,14 +10,15 @@ ms.assetid: 2bf5c12e-2a00-401c-8163-4e373d08ad3f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 61cc2737fbe6bdbcb331da4e1d27a77d356735aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d7a86d93e49f92734bcccd9eefab6ed498734479
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888649"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058548"
 ---
 # <a name="graphics-pipeline-stages"></a>图形管道阶段
 “图形管道阶段”窗口可帮助了解 Direct3D 图形管道的每个阶段如何转换各个绘图调用。

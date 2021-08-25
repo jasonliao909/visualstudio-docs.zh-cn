@@ -8,14 +8,15 @@ ms.assetid: b9fbc8fa-66d1-4055-8460-24d8b8fbe43e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 21d3b402bbffd9528755098131ff9ed1ee636906
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 37a5d3b0766013b127aa939943f7811202d935db
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99908155"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035340"
 ---
 # <a name="work-with-textures-and-images"></a>使用纹理和图像
 

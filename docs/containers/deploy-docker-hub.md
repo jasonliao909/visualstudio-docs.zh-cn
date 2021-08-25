@@ -3,18 +3,18 @@ title: 将 ASP.NET Core Linux Docker 容器部署到 Docker Hub | Microsoft Docs
 description: 了解如何使用 Visual Studio 容器工具将 ASP.NET Core Web 应用部署到 Docker Hub
 author: ghogen
 manager: jmartens
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.devlang: dotnet
 ms.topic: how-to
 ms.date: 07/23/2019
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: e51088d135d0d2cdcc5d1bcca71f72fed8b73fd2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2fe4c9a1ac39ed090eae657c02ea8417002a2473
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99867654"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059328"
 ---
 # <a name="deploy-to-docker-hub"></a>部署到 Docker Hub
 

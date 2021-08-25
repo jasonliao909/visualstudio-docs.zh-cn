@@ -12,15 +12,16 @@ ms.assetid: c1f46f77-eb95-42e5-b340-d86bc9de41b4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b93bbbcb2026ad6f7ef0d25dc359eb211a6c85f
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: c181aa99ce1005bf3909cf7f5c9a59a409b15990
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469944"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076706"
 ---
 # <a name="da0003-many-kernel-samples"></a>DA0003：大量内核样本
 

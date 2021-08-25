@@ -8,16 +8,17 @@ ms.assetid: 668a6603-5082-4c78-98e6-f3dc871aa55b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 dev_langs:
 - C++
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 93d5783620c11d6de80e3ad381c456afd1fcd99a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 497348f4df25a3c26ce20617f00ac3f79e806e27
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964844"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084579"
 ---
 # <a name="custom-native-etw-heap-events"></a>自定义本机 ETW 堆事件
 

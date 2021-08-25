@@ -16,14 +16,15 @@ ms.assetid: 1d2514b4-5bef-43bb-bebe-496da8ef063c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 1bdab6066ce93475a2f6bb193c67da87c4fcaddd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6bfd357776428a9fbf08f15e82b796bd0ca0195f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99888077"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039899"
 ---
 # <a name="writecodefragment-task"></a>WriteCodeFragment 任务
 
@@ -44,7 +45,7 @@ ms.locfileid: "99888077"
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

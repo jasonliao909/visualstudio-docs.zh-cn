@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e2ff53ecf1e3f3b377180fe85f972dca665b81f5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 97cd6a5d85cd35c4365d9a71c97b8b2d20e05153
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909150"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078214"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 无法恢复的处理器错误
 

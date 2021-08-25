@@ -11,15 +11,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 401b054c6bfa7ed2bee376c260a3eb3843d6f1c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 609e70ff9414390b047d9c3af43cd2928761ca41
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076394"
 ---
 # <a name="performance-explorer"></a>性能资源管理器
 

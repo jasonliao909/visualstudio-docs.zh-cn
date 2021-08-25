@@ -13,15 +13,16 @@ ms.assetid: 96d06843-b97e-45a8-8126-07478a40bfc4
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
 monikerRange: vs-2017
-ms.openlocfilehash: af27524b9b057e1a7dc852bd10d7acd23cf8bd04
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 475b6dad983bf196a094399da38a644f55170384
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901244"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077018"
 ---
 # <a name="analyze-energy-use-in-uwp-apps"></a>分析 UWP 应用中的能量使用
 
@@ -48,10 +49,10 @@ Visual Studio 的“能耗”探查器可以帮助你分析低功率平板设备
 
 例如，平板电脑中充满电的电池存储了一定数量的能量。 当能量用于执行网络通信、计算值或显示图像等任务时，电池的功率以不同的速率消耗。 对于任意一段时间，消耗的功率的总和还可按能量进行衡量。
 
-## <a name="identify-scenarios-with-user-marks"></a>用用户标记标识方案
+## <a name="identify-scenarios-with-user-marks&quot;></a>用用户标记标识方案
  可以向分析数据添加“用户标记”  以帮助标识时间线标尺中的区域。
 
- ![时间线中的用户标记](../profiling/media/profilers_usermarktimeline.png "PROFILERS_UserMarkTimeline")
+ ![时间线中的用户标记](../profiling/media/profilers_usermarktimeline.png &quot;PROFILERS_UserMarkTimeline")
 
  每次执行此方法时，标记将显示为时间线中的橙色三角形。 将鼠标指针悬停在该标记上时，将以工具提示的形式显示消息和时间。 如果有两个或更多个用户标记靠近在一起，则将合并这些标记，而且还将组合工具提示数据。 可以放大时间线来分隔标记。
 

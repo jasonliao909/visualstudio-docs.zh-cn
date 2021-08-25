@@ -11,14 +11,15 @@ ms.assetid: 15a048c8-5ad3-448e-b6e9-e3c5d7147ed2
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 70b0d85ea161a3f938013c01702dd2ccce73a31d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5a4bb47a8519839ab33344764a5bbdcfb03e5f4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956095"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084800"
 ---
 # <a name="standard-and-custom-toolset-configurations"></a>标准和自定义工具集配置
 

@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a4947562eb49501e60711111d8765716cbae5c6
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 9f601c3245aaf61957f10c5adbd8f9a602256450
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061883"
 ---
 # <a name="toolbox"></a>工具箱
 

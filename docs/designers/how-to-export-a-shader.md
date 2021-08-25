@@ -8,14 +8,15 @@ ms.assetid: 0bd48bf4-9792-4456-a545-e462a2be668d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 7f4abcdf5648031be9b76ba3f25e0a8f33d4efba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b4559c7c8e2e5c77731e6a43e006556cf3ba4d75
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930962"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035522"
 ---
 # <a name="how-to-export-a-shader"></a>如何：导出着色器
 

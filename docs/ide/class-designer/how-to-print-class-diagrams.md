@@ -11,14 +11,15 @@ ms.assetid: 62c87425-3446-41fb-943c-1f86397883c8
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c07bbdb23493bac0612bd1199cb1e5d3331607e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f7b317710a1300f8481f57b936e21eadee36060f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951792"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041394"
 ---
 # <a name="how-to-print-class-diagrams"></a>如何：打印类图
 

@@ -11,14 +11,15 @@ ms.assetid: 0eac1b54-2711-4e4b-9654-a0c429c08c8f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 0af2717efec7cab8594f193c06e8813bd556b01f
-ms.sourcegitcommit: c3713f284c4fe10b10996d5eb67077ddd8641424
+ms.openlocfilehash: 539c3f9bbd59de6bc1df1bf60f39d96b1b1f439b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112375781"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069503"
 ---
 # <a name="how-to-add-class-diagrams-to-projects"></a>如何：向项目添加类图
 

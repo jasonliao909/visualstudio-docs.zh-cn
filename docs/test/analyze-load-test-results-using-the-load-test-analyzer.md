@@ -12,12 +12,13 @@ ms.assetid: 8a4ba300-425d-447c-91d9-c53f4345feee
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 4151d4c9546795dbd87773315b4b135538ca3bbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 3c32efc335441b57ff23fe55b5619297e50bf700
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948057"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083968"
 ---
 # <a name="analyze-load-test-results-using-the-load-test-analyzer"></a>使用负载测试分析器分析负载测试结果
 

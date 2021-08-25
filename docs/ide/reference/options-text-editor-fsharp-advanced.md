@@ -9,14 +9,15 @@ f1_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 42398657a896b823637d8235c859b5802812a112
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8849e7d3eb3acf1b30fff2cb44b21ad0b8cbd254
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99943921"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062259"
 ---
 # <a name="options-text-editor-f-advanced"></a>“选项”>“文本编辑器”>“F#”>“高级”
 

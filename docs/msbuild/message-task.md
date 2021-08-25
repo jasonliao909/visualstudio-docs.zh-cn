@@ -18,14 +18,15 @@ ms.assetid: 2293309d-42b6-46dc-9684-8c146f66bc28
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: eb2a1837210a5f36577d3bf677a4152033914f49
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0b9ee3a2514d89c5b2d436666b2ff512feb8a1b4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918239"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077200"
 ---
 # <a name="message-task"></a>Message 任务
 
@@ -35,7 +36,7 @@ ms.locfileid: "99918239"
 
  下表描述了 `Message` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`Importance`|可选 `String` 参数。<br /><br /> 指定消息的重要性。 此参数的值可以是 `high`、`normal` 或 `low`。 默认值为 `normal`。|
 |`Text`|可选 `String` 参数。<br /><br /> 要记录的错误文本。|

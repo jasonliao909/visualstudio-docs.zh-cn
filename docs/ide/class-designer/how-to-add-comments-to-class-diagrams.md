@@ -14,14 +14,15 @@ ms.assetid: d54005d5-a29d-4c4e-b153-feb6e84dd44f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e86c1dae7716c59e235005867cd9b09c67f8af2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5d9027be75114729ea49c427a2429f0904923e3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850316"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062519"
 ---
 # <a name="how-to-add-comments-to-class-diagrams"></a>如何：向类图添加注释
 

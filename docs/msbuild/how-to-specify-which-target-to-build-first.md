@@ -12,14 +12,15 @@ ms.assetid: a580ba5b-2919-42d2-ae38-1af991e0205a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f41c9fec5b5ce9b6e4716c83edf9cd9f43e0eb94
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26d5c3f4095dec633b853e6cb6cd141975b9cc11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914206"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069188"
 ---
 # <a name="how-to-specify-which-target-to-build-first"></a>如何：指定首先生成的目标
 
@@ -76,7 +77,7 @@ ms.locfileid: "99914206"
 
      `msbuild <file name>.proj -t:Clean;Compile`
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [MSBuild](../msbuild/msbuild.md)
 - [目标](../msbuild/msbuild-targets.md)

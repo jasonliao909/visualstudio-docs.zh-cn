@@ -12,14 +12,15 @@ ms.assetid: 8d82d7d8-a2f1-4df6-9d2f-80b9e0cb3ac3
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: fa0f03869f61ef55e5a2346135c32dc0a5d7bbf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 41e4ae9e1c174f95c36c05c50d3d7e88e2bd369f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914505"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085073"
 ---
 # <a name="how-to-build-incrementally"></a>如何：增量生成
 

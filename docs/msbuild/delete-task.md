@@ -18,14 +18,15 @@ ms.assetid: 916bb2e3-3017-4828-ae27-c0b5c99bbb48
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 09945306a2260bed5b264d380dcea745ff3f7c07
-ms.sourcegitcommit: 8fb1500acb7e6314fbb6b78eada78ef5d61d39bf
+ms.openlocfilehash: 1a56c62a9696b881895d233bea89f8e04de78697
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2021
-ms.locfileid: "113280424"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077642"
 ---
 # <a name="delete-task"></a>Delete 任务
 

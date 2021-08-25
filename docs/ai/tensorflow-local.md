@@ -5,18 +5,19 @@ keywords: ai, visual studio, tensorflow, 本地
 author: jillre
 ms.author: jillfra
 manager: jmartens
+ms.technology: vs-ai-tools
 monikerRange: vs-2017
 ms.date: 11/13/2017
 ms.topic: quickstart
 ms.devlang: python
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ceb21701958630c8b783d5b6850c5e0a0ab229a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d1e27999af1c467f0231c28a6f1ea53fb4c466a6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841375"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037559"
 ---
 # <a name="train-a-tensorflow-model-locally"></a>在本地训练 TensorFlow 模型
 
@@ -24,7 +25,7 @@ ms.locfileid: "99841375"
 
 MNIST 数据库具有包含 60,000 个示例的训练集，以及包含 10,000 个手写数字示例的测试集。
 
-## <a name="prerequisites"></a>系统必备
+## <a name="prerequisites"></a>先决条件
 
 开始之前，确保安装了以下各项：
 
@@ -46,15 +47,15 @@ C:\>pip.exe install tensorflow
 
 - 启动 Visual Studio，选择“文件”>“打开”>“项目/解决方案”。
 
-- 在下载的示例存储库中选择 Tensorflow Examples 文件夹，然后打开 TensorflowExamples.sln 文件。
+- 在下载的示例存储库中选择 Tensorflow Examples 文件夹，然后打开 TensorflowExamples.sln 文件 。
 
    ![打开项目](media/tensorflow-local/open-project.png)
 
    ![打开解决方案](media/tensorflow-local/open-solution.png)
 
-- 在“解决方案资源管理器”中找到 MNIST 项目，右键单击并选择“设为启动项目”。
+- 在“解决方案资源管理器”中找到 MNIST 项目，右键单击并选择“设为启动项目” 。
 
-- 单击“开始” 。
+- 单击“开始”。
 
 - 输出会在控制台中进行打印。
 

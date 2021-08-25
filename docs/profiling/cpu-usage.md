@@ -8,14 +8,15 @@ ms.assetid: 7501a20d-04a1-480f-a69c-201524aa709d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a223a2007d62b84f06191c71523b861f94efe3d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2e8db1683fa44ffa75ba6e0ac6aa1a5101c812c8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956121"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039301"
 ---
 # <a name="analyze-cpu-usage-without-debugging-in-the-performance-profiler"></a>在不进行调试的情况下分析性能探查器中的 CPU 使用情况
 

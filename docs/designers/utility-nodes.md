@@ -8,14 +8,15 @@ ms.assetid: ff732221-b731-424c-ad5b-82ef5f21dff5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: eceb17bf2e393d8526cff3b366fc2772d79607a8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 924ab14d01c82879ae728b2acb6323740dce49bb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99948513"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035444"
 ---
 # <a name="utility-nodes"></a>实用程序节点
 

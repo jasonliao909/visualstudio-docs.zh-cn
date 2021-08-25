@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 05/23/2018
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: b6ceee76d8c24ccddb41e47c0865d96c79e6fc32
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 36effcf08969c5233eaee54578c9f5e3101528b96e41cb7cbf6c0025c1f7c56b
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249819"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122058379"
 ---
 1. 在“解决方案资源管理器”  中，右键单击项目节点并选择“发布”  （对于 Web Forms，选择“发布 Web 应用”  ）。
 

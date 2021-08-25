@@ -4,18 +4,19 @@ ms.date: 11/16/2020
 ms.custom: ''
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 中使用 GitHub 帐户。
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 9f55a233cc2550cd452851edc9092b4b2f4f2411
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 8d175297f866ed09c00fcc38b635ab1c071f4284
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296360"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077928"
 ---
 # <a name="work-with-github-accounts-in-visual-studio"></a>在 Visual Studio 中使用 GitHub 帐户
 
