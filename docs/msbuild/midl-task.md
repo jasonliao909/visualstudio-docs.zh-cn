@@ -26,14 +26,15 @@ ms.assetid: 727efa8c-3336-40b8-8bef-ae6cbd77a422
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: eadec17e7c5221f0b169d38b15b9601cec746fa4
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: 89d9469c2e81572f66a70b5f61881b4baa9fde68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105094973"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108663"
 ---
 # <a name="midl-task"></a>MIDL 任务
 

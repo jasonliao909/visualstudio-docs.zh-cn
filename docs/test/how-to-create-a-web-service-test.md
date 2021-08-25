@@ -12,12 +12,13 @@ ms.assetid: fbcd57ee-06ad-4260-8694-09f8e0f93e39
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 2d368ca7cbe64f2c0e8c8dc5e18e5f3c7145274c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: b41f17b50c359ff7ff8f14bac99d783520a8bc5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99949839"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092496"
 ---
 # <a name="how-to-create-a-web-service-test"></a>如何：创建 Web 服务测试
 

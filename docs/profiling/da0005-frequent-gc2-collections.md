@@ -12,15 +12,16 @@ ms.assetid: 8d3f267c-8a74-4cf4-91a5-0b06a76dc2bd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 73b24eba94791a9a24b80898fb7333665ed13caf
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b2e98e7212a1ed5441b2c1ccc779f9e5afff20ff
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102221023"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093276"
 ---
 # <a name="da0005-frequent-gc2-collections"></a>DA0005：频繁进行 GC2 收集
 

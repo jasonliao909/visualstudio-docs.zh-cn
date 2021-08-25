@@ -7,15 +7,16 @@ ms.assetid: 9a1c934c-4798-4df9-a8ef-eb17ef06b6a2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: c1d37686ff8bde7824fe27a3d2084dada9e758c3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0a12e90b25411e05985e80230c36cfb9452cc902
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922124"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107129"
 ---
 # <a name="performance-rules-by-id"></a>按 ID 排序的性能规则
 

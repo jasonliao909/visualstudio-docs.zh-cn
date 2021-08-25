@@ -13,12 +13,13 @@ ms.assetid: 0c0fcc99-673b-4ea0-a268-0475f66e5cb6
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 040ca84d5da9019da87f0dfddc89cfc6b1aa043e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: b32cf0afed7d9a87babe34b0ebfeb781788f4504
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99964441"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115286"
 ---
 # <a name="create-custom-code-and-plug-ins-for-load-tests"></a>为负载测试创建自定义代码和插件
 

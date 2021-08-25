@@ -10,14 +10,15 @@ ms.assetid: 22993182-7026-4155-8046-b84fd99f803c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 852eaf8dad8160566656d20189ada99378b63a0d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 90f939e62783cb2b3189cb04783f84fd3dcffa41
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877663"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128372"
 ---
 # <a name="how-to-expand-and-collapse-spy-trees"></a>如何：展开和折叠 Spy++ 树
 可以使用两种方法展开和折叠窗口、进程和线程视图：单击窗口中的图标或使用“树”菜单。 树中 + 和 - 图标的用途与它们在 C++ 项目窗口中的用途相同。

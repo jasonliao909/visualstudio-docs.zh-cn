@@ -9,20 +9,20 @@ ms.custom:
 - vs-acquisition
 - vs-get-started
 - SEO-VS-2020
-author: TerryGLee
+author: anandmeg
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: tglee
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 17f4d80e82a24b5fe4692482c37fcbfa615ee4f9
-ms.sourcegitcommit: 7393a37ce77c5b80312ce787baa060c91d41d959
+ms.openlocfilehash: 2f2c29344f4330c4d81f17b3c99652003fd1c510
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113113659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109872"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 

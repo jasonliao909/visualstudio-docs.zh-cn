@@ -11,14 +11,15 @@ ms.assetid: ca07f388-e5d5-46fd-b991-fe6e9029a68f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5223c466674ba0d7d623cc33a3989d359bbabea2
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: adf3b3b6efd6e1c0df4c8cd45c0d0bb9c6f2196d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223883"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107381"
 ---
 # <a name="marker_serieswrite_flag-method"></a>marker_series::write_flag 方法
 向并发可视化工具跟踪文件写入一个标志。

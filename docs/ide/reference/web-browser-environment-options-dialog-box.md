@@ -21,14 +21,15 @@ ms.assetid: 586db4eb-032d-4cb5-93a6-a7c14de1ae49
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c87077005ae2ebbcc8fba92c9f1dc09f17bb3157
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5e6c44f1a341d6a07691540060e50c2b0c867ae9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99836210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116833"
 ---
 # <a name="options-dialog-box-environment--web-browser"></a>“选项”对话框：环境 \> Web 浏览器
 

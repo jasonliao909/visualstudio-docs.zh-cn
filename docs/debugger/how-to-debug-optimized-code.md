@@ -21,14 +21,15 @@ ms.assetid: fc8eeeb8-6629-4c9b-99f7-2016aee81dff
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 19b09831aea0f7e38c7d095c1e549496569405c9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3d58233f606c3060a1a78f8cfd0a1c3b4c0334de
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99899298"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128594"
 ---
 # <a name="how-to-debug-optimized-code"></a>如何：调试优化的代码
 

@@ -8,14 +8,15 @@ ms.assetid: c42ddac8-b0e3-48d6-9832-112a19d6c104
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 885b699a7a71011b5e7445101aa78b0e26193802
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a9e1b5d1ebd573f74762d86717118138adea23d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130190"
 ---
 # <a name="how-to-examine-the-content-model-of-nodes-by-using-the-content-model-view"></a>操作说明：使用内容模型视图检查节点的内容模型
 

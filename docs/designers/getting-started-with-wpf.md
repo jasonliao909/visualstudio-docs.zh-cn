@@ -8,14 +8,15 @@ ms.assetid: f3be98cb-870f-472c-9da5-cb815e4f6598
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bdcff111660b34d5cde2d21d48ffeab022d124d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ddc7e0149dcae4e1410239fb30d4db70090c9610
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917050"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104880"
 ---
 # <a name="get-started-with-wpf"></a>WPF 入门
 

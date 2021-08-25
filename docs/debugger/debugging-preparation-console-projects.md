@@ -17,14 +17,15 @@ ms.assetid: 9641f1d9-2d5a-48b1-8731-6525e8f67892
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4d1610919667fdaf1a752ca56aef5358c0bd34f3
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: e627e88eb1dbfefe710233eb0136bbe650c782e8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112387809"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097410"
 ---
 # <a name="debugging-preparation-console-projects-c-c-visual-basic-f"></a>调试准备：控制台项目（C#、C++、Visual Basic、F#）
 

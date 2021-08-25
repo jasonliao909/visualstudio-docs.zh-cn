@@ -18,14 +18,15 @@ ms.assetid: c9bf5fcf-6453-40ea-b50f-a212adc3e9b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0384ee6cbfa749589e15ab073cc31ffebb53985e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 17e2db139df6ffd09efb43edb2cdb4e358231a1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99912527"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108390"
 ---
 # <a name="resolvecomreference-task"></a>ResolveComReference 任务
 

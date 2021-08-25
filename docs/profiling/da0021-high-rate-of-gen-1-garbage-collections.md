@@ -11,15 +11,16 @@ ms.assetid: ebf5d9b3-a1ac-4688-8f0f-39a85f4dd15f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: fb59c3581bf5064b7001a273232e62b731b8763f
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: 1ed53e6999c07f712268be9163f8baa1225e2341
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223688"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093250"
 ---
 # <a name="da0021-high-rate-of-gen-1-garbage-collections"></a>DA0021：第 1 代垃圾回收率高
 

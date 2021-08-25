@@ -10,14 +10,15 @@ ms.assetid: f4cea2e1-08dc-47ac-aba2-3b8c338e607f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: f790d30dc97d5549737c3c1cd003086477ce984f
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: b6b1bf99c7961c2ca8a9d162e2de173a9dd0a41c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101683015"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112576"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -30,7 +31,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
     ::: moniker range=">=vs-2019"
     如果开始窗口未打开，请选择“文件” > “开始窗口” 。 在“开始”窗口上，选择“创建新项目”  。
 
-    在“创建新项目”窗口的搜索框中输入或键入“控制台”。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows 。
+    在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows 。
 
     应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用”模板，然后选择“下一步” 。
 

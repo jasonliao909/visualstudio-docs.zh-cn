@@ -8,14 +8,15 @@ ms.assetid: 3dbc3247-00f5-4644-8ff9-72e9febcf09a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: fb8d00d68a61fd2e97740ee46f92433ea34abb65
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: bf619c6f9499916971620e3d428cf3545fd4cea1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232838"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121095"
 ---
 # <a name="1x1-viewport-size-variant"></a>1x1 视口大小变量
 将所有呈现器目标上的视口尺寸缩小为 1x1 像素。

@@ -1,7 +1,7 @@
 ---
 title: 在 Windows 上排查 Docker 客户端错误 | Microsoft Docs
 description: 在 Windows 上通过使用 Visual Studio 排查在使用 Visual Studio 创建 Web 应用并将其部署到 Docker 时遇到的问题。
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 author: ghogen
 manager: jmartens
 ms.custom: seodec18
@@ -11,12 +11,12 @@ ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 5f48b5c06e91b9c05e6edc7e2a1738aeb677a7ba
-ms.sourcegitcommit: 69456d802203d21dabc3ae8662547a3241c24f47
+ms.openlocfilehash: 760fd0c4d3a9593dbfcc4f78e3279a1ba7e2570f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110235906"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097977"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>使用 Docker 排查 Visual Studio 开发方面的问题
 

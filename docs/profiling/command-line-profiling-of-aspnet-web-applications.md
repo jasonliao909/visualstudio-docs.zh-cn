@@ -11,15 +11,16 @@ ms.assetid: 897c00d5-5767-433b-a960-4a29c6023ede
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - aspnet
-ms.openlocfilehash: e97e6a3d9115be2b14cac4e87698c6eeb9fc091d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9d551922a3088c7febe07f47d35af04511774a09
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945183"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107950"
 ---
 # <a name="command-line-profiling-of-aspnet-web-applications"></a>通过命令行分析 ASP.NET Web 应用程序
 本部分介绍从命令行使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具收集 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] Web 应用程序的性能数据的过程和选项。

@@ -10,14 +10,15 @@ ms.assetid: 02769bfa-5679-4ee2-8c6b-27876edb4e8c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c9bbd89c4b878ff6b5ec9d7ef349f88ad4c96bb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4811bcd95b7d99ed78544e68394887d67e8a0c9d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926512"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090208"
 ---
 # <a name="using-spy"></a>使用 Spy++
 Spy++ (SPYXX.EXE) 是一个基于 Win32 的实用工具，提供系统进程、线程、窗口和窗口消息的图形视图。 “Spy++ 帮助”的此部分包括以下帮助主题：

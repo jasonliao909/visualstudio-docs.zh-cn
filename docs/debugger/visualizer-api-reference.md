@@ -17,14 +17,15 @@ ms.assetid: b9ff4ed0-9e80-49df-9016-a81189319afd
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b790bcdc11e80b8f01877efe4a8d9497038b260b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7dbf4105320531a21f478ef8947129e0fa754c28
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884255"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112213"
 ---
 # <a name="visualizer-api-reference"></a>可视化工具 API 参考
 

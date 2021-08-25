@@ -11,12 +11,13 @@ ms.assetid: 0f6ba8e4-1343-419c-8a9f-240cf50efed7
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 485b5dc319a0e78f91f68f9c82b65ee5aa62b9d5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: da9b45ce5406ed0a686a4837b9a605145c810ca0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99962504"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100330"
 ---
 # <a name="use-the-graphs-view-legend-to-analyze-load-tests"></a>使用关系图视图图例分析负载测试
 

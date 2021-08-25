@@ -4,19 +4,18 @@ description: 了解如何扩展免费试用版 Visual Studio，使用联机订�
 ms.date: 12/18/2019
 ms.topic: conceptual
 ms.assetid: ffb580a1-8b5d-48f5-b811-87f8036f50ea
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
-ms.openlocfilehash: b78db14b149b094550ce025ab3750742401fddbe
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 98e9deea5c05098cb07995d1d1898f3d7848100e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295463"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109183"
 ---
 # <a name="extend-a-trial-version-or-update-a-license"></a>扩展试用版或更新许可证
 

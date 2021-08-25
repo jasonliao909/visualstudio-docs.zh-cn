@@ -8,14 +8,15 @@ ms.assetid: 43d7a8e6-bd94-4407-a800-15a145c74223
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 9fe1bfcd422dbfc5f010ae7819e2fccbeafb8227
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03b26b7fb9ee44cefe21c92b34c0a35830d63d0b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934619"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098718"
 ---
 # <a name="integration-with-xml-editor"></a>与 XML 编辑器集成
 

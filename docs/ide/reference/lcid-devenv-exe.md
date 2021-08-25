@@ -18,14 +18,15 @@ ms.assetid: 3a3f4e70-ea66-4351-9d62-acb1dec30e8e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3e5aad581babafe882fccc13e8594aa60437d9df
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35a8fa0a783817d5ad1fdc4b6bce39f873a051f1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852136"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101097"
 ---
 # <a name="lcid-devenvexe"></a>/LCID (devenv.exe)
 

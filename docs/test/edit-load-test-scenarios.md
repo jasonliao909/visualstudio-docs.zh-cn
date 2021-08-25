@@ -12,12 +12,13 @@ ms.assetid: fec04f2e-bf38-4d44-b2ec-fa50f58fd0d9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 01129ae017dd51a6bc36d966a495eb7fd1afd2f2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 1b269b0563c82a97fcbf17c7b920a9433e1c1692
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926893"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123120"
 ---
 # <a name="edit-load-test-scenarios"></a>编辑负载测试方案
 

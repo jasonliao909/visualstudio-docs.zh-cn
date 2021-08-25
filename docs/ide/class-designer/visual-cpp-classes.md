@@ -12,14 +12,15 @@ ms.assetid: 75e56f8c-11ef-42a3-b7ec-3d2cf25c581b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e1a1e075d2ac8d06320c46f8d2bb86992814ae24
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bad6d017bfe58af9a514f632b4bf1fc3047cb054
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963362"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094485"
 ---
 # <a name="c-classes-in-class-designer"></a>类设计器中的 C++ 类
 

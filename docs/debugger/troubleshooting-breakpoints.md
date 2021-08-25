@@ -7,14 +7,15 @@ ms.topic: troubleshooting
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0801a687529b5e0f8cdf34030460f0b5fe45bc91
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 0caeb4a9a37497922af5c5b7d94f539859644c02
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386379"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122096812"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中对断点进行故障排除
 

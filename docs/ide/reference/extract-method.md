@@ -6,6 +6,7 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.extractmethod
 dev_langs:
@@ -13,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6ee11ec012ae0f104f5fefff7302d3982e43721a
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: 28595d4ed837249385a18b4a60cd12f1713b5640
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106083650"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101422"
 ---
 # <a name="extract-a-method-refactoring"></a>“提取方法”重构
 

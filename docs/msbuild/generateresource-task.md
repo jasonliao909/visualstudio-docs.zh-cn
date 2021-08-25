@@ -18,14 +18,15 @@ ms.assetid: c0aff32f-f2cc-46f6-9c3e-a5c9f8f912b1
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 810cbd4987277416b5be545603908d9818bff890
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 834d4f3949e5d201c1dc59311c2bf9a9ed77f5cf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914750"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115819"
 ---
 # <a name="generateresource-task"></a>GenerateResource 任务
 

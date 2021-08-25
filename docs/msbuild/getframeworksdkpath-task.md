@@ -18,14 +18,15 @@ ms.assetid: 2ef82b98-02b6-40cf-a9b5-f0e882fb5064
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c0fe468f593d085c10f8d077246af6858d0571fe
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c785e7d7e12a77650f607fc58798f6b80b73f0f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093809"
 ---
 # <a name="getframeworksdkpath-task"></a>GetFrameworkSdkPath 任务
 

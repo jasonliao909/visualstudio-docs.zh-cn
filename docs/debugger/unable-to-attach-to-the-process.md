@@ -14,14 +14,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9f83a4f262e394222d420c2fec187e67ddfbfaf8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 26698cc8655c269cdbac69d4c54aac2fc3c3193a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870410"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112279"
 ---
 # <a name="unable-to-attach-to-the-process"></a>无法附加到进程
 无法附加到进程。 在连接到此计算机期间服务器上的调试器组件接收了被拒绝的访问。

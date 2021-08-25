@@ -4,14 +4,14 @@ author: ghogen
 description: 了解如何使用 Visual Studio 2017 工具和 Docker for Windows
 ms.author: ghogen
 ms.date: 02/01/2019
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: 92b97cb1091722bdf0caa6e7708e015612c545ad
-ms.sourcegitcommit: 4b2b6068846425f6964c1fd867370863fc4993ce
+ms.openlocfilehash: cc9df8638e72e2175aa55b5b8ab819d4b476d5dd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/12/2021
-ms.locfileid: "112044698"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147360"
 ---
 使用 Visual Studio，可以轻松地生成、调试和运行容器化的 ASP.NET Core 应用程序并将其发布到 Azure 容器注册表、Docker Hub、Azure 应用服务或你自己的容器注册表。 在本文中，我们将发布到容器注册表。
 
@@ -105,7 +105,7 @@ baf9a678c88d        hellodockertools:dev   "C:\\remote_debugge..."   21 seconds 
 1. 在解决方案资源管理器中右键单击项目，并选择“发布” 。
 1. 在发布目标对话框上，选择“容器注册表”选项卡。
 1. 选择“创建新的 Azure 容器注册表”并单击“发布” 。
-1. 在“创建新 Azure 容器注册表”中填写所需的值。
+1. 在“创建新 Azure 容器注册表”中填写所需的值  。
 
     | 设置      | 建议的值  | 描述                                |
     | ------------ |  ------- | -------------------------------------------------- |

@@ -41,14 +41,15 @@ ms.assetid: 7e208e1d-5e3a-4bf7-a27b-4417e3e049c7
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c429b8e6dbf6931ebf68717b6d43fcf746cf13ed
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c8a37f493f90ee8bbc6d36e9a5d4eb9de5d57ab3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905558"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101006"
 ---
 # <a name="options-text-editor-all-languages-tabs"></a>选项，文本编辑器，所有语言，选项卡
 

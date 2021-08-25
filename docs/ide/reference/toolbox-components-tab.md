@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: adbc2611cf0d0e08ef356e91e25ed0c4854c4386
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6925baa2d396d2b01839cdd9af083eb20867b191
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99965039"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123757"
 ---
 # <a name="toolbox-components-tab"></a>工具箱，“组件”选项卡
 

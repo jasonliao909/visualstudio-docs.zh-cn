@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 80313cf0dd9b828c9602fdf8ebff022342faa0fb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2c474c43451006121f940da5eed66dfb9277806a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99852357"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101201"
 ---
 # <a name="inline-method"></a>内联方法
 

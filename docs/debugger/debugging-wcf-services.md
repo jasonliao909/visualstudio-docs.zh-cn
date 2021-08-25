@@ -16,14 +16,15 @@ ms.assetid: 6c8974d0-2c15-4d9f-a7f3-cabd4b204cda
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e4326f881b91788384b990a9bce81de344d23e4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 57bf1946722d528f28735e49b9ba652264e6f609
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872347"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122113034"
 ---
 # <a name="debugging-wcf-services"></a>调试 WCF 服务
 ## <a name="in-this-section"></a>本节内容

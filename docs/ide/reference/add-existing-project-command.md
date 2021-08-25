@@ -13,14 +13,15 @@ ms.assetid: 71cf3e31-c76b-405b-ad6a-1b1bc654bd40
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 30e2daae72dfd3b5d5a08847ddf87b93d1810a37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3dc0b512169f1060d0fe69b7d8d9cb6840e44f2b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956667"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094312"
 ---
 # <a name="add-existing-project-command"></a>“添加现有项目”命令
 将现有项目添加到当前解决方案中。

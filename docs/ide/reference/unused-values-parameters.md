@@ -7,17 +7,18 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: cd0b6e936f4478cb4b74a3f004e69d77dbad7fbc
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a3fcdd7703e6b367ba8649918ff346646982c4c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116937"
 ---
 # <a name="unused-value-assignments-variables-and-parameters"></a>未使用的值分配、变量和参数
 

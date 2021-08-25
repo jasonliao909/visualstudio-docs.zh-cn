@@ -18,14 +18,15 @@ ms.assetid: 8a978645-1393-4904-ae69-42afabd8c109
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b31beb15ddfd1078d72c247535e2bc835b8c31e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5d67ea85f396baa45e1a8da2f2cf6898d02b4e01
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902639"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108182"
 ---
 # <a name="touch-task"></a>Touch 任务
 

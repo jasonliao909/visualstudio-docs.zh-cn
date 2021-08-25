@@ -10,12 +10,13 @@ ms.assetid: 2f634fba-8dfa-4c7a-a8b9-be867b78d16a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: bc7a57e759cbeb6fcb5fd9c96dd4c68aa0637afa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: c918d2479c27b068fd155ddaea78241019f22ca6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868031"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092678"
 ---
 # <a name="configure-scenario-start-delays-in-load-tests"></a>配置负载测试中的方案启动延迟
 

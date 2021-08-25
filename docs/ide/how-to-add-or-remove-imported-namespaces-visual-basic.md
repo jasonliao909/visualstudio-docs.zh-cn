@@ -14,14 +14,15 @@ ms.assetid: 44cebec3-0ea0-47c2-8406-4edeab6a997e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 18e3010e9798f3c056afd5ffc7964ace3f734f53
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02af241606b8b8cc4646048b507f3672bf20e4ea
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970837"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101786"
 ---
 # <a name="how-to-add-or-remove-imported-namespaces-visual-basic"></a>如何：添加或移除导入的命名空间 (Visual Basic)
 

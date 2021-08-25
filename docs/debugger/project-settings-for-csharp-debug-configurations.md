@@ -20,14 +20,15 @@ ms.assetid: e30ca810-66e9-4d6e-9cf6-9f285cd0b100
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3377187412f95e090c7403ddd6f898a18f6cec9f
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 002d95684ffa7167ff0ff5bb10158f3e23622314
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386496"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122105101"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 

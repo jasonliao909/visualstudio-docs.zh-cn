@@ -10,14 +10,15 @@ ms.assetid: 1d36813a-dc2a-4fda-9b3d-a38928a62ced
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0e8b1125534e52c810f97c91bd00ea53dfd3d6de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 470d9676ed2bb908b04f4bbddc905ddede97802d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896621"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128112"
 ---
 # <a name="how-to-start-spy"></a>如何：启动 Spy++
 

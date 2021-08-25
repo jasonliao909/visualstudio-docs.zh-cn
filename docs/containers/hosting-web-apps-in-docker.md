@@ -6,15 +6,15 @@ manager: jmartens
 ms.assetid: e5e81c5e-dd18-4d5a-a24d-a932036e78b9
 ms.devlang: dotnet
 ms.topic: how-to
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.date: 03/15/2021
 ms.author: ghogen
-ms.openlocfilehash: d549a3097416f499adc9d03f83d7b4ef4c953442
-ms.sourcegitcommit: c875360278312457f4d2212f0811466b4def108d
+ms.openlocfilehash: eb1b22273a3fe946d7760bccae9583c4b1d6726c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107315961"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122091235"
 ---
 # <a name="deploy-an-aspnet-container-to-a-container-registry-using-visual-studio"></a>使用 Visual Studio 将 ASP.NET 容器部署到容器注册表
 
@@ -25,7 +25,7 @@ Docker 是轻型容器引擎，在某些方面类似于虚拟机，可以将其�
 
 如果没有 Azure 订阅，请在开始之前创建一个[免费帐户](https://azure.microsoft.com/free/dotnet/?utm_source=acr-publish-doc&utm_medium=docs&utm_campaign=docs)。
 
-## <a name="prerequisites"></a>先决条件
+## <a name="prerequisites"></a>必备条件
 
 完成本教程：
 

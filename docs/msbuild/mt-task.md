@@ -24,14 +24,15 @@ ms.assetid: bb94913c-1042-4968-9f08-b394518e899f
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a023c58e528b2cda74fa42fcce46fd9c39059459
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71466d1b74d371d409a0be26bf56ce7c5824ce52
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108442"
 ---
 # <a name="mt-task"></a>MT 任务
 
