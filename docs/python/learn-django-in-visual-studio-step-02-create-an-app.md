@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 196b15dff25681a23c05118a02f19109e09e3959
-ms.sourcegitcommit: 5fe2462ffc33c7ece9cf3a179fb598354c916e1f
+ms.openlocfilehash: 306e560c0f27b7ae17f71ddb82cb651fa46a1c97
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/21/2021
-ms.locfileid: "110320467"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038547"
 ---
 # <a name="step-2-create-a-django-app-with-views-and-page-templates"></a>步骤 2：使用视图和页面模板创建 Django 应用
 

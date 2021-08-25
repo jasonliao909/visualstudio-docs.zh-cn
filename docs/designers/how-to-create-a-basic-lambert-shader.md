@@ -8,14 +8,15 @@ ms.assetid: ec5c10fb-9600-4240-8280-d59451ea1d68
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 2aa4f3676708a99abba0a4706ecb524f1c14b212
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 28f373fd289b5265c18b9d2ec3e92958cb154fcb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917032"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112069"
 ---
 # <a name="how-to-create-a-basic-lambert-shader"></a>如何：创建基本朗伯着色器
 

@@ -8,14 +8,15 @@ author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: ddb09cce41bf0dcd9e8e29ec5f25d43f450a4eb8
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 4b19e604b052e6f573ff6d07e0830cf4d0af8c37
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679702"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060461"
 ---
 # <a name="use-docker-containers-with-r-tools-for-visual-studio"></a>配合使用 Docker 容器和针对 Visual Studio 的 R 工具
 

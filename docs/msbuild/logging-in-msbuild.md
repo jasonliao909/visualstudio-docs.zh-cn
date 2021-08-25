@@ -10,14 +10,15 @@ ms.assetid: 9aea2e76-8f60-4234-913d-598e7bbad808
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: afbb79e2ce8ebdccc68def6ca4c42fde85c11bf0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 673a46cb6727adcc1b9625187b5d7949cb07ea5a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115806"
 ---
 # <a name="logging-in-msbuild"></a>MSBuild 中的日志记录
 

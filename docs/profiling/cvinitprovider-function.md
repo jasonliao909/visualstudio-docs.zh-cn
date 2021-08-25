@@ -12,14 +12,15 @@ ms.assetid: ba1863ad-e35f-4d34-a2f2-5e68957d1915
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f23d3ceadf2ee8d1a0c6b53b395c379caf505179
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c0432a57deee0b88cd0b30d16cc741b391250b55
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99940990"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131775"
 ---
 # <a name="cvinitprovider-function"></a>CvInitProvider 函数
 初始化标记提供程序。 必须在任何其他并发可视化工具 SDK 函数之前调用。

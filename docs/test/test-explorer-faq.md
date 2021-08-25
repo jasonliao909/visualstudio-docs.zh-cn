@@ -16,12 +16,13 @@ ms.workload:
 - multiple
 author: kendrahavens
 manager: jmartens
-ms.openlocfilehash: 22ac969ba2ad918fcbeb7c53e04cd3f2b03a0431
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.technology: vs-ide-test
+ms.openlocfilehash: 6b14f78fa1e7e51cc2ea93f30eab8ee29e644949
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798565"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060045"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 

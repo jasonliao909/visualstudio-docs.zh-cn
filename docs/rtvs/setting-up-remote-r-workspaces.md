@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 2bd4dd7f18ced67d1b6b1505859131d088709d2e
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 03065c6cc2b7c9bf65bde4c4d55250b28fe9213c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679722"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060513"
 ---
 # <a name="set-up-remote-workspaces"></a>设置远程工作区
 

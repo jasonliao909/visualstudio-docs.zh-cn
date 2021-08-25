@@ -6,14 +6,14 @@ ms.date: 06/11/2021
 ms.topic: conceptual
 ms.author: tglee
 author: TerryGLee
-ms.manager: jillfra
+ms.manager: jmartens
 monikerRange: <=vs-2019
-ms.openlocfilehash: b45399f7a4115ce5946a67caca22ca92148e7434
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: fd95da37fc0f6dcf5d7c735bc1e8b1afe050b9f8
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112308241"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785736"
 ---
 # <a name="connect-to-projects-in-team-explorer"></a>连接到团队资源管理器中的项目
 

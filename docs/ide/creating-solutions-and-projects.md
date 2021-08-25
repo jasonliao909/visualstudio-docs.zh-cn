@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f05a940787c2ab601b0b29db8ec5004c621a16b8
-ms.sourcegitcommit: d856c46d78638be609e7045621ed1bd7521a6dcc
+ms.openlocfilehash: fba43be5a5b48e39df48d7d0316dfe650e0be2f8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114283849"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109443"
 ---
 # <a name="create-work-with-and-delete-visual-studio-projects-and-solutions"></a>创建、使用并删除 Visual Studio 项目和解决方案
 

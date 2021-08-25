@@ -8,14 +8,15 @@ ms.assetid: 45dd86b2-801e-4b07-a8c4-7bd25641d7f8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 07ddb9648c385346b7ff2cab2c082c5249317a3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5db5b43efbaf50b6a35425ff110afa5534be96e7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058605"
 ---
 # <a name="graphics-diagnostics-examples"></a>图形诊断示例
 以下示例显示如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断调试基于 DirectX 的应用中的呈现问题。

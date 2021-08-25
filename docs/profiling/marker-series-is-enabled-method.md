@@ -11,14 +11,15 @@ ms.assetid: 8ce4dd50-ca29-4c72-98d6-582693f7d501
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0ce01d71b3fac63062a3f823f1862fd199fa39be
-ms.sourcegitcommit: f33ca1fc99f5d9372166431cefd0e0e639d20719
+ms.openlocfilehash: b36a76b8d404606b97672a78d8fb467fc998bbf4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102223571"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107402"
 ---
 # <a name="marker_seriesis_enabled-method"></a>marker_series::is_enabled 方法
 确定是否有任何会话启用了该提供程序。

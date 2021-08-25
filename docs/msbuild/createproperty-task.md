@@ -18,14 +18,15 @@ ms.assetid: fbc31a88-62d4-43d2-b739-68ef3fac38f5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea412f67629998eab035b8cca79111659ab8a0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: be38b53074bb8f290cd9cd865d60513712be5505
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99901376"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054829"
 ---
 # <a name="createproperty-task"></a>CreateProperty 任务
 

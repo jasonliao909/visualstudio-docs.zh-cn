@@ -20,14 +20,15 @@ ms.assetid: 15c99f5c-7124-4bbc-bc03-70c7bcce8893
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 7227fff5dd4c58e1bce81ef8cad5c32f854abf55
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9af55b62782a8d10b2e193b29bb9d8fade5b9aad
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039886"
 ---
 # <a name="xsd-task"></a>XSD 任务
 
@@ -90,6 +91,6 @@ ms.locfileid: "99960320"
 
      指定跟踪器日志目录。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

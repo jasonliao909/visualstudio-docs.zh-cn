@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 21115673a41e26b2f1685442d2ed0ad93a147990
-ms.sourcegitcommit: 4908561809ad397c99cf204f52d5e779512e502c
+ms.openlocfilehash: db046648d78caeb1ec779ae556709806d72dc55c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112254883"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076212"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 

@@ -18,14 +18,15 @@ ms.assetid: a18af929-b53a-4d9e-b7bf-e3d3737ee85f
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0361d0103afbe662a37b50358e125018a7378f39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1634aa8a669fa03f217fedf04b5dd8620b95829c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931963"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068769"
 ---
 # <a name="readlinesfromfile-task"></a>ReadLinesFromFile 任务
 

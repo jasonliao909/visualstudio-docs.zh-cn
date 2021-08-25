@@ -15,14 +15,15 @@ ms.assetid: 35bfdd2c-6f60-4be1-ba9d-55fce70ee4d8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 2701542921bae4bb878bc48a3e16eda14416cdf5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 360bdb1ac3d3dfce56a60f1e1c33e97d76885c6a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99884099"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090195"
 ---
 # <a name="debug-at-design-time-in-visual-studio-c-ccli-visual-basic-f"></a>在 Visual Studio 中进行设计时调试（C#、C++/CLI、Visual Basic、F#）
 

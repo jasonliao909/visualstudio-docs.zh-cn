@@ -14,15 +14,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e2b20a403d2c56dd239ddaf81d2a32905ca4aed5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 63729ef75c858d423ad48da73634ede544086b71
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950229"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136360"
 ---
 # <a name="collect-tier-interaction-data"></a>收集层交互数据
 

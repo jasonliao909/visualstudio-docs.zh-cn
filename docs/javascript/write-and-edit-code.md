@@ -6,16 +6,17 @@ ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: b1d9fb7cdc850bc54298cd3d82d52786a9e6a639
-ms.sourcegitcommit: 00e16b9afe6b22ba0591e4d0d92690544e6d4357
+ms.openlocfilehash: 7ea2673de387e8d10034dffc0fac8ce755f35e83
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/26/2021
-ms.locfileid: "105616956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122055739"
 ---
 # <a name="learn-to-use-the-code-editor-for-javascript"></a>了解如何使用 JavaScript 版代码编辑器
 

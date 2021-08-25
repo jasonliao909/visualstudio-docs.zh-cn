@@ -4,15 +4,14 @@ author: ghogen
 description: 了解如何使用 Visual Studio 2019 工具和 Docker for Windows
 ms.author: ghogen
 ms.date: 03/08/2021
-ms.prod: visual-studio-dev16
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: 0b9a8ef2839db1d71c3cc6e395aa0d6092375c9c
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 91ca214fe8a90a9d999763f0099a3e9634c44824
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114593368"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147361"
 ---
 使用 Visual Studio，可以轻松地生成、调试和运行容器化的 .NET、ASP.NET 和 ASP.NET Core 应用并将其发布到 Azure 容器注册表 (ACR)、Docker Hub、Azure 应用服务或你自己的容器注册表。 本文介绍如何将 ASP.NET Core 应用发布到 ACR。
 

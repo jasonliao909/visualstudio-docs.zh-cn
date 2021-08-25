@@ -3,19 +3,19 @@ title: Visual Studio 团队资源管理器 2019 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio 工作负载和组件 ID 为技术全面的测试人员提供集成的测试工具
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/24/2021
+ms.date: 08/10/2021
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: a7de745bc5396a2289095c76fbd5c92c2952cf73
-ms.sourcegitcommit: 18e7300d4878f2fcd0263a4aff31a755ae8fc289
+ms.openlocfilehash: c4052ac217ecbe82674117dc3f258d0d1cd9fd8c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110449802"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048256"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-team-explorer-2019"></a>Visual Studio 核心编辑器（随附于 Visual Studio 团队资源管理器 2019）
 

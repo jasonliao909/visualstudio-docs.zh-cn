@@ -11,14 +11,15 @@ ms.assetid: 63b7df32-db83-463b-bbe7-7ff011fe5298
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 37742f1a9adda219e359d734b80f44679509ee03
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 410bbf265250c27c7b159d940011c3070ce2587c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99846330"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034365"
 ---
 # <a name="add-new-item-command"></a>“添加新项”命令
 将新的解决方案项，如.htm、.css、.txt 或框架集添加到当前解决方案中并打开它。

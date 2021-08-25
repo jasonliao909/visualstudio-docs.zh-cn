@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: ac3d6b9cef8d20d85049da830dfb830321faab75
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: 767a81ae1957a7a3c2865bef060f5f0016e7a7c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106214533"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101084"
 ---
 # <a name="make-class-abstract"></a>将类变为抽象
 

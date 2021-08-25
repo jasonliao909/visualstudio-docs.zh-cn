@@ -5,19 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 09/06/2019
 ms.assetid: 9a8fe90e-c97b-4e98-b6c8-0c6b3962c49d
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7113c308416a5ddcd9bf2bb989cf17d31c4fffa6
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 808b5635764a49f67788825f5524662145ac5d77
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122116885"
 ---
 # <a name="step-2-run-your-picture-viewer-app"></a>步骤 2：运行图片查看器应用
 

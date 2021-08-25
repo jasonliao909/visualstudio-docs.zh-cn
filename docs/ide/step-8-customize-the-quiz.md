@@ -4,8 +4,6 @@ description: 了解如何将 timeLabel 控件更改为其他颜色，并为测�
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
@@ -13,14 +11,15 @@ ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8ba836ea8eff45d02b487541e5120e670e6cc09e
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 028bf80fc32bac728463f3f1fdc7748914a45666
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107295398"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048487"
 ---
 # <a name="step-8-customize-the-quiz"></a>步骤 8：自定义测验
 

@@ -17,14 +17,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 89d67c083c9e40710e79568c12684ab54653a5be
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dba71fed7c4cc248e3e7648f264e3ccd531af5e0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966196"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093731"
 ---
 # <a name="markupcompilepass1-task"></a>MarkupCompilePass1 任务
 

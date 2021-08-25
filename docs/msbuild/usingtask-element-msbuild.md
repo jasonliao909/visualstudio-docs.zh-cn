@@ -18,14 +18,15 @@ ms.assetid: 20247902-9446-4a1f-8253-5c7a17e4fe43
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 3adc3d648e73fc1f3596cc7a5c2cb2148a8f611b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b382711223b61999a199fe7e926ecedc12fb5ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99960333"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136594"
 ---
 # <a name="usingtask-element-msbuild"></a>UsingTask 元素 (MSBuild)
 
@@ -51,7 +52,7 @@ ms.locfileid: "99960333"
 
 ### <a name="attributes"></a>特性
 
-|特性|描述|
+|属性|描述|
 |---------------|-----------------|
 |`Architecture`|可选特性。<br /><br /> 指定任务必须在指定位数的进程中运行。 如果当前进程不满足要求，则任务将在满足要求的任务主机进程中运行。<br /><br /> 支持的值为 `x86`（32 位）、`x64`（64 位）、`CurrentArchitecture` 和 `*`（任何体系结构）。|  
 |`AssemblyName`|`AssemblyName` 属性或 `AssemblyFile` 属性是必需的。<br /><br /> 要加载的程序集的名称。 尽管强命名不是必需的，但是 `AssemblyName` 属性可以接受强名称程序集。 使用此属性等效于使用 .NET 中的 <xref:System.Reflection.Assembly.Load%2A> 方法加载程序集。<br /><br /> 如果使用了 `AssemblyFile` 属性，则不能使用此属性。|

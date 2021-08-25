@@ -13,14 +13,15 @@ ms.assetid: 96e692f6-b581-46ca-8cc9-441a1861e371
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b6444811750a59de5488b8ca3614f9926d472746
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2dfb1b97910858f5d6b1d59dbdbacda7a78ae73d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99905488"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122137114"
 ---
 # <a name="formatversion-task"></a>FormatVersion 任务
 
@@ -36,7 +37,7 @@ ms.locfileid: "99905488"
 
  下表描述了 `FormatVersion` 任务的参数。
 
-|参数|说明|
+|参数|描述|
 |---------------|-----------------|
 |`FormatType`|可选 `String` 参数。<br /><br /> 指定格式类型。<br /><br /> -“Version”= 版本。<br />-“Path”=将“.”替换为“_”；|
 |`OutputVersion`|可选 `String` 输出参数。<br /><br /> 指定包含修订号的输出版本。|
@@ -47,7 +48,7 @@ ms.locfileid: "99905488"
 
  除了具有表中列出的参数外，此任务还将从本身继承自 <xref:Microsoft.Build.Utilities.Task> 类的 <xref:Microsoft.Build.Tasks.TaskExtension> 类继承参数。 有关这些其他参数的列表及其说明的信息，请参阅 [TaskExtension 基类](../msbuild/taskextension-base-class.md)。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务](../msbuild/msbuild-tasks.md)
 - [任务参考](../msbuild/msbuild-task-reference.md)

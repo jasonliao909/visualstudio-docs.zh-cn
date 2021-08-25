@@ -6,13 +6,14 @@ ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 47bf978bc32c651cb90130ecc90517bfe1c29cdd
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.openlocfilehash: 3867c12dddd57403bc744711a75f31866f0aec90
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111761103"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122045614"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>在 Visual Studio 中通过 XAML 设计器使用设计时数据
 

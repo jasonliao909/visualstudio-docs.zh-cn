@@ -12,15 +12,16 @@ ms.assetid: 3987e21a-5b4f-45e4-8a33-6b3f0a472c08
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 5d44c998cabd3611e2ed393be0ad7df20e1ac49c
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: 1347b390c5d70478f2c7311746e6282fa344ba98
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469919"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107857"
 ---
 # <a name="da0010-expensive-gethashcode"></a>DA0010：高开销 GetHashCode
 

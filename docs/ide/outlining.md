@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 04a2156723bc33e25a658814b9348655f7ba86d1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: fc44968f42f95dcc3a7fa1ce5e80e07a0988496a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99909065"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062402"
 ---
 # <a name="outlining"></a>大纲显示
 

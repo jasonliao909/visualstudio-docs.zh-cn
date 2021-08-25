@@ -13,14 +13,15 @@ ms.assetid: 0f6814d6-cd0d-49f3-b501-dea8c094b8ef
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: f75c1c2420a356a38148f67daab05eadf5a073e6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e48422f3e73802a56a24db3febf8128dad78efe3
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99881316"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112511"
 ---
 # <a name="debug-uwp-apps-on-remote-machines-from-visual-studio"></a>在 Visual Studio 中调试远程计算机上的 UWP 应用
 

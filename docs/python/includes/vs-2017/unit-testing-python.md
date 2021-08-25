@@ -6,16 +6,17 @@ ms.topic: how-to
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 612d4bd7d66add8c3fe7c45e8f03ca3531b0b4c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 307a82b346f1fead5c78091544d0ccdfe8509e6c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920678"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122156393"
 ---
 ## <a name="discover-and-view-tests"></a>发现和查看测试
 

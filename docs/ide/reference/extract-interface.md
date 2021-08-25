@@ -7,6 +7,7 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.extractinterface
 dev_langs:
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 12db627bde45d11950e661d258c9891b8e935ba1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 980a6634bf1be60e36f267bf54d1b03f227281dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861031"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122094095"
 ---
 # <a name="extract-an-interface-refactoring"></a>“提取接口”重构
 

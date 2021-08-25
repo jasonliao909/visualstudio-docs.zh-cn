@@ -19,14 +19,15 @@ ms.assetid: dcf07bb4-fa3b-4224-9dec-566fd924a8ce
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f7941b3a2c9c3fe71119e3a4413ad97f56b6290
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d217f85d57e4e44e824f708343764a89f3ba2efe
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969849"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101942"
 ---
 # <a name="refactor-classes-and-types-in-class-designer"></a>在类设计器中重构类和类型
 

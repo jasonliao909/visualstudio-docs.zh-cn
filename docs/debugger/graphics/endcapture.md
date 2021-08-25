@@ -8,14 +8,15 @@ ms.assetid: 06084c3b-e065-49b6-968e-d578762fb871
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 8b0820950980860465e5129211c77e48ff641bdf
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: c3167621d5618a212da7e127e26b713bd029b810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232669"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044073"
 ---
 # <a name="endcapture"></a>EndCapture
 结束以 `BeginCapture` 开始的捕获时间间隔。

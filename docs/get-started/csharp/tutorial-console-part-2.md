@@ -7,8 +7,8 @@ ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 monikerRange: '>=vs-2019'
 dev_langs:
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: f7d1ae7d0d5f045c0772243c7fc4011a9f31088e
-ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
+ms.openlocfilehash: 2c8e0108a58e6502de9f8a52b7738ea055f6862f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113649158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122049085"
 ---
 # <a name="tutorial-extend-c-console-app-and-debug-in-visual-studio-part-2-of-2"></a>教程：扩展 C# 控制台应用并在 Visual Studio 中调试（第 2 部分，共 2 部分）
 

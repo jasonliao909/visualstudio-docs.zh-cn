@@ -9,14 +9,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 9bc7fe3898bec19b4eb0130e7279974823669e7f
-ms.sourcegitcommit: 155d5f0fd54ac1d20df2f5b0245365924faa3565
+ms.openlocfilehash: ad648b114ffd067ef1ab5d9a0ea1671d03207396
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106082534"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077707"
 ---
 # <a name="how-msbuild-builds-projects"></a>MSBuild 如何生成项目
 

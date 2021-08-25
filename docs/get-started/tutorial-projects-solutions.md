@@ -10,17 +10,17 @@ ms.custom:
 ms.topic: tutorial
 f1_keywords:
 - project.addnewitem
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 1d06b53afc811517ac86be9bdc3e86cf7593bbaf
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: a7680930d6617a72db77fb6b5f3d30595faa7ec9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390029"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109755"
 ---
 # <a name="introduction-to-projects-and-solutions"></a>项目和解决方案简介
 

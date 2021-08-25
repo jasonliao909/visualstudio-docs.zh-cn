@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: ffcc3f0afb0fbc5b1863bc00b106f30e7f3aeb78
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 91c8a3941039242a575bce7e60cbcb3b9e4f4d2c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679929"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054283"
 ---
 # <a name="welcome-to-r-tools-for-visual-studio"></a>欢迎使用针对 Visual Studio 的 R 工具
 

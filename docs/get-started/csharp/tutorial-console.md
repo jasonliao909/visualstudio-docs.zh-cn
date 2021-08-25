@@ -2,25 +2,25 @@
 title: '教程：创建一个简单的 C# 控制台应用程序 '
 description: 了解如何在 Visual Studio 中分步创建 C# 控制台应用程序。
 ms.custom: vs-acquisition, get-started
-ms.date: 02/10/2021
+ms.date: 08/12/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
 - dotnetcore
-ms.openlocfilehash: 20732b0d7fb09de6079b0c1b7b06d2ae89802a5b
-ms.sourcegitcommit: e7629e132a4d2fad6bb5869e4d68d9dbeeae9631
+ms.openlocfilehash: 1f7811483001e5cf07f46cf6d8450552e2607b1d
+ms.sourcegitcommit: 00a9b421927ac9de60e96b2ce6618aa0733d88b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113649174"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122773650"
 ---
 # <a name="tutorial-create-a-simple-c-console-app-in-visual-studio-part-1-of-2"></a>教程：在 Visual Studio 中创建一个简单的 C# 控制台应用（第 1 部分，共 2 部分）
 
@@ -104,17 +104,15 @@ ms.locfileid: "113649174"
 
    ![查看“创建新项目”窗口](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
-1. 在“创建新项目”窗口中，从“语言”列表中选择“C#”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。 
+1. 在“创建新项目”窗口中，从“语言”列表中选择“C#”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。
 
    应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
-
-    :::image type="content" source="./media/vs-2019/csharp-create-new-project-console-net-core.png" alt-text="为“控制台应用(.NET Framework)”选择 C# 模板":::
 
    > [!NOTE]
    > 如果未看到“控制台应用程序”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](./media/dot-net-core-xplat-dev-workload.png)
@@ -124,7 +122,7 @@ ms.locfileid: "113649174"
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“Calculator”。 然后，选择“下一步”。
 
     :::image type="content" source="./media/vs-2019/csharp-name-your-calculator-project.png" alt-text="在“配置新项目”窗口中，将项目命名为“Calculator”":::
-   
+
 1. 在“附加信息”窗口中，应已为目标框架选择“.NET Core 3.1” 。 如果未选择，则请选择“.NET Core 3.1”。 然后，选择“创建”。
 
     :::image type="content" source="./media/vs-2019/csharp-target-framework.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”":::
@@ -361,7 +359,7 @@ ms.locfileid: "113649174"
 
     namespace Calculator
     {
-        
+
     }
     ```
 
@@ -499,7 +497,7 @@ ms.locfileid: "113649174"
 
 1. 在 Visual Studio 中，按 Ctrl+S 保存应用 。
 
-1. 关闭 Visual Studio。
+[!INCLUDE[../includes/git-source-control.md](../includes/git-source-control.md)]
 
 ## <a name="review-code-complete"></a>查看：代码完成
 
@@ -644,13 +642,3 @@ namespace Calculator
 > [!div class="nextstepaction"]
 > [教程第 2 部分：使用多个项目和第三方包](tutorial-console-part-2.md)
 :::moniker-end
-
-如有兴趣，另可参阅以下内容：
-
-- [继续学习更多 C# 教程](/dotnet/csharp/tutorials/)
-- [快速入门：创建 ASP.NET Core Web 应用](../../ide/quickstart-aspnet-core.md)
-- [了解如何在 Visual Studio 中调试 C# 代码](tutorial-debugger.md)
-- 有关如何[创建和运行单元测试](../../test/walkthrough-creating-and-running-unit-tests-for-managed-code.md)的演练
-- [运行 C# 程序](run-program.md)
-- [C# IntelliSense](../../ide/visual-csharp-intellisense.md)
-- [继续学习 Visual Studio IDE 概述](/../visual-studio-ide.md)

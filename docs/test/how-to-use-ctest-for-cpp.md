@@ -6,15 +6,16 @@ ms.date: 01/23/2020
 ms.topic: how-to
 ms.author: corob
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - cplusplus
 author: corob-msft
-ms.openlocfilehash: 23d235d4b18c9909868cf890e31d835b3f7ea948
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 845b20a18ccc422419084b8de0c9af725e105637
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969277"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033169"
 ---
 # <a name="how-to-use-ctest-for-c-in-visual-studio-2017-and-later"></a>如何在 Visual Studio 2017 及更高版本中使用适用于 C++ 的 CTest
 

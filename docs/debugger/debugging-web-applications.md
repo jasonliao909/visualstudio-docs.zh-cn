@@ -13,14 +13,15 @@ ms.assetid: a096a90d-6d0d-4752-9fb5-417635ccab3e
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c7dd36846bf1d7ac0c24a73a489ed2c461837ca7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9274b401d40f2b65682e60ed5bb7ccdc4126a540
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872269"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112862"
 ---
 # <a name="debugging-web-applications"></a>调试 Web 应用程序
 

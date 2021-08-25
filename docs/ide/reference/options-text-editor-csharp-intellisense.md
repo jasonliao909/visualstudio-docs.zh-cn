@@ -16,14 +16,15 @@ ms.assetid: 3466dedb-e5f4-424c-8dd8-e4941b2f4fc2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9181961c1f30a96e5b03434f4ab686024992e29a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9dbb48c2d629ec4afef7a56218bf6af785540d73
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99944012"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122100941"
 ---
 # <a name="options-text-editor-c-intellisense"></a>选项，文本编辑器，C#，IntelliSense
 

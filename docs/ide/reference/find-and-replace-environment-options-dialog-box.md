@@ -14,14 +14,15 @@ ms.assetid: f804d6d5-6309-46e4-8294-b83e880b5ec9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c0fab4fd10d985ad1cee01fbea4269934c01d243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 62b3568ca76c5aa9f66e4ea8f457e82db2316465
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860914"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034274"
 ---
 # <a name="find-and-replace-environment-options-dialog-box"></a>“选项”对话框 ->“环境”->“查找和替换”
 

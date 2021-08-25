@@ -6,8 +6,8 @@ ms.date: 02/15/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
-author: TerryGLee
-ms.author: tglee
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - CSharp
@@ -15,12 +15,12 @@ ms.workload:
 - dotnet
 - dotnetcore
 monikerRange: vs-2017
-ms.openlocfilehash: 5543a568f7246d9600ba375d9a1cf19af4cbd2d4
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 6b69a138689c7351b51e5674b587911a41eb61c7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112389197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078578"
 ---
 # <a name="tutorial-open-a-project-from-a-repo-in-visual-studio-2017"></a>教程：在 Visual Studio 2017 中打开存储库中的项目
 

@@ -23,14 +23,15 @@ ms.assetid: 2918ffa2-562f-40d6-9053-ef321bbeb767
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e2648f74453f51cd8d655ccb0c2344eb1030c1ed
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 9ab893453cb0f0603ded5220c45268dc5f0ad058
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112385391"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122097098"
 ---
 # <a name="view-register-values-in-the-registers-window-c-c-visual-basic-f"></a>在“寄存器”窗口中查看寄存器值（C#、C++、Visual Basic、F#）
 

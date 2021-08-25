@@ -18,14 +18,15 @@ ms.assetid: 96ba5507-8b43-4f54-a1d7-9b15644dd56c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f31ad26b6efffa540ecae6a61f0f7ff12115cef
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: faf53415b62550cb2091ffc9741ed2eeef60bbcc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933799"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076927"
 ---
 # <a name="warning-task"></a>Warning 任务
 
@@ -35,7 +36,7 @@ ms.locfileid: "99933799"
 
  下表描述了 `Warning` 任务的参数。
 
-| 参数 | 说明 |
+| 参数 | 描述 |
 |---------------| - |
 | `Code` | 可选 `String` 参数。<br /><br /> 与警告相关联的警告代码。 |
 | `File` | 可选 `String` 参数。<br /><br /> 指定相关文件（如果有）。 如果未提供任何文件，则使用包含 Warning 任务的文件。 |

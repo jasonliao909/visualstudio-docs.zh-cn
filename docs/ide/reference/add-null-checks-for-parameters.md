@@ -6,17 +6,17 @@ ms.date: 09/17/2019
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
-manager: jillfra
+manager: jmartens
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 5828a2bb28f7b3085cd5d43c452c520a730b8175
-ms.sourcegitcommit: 935e4d9a20928b733e573b6801a6eaff0d0b1b14
+ms.openlocfilehash: 5a53f31b0cdd30585b6f1c5e662787d1d8195187
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "95870958"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785957"
 ---
 # <a name="add-null-checks-for-all-parameters"></a>为所有参数添加 null 检查 
 

@@ -14,14 +14,15 @@ ms.assetid: c5a8a4bf-0e2b-46eb-a44a-8aeb29b92c32
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 975e93fb2bb9f09810c8b6c6c1877bec983ca0a4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c787cb853ce259f9aec7cf932d0f9e59d0b595c1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99958162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117158"
 ---
 # <a name="rebuild-devenvexe"></a>/Rebuild (devenv.exe)
 

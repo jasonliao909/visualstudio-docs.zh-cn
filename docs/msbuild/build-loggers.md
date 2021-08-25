@@ -12,14 +12,15 @@ ms.assetid: fa34810d-185a-4d22-92bd-9852915e5f1d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b676fe015f5f513a069ffaf6ae4fac59c1a5fa68
-ms.sourcegitcommit: 80fc9a72e9a1aba2d417dbfee997fab013fc36ac
+ms.openlocfilehash: a2ae63b8d658eff88a8da22123ca6aba40cf676a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106213896"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085216"
 ---
 # <a name="build-loggers"></a>生成记录器
 
@@ -86,7 +87,7 @@ MSBuild -nologo -noconsolelogger -logger:SimpleLogger.dll -verbosity:Detailed
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_Misc/msbuild_BasicLogger/CS/msbuild_BasicLogger.cs" id="Snippet1":::
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [获取生成日志](../msbuild/obtaining-build-logs-with-msbuild.md)
 - [MSBuild 概念](../msbuild/msbuild-concepts.md)

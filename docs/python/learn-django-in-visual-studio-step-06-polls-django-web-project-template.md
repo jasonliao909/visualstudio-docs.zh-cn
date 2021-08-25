@@ -7,17 +7,18 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 monikerRange: vs-2017
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b52cc9615eb4829aede06ae65c152e47b3ff3844
-ms.sourcegitcommit: f1dff6c4532c43b0444aa12ea57e90bb7dba6fba
+ms.openlocfilehash: 69b675f19060cf57d8c9dca03414709de5545199
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104806025"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054478"
 ---
 # <a name="step-6-use-the-polls-django-web-project-template"></a>步骤 6：使用投票 Django Web 项目模板
 

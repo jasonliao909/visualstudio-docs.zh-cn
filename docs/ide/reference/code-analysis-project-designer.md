@@ -13,14 +13,15 @@ ms.assetid: 71743d26-4da5-4f7d-a403-7ab96cf2ef2e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 475e220a4c2dfc739c3055eb541ef89a6966cabb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3ec311a051133ae2c01734f767caa77810860518
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99963271"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101539"
 ---
 # <a name="code-analysis-project-designer"></a>“项目设计器”->“代码分析”
 

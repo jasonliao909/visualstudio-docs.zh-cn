@@ -19,14 +19,15 @@ ms.assetid: 624d9649-5946-4298-a138-70773b72e810
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 99180c941f82a33db0432e12414a061fc29a7f35
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 885ddedc327fe29ec27d3b8dcd182c6d151589d2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99872022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122030961"
 ---
 # <a name="edit-and-continue-dialog-box-c"></a>“编辑并继续”对话框 (C++)
 “编辑并继续”未能应用您对本机代码所做的更改。 这可能是一种临时情况。 有时“编辑并继续”不能立即应用本机代码更改，但稍后可在调试会话期间应用本机代码更改（例如，完成调用正在执行的过程之后）。 有关详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。

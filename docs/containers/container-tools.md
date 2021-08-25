@@ -4,14 +4,14 @@ author: ghogen
 description: 了解如何使用 Visual Studio 容器工具和用于 Windows 的 Docker
 ms.author: ghogen
 ms.date: 01/24/2020
-ms.technology: vs-azure
+ms.technology: vs-container-tools
 ms.topic: quickstart
-ms.openlocfilehash: d2bf74903b4fc90c7c47383d9a1207d2d86ac94c
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: c7209c71f754909e2ad5d15db7764973a992f2dc
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103295741"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122147359"
 ---
 # <a name="quickstart-docker-in-visual-studio"></a>快速入门：Visual Studio 中的 Docker
 

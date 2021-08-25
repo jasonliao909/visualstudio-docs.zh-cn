@@ -8,14 +8,15 @@ ms.assetid: 30ec235a-0abb-44b9-8852-61bc9e67ce22
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e4006803364407fed4b837ea992a95429c1db39
-ms.sourcegitcommit: aeed3eb503d0b282537b073ebae8c028c4fef750
+ms.openlocfilehash: 26a9aff077e3cb7cda6e809546f850fc6a9fc754
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232656"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122044086"
 ---
 # <a name="copy-programmatic-capture"></a>复制（编程捕获）
 将活动图形日志 (.vsglog) 文件的内容复制到新文件。

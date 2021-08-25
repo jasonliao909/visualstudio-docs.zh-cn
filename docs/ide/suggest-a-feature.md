@@ -6,14 +6,15 @@ ms.topic: conceptual
 author: madskristensen
 ms.author: madsk
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 75841186ca78089cf84ca91f18445243acc42ac8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b53eafbe19fc634e35a7e1c1376aa7247e6d9c1c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040796"
 ---
 # <a name="suggest-a-feature-for-visual-studio"></a>建议 Visual Studio 功能
 
@@ -26,18 +27,6 @@ ms.locfileid: "99970746"
 ![Visual Studio 中的“提供建议”菜单](media/suggest-a-feature/provide-suggestion.png)
 
 选择“提供建议”会转到[开发人员社区](https://aka.ms/feedback/suggest?space=8)，可在其中输入建议  。
-
-## <a name="user-voice"></a>UserVoice
-
-到目前为止，VisualStudio 用户在 User Voice 上提交新的功能建议。 通过向开发人员社区添加“功能建议”功能，可在同一个位置留存针对 Visual Studio 产品团队的所有反馈  。
-
-User Voice 网站设为只读模式。 可以根据需要查看上下文，但所有新功能建议须在开发人员社区中提交。
-
-我们将最初的一系列功能建议从 UserVoice 论坛迁移到开发人员社区。 迁移依据为反馈造成的社区影响力，以及产品路线图优先级。 如果我们漏迁移了应迁移的功能建议，你可以随时将它添加到开发人员社区中。
-
-## <a name="votes"></a>投票
-
-开发人员社区中的投票系统与 User Voice 不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们在各个功能建议旁边以标记形式突出显示了 UserVoice 投票数。 当你继续在功能增强的开发人员社区中对功能建议进行投票时，新投票数与 UserVoice 投票数分开显示。
 
 ## <a name="suggestion-status"></a>功能建议状态
 
@@ -107,32 +96,6 @@ User Voice 网站设为只读模式。 可以根据需要查看上下文，但�
 “已完成 - 已发布”  表示新功能建议已在最新产品更新中发布。 可单击注释中的链接，下载 Visual Studio 更新。
 
 - - -
-
-## <a name="faq"></a>FAQ
-
-### <a name="why-cant-i-see-my-user-voice-idea-in-developer-community"></a>为什么在开发者社区中看不到我的 UserVoice 功能建议？
-
-我们已根据功能建议对更广泛社区造成的影响力和产品路线图优先级，将旧版 UserVoice 论坛中的新功能建议迁移到开发人员社区中。 如果你认为我们漏迁移了你的功能建议，请将它作为新功能建议添加到开发人员社区中。
-
-### <a name="why-have-the-votes-not-been-carried-over-from-user-voice"></a>为什么没有将 UserVoice 中的投票数迁移过来？
-
-UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持新系统的投票数完整性，并避免发生投票数据倾斜， 我们决定在各个功能建议旁边以标记形式突出显示 UserVoice 投票数。 如果用户使用开发人员社区对提交的功能建议进行投票，新投票数将与 UserVoice 投票数分开显示。
-
-### <a name="where-can-i-see-comments-associated-with-the-suggestions-imported-from-user-voice"></a>我在哪里可以看到从 UserVoice 导入的功能建议的相关注释？
-
-单击我们已添加的链接，即可返回到针对已迁移到开发人员社区的某个建议的 UserVoice 评论。 此链接在迁移期间提供是为了方便你在需要更多上下文时进行参考。
-
-### <a name="why-can-i-see-three-vote-counts-for-a-suggestion"></a>为什么我能看到一个功能建议有三个投票数？
-
-已从 UserVoice 导入的功能建议会有三个分开显示的投票数。 以标记形式显示的两个投票数是功能建议最初在 UserVoice 上获得的投票数。 借助在功能建议左侧显示的第三个投票数，可查看功能建议在开发人员社区中获得的投票数。
-
-UserVoice 和开发人员社区的投票系统工作原理不同。 为了保持开发人员社区的投票数完整性，并避免发生投票数据倾斜，我们决定在各个功能建议旁边以标记（而不是投票数）形式突出显示 UserVoice 投票数。
-
-### <a name="how-long-can-i-expect-actions-to-take"></a>你们多久能对我的功能建议采取措施？
-
-我们全面致力于听取功能建议并采取相应措施，以为客户提供有价值的用户体验。 设定对功能建议采取措施的优先级的依据为，它对更广泛社区造成的影响力。 即使我们无法亲自回复每个功能建议，你也可以尽管放心，相应团队会收到你的反馈并进行仔细评估。
-
-回复时间取决于反馈所处的状态。 请查看本文档中的状态说明，以了解回复时间。
 
 ## <a name="see-also"></a>请参阅
 

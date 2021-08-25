@@ -8,15 +8,16 @@ ms.assetid: 17a48848-bd3e-44ef-9971-e39836ff1df2
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - dotnet
-ms.openlocfilehash: 81311e9dea2c5367b44cdf2cc8e2327a8aff5617
-ms.sourcegitcommit: 20f546a0b13b56e7b0da21abab291d42a5ba5928
+ms.openlocfilehash: 2d0bc0d26c6d7232f0264455c9e4a2db987aef47
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104884104"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122033468"
 ---
 # <a name="how-to-launch-a-stand-alone-net-framework-application-with-the-profiler-to-collect-concurrency-data-by-using-the-command-line"></a>如何：使用探查器启动独立 .NET Framework 应用程序，并通过命令行收集并发数据
 本主题介绍了如何使用 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具命令行工具启动 .NET Framework 独立（客户端）应用程序，并收集进程和线程并发数据
@@ -39,7 +40,7 @@ ms.locfileid: "104884104"
 
    - [/start](../profiling/start.md) 选项可初始化探查器。
 
-     | Command | 说明 |
+     | 命令 | 说明 |
      |-------------------------------------| - |
      | **/start:concurrency** | 允许收集资源争用和线程执行数据。 |
      | **/start:concurrency,resourceonly** | 允许仅收集资源争用数据。 |

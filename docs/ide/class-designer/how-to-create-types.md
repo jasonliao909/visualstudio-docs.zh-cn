@@ -17,14 +17,15 @@ ms.assetid: 94458c31-28bc-40e2-9737-85868788a0e5
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6102d5252564834f1de7c533e763d7b08a8f9fb0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 51379952830a518b6a5f57cfed75d632f3c3f0c2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99880536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102020"
 ---
 # <a name="how-to-create-types-by-using-class-designer"></a>如何：使用类设计器创建类型
 

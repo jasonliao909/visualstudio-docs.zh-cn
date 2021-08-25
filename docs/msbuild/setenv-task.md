@@ -19,14 +19,15 @@ ms.assetid: fd9e4225-68cb-4608-8b27-468b0218c936
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 76fc0d0dafac542ffde8656c643ec01b7ce23a39
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c760e22842a3063036d0e4f8c2945ddefc312900
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99861668"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122136659"
 ---
 # <a name="setenv-task"></a>SetEnv 任务
 

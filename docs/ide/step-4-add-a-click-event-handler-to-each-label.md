@@ -4,8 +4,6 @@ description: 了解如何将 click 事件处理程序添加到每个标签。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - vb
@@ -13,14 +11,15 @@ ms.assetid: 16bdbc7c-4129-411d-bace-f4a3e5375975
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: ffaa3986ee5ef23f007d6e66a30b75eb8b06bff4
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 088a6a3b3f606b2c857afc624d044f5d4a8f0b04
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122132049"
 ---
 # <a name="step-4-add-a-click-event-handler-to-each-label"></a>步骤 4：向每个标签添加一个 Click 事件处理程序
 

@@ -11,12 +11,13 @@ ms.assetid: 31874114-459a-45d5-9f8b-2ea503627db8
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: a01d82b5b6e2e703ffa7c1f722e22440f0f3e24d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 5497459ba737e48299558046cd17d0cdf4cb99d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99868135"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115312"
 ---
 # <a name="report-load-tests-results-for-test-comparisons-or-trend-analysis"></a>报告负载测试结果以进行测试比较或趋势分析
 

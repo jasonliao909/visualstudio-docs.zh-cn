@@ -11,15 +11,16 @@ ms.assetid: 3e84e513-dc64-40bb-b385-03281f28b519
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: d40ce1ff5f66b2d04425d116d84dc7aa40571b08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 2d05d89dfb47c2ccd383acce542c7a1ebc45200b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922231"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122027482"
 ---
 # <a name="performance-report-views"></a>性能报告视图
 本节提供有关 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 分析工具报告和视图的参考信息。 分析数据文件的视图显示在 [!INCLUDE[vs_current_short](../code-quality/includes/vs_current_short_md.md)] 集成开发环境 (IDE) 中。 报告由 [VSPerfReport](../profiling/vsperfreport.md) 命令行工具生成。

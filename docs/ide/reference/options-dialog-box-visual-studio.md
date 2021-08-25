@@ -15,14 +15,15 @@ ms.assetid: 02b09877-1df1-4531-a0d1-a4ca17c7f857
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 79bd2d95a12aa7c42705d106cf71b4061a020431
-ms.sourcegitcommit: 113b7df611583307d3965984233a33355d6b0318
+ms.openlocfilehash: 65da75976642997f626de1aeeab52b4d88a948fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/16/2021
-ms.locfileid: "112126536"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101019"
 ---
 # <a name="options-dialog-box-visual-studio"></a>“选项”对话框 (Visual Studio)
 

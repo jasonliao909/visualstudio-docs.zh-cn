@@ -6,15 +6,16 @@ ms.date: 03/02/2018
 ms.topic: reference
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 4eef06bb48730fba9ba1df145857d41323cbfdd7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8c73edda39e77b0744eec6abb494ee93ba592f5e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946314"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092223"
 ---
 # <a name="use-the-mstest-framework-in-unit-tests"></a>在单元测试中使用 MSTest 框架
 

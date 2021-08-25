@@ -7,6 +7,7 @@ ms.topic: reference
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vsl.GenerateFromUsage
 dev_langs:
@@ -14,12 +15,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 094dac3cea088bcede1ae251eec73c9741f6de6c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3af7bb3f8a52029c0b9e11df802b8f4788711af0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99897994"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034300"
 ---
 # <a name="generate-a-class-or-type-in-visual-studio"></a>在 Visual Studio 中生成类或类型
 
@@ -50,7 +51,7 @@ ms.locfileid: "99897994"
 2. 接下来，执行以下操作之一：
 
    - **键盘**
-      - 按“Ctrl”+ **。** 触发“快速操作和重构”菜单。
+      - 按“Ctrl”  + **。** 触发“快速操作和重构”菜单。
    - **鼠标**
       - 右键单击并选择“快速操作和重构”菜单。
       - 将鼠标悬停在红色波形曲线上，然后单击出现的 ![错误灯泡](media/error-bulb.png) 图标。

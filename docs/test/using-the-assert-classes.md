@@ -10,15 +10,16 @@ helpviewer_keywords:
 - unit tests, Assert classes
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 1f064ee1ca41aab19e19fa6006d983a76ed006d7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 09edc60284a8ff4d26a670123427cbf3a3ae1385
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99946197"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038352"
 ---
 # <a name="use-assert-classes-for-unit-testing"></a>使用 Assert 类进行单元测试
 

@@ -17,14 +17,15 @@ ms.assetid: 476e3d98-cf35-4338-b124-cd0f3010d854
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: bfb5099bd0fab17cd983af4e16a435fd192a1668
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 444b9c2860e3e79a5fea5b673b68881a1fec4294
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99883865"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090104"
 ---
 # <a name="when-breakpoint-is-hit-dialog-box"></a>“命中断点时”对话框
 借助此对话框，你可以自定义命中断点时执行的操作。

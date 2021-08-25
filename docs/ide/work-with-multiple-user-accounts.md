@@ -4,17 +4,18 @@ description: 了解如何将所有 Microsoft 帐户添加到 Visual Studio，以
 ms.custom: SEO-VS-2020
 ms.date: 03/02/2021
 ms.topic: conceptual
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 689b1fb47c137059f3aef7b7a20fd614a9058ec4
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 44391718babe74dc2c7b2398189909aadec624d9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296022"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061654"
 ---
 # <a name="work-with-multiple-user-accounts"></a>Work with multiple user accounts
 

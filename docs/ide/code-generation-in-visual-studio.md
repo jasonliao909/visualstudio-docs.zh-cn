@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 63845d6dbfd8cffda9258690481253827b29754b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abf1098b3c117cdc549eb530e2b9eac682ff55bd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950453"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101877"
 ---
 # <a name="code-generation-features-in-visual-studio"></a>Visual Studio 中的代码生成功能
 

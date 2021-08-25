@@ -11,14 +11,15 @@ ms.assetid: 14972d5f-69bc-479b-9529-03b8787b118f
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 670809ea2c9ef04107dbec5634f40831b68b94c1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b9d0c820877d30d0228c996538e320508dad2661
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931495"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080775"
 ---
 # <a name="disable-the-just-in-time-debugger"></a>禁用实时调试器
 
