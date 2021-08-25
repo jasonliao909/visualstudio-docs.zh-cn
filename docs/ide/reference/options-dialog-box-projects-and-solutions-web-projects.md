@@ -10,14 +10,15 @@ ms.assetid: ea813046-1ae6-4c9f-9784-dc41494101b9
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f2ca34a1576543c360809346a69ffa3208790bb3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: cdc6bad3abf4321e26ef66af1387aec1beb1598f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041199"
 ---
 # <a name="options-dialog-box-projects-and-solutions-web-projects"></a>选项对话框、项目和解决方案、Web 项目
 

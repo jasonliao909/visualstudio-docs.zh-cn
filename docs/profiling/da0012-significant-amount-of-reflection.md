@@ -12,15 +12,16 @@ ms.assetid: c92a1d76-21fa-426e-8b1b-a3c08e9bcbca
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 733f9d6c38b93005c0344de2f3d5b1d43093c12e
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: aecafde31cf799122b9aae60003c1de22b026c8e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469956"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084306"
 ---
 # <a name="da0012-significant-amount-of-reflection"></a>DA0012：大量反射
 

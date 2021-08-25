@@ -17,12 +17,13 @@ ms.assetid: 0ee89c58-c900-48fc-a6a2-65ace00e8bab
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: ad53c99656096fec2393ecbd9f63fbffe1343e9a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: eaab9f7fbadaca22aac88ec62d0331f6dee995fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924804"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122086230"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 

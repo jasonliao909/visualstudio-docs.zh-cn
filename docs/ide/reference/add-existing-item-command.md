@@ -13,14 +13,15 @@ ms.assetid: 41f56131-d4c7-4f81-83b7-bdac713ea870
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 43c9e7d5947796bb1598bf9dc02420b31e43d167
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ff4f6cb0e5c7dd45618615246c4c652e8611bf4a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99933825"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041290"
 ---
 # <a name="add-existing-item-command"></a>“添加现有项”命令
 将现有文件添加到当前解决方案中并打开它。

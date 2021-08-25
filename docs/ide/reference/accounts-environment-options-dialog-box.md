@@ -10,14 +10,15 @@ ms.assetid: 3cfe09d2-1120-46e8-b882-f7056acb778b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b0c640b670802e3bb69a26d0b49bee6695955170
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9fb7def00f37a8f396de37d644ab826a412250ed
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99956771"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062363"
 ---
 # <a name="accounts-environment-options-dialog-box"></a>“帐户”、“环境”、“选项”对话框
 

@@ -7,18 +7,19 @@ ms.topic: reference
 author: governesss
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 f1_keywords:
 - vs.csharp.refactoring.make.local.function.static
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 050ce5e90d9141892ff65602ca560d0add83da5d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: df6ccc1827ca67cd761d615191869bc52fecc082
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99967184"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062064"
 ---
 # <a name="static-local-function-refactorings-and-quick-actions"></a>静态本地重构和快速操作
 

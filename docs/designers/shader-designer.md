@@ -11,14 +11,15 @@ ms.assetid: 5db09a16-b82c-4ba3-8ec9-630cdc109397
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: b637c4cf1b065426bb4070d2e08bf59984c8ff23
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 02b59924a2b2020d6c5855f5e91f41615601a19d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902362"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073651"
 ---
 # <a name="shader-designer"></a>着色器设计器
 

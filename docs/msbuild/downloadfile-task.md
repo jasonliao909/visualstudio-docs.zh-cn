@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0c68b468cac63d556e9757210c8ce2933d94cba6
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 44f1f59b30cca2cd547766350285491c348d3513
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877208"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077616"
 ---
 # <a name="downloadfile-task"></a>DownloadFile 任务
 

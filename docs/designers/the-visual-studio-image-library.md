@@ -16,14 +16,15 @@ ms.assetid: f7a2e7c8-3b9f-4f8e-a6a8-000d72e3811d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 94e95917e65f8b455fe6ff27a7d7c57843172827
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7142b77d3823bdc7d95a792d3c90e53e95e38b6d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902214"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122073586"
 ---
 # <a name="the-visual-studio-image-library"></a>Visual Studio 图像库
 

@@ -10,14 +10,15 @@ ms.assetid: 20dae076-733e-49c1-a2e9-b336757ae21d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f7927ff370ab05f4931cb0346f00f65157a411d0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7033a842c9de61feb392cf145576cb27dacdf6fa
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99937922"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077022"
 ---
 # <a name="resolve-assemblies-at-design-time"></a>在设计时解析程序集
 

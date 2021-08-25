@@ -9,14 +9,15 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: ffe45c444321a7efbaee0a2eb5729850a06c5910
-ms.sourcegitcommit: 99b66b0f4ced46ead0b2506a103f974f40cc0076
+ms.openlocfilehash: 68ca8dbe123fd0585a321fbefd49fd61713f4329
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103366266"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038443"
 ---
 # <a name="upgrade-from-mstestv1-to-mstestv2"></a>从 MSTestV1 升级到 MSTestV2
 

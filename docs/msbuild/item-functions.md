@@ -10,14 +10,15 @@ ms.assetid: 5e6df3cc-2db8-4cbd-8fdd-3ffd03ac0876
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 64759ba2b973c0acf7f2aad20b065fbd99d4d289
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 534a1abf01f3b1493018c4d7adb5161e1a02cf60
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99913964"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077343"
 ---
 # <a name="item-functions"></a>项函数
 

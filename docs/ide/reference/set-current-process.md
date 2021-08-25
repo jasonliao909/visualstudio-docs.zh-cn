@@ -11,14 +11,15 @@ ms.assetid: 1e016ebd-aadd-411f-a606-03bf69d3f8aa
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cef9475e9336acd5c10cee604d453706ea7321c5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d118ac31d86fcf2935b6c7864ee7cdf2a8d5ad2a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957798"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062090"
 ---
 # <a name="set-current-process"></a>设置当前进程
 将指定的进程设置为调试器中的活动进程。

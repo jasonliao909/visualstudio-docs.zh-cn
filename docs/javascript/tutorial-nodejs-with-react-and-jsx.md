@@ -8,16 +8,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 3299f38e99c6b96cacd3c3661937a29bdec3c93d
-ms.sourcegitcommit: 809fff25b7701882c899c639eeb6da38ad4fb88a
+ms.openlocfilehash: 55672b542bc2418cc1c5b2b7cf300072e8215695
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112550696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077772"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 

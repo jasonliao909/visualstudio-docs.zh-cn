@@ -10,14 +10,15 @@ ms.assetid: 511a0697-c68a-4988-9e29-8d0166ca044a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aad883ac0c3f703b2d6a4e10d3a0ef2468cd8465
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: f06bb143bfb10940d107dccc038dc852b54efb2e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798435"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065796"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 

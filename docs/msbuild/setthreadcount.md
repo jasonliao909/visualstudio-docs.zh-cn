@@ -15,14 +15,15 @@ ms.assetid: 335335a5-8ca0-4e18-95f5-62aa6a691386
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: f7282b8c4589007492e48994628910b3a4ef0691
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 35649f2ae7c0aec8b713573fc5b9f8f29e86ac2f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966157"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084813"
 ---
 # <a name="setthreadcount"></a>SetThreadCount
 

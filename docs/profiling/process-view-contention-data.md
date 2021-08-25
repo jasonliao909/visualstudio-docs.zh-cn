@@ -9,15 +9,16 @@ ms.assetid: 8821d98c-0771-43b2-a38b-e9039a3abd75
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 60f137c470b31ddccfa9b26cb907b13288d07dc1
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 64c7266ec8cfa8ca14053feafacc6dcafa74fc0c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957304"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076355"
 ---
 # <a name="process-view---contention-data"></a>“进程”视图 - 争用数据
 “进程”视图显示在分析运行期间执行的进程和线程的争用数据。

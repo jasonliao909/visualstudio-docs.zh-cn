@@ -5,12 +5,12 @@ ms.assetid: 41CB62FF-0F39-4CE8-8917-6A77F058719F
 author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
-ms.openlocfilehash: 241820de009a5118869583bbe228ecb0604f9001
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.openlocfilehash: b33b6d3f0865ca338512f744f5b924ae2992179a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74985285"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122082538"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 
@@ -67,10 +67,10 @@ ms.locfileid: "74985285"
 
 - **应用服务名称** – 计划的唯一名称/ID
 - **订阅** – 想要用于支付该服务的订阅
-- **资源组** – 一种为项目组织所有 Azure 资源的方法。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
+- **资源组** – 一种为某个项目组织所有的 Azure 资源的方式。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请创建一个新资源组。
 - **服务计划** – 确定使用计划的任何资源的位置和成本。 可以选择使用现有资源组，也可以创建新的。 如果是第一个 Azure 服务，请使用默认服务计划或在免费层 (F1) 中创建新的。
 
-访问[移动应用文档](/azure/app-service-mobile/)，获取详细信息。
+访问[移动应用文档](/azure/developer/mobile-apps/azure-mobile-apps/overview)，获取详细信息。
 
 ## <a name="see-also"></a>另请参阅
 

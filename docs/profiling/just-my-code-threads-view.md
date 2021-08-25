@@ -11,14 +11,15 @@ ms.assetid: a9ac8a2c-9d99-4207-8ed4-e87f033f440d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f09b3e0837adf9490e9c10c81f18ff9fc9c5573e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8613a3857325f80e8aa700230b44cadcf691dd11
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99918037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038768"
 ---
 # <a name="just-my-code-threads-view"></a>仅我的代码（线程视图）
 如果选择此选项，将筛选调用堆栈，仅显示你的代码和一级被调用的函数。

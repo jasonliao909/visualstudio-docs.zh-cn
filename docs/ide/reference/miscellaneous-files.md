@@ -18,14 +18,15 @@ ms.assetid: 5b96640b-8efe-48a4-8d0a-1ae3f9587e44
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7a8257dad083378c9e4454f0c048fea7ed06e2dd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: db9b62e2e3135045c2a4a822585f2e69fe85b02a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99902760"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041238"
 ---
 # <a name="miscellaneous-files"></a>杂项文件
 

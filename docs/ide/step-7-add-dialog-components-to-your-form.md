@@ -5,19 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: ea98c55e-6213-4893-ba7b-f19d7f119527
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 66a6663cfbbcc212f05f75a8bc87bf30a3e4f880
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: f4122b2e22f071a10ba3e39a8fd4a1287355ceb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107297062"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078019"
 ---
 # <a name="step-7-add-dialog-components-to-your-form"></a>步骤 7：向窗体添加对话框组件
 

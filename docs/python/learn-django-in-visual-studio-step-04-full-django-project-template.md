@@ -7,16 +7,17 @@ ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
 manager: jmartens
+ms.technology: vs-python
 ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3c0a0f0f4e009d689a69e840b31281e65bc5a0e2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b95f4dec53abb1e4a02790b2434f6b8577115ec2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99942550"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038521"
 ---
 # <a name="step-4-use-the-full-django-web-project-template"></a>步骤 4：使用完整的 Django Web 项目模板
 
@@ -35,15 +36,15 @@ ms.locfileid: "99942550"
 
 ## <a name="step-4-1-create-a-project-from-the-template"></a>步骤 4-1：通过模板创建项目
 
-1. 在 Visual Studio 中，转到解决方案资源管理器，右键单击在本教程前面创建的“LearningDjango”解决方案，并选择“添加” > “新项目”。 （或者，如果想要使用新的解决方案，请改为选择“文件”   > “新建”   > “项目”  。）
+1. 在 Visual Studio 中，转到解决方案资源管理器，右键单击在本教程前面创建的“LearningDjango”解决方案，并选择“添加” > “新项目”   。 （或者，如果想要使用新的解决方案，请改为选择“文件”   > “新建”   > “项目”  。）
 
-1. 在“新建项目”对话框中，搜索并选择“Django Web 项目”模板，调用项目“DjangoWeb”并选择“确定”   。
+1. 在“新建项目”对话框中，搜索并选择“Django Web 项目”模板，调用项目“DjangoWeb”并选择“确定” 。
 
 1. 因为模板再次包含 requirements.txt 文件，Visual Studio 会询问在何处安装这些依赖项  。 选择“安装到虚拟环境”  选项，然后在“添加虚拟环境”  对话框中，选择“创建”  以接受默认设置。
 
-1. 在 Visual Studio 完成设置虚拟环境后，按照 readme.html 中显示的说明创建 Django 超级用户（即管理员）  。 只需右键单击 Visual Studio 项目并选择“Python”   > “Django 创建超级用户”  命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
+1. 在 Visual Studio 完成设置虚拟环境后，按照 readme.html 中显示的说明创建 Django 超级用户（即管理员）。 只需右键单击 Visual Studio 项目并选择“Python” > “Django 创建超级用户”命令，然后按照提示进行操作。 请务必记录你的用户名和密码，因为在执行应用的身份验证功能时会用到。
 
-1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在解决方案资源管理器中右键单击该项目，然后选择“设为启动项目”    。 启动项目（以粗体显示）会在启动调试器时运行。
+1. 若要将“DjangoWeb”项目设置为 Visual Studio 解决方案的默认值，可以在解决方案资源管理器中右键单击该项目，然后选择“设为启动项目”  。 启动项目（以粗体显示）会在启动调试器时运行。
 
     ![将 DjangoWeb 项目显示为启动项目的解决方案资源管理器](media/django/step04-second-project-in-solution-set-as-startup-project.png)
 
@@ -68,12 +69,12 @@ ms.locfileid: "99942550"
 在最广泛的层面上，“Django Web 项目”模板创建以下结构：
 
 - 项目根目录中的文件：
-  - manage.py，Django 管理实用工具  。
-  - db.sqlite3，默认 SQLite 数据库  。
-  - requirements.txt 包含了 Django 1.x 上的依赖项  。
-  - readme.html，此文件在创建项目后显示在 Visual Studio 中  。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
-- app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）  。 通常会重命名此文件夹，使用一个更有特色的应用名称。
-- DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py。 通过使用项目模板，已经为应用和数据库文件配置了 settings.py，且为 urls.py 配置了到所有应用程序页（包括登录窗体）的路由   。
+  - manage.py，Django 管理实用工具。
+  - db.sqlite3，默认 SQLite 数据库。
+  - requirements.txt 包含了 Django 1.x 上的依赖项。
+  - readme.html，此文件在创建项目后显示在 Visual Studio 中。 如上一节所述，请按照此处的说明为应用创建一个超级用户（管理员）帐户。
+- app 文件夹包含所有应用文件，包括视图、模型、测试、窗体、模板和静态文件（请参阅步骤 4-2）。 通常会重命名此文件夹，使用一个更有特色的应用名称。
+- DjangoWeb （Django 项目）文件夹包含典型的 Django 项目文件：\_\_init\_\_.py、settings.py、urls.py 和 wsgi.py    。 通过使用项目模板，已经为应用和数据库文件配置了 settings.py，且为 urls.py 配置了到所有应用程序页（包括登录窗体）的路由。
 
 ### <a name="question-is-it-possible-to-share-a-virtual-environment-between-visual-studio-projects"></a>问：能否能在 Visual Studio 项目之间共享虚拟环境？
 
@@ -87,7 +88,7 @@ ms.locfileid: "99942550"
 
 ## <a name="step-4-2-understand-the-views-and-page-templates-created-by-the-project-template"></a>步骤 4-2：了解通过项目模板创建的视图和页面模板
 
-正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 app/views 文件夹中  。 每个视图函数都只是调用 `django.shortcuts.render`，其中包含通往模板和简单字典对象的路径。 例如，“关于”页面由 `about` 函数来处理：
+正如你在运行项目时所观察到的，该应用包含三个视图：“主页”、“关于”和“联系信息”。 这些视图的代码位于 app/views 文件夹中。 每个视图函数都只是调用 `django.shortcuts.render`，其中包含通往模板和简单字典对象的路径。 例如，“关于”页面由 `about` 函数来处理：
 
 ```python
 def about(request):
@@ -104,7 +105,7 @@ def about(request):
     )
 ```
 
-模板位于应用的 templates/app 文件夹中（通常希望将 app 重命名为实际应用名称）   。 基本模板 layout.html 的使用最为广泛  。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 layout.html 的注释的摘录内容显示了这些特定区域  ：
+模板位于应用的 templates/app 文件夹中（通常希望将 app 重命名为实际应用名称）。 基本模板 layout.html 的使用最为广泛  。 它指的是所有必需的静态文件（JavaScript 和 CSS），定义了其他页面覆盖的名为“内容”的块，并提供了另一个名为“脚本”的块。 以下来自 layout.html 的注释的摘录内容显示了这些特定区域  ：
 
 ```html
 <!DOCTYPE html>
@@ -169,7 +170,7 @@ templates / app 文件夹中还具有第 4 页 login.html，以及使用 `{% inc
 
 ## <a name="step-4-3-understand-the-url-routing-created-by-the-template"></a>步骤 4-3：了解模板创建的 URL 路由
 
-由“Django Web 项目”模板创建的 Django 项目的 urls.py 文件包含以下代码  ：
+由“Django Web 项目”模板创建的 Django 项目的 urls.py 文件包含以下代码：
 
 ```python
 from datetime import datetime
@@ -204,11 +205,11 @@ urlpatterns = [
 ]
 ```
 
-前三个 URL 模式直接映射到应用 views.py 文件中的 `home`、`contact` 和 `about` 视图中  。 另一方面，模式 `^login/$` 和 `^logout$` 使用内置的 Django 视图，而不是应用定义的视图。 对 `url` 方法的调用还包含用于自定义视图的额外数据。 步骤 5 探讨了这些调用。
+前三个 URL 模式直接映射到应用 views.py 文件中的 `home`、`contact` 和 `about` 视图中。 另一方面，模式 `^login/$` 和 `^logout$` 使用内置的 Django 视图，而不是应用定义的视图。 对 `url` 方法的调用还包含用于自定义视图的额外数据。 步骤 5 探讨了这些调用。
 
 ### <a name="question-in-the-project-i-created-why-does-the-about-url-pattern-uses-about-instead-of-about-as-shown-here"></a>问：在我创建的项目中，为什么“about”URL 模式使用此处所示的“^about”而不是“^about$”？
 
-答：正则表达式中缺少尾随的“$”是许多版本的项目模板中的一个普遍疏忽。 URL 模式非常适用于名为“about”的页面，但如果没有尾随的“$”，URL 模式还会匹配诸如“about=django”、“about09876”、“aboutoflaughter”等 URL。 此处显示的尾随“$”用于创建 URL 模式，该模式只  匹配“about”。
+答：正则表达式中缺少尾随的“$”是许多版本的项目模板中的一个普遍疏忽。 URL 模式非常适用于名为“about”的页面，但如果没有尾随的“$”，URL 模式还会匹配诸如“about=django”、“about09876”、“aboutoflaughter”等 URL。 此处显示的尾随“$”用于创建 URL 模式，该模式只匹配“about”。
 
 ## <a name="next-steps"></a>后续步骤
 

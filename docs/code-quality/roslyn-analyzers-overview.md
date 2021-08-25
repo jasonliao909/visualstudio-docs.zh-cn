@@ -12,14 +12,15 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
-ms.openlocfilehash: c3a7192ac55dc4138746e3e1e1abe4eaa6928395
-ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+ms.openlocfilehash: a0b477f4dcb5d7c2148b40f648c41b9fea5a1578
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108798331"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059367"
 ---
 # <a name="overview-of-source-code-analysis"></a>源代码分析概述
 

@@ -10,14 +10,15 @@ helpviewer_keywords:
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3156b1236a130478d83fe82c8fa462a1144a8e6a
-ms.sourcegitcommit: f50bbdb15c4f9fca0fa245ca765183c378960cc5
+ms.openlocfilehash: 6b61d197321605e787eb36efeff2f3d6dc51e050
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/03/2021
-ms.locfileid: "111351950"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061566"
 ---
 # <a name="c-intellisense"></a>C# IntelliSense
 

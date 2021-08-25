@@ -5,17 +5,18 @@ ms.custom: contperf-fy21q1
 ms.date: 09/11/2020
 ms.topic: how-to
 ms.assetid: b9531c25-e4cf-43ae-b331-a9f31a8cd171
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4b4c91a2ff4693b62ce8ac4d40d493995c52b81b
-ms.sourcegitcommit: 4e09130bcd55bb9cb8ad157507c23b67aa209fad
+ms.openlocfilehash: 8d674a46ec68810df8575f963bccf9b2ed70f574
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/09/2021
-ms.locfileid: "113549467"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040939"
 ---
 # <a name="sign-in-to-visual-studio-on-windows"></a>在 Windows 上登录到 Visual Studio 
 

@@ -6,17 +6,18 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9d7a21bbd3e51ee6a6776ca728a545cbbb731cab
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: c3dec3fb8f00f763ea898b17e97c3714c75bfddb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466272"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034287"
 ---
 # <a name="extract-base-class"></a>提取基类
 

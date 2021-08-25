@@ -3,19 +3,19 @@ title: Visual Studio Community 2017 工作负载和组件 ID
 titleSuffix: ''
 description: 使用工作负载和组件 ID 通过命令行安装 Visual Studio 或指定为 VSIX 清单中的依赖项
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.date: 2/12/2019
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 ms.topic: include
-ms.openlocfilehash: ec1a9fe14a5bf78395b76f0dc85f4ad061ed3329
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 6937993e8612ed023d8ac1a7d031a6d8e6f3ac32b7f422e970d4a132b2c3020d
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "110449732"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "122085790"
 ---
 ## <a name="visual-studio-core-editor-included-with-visual-studio-community-2017"></a>Visual Studio 核心编辑器（Visual Studio Community 2017 随附）
 

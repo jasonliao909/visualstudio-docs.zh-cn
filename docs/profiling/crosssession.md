@@ -8,15 +8,16 @@ ms.assetid: b9fcb9c3-7903-478c-9b7c-dbd94092fcba
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: a52acb80bac511706086c56074eb5bfe450b7674
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4dffc4946f0476bb9b93f39392d310ced5c8e824
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99955900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039054"
 ---
 # <a name="crosssession"></a>CrossSession
 通过 VSPerfCmd.exe“CrossSession”选项，探查器可从任何控制台会话收集数据 。 “CrossSession”选项必须与“Start”选项一起使用。

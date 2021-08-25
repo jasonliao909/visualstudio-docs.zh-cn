@@ -3,10 +3,10 @@ title: Visual Studio Enterprise 工作负载和组件 ID
 titleSuffix: ''
 description: 使用 Visual Studio Enterprise 工作负载和组件 ID 通过命令行安装 Visual Studio 或在 VSIX 清单中指定一个依赖项。
 keywords: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.date: 05/25/2021
+ms.date: 08/10/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
@@ -16,12 +16,12 @@ ms.assetid: be73e3af-d87b-4d14-bd08-2e4bda074fb3
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: ad505ef8d57d5d681fd0b5b0af0ccba72f83780f
-ms.sourcegitcommit: 4a91c63683ba1c1832b1ba96657862a849320d81
+ms.openlocfilehash: 707d8effa4a1b0c87d2f3eea9fdb0069cacaaaa2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110565240"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077879"
 ---
 # <a name="visual-studio-enterprise-component-directory"></a>Visual Studio Enterprise 组件目录
 

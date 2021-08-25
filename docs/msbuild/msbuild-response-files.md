@@ -18,14 +18,15 @@ ms.assetid: 9f53987b-20ee-470a-ab62-fce997bb5e15
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 17a4e10864776540c176fd6911917071aa42c656
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: abe7882e18936b169cfcd0b02e7eaa66c891f5a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99860862"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085008"
 ---
 # <a name="msbuild-response-files"></a>MSBuild 响应文件
 

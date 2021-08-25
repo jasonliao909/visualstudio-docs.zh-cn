@@ -12,15 +12,16 @@ ms.assetid: 2c4fb569-929e-4f1d-8c50-b590ee371351
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: e80f9161e435a3b2b615aed700714a0c3cd0efa4
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: f5f4dfccfdc8814992ecdac095408efabdd3f2d8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102469970"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076667"
 ---
 # <a name="da0004-high-processor-usage"></a>DA0004：处理器使用情况很高
 

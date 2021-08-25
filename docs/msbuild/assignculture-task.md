@@ -18,14 +18,15 @@ ms.assetid: 8f8314cc-82a6-4f16-a62d-b9f0d1d5e274
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c837046380550f5a0a73aaba888cbf26be0c1586
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0d758a906bf65f3efd91f9c9aba0c64ef95567d4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99923844"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085294"
 ---
 # <a name="assignculture-task"></a>AssignCulture 任务
 

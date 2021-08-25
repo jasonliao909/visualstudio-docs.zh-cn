@@ -14,14 +14,15 @@ ms.assetid: d2ee0301-ea78-43d8-851a-71b7b2043d73
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: b5fb35c1cd30f872d2a58504f73596357cc60025
-ms.sourcegitcommit: a0f5e7188838c5989c9cc78d99fb29bb2813501e
+ms.openlocfilehash: c0b3bb8102020e7b091ea7c6127f449b4ef70eca
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109729320"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122038690"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 

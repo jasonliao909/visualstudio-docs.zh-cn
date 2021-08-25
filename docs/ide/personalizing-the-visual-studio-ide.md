@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 9a1bcfdc9489ee59f5697f1d96de21e31a71fb17
-ms.sourcegitcommit: 5035ccb32fb5e06451337cbf9a150687082ae2af
+ms.openlocfilehash: 58c1e114e8562e678adf3ab93aa548d1951c014e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107373162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041316"
 ---
 # <a name="personalize-the-visual-studio-ide"></a>个性化设置 Visual Studio IDE
 

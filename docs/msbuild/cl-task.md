@@ -21,14 +21,15 @@ ms.assetid: 651ba971-b755-4f03-a549-4816beb3cc0d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 542d84f4c0279c1f76fa1ea29a244e78c53b394d
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b3f2d4fb5ce1a3ef2f5b4710067efdfe335231f0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99878430"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040042"
 ---
 # <a name="cl-task"></a>CL 任务
 

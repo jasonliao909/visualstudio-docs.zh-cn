@@ -17,12 +17,13 @@ ms.assetid: fa0c4dd9-612f-4a57-b8eb-458f129d9cda
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 832b4f9257c328989b2d4d0f7db3bb5f49ec4f08
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-test
+ms.openlocfilehash: 9e0177154cec399a509046679f7336097873fbc5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971851"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075861"
 ---
 # <a name="how-to-select-a-load-test-results-repository"></a>如何：选择负载测试结果存储库
 

@@ -10,14 +10,15 @@ ms.assetid: 1e639182-1301-4e28-9c1e-b5df732f3f1b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 9d52d04565b03d988d5d01a64e561fc0da8a16e3
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 1573b19318e86f5c7cdff796756b476728ce42ba
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885243"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058592"
 ---
 # <a name="graphics-frame-validation"></a>图形帧验证
 <!-- VERSIONLESS -->

@@ -22,14 +22,15 @@ ms.assetid: f2085314-a3a8-4caf-a5a4-2af9ad5aad05
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0356f05c3f0dac636813d1632f628dd02dd28923
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 042a1ce4b4e2c180de46bc8609000df97b422c86
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893121"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080697"
 ---
 # <a name="macros-for-reporting"></a>用于报告的宏
 可以使用在 CRTDBG.H 中定义的 _RPTn 和 _RPTFn 宏替换 `printf` 语句进行调试 。 未定义 _DEBUG 时，不必将它们括在 #ifdef 内，因为它们会在发布版本中自动消失 。

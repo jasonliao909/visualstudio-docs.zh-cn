@@ -10,14 +10,15 @@ ms.assetid: b32e4318-e656-441a-abfa-d38b81096924
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 804292f5666cc8ce0061fadbd9264608d55c4613
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e46f2d21b35a08851d35bf9d3fb4d8f452e58235
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99866068"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122059107"
 ---
 # <a name="about-microsoft-spy"></a>关于 Microsoft Spy++
 此对话框用于显示有关 Spy++ 的版权、版本、所有权和其他信息。

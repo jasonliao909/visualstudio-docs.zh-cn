@@ -16,14 +16,15 @@ ms.assetid: 8e0333c4-1ddc-4abe-8f1c-d19bf6a2a07a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: aadaf90c0af8083537fdc837374ce2efa2c4a0e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ee9709d77d5e359d14cbfa30ae23e3bfc9e94a68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893173"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122080736"
 ---
 # <a name="limitations-on-wcf-debugging"></a>WCF 调试的限制
 有三种开始 WCF 服务调试的方式：

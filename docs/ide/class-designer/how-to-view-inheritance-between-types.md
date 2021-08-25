@@ -14,14 +14,15 @@ ms.assetid: ea3f0ada-f53b-4fb1-9fb5-908286f5ec3e
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7ea00767912b934891780e440016ea8bd0268e78
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ba469d7f4d9460b6c53ae37432d65a941e0d8fcb
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951779"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078448"
 ---
 # <a name="how-to-view-inheritance-between-types-in-class-designer"></a>如何：在类设计器中查看类型之间的继承
 

@@ -20,14 +20,15 @@ ms.assetid: c0ddbe32-b99f-4425-acf1-f48842804f56
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 20f97c7597dc266fbb4334daf27d3660b351f35a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 528a34c6f9d7ecbe4ab3254e779441a4bc307239
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870826"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122065574"
 ---
 # <a name="executable-for-debugging-session-dialog-box"></a>“调试会话的可执行文件”对话框
 

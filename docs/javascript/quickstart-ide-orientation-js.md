@@ -8,14 +8,15 @@ ms.topic: quickstart
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 ms.workload:
 - multiple
-ms.openlocfilehash: 2dd480bb214acf2529d271d085711f21effea23a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 724c6bb1a106fad6d6ceac0cae6f6e7968175447
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99952923"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085840"
 ---
 # <a name="first-look-at-the-visual-studio-ide"></a>初步了解 Visual Studio IDE
 
@@ -158,7 +159,7 @@ Visual Studio 顶部的菜单栏将命令分组成不同的类别。 例如，�
 > [!div class="nextstepaction"]
 > [了解项目和解决方案](../get-started/tutorial-projects-solutions.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)
 - [Visual Studio 2017 的更多功能](../ide/advanced-feature-overview.md)

@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 00f04a99d98cc4fefc3223b97f8e1e4614314215
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: b940ac63a47425a1a1cb3887c3785700f572192b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680236"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122075965"
 ---
 # <a name="work-with-sql-server-and-r"></a>使用 SQL Server 和 R
 
