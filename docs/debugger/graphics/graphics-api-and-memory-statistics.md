@@ -11,14 +11,15 @@ ms.assetid: 27d2f303-e3ed-4219-9009-345a0d849506
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 08c9f518f6d56f2ec211ef494da3890a56bf1369
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7cdd9def44588dacb6995dee966e8f23266aff51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99882292"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122121032"
 ---
 # <a name="graphics-api-and-memory-statistics"></a>图形 API 和内存统计信息
 <!-- VERSIONLESS -->

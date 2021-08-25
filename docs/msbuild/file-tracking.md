@@ -10,14 +10,15 @@ ms.assetid: e6c66ac0-3464-451f-9192-3b98dca21b4a
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d61c3478515f2c8fa867666e6ff4ff72a0d4e65b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: bbf72728ac4f8538e38744e54a3e0fc51f8931b7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877117"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122093939"
 ---
 # <a name="file-tracking"></a>文件跟踪
 

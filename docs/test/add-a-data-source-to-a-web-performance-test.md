@@ -11,12 +11,13 @@ ms.assetid: 2ada376d-f168-455d-9643-6acb535360c1
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
-ms.openlocfilehash: 71aa3dbf4657896093dae59451140f48f83f1622
-ms.sourcegitcommit: 01a411cd7ae3488b7b979a947bca92fd296a98e9
+ms.technology: vs-ide-test
+ms.openlocfilehash: 61e84588dee91b8bf17d74780f76539d478b3c1b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111760999"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122068756"
 ---
 # <a name="add-a-data-source-to-a-web-performance-test"></a>将数据源添加到 Web 性能测试
 

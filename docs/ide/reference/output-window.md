@@ -15,14 +15,15 @@ ms.assetid: d8931d88-250e-4db4-963f-2c5b3e99b45f
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: bbc6f33c439a812d7153f48d7f20d7e1d9dd3cb1
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: e65f2af8cd4c16f4daff629ef9dbcbaaaf1752f4
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925158"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041082"
 ---
 # <a name="output-window"></a>“输出”窗口
 

@@ -8,14 +8,15 @@ ms.assetid: 42ab17ca-b8c1-40d7-beda-d033f66fe874
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 2c26bd749fac3d458a5983380fc09bd40a2a645a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4c630d4acf88bd1a3eb776e3ca63cf65fb833449
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99849770"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122130242"
 ---
 # <a name="context-menus-xml-schema-explorer"></a>上下文菜单（XML 架构资源管理器）
 

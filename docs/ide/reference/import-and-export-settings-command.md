@@ -12,14 +12,15 @@ ms.assetid: 94a06468-a44d-403d-a931-77bbc9d06e56
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: dba50cf598c3c74f6c9407fbef5d55f938941a11
-ms.sourcegitcommit: 63cb90e8cea112aa2ce8741101b309dbc709e393
+ms.openlocfilehash: 3074371bbf76d3f393e89655d85e2ed1a08ec58e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110687638"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101266"
 ---
 # <a name="import-and-export-settings-command-vssettings-file"></a>导入和导出设置命令（.vssettings 文件）
 

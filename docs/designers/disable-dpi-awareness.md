@@ -5,13 +5,14 @@ ms.date: 09/28/2020
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.topic: conceptual
-ms.openlocfilehash: f63d831127951815f28955e72ae29b1a4d7f5a3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3b4ae4cd215546744172ab64890254c488823e92
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99917091"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122089779"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中禁用 DPI 感知
 

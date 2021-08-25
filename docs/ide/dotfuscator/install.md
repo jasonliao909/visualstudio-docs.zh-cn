@@ -22,12 +22,13 @@ ms.assetid: f2146651-e24a-4e24-ade8-8ddee8ff4e43
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 9f4ca634aa226437b6d8790837c9f95f778a00c0
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 43047bfe02f510d65e7e72995af9a38f4afe8aa8
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99924770"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124017"
 ---
 # <a name="install-dotfuscator-community"></a>安装 Dotfuscator Community
 

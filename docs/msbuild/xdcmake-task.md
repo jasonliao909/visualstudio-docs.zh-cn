@@ -19,14 +19,15 @@ ms.assetid: a7de9c64-903a-4a02-85f3-f37672270f25
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a867146d48b5ba6c4bfb2ac33b45c505b6f6c37
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b5821f567ae06717665f055f23ec19348855d6da
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99971045"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108143"
 ---
 # <a name="xdcmake-task"></a>XDCMake 任务
 
@@ -54,6 +55,6 @@ ms.locfileid: "99971045"
 |**SuppressStartupBanner**|可选 **Boolean** 参数。<br /><br /> 如果为 `true`，则在任务开始时阻止显示版权和版本号消息。<br /><br /> 有关详细信息，请参阅 [XDCMake 参考](/cpp/build/reference/xdcmake-reference)中的“/nologo”选项。|
 |**TrackerLogDirectory**|可选 **String** 参数。<br /><br /> 指定跟踪器日志目录。|
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [任务参考](../msbuild/msbuild-task-reference.md)

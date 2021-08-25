@@ -12,14 +12,15 @@ ms.assetid: deee6f53-ea87-4b88-a120-bea589822e03
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - dotnet
-ms.openlocfilehash: 61197fcfe84c96eed2c46b662f93a06386bb9c1e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0af48178d270bcce0a83b81aa54fface2b0b1e3b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99931834"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084826"
 ---
 # <a name="register-extensions-of-the-net-framework"></a>注册 .NET Framework 的扩展
 

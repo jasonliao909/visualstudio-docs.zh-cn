@@ -18,14 +18,15 @@ ms.assetid: b1dfb467-f3d3-47f3-83ef-af7b0e33a772
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 164f9f91eda1d81db00d25bb4e18a6cbb352e41e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 5b94efabb17c0c88a962744e173efc155feca9d0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914629"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108871"
 ---
 # <a name="getwinfxpath-task"></a>GetWinFXPath 任务
 

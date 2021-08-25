@@ -11,15 +11,16 @@ ms.assetid: ee5e964c-1222-496d-b825-166443a89d2b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: acb27aa2d5a1a0dd032612635f4b6549fa6671e9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 227cdea76d9c64952ebbd7dc452bbe0e5e49f501
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941276"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039730"
 ---
 # <a name="common-data-views"></a>公共数据视图
 本部分包含有关所有分析方法公用的探查器数据文件的视图和报告的有关参考信息。

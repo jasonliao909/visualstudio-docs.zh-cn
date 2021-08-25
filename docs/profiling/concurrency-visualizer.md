@@ -15,14 +15,15 @@ ms.assetid: ae5879a0-1e1a-455a-ba72-148e57f59289
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: becd44d5f7c5a28681d5fd180689909086b23c89
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 03e79801db056e5caf6d9e365015e619b12c6f9c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99941055"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039535"
 ---
 # <a name="concurrency-visualizer"></a>并发可视化工具
 

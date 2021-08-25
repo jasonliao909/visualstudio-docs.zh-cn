@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6cc6604816921b054b0c909177c8e641493920a8
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: 2107eae3f2b25172daf85c625adfa7770f87c1a2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112386191"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122102072"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 

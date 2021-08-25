@@ -11,14 +11,15 @@ ms.assetid: 81d2cf46-7f60-448c-83e3-1d16bb88ca36
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 358d099839c42c20b47b850b84dc3dd307855b3e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a992800a6155aaa8afdd9ae2491b977885199ddd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99951883"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124186"
 ---
 # <a name="how-to-implement-an-interface-in-class-designer"></a>如何：在类设计器中实现接口
 

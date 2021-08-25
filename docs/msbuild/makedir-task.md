@@ -18,14 +18,15 @@ ms.assetid: bc951577-1bfb-4100-b1f1-bc8278c45bf7
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: fa7b853ea6706c4958635c399bbc6134e823223c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 60f50e6e6ce41c87bae812dcda47534426181eb9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99966222"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077239"
 ---
 # <a name="makedir-task"></a>MakeDir 任务
 

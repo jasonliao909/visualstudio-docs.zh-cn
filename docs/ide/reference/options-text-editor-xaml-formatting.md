@@ -29,14 +29,15 @@ ms.assetid: ad3820b1-0d94-4807-a74c-c3467ed973a2
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - uwp
-ms.openlocfilehash: f550499545fda3250f4d2449697513fbc8c09fa2
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 47311af7eee476ac4beea2c73bfa5ab00ed19ea6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99970785"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122069384"
 ---
 # <a name="options-text-editor-xaml-formatting"></a>选项，文本编辑器，XAML，格式
 

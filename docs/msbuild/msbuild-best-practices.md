@@ -11,14 +11,15 @@ ms.assetid: 90ef8693-e921-410a-a377-fe4d13f58c48
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 83527ac4b7d16d2cb06c797924c18f2567f12350
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b96ed3b0e2ece6c8b0cd27c5733c863d4204c513
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919193"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122115754"
 ---
 # <a name="msbuild-best-practices"></a>MSBuild 最佳做法
 

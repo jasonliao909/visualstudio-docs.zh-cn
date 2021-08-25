@@ -7,15 +7,16 @@ ms.assetid: 5e286e61-4548-42cf-a635-e608c5edbe2b
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: de3edb5e9b9c04b53d6b669828020c0999d218e5
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: c521362ecde12a5b996062f6f1e0d07992e26e06
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99922393"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107103"
 ---
 # <a name="output"></a>输出
 “Output”选项指定用于性能会话的分析数据文件的名称。 “Output”必须与“Start”选项配合使用。

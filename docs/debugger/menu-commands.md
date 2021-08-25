@@ -11,14 +11,15 @@ ms.assetid: 9d1aab27-9ac0-4096-8e12-c47503acb2e9
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 704f3e22701d645fb3b05d5b1b66d216cb462e44
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: e6c85fb7570659af613d9141c8f4c84dc62af841
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99885139"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090663"
 ---
 # <a name="menu-commands"></a>菜单命令
 本部分中的“帮助”主题列出了 Spy++ 菜单上提供的命令。

@@ -9,15 +9,16 @@ ms.assetid: 895b9589-1987-4160-916f-53b898a69cf0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 031068d159b7004b7cfe7fcf1c747c2eb582afc8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 9b2139b9483253507f926d9ac0ef37bba155f666
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879769"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122107334"
 ---
 # <a name="modules-view---instrumentation-data"></a>“模块”视图 - 检测数据
 “模块”视图显示按分析数据中的模块分组的性能数据。 模块的各函数在模块节点下列出。

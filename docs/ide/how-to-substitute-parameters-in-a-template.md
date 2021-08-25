@@ -11,12 +11,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 6d7d0a6f45468759dc3ec2349764cf2677aa5d9e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 5642f12f72cdc24bb6a2ef6db921d30482f4ca0e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869227"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078305"
 ---
 # <a name="how-to-substitute-parameters-in-a-template"></a>如何：替换模板中的参数
 

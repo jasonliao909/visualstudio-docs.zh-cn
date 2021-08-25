@@ -15,14 +15,15 @@ ms.assetid: 952d579d-6911-413e-b3e5-54e7e797e70c
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d5f31bb73b4a22a11235e471dfa1fa99545e422e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 89caed1b5721848e570a815e73d62b73608fecbd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99877598"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122128333"
 ---
 # <a name="how-to-flag-and-unflag-threads-c-visual-basic-c"></a>如何：标记线程和取消标记线程（C#、Visual Basic、C++）
 

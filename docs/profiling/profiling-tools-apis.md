@@ -7,15 +7,16 @@ ms.assetid: bd9ca972-e5bf-45a6-9a5d-ac30a4d9ee02
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 59d85b8d299c8417fecbcc7a24c3be25c3eaadd8
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7ea450a9fa89cfb2de31a306faebe15bd4671887
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99893329"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122131243"
 ---
 # <a name="profiling-tools-apis"></a>分析工具 API
 

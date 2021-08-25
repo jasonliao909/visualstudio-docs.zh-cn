@@ -13,14 +13,15 @@ ms.assetid: 032039bc-9477-4f93-9b9d-66d4be0e90f4
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4aec65a1460203d3c02ed75c40e82256151703ba
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 77f9f87bfc745770b6df728ac33d24e36d364052
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907531"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122101448"
 ---
 # <a name="evaluate-statement-command"></a>“计算语句”命令
 

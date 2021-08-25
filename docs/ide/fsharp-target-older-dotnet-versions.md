@@ -6,21 +6,22 @@ ms.topic: troubleshooting
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
 monikerRange: vs-2017
-ms.openlocfilehash: fe9d87a5cdea04251d7ab30b6e9e0fed6b0c4b31
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 18fbd6ea01af196ccf9428a495229972c982a617
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99945521"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122034456"
 ---
 # <a name="target-older-versions-of-net-f"></a>面向 .NET 的较旧版本 (F#)
 
 在 Windows 8.1 上安装 Visual Studio 后，如果尝试在 F# 项目中面向 .NET Framework 2.0、3.0 或 3.5，则可能出现以下错误：
 
-此项目需要 2.0 F# 运行时，但该运行时未安装。 
+此项目需要 2.0 F# 运行时，但该运行时未安装。
 
 已知同时满足以下条件时会出现此错误：
 
@@ -42,13 +43,13 @@ ms.locfileid: "99945521"
 
 ### <a name="to-enable-the-net-framework-35-on-windows-81"></a>在 Windows 8.1 上启用 .NET Framework 3.5
 
-1. 在“开始”屏幕上，键入“控制面板”   。
+1. 在“开始”屏幕上，键入“控制面板”。
 
-   键入时，“应用”标题下将出现“控制面板”图标   。
+   键入时，“应用”标题下将出现“控制面板”图标。
 
-2. 选择“控制面板”图标，选择“程序”图标，然后选择“打开或关闭 Windows 功能”链接    。
+2. 选择“控制面板”图标，选择“程序”图标，然后选择“打开或关闭 Windows 功能”链接。
 
-3. 请确保选中“.NET Framework 3.5 (包括 .NET 2.0 和 3.0)”复选框，然后选择“确定”按钮   。 不需要选择 .NET framework 可选组件的任何子节点对应的复选框。
+3. 请确保选中“.NET Framework 3.5 (包括 .NET 2.0 和 3.0)”复选框，然后选择“确定”按钮。 不需要选择 .NET framework 可选组件的任何子节点对应的复选框。
 
    .NET Framework 3.5 随即启用（如果尚未启用）。
 
@@ -56,7 +57,7 @@ ms.locfileid: "99945521"
 
 请按照[修复 Visual Studio 的步骤](../install/repair-visual-studio.md)执行操作。
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [F# 指南 (.NET Framework)](/dotnet/fsharp/)
 - [Visual Studio 中的 F#](fsharp-visual-studio.md)

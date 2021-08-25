@@ -16,14 +16,15 @@ ms.assetid: c8fcc594-5d37-4e2e-b070-4d9c012043b5
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: c6527a4f54abf147d54e73c8f887b57b70ff4243
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 06ff5cb50453557eff20b2b1ec287d4b03012abf
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914176"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085034"
 ---
 # <a name="how-to-reference-the-name-or-location-of-the-project-file"></a>如何：引用项目文件的名称或位置
 

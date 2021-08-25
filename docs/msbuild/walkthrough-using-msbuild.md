@@ -10,14 +10,15 @@ ms.assetid: b8a8b866-bb07-4abf-b9ec-0b40d281c310
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 8af56d7acb7875e57ad335746c876f938d414bbf
-ms.sourcegitcommit: 2694ab246eb857a1c607738a67198c46f826f106
+ms.openlocfilehash: 1fdd31e296050585044186e31158f893a45b095b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/30/2021
-ms.locfileid: "114995657"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122040055"
 ---
 # <a name="walkthrough-use-msbuild"></a>演练：使用 MSBuild
 

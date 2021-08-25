@@ -8,15 +8,16 @@ f1_keywords:
 - vs.UnitTest.CreateIntelliTest
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 0f23fbacccc4fd46552699a84e657f3a6718941a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dba46c3b111f82bdb6e03eca5442b2f497e8ad3e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936270"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122083799"
 ---
 # <a name="how-to-generate-unit-tests-by-using-intellitest"></a>操作说明：通过使用 IntelliTest 来生成单元测试
 

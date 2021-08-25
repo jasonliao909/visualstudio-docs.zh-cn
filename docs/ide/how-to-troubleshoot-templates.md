@@ -9,12 +9,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 842e34ce18767f5d16cc55d16b8346369fe6cef9
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 00580c7a1e63dd3c68fc9a86b67812ed3a1dfa8b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869110"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085957"
 ---
 # <a name="how-to-troubleshoot-templates"></a>如何：对模板进行故障排除
 

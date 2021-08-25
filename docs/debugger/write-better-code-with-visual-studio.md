@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd3d8e17d90cde50f583dfc0393debf460de7f6
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: f0052faee4e1701b843c71cc6e53dbf89adac7ae
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101684076"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122035873"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>有助于编写更佳代码的调试技术和工具
 
@@ -253,11 +254,11 @@ item.totalpoints += users[i].points;
 
 绿色波浪线消失。
 
-## <a name="fix-an-exception"></a>修复异常
+## <a name="fix-an-exception&quot;></a>修复异常
 
 如果已修复所有红色波浪线表示的问题，并解决（或者至少核查了）所有绿色波浪线表示的问题，就可以启动调试器并运行应用了。
 
-按 F5  （“调试”>“开始调试”  ）或调试工具栏中的“开始调试”  按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")。
+按 F5  （“调试”>“开始调试”  ）或调试工具栏中的“开始调试”  按钮![开始调试](../debugger/media/dbg-tour-start-debugging.png &quot;开始调试")。
 
 此时，示例应用引发 `SerializationException` 异常（运行时错误）。 这表示，应用无法正常处理其尝试序列化的数据。 因为是在调试模式下启动的应用（附加调试器），因此调试器的异常帮助程序会直接转到引发异常的代码，并提供有用的错误消息。
 

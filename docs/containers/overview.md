@@ -5,13 +5,13 @@ author: ghogen
 ms.author: ghogen
 ms.topic: overview
 ms.date: 03/20/2019
-ms.technology: vs-azure
-ms.openlocfilehash: 4f8c1c265f49b600880cd1278b51095fda9cfb1d
-ms.sourcegitcommit: c67dece5ded82a5867148e1f94396954c1ec4398
+ms.technology: vs-container-tools
+ms.openlocfilehash: 29f3c4aa7b1cc72a5404b91227248e8a5739edc2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/07/2021
-ms.locfileid: "97975142"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098016"
 ---
 # <a name="container-tools-in-visual-studio"></a>Visual Studio 中的容器工具
 
@@ -119,9 +119,7 @@ Visual Studio 中的 Docker 支持因版本而异，以响应客户需求。 可
 若要添加 Kubernetes 支持，请安装 [Visual Studio Tools for Kubernetes](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-tools-for-kubernetes)。
 ::: moniker-end
 
-借助 Kubernetes 支持，可以在本地项目和 [Azure Kubernetes 服务 (AKS)](/azure/aks) 中运行的 Kubernetes 群集之间启用连接，从而使用 Visual Studio 修改和调试运行的服务。  此服务由 [Bridge to Kubernetes](overview-bridge-to-kubernetes.md) 提供。 通过 Bridge to Kubernetes，还可以设置 Kubernetes 服务的单独分支用于开发目的，因此可以有效地将生产服务与开发中的工作版本隔离，并使每个修改完全不同。
-
-若要向项目添加 Kubernetes 支持，请在添加容器业务流程支持时选择“Kubernetes/Helm”。 多个文件添加到项目，其中包括 Helm 图表（用于描述 Kubernetes 服务的结构）。 若要开始使用 Bridge to Kubernetes，请参阅[使用 Bridge to Kubernetes](bridge-to-kubernetes.md)。
+借助 Kubernetes 支持，可以在本地项目和 [Azure Kubernetes 服务 (AKS)](/azure/aks) 中运行的 Kubernetes 群集之间启用连接，从而使用 Visual Studio 修改和调试运行的服务。  此服务由 [Bridge to Kubernetes](/visualstudio/bridge/overview-bridge-to-kubernetes) 提供。
 
 ## <a name="service-fabric-support"></a>Service Fabric 支持
 

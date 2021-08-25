@@ -11,14 +11,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 05cfb7cf053a3275b49b76b46bec8054fb105078
-ms.sourcegitcommit: 529e1716924c3e1ac8a750550b996ad3c79f353b
+ms.openlocfilehash: 8f885922e5b383d81d1d7c31faff43e569dc6732
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112066951"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109534"
 ---
 # <a name="create-a-new-project-in-visual-studio"></a>在 Visual Studio 中创建新项目
 

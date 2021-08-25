@@ -21,14 +21,15 @@ ms.assetid: b33aee0b-43c3-4c26-8ed4-bc673f491503
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 928499957ca90dda718f324827968f10cbb3a141
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b72d97d1300a0745270976afcc0a04e163bac406
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870566"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090895"
 ---
 # <a name="general-debugging-options"></a>常规调试选项
 

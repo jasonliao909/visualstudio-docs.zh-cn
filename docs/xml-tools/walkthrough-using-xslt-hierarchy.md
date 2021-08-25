@@ -7,12 +7,13 @@ ms.topic: how-to
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 94c8a26d75b92f9b8d51e3ca61f761985a5b4959
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-xml-tools
+ms.openlocfilehash: 86572a1ebb64b80ca42507959c32ed488640ab07
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875037"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122037702"
 ---
 # <a name="walkthrough-use-xslt-hierarchy"></a>演练：使用 XSLT 层次结构
 

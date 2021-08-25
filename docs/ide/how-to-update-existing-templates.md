@@ -12,12 +12,13 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.openlocfilehash: 12005ce6c280a828aa59c281803cb431cc08587a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.technology: vs-ide-general
+ms.openlocfilehash: 140a3f8a17379a6a3887f51d2359d6515ed43cac
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99869084"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122109131"
 ---
 # <a name="how-to-update-existing-templates"></a>如何：更新现有模板
 

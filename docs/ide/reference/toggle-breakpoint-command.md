@@ -14,14 +14,15 @@ ms.assetid: d50dfadb-ce79-4d5e-9c09-1cfddd57876d
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d0a02cb0659df431b3e6eca7c9ad1f13f8c3676b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0404840f5aa1859c058391c7398f7c2d1fcd86fd
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99886478"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123796"
 ---
 # <a name="toggle-breakpoint-command"></a>“切换断点”命令
 在文件中的当前位置，根据其当前状态打开或关闭断点。

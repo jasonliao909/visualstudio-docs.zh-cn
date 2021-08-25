@@ -22,14 +22,15 @@ caps.latest.revision: 16
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: d6b897a33dacdbd52beaabdd9289a010df92a85c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0110224fb885d6fdb125e187b4233f1a34a9b11d
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99847877"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122039860"
 ---
 # <a name="zipdirectory-task"></a>ZipDirectory 任务
 

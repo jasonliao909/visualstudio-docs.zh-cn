@@ -7,14 +7,15 @@ ms.topic: reference
 author: kendrahavens
 ms.author: kehavens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 3cecafe64f7ead8157a9cb6c80d2f0a245566390
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7068c7cb8edf7f44c981496aa2ac81cea7e82903
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99919720"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085905"
 ---
 # <a name="convert-a-local-function-to-a-method"></a>将本地函数转换为方法
 

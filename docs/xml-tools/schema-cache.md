@@ -8,14 +8,15 @@ ms.assetid: 35a7fcad-f3bf-4a96-9008-4306e7276223
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 3562b7238f9721c4153af02cce594bfb9e134b0c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 213ba44d2a2f7ae24a00ea3d103bc7d04d775616
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99841883"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098666"
 ---
 # <a name="schema-cache"></a>架构缓存
 

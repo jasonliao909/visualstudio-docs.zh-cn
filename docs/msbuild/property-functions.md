@@ -10,14 +10,15 @@ ms.assetid: 2253956e-3ae0-4bdc-9d3a-4881dfae4ddb
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: a47ff76c98c5788fdfca3d633c87664b6802de70
-ms.sourcegitcommit: 8b75524dc544e34d09ef428c3ebbc9b09f14982d
+ms.openlocfilehash: 0a6274a4648dc204bf451aaa68dbc2e47b1ce25e
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/02/2021
-ms.locfileid: "113222949"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084891"
 ---
 # <a name="property-functions"></a>属性函数
 

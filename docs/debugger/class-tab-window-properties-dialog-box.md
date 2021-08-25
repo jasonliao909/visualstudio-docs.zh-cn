@@ -10,14 +10,15 @@ ms.assetid: eaec9f07-d580-436d-934d-76c4e59439aa
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e1d7126fe795e269ee619e03daf2b81d6458f2e7
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 4179680ae5f5c55c322de8fbfc9552923ba3962a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857810"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129735"
 ---
 # <a name="class-tab-window-properties-dialog-box"></a>“窗口属性”对话框 ->“类”选项卡
 使用“类别”选项卡可显示有关所选窗口类别的信息。 若要显示[窗口属性对话框](../debugger/window-properties-dialog-box.md)，将焦点移动到 [Windows 视图](../debugger/windows-view.md)窗口。 在树中选择任意窗口节点，然后从“视图”菜单选择“属性” 。

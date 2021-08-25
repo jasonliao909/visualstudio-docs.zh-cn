@@ -15,14 +15,15 @@ helpviewer_keywords:
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 163fbfd9c2bf0ca56b5b9b6bc11dc48420cfc270
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: dcd5bbeb94db4e75f11333149c075c6b204eed57
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914696"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085060"
 ---
 # <a name="getfilehash-task"></a>GetFileHash 任务
 

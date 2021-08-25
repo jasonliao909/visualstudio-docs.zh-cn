@@ -6,16 +6,17 @@ ms.topic: reference
 author: m-redding
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 20a3524d786b1f03fc3e221d1b257892d9439a0b
-ms.sourcegitcommit: 8590cf6b3351e82827fd21159beefef0c02bf162
+ms.openlocfilehash: dc52c81b8899d5b2d2ef3fb22581d3f7ef6c1a68
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/08/2021
-ms.locfileid: "102466162"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122041095"
 ---
 # <a name="simplify-linq-expression"></a>简化 LINQ 表达式
 

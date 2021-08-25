@@ -13,14 +13,15 @@ ms.assetid: 3dcf52c0-6781-4598-bac2-0094dce67c20
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e1c8d0ade87ee7759593c8a465b43439f71d50d4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 6d003a953c411723ae8b7d52055923db21b85ba6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99957746"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123809"
 ---
 # <a name="set-current-stack-frame-command"></a>“设置当前堆栈帧”命令
 允许设置特定堆栈帧。

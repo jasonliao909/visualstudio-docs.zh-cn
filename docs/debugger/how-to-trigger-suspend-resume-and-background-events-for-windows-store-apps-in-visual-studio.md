@@ -14,14 +14,15 @@ dev_langs:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 5b3fa6ea89b91ccfc2c24b0b2eea162760eae29c
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 01ae0d08e0211c48c8ff96052d7a12fe5f9aeb56
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99896527"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122112771"
 ---
 # <a name="how-to-trigger-suspend-resume-and-background-events-while-debugging-uwp-apps-in-visual-studio"></a>在 Visual Studio 中调试 UWP 应用时如何触发挂起、继续和后台事件
 
@@ -68,7 +69,7 @@ ms.locfileid: "99896527"
 
      ![挂起、继续、终止和后台执行任务](../debugger/media/dbg_suspendresumebackground.png)
 
-### <a name="trigger-a-background-task-when-the-app-is-not-running"></a><a name="BKMK_Trigger_a_background_task_when_the_app_is_not_running"></a> 在应用程序未运行时触发后台任务
+### <a name="trigger-a-background-task-when-the-app-is-not-running&quot;></a><a name=&quot;BKMK_Trigger_a_background_task_when_the_app_is_not_running&quot;></a> 在应用程序未运行时触发后台任务
 
 1. 在要调试的后台任务代码中设置断点。
 
@@ -80,7 +81,7 @@ ms.locfileid: "99896527"
 
     - 对于 Visual C# 和 Visual Basic 项目，选择 **“不启动，但在启动时调试代码”**
 
-         ![C#/VB 调试启动应用程序属性](../debugger/media/dbg_csvb_dontlaunchapp.png "DBG_CsVb_DontLaunchApp")
+         ![C#/VB 调试启动应用程序属性](../debugger/media/dbg_csvb_dontlaunchapp.png &quot;DBG_CsVb_DontLaunchApp")
 
     - 对于 C++ 项目，从“启动应用程序”列表中选择“否”。
 

@@ -8,14 +8,15 @@ ms.assetid: 3d1ad14b-44fb-4cf0-a995-5e2f60026524
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 783f8935b5d9eee25d6569dea9ba48b0eaeae8bd
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: a0dc90b70c20e93a2f454f2ddcd5aa2840593927
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99930925"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122104690"
 ---
 # <a name="how-to-export-a-texture-that-contains-mipmaps"></a>如何：导出包含 mipmap 的纹理
 

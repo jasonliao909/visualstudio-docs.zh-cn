@@ -10,15 +10,16 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: b04d6ab450d933c75190af9baa9ec6f41549bd82
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f016fb7498ec30bab30e58af4d3023be3986ab4f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99950216"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122076810"
 ---
 # <a name="collect-performance-statistics-by-using-sampling"></a>通过采样收集性能统计信息
 

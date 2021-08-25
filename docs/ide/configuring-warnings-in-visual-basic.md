@@ -12,14 +12,15 @@ ms.assetid: 99cf4781-bd4d-47b4-91b9-217933509f82
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a59ee0e3aed10b5fd48fcbf57d9cb69aca3f929e
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 426891ebbd01a4bd51dc61c6f575fec5042767d7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907647"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122124082"
 ---
 # <a name="configuring-warnings-in-visual-basic"></a>在 Visual Basic 中配置警告
 

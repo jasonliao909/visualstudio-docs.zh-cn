@@ -5,19 +5,18 @@ ms.date: 09/11/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
-ms.prod: visual-studio-windows
-ms.technology: vs-ide-general
 author: j-martens
 ms.author: jmartens
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 91488b72559b2e6deff23a5cae389cd9b4001443
-ms.sourcegitcommit: 6d88913a8b5a9e5eda01d3f95205b4d138f440f8
+ms.openlocfilehash: 39bd1f97408f81b486a7c5f4128c71dca686608f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107296503"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078110"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步骤 11：运行图片查看器应用并尝试其他功能
 

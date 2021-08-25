@@ -7,14 +7,15 @@ ms.topic: conceptual
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: 5059bd57c0576d572eb9d8bc89affe8f1538650d
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 4fd62b1641a9da10484d31e5f2eb212a09cbce12
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680155"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060643"
 ---
 # <a name="create-r-projects-in-visual-studio"></a>在 Visual Studio 中创建 R 项目
 

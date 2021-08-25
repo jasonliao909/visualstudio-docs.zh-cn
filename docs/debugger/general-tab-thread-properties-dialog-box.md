@@ -10,14 +10,15 @@ ms.assetid: 46b6c668-6786-456e-97dc-337bcac0d812
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 02ba7d14dad8e4755170ffca7853aa9cc6c85a19
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 30f5fce8a18ec91419c6c81d8c78527e32fd2cc0
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99870540"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122090819"
 ---
 # <a name="general-tab-thread-properties-dialog-box"></a>“线程属性”对话框 ->“常规”选项卡
 使用此对话框可详细了解特定线程。 若要显示此对话框，请将焦点移至[线程视图](../debugger/threads-view.md)窗口，或打开[消息视图](../debugger/messages-view.md)并展开消息。 在树中选择任意线程节点，然后从“视图”菜单中选择“属性” 。

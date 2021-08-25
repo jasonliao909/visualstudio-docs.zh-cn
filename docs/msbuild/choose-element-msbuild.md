@@ -19,14 +19,15 @@ ms.assetid: 7b8b025a-d944-4f5c-9018-c89fc2ef146d
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 4a3cb3ae9ef120954bb3c299cdf310a32da69845
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8248ad385d3c1af5dde264a9c04c58acbf4f32b7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99939508"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077720"
 ---
 # <a name="choose-element-msbuild"></a>Choose 元素 (MSBuild)
 

@@ -7,18 +7,19 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 19e755e4b56675265d85a416684f2b42bd7ccd13
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: eedab2e2d826b44728b4f29569c9086b70eba4a1
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99907659"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122123926"
 ---
 # <a name="convert-anonymous-type-to-class"></a>将匿名类型转换为类
 

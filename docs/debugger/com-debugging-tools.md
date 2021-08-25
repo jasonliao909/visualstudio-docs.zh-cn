@@ -21,14 +21,15 @@ ms.assetid: 4296ad30-6952-46cb-b002-6b34eee1993a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f8ccdd59d523c771671abfd8511ecc6bcd34732b
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: d4f35cc78c94db0925d3682a06cc27d30770f68a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857748"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122129709"
 ---
 # <a name="com-debugging-tools"></a>COM 调试工具
 

@@ -8,15 +8,16 @@ helpviewer_keywords:
 - IntelliTest, Warnings and errors
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 69fea3216602bf78084ef9141280fd4ba7aa4c57
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6197b73c407069cca3ff20c862895c61e59b13a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99920404"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122092353"
 ---
 # <a name="warnings-and-errors"></a>警告和错误
 

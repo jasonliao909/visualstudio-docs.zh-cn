@@ -8,14 +8,15 @@ ms.assetid: da54db0b-3a3d-48dc-858c-7ac43aa04b13
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-designers
 ms.workload:
 - multiple
-ms.openlocfilehash: 968dea4745f804f99bd38c6e564244987ae9277a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 578c28672f9c194fa954992afd6b38db0458a1f5
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99926401"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122127748"
 ---
 # <a name="parameter-nodes"></a>参数节点
 
