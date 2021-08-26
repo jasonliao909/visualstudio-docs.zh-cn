@@ -16,14 +16,15 @@ ms.assetid: 8b8eca0d-122f-4eda-848a-cf0945f207d0
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: d7723a87471b8f76b9496fe8e7b01e56d1440ee2
-ms.sourcegitcommit: 15109ead7991f52092502518a6f4d9061cc22cd2
+ms.openlocfilehash: ffaa8d1dde6e1304cda0dec33809a01e36fdd56b
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/12/2021
-ms.locfileid: "100335256"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122161166"
 ---
 # <a name="remote-debugging-a-c-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C++ 项目
 若要调试其他计算机上的 Visual Studio 应用程序，请在将要部署应用的计算机上安装和运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后部署和运行应用。

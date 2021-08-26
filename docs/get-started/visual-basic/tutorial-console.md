@@ -2,24 +2,24 @@
 title: 教程：Visual Basic 入门
 description: 了解如何在 Visual Studio 中逐步创建 Visual Basic 控制台应用。
 ms.custom: vs-acquisition,  get-started
-ms.date: 02/10/2021
+ms.date: 08/13/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: 8d34fef6251da95b6c3ac99430b87d853d4b5ba7
-ms.sourcegitcommit: e3a364c014ccdada0860cc4930d428808e20d667
+ms.openlocfilehash: b9b652e792c6fd1623676c50eb8737e5877b68e3
+ms.sourcegitcommit: 4cf966e03cdce4c520f6d4bde0b2711c099e0edd
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112390706"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122188710"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -99,8 +99,8 @@ ms.locfileid: "112390706"
    > [!NOTE]
    > 如果未看到“控制台应用程序”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png) 
-   > 
+   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   >
    > 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../../get-started/media/dot-net-core-xplat-dev-workload.png)
@@ -212,11 +212,11 @@ ms.locfileid: "112390706"
 
     ![显示“CalculateThis”应用的控制台窗口，其中提示了要执行的操作。](media/vb-console-calculate-this.png)
 
-::: moniker-end 
+::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-1. 在“开始”窗口上，选择“创建新项目”。 
+1. 在“开始”窗口上，选择“创建新项目”。
 
 1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。
 
@@ -252,6 +252,8 @@ ms.locfileid: "112390706"
     ![显示“CalculateThis”应用的控制台窗口，其中提示了要执行的操作。](media/vb-console-calculate-this.png)
 
 ::: moniker-end
+
+[!INCLUDE[../includes/git-source-control.md](../includes/git-source-control.md)]
 
 ## <a name="quick-answers-faq"></a>快速解答常见问题
 
