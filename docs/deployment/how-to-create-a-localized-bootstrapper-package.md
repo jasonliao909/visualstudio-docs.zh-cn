@@ -1,6 +1,6 @@
 ---
-title: 创建本地化的引导程序包 |Microsoft Docs
-description: 了解如何通过为每个区域设置创建两个文件，在 ClickOnce 中创建引导程序包的本地化版本。
+title: 创建本地化引导程序包|Microsoft Docs
+description: 了解如何通过为每个区域设置再创建两个文件，在 ClickOnce 创建引导程序包的本地化版本。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,23 +15,23 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 95b1d4e68f6508751d79fab2970d79cb74577e55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e508781cfad49a81751c2ab1f828cc5ce74a303d
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090000"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980657"
 ---
 # <a name="how-to-create-a-localized-bootstrapper-package"></a>如何：创建本地化的引导程序包
-创建引导程序包后，您可以通过为每个区域设置创建两个文件来创建每个区域设置的本地化版本的引导程序包：软件许可条款文件 (例如 *eula*) 和包清单 (*package.xml*) 。
+创建引导程序包后，可以通过为每个区域设置再创建两个文件来创建引导程序包的本地化版本：软件许可条款文件 (例如 *eula.rtf*) 和包清单 (package.xml *) 。*
 
  默认情况下，Visual Studio 2010 只包括 .NET Framework 4、.NET Framework 4 Client Profile、F# Runtime 2.0 和 F# Runtime 4.0 的本地化引导程序包。 你可以通过完成三步操作来为其他引导程序创建本地化包。
 
-1. 在 \Program 文件中创建一个名为的文件夹， *(x86) \microsoft sdk \ ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName>* 的区域名称。
+1. 创建一个文件夹，该文件夹以 \Program Files (*x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages 中的区域设置 \\ \<BootstrapperPackageName> 名称命名*。
 
 2. 创建包含引导程序包的软件许可条款的文件并将其放入新的文件夹中。
 
-3. 创建名为 *package.xml* 的包清单，更新字符串和区域性，然后将该文件放入新文件夹。 如果已创建了目标语言中 Visual Studio 的引导程序，则可以复制 Visual Studio *package.xml* 文件，并在此步骤中修改它。
+3. 创建名为 *package.xml清单，* 更新字符串和区域性，将文件放入新文件夹中。 如果已创建目标语言Visual Studio的引导程序，可以复制Visual Studiopackage.xml *文件，* 并在此步骤中对其进行修改。
 
 > [!NOTE]
 > 如果使用安装项目来部署应用程序，则可以通过更改“本地化”属性来本地化应用程序。
@@ -42,9 +42,9 @@ ms.locfileid: "122090000"
 
 1. 创建以区域设置名称命名的文件夹。
 
-     在32位计算机上，在 *\Program Files\Microsoft sdk \ \\ \<BootstrapperPackageName> \\ ClickOnce Bootstrapper\Packages* 文件夹中创建文件夹。
+     在 32 位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ 文件夹中* 创建 文件夹。
 
-     在64位计算机上， *(x86) \microsoft sdk \ \\ \<BootstrapperPackageName> \\ ClickOnce Bootstrapper\Packages* 文件夹中的 \Program 文件中创建文件夹。
+     在 64 位计算机上，在 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages \\ \<BootstrapperPackageName> \\ 文件夹中创建* 文件夹。
 
      下表显示可以用来匹配区域设置的文件夹名称。
 
@@ -58,7 +58,7 @@ ms.locfileid: "122090000"
     |西班牙语|es|
     |法语|fr|
     |意大利语|it|
-    |朝鲜语|ko|
+    |韩语|ko|
     |日语|ja|
     |波兰语|pl|
     |葡萄牙语(巴西)|pt-BR|
@@ -73,28 +73,28 @@ ms.locfileid: "122090000"
 
 5. 更改 `<String Name="Culture">` 值以匹配文件夹名称。
 
-6. 保存 *package.xml* 文件。
+6. 保存package.xml *文件* 。
 
 ### <a name="to-create-a-bootstrapper-package-for-net-framework-35-service-pack-1-localized-in-french"></a>为用法语本地化的 .NET Framework 3.5 Service Pack 1 创建引导程序包
 
 1. 创建名为 fr 的文件夹。 该文件夹名称必须与区域设置名称匹配。
 
-     在32位计算机上，在 *\Program Files\Microsoft sdk \ ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
+     在 32 位计算机上，在 *\Program Files\Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建 文件夹。
 
-     在64位计算机上， *(x86) \microsoft sdk \ ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中的 \Program 文件中创建文件夹。
+     在 64 位计算机上，在 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1 \\* 文件夹中创建文件夹。
 
-2. 将软件许可条款的本地化版本置于 *fr* 文件夹中。
+2. 将软件许可条款的本地化版本放入 *fr* 文件夹。
 
-3. 将 *(x86) \microsoft sdk \ ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 文件中的 \Program 文件复制到 *fr* 文件夹，然后在 XML 设计器中打开该文件。
+3. 将 *\Program Files (x86) \Microsoft SDKs\ClickOnce Bootstrapper\Packages\DotNetFX35SP1\en\package.xml* 文件复制到 *fr* 文件夹，然后打开 XML 设计器中的 文件。
 
 4. 更新包清单的 `<Strings>` 部分，以便用法语表示错误字符串。
 
-5. 将 `<String Name="Culture">` 值更改为 *fr*。
+5. 将值 `<String Name="Culture">` 更改为 *fr*。
 
-6. 保存 *package.xml* 文件。
+6. 保存package.xml *文件* 。
 
 >[!NOTE]
-> 从 Visual Studio 2019 Update 7 版本的引导程序包开始，还会在路径 *<VS Install Path> \ MSBuild \Microsoft\VisualStudio\BootstrapperPackages* 下发现。
+> 从 Visual Studio 开始，还会在 *路径 {VS Install Path}\MSBuild\Microsoft\VisualStudio\BootstrapperPackages* 下发现 2019 Update 7 版本引导程序包。
 
 ## <a name="see-also"></a>请参阅
 - [创建引导程序包](../deployment/creating-bootstrapper-packages.md)
