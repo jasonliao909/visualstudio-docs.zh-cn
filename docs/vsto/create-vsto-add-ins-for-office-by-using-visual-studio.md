@@ -14,16 +14,16 @@ manager: jmartens
 ms.technology: office-development
 ms.workload:
 - office
-ms.openlocfilehash: cde476569626270fb7c27f6e49abe8b33a953751
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 46330c69b89b297b82ce70d3fb6eb0b7bd7d95df
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026715"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981068"
 ---
 # <a name="create-vsto-add-ins-for-office-by-using-visual-studio"></a>使用 Visual Studio 创建 VSTO 外接程序
 > [!IMPORTANT]
-> VSTO依赖于[.NET Framework。](https://docs.microsoft.com/dotnet/framework/get-started/overview) COM 外接程序也可使用 .NET Framework。 Office无法使用 .NET Core 和[.NET 5+](https://docs.microsoft.com/dotnet/core/dotnet-five)（最新版本的 .NET）创建外接程序。 这是因为 .NET Core/.NET 5+ 不能与同一进程中.NET Framework，并且可能会导致外接程序加载失败。 可以继续使用 .NET Framework 为VSTO和 COM 外接程序编写Office。 Microsoft 不会更新 VSTO COM 外接程序平台以使用 .NET Core 或 .NET 5+。 可以利用 .NET Core 和 .NET 5+（包括 ASP.NET Core）来创建 Web 外接程序 Office[服务器端](https://docs.microsoft.com/office/dev/add-ins/overview/office-add-ins)。
+> VSTO依赖于[.NET Framework。](/dotnet/framework/get-started/overview) COM 外接程序也可使用 .NET Framework。 Office无法使用 .NET Core 和[.NET 5+](/dotnet/core/dotnet-five)（最新版本的 .NET）创建外接程序。 这是因为 .NET Core/.NET 5+ 不能与同一进程中.NET Framework，并且可能会导致外接程序加载失败。 可以继续使用 .NET Framework 为 VSTO 和 COM 外接程序Office。 Microsoft 不会更新 VSTO COM 外接程序平台以使用 .NET Core 或 .NET 5+。 可以利用 .NET Core 和 .NET 5+（包括 ASP.NET Core）来创建 Web 外接程序 Office[服务器端](/office/dev/add-ins/overview/office-add-ins)。
 
   可以使用 Visual Studio 中的 Microsoft Office 开发人员工具来创建可扩展 Office 的 .NET Framework 应用程序。 这些应用程序也称为“Office 解决方案” 。
 
@@ -33,7 +33,7 @@ ms.locfileid: "122026715"
 
  有关开发的最新Office，请参阅 Microsoft Office[开发人员中心](https://developer.microsoft.com/office/docs)。
 
-## <a name="in-this-section"></a>本节内容
+## <a name="in-this-section"></a>在本节中
 - [开始&#40;Office开发Visual Studio&#41;](getting-started-office-development-in-visual-studio.md)
 
  提供一些链接，这些链接指向有关如何配置开发计算机以创建 Office 解决方案、如何开始创建 Office 解决方案以及 Visual Studio 中的 Office 开发的新增功能的信息。
@@ -72,7 +72,7 @@ ms.locfileid: "122026715"
 
 - [Project解决方案](project-solutions.md)
 
- 提供有关如何在外接程序中Microsoft Office自动化项目VSTO项目的信息。
+ 提供有关如何在外接程序中Microsoft Office和创建项目VSTO的信息。
 
 - [Visio解决方案](visio-solutions.md)
 
@@ -102,7 +102,7 @@ ms.locfileid: "122026715"
 
  提供指向示例应用程序和主题的链接，这些主题提供有关执行常规任务的分步说明。
 
-- [&#40;Office开发一般Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
+- [&#40;Office开发中的一般Visual Studio&#41;](general-reference-office-development-in-visual-studio.md)
 
  提供有关主互操作程序集Office清单、用户界面元素和错误消息的详细信息的链接。
 
@@ -119,7 +119,7 @@ ms.locfileid: "122026715"
 
 - [Visual Studio开发人员中心](https://visualstudio.microsoft.com/)提供其他Visual Studio资源，例如技术文章、视频和博客。
 
-- [Microsoft Office MSDN 库的开发部分](/previous-versions/office/office-12/bb726434(v=office.12))MSDN 库的区域，可在其中找到有关为多个版本的 Office (开发解决方案的文章和参考文档Office使用 Visual Studio) 。
+- [Microsoft Office MSDN 库的开发部分](/previous-versions/office/office-12/bb726434(v=office.12))MSDN 库的区域，可在其中找到有关为多个版本的 Office (开发解决方案的文章和参考文档，Office使用 Visual Studio) 。
 
 - [应用程序中的应用程序Visual Studio](/previous-versions/h8w79z10(v=vs.140))包含一些主题的链接，这些主题说明如何使用 Visual Studio设计、开发、调试和部署 Web 应用程序、XML Web 服务与传统客户端应用程序。
 
