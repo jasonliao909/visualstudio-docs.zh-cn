@@ -7,14 +7,15 @@ ms.topic: reference
 author: kraigb
 ms.author: kraigb
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: acfd103e3839115c795de57c8e3359058885b7a6
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: 9d49c6b8d52fd047a109f2f470c97adafb457810
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114679985"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122054296"
 ---
 # <a name="frequently-asked-questions"></a>常见问题
 
@@ -112,6 +113,6 @@ A. 经过多年开发，RStudio 已成为适用于 R 的成熟优质 IDE。 RTVS
 
 **问：我能否参与 RTVS 发布？**
 
-A. 当然！ 源代码位于 [Github](https://github.com/microsoft/RTVS) 上。 请使用问题跟踪程序来提交 bug，并对已发布的文件发表评论。
+A. 当然！ 源代码位于 [GitHub](https://github.com/microsoft/RTVS) 上。 请使用问题跟踪程序来提交 bug，并对已发布的文件发表评论。
 
 也欢迎你参与此文档的编写 &mdash; 只需选择任意页面右上角的“编辑”命令。 同样欢迎在任意页面的底部对文档发表评论。

@@ -8,14 +8,15 @@ author: kraigb
 ms.author: kraigb
 ms.reviewer: karthiknadig
 manager: jmartens
+ms.technology: vs-rtvs
 ms.workload:
 - data-science
-ms.openlocfilehash: b0703d8523066914bad00c8313600a63b8cb0f06
-ms.sourcegitcommit: fdba1b294b94e1f6a8e897810646873422393fff
+ms.openlocfilehash: badd4cda94055a4c3d50a1a82a1dce6e52a3365c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114680129"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122060487"
 ---
 # <a name="remote-r-service-for-linux"></a>适用于 Linux 的远程 R 服务
 

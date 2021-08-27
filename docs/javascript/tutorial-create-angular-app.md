@@ -8,17 +8,18 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 1f9078360987a531be544eb15460d4eb760a1677
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 1b40a03c63665be09ecea5c28fb8e82dcc69c7a7
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094904"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122077746"
 ---
 # <a name="create-an-angular-app"></a>创建 Angular 应用
 
@@ -28,6 +29,7 @@ ms.locfileid: "115094904"
 
 确保已安装以下各项：
 
+- Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
 - npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
 - AngularCLI ([https://angular.io/cli](https://angular.io/cli)) 这可以是你选择的版本
 

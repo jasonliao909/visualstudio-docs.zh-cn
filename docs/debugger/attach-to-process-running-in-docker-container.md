@@ -1,7 +1,7 @@
 ---
 title: 附加到在 Docker 容器上运行的进程
 description: 了解如何使用 Visual Studio 调试在 Docker 容器中运行的应用
-ms.date: 11/11/2020
+ms.date: 08/24/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, linux Docker container
@@ -9,19 +9,30 @@ helpviewer_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 4f39d4ecd69b726c1d549d723fadd324b1edd722
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 86a8bf2e9ed02c6ef53898413c88e4de7de02e93
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99857924"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785931"
 ---
 # <a name="attach-to-a-process-running-on-a-docker-container"></a>附加到在 Docker 容器上运行的进程 
 
 可以使用 Visual Studio 调试在 Windows Docker 容器或 Linux .NET Core Docker 容器中运行的应用。
+
+## <a name="prerequisites"></a>必备条件
+
+如果 Linux 服务器上未安装 SSH 服务器，则需要安装它，使用 curl 或 wget 解压缩并安装。 例如，在 Ubuntu 上，可以通过运行以下内容来实现此目的：
+
+``` cmd
+sudo apt-get install openssh-server unzip curl
+```
+
+此外必须启用 SFTP。 默认情况下，大多数 SSH 分发都会安装并启用 SFTP，但并不总是如此。
 
 ## <a name="attach-to-a-process-running-on-a-linux-docker-container"></a> 附加到正在 Linux Docker 容器上运行的进程
 

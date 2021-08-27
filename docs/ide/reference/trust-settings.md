@@ -4,7 +4,8 @@ description: 了解如何更改文件和文件夹的信任设置以确保 Visual
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.date: 07/22/2021
+ms.technology: vs-ide-general
+ms.date: 08/18/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Environment.PathTrustOptions
@@ -14,12 +15,12 @@ helpviewer_keywords:
 - mark of the web
 - trusted files
 - trusted folders
-ms.openlocfilehash: f8ac3b416e017796eced0027357cacbc6b06830c
-ms.sourcegitcommit: a07cdb3d7ec7040025d23e81b53ebe41bfafd592
+ms.openlocfilehash: 47cfd8c689699367336a3b4dafb9d72771e8b9b9
+ms.sourcegitcommit: 0ac22f45b3240081c4a219fc96f9d630e5de59a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114654107"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122423545"
 ---
 # <a name="configure-trust-settings-for-files-and-folders"></a>配置文件和文件夹的信任设置
 
@@ -29,7 +30,7 @@ ms.locfileid: "114654107"
 
 :::image type="content" source="media/vs-2022/trusted-settings-warning-message.png" alt-text="信任设置警告消息的屏幕截图":::
 
-我们将继续更新此功能，并随之在此处添加更多信息。 敬请关注！
+我们将继续更新此功能，并随之在此页面中添加更多信息。 同时，若要了解最新咨询，请查看我们最新的博客文章，[通过 Visual Studio 2022 提高开发人员的安全性](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)。
 
 ::: moniker-end
 
@@ -41,7 +42,7 @@ Visual Studio 在打开具有 [Web 标记](/previous-versions/windows/internet-e
 > 在审批文件、文件夹或解决方案之前，仍应先确保它们来自受信任的人员或受信任的位置。
 
 > [!NOTE]
-> 在 Visual Studio 2022（预览版）中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任的代码时显示警告。 若要了解详细信息，请参阅 [Visual Studio 2022 预览版发行说明](/visualstudio/releases/2022/release-notes-preview#trustedlocations-170P2)中“受信任的位置”部分。
+> 在 Visual Studio 2022（预览版）中，我们改进了信任设置功能，以便在用户将要在 IDE 中打开文件、文件夹、项目和解决方案中的不受信任的代码时显示警告。 若要了解详细信息，请参阅 [Visual Studio 2022 预览版发行说明](/visualstudio/releases/2022/release-notes-preview#trustedlocations-170P2)中的“受信任的位置”部分，以及最近的[使用 Visual Studio 2022 提高开发人员的安全性](https://devblogs.microsoft.com/visualstudio/improving-developer-security-with-visual-studio-2022/)博客文章。
 
 ## <a name="configure-trust-settings"></a>配置信任设置
 

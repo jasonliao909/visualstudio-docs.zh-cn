@@ -2,7 +2,7 @@
 title: C# 单元测试教程
 description: 了解如何使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器创建、运行和自定义单元测试系列。
 ms.custom: SEO-VS-2020
-ms.date: 02/12/2021
+ms.date: 08/17/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - unit tests, walkthrough
@@ -12,21 +12,20 @@ helpviewer_keywords:
 - unit tests, authoring
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 62772187c076b7891a0159b73cae2ca819ac6bc3
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 9b515e9d5311556b6eed8c6417f372e2cc861d94
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703332"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603562"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
-本文将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义  。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，更改项目代码并重新运行测试。
-
-
+本文将使用托管代码的 Microsoft 单元测试框架和 Visual Studio 测试资源管理器引导你逐步完成一系列单元测试的创建、运行和自定义  。 你将从正处于开发过程中的 C# 项目开始，创建执行该项目代码的测试，运行测试并检查结果。 然后，更改项目代码并重新运行测试。 若要在执行这些步骤之前了解这些任务的概念性概述，请参阅[单元测试基础知识](../test/unit-test-basics.md)。
 
 ## <a name="create-a-project-to-test"></a>创建一个项目进行测试
 
@@ -168,7 +167,7 @@ ms.locfileid: "114703332"
 
 ::: moniker range=">=vs-2019"
 
-2. 在搜索框中键入“单元测试”，选择“C#”作为语言，然后对 .NET Core 选择 C#“单元测试项目”模板，再单击“下一步”   。
+2. 在搜索框中键入“测试”，选择“C#”作为语言，然后为 .NET Core 选择 C#“单元测试项目”模板，再单击“下一步”   。
 
    > [!NOTE]
    > 从 Visual Studio 2019 版本 16.9 开始，MSTest 项目模板名称已从“MSTest 单元测试项目(.NET Core)”更改为“单元测试项目”。
@@ -283,7 +282,7 @@ public void Debit_WithValidAmount_UpdatesBalance()
 }
 ```
 
-该方法非常简单：它设置了具有期初余额的新 `BankAccount` 对象，然后提取有效金额。 它使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> 方法验证期末余额是否和预期一样。
+该方法非常简单：它设置了具有期初余额的新 `BankAccount` 对象，然后提取有效金额。 它使用 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.AreEqual%2A?displayProperty=nameWithType> 方法验证期末余额是否和预期一样。 `Assert.AreEqual`、<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.IsTrue%2A?displayProperty=nameWithType> 等方法经常用于单元测试。 有关编写单元测试的更多概念性信息，请参阅[编写测试](../test/unit-test-basics.md#write-your-tests)。
 
 ### <a name="test-method-requirements"></a>测试方法要求
 
@@ -443,9 +442,9 @@ public void Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange()
 
 目前，测试方法不会处理它原本应该处理的所有情况。 如果所测试的方法 `Debit` 在 `debitAmount` 大于余额（或小于零）时未能引发 <xref:System.ArgumentOutOfRangeException>，则该测试方法通过。 这样并不好，因为如果未引发异常，则希望测试方法失败。
 
-这是测试方法中的一个 bug。 要解决该问题，在测试方法末尾添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 断言，处理未引发异常的情况。
+这是测试方法中的一个 bug。 要解决该问题，在测试方法末尾添加 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A?displayProperty=nameWithType> 断言，处理未引发异常的情况。
 
-重新运行测试表明，如果捕获到正确的异常，测试现将失败  。 `catch` 块捕获到该异常，但该方法继续执行，并在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A> 断言处失败。 要解决此问题，在 `catch` 块中的 `StringAssert` 后添加 `return` 语句。 重新运行测试可确认已解决此问题。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最终版本如下：
+重新运行测试表明，如果捕获到正确的异常，测试现将失败  。 `catch` 块捕获到该异常，但该方法继续执行，并在新的 <xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert.Fail%2A?displayProperty=nameWithType> 断言处失败。 要解决此问题，在 `catch` 块中的 `StringAssert` 后添加 `return` 语句。 重新运行测试可确认已解决此问题。 `Debit_WhenAmountIsMoreThanBalance_ShouldThrowArgumentOutOfRange` 的最终版本如下：
 
 ```csharp
 [TestMethod]

@@ -6,12 +6,12 @@ ms.author: dominicn
 ms.date: 01/21/2020
 ms.assetid: E4CFD03C-03AF-48CA-B409-6DB1CA45E991
 ms.topic: how-to
-ms.openlocfilehash: 9b4c3aa608969d9f62e2d5ab3bd3d98ef79236d9
-ms.sourcegitcommit: 08ee19f260164271e18bdbafe624301508f554ce
+ms.openlocfilehash: 42db2efef077fcb95590ea061e47cd1b52bb6311
+ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "104999623"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122464815"
 ---
 # <a name="sign-in-to-visual-studio-for-mac"></a>登录 Visual Studio for Mac
 
@@ -45,6 +45,9 @@ ms.locfileid: "104999623"
     ![登录成功](media/signing-in-image14.png)
 
 或者，可以使用“Visual Studio”>“登录...” 菜单项随时登录和注销。
+
+> [!TIP]
+> 如果在登录时遇到任何问题，请尝试使用“登录帐户”窗口底部的“无法登录?”下拉菜单中的“使用 Web 浏览器登录”选项。 如果 Mac 是使用条件访问的托管设备，则可能需要这样做。
 
 ## <a name="adding-multiple-user-accounts"></a>添加多个用户帐户
 

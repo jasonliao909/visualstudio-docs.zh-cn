@@ -7,17 +7,18 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 52e3e78fbfc6a407e684c2e9eeb237a603934764
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 27e1009482d9fcecffd1831c482d252737cc5347
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094013"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048149"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-angular-in-visual-studio"></a>教程：在 Visual Studio 中使用 Angular 创建 ASP.NET Core 应用
 
@@ -34,6 +35,8 @@ ms.locfileid: "115094013"
 
 确保已安装以下各项：
 
+- 安装了 Visual Studio 2022 预览版 2 或更高版本，以及 ASP.NET 和 Web 开发工作负载。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
+  如果需要安装工作负载，但已安装 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“ASP.NET 和 web 开发”工作负载，然后选择“修改” 。
 - npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
 - AngularCLI ([https://angular.io/cli](https://angular.io/cli)) 这可以是你选择的版本
 

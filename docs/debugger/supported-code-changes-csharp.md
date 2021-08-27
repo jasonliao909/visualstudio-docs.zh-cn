@@ -16,14 +16,15 @@ ms.assetid: c7a48ea9-5a7f-4328-a9d7-f0e76fac399d
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4f51cc979f968acf0cf1fb526d88c86a8fc09ad4
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: abbb4141b4133ac2526d7922ec0e82f74d8286d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094262"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122058235"
 ---
 # <a name="supported-code-changes-c-and-visual-basic"></a>支持的代码更改（C# 和 Visual Basic）
 “编辑并继续”处理方法体内的大多数类型的代码更改。 但是，方法体外的大多数更改以及方法体内的小部分更改在调试期间不能应用。 若要应用这些不受支持的更改，您必须停止调试，重新开始新版本的代码。
@@ -85,7 +86,7 @@ ms.locfileid: "115094262"
 
 ## <a name="unsupported-app-scenarios"></a>不支持的应用方案
 
-不受支持的应用和平台包括 ASP.NET 5、Silverlight 5 和 Windows 8.1。
+不受支持的应用和平台包括 Silverlight 5 和 Windows 8.1。 ASP.NET 和 ASP.NET Core 中不受支持的场景包括：编辑 .aspx、.ascx、.cshtml 和 .razor 文件。
 
 > [!NOTE]
 > 支持的应用包括 Windows 10 中的 UWP，以及面向 .NET Framework 4.6 桌面版或更高版本的 x86 和 x64 应用（.NET Framework 仅为桌面版本）。

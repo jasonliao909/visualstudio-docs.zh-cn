@@ -2,27 +2,28 @@
 title: 单元测试入门
 description: 使用 Visual Studio 定义和运行单元测试，使代码保持正常运行并在客户之前找到错误和缺陷。
 ms.custom: SEO-VS-2020
-ms.date: 12/22/2020
+ms.date: 08/10/2021
 ms.topic: tutorial
 helpviewer_keywords:
 - unit testing, create unit test plans
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 97d100738a47ba91c0f7cb87fdee5da53f2ede5d
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: 2465deef6d8b4c93b9e72d38bf548a001373f9e3
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703368"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603601"
 ---
 # <a name="get-started-with-unit-testing"></a>单元测试入门
 
 使用 Visual Studio 定义和运行单元测试，使代码保持正常运行、确保代码覆盖率并在客户之前找到错误和缺陷。 经常运行单元测试，确保代码正常运行。
 
-在本文中，代码和图例使用 C#，但是概念和特征适用于 .NET 语言、C++、Python、JavaScript 和 TypeScript。
+在本文中，代码使用 C# 和 C++，图例使用 C#，但是概念和特征适用于 .NET 语言、C++、Python、JavaScript 和 TypeScript。
 
 ## <a name="create-unit-tests"></a>创建单元测试
 
@@ -30,8 +31,9 @@ ms.locfileid: "114703368"
 
 1. 在 Visual Studio 中，打开要测试的项目。
 
-   出于演示示例单元测试的目的，本文测试简单的“Hello World”C# 项目（名为“HelloWorldCore”）。 此类项目的示例代码如下所示：
+   出于演示示例单元测试的目的，本文测试一个简单的“Hello World”C# 或名为“Hello World”的 C++ 控制台项目（使用 C# 时名为“HelloWorldCore”） 。 此类项目的示例代码如下所示：
 
+   ### <a name="net"></a>[.NET](#tab/dotnet)
    ```csharp
    namespace HelloWorldCore
 
@@ -44,14 +46,32 @@ ms.locfileid: "114703368"
       }
    ```
 
+   ### <a name="c"></a>[C++](#tab/cpp)
+   ```cpp
+   #include <iostream>
+
+   int main()
+   {
+      std::cout << "Hello World!\n";
+   }
+   ```
+   ---
+
 1. 在“解决方案资源管理器”中，选择解决方案节点。 然后，在顶部菜单栏中，选择“文件” > “添加” > “新项目”  。
 
-1. 在新项目对话框中，找到要使用的测试框架的单元测试项目模板（如 MSTest），并选择它。
+1. 在新项目对话框中，找到要使用的单元测试项目。
 
-   从 Visual Studio 2017 14.8 版本开始，.NET 语言包括适用于 NUnit 和 xUnit 的内置模板。 对于 C++，需要选择该语言支持的测试框架。 对于 Python，请参阅[在 Python 代码中设置单元测试](../python/unit-testing-python-in-visual-studio.md)以设置测试项目。
+   ::: moniker range=">=vs-2019"
+   在搜索框中键入“测试”，找到要使用的测试框架的单元测试项目模板（例如 MSTest (C#) 或本机单元测试项目 (C++)），并选择它。
+   ::: moniker-end
+   ::: moniker range="vs-2017"
+   展开“已安装”节点，选择你要用于测试项目的语言，然后选择“测试” 。
+   ::: moniker-end
+
+   从 Visual Studio 2017 14.8 版本开始，.NET 语言包括适用于 NUnit 和 xUnit 的内置模板。 对于 C++，在本示例中，选择“本机单元测试”项目，它使用 Microsoft 本机单元测试框架。 （若要使用其他 C++ 测试框架，请参阅[为 C/C++ 编写单元测试](../test/writing-unit-tests-for-c-cpp.md)）。 对于 Python，请参阅[在 Python 代码中设置单元测试](../python/unit-testing-python-in-visual-studio.md)以设置测试项目。
 
    > [!TIP]
-   > 对于 C#，可以使用更快的方法基于代码创建单元测试项目。 有关详细信息，请参阅[创建单元测试项目和测试方法](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods)。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
+   > 仅对 C# 而言，可以使用更快的方法基于代码创建单元测试项目。 有关详细信息，请参阅[创建单元测试项目和测试方法](../test/unit-test-basics.md#create-unit-test-projects-and-test-methods-c)。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
 
    下图显示了 .NET 中支持的 MSTest 单元测试。
 
@@ -75,7 +95,7 @@ ms.locfileid: "114703368"
 
    ![解决方案资源管理器中的单元测试项目](media/vs-2019/solution-explorer.png)
 
-1. 在单元测试项目中，右键单击“引用”或“依赖项”，然后选择“添加引用”，添加对要测试的项目的引用。
+1. 在单元测试项目中，右键单击“引用”或“依赖项”，然后选择“添加引用”或“添加项目引用”，添加对要测试的项目的引用   。
 
 1. 选择包含待测试代码的项目，单击“确定”。
 
@@ -83,7 +103,7 @@ ms.locfileid: "114703368"
 
 1. 向单元测试方法添加代码。
 
-   例如，你可以通过选择与测试框架匹配的正确文档选项卡来使用以下代码：MSTest、NUnit 或 xUnit（仅在 .NET 上受支持）。
+   例如，你可以通过选择与测试框架匹配的正确文档选项卡来使用以下代码：MSTest、NUnit 或 xUnit（仅在 .NET 上受支持）或 C++ Microsoft 本机单元测试框架。
 
    ### <a name="mstest"></a>[MSTest](#tab/mstest)
 
@@ -175,6 +195,44 @@ ms.locfileid: "114703368"
     }
     ```
 
+    ### <a name="microsoft-native-unit-test-framework"></a>[Microsoft 本机单元测试框架](#tab/msunittest)
+
+    ```cpp
+    #include "pch.h"
+    #include "CppUnitTest.h"
+    #include "../HelloWorldUnitTestCPP/HelloWorldUnitTestCPP.cpp"   // Update using your project name
+
+    using namespace Microsoft::VisualStudio::CppUnitTestFramework;
+
+    namespace HelloWorldTests
+    {
+       TEST_CLASS(HelloWorldTests)
+       {
+       public:
+
+          TEST_METHOD(TestMethod)
+          {
+             std::string expected = "Hello World!\n";
+
+             std::stringstream buffer;
+             std::streambuf* sbuf = std::cout.rdbuf(); // Save cout's buffer
+             std::cout.rdbuf(buffer.rdbuf()); // Redirect cout to the stringstream buffer
+
+             // Call main() in your test
+             int result = main();
+
+             // When finished, redirect cout to the original buffer 
+             std::cout.rdbuf(sbuf);
+             std::cout << "std original buffer: \n";
+             std::cout << buffer.get();
+
+             // Test
+             Assert::AreEqual(expected, buffer.str());
+          }
+       };
+    }
+    ```
+
     ---
 
 ## <a name="run-unit-tests"></a>运行单元测试
@@ -204,7 +262,7 @@ ms.locfileid: "114703368"
 如果在 Visual Studio 2017 或更高版本中使用 MSTest、xUnit 或 NUnit 测试框架，可查看单元测试的实时结果。
 
 > [!NOTE]
-> 若要执行这些步骤，需要 Visual Studio Enterprise。
+> 要执行这些步骤，需要 Visual Studio Enterprise，以及 .NET 代码和以下测试框架之一：MSTest、xUnit 或 NUnit。
 
 1. 选择“测试” > “Live Unit Testing” > “启动”，从“测试”菜单启用 Live Unit Testing。
 
@@ -232,13 +290,13 @@ ms.locfileid: "114703368"
 
 ## <a name="use-a-third-party-test-framework"></a>使用第三方测试框架
 
-通过使用第三方测试框架（如 Boost、Google、和 NUnit），可以在 Visual Studio 中运行单元测试，具体取决于你的编程语言。 使用第三方框架：
+通过使用第三方测试框架（例如 NUnit、Boost 或 Google C++ 测试框架，具体取决于你的编程语言），可以在 Visual Studio 中运行单元测试。 使用第三方框架：
 
 - 使用 NuGet 包管理器为所选框架安装 NuGet 包  。
 
 - (.NET) 从 Visual Studio 2017 14.6 版本开始，Visual Studio 包括适用于 NUnit 和 xUnit 测试框架的预配置测试项目模板。 这些模板还包括必要的 NuGet 包以实现支持。
 
-- (C++) 在 Visual Studio 2017 及更高版本中，已经包含了一些类似 Boost 的框架。 有关详细信息，请参阅[在 Visual Studio 中编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp.md)。
+- (C++) 在 Visual Studio 2017 及更高版本中，已经包含了一些框架，如 Google C++ 测试框架。 有关详细信息，请参阅[在 Visual Studio 中编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp.md)。
 
 添加单元测试项目：
 
@@ -285,3 +343,6 @@ ms.locfileid: "114703368"
 
 > [!div class="nextstepaction"]
 > [创建并运行托管代码的单元测试](walkthrough-creating-and-running-unit-tests-for-managed-code.md)
+
+> [!div class="nextstepaction"]
+> [编写适用于 C/C++ 的单元测试](../test/writing-unit-tests-for-c-cpp.md)

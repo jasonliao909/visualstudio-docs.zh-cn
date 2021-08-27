@@ -2,7 +2,7 @@
 title: 默认键盘快捷方式
 description: 了解 Visual Studio 中的默认键盘快捷方式，以便通过它们访问各种命令和窗口。
 ms.custom: SEO-VS-2020
-ms.date: 06/21/2021
+ms.date: 08/23/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -13,14 +13,15 @@ helpviewer_keywords:
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: dec9f76f2b21e11cc79bc55efc4a2de6fb7dedc3
-ms.sourcegitcommit: 15821c790d6498210f30b3268402ffad6bb70c7c
+ms.openlocfilehash: 6744a02b05bf38094c7c58a40862fa1324ea9069
+ms.sourcegitcommit: 00a9b421927ac9de60e96b2ce6618aa0733d88b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/14/2021
-ms.locfileid: "113725516"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122773637"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
 
@@ -29,9 +30,15 @@ ms.locfileid: "113725516"
 有关常见键盘快捷方式列表和其他工作效率信息，请参阅：
 
 - [键盘提示](../ide/productivity-shortcuts.md)
-- [工作效率提示](../ide/productivity-features.md)。
+- [工作效率提示](../ide/productivity-features.md)
 
 有关 Visual Studio 中辅助功能的详细信息，请参阅[辅助功能提示和技巧](../ide/reference/accessibility-tips-and-tricks.md)以及[如何：仅使用键盘进行操作](../ide/reference/how-to-use-the-keyboard-exclusively.md)。
+
+## <a name="printable-shortcut-cheatsheet"></a>可打印快捷方式备忘单
+
+单击可获取[适用于 Visual Studio 的可打印键盘快捷方式备忘单](https://visualstudio.microsoft.com/keyboard-shortcuts.pdf)。
+
+[:::image type="content" source="media/default-keyboard-shortcuts-in-visual-studio/visual-studio-keyboard-shortcut-cheatsheet.png" alt-text="可打印键盘快捷方式备忘单。":::](https://visualstudio.microsoft.com/keyboard-shortcuts.pdf)
 
 <a name="popular"></a>
 ## <a name="popular-keyboard-shortcuts-for-visual-studio"></a>Visual Studio 的常用键盘快捷方式
@@ -399,6 +406,7 @@ ms.locfileid: "113725516"
 |-|-|-|
 |断点条件|**Alt+F9, C**| EditorContextMenus.CodeWindow.Breakpoint.BreakpointConditions |
 |断点编辑标签|**Alt+F9、L**| 编辑器上下文菜单.代码窗口.断点.断点编辑标签 |
+|插入临时断点|**Shift+Alt+F9、T**| 编辑器上下文菜单.代码窗口.断点.插入临时断点 |
 |显示项|**Ctrl+`**| 编辑器上下文菜单.代码窗口.代码图.显示项 |
 |执行|**Ctrl+Alt+F5**| 编辑器上下文菜单.代码窗口.执行 |
 |转到视图|**Ctrl+M、Ctrl+G**| 编辑器上下文菜单.代码窗口.转到视图 |
@@ -1479,6 +1487,3 @@ ms.locfileid: "113725516"
 |显示图形视图|**Ctrl+3**| Xsd 设计器.显示图形视图 |
 |显示起始视图|**Ctrl+1**| Xsd 设计器.显示起始视图 |
 
-## <a name="see-also"></a>请参阅
-
-- [Visual Studio 命令](reference/visual-studio-commands.md)

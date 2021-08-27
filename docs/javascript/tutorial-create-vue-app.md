@@ -8,17 +8,18 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 33e69c5e828120ab9449296c957ed7c00f71d7e1
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 926051ad98d43715a15a20091eb6a17c20f96758
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094900"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122085710"
 ---
 # <a name="create-a-vuejs-app"></a>创建 Vue.js 应用程序
 
@@ -28,6 +29,7 @@ ms.locfileid: "115094900"
 
 确保已安装以下各项：
 
+- Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
 - npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
 - Vue.js ([Installation | Vue.js (vuejs.org)](https://v3.vuejs.org/guide/installation.html#npm))
 - Vue.js CLI ([(Installation | Vue.js (vuejs.org)](https://v3.vuejs.org/guide/installation.html#cli))
