@@ -1,8 +1,8 @@
 ---
-title: 测试工具
+title: 单元测试工具
 description: 了解 Visual Studio 测试工具如何帮助你和你的团队达到并保持高标准的代码卓越性。
 ms.custom: SEO-VS-2020
-ms.date: 03/16/2018
+ms.date: 08/19/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - testing tools [Visual Studio]
@@ -13,12 +13,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 7cfb71071efab7e119c04d32f3362e00add4bdc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 987c9928fecb3ad752656c065bd369b9844da864
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148514"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603588"
 ---
 # <a name="first-look-at-testing-tools-in-visual-studio"></a>首先介绍 Visual Studio 中的测试工具
 
@@ -40,6 +40,7 @@ Visual Studio 测试工具可帮助你和你的团队达到并保持高标准的
 ::: moniker-end
 
 * [单元测试入门](unit-test-your-code.md)
+* [单元测试基础知识](unit-test-basics.md)
 * [使用测试资源管理器运行单元测试](run-unit-tests-with-test-explorer.md)
 * [测试资源管理器常见问题解答](test-explorer-faq.md)
 * [安装第三方单元测试框架](install-third-party-unit-test-frameworks.md)

@@ -7,16 +7,17 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 9b8bee5918a85c2a661911ee71dcfd633fce4cb2
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 5dc5bc1d5b03e1f3eb827f6bf80c67020cb017d6
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094058"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122048071"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-typescript-in-visual-studio"></a>教程：在 Visual Studio 中使用 TypeScript 创建 ASP.NET Core 应用
 
@@ -24,7 +25,7 @@ ms.locfileid: "115094058"
 
 ::: moniker range=">=vs-2022"
 
-从 Visual Studio 2022 开始，请参阅[使用 Angular 在 Visual Studio 中创建 ASP.NET Core 应用](../javascript/tutorial-asp-net-core-with-angular.md)，以使用 Angular 和 TypeScript 创建 ASP.NET Core 应用。
+从 Visual Studio 2022 开始，建议使用 ASP.NET Core 单页应用程序 (SPA) 模板，通过 TypeScript 创建 ASP.NET Core 应用。 有关详细信息，请参阅[使用 Angular 在 Visual Studio 中创建 ASP.NET Core 应用](../javascript/tutorial-asp-net-core-with-angular.md)或[使用 Vue 在 Visual Studio 中创建 ASP.NET Core 应用](../javascript/tutorial-asp-net-core-with-vue.md)。
 ::: moniker-end
 
 ::: moniker range="vs-2017"

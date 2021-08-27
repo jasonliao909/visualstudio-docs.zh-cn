@@ -8,17 +8,18 @@ ms.devlang: javascript
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-javascript
 dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 2dd56faf17c7982f7b18d0d83469b8e2c56feea6
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: fbf4b68c1f5f82af8af47cda7e21389b14c21bb2
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094910"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122061449"
 ---
 # <a name="create-a-react-app"></a>创建 React 应用
 
@@ -28,6 +29,7 @@ ms.locfileid: "115094910"
 
 确保已安装以下各项：
 
+- Visual Studio 2022 预览版 2 或更高版本。 请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads/)页，进行免费安装。
 - npm ([https://www.npmjs.com/](https://www.npmjs.com/)) 
 - npx ([https://www.npmjs.com/package/npx](https://www.npmjs.com/package/npx))
 

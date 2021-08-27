@@ -2,7 +2,7 @@
 title: MSBuild | Microsoft Docs
 description: 了解 Microsoft 生成引擎 (MSBuild) 平台如何为项目文件提供用于控制生成的 XML 架构。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 08/11/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, about MSBuild
@@ -11,14 +11,15 @@ ms.assetid: e39f13f7-1e1d-4435-95ca-0c222bca071c
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 372fc5c81b963cbb8e46cab689713e476fcfff7d
-ms.sourcegitcommit: 9cb0097c33755a3e5cbadde3b0a6e9e76cee727d
+ms.openlocfilehash: b9e2e3acd40bb5a5b7f45b636b3539b5c24f7f29
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109848274"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122108481"
 ---
 # <a name="msbuild"></a>MSBuild
 
@@ -69,6 +70,8 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 ## <a name="project-file"></a>项目文件
 
  MSBuild 使用简单且可扩展的基于 XML 的项目文件格式。 使用 MSBuild 项目文件格式，开发人员可以描述要生成的项，以及如何针对不同的操作系统和配置生成这些项。 另外，这种项目文件格式还允许开发人员创作可重用的生成规则，这些规则可以包含到不同的文件中，以便可以在产品内的不同项目之间一致地执行生成。
+
+ Visual Studio 生成系统将项目特定的逻辑存储在项目文件本身，并使用导入的 MSBuild XML 文件（扩展名为 .props 和 .targets 等）来定义标准生成逻辑。 .props文件定义 MSBuild 属性，而 .targets 文件定义 MSBuild 目标。 这些导入内容有时在 Visual Studio 项目文件中可见，但在 .NET Core、.NET 5 和 .NET 6 项目等较新的项目中，项目文件不显示导入内容；而是显示 SDK 引用。 这些项目称为 SDK 风格的项目。 当你引用 SDK（如 .NET SDK）时，SDK 会隐式指定 .props 和 .target 文件的导入内容。
 
  以下各节介绍了 MSBuild 项目文件格式的一些基本元素。 有关如何创建基本项目文件的教程，请参见[演练：从头开始创建 MSBuild 项目文件](../msbuild/walkthrough-creating-an-msbuild-project-file-from-scratch.md)。
 
@@ -166,9 +169,7 @@ MSBuild.exe MyProj.proj -property:Configuration=Debug
 
  以下是多目标功能的一些优点：
 
-- 可以开发以多个 .NET Framework 早期版本（例如，版本 2.0、3.0 和 3.5）为目标的应用程序。
-
-- 你可以将 .NET Framework 之外的框架作为目标，例如 Silverlight。
+- 可以开发以多个 .NET Framework 早期版本（例如，版本 3.5 和 4.7.2）为目标的应用程序。
 
 - 可以一个 *框架配置文件* 为目标，该文件是目标框架的预定义子集。
 

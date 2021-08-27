@@ -2,7 +2,7 @@
 title: Visual Studio 2019 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2019 中的新增功能。
-ms.date: 07/15/2021
+ms.date: 08/10/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -10,21 +10,21 @@ ms.assetid: 00bec66b-bcee-46f5-91d9-f73a2b469744
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
-ms.prod: visual-studio-windows
 ms.technology: vs-ide-general
+ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 76513e23b22c5903da780dd9029e41804c5b6052
-ms.sourcegitcommit: d856c46d78638be609e7045621ed1bd7521a6dcc
+ms.openlocfilehash: aaa3ad227fcd42295db0835cad637862df850df9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114283856"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122078097"
 ---
 # <a name="whats-new-in-visual-studio-2019"></a>Visual Studio 2019 中的新增功能
 
-已针对版本 16.10 进行更新。 参阅[完整的发行说明](/visualstudio/releases/2019/release-notes/) | 查看[产品路线图](/visualstudio/productinfo/vs2019-roadmap)
+已针对版本 16.11 进行更新。 参阅[完整的发行说明](/visualstudio/releases/2019/release-notes/) | 查看[产品路线图](/visualstudio/productinfo/vs2019-roadmap)
 
 >[!div class="button"]
 >[下载 Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
@@ -37,7 +37,7 @@ ms.locfileid: "114283856"
 * **[协作](#collaborate)** ：在 Visual Studio 中，通过 Git 优先工作流、实时编辑和调试，以及代码评审，即可尽情享受自然协作。
 * **[调试](#debug)** ：突出显示并导航到特定值、优化内存使用，并对应用程序的执行进行自动快照。
 
-有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。
+有关此版本中所有新增功能的完整列表，请参阅[发行说明](/visualstudio/releases/2019/release-notes/)。 有关版本 16.11 中的新增功能的详细信息，请参阅 [Visual Studio 2019 v16.11 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-16-11/)博客文章。
 
 ## <a name="develop"></a>开发
 
@@ -224,9 +224,9 @@ Visual Studio 2019 中会默认安装此服务。
 
 同时，以下是目前正在进行的工作：
 
-- **Visual Studio 2019 中改进了 Git 体验（预览版）**
+- 改进了 Visual Studio 2019 中的 Git 体验
 
-   尽管 Git 版本控制工具是 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history/) 及更高版本中的默认体验，但我们会继续添加功能，以提升 Visual Studio 2019 预览版（即[版本 16.11](/visualstudio/releases/2019/release-notes-preview/)）中的体验。
+   尽管 Git 版本控制工具是 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history/) 及更高版本中的默认体验，但我们会继续添加功能，以提升 Visual Studio 2019 最新版（即[版本 16.11](/visualstudio/releases/2019/release-notes-preview/)）中的体验。
 
    有关详细信息，请参阅 [Visual Studio 中的版本控制](/visualstudio/version-control/)页。
 
@@ -234,7 +234,7 @@ Visual Studio 2019 中会默认安装此服务。
 
     最新版本 [Visual Studio 2022（预览版）](/visualstudio/releases/2022/release-notes-preview/)更快、更容易上手，也更轻量。 而且，有史以来第一次，Visual Studio 是 64 位的。
 
-    有关下载链接和详细信息，请参阅 **[Visual Studio 2022 视觉](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)** 博客文章。
+    有关下载链接和详细信息，请参阅 [Visual Studio 2022 愿景](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)博客文章，以及 [Visual Studio 2022 预览版 3 现已推出](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)博客文章。
 
 ## <a name="give-us-feedback"></a>给我们提供反馈
 
@@ -246,6 +246,7 @@ Visual Studio 2019 中会默认安装此服务。
 
 ## <a name="see-also"></a>请参阅
 
+* [Visual Studio 2022（预览版）中的新增功能](whats-new-visual-studio-2022.md)
 * [Visual Studio 文档中的新增功能](whats-new-visual-studio-docs.md)
 * [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
 * [Visual Studio 2019 for Mac 发行说明](/visualstudio/releasenotes/vs2019-mac-relnotes/)

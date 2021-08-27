@@ -2,21 +2,22 @@
 title: 调试 Linux 上的 .NET Core
 description: 在 Linux 上使用安全外壳 (SSH) 通过附加到进程来调试 .NET Core。 准备应用进行调试。 构建并部署应用。 附加调试程序。
 ms.custom: SEO-VS-2020
-ms.date: 02/26/2020
+ms.date: 08/24/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - remote debugging, linux
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 99bfd1df6d977830e5b8e332efa3d0af653d3aec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 71f9c74e37eafcd8bdaa9e0f9da361a6684c7d4b
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99934606"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785970"
 ---
 # <a name="debug-net-core-on-linux-using-ssh-by-attaching-to-a-process"></a>在 Linux 上使用 SSH 通过附加到进程调试 .NET Core
 
@@ -31,6 +32,8 @@ ms.locfileid: "99934606"
   ``` cmd
   sudo apt-get install openssh-server unzip curl
   ```
+
+  必须启用 SSH 和 SFTP。 默认情况下，大多数 SSH 分发都会安装并启用 SFTP，但并不总是如此。
 
 - 在 Linux 服务器上，[在 Linux 上安装 .NET 运行时](/dotnet/core/install/linux)，并找到与 Linux 发行版（如 Ubuntu）匹配的页面。 .NET SDK 不是必需的。
 

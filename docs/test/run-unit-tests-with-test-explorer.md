@@ -1,23 +1,24 @@
 ---
 title: 使用测试资源管理器运行单元测试
 description: 了解如何使用测试资源管理器在 Visual Studio 中运行测试。 本主题介绍如何启用生成后自动测试运行、查看测试结果、对测试列表进行分组和筛选、创建播放列表以及使用测试快捷方式。
-ms.date: 07/14/2020
+ms.date: 01/11/2021
 ms.topic: how-to
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 26dbed25f42f40614597075ad26c855398b56025
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: 97dd55ecfc5f66abc4df8becbecbe608d93a7dfb
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925119"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603627"
 ---
 # <a name="run-unit-tests-with-test-explorer"></a>使用测试资源管理器运行单元测试
 
-使用测试资源管理器从 Visual Studio 或第三方单元测试项目运行单元测试。 还可以使用测试资源管理器将测试分组到不同类别、筛选测试列表以及创建、保存和运行测试播放列表。 还可以分析代码覆盖率并[调试单元测试](../test/debug-unit-tests-with-test-explorer.md)。
+使用测试资源管理器从 Visual Studio 或第三方单元测试项目运行单元测试。 还可以使用测试资源管理器将测试分组到不同类别、筛选测试列表以及创建、保存和运行测试播放列表。 还可以使用测试资源管理器来[调试单元测试](../test/debug-unit-tests-with-test-explorer.md)，并在 Visual Studio Enterprise 中[分析代码覆盖率](../test/using-code-coverage-to-determine-how-much-code-is-being-tested.md)。
 
 测试资源管理器可从解决方案的多个测试项目以及生产代码项目包含的测试类中运行测试。 测试项目可以使用不同的单元测试框架。 如果待测试的代码是为 .NET 编写的，则可以面向 .NET 的任何语言编写测试项目，而不考虑目标代码的语言。 本机 C/C++ 代码项目必须使用 C++ 单元测试框架进行测试。
 

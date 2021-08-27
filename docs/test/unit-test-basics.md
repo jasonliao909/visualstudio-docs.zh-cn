@@ -8,14 +8,15 @@ f1_keywords:
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: b2b11a06b070bee16d986635cb6f20ee940a306f
-ms.sourcegitcommit: fa253b04f1f6757c62a286e541b9bef36a97d1f9
+ms.openlocfilehash: da403ab2aec782d65bf5699963848ce918afdf0e
+ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114703374"
+ms.lasthandoff: 08/20/2021
+ms.locfileid: "122603614"
 ---
 # <a name="unit-test-basics"></a>单元测试基础知识
 
@@ -82,7 +83,7 @@ public void Withdraw(double amount)
 
 有了代码，现在就可以开始测试了。
 
-## <a name="create-unit-test-projects-and-test-methods"></a>创建单元测试项目和测试方法
+## <a name="create-unit-test-projects-and-test-methods-c"></a>创建单元测试项目和测试方法 (C#)
 
 对于 C#，通常从你的代码生成单元测试项目和单元测试存根速度更快。 或者，你可以选择创建单元测试项目和根据你的要求进行手动测试。 如果要使用第三方框架从代码创建单元测试，则需要安装以下任一扩展：[NUnit](https://marketplace.visualstudio.com/items?itemName=NUnitDevelopers.TestGeneratorNUnitextension-18371) 或 [xUnit](https://marketplace.visualstudio.com/items?itemName=YowkoTsai.xUnitnetTestGenerator)。 如果未使用 C#，请跳过此部分，转到[手动创建单元测试项目和单元测试](#create-the-unit-test-project-and-unit-tests-manually)。
 
@@ -100,7 +101,7 @@ public void Withdraw(double amount)
    ![从编辑器窗口查看上下文菜单](../test/media/vs-2019/basics-create-unit-tests.png)
 
    > [!NOTE]
-   > “创建单元测试”菜单命令仅适用于 C# 代码  。
+   > “创建单元测试”菜单命令仅适用于 C# 代码  。 若要将此方法与 .NET Core 或 .NET Standard 一起使用，需要 Visual Studio 2019。
    ::: moniker-end
 
 2. 单击“确定”接受默认值以创建单元测试，或更改用于创建并命名单元测试项目和单元测试的值。 你可以选择默认添加到单元测试方法的代码。
@@ -116,7 +117,7 @@ public void Withdraw(double amount)
    ![已创建单元测试](../test/media/vs-2019/basics-test-stub.png)
    ::: moniker-end
 
-4. 现在向前跳转，了解如何 [将代码添加到单元测试方法](#write-your-tests) ，以使你的单元测试有意义，并使你想要添加的额外单元测试彻底地测试代码。
+4. 现在继续了解如何[编写测试](#write-your-tests)，使你的单元测试有意义，以及任何你可能想要添加的额外单元测试，以全面测试你的代码。
 
 ### <a name="create-the-unit-test-project-and-unit-tests-manually"></a>手动创建单元测试项目和单元测试
 
@@ -139,7 +140,7 @@ public void Withdraw(double amount)
 
 ::: moniker range=">=vs-2019"
 
-2. 使用项目模板搜索框查找要使用的测试框架的单元测试项目模板。
+2. 在项目模板搜索框中键入“测试”，查找你要使用的测试框架的单元测试项目模板。 （在本主题的示例中，我们将使用 MSTest。）
 
 3. 在下一页上，为项目命名。 若要测试示例中的 `Accounts` 项目，则需要将该项目命名为 `AccountsTests`。
 
@@ -148,12 +149,10 @@ public void Withdraw(double amount)
 4. 在你的单元测试项目中，将引用添加到所测试项目的代码中，在我们的示例中应添加到帐户项目中。
 
    若要创建代码项目的引用：
+   
+   1. 在解决方案资源管理器的单元测试项目中，右键单击“引用”或“依赖项”节点，然后选择“添加项目引用”或“添加引用”（以实际显示的内容为准）。
 
-   1. 在解决方案资源管理器中，选择项目。
-
-   2. 在“项目”菜单上，选择“添加引用” 。
-
-   3. 在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
+   2. 在“引用管理器”对话框中，打开“解决方案”节点，然后选择“项目”。 选择代码项目名称并关闭对话框。
 
 每个单元测试项目包含类，用于镜像代码项目中类的名称。 在我们的示例中， `AccountsTests` 项目将包含以下类：
 
@@ -171,9 +170,9 @@ AAA（准备、执行、断言）模式是编写待测试方法的单元测试�
 
 - **执行** 部分调用具有准备参数的待测试方法。
 
-- **断言** 部分验证待测试方法的执行行为与预期相同。
+- **断言** 部分验证待测试方法的执行行为与预期相同。 对于 .NET，<xref:Microsoft.VisualStudio.TestTools.UnitTesting.Assert> 类中的方法通常用于验证。
 
-若要测试我们的示例中的 `CheckingAccount.Withdraw` 方法，我们可以编写两个测试：一个验证方法的标准行为，另一个验证多于余额的取款将失败。 在 `CheckingAccountTests` 类中，我们将添加以下方法：
+若要测试示例中的 `CheckingAccount.Withdraw` 方法，我们可以编写两个测试：一个验证方法的标准行为，另一个验证大于余额的取款将失败（下面的代码展示了在 .NET 中受支持的 MSTest 单元测试）。 在 `CheckingAccountTests` 类中，我们将添加以下方法：
 
 ```csharp
 [TestMethod]
@@ -348,8 +347,8 @@ public void My_Test ()
 
 ```csharp
 [DataSource(
-    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb&quot;,
-    &quot;AddIntegerHelperData"
+    @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Projects\MyBank\TestData\AccountsTest.accdb",
+    "AddIntegerHelperData"
 )]
 [TestMethod()]
 public void AddIntegerHelper_DataDrivenValues_AllShouldPass()

@@ -2,7 +2,7 @@
 title: 衡量应用中的 CPU 使用情况
 description: 使用集成了调试器的诊断工具，分析应用程序中的 CPU 性能问题。
 ms.custom: seodec18
-ms.date: 04/03/2019
+ms.date: 04/03/2021
 ms.topic: tutorial
 f1_keywords:
 - vs.performance.wizard.intropage
@@ -15,14 +15,15 @@ ms.assetid: da2fbf8a-2d41-4654-a509-dd238532d25a
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
+ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a18302067749e3b4fc70b08519056dc391d3dca4
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 349d4c076c820c6f75291b8048617216cc73717c
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99936881"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122084865"
 ---
 # <a name="measure-application-performance-by-analyzing-cpu-usage"></a>通过分析 CPU 使用情况衡量应用程序性能
 
@@ -31,7 +32,7 @@ ms.locfileid: "99936881"
 调试中断时，“诊断工具”窗口中的“CPU 使用率”工具收集有关应用程序中正在执行的函数的信息。 该工具将列出执行工作的函数，并提供时间线图，可专用于采样会话的特定部分。
 
 > [!Important]
-> Visual Studio 中的 .NET 开发（包括 ASP.NET、ASP.NET Core 和本机/C++ 开发）支持集成了调试器的诊断工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
+> Visual Studio 中的 .NET 开发（包括 ASP.NET、ASP.NET Core 和本机/C++ 开发）支持集成了调试器的诊断工具。 需要相应的 Visual Studio [工作负载](../install/modify-visual-studio.md)。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
 
 在本教程中，你将：
 
@@ -49,7 +50,7 @@ ms.locfileid: "99936881"
 
     通过设置两个断点，可将数据收集限制到想要分析的代码部分。
 
-3. 将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
+3. 将自动显示 **“诊断工具”** 窗口，除非你已将其关闭。 若要再次显示该窗口，请依次单击“调试”   > “Windows”   > “显示诊断工具”  。
 
 4. 可以使用工具栏上的“选择工具”设置，选择是否查看 **CPU 使用率**[内存使用](../profiling/Memory-Usage.md)或同时查看两者。 如果运行的是 Visual Studio Enterprise，还可以在“工具” > “选项” > “IntelliTrace”中启用或禁用 IntelliTrace。
 
@@ -57,7 +58,7 @@ ms.locfileid: "99936881"
 
      我们将主要查看 CPU 使用率，因此请确保已启用 **CPU 使用率**（默认情况下已启用）。
 
-5. 依次单击“调试” > “启动调试”或单击工具栏上的“启动”或按 F5。
+5. 依次单击“调试”   > “启动调试”  或单击工具栏上的“启动”  或按 F5  。
 
      当应用完成加载后，将显示诊断工具的“摘要”视图。 如果需要打开窗口，请依次单击“调试” > “Windows” > “显示诊断工具”。
 
@@ -81,7 +82,7 @@ ms.locfileid: "99936881"
 
      ![诊断工具准备线程](../profiling/media/diag-tools-preparing-data.png "DiagToolsPreparingThreads")
 
-     CPU 使用率工具在“CPU 使用率”选项卡中显示报表。
+     CPU 使用率工具在“CPU 使用率”  选项卡中显示报表。
 
      ![诊断工具“CPU 使用率”选项卡](../profiling/media/diag-tools-cpu-usage-tab.png "DiagToolsCPUUsageTab")
 

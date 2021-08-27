@@ -18,14 +18,15 @@ ms.assetid: 9857505d-ae15-42f1-936d-6cd7fb9dd276
 author: ghogen
 ms.author: ghogen
 manager: jmartens
+ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 2622c5e86a22b4dc7ef9bf1fa3c426a588f40bab
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 55d2ecda1619f187f1a1fdd0854eb1e3dd1d7fb8
+ms.sourcegitcommit: 92cfc4b09f2f1847fb3af72521e304af9a3c35b6
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99851993"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122765471"
 ---
 # <a name="common-msbuild-project-properties"></a>常用的 MSBuild 项目属性
 
@@ -72,7 +73,7 @@ ms.locfileid: "99851993"
 | GenerateDocumentation | .NET | 一个布尔型参数，指示是否由生成来生成文档。 如果设置为 `true`，生成过程将生成文档信息，并将此信息与生成任务所创建的可执行文件或库的名称一同放置在 .xml 文件中。 |
 | GenerateFullPaths | C# | 使用 [-fullpaths](/dotnet/csharp/language-reference/compiler-options/fullpaths-compiler-option) 编译器选项为输出中的文件名生成完整路径。 |
 | GenerateSerializationAssemblies | .NET | 指示是否应通过 SGen.exe 生成 XML 序列化程序集，它可以设置为开、自动或关。 此属性用于仅面向 .NET Framework 的程序集。 要生成 .NET Standard 或 .NET Core 程序集的 XML 序列化程序集，请参考 Microsoft.XmlSerializer.Generator NuGet 包。 |
-| IntermediateOutputPath | 全部 | 如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 \obj\debug\\。 |
+| IntermediateOutputPath | 全部 | 如果未指定路径，则为从 `BaseIntermediateOutputPath` 派生的完整中间输出路径。 例如 obj\debug\\。 |
 | KeyContainerName | 全部 | 强名称密钥容器的名称。 |
 | KeyOriginatorFile | 全部 | 强名称密钥文件的名称。 |
 | ModuleAssemblyName | .NET | 要将编译好的模块并入其中的程序集的名称。 该属性等效于 `/moduleassemblyname` 编译器开关。 |

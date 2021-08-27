@@ -2,7 +2,7 @@
 title: 删除 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步从计算机中彻底删除 Visual Studio。
-ms.date: 08/17/2021
+ms.date: 08/24/2021
 ms.custom: seodec18
 ms.topic: how-to
 f1_keywords:
@@ -22,12 +22,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 82545d775d03b13ce87ea11682124f43e70856cf
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 4662eb0470811e3cf4047e1d51106734369ddf34
+ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334695"
+ms.lasthandoff: 08/24/2021
+ms.locfileid: "122785723"
 ---
 # <a name="remove-visual-studio"></a>删除 Visual Studio
 
@@ -40,10 +40,10 @@ ms.locfileid: "122334695"
 
 可以将以下任一命令行开关与 `InstallCleanup.exe` 工具结合使用：
 
-| 开关 | 行为                                                                                                                                                                                                                                                                                                                 |
-|--------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `-i`   | 如果没有传递其他开关，则此开关为默认值。 它仅删除主安装目录和产品信息。 如果打算在运行 `InstallCleanup.exe` 工具后重新安装相同版本的 Visual Studio，则使用此开关。                                                              |
-| `-f`   | 此开关删除在安装目录外安装的主安装目录、产品信息和大部分其他功能，这些功能也可能与其他 Visual Studio 安装或其他产品共享。 如果打算删除 Visual Studio 并且后来不重新安装，则使用此开关。 |
+| 开关 | 行为 |
+|-----------------|--------------------|
+|  `-i [version]`   | 如果没有传递其他开关，则此开关为默认值。 它仅删除主安装目录和产品信息。 如果打算在运行 `InstallCleanup.exe` 工具后重新安装相同版本的 Visual Studio，则使用此开关。 如果指定了 `[version]` 值，则仅删除版本以此字符串值开头的产品。 |
+|   `-f`           | 此开关删除在安装目录外安装的主安装目录、产品信息和大部分其他功能，这些功能也可能与其他 Visual Studio 安装或其他产品共享。 如果打算删除 Visual Studio 并且后来不重新安装，则使用此开关。 |
 
 以下是运行 `InstallCleanup.exe` 工具的方法：
 

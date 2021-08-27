@@ -3,7 +3,7 @@ title: F1 帮助无匹配回退
 description: 糟糕！ 未找到 F1 匹配项。
 ms.prod: visual-studio
 ms.technology: ''
-ms.date: 07/20/2021
+ms.date: 08/06/2021
 ms.topic: error-reference
 ms.custom: contperf-fy21q4
 recommendations: false
@@ -27,16 +27,14 @@ f1_keywords:
 manager: jmartens
 author: mikejo5000
 ms.author: mikejo
-ms.openlocfilehash: 225a499420f6b312a0f4777584efa324d156b2db
-ms.sourcegitcommit: 3c5b1a1d51b521356f42a6879c1f1745573dda65
+ms.openlocfilehash: 05853b1b77fd3266e82cfc0c7af17b5f55d168a9
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114592159"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122062493"
 ---
 # <a name="oops-no-f1-help-match-was-found"></a>糟糕！ 未找到 `F1` 帮助匹配项
-
-:::image type="content" source="../media/search-error-page-sm.png" alt-text="抱歉，无法找到匹配项" border="false":::
 
 ## <a name="now-what"></a>现在做什么？
 
@@ -58,3 +56,5 @@ ms.locfileid: "114592159"
 
 > [!div class="nextstepaction"]
 > [分享你的反馈（5 分钟调查）](https://www.surveymonkey.com/r/F1_Help_Visual_Studio)
+
+:::image type="content" source="../media/search-error-page-sm.png" alt-text="抱歉，无法找到匹配项" border="false":::

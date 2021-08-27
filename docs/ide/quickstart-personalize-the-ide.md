@@ -1,24 +1,28 @@
 ---
 title: 设置 Visual Studio 深色主题并更改文本颜色
 description: 了解如何在代码编辑器中将默认 Visual Studio 颜色主题更改为深色模式，以及如何更改字体颜色。
-ms.date: 08/20/2020
+ms.date: 08/19/2021
 ms.topic: how-to
 ms.custom: contperf-fy21q1
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: eb7c9bf04e5f38e5138eae6cf6254bb77bbd6230
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 8dd4e56ececf68b9bd53b5530f8ccfe0c906a975
+ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99916062"
+ms.lasthandoff: 08/19/2021
+ms.locfileid: "122464828"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：个性化设置 Visual Studio IDE 和编辑器
 
 本操作指南文章介绍了如何将 Visual Studio 颜色主题从默认的蓝色主题自定义为深色主题。 然后，介绍如何在代码编辑器中为两种不同类型的文本自定义颜色。
+
+> [!NOTE]
+> 在 [Visual Studio 2022 预览版](/visualstudio/releases/2022/release-notes-preview)中，我们改进了颜色主题功能，以与 Windows 设置相融合。 若要了解详细信息，请参阅[适用于 Visual Studio 的灵活主题设置功能](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/)博客文章。
 
 ::: moniker range="vs-2017"
 

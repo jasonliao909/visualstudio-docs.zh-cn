@@ -6,19 +6,20 @@ ms.topic: reference
 author: mikadumont
 ms.author: midumont
 manager: jmartens
+ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: dcbc575385660ea8369300acf4584b5b3d32b7fa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 262c4276395f2de71d8720dcd9a26839ef4cac51
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99910787"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122117080"
 ---
-# <a name="sort-usings"></a>对 Using 排序
+# <a name="sort-usings"></a>对 using 排序
 
 此重构适用于：
 
@@ -26,16 +27,16 @@ ms.locfileid: "99910787"
 
 - Visual Basic
 
-**功能：** 对 Using 排序。
+内容：对 using 排序。
 
-**使用时机：** 想要对文件顶部的 `using` 指令排序，来让它们按字母顺序排序。 
+适用情况：需要对文件顶部的 `using` 指令排序，让它们按字母顺序排序。 
 
-操作原因：  这样便于查找 using 指令。
+原因：这样便于查找 using 指令。
 
-## <a name="how-to"></a>操作说明
+## <a name="how-to"></a>操作方法
 
-1. 从菜单栏中选择“编辑”。 
-2. 选择“Intellisense” > “对 Using 排序”   。
+1. 从菜单栏中选择“编辑”。
+2. 选择“Intellisense” > “对 Using 排序” 。
 
    ![对 using 排序](media/sort-usings.png)
 
