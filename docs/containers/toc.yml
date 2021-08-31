@@ -17,21 +17,22 @@
         - name: 具有 Docker Compose 的多容器应用
           href: tutorial-multicontainer.md
     - name: 如何
+      expanded: true
       items:
         - name: 在本地 Docker 容器中调试应用
           href: edit-and-refresh.md
+        - name: 使用“容器”窗口
+          href: view-and-diagnose-containers.md
+        - name: 启动 Compose 服务的子集
+          href: launch-profiles.md
+        - name: 配置容器工具
+          href: container-tools-configure.md
         - name: 部署到容器注册表
           href: hosting-web-apps-in-docker.md
         - name: 部署到 Azure App Service
           href: deploy-app-service.md
         - name: 部署到 Docker Hub
           href: deploy-docker-hub.md
-        - name: 管理启动配置文件
-          href: launch-profiles.md
-        - name: 查看和诊断容器与图像
-          href: view-and-diagnose-containers.md
-        - name: 配置容器工具
-          href: container-tools-configure.md
     - name: 概念
       items:
         - name: Visual Studio 如何构建容器化应用
