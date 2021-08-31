@@ -9,12 +9,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: c18b3dc5d645ad264952a23192e89be55613d1fc
-  ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+  ms.openlocfilehash: d5a3f01af79b41ec219fd0ff959933e2798f1cfd
+  ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/13/2021
-  ms.locfileid: "122105626"
+  ms.lasthandoff: 08/27/2021
+  ms.locfileid: "123096753"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -54,11 +54,13 @@ landingContent:
   linkLists:
   - linkListType: how-to-guide
     links:
-    - text: 如何：配置生成和调试环境
-      url: container-build.md
-    - text: 如何：查看和诊断容器
+    - text: 使用“容器”窗口
       url: view-and-diagnose-containers.md
-    - text: 如何：容器开发工具疑难解答
+    - text: 启动 Compose 服务的子集
+      url: launch-profiles.md
+    - text: 配置生成和调试环境
+      url: container-build.md
+    - text: 容器开发工具疑难解答
       url: troubleshooting-docker-errors.md
 - title: 容器工具设置
   linkLists:
