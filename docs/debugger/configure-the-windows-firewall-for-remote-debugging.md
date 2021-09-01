@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ae4a3ea65c9db713bcbdb9a9d9b1027767614b21
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 608cbc78cd344ab2dd05bc1c7c993a4b69818715
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031401"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980899"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 
@@ -53,7 +53,7 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 使用 PowerShell 打开端口：
 
-对于 Windows 防火墙，你可以使用 PowerShell 命令（如 [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule?view=win10-ps)）。
+对于 Windows 防火墙，你可以使用 PowerShell 命令（如 [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule)）。
 
 下面的示例为远程计算机上的远程调试器打开端口 4024。 需要使用的路径可能有所不同。
 

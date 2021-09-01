@@ -6,15 +6,16 @@ author: nebuk89
 ms.author: ghogen
 manager: jmartens
 ms.technology: vs-docker
+ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: a33f185152e147b804d561a0511ebde62dcbc717
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 870bc951d9f05c0075140cca22481685dc88ed01
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067835"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230360"
 ---
 # <a name="use-bind-mounts"></a>使用绑定装载
 
@@ -45,19 +46,15 @@ ms.locfileid: "122067835"
 
 1. 请确保没有运行任何以前的 `getting-started` 容器。
 
-1. 运行以下命令（在 Windows PowerShell 中，请将 ` \ ` 字符替换为 `` ` ``）。 你将了解接下来会发生什么：
+1. 在 `getting-started` 文件夹中，运行以下命令（在 Windows PowerShell 中，将 ` \ ` 字符替换为 `` ` ``）。 你将了解接下来会发生什么：
 
     ```bash
-    docker run -dp 3000:3000 \
-        -w /app \
-        -v "%cd%:/app" \
-        node:12-alpine \
-        sh -c "yarn install && yarn run dev"
+    docker run -dp 3000:3000 -w /app -v ${PWD}:/app node:12-alpine sh -c "yarn install && yarn run dev"
     ```
 
     - `-dp 3000:3000` - 与以前相同。 在分离（后台）模式下运行并创建端口映射
     - `-w /app` - 设置运行命令的“工作目录”或当前目录
-    - `-v "%cd%:/app"` - 将当前目录从容器中的主机绑定装载到 `/app` 目录
+    - `-v ${PWD}:/app"` - 将当前目录从容器中的主机绑定装载到 `/app` 目录
     - `node:12-alpine` - 要使用的映像。 请注意，这是 Dockerfile 中应用的基本映像
     - `sh -c "yarn install && yarn run dev"` - 命令。 我们正在使用 `sh`（alpine 没有 `bash`）启动 shell，并运行 `yarn install` 来安装所有依赖项，然后运行 `yarn run dev`。 如果你查看 `package.json`，将看到 `dev` 脚本正在启动 `nodemon`。
 

@@ -11,19 +11,19 @@ ms.author: esherrer
 manager: AndSter
 ms.workload:
 - multiple
-ms.openlocfilehash: a8518e3f43bec3a9d5f696a07613dee84829dbc2
-ms.sourcegitcommit: a436ba564717b992eb1984b28ea0aec801eacaec
+ms.openlocfilehash: 758fad160bad89b5e8a4305bf4757302b05732e1
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98205458"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981081"
 ---
 # <a name="analyze-database-performance-using-the-database-tool"></a>使用数据库工具分析数据库性能
 
 使用数据库工具记录应用在诊断会话期间所进行的数据库查询。 然后，你可以分析各个查询的相关信息，以找到应用性能可改进的地方。
 
 > [!NOTE]
-> 数据库工具需要 Visual Studio 2019 版本 16.3 或更高版本，以及使用 [ADO.NET]( https://docs.microsoft.com/dotnet/framework/data/adonet/ado-net-overview) 或 [Entity Framework Core](/ef/core/) 的 Windows 上的 .NET Core 项目。
+> 数据库工具需要 Visual Studio 2019 版本 16.3 或更高版本，以及使用 [ADO.NET](/dotnet/framework/data/adonet/ado-net-overview) 或 [Entity Framework Core](/ef/core/) 的 Windows 上的 .NET Core 项目。
 
 ## <a name="setup"></a>安装
 
