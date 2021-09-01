@@ -8,14 +8,15 @@ ms.assetid: ff33b3cc-4db9-4b4e-9378-b45ed5999b18
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 762992ab2649e59055af8fd656514f3e82e9e8de
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: ad0144b736a57c6faae113f81f630b73eeb5143a
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879210"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098757"
 ---
 # <a name="how-to-add-schema-set-search-result-nodes-to-the-workspace"></a>如何：向工作区添加架构集搜索结果节点
 
