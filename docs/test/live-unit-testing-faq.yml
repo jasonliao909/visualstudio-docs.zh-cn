@@ -11,12 +11,12 @@ metadata:
   ms.author: mikejo
   ms.workload:
   - dotnet
-  ms.openlocfilehash: 1310990061f45c2100b9c028c90b1922f0294f32
-  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+  ms.openlocfilehash: 210885daff9f670910299e6cbefc174ca37a8847
+  ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/06/2021
-  ms.locfileid: "108800419"
+  ms.lasthandoff: 08/26/2021
+  ms.locfileid: "122980886"
 title: Live Unit Testing 常见问题解答
 summary: ''
 sections:
@@ -111,7 +111,7 @@ sections:
       在生成过程中，Live Unit Testing 会自动覆盖 `<BaseOutputPath>`/`<BaseIntermediateOutputPath>` 变量以定位 Live Unit Testing 项目文件夹。
 
 
-      例如，如果生成过程如下所示替代 <OutputPath>：
+      例如，如果生成过程如下所示替代 `<OutputPath>`：
 
 
       ```xml

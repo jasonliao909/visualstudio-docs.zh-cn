@@ -8,14 +8,15 @@ ms.assetid: 846fdabd-e5c3-4688-9b0d-a93fbeea1b96
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 9e5d113718c2ecc73ad942dd58ddf92216fe6c83
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: f6cfdde30b3c560b3ef6473a9db0bb12f821402f
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875115"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098796"
 ---
 # <a name="debugger-user-interface-xslt"></a>调试器用户界面 (XSLT)
 

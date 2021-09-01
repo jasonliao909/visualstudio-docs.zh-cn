@@ -9,19 +9,19 @@ helpviewer_keywords:
 - administrator guide, Visual Studio
 - installing Visual Studio, administrator guide
 ms.assetid: ''
-author: ornellaalt
-ms.author: ornella
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e5e8a28ac89c2bea85aee8323060bf948266ad2e
-ms.sourcegitcommit: 56060e3186086541d9016d4185e6f1bf3471e958
+ms.openlocfilehash: 16624eb602b5ef02d7871ba579e0e2bdc5bdb337
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "106547383"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122981006"
 ---
 # <a name="visual-studio-enterprise-guide"></a>Visual Studio Enterprise 指南
 如果你想节省在 Visual Studio 上正常运行公司业务的时间，请阅读本文。 本企业指南提供了一些提示，可帮助你在常见的企业场景中安装和更新 Visual Studio、在遇到问题时解决问题，并了解如何在需要更多帮助的情况下报告问题。 
@@ -29,7 +29,7 @@ ms.locfileid: "106547383"
 ## <a name="get-started"></a>入门 
 了解如何在联网和脱机环境中将 Visual Studio 部署到企业。
 
-- [使用 Microsoft Endpoint Configuration Manager (SCCM) 启用管理员更新](enabling-administrator-updates.md)。  Visual Studio 更新包含在 [Microsoft 更新目录](https://www.catalog.update.microsoft.com/Home.aspx)和 [Windows Server Update Services (WSUS)](https://docs.microsoft.com/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) 中。 然后，企业管理员可以下载更新并使用标准部署工具（如 Microsoft Endpoint Configuration Manager (SCCM)）跨组织将其分发到 Visual Studio 客户端计算机。
+- [使用 Microsoft Endpoint Configuration Manager (SCCM) 启用管理员更新](enabling-administrator-updates.md)。  Visual Studio 更新包含在 [Microsoft 更新目录](https://www.catalog.update.microsoft.com/Home.aspx)和 [Windows Server Update Services (WSUS)](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus) 中。 然后，企业管理员可以下载更新并使用标准部署工具（如 Microsoft Endpoint Configuration Manager (SCCM)）跨组织将其分发到 Visual Studio 客户端计算机。
 
 - **了解联网环境中的企业部署选项**。 [Visual Studio 管理员指南](visual-studio-administrator-guide.md)为系统管理员提供基于应用场景的指南。 
 

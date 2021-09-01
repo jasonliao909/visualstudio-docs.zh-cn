@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: bf19be21d95c4ac271772e8101e0c077e5af7f55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 89ea3e2b08507e2bf6724f12951e0a35d76dfd08
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123354"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980683"
 ---
 # <a name="customize-your-build"></a>自定义生成
 
@@ -245,8 +245,11 @@ msbuild /p:CustomBeforeMicrosoftCommonTargets="C:\build\config\Custom.Before.Mic
 
 要自定义所有 C++ 生成的默认属性值，请创建另一个 .props 文件（例如 MyProps.props），然后在指向该文件的 `Directory.Build.props` 中定义 `ForceImportAfterCppProps` 属性 ：
 
-<PropertyGroup> <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
+```xml
+<PropertyGroup>
+  <ForceImportAfterCppProps>$(MsbuildThisFileDirectory)\MyProps.props<ForceImportAfterCppProps>
 </PropertyGroup>
+```
 
 MyProps.props 会自动导入到 Microsoft.Cpp.props 的最末尾 。
 
