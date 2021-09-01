@@ -11,12 +11,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - dotnet
-ms.openlocfilehash: 93b5541ace035fb9606355865974657faf83ec32
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: fb989c2ba3567e161f3576a6a654f0f27f9b55a3
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116859"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980912"
 ---
 # <a name="use-pattern-matching"></a>使用模式匹配
 
@@ -26,7 +26,7 @@ ms.locfileid: "122116859"
 
 **功能：** 使用模式匹配。
 
-**使用时机：** 要使用新的 [C# 模式匹配](https://docs.microsoft.com/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)功能。
+**使用时机：** 要使用新的 [C# 模式匹配](/dotnet/csharp/whats-new/csharp-9#pattern-matching-enhancements)功能。
 
 操作原因：此重构会使代码更加清晰简洁。
 

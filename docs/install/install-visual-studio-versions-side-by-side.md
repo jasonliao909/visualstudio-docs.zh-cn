@@ -10,15 +10,15 @@ helpviewer_keywords:
 - side-by-side installations [Visual Studio]
 - Help [Visual Studio], installing
 - install multiple versions of Visual Studio
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
-ms.openlocfilehash: c8d1da5f8cb5c237fe02a41197825d5086fc6471
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 80771228d89ae1632b2903151e0badae68040479
+ms.sourcegitcommit: 7510ddb64569af60fe4ccc563dea335a87c73cad
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307016"
+ms.lasthandoff: 08/25/2021
+ms.locfileid: "122836017"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并排安装 Visual Studio 版本
 
@@ -90,7 +90,7 @@ ms.locfileid: "112307016"
    * 对于 Visual Studio Community，应与 vs_community.exe 匹配或类似
 
    ```shell
-   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 1. 按照安装程序对话框选择安装所需的组件。 有关详细信息，请参阅[安装 Visual Studio](install-visual-studio.md#step-4---choose-workloads)。
