@@ -8,14 +8,15 @@ ms.assetid: 3fc7af94-dcb8-4226-a577-43f03664388b
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
+ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 6c897d4e6e267eb73e83a0d1610476d08646587a
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 0f3a67d873da498dc453decd316e74f9331ba391
+ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99879248"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "122098783"
 ---
 # <a name="how-to-add-nodes-to-the-workspace-from-the-start-view"></a>如何：将起始视图中的节点添加到工作区
 

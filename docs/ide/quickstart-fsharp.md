@@ -4,8 +4,8 @@ description: 了解如何在 Visual Studio 中使用 F# 逐步创建 ASP.NET Cor
 ms.date: 08/24/2018
 ms.topic: quickstart
 ms.custom: vs-acquisition
-author: cartermp
-ms.author: phcart
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: a22eb43c85c1b123270c5414c9f84ee6a5288cd5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: df1ea3b5cb57180c8f9fd8402b892594888d3bae
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122151894"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980964"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入门：使用 Visual Studio 以 F\# 创建首个 ASP.NET Core Web 服务
 
