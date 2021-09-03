@@ -402,3 +402,5 @@
       href: lab-management/use-build-or-rm-instead-of-lab-management.md
     - name: 安装测试代理和测试控制器
       href: lab-management/install-configure-test-agents.md
+- name: Visual Studio 中的远程测试
+  href: remote-testing.md
