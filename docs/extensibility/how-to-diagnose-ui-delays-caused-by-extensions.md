@@ -4,17 +4,17 @@ description: 如果 UI 延迟可能是由扩展引起的，Visual Studio 会通�
 ms.custom: SEO-VS-2020
 ms.date: 01/26/2018
 ms.topic: conceptual
-author: j-martens
-ms.author: jmartens
+author: leslierichardson95
+ms.author: lerich
 manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload: multiple
-ms.openlocfilehash: 6309d014e2ec2c520a7cba24c8642c27fbb6f339
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8ddb58405125b53c955324be55ccb5eec93000e4
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125005"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398582"
 ---
 # <a name="how-to-diagnose-ui-delays-caused-by-extensions"></a>如何：诊断由扩展引起的 UI 延迟
 
@@ -151,12 +151,12 @@ PerfView 处理并打开跟踪可能需要几分钟时间。 打开跟踪后，�
 
 ![在线程时间堆栈视图中设置 GroupPath 和 IncPath](media/perfview-tts-group-path-inc-path.png)
 
-PerfView 提供了 " **帮助** " 菜单下的详细指导，可用于标识代码中的性能瓶颈。 此外，以下链接提供了有关如何利用 Visual Studio 线程 api 来优化代码的详细信息：
+PerfView 在"帮助"菜单下提供了详细的指导，可用于识别代码中的性能瓶颈。 此外，以下链接提供有关如何利用线程Visual Studio API 优化代码的更多信息：
 
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/index.md](https://github.com/Microsoft/vs-threading/blob/master/doc/index.md)
 * [https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md](https://github.com/Microsoft/vs-threading/blob/master/doc/cookbook_vs.md)
 
-你还可以将新的 Visual Studio 静态分析器用于扩展 ([在此处](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)) NuGet 包 "，该分析器提供有关编写有效扩展的最佳实践的指导。 请参阅 [VS SDK 分析器](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md) 和 [线程分析器](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)列表。
+还可以在此处使用新的静态分析器Visual Studio扩展包 (NuGet，) 为编写高效扩展的最佳实践提供指导[](https://www.nuget.org/packages/microsoft.visualstudio.sdk.analyzers)。 请参阅 VS [SDK 分析器和](https://github.com/Microsoft/VSSDK-Analyzers/blob/master/doc/index.md)[线程分析器的列表](https://github.com/Microsoft/vs-threading/blob/master/doc/analyzers/index.md)。
 
 > [!NOTE]
-> 如果由于不能对无响应进行 (控制而无法解决此类情况，例如，如果你的扩展必须在 UI 线程) 上调用同步 VS services，我们希望了解这一点。 如果你是 Visual Studio 合作伙伴计划的成员，则可以通过提交开发人员支持请求与我们联系。 否则，请使用 "报告问题" 工具提交反馈，并将其包括 `"Extension UI Delay Notifications"` 在标题中。 还应包括分析的详细说明。
+> 如果由于依赖关系而无法解决无响应问题 (例如，如果扩展必须调用 UI 线程) 上的同步 VS 服务，我们希望了解这一点。 如果你是我们的合作伙伴计划Visual Studio成员，可以通过提交开发人员支持请求联系我们。 否则，请使用"报告问题"工具提交反馈，并 `"Extension UI Delay Notifications"` 包括到标题中。 此外，请包含分析的详细说明。
