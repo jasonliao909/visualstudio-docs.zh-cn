@@ -1,6 +1,6 @@
 ---
 title: 使用 NuGet 编译和生成 TypeScript 代码
-description: 了解如何使用 NuGet 包向 Visual Studio 项目添加 Typescript 支持。
+description: 了解如何使用 NuGet 包向 Visual Studio 项目添加 TypeScript 支持。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8e50a88b53683ba98a2633e9fa4adbab7111d2ca
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1bf1deb271d7a20527f53260813e35e0de9daa19
+ms.sourcegitcommit: 409a750a944a72c5931f6094deb4dc9a2635a984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077850"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123262070"
 ---
 # <a name="compile-typescript-code-aspnet-core"></a>编译 TypeScript 代码 (ASP.NET Core)
 
@@ -158,7 +158,7 @@ ms.locfileid: "122077850"
 
 ### <a name="remove-default-imports"></a>删除默认导入
 
-在使用[非 SDK 样式格式](https://docs.microsoft.com/nuget/resources/check-project-format)的旧 ASP.NET Core 项目中，可能需要删除某些项目文件元素。
+在使用[非 SDK 样式格式](/nuget/resources/check-project-format)的旧 ASP.NET Core 项目中，可能需要删除某些项目文件元素。
 
 如果使用 NuGet 包为项目提供 MSBuild 支持，则项目文件不得导入 `Microsoft.TypeScript.Default.props` 或 `Microsoft.TypeScript.targets`。 这些文件是通过 NuGet 包导入的，因此单独添加它们可能会导致意外的行为。
 

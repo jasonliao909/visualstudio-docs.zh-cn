@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: f2c5f5daed884d009ecf13a69222e58f3a654b6d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5bf9a17a86c336b3dad1bd3b97c8f7c30b35c888
+ms.sourcegitcommit: be12c22a030f299fc4d0960f85b20971434fafed
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047395"
+ms.lasthandoff: 08/30/2021
+ms.locfileid: "123160088"
 ---
 # <a name="use-coded-ui-test-to-test-your-code"></a>使用编码的 UI 测试来测试代码
 
@@ -38,8 +38,11 @@ ms.locfileid: "122047395"
 
 ## <a name="requirements"></a>要求
 
-- Visual Studio Enterprise
+- Visual Studio Enterprise 2019*
 - 编码的 UI 测试组件
+
+   > [!NOTE]
+   > * Visual Studio 2019 是通过记录器创建测试的最后一个版本。 Visual Studio 2022 仅提供对编码的 UI 测试的最小且基本的支持。
 
 有关编码的 UI 测试支持哪些平台和配置的详细信息，请参阅[支持的平台](../test/supported-configurations-and-platforms-for-coded-ui-tests-and-action-recordings.md)。
 

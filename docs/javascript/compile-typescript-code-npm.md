@@ -1,6 +1,6 @@
 ---
 title: 使用 npm 编译和生成 TypeScript 代码
-description: 了解如何使用节点包管理器 (npm) 向 Visual Studio 项目添加 Typescript 支持。
+description: 了解如何使用节点包管理器 (npm) 向 Visual Studio 项目添加 TypeScript 支持。
 ms.date: 7/23/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -11,12 +11,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 98e87e402613e73dd9a5ab8a08f3c2bdae1ab1d2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1a3426b4e8d7dae3b7585a47dca9e98a8cbc14a6
+ms.sourcegitcommit: 409a750a944a72c5931f6094deb4dc9a2635a984
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055752"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123262083"
 ---
 # <a name="compile-typescript-code-nodejs"></a>编译 TypeScript 代码 (Node.js)
 

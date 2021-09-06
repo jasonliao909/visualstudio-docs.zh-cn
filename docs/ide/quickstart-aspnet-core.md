@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: e610f58fad678f297afffa5796f33e76de6b2224
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 974f6bf70d6866893a61a14f9e2999ba265fb166
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062480"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097013"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-app"></a>快速入门：使用 Visual Studio 创建首个 ASP.NET Core Web 应用
 
@@ -217,10 +217,15 @@ ms.locfileid: "122062480"
 
 ## <a name="next-steps"></a>后续步骤
 
-要更加深入地了解，请继续学习下面的教程：
+要详细了解如何创建 ASP.NET Web 应用，请继续学习以下教程：
 
 > [!div class="nextstepaction"]
 > [Visual Studio 中的 C# 和 ASP.NET 入门](../get-started/csharp/tutorial-aspnet-core.md)
+
+或者，了解如何使用 Docker 来容器化 Web 应用：
+
+> [!div class="nextstepaction"]
+> [Visual Studio 中的容器工具](../containers/overview.md)
 
 ## <a name="see-also"></a>另请参阅
 

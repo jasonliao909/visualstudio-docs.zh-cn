@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 5490a0d4bdc6a0b980fdf19a1f63259a22b8a572
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1a42e1d1d083a383715db72b018b695fc4a9829c
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028353"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097026"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -358,7 +358,7 @@ ms.locfileid: "122028353"
 
 ### <a name="what-is-c"></a>什么是 C#？
 
-[C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/) 是一种类型安全且面向对象的编程语言，其可靠且易于学习。
+[C#](/dotnet/csharp/tour-of-csharp/) 是一种类型安全且面向对象的编程语言，其可靠且易于学习。
 
 ### <a name="what-is-aspnet-core"></a>什么是 ASP.NET Core？
 
@@ -375,6 +375,11 @@ Visual Studio 是适用于开发人员的生产力工具集成开发套件。 �
 > [!div class="nextstepaction"]
 > [使用 ASP.NET Core 创建 Razor 页面 Web 应用](/aspnet/core/tutorials/razor-pages/?view=aspnetcore-2.1&preserve-view=true)
 
-## <a name="see-also"></a>请参阅
+或者，了解如何使用 Docker 容器化 Web 应用：
+
+> [!div class="nextstepaction"]
+> [Visual Studio 中的容器工具](../../containers/overview.md)
+
+## <a name="see-also"></a>另请参阅
 
 [使用 Visual Studio 将 Web 应用发布到 Azure App Service](../../deployment/quickstart-deploy-to-azure.md)

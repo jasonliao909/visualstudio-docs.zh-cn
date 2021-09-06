@@ -2,7 +2,7 @@
 title: 在引用管理器中添加引用
 description: 了解如何使用“引用管理器”对话框添加和管理对已开发组件的引用。
 ms.custom: SEO-VS-2020
-ms.date: 08/02/2019
+ms.date: 08/30/2021
 ms.topic: how-to
 f1_keywords:
 - VS.ReferenceManager
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 17285f8e5ed55cde9381d338f6f68ecd681fc8c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: aa958014557577f5b2d0fda851d643c914a6942d
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028184"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230308"
 ---
 # <a name="how-to-add-or-remove-references-by-using-the-reference-manager"></a>如何：使用引用管理器添加或删除引用
 
@@ -50,17 +50,31 @@ ms.locfileid: "122028184"
 - **Windows**，包含“核心”和“扩展”子组 。 可以使用“对象浏览器”浏览 Windows SDK 或扩展 SDK 中的引用。
 
 - **浏览**，包含“最近”子组
- 
+
     > [!NOTE]
     > 如果是开发 C++ 项目，则可能不会在“引用管理器”对话框中看到“浏览”。
 
 ## <a name="add-a-reference"></a>添加引用
+
+::: moniker range="vs-2017"
 
 1. 在“解决方案资源管理器”中，右键单击“引用”或“依赖项”节点，然后选择“添加引用”   。 还可以右键单击项目节点，然后选择“添加” > “引用” 。
 
    此时将打开“引用管理器”，并按组列出可用引用。
 
 2. 指定要添加的引用，然后选择“确定”。
+
+::: moniker-end
+
+::: moniker range=">=vs-2019"
+
+1. 在“解决方案资源管理器”中，右键单击“引用”或“依赖项”节点，并选择“添加项目引用”、“添加共享项目引用”或“添加 COM 引用”     。 （也可以右键单击项目节点，从弹出的菜单中选择“添加”，然后从这些选项中进行选择。）
+
+   此时将打开“引用管理器”，并按组列出可用引用。
+
+2. 指定要添加的引用，然后选择“确定”。
+
+::: moniker-end
 
 ## <a name="assemblies-tab"></a>“程序集”选项卡
 

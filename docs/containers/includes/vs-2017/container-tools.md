@@ -1,17 +1,17 @@
 ---
-title: 带有 ASP.NET Core 的 Visual Studio 容器工具
+title: Windows 上带有 ASP.NET 的 Visual Studio Container Tools for Docker
 author: ghogen
 description: 了解如何使用 Visual Studio 2017 工具和 Docker for Windows
 ms.author: ghogen
 ms.date: 02/01/2019
 ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: cc9df8638e72e2175aa55b5b8ab819d4b476d5dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d403572e60d29c3af5197cc3bb647fa47bf8c0aa
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147360"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123122457"
 ---
 使用 Visual Studio，可以轻松地生成、调试和运行容器化的 ASP.NET Core 应用程序并将其发布到 Azure 容器注册表、Docker Hub、Azure 应用服务或你自己的容器注册表。 在本文中，我们将发布到容器注册表。
 

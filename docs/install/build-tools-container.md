@@ -6,19 +6,19 @@ ms.date: 03/25/2020
 ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e29e780d146fec63bc1375ed16f72067f9b4ccee
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: fae4229da84ceb3d35dde3d95c06050c6b2195be
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307630"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230347"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 
@@ -103,7 +103,7 @@ ms.locfileid: "112307630"
    
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
 
    ```dockerfile
    # escape=`
@@ -147,6 +147,49 @@ ms.locfileid: "112307630"
 
    ::: moniker-end
    
+   ::: moniker range=">=vs-2022"
+
+   ```dockerfile
+   # escape=`
+
+   # Use the latest Windows Server Core image with .NET Framework 4.8.
+   FROM mcr.microsoft.com/dotnet/framework/sdk:4.8-windowsservercore-ltsc2019
+
+   # Restore the default Windows shell for correct batch processing.
+   SHELL ["cmd", "/S", "/C"]
+
+   RUN `
+       # Download the Build Tools bootstrapper.
+       curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/pre/vs_buildtools.exe `
+       `
+       # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+       && (start /w vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+           --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools" `
+           --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+           --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+           --remove Microsoft.VisualStudio.Component.Windows81SDK `
+           || IF "%ERRORLEVEL%"=="3010" EXIT 0) `
+       `
+       # Cleanup
+       && del /q vs_buildtools.exe
+
+   # Define the entry point for the docker container.
+   # This entry point starts the developer command prompt and launches the PowerShell shell.
+   ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+   ```
+
+   > [!TIP]
+   > 有关工作负载和组件的列表，请参阅 [Visual Studio 生成工具组件目录](workload-component-id-vs-build-tools.md)。
+   >
+
+   > [!WARNING]
+   > 如果映像直接基于 microsoft/windowsservercore，可能无法正确安装 .NET Framework，且不会指示任何安装错误。 安装完成后，可能无法运行托管代码。 相反，可使映像以 [microsoft/dotnet-framework:4.8](https://hub.docker.com/r/microsoft/dotnet-framework) 或更高版本为基础。 另请注意，标记为 4.8 或更高版本的映像可能使用 PowerShell 作为默认 `SHELL`，这将导致 `RUN` 和 `ENTRYPOINT` 指令失败。
+   >
+   > 请参阅 [Windows 容器版本兼容性](/virtualization/windowscontainers/deploy-containers/version-compatibility)，以了解哪些主机操作系统版本支持哪些容器操作系统版本，并请参阅[容器的已知问题](build-tools-container-issues.md)了解已知问题。
+
+   ::: moniker-end
    > [!NOTE]
    > 错误代码 `3010` 用于在需要重新启动时指示成功，请参阅 [MsiExec.exe 错误消息](/windows/win32/msi/error-codes)了解详细信息。
 
@@ -164,7 +207,7 @@ ms.locfileid: "112307630"
 
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
 
    ```shell
    docker build -t buildtools2019:latest -m 2GB .
@@ -173,6 +216,18 @@ ms.locfileid: "112307630"
    此命令使用 2 GB 内存在当前目录中生成 Dockerfile。 安装某些工作负载后，默认的 1 GB 会不够用；你有可能只使用 1 GB 内存进行生成，具体取决于生成环境。
 
    最终映像带有标记“buildtools2019:latest”，因此可以在作为“buildtools2019”的容器中轻松运行它，因为如果未指定任何标记，默认情况下会使用“latest”标记。 如果要在更[高级的方案](advanced-build-tools-container.md)中使用特定版本的 Visual Studio 生成工具 2019，则可以改用特定 Visual Studio 生成号以及“latest”来标记容器，因此容器可以按一致方式使用特定版本。
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ```shell
+   docker build -t buildtools:latest -m 2GB .
+   ```
+
+   此命令使用 2 GB 内存在当前目录中生成 Dockerfile。 安装某些工作负载后，默认的 1 GB 会不够用；你有可能只使用 1 GB 内存进行生成，具体取决于生成环境。
+
+   最终映像带有标记“buildtools:latest”，因此可以在作为“buildtools”的容器中轻松运行它，因为如果未指定任何标记，默认情况下会使用“latest”标记。 如果要在更[高级的方案](advanced-build-tools-container.md)中使用特定版本的 Visual Studio 生成工具，则可以改用特定 Visual Studio 生成号以及“latest”来标记容器，因此容器可以按一致方式使用特定版本。
 
    ::: moniker-end
 
@@ -192,10 +247,18 @@ ms.locfileid: "112307630"
 
    ::: moniker-end
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range="vs-2019"
 
    ```shell
    docker run -it buildtools2019
+   ```
+
+   ::: moniker-end
+
+   ::: moniker range=">=vs-2022"
+
+   ```shell
+   docker run -it buildtools
    ```
 
    ::: moniker-end

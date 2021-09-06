@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 中禁用 DPI 感知
 description: 讨论 HDPI 监视器上 Windows 窗体设计器的限制，以及如何以非 DPI 感知进程的形式运行 Visual Studio。
-ms.date: 09/28/2020
+ms.date: 08/30/2021
 author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-designers
 ms.topic: conceptual
-ms.openlocfilehash: 3b4ae4cd215546744172ab64890254c488823e92
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d56a3650f2dd8df2b314bd80b27b321a68a92a2e
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089779"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230373"
 ---
 # <a name="disable-dpi-awareness-in-visual-studio"></a>在 Visual Studio 中禁用 DPI 感知
 
@@ -102,3 +102,4 @@ Visual Studio 中的 Windows 窗体设计器不支持缩放  。 因此，在高
 ## <a name="see-also"></a>请参阅
 
 - [Windows 窗体中的自动缩放](/dotnet/framework/winforms/automatic-scaling-in-windows-forms)
+- [通过 Visual Studio 创建更出色的多监视器体验](https://devblogs.microsoft.com/visualstudio/a-better-multi-monitor-experience-with-visual-studio-2019/)
