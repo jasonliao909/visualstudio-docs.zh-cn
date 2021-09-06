@@ -1,17 +1,17 @@
 ---
-title: Visual Studio Tools for Docker 与 ASP.NET
+title: Windows 上带有 ASP.NET 的 Visual Studio Container Tools for Docker
 author: ghogen
 description: 了解如何使用 Visual Studio 2019 工具和 Docker for Windows
 ms.author: ghogen
 ms.date: 03/08/2021
 ms.technology: vs-container-tools
 ms.topic: include
-ms.openlocfilehash: 91ca214fe8a90a9d999763f0099a3e9634c44824
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dbf0958be52209878178a9d8291f064e4078e298
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147361"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123122279"
 ---
 使用 Visual Studio，可以轻松地生成、调试和运行容器化的 .NET、ASP.NET 和 ASP.NET Core 应用并将其发布到 Azure 容器注册表 (ACR)、Docker Hub、Azure 应用服务或你自己的容器注册表。 本文介绍如何将 ASP.NET Core 应用发布到 ACR。
 
@@ -89,7 +89,7 @@ ENTRYPOINT ["dotnet", "WebApplication1.dll"]
 
 ![“容器”窗口的屏幕截图](../../media/overview/vs-2019/container-tools-window.png)
 
-有关详细信息，请参阅[在 Visual Studio 中查看和诊断容器及映像](../../view-and-diagnose-containers.md)。
+有关详细信息，请参阅[使用“容器”窗口](../../view-and-diagnose-containers.md)。
 
 ## <a name="publish-docker-images"></a>发布 Docker 映像
 

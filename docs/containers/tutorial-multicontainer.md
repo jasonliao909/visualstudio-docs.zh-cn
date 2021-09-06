@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: f2185bf025bc880a7461a9e1618953f734a7083a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 437663a4c3f1af07d5137aacb32e26e6021597ed
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155052"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096966"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -203,7 +203,7 @@ ms.locfileid: "122155052"
 
 查看用于[将容器部署到 Azure](/azure/containers) 的选项。
 
-若要更好地控制调试会话期间启动的服务，请了解如何使用 Docker Compose 启动配置文件来配置调试时运行的服务。 请参阅[管理 Docker Compose 的启动配置文件](launch-profiles.md)
+如果使用大量微服务，并且其中的许多服务不是每个调试任务都需要的，则可以使用 Docker Compose 启动配置文件来更好地控制在调试会话期间启动哪些服务。 请参阅[管理 Docker Compose 的启动配置文件](launch-profiles.md)。
 
 ## <a name="see-also"></a>另请参阅
   

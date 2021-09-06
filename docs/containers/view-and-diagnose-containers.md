@@ -1,27 +1,29 @@
 ---
-title: 查看和诊断 Docker 容器与图像
-description: 介绍如何通过使用工具窗口查看托管应用的容器内正在进行的操作，提高在 Visual Studio 中调试和诊断基于容器的应用的能力。
+title: 使用 Visual Studio 中的“容器”窗口
+description: 介绍如何通过使用“容器”工具窗口查看环境变量、文件、日志、端口、更多托管应用的容器以及本地可用的 Docker 映像，来提高在 Visual Studio 中调试和诊断基于容器的应用的能力。
 author: ghogen
 ms.author: ghogen
 ms.topic: how-to
 ms.date: 01/20/2020
 ms.technology: vs-container-tools
 monikerRange: vs-2019
-ms.openlocfilehash: 63f21f83e677e391c14b71a8cccec6c49ee6f60e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d6e4ce1e92afea971d02242c03595020d27c23e3
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122002"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096788"
 ---
-# <a name="how-to-view-and-diagnose-containers-and-images-in-visual-studio"></a>如何在 Visual Studio 中查看和诊断容器与图像
+# <a name="use-the-containers-window"></a>使用“容器”窗口
 
 可使用“容器”窗口查看托管应用的容器内发生的情况  。 如果习惯于通过使用命令提示符运行 Docker 命令来查看和诊断容器中进行的操作，则此窗口提供更方便的方法，在无需离开 Visual Studio IDE 的情况下即可监视容器。
+
+还可以使用“容器”窗口查看有关容器映像的信息。
 
 ## <a name="prerequisites"></a>先决条件
 
 - [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-- [Visual Studio 2019 版本 16.4 预览版 2](https://visualstudio.microsoft.com/downloads) 或更高版本，或者如果使用的是早期版本的 Visual Studio 2019，请安装[容器窗口扩展](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vs-containers-tools-extensions)。
+- [Visual Studio 2019 版本 16.4](https://visualstudio.microsoft.com/downloads) 或更高版本。
 
 ## <a name="view-information-about-your-containers"></a>查看容器的相关信息
 
@@ -29,7 +31,7 @@ ms.locfileid: "122122002"
 
 ![Visual Studio 中“容器”窗口的屏幕截图，其中在左窗格中选中了一个容器，在右窗格中选中了“环境”选项卡。](media/view-and-diagnose-containers/container-window.png)
 
-在左侧，可看到本地计算机上的容器列表。 与解决方案关联的容器显示在“解决方案容器”下  。 在右侧，可看到一个窗格，其中包含“环境”、“端口”、“日志”和“文件”选项卡     。
+在左侧，可看到本地计算机上的容器列表。 与解决方案关联的容器显示在“解决方案容器”下  。 在右侧，可看到一个窗格，其中包含“环境”、“标签”、“端口”、“卷”、“日志”和“文件”选项卡     。
 
 > [!TIP]
 > 可轻松自定义“容器”工具窗口在 Visual Studio 中的停靠位置  。 请参阅[在 Visual Studio 中自定义窗口布局](../ide/customizing-window-layouts-in-visual-studio.md)。 默认情况下，调试器正在运行时，“容器”窗口与“监视”窗口停靠在一起   。
@@ -38,10 +40,16 @@ ms.locfileid: "122122002"
 
 “环境”选项卡显示容器中的环境变量  。 对于应用的容器，可以通过多种方式设置这些变量，例如，在 Dockerfile 中，在 .env 文件中，或使用 Docker 命令启动容器时使用 -e 选项进行设置。
 
-![Visual Studio 中“容器”窗口的屏幕截图，其中显示容器 WebApplication11 的“环境”变量。](media/view-and-diagnose-containers/containers-environment-vars.png)
+![Visual Studio 中“容器”窗口的屏幕截图，其中显示容器的“环境”变量。](media/view-and-diagnose-containers/containers-environment-vars.png)
 
 > [!NOTE]
 > 对环境变量所做的任何更改都不会实时反映出来。 此外，此选项卡中的环境变量是容器上的系统环境变量，不反映应用程序的本地用户环境变量。
+
+## <a name="view-labels"></a>查看标签
+
+“标签”选项卡显示容器的标签。 标签是在 Docker 对象上设置自定义元数据的一种方法。 某些标签由 Visual Studio 自动设置。
+
+![Visual Studio 中“容器”窗口的屏幕截图，其中显示“标签”选项卡](media/view-and-diagnose-containers/containers-labels.png)
 
 ## <a name="view-port-mappings"></a>查看端口映射
 
@@ -50,6 +58,12 @@ ms.locfileid: "122122002"
 ![“容器”窗口中“端口”选项卡的屏幕截图](media/view-and-diagnose-containers/containers-ports.png)
 
 已链接已知端口，因此，如果某个端口上有可用的内容，则可以单击该链接打开浏览器。
+
+## <a name="view-volumes"></a>查看卷
+
+“卷”选项卡显示容器上的卷（装载的文件系统节点）。
+
+![“容器”窗口中“卷”选项卡的屏幕截图](media/view-and-diagnose-containers/containers-volumes.png)
 
 ## <a name="view-logs"></a>查看日志
 
@@ -78,6 +92,8 @@ ms.locfileid: "122122002"
 
 “容器”窗口默认显示 Docker 管理的计算机上的所有容器  。 可以使用工具栏按钮来启动、停止或移除（删除）不再需要的容器。  创建或删除容器时，会动态更新此列表。
 
+若要选择多个容器，例如，要一次删除多个容器，请使用“Ctrl+单击”。 如果尝试启动 10 个以上的容器，系统将提示你确认此操作。 你可以根据需要禁用确认提示。
+
 ## <a name="open-a-terminal-window-in-a-running-container"></a>在正在运行的容器中打开终端窗口
 
 可以使用“容器”窗口中的“打开终端窗口”按钮在容器中打开终端窗口（命令提示符或交互式 shell）   。
@@ -100,9 +116,29 @@ ms.locfileid: "122122002"
 
 ## <a name="viewing-images"></a>查看图像
 
-还可以使用“容器”窗口中的“图像”选项卡来查看本地计算机上的图像   。 从外部存储库中提取的图像将在树视图中组合在一起。 选择一个图像以查看该图像的详细信息。
+还可以使用“容器”窗口中的“图像”选项卡来查看本地计算机上的图像   。 从外部存储库中提取的图像将在树视图中组合在一起。
+
+![显示“容器”窗口的屏幕截图，其中显示了容器映像](media/view-and-diagnose-containers/containers-images.png)
+
+此窗口只有适用于映像的选项卡：“标签”和“详细信息” 。 “详细信息”选项卡以 JSON 格式显示映像的配置详细信息。
+
+![屏幕截图显示“容器”窗口的“映像”>“详细信息”选项卡](media/view-and-diagnose-containers/containers-images-details.png)
 
 若要删除某个图像，请在树视图中右键单击该图像，然后选择“删除”  ，或选择该图像，然后使用工具栏上的“删除”  按钮。
+
+## <a name="prune-containers-and-images"></a>删除容器和映像
+
+可以通过使用“容器”窗口工具栏上的“删除”按钮轻松删除不再使用的容器和映像 。
+
+![显示删除按钮的屏幕截图](media/view-and-diagnose-containers/container-window-prune.png)
+
+系统会要求你确认是否要删除所有未使用的容器。
+
+选择“映像”选项卡时，“删除”按钮会询问你是否要删除所有悬空映像 。 悬空映像是不再与标记的映像关联的层的映像。 偶尔删除它们有助于节省磁盘空间。
+
+## <a name="configuration-options"></a>配置选项
+
+可以配置各种任务的确认对话框，例如删除容器和映像或一次启动 10 个以上的容器等任务。 可以使用对话框上的复选框来禁用每个提示。 还可以使用“工具” > “选项” > “容器工具” > “容器工具窗口”中的设置来启用或禁用这些选项   。 请参阅[配置容器工具](container-tools-configure.md)。
 
 ## <a name="next-steps"></a>后续步骤
 
@@ -111,5 +147,3 @@ ms.locfileid: "122122002"
 ## <a name="see-also"></a>请参阅
 
 [在 Visual Studio 进行容器开发](./index.yml)
-
-[适用于 Visual Studio 的扩展市场](https://marketplace.visualstudio.com/)

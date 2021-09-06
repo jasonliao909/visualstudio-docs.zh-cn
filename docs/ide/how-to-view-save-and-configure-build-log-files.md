@@ -11,12 +11,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 8bca2ae08037a63cfbf8647808c7b1c7329ad2aa
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 3316bf26f660b04c4f003b02523be3f9c408e73f
+ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99914920"
+ms.lasthandoff: 08/26/2021
+ms.locfileid: "122980925"
 ---
 # <a name="how-to-view-save-and-configure-build-log-files"></a>如何：查看、保存和配置生成日志文件
 
@@ -32,7 +32,7 @@ ms.locfileid: "99914920"
 
 ## <a name="to-view-the-build-log-file-for-a-c-project"></a>查看 C++ 项目的生成日志文件
 
-1. 在 Windows 资源管理器或文件资源管理器中，打开以下文件（相对于项目根文件夹）   ：Release\\<ProjectName>\>.Log* 或 Debug\\<ProjectName\>.log  
+1. 在“Windows 资源管理器”或“文件资源管理器”中，打开以下文件（相对于项目根文件夹）：Release\\{ProjectName}.Log* 或 Debug\\{ProjectName}.log  
 
 ## <a name="to-create-a-build-log-file-for-a-managed-code-project"></a>创建托管代码项目的生成日志文件
 

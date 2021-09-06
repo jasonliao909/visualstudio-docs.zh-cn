@@ -2,7 +2,7 @@
 title: 查找并安装扩展
 description: 了解 Visual Studio 中的扩展并了解如何管理扩展，以便获得控件、示例、模板、工具以及其他所需组件。
 ms.custom: SEO-VS-2020
-ms.date: 09/18/2019
+ms.date: 08/30/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.ExtensionManager
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: b41f54d6e0b5750f32a4062d0915cbde1fe92cff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 891db6e62d33220494d6c19fe08e17f52dd810cb
+ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109222"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123230323"
 ---
 # <a name="manage-extensions-for-visual-studio"></a>管理 Visual Studio 的扩展
 
@@ -36,6 +36,8 @@ ms.locfileid: "122109222"
 
 使用“扩展和更新”对话框来安装和管理 Visual Studio 扩展  。 若要打开“扩展和更新”对话框，请选择“工具” > “扩展和更新”，或在“快速启动”搜索框中键入“扩展”。
 
+![Visual Studio 中的“扩展”窗口](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
+
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -44,9 +46,9 @@ ms.locfileid: "122109222"
 
 使用“管理扩展”对话框来安装和管理 Visual Studio 扩展  。 若要打开  “管理扩展”对话框，请选择“扩展”   > “管理扩展”  。 或者，在搜索框中键入“扩展”  ，然后选择“管理扩展”  。
 
-::: moniker-end
+:::image type="content" source="media/finding-using-visual-studio-extensions/vs-2022/extensions-and-updates.png" alt-text="Visual Studio 中“管理扩展”窗口的屏幕截图":::
 
-![Visual Studio 中的“扩展”窗口](media/finding-using-visual-studio-extensions/extensions-and-updates.png)
+::: moniker-end
 
 左侧窗格按照已安装的扩展、Visual Studio Marketplace（联机）上提供的扩展以及有可用更新的扩展对扩展进行分类  。 漫游扩展管理器会保留已在 Visual Studio 的任何计算机或实例上安装的所有 Visual Studio 扩展的列表  。 它旨在让你更轻松地找到自己喜欢的扩展程序。
 

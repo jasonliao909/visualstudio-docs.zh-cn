@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.topic: how-to
 ms.date: 03/20/2019
 ms.technology: vs-container-tools
-ms.openlocfilehash: 29d1753e8d0c03391d60a4985a922bfb796dc3e8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 91ed17af9900c068af7e81ce3902e68063814d82
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045068"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096899"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>如何配置 Visual Studio 容器工具
 
@@ -62,8 +62,24 @@ ms.locfileid: "122045068"
 | 名称 | 默认设置 | 适用于 | 描述 |
 | -----|:---------------:|:----------:| ----------- |
 | 在项目打开时拉取所需的 Docker 映像 | True | 单个项目、Docker Compose | 为了在加载项目时提高性能，Visual Studio 将在后台启动 Docker 拉取操作，以便在准备好运行代码时，映像已下载或正在下载。 如果只需加载项目和浏览代码，可以将其设置为“False”，以避免下载不需要的容器映像。 |
+| 在项目打开时拉取更新的 Docker 映像 | .NET Core 项目 | 单个项目、Docker Compose | 打开项目后，检查是否有映像更新，如果有便下载更新。 |
 | 在项目打开时运行容器 | True | 单个项目、Docker Compose | 同样，为了提高性能，Visual Studio 会提前创建一个容器，以便在构建和运行容器时随时可使用该容器。 如果要控制创建容器的时间，请将其设置为“False”。 |
-| 在项目关闭时停止容器 | True | 单个项目和 Docker Compose | 如果希望解决方案的容器在关闭解决方案或关闭 Visual Studio 后继续运行，请将其设置为“False”。 |
+| 在项目关闭时删除容器 | True | 单个项目、Docker Compose | 如果希望在关闭解决方案或关闭 Visual Studio 后保留解决方案的容器，请将其设置为“False”。 |
+
+“容器工具窗口”设置控制应用于“容器”工具窗口的设置，该窗口显示有关 Docker 容器和映像的信息 。 请参阅[使用“容器”窗口](view-and-diagnose-containers.md)
+
+![Visual Studio 容器工具选项，显示可用于“容器”工具窗口的设置](media/configure-container-tools/tools-options-3.png)
+
+下表对“容器”窗口设置进行了说明：
+
+
+| 名称 | 默认设置 | 说明 |
+| -----|:---------------:| ----------- |
+| 确认后再删除容器 | 始终 | 控制在删除未使用的容器时是否提示你。 |
+| 确认后再删除映像 | 始终 | 控制在删除未使用的映像时是否提示你。 |
+| 请确认之后再删除容器 | 始终 | 控制在删除容器时是否提示你。 |
+| 请确认之后再删除映像 | 始终 | 控制在删除映像时是否提示你。 |
+| 在运行大量映像之前进行确认 | 始终 | 控制在一次从 10 个以上的映像中启动容器之前是否提示你。 |
 
 ::: moniker-end
 > [!WARNING]

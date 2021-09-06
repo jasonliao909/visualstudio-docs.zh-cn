@@ -9,14 +9,14 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: f1176a106abaad7a5806f91e0fbf8a515e6c20e4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3b7872707c450c393c5bbeb654d65c0dbee60052
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105639"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123096948"
 ---
-# <a name="manage-launch-profiles-for-docker-compose"></a>管理 Docker Compose 的启动配置文件
+# <a name="launch-a-subset-of-compose-services"></a>启动 Compose 服务的子集
 
 如果应用程序包含多个服务并且使用的是 Docker Compose，可以通过在 Docker Compose 启动设置中创建或编辑现有启动配置文件来配置要运行和调试的服务。 启动配置文件允许仅动态运行对当前场景重要的服务。 可以创建启动配置文件并从中进行选择，以自定义调试体验并设置特定的启动操作，例如 `Browser Launch URL`。 你还可以选择单独选择每个服务或选择 Docker Compose 配置文件，这还将查看 Compose 文件以确定要运行的服务组。
 
@@ -25,7 +25,7 @@ ms.locfileid: "122105639"
 ## <a name="prerequisites"></a>先决条件
 
 - [Visual Studio 2019 版本 16.10](https://visualstudio.microsoft.com/vs/) 或更高版本
-- [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的解决方案
+- [使用 Docker Compose 进行容器编排](tutorial-multicontainer.md)的 .NET 解决方案
 
 ## <a name="manage-launch-settings"></a>管理启动设置
 

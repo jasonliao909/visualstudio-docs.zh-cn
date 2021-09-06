@@ -6,12 +6,12 @@ ms.author: ghogen
 ms.date: 03/15/2021
 ms.technology: vs-container-tools
 ms.topic: conceptual
-ms.openlocfilehash: 60b6381ca90c4313fbd407eed9a709e7d49f1fc1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 80b7cbbb70cea593d770017bb50f8a69eeb13c38
+ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052988"
+ms.lasthandoff: 08/27/2021
+ms.locfileid: "123097000"
 ---
 # <a name="how-visual-studio-builds-containerized-apps"></a>Visual Studio 如何构建容器化应用
 
@@ -103,7 +103,9 @@ msbuild /p:SolutionPath=<solution-name>.sln /p:Configuration=Release docker-comp
 
 ## <a name="volume-mapping"></a>卷映射
 
-为了能够在容器中正常调试，Visual Studio 使用卷映射从主机映射调试程序和 NuGet 文件夹。 有关卷映射，可参阅[此处](https://docs.docker.com/storage/volumes/)的 Docker 文档。 下面是在容器中装载的卷：
+为了能够在容器中正常调试，Visual Studio 使用卷映射从主机映射调试程序和 NuGet 文件夹。 有关卷映射，可参阅[此处](https://docs.docker.com/storage/volumes/)的 Docker 文档。 可以使用 [Visual Studio 中的“容器”窗口](view-and-diagnose-containers.md)查看容器的卷映射。
+
+下面是在容器中装载的卷：
 
 |音量|描述|
 |-|-|
