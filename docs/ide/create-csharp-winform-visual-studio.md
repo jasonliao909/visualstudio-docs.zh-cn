@@ -4,20 +4,20 @@ description: 了解如何在 Visual Studio 中使用 C# 分步创建 Windows 窗
 ms.date: 09/26/2019
 ms.topic: tutorial
 ms.devlang: CSharp
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 464a75441a0f32ba3ca1196c9a6ed43b3bc0940f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 446bb42b73e1848d295eec60e3ce81aef412490b
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124056"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398595"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 

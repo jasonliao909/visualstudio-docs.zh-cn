@@ -4,18 +4,18 @@ description: 了解 Visual Studio 中的键盘快捷方式以及可提高工作�
 ms.custom: SEO-VS-2020
 ms.date: 4/29/2020
 ms.topic: conceptual
-author: j-martens
-ms.author: jmartens
+author: TerryGLee
+ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 42316256751a61b468198eb09472fe4c8c24f280
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ab3f07f0b9ec86ad1ec854ba5960099a084fb234
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062454"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398437"
 ---
 # <a name="productivity-guide-for-visual-studio"></a>Visual Studio 实用指南
 

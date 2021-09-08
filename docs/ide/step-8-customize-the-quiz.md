@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: dc8edb13-1b23-47d7-b859-8c6f7888c1a9
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 028bf80fc32bac728463f3f1fdc7748914a45666
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 55868a7b5d2bcd39f9e82ee41711d50bcdebba76
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048487"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398385"
 ---
 # <a name="step-8-customize-the-quiz"></a>步骤 8：自定义测验
 

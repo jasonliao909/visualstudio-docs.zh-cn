@@ -4,20 +4,20 @@ description: 了解如何在 Visual Studio 中使用 Visual Basic 分步创建 W
 ms.date: 09/27/2019
 ms.topic: tutorial
 ms.devlang: vb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 46c23f0fb94286852b1f15e81fcb90ba5440e842
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ba22da795a0a94033d252f82a48989b3c24f22e8
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122056376"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398634"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 
