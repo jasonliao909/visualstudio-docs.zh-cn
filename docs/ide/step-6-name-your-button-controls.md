@@ -8,18 +8,18 @@ ms.topic: tutorial
 dev_langs:
 - CSharp
 - VB
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e1214d5e640364e0a5cc256f3f78cbd17cc1acdb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f954c72a18987deccca94b4870e636fec2f5e201
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094021"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398224"
 ---
 # <a name="step-6-name-your-button-controls"></a>步骤 6：命名按钮控件
 

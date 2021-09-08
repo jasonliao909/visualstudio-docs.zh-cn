@@ -5,18 +5,18 @@ ms.date: 09/11/2019
 ms.custom: SEO-VS-2020
 ms.assetid: 656614d0-4fe7-4a67-8edc-c10919377d09
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 39bd1f97408f81b486a7c5f4128c71dca686608f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7b6784c96c8915c0d80149023a786e8c4bc20680
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078110"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398394"
 ---
 # <a name="step-11-run-your-picture-viewer-app-and-try-other-features"></a>步骤 11：运行图片查看器应用并尝试其他功能
 

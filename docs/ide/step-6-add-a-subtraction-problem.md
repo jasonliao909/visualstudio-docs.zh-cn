@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 59204ef9-24bd-4f81-b85f-e3168e518a3e
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8fe427595ec883c3607a769ae837952e092cf1e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e959a1ef4e813510a7a5963c144022748a4b85c9
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061811"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398237"
 ---
 # <a name="step-6-add-a-subtraction-problem"></a>步骤 6：添加减法问题
 在本教程的第 6 部分中，你将添加一道减法题并了解如何执行以下任务：

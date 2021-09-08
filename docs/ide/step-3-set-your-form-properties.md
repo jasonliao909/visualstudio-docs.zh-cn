@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 08/30/2019
 ms.assetid: 634ef037-1525-48c8-ac7f-abf04be69376
 ms.topic: tutorial
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c7f9d8153a27807c394f2d6b3f383365e4fbb65d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2c61c1aa0fc28e1971b2add6c684a4ae3cd4e048
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132036"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398058"
 ---
 # <a name="step-3-set-your-form-properties"></a>步骤 3：设置窗体属性
 

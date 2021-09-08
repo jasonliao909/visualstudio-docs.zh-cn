@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: tutorial
 ms.assetid: 1b0c5c80-e5a6-4f69-a4a4-0e89a82d4de0
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d35a2ee77341ab97209a41084751a0093b37a818
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6f542c2fe86b642a1d8cf53d9fe1bff4af611c9e
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061727"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397663"
 ---
 # <a name="step-9-try-other-features"></a>步骤 9：尝试其他功能
 若要了解详细信息，请尝试更改图标和颜色、添加游戏计时器和声音。 若要使游戏更具挑战性，请尝试将图板变大并调整计时器。

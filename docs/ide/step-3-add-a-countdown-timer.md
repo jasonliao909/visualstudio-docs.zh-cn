@@ -8,18 +8,18 @@ dev_langs:
 - CSharp
 - VB
 ms.assetid: 62670a2b-efdc-45c6-9646-9b17eeb33dcb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 40716f502366d93fd48760173c29db1bf69bee4e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 629a9cd94296b746a1eeeec4ea6b7514f15440b6
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040824"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397676"
 ---
 # <a name="step-3-add-a-countdown-timer"></a>步骤 3：添加倒计时计时器
 

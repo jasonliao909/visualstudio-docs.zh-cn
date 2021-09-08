@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.assetid: 1cac4ba4-f3cd-43bd-ad5d-50fc599234e8
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 68f87a6d9e9b601e0226614eb82b8a689d4a6f47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e3a9082f645a30bc47c755b50c332d8e3dc47d1c
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040978"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397780"
 ---
 # <a name="step-1-create-a-project-and-add-a-table-to-your-form"></a>步骤 1：创建项目并向窗体添加表
 

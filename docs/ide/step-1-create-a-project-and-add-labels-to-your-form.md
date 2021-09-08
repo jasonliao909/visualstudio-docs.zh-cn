@@ -5,18 +5,18 @@ ms.custom: SEO-VS-2020
 ms.date: 10/15/2019
 ms.topic: tutorial
 ms.assetid: f44e50be-a5f5-4d77-9cff-dd52374c3f74
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: cb535463f2f7213923e6c7964d5663dcad5dc2a5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ab057ad8cad8c03045c8c1af323a5ba7c2537023
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150932"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123398647"
 ---
 # <a name="step-1-create-a-project-and-add-labels-to-your-form"></a>步骤 1：创建项目并向窗体添加标签
 
