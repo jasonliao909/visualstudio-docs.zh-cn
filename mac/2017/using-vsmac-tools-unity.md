@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 07/17/2017
 ms.assetid: 83FDD7A3-5D16-4B4B-9080-078E3FB5C623
 ms.openlocfilehash: d4df59273db1fab8492b36e87e48e0e770072f17
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "89315312"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961719"
 ---
 # <a name="using-visual-studio-for-mac-tools-for-unity"></a>使用 Visual Studio for Mac Tools for Unity
 
@@ -107,7 +107,7 @@ Unity 编辑器的“Project”窗口会反映这些添加。
 
 停止调试：
 
-1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”   。
+1. 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
 
    ![在 Visual Studio 中单击“停止”](media/using-vsmac-tools-unity-image7.png)
 

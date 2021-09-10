@@ -7,11 +7,11 @@ ms.date: 11/09/2020
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 838762435268ea06c09392475f294dbb22c3038d
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493239"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963897"
 ---
 # <a name="data-visualizations"></a>数据可视化
 

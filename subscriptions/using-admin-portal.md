@@ -8,11 +8,11 @@ ms.date: 10/28/2020
 ms.topic: overview
 description: 了解如何开始在订阅管理门户中管理组织的 Visual Studio 订阅。
 ms.openlocfilehash: 3ac02dcd49af1c3277be0c3a15a2e3bf9c735f04
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104673068"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965156"
 ---
 # <a name="overview-of-the-visual-studio-subscriptions-administrator-portal"></a>Visual Studio 订阅管理员门户概述
 

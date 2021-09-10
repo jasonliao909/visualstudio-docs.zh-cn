@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
 ms.openlocfilehash: 01f3cac1ac985f79e576e709b030c881a07a801d
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939136"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963863"
 ---
 # <a name="install-a-preview-version-of-visual-studio-for-mac"></a>安装 Visual Studio for Mac 的预览版本
 

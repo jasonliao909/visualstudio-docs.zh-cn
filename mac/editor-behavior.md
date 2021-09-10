@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: 81EE4460-26EB-4BB0-9297-932E1F88E4B8
 ms.openlocfilehash: 20363d5497ea5897cb2685ca838da44b8c21d3df
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67823177"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963901"
 ---
 # <a name="editor-behavior"></a>编辑器行为
 
-可将编辑器行为设置为允许代码的格式与写入方式相同。 可在“Visual Studio”>“首选项”>“文本编辑器”>“行为”下设置这些操作，以下介绍了一些常用的功能： 
+可将编辑器行为设置为允许代码的格式与写入方式相同。 可在“Visual Studio”>“首选项”>“文本编辑器”>“行为”下设置这些操作，以下介绍了一些常用的功能：
 
 ![编辑器行为选项](media/source-editor-image9.png)
 

@@ -8,11 +8,11 @@ ms.date: 02/18/2021
 ms.topic: conceptual
 description: 了解如何在 Visual Studio 订阅中查找和下载 Microsoft 软件标题
 ms.openlocfilehash: c53429f7fe7d88c1c75642d9f820c8a6fa444eb9
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102249286"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965198"
 ---
 # <a name="downloading-software-titles-in-visual-studio-subscriptions"></a>下载 Visual Studio 订阅中的软件标题
 根据你所订阅的 Visual Studio，你可以获得各种各样的 Microsoft 软件标题。  本文将概述如何查找和下载所需的软件，以便最大限度地利用订阅。 

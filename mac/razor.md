@@ -8,11 +8,11 @@ ms.technology: vs-ide-general
 ms.assetid: F898CB6E-05ED-44CD-8DB6-427B2592CCC6
 ms.topic: how-to
 ms.openlocfilehash: 26575367d7aff2b92c64dc5d07068b4900b24e7f
-ms.sourcegitcommit: 577c905de52057a741e68c2ed168ea527813fda5
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/15/2020
-ms.locfileid: "88249533"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963934"
 ---
 # <a name="create-razor-web-apps"></a>创建 Razor Web 应用
 
@@ -59,7 +59,7 @@ launchSettings.json 文件包含 IIS 设置、应用程序 URL 和其他相关�
 
 ### <a name="app-settings"></a>应用设置
 
-appSettings,json 文件包含配置数据，如连接字符串  。
+appSettings,json 文件包含配置数据，如连接字符串。
 
 有关配置的详细信息，请参阅 [ASP.NET 中的配置指南](/aspnet/core/fundamentals/configuration/index)。
 

@@ -7,12 +7,12 @@ ms.assetid: 6601c395-f778-48c1-ab76-cf454b9193e4
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解超级管理员和管理员角色以及如何分配管理员。
-ms.openlocfilehash: eca87026c681454925974f2e394737092c3e226d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.openlocfilehash: c5997004f50b78ba8484be51f3e5dd5a22aa868e
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757589"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965169"
 ---
 # <a name="super-admins-and-admins-for-visual-studio-subscription-agreements"></a>Visual Studio 订阅协议的超级管理员和管理员
 
@@ -50,9 +50,7 @@ ms.locfileid: "104757589"
 - [Azure 文档](/azure/)
 - [Microsoft 365 文档](/microsoft-365/)
 
-
-
 ## <a name="next-steps"></a>后续步骤
 - 了解如何[分配订阅](assign-license.md)
 - 了解有关各种[订阅权益](https://visualstudio.microsoft.com/vs/benefits/)的详细信息
-- [设置协议首选项](admin-prefs.md)
+- [设置协议首选项](admin-preferences.md)

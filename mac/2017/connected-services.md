@@ -6,11 +6,11 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.date: 11/06/2018
 ms.openlocfilehash: b33b6d3f0865ca338512f744f5b924ae2992179a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082538"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961648"
 ---
 # <a name="connected-services-walkthrough"></a>“连接的服务”演练
 

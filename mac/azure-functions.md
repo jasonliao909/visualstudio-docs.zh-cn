@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 25CD47A4-5B32-4734-8EF3-E24A02AABF29
 ms.topic: how-to
 ms.openlocfilehash: a91c40d0b6fe09aa88c0f3d72d21abde10621b5e
-ms.sourcegitcommit: 879b11112c775a1c1dd9ebd4e59a3d0caec84220
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/17/2021
-ms.locfileid: "114397182"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963872"
 ---
 # <a name="introduction-to-azure-functions"></a>Azure Functions 简介
 

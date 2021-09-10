@@ -6,11 +6,11 @@ ms.author: johmil
 ms.date: 11/05/2020
 ms.assetid: 6F2ECF5A-E195-4890-8399-12A88C7D62FD
 ms.openlocfilehash: 5cf5670b18aa6840eb3b36e6148cba4834aa709e
-ms.sourcegitcommit: ed26b6e313b766c4d92764c303954e2385c6693e
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94438199"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963965"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 

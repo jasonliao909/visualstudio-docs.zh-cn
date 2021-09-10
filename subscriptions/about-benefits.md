@@ -8,11 +8,11 @@ ms.date: 03/19/2021
 ms.topic: how-to
 description: 了解订阅中包含哪些权益，以及如何激活这些权益。
 ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
-ms.sourcegitcommit: d8d230791890cda532c263d04288dc13d2261c7f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104757628"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965085"
 ---
 # <a name="about-your-subscription-benefits"></a>关于订阅权益
 作为 Visual Studio 订阅者，你有权访问各种权益，具体取决于你的订阅级别。 权益有几个需要注意的重要事项。

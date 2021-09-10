@@ -6,15 +6,15 @@ ms.author: cobey
 ms.date: 11/06/2018
 ms.assetid: E8E0831E-E076-44B1-A82A-A325382916A6
 ms.openlocfilehash: be5a19b48355b871018684400f3f4a7b2e3135b6
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "67692867"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963883"
 ---
 # <a name="block-selection"></a>块选择
 
-通过 Visual Studio for Mac，可以轻松地选择、剪切、复制和粘贴选定部分的代码。 可以使用代码块上的“选项 + 拖动”命令突出显示和选择矩形代码块  。 粘贴块时会保留此块选择部分的格式。
+通过 Visual Studio for Mac，可以轻松地选择、剪切、复制和粘贴选定部分的代码。 可以使用代码块上的“选项 + 拖动”命令突出显示和选择矩形代码块。 粘贴块时会保留此块选择部分的格式。
 
 也可以编辑块选择部分，同时修改多行文本。 可以使用零宽度的块选择将脱字号同时放置到多行的行首，从而可以在多行中键入相同文本：
 

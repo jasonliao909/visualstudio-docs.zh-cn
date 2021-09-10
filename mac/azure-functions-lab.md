@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 38FD2070-5151-482E-B0A9-993715128736
 ms.topic: tutorial
 ms.openlocfilehash: 3fa653a1acaae0f9b58d17f86d6e2e0feeb027a6
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493018"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963867"
 ---
 # <a name="tutorial-getting-started-with-azure-functions"></a>教程：Azure Functions 入门
 
@@ -305,7 +305,7 @@ ms.locfileid: "94493018"
 
 1. 返回到 Visual Studio for Mac  ，并结束调试会话。
 
-## <a name="exercise-5-working-with-azure-storage-tables"></a>练习 5：使用 Azure 存储表
+## <a name="exercise-5-working-with-azure-storage-tables&quot;></a>练习 5：使用 Azure 存储表
 
 通常，你生成的服务可能比我们目前为止已生成的服务更复杂，并且需要占用大量的时间和/或基础结构来执行。 在这种情况下，你可能会发现在 Azure Functions 提供支持的资源可用时，它在接受已排队等待处理的请求方面很有效。 在其他情况下，需集中存储数据。 通过 Azure 存储表，可以快速做到这一点。
 
@@ -323,7 +323,7 @@ ms.locfileid: "94493018"
 1. 在 Add  类中，添加以下代码以引入另一个函数。 注意，到目前为止，它是唯一的，因为它不涉及 HTTP 响应。 最后一行返回了新的 TableRow  ，其中填有可使其之后易于检索的一些关键信息（PartitionKey  和 RowKey  ），还返回了其参数和总和。 该方法内的代码还使用 TraceWriter  ，以便更轻松地了解函数何时运行。
 
     ```csharp
-    [FunctionName("Process")]
+    [FunctionName(&quot;Process")]
     [return: Table("Results")]
     public static TableRow Process(
         [HttpTrigger(AuthorizationLevel.Function, "get",

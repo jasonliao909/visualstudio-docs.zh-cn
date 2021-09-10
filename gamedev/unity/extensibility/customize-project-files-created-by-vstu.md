@@ -12,12 +12,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: ac8c88423af7d994b4e9ba29a4dede791312d12e2cdf441c990096190858a084
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: a4a5973863877db2d071f9be8d4689928b21a689
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423509"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961578"
 ---
 # <a name="customize-project-files-created-by-vstu"></a>自定义 VSTU 创建的项目文件
 Unity 在项目文件生成期间提供回调。 实现 `OnGeneratedSlnSolution` 和 `OnGeneratedCSProject` 方法，以便在重新 [`AssetPostprocessor`](https://docs.unity3d.com/ScriptReference/AssetPostprocessor.html) 生成项目或解决方案文件时对其进行修改。

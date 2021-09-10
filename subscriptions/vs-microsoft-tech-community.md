@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft 技术社区论坛支持权益。
 ms.openlocfilehash: f1078204d69b9249b1691f9c96496ba1975fffd6
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671945"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965292"
 ---
 # <a name="microsoft-tech-community-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft 技术社区论坛支持
 与其他用户和 Microsoft 技术专家建立联系并交流互动，了解最佳实践、设计体系结构和最新更新。

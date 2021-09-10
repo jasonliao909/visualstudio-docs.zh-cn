@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: 设置月度订阅的管理员
 ms.openlocfilehash: 220f5986bb06b638504379b63e911f9bb62926b5
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776943"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965193"
 ---
 # <a name="set-up-admins-for-visual-studio-monthly-subscriptions"></a>设置 Visual Studio 月度订阅的管理员
 

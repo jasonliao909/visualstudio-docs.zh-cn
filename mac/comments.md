@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 0FE5E929-1846-4F48-B5E3-70990FAF9504
 ms.topic: how-to
 ms.openlocfilehash: a0aa3de91f1a2c75d73409d89f3cbc8894faacab
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85939118"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963884"
 ---
 # <a name="comments"></a>注释
 

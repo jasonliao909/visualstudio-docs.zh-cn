@@ -7,11 +7,11 @@ ms.date: 02/15/2018
 ms.assetid: E992FA1D-B2AD-4A28-ADC6-47E4FC471060
 ms.topic: how-to
 ms.openlocfilehash: c226e1a8160d0eb1321d244b26177119ec3a5846
-ms.sourcegitcommit: d8609a78b460d4783f5d59c0c89454910a4dbd21
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2020
-ms.locfileid: "88238551"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961744"
 ---
 # <a name="set-up-a-git-repository"></a>设置 Git 存储库
 
@@ -43,7 +43,7 @@ Git 是分布式版本控制系统，使团队可以同时在同一文档上工�
 
 ## <a name="publishing-an-existing-project"></a>发布现有项目
 
-如果现有的一个项目_不_在版本控制中，请使用以下步骤在 Git 中设置该项目：
+如果现有的一个项目 _不_ 在版本控制中，请使用以下步骤在 Git 中设置该项目：
 
 1. 从 Visual Studio for Mac 的 Solution Pad 中选择解决方案名称。
 

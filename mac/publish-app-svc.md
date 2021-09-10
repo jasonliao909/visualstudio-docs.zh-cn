@@ -14,11 +14,11 @@ ms.topic: how-to
 ms.workload:
 - azure
 ms.openlocfilehash: 054c5e7871daca0d349064f261e949dec7f738a5
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493421"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963875"
 ---
 # <a name="publish-a-web-app-to-azure-app-service-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 将 Web 应用发布到 Azure 应用服务
 

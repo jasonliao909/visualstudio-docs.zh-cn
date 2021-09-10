@@ -8,11 +8,11 @@ ms.assetid: CC1B72D6-12FF-4CCC-A9D4-00F2DC14589F
 ms.custom: video
 ms.topic: how-to
 ms.openlocfilehash: eb3ceed624e3bbba67564bb8f7c359841c0e496d
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85939176"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963896"
 ---
 # <a name="creating-and-editing-build-configurations"></a>创建和编辑生成配置
 
@@ -33,9 +33,9 @@ ms.locfileid: "85939176"
 
     ![项目选项中的配置管理器](media/create-and-edit-configurations-image2.png)
 
-3. 要创建新配置，请选择“添加”****。 也可以复制任一现有配置。
+3. 要创建新配置，请选择“添加”。 也可以复制任一现有配置。
 
-创建配置后，可以使用“项目选项”中的“生成”部分调整属性，使其适合配置****：
+创建配置后，可以使用“项目选项”中的“生成”部分调整属性，使其适合配置：
 
 ![配置生成选项](media/create-and-edit-configurations-image3.png)
 
@@ -49,15 +49,15 @@ ms.locfileid: "85939176"
 
     ![解决方案选项中的配置管理器](media/create-and-edit-configurations-image1.png)
 
-3. 要创建新配置，请选择“添加”****。 也可以复制任一现有配置。
+3. 要创建新配置，请选择“添加”。 也可以复制任一现有配置。
 
-创建配置后，可以使用各个项目的“项目选项”对话框中的“生成”部分调整属性，使其适合配置****：
+创建配置后，可以使用各个项目的“项目选项”对话框中的“生成”部分调整属性，使其适合配置：
 
 ![配置生成选项](media/create-and-edit-configurations-image3.png)
 
 ## <a name="renaming-a-build-configuration"></a>重命名生成配置
 
-要重命名配置，请导航到项目选项或解决方案选项中的“生成”>“配置”，从配置列表中选择它****：
+要重命名配置，请导航到项目选项或解决方案选项中的“生成”>“配置”，从配置列表中选择它：
 
 ![配置列表](media/create-and-edit-configurations-image4.png)
 
@@ -65,7 +65,7 @@ ms.locfileid: "85939176"
 
 ![“重命名”对话框](media/create-and-edit-configurations-image5.png)
 
-然后单击“确定”以确认****。
+然后单击“确定”以确认。
 
 ## <a name="related-video"></a>相关视频
 

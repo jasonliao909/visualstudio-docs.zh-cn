@@ -6,11 +6,11 @@ ms.author: cobey
 ms.date: 05/06/2018
 ms.assetid: A018A314-C1C4-4F36-BCB6-2D434208FCFE
 ms.openlocfilehash: c4a22ec0765c39a8bec83f9e2acff7b22b706890
-ms.sourcegitcommit: d20ce855461c240ac5eee0fcfe373f166b4a04a9
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 05/29/2020
-ms.locfileid: "84173091"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963916"
 ---
 # <a name="source-editor"></a>源编辑器
 
