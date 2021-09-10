@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
 ms.openlocfilehash: 270dffd75a0b442e5f275d0840033e54be5fe883
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672010"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965252"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 符合条件的 Visual Studio 订阅包括 DataCamp 订阅。  借助 DataCamp，可以通过浏览器舒适地学习需要的所有数据科学技能。 可以选择学习的时间和内容。 无需安装任何软件并且没有任何特殊硬件要求，学习数据科学比以往更加简单。

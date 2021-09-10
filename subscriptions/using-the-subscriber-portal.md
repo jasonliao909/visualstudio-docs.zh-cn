@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: overview
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
 ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607136"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965223"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用订阅者门户 - my.visualstudio.com
 

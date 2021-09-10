@@ -7,17 +7,17 @@ ms.date: 05/06/2018
 ms.technology: vs-ide-debug
 ms.assetid: 527E6BEC-EF15-4002-ACB5-62AE1C16F6B7
 ms.openlocfilehash: 3355b81406d2b510dc13604a026bcd014bf9dbcb
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74984756"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961701"
 ---
 # <a name="data-visualizations"></a>数据可视化
 
 Visual Studio for Mac 提供调试程序用户界面支持，允许调试时的变量、字段或属性的值的可视化效果。 这些数据可视化工具显示数据的扩展版本，使开发者可以检查已知结构，例如显示颜色结构的颜色。
 
-用户将鼠标悬停在行上时，单击值右侧的预览图标，可显示调试“本地”  面板中的可视化工具：
+用户将鼠标悬停在行上时，单击值右侧的预览图标，可显示调试“本地”面板中的可视化工具：
 
 ![“本地”面板](media/data-visualizations-image9.png)
 

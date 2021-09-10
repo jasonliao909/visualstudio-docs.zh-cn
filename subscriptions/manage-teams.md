@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员管理大型团队和外部承包商的订阅的职责。
 ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776800"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965150"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型团队和外部承包商
 Visual Studio 订阅管理员负责确保每个与 Visual Studio 许可软件交互的用户都适当地获得自己的 Visual Studio 订阅的许可。

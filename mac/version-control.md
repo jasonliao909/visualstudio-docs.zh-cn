@@ -7,11 +7,11 @@ ms.author: jomatthi
 ms.date: 05/06/2018
 ms.assetid: 49917483-28AA-4598-A847-71F1F2E0DCB5
 ms.openlocfilehash: 9206ab892ef125706ab16f9a739fe88a52f5c242
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "70108102"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963918"
 ---
 # <a name="version-control"></a>版本控制
 
@@ -34,6 +34,6 @@ Visual Studio for Mac 支持 Git 和 Subversion 这两种版本控制系统。 �
 * [设置 Subversion 存储库](set-up-subversion-repository.md)
 * [使用 Subversion](working-with-subversion.md)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 * [Visual Studio 中的版本控制 (Windows)](/visualstudio/version-control/)

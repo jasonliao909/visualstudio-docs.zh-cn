@@ -7,11 +7,11 @@ ms.author: jomatthi
 ms.date: 12/12/2019
 ms.assetid: 2a561af4-f1fe-493e-9a53-aa6d77d15498
 ms.openlocfilehash: 3d1372ab5bd08ce164352293ec9d341ca567e3d5
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75439042"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963927"
 ---
 # <a name="projects-with-multiple-target-frameworks"></a>具有多个目标框架的项目
 在 Visual Studio for Mac 中，可将 Xamarin 或 .NET Core 项目配置为在若干 .NET Framework 版本的任一版本和若干系统平台的任一平台上运行。 例如，可以将项目设定为在 .NET Framework 4.6 和 .NET Core 3.1 上运行。 

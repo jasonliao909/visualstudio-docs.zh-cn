@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 04/14/2017
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 0bd35d415a60ea64c479b19cb506c58c2c346cc0
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "74983594"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961695"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 
@@ -30,13 +30,13 @@ ms.locfileid: "74983594"
 
 ## <a name="run-configuration"></a>运行配置
 
-在 Xamarin Studio 的早期版本中，可选择选项将项目设置为“启动项目”，即使用全局运行/调试命令时运行或调试项目  。 此项目的项目名称在项目填充中用粗体表示。
+在 Xamarin Studio 的早期版本中，可选择选项将项目设置为“启动项目”，即使用全局运行/调试命令时运行或调试项目。 此项目的项目名称在项目填充中用粗体表示。
 
-在 Visual Studio for Mac 中，可设置运行配置  而非设置启动项目。 在工具栏的下拉列表中，运行配置显示在生成配置选择器旁，如下所示：
+在 Visual Studio for Mac 中，可设置运行配置而非设置启动项目。 在工具栏的下拉列表中，运行配置显示在生成配置选择器旁，如下所示：
 
 ![“运行配置”下拉列表](media/projects-and-solutions-image8.png)
 
-运行配置是一组包含名称和多个配置的执行选项，其中名称和这些配置根据不同用途在项目中进行了定义。 运行配置根据项目级进行定义，虽然可添加所需的数量，但将为每个可执行项目自定创建默认值。 某些项目类型自动生成其他运行配置。 例如，watchOS 项目可生成速览和通知配置  。
+运行配置是一组包含名称和多个配置的执行选项，其中名称和这些配置根据不同用途在项目中进行了定义。 运行配置根据项目级进行定义，虽然可添加所需的数量，但将为每个可执行项目自定创建默认值。 某些项目类型自动生成其他运行配置。 例如，watchOS 项目可生成速览和通知配置。
 
 配置可以与其他开发者共享（此时配置存储在 .csproj 文件中），或保留在本地（此时存储在 .user 文件中）。
 

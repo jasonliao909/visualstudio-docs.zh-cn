@@ -7,11 +7,11 @@ ms.date: 08/15/2017
 ms.assetid: 2C4AAC2E-3B4A-4496-8BE0-1F5A7F81D1CA
 ms.topic: overview
 ms.openlocfilehash: a2f151cbf593d2b8e26be7ac60eaf8ff3c687499
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938920"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961646"
 ---
 # <a name="accessibility"></a>可访问性
 

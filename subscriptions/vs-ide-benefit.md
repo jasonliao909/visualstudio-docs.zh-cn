@@ -2,17 +2,17 @@
 title: Visual Studio 订阅中的 Visual Studio IDE 权益 | Microsoft Docs
 author: evanwindom
 ms.author: v-evwin
-manager: lank
+manager: cabuschl
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 03/17/2021
+ms.date: 07/30/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: 2cff154f61d662f180fe5087a877073a9d84e27c
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 6f9a420c06374f5b152dc119d2eb76af560a4b35
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104671997"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965144"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 权益
 
@@ -66,8 +66,8 @@ ms.locfileid: "104671997"
 | 包含 GitHub Enterprise 的 Visual Studio Enterprise 订阅   | VL | 可用       |  是          |
 | Visual Studio Professional（标准、月度云） | VL、Azure、零售                                       | 可用                                                            |  是          |
 | 包含 GitHub Enterprise 的 Visual Studio Professional 订阅 | VL   | 可用              |  是          |
-| Visual Studio Test Professional（标准）                         | VL、零售                                              | 可用                                             |  是         |
-| MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              |  不可用          |
+| Visual Studio Test Professional（标准）                         | 全部                                            | 不可用                                             |  不可用         |
+| MSDN 平台（标准）                                          | 全部                                              | 不可用                                              |  不可用          |
 
 <sup>1</sup> 包括：不得转售 (NFR)、NFR Basic、Visual Studio 行业合作伙伴 (VSIP)、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。不包括：MCT 软件和服务。
 

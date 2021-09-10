@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 0E1EF257-9DE4-4653-9DF4-805CE007A1A1
 ms.topic: how-to
 ms.openlocfilehash: 7d7408ad837dac789c3632361e83673d288ea053
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98721081"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961756"
 ---
 # <a name="install-a-preview-release"></a>安装预览版
 

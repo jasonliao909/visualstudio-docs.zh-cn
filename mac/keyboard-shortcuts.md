@@ -6,11 +6,11 @@ author: heiligerdankgesang
 ms.author: dominicn
 ms.assetid: 48E06A61-7294-4EC8-A09D-1763C32AD910
 ms.openlocfilehash: 3a4b2a56e5ac6ed29289c3946a65fc57b54eaa21
-ms.sourcegitcommit: b1b747063ce0bba63ad2558fa521b823f952ab51
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/26/2020
-ms.locfileid: "96188973"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963860"
 ---
 # <a name="default-keyboard-shortcuts-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的默认键盘快捷键
 
@@ -48,8 +48,8 @@ ms.locfileid: "96188973"
 |移除所有断点|**⇧⌘F9**|
 |运行到光标处|**⌘F10**|
 |设置下一语句|**⇧⌘F10**|
-|显示下一语句|⌥* *\** _|
-|逐语句|⇧⌘I_***、⌘F11|
+|显示下一语句|**⌥\***|
+|逐语句|**⇧⌘I**、**⌘F11**|
 |步出|**⇧⌘U**、**⇧⌘F11**|
 |逐过程|**⇧⌘O**、**F10**|
 |切换断点|**⌘\\**、**F9**|

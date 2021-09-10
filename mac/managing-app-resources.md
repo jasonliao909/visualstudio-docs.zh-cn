@@ -7,11 +7,11 @@ ms.date: 05/06/2018
 ms.assetid: 61EAAB8F-3C32-4574-924F-CFC616604089
 ms.topic: overview
 ms.openlocfilehash: 987a337941ba2a180045e64c5ba26dfd54284bec
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938379"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963933"
 ---
 # <a name="managing-app-resources"></a>管理应用资源
 

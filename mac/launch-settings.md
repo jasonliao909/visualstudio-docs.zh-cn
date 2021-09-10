@@ -6,11 +6,11 @@ ms.author: sayedha
 ms.date: 09/18/2019
 ms.assetid: a556f9d7-86a8-408e-aa54-392584845889
 ms.openlocfilehash: df702b5d49e5204e65675c1c57d222e490a33824
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88247924"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963928"
 ---
 # <a name="launchsettingsjson"></a>launchSettings.json
 
@@ -20,11 +20,11 @@ ms.locfileid: "88247924"
 
 ## <a name="update-the-start-configuration-by-using-visual-studio-for-mac"></a>使用 Visual Studio for Mac 更新启动配置
 
-可以直接在 Visual Studio for Mac 中编辑 launchSettings.json 文件，也可以使用项目选项对其进行编辑。 若要转到项目选项，请右键单击项目，然后选择“选项”  。
+可以直接在 Visual Studio for Mac 中编辑 launchSettings.json 文件，也可以使用项目选项对其进行编辑。 若要转到项目选项，请右键单击项目，然后选择“选项”。
 
 ![选择了“选项”的项目快捷菜单](media/vsmac-ctx-proj-options.png)
 
-选择“运行”   > “配置”   > “默认”  。
+选择“运行” > “配置” > “默认”。
 
 ![项目选项中的“运行”、“配置”和“默认”](media/vsmac-run-config-default.png)
 
@@ -40,7 +40,7 @@ ms.locfileid: "88247924"
 
 ## <a name="configure-the-start-url"></a>配置启动 URL
 
-要配置用于启动应用程序的 URL，请转到“ASP.NET Core”  选项卡。
+要配置用于启动应用程序的 URL，请转到“ASP.NET Core”选项卡。
 
 ![项目选项中的应用程序 URL](media/vsmac-run-config-default-aspnetcore.png)
 

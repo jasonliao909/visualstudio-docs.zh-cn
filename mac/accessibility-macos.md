@@ -7,11 +7,11 @@ ms.date: 09/23/2019
 ms.assetid: 598FC25A-6DA3-44BB-B128-AD979E9F86EA
 ms.topic: how-to
 ms.openlocfilehash: 6796ab12716d1d2f3ec2570c32b410c8360b8a81
-ms.sourcegitcommit: 72a49c10a872ab45ec6c6d7c4ac7521be84526ff
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "94998381"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963851"
 ---
 # <a name="accessibility-features-of-macos"></a>macOS 辅助功能
 

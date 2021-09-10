@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 02/07/2019
 ms.assetid: 0FE27C0C-A861-4133-A74E-8D0505CF5342
 ms.openlocfilehash: 96344b72dd27095f8b9060078112fb767b1338fc
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74984806"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961763"
 ---
 # <a name="code-snippets"></a>代码片段
 
@@ -58,7 +58,7 @@ ms.locfileid: "74984806"
 - **Mime** &ndash; 控制片段适用于的文件类型。
 - **是可展开的模板** &ndash; 确保选中此选项，以便可通过键入快捷方式在光标处插入片段。
 - **使用模板括起来** &ndash; 选中此选项，在编辑器的“使用以下项括起来…”内容菜单中列出此快捷方式。
-- **模板文本** &ndash; 将要插入到编辑器中的实际片段。 关键字占位符可以通过用美元符号等将令牌括起来进行定义。 `$type$`。
+- **模板文本** &ndash; 将要插入到编辑器中的实际片段。 关键字占位符可以通过用美元符号等将令牌括起来进行定义。 `$type$`.
 - **关键字属性面板** &ndash; 在右侧窗口中，使用顶部下拉列表选择一个关键字（例如 `type`）并编辑属性，如默认值和工具提示。
 
 ## <a name="using-keywords-in-the-editor"></a>在编辑器中使用关键字

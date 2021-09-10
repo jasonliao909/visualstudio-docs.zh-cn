@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
-ms.date: 03/18/2021
+ms.date: 05/18/2021
 ms.topic: conceptual
 description: 了解批量许可协议的管理员如何访问 Visual Studio 订阅管理门户
-ms.openlocfilehash: 0ab0ca532c1c2cdb848a3f6df9862c1d80518248
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 70a44dd659fe2c972db6ae3b6155e3c2374b159f
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672525"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965289"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以批量许可协议上的管理员的身份访问管理门户
 
@@ -37,4 +37,4 @@ ms.locfileid: "104672525"
 ## <a name="next-steps"></a>后续步骤
 - 了解如何[分配订阅](assign-license.md)
 - 了解有关各种[订阅权益](https://visualstudio.microsoft.com/vs/benefits/)的详细信息
-- [设置协议首选项](admin-prefs.md)
+- [设置协议首选项](admin-preferences.md)

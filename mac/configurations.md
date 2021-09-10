@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 09/18/2019
 ms.assetid: 78107CFA-9308-4293-A92A-9B552A259E15
 ms.openlocfilehash: 911d8d3a65c414bc3c98494bda75c46b778e5b2b
-ms.sourcegitcommit: 9d2829dc30b6917e89762d602022915f1ca49089
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/30/2020
-ms.locfileid: "91584017"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963892"
 ---
 # <a name="understanding-build-configurations"></a>了解生成配置
 
@@ -23,7 +23,7 @@ ms.locfileid: "91584017"
 
 ## <a name="solution-configurations"></a>解决方案配置
 
-解决方案配置用于指定解决方案中所有项目的配置。 通过使用“生成”>“配置”项下的“配置映射”选项卡，可以为打开的解决方案中的每一项分配一个目标配置********。 下图对此进行了演示：
+解决方案配置用于指定解决方案中所有项目的配置。 通过使用“生成”>“配置”项下的“配置映射”选项卡，可以为打开的解决方案中的每一项分配一个目标配置。 下图对此进行了演示：
 
 ![配置映射选项](media/projects-and-solutions-image3.png)
 
@@ -33,11 +33,11 @@ ms.locfileid: "91584017"
 
 项目往往有多个配置。 项目针对的配置和平台结合使用以指定在生成时要使用的属性。 生成时在这些配置之间进行切换可以得到不同的输出。 例如，调试配置将输出调试符号，使得调试程序可以从有故障的应用程序的堆栈跟踪中解决函数名称、参数或变量。 尽管此附加信息在开发期间很有用，但它会导致文件大小膨胀，并且不适合分发。
 
-每个平台都有针对自己生成特定的配置。 可以通过导航到“项目选项”对话框中的“生成”部分来访问项目的生成配置页面********。 要打开此对话框，请右键单击项目并选择“选项”，或在解决方案资源管理器中双击项目****。
+每个平台都有针对自己生成特定的配置。 可以通过导航到“项目选项”对话框中的“生成”部分来访问项目的生成配置页面。 要打开此对话框，请右键单击项目并选择“选项”，或在解决方案资源管理器中双击项目。
 
 ## <a name="run-configuration"></a>运行配置
 
-Visual Studio for Mac 允许设置运行配置__。 在工具栏的下拉列表中，运行配置显示在生成配置选择器旁，如下所示：
+Visual Studio for Mac 允许设置运行配置。 在工具栏的下拉列表中，运行配置显示在生成配置选择器旁，如下所示：
 
 ![“运行配置”下拉列表](media/projects-and-solutions-image8.png)
 

@@ -8,11 +8,11 @@ ms.technology: vs-ide-install
 ms.assetid: 8825BBAD-65C0-480F-9868-A01E64F28250
 ms.topic: troubleshooting
 ms.openlocfilehash: c631bae40d06a000e2e90c26ae5a9862c1e09aaa
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85950573"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961779"
 ---
 # <a name="troubleshooting-updater-has-errors-retrieving-information"></a>疑难解答：更新程序在检索信息时发生错误
 
@@ -21,6 +21,6 @@ ms.locfileid: "85950573"
 - 检查 Internet 连接。 连接中断是此错误的最常见原因。
   - 如果组件无法下载，则可以单击组件名称旁边的重试按钮以重新尝试下载。
 - 重启 IDE。
-- 如果此错误消息继续出现，也可以尝试使用 Visual Studio 2017 for Mac 安装程序进行更新，如果 .dmg  仍位于计算机上，也可以从 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac) 进行下载
+- 如果此错误消息继续出现，也可以尝试使用 Visual Studio 2017 for Mac 安装程序进行更新，如果 .dmg 仍位于计算机上，也可以从 [my.visualstudio.com](https://my.visualstudio.com/Downloads?q=Visual%20Studio%20for%20Mac) 进行下载
   - 该安装程序将更新计算机上安装的任何组件。
   - 通过重新运行该安装程序，还可以安装之前未安装的任何缺失组件。

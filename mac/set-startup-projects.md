@@ -8,11 +8,11 @@ ms.topic: how-to
 ms.prod: visual-studio-mac
 ms.assetid: fd354fff-ce6b-4505-a815-84a2311e39ba
 ms.openlocfilehash: df1e088a5e2d0f65d8b72dad0895f1edb1740f1f
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493564"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963945"
 ---
 # <a name="set-multiple-startup-projects"></a>设置多个启动项目
 

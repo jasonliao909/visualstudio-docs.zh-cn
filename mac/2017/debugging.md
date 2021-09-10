@@ -8,11 +8,11 @@ ms.technology: vs-ide-debug
 ms.assetid: BB7A084D-9AC2-48B5-8076-6C8518796BBA
 ms.topic: overview
 ms.openlocfilehash: 5db0cd7a9c1fc21f5b109a3c103a06a35d348755
-ms.sourcegitcommit: 2ce59c2ffeba5ba7f628c2e6c75cba4731deef8a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 07/03/2020
-ms.locfileid: "85938793"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961710"
 ---
 # <a name="debugging-with-xamarin"></a>使用 Xamarin 进行调试
 

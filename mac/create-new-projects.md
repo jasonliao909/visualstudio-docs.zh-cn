@@ -6,11 +6,11 @@ ms.author: dominicn
 ms.date: 11/06/2020
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 7ee9b23f9ede12a353f6c6fdc0f578d7f78a772c
-ms.sourcegitcommit: 2cf3a03044592367191b836b9d19028768141470
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94493289"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963879"
 ---
 # <a name="create-a-new-project"></a>创建新项目
 

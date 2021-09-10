@@ -7,11 +7,11 @@ ms.date: 09/23/2019
 ms.assetid: EF574E49-0465-4973-BE67-286DA20B8836
 ms.topic: how-to
 ms.openlocfilehash: f5fe827566d9949f5dca2a1a3e1dcfb1bf191c6e
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "88801784"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963847"
 ---
 # <a name="keyboard-navigation-in-visual-studio-for-mac"></a>Visual Studio for Mac 中的键盘导航
 
@@ -19,7 +19,7 @@ ms.locfileid: "88801784"
 
 ## <a name="use-keyboard-navigation"></a>使用键盘导航
 
-键盘导航支持直接内置于 macOS 中。 若要获得最全面的体验，请将 macOS 设置为在所有控件  之间移动键盘焦点。 这允许你在窗口或对话框中的所有控件之间进行移动。
+键盘导航支持直接内置于 macOS 中。 若要获得最全面的体验，请将 macOS 设置为在所有控件之间移动键盘焦点。 这允许你在窗口或对话框中的所有控件之间进行移动。
 
 ![键盘选项的屏幕截图，其中选中了“所有控件”](media/accessibility-preferences-keyboard.png)
 
@@ -27,24 +27,24 @@ ms.locfileid: "88801784"
 
 Visual Studio for Mac 具有用于执行各种任务的一系列键盘快捷方式。 你可以查看和编辑这些快捷方式，如下所示：
 
-1. 选择“Visual Studio (菜单)”   > “首选项(&#8984;,)”  。
+1. 选择“Visual Studio (菜单)” > “首选项(&#8984;,)”。
 
-1. 转到“环境”   > “键绑定”  。
+1. 转到“环境” > “键绑定”。
 
 1. 滚动列表，或搜索快捷方式或命令。
 
 1. 选择命令。
 
-1. 选择“键绑定”  ，然后键入键组合。
+1. 选择“键绑定”，然后键入键组合。
 
-1. 选择“应用”。 
+1. 选择“应用”。
 
 > [!TIP]
 > 如果你熟悉其他常见键盘快捷方式（例如，Windows 中的 Visual Studio），则可以从键绑定方案列表中进行选择，以最好地满足你的需求。
 
 ## <a name="useful-keyboard-shortcuts"></a>有用的键盘快捷方式
 
-|Feature         |说明                                   |快捷方式         |
+|功能         |说明                                   |快捷键         |
 |----------------|----------------------------------------------|-----------------|
 |导航 UI   |在 UI 的所有元素之间移动。               |**⇥** **⇧⇥**    |
 |交互        |选择当前焦点对应的控件。         |**␣**            |

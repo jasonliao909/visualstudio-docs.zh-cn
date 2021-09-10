@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: v-evwin
 manager: cabuschl
 ms.assetid: 64455e79-229a-42f0-9d65-c2cca8ab8513
-ms.date: 02/18/2021
+ms.date: 05/18/2021
 ms.topic: how-to
 description: 了解如何在有疑问或遇到问题时联系你的订阅管理员来寻求帮助。
-ms.openlocfilehash: 4eb17f5480b3839248d0968b6c20434c149bb756
-ms.sourcegitcommit: 79a6be815244f1cfc7b4123afff29983fce0555c
+ms.openlocfilehash: 343cf2eede966e83390c6f2689d0db840507f827
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/06/2021
-ms.locfileid: "102250047"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965109"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>从你的订阅管理员处获取帮助
 如果 Visual Studio 订阅是由你的工作单位或学校提供给你的，那么它很可能是由订阅管理员或“管理员”分配给你的。  管理员可以分配或删除订阅，更改登录电子邮件地址，确定你是否能够下载软件以及执行与订阅相关的其他功能。
@@ -30,7 +30,7 @@ ms.locfileid: "102250047"
 6. 最后，选择“发送”。
 
 > [!NOTE]
-> **超级管理员：** 要设置发送“与管理员联系”请求的电子邮件地址，请在 [协议首选项](admin-prefs.md#contact-email-address)中指定该地址。
+> **超级管理员：** 要设置发送“与管理员联系”请求的电子邮件地址，请在 [协议首选项](admin-preferences.md#contact-email-address)中指定该地址。
 
 ## <a name="resources"></a>资源
 - [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)

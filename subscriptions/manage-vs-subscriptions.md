@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何充分利用 Visual Studio 订阅
 ms.openlocfilehash: fce096a0999fefe16abc009c04f87cf4eff35748
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776827"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965241"
 ---
 # <a name="managing-subscriptions"></a>管理订阅
 

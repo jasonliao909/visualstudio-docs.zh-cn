@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: conceptual
 description: 了解升级或下载 Visual Studio 订阅级别的影响。
 ms.openlocfilehash: 93ea729280916cb62ba2b87ff820bb25069369d7
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672977"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965259"
 ---
 # <a name="what-happens-when-you-change-visual-studio-subscription-levels"></a>更改 Visual Studio 订阅级别后会出现什么情况？
 在 Visual Studio 订阅中，软件、工具、服务以及可供你使用的其他权益取决于你的订阅级别。  通常，你的订阅级别越高，它提供的权益就越可靠。  

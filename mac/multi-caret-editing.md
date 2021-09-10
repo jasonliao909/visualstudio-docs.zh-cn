@@ -5,19 +5,19 @@ author: cobey
 ms.author: cobey
 ms.date: 08/19/2019
 ms.openlocfilehash: a21bebda057a772017fa1481e18f9801d1fbcbdf
-ms.sourcegitcommit: 2975d722a6d6e45f7887b05e9b526e91cffb0bcf
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/20/2020
-ms.locfileid: "75439048"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963926"
 ---
 # <a name="multi-caret-editing"></a>多个插入点编辑
 
-多个插入点编辑允许一次添加 n  个插入点数。 在多个插入点模式下，你可以通过单击鼠标或通过键盘命令将其他插入点添加到文档中。 主插入点由红色光标表示，辅助插入点则显示为浅蓝色。 可以通过 `ESC` 键禁用多个插入点编辑模式。
+多个插入点编辑允许一次添加 n 个插入点数。 在多个插入点模式下，你可以通过单击鼠标或通过键盘命令将其他插入点添加到文档中。 主插入点由红色光标表示，辅助插入点则显示为浅蓝色。 可以通过 `ESC` 键禁用多个插入点编辑模式。
 
 ## <a name="enabling-multi-caret-editing"></a>启用多个插入点编辑
 
-### <a name="keyboard"></a>键盘
+### <a name="keyboard"></a>Keyboard
 
 可以通过键盘以多种方式启用多个插入点模式。 下表提供了可用于进入多个插入点编辑的特定模式的键盘快捷键：
 
@@ -40,7 +40,7 @@ ms.locfileid: "75439048"
 
 ![多个插入点鼠标](media/multi-caret-mouse.gif)
 
-## <a name="see-also"></a>另请参阅
+## <a name="see-also"></a>请参阅
 
 - [快速操作（Windows 上的 Visual Studio）](/visualstudio/ide/quick-actions)
 - [重构代码（Windows 上的 Visual Studio）](/visualstudio/ide/refactoring-in-visual-studio)

@@ -6,12 +6,12 @@ ms.assetid: 3E5ADF4A-6655-42AD-BFC1-CE5E437C457B
 author: sayedihashimi
 ms.author: sayedha
 ms.date: 05/06/2018
-ms.openlocfilehash: 44bb0b0ba0410b28238ae7a1b3ba4513aaf3c801
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.openlocfilehash: bbe460b137f64c1fb4aba292abe3dcbd47044fe9
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "85938346"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123963871"
 ---
 # <a name="azure"></a>Azure
 

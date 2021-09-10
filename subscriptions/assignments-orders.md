@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员跟踪用户分配和处理订单的职责。
 ms.openlocfilehash: 9ba54d13f4481f68d13e43a2e21f62036d23cab3
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776982"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965145"
 ---
 # <a name="track-user-assignment-and-process-orders"></a>跟踪用户分配和处理订单
 Visual Studio 订阅管理员需要跟踪 Visual Studio 使用情况，并按批量许可协议或 Microsoft 产品和服务协议中的计划处理因使用量增加而产生的订单。 新的 Visual Studio 订阅管理门户提供一个有用的跟踪器，可显示可用和已用的许可证，从而简化了这一过程。

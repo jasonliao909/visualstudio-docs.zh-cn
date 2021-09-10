@@ -6,17 +6,17 @@ ms.author: dominicn
 ms.date: 05/06/2018
 ms.assetid: 5880BB10-0A12-47E2-8A82-7A2D59C4D579
 ms.openlocfilehash: 0149c43f628e3a65f9fd85565919886bde609b07
-ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2020
-ms.locfileid: "74983642"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123961651"
 ---
 # <a name="creating-new-projects-and-solutions"></a>创建新项目和解决方案
 
 ## <a name="creating-new-projects-and-solutions-from-a-template"></a>使用模板创建新项目和解决方案
 
-可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”****，然后依次选择所需平台和所需模板：
+可在任何时间使用预定义的模板创建解决方案。 若要用这种方法创建解决方案，请浏览到“文件”>“新建解决方案”，然后依次选择所需平台和所需模板：
 
 ![创建新解决方案](media/projects-and-solutions-image0.png)
 
@@ -24,7 +24,7 @@ ms.locfileid: "74983642"
 
 可使用上下文操作或菜单栏导航解决方案资源管理器。
 
-若要将新项目添加到解决方案，请右键单击解决方案名称，选择“添加”>“添加新项目”****，显示“新建项目”对话框：
+若要将新项目添加到解决方案，请右键单击解决方案名称，选择“添加”>“添加新项目”，显示“新建项目”对话框：
 
 ![添加新项目](media/projects-and-solutions-image4.png)
 

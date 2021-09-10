@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: 如何使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
 ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
-ms.sourcegitcommit: f9ed9c4c6c166ef9826feb21dcb9c4d47ed14e1a
+ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102607153"
+ms.lasthandoff: 09/09/2021
+ms.locfileid: "123965210"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
 
