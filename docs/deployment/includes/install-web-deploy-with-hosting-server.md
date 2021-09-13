@@ -1,12 +1,14 @@
 ---
-ms.openlocfilehash: a292b37a50bbf667fa5b23f18879cd79c3f76805
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 09f6e03fa38c8f953ea5d70aedf81cd09c065a08
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85292174"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397852"
 ---
 用于托管服务器的 Web 部署 3.6 提供额外的配置功能，可实现从 UI 创建发布设置文件。
+
+IIS 的Web 平台安装程序允许安装版本 3.6 而不是 4.0，因此这是本文中建议的版本。
 
 1. 如果已在 Windows Server 上安装 Web 部署，请使用“控制面板” > “程序” > “卸载程序”将其卸载。
 

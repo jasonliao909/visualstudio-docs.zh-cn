@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: b8002d9e911c8d8c07a5aaf5286168e49a374a7c
-ms.sourcegitcommit: 1d4f6cc80ea343a667d16beec03220cfe1f43b8e
+ms.openlocfilehash: 6e9650a10a193947f11172d717481f8221a66ccf
+ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/23/2020
-ms.locfileid: "85292144"
+ms.lasthandoff: 09/02/2021
+ms.locfileid: "123397854"
 ---
 
 1. 关闭并重新打开 IIS 管理控制台以在 UI 中显示更新的配置选项。
@@ -41,9 +41,9 @@ ms.locfileid: "85292144"
    * `publishUrl` 属性中引用的 msdeploy.axd 文件是 Web 部署动态生成的 HTTP 处理程序文件。 （用于测试目的，`http://myhostname:8172` 通常也适用。）
    * `publishUrl` 端口设置为端口 8172，这是 Web 部署的默认端口。
    * `destinationAppUrl` 端口设置为端口 80，这是 IIS 部署的默认端口。
-   * 如果使用主机名无法在 Visual Studio 中连接到远程主机（在后续步骤中），请测试 IP 地址以代替主机名。
+   * 如果在后续步骤中，无法使用主机名从 Visual Studio 连接到远程主机，请测试服务器的 IP 地址，用它来代替主机名。
 
      > [!NOTE]
-     > 如果要发布到在 Azure VM 上运行的 IIS，则必须在网络安全组中打开 Web 部署和 IIS 端口。 有关详细信息，请参阅[安装和运行 IIS](/azure/virtual-machines/windows/quick-create-portal#install-web-server)。
+     > 如果要发布到在 Azure VM 上运行的 IIS，必须在网络安全组中打开 Web 部署和 IIS 的入站端口。 有关详细信息，请参阅[打开虚拟机的端口](/azure/virtual-machines/windows/nsg-quickstart-portal)。
 
 5. 将此文件复制到运行 Visual Studio 的计算机上。
