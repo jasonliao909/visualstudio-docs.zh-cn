@@ -24,11 +24,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: b2e77cc663a20ff914a3f2bf52ea8c25b7e150a8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602527"
 ---
 # <a name="automate-excel-by-using-extended-objects"></a>使用扩展对象自动 Excel
   当开发 Visual Studio 中的 Excel 解决方案时，可以使用解决方案中的 *主机项* 和 *主机控件*。 这些对象可扩展 Excel 对象模型（即由 Excel 的主互操作程序集公开的对象模型）中某些常用对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他功能（如“新建事件”）和数据绑定功能添加到对象。
@@ -63,7 +63,7 @@ ms.locfileid: "122038183"
 
 - [XmlMappedRange 控件](../vsto/xmlmappedrange-control.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：用数据填充 ListObject 控件](../vsto/how-to-fill-listobject-controls-with-data.md)
 - [如何：向工作表添加图表控件](../vsto/how-to-add-chart-controls-to-worksheets.md)
 - [如何：向工作表添加 ListObject 控件](../vsto/how-to-add-listobject-controls-to-worksheets.md)

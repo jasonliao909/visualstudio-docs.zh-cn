@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56e809bdc8b6cb8d22fc89cd216f9e8920dc4359
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119446"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602441"
 ---
 # <a name="idebugdocumentposition2"></a>IDebugDocumentPosition2
 此接口表示源文件中的抽象位置。
@@ -31,10 +31,10 @@ IDebugDocumentPosition2 : IUnknown
 ```
 
 ## <a name="notes-for-implementers"></a>实现者说明
- Visual Studio实现此接口。 如果调试引擎 (DE) 必须像 DE 实现 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 接口一样提供自己的源代码， (也会实现此接口) 。
+ Visual Studio通常实现此接口。 如果调试引擎 (DE) 必须提供自己的源代码， (DE 实现 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 接口时，它也会实现此) 。
 
 ## <a name="notes-for-callers"></a>调用方说明
- 此接口作为参数传递给 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)。 它还作为 BP_LOCATION 联合 (的[](../../../extensibility/debugger/reference/bp-location.md)一部分提供BP_LOCATION_CODE_FILE_LINE结构) ，该结构又属于[](../../../extensibility/debugger/reference/bp-location-code-file-line.md) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构，用于创建挂起断点。
+ 此接口作为参数传递给 [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)。 它还作为 BP_LOCATION 联合 (的一[](../../../extensibility/debugger/reference/bp-location.md)部分提供BP_LOCATION_CODE_FILE_LINE结构) ，该结构又属于[](../../../extensibility/debugger/reference/bp-location-code-file-line.md) [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)结构，用于创建挂起断点。
 
 ## <a name="methods-in-vtable-order"></a>Vtable 顺序中的方法
  下表显示了 的方法 `IDebugDocumentPosition2` 。
@@ -53,7 +53,7 @@ IDebugDocumentPosition2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [EnumCodeContexts](../../../extensibility/debugger/reference/idebugprogram2-enumcodecontexts.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [BP_LOCATION_CODE_FILE_LINE](../../../extensibility/debugger/reference/bp-location-code-file-line.md)

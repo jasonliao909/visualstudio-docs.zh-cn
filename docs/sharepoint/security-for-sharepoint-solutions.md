@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: d287552b07f67c7415688fefd87f876242b230f4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084059"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602534"
 ---
 # <a name="security-for-sharepoint-solutions"></a>SharePoint 解决方案的安全性
   [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]包含以下功能，以帮助增强 SharePoint 应用程序的安全性。
@@ -86,6 +86,6 @@ ms.locfileid: "122084059"
 
 - [生成安全的 ASP.NET 应用程序：身份验证、授权和安全通信](/previous-versions/msp-n-p/ff649100(v=pandp.10))
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

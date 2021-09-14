@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 7f2213a2f112bf84817532210c457da534c8d86c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127449"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602639"
 ---
 # <a name="idebugbreakpointresolution2getbreakpointtype"></a>IDebugBreakpointResolution2::GetBreakpointType
 获取此解析表示的断点的类型。
@@ -41,12 +41,12 @@ int GetBreakpointType(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pBPType`\
-[out]从指定此断 [点BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举返回一个值。
+[out]从指定此 [断点BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举返回一个值。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。 如果E_FAIL结构 `bpResLocation` 中的字段 [无效，BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 返回值。
+如果成功，则返回 `S_OK` ;否则返回错误代码。 如果E_FAIL结构中的字段无效 `bpResLocation` [，BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md) 返回值。
 
 ## <a name="remarks"></a>备注
 例如，断点可能是代码或数据断点。
@@ -85,7 +85,7 @@ HRESULT CDebugBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBreakpointResolution2](../../../extensibility/debugger/reference/idebugbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

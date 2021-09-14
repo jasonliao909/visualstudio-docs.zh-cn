@@ -1,6 +1,6 @@
 ---
-description: 获取描述引用的 DEBUG_REFERENCE_INFO 结构。
-title: IDebugReference2：： GetReferenceInfo |Microsoft Docs
+description: 获取DEBUG_REFERENCE_INFO引用的对象结构。
+title: IDebugReference2：：GetReferenceInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 88dc8d4bdbc0e354ccc327aa0c5b6968091c19c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029757"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602405"
 ---
 # <a name="idebugreference2getreferenceinfo"></a>IDebugReference2::GetReferenceInfo
-获取描述引用的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构。 保留供将来使用。
+获取 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 引用的对象结构。 保留供将来使用。
 
 ## <a name="syntax"></a>语法
 
@@ -51,29 +51,29 @@ int GetReferenceInfo (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
-中 [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md) 枚举中的标志的组合，用于确定要在 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构中填充的字段。
+[in]来自 DEBUGREF_INFO_FLAGS [标志的组合](../../../extensibility/debugger/reference/debugref-info-flags.md) ，用于确定要填充在 DEBUG_REFERENCE_INFO [中的字段](../../../extensibility/debugger/reference/debug-reference-info.md) 。
 
 `nRadix`\
-中用于设置任何数字信息格式的基数。
+[in]用于设置任何数值信息格式的基数。
 
 `dwTimeout`\
-中从此方法返回前等待的最长时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
+[in]从此方法返回之前等待的最大时间（以毫秒为单位）。 使用 `INFINITE` 无限期等待。
 
 `rgpArgs`\
-中 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象的数组。 保留以供将来使用;设置为 null 值。
+[in] [IDebugReference2 对象的](../../../extensibility/debugger/reference/idebugreference2.md) 数组。 保留供将来使用;设置为 null 值。
 
 `dwArgCount`\
-中数组中引用参数的数目 `rgpArgs` 。 保留以供将来使用;设置为0。
+[in]数组中的引用参数 `rgpArgs` 数。 保留供将来使用;设置为 0。
 
 `pReferenceInfo`\
-弄一个 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 的结构，其中填充了属性的说明。
+[out]一 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 一个结构，该结构使用属性的说明进行填充。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [DEBUGREF_INFO_FLAGS](../../../extensibility/debugger/reference/debugref-info-flags.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)

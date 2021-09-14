@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c43a1a6952d39106db555a40bbe2d30ccee52d48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096370"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602620"
 ---
 # <a name="idebugengine2setlocale"></a>IDebugEngine2::SetLocale
 设置调试引擎区域设置 (DE) 。
@@ -41,7 +41,7 @@ int SetLocale(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `wLangID`\
 [in]指定语言区域设置。 例如，1033 表示英语。
 
@@ -51,5 +51,5 @@ int SetLocale(
 ## <a name="remarks"></a>备注
  此方法由会话调试管理器 (SDM) 来传播 IDE 区域设置，以便正确本地化 DE 返回的字符串。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

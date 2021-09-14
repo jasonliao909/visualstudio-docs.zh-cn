@@ -1,6 +1,6 @@
 ---
 title: 调试中 SharePoint Tools 的Visual Studio |Microsoft Docs
-description: 调试 SharePoint 工具的Visual Studio。 调试SharePoint实例或 VS 的常规实例中的工具扩展。
+description: 在 Visual Studio 中调试 SharePoint 工具的扩展。 调试SharePoint实例或 VS 的常规实例中的工具扩展。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -17,17 +17,17 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: f9b6cb0d017fdfade0b78f2d42609a7e52ad9a3b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149476"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602544"
 ---
 # <a name="debug-extensions-for-the-sharepoint-tools-in-visual-studio"></a>在 Visual Studio 中调试 SharePoint 工具扩展
   可以在试验SharePoint或实例的常规实例中调试Visual Studio。 如果需要对扩展的行为进行故障排除，还可以修改注册表值以显示其他错误信息，并配置Visual Studio命令SharePoint方式。
 
-## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>调试试验实例中的扩展Visual Studio
- 为了Visual Studio开发环境不经测试的扩展意外损坏，Visual Studio SDK 提供了一个称为实验性实例的 Visual Studio 实例，可用于安装和测试扩展。  使用常规实例开发新的扩展Visual Studio，但在实验实例中调试和运行它们。 有关详细信息，请参阅 [实验实例](../extensibility/the-experimental-instance.md)。
+## <a name="debug-extensions-in-the-experimental-instance-of-visual-studio"></a>调试实例的实验性实例中的Visual Studio
+ 若要保护 Visual Studio 开发环境，避免未经测试的扩展意外损坏，Visual Studio SDK 提供了一个称为试验实例的 Visual Studio 实例，可用于安装和测试扩展。 可以使用常规实例开发新的扩展Visual Studio，但在实验实例中调试和运行它们。 有关详细信息，请参阅 [实验实例](../extensibility/the-experimental-instance.md)。
 
  如果使用 VSIX 项目来部署扩展，而 VSIX 项目是解决方案中的启动项目，Visual Studio调试解决方案时，会自动在试验实例中安装并运行该扩展。 启动项目是在调试包含多个项目的解决方案时启动的项目。 有关使用 VSIX 项目部署扩展的信息，请参阅在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
@@ -52,9 +52,9 @@ ms.locfileid: "122149476"
 
 2. 在扩展项目的生成输出文件夹中，双击 *.vsix* 文件，或者打开其快捷菜单，然后选择"打开 **"以打开该文件**：
 
-3. 在 **"Visual Studio安装程序**"对话框中，选择要Visual Studio扩展的版本，然后选择"安装 **"** 按钮。
+3. 在 **"Visual Studio** 安装程序"对话框中，选择要Visual Studio扩展的版本，然后选择"安装 **"** 按钮。
 
-     Visual Studio将扩展文件安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 作者扩展 \\  \\ *名* \\ *版本*。 此路径中的最后三个文件夹是使用扩展的 `Author` `Name` `Version` *extension.vsixmanifest* 文件中 、 和 元素构造的。
+     Visual Studio将扩展文件安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\11.0\Extensions 作者扩展 \\  \\  \\ *名版本*。 此路径中的最后三个文件夹是使用扩展的 `Author` `Name` `Version` *extension.vsixmanifest* 文件中 、 和 元素构造的。
 
 4. 安装Visual Studio后，选择"关闭 **"** 按钮。
 
@@ -64,7 +64,7 @@ ms.locfileid: "122149476"
 
 2. 使用管理员权限启动Visual Studio实例。 以下步骤将此 实例Visual Studio作为第 *二个实例*。
 
-3. 切换到第一个实例Visual Studio。
+3. 切换到第一个 Visual Studio。
 
 4. 在菜单栏上，选择"**调试"，****然后选择"附加到进程"。**
 
@@ -76,11 +76,11 @@ ms.locfileid: "122149476"
 
 7. 切换到第二个实例Visual Studio。
 
-8. 创建一SharePoint扩展的新项目。 例如，如果要调试列表定义项目项的扩展，请创建列表 **定义** 项目。
+8. 创建加载SharePoint的新项目。 例如，如果要调试列表定义项目项的扩展，请创建列表 **定义** 项目。
 
 9. 执行测试扩展代码所需的任何步骤。
 
-10. 完成扩展调试后，关闭扩展的第二Visual Studio。
+10. 调试完扩展后，关闭扩展的第二Visual Studio。
 
 #### <a name="to-remove-the-extension"></a>删除扩展
 
@@ -95,25 +95,25 @@ ms.locfileid: "122149476"
 4. 选择" **立即重启** "按钮以完成卸载。
 
 ## <a name="debug-sharepoint-commands"></a>调试SharePoint命令
- 如果要调试属于 SharePoint 工具扩展的 SharePoint 命令，则必须将调试器附加到 *vssphost4.exe进程。* 这是执行以下命令的 64 位SharePoint进程。 有关命令和 *SharePointvssphost4.exe，* 请参阅调用 [SharePoint 对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
+ 如果要调试属于 SharePoint 工具扩展的 SharePoint 命令，则必须将调试器附加到 *vssphost4.exe进程。* 这是执行以下命令的 64 位SharePoint进程。 有关命令和SharePointvssphost4.exe，请参阅调用 SharePoint **[对象模型](../sharepoint/calling-into-the-sharepoint-object-models.md)。
 
 #### <a name="to-attach-the-debugger-to-the-vssphost4exe-process"></a>将调试器附加到vssphost4.exe进程
 
-1. 按照上述说明，开始在 Visual Studio 或 Visual Studio 的常规实例中调试扩展。
+1. 按照上述说明，开始在 Visual Studio 试验实例或 Visual Studio 实例中调试扩展。
 
 2. 在运行Visual Studio的实例中，在菜单栏上，选择"调试 **"，然后选择**"**附加到进程"。**
 
 3. 在"**可用进程"** 列表中，选择 *"vssphost.exe"。*
 
     > [!NOTE]
-    > 如果未vssphost.exe，则必须在运行扩展的vssphost4.exe实例中启动 Visual Studio进程。 通常，通过执行一个操作来Visual Studio连接到开发SharePoint站点。 例如，Visual Studio 在展开站点连接节点 (在 服务器资源管理器 窗口中的 **SharePoint 连接** 节点下显示站点 URL **)** 的节点，或者将某些 SharePoint 项目项（如列表实例或事件接收器项）添加到 SharePoint 项目时，Visual Studio 将启动vssphost4.exe。  
+    > 如果未vssphost.exe，则必须在运行扩展的vssphost4.exe实例中启动Visual Studio 进程。 通常，通过执行一个操作来Visual Studio连接到开发SharePoint站点。 例如，展开站点连接节点 *(* (在 服务器资源管理器 窗口中的 **SharePoint 连接** 节点下显示站点 URL **)** 的节点时，或者将某些 SharePoint 项目项（如列表实例或事件接收器项）添加到 SharePoint 项目时，Visual Studio 将启动vssphost4.exe。
 
 4. 选择" **附加"** 按钮。
 
 5. 在正在Visual Studio实例中，执行执行命令所需的步骤。
 
 ## <a name="modify-registry-values-to-help-debug-sharepoint-tools-extensions"></a>修改注册表值以帮助调试SharePoint扩展
- 在 Visual Studio 中调试 SharePoint 工具的扩展时，可以修改注册表中的值，以帮助对扩展进行故障排除。 这些值存在于键 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** 下。 默认情况下，这些值不存在。
+ 在 SharePoint 中调试 SharePoint 工具的扩展时Visual Studio修改注册表中的值，以帮助对扩展进行故障排除。 这些值存在于键 **HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\11.0\SharePointTools** 下。 默认情况下，这些值不存在。
 
  为了帮助排查扩展工具SharePoint，可以创建并设置 EnableDiagnostics 值。 下表描述了此值。
 
@@ -125,13 +125,13 @@ ms.locfileid: "122149476"
 
 |值|说明|
 |-----------|-----------------|
-|AttachDebuggerToHostProcess|REG_DWORD指定是否显示一个对话框，该对话框使你能够在调试器启动时vssphost4.exe附加调试器。  如果要调试的命令在启动后立即由 vssphost.exe执行，并且没有足够的时间在执行命令之前手动附加调试器，则这非常有用。 若要显示对话框 *，vssphost4.exe时* <xref:System.Diagnostics.Debugger.Break%2A> 调用 方法。<br /><br /> 若要启用此行为，将此值设置为 1。 若要关闭此行为，将此值设置为 0 或删除此值。<br /><br /> 如果将此值设置为 1，则你可能还希望增加 HostProcessStartupTimeout 值，以在 Visual Studio 预期vssphost4.exe指示调试器已成功启动之前，为自己 *提供足够的时间来附加* 调试器。|
-|ChannelOperationTimeout|REG_DWORD指定等待命令执行Visual Studio的时间（SharePoint秒）。 如果命令未实时执行，则 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 会引发 。<br /><br /> 默认值为 120 秒。|
-|HostProcessStartupTimeout|REG_DWORD，它指定用户等待Visual Studio时间（*以* 秒vssphost4.exe来指示它已成功启动。 如果 *vssphost4.exe* 未指示开始时间成功，则 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 会引发 。<br /><br /> 默认值为 60 秒。|
-|MaxReceivedMessageSize|REG_DWORD指定在 Visual Studio 和 之间传递的 WCF 消息的最大允许 *大小（以字节vssphost4.exe）。*<br /><br /> 默认值为 1，048，576 字节 (1 MB) 。|
-|MaxStringContentLength|REG_DWORD指定字符串的最大允许大小（以字节为单位）在 Visual Studio 和 *vssphost4.exe。*<br /><br /> 默认值为 1，048，576 字节 (1 MB) 。|
+|AttachDebuggerToHostProcess|REG_DWORD指定是否显示一个对话框，该对话框使你能够在调试器启动时vssphost4.exe附加调试器。  如果要调试的命令在启动后立即由 vssphost.exe执行，并且没有足够的时间在执行命令之前手动附加调试器，则这非常有用。 若要显示对话框 *，vssphost4.exe启动时* <xref:System.Diagnostics.Debugger.Break%2A> 调用 方法。<br /><br /> 若要启用此行为，将此值设置为 1。 若要关闭此行为，将此值设置为 0 或删除此值。<br /><br /> 如果将此值设置为 1，则你可能还希望增加 HostProcessStartupTimeout 值，以在 Visual Studio 预期vssphost4.exe指示调试器已成功启动之前，为自己提供足够的时间来 *附加* 调试器。|
+|ChannelOperationTimeout|REG_DWORD指定命令执行Visual Studio等待SharePoint的时间（以秒）。 如果命令未实时执行，则 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 会引发 。<br /><br /> 默认值为 120 秒。|
+|HostProcessStartupTimeout|REG_DWORD指定等待用户成功启动Visual Studio等待vssphost4.exe的时间（以秒表示）。  如果 *vssphost4.exe* 未指示开始时间成功，则 <xref:Microsoft.VisualStudio.SharePoint.SharePointConnectionException> 会引发 。<br /><br /> 默认值为 60 秒。|
+|MaxReceivedMessageSize|REG_DWORD指定在 Visual Studio 和 之间传递的 WCF 消息的最大允许大小（*以字节vssphost4.exe）。*<br /><br /> 默认值为1048576字节 (1 MB) 。|
+|MaxStringContentLength|REG_DWORD，它指定在 Visual Studio 和 *vssphost4.exe* 之间传递的字符串的最大允许大小（以字节为单位）。<br /><br /> 默认值为1048576字节 (1 MB) 。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [扩展 Visual Studio 中的 SharePoint 工具](../sharepoint/extending-the-sharepoint-tools-in-visual-studio.md)
 - [在 Visual Studio 中部署 SharePoint 工具扩展](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)

@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: cdcd591ff2e742296a23fdf9dfa1d6324bf1e1bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092821"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602536"
 ---
 # <a name="safecontrol-element"></a>SafeControl 元素
   表示一个 ASPX 控件或 Web 部件，它被指定为在 SharePoint 站点上的任何 ASPX 页上访问的安全。
@@ -48,7 +48,7 @@ ms.locfileid: "122092821"
 |**IsSafeAgainstScript**|可选 **xs： boolean** 属性。<br /><br /> 指定不受信任的用户是否可以查看或编辑 ASPX 控件或 Web 部件的属性。|
 |**名称**|可选 **xs： string** 特性。<br /><br /> 此安全控件项在集合中的名称。|
 |**命名空间**|可选 **xs： string** 特性。<br /><br /> ASPX 控件或 Web 部件的命名空间。|
-|**TypeName**|可选 **xs： string** 特性。<br /><br /> ASPX 控件或 Web 部件的类型名称。|
+|TypeName|可选 **xs： string** 特性。<br /><br /> ASPX 控件或 Web 部件的类型名称。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -64,7 +64,7 @@ ms.locfileid: "122092821"
 
 ## <a name="element-information"></a>元素信息
 
-|属性|值|
+|Property|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project 项架构|

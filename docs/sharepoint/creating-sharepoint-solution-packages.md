@@ -17,11 +17,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: d395dcbc0c1600209d6e1bd04b4c88059b9cf60e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149411"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602552"
 ---
 # <a name="create-sharepoint-solution-packages"></a>创建 SharePoint 解决方案包
   使用包设计器，可以创建和自定义部署包。 例如，可以添加 SharePoint 项目项和功能、重置 IIS 服务器、设置功能激活作用域以及标识功能依赖项。 设计器还会生成一个清单，该清单是描述每个包的 XML 文件。
@@ -74,7 +74,7 @@ ms.locfileid: "122149411"
 ## <a name="package-folder-structure"></a>包文件夹结构
  打包 SharePoint 项目时，会在 *SolutionFolder\bin \\ \<BuildConfiguration>* 文件夹中为你创建一个 *.wsp* 文件。 例如，如果你的解决方案位于 *c：\ Visual Studio 2013 \Projects\ListDefinition1* ，并且你的生成配置设置为 "发布"，则 *.wsp* 文件位于 *C：\ Visual Studio 2013 \Projects\ListDefinition1\bin\Release* 中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)
 - [如何：使用包设计器在包中添加和移除功能和项](../sharepoint/how-to-add-and-remove-features-and-items-to-a-package-by-using-the-package-designer.md)
 - [如何：通过使用 MSBuild 任务创建 SharePoint 解决方案包](../sharepoint/how-to-create-a-sharepoint-solution-package-by-using-msbuild-tasks.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 211003c3d54b7f37979240e400e373db2782ac2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119472"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602445"
 ---
 # <a name="idebugdocumentposition2getrange"></a>IDebugDocumentPosition2::GetRange
 获取此文档位置的范围。
@@ -43,7 +43,7 @@ int GetRange(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pBegPosition`\
 [in，out]用起始位置填充的 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构。 如果不需要此信息，请将此参数设置为 null 值。
 
@@ -63,6 +63,6 @@ Line 6: x = 1;
 
  第5行对正在调试的程序不提供任何代码。 如果在第5行设置断点的调试器希望在第一行中向前搜索分配代码的时间，则调试器将指定一个范围，其中包含可正确放置断点的其他候选行。 然后，取消搜索这些行，直到找到可接受断点的行。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

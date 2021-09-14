@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: e698d7230d5f0e53bcd332ceaac6405df75bded0fb0685287703bba16858b7a3
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 2377ee69458f3becb94ee79b8cd580fdbb92823d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275406"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602566"
 ---
 # <a name="properties-window-overview"></a>属性窗口概述
 " **属性** " 窗口用于显示在 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 集成开发环境 (IDE) 中可用的两种主要类型的 windows 中所选对象的属性。 这两种类型的窗口是：
@@ -51,6 +51,6 @@ ms.locfileid: "121275406"
 
  有关的详细信息 `IDispatch` ，请参阅 MSDN library。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展属性](../../extensibility/internals/extending-properties.md)
 - [Properties Window Fields and Interfaces](../../extensibility/internals/properties-window-fields-and-interfaces.md)

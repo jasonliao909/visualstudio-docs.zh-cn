@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 27987f582606f1978c90ff09f36c6e75714040ea
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602619"
 ---
 # <a name="idebugengine2removesetexception"></a>IDebugEngine2::RemoveSetException
 删除指定的异常，以使其不再由调试引擎处理。
@@ -41,7 +41,7 @@ int RemoveSetException(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pException`\
 中描述要删除的异常的 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 结构。
 
@@ -53,6 +53,6 @@ int RemoveSetException(
 
  若要同时删除所有集异常，请调用 [RemoveAllSetExceptions](../../../extensibility/debugger/reference/idebugengine2-removeallsetexceptions.md) 方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

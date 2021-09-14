@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6232618832b9cf25dcec97c1b3d3048d2e39b7de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145206"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602484"
 ---
 # <a name="idebugcanstopevent2"></a>IDebugCanStopEvent2
 此接口用于向会话调试管理器 (SDM) 是否在当前代码位置停止。
@@ -58,6 +58,6 @@ IDebugCanStopEvent2 : IUknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugStepCompleteEvent2](../../../extensibility/debugger/reference/idebugstepcompleteevent2.md)
 - [IDebugEventCallback2](../../../extensibility/debugger/reference/idebugeventcallback2.md)

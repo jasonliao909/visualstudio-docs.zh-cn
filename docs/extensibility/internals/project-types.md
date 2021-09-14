@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a218fba88620245c73cf16eb594c91e21db69b3a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602573"
 ---
 # <a name="project-types"></a>项目类型
 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 包括多种语言项目类型，如 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] 和 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 还允许创建自己的项目类型。
@@ -68,7 +68,7 @@ ms.locfileid: "122042174"
 ## <a name="related-sections"></a>相关章节
 - [层次结构和选择](../../extensibility/internals/hierarchies-and-selection.md)
 
- 概述 IDE 集成开发环境 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] (IDE) 将项目显示为层次结构。
+ 概述 IDE 集成 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 开发环境 (IDE) 将项目显示为层次结构。
 
 - [项目子类型](../../extensibility/internals/project-subtypes.md)
 

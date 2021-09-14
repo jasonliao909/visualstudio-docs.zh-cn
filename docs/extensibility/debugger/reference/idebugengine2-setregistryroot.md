@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 8200b5426e37ed4e6129b3e0cab16b6820ea2950c1a7d0f8d42683ba16328557
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 0d2e5d8f9fc435740d536c4bcd33c270763c0be8
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452155"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602616"
 ---
 # <a name="idebugengine2setregistryroot"></a>IDebugEngine2::SetRegistryRoot
 设置调试引擎的注册表根目录 (DE) 。
@@ -41,7 +41,7 @@ int SetRegistryRoot(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszRegistryRoot`\
 [in]使用的注册表根。
 
@@ -51,5 +51,5 @@ int SetRegistryRoot(
 ## <a name="remarks"></a>备注
  此方法允许指定 DE 应用于获取注册表设置的备用注册表根;例如 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] ，"HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp"。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)

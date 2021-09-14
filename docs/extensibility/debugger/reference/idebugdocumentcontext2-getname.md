@@ -1,6 +1,6 @@
 ---
 description: 获取包含此文档上下文的文档的可显示名称。
-title: IDebugDocumentContext2：： GetName |Microsoft Docs
+title: IDebugDocumentContext2：：GetName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c84bb0d1ad5f04bde3b2c060a8f8c0d820c6aca2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089233"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602459"
 ---
 # <a name="idebugdocumentcontext2getname"></a>IDebugDocumentContext2::GetName
 获取包含此文档上下文的文档的可显示名称。
@@ -43,21 +43,21 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `gnType`\
-中一个来自 [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举的值，该值指定要返回的名称的类型。
+[in]指定要 [返回的名称GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md) 枚举中的值。
 
 `pbstrFileName`\
-弄返回文件的名称。
+[out]返回文件的名称。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法通常会将调用转发到 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) 方法，除非写入文档上下文以存储文档名称本身 (如示例显示) 。
+此方法通常转发对 [GetName](../../../extensibility/debugger/reference/idebugdocument2-getname.md) 方法的调用，除非写入文档上下文以将文档名称本身 (如示例所示) 。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为 `CDebugContext` 公开 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为公开 `CDebugContext` [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
@@ -96,6 +96,6 @@ HRESULT CDebugContext::GetName(GETNAME_TYPE gnType, BSTR* pbstrFileName)
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)
 - [GETNAME_TYPE](../../../extensibility/debugger/reference/getname-type.md)

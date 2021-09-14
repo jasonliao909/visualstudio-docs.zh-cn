@@ -1,6 +1,6 @@
 ---
 description: 确定文档位置是否包含在给定文档中。
-title: IDebugDocumentPosition2：：IsPositionInDocument |Microsoft Docs
+title: IDebugDocumentPosition2：： IsPositionInDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c72b0a3494018f8dc2bda518507d4b13da9cfe74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119459"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602442"
 ---
 # <a name="idebugdocumentposition2ispositionindocument"></a>IDebugDocumentPosition2::IsPositionInDocument
 确定文档位置是否包含在给定文档中。
@@ -41,16 +41,16 @@ int IsPositionInDocument(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pDoc`\
-[in]表示 [包含文档候选项的 IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象。
+中 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象，它表示包含文档候选项。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
  此方法主要用于在 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 接口中设置断点。 加载文档时，将调用断点位置以确定文档是否包含此位置。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

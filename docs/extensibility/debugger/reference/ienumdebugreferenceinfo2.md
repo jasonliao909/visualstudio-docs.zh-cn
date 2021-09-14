@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e9b89ee48a0975a8b2e9c438267c17b5e94bd26b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029250"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602610"
 ---
 # <a name="ienumdebugreferenceinfo2"></a>IEnumDebugReferenceInfo2
 此接口枚举 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 结构。
@@ -41,7 +41,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 
 |方法|说明|
 |------------|-----------------|
-|[下一页](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|检索枚举序列 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 指定数目的对象结构。|
+|[下一页](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-next.md)|检索指定数量的 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 枚举序列中的结构。|
 |[Skip](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-skip.md)|跳过枚举序列 [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md) 指定数量的对象结构。|
 |[重置](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-reset.md)|将枚举序列重置为开头。|
 |[克隆](../../../extensibility/debugger/reference/ienumdebugreferenceinfo2-clone.md)|创建一个枚举器，其中包含与当前枚举器相同的枚举状态。|
@@ -57,7 +57,7 @@ IEnumDebugReferenceInfo2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [DEBUG_REFERENCE_INFO](../../../extensibility/debugger/reference/debug-reference-info.md)
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

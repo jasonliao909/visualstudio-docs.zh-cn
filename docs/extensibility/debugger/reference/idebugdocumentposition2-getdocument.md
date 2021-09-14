@@ -1,6 +1,6 @@
 ---
 description: 获取包含文档。
-title: IDebugDocumentPosition2：：GetDocument |Microsoft Docs
+title: IDebugDocumentPosition2：： GetDocument |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69320654977a5e5059f64f338860cc465d9eb060
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089220"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602448"
 ---
 # <a name="idebugdocumentposition2getdocument"></a>IDebugDocumentPosition2::GetDocument
 获取包含文档。
@@ -41,13 +41,13 @@ int GetDocument(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppDoc`\
-[out]返回一 [个 IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象，该对象表示包含此位置的文档。
+弄返回一个 [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md) 对象，该对象表示包含此位置的文档。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)
 - [IDebugDocument2](../../../extensibility/debugger/reference/idebugdocument2.md)

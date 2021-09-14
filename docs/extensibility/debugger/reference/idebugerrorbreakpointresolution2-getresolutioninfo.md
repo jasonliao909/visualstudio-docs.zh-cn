@@ -1,6 +1,6 @@
 ---
-description: 获取断点错误解决信息。
-title: IDebugErrorBreakpointResolution2：： GetResolutionInfo |Microsoft Docs
+description: 获取断点错误解决方法信息。
+title: IDebugErrorBreakpointResolution2：：GetResolutionInfo |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: eeb3ede6be31cf705c81a010ec2be11a9e2bca7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602421"
 ---
 # <a name="idebugerrorbreakpointresolution2getresolutioninfo"></a>IDebugErrorBreakpointResolution2::GetResolutionInfo
-获取断点错误解决信息。
+获取断点错误解决方法信息。
 
 ## <a name="syntax"></a>语法
 
@@ -43,18 +43,18 @@ int GetResolutionInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
-中 [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md) 枚举中的标志的组合，用于确定 `pErrorResolutionInfo` 要填写的字段。
+[in]来自 BPERESI_FIELDS [标志的组合](../../../extensibility/debugger/reference/bperesi-fields.md) ，用于确定要 `pErrorResolutionInfo` 填充 的哪些字段。
 
 `pErrorResolutionInfo`\
-[in，out]用断点解析的说明填充的 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 结构。
+[in， out]使用 [BP_ERROR_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-error-resolution-info.md) 解析的说明填充的构造。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例为 `CDebugErrorBreakpointResolution` 公开 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
+以下示例为公开 `CDebugErrorBreakpointResolution` [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
 
 ```cpp
 HRESULT CDebugErrorBreakpointResolution::GetResolutionInfo(
@@ -154,7 +154,7 @@ HRESULT CDebugErrorBreakpointResolution::CopyBP_ERROR_RESOLUTION_INFO(
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BPERESI_FIELDS](../../../extensibility/debugger/reference/bperesi-fields.md)
