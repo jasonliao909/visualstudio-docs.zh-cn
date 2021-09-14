@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: 81de5a8b27626066fb8c85b5d13da2f387bae8c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114753"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664681"
 ---
 # <a name="how-to-add-comments-to-a-workflow-in-the-workflow-designer"></a>如何：在工作流设计器中给工作流添加备注
 

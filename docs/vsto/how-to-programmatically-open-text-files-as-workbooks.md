@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式将文本文件作为工作簿打开
-description: 了解如何使用 Visual Studio 以编程方式将文本文件作为 Microsoft Excel 工作簿打开。
+title: 如何：以编程方式以工作簿方式打开文本文件
+description: 了解如何使用 Visual Studio以编程方式打开文本文件作为Microsoft Excel工作簿。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,14 +18,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 68ee509eca06d6785f47fc776ad42c9f010b5219
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106037"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664719"
 ---
-# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式将文本文件作为工作簿打开
-  您可以将文本文件作为工作簿打开。 必须传入要打开的文本文件的名称。 您可以指定多个可选参数，如开始分析的行号以及文件中数据的列格式。
+# <a name="how-to-programmatically-open-text-files-as-workbooks"></a>如何：以编程方式以工作簿方式打开文本文件
+  可以将文本文件作为工作簿打开。 必须输入要打开的文本文件的名称。 可以指定多个可选参数，例如要开始分析的行号和文件中数据的列格式。
 
  [!INCLUDE[appliesto_xlalldocapp](../vsto/includes/appliesto-xlalldocapp-md.md)]
 
@@ -36,14 +36,14 @@ ms.locfileid: "122106037"
 ## <a name="compile-the-code"></a>编译代码
  此示例需要以下组件：
 
-- 一个名为的逗号分隔 `Test.txt` 的文本文件，其中至少包含三行文本。
+- 一个名为 的逗号分隔文本文件 `Test.txt` ，其中包含至少三行文本。
 
-- `Test.txt`要存储在驱动器 C 上的文本文件。
+- 要存储在 `Test.txt` 驱动器 C 上的文本文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [如何：以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)
-- [如何：以编程方式创建新的工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)
+- [如何：以编程方式创建新工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)
 - [如何：以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)
 - [如何：以编程方式关闭工作簿](../vsto/how-to-programmatically-close-workbooks.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

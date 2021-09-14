@@ -1,6 +1,6 @@
 ---
-title: Include 元素 |Microsoft Docs
-description: Include 元素指定一个文件，该文件可位于提供的包含路径上，用于插入当前文件。
+title: Include 元素|Microsoft Docs
+description: Include 元素指定一个文件，该文件可以位于提供的 include 路径上，以插入到当前文件中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -17,14 +17,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: adec3a58853768a6ca4225fde58870ac66f73242
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664402"
 ---
 # <a name="include-element"></a>Include 元素
-Include 元素指定一个文件，该文件可位于提供的包含路径上，用于插入当前文件。  所有定义的符号和类型将成为编译结果的一部分。
+Include 元素指定一个文件，该文件可以位于提供的 include 路径上，以插入到当前文件中。  定义的所有符号和类型将成为编译结果的一部分。
 
 ## <a name="syntax"></a>语法
 
@@ -39,8 +39,8 @@ Include 元素指定一个文件，该文件可位于提供的包含路径上，
 
 |属性|说明|
 |---------------|-----------------|
-|href|必需。 标头文件的路径：<br /><br /> href = "stdidcmd"|
-|条件|可选。 请参阅 [条件特性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
+|href|必需。 头文件的路径：<br /><br /> href="stdidcmd.h"|
+|条件|可选。 请参阅 [条件属性](../extensibility/vsct-xml-schema-conditional-attributes.md)。|
 
 ### <a name="child-elements"></a>子元素
 
@@ -52,7 +52,7 @@ Include 元素指定一个文件，该文件可位于提供的包含路径上，
 
 |元素|说明|
 |-------------|-----------------|
-|[CommandTable 元素](../extensibility/commandtable-element.md)|定义所有元素，这些元素表示 VSPackage 提供给 IDE 的命令（即菜单项、菜单、工具栏和组合框）。|
+|[CommandTable 元素](../extensibility/commandtable-element.md)|定义表示 VSPackage 向 IDE 提供的命令（即菜单项、菜单、工具栏和组合框）的所有元素。|
 
 ## <a name="example"></a>示例
 
@@ -60,5 +60,5 @@ Include 元素指定一个文件，该文件可位于提供的包含路径上，
 <Include href="PackagePlacements.vsct"/>
 ```
 
-## <a name="see-also"></a>请参阅
-- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>另请参阅
+- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

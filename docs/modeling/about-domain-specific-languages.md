@@ -1,6 +1,6 @@
 ---
 title: 关于域特定语言
-description: 了解如何将特定于域的语言 (DSL) 用于表达特定问题空间或域中的语句。
+description: 了解 DSL 中特定于域 (语言) 旨在表达特定问题空间或域中的语句。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -12,16 +12,16 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 38b9dca8b5f3d5a44cd304f7cdd6a24f9805ca8a9efda2099767d5fb6eb573d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54eeb75a623a7c20d0fad3f5f66e30c0b4617558
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411329"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664794"
 ---
 # <a name="about-domain-specific-languages"></a>关于域特定语言
 
-与常规用途语言（如 C# 或 UML）不同，特定于域的语言 (DSL) 旨在表达特定问题空间或域中的语句。
+与常规用途语言（如 C# 或 UML）不同，DSL (域特定) 旨在表达特定问题空间或域中的语句。
 
 已知 DSL 包括正则表达式和SQL。 每个 DSL 比描述对文本字符串或数据库的操作的常规用途语言要更好，但对于描述超出自身范围的想法要差得多。 各个行业也有其自己的 DSL。 例如，在电信行业中，呼叫说明语言广泛用于指定电话呼叫中的州序列，在航空公司中，标准 DSL 用于描述航班预订。
 
@@ -49,7 +49,7 @@ DSL 的典型应用程序是生成程序代码或其他项目。 定义 DSL 时�
 
 例如，可以编写模板，用于制定机场计划，并生成部分软件用于飞机处理，以及一些描述该计划的用户文档。
 
-定义 DSL 后，可以将它分发给可以在其自己的计算机上安装它的其他用户。 DSL 用户可以在 Visual Studio。
+定义 DSL 后，可以将它分发给可以在其自己的计算机上安装它的其他用户。 DSL 用户可以在 Visual Studio 中创建和编辑模型。
 
 还可以定义菜单命令和其他工具，帮助用户编辑 DSL、验证约束以帮助确保正确使用 DSL，以及帮助用户创建新实例的项模板。 可以将一个或多个 DSL 及其工具和其他扩展Visual Studio打包为集成包。
 
@@ -95,7 +95,7 @@ DSL 的典型应用程序是生成程序代码或其他项目。 定义 DSL 时�
 
 由于 [!INCLUDE[dsl](../modeling/includes/dsl_md.md)] 托管在 Visual Studio 中，因此它扩展了许多Visual Studio窗口和控件。 它还允许你自定义菜单命令、工具箱项和用户界面的其他元素的行为。
 
-还可以为特定于域的语言创建模型总线适配器。 此适配器允许你引用模型中的模型和元素，并让你编写可以访问和更新 DSL 实例的代码。 通过使用功能强大的模型总线机制，可以编写Visual Studio模型的扩展。 还可以编写使用模型独立应用程序。 有关详细信息，请参阅[使用模型总线 集成Visual Studio模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
+还可以为特定于域的语言创建模型总线适配器。 此适配器允许你引用模型中的模型和元素，并让你编写可以访问和更新 DSL 实例的代码。 通过使用功能强大的模型总线机制，可以编写Visual Studio模型扩展。 还可以编写使用模型独立应用程序。 有关详细信息，请参阅使用[Modelbus 集成Visual Studio模型](../modeling/integrating-models-by-using-visual-studio-modelbus.md)。
 
 ## <a name="benefits-of-domain-specific-development"></a>开发Domain-Specific优势
 

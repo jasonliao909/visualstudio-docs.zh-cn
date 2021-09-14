@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 07c1739067de0ebb8a0f260db506a9a1cc48e380
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122088791"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664511"
 ---
 # <a name="idebugfieldgettype"></a>IDebugField::GetType
 此方法获取字段的类型。
@@ -41,12 +41,12 @@ int GetType(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppType`\
 [out]将字段类型作为另一 [个 IDebugField 对象](../../../extensibility/debugger/reference/idebugfield.md) 返回。
 
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

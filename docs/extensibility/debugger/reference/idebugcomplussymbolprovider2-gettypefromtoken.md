@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9a35d245840632405f946e356169a44f17521b1c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144985"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664577"
 ---
 # <a name="idebugcomplussymbolprovider2gettypefromtoken"></a>IDebugComPlusSymbolProvider2::GetTypeFromToken
 在给定其标记的情况中检索类型。
@@ -46,7 +46,7 @@ int GetTypeFromToken(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `appDomain`\
 中应用程序域的标识符。
 
@@ -91,5 +91,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

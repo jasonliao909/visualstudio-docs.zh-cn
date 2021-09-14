@@ -13,12 +13,12 @@ manager: crdun
 ms.workload:
 - unity
 zone_pivot_groups: platform
-ms.openlocfilehash: 6fa58bb6050c1d2dbd33b429c2cda6597b3e8e22c3f7dc48b1acc39a1746993a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 9a89f83ecaa4545eb6151c7a92e76a08708c3855
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351166"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664668"
 ---
 # <a name="use-visual-studio-tools-for-unity"></a>使用 Visual Studio Tools for Unity
 
@@ -26,15 +26,15 @@ ms.locfileid: "121351166"
 
 ## <a name="open-unity-scripts-in-visual-studio"></a>在 Visual Studio 中打开 Unity 脚本
 
-将Visual Studio[设置为 Unity](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-to-use-visual-studio)的外部编辑器后，双击 Unity 编辑器中的脚本将自动启动或切换到Visual Studio并打开所选脚本。
+[将 Visual Studio 设置为 unity 的外部编辑器](getting-started-with-visual-studio-tools-for-unity.md#configure-unity-to-use-visual-studio)后，双击 unity 编辑器中的脚本将自动启动或切换到 Visual Studio 并打开所选脚本。
 
-或者，可以通过在 Unity Visual Studio选择"资产">**打开 C#** Project菜单，在源编辑器中打开任何脚本。
+或者，您可以通过选择 Unity 中 **> 打开 c # Project** 菜单中的 "资产"，打开 "源编辑器" 中没有打开脚本的 Visual Studio。
 
 :::zone pivot="windows"
-![在 Visual Studio 中打开 C# 项目](../media/vs/vstu-open-csharp-project.png)
+![在 Visual Studio 中打开 c # 项目](../media/vs/vstu-open-csharp-project.png)
 :::zone-end
 :::zone pivot="macos"
-![在 Visual Studio for Mac 中打开 C# 项目](../media/vsm/vstu-open-csharp-project.png)
+![在 Visual Studio for Mac 中打开 c # 项目](../media/vsm/vstu-open-csharp-project.png)
 :::zone-end
 
 ## <a name="unity-documentation-access"></a>Unity 文档访问
@@ -43,13 +43,13 @@ ms.locfileid: "121351166"
 
 :::zone pivot="windows"
 - 在 Visual Studio 中，将需要了解的 Unity API 突出显示或将光标置于其上，然后按 Ctrl+Alt+M、Ctrl+H    
-- 还可使用"帮助 **">"Unity API 参考** "菜单，而不是键绑定。
-!["Unity API 参考"菜单Visual Studio](../media/vs/help-unity-documentation.png)
+- 你还可以使用 **帮助 > UNITY API 引用** 菜单，而不是键绑定。
+![Visual Studio 中的 Unity API 引用菜单](../media/vs/help-unity-documentation.png)
 :::zone-end
 :::zone pivot="macos"
-- 在Visual Studio for Mac中，突出显示光标或将光标置于想要了解的 Unity API 上，然后按 **Cmd** + **'**
-- 还可使用"帮助 **">"Unity API 参考** "菜单，而不是键绑定。
-!["Unity API 参考"菜单Visual Studio for Mac](../media/vsm/help-unity-documentation.png)
+- 在 Visual Studio for Mac 中，突出显示要了解的 Unity API，或将光标置于其中，然后按 **Cmd** + **'**
+- 你还可以使用 **帮助 > UNITY API 引用** 菜单，而不是键绑定。
+![Visual Studio for Mac 中的 Unity API 引用菜单](../media/vsm/help-unity-documentation.png)
 :::zone-end
 
 ## <a name="intellisense-for-unity-api-messages"></a>针对 Unity API 消息的 Intellisense
@@ -86,7 +86,7 @@ Intellisense 代码完成简化了在 MonoBehaviour 脚本中实现 Unity API �
 
 :::zone pivot="windows"
 
-![在 Visual Studio 中插入来自 IntelliSense 的 Unity Visual Studio](../media/vs/vstu-intellisense2.png)
+![从 Visual Studio 中的 IntelliSense 插入 Unity 消息](../media/vs/vstu-intellisense2.png)
 
 :::zone-end
 
@@ -96,7 +96,7 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 使用 MonoBehavior 向导创建 MonoBehavior 方法的空定义：
 
-1. 在 Visual Studio 中，将光标放置在要插入方法的位置，然后按 Ctrl+Shift+M 启动 MonoBehavior 向导  。 在Visual Studio for Mac中，按 **Cmd** + **Shift** + **M**。
+1. 在 Visual Studio 中，将光标放置在要插入方法的位置，然后按 Ctrl+Shift+M 启动 MonoBehavior 向导  。 在 Visual Studio for Mac 中，按 **Cmd** + **Shift** + **M**。
 
 2. 在“创建脚本方法”窗口中，标记每个要添加的方法的名称旁的复选框。
 
@@ -110,22 +110,22 @@ MonoBehavior 向导可用于查看所有 Unity API 方法的列表，并快速�
 
 :::zone pivot="windows"
 
-![中 monobehavior 向导Visual Studio。](../media/vs/vstu-monobehavior-wizard.png)
+![Visual Studio 中的 monobehavior 向导对话框。](../media/vs/vstu-monobehavior-wizard.png)
 :::zone-end
 :::zone pivot="macos"
 
-![Visual Studio for Mac 中的 monobehavior 向导Visual Studio for Mac。](../media/vsm/vstu-monobehavior-wizard.png)
+![Visual Studio for Mac 中的 monobehavior 向导对话框。](../media/vsm/vstu-monobehavior-wizard.png)
 :::zone-end   
 
 ## <a name="unity-project-explorer"></a>Unity 项目资源管理器
 Unity 项目资源管理器会以与 Unity 编辑器相同的方式显示所有 Unity 项目文件和目录。 这是不同于使用普通 Visual Studio 解决方案资源管理器导航 Unity 脚本，后者将它们组织到项目和由 Visual Studio 生成的解决方案中。
 
 :::zone pivot="windows"
-- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷方式 **：Alt** + **Shift** + **E** 
- ![ 查看 Unity Project资源管理器窗口。](../media/vs/unity-project-explorer.png)
+- 在 Visual Studio 的主菜单上选择“视图”>“Unity 项目资源管理器”。 键盘快捷方式： **Alt** + **Shift** + **E** 
+ ![ 查看 Unity Project 资源管理器窗口。](../media/vs/unity-project-explorer.png)
 :::zone-end
 :::zone pivot="macos"
-- 在Visual Studio for Mac中，Solution Pad Unity 项目打开时，自动执行如下所示的行为。
+- 在 Visual Studio for Mac 中，在打开 Unity 项目时，Solution Pad 的行为会自动如下。
 :::zone-end
 ## <a name="unity-debugging"></a>Unity 调试
 
@@ -143,16 +143,16 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="macos"
 
 1. 通过单击“Play”按钮、键入“Command + Return”或按“F5”将 Visual Studio 连接到 Unity    。
-![单击"在Visual Studio for Mac](../media/vsm/using-vsmac-tools-unity-image5.png)
+![在 Visual Studio for Mac 中单击 "播放"](../media/vsm/using-vsmac-tools-unity-image5.png)
 
 :::zone-end
 
 2. 切换到 Unity 并单击“Play”按钮，在编辑器中运行游戏  。
 :::zone pivot="windows"
-![单击"在 Unity 中播放"Windows](../media/vs/vstu-unity-play-button.png)
+![在 Windows 上单击 "在 Unity 中播放"](../media/vs/vstu-unity-play-button.png)
 :::zone-end
 :::zone pivot="macos"
-![在 macOS 上单击"在 Unity 中播放"](../media/vsm/using-vsmac-tools-unity-image6.png)
+![在 macOS 上单击 "在 Unity 中播放"。](../media/vsm/using-vsmac-tools-unity-image6.png)
 :::zone-end
 
 3. 当游戏在连接到 Visual Studio 的情况下在 Unity 编辑器中运行时，遇到的任何断点都会中断游戏执行，并在 Visual Studio 中显示游戏遇到断点的代码行。
@@ -168,7 +168,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="macos"
 
 在 Visual Studio for Mac 中单击“停止”按钮，或按“Shift + Command + Return”。
-![单击"停止Visual Studio for Mac](../media/vsm/using-vsmac-tools-unity-image7.png)
+![单击 Visual Studio for Mac 中的 "停止"](../media/vsm/using-vsmac-tools-unity-image7.png)
 
 :::zone-end
 
@@ -182,7 +182,7 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
 1. 单击“附加到 Unity”按钮旁边的小型向下箭头。
 2. 从下拉菜单选择“附加到 Unity 并播放”。
-   ![附加和播放Visual Studio](../media/vs/vstu-attach-and-play.png)
+   ![在 Visual Studio 中附加和播放](../media/vs/vstu-attach-and-play.png)
 
 “播放”按钮标记将变为“附加到 Unity 并播放”。 单击此按钮或使用键盘快捷方式 F5，除了附加 Visual Studio 调试器，现在还会自动切换到 Unity 编辑器，并在编辑器中运行游戏。
 
@@ -190,15 +190,15 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 :::zone pivot="macos"
 通过选择“附加到 Unity 并播放”配置，可通过一个步骤直接从 Visual Studio for Mac 完成启动调试和播放 Unity 编辑器。
 
-![选择"附加到 Unity"和"在Visual Studio for Mac](../media/vsm/using-vsmac-tools-unity-image8.png)
+![选择 "附加到 Unity 并播放 Visual Studio for Mac](../media/vsm/using-vsmac-tools-unity-image8.png)
 :::zone-end
 
 > [!NOTE]
-> 如果已开始使用"附加到 **Unity** 和播放&quot;配置进行调试， **则&quot;停止** &quot;按钮也将停止 Unity 编辑器。
+> 如果开始使用 " **附加到 Unity&quot; 和 &quot;播放** &quot; 配置进行调试，&quot; **停止** &quot; 按钮也将停止 Unity 编辑器。
 
 ### <a name=&quot;debug-unity-player-builds&quot;></a>调试 Unity 播放器版本
 
-可以使用 Visual Studio 调试 Unity 播放器的开发Visual Studio。
+可以通过 Visual Studio 调试 Unity 播放器的开发版本。
 
 #### <a name=&quot;enable-script-debugging-in-a-unity-player&quot;></a>在 Unity 播放器中启用脚本调试
 
@@ -230,14 +230,14 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
    **Port** 此 Unity 实例将用于通信的 UDP 套接字的端口号。
 
 > [!IMPORTANT]
-> 由于Visual Studio Tools for Unity Unity 实例通过 UDP 网络套接字进行通信，因此防火墙可能需要规则来允许它。 如果需要，可能会看到提示，必须授权连接，以便 VSTU 和 Unity 可以通信。
+> 由于 Visual Studio Tools for Unity 和 Unity 实例正在通过 UDP 网络套接字进行通信，因此防火墙可能需要允许它的规则。 如果需要，你可能会看到一条提示，你将需要授权连接，以便 VSTU 和 Unity 可以进行通信。
 
 :::zone-end
 :::zone pivot="macos"
 
-- 在Visual Studio for Mac顶部菜单中，选择"运行 **">"附加到进程"。** 
-- 在" **附加到进程"** 对话框中，选择底部的"调试器"下拉菜单中的 **"Unity** 调试器"选项。
-- 从列表中选择 Unity 实例，然后单击"附加 **"** 按钮。
+- 在 Visual Studio for Mac 的顶部菜单中，选择 "**运行 > 附加到进程**"。 
+- 在 " **附加到进程** " 对话框中，选择底部 "调试器" 下拉菜单中的 " **Unity 调试器** " 选项。
+- 从列表中选择一个 Unity 实例，并单击 " **附加** " 按钮。
 
 :::zone-end
 
@@ -297,9 +297,9 @@ Visual Studio Tools for Unity 让你可以使用 Visual Studio 功能强大的�
 
 |命令|快捷键|快捷方式命令名|
 |-------------|--------------|---------------------------|
-|打开 Monobehavior 向导|**Cmd** +**Shift** +**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
-|访问 Unity 文档|**Cmd+'**|**Help.UnityAPIReference**|
+|打开 Monobehavior 向导|**Cmd** +**移位** +**M**|**EditorContextMenus.CodeWindow.ImplementMonoBehaviours**|
+|访问 Unity 文档|**Cmd + '**|**Help.UnityAPIReference**|
 
-如果不喜欢默认值，可以更改快捷键组合。 若要了解如何更改它，请参阅 [自定义 IDE](/mac/customizing-the-ide#key-bingings)。
+如果不喜欢默认值，可以更改快捷键组合。 有关如何更改的信息，请参阅 [自定义 IDE](/mac/customizing-the-ide#key-bingings)。
 
 :::zone-end

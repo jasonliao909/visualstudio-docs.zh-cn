@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a17ef182c3b480ce2fa2809c2258a7509d30b14b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122071053"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664473"
 ---
 # <a name="idebugproviderprogramnode2unmarshaldebuggeeinterface"></a>IDebugProviderProgramNode2::UnmarshalDebuggeeInterface
 跨进程边界获取指定接口。
@@ -43,7 +43,7 @@ int UnmarshalDebuggeeInterface(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `riid`\
 中要获取的接口的 GUID。
 
@@ -56,5 +56,5 @@ int UnmarshalDebuggeeInterface(
 ## <a name="remarks"></a>备注
  当调试引擎正在 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] 进程空间中运行并且正在调试的程序在其自己的进程空间中运行时，将使用此方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugProviderProgramNode2](../../../extensibility/debugger/reference/idebugproviderprogramnode2.md)

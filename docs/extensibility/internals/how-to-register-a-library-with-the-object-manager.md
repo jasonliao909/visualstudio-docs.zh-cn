@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c70a59cd6510b761ce1cf44bc3d6d66d5766efe5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137700"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664364"
 ---
 # <a name="how-to-register-a-library-with-the-object-manager"></a>如何：向对象管理器注册库
 使用符号（例如 **类视图**、 **对象浏览器**、 **调用浏览器** 和 **查找符号结果**），可以在项目或外部组件中查看符号。 这些符号包括命名空间、类、接口、方法和其他语言元素。 这些库跟踪这些符号，并将这些符号公开给 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 对象管理器，用数据填充工具。
@@ -167,7 +167,7 @@ ms.locfileid: "122137700"
 
     ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)
 - [支持符号浏览工具](../../extensibility/internals/supporting-symbol-browsing-tools.md)
 - [如何：将库提供的符号列表公开给对象管理器](../../extensibility/internals/how-to-expose-lists-of-symbols-provided-by-the-library-to-the-object-manager.md)

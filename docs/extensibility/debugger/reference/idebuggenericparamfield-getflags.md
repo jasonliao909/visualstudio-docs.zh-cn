@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f77a97c3c558055bb2f92f7c98112c0e8b483a17
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122127098"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664500"
 ---
 # <a name="idebuggenericparamfieldgetflags"></a>IDebugGenericParamField::GetFlags
 检索此泛型参数的标志。
@@ -40,7 +40,7 @@ int GetFlags(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwFlags`\
 [out]返回此泛型参数的标志。
 
@@ -71,5 +71,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

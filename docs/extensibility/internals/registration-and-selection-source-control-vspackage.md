@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 23a64b0432c5a77f764ae7ef83e1c0ed9d604c2f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664317"
 ---
 # <a name="registration-and-selection-source-control-vspackage"></a>注册和选择（源代码管理 VSPackage）
 必须注册源代码管理 VSPackage，才能将其公开给 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 如果注册了多个源代码管理 VSPackage，则用户可以选择要在适当的时间加载的 VSPackage。 有关更多详细信息，请参阅 [vspackage](../../extensibility/internals/vspackages.md) 和注册方式。
@@ -82,7 +82,7 @@ ms.locfileid: "122042109"
 
   与的早期版本不同 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] ，IDE 重新启动不再是切换源代码管理 vspackage 的唯一方法。 VSPackage 选择是自动的。 切换包需要 Windows 的用户特权 (不是管理员或超级用户) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionPersistence>
 - [功能](../../extensibility/internals/source-control-vspackage-features.md)
 - [创建源代码管理插件](../../extensibility/internals/creating-a-source-control-plug-in.md)

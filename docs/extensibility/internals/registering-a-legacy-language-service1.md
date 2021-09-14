@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6f943127371fc881b06390eb25b6833325b3a457
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132309"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664334"
 ---
 # <a name="registering-a-legacy-language-service-1"></a>注册旧版语言服务1
 在 (MPF) 的托管包框架中，语言服务由 VSPackage (请参阅 [vspackage](../../extensibility/internals/vspackages.md)) ，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 通过添加注册表项和条目向注册。 此注册过程是在安装过程中的一部分执行的，并且在运行时部分完成。

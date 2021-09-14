@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 06a2c2572c1c4109cee4bdda5f5483be58a52f0f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664815"
 ---
 # <a name="idebugsettingscallback2enumees"></a>IDebugSettingsCallback2::EnumEEs
 根据语言和供应商标识符枚举可用的表达式计算器。
@@ -45,7 +45,7 @@ public int EnumEEs(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celtBuffer`\
 中缓冲区中元素的数目 `pceltEEs` 。
 
@@ -61,5 +61,5 @@ public int EnumEEs(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

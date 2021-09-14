@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b917bc14728ee1f8dd37f28bbec42e395455ee35
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122126201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664442"
 ---
 # <a name="idebugstackframe2enumproperties"></a>IDebugStackFrame2::EnumProperties
 为与堆栈帧关联的属性（如局部变量）创建枚举器。
@@ -51,9 +51,9 @@ int EnumProperties (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFieldSpec`\
-[in]来自枚举[DEBUGPROP_INFO_FLAGS标志的组合](../../../extensibility/debugger/reference/debugprop-info-flags.md)，指定要填充枚举DEBUG_PROPERTY_INFO结构中的哪些字段。 [](../../../extensibility/debugger/reference/debug-property-info.md)
+[in]来自枚举[DEBUGPROP_INFO_FLAGS标志的组合](../../../extensibility/debugger/reference/debugprop-info-flags.md)，指定要填充枚举DEBUG_PROPERTY_INFO中的哪些字段。 [](../../../extensibility/debugger/reference/debug-property-info.md)
 
 `nRadix`\
 [in]用于设置任何数值信息格式的基数。
@@ -76,7 +76,7 @@ int EnumProperties (
 ## <a name="remarks"></a>备注
  因为此方法允许通过单个调用检索所有选定的属性，所以比按顺序调用 [GetDebugProperty](../../../extensibility/debugger/reference/idebugstackframe2-getdebugproperty.md) 和 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 方法更快。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [DEBUGPROP_INFO_FLAGS](../../../extensibility/debugger/reference/debugprop-info-flags.md)
 - [IEnumDebugPropertyInfo2](../../../extensibility/debugger/reference/ienumdebugpropertyinfo2.md)

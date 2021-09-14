@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4795221956ae7801bf99b9161e13357e2e2e4ea9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122138128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664498"
 ---
 # <a name="idebuggenericparamfieldgetindex"></a>IDebugGenericParamField::GetIndex
 检索此泛型参数的索引。
@@ -39,7 +39,7 @@ int GetIndex(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pIndex`\
 [out]此泛型参数的索引值。
 
@@ -70,5 +70,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

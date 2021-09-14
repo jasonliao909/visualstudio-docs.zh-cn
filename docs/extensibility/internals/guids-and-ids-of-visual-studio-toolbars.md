@@ -20,11 +20,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ec564b6b4da3f9ee6cd706d1c6ab3796c03494f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049995"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664376"
 ---
 # <a name="guids-and-ids-of-visual-studio-toolbars"></a>Visual Studio 工具栏的 guid 和 id
 本主题将枚举 Visual Studio 集成开发环境中包含的工具栏的 GUID 和 ID 值 (IDE) 和它们所包含的组。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -43,7 +43,7 @@ ms.locfileid: "122049995"
 
 |工具栏|ID|
 |-------------|--------|
-|标准|IDM_VS_TOOL_STANDARD|
+|Standard|IDM_VS_TOOL_STANDARD|
 |构建|IDM_VS_TOOL_BUILD|
 |文本编辑器|IDM_VS_TOOL_TEXTEDITOR|
 |调试|guidVSDebugGroup： IDM_DEBUG_TOOLBAR|
@@ -134,10 +134,10 @@ ms.locfileid: "122049995"
 |调用浏览器|IDM_VS_TOOL_CALLBROWSER1.。超过|IDG_VS_TOOLBAR_CALLBROWSER1_ACTIONS<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_TYPE<br /><br /> IDG_VS_TOOLBAR_CALLBROWSER1_CBSETTINGS|
 |断点|guidVSDebugGroup： IDM_BREAKPOINTS_WINDOW_TOOLBAR|IDG_BREAKPOINTS_WINDOW_NEW<br /><br /> IDG_BREAKPOINTS_WINDOW_DELETE<br /><br /> IDG_BREAKPOINTS_WINDOW_ALL<br /><br /> IDG_BREAKPOINTS_WINDOW_VIEW<br /><br /> IDG_BREAKPOINTS_WINDOW_EDIT<br /><br /> IDG_BREAKPOINTS_WINDOW_COLUMNS|
 |反汇编|guidVSDebugGroup： IDM_DISASM_WINDOW_TOOLBAR|IDG_DISASM_WINDOW_TOOLBAR|
-|内存1-4|guidVSDebugGroup：IDM_MEMORY_WINDOW_TOOLBAR1...4|IDG_MEMORY_EXPRESSION1。。4<br /><br /> IDG_MEMORY_COLUMNS1..4|
-|进程|guidVSDebugGroup：IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
+|内存1-4|guidVSDebugGroup： IDM_MEMORY_WINDOW_TOOLBAR1 .。。4|IDG_MEMORY_EXPRESSION1.。4<br /><br /> IDG_MEMORY_COLUMNS1.。4|
+|进程|guidVSDebugGroup： IDM_ATTACHED_PROCS_TOOLBAR|IDG_ATTACHED_PROCS_EXECCNTRL IDG_ATTACHED_PROCS_STEPPING<br /><br /> IDG_ATTACHED_PROCS_EXECCNTRL2<br /><br /> IDG_ATTACHED_PROCS_ATTACH<br /><br /> IDG_ATTACHED_PROCS_COLUMNS|
 
-## <a name="see-also"></a>请参阅
-- [将菜单控制器添加到工具栏](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
-- [向工具窗口添加工具栏](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
-- [菜单的 GUID Visual Studio的](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)
+## <a name="see-also"></a>另请参阅
+- [向工具栏添加菜单控制器](../../extensibility/adding-a-menu-controller-to-a-toolbar.md)
+- [将工具栏添加到工具窗口](../../extensibility/adding-a-toolbar-to-a-tool-window.md)
+- [Visual Studio 菜单的 guid 和 id](../../extensibility/internals/guids-and-ids-of-visual-studio-menus.md)

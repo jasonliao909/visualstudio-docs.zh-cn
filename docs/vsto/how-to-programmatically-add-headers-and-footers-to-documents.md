@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: b2ddbc24bcd567ce56326a4b96d9c97f1e50061c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106283"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664734"
 ---
 # <a name="how-to-programmatically-add-headers-and-footers-to-documents"></a>如何：以编程方式将页眉和页脚添加到文档
   可以通过使用 <xref:Microsoft.Office.Interop.Word.Section> 的 <xref:Microsoft.Office.Interop.Word.Section.Headers%2A> 属性和 <xref:Microsoft.Office.Interop.Word.Section.Footers%2A> 属性将文本添加到文档中的页眉和页脚。 文档各部分均包含三个页眉和页脚：
@@ -73,7 +73,7 @@ ms.locfileid: "122106283"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet116":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet116":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：以编程方式创建新文档](../vsto/how-to-programmatically-create-new-documents.md)
 - [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
 - [如何：以编程方式循环访问文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)

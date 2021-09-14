@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 5d4fe0b77c91b36440cbb760b3e192af453c4f58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025402"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664904"
 ---
 # <a name="terminateworkflow-activity-designer"></a>TerminateWorkflow 活动设计器
 
@@ -44,7 +44,7 @@ ms.locfileid: "122025402"
 |<xref:System.Activities.Statements.TerminateWorkflow.Exception%2A>|错误|终止工作流时要引发的异常。 此属性在属性网格中设置。|
 |<xref:System.Activities.Statements.TerminateWorkflow.Reason%2A>|错误|解释终止工作流的原因。 此属性在属性网格中设置。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [executionContext](../workflow-designer/runtime-activity-designers.md)
 - [保留](../workflow-designer/persist-activity-designer.md)

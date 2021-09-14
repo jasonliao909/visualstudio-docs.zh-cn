@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: da7e2e78013b76045c162c95f9bad9ee78b1790b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110496"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664801"
 ---
 # <a name="implementing-a-legacy-language-service-1"></a>实现旧版语言服务1
 可以在托管包框架中使用类 (MPF) 来实现支持各种功能（如语法突出显示、大括号匹配和 IntelliSense 完成）的旧版语言服务。

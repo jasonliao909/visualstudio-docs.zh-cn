@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: abd80c03c829e33985001cb17589369111b1aba2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137701"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664811"
 ---
 # <a name="ide-defined-commands-for-extending-project-systems"></a>用于扩展项目系统的 IDE 定义的命令
 要扩展项目系统时，可以使用 IDE 提供的命令和命令组 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
@@ -72,7 +72,7 @@ ms.locfileid: "122137701"
 |IDG_VS_CTXT_PROJECT_TRANSFER|用于剪切、复制和粘贴操作的命令。|
 |IDG_VS_CTXT_PROJECT_PROPERTIES|提供对 **Project 属性**"对话框访问权限的命令。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)
 - [创建可重复使用的按钮组](../../extensibility/creating-reusable-groups-of-buttons.md)

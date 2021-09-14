@@ -1,6 +1,6 @@
 ---
-title: '使用设计器和 API (ClickOnce按需) '
-description: 了解如何使用设计器将 ClickOnce应用程序中的某些程序集标记为可选，并下载它们（当公共语言运行时需要它们时）。
+title: '使用设计器 (ClickOnce API 按需下载程序集) '
+description: 了解如何使用设计器将 ClickOnce 应用程序中的某些程序集标记为可选的，并在公共语言运行时需要它们时下载这些程序集。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -21,11 +21,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 1b55cb3ce52864d8649008cd5f4f187c170c5813
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104958"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664649"
 ---
 # <a name="walkthrough-download-assemblies-on-demand-with-the-clickonce-deployment-api-using-the-designer"></a>演练：使用设计器通过 ClickOnce 部署 API 按需下载程序集
 默认情况下， [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 应用程序中包含的所有程序集都会在应用程序首次运行时进行下载。 但是，可能有一小部分用户使用部分应用程序。 在这种情况下，你希望仅当创建其类型之一时才下载程序集。 下面的演练演示如何将应用程序中的某些程序集标记为“可选”，以及如何在公共语言运行时需要它们时使用 <xref:System.Deployment.Application> 命名空间中的类下载它们。
@@ -82,11 +82,11 @@ ms.locfileid: "122104958"
 
 4. 展开“组”  下拉框，然后选择“新建” 。 输入名称 `ClickOnceLibrary` 作为新的组名称。
 
-5. 继续发布应用程序，如如何：使用发布ClickOnce[发布应用程序中所述](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。
+5. 继续发布应用程序，如[如何：使用发布向导发布 ClickOnce 应用程序](../deployment/how-to-publish-a-clickonce-application-using-the-publish-wizard.md)中所述。
 
 ### <a name="to-mark-assemblies-as-optional-in-your-clickonce-application-by-using-manifest-generation-and-editing-tool--graphical-client-mageuiexe"></a>使用清单生成和编辑工具在 ClickOnce 应用程序中将程序集标记为可选 — 图形客户端 (MageUI.exe)
 
-1. 根据 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 演练：手动部署应用程序 中的[说明创建ClickOnce清单](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)。
+1. [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)]按照[演练：手动部署 ClickOnce 应用程序](../deployment/walkthrough-manually-deploying-a-clickonce-application.md)中所述创建清单。
 
 2. 关闭 MageUI.exe 之前，选择包含部署应用程序清单的选项卡，然后在该选项卡中选择“文件”  选项卡。
 
@@ -100,6 +100,6 @@ ms.locfileid: "122104958"
 
 2. 在主窗体显示时按 <xref:System.Windows.Forms.Button>。 你应在消息框窗口中看到一个显示为“Hello, World!”的字符串
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:System.Deployment.Application.ApplicationDeployment>

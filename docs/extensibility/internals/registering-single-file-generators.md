@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ad56731f0e0432dea2eb583d23dcf4285801e2f6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664322"
 ---
 # <a name="registering-single-file-generators"></a>注册单个文件生成器
 若要在 中提供自定义工具，必须注册它，以便可以实例化它，并 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 关联到特定的项目类型。
@@ -51,7 +51,7 @@ ms.locfileid: "122062945"
 
    - GeneratesDesignTimeSource
 
-        必需。 指示此自定义工具生成的文件的类型是否可供可视化设计器使用。 对于不可用于可视化设计器的类型，此参数的值 (为零) 0;对于可用于可视化设计器的类型， (为) 1。
+        必需。 指示此自定义工具生成的文件的类型是否可供可视化设计器使用。 对于不可用于可视化设计器的类型，此参数的值需要为 (0) 0;对于可用于可视化设计器的类型， (为) 1。
 
    > [!NOTE]
    > 必须为希望自定义工具可用的每种语言单独注册自定义工具。
@@ -70,7 +70,7 @@ ms.locfileid: "122062945"
    "GeneratesDesignTimeSource"=dword:00000001
    ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSingleFileGenerator>
 - [实现单个文件生成器](../../extensibility/internals/implementing-single-file-generators.md)
 - [向可视化设计器公开类型](../../extensibility/internals/exposing-types-to-visual-designers.md)

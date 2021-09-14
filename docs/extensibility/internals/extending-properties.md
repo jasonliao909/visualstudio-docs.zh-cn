@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3f631e09287c6d28aa61ea7832d3f4d5241548e1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664377"
 ---
 # <a name="extend-properties"></a>扩展属性
 " [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] **属性** " 窗口是 COM 和 com + 组件的通用属性浏览器，支持所有 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 产品。 " **属性** " 窗口与 `ITypeInfo` 类型信息和 com + 元数据一起使用，以便在集成开发环境 (IDE) 的任何其他窗口中列出当前所选对象的设计时属性。

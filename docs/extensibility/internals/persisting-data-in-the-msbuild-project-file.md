@@ -14,16 +14,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a5147eed5026f010811905fa693baccb4352010e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664337"
 ---
 # <a name="persisting-data-in-the-msbuild-project-file"></a>保留 MSBuild 项目文件中的数据
 项目子类型可能需要将特定于子类型的数据保留到项目文件中，供以后使用。 项目子类型使用项目文件持久性来满足以下要求：
 
-1. 保留生成项目时所使用的数据。  (有关此Microsoft 生成引擎，请参阅[MSBuild](../../msbuild/msbuild.md).) 生成相关信息：
+1. 保留生成项目时所使用的数据。  (有关此Microsoft 生成引擎，[请参阅MSBuild](../../msbuild/msbuild.md).) 生成相关信息：
 
     1. 与配置无关的数据。 也就是说，存储在具有空白或MSBuild的元素中存储的数据。
 
@@ -40,7 +40,7 @@ ms.locfileid: "122063078"
     2. 依赖于配置的数据。
 
 ## <a name="persisting-build-related-information"></a>保留Build-Related信息
- 对生成项目有用的数据的持久性通过MSBuild。 系统MSBuild维护生成相关信息的主表。 Project子类型负责访问此数据以获取和设置属性值。 Project子类型还可通过添加要持久化的其他属性和删除属性来扩充与生成相关的数据表，以便它们不会持久化。
+ 对生成项目有用的数据的持久性通过MSBuild。 系统MSBuild维护生成相关信息的主表。 Project子类型负责访问此数据以获取和设置属性值。 Project子类型还可以通过添加要持久化的其他属性和删除属性来增强与生成相关的数据表，以便它们不会持久化。
 
  若要修改MSBuild，项目子类型负责通过 从MSBuild检索属性对象 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildPropertyStorage> 是在核心项目系统上实现的接口，并且聚合项目子类型通过运行 来查询它 `QueryInterface` 。
 
@@ -59,7 +59,7 @@ ms.locfileid: "122063078"
 
  以下几点概述了有关非生成相关信息持久性的主要概念。
 
-- 基本项目对主项目子类型 (（即最外层项目子类型) 聚合器对象）调用 以加载和保存与配置无关的数据，并调用项目子类型项目配置对象来加载或保存与配置相关的数据。
+- 基本项目对主项目子类型 (（即最外层项目子类型) 聚合器对象）调用 以加载和保存与配置无关的数据，并调用项目子类型项目配置对象以加载或保存与配置相关的数据。
 
 - 基础项目针对每个级别的项目子类型聚合多次调用 方法， <xref:Microsoft.VisualStudio.Shell.Interop.IPersistXMLFragment> 并传递每个级别的 GUID。
 
@@ -79,5 +79,5 @@ ms.locfileid: "122063078"
       </ProjectExtensions>
     ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [项目子类型](../../extensibility/internals/project-subtypes.md)

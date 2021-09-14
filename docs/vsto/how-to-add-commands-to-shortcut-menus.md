@@ -1,6 +1,6 @@
 ---
-title: 如何：向快捷菜单添加命令
-description: 了解如何使用外接程序将命令添加到 Office 应用程序中的VSTO菜单。
+title: 如何：向快捷菜单中添加命令
+description: 了解如何使用 VSTO 外接程序将命令添加到 Office 应用程序中的快捷菜单。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,13 +17,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 4694ca84475aa569b047e8de818613fe30d04c29
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664745"
 ---
-# <a name="how-to-add-commands-to-shortcut-menus"></a>如何：向快捷菜单添加命令
+# <a name="how-to-add-commands-to-shortcut-menus"></a>如何：向快捷菜单中添加命令
   本主题演示如何使用 VSTO 外接程序将命令添加到 Office 应用程序中的快捷菜单。
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
@@ -43,7 +43,7 @@ ms.locfileid: "122100252"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/thisaddin.cs" id="Snippet1":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/thisaddin.vb" id="Snippet1":::
 
-5. 在“解决方案资源管理器” 中，选择功能区 XML 文件。 默认情况下，功能区 XML 文件名为 *Ribbon1.xml。*
+5. 在“解决方案资源管理器” 中，选择功能区 XML 文件。 默认情况下，功能区 XML 文件命名为 *Ribbon1.xml*。
 
 6. 在菜单栏上，选择“视图” > “代码”。
 
@@ -51,7 +51,7 @@ ms.locfileid: "122100252"
 
 7. 在代码编辑器中添加 XML，该 XML 描述快捷菜单以及要添加到快捷菜单的控件。
 
-     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 2010 Office控件 ID 的完整列表，请参阅 Office [2010 帮助文件：Office Fluent 用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
+     下面的示例将向 Word 文档的快捷菜单添加按钮、菜单和库控件。 此快捷菜单的控件 ID 是 ContextMenuText。 有关 Office 2010 快捷方式控件 ID 的完整列表，请参阅[Office 2010 帮助文件： Office 熟知的用户界面控件标识符](https://www.microsoft.com/download/details.aspx?id=6627)。
 
     ```xml
     <?xml version="1.0" encoding="UTF-8"?>
@@ -75,15 +75,15 @@ ms.locfileid: "122100252"
 
 8. 在“解决方案资源管理器” 中，选择“MyRibbon.cs”  或“MyRibbon.vb” 。
 
-9. 为要处理的每个 `Ribbon1` 控件将回调方法添加到 类。
+9. 向 `Ribbon1` 要处理的每个控件的类添加一个回叫方法。
 
      下面的回叫方法将处理“我的按钮”  按钮。 此代码会在光标当前位置向活动文档添加一个字符串。
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddin_menus.vb/ribbon1.vb" id="Snippet2":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_wordaddin_menus.cs/ribbon1.cs" id="Snippet2":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [OfficeUI 自定义](../vsto/office-ui-customization.md)
-- [演练：为书签创建快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
-- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)
-- [自定义 2010 Office中的上下文菜单](/previous-versions/office/developer/office-2010/ee691832(v=office.14))
+- [演练：创建书签的快捷菜单](../vsto/walkthrough-creating-shortcut-menus-for-bookmarks.md)
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [在 Office 2010 中自定义上下文菜单](/previous-versions/office/developer/office-2010/ee691832(v=office.14))

@@ -13,11 +13,11 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: e359ad5cd4d7272661fbddb6bce263d7a7c6c202
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045640"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664892"
 ---
 # <a name="display-data-in-blend-for-visual-studio"></a>在 Blend for Visual Studio 中显示数据
 
@@ -48,6 +48,6 @@ ms.locfileid: "122045640"
 
 **观看简短视频：** ![播放图标将 ](../designers/media/bldadminconsoleinitialconfigicon.PNG) [一些数据绑定与 Blend 组合在一起](https://www.youtube.com/watch?v=LSwPB6CAvjg)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)

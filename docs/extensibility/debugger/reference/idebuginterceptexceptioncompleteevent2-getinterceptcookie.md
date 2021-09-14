@@ -1,5 +1,5 @@
 ---
-description: 当已截获异常的处理完成时调用。
+description: 当处理截获的异常已完成时调用。
 title: IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -19,14 +19,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9892137ae9855097729fcd8482c2b1b3460152a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118718"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664492"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2getinterceptcookie"></a>IDebugInterceptExceptionCompleteEvent2::GetInterceptCookie
-当已截获异常的处理完成时调用。
+当处理截获的异常已完成时调用。
 
 ## <a name="syntax"></a>语法
 
@@ -42,16 +42,16 @@ int GetInterceptCookie(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pqwCookie`\
-[out]与被截获的异常关联的唯一值。
+弄与被截获的异常关联的唯一值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 在 [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md) 方法完成已截获异常的处理后，它会发送 [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md) 事件。 处理程序可以使用 方法检索与异常关联的唯一值， (传递给方法的 `GetInterceptCookie` `InterceptCurrentException` 相同) 。
+ [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)方法完成截获的异常处理后，它将发送[IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)事件。 处理程序可以使用 `GetInterceptCookie` 方法检索与异常相关联的唯一值 (传递给方法) 相同的值 `InterceptCurrentException` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)
 - [IDebugInterceptExceptionCompleteEvent2](../../../extensibility/debugger/reference/idebuginterceptexceptioncompleteevent2.md)

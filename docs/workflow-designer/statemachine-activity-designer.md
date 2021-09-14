@@ -15,11 +15,11 @@ ms.workload:
 - multiple
 author: TerryGLee
 ms.openlocfilehash: b6982a3875bc09e95b6f33dd30010adf029b3a91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098978"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664909"
 ---
 # <a name="statemachine-activity-designer"></a>StateMachine 活动设计器
 
@@ -37,7 +37,7 @@ ms.locfileid: "122098978"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.StateMachine> 活动设计器在标头中的友好名称。 默认值为 **StateMachine**。 可以在属性网格或直接在活动设计器的标头中编辑该值。 <xref:System.Activities.Activity.DisplayName%2A> 用于痕迹导航，后者显示在工作流设计器顶部。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [流程图](../workflow-designer/flowchart-activity-designer.md)
 - [控制流](../workflow-designer/control-flow-activity-designers.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 82780c4e64ed1425ef6184967341800309543d3d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122071126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664475"
 ---
 # <a name="idebugpropertyfieldgetpropertysetter"></a>IDebugPropertyField::GetPropertySetter
 获取设置属性的方法。
@@ -41,7 +41,7 @@ int GetPropertySetter(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppField`\
 弄返回一个 [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md) 对象，该对象表示设置属性的方法。
 
@@ -51,7 +51,7 @@ int GetPropertySetter(
 ## <a name="remarks"></a>备注
  若要获取获取属性的方法，请调用 [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md) 方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugPropertyField](../../../extensibility/debugger/reference/idebugpropertyfield.md)
 - [IDebugMethodField](../../../extensibility/debugger/reference/idebugmethodfield.md)
 - [GetPropertyGetter](../../../extensibility/debugger/reference/idebugpropertyfield-getpropertygetter.md)

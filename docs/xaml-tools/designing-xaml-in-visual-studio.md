@@ -10,12 +10,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
-ms.openlocfilehash: 3367574ab52f02d3c6d4c8316eb6f616e5ca80540e5ed8874b8aad60280cd7a2
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 246bcf06d72cfda39a7498075b4eb4e0b3198cf5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121351577"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664893"
 ---
 # <a name="design-xaml-in-visual-studio-and-blend-for-visual-studio"></a>在 Visual Studio 和 Blend for Visual Studio 中设计 XAML
 
@@ -43,7 +43,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 - **IntelliSense：** 这两个 ES 都支持 IntelliSense 功能，例如语句完成。
 
-- **调试：** 可以在 Visual Studio [](inspect-xaml-properties-while-debugging.md)和 Blend for Visual Studio 中 [](../xaml-tools/debug-xaml-in-blend.md)调试 ，包括在代码中设置断点以 [调试正在运行的](../xaml-tools/xaml-hot-reload.md)应用，以及使用 热重载 在应用运行时更改 XAML 代码。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。
+- **调试：** 可以在 Visual Studio [](inspect-xaml-properties-while-debugging.md)和 Blend for Visual Studio [](../xaml-tools/debug-xaml-in-blend.md)中调试 ，包括在代码中设置断点以 [调试正在运行的](../xaml-tools/xaml-hot-reload.md)应用，以及使用 热重载 在应用运行时更改 XAML 代码。 为了保持与 Visual Studio 一致的调试体验，Blend for Visual Studio 包含 Visual Studio 的大多数调试窗口和工具栏。
 
 - **文件重载：** 可以在 Visual Studio 或 Blend for Visual Studio 中编辑 XAML 文件。 在 IDE 之间切换时，将自动重载已保存的编辑文件。 可以通过导航到任一 IDE中的"工具  >  **""选项**  >  **环境**  >  **文档"来控制** 重载行为。
 
@@ -63,7 +63,7 @@ Visual Studio 和 Blend for Visual Studio 两者都是可视化工具，用于�
 
 有关高级 XAML 设计的详细信息，请参阅[使用 Blend for Visual Studio 创建 UI](../xaml-tools/creating-a-ui-by-using-blend-for-visual-studio.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [XAML概述](xaml-overview.md)
 - [Blend for Visual Studio 概述](creating-a-ui-by-using-blend-for-visual-studio.md)

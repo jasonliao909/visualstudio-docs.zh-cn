@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e3c581f1f2c5fbd1c80860241ef4d33608489143
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133388"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664638"
 ---
 # <a name="add-search-to-a-tool-window"></a>向工具窗口添加搜索
 创建或更新扩展中的工具窗口时，可以添加在 Visual Studio 中的其他位置显示的相同搜索功能。 此功能包括以下功能：

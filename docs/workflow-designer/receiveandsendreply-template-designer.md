@@ -15,11 +15,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: ba89478dcbc69104c89788708afe32e338ef7071
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135294"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664673"
 ---
 # <a name="receiveandsendreply-template-designer"></a>ReceiveAndSendReply 模板设计器
 
@@ -52,9 +52,9 @@ ms.locfileid: "122135294"
 | <xref:System.ServiceModel.Activities.SendReply.Content%2A> | 错误 | 指定要接收的消息或参数内容。 它可为 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 活动或 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 活动。 通过单击属性网格中"内容"字段旁边的省略号按钮，或单击"接收活动设计器"图面上"内容"标签旁边的"定义"按钮来编辑此属性。  两者都显示 **"内容定义"** 对话框。 有关如何使用此框的详细信息，请参阅内容 [定义对话框](../workflow-designer/content-definition-dialog-box.md) 主题。 |
 | <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> | 错误 | 指定在工作流中对配置此 <xref:System.ServiceModel.Activities.CorrelationInitializer> 活动的多个 <xref:System.ServiceModel.Activities.CorrelationHandle> 对象进行初始化的 <xref:System.ServiceModel.Activities.Receive> 对象的集合。 单击属性网格中属性旁边的省略号 <xref:System.ServiceModel.Activities.SendReply.CorrelationInitializers%2A> 按钮，打开" **添加相关初始值设置项** "对话框。 有关使用此框的详细信息，请参阅添加 [CorrelationInitializers 对话框](../workflow-designer/add-correlationinitializers-dialog-box.md) 主题。 |
 | <xref:System.ServiceModel.Activities.SendReply.Action%2A> | 错误 | 指定消息的操作标头。 如果未显式设置，则其值默认为：<br /><br /> `https://tempuri.org/{service contract namespace}/{service contract name}/{operation name}` |
-| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | 错误 | 指定在发送回复消息前是否应保留工作流实例。 默认值是 **false** 秒。 |
+| <xref:System.ServiceModel.Activities.SendReply.PersistBeforeSend%2A> | 错误 | 指定在发送回复消息前是否应保留工作流实例。 默认值是 **false**。 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [CorrelationScope](../workflow-designer/correlationscope-activity-designer.md)
 - [InitializeCorrelation](../workflow-designer/initializecorrelation-activity-designer.md)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 92df2305d35180be4fe3df594e809c8e599fad42
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102657"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664395"
 ---
 # <a name="comment-code-in-a-legacy-language-service"></a>旧版语言服务中的注释代码
 编程语言通常提供一种批注或注释代码的方法。 注释是提供有关代码的其他信息但在编译或解释过程中被忽略的文本部分。
@@ -64,6 +64,6 @@ namespace MyLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)

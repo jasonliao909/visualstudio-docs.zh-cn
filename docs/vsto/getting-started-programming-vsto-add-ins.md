@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: e36c290ed4411ffb4bc0a5dd994a8f14a9fc3ab1
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664761"
 ---
 # <a name="get-started-programming-vsto-add-ins"></a>VSTO 外接程序编程入门
 > [!IMPORTANT]
@@ -92,7 +92,7 @@ ms.locfileid: "122980938"
 
   有关演练 Office 项目中的一些常见任务的主题列表，请参阅[Office 编程中的常见任务](../vsto/common-tasks-in-office-programming.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [&#40;Visual Studio 中的 Office 开发入门&#41;](../vsto/getting-started-office-development-in-visual-studio.md)
 - [在 Office 解决方案中编写代码](../vsto/writing-code-in-office-solutions.md)

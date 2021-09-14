@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2b6822b629f1a66aa80de72b95fdbb1ba8472353
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118692"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664510"
 ---
 # <a name="idebuggenericparamfieldgetconstraints"></a>IDebugGenericParamField::GetConstraints
 检索与此泛型参数关联的约束。
@@ -44,7 +44,7 @@ int GetConstraints(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `cConstraints`\
 中约束的数目。
 
@@ -153,5 +153,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugGenericParamField](../../../extensibility/debugger/reference/idebuggenericparamfield.md)

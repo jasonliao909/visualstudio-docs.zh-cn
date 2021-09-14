@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1aaa319f0c6cd545e1f319ab7c8c510f694529d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122160382"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664856"
 ---
 # <a name="notify-the-port"></a>通知端口
 启动程序后，必须通知端口，如下所示：
@@ -36,7 +36,7 @@ ms.locfileid: "122160382"
 > [!NOTE]
 > 这不应与调试引擎稍后在 DE (`IDebugProgram2` 创建的接口) 。
 
- 端口通过 COM 接口将 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 程序创建事件发送回 (SDM) 会话调试 `IConnectionPoint` 管理器。
+ 端口通过 COM 接口将 [IDebugProgramCreateEvent2](../../extensibility/debugger/reference/idebugprogramcreateevent2.md) 程序创建事件发送回会话调试管理器 (SDM `IConnectionPoint`) 。
 
 > [!NOTE]
 > 这不应与 接口混淆 `IDebugProgramCreateEvent2` ，该接口稍后由 DE 发送。
@@ -47,7 +47,7 @@ ms.locfileid: "122160382"
 
  知道 DE 的标识后，SDM 即可将其附加到程序。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [启动程序](../../extensibility/debugger/launching-a-program.md)
 - [启动后附加](../../extensibility/debugger/attaching-after-a-launch.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

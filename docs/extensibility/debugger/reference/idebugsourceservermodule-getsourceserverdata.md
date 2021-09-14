@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a897ee524cebb836b3780289600f0c5b665f71a8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118419"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664451"
 ---
 # <a name="idebugsourceservermodulegetsourceserverdata"></a>IDebugSourceServerModule::GetSourceServerData
 检索源服务器信息的数组。
@@ -41,7 +41,7 @@ public int GetSourceServerData(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pDataByteCount`\
 弄数据数组中的字节数。
 
@@ -76,5 +76,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugSourceServerModule](../../../extensibility/debugger/reference/idebugsourceservermodule.md)

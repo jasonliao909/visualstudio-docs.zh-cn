@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 36adf58598248bb6e59045e80b185dd2684b64b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664611"
 ---
 # <a name="context_info_fields"></a>CONTEXT_INFO_FIELDS
 指定要检索有关内存上下文的信息。

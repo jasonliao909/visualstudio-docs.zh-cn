@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: e871e38cb9f675e1a76edae0410cbd5ac45aee10
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092028"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664676"
 ---
 # <a name="pick-activity-designer"></a>Pick 活动设计器
 
@@ -42,7 +42,7 @@ ms.locfileid: "122092028"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|指定 <xref:System.Activities.Statements.Pick> 活动设计器在标头中的友好名称。 默认值为 Pick。 可以在属性网格或直接在活动设计器的标头中编辑该值。<br /><br /> 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [控制流](../workflow-designer/control-flow-activity-designers.md)
 - [Pick 活动](/dotnet/framework/windows-workflow-foundation/pick-activity)

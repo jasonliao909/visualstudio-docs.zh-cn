@@ -2,7 +2,7 @@
 title: 更改日志（Visual Studio Tools for Unity、Windows）| Microsoft Docs
 description: 查看 Visual Studio Tools for Unity、Windows 的更改日志。 查看版本 1.0.0.0 到 4.7.0.0 及更高版本的版本变化。
 ms.custom: ''
-ms.date: 6/2/2021
+ms.date: 9/7/2021
 ms.technology: vs-unity-tools
 ms.prod: visual-studio-dev16
 ms.topic: conceptual
@@ -12,16 +12,88 @@ ms.author: johmil
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 0f8fef8ff6d96f5184e3ae90de8d8df3354968facaea6e637d21c6df210551b4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 522d016e218b19d63cacd746128150b23734aa62
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121423550"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664880"
 ---
 # <a name="change-log-visual-studio-tools-for-unity-windows"></a>更改日志（Visual Studio Tools for Unity、Windows）
 
 Visual Studio Tools for Unity 更改日志。
+
+## <a name="41140"></a>4.11.4.0
+2021年9月14日发布
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 自动禁用大型 Unity 项目的资产索引。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了支持的表达式检测和 [`UNT0024`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0024.md) 诊断。
+
+## <a name="41130"></a>4.11.3.0
+2021年8月发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 减少处理资产时的内存消耗。
+
+  - 用 [`USP0008`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0008.md) 、 [`USP0009`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0009.md) [`USP0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0010.md) 和 suppressors 优化分配 [`USP0011`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0011.md) 。
+
+  - 使用 [`UNT0002`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0002.md) 、 [`UNT0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0003.md) 、 [`UNT0012`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0012.md) 、诊断优化符号用法 [`UNT0014`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0014.md) 。
+
+## <a name="41120"></a>4.11.2.0
+2021年7月13日发行
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 缩短了一段时间，只是运行 suppressors 即可处理 CS 编译器警告。 所有其他分析器都将通过解决方案分析来运行。
+
+## <a name="41110"></a>4.11.1.0
+2021年6月15日发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 在分析 yaml 资产时减少内存消耗。
+
+## <a name="41100"></a>4.11.0.0
+发布时间可能为25，2021
+
+### <a name="new-features"></a>新增功能
+
+- **集成：**
+
+  - 添加了 [`UNT0025`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0025.md) 诊断。 首选 GetKey 重载与 KeyCode 参数。
+
+  - 添加了更多无效的用法 (静态和 readonly 字段) 到 [`UNT0013`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0013.md) 诊断。
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 修复了显式方法实现和诊断的问题 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 。
+
+## <a name="41030"></a>4.10.3.0
+2021年6月8日发布
+
+### <a name="bug-fixes"></a>Bug 修复
+
+- **集成：**
+
+  - 向后移植在分析 yaml 资产时减少内存消耗。
 
 ## <a name="41020"></a>4.10.2.0
 发布时间可能为25，2021
@@ -116,7 +188,7 @@ Visual Studio Tools for Unity 更改日志。
   - 修复了对抛出异常的过时属性的筛选。
 
 ## <a name="4900"></a>4.9.0.0
-2021年1月20日发布
+发布时间：2021 年 1 月 20 日
 
 ### <a name="new-features"></a>新增功能
 
@@ -124,7 +196,7 @@ Visual Studio Tools for Unity 更改日志。
 
   - 新增了对 `raytrace shaders`、`UXML` 和 `USS` 文件的支持。
 
-  - 添加了 `.vsconfig` 生成支持。 Visual Studio 现在应检测缺少哪些组件，并在使用 Unity 项目时提示您安装这些组件。
+  - 添加了 `.vsconfig` 生成支持。 Visual Studio检测缺少的组件，并提示在使用 Unity 项目时安装它们。
 
   - 更新了 Unity 消息 API（用于所有用作协同例程的方法）。
 
@@ -134,58 +206,58 @@ Visual Studio Tools for Unity 更改日志。
 
 - **集成：**
 
-  - 修复了使用实例选择对话框时的进程刷新。
+  - 修复了使用实例选择对话框时的进程刷新问题。
 
   - 修复了对协同例程和 `AssetPostprocessor.OnAssignMaterialModel` 发出错误警告的 [`UNT0006`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0006.md) 诊断。
 
 ## <a name="4820"></a>4.8.2.0
-2020年11月10日发行
+发布时间：2020 年 11 月 10 日
 
 ### <a name="new-features"></a>新增功能
 
 - **集成：**
 
-  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断，适用于从继承的所有内容 `Component` ，而不仅仅是 `MonoBehaviour` 。
+  - 改进了 [`UNT0010`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0010.md) 诊断以应用于从 继承的所有内容 `Component` ，而不只是 `MonoBehaviour` 。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 固定 CodeLens 消息失效。
+  - 修复了 CodeLens 消息失效问题。
 
 ## <a name="4810"></a>4.8.1.0
-2020年10月13日发布
+发布时间：2020 年 10 月 13 日
 
 ### <a name="new-features"></a>新增功能
 
 - **评估版：**
 
-  - 添加了对具有调用的隐式转换的支持。 之前，计算器强制执行严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
+  - 添加了对使用调用进行隐式转换的支持。 以前，评估程序强制实施严格的类型检查，从而导致 `Failed to find a match for method([parameters...])` 警告消息。
 
 - **集成：**
 
-  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应使用 `System.Reflection` 性能关键消息（如 `Update` 、、或）中的功能 `FixedUpdate` `LateUpdate` `OnGUI` 。
+  - 添加了 [`UNT0018`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/UNT0018.md) 诊断。 不应在性能 `System.Reflection` 关键型消息（如 `Update` `FixedUpdate` 、、 或 ） `LateUpdate` 中使用功能 `OnGUI` 。
 
-  - 改进 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 了 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) suppressors，支持所有 `AssetPostprocessor` 静态方法。
+  - 改进了 [`USP0003`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0003.md) 和 [`USP0005`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0005.md) 抑制器，支持所有 `AssetPostprocessor` 静态方法。
 
-  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可以为 null 的引用类型和不可为 null 的引用类型。 不支持从继承的类型的初始化检测 `UnityEngine.Object` ，并将导致错误。
+  - 为 `CS8618` 添加了 [`USP0016`](https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/main/doc/USP0016.md) 抑制器。 `C# 8.0` 引入了可为空引用类型和不可为 null 的引用类型。 不支持从 继承的类型的初始化 `UnityEngine.Object` 检测，将导致错误。
 
-  - 现在为 Unity 2019. x 和 2020. x 使用相同的播放器和 asmdef 项目生成机制。
+  - 现在，对 Unity 2019.x 和 2020.x+ 使用相同的播放器和 asmdef 项目生成机制。
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了注释中消息的意外完成。
+  - 修复了注释中消息意外完成的问题。
 
 ## <a name="4800"></a>4.8.0.0 
-2020年9月14日发布
+发布时间：2020 年 9 月 14 日
 
 ### <a name="bug-fixes"></a>Bug 修复
 
 - **集成：**
 
-  - 修复了 Unity 2019. x 的播放机项目生成。
+  - 修复了 Unity 2019.x 的播放器项目生成问题。
 
 ## <a name="4710"></a>4.7.1.0
 发布日期：2020 年 8 月 5 日

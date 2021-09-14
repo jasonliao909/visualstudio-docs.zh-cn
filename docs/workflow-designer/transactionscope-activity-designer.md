@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: d3d84514690c4f2a00caea3b88946ffbd4da7cbc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114506"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664902"
 ---
 # <a name="transactionscope-activity-designer"></a>TransactionScope 活动设计器
 
@@ -40,11 +40,11 @@ ms.locfileid: "122114506"
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.TransactionScope> 活动的可选友好名称。 默认值为 TransactionScope。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 值不是绝对必需的，但最好使用该属性值。|
 |<xref:System.Activities.Statements.TransactionScope.Body%2A>|正确|指定要在单个事务中执行的活动。 若要添加活动，请从"工具箱"将活动拖放到 TransactionScope 活动设计器上的"正文"框中，提示 <xref:System.Activities.Statements.TransactionScope.Body%2A> 文本为"此处放置活动"。   |
-|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|True|指定此 <xref:System.Transactions.IsolationLevel> 的 <xref:System.Activities.Statements.TransactionScope>。|
+|<xref:System.Activities.Statements.TransactionScope.IsolationLevel%2A>|正确|指定此 <xref:System.Transactions.IsolationLevel> 的 <xref:System.Activities.Statements.TransactionScope>。|
 |<xref:System.Activities.Statements.TransactionScope.Timeout%2A>|错误|指定必须在其间完成事务的时间间隔（格式为 00:00:00，表示小时:分钟:秒）。 默认值为 1 分钟 (00:01:00)。|
 |<xref:System.Activities.Statements.TransactionScope.AbortInstanceOnTransactionFailure*>|正确|指定指示在事务中止的情况下是否应中止工作流的值。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [事务](../workflow-designer/transaction-activity-designers.md)
 - [TerminateWorkflow](../workflow-designer/terminateworkflow-activity-designer.md)

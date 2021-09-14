@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93351dc79b79818693e8f7273895b1ccc4a85c68
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122126279"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664454"
 ---
 # <a name="idebugsettingscallback2getmetricguid"></a>IDebugSettingsCallback2::GetMetricGuid
 根据给定的名称检索指标的唯一标识符。
@@ -45,7 +45,7 @@ private int GetMetricGuid(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszType`\
 中度量值的类型。
 
@@ -61,5 +61,5 @@ private int GetMetricGuid(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugSettingsCallback2](../../../extensibility/debugger/reference/idebugsettingscallback2.md)

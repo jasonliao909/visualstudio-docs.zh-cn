@@ -23,11 +23,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 88c4e0be4ccab3d83c7dcd9ebe024493d2beab52
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046823"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664742"
 ---
 # <a name="how-to-export-a-ribbon-from-the-ribbon-designer-to-ribbon-xml"></a>如何：将功能区从功能区设计器导出到功能区 XML
   **功能区 (可视化设计器)** 项不支持功能区自定义项的所有可能的类型。 若要以高级方式自定义功能区，可以将功能区从设计器导出到功能区 XML，并直接编辑 XML。
@@ -68,7 +68,7 @@ ms.locfileid: "122046823"
 
      有关编写回调方法和使用 RibbonX 编程模型的信息，请参阅 [功能区 XML](../vsto/ribbon-xml.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [功能区概述](../vsto/ribbon-overview.md)
 - [功能区设计器](../vsto/ribbon-designer.md)
 - [Ribbon XML](../vsto/ribbon-xml.md)

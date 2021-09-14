@@ -17,11 +17,11 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 794ff65d58e03b22584f0a4d2a291371b1e08c81
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120551"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664637"
 ---
 # <a name="add-user-control-to-the-start-page"></a>将用户控件添加到起始页
 
@@ -35,15 +35,15 @@ ms.locfileid: "122120551"
 
 1. 使用在创建自定义起始页 中创建的 [创建起始页](../extensibility/creating-a-custom-start-page.md)。
 
-2. 在 **解决方案资源管理器** 中，右键单击解决方案，单击 **"添加**"，然后单击"新建 **Project"。**
+2. 在 **解决方案资源管理器** 中，右键单击解决方案，单击 **"添加**"，然后单击"**新建Project"。**
 
-3. 在 "新建Project对话框的左窗格中，展开 Visual Basic 或 Visual  **C#** 节点，然后单击 **"Windows"。** 在中间窗格中，选择 **"WPF 用户控件库"。**
+3. 在 "新建Project对话框的左窗格中，展开 Visual Basic 或 Visual  **C#** 节点，然后单击 "Windows"。  在中间窗格中，选择 **"WPF 用户控件库"。**
 
 4. 将控件命名， `WebUserControl` 然后单击"确定 **"。**
 
 ## <a name="implement-the-user-control"></a>实现用户控件
 
-若要实现 WPF 用户控件，请用 XAML (UI) 用户界面，然后用 C# 或其他 .NET 语言编写代码隐藏事件。
+若要实现 WPF 用户控件，请 (XAML) UI 控件的用户界面，然后以 C# 或其他 .NET 语言编写代码隐藏事件。
 
 ### <a name="to-write-the-xaml-for-the-user-control"></a>为用户控件编写 XAML
 
@@ -142,7 +142,7 @@ ms.locfileid: "122120551"
 
 若要使此控件可用于起始页项目，在起始页项目文件中，添加对新控件库的引用。 然后，可以将 控件添加到起始页 XAML 标记。
 
-1. 在 **解决方案资源管理器"** 起始页"项目中，右键单击"引用 **"，然后单击**"**添加引用"。**
+1. 在 **解决方案资源管理器** 中，在"起始页"项目中，右键单击"引用 **"，然后单击**"**添加引用"。**
 
 2. 在"**项目"选项卡上**，选择 **"WebUserControl"，** 然后单击"确定 **"。**
 
@@ -192,7 +192,7 @@ ms.locfileid: "122120551"
 
     应显示自定义起始页。 如果要更改任何文件，则必须关闭实验实例，进行更改，复制并粘贴更改的文件，然后重新打开实验实例以查看更改。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [WPF 容器控件](/previous-versions/bb675291(v=vs.110))
 - [演练：将自定义 XAML 添加到起始页](../extensibility/walkthrough-adding-custom-xaml-to-the-start-page.md)

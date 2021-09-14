@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: aeef102362d5471aa3be34e154cd73d8341ff834
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155884"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664721"
 ---
 # <a name="how-to-programmatically-move-worksheets-within-workbooks"></a>如何：以编程方式在工作簿中移动工作表
   可以通过编程方式更改工作簿中工作表相对于其他工作表的位置。 如果不为移动的工作表指定位置，Excel 将创建新的工作簿来容纳它。
@@ -43,7 +43,7 @@ ms.locfileid: "122155884"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet16":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet16":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [如何：以编程方式隐藏工作表](../vsto/how-to-programmatically-hide-worksheets.md)
 - [如何：以编程方式从工作簿中删除工作表](../vsto/how-to-programmatically-delete-worksheets-from-workbooks.md)
