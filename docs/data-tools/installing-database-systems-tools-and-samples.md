@@ -16,11 +16,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 6ccbf0866022e6e602938d2a5f86f8374eb73c89
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601128"
 ---
 # <a name="compatible-database-systems-for-visual-studio"></a>适用于 Visual Studio 的兼容数据库系统
 

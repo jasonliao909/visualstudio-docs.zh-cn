@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: f010aa2ba214004422048513cea92adf67d62c69
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144621"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601033"
 ---
 # <a name="sccbackgroundget-function"></a>SccBackgroundGet 函数
 此函数从源代码管理中检索每个指定的文件，无需用户交互。
@@ -36,7 +36,7 @@ SCCRTN SccBackgroundGet(
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pContext
 
 [in]源代码管理插件上下文指针。
@@ -74,6 +74,6 @@ SCCRTN SccBackgroundGet(
 
  参数的使用与 `dwFlags` [SccGet 相同](../extensibility/sccget-function.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [SccGet](../extensibility/sccget-function.md)

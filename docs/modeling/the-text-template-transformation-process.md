@@ -13,14 +13,14 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 37bac2bc17e75dfb9c51bd5611706346c5cca154
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150542"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663860"
 ---
 # <a name="the-text-template-transformation-process"></a>文本模板转换过程
-文本模板转换过程采用文本模板文件作为输入，并生成新的文本文件作为输出。 例如，可以使用文本模板生成Visual Basic C# 代码，也可以生成 HTML 报表。
+文本模板转换过程采用文本模板文件作为输入，并生成新的文本文件作为输出。 例如，可以使用文本模板生成Visual Basic或 C# 代码，也可以生成 HTML 报表。
 
  三个组件参与此过程：引擎、主机和指令处理器。 引擎控制进程;它与主机和指令处理器交互以生成输出文件。 主机提供与环境的任何交互，例如定位文件和程序集。 指令处理器添加功能，例如从 XML 文件或数据库读取数据。
 
@@ -28,9 +28,9 @@ ms.locfileid: "122150542"
 
 ## <a name="components"></a>组件
 
-|组件|说明|可 (是/否) |
+|组件|说明|可自定义 (是/否) |
 |-|-|-|
-|引擎|引擎组件控制文本模板转换过程|不是。|
+|引擎|引擎组件控制文本模板转换过程|否。|
 |主机|主机是引擎和用户环境之间的接口。 Visual Studio是文本转换过程的宿主。|是的。 可以编写自定义主机。|
 |指令处理器|指令处理器是处理文本模板中的指令的类。 可以使用 指令从输入源向文本模板提供数据。|是的。 可以编写自定义指令处理器|
 

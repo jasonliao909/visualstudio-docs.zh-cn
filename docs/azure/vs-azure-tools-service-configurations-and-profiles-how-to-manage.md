@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 8/11/2017
 ms.author: ghogen
 ms.openlocfilehash: d57272582a75ddc183250f0f6978e529263e901c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031856"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602119"
 ---
 # <a name="how-to-manage-service-configurations-and-profiles"></a>如何管理服务配置和配置文件
 ## <a name="overview"></a>概述
@@ -29,7 +29,7 @@ ms.locfileid: "122031856"
 还可以从角色的属性页中，打开 **“管理配置”** 对话框。 若要打开 Azure 项目角色的属性，请打开该角色的快捷菜单，然后选择 **“属性”**。 在“设置”选项卡上，展开“服务配置”列表，并选择“管理”以打开“管理配置”对话框。
 
 ### <a name="to-add-a-service-configuration"></a>添加服务配置
-1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，然后选择 " **管理配置**"。
+1. 在解决方案资源管理器，打开 Azure 项目的快捷菜单，然后选择"**管理配置"。**
 
     此时将出现 **“管理服务配置”** 对话框。
 2. 若要添加服务配置，必须创建现有配置的副本。 为此，请从“名称”列表中选择想要复制的配置，并选择“创建副本”。
@@ -38,19 +38,19 @@ ms.locfileid: "122031856"
     此时名为 ServiceConfiguration.[New Name].cscfg 的新服务配置文件将添加到解决方案资源管理器的 Azure 项目中。
 
 ### <a name="to-delete-a-service-configuration"></a>删除服务配置
-1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，然后选择 " **管理配置**"。
+1. 在解决方案资源管理器，打开 Azure 项目的快捷菜单，然后选择"**管理配置"。**
 
     此时将出现 **“管理服务配置”** 对话框。
 2. 要删除服务配置，请从“名称”列表中选择要删除的配置，并选择“删除”。 此时会显示一个对话框框以确认要删除此配置。
-3. 选择“删除” 。
+3. 选择“删除”。
 
      此时该服务配置文件将从解决方案资源管理器的 Azure 项目中删除。
 
 ### <a name="to-rename-a-service-configuration"></a>重命名服务配置
-1. 在解决方案资源管理器中，打开 Azure 项目的快捷菜单，然后选择 " **管理配置**"。
+1. 在解决方案资源管理器，打开 Azure 项目的快捷菜单，然后选择"**管理配置"。**
 
     此时将出现 **“管理服务配置”** 对话框。
-2. 要重命名服务配置，请从“名称”列表中选择新的服务配置，并选择“重命名”。 在 " **名称** " 文本框中，键入要用于此服务配置的名称，然后选择 **"确定"**。
+2. 要重命名服务配置，请从“名称”列表中选择新的服务配置，并选择“重命名”。 在 **"名称**"文本框中，键入要用于此服务配置的名称，然后选择"确定 **"。**
 
     此时该服务配置文件的名称会在解决方案资源管理器的 Azure 项目中更改。
 
@@ -85,7 +85,7 @@ ms.locfileid: "122031856"
 2. 在“目标配置文件”列表中，选择“管理”。
 3. 在“管理配置文件”对话框中，选择要删除的配置文件，并选择“删除”。
 4. 在出现的确认对话框中，选择“确定”。
-5. 选择“关闭”。
+5. 选择“关闭”  。
 
 ### <a name="to-change-a-profile"></a>更改配置文件
 1. 打开 Azure 项目的快捷菜单，并选择“发布”。
@@ -95,4 +95,4 @@ ms.locfileid: "122031856"
 5. （可选）选择“发布”以使用新设置发布云服务。 如果现在不需要发布云服务，并且关闭发布向导，Visual Studio 会询问是否要保存对配置文件的更改。
 
 ## <a name="next-steps"></a>后续步骤
-若要了解如何从 Visual Studio 配置 azure 项目的其他部分，请参阅[配置 azure Project](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)。
+若要了解如何从 Visual Studio 配置 Azure 项目的其他部分，请参阅配置[Azure Project。](vs-azure-tools-cloud-service-retain-a-constant-virtual-ip-address.md)

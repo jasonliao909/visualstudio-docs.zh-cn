@@ -1,6 +1,6 @@
 ---
 title: 如何：定义参数参数的类型描述符|Microsoft Docs
-description: 了解如何在 BDC 数据连接模型中为业务数据连接中 (参数) 描述符。
+description: 了解如何在 BDC 数据连接模型的业务数据连接中定义 (参数) 描述符。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ae1570010fc71d6edf56cdf9090f371c218a322a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663832"
 ---
 # <a name="how-to-define-the-type-descriptor-of-a-parameter"></a>如何：定义参数的类型描述符
   类型描述符包含描述参数的数据类型的属性。 可以定义字段、实体或实体集合的类型描述符。 有关详细信息，请参阅 [TypeDescriptor](/previous-versions/office/developer/sharepoint-2007/ms543392\(v\=office.12\))。
@@ -86,7 +86,7 @@ ms.locfileid: "122148891"
 
 2. 在菜单栏上，选择"**视图"和**"**属性窗口"。**
 
-3. 在 **"属性**"窗口中，将 **"名称**"属性设置为描述实体的名称 (例如：**联系人) 。**
+3. 在 **"属性**"窗口中，将 **"名称**"属性设置为描述实体名称 (例如：**联系人) 。**
 
 4. 将 **IsCollection** 属性设置为 **True。** 这表示此类型描述符是实体的集合。
 
@@ -120,7 +120,7 @@ ms.locfileid: "122148891"
 
     新的类型描述符将作为子类型描述符添加到集合类型描述符中。 将此类型描述符配置为实体。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [BDC 模型设计工具概述](../sharepoint/bdc-model-design-tools-overview.md)
 - [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)
 - [如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)

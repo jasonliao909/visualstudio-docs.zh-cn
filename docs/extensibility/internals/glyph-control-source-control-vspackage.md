@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 840ea85abfa995d9fc8df9e417ab13e78b25423e29d12684b3628760b5a61228
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 8a692473176843730f8cb9c1acfeb90ed164e4ad
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337963"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602341"
 ---
 # <a name="glyph-control-source-control-vspackage"></a> (源代码管理的标志符号控件 VSPackage) 
 可用于源代码管理的深度集成 Vspackage 是显示自己的标志符号，以指示源代码管理下项的状态的能力。
@@ -37,7 +37,7 @@ ms.locfileid: "121337963"
 
  <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs.GetCustomGlyphList%2A>使用方法 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 来获取显示各种源代码管理状态的图像列表。 源代码管理 VSPackage 返回到 IDE，其自定义标志符号的图像列表的句柄。 此时，IDE 将创建图像列表的副本，并在以后使用它来选择要显示的标志符号。 如果不支持新接口或 `IVsSccGlyphs::GetCustomGlyphList` 方法返回 `E_NOTIMPL` ，则 IDE 将从提供的标志符号的默认列表中获取其标志符号 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccGlyphs>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VsStateIcon>
 - <xref:Microsoft.VisualStudio.Shell.Interop.SVsSccManager>

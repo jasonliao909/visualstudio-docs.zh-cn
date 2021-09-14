@@ -9,11 +9,11 @@ ms.topic: how-to
 ms.date: 11/13/2017
 ms.author: ghogen
 ms.openlocfilehash: 04ce2657fa5b7e5aa8e829c161a1739d23920ab9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091742"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602164"
 ---
 # <a name="accessing-private-azure-clouds-with-visual-studio"></a>使用 Visual Studio 访问私有 Azure 云
 

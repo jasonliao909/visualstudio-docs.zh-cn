@@ -23,11 +23,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a265a80116da0d1d2ffac469f7193c737a65a93a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075900"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601016"
 ---
 # <a name="walkthrough-create-an-external-list-in-sharepoint-by-using-business-data"></a>演练：使用业务数据在 SharePoint 中创建外部列表
 
@@ -271,13 +271,13 @@ ms.locfileid: "122075900"
 
 ## <a name="next-steps"></a>后续步骤
 
-可以在以下主题中详细了解如何为 BDC 服务SharePoint模型：
+可以阅读以下主题，详细了解如何为 BDC 服务SharePoint模型：
 
 - [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)。
 - [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。
 - [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md) 
 [创建业务数据连接模型](../sharepoint/creating-a-business-data-connectivity-model.md) 

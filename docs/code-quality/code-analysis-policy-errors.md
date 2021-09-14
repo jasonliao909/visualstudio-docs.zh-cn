@@ -16,11 +16,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 9ca28097058c0f9c7722aacd806f00af3ef263a1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105816"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601341"
 ---
 # <a name="code-analysis-policy-errors"></a>Code Analysis Policy Errors
 
@@ -76,6 +76,6 @@ ms.locfileid: "122105816"
 
 此错误适用于非托管项目。 代码分析策略需要适用于 C/c + + 的 Code Analysis，但在客户端上的当前项目中未启用该策略。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Code Analysis应用程序错误](../code-quality/code-analysis-application-errors.md)

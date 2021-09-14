@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8ef456e484347aa278e5a3c44799eecc8949a565
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072427"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600913"
 ---
 # <a name="idebugcanstopevent2getreason"></a>IDebugCanStopEvent2::GetReason
 获取调试引擎 (DE) 停止的原因。
@@ -41,7 +41,7 @@ int GetReason(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pcr`\
 [out]从描述此事件 [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md) 枚举返回一个值。
 
@@ -53,7 +53,7 @@ int GetReason(
 
  停止的原因可以是 ，这意味着 DE 已到达入口点，或 `CANSTOP_ENTRYPOINT` `CANSTOP_STEPIN` 表示 DE 已进入函数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugCanStopEvent2](../../../extensibility/debugger/reference/idebugcanstopevent2.md)
 - [CANSTOP_REASON](../../../extensibility/debugger/reference/canstop-reason.md)
 - [CanStop](../../../extensibility/debugger/reference/idebugcanstopevent2-canstop.md)

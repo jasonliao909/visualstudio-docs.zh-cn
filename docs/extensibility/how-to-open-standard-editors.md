@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: fa3da3de94f28fd0cc02320471e76f63ecf1694b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602348"
 ---
 # <a name="how-to-open-standard-editors"></a>如何：打开标准编辑器
 打开标准编辑器时，可以让 IDE 为指定的文件类型确定标准编辑器，而不是为文件指定特定于项目的编辑器。
@@ -52,7 +52,7 @@ ms.locfileid: "122124901"
 
      如果文档视图或文档视图对象已成功放置在窗口框架中，则会通过调用将对象初始化为其数据 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistDocData2.LoadDocData%2A> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IServiceProvider>
 - [打开并保存项目项](../extensibility/internals/opening-and-saving-project-items.md)
 - [如何：打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)

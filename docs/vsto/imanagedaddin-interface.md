@@ -15,11 +15,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8fe3ac3ca61d54f14cd72387623461dd5057740b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602230"
 ---
 # <a name="imanagedaddin-interface"></a>IManagedAddin 接口
   实现 IManagedAddin 接口，以创建加载托管 VSTO 外接程序的组件。此接口已添加到 2007 Microsoft Office 系统中。
@@ -86,5 +86,5 @@ interface IManagedAddin : IUnknown
 > [!CAUTION]
 > 此 CLSID 也由中的 *VSTOLoader.dll* 使用 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。 因此，如果使用 IManagedAddin 创建自己的 VSTO 外接程序加载程序和运行时组件，则不能将组件部署到依赖于的 VSTO 加载项的计算机 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio&#41;中 &#40;Office 开发的非托管 API 参考](../vsto/unmanaged-api-reference-office-development-in-visual-studio.md)

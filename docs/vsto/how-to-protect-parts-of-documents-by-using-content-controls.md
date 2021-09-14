@@ -1,6 +1,6 @@
 ---
 title: 如何：使用内容控件保护文档的某些部分
-description: 了解如何使用Visual Studio控件来保护Microsoft Word文档的各个部分。
+description: 了解如何使用Visual Studio控件来保护文档Microsoft Word部分。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -23,11 +23,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 49988266ebee5821323ee3a9994312d99033c9f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602233"
 ---
 # <a name="how-to-protect-parts-of-documents-by-using-content-controls"></a>如何：使用内容控件保护文档的某些部分
   当你保护文档的一部分时，将阻止用户更改或删除文档该部分中的内容。 通过使用内容控件，有以下几种方法来保护 Microsoft Office Word 文档的各个部分：
@@ -106,10 +106,10 @@ ms.locfileid: "122046485"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_wordaddindynamiccontrols/ThisAddIn.vb" id="Snippet15":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControls/ThisAddIn.cs" id="Snippet15":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用扩展对象自动执行 Word](../vsto/automating-word-by-using-extended-objects.md)
 - [内容控件](../vsto/content-controls.md)
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)
 - [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)
 - [主机项和主机控件的编程限制](../vsto/programmatic-limitations-of-host-items-and-host-controls.md)
-- [运行时向Office文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [运行时向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)

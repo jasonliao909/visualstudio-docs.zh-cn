@@ -18,11 +18,11 @@ ms.author: ghogen
 manager: jmartens
 ms.technology: vs-data-tools
 ms.openlocfilehash: 2b29026eb9242dae0526f6022658f65c4a7b0a76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067229"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601239"
 ---
 # <a name="add-custom-controls-to-the-data-sources-window"></a>向“数据源”窗口添加自定义控件
 
@@ -91,7 +91,7 @@ ms.locfileid: "122067229"
     > [!NOTE]
     > 只有位于当前解决方案或被引用程序集中的控件才能添加到关联控件列表中。  (控件还必须实现上一个表中的一个数据绑定属性。 ) 要将数据绑定到 "数据源" 窗口中不可用的自定义控件，请将该控件从 " **工具箱** " 拖到设计图面上，然后从 " **数据源** " 窗口中将该项拖到控件上。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - ["数据 UI 自定义选项" 对话框](../ide/reference/options-windows-forms-designer-data-ui-customization.md)

@@ -1,6 +1,6 @@
 ---
 title: 数据集工具
-description: 查看中提供的数据集Visual Studio。 了解数据集工作流、数据集和 N 层体系结构，以及数据集和 XML。
+description: 查看 Visual Studio 中提供的数据集工具。 了解数据集工作流、数据集和 N 层体系结构、数据集和 XML。
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: conceptual
@@ -51,32 +51,32 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1e021a8ab30829aedd0a695a53993998e312ff81
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601170"
 ---
 # <a name="dataset-tools-in-visual-studio"></a>Visual Studio 中的数据集工具
 
 > [!NOTE]
-> 数据集和相关类是 2000 年初的旧版 .NET 技术，可让应用程序在应用程序与数据库断开连接时处理内存中的数据。 它们对于使用户能够修改数据以及将更改保留回数据库的应用程序特别有用。 尽管数据集已证实是一种非常成功的技术，但我们建议新的 .NET 应用程序使用实体框架。 实体框架提供了一种更自然的方式来将表格数据作为对象模型处理，并且具有更简单的编程接口。
+> 数据集和相关类是早期2000s 中的旧 .NET 技术，使应用程序可以在应用程序与数据库断开连接时使用内存中的数据。 它们对于允许用户修改数据并将更改保存回数据库的应用程序特别有用。 尽管数据集已证实成为一种非常成功的技术，但建议新的 .NET 应用程序使用实体框架。 实体框架提供了一种更自然的方式来处理作为对象模型的表格数据，并且它具有更简单的编程接口。
 
-`DataSet`对象是内存中的对象，本质上是一个微型数据库。 它包含 、 和 对象，可以在其中存储和修改来自一个或多个数据库的数据， `DataTable` `DataColumn` `DataRow` 而无需维护打开的连接。 数据集保留有关其数据更改的信息，因此，当应用程序重新连接时，可以跟踪更新并发送回数据库。
+`DataSet`对象是一个实质上是小型数据库的内存中对象。 它包含 `DataTable` 、 `DataColumn` 和 `DataRow` 对象，你可以在其中存储和修改一个或多个数据库中的数据，而不必维护打开的连接。 数据集维护对其数据的更改的相关信息，以便在应用程序重新连接时，可以跟踪更新并将其发送回数据库。
 
-数据集和相关类在 <xref:System.Data?displayProperty=fullName> .NET API 的 命名空间中定义。 可以使用代码动态创建和修改数据集 ADO.NET。 本部分中的文档演示如何使用数据集设计器Visual Studio数据集。 通过设计器创建的数据集使用 **TableAdapter** 对象与数据库进行交互。 以编程方式创建的数据集使用 **DataAdapter** 对象。 有关以编程方式创建数据集的信息，请参阅 [DataAdapters 和 DataReaders](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
+数据集和相关类在 <xref:System.Data?displayProperty=fullName> .NET API 的命名空间中定义。 您可以使用 ADO.NET 在代码中动态地创建和修改数据集。 本部分中的文档演示如何使用 Visual Studio 设计器来处理数据集。 通过设计器创建的数据集使用 **TableAdapter** 对象与数据库进行交互。 以编程方式创建的数据集使用 **DataAdapter** 对象。 有关以编程方式创建数据集的信息，请参阅 [dataadapter 和 datareader](/dotnet/framework/data/adonet/dataadapters-and-datareaders)。
 
-如果应用程序只需从数据库读取数据，而不需要执行更新、添加或删除操作，则通常可以使用 对象将数据检索到泛型对象或其他集合对象中，以获得 `DataReader` `List` 更好的性能。 如果要显示数据，可以将用户界面数据绑定到集合。
+如果你的应用程序只需要从数据库读取数据，而不执行更新、添加或删除操作，则通常可以通过使用 `DataReader` 对象将数据检索到泛型 `List` 对象或其他集合对象来获得更好的性能。 如果要显示数据，可以将用户界面数据绑定到集合。
 
 ## <a name="dataset-workflow"></a>数据集工作流
 
-Visual Studio工具来简化数据集的使用。 基本的端到端工作流是：
+Visual Studio 提供了简化数据集处理的工具。 基本的端到端工作流是：
 
-- 使用 ["数据源"](add-new-data-sources.md#data-sources-window) 窗口从一个或多个数据源创建新数据集。 使用 **数据集设计器** 配置数据集并设置其属性。 例如，需要指定数据源中要包含的表以及每个表中的列。 请谨慎选择以节省数据集所需的内存量。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
+- 使用 " [数据源" 窗口](add-new-data-sources.md#data-sources-window) ，可以从一个或多个数据源创建新的数据集。 使用 **数据集设计器** 配置数据集并设置其属性。 例如，您需要指定要包含的数据源中的表以及每个表中的哪些列。 仔细选择以保留数据集所需的内存量。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
-- 指定表之间的关系，以便正确处理外键。 有关详细信息，请参阅使用 [TableAdapters](../data-tools/fill-datasets-by-using-tableadapters.md)填充数据集。
+- 指定表之间的关系，以便正确处理外键。 有关详细信息，请参阅 [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)。
 
-- 使用 **TableAdapter** 配置向导指定用于填充数据集的查询或存储过程，以及要 (更新、删除等) 数据库操作。 有关详细信息，请参阅以下主题：
+- 使用 **TableAdapter 配置向导** 来指定用于填充数据集的查询或存储过程，以及要实现 (更新、删除等) 的数据库操作。 有关详细信息，请参阅以下主题：
 
   - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)
 
@@ -86,9 +86,9 @@ Visual Studio工具来简化数据集的使用。 基本的端到端工作流是
 
   - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 
-- 查询和搜索数据集中的数据。 有关详细信息，请参阅 [查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 启用 [LINQ (语言集成查询 ](/dotnet/csharp/linq/)) 对象中数据的 <xref:System.Data.DataSet> 查询。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
+- 查询并搜索数据集中的数据。 有关详细信息，请参阅 [查询数据集](../data-tools/query-datasets.md)。 [!INCLUDE[linq_dataset](../data-tools/includes/linq_dataset_md.md)] 启用 [LINQ (语言集成查询) ](/dotnet/csharp/linq/) 对象中的数据 <xref:System.Data.DataSet> 。 有关详细信息，请参阅 [LINQ to DataSet](/dotnet/framework/data/adonet/linq-to-dataset)。
 
-- 使用 **"数据源** "窗口将用户界面控件绑定到数据集或数据集的单个列，并指定用户可编辑的列。 有关详细信息，请参阅[将控件绑定到](../data-tools/bind-controls-to-data-in-visual-studio.md)Visual Studio。
+- 使用 " **数据源** " 窗口可以将用户界面控件绑定到数据集或其单独的列，还可以指定哪些列是用户可编辑的列。 有关详细信息，请参阅[在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)。
 
 ## <a name="datasets-and-n-tier-architecture"></a>数据集和 N 层体系结构
 
@@ -96,7 +96,7 @@ Visual Studio工具来简化数据集的使用。 基本的端到端工作流是
 
 ## <a name="datasets-and-xml"></a>数据集和 XML
 
-有关将数据集与 XML 进行转换的信息，请参阅将 XML 数据读 [入](../data-tools/read-xml-data-into-a-dataset.md) 数据集和将 [数据集另存为 XML](../data-tools/save-a-dataset-as-xml.md)。
+有关将数据集转换为 XML 或从 XML 转换数据集的信息，请参阅将 [xml 数据读入数据集](../data-tools/read-xml-data-into-a-dataset.md) 和 [将数据集另存为 xml](../data-tools/save-a-dataset-as-xml.md)。
 
 ## <a name="see-also"></a>请参阅
 

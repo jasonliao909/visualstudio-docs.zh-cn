@@ -17,16 +17,16 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 2625781da6fb344cf9d3938920a1774391e502094297665515ec033d9eea4d6b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 189c7d0979d125b18db0ee8c467fd9538493a266
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664279"
 ---
 # <a name="locationfieldmruprefix-element-visual-studio-templates"></a>LocationFieldMRUPrefix 元素 (Visual Studio模板) 
 
-在"新建项" (") "对话框中指定最近使用的 MRU **Project路径。** 
+在"新建项 (") "对话框中指定最近使用的 MRU **Project路径。** 
 
 ## <a name="syntax"></a>语法
 

@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 32ba588545d401a7c25f56d5a5f7042d62116a25
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122730"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602266"
 ---
 # <a name="how-to-programmatically-apply-styles-to-ranges-in-workbooks"></a>如何：以编程方式将样式应用于工作簿中的范围
   可以将已命名的样式应用到工作簿中的区域。 Excel 提供了大量预定义样式。
@@ -63,15 +63,15 @@ ms.locfileid: "122122730"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet29":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet29":::
 
-## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>从 VSTO 外接程序中的命名范围中清除样式
+## <a name="to-clear-a-style-from-a-named-range-in-a-vsto-add-in"></a>从外接程序中的命名范围中VSTO样式
 
 1. 将正文样式应用到该区域中。
 
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreExcelAutomationCS/Sheet1.cs" id="Snippet56":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreExcelAutomation/Sheet1.vb" id="Snippet56":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用范围](../vsto/working-with-ranges.md)
 - [NamedRange 控件](../vsto/namedrange-control.md)
-- [Office 项目中对象的全局访问](../vsto/global-access-to-objects-in-office-projects.md)
-- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)
+- [对项目中对象的全局Office访问](../vsto/global-access-to-objects-in-office-projects.md)
+- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: cf3f80c51866f278f4cf9a72876963d60ab17e4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602319"
 ---
 # <a name="customize-file-storage-and-xml-serialization"></a>自定义文件存储和 XML 序列化
 
@@ -203,7 +203,7 @@ ms.locfileid: "122061306"
 
 ## <a name="customize-the-structure-of-the-xml"></a>自定义 XML 的结构
 
-若要进行以下自定义，请展开 DSL 资源管理器 **中的"Xml 序列化行为** "节点。 在域类下，展开"元素数据"节点以查看来自此类的属性和关系的列表。 选择关系，并调整其选项属性窗口。
+若要进行以下自定义，请展开 DSL 资源管理器 **中的"Xml 序列化行为** "节点。 在域类下，展开"元素数据"节点以查看来自此类的属性和关系的列表。 选择一个关系，并调整其属性窗口。
 
 - 将 **Omit 元素** 设置为 true 可省略源角色节点，仅保留目标元素的列表。 如果源类和目标类之间存在多个关系，则不应设置此选项。
 
@@ -269,14 +269,14 @@ ms.locfileid: "122061306"
 
 这些元素位于 DSL 资源管理器中的 **Xml 序列化行为\类数据 下**。
 
-|属性|说明|
+|Property|说明|
 |-|-|
 |具有自定义元素架构|如果为 True，则指示域类具有自定义元素架构|
 |是自定义的|如果要为此 **域** 类编写自己的序列化和反序列化代码，请设置为 True。<br /><br /> 生成解决方案并调查错误以发现详细说明。|
 |域类|此类数据节点应用到的域类。 只读。|
 |元素名称|此类的元素的 Xml 节点名称。 默认值是域类名称的小写版本。|
 |名字对象属性名称|名字对象元素中用于包含引用的属性的名称。 如果为空，则使用键属性或 ID 的名称。<br /><br /> 此示例中，它是"name"：  `<personMoniker name="/Mike Nash"/>`|
-|名字对象元素名称|用于引用此类元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是带有"名字对象"后缀的类名的一个小写版本。 例如 `personMoniker`。|
+|名字对象元素名称|用于引用此类元素的名字对象的 xml 元素的名称。<br /><br /> 默认值是带有"名字对象"后缀的类名的一个小写版本。 例如，`personMoniker`。|
 |名字对象类型名称|为此类元素的名字对象生成的 xsd 类型的名称。 XSD 位于 **Dsl\Generated \\ \* Code Schema.xsd 中**|
 |序列化 ID|如果为 True，则元素 GUID 包含在文件中。 如果没有标记为"是名字对象键"的属性，并且DSL 定义对此类的引用关系，则此属性必须为 true。|
 |类型名称|从指定的域类在 xsd 中生成的 xml 类型的名称。|
@@ -286,7 +286,7 @@ ms.locfileid: "122061306"
 
 Xml 属性节点位于类节点下。
 
-|属性|说明|
+|Property|说明|
 |-|-|
 |域属性|xml 序列化配置数据应用于的属性。 只读。|
 |名字对象键|如果为 True，则属性用作创建引用此域类的实例的名字对象的键。|
@@ -299,7 +299,7 @@ Xml 属性节点位于类节点下。
 
 角色数据节点位于源类节点下。
 
-|属性|说明|
+|Property|说明|
 |-|-|
 |具有自定义名字对象|如果要提供自己的代码来生成和解析遍历此关系的名字对象，请设置为 true。<br /><br /> 有关详细说明，请生成解决方案，然后双击错误消息。|
 |域关系|指定这些选项应用于的关系。 只读。|
@@ -307,7 +307,7 @@ Xml 属性节点位于类节点下。
 |Role 元素名称|指定派生自源角色的 XML 元素的名称。 默认值为角色属性名称。|
 |使用完整窗体|如果为 true，则每个目标元素或名字对象都包含在表示关系的 XML 节点中。 如果关系具有其自己的域属性，应设置为 true。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)
 - [从域特定语言生成代码](../modeling/generating-code-from-a-domain-specific-language.md)

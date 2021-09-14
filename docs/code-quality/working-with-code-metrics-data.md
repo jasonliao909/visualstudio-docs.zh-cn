@@ -17,11 +17,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 316f03d737f2e7d294eb5d743496652f8635d58d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113947"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601250"
 ---
 # <a name="use-the-code-metrics-results-window"></a>使用"代码指标结果"窗口
 
@@ -35,7 +35,7 @@ ms.locfileid: "122113947"
 
 - 在"**分析"** 菜单上 **，Windows"**  >  **代码指标结果"。**
 
-- 在"视图 **"** 菜单上，选择 **"其他** Windows  >  **代码指标结果"。**
+- 在"视图 **"** 菜单上，选择 **"其他Windows**  >  **代码指标结果"。**
 
 " **代码指标结果"** 窗口将打开，即使不包含任何结果。
 
@@ -109,7 +109,7 @@ ms.locfileid: "122113947"
 
 4. 在" **文件"** 菜单上，单击 **"** 全部保存"以保存工作项。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码指标值](../code-quality/code-metrics-values.md)
 - [如何：生成代码指标数据](../code-quality/how-to-generate-code-metrics-data.md)

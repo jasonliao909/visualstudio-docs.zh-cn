@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9aadc89257d86bac9432026d368c1f84e963152a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079826"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600904"
 ---
 # <a name="idebugcodecontext2getdocumentcontext"></a>IDebugCodeContext2::GetDocumentContext
 获取与此代码上下文相对应的文档上下文。 文档上下文表示源文件中的一个位置，该位置对应于生成此指令的源代码。
@@ -41,7 +41,7 @@ int GetDocumentContext(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppSrcCxt`\
 弄返回对应于代码上下文的 [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md) 对象。 如果 `S_OK` 返回，则数列应为非 `null` 。
 
@@ -51,6 +51,6 @@ int GetDocumentContext(
 ## <a name="remarks"></a>备注
  通常，可以将文档上下文视为源文件中的一个位置，而代码上下文是代码指令在执行流中的位置。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)
 - [IDebugDocumentContext2](../../../extensibility/debugger/reference/idebugdocumentcontext2.md)

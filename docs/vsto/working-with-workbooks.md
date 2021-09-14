@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 6d426948d658895214ecaab1d80f2a3121d11267
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602202"
 ---
 # <a name="work-with-workbooks"></a>使用工作簿
   <xref:Microsoft.Office.Tools.Excel.Workbook> 和 <xref:Microsoft.Office.Interop.Excel.Workbooks> 类包含用于执行工作簿相关任务的方法和属性。
@@ -37,11 +37,11 @@ ms.locfileid: "122068238"
 |获取最近使用过的工作簿文件的集合。|[如何：以编程方式列出最近使用的工作簿文件](../vsto/how-to-programmatically-list-recently-used-workbook-files.md)|
 |将文本文件打开为工作簿。|[如何：以编程方式以工作簿方式打开文本文件](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)|
 
- 有关对象任务Excel对象模型Excel，请参阅Excel[模型概述](../vsto/excel-object-model-overview.md)。
+ 有关对象Excel模型Excel，请参阅对象Excel[概述](../vsto/excel-object-model-overview.md)。
 
  某些情况下，在 VSTO 外接程序中执行这些任务的方式与在文档级自定义项中执行它们的方式是不同的。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用Excel对象自动执行自动执行](../vsto/automating-excel-by-using-extended-objects.md)
 - [使用工作表](../vsto/working-with-worksheets.md)
 - [使用范围](../vsto/working-with-ranges.md)

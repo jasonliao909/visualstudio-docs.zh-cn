@@ -15,19 +15,19 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 535dfe4126bd1dbeeca69a89f1bd4df86df7ea98
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086932"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600754"
 ---
 # <a name="ide-guids"></a>IDE GUID
 
-类发布集成开发环境的某些部分的 GUID (IDE) 如下 <xref:Microsoft.VisualStudio.VSConstants> 表所列。
+类 <xref:Microsoft.VisualStudio.VSConstants> 发布集成开发环境的某些部分的 GUID (IDE) 如下表所列。
 
 ## <a name="core-systems"></a>核心系统
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.HtmDocData_guid>|62C81794-A9EC-11D0-8198-00A0C91BBEE3|
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.HtmlEditorPackage_guid>|1B437D20-F8FE-11D2-A6AE-00104BCC7269|
@@ -40,7 +40,7 @@ ms.locfileid: "122086932"
 
 ## <a name="broadly-visible-components"></a>广泛可见的组件
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CLSID.VsUIHierarchyWindow_guid>|7D960B07-7AF8-11D0-8E5E-00A0C911005A|
 |<xref:Microsoft.VisualStudio.VSConstants.VsEditorFactoryGuid.ExternalEditor_guid>|8137C9E8-35FE-4AF2-87B0-DE3C45F395FD|
@@ -49,7 +49,7 @@ ms.locfileid: "122086932"
 
 ## <a name="files-virtual-and-physical-folders-and-subprojects"></a>文件、虚拟和物理文件夹以及子项目
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFile_guid>|6bb5f8ee-4483-11d3-8bcf-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.ItemTypeGuid.PhysicalFolder_guid>|6bb5f8ef-4483-11d3-8bcf-00c04f8ec28c|
@@ -58,7 +58,7 @@ ms.locfileid: "122086932"
 
 ## <a name="ui-contexts"></a>UI 上下文
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>|8fe2df1d-e0da-4ebe-9d5c-415d40e487b5|
 |<xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.Debugging_guid>|adfc4e61-0397-11d1-9f4e-00a0c911004f|
@@ -74,7 +74,7 @@ ms.locfileid: "122086932"
 
 ## <a name="output-pane"></a>输出窗格
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.BuildOutputPane_guid>|1BD8A850-02D1-11D1-BEE7-00A0C913D1F8|
 |<xref:Microsoft.VisualStudio.VSConstants.OutputWindowPaneGuid.DebugPane_guid>|FC076020-078A-11D1-A7DF-00A0C9110051|
@@ -85,20 +85,20 @@ ms.locfileid: "122086932"
 
 ## <a name="command-sets-and-properties"></a>命令集和属性
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97|5EFC7975-14BC-11CF-9B2B-00AA00573819|
 |Microsoft.VisualStudio.VSConstants.GUID_VsUIHierarchyWindowCmds>|60481700-078b-11d1-aaf8-00a0c9055a90|
 
 ## <a name="iunknown"></a>IUnknown
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.IID_IUnknown>|00000000-0000-0000-C000-000000000046|
 
 ## <a name="task-list-guids"></a>任务列表 GUID
 
-|返回的常量|GUID|
+|常数|GUID|
 |--------------|----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.All>|1880202e-fc20-11d2-8bb1-00c04f8ec28c|
 |<xref:Microsoft.VisualStudio.VSConstants.VsTaskListView.CheckedTasks>|18802036-fc20-11d2-8bb1-00c04f8ec28c|
@@ -128,8 +128,8 @@ ms.locfileid: "122086932"
 |<xref:Microsoft.VisualStudio.VSConstants.VsPackageGuid.VsDocOutlinePackage_guid>|21af45b0-ffa5-11d0-b63f-00a0c922e851|
 |Microsoft.VisualStudio.VSConstants.SID_SVsToolboxActiveXDataProvider|35222106-bb44-11d0-8c46-00c04fc2aae2|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [托管代码中的 COM 常量](../extensibility/com-constants-in-managed-code.md)
 - [IDE 常量](../extensibility/ide-constants.md)
-- [IDE 定义的用于扩展项目的命令 ystems](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [用于扩展项目 ystems 的 IDE 定义命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

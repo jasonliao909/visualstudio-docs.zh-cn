@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 238c5e82a35db0f2fbc6627bd0bb09d3af8f070b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091183"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601110"
 ---
 # <a name="how-to-save-data-by-using-a-transaction"></a>如何：通过使用事务来保存数据
 
@@ -53,7 +53,7 @@ ms.locfileid: "122091183"
      :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataSaving/VB/Form2.vb" id="Snippet11":::
      :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataSaving/CS/Form2.cs" id="Snippet11":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)
 - [演练：在事务中保存数据](../data-tools/save-data-in-a-transaction.md)

@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 649204a074980c547fc238ba0c7db923c7ff199b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031596"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601076"
 ---
 # <a name="troubleshoot-service-references"></a>服务引用疑难解答
 
@@ -105,6 +105,6 @@ ms.locfileid: "122031596"
 
 4. 单击 **"确定"** 以关闭 " **Internet 选项** " 对话框。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)

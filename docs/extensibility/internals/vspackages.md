@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 16284ec7bb2481bbbfca758bb9ccbd0c9f062c34
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086426"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664297"
 ---
 # <a name="vspackages"></a>VSPackages
 VSPackage 是软件模块，通过提供 UI 元素、服务、项目、编辑器和设计器 (IDE) IDE 集成开发 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 环境。

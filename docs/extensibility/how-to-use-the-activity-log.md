@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7687d9174b9275cce791f39c05d41450e1687df7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600767"
 ---
 # <a name="how-to-use-the-activity-log"></a>如何：使用活动日志
 VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中调试 VSPackage 特别有用。
@@ -65,7 +65,7 @@ VSPackage 可以将消息写入活动日志。 此功能对于在零售环境中
 
 在写入活动日志之前，应获取活动日志。 不要缓存或保存活动日志供将来使用。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [/Log (devenv.exe) ](../ide/reference/log-devenv-exe.md)
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsActivityLog>

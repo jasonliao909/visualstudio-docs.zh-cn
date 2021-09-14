@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: b72683bec2e0f4e8a0eb82dd46d147bc02ccb51c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050034"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602343"
 ---
 # <a name="get-started-with-source-control-vspackages"></a>源代码管理 VSPackage 入门
 

@@ -1,6 +1,6 @@
 ---
-title: 使命令可用 |Microsoft Docs
-description: 了解如何使用延迟加载、上下文和可见性来控制添加到 vspackage 中的 Visual Studio IDE 的命令的可用性。
+title: 使命令可用|Microsoft Docs
+description: 了解如何使用延迟加载、上下文和可见性来控制在 VSPackages Visual Studio IDE 中添加的命令的可用性。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
 ms.topic: conceptual
@@ -17,25 +17,25 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c92d9b34c669f5de4df8b9bd42cfb9e9e53996e2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600720"
 ---
 # <a name="making-commands-available"></a>使命令可用
 
-将多个 vspackage 添加到 Visual Studio 时，用户界面 (UI) 可能会 overcrowded 命令。 你可以对包进行编程以帮助减少此问题，如下所示：
+将多个 VSPackage 添加到 Visual Studio 时，UI (用户界面) 可能会过度使用命令。 你可以对包进行编程以帮助减少此问题，如下所示：
 
-- 对包进行编程，使其仅在用户需要时加载。
+- 对包进行编程，以便仅在用户需要它时加载它。
 
-- 对包进行编程，使其命令仅在集成开发环境的当前状态的上下文中可能需要时才显示 (IDE) 。
+- 对包进行编程，以便仅在 IDE 中集成开发环境的当前状态上下文中可能需要这些命令时显示 (命令) 。
 
 ## <a name="delayed-loading"></a>延迟加载
 
-启用延迟加载的典型方式是设计 VSPackage，以便在 UI 中显示其命令，但在用户单击其中一个命令之前，不会加载包本身。 若要实现此目的，请在 .vsct 文件中创建没有命令标志的命令。
+启用延迟加载的典型方法就是设计 VSPackage，以便其命令显示在 UI 中，但在用户单击其中一个命令之前不会加载包本身。 为此，在 .vsct 文件中，创建没有命令标志的命令。
 
-下面的示例演示如何从 .vsct 文件定义菜单命令。 这是在选择模板中的 **菜单命令** 选项时 Visual Studio 包模板生成的命令。
+以下示例显示 .vsct 文件中菜单命令的定义。 这是在选择模板中的"菜单命令"选项Visual Studio包模板生成的命令。 
 
 ```xml
 <Button guid="guidTopLevelMenuCmdSet" id="cmdidTestCommand" priority="0x0100" type="Button">
@@ -48,24 +48,24 @@ ms.locfileid: "122063247"
 </Button>
 ```
 
-在此示例中，如果父组 `MyMenuGroup` 是顶级菜单（如 " **工具** " 菜单）的子级，则该命令将在该菜单上可见，但在用户单击该命令之前，将不会加载执行命令的包。 但是，通过对命令进行编程以实现 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 接口，可以在第一次展开包含命令的菜单时启用包加载。
+在示例中，如果父组 是顶级菜单（如"工具"菜单）的子级，则该命令将在该菜单上可见，但在用户单击命令之前，不会加载执行命令的包。 `MyMenuGroup`  但是，通过编程命令来实现 接口，可以在首次展开包含命令的菜单时加载 <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 包。
 
 请注意，延迟加载还可以提高启动性能。
 
 ## <a name="current-context-and-the-visibility-of-commands"></a>当前上下文和命令的可见性
 
-您可以根据 VSPackage 数据的当前状态或当前相关的操作，对 VSPackage 命令进行可见或隐藏。 您可以通过使用接口的方法的实现来使 VSPackage 设置其命令的状态， <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> 但这需要先加载 VSPackage，然后才能执行该代码。 相反，我们建议您让 IDE 在不加载包的情况下管理命令的可见性。 为此，请在 .vsct 文件中将命令与一个或多个特殊 UI 上下文相关联。 这些 UI 上下文由 GUID 标识，该 GUID 称为 " *命令上下文 guid*"。
+可以将 VSPackage 命令编程为可见或隐藏，具体取决于 VSPackage 数据的当前状态或当前相关的操作。 可以启用 VSPackage 来设置其命令的状态（通常通过使用 接口中的 方法的实现），但这需要先加载 <xref:EnvDTE.IDTCommandTarget.QueryStatus%2A> <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget> VSPackage，然后才能执行代码。 相反，我们建议启用 IDE 来管理命令的可见性，而无需加载包。 为此，在 .vsct 文件中，将命令与一个或多个特殊 UI 上下文关联。 这些 UI 上下文由称为命令上下文 GUID 的 *GUID 标识*。
 
-[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 监视用户操作（例如加载项目或从编辑到生成）所产生的更改。 发生更改时，IDE 的外观会自动修改。 下表显示了监视器的四个主要的 IDE 更改上下文 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+[!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 监视用户操作（如加载项目或从编辑到生成）导致的更改。 发生更改时，将自动修改 IDE 的外观。 下表显示了监视的 IDE 更改的四个主要 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 上下文。
 
 | 上下文类型 | 说明 |
 |-------------------------| - |
-| 活动 Project 类型 | 对于大多数项目类型，此 `GUID` 值与实现项目的 VSPackage 的 GUID 相同。 但是， [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] 项目使用 Project 类型 `GUID` 作为值。 |
-| 活动窗口 | 通常，这是为键绑定建立当前 UI 上下文的最后一个活动文档窗口。 不过，它也可以是具有类似于内部 Web 浏览器的键绑定表的工具窗口。 对于多选项卡式文档窗口（如 HTML 编辑器），每个选项卡都有不同的命令上下文 `GUID` 。 |
-| 活动语言服务 | 与当前在文本编辑器中显示的文件关联的语言服务。 |
-| 活动工具窗口 | 打开并具有焦点的工具窗口。 |
+| 活动Project类型 | 对于大多数项目类型，此值与实现项目的 `GUID` VSPackage 的 GUID 相同。 但是 [!INCLUDE[vcprvc](../../code-quality/includes/vcprvc_md.md)] ，项目使用 Project Type `GUID` 作为值。 |
+| 活动窗口 | 通常，这是最后一个为键绑定建立当前 UI 上下文的活动文档窗口。 但是，它也可能是一个工具窗口，该工具窗口具有类似于内部 Web 浏览器的键绑定表。 对于 HTML 编辑器等多选项卡文档窗口，每个选项卡具有不同的命令上下文 `GUID` 。 |
+| 活动语言服务 | 与文本编辑器中当前显示的文件关联的语言服务。 |
+| 活动工具窗口 | 打开且具有焦点的工具窗口。 |
 
-第五个主要的上下文区域是 IDE 的 UI 状态。 UI 上下文由活动命令上下文 s 标识 `GUID` ，如下所示：
+第五个主要上下文区域是 IDE 的 UI 状态。 UI 上下文由活动命令上下文 `GUID` 标识，如下所示：
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionBuilding_guid>
 
@@ -89,30 +89,30 @@ ms.locfileid: "122063247"
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.CodeWindow_guid>
 
-这些 Guid 标记为活动或非活动状态，具体取决于 IDE 的当前状态。 多个 UI 上下文可以同时处于活动状态。
+这些 GUID 将标记为活动或不活动，具体取决于 IDE 的当前状态。 多个 UI 上下文可以同时处于活动状态。
 
-### <a name="hide-and-display-commands-based-on-context"></a>基于上下文隐藏和显示命令
+### <a name="hide-and-display-commands-based-on-context"></a>根据上下文隐藏和显示命令
 
-可以在 IDE 中显示或隐藏包命令，而无需加载包本身。 为此，请使用、和命令标志在包的 .vsct 文件中定义该命令 `DefaultDisabled` ， `DefaultInvisible` `DynamicVisibility` 并将一个或多个 [VisibilityItem](../../extensibility/visibilityitem-element.md) 元素添加到 [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) 节。 当指定的命令上下文 `GUID` 变为活动状态时，将显示该命令而不加载包。
+可以在 IDE 中显示或隐藏包命令，而无需加载包本身。 为此，请通过使用 、 和 命令标志，将一个或多个 VisibilityItem 元素添加到 `DefaultDisabled` `DefaultInvisible` `DynamicVisibility` [VisibilityConstraints](../../extensibility/visibilityconstraints-element.md) [](../../extensibility/visibilityitem-element.md)节，在包的 .vsct 文件中定义 命令。 当指定的命令上下文变为活动状态时， `GUID` 将显示该命令而不加载包。
 
-### <a name="custom-context-guids"></a>自定义上下文 Guid
+### <a name="custom-context-guids"></a>自定义上下文 GUID
 
-如果尚未定义适当的命令上下文 GUID，则可在 VSPackage 中定义一个，然后根据需要对其进行编程，使其保持活动或非活动状态，以控制命令的可见性。 使用该 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 服务可以：
+如果尚未定义相应的命令上下文 GUID，可以在 VSPackage 中定义一个，然后根据控制命令可见性的要求将其编程为活动或非活动。 使用 <xref:Microsoft.VisualStudio.Shell.Interop.SVsShellMonitorSelection> 服务可以：
 
-- 通过调用方法) 来注册上下文 Guid (<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A> 。
+- 通过调用 (注册上下文 GUID <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCmdUIContextCookie%2A>) 。
 
-- ) 调用方法，获取上下文 `GUID` (的状态 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A> 。
+- 通过调用 方法 (`GUID` 获取上下文 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.IsCmdUIContextActive%2A>) 。
 
-- `GUID`) 调用方法，打开和关闭上下文 s (<xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 。
+- 通过 `GUID` 调用 方法 (启用和关闭 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.SetCmdUIContext%2A> 上下文) 。
 
     > [!CAUTION]
-    > 请确保 VSPackage 不会影响任何现有的上下文 GUID 的状态，因为其他 Vspackage 可能依赖于它们。
+    > 请确保 VSPackage 不会影响任何现有上下文 GUID 的状态，因为其他 VSPackage 可能依赖于它们。
 
 ## <a name="example"></a>示例
 
-下面的 VSPackage 命令示例演示了命令上下文管理的命令的动态可见性，而无需加载 VSPackage。
+下面的示例 VSPackage 命令演示了在不加载 VSPackage 的情况下由命令上下文管理的命令的动态可见性。
 
-如果解决方案存在，则将此命令设置为启用并显示。也就是说，每当以下命令上下文 Guid 之一处于活动状态时：
+命令设置为在解决方案存在时启用并显示;也就是说，每当以下命令上下文 GUID 之一处于活动状态时：
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.EmptySolution_guid>
 
@@ -120,7 +120,7 @@ ms.locfileid: "122063247"
 
 - <xref:Microsoft.VisualStudio.VSConstants.UICONTEXT.SolutionHasSingleProject_guid>
 
-在此示例中，请注意，每个命令标志都是单独的 [命令标志](../../extensibility/command-flag-element.md) 元素。
+请注意，在示例中，每个命令标志都是单独的 [命令标志](../../extensibility/command-flag-element.md) 元素。
 
 ```xml
 <Button guid="guidDynamicVisibilityCmdSet" id="cmdidMyCommand"
@@ -137,7 +137,7 @@ ms.locfileid: "122063247"
 </Button>
 ```
 
-另请注意，每个 UI 上下文都必须在单独的元素中提供 `VisibilityItem` ，如下所示。
+另请注意，每个 UI 上下文都必须在单独的 元素中 `VisibilityItem` 提供，如下所示。
 
 ```xml
 <VisibilityConstraints>
@@ -150,7 +150,7 @@ ms.locfileid: "122063247"
 </VisibilityConstraints>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [将命令添加到解决方案资源管理器工具栏](../../extensibility/adding-a-command-to-the-solution-explorer-toolbar.md)
 - [VSPackage 如何添加用户界面元素](../../extensibility/internals/how-vspackages-add-user-interface-elements.md)

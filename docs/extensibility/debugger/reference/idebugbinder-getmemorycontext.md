@@ -1,6 +1,6 @@
 ---
-description: 此方法将对象位置或内存地址转换为内存上下文。
-title: IDebugBinder：：GetMemoryContext |Microsoft Docs
+description: 此方法会将对象位置或内存地址转换为内存上下文。
+title: IDebugBinder：： GetMemoryContext |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48a4c9884f4625a938269715c5338d4040ccc8b3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119979"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600922"
 ---
 # <a name="idebugbindergetmemorycontext"></a>IDebugBinder::GetMemoryContext
-此方法将对象位置或内存地址转换为内存上下文。
+此方法会将对象位置或内存地址转换为内存上下文。
 
 ## <a name="syntax"></a>语法
 
@@ -45,20 +45,20 @@ int GetMemoryContext(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pField`\
-[in]描述[要查找的对象的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md) 如果 `NULL` 为 ，则 `dwConstant` 改为使用 。
+中描述要查找的对象的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 。 如果为 `NULL` ，则 `dwConstant` 改用。
 
 `dwConstant`\
-[in]常量内存地址，例如0x5000。
+中常量内存地址，如0x5000。
 
 `ppMemCxt`\
-[out]返回 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 接口，该接口表示对象的地址或内存中的地址。
+弄返回表示对象地址的 [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md) 接口，或内存中的地址。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

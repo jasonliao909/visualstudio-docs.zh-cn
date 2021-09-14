@@ -1,6 +1,6 @@
 ---
 title: 添加新数据源
-description: 在 Visual Studio 中添加新Visual Studio。 数据源是一个 .NET 对象，它连接到数据存储，使数据可供 .NET 应用程序使用。
+description: 在 Visual Studio 中添加新数据源。 数据源是一个 .NET 对象，它连接到数据存储，使数据可供 .NET 应用程序使用。
 ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: how-to
@@ -17,20 +17,20 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: a0d93a2c80afe7863490f0af5578684d699a5980
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601234"
 ---
 # <a name="add-new-data-sources"></a>添加新数据源
 
 :::moniker range=">=vs-2019"
 > [!NOTE]
-> 本文中所述的功能适用于 .NET Framework Windows 窗体和 WPF 开发。 WPF 和 WPF 窗体不支持 .NET Core Windows功能。
+> 本文中所述的功能适用于.NET Framework Windows窗体和 WPF 开发。 WPF 和 Windows 不支持 .NET Core 开发。
 :::moniker-end
 
-在 Visual Studio .NET 数据工具的上下文中，术语"数据源"是指连接到数据存储并可供 .NET 应用程序使用数据的 .NET 对象。 在Visual Studio"数据源"窗口中拖放数据库对象时，设计器可以使用数据源的输出来生成将数据绑定到窗体的样 **板代码。** 此类数据源可以是：
+在 Visual Studio .NET 数据工具的上下文中，术语"数据源"是指连接到数据存储并可供 .NET 应用程序使用的数据的 .NET 对象。 在Visual Studio"数据源"窗口中拖放数据库对象时，这些设计器可以使用数据源的输出来生成将数据绑定到窗体的样 **板** 代码。 此类数据源可以是：
 
 - 与某种实体框架关联的数据库模型中的类。
 
@@ -45,7 +45,7 @@ ms.locfileid: "122067174"
 > [!NOTE]
 > 如果不使用数据绑定功能、数据集、实体框架、LINQ to SQL、WCF 或 SharePoint，则"数据源"的概念不适用。 只需使用 SQLCommand 对象直接连接到数据库，并直接与数据库通信。
 
-通过使用数据源配置向导在窗体或窗体应用程序中创建Windows编辑Windows Presentation Foundation数据源。 对于实体框架，请首先创建实体类，然后通过选择"Project添加新数据源" (在本文稍后部分详细介绍  >  ) 。
+通过使用数据源配置向导在窗体或窗体应用程序中创建Windows编辑Windows Presentation Foundation数据源。 对于实体框架，请首先创建实体类，然后通过选择"Project添加新数据源" (本文稍后部分将更详细地介绍  >  ) 。
 
 ![数据源配置向导](../data-tools/media/data-source-configuration-wizard.png)
 
@@ -74,7 +74,7 @@ ms.locfileid: "122067174"
 
 若要创建实体框架模型作为数据源：
 
-1. 运行 **实体数据模型向导** 以创建实体类。 选择  >  **Project"添加新项**  >  **ADO.NET 实体数据模型"。**
+1. 运行实体数据模型 **向导** 以创建实体类。 选择  >  **Project"添加新项**  >  **ADO.NET 实体数据模型"。**
 
    ![新建实体框架模型项目项](../data-tools/media/raddata-new-entity-framework-model-project-item.png)
 
@@ -88,7 +88,7 @@ ms.locfileid: "122067174"
 
 ## <a name="data-source-for-a-service"></a>服务的数据源
 
-若要从服务创建数据源，请运行 **数据源配置向导并选择****"服务** 数据源类型"。 这只是"创建添加服务引用对话框的快捷方式，也可通过右键单击 解决方案资源管理器 并选择"添加服务引用 **"来** 访问 **该对话框**。
+若要从服务创建数据源，请运行 **数据源配置向导并选择****"服务** 数据源类型"。 这只是"添加服务引用"对话框的快捷方式，也可以右键单击 解决方案资源管理器 并选择"添加服务引用 **"来** 访问 **该对话框**。
 
 从服务创建数据源时，Visual Studio向项目添加服务引用。 Visual Studio还会创建与服务返回的对象相对应的代理对象。 例如，返回数据集的服务在项目中表示为数据集;返回特定类型的服务在项目中表示为返回的类型。
 
@@ -119,7 +119,7 @@ ms.locfileid: "122067174"
 
 ## <a name="data-source-for-a-sharepoint-list"></a>数据源列表SharePoint数据源
 
-可以通过运行数据源配置向导并选择SharePoint数据源类型，从 **SharePoint创建数据源**。  SharePoint通过 WCF Data Services 公开数据，因此SharePoint数据源与从服务创建数据源相同。 在 **"SharePoint****配置** 向导"中选择"添加服务引用"项会打开"添加服务引用"对话框，你可在这里通过指向 SharePoint 服务器连接到 SharePoint 数据服务。  这需要 SharePoint SDK。
+可以通过运行数据源配置向导并选择SharePoint数据源类型，从 **SharePoint创建数据源**。  SharePoint通过 WCF Data Services 公开数据，因此SharePoint数据源与从服务创建数据源相同。 在 **"SharePoint****配置** 向导"中选择"添加服务引用"项会打开"添加服务引用"对话框，通过指向 SharePoint 服务器连接到 SharePoint 数据服务。  这需要 SharePoint SDK。
 
 ## <a name="see-also"></a>请参阅
 

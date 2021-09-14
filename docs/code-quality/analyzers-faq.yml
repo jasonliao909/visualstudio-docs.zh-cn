@@ -13,20 +13,20 @@ metadata:
   ms.workload:
   - multiple
   ms.openlocfilehash: a9ff57daf22d61758b3bbc7d99beb6d2555b7e18
-  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/06/2021
-  ms.locfileid: "108800304"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126602101"
 title: 代码分析常见问题解答
-summary: 本页包含有关 Visual Studio 中基于 .NET Compiler Platform 代码分析的一些常见问题的解答。
+summary: 此页包含有关 Visual Studio 中基于 .NET Compiler Platform 代码分析的一些常见问题的解答。
 sections:
 - name: 代码分析与 EditorConfig
   questions:
   - question: >
       是否应该使用代码分析或 EditorConfig 来检查代码样式？
     answer: >
-      代码分析和 EditorConfig 文件工作。 在 [EditorConfig 文件](/dotnet/fundamentals/code-analysis/code-style-rule-options) 或 " [文本编辑器" 选项](../ide/code-styles-and-code-cleanup.md) 页上定义代码样式时，实际上是在配置 Visual Studio 中内置的代码分析器。 EditorConfig 文件可用于启用或禁用分析器规则，还可用于配置 NuGet 分析器包。
+      代码分析和 EditorConfig 文件工作。 在[EditorConfig 文件](/dotnet/fundamentals/code-analysis/code-style-rule-options)或 "[文本编辑器" 选项](../ide/code-styles-and-code-cleanup.md)页上定义代码样式时，实际上是配置 Visual Studio 中内置的代码分析器。 EditorConfig 文件可用于启用或禁用分析器规则，还可用于配置 NuGet 分析器包。
 - name: EditorConfig 与规则集
   questions:
   - question: >
@@ -40,44 +40,44 @@ sections:
 
       - 对于 .NET 代码质量分析器，EditorConfig 文件允许 [定义要分析的代码类型](/dotnet/fundamentals/code-analysis/code-quality-rule-options)。
 
-      - 对于内置于 Visual Studio 中的 .NET 代码样式分析器，EditorConfig 文件允许你为基本代码 [定义首选代码样式](/dotnet/fundamentals/code-analysis/code-style-rule-options) 。
+      - 对于内置 Visual Studio 的 .net 代码样式分析器，EditorConfig 文件允许您为基本代码[定义首选代码样式](/dotnet/fundamentals/code-analysis/code-style-rule-options)。
 
 
-      除了规则集和 EditorConfig 文件外，某些分析器还通过使用标记为 c # 和 VB 编译器的 [附加文件](../ide/build-actions.md#build-action-values) 的文本文件进行配置。
+      除了规则集和 EditorConfig 文件外，某些分析器还通过使用标记为 c # 和 VB 编译器的[附加文件](../ide/build-actions.md#build-action-values)的文本文件进行配置。
 
 
       > [!NOTE]
 
-      > - EditorConfig 文件只能用于启用规则，并在 Visual Studio 2019 版本16.3 及更高版本中设置其严重性。
+      > - EditorConfig 文件只能用于启用规则，并在2019版16.3 及更高版本 Visual Studio 中设置其严重性。
 
       > - 不能使用 EditorConfig 文件来配置旧分析，而规则集也可以。
 - name: CI 生成中的代码分析
   questions:
   - question: >
-      基于.NET Compiler Platform的代码分析在 CI 和生成中 (集成) 工作？
+      基于 .NET Compiler Platform 的代码分析是否在 (CI) 生成的持续集成中工作？
     answer: >
-      是。 对于从 NuGet 包安装的分析器，这些规则在生成时[](roslyn-analyzers-overview.md#build-errors)强制执行，包括在 CI 生成期间。 CI 生成中使用的分析器同时遵守规则集和 EditorConfig 文件的规则配置。 目前，内置于 Visual Studio分析器不能作为 NuGet 包使用，因此这些规则不会在 CI 生成中生成。
+      是的。 对于从 NuGet 包安装的分析器，将[在生成时强制执行](roslyn-analyzers-overview.md#build-errors)这些规则，包括在 CI 生成过程中。 CI 生成中使用的分析器遵循规则集和 EditorConfig 文件中的规则配置。 目前，Visual Studio 中内置的代码分析器不作为 NuGet 包提供，因此这些规则在 CI 版本中不可强制执行。
 - name: IDE 分析器与 StyleCop
   questions:
   - question: >
-      IDE 代码分析器和 StyleCop Visual Studio之间有什么区别？
+      Visual Studio IDE 代码分析器与 StyleCop 分析器之间有何区别？
     answer: >
-      IDE Visual Studio内置分析器，用于查找代码样式和质量问题。 这些规则可帮助你在引入新语言功能时使用这些功能，并提高代码的可维护性。 IDE 分析器会随每个版本Visual Studio更新。
+      Visual Studio IDE 包含内置分析器，用于查找代码样式和质量问题。 这些规则可帮助你在引入新语言功能时使用它们，并改进代码的可维护性。 IDE 分析器随每个 Visual Studio 版本不断地进行更新。
 
 
-      [StyleCop 分析](https://github.com/DotNetAnalyzers/StyleCopAnalyzers) 器是作为 NuGet 包安装的第三方分析器，用于检查代码中样式的一致性。 一般情况下，StyleCop 规则允许为基本代码设置个人首选项，而无需建议一种样式，而不要建议另一种样式。
-- name: 代码分析器与旧分析
+      [StyleCop 分析器](https://github.com/DotNetAnalyzers/StyleCopAnalyzers)是作为 NuGet 包安装的第三方分析器，用于检查代码中的样式一致性。 通常，StyleCop 规则允许你为基本代码设置个人首选项，而无需对另一种样式进行建议。
+- name: 代码分析器与传统分析
   questions:
   - question: >
-      旧式分析和基于.NET Compiler Platform代码分析之间有什么区别？
+      传统分析和基于 .NET Compiler Platform 的代码分析之间有何区别？
     answer: >
-      .NET Compiler Platform代码分析在编译期间实时分析源代码，而旧版分析在生成完成后分析二进制文件。 有关详细信息，请参阅基于 [.NET Compiler Platform分析与旧分析](../code-quality/net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)。
+      基于 .NET Compiler Platform 的代码分析实时分析源代码，并在编译期间分析二进制文件。 有关详细信息，请参阅[基于 .NET Compiler Platform 的分析与旧式分析](../code-quality/net-analyzers-faq.yml#what-s-the-difference-between-legacy-fxcop-and--net-analyzers-)。
 - name: FxCop 分析器与 .NET 分析器
   questions:
   - question: >
-      FxCop 分析器和 .NET 分析器之间有什么区别？
+      FxCop 分析器与 .NET 分析器之间有何区别？
     answer: >
-      FxCop 分析器和 .NET 分析器都.NET Compiler Platform ( FxCop CA 规则) "Roslyn"分析器实现。 在 2019 Visual Studio 16.8 和 .NET 5.0 之前，这些分析器作为 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)包 提供。 从 Visual Studio 2019 16.8 和 .NET 5.0 开始， [.NET SDK 中提供](/dotnet/fundamentals/code-analysis/overview)了这些分析器。 它们也作为 `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)提供。 请考虑 [从 FxCop 分析器迁移到 .net 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)。
+      fxcop 分析器和 .net 分析器都是指 fxcop CA 规则 ) 分析器实现的 .NET Compiler Platform ( "Roslyn"。 在 2019 16.8 和 .net 5.0 Visual Studio 之前，这些分析器作为 `Microsoft.CodeAnalysis.FxCopAnalyzers` [NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.FxCopAnalyzers)附带。 从 Visual Studio 2019 16.8 和 .net 5.0 开始， [.net SDK 中提供](/dotnet/fundamentals/code-analysis/overview)了这些分析器。 它们也作为 `Microsoft.CodeAnalysis.NetAnalyzers` [NuGet 包](https://www.nuget.org/packages/Microsoft.CodeAnalysis.NetAnalyzers)提供。 请考虑 [从 FxCop 分析器迁移到 .net 分析器](migrate-from-fxcop-analyzers-to-net-analyzers.md)。
 - name: 视警告为错误
   questions:
   - question: "\"我的项目\" 使用 \"生成\" 选项将警告视为错误。 从旧分析迁移到源代码分析后，所有代码分析警告现在都将显示为错误。 如何防止出现这种情况？\n"
@@ -105,7 +105,7 @@ sections:
 - name: 代码分析解决方案属性页
   questions:
   - question: >
-      解决方案的 "代码分析" 属性页在哪里？
+      解决方案的 Code Analysis 属性页在何处？
     answer: >
-      解决方案级别的 "代码分析" 属性页已删除，以支持更可靠的共享属性组。 对于在项目级别管理代码分析，"代码分析" 属性页仍可用。 对于托管项目 (，我们还建议从规则集迁移到 EditorConfig，以便进行规则配置。 ) 用于在解决方案或存储库中的多个/所有项目间共享规则集，我们建议使用共享属性/目标文件或 *属性/* 文件中的 [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)属性定义属性组。 如果你没有任何项目导入的公共属性或目标，则应考虑将此类属性组添加到顶级解决方案目录下的 [属性或目录 .targets 文件](../msbuild/customize-your-build.md) 中，该目录会自动导入到目录或其子目录中定义的所有项目文件中。
-additionalContent: "\n## <a name=\"see-also\"></a>请参阅\n   - [分析器概述](roslyn-analyzers-overview.md)\n   - [EditorConfig 的 .NET 编码约定设置](/dotnet/fundamentals/code-analysis/code-style-rule-options)"
+      解决方案级别的 "Code Analysis" 属性页已删除，以支持更可靠的共享属性组。 对于在项目级别管理 Code Analysis，Code Analysis 属性页仍可用。 对于托管项目 (，我们还建议从规则集迁移到 EditorConfig，以便进行规则配置。 ) 用于在解决方案或存储库中的多个/所有项目间共享规则集，我们建议使用共享属性/目标文件或 *属性/* 文件中的 [CodeAnalysisRuleSet](../code-quality/using-rule-sets-to-group-code-analysis-rules.md#specify-a-rule-set-for-a-project)属性定义属性组。 如果你没有任何项目导入的公共属性或目标，则应考虑将此类属性组添加到顶级解决方案目录下的 [属性或目录 .targets 文件](../msbuild/customize-your-build.md) 中，该目录会自动导入到目录或其子目录中定义的所有项目文件中。
+additionalContent: "\n## <a name=\"see-also\"></a>另请参阅\n   - [分析器概述](roslyn-analyzers-overview.md)\n   - [EditorConfig 的 .NET 编码约定设置](/dotnet/fundamentals/code-analysis/code-style-rule-options)"

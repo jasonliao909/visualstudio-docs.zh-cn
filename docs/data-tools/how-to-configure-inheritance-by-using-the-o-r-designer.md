@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: bfec5df4ed32178616f1086b2cd52216cb25c9c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134775"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601144"
 ---
 # <a name="how-to-configure-inheritance-by-using-the-or-designer"></a>如何：通过 O/R 设计器配置继承
 **对象关系设计器** (**O/R 设计器**) 支持单表继承的概念，因为它通常在关系系统中实现。 在单表继承中，一个数据库表同时包含父信息和子信息的字段。 使用关系数据时，一个鉴别器列包含的值确定任意记录属于哪个类。
@@ -53,7 +53,7 @@ ms.locfileid: "122134775"
 
 10. （可选）还可以设置“继承默认值”属性，以便在继承层次结构中指定类型，当加载与任何定义的继承代码都不匹配的行时将使用该类型。 换句话说，如果记录在其鉴别器列中的值与 " **派生类鉴别器值** " 或 " **基类鉴别** 器值" 属性中的值不匹配，则该记录将加载到指定为 " **继承默认** 值" 的类型中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练：创建 LINQ to SQL 类（O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)

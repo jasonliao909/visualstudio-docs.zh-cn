@@ -1,7 +1,7 @@
 ---
 title: “混合最少量规则”规则集
 ms.date: 11/04/2016
-description: 了解 Visual Studio 中的混合最低规则规则集。 请参阅支持公共语言运行时的 c + + 项目规则的说明。
+description: 了解中设置的混合最低规则规则Visual Studio。 请参阅支持公共语言运行时的 C++ 项目的规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: bc8df61c-19af-40ab-a871-315807e5f4bf
@@ -12,17 +12,17 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 159cbea1197579240b54fe5a38713d2c24c42424
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045003"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601273"
 ---
 # <a name="mixed-minimum-rules-rule-set"></a>“混合最少量规则”规则集
 
-Microsoft 混合的最小规则重点介绍支持公共语言运行时的 c + + 项目中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
+Microsoft 混合最低规则侧重于支持公共语言运行时的 C++ 项目中的最关键问题，包括潜在的安全漏洞和应用程序崩溃。
 
-在为支持公共语言运行时的 c + + 项目创建的任何自定义规则集中包含此规则集。
+在为支持公共语言运行时的 C++ 项目创建的任何自定义规则集中包括此规则集。
 
 |规则|描述|
 |----------|-----------------|
@@ -137,7 +137,7 @@ Microsoft 混合的最小规则重点介绍支持公共语言运行时的 c + + 
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|\_宏值的参数 \_ \_ 为 null|
+|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|

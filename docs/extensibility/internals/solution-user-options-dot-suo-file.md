@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: c5f17eace2b46458f11b2277d44a2db3da8539bb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102319"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664310"
 ---
 # <a name="solution-user-options-suo-file"></a>解决方案用户选项 (.Suo) 文件
 解决方案用户选项 ( .suo) 文件包含每用户解决方案选项。 不应将此文件签入到源代码管理中。
@@ -39,6 +39,6 @@ ms.locfileid: "122102319"
 
  这两种方法（ `SaveUserOptions` 和 `WriteUserOptions` ）将以递归方式调用，以将每个要保存到 .suo 文件的信息流都进行递归调用 `IVsSolutionPersistence` 。 它们以递归方式调用，以允许向 .suo 文件写入多个流。 通过这种方式，用户信息会随解决方案一起保留，并且保证在下一次打开解决方案时存在。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts>
 - [解决方案](../../extensibility/internals/solutions-overview.md)

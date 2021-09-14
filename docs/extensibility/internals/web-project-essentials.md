@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 23290b0cccaef596ac2a5d55623f3ddd7ef02ff259e5aba81475bfb638d263e4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54888223ec789babd4af15c6b675a138bdb81520
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121337846"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664293"
 ---
 # <a name="web-project-essentials"></a>Web 项目基础知识
 Web 项目创建 Web 应用程序。 您可以使用 Web 项目来创建包含智能网页的 Web 应用程序。 智能网页包含按需呈现网页的服务器端代码。
@@ -60,5 +60,5 @@ Web 项目创建 Web 应用程序。 您可以使用 Web 项目来创建包含�
 
   - 应始终在代码编辑器的主缓冲区中创建错误标记 (红色标记) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Web 项目](../../extensibility/internals/web-projects.md)

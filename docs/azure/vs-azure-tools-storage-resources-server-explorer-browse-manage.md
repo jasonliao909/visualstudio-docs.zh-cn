@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 8/24/2017
 ms.author: ghogen
 ms.openlocfilehash: 18726b1fa7f42b46cd309cfd4edef289d9469d39
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602110"
 ---
 # <a name="browse-and-manage-storage-resources-by-using-server-explorer"></a>使用服务器资源管理器浏览和管理存储资源
 
@@ -22,15 +22,15 @@ ms.locfileid: "122053404"
 
 ## <a name="overview"></a>概述
 
-如果已安装 Azure Tools for Microsoft Visual Studio，可以从 Azure 的存储帐户中查看 Blob、队列和表数据。 服务器资源管理器中的 "Azure **存储**" 节点显示本地存储模拟器帐户和其他 Azure 存储帐户中的数据。
+如果已安装 Azure Tools for Microsoft Visual Studio，可以从 Azure 的存储帐户中查看 Blob、队列和表数据。 "存储"服务器资源管理器"节点显示本地存储模拟器帐户和其他 Azure 存储帐户中的数据。 
 
-若要在 Visual Studio 中查看服务器资源管理器，请在菜单栏上选择 "**查看**  >  **服务器资源管理器**"。 “存储”节点显示已连接的每个 Azure 订阅或证书下的所有存储帐户。 如果存储帐户未出现，可以遵循[本文稍后部分](#add-storage-accounts-by-using-server-explorer)的说明来添加帐户。
+若要在服务器资源管理器视图中Visual Studio，请在菜单栏上选择"查看  >  **服务器资源管理器"。** “存储”节点显示已连接的每个 Azure 订阅或证书下的所有存储帐户。 如果存储帐户未出现，可以遵循[本文稍后部分](#add-storage-accounts-by-using-server-explorer)的说明来添加帐户。
 
-从 Azure SDK 2.7 开始，也可使用 Cloud Explorer 来查看和管理 Azure 资源。 有关详细信息，请参阅 [Cloud Explorer 管理 Azure 资源](vs-azure-tools-resources-managing-with-cloud-explorer.md)。
+从 Azure SDK 2.7 开始，也可使用 Cloud Explorer 来查看和管理 Azure 资源。 有关详细信息，请参阅使用 [Cloud Explorer](vs-azure-tools-resources-managing-with-cloud-explorer.md)管理 Azure 资源。
 
 ## <a name="view-and-manage-storage-resources-in-visual-studio"></a>在 Visual Studio 中查看和管理存储资源
 
-服务器资源管理器自动在存储模拟器帐户中显示 Blob、队列和表的列表。 存储模拟器帐户在 "**存储**" 节点下作为 "**开发**" 节点服务器资源管理器列出。
+服务器资源管理器自动在存储模拟器帐户中显示 Blob、队列和表的列表。 存储模拟器帐户在 服务器资源管理器 节点下 **存储作为"** 开发"**节点** 列出。
 
 若要查看存储模拟器帐户的资源，请展开“开发”节点。 展开“开发”节点时，如果尚未启动存储模拟器，它会自动启动。 此过程可能需要数秒钟的时间。 当存储模拟器启动时，可以继续在 Visual Studio 的其他区域中工作。
 
@@ -72,7 +72,7 @@ ms.locfileid: "122053404"
 
 ### <a name="to-create-a-folder-or-subfolder-in-a-blob-container"></a>在 Blob 容器中创建文件夹或子文件夹
 
-1. 在 **Cloud Explorer** 中选择 blob 容器。 在容器窗口中，选择“上传 Blob”按钮。
+1. 在 中选择 blob **Cloud Explorer。** 在容器窗口中，选择“上传 Blob”按钮。
 
 1. 在“上传新文件”对话框中，选择“浏览”按钮并指定要上传的文件，并在“文件夹(可选)”框中输入文件夹名称。
 
@@ -102,7 +102,7 @@ ms.locfileid: "122053404"
 
 ### <a name="to-download-blob-data"></a>下载 Blob 数据
 
-在 **Cloud Explorer** 中，使用以下任何方法：
+在 **Cloud Explorer** 中，使用以下任一方法：
 
 * 打开一个或多个 Blob 的快捷菜单，并选择“打开”。
 * 选择 Blob 名称，并选择“打开”按钮。
@@ -134,7 +134,7 @@ Blob 数据在本地缓存，并且对照 Azure Blob 存储中 Blob 的最后修
 
 ### <a name="to-edit-a-blob"></a>编辑 Blob
 
-选择 "blob"，然后选择 " **打开 blob** " 按钮。
+选择 Blob，然后选择"打开 **Blob"** 按钮。
 
 文件将下载到临时位置，在本地计算机上打开。 进行更改之后，再次上传 Blob。
 
@@ -166,7 +166,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 
 ### <a name="to-create-a-table"></a>创建表
 
-1. 在 **Cloud Explorer** 中，选择存储帐户的 **"** 表"节点，然后选择"**创建表"。**
+1. 在 **Cloud Explorer** 中，选择存储 **帐户的"** 表"节点，然后选择"**创建表"。**
 1. 在“创建表”对话框中，输入表的名称。
 
 ### <a name="to-view-table-data"></a>查看表数据
@@ -235,7 +235,7 @@ Azure 表存储可存储大量结构化数据。 该服务是一个 NoSQL 数据
 ### <a name="to-refresh-table-data"></a>刷新表数据
 
 * 选择“存储”下的“表”节点，并选择服务器资源管理器工具栏上的“刷新”按钮。
-* 若要刷新在 表设计器 中显示的实体列表，请选择"执行 **"按钮** 表设计器。
+* 若要刷新在 表设计器 中显示的实体 **列表**，请选择"执行 **"按钮** 表设计器。
 
 ### <a name="to-refresh-queue-data"></a>刷新队列数据
 

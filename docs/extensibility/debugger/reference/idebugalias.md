@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52590d62bb2bc6d9090432efe7e11a343601cfd9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064781"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600962"
 ---
 # <a name="idebugalias"></a>IDebugAlias
 > [!IMPORTANT]
@@ -46,7 +46,7 @@ IDebugAlias : IUnknown
 |------------|-----------------|
 |[GetObject](../../../extensibility/debugger/reference/idebugalias-getobject.md)|获取此别名引用的对象。|
 |[GetName](../../../extensibility/debugger/reference/idebugalias-getname.md)|获取别名。|
-|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|检索一 `ICorDebugValue` 个接口，该接口提供对此对象的托管代码信息的访问 (托管代码) 。|
+|[GetICorDebugValue](../../../extensibility/debugger/reference/idebugalias-geticordebugvalue.md)|检索一 `ICorDebugValue` 个接口，该接口提供对此对象的托管代码 (仅访问) 。|
 |[释放](../../../extensibility/debugger/reference/idebugalias-dispose.md)|将此别名标记为不再使用。|
 
 ## <a name="remarks"></a>备注
@@ -59,7 +59,7 @@ IDebugAlias : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [表达式计算接口](../../../extensibility/debugger/reference/expression-evaluation-interfaces.md)
 - [CreateAlias](../../../extensibility/debugger/reference/idebugobject2-createalias.md)
 - [FindAlias](../../../extensibility/debugger/reference/idebugbinder3-findalias.md)

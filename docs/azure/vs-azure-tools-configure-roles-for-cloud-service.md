@@ -9,11 +9,11 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: e7d775bcb87e38bb2628814327ef72d739ad5695
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098601"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602156"
 ---
 # <a name="configure-azure-cloud-service-roles-with-visual-studio"></a>使用 Visual Studio 配置 Azure 云服务角色
 一个 Azure 云服务可以有一个辅助角色或 Web 角色。 对于每个角色，需要定义该角色的设置方式，并配置该角色的运行方式。 若要详细了解云服务中的角色，请观看视频 [Introduction to Azure Cloud Services](https://channel9.msdn.com/Series/Windows-Azure-Cloud-Services-Tutorials/Introduction-to-Windows-Azure-Cloud-Services)（Azure 云服务简介）。
@@ -157,7 +157,7 @@ ms.locfileid: "122098601"
 
 1. 在“服务配置”列表中，选择要更新的服务配置。
 
-    ![服务配置列表2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
+    ![服务配置列表 2](./media/vs-azure-tools-configure-roles-for-cloud-service/project-properties-settings-tab-select-configuration.png)
 
 1. 若要添加自定义设置，请选择“添加设置”。
 
@@ -173,7 +173,7 @@ ms.locfileid: "122098601"
 
 1. 要删除某个自定义设置，选择该设置，并选择“删除设置”。
 
-1. 从 "Visual Studio" 工具栏中，选择 "**保存**"。
+1. 在工具栏Visual Studio，选择"保存 **"。**
 
 ## <a name="programmatically-access-a-custom-settings-value"></a>以编程方式访问自定义设置的值
 
@@ -198,7 +198,7 @@ ms.locfileid: "122098601"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在 **解决方案资源管理器** 中，展开 "项目" 节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
+1. 在 **解决方案资源管理器** 中，展开项目节点。 在“角色”节点下，右键单击要更新的角色，并从上下文菜单中选择“属性”。
 
     ![解决方案资源管理器中的 Azure 角色上下文菜单](./media/vs-azure-tools-configure-roles-for-cloud-service/solution-explorer-azure-role-context-menu.png)
 
@@ -208,7 +208,7 @@ ms.locfileid: "122098601"
 
 1. 在“服务配置”列表中，确保已选择“所有配置”，因为本地存储设置将应用到所有服务配置。 使用其他任何值会导致禁用页面上的所有输入字段。
 
-    ![服务配置列表3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
+    ![服务配置列表 3](./media/vs-azure-tools-configure-roles-for-cloud-service/role-local-storage-tab-service-configuration.png)
 
 1. 若要添加本地存储条目，请选择“添加本地存储”。
 
@@ -224,7 +224,7 @@ ms.locfileid: "122098601"
 
 1. 要删除某个本地存储项，请选择该项，并选择“删除本地存储”。
 
-1. 从 "Visual Studio" 工具栏中，选择 "**保存**"。
+1. 在工具栏Visual Studio，选择"保存 **"。**
 
 ## <a name="programmatically-accessing-local-storage"></a>以编程方式访问本地存储
 

@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: b3432853ce9e6aaf4f37c4a0c363099f4a61d988
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099238"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602192"
 ---
 # <a name="content-definition-dialog-box"></a>“内容定义”对话框
 
@@ -37,6 +37,6 @@ ms.locfileid: "122099238"
 
 可以在活动的 **消息** 部分 <xref:System.ServiceModel.Activities.ReceiveMessageContent> 或活动的 **参数** 部分中指定内容 <xref:System.ServiceModel.Activities.ReceiveParametersContent> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [工作流设计器 UI 帮助](browse-and-select-a-dotnet-type-dialog-box.md)

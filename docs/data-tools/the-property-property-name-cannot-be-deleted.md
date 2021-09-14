@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 307e0f7bf52ed7e95536a13b4b292fda90ef4be1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129917"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601078"
 ---
 # <a name="the-property-property-name-cannot-be-deleted"></a>属性 \<property name> 无法删除
 
@@ -34,6 +34,6 @@ ms.locfileid: "122129917"
 
 3. 再次尝试删除该属性。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

@@ -1,6 +1,6 @@
 ---
 title: VSIX 颜色编译器|Microsoft Docs
-description: 了解扩展Visual Studio编译器工具，该工具是一个控制台应用程序，用于将主题Visual Studio颜色覆盖到 .pkgdef 文件中。
+description: 了解扩展Visual Studio编译器工具，该工具是一个控制台应用程序，用于将主题Visual Studio中的颜色覆盖到 .pkgdef 文件中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c724dae82bb8f7f05c83c96d1c331d72eac0abd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042018"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600843"
 ---
 # <a name="vsix-color-compiler"></a>VSIX 颜色编译器
-Visual Studio 扩展颜色编译器工具是一个控制台应用程序，它采用表示现有 Visual Studio 主题颜色的 .xml 文件，并覆盖它到 .pkgdef 文件，以便这些颜色可在 Visual Studio 中使用。 由于比较不同文件之间的差异.xml，此工具可用于管理源代码管理中的自定义颜色。 还可以将该文件挂钩到生成环境中，以便生成的输出是有效的 .pkgdef 文件。
+Visual Studio扩展颜色编译器工具是一个控制台应用程序，它采用表示现有 Visual Studio 主题颜色的 .xml 文件，并覆盖它到 .pkgdef 文件，以便可以在 Visual Studio 中Visual Studio。 由于比较不同文件之间的差异.xml，此工具可用于管理源代码管理中的自定义颜色。 还可以将该文件挂钩到生成环境中，以便生成的输出是有效的 .pkgdef 文件。
 
  **主题 XML 架构**
 
@@ -108,10 +108,10 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序，它采
 
 |**Attribute**|**定义**|
 |-|-|
-|类型|[必需]颜色的类型。 该参数可以是下列值之一：<br /><br /> *CT_INVALID：* 颜色无效或未设置。<br /><br /> *CT_RAW：* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX：* 请勿使用。<br /><br /> *CT_SYSCOLOR：* SysColor Windows系统颜色。<br /><br /> *CT_VSCOLOR：* 来自Visual Studio的颜色__VSSYSCOLOREX。<br /><br /> *CT_AUTOMATIC：* 自动颜色。<br /><br /> *CT_TRACK_FOREGROUND：* 请勿使用。<br /><br /> *CT_TRACK_BACKGROUND：* 请勿使用。|
+|类型|[必需]颜色的类型。 该参数可以是下列值之一：<br /><br /> *CT_INVALID：* 颜色无效或未设置。<br /><br /> *CT_RAW：* 原始 ARGB 值。<br /><br /> *CT_COLORINDEX：* 请勿使用。<br /><br /> *CT_SYSCOLOR：* SysColor Windows系统颜色。<br /><br /> *CT_VSCOLOR：* 一Visual Studio颜色__VSSYSCOLOREX。<br /><br /> *CT_AUTOMATIC：* 自动颜色。<br /><br /> *CT_TRACK_FOREGROUND：* 请勿使用。<br /><br /> *CT_TRACK_BACKGROUND：* 请勿使用。|
 |源|[必需]以十六进制表示的颜色的值|
 
- Type 属性中的架构__VSCOLORTYPE枚举支持的所有值。 但是，我们建议你仅使用 CT_RAW CT_SYSCOLOR。
+ Type 属性中的架构支持__VSCOLORTYPE枚举支持的所有值。 但是，我们建议你仅使用 CT_RAW CT_SYSCOLOR。
 
  **一起**
 
@@ -136,7 +136,7 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序，它采
 
  **参数**
 
-|**交换机名称**|**备注**|**必需或可选**|
+|**交换机名称**|**说明**|**必需或可选**|
 |-|-|-|
 |未命名 (.xml文件) |这是第一个未命名的参数，是要转换的 XML 文件的路径。|必需|
 |未命名 (.pkgdef) |这是第二个未命名的参数，是生成的 .pkgdef 文件的输出路径。<br /><br /> 默认值 \<XML Filename> ：.pkgdef|可选|
@@ -152,14 +152,14 @@ Visual Studio 扩展颜色编译器工具是一个控制台应用程序，它采
 
 ## <a name="notes"></a>说明
 
-- 此工具要求安装最新版本的 VC++ 运行时。
+- 此工具需要安装最新版本的 VC++ 运行时。
 
-- 仅支持单个文件。 不支持通过文件夹路径进行批量转换。
+- 仅支持单个文件。 不支持通过文件夹路径进行的大容量转换。
 
-- 该工具可在 `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
+- 可在中找到该工具 `<VS Install Path>\VSSDK\VisualStudioIntegration\Tools\Bin\`
 
 ## <a name="sample-output"></a>示例输出
- 该工具生成的 .pkgdef 文件将类似于以下键：
+ 该工具生成的 .pkgdef 文件将类似于以下项：
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\Environment]

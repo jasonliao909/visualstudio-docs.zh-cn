@@ -1,6 +1,6 @@
 ---
-title: 排查 Office 解决方案中的错误
-description: 了解如何解决在 Visual Studio 中开发 Microsoft Office 解决方案时可能发生的错误。
+title: 排查解决方案Office错误
+description: 了解如何排查在开发新解决方案时Microsoft Office发生的Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: troubleshooting
@@ -24,13 +24,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d5959df0d24db2807bead8331d04befb7f769ae8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099485"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602215"
 ---
-# <a name="troubleshoot-errors-in-office-solutions"></a>排查 Office 解决方案中的错误
+# <a name="troubleshoot-errors-in-office-solutions"></a>排查解决方案Office错误
   在 Visual Studio 中开发 Office 解决方案时，如果执行下面的任务，可能会遇到问题：
 
 - [创建、升级和打开项目](#creating)
@@ -46,7 +46,7 @@ ms.locfileid: "122099485"
 ## <a name="create-upgrade-and-open-projects"></a><a name="creating"></a> 创建、升级和打开项目
  创建或打开 Office 项目时，可能会遇到以下错误。
 
-### <a name="the-project-cannot-be-created"></a>无法创建该项目
+### <a name="the-project-cannot-be-created"></a>无法创建项目
  尝试创建或打开 Office 项目时出现错误，而 Visual Studio 没有足够的信息确定导致错误的原因。 请尝试关闭项目，退出 Visual Studio，然后重新启动。
 
  如果你正在尝试创建文档级项目，则可能已在 Excel 或 Word 中打开与新项目中的文档同名的另一个文档。 请确保 Excel 或 Word 的所有其他实例均已关闭。
@@ -54,8 +54,8 @@ ms.locfileid: "122099485"
 ### <a name="control-properties-are-lost-when-you-create-a-new-project-based-on-a-document-from-an-existing-project"></a>基于现有项目中的文档创建新项目时，控件属性将丢失
  如果基于现有项目中的文档创建新 Office 项目，则不会将该文档中任何控件的属性复制到新项目中。 必须为任何先前存在的控件手动重置其属性。 或者，可以通过以下方法保留控件属性：创建现有项目的副本（而不是创建新项目）；或者将现有项目加载到新解决方案（在设计器中），然后将控件从现有文档复制并粘贴到新文档中。
 
-### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>基于现有工作簿创建 Excel 工作簿项目时出现错误
- 如果基于现有工作簿创建新的 Excel 工作簿项目，可能会看到以下错误的组合。
+### <a name="errors-when-you-create-an-excel-workbook-project-based-on-an-existing-workbook"></a>基于现有工作簿创建Excel工作簿项目时出错
+ 如果基于现有工作簿Excel工作簿项目，可能会看到以下错误的组合。
 
  来自 Excel：“隐私问题警告: 此文档中包含宏、ActiveX 控件、XML 扩展包信息或 Web 组件。 其中可能包含个人信息，并且这些信息不能通过“文档检查器”删除。”
 
@@ -67,7 +67,7 @@ ms.locfileid: "122099485"
 
 2. 在 Excel 中打开“信任中心”。
 
-3. 在 " **隐私选项** " 选项卡上，清除 " **保存时从文件属性中删除个人信息** " 复选框。
+3. 在" **隐私选项"** 选项卡上，清除"保存时从文件属性 **中删除个人信息** "复选框。
 
 4. 保存工作簿并关闭 Excel。
 
@@ -82,15 +82,15 @@ ms.locfileid: "122099485"
 
  或者，确保仅在安装了 Microsoft Office 2010 的开发计算机上打开迁移的项目。
 
-### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>升级 Office 2003 包含 Windows 窗体控件的文档级项目中的错误
- 如果升级 Microsoft Office 2003 文档级项目，并且该文档包含 Windows 窗体控件，则升级后的项目可能包含编译或运行时错误。 若要避免此问题，请在升级项目之前在开发计算机上安装 Visual Studio 2005 Tools for Office Second Edition Runtime。 可以从 Microsoft 下载中心（网址为： [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392)）下载此版本的运行时作为可再发行组件包。
+### <a name="errors-in-upgraded-office-2003-document-level-projects-that-contain-windows-forms-controls"></a>在包含 Office 窗体控件的 2003 文档级项目中Windows错误
+ 如果升级 Microsoft Office 2003 文档级项目，并且文档包含 Windows 窗体控件，则升级后的项目可能有编译或运行时错误。 若要避免此问题，请在升级项目之前在开发计算机上安装 Visual Studio 2005 Tools for Office Second Edition Runtime。 可以从 Microsoft 下载中心（网址为： [Microsoft Visual Studio 2005 Tools for Office Second Edition Runtime (VSTO 2005 SE) (x86)](https://www.microsoft.com/download/details.aspx?id=2392)）下载此版本的运行时作为可再发行组件包。
 
  完成项目升级后，如果它未被任何其他 Office 解决方案使用，你可以将 Visual Studio 2005 Tools for Office Second Edition Runtime 从开发计算机上卸载。
 
 ## <a name="use-the-designers"></a><a name="designers"></a> 使用设计器
  在文档级项目中使用文档、工作簿或工作表设计器时，可能会遇到以下错误。
 
-### <a name="designer-failed-to-load-correctly"></a>设计器未能正确加载
+### <a name="designer-failed-to-load-correctly"></a>设计器无法正确加载
  在以下情况下，Visual Studio 无法打开设计器：
 
 - Excel 或 Word 已打开且显示模式对话框。 若要打开设计器，请查看 Excel 或 Word 是否有已打开的模式对话框，然后关闭所有打开的模式对话框。 如果没有打开的模式对话框，则可能需要先执行一些其他操作 Excel 或 Word 才可做出响应。
@@ -99,35 +99,35 @@ ms.locfileid: "122099485"
 
 - Excel 启动时，开发计算机上安装的某个 Excel VSTO 外接程序正在显示一个对话框。 若要创建 Excel 文档级项目，则必须首先禁用该 VSTO 外接程序。
 
-### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>控件在文档或工作表中显示为黑色矩形
- 如果对文档或工作表中的控件进行分组，则 Visual Studio 不再识别这些控件。 在 " **属性** " 窗口中无法访问已分组的控件，它们在文档或工作表中显示为黑色矩形。 若要还原控件的功能，必须取消对控件进行分组。
+### <a name="controls-appear-as-black-rectangles-on-the-document-or-worksheet"></a>控件在文档或工作表上显示为黑色矩形
+ 如果对文档或工作表中的控件进行分组，则 Visual Studio 不再识别这些控件。 无法在"属性"窗口中访问分组控件，这些控件在文档或工作表上显示为黑色矩形。 若要还原控件的功能，必须取消对控件进行分组。
 
-### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 模板上的控件不显示在 Visual Studio
- 如果在 Visual Studio 设计器中打开 Word 模板，则该模板中未嵌入文本中的控件可能不可见。 这是因为 Visual Studio 在 **普通** 视图中打开 Word 模板。 若要查看控件，请单击 "**视图**" 菜单，指向 **Microsoft Office Word "视图**，然后单击"**打印布局**"。
+### <a name="controls-on-a-word-template-are-not-visible-in-visual-studio"></a>Word 模板上的控件在窗体中Visual Studio
+ 如果在 Visual Studio 设计器中打开 Word 模板，则该模板中未嵌入文本中的控件可能不可见。 这是因为，Visual Studio在"普通"视图中打开 **Word** 模板。 若要查看控件，请单击 **"视图"** 菜单，指向 **"Microsoft Office"，** 然后单击"打印 **布局"。**
 
-### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>在 Visual Studio 设计器中插入剪贴画命令不执行任何操作
- 当在 Visual Studio 设计器中打开 Excel 或 Word 时，单击功能区中的 "**图例**" 选项卡上的 "**剪贴画**" 按钮不会打开 "**剪贴画**" 任务窗格。 若要添加 "剪贴画"，您必须打开主项目文件夹中的工作簿或文档的副本， (不在 Visual Studio 外部) *\bin* 文件夹中的副本，请添加剪贴画，然后保存该工作簿或文档。
+### <a name="insert-clip-art-command-does-nothing-in-the-visual-studio-designer"></a>插入剪贴画命令在设计器Visual Studio执行任何操作
+ 当Excel设计器中打开"Visual Studio"或"Word"时，单击功能区中"插图"选项卡上的"剪贴画"按钮不会打开"剪 **贴画**"任务窗格。 若要添加剪贴画，必须打开位于主项目文件夹 (而不是 Visual Studio 外部 *的 \bin* 文件夹) 中的工作簿或文档的副本，添加剪贴画，然后保存工作簿或文档。
 
 ## <a name="write-code"></a><a name="code"></a> 编写代码
  在 Office 项目中编写代码时，可能会遇到以下错误。
 
-### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C 时，无法访问 Office 对象的某些事件\#
+### <a name="some-events-of-office-objects-are-not-accessible-when-using-c"></a>使用 C 时Office对象中的某些事件\#
  在某些情况下，当你尝试在 Visual C# 项目中访问 Office 主互操作程序集 (PIA) 类型的实例的特定事件时，可能会看到类似于以下形式的编译器错误。
 
  “‘Microsoft.Office.Interop.Excel._Application.NewWorkbook’与‘Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook’之间存在二义性”
 
- 此错误意味着你正尝试访问的事件与对象的其他属性或方法同名。 若要访问该事件，必须将该对象强制转换为其 *事件接口*。
+ 此错误意味着你正尝试访问的事件与对象的其他属性或方法同名。 若要访问事件，必须将 对象强制转换到其 *事件接口*。
 
- 具有事件的 Office PIA 类型实现两种接口：核心接口和事件接口；前者包含所有属性和方法，后者则包含由对象公开的事件。 这些事件接口使用命名约定 *objectname* 事件 *n* _Event，例如 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> 。 如果无法访问应在某一对象中找到的事件，请将该对象强制转换为其事件接口。
+ 具有事件的 Office PIA 类型实现两种接口：核心接口和事件接口；前者包含所有属性和方法，后者则包含由对象公开的事件。 这些事件接口使用命名约定 *objectname* events *n* _Event，如 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 和 <xref:Microsoft.Office.Interop.Word.ApplicationEvents2_Event> 。 如果无法访问应在某一对象中找到的事件，请将该对象强制转换为其事件接口。
 
  例如，<xref:Microsoft.Office.Interop.Excel.Application> 对象具有一个<xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件和一个 <xref:Microsoft.Office.Interop.Excel._Application.NewWorkbook%2A> 属性。 若要处理 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event.NewWorkbook> 事件，请将 <xref:Microsoft.Office.Interop.Excel.Application> 强制转换为 <xref:Microsoft.Office.Interop.Excel.AppEvents_Event> 接口。 下面的代码示例演示了如何在 Excel 的文档级项目中进行此操作。
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingExcelCS/ThisWorkbook.cs" id="Snippet1":::
 
- 有关 Office pia 中的事件接口的详细信息，请参阅[Office 主互操作程序集中的类和接口的概述](/previous-versions/office/office-12//ms247299(v=office.12))。
+ 有关主 PIA 中的事件接口Office，请参阅主互操作程序集 中的类[Office接口概述](/previous-versions/office/office-12//ms247299(v=office.12))。
 
-### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>无法在面向或的项目中引用 Office PIA 类 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)][!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
- 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目中，默认情况下 Office PIA 中定义的类的代码不进行编译。 Pia 中的类使用命名约定 *objectname* 类，如 <xref:Microsoft.Office.Interop.Word.DocumentClass> 和 <xref:Microsoft.Office.Interop.Excel.WorkbookClass> 。 例如，Word VSTO 外接程序项目中的以下代码将不进行编译。
+### <a name="cannot-reference-office-pia-classes-in-projects-that-target-the-net_v40_short-or-the-net_v45"></a>无法Office或 的项目中引用 PIA [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 类[!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]
+ 在面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目中，默认情况下 Office PIA 中定义的类的代码不进行编译。 PIA 中的类使用命名约定 *objectname* 类，例如 <xref:Microsoft.Office.Interop.Word.DocumentClass> 和 <xref:Microsoft.Office.Interop.Excel.WorkbookClass> 。 例如，Word VSTO 外接程序项目中的以下代码将不进行编译。
 
 ```vb
 Dim document As Word.DocumentClass = Globals.ThisAddIn.Application.ActiveDocument
@@ -139,9 +139,9 @@ Word.DocumentClass document = (Word.DocumentClass) Globals.ThisAddIn.Application
 
  此代码将导致以下编译错误：
 
-- Visual Basic：当使用无 PIA 模式链接的程序集时，不允许对类 "DocumentClass" 的引用。
+- Visual Basic："当使用 No-PIA 模式链接类 'DocumentClass' 的程序集时，不允许引用该类。"
 
-- Visual c #：无法嵌入 "互操作类型" Microsoft.Office.Interop.Word.DocumentClass "。 请改用适用的接口。”
+- Visual C#："互操作类型 'Microsoft.Office。无法嵌入 Interop.Word.DocumentClass' 。 请改用适用的接口。”
 
   若要解决此错误，请修改代码以改为引用相应的接口。 例如，应引用 <xref:Microsoft.Office.Interop.Word.Document> 接口的实例，而不是引用 <xref:Microsoft.Office.Interop.Word.DocumentClass> 对象。
 
@@ -153,10 +153,10 @@ Dim document As Word.Document = Globals.ThisAddIn.Application.ActiveDocument
 Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 ```
 
- 默认情况下，面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目会自动嵌入 Office PIA 中的所有互操作类型。 发生此编译错误的原因是嵌入互操作类型功能仅适用于接口，而不适用于类。 有关 Office pia 中的接口和类的详细信息，请参阅[Office 主互操作程序集中的类和接口的概述](/previous-versions/office/office-12/ms247299(v=office.12))。 有关 Office 项目中的嵌入互操作类型功能的详细信息，请参阅[设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)。
+ 默认情况下，面向 [!INCLUDE[net_v40_short](../sharepoint/includes/net-v40-short-md.md)] 或 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)] 的项目会自动嵌入 Office PIA 中的所有互操作类型。 发生此编译错误的原因是嵌入互操作类型功能仅适用于接口，而不适用于类。 有关这些 PIA 中的接口和类Office，请参阅主互操作程序集 中的类Office[接口概述](/previous-versions/office/office-12/ms247299(v=office.12))。 有关项目中嵌入式互操作类型功能Office，请参阅设计和创建Office[解决方案](../vsto/designing-and-creating-office-solutions.md)。
 
-### <a name="references-to-office-classes-are-not-recognized"></a>无法识别对 Office 类的引用
- 某些类名（例如应用程序）位于多个命名空间中，例如 <xref:Microsoft.Office.Interop.Word> 和 <xref:System.Windows.Forms> 。 出于此原因，项目模板顶部 **的 import** / **using** 语句包含简写的限定常数，例如：
+### <a name="references-to-office-classes-are-not-recognized"></a>无法Office类的引用
+ 某些类名（例如 Application）在多个命名空间（如 和 ） <xref:Microsoft.Office.Interop.Word> 中 <xref:System.Windows.Forms> 。 出于此原因，项目模板顶部 **的 import** / **using** 语句包含简写的限定常数，例如：
 
  :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreTroubleshootingWordCS/ThisDocument.cs" id="Snippet2":::
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreTroubleshootingWordVB/ThisDocument.vb" id="Snippet2":::
@@ -216,7 +216,7 @@ Word.Document document = Globals.ThisAddIn.Application.ActiveDocument;
 
  无论是在对话框中单击 **"是" 还是 "** **否**"，Visual Studio 都将终止 Excel 或 Word 进程，并停止调试器。 若要停止调试项目而不显示此对话框，请直接退出 Excel 或 Word，而不是在 Visual Studio 中停止调试器。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [解决 Office 解决方案问题](../vsto/troubleshooting-office-solutions.md)
 - [解决 Office 解决方案安全性问题](../vsto/troubleshooting-office-solution-security.md)
 - [解决 Office 解决方案部署问题](../vsto/troubleshooting-office-solution-deployment.md)

@@ -21,11 +21,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 030fe8a72637e82bc317c5fb457f4e8861223c52
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045042"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601116"
 ---
 # <a name="pass-data-between-forms"></a>在窗体间传递数据
 
@@ -50,7 +50,7 @@ ms.locfileid: "122045042"
 
 - 在窗体间传递数据。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
@@ -161,7 +161,7 @@ ms.locfileid: "122045042"
 
 8. 清除“返回 DataTable”选项，然后单击“下一步”。
 
-9. 单击“完成”。
+9. 单击“完成”  。
 
 ## <a name="create-a-method-on-form2-to-pass-data-to"></a>在 Form2 上创建用于将数据传递到的方法
 
@@ -187,7 +187,7 @@ ms.locfileid: "122045042"
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataDisplaying/CS/Form1.cs" id="Snippet2":::
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataDisplaying/VB/Form1.vb" id="Snippet2":::
 
-## <a name="run-the-app"></a>运行应用程序
+## <a name="run-the-app"></a>运行应用
 
 - 按 **F5** 运行该应用程序。
 
@@ -201,6 +201,6 @@ ms.locfileid: "122045042"
 
 - 添加将数据保存回数据库的功能。 有关详细信息，请参阅 [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

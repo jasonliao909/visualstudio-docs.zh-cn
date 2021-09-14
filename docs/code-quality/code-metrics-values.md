@@ -19,11 +19,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: fbd74301a7a7ff1299b8d9496e20793bbfabdf6f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122158"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601333"
 ---
 # <a name="code-metrics-values"></a>代码指标值
 
@@ -47,9 +47,9 @@ ms.locfileid: "122122158"
 
 ::: moniker range=">=vs-2019"
 
-- **源代码行** - 指示源文件中的确切源代码行数，包括空白行。 此指标从 Visual Studio 2019 版本 16.4 和 Microsoft.CodeAnalysis.Metrics (2.9.5) 开始提供。
+- **源代码行** - 指示源文件中的确切源代码行数，包括空白行。 此指标从 Visual Studio 2019 版本 16.4 和 Microsoft.CodeAnalysis.Metrics (2.9.5) 。
 
-- **可执行代码行** - 指示可执行代码行或操作近似数。 这是可执行代码中的操作计数。 此指标从 Visual Studio 2019 版本 16.4 和 Microsoft.CodeAnalysis.Metrics (2.9.5) 开始提供。 该值通常与上一个指标 **"** 代码行"非常匹配，这是旧模式下使用的基于 MSIL 指令的指标。
+- **可执行代码行** - 指示可执行代码行或操作近似数。 这是可执行代码中的操作计数。 此指标从 Visual Studio 2019 版本 16.4 和 Microsoft.CodeAnalysis.Metrics (2.9.5) 。 该值通常与上一个指标 **"** 代码行"非常匹配，这是旧模式下使用的基于 MSIL 指令的指标。
 ::: moniker-end
 ::: moniker range="vs-2017"
 

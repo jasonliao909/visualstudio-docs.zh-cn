@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6aa20a2329416a16fb33776ad6b20db951b58da9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073404"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663810"
 ---
 # <a name="breakpoints-visual-studio-sdk"></a>断点 (Visual Studio SDK)
 有三种类型的断点： "挂起"、"绑定" 和 "错误"。
@@ -47,7 +47,7 @@ ms.locfileid: "122073404"
 
 - 由 [IDebugErrorBreakpoint2](../../extensibility/debugger/reference/idebugerrorbreakpoint2.md) 接口表示。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - Programs 
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)
 - [代码上下文](../../extensibility/debugger/code-context.md)

@@ -19,11 +19,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 0a1791f02264a4e6a32976ef8975375196054b2a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122053274"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602102"
 ---
 # <a name="automatic-feature-suspension"></a>自动功能挂起
 
@@ -68,7 +68,7 @@ ms.locfileid: "122053274"
 > [!NOTE]
 > 自动功能暂停警告只会针对每个解决方案出现一次，而不会在每个会话的基础上出现一次。 这意味着，如果从 Visual Basic 切换到 Visual c # (，反之亦然) 并遇到另一个内存不足的情况，则可能会出现另一个自动功能暂停警告。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：配置托管代码的实时代码分析范围](./configure-live-code-analysis-scope-managed-code.md)
 - [垃圾回收基础](/dotnet/standard/garbage-collection/fundamentals)

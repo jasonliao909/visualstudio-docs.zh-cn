@@ -21,11 +21,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 7b3fbea039c82210c135b26c918ca18c757816b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113908"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601129"
 ---
 # <a name="insert-new-records-into-a-database"></a>将新记录插入数据库
 
@@ -37,13 +37,13 @@ ms.locfileid: "122113908"
 
 如果应用程序使用 对象来存储数据，或者希望更精细地控制在数据库中创建新记录，请使用 `TableAdapter.Insert` 方法。
 
-如果 TableAdapter 没有方法，则意味着 TableAdapter 配置为使用存储过程，或者其 属性 `Insert` `GenerateDBDirectMethods` 设置为 `false` 。 尝试将 TableAdapter 的 属性从 数据集设计器 `GenerateDBDirectMethods` `true` 中，然后保存数据集。  这会重新生成 TableAdapter。 如果 TableAdapter 仍没有方法，则表可能未提供足够的架构信息来区分各个行 (例如，表行上可能未设置 `Insert`) 。
+如果 TableAdapter 没有方法，则意味着 TableAdapter 配置为使用存储过程，或者其 属性 `Insert` `GenerateDBDirectMethods` 设置为 `false` 。 尝试将 TableAdapter 的 属性从 数据集设计器 `GenerateDBDirectMethods` `true` 中，然后保存数据集。  这会重新生成 TableAdapter。 如果 TableAdapter 仍没有方法，则表可能未提供足够的架构信息来区分各个行 (例如，表上可能没有设置主 `Insert` 键) 。
 
 ## <a name="insert-new-records-by-using-tableadapters"></a>使用 TableAdapters 插入新记录
 
 TableAdapters 提供将新记录插入数据库的不同方法，具体取决于应用程序的要求。
 
-如果应用程序使用数据集来存储数据，则只需将新记录添加到数据集中的所需记录， <xref:System.Data.DataTable> 然后调用 `TableAdapter.Update` 方法。 `TableAdapter.Update`方法将 中的任何更改发送到数据库 (包括已修改和 <xref:System.Data.DataTable> 已删除) 。
+如果应用程序使用数据集来存储数据，则只需将新记录添加到数据集中的所需记录， <xref:System.Data.DataTable> 然后调用 `TableAdapter.Update` 方法。 方法将 中的任何更改发送到数据库 (包括已修改和 `TableAdapter.Update` <xref:System.Data.DataTable> 已删除) 。
 
 ### <a name="to-insert-new-records-into-a-database-by-using-the-tableadapterupdate-method"></a>使用 TableAdapter.Update 方法将新记录插入数据库
 
@@ -87,6 +87,6 @@ TableAdapters 提供将新记录插入数据库的不同方法，具体取决于
 
 您必须有权访问尝试连接到的数据库，以及执行插入到所需表中的操作的权限。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [将数据保存回数据库](../data-tools/save-data-back-to-the-database.md)

@@ -1,6 +1,6 @@
 ---
 title: 文本模板实用工具方法
-description: 了解在编辑器中编写代码时可用的各种文本模板Visual Studio。
+description: 了解在编辑器中编写代码时可用的各种文本模板实用工具Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 7ee6eff6c47a818eca29673b5aad6905e6f52e28
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085333"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663864"
 ---
 # <a name="text-template-utility-methods"></a>文本模板实用工具方法
 
@@ -72,7 +72,7 @@ while (i-- > 0)
 
 ## <a name="indentation-methods"></a>缩进方法
 
-可以使用缩进方法设置文本模板的输出格式。 类 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 具有一个字符串属性，该属性显示文本模板中的当前缩进，以及一个字段，该字段是已添加的缩进 `CurrentIndent` `indentLengths` 的列表。 可以使用 方法添加缩进，然后 `PushIndent()` 用 方法减去 `PopIndent()` 缩进。 如果要删除所有缩进，请使用 `ClearIndent()` 方法。 以下代码块演示如何使用这些方法：
+可以使用缩进方法设置文本模板的输出格式。 类 <xref:Microsoft.VisualStudio.TextTemplating.TextTransformation> 具有一个字符串属性，该属性显示文本模板中的当前缩进，以及一个字段，该字段是已添加的缩进 `CurrentIndent` `indentLengths` 的列表。 可以使用 方法添加缩进，然后 `PushIndent()` 用 方法减去缩 `PopIndent()` 进。 如果要删除所有缩进，请使用 `ClearIndent()` 方法。 以下代码块演示如何使用这些方法：
 
 ```
 <#
@@ -122,7 +122,7 @@ Hello
 
 `<#@template ... hostspecific="true" #>`
 
-的类型 `this.Host` 取决于执行模板的主机类型。 在 Visual Studio 中运行的模板中，可以将 强制转换到 ，以获得对 `this.Host` `IServiceProvider` 服务（如 IDE）的访问权限。 例如：
+的类型 `this.Host` 取决于执行模板的主机类型。 在 Visual Studio 中运行的模板中，可以将 强制转换到 ，以获得对服务（如 `this.Host` `IServiceProvider` IDE）的访问权限。 例如：
 
 ```
 EnvDTE.DTE dte = (EnvDTE.DTE) ((IServiceProvider) this.Host)

@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 608bb21c2fb9d8335cd2ba212a6b7501392087d9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116560"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663858"
 ---
 # <a name="understanding-the-dsl-code"></a>了解 DSL 代码
 
@@ -285,7 +285,7 @@ namespace Company.EmbedInForm
 
  `GeneratedVSCT.vsct`
 
- 在菜单上找到标准菜单命令，如关系图右键单击 (菜单 **) "编辑** "菜单等上下文。 命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅编写 [用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
+ 在菜单上找到标准菜单命令，如关系图右键单击 (菜单) "编辑"菜单等上下文。  命令的代码是 CommandSet.cs。 可以重定位或修改标准命令，并可以添加自己的命令。 有关详细信息，请参阅编写 [用户命令和操作](how-to-modify-a-standard-menu-command-in-a-domain-specific-language.md)。
 
  `ModelExplorer.cs`
 
@@ -336,14 +336,14 @@ explorerWindow.TreeContainer.ObjectModelBrowser.SelectedNode = treeNode;
 
  `Package.cs`
 
- 此文件定义 DSL 如何集成到 Visual Studio。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第 () DSL 加载到实例中时，将调用 Initialize Visual Studio方法。
+ 此文件定义 DSL 如何集成到 Visual Studio。 程序包类上的特性将 DSL 注册为具有文件扩展名的文件的处理程序、定义其工具箱以及定义打开新窗口的方式。 将第 () DSL 加载到实例中时，将调用一次 Initialize Visual Studio方法。
 
  `Source.extension.vsixmanifest`
 
  若要自定义此文件，请编辑 `.tt` 文件。
 
 > [!WARNING]
-> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器"中，选择文件，并确保" **在 VSIX 中包括"** 属性为 `True` 。
+> 如果编辑 .tt 文件来包括资源（例如图标或图像），请确保该资源包括在 VSIX 生成中。 在解决方案资源管理器中，选择文件，并确保" **在 VSIX 中包括"** 属性为 `True` 。
 
  此文件控制将 DSL 打包到 Visual Studio 集成扩展 (VSIX) 中的方式。 有关详细信息，请参阅[部署域特定语言解决方案](msi-and-vsix-deployment-of-a-dsl.md)。
 

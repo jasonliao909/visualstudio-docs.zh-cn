@@ -22,11 +22,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 53ede3f31574ec2bbbd9b5cc2ce1f588b4ed5233
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052832"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601182"
 ---
 # <a name="create-parameterized-tableadapter-queries"></a>创建参数化 TableAdapter 查询
 
@@ -101,6 +101,6 @@ WHERE (ShippedDate = @ShippedDate) OR (ShippedDate IS NULL)
 
 3. 选择允许空值的参数，并将 **AllowDbNull** 属性设置为 `true` 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 Tableadapter 填充数据集](../data-tools/fill-datasets-by-using-tableadapters.md)

@@ -15,11 +15,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 9d88bd7c28ae5d9d7aa078eb5e0006f233765514
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036740"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601052"
 ---
 # <a name="walkthrough-create-linq-to-sql-classes-by-using-single-table-inheritance-or-designer"></a>演练：使用单表继承 (O/R 设计器创建 LINQ to SQL 类) 
 [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)支持单表继承，因为它通常在关系系统中实现。 本演练扩展了 [如何：使用 O/R 设计器配置继承](../data-tools/how-to-configure-inheritance-by-using-the-o-r-designer.md) 主题中提供的一般步骤，并提供了一些真实数据来演示中的继承使用 [!INCLUDE[vs_ordesigner_short](../data-tools/includes/vs_ordesigner_short_md.md)] 。
@@ -73,7 +73,7 @@ ms.locfileid: "122036740"
 
 2. 将下面的数据复制到表中。  (你可以通过在 " **结果** " 窗格中选择整行来复制它，然后将其粘贴到表中。 ) 
 
-    |**ID**|**类型**|**名字**|**姓氏**|管理员|
+    |**ID**|类型|**名字**|**姓氏**|管理员|
     |-|-|-|-|-|
     |**1**|**1**|**Anne**|**Wallace**|**NULL**|
     |**2**|**1**|**Carlos**|**Grilo**|**NULL**|
@@ -95,11 +95,11 @@ ms.locfileid: "122036740"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 在左侧 **窗格中展开"Visual C#"****或**"Visual Basic"，然后选择"Windows **桌面"。**
+2. 在左侧窗格中展开 " **Visual c #** " 或 " **Visual Basic** "，然后选择 " **Windows 桌面**"。
 
-3. 在中间窗格中，选择"Windows **窗体应用"** 项目类型。
+3. 在中间窗格中，选择 " **Windows 窗体应用程序**" 项目类型。
 
-4. 将项目命名 **为"继承""演练"，** 然后选择"确定 **"。**
+4. 将项目命名为 **命名为 inheritancewalkthrough**，然后选择 **"确定"**。
 
      InheritanceWalkthrough 项目即被创建并添加到解决方案资源管理器中。
 
@@ -111,24 +111,24 @@ ms.locfileid: "122036740"
 
 2. 单击“LINQ to SQL 类”模板，然后单击“添加”。
 
-     *.dbml* 文件将添加到项目中 **，O/R 设计器随即** 打开。
+     *.Dbml* 文件将添加到项目中，并打开 **O/R 设计器**。
 
 ## <a name="create-the-inheritance-by-using-the-or-designer"></a>使用 O/R 设计器创建继承
 通过将“继承”对象从“工具箱”拖动到设计图面来配置继承。
 
 ### <a name="to-create-the-inheritance"></a>创建继承
 
-1. 在 **服务器资源管理器** 或 **数据库资源管理器** 中， **导航到前面** 创建的 Person 表。
+1. 在 **服务器资源管理器** 或 **数据库资源管理器** 中，导航到之前创建的 **Person** 表。
 
-2. 将 **Person** 表拖到 **O/R 设计器设计** 图面上。
+2. 将 **Person** 表拖到 **O/R 设计器** 设计图面上。
 
-3. 将第二 **个 Person** 表拖到 **O/R 设计器上，** 并将其名称更改为 **Employee**。
+3. 将第二个 **Person** 表拖到 **O/R 设计器** 上，并将其名称更改为 **Employee**。
 
 4. 从“Person”对象删除“Manager”属性。
 
 5. 从“Employee”对象删除“Type”、“ID”、“FirstName”和“LastName”属性。 （即删除“Manager”以外的所有属性。）
 
-6. 从“工具箱”的“对象关系设计器”选项卡上，在“Person”和“Employee”对象之间创建“继承”。 为此，请单击“工具箱”中的“继承”项，然后松开鼠标按钮。 接下来，单击 **"Employee"** 对象，然后单击 **"O/R 设计器"中的"Person"对象**。 然后，继承行上的箭头指向 **Person** 对象。
+6. 从“工具箱”的“对象关系设计器”选项卡上，在“Person”和“Employee”对象之间创建“继承”。 为此，请单击“工具箱”中的“继承”项，然后松开鼠标按钮。 接下来，单击 " **Employee** " 对象，然后单击 **O/R 设计器** 中的 **Person** 对象。 继承连线上的箭头将指向 **Person** 对象。
 
 7. 单击设计图面上的“继承”连线。
 
@@ -143,7 +143,7 @@ ms.locfileid: "122036740"
 12. 生成项目。
 
 ## <a name="query-the-inherited-class-and-display-the-data-on-the-form"></a>查询继承类并在窗体上显示数据
-现在，向窗体添加一些代码，用于查询对象模型中的特定类。
+现在，您将向窗体中添加一些代码，用于在对象模型中查询特定的类。
 
 ### <a name="to-create-a-linq-query-and-display-the-results-on-the-form"></a>创建一个 LINQ 查询并在窗体上显示结果
 
@@ -185,11 +185,11 @@ ms.locfileid: "122036740"
 
 2. 检验是否仅显示了“Type”列值为 2 的记录。
 
-3. 关闭窗体。  ("调试" **菜单上** ，单击" **停止调试**.) 
+3. 关闭窗体。  (在 " **调试** " 菜单上，单击 " **停止调试**"。 ) 
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [演练：创建 LINQ to SQL 类（O-R 设计器）](how-to-create-linq-to-sql-classes-mapped-to-tables-and-views-o-r-designer.md)
 - [如何：分配存储流程来执行更新、插入和删除操作（O/R 设计器）](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

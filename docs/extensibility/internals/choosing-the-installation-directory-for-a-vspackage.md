@@ -1,6 +1,6 @@
 ---
-title: 选择 VSPackage 的安装目录|Microsoft Docs
-description: 了解如何使用管理还是非托管等因素为 VSPackage 及其支持文件选择安装目录。
+title: 选择 VSPackage 的安装目录 |Microsoft Docs
+description: 了解如何通过使用诸如是否托管或非托管的因素来选择 VSPackage 及其支持文件的安装目录。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,55 +14,55 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1a8b90fb00bed1e27a974924b07a5ddbc78dd37c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124732"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600869"
 ---
 # <a name="choose-the-installation-directory-for-a-vspackage"></a>选择 VSPackage 的安装目录
-VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是托管还是非托管、并行版本控制方案和用户选择。
+VSPackage 及其支持文件必须位于用户的文件系统上。 位置取决于 VSPackage 是托管的还是非托管的、并排版本控制方案和用户选择。
 
-## <a name="unmanaged-vspackages"></a>非托管 VSPackage
- 非托管 VSPackage 是可安装在任何位置的 COM 服务器。 其注册信息必须准确反映其位置。 安装程序用户界面 (UI) 应提供默认位置作为 Windows `ProgramFilesFolder` Installer 属性值的子目录。 例如：
+## <a name="unmanaged-vspackages"></a>非托管 Vspackage
+ 非托管 VSPackage 是可以安装在任何位置的 COM 服务器。 其注册信息必须准确反映其位置。 安装程序用户界面 (UI) 应提供 Windows Installer 属性值的子目录的默认位置 `ProgramFilesFolder` 。 例如：
 
-*&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \V1.0\\*
+*&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \V1。0\\*
 
- 应允许用户更改默认目录，以容纳保留小型启动分区并倾向于在另一个卷上安装应用程序和工具的用户。
+ 应该允许用户更改默认目录，以适应保留小型启动分区并更喜欢在另一卷上安装应用程序和工具的用户。
 
- 如果并行方案使用版本控制 VSPackage，可以使用子目录来存储不同的版本。 例如：
+ 如果并排方案使用了版本控制的 VSPackage，则可以使用子目录来存储不同的版本。 例如：
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2002\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2002\\*
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2003\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2003\\*
 
- *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct &gt; \\ V1.0 \\ 2005\\*
+ *&lt;ProgramFilesFolder &gt; \\ &lt; MyCompany &gt; \\ &lt; MyVSPackageProduct v1.0 &gt; \\ \\ 2005\\*
 
 ## <a name="managed-vspackages"></a>托管的 VSPackage
- 托管 VSPackage 还可以安装在任何位置。 但是，应考虑始终将它们安装到 GAC (全局程序集缓存) 以减少程序集加载时间。 由于托管 VSPackage 始终是强名称程序集，因此在 GAC 中安装它们意味着仅在安装时进行强名称签名验证。 在文件系统中其他位置安装的强名称程序集每次加载时都必须验证其签名。 在 GAC 中安装托管 VSPackage 时，请使用 regpkg 工具的 **/assembly** 开关写入指向程序集的强名称的注册表项。
+ 托管的 Vspackage 也可以安装在任何位置。 但是，你应考虑始终将它们安装到全局程序集缓存 (GAC) 以减少程序集加载时间。 由于托管 Vspackage 始终具有强名称的程序集，因此在 GAC 中安装它们意味着其强名称签名验证仅在安装时才需要。 在文件系统中的其他位置安装的强名称程序集必须在每次加载时验证其签名。 在 GAC 中安装托管 Vspackage 时，请使用 regpkg 工具的 **/assembly** 开关来写入指向程序集的强名称的注册表项。
 
- 如果在 GAC 外的其他位置安装托管 VSPackage，请按照前面为非托管 VSPackage 提供的建议选择目录层次结构。 使用 regpkg 工具的 **/codebase** 开关编写指向 VSPackage 程序集路径的注册表项。
+ 如果将托管的 Vspackage 安装在 GAC 以外的位置，请遵循为非托管 Vspackage 提供的更早建议，以选择目录层次结构。 使用 regpkg 工具的 **/codebase** 开关写入指向 VSPackage 程序集路径的注册表项。
 
- 有关详细信息，请参阅[注册和注销 VSPackage。](../../extensibility/registering-and-unregistering-vspackages.md)
+ 有关详细信息，请参阅 [注册和注销 vspackage](../../extensibility/registering-and-unregistering-vspackages.md)。
 
 ## <a name="satellite-dlls"></a>附属 DLL
- 根据约定，包含特定区域设置资源的 VSPackage 附属 DLL 位于 *VSPackage* 目录的子目录中。 子目录对应于区域设置 ID (LCID) 值。
+ 按照约定，VSPackage 附属 Dll （其中包含特定区域设置的资源）位于 *VSPackage* 目录的子目录中。 子目录对应于区域设置 ID (LCID) 值。
 
- 管理 [VSPackages](../../extensibility/managing-vspackages.md) 一文指示注册表项控制 ，其中 实际查找 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] VSPackage 的附属 DLL。 但是， 尝试按以下顺序在名为 的子目录中加载 LCID 值的附属 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] DLL：
+ " [管理 vspackage](../../extensibility/managing-vspackages.md) " 一文指示注册表项控制 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 实际查找 VSPACKAGE 的附属 DLL 的位置。 不过， [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 尝试按照以下顺序在名为 LCID 值的子目录中加载附属 DLL：
 
-1. 默认 LCID (Visual Studio LCID;例如 *，\1033* 表示英语) 
+1. 默认 lcid (Visual Studio lcid;例如，对于英语) 为 *\ 1033*
 
-2. 具有默认子语言的默认 LCID。
+2. 默认的子语言为默认的 LCID。
 
-3. 系统默认 LCID。
+3. 系统默认的 LCID。
 
-4. 具有默认子语言的系统默认 LCID。
+4. 默认语言为系统默认的 LCID。
 
-5. 美国英语 (*.\1033* 或 *.\0x409) 。*
+5. 美国英语 (*\ 1033* 或 *.\0x409*) 。
 
-如果 VSPackage DLL 包含资源，而 **SatelliteDll\DllName** 注册表入口点指向它，则尝试按上述顺序 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 加载它们。
+如果 VSPackage DLL 包含资源，并且 **SatelliteDll\DllName** 注册表项指向它，则 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 会尝试按上述顺序加载它们。
 
-## <a name="see-also"></a>请参阅
-- [在共享 VSPackage 和版本控制 VSPackage 之间选择](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
+## <a name="see-also"></a>另请参阅
+- [在共享和版本控制之间进行选择 Vspackage](../../extensibility/choosing-between-shared-and-versioned-vspackages.md)
 - [管理 VSPackage](../../extensibility/managing-vspackages.md)
 - [管理包注册](/previous-versions/bb166783(v=vs.100))

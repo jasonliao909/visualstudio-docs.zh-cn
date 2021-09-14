@@ -14,22 +14,22 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: eb240a99b486d7faeb481d78052e66fc6fd40024
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102280"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664274"
 ---
 # <a name="manage-project-loading-in-a-solution"></a>管理解决方案中的项目加载
-Visual Studio解决方案可以包含大量项目。 默认Visual Studio是在解决方案打开时加载解决方案中所有项目，而不是允许用户访问任何项目，直到所有项目都完成加载。 当项目加载过程持续两分钟以上时，将显示一个进度栏，其中显示加载的项目数和项目总数。 用户可以在使用多个项目的解决方案中卸载项目，但此过程有一些缺点：卸载的项目不是作为"重新生成解决方案"命令的一部分生成，并且不显示已关闭项目的类型和成员的 IntelliSense 说明。
+Visual Studio解决方案可以包含大量项目。 默认Visual Studio是在打开解决方案时加载解决方案中所有项目，不允许用户访问任何项目，直到所有项目都完成加载。 当项目加载过程持续两分钟以上时，将显示一个进度栏，其中显示加载的项目数和项目总数。 用户可以在使用多个项目的解决方案中卸载项目，但此过程有一些缺点：卸载的项目不是作为"重新生成解决方案"命令的一部分生成，并且不显示已关闭项目的类型和成员的 IntelliSense 说明。
 
  开发人员可以通过创建解决方案加载管理器来缩短解决方案加载时间并管理项目加载行为。 解决方案加载管理器可以确保在启动后台生成之前加载项目，延迟后台加载，直到其他后台任务完成，并执行其他项目负载管理任务。
 
 ## <a name="create-a-solution-load-manager"></a>创建解决方案负载管理器
- 开发人员可以通过实现解决方案负载管理器并Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> 解决方案负载管理器处于活动状态这一建议来创建解决方案负载管理器。
+ 开发人员可以通过实现解决方案负载管理器并Visual Studio <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager> 解决方案负载管理器处于活动状态这一点来创建解决方案负载管理器。
 
 ### <a name="activate-a-solution-load-manager"></a>激活解决方案负载管理器
- Visual Studio一个给定时间只允许一个解决方案负载管理器，因此，Visual Studio激活解决方案负载管理器时，必须提供建议。 如果稍后激活了第二个解决方案负载管理器，则解决方案负载管理器将断开连接。
+ Visual Studio给定时间只允许一个解决方案负载管理器，因此，Visual Studio激活解决方案负载管理器时，必须提供建议。 如果稍后激活了第二个解决方案负载管理器，则解决方案负载管理器将断开连接。
 
  必须获取 <xref:Microsoft.VisualStudio.Shell.Interop.SVsSolution> 服务并设置 [__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) 属性：
 
@@ -39,7 +39,7 @@ object objLoadMgr = this;   //the class that implements IVsSolutionManager
 pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLoadMgr);
 ```
 
- 当正在关闭Visual Studio，或者当另一个包作为活动解决方案负载管理器接管时，会调用 方法，方法是 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> 使用[__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)属性。
+ 当正在关闭Visual Studio或当另一个包已接管为活动解决方案负载管理器时，会调用 方法，方法是 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadManager.OnDisconnect%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.SetProperty%2A> 使用[__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>)属性。
 
 #### <a name="strategies-for-different-kinds-of-solution-load-manager"></a>不同类型的解决方案负载管理器的策略
  可以通过不同方式实现解决方案负载管理器，具体取决于它们要管理的解决方案类型。
@@ -51,7 +51,7 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 
  由于Visual Studio仅识别要激活的最后一个解决方案负载管理器，因此一般解决方案负载管理器应始终在激活自身之前检测是否有现有的负载管理器。 如果在 `GetProperty()` 解决方案服务上调用 [__VSPROPID4。VSPROPID_ActiveSolutionLoadManager](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_ActiveSolutionLoadManager>) 返回 `null` ，则没有活动的解决方案负载管理器。 如果它不返回 null，请检查对象是否与解决方案加载管理器相同。
 
- 如果解决方案负载管理器只管理几种类型的解决方案，则 VSPackage 可以通过调用) 来订阅解决方案加载事件 (，并使用 的事件处理程序来激活解决方案负载管理器。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>
+ 如果解决方案负载管理器只管理几种类型的解决方案，则 VSPackage 可以通过调用 (来订阅解决方案加载事件) 并使用 的事件处理程序来激活解决方案负载管理器。 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolution.AdviseSolutionEvents%2A> <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionLoadEvents.OnBeforeOpenSolution%2A>
 
  如果解决方案负载管理器旨在仅管理特定解决方案，则可以通过调用"解决方案前"部分来将激活信息保留为解决方案 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionProps.WriteSolutionProps%2A> 文件的一部分。
 
@@ -81,11 +81,11 @@ pSolution.SetProperty((int)__VSPROPID4.VSPROPID_ActiveSolutionLoadManager, objLo
 
 - [__VSPROPID4。VSPROPID_IsInBackgroundIdleLoadProjectBatch](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_IsInBackgroundIdleLoadProjectBatch>)：如果当前在后台加载一批项目，则返回 `var` `true` ;否则返回 `false` 。
 
-- [__VSPROPID4。VSPROPID_IsInSyncDemandLoadProjectBatch：](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_IsInSyncDemandLoadProjectBatch>)如果当前由于用户命令或其他显式加载而同步加载一批项目，则返回 `var` `true` ;否则返回 `false` 。
+- [__VSPROPID4。VSPROPID_IsInSyncDemandLoadProjectBatch](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID4.VSPROPID_IsInSyncDemandLoadProjectBatch>)：如果当前由于用户命令或其他显式加载而同步加载一批项目，则 `var` `true` 返回 ;否则返回 `false` 。
 
 - [__VSPROPID2。VSPROPID_IsSolutionClosing](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID2.VSPROPID_IsSolutionClosing>)： `var` 如果 `true` 解决方案当前处于关闭状态，则返回 ;否则返回 `false` 。
 
-- [__VSPROPID。VSPROPID_IsSolutionOpening](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID.VSPROPID_IsSolutionOpening>) `var` ： 如果 `true` 当前正在打开解决方案，则返回 ;否则返回 `false` 。
+- [__VSPROPID。VSPROPID_IsSolutionOpening](<xref:Microsoft.VisualStudio.Shell.Interop.__VSPROPID.VSPROPID_IsSolutionOpening>)： `var` 如果 `true` 当前正在打开解决方案，则返回 ;否则返回 `false` 。
 
 还可通过调用以下方法之一来确保加载项目和解决方案：
 

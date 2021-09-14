@@ -1,6 +1,6 @@
 ---
 title: 向 n 层应用程序中的 TableAdapter 添加代码
-description: 将代码添加到 n 层应用程序中的表适配器。 为 TableAdapter 创建分部类文件，并将代码添加到 (，而不是添加到 DatasetName) 。
+description: 将代码添加到 n 层应用程序中的表适配器。 为 TableAdapter 创建分部类文件，并添加 (而不是 DatasetName.DataSet.Designer) 。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -18,40 +18,40 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 55b6a64953944bacd8fcda73a9edeab00a99afc5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067203"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601240"
 ---
 # <a name="add-code-to-tableadapters-in-n-tier-applications"></a>向 n 层应用程序中的 TableAdapter 添加代码
-可以通过为 TableAdapter 创建分部类文件并向其添加代码 (而不是将代码添加到 *DatasetName* 文件) 来扩展 tableadapter 的功能。 分部类使特定类的代码可以在多个物理文件之间进行分隔。 有关详细信息，请参阅 [部分](/dotnet/visual-basic/language-reference/modifiers/partial) 或 [部分 (类型) ](/dotnet/csharp/language-reference/keywords/partial-type)。
+可以通过为 TableAdapter 创建分部类文件并添加代码来扩展 TableAdapter 的功能 (而不是将代码添加到 *DatasetName.DataSet.Designer*) 。 分部类允许特定类的代码在多个物理文件之间划分。 有关详细信息，请参阅[Type](/dotnet/visual-basic/language-reference/modifiers/partial) ([部分) 。 ](/dotnet/csharp/language-reference/keywords/partial-type)
 
-每次对数据集中的 TableAdapter 进行更改时，都将生成定义 TableAdapter 的代码。 如果在修改 TableAdapter 的配置的任何向导运行期间进行了更改，也会生成此代码。 若要防止在重新生成 TableAdapter 时删除代码，请将代码添加到 TableAdapter 的分部类文件中。
+每次对数据集中的 TableAdapter 进行更改时，都会生成定义 TableAdapter 的代码。 在运行修改 TableAdapter 配置的任何向导期间进行更改时，也会生成此代码。 若要防止在重新生成 TableAdapter 期间删除代码，请向 TableAdapter 的分部类文件添加代码。
 
-默认情况下，在分离数据集和 TableAdapter 代码后，结果是每个项目中的离散类文件。 原始项目包含一个名为 *DatasetName* 的文件 (或包含 TableAdapter 代码的 *DatasetName*) 。 **数据集 Project** 属性中指定的项目包含一个名为 " *DatasetName* " 的文件 (或包含数据集代码的 *DatasetName*) 。
-
-> [!NOTE]
-> 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 必须将现有部分数据集类手动移动到数据集项目。
+默认情况下，将数据集和 TableAdapter 代码分开后，结果是每个项目中的一个离散类文件。 原始项目具有名为 *DatasetName.Designer.vb* (*或 DatasetName.Designer.cs*) 包含 TableAdapter 代码的文件。 在 Dataset Project 属性 **中** 指定的项目具有名为 *DatasetName.DataSet.Designer.vb* (或 *DatasetName.DataSet.Designer.cs*) 的文件，其中包含数据集代码。
 
 > [!NOTE]
-> 数据集提供了 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 在需要验证时生成和事件处理程序的功能。 有关详细信息，请参阅 [将验证添加到 n 层数据集](../data-tools/add-validation-to-an-n-tier-dataset.md)。
+> 分离数据集与 TableAdapter（通过设置“数据集项目”属性）时，将不会自动移动项目中现有的数据集分部类。 必须将现有分部数据集类手动移动到数据集项目。
+
+> [!NOTE]
+> 数据集提供在需要验证时生成 <xref:System.Data.DataTable.ColumnChanging> <xref:System.Data.DataTable.RowChanging> 和事件处理程序的功能。 有关详细信息，请参阅向 [n 层数据集 添加验证](../data-tools/add-validation-to-an-n-tier-dataset.md)。
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
 ## <a name="to-add-user-code-to-a-tableadapter-in-an-n-tier-application"></a>将用户代码添加到 n 层应用程序中的 TableAdapter
 
-1. 找到包含 *.xsd* 文件的项目。
+1. 找到包含 *.xsd 文件* 的项目。
 
-2. 双击 *.xsd* 文件以打开 **数据集设计器**。
+2. 双击 *.xsd* 文件以 **打开数据集设计器。**
 
-3. 右键单击要向其添加代码的 TableAdapter，然后选择 " **查看代码**"。
+3. 右键单击要添加代码的 TableAdapter，然后选择"查看 **代码"。**
 
-     将创建一个分部类并在代码编辑器中打开它。
+     分部类在代码编辑器中创建并打开。
 
-4. 将代码添加到分部类声明中。
+4. 在分部类声明中添加代码。
 
-5. 下面的示例演示了在中将代码添加到的位置 `CustomersTableAdapter` `NorthwindDataSet` ：
+5. 以下示例显示将代码添加到 `CustomersTableAdapter` 中的 位置 `NorthwindDataSet` ：
 
     ```vb
     Partial Public Class CustomersTableAdapter
@@ -68,7 +68,7 @@ ms.locfileid: "122067203"
     }
     ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)
 - [向 n 层应用程序中的数据集添加代码](../data-tools/add-code-to-datasets-in-n-tier-applications.md)

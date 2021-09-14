@@ -18,11 +18,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: fbdd4b7ffbfdef2cfce9904a92cc392594e6508f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122129930"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601055"
 ---
 # <a name="walkthrough-create-an-n-tier-data-application"></a>演练：创建 n 层数据应用程序
 “N 层”数据应用程序是指用于访问数据且分为多个逻辑层（或“多层”）的应用程序。 通过将应用程序组件分离到相对独立的层中，可以提高应用程序的可维护性和可伸缩性。 该结构之所以具有这种优点，是因为它有利于采用可应用于单个层而无需重新设计整个解决方案的新技术。 N 层体系结构包括一个表示层、一个中间层和一个数据层。 中间层通常包括数据访问层、业务逻辑层和共享组件（例如身份验证和验证）。 数据层则包括关系数据库。 N 层应用程序通常将敏感信息存储在中间层的数据访问层中，目的是将它们与访问表示层的最终用户隔离。 有关详细信息，请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
@@ -53,7 +53,7 @@ ms.locfileid: "122129930"
 
 ![视频链接](../data-tools/media/playvideo.gif)本主题的视频版本，请参阅[视频帮助：创建 N 层数据应用程序](/previous-versions/visualstudio/visual-studio-2008/cc178916(v=vs.90))。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
 1. 如果没有 LocalDB SQL Server Express，请从 [SQL Server Express 下载页面](https://www.microsoft.com/sql-server/sql-server-editions-express)或通过 **Visual Studio 安装程序** 安装。 在 **Visual Studio 安装程序** 中，你可以将 SQL Server Express LocalDB 作为 **.net 桌面开发** 工作负载的一部分进行安装，也可以作为单个组件安装。
@@ -125,7 +125,7 @@ ms.locfileid: "122129930"
 
      如果下拉列表中包含到 Northwind 示例数据库的数据连接，请选择该连接。
 
-     -或-
+     - 或 -
 
      选择 " **新建连接** " 以打开 " **添加连接** " 对话框。
 
@@ -192,7 +192,7 @@ ms.locfileid: "122129930"
 
 6. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetCustomers”。
 
-7. 单击“完成”。
+7. 单击“完成”  。
 
 ### <a name="to-create-a-method-in-the-data-access-tier-that-returns-the-orders-table"></a>在数据访问层中创建返回 Orders 表的方法
 
@@ -206,7 +206,7 @@ ms.locfileid: "122129930"
 
 5. 在“选择要生成的方法”页面上，为“返回 DataTable”部分的“方法名称”键入“GetOrders”。
 
-6. 单击“完成”。
+6. 单击“完成”  。
 
 7. 在 **“生成”** 菜单上，单击 **“生成解决方案”** 。
 
@@ -382,7 +382,7 @@ ms.locfileid: "122129930"
 
 - 将其他方法添加到服务，以将数据更新回数据库。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 N 层应用程序中使用数据集](../data-tools/work-with-datasets-in-n-tier-applications.md)
 - [分层更新](../data-tools/hierarchical-update.md)

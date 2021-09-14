@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 88a0140ce27816592a7c43f1304f16638a2935b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600831"
 ---
 # <a name="setnotificationforwaitcompletion-method"></a>SetNotificationForWaitCompletion 方法
 设置或清除TASK_STATE_WAIT_COMPLETION_NOTIFICATION位。
@@ -33,7 +33,7 @@ ms.locfileid: "122102878"
 internal void SetNotificationForWaitCompletion(bool enabled)
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  `enabled`
 
  `true` 若要设置位，为 ; `false` 若要取消设置位，为 。

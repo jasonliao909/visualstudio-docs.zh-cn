@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: f0394b000239889b9e6444cdf07988f3aaa9d702
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601091"
 ---
 # <a name="the-connection-string-contains-credentials-with-a-clear-text-password-and-is-not-using-integrated-security"></a>连接字符串包含的凭据具有明文密码并且未使用集成安全性
 
@@ -29,14 +29,14 @@ ms.locfileid: "122081888"
 
 ## <a name="save-options"></a>保存选项
 
-- 若要保存包含敏感信息的连接字符串，请选择"是 **"。**
+- 若要保存包含敏感信息的连接字符串，请选择 **"是"**。
 
    连接字符串将存储为应用程序设置。 连接字符串以纯文本形式包含敏感信息。 DBML 文件不包含敏感信息。
 
-- 若要保存连接字符串而不保存敏感信息，请选择"否 **"。**
+- 若要保存不包含敏感信息的连接字符串，请选择 " **否**"。
 
    连接字符串将存储为应用程序设置，但不包含密码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

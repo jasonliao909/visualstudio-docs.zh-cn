@@ -14,14 +14,14 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: f6434d4427371a0e2bd39da7c9979b6c29d521e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034040"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663904"
 ---
 # <a name="rules-propagate-changes-within-the-model"></a>规则在模型内部传播更改
-可以在可视化效果和建模 SDK (VMSDK 中创建存储规则，将更改从一个元素传播) 。 当 Store 中任何元素发生更改时，通常会在提交最外层的事务时计划执行规则。 不同类型的事件有不同类型的规则，例如添加元素或删除元素。 可以将规则附加到特定类型的元素、形状或关系图。 许多内置功能由规则定义：例如，规则可确保在模型更改时更新关系图。 可以通过添加自己的规则来自定义特定于域的语言。
+可以在可视化效果和建模 SDK (VMSDK) 创建存储规则，以将更改从一个元素传播到另一个元素。 当 Store 中任何元素发生更改时，通常会在提交最外层的事务时计划执行规则。 不同类型的事件有不同类型的规则，例如添加元素或删除元素。 可以将规则附加到特定类型的元素、形状或关系图。 许多内置功能由规则定义：例如，规则可确保在模型更改时更新关系图。 可以通过添加自己的规则来自定义特定于域的语言。
 
  存储规则特别适用于在存储内传播更改，即模型元素、关系、形状或连接器及其域属性的更改。 当用户调用 Undo 或 Redo 命令时，规则不会运行。 相反，事务管理器确保存储内容还原到正确的状态。 如果要将更改传播到存储外部的资源，请使用"存储事件"。 有关详细信息，请参阅事件 [处理程序在模型 外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)。
 
@@ -97,7 +97,7 @@ namespace ExampleNamespace
 
 - 第一个参数中的主题类型可以是域类、域关系、形状、连接器或关系图。 通常，将规则应用于域类和关系。
 
-     `FireTime`通常为 `TopLevelCommit` 。 这可确保仅在对事务进行所有主要更改后执行规则。 替代项为"内联"，它即将在更改后执行规则;和 LocalCommit，它在当前事务处理结束时执行规则 (可能不是最) 。 还可以设置规则的优先级，以影响规则在队列中的顺序，但这是实现你要求的结果的不可靠方法。
+     `FireTime`通常为 `TopLevelCommit` 。 这可确保仅在对事务进行所有主要更改后执行规则。 替代项为"内联"，它即将在更改后执行规则;和 LocalCommit，它在当前事务结束时执行规则 (可能不是最) 。 还可以设置规则的优先级，以影响规则在队列中的顺序，但这是实现你要求的结果的不可靠方法。
 
 - 可以将抽象类指定为主题类型。
 
@@ -210,6 +210,6 @@ namespace Company.TaskRuleExample
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [事件处理程序在模型外部传播更改](../modeling/event-handlers-propagate-changes-outside-the-model.md)

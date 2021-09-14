@@ -1,6 +1,6 @@
 ---
 title: 使用连接服务添加 Azure 存储 | Microsoft Docs
-description: 使用 Visual Studio 将 Azure 存储服务依赖项添加到应用连接的服务
+description: 使用Azure 存储向应用添加一个服务Visual Studio 连接的服务
 author: ghogen
 manager: jmartens
 ms.technology: vs-azure
@@ -10,23 +10,23 @@ ms.topic: how-to
 ms.date: 08/13/2020
 ms.author: ghogen
 ms.openlocfilehash: 8b371a8132e7de05bef68cc8ff67d0951ce67d8f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105907"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602146"
 ---
 # <a name="adding-azure-storage-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接服务添加 Azure 存储
 
-使用 Visual Studio，可以使用 **连接的服务** 功能将以下任意内容连接到 Azure 存储：
+使用 Visual Studio，可以使用 连接的服务 功能将以下任一项连接到 **Azure 存储：**
 
-- .NET Framework 控制台应用
+- .NET Framework控制台应用
 - ASP.NETMVC (.NET Framework) 
 - ASP.NET Core
-- .net Core (包括控制台应用程序、WPF、Windows 窗体、类库) 
+- .NET Core (包括控制台应用、WPF、Windows窗体、类库) 
 - .NET Core 辅助角色
 - Azure Functions
-- 通用 Windows 平台应用
+- 通用Windows平台应用
 - Xamarin
 - Cordova
 
@@ -34,18 +34,18 @@ ms.locfileid: "122105907"
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-- Visual Studio 安装 Azure 工作负荷。
-- 受支持类型之一的项目
+- Visual Studio已安装 Azure 工作负荷。
+- 支持的类型之一的项目
 
-## <a name="connect-to-azure-storage-using-connected-services"></a>使用连接的服务连接 Azure 存储
+## <a name="connect-to-azure-storage-using-connected-services"></a>连接 Azure 存储 连接的服务
 
 ::: moniker range="vs-2017"
 
 1. 在 Visual Studio 中打开项目。
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **连接的服务** " 节点，然后从上下文菜单中选择 " **添加连接服务**"。
+1. 在 **解决方案资源管理器** 中，右键单击连接的服务节点，然后从上下文菜单中选择"**添加连接的服务"。**
 
     ![添加 Azure 连接服务](./media/vs-azure-tools-connected-services-storage/add-connected-service.png)
 
@@ -76,21 +76,21 @@ ms.locfileid: "122105907"
 
 1. 在 Visual Studio 中打开项目。
 
-1. 在 **解决方案资源管理器** 中，右键单击 " **连接的服务** " 节点，然后从上下文菜单中选择 " **添加连接的服务**"。
+1. 在 **解决方案资源管理器** 中，右键单击连接的服务节点，然后从上下文菜单中选择"**添加连接的服务"。**
 
     ![添加 Azure 连接服务](./media/vs-azure-tools-connected-services-storage/vs-2019/add-connected-service.png)
 
-1. 在 " **连接的服务** " 选项卡中，选择 " **服务依赖项** 的 + 图标"。
+1. 在 **"连接的服务"** 选项卡中，选择"服务依赖项 **"的"+"图标**。
 
     ![添加服务依赖项](./media/vs-azure-tools-connected-services-storage/vs-2019/connected-services-tab.png)
 
-1. 在 "**添加依赖关系**" 页上，选择 **Azure 存储**。
+1. 在"**添加依赖项"页** 中，选择 **"Azure 存储"。**
 
     ![添加 Azure 存储](./media/vs-azure-tools-connected-services-storage/vs-2019/add-azure-storage.png)
 
-    如果尚未登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
+    如果还没有登录，请登录到 Azure 帐户。 如果没有 Azure 帐户，可以注册[免费试用版](https://azure.microsoft.com/account/free)。
 
-1. 在 "**配置 Azure 存储**" 屏幕上，选择现有的存储帐户，然后选择 "**下一步**"。
+1. 在"**配置Azure 存储"** 屏幕中，选择现有的存储帐户，然后选择"下一 **步"。**
 
     若要要创建存储帐户，请转到下一步。 否则，请跳到步骤 6。
 
@@ -98,26 +98,26 @@ ms.locfileid: "122105907"
 
 1. 创建存储帐户：
 
-   1. 选择对话框底部的 " **创建存储帐户** "。
+   1. 选择 **对话框底部的"** 创建存储帐户"。
 
-   1. 填写 **Azure 存储：创建新** 对话框，然后选择 "**创建**"。
+   1. 填写 **"Azure 存储：创建新对话框**"，然后选择"创建 **"。**
 
        ![新的 Azure 存储帐户](./media/vs-azure-tools-connected-services-storage/vs-2019/create-storage-account.png)
 
-   1. 显示“Azure 存储”对话框时，新的存储帐户会显示在列表中。 在列表中选择新存储帐户，然后选择 " **下一步**"。
+   1. 显示“Azure 存储”对话框时，新的存储帐户会显示在列表中。 在列表中选择新的存储帐户，然后选择"下一 **步"。**
 
-1. 输入连接字符串名称，并选择是要将连接字符串存储在本地机密文件中还是 [Azure Key Vault](/azure/key-vault)中。
+1. 输入连接字符串名称，然后选择是希望连接字符串存储在本地机密文件中， [还是](/azure/key-vault)存储在 Azure Key Vault。
 
    ![指定连接字符串](./media/vs-azure-tools-connected-services-storage/vs-2019/connection-string.png)
 
-1. " **更改摘要** " 屏幕显示了在完成该过程后，将对项目进行的所有修改。 如果更改看起来正常，请选择 " **完成**"。
+1. " **更改摘要** "屏幕显示完成该过程后对项目所做的所有修改。 如果更改看起来正常，请选择"完成 **"。**
 
    ![更改摘要](./media/vs-azure-tools-connected-services-storage/vs-2019/summary-of-changes.png)
 
 1. 该存储连接服务会显示在项目的“服务引用”节点下。
 :::moniker-end
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Azure 存储论坛](https://social.msdn.microsoft.com/forums/azure/home?forum=windowsazuredata)
 - [Azure 存储文档](/azure/storage/)

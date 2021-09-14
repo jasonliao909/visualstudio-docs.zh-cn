@@ -1,6 +1,6 @@
 ---
 description: 获取数组中的元素数。
-title: IDebugArrayField：：GetNumberOfElements |Microsoft Docs
+title: IDebugArrayField：： GetNumberOfElements |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aae9f64fd3bd5d48646b2e186753b1bf9830a8cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600955"
 ---
 # <a name="idebugarrayfieldgetnumberofelements"></a>IDebugArrayField::GetNumberOfElements
 获取数组中的元素数。
@@ -41,15 +41,15 @@ int GetNumberOfElements(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwNumElements`\
-[out]返回数组中的元素数。
+弄返回数组中的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回S_OK;否则，返回错误代码。
+ 如果成功，将返回 S_OK;否则，将返回错误代码。
 
 ## <a name="remarks"></a>备注
  返回的值是数组中元素的总数，而不考虑维度数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

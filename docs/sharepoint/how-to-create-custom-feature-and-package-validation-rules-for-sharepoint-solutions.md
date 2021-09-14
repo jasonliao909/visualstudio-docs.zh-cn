@@ -18,15 +18,15 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: a8cf9b5aa392e04865b0755fdc7dc8933c77bac1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122135892"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663844"
 ---
 # <a name="create-feature-and-package-validations-for-sharepoint-solutions"></a>为解决方案创建SharePoint验证
 
-  可以创建自定义验证规则来验证由应用程序生成Visual Studio。 可以通过从包的上下文菜单中选择"验证"或 **"PackagingExplorer"** 中的"功能"，对整个功能或包执行完全验证。  向项目添加新项目项SharePoint功能时，将执行部分验证，以确定包或功能是否将位于有效状态。
+  可以创建自定义验证规则来验证由 Visual Studio。 可以通过从包的上下文菜单中选择"验证"或 **"PackagingExplorer"** 中的"功能"，对整个功能或包执行完全验证。  向项目添加新项目项SharePoint功能时，将执行部分验证，以确定包或功能是否将位于有效状态。
 
 ### <a name="to-create-a-custom-package-validation-rule"></a>创建自定义包验证规则
 
@@ -62,5 +62,5 @@ ms.locfileid: "122135892"
 ## <a name="deploy-the-extension"></a>部署扩展
  若要部署扩展，请为程序集 (VSIX) 包以及要随扩展一起分发的其他任何文件 [!include[vsprvs](../sharepoint/includes/vsprvs-md.md)] 创建扩展。 有关详细信息，请参阅 在 Visual Studio 中为 SharePoint[工具部署Visual Studio。](../sharepoint/deploying-extensions-for-the-sharepoint-tools-in-visual-studio.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [扩展SharePoint打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

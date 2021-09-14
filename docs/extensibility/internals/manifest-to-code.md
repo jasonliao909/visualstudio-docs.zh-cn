@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 54bf0a3161fda86699b2bec07034b8732a099168
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122094784"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600713"
 ---
 # <a name="manifest-to-code"></a>Manifest to Code
 Manifest to Code 工具是一种控制台应用程序，它使用 Visual Studio 映像服务的 imagemanifest 文件，并生成一个包装器文件，用于引用 c + +、c #、VB 或. .vsct 文件中用于 Visual Studio 扩展的图像清单值。 此工具将生成包装文件，该文件可用于直接从 Visual Studio 映像服务请求图像，或用于在代码未处理任何自己的 UI 和呈现时通过 api 传递清单值。
@@ -28,7 +28,7 @@ Manifest to Code 工具是一种控制台应用程序，它使用 Visual Studio 
 
  **参数**
 
-|**交换机名称**|**备注**|**必需或可选**|
+|**交换机名称**|**说明**|**必需或可选**|
 |-|-|-|
 |/manifest|用于创建或更新代码包装的图像清单的路径。|必需|
 |/language|用于生成代码包装的语言。<br /><br /> 有效值： CPP、c + +、CS、CSharp、c #、VB 或 .vsct，这些值不区分大小写。<br /><br /> 对于 .VSCT language 选项，将忽略/monikerClass、/classAccess 和/namespace 选项。|必需|

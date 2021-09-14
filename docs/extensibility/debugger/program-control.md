@@ -1,6 +1,6 @@
 ---
-title: 程序控制 |Microsoft Docs
-description: 了解在程序级别执行的 Visual Studio 调试中的例程，如执行、单步执行、继续和挂起/恢复线程。
+title: 程序控制|Microsoft Docs
+description: 了解程序Visual Studio调试中的例程，例如执行、单步执行、继续和挂起/恢复线程。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,22 +14,22 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6039cff32588296e861a83126fc3541bc49c43f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080177"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600968"
 ---
 # <a name="program-control"></a>程序控制
-在 Visual Studio 调试中，以下所有单步执行和继续例程都在程序级别进行：
+在Visual Studio中，以下所有单步执行和继续例程都发生在程序级别：
 
-- 设置下一条语句，即将计算机设置为在特定帧环境下执行的下一条指令
+- 设置下一条语句，即将计算机设置为要特定帧环境中执行的下一条指令
 
-- 正在执行，即继续退出单步执行模式
+- 执行 ，即继续退出单步执行模式
 
 - 单步执行下一条指令
 
-- 继续当前步进模式
+- 继续执行当前单步执行模式
 
 - 挂起程序包含的线程
 
@@ -39,15 +39,15 @@ ms.locfileid: "122080177"
 > 查看调用堆栈是在线程级别实现的。 若要在查看线程的调用堆栈时枚举帧信息，必须实现 [IEnumDebugFrameInfo2](../../extensibility/debugger/reference/ienumdebugframeinfo2.md) 接口的所有方法。
 
 ## <a name="methods-of-program-control"></a>程序控制方法
- 下表显示了 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 的方法，这些方法必须为最低功能调试引擎实现 (DE) 和执行控制。
+ 下表显示了 [IDebugProgram2](../../extensibility/debugger/reference/idebugprogram2.md) 的方法，这些方法必须为 DE 控制和执行控制 (最小) 引擎实现。
 
 |方法|说明|
 |------------|-----------------|
-|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|继续从停止状态运行程序包含的所有线程。 对于执行控制是必需的。|
-|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|继续从停止状态运行程序包含的所有线程。 对于执行控制是必需的。|
-|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|在给定线程上执行步骤。 继续运行程序包含的所有其他线程。 对于执行控制是必需的。|
+|[IDebugProgram2::Execute](../../extensibility/debugger/reference/idebugprogram2-execute.md)|继续从已停止状态运行程序包含的所有线程。 执行控制必需。|
+|[IDebugProgram2::Continue](../../extensibility/debugger/reference/idebugprogram2-continue.md)|继续从已停止状态运行程序包含的所有线程。 执行控制必需。|
+|[IDebugProgram2::Step](../../extensibility/debugger/reference/idebugprogram2-step.md)|在给定线程上执行步骤。 继续运行程序包含的所有其他线程。 执行控制必需。|
 
- 对于多线程程序，还必须实现 [IDebugProgram2：： EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 方法和 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 接口的所有方法。
+ 对于多线程程序，还必须实现 [IDebugProgram2：：EnumThreads](../../extensibility/debugger/reference/idebugprogram2-enumthreads.md) 方法和 [IEnumDebugThreads2](../../extensibility/debugger/reference/ienumdebugthreads2.md) 接口的所有方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

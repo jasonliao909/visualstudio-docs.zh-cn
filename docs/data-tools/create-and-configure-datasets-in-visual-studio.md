@@ -15,21 +15,21 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8ce31c2e5a7e5e5f0441c213bd3f320212de5d3c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037052"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601189"
 ---
 # <a name="how-to-create-and-configure-datasets-in-visual-studio"></a>如何：在 Visual Studio
 
-数据集是一组对象，用于将数据库中的数据存储在内存中，并支持更改跟踪，以便对该数据启用创建、读取、更新和删除 (CRUD) 操作，而无需始终连接到数据库。 数据集专为数据业务 *应用程序的简单* 表单设计。 对于新应用程序，请考虑使用 实体框架在内存中存储和建模数据。 若要使用数据集，应具备数据库概念的基本知识。
+数据集是一组对象，用于将数据库中的数据存储在内存中，并支持更改跟踪，以便对该数据启用创建、读取、更新和删除 (CRUD) 操作，而无需始终连接到数据库。 数据集专为数据业务 *应用程序的简单* 表单设计。 对于新应用程序，请考虑实体框架在内存中存储和建模数据。 若要使用数据集，应具备数据库概念的基本知识。
 
-可以使用数据源配置向导 在设计Visual Studio <xref:System.Data.DataSet> 创建类型 **类型的类**。 有关以编程方式创建数据集的信息，请参阅[使用](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset) (ADO.NET) 。
+可以使用数据源配置向导 <xref:System.Data.DataSet> 在设计Visual Studio创建类型 **类**。 有关以编程方式创建数据集的信息，请参阅[使用](/dotnet/framework/data/adonet/dataset-datatable-dataview/creating-a-dataset) (ADO.NET) 。
 
 ## <a name="create-a-new-dataset-by-using-the-data-source-configuration-wizard"></a>使用数据源配置向导创建新数据集
 
-1. 在 Visual Studio 中打开项目，然后选择  >  **Project"** 添加新数据源"以 **启动"数据源配置向导"。**
+1. 在 Visual Studio 中打开项目，然后选择Project"添加新数据源"以  >  **启动"数据源配置向导"。**
 
 2. 选择要连接到的数据源的类型。
 
@@ -43,7 +43,7 @@ ms.locfileid: "122037052"
 
      ![选择数据库对象](../data-tools/media/raddata-chose-objects.png)
 
-5. 单击“完成”。
+5. 单击“完成”  。
 
    数据集在 中 **显示为解决方案资源管理器。**
 
@@ -73,7 +73,7 @@ ms.locfileid: "122037052"
 
 1. 单击数据集中的数据集 **解决方案资源管理器，** 使 **数据集设计器** 成为焦点。
 
-2. 单击 **左侧边距** 中的"数据源"选项卡Visual Studio或在 **搜索** 框中键入数据源。
+2. 单击 **资源页** 左边缘的"Visual Studio"选项卡，或在 **搜索** 框中键入数据源。
 
 3. 右键单击数据集节点，然后选择"**使用向导配置数据源"。**
 
@@ -85,13 +85,13 @@ ms.locfileid: "122037052"
 
 1. 在“数据集设计器”中打开数据集。
 
-2. 将类 <xref:System.Data.DataTable> 从"工具箱 **"的"数据集**"选项卡拖到数据集设计器。 
+2. 将类 <xref:System.Data.DataTable> 从"工具箱"**的"数据集**"选项卡拖到数据集设计器。 
 
 3. 添加列以定义数据表。 右键单击表，然后选择"添加 **列**  >  **"。** 如有必要 **，** 可以使用"属性"窗口设置列的数据类型和键。
 
 独立表需要在独立 `Fill` 表中实现逻辑，以便可以使用数据填充它们。 有关填充独立数据表的信息，请参阅 [从 DataAdapter](/dotnet/framework/data/adonet/populating-a-dataset-from-a-dataadapter)填充数据集。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [数据集中的关系](../data-tools/relationships-in-datasets.md)

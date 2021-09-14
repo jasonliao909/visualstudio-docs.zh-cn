@@ -1,6 +1,6 @@
 ---
 title: 将数据保存回数据库
-description: 使用 DataSet 工具将数据保存回数据库。 数据集是数据在内存中的副本，如果已修改，应将其保存回数据库。
+description: 使用数据集工具将数据保存回数据库。 数据集是数据的内存中副本，如果修改了该数据，则应将其保存回数据库。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -24,68 +24,68 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 36140f928450cbb8ef498ae1edb490b4c2a32eae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075055"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601111"
 ---
 # <a name="save-data-back-to-the-database"></a>将数据保存回数据库
 
-数据集是数据的内存中副本。 如果修改该数据，最佳做法是将这些更改保存回数据库。 为此，可以使用以下三种方式之一：
+数据集是数据的内存中副本。 如果修改这些数据，最好将这些更改保存回数据库。 可以通过以下三种方式之一执行此操作：
 
 - 通过调用 `Update` TableAdapter 的方法之一
 
-- 通过调用 `DBDirect` TableAdapter 的方法之一
+- 通过调用 TableAdapter 的 `DBDirect` 方法之一
 
-- 通过调用 TableAdapterManager 上的 方法，Visual Studio数据集包含与数据集中其他表相关的表时，可生成 `UpdateAll` 该方法
+- 通过 `UpdateAll` 对 TableAdapterManager 调用方法 Visual Studio，当数据集包含与 dataset 中的其他表相关的表时，将为您生成该方法
 
-当数据将数据集表绑定到窗体Windows XAML 页上的控件时，数据绑定体系结构会完成所有工作。
+将数据集表数据绑定到 Windows 窗体或 XAML 页上的控件时，数据绑定体系结构将完成所有工作。
 
-如果熟悉 TableAdapters，可以直接跳转到以下主题之一：
+如果熟悉 Tableadapter，可以直接跳转到以下主题之一：
 
 |主题|说明|
 |-----------|-----------------|
-|[将新记录插入数据库](../data-tools/insert-new-records-into-a-database.md)|如何使用 TableAdapters 或 Command 对象执行更新和插入|
-|[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)|如何使用 TableAdapters 执行更新|
+|[将新记录插入数据库](../data-tools/insert-new-records-into-a-database.md)|如何使用 Tableadapter 或 Command 对象执行更新和插入操作|
+|[使用 TableAdapter 更新数据](../data-tools/update-data-by-using-a-tableadapter.md)|如何通过 Tableadapter 执行更新|
 |[分层更新](../data-tools/hierarchical-update.md)|如何从包含两个或多个相关表的数据集执行更新|
-|[处理并发异常](../data-tools/handle-a-concurrency-exception.md)|当两个用户尝试同时更改数据库中的相同数据时，如何处理异常|
-|[如何：通过使用事务来保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何使用系统将数据保存在事务中。 Transactions 命名空间和 TransactionScope 对象|
-|[在事务中保存数据](../data-tools/save-data-in-a-transaction.md)|创建一个 Windows Forms 应用程序的演练，演示如何将数据保存至事务内的数据库|
-|[将数据保存到数据库（多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)|如何编辑记录以及将多个表中的更改保存回数据库|
-|[将数据从对象保存到数据库](../data-tools/save-data-from-an-object-to-a-database.md)|如何使用 TableAdapter DbDirect 方法将数据从不在数据集中的对象传递到数据库|
-|[用 TableAdapter DBDirect 方法保存数据](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|如何使用 TableAdapter 将SQL直接发送到数据库|
+|[处理并发异常](../data-tools/handle-a-concurrency-exception.md)|如果两个用户尝试同时更改数据库中的相同数据，如何处理异常|
+|[如何：通过使用事务来保存数据](../data-tools/save-data-by-using-a-transaction.md)|如何使用系统在事务中保存数据。 事务命名空间和 TransactionScope 对象|
+|[在事务中保存数据](../data-tools/save-data-in-a-transaction.md)|创建 Windows 窗体应用程序的演练，用于演示如何将数据保存到事务中的数据库|
+|[将数据保存到数据库（多个表）](../data-tools/save-data-to-a-database-multiple-tables.md)|如何编辑记录并将多个表中的更改保存回数据库|
+|[将数据从对象保存到数据库](../data-tools/save-data-from-an-object-to-a-database.md)|如何使用 TableAdapter DbDirect 方法将数据从数据集中的对象传递到数据库|
+|[用 TableAdapter DBDirect 方法保存数据](../data-tools/save-data-with-the-tableadapter-dbdirect-methods.md)|如何使用 TableAdapter 将 SQL 查询直接发送到数据库|
 |[将数据集另存为 XML](../data-tools/save-a-dataset-as-xml.md)|如何将数据集保存到 XML 文档|
 
 ## <a name="two-stage-updates"></a>两阶段更新
 
-更新数据源是一个两步过程。 第一步是使用新记录、更改的记录或删除的记录更新数据集。 如果应用程序从未将这些更改发送回数据源，则已完成更新。
+更新数据源的过程分为两个步骤。 第一步是更新包含新记录、已更改记录或已删除记录的数据集。 如果应用程序永远不会将这些更改发送回数据源，则已完成更新。
 
-如果将更改发送回数据库，则第二个步骤是必需的。 如果不使用数据绑定控件，必须手动调用用于填充数据集的相同 TableAdapter (或) 适配器的 `Update` 方法。 但是，也可以使用不同的适配器，例如，将数据从一个数据源移到另一个数据源或更新多个数据源。 如果不使用数据绑定，并且正在保存相关表的更改，必须手动实例化自动生成的类的变量， `TableAdapterManager` 然后调用其 `UpdateAll` 方法。
+如果将更改发送回数据库，则需要执行第二步。 如果未使用数据绑定控件，则必须手动调用 `Update` 与用于填充数据集的相同 TableAdapter (或数据适配器) 的方法。 不过，您也可以使用不同的适配器，例如，将数据从一个数据源移动到另一个数据源，或更新多个数据源。 如果不使用数据绑定，并且要保存对相关表所做的更改，则必须手动实例化自动生成的类的变量 `TableAdapterManager` ，然后调用其 `UpdateAll` 方法。
 
 ![数据集更新的概念图](../data-tools/media/vbdatasetupdates.gif)
 
-数据集包含表的集合，这些表包含行的集合。 如果以后想要更新基础数据源，则必须在添加或删除行时对 属性使用 `DataTable.DataRowCollection` 方法。 这些方法执行更新数据源所需的更改跟踪。 如果在 Rows `RemoveAt` 属性上调用集合，则不会将删除操作传递回数据库。
+数据集包含表的集合，其中包含行的集合。 如果要在以后更新基础数据源，则必须在 `DataTable.DataRowCollection` 添加或删除行时对属性使用方法。 这些方法执行更新数据源所需的更改跟踪。 如果对 `RemoveAt` Rows 属性调用集合，则不会将删除操作返回到数据库。
 
 ## <a name="merge-datasets"></a>合并数据集
 
-可以通过将数据集与另一个数据集合并 *来* 更新数据集的内容。 这涉及到将源数据集 *的内容* 复制到调用数据集 (称为目标数据集) 。  合并数据集时，源数据集中的新记录将添加到目标数据集。 此外，源数据集中的额外列将添加到目标数据集。 如果具有本地数据集，并且从另一个应用程序获取第二个数据集，则合并数据集非常有用。 从组件（如 XML Web 服务）获取第二个数据集时，或者需要集成多个数据集中的数据时，它也很有用。
+可以通过将数据集与其他数据集 *合并* 来更新该数据集的内容。 这涉及到将 *源* 数据集的内容复制到调用数据集 (称为 *目标* 数据集) 。 合并数据集时，源数据集中的新记录将添加到目标数据集。 此外，还会将源数据集中的额外列添加到目标数据集。 如果你有本地数据集，并且从另一个应用程序获得另一个数据集，则合并数据集会很有用。 当你从组件（例如 XML web services）获取第二个数据集时，或者当你需要集成多个数据集的数据时，这也很有用。
 
-合并数据集时，可以将布尔参数 () 告知方法是否保留目标数据集 `preserveChanges` <xref:System.Data.DataSet.Merge%2A> 中的现有修改。 由于数据集维护多个版本的记录，因此，必须记住正在合并多个版本的记录。 下表显示了如何合并两个数据集中的记录：
+合并数据集时，可以将布尔参数 (`preserveChanges`) ，它会告知 <xref:System.Data.DataSet.Merge%2A> 方法是否保留目标数据集中的现有修改。 由于数据集维护多个版本的记录，因此请务必记住多个版本的记录正在合并。 下表显示了如何合并两个数据集中的记录：
 
 |DataRowVersion|目标数据集|源数据集|
 | - | - | - |
 |原始|James Wilson|James C. Wilson|
 |当前|Jim Wilson|James C. Wilson|
 
-对 <xref:System.Data.DataSet.Merge%2A> 上一个表调用 方法 `preserveChanges=false targetDataset.Merge(sourceDataset)` 会获得以下数据：
+<xref:System.Data.DataSet.Merge%2A>对上表调用方法会 `preserveChanges=false targetDataset.Merge(sourceDataset)` 生成以下数据：
 
 |DataRowVersion|目标数据集|源数据集|
 | - | - | - |
 |原始|James C. Wilson|James C. Wilson|
 |当前|James C. Wilson|James C. Wilson|
 
-使用 <xref:System.Data.DataSet.Merge%2A> 调用 `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 方法会导致以下数据：
+如果调用 <xref:System.Data.DataSet.Merge%2A> 方法， `preserveChanges = true targetDataset.Merge(sourceDataset, true)` 将生成以下数据：
 
 |DataRowVersion|目标数据集|源数据集|
 | - | - | - |
@@ -93,20 +93,20 @@ ms.locfileid: "122075055"
 |当前|Jim Wilson|James C. Wilson|
 
 > [!CAUTION]
-> 在这种情况下，如果对目标数据集中的记录调用 方法，则该方法将还原为 `preserveChanges = true` <xref:System.Data.DataSet.RejectChanges%2A> 源数据集 *中的* 原始数据。 这意味着，如果尝试使用目标数据集更新原始数据源，则可能无法找到要更新的原始行。 可以通过使用数据源中的更新记录填充另一个数据集，然后执行合并以防止并发冲突，来防止并发冲突。  (填充数据集后，当其他用户修改数据源中的记录时，会发生并发冲突。) 
+> 在此 `preserveChanges = true` 方案中，如果对 <xref:System.Data.DataSet.RejectChanges%2A> 目标数据集中的记录调用了方法，则它将恢复为 *源* 数据集中的原始数据。 这意味着，如果尝试用目标数据集更新原始数据源，则它可能无法找到要更新的原始行。 您可以通过使用数据源中已更新的记录填充另一个数据集，然后执行合并来防止发生并发冲突，从而防止并发冲突。  (在填充数据集后，另一个用户修改数据源中的记录时，将发生并发冲突。 ) 
 
 ## <a name="update-constraints"></a>更新约束
 
-若要更改现有数据行，请添加或更新各个列中的数据。 如果数据集包含 (约束，例如外键或不可为 null 的约束) ，则更新记录时，该记录可能会暂时为错误状态。 也就是说，在更新完一列之后，但在进入下一列之前，它可能会进入错误状态。
+若要对现有数据行进行更改，请在单独的列中添加或更新数据。 如果数据集包含约束 (例如外键或不可为 null 的约束) ，则在您更新记录时，可能会暂时处于错误状态。 也就是说，在您完成更新一列后，但在到达下一个列之前，它可能处于错误状态。
 
-若要防止提前违反约束，可以暂时挂起更新约束。 这有两种用途：
+若要防止过早的约束冲突，可以暂时挂起更新约束。 这有两种用途：
 
-- 它可防止在更新完一列但尚未开始更新另一列后引发错误。
+- 它可防止在完成更新一列但尚未开始更新其他列后引发错误。
 
-- 它可以防止某些更新事件引发 (通常用于验证事件) 。
+- 它可防止某些更新事件 (经常用于验证) 的事件引发。
 
 > [!NOTE]
-> 在 Windows 窗体中，内置于 datagrid 的数据绑定体系结构将挂起约束检查，直到焦点移出行，并且你不需要显式调用 、 或 <xref:System.Data.DataRow.BeginEdit%2A> <xref:System.Data.DataRow.EndEdit%2A> <xref:System.Data.DataRow.CancelEdit%2A> 方法。
+> 在 Windows 窗体中，datagrid 中内置的数据绑定体系结构会挂起约束检查，直到焦点移出行为止，并且无需显式调用 <xref:System.Data.DataRow.BeginEdit%2A> 、 <xref:System.Data.DataRow.EndEdit%2A> 或 <xref:System.Data.DataRow.CancelEdit%2A> 方法。
 
 当在 <xref:System.Data.DataSet.Merge%2A> 数据集上调用方法时，将自动禁用约束。 合并完成后，如果不能启用对数据集的任何约束， <xref:System.Data.ConstraintException> 则会引发。 在这种情况下， <xref:System.Data.DataSet.EnforceConstraints%2A> 属性设置为，并且在将 `false,` 属性重置为之前，必须解决所有约束冲突 <xref:System.Data.DataSet.EnforceConstraints%2A> `true` 。
 
@@ -216,24 +216,24 @@ ms.locfileid: "122075055"
 
 ## <a name="data-validation"></a>数据验证
 
-为了验证应用程序中的数据是否满足其传递到的进程的要求，您通常必须添加验证。 这可能涉及到检查窗体中的用户输入是否正确、验证其他应用程序发送给应用程序的数据，甚至检查在组件中计算的信息是否在数据源和应用程序要求的约束范围内。
+若要验证应用程序中的数据是否满足其传递给的进程的要求，通常需要添加验证。 这可能包括检查表单中的用户条目是否正确、验证由另一个应用程序发送到应用程序的数据，甚至检查组件中计算的信息是否受数据源和应用程序要求的约束。
 
 可以通过多种方式验证数据：
 
-- 在业务层中，通过将代码添加到应用程序来验证数据。 数据集是您可以执行此操作的一个位置。 数据集提供后端验证的一些优点，例如，能够在更改列和行值时验证更改。 有关详细信息，请参阅 [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)。
+- 在业务层中，通过将代码添加到应用程序来验证数据。 数据集是一个可以这样做的地方。 数据集提供了后端验证的一些优势，例如，能够在列和行值发生更改时验证更改。 有关详细信息，请参阅 [验证数据集中的数据](../data-tools/validate-data-in-datasets.md)。
 
-- 在表示层中，通过向窗体添加验证。 有关详细信息，请参阅[Windows 窗体中的用户输入验证](/dotnet/framework/winforms/user-input-validation-in-windows-forms)。
+- 在表示层中，通过将验证添加到窗体。 有关详细信息，请参阅表单[中的用户输入Windows验证](/dotnet/framework/winforms/user-input-validation-in-windows-forms)。
 
-- 在数据后端，将数据发送到数据源（例如数据库），并允许数据源接受或拒绝数据。 如果您使用的数据库具有用于验证数据和提供错误信息的复杂设施，则这可能是一种可行的方法，因为无论数据来自何处，都可以验证数据。 但是，这种方法可能无法满足特定于应用程序的验证要求。 此外，使数据源验证数据可能会导致大量与数据源的往返，具体取决于应用程序如何帮助解决后端引发的验证错误。
+- 在数据后端中，将数据发送到数据源（例如数据库）并允许其接受或拒绝数据。 如果你使用的数据库具有用于验证数据和提供错误信息的成熟功能，则此方法可能是一种实用方法，因为无论数据来自何处，都可以验证数据。 但是，此方法可能无法满足特定于应用程序的验证要求。 此外，让数据源验证数据可能会导致多次往返数据源，具体取决于应用程序如何促进解决后端所引发验证错误。
 
    > [!IMPORTANT]
-   > 将数据命令与设置为的属性结合使用时，请在将 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> <xref:System.Data.CommandType.Text> 客户端传递到数据库之前，仔细检查从该客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将用户输入传输到数据库之前，请始终验证信息是否有效。 最佳做法是尽可能使用参数化查询或存储过程。
+   > 将数据命令与设置为 的属性一起使用时，请仔细检查从客户端发送的信息，然后再 <xref:System.Data.SqlClient.SqlCommand.CommandType%2A> <xref:System.Data.CommandType.Text> 将信息传递到数据库。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将用户输入传输至数据库之前，请始终验证信息是否有效。 如果可能，最好始终使用参数化查询或存储过程。
 
 ## <a name="transmit-updates-to-the-data-source"></a>将更新传输到数据源
 
-在数据集中进行更改后，您可以将这些更改传输到数据源。 最常见的情况是通过调用 `Update` TableAdapter (或数据适配器) 的方法来执行此操作。 方法循环遍历数据表中的每个记录，确定需要哪种类型的更新 (更新、插入或删除) （如果有），然后运行相应的命令。
+在数据集中进行更改后，可以将更改传输到数据源。 大多数情况下，通过调用 TableAdapter 或数据适配器 (`Update` 方法) 。 方法循环访问数据表中的每个记录，确定更新 (插入或删除数据) 类型，然后运行相应的命令。
 
-为了说明如何进行更新，假设你的应用程序使用包含单个数据表的数据集。 应用程序从数据库中提取两行。 检索完成后，内存中数据表的外观如下所示：
+为说明如何进行更新，假设应用程序使用包含单个数据表的数据集。 应用程序从数据库提取两行。 检索后，内存中数据表如下所示：
 
 ```sql
 (RowState)     CustomerID   Name             Status
@@ -241,7 +241,7 @@ ms.locfileid: "122075055"
 (Unchanged)    c400         Nancy Buchanan    Pending
 ```
 
-应用程序将林丹的状态更改为 "首选"。 由于此更改，该行的属性的值 <xref:System.Data.DataRow.RowState%2A> 从更改 <xref:System.Data.DataRowState.Unchanged> 为 <xref:System.Data.DataRowState.Modified> 。 第一行的属性的值将 <xref:System.Data.DataRow.RowState%2A> 保持不变 <xref:System.Data.DataRowState.Unchanged> 。 数据表现在如下所示：
+应用程序将 Nancy Buchanan 的状态更改为"首选"。 由于此更改，该行的 属性值从 <xref:System.Data.DataRow.RowState%2A> 更改为 <xref:System.Data.DataRowState.Unchanged> <xref:System.Data.DataRowState.Modified> 。 第一行 <xref:System.Data.DataRow.RowState%2A> 的 属性的值仍为 <xref:System.Data.DataRowState.Unchanged> 。 数据表现在如下所示：
 
 ```sql
 (RowState)     CustomerID   Name             Status
@@ -249,33 +249,33 @@ ms.locfileid: "122075055"
 (Modified)     c400         Nancy Buchanan    Preferred
 ```
 
-应用程序现在调用 `Update` 方法，将数据集传送给数据库。 方法依次检查每一行。 对于第一行，该方法不会向数据库传输 SQL 语句，因为该行自最初从数据库提取以来未发生更改。
+应用程序现在调用 `Update` 方法，将数据集传送给数据库。 方法反过来检查每一行。 对于第一行， 方法不会SQL语句传输到数据库，因为该行自最初从数据库提取以来未发生更改。
 
-但对于第二行， `Update` 方法会自动调用正确的数据命令并将其传输到数据库。 SQL 语句的特定语法取决于基础数据存储所支持的 SQL 的方言。 但是，以下是已传输的 SQL 语句的一般特征：
+但是，对于第二行， `Update` 方法会自动调用正确的数据命令并将其传输到数据库。 SQL 语句的特定语法取决于基础SQL支持的语句的方言。 但是，传输的语句的以下一般特征SQL值得注意的：
 
-- 传输的 SQL 语句是 UPDATE 语句。 适配器知道要使用 UPDATE 语句，因为属性的值 <xref:System.Data.DataRow.RowState%2A> 为 <xref:System.Data.DataRowState.Modified> 。
+- 传输的 SQL 语句是 UPDATE 语句。 适配器知道使用 UPDATE 语句，因为 属性的值为 <xref:System.Data.DataRow.RowState%2A> <xref:System.Data.DataRowState.Modified> 。
 
-- 传输的 SQL 语句包含一个 WHERE 子句，该子句指示 UPDATE 语句的目标为行 `CustomerID = 'c400'` 。 SELECT 语句的此部分将目标行与所有其他语句区分开来，因为 `CustomerID` 是目标表的主键。 WHERE 子句的信息派生自 () 的记录的原始版本 `DataRowVersion.Original` ，以防标识行所需的值已更改。
+- 传输的 SQL 语句包含 WHERE 子句，该子句指示 UPDATE 语句的目标是 其中行 `CustomerID = 'c400'` 。 SELECT 语句的这一部分将目标行与其他所有行区分，因为 `CustomerID` 是目标表的主键。 WHERE 子句的信息派生自原始版本的记录 () ，以防标识行所需的值 `DataRowVersion.Original` 已更改。
 
-- 传输的 SQL 语句包含 set 子句，用于设置已修改列的新值。
+- 传输的 SQL 语句包含 SET 子句，用于设置修改后的列的新值。
 
    > [!NOTE]
-   > 如果 TableAdapter 的 `UpdateCommand` 属性已设置为存储过程的名称，则该适配器将不会构造 SQL 语句。 相反，它将调用具有传入的相应参数的存储过程。
+   > 如果 TableAdapter 的 属性已设置为存储过程的名称，则适配器不会构造SQL `UpdateCommand` 语句。 而是使用传入的适当参数调用存储过程。
 
 ## <a name="pass-parameters"></a>传递参数
 
-通常使用参数来传递要在数据库中更新的记录的值。 当 TableAdapter 的 `Update` 方法运行 UPDATE 语句时，它需要填写参数值。 它从 `Parameters` 相应的数据命令（在本例中为 TableAdapter 中的对象）的集合中获取这些值 `UpdateCommand` 。
+通常使用参数传递数据库中将要更新的记录的值。 当 TableAdapter 的 方法运行 UPDATE 语句时 `Update` ，它需要填充参数值。 它从相应数据命令的集合获取这些值 -本例中为 `Parameters` `UpdateCommand` TableAdapter 中的 对象。
 
-如果已使用 Visual Studio 工具生成数据适配器，则对象将包含与 `UpdateCommand` 语句中的每个参数占位符对应的参数集合。
+如果已使用 Visual Studio 工具生成数据适配器，则 对象包含与 语句中每个参数占位符对应的 `UpdateCommand` 参数集合。
 
-<xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName>每个参数的属性指向数据表中的列。 例如， `SourceColumn` `au_id` 和参数的属性 `Original_au_id` 设置为数据表中包含作者 id 的任何列。适配器的 `Update` 方法运行时，它将从正在更新的记录中读取作者 id 列，并将值填充到语句中。
+每个 <xref:System.Data.SqlClient.SqlParameter.SourceColumn%2A?displayProperty=fullName> 参数的 属性都指向数据表中的列。 例如， 和 参数的 属性设置为数据表中包含作者 `SourceColumn` `au_id` ID `Original_au_id` 的任何列。适配器的 方法运行时，它会从正在更新的记录中读取作者 ID 列，并填充语句 `Update` 中的值。
 
-在 UPDATE 语句中，需要指定新值 (要写入记录的值) 以及旧值 (，以便可以将记录置于数据库) 中。 因此，每个值都有两个参数：一个用于 SET 子句，另一个用于 WHERE 子句。 这两个参数都从正在更新的记录中读取数据，但它们基于参数的属性获取不同版本的列值 <xref:System.Data.SqlClient.SqlParameter.SourceVersion> 。 SET 子句的参数获取当前版本，WHERE 子句的参数获取原始版本。
+在 UPDATE 语句中，需要同时指定新值 (将写入记录) 的值以及旧值 (以便记录可以位于数据库) 。 因此，每个值有两个参数：一个参数用于 SET 子句，另一个参数用于 WHERE 子句。 这两个参数从正在更新的记录中读取数据，但它们根据参数的 属性获取不同版本的列 <xref:System.Data.SqlClient.SqlParameter.SourceVersion> 值。 SET 子句的 参数获取当前版本，WHERE 子句的 参数获取原始版本。
 
 > [!NOTE]
-> 你还可以在代码中自行设置集合中的值 `Parameters` ，你通常会在数据适配器事件的事件处理程序中执行此操作 <xref:System.Data.DataTable.RowChanging> 。
+> 还可以在代码中自己设置集合中的值，这通常在数据适配器事件的事件处理程序 `Parameters` <xref:System.Data.DataTable.RowChanging> 中设置。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的数据集工具](../data-tools/dataset-tools-in-visual-studio.md)
 - [创建和配置 TableAdapter](create-and-configure-tableadapters.md)

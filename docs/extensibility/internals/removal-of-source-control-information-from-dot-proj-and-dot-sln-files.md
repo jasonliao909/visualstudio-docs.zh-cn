@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 5a6db057075b57f07a733af146915db92446a077
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062831"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664314"
 ---
 # <a name="removal-of-source-control-information-from-proj-and-sln-files"></a>从 proj 和 .sln 文件中删除源代码管理信息
 
@@ -30,6 +30,6 @@ ms.locfileid: "122062831"
 
  在源代码管理插件 API 版本1.1 中，IDE 使用 ~ SAK 文件来检测插件是否支持 MSSCCPRJ.SCC。存储源代码管理信息的 SCC 方法。 源代码管理插件 API 版本1.2 提供一项新功能来检测对 MSSCCPRJ.SCC 的支持。SCC 文件，而无需使用 ~ SAK 文件。 有关详细信息，请参阅 [清除 ~ SAK 文件](../../extensibility/internals/elimination-of-tilde-sak-files.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [源代码管理插件 API 版本 1.2 中的新增功能](../../extensibility/internals/what-s-new-in-the-source-control-plug-in-api-version-1-2.md)

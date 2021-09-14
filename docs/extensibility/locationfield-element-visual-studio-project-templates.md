@@ -1,7 +1,7 @@
 ---
 title: LocationField 元素（Visual Studio 项目模板）
 titleSuffix: ''
-description: 了解 LocationField 元素及其如何指定"新建Project"对话框"位置"文本框是启用、禁用还是隐藏项目模板。
+description: 了解 LocationField 元素及其如何指定是启用、禁用还是隐藏项目模板的"Project"对话框"位置"文本框。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -16,15 +16,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b0610ab1e24b4f6de2052b45d52882ff7c9e88c2a402d1b7c96e5e0f4a5e4afe
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: f1ad5263f11cd7e940b641959de1dea393eb98ab
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121290916"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664281"
 ---
 # <a name="locationfield-element-visual-studio-project-templates"></a>LocationField (Visual Studio项目模板) 
-指定"新建项目 **"对话框中的**"位置Project是启用、禁用还是隐藏项目模板。
+指定"新建 **项目"对话框中** 的"位置Project是启用、禁用还是隐藏项目模板。
 
  \<VSTemplate> \<TemplateData>
  \<LocationField>
@@ -48,7 +48,7 @@ ms.locfileid: "121290916"
 
 |元素|描述|
 |-------------|-----------------|
-|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建"或"新建 **"Project。**|
+|[TemplateData](../extensibility/templatedata-element-visual-studio-templates.md)|必需的元素。<br /><br /> 对模板进行分类，并定义它在"新建"和"新建 **"Project。**|
 
 ## <a name="text-value"></a>文本值
  需要一个文本值。
@@ -57,14 +57,14 @@ ms.locfileid: "121290916"
 
 - `Enabled`，指定 **启用"新建****Project"对话框** 的"位置"框。
 
-- `Disabled`，指定 **已禁用"** 新建 **Project"对话框** 的"位置"框。
+- `Disabled`，指定 **已禁用"** 新建 **Project的"** 位置"框。
 
 - `Hidden`，指定 **隐藏"新建****Project的"** 位置"框。
 
 ## <a name="remarks"></a>备注
- 默认值是 `Enabled`。
+ 默认值为 `Enabled`。
 
- "**新建****项目"对话框中** 的"Project"文本框允许用户更改保存新项目的默认目录。
+ "**新建** 项目"对话框中的 **"Project"** 文本框允许用户更改保存新项目的默认目录。
 
  只有在基础项目系统支持该元素时，对话框 `Location` 才使用 元素中指定的值。
 

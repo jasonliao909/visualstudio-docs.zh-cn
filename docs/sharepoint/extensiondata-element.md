@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ec317073601f766dab2042ab6c77542914e87b59
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115741"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600656"
 ---
 # <a name="extensiondata-element"></a>ExtensionData 元素
   表示与项目项关联的自定义数据SharePoint的集合。
@@ -56,7 +56,7 @@ ms.locfileid: "122115741"
 
 ## <a name="element-information"></a>元素信息
 
-|属性|值|
+|Property|值|
 |-|-|
 |**Namespace**|\/ \/ http：schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project项架构|

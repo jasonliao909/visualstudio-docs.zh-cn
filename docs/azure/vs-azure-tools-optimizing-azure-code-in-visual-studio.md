@@ -9,11 +9,11 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 9836f13ac97641876746e0c514f11efc297d2975
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134878"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602130"
 ---
 # <a name="optimizing-your-azure-code"></a>优化 Azure 代码
 对使用 Microsoft Azure 的应用程序进行编程时，应遵循某些编码做法，以免在云环境中应用程序的伸缩性、行为和性能出现问题。 Microsoft 提供了 Azure 代码分析工具，该工具可识别并确定部分常见问题并帮助你解决这些问题。 可以通过 NuGet 在 Visual Studio 中下载该工具。
@@ -48,10 +48,10 @@ AP1000
 请通过 [Azure 代码分析反馈](https://social.msdn.microsoft.com/Forums/en-US/home)来分享看法和意见。
 
 ### <a name="reason"></a>原因
-在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法内部调用异步方法会导致云服务运行时回收辅助角色。 当辅助角色启动时，所有程序执行会在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法内发生。 退出 Run 方法将导致辅助角色重新启动。 当辅助角色运行时调用异步方法时，会在异步方法之后调度所有操作，然后返回。 这将导致辅助角色从 Run 方法退出并重新启动。 在下一轮执行时，辅助角色再次调用异步方法并重新启动，导致辅助角色再次回收。
+在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法内部调用异步方法会导致云服务运行时回收辅助角色。 当辅助角色启动时，所有程序执行会在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法内发生。 退出 Run 方法会导致辅助角色重启。 当辅助角色运行时调用异步方法时，会在异步方法之后调度所有操作，然后返回。 这将导致辅助角色退出 Run 方法并重启。 在下一轮执行时，辅助角色再次调用异步方法并重新启动，导致辅助角色再次回收。
 
 ### <a name="solution"></a>解决方案
-将所有异步操作放在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法的外部。 然后，从 Run 方法内部调用重构的异步方法，例如 RunAsync () 。 Azure 代码分析工具可帮助解决此问题。
+将所有异步操作放在 [Run()](/previous-versions/azure/reference/ee772746(v=azure.100)) 方法的外部。 然后，从 Run 方法内部调用重构的异步方法，例如 RunAsync () .wait。 Azure 代码分析工具可帮助解决此问题。
 
 以下代码段演示了此问题的代码修复过程：
 

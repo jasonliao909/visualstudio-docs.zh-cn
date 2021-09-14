@@ -14,11 +14,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 724d5c541d90eedc335aaf840eea389510b6d8dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031609"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601251"
 ---
 # <a name="use-the-code-analysis-rule-set-editor"></a>使用代码分析规则集编辑器
 
@@ -55,7 +55,7 @@ ms.locfileid: "122031609"
 |---------------------|-----------------|
 |**全部展开**|显示所有组中的规则。|
 |**全部折叠**|隐藏所有组中的规则。|
-|**分组依据**|指定规则分组时所基于的字段。 单击 **\<None>** 以显示不带组的规则。|
+|**分组者**|指定规则分组时所基于的字段。 单击 **\<None>** 以显示不带组的规则。|
 |**列选项**|指定要显示的规则字段。|
 |**隐藏不适用于当前解决方案的规则**|显示或隐藏与解决方案不相同的目标类型的规则。|
 |**显示可生成错误Code Analysis规则**|显示或隐藏分配有"错误"操作的规则。|
@@ -66,7 +66,7 @@ ms.locfileid: "122031609"
 
 ## <a name="rule-set-fields"></a>规则集字段
 
-规则集字段显示有关规则集的信息，可用于对规则列表进行排序和分组。 若要显示或隐藏字段，请选择列选项编辑器工具栏上的"字段"，然后选择或清除要显示或隐藏的字段的复选框。
+规则集字段显示有关规则集的信息，可用于对规则列表进行排序和分组。 若要显示或隐藏字段，请选择列选项编辑器工具栏上的字段，然后选择或清除要显示或隐藏的字段的复选框。
 
 下表描述了规则集的字段：
 
@@ -88,6 +88,6 @@ ms.locfileid: "122031609"
 
 - 若要按字段的值筛选规则集，请在要筛选的字段的列标题上选择筛选器按钮。 选中要显示的值的复选框，并清除要隐藏的值的复选框。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [创建自定义规则集](../code-quality/how-to-create-a-custom-rule-set.md)

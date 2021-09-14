@@ -1,6 +1,6 @@
 ---
 title: VSIX 颜色编辑器|Microsoft Docs
-description: 了解扩展Visual Studio编辑器工具，该工具可以创建和编辑自定义颜色，Visual Studio生成主题资源键。
+description: 了解扩展Visual Studio编辑器工具，该工具可以创建和编辑自定义颜色Visual Studio生成主题资源键。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -12,14 +12,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 013c72ca0bdf95bb0e40ad242b923f3f9db656a6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117691"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664303"
 ---
 # <a name="vsix-color-editor"></a>VSIX 颜色编辑器
-"Visual Studio扩展颜色编辑器"工具可以创建和编辑自定义颜色Visual Studio。 该工具还可以生成主题资源键，以便可以在代码中使用颜色。 此工具可用于为支持主题的扩展Visual Studio颜色。 此工具可以打开 .pkgdef 并.xml文件。 Visual Studio扩展 (.vstheme) 主题可通过将文件扩展名Visual Studio文件扩展名来与扩展颜色编辑器.xml。 此外，可以将 .vstheme 文件导入当前.xml文件。
+"Visual Studio扩展颜色编辑器"工具可以创建和编辑自定义颜色Visual Studio。 该工具还可以生成主题资源键，以便可以在代码中使用颜色。 此工具可用于为支持主题的扩展Visual Studio颜色。 此工具可以打开 .pkgdef 并.xml文件。 Visual Studio扩展 (.vstheme 文件) 将文件扩展名Visual Studio文件扩展名，以与扩展颜色编辑器.xml。 此外，可以将 .vstheme 文件导入当前.xml文件。
 
  ![VSIX 颜色编辑器 Hero](../../extensibility/internals/media/vsix-color-editor-hero.png "VSIX 颜色编辑器 Hero")
 
@@ -33,14 +33,14 @@ ms.locfileid: "122117691"
 
 - **类别名称：** 一组颜色的逻辑分组。 如果已存在特定于所需 UI 元素或一组 UI 元素的颜色，请使用现有的类别名称。
 
-- **令牌名称：** 颜色标记和标记集的描述性名称。 集包括背景和 (文本) 标记名称及其所有状态，这些设置应命名为 ，以便可以轻松识别它们应用到的对和状态。
+- **令牌名称：** 颜色标记和标记集的描述性名称。 集包括背景和 (文本) 标记名称及其所有状态，这些设置应命名为 ，以便可以轻松识别它们应用于的对和状态。
 
 - **颜色值 (或色调) ：** 每个彩色主题都需要 。 始终成对创建背景和文本颜色值。 颜色与背景/前景配对，以便 (前景色) 始终可以针对其绘制的背景色读取。 这些颜色是链接的，将在 UI 中一起使用。 如果背景不适合与文本一起使用，请不要定义前景色。
 
 - **系统颜色名称：** 用于高对比度显示。
 
 ## <a name="how-to-use-the-tool"></a>如何使用工具
- 应尽可能适当地重复使用现有的Visual Studio颜色，而不是进行新的颜色。 但是，对于未定义适当颜色的情况，应创建自定义颜色，使扩展主题保持兼容。
+ 应尽可能适当地重复使用现有的颜色Visual Studio，而不是进行新的颜色。 但是，对于未定义适当颜色的情况，应创建自定义颜色，使扩展主题保持兼容。
 
  **创建新的颜色标记**
 
@@ -130,9 +130,9 @@ ms.locfileid: "122117691"
 
   输入系统颜色高对比度时，Windows系统颜色名称。 请勿输入硬编码的 ARGB 值。 可以通过从颜色值下拉菜单中选择"背景：系统"或"前景：系统"来查看有效系统颜色名称的列表。 创建包含文本组件的元素时，请使用正确的背景/文本系统颜色对，否则文本可能不可读。
 
-  完成颜色标记的创建、设置和编辑后，请将其保存到所需的.xml或 .pkgdef 格式。 背景和前景集的颜色标记将保存为空.xml格式，但会以 .pkgdef 格式丢弃。 如果尝试将空颜色保存到 .pkgdef 文件，则对话框会警告你潜在的颜色丢失。
+  完成颜色标记的创建、设置和编辑后，请将其保存到所需的.xml或 .pkgdef 格式。 背景和前景集的颜色标记将保存为空颜色，.xml格式，但会以 .pkgdef 格式丢弃。 如果尝试将空颜色保存到 .pkgdef 文件，则对话框会警告你潜在的颜色丢失。
 
-  **步骤 4：使用扩展Visual Studio颜色。**
+  **步骤 4：使用扩展插件Visual Studio颜色。**
 
   定义新的颜色标记后，将 .pkgdef 包括在项目文件中，将"生成操作"设置为"内容"，将"包括在 VSIX 中"设置为"True"。
 
@@ -142,7 +142,7 @@ ms.locfileid: "122117691"
 
   ![VSIX 颜色编辑器 资源代码查看器](../../extensibility/internals/media/vsix-color-editor-resource-code-viewer.png "VSIX 颜色编辑器 资源代码查看器")
 
-  在项目中的静态类中包括此代码。 对 **Microsoft.VisualStudio.Shell 的引用 \<VSVersion> 。.0.dll** 添加到项目以使用 **ThemeResourceKey** 类型。
+  在项目中的静态类中包括此代码。 对 VisualStudio 的引用 **。 \<VSVersion>** 需要将 0.dll添加到项目，才能使用 **ThemeResourceKey** 类型。
 
 ```csharp
 namespace MyCustomColors
@@ -166,7 +166,7 @@ namespace MyCustomColors
 }
 ```
 
- 这样，可以访问 XAML 代码中的颜色，并允许 UI 响应主题更改。
+ 这样就可以访问 XAML 代码中的颜色，并允许 UI 响应主题更改。
 
 ```xaml
 <UserControl x:Class="NewTestProject.TestPackageControl" Name="MyToolWindow"
@@ -182,21 +182,21 @@ namespace MyCustomColors
 </UserControl>
 ```
 
- **步骤 5：测试Visual Studio。**
+ **步骤5：测试 Visual Studio 中的更改。**
 
- 颜色编辑器可以暂时将颜色标记应用于正在运行的 Visual Studio实例以查看颜色实时更改，而无需重新生成扩展包。 为此，请单击每个主题列标题Visual Studio"将此主题应用于运行窗口"按钮。 当 VSIX 颜色编辑器关闭时，此临时主题将消失。
+ 颜色编辑器可以暂时将颜色标记应用到 Visual Studio 的正在运行的实例，以查看对颜色的实时更改而无需重新生成扩展包。 为此，请单击位于每个主题列标题上的 "应用此主题以运行 Visual Studio windows" 按钮。 当 VSIX 颜色编辑器关闭时，此临时主题将消失。
 
  ![VSIX 颜色编辑器 应用](../../extensibility/internals/media/vsix-color-editor-apply.png "VSIX 颜色编辑器 应用")
 
- 若要使更改永久化，在将新Visual Studio添加到 .pkgdef 文件并编写将使用这些颜色的代码后，重新生成并重新部署该扩展。 重新生成Visual Studio扩展会将新颜色的注册表值合并到主题的其余部分。 然后重新Visual Studio，查看 UI，并验证新颜色是否按预期显示。
+ 若要使更改永久生效，请在将新颜色添加到 .pkgdef 文件并编写将使用这些颜色的代码后，重新生成并重新部署 Visual Studio 扩展。 重新生成 Visual Studio 扩展会将新颜色的注册表值合并到主题的其余部分。 然后重新启动 Visual Studio，查看 UI，并验证新颜色是否按预期方式显示。
 
 ## <a name="notes"></a>说明
- 此工具旨在用于为预先不存在的 Visual Studio 主题创建自定义颜色，或编辑自定义主题Visual Studio颜色。 若要创建完整的自定义Visual Studio主题，请从Visual Studio扩展库[](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor)下载"Visual Studio主题编辑器"扩展。
+ 此工具旨在用于为预先存在的 Visual Studio 主题创建自定义颜色，或用于编辑自定义 Visual Studio 主题的颜色。 若要创建完整的自定义 Visual Studio 主题，请从 Visual Studio 扩展库下载[Visual Studio 颜色主题编辑器扩展](https://marketplace.visualstudio.com/items?itemName=VisualStudioProductTeam.VisualStudio2015ColorThemeEditor)。
 
 ## <a name="sample-output"></a>示例输出
  **XML 颜色输出**
 
- 该工具.xml生成的文件将类似于：
+ 该工具生成的 .xml 文件如下所示：
 
 ```xml
 <Themes>
@@ -225,9 +225,9 @@ namespace MyCustomColors
 
 ```
 
- **PKGDEF 颜色输出**
+ **.PKGDEF 彩色输出**
 
- 该工具生成的 .pkgdef 文件将类似于：
+ 该工具生成的 .pkgdef 文件如下所示：
 
 ```
 [$RootKey$\Themes\{de3dbbcd-f642-433c-8353-8f1df4370aba}\CategoryName]
@@ -241,9 +241,9 @@ namespace MyCustomColors
 
 ```
 
- **C# 资源密钥包装器**
+ **C # 资源键包装器**
 
- 工具生成的颜色资源键将类似于：
+ 该工具生成的颜色资源键将类似于以下内容：
 
 ```csharp
 namespace MyNamespace
@@ -272,7 +272,7 @@ namespace MyNamespace
 
  **WPF 资源字典包装器**
 
- 工具 **生成的 ResourceDictionary** 键颜色将类似于以下颜色：
+ 该工具生成的 " **ResourceDictionary** 密钥" 类似于以下内容：
 
 ```xaml
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"

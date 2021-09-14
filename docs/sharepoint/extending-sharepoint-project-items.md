@@ -18,23 +18,23 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: dc36a1323b9ce1a1a3db0428a35ad9dd5d092629
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600660"
 ---
 # <a name="extend-sharepoint-project-items"></a>扩展SharePoint项目项
-  若要将功能添加到已在 Visual Studio 中安装的项目项目项SharePoint项目项扩展。 例如，你可以为 Visual Studio 中的内置事件接收器或列表定义项目项创建扩展，也可以为自定义项目项类型创建扩展。 还可以为所有类型的项目项创建SharePoint扩展。
+  若要将功能添加到已安装在 SharePoint 中的项目项的类型，请创建项目项Visual Studio。 例如，可以在 Visual Studio 中为内置事件接收器或列表定义项目项创建扩展，也可以为自定义项目项类型创建扩展。 还可以为所有类型的项目项创建SharePoint扩展。
 
-## <a name="tasks-for-extending-sharepoint-project-items"></a>用于扩展SharePoint项的任务
+## <a name="tasks-for-extending-sharepoint-project-items"></a>用于扩展项目SharePoint的任务
  若要扩展项目项，请Visual Studio接口的扩展 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemTypeExtension> 程序集。 有关详细信息，请参阅[如何：创建SharePoint项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)。
 
  扩展项目项时，还可以将以下功能添加到项目项：
 
-- 向项目项添加快捷菜单项。 在 中打开项目项的快捷菜单时，将显示 **解决方案资源管理器。** 通过右键单击项目项或选择该项目项，然后选择 Shift  + **F10** 键来打开快捷菜单。 有关详细信息，请参阅[如何：向项目](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)项扩展SharePoint快捷菜单项。
+- 向项目项添加快捷菜单项。 在 中打开项目项的快捷菜单时，将显示 **解决方案资源管理器。** 通过右键单击项目项或选择该项目项，然后选择 Shift  + **F10** 键来打开快捷菜单。 有关详细信息，请参阅[如何：将快捷菜单项添加到SharePoint项目项扩展。](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 
-- 向项目项添加自定义属性。 在 中选择项目 **项** 时，属性将显示在"属性 **"解决方案资源管理器。** 有关详细信息，请参阅[如何：向](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)项目项扩展SharePoint属性。
+- 向项目项添加自定义属性。 在 中 **选择项目项** 时，属性将显示在"属性 **"解决方案资源管理器。** 有关详细信息，请参阅[如何：向](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)项目项扩展SharePoint属性。
 
   有关演示如何创建、部署和测试项目项扩展的演练，请参阅演练：扩展SharePoint[项类型](../sharepoint/walkthrough-extending-a-sharepoint-project-item-type.md)。
 
@@ -50,7 +50,7 @@ ms.locfileid: "122027196"
 
 - 以编程方式将项目项添加到项目。 在这种情况下，必须将项目项的标识符传递给 <xref:Microsoft.VisualStudio.SharePoint.ISharePointProjectItemCollection.Add%2A> 方法。
 
-  下表列出了项目中包含的SharePoint项的标识符Visual Studio。
+  下表列出了项目包中包含的SharePoint项的标识符Visual Studio。
 
 |Project项名称|字符串标识符|
 |-----------------------|-----------------------|
@@ -67,7 +67,7 @@ ms.locfileid: "122027196"
 |Web 部件|Microsoft.VisualStudio。SharePoint。Webpart|
 |工作流关联窗体|Microsoft.VisualStudio。SharePoint。WorkflowAssociation|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：创建SharePoint项目项扩展](../sharepoint/how-to-create-a-sharepoint-project-item-extension.md)
 - [如何：向项目项扩展SharePoint快捷菜单项](../sharepoint/how-to-add-a-shortcut-menu-item-to-a-sharepoint-project-item-extension.md)
 - [如何：向项目项扩展SharePoint属性](../sharepoint/how-to-add-a-property-to-a-sharepoint-project-item-extension.md)

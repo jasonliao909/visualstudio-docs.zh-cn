@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 497e412b75ee1c37c28da018e3a9f67ec2cab184
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102917"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602386"
 ---
 # <a name="text_position"></a>TEXT_POSITION
 描述给定文本中的行和列位置。
@@ -53,7 +53,7 @@ public struct TEXT_POSITION {
 
 ## <a name="remarks"></a>备注
 
-此结构[用于CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)[反汇编数据](../../../extensibility/debugger/reference/disassemblydata.md)结构。
+此结构[用于CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)[反汇编Data](../../../extensibility/debugger/reference/disassemblydata.md)结构。
 
 通过调用以下方法来填充此结构：
 
@@ -85,7 +85,7 @@ public struct TEXT_POSITION {
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetStatementRange](../../../extensibility/debugger/reference/idebugdocumentcontext2-getstatementrange.md)

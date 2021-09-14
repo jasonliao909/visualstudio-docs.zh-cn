@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 8f9430dd814ba76f0a8e688d6a198c8715fc4d99
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601001"
 ---
 # <a name="ltschedulesgt-element-bootstrapper"></a>&lt;Schedules &gt; 元素 (引导程序) 
 `Schedules`元素包含 `Schedule` 元素，这些元素定义应运行元素定义的命令 `Command` 的特定时间。
@@ -65,6 +65,6 @@ ms.locfileid: "122120707"
 ## <a name="afterpackage"></a>AfterPackage
  `AfterPackage`元素指示安装程序在安装指定包后执行命令。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [产品和包架构参考](../deployment/product-and-package-schema-reference.md)

@@ -1,7 +1,7 @@
 ---
 title: 使用SharePoint自定义解决方案MSBuild包
 titleSuffix: ''
-description: 自定义Visual Studio在SharePoint使用 (.wsp) 创建解决方案MSBuild包文件的方法。
+description: 在命令Visual Studio SharePoint使用 (.wsp) ，自定义MSBuild创建解决方案包文件的方法。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,13 +17,13 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 998bcd8ca191e5d7f5c3868836b4c498cae563c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106739"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663840"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用SharePoint自定义自定义解决方案MSBuild包
+# <a name="how-to-customize-a-sharepoint-solution-package-by-using-msbuild-targets"></a>如何：使用SharePoint自定义解决方案MSBuild包
   通过使用MSBuild提示符下的目标，可以自定义Visual Studio *.wsp* SharePoint创建 (包) 。 例如，可以自定义 MSBuild 属性以更改打包中间目录，以及自定义 MSBuild 项组以指定枚举的文件。
 
 ## <a name="customize-and-run-msbuild-targets"></a>自定义和运行MSBuild目标
@@ -43,9 +43,9 @@ ms.locfileid: "122106739"
 
     此示例将在此目标打包之前显示一条消息。
 
-2. 将文件 **CustomLayout.SharePoint.targets** 命名，并将其保存到项目SharePoint文件夹中。
+2. 将文件 **"CustomLayout.SharePoint.targets"** 命名，然后将该文件保存到项目SharePoint文件夹中。
 
-3. 打开项目，打开其快捷菜单，然后选择"**卸载** Project"。
+3. 打开项目，打开其快捷菜单，然后选择"**卸载Project"。**
 
 4. 在 **解决方案资源管理器** 中，打开项目的快捷菜单，然后选择 **"编辑***\<ProjectName> .vbproj"* 或"**编辑** *\<ProjectName> .csproj"。*
 
@@ -83,5 +83,5 @@ ms.locfileid: "122106739"
 
    在发布项目时，打包开始前将显示 BeforeLayout 消息，打包完成后将显示 AfterLayout 消息。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

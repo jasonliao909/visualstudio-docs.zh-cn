@@ -1,5 +1,5 @@
 ---
-title: IDE 常量 |Microsoft Docs
+title: IDE 常量|Microsoft Docs
 description: VSConstants 类提供特定于 IDE 且以前仅在头文件中定义的常量。
 ms.custom: SEO-VS-2020
 ms.date: 03/22/2018
@@ -19,83 +19,83 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4cdec9bea2883e67bf9ff2383319b966b4b73d8caeab7f6c92b1faaf3878fb8d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad1d6e159ac1e008112a97bdec76fe2f791433ba
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121359853"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600757"
 ---
 # <a name="ide-constants"></a>IDE 常量
 
-<xref:Microsoft.VisualStudio.VSConstants>类提供特定于集成开发环境 (IDE) 并且以前仅在头文件中定义的常量。
+类提供特定于集成开发环境的常量 (IDE) 且以前仅在头文件中 <xref:Microsoft.VisualStudio.VSConstants> 定义。
 
-## <a name="logical-and-physical-views"></a>逻辑和物理视图
+## <a name="logical-and-physical-views"></a>逻辑视图和物理视图
 
 |值|说明|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序应将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法以获取 "**打开方式**" 对话框，在本例中为可能的代码视图。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法以获取 "**打开方式**" 对话框，在此示例中，用 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 映射到与相同视图的可能调试视图填充 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> 。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法以获取 "**打开方式**" 对话框，在本例中，可以 **查看窗体** 设计器视图。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法以获取 "**打开方式**" 对话框，在本例中为编辑器工厂的默认/主视图。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法以获取 "**打开方式**" 对话框，在此对话框中用于文档或数据文本编辑器视图。|
-|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给方法，该 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法提示用户选择要使用的用户定义的视图。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序应将此值传递给 方法，以 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 获取"**打开方式**"对话框（本例中为可能的代码视图）。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>处理程序将此值传递给 方法，以便获取"打开方式"对话框，在这种情况下，会填充映射到 与 相同的视图的可能调试 `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A>  <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Debugging_guid> 视图 <xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Code_guid> 。|
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Designer_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 方法，以便获取"打开方式"对话框，本 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 例中为 **"查看窗体设计器视图**"。 |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.Primary_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>处理程序将此值传递给 方法，以便获取"打开方式"对话框，在这种情况下，编辑器工厂 `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 的默认/主视图。 |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.TextView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>处理程序将此值传递给 方法，以便获取文档或数据文本编辑器视图的"打开方式 `cmdidOpenWith` <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> "对话框。 |
+|<xref:Microsoft.VisualStudio.VSConstants.LOGVIEWID.UserChooseView_guid>|<xref:Microsoft.VisualStudio.VSConstants.GUID_VSStandardCommandSet97>`cmdidOpenWith`处理程序将此值传递给 <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument.OpenStandardEditor%2A> 方法，该方法会提示用户选择使用哪个用户定义的视图。|
 
 ## <a name="editor-factory-flags"></a>编辑器工厂标志
 
 |值|说明|
 |-----------|-----------------|
-|[CEF.CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|与方法的第一个参数组合在一起的过时标志 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 。|
-|[CEF.OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|按位组合为方法的第一个参数 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> ，这表示编辑器工厂应执行必要的修复。|
-|[CEF.OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|按位组合作为方法的第一个参数 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> ，此标志与 [CEF 互斥。CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)。|
-|[CEF.自行](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|按位组合为方法的第一个参数 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> ，这表示编辑器工厂应创建编辑器，而不显示用户界面)  (UI。|
+|[CEF。CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)|已过时的标志将位组合为 方法的第一 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 个参数。|
+|[CEF。OpenAsNew](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenAsNew>)|按位组合为 方法的第一个参数，这表示编辑器 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 工厂应执行必要的修复。|
+|[CEF。OpenFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_OpenFile>)|此标志作为 方法的第一个参数进行组合，与 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> CEF 互 [斥。CloneFile](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_CloneFile>)。|
+|[CEF。沉默](<xref:Microsoft.VisualStudio.VSConstants.CEF#Microsoft_VisualStudio_VSConstants_CEF_Silent>)|按位组合为 方法的第一个参数，这表示编辑器工厂应创建编辑器，而不在 UI (<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 显示) 。|
 
-## <a name="visual-studio-errors"></a>Visual Studio 错误
-
-|值|说明|
-|-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|当相关对象已处于繁忙状态时，接口返回的常量|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|特定于 "不兼容文档数据" Visual Studio 的错误 HRESULT。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|特定于 Visual Studio 的错误 HRESULT，指示 "未加载包"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|特定于 Visual Studio 的错误 HRESULT，指示 "Project 已存在"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|特定于 Visual Studio 的错误 HRESULT，指示 "Project 配置失败"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|特定于 Visual Studio 的错误 HRESULT，指示 "Project 未加载"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|特定于 Visual Studio 的错误 HRESULT，指示 "解决方案已打开"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|特定于 Visual Studio 的错误 HRESULT，指示 "解决方案未打开"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|由生成接口返回，该接口具有用于从接口指定数组的参数 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> ，但实现只能将方法应用于所有输出。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|<xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A>如果文档的格式不能在编辑器中打开，则该方法返回此值。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|一个 HRESULT 值，该值指示用户在 Visual Studio 向导中按 "后退" 按钮。|
-
-## <a name="visual-studio-constants"></a>Visual Studio 常量
+## <a name="visual-studio-errors"></a>Visual Studio错误
 
 |值|说明|
 |-----------|-----------------|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|特定于 Visual Studio 的错误 HRESULT，指示 "Project 转发"。|
-|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|特定于 "工具箱标记" Visual Studio 的常数。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|一个特定于 Visual Studio 的常量，用于通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 指示模态开始的方法广播通知消息。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|一个特定于 Visual Studio 的常量，用于通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 指示模态结束的方法广播通知消息。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|一个特定于 Visual Studio 的常量，用于通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 指示命令栏指标已更改的方法广播通知消息。|
-|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|一个特定于 Visual Studio 的常数，该常数指示尚未设置 cookie。|
-|[VSITEMID.牌](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|表示缺少项目项的 Visual Studio 项标识符。 如果当前没有选定内容，则使用此值。|
-|[VSITEMID.Root](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|表示项目层次结构的根的 Visual Studio 项标识符，用于标识整个层次结构，而不是单个项。|
-|[VSITEMID.选择](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|一个 Visual Studio 项标识符，它表示当前选定的项，这些项可以包括层次结构的根。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_BUSY>|当有关对象已经繁忙时，接口返回的异步行为的常量|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_INCOMPATIBLEDOCDATA>|特定于"不兼容文档数据"Visual Studio HRESULT 错误。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PACKAGENOTLOADED>|特定于包的 HRESULT Visual Studio指示"包未加载"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTALREADYEXISTS>|一个错误 HRESULT，它特定于 Visual Studio，指示"Project已存在"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTMIGRATIONFAILED>|特定于该配置的错误 HRESULT Visual Studio指示"Project配置失败"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_PROJECTNOTLOADED>|特定于该代码的错误 HRESULT Visual Studio指示"Project加载"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONALREADYOPEN>|特定于解决方案的错误 HRESULT Visual Studio指示"解决方案已打开"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SOLUTIONNOTOPEN>|特定于解决方案的错误 HRESULT Visual Studio指示"解决方案未打开"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_SPECIFYING_OUTPUT_UNSUPPORTED>|由生成接口返回，这些接口具有用于从 接口指定数组的参数，但实现只能将 <xref:Microsoft.VisualStudio.Shell.Interop.IVsOutput> 方法应用于所有输出。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_UNSUPPORTEDFORMAT>|如果文档的格式无法在编辑器中打开，则 方法 <xref:Microsoft.VisualStudio.Package.EditorFactory.CreateEditorInstance%2A> 返回此值。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_E_WIZARDBACKBUTTONPRESS>|一个 HRESULT 值，指示用户在向导中点击后退Visual Studio按钮。|
+
+## <a name="visual-studio-constants"></a>Visual Studio常量
+
+|值|说明|
+|-----------|-----------------|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_PROJECTFORWARDED>|特定于该地址的错误 HRESULT Visual Studio指示"Project转发"。|
+|<xref:Microsoft.VisualStudio.VSConstants.VS_S_TBXMARKER>|特定于"工具箱Visual Studio的常量。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_ENTERMODAL>|一个特定于 Visual Studio，用于通过 指示形式开始的方法 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 广播通知消息。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_EXITMODAL>|一个常量，Visual Studio，用于通过指示形式结束的方法广播 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 通知消息。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSM_TOOLBARMETRICSCHANGE>|一个常量，Visual Studio通过 方法广播通知消息，指示命令 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBroadcastMessageEvents.OnBroadcastMessage%2A> 栏指标已更改。|
+|<xref:Microsoft.VisualStudio.VSConstants.VSCOOKIE_NIL>|一个特定于 Visual Studio的常量，指示尚未设置 Cookie。|
+|[VSITEMID。零](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Nil>)|一Visual Studio项标识符，表示缺少项目项。 如果没有当前选择，则使用此值。|
+|[VSITEMID。根](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Root>)|一Visual Studio项标识符，它表示项目层次结构的根，用于标识整个层次结构，而不是单个项。|
+|[VSITEMID。选择](<xref:Microsoft.VisualStudio.VSConstants.VSITEMID#Microsoft_VisualStudio_VSConstants_VSITEMID_Selection>)|一Visual Studio项标识符，表示当前选定的项，其中可以包含层次结构的根。|
 
 ## <a name="ivsselectionevents"></a>IVsSelectionEvents
- 描述在调用中刚选择了 IDE 的哪个组件， <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 例如。
+ 例如，描述刚刚在调用中选择了 IDE <xref:Microsoft.VisualStudio.Shell.Interop.IVsSelectionEvents.OnElementValueChanged%2A> 的组件。
 
-|返回的常量|“值”|
+|常数|“值”|
 |--------------|-----------|
 |[SelectionElement.DocumentFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_DocumentFrame>)|0x2|
 |[SelectionElement.PropertyBrowserSID](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_PropertyBrowserSID>)|0x4|
-|[SelectionElement. StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
-|[SelectionElement. UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
-|[SelectionElement. UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
-|[SelectionElement. WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
+|[SelectionElement.StartupProject](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_StartupProject>)|0x3|
+|[SelectionElement.UndoManager](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UndoManager>)|0x0|
+|[SelectionElement.UserContext](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_UserContext>)|0x5|
+|[SelectionElement.WindowFrame](<xref:Microsoft.VisualStudio.VSConstants.SelectionElement#Microsoft_VisualStudio_VSConstants_SelectionElement_WindowFrame>)|0x1|
 
 ## <a name="vsselelemid"></a>VSSELELEMID
- 用于指示新的选择状态的常量。
+ 用于指示新选择状态常量。
 
-|返回的常量|“值”|
+|常数|“值”|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|2|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|7|
@@ -106,9 +106,9 @@ ms.locfileid: "121359853"
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|5|
 |<xref:Microsoft.VisualStudio.VSConstants.VSSELELEMID>|1|
 
-## <a name="component-selector-dialog-constants"></a>组件选择器对话框常量
+## <a name="component-selector-dialog-constants"></a>组件选择器对话常量
 
-|返回的常量|“值”|
+|常数|“值”|
 |--------------|-----------|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELCHANGED>|WM_USER + 1280|
 |<xref:Microsoft.VisualStudio.VSConstants.CPDN_SELDBLCLICK>|WM_USER + 1281|
@@ -119,6 +119,6 @@ ms.locfileid: "121359853"
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_QUERYCANSELECT>|WM_USER + 1286|
 |<xref:Microsoft.VisualStudio.VSConstants.CPPM_SETMULTISELECT>|WM_USER + 1289|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [IDE 定义的用于扩展项目系统的命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)
+- [用于扩展项目系统的 IDE 定义命令](../extensibility/internals/ide-defined-commands-for-extending-project-systems.md)

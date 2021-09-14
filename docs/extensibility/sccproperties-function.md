@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 99d83dc2cdf5dd39a6f55f39ff78a203b4ed29b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109989"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600683"
 ---
 # <a name="sccproperties-function"></a>SccProperties 函数
 此函数显示文件或项目的源代码管理属性。
@@ -34,7 +34,7 @@ SCCRTN SccProperties (
 );
 ```
 
-#### <a name="parameters"></a>参数
+#### <a name="parameters"></a>parameters
  pvContext
 
 [in]源代码管理插件上下文结构。
@@ -64,5 +64,5 @@ SCCRTN SccProperties (
 
  这些属性由源代码管理插件定义，可能不同于插件和插件。 如果插件允许用户更改文件的源代码管理属性，则它应返回以指示 IDE 需要重新加载此文件或 `SCC_I_RELOAD` 项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

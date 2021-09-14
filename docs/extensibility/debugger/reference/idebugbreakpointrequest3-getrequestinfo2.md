@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8c889b73f231b2e31bc60be7bc5d1700b3a891ba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072556"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663801"
 ---
 # <a name="idebugbreakpointrequest3getrequestinfo2"></a>IDebugBreakpointRequest3::GetRequestInfo2
 此方法获取描述此断点请求的断点请求信息。
@@ -43,7 +43,7 @@ int GetRequestInfo2(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 [in]来自 BPREQI_FIELDS [标志的组合](../../../extensibility/debugger/reference/bpreqi-fields.md) ，用于确定要填充 `pBPRequestInfo` 的哪些字段。
 
@@ -56,7 +56,7 @@ int GetRequestInfo2(
 ## <a name="remarks"></a>备注
  此请求中的信息比从 [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md) 方法返回的信息更多。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBreakpointRequest3](../../../extensibility/debugger/reference/idebugbreakpointrequest3.md)
 - [GetRequestInfo](../../../extensibility/debugger/reference/idebugbreakpointrequest2-getrequestinfo.md)
 - [BP_REQUEST_INFO2](../../../extensibility/debugger/reference/bp-request-info2.md)

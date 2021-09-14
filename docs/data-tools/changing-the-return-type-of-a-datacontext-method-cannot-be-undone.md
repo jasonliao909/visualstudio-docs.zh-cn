@@ -1,6 +1,6 @@
 ---
-title: 无法撤消返回类型的更改
-description: 更改 DataContext 方法的返回类型的操作无法撤消。 查看有关此Visual Studio 对象关系设计器 (O/R 设计器) 消息。
+title: 无法撤消更改返回类型
+description: 更改 DataContext 方法的返回类型的操作无法撤消。 查看有关此 Visual Studio 的信息对象关系设计器 (O/R 设计器) 消息。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: error-reference
@@ -12,11 +12,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0d06ec0c81fa731c775baf2b7b5754652a219af1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037221"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601214"
 ---
 # <a name="changing-the-return-type-of-a-datacontext-method-cannot-be-undone"></a>对 DataContext 方法的返回类型的更改操作不能撤消
 
@@ -40,6 +40,6 @@ ms.locfileid: "122037221"
 
     这样做将创建具有原始默认返回类型的 <xref:System.Data.Linq.DataContext> 方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)

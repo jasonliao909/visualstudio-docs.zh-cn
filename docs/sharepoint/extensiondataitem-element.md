@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: b99d9a267b8fb18ec8e238191382d71f558fc3d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115598"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600655"
 ---
 # <a name="extensiondataitem-element"></a>ExtensionDataItem 元素
   与 SharePoint 项目项关联的自定义数据项（以键/值格式）。 键和值都必须是字符串。
@@ -39,8 +39,8 @@ ms.locfileid: "122115598"
 
 |属性|说明|
 |---------------|-----------------|
-|**Key**|必需的 **xs： string** 特性。<br /><br /> 用于存储和检索数据项的键。|
-|值|必需的 **xs： string** 特性。<br /><br /> 数据项的值。|
+|**键**|必需的 **xs： string** 特性。<br /><br /> 用于存储和检索数据项的键。|
+|**值**|必需的 **xs： string** 特性。<br /><br /> 数据项的值。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -56,7 +56,7 @@ ms.locfileid: "122115598"
 
 ## <a name="element-information"></a>元素信息
 
-|属性|值|
+|Property|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project 项架构|

@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 5128befb2460a364758a692cfe5cac0a30732f1e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663925"
 ---
 # <a name="properties-of-diagrams"></a>关系图的属性
 可以设置指定关系图在生成的设计器中的显示方式的属性。 例如，可以指定关系图中文本的默认颜色。
@@ -28,13 +28,13 @@ ms.locfileid: "122034131"
 
  下表列出了关系图的属性。
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |填充颜色|关系图的填充颜色。|White|
 |文本颜色|关系图上显示的文本的颜色。|黑色|
 |访问修饰符|类的访问修饰符 (公共或内部) 。|公开|
 |自定义特性|用于将属性添加到生成的代码类。|\<none>|
-|生成双派生|如果 `True` 为 ，则基类和分部 (都支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
+|生成双派生|如果 `True` 为 ，则基类和分部类 (支持通过重写) 将生成自定义。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |具有自定义构造函数|如果 `True` 为 ，将在源代码中提供自定义构造函数。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |继承修饰符|描述从关系图生成的源代码类的继承类型 (、 或 `none` `abstract` `sealed`) 。|无|
 |基图|此关系图的基类。|（无）|
@@ -48,6 +48,6 @@ ms.locfileid: "122034131"
 |显示名称|将在此关系图的生成设计器中显示的名称。|\<none>|
 |帮助关键字|用于索引此关系图的 F1 帮助的 关键字。|\<none>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [特定于域的语言工具术语表](/previous-versions/bb126564(v=vs.100))

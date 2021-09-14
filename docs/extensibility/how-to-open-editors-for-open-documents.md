@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: aa669bae8cd178f70ff843c309fdbdaf9ed1bed9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122124933"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602353"
 ---
 # <a name="how-to-open-editors-for-open-documents"></a>如何：打开打开的文档的编辑器
 在项目打开文档窗口之前，项目首先必须确定是否已在另一个编辑器的文档窗口中打开该文件。 此文件可以在特定于项目的编辑器中打开，也可以在向注册的某个标准编辑器中打开 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。
@@ -55,7 +55,7 @@ ms.locfileid: "122124933"
 
 2. 如果文档未打开，请完成 [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)中的步骤。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打开并保存项目项](../extensibility/internals/opening-and-saving-project-items.md)
 - [如何：打开项目特定的编辑器](../extensibility/how-to-open-project-specific-editors.md)
 - [如何：打开标准编辑器](../extensibility/how-to-open-standard-editors.md)

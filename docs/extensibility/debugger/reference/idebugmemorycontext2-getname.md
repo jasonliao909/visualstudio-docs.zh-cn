@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 6c2df9f2620f5742b6f84313a0961abf5d6797810ca5b58fa5a50d713224e6dd
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 69596b635be5a878448316b61ed846ad8e116420
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417101"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600880"
 ---
 # <a name="idebugmemorycontext2getname"></a>IDebugMemoryContext2::GetName
 检索此上下文的用户可显示名称。
@@ -42,7 +42,7 @@ int GetName(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrName`\
 [out]返回内存上下文的名称。
 
@@ -52,5 +52,5 @@ int GetName(
 ## <a name="remarks"></a>备注
  通常不使用内存上下文的名称。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

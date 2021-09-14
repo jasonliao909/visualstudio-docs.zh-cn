@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: be7c5c2a45d42840c41b5860596cc4fd8c883bf0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057117"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600689"
 ---
 # <a name="register-file-name-extensions-for-side-by-side-deployments"></a>为并行部署注册文件扩展名
 对于并行环境中部署的 VSPackage，必须注册文件扩展名，以将文件与正确版本的 关联 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 除非使用版本特定的文件扩展名，否则注册允许用户在 的适当版本中打开项目和项目项文件 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。

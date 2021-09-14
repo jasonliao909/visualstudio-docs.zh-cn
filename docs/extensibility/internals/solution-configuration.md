@@ -1,6 +1,6 @@
 ---
-title: 解决方案配置 |Microsoft Docs
-description: 了解如何实现项目类型支持的解决方案配置，该配置指示开始 (F5) 键和生成命令的行为。
+title: 解决方案配置|Microsoft Docs
+description: 了解如何实现项目类型支持的解决方案配置，这些配置将引导"启动" (F5) 和"生成"命令的行为。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,21 +14,21 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ecd5d2fc6fba5d42b2c9435f47b371dd5ca346f5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117677"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600862"
 ---
 # <a name="solution-configuration"></a>解决方案配置
-解决方案配置存储解决方案级属性。 它们定向 **开始** (F5) 键和 **生成** 命令的行为。 默认情况下，这些命令生成并启动调试配置。 这两个命令都在解决方案配置的上下文中执行。 这意味着，用户可能希望按 F5 启动并生成通过设置配置的任何活动解决方案。 环境旨在针对解决方案而不是在生成和运行时进行优化。
+解决方案配置存储解决方案级属性。 它们指示"启动" ( F5) 生成 **命令的行为。** 默认情况下，这些命令生成并启动调试配置。 这两个命令在解决方案配置的上下文中执行。 这意味着用户可以期望 F5 启动并生成通过设置配置的任何活动解决方案。 环境旨在优化解决方案，而不是构建和运行项目。
 
- 标准 Visual Studio 工具栏包含开始按钮右侧的 "开始" 按钮和 "解决方案配置" 下拉按钮。 此列表允许用户选择按下 F5 时要启动的配置，创建自己的解决方案配置，或编辑现有配置。
+ 标准Visual Studio工具栏“开始”按钮左侧的一个解决方案配置下拉列表“开始”按钮。 此列表允许用户选择在按下 F5 时要启动的配置、创建自己的解决方案配置或编辑现有配置。
 
 > [!NOTE]
-> 没有可扩展性接口，无法创建或编辑解决方案配置。 您必须使用 `DTE.SolutionBuild`。 但是，有一些可扩展性 Api 用于管理解决方案生成。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
+> 没有用于创建或编辑解决方案配置的扩展性接口。 您必须使用 `DTE.SolutionBuild`。 但是，有一些扩展性 API 用于管理解决方案生成。 有关详细信息，请参阅 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2>。
 
- 下面介绍如何实现项目类型支持的解决方案配置：
+ 下面是如何实现项目类型支持的解决方案配置：
 
 - Project
 
@@ -38,27 +38,27 @@ ms.locfileid: "122117677"
 
    若要提供项目类型支持的配置列表并显示在属性页中，请实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2> 。
 
-   "配置" 列显示要在此解决方案配置中生成的项目配置的名称，并在单击箭头按钮时列出所有项目配置。 环境调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> 方法来填充此列表。 如果该 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> 方法指示项目支持配置编辑，则 "配置" 标题下也会显示 "新建" 或 "编辑" 选项。 其中每个选择都将启动调用接口的方法的对话框， `IVsCfgProvider2` 以编辑项目的配置。
+   "配置"列显示要在此解决方案配置中生成的项目配置的名称，并列出单击箭头按钮时的所有项目配置。 环境调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgNames%2A> 方法以填充此列表。 如果 方法指示项目支持配置编辑，则"配置"标题下也会显示"新建"或"编辑 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> "选项。 每个选择都启动对话框，这些对话框调用 接口 `IVsCfgProvider2` 的方法以编辑项目的配置。
 
-   如果项目不支持配置，则 "配置" 列将显示 "无" 且被禁用。
+   如果项目不支持配置，则"配置"列将显示"无"并处于禁用状态。
 
 - 平台
 
-   显示所选项目配置的生成平台，并在单击箭头按钮时列出项目的所有可用平台。 环境调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> 方法来填充此列表。 如果该 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> 方法指示项目支持平台编辑，则 "平台" 标题下也会显示 "新建" 或 "编辑" 选项。 其中每个选择都将启动对话框，这些对话框调用 `IVsCfgProvider2` 方法来编辑项目的可用平台。
+   显示所选项目配置生成针对的平台，并列出单击箭头按钮时项目的所有可用平台。 环境调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetPlatformNames%2A> 方法以填充此列表。 如果 方法指示项目支持平台编辑，则"平台"标题下也会显示"新建"或" <xref:Microsoft.VisualStudio.Shell.Interop.IVsCfgProvider2.GetCfgProviderProperty%2A> 编辑"选项。 每个选择都启动对话框，这些对话框调用 `IVsCfgProvider2` 方法来编辑项目的可用平台。
 
-   如果项目不支持平台，则该项目的 "平台" 列将显示 "无" 且被禁用。
+   如果项目不支持平台，则该项目的平台列将显示"无"并处于禁用状态。
 
 - 构建
 
-   指定项目是否由当前解决方案配置生成。 如果未选择的项目包含任何项目依赖项，则将不生成这些项目。 在调试、运行、打包和部署解决方案时，仍未选择要生成的项目。
+   指定项目是否由当前解决方案配置生成。 调用解决方案级生成命令时，不会生成未选择的项目，尽管它们包含任何项目依赖项。 未选择生成的项目仍包括在解决方案的调试、运行、打包和部署中。
 
 - 部署
 
-   指定在将启动或部署命令用于选定的解决方案生成配置时是否部署项目。 如果项目支持通过 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> 在其对象上实现接口来进行部署，则此字段的复选框将可用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 。
+   指定当"启动"或"部署"命令与所选解决方案生成配置一同使用时，是否部署项目。 如果项目支持通过在其 对象上实现 接口进行部署，则此字段的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployableProjectCfg> <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 复选框将可用。
 
-  添加新的解决方案配置后，用户可以从 "标准" 工具栏上的 "解决方案配置" 下拉列表框中选择它以生成和/或启动该配置。
+  添加新的解决方案配置后，用户可以从标准工具栏上的"解决方案配置"下拉列表框中选择它，以生成和/或启动该配置。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
 - [用于生成的项目配置](../../extensibility/internals/project-configuration-for-building.md)
 - [项目配置对象](../../extensibility/internals/project-configuration-object.md)

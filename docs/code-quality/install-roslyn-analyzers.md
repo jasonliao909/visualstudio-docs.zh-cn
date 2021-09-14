@@ -15,11 +15,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: a31fbbc8a0e655418425416ffdcae3aa16810788
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075315"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601285"
 ---
 # <a name="install-third-party-analyzers"></a>安装第三方分析器
 
@@ -31,7 +31,7 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
    例如，你可能想要安装 [StyleCop.Analyzers](https://www.nuget.org/packages/stylecop.analyzers/) 来查找代码库中的样式问题。
 
-2. 使用控制台或 Visual Studio UI 在 程序包管理器[中](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)程序包管理器[包](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
+2. 使用 Visual Studio 控制台或 程序包管理器[UI](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)在 程序包管理器[中安装包](/nuget/quickstart/install-and-use-a-package-in-visual-studio#package-manager-console)。
 
    > [!NOTE]
    > 每个 www.nuget.org 包的"输出"页显示要粘贴到控制台 程序包管理器 **的命令**。 甚至还有一个方便按钮，用于将文本复制到剪贴板。
@@ -42,7 +42,7 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
 ::: moniker range="vs-2017"
 
-1. 在Visual Studio中，选择"**工具** > **扩展和更新"。**
+1. 在Visual Studio"中，选择 **"工具** > **扩展和更新"。**
 
    此时，“扩展和更新”对话框打开。
 
@@ -53,7 +53,7 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
 ::: moniker range=">=vs-2019"
 
-1. 在Visual Studio中，选择 **"扩展** > **""管理扩展"。**
+1. 在Visual Studio中，**选择"扩展** > **""管理扩展"。**
 
    " **管理扩展"** 对话框随即打开。
 
@@ -66,11 +66,11 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
 3. 在搜索框中，键入要安装的分析器扩展的名称。
 
-4. 选择“下载”。
+4. 选择“下载”  。
 
    扩展已下载。
 
-5. 选择 **"** 确定"以关闭对话框，然后关闭所有 Visual Studio以启动 **VSIX 安装程序**。
+5. 选择 **"** 确定"以关闭对话框，然后关闭 Visual Studio以启动 **VSIX 安装程序**。
 
    **"VSIX 安装程序**"对话框随即打开。
 
@@ -78,7 +78,7 @@ Visual Studio包括 *Roslyn .NET Compiler Platform (分析器)* 核心集。 这
 
 6. 选择 **"修改** "以开始安装。
 
-7. 一两分钟后，安装完成。 选择“关闭”。
+7. 一两分钟后，安装完成。 选择“关闭”  。
 
 8. 再次Visual Studio打开。
 

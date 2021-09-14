@@ -22,15 +22,15 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 645441b8961ca84534bd9f4a503189ceb2cb5ab3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122145"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601310"
 ---
 # <a name="how-to-configure-legacy-analysis-for-managed-code"></a>如何：为托管代码配置旧分析
 
-在Visual Studio中，可以从要应用于托管代码项目的代码分析规则集列表中选择[](../code-quality/rule-set-reference.md)。 默认情况下， **已选择"Microsoft 建议的最低** 规则"规则集，但如果需要，可以应用其他规则集。 规则集可以应用于解决方案中的一个或多个项目。
+在Visual Studio中，可以从要应用于托管代码项目的代码分析规则集[](../code-quality/rule-set-reference.md)列表进行选择。 默认情况下， **已选择"Microsoft 建议的最低** 规则"规则集，但如果需要，可以应用其他规则集。 规则集可以应用于解决方案中的一个或多个项目。
 
 > [!NOTE]
 > 本文适用于旧版分析，.NET Compiler Platform[分析器 。](use-roslyn-analyzers.md)
@@ -39,21 +39,21 @@ ms.locfileid: "122122145"
 
 1. 打开Code Analysis **属性** 页上的"属性"选项卡。 可以通过下列任一方法完成此操作：
 
-   - 在 **解决方案资源管理器** 中，选择项目。 在菜单栏上，选择"**分析配置** Code Analysis  >    >  **For"。 \<projectname>**
+   - 在 **解决方案资源管理器** 中，选择项目。 在菜单栏上，选择 **"分析**  >  **配置Code Analysis**  >  **For"。 \<projectname>**
 
-   - 右键单击"**属性解决方案资源管理器并选择****"属性**"，然后选择 **"Code Analysis选项卡**。
+   - 右键单击"属性"中的 **解决方案资源管理器** 并选择"属性 **"，然后选择****"Code Analysis选项卡**。
 
 2. 在" **配置** 和 **平台"** 列表中，选择生成配置和目标平台。
 
 ::: moniker range="vs-2017"
 
-3. 若要每次使用所选配置生成项目时运行代码分析，请选择"生成Code Analysis **启用代码分析**。 也可通过在 上选择"分析运行"Code Analysis  >    >  **运行Code Analysis代码分析 \<projectname>**。
+3. 若要每次使用所选配置生成项目时运行代码分析，请选择"生成时 **启用Code Analysis代码分析**" 。 也可通过在 上选择"分析运行"Code Analysis  >    >  **运行Code Analysis代码分析 \<projectname>**。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-3. 若要每次使用所选配置生成项目时运行代码分析，请在"二进制分析器"部分选择" **生成** 时 **运行** "。 还可以手动运行旧代码分析，有关详细信息，请参阅[如何：为](how-to-run-legacy-code-analysis-manually-for-managed-code.md)托管Code Analysis手动运行旧版代码。
+3. 若要每次使用所选配置生成项目时运行代码分析，请在"二进制分析器"部分选择" **生成** 时 **运行** "。 还可以手动运行旧代码分析，有关详细信息，请参阅[如何：手动Code Analysis旧版](how-to-run-legacy-code-analysis-manually-for-managed-code.md)代码。
 
 ::: moniker-end
 
@@ -100,6 +100,6 @@ ms.locfileid: "122122145"
 
 5. 选择 **项目的"** 规则集"字段，然后选择要应用的规则集的名称。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码分析规则集参考](../code-quality/rule-set-reference.md)

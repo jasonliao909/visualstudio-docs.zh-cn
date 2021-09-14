@@ -15,18 +15,18 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 27df14cad337fcb1ce1dffaeab1d501a6ff549e3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123575"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663907"
 ---
 # <a name="properties-of-swimlanes"></a>泳道属性
 可以向关系图中添加泳道。 泳道将关系图划分为垂直或水平区域。 您可以定义要在泳道内显示的其他形状。 有关详细信息，请参阅 [如何定义 Domain-Specific 语言](../modeling/how-to-define-a-domain-specific-language.md)。 有关如何使用这些属性的详细信息，请参阅 [自定义和扩展 Domain-Specific 语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
  泳道具有下表中列出的属性。
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |正文填充颜色|泳道主体的填充颜色。|White|
 |标题填充颜色|泳道标头的填充颜色。|深灰色|
@@ -53,6 +53,6 @@ ms.locfileid: "122123575"
 |固定工具提示文本|用于固定工具提示的文本。|\<none>|
 |帮助关键字|用于索引此泳道的 F1 帮助的关键字。|\<none>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

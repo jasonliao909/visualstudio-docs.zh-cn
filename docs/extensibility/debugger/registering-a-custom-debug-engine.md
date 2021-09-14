@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2499e4aef01bd4812a705afd7777cacd7eb2ba14
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602369"
 ---
 # <a name="register-a-custom-debug-engine"></a>注册自定义调试引擎
 调试引擎必须将自身注册为类工厂（遵循 COM 约定），并通过 Visual Studio 注册表子项注册 Visual Studio。
@@ -51,7 +51,7 @@ HRESULT CTextInterpreterModule::RegisterServer(BOOL bRegTypeLib, const CLSID * p
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建自定义调试引擎](../../extensibility/debugger/creating-a-custom-debug-engine.md)
 - [SDK 调试帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)
 - [教程：使用 ATL COM 构建调试引擎](/previous-versions/bb147024(v=vs.90))

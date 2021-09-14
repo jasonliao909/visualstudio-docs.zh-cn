@@ -12,28 +12,28 @@ ms.author: lerich
 ms.workload:
 - vssdk
 ms.openlocfilehash: cd0fcd294983d6a6567676f06703b4bd1dd376c4
-ms.sourcegitcommit: b4cc3dee59421f7089112becf128a369acadaf61
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/28/2021
-ms.locfileid: "112990501"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664282"
 ---
 # <a name="locate-visual-studio"></a>找到 Visual Studio
 
 从 Visual Studio 2017 开始，可以安装同一版本甚至版本的多个实例。 当你想要在主开发计算机上预览新功能，同时保留以前的安装时，这非常有用。 由于这些更改，没有可用于查找实例的单一环境变量或注册表值。 相反，可以使用 COM [查询 API](/dotnet/api/microsoft.visualstudio.setup.configuration) 根据与扩展相关的条件查找实例。
 
-这是一个快速只读 API，包含可用于本机和托管代码的 NuGet 包。
+这是一个快速、只读的 API，NuGet本机和托管代码可用的包。
 
-| 代码 | 程序包 |
+| 代码 | 包 |
 | ---- | --- |
 | 本机 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Native |
 | 托管 | https://nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop |
 
-可以查找给定路径或当前进程的单个实例，或枚举所有实例。 请参阅 [示例](https://github.com/Microsoft/vs-setup-samples) ，了解如何查找Visual Studio。
+可以查找给定路径或当前进程的单个实例，或枚举所有实例。 请参阅[示例](https://github.com/Microsoft/vs-setup-samples)，了解如何查找Visual Studio。
 
 ## <a name="tools"></a>工具
 
-若要Visual Studio环境、PowerShell 脚本、安装程序和其他方案中的一些工具，可以直接使用许多开源工具，也可以随自己的脚本一起重新分发。
+若要Visual Studio环境、PowerShell 脚本、安装程序和其他方案中的一些工具，可以使用许多开源工具，也可以随自己的脚本一起重新分发。
 
 | 项目 | 说明 |
 | ------- | ----------- |

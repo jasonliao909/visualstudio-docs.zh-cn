@@ -1,6 +1,6 @@
 ---
-title: 设计业务数据连接模型 |Microsoft Docs
-description: " (BDC) 模型中设计业务数据连接。 添加实体和方法。 定义方法参数。 添加筛选器描述符。 验证 BDC 模型。"
+title: 设计业务数据连接模型|Microsoft Docs
+description: 使用 BDC (模型) 业务数据连接。 添加实体和方法。 定义方法参数。 添加筛选器描述符。 验证 BDC 模型。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,64 +17,64 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 831fe9dfe29744a395dc07a7c3d2d0ac901a43ab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060188"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601015"
 ---
 # <a name="design-a-business-data-connectivity-model"></a>设计业务数据连接模型
-  您可以通过将实体和方法添加到模型文件来开发业务数据连接 (BDC) 服务的模型。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行添加、删除或更新实体表示的数据等任务。 有关详细信息，请参阅将[业务数据集成到 SharePoint](../sharepoint/integrating-business-data-into-sharepoint.md)。
+  通过将实体和方法添加到模型文件， (BDC) 服务的业务数据连接模型。 实体描述数据字段的集合。 例如，实体可以表示数据库中的表。 方法执行添加、删除或更新实体表示的数据等任务。 有关详细信息，请参阅[将业务数据集成到 SharePoint。](../sharepoint/integrating-business-data-into-sharepoint.md)
 
 ## <a name="add-entities"></a>添加实体
- 可以通过将 **实体** 从 Visual Studio **工具箱** 拖动或复制到 BDC 设计器来添加实体。 有关详细信息，请参阅 [如何：将实体添加到模型](../sharepoint/how-to-add-an-entity-to-a-model.md)。
+ 可以通过将实体从"工具箱"拖动或Visual Studio **复制到** BDC 设计器上来添加实体。  有关详细信息，请参阅 [如何：向模型添加实体](../sharepoint/how-to-add-an-entity-to-a-model.md)。
 
- 在类中定义实体的字段。 例如，可以将名为的字段添加 `Address` 到 `Customer` 类中。 您可以将新类添加到项目中，也可以使用通过使用其他工具（如对象关系设计器 (O/R 设计器) 创建的现有类）。 实体的名称和表示该实体的类的名称不必匹配。 定义模型中的方法时，将类与实体相关联。
+ 定义类中实体的字段。 例如，可以将名为 的字段 `Address` 添加到 `Customer` 类。 可以将新类添加到项目，或使用使用其他工具创建的现有类，如 对象关系设计器 (O/R 设计器) 。 实体的名称和表示实体的类的名称不一必须匹配。 在模型中定义方法时，将类与实体关联。
 
 ## <a name="add-methods"></a>添加方法
- 当用户查看、添加、更新或删除基于模型的列表或 Web 部件中的信息时，BDC 服务将调用模型中的方法。 必须为用户可以执行的每个任务将方法添加到模型。 通过从 " **BDC 方法详细信息** " 窗口中选择五种基本方法类型中的任意一种，创建方法。 下表介绍了 BDC 模型的五种基本方法。
+ 当用户在基于模型的列表或 Web 部件中查看、添加、更新或删除信息时，BDC 服务会调用模型中的方法。 必须为用户可以执行的每个任务向模型添加方法。 通过从"BDC 方法详细信息"窗口中选择五种基本方法类型 **之一来创建** 方法。 下表描述了 BDC 模型的五种基本方法。
 
 |方法|说明|
 |------------|-----------------|
-|程序|返回实体实例的集合。 当用户打开列表或 Web 部件时调用。 有关详细信息，请参阅 [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)。|
+|仪|返回实体实例的集合。 当用户打开列表或 Web 部件时调用。 有关详细信息，请参阅 [如何：添加查找器方法](../sharepoint/how-to-add-a-finder-method.md)。|
 |特定的 Finder|返回特定的实体实例。 当用户查看列表中特定项的详细信息时调用。 有关详细信息，请参阅 [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)。|
-|创建者|将新数据添加到实体的数据源。 当用户在基于模型的列表的功能区上选择 " **新建项** " 按钮时调用。 有关详细信息，请参阅 [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)。|
-|更新者|修改列表中的数据。 当用户更新列表中的信息时调用。 有关详细信息，请参阅 [如何：添加更新方法](../sharepoint/how-to-add-an-updater-method.md)。|
-|删除者|删除数据。 当用户从列表中删除某个项时调用。 有关详细信息，请参阅 [如何：添加删除器方法](../sharepoint/how-to-add-a-deleter-method.md)。|
+|创建者|向实体的数据源添加新数据。 当用户选择基于 **模型的** 列表功能区上的"新建项"按钮时调用。 有关详细信息，请参阅 [如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)。|
+|更新者|修改列表中的数据。 当用户更新列表中的信息时调用。 有关详细信息，请参阅 [如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)。|
+|删除者|删除数据。 当用户从列表中删除项时调用。 有关详细信息，请参阅 [如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)。|
 
 ## <a name="define-method-parameters"></a>定义方法参数
- 创建方法时，Visual Studio 添加适用于方法类型的输入参数和输出参数。 这些参数只是占位符。 在大多数情况下，必须修改参数，使其传入或返回正确类型的数据。 例如，默认情况下，Finder 方法返回一个字符串。 在大多数情况下，你想要修改 Finder 方法的返回参数，使其返回实体的集合。 可以通过修改参数的类型描述符来实现此目的。 类型描述符是描述参数的数据类型的特性的集合。 有关详细信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
+ 创建方法时，Visual Studio添加适用于方法类型的输入和输出参数。 这些参数只是占位符。 在大多数情况下，必须修改参数，以便它们传递或返回正确的数据类型。 例如，默认情况下，Finder 方法返回字符串。 在大多数情况下，需要修改 Finder 方法的返回参数，以便它返回实体的集合。 可以通过修改 参数的类型描述符来实现此目的。 类型描述符是描述参数数据类型的属性的集合。 有关详细信息，请参阅 [如何：定义](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)参数 的类型描述符。
 
- Visual Studio 使你能够在模型中的参数之间复制类型描述符。 例如，您可以为 `CustomerTD` 方法的返回参数定义一个名为的类型描述符 `GetCustomer` 。 可以 `CustomerTD` 在 **BDC 资源管理器** 中复制类型描述符，然后将该类型描述符粘贴到方法的输入参数 `CreateCustomer` 。 这可以防止您不得不多次定义同一类型描述符。
+ Visual Studio可用于在模型中的参数之间复制类型描述符。 例如，你可以为 方法的返回参数定义名为 `CustomerTD` 的类型描述 `GetCustomer` 符。 可以在 BDC 资源管理器中复制类型描述符，然后将该类型描述符粘贴到 `CustomerTD` 方法的输入 `CreateCustomer` 参数。 这样，就不必多次定义同一类型描述符。
 
 ## <a name="method-instances"></a>方法实例
- 创建方法时，Visual Studio 添加默认的方法实例。 方法实例是对方法的引用，外加参数的默认值。 单个方法可具有多个方法实例。 每个实例都是方法签名和一组默认值的组合。 有关详细信息，请参阅 [如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)。
+ 创建方法时，Visual Studio添加默认方法实例。 方法实例是对方法的引用，加上参数的默认值。 单个方法可以有多个方法实例。 每个实例都是方法签名和一组默认值的组合。 有关详细信息，请参阅 [如何：定义](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)参数 的类型描述符。
 
- 运行该项目时，方法实例显示在 SharePoint 列表上方的下拉列表中。 用户可以选择方法实例来查看数据。
+ 运行项目时，方法实例将显示在项目列表上方的SharePoint列表中。 用户可以选择方法实例来查看数据。
 
- 若要向方法实例添加默认值，则必须直接修改模型的 XML。 有关详细信息，请参阅 [DefaultValue](/previous-versions/office/developer/sharepoint-2010/ee559319(v=office.14))。
+ 若要向方法实例添加默认值，必须直接修改模型的 XML。 有关详细信息，请参阅 [DefaultValue](/previous-versions/office/developer/sharepoint-2010/ee559319(v=office.14))。
 
 ## <a name="add-filter-descriptors"></a>添加筛选器描述符
- 模型的使用者可能希望检索符合某些条件的实体的实例。 若要启用此功能，可以将筛选器描述符添加到方法。 通过筛选器描述符，模型使用者可以通过在执行方法之前传递值来筛选方法结果集。 有关详细信息，请参阅 [如何：将筛选器参数添加到操作，以限制外部系统中的实例](/previous-versions/office/developer/sharepoint-2010/ee554889(v=office.14))。
+ 模型的使用者可能想要检索与某些条件匹配的实体实例。 若要启用此功能，可以将筛选器描述符添加到方法。 筛选器描述符使模型使用者可以通过执行方法之前将值传递给方法来筛选方法结果集。 有关详细信息，请参阅 [如何：向操作添加筛选器参数以限制外部系统 的实例](/previous-versions/office/developer/sharepoint-2010/ee554889(v=office.14))。
 
- SharePoint 提供多种功能，使用户能够提供筛选器值。 例如，"业务数据" Web 部件提供筛选器文本框。 用户可通过在该文本框中输入值来限制列表中的数据。 有关如何向方法添加筛选器描述符的详细信息，请参阅 [如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
+ SharePoint提供了多个允许用户提供筛选器值的功能。 例如，业务数据Web 部件提供筛选器文本框。 用户可通过在该文本框中输入值来限制列表中的数据。 若要详细了解如何将筛选器描述符添加到方法，请参阅 [如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
 
 ### <a name="filter-descriptor-properties"></a>筛选器描述符属性
- 必须设置筛选器描述符的 **关联类型描述符**、 **名称** 和 **类型** 属性的值。 所有其他属性都是可选的。
+ 必须设置筛选器 **描述符的**"关联类型描述符"、"名称"和"**类型**"属性的值。 所有其他属性都是可选的。
 
- **关联的类型描述符** 属性将筛选器描述符与输入参数相关联。 当用户提供筛选值时，BDC 服务将使用输入参数将该值传递到方法中。
+ 关联 **类型描述符属性** 将筛选器描述符与输入参数关联。 当用户提供筛选器值时，BDC 服务会使用输入参数将该值传递给 方法。
 
- **Type** 属性描述您要使用的筛选模式。 在 SharePoint 中，所选筛选模式将影响在用户界面 (UI) 中显示的文本。 例如，对于比较运算符筛选模式，文本 **等于** 显示为业务数据 Web 部件上的控件。 有关每个筛选模式的详细信息，请参阅 [BDC 支持的筛选器类型](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))。
+ **Type** 属性描述你想要使用的筛选模式。 在SharePoint中，选择的筛选模式会影响在 UI 用户界面 (文本) 。 例如，对于比较器筛选模式，文本等于 显示为业务数据 Web 部件上方的控件。 有关每种筛选模式的信息，请参阅 [BDC 支持的筛选器类型](/previous-versions/office/developer/sharepoint-2010/ee556392(v=office.14))。
 
- 有关筛选器描述符的属性的详细信息，请参阅 [FilterDescriptor](/previous-versions/office/developer/sharepoint-2010/ee557835(v=office.14))。
+ 有关筛选器描述符的属性详细信息，请参阅 [FilterDescriptor](/previous-versions/office/developer/sharepoint-2010/ee557835(v=office.14))。
 
 ### <a name="provide-default-values"></a>提供默认值
- 在某些情况下，用户可能无法提供筛选器值。 可以通过将默认值添加到方法实例来提供默认值，也可以通过在方法的代码中设置默认值来提供默认值。 有关如何向方法实例添加默认值的详细信息，请参阅 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。 有关如何在方法的代码中设置输入参数的默认值的示例，请参阅 [如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
+ 在某些情况下，用户可能不会提供筛选器值。 可以通过向方法实例添加默认值或在方法代码中设置默认值来提供默认值。 若要详细了解如何将默认值添加到方法实例，请参阅 [MethodInstance](/previous-versions/office/developer/sharepoint-2010/ee556838(v=office.14))。 有关如何在方法代码中设置输入参数的默认值的示例，请参阅 [如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)。
 
 ## <a name="validate-the-model"></a>验证模型
- 你可以在开发过程中验证模型。 Visual Studio 确定可阻止模型按预期方式工作的问题。 这些问题出现在 Visual Studio **错误列表** 中。
+ 可以在开发过程中验证模型。 Visual Studio识别可能会阻止模型行为正常的问题。 这些问题显示在错误Visual Studio **列表中**。
 
- 您可以通过打开 "BDC 设计器" 的快捷菜单，然后选择 " **验证**" 来验证模型。 如果模型包含任何错误，它们将出现在 **错误列表** 中。 你可以通过双击列表中的错误，快速将光标移至包含错误的代码。 或者，可以重复选择 **F8** 或 **Shift** F8 键，以向前或向后单步执行 + 列表中的错误。
+ 可以通过打开 BDC 设计器的快捷菜单，然后选择"验证"来 **验证模型**。 如果模型包含任何错误，则它们将显示在"错误 **列表"中**。 你可以通过双击列表中的错误，快速将光标移至包含错误的代码。 或者，可以重复选择 **F8** 或 **Shift** F8 键，以向前或向后单步执行 + 列表中的错误。
 
  当以某种方式违反模型规则时，可能会发生验证错误。 例如，如果类型 **描述符的 IsCollection** 属性设置为 **true，** 但不存在子类型描述符，则会出现验证错误。 可能需要参考 BDC 模型的规则，以了解错误列表 Visual Studio **错误**。 有关 BDC 模型规则的信息，请参阅 [BDCMetadata 架构](/previous-versions/office/developer/sharepoint-2010/ee556387(v=office.14))。
 
@@ -91,7 +91,7 @@ ms.locfileid: "122060188"
 |任务|选项|
 |----------|------------|
 |将模型部署到 BDC 服务。|编辑|
-|若要使用外部内容Web 部件创建列表和 (，) 模型中的实体。|客户端中的可选项|
+|使用外部内容Web 部件创建列表和实体 (模型中) 实体。|客户端中的可选项|
 |创建、读取、更新和删除实体数据。|执行|
 
  有关这些设置详细信息，请参阅 [业务数据连接服务管理](/previous-versions/office/sharepoint-server-2010/ee661742(v=office.14))。
@@ -99,12 +99,12 @@ ms.locfileid: "122060188"
  还可以为单个模型或外部内容类型设置安全权限。 若要详细了解如何设置模型的安全权限，请参阅 [BDC 模型管理](/previous-versions/office/sharepoint-server-2010/ee524073(v=office.14))。 若要详细了解如何设置外部内容类型的安全权限，请参阅 [外部内容类型管理](/previous-versions/office/sharepoint-server-2010/ee524076(v=office.14))。
 
 > [!NOTE]
-> 使用这些设置调试本地 SharePoint 服务器上的解决方案。 若要详细了解如何在生产环境中配置与 BDC 相关的安全设置SharePoint，请参阅[业务数据连接服务安全概述](/previous-versions/office/sharepoint-server-2010/ee661743(v=office.14))。
+> 使用这些设置调试本地 SharePoint 服务器上的解决方案。 若要详细了解如何在生产环境中配置与 BDC 相关的安全设置SharePoint，请参阅[Business Data Connectivity Services 安全概述](/previous-versions/office/sharepoint-server-2010/ee661743(v=office.14))。
 
 ### <a name="retract-models-that-become-corrupt"></a>收回损坏的模型
  当您第一次启动调试器时，Visual Studio 会将整个模型部署到 SharePoint。 此后，每次Visual Studio，SharePoint在部署之间做出的任何更改来更新模型中的模型。
 
- 在某些情况下，你可能希望Visual Studio完全收回SharePoint模型。 例如，模型可能会损坏。  若要将模型重新部署SharePoint，将模型的 **Incremental Update** 属性设置为 **False，** 然后启动调试器。 选择 **在** **BDC** 资源管理器中表示模型的节点时，"增量更新"属性将显示在"属性"窗口中。 默认情况下，模型的名称为 **BdcModel1**。
+ 在某些情况下，你可能希望Visual Studio完全收回模型SharePoint模型。 例如，模型可能会损坏。  若要将模型重新部署SharePoint，将模型的 **Incremental Update** 属性设置为 **False，** 然后启动调试器。 选择 **在** **BDC** 资源管理器中表示模型的节点时，"增量更新"属性将显示在"属性"窗口中。 默认情况下，模型的名称为 **BdcModel1**。
 
 ### <a name="change-identifier-names-of-entities-in-the-model"></a>更改模型中实体的标识符名称
  如果在部署模型后更改标识符的名称，可能会收到部署错误。 无法将模型的 Incremental **Update** 属性设置为 False 来解决 **此错误**。 必须手动收回模型，然后再次部署解决方案。 有关详细信息，请参阅故障排除[SharePoint解决方案](../sharepoint/troubleshooting-sharepoint-solutions.md)。 在最初部署模型之前，可以通过将 **"增量更新** "属性设置为 **False** 来避免此错误。
@@ -121,9 +121,9 @@ ms.locfileid: "122060188"
 |[如何：添加查找器方法](../sharepoint/how-to-add-a-finder-method.md)|演示如何添加使用户能够查看列表或 Web 部件中的实体列表的方法。|
 |[如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)|演示如何添加使用户能够查看特定实体详细信息的方法。|
 |[如何：添加 Creator 方法](../sharepoint/how-to-add-a-creator-method.md)|演示如何添加方法，使用户可以直接从列表或 Web 部件向数据源添加记录。|
-|[如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)|演示如何添加一个方法，该方法使用户能够通过使用列表或 Web 部件用户界面 (UI) 中删除数据。|
+|[如何：添加 Deleter 方法](../sharepoint/how-to-add-a-deleter-method.md)|演示如何添加方法，以便用户通过使用列表或 Web 部件用户界面 (UI) 从数据源中删除数据。|
 |[如何：添加 Updater 方法](../sharepoint/how-to-add-an-updater-method.md)|演示如何添加使用户能够直接从列表或 Web 部件更改数据源中数据记录的方法。|
-|[如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)|演示如何使用方法详细信息窗口中的Visual Studio向方法添加输入和返回参数。|
+|[如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)|演示如何使用方法详细信息窗口Visual Studio向方法添加输入和返回参数。|
 |[如何：定义参数的类型描述符](../sharepoint/how-to-define-the-type-descriptor-of-a-parameter.md)|演示如何在模型中定义参数数据类型。|
 |[如何：定义方法实例](../sharepoint/how-to-define-a-method-instance.md)|演示如何创建 BDC 执行的方法的实例。|
 |[如何：向 Finder 方法添加筛选器描述符](../sharepoint/how-to-add-a-filter-descriptor-to-a-finder-method.md)|演示如何让用户限制 Finder 方法返回的实例数。|

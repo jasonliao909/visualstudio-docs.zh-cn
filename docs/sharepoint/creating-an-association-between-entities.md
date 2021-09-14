@@ -25,20 +25,20 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: dcae4af6cb6ef0592f587718afe995a364686351
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600672"
 ---
 # <a name="create-an-association-between-entities"></a>创建实体之间的关联
   可以通过创建关联，在 BDC (BDC) 中定义实体之间的关系。 Visual Studio生成方法，这些方法向模型的使用者提供有关每个关联的信息。 SharePoint Web 部件、列表或自定义应用程序可以使用这些方法在用户界面 (UI) 中显示数据关系。
 
 ## <a name="create-an-association"></a>创建关联
- 通过选择"Visual Studio 工具箱 **"中的**"关联"控件，选择第一个 (称为源实体) 的实体，然后选择第二个实体 (称为目标实体) 。 可以在关联编辑器 中定义 **关联的详细信息**。 有关详细信息，请参阅 [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)。
+ 通过选择"Visual Studio 工具箱 **"中的"** 关联"控件创建关联，选择 (名为源实体) 的第一个实体，然后选择第二个实体 (称为目标实体) 。 可以在关联编辑器 中定义 **关联的详细信息**。 有关详细信息，请参阅 [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)。
 
 ## <a name="association-methods"></a>关联方法
- 业务数据SharePoint Web 部件等应用程序通过调用实体的服务类中的方法来使用关联。 通过在关联编辑器 中选择方法，可以将方法添加到实体 **的服务类**。
+ 业务数据SharePoint等应用程序通过调用实体的服务类中的方法来使用关联。 通过在关联编辑器 中选择方法，可以将方法添加到实体 **的服务类**。
 
  默认情况下，关联 **编辑器** 将关联导航方法添加到源和目标实体。 源实体中的关联导航方法使使用者能够检索目标实体的列表。 目标实体中的关联导航方法使使用者能够检索与目标实体相关的源实体。
 
@@ -79,6 +79,6 @@ ms.locfileid: "122149541"
  :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderdetailservice.cs" id="Snippet10":::
  :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderdetailservice.vb" id="Snippet10":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)
 - [如何：创建实体之间的关联](../sharepoint/how-to-create-an-association-between-entities.md)

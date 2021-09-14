@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ee0c1daa8c56f759c39f4affb175b3894cbf9039
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122050086"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600743"
 ---
 # <a name="createexpinstance-utility"></a>CreateExpInstance 实用程序
 使用 **CreateExpInstance** 实用工具创建、重置或删除 Visual Studio 的实验实例。 您可以使用实验实例来调试和测试 Visual Studio 扩展，而无需更改基础产品。
@@ -33,7 +33,7 @@ ms.locfileid: "122050086"
 CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSuffix=Suffix
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
  **/Create** 创建实验实例。
 
  **/Reset** 删除实验实例，然后创建一个新实例。
@@ -57,5 +57,5 @@ CreateExpInstance.exe [/Create | /Reset | /Clean] /VSInstance=VsInstance /RootSu
 
  **CreateExpInstance.exe/Reset/VSInstance = 14.0/RootSuffix = Exp**
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [VSPackages](../../extensibility/internals/vspackages.md)

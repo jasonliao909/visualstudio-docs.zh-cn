@@ -21,11 +21,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 3101e0f546026f9d030b87238ce7d1630b4ab581
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601014"
 ---
 # <a name="deploy-publish-and-upgrade-sharepoint-solution-packages"></a>部署、发布和升级 SharePoint 解决方案包
   在 Visual Studio 中开发 SharePoint 解决方案后，可以将其包 ( .wsp) 文件部署到本地 SharePoint 服务器，或者将其发布到远程或本地 SharePoint 服务器。 如果部署这些文件，可以自定义包文件 ( 的部署) 的部署方式。
@@ -67,5 +67,5 @@ ms.locfileid: "122060201"
 ### <a name="upgrade-published-packages"></a>升级发布的包
  如果在发布后对 Visual Studio 中的 SharePoint 项目进行了任何更改，则必须升级已发布的包以包含这些更改。 若要成功升级，包必须具有唯一的名称。 如果在 SharePoint 站点上找到具有相同名称的包（在更新现有应用程序时可能会发生此错误），则会出现文件名称冲突，并允许您重命名包。 重新发布后，新的包将显示在 SharePoint 站点上并可进行升级。 升级的包使用较旧包中的数据更新解决方案，然后在 SharePoint 中激活解决方案。 有关详细信息，请参阅[如何：在远程服务器上部署、发布和升级 SharePoint 解决方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 3efa445e082dc75f43865b123430b6d95a6e7c83
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038092"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602307"
 ---
 # <a name="controls-on-office-documents"></a>文档上的Office控件
   你可以在 Visual Studio 中使用 Office 开发工具将 Windows 窗体控件和 *主机控件* 添加到 Word 文档和 Excel 工作表。 主机控件是在 Word 和 Excel 对象模型中扩展各种用户界面 (UI) 对象的对象。
@@ -48,7 +48,7 @@ ms.locfileid: "122038092"
 
  提供有关在 Excel 和 Word 文档上使用 Windows 窗体控件以及它们与 Windows 窗体上控件之间的区别的信息。
 
-- [运行时向Office文档添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [运行时向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
 
  描述如何将 Windows 窗体控件和主机控件添加到 Word 和 Excel 文档以及描述有关这些控件如何存留在文档中的限制的信息。
 

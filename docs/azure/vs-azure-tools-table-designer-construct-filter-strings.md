@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 4c1573690945658d090bd4bbc8e24cad533e8e72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122098523"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602108"
 ---
 # <a name="constructing-filter-strings-for-the-table-designer"></a>为表设计器构造筛选字符串
 ## <a name="overview"></a>概述
@@ -26,13 +26,13 @@ WCF 数据服务基于[开放数据协议](https://www.odata.org/) (OData)。 �
 
 | 逻辑运算符 | 说明 | 示例筛选器字符串 |
 | --- | --- | --- |
-| eq |等于 |City eq 'Redmond' |
+| eq |Equal |City eq 'Redmond' |
 | gt |大于 |Price gt 20 |
-| ge |大于等于 |Price ge 10 |
+| ge |大于或等于 |Price ge 10 |
 | lt |小于 |Price lt 20 |
 | le |小于或等于 |Price le 100 |
 | ne |不等于 |City ne 'London' |
-| 以及 |且 |Price le 200 and Price gt 3.5 |
+| 和 |且 |Price le 200 and Price gt 3.5 |
 | 或 |或 |Price le 3.5 or Price gt 200 |
 | not |Not |not isAvailable |
 

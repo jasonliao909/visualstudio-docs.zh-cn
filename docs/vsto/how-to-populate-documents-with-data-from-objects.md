@@ -1,6 +1,6 @@
 ---
-title: 如何：使用 对象的数据填充文档
-description: 了解如何使用解决方案中对象的数据，并且可以使用 Windows 窗体控件在文档中显示数据。
+title: 如何：用对象中的数据填充文档
+description: 了解如何使用解决方案中对象的数据，并可以使用 Windows 窗体控件在文档中显示数据。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,15 +17,15 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: cba1869353071be287f244c7783964b010fff91d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046783"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602272"
 ---
-# <a name="how-to-populate-documents-with-data-from-objects"></a>如何：使用 对象的数据填充文档
+# <a name="how-to-populate-documents-with-data-from-objects"></a>如何：用对象中的数据填充文档
 
-在 Microsoft Office Word 文档级项目中，访问数据对象中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据从对象引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，还可以使用主机控件来显示数据。 主机控件是指 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关详细信息，请参阅主机 [项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
+在 Microsoft Office Word 文档级项目中，访问数据对象中的数据与访问 Windows 窗体项目中的数据的方式相同。 使用相同的工具和代码将数据从对象引入解决方案，然后即可使用 Windows 窗体控件来显示该数据。 此外，还可以使用主机控件来显示数据。 主机控件是指 Microsoft Office Word 中借助事件和数据绑定容量进行增强的本地对象。 有关详细信息，请参阅 [主机项和主机控件概述](../vsto/host-items-and-host-controls-overview.md)。
 
 [!INCLUDE[appliesto_controls](../vsto/includes/appliesto-controls-md.md)]
 
@@ -39,9 +39,9 @@ ms.locfileid: "122046783"
 
 ## <a name="to-add-a-data-object"></a>若要添加数据对象
 
-若要添加数据对象，请打开 **"数据源"** 窗口，然后从 对象创建数据源。 有关详细信息，请参阅[添加新数据源](../data-tools/add-new-data-sources.md)。
+若要添加数据对象，请打开 " **数据源** " 窗口并从对象创建数据源。 有关详细信息，请参阅[添加新数据源](../data-tools/add-new-data-sources.md)。
 
-## <a name="connect-the-data-object-to-the-bindingsource"></a>连接对象绑定到 BindingSource
+## <a name="connect-the-data-object-to-the-bindingsource"></a>将数据对象连接到 BindingSource
 
 在文档级项目中，可以在设计时向文档中添加控件并将其绑定到数据。
 
@@ -49,7 +49,7 @@ ms.locfileid: "122046783"
 
 ### <a name="document-level-projects"></a>文档级项目
 
-将数据对象连接到 BindingSource：
+若要将数据对象连接到 BindingSource：
 
 1. 将所需数据字段从“数据源”  窗口拖动到你的文档。 此操作会自动创建一个控件。
 
@@ -59,7 +59,7 @@ ms.locfileid: "122046783"
 
 ### <a name="application-level-projects"></a>应用程序级项目
 
-将数据对象连接到 BindingSource：
+若要将数据对象连接到 BindingSource：
 
 1. 在代码中，可以创建与数据源关联的对象类型的实例。
 
@@ -69,10 +69,10 @@ ms.locfileid: "122046783"
 
 4. 将数据源作为数据绑定添加到控件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [添加新数据源](../data-tools/add-new-data-sources.md)
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
-- [如何：使用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
-- [如何：使用来自主机控件的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
+- [如何：用数据库中的数据填充文档](../vsto/how-to-populate-documents-with-data-from-a-database.md)
+- [如何：使用主机控件中的数据更新数据源](../vsto/how-to-update-a-data-source-with-data-from-a-host-control.md)
 - [BindingSource 组件概述](/dotnet/framework/winforms/controls/bindingsource-component-overview)

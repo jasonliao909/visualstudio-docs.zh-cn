@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4b320829afd749a6aac82c71155bfed9e5766eba
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159004"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600751"
 ---
 # <a name="considerations-for-unloading-and-reloading-nested-projects"></a>卸载和重新加载嵌套项目的注意事项
 
@@ -37,7 +37,7 @@ ms.locfileid: "122159004"
 
 若要处理此进程，父项目将 `QueryInterface` 在接口上调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsFireSolutionEvents> 。 `IVsFireSolutionEvents` 具有指示 IDE 引发 `OnBeforeUnloadProject` 事件以卸载嵌套项目的函数，并引发 `OnAfterLoadProject` 事件以重新加载同一项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3>
 - [嵌套项目](../../extensibility/internals/nesting-projects.md)

@@ -1,5 +1,5 @@
 ---
-title: 保留 Azure 云服务的常量虚拟 IP
+title: 为 Azure 云服务保留固定的虚拟 IP
 description: 了解如何确保 Azure 云服务的虚拟 IP 地址 (VIP) 不更改。
 ms.custom: SEO-VS-2020
 author: ghogen
@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 03/21/2017
 ms.author: ghogen
 ms.openlocfilehash: b29f7b4380233a510fb34c3e72cf2aac9b948ba1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091755"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602160"
 ---
 # <a name="retain-a-constant-virtual-ip-address-for-an-azure-cloud-service"></a>为 Azure 云服务保留固定的虚拟 IP 地址
 更新托管于 Azure 中的云服务时，可能需要确保该服务的虚拟 IP 地址 (VIP) 不发生更改。 许多域管理服务使用域名系统 (DNS) 注册域名。 仅当 VIP 保持不变时，DNS 才适用。 可使用 Azure Tools 中的 **发布向导** 来确保云服务的 VIP 在更新时不更改。 有关如何将 DNS 域管理用于云服务的详细信息，请参阅[为 Azure 云服务配置自定义域名](/azure/cloud-services/cloud-services-custom-domain-name-portal)。

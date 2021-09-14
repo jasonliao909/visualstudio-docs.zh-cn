@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 887c28cdd81f4f3176dcf29804fa9f6ec4b27123
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083604"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602287"
 ---
 # <a name="ltfriendlynamegt-element-office-development-in-visual-studio"></a>&lt;friendlyName &gt; 元素 (Office Visual Studio) 
   `friendlyName` 命名空间的 `vstov4` 元素存储已安装程序列表中出现的名称。
@@ -51,7 +51,7 @@ ms.locfileid: "122083604"
 </vstov4:friendlyName>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
 - [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)

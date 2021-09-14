@@ -13,16 +13,16 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 8972722c0f65f4d007db7173ef41b7a40dba1208
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061150"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663921"
 ---
 # <a name="properties-of-domain-relationships"></a>域关系的属性
 下表中的属性与域关系关联。 有关域关系的信息，请参阅 [了解模型、类和关系](../modeling/understanding-models-classes-and-relationships.md)。 有关如何使用这些属性的详细信息，请参阅 [自定义和扩展 Domain-Specific 语言](../modeling/customizing-and-extending-a-domain-specific-language.md)。
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |访问修饰符|域关系 (或) 的访问级别 `public` `internal` 。|`public`|
 |自定义特性|用于向从域关系生成的源代码类添加特性。|\<none>|
@@ -39,6 +39,6 @@ ms.locfileid: "122061150"
 |显示名称|为域关系生成的设计器中显示的名称。|\<none>|
 |帮助关键字|用于索引域关系的 F1 帮助的可选关键字。|\<none>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

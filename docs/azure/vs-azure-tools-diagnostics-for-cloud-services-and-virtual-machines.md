@@ -10,11 +10,11 @@ ms.workload: azure-vs
 ms.date: 06/28/2018
 ms.author: mikejo
 ms.openlocfilehash: 454584df4f8a5254f538fa50b192be0193322878
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602143"
 ---
 # <a name="set-up-diagnostics-for-azure-cloud-services-and-virtual-machines"></a>为 Azure 云服务和虚拟机设置诊断
 需要对 Azure 云服务或虚拟机进行故障排除时，可使用 Visual Studio 更轻松地设置 Azure 诊断。 诊断可以在运行云服务的虚拟机和虚拟机实例上捕获系统数据和日志记录数据。 诊断数据传输到所选的存储帐户。 有关 Azure 中诊断日志记录的详细信息，请参阅[为 Azure 应用服务中的 Web 应用启用诊断日志记录](/azure/app-service/web-sites-enable-diagnostic-log)。
@@ -29,7 +29,7 @@ ms.locfileid: "122122626"
 ## <a name="azure-sdk-26-diagnostics-changes"></a>Azure SDK 2.6 诊断更改
 以下更改适用于 Visual Studio 中的 Azure SDK 2.6 及更高版本的项目：
 
-* 本地模拟器现在支持诊断。 这意味着，在 Visual Studio 中进行开发和测试时，可以收集诊断数据并确保应用程序创建相应的跟踪。 使用 Azure 存储 Emulator 在 Visual Studio 中运行云服务项目时，连接字符串将 `UseDevelopmentStorage=true` 打开诊断Azure 存储 Emulator。 所有诊断数据都在“开发存储”存储帐户中收集。
+* 本地模拟器现在支持诊断。 这意味着，在 Visual Studio 中进行开发和测试时，可以收集诊断数据并确保应用程序创建相应的跟踪。 使用 Azure 存储 Emulator 在 Visual Studio 中运行云服务项目时，连接字符串会 `UseDevelopmentStorage=true` 打开诊断Azure 存储 Emulator。 所有诊断数据都在“开发存储”存储帐户中收集。
 * 诊断存储帐户连接字符串 `Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString` 存储在服务配置 (.cscfg) 文件中。 在 Azure SDK 2.5 中，诊断存储帐户是在 diagnostics.wadcfgx 文件中指定的。
 
 将 Azure SDK 2.6 及更高版本与 Azure SDK 2.4 及更低版本进行对比就可以发现，连接字符串在某些关键方面的使用方式并不相同：
@@ -124,7 +124,7 @@ ms.locfileid: "122122626"
 8. **“磁盘配额(MB)”** 框指定你要在存储帐户中为诊断数据分配的空间量。 可以根据需要更改默认值。
 9. 在要收集的诊断数据的每个选项卡上，选中其“启用 \<log type\> 的传输”复选框。
 
-    例如，如果要收集应用程序日志，请选中 "**应用** 程序日志" 选项卡上的 "**启用应用程序日志的传输**" 复选框。另外，请指定每种诊断数据类型所需的任何其他信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
+    例如，如果要收集应用程序日志，请在"应用程序日志"选项卡上选中"启用应用程序 **日志传输"** 复选框。此外，请指定每种诊断数据类型所需的任何其他信息。 有关每个选项卡的配置信息，请参阅本文后面的“设置诊断数据源”部分。
 10. 允许收集所有需要的诊断数据后，请选择“确定”。
 11. 保存更新的项目。
 
@@ -145,7 +145,7 @@ ms.locfileid: "122122626"
 
 ![事件日志](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC796664.png)
 
-如果使用的是 Azure SDK 2.6 或更高版本，并且想要指定自定义数据源，请在文本框中输入，然后 **\<Data source name\>** 选择 " **添加**"。 该数据源将添加到 diagnostics.cfcfg 文件中。
+如果使用的是 Azure SDK 2.6 或更高版本，并且想要指定自定义数据源，请在文本框中输入该数据源，然后选择 **\<Data source name\>** "添加 **"。** 该数据源将添加到 diagnostics.cfcfg 文件中。
 
 如果使用的是 Azure SDK 2.5 并想要指定自定义数据源，可以将其添加到 diagnostics.wadcfgx 文件的 `WindowsEventLog` 节，如下例所示：
 
@@ -161,7 +161,7 @@ ms.locfileid: "122122626"
 
 ![性能计数器](./media/vs-azure-tools-diagnostics-for-cloud-services-and-virtual-machines/IC758147.png)
 
-若要跟踪未列出的性能计数器，请使用建议的语法输入该性能计数器， 然后选择“添加”。 虚拟机上的操作系统决定了可以跟踪哪些性能计数器。有关语法的详细信息，请参阅 [指定计数器路径](/windows/win32/perfctrs/specifying-a-counter-path)。
+若要跟踪未列出的性能计数器，请使用建议的语法输入该性能计数器， 然后选择"添加 **"。** 虚拟机上的操作系统确定可以跟踪哪些性能计数器。有关语法详细信息，请参阅 [指定计数器路径](/windows/win32/perfctrs/specifying-a-counter-path)。
 
 ### <a name="infrastructure-logs"></a>基础结构日志
 基础结构日志包含的信息涉及 Azure 诊断基础结构、RemoteAccess 模块和 RemoteForwarder 模块。 若要收集有关基础结构日志的信息，请选中“启用基础结构日志的传输”复选框。 若要增加或减少将基础结构将日志传输到存储帐户的时间间隔，请更改“传输周期(分钟)”值。
@@ -189,7 +189,7 @@ ms.locfileid: "122122626"
 ASP.NET 通过 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 命名空间中的类支持 ETW 框架。 Microsoft.WindowsAzure.Diagnostics 命名空间继承自标准 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 类并对其进行了扩展，在 Azure 环境中，可以通过该命名空间将 [System.Diagnostics.aspx](/dotnet/api/system.diagnostics) 用作日志记录框架。 有关详细信息，请参阅[在 Microsoft Azure 中控制日志记录和跟踪](/archive/msdn-magazine/2010/june/msdn-magazine-cloud-diagnostics-take-control-of-logging-and-tracing-in-windows-azure)以及[在 Azure 云服务和虚拟机中启用诊断](/azure/cloud-services/cloud-services-dotnet-diagnostics)。
 
 ### <a name="crash-dumps"></a>故障转储
-若要捕获有关角色实例何时发生故障的信息，请选中“启用故障转储的传输”复选框。  (因为 ASP.NET 处理大多数异常，所以这通常仅适用于辅助角色。 ) 若要增加或减少专用于故障转储的存储空间的百分比，请更改 **目录配额 (% )** 值。 可以更改将故障转储存储到其中的存储容器，然后选择要捕获“完整”转储还是“微型”转储。
+若要捕获有关角色实例何时发生故障的信息，请选中“启用故障转储的传输”复选框。  (由于 ASP.NET 处理大多数异常，因此这通常仅适用于辅助角色。) 若要增加或减少专用于故障转储的存储空间百分比，请更改"目录配额 **(%) "** 值。 可以更改将故障转储存储到其中的存储容器，然后选择要捕获“完整”转储还是“微型”转储。
 
 下一屏幕截图列出了当前跟踪的进程。 选中与要捕获的进程对应的复选框。 若要将另一进程添加到列表，请输入进程名称，然后选择“添加进程”。
 

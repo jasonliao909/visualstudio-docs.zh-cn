@@ -1,6 +1,6 @@
 ---
 title: 添加、更新或删除 WCF 数据服务引用
-description: 查看如何添加、更新或删除 WINDOWS Wcf (WCF) 数据服务引用。
+description: 查看如何添加、更新或删除 WINDOWS WCF Windows (WCF) 引用。
 ms.date: 11/04/2016
 ms.custom: SEO-VS-2020
 ms.topic: how-to
@@ -17,20 +17,20 @@ manager: jmartens
 ms.technology: vs-data-tools
 ms.workload:
 - data-storage
-ms.openlocfilehash: ffe1d6cea14568f9d8859e005ee56bf45910348488864fe65f24c8b0512890de
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 46834208ab567ce4071c15a488ed14285328371e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121347191"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601150"
 ---
 # <a name="how-to-add-update-or-remove-a-wcf-data-service-reference"></a>如何：添加、更新或删除 WCF 数据服务引用
 
 ::: moniker range="vs-2017"
-服务 *引用* 使项目能够访问一个或多个 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 。 使用 **"添加服务引用"** 对话框在当前解决方案中、本地、本地区域网络或 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Internet 上搜索 。
+服务 *引用* 使项目能够访问一个或多个 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] 。 使用 **"添加服务引用"** 对话框在当前解决方案中搜索、在本地、本地网络或 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)] Internet 上搜索。
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-可以使用 连接的服务中的 解决方案资源管理器 节点来访问 **Microsoft WCF Web Service Reference Provider，** 这使你能够管理 Windows Communication Foundation (WCF) 数据服务引用。
+可以使用 连接的服务中的 解决方案资源管理器 节点来访问 **Microsoft WCF Web Service Reference Provider，** 从而可以管理 Windows Communication Foundation (WCF) 数据服务引用。
 ::: moniker-end
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
@@ -41,7 +41,7 @@ ms.locfileid: "121347191"
 
 ::: moniker range="vs-2017"
 
-1. 在 **解决方案资源管理器** 中，右键单击要添加服务的项目的名称，然后单击 **"添加服务引用"。**
+1. 在 **解决方案资源管理器** 中，右键单击要添加服务的项目的名称，然后单击 **添加服务引用。**
 
    此时将出现“添加服务引用”对话框。
 
@@ -97,7 +97,7 @@ ms.locfileid: "121347191"
 
 ::: moniker range="vs-2017"
 
-1. 在 **解决方案资源管理器** 中，右键单击要添加服务的项目的名称，然后单击 **"添加服务引用"。**
+1. 在 **解决方案资源管理器** 中，右键单击要添加服务的项目的名称，然后单击 **添加服务引用。**
 
     此时将出现“添加服务引用”对话框。
 
@@ -159,6 +159,6 @@ ms.locfileid: "121347191"
     > [!NOTE]
     > 必须手动删除引用服务引用的任何代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Windows中的 Communication Foundation Services 和 WCF 数据Visual Studio](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
