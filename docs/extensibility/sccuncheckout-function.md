@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 2282cb845dfb10bf2e0f216ae4203e9b617597c4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062636"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602327"
 ---
 # <a name="sccuncheckout-function"></a>SccUncheckout 函数
 此函数将撤消以前的签出操作，从而将所选文件的内容还原到结帐之前的状态。 自签出后对文件进行的所有更改都将丢失。
@@ -37,7 +37,7 @@ SCCRTN SccUncheckout (
 );
 ```
 
-#### <a name="parameters"></a>参数
+#### <a name="parameters"></a>parameters
  pvContext
 
 中源代码管理插件上下文结构。
@@ -79,5 +79,5 @@ SCCRTN SccUncheckout (
 ## <a name="remarks"></a>备注
  完成此操作后， `SCC_STATUS_CHECKEDOUT` `SCC_STATUS_MODIFIED` 将为执行撤消签出的文件清除和标志。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)

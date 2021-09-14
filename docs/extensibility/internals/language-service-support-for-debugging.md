@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: f3626b7d3f558e9adc7431c21567a74bfe7f0df5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137635"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600728"
 ---
 # <a name="language-service-support-for-debugging"></a>用于调试的语言服务支持
 语言服务可以提供通过接口支持调试器的功能 <xref:Microsoft.VisualStudio.TextManager.Interop.IVsLanguageDebugInfo> 。 这些功能包括验证断点并向 **自动窗口提供** 表达式列表。

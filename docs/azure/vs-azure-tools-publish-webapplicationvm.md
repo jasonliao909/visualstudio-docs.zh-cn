@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 9443fbf7abe1098d56c41bf25dadca7ff60ced79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082304"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602125"
 ---
 # <a name="publish-webapplicationvm-windows-powershell-script"></a>Publish-WebApplicationVM（Windows PowerShell 脚本）
 将 Web 应用程序部署到虚拟机。 此脚本会在 Azure 订阅中创建所需的资源（如果这些资源不存在）。

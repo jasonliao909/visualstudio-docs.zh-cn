@@ -16,11 +16,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: 664d24c2732ee2c63475ac986fa9bbab78831493
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601332"
 ---
 # <a name="configure-live-code-analysis-for-net"></a>为 .NET 配置实时代码分析
 
@@ -77,7 +77,7 @@ ms.locfileid: "122114181"
 
 ![警报文本最小化分析范围](./media/fsa_alert.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [自动功能挂起](./automatic-feature-suspension.md)
 - [省电模式功能请求](https://github.com/dotnet/roslyn/issues/38429)

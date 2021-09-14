@@ -12,11 +12,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 92228687c5158a4f0bd896090a1aa349686b7074
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037897"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602185"
 ---
 # <a name="messaging-activity-designers"></a>消息传递活动设计器
 

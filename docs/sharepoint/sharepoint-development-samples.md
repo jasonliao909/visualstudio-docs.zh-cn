@@ -1,6 +1,6 @@
 ---
-title: SharePoint开发示例 |Microsoft Docs
-description: 获取有关如何下载和安装 SharePoint 应用程序的各个示例或示例集合的信息。
+title: SharePoint开发示例|Microsoft Docs
+description: 获取有关如何下载和安装单个示例或应用程序示例SharePoint的信息。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -16,16 +16,16 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c825c10b6adf3a64972fa0f9c17d2e7f4c5dc381
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084007"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600606"
 ---
 # <a name="sharepoint-development-samples"></a>SharePoint 开发示例
-  您可以使用 Visual Studio 从[MSDN 代码库](https://code.msdn.microsoft.com/)下载和安装 SharePoint 应用程序的示例。
+  可以使用 Visual Studio 从[MSDN](https://code.msdn.microsoft.com/)代码库 下载SharePoint应用程序的示例。
 
- 您可以单独下载每个示例。 你还可以下载包含共享技术或文章的相关示例的示例包。 在为下载的任何示例发布源代码更改时，您将收到通知。
+ 可以单独下载每个示例。 还可以下载示例包，该包包含共享技术或文章的相关示例。 在为下载的任何示例发布源代码更改时，您将收到通知。
 
 ## <a name="see-also"></a>请参阅
 - [创建 SharePoint 解决方案](../sharepoint/create-sharepoint-solutions.md)

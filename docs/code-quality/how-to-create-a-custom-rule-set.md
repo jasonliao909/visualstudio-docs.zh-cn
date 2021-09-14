@@ -15,11 +15,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 181f94ccc9b83053673e49746d757708afdbf966
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139608"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601308"
 ---
 # <a name="customize-a-rule-set"></a>自定义规则集
 
@@ -64,7 +64,7 @@ ms.locfileid: "122139608"
 
 2. 在 "**新建文件**" 对话框中，选择左侧的 "**常规**" 类别，然后选择 " **Code Analysis 规则集**"。
 
-3. 选择“打开”  。
+3. 选择“打开”。
 
    *新的* 文件组文件将在规则集编辑器中打开。
 
@@ -148,7 +148,7 @@ ms.locfileid: "122139608"
 > [!div class="nextstepaction"]
 > [修改规则集编辑器中的规则](../code-quality/working-in-the-code-analysis-rule-set-editor.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何：配置托管代码项目的代码分析](../code-quality/how-to-configure-code-analysis-for-a-managed-code-project.md)
 - [代码分析规则集参考](../code-quality/rule-set-reference.md)

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ce77f01c2cae0e1f56b9a55b41f291dc7814a2b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600828"
 ---
 # <a name="supported-event-types"></a>支持的事件类型
 Visual Studio 调试当前支持以下事件类型：

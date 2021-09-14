@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 4937ad4322d7aed06890c138d70c66a577540153
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040068"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663886"
 ---
 # <a name="structure-your-modeling-solution"></a>安排你的建模解决方案
 
@@ -39,7 +39,7 @@ ms.locfileid: "122040068"
 
    将依赖项关系图添加到此解决方案。 在依赖项关系图上，绘制为应用程序选择的体系结构。 例如，关系图可能显示以下层及相互之间的依赖关系：演示、业务逻辑和数据。
 
-4. 在"体系结构Visual Studio关系图中为每个层创建单独的解决方案。
+4. 在体系结构Visual Studio关系图中为每个层创建单独的解决方案。
 
    这些解决方案将用于开发层代码。
 
@@ -55,7 +55,7 @@ ms.locfileid: "122040068"
 
    现在，每个层都有一个模型，还有一个用于应用程序体系结构的模型。 每个解决方案都包含各自的模型。 这样使团队成员能够同时在各个层上工作。
 
-2. 对于体系结构解决方案中，将添加每个层解决方案的建模项目。 为此，请打开体系结构解决方案。 在 **解决方案资源管理器** 中，右键单击解决方案节点，指向"添加"，然后单击"现有 **Project"。** 在一个层解决方案中导航到建模项目 (.modelproj)。
+2. 对于体系结构解决方案中，将添加每个层解决方案的建模项目。 为此，请打开体系结构解决方案。 在 **解决方案资源管理器** 中，右键单击解决方案节点，指向"添加"，然后单击 **"现有** Project"。 在一个层解决方案中导航到建模项目 (.modelproj)。
 
    现在，每个模型都在这两个解决方案中可见：其“主”解决方案和体系结构解决方案。
 
@@ -75,7 +75,7 @@ ms.locfileid: "122040068"
 
 #### <a name="use-a-separate-package-for-each-layer"></a>针对每个层使用单独的包
 
-1. 在每层的解决方案中，添加体系结构建模项目。 在 **解决方案资源管理器** 中，右键单击解决方案节点，指向"添加 **"，然后单击**"现有 **Project"。** 现在从每个解决方案都可以访问这个单一建模项目：体系结构项目以及每层的开发项目。
+1. 在每层的解决方案中，添加体系结构建模项目。 在 **解决方案资源管理器** 中，右键单击解决方案节点，指向"添加"，然后单击"现有 **Project"。** 现在从每个解决方案都可以访问这个单一建模项目：体系结构项目以及每层的开发项目。
 
 2. 在共享模型中，为每个层创建一个包：在 **"解决方案资源管理器"中**，选择建模项目。 在 **UML 模型资源管理器** 中，右键单击模型根节点，指向"**添加**"，然后单击"包 **"。**
 
@@ -109,6 +109,6 @@ ms.locfileid: "122040068"
 
 [组织和管理模型](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-9-organizing-and-managing-your-models)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在你的开发过程中使用模型](../modeling/use-models-in-your-development-process.md)

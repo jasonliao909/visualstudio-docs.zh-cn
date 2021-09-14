@@ -11,11 +11,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 4ca987c3f4b311b75b6a6070f8340c179c2ea6e0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078708"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664258"
 ---
 # <a name="ui-text-and-help-for-visual-studio"></a>Visual Studio 的 UI 文本和帮助
 ## <a name="ui-text-and-terminology"></a><a name="BKMK_UITextAndTerminology"></a> UI 文本和术语
@@ -57,7 +57,7 @@ ms.locfileid: "122078708"
 
 - 编写文本，以便每个单词都保留权重，并且是必需的。
 
-- 按照现有 Microsoft 指南用户界面[文本](/windows/desktop/uxguide/text-ui)[、样式和音调](/windows/desktop/uxguide/text-style-tone)。
+- 按照现有 Microsoft 指南用户界面 [文本](/windows/desktop/uxguide/text-ui) 、 [样式和音调](/windows/desktop/uxguide/text-style-tone)。
 
 #### <a name="supplemental-instructions"></a>补充说明
  补充说明提供了有助于用户了解控件或控件分组的其他信息。 这还可以包括了解输入控件所需的格式所需的提示文本。 请谨慎使用补充说明。 对于用户可能无法完全了解他们做出的选择的影响的情况，请保留它们。
@@ -66,7 +66,7 @@ ms.locfileid: "122078708"
 
  **Visual Studio 中的补充文本**
 
- !["选择源代码管理"对话框Visual Studio屏幕截图，其中显示了描述每个源代码管理系统选项的补充文本。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
+ !["选择源代码管理"对话框的屏幕截图，Visual Studio说明每个源代码管理系统选项的补充文本。](../../extensibility/ux-guidelines/media/0601-c_supplementaltext2.png "0601-c_SupplementalText2")
 
  **Visual Studio 中的补充文本**
 
@@ -87,7 +87,7 @@ ms.locfileid: "122078708"
 
 - 保持信息提示简短且简短。 使用支持和鼓励用户的小单词和普通日常语言。
 
-- 按照现有 Microsoft 指南用户界面[文本](/windows/desktop/uxguide/text-ui)[、样式和音调](/windows/desktop/uxguide/text-style-tone)。
+- 按照现有 Microsoft 指南用户界面 [文本](/windows/desktop/uxguide/text-ui) 、 [样式和音调](/windows/desktop/uxguide/text-style-tone)。
 
 #### <a name="control-labels"></a>控件标签
  控件标签应简短、简洁，并遵循Windows[桌面指南](/windows/desktop/uxguide/controls)。
@@ -125,7 +125,7 @@ ms.locfileid: "122078708"
 
 - 切勿仅链接单词"here"。 这给某些屏幕阅读器造成问题，这些阅读器只会发出超链接的单词。
 
-     不正确："在此处查找有关 azure Windows移动服务 **的信息**"
+     不正确："在此处查找有关 azure Windows 移动服务 **的信息**"
 
      正确："Azure 门户Windows哪些移动服务？"
 
@@ -138,7 +138,7 @@ ms.locfileid: "122078708"
 
 - 用控件标签来表示：
 
-     ![下拉控件的屏幕截图，其中显示了提示 解决方案资源管理器 (文本，用于表示"按 Ctrl+;) 搜索"控件标签。](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
+     ![下拉控件的 解决方案资源管理器 (屏幕截图，其中显示了提示文本，用于表示"按 Ctrl+;) 搜索"控件标签。](../../extensibility/ux-guidelines/media/0601-f_hinttext1.png "0601-f_HintText1")
 
 - 使用谓词，提供说明：
 
@@ -204,7 +204,7 @@ ms.locfileid: "122078708"
 
  Visual Studio用户可能会花费大量开发时间来解决生成错误。 当错误具有依赖项或错误消息写入不佳时，此解决时间会增加，这会使发现错误源很困难。
 
- 最佳生成错误是一开始不会发生的错误，这就是Visual Studio AutoComplete 和 IntelliSense 的一些问题。 架构验证程序或类似工具提供相同类型的反馈。 这些机制会主动指导用户构造格式良好的代码，从而降低生成错误的可能性。
+ 最佳生成错误是一开始未发生的错误，因此Visual Studio AutoComplete 和 IntelliSense 的波次。 架构验证程序或类似工具提供相同类型的反馈。 这些机制会主动指导用户构造格式良好的代码，从而降低生成错误的可能性。
 
  Visual Studio提供了一个工具窗口，用户可以在该工具窗口中读取和导航其文档窗口中发生的错误。 提供了键盘快捷方式，以便用户可以快速导航大量代码并直接转到问题的位置。 Visual Studio还允许将每个生成错误绑定到特定的 Help 关键字/上下文 ID，以便用户可以直接转到提供有关错误的更深入信息的帮助主题。
 
@@ -212,7 +212,7 @@ ms.locfileid: "122078708"
 
 - **使用纯语言** ，以很少或没有编译器术语来解释问题。 生成错误的文本不应过于技术。
 
-- **概述可能的原因。** 例如，"' (属性中的 属性和值之间缺少冒号) ： (值) '声明。"
+- **概述可能的原因。** 例如，"' (属性中的 属性和值之间缺少冒号) ： (值) "。
 
 - 提供有关潜在修复的详细信息。 如果没有足够的空间，则其他详细信息可能会放入相应的帮助主题中。
 
@@ -255,7 +255,7 @@ ms.locfileid: "122078708"
 
 ### <a name="error-message-examples"></a>错误消息示例
 
-|良好|糟糕|
+|好|糟糕|
 |----------|---------|
 |"你拨打的号码不再在服务中。 请检查号码，然后再次拨打，或拨打操作员的 0。"|- "错误 (449) ：非法数字"<br />- "此未经处理异常错误指示操作已成功完成。"<br /><br /> ![Visual Studio 中的严重错误消息](../../extensibility/ux-guidelines/media/0602-a_errordialog.png "0602-a_ErrorDialog")|
 
@@ -272,7 +272,7 @@ ms.locfileid: "122078708"
 
 - **帮助程序 UI 机制，例如智能标记和生成对话框。** 这些机制可帮助用户了解 UI 元素，或促进任务，例如智能标记或生成器对话。
 
-- **UI 帮助按钮 (** 弃用) 。 标题栏中的可见指示器，用于访问相关的 F1 帮助主题。
+- **UI 帮助按钮 (** 弃) 。 标题栏中的可见指示器，用于访问相关的 F1 帮助主题。
 
 ### <a name="text"></a>文本
 
@@ -291,22 +291,22 @@ ms.locfileid: "122078708"
 ### <a name="interactive-help-mechanisms"></a>交互式帮助机制
 
 #### <a name="f1-help"></a>F1 帮助
- F1 帮助在编辑器或设计图面中是必需的，但不是在编辑器或设计Visual Studio位置。
+ F1 在编辑器或设计图面中需要帮助，但在编辑器或设计环境中Visual Studio帮助。
 
 #### <a name="hyperlinks-to-help-topics"></a>指向帮助主题的超链接
  超链接可用于执行操作、在 IDE 中导航或在浏览器中启动帮助。 有关 [语言和](../../extensibility/ux-guidelines/ui-text-and-help-for-visual-studio.md#BKMK_UITextAndTerminology) 07.10.01 按钮和超链接的详细信息，请参阅 UI 文本和术语，了解视觉对象和布局指南。
 
-#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>对话框标题栏上的帮助 [？] 按钮 (已弃用) 
+#### <a name="help--buttons-in-dialog-title-bars-deprecated"></a>对话框标题栏上的帮助 [？] 按钮 (弃) 
  大多数情况下，对话框标题栏中的"帮助 "[？] 按钮已弃用。 UI 主题不再是文档模型的一部分，因此可能没有要链接到的相关主题。 实质上，标题栏按钮与 F1 帮助相同，在对话框中不再需要它。 在某些情况下，尽管超链接在较新的 UI 中更常用，但仍可以用作指示更多概念或过程信息可用的指示器。
 
 ##### <a name="dialogs-created-through-the-environment"></a>通过环境创建的对话框
  许多 shell 对话都是通过 **VBDialogBoxParam** 函数创建的。 已更新此共享函数，以帮助将"帮助 **"按钮** 从对话框移动到 **？** 按钮，同时保留向后兼容且可扩展的体系结构。
 
- 具体而言 **，VBDialogBoxParam** 函数在对话框模板中查找 ID 为 **IDHELP** (9 的按钮) 标签为"帮助"或"&**帮助"。** 如果找到"帮助"按钮，则隐藏该按钮，WS_EX_CONTEXTHELP **样式添加到** 对话框中，该对话框将设置 **？** 对话框标题栏中的 按钮。
+ 具体而言 **，VBDialogBoxParam** 函数在对话框模板中查找 ID 为 **IDHELP** (9 的按钮) 标签为"帮助"或"&**帮助**"。 如果找到"帮助"按钮，则隐藏该按钮，WS_EX_CONTEXTHELP **样式添加到** 对话框中，该对话框将设置 **？** 对话框标题栏中的 按钮。
 
  创建对话后，它会将对话过程推送到堆栈上，并调用包含名为 **DialogPreProc** 的预处理对话过程的对话。 何时 **？** 按钮被单击，它会将WM_SYSCOMMAND SC_CONTEXTHELP **发送到对话框**。 **DialogPreProc** 捕获此命令，并更改WM_HELP消息，该消息将传递到原始对话程序。
 
- 大多数环境创建的对话框在对话框中都有一个"帮助"按钮。 显示对话框时，"帮助"按钮是自动隐藏的，并且只有 **"** ？" 按钮有效。 如果 **为 ？** 按钮在 Windows删除或更改，此解决方案允许快速移回原始的"帮助"按钮。
+ 大多数环境创建的对话框在对话框中都有一个"帮助"按钮。 显示对话框时，"帮助"按钮是自动隐藏的，并且只有 **"** ？" 按钮有效。 如果 **为 ？** 按钮在 Windows中删除或更改过，此解决方案允许快速移回原始的"帮助"按钮。
 
  此解决方案做出四个可能导致 bug 的假设：
 
@@ -422,7 +422,7 @@ public class HelpForm : Form
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 的字体和格式](../../extensibility/ux-guidelines/fonts-and-formatting-for-visual-studio.md)
 - [Visual Studio 的布局](../../extensibility/ux-guidelines/layout-for-visual-studio.md)
 - [Visual Studio 的通知和进度](../../extensibility/ux-guidelines/notifications-and-progress-for-visual-studio.md)

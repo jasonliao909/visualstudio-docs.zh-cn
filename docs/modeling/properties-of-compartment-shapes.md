@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: 72fd6e06ee681953e80a4a99291322ae5ace0aa160b6633cbb909bbb4ef7ec01
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 745101605ac4136cbb9823262367bb5bc2e2baf3
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121428895"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663931"
 ---
 # <a name="properties-of-compartment-shapes"></a>分段形状的属性
 隔离舱形状是可用于在域特定语言中显示域类的一种形状。 您可以展开和折叠隔离舱。
@@ -28,7 +28,7 @@ ms.locfileid: "121428895"
 
  隔离舱形状具有下表中列出的属性。
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |默认展开折叠状态|如果 `Expanded` 为，则在创建时显示隔离舱。 如果 `Collapsed` 为，则不是。|展开|
 |填充颜色|此形状的填充颜色。|White|
@@ -40,7 +40,7 @@ ms.locfileid: "121428895"
 |空心虚线样式|此形状的边框虚线样式 (纯色、短线、点、DashDot、DashDotDot、自定义) 。|单色|
 |边框粗细|此形状的边框宽度。|0.03125|
 |文本颜色|与此形状相关联的文本修饰器的颜色。|黑色|
-|访问修饰符|隔离舱形状 (或) 的访问级别 `public` `internal` 。|公共|
+|访问修饰符|隔离舱形状 (或) 的访问级别 `public` `internal` 。|公开|
 |自定义特性|用于向此隔离舱形状生成的源代码类添加特性|\<none>|
 |生成双派生|如果为 `True` ，则将生成基类和分部类 (来支持通过重写进行自定义) 。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
 |具有自定义构造函数|如果为 `True` ，则在源代码中提供自定义构造函数。 有关详细信息，请参阅 [重写和扩展生成的类](../modeling/overriding-and-extending-the-generated-classes.md)。|错误|
@@ -58,6 +58,6 @@ ms.locfileid: "121428895"
 |固定工具提示文本|用于固定工具提示的文本。|\<none>|
 |帮助关键字|用于索引此形状的 F1 帮助的关键字。|\<none>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

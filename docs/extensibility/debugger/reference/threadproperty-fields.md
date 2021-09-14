@@ -1,5 +1,5 @@
 ---
-description: 指定要检索的有关线程的信息。
+description: 指定要检索的线程相关信息。
 title: THREADPROPERTY_FIELDS |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: c70e331de05b3288e1105832616acb1d3359b049
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137829"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602382"
 ---
 # <a name="threadproperty_fields"></a>THREADPROPERTY_FIELDS
-指定要检索的有关线程的信息。
+指定要检索的线程相关信息。
 
 ## <a name="syntax"></a>语法
 
@@ -56,22 +56,22 @@ public enum enum_THREADPROPERTY_FIELDS {
 
 ## <a name="fields"></a>字段
  `TPF_ID`\
- 初始化/使用 `dwThreadId` [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 结构的字段。
+ 初始化/使用 `dwThreadId` [THREADPROPERTIES 结构的](../../../extensibility/debugger/reference/threadproperties.md) 字段。
 
  `TPF_SUSPENDCOUNT`\
- 初始化/使用 `dwSuspendCount` S 结构的字段 `THREADPROPERTIE` 。
+ 初始化/使用 `dwSuspendCount` S 结构的 `THREADPROPERTIE` 字段。
 
  `TPF_STATE`\
- 初始化/使用 `dwThreadState` S 结构的字段 `THREADPROPERTIE` 。
+ 初始化/使用 `dwThreadState` S 结构的 `THREADPROPERTIE` 字段。
 
  `TPF_PRIORITY`\
- 初始化/使用 `bstrPriority` S 结构的字段 `THREADPROPERTIE` 。
+ 初始化/使用 `bstrPriority` S 结构的 `THREADPROPERTIE` 字段。
 
  `TPF_NAME`\
- 初始化/使用 `bstrName` S 结构的字段 `THREADPROPERTIE` 。
+ 初始化/使用 `bstrName` S 结构的 `THREADPROPERTIE` 字段。
 
  `TPF_LOCATION`\
- 初始化/使用 `bstrLocation` S 结构的字段 `THREADPROPERTIE` 。
+ 初始化/使用 `bstrLocation` S 结构的 `THREADPROPERTIE` 字段。
 
  `TPF_ALLFIELDS`\
  指定所有字段。
@@ -79,16 +79,16 @@ public enum enum_THREADPROPERTY_FIELDS {
 ## <a name="remarks"></a>备注
  这些值作为参数传递给 [GetThreadProperties](../../../extensibility/debugger/reference/idebugthread2-getthreadproperties.md) 方法，以指示要初始化 [THREADPROPERTIES](../../../extensibility/debugger/reference/threadproperties.md) 结构的哪些字段。
 
- 这些值还用于 `dwFields` 结构的成员，用于 `THREADPROPERTIES` 指示哪些字段已使用并且有效。
+ 这些值还用于 `dwFields` 结构的成员 `THREADPROPERTIES` ，以指示哪些字段已使用且有效。
 
- 这些标志可以与按位组合 `OR` 。
+ 这些标志可以与位 合并 `OR` 。
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

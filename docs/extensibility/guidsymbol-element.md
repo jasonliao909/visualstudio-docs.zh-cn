@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: b79b8d9399e4294a4e22cbc36f11bccbf703e215
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086971"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600786"
 ---
 # <a name="guidsymbol-element"></a>GuidSymbol 元素
 `GuidSymbol`元素包含表示菜单、组或命令的 GUID：ID 对的 GUID。 ID 来自 `IDSymbol` 元素中的 `GuidSymbol` 元素。 `GuidSymbol`元素具有 `name` 一个 属性，该属性提供 GUID 的友好名称，该名称包含在 `value` 属性中。
@@ -41,7 +41,7 @@ ms.locfileid: "122086971"
 |属性|说明|
 |---------------|-----------------|
 |name|必需。 GUID 符号的名称。|
-|value|必需。 GUID 符号的 GUID。|
+|值|必需。 GUID 符号的 GUID。|
 
 ### <a name="child-elements"></a>子元素
 
@@ -56,7 +56,7 @@ ms.locfileid: "122086971"
 |[Symbols 元素](../extensibility/symbols-element.md)|对 `GuidSymbol` *.vsct 文件中的元素进行* 分组。|
 
 ## <a name="remarks"></a>备注
- 通常 *，.vsct* 文件在其 节中包含三个元素，一个元素用于包本身，一个元素用于命令集 (包提供) 的菜单、组和命令集合，另一个元素用于为按钮和其他可视组件提供图标的位图。 `GuidSymbol` `Symbols` 给定 `IDSymbol` 元素中的 `GuidSymbol` 每个元素都必须具有唯一的 `value` 。但是，只要元素具有不同的父元素，具有相同值的元素就可以 `IDSymbol` 存在于包中。
+ 通常 *，.vsct* 文件在其 节中包含三个元素，一个元素用于包本身，一个用于命令集 (包提供的菜单、组和命令的集合) ，另一个元素用于为按钮和其他可视组件提供图标的位图。 `GuidSymbol` `Symbols` 给定 `IDSymbol` 元素中的 `GuidSymbol` 每个元素都必须具有唯一的 `value` 。但是，只要元素具有不同的父元素，具有相同值的元素就可以 `IDSymbol` 存在于包中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

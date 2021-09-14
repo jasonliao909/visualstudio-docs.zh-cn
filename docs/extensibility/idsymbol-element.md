@@ -1,6 +1,6 @@
 ---
-title: IDSymbol 元素|Microsoft Docs
-description: IDSymbol 元素包含表示菜单、组或命令的 GUID：ID 对的 ID。
+title: IDSymbol 元素 |Microsoft Docs
+description: IDSymbol 元素包含表示菜单、组或命令的 GUID： ID 对的 ID。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 513033b2db2cbf222c7835679ad36e00b91887b6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086893"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600752"
 ---
 # <a name="idsymbol-element"></a>IDSymbol 元素
-`IDSymbol`元素包含表示菜单、组或命令的 GUID：ID 对的 ID。 GUID 来自父 `GuidSymbol` 元素。 `IDSymbol`元素具有 `name` 一个 属性，该属性提供 ID 的友好名称，该名称包含在 `value` 属性中。
+`IDSymbol`元素包含表示菜单、组或命令的 GUID： id 对的 id。 GUID 来自父 `GuidSymbol` 元素。 `IDSymbol`元素具有一个 `name` 属性，该属性提供 ID 的友好名称，该名称包含在属性中 `value` 。
 
 ## <a name="syntax"></a>语法
 
@@ -38,7 +38,7 @@ ms.locfileid: "122086893"
 |属性|说明|
 |---------------|-----------------|
 |name|必需。 ID 符号的名称。|
-|value|必需。 ID 符号的数值 ID 值。|
+|值|必需。 ID 符号的数字 ID 值。|
 
 ### <a name="child-elements"></a>子元素
  无。
@@ -47,10 +47,10 @@ ms.locfileid: "122086893"
 
 |元素|说明|
 |-------------|-----------------|
-|[GuidSymbol 元素](../extensibility/guidsymbol-element.md)|包含表示菜单、组或命令的 GUID：ID 对的 GUID。 对 `IDSymbol` 元素进行分组。|
+|[GuidSymbol 元素](../extensibility/guidsymbol-element.md)|包含表示菜单、组或命令的 GUID： ID 对的 GUID。 对 `IDSymbol` 元素进行分组。|
 
 ## <a name="remarks"></a>备注
- 给定 `IDSymbol` 元素中的 `GuidSymbol` 每个元素都必须具有唯一的 `value` 。 但是，只要元素具有不同的父元素，具有相同值的元素就可以 `IDSymbol` 存在于包中。
+ `IDSymbol`给定元素中的每个元素 `GuidSymbol` 必须具有唯一的 `value` 。 但是， `IDSymbol` 具有相同值的元素可以存在于包中，只要它们具有不同的父元素。
 
-## <a name="see-also"></a>请参阅
-- [Visual Studio命令表 (.vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)
+## <a name="see-also"></a>另请参阅
+- [Visual Studio 命令表 ( .vsct) 文件](../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

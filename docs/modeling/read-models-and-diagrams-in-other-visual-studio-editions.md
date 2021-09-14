@@ -1,6 +1,6 @@
 ---
 title: 在其他 Visual Studio 版本中读取模型和关系图
-description: 了解如何在 Visual Studio 中读取模型和关系图，以及如何在使用不支持模型创建的 Visual Studio 版本时执行只读操作。
+description: 了解在 Visual Studio 中读取模型和关系图，以及使用不支持创建模型Visual Studio版本的只读行为。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 11/04/2016
@@ -14,37 +14,37 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 4adcdb442e31a0de834a05a06ea96981b761ea73
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100772"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663908"
 ---
 # <a name="read-models-and-diagrams-in-other-visual-studio-editions"></a>在其他 Visual Studio 版本中读取模型和关系图
 
 如果你在一个不支持创建模型的 Visual Studio 中打开模型，该模型将以只读模式打开。 在此模式下，你可以更改的关系图的布局，但不能更改该模型。
 
-若要查看 Visual Studio 支持模型创建的版本，请参阅[体系结构和建模工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
+若要了解哪些版本的 Visual Studio模型创建，请参阅对体系结构和建模[工具的版本支持](../modeling/analyze-and-model-your-architecture.md#VersionSupport)。
 
 ## <a name="obtaining-access-to-a-model-and-diagrams"></a>获取对某一模型和关系图的访问权限
 
-若要读取依赖关系图，必须首先使用 Visual Studio 打开建模项目，然后打开该项目中的关系图。
+若要读取依赖项关系图，必须先使用 Visual Studio打开建模项目，然后打开其中关系图。
 
-出于此原因，如果想要读取依赖关系关系图，则还必须具有对在其中创建它的建模项目的访问权限。 为此，可以从源代码管理访问项目，或通过获取项目文件的副本。
+因此，如果要读取依赖项关系图，则还必须有权访问创建它的建模项目。 为此，可以从源代码管理访问项目，也可以获取项目文件的副本。
 
 > [!NOTE]
 > 这不适用于从代码生成的代码图和 .NET 类图。 这些关系图可以独立建模项目中查看。
 
-若要读取依赖关系图，所需的最小文件集如下所示：
+若要读取依赖项关系图，所需的最小文件集如下所示：
 
-- 要读取的关系图的两个关系图文件，例如 **MyDiagram. .classdiagram 和 MyDiagram**。
+- 要读取的关系图的两个关系图文件，例如 **MyDiagram.classdiagram 和 MyDiagram.classdiagram.layout**。
 
     > [!NOTE]
-    > 对于依赖关系图，还应具有名为 _MyDiagram_**. microsoft.visualstudio.teamarchitect.layerdesigner.diagrams.layerdiagram.show** 的文件。
+    > 对于依赖项关系图，还应具有名为 _MyDiagram_**.layerdiagram.suppressions 的文件**。
 
-- 建模项目文件 (**.modelproj) mymodel>**
+- **MyModel.modelproj (建模项目)**
 
-- 根模型文件 (**ModelDefinition\MyModel.uml**) 
+- **ModelDefinition\MyModel.uml (根模型)**
 
 - 关系图中引用的任何包的包文件 (**ModelDefinition\MyPackage.uml**) 
 
@@ -56,9 +56,9 @@ ms.locfileid: "122100772"
 
 - 展开和折叠形状
 
-你可以保存这些更改。 如果要使您的更改对其他用户可见，则至少必须发送更新后的 **. layout** 文件。
+你可以保存这些更改。 如果要使更改对其他用户可见，必须至少发送更新的 **.layout** 文件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [依赖项关系图：参考](../modeling/layer-diagrams-reference.md)
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

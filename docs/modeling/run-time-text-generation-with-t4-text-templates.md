@@ -19,11 +19,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 0599c7739388b44bcbb0c6413a0ee4213ecd3797
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040081"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663903"
 ---
 # <a name="run-time-text-generation-with-t4-text-templates"></a>使用 T4 文本模板的运行时文本生成
 
@@ -430,13 +430,13 @@ End of common template.
 End material for DerivedTemplate1.
 ```
 
-## <a name="related-topics"></a>“相关主题”
+## <a name="related-topics"></a>相关主题
 
 设计时模板：如果要使用模板生成将成为应用程序一部分的代码，请参阅 [使用 T4 文本模板生成设计时代码](../modeling/design-time-code-generation-by-using-t4-text-templates.md)。
 
 可在编译时确定模板及其内容的任何应用程序中使用运行时模板。 但是，如果想要编写从运行时更改的模板生成文本的 Visual Studio 扩展，请参阅[在 VS 扩展中调用文本转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码生成和 T4 文本模板](../modeling/code-generation-and-t4-text-templates.md)
 - [编写 T4 文本模板](../modeling/writing-a-t4-text-template.md)

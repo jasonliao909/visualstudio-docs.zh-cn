@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 928340634c7b34e5f731704961803b4cab85db21
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600829"
 ---
 # <a name="stepping-in-break-mode"></a>在中断模式下单步执行
 以下部分介绍调试器进入中断模式并且必须逐步执行代码时发生的过程：
@@ -31,5 +31,5 @@ ms.locfileid: "122117911"
 
 2. 完成此步骤后，发送 [IDebugStepCompleteEvent2](../../extensibility/debugger/reference/idebugstepcompleteevent2.md) 作为停止事件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

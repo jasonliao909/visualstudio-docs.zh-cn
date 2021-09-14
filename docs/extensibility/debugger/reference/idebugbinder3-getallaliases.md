@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9ab2624e21723b635d6e7db6551cb370308d43d0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600917"
 ---
 # <a name="idebugbinder3getallaliases"></a>IDebugBinder3::GetAllAliases
 此方法从程序中检索别名列表。
@@ -45,9 +45,9 @@ int GetAllAliases(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `uRequest`\
-[in]要返回的最大别名数 (指定传入数组的数组 `ppAliases`) 。
+[in]要返回的别名的最大 (指定传入数组的数组 `ppAliases`) 。
 
 `ppAliases`\
 [in， out]要用别名填充的数组 (如果此值为 null 且为 0，则返回的别名计数将返回 `uRequest` `puFetched`) 。
@@ -58,5 +58,5 @@ int GetAllAliases(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBinder3](../../../extensibility/debugger/reference/idebugbinder3.md)

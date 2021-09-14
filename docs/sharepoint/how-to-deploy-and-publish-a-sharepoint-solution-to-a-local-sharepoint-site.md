@@ -18,11 +18,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 0ca33017e48db24a4f1ab055289683737d047c4e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047707"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663830"
 ---
 # <a name="how-to-deploy-and-publish-a-sharepoint-solution-to-a-local-sharepoint-site"></a>如何：将 SharePoint 解决方案部署并发布到本地 SharePoint 网站
   你可以在开发计算机上将 SharePoint 解决方案部署或发布到本地 SharePoint 服务器。 部署过程会将 *.wsp* 文件复制到 SharePoint 服务器，安装解决方案，然后激活这些功能。 发布过程仅将 *.wsp* 文件复制到 SharePoint 服务器并安装该文件。 必须手动激活它，才能在 SharePoint 中启用它。
@@ -45,7 +45,7 @@ ms.locfileid: "122047707"
 
      发布进度会显示在 "Visual Studio **输出**" 窗口中。 完成此过程后，会在本地 SharePoint 服务器上安装解决方案 (*.wsp*) 文件。 但是，还必须将其激活，才能在 SharePoint 中使用。 如果解决方案文件已存在，则会出现错误，并询问您是否要覆盖现有文件。 有关升级包的信息，请参阅[如何：在远程服务器上部署、发布和升级 SharePoint 解决方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)中有关升级远程包的部分。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在远程服务器上部署、发布和升级 SharePoint 解决方案](../sharepoint/how-to-deploy-publish-and-upgrade-sharepoint-solutions-on-a-remote-server.md)
 - [创建 SharePoint 解决方案包](../sharepoint/creating-sharepoint-solution-packages.md)
 - [如何：自定义 SharePoint 解决方案包](../sharepoint/how-to-customize-a-sharepoint-solution-package.md)

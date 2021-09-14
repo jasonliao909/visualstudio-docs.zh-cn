@@ -19,11 +19,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: b25e58fed406863009b72220fad4ba04b0d3b1e0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118666"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600878"
 ---
 # <a name="idebugmemorycontext2subtract"></a>IDebugMemoryContext2::Subtract
 从当前上下文减去指定值并返回新上下文。
@@ -44,7 +44,7 @@ int Subtract(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwCount`\
 [in]要减量的内存字节数。
 
@@ -59,5 +59,5 @@ int Subtract(
 
  此方法必须始终生成新上下文，即使生成的地址位于与此上下文关联的内存空间之外。 唯一的例外是，无法为新上下文分配内存，或者 如果 为 null 值， (`ppMemCxt` 错误) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)

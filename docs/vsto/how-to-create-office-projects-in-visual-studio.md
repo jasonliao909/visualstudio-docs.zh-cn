@@ -1,6 +1,6 @@
 ---
 title: 如何：在 Office 创建Visual Studio
-description: 了解如何使用自定义Visual Studio为VSTO应用程序创建外接程序和文档Microsoft Office自定义。
+description: 了解如何使用 Visual Studio 为VSTO应用程序创建外接程序和文档Microsoft Office自定义。
 titleSuffix: ''
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 02/02/2017
@@ -26,14 +26,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 126f4c88dd13ff9204ce2e29c2a95cf14df5d473
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046914"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602282"
 ---
 # <a name="how-to-create-office-projects-in-visual-studio"></a>如何：在 Office 创建Visual Studio
-  可以使用 为 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] VSTO创建外接程序和文档级自定义Microsoft Office自定义。 有关这些类型的项目的更多信息，请参阅 Office[解决方案开发&#40;VSTO&#41;。 ](../vsto/office-solutions-development-overview-vsto.md)
+  可以使用 为VSTO创建外接程序和文档级 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 自定义Microsoft Office自定义。 有关这些类型的项目的更多信息，请参阅 Office[解决方案开发&#40;VSTO&#41;。 ](../vsto/office-solutions-development-overview-vsto.md)
 
  [!INCLUDE[appliesto_all](../vsto/includes/appliesto-all-md.md)]
 
@@ -41,18 +41,18 @@ ms.locfileid: "122046914"
 
 ### <a name="to-create-a-vsto-add-in-project"></a>创建 VSTO 外接程序项目
 
-1. 在“文件”菜单上，选择“新建” > “项目”  。 如果集成开发环境 (IDE) 设置为使用开发设置，在"文件"菜单上，选择"新建 [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]   >  **Project"。**
+1. 在“文件”菜单上，选择“新建” > “项目”  。 如果集成开发环境 (IDE) 设置为使用开发设置，在"文件"菜单上，选择" [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)] 新建  >  **Project"。**
 
-    此时将出现“新建项目”对话框。
+    此时将出现“新建项目”  对话框。
 
    > [!NOTE]
-   > 默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅 .NET Framework[配置文件](/dotnet/framework/deployment/client-profile)。
+   > 默认情况下，Office 项目均面向 [!INCLUDE[net_v45](../vsto/includes/net-v45-md.md)]。 有关详细信息，请参阅客户端[.NET Framework配置文件](/dotnet/framework/deployment/client-profile)。
 
 2. 在模板窗格中，在想要使用的语言的节点下，展开 **"Office/SharePoint"。**
 
 3. 选择 **Office外接程序"** 节点。
 
-4. 在项目模板列表中，选择 VSTO 外接程序项目模板。 有关外接程序项目VSTO的列表，请参阅Office[模板概述](../vsto/office-project-templates-overview.md)。
+4. 在项目模板列表中，选择 VSTO 外接程序项目模板。 有关外接程序项目模板VSTO列表，请参阅Office[模板概述](../vsto/office-project-templates-overview.md)。
 
    > [!NOTE]
    > 如果在选择"Office外接程序"节点时项目模板不可见，请确保在对话框顶部的组合框中.NET Framework **4** 或更高版本。 Office 项目模板对于 .NET Framework 的两个版本均为可见。
@@ -96,9 +96,9 @@ ms.locfileid: "122046914"
 
 ### <a name="to-create-a-document-level-customization-project"></a>若要创建文档级自定义项目
 
-1. 在“文件”菜单上，选择“新建” > “项目”  。 如果 IDE 设置为使用Visual Basic设置，在"文件"菜单上，选择 **"新建**  >  **Project"。**
+1. 在“文件”菜单上，选择“新建” > “项目”  。 如果 IDE 设置为使用Visual Basic设置，在 **"文件"** 菜单上，**选择"新建**  >  **Project"。**
 
-    此时将出现“新建项目”对话框。
+    此时将出现“新建项目”  对话框。
 
 2. 在模板窗格中，在想要使用的语言的节点下，展开 **"Office/SharePoint"。**
 
@@ -155,13 +155,13 @@ ms.locfileid: "122046914"
 
 9. 在以下情况中将项目文件夹及其子文件夹添加到 Word“信任中心”中的受信任位置的列表中：
 
-   - 你正在创建基于 *.docm* 文件的 Word 文档，并且该文档包含一个 VBA 项目或 Windows窗体控件。 将项目文件夹添加到受信任位置的列表将有助于确保文档在设计时能够按预期正常工作。
+   - 正在创建基于 *.docm* 文件的 Word 文档，并且该文档包含一个 VBA 项目或 Windows窗体控件。 将项目文件夹添加到受信任位置的列表将有助于确保文档在设计时能够按预期正常工作。
 
    - 创建基于 *.dotx* 文件的 Word 模板项目。 必须将项目文件夹添加到受信任位置列表中，以便可以运行并调试项目。
 
      若要详细了解如何将文档添加到受信任位置，请参阅 Microsoft Office Online 网站创建、删除或更改文件的[受信任位置](https://support.office.com/article/Create-remove-or-change-a-trusted-location-for-your-files-f5151879-25ea-4998-80a5-4208b3540a62)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Office项目模板概述](../vsto/office-project-templates-overview.md)
 - [协作开发Office解决方案](../vsto/collaborative-development-of-office-solutions.md)
 - [设计和创建Office解决方案](../vsto/designing-and-creating-office-solutions.md)

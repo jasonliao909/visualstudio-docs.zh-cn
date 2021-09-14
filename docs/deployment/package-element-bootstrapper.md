@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: d2979fa8b1027184999925437adbb3c49b73ff51
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080424"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663816"
 ---
 # <a name="ltpackagegt-element-bootstrapper"></a>&lt;包 &gt; 元素 (引导程序) 
 `Package`元素是包文件内的顶级 XML 元素。
@@ -150,7 +150,7 @@ ms.locfileid: "122080424"
 |--------------------| - |
 | `Culture` | 必需。 定义此包的区域性，该区域性确定使用的语言。 此属性是 元素的一个键，该元素列出了安装过程中产品名称和错误消息的区域性 `Strings` 特定字符串。 |
 | `Name` | 必需。 在等工具中向开发人员显示的包的名称 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 。 此属性是 元素的键，该元素应包含一个 元素，其中 和 `Strings` `String` 属性设置为与 的 和 `Name` `Culture` `Name` `Culture` 属性匹配 `Package` 。 |
-| `LicenseAgreement` | 可选。 指定分发包中包含 EULA End-User许可证协议 (文件) 。  此文件可以是纯文本格式 *(.txt)* 格式。  (*.rtf)* |
+| `LicenseAgreement` | 可选。 指定分发包中包含 EULA End-User许可协议 (文件) 。  此文件可以是纯文本格式 *(.txt)* 格式。  (*.rtf)* |
 
 ## <a name="example"></a>示例
  下面的代码示例演示了用于重新分发 2.0 .NET Framework包文件。
@@ -190,5 +190,5 @@ ms.locfileid: "122080424"
 </Package>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [产品和包架构参考](../deployment/product-and-package-schema-reference.md)

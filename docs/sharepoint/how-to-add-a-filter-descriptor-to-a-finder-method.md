@@ -19,11 +19,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 62d05e77d808744da1fbb8d639e762f55103b7d4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027131"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600638"
 ---
 # <a name="how-to-add-a-filter-descriptor-to-a-finder-method"></a>如何：向 Finder 方法添加筛选器描述符
   筛选器描述符允许模型的使用者在执行之前将值传递给方法。 有关详细信息，请参阅[设计业务数据连接模型](../sharepoint/designing-a-business-data-connectivity-model.md)。
@@ -70,7 +70,7 @@ ms.locfileid: "122027131"
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/SP_BDC/bdcmodel1/salesorderservice.cs" id="Snippet11":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/sp_bdc/bdcmodel1/salesorderservice.vb" id="Snippet11":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：添加 Finder 方法](../sharepoint/how-to-add-a-finder-method.md)
 - [如何：添加特定的 Finder 方法](../sharepoint/how-to-add-a-specific-finder-method.md)
 - [如何：向方法添加参数](../sharepoint/how-to-add-a-parameter-to-a-method.md)

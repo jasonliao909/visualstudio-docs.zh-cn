@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 9ae389e4094c0cff343cf373f70ac9bd1e1d846d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122769"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602270"
 ---
 # <a name="how-to-prevent-outlook-from-displaying-a-form-region"></a>如何：阻止 Outlook 显示窗体区域
   在某些情况下，您可能不希望 Microsoft Office Outlook 显示特定项的窗体区域。 例如，如果某一联系人项不包含业务地址，则可以阻止显示该业务在地图中的位置的窗体区域。
@@ -43,7 +43,7 @@ ms.locfileid: "122122769"
  :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_Outlook_FR_Separate_O12/MapIt.vb" id="Snippet1":::
 
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
 - [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
 - [如何：将窗体区域添加到 Outlook 外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)

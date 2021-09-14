@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5aa0ab4f9a795fd225e3fc2e26966a921f080c1722fe256f927b6a5d08a968ef
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 5ea070cf466782a1da09e1ba48d08a6965fd041a
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121431521"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602324"
 ---
 # <a name="sdkreference-element-visual-studio-templates"></a>SDKReference 元素（Visual Studio 模板）
 指定项模板使用 SDK 引用。
@@ -62,7 +62,7 @@ ms.locfileid: "121431521"
 ...
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [References 元素（Visual Studio 模板）](../extensibility/references-element-visual-studio-templates.md)
 - [Reference 元素（Visual Studio 模板）](../extensibility/reference-element-visual-studio-templates.md)
 - [创建Project项模板](../ide/creating-project-and-item-templates.md)

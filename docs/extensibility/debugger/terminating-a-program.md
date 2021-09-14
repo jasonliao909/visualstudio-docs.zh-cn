@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ccc94c0466f02c402271952b76f8b1e42a265983
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125200"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600809"
 ---
 # <a name="terminating-a-program"></a>终止程序
 以下部分介绍单个程序与一个线程的终止。
@@ -32,5 +32,5 @@ ms.locfileid: "122125200"
 
    IDE 进入设计模式。 调试引擎或运行时环境调用 [IDebugPortNotify2：：RemoveProgramNode](../../extensibility/debugger/reference/idebugportnotify2-removeprogramnode.md) 从端口中删除程序。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调用调试器事件](../../extensibility/debugger/calling-debugger-events.md)

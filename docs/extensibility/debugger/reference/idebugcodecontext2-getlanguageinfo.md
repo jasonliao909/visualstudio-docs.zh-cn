@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f1f3c2ac4eb0a41e94415ab83605f978e691311d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145128"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600902"
 ---
 # <a name="idebugcodecontext2getlanguageinfo"></a>IDebugCodeContext2::GetLanguageInfo
 获取此代码上下文的语言信息。
@@ -43,7 +43,7 @@ int GetLanguageInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrLanguage`\
 [in， out]返回一个包含语言名称的字符串，例如"C++"。
 
@@ -56,5 +56,5 @@ int GetLanguageInfo(
 ## <a name="remarks"></a>备注
  至少一个参数必须返回非 null 值。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md)

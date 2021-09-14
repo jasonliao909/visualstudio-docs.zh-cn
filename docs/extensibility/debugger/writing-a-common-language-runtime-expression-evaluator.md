@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f7121e28284044ce54d6aa8ffbde7f87edd60e97
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600792"
 ---
 # <a name="writing-a-common-language-runtime-expression-evaluator"></a>编写公共语言运行时表达式计算器
 > [!IMPORTANT]
@@ -47,5 +47,5 @@ ms.locfileid: "122125174"
 
  [实现类型可视化工具和自定义查看](../../extensibility/debugger/implementing-type-visualizers-and-custom-viewers.md) 器说明需要由哪个组件实现哪个接口才能支持类型可视化工具和自定义查看器。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
  [Visual Studio 调试器扩展性](../../extensibility/debugger/visual-studio-debugger-extensibility.md)

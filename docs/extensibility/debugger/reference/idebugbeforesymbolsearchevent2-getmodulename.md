@@ -1,6 +1,6 @@
 ---
 description: 检索当前正在调试的模块的名称。
-title: IDebugBeforeSymbolSearchEvent2：： GetModuleName |Microsoft Docs
+title: IDebugBeforeSymbolSearchEvent2：：GetModuleName |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,11 +17,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d0959cc854a45b14d2c021ea0564d6275e89af72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064703"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600932"
 ---
 # <a name="idebugbeforesymbolsearchevent2getmodulename"></a>IDebugBeforeSymbolSearchEvent2::GetModuleName
 检索当前正在调试的模块的名称。
@@ -40,15 +40,15 @@ public int GetModuleName (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrModuleName`\
-弄模块的名称。
+[out]模块的名称。
 
 ## <a name="return-value"></a>返回值
-如果成功， `S_OK` 则返回; 否则返回错误代码。
+如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的 **CDebugBeforeSymbolSearchEventBase** 对象实现此方法。
+以下示例演示如何为公开 [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)接口的 **CDebugBeforeSymbolSearchEventBase** 对象实现此方法。
 
 ```cpp
 STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleName)
@@ -70,5 +70,5 @@ STDMETHODIMP CDebugBeforeSymbolSearchEventBase::GetModuleName(BSTR *pbstrModuleN
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBeforeSymbolSearchEvent2](../../../extensibility/debugger/reference/idebugbeforesymbolsearchevent2.md)

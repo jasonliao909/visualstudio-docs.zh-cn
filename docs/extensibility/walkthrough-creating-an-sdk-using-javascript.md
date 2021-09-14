@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 419fc1552af65ba4d2fc80f0c1767e48919ebf5cf29be9bffd8d3fbd063f1208
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 3fdbf8b097c2e71341abc43ccb3e975392e1f810
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121358774"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601026"
 ---
 # <a name="walkthrough-create-an-sdk-using-javascript"></a>演练：使用 JavaScript 创建 SDK
 本演练介绍了如何使用 JavaScript 以 Visual Studio 扩展 (VSIX) 来创建简单的数学 SDK。  本演练分为以下几个部分：
@@ -139,7 +139,7 @@ ms.locfileid: "121358774"
 
 20. 选择 " **安装** " 按钮，让安装完成。
 
-21. 重启 Visual Studio。
+21. 重新启动 Visual Studio。
 
 ## <a name="to-create-a-sample-app-that-uses-the-sdk"></a><a name="createSampleApp"></a> 创建使用 SDK 的示例应用
 
@@ -316,5 +316,5 @@ ms.locfileid: "121358774"
 
 12. 在应用程序 UI 中，输入任意两个数字，选择一个操作，然后选择 **=** 按钮。 显示正确的结果。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建软件开发工具包](../extensibility/creating-a-software-development-kit.md)

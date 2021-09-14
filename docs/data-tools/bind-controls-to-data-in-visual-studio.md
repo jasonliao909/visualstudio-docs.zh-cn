@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: adbe3262e1da3c0d28f16bf32d94952c6565e142
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081927"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601230"
 ---
 # <a name="bind-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将控件绑定到数据
 
@@ -39,7 +39,7 @@ ms.locfileid: "122081927"
 | 实体数据模型 | 是<sup>1</sup> | 是 | 是 |
 | LINQ to SQL 类 | 否<sup>2</sup> | 否<sup>2</sup> | 否<sup>2</sup> |
 | 服务（包括 [!INCLUDE[ssAstoria](../data-tools/includes/ssastoria_md.md)]、WCF 服务和 Web 服务） | 是 | 是 | 是 |
-| 对象 | 是 | 是 | 是 |
+| Object | 是 | 是 | 是 |
 | SharePoint | 是 | 是 | 是 |
 
 1. 使用 **实体数据模型** 向导生成模型，然后将这些对象拖到设计器中。

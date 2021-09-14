@@ -23,11 +23,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 70013e4943e256871dfe12e38b364da1cc67c94f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122036948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601158"
 ---
 # <a name="fill-datasets-by-using-tableadapters"></a>使用 Tableadapter 填充数据集
 
@@ -55,7 +55,7 @@ TableAdapters 是设计器生成的组件，用于连接到数据库、运行查
 
 ![客户端应用程序中的数据流](../data-tools/media/clientdatadiagram.gif)
 
-虽然 TableAdapter 是使用数据集设计器设计的，但 TableAdapter 类不会生成为 的嵌套类 <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的单独命名空间中。 例如，如果有一个名为 的数据集，则 与 中的 `NorthwindDataSet` 关联的 TableAdapters  <xref:System.Data.DataTable> `NorthwindDataSet` 将放在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定的 TableAdapter，必须声明 TableAdapter 的新实例。 例如：
+虽然 TableAdapter 是使用数据集设计器设计的，但 TableAdapter 类不会作为 的嵌套类生成 <xref:System.Data.DataSet> 。 它们位于特定于每个数据集的单独命名空间中。 例如，如果有一个名为 的数据集，则 与 中的 `NorthwindDataSet` 关联的 TableAdapters  <xref:System.Data.DataTable> `NorthwindDataSet` 将放在 `NorthwindDataSetTableAdapters` 命名空间中。 若要以编程方式访问特定的 TableAdapter，必须声明 TableAdapter 的新实例。 例如：
 
 :::code language="csharp" source="../snippets/csharp/VS_Snippets_VBCSharp/VbRaddataTableAdapters/CS/Class1.cs" id="Snippet7":::
 :::code language="vb" source="../snippets/visualbasic/VS_Snippets_VBCSharp/VbRaddataTableAdapters/VB/Class1.vb" id="Snippet7":::
@@ -76,7 +76,7 @@ TableAdapters 可以包含多个查询来填充其关联的数据表。 只要�
 
 例如，如果应用程序包含一个包含客户名称的表，可以创建一个查询，该查询使用以特定字母开头的每一个客户名称填充该表，创建一个查询，该查询用位于同一状态的所有客户填充该表。 若要向具有给定状态的客户填充表，可以创建一个查询，该查询采用状态 `Customers` `FillByState` 值的参数，如下所示 `SELECT * FROM Customers WHERE State = @State` ：。 通过调用 方法并传递如下所示的参数值 `FillByState` 来运行查询 `CustomerTableAdapter.FillByState("WA")` ：。
 
-除了添加返回 TableAdapter 数据表相同架构数据的查询外，还可以添加返回标量值 (单个) 查询。 例如，返回客户计数 () 即使返回的数据不符合表的架构，该查询对 `SELECT Count(*) From Customers` `CustomersTableAdapter,` 也有效。
+除了添加返回 TableAdapter 数据表相同架构数据的查询外，还可以添加返回标量和单个 (的) 查询。 例如，即使返回的数据不符合表的架构， () 客户计数的查询对于 `SELECT Count(*) From Customers` `CustomersTableAdapter,` 也有效。
 
 ## <a name="clearbeforefill-property"></a>ClearBeforeFill 属性
 
@@ -88,7 +88,7 @@ TableAdapters 通过封装配置的类来扩展标准数据适配器 <xref:Syste
 
 ## <a name="tableadapter-methods-and-properties"></a>TableAdapter 方法和属性
 
-TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象 **浏览器**。 它是在设计时创建的，使用前面提到的向导之一。 创建 TableAdapter 时分配给它的名称基于所处理表的名称。 例如，在基于名为 的数据库中的表创建 `Orders` TableAdapter 时，TableAdapter 命名为 `OrdersTableAdapter` 。 可以使用表 中的 Name 属性更改 TableAdapter的类 **数据集设计器。**
+TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象 **浏览器**。 它是在设计时创建的，使用前面提到的向导之一。 创建 TableAdapter 时分配给它的名称基于所处理表的名称。 例如，在基于名为 的数据库中的表创建 `Orders` TableAdapter 时，TableAdapter 命名为 `OrdersTableAdapter` 。 可以使用表中的 Name 属性更改 TableAdapter的类 **数据集设计器。**
 
 下面是 TableAdapters 的常用方法和属性：
 
@@ -104,42 +104,42 @@ TableAdapter 类不是 .NET 类型。 这意味着你无法查看文档或对象
 
 TableAdapters 使用数据命令读取和写入数据库。 使用 TableAdapter (main) 查询作为创建关联数据表的架构以及与 方法关联的 、 和 命令 `Fill` `InsertCommand` `UpdateCommand` `DeleteCommand` `TableAdapter.Update` 的基础。 调用 TableAdapter 的 方法将运行最初配置 TableAdapter 时创建的语句，而不是使用 `Update` **TableAdapter** 查询配置向导 添加的其他查询之一。
 
-使用 TableAdapter 时，它使用通常会执行的命令有效地执行相同的操作。 例如，调用适配器的 方法时，适配器在其 属性中运行数据命令，并使用数据读取器 (例如，) 将结果集加载到数据 `Fill` `SelectCommand` <xref:System.Data.SqlClient.SqlDataReader> 表中。 同样，调用适配器的 方法时，它会在 、 (属性中运行相应的命令，) 表中每个已更改的记录 `Update` `UpdateCommand` `InsertCommand` `DeleteCommand` 。
+使用 TableAdapter 时，它使用通常会执行的命令有效地执行相同的操作。 例如，调用适配器的 方法时，适配器在其 属性中运行数据命令，并使用数据读取器 (例如) 将结果集加载到 `Fill` `SelectCommand` <xref:System.Data.SqlClient.SqlDataReader> 数据表中。 同样，调用适配器的 方法时，它会在 、 (属性中运行相应的命令，) 表中每个已更改的记录 `Update` `UpdateCommand` `InsertCommand` `DeleteCommand` 。
 
 > [!NOTE]
 > 如果主查询中有足够的信息，则生成 `InsertCommand` TableAdapter 时，默认情况下会 `UpdateCommand` 创建 、 和 `DeleteCommand` 命令。 如果 TableAdapter 的主查询不止一个表语句，则设计器可能无法生成 `SELECT` `InsertCommand` 、 和 `UpdateCommand` `DeleteCommand` 。 如果未生成这些命令，则运行 方法时可能会收到 `TableAdapter.Update` 错误。
 
 ## <a name="tableadapter-generatedbdirectmethods"></a>TableAdapter GenerateDbDirectMethods
 
-除了 、 和 之外，还使用可以直接针对数据库运行的方法创建 `InsertCommand` `UpdateCommand` `DeleteCommand` TableAdapters。 可以直接调用 、 (和 `TableAdapter.Insert` `TableAdapter.Update` `TableAdapter.Delete`) 来操作数据库中的数据。 这意味着可以从代码中调用这些单独的方法，而不是调用 来处理挂起的关联数据表 `TableAdapter.Update` 的插入、更新和删除。
+除了 、 和 之外，还使用可以直接针对数据库运行的方法创建 `InsertCommand` `UpdateCommand` `DeleteCommand` TableAdapters。 可以直接调用 、 (`TableAdapter.Insert` 和 `TableAdapter.Update` `TableAdapter.Delete`) 以操作数据库中的数据。 这意味着可以从代码中调用这些单独的方法，而不是调用 来处理挂起的关联数据表 `TableAdapter.Update` 的插入、更新和删除。
 
 如果不想创建这些直接方法，请设置 TableAdapter 的 **GenerateDbDirectMethods** 属性， ("属性 `false` "窗口中) 。  添加到 TableAdapter 的其他查询是独立查询 - 它们不会生成这些方法。
 
 ## <a name="tableadapter-support-for-nullable-types"></a>TableAdapter 对可为空类型的支持
 
-TableAdapters 支持可为空类型和 `Nullable(Of T)` `T?` 。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 有关 C# 中可为空类型的信息，请参阅 [使用可为空类型](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
+Tableadapter 支持可以为 null `Nullable(Of T)` 的类型和 `T?` 。 若要深入了解 Visual Basic 中可以为 null 的类型，请参阅[可以为 null 的值类型](/dotnet/visual-basic/programming-guide/language-features/data-types/nullable-value-types)。 有关 c # 中可以为 null 的类型的详细信息，请参阅 [使用可以为 null 的类型](/dotnet/csharp/programming-guide/nullable-types/using-nullable-types)。
 
 <a name="tableadaptermanager-reference"></a>
 
-## <a name="tableadaptermanager-reference"></a>TableAdapterManager 参考
+## <a name="tableadaptermanager-reference"></a>TableAdapterManager 引用
 
-默认情况下，创建包含相关表的数据集时，将生成 TableAdapterManager 类。 若要防止生成类，请将数据集的 属性的值更改为 `Hierarchical Update` false。 将具有关系的表拖动到窗体或 WPF Windows的设计图面上时，Visual Studio声明 类的成员变量。 如果不使用数据绑定，必须手动声明变量。
+默认情况下，当您创建包含相关表的数据集时，TableAdapterManager 类将生成。 若要防止生成类，请将 `Hierarchical Update` 数据集的属性值更改为 false。 将具有关系的表拖到 Windows 窗体或 WPF 页的设计图面上时，Visual Studio 声明类的成员变量。 如果不使用数据绑定，则必须手动声明该变量。
 
-TableAdapterManager 类不是 .NET 类型。 因此，无法在文档中查找它。 它是在设计时作为数据集创建过程的一部分创建的。
+TableAdapterManager 类不是 .NET 类型。 因此，您不能在文档中查找它。 它在设计时创建，作为数据集创建过程的一部分。
 
-以下是 类的常用方法和 `TableAdapterManager` 属性：
+下面是类的常用方法和属性 `TableAdapterManager` ：
 
 |成员|说明|
 |------------|-----------------|
 |`UpdateAll` 方法|保存所有数据表中的所有数据。|
-|`BackUpDataSetBeforeUpdate` 属性|确定是否在执行 方法之前创建数据集的备份 `TableAdapterManager.UpdateAll` 副本。布尔。|
-|*tableName* `TableAdapter` 财产|表示 TableAdapter。 生成的 TableAdapterManager 包含它所管理的每个 `TableAdapter` 属性。 例如，包含 Customers 和 Orders 表的数据集使用包含 和 属性的 TableAdapterManager `CustomersTableAdapter` `OrdersTableAdapter` 生成。|
-|`UpdateOrder` 属性|控制单个插入、更新和删除命令的顺序。 将此选项设置为 枚举中的值 `TableAdapterManager.UpdateOrderOption` 之一。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete**。 这意味着，对数据集中所有表执行插入、更新和删除操作。|
+|`BackUpDataSetBeforeUpdate` 属性|确定在执行方法之前是否创建数据集的备份副本 `TableAdapterManager.UpdateAll` 。变量.|
+|*tableName* `TableAdapter` 知识产权|表示 TableAdapter。 生成的 TableAdapterManager 包含其管理的每个属性的属性 `TableAdapter` 。 例如，具有 Customers 和 Orders 表的数据集将生成包含和属性的 TableAdapterManager `CustomersTableAdapter` `OrdersTableAdapter` 。|
+|`UpdateOrder` 属性|控制单个 insert、update 和 delete 命令的顺序。 将此项设置为枚举中的值之一 `TableAdapterManager.UpdateOrderOption` 。<br /><br /> 默认情况下， `UpdateOrder` 设置为 **InsertUpdateDelete**。 这意味着对数据集中的所有表执行 insert、update 和 delete 操作。|
 
 ## <a name="security"></a>安全性
 
-使用 CommandType 属性设置为 的数据命令时，请仔细检查从客户端发送的信息，然后再 <xref:System.Data.CommandType.Text> 将该信息传递到数据库。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将用户输入传输至数据库之前，请始终验证信息是否有效。 最佳做法是尽可能始终使用参数化查询或存储过程。
+如果使用的数据命令的 CommandType 属性设置为 <xref:System.Data.CommandType.Text> ，请在将客户端传递到数据库之前，仔细检查从该客户端发送的信息。 恶意用户会设法发送（注入）经过修改或附加的 SQL 语句，企图对数据库进行未经授权的访问或破坏数据库。 将用户输入传输到数据库之前，请始终验证信息是否有效。 最佳做法是尽可能使用参数化查询或存储过程。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [数据集工具](../data-tools/dataset-tools-in-visual-studio.md)

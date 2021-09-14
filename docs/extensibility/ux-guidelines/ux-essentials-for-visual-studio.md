@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0124fd30f1f4c3565e0019f2f5709726f7622126
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078682"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664257"
 ---
 # <a name="ux-essentials-for-visual-studio"></a>Visual Studio 用户体验基础知识
 
@@ -86,7 +86,7 @@ ms.locfileid: "122078682"
 
  在这种情况下，还有一个需要考虑的问题，因为用于警报的图标包含一个 " &times; " 图标，因此不能在其旁边使用公用 "删除" 图标。 因此，UI 使用 "删除" 按钮，这是一个笨的控件。
 
- ![默认情况下，在错误状态下放置 UI 是 Visual Studio 的反模式。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-pattern")<br />默认情况下，在错误状态下放置 UI 是 Visual Studio 的反模式。
+ ![默认情况下，在错误状态下放置 UI 是 Visual Studio 的反模式。](../../extensibility/ux-guidelines/media/manifestdesignererrordeclarationsanti-pattern.png "ManifestDesignererrordeclarationsanti-模式")<br />默认情况下，在错误状态下放置 UI 是 Visual Studio 的反模式。
 
 #### <a name="alternatives"></a>备选方法
 
@@ -109,27 +109,27 @@ ms.locfileid: "122078682"
 #### <a name="example-video-links-in-team-explorer"></a>示例：团队资源管理器中的视频链接
 强制用户在关闭 UI 之前读取说明性文本是 Visual Studio 内的反模式。 正确设计后，视频链接应显示一个工具提示，其中包含有关悬停的附加信息，单击 " &times; " 应关闭该消息，而无需进一步交互。
 
- ![解释性文本反&#45;模式 &#45; 不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "不正确的useofmultipleclicks")<br />视频链接模式不正确
+ ![解释性文本反&#45;模式 &#45; 不正确](../../extensibility/ux-guidelines/media/incorrectuseofmultipleclicks.png "Incorrectuseofmultipleclicks")<br />视频链接模式不正确
 
 用户只需单击一次鼠标) ，而不是简单的 "关闭" (按钮，用户只需单击两下鼠标，即可在视频链接显示的每个位置都关闭 UI。
 
 对于这种情况，正确的设计是遵循 Internet Explorer 常见的模式 Office 和 Visual Studio：悬停时，用户可以看到工具提示说明，单击一次即可隐藏 UI。
 
- ![解释性文本反&#45;模式 &#45; 正确](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "说明性textanti-pattern-correct")<br />正确的视频链接模式
+ ![解释性文本反&#45;模式 &#45; 正确](../../extensibility/ux-guidelines/media/explanatorytextanti-pattern-correct.png "Explanatorytextanti-模式-正确")<br />正确的视频链接模式
 
 ### <a name="using-command-bars-for-settings"></a>使用命令栏进行设置
 
 **图 A** 表示这种反模式：将设置置于仅适用于命令的命令按钮的下面。 在此草拟中，除了开始调试以外，还有一些命令，例如，在浏览器中进行查看、在不调试的情况下启动和单步执行，将遵循所选的设置。
 
-![图 A：命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-pattern-FigureA")<br />图 A：命令栏反模式
+![图 A：命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurea.png "Commandbaranti-FigureA")<br />图 A：命令栏反模式
 
 稍微好一点，但仍不希望将此类型的设置放在工具栏中，如 **图 B** 所示。虽然拆分按钮需要较少的空间，因此，这种改进对下拉控制，但这两种设计仍使用工具栏来升级不是真正的命令的内容。
 
-![图 B：更好，但仍然是命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-pattern-FigureB")<br />图 B：更好，但仍然是命令栏反模式
+![图 B：更好，但仍然是命令栏反模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figureb.png "Commandbaranti-FigureB")<br />图 B：更好，但仍然是命令栏反模式
 
 在 **图 C** 中所示的正确方法中，设置与一系列命令相关联。 没有设置全局设置，我们只是在四个命令之间切换。 在这种情况下，工具栏中的命令是可接受的。
 
-![图 C：正确使用 Visual Studio 命令栏模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-pattern-FigureC")<br />图 C：正确使用 Visual Studio 命令栏模式
+![图 C：正确使用 Visual Studio 命令栏模式](../../extensibility/ux-guidelines/media/commandbaranti-pattern-figurec.png "Commandbaranti-FigureC")<br />图 C：正确使用 Visual Studio 命令栏模式
 
 ### <a name="control-anti-patterns"></a>控制反模式
  有些反模式只是错误地使用或表示控件或控件组。
@@ -155,17 +155,17 @@ ms.locfileid: "122078682"
 
 2. "了解详细信息" 不是指向概念主题的链接的相应文本。 用户的目标不是了解详细信息，而是了解他们选择的后果。
 
-   ![忽略颜色服务和对超链接使用"了解更多"Visual Studio反模式。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />忽略颜色服务和对超链接使用"了解更多"Visual Studio反模式。
+   ![忽略颜色服务并使用 "了解更多" 超链接 Visual Studio 反模式。](../../extensibility/ux-guidelines/media/0102-j_hyperlinkincorrect.png "0102-j_HyperlinkIncorrect")<br />忽略颜色服务并使用 "了解更多" 超链接 Visual Studio 反模式。
 
-**更好的解决方案：** 通过单击链接提出用户要提问的问题。 例如：
+**更好的解决方案：** 单击链接，提出用户要询问的问题。 例如：
 
-- Azure Windows如何工作？
+- Windows Azure 服务的工作原理是什么？
 
-- 何时需要 Azure Windows项目移动服务？
+- 何时需要 Windows Azure 移动服务项目？
 
-#### <a name="using-click-here-for-links"></a>对链接使用"单击此处"
- 超链接应该是自描述性的。 使用"单击此处"或任何类似的变体是一种反模式。
+#### <a name="using-click-here-for-links"></a>为链接使用 "单击此处"
+ 超链接应是自描述性的。 这是一种可使用 "单击此处" 或任何类似变体的反模式。
 
- **错误：** "单击此处，了解如何创建新项目。"
+ **错误：** 单击此处了解有关如何创建新项目的说明。
 
- **很好：** "如何实现创建新项目？"
+ **不错：** "如何实现创建新项目？"

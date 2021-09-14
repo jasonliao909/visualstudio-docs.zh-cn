@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: bfbec75b8190b56900a7a994ac12022af1133ac0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034196"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663928"
 ---
 # <a name="properties-of-decorators"></a>修饰器的属性
 修饰器是可在关系图上的形状或连接线上出现的图标、文本或展开/折叠燕尾形。 下表显示了三种修饰器的属性。 某些属性仅出现在修饰器形状上，或仅出现在连接器修饰器上。
@@ -26,7 +26,7 @@ ms.locfileid: "122034196"
 
 ## <a name="expandcollapse-decorator"></a>展开/折叠修饰器
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |DisplayName|将在生成的设计器中显示的修饰器的名称。|展开折叠修饰器|
 |名称|修饰器的名称。|ExpandCollapseDecorator|
@@ -39,7 +39,7 @@ ms.locfileid: "122034196"
 
 ## <a name="icon-decorator"></a>图标修饰器
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |DefaultIcon|要显示的图标或图像文件的路径。|\<none>|
 |DisplayName|要在生成的设计器中显示的修饰器的名称。|图标修饰器|
@@ -53,7 +53,7 @@ ms.locfileid: "122034196"
 
 ## <a name="textdecorator"></a>TextDecorator
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |DefaultText|要显示的默认文本。|Label|
 |DisplayName|要在生成的设计器中显示的修饰器的名称。|Label|
@@ -63,10 +63,10 @@ ms.locfileid: "122034196"
 |说明|与修饰器关联的非正式注释。|\<none>|
 |System.windows.controls.primitives.popup.horizontaloffset|相对于修饰器默认位置的水平偏移量（以英寸为单位）。 仅对形状 (。 ) |0|
 |System.windows.controls.primitives.popup.verticaloffset|相对于修饰器默认位置的垂直偏移量（以英寸为单位）。 仅对形状 (。 ) |0|
-|OffsetFromLine|修饰器与线条的偏移量（相对于其默认位置）（以英寸为单位）。  (仅在连接器上) |0|
-|OffsetFromShape|修饰器与形状的偏移量（相对于其默认位置）（以英寸为单位）。  (仅在连接器上) |0|
-|位置|修饰器的默认位置。|TargetBottom|
+|OffsetFromLine|从行修饰器的偏移量（以英寸为单位），相对于其默认位置。 仅对连接器 (。 ) |0|
+|OffsetFromShape|修饰器相对于其默认位置的偏移量（以英寸为单位）。 仅对连接器 (。 ) |0|
+|位置|修饰器的默认位置。|Microsoft.visualstudio.modeling.diagrams.connectordecoratorposition.targetbottom|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

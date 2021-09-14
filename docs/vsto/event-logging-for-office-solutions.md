@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 9dedf882fcd149c2eecc04d712df19af980b5c48
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047083"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602290"
 ---
 # <a name="event-logging-for-office-solutions"></a>解决方案的事件Office日志记录
   你可以使用 Windows 事件查看器来查看当你安装或卸载 Office 解决方案时，由 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 捕捉到的异常消息。 你可使用事件记录器中的这些消息来解决安装和部署问题。
@@ -49,7 +49,7 @@ ms.locfileid: "122047083"
 
 7. 单击“确定”  ，以查看已筛选的视图。
 
-### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要读取 Windows 7、Windows Vista 和 Windows Server 2008 中的事件日志
+### <a name="to-read-the-event-log-in-windows-7-windows-vista-and-windows-server-2008"></a>若要在 Windows 7、Windows Vista 和 Windows Server 2008 中读取事件日志
 
 1. 在控制面板中，打开 **"管理工具"。**
 
@@ -100,5 +100,5 @@ ms.locfileid: "122047083"
 6. 单击 **“确定”** 。
 
 ## <a name="see-also"></a>请参阅
-- [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- [部署Office解决方案](../vsto/deploying-an-office-solution.md)
 - [解决方案Office疑难解答](../vsto/troubleshooting-office-solution-deployment.md)

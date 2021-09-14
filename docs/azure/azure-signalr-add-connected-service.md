@@ -10,11 +10,11 @@ ms.date: 08/17/2020
 ms.author: angelpe
 monikerRange: '>= vs-2019'
 ms.openlocfilehash: d2f90c7b1a5b389243bf91ff46aa6892689bf17c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082460"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602174"
 ---
 # <a name="add-azure-signalr-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加 Azure SignalR
 
@@ -34,7 +34,7 @@ ms.locfileid: "122082460"
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 有关 Visual Studio for Mac，请参阅 [Visual Studio for Mac 中连接服务](/visualstudio/mac/connected-services)。
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 - Visual Studio 安装 Azure 工作负荷。
 - 受支持类型之一的项目
@@ -83,7 +83,7 @@ ms.locfileid: "122082460"
 
    ![服务依赖项](./media/azure-signalr-add-connected-service/service-dependencies-after.png)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Azure SignalR 产品页](https://azure.microsoft.com/services/signalr-service/)
 - [Azure SignalR 服务文档](/azure/azure-signalr)

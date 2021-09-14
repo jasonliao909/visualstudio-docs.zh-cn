@@ -1,6 +1,6 @@
 ---
 title: 自定义插入/更新/删除行为
-description: 本演练使用 LINQ (语言集成查询) 自定义实体类的插入、更新和删除行为，SQL Visual Studio。
+description: 本演练使用 LINQ (语言集成查询) 自定义实体类的插入、更新和删除行为，Visual Studio SQL。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,17 +15,17 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 8c0e2aa0a246e7f490c3196fda185fcc8ce79494
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601053"
 ---
 # <a name="walkthrough-customize-the-insert-update-and-delete-behavior-of-entity-classes"></a>演练：自定义实体类的插入、更新和删除行为
 
-Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ to SQL 工具提供了一个可视设计图面，用于创建和编辑 LINQ to SQL 类 (基于数据库中的) 实体类。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，可以使用 LINQ 技术访问SQL数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。
+LINQ to SQL[工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)可视化设计图面，用于创建和编辑 LINQ to SQL 类 (实体类) 基于数据库中的对象。 通过使用[LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)，可以使用 LINQ 技术访问SQL数据库。 有关详细信息，请参阅 [LINQ（语言集成查询）](/dotnet/csharp/linq/)。
 
-默认情况下，用于执行更新的逻辑由 LINQ to SQL提供。 运行时基于表的架构创建默认的 、 和 语句， (列定义和主 `Insert` `Update` `Delete` 键信息) 。 当不希望使用默认行为时，可以配置更新行为并指定特定的存储过程，来执行处理数据库中数据所必需的插入、更新和删除。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅 [使用存储过程 自定义操作](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
+默认情况下，执行更新的逻辑由运行时LINQ to SQL提供。 运行时基于表的架构创建默认的 、 和 语句 (列定义和主 `Insert` `Update` `Delete` 键信息) 。 当不希望使用默认行为时，可以配置更新行为并指定特定的存储过程，来执行处理数据库中数据所必需的插入、更新和删除。 在不生成默认行为时（例如，实体类映射到视图时），也可以这样做。 另外，在数据库要求通过存储过程访问表时，您可以重写默认的更新行为。 有关详细信息，请参阅 [使用存储过程 自定义操作](/dotnet/framework/data/adonet/sql/linq/customizing-operations-by-using-stored-procedures)。
 
 > [!NOTE]
 > 本演练要求可以使用 Northwind 数据库的“InsertCustomer”、“UpdateCustomer”和“DeleteCustomer”存储过程。
@@ -48,15 +48,15 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 
 - 将 `Customer` 类配置为使用存储过程执行插入、更新和删除。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-本演练使用 SQL Server Express LocalDB和 Northwind 示例数据库。
+本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express) **Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
+1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装 [它，或者](https://www.microsoft.com/sql-server/sql-server-editions-express)通过 **Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。 **(SQL Server 对象资源管理器** 在 .Visual Studio 安装程序 **中作为** 数据存储和处理工作负荷的一部分) 展开 **SQL Server节点。** 右键单击实例LocalDB并选择"新建 **查询"。**
+    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。 **(SQL Server 对象资源管理器** 作为数据存储和处理工作负荷的一部分安装在 Visual Studio 安装程序 **.)** 展开 **SQL Server节点。** 右键单击实例LocalDB并选择"新建 **查询"。**
 
        查询编辑器窗口随即打开。
 
@@ -72,7 +72,7 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 
 [!INCLUDE[note_settings_general](../data-tools/includes/note_settings_general_md.md)]
 
-### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>创建新的包含 Windows 类的窗体应用程序LINQ to SQL项目
+### <a name="to-create-a-new-windows-forms-application-project-that-contains-linq-to-sql-classes"></a>若要创建包含Windows类的新窗体应用程序LINQ to SQL项目
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
@@ -90,11 +90,11 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 
 6. 单击“添加”。
 
-     将 **northwind.db) ml LINQ to SQL添加到 (中，** 并且 **O/R** 设计器将打开一个空的类文件。
+     向项目LINQ to SQL **Northwind.dbml** (一个空) 类文件，**并打开 O/R** 设计器。
 
 ## <a name="create-the-customer-entity-class-and-object-data-source"></a>创建 Customer 实体类和对象数据源
 
-创建LINQ to SQL表的类，方法为将表从 服务器资源管理器 或 数据库资源管理器拖动到 **O/R 设计器 。**  结果将生成映射到数据库中的表的 LINQ to SQL 实体类。 在创建实体类后，可以将这些类像具有公共属性的其他类一样用作对象数据源。
+通过LINQ to SQL **服务器资源管理器** 表或表拖动到 **O/R** 设计器上，数据库资源管理器映射到数据库表数据库资源管理器类。 结果将生成映射到数据库中的表的 LINQ to SQL 实体类。 在创建实体类后，可以将这些类像具有公共属性的其他类一样用作对象数据源。
 
 ### <a name="to-create-a-customer-entity-class-and-configure-a-data-source-with-it"></a>创建 Customer 实体类并使用该类配置数据源
 
@@ -123,7 +123,7 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 
 ## <a name="create-a-datagridview-to-display-the-customer-data-on-a-windows-form"></a>创建 DataGridView 以在窗体上显示Windows数据
 
-创建绑定到实体类的控件，LINQ to SQL数据源项从"数据源"窗口拖动到Windows窗体。 
+创建绑定到实体类的控件，LINQ to SQL数据源项从"数据源"窗口拖动到"Windows窗体"。
 
 ### <a name="to-add-controls-that-are-bound-to-the-entity-classes"></a>添加绑定到实体类的控件
 
@@ -182,11 +182,11 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
     northwindDataContext1.SubmitChanges();
     ```
 
-## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>重写执行更新的默认行为 (插入、更新和删除) 
+## <a name="override-the-default-behavior-for-performing-updates-inserts-updates-and-deletes"></a>替代用于执行更新的默认 (插入、更新和删除) 
 
 ### <a name="to-override-the-default-update-behavior"></a>重写默认更新行为
 
-1. 在 **O/R** LINQ to SQL 中打开文件。 （在“解决方案资源管理器”中双击“Northwind.dbml”文件。）
+1. 在 **O/R** LINQ to SQL中打开文件 。 （在“解决方案资源管理器”中双击“Northwind.dbml”文件。）
 
 2. 在“服务器资源管理器”或“数据库资源管理器”中，展开 Northwind 数据库的“存储过程”节点并找到“InsertCustomers”、“UpdateCustomers”和“DeleteCustomers”存储过程。
 
@@ -207,7 +207,7 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 9. 单击“应用”保存所选择的类和行为的配置。
 
     > [!NOTE]
-    > 只要在每次更改后单击“应用”，就可以继续为每个类/行为组合配置行为。 如果在单击 " **应用**" 之前更改类或行为，则会出现一个警告对话框，其中显示了应用任何更改的机会。
+    > 只要在每次更改后单击“应用”，就可以继续为每个类/行为组合配置行为。 如果在单击"应用"之前更改类或行为 **，** 则会出现一个警告对话框，提供应用任何更改的机会。
 
 10. 在“行为”列表中选择“更新”。
 
@@ -235,7 +235,7 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 19. 单击“确定”。
 
 > [!NOTE]
-> 虽然这对于此特定演练并不是问题，但值得注意的是，LINQ to SQL 会自动处理数据库生成的值，以便在插入和更新期间自动 (自动增量) 、rowguidcol (数据库生成的 GUID) 和时间戳列。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将设置 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> 为并将设置为 `true` 以下值 <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> 之一： [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.Always>)、 [AutoSync](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)或[AutoSync。](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)
+> 尽管此特定演练不是问题，但值得注意的是，LINQ to SQL 会在插入和更新期间自动处理标识 (自动递增) 、rowguidcol (数据库生成的 GUID) 和时间戳列的数据库生成值。 在其他列类型中，数据库生成的值将意外导致 Null 值。 若要返回数据库生成的值，应手动将 设置为 和 ，并设置为下列值之一 <xref:System.Data.Linq.Mapping.ColumnAttribute.IsDbGenerated%2A> `true` <xref:System.Data.Linq.Mapping.ColumnAttribute.AutoSync%2A> ：AutoSync.Always、AutoSync.OnInsert 或[AutoSync.OnUpdate](<xref:System.Data.Linq.Mapping.AutoSync.OnUpdate>)。 [](<xref:System.Data.Linq.Mapping.AutoSync.Always>) [](<xref:System.Data.Linq.Mapping.AutoSync.OnInsert>)
 
 ## <a name="test-the-application"></a>测试应用程序
 
@@ -266,15 +266,15 @@ Visual Studio[](../data-tools/linq-to-sql-tools-in-visual-studio2.md)中的 LINQ
 
 ## <a name="next-steps"></a>后续步骤
 
-根据应用程序的要求，在创建 LINQ to SQL 实体类后，你可能需要执行几个步骤。 你可以对此应用程序进行的一些增强包括：
+根据应用程序要求，创建实体类后，可能需要执行LINQ to SQL步骤。 你可以对此应用程序进行的一些增强包括：
 
-- 在更新过程中实现并发检查。 有关信息，请参阅 [乐观 Concurrency：概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。
+- 在更新过程中实现并发检查。 有关信息，请参阅 [乐观并发：概述](/dotnet/framework/data/adonet/sql/linq/optimistic-concurrency-overview)。
 
-- 添加 LINQ 查询以筛选数据。 有关信息，请参阅 [c # (的 LINQ 查询简介 ) ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)。
+- 添加 LINQ 查询以筛选数据。 有关信息，请参阅 C# ([LINQ 查询) 。 ](/dotnet/csharp/programming-guide/concepts/linq/introduction-to-linq-queries)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [Visual Studio 中的 LINQ to SQL 工具](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
+- [LINQ to SQL工具Visual Studio](../data-tools/linq-to-sql-tools-in-visual-studio2.md)
 - [DataContext 方法](../data-tools/datacontext-methods-o-r-designer.md)
 - [如何：分配存储过程以执行更新、插入和删除](../data-tools/how-to-assign-stored-procedures-to-perform-updates-inserts-and-deletes-o-r-designer.md)
 - [LINQ to SQL](/dotnet/framework/data/adonet/sql/linq/index)

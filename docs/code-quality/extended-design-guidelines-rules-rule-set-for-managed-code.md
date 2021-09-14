@@ -1,7 +1,7 @@
 ---
 title: 托管代码的“扩展的设计准则规则”规则集
 ms.date: 11/04/2016
-description: 了解中扩展设计准则规则规则集，Visual Studio可用性和可维护性。 请参阅规则说明。
+description: 了解 Visual Studio 中的扩展设计准则规则规则集，该规则侧重于可用性和可维护性。 请参阅规则说明。
 ms.custom: SEO-VS-2020
 ms.topic: reference
 ms.assetid: a338caf2-b75d-4f23-a0f9-3024fa0bceac
@@ -12,11 +12,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: d284dec49e0973f2781f00f178fa193b52797085
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075328"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601324"
 ---
 # <a name="extended-design-guidelines-rules-rule-set-for-managed-code"></a>托管代码的“扩展的设计准则规则”规则集
 

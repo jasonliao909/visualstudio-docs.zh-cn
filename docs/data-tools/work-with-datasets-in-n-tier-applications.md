@@ -23,15 +23,15 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 1b3873b3348c78462943204b02f570a5510e927f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121911"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601048"
 ---
 # <a name="work-with-datasets-in-n-tier-applications"></a>在 n 层应用程序中使用数据集
 
-*N 层数据应用程序* 是以数据为中心的应用程序，分为多个逻辑层 (*或) 。* 换句话说，N 层数据应用程序是分离到多个项目中的应用程序，数据访问层、业务逻辑层和表示层都在各自的项目中。 有关详细信息，请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
+*N 层数据应用程序* 是以数据为中心的应用程序，分为多个逻辑层 (*或*) 。 换句话说，N 层数据应用程序是分离到多个项目中的应用程序，数据访问层、业务逻辑层和表示层都在各自的项目中。 有关详细信息，请参阅 [N 层数据应用程序概述](../data-tools/n-tier-data-applications-overview.md)。
 
 类型化数据集经过改进，现在可以在相互独立的项目中生成 TableAdapter 和数据集类。 这使你可以快速分离各应用程序层及生成 N 层数据应用程序。
 

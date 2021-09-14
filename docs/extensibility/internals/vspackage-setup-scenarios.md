@@ -13,11 +13,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e75851e8a2775fda80a4bcb6ffefa93558c4f786
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664302"
 ---
 # <a name="vspackage-setup-scenarios"></a>VSPackage 安装方案
 
@@ -79,7 +79,7 @@ ms.locfileid: "122069619"
 
 有关部署并行程序集的详细信息，请参阅[使用 .NET Framework 简化部署和解决 DLL Hell](/previous-versions/dotnet/articles/ms973843(v=msdn.10))。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [支持多个版本的 Visual Studio](../../extensibility/supporting-multiple-versions-of-visual-studio.md)

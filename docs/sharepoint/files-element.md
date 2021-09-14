@@ -16,11 +16,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 84c3ab0837680fe815f644d6b0456ce0fe066326
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122093224"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600643"
 ---
 # <a name="files-element"></a>Files 元素
   指定要与 SharePoint 项目项一起部署的文件，例如功能元素文件和依赖非 SharePoint 项目的输出。
@@ -58,7 +58,7 @@ ms.locfileid: "122093224"
 
 ## <a name="element-information"></a>元素信息
 
-|属性|值|
+|Property|值|
 |-|-|
 |**Namespace**|http： \/ \/ schemas.microsoft.com/VisualStudio/<br>2010/SharePointTools/SharePointProjectItemModel|
 |**架构名称**|SharePoint Project 项架构|

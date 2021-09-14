@@ -1,6 +1,6 @@
 ---
-title: VSSDK 实用工具|Microsoft Docs
-description: 这些文章介绍 VSSDK 提供的工具，包括 RegPkg、CreatePkgDef、CreateExpInstance、Color Theming Tools 和 Image Service Tools。
+title: VSSDK 实用程序 |Microsoft Docs
+description: 这些文章介绍了 VSSDK 随附的工具，其中包括 RegPkg、CreatePkgDef、CreateExpInstance、颜色主题工具和图像服务工具。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -14,14 +14,14 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8f36d0914f55f9ca16c8856106d332af6be79b4f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137595"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664296"
 ---
 # <a name="vssdk-utilities"></a>VSSDK 实用工具
-本节中的主题介绍 VSSDK 提供的工具。
+本节中的主题介绍 VSSDK 随附的工具。
 
 ## <a name="in-this-section"></a>本节内容
 

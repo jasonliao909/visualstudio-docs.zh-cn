@@ -10,11 +10,11 @@ ms.topic: how-to
 ms.date: 11/10/2017
 ms.author: ghogen
 ms.openlocfilehash: f4e4093edfdc5ff9d2d4ef14bd6cf670c2b9b613
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122067687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602140"
 ---
 # <a name="how-to-migrate-and-publish-a-web-application-to-an-azure-cloud-service-from-visual-studio"></a>如何：从 Visual Studio 将 web 应用程序迁移和发布到 Azure 云服务
 

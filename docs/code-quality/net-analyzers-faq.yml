@@ -12,12 +12,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - dotnet
-  ms.openlocfilehash: 7de07511e944b450653c1862c801abc3aab7aef4f45c0911b70eccc569a67054
-  ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+  ms.openlocfilehash: 4ce56b8485cca9897396f05145ffea92c0bd2cd8
+  ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
   ms.translationtype: MT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/12/2021
-  ms.locfileid: "121380801"
+  ms.lasthandoff: 09/13/2021
+  ms.locfileid: "126601267"
 title: 有关旧版 FxCop 和 .NET 分析器的常见问题
 summary: 了解旧的 FxCop (二进制分析) 和 .NET 分析器 (源分析) 之间的差异可能有点令人困惑。 本文旨在解决你可能遇到的一些问题。
 sections:
@@ -41,7 +41,7 @@ sections:
   - question: >
       RunCodeAnalysis msbuild 项目属性是否运行分析器？
     answer: >
-      不是。 项目文件（例如 .csproj）中的 RunCodeAnalysis 属性仅用于执行旧版 FxCop。 它将运行调用 FxCopCmd.exe 的生成后 msbuild 任务。
+      否。 项目文件（例如 .csproj）中的 RunCodeAnalysis 属性仅用于执行旧版 FxCop。 它将运行调用 FxCopCmd.exe 的生成后 msbuild 任务。
   - question: >
       那么，如何运行 .NET 分析器呢？
     answer: >
@@ -66,7 +66,7 @@ sections:
     answer: >
       如果你的项目使用 "生成" 选项将警告视为错误，则分析器警告可能会显示为错误。 若要防止代码分析警告被视为错误，请按照 [代码分析常见问题解答](/visualstudio/code-quality/analyzers-faq#treat-warnings-as-errors)中的步骤进行操作。
   - question: >
-      请参阅
+      另请参阅
     answer: >-
       - [.NET Compiler Platform 分析器概述](roslyn-analyzers-overview.md)
 

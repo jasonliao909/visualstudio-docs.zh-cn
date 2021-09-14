@@ -9,11 +9,11 @@ ms.workload: azure-vs
 ms.date: 11/11/2016
 ms.author: mikejo
 ms.openlocfilehash: 79fd599b58a951f67c4fb095528e8be00bcd2a17
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059667"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602128"
 ---
 # <a name="testing-the-performance-of-a-cloud-service"></a>测试云服务的性能
 ## <a name="overview"></a>概述

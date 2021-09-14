@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 71d12bb0bd80c10140aaaa6f276cf772397d699f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086607"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602335"
 ---
 # <a name="support-for-code-snippets-in-a-legacy-language-service"></a>旧版语言服务中的代码片段支持
 代码片段是插入到源文件中的一段代码。 代码片段本身是基于 XML 的模板，包含一组字段。 这些字段在插入代码片段后突出显示，并且可以具有不同的值，具体取决于插入代码片段的上下文。 插入代码片段后立即，语言服务可以设置代码片段的格式。
@@ -35,7 +35,7 @@ ms.locfileid: "122086607"
 ## <a name="managed-package-framework-support-for-code-snippets"></a>代码片段的托管包框架支持
  MPF (包) 支持大多数代码片段功能，从读取模板到插入代码片段和启用特殊编辑模式。 支持通过 类 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 进行管理。
 
- 实例化 类时，将调用 类中的 方法以获取对象 (请注意，基类始终返回每个对象的新 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.Source> 对象) 。
+ 实例化 类时，调用 类中的 方法以获取对象 (请注意，基类始终返回每个对象的新 <xref:Microsoft.VisualStudio.Package.Source> <xref:Microsoft.VisualStudio.Package.LanguageService.CreateExpansionProvider%2A> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.LanguageService> <xref:Microsoft.VisualStudio.Package.ExpansionProvider> <xref:Microsoft.VisualStudio.Package.Source>) 。
 
  MPF 不支持扩展函数。 扩展函数是嵌入在代码片段模板中的命名函数，并返回要放置在字段中的一个或多个值。 语言服务本身通过 对象返回 <xref:Microsoft.VisualStudio.Package.ExpansionFunction> 值。 <xref:Microsoft.VisualStudio.Package.ExpansionFunction>对象必须由语言服务实现以支持扩展函数。
 
@@ -51,7 +51,7 @@ ms.locfileid: "122086607"
 ### <a name="installing-the-snippet-files"></a>安装代码片段文件
  语言的所有代码片段都作为模板存储在 XML 文件中，通常每个文件有一个代码片段模板。 有关用于代码片段模板的 XML 架构的详细信息，请参阅 [代码片段架构参考](../../ide/code-snippets-schema-reference.md)。 每个代码片段模板都使用语言 ID 进行标识。 此语言 ID 在注册表中指定，并放入模板 `Language` \<Code> 中标记的 属性中。
 
- 通常有两个位置存储代码片段模板文件：1) 语言安装位置，2) 用户文件夹中。 这些位置将添加到注册表中，以便Visual Studio **代码片段管理器** 可以找到代码片段。 用户的文件夹是存储用户创建的代码段的位置。
+ 通常有两个位置存储代码片段模板文件：1 个) 安装语言的位置，2) 用户文件夹中的 2 个。 这些位置将添加到注册表中，以便Visual Studio **代码片段管理器** 可以找到代码片段。 用户的文件夹是存储用户创建的代码段的位置。
 
  已安装的代码片段模板文件的典型文件夹布局如下所示 *：[InstallRoot]* \\ *[TestLanguage]* \Snippets \\ *[LCID]* \Snippets。
 
@@ -61,7 +61,7 @@ ms.locfileid: "122086607"
 
  *[LCID]* 是区域设置 ID。 这是存储代码段的本地化版本。 例如，英语区域设置 ID 为 1033，因此 *[LCID]* 替换为 1033。
 
- 必须提供一个额外的文件，这是一个索引文件，通常SnippetsIndex.xml或ExpansionsIndex.xml (可以使用以 .xml) 结尾的任何有效文件名。 此文件通常存储在 *[InstallRoot]* \\ *[TestLanguage]* 文件夹中，并指定代码段文件夹的确切位置，以及使用该代码段的语言服务的语言 ID 和 GUID。 索引文件的确切路径将放入注册表中，如稍后的"安装注册表项"中所述。 下面是一个SnippetsIndex.xml示例：
+ 必须提供一个附加文件，这是一个索引文件，通常SnippetsIndex.xml或ExpansionsIndex.xml (可以使用以 .xml) 结尾的任何有效文件名。 此文件通常存储在 *[InstallRoot]* \\ *[TestLanguage]* 文件夹中，并指定代码段文件夹的确切位置，以及使用该代码段的语言服务的语言 ID 和 GUID。 索引文件的确切路径将放入注册表中，如稍后的"安装注册表项"中所述。 下面是一个SnippetsIndex.xml示例：
 
 ```
 <?xml version="1.0" encoding="utf-8" ?>
@@ -80,7 +80,7 @@ ms.locfileid: "122086607"
 
  标记 \<Language> 指定属性 (和) `Lang` GUID 的语言 ID。
 
- 此示例假定你已安装语言服务Visual Studio安装文件夹中。 %LCID% 替换为用户的当前区域设置 ID。 可以 \<SnippetDir> 添加多个标记，每个标记分别用于不同的目录和区域设置。 此外，代码片段文件夹可以包含子文件夹，每个子文件夹在索引文件中使用嵌入在标记中的 \<SnippetSubDir> \<SnippetDir> 标记进行标识。
+ 此示例假定你已安装语言服务，Visual Studio安装文件夹中。 %LCID% 替换为用户的当前区域设置 ID。 可以 \<SnippetDir> 添加多个标记，每个标记分别用于不同的目录和区域设置。 此外，代码片段文件夹可以包含子文件夹，每个子文件夹在索引文件中使用嵌入在标记中的 \<SnippetSubDir> \<SnippetDir> 标记进行标识。
 
  用户还可以为语言创建自己的代码片段。 它们通常存储在用户的设置文件夹中，例如 *[TestDocs]* \Code Snippets \\ *[TestLanguage]* \Test Code Snippets，其中 *[TestDocs]* 是 Visual Studio 的用户设置文件夹的位置。
 
@@ -95,7 +95,7 @@ ms.locfileid: "122086607"
 |%TestDocs%|用户设置文件夹中的文件夹，例如 C：\Documents 和 设置 \\ *[username]* \我的文档\Visual Studio\8。|
 
 ### <a name="enabling-code-snippets-for-your-language-service"></a>为语言服务启用代码片段
- 若要为语言服务启用代码片段，可以将 属性添加到 VSPackage (请参阅注册旧版语言服务，了解 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute>) 。 [](../../extensibility/internals/registering-a-legacy-language-service1.md) 和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 参数是可选的，但应包含命名参数，以便通知代码片段管理器代码片段 `SearchPaths` 的位置。
+ 若要为语言服务启用代码片段，可以将 属性添加到 VSPackage (有关详细信息，请参阅注册旧版 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute> [语言](../../extensibility/internals/registering-a-legacy-language-service1.md)) 。 和 <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.ShowRoots%2A> <xref:Microsoft.VisualStudio.Shell.ProvideLanguageCodeExpansionAttribute.SearchPaths%2A> 参数是可选的，但应包含命名参数，以便通知代码片段管理器代码片段 `SearchPaths` 的位置。
 
  下面是如何使用此属性的示例：
 
@@ -223,7 +223,7 @@ ms.locfileid: "122086607"
 ### <a name="inserting-a-code-snippet-by-using-a-shortcut"></a>使用快捷方式插入代码片段
  实现完成列表中的快捷方式比实现菜单命令要多。 必须先将代码片段快捷方式添加到 IntelliSense 单词完成列表。 然后，必须检测代码片段快捷方式名称何时因完成而插入。 最后，必须使用快捷方式名称获取代码片段标题和路径，将该信息传递给 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 方法上的 <xref:Microsoft.VisualStudio.Package.ExpansionProvider> 方法。
 
- 若要将代码片段快捷方式添加到单词完成列表，请将其添加到 <xref:Microsoft.VisualStudio.Package.Declarations> 类中的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 对象。 必须确保可以将快捷方式标识为代码片段名称。 有关示例，请参阅演练：获取旧版实现中已安装[ (代码片段) 。 ](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
+ 若要将代码片段快捷方式添加到单词完成列表，请将其添加到 <xref:Microsoft.VisualStudio.Package.Declarations> 类中的 <xref:Microsoft.VisualStudio.Package.AuthoringScope> 对象。 必须确保可以将快捷方式标识为代码片段名称。 有关示例，请参阅演练：获取旧版实现中的[已安装 (代码) 。 ](../../extensibility/internals/walkthrough-getting-a-list-of-installed-code-snippets-legacy-implementation.md)
 
  可以在 类的 方法中检测代码片段 <xref:Microsoft.VisualStudio.Package.Declarations.OnAutoComplete%2A> 快捷方式的 <xref:Microsoft.VisualStudio.Package.Declarations> 插入。 由于代码片段名称已插入到源文件中，因此在插入扩展时必须将其删除。 方法采用描述代码段插入点的范围;如果范围在源文件中包含整个代码段名称，该名称 <xref:Microsoft.VisualStudio.Package.ExpansionProvider.InsertNamedExpansion%2A> 将被代码片段替换。
 
@@ -391,7 +391,7 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)
 - [注册旧版语言服务](../../extensibility/internals/registering-a-legacy-language-service1.md)
 - [代码片段](../../ide/code-snippets.md)

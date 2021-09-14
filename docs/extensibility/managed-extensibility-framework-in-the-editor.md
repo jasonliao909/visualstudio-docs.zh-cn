@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 52492e48ed9b5e2150f31c18ac07f66e45486054
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102306"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664276"
 ---
 # <a name="managed-extensibility-framework-in-the-editor"></a>编辑器中的 Managed Extensibility Framework
 编辑器是通过使用 Managed Extensibility Framework (MEF) 组件生成的。 您可以构建自己的 MEF 组件来扩展编辑器，代码还可以使用编辑器组件。

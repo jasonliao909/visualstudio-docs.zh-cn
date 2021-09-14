@@ -1,6 +1,6 @@
 ---
-title: '&lt;RelatedProducts &gt; 元素 (引导程序) |Microsoft Docs'
-description: RelatedProducts 元素定义依赖于当前产品或包含在当前产品内的其他产品。
+title: '&lt;&gt; (引导程序) 的 RelatedProducts 元素 |Microsoft Docs'
+description: RelatedProducts 元素定义其他产品，这些产品依赖于或包含在当前产品中。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -25,14 +25,14 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: cb217da984fd23acdedc446724984d667e0006bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120746"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601004"
 ---
-# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;引导程序 &gt; (RelatedProducts) 
-`RelatedProducts`元素定义依赖于当前产品或包含在当前产品中的其他产品。
+# <a name="ltrelatedproductsgt-element-bootstrapper"></a>&lt;RelatedProducts &gt; 元素 (引导程序) 
+`RelatedProducts`元素定义其他产品，这些产品依赖于或包含在当前产品中。
 
 ## <a name="syntax"></a>语法
 
@@ -53,31 +53,31 @@ ms.locfileid: "122120746"
 ```
 
 ## <a name="elements-and-attributes"></a>元素和属性
- `RelatedProducts`元素是 元素的 `Product` 子元素。 它没有任何属性。
+ `RelatedProducts`元素是元素的子元素 `Product` 。 它没有属性。
 
 ## <a name="dependsonproduct"></a>DependsOnProduct
- 元素表示当前产品依赖于命名产品，并且应在当前产品之前 `DependsOnProduct` 安装命名产品。 它是 元素的 `RelatedProducts` 子元素。 元素 `RelatedProducts` 可能具有一个或多个 `DependsOnProduct` 元素。
+ `DependsOnProduct`元素指示当前产品依赖于命名产品，并且应在当前的产品之前安装该产品。 它是元素的子 `RelatedProducts` 元素。 `RelatedProducts`元素可能有一个或多个 `DependsOnProduct` 元素。
 
  `DependsOnProduct` 具有以下属性。
 
 |Attribute|说明|
 |---------------|-----------------|
-|`Code`|包含的产品的代码名称，由 元素 `ProductCode` 的 属性 `Product` 指定。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
+|`Code`|由元素的特性指定的所包含产品的代码名称 `ProductCode` `Product` 。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
 ## <a name="eitherproducts"></a>EitherProducts
- `EitherProducts`元素定义零个或多个 `DependsOnProduct` 元素，并且没有属性。 必须在当前 `DependsOnProduct` 产品之前安装此集内至少一个 。 元素 `RelatedProducts` 可以具有零个或多个 `EitherProducts` 元素。
+ `EitherProducts`元素定义零个或多个 `DependsOnProduct` 元素，但没有属性。 `DependsOnProduct`在当前产品之前，必须先安装此集中的至少一个。 `RelatedProducts`元素可以包含零个或多个 `EitherProducts` 元素。
 
 ## <a name="includesproduct"></a>IncludesProduct
- `IncludesProduct`元素表示产品包含在当前安装中，不需要单独安装。 它是 元素的 `RelatedProducts` 子元素。 元素 `RelatedProducts` 可能具有一个或多个 `IncludesProduct` 元素。
+ `IncludesProduct`元素表示产品包含在当前安装中，无需单独安装。 它是元素的子 `RelatedProducts` 元素。 `RelatedProducts`元素可能有一个或多个 `IncludesProduct` 元素。
 
  `IncludesProduct` 具有以下属性。
 
 |Attribute|说明|
 |---------------|-----------------|
-|`Code`|包含的产品的代码名称，由 元素 `ProductCode` 的 属性 `Product` 指定。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
+|`Code`|由元素的特性指定的所包含产品的代码名称 `ProductCode` `Product` 。 有关详细信息，请参阅 [\<Product> 元素](../deployment/product-element-bootstrapper.md)。|
 
 ## <a name="example"></a>示例
- 下面的代码示例指定 Microsoft Installer 随 .NET Framework一起安装，因此不需要单独安装。
+ 下面的代码示例指定与 .NET Framework 一起安装 Microsoft 安装程序，因此不需要单独安装。
 
 ```xml
 <RelatedProducts>
@@ -85,5 +85,5 @@ ms.locfileid: "122120746"
 </RelatedProducts>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)

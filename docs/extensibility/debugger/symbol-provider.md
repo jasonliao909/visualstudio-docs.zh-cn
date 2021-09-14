@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 49f26713bcda948220fabdefaa62032e10fde8a2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152583"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600820"
 ---
 # <a name="symbol-provider"></a>符号提供程序
 表达式计算器实现必须访问语言编译器生成的符号调试信息，才能计算变量和表达式。 它通过使用符号提供程序 (SP) （也称为符号处理程序）的接口来实现此目的。
@@ -31,5 +31,5 @@ ms.locfileid: "122152583"
 
  如果您的 SP 只使用您的自定义调试引擎，则可以根据调试引擎的需求，根据您的需要实现 SP。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调试器组件](../../extensibility/debugger/debugger-components.md)

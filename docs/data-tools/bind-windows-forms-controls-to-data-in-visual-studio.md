@@ -21,20 +21,20 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 311bdc7d0bf236f29d09804257aaaa8ce991f32f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122075341"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601224"
 ---
 # <a name="bind-windows-forms-controls-to-data-in-visual-studio"></a>在 Visual Studio 中将 Windows 窗体控件绑定到数据
 
-可以通过将数据绑定到窗体，向应用程序的用户Windows数据。 若要创建这些数据绑定控件，请将项从"数据源"窗口拖动到Windows窗体设计器Visual Studio。
+可以通过将数据绑定到窗体，向应用程序的用户Windows数据。 若要创建这些数据绑定控件，请将"数据源"窗口中的项Windows窗体设计器Visual Studio。
 
 ![数据源拖动操作](../data-tools/media/raddata-data-source-drag-operation.png)
 
 > [!TIP]
-> 如果"**数据源"** 窗口不可见，则可以通过选择"查看其他数据源Windows  >  或按 Shift Alt D **打开**  >   +  + **它**。 必须打开一个项目，Visual Studio"**数据源"** 窗口。
+> 如果"**数据源"** 窗口不可见，则可以通过选择"查看其他数据源Windows或按 Shift Alt D  >  **来**  >   + **打开** + **它**。 必须在"数据源"窗口中打开Visual Studio"数据源 **"** 窗口。
 
 在拖动项之前，可以设置要绑定到的控件的类型。 将显示不同的值，具体取决于是选择表本身还是单个列。  还可以设置自定义值。 对于表 **，"详细信息** "表示每个列都绑定到单独的控件。
 
@@ -83,7 +83,7 @@ ms.locfileid: "122075341"
 
 另请注意，每个控件都有一个智能标记。 此标记启用仅适用于该控件的自定义项。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)
 - [Windows 窗体 (.NET Framework) ](/dotnet/framework/winforms/windows-forms-data-binding)

@@ -18,11 +18,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 213bededbd5d6eea8a0eb6b01f742c6cf82d8e4a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037026"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601188"
 ---
 # <a name="create-a-windows-forms-user-control-that-supports-simple-data-binding"></a>创建支持简单数据绑定的 Windows 窗体用户控件
 
@@ -36,7 +36,7 @@ ms.locfileid: "122037026"
 | - |
 |在简单控件上实现 <xref:System.ComponentModel.DefaultBindingPropertyAttribute>（如 <xref:System.Windows.Forms.TextBox>），此类控件用于显示数据的单个列（或属性）。 （本演练页面描述了此过程）。|
 |在控件上实现 <xref:System.ComponentModel.ComplexBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.DataGridView>），此类控件用于显示数据列表（或表）。 有关详细信息，请参阅[创建支持Windows绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)。|
-|在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建Windows查找数据绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
+|在控件上实现 <xref:System.ComponentModel.LookupBindingPropertiesAttribute>（如 <xref:System.Windows.Forms.ComboBox>），此类控件用于显示数据列表（或表），也需要显示数据的单个列或属性。 有关详细信息，请参阅[创建支持Windows绑定的窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。|
 
 本演练创建了一个简单控件，用于显示表中单个列的数据。 此示例使用 Northwind 示例数据库的 `Phone` 表中的 `Customers` 列。 简单的用户控件使用 ，将掩码设置为电话号码，以标准电话号码格式 <xref:System.Windows.Forms.MaskedTextBox> 显示客户的电话号码。
 
@@ -56,15 +56,15 @@ ms.locfileid: "122037026"
 
 - 创建一个用于在新控件中显示数据的窗体。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
-本演练使用 SQL Server Express LocalDB和 Northwind 示例数据库。
+本演练使用 SQL Server Express LocalDB 和 Northwind 示例数据库。
 
-1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装它，或者通过 [](https://www.microsoft.com/sql-server/sql-server-editions-express)**Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
+1. 如果尚未安装SQL Server Express LocalDB，请从下载页SQL Server Express安装 [它，或者](https://www.microsoft.com/sql-server/sql-server-editions-express)通过 **Visual Studio 安装程序。** 在 **Visual Studio 安装程序** 中，可以将 SQL Server Express LocalDB作为数据存储和处理工作负荷的一部分安装，也可以作为单个组件安装。
 
 2. 按照以下步骤安装 Northwind 示例数据库：
 
-    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。  (SQL Server 对象资源管理器作为数据存储和处理工作负荷的一部分安装在Visual Studio 安装程序 **.)****展开SQL Server节点**。 右键单击实例LocalDB并选择"新建 **查询"。**
+    1. 在Visual Studio中，**打开SQL Server 对象资源管理器窗口**。  (SQL Server 对象资源管理器作为数据存储和处理工作负荷的一部分安装在Visual Studio 安装程序 **.)** 展开 **SQL Server节点。** 右键单击实例LocalDB并选择"新建 **查询"。**
 
        查询编辑器窗口随即打开。
 
@@ -80,7 +80,7 @@ ms.locfileid: "122037026"
 
 1. 在 Visual Studio 的“文件”菜单中，依次选择“新建” > “项目”    。
 
-2. 展开左侧 **窗格中Visual Basic"Visual C#"** 或"Windows"。 
+2. 在左侧 **窗格中展开"Visual C#"****或**"Visual Basic"，然后选择"Windows **桌面"。**
 
 3. 在中间窗格中，选择"Windows **窗体应用"** 项目类型。
 
@@ -181,9 +181,9 @@ ms.locfileid: "122037026"
 
 - 将你的自定义控件置于控件库中，以便在其他应用程序中重用它们。
 
-- 创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅创建支持[Windows](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)绑定的窗体用户控件和创建Windows查找数据绑定的[窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
+- 创建支持更复杂的数据绑定方案的控件。 有关详细信息，请参阅[创建](../data-tools/create-a-windows-forms-user-control-that-supports-complex-data-binding.md)Windows复杂数据绑定的窗体用户控件和创建Windows查找数据绑定 的[窗体用户控件](../data-tools/create-a-windows-forms-user-control-that-supports-lookup-data-binding.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)
 - [设置从“数据源”窗口中拖动时要创建的控件](../data-tools/set-the-control-to-be-created-when-dragging-from-the-data-sources-window.md)

@@ -21,11 +21,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: f1f1db5a2d98b6e55b0da97e7550bc33698ff072
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154948"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601226"
 ---
 # <a name="bind-controls-to-pictures-from-a-database"></a>将控件绑定到数据库中的图片
 
@@ -52,6 +52,6 @@ ms.locfileid: "122154948"
 
     - 此外，还可以选择支持数据绑定的其他控件，并可以显示图像。 如果要使用的控件不在可用控件列表中，则可以将其添加到列表中，然后选择它。 有关详细信息，请参阅 [将自定义控件添加到 "数据源" 窗口](../data-tools/add-custom-controls-to-the-data-sources-window.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)

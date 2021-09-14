@@ -23,11 +23,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: d3145e17eb63417c13ffa9292ec6de50ae3ef88e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130749"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602303"
 ---
 # <a name="deploying-a-vsto-solution-using-windows-installer"></a>使用 VSTO 安装程序部署 Windows 解决方案
 
@@ -45,13 +45,13 @@ Ted Pattison，Ted Pattison Group
 
 ## <a name="overview"></a>概述
 
-可以使用 VSTO 安装程序包开发一个Windows解决方案。 此讨论包括用于部署简单Office外接程序的步骤。
+可以开发VSTO解决方案，然后使用安装程序包Windows解决方案。 此讨论包括用于部署简单Office外接程序的步骤。
 
 ## <a name="deployment-methods"></a>部署方法
 
-ClickOnce可以轻松地用于为外接程序和解决方案创建设置。 但是，它无法安装需要管理权限的外接程序，例如计算机级别的外接程序。
+ClickOnce可以轻松地为外接程序和解决方案创建安装程序。 但是，它无法安装需要管理权限的外接程序，例如计算机级别的外接程序。
 
-可以使用安装程序安装需要管理权限的外接程序Windows但创建安装程序需要更多的工作量。
+可以使用安装程序安装需要管理权限的Windows，但创建安装程序确实需要更多的工作量。
 
 有关如何使用 VSTO 部署 ClickOnce 解决方案的概述，请参阅使用 Office[部署 ClickOnce。](deploying-an-office-solution-by-using-clickonce.md)
 
@@ -79,7 +79,7 @@ ClickOnce Windows安装解决方案时，安装程序包需要执行相同的Off
 
 安装程序包必须将这些组件安装到用户的计算机：
 
-- 如果Microsoft Office文档级解决方案，则创建文档。
+- 如果Microsoft Office文档级解决方案，则显示文档。
 - 自定义程序集及其所需的任何程序集。
 - 其他组件，如配置文件。
 - 应用程序清单 (.manifest) 。
@@ -119,10 +119,10 @@ Outlook显示自定义窗体区域的外接程序需要额外的注册表项，�
 ### <a name="to-create-the-addin-setup-project"></a>创建 AddIn 安装程序项目
 
 1. 打开Office AddIn Project部署。 本示例使用名为 ExcelAddIn Excel外接程序。
-2. 使用"Office Project打开"，在"文件"菜单上展开"添加"，Project"新建项目"以添加新项目。 
+2. 使用"Office Project打开"，在 **"文件"** 菜单上展开"添加 **"，Project"** 新建项目"以添加新项目。
 ::: moniker range="=vs-2017"
-3. 在"**添加新Project"** 对话框中，展开"Project类型"窗格中的"其他Project **类型**"，然后展开"设置和部署"，然后选择 **"Visual Studio 安装程序"。**
-4. 在"**模板"窗格中**，从 **"Project** 模板Visual Studio **选择"安装程序**"。
+3. 在"**添加新Project"** 对话框中，展开"Project类型"窗格中的"其他Project **类型"，** 然后展开"设置和部署"，然后选择 **"Visual Studio 安装程序"。**
+4. 在"**模板"窗格中**，从 **"Project** 模板Visual Studio **选择**"安装程序"。
 ::: moniker-end
 ::: moniker range="=vs-2019"
 3. 在"**添加新Project"** 对话框中，选择"安装程序 **Project** 模板。
@@ -147,8 +147,8 @@ Visual Studio打开新安装项目的文件系统资源管理器。 文件系统
 
 ### <a name="to-add-the-exceladdin-project-output"></a>添加 ExcelAddIn 项目输出
 
-1. 在解决方案资源管理器 **中**，右键单击 **"OfficeAddInSetup"，** 单击 **"添加**"，Project **输出"。**
-2. 在"**添加Project组**"对话框中，从项目列表中选择 **ExcelAddIn，** 然后选择"主 **输出"。**
+1. 在 **"解决方案资源管理器** 中，右键单击 **"OfficeAddInSetup"，** 单击 **"添加****"，Project输出"。**
+2. 在"**添加Project组**"对话框中，从项目 **列表中选择"ExcelAddIn"** 和"主 **输出"。**
 3. 单击 **"** 确定"，将项目输出添加到安装项目。
 
     !["添加输出组Project安装程序Project屏幕截图](media/setup-project-figure-2.png)
@@ -161,7 +161,7 @@ Visual Studio打开新安装项目的文件系统资源管理器。 文件系统
 
 1. 在解决方案资源管理器 **中**，右键单击 **"OfficeAddInSetup"，** 单击"**添加**"，然后单击"文件 **"。**
 2. 在" **添加文件"** 对话框中，导航到 **ExcelAddIn** 输出目录。 通常，输出目录是项目根目录的 **bin \\** 发布子文件夹，具体取决于所选的生成配置。
-3. 选择 **ExcelAddIn.vsto** 和 **ExcelAddIn.dll.manifest** 文件，然后单击"打开"，将这两个文件添加到安装项目。
+3. 选择 **ExcelAddIn.vsto** **ExcelAddIn.dll.manifest** 文件，然后单击"打开"，将这两个文件添加到安装项目。
 
     ![应用程序中应用程序和部署清单的解决方案资源管理器](media/setup-project-figure-3.jpg)
 
@@ -171,182 +171,182 @@ Visual Studio打开新安装项目的文件系统资源管理器。 文件系统
 
 ### <a name="to-exclude-the-exceladdin-project-dependencies"></a>排除 ExcelAddIn 项目依赖项
 
-1. 在 **解决方案资源管理器** 中，在 **OfficeAddInSetup** 节点中，选择"检测到的依赖项"项下的所有依赖项 **项，Microsoft .NET Framework** 或任何以.Utilities.dll **\* 结尾的程序集** 除外。 实用工具程序集应随应用程序一起部署。
-2. 右键单击该组，然后选择"属性 **"。**
-3. 在" **属性** "窗口中，将 **Exclude** 属性更改为 **True，** 以从安装项目中排除依赖程序集。 请确保不排除任何实用工具程序集。
+1. 在 **解决方案资源管理器** 的 " **officeaddinsetup"** "节点中，选择"**检测到的依赖** 项 "项下的" 所有依赖项 "项，但 **Microsoft .NET Framework** 或任何以 **\* . Utilities.dll** 结尾的程序集除外。 实用程序程序集与应用程序一起部署。
+2. 右键单击该组，然后选择 " **属性**"。
+3. 在 " **属性** " 窗口中，将 " **排除** " 属性更改为 " **True** "，以从安装项目中排除依赖程序集。 请确保不排除任何实用工具程序集。
 
-    ![显示要解决方案资源管理器依赖项的屏幕截图](media/setup-project-figure-4.jpg)
+    ![显示要排除的依赖项的解决方案资源管理器屏幕截图](media/setup-project-figure-4.jpg)
 
-    **图 4：排除依赖项**
+    **图4：排除依赖项**
 
-可以通过添加安装程序Windows引导程序，将安装程序包配置为安装必备组件。 此安装程序可以安装必备组件，这是一个称为启动的过程。
+可以通过添加安装程序（也称为 "引导程序"）将 Windows Installer 包配置为安装必备组件。 此安装程序可以安装系统必备组件，这是一个称为 "引导" 的进程。
 
-对于 **ExcelAddIn，** 必须先安装这些必备组件，然后外接程序才能正常运行：
+对于 **ExcelAddIn**，必须先安装这些必备组件，然后才能正常运行外接程序：
 
-- Microsoft .NET Framework解决方案Office版本。
+- Office 解决方案的目标 Microsoft .NET Framework 版本。
 - Microsoft Visual Studio 2010 Tools for Office Runtime。
 
-将依赖组件配置为先决条件
+配置依赖组件为系统必备组件
 
-1. 在解决方案资源管理器 **中**，右键单击 **OfficeAddInSetup 项目，然后选择**"属性 **"。**
-2. 将显示 **"OfficeAddInSetup 属性页** "对话框。
-3. 单击" **先决条件"** 按钮。
-4. 在"先决条件"对话框中，选择适用于 .NET Framework 运行时的 Microsoft Visual Studio 工具Office版本。
+1. 在 **解决方案资源管理器** 中，右键单击 **officeaddinsetup "** 项目，然后选择" **属性**"。
+2. 此时将显示 " **Officeaddinsetup" 属性页** "对话框。
+3. 单击 " **必备项** " 按钮。
+4. 在 "系统必备" 对话框中，为 Office 运行时选择正确的 .NET Framework 版本和 Microsoft Visual Studio 工具。
 
-    !["先决条件"对话框的屏幕截图](media/setup-project-figure-5.png)
+    !["必备组件" 对话框的屏幕截图](media/setup-project-figure-5.png)
 
-    **图 5：先决条件对话框**
+    **图5： "系统必备" 对话框**
 
     > [!NOTE]
-    >安装程序安装程序中的一些Visual Studio必备组件Project依赖于所选的生成配置。 必须为使用的每个生成配置选择正确的必备组件。
+    >Visual Studio 安装程序 Project 中配置的某些必备组件包依赖于所选的生成配置。 你必须为你使用的每个生成配置选择正确的必备组件。
 
-Microsoft Office注册表项查找外接程序。 HKEY CURRENT USER 配置单元中的密钥用于为每个用户 \_ \_ 注册外接程序。 HKEY LOCAL MACHINE 配置单元下的密钥用于为计算机所有用户 \_ \_ 注册外接程序。 有关注册表项详细信息，请参阅 VSTO[外接程序 的注册表项](registry-entries-for-vsto-add-ins.md)。
+Microsoft Office 使用注册表项查找外接程序。 HKEY \_ 当前 \_ 用户配置单元中的密钥用于为每个单独的用户注册外接程序。 HKEY \_ 本地计算机 hive 下的密钥 \_ 用于为计算机的所有用户注册外接程序。 有关注册表项的详细信息，请参阅[VSTO 外接程序的注册表项](registry-entries-for-vsto-add-ins.md)。
 
 ### <a name="to-configure-the-registry"></a>配置注册表
 
-1. 在解决方案资源管理器 **中**，右键单击 **"OfficeAddInSetup"。**
-2. 展开"**查看"。**
-3. 单击 **"注册表** "打开注册表编辑器窗口。
-4. 在"**注册表" (OfficeAddInSetup)** 编辑器中，展开 **"HKEY \_ LOCAL \_ MACHINE"，** 然后展开"**软件"。**
-5. 删除在 HKEY LOCAL MACHINE Software 下找到的 **\[ Manufacturer \]** **\_ \_ \\ ？key。**
-6. 展开 **"HKEY \_ CURRENT \_ USER"，** 然后展开"**软件"。**
-7. 删除在 **\[ \]** **HKEY CURRENT USER Software 下 \_ 找到的 \_ 制造商 \\ 密钥**。
-8. 若要为外接程序安装添加注册表项，请右键单击"**用户/计算机 Hive** 密钥"，然后选择"新建 **密钥"。** 使用文本 **"软件** "作为新密钥的名称。 右键单击 **新建的软件密钥** ，并创建文本为 Microsoft 的新 **密钥**。
+1. 在 **解决方案资源管理器** 中，右键单击 **officeaddinsetup "**。
+2. 展开 " **视图**"。
+3. 单击 " **注册表** "，打开 "注册表编辑器" 窗口。
+4. 在 **注册表 (officeaddinsetup ")** 编辑器中，依次展开" HKEY "、" **\_ 本地 \_ 计算机** "和" **软件**"。
+5. 删除 **\[ 制造商 \]**？在 **HKEY \_ 本地 \_ 计算机 \\ 软件** 下找到的密钥。
+6. 展开 " **HKEY \_ 当前 \_ 用户** " 和 " **软件**"。
+7. 删除 **HKEY " \_ 当前 \_ 用户 \\ 软件**" 下的 **\[ 制造商 \]** 密钥。
+8. 若要为外接程序安装添加注册表项，请右键单击 **用户/计算机 Hive** 键，然后选择 " **新项**"。 使用文本 **软件** 作为新密钥的名称。 右键单击新创建的 **软件** 密钥，并使用文本 **Microsoft** 创建新密钥。
 9. 使用类似的过程创建外接程序注册所需的整个密钥层次结构：
 
-    **User/Machine Hive \\ Software Microsoft Office Excel \\ \\ \\ \\ Addins \\ SampleCompany.ExcelAddIn**
+    **用户/计算机 Hive \\ Software \\ Microsoft \\ Office \\ Excel \\ Addins \\ samplecompany.exceladdin 注册表项. ExcelAddIn**
 
     公司名称通常用作外接程序名称的前缀，以提供唯一性。
 
-10. 右键单击 **SampleCompany.ExcelAddIn** 键，选择"**新建"，** 然后单击"**字符串值"。** 对"名称 **"** 使用文本"说明"。
-11. 使用此步骤可再添加三个值：
-    - **String 类型的 FriendlyName** 
-    - 类型 **为 DWORD** **的 LoadBehavior**
-    - **String** 类型的 **清单**
+10. 右键单击 " **ExcelAddIn** " 项，选择 " **新建**"，然后单击 " **字符串值**"。 使用名称的文本 **说明** 。
+11. 使用此步骤添加三个更多值：
+    - **字符串** 类型的 **FriendlyName**
+    - **DWORD** 类型的 **LoadBehavior**
+    - **字符串** 类型的 **清单**
 
-12. 右键单击注册表 **编辑器中的**"说明"值，然后单击"**属性窗口"。** 在"**属性"窗口中**，Excel Value 属性输入 Demo **AddIn。**
-13. 在 **注册表编辑器中选择 FriendlyName** 项。 在"**属性"窗口中**，将 **"值**"Excel **Demo AddIn"**。
-14. 在 **注册表编辑器中选择 LoadBehavior** 项。 在" **属性"窗口中**，将 **"值"** 属性更改为 **"3"。** LoadBehavior 的值 3 指示应在启动主机应用程序时加载外接程序。 有关加载行为详细信息，请参阅 VSTO[外接程序 的注册表项](registry-entries-for-vsto-add-ins.md)。
+12. 在注册表编辑器中右键单击 **说明** 值，然后单击 " **属性窗口**"。 在 "**属性" 窗口** 中，为 "值" 属性输入 **Excel Demo 外接**。
+13. 在注册表编辑器中选择 **FriendlyName** 项。 在 "**属性" 窗口** 中，将 "**值**" 属性更改为 **Excel Demo 外接**。
+14. 在注册表编辑器中选择 " **LoadBehavior** " 项。 在 " **属性" 窗口** 中，将 " **值** " 属性更改为 **3。** LoadBehavior 的值3指示加载项应在宿主应用程序启动时加载。 有关加载行为的详细信息，请参阅[VSTO 外接程序的注册表项](registry-entries-for-vsto-add-ins.md)。
 
-15. 在 **注册表编辑器** 中选择"清单"项。 在" **属性"窗口中**，将 **Value** 属性更改为 **file:///[TARGETDIR]ExcelAddIn.vsto|vstolocal**
+15. 在注册表编辑器中选择 **清单** 键。 在 " **属性" 窗口** 中，将 " **值** " 属性更改为 **file：///[TARGETDIR] ExcelAddIn | vstolocal**
 
     ![注册表编辑器的屏幕截图](media/setup-project-figure-6.png)
 
-    **图 6：设置注册表项**
+    **图6：设置注册表项**
 
-      VSTO运行时使用此注册表项来查找部署清单。 [TARGETDIR] 宏将替换为外接程序安装到的文件夹。 宏将包含尾随 \ 字符，因此部署清单的文件名应为 ExcelAddIn.vsto，不带 \ 字符。
-      **vstolocal** postfix 告知VSTO运行时，外接程序应从此位置加载，而不是从ClickOnce加载。 删除此修补程序将导致运行时将自定义项复制到ClickOnce缓存。
+      VSTO 运行时使用此注册表项来查找部署清单。 [TARGETDIR] 宏将替换为将外接程序安装到的文件夹。 该宏将包含尾随 \ 字符，因此部署清单的文件名应为 ExcelAddIn，不含 \ 字符。
+      **vstolocal** 后缀会告诉 VSTO 运行时外接程序应从此位置加载（而不是 ClickOnce 缓存）。 删除此后缀将导致运行时将自定义项复制到 ClickOnce 缓存中。
 
    >[!WARNING]
-   >应非常小心使用注册表编辑器Visual Studio。 例如，如果意外为错误的密钥设置了 DeleteAtUninstall，可能会删除注册表的活动部分，使用户计算机保持不一致甚至更差的损坏状态。
+   >Visual Studio 中的注册表编辑器应该非常小心。 例如，如果你无意中为错误的键设置了 DeleteAtUninstall，则可能会删除注册表的活动部分，使用户计算机处于不一致的状态，甚至更糟糕的状态。
 
-64 位版本的 Office 将使用 64 位注册表配置单元查找外接程序。若要在 64 位注册表配置单元下注册外接程序，安装程序项目的目标平台必须设置为仅 64 位。
+64位版本的 Office 将使用64位注册表配置单元查找外接程序。若要在64位注册表配置单元中注册外接程序，则必须将安装项目的目标平台设置为仅64位。
 
-1. 在解决方案 **资源管理器中选择 OfficeAddInSetup** 项目。
-2. 转到" **属性"** 窗口，将 **TargetPlatform** 属性设置为 **x64**。
+1. 在解决方案资源管理器中选择 **officeaddinsetup "** 项目。
+2. 中转到 " **属性** " 窗口，并将 **TargetPlatform** 属性设置为 **x64**。
 
-为 32 位和 64 位版本的 Office 安装外接程序需要创建两个单独的 MSI 包。 一个 32 位，另一个表示 64 位。
+若要为32位和64位版本的 Office 安装外接程序，将需要你创建两个单独的 MSI 包。 一个用于32位，另一个用于64位。
 
-  !["属性"窗口的屏幕截图，其中显示了用于向 64 位用户注册外接程序的目标平台Office](media/setup-project-figure-7.jpg)
+  !["属性" 窗口的屏幕截图，显示用于注册64位 Office 外接程序的目标平台](media/setup-project-figure-7.jpg)
 
-  **图 7：用于向 64 位用户注册外接程序的目标平台Office**
+  **图7：用于注册64位 Office 外接程序的目标平台**
 
-如果使用 MSI 包来安装外接程序或解决方案，则无需安装所需的必备组件即可安装。 如果未安装必备组件，可以使用 MSI 中的启动条件阻止外接程序安装。
+如果使用 MSI 包安装外接程序或解决方案，则无需安装所需的必备软件即可进行安装。 如果未安装系统必备组件，则可以使用 MSI 中的启动条件来阻止外接程序安装。
 
-### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime"></a>配置启动条件以检测VSTO运行时
+### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime&quot;></a>配置启动条件以检测 VSTO 运行时
 
-1. 在解决方案资源管理器 **中**，右键单击 **"OfficeAddInSetup"。**
-2. 展开"**查看"。**
-3. 单击"**启动条件"。**
-4. 在 **"启动条件 (OfficeAddInSetup**) 编辑器 **中**，右键单击"目标计算机上的要求"，然后单击"添加 **注册表启动条件"。** 此搜索条件可以在注册表中搜索运行时VSTO密钥。 然后，密钥的值可以通过命名属性提供给安装程序的各个部分。 启动条件使用搜索条件定义的 属性来检查某个值。
-5. 在 **"启动条件 (OfficeAddInSetup)** 编辑器中，选择"搜索 **RegistryEntry1"** 搜索条件，右键单击条件，然后选择"属性 **窗口"。**
+1. 在 **解决方案资源管理器** 中，右键单击 **officeaddinsetup &quot;**。
+2. 展开 &quot; **视图**&quot;。
+3. 单击 &quot; **启动条件**&quot;。
+4. 在 &quot; **启动条件&quot; (officeaddinsetup ")** " 编辑器中，右键单击 " **目标计算机上的要求**"，然后单击 " **添加注册表启动条件**"。 此搜索条件可以在注册表中搜索 VSTO 运行时安装的注册表项。 然后，可通过命名属性对安装程序的各个部分使用该密钥的值。 启动条件使用由搜索条件定义的属性来检查某个值。
+5. 在 " **启动条件 (officeaddinsetup" ")** 编辑器中，选择" **搜索 RegistryEntry1** "搜索条件，右键单击该条件，然后选择" **属性窗口**"。
 
-6. 在" **属性"** 窗口中，设置以下属性：
-   1. 将 **"2010 (") "的值设置为"VSTO 2010 运行时"。** 
-   2. 将 Property 的值 **更改为** **VSTORUNTIMEREDIST**。
-   3. 将 **RegKey** 的值设置为 **SOFTWARE Microsoft \\ \\ VSTO运行时安装程序 \\ v4R**
-   4. 将"**根"** 属性保留设置为 **"vsdrr并LM"。**
-   5. 将"**值"** 属性更改为 **"版本"。**
+6. 在 " **属性** " 窗口中，设置以下属性：
+   1. 设置 **(名称)** 的值以 **搜索 VSTO 2010 运行时**。
+   2. 将 **属性** 的值更改为 **VSTORUNTIMEREDIST**。
+   3. 将 **RegKey** 的值设置为 **SOFTWARE \\ Microsoft \\ VSTO Runtime Setup \\ v4R**
+   4. 将 **根** 属性设置为 " **vsdrrHKLM**"。
+   5. 将 " **值** " 属性更改为 " **版本**"。
 
-7. 在 **"启动条件 (OfficeAddInSetup**) 编辑器中，选择 **Condition1** 启动条件，右键单击该条件，然后选择"属性 **窗口"。**
+7. 在 " **启动条件" (officeaddinsetup ")** " 编辑器中，选择 " **Condition1** " 启动条件，右键单击该条件，然后选择 " **属性窗口**"。
 8. 在“属性”窗口中，设置以下属性：
-   1. 将" (**名称")** 验证VSTO **2010 运行时可用性**。
-   2. 将"条件"的值 **更改为** **VSTORUNTIMEREDIST \> ="10.0.30319"**
-   3. 将 **InstallURL 属性留** 空。
-   4. 将"**消息"** 设置为Visual Studio未安装 Office **运行时的 2010 工具。请Setup.exe安装外接程序**。
+   1. 设置 **(名称)** 以 **验证 VSTO 2010 运行时可用性**。
+   2. 将 **条件** 的值更改为 **VSTORUNTIMEREDIST \> = "10.0.30319"**
+   3. 将 **InstallURL** 属性留空。
+   4.  **未安装 Office 运行时的 Visual Studio 2010 工具的消息。请运行 Setup.exe 以安装外接程序**。
 
-        ![验证运行时可用性启动条件的"属性"窗口的屏幕截图](media/setup-project-figure-8.jpg)
+        ![验证运行时可用性启动条件的 "属性" 窗口的屏幕截图](media/setup-project-figure-8.jpg)
 
-        **图 8：验证运行时可用性启动条件的属性窗口**
+        **图8：验证运行时可用性启动条件的 "属性&quot; 窗口**
 
- 上面的启动条件显式检查引导程序包VSTO运行时是否存在。
+ 当安装程序包安装时，上面的启动条件会显式检查 VSTO 运行时是否存在。
 
-### <a name="configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office"></a>配置启动条件以检测VSTO安装的运行时Office
+### <a name=&quot;configure-a-launch-condition-to-detect-the-vsto-runtime-installed-by-office&quot;></a>配置启动条件以检测 VSTO 安装的运行时 Office
 
-1. 在 **"启动条件 (OfficeAddInSetup)** 编辑器中，右键单击"搜索目标计算机"，然后单击"添加 **注册表搜索"。**
-2. 选择 " **搜索 RegistryEntry1** " 搜索条件，右键单击该条件，然后选择 " **属性窗口**"。
-3. 在 " **属性** " 窗口中，设置以下属性：
-    1. 设置 **(名称)** 的值以 **搜索 Office VSTO 运行时**。
-    2. 将 **属性** 的值更改为 **OfficeRuntime**。
-    3. 将 **RegKey** 的值设置为 **软件 \\ Microsoft \\ VSTO 运行时安装程序 \\ v4**。
-    4. 将 **根** 属性设置为 " **vsdrrHKLM**"。
-    5. 将 " **值** " 属性更改为 " **版本**"。
+1. 在 &quot; **启动条件&quot; (officeaddinsetup ")** " 编辑器中，右键单击 " **搜索目标计算机**"，然后单击 " **添加注册表搜索**"。
+2. 选择"**搜索 RegistryEntry1"** 搜索条件，右键单击条件，然后选择"属性 **窗口"。**
+3. 在" **属性"** 窗口中，设置以下属性：
+    1. 将"名称 **(") "****的值设置为"搜索 Office VSTO 运行时"。**
+    2. 将"属性"**的值更改为****"OfficeRuntime"。**
+    3. 将 **RegKey** 的值设置为 **SOFTWARE Microsoft \\ \\ VSTO运行时安装程序 \\ v4**。
+    4. 将"**根"** 属性保留设置为 **"vsdrr并LM"。**
+    5. 将"**值"** 属性更改为 **"版本"。**
 
-4. 在 "**启动条件" (officeaddinsetup ")** " 编辑器中，选择前面定义的 "**验证 VSTO 2010 运行时可用性**" 启动条件，右键单击该条件，然后选择 "**属性窗口**"。
+4. 在 **"启动条件 (OfficeAddInSetup)** 编辑器中，选择"验证 **之前定义的 VSTO 2010 运行时可用性** 启动条件"，右键单击条件，然后选择"属性 **窗口"。**
 
-5. 将 **Condition** 属性的值更改为 **VSTORUNTIMEREDIST \> = "10.0.30319" 或 OFFICERUNTIME \> = "10.0.21022"**。 版本号可能不同，具体取决于外接程序所需的运行时版本。
+5. 将 Condition 属性的值更改为 **VSTORUNTIMEREDIST \> ="10.0.30319" OR OFFICERUNTIME \> ="10.0.21022"**。 版本号可能有所不同，具体取决于外接程序所需的运行时版本。
 
-    ![启动条件 Windows 属性的屏幕截图](media/setup-project-figure-9.jpg)
+    ![启动条件的"属性Windows屏幕截图](media/setup-project-figure-9.jpg)
   
-    **图9：通过再发行或 Office 启动条件验证运行时可用性 Windows 的属性**
+    **图 9：Windows通过 Redist 或 Office启动条件验证运行时可用性的属性**
 
-如果外接程序针对 .NET Framework 4 或更高版本，则引用的主互操作程序集 (PIA) 内的类型可以嵌入 VSTO 程序集中。
+如果外接程序面向 .NET Framework 4 或更高版本，则引用的主互操作程序集 (PIA) 中的类型可以嵌入到 VSTO 程序集中。
 
-若要通过执行以下步骤来检查是否将在外接程序中嵌入互操作类型：
+若要检查互操作类型是否将嵌入外接程序中，请执行以下步骤：
 
-1. 展开 "引用" 节点解决方案资源管理器
-2. 选择其中一个 PIA 引用，例如 **Office**。
-3. 按 F4 或从程序集上下文菜单中选择 "属性"，查看 "属性" 窗口。
-4. 检查 " **嵌入互操作类型**" 属性的值。
+1. 展开"引用"节点解决方案资源管理器
+2. 选择其中一个 PIA 引用，例如 **Office。**
+3. 通过按 F4 或从"程序集"上下文菜单中选择"属性"来查看属性窗口。
+4. 检查"嵌入互操作 **类型"属性的值**。
 
-如果将该值设置为 **True**，则将嵌入这些类型，您可以跳到 [**来生成安装项目**](#to-build-the-setup-project) 部分。
+如果值设置为 **True，** 则"类型"将嵌入，你可以跳到"生成 [**安装项目"**](#to-build-the-setup-project) 部分。
 
-有关详细信息，请参阅 [类型等效性和嵌入的互操作类型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)
+有关详细信息，请参阅 [类型等效和嵌入式互操作类型](/dotnet/framework/interop/type-equivalence-and-embedded-interop-types)
 
-### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>配置启动条件以检测 Office pia 的情况
+### <a name="to-configure-launch-conditions-to-detect-that-for-office-pias"></a>配置启动条件以检测 OFFICE PIA
 
-1. 在 "**启动条件" (officeaddinsetup ")** " 编辑器中，右键单击 "**目标计算机上的要求**"，然后 **单击 "添加 Windows Installer 启动条件**"。 此启动条件通过搜索特定组件 ID 搜索 Office 的 PIA。
-2. 右键单击 " **搜索 Component1** "，然后单击 " **属性窗口** " 以显示启动条件的属性。
-3. 在 " **属性" 窗口** 中，设置以下属性：
+1. 在 **"启动条件 (OfficeAddInSetup**) 编辑器 **中**，右键单击"目标计算机上的要求"，然后单击"添加Windows **安装程序启动条件"。** 此启动条件通过搜索Office ID 来搜索 PIA。
+2. 右键 **单击"搜索 Component1"，** 然后单击" **属性窗口** "以显示启动条件的属性。
+3. 在" **属性"窗口中**，设置以下属性：
 
-    1. 更改 **(名称)** 属性的值以 **搜索 Office 共享 PIA**
-    2. 将 "组件 id" 的值 **更改为所** 使用的 Office 组件的 "组件 Id"。 可以在下表中找到组件 Id 的列表，例如 **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**。
-    3. 将 **属性** 属性的值更改为 **HASSHAREDPIA**。
+    1. 将"名称" (**属性) "****搜索"Office PIA"**
+    2. 将 **ComponentID** 的值更改为Office组件的组件 ID。 可以在下表中查找组件 ID 列表，例如 **{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}**。
+    3. 将 Property 属性的值 **更改为** **HASSHAREDPIA**。
 
-4. 在 " **启动条件" (officeaddinsetup ")** " 编辑器中，右键单击 " **Condition1** "，然后单击 " **属性窗口** " 以显示启动条件的属性。
+4. 在 **"启动条件 (OfficeAddInSetup**) 编辑器中，右键单击"Condition1"，然后单击"属性窗口"以显示启动条件的属性。 
 
-5. 更改 **Condition1** 的以下属性：
+5. 更改 **Condition1 的以下属性**：
 
-    1. 更改 **(名称)** 以 **验证 Office 共享 PIA 可用性**。
-    2. 将 **条件** 更改为 **HASSHAREDPIA**。
-    3. 将 **InstallUrl** 留空。
-    4. 将 **消息** 更改为 **与 Excel 进行交互所需的组件不可用。请运行 setup.exe**。
+    1. 更改 (**名称)****验证Office PIA 可用性**。
+    2. 将"**条件"** 更改为 **"HASSHAREDPIA"。**
+    3. 将 **InstallUrl 留** 空。
+    4. 将 **"消息**"更改为"与Excel **交互所需的组件不可用。请运行 setup.exe。**
 
-    !["验证 Office 共享 PIA 启动条件" 的 "属性" 窗口的屏幕截图](media/setup-project-figure-10.jpg)
+    !["验证共享 PIA 启动Office属性窗口的屏幕截图](media/setup-project-figure-10.jpg)
   
-    **图10： "验证 Office 共享 PIA 启动条件" 的 "属性" 窗口**
+    **图 10：验证共享 PIA 启动Office的属性窗口**
 
-### <a name="component-ids-of-the-primary-interop-assemblies-for-microsoft-office"></a>Microsoft Office 的主互操作程序集的组件 Id
+### <a name="component-ids-of-the-primary-interop-assemblies-for-microsoft-office"></a>主互操作程序集的组件MICROSOFT OFFICE
 
-|主互操作程序集|Office 2010|Office 2013|Office 2013 (64) |Office 2016|Office 2016 (64) |
+|主互操作程序集|Office 2010|Office 2013|Office 2013 (64 位) |Office 2016|Office 2016 (64 位) |
 |------------------------|------------------------|------------------------|------------------------|------------------------|------------------------|
 |Excel|{EA7564AC-C67D-4868-BE5C-26E4FC2223FF}|{C8A65ABE-3270-4FD7-B854-50C8082C8F39}|{E3BD1151-B9CA-4D45-A77E-51A6E0ED322A}|C4ACE6DB-AA99-401F-8BE6-8784BD09F003}|{C4ACE6DB-AA99-401F-8BE6-8784BD09F003}|
 |InfoPath|{4153F732-D670-4E44-8AB7-500F2B576BDA}|{0F825A16-25B2-4771-A497-FC8AF3B355D8}|{C5BBD36E-B320-47EF-A512-556B99CB7E41}|-|-|
 |Outlook|{1D844339-3DAE-413E-BC13-62D6A52816B2}|{F9F828D5-9F0B-46F9-9E3E-9C59F3C5E136}|{7824A03F-28CC-4371-BC54-93D15EFC1E7F}|{7C6D92EF-7B45-46E5-8670-819663220E4E}|{7C6D92EF-7B45-46E5-8670-819663220E4E}|
-|PowerPoint|{EECBA6B8-3A62-44AD-99EB-8666265466F9}|{813139AD-6DAB-4DDD-8C6D-0CA30D073B41}|{05758318-4288 BCFD-AD8D-81185841C235}|{E0A76492-0FD5-4EC2-8570-AE1BAA61DC88}|{E0A76492-0FD5-4EC2-8570-AE1BAA61DC88}|
+|PowerPoint|{EECBA6B8-3A62-44AD-99EB-8666265466F9}|{813139AD-6DAB-4DDD-8C6D-0CA30D073B41}|{05758318-BCFD-4288-AD8D-81185841C235}|{E0A76492-0FD5-4EC2-8570-AE1BAA61DC88}|{E0A76492-0FD5-4EC2-8570-AE1BAA61DC88}|
 |Visio|{3EA123B5-6316-452E-9D51-A489E06E2347}|{C1713368-12A8-41F1-ACA1-934B01AD6EEB}|{2CC0B221-22D2-4C15-A9FB-DE818E51AF75}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|{2D4540EC-2C88-4C28-AE88-2614B5460648}|
-|单词|{8B74A499-37F8-4DEA-B5A0-D72FC501CEFA}|{9FE736B7-B1EE-410C-8D07-082891C3DAC8}|{13C07AF5-B206-4A48-BB5B-B8022333E3CA}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|
-|Microsoft Forms 2。0|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{A5A30117-2D2A-4C5C-B3C8-8897AC32C2AC}|-|-|
+|Word|{8B74A499-37F8-4DEA-B5A0-D72FC501CEFA}|{9FE736B7-B1EE-410C-8D07-082891C3DAC8}|{13C07AF5-B206-4A48-BB5B-B8022333E3CA}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|{DC5CCACD-A7AC-4FD3-9F70-9454B5DE5161}|
+|Microsoft Forms 2.0|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{B2279272-3FD2-434D-B94E-E4E0F8561AC4}|{A5A30117-2D2A-4C5C-B3C8-8897AC32C2AC}|-|-|
 |Microsoft Graph|{011B9112-EBB1-4A6C-86CB-C2FDC9EA7B0E}|{52DA4B37-B8EB-4B7F-89C1-824654CE4C70}|{24706F33-F0CE-4EB4-BC91-9E935394F510}|-|-|
 |智能标记 (Smart Tag)|{7102C98C-EF47-4F04-A227-FE33650BF954}|{487A7921-EB3A-4262-BB5B-A5736B732486}|{74EFC1F9-747D-4867-B951-EFCF29F51AF7}|-|-|
 |Office共享|{64E2917E-AA13-4CA4-BFFE-EA6EDA3AFCB4}|{6A174BDB-0049-4D1C-86EF-3114CB0C4C4E}|{76601EBB-44A7-49EE-8DE3-7B7B9D7EBB05}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|{625F5772-C1B3-497E-8ABE-7254EDB00506}|
@@ -596,8 +596,8 @@ s
 
 ## <a name="about-the-authors"></a>关于作者
 
-Wouter van Vugt 是一家Microsoft MVP Office Open XML 技术的公司，也是一名独立顾问，专注于使用 SharePoint、Microsoft Office 和相关 .NET 技术创建 Office Business Applications (OBA) 。
-Wouter 是开发人员社区网站（如 [MSDN）](/previous-versions/office/developer/office-2007/bb879915(v=office.12))的频繁参与者。 他发布了几篇白皮书和文章，以及一本标题为 Open XML： Explained e book 的书籍。
-Wouter 是 Code-Founder 的创建者，该公司是一家荷兰语公司，致力于通过各种渠道交付先进的技术内容。 可以通过阅读 Wouter 的博客来了解有关 Wouter 的更多内容。
+Wouter van Vugt 是 Microsoft MVP，具有 Office Open XML 技术和独立的顾问，重点介绍如何使用) 、SharePoint 和相关的 .net 技术创建 Office Business Applications (oba Microsoft Office。
+Wouter 是开发人员社区网站（如 [MSDN](/previous-versions/office/developer/office-2007/bb879915(v=office.12))）的常见参与者。 他发布了若干白皮书和文章，以及标题为 "Open XML：说明电子书" 的书籍。
+Wouter 是代码顾问的创始人，这是一家荷兰公司，致力于通过各种渠道交付先进的技术内容。 若要了解有关 Wouter 的详细信息，请阅读他的博客。
 
-Ted Pattison 是一SharePoint MVP、作者、讲师以及 Ted Pattison Group 的创建者。 2005 年 5 月，Ted 被 Microsoft 开发人员平台 Evangelism 组雇用，创作 Windows SharePoint Services 3.0 和 Microsoft Office SharePoint Server 2007 的 Ascend 开发人员培训课程。 自那以后，Ted 完全专注于为专业开发人员SharePoint 2007 技术。 Ted 已完成为 Microsoft Press 撰写一本标题为 inside Windows SharePoint Services 3.0 的书籍，重点介绍如何将 SharePoint 用作构建业务解决方案的开发平台。 Ted 还为 MSDN 杂志编写一个以开发人员为中心的列，标题Office Space。
+李小明 Pattison 是 SharePoint MVP、作者、培训师和李小明 Pattison 组的创始人。 在2005秋季，李小明是由 Microsoft 的开发人员平台推广组雇用的，用于创作 Windows SharePoint Services 3.0 和 Microsoft Office SharePoint Server 2007 的递增开发人员培训课程。 从那时起，李小明一直致力于为专业开发人员提供 SharePoint 2007 技术的培训。 李小明撰写了一本书，其中标题为 Microsoft 新闻，其中标题为 Windows SharePoint Services 3.0，重点介绍如何将 SharePoint 用作构建业务解决方案的开发平台。 李小明还为标题为 Office Space 的 MSDN 杂志写入以开发人员为中心的列。

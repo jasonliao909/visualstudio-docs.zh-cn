@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e637f1139de8ee6caebea92cc5ca1fe494c206e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080008"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600944"
 ---
 # <a name="idebugarrayobjectgetdimensions"></a>IDebugArrayObject::GetDimensions
 获取数组的维度。
@@ -40,7 +40,7 @@ int GetDimensions(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwCount`\
 [in]要检索的维度数。
 
@@ -53,5 +53,5 @@ int GetDimensions(
 ## <a name="remarks"></a>备注
  多维数组可以具有每个维度的不同大小。 例如，给定三维数组 ，此方法将按该顺序在 参数中返回 `myarray[3][2][6]` 3、2 `dwDimensions` 和 6。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugArrayObject](../../../extensibility/debugger/reference/idebugarrayobject.md)

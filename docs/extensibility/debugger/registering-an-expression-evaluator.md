@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f928c97961076eaa9d6062d3d812963b1522451b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117925"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602367"
 ---
 # <a name="register-an-expression-evaluator"></a>注册表达式计算器
 > [!IMPORTANT]
@@ -212,6 +212,6 @@ static HRESULT RegisterMetric( bool registerIt )
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [编写 CLR 表达式计算器](../../extensibility/debugger/writing-a-common-language-runtime-expression-evaluator.md)
 - [SDK 调试帮助程序](../../extensibility/debugger/reference/sdk-helpers-for-debugging.md)

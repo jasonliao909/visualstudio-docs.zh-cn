@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 153b5006db591ca12cf4e27e6715ccb8cd0fcb37
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042642"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600797"
 ---
 # <a name="visual-studio-debugger-extensibility"></a>Visual Studio 调试器扩展性
 Visual Studio 包括完全交互式的源代码调试器，提供功能强大且易于使用的工具，用于跟踪程序中的 bug。 调试器对 Visual Basic、c #、c/c + + 和 JavaScript 提供完全支持。 但对于，通过 [!INCLUDE[vsipsdk](../../extensibility/includes/vsipsdk_md.md)] [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=21835)提供的，在具有相同功能的调试器中可以支持其他编程语言。

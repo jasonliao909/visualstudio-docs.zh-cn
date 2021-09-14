@@ -1,6 +1,6 @@
 ---
 title: 在图表上设置背景图像
-description: 请注意，在 Visual Studio 可视化和建模 SDK 中，可以通过使用自定义代码来为生成的设计器设置背景图像。
+description: 了解在可视化Visual Studio建模 SDK 中，可以使用自定义代码为生成的设计器设置背景图像。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -11,14 +11,14 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b0e96a74b56226818c96e049df93dba8b1fa721a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085541"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663894"
 ---
 # <a name="setting-a-background-image-on-a-diagram"></a>在图表上设置背景图像
-在 Visual Studio 可视化和建模 SDK 中，可以通过使用自定义代码来为生成的设计器设置背景图像。
+在Visual Studio可视化和建模 SDK 中，可以使用自定义代码为生成的设计器设置背景图像。
 
 ## <a name="setting-the-background-image"></a>设置背景图像
 
@@ -26,37 +26,37 @@ ms.locfileid: "122085541"
 
 1. 将要用作关系图的背景的图像文件复制到当前项目的 Dsl\Resources 目录中。
 
-2. 在 **解决方案资源管理器** 中，右键单击 Dsl\Resources 文件夹，指向 " **添加**"，然后单击 " **现有项**"。
+2. 在 **解决方案资源管理器** 中，右键单击 Dsl\Resources 文件夹，指向"**添加**"，然后单击"现有 **项"。**
 
-3. 在 " **添加现有项** " 对话框中，浏览到 Dsl\Resources 文件夹。
+3. 在" **添加现有项** "对话框中，浏览到 Dsl\Resources 文件夹。
 
-4. 在 " **文件类型** " 列表中，单击 " **图像文件**"。
+4. 在"**文件类型"列表中**，单击"**图像文件"。**
 
-5. 单击已复制到目录中的图像文件，然后单击 " **添加**"。
+5. 单击复制到目录的图像文件，然后单击"添加 **"。**
 
-6. 右键单击 "Dsl"，然后单击 " **属性** " 以打开 Dsl 项目的属性。
+6. 右键单击 Dsl，然后单击" **属性** "打开 Dsl 项目的属性。
 
-7. 在 " **资源** " 选项卡上，单击 " **此项目不包含默认资源文件"。单击此处创建一个。**
+7. 在" **资源** "选项卡 **上，单击"此项目不包含默认资源文件"。单击此处创建一个。**
 
-8. 通过将图片从 **解决方案资源管理器** 拖动到 "资源" 窗口中，将图像文件添加到资源文件中。
+8. 将图片从资源窗口拖动到资源 **解决方案资源管理器文件添加到** 资源文件。
 
 9. 打开“文件”菜单，然后单击该选项以保存项目属性。
 
 10. 验证文件 Dsl\Properties\Resources.resx 是否存在，以及该文件下面是否具有文件 Resources.Designer.cs。
 
-11. 如果缺少 Resources. .cs，请在 **解决方案资源管理器** 中单击文件资源 .resx。
+11. 如果缺少 Resources.Designer.cs，请单击 中的文件 Resources.resx **解决方案资源管理器。**
 
 12. 在“属性”  窗口中，将 `Custom Tool` 属性设置为 `ResXFileCodeGenerator`。
 
-13. 在 **解决方案资源管理器** 中，右键单击 Dsl 项目，指向 " **添加**"，然后单击 " **新建文件夹**"。
+13. 在 **解决方案资源管理器** 中，右键单击 Dsl 项目，指向"**添加**"，然后单击"新建 **文件夹"。**
 
-14. 将文件夹命名为 " **自定义**"。
+14. 将文件夹命名为 **"自定义"。**
 
-15. 右键单击自定义文件夹，指向 " **添加**"，然后单击 " **新建项**"。
+15. 右键单击"自定义"文件夹，指向"**添加"，** 然后单击"**新建项"。**
 
-16. 在 " **添加新项** " 对话框的 " **模板** " 列表中，单击 " **代码文件**"。
+16. 在"**添加新项"对话框** 的"**模板"** 列表中，单击"**代码文件"。**
 
-17. 在 " **名称** " 框中键入 `BackgroundImage.cs` ，然后单击 " **添加**"。
+17. 在"**名称"** 框中，键入 `BackgroundImage.cs` ，然后单击"添加 **"。**
 
 18. 将以下代码复制到 BackgroundImage.cs 文件，从而调整命名空间、关系图类名以及图像文件资源名称。
 
@@ -101,9 +101,9 @@ ms.locfileid: "122085541"
     }
     ```
 
-     有关使用程序代码自定义模型的详细信息，请参阅 [在程序代码中导航和更新模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
+     有关使用程序代码自定义模型的信息，请参阅在程序代码中导航和更新 [模型](../modeling/navigating-and-updating-a-model-in-program-code.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [定义形状和连接线](../modeling/defining-shapes-and-connectors.md)
 - [自定义文本和图像字段](../modeling/customizing-text-and-image-fields.md)

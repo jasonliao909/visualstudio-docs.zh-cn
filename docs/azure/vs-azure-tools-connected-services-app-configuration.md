@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 12/11/2020
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: d19d65943745aabd078173d6362ba186fa312959eeaca22b974d98b6718ee09c
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 250b89c983da039717982b31873a470172bde0f5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121380956"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602147"
 ---
 # <a name="adding-azure-app-configuration-by-using-visual-studio-connected-services"></a>使用 Visual Studio 连接的服务添加 Azure 应用配置
 
@@ -78,7 +78,7 @@ ms.locfileid: "121380956"
 
 了解 [Azure 应用配置文档](/azure/azure-app-configuration/overview)中的 Azure 应用配置。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在连接 ASP.NET Core 应用的应用配置中使用动态配置的教程](/azure/azure-app-configuration/enable-dynamic-configuration-aspnet-core)
 - [连接服务 (Visual Studio for Mac)](/visualstudio/mac/connected-services)

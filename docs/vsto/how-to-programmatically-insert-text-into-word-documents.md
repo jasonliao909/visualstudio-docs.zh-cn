@@ -1,6 +1,6 @@
 ---
-title: 如何：以编程方式在 Word 文档中插入文本
-description: 了解如何使用 Visual Studio 以编程方式将文本插入 Microsoft Word 文档中。
+title: 如何：以编程方式将文本插入 Word 文档
+description: 了解如何使用 Visual Studio 以编程方式将文本插入到Microsoft Word文档中。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 08/14/2019
@@ -21,13 +21,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: c2acc09b04ba08543faa449788f61f7fa72c8c72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026182"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602248"
 ---
-# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式在 Word 文档中插入文本
+# <a name="how-to-programmatically-insert-text-into-word-documents"></a>如何：以编程方式将文本插入 Word 文档
   向 Microsoft Office Word 文档中插入文本主要有三种方式：
 
 - 在范围中插入文本。
@@ -37,7 +37,7 @@ ms.locfileid: "122026182"
 - 使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeText%2A> 对象的 <xref:Microsoft.Office.Interop.Word.Selection> 方法在光标或所选位置处插入文本。
 
 > [!NOTE]
-> 你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅 [内容控件](../vsto/content-controls.md) 和 [书签控件](../vsto/bookmark-control.md)。
+> 你还可以将文本插入到内容控件和书签中。 有关详细信息，请参阅内容[控件和](../vsto/content-controls.md)[书签控件](../vsto/bookmark-control.md)。
 
  [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
@@ -124,14 +124,14 @@ ms.locfileid: "122026182"
     :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet61":::
     :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet61":::
 
-   你还可以使用 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> 对象的方法 <xref:Microsoft.Office.Interop.Word.Selection> ，该方法模仿键盘上 **Backspace** 键的功能。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。
+   还可使用 对象的 方法，该方法模拟键盘上 <xref:Microsoft.Office.Interop.Word.Selection.TypeBackspace%2A> <xref:Microsoft.Office.Interop.Word.Selection> **Backspace** 键的功能。 但是，当涉及到插入和操作文本时，<xref:Microsoft.Office.Interop.Word.Range> 对象将提供更多控件。
 
    以下示例显示了完整的代码。 若要使用此示例，请运行项目中的 `ThisDocument` 或 `ThisAddIn` 类的代码。
 
    :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet56":::
    :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet56":::
 
-## <a name="see-also"></a>请参阅
-- [如何：以编程方式在文档中设置文本格式](../vsto/how-to-programmatically-format-text-in-documents.md)
-- [如何：以编程方式在文档中定义和选择范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
-- [如何：以编程方式在文档中扩展范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)
+## <a name="see-also"></a>另请参阅
+- [如何：以编程方式设置文档中文本的格式](../vsto/how-to-programmatically-format-text-in-documents.md)
+- [如何：以编程方式定义和选择文档中的范围](../vsto/how-to-programmatically-define-and-select-ranges-in-documents.md)
+- [如何：以编程方式扩展文档中的范围](../vsto/how-to-programmatically-extend-ranges-in-documents.md)

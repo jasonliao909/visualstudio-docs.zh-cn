@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 29ab2cc7d33dc4ec94759fce2ddb9d2335688ed4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034534"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600848"
 ---
 # <a name="validating-breakpoints-in-a-legacy-language-service"></a>验证旧版语言服务中的断点
 断点指示当程序在调试器中运行时，程序执行应在某个特定时间点停止。 用户可以在源文件中的任意行上放置一个断点，因为该编辑器并不知道哪些内容构成了断点的有效位置。 启动调试器时，所有标记的断点 (称为挂起断点) 被绑定到正在运行的程序中的适当位置。 同时对断点进行验证，以确保它们标记有效的代码位置。 例如，注释上的断点无效，因为源代码中的该位置没有代码。 调试器将禁用无效断点。
@@ -101,5 +101,5 @@ namespace TestLanguagePackage
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [旧版语言服务功能](../../extensibility/internals/legacy-language-service-features1.md)

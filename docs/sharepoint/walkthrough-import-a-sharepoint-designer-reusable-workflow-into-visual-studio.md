@@ -20,11 +20,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ab8357b126ab2bfacea24cd3b922baa40fb25da4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148737"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601012"
 ---
 # <a name="walkthrough-import-a-sharepoint-designer-reusable-workflow"></a>演练：导入 SharePoint 设计器可重用工作流
 
@@ -203,69 +203,69 @@ ms.locfileid: "122148737"
 
 13. 在 "**工具箱**" 的 " **Windows Workflow** v4.0" 节点中，执行以下步骤之一：
 
-    - 打开"代码"活动的 **快捷菜单**，然后选择"复制 **"。** 在工作流设计器中，打开 **SequenceActivity1** 活动下行的快捷菜单，然后选择"粘贴 **"。**
+    - 打开 " **代码** " 活动的快捷菜单，然后选择 " **复制**"。 在工作流设计器中，打开 " **SequenceActivity1** " 活动下的行的快捷菜单，然后选择 " **粘贴**"。
 
-    - 将" **代码"** 活动从 **"工具箱** "拖动到工作流设计器，并将其连接到 **SequenceActivity1** 活动下的行。
+    - 将 " **代码** " 活动从 " **工具箱** " 拖动到工作流设计器，并将其连接到 " **SequenceActivity1** " 活动下的行。
 
-      这会将活动添加到名为 **CodeActivity1 的工作流设计器**。 在此活动中，你将添加一个代码操作，该操作在用户启动工作流时在"公告"列表中创建公告。
+      这会将活动添加到名为 **CodeActivity1** 的工作流设计器中。 在此活动中，你将添加一个代码操作，该操作在用户启动工作流时在 "公告" 列表中创建公告。
 
 14. 执行下面的某一组步骤：
 
-    - 双击 **CodeActivity1** 生成事件处理程序并查看代码。
+    - 双击 " **CodeActivity1** " 以生成事件处理程序并查看代码。
 
-    - 在 **CodeActivity1** 的"属性"窗口中，将 **ExecuteCode** 属性的值设置为 **codeActivity_ExecuteCode。**
+    - 在 **CodeActivity1** 的 "**属性**" 窗口中，将 " **ExecuteCode** " 属性的值设置为 " **codeActivity_ExecuteCode**"。
 
-15. 在现有的 using 或 **Imports** 指令 **下** 添加以下内容：
+15. 在现有 **using** 或 **Imports** 指令下添加以下内容：
 
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet1":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet1":::
 
-16. 将 `codeActivity1_ExecuteCode` 替换为以下内容：
+16. `codeActivity1_ExecuteCode`将替换为以下内容：
 
      :::code language="csharp" source="../sharepoint/codesnippet/CSharp/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.cs" id="Snippet2":::
      :::code language="vb" source="../sharepoint/codesnippet/VisualBasic/workflowimportproject1/workflows/spd_task_workflowft/spd task workflow.xoml.vb" id="Snippet2":::
 
 ## <a name="deploy-the-project-and-associate-the-workflow"></a>部署项目并关联工作流
- 接下来，运行 WorkflowImportProject1 将其部署到 SharePoint 站点，然后将工作流与"任务"列表关联，以查看和测试修改后的转换后的工作流。
+ 接下来，运行 WorkflowImportProject1 以将其部署到 SharePoint 站点，然后将该工作流与任务列表关联，以查看和测试已修改的已转换工作流。
 
 #### <a name="to-deploy-the-project-and-associate-the-workflow"></a>部署项目并关联工作流
 
-1. 在 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 中，选择 **F5** 键以运行和部署转换后的工作流项目。
+1. 在中 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] ，选择 **F5** 键以运行并部署转换后的工作流项目。
 
-2. 在"快速启动"栏上， **选择"任务** "链接以显示"任务"列表。
+2. 在快速启动栏上，选择 " **任务** " 链接以显示 "任务" 列表。
 
-3. 在" **列表工具"** 选项卡上，选择" **项** "按钮，然后选择" **新建项"** 按钮。
+3. 在 " **列表工具** " 选项卡上，选择 " **项** " 按钮，然后选择 " **新建项** " 按钮。
 
-     " **任务 - 新建项** "对话框随即打开。
+     此时将打开 " **任务-新建项目** " 对话框。
 
-4. 在" **标题"** 框中，输入 **"新建任务**"，然后选择"保存 **"** 按钮。
+4. 在 " **标题** " 框中，输入 " **新任务**"，然后选择 " **保存** " 按钮。
 
-5. 在"**列表工具"** 选项卡上，选择"**列表**"按钮，然后选择 **"列出设置** 按钮。
+5. 在 "**列表工具**" 选项卡上，选择 "**列表**" 按钮，然后选择 "**列表" 设置**"按钮。
 
-     将显示 **"设置** 页。
+     此时将显示 "**设置列表**" 页。
 
-6. 在"**权限和管理"部分中**，选择"**工作流设置** 链接。
+6. 在 "**权限和管理**" 部分中，选择 "**工作流设置**" 链接。
 
-     将显示 **"工作流设置** 页。
+     此时将显示 "**工作流设置**" 页。
 
-7. 选择" **添加工作流"** 链接。
+7. 选择 " **添加工作流** " 链接。
 
-8. 在"**工作流"** 列表中，选择 **"WorkflowImportProject1 - SPD Workflow Test"。**
+8. 在 **工作流** 列表中，选择 " **WorkflowImportProject1-SPD 工作流测试**"。
 
-9. 在" **名称"** 框中，输入 **"SPD 工作流测试**"，然后选择"确定 **"** 按钮。
+9. 在 " **名称** " 框中，输入 " **SPD 工作流测试**"，然后选择 **"确定"** 按钮。
 
-10. 在"快速启动"栏中，选择" **任务"** 列表。
+10. 在快速启动栏中，选择 " **任务** " 列表。
 
-11. 选择"新建任务"**旁边的箭头**，然后在列表中选择"工作流 **"。**
+11. 选择 " **新建任务**" 旁边的箭头，然后在列表中选择 " **工作流**"。
 
-12. 在 **"启动新工作流"** 部分中，选择 **"SPD 工作流** 测试"的链接，然后选择"启动"按钮以启动工作流。
+12. 在 " **启动新工作流** " 部分中，选择 " **SPD 工作流测试**" 链接，然后选择 " **启动** " 按钮以启动工作流。
 
     > [!NOTE]
-    > 或者，可以通过运行工作流设置向导并将工作流设置为自动关联来自动将工作流与列表关联。
+    > 或者，您可以通过运行工作流设置向导并将工作流设置为 "自动关联"，自动将工作流与列表相关联。
 
-     请注意，工作流执行两个 **操作** ：你的名称显示在任务的 分配到 列中，公告 **列表中** 会显示公告。
+     请注意，工作流执行两个操作：你的名称显示在任务的 " **分配到** " 列中，" **公告** " 列表中会显示一条公告。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [从现有的 SharePoint 网站导入项](../sharepoint/importing-items-from-an-existing-sharepoint-site.md)
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)
 - [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)

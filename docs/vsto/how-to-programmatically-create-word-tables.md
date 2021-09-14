@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式创建 Word 表
-description: 了解如何使用 Tables 集合的 Add 方法在表文档中的指定Microsoft Word表。
+description: 了解如何使用 Tables 集合的 add 方法在 Microsoft Word 文档中的指定范围内添加一个表。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 721828123734b82797fa27f720a9e5e0b7d4126f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122743"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602252"
 ---
 # <a name="how-to-programmatically-create-word-tables"></a>如何：以编程方式创建 Word 表
   <xref:Microsoft.Office.Interop.Word.Tables> 集合是 <xref:Microsoft.Office.Interop.Word.Document>、<xref:Microsoft.Office.Tools.Word.Document>、<xref:Microsoft.Office.Interop.Word.Selection> 和 <xref:Microsoft.Office.Interop.Word.Range> 类的成员，这意味着可以在上述任一上下文中创建表格。 使用 <xref:Microsoft.Office.Interop.Word.Tables> 集合的 <xref:Microsoft.Office.Interop.Word.Tables.Add%2A> 方法在指定范围内添加表格。
@@ -61,7 +61,7 @@ ms.locfileid: "122122743"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet88":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet88":::
 
-## <a name="create-tables-in-vsto-add-ins"></a>在外接程序VSTO创建表
+## <a name="create-tables-in-vsto-add-ins"></a>在 VSTO 外接程序中创建表
 
 ### <a name="to-add-a-table-to-a-document"></a>向文档添加表
 
@@ -94,8 +94,8 @@ ms.locfileid: "122122743"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet88":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet88":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：以编程方式向 Word 表中的单元格添加文本和格式设置](../vsto/how-to-programmatically-add-text-and-formatting-to-cells-in-word-tables.md)
-- [如何：以编程方式将行和列添加到 Word 表](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
-- [如何：以编程方式使用文档属性填充 Word 表](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
-- [解决方案中的可选Office参数](../vsto/optional-parameters-in-office-solutions.md)
+- [如何：以编程方式向 Word 表中添加行和列](../vsto/how-to-programmatically-add-rows-and-columns-to-word-tables.md)
+- [如何：以编程方式用文档属性填充 Word 表](../vsto/how-to-programmatically-populate-word-tables-with-document-properties.md)
+- [Office 解决方案中的可选参数](../vsto/optional-parameters-in-office-solutions.md)

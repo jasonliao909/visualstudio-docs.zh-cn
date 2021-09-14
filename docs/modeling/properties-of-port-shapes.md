@@ -15,11 +15,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 3aff5311231069b2fa51feebd1124f2b20e8b707
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040120"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663906"
 ---
 # <a name="properties-of-port-shapes"></a>端口形状的属性
 可以在生成的设计器中使用端口形状来表示域类。
@@ -28,11 +28,11 @@ ms.locfileid: "122040120"
 
  端口形状具有下表中列出的属性。
 
-|属性|说明|默认|
+|Property|说明|默认|
 |-|-|-|
 |填充颜色|此形状的填充颜色。|White|
 |填充渐变模式|此形状的填充渐变模式。|横向|
-|几何图形|此形状的几何图形 (矩形、圆角矩形、椭圆形或圆圈) 。|Rectangle|
+|Geometry|此形状的几何图形 (矩形、圆角矩形、椭圆形或圆圈) 。|Rectangle|
 |具有默认连接点|如果为 `True` ，则形状将使用生成的设计器中的顶部、底部、左侧和右侧连接点。|错误|
 |轮廓颜色|此形状的边框颜色。|黑色|
 |空心虚线样式|此形状的边框虚线样式 (纯色、破折号、点、DashDot、DashDotDot 或自定义) 。|单色|
@@ -56,6 +56,6 @@ ms.locfileid: "122040120"
 |固定工具提示文本|用于固定工具提示的文本。|\<none>|
 |帮助关键字|用于索引此形状的 F1 帮助的关键字。|\<none>|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))

@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d56192fed9138e6edd8f18753893b195c174c5b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041719"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601035"
 ---
 # <a name="load-vspackages"></a>加载 VSPackage
 只有在需要 VSPackage Visual Studio，VSPackage 才加载到该组件中。 例如，当 VSPackage 使用项目工厂Visual Studio VSPackage 实现的服务时，将加载 VSPackage。 此功能称为延迟加载，它尽可能用于提高性能。
@@ -74,5 +74,5 @@ ms.locfileid: "122041719"
 
      不应将强制加载用于 VSPackage 通信。 请 [改为使用 并提供](../extensibility/using-and-providing-services.md) 服务。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [VSPackages](../extensibility/internals/vspackages.md)

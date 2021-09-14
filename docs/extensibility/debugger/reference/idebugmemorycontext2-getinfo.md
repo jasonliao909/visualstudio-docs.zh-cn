@@ -18,12 +18,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: b2e8c0e1f8171a83fcbbe3358476edcb10b6f1f0b2f2c1657a794e92c0283706
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 799d161c82a0d84b524256c00788e1664e1a0d7a
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121433822"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600882"
 ---
 # <a name="idebugmemorycontext2getinfo"></a>IDebugMemoryContext2::GetInfo
 检索描述上下文的 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 结构。
@@ -44,7 +44,7 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中 [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md) 枚举中的标志的组合，指示要填写 [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md) 结构的哪些字段。
 
@@ -54,7 +54,7 @@ int GetInfo(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugMemoryContext2](../../../extensibility/debugger/reference/idebugmemorycontext2.md)
 - [CONTEXT_INFO_FIELDS](../../../extensibility/debugger/reference/context-info-fields.md)
 - [CONTEXT_INFO](../../../extensibility/debugger/reference/context-info.md)

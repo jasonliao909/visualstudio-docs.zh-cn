@@ -14,11 +14,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - dotnet
 ms.openlocfilehash: b93e0cb2a3b74fe26b60094eb74d010e0b1f77ad
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122162001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601252"
 ---
 # <a name="walkthrough-use-static-code-analysis-to-find-code-defects"></a>演练：使用静态代码分析查找代码缺陷
 
@@ -167,12 +167,12 @@ ms.locfileid: "122162001"
 
     1. 在"错误列表" **中选择警告**。
 
-    1. 从右键单击菜单 (上下文菜单) ，选择"禁止显示  >  **抑制文件"。**
+    1. 从右键单击菜单 (菜单) ，选择"禁止显示  >  **抑制文件"。**
 
 1. 重新生成项目。
 
      项目生成时没有任何警告或错误。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 [托管代码分析](../code-quality/code-analysis-for-managed-code-overview.md)

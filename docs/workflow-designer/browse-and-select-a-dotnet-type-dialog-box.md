@@ -15,15 +15,15 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - dotnet
 ms.openlocfilehash: b0258a69738f340ca8a2a58d1c3b900171625e5d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122068126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602208"
 ---
 # <a name="browse-and-select-a-net-type-dialog-box"></a>“浏览并选择 .NET 类型”对话框
 
-在"属性"窗口、对话框或设计器（如变量设计器）中，从数据类型列表中选择"浏览类型"时，是"浏览"和"选择 **.NET** 类型"对话框 (缩写形式称为"类型浏览器") 。 在此对话框中，可以从程序集和项目的树视图中选择类型。
+在"属性"窗口、对话框或设计器（如变量设计器）中，从数据类型列表中选择"浏览类型"时，是"浏览"和"选择 **.NET** 类型"对话框 (在缩写形式中称为"类型浏览器") 。 在此对话框中，可以从程序集和项目的树视图中选择类型。
 
 在很多用户方案中都使用此对话框，这些方案包括：
 
@@ -58,7 +58,7 @@ ms.locfileid: "122068126"
 
 ## <a name="types-displayed-in-the-type-browser"></a>类型浏览器中显示的类型
 
-类型浏览器中显示的类型可能因启动类型浏览器的方式而有所不同。 如果类型浏览器从 **vs2010** 中的工作流项目启动，则默认情况下会显示引用的程序集和引用项目的所有类型。 如果类型浏览器从 **vs2010** 项目系统 (外部启动，例如，在重新hosted工作流应用程序或独立工作流文件) 中启动，则默认情况下，将显示 AppDomain 中加载的所有程序集中的类型。
+类型浏览器中显示的类型可能因启动类型浏览器的方式而有所不同。 如果类型浏览器从 **vs2010** 中的工作流项目启动，则默认情况下会显示引用的程序集和引用项目的所有类型。 如果类型浏览器从 **vs2010** 项目系统 (外部启动，例如，在重新hosted工作流应用程序或独立工作流文件) 中启动，则默认情况下会显示 AppDomain 中加载的所有程序集中的类型。
 
 可以按活动设计器开发人员筛选类型浏览器中的类型。 对于任何给定的活动，您可能只看到一个类型子集。 例如，在 <xref:System.Activities.Statements.TryCatch> 活动中，只有从 <xref:System.Exception> 派生的类型显示在类型浏览器中。
 
@@ -76,6 +76,6 @@ ms.locfileid: "122068126"
 
 选择服务协定类型时，类型浏览器只显示具有 <xref:System.ServiceModel.ServiceContractAttribute> 特性的类型。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用活动设计器](control-flow-activity-designers.md)

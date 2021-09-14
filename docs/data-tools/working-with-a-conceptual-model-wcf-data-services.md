@@ -16,11 +16,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 84c5ae1cf5bff93389477071892aa420081731e9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031505"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601047"
 ---
 # <a name="work-with-a-conceptual-model-wcf-data-services"></a>使用概念模型 (WCF Data Services) 
 
@@ -48,7 +48,7 @@ ms.locfileid: "122031505"
 |[如何：添加、修改和删除实体](/dotnet/framework/data/wcf/how-to-add-modify-and-delete-entities-wcf-data-services)|演示如何在数据服务中创建、更新和删除实体数据。|
 |[如何：定义实体关系](/dotnet/framework/data/wcf/how-to-define-entity-relationships-wcf-data-services)|演示如何在数据服务中创建或更改关系。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [Visual Studio 中的 Windows Communication Foundation 服务和 WCF 数据服务](../data-tools/windows-communication-foundation-services-and-wcf-data-services-in-visual-studio.md)
 - [查询数据服务](/dotnet/framework/data/wcf/querying-the-data-service-wcf-data-services)

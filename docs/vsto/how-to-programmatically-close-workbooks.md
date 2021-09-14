@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 21b789a2a722e78d0a89f7db9b1eaeaf28d9db58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099888"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602257"
 ---
 # <a name="how-to-programmatically-close-workbooks"></a>如何：以编程方式关闭工作簿
   你可以关闭活动工作簿，也可以指定关闭某个工作簿。
@@ -55,7 +55,7 @@ ms.locfileid: "122099888"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/trin_vstcoreexcelautomationaddin/ThisAddIn.cs" id="Snippet2":::
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/trin_vstcoreexcelautomationaddin/ThisAddIn.vb" id="Snippet2":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [如何：以编程方式保存工作簿](../vsto/how-to-programmatically-save-workbooks.md)
 - [如何：以编程方式打开工作簿](../vsto/how-to-programmatically-open-workbooks.md)

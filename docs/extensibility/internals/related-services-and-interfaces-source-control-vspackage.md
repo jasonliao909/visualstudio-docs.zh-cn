@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a51c5894234aba9b0689ee5ff940720ebab4c3e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042070"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664315"
 ---
 # <a name="related-services-and-interfaces-source-control-vspackage"></a>相关服务和界面（源代码管理 VSPackage）
 
@@ -36,13 +36,13 @@ ms.locfileid: "122042070"
 
  接口包括：
 
-- 必需：源代码 (VSPackage、源代码管理存根、项目) 实现 接口。
+- 必需：源代码 (VSPackage、源代码管理存根、项目) 必须实现 接口。
 
 - 建议：实体应实现此接口;否则，源代码管理功能可能会受到限制。
 
 - 可选：实体可以实现此接口以提供更丰富的功能集。
 
-| 接口 | 用途 | 实现者 | 实现？ |
+| 接口 | 目的 | 实现者 | 实现？ |
 | - | - |--------------------------|-------------|
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsQueryEditQuerySave2> | 编辑器在修改或保存文件之前调用此接口。 如果签出失败，源代码管理 VSPackage 可以签出文件或拒绝操作。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManager2> | 此接口为项目提供基本的源代码管理功能，例如向源代码管理注册和注销项目，以及提供对基本源代码管理字形的支持。 | 源代码管理 VSPackage | 必需 |
@@ -50,7 +50,7 @@ ms.locfileid: "122042070"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccProvider> | 集成模块使用此接口设置当前活动 VSPackage。 | 源代码管理 VSPackage | 必需 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments2> | 此接口基于订阅模型。 任何 VSPackage 都可以表明它想要接收文档事件，并且 shell 会就即将发生的事件提供建议。 它由 实现并处理，这反过来又将实现 的事件 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] `IVsTrackProjectDocumentsEvents2` 传递给 VSPackage。 | 源代码管理存根 | 必需 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocuments3> | 此接口提供批处理、同步读/写操作和高级 `OnQueryAddFiles` 方法。 | 源代码管理存根 | 必需 |
-| <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> | **解决方案资源管理器** 将新文件添加到项目中，或者重命名或删除项目的文件和文件夹时，项目和项目将调用此接口。 源代码管理 VSPackage 可以签出项目文件或取消操作。 | 源代码管理 VSPackage | 建议 |
+| <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents2> | **解决方案资源管理器** 将新文件添加到项目中，或者重命名或删除项目和文件夹时，项目和项目将调用此接口。 源代码管理 VSPackage 可以签出项目文件或取消操作。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsTrackProjectDocumentsEvents3> | **解决方案资源管理器** 和项目调用此接口，以响应对 IVstrackProjectDocuments3 接口的方法的调用。 源代码管理 VSPackage 可以跟踪批处理操作、同步读/写操作，以及使用更高级 `OnQueryAddFiles` 的方法。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccEnlistmentPathTranslation> | 此接口为 Web 项目提供登记管理支持。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSccManagerTooltip> | 此接口用于检索项目中源代码管理的文件的工具提示。 | 源代码管理 VSPackage | 可选 |
@@ -67,5 +67,5 @@ ms.locfileid: "122042070"
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistSolutionOpts> | 此接口用于将源代码管理设置保存在解决方案选项 (.suo) 文件中。 这可能包括特定于用户的源代码管理设置，例如当前用户的登记位置。 | 源代码管理 VSPackage | 建议 |
 | <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionEvents3> | 此接口用于监视事件，以便执行一些操作，例如，在关闭解决方案之前签入项目文件，或在打开项目时从源代码管理获取新文件。 | 源代码管理 VSPackage | 建议 |
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [设计元素](../../extensibility/internals/source-control-vspackage-design-elements.md)

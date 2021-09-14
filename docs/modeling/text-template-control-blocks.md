@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 286bc3b1eba71f3c875e3cdf519a01464b19c6aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116612"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663866"
 ---
 # <a name="text-template-control-blocks"></a>文本模板控制块
 控制块可使你在文本模板中编写代码以便改变输出。 有三种类型的控制块，通过其左大括号来区分：

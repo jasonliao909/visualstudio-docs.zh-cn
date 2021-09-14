@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
-ms.openlocfilehash: 5f9d5ca146b3e44b30e73365df9c37cb06bb9b24204f01dd09828b1756c92341
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ad634ddce8f42c8bf5e183ebdf8f75389553dba5
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663811"
 ---
 # <a name="breakpoint-related-methods"></a>与断点相关的方法
 调试引擎 (DE) 必须支持断点设置。 Visual Studio 调试支持以下类型的断点：
@@ -85,5 +85,5 @@ ms.locfileid: "121434615"
 
  在断点处查看源代码需要实现 [IDebugStackFrame2：： GetDocumentContext](../../extensibility/debugger/reference/idebugstackframe2-getdocumentcontext.md) 和/或 [IDebugStackFrame2：： GetCodeContext](../../extensibility/debugger/reference/idebugstackframe2-getcodecontext.md)方法的方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

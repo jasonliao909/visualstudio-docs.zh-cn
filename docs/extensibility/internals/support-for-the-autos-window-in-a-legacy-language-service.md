@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d91cad3e47ca664cfb1f41215da3197774e3840e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086581"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600710"
 ---
 # <a name="support-for-the-autos-window-in-a-legacy-language-service"></a>支持旧版语言服务中的 "自动" 窗口
 

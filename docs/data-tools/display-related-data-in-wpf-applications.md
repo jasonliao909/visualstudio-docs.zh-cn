@@ -20,11 +20,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: c5cf789d120249ca283d655f59f5058a7b28f207
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161910"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601168"
 ---
 # <a name="display-related-data-in-wpf-applications"></a>在 WPF 应用程序中显示相关数据
 
@@ -40,11 +40,11 @@ ms.locfileid: "122161910"
 
 3. 打开 WPF 设计器，并确保设计器包含一个容器，该容器是"数据源"窗口中项 **的有效放置** 目标。
 
-     有关有效放置目标的信息，请参阅将[WPF 控件绑定到](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)Visual Studio。
+     有关有效放置目标详细信息，请参阅将[WPF 控件绑定到](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)Visual Studio。
 
 4. 在 **"数据源"** 窗口中，展开表示关系中的父表或对象的节点。 父表或对象位于一对多关系的"一"端。
 
-5. 将父节点 (父节点或父节点中) **项从"** 数据源"窗口拖动到设计器中的有效放置目标上。
+5. 将父节点 (父节点或父节点中) 项从"数据源"窗口拖动到设计器中的有效放置目标上。
 
      Visual Studio生成 XAML，为拖动的每个项创建新的数据绑定控件。 XAML 还会将父表或对象的新 添加到 <xref:System.Windows.Data.CollectionViewSource> 放置目标的资源。 对于某些数据源，Visual Studio生成代码以将数据加载到父表或对象中。 有关详细信息，请参阅将[WPF 控件绑定到](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)Visual Studio。
 
@@ -58,7 +58,7 @@ ms.locfileid: "122161910"
 
      ![显示关系的数据源窗口](../data-tools/media/datasources2.gif)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将 WPF 控件绑定到数据](../data-tools/bind-wpf-controls-to-data-in-visual-studio.md)
 - [在 WPF 应用程序中创建查找表](../data-tools/create-lookup-tables-in-wpf-applications.md)

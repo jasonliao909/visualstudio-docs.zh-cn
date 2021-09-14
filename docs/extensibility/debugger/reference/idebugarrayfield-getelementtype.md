@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 346ca568371d1ea0dfe04d6f6854e13bb8c23ab6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600957"
 ---
 # <a name="idebugarrayfieldgetelementtype"></a>IDebugArrayField::GetElementType
 获取数组中元素的类型。
@@ -41,7 +41,7 @@ int GetElementType(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppType`\
 [out]返回描述 [元素类型的 IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 
@@ -51,6 +51,6 @@ int GetElementType(
 ## <a name="remarks"></a>备注
  [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)对象假定数组的所有元素都是同一类型。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

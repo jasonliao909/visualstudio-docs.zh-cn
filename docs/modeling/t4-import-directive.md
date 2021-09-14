@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 3f8f34f45e18000de9cea09c8c58a6e021b52134
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034001"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663881"
 ---
 # <a name="t4-import-directive"></a>T4 导入指令
 
@@ -52,6 +52,6 @@ The file contains: <#=  fileContent #>
 
 - DSL 的命名空间
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [T4 程序集指令](../modeling/t4-assembly-directive.md)

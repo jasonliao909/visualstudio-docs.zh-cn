@@ -13,11 +13,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ea74eb264f6706fb02b03304e50baa4ee86207f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042615"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600817"
 ---
 # <a name="task_state_canceled-field"></a>TASK_STATE_CANCELED 字段
 任务在达到 "正在运行" 状态之前已被取消，或已确认取消并完成，但未发生异常。
@@ -37,5 +37,5 @@ ms.locfileid: "122042615"
 ## <a name="remarks"></a>备注
  如果 [m_stateFlags](../../extensibility/debugger/m-stateflags-field.md) 字段包含此值，则 <xref:System.Threading.Tasks.Task.Status%2A> 属性将返回 <xref:System.Threading.Tasks.TaskStatus?displayProperty=fullName> 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Task 类](../../extensibility/debugger/task-class-internal-members.md)

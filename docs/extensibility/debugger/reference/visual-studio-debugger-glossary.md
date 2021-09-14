@@ -1,6 +1,6 @@
 ---
 title: Visual Studio调试器词汇表|Microsoft Docs
-description: 本文介绍调试 SDK 中Visual Studio术语，例如绑定断点、因果关系和代码上下文。
+description: 本文介绍调试 SDK 中使用的Visual Studio术语，例如绑定断点、因果关系和代码上下文。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: bcbe68b0e8fd68d966bd1ed03d1b90aade9e579b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132314"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602373"
 ---
 # <a name="visual-studio-debugger-glossary"></a>Visual Studio 调试器词汇表
 以下是调试 [!INCLUDE[vsprvs](../../../code-quality/includes/vsprvs_md.md)] SDK 中使用的术语。
@@ -41,7 +41,7 @@ ms.locfileid: "122132314"
 
  错误断点 描述挂起断点中的错误的抽象。 错误断点可能会描述挂起断点的位置、与挂起断点关联的表达式或阻止挂起断点绑定到代码位置的其他信息中的错误。
 
- 计算上下文 为表达式计算提供编程上下文的抽象。 通常，评估上下文是一个范围。 在表达式上下文中执行表达式计算时，表达式上下文提供与创建点匹配的作用域规则。 例如，在堆栈帧中创建的表达式上下文将提供用于计算局部变量、方法参数、类成员 (（如果) 变量）的上下文。
+ 计算上下文 为表达式计算提供编程上下文的抽象。 通常，评估上下文是一个范围。 在表达式上下文中执行表达式计算时，表达式上下文提供与创建点匹配的作用域规则。 例如，在堆栈帧中创建的表达式上下文将提供上下文，用于计算局部变量、方法参数、类成员 (（) 变量）。
 
  已截获异常 调试引擎截获的异常，即使当前堆栈帧中不存在异常处理机制。
 
@@ -61,7 +61,7 @@ ms.locfileid: "122132314"
 
   程序：运行于特定运行时体系结构中的单个命名空间。 另请参阅 *处理*。
 
-  会话调试管理器 (SDM) 管理任意数目的调试引擎，这些引擎在任意数目的计算机上调试多个进程中任意数目的程序。 在基本级别，SDM 是调试引擎的多路复用器。 此外，SDM 为 IDE 提供调试会话的统一视图。
+  会话调试管理器 (SDM) 管理任意数目的调试引擎在任意数目的计算机上调试多个进程中任意数目的程序。 在基本级别，SDM 是调试引擎的多路复用器。 此外，SDM 为 IDE 提供调试会话的统一视图。
 
   stack frame 表示特定帧和嵌套函数调用的特定级别的计算状态。
 
@@ -69,5 +69,5 @@ ms.locfileid: "122132314"
 
   警告断点 描述挂起断点中的警告的抽象。 警告断点描述挂起断点尚未绑定到代码位置的原因。 这可能是由于挂起断点描述的位置的代码尚未加载，或者出于某种其他原因。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Visual Studio 调试器可扩展性](../../../extensibility/debugger/visual-studio-debugger-extensibility.md)

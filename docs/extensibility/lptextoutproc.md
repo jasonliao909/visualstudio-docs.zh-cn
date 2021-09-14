@@ -20,11 +20,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: e142922aa91fee7b5fc3d3f816652b6c1dca2bb9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102332"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664277"
 ---
 # <a name="lptextoutproc"></a>LPTEXTOUTPROC
 
@@ -42,7 +42,7 @@ typedef LONG (*LPTEXTOUTPROC) (
 );
 ```
 
-## <a name="parameters"></a>Parameters
+## <a name="parameters"></a>parameters
 
 display_string
 
@@ -74,7 +74,7 @@ mesg_type
 ## <a name="example"></a>示例
  假设 IDE 调用了包含二十个文件名的 [SccGet](../extensibility/sccget-function.md) 。 源代码管理插件希望阻止在文件获取过程中取消该操作。 获取每个文件后，它会调用并向 `lpTextOutProc` 其传递每个文件的状态信息，并在 `SCC_MSG_DOCANCEL` 消息没有要报告的状态时发送消息。 如果插件从 IDE 中收到返回值 `SCC_MSG_RTN_CANCEL` ，则会立即取消 get 操作，以便不会再检索文件。
 
-## <a name="structures"></a>结构
+## <a name="structures"></a>結構
 
 ### <a name="sccmsgdataiscancelled"></a><a name="LinkSccMsgDataIsCancelled"></a> SccMsgDataIsCancelled
 
@@ -143,6 +143,6 @@ LONG SendStatusMessage(
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDE 实现的回调函数](../extensibility/callback-functions-implemented-by-the-ide.md)
 - [源代码管理插件](../extensibility/source-control-plug-ins.md)

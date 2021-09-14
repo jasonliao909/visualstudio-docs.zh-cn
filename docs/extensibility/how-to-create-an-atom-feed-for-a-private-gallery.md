@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 8ff57a36930ebf1ad248480cd7ea15a50440529b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086945"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600774"
 ---
 # <a name="how-to-create-an-atom-feed-for-a-private-gallery"></a>如何：创建专用库的 Atom 馈送
 你可以创建 Atom (RSS) 源到包含扩展的 intranet 位置，并将源添加到作为专用库的 **扩展和更新** 。 有关详细信息，请参阅[专用库](../extensibility/private-galleries.md)。
@@ -75,5 +75,5 @@ ms.locfileid: "122086945"
 
  请注意，这两个链接标记指的是生成的图像文件夹中的屏幕截图。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [专用库](../extensibility/private-galleries.md)

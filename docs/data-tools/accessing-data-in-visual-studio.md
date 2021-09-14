@@ -16,28 +16,28 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 0b6f79c38b599a66a9609bd88399f075f54f59dd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122154974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601243"
 ---
 # <a name="work-with-data-in-visual-studio"></a>在 Visual Studio 中处理数据
 
-在 Visual Studio 中，可以创建连接到几乎任何数据库产品或服务、任何格式、任何位置（本地计算机、本地区域网络或公有云、私有云或混合云）的数据的应用程序。
+在 Visual Studio 中，可以创建应用程序，以几乎任何格式、任何格式、任何位置（在本地计算机、本地区域网络或公有云、私有云或混合云中）连接到数据。
 
-对于 JavaScript、Python、PHP、Ruby 或 C++ 中的应用程序，通过获取库和编写代码，可以像连接任何其他操作一样连接到数据。 对于 .NET 应用程序，Visual Studio提供的工具可用于浏览数据源、创建对象模型以存储和操作内存中的数据，以及将数据绑定到用户界面。 Microsoft Azure .NET、Java、Node.js、PHP、Python、Ruby 和移动应用的 SDK，以及 Visual Studio 中用于连接到 Azure 存储 的工具。
+对于 JavaScript、Python、PHP、Ruby 或 C++ 中的应用程序，通过获取库和编写代码，可以像连接任何其他操作一样连接到数据。 对于 .NET 应用程序，Visual Studio提供的工具可用于浏览数据源、创建对象模型以存储和操作内存中的数据，以及将数据绑定到用户界面。 Microsoft Azure .NET、Java、Node.js、PHP、Python、Ruby 和移动应用的 SDK，以及 Visual Studio 中用于连接到 Azure 存储。
 
 ::: moniker range="vs-2017"
-以下列表只显示了许多数据库和存储系统中的一些，可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 使用[2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio中的 Azure 开发工作负载，可以直接从 Visual Studio。 
+以下列表只显示了许多数据库和存储系统中的一些，这些系统可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 通过[2017](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download) Visual Studio中的 Azure 开发工作负载，可以直接从 Visual Studio。 
 ::: moniker-end
 ::: moniker range=">=vs-2019"
-以下列表只显示了许多数据库和存储系统中的一些，可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 使用[2019](https://visualstudio.microsoft.com/downloads) Visual Studio 中的 Azure 开发工作负载，可以直接从 Visual Studio。 
+以下列表只显示了许多数据库和存储系统中的一些，这些系统可以从 Visual Studio。 服务[Microsoft Azure](https://azure.microsoft.com/)包括基础数据存储的所有预配和管理的数据服务。 通过[2019](https://visualstudio.microsoft.com/downloads) Visual Studio中的 Azure 开发工作负载，可以直接从 Visual Studio。 
 ::: moniker-end
 
 ![Azure 开发工作负载](media/azure-development-workload.png)
 
-此处列出的大多数其他 SQL 和 NoSQL 数据库产品可以托管在本地计算机上、本地网络上或Microsoft Azure虚拟机上。 如果在虚拟机中托管Microsoft Azure，则你负责管理数据库本身。
+此处列出的大多数其他 SQL 和 NoSQL 数据库产品可以托管在本地计算机、本地网络或虚拟机Microsoft Azure中。 如果在虚拟机中托管Microsoft Azure，则你负责管理数据库本身。
 
 **Microsoft Azure**
 
@@ -73,34 +73,34 @@ ms.locfileid: "122154974"
 
 ::: moniker range="vs-2017"
 
-许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 上的产品/服务，NuGet 程序包管理器在 Visual Studio (Tools NuGet 程序包管理器 Manage   >    >  **NuGet Packages for Solution) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，[或者导航到"工具扩展和更新"，](https://marketplace.visualstudio.com/)然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
+许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 产品/服务，NuGet 程序包管理器在 Visual Studio (**Tools** NuGet 程序包管理器  >    >  **管理解决方案NuGet包) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，或者导航到"工具[扩展和更新](https://marketplace.visualstudio.com/)"，然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 上的产品/服务，NuGet 程序包管理器在 Visual Studio (Tools NuGet 程序包管理器 Manage   >    >  **NuGet Packages for Solution) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，或者导航[到"扩展""管理扩展](https://marketplace.visualstudio.com/)"，然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
+许多数据库供应商和第三方支持Visual Studio包进行NuGet集成。 可以浏览 nuget.org 产品/服务，NuGet 程序包管理器在 Visual Studio (**Tools** NuGet 程序包管理器  >    >  **管理解决方案NuGet包) 。** 其他数据库产品与 Visual Studio作为扩展集成。 可以在 Visual Studio Marketplace 中浏览这些产品/服务，或者导航[到"扩展""管理扩展](https://marketplace.visualstudio.com/)"，然后在对话框的左窗格中选择"联机  >  "。  有关详细信息，请参阅兼容的[数据库系统Visual Studio。](../data-tools/installing-database-systems-tools-and-samples.md)
 
 ::: moniker-end
 
 > [!NOTE]
-> 对 SQL Server 2005 的延长支持已于 2016 年 4 月 12 日结束。 无法保证 2015 Visual Studio及更高版本的数据工具将继续在 2005 SQL Server使用。 有关详细信息，请参阅[2005](https://www.microsoft.com/sql-server/sql-server-2005)年 5 月的支持终止SQL Server公告。
+> 对 SQL Server 2005 的延长支持已于 2016 年 4 月 12 日结束。 无法保证 2015 Visual Studio及更高版本的数据工具将继续与 2005 SQL Server一起工作。 有关详细信息，请参阅[2005](https://www.microsoft.com/sql-server/sql-server-2005)年 5 月的支持终止SQL Server公告。
 
 ## <a name="net-languages"></a>.NET 语言
 
-所有 .NET 数据访问（包括在 .NET Core 中）都基于 ADO.NET，ADO.NET 是一组类，用于定义用于访问任何类型的数据源（关系数据源和非关系数据源）的接口。 Visual Studio具有多个工具和设计器，它们 ADO.NET 帮助连接到数据库、操作数据以及向用户呈现数据。 本部分中的文档介绍如何使用这些工具。 还可以直接针对命令 ADO.NET 编程。 有关直接调用 ADO.NET API 的信息[，请参阅](/dotnet/framework/data/adonet/index)ADO.NET。
+所有 .NET 数据访问（包括在 .NET Core 中）都基于 ADO.NET，ADO.NET 是一组类，用于定义用于访问任何类型的数据源（关系数据源和非关系数据源）的接口。 Visual Studio多个工具和设计器，它们 ADO.NET 帮助连接到数据库、操作数据以及向用户呈现数据。 本部分中的文档介绍如何使用这些工具。 还可以直接针对命令 ADO.NET 编程。 有关直接调用 ADO.NET API 的信息[，请参阅](/dotnet/framework/data/adonet/index)ADO.NET。
 
-有关与数据相关的数据访问 ASP.NET，[请参阅在](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上使用数据。 有关将 实体框架 ASP.NET MVC 的教程，入门[MVC 5 实体框架 Code First 6 的教程](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
+有关与数据相关的数据访问 ASP.NET，[请参阅在](https://www.asp.net/web-forms/overview/presenting-and-managing-data)ASP.NET 站点上使用数据。 有关将 实体框架 与 MVC ASP.NET 的教程，请参阅入门[MVC 5 实体框架 Code First 6 的教程](/aspnet/mvc/overview/getting-started/getting-started-with-ef-using-mvc/creating-an-entity-framework-data-model-for-an-asp-net-mvc-application)。
 
 通用 Windows 平台 (C#) UWP Visual Basic 应用可以使用 用于 .NET 的 Microsoft Azure SDK 访问 Azure 存储 和其他 Azure 服务。 Windows。Web.HttpClient 类允许与任何 RESTful 服务通信。 有关详细信息，请参阅如何使用 Windows[连接到 HTTP 服务器。Web.Http](/previous-versions/windows/apps/dn469430(v=win.10))。
 
-对于本地计算机上数据存储，建议的方法是使用 SQLite，该 SQLite 与应用在同一进程中运行。 如果需要在 ORM 层 (对象) 映射，可以使用实体框架。 有关详细信息，[请参阅开发人员中心](/windows/uwp/data-access/index)Windows数据访问。
+对于本地计算机上数据存储，建议的方法是使用 SQLite，该 SQLite 与应用在同一进程中运行。 如果需要 ORM 层 (对象) 映射，可以使用实体框架。 有关详细信息，请参阅开发人员[中心](/windows/uwp/data-access/index)Windows数据访问。
 
 如果要连接到 Azure 服务，请务必下载最新的 [Azure SDK 工具](https://azure.microsoft.com/downloads/)。
 
 ### <a name="data-providers"></a>数据提供程序
 
-若要在数据库中使用 ADO.NET，该数据库必须具有自定义 ADO.NET 数据提供程序 *，* 否则必须公开 ODBC 或 OLE DB接口。 Microsoft 提供了[适用于 ADO.NET](/dotnet/framework/data/adonet/ado-net-overview)产品SQL Server ODBC 和 OLE DB 提供程序的列表。
+若要在数据库中使用 ADO.NET，该数据库必须具有自定义 ADO.NET *数据提供程序，* 否则必须公开 ODBC 或 OLE DB接口。 Microsoft 提供了[适用于](/dotnet/framework/data/adonet/ado-net-overview)ADO.NET 产品SQL Server以及 ODBC 和 OLE DB 提供程序的列表。
 
 ### <a name="data-modeling"></a>数据建模
 
@@ -116,11 +116,11 @@ ms.locfileid: "122154974"
 
 ## <a name="native-c"></a>本机 C++
 
-在大多数情况下，连接到 SQL Server 的 C++ 应用程序® [Microsoft SQL Server ODBC Driver 13.1。](https://www.microsoft.com/download/details.aspx?id=53339) 如果服务器已链接，OLE DB是必需的，并且对于使用[SQL Server Native Client。](/sql/relational-databases/native-client/sql-server-native-client) 可以使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 访问其他数据库，也可以OLE DB驱动程序。 ODBC 是当前的标准数据库接口，但大多数数据库系统都提供无法通过 ODBC 接口访问的自定义功能。 OLE DB是一种旧版 COM 数据访问技术，仍受支持，但不建议用于新应用程序。 有关详细信息，请参阅 [Visual C++ 中的数据访问](/cpp/data/data-access-in-cpp)。
+在大多数情况下，连接到 SQL Server 的 C++ 应用程序® [Microsoft SQL Server ODBC Driver 13.1。](https://www.microsoft.com/download/details.aspx?id=53339) 如果服务器已链接，OLE DB是必需的，并且对于 ，请使用[SQL Server Native Client。](/sql/relational-databases/native-client/sql-server-native-client) 可以使用 [ODBC](/sql/odbc/microsoft-open-database-connectivity-odbc?view=sql-server-2017&preserve-view=true) 访问其他数据库，也可以OLE DB驱动程序。 ODBC 是当前的标准数据库接口，但大多数数据库系统都提供无法通过 ODBC 接口访问的自定义功能。 OLE DB是一种旧版 COM 数据访问技术，仍受支持，但不建议用于新应用程序。 有关详细信息，请参阅 [Visual C++ 中的数据访问](/cpp/data/data-access-in-cpp)。
 
 使用 REST 服务的 C++ 程序可以使用 [C++ REST SDK](https://github.com/Microsoft/cpprestsdk)。
 
-使用客户端 的 C++ Microsoft Azure 存储可以使用[Microsoft Azure 存储 客户端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
+使用客户端 的 C++ Microsoft Azure 存储可以使用 Microsoft Azure 存储[客户端](https://www.nuget.org/packages/Microsoft.Azure.Storage.CPP)。
 
 数据建模 &mdash; Visual Studio不提供 C++ 的 ORM 层。 [ODB](https://www.codesynthesis.com/products/odb/) 是适用于 C++ 的常用开源 ORM。
 

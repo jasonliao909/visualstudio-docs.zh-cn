@@ -20,11 +20,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: b8376b7f5fa54f7c51ae9f55841778c8cbcdbdf4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034079"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663855"
 ---
 # <a name="use-code-maps-to-debug-your-applications"></a>使用代码图调试你的应用程序
 
@@ -145,7 +145,7 @@ ms.locfileid: "122034079"
 
  现在，你已经完成了调查。 你通过映射代码成功找到并解决了问题。 你也拥有可帮助你浏览代码的代码图，请记住你所学的内容并演示你用于解决此问题的步骤。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [调试时映射调用堆栈上的方法](../debugger/map-methods-on-the-call-stack-while-debugging-in-visual-studio.md)
 - [代码可视化](../modeling/visualize-code.md)

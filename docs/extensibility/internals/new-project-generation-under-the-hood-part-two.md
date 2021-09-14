@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 56e1fa13846525221ec96dca3a8b744590e1dc8d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600712"
 ---
 # <a name="new-project-generation-under-the-hood-part-two"></a>生成新项目：揭秘，第 2 部分
 
@@ -156,7 +156,7 @@ namespace Simple
 </ItemGroup>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [生成新项目：揭秘，第 1 部分](../../extensibility/internals/new-project-generation-under-the-hood-part-one.md)
 - [MSBuild](../../msbuild/msbuild.md)

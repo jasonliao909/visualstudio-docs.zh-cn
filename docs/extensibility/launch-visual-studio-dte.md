@@ -1,6 +1,6 @@
 ---
 title: 使用 DTE 启动 Visual Studio
-description: 了解如何使用 DTE 启动Visual Studio，以支持主版本并行安装。 本文包含一个代码示例。
+description: 了解如何使用 DTE Visual Studio启动并行安装，以支持主版本并行安装。 本文包含一个代码示例。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 04/26/2019
@@ -12,11 +12,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1cea6b082a5cdb51f0de2053bbc7912cd32ce500
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102358"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601036"
 ---
 # <a name="launch-visual-studio-using-dte"></a>使用 DTE 启动 Visual Studio
 
@@ -30,13 +30,13 @@ ms.locfileid: "122102358"
 
 1. 为应用程序 **创建新的控制台** 应用.NET Framework。
 
-2. 安装[Microsoft.VisualStudio.Setup.Configuration。互操作](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/)NuGet包并添加对程序集的引用。
+2. 安装[Microsoft.VisualStudio.Setup.Configuration.Interop](https://www.nuget.org/packages/Microsoft.VisualStudio.Setup.Configuration.Interop/) NuGet包并添加对程序集的引用。
 
 3. 添加对 EnvDTE 的引用。
 
 4. 将 [下面的示例代码](#example-code) 粘贴到 *Program.cs* 文件中。
 
-5. 按 **F5** 运行程序。 在程序退出Visual Studio应看到 2019 年打开。
+5. 按 **F5** 运行程序。 在程序退出Visual Studio应会看到 2019 年打开。
 
 ## <a name="example-code"></a>示例代码
 
@@ -182,7 +182,7 @@ namespace ConsoleLauncherApp
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [找到 Visual Studio](locating-visual-studio.md)
 - [演练：通过编辑器扩展访问 DTE 对象](walkthrough-accessing-the-dte-object-from-an-editor-extension.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 8317bf8374aaff625401f11c576a77d34112630b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119212"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600899"
 ---
 # <a name="idebugdocumenttextevents2onupdatetextattributes"></a>IDebugDocumentTextEvents2::onUpdateTextAttributes
 通知调试包文档中的文本属性已更新。
@@ -43,9 +43,9 @@ int onUpdateTextAttributes(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pos`\
-[in]一 [TEXT_POSITION，](../../../extensibility/debugger/reference/text-position.md) 指示文本属性的更新位置。
+[in]一 [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md) 结构，指示文本属性的更新位置。
 
 `dwNumToUpdate`\
 [in]指定已更新的文本的字符数。
@@ -53,6 +53,6 @@ int onUpdateTextAttributes(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentTextEvents2](../../../extensibility/debugger/reference/idebugdocumenttextevents2.md)
 - [TEXT_POSITION](../../../extensibility/debugger/reference/text-position.md)

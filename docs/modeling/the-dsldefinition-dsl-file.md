@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: c31d6b6b5cc1c1542c27b15af4e6ee741272c3d8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663865"
 ---
 # <a name="the-dsldefinitiondsl-file"></a>DslDefinition.dsl 文件
 
@@ -69,7 +69,7 @@ Root 元素的子元素 \<Dsl> 如下所示：
 
 本部分将定义一个关系图，你可以使用它来指定背景色和根类等属性。  (根类是由整个关系图表示的域类。 ) 关系图部分还包含 ShapeMap 和 ConnectorMap 元素，这些元素指定表示每个域类或关系的形状或连接符。
 
-### <a name="designer"></a>Designer
+### <a name="designer"></a>设计器
 
 本部分定义了一个设计器 (编辑器) ，它将 **工具箱**、验证设置、关系图和序列化方案组合在一起。 “设计器”部分还将定义模型的根类，此根类通常也是关系图的根类。
 
@@ -312,7 +312,7 @@ Dsldefinition.dsl 文件的 **设计器** 部分的主要部分是 **ToolboxTab*
 
 ## <a name="element-merge-directives"></a>元素合并指令
 
-当语言用户将项从"工具箱"拖动到关系图上时，将构造工具类的实例。 此外，将在该实例和现有模型元素之间建立链接。 当语言用户将某些项（如组件或注释）从"工具箱"拖动到关系图的空白部分时，会创建这些项。 其他项是在语言用户将其拖至其他主机元素上时创建的。 例如，OutPort 或 InPort 是在语言用户将其拖至组件上时创建的。
+当语言用户将项从 **工具箱** 拖动到关系图上时，将构造该工具的类的实例。 此外，将在该实例和现有模型元素之间建立链接。 某些项（如组件或注释）是在语言用户将其从 **工具箱** 拖动到关系图的空白部分时创建的。 其他项是在语言用户将其拖至其他主机元素上时创建的。 例如，OutPort 或 InPort 是在语言用户将其拖至组件上时创建的。
 
 一个可能的主机类（如 Component）仅在其具有某个新元素类的元素合并指令时才接受该新元素。 例如，具有 Name="Component" 的 DomainClass 节点包含：
 
@@ -367,21 +367,21 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
 
 - 名字对象节点，用于引用数据应用到的类。
 
-- **针对类上定义的每个属性的 XmlPropertyData。**
+- 对类定义的每个属性的 **XmlPropertyData** 。
 
-- **来自 类的每个关系的 XmlRelationshipData。** （关系还具有其自己的 XmlClassData 节点。）
+- 每个源自类的关系的 **XmlRelationshipData** 。 （关系还具有其自己的 XmlClassData 节点。）
 
-- **TypeName** 字符串属性，它确定生成的代码中序列化帮助程序类的名称。
+- **TypeName** string 特性，它确定生成的代码中序列化帮助器类的名称。
 
-- **ElementName** 字符串，它确定此类的序列化实例的 XML 标记。 根据约定，ElementName 通常与类名相同，不同之处在于首字母为小写。 例如，示例模型文件从以下内容开始：
+- **ElementName** string，确定此类的序列化实例的 XML 标记。 根据约定，ElementName 通常与类名相同，不同之处在于首字母为小写。 例如，示例模型文件从以下内容开始：
 
     ```xml
     <componentModel ...
     ```
 
-- **用户序列化模型文件中 MonikerElementName。** 此特性引入了可引用此类的名字对象。
+- **MonikerElementName** 用户的序列化模型文件中的。 此特性引入了可引用此类的名字对象。
 
-- **MonikerAttributeName**，用于标识名字对象中的 XML 属性的名称。 在用户序列化文件的此片段中，域特定语言的作者将 **MonikerElementName** 定义为"inPortMoniker"，MonikerAttributeName 定义为"path"： 
+- **MonikerAttributeName**，用于标识名字对象内 XML 特性的名称。 在用户的序列化文件的此片段中，域特定语言的作者定义 **MonikerElementName** 为 "inPortMoniker"，将 **MonikerAttributeName** 定义为 "path"：
 
     ```xml
     <inPortMoniker path="//Component2/InPort1" />
@@ -393,13 +393,13 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
 
 ### <a name="xmlpropertydata"></a>XmlPropertyData
 
-**DomainPropertyMoniker** 属性标识数据引用的属性。 此特性必须为封闭 ClassData 的类的属性。
+**DomainPropertyMoniker** 特性标识数据所引用的属性。 此特性必须为封闭 ClassData 的类的属性。
 
-**XmlName** 属性提供相应的属性名称，因为它应出现在 XML 中。 根据约定，此字符串与属性名称相同，不同之处在于首字母为小写。
+**XmlName** 属性提供对应的属性名称，因为它应显示在 XML 中。 根据约定，此字符串与属性名称相同，不同之处在于首字母为小写。
 
-默认情况下，" **表示形式"** 属性设置为"属性"。 如果将 **"** 表示形式"设置为"元素"，则 XML 中将创建一个子节点。 如果将 **"** 表示形式"设置为"忽略"，则属性不会序列化。
+默认情况下， **表示形式** 属性设置为 "属性"。 如果将 **表示形式** 设置为元素，则会在 XML 中创建一个子节点。 如果 **表示形式** 设置为 "忽略"，则不序列化属性。
 
-**IsMonikerKey** 和 **IsMonikerQualifier** 属性为属性提供标识父类实例的角色。 对于类中定义或继承的一个属性，可以将 **IsMonikerKey** 设置为 true。 此特性将标识父类的单个实例。 设置为 `IsMonikerKey` 的属性通常为一个名称或其他密钥标识符。 例如，`Name` 字符串属性是 NamedElement 及其派生类的名字对象密钥。 当用户将模型保存到文件中时，此特性必须包含每个实例的值，并且在嵌入关系的树中这些值在同级中是唯一的。
+**IsMonikerKey** 和 **IsMonikerQualifier** 属性为属性指定了父类的标识实例的角色。 对于在类中定义或由类继承的属性，可以将 **IsMonikerKey** 设置为 true。 此特性将标识父类的单个实例。 设置为 `IsMonikerKey` 的属性通常为一个名称或其他密钥标识符。 例如，`Name` 字符串属性是 NamedElement 及其派生类的名字对象密钥。 当用户将模型保存到文件中时，此特性必须包含每个实例的值，并且在嵌入关系的树中这些值在同级中是唯一的。
 
 在序列化模型文件中，元素的完整名字对象是一个路径，该路径从模型根沿着嵌入关系的树向下，从而在每个位置处引用名字对象密钥。 例如，InPorts 嵌入在 Components 中，Components 又反过来嵌入在模型根中。 因此，一个有效的名字对象为：
 
@@ -407,17 +407,17 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
 <inPortMoniker name="//Component2/InPort1" />
 ```
 
-可以为字符串属性设置 **IsMonikerQualifier** 属性，并提供另一种构造元素全名的方法。 例如，在 DslDefinition.dsl 文件中 **，Namespace** 是名字对象限定符。
+您可以为字符串属性设置 **IsMonikerQualifier** 属性，并提供另一种构造元素的全名的方式。 例如，在 Dsldefinition.dsl 文件中， **命名空间** 是一个名字对象限定符。
 
 ### <a name="xmlrelationshipdata"></a>XmlRelationshipData
 
 在序列化模型文件中，（嵌入关系和引用关系中的）链接由关系源端的子节点表示。 对于嵌入关系，子节点包含一个子树。 对于引用关系，子节点包含一个引用树的其他部分的名字对象。
 
-**XmlClassData 属性中的 XmlRelationshipData** 属性准确定义了子节点在源元素中的嵌套方法。  作为域类上的源的每一个关系都有一个 **XmlRelationshipData** 属性。
+**XmlClassData** 特性中的 **XmlRelationshipData** 特性定义子节点在源元素中的嵌套方式。 作为域类上的源的每个关系都具有一个 **XmlRelationshipData** 属性。
 
-**DomainRelationshipMoniker** 属性标识类上源的关系之一。
+**DomainRelationshipMoniker** 特性标识源自类的关系之一。
 
-**RoleElementName** 属性提供将子节点括在序列化数据中的 XML 标记名称。
+**RoleElementName** 属性提供在序列化数据中包含子节点的 XML 标记名称。
 
 例如，DslDefinition.dsl 文件包含：
 
@@ -441,7 +441,7 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
    </ports> ...
 ```
 
-如果将 **UseFullForm** 属性设置为 true，则引入额外的嵌套层。 该层表示关系本身。 如果该关系具有属性，则必须将该特性设置为 true。
+如果将 **UseFullForm** 特性设置为 true，则会引入额外的嵌套层。 该层表示关系本身。 如果该关系具有属性，则必须将该特性设置为 true。
 
 ```xml
 <XmlClassData ElementName="outPort">
@@ -468,7 +468,7 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
 
 （连接关系具有其自己的 XML 类数据，该数据提供了此关系的元素和特性名称。）
 
-如果 **OmitElement** 属性设置为 true，则省略关系角色名称，这将缩写序列化文件，如果两个类的关系不超过一个，则它是明确的。 例如：
+如果将 **OmitElement** 特性设置为 true，则将忽略关系角色名称，这会缩写序列化文件，如果两个类不具有多个关系，则不明确。 例如：
 
 ```xml
 <component name="Component3">
@@ -481,9 +481,9 @@ ComponentModel（语言的根类）具有适用于组件和注释的元素合并
 
 DslDefinition.dsl 文件本身就是一个序列化文件并且符合域特定语言定义。 以下是 XML 序列化定义的一些示例：
 
-- **Dsl** 是根类节点和关系图的类。 在 `Dsl` 下方嵌入了 DomainClass、DomainRelationship 和其他元素。
+- **Dsl** 是 RootClass 节点和关系图的类。 在 `Dsl` 下方嵌入了 DomainClass、DomainRelationship 和其他元素。
 
-- **类** 是 **语言类和** DomainClass Domain-Specific的 RoleElementName。
+- **类** 是 Domain-Specific Language 和 DomainClass 之间的关系的 **RoleElementName** 。
 
 ```xml
 <Dsl Name="CmptDsl5" ...>
@@ -491,7 +491,7 @@ DslDefinition.dsl 文件本身就是一个序列化文件并且符合域特定�
     <DomainClass Name="NamedElement" InheritanceModifier="Abstract" ...
 ```
 
-- **XmlSerializationBehavior** 属性嵌入在 属性下，但已对嵌入关系设置了 `Dsl` **OmitElement** 属性。 因此，不会干扰任何 `RoleElementName` 特性。 相比之下 **，ClassData** 属性是 `RoleElementName` **XmlSerializationBehavior** 属性和 **XmlClassData** 属性之间的嵌入关系的属性。
+- **XmlSerializationBehavior** 特性嵌入在 `Dsl` 特性下，但已对嵌入关系设置 **OmitElement** 特性。 因此，不会干扰任何 `RoleElementName` 特性。 与此相反， **ClassData** 属性是 `RoleElementName` **XmlSerializationBehavior** 属性与 **XmlClassData** 特性之间的嵌入关系的属性。
 
 ```xml
 <Dsl Name="CmptDsl5" ...> ...
@@ -580,7 +580,7 @@ ComponentHasPorts . Component / ! Component /    ComponentModelHasComponents . C
 
 连接符映射还可以包含修饰器映射。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [域特定语言工具术语表](/previous-versions/bb126564(v=vs.100))
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)

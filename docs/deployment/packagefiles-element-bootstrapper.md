@@ -19,11 +19,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: d986c13a4c575fa70dd4496c0b87073baa1615f7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663812"
 ---
 # <a name="ltpackagefilesgt-element-bootstrapper"></a>&lt;PackageFiles &gt; 元素 (引导程序) 
 `PackageFiles`元素包含 `PackageFile` 元素，这些元素定义作为元素的结果执行的安装包 `Command` 。
@@ -49,7 +49,7 @@ ms.locfileid: "122080372"
 
 |Attribute|说明|
 |---------------|-----------------|
-|`CopyAllPackageFiles`|可选。 如果设置为 `false` ，则安装程序将仅下载从元素引用的文件 `Command` 。 如果设置为 `true` ，则将下载所有文件。<br /><br /> 如果设置为 `IfNotHomesite` ，则该安装程序的行为将与 `False` 如果 `ComponentsLocation` 设置为相同， `HomeSite` 否则将表现为与 if 相同 `True` 。 此设置可用于允许自身引导程序的包在 HomeSite 方案中执行其自身的行为。<br /><br /> 默认为 `true`。|
+|`CopyAllPackageFiles`|可选。 如果设置为 `false` ，则安装程序将仅下载从元素引用的文件 `Command` 。 如果设置为 `true` ，则将下载所有文件。<br /><br /> 如果设置为 `IfNotHomesite` ，则该安装程序的行为将与 `False` 如果 `ComponentsLocation` 设置为相同， `HomeSite` 否则将表现为与 if 相同 `True` 。 此设置可用于允许自身引导程序的包在 HomeSite 方案中执行其自身的行为。<br /><br /> 默认值为 `true`。|
 
 ## <a name="packagefile"></a>PackageFile
  `PackageFile`元素是元素的子元素 `PackageFiles` 。 `PackageFiles`元素必须至少有一个 `PackageFile` 元素。
@@ -76,7 +76,7 @@ ms.locfileid: "122080372"
 </PackageFiles>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [\<Product> 元素](../deployment/product-element-bootstrapper.md)
 - [\<Package> 元素](../deployment/package-element-bootstrapper.md)
 - [产品和包架构引用](../deployment/product-and-package-schema-reference.md)

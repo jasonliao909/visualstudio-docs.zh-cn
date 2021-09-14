@@ -30,11 +30,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8bd3ab0ac5705a5af994ef51e1edde9d250124e2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122912"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602288"
 ---
 # <a name="excel-solutions"></a>Excel 解决方案
   Visual Studio 提供可用于创建 Microsoft Office Excel 的文档级自定义项和 VSTO 外接程序的项目模板。 你可以使用这些解决方案自动化 Excel、扩展 Excel 功能以及自定义 Excel 用户界面 (UI)。 有关文档级自定义项与外接程序VSTO之间的差异，请参阅 Office[解决方案开发&#40;VSTO&#41;。 ](../vsto/office-solutions-development-overview-vsto.md)
@@ -47,9 +47,9 @@ ms.locfileid: "122122912"
 
 - [自动Excel](#automating)。
 
-- [为 文档开发文档级自定义Excel。](#doclevel)
+- [开发适用于 Excel 的文档级自定义](#doclevel)。
 
-- [为 VSTO 开发 Excel 外接程序](#applevel)。
+- [为 VSTO 开发 Excel](#applevel)外接程序。
 
 - [自定义的用户界面Excel。](#UI)
 
@@ -58,10 +58,10 @@ ms.locfileid: "122122912"
 
  当开发 Visual Studio 中的 Excel 解决方案时，还可以使用解决方案中的 *主机项* 和 *主机控件* 。 这些是可以扩展 Excel 对象模型中常用对象的对象，例如 <xref:Microsoft.Office.Interop.Excel.Worksheet> 和 <xref:Microsoft.Office.Interop.Excel.Range> 对象。 扩展的对象行为类似于其所基于的 Excel 对象，但它们可以将其他事件和数据绑定功能添加到对象。 有关详细信息，请参阅使用[扩展Excel自动执行扩展](../vsto/automating-excel-by-using-extended-objects.md)。
 
-## <a name="develop-document-level-customizations-for-excel"></a><a name="doclevel"></a>开发文档级自定义项Excel
+## <a name="develop-document-level-customizations-for-excel"></a><a name="doclevel"></a>为自定义项开发文档级Excel
  Microsoft Office Excel 的文档级自定义项包含与特定工作簿相关联的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展工作簿。 不同于与 Excel 自身相关联的 VSTO 外接程序，在自定义项中实现的功能仅当相关联的工作簿在 Excel 中打开时才可用。
 
- 若要为 Excel 创建文档级自定义项目，请使用 Excel 对话框的"新建 Project"对话框中的 Excel 工作簿或 Excel模板项目Visual Studio。 有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
+ 若要为 Excel 创建文档级自定义项目，请使用 Visual Studio 的"新建 Project"对话框中的 Excel 工作簿或 Excel模板项目模板。 有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 
  有关文档级自定义项工作方法详细信息，请参阅文档 [级自定义的体系结构](../vsto/architecture-of-document-level-customizations.md)。
 
@@ -73,14 +73,14 @@ ms.locfileid: "122122912"
 ## <a name="develop-vsto-add-ins-for-excel"></a><a name="applevel"></a>开发VSTO外接程序Excel
  Microsoft Office Excel 的 VSTO 外接程序包含由 Excel 加载的程序集。 该程序集通常可通过自定义 UI 和自动化 Excel 扩展 Excel。 与文档级自定义项（与特定工作簿关联）不同，在 VSTO 外接程序中实现的功能不限于任何单个工作簿。
 
- 若要为 VSTO 创建 Excel 外接程序项目，请使用 Excel 的"新建Project"对话框中的 Excel 工作簿或 Excel 模板Visual Studio。  有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
+ 若要为 VSTO 创建 Excel 外接程序项目，请使用 Visual Studio 的"新建Project"对话框中的 Excel 工作簿或 Excel 模板项目Visual Studio。  有关详细信息，请参阅[如何：在 Office 创建Visual Studio。](../vsto/how-to-create-office-projects-in-visual-studio.md)
 
  有关 VSTO 外接程序工作原理的常规信息，请参阅 [Architecture of VSTO Add-ins](../vsto/architecture-of-vsto-add-ins.md)。
 
 ### <a name="excel-add-in-programming-model"></a>Excel外接程序编程模型
  创建 Excel VSTO 外接程序项目时，Visual Studio 将生成一个名为 `ThisAddIn`的类，这是你的解决方案的基础。 此类提供了编写代码的起点，并且还将 Excel 的对象模型公开到 VSTO 外接程序。
 
- 有关 类和其他可用于 Visual Studio 外接程序的其他 `ThisAddIn` VSTO，请参阅 Program [VSTO Add-Ins。](../vsto/programming-vsto-add-ins.md)
+ 有关 类和其他可在 Visual Studio 外接程序VSTO的其他功能，请参阅 Program `ThisAddIn` [VSTO Add-Ins。](../vsto/programming-vsto-add-ins.md)
 
 ## <a name="customize-the-user-interface-of-excel"></a><a name="UI"></a>自定义用户的Excel
  有几种自定义 Excel 的用户界面的方法。 某些选项适用于所有项目类型，而其他选项仅适用于 VSTO 外接程序或文档级自定义项。

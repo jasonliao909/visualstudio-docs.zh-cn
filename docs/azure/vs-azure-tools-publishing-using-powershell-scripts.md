@@ -10,11 +10,11 @@ ms.topic: conceptual
 ms.date: 11/11/2016
 ms.author: ghogen
 ms.openlocfilehash: 2e7b04c0411f5e07933cf4286edfcb112d6377e7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105842"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602122"
 ---
 # <a name="using-windows-powershell-scripts-to-publish-to-dev-and-test-environments"></a>使用 Windows PowerShell 脚本发布到开发和测试环境
 
@@ -22,7 +22,7 @@ ms.locfileid: "122105842"
 
 使用这些脚本，可以设置站点的自定义版本（又称为开发与测试环境）供临时使用。 例如，可以在 Azure 虚拟机中或者 Azure 网站的过渡槽中设置网站的特定版本，以运行测试套件、再现 bug、测试 bug 修复程序、试验建议的更改，或者设置自定义环境用于演示或展示。 创建用于发布项目的脚本后，可以根据需要通过重新运行该脚本来重新创建相同的环境，或者结合自己的 Web 应用版本运行该脚本，以创建自定义环境用于测试。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 * 安装有 Azure 工作负载的 Visual Studio 2015 或更高版本，或 Visual Studio 2013 和 Azure SDK 2.3 或更高版本。 请参阅 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)。 （无需使用 Azure SDK 就能为 Web 项目生成脚本。 此功能适用于 Web 项目，而不适用于云服务中的 Web 角色。）
 * Azure PowerShell 0.7.4 或更高版本。 请参阅 [如何安装和配置 Azure PowerShell](/powershell/azure/overview)。
@@ -306,7 +306,7 @@ return $WebDeployPackage
     若要自动测试应用程序，请向 `Test-WebApplication` 添加代码。 请务必取消注释 **Publish-WebApplication.ps1** 中调用这些函数的行。 如果不提供实现，则可以使用 Visual Studio 手动生成项目，并运行发布脚本来发布到 Azure。
 
 ## <a name="publishing-function-summary"></a>发布函数摘要
-若要获取可在 Windows PowerShell 命令提示符处使用的函数的相关帮助，请使用 `Get-Help function-name` 命令。 帮助中包含参数帮助和示例。 相同的帮助文本也位于脚本源文件 **AzureWebAppPublishModule.psm1** 和 **Publish-WebApplication.ps1。** 脚本和帮助已使用 Visual Studio 语言本地化。
+若要获取可在 Windows PowerShell 命令提示符处使用的函数的相关帮助，请使用 `Get-Help function-name` 命令。 帮助中包含参数帮助和示例。 脚本源文件 **AzureWebAppPublishModule.psm1** 和 **Publish-WebApplication.ps1。** 脚本和帮助已使用 Visual Studio 语言本地化。
 
 **AzureWebAppPublishModule**
 

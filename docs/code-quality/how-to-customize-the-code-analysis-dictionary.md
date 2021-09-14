@@ -16,11 +16,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: f22d14e5cfeff8bc79327d62a10abd9a54c8bf2b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147409"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601306"
 ---
 # <a name="how-to-customize-the-code-analysis-dictionary"></a>如何：自定义代码分析字典
 

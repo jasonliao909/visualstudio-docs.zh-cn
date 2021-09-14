@@ -21,11 +21,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 2f3852452d163f14e93b73e7fd894759f7aa0197
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148813"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600608"
 ---
 # <a name="walkthrough-create-a-workflow-with-association-and-initiation-forms"></a>演练：使用关联和启动窗体创建工作流
   本演练演示如何创建包含关联和启动窗体使用的基本顺序工作流。 这些 ASPX 窗体支持在 SharePoint 管理员首次关联工作流时 (关联窗体) ，以及当用户启动工作流时 (启动窗体) 。
@@ -89,11 +89,11 @@ ms.locfileid: "122148813"
 
 8. 在 **Visual C#** 或 **Visual Basic** 下，展开 **SharePoint节点，** 然后选择 **"2010"** 节点。
 
-9. 在" **模板"窗格中** ，选择"仅场解决方案 **(顺序** 工作流) 模板"，然后选择"添加 **"** 按钮。
+9. 在" **模板"窗格中** ，选择" (**仅** 场解决方案) "，然后选择"添加 **"** 按钮。
 
      将显示 **SharePoint自定义向导**。
 
-10. 在 **"指定调试的工作流** 名称"页中，接受 **ExpenseReport - Workflow1** (的默认) 。 将默认工作流模板类型值 (**列出工作流) 。** 选择“下一步”按钮  。
+10. 在" **指定调试的工作流** 名称"页中，接受 **ExpenseReport - Workflow1** (的默认) 。 将默认工作流模板类型值 (**列出工作流) 。** 选择“下一步”按钮  。
 
 11. 在 **"是否希望Visual Studio会话中自动** 关联工作流？"页中，清除自动关联工作流模板（如果已选中）的框。
 
@@ -102,15 +102,15 @@ ms.locfileid: "122148813"
 12. 选择 **“完成”** 按钮。
 
 ## <a name="add-an-association-form-to-the-workflow"></a>向工作流添加关联窗体
- 接下来，创建 。当管理员首次将工作流与支出SharePoint文档关联时出现的 ASPX 关联窗体。
+ 接下来，创建 。当管理员首次将工作流与支出报表SharePoint时出现的 ASPX 关联窗体。
 
 #### <a name="to-add-an-association-form-to-the-workflow"></a>向工作流添加关联窗体
 
 1. 选择 中的 **Workflow1** **解决方案资源管理器。**
 
-2. 在菜单栏上，选择  >  **Project"添加新项**"以显示"**添加新项**"对话框。
+2. 在菜单栏上 **，选择**  >  **Project"添加新项**"以显示"**添加新项**"对话框。
 
-3. 在对话框树视图中，根据项目语言 **Visual Basic (** 展开 **Visual C#** 或) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
+3. 在对话框树视图中，展开 Visual **C#** 或 **Visual Basic** (，具体取决于项目语言) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
 
 4. 在模板列表中，选择" **工作流关联窗体"** 模板。
 
@@ -125,7 +125,7 @@ ms.locfileid: "122148813"
 
 1. 在 ExpenseReportAssocForm.aspx (关联窗体) ，找到 `asp:Content` 具有 的元素 `ID="Main"` 。
 
-2. 直接在此内容元素的第一行之后，添加以下代码以创建一个标签和文本框，该文本框提示在 *AutoApproveLimit* (支出审批) ：
+2. 直接在此内容元素的第一行之后，添加以下代码，以创建一个标签和文本框，该文本框提示在 *AutoApproveLimit* (支出审批) ：
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -169,9 +169,9 @@ ms.locfileid: "122148813"
 
 1. 选择 中的 **Workflow1** **解决方案资源管理器。**
 
-2. 在菜单栏上，选择  >  **Project"添加新项"** 显示"**添加新项**"对话框。
+2. 在菜单栏上，选择  >  **Project"添加新项**"显示"**添加新项**"对话框。
 
-3. 在对话框树视图中，根据项目语言 **Visual Basic (** 展开 **Visual C#** 或) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
+3. 在对话框树视图中，展开 Visual **C#** 或 **Visual Basic** (，具体取决于项目语言) ，展开 **SharePoint** 节点，然后选择 **2010** 节点。
 
 4. 在模板列表中，选择" **工作流启动窗体"** 模板。
 
@@ -184,9 +184,9 @@ ms.locfileid: "122148813"
 
 #### <a name="to-code-the-initiation-form"></a>编写启动表单代码
 
-1. 在 ExpenseReportInitForm.aspx (的启动) 中，找到 `asp:Content` 包含 的元素 `ID="Main"` 。
+1. 在 ExpenseReportInitForm.aspx (中的) 窗体中，找到 `asp:Content` 包含 的元素 `ID="Main"` 。
 
-2. 直接在此内容元素的第一行之后，添加以下代码以创建一个标签和文本框，显示在关联窗体中输入的支出批准限制 (*AutoApproveLimit*) ，并添加另一个标签和文本框来提示费用总额 (*ExpenseTotal*) ：
+2. 直接在此内容元素的第一行之后，添加以下代码以创建一个标签和文本框，显示在关联窗体中输入的支出批准限制 (*AutoApproveLimit*) ，并添加另一个标签和文本框来提示费用总计 (*ExpenseTotal*) ：
 
     ```aspx-csharp
     <asp:Label ID="lblAutoApproveLimit" Text="Auto Approval Limit:" runat="server" />
@@ -256,7 +256,7 @@ ms.locfileid: "122148813"
 
 1. 通过打开项目中的 Workflow1，在工作流设计器中显示工作流。
 
-2. 在"**工具箱"** 中，展开Windows **工作流 v3.0** 节点并找到 **IfElse** 活动。
+2. 在"**工具箱"** 中，展开Windows **工作流 v3.0** 节点，并找到 **IfElse** 活动。
 
 3. 执行以下步骤之一，将此活动添加到工作流：
 
@@ -274,7 +274,7 @@ ms.locfileid: "122148813"
 
 6. 在"**属性**"窗口中，输入 *CorrelationToken 属性的 taskToken* 属性值。 
 
-7. 通过选择 TreeView 旁边的加号 (并) **CorrelationToken** 属性。 ![](../sharepoint/media/plus.gif "TreeView 加号")
+7. 通过选择 **TreeView** 旁边的加号 (并) ![CorrelationToken](../sharepoint/media/plus.gif "TreeView 加号") 属性。
 
 8. 选择 **OwnerActivityName** 子属性上的下拉箭头，并设置 *workflow1.xaml* 值。
 
@@ -448,6 +448,6 @@ ms.locfileid: "122148813"
 
 - 若要详细了解 SharePoint 工作流，请参阅[Windows SharePoint Services 中的工作流](/previous-versions/office/developer/sharepoint-2010/ms416312(v=office.14))。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [创建 SharePoint 工作流解决方案](../sharepoint/creating-sharepoint-workflow-solutions.md)
 - [演练：将应用程序页添加到工作流](../sharepoint/walkthrough-add-an-application-page-to-a-workflow.md)

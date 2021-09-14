@@ -19,28 +19,28 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: c6ae20393f60ffe0e17cee9baf85c1572cea32ac
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060149"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600658"
 ---
 # <a name="extend-the-sharepoint-connections-node-in-server-explorer"></a>扩展服务器资源管理器中的“SharePoint 连接”节点
-  在 Visual Studio 中，可以使用"SharePoint"窗口中的"SharePoint **连接**"节点连接到开发 **服务器资源管理器站点。** 此节点在分层树视图中显示SharePoint站点的许多组件。 例如，可以在本地网站上查看列表、文档库和内容类型。 有关使用 服务器资源管理器 **连接到本地** SharePoint 站点的信息，请参阅使用 SharePoint [浏览服务器资源管理器。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
+  在 Visual Studio 中，可以使用"SharePoint"窗口中的"SharePoint **连接"节点** 连接到开发 **服务器资源管理器站点。** 此节点在分层树视图中显示SharePoint站点的许多组件。 例如，可以在本地网站上查看列表、文档库和内容类型。 有关使用 服务器资源管理器 **连接到本地** SharePoint 站点SharePoint，请参阅使用 SharePoint [浏览服务器资源管理器。](../sharepoint/browsing-sharepoint-connections-using-server-explorer.md)
 
  可以通过为现有 **SharePoint** 扩展，或者创建自定义节点类型并添加到节点层次结构，来扩展"连接"节点。
 
 ## <a name="tasks-for-extending-the-sharepoint-connections-node"></a>用于扩展 SharePoint 连接节点的任务
- 若要扩展现有节点，请创建Visual Studio接口的扩展 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 。 扩展节点时，可以将功能添加到节点，例如你自己的快捷菜单项或自定义属性。 有关详细信息，请参阅[如何：扩展](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)SharePoint 中的 服务器资源管理器。
+ 若要扩展现有节点，请创建Visual Studio接口的扩展 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeExtension> 。 扩展节点时，可以将功能添加到节点，例如你自己的快捷菜单项或自定义属性。 有关详细信息，请参阅[如何：扩展](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)SharePoint 中的 服务器资源管理器 节点。
 
- 若要创建自定义节点类型，请创建Visual Studio接口的扩展 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 。 如果要显示默认未显示在SharePoint站点的组件，请 **服务器资源管理器** 节点。 例如 **，服务器资源管理器** 不会显示 SharePoint 站点的 Web 部件库，但可以添加执行此操作的自定义节点。 有关详细信息，请参阅[如何：将自定义SharePoint](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)节点添加到服务器资源管理器演练：将服务器资源管理器扩展为[显示Web 部件。](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
+ 若要创建自定义节点类型，请创建Visual Studio接口的扩展 <xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerNodeTypeProvider> 。 如果要显示默认未显示在SharePoint站点的组件，请 **服务器资源管理器** 节点。 例如 **，服务器资源管理器** 不显示 SharePoint 站点的 Web 部件库，但可以添加执行此操作的自定义节点。 有关详细信息，请参阅[如何：将自定义SharePoint](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)节点添加到服务器资源管理器演练[：扩展服务器资源管理器以显示Web 部件。](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 
 ## <a name="add-custom-properties-to-nodes"></a>将自定义属性添加到节点
  扩展节点或创建自定义节点类型时，可以将自定义属性添加到该节点。 选择节点时 **，属性** 将显示在"属性"窗口中。
 
  有两种类型的自定义属性可以添加到节点：
 
-- 显示来自站点站点中的一组只读SharePoint的属性。 数据描述SharePoint表示的组件。 有关演示如何执行此操作的演练，请参阅演练：扩展服务器资源管理器 [以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
+- 显示来自数据库站点的一组只读SharePoint的属性。 数据描述SharePoint表示的组件。 有关演示如何执行此操作的演练，请参阅演练：扩展服务器资源管理器 [以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)。
 
 - 显示自定义读/写数据的属性。 有关演示如何执行此操作的代码示例，请参阅如何：在 SharePoint[中扩展服务器资源管理器。](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 
@@ -60,7 +60,7 @@ ms.locfileid: "122060149"
 |---------------|----------------------|
 |SharePoint站点节点|<xref:Microsoft.VisualStudio.SharePoint.Explorer.IExplorerSiteNodeInfo>|
 |内容类型|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IContentTypeNodeInfo>|
-|特征|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
+|Feature|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFeatureNodeInfo>|
 |字段|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IFieldNodeInfo>|
 |列出|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListNodeInfo>|
 |列表模板|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IListTemplateNodeInfo>|
@@ -68,9 +68,9 @@ ms.locfileid: "122060149"
 |工作流关联|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowAssociationNodeInfo>|
 |工作流模板|<xref:Microsoft.VisualStudio.SharePoint.Explorer.Extensions.IWorkflowTemplateNodeInfo>|
 
- 有关使用 属性详细信息 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ，请参阅将自定义数据与 SharePoint[工具扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)。
+ 有关使用 属性的信息 <xref:Microsoft.VisualStudio.SharePoint.IAnnotatedObject.Annotations%2A> ，请参阅[将自定义](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)数据与SharePoint扩展关联。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [演练：扩展服务器资源管理器以显示 Web 部件](../sharepoint/walkthrough-extending-server-explorer-to-display-web-parts.md)
 - [如何：扩展SharePoint节点服务器资源管理器](../sharepoint/how-to-extend-a-sharepoint-node-in-server-explorer.md)
 - [如何：将自定义SharePoint节点添加到服务器资源管理器](../sharepoint/how-to-add-a-custom-sharepoint-node-to-server-explorer.md)

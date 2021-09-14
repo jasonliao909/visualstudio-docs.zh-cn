@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式更新书签文本
-description: 了解如何使用文本Visual Studio以编程方式将文本插入文档中的占位符Microsoft Word书签。
+description: 了解如何使用文本Visual Studio以编程方式将文本插入到文档中的占位符Microsoft Word书签。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -18,11 +18,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2e1c944b00f2581e62f49c56d946d78daefff935
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155676"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602235"
 ---
 # <a name="how-to-programmatically-update-bookmark-text"></a>如何：以编程方式更新书签文本
   你可以将文本插入 Microsoft Office Word 文档中的占位符书签，以便稍后能够检索到该文本，或替换书签中的文本。 如果你正在开发文档级自定义项，则还可以更新绑定到数据的 <xref:Microsoft.Office.Tools.Word.Bookmark> 控件中的文本。 有关详细信息，请参阅将数据绑定到解决方案 中的[Office控件](../vsto/binding-data-to-controls-in-office-solutions.md)。
@@ -82,7 +82,7 @@ ms.locfileid: "122155676"
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationAddIn/ThisAddIn.vb" id="Snippet66":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationAddIn/ThisAddIn.cs" id="Snippet66":::
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：以编程方式将文本插入 Word 文档](../vsto/how-to-programmatically-insert-text-into-word-documents.md)
 - [Word 对象模型概述](../vsto/word-object-model-overview.md)
 - [书签控件](../vsto/bookmark-control.md)

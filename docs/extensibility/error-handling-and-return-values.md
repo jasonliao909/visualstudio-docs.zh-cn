@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9f69f998dbfe984a272f86227640fe5eaec51cae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152466"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602359"
 ---
 # <a name="error-handling-and-return-values"></a>错误处理和返回值
 Vspackage 和 COM 使用相同的体系结构来实现错误。 `SetErrorInfo`和 `GetErrorInfo` 函数是 (API) 的 Win32 应用程序编程接口的一部分。  (IDE) 集成开发环境中的任何 VSPackage 都可以调用这些全局 Win32 Api，以便在收到错误通知时记录丰富的错误信息。 [!INCLUDE[vsipsdk](../extensibility/includes/vsipsdk_md.md)]提供互操作程序集来管理错误信息。
@@ -56,7 +56,7 @@ Vspackage 和 COM 使用相同的体系结构来实现错误。 `SetErrorInfo`�
 
 - 返回由另一个调用产生的错误的所有函数都必须传递从中失败调用接收的信息， `HRESULT` 而无需修改 `ErrorInfo` 对象。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.OLE.Interop.IOleCommandTarget>
 - [SetErrorInfo (组件自动化) ](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-seterrorinfo)
 - [GetErrorInfo](/previous-versions/windows/desktop/api/oleauto/nf-oleauto-geterrorinfo)

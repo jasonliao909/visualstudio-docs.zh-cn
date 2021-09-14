@@ -15,17 +15,17 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: cecf47d023b98ce8ad3cf67799e4bdfff66f45fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037143"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601199"
 ---
 # <a name="create-a-database-and-add-tables-in-visual-studio"></a>在 Visual Studio 中创建一个数据库并添加表
 
 您可以使用 Visual Studio 在 SQL Server Express LocalDB 中创建和更新本地数据库文件。 还可以通过在 Visual Studio 中的 **SQL Server 对象资源管理器**"工具" 窗口中执行 SQL transact-sql 语句来创建数据库。 在本主题中，我们将创建一个 *.mdf* 文件并使用表设计器添加表和键。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 若要完成本演练，需要在 Visual Studio 中安装 **.net 桌面开发**、**数据存储和处理** 工作负荷。 若要进行安装，请打开 **Visual Studio 安装程序**，然后选择 "**修改**" (或 **更多**  >   "修改") 旁边 Visual Studio 的 "修改" 修改。
 

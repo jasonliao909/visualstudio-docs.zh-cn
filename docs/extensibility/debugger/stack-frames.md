@@ -16,11 +16,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: dc6c10f00f12d1ee8df9918530a3b04d6ba5ef4e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102852"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600830"
 ---
 # <a name="stack-frames"></a>堆栈帧
 在调试程序体系结构中， *堆栈帧*：
@@ -33,7 +33,7 @@ ms.locfileid: "122102852"
 
 - 由 [IDebugStackFrame2](../../extensibility/debugger/reference/idebugstackframe2.md) 接口表示，此接口通常由调试引擎创建 (取消) 或虚拟机作为执行线程的结果。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [调试器上下文](../../extensibility/debugger/debugger-contexts.md)
 - [调试器概念](../../extensibility/debugger/debugger-concepts.md)
 - [调试引擎](../../extensibility/debugger/debug-engine.md)

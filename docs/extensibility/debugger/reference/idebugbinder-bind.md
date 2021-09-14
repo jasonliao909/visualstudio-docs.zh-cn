@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: de3cbb35245fad317014136177a4a410edfb25b5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104386"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600923"
 ---
 # <a name="idebugbinderbind"></a>IDebugBinder::Bind
 此方法获取包含符号的当前值的内存上下文或对象。
@@ -45,7 +45,7 @@ int Bind(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pContainer`\
 [in]包含[引用的子项的 IDebugObject。](../../../extensibility/debugger/reference/idebugobject.md) `pField`
 
@@ -58,7 +58,7 @@ int Bind(
 ## <a name="return-value"></a>返回值
  如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBinder](../../../extensibility/debugger/reference/idebugbinder.md)
 - [IDebugObject](../../../extensibility/debugger/reference/idebugobject.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)

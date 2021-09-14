@@ -21,20 +21,20 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: ca3341b252f94a4415904744840f24cb05b56b56
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026942"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663839"
 ---
-# <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义 SharePoint 解决方案包
+# <a name="how-to-customize-a-sharepoint-solution-package"></a>如何：自定义SharePoint包
   可以使用包设计器创建和自定义 *.wsp* (包) 。 例如，可以添加SharePoint项和功能，指定在部署解决方案时是否重置 Web 服务器，并设置部署服务器类型。
 
 ## <a name="open-the-package-designer"></a>打开包设计器
 
 #### <a name="to-open-the-package-designer"></a>打开包设计器
 
-- 在 **解决方案资源管理器** 中，双击"包"，**或选择视图设计器** 菜单上的"包 **"。** 
+- 在 **解决方案资源管理器** 中，双击"包"，**或选择视图设计器** 菜单上的"包 **"。**
 
 ## <a name="view-the-packaged-manifestffile"></a>查看打包的 manifestfFile
  可以使用包设计器来修改和生成打包的清单文件。 然后，可以在文件中查看此文件的 XML Visual Studio。
@@ -90,5 +90,5 @@ ms.locfileid: "122026942"
 
      使用原始文本刷新模板，并且对 XML 的任何更改都丢失。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 02897900a9117eee3d9a917b2e86580d21980345
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137660"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600810"
 ---
 # <a name="taskscheduler-class---internal-members"></a>TaskScheduler 类-内部成员
 本文介绍 <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName> 可帮助你实现自定义调试器的类的内部成员。 有关此类的常规信息，请参阅 <xref:System.Threading.Tasks.TaskScheduler> 参考文章。
@@ -48,6 +48,6 @@ ms.locfileid: "122137660"
 
 ## <a name="remarks"></a>备注
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:System.Threading.Tasks.TaskScheduler?displayProperty=fullName>
 - [.NET Framework 的并行扩展内部机制](../../extensibility/debugger/parallel-extension-internals-for-the-dotnet-framework.md)

@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 529b957613ae954d35c2284870d6512c7357ac64
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105946"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602246"
 ---
 # <a name="how-to-programmatically-open-workbooks"></a>如何：以编程方式打开工作簿
   <xref:Microsoft.Office.Interop.Excel.Workbooks>使用 Microsoft Office Excel，可以处理所有打开的工作簿并打开工作簿。
@@ -40,7 +40,7 @@ ms.locfileid: "122105946"
 
 - 名为 的 `YourWorkbook.xls` 工作簿必须存在于驱动器 C 上名为 `Test` 的目录中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [使用工作簿](../vsto/working-with-workbooks.md)
 - [如何：以编程方式以工作簿方式打开文本文件](../vsto/how-to-programmatically-open-text-files-as-workbooks.md)
 - [如何：以编程方式创建新工作簿](../vsto/how-to-programmatically-create-new-workbooks.md)

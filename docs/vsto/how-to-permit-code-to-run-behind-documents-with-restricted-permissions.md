@@ -1,6 +1,6 @@
 ---
 title: 允许代码在具有受限权限的文档后面运行
-description: 了解如何通过使用 Office 开发工具，允许代码在具有受限权限的文档Visual Studio。
+description: 了解如何通过使用 Visual Studio 中的开发工具，允许代码在具有受限权限的文档Office运行。
 ms.custom: SEO-VS-2020
 titleSuffix: ''
 ms.date: 02/02/2017
@@ -22,14 +22,14 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 366c8716995f0f5e88707d738957fc4ec0476a50
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083383"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602275"
 ---
 # <a name="how-to-permit-code-to-run-behind-documents-with-restricted-permissions"></a>如何：允许代码在具有受限权限的文档后面运行
-  可以使用 Rights Management (的"Rights Management (IRM) "功能Microsoft Office文档或工作簿的权限。 默认情况下，不允许运行受限 Microsoft Office Word 文档Microsoft Office Excel工作簿后面的代码。 可以更改默认值，以便托管代码扩展可以访问对象模型，解决方案将正常工作。
+  可以使用 Rights Management (的"Rights Management (IRM) "功能Microsoft Office限制对文档或工作簿的权限。 默认情况下，不允许运行受限 Microsoft Office Word 文档Microsoft Office Excel工作簿后面的代码。 可以更改默认值，以便托管代码扩展可以访问对象模型，解决方案将正常工作。
 
  [!INCLUDE[appliesto_alldoc](../vsto/includes/appliesto-alldoc-md.md)]
 
@@ -50,10 +50,10 @@ ms.locfileid: "122083383"
 
    Word 或 Excel将允许以编程方式访问对象模型。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [信息权限管理和托管代码扩展概述](../vsto/information-rights-management-and-managed-code-extensions-overview.md)
 - [文档级解决方案中的文档保护](../vsto/document-protection-in-document-level-solutions.md)
 - [对文档Office密码保护](../vsto/password-protection-on-office-documents.md)
 - [设计和创建Office解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [安全Office解决方案](../vsto/securing-office-solutions.md)
-- [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- [部署Office解决方案](../vsto/deploying-an-office-solution.md)

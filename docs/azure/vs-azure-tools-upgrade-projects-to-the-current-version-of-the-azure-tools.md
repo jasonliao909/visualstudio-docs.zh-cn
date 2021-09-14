@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 11/18/2016
 ms.author: ghogen
 ms.openlocfilehash: 1bf1fc53eb6444772beb5566ef4b9141af8176b2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147474"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602106"
 ---
 # <a name="how-to-upgrade-projects-to-the-current-version-of-the-azure-tools-for-visual-studio"></a>如何将项目升级到最新版本的 Azure Tools for Visual Studio
 ## <a name="overview"></a>概述

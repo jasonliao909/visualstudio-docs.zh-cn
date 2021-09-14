@@ -17,11 +17,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 3a5979fda1e2fcbe8664df7171b1053acebb0506
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122052806"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601177"
 ---
 # <a name="customize-how-visual-studio-creates-captions-for-data-bound-controls"></a>自定义 Visual Studio 创建数据绑定控件的标题的方式
 
@@ -29,20 +29,20 @@ ms.locfileid: "122052806"
 
 ::: moniker range="vs-2017"
 
-可以通过在注册表项中设置 **SmartCaptionExpression、SmartCaptionReplacement****和** **SmartCaptionSuffix** 值来自定义创建这些HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers的方式。
+**可以通过** 在注册表项中设置 **SmartCaptionExpression、SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\15.0\Data Designers的方式。 
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
 
-可以通过在注册表项中设置 **SmartCaptionExpression、SmartCaptionReplacement****和** **SmartCaptionSuffix** 值来自定义创建这些HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers的方式。
+**可以通过** 在注册表项中设置 **SmartCaptionExpression、SmartCaptionReplacement** 和 **SmartCaptionSuffix** 值来自定义创建HKEY_CURRENT_USER\Software\Microsoft\VisualStudio\16.0\Data Designers的方式。 
 
 ::: moniker-end
 
 > [!NOTE]
 > 创建注册表项之前，此注册表项不存在。
 
-智能字幕由输入到 **SmartCaptionExpression** 值中的正则表达式控制。 添加 **数据设计器** 注册表项会替代控制标题标签的默认正则表达式。 有关正则表达式详细信息，请参阅在 Visual Studio 中使用[正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
+智能字幕由输入到 **SmartCaptionExpression** 值中的正则表达式控制。 添加 **数据设计器** 注册表项会替代控制标题标签的默认正则表达式。 有关正则表达式的信息，请参阅在 Visual Studio 中使用[正则表达式](../ide/using-regular-expressions-in-visual-studio.md)。
 
 下表描述了控制标题标签的注册表值。
 
@@ -141,6 +141,6 @@ ms.locfileid: "122052806"
 
     下次从"数据源"窗口 **拖动** 项时，会使用未修改的标题创建标题标签。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将控件绑定到数据](../data-tools/bind-controls-to-data-in-visual-studio.md)

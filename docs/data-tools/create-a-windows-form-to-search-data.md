@@ -18,11 +18,11 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 4d045dcddd1cdebb4308e35bf9060b013216a670
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037078"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601196"
 ---
 # <a name="create-a-windows-form-to-search-data"></a>创建用于搜索数据的 Windows 窗体
 
@@ -49,7 +49,7 @@ ms.locfileid: "122037078"
 > [!NOTE]
 > 本文中的过程仅适用于 .NET Framework Windows 窗体项目，不适用于 .net Core Windows 窗体项目。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 必须安装 **数据存储和处理** 工作负荷。 请参阅[修改 Visual Studio](../install/modify-visual-studio.md)。
 
@@ -191,6 +191,6 @@ ms.locfileid: "122037078"
 
 - 编辑数据集来添加或移除数据库对象。 有关详细信息，请参阅[创建和配置数据集](../data-tools/create-and-configure-datasets-in-visual-studio.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在 Visual Studio 中将 Windows 窗体控件绑定到数据](../data-tools/bind-windows-forms-controls-to-data-in-visual-studio.md)

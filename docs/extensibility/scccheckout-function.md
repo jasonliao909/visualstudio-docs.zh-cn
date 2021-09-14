@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6168b2683f0201be2a4b140428b10fa9946bccf3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601030"
 ---
 # <a name="scccheckout-function"></a>SccCheckout 函数
 给定完全限定文件名的列表后，此函数会将其签出到本地驱动器。 注释适用于要签出的所有文件。注释参数可以是 `null` 字符串。
@@ -38,7 +38,7 @@ SCCRTN SccCheckout (
 );
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
  pvContext
 
 [in]源代码管理插件上下文结构。
@@ -82,6 +82,6 @@ SCCRTN SccCheckout (
 |SCC_E_FILEOUTEXCLUSIVE|另一个用户已对此文件执行排他签出。|
 |SCC_I_OPERATIONCANCELED|操作在完成之前已取消。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [源代码管理插件 API 函数](../extensibility/source-control-plug-in-api-functions.md)
 - [特定命令使用的位标志](../extensibility/bitflags-used-by-specific-commands.md)

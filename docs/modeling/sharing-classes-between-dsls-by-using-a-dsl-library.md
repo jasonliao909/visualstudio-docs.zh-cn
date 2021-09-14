@@ -11,11 +11,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b4f6deca3320a5c2182030d8e5cdec99a36c023
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085372"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663892"
 ---
 # <a name="sharing-classes-between-dsls-by-using-a-dsl-library"></a>使用 DSL 库在 DSL 之间共享类
 在 Visual Studio可视化和建模 SDK 中，可以创建一个不完整的 DSL 定义，该定义可以导入到另一个 DSL 中。 这样，你可考虑相似模型的常见部分。
@@ -58,13 +58,13 @@ ms.locfileid: "122085372"
 
 4. 单击“转换所有模板”。
 
-5. 向 DSL 项目添加对 DLL (程序集的引用) DSL 库项目所生成。
+5. 向 DSL 项目添加对 DSL 库项目 (DLL) 程序集的引用。
 
 6. 生成解决方案。
 
    DSL 库可以导入其他库。 导入库时，其导入也会自动显示在 DSL 资源管理器中。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [如何定义域特定语言](../modeling/how-to-define-a-domain-specific-language.md)
 

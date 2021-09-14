@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 686209a07caaf06ec39bb3c3e4f2c9688e6cb392
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104438"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600963"
 ---
 # <a name="idebugaliasgetobject"></a>IDebugAlias::GetObject
 获取此别名所用于的对象。
@@ -41,13 +41,13 @@ int GetObject(
 )
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppObject`\
 弄此别名所表示的 [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md) 。
 
 ## <a name="return-value"></a>返回值
  如果成功，将返回 S_OK;否则，将返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugAlias](../../../extensibility/debugger/reference/idebugalias.md)
 - [IDebugObject2](../../../extensibility/debugger/reference/idebugobject2.md)

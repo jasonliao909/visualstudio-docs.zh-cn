@@ -14,16 +14,16 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: cec77762a356f86d8cab32402c824ec70ae41e8e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057338"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602360"
 ---
 # <a name="editor-and-language-service-extensions"></a>编辑器和语言服务扩展
-可以扩展代码编辑器Visual Studio功能。 编辑器基于 WPF Windows Presentation Foundation (，) 托管代码编写。 尽管此设计不同于早期版本的 Visual Studio，但它提供大多数相同的功能。 若要扩展编辑器，请使用 Managed Extensibility Framework (MEF) 。
+可以扩展代码编辑器Visual Studio功能。 编辑器基于 WPF Windows Presentation Foundation (，) 托管代码编写。 尽管此设计不同于早期版本的 Visual Studio，但它提供了大多数相同的功能。 若要扩展编辑器，请使用 Managed Extensibility Framework (MEF) 。
 
- Visual Studio SDK 提供 *称为填充码* 的适配器，以支持为早期版本编写的 VSPackage。 不过，如果你有现有的 VSPackage，我们建议将其更新为新技术，以获得更好的性能和可靠性。
+ 该Visual Studio SDK 提供称为 *填充* 码的适配器，以支持为早期版本编写的 VSPackage。 不过，如果你有现有的 VSPackage，我们建议将其更新为新技术，以获得更好的性能和可靠性。
 
 ## <a name="related-topics"></a>相关主题
 

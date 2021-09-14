@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a35563f55824ae95269c944f34f87a8af2222a08
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145479"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600952"
 ---
 # <a name="idebugarrayfieldgetrank"></a>IDebugArrayField::GetRank
 获取数组的秩或维度数。
@@ -41,7 +41,7 @@ int GetRank(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwRank`\
 弄返回秩。
 
@@ -51,5 +51,5 @@ int GetRank(
 ## <a name="remarks"></a>备注
  数组的秩对应于维数。 在 c + + 和 c # 中，多维数组实际上是数组的数组，因此可以只将一维数组视为 (并且 `GetRank` 方法始终返回 1) 。 另一方面，在中， [!INCLUDE[vbprvb](../../../code-quality/includes/vbprvb_md.md)] 多维数组的处理方式不同，此类数组的秩反映 (的维数， `GetRank` 方法始终返回) 的维度数。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugArrayField](../../../extensibility/debugger/reference/idebugarrayfield.md)

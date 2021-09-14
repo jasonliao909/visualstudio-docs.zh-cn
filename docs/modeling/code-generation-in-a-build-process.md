@@ -16,12 +16,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: 1cf6376ca9ef5442e4f71588a6de7d3a4a33886ba8520f18914f03d7522fa463
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: bb628f967f9d56f954c2c639951f9317fa8efed9
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121411316"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600677"
 ---
 # <a name="invoke-text-transformation-in-the-build-process"></a>在生成过程中调用文本转换
 
@@ -296,13 +296,13 @@ Visual Studio 宏，如 **$ (SolutionDir)** 在 MSBuild 中不起作用。 你�
 
 - 可在命令脚本中使用 [TextTransform 实用程序](../modeling/generating-files-with-the-texttransform-utility.md) 。 在大多数情况下，使用 MSBuild。
 
-- [在扩展名 中Visual Studio转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
+- [在扩展中调用Visual Studio转换](../modeling/invoking-text-transformation-in-a-vs-extension.md)。
 
 - [设计时文本模板](../modeling/design-time-code-generation-by-using-t4-text-templates.md)由 Visual Studio。
 
 - [运行时文本模板](../modeling/run-time-text-generation-with-t4-text-templates.md) 在应用程序中运行时转换。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 ::: moniker range="vs-2017"
 

@@ -19,11 +19,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a35af9a88d42bcc413c5c926d74f34b840d4ea59
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110483"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602337"
 ---
 # <a name="guids-and-ids-of-visual-studio-menus"></a>Visual Studio 菜单的 guid 和 id
 本文枚举 Visual Studio 菜单栏上的菜单和组的 GUID 和 ID 值。 这些值是在作为 Visual Studio SDK 的一部分安装的 *.vsct* 文件中定义的。 有关详细信息，请参阅 [IDE 定义的命令、菜单和组](../../extensibility/internals/ide-defined-commands-menus-and-groups.md)。
@@ -95,7 +95,7 @@ ms.locfileid: "122110483"
 |查找|IDG_VS_EDIT_FIND|
 |对象|IDG_VS_EDIT_OBJECTS|
 |OLE 谓词|IDG_VS_EDIT_OLEVERBS|
-|命令井|IDG_VS_EDIT_COMMANDWELL|
+|命令良好|IDG_VS_EDIT_COMMANDWELL|
 
 ### <a name="refactor-menu-groups"></a>重构菜单组
 
@@ -108,30 +108,30 @@ ms.locfileid: "122110483"
 
 |组|ID|
 |-----------|--------|
-|窗体代码|IDG_VS_VIEW_FORMCODE|
+|表单代码|IDG_VS_VIEW_FORMCODE|
 |浏览者|IDG_VS_VIEW_BROWSER|
 |定义视图|IDG_VS_VIEW_DEFINEVIEWS|
 |Windows|IDG_VS_VIEW_WINDOWS|
-|架构师Windows|IDG_VS_VIEW_ARCH_WINDOWS|
-|组织Windows|IDG_VS_VIEW_ORG_WINDOWS|
+|架构师 Windows|IDG_VS_VIEW_ARCH_WINDOWS|
+|组织 Windows|IDG_VS_VIEW_ORG_WINDOWS|
 |代码浏览器|IDG_VS_VIEW_CODEBROWSENAV_WINDOWS|
-|开发Windows|IDG_VS_VIEW_DEV_WINDOWS|
+|开发 Windows|IDG_VS_VIEW_DEV_WINDOWS|
 |工具栏|IDG_VS_VIEW_TOOLBARS|
 |符号|IDG_VS_VIEW_SYMBOLNAVIGATE|
 |导航|IDG_VS_VIEW_NAVIGATE|
-|小导航|IDG_VS_VIEW_SMALLNAVIGATE|
+|小型导航|IDG_VS_VIEW_SMALLNAVIGATE|
 |对象浏览器|IDG_VS_VIEW_OBJBRWSR|
-|命令井|IDG_VS_VIEW_COMMANDWELL|
+|命令良好|IDG_VS_VIEW_COMMANDWELL|
 |属性页|IDG_VS_VIEW_PROPPAGES|
 |刷新|IDG_VS_VIEW_REFRESH|
 
-### <a name="project-menu-groups"></a>Project菜单组
+### <a name="project-menu-groups"></a>Project 菜单组
 
 |组|ID|
 |-----------|--------|
 |其他添加|IDG_VS_PROJ_MISCADD|
 |添加|IDG_VS_PROJ_ADD|
-|文件夹|IDG_VS_PROJ_FOLDER|
+|Folder|IDG_VS_PROJ_FOLDER|
 |卸载/重载|IDG_VS_PROJ_UNLOADRELOAD|
 |参考|IDG_VS_PROJ_REFERENCE|
 |选项|IDG_VS_PROJ_OPTIONS|
@@ -147,7 +147,7 @@ ms.locfileid: "122110483"
 |其他|IDG_VS_BUILD_MISC|
 |取消|IDG_VS_BUILD_CANCEL|
 
-### <a name="tools-menu-groups"></a>"工具"菜单组
+### <a name="tools-menu-groups"></a>工具菜单组
 
 |组|ID|
 |-----------|--------|
@@ -155,9 +155,9 @@ ms.locfileid: "122110483"
 |代码片段|IDG_VS_TOOLS_SNIPPETS|
 |对象子集|IDG_VS_TOOLS_OBJSUBSET|
 |选项|IDG_VS_TOOLS_OPTIONS|
-|其他 2 个|IDG_VS_TOOLS_OTHER2|
+|其他2|IDG_VS_TOOLS_OTHER2|
 |外部工具|IDG_VS_TOOLS_EXT_TOOLS|
-|外部自定义项|IDG_VS_TOOLS_EXT_CUST|
+|外部自定义|IDG_VS_TOOLS_EXT_CUST|
 
 ### <a name="window-menu-groups"></a>窗口菜单组
 
@@ -178,7 +178,7 @@ ms.locfileid: "122110483"
 |支持|IDG_VS_HELP_SUPPORT|
 |关于|IDG_VS_HELP_ABOUT|
 
-## <a name="submenus-of-visual-studio-menus"></a>菜单的Visual Studio菜单
+## <a name="submenus-of-visual-studio-menus"></a>菜单的子菜单Visual Studio菜单
  以下层次结构显示与菜单栏上的菜单关联的子菜单Visual Studio菜单。 由于只有组才能将菜单作为父级，因此每个子菜单都必须从菜单上的组降序，而不是直接从菜单降序。 有关菜单、组和子菜单之间的关系详细信息，请参阅 [将子菜单添加到菜单](../../extensibility/adding-a-submenu-to-a-menu.md)。
 
 > [!NOTE]
@@ -216,7 +216,7 @@ ms.locfileid: "122110483"
 |IDG_VS_PGO_SELECTION|IDM_VS_CSCD_PGO_BUILD|IDG_VS_PGO_BUILD_CASCADE_BUILD|
 |||IDG_VS_PGO_BUILD_CASCADE_RUN|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [工具栏的 GUID Visual Studio的 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-toolbars.md)
 - [命令的 GUID Visual Studio的 ID](../../extensibility/internals/guids-and-ids-of-visual-studio-commands.md)
 - [Visual Studio命令表 (.vsct) 文件](../../extensibility/internals/visual-studio-command-table-dot-vsct-files.md)

@@ -19,11 +19,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 421072452214828560234aeb3a23128a38d0d515
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152232"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601034"
 ---
 # <a name="localize-menu-commands"></a>本地化菜单命令
 
@@ -137,7 +137,7 @@ ms.locfileid: "122152232"
     </PropertyGroup>
     ```
 
-     这会将"美国英语"设置为 WPF 控件Windows Presentation Foundation (UI) 区域性。
+     这会将美国英语设置为 WPF 控件Windows Presentation Foundation (UI) 区域性。
 
 6. 找到 `ItemGroup` 包含 元素 `EmbeddedResource` 的元素。
 
@@ -168,7 +168,7 @@ ms.locfileid: "122152232"
 
      这会为每个语言创建主程序集和资源程序集。 有关本地化部署过程的信息，请参阅 [本地化 VSIX 包](../extensibility/localizing-vsix-packages.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [扩展菜单和命令](../extensibility/extending-menus-and-commands.md)
 - [全球化和本地化应用程序](../ide/globalizing-and-localizing-applications.md)

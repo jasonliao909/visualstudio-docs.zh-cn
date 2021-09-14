@@ -1,6 +1,6 @@
 ---
 title: VSPackage 注册|Microsoft Docs
-description: 了解 VSPackage 注册，其中包Visual Studio建议安装它们，并且应该通过写入注册表中的信息来加载它们。
+description: 了解 VSPackage 注册，其中包建议Visual Studio安装它们，并且应该通过写入注册表中的信息来加载它们。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: f0257eb175dff65a28cc942ef4854cfdff437d5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122117626"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664304"
 ---
 # <a name="vspackage-registration"></a>VSPackage 注册
 VSPackage 必须 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 建议它们已安装并且应加载。 此过程是通过在注册表中写入信息完成的。 这是安装程序的典型作业。
@@ -27,9 +27,9 @@ VSPackage 必须 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] �
 > [!NOTE]
 > 在 VSPackage 开发过程中，使用自我注册是一种接受的做法。 但是 [!INCLUDE[vsipprvsip](../../extensibility/includes/vsipprvsip_md.md)] ，合作伙伴无法在安装过程中使用自注册来发货。
 
- 安装程序包中的注册表Windows项通常在 Registry 表中创建。 还可以在 Registry 表中注册文件扩展名。 但是，Windows安装程序通过编程标识符提供内置支持， (ProgId) 、类、扩展和谓词表。 有关详细信息，请参阅数据库 [表](/windows/desktop/Msi/database-tables)。
+ 安装程序包中的注册表Windows项通常在 Registry 表中创建。 还可以在 Registry 表中注册文件扩展名。 但是，Windows安装程序通过 ProgId (、类、扩展和谓词表的编程) 提供内置支持。 有关详细信息，请参阅数据库 [表](/windows/desktop/Msi/database-tables)。
 
- 请确保注册表项与适用于所选并行策略的组件相关联。 例如，共享文件的注册表项应与该文件的安装程序组件Windows相关联。 同样，特定于版本的文件的注册表项应与该文件的 组件相关联。 否则，安装或卸载的一个版本的 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可能会中断其他版本中的 VSPackage。 有关详细信息，请参阅支持多个[版本的 Visual Studio。](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
+ 请确保注册表项与适用于所选并行策略的组件相关联。 例如，共享文件的注册表项应该与该文件的安装程序Windows相关联。 同样，特定于版本的文件的注册表项应与该文件的 组件相关联。 否则，安装或卸载的一个版本的 VSPackage [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 可能会中断其他版本中的 VSPackage。 有关详细信息，请参阅支持多个[版本的 Visual Studio。](../../extensibility/supporting-multiple-versions-of-visual-studio.md)
 
 > [!NOTE]
 > 管理注册的最简单方法是在同一文件中使用相同的数据进行开发人员注册和安装时注册。 例如，某些安装程序开发工具可以在生成时使用 .reg 格式的文件。 如果开发人员维护 .reg 文件进行自己的日常开发和调试，则这些相同的文件可以自动包含在安装程序中。 如果无法自动共享注册数据，必须确保安装程序的注册数据副本是最新的。
@@ -58,6 +58,6 @@ VSPackage 必须 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] �
 
 - 如果组件同时指定为"从源运行"并列在 SelfReg 表中，则可拒绝自注册代码访问网络资源（如类型库）。 这可能会导致在管理安装过程中组件的安装失败。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Windows Installer](/windows/desktop/Msi/windows-installer-portal)
 - [托管包注册](/previous-versions/bb166783(v=vs.100))

@@ -1,7 +1,7 @@
 ---
 title: VBA 访问权限，用于创建/打开VSTO系统项目
 titleSuffix: ''
-description: 了解必须先显式启用对 Office VBA 项目系统的访问权限，然后才能创建或打开 Visual Studio Tools for Office 系统项目。
+description: 了解必须先显式启用对 Office VBA 项目系统的访问权限，然后才能创建或打开 Visual Studio Tools for Office系统项目。
 ms.custom: seodec18, SEO-VS-2020
 ms.date: 08/14/2019
 ms.topic: conceptual
@@ -21,15 +21,15 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8c6e7d980301c0ad426c54e5f5838d64a11ca0bb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106375"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602291"
 ---
-# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 的访问权限，以创建或打开 Visual Studio Tools 系统Microsoft Office应用程序
+# <a name="enable-access-to-vba-to-create-or-open-a-visual-studio-tools-for-the-microsoft-office-system-project"></a>启用对 VBA 的访问权限，以创建或打开Visual Studio Tools系统Microsoft Office的虚拟机
 
-必须先显式启用对 Microsoft Office 中 Visual Basic for Applications (VBA) 项目系统的访问，然后才能为 Visual Studio Tools 系统项目创建Microsoft Office应用程序。
+必须先显式启用对 Microsoft Office 中 Visual Basic for Applications (VBA) 项目系统的访问，然后才能为 Microsoft Office 系统项目创建或打开 Visual Studio Tools。
 
  Microsoft Office项目需要访问 Microsoft Office Word 和 Microsoft Office Excel 中的 Visual Basic for Applications (VBA) 项目系统，即使这些项目不使用 Visual Basic for Applications。 Visual Basic 和 C# 项目中控件的设计时支持均需依赖 Visual Basic for Applications 项目系统。
 
@@ -40,9 +40,9 @@ ms.locfileid: "122106375"
 
  值得注意的是，如果计算机此前已经感染宏病毒，则禁用对 Visual Basic for Applications 项目系统的访问本身并不会防止感染病毒，而只能帮助阻止某些病毒传播到其他文档。 默认情况下该选项为禁用状态，从而为你的计算机提供一层额外保护，但如果遵循以下最佳安全做法，即使启用该选项，也不会使你的计算机更易受病毒感染。
 
- 针对 Office 宏病毒的最佳保护是在"高"或"非常高"安全级别运行 Office，仅信任来自已验证已知源的宏，并随时使用安全修补程序和病毒扫描程序保持最新。
+ 针对 Office 宏病毒的最佳保护是在"高"或"非常高"安全级别运行 Office，仅信任来自已验证已知源的宏，并随时了解安全修补程序和病毒扫描程序。
 
- 可以手动启用或禁用"**信任访问Visual Basic Project** 选项。
+ 可以手动启用或禁用"信任 **访问Visual Basic Project** 选项。
 
  如果看到 VBA 或 COM 错误，则可以修复 Office 的安装。
 
@@ -56,9 +56,9 @@ ms.locfileid: "122106375"
 
 3. 单击 **"信任中心**"，然后单击"**信任中心设置"。**
 
-4. 在信任 **中心中**，单击"**宏设置"。**
+4. 在信任 **中心中**，单击"**宏设置"**。
 
-5. 选中或取消选中 **"信任对 VBA 项目对象** 模型的访问权限"，以启用或Visual Basic访问。
+5. 选中或取消选中 **"信任对 VBA 项目对象** 模型的访问权限"，以启用或Visual Basic项目。
 
 6. 单击“确定”。
 
@@ -68,7 +68,7 @@ ms.locfileid: "122106375"
 
 2. 在" **安全性"** 对话框中，单击" **受信任的发布者"** 选项卡。
 
-3. 选择此选项可启用或清除以禁用对 Visual Basic Project 的信任 **访问**。
+3. 选择此选项可启用或清除以禁用对 **Visual Basic Project。**
 
 4. 单击“确定”。
 
@@ -80,7 +80,7 @@ ms.locfileid: "122106375"
 
 3. 单击 **"信任中心**"，然后单击"**信任中心设置"。**
 
-4. 在信任 **中心中**，单击"**宏设置"。**
+4. 在信任 **中心中**，单击"**宏设置"**。
 
 5. 在"**宏设置** 部分，选择所需的设置。
 
@@ -108,17 +108,17 @@ ms.locfileid: "122106375"
 
 6. 展开 **Office"** 选择应用程序和工具 **的更新选项"列表中的"共享功能**"。
 
-7. 打开 Visual Basic for Applications 旁边的下拉菜单 **，** 然后单击"从 **我的电脑"。**
+7. 打开 Visual Basic for Applications 旁边的 **下拉菜单，然后单击**"从 **我的电脑"。**
 
 8. 单击 **“继续”** 。
 
-9. 单击“关闭”。
+9. 单击“关闭”  。
 
 ## <a name="to-repair-your-installation-of-office"></a>修复 Office 安装
 
 1. 在控制面板，运行 **"添加或删除程序或****程序和功能"。**
 
-2. 在"当前已安装Office **列表中选择你的版本**。
+2. 在"当前已安装Office **中选择你的版本**。
 
 3. 单击“更改”。
 
@@ -126,5 +126,5 @@ ms.locfileid: "122106375"
 
 5. 选择 **"检测并修复我的Office错误"，** 然后单击"安装 **"。**
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [安全Office解决方案](../vsto/securing-office-solutions.md)

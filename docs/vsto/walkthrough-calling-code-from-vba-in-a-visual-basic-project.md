@@ -24,11 +24,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 631511ba470b42d07878d175c953bb7047914fc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122147643"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602214"
 ---
 # <a name="walkthrough-call-code-from-vba-in-a-visual-basic-project"></a>演练：从应用程序项目中的 VBA Visual Basic代码
   本演练演示如何在 Microsoft Office Word 的文档级自定义项中从文档的 Visual Basic for Applications (VBA) 代码中调用方法。 该过程包括三个基本步骤：向 `ThisDocument` 主机项类添加方法，向 VBA 代码公开方法，然后从文档中的 VBA 代码调用方法。
@@ -68,7 +68,7 @@ ms.locfileid: "122147643"
 
 1. 启动 Word。
 
-2. 将活动文档另存为 **\* .docm** (启用了 Word 宏) **DocumentWithVBA**。 将它保存在一个方便的位置，例如桌面。
+2. 将活动文档另存为启用了 Word 宏的文档 (**\* .docm**) **DocumentWithVBA**。 将它保存在一个方便的位置，例如桌面。
 
 3. 在功能区上，单击 **“开发人员”** 选项卡。
 
@@ -115,7 +115,7 @@ ms.locfileid: "122147643"
 
 8. 选择 **“复制现有文档”**，然后在 **“现有文档的完整路径”** 框中，指定先前创建的 **DocumentWithVBA** 文档的位置。 如果使用你自己的启用宏的文档，请改为指定此文档的位置。
 
-9. 单击“完成”。
+9. 单击“完成”  。
 
      [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)]在设计器 **中打开 DocumentWithVBA** 文档，并将 **CallingCodeFromVBA** 项目添加到 **解决方案资源管理器。**
 
@@ -219,9 +219,9 @@ ms.locfileid: "122147643"
 
 - 从 VBA 调用 VSTO 外接程序中的代码。 有关详细信息，请参阅演练：从 VBA 调用VSTO[外接程序中的代码](../vsto/walkthrough-calling-code-in-a-vsto-add-in-from-vba.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)
 - [计划文档级自定义项](../vsto/programming-document-level-customizations.md)
 - [如何：向项目中的 VBA Visual Basic代码](../vsto/how-to-expose-code-to-vba-in-a-visual-basic-project.md)
 - [如何：在 Visual C&#35;项目中向 VBA 公开代码](../vsto/how-to-expose-code-to-vba-in-a-visual-csharp-project.md)
-- [演练：在 Visual C&#35; 项目中从 VBA 调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)
+- [演练：在 Visual C&#35;项目中从 VBA 调用代码](../vsto/walkthrough-calling-code-from-vba-in-a-visual-csharp-project.md)

@@ -12,11 +12,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 844e69e990d3abc9398d32f7d969572ff0a0db66
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114012"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601269"
 ---
 # <a name="native-minimum-rules-rule-set"></a>“本机最少量规则”规则集
 
@@ -143,7 +143,7 @@ Microsoft 本机最低规则侧重于本机代码中最重要的问题，包括�
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|\_宏值的参数 \_ \_ 为 null|
+|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|

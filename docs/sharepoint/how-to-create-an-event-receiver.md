@@ -21,11 +21,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 66b62a619b64534f56039e6213b01d4d12bb941a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148943"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663846"
 ---
 # <a name="how-to-create-an-event-receiver"></a>如何：创建事件接收器
   通过创建 *事件接收器*，你可以在用户与列表或列表项等 SharePoint 项进行交互时做出响应。 例如，当用户更改日历或从联系人列表中删除名称时，可以触发事件接收器中的代码。 通过遵循本主题，可以了解如何将事件接收器添加到列表实例。
@@ -72,6 +72,6 @@ ms.locfileid: "122148943"
 
      选择 " **保存** " 按钮后，" **患者名称** " 列会自动将名称更新为 Scott 棕色。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [开发 SharePoint 解决方案](../sharepoint/developing-sharepoint-solutions.md)

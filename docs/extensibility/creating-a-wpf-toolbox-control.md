@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6bf8dae61373b8a9ba5814930298896f3ba41da6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051126"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600985"
 ---
 # <a name="create-a-wpf-toolbox-control"></a>创建 WPF 工具箱控件
 
@@ -62,7 +62,7 @@ ms.locfileid: "122051126"
 
 1. 在 *代码视图中打开 MyToolboxControl.xaml.cs。*
 
-2. 找到 类 `MyToolboxControl` 并将其重命名为 TestControl。  (最快的方法就是重命名 类，然后从 **上下文菜单中选择** "重命名"并完成步骤。  (有关 **Rename** 命令的信息，请参阅使用 [C# (](../ide/reference/rename.md)重命名) .) 
+2. 找到 类 `MyToolboxControl` 并将其重命名为 TestControl。  (最快的方法就是重命名 类，然后从 **上下文菜单中选择** "重命名"并完成步骤。  (有关 **Rename** 命令的信息，请参阅重命名重构 ([C#)](../ide/reference/rename.md).) 
 
 3. 转到 属性 `ProvideToolboxControl` ，将第一个参数的值更改为"测试 **"。** 这是将包含工具箱 中的 控件的组 **的名称**。
 
@@ -81,7 +81,7 @@ ms.locfileid: "122051126"
 
 ## <a name="build-test-and-deployment"></a>生成、测试和部署
 
- 调试项目时，应找到已安装在试验实例的"工具箱"中的 **控件Visual Studio。**
+ 调试项目时，应找到已安装在试验实例的"工具箱"中的控件Visual Studio。
 
 ### <a name="to-build-and-test-the-control"></a>生成并测试控件
 
@@ -103,4 +103,4 @@ ms.locfileid: "122051126"
 
 3. Upload *.vsix* 文件连接到网络或网站。
 
-    如果将文件上传到 Visual Studio [Marketplace](https://marketplace.visualstudio.com/)网站，其他用户可以使用 Visual Studio 中的"工具扩展和更新"来联机查找并  >  安装控件。
+    如果将文件上传到 Visual Studio [Marketplace](https://marketplace.visualstudio.com/)网站，其他用户可以使用 Visual Studio 中的工具扩展和更新来联机查找并  >  安装控件。

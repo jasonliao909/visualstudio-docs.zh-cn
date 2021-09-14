@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 4760b69d7ea1b9b39bc6d1dfb0b3d4a8be77ded30382473383fb921d2357fd7a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3241457fc23a0df369c1ebc78546a5045e89975
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121448255"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600763"
 ---
 # <a name="icon-element-visual-studio-templates"></a>Icon 元素 (Visual Studio 模板) 
 指定用作图标的图像文件的路径和文件名，该图标显示在模板的 "**新建 Project** " 或 "**添加新项**" 对话框中。

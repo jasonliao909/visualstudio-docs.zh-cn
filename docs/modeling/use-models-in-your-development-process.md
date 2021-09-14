@@ -13,11 +13,11 @@ ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
 ms.openlocfilehash: 910aa4d25325ac6498e941bbba3a1a6d7ee2f957
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122033988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663854"
 ---
 # <a name="use-models-in-your-development-process"></a>在你的开发过程中使用模型
 
@@ -134,12 +134,12 @@ ms.locfileid: "122033988"
 
 |**类别**|**链接**|
 |-|-|
-|**视频**|![视频链接 ](../data-tools/media/playvideo.gif) [MSDN 如何观看视频：如何创建和使用 UML 模型和关系图 (Visual Studio 2010 Ultimate) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![视频频道 ](../data-tools/media/playvideo.gif) [9 的链接：2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project) Visual Studio UML<br /><br /> ![视频 ](../data-tools/media/playvideo.gif) [MSDN 如何执行 I 系列的链接：UML 工具和扩展性 (Visual Studio 2010 Ultimate) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
+|**视频**|![视频链接 ](../data-tools/media/playvideo.gif) [MSDN How I Video：How to Create and Use UML Models and Diagrams (Visual Studio 2010 Ultimate) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))<br /><br /> ![视频频道 ](../data-tools/media/playvideo.gif) [9 的链接：2010](https://channel9.msdn.com/blogs/clinted/uml-with-vs-2010-part-1-brainstorming-a-project) Visual Studio UML<br /><br /> ![视频 ](../data-tools/media/playvideo.gif) [MSDN 如何执行 I 系列的链接：UML 工具和扩展性 (Visual Studio 2010 Ultimate) ](/previous-versions/visualstudio/visual-studio-2010/dd831853(v=vs.100))|
 |**论坛**|- [Visual Studio 可视化和建模工具](https://social.msdn.microsoft.com/Forums/en-US/home?forum=vsarch)<br />- [Visual Studio 可视化和建模 SDK（DSL 工具）](https://social.msdn.microsoft.com/Forums/home?forum=dslvsarchx)|
 |**Blogs**|[Microsoft DevOps](https://devblogs.microsoft.com/devops/)|
 |**技术文章和日志**|[MSDN 体系结构中心](/previous-versions/dn630665(v=msdn.10))|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [在敏捷开发中使用模型](/previous-versions/ff398061(v=vs.140))
 - [为你的应用程序创建模型](../modeling/create-models-for-your-app.md)

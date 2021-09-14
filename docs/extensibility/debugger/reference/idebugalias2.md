@@ -1,5 +1,5 @@
 ---
-description: 表示变量的数值别名，使表达式 (企业版) 获取别名的应用程序域。
+description: 表示变量的数值别名，并启用表达式 (企业版) 获取别名的应用程序域。
 title: IDebugAlias2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,17 +13,17 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: ae66d69153a539c42000914c9df1c275aa3a431c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072871"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126600958"
 ---
 # <a name="idebugalias2"></a>IDebugAlias2
 > [!IMPORTANT]
 > 在 Visual Studio 2015 中，这种实现表达式计算器的方法已弃用。 有关实现 CLR 表达式评估器的信息，请参阅 [CLR 表达式评估器](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/CLR-Expression-Evaluators) 和 [托管表达式评估器示例](https://github.com/Microsoft/ConcordExtensibilitySamples/wiki/Managed-Expression-Evaluator-Sample)。
 
- 表示变量的数值别名，使表达式 (企业版) 获取别名的应用程序域。
+ 表示变量的数值别名，并启用表达式 (企业版) 获取别名的应用程序域。
 
 ## <a name="syntax"></a>语法
 

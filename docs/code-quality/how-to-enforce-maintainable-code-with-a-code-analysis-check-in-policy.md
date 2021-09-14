@@ -14,11 +14,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 4188a9d12daa5294e6771d3a1b4fc4a37b044521
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601301"
 ---
 # <a name="how-to-enforce-maintainable-code-with-a-code-analysis-check-in-policy"></a>如何：使用代码分析签入策略强制执行可维护代码
 
@@ -26,11 +26,11 @@ ms.locfileid: "122091300"
 
 可以启用"继承深度"、类耦合度、可维护性索引和复杂性规则，以通过Code Analysis策略强制实施可维护代码。 所有这些规则均位于策略编辑器中的"可维护性规则"Code Analysis下。
 
-Team Foundation 的版本控制管理员可以将Code Analysis性规则添加到签入策略要求。 这些签入策略要求开发人员Code Analysis签入之前基于这些规则更改运行这些策略。
+Team Foundation 的版本控制管理员可以将Code Analysis性规则添加到签入策略要求。 这些签入策略要求开发人员在Code Analysis之前基于这些规则更改运行这些策略。
 
 ## <a name="to-open-the-code-analysis-policy-editor"></a>打开 Code Analysis 策略编辑器
 
-1. 在 **团队资源管理器** 中，右键单击项目，单击 **"Project 设置"，** 然后单击"**源代码管理"。**
+1. 在 **团队资源管理器** 中，右键单击项目，单击"Project 设置"，然后单击"**源代码管理"。** 
 
      将显示 **"源代码** 管理"对话框。
 
@@ -38,13 +38,13 @@ Team Foundation 的版本控制管理员可以将Code Analysis性规则添加到
 
      将出现 **"添加签入策略** "对话框。
 
-3. 在 **"签入策略"列表中**，**选中"Code Analysis"** 复选框，然后单击"确定 **"。**
+3. 在 **"签入策略"** 列表中，**选中"Code Analysis"** 复选框，然后单击"确定 **"。**
 
      将显示 **Code Analysis策略编辑器**"对话框。
 
 ## <a name="to-enable-code-analysis-maintainability-rules"></a>启用代码分析可维护性规则
 
-1. 在 **"Code Analysis编辑器**"对话框中的"规则"设置，**展开**"可 **维护性规则"** 节点。
+1. 在 **"Code Analysis编辑器**"对话框中的"规则 **"设置，展开**"可 **维护性规则"** 节点。
 
 2. 选中以下规则的复选框：
 
@@ -60,7 +60,7 @@ Team Foundation 的版本控制管理员可以将Code Analysis性规则添加到
 
 3. 单击“确定”。 新的签入策略现在适用于将来的签入。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [代码指标值](../code-quality/code-metrics-values.md)
 - [创建和使用代码分析签入策略](../code-quality/how-to-create-or-update-standard-code-analysis-check-in-policies.md)

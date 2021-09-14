@@ -1,6 +1,6 @@
 ---
-description: vstav3 命名空间的 entryPointsCollection 元素包含与 Office 解决方案相关联的所有 s 元素。
-title: '&lt;&gt;Visual Studio 中 (Office 开发的 entryPointsCollection 元素) '
+description: vstav3 命名空间的 entryPointsCollection 元素包含与 Office 关联的 entryPoints 元素。
+title: '&lt;entryPointsCollection &gt; 元素 (Office Visual Studio) '
 titleSuffix: ''
 ms.custom: seodec18
 ms.date: 02/02/2017
@@ -19,13 +19,13 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 65ba6319caed660f0ee752ce1aa7a2804c48b53a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106362"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602293"
 ---
-# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;&gt;Visual Studio 中 (Office 开发的 entryPointsCollection 元素) 
+# <a name="ltentrypointscollectiongt-element-office-development-in-visual-studio"></a>&lt;entryPointsCollection &gt; 元素 (Office Visual Studio) 
   `entryPointsCollection` 命名空间的 `vstav3` 元素包含所有与 Office 解决方案关联的 `entryPoints` 元素。
 
 ## <a name="syntax"></a>语法
@@ -51,12 +51,12 @@ ms.locfileid: "122106362"
  `entryPointsCollection` 具有下列元素。
 
 ### <a name="entrypoints"></a>entryPoints
- 必需。 `entryPoints`命名空间中元素的角色 `vstav3` 在[&#60;s&#62; 元素中定义 &#40;Office 在 Visual Studio&#41;中进行开发](../vsto/entrypoints-element-office-development-in-visual-studio.md)。
+ 必需。 命名空间中元素的角色在&#60;`entryPoints` `vstav3` 中定义[&#62;&#40;Office元素Visual Studio&#41;。 ](../vsto/entrypoints-element-office-development-in-visual-studio.md)
 
-## <a name="document-level-customization-example"></a>文档级自定义项示例
+## <a name="document-level-customization-example"></a>文档级自定义示例
 
 ### <a name="description"></a>说明
- 下面的代码示例演示使用 `entryPointsCollection` 部署的文档级解决方案的应用程序清单中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示使用 `entryPointsCollection` 部署的文档级解决方案的应用程序清单中的 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]元素。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -102,7 +102,7 @@ ms.locfileid: "122106362"
 ## <a name="vsto-add-in-example"></a>VSTO外接程序示例
 
 ### <a name="description"></a>说明
- 下面的代码示例演示应用程序级解决方案的应用程序清单中的 `entryPointsCollection` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示应用程序级解决方案的应用程序清单中的 `entryPointsCollection` 元素，该解决方案是使用 [!INCLUDE[ndptecclick](../vsto/includes/ndptecclick-md.md)]部署的。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -121,10 +121,10 @@ ms.locfileid: "122106362"
   </vstav3:entryPointsCollection>
 ```
 
-## <a name="multi-project-deployment-example"></a>多 Project 部署示例
+## <a name="multi-project-deployment-example"></a>多Project部署示例
 
 ### <a name="description"></a>说明
- 下面的代码示例演示使用两个 Office 解决方案进行的多项目部署的应用程序清单中的 `entryPointsCollection` 元素。 此代码示例是[Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)中提供的一个更大示例的一部分。
+ 下面的代码示例演示使用两个 Office 解决方案进行的多项目部署的应用程序清单中的 `entryPointsCollection` 元素。 此代码示例是应用程序清单中为解决方案 提供Office[的一部分](../vsto/application-manifests-for-office-solutions.md)。
 
 ### <a name="code"></a>代码
 
@@ -179,8 +179,8 @@ ms.locfileid: "122106362"
     </vstav3:entryPointsCollection>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [Office 解决方案的应用程序清单](../vsto/application-manifests-for-office-solutions.md)
-- [Office 解决方案的部署清单](../vsto/deployment-manifests-for-office-solutions.md)
-- [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)
+- [解决方案的应用程序Office清单](../vsto/application-manifests-for-office-solutions.md)
+- [解决方案部署Office清单](../vsto/deployment-manifests-for-office-solutions.md)
+- [ClickOnce应用程序清单](../deployment/clickonce-application-manifest.md)

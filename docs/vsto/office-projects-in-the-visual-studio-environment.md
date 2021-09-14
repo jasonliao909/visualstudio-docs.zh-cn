@@ -1,6 +1,6 @@
 ---
 title: Office环境中Visual Studio项目
-description: 了解Microsoft Office项目的开发体验如何与项目中的其他类型的项目Visual Studio类似，例如Windows窗体项目。
+description: 了解Microsoft Office项目的开发体验如何类似于 Visual Studio 中的其他类型的项目，例如 Windows Forms 项目。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -45,11 +45,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 1fb601543c6650fc87be15adcd7ffc2e689d575f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122082850"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602227"
 ---
 # <a name="office-projects-in-the-visual-studio-environment"></a>Office环境中Visual Studio项目
   Microsoft Office 项目的开发体验与 Visual Studio 中其他类型的项目（如 Windows 窗体项目）相似。 当你创建或打开 Office 项目时，项目项会出现在 **“解决方案资源管理器”** 中。 对于文档级项目，文档（即 Word 文档或 Excel 工作簿）将在 Visual Studio 中打开，该文档的行为就如同一个可视化设计器。
@@ -91,7 +91,7 @@ ms.locfileid: "122082850"
 ### <a name="controls-on-documents"></a>文档中的控件
  可以将宿主控件  和 Windows 窗体控件从 Visual Studio **“工具箱”** 拖到文档设计图面上。 宿主控件是可用于通过 Visual Studio 创建的 Office 项目的特殊版本的 Office 对象，例如 Word 内容控件和 Excel 范围。 宿主控件具有在对应 Office 对象中不可用的附加功能，例如数据绑定和附加事件。
 
- 有关详细信息，请参阅主机[项和宿主控件概述Windows](../vsto/host-items-and-host-controls-overview.md)[文档概述上的Office窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。
+ 有关详细信息，请参阅主机[项和宿主控件概述](../vsto/host-items-and-host-controls-overview.md)Windows[文档概述上的Office窗体控件](../vsto/windows-forms-controls-on-office-documents-overview.md)。
 
 ### <a name="excel-worksheets-and-workbooks-in-the-designer"></a>Excel设计器中创建工作表和工作簿
  当在设计器中打开工作表时，可以采用与在 Excel 中直接打开进行修改的相同方式来修改工作表。 当双击工作表单元格时，该单元格将切换到编辑模式。 如果双击包含宿主控件的单元格，代码编辑器将打开Visual Studio生成控件的默认事件处理程序。 若要导航到其他工作表，可以在设计器底部单击工作表选项卡。
@@ -108,7 +108,7 @@ ms.locfileid: "122082850"
 ### <a name="design-mode-vs-runtime-mode"></a>设计模式与运行时模式
  当文档在 Visual Studio 环境中打开时，它始终处于设计模式 。 某些任务（例如将宿主控件拖动到文档图面）只能在设计模式下执行。
 
- 若要在运行时模式下 *查看文档*，必须打开应用程序，并打开 Visual Studio。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。
+ 若要在运行时模式下 *查看文档*，必须在应用程序外部打开应用程序和Visual Studio。 也可以生成并运行项目，这样便会在 Visual Studio 外自动打开文档和应用程序。
 
 ## <a name="code-editor"></a>代码编辑器
  通过代码编辑器，可以查看和修改解决方案中的可见代码文件。 这些文件包含定义解决方案行为的代码。
@@ -119,9 +119,9 @@ ms.locfileid: "122082850"
  **“属性”** 窗口显示 **“解决方案资源管理器”** 中选择的项目项的属性，以及设计器中选择的 UI 元素的属性，具体如文档级项目中的控件或文档的属性。 有些属性是特定于应用程序和文档的，而有些属性则是所有项目共有的。
 
 ## <a name="data-sources-window"></a>“数据源”窗口
- 可以在文档级 Office 项目中使用 **“数据源”** 窗口将数据源拖到文档上，以及创建绑定到数据源的控件。 有关详细信息，请参阅[将控件绑定到](../data-tools/bind-controls-to-data-in-visual-studio.md)Visual Studio。
+ 可以在文档级 Office 项目中使用 **“数据源”** 窗口将数据源拖到文档上，以及创建绑定到数据源的控件。 有关详细信息，请参阅[将控件绑定到 Visual Studio。](../data-tools/bind-controls-to-data-in-visual-studio.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [设计和创建Office解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [Office项目模板概述](../vsto/office-project-templates-overview.md)

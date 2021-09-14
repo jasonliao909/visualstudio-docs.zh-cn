@@ -1,5 +1,5 @@
 ---
-title: Emulator快速在本地运行/调试 Azure 云服务
+title: Emulator用于在本地运行/调试 Azure 云服务的 Express
 ms.custom: SEO-VS-2020
 description: 使用 Emulator Express 在本地计算机上运行和调试云服务
 author: mikejo5000
@@ -10,11 +10,11 @@ ms.workload: azure-vs
 ms.date: 03/06/2017
 ms.author: mikejo
 ms.openlocfilehash: be382d80aea5a8f44001dc453741a1685fb644bc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122037468"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602141"
 ---
 # <a name="using-emulator-express-to-run-and-debug-an-azure-cloud-service-on-a-local-machine"></a>使用 Emulator Express 在本地计算机上运行和调试 Azure 云服务
 通过使用 Emulator Express，可以测试和调试云服务，而不需要以管理员身份运行 Visual Studio。 可以将项目设置指定为根据云服务的要求使用 Emulator Express 或完整版模拟器。 有关完整模拟器的详细信息，请参阅 [Run an Azure Application in the Compute Emulator](/azure/storage/common/storage-use-emulator)（在计算模拟器中运行 Azure 应用程序）。
@@ -24,7 +24,7 @@ ms.locfileid: "122037468"
 
 1. 在 Visual Studio 中创建或打开 Azure 云服务项目。
 
-1. 在解决方案资源管理器，右键单击项目，然后从上下文菜单中选择"属性 **"。**
+1. 在解决方案资源管理器中，右键单击项目，然后从上下文菜单中选择 " **属性**"。
 
 1. 在项目属性页中，选择“Web”选项卡。
 

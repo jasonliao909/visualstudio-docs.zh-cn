@@ -11,11 +11,11 @@ ms.technology: vs-ide-code-analysis
 ms.workload:
 - multiple
 ms.openlocfilehash: 318c10af962aed0790cfa4b193b17637ec30be0e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122031622"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601268"
 ---
 # <a name="native-recommended-rules-rule-set"></a>“本机建议规则”规则集
 
@@ -77,7 +77,7 @@ ms.locfileid: "122031622"
 |[C6285](/cpp/code-quality/c6285)|Logical-Or常量数|
 |[C6286](/cpp/code-quality/c6286)|非零Logical-Or失去副作用|
 |[C6287](/cpp/code-quality/c6287)|冗余测试|
-|[C6288](/cpp/code-quality/c6288)|相互包含Logical-And为 false|
+|[C6288](/cpp/code-quality/c6288)|相互包含Logical-And为 False|
 |[C6289](/cpp/code-quality/c6289)|相互排斥Logical-Or为 true|
 |[C6290](/cpp/code-quality/c6290)|逻辑非和按位与的优先级|
 |[C6291](/cpp/code-quality/c6291)|逻辑非和按位或的优先级|
@@ -157,8 +157,8 @@ ms.locfileid: "122031622"
 |[C28020](/cpp/code-quality/c28020)|此调用中的表达式不为 true|
 |[C28021](/cpp/code-quality/c28021)|批注的参数必须为指针型|
 |[C28022](/cpp/code-quality/c28022)|此函数 (函数) 函数类与用于定义 (的 typedef) 函数类不匹配。|
-|[C28023](/cpp/code-quality/c28023)|要分配或传递的函数应具有至少一个类的 \_ Function \_ 类 (\_ 注释) |
-|[C28024](/cpp/code-quality/c28024)|分配给 的函数指针使用函数类进行批注，该函数类未包含在函数类 (列表中) 列表中。|
+|[C28023](/cpp/code-quality/c28023)|要分配或传递的函数应具有至少一个类的 Function 类注释 (\_ \_ \_ 一) |
+|[C28024](/cpp/code-quality/c28024)|要分配给 的函数指针使用函数类进行批注，该函数类未包含在 () 列表中。|
 |[C28039](/cpp/code-quality/c28039)|实际参数的类型应完全匹配类型|
 |[C28112](/cpp/code-quality/c28112)|通过 Interlocked 函数访问的变量必须始终通过 Interlocked 函数访问。|
 |[C28113](/cpp/code-quality/c28113)|通过 Interlocked 函数访问局部变量|
@@ -168,7 +168,7 @@ ms.locfileid: "122031622"
 |[C28159](/cpp/code-quality/c28159)|请考虑改为使用另一个函数。|
 |[C28160](/cpp/code-quality/c28160)|错误批注|
 |[C28163](/cpp/code-quality/c28163)|永远不应从 try/except 块中调用函数|
-|[C28164](/cpp/code-quality/c28164)|参数被传递给函数，该函数需要指向对象的指针，而不是 (指针指向指针) |
+|[C28164](/cpp/code-quality/c28164)|参数被传递给函数，该函数需要指向对象的指针 (不是指向指针的指针) |
 |[C28182](/cpp/code-quality/c28182)|取消引用 NULL 指针。 该指针包含与另一指针相同的 NULL 值。|
 |[C28183](/cpp/code-quality/c28183)|参数可以是一个值，并且是在指针中找到的值的副本|
 |[C28193](/cpp/code-quality/c28193)|变量保存一个必须检查的值|
@@ -225,7 +225,7 @@ ms.locfileid: "122031622"
 |[C28267](/cpp/code-quality/c28267)|在函数中找到了批注的语法错误。|
 |[C28272](/cpp/code-quality/c28272)|在检查参数时，函数的批注与函数声明不一致|
 |[C28273](/cpp/code-quality/c28273)|对于函数，线索与函数声明不一致|
-|[C28275](/cpp/code-quality/c28275)|\_宏值的参数 \_ \_ 为 null|
+|[C28275](/cpp/code-quality/c28275)|宏值 \_ 的参数 \_ 为 \_ null|
 |[C28279](/cpp/code-quality/c28279)|对于符号，已找到“起始”符号，但没有匹配的“结束”符号|
 |[C28280](/cpp/code-quality/c28280)|对于符号，已找到“结束”符号，但没有匹配的“起始”符号|
 |[C28282](/cpp/code-quality/c28282)|格式字符串必须位于前置条件中|
@@ -242,7 +242,7 @@ ms.locfileid: "122031622"
 |[C28303](/cpp/code-quality/c28303)|在批注中找到含义模糊的 \_Deref\_ 运算符。|
 |[C28304](/cpp/code-quality/c28304)|发现未正确放置的 \_Notref\_ 运算符被应用到令牌。|
 |[C28305](/cpp/code-quality/c28305)|在分析标记时发现错误。|
-|[C28306](/cpp/code-quality/c28306)|参数上的批注为 sal|
-|[C28307](/cpp/code-quality/c28307)|参数上的批注为 sal|
+|[C28306](/cpp/code-quality/c28306)|参数上的批注为过时|
+|[C28307](/cpp/code-quality/c28307)|参数上的批注为过时|
 |[C28350](/cpp/code-quality/c28350)|批注介绍了无条件适用的情形。|
 |[C28351](/cpp/code-quality/c28351)|批注介绍了在条件中无法使用动态值（变量）的位置。|

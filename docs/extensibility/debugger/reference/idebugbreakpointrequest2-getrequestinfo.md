@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 17221f1ac28ff3f0f7e587b78900ee3ece83b713
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064625"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126663802"
 ---
 # <a name="idebugbreakpointrequest2getrequestinfo"></a>IDebugBreakpointRequest2::GetRequestInfo
 获取描述此断点请求的断点请求信息。
@@ -43,7 +43,7 @@ int GetRequestInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 [in]来自参数 [BPREQI_FIELDS标志的组合](../../../extensibility/debugger/reference/bpreqi-fields.md) ，用于确定要填充参数 `pBPRequestInfo` 中的哪些字段。
 
@@ -218,7 +218,7 @@ HRESULT CDebugBreakpointRequest::CopyBP_REQUEST_INFO(
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugBreakpointRequest2](../../../extensibility/debugger/reference/idebugbreakpointrequest2.md)
 - [BPREQI_FIELDS](../../../extensibility/debugger/reference/bpreqi-fields.md)
 - [BP_REQUEST_INFO](../../../extensibility/debugger/reference/bp-request-info.md)

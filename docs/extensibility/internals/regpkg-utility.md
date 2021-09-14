@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: 7911c31b6e7766d69e51b65abea8184f4d6fbbdc8d2518560b13d665c365e61f
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ed91788526177392901a6fd8aa03f139f9267827
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432223"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664316"
 ---
 # <a name="regpkg-utility"></a>RegPkg 实用工具
 > [!NOTE]
@@ -55,6 +55,6 @@ RegPkg [/root:<root>] [/regfile:<regfile>] [/rgsfile:<rgsfile> [/rgm]] [/vrgfile
 
  使用 /regfile 或 /vrgfile 或 /rgsfile 或 /wixfile。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [VSPackages](../../extensibility/internals/vspackages.md)
 - [RegPkg 包注册疑难解答](../../extensibility/internals/troubleshooting-regpkg-package-registration.md)

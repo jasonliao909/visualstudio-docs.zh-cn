@@ -9,11 +9,11 @@ ms.topic: conceptual
 ms.date: 11/11/2017
 ms.author: ghogen
 ms.openlocfilehash: cd41925fb1b9078b108213870b95d328c81103a0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122114441"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602121"
 ---
 # <a name="publishing-a-cloud-service-using-visual-studio"></a>使用 Visual Studio 发布云服务
 
@@ -72,7 +72,7 @@ Visual Studio 可以将应用程序直接发布到 Azure，同时支持云服务
 
 - **只能支持 Web 角色的** 单个实例：部署环境中不能有多个 Web 角色的实例。 但是，支持仅含一个实例的多个 Web 角色。
 
-- 启用 **远程桌面** 连接：此要求允许Web 部署使用用户和密码连接到虚拟机，以将更改部署到运行 Internet Information Services (IIS) 。 此外，可能需要连接到虚拟机才能将可信证书添加到此虚拟机上的 IIS。 （此证书可以确保 Web 部署使用的 IIS 远程连接是安全的。）
+- **启用远程桌面** 连接：此Web 部署允许用户使用用户和密码连接到虚拟机，以将更改部署到运行 Internet Information Services (IIS) 。 此外，可能需要连接到虚拟机才能将可信证书添加到此虚拟机上的 IIS。 （此证书可以确保 Web 部署使用的 IIS 远程连接是安全的。）
 
 以下过程假设你正在使用 **“发布 Azure 应用程序”** 向导。
 

@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: da99b9cbe43d51df0a010e618038240c148a207f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152336"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664289"
 ---
 # <a name="web-projects"></a>Web 项目
 Web 项目系统是用于创建 Web 项目的项目系统。 Web 项目，然后创建 Web 应用程序。 您可以使用传统的编程语言（如 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 或）来编写网页 [!INCLUDE[csprcs](../../data-tools/includes/csprcs_md.md)] ，以便从用户那里收集和处理信息，将其存储在数据库中，等等。 具有关联代码的网页称为智能网页。

@@ -1,6 +1,6 @@
 ---
 title: 使用 ADO.NET 创建简单的数据应用程序
-description: 了解如何在 Visual Studio 中通过使用 Windows Forms 和 ADO.NET 创建简单的表单到数据Visual Studio。
+description: 了解如何在 Visual Studio 中通过使用 Windows 窗体和 ADO.NET 创建简单的表单到数据Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 08/23/2017
 ms.topic: conceptual
@@ -15,30 +15,30 @@ ms.technology: vs-data-tools
 ms.workload:
 - data-storage
 ms.openlocfilehash: 506983ffacf846969f6e74fd503344d90180ca91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161988"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126601202"
 ---
 # <a name="create-a-simple-data-application-by-using-adonet"></a>使用 ADO.NET 创建简单的数据应用程序
 
-当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过遵循本主题，你可以了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 从简单的 Windows 窗体"基于数据"应用程序中与数据库进行交互。  所有 .NET 数据技术（包括数据集、LINQ to SQL和 实体框架）最终执行的步骤与本文中所示的步骤非常相似。
+当你创建操作数据库中的数据的应用程序时，就执行了如定义连接字符串、插入数据以及运行存储过程等基本任务。 通过遵循本主题，你可以了解如何使用 Visual C# 或 Visual Basic 和 ADO.NET 从简单的 Windows 窗体"基于数据"应用程序中与数据库进行交互。  所有 .NET 数据技术（包括数据集、LINQ to SQL和实体框架）最终执行的步骤与本文中所示的步骤非常相似。
 
-本文演示了一种快速从数据库获取数据的简单方法。 如果应用程序需要以非普通方式修改数据并更新数据库，则应考虑使用 实体框架 和数据绑定来自动将用户界面控件与基础数据中的更改同步。
+本文演示了一种快速从数据库获取数据的简单方法。 如果应用程序需要以非普通方式修改数据并更新数据库，则应考虑使用 实体框架 和数据绑定，以自动将用户界面控件与基础数据中的更改同步。
 
 > [!IMPORTANT]
 > 要使代码保持简单，请不要包括生产就绪的异常处理。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
 
 要创建应用程序，你将需要：
 
 - Visual Studio。
 
-- SQL Server Express LocalDB。 如果没有安装SQL Server Express LocalDB，可以从下载页[SQL Server Express它](https://www.microsoft.com/sql-server/sql-server-editions-express)。
+- SQL Server Express LocalDB。 如果尚未安装SQL Server Express LocalDB，可以从下载页[SQL Server Express它](https://www.microsoft.com/sql-server/sql-server-editions-express)。
 
-本主题假定你熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows Forms 应用程序、将窗体添加到项目、将按钮和其他控件放在窗体上、设置控件的属性以及编写简单事件代码。 如果对这些任务不太熟悉，建议在开始本演练之前完成[Visual C# Visual Basic](../ide/quickstart-visual-basic-console.md)入门主题。
+本主题假定你熟悉 Visual Studio IDE 的基本功能，并可以创建 Windows Forms 应用程序、向项目添加窗体、将按钮和其他控件放在窗体上、设置控件的属性以及编写简单事件代码。 如果你对这些任务不太熟悉，建议在开始本演练之前完成[Visual C# Visual Basic](../ide/quickstart-visual-basic-console.md)主题。
 
 ## <a name="set-up-the-sample-database"></a>设置示例数据库
 
@@ -52,7 +52,7 @@ ms.locfileid: "122161988"
 
 4. 在"**新建数据库名称"** 文本框中，输入 **"Sales"，** 然后选择"确定 **"。**
 
-     将创建 **空的 Sales** 数据库，并添加到 服务器资源管理器 中的"数据连接"节点。
+     空 **的 Sales** 数据库将创建并添加到 服务器资源管理器 中的"数据连接"节点。
 
 5. 右键单击"销售 **数据连接**"，然后选择"新建 **查询"。**
 
@@ -125,14 +125,14 @@ ms.locfileid: "122161988"
 ## <a name="store-the-connection-string"></a>存储连接字符串
 当应用程序尝试打开数据库的连接时，应用程序必须能够访问连接字符串。 为了避免在每个窗体上手动输入字符串，请将字符串存储在项目中 *的App.config* 文件中，并创建一个方法，该方法在从应用程序的任何窗体调用 方法时返回字符串。
 
-右键单击"销售数据连接"并选择"属性"，即可服务器资源管理器 **字符串**。   找到 **ConnectionString 属性**，然后使用 **Ctrl** + **A** 和 **Ctrl** C 选择字符串 + ，然后将字符串复制到剪贴板。
+可以通过右键单击"销售数据连接"并选择"属性"来 **服务器资源管理器字符串。**  找到 **ConnectionString 属性**，然后使用 **Ctrl** + **A** 和 **Ctrl** C 选择字符串 + ，然后将字符串复制到剪贴板。
 
 1. 如果使用 C#，则 **解决方案资源管理器，展开** 项目下的"属性"节点，然后打开 **设置.settings** 文件。
-    如果使用的是 Visual Basic，请在 解决方案资源管理器 中单击"显示所有文件"，展开"我的Project"节点，然后打开 **设置.settings** 文件。 
+    如果使用的是 Visual Basic，请在 解决方案资源管理器 中单击"**显示** 所有文件"，展开"我的 Project"节点，然后打开 **设置.settings** 文件。
 
 2. 在" **名称"** 列中，输入 `connString` 。
 
-3. 在"**类型"** 列表中，选择 (**字符串) 。**
+3. 在" **类型"** 列表中，选择 **" (字符串) "**。
 
 4. 在"**作用域"** 列表中，选择"应用程序 **"。**
 
@@ -153,7 +153,7 @@ ms.locfileid: "122161988"
 
 如果使用 C#，则在“解决方案资源管理器”中，打开 Program.cs，然后将 `Application.Run` 行更改为 `Application.Run(new Navigation());`
 
-如果使用的是 Visual Basic，请在 解决方案资源管理器 中打开"属性"窗口，选择"应用程序"选项卡，然后在"启动窗体"列表中选择 **"SimpleDataApp.Navigation"。** 
+如果使用的是 Visual Basic，请在 解决方案资源管理器 中打开"**属性**"窗口，选择"应用程序"选项卡，然后在"启动窗体"列表中选择 **"SimpleDataApp.Navigation"。** 
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 
@@ -200,7 +200,7 @@ ms.locfileid: "122161988"
 
 ### <a name="fillorcancel-form"></a>FillOrCancel 窗体
 
-当输入订单 ID，然后单击"查找订单"按钮时，FillOrCancel 窗体将运行查询以 **返回** 订单。 返回的行在只读数据网格中显示。 如果选择"取消订单"按钮 (X) ，可以将订单标记为已取消;如果选择"填充订单"按钮 (F) 可以将订单标记为已填充。  如果再次选择" **查找顺序"** 按钮，则会显示更新的行。
+当输入订单 ID，然后单击"查找订单"按钮时，FillOrCancel 窗体将运行查询以 **返回** 订单。 返回的行在只读数据网格中显示。 如果选择"取消订单"按钮 (X) ，可以将订单标记为已取消;如果选择"填充订单"按钮 (F) 可以将订单标记为已 **填充**。 如果再次选择" **查找顺序"** 按钮，则会显示更新的行。
 
 #### <a name="create-auto-generated-event-handlers"></a>创建自动生成的事件处理程序
 
