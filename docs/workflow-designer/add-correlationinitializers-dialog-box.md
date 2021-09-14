@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: 4085d8536c9d8f15e8928e010bb2744551a7747c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122099303"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664914"
 ---
 # <a name="add-correlationinitializers-dialog-box"></a>“添加相关初始值设定项”对话框
 
@@ -31,7 +31,7 @@ ms.locfileid: "122099303"
 - 回调上下文
 - request-reply
 
-下表介绍了"添加关联初始值 (") UI **的** 用户界面：
+下表介绍了"添加相关初始值 (") 用户界面 **的用户界面：**
 
 |UI 元素|说明|
 |-|-----------------|
@@ -43,8 +43,8 @@ ms.locfileid: "122099303"
 
  Send、Receive、ReceiveAndSendReply 和 **SendAndReceiveReply** 设计器使用"添加相关初始值设置程序"对话框。    在每种情况下访问它们都是类似的，此处使用"接收"设计器的用例来说明该过程。
 
- 可以 **拖动"** 接收"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动的位置。 删除 **Receive** 活动设计器会创建 <xref:System.ServiceModel.Activities.Receive> 一个默认为 <xref:System.Activities.Activity.DisplayName%2A> Receive 的活动。 选择 **"接收**"活动设计器，然后单击属性网格中"添加相关初始值设置程序"对话框的" (Collection) "属性旁边的省略号按钮。  
+ 可以 **拖动"** 接收"活动设计器，将其从"工具箱"拖放到工作流设计器放置活动的位置。 删除 **Receive** 活动设计器会创建 <xref:System.ServiceModel.Activities.Receive> 一个默认为 <xref:System.Activities.Activity.DisplayName%2A> Receive 的活动。 选择 **"** 接收"活动设计器，然后单击"属性网格"中 **"CorrelationInitializers"** 属性的" (集合") 文本旁边的省略号按钮，以显示"添加相关初始值设置 **程序** "对话框。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [“初始化相关”对话框](../workflow-designer/initialize-correlation-dialog-box.md)

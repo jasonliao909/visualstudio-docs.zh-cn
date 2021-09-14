@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 48030e2314764767b049502ce081a2711a00111b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132530"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665411"
 ---
 # <a name="idebugreference2setvalueasreference"></a>IDebugReference2::SetValueAsReference
 设置来自其他引用的引用的值。 保留供将来使用。
@@ -47,7 +47,7 @@ int SetValueAsReference (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `rgpArgs`\
 中用于确定如何设置引用值的 [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md) 对象数组。
 
@@ -63,5 +63,5 @@ int SetValueAsReference (
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

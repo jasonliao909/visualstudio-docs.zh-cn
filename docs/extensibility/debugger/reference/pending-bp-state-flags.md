@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 896059b2272470af2f0deb9bbfd55602bd6b7d62
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125252"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665387"
 ---
 # <a name="pending_bp_state_flags"></a>PENDING_BP_STATE_FLAGS
 指定挂起的断点状态标志。
@@ -45,19 +45,19 @@ public enum enum_PENDING_BP_STATE_FLAGS {
 ```
 
 ## <a name="fields"></a>字段
- `PBPSF_NONE` Placeholder.
+ `PBPSF_NONE` 占 位 符。
 
- `PBPSF_VIRTUALIZED` 指定一个虚拟化挂起断点，每次加载新代码时将绑定该断点。
+ `PBPSF_VIRTUALIZED` 指定虚拟化挂起断点，即每次加载新代码时要绑定的断点。
 
 ## <a name="remarks"></a>备注
- 用于 `flags` [PENDING_BP_STATE_INFO](../../../extensibility/debugger/reference/pending-bp-state-info.md) 结构的成员。
+ 用于 `flags` 结构PENDING_BP_STATE_INFO成员。 [](../../../extensibility/debugger/reference/pending-bp-state-info.md)
 
 ## <a name="requirements"></a>要求
- 标头： msdbg
+ 标头：msdbg.h
 
- 命名空间： VisualStudio
+ 命名空间：Microsoft.VisualStudio.Debugger.Interop
 
- 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

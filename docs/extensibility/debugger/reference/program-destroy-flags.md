@@ -16,11 +16,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3367bf80c012fb0e29c099a5f10e0430180c219f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034508"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665373"
 ---
 # <a name="program_destroy_flags"></a>PROGRAM_DESTROY_FLAGS
 枚举程序销毁标志的有效值。
@@ -47,14 +47,14 @@ public enum enum_PPROGRAM_DESTROY_FLAGS
  销毁程序，但继续调试。
 
 ## <a name="remarks"></a>备注
- 枚举由 [GetFlags 方法](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 返回。
+ 枚举由 [GetFlags](../../../extensibility/debugger/reference/idebugprogramdestroyeventflags2-getflags.md) 方法返回。
 
 ## <a name="requirements"></a>要求
- 标头：Msdbg.h
+ 标头： Msdbg
 
- 命名空间：Microsoft.VisualStudio.Debugger.Interop
+ 命名空间： VisualStudio
 
- 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+ 程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

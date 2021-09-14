@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 191d73dcf5b4e1f7b0e3b10842d9a6806a95e9c2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122034599"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665379"
 ---
 # <a name="pending_bp_state"></a>PENDING_BP_STATE
 指定挂起断点的状态 (尚未绑定) 的断点。

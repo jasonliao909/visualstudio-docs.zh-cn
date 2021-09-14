@@ -14,12 +14,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 488d39d0126ca150f440c2eae3a95de9177c5f4d323b4b0f471be6d2840158d6
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: c3f2ca8799b0816ffe5c33d954d362183f330f25
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121376867"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665349"
 ---
 # <a name="enableeditoflocationfield-element-visual-studio-templates"></a>EnableEditOfLocationField (Visual Studio模板) 
 指定用户能否编辑位置字段。
@@ -51,10 +51,10 @@ ms.locfileid: "121376867"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 文本必须是 或 ，指示用户是否可以编辑"新建位置"对话框中的"位置Project `true` `false` 文本框。  
+ 文本必须为 或 ，指示用户是否可以编辑"新建位置"对话框中的"位置Project `true` `false` 文本框。  
 
 ## <a name="remarks"></a>备注
- `EnableEditOfLocationField` 是可选元素。 默认值为 ，允许用户在"新建位置"对话框的"位置"文本框Project `true` 值。  
+ `EnableEditOfLocationField` 是可选元素。 默认值为 ，它允许用户在"新建位置"对话框的"位置"文本框Project `true` 值。  
 
  在 **"新建Project"** 对话框中，"位置"文本框指定保存新项目的目录。
 

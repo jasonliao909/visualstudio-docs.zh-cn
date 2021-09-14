@@ -17,15 +17,15 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 7ef751a635d31bc43b2ae4eb32dae9917120a7b0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122144270"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665302"
 ---
 # <a name="vstextview-object"></a>VSTextView 对象
 
-文本视图是一个窗口，允许用户查看和编辑文本缓冲区的 Unicode 文本。 实质上，视图是大多数用户都称其为编辑器的视图。 由于视图由各种文本层（ (自动换行、大纲显示文本等）从缓冲区中) 因此不保证该视图是缓冲区中文本的确切表示形式。 有关文本视图详细信息，请参阅使用旧版 [API 访问文本视图](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015)。
+文本视图是一个窗口，允许用户查看和编辑文本缓冲区的 Unicode 文本。 实质上，视图是大多数用户都称其为编辑器的视图。 由于视图由各种文本层（ (自动换行、大纲显示文本等）与缓冲区分隔) 因此不保证该视图是缓冲区中文本的确切表示形式。 有关文本视图详细信息，请参阅使用旧版 [API 访问文本视图](/previous-versions/visualstudio/visual-studio-2015/extensibility/accessing-thetext-view-by-using-the-legacy-api?preserve-view=true&view=vs-2015)。
 
 下表显示了 对象中的 <xref:Microsoft.VisualStudio.TextManager.Interop.VsTextView> 接口。
 
@@ -41,7 +41,7 @@ ms.locfileid: "122144270"
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsLayeredTextView>|与文本层交互。|
 |<xref:Microsoft.VisualStudio.TextManager.Interop.IVsThreadSafeTextView>|从不同的线程对视图执行操作。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [图形编辑](https://www.microsoft.com/download/details.aspx?id=55984)
 - [VSTextBuffer 对象](../extensibility/vstextbuffer-object.md)

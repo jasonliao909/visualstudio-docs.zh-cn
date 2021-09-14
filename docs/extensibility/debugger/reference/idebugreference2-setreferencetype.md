@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 94aacf23397c2599acd44b8197d2d2af0f157ea1d61ba13becedb44ad03d002d
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 68e9a400c1f958bdd0f4b9601a5caab641c5ec1e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121338535"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665412"
 ---
 # <a name="idebugreference2setreferencetype"></a>IDebugReference2::SetReferenceType
 设置引用类型。 保留供将来使用。
@@ -41,13 +41,13 @@ int SetReferenceType (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwRefType`\
 中 [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md) 枚举中的一个值，该值指定引用类型。
 
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)
 - [REFERENCE_TYPE](../../../extensibility/debugger/reference/reference-type.md)

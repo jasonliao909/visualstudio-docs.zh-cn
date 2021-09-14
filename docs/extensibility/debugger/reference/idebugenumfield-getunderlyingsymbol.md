@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f13e157b5967d0a5ba3438fd4ed8c02cc41a8b09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079073"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665413"
 ---
 # <a name="idebugenumfieldgetunderlyingsymbol"></a>IDebugEnumField::GetUnderlyingSymbol
 此方法返回表示枚举名称的[IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
@@ -41,7 +41,7 @@ int GetUnderlyingSymbol(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppField`\
 [out]返回[描述此枚举的名称的 IDebugField。](../../../extensibility/debugger/reference/idebugfield.md)
 
@@ -51,7 +51,7 @@ int GetUnderlyingSymbol(
 ## <a name="remarks"></a>备注
  枚举的名称还包含枚举的类型，该枚举通过使用 Bind 绑定到内存 [位置](../../../extensibility/debugger/reference/idebugbinder-bind.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [绑定](../../../extensibility/debugger/reference/idebugbinder-bind.md)

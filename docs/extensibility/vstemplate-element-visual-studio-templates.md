@@ -15,12 +15,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: b57965d7b59ca921c0b3831c24413709f85f0ff5ee8a394f357629ea66992357
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 7509614613ac80bc4f697f7f93358819eb9ecde4
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121335207"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665303"
 ---
 # <a name="vstemplate-element-visual-studio-templates"></a>VSTemplate 元素 (Visual Studio模板) 
 包含有关项目模板、项模板或初学者工具包的所有元数据。

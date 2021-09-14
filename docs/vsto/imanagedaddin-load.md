@@ -14,11 +14,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 7be4be6b08c5ea9b0813e4782a0ac1a77cec2890
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122032649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665243"
 ---
 # <a name="imanagedaddinload"></a>IManagedAddin::Load
   在加载托管 VSTO 外接程序时调用。
@@ -30,7 +30,7 @@ HRESULT Load([in] BSTR bstrManifestURL,
              [in] IDispatch *pdispApplication);
 ```
 
-### <a name="parameters"></a>参数
+### <a name="parameters"></a>parameters
 
 |参数|说明|
 |---------------|-----------------|
@@ -43,10 +43,10 @@ HRESULT Load([in] BSTR bstrManifestURL,
 ## <a name="remarks"></a>备注
  清单是一个文件（通常是 XML 文件），提供用于帮助加载 VSTO 外接程序的信息。 例如，加载 VSTO 外接程序时，清单可以指定 VSTO 外接程序程序集的位置以及要实例化的入口点类。
 
- *bstrManifestURL* 参数包含外接程序的 `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \\ _\<add-in ID>_ \Addins** 注册表VSTO项的值。 有关详细信息，请参阅 [IManagedAddin 接口](../vsto/imanagedaddin-interface.md)。
+ *bstrManifestURL* 参数包含外接程序的 `Manifest` **HKEY_CURRENT_USER\Software\Microsoft\Office\\ _\<application name>_ \\ _\<add-in ID>_ \Addins** 注册表项VSTO的值。 有关详细信息，请参阅 [IManagedAddin 接口](../vsto/imanagedaddin-interface.md)。
 
  实现 [IManagedAddIn::Load](../vsto/imanagedaddin-load.md) 方法以执行各项任务，例如为正在加载的 VSTO 外接程序配置应用程序域和安全策略。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IManagedAddin Interface](../vsto/imanagedaddin-interface.md)
 - [IManagedAddin::Unload](../vsto/imanagedaddin-unload.md)

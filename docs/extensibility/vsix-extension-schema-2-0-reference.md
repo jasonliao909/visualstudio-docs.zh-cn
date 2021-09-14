@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: baaa03b01e7f211bfc6822e7fcf017d1a49ad324
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122158094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665305"
 ---
 # <a name="vsix-extension-schema-20-reference"></a>VSIX 扩展架构2.0 引用
 VSIX 部署清单文件描述 VSIX 包的内容。 文件格式由架构控制。 此架构的版本2.0 支持添加自定义类型和属性。  清单的架构是可扩展的。 清单加载程序将忽略不理解的 XML 元素和属性。
@@ -52,7 +52,7 @@ VSIX 部署清单文件描述 VSIX 包的内容。 文件格式由架构控制�
 
   - `Version` -定义此包及其内容的版本。 此属性遵循 CLR 程序集版本控制格式： "1.2.40308.00" (") "。 版本号较高的包被视为对包的更新，并且可以安装在现有的已安装版本上。
 
-  - `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循资源程序集的 CLR 区域设置代码约定，例如 en-us、en、fr。 您可以指定 `neutral` 声明将在 Visual Studio 的任何版本上运行的非特定语言的扩展。 默认值是 `neutral`。
+  - `Language` -此属性是包的默认语言，对应于此清单中的文本数据。 此属性遵循资源程序集的 CLR 区域设置代码约定，例如 en-us、en、fr。 您可以指定 `neutral` 声明将在 Visual Studio 的任何版本上运行的非特定语言的扩展。 默认值为 `neutral`。
 
   - `Publisher` -此属性标识此包的发行者，无论是公司名称还是单个名称。 `Publisher`特性限制为100个字符。
 
@@ -113,86 +113,86 @@ VSIX 部署清单文件描述 VSIX 包的内容。 文件格式由架构控制�
 
     - VisualStudio. VSWinExpress
 
-    - VisualStudio. VSLS
+    - Microsoft.VisualStudio.VSLS
 
     - My.Shell.App
 
-  - `Version` -此属性指定一个版本范围，其中包含此 SKU 支持的最小和最大版本。 包可以对它支持的 Sku 的版本进行详细说明。 版本范围表示法为 [10.0-11.0]，其中
+  - `Version` - 此属性指定具有此 SKU 支持的最低和最大版本的版本范围。 包可以详细说明它支持的 SKUS 版本。 版本范围表示法为 [10.0 - 11.0]，其中
 
-    - [-最低版本（含）。
+    - [ - 最低版本（含）。
 
-    - ]-最高版本（含）。
+    - ] - 最大版本（含）。
 
-    -  (-最小版本独占。
+    -  ( - 最低版本独占。
 
-    - ) -最高版本独占。
+    - ) - 独占的最大版本。
 
-    - 单个版本 #-仅指定的版本。
+    - 单个版本 # - 仅指定版本。
 
     > [!IMPORTANT]
-    > Visual Studio 2012 中引入了 VSIX 架构2.0 版。 若要使用此架构，必须在计算机上安装 Visual Studio 2012 或更高版本，并使用该产品中的 VSIXInstaller.exe。 您可以使用 Visual Studio 2012 或更高版本的 VSIXInstaller 作为 Visual Studio 的早期版本，但只能使用较新版本的安装程序。
+    > VSIX 架构版本 2.0 是在 2012 Visual Studio引入的。 若要使用此架构，必须在计算机上安装 Visual Studio 2012 或更高版本，并使用VSIXInstaller.exe产品一部分的应用程序。 可以面向具有 Visual Studio 2012 Visual Studio更高版本的早期版本的 VSIXInstaller，但只能使用更高版本的安装程序。
 
-    [Visual Studio 生成号和发布日期](../install/visual-studio-build-numbers-and-release-dates.md)可以找到 Visual Studio 2017 版本号。
+    Visual Studio 2017 版本号，Visual Studio[内部版本号和发布日期。](../install/visual-studio-build-numbers-and-release-dates.md)
 
-    表示 Visual Studio 2017 版本的版本时，次版本应始终为 **0**。 例如，Visual Studio 2017 版本15.3.26730.0 应表示为 [15.0.26730.0，16.0) 。 仅 Visual Studio 2017 及更高版本的版本号需要此值。
+    在表示 2017 Visual Studio的版本时，次要版本应始终为 **0。** 例如，Visual Studio 2017 版本 15.3.26730.0 应表示为 [15.0.26730.0，16.0) 。 这仅适用于 Visual Studio 2017 及更高版本的版本号。
 
-  - `AnyAttribute*` - `<InstallationTarget>` 元素允许在运行时作为名称-值对字典公开的一组开放式特性。
+  - `AnyAttribute*` - 元素允许一组开放式属性，这些属性运行时作为名称 `<InstallationTarget>` /值对字典公开。
 
-### <a name="dependencies-element"></a>依赖项元素
- 此元素包含此包声明的依赖项的列表。 如果指定了任何依赖项，则必须先安装这些包， (由其 `Id`) 标识。
+### <a name="dependencies-element"></a>Dependencies 元素
+ 此元素包含此包声明的依赖项列表。 如果指定了任何依赖项，则 (之前必须) `Id` 标识这些包。
 
-- `<Dependency>` 元素-此子元素具有以下属性：
+- `<Dependency>` 元素 - 此子元素具有以下属性：
 
-  - `Id` -此属性必须是依赖包的唯一 ID。 此标识值必须与 `<Metadata><Identity>Id` 此包所依赖的包的属性相匹配。 `Id`属性遵循命名空间约定： Company.Product.Feature.Name。 属性只能包含字母数字字符，且限制为100个字符。
+  - `Id` - 此属性必须是依赖包的唯一 ID。 此标识值必须与此包 `<Metadata><Identity>Id` 所依赖的包的属性匹配。 属性 `Id` 遵循命名空间约定：Company.Product.Feature.Name。 属性只能包含字母数字字符，并且限制为 100 个字符。
 
-  - `Version` -此属性指定一个版本范围，其中包含此 SKU 支持的最小和最大版本。 包可以对它支持的 Sku 的版本进行详细说明。 版本范围表示法为 [12.0，13.0]，其中：
+  - `Version` - 此属性指定具有此 SKU 支持的最低和最大版本的版本范围。 包可以详细说明它支持的 SKUS 版本。 版本范围表示法为 [12.0， 13.0]，其中：
 
-    - [-最低版本（含）。
+    - [ - 最低版本（含）。
 
-    - ]-最高版本（含）。
+    - ] - 最大版本（含）。
 
-    -  (-最小版本独占。
+    -  ( - 最低版本独占。
 
-    - ) -最高版本独占。
+    - ) - 独占的最大版本。
 
-    - 单个版本 #-仅指定的版本。
+    - 单个版本 # - 仅指定版本。
 
-  - `DisplayName` -此属性是依赖包的显示名称，在 UI 元素（如对话框和错误消息）中使用。 除非 MSI 安装了依赖包，否则属性是可选的。
+  - `DisplayName` - 此属性是依赖包的显示名称，在 UI 元素（如对话框和错误消息）中使用。 属性是可选的，除非 MSI 安装了依赖包。
 
-  - `Location` -此可选特性指定此 VSIX 中的相对路径到嵌套 VSIX 包或依赖项下载位置的 URL。 此属性用于帮助用户查找必备组件包。
+  - `Location` - 此可选属性指定此 VSIX 中嵌套 VSIX 包的相对路径或依赖项下载位置的 URL。 此属性用于帮助用户查找必备组件包。
 
-  - `AnyAttribute*` - `Dependency` 元素接受一组开放式的特性，这些特性将在运行时作为名称-值对字典公开。
+  - `AnyAttribute*` - 元素接受一组开放式属性，这些属性将运行时作为名称 `Dependency` /值对字典公开。
 
-### <a name="assets-element"></a>资产元素
- 此元素包含 `<Asset>` 此包所呈现的每个扩展或内容元素的标记列表。
+### <a name="assets-element"></a>Assets 元素
+ 此元素包含此 `<Asset>` 包显示的每个扩展或内容元素的标记列表。
 
-- `<Asset>` -此元素包含以下属性和元素：
+- `<Asset>` - 此元素包含以下属性和元素：
 
-  - `Type` -扩展或此元素表示的内容的类型。 每个 `<Asset>` 元素必须具有单个 `Type` ，但多个 `<Asset>` 元素可能具有相同的 `Type` 。 根据命名空间约定，此特性应表示为完全限定名称。 已知类型为：
+  - `Type` - 扩展的类型或此元素表示的内容。 每个 `<Asset>` 元素都必须有一个 `Type` ，但多个 `<Asset>` 元素可能具有相同的 `Type` 。 根据命名空间约定，此属性应表示为完全限定的名称。 已知类型包括：
 
-    1. VisualStudio. VsPackage
+    1. Microsoft.VisualStudio.VsPackage
 
     2. Microsoft.VisualStudio.MefComponent
 
-    3. VisualStudio. ToolboxControl
+    3. Microsoft.VisualStudio.ToolboxControl
 
-    4. VisualStudio
+    4. Microsoft.VisualStudio.Samples
 
-    5. VisualStudio. ProjectTemplate
+    5. Microsoft.VisualStudio.ProjectTemplate
 
-    6. VisualStudio
+    6. Microsoft.VisualStudio.ItemTemplate
 
-    7. VisualStudio. 程序集
+    7. Microsoft.VisualStudio.Assembly
 
-       您可以创建自己的类型，并为它们指定唯一名称。 在 Visual Studio 内的运行时，你的代码可以通过扩展管理器 API 枚举和访问这些自定义类型。
+       你可以创建自己的类型，并赋予它们唯一的名称。 在扩展管理器Visual Studio，代码可以通过扩展管理器 API 枚举和访问这些自定义类型。
 
-  - `Path` -包内包含资产的文件或文件夹的相对路径。
+  - `Path` - 包含资产的包中文件或文件夹的相对路径。
 
-  - `TargetVersion` -给定资产适用的版本范围。 用于将多个版本的资产发货到不同版本的 Visual Studio。 需要 Visual Studio 2017.3 或更高版本才能生效。
+  - `TargetVersion` - 给定资产应用到的版本范围。 用于将多个版本的资产寄送到不同版本的Visual Studio。 要求Visual Studio 2017.3 或更高版本生效。
 
-  - `AnyAttribute*` -在运行时作为名称-值对字典公开的属性集。
+  - `AnyAttribute*` - 一组开放式属性，可运行时作为名称/值对字典公开。
 
-    `<AnyElement>*` -允许在 `<Asset>` 开始标记和结束标记之间使用任何结构化内容。 所有元素都公开为 XmlElement 对象的列表。 VSIX 扩展可以在清单文件中定义特定于结构的类型的元数据，并在运行时对其进行枚举。
+    `<AnyElement>*` - 允许在开始标记和结束标记 `<Asset>` 之间使用任何结构化内容。 所有元素都作为 XmlElement 对象的列表公开。 VSIX 扩展可以在清单文件中定义特定于结构化类型的元数据，并运行时枚举这些元数据。
 
 ### <a name="sample-manifest"></a>示例清单
 
@@ -222,6 +222,6 @@ VSIX 部署清单文件描述 VSIX 包的内容。 文件格式由架构控制�
 </PackageManifest>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [装运 Visual Studio 扩展](../extensibility/shipping-visual-studio-extensions.md)
+- [提供Visual Studio扩展](../extensibility/shipping-visual-studio-extensions.md)

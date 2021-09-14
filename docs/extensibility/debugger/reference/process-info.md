@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e2fc29833c8d3f6b64e5bbc683ad6f5fc82231ef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118094"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665374"
 ---
 # <a name="process_info"></a>PROCESS_INFO
 包含有关进程的信息。
@@ -83,7 +83,7 @@ public struct PROCESS_INFO {
  创建进程的时间。
 
  `Flags`\
- 指定进程属性PROCESS_INFO_FLAGS集合中[](../../../extensibility/debugger/reference/process-info-flags.md)标志的组合。
+ 指定进程 [属性的PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md) 集合中的标志组合。
 
 ## <a name="remarks"></a>备注
  此结构将传递到 [GetInfo](../../../extensibility/debugger/reference/idebugprocess2-getinfo.md) 方法中填充它。
@@ -95,7 +95,7 @@ public struct PROCESS_INFO {
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [PROCESS_INFO_FIELDS](../../../extensibility/debugger/reference/process-info-fields.md)
 - [PROCESS_INFO_FLAGS](../../../extensibility/debugger/reference/process-info-flags.md)

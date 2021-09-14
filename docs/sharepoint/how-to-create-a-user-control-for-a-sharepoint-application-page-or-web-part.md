@@ -18,14 +18,14 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 9a622fa1d85ed916a393d7ea4cac56a335d550f3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122115585"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665293"
 ---
 # <a name="how-to-create-a-user-control-for-a-sharepoint-application-page-or-web-part"></a>如何：为 SharePoint 应用程序页或 Web 部件创建用户控件
-  可以创建为 SharePoint 解决方案提供自定义功能的自定义用户控件，您可以在项目中重复使用此功能。 可以在 Web 部件或应用程序页中包含用户控件、添加其他 ASP.NET 控件和 SharePoint 控件、定义控件的属性和方法。 有关用户控件详细信息，请参阅为[Web](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)部件或应用程序页创建可重用控件和用户控件和[SharePoint。](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)
+  可以创建为 SharePoint 解决方案提供自定义功能的自定义用户控件，您可以在项目中重复使用此功能。 可以在 Web 部件或应用程序页中包含用户控件、添加其他 ASP.NET 控件和 SharePoint 控件、定义控件的属性和方法。 有关用户控件详细信息，请参阅为[Web](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)部件或应用程序页创建可重用控件和用户控件和服务器控件[SharePoint。](https://blogs.msdn.microsoft.com/kaevans/2011/04/28/user-controls-and-server-controls-in-sharepoint/)
 
 ### <a name="to-create-a-user-control-for-sharepoint"></a>为用户创建用户SharePoint
 
@@ -54,9 +54,9 @@ ms.locfileid: "122115585"
 
 7. 如果要处理控件中发生的事件，请将代码添加到此用户控件的代码文件。
 
-     此文件显示在用户 **解决方案资源管理器** 文件下，并且具有 *.cs* 或 *.vb* 扩展名，具体取决于项目的语言。
+     此文件 **显示在解决方案资源管理器文件** 下，并且扩展名为 *.cs* 或 *.vb，* 具体取决于项目的语言。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [为 Web 部件或应用程序页创建可重用控件](../sharepoint/creating-reusable-controls-for-web-parts-or-application-pages.md)
 - [为 SharePoint 创建应用程序页](../sharepoint/creating-application-pages-for-sharepoint.md)
 - [为 SharePoint 创建 Web 部件](../sharepoint/creating-web-parts-for-sharepoint.md)

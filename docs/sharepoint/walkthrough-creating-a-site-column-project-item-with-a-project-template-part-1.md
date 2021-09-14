@@ -20,11 +20,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 6ede65c0360a747c21d640e15b28c8b1dffe0583
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054244"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665275"
 ---
 # <a name="walkthrough-create-a-site-column-project-item-with-a-project-template-part-1"></a>演练：使用项目模板创建网站栏项目项（第1部分）
   SharePoint 项目是一个或多个 SharePoint 项目项的容器。 你可以通过创建自己的 SharePoint 项目项类型，然后将其与项目模板关联，来扩展 Visual Studio 中的 SharePoint 项目系统。 在本演练中，您将定义用于创建网站列的项目项类型，然后您将创建一个可用于创建包含网站列项目项的新项目的项目模板。
@@ -44,7 +44,7 @@ ms.locfileid: "122054244"
 > [!NOTE]
 > 有关一系列示例工作流，请参阅[SharePoint 工作流示例](/sharepoint/dev/general-development/sharepoint-workflow-samples)。
 
-## <a name="prerequisites"></a>必备条件
+## <a name="prerequisites"></a>先决条件
  若要完成本演练，开发计算机上需要以下组件：
 
 - Microsoft Windows、SharePoint 和支持的版本 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 。
@@ -199,7 +199,7 @@ ms.locfileid: "122054244"
 
 #### <a name="to-configure-how-developers-discover-the-project-template-in-the-new-project-dialog-box"></a>在"新建项目"对话框中配置开发人员Project模板
 
-1. 在 **解决方案资源管理器** 中，打开 **SiteColumnProjectTemplate** 项目节点的快捷菜单，然后选择"卸载 **Project"。** 如果系统提示你保存对任意文件的更改，请选择" **是"** 按钮。
+1. 在 **解决方案资源管理器** 中，打开 **SiteColumnProjectTemplate** 项目 **节点** 的快捷菜单，然后选择"卸载Project"。 如果系统提示你保存对任意文件的更改，请选择" **是"** 按钮。
 
 2. 再次打开 **SiteColumnProjectTemplate** 节点的快捷菜单，然后选择"编辑 **SiteColumnProjectTemplate.csproj"** 或"**编辑 SiteColumnProjectTemplate.vbproj"。**
 
@@ -240,7 +240,7 @@ ms.locfileid: "122054244"
 
 - *ProjectTemplate.csproj* 或 *ProjectTemplate.vbproj*
 
-  在下列过程，你将向其中一些文件添加可替换参数。 可替换参数是一个以美元符号开头和结尾的标记， ($) 字符。 当用户使用此项目模板创建项目时，Visual Studio自动将新项目中的这些参数替换为特定值。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。
+  在下列过程，你将向其中一些文件添加可替换参数。 可替换参数是一种以美元符号开头和结尾的标记， ($) 字符。 当用户使用此项目模板创建项目时，Visual Studio自动将新项目中的这些参数替换为特定值。 有关详细信息，请参阅[可替换参数](../sharepoint/replaceable-parameters.md)。
 
 #### <a name="to-edit-the-assemblyinfocs-or-assemblyinfovb-file"></a>编辑 AssemblyInfo.cs 或 AssemblyInfo.vb 文件
 
@@ -254,7 +254,7 @@ ms.locfileid: "122054244"
     using System.Security;
     ```
 
-     当项目 **沙盒解决方案** 属性SharePoint设置为 **True** 时，Visual Studio将 添加到 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> AssemblyInfo 代码文件。 但是，默认情况下，项目模板中的 AssemblyInfo 代码文件不会 <xref:System.Security> 导入命名空间。 必须添加此 **using 或** **Imports** 语句以防止编译错误。
+     当项目 **沙盒解决方案** 属性SharePoint设置为 **True** 时，Visual Studio将 <xref:System.Security.AllowPartiallyTrustedCallersAttribute> 添加到 AssemblyInfo 代码文件。 但是，默认情况下，项目模板中的 AssemblyInfo 代码文件不会 <xref:System.Security> 导入命名空间。 必须添加此 **using 或** **Imports** 语句以防止编译错误。
 
 2. 保存并关闭该文件。
 
@@ -294,11 +294,11 @@ ms.locfileid: "122054244"
 
     新 XML 对文件进行以下更改：
 
-   - 将 元素的 属性更改为传递给项目项定义上的 的相同字符串 (之前在此演练中创建的 类 `Type` `ProjectItem` <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> `SiteColumnProjectItemTypeProvider`) 。
+   - 将 元素的 属性更改为传递给项目项定义上的 的相同字符串， (之前在此演练中创建的 `Type` `ProjectItem` <xref:Microsoft.VisualStudio.SharePoint.SharePointProjectItemTypeAttribute> `SiteColumnProjectItemTypeProvider` 类) 。
 
    - 从 元素 `SupportedTrustLevels` `SupportedDeploymentScopes` 中删除 和 `ProjectItem` 属性。 由于信任级别和部署范围在 ProjectItemTypeDefinition 项目的 类中指定，因此不需要 `SiteColumnProjectItemTypeProvider` 这些属性值。
 
-     有关 *.spdata* 文件内容的详细信息，请参阅SharePoint [项目项架构引用](../sharepoint/sharepoint-project-item-schema-reference.md)。
+     有关 *.spdata* 文件内容的详细信息，请参阅 SharePoint [项目项架构引用](../sharepoint/sharepoint-project-item-schema-reference.md)。
 
 2. 保存并关闭该文件。
 
@@ -658,108 +658,108 @@ ms.locfileid: "122054244"
 6. 在"**类型"** 列表中，选择 **"Microsoft.VisualStudio.ProjectTemplate"。**
 
     > [!NOTE]
-    > 此值与 `ProjectTemplate` source.extension.vsixmanifest 文件中的元素相对应。 此元素标识 VSIX 包中包含项目模板的子文件夹。 有关详细信息，请参阅 [ProjectTemplate 元素 (VSX Schema) ](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))。
+    > 此值对应于 `ProjectTemplate` extension.vsixmanifest 文件中的元素。 此元素标识包含项目模板的 VSIX 包中的子文件夹。 有关详细信息，请参阅[PROJECTTemplate 元素 (VSX 架构) 。 ](/previous-versions/visualstudio/visual-studio-2010/dd393735\(v\=vs.100\))
 
-7. 在 " **源** " 列表中，选择 " **当前解决方案中的项目**"。
+7. 在" **源"** 列表中， **选择当前解决方案 中的项目**。
 
-8. 在 **Project** 列表中，选择 " **SiteColumnProjectTemplate**"，然后选择 "**确定"** 按钮。
+8. 在 **"Project"** 列表中，选择 **"SiteColumnProjectTemplate"，** 然后选择"确定 **"** 按钮。
 
-9. 再次选择 " **新建** " 按钮。
+9. 再次选择 **"新建** "按钮。
 
-     此时将打开 " **添加新资产** " 对话框。
+     " **添加新资产"** 对话框随即打开。
 
-10. 在 " **类型** " 列表中，选择 " **VisualStudio. microsoft.visualstudio.mefcomponent**"。
+10. 在"**类型"** 列表中，选择 **"Microsoft.VisualStudio.MefComponent"。**
 
     > [!NOTE]
-    > 此值与 `MefComponent` source.extension.vsixmanifest 文件中的元素相对应。 此元素指定 VSIX 包中扩展程序集的名称。 有关详细信息，请参阅 [Microsoft.visualstudio.mefcomponent 元素 (VSX Schema) ](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))。
+    > 此值对应于 `MefComponent` extension.vsixmanifest 文件中的元素。 此元素指定 VSIX 包中扩展程序集的名称。 有关详细信息，请参阅[MEFComponent 元素 (VSX 架构) 。 ](/previous-versions/visualstudio/visual-studio-2010/dd393736\(v\=vs.100\))
 
-11. 在 " **源** " 列表中，选择 " **当前解决方案中的项目**"。
+11. 在" **源"** 列表中， **选择当前解决方案 中的项目**。
 
-12. 在 **Project** 列表中，选择 " **ProjectItemTypeDefinition**"，然后选择 "**确定"** 按钮。
+12. 在 **Project，** 选择 **"ProjectItemTypeDefinition"，** 然后选择"确定 **"** 按钮。
 
-13. 在菜单栏上，选择 "**生成**" "生成  >  **解决方案**"，然后确保项目编译时不会出错。
+13. 在菜单栏上，选择"**生成**  >  **生成解决方案**"，并确保项目编译时不会出错。
 
 ## <a name="test-the-project-template"></a>测试项目模板
- 你现在已准备好测试项目模板。 首先，开始调试 Visual Studio 的实验实例中的 SiteColumnProjectItem 解决方案。 然后，在 Visual Studio 的实验实例中测试 **网站列** 项目。 最后，生成并运行 SharePoint 项目，以验证网站列是否按预期方式工作。
+ 现在，可以测试项目模板了。 首先，开始调试 Visual Studio 实验实例中的 SiteColumnProjectItem 解决方案。 然后，在实例 **的实验** 实例中测试站点列Visual Studio。 最后，生成并运行SharePoint项目，以验证站点列是否正常工作。
 
 #### <a name="to-start-debugging-the-solution"></a>开始调试解决方案
 
-1. 用管理凭据重新启动 Visual Studio，然后打开 SiteColumnProjectItem 解决方案。
+1. 使用Visual Studio凭据重启应用程序，然后打开 SiteColumnProjectItem 解决方案。
 
-2. 在 SiteColumnProjectItemTypeProvider 代码文件中，将一个断点添加到方法中的第一行代码 `InitializeType` ，然后选择 **F5** 键开始调试。
+2. 在 SiteColumnProjectItemTypeProvider 代码文件中，将断点添加到 方法的第一行代码，然后选择 `InitializeType` **F5** 键以开始调试。
 
-     Visual Studio 会将扩展安装到%UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0，并启动 Visual Studio 的实验实例。 您将在 Visual Studio 的此实例中测试项目项。
+     Visual Studio将扩展安装到 %UserProfile%\AppData\Local\Microsoft\VisualStudio\10.0Exp\Extensions\Contoso\Site Column\1.0 并启动 Visual Studio 的实验实例。 你将在此实例中测试项目项Visual Studio。
 
-#### <a name="to-test-the-project-in-visual-studio"></a>在 Visual Studio 中测试项目
+#### <a name="to-test-the-project-in-visual-studio"></a>在项目中测试Visual Studio
 
-1. 在 Visual Studio 的实验实例的菜单栏上，选择 "**文件**" "  >  **新建**  >  **Project**"。
+1. 在菜单栏上的Visual Studio实例中，选择"文件""新建  >    >  **Project"。**
 
-2. 展开 " **Visual c #** " 或 " **Visual Basic** " 节点 (根据项目模板支持的语言) ，展开 " **SharePoint** " 节点，然后选择 " **2010** " 节点。
+2. 根据项目模板Visual Basic语言 () Visual **C#** 或 SharePoint 节点，展开 **SharePoint** 节点，然后选择 **2010** 节点。
 
-3. 在项目模板列表中，选择 " **网站列** " 模板。
+3. 在项目模板列表中，选择"站点 **列"** 模板。
 
-4. 在 " **名称** " 框中，输入 **SiteColumnTest** ，然后选择 " **确定"** 按钮。
+4. 在" **名称"** 框中，输入 **"SiteColumnTest"，** 然后选择"确定 **"** 按钮。
 
-     在 **解决方案资源管理器** 中，会显示一个新项目，其中包含名为 **Field1** 的项目项。
+     在 **解决方案资源管理器** 中，将显示一个新项目，其项目项名为 **Field1**。
 
-5. 验证 Visual Studio 的另一个实例中的代码在您之前在方法中设置的断点处停止 `InitializeType` ，然后选择 **F5** 键继续调试该项目。
+5. 验证其他 实例中的代码Visual Studio在之前在 方法中设置的断点处停止，然后选择 `InitializeType` **F5** 键以继续调试项目。
 
-6. 在 **解决方案资源管理器** 中，选择 " **Field1** " 节点，然后按 **F4** 键。
+6. 在 **解决方案资源管理器** 中，选择 **"Field1"** 节点，然后选择 **F4** 键。
 
      此时将打开“属性”窗口。
 
-7. 在 "属性" 列表中，验证是否显示 "属性 **示例" 属性** 。
+7. 在属性列表中，验证属性" **示例属性"是否** 显示。
 
-#### <a name="to-test-the-site-column-in-sharepoint"></a>测试中的 "站点" 列 SharePoint
+#### <a name="to-test-the-site-column-in-sharepoint"></a>测试站点列中的站点SharePoint
 
-1. 在 **解决方案资源管理器** 中，选择 " **SiteColumnTest** " 节点。
+1. 在 **解决方案资源管理器** 中，选择 **"SiteColumnTest"** 节点。
 
-2. 在 " **属性** " 窗口中的 " **站点 URL** " 属性旁边的文本框中，输入 **http://localhost** 。
+2. 在 **"属性** "窗口的"站点 **URL"** 属性旁边的文本框中，输入 **http://localhost** 。
 
-     此步骤指定要用于调试的开发计算机上的本地 SharePoint 站点。
+     此步骤指定SharePoint用于调试的开发计算机上本地站点。
 
     > [!NOTE]
-    > 默认情况下，" **网站 URL** " 属性为空，因为 "网站列" 项目模板不提供用于在创建项目时收集此值的向导。 若要了解如何添加向导来向开发人员提供此值，然后在新项目中配置此属性，请参阅 [演练：使用项目模板创建网站栏项目项（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+    > " **站点 URL"** 属性默认为空，因为在创建项目时，"站点列"项目模板不提供用于收集此值的向导。 若要了解如何添加一个向导，要求开发人员提供此值，然后在新项目中配置此属性，请参阅演练：使用项目模板创建站点列项目项，第 [2 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
 3. 选择 F5。
 
-     网站列将打包并部署到在项目的 "**网站 URL** " 属性中指定的 SharePoint 站点。 Web 浏览器将打开此站点的默认页面。
+     该站点列打包并部署到SharePoint的"站点 **URL"** 属性中指定的站点站点。 Web 浏览器将打开此站点的默认页面。
 
     > [!NOTE]
-    > 如果出现 " **脚本调试已禁用** " 对话框，请选择 " **是"** 按钮继续调试项目。
+    > 如果显示 **"脚本调试已禁用** "对话框，请选择" **是** "按钮以继续调试项目。
 
-4. 在 "**站点操作**" 菜单上，选择 "**站点设置**"。
+4. 在"**站点操作"** 菜单上，选择"**站点设置"。**
 
-5. 在 "**站点设置**" 页上的 "**库**" 列表下，选择 "**网站列**" 链接。
+5. 在"**站点设置"** 页上的"**库"** 列表下，选择"**站点列"** 链接。
 
-6. 在站点列列表中，验证 **自定义列** 组是否包含名为 **SiteColumnTest** 的列。
+6. 在站点列列表中，验证自定义 **列组是否** 包含名为 **SiteColumnTest 的列**。
 
 7. 关闭 Web 浏览器。
 
 ## <a name="clean-up-the-development-computer"></a>清理开发计算机
- 完成项目测试后，从 Visual Studio 的实验实例中删除项目模板。
+ 完成项目测试后，从项目的实验实例中删除项目Visual Studio。
 
 #### <a name="to-clean-up-the-development-computer"></a>清理开发计算机
 
-1. 在 Visual Studio 的实验实例中，在菜单栏上选择 "**工具**" "  >  **扩展和更新**"。
+1. 在 Visual Studio实验实例的菜单栏上，选择"**工具**  >  **扩展和更新"。**
 
      此时，“扩展和更新”对话框打开。
 
-2. 在扩展列表中，选择 " **站点" 列** 扩展，然后选择 " **卸载** " 按钮。
+2. 在扩展列表中，选择"站点 **列** "扩展，然后选择"卸载 **"** 按钮。
 
-3. 在出现的对话框中，选择 " **是"** 按钮，确认要卸载该扩展。
+3. 在出现的对话框中，选择" **是"** 按钮以确认要卸载扩展。
 
-4. 选择 " **关闭** " 按钮以完成卸载。
+4. 选择" **关闭** "按钮以完成卸载。
 
-5. 关闭实验实例 (Visual Studio 的两个实例，以及在其中) 打开 SiteColumnProjectItem 解决方案的 Visual Studio 的实例。
+5. 关闭实验实例Visual Studio (SiteColumnProjectItem 解决方案打开的 Visual Studio 实例的两个实例) 。
 
 ## <a name="next-steps"></a>后续步骤
- 完成本演练后，可以将向导添加到项目模板。 当用户创建网站列项目时，向导会要求用户提供用于调试的网站 URL 以及新的解决方案是否已进行了沙盒处理，向导将使用此信息配置新的项目。 该向导还会收集有关列 (的信息，例如要在其中列出站点列库中的列的基础类型和组) 并将此信息添加到新项目中的 *Elements.xml* 文件中。 有关详细信息，请参阅 [演练：使用项目模板创建网站栏项目项（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
+ 完成本演练后，可以将向导添加到项目模板。 当用户创建站点列项目时，向导会要求用户输入用于调试的站点 URL，以及新解决方案是否沙盒，并且向导使用此信息配置新项目。 向导还会收集有关列 (例如基类型和在站点列库中列出列的组) 并将此信息添加到新项目中的 *Elements.xml* 文件。 有关详细信息，请参阅演练：使用项目模板创建站点列项目项 [，第 2 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
-- [演练：使用项目模板创建网站栏项目项（第2部分）](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
-- [定义自定义 SharePoint 项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
-- [为 SharePoint 项目项创建项模板和项目模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
-- [在 SharePoint 项目系统的扩展中保存数据](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
-- [将自定义数据与 SharePoint 工具扩展相关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
+- [演练：使用项目模板创建站点列项目项，第 2 部分](../sharepoint/walkthrough-creating-a-site-column-project-item-with-a-project-template-part-2.md)
+- [定义自定义SharePoint项目项类型](../sharepoint/defining-custom-sharepoint-project-item-types.md)
+- [为项目项创建项模板SharePoint模板](../sharepoint/creating-item-templates-and-project-templates-for-sharepoint-project-items.md)
+- [将数据保存在项目系统的SharePoint扩展中](../sharepoint/saving-data-in-extensions-of-the-sharepoint-project-system.md)
+- [将自定义数据与 SharePoint 工具扩展关联](../sharepoint/associating-custom-data-with-sharepoint-tools-extensions.md)
