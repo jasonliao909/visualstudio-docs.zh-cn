@@ -1,5 +1,5 @@
 ---
-description: 通知调试引擎 (DE) 指定的程序已被异常终止，并应清除对程序的所有引用并发送程序销毁事件。
+description: 通知调试引擎 (DE) 指定的程序已以非典型方式终止，并且 DE 应清除对该程序的所有引用并发送程序销毁事件。
 title: IDebugEngine2：:D estroyProgram |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 49256244f5839341c66f5a308505c18c0737eace
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119134"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665420"
 ---
 # <a name="idebugengine2destroyprogram"></a>IDebugEngine2::DestroyProgram
-通知调试引擎 (DE) 指定的程序已被异常终止，并应清除对程序的所有引用并发送程序销毁事件。
+通知调试引擎 (DE) 指定的程序已以非典型方式终止，并且 DE 应清除对该程序的所有引用并发送程序销毁事件。
 
 ## <a name="syntax"></a>语法
 
@@ -41,19 +41,19 @@ int DestroyProgram(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pProgram`\
-中一个 [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，该对象表示已被异常终止的程序。
+[in]一 [个 IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md) 对象，表示已以非典型方式终止的程序。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 在调用此方法之后，以后再将 [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 事件发送回会话调试管理器 (SDM) 。
+ 调用此方法后，DE 随后会向会话调试管理器发送 [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md) 事件 (SDM) 。
 
- 此方法未实现 (`E_NOTIMPL` 如果取消操作与正在调试的程序在同一进程中运行，将返回) 。 仅当在与 SDM 相同的进程中运行时，才实现此方法。
+ 如果 DE 与 (在同一进程中 `E_NOTIMPL`) ，则此方法不会实现。 只有当 DE 与 SDM 在同一进程中运行时，才实现此方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [IDebugProgramDestroyEvent2](../../../extensibility/debugger/reference/idebugprogramdestroyevent2.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)

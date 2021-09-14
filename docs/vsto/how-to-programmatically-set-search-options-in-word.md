@@ -1,6 +1,6 @@
 ---
 title: 如何：以编程方式在 Word 中设置搜索选项
-description: 了解如何使用 Visual Studio 以编程方式设置搜索选项，以在 Microsoft Word。
+description: 了解如何使用 Visual Studio 以编程方式为 Microsoft Word 中的选择设置搜索选项。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: how-to
@@ -19,43 +19,43 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 8916affc89cdf179cf3981e5900d155731ded6c8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122046433"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665246"
 ---
 # <a name="how-to-programmatically-set-search-options-in-word"></a>如何：以编程方式在 Word 中设置搜索选项
-  有两种方法可以设置 Word 文档中Microsoft Office选项：
+  可以通过两种方式为 Microsoft Office Word 文档中的选择设置搜索选项：
 
-- 设置 对象的单个 <xref:Microsoft.Office.Interop.Word.Find> 属性。
+- 设置对象的单个属性 <xref:Microsoft.Office.Interop.Word.Find> 。
 
-- 使用 对象的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 方法的参数 <xref:Microsoft.Office.Interop.Word.Find> 。
+- 使用对象的方法的参数 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> <xref:Microsoft.Office.Interop.Word.Find> 。
 
   [!INCLUDE[appliesto_wdalldocapp](../vsto/includes/appliesto-wdalldocapp-md.md)]
 
-## <a name="use-properties-of-a-find-object"></a>使用 Find 对象的属性
- 以下代码设置 对象的属性 <xref:Microsoft.Office.Interop.Word.Find> ，以在当前选定内容中搜索文本。 请注意，搜索条件（如向前搜索、换行和要搜索的文本）是 对象 <xref:Microsoft.Office.Interop.Word.Find> 的属性。
+## <a name="use-properties-of-a-find-object"></a>使用查找对象的属性
+ 下面的代码设置对象的属性 <xref:Microsoft.Office.Interop.Word.Find> ，以在当前选定内容中搜索文本。 请注意，搜索条件（如向前搜索、换行和文本搜索）是对象的属性 <xref:Microsoft.Office.Interop.Word.Find> 。
 
- 编写 C# 代码时，设置 对象的每个属性都无用，因为必须在 方法中指定与参数 <xref:Microsoft.Office.Interop.Word.Find> 相同的 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 属性。 因此，此示例仅包含Visual Basic代码。
+ <xref:Microsoft.Office.Interop.Word.Find>当你编写 c # 代码时，设置对象的每个属性并不有用，因为你必须在方法中指定与参数相同的属性 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。 因此，此示例仅包含 Visual Basic 代码。
 
 ### <a name="to-set-search-options-using-a-find-object"></a>使用 Find 对象设置搜索选项
 
-1. 设置 对象的属性 <xref:Microsoft.Office.Interop.Word.Find> ，以在所选文本中向前搜索"查找 **我"。**
+1. 设置对象的属性 <xref:Microsoft.Office.Interop.Word.Find> ，以便通过文本 " **查找我**" 向前搜索所选内容。
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet76":::
 
 ## <a name="use-execute-method-arguments"></a>使用 Execute 方法参数
- 以下代码使用 对象的 方法在当前选定 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> <xref:Microsoft.Office.Interop.Word.Find> 内容中搜索文本。 请注意，搜索条件（如向前搜索、换行和要搜索的文本）作为 方法 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 的参数传递。
+ 下面的代码使用 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 对象的方法在 <xref:Microsoft.Office.Interop.Word.Find> 当前选定内容中搜索文本。 请注意，搜索条件（如向前搜索、换行和文本搜索）作为方法的参数进行传递 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 。
 
-### <a name="to-set-search-options-using-execute-method-arguments"></a>使用 Execute 方法参数设置搜索选项
+### <a name="to-set-search-options-using-execute-method-arguments"></a>使用执行方法参数设置搜索选项
 
-1. 将搜索条件作为 方法的参数 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> 传递，以通过所选文本向前搜索"查找 **我"。**
+1. 将搜索条件作为方法的参数传递 <xref:Microsoft.Office.Interop.Word.Find.Execute%2A> ，以通过文本的选择向前搜索 " **查找我**"。
 
      :::code language="vb" source="../vsto/codesnippet/VisualBasic/Trin_VstcoreWordAutomationVB/ThisDocument.vb" id="Snippet77":::
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_VstcoreWordAutomationCS/ThisDocument.cs" id="Snippet77":::
 
-## <a name="see-also"></a>请参阅
-- [如何：以编程方式搜索和替换文档中的文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
-- [如何：以编程方式循环访问文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
-- [如何：在搜索后以编程方式还原选择](../vsto/how-to-programmatically-restore-selections-after-searches.md)
+## <a name="see-also"></a>另请参阅
+- [如何：以编程方式在文档中搜索和替换文本](../vsto/how-to-programmatically-search-for-and-replace-text-in-documents.md)
+- [如何：以编程方式遍历在文档中找到的项](../vsto/how-to-programmatically-loop-through-found-items-in-documents.md)
+- [如何：以编程方式在搜索后还原选定内容](../vsto/how-to-programmatically-restore-selections-after-searches.md)

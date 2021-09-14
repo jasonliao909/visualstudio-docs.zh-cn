@@ -1,6 +1,6 @@
 ---
-title: 为应用程序创建应用程序SharePoint |Microsoft Docs
-description: 创建应用程序页SharePoint。 应用程序页是一 ASP.NET 网页，旨在用于SharePoint网站。
+title: 为 SharePoint 创建应用程序页 |Microsoft Docs
+description: 为 SharePoint 创建应用程序页。 应用程序页是设计为在 SharePoint 网站中使用的 ASP.NET 网页。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -20,61 +20,61 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 035c3b952fd16dd8aa4adf3ffb95542fe39464ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122149515"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665295"
 ---
 # <a name="create-application-pages-for-sharepoint"></a>为 SharePoint 创建应用程序页
-  *应用程序页* 是一 ASP.NET 网页，旨在用于SharePoint网站。 应用程序页是专用类型的 ASP.NET 页。 应用程序页和标准页面之间的主要 ASP.NET 在于，应用程序页包含与主页SharePoint的内容。 母版页使应用程序页能够与站点上的其他页面共享相同的外观和行为。
+  *应用程序页* 是设计为在 SharePoint 网站中使用的 ASP.NET 网页。 应用程序页是 ASP.NET 页的专用类型。 应用程序页和标准 ASP.NET 页之间的主要区别在于，应用程序页包含与 SharePoint 母版页合并的内容。 母版页使应用程序页面与站点上的其他页面共享相同的外观和行为。
 
- Visual Studio设计器设计应用程序页。 设计器为母版页中定义的每个内容占位符显示一个内容区域。 可以通过将控件拖动到这些内容区域来设计应用程序页。
+ Visual Studio 使你能够使用设计器来设计应用程序页。 设计器显示在母版页中定义的每个内容占位符的内容区域。 您可以通过将控件拖到这些内容区域来设计应用程序页。
 
 ## <a name="application-pages"></a>应用程序页
- 应用程序页在服务器上的所有站点之间共享，而站点页特定于一个站点。 有关详细信息，请参阅[SharePoint类型。](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))
+ 应用程序页在服务器上的所有站点之间共享，而站点页面则特定于一个站点。 有关详细信息，请[SharePoint 页类型](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))。
 
- 默认情况下，创建站点站点时显示SharePoint是网站页。 可以将站点页添加到SharePoint库。 用户可以使用设计器等工具自定义SharePoint页。 站点页还可以托管动态部件和 web 部件Web 部件等功能。
+ 默认情况下，创建 SharePoint 站点时显示的大多数页面都是网站页面。 可以将网站页面添加到 SharePoint 的页面库。 用户可以使用工具（如 SharePoint 设计器）来自定义网站页面。 网站页面还可以托管功能，如动态 Web 部件和 Web 部件区域。
 
- 应用程序页无法执行这些操作。 但是，如果希望页面包含自定义代码，则应用程序页是要创建的最佳页面类型。 尽管可以将自定义代码添加到站点页，但当用户使用设计器等工具自定义页面时，代码SharePoint运行。
+ 应用程序页不能执行这些操作。 但是，如果您希望页面包含自定义代码，则可以创建一个应用程序页。 虽然您可以将自定义代码添加到站点页，但当用户通过使用 SharePoint 设计器之类的工具自定义该页时，代码将停止运行。
 
 > [!NOTE]
-> Visual Studio未提供模板来帮助你为 web 站点创建SharePoint页面。 有关详细信息，请参阅页[SharePoint类型](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))。
+> Visual Studio 不提供可帮助你为 SharePoint 网站创建网站页面的模板。 有关详细信息，请参阅[SharePoint 页类型](/previous-versions/office/developer/sharepoint-2010/aa979592(v=office.14))。
 
-## <a name="create-an-application-page"></a>创建应用程序页
- 若要创建应用程序页，将应用程序 **页** 项添加到SharePoint项目。 创建应用程序页时，Visual Studio将以下文件夹添加到项目：
+## <a name="create-an-application-page"></a>"创建应用程序" 页
+ 若要创建应用程序页，请将 "**应用程序页**" 项添加到 SharePoint 项目。 当你创建应用程序页时，Visual Studio 会将以下文件夹添加到你的项目：
 
-|文件夹|说明|
+|Folder|说明|
 |------------|-----------------|
-|布局|地图_layouts文件系统的SharePoint虚拟目录。|
-|布局子文件夹|包含应用程序页中的文件。 默认情况下，此文件夹与项目同名。 你随时都可以重命名此文件夹。 运行项目时，Visual Studio文件夹部署到 _layouts 文件系统的 SharePoint 目录。|
+|布局|地图到 SharePoint 文件系统的 _layouts 虚拟目录。|
+|布局子文件夹|包含构成应用程序页面的文件。 默认情况下，此文件夹具有与项目相同的名称。 你可以随时重命名此文件夹。 运行项目时，Visual Studio 将此文件夹部署到 SharePoint 文件系统的 _layouts 虚拟目录。|
 
- Visual Studio将以下文件添加到项目：
+ Visual Studio 将以下文件添加到项目中：
 
 |文件|说明|
 |----------|-----------------|
-|ASP.NET *.aspx (页)*|包含定义页面的 XML 标记。|
-|应用程序页代码文件|包含应用程序页后面的代码。 将处理事件的代码添加到此文件。|
-|应用程序页设计器代码文件|包含设计器生成的代码。 不要直接编辑此文件。|
+|ASP.NET 页面文件 (*.aspx*) |包含用于定义该页的 XML 标记。|
+|应用程序页代码文件|包含应用程序页后的代码。 将处理事件的代码添加到此文件。|
+|应用程序页设计器代码文件|包含由设计器生成的代码。 不要直接编辑此文件。|
 
 ## <a name="design-and-debug-an-application-page"></a>设计和调试应用程序页
- 使用应用程序中的设计器视图设计应用程序页Visual Studio。 通过双击或打开其快捷菜单，然后选择"打开) "，然后选择编辑器底部的"设计"按钮，在项目 (中打开应用程序页时，将显示此设计器。 
+ 使用 Visual Studio 中的设计器视图设计应用程序页的内容。 当您在项目中打开应用程序页面时，将显示此设计器 (方法是双击它，或打开其快捷菜单，然后选择 " **打开**) 然后选择编辑器底部的" **设计** "按钮。
 
 > [!NOTE]
-> 只能在设计器的"源 **"视图中** 设计页面。 **为** 应用程序页禁用设计器的"设计"视图。
+> 您只能在设计器的 " **源** " 视图中设计此页。 对于应用程序页，禁用设计器的 **设计** 视图。
 
- 可以像调试应用程序中的其他项目项一样SharePoint应用程序Visual Studio。 当你启动 Visual Studio 调试器时，Visual Studio 将打开 SharePoint 网站。
+ 您可以像调试 Visual Studio 中的其他 SharePoint 项目项一样调试应用程序页。 当你启动 Visual Studio 调试器时，Visual Studio 将打开 SharePoint 网站。
 
- 若要查看应用程序页，必须手动导航到应用程序页的位置 (例如：http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx) 。
+ 若要查看应用程序页，必须手动导航到应用程序页的位置 (例如： http://<em>Server_Name</em>/_layouts/*Project_Name*/ApplicationPage1.aspx) 。
 
  有关如何调试 SharePoint 项目的详细信息，请参阅 [SharePoint 解决方案疑难解答](../sharepoint/troubleshooting-sharepoint-solutions.md)。
 
 ## <a name="choose-a-master-page"></a>选择母版页
- 默认情况下， **应用程序页** 项引用你正在调试项目的站点的母版页。 该页名为 v4.master，可在该站点的母版页库中SharePoint列出。
+ 默认情况下， **应用程序页** 项引用用于调试项目的站点的母版页。 该页命名为 "v4"，您可以在 SharePoint 网站的 **母版页库** 中找到它。
 
- 可以通过设置应用程序元素的 属性来显式更改应用程序页 `MasterPageFile` 使用的母版 `Page` 页。  (例如 `MasterPageFile="~/_layouts/applicationv4.master"` ：) 。 事实上，如果未在服务器服务器上启用动态母版页，则必须SharePoint此属性。 有关中母版页SharePoint，请参阅[母版页](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))。
+ 通过设置应用程序元素的属性，可以显式更改应用程序页所使用的母版页 `MasterPageFile` `Page` 。  (例如： `MasterPageFile="~/_layouts/applicationv4.master"`) 。 事实上，如果未在 SharePoint 服务器上启用动态母版页，则必须设置此属性。 有关 SharePoint 中的母版页的详细信息，请参阅[母版页](/previous-versions/office/developer/sharepoint-2010/ms443795(v=office.14))。
 
-## <a name="see-also"></a>请参阅
-- [SharePoint深度基础开发](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
+## <a name="see-also"></a>另请参阅
+- [SharePoint深入了解基础开发](/previous-versions/office/developer/sharepoint-2010/ee539092(v=office.14))
 - [ASP.NET 概述](/aspnet/overview)
 - [ASP.NET 网页](/aspnet/web-pages/index)

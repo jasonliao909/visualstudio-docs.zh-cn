@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: a8c192d9fb6c5f102247f0b38f412b94e3bdb5e6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059915"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665264"
 ---
 # <a name="architecture-of-vsto-add-ins"></a>VSTO 外接程序的体系结构
   使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序具有强调稳定性和安全性的体系结构功能，并使其能够与 Microsoft Office 紧密合作。 本主题介绍 VSTO 外接程序的以下方面：
@@ -37,7 +37,7 @@ ms.locfileid: "122059915"
 
   [!INCLUDE[appliesto_allapp](../vsto/includes/appliesto-allapp-md.md)]
 
-  有关创建外接程序的VSTO，请参阅 Office 解决方案开发概述[](../vsto/office-solutions-development-overview-vsto.md)&#40;VSTO&#41;和外接程序VSTO[编程](../vsto/getting-started-programming-vsto-add-ins.md)。
+  有关创建 VSTO 外接程序的一般信息，请参阅 Office 解决方案开发概述[&#40;VSTO&#41;](../vsto/office-solutions-development-overview-vsto.md)和外接程序VSTO[编程](../vsto/getting-started-programming-vsto-add-ins.md)入门。
 
 ## <a name="understand-vsto-add-ins"></a><a name="UnderstandingAddIns"></a>了解VSTO外接程序
  使用 Office 中的 Visual Studio 开发人员工具生成 VSTO 外接程序时，将创建由 Microsoft Office 应用程序加载的托管代码程序集。 加载该程序集后，VSTO 外接程序可以响应在应用程序中引发的事件（例如，用户单击菜单项时）。 VSTO 外接程序也可以调入对象模型，以便实现应用程序自动化和扩展应用程序，并且它可以使用 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)]中的任何类。
@@ -53,7 +53,7 @@ ms.locfileid: "122059915"
  尽管 VSTO 外接程序程序集是主要组件，但有其他若干组件对 Microsoft Office 应用程序如何发现和加载 VSTO 外接程序起重要作用。
 
 ### <a name="registry-entries"></a>注册表项
- Microsoft Office 应用程序通过查找一组注册表项来发现 VSTO 外接程序。 有关外接程序使用的注册表项的完整VSTO，请参阅 VSTO[外接程序 的注册表项](../vsto/registry-entries-for-vsto-add-ins.md)。
+ Microsoft Office 应用程序通过查找一组注册表项来发现 VSTO 外接程序。 有关外接程序使用的注册表项的完整VSTO，请参阅外接程序 的VSTO[项](../vsto/registry-entries-for-vsto-add-ins.md)。
 
  生成解决方案时，Visual Studio 会在开发计算机上创建所有必需的注册表项，以便你调试和运行 VSTO 外接程序。 有关详细信息，请参阅生成[Office解决方案](../vsto/building-office-solutions.md)。
 
@@ -63,9 +63,9 @@ ms.locfileid: "122059915"
  VSTO 外接程序使用部署清单和应用程序清单来标识和加载 VSTO 外接程序程序集的最新版本。 部署清单指向当前应用程序清单。 应用程序清单指向 VSTO 外接程序程序集，并指定要在程序集中执行的入口点类。 有关详细信息，请参阅应用程序[解决方案 中的](../vsto/application-and-deployment-manifests-in-office-solutions.md)应用程序和Office清单。
 
 ### <a name="visual-studio-tools-for-office-runtime"></a>Visual Studio Tools for Office Runtime
- 若要VSTO使用 Office 开发人员工具创建Visual Studio外接程序，最终用户计算机必须 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 安装 。 运行时包括非托管组件和一组托管程序集。 非托管组件加载 VSTO 外接程序程序集。 托管程序集提供 VSTO 外接程序代码用于实现主机应用程序自动化和扩展主机应用程序的对象模型。
+ 若要VSTO开发人员工具创建Office外接程序Visual Studio，最终用户计算机必须 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 安装 。 运行时包括非托管组件和一组托管程序集。 非托管组件加载 VSTO 外接程序程序集。 托管程序集提供 VSTO 外接程序代码用于实现主机应用程序自动化和扩展主机应用程序的对象模型。
 
- 有关详细信息，请参阅 Visual Studio Tools for Office[概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+ 有关详细信息，请参阅 Visual Studio Tools for Office[运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
 ## <a name="how-vsto-add-ins-work-with-microsoft-office-applications"></a><a name="HowAddinsWork"></a>VSTO外接程序如何与 Microsoft Office 应用程序一起工作
  当用户启动 Microsoft Office 应用程序时，该应用程序使用部署清单和应用程序清单来查找并加载 VSTO 外接程序程序集的最新版本。 下图显示了这些 VSTO 外接程序的基本体系结构。
@@ -80,7 +80,7 @@ ms.locfileid: "122059915"
 
 1. 应用程序检查注册表中是否存在标识使用 Visual Studio 中的 Office 开发人员工具创建的 VSTO 外接程序的项。
 
-2. 如果应用程序找到这些注册表项，则该应用程序加载 VSTOEE.dll，后者会加载 VSTOLoader.dll。 这些非托管 DLL 是 Visual Studio 2010 Tools for Office Runtime 的加载程序组件。 有关详细信息，请参阅 Visual Studio Tools for Office[概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
+2. 如果应用程序找到这些注册表项，则该应用程序加载 VSTOEE.dll，后者会加载 VSTOLoader.dll。 这些非托管 DLL 是 Visual Studio 2010 Tools for Office Runtime 的加载程序组件。 有关详细信息，请参阅 Visual Studio Tools for Office[运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)。
 
 3. *VSTOLoader.dll* 加载 [!INCLUDE[dnprdnshort](../sharepoint/includes/dnprdnshort-md.md)] 并启动 的托管部分 [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 。
 
@@ -105,13 +105,13 @@ ms.locfileid: "122059915"
     > [!NOTE]
     > [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 为主机应用程序支持的每个扩展性接口分别调用 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法。 尽管对 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的第一次调用通常发生在调用 `ThisAddIn_Startup` 方法之前，但 VSTO 外接程序不应作出有关 <xref:Microsoft.Office.Tools.AddInBase.RequestService%2A> 方法的调用时间和次数的任何假设。
 
-11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在 VSTO 外接程序中调用 `ThisAddIn_Startup` 方法。 此方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的默认事件处理程序。 有关详细信息，请参阅[项目中Office事件](../vsto/events-in-office-projects.md)。
+11. [!INCLUDE[vsto_runtime](../vsto/includes/vsto-runtime-md.md)] 在 VSTO 外接程序中调用 `ThisAddIn_Startup` 方法。 此方法是 <xref:Microsoft.Office.Tools.AddInBase.Startup> 事件的默认事件处理程序。 有关详细信息，请参阅项目中[Office事件](../vsto/events-in-office-projects.md)。
 
-## <a name="see-also"></a>请参阅
-- [Office 解决方案体系结构Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
+## <a name="see-also"></a>另请参阅
+- [解决方案Office体系结构Visual Studio](../vsto/architecture-of-office-solutions-in-visual-studio.md)
 - [文档级自定义项的体系结构](../vsto/architecture-of-document-level-customizations.md)
 - [Visual Studio Tools for Office运行时概述](../vsto/visual-studio-tools-for-office-runtime-overview.md)
 - [程序VSTO外接程序](../vsto/programming-vsto-add-ins.md)
 - [开发Office解决方案](../vsto/developing-office-solutions.md)
 - [安全Office解决方案](../vsto/securing-office-solutions.md)
-- [部署 Office 解决方案](../vsto/deploying-an-office-solution.md)
+- [部署Office解决方案](../vsto/deploying-an-office-solution.md)

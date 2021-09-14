@@ -15,11 +15,11 @@ ms.author: lerich
 manager: jmartens
 ms.technology: vs-ide-sdk
 ms.openlocfilehash: 8ade27ac47c25a3170c5c7c6048aa1c6c21181e4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109885"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665304"
 ---
 # <a name="vsix-language-pack-schema-20-reference"></a>VSIX 语言包架构2.0 引用
 

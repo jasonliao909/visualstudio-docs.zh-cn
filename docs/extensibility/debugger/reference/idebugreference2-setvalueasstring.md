@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 6f582cc79b3feb2eb8a5be431431c405774d1409
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063819"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665409"
 ---
 # <a name="idebugreference2setvalueasstring"></a>IDebugReference2::SetValueAsString
 设置字符串中引用的值。 保留供将来使用。
@@ -45,7 +45,7 @@ int SetValueAsString (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszValue`\
 [in]字符串形式的值。
 
@@ -58,5 +58,5 @@ int SetValueAsString (
 ## <a name="return-value"></a>返回值
  始终返回 `E_NOTIMPL`。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugReference2](../../../extensibility/debugger/reference/idebugreference2.md)

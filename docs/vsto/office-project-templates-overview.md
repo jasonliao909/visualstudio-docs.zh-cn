@@ -34,11 +34,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2436ccd10cc6ce8eb670be5e6cc537e0193171b9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025987"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664941"
 ---
 # <a name="office-project-templates-overview"></a>Office 项目模板概述
   Visual Studio 中的 Microsoft Office 开发人员工具包括用于创建以下类型的 Office 解决方案的项目模板：
@@ -169,7 +169,7 @@ ms.locfileid: "122025987"
 ## <a name="excel-add-ins-xla-files"></a>Excel外接程序 ( bam.xla 文件) 
  没有 Office 的项目用于创建 Excel VSTO 外接程序 (*bam.xla* 文件) 。 可以将工作簿另存为 .xla 文件，但这不是一种受支持的操作，建议你不要这样做。 如果将具有托管代码扩展的工作簿保存为 **Microsoft Office Excel Add-In (\* bam.xla)** 文件中，则可以在 "**外接程序**" 对话框中选择该工作簿以应用于另一个工作簿。 在某些情况下，应用 VSTO 外接程序后，你的代码将在目标工作簿中运行，但不支持此类 Office 解决方案。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [开发 Office 解决方案](../vsto/developing-office-solutions.md)
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)

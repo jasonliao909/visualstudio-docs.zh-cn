@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 80d00d1f9c385fc4ab568c0c8051801772f0d0bd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029159"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665371"
 ---
 # <a name="provider_fields"></a>PROVIDER_FIELDS
 指定与程序提供程序相关联的属性。

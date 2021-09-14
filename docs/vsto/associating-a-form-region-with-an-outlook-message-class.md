@@ -19,16 +19,16 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: f38640840b929b4044ca37d6571c82289f32b55f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038222"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665260"
 ---
 # <a name="associate-a-form-region-with-an-outlook-message-class"></a>将窗体区域与Outlook类关联
   通过将窗体区域与Microsoft Office Outlook的消息类相关联，可以指定哪些项显示窗体区域。 例如，如果要将窗体区域追加到邮件项的底部，可以将窗体区域与邮件 `IPM.Note` 类关联。
 
- 若要将窗体区域与消息类关联，请指定"新建窗体区域Outlook中的消息类名称，**或** 将属性应用于窗体区域工厂类。
+ 若要将窗体区域与消息类关联，请指定"新建窗体Outlook中的消息类名称，**或** 将属性应用于窗体区域工厂类。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
@@ -58,7 +58,7 @@ ms.locfileid: "122038222"
 - 应用类特性。
 
 ### <a name="use-the-new-outlook-form-region-wizard"></a>使用"新建Outlook窗体区域"向导
- 在"新建窗体Outlook"向导的最后一页上，可以选择标准消息类，并键入要与窗体区域关联的自定义消息类的名称。
+ 在"新建窗体 **Outlook"** 向导的最后一页上，可以选择标准消息类，并键入要与窗体区域关联的自定义消息类的名称。
 
  如果窗体区域旨在替换整个窗体或窗体的默认页，则标准消息类不可用。 只能为向窗体添加新页或追加到窗体底部的窗体指定标准消息类名称。 有关详细信息，请参阅[如何：将窗体区域添加到Outlook外接程序项目](../vsto/how-to-add-a-form-region-to-an-outlook-add-in-project.md)。
 
@@ -66,13 +66,13 @@ ms.locfileid: "122038222"
 
  键入的名称必须符合以下准则：
 
-- 使用完全限定的消息类名称 (例如："IPM。注意.Contoso") 。
+- 使用完全限定的消息类名称 (例如："IPM.注意.Contoso") 。
 
 - 使用分号分隔多个消息类名称。
 
-- 不要包括标准Outlook消息类，例如"IPM。注意"或"IPM.联系人"。 仅包括自定义消息类，例如"IPM"。注意.Contoso"。
+- 不要包括标准Outlook消息类，例如"IPM.注意"或"IPM.联系人"。 仅包括自定义消息类，例如"IPM"。注意.Contoso"。
 
-- 不要为基消息类本身指定 (例如："IPM") 。
+- 请勿指定基消息类本身， (例如："IPM") 。
 
 - 每条消息类名称不超过 256 个字符。
 
@@ -81,7 +81,7 @@ ms.locfileid: "122038222"
 > [!NOTE]
 > "**新建Outlook** 窗体区域"向导不会验证你提供的消息类名称是否正确或有效。
 
- 完成向导后，"新建Outlook **窗体** 区域"向导将属性应用于包含指定消息类名称的窗体区域类。 还可以手动应用这些属性。
+ 完成向导后，"新建Outlook **窗体** 区域向导将属性应用于包含指定消息类名称的窗体区域类。 还可以手动应用这些属性。
 
 ### <a name="apply-class-attributes"></a>应用类特性
  完成"新建窗体区域"Outlook后，可以将窗体区域与Outlook **类** 关联。 为此，将属性应用于窗体区域工厂类。
@@ -95,7 +95,7 @@ ms.locfileid: "122038222"
 
 - 对于自定义消息类，请使用完全限定的消息类名称 (例如："IPM。注意.Contoso") 。
 
-- 不要为基消息类本身指定 (例如："IPM") 。
+- 请勿指定基消息类本身， (例如："IPM") 。
 
 - 每条消息类名称不超过 256 个字符。
 
@@ -106,7 +106,7 @@ ms.locfileid: "122038222"
 > [!NOTE]
 > Visual Studio不会验证你提供的消息类名称是否正确或有效。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [运行时访问窗体区域](../vsto/accessing-a-form-region-at-run-time.md)
 - [创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)
 - [演练：设计Outlook区域](../vsto/walkthrough-designing-an-outlook-form-region.md)

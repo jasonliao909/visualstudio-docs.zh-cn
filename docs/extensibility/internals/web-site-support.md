@@ -1,6 +1,6 @@
 ---
-title: 网站支持|Microsoft Docs
-description: 了解通过将模板和注册属性添加到现有项目系统而创建的网站项目系统。
+title: 网站支持 |Microsoft Docs
+description: 了解网站项目系统，这些系统是通过将模板和注册属性添加到现有项目系统创建的。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -14,18 +14,18 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0cd561e9c1585380a4321801cf8bd21ff40e4d41
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122041901"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126665329"
 ---
 # <a name="web-site-support"></a>网站支持
-网站项目系统是创建 Web 项目的项目系统。 Web 项目反过来会创建 Web 应用程序。 网站项目为具有关联代码的每个网页生成一个可执行文件。 其他可执行文件从 /App_Code 文件夹中的源代码文件生成。
+网站项目系统是用于创建 Web 项目的项目系统。 Web 项目，然后创建 Web 应用程序。 网站项目为每个包含关联代码的网页生成一个可执行文件。 其他可执行文件是从/App_Code 文件夹中的源代码文件生成的。
 
- 通过将模板和注册属性添加到现有项目系统，可创建网站项目系统。 其中一个属性为语言选择 IntelliSense 提供程序。 当请求未缓存的智能网页时，IntelliSense 提供程序实现将处理引用并调用语言编译器。
+ 网站项目系统是通过将模板和注册属性添加到现有项目系统创建的。 其中一个属性选择语言的 IntelliSense 提供程序。 当请求未缓存的智能网页时，IntelliSense 提供程序实现会处理引用并调用语言编译器。
 
- 用于编译网页的语言编译器必须注册到 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 。 可以使用 Web.config[ \<compiler> ](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element)中的 元素注册编译器，如以下示例所示：
+ 用于编译网页的语言编译器必须注册到 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 。 您可以使用 Web.config 文件中的[ \<compiler> 元素](/dotnet/framework/configure-apps/file-schema/compiler/compiler-element)来注册编译器，如以下示例中所示：
 
 ```
 <system.codedom>  <compilers>    <compiler language="py;IronPython" extension=".py"       type="IronPython.CodeDom.PythonProvider, IronPython,       Version=1.0.2391.18146, Culture=neutral,       PublicKeyToken=b03f5f7f11d50a3a" />  </compilers></system.codedom>
@@ -34,13 +34,13 @@ ms.locfileid: "122041901"
 ## <a name="in-this-section"></a>本节内容
 - [网站支持模板](../../extensibility/internals/web-site-support-templates.md)
 
- 列出可用于创建新网站项目和关联项的模板。
+ 列出了可用于创建新的网站项目和关联项的模板。
 
 - [网站支持属性](../../extensibility/internals/web-site-support-attributes.md)
 
- 显示将网站项目连接到 和 的注册 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 属性 [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 。
+ 显示将网站项目连接到和的注册属性 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] [!INCLUDE[vstecasp](../../code-quality/includes/vstecasp_md.md)] 。
 
 ## <a name="related-sections"></a>相关章节
 - [Web 项目](../../extensibility/internals/web-projects.md)
 
- 概述了两种类型的 Web 项目：网站项目和 Web 应用程序项目。
+ 概括介绍了两种 Web 项目、网站项目和 Web 应用程序项目。
