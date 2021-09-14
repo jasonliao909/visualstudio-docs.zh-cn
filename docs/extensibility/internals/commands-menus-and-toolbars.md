@@ -16,11 +16,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: a38bee13afb83afed022dc69f046f87ec64f7adb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122159064"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602591"
 ---
 # <a name="commands-menus-and-toolbars"></a>命令、菜单和工具栏
 菜单和工具栏是用户访问 VSPackage 中的命令的方式。 命令是完成任务（如打印文档、刷新视图或创建新文件）的函数。 菜单和工具栏是用于向用户呈现命令的方便图形方式。 通常，相关命令在相同菜单或工具栏上聚集在一起。

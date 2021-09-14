@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 93588dec17efc3ef2384ccd8d0df95d1fe8260b4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122119498"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602446"
 ---
 # <a name="idebugdocumentposition2getfilename"></a>IDebugDocumentPosition2::GetFileName
 获取包含文档位置的源文件的文件名。
@@ -41,7 +41,7 @@ int GetFileName(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrFileName`\
 弄返回源文件的文件名。
 
@@ -51,5 +51,5 @@ int GetFileName(
 ## <a name="remarks"></a>备注
  源文件可能并不总是有文件名 (源文件可能不存在于磁盘上，例如) 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugDocumentPosition2](../../../extensibility/debugger/reference/idebugdocumentposition2.md)

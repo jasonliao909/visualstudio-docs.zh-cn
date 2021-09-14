@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9daeac1804940eb80331461b12b2cda51e9fef55
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063013"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602572"
 ---
 # <a name="projects"></a>项目
 在 Visual Studio 中，项目是开发人员用来组织 **解决方案资源管理器** 中出现的源代码文件和其他资源的容器。 通常，项目是文件 (例如，c # 项目的 .csproj 文件) 用于存储对源代码文件和资源（如位图文件）的引用。 项目使你可以组织、构建、调试和部署源代码，引用 Web 服务和数据库以及其他资源。 vspackage 可以通过以下三种主要方式扩展 Visual Studio 项目系统：*项目类型*、*项目子类型* 和 *自定义工具*。

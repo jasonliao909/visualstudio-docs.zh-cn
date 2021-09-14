@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ba1b39a74497633e7a6cd1a2655b83550ae3a51c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111054"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602408"
 ---
 # <a name="idebugevent2getattributes"></a>IDebugEvent2::GetAttributes
 获取此调试事件的属性。
@@ -41,7 +41,7 @@ int GetAttribute(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwAttrib`\
 [out] [EVENTATTRIBUTES 枚举中标志](../../../extensibility/debugger/reference/eventattributes.md) 的组合。
 
@@ -51,6 +51,6 @@ int GetAttribute(
 ## <a name="remarks"></a>备注
  [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)接口对于所有事件都是通用的。 此方法描述事件的类型;例如， 是同步或异步事件，是停止事件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEvent2](../../../extensibility/debugger/reference/idebugevent2.md)
 - [EVENTATTRIBUTES](../../../extensibility/debugger/reference/eventattributes.md)

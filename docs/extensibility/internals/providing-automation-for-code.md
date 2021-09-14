@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 705fa036bdb0d76d02e9d4fcd540c3f3450c4f06
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028886"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602559"
 ---
 # <a name="providing-automation-for-code"></a>提供适用于 Code 的自动化
 不需要为代码创建自动化模型。 环境 SDK 并不提供用于执行此操作的示例。 若要深入了解代码模型，请参阅 <xref:EnvDTE.CodeModel> 对象。
@@ -35,5 +35,5 @@ ms.locfileid: "122028886"
 
  如果要添加标准和接口中不可用的功能（如方法或属性） `CodeModel` `FileCodeModel` ，请创建从标准继承的你自己的接口。 请确保将它与您的项目系统一起记录起来，以便最终用户能够找到它。 返回标准接口，但用户可以调用 `QueryInterface` 方法或强制转换为接口（如果已知存在）。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [自动化模型概述](../../extensibility/internals/automation-model-overview.md)

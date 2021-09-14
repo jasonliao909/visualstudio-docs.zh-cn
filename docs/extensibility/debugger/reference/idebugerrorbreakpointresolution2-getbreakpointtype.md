@@ -1,6 +1,6 @@
 ---
 description: 获取断点类型。
-title: IDebugErrorBreakpointResolution2：：GetBreakpointType |Microsoft Docs
+title: IDebugErrorBreakpointResolution2：： GetBreakpointType |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 44991f03a59e53fcdcee9d7fd163ac13635e51d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079074"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602426"
 ---
 # <a name="idebugerrorbreakpointresolution2getbreakpointtype"></a>IDebugErrorBreakpointResolution2::GetBreakpointType
 获取断点类型。
@@ -41,18 +41,18 @@ int GetBreakpointType(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pBPType`\
-[out]从描述断点 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举返回一个值。
+弄返回 [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md) 枚举中的一个值，该值描述断点的类型。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
-此方法返回未能绑定的断点的类型，因此需要错误断点事件。
+此方法返回无法绑定的断点的类型，因此需要一个错误断点事件。
 
 ## <a name="example"></a>示例
-下面的示例演示如何为公开 `CDebugErrorBreakpointResolution` [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
+下面的示例演示如何为 `CDebugErrorBreakpointResolution` 公开 [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md) 接口的简单对象实现此方法。
 
 ```
 HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
@@ -85,6 +85,6 @@ HRESULT CDebugErrorBreakpointResolution::GetBreakpointType(BP_TYPE* pBPType)
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugErrorBreakpointResolution2](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2.md)
 - [BP_TYPE](../../../extensibility/debugger/reference/bp-type.md)

@@ -1,5 +1,5 @@
 ---
-description: 提供取消绑定断点的原因。
+description: 给出断点未绑定的原因。
 title: BP_UNBOUND_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 96492dbc68869ab63b1da14c6a1c7d8b08cc7a66
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120239"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602497"
 ---
 # <a name="bp_unbound_reason"></a>BP_UNBOUND_REASON
-提供取消绑定断点的原因。
+给出断点未绑定的原因。
 
 ## <a name="syntax"></a>语法
 
@@ -56,20 +56,20 @@ public enum enum_BP_UNBOUND_REASON {
 包含断点的代码已卸载。
 
 `BPUR_BREAKPOINT_REBIND`\
-断点已重新绑定到另一个位置。 当断点移动时，或者当断点绑定到的文件的路径不再有效时，可能会发生这种情况。
+断点已重新出现到其他位置。 当断点移动或断点绑定到具有不再有效的路径的文件时，在"编辑并继续"操作后可能会发生这种情况。
 
 `BPUR_ BREAKPOINT_ERROR`\
-确定断点在绑定后出错。 这适用于其条件不再有效的托管断点。
+断点在绑定后被确定为出错。 这种情况发生在其条件不再有效的托管断点上。
 
 ## <a name="remarks"></a>备注
-由 [GetReason](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 方法返回。
+由 [GetReason 方法](../../../extensibility/debugger/reference/idebugbreakpointunboundevent2-getreason.md) 返回。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

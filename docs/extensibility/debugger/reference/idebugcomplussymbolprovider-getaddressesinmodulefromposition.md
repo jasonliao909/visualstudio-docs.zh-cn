@@ -1,5 +1,5 @@
 ---
-description: 将指定模块中的文档位置地图为调试地址的数组。
+description: 地图指定模块中的文档位置指定为调试地址数组。
 title: IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
 titleSuffix: ''
 ms.custom: SEO-VS-2020
@@ -19,14 +19,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 69ed61426c336cf255fcc81c513e1e2f3dcb96c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104087"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602473"
 ---
 # <a name="idebugcomplussymbolprovidergetaddressesinmodulefromposition"></a>IDebugComPlusSymbolProvider::GetAddressesInModuleFromPosition
-将指定模块中的文档位置地图为调试地址的数组。
+地图指定模块中的文档位置指定为调试地址数组。
 
 ## <a name="syntax"></a>语法
 
@@ -52,27 +52,27 @@ int GetAddressesInModuleFromPosition(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ulAppDomainID`\
-中应用程序域标识符。
+[in]应用程序域标识符。
 
 `guidModule`\
-中模块的唯一标识符。
+[in]模块的唯一标识符。
 
 `pDocPos`\
-中文档位置。
+[in]文档位置。
 
 `fStatmentOnly`\
-中如果 `TRUE` 为，则将调试地址限制为单个语句。
+[in]如果 `TRUE` 为 ，则将调试地址限制为单个语句。
 
 `ppEnumBegAddresses`\
-弄返回与此语句或行关联的起始调试地址的枚举数。
+[out]返回与此语句或行关联的起始调试地址的枚举器。
 
 `ppEnumEndAddresses`\
-弄返回与此语句或行相关联的结束调试地址的枚举数。
+[out]返回与此语句或行关联的结束调试地址的枚举器。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
 ## <a name="example"></a>示例
  下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
@@ -226,5 +226,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

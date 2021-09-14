@@ -15,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: f849a55822502eb290466ecda5cf712d0ea83d36c968027cb19369c3714ce20b
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 63660d52f6b5707d4e667da07e5d4ccfa38dae7d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121275445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602560"
 ---
 # <a name="property-pages"></a>属性页
 用户可以使用属性页查看和更改与项目配置相关的和独立的属性。 "**属性页**"按钮在"属性"窗口或解决方案资源管理器工具栏上为提供所选对象的属性页视图的对象启用。 属性页由环境创建，可用于解决方案和项目。 但是，它们还可用于使用配置依赖属性的项目项。 当项目中的文件需要不同的编译器开关设置以正确生成时，可能会使用此功能。
@@ -34,7 +34,7 @@ ms.locfileid: "121275445"
 
  中提供了两种常规类型的 **ProjectProperty Pages** 对话框 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。 例如，对于Visual Basic，属性页使用字段格式显示，如以下屏幕截图所示。 在本部分稍后显示的第二个中，属性页承载的属性网格类似于在"属性窗口"中发现的属性网格。
 
- ![Visual Basic字段](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")格式Project树结构的"属性页"对话框中选择"属性页"
+ ![Visual Basic字段格式](../../extensibility/internals/media/vsvbproppages.gif "vsVBPropPages")Project树结构的"属性页"对话框中的"属性页"
 
  "属性页"对话框中的树结构不是使用 构建的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsHierarchy> 。 环境基于 和 接口传递给它的级别名称 <xref:Microsoft.VisualStudio.OLE.Interop.ISpecifyPropertyPages> <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage> 来生成它。
 
@@ -44,7 +44,7 @@ ms.locfileid: "121275445"
 
 - 配置属性，其中包含与解决方案或项目的调试、优化和生成参数相关的配置相关信息。
 
-  无法创建任何其他顶级类别，但可以选择不在 的实现中显示其中一个 `IVsPropertyPage` 类别。 例如，如果没有为对象显示任何与配置无关的属性，可以选择不显示"通用属性"类别。 如果在配置对象中实现时从项的浏览对象和配置属性实现，则显示通用属性 (实现 、 和相关接口的 `ISpecifyPropertyPages` `ISpecifyPropertyPages` `IVsCfg` `IVsProjectCfg`) 。
+  无法创建任何其他顶级类别，但可以选择不在 的实现中显示其中一个 `IVsPropertyPage` 类别。 例如，如果没有为对象显示任何与配置无关的属性，可以选择不显示"通用属性"类别。 如果在配置对象中实现时从项的浏览对象和配置属性实现，则显示"通用属性" (实现 、 和相关接口的 `ISpecifyPropertyPages` `ISpecifyPropertyPages` `IVsCfg` `IVsProjectCfg`) 。
 
   在顶级类别下显示的每个类别都表示单独的属性页。 对话框中可用的类别和子类别条目由 和 的实现 `ISpecifyPropertyPages` 确定 `IVsPropertyPage` 。
 
@@ -70,17 +70,17 @@ ms.locfileid: "121275445"
 
    可以从解决方案的属性页指定一个或多个项目，当用户按 F5 或从"生成"菜单中选择"运行"时，将启动该项目。 其工作方式类似于旧活动项目，即其名称以粗体解决方案资源管理器显示。
 
-   可以通过调用 来检索启动项目作为自动化模型中的属性 `DTE.Solution.SolutionBuild.StartupProjects` 。 在 VSPackage 中，调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 方法。 `IVsSolutionBuildManager` 作为服务在 `QueryService` SID_SVsSolutionBuildManager。 有关详细信息，请参阅配置[Project和解决方案](../../extensibility/internals/project-configuration-object.md)[配置](../../extensibility/internals/solution-configuration.md)。
+   可以通过调用 来检索启动项目作为自动化模型中的属性 `DTE.Solution.SolutionBuild.StartupProjects` 。 在 VSPackage 中，调用 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 或 <xref:Microsoft.VisualStudio.Shell.Interop.IVsSolutionBuildManager2.get_StartupProject%2A> 方法。 `IVsSolutionBuildManager` 作为服务在 `QueryService` SID_SVsSolutionBuildManager。 有关详细信息，请参阅配置[Project和](../../extensibility/internals/project-configuration-object.md)[解决方案配置](../../extensibility/internals/solution-configuration.md)。
 
 - 活动解决方案生成配置
 
    [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 具有一个活动解决方案配置，通过实现 在自动化模型中可用 `DTE.Solution.SolutionBuild.ActiveConfiguration` 。 解决方案配置是一个集合，其中包含解决方案中每个项目的一个项目配置 (每个项目可以在多个平台上具有多个配置，但名称) 。 有关解决方案的属性页详细信息，请参阅解决方案 [配置](../../extensibility/internals/solution-configuration.md)。
 
-- Project当前已选择
+- Project选定
 
    实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsMonitorSelection.GetCurrentSelection%2A> 方法以检索所选项目层次结构和项目项。 在 DTE 中，将使用 `SelectedItems.SelectedItem.Project` 和 `SelectedItems.SelectedItem.ProjectItem` 方法。 核心文档中这些标题下有示例 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsPropertyPage>
 - [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
 - [项目配置对象](../../extensibility/internals/project-configuration-object.md)

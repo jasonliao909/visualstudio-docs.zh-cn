@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: b7432ed87b5ff633f9f295f9805eeafb9a0d50b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602558"
 ---
 # <a name="providing-automation-for-vspackages"></a>提供适用于 VSPackage 的自动化
 可通过两种主要方式为 Vspackage 提供自动化：通过实现 VSPackage 特定的对象并实现标准自动化对象。 通常，它们一起用于扩展环境的自动化模型。

@@ -15,12 +15,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: e9aa54f6832734709f8fdabd1d3428c4b54e5741972b651eb9ab2cdf3209cf95
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 502867256f90574c2a75791b447b76b56af3a638
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121452285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602482"
 ---
 # <a name="idebugcodecontext3"></a>IDebugCodeContext3
 扩展 [IDebugCodeContext2](../../../extensibility/debugger/reference/idebugcodecontext2.md) 接口，以便能够检索模块和进程接口。

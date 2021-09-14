@@ -1,5 +1,5 @@
 ---
-title: 启用 ClickOnce Security 设置 |Microsoft Docs
+title: 启用ClickOnce安全设置 |Microsoft Docs
 description: 了解发布向导如何自动为应用程序ClickOnce启用代码访问安全性。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
@@ -20,18 +20,18 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: b534d18deeb63cad6cb0df967915e4fde968c688
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080619"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602519"
 ---
 # <a name="how-to-enable-clickonce-security-settings"></a>如何：启用 ClickOnce 安全设置
 必须启用ClickOnce应用程序的代码访问安全性才能发布应用程序。 使用发布向导发布应用程序时，会自动完成此操作。
 
  在某些情况下，启用代码访问安全性可能会影响生成或调试应用程序时的性能;在这些情况下，你可能希望暂时禁用安全设置。
 
- ClickOnce设计器 的"安全性"页上启用或禁用Project **安全设置**。 
+ ClickOnce设计器 的"安全性"页上启用或禁用Project **设置**。 
 
 ### <a name="to-enable-clickonce-security-settings"></a>启用ClickOnce安全设置
 
@@ -52,13 +52,13 @@ ms.locfileid: "122080619"
 
 2. 单击“安全”选项卡。 
 
-3. 清除"**启用ClickOnce安全性设置** 复选框。
+3. 清除"**启用ClickOnce安全设置** 复选框。
 
      应用程序将在完全信任的安全设置下运行;将忽略" **安全性"** 页上的任何设置。
 
     > [!NOTE]
     > 每次使用发布向导发布应用程序时，都会选中此复选框;每次发布成功后，必须再次清除它。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [保护 ClickOnce 应用程序](../deployment/securing-clickonce-applications.md)
 - [ClickOnce 应用程序的代码访问安全性](../deployment/code-access-security-for-clickonce-applications.md)

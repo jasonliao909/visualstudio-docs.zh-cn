@@ -1,6 +1,6 @@
 ---
-description: 此方法使用不区分大小写的搜索返回与枚举常量的名称关联的值。
-title: IDebugEnumField：：GetValueFromStringCaseInsensitive |Microsoft Docs
+description: 此方法使用不区分大小写的搜索来返回与枚举常量名称关联的值。
+title: IDebugEnumField：： GetValueFromStringCaseInsensitive |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: a39bb6ae031aac8ae9fb72134ff3744dacb59ece
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096201"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602428"
 ---
 # <a name="idebugenumfieldgetvaluefromstringcaseinsensitive"></a>IDebugEnumField::GetValueFromStringCaseInsensitive
-此方法使用不区分大小写的搜索返回与枚举常量的名称关联的值。
+此方法使用不区分大小写的搜索来返回与枚举常量名称关联的值。
 
 ## <a name="syntax"></a>语法
 
@@ -43,19 +43,19 @@ int GetValueFromStringCaseInsensitive(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszValue`\
-[in]一个字符串，指定要获取其值的名称。 请注意，对于 C++，这是一个宽字符串。
+中一个字符串，指定要获取其值的名称。 请注意，对于 c + +，这是宽字符字符串。
 
 `pValue`\
-[out]返回关联的数值。
+弄返回关联的数值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 ;否则，如果名称不是枚举的一部分，则返回 `S_OK` `S_FALSE` ，否则返回错误代码。
+ 如果成功，则返回 `S_OK` ; 否则， `S_FALSE` 如果该名称不是枚举的一部分，则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 此方法不区分大小写。 如果需要区分大小写的搜索 (例如，在名称区分大小写的 C++ 等语言中，) [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。
+ 此方法不区分大小写。 如果需要区分大小写的搜索 (例如，使用 c + + （其中名称区分大小写) ），请使用 [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEnumField](../../../extensibility/debugger/reference/idebugenumfield.md)
 - [GetValueFromString](../../../extensibility/debugger/reference/idebugenumfield-getvaluefromstring.md)

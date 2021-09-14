@@ -17,11 +17,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: ff3643d3a1f2d48b0fac071f57738d73055529e7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122057247"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602585"
 ---
 # <a name="miscellaneous-files-project"></a>杂项文件项目
 当用户打开项目项时，IDE 会将所有不属于解决方案中项目的成员的项分配给杂项文件项目。
@@ -38,7 +38,7 @@ ms.locfileid: "122057247"
 
  "杂项文件" 项目不要求用户用 "**新建 Project** " 对话框显式创建它。 此外，杂项文件项目不会永久管理项目成员的列表。 它使用可选功能来记录每个用户最近使用过的文件的列表。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsProject3>
 - <xref:Microsoft.VisualStudio.Shell.Interop.IVsUIShellOpenDocument>
 - <xref:Microsoft.VisualStudio.Shell.Interop.VSDOCUMENTPRIORITY>

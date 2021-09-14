@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: e82ede309d0483dfc406dc54444975ae4cc8afa9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145830"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602507"
 ---
 # <a name="bp_resolution_data"></a>BP_RESOLUTION_DATA
 描述绑定数据断点的结果。
@@ -52,25 +52,25 @@ public struct BP_RESOLUTION_DATA {
 已绑定的数据表达式。
 
 `bstrFunc`\
-数据断点绑定的函数的名称（如果有 (绑定) 。
+如果任何) ，数据断点绑定到 (函数的名称。
 
 `bstrImage`\
-模块的名称 (MyModule.dll，) 断点已绑定的模块的名称。
+模块 (MyModule.dll 的名称，例如数据断点绑定的) 。
 
 `dwFlags`\
-一个来自 [BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md) 的值，描述如何实现数据断点。
+[BP_RES_DATA_FLAGS](../../../extensibility/debugger/reference/bp-res-data-flags.md)枚举中的一个值，描述如何实现数据断点。
 
 ## <a name="remarks"></a>备注
-此结构是 BP_RESOLUTION_LOCATION 的成员[](../../../extensibility/debugger/reference/bp-resolution-location.md)，该结构反过来又是[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md) BP_RESOLUTION_INFO返回的 BP_RESOLUTION_INFO 结构的成员。 [](../../../extensibility/debugger/reference/bp-resolution-info.md)
+此结构是[BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)结构的成员，后者又又是[GetResolutionInfo](../../../extensibility/debugger/reference/idebugbreakpointresolution2-getresolutioninfo.md)方法返回的[BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)结构的成员。
 
 ## <a name="requirements"></a>要求
-标头：msdbg.h
+标头： msdbg
 
-命名空间：Microsoft.VisualStudio.Debugger.Interop
+命名空间： VisualStudio
 
-程序集：Microsoft.VisualStudio.Debugger.Interop.dll
+程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [BP_RESOLUTION_LOCATION](../../../extensibility/debugger/reference/bp-resolution-location.md)
 - [BP_RESOLUTION_INFO](../../../extensibility/debugger/reference/bp-resolution-info.md)

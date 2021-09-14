@@ -1,5 +1,5 @@
 ---
-description: 用于确定程序是否可以在到达执行中的特定点后停止执行。
+description: 用于确定程序在到达执行中的特定点后能否停止执行。
 title: CANSTOP_REASON |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4a9b61c9c77c015071e3661865b93575cb8bbb98
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145687"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602487"
 ---
 # <a name="canstop_reason"></a>CANSTOP_REASON
-用于确定程序是否可以在到达执行中的特定点后停止执行。
+用于确定程序在到达执行中的特定点后能否停止执行。
 
 ## <a name="syntax"></a>语法
 
@@ -52,14 +52,14 @@ public enum enum_CANSTOP_REASON {
 指定单步执行函数。
 
 ## <a name="remarks"></a>备注
-作为参数传递给 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法，以便在到达程序的入口点或单步执行函数或方法之后停止后，使用会话调试管理器 (SDM) 来确认。
+作为参数传递给 [GetReason](../../../extensibility/debugger/reference/idebugcanstopevent2-getreason.md) 方法，以使用会话调试管理器 (SDM) 确认在到达程序的入口点或单步执行函数或方法后是否可停止。
 
 ## <a name="requirements"></a>要求
-标头： msdbg
+标头：msdbg.h
 
-命名空间： VisualStudio
+命名空间：Microsoft.VisualStudio.Debugger.Interop
 
-程序集： Microsoft.VisualStudio.Debugger.Interop.dll
+程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
 ## <a name="see-also"></a>请参阅
 - [枚举](../../../extensibility/debugger/reference/enumerations-visual-studio-debugging.md)

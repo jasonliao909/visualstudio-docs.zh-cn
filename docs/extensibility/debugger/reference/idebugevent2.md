@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 9aca1f8ce1b8dbf4575f4ba9aecd4f714b0dbf83
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079046"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602403"
 ---
 # <a name="idebugevent2"></a>IDebugEvent2
 此接口用于传达关键调试信息，例如在断点处停止，以及非关键信息，如调试消息。
@@ -53,7 +53,7 @@ IDebugEvent2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [事件](../../../extensibility/debugger/reference/idebugportevents2-event.md)
 - [事件](../../../extensibility/debugger/reference/idebugeventcallback2-event.md)

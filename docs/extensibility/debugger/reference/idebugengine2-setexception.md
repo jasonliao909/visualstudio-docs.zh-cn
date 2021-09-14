@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cf8dea7fb30d51140b6445642865d71af08d78de
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111185"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602615"
 ---
 # <a name="idebugengine2setexception"></a>IDebugEngine2::SetException
 指定调试引擎 (DE) 应如何处理给定的异常。
@@ -41,7 +41,7 @@ int SetException(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pException`\
 [in]一 [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md) 描述异常以及如何调试异常的异常结构。
 
@@ -51,6 +51,6 @@ int SetException(
 ## <a name="remarks"></a>备注
  可以指示 DE 在出现第一次、第二次或完全不生成异常时停止程序。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine2](../../../extensibility/debugger/reference/idebugengine2.md)
 - [EXCEPTION_INFO](../../../extensibility/debugger/reference/exception-info.md)

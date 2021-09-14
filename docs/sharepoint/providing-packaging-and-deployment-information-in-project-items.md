@@ -28,11 +28,11 @@ ms.technology: sharepoint-development
 ms.workload:
 - office
 ms.openlocfilehash: 907bb1ed7131859dbf618c7b4b53e1d87b23e2ae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122092964"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602543"
 ---
 # <a name="provide-packaging-and-deployment-information-in-project-items"></a>在项目项中提供打包和部署信息
   中的所有 SharePoint 项目项 [!INCLUDE[vsprvs](../sharepoint/includes/vsprvs-md.md)] 都具有一些属性，可用于在将项目部署到 SharePoint 时提供附加数据。 这些属性如下所示：
@@ -108,7 +108,7 @@ ms.locfileid: "122092964"
 </Assemblies>
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [打包和部署 SharePoint 解决方案](../sharepoint/packaging-and-deploying-sharepoint-solutions.md)
 - [使用模块包括解决方案中的文件](../sharepoint/using-modules-to-include-files-in-the-solution.md)
 - [扩展 SharePoint 打包和部署](../sharepoint/extending-sharepoint-packaging-and-deployment.md)

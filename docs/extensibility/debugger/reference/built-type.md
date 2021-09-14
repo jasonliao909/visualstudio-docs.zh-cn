@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3179ea403cd542a54d4b4a5e0a10776daa87b76f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120200"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126602488"
 ---
 # <a name="built_type"></a>BUILT_TYPE
 此结构指定有关从元数据获取的字段类型的信息。
@@ -56,7 +56,7 @@ public struct BUILT_TYPE {
 标识与此生成字段关联的基础字段的 [IDebugField](../../../extensibility/debugger/reference/idebugfield.md) 对象。
 
 ## <a name="remarks"></a>备注
-当 结构的 字段[设置为](../../../extensibility/debugger/reference/type-info.md)从 TYPE_INFO 枚举集合中 (值时，此结构在 dwTYPE_KIND 中显示为联合 `dwKind` `TYPE_INFO` `TYPE_KIND_BUILT`) 。 [](../../../extensibility/debugger/reference/dwtype-kind.md)
+当 结构的 字段设置为从 dwTYPE_KIND[](../../../extensibility/debugger/reference/type-info.md)枚举值 (时，此结构在 TYPE_INFO 结构中显示为联合的 `dwKind` `TYPE_INFO` `TYPE_KIND_BUILT` 一) 。 [](../../../extensibility/debugger/reference/dwtype-kind.md)
 
 ## <a name="requirements"></a>要求
 标头：sh.h
@@ -65,7 +65,7 @@ public struct BUILT_TYPE {
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [TYPE_INFO](../../../extensibility/debugger/reference/type-info.md)
 - [dwTYPE_KIND](../../../extensibility/debugger/reference/dwtype-kind.md)
