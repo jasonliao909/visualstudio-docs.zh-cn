@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2e5587b3e9d03ba4e0c0f2891bbb67d856e610df
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122118679"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664480"
 ---
 # <a name="idebugmanagedobjectgetmanagedobject"></a>IDebugManagedObject::GetManagedObject
 返回表示托管对象的接口。
@@ -41,7 +41,7 @@ int GetManagedObject(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppManagedObject`\
 [out]返回表示托管对象的接口。
 
@@ -51,5 +51,5 @@ int GetManagedObject(
 ## <a name="remarks"></a>备注
  可以从此方法返回的接口查询托管类实现的任何接口，从而允许调用其方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugManagedObject](../../../extensibility/debugger/reference/idebugmanagedobject.md)

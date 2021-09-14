@@ -1,5 +1,5 @@
 ---
-description: 此接口由调试引擎 de (DE) 发送到会话调试管理器 (SDM) 当 DE 已完成截获事件的处理时。
+description: 此接口由调试引擎 de (DE) 在 DE 完成截获事件处理 (SDM) 发送到会话调试管理器 。
 title: IDebugInterceptExceptionCompleteEvent2 |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,14 +15,14 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: e7f8f49af391bafaa94745fa82c286e762dd2b91
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096123"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664491"
 ---
 # <a name="idebuginterceptexceptioncompleteevent2"></a>IDebugInterceptExceptionCompleteEvent2
-此接口由调试引擎 de (DE) 发送到会话调试管理器 (SDM) 当 DE 已完成截获事件的处理时。
+此接口由调试引擎 de (DE) 在 DE 完成截获事件处理 (SDM) 发送到会话调试管理器 。
 
 ## <a name="syntax"></a>语法
 
@@ -53,6 +53,6 @@ IDebugInterceptExceptionCompleteEvent2 : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [InterceptCurrentException](../../../extensibility/debugger/reference/idebugstackframe3-interceptcurrentexception.md)

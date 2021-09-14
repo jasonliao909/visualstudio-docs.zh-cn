@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: cb62849f82b2fdbbcc6e2942fbeebcb7c1dd60d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122079514"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664538"
 ---
 # <a name="idebugcustomattribute"></a>IDebugCustomAttribute
 此接口表示一个自定义属性，它可以提供属性的名称、父类型和类类型。
@@ -56,7 +56,7 @@ IDebugCustomAttribute : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [符号提供程序接口](../../../extensibility/debugger/reference/symbol-provider-interfaces.md)
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [IDebugCustomAttributeQuery2](../../../extensibility/debugger/reference/idebugcustomattributequery2.md)

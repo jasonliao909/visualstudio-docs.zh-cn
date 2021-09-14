@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6b83ef69d118f902d8c3d1acb1eff47384007a5c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122102553"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664353"
 ---
 # <a name="options-and-options-pages"></a>选项和选项页
 单击 "**工具**" 菜单上的 "**选项**" 将打开 "**选项**" 对话框。 此对话框中的选项统称为 "选项页"。 导航窗格中的树控件包含选项类别，每个类别都包含 "选项" 页。 选择某个页面后，其选项将显示在右窗格中。 这些页面使你可以更改用于确定 VSPackage 状态的选项的值。

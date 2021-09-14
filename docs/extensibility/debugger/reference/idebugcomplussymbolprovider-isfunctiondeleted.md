@@ -1,6 +1,6 @@
 ---
-description: 确定是否删除指定调试地址处的函数。
-title: IDebugComPlusSymbolProvider：： IsFunctionDeleted |Microsoft Docs
+description: 确定删除指定调试地址中的函数。
+title: IDebugComPlusSymbolProvider：：IsFunctionDeleted |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f5f6d764020f78823464d4d8e9784551411fcc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145076"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664595"
 ---
 # <a name="idebugcomplussymbolproviderisfunctiondeleted"></a>IDebugComPlusSymbolProvider::IsFunctionDeleted
-确定是否删除指定调试地址处的函数。
+确定删除指定调试地址中的函数。
 
 ## <a name="syntax"></a>语法
 
@@ -39,12 +39,12 @@ int IsFunctionDeleted(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pAddress`\
-中 [IDebugAddress](../../../extensibility/debugger/reference/idebugaddress.md) 接口所表示的调试地址。 此地址必须是 METHOD_ADDRESS。
+[in]由 [IDebugAddress 接口表示的调试](../../../extensibility/debugger/reference/idebugaddress.md) 地址。 此地址必须是METHOD_ADDRESS。
 
 ## <a name="return-value"></a>返回值
-如果删除该函数，则返回 `S_OK` 。 如果此函数存在，则返回 `S_FALSE` 。
+如果删除该函数，则 返回 `S_OK` 。 如果该函数存在，则返回 `S_FALSE` 。
 
 ## <a name="example"></a>示例
 下面的示例演示如何为公开 [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
@@ -94,5 +94,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugComPlusSymbolProvider](../../../extensibility/debugger/reference/idebugcomplussymbolprovider.md)

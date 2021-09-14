@@ -18,11 +18,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 791e8d9713b1f12cf7e388d87449b4a171c029a9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062974"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664323"
 ---
 # <a name="registering-project-and-item-templates"></a>注册项目和项模板
 Project 类型必须在其项目和项目项模板所在位置注册目录。 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)]使用与你的项目类型关联的注册信息来确定要在 "**添加新的 Project** 和"**添加新项**"对话框中显示的内容。
@@ -44,7 +44,7 @@ Project 类型必须在其项目和项目项模板所在位置注册目录。 [!
 |----------|----------|-----------------|
 |@|REG_SZ|此类型的项目的默认名称。|
 |DisplayName|REG_SZ|要从在包下注册的附属 DLL 检索的名称的资源 ID。|
-|包裹|REG_SZ|包中注册的包的类 ID。|
+|包|REG_SZ|包中注册的包的类 ID。|
 |ProjectTemplatesDir|REG_SZ|Project 模板文件的默认路径。 **新的 Project** 模板将显示 Project 模板文件。|
 
 ### <a name="registering-item-templates"></a>注册项模板
@@ -119,7 +119,7 @@ Project 类型必须在其项目和项目项模板所在位置注册目录。 [!
 
  \WizardFiles
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [添加项目和项目项模板](../../extensibility/internals/adding-project-and-project-item-templates.md)
 - [向导](../../extensibility/internals/wizards.md)

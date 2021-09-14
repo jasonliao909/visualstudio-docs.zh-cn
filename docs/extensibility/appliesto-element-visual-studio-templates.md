@@ -11,12 +11,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 575a1a428c4d3e2816fcb275f6b1609ebf97bab7d4c56e51be3ad24e7f44d27a
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 340ac4db04b62abade9c6572335e28c9fb27b495
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121434927"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664633"
 ---
 # <a name="appliesto-element-visual-studio-templates"></a>AppliesTo (Visual Studio模板) 
 

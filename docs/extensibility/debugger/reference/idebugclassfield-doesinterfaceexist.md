@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 9c7c9ce1ef450c7d2dc6500da39204250e046734
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104165"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664601"
 ---
 # <a name="idebugclassfielddoesinterfaceexist"></a>IDebugClassField::DoesInterfaceExist
 确定是否在类中定义了特定接口。
@@ -41,7 +41,7 @@ int DoesInterfaceExist(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pszInterfaceName`\
 中一个包含要查找的接口名称的字符串。
 
@@ -51,5 +51,5 @@ int DoesInterfaceExist(
 ## <a name="remarks"></a>备注
  此方法有效地获取所有接口的枚举，并在列表中搜索匹配的接口。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugClassField](../../../extensibility/debugger/reference/idebugclassfield.md)

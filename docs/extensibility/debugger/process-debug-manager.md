@@ -1,6 +1,6 @@
 ---
-title: 进程调试管理器|Microsoft Docs
-description: 了解进程调试管理器，它是进程调试Visual Studio使程序可用于会话调试管理器和调试引擎。
+title: 进程调试管理器 |Microsoft Docs
+description: 了解进程调试管理器，它是 Visual Studio 的一个组件，它使程序可用于会话调试管理器和调试引擎。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -15,18 +15,18 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 86d8128f997aff275380b25f90b908bc8abaf535
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122104686"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664850"
 ---
 # <a name="process-debug-manager"></a>进程调试管理器
-PDM (进程) 是管理程序和Visual Studio的一个组件，可用于会话调试管理器和调试引擎。
+进程调试管理器 (PDM) 是 Visual Studio 的一个组件，它可管理程序和进程，使其可用于会话调试管理器和调试引擎。
 
- PDM 管理所有可调试的进程。 若要进行调试，必须将程序注册到 PDM。 此注册是在启动程序时通过端口或调试引擎完成。
+ PDM 管理可调试的所有进程。 若要进行调试，必须向 PDM 注册程序。 此注册是在启动程序时（通过端口或调试引擎）完成的。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [进程](../../extensibility/debugger/processes.md)
 - [调试引擎](../../extensibility/debugger/debug-engine.md)
 - [端口](../../extensibility/debugger/ports.md)

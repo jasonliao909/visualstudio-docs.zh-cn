@@ -22,11 +22,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: e31147694042309c77801d3058ea42fcdf6b8828
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122155494"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664699"
 ---
 # <a name="walkthrough-automate-an-application-from-a-custom-task-pane"></a>演练：从自定义任务窗格自动化应用程序
   本演练演示了如何创建实现 PowerPoint 自动化的自定义任务窗格。 当用户单击自定义任务窗格中的 <xref:System.Windows.Forms.MonthCalendar> 控件时，自定义任务窗格向一张幻灯片中插入日期。
@@ -144,7 +144,7 @@ ms.locfileid: "122155494"
 
 - 为 Outlook 中打开的每封电子邮件创建自定义任务窗格。 有关详细信息，请参阅[演练：在 Outlook 中用电子邮件显示自定义任务窗格](../vsto/walkthrough-displaying-custom-task-panes-with-e-mail-messages-in-outlook.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [自定义任务窗格](../vsto/custom-task-panes.md)
 - [如何：向应用程序添加自定义任务窗格](../vsto/how-to-add-a-custom-task-pane-to-an-application.md)
 - [演练：将自定义任务窗格与功能区按钮同步](../vsto/walkthrough-synchronizing-a-custom-task-pane-with-a-ribbon-button.md)

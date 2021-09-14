@@ -17,12 +17,12 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 1e469eb19e9b1a48ca9ef0cf5348360dc0171d01f9315515665b176cbb038fa4
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 1be9c72c01746b716b0202843b86ed2d5d52d44b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121417983"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664632"
 ---
 # <a name="assembly-element-visual-studio-template-wizard-extension"></a>Visual Studio 模板向导扩展 (的 Assembly 元素) 
 指定实现接口的程序集的名称或强名称 `IWizard` 。

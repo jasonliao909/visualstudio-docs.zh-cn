@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0af5f083c54fbb587bcbed52bc59968ee0477e5f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073313"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664855"
 ---
 # <a name="operational-modes"></a>操作模式
 IDE 可以运行三种模式，如下所示：
@@ -57,5 +57,5 @@ IDE 可以运行三种模式，如下所示：
 
  当程序成功进入下一行代码或进入函数，或者运行到游标或设置断点时，DE 会自动转换回中断模式。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [控制执行](../../extensibility/debugger/control-of-execution.md)

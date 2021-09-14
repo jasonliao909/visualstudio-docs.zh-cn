@@ -1,5 +1,5 @@
 ---
-title: 在外接程序中VSTO控件
+title: 在外接程序中运行时向文档VSTO控件
 description: 了解如何使用功能区使用户能够向文档添加 Button 类或 RichTextContentControl 接口。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
@@ -19,11 +19,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: ddc4f42be5c1b9a6fb439cdb097480b8d7a60e76
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025649"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664700"
 ---
 # <a name="walkthrough-add-controls-to-a-document-at-run-time-in-a-vsto-add-in"></a>演练：在外接程序中运行时将控件VSTO文档
   可以使用外接程序将控件添加到任何Microsoft Office Word 文档VSTO Word 文档。 本演练演示如何使用功能区使用户能够向文档 <xref:Microsoft.Office.Tools.Word.Controls.Button> 添加 或 <xref:Microsoft.Office.Tools.Word.RichTextContentControl> 。
@@ -81,14 +81,14 @@ ms.locfileid: "122025649"
 
 8. 在 **“属性”** 窗口中，更改下列属性。
 
-   | 属性 | 值 |
+   | Property | 值 |
    |-----------|-----------------------|
    | **名称** | **addButtonCheckBox** |
    | **Label** | **"添加"按钮** |
 
 9. 将第二个复选框添加到 **group1**，然后更改下列属性。
 
-   | 属性 | 值 |
+   | Property | 值 |
    |-----------|---------------------------|
    | **名称** | **addRichTextCheckBox** |
    | **Label** | **添加 RTF 控件** |
@@ -128,7 +128,7 @@ ms.locfileid: "122025649"
      :::code language="csharp" source="../vsto/codesnippet/CSharp/Trin_WordAddInDynamicControlsWalkthrough/ThisAddIn.cs" id="Snippet3":::
 
 ## <a name="remove-the-button-control-when-the-document-is-saved"></a>保存文档时删除"按钮"控件
- 保存并关闭文档后，Windows 窗体控件不会保留在文档中。 但是，每个控件的 ActiveX 包装会保留在文档中，并且重新打开文档后，最终用户会看到各包装的边框。 有几种方法可以在外接程序中Windows窗体控件VSTO窗体控件。在此演练中，以编程方式在保存 <xref:Microsoft.Office.Tools.Word.Controls.Button> 文档时删除 控件。
+ 保存并关闭文档后，Windows 窗体控件不会保留在文档中。 但是，每个控件的 ActiveX 包装会保留在文档中，并且重新打开文档后，最终用户会看到各包装的边框。 有几种方法可以在外接程序中清理Windows窗体控件VSTO窗体控件。在此演练中，以编程方式在保存 <xref:Microsoft.Office.Tools.Word.Controls.Button> 文档时删除 控件。
 
 ### <a name="to-remove-the-button-control-when-the-document-is-saved"></a>保存文档后删除 Button 控件
 
@@ -183,12 +183,12 @@ ms.locfileid: "122025649"
 
 - 有关演示如何运行时向文档添加许多其他类型的控件，以及如何在重新打开文档时重新创建控件的示例，请参阅[Office](../vsto/office-development-samples-and-walkthroughs.md)开发示例和演练中的 Word Add-In 动态控件示例。
 
-- 有关演示如何使用 Excel 的 VSTO 外接程序向工作表添加控件的演练，请参阅[演练：在运行时在 VSTO 外接程序项目中向工作表添加控件](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)。
+- 有关演示如何使用 Excel 的 VSTO 外接程序将控件添加到工作表的演练，请参阅演练：在 VSTO 外接程序项目 中运行时[将](../vsto/walkthrough-adding-controls-to-a-worksheet-at-run-time-in-vsto-add-in-project.md)控件添加到工作表。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [Word 解决方案](../vsto/word-solutions.md)
-- [在运行时将控件添加到 Office 文档](../vsto/adding-controls-to-office-documents-at-run-time.md)
-- [在 Office 文档中保留动态控件](../vsto/persisting-dynamic-controls-in-office-documents.md)
-- [如何：向 Office 文档添加 Windows 窗体控件](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
+- [运行时向Office添加控件](../vsto/adding-controls-to-office-documents-at-run-time.md)
+- [在文档中保留Office控件](../vsto/persisting-dynamic-controls-in-office-documents.md)
+- [如何：将Windows窗体控件添加到Office文档](../vsto/how-to-add-windows-forms-controls-to-office-documents.md)
 - [如何：向 Word 文档添加内容控件](../vsto/how-to-add-content-controls-to-word-documents.md)
-- [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
+- [在外接程序Excel扩展 Word 文档VSTO工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)

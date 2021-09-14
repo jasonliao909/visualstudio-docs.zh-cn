@@ -22,11 +22,11 @@ ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
 ms.openlocfilehash: 78789574a07568aeed1b5f4990bc0d1d0f9bf6cc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122089844"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664657"
 ---
 # <a name="troubleshoot-clickonce-deployments"></a>ClickOnce 部署疑难解答
 本主题将帮助你诊断和解决部署中最常见的问题 [!INCLUDE[ndptecclick](../deployment/includes/ndptecclick_md.md)] 。
@@ -59,7 +59,7 @@ ms.locfileid: "122089844"
 
  描述用于调试使用 "ClickOnce" 的应用程序的技术。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [ClickOnce 部署清单](../deployment/clickonce-deployment-manifest.md)
 - [ClickOnce 应用程序清单](../deployment/clickonce-application-manifest.md)

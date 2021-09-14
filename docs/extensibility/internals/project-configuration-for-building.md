@@ -15,11 +15,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 3ef4ab11bd4f5dca68e07a3084371024728336e1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122049761"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664336"
 ---
 # <a name="project-configuration-for-building"></a>用于生成的项目配置
 给定解决方案的解决方案配置列表由"解决方案配置"对话框管理。
@@ -39,18 +39,18 @@ ms.locfileid: "122049761"
 
  有关 [添加和](../../extensibility/internals/solution-configuration.md) 重命名解决方案和项目配置的信息，请参阅解决方案配置。
 
- Project依赖项和生成顺序与解决方案配置无关：也就是说，只能为解决方案中所有项目设置一个依赖关系树。 右键单击解决方案或项目，然后选择"Project **依赖项**"或 **Project"生成顺序**"选项 **Project"** 依赖项"对话框。 也可以从"打开"**菜单Project它**。
+ Project依赖项和生成顺序独立于解决方案配置：也就是说，只能为解决方案中所有项目设置一个依赖关系树。 右键单击解决方案或项目，然后选择"Project **依赖项**"或 **Project"生成顺序**"选项 **Project"** 依赖项"对话框。 也可以从"打开"**菜单Project它**。
 
  ![Project依赖项](../../extensibility/internals/media/vsprojdependencies.gif "vsProjDependencies")Project依赖项
 
  Project依赖项确定项目的生成顺序。 使用对话框上的"生成顺序"选项卡可以查看解决方案中的项目生成的确切顺序，并使用"依赖项"选项卡修改生成顺序。
 
 > [!NOTE]
-> 由于 或 接口指定的显式依赖项，已添加列表中已选中其复选框但显示为灰色的项目，并且 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 无法更改。 例如，将项目引用从项目添加到另一个项目会自动添加一个生成依赖项，该依赖项仅可通过删除引用 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 来删除。 无法选择其复选框为清除且显示为灰色的项目，因为这样做会创建依赖项循环 (例如，Project1 将依赖于 Project2，而 Project2 将依赖于 Project1) ，这将停止生成。
+> 由于 或 接口指定的显式依赖项，已添加列表中已选中其复选框但显示为灰色的项目，并且 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildDependency> <xref:Microsoft.VisualStudio.Shell.Interop.IVsDeployDependency> 无法更改。 例如，将项目引用从项目添加到另一个项目会自动添加一个生成依赖项，该依赖项仅可通过删除引用 [!INCLUDE[vbprvb](../../code-quality/includes/vbprvb_md.md)] 来删除。 无法选择其复选框清晰且显示为灰色的项目，因为这样做会创建依赖项循环 (例如，Project1 将依赖于 Project2，而 Project2 将依赖于 Project1) ，这将停止生成。
 
  [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 生成过程包括使用单个 Build 命令调用的典型编译和链接操作。 还可以支持另外两个生成过程：用于删除以前生成的所有输出项的干净操作，以及用于确定配置中的输出项是否已更改的最新的检查。
 
-- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 对象返回从 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (返回 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A> 的相应) 以管理其生成过程。 若要在生成操作发生时报告其状态，配置将调用 、环境实现的接口以及任何对生成状态事件感兴趣的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> 其他对象。
+- <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2> 对象返回从 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildableProjectCfg> (返回的相应 <xref:Microsoft.VisualStudio.Shell.Interop.IVsProjectCfg2.get_CfgType%2A>) 以管理其生成过程。 若要在生成操作发生时报告其状态，配置将调用 、环境实现的接口以及任何对生成状态事件感兴趣的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsBuildStatusCallback> 其他对象。
 
  生成后，可以使用配置设置来确定它们是否可以在调试器控制下运行。 配置实现 <xref:Microsoft.VisualStudio.Shell.Interop.IVsDebuggableProjectCfg> 以支持调试。
 
@@ -58,7 +58,7 @@ ms.locfileid: "122049761"
 
  此外，还可以在项目依赖项窗口中提供网格。 有关详细信息，请参阅属性 [显示网格](../../extensibility/internals/properties-display-grid.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [管理配置选项](../../extensibility/internals/managing-configuration-options.md)
 - [用于管理部署的项目配置](../../extensibility/internals/project-configuration-for-managing-deployment.md)
 - [用于输出的项目配置](../../extensibility/internals/project-configuration-for-output.md)

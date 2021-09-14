@@ -1,7 +1,7 @@
 ---
-title: 键盘快捷方式
+title: 键盘快捷键
 titleSuffix: Blend for Visual Studio
-description: 了解中用于访问Blend for Visual Studio、文档、对象、视图和工作区的命令的键盘快捷方式。
+description: 了解 Blend for Visual Studio 中用于访问项目、文档、对象、视图和工作区的命令的键盘快捷方式。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: reference
@@ -13,11 +13,11 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 6611ffbcf7ac3ccf98cfc91d8423458ebe314ea3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091924"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664884"
 ---
 # <a name="keyboard-shortcuts-in-blend-for-visual-studio"></a>Blend for Visual Studio 中的键盘快捷方式
 
@@ -25,13 +25,13 @@ ms.locfileid: "122091924"
 
 |要执行此操作|操作|
 |----------------|-------------|
-|创建新项目|**Ctrl** +**Shift** +**N**|
+|创建新项目|**Ctrl** +**移位** +**N**|
 |打开项目或解决方案（不是站点）|**Ctrl**+**Shift**+**O**|
 |关闭解决方案|**Ctrl**+**Shift**+**C**|
 |保存解决方案或站点的副本|Ctrl+Shift+P  |
 |将现有项添加到项目|**Ctrl** +**I**|
-|添加对 DLL 的引用 (WPF)|**Alt** +**Shift** +**R**|
-|生成项目|**Ctrl** +**Shift** +**B**|
+|添加对 DLL 的引用 (WPF)|**Alt** +**移位** +**R**|
+|生成项目|**Ctrl** +**移位** +**B**|
 |测试项目或站点|**F5**|
 
 ## <a name="document-shortcuts"></a>文档快捷方式
@@ -42,10 +42,10 @@ ms.locfileid: "122091924"
 |保存活动文档|**Ctrl** +**S**|
 |保存所有文档|Ctrl + Shift + S |
 |关闭活动文档|**Ctrl**+**W**|
-|关闭所有打开的文档|**Ctrl** +**Shift** +**W**|
-|撤消上一项操作|**Ctrl**+Z|
+|关闭所有打开的文档|**Ctrl** +**移位** +**W**|
+|撤消上一项操作|**Ctrl**+ Z|
 |重做上一次撤消的操作|Ctrl+Y 或 Ctrl+Shift+Z|
-|创建设计时注释|**Ctrl** +**Shift** +**T**|
+|创建设计时注释|**Ctrl** +**移位** +**T**|
 |剪切|**Ctrl** +**X**|
 |复制|**Ctrl** +**C**|
 |粘贴|**Ctrl** +**V**|
@@ -62,23 +62,23 @@ ms.locfileid: "122091924"
 |将对象重新定义为父项|将对象拖到版式面板上，并按 Alt|
 |编辑控件中的文本|F2（按 Esc 退出）|
 |编辑控件 (WPF)| Ctrl+  E|
-|使选定对象的宽度相同|**Ctrl** +**Shift** +**1**|
-|使选定对象的高度相同|**Ctrl** +**Shift** +**2**|
-|使选定对象的大小相同|**Ctrl** +**Shift** +**9**|
-|水平翻转选定对象|**Ctrl** +**Shift** +**3**|
-|垂直翻转选定对象|**Ctrl** +**Shift** +**4**|
+|使选定对象的宽度相同|**Ctrl** +**移位** +**1**|
+|使选定对象的高度相同|**Ctrl** +**移位** +**2**|
+|使选定对象的大小相同|**Ctrl** +**移位** +**9**|
+|水平翻转选定对象|**Ctrl** +**移位** +**3**|
+|垂直翻转选定对象|**Ctrl** +**移位** +**4**|
 |选择多个对象|按住 **Ctrl**|
 |选择多个相邻的对象|按住 Shift|
 |调整所选内容以适合屏幕大小|**Ctrl** +**9**|
-|固定活动容器|**Ctrl** +**Shift** +**D**|
+|固定活动容器|**Ctrl** +**移位** +**D**|
 |微移选定对象|**箭头** 键|
-|自动调整宽度|**Ctrl** +**Shift** +**5**|
-|自动调整高度|**Ctrl** +**Shift** +**6**|
+|自动调整宽度|**Ctrl** +**移位** +**5**|
+|自动调整高度|**Ctrl** +**移位** +**6**|
 |将对象组合到布局面板中|Ctrl+G|
-|取消组合对象|**Ctrl** +**Shift** +**G**|
-|将选定对象置于顶层|**Ctrl** +**Shift** +**]**|
+|取消组合对象|**Ctrl** +**移位** +**G**|
+|将选定对象置于顶层|**Ctrl** +**移位** +**]**|
 |上移一层|**Ctrl** +**]**|
-|将所选定象发送到后面|**Ctrl** +**Shift** +**[**|
+|将所选定象发送到后面|**Ctrl** +**移位** +**[**|
 |下移一层|**Ctrl** +**[**|
 |从选定对象生成用户控件 (WPF)|**F8**|
 |约束对象的比例|拖动对象时按住 Shift|

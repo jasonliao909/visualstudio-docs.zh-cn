@@ -1,6 +1,6 @@
 ---
-description: 此方法获取字段类型。
-title: IDebugField：：GetKind |Microsoft Docs
+description: 此方法获取字段的类型。
+title: IDebugField：： GetKind |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: f866d4564f912111d04dcd4d8c35e942e863193e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122088804"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664512"
 ---
 # <a name="idebugfieldgetkind"></a>IDebugField::GetKind
-此方法获取字段类型。
+此方法获取字段的类型。
 
 ## <a name="syntax"></a>语法
 
@@ -41,13 +41,13 @@ int GetKind(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pdwKind`\
-[out]将字段类型作为常量[FIELD_KIND返回。](../../../extensibility/debugger/reference/field-kind.md)
+弄以 [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md) 常数的组合形式返回字段的类型。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

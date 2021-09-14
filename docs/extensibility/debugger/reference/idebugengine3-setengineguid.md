@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: ab13c75cb0860ccf0c54d7a7fdc42d4c03e8006e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096346"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664837"
 ---
 # <a name="idebugengine3setengineguid"></a>IDebugEngine3::SetEngineGuid
 此方法设置调试引擎 (DE) `GUID` 。
@@ -41,12 +41,12 @@ int SetEngineGuid(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `guidEngine`\
 [in] `GUID` 的。
 
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugEngine3](../../../extensibility/debugger/reference/idebugengine3.md)

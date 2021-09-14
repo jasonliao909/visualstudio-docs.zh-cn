@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 582521a59cc4652aaf3bdf92f5f0c24b19283e20
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122103658"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664570"
 ---
 # <a name="idebugcontainerfieldenumfields"></a>IDebugContainerField::EnumFields
 为容器的字段创建枚举器。
@@ -49,7 +49,7 @@ int EnumFields(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwKindFilter`\
 [in]用于 [FIELD_KIND要](../../../extensibility/debugger/reference/field-kind.md) 枚举的字段的常量的组合。 字段类型可以描述存储类型（如类或基元）或特定信息，例如本地、参数或"this"指针。
 
@@ -66,12 +66,12 @@ int EnumFields(
 [out]返回表示 [字段列表的 IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md) 对象。 如果没有字段，则返回 null 值。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则S_OK或S_FALSE字段时返回 。 否则，返回错误代码。
+ 如果成功，则S_OK或S_FALSE字段时返回值。 否则，返回错误代码。
 
 ## <a name="remarks"></a>备注
  例如，可以组合 、 和 参数，以选择名为 `dwKindFilter` `dwModifiersFilter` `pszNameFilter` "MyMethod"的所有公共虚拟方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugContainerField](../../../extensibility/debugger/reference/idebugcontainerfield.md)
 - [IEnumDebugFields](../../../extensibility/debugger/reference/ienumdebugfields.md)
 - [FIELD_KIND](../../../extensibility/debugger/reference/field-kind.md)

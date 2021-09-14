@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: f3b46aa13e492017f54e452e37eca025ecab842b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122125512"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664418"
 ---
 # <a name="ienumdebugprocesses2"></a>IEnumDebugProcesses2
 此接口枚举调试端口上运行的进程。
@@ -57,6 +57,6 @@ IEnumDebugProcesses : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [EnumProcesses](../../../extensibility/debugger/reference/idebugport2-enumprocesses.md)

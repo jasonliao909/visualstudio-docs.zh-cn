@@ -1,6 +1,6 @@
 ---
 title: 如何创建和应用资源
-description: 了解如何在 XAML 设计器中创建和应用资源，以便可以存储和重用元素的样式和模板。
+description: 了解如何在应用程序中创建和应用资源XAML 设计器以便存储和重用元素的样式和模板。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
@@ -15,23 +15,23 @@ ms.technology: vs-xaml-tools
 ms.workload:
 - multiple
 ms.openlocfilehash: 556cf3fd25c7e629724ed2b1bad9bef0128abc6a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664889"
 ---
 # <a name="how-to-create-and-apply-a-resource"></a>如何创建和应用资源
 
 XAML 设计器中元素的样式和模板存储在称作资源的可重用实体中。 样式可设置元素属性并重用这些设置以便多个元素实现一致的外观。 [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) 定义控件的外观，并且可作为资源应用。 有关详细信息，请参阅 [XAML 样式](/windows/uwp/design/controls-and-patterns/xaml-styles)和[快速操作控件模板](/windows/uwp/design/controls-and-patterns/control-templates)。
 
-每当从现有属性、[样式](xref:Windows.UI.Xaml.Style)或 [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) 创建新资源时，可在“创建资源”对话框中将资源定义为应用程序级别、文档级别或元素级别。 这些级别决定了可使用资源的位置。 例如，如果定义元素级别的资源，则该资源只能应用于在其上创建资源的元素。 你还可以选择将资源存储在 [资源字典](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)中，这是一个可以在另一个项目中再次使用的单独文件。
+每当从现有属性、[样式](xref:Windows.UI.Xaml.Style)或 [ControlTemplate](xref:Windows.UI.Xaml.Controls.ControlTemplate) 创建新资源时，可在“创建资源”对话框中将资源定义为应用程序级别、文档级别或元素级别。 这些级别决定了可使用资源的位置。 例如，如果定义元素级别的资源，则该资源只能应用于在其上创建资源的元素。 还可以选择将资源存储在资源字典 中，[](/windows/uwp/design/controls-and-patterns/resourcedictionary-and-xaml-resource-references)该字典是一个单独的文件，可以在另一个项目中再次使用。
 
 ## <a name="create-a-new-resource"></a>创建新资源
 
 1. 在 XAML 设计器中打开一个 XAML 文件后，创建一个元素，或在“文档大纲”窗口中选择一个元素。
 
-2. 在 " **属性** " 窗口中，选择属性标记，该标记显示为属性值右侧的方框符号，然后选择 " **转换为新资源**"。 白色方框符号指示默认值，而黑色方框符号通常指示已应用了某个本地资源。
+2. 在"**属性**"窗口中，选择属性值右侧显示为框符号的属性标记，然后选择"**转换为新资源"。** 白色方框符号指示默认值，而黑色方框符号通常指示已应用了某个本地资源。
 
      将出现用于创建资源的相应对话框。 当从画笔创建资源时，就会出现此对话框：
 
@@ -57,7 +57,7 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
 2. 执行下列操作之一：
 
-   - 将资源应用于属性。 在 " **属性** " 窗口中，选择属性值旁边的属性标记，选择 " **本地资源** " 或 " **系统资源**"，然后从显示的列表中选择可用资源。
+   - 将资源应用于属性。 在"**属性**"窗口中，选择属性值旁边的属性标记，选择"本地资源"或"系统资源"，然后从出现的列表中选择可用资源。
 
       如果看不到希望看到的资源，可能是因为该资源的类型与属性的类型不匹配。
 
@@ -72,10 +72,10 @@ XAML 设计器中元素的样式和模板存储在称作资源的可重用实体
 
 1. 选择美工板上或“文档大纲”窗口中的某个元素。
 
-2. 在 " **属性** " 窗口中，选择属性右侧的 "默认" 或 "本地" 属性标记，然后选择 " **编辑资源** " 以打开 " **编辑资源** " 对话框。
+2. 在"属性"窗口中选择属性右边的"默认"或"本地"**属性标记，** 然后选择"编辑资源"以打开"**编辑资源**"对话框。
 
 3. 修改该资源的选项。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [使用 XAML 设计器创建 UI](../xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio.md)

@@ -17,12 +17,12 @@ ms.workload:
 dev_langs:
 - CPP
 - CSharp
-ms.openlocfilehash: 75973f94ba1499afbf608bc2e3625f1d27e4460c10c7be516f4d5badb10d21b7
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: ac8b2c7a74801925775642bca9738865c207d14d
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121389938"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664517"
 ---
 # <a name="idebugexpressionevaluatorparse"></a>IDebugExpressionEvaluator::Parse
 此方法将表达式字符串转换为已分析的表达式。
@@ -51,7 +51,7 @@ int Parse(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `upstrExpression`\
 [in]要分析的表达式字符串。
 
@@ -76,7 +76,7 @@ int Parse(
 ## <a name="remarks"></a>备注
  此方法生成已分析的表达式，而不是实际值。 已分析的表达式已准备好进行计算，即转换为值。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugExpressionEvaluator](../../../extensibility/debugger/reference/idebugexpressionevaluator.md)
 - [IDebugParsedExpression](../../../extensibility/debugger/reference/idebugparsedexpression.md)
 - [PARSEFLAGS](../../../extensibility/debugger/reference/parseflags.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 3e678d3089032d93eb2974123d9a5c2153c97e95
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073170"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664848"
 ---
 # <a name="bp_error_resolution_info"></a>BP_ERROR_RESOLUTION_INFO
 描述错误断点（包括位置、程序、线程）的解决方法。
@@ -53,7 +53,7 @@ public struct BP_ERROR_RESOLUTION_INFO {
 
 ## <a name="members"></a>成员
 `dwFields`\
-指定填充此结构的BPERESI_FIELDS枚举[](../../../extensibility/debugger/reference/bperesi-fields.md)中的值的组合。
+指定此结构的哪些字段BPERESI_FIELDS[](../../../extensibility/debugger/reference/bperesi-fields.md)枚举中的值的组合。
 
 `bpResLocation`\
 BP_RESOLUTION_LOCATION [联合](../../../extensibility/debugger/reference/bp-resolution-location.md) ，指定断点解析位置。
@@ -80,7 +80,7 @@ BP_RESOLUTION_LOCATION [联合](../../../extensibility/debugger/reference/bp-res
 
 程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [结构和联合](../../../extensibility/debugger/reference/structures-and-unions.md)
 - [GetResolutionInfo](../../../extensibility/debugger/reference/idebugerrorbreakpointresolution2-getresolutioninfo.md)
 - [BPRESI_FIELDS](../../../extensibility/debugger/reference/bpresi-fields.md)

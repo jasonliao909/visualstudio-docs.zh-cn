@@ -1,6 +1,6 @@
 ---
-description: 获取堆栈帧属性的说明。
-title: IDebugStackFrame2：：GetDebugProperty |Microsoft Docs
+description: 获取堆栈帧的属性的说明。
+title: IDebugStackFrame2：： GetDebugProperty |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 04572c9bedaaa24cbd8d6de95908a62d60742d24
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122132504"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664438"
 ---
 # <a name="idebugstackframe2getdebugproperty"></a>IDebugStackFrame2::GetDebugProperty
-获取堆栈帧属性的说明。
+获取堆栈帧的属性的说明。
 
 ## <a name="syntax"></a>语法
 
@@ -41,16 +41,16 @@ int GetDebugProperty (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppDebugProp`\
-[out]返回描述此堆栈帧的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
+弄返回描述此堆栈帧的属性的 [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md) 对象。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK` ;否则返回错误代码。
+ 如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 使用适当的 [筛选器调用 EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 方法可以检索与堆栈帧关联的局部变量、方法参数、寄存器和"this"指针。
+ 通过适当的筛选器调用 [EnumChildren](../../../extensibility/debugger/reference/idebugproperty2-enumchildren.md) 方法可以检索与堆栈帧关联的局部变量、方法参数、寄存器和 "this" 指针。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugProperty2](../../../extensibility/debugger/reference/idebugproperty2.md)

@@ -14,11 +14,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 6645b02a5ab842309b54a6c1d4a7f36519b018a8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122073417"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664623"
 ---
 # <a name="attach-directly-to-a-program"></a>直接附加到程序
 如果用户想要在已运行的进程中调试程序，则通常执行以下过程：
@@ -43,6 +43,6 @@ ms.locfileid: "122073417"
 
    第二个例外是，通过附加到已在运行的程序而发送的启动事件通常不包括入口点事件。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [启动后发送启动事件](../../extensibility/debugger/sending-startup-events-after-a-launch.md)
 - [调试任务](../../extensibility/debugger/debugging-tasks.md)

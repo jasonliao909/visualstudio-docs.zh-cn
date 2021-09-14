@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: dc5bdfd6d019ccc9740ca00fbe3f70ae0a23419b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122111445"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664552"
 ---
 # <a name="idebugcoreserver3getserverfriendlyname"></a>IDebugCoreServer3::GetServerFriendlyName
 检索服务器的友好名称。
@@ -41,7 +41,7 @@ int GetServerFriendlyName(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `pbstrName`\
 [out]返回服务器的友好名称。
 
@@ -56,6 +56,6 @@ int GetServerFriendlyName(
 
  对于面向计算机的名称，请调用 [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md) 方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
 - [GetServerName](../../../extensibility/debugger/reference/idebugcoreserver3-getservername.md)

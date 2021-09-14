@@ -14,11 +14,11 @@ ms.technology: vs-workflow-designer
 ms.workload:
 - multiple
 ms.openlocfilehash: daa88d858af5b99beda41631c6c139be9aff425d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122025168"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664900"
 ---
 # <a name="writeline-activity-designer"></a>WriteLine 活动设计器
 
@@ -30,7 +30,7 @@ ms.locfileid: "122025168"
 
 ### <a name="using-the-writeline-activity-designer"></a>使用 WriteLine 活动设计器
 
-访问" **工具箱"** 的 **"基元"类别中的** WriteLine 活动 **设计器**。 可以将 **WriteLine** 活动设计器从"工具箱"拖动到工作流设计器放置活动（例如 位于 内）的图面上 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 WriteLine 的默认 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 **WriteLine** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
+访问" **工具箱"** 的 **"基元"类别中的** WriteLine 活动 **设计器**。 可以将 **WriteLine** 活动设计器从"工具箱"拖动到工作流设计器放置活动的位置（例如 位于 内）上 <xref:System.Activities.Statements.Sequence> 。 这将创建具有 WriteLine 的默认 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Activity.DisplayName%2A> 活动。 <xref:System.Activities.Activity.DisplayName%2A>可以在 **WriteLine** 活动设计器的标头或属性网格的 **DisplayName** 框中编辑 。
 
 ### <a name="the-writeline-properties"></a>WriteLine 属性
 
@@ -39,10 +39,10 @@ ms.locfileid: "122025168"
 |属性名称|必选|使用情况|
 |-|--------------|-|
 |<xref:System.Activities.Activity.DisplayName%2A>|错误|<xref:System.Activities.Statements.WriteLine> 活动的友好名称。 默认值为 WriteLine。 虽然 <xref:System.Activities.Activity.DisplayName%2A> 不是绝对必需的，但最好使用该属性。|
-|<xref:System.Activities.Statements.WriteLine.Text%2A>|错误|要写入的文本。 若要设置 属性，请 **Visual Basic"WriteLine** 活动设计器"或属性网格的"文本框"框中键入一个表达式。|
+|<xref:System.Activities.Statements.WriteLine.Text%2A>|错误|要写入的文本。 若要设置 属性，请Visual Basic **设计器** 或属性网格的 **"** 文本框"框中键入一个表达式。|
 |<xref:System.Activities.Statements.WriteLine.TextWriter%2A>|错误|<xref:System.IO.TextWriter> 向其写入 <xref:System.Activities.Statements.WriteLine> 的 <xref:System.Activities.Statements.WriteLine.Text%2A>。 默认为控制台。|
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [基元](../workflow-designer/primitives-activity-designers.md)
 - [Assign](../workflow-designer/assign-activity-designer.md)

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: d95af977f77bc48a112d584d613877d3259bdb90
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095928"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664435"
 ---
 # <a name="idebugstackframe2getexpressioncontext"></a>IDebugStackFrame2::GetExpressionContext
 获取堆栈帧和线程的当前上下文中表达式计算的评估上下文。
@@ -41,7 +41,7 @@ int GetExpressionContext (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ppExprCxt`\
 [out]返回表示 [表达式计算上下文的 IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md) 对象。
 
@@ -51,7 +51,7 @@ int GetExpressionContext (
 ## <a name="remarks"></a>备注
  通常，可以将表达式计算上下文视为执行表达式计算的范围。 调用 [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md) 方法来分析表达式，然后调用生成的 [EvaluateSync](../../../extensibility/debugger/reference/idebugexpression2-evaluatesync.md) 或 [EvaluateAsync](../../../extensibility/debugger/reference/idebugexpression2-evaluateasync.md) 方法来计算分析的表达式。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugStackFrame2](../../../extensibility/debugger/reference/idebugstackframe2.md)
 - [IDebugExpressionContext2](../../../extensibility/debugger/reference/idebugexpressioncontext2.md)
 - [ParseText](../../../extensibility/debugger/reference/idebugexpressioncontext2-parsetext.md)

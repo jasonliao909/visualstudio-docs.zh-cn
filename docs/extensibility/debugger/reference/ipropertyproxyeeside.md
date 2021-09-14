@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 0295e4d0b23e2f474571490d44303aecebbb1f75
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122110808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664403"
 ---
 # <a name="ipropertyproxyeeside"></a>IPropertyProxyEESide
 此接口提供查看关联对象上数据的方法。 此接口是类型可视化工具支持的一部分。
@@ -58,7 +58,7 @@ IPropertyProxyEESide : IUnknown
 
  程序集：Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [类型可视化工具和自定义查看器](../../../extensibility/debugger/type-visualizer-and-custom-viewer.md)
 - [IEEDataStorage](../../../extensibility/debugger/reference/ieedatastorage.md)

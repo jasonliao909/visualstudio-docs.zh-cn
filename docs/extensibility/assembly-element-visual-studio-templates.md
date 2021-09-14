@@ -1,7 +1,7 @@
 ---
-title: Visual Studio 模板 (的 Assembly 元素) |Microsoft Docs
+title: 程序集元素 (Visual Studio模板) |Microsoft Docs
 titleSuffix: ''
-description: 了解 Assembly 元素及其如何指定有关程序集的信息，模板使用该元素将该程序集的引用添加到项目。
+description: 了解 Assembly 元素及其如何指定有关程序集的信息，模板使用该程序集向项目添加该程序集的引用。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.technology: vs-ide-general
@@ -17,15 +17,15 @@ ms.author: lerich
 manager: jmartens
 ms.workload:
 - vssdk
-ms.openlocfilehash: 49137804fd73c2ba66ad68e20d6ea0423e0b3b29f64d2295026e3bcd9fdf59ba
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: 54fc5cfccde99776136f0cb904d02bf6a4971045
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121308491"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664631"
 ---
-# <a name="assembly-element-visual-studio-templates"></a>Visual Studio 模板 (的 Assembly 元素) 
-指定有关程序集的信息，模板使用该程序集将该程序集的引用添加到项目。
+# <a name="assembly-element-visual-studio-templates"></a>程序集元素 (Visual Studio模板) 
+指定有关程序集的信息，模板使用该程序集向项目添加该程序集的引用。
 
  \<VSTemplate> \<TemplateContent>
  \<References>
@@ -56,7 +56,7 @@ ms.locfileid: "121308491"
 ## <a name="text-value"></a>文本值
  需要一个文本值。
 
- 此文本指定在实例化项模板时要添加到项目的程序集。 必须通过以下方式之一指定此程序集名称：
+ 此文本指定在实例化项模板时要添加到项目的程序集。 必须以下列方式之一指定此程序集名称：
 
 - 作为完整的程序集名称。 例如：
 
@@ -75,10 +75,10 @@ ms.locfileid: "121308491"
 ## <a name="remarks"></a>备注
  `Assembly` 是 `Reference` 的必需子元素。
 
- `Reference` `References,` `Assembly` 只有 `Type` 属性值为的 .vstemplate 文件中才能使用、和元素 `Item` 。
+ 和 `Reference` `References,` `Assembly` 元素只能在特性值为 的 *.vstemplate* `Type` 文件中使用 `Item` 。
 
 ## <a name="example"></a>示例
- 下面的示例演示 `TemplateContent` 项模板的元素。 此 XML 添加对 *System.dll* 和 *System.Data.dll* 程序集的引用。
+ 下面的示例演示项 `TemplateContent` 模板的 元素。 此 XML 添加对程序集 *System.dllSystem.Data.dll的引用*。 
 
 ```
 <TemplateContent>

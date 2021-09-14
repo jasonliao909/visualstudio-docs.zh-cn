@@ -16,11 +16,11 @@ ms.workload:
 - vssdk
 monikerRange: vs-2017
 ms.openlocfilehash: 9d63d7267002577f72a03980eceed0b857e13157
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051347"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664636"
 ---
 # <a name="add-visual-studio-commands-to-a-start-page"></a>将 Visual Studio 命令添加到起始页
 
@@ -113,6 +113,6 @@ xmlns:vscom="clr-namespace:Microsoft.VisualStudio.Shell;assembly=Microsoft.Visua
 
  有关示例，请参阅 [演练：在起始页上保存用户设置](../extensibility/walkthrough-saving-user-settings-on-a-start-page.md)。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 
 - [将用户控件添加到起始页](../extensibility/adding-user-control-to-the-start-page.md)

@@ -20,11 +20,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: a943688945ab7134742ff85ec63e7fad5a4f11c6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122808"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664741"
 ---
 # <a name="how-to-expose-code-to-vba-in-a-visual-basic-project"></a>如何：在 Visual Basic 项目中向 VBA 公开代码
   [!INCLUDE[vbprvb](../sharepoint/includes/vbprvb-md.md)]如果希望两种类型的代码彼此交互，可以在项目中公开代码，以便 Visual Basic for Applications (的 VBA) 代码。
@@ -118,7 +118,7 @@ ms.locfileid: "122122808"
 
 9. 生成项目。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [如何：在 Visual Studio 中创建 Office 项目](../vsto/how-to-create-office-projects-in-visual-studio.md)
 - [设计和创建 Office 解决方案](../vsto/designing-and-creating-office-solutions.md)
 - [合并 VBA 和文档级自定义项](../vsto/combining-vba-and-document-level-customizations.md)

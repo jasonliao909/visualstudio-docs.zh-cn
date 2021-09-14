@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: aa7d97c86c91a220b21c20a650a685d4c7b2fb73
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122138440"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664513"
 ---
 # <a name="idebugfieldgetinfo"></a>IDebugField::GetInfo
 此方法获取有关字段的可显示信息。
@@ -43,7 +43,7 @@ int GetInfo(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `dwFields`\
 中选择要显示的信息 [FIELD_INFO_FIELDS](../../../extensibility/debugger/reference/field-info-fields.md) 常量的组合。 如果字段表示符号，则这通常是符号名称和类型。
 
@@ -53,6 +53,6 @@ int GetInfo(
 ## <a name="return-value"></a>返回值
  如果成功， `S_OK` 则返回; 否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugField](../../../extensibility/debugger/reference/idebugfield.md)
 - [FIELD_INFO](../../../extensibility/debugger/reference/field-info.md)

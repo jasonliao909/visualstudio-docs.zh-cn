@@ -1,6 +1,6 @@
 ---
-title: 注册旧版语言 Service2 |Microsoft Docs
-description: 本文列出了 Visual Studio 中可用的各种语言服务选项的注册表项。
+title: 注册旧版语言服务 2 |Microsoft Docs
+description: 本文列出了中可用的各种语言服务选项的注册表Visual Studio。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -16,38 +16,38 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d33ce0af87df2e3d6506fef48aeb91f1b9ebdeef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122062939"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664333"
 ---
-# <a name="registering-a-legacy-language-service-2"></a>注册旧版语言服务2
-以下部分提供中提供的各种语言服务选项的注册表项列表 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
+# <a name="registering-a-legacy-language-service-2"></a>注册旧版语言服务 2
+以下部分提供 中可用的各种语言服务选项的注册表项列表 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 。
 
- 在下面的注册表项列表中， *VS Reg Root* 等于 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X. y*，其中， *x* 是 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 版本号。
+ 在下面的注册表项列表中 *，VS Reg Root* HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\\ *X.Y，其中 X.Y* [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 是版本号。
 
 ## <a name="registry-entries-for-language-service-options"></a>语言服务选项的注册表项
- *VS Reg Root*\Languages\Language Services \\ *Language Name* key 可以包含以下值。
+ *VS Reg Root*\Languages\Language Services \\ *语言名称* 键可以包含以下值。
 
 |名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
 |（默认值）|REG_SZ|*\<GUID>*|语言服务的 GUID。|
-|LangResID|REG_DWORD|0x0-0xffff|字符串资源标识符 (语言的本地化文本名称的 Resid 标识) 。|
-|包裹|REG_SZ|*\<GUID>*|VSPackage 的 GUID。|
-|ShowCompletion|REG_DWORD|0-1|指定是否在 "**选项**" 对话框中启用 **语句完成** 选项。|
-|ShowSmartIndent|REG_DWORD|0-1|指定是否在 "**选项**" 对话框中启用选择 **智能** 缩进的选项。|
-|RequestStockColors|REG_DWORD|0-1|指定是否使用自定义或默认颜色来为关键字着色。|
-|ShowHotURLs|REG_DWORD|0-1|指定用户是否可以单击 "Url"。|
-|默认为非热 Url|REG_DWORD|0-1|指定 "**选项**" 对话框中的 "**启用一键式 URL" 导航** 选项的初始设置。|
-|DefaultToInsertSpaces|REG_DWORD|0-1|指定语言服务是否将 "插入空格" 作为其默认选项卡选项。|
-|ShowDropdownBarOption|REG_DWORD|0-1|启用或禁用显示或隐藏 **导航栏** 的 "**选项**" 对话框中的 "**导航栏**" 选项。|
-|仅限单一代码窗口|REG_DWORD|0-1|在语言服务的 "**窗口**" 菜单中启用或禁用 **新窗口** 选项。|
-|EnableAdvancedMembersOption|REG_DWORD|0-1|启用或禁用用于 **隐藏高级成员** 的 "**选项**" 对话框设置。|
-|支持 CF_HTML|REG_DWORD|0-1|指定编辑器是否启用 HTML 数据的复制和粘贴。|
-|EnableLineNumbersOption|REG_DWORD|0-1|指定是否为语言服务启用了 "**选项**" 对话框中的 "**行号**" 选项。|
-|HideAdvancedMembersByDefault|REG_DWORD|0-1|指定是否在完成列表中隐藏高级成员，如私有字段。|
-|ShowBraceCompletion|REG_DWORD|0-1|指定是否启用了 "**选项**" 对话框中的 **大括号完成** 选项。|
+|LangResID|REG_DWORD|0x0-0xffff|字符串资源标识符 (语言) 的本地化文本名称的 ResID 标识符。|
+|包|REG_SZ|*\<GUID>*|VSPackage 的 GUID。|
+|ShowCompletion|REG_DWORD|0-1|指定是否启用" **选项"** 对话框中 **的"语句** 完成"选项。|
+|ShowSmartIndent|REG_DWORD|0-1|指定是否启用 **在"选项** "对话框中 **选择"智能** 缩进"的选项。|
+|RequestStockColors|REG_DWORD|0-1|指定是使用自定义颜色还是默认颜色来为关键字着色。|
+|ShowHotURLs|REG_DWORD|0-1|指定用户是否可以单击 URL。|
+|默认为非热 URL|REG_DWORD|0-1|指定"选项"对话框中" **启用单击 URL"** 导航选项 **的初始** 设置。|
+|DefaultToInsertSpaces|REG_DWORD|0-1|指定语言服务是否具有"插入空格"作为默认选项卡选项。|
+|ShowDropdownBarOption|REG_DWORD|0-1|启用或 **禁用显示或** 隐藏导航栏 的"选项"对话框中的"导航 **栏"选项**。|
+|仅单个代码窗口|REG_DWORD|0-1|启用或禁用语言 **服务的** "窗口 **"** 菜单中的"新建窗口"选项。|
+|EnableAdvancedMembersOption|REG_DWORD|0-1|启用或禁用"隐藏 **高级成员** "的 **"选项"对话框设置**。|
+|支持CF_HTML|REG_DWORD|0-1|指定编辑器是否允许复制和粘贴 HTML 数据。|
+|EnableLineNumbersOption|REG_DWORD|0-1|指定是否为 **语言** 服务启用"选项"对话框中的"行号"选项。|
+|HideAdvancedMembersByDefault|REG_DWORD|0-1|指定完成列表中是否隐藏高级成员（如私有字段）。|
+|ShowBraceCompletion|REG_DWORD|0-1|指定是否启用"选项 **"** 对话框中 **的"大** 括号完成"选项。|
 
 ### <a name="example"></a>示例
 
@@ -65,11 +65,11 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-debugger-languages-options"></a>调试器语言选项的注册表项
- *VS Reg Root*\Languages\Language Services \\ *Language Name \Debugger Language* \\ *GUID* key 可以包含以下值。
+ *VS Reg Root*\Languages\Language Services Language \\ *Name*\Debugger Languages \\ *GUID*\ key 可以包含以下值。
 
 |名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
-|（默认值）|REG_SZ|text|默认值可用于记录语言的名称。 此密钥的名称是在 \AD7Metrics\Expression 计算器中具有相应条目的表达式计算器的 GUID *\<VS Reg Root>* 。|
+|（默认值）|REG_SZ|text|默认值可用于记录语言的名称。 此键的名称是表达式计算程序 GUID，该计算程序在 *\<VS Reg Root>* \AD7Metrics\Expression Evaluator 中具有相应的条目。|
 
 ### <a name="example"></a>示例
 
@@ -84,12 +84,12 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 ```
 
 ## <a name="registry-entries-for-editor-tools-options"></a>编辑器工具选项的注册表项
- 可以在属性页和属性节点的 EditorToolsOptions 项下添加注册表项。 这些键及其值在 "选项" 对话框中 ("**工具**" 菜单上的 "**选项**" 对话框中，) 用于配置语言服务。 在下面的示例中， *Page name* 是属性页的名称， *节点名称* 是 " **选项** " 对话框中的树中的节点名称。 页面输入和节点条目必须单独指定。
+ 可以在属性页和属性节点的 EditorToolsOptions 项下添加注册表项。 这些键及其值标识"选项"对话框中的属性页 ("工具"菜单) 用于配置语言服务的属性页。 在下面的示例中 *，"* 页名称"是属性页的名称，"节点名称"是"选项"对话框上树 **中节点的名称**。 必须单独指定页条目和节点条目。
 
 |名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
-|（默认值）|REG_SZ|Resid 标识|此选项页的本地化显示名称。 名称可以是文本文本或 # `nnn` ，其中 `nnn` 是指定 VSPackage 的附属 DLL 中的字符串资源 ID。|
-|包裹|REG_SZ|*GUID*|实现此选项页的 VSPackage 的 GUID。|
+|（默认值）|REG_SZ|渣 油|此选项页的本地化显示名称。 名称可以是文本文本或 # ，其中 是指定 VSPackage 的附属 DLL 中的 `nnn` `nnn` 字符串资源 ID。|
+|包|REG_SZ|*GUID*|实现此选项页的 VSPackage 的 GUID。|
 |页面|REG_SZ|*GUID*|通过调用 方法从 VSPackage 请求的属性页的 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPackage.GetPropertyPage%2A> GUID。 如果此注册表项不存在，则注册表项描述的是节点，而不是页面。|
 
 ### <a name="example"></a>示例
@@ -143,8 +143,8 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |DefaultToolboxTab|REG_SZ|""|编辑器处于活动状态时要默认设置的工具箱选项卡的名称。|
 |DisplayName|REG_SZ|渣 油|在"打开方式"对话框中 **显示** 的名称。 名称是字符串资源 ID 或标准格式的名称。|
 |ExcludeDefTextEditor|REG_DWORD|0-1|用于"打开 **方式"** 菜单命令。 如果不希望在特定文件类型的可用编辑器列表中列出默认文本编辑器，请将此值设置为 1。|
-|LinkedEditorGUID|REG_SZ|*\<GUID>*|用于可以打开具有代码页支持的文件的任何语言服务。 例如，使用 Open **With** .txt打开源代码文件时，会提供用于将源代码编辑器与编码和不带编码的源代码编辑器一起使用的选项。<br /><br /> 在子项的名称中指定的 GUID 用于代码页编辑器工厂;此特定注册表项中指定的链接 GUID 用于常规编辑器工厂。 此项的用途是，如果 IDE 不使用默认编辑器打开文件，则 IDE 将尝试使用列表中的下一个编辑器。 下一个编辑器不应是代码页编辑器工厂，因为此编辑器工厂基本上与失败的编辑器工厂相同。|
-|包裹|REG_SZ|*\<GUID>*|显示名称的 ResID 的 VSPackage GUID。|
+|LinkedEditorGUID|REG_SZ|*\<GUID>*|用于可以打开具有代码页支持的文件的任何语言服务。 例如，使用 Open **With** .txt打开文件时，会提供用于将源代码编辑器与编码和不带编码一起使用的选项。<br /><br /> 在子项的名称中指定的 GUID 用于代码页编辑器工厂;此特定注册表项中指定的链接 GUID 用于常规编辑器工厂。 此项的用途是，如果 IDE 不使用默认编辑器打开文件，则 IDE 将尝试使用列表中的下一个编辑器。 下一个编辑器不应是代码页编辑器工厂，因为此编辑器工厂基本上与失败的编辑器工厂相同。|
+|包|REG_SZ|*\<GUID>*|显示名称的 ResID 的 VSPackage GUID。|
 
 ### <a name="example"></a>示例
 
@@ -189,7 +189,7 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
 |（默认值）|REG_SZ||未使用。|
 |*\<ext>*|REG_DWORD|0-0xffffffff|扩展的相对优先级。 如果两个或多个语言共享同一扩展，则选择优先级较高的语言。|
 
- 此外，当前用户对编辑器的默认选择存储在 HKEY_Current_User\Software\Microsoft\VisualStudio \\ *X.Y*\Default Editor \\ *ext 中*。所选语言服务的 GUID 位于"自定义"条目中。 这优先于当前用户。
+ 此外，当前用户对编辑器的默认选择存储在 HKEY_Current_User\Software\Microsoft\VisualStudio \\ *X.Y*\Default Editor \\ *ext* 中。所选语言服务的 GUID 位于"自定义"条目中。 这优先于当前用户。
 
 ### <a name="example"></a>示例
 
@@ -206,23 +206,23 @@ HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\9.0\
 ```
 
 ## <a name="registry-entries-for-managed-package-framework-language-service-options"></a>托管包框架语言服务选项的注册表项
- 以下注册表项特定于 MPF (语言服务类) 包框架。 这些注册表项表示语言服务支持各种 IntelliSense 功能和其他高级编辑功能。
+ 以下注册表项特定于 MPF 语言服务类 (包) 框架。 这些注册表项表示语言服务支持各种 IntelliSense 功能和其他高级编辑功能。
 
  这些注册表项是通过 类 <xref:Microsoft.VisualStudio.Package.LanguagePreferences> 访问的。
 
 |名称|类型|范围|说明|
 |----------|----------|-----------|-----------------|
 |CodeSense|REG_DWORD|0-1|支持 IntelliSense 操作。|
-|MatchBraces|REG_DWORD|0-1|支持匹配语言对，如大括号、圆括号和方括号。|
+|MatchBraces|REG_DWORD|0-1|支持匹配语言对，如大括号、括号和括号。|
 |QuickInfo|REG_DWORD|0-1|支持 IntelliSense 快速信息操作。|
 |ShowMatchingBrace|REG_DWORD|0-1|支持在状态栏中显示匹配的语言对。|
 |MatchBracesAtCaret|REG_DWORD|0-1|支持显示匹配的语言对，通常通过突出显示这两个元素。|
-|MaxErrorMessages|REG_DWORD|0-n|**错误列表** 窗口中可显示的最大错误数。|
-|CodeSenseDelay|REG_DWORD|0-n|为 IntelliSense 操作启动任何后台分析之前延迟的毫秒数。|
+|MaxErrorMessages|REG_DWORD|0-n|可在"错误列表"窗口中显示的最大 **错误** 数。|
+|CodeSenseDelay|REG_DWORD|0-n|为 IntelliSense 操作启动任何后台分析之前要延迟的毫秒数。|
 |EnableAsyncCompletion|REG_DWORD|0-1|支持后台分析。|
-|EnableCommenting|REG_DWORD|0-1|支持注释掉选定的文本块，同时也表示支持取消注释选定文本。|
-|EnableFormatSelection|REG_DWORD|0-1|支持设置文本格式，如自动缩进或调整大括号的位置。|
-|AutoOutlining|REG_DWORD|0-1|支持 (可以折叠) 的区域的大纲。|
+|EnableCommenting|REG_DWORD|0-1|支持注释掉选定的文本块，还意味着支持取消注释所选文本。|
+|EnableFormatSelection|REG_DWORD|0-1|支持设置文本格式，例如自动缩进或调整大括号的位置。|
+|AutoOutlining|REG_DWORD|0-1|支持大纲显示 (可折叠的区域) 。|
 |MaxRegions|REG_DWORD|0-n|每个文件的最大隐藏区域数。|
 
 ```
@@ -240,5 +240,5 @@ ExampleHKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\VisualStudio\8.0Exp\
         MaxRegions            = reg_dword:0x0000000a
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [开发旧版语言服务](../../extensibility/internals/developing-a-legacy-language-service.md)

@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: a196560a3b0ee2fc10733b112540b1f9ff619e67
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122145986"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664618"
 ---
 # <a name="call-stack-evaluation"></a>调用堆栈计算
 若要在中断模式下查看调用堆栈的堆栈帧，必须实现 [EnumFrameInfo](../../extensibility/debugger/reference/idebugthread2-enumframeinfo.md) 方法。
@@ -40,5 +40,5 @@ ms.locfileid: "122145986"
 
  若要枚举代码上下文，必须实现 [IEnumDebugCodeContexts2](../../extensibility/debugger/reference/ienumdebugcodecontexts2.md)的所有方法。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [执行控制和状态评估](../../extensibility/debugger/execution-control-and-state-evaluation.md)

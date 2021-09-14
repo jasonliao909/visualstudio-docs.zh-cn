@@ -1,6 +1,6 @@
 ---
-description: 跳过进程枚举中指定数量的元素。
-title: IEnumDebugProcesses2：： Skip |Microsoft Docs
+description: 跳过进程枚举中的指定元素数。
+title: IEnumDebugProcesses2：：Skip |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 f1_keywords:
@@ -18,14 +18,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: cc4db9db05b9c1609a5b8c4ca55cc9b5259f0dd4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122095278"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664421"
 ---
 # <a name="ienumdebugprocesses2skip"></a>IEnumDebugProcesses2::Skip
-跳过指定数目的元素。
+跳过指定数量的元素。
 
 ## <a name="syntax"></a>语法
 
@@ -41,15 +41,15 @@ int Skip(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `celt`\
-中要跳过的元素数。
+[in]要跳过的元素数。
 
 ## <a name="return-value"></a>返回值
- 如果成功，则返回 `S_OK`。 `S_FALSE`如果 `celt` 大于剩余元素的数目，则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK`。 如果 `S_FALSE` `celt` 大于剩余元素的数量，则返回 ;否则返回错误代码。
 
 ## <a name="remarks"></a>备注
- 如果 `celt` 指定的值大于剩余元素的数目，则枚举将设置为 end，并 `S_FALSE` 返回。
+ 如果 `celt` 指定一个大于剩余元素数的值，则枚举将设置为末尾并 `S_FALSE` 返回 。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IEnumDebugProcesses2](../../../extensibility/debugger/reference/ienumdebugprocesses2.md)

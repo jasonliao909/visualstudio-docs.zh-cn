@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: 01d5c04d8314bcf81f1a7d3e42ddf4d4517956d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064222"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664532"
 ---
 # <a name="idebugexpressioncontext2"></a>IDebugExpressionContext2
 此接口表示表达式计算的上下文。
@@ -56,7 +56,7 @@ IDebugExpressionContext2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [GetExpressionContext](../../../extensibility/debugger/reference/idebugstackframe2-getexpressioncontext.md)
 - [IDebugExpression2](../../../extensibility/debugger/reference/idebugexpression2.md)

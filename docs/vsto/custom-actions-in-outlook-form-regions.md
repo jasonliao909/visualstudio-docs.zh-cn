@@ -1,6 +1,6 @@
 ---
-title: Outlook 窗体区域中的自定义操作
-description: 了解操作显示按钮（如答复和全部答复）如何使用户能够响应 Microsoft Office Outlook 项。
+title: 窗体Outlook中的自定义操作
+description: 了解操作显示按钮（如"全部答复"和"全部答复"）如何使用户能够响应Microsoft Office Outlook项。
 ms.custom: SEO-VS-2020
 ms.date: 02/02/2017
 ms.topic: conceptual
@@ -17,44 +17,44 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 75fcc83dc06a9503b5ab1571315dc95028734446
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122130684"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664758"
 ---
-# <a name="custom-actions-in-outlook-form-regions"></a>Outlook 窗体区域中的自定义操作
-  操作显示使用户能够响应 Microsoft Office Outlook 项的按钮。 例如，若要对邮件项做出响应，用户可单击 " **答复**"、" **全部答复**" 或 " **转发** " 操作按钮。 其中每个操作都将创建一个新的邮件项，并使用原始项中的信息填充该项的字段。
+# <a name="custom-actions-in-outlook-form-regions"></a>窗体Outlook中的自定义操作
+  操作显示按钮，使用户能够响应Microsoft Office Outlook项。 例如，若要响应邮件项，用户单击"回复"、"**全部** 答复"或"**转发"** 操作按钮。 每个操作都创建新的邮件项，并使用原始项的信息填充该项的字段。
 
- 你可以创建一个自定义操作，该操作将打开任何类型的 Outlook 项。 例如，你可以添加一个打开新约会或任务项的自定义操作。 设置自定义操作的属性，或使用自定义代码填充新项的字段。 自定义操作显示在 Outlook 检查器窗口中打开的项的 "**自定义操作**" 下拉菜单中。
+ 可以创建自定义操作，以打开任何类型的Outlook项。 例如，可以添加打开新约会或任务项的自定义操作。 设置自定义操作的属性或使用自定义代码填充新项的字段。 自定义操作 **显示在"自定义** 操作"下拉列表中，该项在"自定义检查器"窗口中Outlook打开。
 
  [!INCLUDE[appliesto_olkallapp](../vsto/includes/appliesto-olkallapp-md.md)]
 
-## <a name="add-custom-actions-to-a-form-region"></a>向窗体区域添加自定义操作
- 若要向窗体区域添加自定义操作，请使用 " **自定义操作** " 对话框。 您可以通过 **解决方案资源管理器** 在 "属性" 窗口中选择窗体区域，展开 "**属性" 窗口** 中的 "**清单**" 节点，选择 **CustomActions** 属性，然后单击省略号按钮 (![ASP.NET 移动设计器](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")"省略号) 来打开"**自定义操作**"对话框。
+## <a name="add-custom-actions-to-a-form-region"></a>将自定义操作添加到窗体区域
+ 若要将自定义操作添加到窗体区域，请使用 " **自定义操作** " 对话框。 可以通过选择 解决方案资源管理器中的"窗体区域 **"，** 展开"属性"窗口中的"清单"节点，选择 **"CustomActions"** 属性，然后单击省略号按钮" (ASP.NET 移动设计器省略号 ![) "](../sharepoint/media/mwellipsis.gif "ASP.NET 移动设计器中的省略号")来打开"自定义操作"对话框。 
 
- 您可以使用 " **自定义操作** " 对话框指定 *目标窗体*。 目标窗体是用户执行自定义操作时显示的窗体。
+ 可以使用 " **自定义操作** " 对话框指定 *目标窗体*。 目标窗体是用户执行自定义操作时出现的窗体。
 
- 您还可以使用 " **自定义操作** " 对话框指定您希望原始项中的信息在目标窗体中的显示方式。
+ 还可使用" **自定义操作** "对话框指定希望原始项的信息在目标窗体中的显示方式。
 
- 下表介绍了 " **自定义操作** " 对话框中可用的属性。
+ 下表描述了"自定义操作"对话框中 **可用的** 属性。
 
-|属性|说明|
+|Property|说明|
 |--------------|-----------------|
-|**AddressLike**|指定将如何处理目标窗体。|
-|**正文**|指定将原始项的正文追加到目标窗体的方式。|
-|**Enabled**|指示是否已启用自定义操作。 如果将此属性设置为 **false**，则禁用自定义操作。|
-|**方法**|指定执行自定义操作时可用的响应类型。 自定义操作可以发送窗体，打开窗体，或提示用户是否要发送或打开窗体。|
+|**AddressLike**|指定目标窗体的寻址方式。|
+|**正文**|指定如何将原始项的正文追加到目标窗体。|
+|**已启用**|指示是否启用自定义操作。 如果此属性设置为 **false，** 则禁用自定义操作。|
+|**方法**|指定执行自定义操作时可用的响应类型。 自定义操作可以发送窗体、打开窗体或提示用户是否要发送或打开窗体。|
 |**名称**|指定可用于在代码中引用此自定义操作的内部名称。|
-|**ShowOnRibbon**|指示是否在原始项的功能区中显示自定义操作。|
-|**SubjectPrefix**|指定在目标窗体的主题行的开头插入的文本。|
-|**TargetForm**|指定目标窗体的 message 类名称。 例如，键入 **IPM。** 用于打开任务窗体的任务。|
+|**ShowOnRibbon**|指示是否在原始项的功能区上显示自定义操作。|
+|**SubjectPrefix**|指定在目标窗体的主题行的开始位置插入的文本。|
+|**TargetForm**|指定目标窗体的消息类名称。 例如，键入 **IPM。打开** 任务窗体的任务。|
 |**标题**|指定自定义操作按钮的标签。|
 
-## <a name="customize-a-custom-action-at-run-time"></a>在运行时自定义自定义操作
- 你还可以使用代码将行为添加到自定义操作。 例如，你可以添加采用电子邮件收件人名称的代码，并在新约会项中将这些姓名添加为与会者。 为此，请处理[MailItem 对象](/office/vba/api/Outlook.MailItem)的[CustomAction](/office/vba/api/Outlook.MailItem.CustomAction)事件。
+## <a name="customize-a-custom-action-at-run-time"></a>运行时自定义自定义操作
+ 还可使用代码将行为添加到自定义操作。 例如，可以添加采用电子邮件收件人姓名的代码，并将这些姓名作为参与者添加到新的约会项中。 为此，请处理 [MailItem](/office/vba/api/Outlook.MailItem.CustomAction) 对象的 [CustomAction 事件](/office/vba/api/Outlook.MailItem)。
 
-## <a name="see-also"></a>请参阅
-- [创建 Outlook 窗体区域](../vsto/creating-outlook-form-regions.md)
-- [演练：设计 Outlook 窗体区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
-- [将窗体区域与 Outlook 邮件类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)
+## <a name="see-also"></a>另请参阅
+- [创建Outlook窗体区域](../vsto/creating-outlook-form-regions.md)
+- [演练：设计Outlook区域](../vsto/walkthrough-designing-an-outlook-form-region.md)
+- [将窗体区域与Outlook类关联](../vsto/associating-a-form-region-with-an-outlook-message-class.md)

@@ -14,11 +14,11 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: d129e02dec3770a1a2288c68ff99d6b6ac2cf0a4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122042265"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664359"
 ---
 # <a name="legacy-language-service-overview"></a>旧版语言服务概述
 语言服务提供编辑器支持，使你能够实现某些 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 功能。 托管包框架 (MPF) 语言服务类提供对常用功能的完全支持，并部分支持其他功能。
@@ -92,6 +92,6 @@ ms.locfileid: "122042265"
 
 - [验证旧版语言服务中的断点](../../extensibility/internals/validating-breakpoints-in-a-legacy-language-service.md)
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [实现旧版语言服务](../../extensibility/internals/implementing-a-legacy-language-service1.md)
 - [旧版语言服务扩展性](../../extensibility/internals/legacy-language-service-extensibility.md)

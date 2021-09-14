@@ -1,6 +1,6 @@
 ---
-description: 加载给定 ICorDebugModule 对象的调试符号。
-title: IDebugComPlusSymbolProvider2：：LoadSymbolsWithCorModule |Microsoft Docs
+description: 为给定 ICorDebugModule 对象加载调试符号。
+title: IDebugComPlusSymbolProvider2：： LoadSymbolsWithCorModule |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
 helpviewer_keywords:
@@ -17,14 +17,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 2517f741d2e0130b21b7add7e0e634caeec8b779
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122072298"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664572"
 ---
 # <a name="idebugcomplussymbolprovider2loadsymbolswithcormodule"></a>IDebugComPlusSymbolProvider2::LoadSymbolsWithCorModule
-加载给定 **ICorDebugModule 对象的调试** 符号。
+为给定 **ICorDebugModule** 对象加载调试符号。
 
 ## <a name="syntax"></a>语法
 
@@ -52,33 +52,33 @@ int LoadSymbolsWithCorModule(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `ulAppDomainID`\
-[in]应用程序域的标识符。
+中应用程序域的标识符。
 
 `guidModule`\
-[in]模块的唯一标识符。
+中模块的唯一标识符。
 
 `baseAddress`\
-[in]基本内存地址。
+中基本内存地址。
 
 `pUnkMetadataImport`\
-[in]包含调试符号元数据的对象。
+中包含调试符号元数据的对象。
 
 `pUnkCorDebugModule`\
-[in]实现 [ICorDebugModule 接口 的对象](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)。
+中实现 [ICorDebugModule 接口](/dotnet/framework/unmanaged-api/debugging/icordebugmodule-interface)的对象。
 
 `bstrModuleName`\
-[in]模块的名称。
+中模块的名称。
 
 `bstrSymSearchPath`\
-[in]要搜索符号文件的路径。
+中要搜索符号文件的路径。
 
 ## <a name="return-value"></a>返回值
-如果成功，则返回 `S_OK` ;否则返回错误代码。
+如果成功， `S_OK` 则返回; 否则返回错误代码。
 
 ## <a name="example"></a>示例
-以下示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
+下面的示例演示如何为公开 [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)接口的 **CDebugSymbolProvider** 对象实现此方法。
 
 ```cpp
 HRESULT CDebugSymbolProvider::LoadSymbolsWithCorModule(
@@ -172,5 +172,5 @@ Error:
 }
 ```
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugComPlusSymbolProvider2](../../../extensibility/debugger/reference/idebugcomplussymbolprovider2.md)

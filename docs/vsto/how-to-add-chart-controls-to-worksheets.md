@@ -17,11 +17,11 @@ ms.technology: office-development
 ms.workload:
 - office
 ms.openlocfilehash: 2e714f486ebfb83f6cf5b6374e722b7d83cd3de3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122083526"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664754"
 ---
 # <a name="how-to-add-chart-controls-to-worksheets"></a>如何：向工作表添加图表控件
   您可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 设计时和运行时在文档级自定义项中将控件添加到 Microsoft Office Excel 工作表。 你还可以在 <xref:Microsoft.Office.Tools.Excel.Chart> 运行时 VSTO 外接程序中添加控件。
@@ -85,7 +85,7 @@ ms.locfileid: "122083526"
 
 - 制成图表并存储在工作表中 A5 到 D8 范围内的数据。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [在运行时扩展 Word 文档和 Excel VSTO 外接程序中的工作簿](../vsto/extending-word-documents-and-excel-workbooks-in-vsto-add-ins-at-run-time.md)
 - [Office 文档上的控件](../vsto/controls-on-office-documents.md)
 - [图表控件](../vsto/chart-control.md)

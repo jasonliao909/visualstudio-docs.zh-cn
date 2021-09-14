@@ -15,11 +15,11 @@ ms.technology: vs-ide-debug
 ms.workload:
 - vssdk
 ms.openlocfilehash: bf399a8ccf018e8e18c18ba0af2b54a0e5b948c9
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122029861"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664470"
 ---
 # <a name="idebugqueryengine2"></a>IDebugQueryEngine2
 此接口使会话调试管理器 (SDM) 检索表示调试引擎 (DE) 的接口。
@@ -53,7 +53,7 @@ IDebugQueryEngine2 : IUnknown
 
  程序集： Microsoft.VisualStudio.Debugger.Interop.dll
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [核心接口](../../../extensibility/debugger/reference/core-interfaces.md)
 - [IDebugProgram2](../../../extensibility/debugger/reference/idebugprogram2.md)
 - [IDebugThread2](../../../extensibility/debugger/reference/idebugthread2.md)

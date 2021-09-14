@@ -1,5 +1,5 @@
 ---
-description: 将指定的消息字符串发送到调试器的 "输出" 窗口。
+description: 将指定的消息字符串发送到调试器的输出窗口。
 title: IDebugIDECallback：:D isplayMessage |Microsoft Docs
 ms.date: 11/04/2016
 ms.topic: reference
@@ -16,14 +16,14 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 5ce19d388dcf01b9766bc10d645d47750ee24cfb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064093"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664494"
 ---
 # <a name="idebugidecallbackdisplaymessage"></a>IDebugIDECallback::DisplayMessage
-将指定的消息字符串发送到调试器的 "输出" 窗口。
+将指定的消息字符串发送到调试器的输出窗口。
 
 ## <a name="syntax"></a>语法
 
@@ -39,12 +39,12 @@ int DisplayMessage (
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `szMessage`\
-中要在调试器的输出窗口中显示的消息字符串。
+[in]要显示在调试器输出窗口中的消息字符串。
 
 ## <a name="return-value"></a>返回值
- 如果成功， `S_OK` 则返回; 否则返回错误代码。
+ 如果成功，则返回 `S_OK` ;否则返回错误代码。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugIDECallback](../../../extensibility/debugger/reference/idebugidecallback.md)

@@ -17,20 +17,20 @@ ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
 ms.openlocfilehash: 1c4b37e5ae834a614cb741cb7589dad9dd1d6677
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122063117"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664339"
 ---
 # <a name="persistence-and-the-running-document-table"></a>持久性和正在运行的文档表
-在 IDE 中，项目完全负责管理其项目项的持久性，这些项目项是使用服务 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 完成的 <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> 。 文档是数据环境中的基本Visual Studio单元。 项目使用正在运行的文档表 (RDT) （跟踪所有打开的文档的状态的资源）协调文档的打开、保存和重命名。
+在 IDE 中，项目完全负责管理其项目项的持久性，这些项目项是使用服务 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 完成的 <xref:Microsoft.VisualStudio.Shell.Interop.SVsRunningDocumentTable> 。 文档是文档环境中的基本Visual Studio单元。 项目使用 RDT (运行的文档表协调文档的打开、保存和重命名) ，RDT 表是跟踪所有打开的文档的状态的资源。
 
 ## <a name="managing-persistence"></a>管理持久性
- 项目通过实现 接口来控制环境的持久性 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> 服务。 虽然环境永远不会直接要求文档自行保存，但它要求拥有的项目 (层次结构) 保存文档。 这使项目能够将其项目项数据保存到本地文件、远程文件、数据库、存储库或其他介质中。
+ 项目通过实现 接口来控制环境的持久性 <xref:Microsoft.VisualStudio.Shell.Interop.IVsPersistHierarchyItem> 服务。 虽然环境从不直接要求文档自行保存，但它要求拥有 (或层次结构) 保存文档。 这使项目能够将其项目项数据保存到本地文件、远程文件、数据库、存储库或其他介质中。
 
  全局环境维护 RDT。 环境维护 RDT 中所有打开的窗口和文档的条目，这使它们能够接收特殊通知，例如解决方案关闭时。 此外，RDT 使环境能够跟踪中其 **解决方案资源管理器。** RDT 维护每个打开的可持久化对象（包括项目文件和项目项文档）的一条记录。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [运行文档表](../../extensibility/internals/running-document-table.md)
 - [IDE 中的选择和货币](../../extensibility/internals/selection-and-currency-in-the-ide.md)

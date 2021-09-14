@@ -1,6 +1,6 @@
 ---
-title: 旧版语言服务中的大纲显示和隐藏文本 |Microsoft Docs
-description: 本文链接到用于在旧版语言服务中实现大纲显示和隐藏文本的资源。
+title: 旧版语言服务语言服务中的大纲显示和隐藏|Microsoft Docs
+description: 本文链接到在旧版语言服务中实现大纲显示和隐藏文本的资源。
 ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
@@ -13,15 +13,15 @@ manager: jmartens
 ms.technology: vs-ide-sdk
 ms.workload:
 - vssdk
-ms.openlocfilehash: eeb87cdc225210dbe839a4a4cacc9ae0b44243b0bd1accde0ae4668c73694222
-ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
+ms.openlocfilehash: e2b1315e072ca9d6bff6734df5b6030bd19059a0
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/12/2021
-ms.locfileid: "121432288"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664350"
 ---
 # <a name="outlining-and-hidden-text-in-a-legacy-language-service"></a>旧版语言服务中的大纲显示和隐藏文本
-大纲显示可将一系列文本行折叠成一行。 例如，在 c + + 中，所有方法都可以折叠为单个行，只显示方法签名。 隐藏文本是可以显示或隐藏的文本行的序列。
+使用大纲显示，可以折叠一系列文本行到一行中。 例如，在 C++ 中，所有方法都可以折叠为一行，只显示方法签名。 隐藏文本是可显示或隐藏的文本行序列。
 
 ## <a name="in-this-section"></a>本节内容
 - [如何：支持旧版语言服务中的大纲显示](../../extensibility/internals/how-to-support-outlining-in-a-legacy-language-service.md)
@@ -34,4 +34,4 @@ ms.locfileid: "121432288"
 
 - [如何：提供旧版语言服务中扩展的大纲显示支持](../../extensibility/internals/how-to-provide-expanded-outlining-support-in-a-legacy-language-service.md)
 
- 介绍用于扩展对语言的大纲支持的两个选项，但不支持 " *折叠到定义* " 命令。
+ 介绍除了支持"折叠到定义"命令之外，扩展语言大纲支持的两 *个选项* 。

@@ -18,11 +18,11 @@ dev_langs:
 - CPP
 - CSharp
 ms.openlocfilehash: 4f72f0586d2d393d265aac0220b7c0c1faa64d49
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: MT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122064495"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "126664553"
 ---
 # <a name="idebugcoreserver3enableautoattach"></a>IDebugCoreServer3::EnableAutoAttach
 为指定的调试引擎启用自动附加。
@@ -47,7 +47,7 @@ int EnableAutoAttach(
 );
 ```
 
-## <a name="parameters"></a>参数
+## <a name="parameters"></a>parameters
 `rgguidSpecificEngines`\
 [in]每个调试引擎要标记为自动附加的 GUID 数组。
 
@@ -66,5 +66,5 @@ int EnableAutoAttach(
 ## <a name="remarks"></a>备注
  启动与指定 URL 关联的程序时，将自动启动并附加指定的调试引擎。
 
-## <a name="see-also"></a>请参阅
+## <a name="see-also"></a>另请参阅
 - [IDebugCoreServer3](../../../extensibility/debugger/reference/idebugcoreserver3.md)
