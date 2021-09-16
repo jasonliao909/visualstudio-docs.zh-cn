@@ -8,11 +8,11 @@ ms.date: 03/11/2021
 ms.topic: conceptual
 description: 了解订阅访问丢失时订阅者数据的匿名方式。
 ms.openlocfilehash: 2a3d55824db1c90ff0868dda6d398e8c0e9a53d7
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965180"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833144"
 ---
 # <a name="anonymization-of-visual-studio-subscriber-information"></a>Visual Studio 订阅者信息匿名化
 当发生阻止订阅者使用订阅的事件时，例如订阅到期或删除订阅者的登录帐户，用户的个人信息（如姓名和登录帐户）基本上被扰乱以使其无法使用。  这样做是为了保护订阅者的个人信息。
