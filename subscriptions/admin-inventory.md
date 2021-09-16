@@ -8,11 +8,11 @@ ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解管理员管理预生产库存的职责
 ms.openlocfilehash: f6b1e1ebc02a986be86fb48578a4be47ccc3dfaa
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965138"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833081"
 ---
 # <a name="inventory-of-pre-production-environment"></a>清点预生产环境
 Visual Studio 订阅对用户而非设备计数，从而简化了资产管理。

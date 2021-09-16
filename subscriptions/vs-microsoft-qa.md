@@ -8,11 +8,11 @@ ms.date: 03/17/2021
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft Q&A 论坛支持权益。
 ms.openlocfilehash: c9900dd914a53911fa95fee662a8fd820e59ff4b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965285"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832936"
 ---
 # <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft Q&A 论坛支持
 有技术方面的产品问题？ 可在 Microsoft Q&A 中查找该问题，它是 Microsoft 的技术问答中心。

@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: conceptual
 description: 订阅的详细信息通过 Microsoft for Startups 计划提供。
 ms.openlocfilehash: 4b8d3e92f55df660dd8990c95ba72b872e3cded7
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965284"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833132"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初创企业提供的 Visual Studio 订阅
 加入 Microsoft for Startups 计划的合格初创企业可以获得 5 个 [Visual Studio Enterprise 月度云订阅](https://visualstudio.microsoft.com/vs/pricing/)。 

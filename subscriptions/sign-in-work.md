@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: 了解如何使用工作或学校帐户登录到 Visual Studio 订阅。
 ms.openlocfilehash: effec7889199d4eddc3c149bdd4ded296a50e0b1
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965211"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833059"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用工作或学校帐户登录到 Visual Studio 订阅 
 

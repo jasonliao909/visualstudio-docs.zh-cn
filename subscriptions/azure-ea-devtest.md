@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解如何利用适用于具有企业协议的客户的特殊 Azure 开发测试定价
 ms.openlocfilehash: 157d094ef02864578ce4bf626d11457506817418
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965174"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833137"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 企业协议开发测试套餐
 

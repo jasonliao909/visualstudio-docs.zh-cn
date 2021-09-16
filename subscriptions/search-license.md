@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解管理员如何在管理门户中查找各个订阅者或组。
 ms.openlocfilehash: df94b32dfcc5e2672282c0d18859cba42b490437
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965181"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831689"
 ---
 # <a name="search-and-filter-subscribers-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中搜索和筛选订阅者
 通过 Visual Studio 订阅管理门户，可以基于各种条件查找订阅者的特定子集。 可以按名称、电子邮件地址、订阅级别以及其他信息对订阅者列表进行筛选。

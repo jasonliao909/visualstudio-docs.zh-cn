@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中包含的可用 CAST Highlight 权益
 ms.openlocfilehash: e8f218db14340171cc056075699dd80d3fb7ef55
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965253"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833131"
 ---
 # <a name="the-cast-highlight-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CAST Highlight 权益
 迁移到云时，开发者需要对其软件具有深入的了解。 借助 CAST Highlight，Visual Studio 订阅者可以快速扫描其应用程序源代码，以确定其应用程序的云就绪状态，以便迁移到 Azure 并在迁移期间和迁移后监控其应用的进度。

@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的接待聊天室权益。
 ms.openlocfilehash: 468433ba6cc378fd422f1fee6c806c6a701a9e65
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965300"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832837"
 ---
 # <a name="concierge-chat-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的接待聊天室
 接待聊天室服务可帮助你查找产品信息和技术文档，以及帮你使用 Visual Studio 订阅权益。

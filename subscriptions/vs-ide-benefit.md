@@ -8,11 +8,11 @@ ms.date: 07/30/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
 ms.openlocfilehash: 6f9a420c06374f5b152dc119d2eb76af560a4b35
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965144"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832836"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 权益
 

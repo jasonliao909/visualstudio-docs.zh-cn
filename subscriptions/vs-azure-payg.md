@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: 了解如何设置 Azure 即用即付帐户。
 ms.openlocfilehash: 3668302778532f1413f240308faa503c9c58837a
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965228"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832768"
 ---
 # <a name="azure-devtest-pay-as-you-go-subscriptions"></a>Azure 开发测试即用即付订阅
 与团队在云中协作。  创建多个开发和测试即用即付订阅，这样可与其他订阅者进行协作，并将团队与环境隔离。  可享受针对开发/测试的专享优惠小时费率，还可获得 Azure 上订阅软件的云使用权限。

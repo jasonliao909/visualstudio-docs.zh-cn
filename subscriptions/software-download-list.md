@@ -8,11 +8,11 @@ ms.date: 02/19/2021
 ms.topic: how-to
 description: 查找 Visual Studio 订阅随附的软件下载列表。
 ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965217"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832614"
 ---
 # <a name="what-software-is-available-for-download"></a>有什么软件可供下载？
 

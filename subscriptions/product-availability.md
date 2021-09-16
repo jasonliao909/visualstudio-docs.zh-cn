@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅的软件下载中的产品可用性
 ms.openlocfilehash: 8188395c236ae116c36da7f60f0afb8042cb81b3
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965272"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833042"
 ---
 # <a name="product-availability-for-software-downloads-in-visual-studio-subscriptions"></a>Visual Studio 订阅的软件下载中的产品可用性
 订阅者权益包含可以下载各种各样的软件。

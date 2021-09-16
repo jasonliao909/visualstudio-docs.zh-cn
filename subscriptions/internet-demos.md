@@ -8,11 +8,11 @@ ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何使用产品密钥通过终端服务支持 Internet 演示并启用 RDS 访问
 ms.openlocfilehash: c074dfe12ed7c1fea5ad60f7e0c8019e133a6d1b
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965192"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833044"
 ---
 # <a name="internet-demonstrations-via-terminal-services"></a>通过终端服务访问 Internet 演示
 凭借 Visual Studio 订阅，可允许最终用户使用终端服务（Windows Server 2003 或 Windows Server 2008）或远程桌面服务（Windows Server 2008 R2 或更高版本）访问你的程序的 Internet 演示。 使用这种方式，多达 200 位匿名用户可同时访问你的演示。 你的演示不得使用生产数据。 Visual Studio 订阅者可以向最终用户演示其应用程序。 在软件是通过 Visual Studio 订阅授权的情况下，未购买 Visual Studio 订阅的最终用户只能通过使用终端服务 (TS) 或远程桌面服务 (RDS) 的此 Internet 与演示应用程序交互。

@@ -8,11 +8,11 @@ ms.date: 05/18/2021
 ms.topic: how-to
 description: 了解如何在有疑问或遇到问题时联系你的订阅管理员来寻求帮助。
 ms.openlocfilehash: 343cf2eede966e83390c6f2689d0db840507f827
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965109"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833123"
 ---
 # <a name="get-assistance-from-your-subscriptions-admin"></a>从你的订阅管理员处获取帮助
 如果 Visual Studio 订阅是由你的工作单位或学校提供给你的，那么它很可能是由订阅管理员或“管理员”分配给你的。  管理员可以分配或删除订阅，更改登录电子邮件地址，确定你是否能够下载软件以及执行与订阅相关的其他功能。

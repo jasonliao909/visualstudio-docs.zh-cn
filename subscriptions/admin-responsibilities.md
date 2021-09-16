@@ -8,11 +8,11 @@ ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解订阅管理员的职责。
 ms.openlocfilehash: 5f2aef531aafca6ad319fe69810d00c19e2927fb
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965157"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127832841"
 ---
 # <a name="overview-of-admin-responsibilities"></a>管理员职责概述
 管理员可以管理组织的订阅。  管理员角色还负责确保按照许可条款管理订阅。 本文概述了管理员角色的职责、权益和限制。

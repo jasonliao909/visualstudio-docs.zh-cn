@@ -8,11 +8,11 @@ ms.date: 03/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 CODE 杂志权益。
 ms.openlocfilehash: 831885a89b67bc5d9ab50f49c59eb91bc5717262
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965293"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833129"
 ---
 # <a name="code-magazine-included-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 CODE 杂志权益
 
