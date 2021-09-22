@@ -2,7 +2,7 @@
 title: 将项目配置为定目标到多个平台
 description: 了解 Visual Studio 如何提供能够同时面向多个不同的 CPU 体系结构或平台的解决方案。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/13/2021
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -14,12 +14,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 3255af161bd37d16eefeb6d41115cf0114059e81
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 7b9afd184ac7a0859e8a4a9c68a17ba2737e8a71
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99875427"
+ms.lasthandoff: 09/19/2021
+ms.locfileid: "128002348"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为定目标到多个平台
 
@@ -68,3 +68,4 @@ Visual Studio 提供了一种能够同时面向多个不同的 CPU 体系结构�
 - [如何：创建和编辑配置](../ide/how-to-create-and-edit-configurations.md)
 - [了解生成配置](../ide/understanding-build-configurations.md)
 - [在 Visual Studio 中生成和清理项目和解决方案](../ide/building-and-cleaning-projects-and-solutions-in-visual-studio.md)
+- [如何：同时生成多个配置](how-to-build-multiple-configurations-simultaneously.md)

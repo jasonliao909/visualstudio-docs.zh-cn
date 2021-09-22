@@ -2,7 +2,7 @@
 title: 快速操作、灯泡和螺丝刀
 description: 了解如何使用一个快速操作重构、生成或修改代码。
 ms.custom: SEO-VS-2020
-ms.date: 03/28/2018
+ms.date: 09/15/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: c9128a9b488c5f7ab76ce398aa2a087e7ccf1481
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a5c11391c0874d1a57aa3d9a05b6d8e7e55463ae
+ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137270"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127920076"
 ---
 # <a name="quick-actions"></a>快速操作
 
@@ -73,6 +73,7 @@ ms.locfileid: "122137270"
 
 ## <a name="see-also"></a>另请参阅
 
+- [Visual Studio IntelliCode](/visualstudio/intellicode/intellicode-visual-studio)
 - [Visual Studio 中的代码生成](../ide/code-generation-in-visual-studio.md)
 - [常见快速操作](../ide/common-quick-actions.md)
 - [代码样式和快速操作](../ide/code-styles-and-code-cleanup.md)
