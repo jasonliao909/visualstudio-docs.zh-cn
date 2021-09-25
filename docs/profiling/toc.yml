@@ -2,7 +2,7 @@
   href: index.yml
 - name: 概述
   items:
-    - name: 初探分析
+    - name: 首先了解分析工具
       href: profiling-feature-tour.md
     - name: 运行带/不带调试器的分析工具
       href: running-profiling-tools-with-or-without-the-debugger.md
