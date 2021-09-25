@@ -4,12 +4,12 @@
   items:
     - name: 什么是调试？
       href: what-is-debugging.md
+    - name: 初探调试器
+      href: debugger-feature-tour.md
     - name: 调试技术和工具
       href: write-better-code-with-visual-studio.md
 - name: 快速入门
   items:
-    - name: 初探调试器
-      href: debugger-feature-tour.md
     - name: 调试 C# 或 Visual Basic 应用
       href: quickstart-debug-with-managed.md
     - name: 调试 C++ 应用

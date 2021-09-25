@@ -10,12 +10,12 @@ user.type: subscriber
 tags: sign-in
 subscription.type: vl
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: 37e5e9a8d957dbc7d4f3ec43001c4e002907fa8f
-ms.sourcegitcommit: a740129796159a69c704d9d372edaa7a7f191d17
+ms.openlocfilehash: cd8bc9b8d6ba1ea2a8981db1ec329be4191f87ce
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111530403"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427619"
 ---
 ## <a name="how-to-change-your-sign-in-email-address"></a>如何更改登录电子邮件地址
 
