@@ -10,18 +10,18 @@ user.type: subscriber
 tags: sign-in
 subscription.type: vl
 sap.id: 17a2bf94-0d03-2629-dfd8-e8935f9126ec
-ms.openlocfilehash: cd8bc9b8d6ba1ea2a8981db1ec329be4191f87ce
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a860513e02047c1cc548bcc9ff9bd8b91bdc9f00
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427619"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013283"
 ---
 ## <a name="how-to-change-your-sign-in-email-address"></a>如何更改登录电子邮件地址
 
 如果你的公司或学校通过批量许可或 Visual Studio Marketplace 购买订阅，则由管理员管理这些订阅。 管理员可以更改用于登录你的订阅的电子邮件地址。  
 
-## <a name="how-to-contact-your-administrator"></a>如何与管理员联系 
+## <a name="how-to-contact-your-admin"></a>如何联系你的管理员 
 
 鉴于许多组织的规模和复杂性，你可能不知道你的管理员是谁。 可以使用订阅门户中的“联系我的管理员”功能来帮助联系你的管理员。 
 
