@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: db64286603313dc9448114070437377f22c04fc4
-ms.sourcegitcommit: 54aac5044a9853a435577acc5a134cb254494ffb
+ms.openlocfilehash: e0b51a35e3ff1ca04e8556809d1318ecb389cf0c
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 04/17/2021
-ms.locfileid: "107590097"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013195"
 ---
 ## <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 技术支持 
 
@@ -31,4 +31,4 @@ Visual Studio 订阅支持提供有关销售、订阅、帐户和计费方面的
 
 ## <a name="technical-support-incidents"></a>技术支持事件 
 
-如果你已用尽上述选项但仍没有答案，请访问[订阅门户权益页](https://my.visualstudio.com/Benefits)并单击“支持”选项卡上的“技术支持权益”磁贴，以激活 Visual Studio 技术支持票证。阅读有关[技术支持权益](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)的详细信息。 [比较 Visual Studio 订阅权益](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)以找出订阅中包含的内容。
+如果你已用尽上述选项但仍没有答案，请访问[订阅门户权益页面](https://my.visualstudio.com/Benefits)并单击“支持”选项卡上的“技术支持权益”图块，以激活 Visual Studio 技术支持票证。并非所有订阅都提供技术支持。 阅读有关[技术支持权益](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)的详细信息。 [比较 Visual Studio 订阅权益](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)以找出订阅中包含的内容。

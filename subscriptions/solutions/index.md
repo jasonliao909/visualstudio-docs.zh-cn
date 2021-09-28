@@ -4,28 +4,17 @@ description: Visual Studio 订阅支持小组件内容 INCLUDE 文件的列表
 ms.topic: conceptual
 ms.assetid: 478648b9-f6f0-4ea3-83b4-5cffa196a496
 robots: noindex, nofollow
-author: evanwindom
-ms.author: v-evwin
-ms.date: 12/07/2020
-ms.openlocfilehash: da284ea9403e4aab929e175f95508cc16684fc60
-ms.sourcegitcommit: a740129796159a69c704d9d372edaa7a7f191d17
+author: CaityBuschlen
+ms.author: cabuschl
+ms.date: 08/13/2021
+ms.openlocfilehash: fac69c3ea827263f83e91f9e5cdb4cbfb7bac51b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/05/2021
-ms.locfileid: "111530405"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427620"
 ---
 # <a name="visual-studio-subscriptions-support-widget-content-includes-files"></a>Visual Studio 订阅支持小组件内容 INCLUDE 文件
-
-## <a name="admin-solutions"></a>管理解决方案
-
-[!INCLUDE [Become a super admin](admin-solutions/includes/become-a-super-admin-managed.md)]
-
-[!INCLUDE [Become an admin](admin-solutions/includes/become-an-admin.md)]
-
-[!INCLUDE [Cannot access subscriptions](admin-solutions/includes/cannot-access-subs.md)]
-
-[!INCLUDE [I only see VSDE](admin-solutions/includes/only-see-vsde.md)]
-
 
 ## <a name="benefit-activations"></a>权益激活
 
@@ -88,6 +77,8 @@ ms.locfileid: "111530405"
 
 [!INCLUDE [Portal outage](portal-issue/includes/portal-outage.md)]
 
+[!INCLUDE [Only see VSDE](portal-issue/includes/only-see-vsde.md)]
+
 ## <a name="purchase-renew-or-cancel-subscriptions"></a>购买、续订或取消订阅
 
 ### <a name="help-with-purchases"></a>购买帮助
@@ -119,3 +110,5 @@ ms.locfileid: "111530405"
 [!INCLUDE [How do I change my sign-in email for Retail](signing-in/includes/how-do-i-change-my-sign-in-email-retail.md)]
 
 [!INCLUDE [How do I change my sign-in email for Volume Licensing](signing-in/includes/how-do-i-change-my-sign-in-email-volume-licensing.md)]
+
+[!INCLUDE [How can I become a Visual Studio subscriptions admin](signing-in/includes/become-an-admin-or-super-admin.md)]

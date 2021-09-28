@@ -224,9 +224,13 @@
               href: troubleshooting-specific-errors-in-clickonce-deployments.md
             - name: 调试使用 System.Deployment.application 的 ClickOnce 应用程序
               href: debugging-clickonce-applications-that-use-system-deployment-application.md
-    - name: 应用程序部署必备
+    - name: Visual Studio 安装程序项目
       items:
-        - name: 应用程序部署必备组件概述
+        - name: Visual Studio 安装程序项目扩展和 NET Core 3.1
+          href: installer-projects-net-core.md
+    - name: 自定义引导程序
+      items:
+        - name: 应用程序部署必备
           href: application-deployment-prerequisites.md
         - name: 部署 64 位应用程序的系统必备
           href: deploying-prerequisites-for-64-bit-applications.md
@@ -308,7 +312,3 @@
               href: customerrorreporting-element-clickonce-deployment.md
         - name: ClickOnce 非托管 API 参考
           href: clickonce-unmanaged-api-reference.md
-    - name: Visual Studio 安装程序项目参考
-      items:
-        - name: Visual Studio 安装程序项目扩展和 NET Core 3.1
-          href: installer-projects-net-core.md
