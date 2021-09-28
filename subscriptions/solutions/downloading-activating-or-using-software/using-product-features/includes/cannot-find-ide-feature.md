@@ -10,12 +10,12 @@ user.type: subscriber
 tags: download, activate, licensing
 subscription.type: vl, cloud, retail, partner
 sap.id: af210210-e3e1-2b2e-8d79-9bd20e851241
-ms.openlocfilehash: de5ffd83117b052821f1a3ce29d13545d098069e
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: 662eae10edd485d274fdae9c7650c804992cb88f
+ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915896"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129013217"
 ---
 ## <a name="what-if-you-cant-find-the-ide-feature-you-want-to-use"></a>如果找不到要使用的 IDE 功能怎么办？ 
 
@@ -29,7 +29,7 @@ ms.locfileid: "96915896"
 
 如果该功能特定于另一订阅级别，则需要更改订阅级别。  
 
-如果 Visual Studio 订阅是由公司或学校提供的，那么它很可能是由订阅管理员分配给你的。 使用[订阅门户](https://my.visualstudio.com/benefits)中导航右角的“联系我的管理员”按钮联系组织的管理员。  
+如果你的 Visual Studio 订阅由工作单位或学校提供，那么它很可能是由订阅管理员分配给你的。请使用[订阅门户](https://my.visualstudio.com/benefits)导航栏右上角的“联系管理员”按钮与你的组织的管理员联系。  
 
 如果你直接购买了订阅，或者没有管理员，则需要购买所需级别的新订阅。  
 

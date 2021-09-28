@@ -547,6 +547,8 @@
               href: private-galleries.md
             - name: 为专用库创建 Atom 馈送
               href: how-to-create-an-atom-feed-for-a-private-gallery.md
+            - name: 使用 VsixUtil 为专用库创建 Atom 馈送 (VsixFeed)
+              href: how-to-create-vsix-feed-for-private-gallery.md
             - name: 通过使用注册表设置管理专用库
               href: how-to-manage-a-private-gallery-by-using-registry-settings.md
         - name: 支持多个版本的 Visual Studio

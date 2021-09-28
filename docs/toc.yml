@@ -200,7 +200,7 @@
           href: get-started/tutorial-open-project-from-repo-visual-studio-2019.md
         - name: 移植、迁移和升级项目
           href: porting/port-migrate-and-upgrade-visual-studio-projects.md
-        - name: 使用解决方案资源管理器工具窗口
+        - name: 了解解决方案资源管理器
           href: ide/use-solution-explorer.md
         - name: 管理项目和解决方案属性
           href: ide/managing-project-and-solution-properties.md

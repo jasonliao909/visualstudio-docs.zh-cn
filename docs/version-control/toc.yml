@@ -16,7 +16,11 @@
       href: git-team-explorer-feature-comparison.md
 - name: 新增功能
   items:
-    - name: 在 Visual Studio 中使用 Git 提高工作效率（预览）
+    - name: Visual Studio 2022（预览版）中的多存储库支持
+      href: 'https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/'
+    - name: Visual Studio 2022（预览版）发行说明
+      href: /visualstudio/releases/2022/release-notes-preview
+    - name: 在 Visual Studio 2019 中使用 Git 提高了工作效率
       href: 'https://devblogs.microsoft.com/visualstudio/enhanced-productivity-with-git-in-visual-studio/'
     - name: Visual Studio 2019 发行说明
       href: /visualstudio/releases/2019/release-notes/

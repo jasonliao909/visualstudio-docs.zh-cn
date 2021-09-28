@@ -180,6 +180,8 @@
               href: assign-license-bulk.md
             - name: 分配特定订阅
               href: assign-guid.md
+        - name: 将订阅移到新协议
+          href: migrate-subscriptions.md
         - name: 编辑订阅
           href: edit-license.md
         - name: 删除订阅
@@ -192,6 +194,8 @@
           href: handle-overclaimed-license.md
         - name: 最大用量
           href: maximum-usage.md
+        - name: 协议到期时会发生什么情况
+          href: admin-expiration.md
         - name: 过期订阅
           href: handle-expired-license.md
         - name: '订阅者登录方案 '
