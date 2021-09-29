@@ -7,11 +7,11 @@ author: TerryGLee
 manager: jmartens
 ms.topic: include
 ms.openlocfilehash: e045d40958e339d497cea8509110618769649182
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "127894242"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128373068"
 ---
 ::: moniker range=">=vs-2019"
 

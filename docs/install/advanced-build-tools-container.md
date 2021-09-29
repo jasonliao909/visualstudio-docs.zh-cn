@@ -2,22 +2,22 @@
 title: 容器的高级示例
 description: 了解 Docker 容器的高级示例。 此示例 Dockerfile 使用 microsoft/dotnet-framework 映像的特定版本标记。
 ms.custom: SEO-VS-2020
-ms.date: 03/25/2020
+ms.date: 09/21/2021
 ms.topic: conceptual
 ms.assetid: e03835db-a616-41e6-b339-92b41d0cfc70
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 2860a19592667008f585a4608eab23e0180dd2ac
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 4f8086c72e1a4e16f1a81d3f252f9e66cfc850bf
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307695"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430629"
 ---
 # <a name="advanced-example-for-containers"></a>容器的高级示例
 
@@ -94,17 +94,23 @@ ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 ARG CHANNEL_URL=https://aka.ms/vs/15/release/channel
 ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-ADD https://aka.ms/vs/15/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-    --installPath C:\BuildTools `
-    --channelUri C:\TEMP\VisualStudio.chman `
-    --installChannelUri C:\TEMP\VisualStudio.chman `
-    --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-    --remove Microsoft.VisualStudio.Component.Windows81SDK
+RUN `
+    # Download the Build Tools bootstrapper.
+    curl -SL --output vs_buildtools.exe https://aka.ms/vs/15/release/vs_buildtools.exe `
+    `
+    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+    && (start /w C:\TEMP\Install.cmd vs_buildtools.exe --quiet --wait --norestart --nocache `
+        --installPath C:\BuildTools `
+        --channelUri C:\TEMP\VisualStudio.chman `
+        --installChannelUri C:\TEMP\VisualStudio.chman `
+        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+        --remove Microsoft.VisualStudio.Component.Windows81SDK
+    
+    # Cleanup
+    && del /q vs_buildtools.exe
 
 # Define the entry point for the Docker container.
 # This entry point starts the developer command prompt and launches the PowerShell shell.
@@ -141,21 +147,27 @@ ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 ARG CHANNEL_URL=https://aka.ms/vs/16/release/channel
 ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-ADD https://aka.ms/vs/16/release/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-    --installPath C:\BuildTools `
-    --channelUri C:\TEMP\VisualStudio.chman `
-    --installChannelUri C:\TEMP\VisualStudio.chman `
-    --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-    --remove Microsoft.VisualStudio.Component.Windows81SDK
+RUN `
+    # Download the Build Tools bootstrapper.
+    curl -SL --output vs_buildtools.exe https://aka.ms/vs/16/release/vs_buildtools.exe `
+    `
+    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+    && (start /w C:\TEMP\Install.cmd vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+        --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2019\BuildTools" `
+        --channelUri C:\TEMP\VisualStudio.chman `
+        --installChannelUri C:\TEMP\VisualStudio.chman `
+        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+        --remove Microsoft.VisualStudio.Component.Windows81SDK
+    
+    # Cleanup
+    && del /q vs_buildtools.exe
 
 # Define the entry point for the Docker container.
 # This entry point starts the developer command prompt and launches the PowerShell shell.
-ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
 ::: moniker-end
@@ -186,21 +198,27 @@ ADD https://aka.ms/vscollect.exe C:\TEMP\collect.exe
 ARG CHANNEL_URL=https://aka.ms/vs/17/preview/channel
 ADD ${CHANNEL_URL} C:\TEMP\VisualStudio.chman
 
-# Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
-ADD https://aka.ms/vs/17/preview/vs_buildtools.exe C:\TEMP\vs_buildtools.exe
-RUN C:\TEMP\Install.cmd C:\TEMP\vs_buildtools.exe --quiet --wait --norestart --nocache `
-    --installPath C:\BuildTools `
-    --channelUri C:\TEMP\VisualStudio.chman `
-    --installChannelUri C:\TEMP\VisualStudio.chman `
-    --add Microsoft.VisualStudio.Workload.AzureBuildTools `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
-    --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
-    --remove Microsoft.VisualStudio.Component.Windows81SDK
+RUN `
+    # Download the Build Tools bootstrapper.
+    curl -SL --output vs_buildtools.exe https://aka.ms/vs/17/pre/vs_buildtools.exe `
+    `
+    # Install Build Tools with the Microsoft.VisualStudio.Workload.AzureBuildTools workload, excluding workloads and components with known issues.
+    && (start /w C:\TEMP\Install.cmd vs_buildtools.exe --quiet --wait --norestart --nocache modify `
+        --installPath "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools" `
+        --channelUri C:\TEMP\VisualStudio.chman `
+        --installChannelUri C:\TEMP\VisualStudio.chman `
+        --add Microsoft.VisualStudio.Workload.AzureBuildTools `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10240 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.10586 `
+        --remove Microsoft.VisualStudio.Component.Windows10SDK.14393 `
+        --remove Microsoft.VisualStudio.Component.Windows81SDK
+    
+    # Cleanup
+    && del /q vs_buildtools.exe
 
 # Define the entry point for the Docker container.
 # This entry point starts the developer command prompt and launches the PowerShell shell.
-ENTRYPOINT ["C:\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
+ENTRYPOINT ["C:\\Program Files (x86)\\Microsoft Visual Studio\\2022\\BuildTools\\Common7\\Tools\\VsDevCmd.bat", "&&", "powershell.exe", "-NoLogo", "-ExecutionPolicy", "Bypass"]
 ```
 
 ::: moniker-end

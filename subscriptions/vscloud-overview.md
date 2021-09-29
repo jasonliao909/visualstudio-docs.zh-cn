@@ -1,18 +1,18 @@
 ---
 title: 如何购买 Visual Studio 云订阅
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
 ms.date: 02/19/2021
 ms.topic: overview
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
-ms.openlocfilehash: 5e6346b640415b7888826669427512a75427f0cc
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 08793055c369ad231d8079f38d2113989e76d5a1
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965222"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375649"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”。

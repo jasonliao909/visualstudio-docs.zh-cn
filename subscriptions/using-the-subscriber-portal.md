@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 订阅中使用订阅者门户 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
 ms.date: 02/19/2021
 ms.topic: overview
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
-ms.openlocfilehash: 6ce759b3ef6a73980e7bd477e36479d65a61b3c8
-ms.sourcegitcommit: 0841d3f610bd2af4af1cf07dd9d31d1e0629b193
+ms.openlocfilehash: 7d03b4e0f77673fbd45239486a55f886ae06f881
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/09/2021
-ms.locfileid: "123965223"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428811"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用订阅者门户 - my.visualstudio.com
 
