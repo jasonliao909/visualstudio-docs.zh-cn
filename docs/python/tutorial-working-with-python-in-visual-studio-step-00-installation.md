@@ -2,7 +2,7 @@
 title: Visual Studio 中的 Python 教程步骤 0，安装
 titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 的核心教程的第 0 步（安装前提条件）。
-ms.date: 01/28/2019
+ms.date: 09/14/2021
 ms.topic: tutorial
 author: JoshuaPartlow
 ms.author: joshuapa
@@ -12,19 +12,19 @@ ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ae1ee69e663e96f0456c351cc0446b5ba2bd69ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1e712d5df44dd87f07b50b243e8e63ed9e1ad0bf
+ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156482"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127920052"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 
 > [!Note]
-> 目前仅在 Visual Studio for Windows 中提供 Python 支持；在 Mac 和 Linux 上，可通过 [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial) 获取 Python 支持。
+> 目前仅在 Visual Studio for Windows 中提供 Python 支持。 在 Mac 和 Linux 上，可通过 [Visual Studio Code](https://code.visualstudio.com/docs/python/python-tutorial) 获取 Python 支持。
 
-1. 下载并运行适用于 Windows 的最新 Visual Studio 安装程序（版本 15.2 及更高版本提供 Python 支持）。 如果已安装 Visual Studio，请运行 Visual Studio 安装程序，并转到步骤 2。
+1. 下载并运行适用于 Windows 的最新 Visual Studio 安装程序。 版本 15.2 及更高版本提供 Python 支持。 如果已安装 Visual Studio，请通过选择“工具” > “添加工具和功能”来打开 Visual Studio 并运行安装程序。
 
     > [!div class="nextstepaction"]
     > [安装 Visual Studio Community](https://visualstudio.microsoft.com/thank-you-downloading-visual-studio/?sku=Community&rel=15&rid=34347&utm_source=docs&utm_medium=clickbutton&utm_campaign=python_gettingstarted)
@@ -34,11 +34,17 @@ ms.locfileid: "122156482"
 
 1. 安装程序提供工作负载列表，即一组用于特定开发领域的相关选项。 对于 Python，请选择 **Python 开发** 工作负载，然后选择“安装”：
 
-    ![Visual Studio 安装程序中的 Python 开发工作负载](media/installation-python-workload.png)
+    ![Visual Studio 安装程序中选择的 Python 开发工作负载的屏幕截图。](media/installation-python-workload.png)
 
 1. 若要快速测试 Python 支持，请启动 Visual Studio，按 Alt+I 打开 Python 交互窗口，然后输入 `2+2`。 如果看不到输出 4，请重新检查步骤。
 
-    ![通过交互窗口测试 Python](media/installation-interactive-test.png)
+    ::: moniker range="<=vs-2019"
+    ![通过交互窗口测试 Python 的屏幕截图。](media/installation-interactive-test.png)
+    ::: moniker-end
+
+    ::: moniker range=">=vs-2022"
+    ![通过 Visual Studio 2022 交互窗口测试 Python 的屏幕截图。](media/vs-2022/python-interactive.png)
+    ::: moniker-end
 
 ## <a name="next-step"></a>后续步骤
 

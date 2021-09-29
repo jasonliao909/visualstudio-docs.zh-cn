@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: c2d7d7a4225c3a2711e238f7100054b1342a65eb
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f1a49c46c975d37f2b0b43531029b0ae5a28d4f8
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146649"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426772"
 ---
 # <a name="supported-code-changes-c"></a>受支持的代码更改 (C++)
 C++ 项目的“编辑并继续”可处理大多数类型的代码更改。 但是，在程序执行期间，某些更改无法应用。 若要应用这些更改，您必须停止执行并生成新版本的代码。
@@ -161,8 +161,13 @@ C++ 项目的“编辑并继续”可处理大多数类型的代码更改。 但
 ## <a name="diagnosing-issues"></a><a name="BKMK_Diagnosing_issues"></a> 诊断问题
  如果你的情况与上述情况均不相符，则可以通过设置以下 DWORD 注册表值来收集更多详细信息：
  1. 打开“开发人员命令提示”。
- 2. 运行下面的命令：  
+ 2. 运行下面的命令： 
+    ::: moniker range=">=vs-2022" 
+     `VsRegEdit.exe set “C:\Program Files\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+    ::: moniker-end
+    ::: moniker range="vs-2019"
      `VsRegEdit.exe set “C:\Program Files (x86)\Microsoft Visual Studio\[Version]\[YOUR EDITION]” HKCU Debugger NativeEncDiagnosticLoggingLevel DWORD 1`
+    ::: moniker-end
 
  在调试会话开始时设置此值会导致“编辑并继续”的各个组件向“输出窗口” > “调试”窗格显示大量详细日志记录   。
 

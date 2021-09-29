@@ -2,7 +2,7 @@
 title: 使用调试器导航代码 | Microsoft Docs
 description: 了解如何使用 Visual Studio 调试程序对代码进行故障排除。 主题包括：进入中断模式、逐句执行代码和运行到目标。
 ms.custom: SEO-VS-2020
-ms.date: 11/12/2018
+ms.date: 09/23/2021
 ms.topic: how-to
 f1_keywords:
 - vs.debug.execution
@@ -17,12 +17,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 90272d2adf2e8a68019c3fff67fc4cd2ee4bd608
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ab1298a0c6721d4044187e2582c2dbdd5e14326f
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090598"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427273"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
@@ -37,7 +37,7 @@ Visual Studio 调试器可帮助你浏览代码，以检查应用的状态并显
 
 - 通过按 F10 或 F11 开始单步执行代码。 这使你可以快速找到应用的入口点，然后可以继续按单步执行命令导航代码。
 
-- [运行到特定位置或函数](#BKMK_Break_into_code_by_using_breakpoints_or_Break_All)，例如，通过[设置断点](using-breakpoints.md)并启动应用。
+- [运行到特定位置或函数](#run-to-a-specific-location-or-function)，例如，通过[设置断点](using-breakpoints.md)并启动应用。
 
    例如，在 Visual Studio 的代码编辑器中，可以使用“运行到光标处”命令启动应用，附加调试器并进入中断模式，然后使用 F11 导航代码。
 
@@ -88,7 +88,7 @@ Visual Studio 调试器可帮助你浏览代码，以检查应用的状态并显
 |**F10**|**逐过程**|如果当前行包含函数调用，则“单步跳过”运行代码，然后在被调用函数返回后，在第一行代码处挂起执行。|
 |Shift+F11|**跳出**|“单步跳出”继续运行代码，并在当前函数返回时挂起执行。 调试器跳过当前函数。|
 
-## <a name="run-to-a-specific-location-or-function"></a><a name="BKMK_Break_into_code_by_using_breakpoints_or_Break_All"></a>运行到特定位置或函数
+## <a name="run-to-a-specific-location-or-function"></a>运行到特定位置或函数
 
 当你确切知道要检查的代码或者知道要开始进行调试的位置时，你可能更想要直接运行到特定位置或函数。
 

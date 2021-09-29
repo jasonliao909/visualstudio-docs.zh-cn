@@ -17,12 +17,12 @@ ms.workload:
 author: kendrahavens
 manager: jmartens
 ms.technology: vs-ide-test
-ms.openlocfilehash: 6b14f78fa1e7e51cc2ea93f30eab8ee29e644949
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: fd53079017ebfce2bb2602754a14d3f2e6e5547a
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060045"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429077"
 ---
 # <a name="visual-studio-test-explorer-faq"></a>Visual Studio 测试资源管理器常见问题解答
 
@@ -92,7 +92,7 @@ UWP 测试面向的是部署应用时的另一个运行时。 这表示，你需
 
 “项目”、“命名空间”和“类”分组旁的图标显示该分组中的测试状态。 请参见下表。
 
-![测试资源管理器层次结构图标](media/testex-hierarchyicons.png)
+![测试资源管理器层次结构图标](media/testex-hierarchy-icons.png)
 
 ## <a name="search-by-file-path"></a>按文件路径搜索
 
@@ -149,7 +149,7 @@ Visual Studio 2019 中不再出现一些与测试相关的 API。进行了哪些
 
 在 Visual Studio 2019 中，可以通过选择“工具”>“选项”>“环境”>“预览功能”使用预览功能。
 ::: moniker-end
-::: moniker range=">=vs-2017"
+::: moniker range="vs-2017"
 ## <a name="using-feature-flags"></a>使用功能标志
 
 如何打开功能标志来试用新的测试功能？

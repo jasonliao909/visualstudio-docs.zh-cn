@@ -2,7 +2,7 @@
 title: Visual Studio 2022（预览版）中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 08/11/2021
+ms.date: 09/14/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 90e59cb5f09c78df02a166b817e1a3fa5642bda6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9b6a96cd9931a284f3aabe7482abea81a0c79b46
+ms.sourcegitcommit: 811e4ee80311433fefbe6d6223bf72c431008403
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048240"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127890489"
 ---
 # <a name="whats-new-in-visual-studio-2022-preview"></a>Visual Studio 2022（预览版）中的新增功能
 
-更新了 17.0 预览版 3 版本。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
+更新了 17.0 预览版 4 版本。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
 >[下载 Visual Studio 2022 预览版](https://visualstudio.microsoft.com/vs/preview/vs2022/)
@@ -38,9 +38,11 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 在 Visual Studio 2022 中，[IntelliCode](/visualstudio/intellicode/) 功能现在可以一次自动完成整行代码。 有关详细信息，请参阅[借助 IntelliCode 完成键入较少内容即可获得较多代码](https://devblogs.microsoft.com/visualstudio/type-less-code-more-with-intellicode-completions/)博客文章。
 
-## <a name="build-modern-apps-with-improved-tools"></a>使用改进的工具生成新式应用
+## <a name="build-modern-apps-with-net-and-c"></a>使用 .NET 和 C++ 生成新式应用
 
 [Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) 包括更好的跨平台应用开发工具和最新版本的 C++ 生成工具。 同时，我们正在更新热重载，以便可以在应用程序运行时编辑 C++ 或 .NET 项目。 有关详细信息，请参阅[在 Visual Studio 2022 中使用热重载加速 .NET 和 C++ 开发](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/)博客文章。
+
+此外，在[Visual Studio 2022 预览版 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/) 中的新增功能中，Blazor 和 Razor 编辑器有一个重大更新，以及 ASP.NET Core 中热重载的新功能（包括在保存文件或将更改应用到 CSS 文件时的热重载）！
 
 ## <a name="multi-repo-support-with-git-in-the-ide"></a>在 IDE 中使用 Git 的多存储库支持
 
@@ -64,7 +66,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 文档中的新增功能](whats-new-visual-studio-docs.md)
-* [Visual Studio 2019 发行说明](/visualstudio/releases/2019/release-notes/)
-* [Microsoft Build 会议](https://www.microsoft.com/build)
-* [Microsoft Ignite 会议](https://www.microsoft.com/ignite)
+* [Visual Studio 2022 预览版 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)
+* [Visual Studio 2022 预览版 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)
+* [Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/)
+* [Visual Studio 2022 预览版 1](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/)

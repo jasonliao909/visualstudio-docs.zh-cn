@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c906c7cc88f2426dfe090d7468cce61c076aa8aa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 58070781e70c3da977d3d6db5e5e5a6b71f0796b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133856"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426785"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>在 Visual Studio (Visual Studio Enterprise) 中，使用 IntelliTrace 单步后退来检查旧应用状态
 
@@ -113,7 +113,7 @@ IntelliTrace 后退会在每个断点处及调试器步骤事件发生时自动�
     1. 用 Visual Studio 安装程序安装用于桌面的 VC++ 2015.3 v140 工具集组件 (x86, x64)。
     2. 生成目标应用程序。
     3. 在命令行中，使用 editbin 工具为目标可执行文件设置 `Largeaddressaware` 标志。 例如：建议使用此命令（更新路径之后）：C:\Program Files (x86)\Microsoft Visual Studio\Preview\Enterprise\VC\Tools\MSVC\14.12.25718\bin\Hostx86\x86\editbin.exe" /Largeaddressaware "C:\Path\To\Application\app.ex。
-    4. 若要启用调试，请按 F5。 现在，在调试器步骤执行时和断点处拍摄快照。
+    1. 若要启用调试，请按 F5。 现在，在调试器步骤执行时和断点处拍摄快照。
 
        > [!Note]
        > 每次使用更改重新生成可执行文件时，必须设置 `Largeaddressaware` 标志。

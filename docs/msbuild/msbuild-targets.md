@@ -2,7 +2,7 @@
 title: MSBuild 目标 | Microsoft Docs
 description: 了解 MSBuild 如何使用目标将任务分组到一起，并允许将生成过程分解成更小的单元。
 ms.custom: SEO-VS-2020
-ms.date: 06/13/2019
+ms.date: 09/21/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, targets
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: aa270fae00a66f1ca295949855c7b7ad1a56254b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 96e9ee12fbe3777e99ca5e4a256c655fda11900e
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077161"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427580"
 ---
 # <a name="msbuild-targets"></a>MSBuild 目标
 
@@ -73,7 +73,7 @@ MSBuild 依赖于导入顺序，目标的最后一个定义是使用的定义。
 
 - 目标依赖项
 
-- `BeforeTargets` 和 `AfterTargets` (MSBuild 4.0)
+- `BeforeTargets` 和 `AfterTargets`
 
 目标决不会在一个生成过程中运行两次，即使在生成中有后续目标依赖于该目标。 目标运行后，其在生成中的任务就已完成。
 
@@ -121,7 +121,7 @@ Reference: 4.0
 
 下面列出了 Microsoft.Common.CurrentVersion.Targets 中的公共目标。
 
-```
+```xml
 ===================================================
 Build
 The main build entry point.

@@ -15,11 +15,11 @@ manager: jmartens
 ms.workload:
 - multiple
 ms.openlocfilehash: 7b9afd184ac7a0859e8a4a9c68a17ba2737e8a71
-ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "128002348"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429898"
 ---
 # <a name="how-to-configure-projects-to-target-multiple-platforms"></a>如何：将项目配置为定目标到多个平台
 

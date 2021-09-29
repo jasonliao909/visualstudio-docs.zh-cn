@@ -2,7 +2,7 @@
 title: 从命令行测量性能
 description: 从命令行测量应用程序中的 CPU 性能和托管内存使用情况。
 ms.custom: ''
-ms.date: 02/21/2020
+ms.date: 09/13/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -15,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 9520c5a06621673b4f262d9adc313e63ada5b310
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5ebc503d8b1733968b94f09256b139b84296c708
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076329"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428706"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>从命令行测量应用程序性能
 
@@ -44,7 +44,12 @@ ms.locfileid: "122076329"
 
 1. 打开命令提示符，切换到包含集合代理可执行文件的目录，通常在此处（对于 Visual Studio Enterprise）。
 
+   ::: moniker range=">= vs-2022"
+   ```<Visual Studio installation folder>\2022\Enterprise\Team Tools\DiagnosticsHub\Collector\```
+   ::: moniker-end
+   ::: moniker range="vs-2019"
    ```<Visual Studio installation folder>\2019\Enterprise\Team Tools\DiagnosticsHub\Collector\```
+   ::: moniker-end
 
 1. 通过键入以下命令，启动 VSDiagnostics.exe。
 
