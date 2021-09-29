@@ -11,11 +11,11 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 ms.openlocfilehash: f49880b280bca3a627fcf497246de2c0d0924852
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428032"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "128004592"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 

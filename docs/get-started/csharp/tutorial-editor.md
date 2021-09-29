@@ -13,11 +13,11 @@ dev_langs:
 ms.workload:
 - dotnet
 ms.openlocfilehash: c75a5e83ebdabd814e37f601979e0e8b5e808cec
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/19/2021
-ms.locfileid: "127964772"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431356"
 ---
 # <a name="learn-to-use-the-code-editor-with-c"></a>了解如何将代码编辑器用于 C\#
 

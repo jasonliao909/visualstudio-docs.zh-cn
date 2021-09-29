@@ -9,11 +9,11 @@ ms.date: 09/10/2021
 ms.author: mikejo
 ms.custom: include file
 ms.openlocfilehash: fe24fbc1a4b9a5ae4cf78549b614a70db3aa1139
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427134"
+ms.lasthandoff: 09/20/2021
+ms.locfileid: "128036949"
 ---
 在要调试的远程设备或服务器上（而不是 Visual Studio 计算机上），请从下表中的链接下载并安装正确的远程工具版本。
 
