@@ -14,11 +14,11 @@ ms.workload:
 - aspnet
 - dotnetcore
 ms.openlocfilehash: 17d443c9dac7a37670c65c7fb9c8da8362aa4ab4
-ms.sourcegitcommit: 59613afd06a8f184efab8e108410066824a2b712
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/18/2021
-ms.locfileid: "127920015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427754"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-aspnet-core-web-service-in-f"></a>快速入门：使用 Visual Studio 以 F\# 创建首个 ASP.NET Core Web 服务
 

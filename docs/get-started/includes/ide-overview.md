@@ -7,11 +7,11 @@ ms.author: meghaanand
 manager: jmartens
 ms.topic: include
 ms.openlocfilehash: d98812bdba2807038d23f43d07ea48f6d3d43bc0
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.sourcegitcommit: da19ed1e48259b219c61c4cb9e98b006004a5766
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430812"
+ms.lasthandoff: 09/21/2021
+ms.locfileid: "128047757"
 ---
 集成开发环境 (IDE) 是一个功能丰富的程序，支持软件开发的许多方面。 Visual Studio IDE 是一种创新启动板，可用于编辑、调试并生成代码，然后发布应用。 除了大多数 IDE 提供的标准编辑器和调试器之外，Visual Studio 还包括编译器、代码完成工具、图形设计器和许多其他功能，以加强软件开发过程。
 
