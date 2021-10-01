@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中提供哪些软件下载？ | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: lank
 manager: lank
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
 ms.date: 02/19/2021
 ms.topic: how-to
 description: 查找 Visual Studio 订阅随附的软件下载列表。
-ms.openlocfilehash: 54e018420233072f99caa84bb3e1e3858b6ed633
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 27041dd3a20dd6a1dd4a2dbc488b6a4d2eab012b
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431627"
 ---
 # <a name="what-software-is-available-for-download"></a>有什么软件可供下载？
 

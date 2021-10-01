@@ -5,15 +5,15 @@ ms.custom: ''
 ms.date: 04/01/2020
 ms.topic: conceptual
 author: evanwindom
-ms.author: v-evwin
+ms.author: lank
 manager: lank
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: c7276666b5ff02fbee03ebe8f88987257b0e50c1
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b04a99ffc35a61ecb92ac2401a08669afd84f551
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833056"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375631"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 

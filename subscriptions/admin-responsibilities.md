@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的管理员职责 | Visual Studio Marketplace
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: b26b31dc-1eeb-4871-9ce6-2c980e703f1e
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: 了解订阅管理员的职责。
-ms.openlocfilehash: 5f2aef531aafca6ad319fe69810d00c19e2927fb
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 89da3697482efa3b7ba7f940df00bb1fcdd2559c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832841"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428152"
 ---
 # <a name="overview-of-admin-responsibilities"></a>管理员职责概述
 管理员可以管理组织的订阅。  管理员角色还负责确保按照许可条款管理订阅。 本文概述了管理员角色的职责、权益和限制。

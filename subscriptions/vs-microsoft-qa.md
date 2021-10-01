@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Microsoft Q&A 支持 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 16af82df-380a-4864-9f4e-6c3442cc7da2
 ms.date: 03/17/2021
 ms.topic: conceptual
 description: 了解所选 Visual Studio 订阅中包含的 Microsoft Q&A 论坛支持权益。
-ms.openlocfilehash: c9900dd914a53911fa95fee662a8fd820e59ff4b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 4e84e31063d315f43cc7bdc13b478e640dbf7e49
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832936"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432212"
 ---
 # <a name="microsoft-qa-forum-support-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Microsoft Q&A 论坛支持
 有技术方面的产品问题？ 可在 Microsoft Q&A 中查找该问题，它是 Microsoft 的技术问答中心。

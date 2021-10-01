@@ -1,18 +1,18 @@
 ---
 title: 访问 Visual Studio 批量许可客户的管理门户 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 7aaa4727-00ef-41dc-937d-8d46973aaf56
 ms.date: 05/18/2021
 ms.topic: conceptual
 description: 了解批量许可协议的管理员如何访问 Visual Studio 订阅管理门户
-ms.openlocfilehash: 70a44dd659fe2c972db6ae3b6155e3c2374b159f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 79eeaf6c51b06da6c255975eba8ade6bcbd92c55
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833118"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426286"
 ---
 # <a name="accessing-the-admin-portal-as-an-admin-on-a-volume-license-agreement"></a>以批量许可协议上的管理员的身份访问管理门户
 

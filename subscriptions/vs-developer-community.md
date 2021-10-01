@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的开发者社区权益 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 44a790d1-f37e-4be0-9023-af1b3fdfcd35
 ms.date: 03/17/2021
 ms.topic: conceptual
 description: 了解有关所选 Visual Studio 订阅中包含的开发者社区支持权益。
-ms.openlocfilehash: 68629db57397d42f91c778ee075f3a51ce2a9c78
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: e689fa93f37d2c784b03a7118d84af157e9c1e80
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833076"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432644"
 ---
 # <a name="developer-community-support-forum-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的开发者社区支持论坛
 在开发者社区论坛中发布问题、查找答案并分享知识。
