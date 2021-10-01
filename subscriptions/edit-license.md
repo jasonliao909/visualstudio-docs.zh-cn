@@ -1,18 +1,18 @@
 ---
 title: 在管理门户中编辑 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 97ac8e4d-7a03-42f8-98cb-15bcaa90ef65
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解管理员如何编辑订阅分配。
-ms.openlocfilehash: b1779b80cc295e680ff1856181be42a6390fe25b
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a545a276714c7fb21d9adc966b2ef0c9e250250c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832646"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428045"
 ---
 # <a name="edit-visual-studio-subscription-assignments"></a>编辑 Visual Studio 订阅分配
 作为订阅管理员，可以更改分配给组织内个人的订阅。  本文讨论可以进行更改的类型并提供必要的步骤。

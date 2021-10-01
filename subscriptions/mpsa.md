@@ -1,18 +1,18 @@
 ---
 title: MPSA 中的 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: b331c837-3524-42b7-820e-b4fdd5e12793
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解如何管理 Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
-ms.openlocfilehash: 63124e8853184fde04db7bc202e5acea3cfbe89f
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 56c70254a2352061bd44dfe46499324a66279fcb
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832938"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427932"
 ---
 # <a name="visual-studio-subscriptions-in-a-microsoft-products-and-services-agreement-mpsa"></a>Microsoft 产品和服务协议 (MPSA) 中的 Visual Studio 订阅
 如果你是通过 MPSA 计划购买 Visual Studio 订阅的，那么在成为 Visual Studio 订阅管理员并向用户分配订阅之前，需要注意一些事项。 如果你已被设置为管理员，则可直接转到 Visual Studio 订阅[管理门户](https://manage.visualstudio.com/)。

@@ -1,18 +1,18 @@
 ---
 title: Azure 企业协议开发测试套餐
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: a335ed23-34ee-40cb-83c6-6c93dee57424
 ms.date: 03/21/2021
 ms.topic: how-to
 description: 了解如何利用适用于具有企业协议的客户的特殊 Azure 开发测试定价
-ms.openlocfilehash: 157d094ef02864578ce4bf626d11457506817418
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: a0261069e4da6321c6e775470668be83b5773653
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833137"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427562"
 ---
 # <a name="azure-enterprise-agreement-devtest-offer"></a>Azure 企业协议开发测试套餐
 

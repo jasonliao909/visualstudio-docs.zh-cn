@@ -1,18 +1,18 @@
 ---
 title: 使用 GitHub 帐户登录到 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
 ms.date: 03/08/2021
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: 99352f4f25d4dd6da42dc0a8d51a093c7c4c216e
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: d57eb9c68a21fd7e68eda23efa3b194f8f0fb203
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833066"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428245"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帐户登录到 Visual Studio 订阅 
 登录到 Visual Studio 订阅的步骤取决于你所使用的帐户类型。 例如，你可能正在使用由你的公司或学校提供的 Microsoft 帐户 (MSA) 或电子邮件地址。 自 2019 年 1 月起，现还可使用 GitHub 帐户登录某些订阅。 

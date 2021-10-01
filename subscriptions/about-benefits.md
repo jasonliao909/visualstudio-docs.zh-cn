@@ -1,18 +1,18 @@
 ---
 title: 了解 Visual Studio 订阅中的权益 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
 ms.date: 03/19/2021
 ms.topic: how-to
 description: 了解订阅中包含哪些权益，以及如何激活这些权益。
-ms.openlocfilehash: 13c0633c7d775b082bf10cf21421ec843092231d
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 2574ecf1612fc82093f9c9a7d1dbf2cd0366382c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833146"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430490"
 ---
 # <a name="about-your-subscription-benefits"></a>关于订阅权益
 作为 Visual Studio 订阅者，你有权访问各种权益，具体取决于你的订阅级别。 权益有几个需要注意的重要事项。

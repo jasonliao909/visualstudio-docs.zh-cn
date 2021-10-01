@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 Visual Studio IDE 权益 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 07/30/2021
+ms.date: 09/20/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: 6f9a420c06374f5b152dc119d2eb76af560a4b35
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 1359523d747b38078db0cbf5e8d75d23c1048ba8
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832836"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431330"
 ---
 # <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 权益
 
@@ -77,10 +77,20 @@ ms.locfileid: "127832836"
 无法确定正在使用哪些订阅？  连接到 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)，查看分配给电子邮件地址的所有订阅。 如果没有看到所有订阅，则可能是有一个或多个订阅分配给了不同的电子邮件地址。  你需要使用其他电子邮件地址登录来查看那些订阅。
 
 ## <a name="support-resources"></a>支持资源
-- 需要与 Visual Studio IDE 相关的帮助，请查看下列资源：
-  - 技术支持：[https://visualstudio.microsoft.com/support/](https://visualstudio.microsoft.com/support/)
-  - [文档](/visualstudio/)
-- 有关 Visual Studio 订阅的销售、订阅、帐户和账单的帮助，请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
+如果对 Visual Studio 有疑问，有一些资源可为你提供帮助。
+
+### <a name="visual-studio-ide-technical-support"></a>Visual Studio IDE 技术支持
+ 如果有 Visual Studio IDE 技术问题或疑问，应向 [Visual Studio 技术支持部门](https://visualstudio.microsoft.com/vs/support/)反馈。 在使用有限的 [Visual Studio 技术支持事件](vs-tech-support.md)（可能包含在 Visual Studio 订阅中）之前，建议你尝试一些其他联机资源。
+- 有关 Visual Studio 安装问题，请参阅 [Visual Studio 安装和升级问题疑难解答](https://docs.microsoft.com/visualstudio/install/troubleshooting-installation-issues)获取分步指南。 你还可尝试[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅英语）支持选项。
+- 回顾 [Visual Studio IDE 文档](https://docs.microsoft.com/visualstudio/ide/)中的教程、疑难解答指南和实用资源。
+- 搜索联机[开发者社区](https://developercommunity.visualstudio.com/)，并通过社区支持论坛获取专家解答。 无需登录即可搜索关键字，并读取、投票和评价所有内容。 如果找不到所需的搜索内容，可以从导航菜单中建议一项功能或报告问题。 若要提交功能请求，需要登录以填写报表和发布内容。 若要报告问题或 bug，需要运行 Visual Studio 实例来报告反馈。
+- 搜索 Stack Overflow [标记有 visual-studio 的公共问答](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest)，以获取对已提问题的解答，或者注册一个帐户并提出新问题。
+
+### <a name="technical-support-incidents"></a>技术支持事件
+如果你已用尽上述选项但仍没有答案，请访问[订阅门户权益页](https://my.visualstudio.com/Benefits)并单击“支持”选项卡上的“技术支持权益”磁贴，以激活 Visual Studio 技术支持票证。阅读有关[技术支持权益](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)的详细信息。 （并非所有订阅都提供技术支持。 [比较 Visual Studio 订阅权益](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)以找出订阅中包含的内容。）
+
+### <a name="visual-studio-subscription-support"></a>Visual Studio 订阅支持
+Visual Studio 订阅支持提供有关销售、订阅、帐户和计费方面的帮助。 请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。
 
 ## <a name="see-also"></a>另请参阅
 - [Visual Studio 文档](/visualstudio/)

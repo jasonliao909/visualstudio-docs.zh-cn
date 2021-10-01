@@ -1,18 +1,18 @@
 ---
 title: 使用 Microsoft 帐户登录到 Visual Studio 订阅 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 19038bb0-2858-49df-9624-cbf8bfbb5d39
 ms.date: 02/19/2021
 ms.topic: how-to
 description: 如何使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
-ms.openlocfilehash: 7e0ef2e9adedc62be7c2c7ca709496d1f075f03c
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 049015befaa9dc225debee870ac20a4687929275
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833061"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427923"
 ---
 # <a name="signing-in-to-your-visual-studio-subscriptions-with-your-microsoft-account-msa"></a>使用 Microsoft 帐户 (MSA) 登录 Visual Studio 订阅
 

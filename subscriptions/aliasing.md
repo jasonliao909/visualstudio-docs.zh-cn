@@ -1,18 +1,18 @@
 ---
 title: 使用别名登录 Visual Studio 订阅可能会失败 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 97bf7474-c6c2-49b3-b2c9-f1b2808eed1a
 ms.date: 03/19/2021
 ms.topic: conceptual
 description: 如果别名或友好名称已被使用，登录可能会失败
-ms.openlocfilehash: d3a3cd962bafcf6a3e0c5aa20c98128233ace988
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 967c1091d26c99cb5ad4d8fea972e8a500b82ef8
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832582"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428112"
 ---
 # <a name="signing-into-visual-studio-subscriptions-may-fail-when-using-aliases"></a>使用别名登录 Visual Studio 订阅可能会失败
 根据用于登录的帐户类型，登录 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 时，可用订阅可能无法正确显示。 一个潜在的原因是使用了“别名”或“友好名称”来代替订阅所分配到的登录标识。 这就是所谓的“别名”。

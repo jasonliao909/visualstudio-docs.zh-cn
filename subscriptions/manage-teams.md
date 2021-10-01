@@ -1,18 +1,18 @@
 ---
 title: 在 Visual Studio 订阅中管理大型团队和承包商 | Visual Studio Marketplace
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 3fc57f5f-2446-4774-9f8f-98ea1340f6b2
 ms.date: 03/21/2021
 ms.topic: conceptual
 description: 了解管理员管理大型团队和外部承包商的订阅的职责。
-ms.openlocfilehash: b54dc7a6a90556e73e1bebdd918435e9ce56a596
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: 5c477ff5954fa6f824f839c21ed1b045294e08c9
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127833119"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428976"
 ---
 # <a name="large-teams-and-external-contractors"></a>大型团队和外部承包商
 Visual Studio 订阅管理员负责确保每个与 Visual Studio 许可软件交互的用户都适当地获得自己的 Visual Studio 订阅的许可。
