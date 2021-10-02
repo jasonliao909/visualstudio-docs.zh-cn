@@ -6,16 +6,16 @@ ms.assetid: 0c208e2d-ea79-4c90-a7b2-69052a34a36f
 author: caitybuschlen
 ms.author: cabuschl
 ms.date: 09/17/2020
-user.type: subscriber, admin
+user.type: subscriber
 tags: billing
-subscription.type: vl, cloud, retail, partner
+subscription.type: cloud, retail
 sap.id: 2db8f927-5814-835b-cc9d-daab30a7a09e
-ms.openlocfilehash: 838c5075bb5c90e04f2b5d15986ebd9ca8858d49
-ms.sourcegitcommit: 60e5a8a7ee91854356797d05f3b502572c4a4884
+ms.openlocfilehash: fdcd2a5516054102e57d091e2cb0a08b4d7ff6cb
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96915860"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129378647"
 ---
 ## <a name="how-do-i-find-the-status-of-my-renewal-or-purchase"></a>如何查找续订或购买状态？
 
