@@ -22,12 +22,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 2e6356a2a89fa78d02fb3f7196abd190ba12676e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0ddeb3271bbd0ddd9a31375d820fa0661fc7b9ad
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054556"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431375"
 ---
 # <a name="profile-on-hpc-high-performance-computing-clusters"></a>对 HPC（高性能计算）群集进行分析
 
@@ -37,7 +37,7 @@ ms.locfileid: "122054556"
 
 若要对 HPC 计算节点进行分析，必须执行以下操作：
 
-- 在与 Visual Studio 相同的计算机上安装 Microsoft HPC Pack 2008。 计算机不必是 HPC 群集的一部分。 可以在 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=4812)安装 HPC 包。
+- 在与 Visual Studio 相同的计算机上安装 Microsoft HPC Pack 2008。 计算机不必是 HPC 群集的一部分。 可以在 [Microsoft 下载中心](https://www.microsoft.com/download/details.aspx?id=58506)安装 HPC 包。
 
 - 在 HPC 计算节点上安装 .NET Framework 4 以及分析工具的独立版本。 .NET Framework 和独立探查器的安装程序都位于 Visual Studio 安装介质上。 注意：安装 .NET Framework 后，必须重启计算机，然后才能安装分析工具。
 

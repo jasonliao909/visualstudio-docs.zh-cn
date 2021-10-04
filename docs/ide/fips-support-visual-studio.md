@@ -3,7 +3,7 @@ title: Visual Studio 支持 FIPS
 titleSuffix: ''
 description: 了解 Visual Studio 对联邦信息处理标准出版物 140-2 批准的 Windows、Azure 和 .NET 操作模式提供的支持。
 ms.custom: SEO-VS-2020
-ms.date: 04/14/2020
+ms.date: 10/01/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -11,16 +11,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: c4a7737bb1f0e2d38dea828a3f3191fd3d651657
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9e0e1200d01a7cec8524dacb0232b3f2fed44f3a
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137439"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431531"
 ---
 # <a name="visual-studio-support-for-the-fips-140-2-approved-mode-of-operation"></a>Visual Studio 支持 FIPS 140-2 批准的操作模式
 
-从[版本 16.4](/visualstudio/releases/2019/release-notes-v16.4/) 开始，Visual Studio 2019 支持联邦信息处理标准 (FIPS) 出版物 140-2 批准的 Windows、Azure 和 .NET 操作模式。 而且，使用[版本 16.5](/visualstudio/releases/2019/release-notes-archive-v16.5)，在开发[面向远程 Linux 系统的 C++ 应用程序](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)时，Visual Studio 现在支持 FIPS 140-2 批准的操作模式。
+从[版本 16.4](/visualstudio/releases/2019/release-notes-v16.4/) 开始，Visual Studio 2019 支持联邦信息处理标准 (FIPS) 出版物 140-2 批准的 Windows、Azure 和 .NET 操作模式。 而且，使用[版本 16.5](/visualstudio/releases/2019/release-notes-v16.5)，在开发[面向远程 Linux 系统的 C++ 应用程序](/cpp/linux/set-up-fips-compliant-secure-remote-linux-development/)时，Visual Studio 现在支持 FIPS 140-2 批准的操作模式。
 
 要配置 FIPS 140-2 批准的 Visual Studio 操作模式，请[安装 .NET Framework 4.8](https://dotnet.microsoft.com/download/dotnet-framework/net48)，然后启用组策略设置“系统加密:  对加密、哈希和签名使用符合 FIPS 的算法”。
 

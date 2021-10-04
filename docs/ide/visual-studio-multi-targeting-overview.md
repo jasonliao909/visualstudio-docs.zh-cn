@@ -1,7 +1,7 @@
 ---
 title: .NET 目标框架
 description: 了解如何指定希望项目所面向的 .NET Framework 版本，以便应用程序只能使用指定版本中可用的功能。
-ms.date: 03/31/2020
+ms.date: 12/01/2020
 ms.topic: overview
 helpviewer_keywords:
 - targeting .NET Framework [Visual Studio]
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 10993948fdfe50853908c19f3ba2dcf08cd22621
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7c61cca91c712825596b02cae6481492eecd824e
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048370"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431167"
 ---
 # <a name="framework-targeting-overview"></a>框架定位概述
 

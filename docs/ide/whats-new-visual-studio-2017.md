@@ -2,7 +2,7 @@
 title: Visual Studio 2017 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2017 中的新增功能。
-ms.date: 12/18/2018
+ms.date: 10/01/2021
 f1_keywords:
 - VS.StartPage.WhatsNew
 helpviewer_keywords:
@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: 65ee7d1a1252e4906f291ace121f7c92c889f616
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a489aaef94f77fcca53402100ef4372c73fa6d00
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150919"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430888"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -350,7 +350,7 @@ Visual Studio 2017 所有版本随附：
 
 作为“适用于 Unity 的游戏开发”工作负载的一部分，我们添加了有助于跨平台开发的工具， 可用于创作 2D 和 3D 游戏及交互内容。 使用 Visual Studio 2017 和 Unity 5.6，一次创建即可发布到 21 个平台，包括所有移动平台、WebGL、Mac、PC 和 Linux 桌面、Web 或主机。
 
-有关详细信息，请参阅 [Visual Studio Tools for Unity](/gamedev/unity/get-started/visual-studio-tools-for-unity.md) 页。
+有关详细信息，请参阅 [Visual Studio Tools for Unity](/visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity) 页。
 
 ## <a name="ai-development"></a>AI 开发
 

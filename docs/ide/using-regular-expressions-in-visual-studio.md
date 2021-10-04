@@ -2,7 +2,7 @@
 title: 使用正则表达式
 description: 了解一些可在 Visual Studio 中使用的正则表达式字符、运算符、构造和模式示例。
 ms.custom: SEO-VS-2020
-ms.date: 09/13/2019
+ms.date: 12/01/2020
 ms.topic: conceptual
 f1_keywords:
 - vsregularexpressionhelp
@@ -19,12 +19,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 4e024dbebaa0c1efef096f8d9b594971a6af8047
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8825efcb35bd36d2165ad9abe490ad67ad58beb5
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078032"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431102"
 ---
 # <a name="use-regular-expressions-in-visual-studio"></a>在 Visual Studio 中使用正则表达式
 

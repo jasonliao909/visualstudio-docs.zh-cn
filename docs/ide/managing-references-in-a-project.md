@@ -2,7 +2,7 @@
 title: 管理项目中的引用
 description: 了解如何管理项目对外部组件和已连接服务的引用。
 ms.custom: SEO-VS-2020
-ms.date: 08/02/2019
+ms.date: 11/23/2020
 ms.topic: conceptual
 f1_keywords:
 - vs.ProjectPropertiesReferencePaths
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a33dcd7d6d6f3dfc045951a4533b6aae8e9ee0af
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2c1e65c332383a6a5b736201a3373204f42aff07
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122152011"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430810"
 ---
 # <a name="manage-references-in-a-project"></a>管理项目中的引用
 
