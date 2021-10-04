@@ -10,12 +10,12 @@ ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: e75f433c3949ecb623dbe14ee7289060f7cc463b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 90bd3bd30f4a30277fd36fa639760922377f5c99
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038586"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430607"
 ---
 # <a name="how-to-create-and-manage-python-environments-in-visual-studio"></a>如何在 Visual Studio 中创建和管理 Python 环境
 
@@ -102,10 +102,13 @@ Visual Studio 使用注册表查找已安装的全局环境（遵循 [PEP 514 ](
 
 如果知道计算机上有一个 Python 解释器，但 Visual Studio（任何版本）未检测到它，则使用“+ 自定义”命令来手动指定其位置  。 请参阅下一节[手动标识现有环境](#manually-identify-an-existing-environment)。
 
+::: moniker range="<=vs-2017"
+
 > [!Tip]
 > Visual Studio 可检测现有解释器的更新，如使用 python.org 的安装程序将 Python 2.7.11 升级到 2.7.14。在安装过程中，较旧的环境从“Python 环境”  列表消失后，更新才会显示在其位置上。
 >
 > 但是，如果你使用文件系统手动移动解释器及其环境，则 Visual Studio 不会知道新位置。 有关详细信息，请参阅[移动解释器](installing-python-interpreters.md#move-an-interpreter)。
+::: moniker-end
 
 ### <a name="types-of-environments"></a>环境类型
 

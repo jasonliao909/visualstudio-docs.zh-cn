@@ -2,7 +2,7 @@
 title: 如何将 app.config 文件添加到项目
 description: 了解如何将 app.config 文件添加到 C# 项目中，以自定义公共语言运行时定位和加载程序集文件的方式。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 11/20/2020
 ms.topic: how-to
 dev_langs:
 - CSharp
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - dotnet
-ms.openlocfilehash: 75938513834b98789aa2b9501a9face06c7c1697
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6c063aa1dbea8a9953bc3c9e44cf72de5514e0f8
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122101799"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431622"
 ---
 # <a name="how-to-add-an-application-configuration-file-to-a-c-project"></a>如何：向 C# 项目添加应用程序配置文件
 

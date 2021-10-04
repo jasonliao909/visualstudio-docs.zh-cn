@@ -10,12 +10,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - multiple
 author: mikejo5000
-ms.openlocfilehash: 71ab67e5457d4616d9abbba0570443e6a1b2a817
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 454e2065068a4f79bff96776a050a43c049af5c3
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122026754"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431297"
 ---
 # <a name="extend-coded-ui-tests-and-action-recordings"></a>扩展编码的 UI 测试和操作录制
 
@@ -27,7 +27,7 @@ ms.locfileid: "122026754"
 
 ## <a name="sample-extension-to-test-microsoft-excel"></a>测试 Microsoft Excel 的示例扩展
 
-此[博客文章](/archive/blogs/gautamg/3-introducing-sample-excel-extension)包含指向编码的 UI 测试框架的[示例扩展](https://msdnshared.blob.core.windows.net/media/MSDNBlogsFS/prod.evol.blogs.msdn.com/CommunityServer.Components.PostAttachments/00/09/94/38/24/ExcelPluginSample.zip)的链接。 还可以查看整个[编码的 UI 测试扩展性的博客文章系列](/archive/blogs/gautamg/series-on-coded-ui-test-extensibility)。
+此[博客文章](/archive/blogs/gautamg/3-introducing-sample-excel-extension)包含指向编码的 UI 测试框架的示例扩展的链接。 还可以查看整个[编码的 UI 测试扩展性的博客文章系列](/archive/blogs/gautamg/series-on-coded-ui-test-extensibility)。
 
 > [!NOTE]
 > 该示例旨在与 Microsoft Excel 2010 配合使用。 它可能适用或不适用于其他版本的 Excel。

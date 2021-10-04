@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f04f31922b5ffb1a9fedad62d5b46a14adab5e09
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 539e1e89f31851897adab932d75c0dca170155f9
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097085"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431089"
 ---
 # <a name="intellitrace-for-visual-studio-enterprise-c-visual-basic-c"></a>用于 Visual Studio Enterprise 的 IntelliTrace（C#、Visual Basic、C++）
 
@@ -125,7 +125,7 @@ IntelliTrace 还可帮助你调试难以重现或在部署时出现的错误。 
 
 - **SharePoint 2010 和 SharePoint 2013 应用程序事件**
 
-  你可以为在 Visual Studio 外运行的 SharePoint 2010 和 2013 应用程序记录用户配置文件事件以及一部分统一日志记录系统 (ULS) 事件。 你可以将这些事件保存到 .iTrace 文件中。 需要 Visual Studio Enterprise 2015 或更高版本、以前版本的 Visual Studio Ultimate，或在“跟踪”模式下运行的 [Microsoft Monitoring Agent](https://www.microsoft.com/download/details.aspx?id=40316)。
+  你可以为在 Visual Studio 外运行的 SharePoint 2010 和 2013 应用程序记录用户配置文件事件以及一部分统一日志记录系统 (ULS) 事件。 你可以将这些事件保存到 .iTrace 文件中。 需要 Visual Studio Enterprise 2015 或更高版本、以前版本的 Visual Studio Ultimate，或在“跟踪”模式下运行的 [Microsoft Monitoring Agent](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2015-and-other-products)。
 
   打开 .iTrace 文件时，输入 SharePoint 相关 ID 以查找其匹配的 Web 请求，查看记录事件，并从特定事件开始调试。 如果文件包含未经处理的异常，可以选择相关 ID，开始调试异常。
 

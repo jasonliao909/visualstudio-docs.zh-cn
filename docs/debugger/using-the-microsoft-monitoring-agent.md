@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 759020b393568147bc4d74273b2c302ae0762e47
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a9bd9ab39668b3df63c2bd35ab6f544eab7053a7
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122161097"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431601"
 ---
 # <a name="using-the-microsoft-monitoring-agent-c-visual-basic"></a>使用 Microsoft Monitoring Agent (C#、Visual Basic)
 
@@ -53,7 +53,7 @@ ms.locfileid: "122161097"
 
     - 你已卸载所有早期版本的 Microsoft 监视代理。
 
-2. 从 Microsoft 下载中心[下载免费的 Microsoft 监视代理](https://www.microsoft.com/download/details.aspx?id=40316)（32 位版本“”  或 64 位版本“” ）至你的 Web 服务器。
+2. 从 Microsoft 下载中心[下载免费的 Microsoft 监视代理](https://visualstudio.microsoft.com/vs/older-downloads/#visual-studio-2015-and-other-products)（32 位版本“”  或 64 位版本“” ）至你的 Web 服务器。
 
 3. 运行已下载的可执行文件以启动安装向导。
 

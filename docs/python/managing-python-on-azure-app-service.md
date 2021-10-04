@@ -12,12 +12,12 @@ ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 7d571a490d93e57084a9b372b385eb406a592208
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f72607373f942f111f9e077156d7c100e81fb2b0
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106882"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431076"
 ---
 # <a name="how-to-set-up-a-python-environment-on-azure-app-service-windows"></a>如何在 Azure 应用服务 (Windows) 上设置 Python 环境
 
@@ -28,8 +28,10 @@ ms.locfileid: "122106882"
 
 Azure 应用服务的可自定义 Python 支持作为一组应用服务站点扩展来提供，其中每个扩展均包含特定版本的 Python 运行时。 如本文所述，随后可以将任何所需的包直接安装到该环境中。 通过自定义应用服务自身中的环境，你无需维护 Web 应用项目中的包，也无需使用应用代码上传这些包。
 
+::: moniker range="<=vs-2017"
 > [!Tip]
 > 默认情况下，虽然应用服务在服务器上的根文件夹中安装了 Python 2.7 和 Python 3.4，但是不能在这些环境中自定义或安装包，也不应依赖于它们的存在。 如本文所述，应依赖于控制的站点扩展。
+::: moniker-end
 
 ## <a name="choose-a-python-version-through-the-azure-portal"></a>通过 Azure 门户选择 Python 版本
 

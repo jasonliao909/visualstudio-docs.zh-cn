@@ -2,10 +2,8 @@
 title: 将 Visual Studio 生成工具安装到容器
 titleSuffix: ''
 description: 了解如何将 Visual Studio 生成工具安装到 Windows 容器，以支持持续集成和持续交付 (CI/CD) 工作流。
-ms.date: 03/25/2020
-ms.custom: seodec18
+ms.date: 06/09/2021
 ms.topic: conceptual
-ms.assetid: d5c038e2-e70d-411e-950c-8a54917b578a
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
@@ -13,12 +11,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fae4229da84ceb3d35dde3d95c06050c6b2195be
-ms.sourcegitcommit: 0c6cecf1b973a33003d924abeb382f23e62c134d
+ms.openlocfilehash: d6208ae736b01c13a9666b67fe694743d2421d1e
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/31/2021
-ms.locfileid: "123230347"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430555"
 ---
 # <a name="install-build-tools-into-a-container"></a>将生成工具安装到容器
 

@@ -25,12 +25,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d4336c741aac8eded2ce529f5a3fa57dd5abf1d6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a1a76976dc630074768bb14bc39fc480278962fa
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128359"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431349"
 ---
 # <a name="how-to-find-which-dll-your-program-crashed-in-c-c-visual-basic-f"></a>如何：查找导致程序崩溃的 DLL（C#、C++、Visual Basic、F#）
 
@@ -40,7 +40,7 @@ ms.locfileid: "122128359"
 
 1. 记下崩溃发生的地址。
 
-    如果错误消息中未显示地址，则可能需要使用其他方法来标识 DLL。 如果怀疑是系统 DLL，则可以在调试时从 Microsoft 符号服务器[加载符号](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 否则，可能需要使用堆信息[创建转储文件](../debugger/using-dump-files.md)。 可以使用各种[工具](https://blogs.msdn.microsoft.com/andrehal/2009/12/31/what-is-a-dump-and-how-do-i-create-one/)来创建转储文件。
+    如果错误消息中未显示地址，则可能需要使用其他方法来标识 DLL。 如果怀疑是系统 DLL，则可以在调试时从 Microsoft 符号服务器[加载符号](../debugger/specify-symbol-dot-pdb-and-source-files-in-the-visual-studio-debugger.md)。 否则，可能需要使用堆信息[创建转储文件](../debugger/using-dump-files.md)。 可以使用各种工具来创建转储文件。
 
 2. 在“调试”菜单上选择“窗口”，再单击“模块”  。
 

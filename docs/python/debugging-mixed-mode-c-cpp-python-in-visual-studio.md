@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a93abff7aa65e61830065c3217fb0fb4b37bd93a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dc72adf4c0e55736a61349ae1164aa852f123dd9
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156716"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430875"
 ---
 # <a name="debug-python-and-c-together"></a>一起调试 Python 和 C++
 
@@ -137,9 +137,13 @@ Visual Studio（2017 版本 15.5 及更高版本）支持通过 C/C++ 项目进�
 
 “[Python 视图]”不会为你自行创作的类型自动显示。 为 Python 3.x 创作扩展时，缺少此项通常不成问题，因为任何对象最终都具有上述类型之一的 `ob_base` 字段，这将导致显示“[Python 视图]”。
 
+::: moniker range="<=vs-2017"
+
 但是对于 Python 2.x，每个对象类型通常将其标头声明为内联字段的集合，并且在 C/C++ 代码中的类型系统级别的自定义创作类型和 `PyObject` 之间没有任何关联。 若要为此类自定义类型启用“[Python 视图]”节点，请在 [Python 工具安装目录](installing-python-support-in-visual-studio.md#install-locations)中编辑 PythonDkm.natvis 文件，然后为 C 构造或 C++ 类在 XML 中添加其他元素。
 
 其他（更优）选项为遵循 [PEP 3123](https://www.python.org/dev/peps/pep-3123/) 并使用显式 `PyObject ob_base;` 字段而非 `PyObject_HEAD`，但因为向后兼容性的原因，因此不可能总是采用这种选项。
+
+::: moniker-end
 
 ### <a name="native-values-view-in-python-code"></a>Python 代码中的本机值视图
 
