@@ -6,31 +6,31 @@
 - name: Visual Studio Tools for Unity
   items:
     - name: Visual Studio Tools for Unity
-      href: /gamedev/unity/get-started/visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: Visual Studio Tools for Unity 入门
-      href: /gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/getting-started-with-visual-studio-tools-for-unity
     - name: 使用 Visual Studio Tools for Unity
-      href: /gamedev/unity/get-started/using-visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity
     - name: 在 Unity 中使用 .NET 4.x
-      href: /gamedev/unity/unity-scripting-upgrade.md
+      href: /visualstudio/gamedev/unity/unity-scripting-upgrade
     - name: 使用 Visual Studio Tools for Unity 进行编程
       items:
         - name: 使用 Visual Studio Tools for Unity 进行编程
-          href: /gamedev/unity/extensibility/programming-visual-studio-tools-for-unity.md
+          href: /visualstudio/gamedev/unity/extensibility/programming-visual-studio-tools-for-unity
         - name: 自定义 VSTU 创建的项目文件
-          href: /gamedev/unity/extensibility/customize-project-files-created-by-vstu.md
+          href: /visualstudio/gamedev/unity/extensibility/customize-project-files-created-by-vstu
         - name: 与 VSTU 共享 Unity 日志回调
-          href: /gamedev/unity/extensibility/share-the-unity-log-callback-with-vstu.md
+          href: /visualstudio/gamedev/unity/extensibility/programming-visual-studio-tools-for-unity
     - name: 使用 Unity 和 Azure 进行编程
-      href: /gamedev/unity/visual-studio-tools-for-unity-azure.md
+      href: /visualstudio/gamedev/unity/get-started/visual-studio-tools-for-unity
     - name: 疑难解答和已知问题 (Visual Studio Tools for Unity)
-      href: /gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/troubleshooting/troubleshooting-and-known-issues-visual-studio-tools-for-unity
     - name: 更改日志（Visual Studio Tools for Unity、Windows）
-      href: /gamedev/unity/change-log-visual-studio-tools-for-unity.md
+      href: /visualstudio/gamedev/unity/change-log-visual-studio-tools-for-unity-mac
     - name: 更改日志（Visual Studio Tools for Unity、Mac）
-      href: /gamedev/unity/change-log-visual-studio-tools-for-unity-mac.md
+      href: /visualstudio/gamedev/unity/change-log-visual-studio-tools-for-unity-mac
     - name: 适用于 Unity 应用的 DevOps
-      href: /gamedev/unity/application-lifecycle-management-alm-with-unity-apps.md
+      href: /visualstudio/gamedev/unity/application-lifecycle-management-alm-with-unity-apps
 - name: 使用 C++ 进行跨平台移动开发
   href: /cpp/cross-platform/
 - name: 开发面向通用 Windows 平台 (UWP) 的应用
