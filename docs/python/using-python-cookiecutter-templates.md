@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: b2e8be7668109bcd7409e5c8c17fe0ae95ec1190
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 204e10f06dfa298e001d89781941c5638c80175b
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430542"
+ms.locfileid: "129439907"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 
@@ -87,7 +87,7 @@ Cookiecutter 主页上显示可选择的模板列表，分为以下几组：
 
 ## <a name="optimize-cookiecutter-templates-for-visual-studio"></a>优化用于 Visual Studio 的 Cookiecutter 模板
 
-有关创作 Cookiecutter 模板的基础知识，请参阅 [Cookiecutter 文档](https://cookiecutter.readthedocs.io/en/latest/first_steps.html)。 用于 Visual Studio 的 Cookiecutter 扩展支持创建用于 Cookiecutter v1.4 的模板。
+有关创作 Cookiecutter 模板的基础知识，请参阅 [Cookiecutter 文档](https://cookiecutter.readthedocs.io/en/latest/)。 用于 Visual Studio 的 Cookiecutter 扩展支持创建用于 Cookiecutter v1.4 的模板。
 
 模板变量的默认呈现取决于数据类型（字符串或列表）：
 
