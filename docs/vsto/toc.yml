@@ -38,6 +38,8 @@
               href: common-tasks-in-office-programming.md
             - name: 其他 Office 解决方案开发资源
               href: additional-resources-for-developing-office-solutions.md
+            - name: Visual Studio Tools for Office 运行时生命周期策略
+              href: visual-studio-tools-for-office-runtime.md
         - name: 升级和迁移 Office 解决方案
           items:
             - name: 升级和迁移 Office 解决方案

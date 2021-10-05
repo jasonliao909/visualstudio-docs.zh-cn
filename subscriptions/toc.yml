@@ -198,6 +198,8 @@
           href: admin-expiration.md
         - name: 过期订阅
           href: handle-expired-license.md
+        - name: 订阅已被 Microsoft 删除
+          href: account-removed.md
         - name: '订阅者登录方案 '
           href: aliasing.md
         - name: 使用个人电子邮件登录的订阅者

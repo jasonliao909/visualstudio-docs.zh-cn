@@ -2,6 +2,8 @@
   href: index.yml
 - name: 概述
   items:
+    - name: Visual Studio 2022 中的 JavaScript
+      href: javascript-in-vs-2022.md
     - name: Visual Studio 2019 中的 JavaScript
       href: javascript-in-vs-2019.md
     - name: Visual Studio 2017 中的 JavaScript
