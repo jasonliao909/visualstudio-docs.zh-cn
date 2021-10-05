@@ -10,12 +10,12 @@ metadata:
   ms.author: mikejo
   manager: jmartens
   ms.date: 09/17/2019
-  ms.openlocfilehash: b3786277fa8708bdd2d280f692773520749624d1
-  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+  ms.openlocfilehash: a85f501dd6a5c74acc18b50bc926e4518a0561d7
+  ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "122785879"
+  ms.lasthandoff: 10/04/2021
+  ms.locfileid: "129431635"
 landingContent:
 - title: 关于部署
   linkLists:
@@ -72,7 +72,7 @@ landingContent:
     - text: 导入发布设置并部署到 IIS
       url: tutorial-import-publish-settings-iis.md
     - text: 通过 Git 发布
-      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+      url: /azure/app-service/deploy-continuous-deployment
 - title: 其他部署类型
   linkLists:
   - linkListType: how-to-guide

@@ -39,7 +39,7 @@
         - name: 导入发布设置并部署到 Azure
           href: tutorial-import-publish-settings-azure.md
         - name: 使用 Git 将 ASP.NET Core 持续部署到 Azure >>
-          href: /aspnet/core/publishing/azure-continuous-deployment
+          href: /azure/app-service/deploy-continuous-deployment
     - name: C++
       items:
         - name: 创建安装程序包 >>
