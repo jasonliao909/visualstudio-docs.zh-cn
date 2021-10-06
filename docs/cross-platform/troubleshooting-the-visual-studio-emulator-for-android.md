@@ -13,12 +13,12 @@ manager: crdun
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 62c2b69edf6868d1559df2a861a85e286f8ffa15
-ms.sourcegitcommit: fcfd0fc7702a47c81832ea97cf721cca5173e930
+ms.openlocfilehash: 6d4f1c7007b21fd3580ffcde0d22ba2f92f5841f
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97729205"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560862"
 ---
 # <a name="troubleshoot-the-visual-studio-emulator-for-android"></a>适用于 Android 的 Visual Studio 模拟器疑难解答
 本主题包含的信息有助于解决使用适用于 Android 的 Visual Studio 仿真程序时可能会遇到的一些问题。
@@ -256,8 +256,6 @@ ms.locfileid: "97729205"
 - 主板上启用了 USB3。
 
   若要解决此问题，则在主板的 BIOS 设置中禁用 USB3，然后重新启动计算机。 然后，检查 Gigabyte 是否已为主板的 BIOS 发布了更新。
-
-  有关详细信息，请参阅以下知识库文章：[在 Gigabyte 系统上安装 Hyper-V 角色后启动失败](https://support.microsoft.com/en-us/kb/2693144)。
 
 ## <a name="visual-studio-gets-stuck-trying-to-deploy-the-app-to-the-emulator-or-the-emulator-does-not-appear-as-a-debug-target-in-other-ides"></a><a name="ADB"></a> Visual Studio 尝试将应用部署到仿真程序时遇到困难，或者仿真程序未在其他 IDE 中显示为调试目标。
  如果仿真程序正在运行，但它似乎没有连接到 ADB（Android 调试桥）或未显示在使用 ADB 的 Android 工具中（如 Android Studio 或 Eclipse），则可能需要调整仿真程序查找 ADB 的位置。 仿真程序使用注册表项来标识 Android SDK 的基位置，并查找该目录下的 \platform-tools\adb.exe 文件。 若要修改仿真程序使用的 Android SDK 路径：

@@ -11,12 +11,12 @@ ms.author: crdun
 manager: crdun
 ms.workload:
 - unity
-ms.openlocfilehash: 3697ac75eb608f6990cb7f8ca976e103f0df8454
-ms.sourcegitcommit: 18729d7c99c999865cc2defb17d3d956eb3fe35c
-ms.translationtype: MT
+ms.openlocfilehash: f78d942ae625e45af6ff74ec1360715348708983
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/23/2021
-ms.locfileid: "98722979"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561134"
 ---
 # <a name="devops-with-unity-apps"></a>适用于 Unity 应用的 DevOps
 
@@ -42,7 +42,7 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 
 ## <a name="modeling"></a>建模
 
-参考链接： **[对体系结构进行分析和建模](/modeling/analyze-and-model-your-architecture.md)**
+参考链接： **[对体系结构进行分析和建模](/visualstudio/modeling/analyze-and-model-your-architecture)**
 
 常规注释：虽然这些设计功能既不依赖于编码语言，也不依赖于使用 C# 等 .NET 语言，但是他们运行于具有对象层次结构和类关系的传统应用程序范例上。 在 Unity 中设计游戏会同时涉及到不同的范例，即图形对象、声音、着色器、脚本等关系。 因此，Visual Studio 建模关系图工具并非专用于 Unity 项目。 它们可能被用于管理 C# 脚本内的关系，但这只有全体中的一个部分。
 
@@ -63,9 +63,9 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 |-------------|--------------------------|-------------------------|
 |[使用 Team Foundation 版本控制 (TFVC)](/azure/devops/repos/tfvc/overview?view=vsts&preserve-view=true) 或 Azure Repos|是|Unity项目是一个文件集合，可以像任何其他项目一样放置到版本控制系统中，但有几点需要特别注意，请参见此表后内容。|
 |[Azure Repos 中的 Git 入门](/azure/devops/repos/git/gitquickstart?view=vsts&preserve-view=true&tabs=visual-studio)|是|请参阅表后的注释。|
-|[提高代码质量](/test/improve-code-quality.md)|是||
-|[查找代码更改和其他历史记录](/ide/find-code-changes-and-other-history-with-codelens.md)|是||
-|[使用代码图调试应用程序](/modeling/use-code-maps-to-debug-your-applications.md)|是||
+|[提高代码质量](/visualstudio/test/improve-code-quality)|是||
+|[查找代码更改和其他历史记录](/visualstudio/ide/find-code-changes-and-other-history-with-codelens)|是||
+|[使用代码图调试应用程序](/visualstudio/modeling/use-code-maps-to-debug-your-applications)|是||
 
 使用 Unity 进行版本控制的特殊注意事项：
 
@@ -95,20 +95,20 @@ Visual Studio、Azure DevOps Services 和 Team Foundation Server 提供了各种
 |手动测试|是||
 |测试管理器（记录和播放测试）|仅限 Windows 设备和 Android 模拟器||
 |代码覆盖率|n/a|Unity 内进行单元测试时以及不是 Visual Studio 时不适用，请参阅下文。|
-|[单元测试代码](/test/unit-test-your-code.md)|在 Unity 中，但不在 Visual Studio 中|Unity 提供了自己的单元测试框架作为 [Unity 测试工具](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)（Unity 资产商店）的一部分。 单元测试结果在 Unity 中报告，将不会出现在 Visual Studio 内。|
-|[使用 UI 自动化来测试代码](/test/use-ui-automation-to-test-your-code.md)|否|编码的 UI 测试依赖于应用 UI 中可读取的控件；Unity 应用在本质上都是图形，因此编码的 UI 测试工具无法读取其内容。|
+|[单元测试代码](/visualstudio/test/unit-test-your-code)|在 Unity 中，但不在 Visual Studio 中|Unity 提供了自己的单元测试框架作为 [Unity 测试工具](https://assetstore.unity.com/packages/tools/utilities/unity-test-tools-13802)（Unity 资产商店）的一部分。 单元测试结果在 Unity 中报告，将不会出现在 Visual Studio 内。|
+|[使用 UI 自动化来测试代码](/visualstudio/test/use-ui-automation-to-test-your-code)|否|编码的 UI 测试依赖于应用 UI 中可读取的控件；Unity 应用在本质上都是图形，因此编码的 UI 测试工具无法读取其内容。|
 
 ## <a name="improve-code-quality"></a>提高代码质量
 
-参考链接： **[提高代码质量](/test/improve-code-quality.md)**
+参考链接： **[提高代码质量](/visualstudio/test/improve-code-quality)**
 
 |功能|通过 Unity 提供支持|其他注释|
 |-------------|--------------------------|-------------------------|
-|[分析托管代码的质量](/code-quality/code-analysis-for-managed-code-overview.md)|是|可以在 Visual Studio 中分析 C# 脚本代码。|
+|[分析托管代码的质量](/visualstudio/code-quality/code-analysis-for-managed-code-overview)|是|可以在 Visual Studio 中分析 C# 脚本代码。|
 |[使用代码克隆检测功能查找重复代码](https://msdn.microsoft.com/library/hh205279.aspx)|是|可以在 Visual Studio 中分析 C# 脚本代码。|
-|[测量托管代码的复杂性和可维护性](/code-quality/code-metrics-values.md)|是|可以在 Visual Studio 中分析 C# 脚本代码。|
-|[性能工具](/profiling/performance-explorer.md)|否|使用 [Unity 探查器](https://docs.unity3d.com/Manual/Profiler.html)（Unity 网站）。|
-|[分析 .NET Framework 内存问题](https://msdn.microsoft.com/library/dn342825.aspx)|否|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|
+|[测量托管代码的复杂性和可维护性](/visualstudio/code-quality/code-metrics-values)|是|可以在 Visual Studio 中分析 C# 脚本代码。|
+|[性能工具](/visualstudio/profiling/performance-explorer)|否|使用 [Unity 探查器](https://docs.unity3d.com/Manual/Profiler.html)（Unity 网站）。|
+|分析 .NET Framework 内存问题|否|Visual Studio 工具没有深入 Mono 框架（用于 Unity）进行探查的挂钩。 使用 [Unity Profiler](http://docs.unity3d.com/Manual/Profiler.html)（Unity 文档）。|
 
 ## <a name="release-management"></a>发布管理
 

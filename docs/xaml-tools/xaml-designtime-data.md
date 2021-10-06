@@ -1,19 +1,19 @@
 ---
 title: 在 Visual Studio 中通过 XAML 设计器使用设计时数据
 description: 了解如何在 XAML 中使用设计时数据。
-ms.date: 04/22/2021
+ms.date: 09/30/2021
 ms.topic: overview
 author: alihamie
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-xaml-tools
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3867c12dddd57403bc744711a75f31866f0aec90
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: dda0a61a0c634a227222a23176154ba6a9b2c77e
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122045614"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431388"
 ---
 # <a name="use-design-time-data-with-the-xaml-designer-in-visual-studio"></a>在 Visual Studio 中通过 XAML 设计器使用设计时数据
 
@@ -211,7 +211,7 @@ UWP 不支持 x:Array。 因此，可以改用 `<d:ListView.Items>`。 若要使
 
 ## <a name="see-also"></a>请参阅
 
-- [具有 Xamarin.Forms 预览器的设计时数据](/xamarin/xamarin-forms/xaml/xaml-Designer/design-time-data/)
+- [具有 Xamarin.Forms 预览器的设计时数据](/xamarin/xamarin-forms/xaml/xaml-previewer/design-time-data)
 - [WPF 应用中的 XAML](/dotnet/framework/wpf/advanced/xaml-in-wpf)
 - [UWP 应用中的 XAML](/windows/uwp/xaml-platform/xaml-overview)
 - [Xamarin.Forms 应用中的 XAML](/xamarin/xamarin-forms/xaml/)
