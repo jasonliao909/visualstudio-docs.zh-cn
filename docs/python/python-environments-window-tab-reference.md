@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: ec08fbc30f6a03929e778361c08b03281d997d1b
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a05288608c60ce76df7193543467b4a27c629dca
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140370"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431687"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 
@@ -148,7 +148,7 @@ ms.locfileid: "122140370"
 
 或许可以从 [bootstrap.pypa.io](https://bootstrap.pypa.io/) 下载包的相应 get-pip.py，手动从 [pypi.org](https://pypi.org/) 下载包，然后从该本地副本安装包。
 
-但是，建议只需升级到 Python 2.7 或 3.3+，这样不会出现警告。
+但是，建议只需升级到 Python 的最新版本，这样不会出现警告。
 
 ::: moniker range="vs-2017"
 ## <a name="intellisense-tab"></a>IntelliSense 选项卡

@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ace21b9e639f78c022c03825623f6c7d5190911d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f98535c0dab5028a05a642b3d204c2c6f25914c8
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122074320"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430953"
 ---
 # <a name="command-line-capture-tool"></a>命令行捕获工具
 DXCap.exe 是一个用于图形诊断捕获和播放的命令行工具。 它在所有功能级别支持从 Direct3D 10 到 Direct3D 12 的所有版本。
@@ -114,7 +114,7 @@ DXCap.exe -file regression_test_12.vsglog -c BasicHLSL11.exe
 DXCap.exe -c "C:\Program Files\Internet Explorer\iexplorer.exe" "www.fishgl.com"
 ```
 
- 查看位于使用 WebGL API 来呈现三维内容的 www.fishgl.com 中的网页时，上述示例中的命令将从桌面版本的 Internet Explorer 中捕获图形信息。
+ 查看位于使用 WebGL API 来呈现三维内容的 `www.fishgl.com` 中的网页时，上述示例中的命令将从桌面版本的 Internet Explorer 中捕获图形信息。
 
 > [!NOTE]
 > 由于出现在应用之后的命令行参数会被传递给它，因此必须在使用 `-c` 选项前指定要用于 DXCap.exe 的参数。

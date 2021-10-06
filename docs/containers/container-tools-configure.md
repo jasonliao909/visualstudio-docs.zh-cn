@@ -4,14 +4,14 @@ description: 配置 Visual Studio 中可用的工具以使用 Docker 容器。
 author: ghogen
 ms.author: ghogen
 ms.topic: how-to
-ms.date: 03/20/2019
+ms.date: 09/17/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 91ed17af9900c068af7e81ce3902e68063814d82
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.openlocfilehash: abe4eea99bbf2920e65e03655d7203409743ac53
+ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096899"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129439725"
 ---
 # <a name="how-to-configure-visual-studio-container-tools"></a>如何配置 Visual Studio 容器工具
 
@@ -45,7 +45,7 @@ ms.locfileid: "123096899"
 | 在项目加载时自动拉取所需的 Docker 映像 | 启用 | Docker Compose | 为了在加载项目时提高性能，Visual Studio 将在后台启动 Docker 拉取操作，以便在准备好运行代码时，映像已下载或正在下载。 如果只需加载项目和浏览代码，可以将其关闭，以避免下载不需要的容器映像。 |
 | 在后台自动启动容器 | 启用 | Docker Compose | 同样，为了提高性能，Visual Studio 会在构建和运行容器时创建卷装载随时可用的容器。 如果要控制创建容器的时间，请将其关闭。 |
 | 在解决方案关闭时自动终止容器 | 启用 | Docker Compose | 如果希望解决方案的容器在关闭解决方案或关闭 Visual Studio 后继续运行，请将其关闭。 |
-| 不提示需要信任 localhost SSL 证书 | 关闭 | ASP.NET Core 2.1 项目 | 如果 localhost SSL 证书不受信任，则每次运行项目时 Visual Studio 都会提示，除非选中此复选框。 |
+| 不提示需要信任 localhost SSL 证书 | 关闭 | ASP.NET Core 2.1 项目 | 如果 localhost SSL 证书不可信，则 Visual Studio 会在你运行 ASP.NET Core 2.x 项目时提示你，除非选中此复选框或证书已受信任。 |
 ::: moniker-end
 
 ::: moniker range=">=vs-2019"
@@ -55,7 +55,7 @@ ms.locfileid: "123096899"
 | 名称 | 默认设置 | 适用于 | 描述 |
 | -----|:---------------:|:----------:| ----------- |
 | 根据需要安装 Docker Desktop | 提醒我 | 单个项目、Docker Compose | 选择是否需要在未安装 Docker Desktop 时提醒你。 |
-| 信任 ASP.NET Core SSL 证书 | 提醒我 | ASP.NET Core 2.x 项目 | 设置为“提醒我”后，如果 localhost SSL 证书不受信任，则 Visual Studio 将在每次运行项目时提示你。 |
+| 信任 ASP.NET Core SSL 证书 | 提醒我 | ASP.NET Core 2.x 项目 | 设置为“提醒我”后，如果 localhost SSL 证书不受信任，则 Visual Studio 将在每次运行 ASP.NET Core 2.x 项目时提示你。 |
 
 下表描述了“单个项目”和“Docker Compose”设置：
 

@@ -2,7 +2,7 @@
 title: 有关提高性能的提示
 description: 了解如何优化某些可能没有使用的 Visual Studio 功能，从而帮助提高性能。
 ms.custom: SEO-VS-2020
-ms.date: 03/02/2021
+ms.date: 10/01/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 61c57e489df355e399bc970549f0725a9c495f72
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: fd712091bc494d651cb4cd334325c83378048ae1
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122116651"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129431336"
 ---
 # <a name="visual-studio-performance-tips-and-tricks"></a>Visual Studio 性能提示和技巧
 
@@ -29,6 +29,9 @@ Visual Studio 性能建议适用于内存不足的情况，这种情况极少出
 如果将系统从 Windows 32 位版本升级到 64 位版本，那么 Visual Studio 的可用虚拟内存量会从 2 GB 扩展到 4 GB。 这样，即使 Visual Studio 是 32 位进程，也可以处理更大的工作负荷。
 
 有关详细信息，请参阅[内存限制](/windows/desktop/Memory/memory-limits-for-windows-releases)和[在 64 位 Windows 上使用 /LARGEADDRESSAWARE](https://blogs.msdn.microsoft.com/oldnewthing/20050601-24/?p=35483/)。
+
+> [!TIP]
+> Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着，可以在不耗尽内存的情况下打开、编辑、运行和调试最大且最复杂的解决方案。 若要了解详细信息，请参阅 [Visual Studio 2022 愿景](https://devblogs.microsoft.com/visualstudio/visual-studio-2022/)和 [Visual Studio 2022 Preview 1](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-1-now-available/) 博客文章。
 
 ## <a name="disable-automatic-file-restore"></a>禁用自动文件还原
 
