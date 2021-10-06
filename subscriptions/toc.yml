@@ -16,15 +16,15 @@
               href: vscloud-billing-faq.yml
             - name: CSP 购买
               href: vscloud-csp.md
-        - name: Microsoft 合作伙伴网络
-          items:
-            - name: 面向合作伙伴的订阅
-              href: program-mpn.md
-            - name: 管理面向 MPN 的订阅
-              href: manage-mpn-subscriptions.md
-        - name: 适用于初创企业的 Microsoft
-          href: program-startups.md
-    - name: 登录
+            - name: Microsoft 合作伙伴网络
+              items:
+                - name: 面向合作伙伴的订阅
+                  href: program-mpn.md
+                - name: 管理面向 MPN 的订阅
+                  href: manage-mpn-subscriptions.md
+            - name: 适用于初创企业的 Microsoft
+              href: program-startups.md
+    - name: 登录到订阅者门户
       items:
         - name: 使用 Microsoft 帐户登录
           href: sign-in-msa.md
@@ -48,164 +48,154 @@
       href: subscription-expiration.md
     - name: 订阅级别更改
       href: subscription-level-changes.md
-    - name: 订阅已被管理员删除
+    - name: 已删除的订阅
       href: subscription-removed.md
-    - name: 联系订阅管理员
-      href: contact-my-admin.md
-    - name: 优点
-      items:
-        - name: 关于权益
-          href: about-benefits.md
-        - name: Azure 开发/测试产品/服务
-          items:
-            - name: 对于个人（额度）
-              items:
-                - name: Azure 开发测试个人额度
-                  href: vs-azure.md
-            - name: 对于组织
-              items:
-                - name: Azure 开发测试即用即付
-                  href: vs-azure-payg.md
-                - name: Azure EA DevTest
-                  href: azure-ea-devtest.md
-        - name: 工具
-          items:
-            - name: Azure DevOps
-              href: vs-azure-devops.md
-            - name: CAST 突出显示
-              href: vs-cast.md
-            - name: CloudPilot
-              href: vs-cloudpilot.md
-            - name: GitHub Enterprise
-              href: access-github.md
-            - name: Microsoft 365 企业应用版
-              href: microsoft-365-apps-for-enterprise.md
-            - name: Microsoft 365 开发人员
-              href: vs-m365.md
-            - name: Parasoft
-              href: vs-parasoft.md
-            - name: Power BI Pro
-              href: vs-pbi.md
-            - name: Visual Studio App Center
-              href: vs-visual-studio-app-center.md
-            - name: Visual Studio IDE
-              href: vs-ide-benefit.md
-            - name: WhiteSource Bolt
-              href: vs-whitesource.md
-            - name: Windows 开发人员帐户
-              href: vs-windows-dev.md
-            - name: Windows 虚拟桌面
-              href: vs-windows-virtual-desktop.md
-        - name: 专业开发
-          items:
-            - name: MSDN 杂志
-              href: vs-code-magazine.md
-            - name: DataCamp
-              href: vs-datacamp.md
-            - name: LinkedIn Learning
-              href: vs-linkedin-learning.md
-            - name: Pluralsight
-              href: vs-pluralsight.md
-        - name: 支持
-          items:
-            - name: Azure 社区
-              href: vs-azure-community.md
-            - name: 接待支持
-              href: vs-concierge-chat.md
-            - name: 技术支持
-              href: vs-tech-support.md
-            - name: 开发人员社区
-              href: vs-developer-community.md
-            - name: Microsoft 问答
-              href: vs-microsoft-qa.md
-            - name: Microsoft 技术社区
-              href: vs-microsoft-tech-community.md
-- name: 软件和密钥
+- name: 联系订阅管理员
+  href: contact-my-admin.md
+- name: Azure 权益
   items:
-    - name: 软件下载
+    - name: Azure 开发测试个人额度
+      href: vs-azure.md
+    - name: Azure 开发测试即用即付
+      href: vs-azure-payg.md
+    - name: Azure EA DevTest
+      href: azure-ea-devtest.md
+    - name: Azure DevOps
+      href: vs-azure-devops.md
+- name: GitHub Enterprise
+  href: access-github.md
+- name: Visual Studio IDE
+  href: vs-ide-benefit.md
+- name: 其他优点
+  items:
+    - name: 关于权益
+      href: about-benefits.md
+    - name: 工具
       items:
-        - name: 产品可用性
-          href: product-availability.md
-        - name: 下载软件
-          href: download-software.md
+        - name: CAST 突出显示
+          href: vs-cast.md
+        - name: CloudPilot
+          href: vs-cloudpilot.md
+        - name: Microsoft 365 企业应用版
+          href: microsoft-365-apps-for-enterprise.md
+        - name: Microsoft 365 开发人员
+          href: vs-m365.md
+        - name: Parasoft
+          href: vs-parasoft.md
+        - name: Power BI Pro
+          href: vs-pbi.md
+        - name: Visual Studio App Center
+          href: vs-visual-studio-app-center.md
+        - name: WhiteSource Bolt
+          href: vs-whitesource.md
+        - name: Windows 开发人员帐户
+          href: vs-windows-dev.md
+        - name: Windows 虚拟桌面
+          href: vs-windows-virtual-desktop.md
+    - name: 专业开发
+      items:
+        - name: MSDN 杂志
+          href: vs-code-magazine.md
+        - name: DataCamp
+          href: vs-datacamp.md
+        - name: LinkedIn Learning
+          href: vs-linkedin-learning.md
+        - name: Pluralsight
+          href: vs-pluralsight.md
+    - name: 支持
+      items:
+        - name: Azure 社区
+          href: vs-azure-community.md
+        - name: 接待支持
+          href: vs-concierge-chat.md
+        - name: 技术支持
+          href: vs-tech-support.md
+        - name: 开发人员社区
+          href: vs-developer-community.md
+        - name: Microsoft 问答
+          href: vs-microsoft-qa.md
+        - name: Microsoft 技术社区
+          href: vs-microsoft-tech-community.md
+- name: 软件下载
+  items:
+    - name: 产品可用性
+      href: product-availability.md
+    - name: 下载软件
+      href: download-software.md
     - name: 可用软件下载列表
       href: software-download-list.md
-    - name: 产品密钥
-      items:
-        - name: 产品密钥概述
-          href: product-keys.md
-        - name: 查找和声明密钥
-          href: find-keys.md
-        - name: Internet 演示
-          href: internet-demos.md
-- name: 管理员
+- name: 产品密钥
+  items:
+    - name: 产品密钥概述
+      href: product-keys.md
+    - name: 查找和声明密钥
+      href: find-keys.md
+    - name: 提供 Internet 演示和 RDS
+      href: internet-demos.md
+- name: 管理员职责
   items:
     - name: 管理员职责
+      href: admin-responsibilities.md
+    - name: 预生产库存
+      href: admin-inventory.md
+    - name: 管理大型团队和外部承包商
+      href: manage-teams.md
+    - name: 跟踪用户分配和处理订单
+      href: assignments-orders.md
+- name: 访问管理门户
+  items:
+    - name: 批量许可证
+      href: volume-license.md
+    - name: MPSA
+      href: mpsa.md
+    - name: 云订阅
+      href: cloud-admin.md
+    - name: 针对客户的合作伙伴管理
+      href: open-migration.md
+    - name: 视频教程：访问管理门户
+      href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
+- name: 使用管理门户
+  items:
+    - name: 超级管理员和管理人员
+      href: admin-roles.md
+    - name: 设置协议首选项
+      href: admin-preferences.md
+    - name: 概述
+      href: using-admin-portal.md
+    - name: 添加月度订阅
+      href: add-monthly-subs.md
+    - name: 分配订阅
       items:
-        - name: 管理员职责
-          href: admin-responsibilities.md
-        - name: 预生产库存
-          href: admin-inventory.md
-        - name: 管理大型团队和外部承包商
-          href: manage-teams.md
-        - name: 跟踪用户分配和处理订单
-          href: assignments-orders.md
-    - name: 访问管理门户
-      items:
-        - name: 批量许可证
-          href: volume-license.md
-        - name: MPSA
-          href: mpsa.md
-        - name: 云订阅
-          href: cloud-admin.md
-        - name: 针对客户的合作伙伴管理
-          href: open-migration.md
-        - name: 视频教程：访问管理门户
-          href: 'https://www.microsoft.com/videoplayer/embed/RE4th6L'
-    - name: 使用管理门户
-      items:
-        - name: 超级管理员和管理人员
-          href: admin-roles.md
-        - name: 设置协议首选项
-          href: admin-preferences.md
-        - name: 概述
-          href: using-admin-portal.md
-        - name: 添加月度订阅
-          href: add-monthly-subs.md
-        - name: 分配订阅
-          items:
-            - name: 添加单用户
-              href: assign-license.md
-            - name: 添加多个用户
-              href: assign-license-bulk.md
-            - name: 分配特定订阅
-              href: assign-guid.md
-        - name: 将订阅移到新协议
-          href: migrate-subscriptions.md
-        - name: 编辑订阅
-          href: edit-license.md
-        - name: 删除订阅
-          href: delete-license.md
-        - name: 搜索订阅
-          href: search-license.md
-        - name: 导出订阅
-          href: exporting-subscriptions.md
-        - name: 过度分配
-          href: handle-overclaimed-license.md
-        - name: 最大用量
-          href: maximum-usage.md
-        - name: 协议到期时会发生什么情况
-          href: admin-expiration.md
-        - name: 过期订阅
-          href: handle-expired-license.md
-        - name: 订阅已被 Microsoft 删除
-          href: account-removed.md
-        - name: '订阅者登录方案 '
-          href: aliasing.md
-        - name: 使用个人电子邮件登录的订阅者
-          href: personal-email-sign-ins.md
-        - name: 管理带有 GitHub Enterprise 的 Visual Studio 订阅
-          href: assign-github.md
+        - name: 添加单用户
+          href: assign-license.md
+        - name: 添加多个用户
+          href: assign-license-bulk.md
+        - name: 分配特定订阅
+          href: assign-guid.md
+    - name: 将订阅移到新协议
+      href: migrate-subscriptions.md
+    - name: 编辑订阅
+      href: edit-license.md
+    - name: 删除订阅
+      href: delete-license.md
+    - name: 搜索订阅
+      href: search-license.md
+    - name: 导出订阅
+      href: exporting-subscriptions.md
+    - name: 过度分配
+      href: handle-overclaimed-license.md
+    - name: 最大用量
+      href: maximum-usage.md
+    - name: 协议到期时会发生什么情况
+      href: admin-expiration.md
+    - name: 过期订阅
+      href: handle-expired-license.md
+    - name: 订阅者登录方案
+      href: aliasing.md
+    - name: 使用个人电子邮件登录的订阅者
+      href: personal-email-sign-ins.md
+    - name: 管理带有 GitHub Enterprise 的 Visual Studio 订阅
+      href: assign-github.md
 - name: 资源
   items:
     - name: Visual Studio 授权白皮书

@@ -11,12 +11,12 @@ ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 4ab809ea4aced244ecccd2ba04e7e3f0dbbda162
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ca3ba908b8127c92d181276c7d3b0ff6cb5fc72d
+ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122106869"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129430490"
 ---
 # <a name="install-python-interpreters"></a>安装 Python 解释器
 
@@ -28,9 +28,14 @@ ms.locfileid: "122106869"
 
 除了 Visual Studio 安装程序，还可以手动安装下表列出的任何解释器。 例如，如果在安装 Visual Studio 之前安装了 Anaconda 3，则不需要通过 Visual Studio 安装程序再次进行安装。 例如，如果在 Visual Studio 安装程序中尚无可安装的更高版本，也可以手动安装解释器。
 
-::: moniker range=">=vs-2019"
+::: moniker range="<=vs-2017"
 > [!Note]
 > Visual Studio 支持 Python 版本 2.7 以及版本 3.5 - 3.7。 可以使用 Visual Studio 编辑在 Python 其他版本中编写的代码时，这些版本不受官方支持，IntelliSense 和调试等功能可能无法正常工作。
+::: moniker-end
+
+::: moniker range=">vs-2017"
+> [!Note]
+> Visual Studio 支持 Python 3.7 版本。 可以使用 Visual Studio 编辑在 Python 其他版本中编写的代码时，这些版本不受官方支持，IntelliSense 和调试等功能可能无法正常工作。
 ::: moniker-end
 
 对于 Visual Studio 2015 及更早版本，必须手动安装其中一个解释器。
