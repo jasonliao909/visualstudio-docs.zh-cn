@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: a70cc43572d912c0d948a8853ab6cb695a6451ff
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 251b440853520bc18e918082cc9607ed2a15ebec
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150815"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635615"
 ---
 # <a name="visual-studio-customer-experience-improvement-program"></a>Visual Studio 客户体验改善计划
 
@@ -73,7 +73,6 @@ Entry = OptIn
 ## <a name="see-also"></a>另请参阅
 
 * [Visual Studio 收集的诊断信息](diagnostic-data-collection.md)
-* [Visual Studio 反馈选项](../ide/feedback-options.md)
 * [如何报告 Visual Studio 的问题](../ide/how-to-report-a-problem-with-visual-studio.md)
-* [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/home)
 * [Microsoft 隐私声明](https://privacy.microsoft.com/privacystatement)
