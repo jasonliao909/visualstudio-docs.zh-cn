@@ -8,12 +8,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.date: 11/19/2019
 ms.topic: conceptual
-ms.openlocfilehash: d51c04cc579433f3f6e72c55a60529088d724237
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c37f98198e999b1ab31bb6e371ca5b8700037736
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086087"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635322"
 ---
 # <a name="how-to-increase-the-chances-of-a-performance-issue-being-fixed"></a>如何提高解决性能问题的几率
 
@@ -196,8 +196,7 @@ VS 长时间处于无响应状态。
 
 ## <a name="see-also"></a>请参阅
 
-* [Visual Studio 反馈选项](../ide/feedback-options.md)
 * [报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)
 * [报告 C++ 问题](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/home)
 * [开发人员社区数据隐私](developer-community-privacy.md)

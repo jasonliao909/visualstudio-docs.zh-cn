@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f06bb143bfb10940d107dccc038dc852b54efb2e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: b81a480a89f3c5fbc5be3fa5efbabcfd66ff5e4c
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065796"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635641"
 ---
 # <a name="troubleshooting-and-known-issues-for-snapshot-debugging-in-visual-studio"></a>Visual Studio 中的快照调试疑难解答和已知问题
 
@@ -61,7 +61,7 @@ ms.locfileid: "122065796"
 }
 ```
 
-第一种途径类似于“使用 [IdentityProvider] 登录”，它能够有效地保护你的应用域。 第二种途径在身份验证之外公开 SnapshotDebugger AgentLaunch 终结点，它只有在应用服务启用了 SnapshotDebugger 预安装站点扩展的情况下，才会执行启动 SnapshotDebugger 诊断代理的预定义操作。 有关 authorization.json 配置的更多详细信息，请参阅 [URL 授权规则](https://azure.github.io/AppService/2016/11/17/URL-Authorization-Rules.html)。
+第一种途径类似于“使用 [IdentityProvider] 登录”，它能够有效地保护你的应用域。 第二种途径在身份验证之外公开 SnapshotDebugger AgentLaunch 终结点，它只有在应用服务启用了 SnapshotDebugger 预安装站点扩展的情况下，才会执行启动 SnapshotDebugger 诊断代理的预定义操作。 有关 authorization.json 配置的更多详细信息，请参阅 [URL 授权规则](https://azure.microsoft.com/updates/url-authorization-rules-in-app-service/)。
 
 ### <a name="403-forbidden"></a>(403) 禁止
 

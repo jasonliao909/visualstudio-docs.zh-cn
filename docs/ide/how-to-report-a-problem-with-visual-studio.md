@@ -10,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 354153eb2a468b7b42373dbf05315275d4ed745c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1b65be107c750ca841d018db5b6d62b373f2d77d
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028171"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635420"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何报告 Visual Studio 或 Visual Studio 安装程序的问题
 
@@ -90,8 +90,7 @@ ms.locfileid: "122028171"
 ## <a name="see-also"></a>请参阅
 
 * [开发者社区指南](./developer-community-guidelines.md)
-* [Visual Studio 反馈选项](../ide/feedback-options.md)
 * [报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)
 * [报告 C++ 问题](/cpp/how-to-report-a-problem-with-the-visual-cpp-toolset)
-* [Visual Studio 开发者社区](https://aka.ms/feedback/suggest?space=8)
+* [Visual Studio 开发者社区](https://developercommunity.visualstudio.com/home)
 * [开发人员社区数据隐私](developer-community-privacy.md)
