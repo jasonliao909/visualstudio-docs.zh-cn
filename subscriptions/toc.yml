@@ -52,6 +52,10 @@
       href: subscription-removed.md
 - name: 联系订阅管理员
   href: contact-my-admin.md
+- name: GitHub Enterprise
+  href: access-github.md
+- name: Visual Studio IDE
+  href: vs-ide-benefit.md
 - name: Azure 权益
   items:
     - name: Azure 开发测试个人额度
@@ -62,10 +66,6 @@
       href: azure-ea-devtest.md
     - name: Azure DevOps
       href: vs-azure-devops.md
-- name: GitHub Enterprise
-  href: access-github.md
-- name: Visual Studio IDE
-  href: vs-ide-benefit.md
 - name: 其他优点
   items:
     - name: 关于权益

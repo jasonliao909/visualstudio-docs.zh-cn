@@ -1462,8 +1462,6 @@
       href: ide/reference/resources-for-troubleshooting-integrated-development-environment-errors.md
 - name: 发送反馈
   items:
-    - name: 概述
-      href: ide/feedback-options.md
     - name: 报告问题
       items:
         - name: 报告问题
