@@ -2,7 +2,7 @@
 title: 删除未用引用
 description: 了解如何使用新的“Remove Unused References”命令清理不使用的项目引用和 NuGet 包。
 ms.custom: SEO-VS-2021
-ms.date: 06/01/2021
+ms.date: 09/14/2021
 ms.topic: reference
 author: mikadumont
 ms.author: midumont
@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: 19fe9badea98eafa040557d6d373ad72df588229
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: df388659e0776fc15155d338c97334b2c5283468
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122143594"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428693"
 ---
 # <a name="remove-unused-references"></a>删除未用引用
 
@@ -27,9 +27,9 @@ ms.locfileid: "122143594"
 - C#
 - Visual Basic
 
-**内容：** 允许你删除未用的引用。
+**内容：** 为 [SDK 样式项目](/dotnet/core/project-sdk/overview)删除未使用的引用。
 
-**时间：** 想清理不使用的项目引用和 NuGet 包。 
+**时间：** 想清理不使用的项目引用和 NuGet 包。
 
 **原因：** 删除没有使用的项目引用可帮助节省空间并缩短应用程序的启动时间，因为这需要花费时间来加载每个模块，并避免编译器加载永远不会使用的元数据。
 
@@ -45,7 +45,7 @@ ms.locfileid: "122143594"
 
     ![“删除未用引用”对话框](media/remove-unused-references-dialog.png)
 
-5. 单击 `Apply` 以删除所选引用。 
+5. 单击 `Apply` 以删除所选引用。
 
 ## <a name="see-also"></a>另请参阅
 

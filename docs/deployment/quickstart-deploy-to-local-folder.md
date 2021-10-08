@@ -2,7 +2,7 @@
 title: 部署到本地文件夹
 description: 了解如何使用“发布”工具将 ASP.NET、ASP.NET Core、.NET Core 和 Python 应用从 Visual Studio 发布到文件夹。
 ms.custom: SEO-VS-2020
-ms.date: 01/29/2019
+ms.date: 09/23/2021
 ms.topic: quickstart
 helpviewer_keywords:
 - deployment, local folder
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-deployment
 ms.workload:
 - multiple
-ms.openlocfilehash: 9b74a5e7c8153b7896d5ee59f2284baaa8b11d31
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c3df338150c4cf4f72aec310084c32f3db16bcd8
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146259"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429064"
 ---
 # <a name="deploy-an-app-to-a-folder-using-visual-studio"></a>使用 Visual Studio 将应用部署到文件夹
 
@@ -27,7 +27,7 @@ ms.locfileid: "122146259"
 [!INCLUDE [quickstart-prereqs](includes/quickstart-prereqs.md)]
 ::: moniker range=">=vs-2017"
 > [!NOTE]
-> 如果需要将 Windows 桌面应用程序发布到文件夹，请参阅[使用 ClickOnce 部署桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)（C# 或 Visual Basic）。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
+> 如果需要将 Windows 桌面应用程序发布到文件夹，请参阅[使用 ClickOnce 部署 .NET Windows 桌面应用](quickstart-deploy-using-clickonce-folder.md)、[使用 ClickOnce 部署 .NET Framework Windows 桌面应用](how-to-publish-a-clickonce-application-using-the-publish-wizard.md)。 对于 C++/CLR，请参阅[使用 ClickOnce 部署本机应用](/cpp/windows/clickonce-deployment-for-visual-cpp-applications)，或者对于 C/C++，请参阅[使用安装项目部署本机应用](/cpp/windows/walkthrough-deploying-a-visual-cpp-application-by-using-a-setup-project)。
 
 ::: moniker-end
 

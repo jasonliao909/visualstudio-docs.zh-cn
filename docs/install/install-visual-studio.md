@@ -2,30 +2,38 @@
 title: 安装 Visual Studio
 titleSuffix: ''
 description: 了解如何逐步安装 Visual Studio。
-ms.date: 12/13/2019
+ms.date: 09/14/2021
 ms.custom: vs-acquisition
 ms.topic: conceptual
 helpviewer_keywords:
 - install Visual Studio
 - dev15
+- dev16
+- dev17
 - set up Visual Studio
 - Visual Studio setup
 - Visual Studio installer
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7bf44f9333a65ea821c0cd9936ee1f3fa051d4fe
-ms.sourcegitcommit: d3658667e768d7516cbf4461ec47bf24c8fcb7e6
+ms.openlocfilehash: e9672bf47f72aed58ec46edddab83fde594a4494
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112925080"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429113"
 ---
 # <a name="install-visual-studio"></a>安装 Visual Studio
+
+::: moniker range="vs-2017"
+
+欢迎以全新方式安装 Visual Studio！ 在此版本中，可更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 
@@ -35,18 +43,18 @@ ms.locfileid: "112925080"
 
 ::: moniker range=">=vs-2022"
 
-欢迎使用 Visual Studio 2022！ 在此版本中，可轻松选择并仅安装所需功能。 并且由于其最小占用减小，因此其安装速度快且对系统的影响极小。
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-欢迎以全新方式安装 Visual Studio！ 在此版本中，可更轻松地选择并仅安装所需功能。 此外，我们还减少了 Visual Studio 的最小内存需求量，使其安装速度变得更快，对系统的影响更小。
+欢迎使用 Visual Studio 2022 预览版！ 在此版本中，可轻松选择并仅安装所需功能。
 
 ::: moniker-end
 
 > [!NOTE]
 > 本主题适用于 Visual Studio  Windows 版。 对于 Visual Studio for Mac，请参阅[安装 Visual Studio for Mac](/visualstudio/mac/installation/)。
+
+::: moniker range="vs-2017"
+
+想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releasenotes/vs2017-relnotes)。
+
+::: moniker-end
 
 ::: moniker range="vs-2019"
 
@@ -56,13 +64,7 @@ ms.locfileid: "112925080"
 
 ::: moniker range=">=vs-2022"
 
-想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes/)。
-
-::: moniker-end
-
-::: moniker range="vs-2017"
-
-想要详细了解此版本的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releasenotes/vs2017-relnotes)。
+想要详细了解此预览版的其他新增功能？ 请参阅我们的[发行说明](/visualstudio/releases/2022/release-notes-preview/)。
 
 ::: moniker-end
 
@@ -80,7 +82,7 @@ ms.locfileid: "112925080"
 
 1. 重新启动。 重新启动可确保挂起的任何安装或更新都不会影响 Visual Studio 安装。
 
-1. 释放空间。 通过运行磁盘清理应用程序等方式，从 %SystemDrive% 删除不需要的文件和应用程序。
+1. 释放空间。 通过运行磁盘清理应用程序等方式，从系统驱动器删除不需要的文件和应用程序。
 
 ::: moniker-end
 
@@ -92,7 +94,7 @@ ms.locfileid: "112925080"
 
 1. 重新启动。 重新启动可确保挂起的任何安装或更新都不会影响 Visual Studio 安装。
 
-1. 释放空间。 通过运行磁盘清理应用程序等方式，从 %SystemDrive% 删除不需要的文件和应用程序。
+1. 释放空间。 通过运行磁盘清理应用程序等方式，从系统驱动器删除不需要的文件和应用程序。
 
 ::: moniker-end
 
@@ -104,7 +106,7 @@ ms.locfileid: "112925080"
 
 1. 重新启动。 重新启动可确保挂起的任何安装或更新都不会影响 Visual Studio 安装。
 
-1. 释放空间。 通过运行磁盘清理应用程序等方式，从 %SystemDrive% 删除不需要的文件和应用程序。
+1. 释放空间。 通过运行磁盘清理应用程序等方式，从系统驱动器删除不需要的文件和应用程序。
 
 ::: moniker-end
 
@@ -116,13 +118,13 @@ ms.locfileid: "112925080"
 
 ::: moniker range="vs-2019"
 
-有关使用 Visual Studio 2019 并排运行 Visual Studio 先前版本的问题，请参阅 [Visual Studio 2019 平台目标和兼容性](/visualstudio/releases/2019/compatibility/)页面。
+有关使用 Visual Studio 2019 并行运行 Visual Studio 先前版本的问题，请参阅 [Visual Studio 2019 平台目标和兼容性](/visualstudio/releases/2019/compatibility/)。
 
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
 
-有关使用 Visual Studio 2022 并排运行 Visual Studio 先前版本的问题，请参阅 [Visual Studio 2022 平台目标和兼容性](/visualstudio/releases/2019/compatibility/)页面。
+可将 Visual Studio 2022 与先前版本并排安装。 有关详细信息，请参阅 [Visual Studio 2022 平台目标和兼容性](/visualstudio/releases/2022/compatibility)以及[并排安装 Visual Studio 版本](install-visual-studio-versions-side-by-side.md?view=vs-2022&preserve-view=true)。
 
 ::: moniker-end
 
@@ -136,7 +138,7 @@ ms.locfileid: "112925080"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 为此，请选择下面的按钮，选择所需的 Visual Studio 版本，选择“保存”，然后选择“打开文件夹” 。
 
@@ -145,7 +147,16 @@ ms.locfileid: "112925080"
 
 ::: moniker-end
 
-## <a name="step-3---install-the-visual-studio-installer"></a>第 3 步 - `打开` Visual Studio 安装程序
+::: moniker range=">=vs-2022"
+
+为此，请选择下面的按钮，选择所需的 Visual Studio 版本，然后保存到“Downloads”文件夹。
+
+ > [!div class="button"]
+ > [下载 Visual Studio](https://visualstudio.microsoft.com/vs/preview/#download-preview)
+
+::: moniker-end
+
+## <a name="step-3---install-the-visual-studio-installer"></a>第 3 步- 安装 Visual Studio 安装程序
 
 运行引导程序文件以安装 Visual Studio 安装程序。 这个新的轻型安装程序包括安装和自定义 Visual Studio 所需的一切。
 
@@ -157,19 +168,29 @@ ms.locfileid: "112925080"
 
    如果收到用户帐户控制通知，请选择“是”。
 
-2. 我们会要求确认 Microsoft [许可条款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。 选择“继续”。
+1. 我们会要求确认 Microsoft [许可条款](https://visualstudio.microsoft.com/license-terms/)和 Microsoft [隐私声明](https://privacy.microsoft.com/privacystatement)。 选择“继续”。
 
-   ![许可条款和隐私声明](media/privacy-and-license-terms.png "Microsoft 许可条款和隐私声明")
+::: moniker range="<=vs-2019"
+
+   ![显示 Microsoft 许可条款和隐私声明的屏幕截图。](media/privacy-and-license-terms.png "Microsoft 许可条款和隐私声明")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+   ![显示 Microsoft 许可条款和隐私声明的屏幕截图。](../install/media/vs-2022/privacy-and-license-terms.png "Microsoft 许可条款和隐私声明")
+
+::: moniker-end
 
 ## <a name="step-4---choose-workloads"></a>第 4 步 - 选择工作负载
 
 安装该安装程序后，可以通过选择所需的功能集或工作负载来使用该程序自定义安装。 操作方法如下。
 
- ::: moniker range="vs-2017"
+::: moniker range="vs-2017"
 
 1. 在“Visual Studio 安装程序”中找到所需的工作负载。
 
-   ![Visual Studio 2017：安装工作负载](../install/media/vs-installer-installing-workloads.png)
+   ![显示 Visual Studio 安装程序“工作负载”选项卡的屏幕截图。](../install/media/vs-installer-installing-workloads.png)
 
      例如，选择“.NET 桌面开发”工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。
 
@@ -177,13 +198,13 @@ ms.locfileid: "112925080"
 
     接下来，会出现多个显示 Visual Studio 安装进度的状态屏幕。
 
- ::: moniker-end
+::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在“Visual Studio 安装程序”中找到所需的工作负载。
 
-   ![Visual Studio 2019：安装工作负载](../install/media/vs-2019/vs-installer-workloads.png)
+   ![显示 Visual Studio 安装程序“工作负载”选项卡的屏幕截图。](../install/media/vs-2019/vs-installer-workloads.png)
 
      例如，选择“ASP.NET 和 Web 开发”工作负载。 它附带默认核心编辑器，该编辑器针对超过 20 种语言提供基本代码编辑支持，能够打开和编辑任意文件夹中的代码（而无需使用项目），还提供集成的源代码管理。
 
@@ -191,24 +212,44 @@ ms.locfileid: "112925080"
 
     接下来，会出现多个显示 Visual Studio 安装进度的状态屏幕。
 
- ::: moniker-end
+::: moniker-end
 
-> [!TIP]
-> 在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果已打开 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者，从“开始”菜单打开“Visual Studio 安装程序”。 在此处可以选择要安装的工作负载或组件。 然后，选择“修改”。
+::: moniker range=">=vs-2022&quot;
 
-## <a name="step-5---choose-individual-components-optional&quot;></a>第 5 步 - 选择各个组件（可选）
+1. 在 Visual Studio 安装程序中选择所需的工作负载。
 
-如果不想使用工作负载功能来自定义 Visual Studio 安装，或者想要添加比工作负载安装更多的组件，可通过从“各个组件”选项卡上安装或添加各个组件来完成此操作。选择所需组件，然后按照提示进行操作。
+   ![显示 Visual Studio 安装程序“工作负载”选项卡的屏幕截图。](../install/media/vs-2022/vs-installer-workloads.png &quot;安装 Visual Studio 工作负载")
 
-::: moniker range=&quot;vs-2017&quot;
+     查看工作负载摘要，确定哪些工作负载支持所需的功能。 例如，选择“ASP.NET 和 Web 开发”工作负载以使用 Web Live Preview 编辑 ASP.NET 网页，或者使用 Blazor 生成响应式 Web 应用，或者从“桌面和移动”工作负载中选择，以使用 C# 或面向 C++20 的 C++ 项目开发跨平台应用 。
 
-  ![Visual Studio 2017 - 安装各个组件](media/vs-installer-installing-components.png &quot;安装 Visual Studio 各个组件")
+1. 选择所需的工作负载后，选择“安装”。
+
+    接下来，会出现多个显示 Visual Studio 安装进度的状态屏幕。
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+> [!TIP]
+> 在安装之后，可以随时安装最初未安装的工作负荷或组件。 如果已打开 Visual Studio，请转到“工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 或者从“开始”菜单打开 Visual Studio 安装程序。 在此处可以选择要安装的工作负载或组件。 然后，选择“修改”。
 
-  ![Visual Studio 2019 - 安装各个组件](media/vs-2019/vs-installer-individual-components.png "安装 Visual Studio 各个组件")
+## <a name="step-5---choose-individual-components-optional"></a>第 5 步 - 选择各个组件（可选）
+
+如果不想使用工作负载功能来自定义 Visual Studio 安装，或者想要添加比工作负载安装更多的组件，可通过从“各个组件”选项卡上安装或添加各个组件来完成此操作。选择所需组件，然后按照提示进行操作。
+
+::: moniker range="vs-2017"
+
+  ![显示 Visual Studio 安装程序的各组件选项卡的屏幕截图。](media/vs-installer-installing-components.png "安装 Visual Studio 各个组件")
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+  ![显示 Visual Studio 安装程序的各组件选项卡的屏幕截图。](media/vs-2019/vs-installer-individual-components.png "安装 Visual Studio 各个组件")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+  ![显示 Visual Studio 安装程序的各组件选项卡的屏幕截图。](media/vs-2022/vs-installer-individual-components.png "安装 Visual Studio 各个组件")
 
 ::: moniker-end
 
@@ -218,19 +259,35 @@ ms.locfileid: "112925080"
 
 ::: moniker range="vs-2017"
 
-  ![Visual Studio 2017 - 安装语言包](media/vs-installer-installing-language-packs.png "安装 Visual Studio 语言包")
+  ![显示 Visual Studio 安装程序的“语言包”选项卡的屏幕截图。](media/vs-installer-installing-language-packs.png "安装 Visual Studio 语言包")
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
-  ![Visual Studio 2019 - 安装语言包](media/vs-2019/vs-installer-language-packs.png "安装 Visual Studio 语言包")
+  ![显示 Visual Studio 安装程序的“语言包”选项卡的屏幕截图。](media/vs-2019/vs-installer-language-packs.png "安装 Visual Studio 语言包")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+  ![显示 Visual Studio 安装程序的“语言包”选项卡的屏幕截图。](media/vs-2022/vs-installer-language-packs.png "安装 Visual Studio 语言包")
 
 ::: moniker-end
 
 ### <a name="change-the-installer-language-from-the-command-line"></a>从命令行更改安装程序语言
 
+::: moniker range="<=vs-2019"
+
 更改默认语言的另一种方法是从命令行运行安装程序。 例如，可以通过运行以下命令来强制安装程序用英语运行：`vs_installer.exe --locale en-US`。 安装程序下一次运行时会记住此设置。 安装程序支持以下语言标记：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+更改默认语言的另一种方法是从命令行运行安装程序。 例如，可以通过运行以下命令来强制安装程序用英语运行：`vs_installer.exe --locale en-US`。 安装程序下一次运行时会记住此设置。 安装程序支持以下[语言区域设置](/visualstudio/install/use-command-line-parameters-to-install-visual-studio?view=vs-2022&preserve-view=true#list-of-language-locales)：zh-cn、zh-tw、cs-cz、en-us、es-es、fr-fr、de-de、it-it、ja-jp、ko-kr、pl-pl、pt-br、ru-ru 和 tr-tr。
+
+::: moniker-end
 
 ## <a name="step-7---select-the-installation-location-optional"></a>第 7 步 - 选择安装位置（可选）
 
@@ -238,22 +295,30 @@ ms.locfileid: "112925080"
 
 **15.7 的新增功能**：现在可减少系统驱动器上 Visual Studio 的安装量。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
 
-  ![Visual Studio 2017 - 更改安装位置](media/installation-options-by-location.png "更改安装位置")
+  ![显示 Visual Studio 安装程序的“安装位置”选项卡的屏幕截图。](media/installation-options-by-location.png "更改安装位置")
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 可减少系统驱动器上 Visual Studio 的安装占用。 可以选择将下载缓存、共享组件、SDK 和工具移动到不同驱动器，并将 Visual Studio 安装在其运行速度最快的驱动器上。
 
-  ![Visual Studio 2019 - 选择安装位置](media/vs-2019/vs-installer-installation-locations.png "选择安装位置")
+  ![显示 Visual Studio 安装程序的“安装位置”选项卡的屏幕截图。](media/vs-2019/vs-installer-installation-locations.png "选择安装位置")
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+可减少系统驱动器上 Visual Studio 的安装占用。 有关详细信息，请参阅[选择安装位置](change-installation-locations.md)。
+
+  ![显示 Visual Studio 安装程序的“安装位置”选项卡的屏幕截图。](media/vs-2022/vs-installer-installation-locations.png "选择安装位置")
 
 ::: moniker-end
 
 > [!IMPORTANT]
-> 仅当首次安装 Visual Studio 时，才可选择其他驱动器。 如果已安装 Visual Studio 并要更改驱动器，则必须先将其卸载然后再重新安装。
-
-有关详细信息，请参阅[选择安装位置](change-installation-locations.md)页面。
+> 仅当首次安装 Visual Studio 时，才可为 Visual Studio IDE 或下载缓存选择其他驱动器 。 如果已安装 Visual Studio 并要更改驱动器，则必须先将其卸载然后再重新安装。
+>
+> 如果你之前在计算机上安装了 Visual Studio，则无法更改共享组件、工具和 SDK 路径，它将显示为灰色。此位置由 Visual Studio 的所有安装共享。
 
 ## <a name="step-8---start-developing"></a>第 8 步 - 开始开发
 
@@ -261,9 +326,9 @@ ms.locfileid: "112925080"
 
 1. 在 Visual Studio 安装完成后，选择“启动”按钮，开始使用 Visual Studio 进行开发。
 
-2. 选择“文件”，然后选择“新建项目”。
+1. 选择“文件”，然后选择“新建项目”。
 
-3. 选择一种项目类型。
+1. 选择一种项目类型。
 
    例如，若要[生成 C++ 应用](/cpp/get-started/tutorial-console-cpp)，请选择“已安装”，展开“Visual C++”，然后选择要生成的 C++ 项目类型。
 
@@ -271,13 +336,27 @@ ms.locfileid: "112925080"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在 Visual Studio 安装完成后，选择“启动”按钮，开始使用 Visual Studio 进行开发。
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
 1. 在搜索框中，输入要创建的应用类型，查看可用模板列表。 模板列表取决于在安装期间选择的工作负载。 若要查看其他模板，请选择其他工作负载。
+
+   此外，还可使用“语言”下拉列表筛选搜索特定编程语言。 也可使用“平台”列表和“项目类型”列表进行筛选 。
+
+1. Visual Studio 会打开新的项目，然后便可开始编码！
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在 Visual Studio 安装完成后，选择“启动”按钮，开始使用 Visual Studio 进行开发。
+
+1. 在“开始”窗口上，选择“创建新项目”  。
+
+1. 在模板搜索框中，输入要创建的应用类型，查看可用模板列表。 模板列表取决于在安装期间选择的工作负载。 若要查看其他模板，请选择其他工作负载。
 
    此外，还可使用“语言”下拉列表筛选搜索特定编程语言。 也可使用“平台”列表和“项目类型”列表进行筛选 。
 
@@ -295,4 +374,3 @@ ms.locfileid: "112925080"
 * [创建 Visual Studio 的脱机安装](create-an-offline-installation-of-visual-studio.md)
 * [使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md)
 * [安装 Visual Studio for Mac](/visualstudio/mac/installation)
- 

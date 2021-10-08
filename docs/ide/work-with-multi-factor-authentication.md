@@ -11,12 +11,12 @@ ms.technology: vs-ide-general
 ms.workload:
 - multiple
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 8f9d8445f2bfac17a077ed9bf3a444350209ad58
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2788894a98dd0433fcc191a37665dd1df0333c3e
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122055895"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432648"
 ---
 # <a name="how-to-use-visual-studio-with-accounts-that-require-multi-factor-authentication"></a>如何将 Visual Studio 与需要多重身份验证的帐户一起使用
 

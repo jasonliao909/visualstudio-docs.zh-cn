@@ -12,16 +12,22 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 749bb5e57770d76dfca69af40913d8d80c006679
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 348de2d34e30c96449dcd2e4c2ba6eb83ed24c4c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122047317"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429683"
 ---
-# <a name="upgrade-from--testsettings-to-runsettings"></a>从 .testsettings 升级到 .runsettings
+# <a name="upgrade-from-testsettings-to-runsettings"></a>从 .testsettings 升级到 .runsettings
 
-可以使用随 Visual Studio 一起安装的 SettingsMigrator 工具将测试配置文件从 .testsettings 升级到 .runsettings。 根据 Visual Studio 安装位置，可以在以下路径中找到设置迁移程序工具：`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+可以使用随 Visual Studio 一起安装的 SettingsMigrator 工具将测试配置文件从 .testsettings 升级到 .runsettings。 根据 Visual Studio 安装位置，可以在以下路径中找到设置迁移程序工具：
+::: moniker range=">=vs-2022"
+`C:\Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+::: moniker-end
+::: moniker range="vs-2019"
+`C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Extensions\TestPlatform\SettingsMigrator.exe`
+::: moniker-end
 
 在正确的目录位置中，可以使用以下格式运行该工具：
 

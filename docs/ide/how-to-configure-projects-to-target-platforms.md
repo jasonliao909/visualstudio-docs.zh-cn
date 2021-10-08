@@ -2,7 +2,7 @@
 title: 如何：将项目配置为面向平台
 description: 了解如何使用 Visual Studio 将应用程序设置为面向不同平台（包括 64 位平台）。
 ms.custom: SEO-VS-2020
-ms.date: 08/16/2019
+ms.date: 09/13/2021
 ms.technology: vs-ide-compile
 ms.topic: how-to
 helpviewer_keywords:
@@ -20,16 +20,25 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f8a298f19f247c45740e87074804755f6ca691ec
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: b74eb7d0220867b80337b89ef70506bac31b7f6a
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99969862"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429012"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：将项目配置为面向平台
 
-可使用 Visual Studio 将应用程序设置为面向不同平台（包括 64 位平台）。 若要深入了解 Visual Studio 中对 64 位平台的支持，请参阅 [64 位应用程序](/dotnet/framework/64-bit-apps)。
+可使用 Visual Studio 将应用程序版本设置为面向不同平台（包括 64 位平台）。 若要深入了解 Visual Studio 中对 64 位平台的支持，请参阅 [64 位应用程序](/dotnet/framework/64-bit-apps)。
+
+::: moniker range="vs-2022"
+> [!NOTE]
+> Visual Studio 2022 预览版作为 64 位应用程序运行。 这完全独立于可以在 Visual Studio 中针对你的项目面向的平台。 可以使用任何版本的 Visual Studio 同时面向 32 位和 64 位平台。
+::: moniker-end
+::: moniker range="<=vs-2019"
+> [!NOTE]
+> Visual Studio 作为 32 位应用程序运行。 这完全独立于可以在 Visual Studio 中针对你的项目面向的平台。 可以使用任何版本的 Visual Studio 同时面向 32 位和 64 位平台。
+::: moniker-end
 
 ## <a name="target-platforms-with-the-configuration-manager"></a>使用 Configuration Manager 设定目标平台
 
@@ -52,7 +61,7 @@ ms.locfileid: "99969862"
 
     3. 如果要复制当前平台配置的设置，请选择它，然后选择“确定”按钮。
 
-面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。
+你的解决方案中面向 64 位平台的所有项目的属性均已更新，并将为 64 位平台优化项目的下一个生成。
 
 > [!NOTE]
 > Win32 平台名称用于 C++ 项目，这意味着 x86。 Visual Studio 同时考虑项目级平台和解决方案级平台，并且项目平台来自特定于语言的项目系统。 C++ 项目使用 Win32 和 x64，但解决方案平台使用 x86 和 x64。 选择 x86 作为解决方案配置时，Visual Studio 将为 C++ 项目选择 Win32 平台。 若要查看项目级平台和解决方案级平台设置，请打开“Configuration Manager”并记下这两个平台设置。 解决方案级平台显示在“活动解决方案平台”下拉列表中，表显示每个项目的项目级平台。
@@ -64,11 +73,11 @@ ms.locfileid: "99969862"
 
 此任务的执行根据所用编程语言而有所不同。 有关详细信息，请参阅以下链接：
 
-- 对于 [!INCLUDE[vbprvb](../code-quality/includes/vbprvb_md.md)] 项目，请参阅 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
+- 对于 Visual Basic 项目，请参阅 [/platform (Visual Basic)](/dotnet/visual-basic/reference/command-line-compiler/platform)。
 
-- 对于 [!INCLUDE[csprcs](../data-tools/includes/csprcs_md.md)] 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
+- 对于 C# 项目，请参阅[“项目设计器”->“生成”页 (C#)](../ide/reference/build-page-project-designer-csharp.md)。
 
-- 对于 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，请参阅 [/clr（公共语言运行时编译）](/cpp/build/reference/clr-common-language-runtime-compilation)。
+- 对于 C++/CLI 项目，请参阅 [/clr（公共语言运行时编译）](/cpp/build/reference/clr-common-language-runtime-compilation)。
 
 ## <a name="manually-editing-the-project-file"></a>手动编辑项目文件
 

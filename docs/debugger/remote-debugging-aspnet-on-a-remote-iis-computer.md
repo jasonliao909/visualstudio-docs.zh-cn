@@ -2,7 +2,7 @@
 title: 远程调试远程 IIS 计算机上的 ASP.NET Core | Microsoft Docs
 description: 使用 Visual Studio 远程调试器来调试已部署到远程 Internet Information Services (IIS) 计算机的 ASP.NET Core 应用程序。
 ms.custom: remotedebugging, SEO-VS-2020
-ms.date: 05/06/2020
+ms.date: 08/27/2021
 ms.topic: conceptual
 ms.assetid: 573a3fc5-6901-41f1-bc87-557aa45d8858
 author: mikejo5000
@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: ba43954e5a85d4b47f182e6bf348c6e84a4e1690
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: bc4c527506c80aaf8d4a0d60a31bd1d2adb4d31f
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058383"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427221"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>在 Visual Studio 中远程调试远程 IIS 计算机上的 ASP.NET Core
 
@@ -87,7 +87,7 @@ ms.locfileid: "122058383"
 
 1. 在托管系统上安装 .NET Core 托管捆绑包。 捆绑包可安装 .NET Core 运行时、.NET Core 库和 ASP.NET Core 模块。 有关更深入的说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
-    对 .NET Core 3，安装 [.NET Core 托管捆绑包](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)。
+    对于当前的 .NET Core 托管捆绑包，请安装 [ASP.NET Core 托管捆绑包](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)。
     对 .NET Core 2，安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。
 
     > [!NOTE]
@@ -201,7 +201,10 @@ ms.locfileid: "122058383"
 
     确保 Visual Studio 将所需的端口添加到计算机名称中，其格式为：\<remote computer name>:port
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range=">=vs-2022"
+    在 Visual Studio 2022 中应看到 \<remote computer name>：4026
+    ::: moniker-end
+    ::: moniker range="vs-2019"
     在 Visual Studio 2019 中应看到 \<remote computer name>:4024
     ::: moniker-end
     ::: moniker range="vs-2017"
@@ -243,7 +246,17 @@ ms.locfileid: "122058383"
 
     应在 Visual Studio 中命中断点。
 
-## <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 排除故障：在 Windows Server 上打开必需端口
+## <a name="troubleshooting-iis-deployment"></a>IIS 部署故障排除
+
+- 如果无法使用主机名连接到主机，请尝试改用 IP 地址。
+- 确保远程服务器上已打开所需的端口。
+- 对于 ASP.NET Core，需要确保将 DefaultAppPool 的应用程序池字段设置为“无托管代码” 。
+- 验证应用中使用的 ASP.NET 版本是否与服务器上安装的版本相同。 对于你的应用，你可在“属性”页面上查看和设置版本。 若要将应用设置为其他版本，必须安装该版本。
+- 如果应用尝试打开，但显示证书警告，请选择信任站点。 如果你已关闭警告，则可在项目中编辑发布配置文件（*.pubxml 文件），并添加以下元素（仅供测试用）：`<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
+- 如果在 Visual Studio 中无法启动应用，请在 IIS 中启动应用来测试它是否正确部署。
+- 在 Visual Studio 的“输出”窗口中查看状态信息，并查看你的错误消息。
+
+## <a name="open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 在 Windows Server 上打开所需的端口
 
 在大多数设置中，必需端口通过安装 ASP.NET 和远程调试器来打开。 但是，你可能需要验证端口是否已打开。
 
@@ -252,14 +265,17 @@ ms.locfileid: "122058383"
 
 必需端口：
 
-* 80 - 对于 IIS 是必需的
-::: moniker range=">=vs-2019"
+* 80 - 对于 IIS 是必需的 (HTTP)
+::: moniker range=">=vs-2022"
+* 4026 - 从 Visual Studio 2022 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
+::: moniker-end
+::: moniker range="vs-2019"
 * 4024 - 从 Visual Studio 2019 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
 ::: moniker-end
 ::: moniker range="vs-2017"
 * 4022 - 从 Visual Studio 2017 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
 ::: moniker-end
-* UDP 3702 -（可选）发现端口允许你在附加到 Visual Studio 中的远程调试器时使用“查找”按钮。
+* UDP 3702 -（可选）通过发现端口，可在附加到 Visual Studio 中的远程调试器时使用“查找”按钮。
 
 1. 若要在 Windows Server 上打开端口，请打开“开始”菜单，搜索“高级安全 Windows 防火墙”。
 
@@ -272,6 +288,7 @@ ms.locfileid: "122058383"
 5. 选择要为端口启用的一个或多个网络类型，然后单击“下一步”。
 
     你选择的类型必须包括远程计算机连接到的网络。
+
 6. 为入站规则添加名称（例如，IIS、Web 部署或 msvsmon），然后单击“完成”。
 
     应该能在“入站规则”或“出站规则”列表中看到自己的新规则。
