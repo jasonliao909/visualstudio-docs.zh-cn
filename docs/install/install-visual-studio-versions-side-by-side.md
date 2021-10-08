@@ -13,12 +13,12 @@ helpviewer_keywords:
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.openlocfilehash: 80771228d89ae1632b2903151e0badae68040479
-ms.sourcegitcommit: 7510ddb64569af60fe4ccc563dea335a87c73cad
+ms.openlocfilehash: 01ba5330e94cc1d1c9f4056e2e23a254b83d3c33
+ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/25/2021
-ms.locfileid: "122836017"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "129680091"
 ---
 # <a name="install-visual-studio-versions-side-by-side"></a>并排安装 Visual Studio 版本
 
@@ -90,7 +90,7 @@ ms.locfileid: "122836017"
    * 对于 Visual Studio Community，应与 vs_community.exe 匹配或类似
 
    ```shell
-   vs_Enterprise.exe --installPath "C:\Program Files\Microsoft Visual Studio\<AddNewPath>"
+   vs_Enterprise.exe --installPath "C:\Program Files (x86)\Microsoft Visual Studio\<AddNewPath>"
    ```
 
 1. 按照安装程序对话框选择安装所需的组件。 有关详细信息，请参阅[安装 Visual Studio](install-visual-studio.md#step-4---choose-workloads)。
@@ -99,7 +99,7 @@ ms.locfileid: "122836017"
 
 ::: moniker range=">=vs-2022"
 
-1. 从要与现有 Visual Studio 版本并行安装的次要版本的 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2022 版本](/visualstudio/releases/2022/history)页下载 Visual Studio 2022 引导程序文件。
+1. 从要与现有 Visual Studio 版本并行安装的次要版本的 [Visual Studio 下载页](https://visualstudio.microsoft.com/downloads)或 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes-history)页下载 Visual Studio 2022 引导程序文件。
 
 1. 在管理员模式下打开命令提示符。 为此，请打开 Windows“开始”菜单，键入“cmd”，右键单击命令提示符搜索结果，然后选择“以管理员身份运行”。 在命令提示符中，将目录更改为 Visual Studio 引导程序文件所在的文件夹。
 

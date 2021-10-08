@@ -10,19 +10,19 @@ f1_keywords:
 - switches
 - command prompt
 ms.assetid: 480f3cb4-d873-434e-a8bf-82cff7401cf2
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 019429aad05d40fa3116967cdb36a44fbc58338b
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: f9d4f58a4bd4035e097925454b48267f07bb7b6a
+ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306716"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "129680013"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 
@@ -89,7 +89,7 @@ ms.locfileid: "112306716"
 ::: moniker range=">=vs-2022"
 
 >[!TIP]
->如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/history)页。
+>如果以前下载过引导程序文件，并且想要验证其版本，则操作方法如下。 在 Windows 中，打开文件资源管理器，右键单击引导程序文件，依次选择“属性”、“详细信息”选项卡，然后查看“产品版本”号    。 若要将该编号与 Visual Studio 的版本匹配，请参阅 [Visual Studio 2022 版本](/visualstudio/releases/2022/release-notes-history)页。
 
 ::: moniker-end
 
@@ -132,7 +132,7 @@ ms.locfileid: "112306716"
 | `--installWhileDownloading`                        | **可选**：在 install、update 或 modify 命令期间，这个参数使 Visual Studio 能够同时下载和安装产品。 这是默认体验。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
 | `--downloadThenInstall`                            | **可选**：在 install、update 或 modify 命令期间，这个参数会强制性地让 Visual Studio 在安装所有文件之前先下载这些文件。 它与 `--installWhileDownloading` 参数互斥。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 | `--nickname <name>`                                | **可选**：在 install 命令期间，这个参数会定义要分配给已安装的产品的昵称。 别名长度不能超过 10 个字符。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| `--productKey`                                     | **可选**：在 install 命令期间，这个参数会定义要用于已安装的产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxx-xxxxx-xxxxx-xxxxx-xxxxx` 或 `xxxxxxxxxxxxxxxxxxxxxxxxx`。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| `--productKey`                                     | **可选**：在 install 命令期间，这个参数会定义要用于已安装的产品的产品密钥。 由 25 个字母数字字符组成，格式为 `xxxxxxxxxxxxxxxxxxxxxxxxx`。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
 | `--help, --?, -h, -?`                              | 显示此页的脱机版本。                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
 | `--config <path>`                                  | **可选**：在安装或修改操作期间，这将根据以前保存的安装配置文件确定要添加的工作负载和组件。 此操作是附加的，如果文件中不存在任何工作负载或组件，也不会删除任何工作负载或组件。 此外，不会添加不适用于该产品的项目。 在导出操作期间，这将确定保存安装配置文件的位置。                                                                                                                                                                                                                                                                                                                                                  |
 
