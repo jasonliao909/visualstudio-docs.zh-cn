@@ -6,19 +6,19 @@ ms.date: 04/16/2021
 ms.custom: ''
 ms.topic: overview
 ms.assetid: 9a3fdb28-db3d-4970-bc17-7417a985f0fb
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c18c460ebcffdba93279aafec2f3d76503ab2383
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 10a247e48255fd98a097581f7597d0a4d21d8a79
+ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307682"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "129680052"
 ---
 # <a name="applying-administrator-updates-that-use-microsoft-endpoint-configuration-manager"></a>应用使用 Microsoft Endpoint Configuration Manager 的管理员更新
 
@@ -164,4 +164,4 @@ Visual Studio 管理员更新适用于受支持的 Visual Studio 服务版本。
 * [Microsoft 更新目录常见问题解答](https://www.catalog.update.microsoft.com/faq.aspx)
 * [Microsoft Endpoint Configuration Manager (SCCM) 文档](/mem/configmgr)
 * [将 Microsoft 目录中的更新导入 Configuration Manager](/mem/configmgr/sum/get-started/synchronize-software-updates#import-updates-from-the-microsoft-update-catalog)
-* [Windows Server Update Services (WSUS) 文档](/windows-server/administration/windows-server-update-services/get-started-windows-server-update-services-wsus)
+* [Windows Server Update Services (WSUS) 文档](/windows-server/administration/windows-server-update-services/get-started/windows-server-update-services-wsus)
