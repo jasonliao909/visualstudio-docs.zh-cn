@@ -17,12 +17,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: c27dc59e7abc477b60cc7fc10f22822fd2996350
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: e099737ad358478a30f23d160763c5c2aed9f792
+ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428161"
+ms.lasthandoff: 10/08/2021
+ms.locfileid: "129680000"
 ---
 # <a name="visual-studio-images-on-azure"></a>Azure 上的 Visual Studio 映像
 
@@ -114,7 +114,7 @@ Visual Studio 遵循 Azure 中的“自带许可”模式。 与专有硬件上�
 > [!NOTE]
 > 仍需花费一些成本来存储映像，但与从头开始重建 VM 的开销成本相比，对每个需要 VM 的团队成员而言，这种增量成本可能微不足道。 例如，创建和存储 127 GB 的映像每月只需几美元，整个团队都可重复使用该映像。 但是，与每位员工为构建和验证正确配置的开发箱以供个人使用而投入的时间相比，这些成本微不足道。
 
-此外，开发任务或技术可能需要更大的规模，如各种开发配置和多种计算机配置。 可使用 Azure 开发测试实验室，创建可自动构造“黄金映像”的配方。 还可以使用开发测试实验室管理团队正在运行的 VM 策略。 [使用面向开发人员的 Azure 开发测试实验室](/azure/devtest-lab/devtest-lab-developer-lab)是获取有关开发测试实验室更多信息的最佳来源。
+此外，开发任务或技术可能需要更大的规模，如各种开发配置和多种计算机配置。 可使用 Azure 开发测试实验室，创建可自动构造“黄金映像”的配方。 还可以使用开发测试实验室管理团队正在运行的 VM 策略。 [使用面向开发人员的 Azure 开发测试实验室](/azure/devtest-labs/devtest-lab-developer-lab)是获取有关开发测试实验室更多信息的最佳来源。
 
 ## <a name="next-steps"></a>后续步骤
 
