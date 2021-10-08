@@ -4,7 +4,7 @@ description: 了解如何设置和配置 Visual Studio ASP.NET MVC 4.5.2 应用�
 ms.custom:
 - remotedebugging
 - seodec18
-ms.date: 05/06/2020
+ms.date: 08/31/2021
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
 author: mikejo5000
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: f05f4aee6df580796102bc76bee14c8e32e8dc2e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 406f05fbb5d1517fd953c8732eaa8f4ac9522b3d
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065320"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427234"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 
@@ -217,7 +217,10 @@ ms.locfileid: "122065320"
 
     确保 Visual Studio 将所需的端口添加到计算机名称中，其格式为：\<remote computer name>:port
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range=">=vs-2022"
+    在 Visual Studio 2022 中应看到 \<remote computer name>：4026
+    ::: moniker-end
+    ::: moniker range="vs-2019"
     在 Visual Studio 2019 中应看到 \<remote computer name>:4024
     ::: moniker-end
     ::: moniker range="vs-2017"
@@ -252,7 +255,16 @@ ms.locfileid: "122065320"
 
     应在 Visual Studio 中命中断点。
 
-## <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 排除故障：在 Windows Server 上打开必需端口
+## <a name="troubleshooting-iis-deployment"></a>IIS 部署故障排除
+
+- 如果无法使用主机名连接到主机，请尝试改用 IP 地址。
+- 确保远程服务器上已打开所需的端口。
+- 验证应用中使用的 ASP.NET 版本是否与服务器上安装的版本相同。 对于你的应用，你可在“属性”页面上查看和设置版本。 若要将应用设置为其他版本，必须安装该版本。
+- 如果应用尝试打开，但显示证书警告，请选择信任站点。 如果你已关闭警告，则可在项目中编辑发布配置文件（*.pubxml 文件），并添加以下元素（仅供测试用）：`<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
+- 如果在 Visual Studio 中无法启动应用，请在 IIS 中启动应用来测试它是否正确部署。
+- 在 Visual Studio 的“输出”窗口中查看状态信息，并查看你的错误消息。
+- 
+## <a name="open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 在 Windows Server 上打开所需的端口
 
 在大多数设置中，必需端口通过安装 ASP.NET 和远程调试器来打开。 但是，你可能需要验证端口是否已打开。
 
@@ -262,6 +274,9 @@ ms.locfileid: "122065320"
 必需端口：
 
 * 80 - 对于 IIS 是必需的
+::: moniker range=">=vs-2022"
+* 4026 - 从 Visual Studio 2022 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
+::: moniker-end
 ::: moniker range=">=vs-2019"
 * 4024 - 从 Visual Studio 2019 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
 ::: moniker-end

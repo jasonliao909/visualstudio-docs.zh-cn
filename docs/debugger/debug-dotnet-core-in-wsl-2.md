@@ -1,7 +1,7 @@
 ---
 title: 在 Linux 中使用 WSL 调试 .NET 应用
 description: 了解如何在不离开 Visual Studio 的情况下，在 WSL 中运行和调试 .NET 应用。
-ms.date: 08/06/2021
+ms.date: 09/17/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - debugging, linux
@@ -13,12 +13,12 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: dab41bd2bbe83a648c72c64c413e8a9d5d8cf4ce
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1ab2f44a0def0f5b766004a199c17d23ff697920
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122059057"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427286"
 ---
 # <a name="debug-net-apps-in-wsl-with-visual-studio"></a>使用 Visual Studio 在 WSL 中调试 .NET 应用
 
@@ -35,7 +35,9 @@ ms.locfileid: "122059057"
 
 - Visual Studio 2019 v16.9 预览版 1 或更高版本（通过 WSL 可选组件进行 .NET 调试）。
 
-  默认情况下，.NET Core 跨平台或 ASP.NET 和 Web 开发工作负载中包含该可选组件。 必须安装这两个工作负载中一个负载或所有负载。
+  若要检查 WSL 组件，请选择“工具” > “获取工具和功能” 。 在 Visual Studio 安装程序中，请确保通过选择“单个组件”选项卡，然后键入“WSL”作为搜索词来安装组件 。
+
+  在某些版本的 Visual Studio 中，默认情况下会在某些 .NET 工作负载中包含可选组件。
 
 - 安装 [WSL](/windows/wsl/about)。
 

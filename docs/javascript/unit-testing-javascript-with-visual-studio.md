@@ -1,7 +1,7 @@
 ---
 title: 对 JavaScript 和 TypeScript 代码进行单元测试
 description: Visual Studio 支持使用针对 Visual Studio 的 Node.js 工具对 JavaScript 和 TypeScript 代码进行单元测试
-ms.date: 03/18/2021
+ms.date: 09/20/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ee04b9e3a49af86780bc9702de5d5c128dae2173
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ca274240c7482b911997470ddaf042158dbecd9d
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122040510"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432722"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中对 JavaScript 和 TypeScript 代码进行单元测试
 
@@ -263,9 +263,16 @@ Test execution time: 1.5731 Seconds
 
 ## <a name="add-support-for-a-unit-test-framework"></a><a name="addingFramework"></a>添加对单元测试框架的支持
 
-可以通过使用 JavaScript 实现发现和执行逻辑添加对其他测试框架的支持。 可以通过在以下位置添加名为测试框架的文件夹执行此操作：
+可以通过使用 JavaScript 实现发现和执行逻辑添加对其他测试框架的支持。
+
+> [!NOTE]
+> 对于 ASP.NET Core，将 NuGet 包 [Microsoft.JavaScript.UnitTest](https://www.nuget.org/packages/Microsoft.JavaScript.UnitTest/) 添加到你的项目以添加支持。
+
+可以通过在以下位置添加名为测试框架的文件夹执行此操作：
 
 `<VisualStudioFolder>\Common7\IDE\Extensions\Microsoft\NodeJsTools\TestAdapter\TestFrameworks`
+
+如果在 ASP.NET Core 项目中没有看到 `NodeJsTools` 文件夹，请使用 Visual Studio 安装程序添加 Node.js 开发工作负载。 此工作负载包括对 JavaScript 和 TypeScript 进行单元测试的支持。
 
 此文件夹必须包含与导出以下两个函数的文件名称相同的 JavaScript 文件：
 

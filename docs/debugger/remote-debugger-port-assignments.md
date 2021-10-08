@@ -2,7 +2,7 @@
 title: 远程调试器端口分配 | Microsoft Docs
 description: 了解 32 位操作系统、64 位操作系统和 Azure 上的 Visual Studio 远程调试程序端口分配情况。 了解发现端口。
 ms.custom: SEO-VS-2020
-ms.date: 05/18/2018
+ms.date: 09/10/2021
 ms.topic: reference
 ms.assetid: 238bb4ec-bb00-4c2b-986e-18ac278f3959
 author: mikejo5000
@@ -11,16 +11,19 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d07d84ce2d547a5f2910b8afa7ade652d03028c1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7b7e446fc0ed9300610ae265ac2aad07039c350a
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122120785"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427208"
 ---
 # <a name="remote-debugger-port-assignments"></a>远程调试器端口分配
 Visual Studio 远程调试器可作为应用程序或后台服务运行。 当它作为应用程序运行时，它将使用默认分配的端口，如下所示：
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+- Visual Studio 2022：4026
+::: moniker-end
+::: moniker range="vs-2019"
 - Visual Studio 2019：4024
 ::: moniker-end
 - Visual Studio 2017：4022
@@ -35,7 +38,10 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
 
 ## <a name="the-remote-debugger-port-on-32-bit-operating-systems"></a>32 位操作系统上的远程调试器端口
 
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+ TCP 4026（在 Visual Studio 2022 中）是所有方案都必需的主端口。 你可以在命令行或远程调试器窗口中对此进行配置。
+::: moniker-end
+::: moniker range="vs-2019"
  TCP 4024（在 Visual Studio 2019 中）是所有方案都必需的主端口。 你可以在命令行或远程调试器窗口中对此进行配置。
 ::: moniker-end
 ::: moniker range="vs-2017"
@@ -49,7 +55,10 @@ Visual Studio 远程调试器可作为应用程序或后台服务运行。 当�
  可以在远程调试帮助（在远程调试器窗口中按 F1 或单击“帮助 > 用法”）中找到所有远程调试器命令行开关。
 
 ## <a name="the-remote-debugger-port-on-64-bit-operating-systems"></a>64 位操作系统上的远程调试器端口
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+ 当启动 64 位版远程调试器时，它默认使用主端口 (4026)。  如果调试 32 位进程，则 64 位版远程调试器将在端口 4025 上启动 32 位版远程调试器。 如果你运行 32 位远程调试器，它使用 4026，而不是 4025。
+::: moniker-end
+::: moniker range="vs-2019"
  当启动 64 位版远程调试器时，它默认使用主端口 (4024)。  如果调试 32 位进程，则 64 位版远程调试器会在端口 4025（主端口号加 1）上启动 32 位版远程调试器。 如果你运行 32 位远程调试器，它使用 4024，而不是 4025。
 ::: moniker-end
 ::: moniker range="vs-2017"

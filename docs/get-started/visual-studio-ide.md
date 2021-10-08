@@ -2,27 +2,27 @@
 title: Visual Studio 概述
 titleSuffix: ''
 description: 了解 Visual Studio 集成开发环境。
-ms.date: 06/29/2021
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.topic: overview
 ms.custom:
 - vs-acquisition
 - vs-get-started
 - SEO-VS-2020
-author: anandmeg
+author: TerryGLee
 f1_keywords:
 - vs.startpage
 - VS.StartPage.HowDoI
-ms.author: meghaanand
+ms.author: tglee
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2f2c29344f4330c4d81f17b3c99652003fd1c510
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 59c3cab4b51a2eb5b9abc4c74fc96f1d8df6a5f7
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122109872"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128432755"
 ---
 # <a name="welcome-to-the-visual-studio-ide"></a>欢迎使用 Visual Studio IDE
 
@@ -32,9 +32,9 @@ ms.locfileid: "122109872"
 
 查看下述一篇介绍性的文章，进一步了解 Visual Studio：
 
-- 在[学习使用代码编辑器](../get-started/tutorial-editor.md)中熟悉代码编辑器
+- 在[学习使用代码编辑器](tutorial-editor.md)中熟悉代码编辑器。
 
-- 在[了解项目和解决方案](../get-started/tutorial-projects-solutions.md)中学习 Visual Studio 如何整理代码
+- 在[了解项目和解决方案](tutorial-projects-solutions.md)中学习 Visual Studio 如何整理代码。
 
 如果准备深入了解更多编码，接下来可阅读下述一篇针对语言的快速入门：
 
@@ -50,6 +50,6 @@ ms.locfileid: "122109872"
 
 ## <a name="see-also"></a>请参阅
 
-- 发现[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)
-- 访问 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)
-- 阅读 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/)
+- 发现[更多 Visual Studio 功能](../ide/advanced-feature-overview.md)。
+- 访问 [visualstudio.microsoft.com](https://visualstudio.microsoft.com/vs/)。
+- 阅读 [Visual Studio 博客](https://devblogs.microsoft.com/visualstudio/)。

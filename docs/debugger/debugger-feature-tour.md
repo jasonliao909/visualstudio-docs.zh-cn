@@ -2,8 +2,8 @@
 title: 初探调试器
 description: 开始使用 Visual Studio 调试器调试应用程序
 ms.custom: ''
-ms.date: 07/26/2021
-ms.topic: tutorial
+ms.date: 09/23/2021
+ms.topic: conceptual
 helpviewer_keywords:
 - debugger
 ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a857fc74fe76703361d260062c447f139cedc61
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: afb737484fef3df525596e66159b2d206dc08880
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134177"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427351"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 
@@ -28,6 +28,8 @@ ms.locfileid: "122134177"
 
 ## <a name="set-a-breakpoint-and-start-the-debugger"></a>设置断点并启动调试器
 
+当你知道在运行时要详细检查的代码行或代码段时，断点功能非常有用。 如需详细了解断点的不同类型（例如条件断点和函数断点），请参阅[使用断点](../debugger/using-breakpoints.md)。
+
 要进行调试，需要在调试器附加到应用进程的情况下启动应用。 F5（“调试”>“开始调试”）是执行该操作最常见的方法 。 但是，现在你可能没有设置任何断点来检查应用代码，因此我们首先设置断点再开始调试。 断点是可靠调试的最基本和最重要的功能。 断点指示 Visual Studio 应在哪个位置挂起你的运行代码，以使你可以查看变量的值或内存的行为，或确定代码的分支是否运行。
 
 若代码编辑器中打开了文件，则可通过单击代码行左侧的边缘来设置断点。
@@ -36,11 +38,9 @@ ms.locfileid: "122134177"
 
 按 F5（“调试”>“开始调试”）或调试工具栏中的“开始调试”按钮 ![开始调试](../debugger/media/dbg-tour-start-debugging.png "开始调试")，调试器将运行至它遇到的第一个断点  。 如果应用尚未运行，则按 F5 会启动调试器并在第一个断点处停止。
 
-当你知道要详细检查的代码行或代码段时，断点功能非常有用。
-
 ## <a name="navigate-code-in-the-debugger-using-step-commands"></a><a name="navigate"></a> 使用单步执行命令在调试器中移动浏览代码
 
-我们为大多数命令提供键盘快捷键，便于你更快地移动浏览应用代码。 （括号中显示了等效命令，如菜单命令。）
+我们为大多数命令提供键盘快捷键，便于你更快地移动浏览应用代码。 （菜单命令等等效命令显示在括号中。）如需详细了解如何使用步骤命令，请参阅[在调试器中导航代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
 要在附加了调试器的情况下启动应用，请按 F11（“调试”>“单步执行”） 。 F11 是“单步执行”命令，每按一次，应用就执行下一个语句。 使用 F11 启动应用时，调试器会在执行的第一个语句上中断。
 
@@ -57,7 +57,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 如果所在的代码行是函数或方法调用，则可以按 F10（“调试”>“单步跳过”）而不是 F11 。
 
-按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 按 F10 可跳过你不感兴趣的代码。 这样就可以快速转到更感兴趣的代码。
+按 F10 将使调试器前进，但不会单步执行应用代码中的函数或方法（代码仍将执行）。 按 F10 可跳过你不感兴趣的代码。 这样就可以快速转到更感兴趣的代码。 有关使用步骤命令的详细信息，请参阅[在调试器中导航代码](../debugger/navigating-through-code-with-the-debugger.md)。
 
 ## <a name="step-into-a-property"></a>单步执行属性
 
@@ -73,6 +73,8 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="run-to-a-point-in-your-code-quickly-using-the-mouse"></a>使用鼠标快速运行到代码中的某个点
 
+使用“运行时单击”按钮类似于设置临时断点。 此命令对于快速到达应用代码的可见区域也很方便。 你可在任何打开的文件中使用“运行到单击处”。 有关此功能和类似导航功能的更多详细信息，请参阅[运行到代码中的特定位置](../debugger/navigating-through-code-with-the-debugger.md#run-to-a-specific-location-or-function)。
+
 在调试器中，将鼠标悬停在代码行上，直到“运行到单击处”（将执行运行到此处）按钮 ![Visual Studio 调试器中的“运行到单击处”按钮的屏幕截图。 此按钮指示执行应该运行到按钮所在的行。](../debugger/media/dbg-tour-run-to-click.png) 显示在左侧。
 
 ![Visual Studio 调试器的屏幕截图，其中显示“运行到单击处”按钮出现在 Update 函数的调用的左侧。](../debugger/media/dbg-tour-run-to-click-2.png)
@@ -81,8 +83,6 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 > 自 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 起，可用使用“运行到单击位置”（将执行运行到此处）按钮。
 
 单击“运行到单击处”（将执行运行到此处）按钮。 调试器将前进到单击的代码行。
-
-使用此按钮类似于设置临时断点。 此命令对于快速到达应用代码的可见区域也很方便。 你可在任何打开的文件中使用“运行到单击处”。
 
 ## <a name="advance-the-debugger-out-of-the-current-function"></a>使调试器从当前函数中跳出
 
@@ -94,7 +94,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="run-to-cursor"></a>运行到光标处
 
-编辑代码（而不是在调试器中暂停）时，右键单击应用中的代码行，然后选择“运行到光标处”（或按 Ctrl 到 F10）。   此命令将启动调试并在当前代码行上设置临时断点。
+编辑代码（而不是在调试器中暂停）时，右键单击应用中的代码行，然后选择“运行到光标处”（或按 Ctrl 到 F10）。   此命令将启动调试并在当前代码行上设置临时断点。 有关此功能和类似导航功能的更多详细信息，请参阅[运行到代码中的特定位置](../debugger/navigating-through-code-with-the-debugger.md#run-to-a-specific-location-or-function)。
 
 ![运行到光标处](../debugger/media/dbg-tour-run-to-cursor.png "运行到光标处")
 
@@ -117,17 +117,15 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="edit-your-code-and-continue-debugging-c-vb-c-xaml"></a>编辑代码并继续调试（C#、VB、C++、XAML）
 
-在 Visual Studio 支持的大多数语言中，你都可以在调试会话的过程中编辑代码，然后继续调试。 要使用此功能，请先在调试器中暂停，用鼠标点击进入代码，进行编辑，然后按 **F5**、**F10** 或 **F11** 键继续调试。
+在 Visual Studio 支持的大多数语言中，你都可以在调试会话的过程中编辑代码，然后继续调试。 要使用此功能，请先在调试器中暂停，用鼠标点击进入代码，进行编辑，然后按 **F5**、**F10** 或 **F11** 键继续调试。 有关功能使用和功能限制的详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
 
 ![编辑并继续调试](../debugger/media/dbg-tips-edit-and-continue.gif "EditAndContinue")
-
-有关功能使用和功能限制的详细信息，请参阅[编辑并继续](../debugger/edit-and-continue.md)。
 
 若要在调试会话期间修改 XAML 代码，请参阅[使用 XAML 热重载编写和调试正在运行的 XAML 代码](../xaml-tools/xaml-hot-reload.md)。
 
 ## <a name="inspect-variables-with-data-tips"></a>使用数据提示检查变量
 
-既然你已经有了粗略的了解，那么就有机会开始使用调试器检查应用状态（变量）。 那些允许你检查变量的功能是调试器的一些最有用的功能，并且有不同方法可执行此操作。 通常，当尝试调试问题时，你试图找出变量是否存储了你期望它们在特定应用状态具有的值。
+既然你已经有了粗略的了解，那么就有机会开始使用调试器检查应用状态（变量）。 那些允许你检查变量的功能是调试器的一些最有用的功能，并且有不同方法可执行此操作。 通常，当尝试调试问题时，你试图找出变量是否存储了你期望它们在特定应用状态具有的值。 有关使用数据提示的详细信息，请参阅[在数据提示中查看数据值](../debugger/view-data-values-in-data-tips-in-the-code-editor.md)。
 
 在调试器中暂停时，将鼠标悬停在对象上并看到其默认属性值（在此示例中，文件名 `market 031.jpg` 是默认属性值）。
 
@@ -142,11 +140,11 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="inspect-variables-with-the-autos-and-locals-windows"></a>使用“自动”和“局部变量”窗口检查变量
 
+在“自动”窗口中，可看到变量及其当前值和类型。 “自动”窗口显示当前行或前一行使用的所有变量（在 C++ 中，该窗口显示前三个代码行中的变量。 查看文档以了解特定于语言的行为）。 有关使用这些窗口的详细信息，请参阅[在“自动变量”和“局部变量”窗口中检查变量](../debugger/autos-and-locals-windows.md)。
+
 调试时，查看代码编辑器底部的“自动”窗口。
 
 ![“自动”窗口](../debugger/media/dbg-tour-autos-window.png "“自动”窗口")
-
-在“自动”窗口中，可看到变量及其当前值和类型。 “自动”窗口显示当前行或前一行使用的所有变量（在 C++ 中，该窗口显示前三个代码行中的变量。 查看文档以了解特定于语言的行为）。
 
 > [!NOTE]
 > 在 JavaScript 中，支持“局部变量”窗口，但不支持“自动”窗口 。
@@ -159,7 +157,7 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 ## <a name="set-a-watch"></a>设置监视
 
-可使用“监视”窗口指定要关注的变量（或表达式）。
+可使用“监视”窗口指定要关注的变量（或表达式）。 有关详细信息，请参阅[使用“监视”窗口和“快速监视”窗口设置监视](../debugger/watch-and-quickwatch-windows.md)。
 
 在调试时，右键单击对象并选择“添加监视”。
 
@@ -167,26 +165,24 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 
 在本示例中，你在 `f` 对象上设置了监视，当在调试器中移动时，可看到其值发生了变化。 与其他变量窗口不同，“监视”窗口始终显示正在监视的变量（当超出范围时，它们会变灰）。
 
-有关详细信息，请参阅[使用“监视”窗口和“快速监视”窗口设置监视](../debugger/watch-and-quickwatch-windows.md)
-
 ## <a name="examine-the-call-stack"></a>检查调用堆栈
+
+“调用堆栈”窗口显示方法和函数被调用的顺序。 最上面一行显示当前函数（此示例中的 `Update` 方法）。 第二行显示 `Update` 是从 `Path.set` 属性调用的，依此类推。 调用堆栈是检查和理解应用执行流的好方法。 有关详细信息，请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+
+> [!NOTE]
+> “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图  。
 
 调试时单击“调用堆栈”窗口，默认情况下，该窗口在右下方窗格中打开。
 
 ![检查调用堆栈](../debugger/media/dbg-tour-call-stack.png "检查调用堆栈")
 
-“调用堆栈”窗口显示方法和函数被调用的顺序。 最上面一行显示当前函数（此示例中的 `Update` 方法）。 第二行显示 `Update` 是从 `Path.set` 属性调用的，依此类推。 调用堆栈是检查和理解应用执行流的好方法。
-
-> [!NOTE]
-> “调用堆栈”窗口类似于某些 IDE（如 Eclipse）中的调试透视图。
-
 可双击代码行来查看该源代码，这也会更改调试器正在检查的当前范围。 此操作不会使调试器前进。
 
-还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”重启应用，然后检查源代码。 请参阅[如何：检查调用堆栈](../debugger/how-to-use-the-call-stack-window.md)。
+还可使用“调用堆栈”窗口中的右键单击菜单执行其他操作。 例如，你可将断点插入到指定的函数中，使用“运行到光标处”重启应用，然后检查源代码。
 
-## <a name="examine-an-exception"></a><a name="exception"></a> 检查异常
+## <a name="inspect-an-exception"></a><a name="exception"></a> 检查异常
 
-应用引发异常时，调试器会将你转至引发异常的代码行。
+应用引发异常时，调试器会将你转至引发异常的代码行。 有关详细信息，请参阅[使用异常帮助程序检查异常](../debugger/exception-helper.md)。
 
 ![异常帮助程序](../debugger/media/dbg-tour-exception-helper.png "异常帮助程序")
 
@@ -195,9 +191,6 @@ F11 是一种以最详尽方式检查执行流的好方法。 （为了更快地
 在此示例中，`DirectoryInfo` 调用在存储于 `value` 变量中的空字符串上引发了错误。
 
 异常帮助程序是帮助调试错误的好功能。 你还可以执行其他操作，如查看错误详细信息及从异常帮助程序添加监视。 或者，如有需要可更改引发特定异常的条件。 有关如何在代码中处理异常的详细信息，请参阅[调试技术和工具](../debugger/write-better-code-with-visual-studio.md)。
-
-> [!NOTE]
-> 异常帮助程序取代了从 [!include[vs_dev15](../misc/includes/vs_dev15_md.md)] 开始提供的异常情况助手。
 
 展开“异常设置”节点以查看有关如何处理此异常类型的更多选项，但对于本教程无需更改任何内容！
 

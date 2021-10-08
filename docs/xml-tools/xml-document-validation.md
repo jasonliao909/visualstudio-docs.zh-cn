@@ -2,7 +2,7 @@
 title: XML 编辑器中的 XML 文档验证
 description: 了解 XML 编辑器中的 XML 文档验证，以及它如何检查 XML 1.0 语法并在你键入内容时执行数据验证。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/16/2021
 ms.topic: conceptual
 ms.assetid: abb353bd-6c4a-4978-b03b-a8c245bbfb55
 author: TerryGLee
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-xml-tools
 ms.workload:
 - multiple
-ms.openlocfilehash: 19585e36094868cedad279f0f7b4d982647da1d7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1dc2fcbbac33fe19cd50b44675609f7121c1be69
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122091820"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429661"
 ---
 # <a name="xml-document-validation"></a>XML 文档验证
 
@@ -45,6 +45,11 @@ XML 编辑器检查 XML 1.0 语法，还会在你键入内容时执行数据验�
 
 ## <a name="xml-schema-xsd-files"></a>XML 架构 (XSD) 文件
 在编辑 XML 架构文件时，使用架构缓存中的 xsdschema.xsd 文件进行验证。 验证错误以蓝色的波浪形下划线显示。 任何编译错误也会显示为红色的波浪形下划线。
+
+## <a name="entity-reference-limit"></a>实体引用限制
+DTD 处理默认将实体引用数限制为 10,000 个引用，并可以容纳大多数 XML 架构。  Visual Studio 中的错误消息可能是“已超过文件名的实体引用限制”。
+
+如果在处理 XML 文档时遇到此限制，并且希望将验证程序扩展到更大的架构，可以使用 `MaxNumberOfDtdEntityReferences` Visual Studio 注册表项进行更改。 如需详细了解如何进行此更改，请参阅[为 Visual Studio 实例编辑注册表](../install/tools-for-managing-visual-studio-instances.md#editing-the-registry-for-a-visual-studio-instance)。 请注意，这适用于用户在此计算机上打开的所有 XML 文档。
 
 ## <a name="see-also"></a>请参阅
 

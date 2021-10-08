@@ -3,7 +3,7 @@ title: 教程：C# 和 ASP.NET Core 入门
 titleSuffix: ''
 description: 了解如何在 Visual Studio 中使用 C# 逐步创建 ASP.NET Core Web 应用。
 ms.custom: vs-acquisition, get-started
-ms.date: 06/12/2021
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -16,12 +16,12 @@ dev_langs:
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: 1a42e1d1d083a383715db72b018b695fc4a9829c
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.openlocfilehash: 8a7d6b0d29181ea464c8e98325e0c1ade53a45dd
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123097026"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426874"
 ---
 # <a name="tutorial-get-started-with-c-and-aspnet-core-in-visual-studio"></a>教程：Visual Studio 中的 C# 和 ASP.NET Core 入门
 
@@ -36,16 +36,10 @@ ms.locfileid: "123097026"
    
    ::: moniker-end
    
-   ::: moniker range="vs-2019"
+   ::: moniker range=">=vs-2019"
    
    如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
    
-   ::: moniker-end
-
-   ::: moniker range="vs-2022"
-
-   如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
-
    ::: moniker-end
 
 1. 更新 Visual Studio - 如果已经安装 Visual Studio，请确保运行的是最新版本。 要详细了解如何更新安装，请参阅[将 Visual Studio 更新到最新版本](../../install/update-visual-studio.md)页面。
@@ -103,32 +97,32 @@ ms.locfileid: "123097026"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在“开始”窗口上，选择“创建新项目”。
 
-   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="查看“创建新项目”窗口":::
+   :::image type="content" source="../../get-started/media/vs-2019/create-new-project-dark-theme.png" alt-text="显示 Visual Studio“开始”窗口的屏幕截图，其中突出显示“创建新项目”选项。":::
 
 1. 在“创建新项目”窗口中，从“语言”列表中选择“C#”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“Web”。
 
       应用语言、平台和项目类型筛选器之后，选择“ASP.NET Core Web 应用”模板，然后选择“下一步” 。
 
-   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="为 ASP.NET Core Web 应用选择 C# 模板":::
+   :::image type="content" source="./media/vs-2019/csharp-create-new-project-aspnet-core.png" alt-text="显示 ASP.NET Core Web 应用项目模板（在“新建项目”对话框中突出显示）的屏幕截图。":::
 
    > [!NOTE]
    > 如果未看到“ASP.NET Core Web 应用”模板，则可以从“创建新项目”窗口安装该模板。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![显示“找不到要查找的内容”消息中的“安装更多工具和功能”链接的屏幕截图。](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
    > 然后，在 Visual Studio 安装程序中，选择“ASP.NET 和 Web 开发”工作负载  。
    >
-   > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../../get-started/media/aspnet-core-web-dev-workload.png)
+   > ![显示 Visual Studio 安装程序中“.NET Core 跨平台开发”工作负载的屏幕截图。](../../get-started/media/aspnet-core-web-dev-workload.png)
    >
    > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 如果系统提示你保存工作，请保存。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“MyCoreApp”    。 然后，选择“下一步”。
 
-   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="在“配置新项目”窗口中，将项目命名为“MyCoreApp”":::
+   :::image type="content" source="./media/vs-2019/csharp-name-your-aspnet-app.png" alt-text="显示“配置新项目”窗口的屏幕截图，其中“项目名称”字段中输入了“MyCoreApp”。":::
 
 1. 在“附加信息”窗口中，验证顶部下拉菜单中是否显示“.NET Core 3.1”。 请注意，可以通过选中相应的复选框来启用 Docker 支持。 此外，可以通过单击“更改身份验证”按钮来添加身份验证支持。 可以从中选择下列项目：
     - 无：不进行身份验证。
@@ -138,7 +132,49 @@ ms.locfileid: "123097026"
     
     保持“启用 Docker”框处于未选中状态，并选择“无”作为身份验证类型。 然后选择“创建”  。
 
-   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”并保留所有默认值":::
+   :::image type="content" source="./media/vs-2019/aspnet-core-additional-information.png" alt-text="显示“附加信息”窗口中默认设置的屏幕截图。Framework 值为“.NET Core 3.1”。":::
+
+   Visual Studio 将打开你的新项目。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在“开始”窗口上，选择“创建新项目”。
+
+   :::image type="content" source="media/vs-2022/start-window-create-new-project.png" alt-text="显示 Visual Studio“开始”窗口的屏幕截图，其中突出显示“创建新项目”选项。":::
+
+1. 在“创建新项目”窗口中，从“语言”列表中选择“C#”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“Web”。
+
+      应用语言、平台和项目类型筛选器之后，选择“ASP.NET Core Web 应用”模板，然后选择“下一步” 。
+
+   :::image type="content" source="media/vs-2022/csharp-create-new-project-aspnet-core.png" alt-text="显示 ASP.NET Core Web 应用项目模板（在“新建项目”对话框中突出显示）的屏幕截图。":::
+
+   > [!NOTE]
+   > 如果未看到“ASP.NET Core Web 应用”模板，则可以从“创建新项目”窗口安装该模板。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
+   >
+   > :::image type="content" source="media/vs-2022/not-finding-what-looking-for.png" alt-text="显示“找不到要查找的内容”消息中的“安装更多工具和功能”链接的屏幕截图。":::
+   >
+   > 然后，在 Visual Studio 安装程序中，选择“ASP.NET 和 Web 开发”工作负载  。
+   >
+   > :::image type="content" source="media/vs-2022/aspnet-core-web-dev-workload.png" alt-text="显示 Visual Studio 安装程序中的 ASP.NET 和 Web 开发工作负载的屏幕截图。":::
+   >
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 如果系统提示你保存工作，请保存。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+
+1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“MyCoreApp”    。 然后，选择“下一步”。
+
+   :::image type="content" source="media/vs-2022/csharp-name-your-aspnet-app.png" alt-text="显示“配置新项目”窗口的屏幕截图，其中“项目名称”字段中输入了“MyCoreApp”。":::
+
+1. 在“附加信息”窗口中，验证“框架”字段中显示了“.NET 6.0”。   在此窗口中，可以通过选中相应的复选框来启用 Docker 支持。 还可以通过从“身份验证类型”下拉列表中选择一个值来添加身份验证支持。 可以从中选择下列项目：
+
+    - 无：不进行身份验证。
+    - 个人帐户：存储在本地或基于 Azure 的数据库中的身份验证。
+    - Microsoft 标识平台：此选项使用 Active Directory、Azure AD 或 Microsoft 365 进行身份验证。
+    - Windows：适用于 Intranet 应用程序。
+    
+    保持“启用 Docker”框处于未选中状态，并选择“无”作为身份验证类型。 然后选择“创建”。
+
+   :::image type="content" source="media/vs-2022/aspnet-core-additional-information.png" alt-text="显示“附加信息”窗口中默认设置的屏幕截图。Framework 值为“.NET 6.0”。":::
 
    Visual Studio 将打开你的新项目。
 
@@ -206,7 +242,7 @@ ms.locfileid: "123097026"
 
 1. 返回到 Visual Studio，然后按 Shift+F5  停止调试模式。 这还会关闭浏览器窗口中的项目。
 
-1. 在 Visual Studio 中，选择“About.cshtml”  。 然后，删除“additional”  一词，并在这个词的位置上添加词语“file and directory”  。
+1. 在 Visual Studio 中，选择“About.cshtml”  。 然后，删除“another”一词并在该位置添加词文件和目录。
 
     ![更改 About.cshtml 文件中的文本](media/csharp-aspnet-razor-aboutcshtml-mycoreapp-code-changed.png)
 
@@ -250,45 +286,45 @@ ms.locfileid: "123097026"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="=vs-2019"
 
 ## <a name="tour-your-solution"></a>浏览解决方案
 
  1. 项目模板会创建一个解决方案，其中包含一个名为 MyCoreApp  的 ASP.NET Core 项目。 选择“解决方案资源管理器”  选项卡以查看其内容。
 
-    ![Visual Studio 中适用于 Razor 页面解决方案的名为 MyCoreApp 的 ASP.NET 解决方案资源管理器](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
+    ![Visual Studio 中解决方案资源管理器的屏幕截图，显示了名为"MyCoreApp"的 ASP.NET Core 项目的内容。](media/csharp-aspnet-razor-solution-explorer-mycoreapp.png)
 
  1. 展开“页面”文件夹  。
 
-     ![解决方案资源管理器中的 Pages 文件夹](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
+     ![Visual Studio 中解决方案资源管理器的屏幕截图，显示了“MyCoreApp”的“Pages”文件夹的内容。](media/vs-2019/csharp-aspnet-solution-explorer-pages.png)
 
  1. 查看代码编辑器中的“Index.cshtml”文件  。
 
-     ![查看 Visual Studio 代码编辑器中的 Index.cshtml 文件](media/vs-2019/csharp-aspnet-index-cshtml.png)
+     ![显示 Visual Studio 代码编辑器中打开的 Index.cshtml 文件的屏幕截图。](media/vs-2019/csharp-aspnet-index-cshtml.png)
 
  1. 每个 .cshtml 文件都具有关联的代码文件。 若要在编辑器中打开代码文件，请在解决方案资源管理器中展开“Index.cshtml”节点，并选择“Index.cshtml.cs”文件   。
 
-     ![选择 Visual Studio 代码编辑器中的 Index.cshtml.cs 文件](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
+     ![Visual Studio 中解决方案资源管理器的屏幕截图，其中显示已选中 Index.cshtml.cs 文件。](media/vs-2019/csharp-aspnet-choose-index-cshtml.png)
 
  1. 查看代码编辑器中的“Index.cshtml.cs”文件  。
 
-     ![查看 Visual Studio 代码编辑器中的 About.cshtml 文件](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
+     ![显示 Visual Studio 代码编辑器中打开的 Index.cshtml.cs 文件的屏幕截图。](media/vs-2019/csharp-aspnet-index-cshtml-editing.png)
 
  1. 该项目包含一个 wwwroot  文件夹，它是网站的根。 展开文件夹以查看其内容。
 
-     ![Visual Studio 解决方案资源管理器中的 wwwroot 文件夹](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
+     ![Visual Studio 中解决方案资源管理器的屏幕截图，显示了“wwwroot”文件夹的内容。](media/csharp-aspnet-razor-solution-explorer-wwwroot.png)
 
     可将静态站点内容&mdash;如 CSS、图像和 JavaScript 库&mdash;直接放在所需的路径中。
 
  1. 该项目还包含在运行时管理 Web 应用的配置文件。 默认应用程序[配置](/aspnet/core/fundamentals/configuration)存储在 appsettings.json  中。 但是，可使用 appsettings.Development.json 替代这些设置  。 展开 appsettings.json 文件以查看 appsettings.Development.json 文件   。
 
-     ![Visual Studio 解决方案资源管理器中的配置文件](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
+     ![Visual Studio 中解决方案资源管理器的屏幕截图，显示已选中 appsettings.json 文件，展开后显示 appsettings.Development.json 文件。](media/csharp-aspnet-razor-solution-explorer-appsettingsjson.png)
 
 ## <a name="run-debug-and-make-changes"></a>运行、调试和更改
 
 1. 在 IDE 中选择“IIS Express”  按钮，在调试模式下生成并运行应用。 （或者，按 F5  或从菜单栏选择“调试”   > “启动调试”  。）
 
-     ![在 Visual Studio 中选择“IIS Express”按钮](media/csharp-aspnet-razor-iisexpress.png)
+     ![显示 Visual Studio IDE 中突出显示的 IIS Express 按钮的屏幕截图。](media/csharp-aspnet-razor-iisexpress.png)
 
      > [!NOTE]
      > 如果看到内容为“无法连接到 Web 服务器‘IIS Express’”  的错误消息，请关闭 Visual Studio，再使用右键单击菜单或上下文菜单中的“以管理员身份运行”  选项打开它。 然后，再次运行应用。
@@ -301,23 +337,23 @@ ms.locfileid: "123097026"
 
    浏览器中的“隐私”页呈现 Privacy.cshtml 文件中设置的文本   。
 
-   ![查看“隐私”页面上的文本](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
+   ![显示“MyCoreApp 隐私”页的屏幕截图，其中包含文本“使用此页详细说明网站的隐私策略”。](media/vs-2019/csharp-aspnet-browser-page-privacy.png)
 
 1. 返回到 Visual Studio，然后按 Shift+F5  停止调试模式。 这还会关闭浏览器窗口中的项目。
 
 1. 在 Visual Studio 中，打开要编辑的“Privacy.cshtml”  。 然后，删除“使用此页面详细说明网站的隐私策略”字词，并在其位置添加“此页面自 @ViewData["TimeStamp"] 起构建”字词   。
 
-    ![更改 Privacy.cshtml 文件中的文本](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
+    ![显示 Visual Studio 代码编辑器中打开的 Privacy.cshtml 文件的屏幕截图，其中包含更新后的文本。](media/vs-2019/csharp-aspnet-privacy-cshtml-code-changed.png)
 
 1. 现在，让我们对代码进行更改。 选择“Privacy.cshtml.cs”  。 然后，使用以下快捷方式清理文件顶部的 `using` 指令：
 
    选择任何灰色的 `using` 指令，插入点下方或左边距会显示[快速操作](../../ide/quick-actions.md)灯泡。 选择灯泡，然后将鼠标悬停在“删除不必要的 using”  。
 
-   ![删除 Privacy.cshtml.cs 文件中不必要的 Using](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
+   ![屏幕截图显示了 Visual Studio 代码编辑器中的 Privacy.cshtml 文件，其中打开了“删除不必要的 Using”对话框。](media/vs-2019/csharp-aspnet-remove-unnecessary-usings.png)
 
    现选择“预览更改”，查看更改的内容  。
 
-   ![预览更改](media/vs-2019/csharp-aspnet-preview-changes.png)
+   ![显示“预览更改”对话框的屏幕截图，其中显示了“Using”的新列表和 Privacy.cshtm 文件中的代码。](media/vs-2019/csharp-aspnet-preview-changes.png)
 
    选择“应用”。  Visual Studio 从文件中删除不必要的 `using` 指令。
 
@@ -331,9 +367,9 @@ ms.locfileid: "123097026"
      }
     ```
 
-1. 请注意在“DateTime”下显示的两个波浪下划线  。 显示波浪下划线是因为这些类型不在作用域内。
+1. 请注意在“DateTime”下显示的两个波浪下划线  。 显示波浪下划线是因为此类型不在范围内。
 
-   ![OnGet 方法中使用波浪下划线标记的错误](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
+   ![显示 OnGet 方法中用波浪下划线标记的错误的屏幕截图。](media/vs-2019/csharp-aspnet-add-new-onget-method.png)
 
     打开“错误列表”工具栏，查看此处列出的相同错误  。 （如果没有看到“错误列表”  工具栏，请选择顶部菜单栏中的“视图”   > “错误列表”  。）
 
@@ -341,15 +377,123 @@ ms.locfileid: "123097026"
 
 1. 让我们来解决此问题。 在代码编辑器中，将光标放在包含错误的任意一条线上，然后选择左边距中的“快速操作”灯泡。 然后，从下拉菜单中，选择“使用系统”  将此指令添加到文件顶部并解析错误。
 
-   ![添加“使用系统”指令](media/vs-2019/csharp-aspnet-add-usings.png)
+   ![显示“快速操作”菜单的屏幕截图，其中显示了添加“using System”指令的建议。](media/vs-2019/csharp-aspnet-add-usings.png)
 
 1. 按 F5，即可在 Web 浏览器中打开项目  。
 
 1. 在网站顶部，选择“隐私”查看你的更改  。
 
-   ![查看更新的“隐私”页，其中包含你所做的更改](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
+   ![显示更新的“隐私”页的屏幕截图，其中包含你所做的更改。](media/vs-2019/csharp-aspnet-browser-page-privacy-changed.png)
 
 1. 关闭 Web 浏览器，按 Shift  +F5  停止调试模式，然后关闭 Visual Studio。
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+## <a name="tour-your-solution"></a>浏览解决方案
+
+ 1. 项目模板会创建一个解决方案，其中包含一个名为 MyCoreApp  的 ASP.NET Core 项目。 选择“解决方案资源管理器”  选项卡以查看其内容。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-razor-solution-explorer-mycoreapp.png" alt-text="Visual Studio 中解决方案资源管理器的屏幕截图，显示了名为&quot;MyCoreApp&quot;的 ASP.NET Core 项目的内容。":::
+
+ 1. 展开“页面”文件夹  。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-solution-explorer-pages.png" alt-text="Visual Studio 中解决方案资源管理器的屏幕截图，显示了“MyCoreApp”的“Pages”文件夹的内容。":::
+
+ 1. 查看代码编辑器中的“Index.cshtml”文件  。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-index-cshtml.png" alt-text="显示 Visual Studio 代码编辑器中打开的 Index.cshtml 文件的屏幕截图。":::
+
+ 1. 每个 .cshtml 文件都具有关联的代码文件。 若要在编辑器中打开代码文件，请在解决方案资源管理器中展开“Index.cshtml”节点，并选择“Index.cshtml.cs”文件   。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-choose-index-cshtml.png" alt-text="Visual Studio 中解决方案资源管理器的屏幕截图，其中显示已选中 Index.cshtml.cs 文件。":::
+
+ 1. 查看代码编辑器中的“Index.cshtml.cs”文件  。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-index-cshtml-editing.png" alt-text="显示 Visual Studio 代码编辑器中打开的 Index.cshtml.cs 文件的屏幕截图。":::
+
+ 1. 该项目包含一个 wwwroot  文件夹，它是网站的根。 展开文件夹以查看其内容。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-razor-solution-explorer-wwwroot.png" alt-text="Visual Studio 中解决方案资源管理器的屏幕截图，显示了“wwwroot”文件夹的内容。":::
+
+    可将静态站点内容&mdash;如 CSS、图像和 JavaScript 库&mdash;直接放在所需的路径中。
+
+ 1. 该项目还包含在运行时管理 Web 应用的配置文件。 默认应用程序[配置](/aspnet/core/fundamentals/configuration)存储在 appsettings.json  中。 但是，可使用 appsettings.Development.json 替代这些设置  。 展开 appsettings.json 文件以查看 appsettings.Development.json 文件   。
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-razor-solution-explorer-appsettingsjson.png" alt-text="Visual Studio 中解决方案资源管理器的屏幕截图，显示已选中 appsettings.json 文件，展开后显示 appsettings.Development.json 文件。":::
+
+## <a name="run-debug-and-make-changes"></a>运行、调试和更改
+
+1. 在 IDE 中选择“IIS Express”  按钮，在调试模式下生成并运行应用。 （或者，按 F5  或从菜单栏选择“调试”   > “启动调试”  。）
+
+     :::image type="content" source="media/vs-2022/csharp-aspnet-razor-iisexpress.png" alt-text="显示 Visual Studio IDE 中突出显示的 IIS Express 按钮的屏幕截图。":::
+
+     > [!NOTE]
+     > 如果看到内容为“无法连接到 Web 服务器‘IIS Express’”  的错误消息，请关闭 Visual Studio，再使用右键单击菜单或上下文菜单中的“以管理员身份运行”  选项打开它。 然后，再次运行应用。
+     >
+     > 系统可能会向你发送一条消息，询问你是否接受 IIS SSL Express 证书。 要在 Web 浏览器中查看代码，请选择“是”，如果收到后续的安全警告消息，也请选择“是”   。
+
+1. Visual Studio 启动浏览器窗口。 然后，应在菜单栏中看到“主页”和“隐私”页面   。
+
+1. 选择菜单栏中的“隐私”  。
+
+   浏览器中的“隐私”页呈现 Privacy.cshtml 文件中设置的文本   。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-browser-page-privacy.png" alt-text="显示“MyCoreApp 隐私”页的屏幕截图，其中包含文本“使用此页详细说明网站的隐私策略”。":::
+
+1. 返回到 Visual Studio，然后按 Shift+F5  停止调试模式。 这还会关闭浏览器窗口中的项目。
+
+1. 在 Visual Studio 中，打开要编辑的“Privacy.cshtml”  。 然后，删除“使用此页面详细说明网站的隐私策略”字词，并在其位置添加“此页面自 @ViewData["TimeStamp"] 起构建”字词   。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-privacy-cshtml-code-changed.png" alt-text="显示 Visual Studio 代码编辑器中打开的 Privacy.cshtml 文件的屏幕截图，其中包含更新后的文本。":::
+
+1. 现在，让我们对代码进行更改。 选择“Privacy.cshtml.cs”  。 然后，选择以下快捷方式清理文件顶部的 `using` 指令：
+
+   选择任何灰色的 `using` 指令，插入点下方或左边距会显示[快速操作](../../ide/quick-actions.md)灯泡。 选择灯泡，然后将鼠标悬停在“删除不必要的 using”  。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-remove-unnecessary-usings.png" alt-text="屏幕截图显示了 Visual Studio 代码编辑器中的 Privacy.cshtml 文件，其中打开了“删除不必要的 Using”对话框。":::
+
+   现选择“预览更改”，查看更改的内容  。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-preview-changes.png" alt-text="显示“预览更改”对话框的屏幕截图，其中显示了“Using”的新列表和 Privacy.cshtm 文件中的代码。":::
+
+   选择“应用”。  Visual Studio 从文件中删除不必要的 `using` 指令。
+
+1. 接下来，使用 [DateTime.ToString](xref:System.DateTime.ToString%2A) 方法为针对区域性或区域设置格式的当前日期创建字符串。
+
+   - 方法的第一个参数指定如何显示日期。 此示例使用格式说明符 (`d`) 指示短日期格式。 
+   - 第二个参数是 [CultureInfo](/dotnet/api/system.globalization.cultureinfo) 对象，该对象指定日期的区域性或区域。 此参数确定日期中任意单词的语言以及所使用的分隔符类型等。
+ 
+将 `OnGet()` 方法的主体更改为以下代码：
+
+   ```csharp
+   public void OnGet()
+   {
+      string dateTime = DateTime.Now.ToString("d", new CultureInfo("en-US"));
+      ViewData["TimeStamp"] = dateTime;
+   }
+   ```
+
+1. 请注意在“CultureInfo”下显示的两个波浪下划线。 显示波浪下划线是因为此类型不在范围内。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-add-new-onget-method.png" alt-text="显示代码编辑器中 OnGet 方法的屏幕截图，其中 CultureInfo 对象下方有波浪下划线。":::
+
+    打开“错误列表”工具栏，查看此处列出的相同错误  。 （如果没有看到“错误列表”  工具栏，请选择顶部菜单栏中的“视图”   > “错误列表”  。）
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-error-list.png" alt-text="显示 Visual Studio 中的“错误列表”窗口的屏幕截图。“CultureInfo”类型缺少一个 using 指令。":::
+
+1. 让我们来解决此问题。 在代码编辑器中，将光标放在包含错误的任意一条线上，然后选择左边距中的“快速操作”灯泡。 然后，从下拉菜单中，选择“using System.Globalization;”，将此指令添加到文件顶部并解析错误。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-add-usings.png" alt-text="显示“快速操作”菜单的屏幕截图，其中显示了添加“using System.Globalization”指令的建议。":::
+
+1. 按 F5，即可在 Web 浏览器中打开项目  。
+
+1. 在网站顶部，选择“隐私”查看你的更改  。
+
+   :::image type="content" source="media/vs-2022/csharp-aspnet-browser-page-privacy-changed.png" alt-text="显示 MyCoreApp 的“隐私”页的屏幕截图，其中包括添加日期所做的更改。":::
+
+1. 关闭 Web 浏览器，按 Shift  +F5  停止调试模式，然后关闭 Visual Studio。
+
 ::: moniker-end
 
 ## <a name="quick-answers-faq"></a>快速解答常见问题

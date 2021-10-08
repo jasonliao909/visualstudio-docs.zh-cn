@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 0a6274a4648dc204bf451aaa68dbc2e47b1ce25e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d45b3b46558abf4d16d651d97af1bc722e908a7f
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122084891"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429696"
 ---
 # <a name="property-functions"></a>属性函数
 
@@ -216,32 +216,60 @@ $([MSBuild]::EnsureTrailingSlash('$(PathProperty)'))
 
 ## <a name="msbuild-getdirectorynameoffileabove"></a>MSBuild GetDirectoryNameOfFileAbove
 
-MSBuild `GetDirectoryNameOfFileAbove` 属性函数在路径中当前目录的上级目录中查找文件。
+MSBuild `GetDirectoryNameOfFileAbove` 属性函数向上搜索包含指定文件的目录，从指定目录开始（包括指定目录）。 如果找到文件，它将返回包含该文件的最近目录的完整路径，否则返回空字符串。
 
- 此属性函数具有以下语法：
+此属性函数具有以下语法：
 
 ```
-$([MSBuild]::GetDirectoryNameOfFileAbove(string ThePath, string TheFile))
+$([MSBuild]::GetDirectoryNameOfFileAbove(string startingDirectory, string fileName))
 ```
 
- 下面的代码是此语法的示例。
+此示例演示了如何在当前文件夹中或更高一级中导入最近的 EnlistmentInfo.props 文件（仅当找到匹配项时）：
 
 ```xml
 <Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))\EnlistmentInfo.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), EnlistmentInfo.props))' != '' " />
 ```
 
-## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
-
-如果位于当前目录上级的目录结构中，则 MSBuild 中的 `GetPathOfFileAbove` 属性函数将返回指定文件的路径。 它在功能上等效于调用
+请注意，此示例可以通过使用 `GetPathOfFileAbove` 函数来更简洁地编写：
 
 ```xml
-<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" />
+<Import Project="$([MSBuild]::GetPathOfFileAbove(EnlistmentInfo.props))" Condition=" '$([MSBuild]::GetPathOfFileAbove(EnlistmentInfo.props))' != '' " />
 ```
+
+## <a name="msbuild-getpathoffileabove"></a>MSBuild GetPathOfFileAbove
+
+MSBuild `GetPathOfFileAbove` 属性函数向上搜索包含指定文件的目录，从指定目录开始（包括指定目录）。 如果找到文件，它将返回最近匹配文件的完整路径，否则返回空字符串。
 
 此属性函数具有以下语法：
 
 ```
-$([MSBuild]::GetPathOfFileAbove(dir.props))
+$([MSBuild]::GetDirectoryNameOfFileAbove(string file, [string startingDirectory]))
+```
+
+其中，`file` 是要搜索的文件的名称，`startingDirectory` 是开始搜索的可选目录。 默认情况下，搜索将在当前文件自身的目录中开始。
+ 
+此示例演示如何在当前目录中或更高一级中导入名为“dir.props”的文件（仅当找到匹配项时）：
+
+```xml
+<Import Project="$([MSBuild]::GetPathOfFileAbove(dir.props))" Condition=" '$([MSBuild]::GetPathOfFileAbove(dir.props))' != '' " />
+```
+
+这在功能上等效于
+
+```xml
+<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))\dir.props" Condition=" '$([MSBuild]::GetDirectoryNameOfFileAbove($(MSBuildThisFileDirectory), dir.props))' != '' " />
+```
+
+但是，有时需要在父目录中开始搜索，以避免与当前文件匹配。 此示例演示 Directory.Build.props 文件如何在严格意义上更高级别的树中导入最近的 Directory.Build.props 文件，而不会以递归方式将自己导入 ：
+
+```xml
+<Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+```
+
+这在功能上等效于
+
+```xml
+<Import Project="$([MSBuild]::GetDirectoryNameOfFileAbove('$(MSBuildThisFileDirectory)../', 'Directory.Build.props'))/Directory.Build.props" />
 ```
 
 ## <a name="msbuild-getregistryvalue"></a>MSBuild GetRegistryValue
