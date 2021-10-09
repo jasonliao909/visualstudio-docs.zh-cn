@@ -9,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 7e007c87a855ae5c05cce1b48e36edb166cd9762
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5c641b9b3fb307b262e8f594a949729c603d346d
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122137401"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704563"
 ---
 # <a name="developer-community-guidelines"></a>开发者社区指南
 
@@ -58,7 +58,7 @@ ms.locfileid: "122137401"
 
 会审问题这一过程涉及多个步骤，是在功能团队中协作完成的。 会审通常需要一周时间，但也可能要花更长时间。 会审的目标是让你明白我们将如何处理你的问题。 例如，在会审后，你知道我们是计划解决你的问题还是计划等待更多社区反馈。
 
-报告问题后，可通过状态了解你的提交在其生命周期中所处的位置。 Visual Studio 产品团队在评审你的反馈时，会将它设为适当的状态。 可查看[问题状态和常见问题解答](./report-a-problem.yml)来跟踪问题报告的进度。
+报告问题后，可通过状态了解你的提交在其生命周期中所处的位置。 Visual Studio 产品团队在评审你的反馈时，会将它设为适当的状态。 可查看[问题状态和常见问题解答](./how-to-report-a-problem-with-visual-studio.md)来跟踪问题报告的进度。
 
 ### <a name="prioritizing-which-issues-to-fix"></a>确定要修复的问题的优先级
 

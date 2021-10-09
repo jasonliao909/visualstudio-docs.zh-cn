@@ -1,7 +1,7 @@
 ---
 title: 如何报告 Visual Studio 的问题
 description: 了解如何报告 Visual Studio 的问题
-ms.date: 03/11/2018
+ms.date: 10/07/2021
 ms.topic: how-to
 ms.assetid: bee01179-cde5-4419-9095-190ee0ba5902
 author: madskristensen
@@ -10,19 +10,21 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 1b65be107c750ca841d018db5b6d62b373f2d77d
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 35bf0e0ab52a1754308fdd36dd409424d062649f
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635420"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704676"
 ---
 # <a name="how-to-report-a-problem-with-visual-studio-or-visual-studio-installer"></a>如何报告 Visual Studio 或 Visual Studio 安装程序的问题
 
 > [!NOTE]
 > 对于 Visual Studio for Mac，请参阅[如何报告 Visual Studio for Mac 的问题](/visualstudio/mac/report-a-problem)。
 
-可以通过 Visual Studio 或其安装程序报告问题。 利用内置的反馈工具，你可以轻松添加可帮助 Visual Studio 团队诊断和修复问题的诊断信息。 下面是报告问题的步骤。
+可以通过 Visual Studio 或其安装程序报告问题。 利用内置的反馈工具，你可以轻松添加可帮助 Visual Studio 团队诊断和修复问题的诊断信息。 
+
+下面是报告问题的步骤。
 
 1. 在 Visual Studio 中，选择右上角的反馈图标并选择“报告问题”。 此外可以从菜单“帮助” > “发送反馈” > “报告问题”来访问反馈工具。
 ![屏幕截图显示在 Visual Studio 窗口右上角已选中“反馈”图标，并且已在下文菜单中选中“报告问题”。](media/feedback-button.png)
@@ -63,6 +65,10 @@ ms.locfileid: "129635420"
 
 6. 最后一步是点击“提交”按钮。 提交报告会直接将报告发送到内部 Visual Studio bug 报告系统等待会审。
 
+你的每个问题报告都会成为我们核心工程系统中的工作项，使你能够直接与产品团队互动，以帮助我们识别和解决有影响力的问题。 提供丰富诊断信息的反馈对于改进 Visual Studio 产品系列至关重要。 非常感谢你花时间报告问题。
+
+此外，你还可以对其他社区成员的反馈进行投票，以便更多地关注问题并帮助更快地解决问题。
+
 ## <a name="when-further-information-is-needed"></a>如果需要进一步信息
 
 如果问题缺少重要信息，我们将分配“需要更多信息”状态。 我们将在问题上评论称我们需要该特定信息，你也将收到电子邮件通知。 如果我们在 7 天内未收到该信息，将向你发送提醒。 之后，如果你 14 天内未操作，我们将关闭该票证。
@@ -80,6 +86,50 @@ ms.locfileid: "129635420"
 1. 提供额外信息后，发出请求的 Microsoft 工程师会收到相关通知。 如果获取的信息足以开展调查，问题状态随即更改。 否则，工程师会要求提供更多信息。
 
 在“我的反馈”屏幕上可以查看这些请求，以及其他所有“问题”和“建议”  。
+
+## <a name="problem-status"></a>问题状态
+
+报告问题后，可通过状态了解你的提交在其生命周期中所处的位置。 当 Microsoft 团队审核你的反馈时，他们会将其设置为适当的状态。 通过参考下面列出的状态及其含义和颜色指示来跟踪问题报告的进度。
+
+| **State** | **说明**                                                                                                         |
+|-------------|-------------------------------------------------------------------------------------------------------------------------|
+|  ![开发人员社区上问题报告的“新”状态](../ide/media/ProblemStates/New.jpg)           | “新”表示错误或问题是新报告的，尚未采取任何措施  。                    |
+| ![开发人员社区上问题报告的“已会审”状态](../ide/media/ProblemStates/Triaged.jpg)    | “已会审”表示已完成初步步骤，例如审核、翻译和重复项初始检查  。 票证已发送给相应的工程团队以供考虑。                                     |
+| ![开发人员社区上问题报告的“正在考虑中”状态](../ide/media/ProblemStates/UnderConsideration.jpg)   | “正在考虑中”表示 Microsoft 正在审核社区影响问题，并会相应地确定其优先级  。 如果社区影响尚不明确或重要，我们将继续监视此状态下的问题。                                                                                           |
+| ![开发人员社区上问题报告的“正在调查中”状态](../ide/media/ProblemStates/UnderInvestigation.jpg)    |  “正在调查中”表示工程师正在积极调查你的问题以找到解决方案  。                                                                                           |
+|   ![开发人员社区问题报告的“需要更多信息”状态](../ide/media/ProblemStates/NeedMoreInfo.jpg) | “需要更多信息”表示需要你提供更多诊断信息，以便继续进行调查  。  [了解如何对“需要更多信息”请求做出响应。](./how-to-report-a-problem-with-visual-studio.md#when-further-information-is-needed)                                                                                        |
+| ![开发人员社区上问题报告的“已有修补程序 - 等待发布”状态](../ide/media/ProblemStates/FixedPendingRelease.jpg)    | “已有修补程序 - 等待发布”表示已有该问题的修补程序，并且即将提供预览版或即将发布  。  当提供修补程序预览版后，问题将被标记为指定预览版本的“已有修补程序版本”标记。 |
+| ![开发人员社区上问题报告的“已关闭 - 已有修补程序”状态](../ide/media/ProblemStates/ClosedFixed.jpg)    | “已关闭 - 已有修补程序”表示已针对此问题发布了修补程序  。 该问题现在也标有“已有修补程序版本:”标签，用于指定发布版本。 |
+| ![开发人员社区上问题报告的“已关闭 - 重复”状态](../ide/media/ProblemStates/ClosedDuplicate.jpg)    | “已关闭 - 重复”表示你的问题已通过其他反馈进行了报告  。 我们将提供跟踪原始问题报告的链接。 |
+| ![开发人员社区上问题报告的“已关闭 - 较低优先级”状态](../ide/media/ProblemStates/ClosedLowerPriority.jpg)    | “已关闭 - 较低优先级”：为了让在开发者社区中的每个人都具备最佳价值，我们会优先考虑客户影响最大的问题  。 虽然我们目前无法解决此特定问题，但请放心，我们会重视你的所有反馈并据此改进 Visual Studio。 |
+| ![开发人员社区上问题报告的“已关闭 - 不是一个 Bug”状态](../ide/media/ProblemStates/ClosedNotABug.jpg)    | “已关闭 - 不是一个 Bug”表示已确定报告的功能是基于当前设计  。 |
+| ![开发人员社区上问题报告的“已关闭 - 信息不足”状态](../ide/media/ProblemStates/ClosedNotEnoughInfo.jpg)    | “已关闭 - 信息不足”表示我们没有足够的信息来调查此问题  。 获得所需信息后，我们会重新考虑此反馈。 |
+| ![开发人员社区上问题报告的“已关闭 - 其他产品”状态](../ide/media/ProblemStates/ClosedOtherProduct.jpg)    | “已关闭 - 其他产品”表示已确定你的问题适用于其他产品  。 请参阅 Microsoft 对外部产品和任何相关链接的注释。 |
+
+## <a name="faq"></a>FAQ
+
+#### <a name="how-can-i-increase-the-chance-of-my-problem-getting-resolved-quickly"></a>如何才能增加问题得到快速解决的可能性？
+建议使用搜索来确保尚未报告所要报告的问题。 如果找到与问题相符的现有项目，请关注并对该问题票证进行投票。
+
+提供可以帮助团队重现你所遇问题的所有信息。  此信息包括必要的重现步骤、代码片段、屏幕截图、重现记录、日志文件和其他项目。
+
+#### <a name="how-is-my-feedback-prioritized"></a>我的反馈是如何设置优先级的？
+我们从客户那里收集大量有价值的问题。 为了确保我们在开发人员社区中为每个人带来最大价值，我们会优先对社区影响最大的反馈采取措施。
+
+如果我们未亲自回复你的反馈，请相信我们对你的意见深怀感谢。 请放心，你的所有反馈都会传达给合适的团队。
+
+非常感谢你抽出宝贵的时间帮助我们改进 Visual Studio。
+
+#### <a name="what-actions-can-i-take-if-im-not-satisfied-with-the-resolution"></a>如果我对解决方案不满意，可以采取什么行动？
+我们的团队会尽力诊断并解决你遇到的任何问题，但有时可能你对我们的建议不完全感到满意。 请在回复中发表对反馈的评论，让我们确切地知道你不满意的地方，我们会尽力确保满足你的需求。
+
+#### <a name="how-will-i-get-notified-of-progress-on-my-feedback"></a>如何获取有关反馈进度的通知？
+Microsoft 工程团队将通过对反馈票证添加注释并在票证取得进展时更改票证状态来与你沟通。 监视在票证状态更改时或发布评论时发送的电子邮件通知。  可以在开发人员社区网站上的“配置文件”和“首选项”设置中管理通知的频率。
+
+#### <a name="why-cant-i-add-a-problem-for-visual-studio-ide-on-the-developer-community-website"></a>为什么不能在开发人员社区网站上添加 Visual Studio IDE 问题？
+通过 Visual Studio 报告问题可在报告中自动包含诊断信息。 这些信息非常重要，有助于我们的工程师充分理解你的问题并努力解决问题。
+
+通过 Visual Studio 进行报告时，你可轻松与我们共享丰富的诊断信息，例如较大日志文件、故障信息、屏幕截图、重现记录以及其他项目，有助于我们更快地提供更高质量的解决方法。
 
 ## <a name="search-for-solutions-or-provide-feedback"></a>搜索解决方案或提供反馈
 

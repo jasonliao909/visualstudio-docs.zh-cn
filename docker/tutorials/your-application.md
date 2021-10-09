@@ -10,12 +10,12 @@ ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: f7e22de1de21773d8218e9a2e6567ebe72563354
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 36f2be22eda6c969e6ffe40254eee0888df1347a
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334325"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704418"
 ---
 # <a name="build-and-run-the-todo-sample-app"></a>生成并运行待办事项示例应用
 
@@ -86,7 +86,7 @@ ms.locfileid: "122334325"
 
     还记得 `-d` 和 `-p` 标志吗？ 你以“分离”模式（在后台）运行新容器，并在主机的端口 3000 到容器的端口 3000 之间创建映射。 如果没有端口映射，你将无法访问应用程序。
 
-1. 几秒后，打开 Web 浏览器转到 [http://localhost:3000](http://localhost:3000)。
+1. 几秒后，打开 Web 浏览器转到 `http://localhost:3000`。
     你应该会看到应用！
 
     ![空待办事项列表](media/todo-list-empty.png)

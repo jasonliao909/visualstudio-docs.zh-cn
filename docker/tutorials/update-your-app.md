@@ -10,12 +10,12 @@ ms.custom: contperf-fy22q1
 ms.topic: conceptual
 ms.workload:
 - azure
-ms.openlocfilehash: 0ce798b3264eedea5826df0ca2076c7fbc6ee4c6
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 71d478dcd7d6656fcd80af1c69bab25058872f8a
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334299"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704417"
 ---
 # <a name="update-the-app"></a>更新应用
 
@@ -103,7 +103,7 @@ docker: Error response from daemon: driver failed programming external connectiv
     docker run -dp 3000:3000 getting-started
     ```
 
-1. 在 [http://localhost:3000](http://localhost:3000) 刷新浏览器，应该会显示更新后的帮助文本！
+1. 在 `http://localhost:3000` 刷新浏览器，应该会显示更新后的帮助文本！
 
 ![更新后的应用程序包含更后新的空文本](media/todo-list-updated-empty-text.png)
 
