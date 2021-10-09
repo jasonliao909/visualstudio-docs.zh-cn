@@ -2,7 +2,7 @@
 title: 选项, 文本编辑器, C/C++, 实验
 description: 了解如何使用 C/C++ 部分中的“试验性”页面来更改与 IntelliSense 和浏览数据库有关的试验性行为。
 ms.custom: SEO-VS-2020
-ms.date: 08/02/2017
+ms.date: 10/08/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Experimental
@@ -13,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e35bdb8c6a56ef3174277836769201cd00e47dad
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 6bdb43b30b2d8999de07134f113e8cca2994477a
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96040298"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704660"
 ---
 # <a name="options-text-editor-cc-experimental"></a>选项, 文本编辑器, C/C++, 实验
 
@@ -49,8 +49,6 @@ ms.locfileid: "96040298"
 
 此选项使 Visual Studio 能缓存项目数据，以便下次打开该项目时，它能直接加载缓存的数据，而无需通过项目文件重新对其计算。 使用缓存数据可显著缩短项目加载时间。
 
-::: moniker-end
-
 ## <a name="additional-features-in-the-visual-studio-marketplace"></a>Visual Studio Marketplace 中的其他功能
 
 可以在 [Visual Studio Marketplace](https://marketplace.visualstudio.com/search?target=VS&category=Tools&vsVersion=&subCategory=All&sortBy=Downloads) 中浏览其他文本编辑器功能。 一个示例是 [C++ 快速修补](https://marketplace.visualstudio.com/items?itemName=VisualCppDevLabs.CQuickFixes2017)，它支持以下内容：
@@ -64,6 +62,8 @@ ms.locfileid: "96040298"
 - **联机帮助** - 在联机帮助中搜索错误消息
 
 - 等等。
+
+::: moniker-end
 
 ## <a name="see-also"></a>请参阅
 
