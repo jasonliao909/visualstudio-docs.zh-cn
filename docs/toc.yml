@@ -1466,8 +1466,6 @@
       items:
         - name: 报告问题
           href: ide/how-to-report-a-problem-with-visual-studio.md
-        - name: “报告问题”状态和常见问题解答
-          href: ide/report-a-problem.yml
         - name: 快速修复性能问题
           href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
         - name: 使用调用堆栈创建小型转储
