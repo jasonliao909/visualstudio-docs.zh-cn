@@ -19,18 +19,18 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 618d6dedca13915e430c1931447b86d1749f8a79
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8b7c3954bde20a328276503aa36db6e6ba47d743
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030459"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635914"
 ---
 # <a name="unable-to-connect-to-the-microsoft-visual-studio-remote-debugging-monitor"></a>Unable to Connect to the Microsoft Visual Studio Remote Debugging Monitor
 出现此消息的原因可能是远程计算机上的远程调试监视器未正确设置，或者由于网络问题或存在防火墙而导致远程计算机不可访问。
 
 > [!IMPORTANT]
-> 如果你认为你因产品 Bug 而收到此消息，请向 Visual Studio [报告此问题](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果需要更多帮助，请参阅 [Talk to Us](../ide/feedback-options.md) 了解与 Microsoft 联系的方法。
+> 如果你认为你因产品 Bug 而收到此消息，请向 Visual Studio [报告此问题](../ide/how-to-report-a-problem-with-visual-studio.md)。 如果需要更多帮助，请参阅[开发者社区](https://developercommunity.visualstudio.com/home)，了解与 Microsoft 联系的方法。
 
 ## <a name="what-is-the-detailed-error-message"></a><a name="specificerrors"></a>详细的错误消息是什么？
 

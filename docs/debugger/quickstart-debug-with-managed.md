@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: b6b1bf99c7961c2ca8a9d162e2de173a9dd0a41c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9387d4a7ef763357d79b9d185e79de9229735afb
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112576"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635966"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -35,7 +35,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 
     应用语言和平台筛选器之后，对 .NET Core 选择“控制台应用”模板，然后选择“下一步” 。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
 
     如果没有看到 .NET Core 的“控制台应用”项目模板，请转到 “工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改”   。
     ::: moniker-end

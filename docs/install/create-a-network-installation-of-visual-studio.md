@@ -15,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6f7d0db6d1e8e526f7906ff940c07788fd4bd1b6
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: 978a6676acc32336646140ee38e75d499697a457
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094023"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635602"
 ---
 # <a name="create-a-network-installation-of-visual-studio"></a>创建 Visual Studio 的网络安装
 
@@ -295,7 +295,7 @@ vs_enterprise.exe --layout c:\VSLayout --all
 
 对于安装相关问题，我们还提供[安装聊天](https://visualstudio.microsoft.com/vs/support/#talktous)（仅限英语）支持选项  。
 
-我们还提供其他支持选项。 若要查看列表，请参阅[反馈](../ide/feedback-options.md)页面。
+我们还提供其他支持选项。 请参阅[开发人员社区](https://developercommunity.visualstudio.com/home)。
 
 ## <a name="see-also"></a>请参阅
 

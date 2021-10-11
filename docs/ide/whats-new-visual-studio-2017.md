@@ -18,12 +18,12 @@ ms.topic: conceptual
 ms.workload:
 - multiple
 monikerRange: vs-2017
-ms.openlocfilehash: a489aaef94f77fcca53402100ef4372c73fa6d00
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: bd8558309ac9c389c0254d21339fab4f9029ef51
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430888"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635745"
 ---
 # <a name="whats-new-in-visual-studio-2017"></a>Visual Studio 2017 中的新增功能
 
@@ -377,7 +377,7 @@ Visual Studio 2017 所有版本随附：
 
 为什么将反馈发送至 Visual Studio 团队？ 因为我们严肃对待客户反馈。 这会给予我们巨大的行事动力。
 
-如果有关于如何改进 Visual Studio 的建议，或想要详细了解产品支持选项，请参阅[向我们发送反馈](feedback-options.md)页。
+如果有关于如何改进 Visual Studio 的建议，或想要详细了解产品支持选项，请参阅[开发者社区](https://developercommunity.visualstudio.com/home)页。
 
 ### <a name="report-a-problem"></a>报告问题
 

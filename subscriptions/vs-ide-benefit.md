@@ -1,20 +1,20 @@
 ---
-title: Visual Studio 订阅中的 Visual Studio IDE 权益 | Microsoft Docs
+title: Visual Studio 订阅中的 Visual Studio IDE | Microsoft Docs
 author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 09/20/2021
+ms.date: 10/06/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: 1359523d747b38078db0cbf5e8d75d23c1048ba8
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 333ae5af74a4b91bb78194a5640df122f38412f5
+ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431330"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129598096"
 ---
-# <a name="the-visual-studio-2019-benefit"></a>Visual Studio 2019 权益
+# <a name="the-visual-studio-ide"></a>Visual Studio IDE
 
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
 

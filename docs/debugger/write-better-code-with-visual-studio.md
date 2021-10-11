@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f0052faee4e1701b843c71cc6e53dbf89adac7ae
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ea1c016caed0071e1a63ea9e21e33047a32cdb82
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035873"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635901"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>有助于编写更佳代码的调试技术和工具
 
@@ -54,7 +54,7 @@ ms.locfileid: "122035873"
     ::: moniker range=">=vs-2019"
     在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，然后对 .NET Core 选择一个“控制台应用” 。 选择“下一步”。 键入项目名称（如 Console_Parse_JSON），然后单击“下一步”或“创建”（视具体提供的选项而定）。
 
-    对于 .NET Core，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    对于 .NET Core，选择建议的目标框架或 .NET 6，然后选择“创建”。
 
     如果没有看到 .NET Core 的“控制台应用”项目模板，请转到 “工具” > “获取工具和功能...”，这会打开 Visual Studio 安装程序。 选择“.NET Core 跨平台开发”工作负载，然后选择“修改” 。
     ::: moniker-end

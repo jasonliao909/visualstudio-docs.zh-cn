@@ -96,12 +96,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: d332963ca50cd711400a19d935b4d810e755daab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 95a263e0c54a268755522e735552a80cd5f3a9eb
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048747"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635309"
 ---
 # <a name="resources-for-troubleshooting-ide-errors"></a>用于排除 IDE 错误的资源
 
@@ -127,7 +127,7 @@ ms.locfileid: "122048747"
 
 ## <a name="product-support"></a>产品支持
 
-如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 支持](https://support.microsoft.com/en-us)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅 [Visual Studio 反馈选项](../../ide/feedback-options.md)页面。
+如果借助其他资源仍不能解决问题，则可以访问 [Microsoft 支持](https://support.microsoft.com/en-us)网站，与 Microsoft 支持服务联系。 若要了解所在区域中可用的产品支持，请参阅[开发者社区](https://developercommunity.visualstudio.com/home)页。
 
 ## <a name="see-also"></a>请参阅
 

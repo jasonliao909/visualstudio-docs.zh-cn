@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 17ce0ac5667c3e44d16f01f9493a16c77aa1c7cd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3bc0af209930e385d315bfb95ae6b960439f6a05
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139028"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635394"
 ---
 # <a name="get-started-debugging-multithreaded-applications-c-visual-basic-c"></a>开始调试多线程应用程序（C#、Visual Basic、C++）
 
@@ -56,11 +56,11 @@ Visual Studio 提供多种工具和用户界面元素，用于调试多线程应
 
    在“配置新项目”窗口中，在“项目名称”框中键入或输入 MyThreadWalkthroughApp。 然后，选择“下一步”或“创建”，（视具体提供的选项而定）。
 
-   对于 .NET Core 项目，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5 ，然后选择“创建”。
+   对于 .NET Core 项目，选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，选择以下内容：
+   从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，选择以下内容：
 
    - 对于 C# 应用，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”  。
    - 对于 Visual Basic 应用，在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”    。

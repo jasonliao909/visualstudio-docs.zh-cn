@@ -9,19 +9,19 @@ f1_keywords:
 - uninstall
 - uninstall Visual Studio
 ms.assetid: 0e445255-b796-426d-ad93-a4d8e36da2c5
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 7d34a5be9598682982c3918aafec7725e59d6f92
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: deed1f2f145888567679adacfd28b74a057a556c
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306782"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560998"
 ---
 # <a name="uninstall-visual-studio"></a>卸载 Visual Studio
 
@@ -60,7 +60,7 @@ ms.locfileid: "112306782"
 
 若要从计算机中彻底删除 Visual Studio 2017 的所有安装内容和 Visual Studio 安装程序，请使用“应用和功能”进行卸载。
 
-1. 在 Windows 10 的“在此键入进行搜索”框中，键入“应用和功能”。
+1. 在 Windows 10 或更高版本的“在此键入进行搜索”框中，键入“应用和功能”。
 1. 查找“Microsoft Visual Studio 2017”（或“Visual Studio 2017”） 。
 1. 选择“卸载”。
 1. 然后，查找“Microsoft Visual Studio 安装程序”。
@@ -97,7 +97,7 @@ ms.locfileid: "112306782"
 
 若要从计算机中删除 Visual Studio 2019、Visual Studio 2022 和 Visual Studio 安装程序的所有安装内容，请使用“应用和功能”进行卸载。
 
-1. 在 Windows 10 的“在此键入进行搜索”框中，键入“应用和功能”。
+1. 在 Windows 10 或更高版本的“在此键入进行搜索”框中，键入“应用和功能”。
 1. 查找“Visual Studio 2019”或“Visual Studio 2022” 。
 1. 选择“卸载”。
 1. 然后，查找“Microsoft Visual Studio 安装程序”。

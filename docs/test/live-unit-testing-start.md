@@ -12,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - dotnet
-ms.openlocfilehash: 2041845ab82ec539ccaec0befd3275aeab7c0493
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d4de85b2ef12dc6dbaf9ca8ebea984cdfa14a9b0
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122148462"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635407"
 ---
 # <a name="get-started-with-live-unit-testing"></a>Live Unit Testing 入门
 
@@ -162,7 +162,7 @@ Live Unit Testing 可用于测试针对 .NET Framework 或 .NET Core 的解决�
 
 3. 将项目命名为“StringLibraryTests”，然后单击“下一步”。
 
-4. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+4. 选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    > [!NOTE]
    > 此入门教程使用 Live Unit Testing 的 MSTest 测试框架。 还可使用 xUnit 和 NUnit 测试框架。

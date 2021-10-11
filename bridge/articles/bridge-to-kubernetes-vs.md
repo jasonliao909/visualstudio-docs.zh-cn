@@ -9,14 +9,14 @@ keywords: Bridge to Kubernetes, Azure Dev Spaces, Dev Spaces, Docker, Kubernetes
 ms.author: ghogen
 author: ghogen
 manager: jmartens
-ms.openlocfilehash: 6c4bc294b79f344a2e452d2bd2c84142550eb82c
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 2be3c39f98b4127bf27801797beea35a1ec9f29f
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334579"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560965"
 ---
-# <a name="tutorial-use-bridge-to-kubernetes-to-connect-your-clusters-and-your-development-computers"></a>教程：使用 Bridge to Kubernetes 连接群集和开发计算机
+# <a name="use-bridge-to-kubernetes-visual-studio"></a>使用 Bridge to Kubernetes (Visual Studio)
 
 在本教程中，你将了解如何使用 Bridge to Kubernetes 来重定向 Kubernetes 群集与开发计算机上运行的代码之间的流量。 
 
@@ -27,7 +27,7 @@ ms.locfileid: "122334579"
 ## <a name="prerequisites"></a>先决条件
 
 - 一个 Kubernetes 群集
-- 在 Windows 10 上运行的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。
+- 在 Windows 10 或更高版本上运行的 [Visual Studio 2019][visual-studio] 版本 16.7 预览版 4 或更高版本。
 - [已安装 Bridge to Kubernetes 扩展][btk-extension]
 
 ## <a name="about-the-data"></a>关于数据

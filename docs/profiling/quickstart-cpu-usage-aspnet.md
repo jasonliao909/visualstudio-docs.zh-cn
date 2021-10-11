@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 21fabf6bbb490ebf97ef2e808ce4448f106fe469
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3e3b9207536073b2ca42d4b0e488a7374a6dbfb1
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131256"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635849"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入门：在 Visual Studio 中分析 CPU 使用率数据 (ASP.NET Core)
 
@@ -47,7 +47,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
    在搜索框中键入“Web 应用”，选择“C#”作为语言，选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，将项目命名为“MyProfilingApp_MVC”，然后选择“下一步”。
 
-   选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+   选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    > [!NOTE]
    > 如果未看到“ASP.NET Web 应用程序(.NET Core)”模板，则可以从“创建新项目”窗口安装该模板   。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。 然后，在 Visual Studio 安装程序中，选择“ASP.NET 和 Web 开发”工作负载  。

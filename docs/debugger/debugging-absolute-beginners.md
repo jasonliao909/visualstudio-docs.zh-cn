@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: d7285648ad1cb9f93dd11f5374f1eb2cf8ecbfdd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d9fa7fd2c3d0a69f7a52fabc57fae54ee53ae688
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065775"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635563"
 ---
 # <a name="how-to-debug-for-absolute-beginners"></a>零基础调试的方法
 
@@ -88,7 +88,7 @@ ms.locfileid: "122065775"
     ::: moniker range=">=vs-2019"
     在“开始”窗口上，选择“创建新项目”  。 在搜索框中键入“控制台”，选择“C#”或“Visual Basic”作为语言，然后对 .NET Core 选择“控制台应用”   。 选择“下一步”。 键入项目名称（如 ConsoleApp_FirstApp），然后单击“下一步” 。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，在“Visual C#”或“Visual Basic”下，选择“控制台应用”，然后在中间窗格中选择一个“控制台应用(.NET Core)”    。 键入名称（如 ConsoleApp_FirstApp），然后单击“确定” 。

@@ -2,7 +2,7 @@
 title: 管理 npm 包
 description: Visual Studio 可帮助你使用 Node.js 包管理器 (npm) 来管理包
 ms.custom: seodec18
-ms.date: 02/23/2021
+ms.date: 10/1/2021
 ms.topic: how-to
 ms.devlang: javascript
 author: mikejo5000
@@ -13,24 +13,47 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 8735310b0c1729cec7a10d51c9708ccb18205bc2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 46b5284f91fdce4b073f8ac7b8e78569b353452c
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122048175"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560892"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 
-可以使用 npm 来安装和管理要在 Node.js 应用程序中使用的包。 使用 Visual Studio 可轻松地通过 UI 或直接与 npm 交互并发出 npm 命令。 如果不熟悉 npm 并想要详细了解，请转到 [npm 文档](https://docs.npmjs.com/)。
+可以使用 npm 来安装和管理要在 Node.js 和 ASP.NET Core 应用程序中使用的包。 使用 Visual Studio 可轻松地通过 UI 或直接与 npm 交互并发出 npm 命令。 如果不熟悉 npm 并想要详细了解，请转到 [npm 文档](https://docs.npmjs.com/)。
 
 Visual Studio 与 npm 的集成因项目类型而异。
+::: moniker range=">=vs-2022"
+* [基于 CLI 的项目 (.esproj)](#cli-based-project-esproj)
 * [Node.js](#nodejs-projects)
 * [ASP.NET Core](#aspnet-core-projects)
 * [打开文件夹 (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
+::: moniker-end
+
+::: moniker range="<=vs-2019"
+* [Node.js](#nodejs-projects)
+* [ASP.NET Core](#aspnet-core-projects)
+* [打开文件夹 (Node.js)](../javascript/develop-javascript-code-without-solutions-projects.md)
+::: moniker-end
 
 > [!Important]
 > npm 在项目根目录中需要 node_modules 文件夹和 package.json   。 如果应用的文件夹结构不同，并且希望使用 Visual Studio 来管理 npm 包，则可以修改文件夹结构。
+
+::: moniker range=">=vs-2022"
+## <a name="cli-based-project-esproj"></a>基于 CLI 的项目 (.esproj)
+
+从 Visual Studio 2022 预览版 4 开始，npm 包管理器可用于基于 CLI 的项目，因此现在可以采用为 ASP.NET Core 项目下载 NuGet 包的方式下载 npm 模块。 然后可以使用 package.json 来修改和删除包。
+
+要打开包管理器，请在解决方案资源管理器中右键单击项目中的 npm 节点。
+
+:::image type="content" source="../javascript/media/vs-2022/npm-packages-open-manager-esproj.png" alt-text="从解决方案资源管理器中打开包管理器" border="true":::
+
+接下来可以搜索 npm 包，选择一个包，然后选择“安装包”进行安装。 
+
+:::image type="content" source="../javascript/media/vs-2022/npm-packages-install-esproj.png" alt-text="为 esproj 安装新的 npm 包" border="true":::
+::: moniker-end
 
 ## <a name="nodejs-projects"></a>Node.js 项目
 
@@ -52,7 +75,7 @@ Visual Studio 与 npm 的集成因项目类型而异。
 
 对于 Node.js 项目，安装 npm 包的最简单方法是通过 npm 包安装窗口。 若要访问此窗口，右键单击项目中的“npm”节点并选择“安装新的 npm 包”   。
 
-:::image type="content" source="../javascript/media/solution-explorer-install-package.png" alt-text="从解决方案资源管理器安装新的 npm 包" border="true":::
+:::image type="content" source="../javascript/media/solution-explorer-install-package.png" alt-text="为 Node.js 安装新的 npm 包" border="true":::
 
 在此窗口中可以搜索包、指定选项并安装。
 

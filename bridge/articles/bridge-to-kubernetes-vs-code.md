@@ -5,17 +5,17 @@ author: ghogen
 manager: jmartens
 ms.technology: bridge
 ms.custom: contperf-fy22q1
-title: 使用 Bridge to Kubernetes 在本地运行和调试 Kubernetes
+title: 使用 Bridge to Kubernetes 在本地运行和调试 Kubernetes (VS Code)
 ms.date: 04/14/2021
 description: 了解如何使用 Bridge to Kubernetes将开发计算机连接到 Kubernetes 群集，并使用本地隧道调试在本地计算机上调试 Kubernetes 服务。
-ms.openlocfilehash: 4b9c3f534fd24b284be5911936282b1f274f1a3b
-ms.sourcegitcommit: f930bc28bdb0ba01d6f7cb48f229afecfa0c90cd
+ms.openlocfilehash: 4e6117dc3b449f964feea367ab6de920f2e88259
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/18/2021
-ms.locfileid: "122334585"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561010"
 ---
-# <a name="use-bridge-to-kubernetes"></a>使用 Bridge to Kubernetes
+# <a name="use-bridge-to-kubernetes-vs-code"></a>使用 Bridge to Kubernetes (VS Code)
 
 通过 Bridge to Kubernetes，你可在开发计算机上运行和调试代码，而不中断 Kubernetes 群集与其余应用程序或服务的连接。 本指南介绍如何使用 Bridge to Kubernetes 来重定向 Kubernetes 群集与开发计算机上运行的代码之间的流量。
 
@@ -26,7 +26,7 @@ ms.locfileid: "122334585"
 ### <a name="prerequisites"></a>必备条件
 
 * 一个包含要调试的应用的 Kubernetes 群集。
-* 在 macOS、Windows 10 或 Linux 上运行的 [Visual Studio Code][vs-code]（目前处于预览状态）。
+* 在 macOS、Windows 10 或更高版本或 Linux 上运行的 [Visual Studio Code][vs-code]。
 
 ## <a name="connect-to-your-cluster-and-debug-a-service"></a>连接到群集并调试服务
 
@@ -72,7 +72,7 @@ ms.locfileid: "122334585"
 
 ![输入端口号](media/bridge-to-kubernetes-sample/enter-port.png)
 
-选择你在本地运行应用程序时通常使用的调试启动配置。 如果没有启动配置，可以让 Bridge to Kubernetes 创建一个启动配置，也可以选择不创建启动配置，在这种情况下必须手动启动应用程序或服务。 有关详细信息，请参阅[启动配置](/docs/editor/debugging.md#launch-configurations)。
+选择你在本地运行应用程序时通常使用的调试启动配置。 如果没有启动配置，可以让 Bridge to Kubernetes 创建一个启动配置，也可以选择不创建启动配置，在这种情况下必须手动启动应用程序或服务。 有关详细信息，请参阅[启动配置](https://code.visualstudio.com/docs/editor/debugging#_launch-configurations)。
 
 ![选择调试器启动配置](media/bridge-to-kubernetes-vs-code/choose-launch.png)
 
