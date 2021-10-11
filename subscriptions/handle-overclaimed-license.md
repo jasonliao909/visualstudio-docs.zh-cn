@@ -1,18 +1,18 @@
 ---
 title: 处理 Visual Studio 订阅中许可证超额分配的问题 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: a747100c-6f08-41a4-aaad-05099741742b
-ms.date: 03/21/2021
+ms.date: 05/18/2021
 ms.topic: conceptual
 description: 了解管理员可如何解决订阅超额分配的问题
-ms.openlocfilehash: d92671a3478fd8044b959c56f3201df5ff5c5a85
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.openlocfilehash: bb545d6bef8f50e1548e31ad6db73a84e6804f53
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776553"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429509"
 ---
 # <a name="over-allocated-subscriptions"></a>超额分配的订阅
 有时，添加订阅者后，订单发生变化，这可能会导致已分配的订阅数量超过公司拥有的许可证数量。 这称为“超额分配”。  
@@ -26,6 +26,9 @@ ms.locfileid: "104776553"
 > ![透支订阅通知](_img/over-claimed/over-claimed-alert.png "“概述”中列出了超额分配的数量，由每个订阅类型的关系图上经过哈希处理的条形表示。")
 
 请注意，显示项使用经过哈希处理的条形来表示超额分配的订阅。  所有订阅类型的超额分配数都包含在顶部的“概述”部分，而每个订阅级别还会显示它自己的分配状态。  
+
+## <a name="receive-notifications-when-over-allocations-occur"></a>在发生超额分配时接收通知
+你可以指定一个电子邮件地址，以便在发生超额分配时接收通知，还可以设置在发送通知之前必须超过的阈值。  详细了解[如何在管理门户中设置协议的首选项](admin-preferences.md)。
 
 ## <a name="resolve-over-allocated-subscriptions"></a>解决超额分配的订阅
 下面是解决超额分配问题的几种方式：

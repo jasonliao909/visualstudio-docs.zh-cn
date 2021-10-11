@@ -2,7 +2,7 @@
 title: 高级功能
 description: 了解高级功能，这些功能可能更适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。
 ms.custom: vs-acquisition
-ms.date: 09/14/2021
+ms.date: 09/30/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,16 +10,16 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f49880b280bca3a627fcf497246de2c0d0924852
-ms.sourcegitcommit: c2afe12aaf04456846613550b367cf86eb082f4b
+ms.openlocfilehash: ba968817c30aef06b03568c2f40d0e2cc30dfe49
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "128004592"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129339894"
 ---
 # <a name="features-of-visual-studio"></a>Visual Studio 的功能
 
-本文介绍的功能适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。 有关 Visual Studio 的基本简介，请参阅 [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)。 
+本文介绍的功能适合有经验的开发人员或已熟悉 Visual Studio 的开发人员。 有关 Visual Studio 的基本简介，请参阅 [Visual Studio IDE 概述](../get-started/visual-studio-ide.md)。
 
 ## <a name="modular-installation"></a>模块化安装
 
@@ -127,6 +127,7 @@ SQL Server 对象资源管理器提供类似于 SQL Server Management Studio 中
 ::: moniker-end
 
 ::: moniker range=">=vs-2022"
+
 若要打开“SQL Server 对象资源管理器”，请选择“服务器资源管理器”窗口顶部的图标，或从 Visual Studio 顶部菜单中选择“视图”>“SQL Server 对象资源管理器”。
 
 :::image type="content" source="media/vs-2022/sql-server-object-explorer.png" alt-text="显示“SQL Server 对象资源管理器”窗口的屏幕截图。" border="false":::
@@ -151,15 +152,31 @@ Visual Studio 具有可用于通过 Microsoft Store、SharePoint 站点或者 In
 
 ## <a name="manage-your-source-code-and-collaborate-with-others"></a>管理源代码并与他人协作
 
-在 Visual Studio 中，可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。
+在 Visual Studio 中，可以在任意提供商（包括 GitHub）托管的 Git 存储库中管理源代码。 还可以通过浏览来查找要连接到的 Azure DevOps Server。
+
+::: moniker range=">=vs-2022"
+
+如需完整的详细信息，请参阅 [Visual Studio 中的 Git 体验](../version-control/git-with-visual-studio.md)页和 [Visual Studio 版本控制文档](../version-control/index.yml)导航页。 另外，有关如何使用 Visual Studio 连接到 Git 或 Azure DevOps 存储库的分步教程，请参阅[从存储库打开项目](../get-started/tutorial-open-project-from-repo.md?view=vs-2022&preserve-view=true)页。
+
+> [!TIP]
+> 我们会继续构建 Git 功能集，并根据你的反馈对它进行迭代。 若要获取有关最新功能更新的详细信息以及可在其中共享反馈的调查的链接，请参阅 [Visual Studio 中的多存储库支持](https://devblogs.microsoft.com/visualstudio/multi-repo-support-in-visual-studio/)博客文章。
+
+::: moniker-end
+
+::: moniker range="vs-2019"
+
+使用 Visual Studio 2019 打开 GitHub 存储库中的项目的方式取决于你拥有的版本。 具体来说，如果你已安装 [16.8 版本](/visualstudio/releases/2019/release-notes/)或更高版本，则 Visual Studio 中提供了一个更完全集成的新 [Git 体验](../ide/git-with-visual-studio.md)供你使用。 有关详细信息，请参阅 [Visual Studio 版本控制文档](../version-control/index.yml)页。
+
+另外，有关如何使用 Visual Studio 连接到 Git 或 Azure DevOps 存储库的分步教程，请参阅[从存储库打开项目](../get-started/tutorial-open-project-from-repo.md?view=vs-2019&preserve-view=true)页。
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
-若要详细了解其他 Visual Studio 内置源代码管理功能，请参阅博客文章[在 Visual Studio 中新增 Git 功能](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)。
-::: moniker-end
+
+若要详细了解如何在 Visual Studio 中使用团队资源管理器管理 Git 存储库，请参阅[开始使用 Git 和 Azure Repos](/azure/devops/repos/git/gitquickstart?tabs=visual-studio)。 若要详细了解 Visual Studio 内置源代码管理功能，请参阅 [Visual Studio 中的 Git 功能](https://devblogs.microsoft.com/devops/new-git-features-in-visual-studio-2017/)博客文章。
 
 [Azure DevOps Services](/azure/devops/index) 是一套基于云的服务，用于规划、托管、自动化和部署软件以及提升团队协作。 DevOps Services 支持 GitHub 分布式版本控制和 Team Foundation 版本控制 (TFVC) 集中式版本控制。 DevOps Services 为版本控制系统中存储的代码提供持续生成和发布 (CI/CD) 管道。 DevOps Services 还支持 Scrum、CMMI 和敏捷开发方法。 可以使用 DevOps Services 管理项目的代码、Bug 和工作项。
 
-::: moniker range="<=vs-2019"
 Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理中心。 它使用单个解决方案，使开发过程中涉及的所有人均可参与该开发过程。 TFS 对于管理异类团队和项目也非常有用。
 
 可以通过 Visual Studio“团队资源管理器”窗口在网络中连接到 Azure DevOps 组织或 Team Foundation Server。 可在“团队资源管理器”窗口中将代码签入（出）源控件、管理工作项、启动生成以及访问团队聊天室和工作区。 若要打开“团队资源管理器”，请使用搜索框，或选择“视图” > “团队资源管理器”。
@@ -167,20 +184,14 @@ Team Foundation Server (TFS) 是 Visual Studio 的应用程序生命周期管理
 下图展示了 Azure DevOps Services 中托管的解决方案的“团队资源管理器”窗口。
 
 ![连接到项目的 Visual Studio“团队资源管理器”窗口的屏幕截图。](../ide/media/vs2017_teamexplorer_devops.png)
-::: moniker-end
 
-::: moniker range=">=vs-2022"
 Azure DevOps 是 Visual Studio 的应用程序生命周期管理中心。 Azure DevOps 使用单个解决方案，使开发过程中涉及的所有人均可参与该开发过程。 Azure DevOps 对于管理异类团队和项目也非常有用。
 
-可以通过 Visual Studio“团队资源管理器”窗口在网络中连接到 Azure DevOps 组织或 Azure DevOps Server。 可在“团队资源管理器”窗口中将代码签入（出）源控件、管理工作项、启动生成以及访问团队聊天室和工作区。 若要打开“团队资源管理器”，请使用搜索框，或选择“视图” > “团队资源管理器”。
-
-下图展示了 Azure DevOps Services 中托管的解决方案的“团队资源管理器”窗口。
-
-:::image type="content" source="media/vs-2022/team-explorer.png" alt-text="连接到项目的 Visual Studio“团队资源管理器”窗口的屏幕截图。" border="false":::
-
-::: moniker-end
+可以通过 Visual Studio 中的“团队资源管理器”窗口在网络中连接到 Azure DevOps 组织或 Azure DevOps Server。 可在“团队资源管理器”窗口中将代码签入（出）源控件、管理工作项、启动生成以及访问团队聊天室和工作区。 若要打开“团队资源管理器”，请使用搜索框，或选择“视图” > “团队资源管理器”。
 
 你还可以自动执行生成过程，以生成开发人员签入到版本控制的代码。 例如，你可以在夜间或每次签入某个代码时生成一个或多个项目。 有关详细信息，请参阅 [Azure Pipelines](/azure/devops/pipelines/index?view=vsts&preserve-view=true)。
+
+::: moniker-end
 
 ## <a name="next-steps"></a>后续步骤
 

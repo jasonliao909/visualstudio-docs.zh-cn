@@ -1,18 +1,17 @@
 ---
-title: 将许可证分配给 Visual Studio 订阅的用户组 | Microsoft Docs
+title: 将 Visual Studio 订阅分配给多个用户 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
-ms.assetid: c2853359-18fd-4be4-97a6-02230c862f92
-ms.date: 03/21/2021
-ms.topic: how-to
-description: 了解管理员如何使用批量添加功能或 Microsoft Azure Active Directory 组将许可证分配给多个订阅者
-ms.openlocfilehash: 4744f689e9b03e4a6cf8c804409abddfde16c527
-ms.sourcegitcommit: d7d9fb79448b3534923cc95071d1f91eabde88e8
+ms.date: 03/19/2021
+ms.topic: conceptual
+description: 了解管理员如何一次分配多个订阅。
+ms.openlocfilehash: 813c2caecb5e54ba0ed0a4f4196be84105aa3722
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/22/2021
-ms.locfileid: "104776891"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127833014"
 ---
 # <a name="assign-subscriptions-to-multiple-users"></a>将订阅分配给多个用户
 你可以在订阅管理门户中一次添加一个多个用户，也可以采用大用户组形式添加。  要添加各个用户，请参阅[添加单个用户](assign-license.md)。
@@ -84,7 +83,6 @@ ms.locfileid: "104776891"
 > 以下限制适用于使用 Azure AD 组添加订阅者的情况：
 > - 在最初将组添加到管理门户时，管理员必须是 AAD 租户的成员。  添加组后，对组成员身份进行更改不需要管理员参与。 
 > - 组必须至少包含一个成员。  不支持空组。
-> - 组中的用户数必须少于 1,000 个。 
 > - 所有用户都必须处于组的顶层。  不支持嵌套组。
 > - 仅支持受信任协议。 （只有能够“过度分配”订阅的协议才是受信任的。）
 > - 组的所有成员都必须具有与其 Azure AD 帐户关联的电子邮件地址。
@@ -124,11 +122,6 @@ ms.locfileid: "104776891"
 
 
 ## <a name="frequently-asked-questions"></a>常见问题
-### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-ad-group"></a>问：能否选择要在 Azure AD 组内分配的多个订阅级别？ 
-答：不能。组中的每个人都会收到相同的订阅。 
-
-### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-ad-group"></a>问：能否编辑 Azure AD 组中添加的成员的订阅者详细信息？  
-答：不能。要修改单个订阅者的信息，需要将其从 Azure AD 安全组中删除，并分别为其分配订阅。  
 
 ### <a name="q-why-cant-i-see-the-option-to-use-azure-active-directory-groups-to-add-subscribers"></a>问：为何看不到使用 Azure Active Directory 组来添加订阅者的选项？
 答：此功能目前仅适用于具有受信任的协议的组织。  选择“详细信息”按钮以显示你的协议信息。
@@ -136,8 +129,20 @@ ms.locfileid: "104776891"
    > [!div class="mx-imgBorder"]
    > ![单击“详细信息”按钮](_img/assign-license-bulk/bulk-add-agreement.png "单击“详细信息”按钮以查看你拥有的协议类型")
 
-### <a name="q-i-added-someone-to-my-azure-ad-security-group-but-i-dont-see-them-added-in-the-subscriptions-administration-portal-and-they-dont-have-a-subscription-why-not"></a>问：我已将某人添加到我的 Azure AD 安全组，但我在订阅管理门户中看不到该用户，而且该用户没有订阅。 为什么看不到？  
-答：根据组织对 Azure AD 的配置，在看到已添加的用户之前，可能存在延迟（最多可能有 24 小时）。 如果超过 24 小时，请访问 [Visual Studio 管理和订阅支持](https://my.visualstudio.com/gethelp)。  
+### <a name="q-i-added-users-to-my-azure-active-directory-group-but-they-dont-have-subscriptions-yet-why"></a>问：我向我的 Azure Active Directory 组添加了用户，但这些用户还没有订阅。 为什么？ 
+答：如果更改是直接在 Azure Active Directory 中进行的，则应该会非常快速地分配订阅，但如果更改是在本地 Active Directory 中进行的，则首先需要将其同步到 Azure Active Directory。 更改可能需要长达 24 小时才能反映出来，具体取决于本地 Active Directory 的配置。 如果时间已超过 24 小时，我们的[支持团队可以帮助排查任何问题](https://aka.ms/vsadminhelp)。 
+
+### <a name="q-can-i-choose-multiple-subscription-levels-to-be-assigned-within-an-azure-active-directory-group"></a>问：能否选择多个要在 Azure Active Directory 组内分配的订阅级别？
+答：不能。组中的每个人都会收到相同的订阅级别。
+
+### <a name="q-can-i-edit-subscriber-details-of-individuals-added-in-an-azure-active-directory-group"></a>问：能否编辑在 Azure Active Directory 组中添加的成员的订阅者详细信息？
+答：不能。若要修改单个订阅者的信息，需要将其从 Azure Active Directory 安全组中删除，并单独为其分配订阅。
+
+### <a name="q-can-i-add-separate-notification-email-addresses-for-members-of-an-azure-active-directory-group"></a>问：能否为 Azure Active Directory 组的成员添加单独的通知电子邮件地址？
+答：不能。对于使用 Azure Active Directory 组添加的订阅，目前不支持对通知使用不同的电子邮件地址。 所有电子邮件都会发送到主电子邮件（用户主体名称）。
+
+## <a name="resources"></a>资源
+- [Visual Studio 管理和订阅支持](https://aka.ms/vsadminhelp)
 
 ## <a name="see-also"></a>请参阅
 - [Visual Studio 文档](/visualstudio/)
@@ -146,5 +151,4 @@ ms.locfileid: "104776891"
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-- 只有一两个订阅者要添加？  请查阅[添加单个用户](assign-license.md)
-- 需要帮助？ 联系[订阅支持](https://aka.ms/vsadminhelp)。
+- 只有一两个订阅者要添加？ 请查阅[添加单个用户](assign-license.md)

@@ -1,7 +1,7 @@
 ---
 title: 使用 Vue 创建 ASP.NET Core 应用
 description: 在本教程中，使用 ASP.NET Core 和 Vue 创建应用
-ms.date: 08/09/2021
+ms.date: 09/28/2021
 ms.topic: tutorial
 ms.devlang: javascript
 author: mikejo5000
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 50ee00867e6729c269753edeb0cdfa44f3215c3f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1a6c2fed5fdcbb10c186bc8f2d20b6e68e0a2c29
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027890"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129339609"
 ---
 # <a name="tutorial-create-an-aspnet-core-app-with-vue-in-visual-studio"></a>教程：在 Visual Studio 中使用 Vue 创建 ASP.NET Core 应用
 
@@ -76,6 +76,21 @@ ms.locfileid: "122027890"
    创建项目后，解决方案资源管理器应如下所示：
 
    :::image type="content" source="media/vs-2022/asp-net-core-with-vue-solution-explorer.png" alt-text="查看解决方案资源管理器":::
+
+1. 从 Properties 文件夹打开 `launchSettings.json`，然后在后端应用的 profiles 节下将默认端口更改为 5001 和 5003。
+
+   ```json
+   "profiles": {
+     "yourbackendapp": {
+       "commandName": "Project",
+       "launchUrl": "swagger",
+       "environmentVariables": {
+         "ASPNETCORE_ENVIRONMENT": "Development"
+       },
+       "applicationUrl": "https://localhost:5001;http://localhost:5003",
+       "dotnetRunMessages": true
+     },
+   ```
 
 ## <a name="set-the-project-properties"></a>设置项目属性
 
