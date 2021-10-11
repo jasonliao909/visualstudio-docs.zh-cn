@@ -1,18 +1,18 @@
 ---
 title: Visual Studio 订阅中的 LinkedIn 学习权益 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 5bba2205-d32f-413d-9b58-724a24993842
 ms.date: 03/17/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中包含的作为 LinkedIn Premium 订阅一部分的 LinkedIn Learning 权益。
-ms.openlocfilehash: dcf242dc09c833b091454ea1863184229e3b71c0
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: c56b00e078e014060570fcf4ab3f06220ab889c2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672912"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128375689"
 ---
 # <a name="the-linkedin-learning-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 LinkedIn Learning 权益
 
@@ -67,6 +67,9 @@ ms.locfileid: "104672912"
    > [!div class="mx-imgBorder"]
    > ![LinkedIn Learning：主页](_img/vs-linkedin/vs-linkedin-learning-home.png "欢迎使用包含 LinkedIn Learning 的 LinkedIn Premium！")
 
+> [!NOTE]
+> 此套餐不包含在 Visual Studio Dev Essentials 成员资格中。
+
 ## <a name="eligibility"></a>资格
 
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
@@ -79,7 +82,7 @@ ms.locfileid: "104672912"
 | MSDN 平台（标准）                                          | VL、零售                                              | 不可用                                              | NA         |
 | Visual Studio Enterprise、Visual Studio Professional（月度云） | Azure                                       | 不可用                                                           |NA|
 
-<sup>1</sup> 不包括：NFR、NFR Basic、Visual Studio 行业合作伙伴、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域总监 (RD)。MCT 软件和服务。
+<sup>1</sup> 不包括：Visual Studio Dev Essentials、NFR、NFR Basic、Visual Studio 行业合作伙伴、Microsoft 合作伙伴网络 (MPN)、FTE、MCT 软件和服务开发人员、BizSpark、Imagine、最有价值专家 (MVP)、区域主管 (RD)；MCT 软件和服务。
 
 > [!NOTE]
 > Microsoft 不再在云订阅中提供 Visual Studio Professional 年度订阅和 Visual Studio Enterprise 年度订阅。 现有客户体验以及续订、增加、减少或取消订阅的能力不会发生变化。 建议新客户访问 [https://visualstudio.microsoft.com/vs/pricing/](https://visualstudio.microsoft.com/vs/pricing/)，查看各 Visual Studio 购买选项。

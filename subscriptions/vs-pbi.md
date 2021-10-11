@@ -1,25 +1,25 @@
 ---
 title: Visual Studio 订阅中的 Power BI Pro 权益 | Microsoft Docs
 author: evanwindom
-ms.author: v-evwin
+ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 383fc910-3f4c-474a-a3f8-0f13525f05e9
-ms.date: 03/17/2021
+ms.date: 08/26/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 Power BI Pro 订阅。
-ms.openlocfilehash: 1801ed8deae3294837078401420e16efdc016979
-ms.sourcegitcommit: 3fc099cdc484344c781f597581f299729c6bfb10
+ms.openlocfilehash: 92a276deaebd7f0d008caca6dc1fad24b4e9542e
+ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104672899"
+ms.lasthandoff: 09/13/2021
+ms.locfileid: "127831688"
 ---
 # <a name="power-bi-pro-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Power BI Pro
 
 将数据转换为丰富的视觉对象，便于你进行收集和组织。
 
 > [!Note]
-> 此 Power BI 许可证可用于在安全环境中了解和试验 Power BI 功能，而不会影响更大的生产/开发/测试环境。  当前的 Power BI 版本要求，订阅者必须创建自己的租户，才能强制执行分隔。 如果需要公司租户中有与公司凭据相关联的 Power BI 许可证，请与公司管理员合作，共同购买和分配许可证。
+> 此 Power BI 许可证可用于在安全环境中了解和试验 Power BI 功能，而不会影响更大的生产/开发/测试环境。  若要强制实施分离，Power BI 的当前产品/服务会要求订阅者将 Power BI 添加到其自己的租户或新建一个。 如果需要公司租户中有与公司凭据相关联的 Power BI 许可证，请与公司管理员合作，共同购买和分配许可证。
 
 ## <a name="activation-steps"></a>激活步骤
 若要使用 Power BI Pro，需要设置一个帐户或使用现有帐户登录。
