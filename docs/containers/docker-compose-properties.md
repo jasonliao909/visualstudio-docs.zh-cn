@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 04/06/2021
 ms.technology: vs-container-tools
 ms.topic: reference
-ms.openlocfilehash: e165f25d8f757bbf60cd7b71e9ebd9e411b98c74
-ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
+ms.openlocfilehash: b541568567d7af7002ecf576700099fec1aeb2d7
+ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129439712"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129595126"
 ---
 # <a name="docker-compose-build-properties"></a>Docker Compose 生成属性
 
@@ -96,10 +96,10 @@ services:
 
 ## <a name="overriding-visual-studios-docker-compose-configuration"></a>替代 Visual Studio 的 Docker Compose 配置
 
-Docker 为替代标准 Docker Compose 设置而提供的正常方法是使用 docker-compose.override.debug.yml 和 docker-compose.override.release.yml 文件，但不能在这些文件中覆盖特定于 Visual Studio 的设置。 可以替代 Visual Studio 设置，具体方法是将名为 docker-compose.vs.debug.yml（对于“Fast”模式）或 docker-compose.vs.release.yml（对于“Regular”模式）的文件放置在与 docker-compose.yml 文件相同的目录中。 使用文件资源管理器创建文件，然后使用“添加” > “现有项”将文件添加到 docker-compose 项目。
+通常 docker-compose.override.yml 用于替代 docker-compose.yml 中的某些设置 。 此外，Visual Studio 生成替代文件 docker-compose.vs.debug.g,yml（用于“Fast”模式）和 docker-compose.vs.release.g.yml（用于“Regular”模式）文件，这些文件中的设置专用于在 Visual Studio 中运行应用程序。 可以替代这些 Visual Studio 设置，具体方法是将名为 docker-compose.vs.debug.yml（对于“Fast”模式）或 docker-compose.vs.release.yml（对于“Regular”模式）的文件放置在与 docker-compose.yml 文件相同的目录中。 右键单击 docker-compose 项目并选择“打开文件资源管理器中的文件夹”，然后使用“添加” > “现有项”，将文件添加到 docker-compose 项目中。
 
 >[!TIP] 
->若要找出任意 Visual Studio 设置的默认值，请直接查看 docker-compose.vs.debug.g.yml 或 docker-compose.vs.release.g.yml 的中间输出（例如，obj/Docker）。 这些文件由 Visual Studio 生成，不应进行修改。
+>若要找出任意 Visual Studio 设置的默认值，请查看 docker-compose.vs.debug.g.yml 或 docker-compose.vs.release.g.yml 的中间输出目录（例如，obj/Docker）。 这些文件由 Visual Studio 生成，不应进行修改。
 
 ### <a name="docker-compose-file-labels"></a>Docker Compose 文件标签
 

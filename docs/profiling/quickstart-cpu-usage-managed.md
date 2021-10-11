@@ -13,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: d3902d8119b8de8eba49cf28a7730cc41d505438
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1450cea98601c551545fb74f7aa925701f43068f
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122107064"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635836"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（C#、Visual Basic）
 
@@ -53,7 +53,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
 
    在“配置新项目”窗口中，在“项目名称”框中键入或输入“MyProfilerApp”    。 然后，选择“下一步”。
 
-   选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+   选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    ::: moniker-end
 

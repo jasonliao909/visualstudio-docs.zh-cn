@@ -23,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4663892ef011841ed401331009c2d8f05b63814a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9e42a6640c2709ccabf7ca2c6a9987e29f31d095
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133882"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635953"
 ---
 # <a name="walkthrough-debugging-a-parallel-application-in-visual-studio-c-visual-basic-c"></a>演练：在 Visual Studio 中调试并行应用程序（C#、Visual Basic、C++）
 
@@ -80,11 +80,11 @@ ms.locfileid: "122133882"
 
    在“配置新项目”窗口中，在“项目名称”框中键入名称或使用默认名称 。 然后，选择“下一步”或“创建”（视具体提供的选项而定）。
 
-   对于 .NET Core，选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+   对于 .NET Core，选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    ::: moniker-end
    ::: moniker range="vs-2017"
-   从顶部菜单栏中选择“文件” > “新建” > “项目”。 在“新建项目”对话框的左窗格中，选择以下内容：
+   从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左窗格中，选择以下内容：
 
    - 对于 C# 应用，在“Visual C#”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”  。
    - 对于 Visual Basic 应用，在“Visual Basic”下，选择“Windows 桌面”，然后在中间窗格中选择“控制台应用(.NET Framework)”    。

@@ -2,62 +2,37 @@
 title: Visual Studio 订阅中的新增功能
 description: 了解可用于管理 Visual Studio 订阅的新功能和更新功能。
 ms.custom: ''
-ms.date: 04/01/2020
+ms.date: 10/05/2021
 ms.topic: conceptual
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: cabuschl
+manager: cabuschl
 ms.assetid: 2dc938b5-37e9-4dfc-8676-5d0a91d366ab
-ms.openlocfilehash: b04a99ffc35a61ecb92ac2401a08669afd84f551
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: d3aa2a5231f802b45b81d0775e4f92d0d26ba9b0
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375631"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561121"
 ---
 # <a name="what39s-new-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的新增功能
 
-我们会经常更新订阅权益包以使其更加有用。 我们还将对订阅者门户和订阅管理门户进行改进，竭尽所能为你提供最佳体验。  继续阅读，了解按季度排序的最新功能和更新。
+我们会经常更新订阅权益包以使其更加有用。 我们还将对订阅者门户和订阅管理门户进行改进，竭尽所能为你提供最佳体验。  我们还会生成新内容来解答用户问题和反映所作的更改。  继续阅读，了解按季度排序的最新功能和更新。
 
-## <a name="2020-q1-january-march"></a>2020 年第 1 季度（1 月 - 3 月）
+## <a name="2021-q3-july---september"></a>2021 年第 3 季度（7 月 - 9 月）
 
-### <a name="subscriptions-administration-portal"></a>订阅管理门户
-2020 年的第 1 季度在 https://manage.visualstudio.com 中提供 Visual Studio 订阅管理门户的新外观和一些新增功能。 对门户进行的更改包括新的配色方案和对某些工具的重新排列。  订阅分配概述、协议详细信息和最大使用量现由左上角的按钮控制。  这有助于最大限度地提高用于进行最常见的管理任务（如分配和编辑订阅）的可用屏幕空间。  
+### <a name="information-about-the-impacts-of-expired-subscriptions"></a>有关过期订阅影响的信息
+我们新添了一篇文章，其中详细说明了[订阅过期](subscription-expiration.md)对订阅者的影响。  了解权益更改、产品密钥访问权限和其他重要信息。 
 
-我们还合并了“+ 添加”下拉菜单中用于添加单个订阅者和执行批量添加的选项  。 
+### <a name="changes-made-to-subscriptions-by-admins"></a>管理员对订阅所做的更改
+了解管理员对订阅进行更改时对订阅者的影响，例如[更改订阅级别](subscription-level-changes.md)或完全[删除订阅](subscription-removed.md)。  
 
-   > [!div class="mx-imgBorder"]
-   > ![订阅管理门户的新用户界面](_img/whats-new/new-admin-ui.png)
+### <a name="migration-of-subscribers-from-one-agreement-to-another"></a>将订阅者从一个协议转移到另一个协议
+我们为管理员添加了一篇文章，其中详细介绍了将订阅者从现有协议转移到新协议的过程。  [将订阅转移到新协议](migrate-subscriptions.md)一文中提供了完整的分步说明。 
 
-#### <a name="connect-emails"></a>连接电子邮件
-我们使你可以轻松地将使用 Microsoft 帐户 (MSA) 的订阅者匹配到 Azure Active Directory (Azure AD)，以便可以快速关联这两个标识。  使用 Azure AD 标识可提高安全性并简化订阅管理。  有关更多详细信息，请查看我们的[个人登录文章](personal-email-sign-ins.md)。 
+### <a name="what-happens-when-an-agreement-expires"></a>协议过期时会发生什么情况？
+本文面向管理员，其中探讨了协议过期时管理员和订阅者受到的影响。  
 
-#### <a name="add-subscribers-using-azure-active-directory-groups"></a>使用 Azure Active Directory 组添加订阅者
-如果组织使用 Azure Active Directory (Azure AD)，则现在可以使用 Azure AD 组来管理订阅。  通过将订阅分配给组，可以非常快速地向多个用户提供相同类型的订阅。  将新用户添加到 Azure AD 组时，系统会自动为其分配一个订阅。  如果从 Azure AD 组中删除某用户，则其订阅也将一并删除。  这有助于组织自动进行订阅管理，进而节省管理员时间和精力。  有关详细信息，请查看文档中的[添加多个用户](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions)一文。 
+### <a name="removal-of-the-limit-on-azure-ad-groups"></a>取消对 Azure AD 组施加的限制
+已取消每个 Azure Active Directory 组 1000 个用户的限制。  现在可以添加任意规模的组。  有关详细信息，请查看文档中的[添加多个用户](./assign-license-bulk.md#use-azure-active-directory-groups-to-assign-subscriptions)一文。 
 
-### <a name="cast-highlight"></a>CAST 突出显示
-我们非常高兴地宣布，我们的合作伙伴提供了权益扩展，CAST Highlight。 
-- Visual Studio Enterprise 订阅中包含的权益长度已延长到六个月。  
-- Visual Studio Professional 订阅者现在可以接收订阅，使其能够在三个月内评估单个应用程序。 
-
-## <a name="2020-q2-april-june"></a>2020 年第 2 季度（4 月 - 6 月）
-
-### <a name="visual-studio-subscriptions-portal"></a>Visual Studio 订阅门户
-
-Visual Studio 订阅门户的外观和易用性发生了重大变化。  
-
-- 权益磁贴已调整大小，并且都显示在窗口中，因此无需向左或向右滚动即可查看给定类别中的所有磁贴。 
-- 你可以选择显示所有可用权益，或使用类别选取器仅显示一个类别。
-   > [!div class="mx-imgBorder"]
-   > ![新的权益类别选取器](_img/whats-new/whats-new-category-picker.png)
-- 我们还将订阅选取器从窗口的右上角移动到了更易于访问的位置。
-   > [!div class="mx-imgBorder"]
-   > ![新的订阅选取器](_img/whats-new/whats-new-sub-picker.png)
-- 我们在权益列表顶部添加了“特别推荐的权益”，以标注出新的或受欢迎的权益。  
-   > [!div class="mx-imgBorder"]
-   > ![新的特别推荐的权益](_img/whats-new/whats-new-featured.png)
-
-## <a name="next-steps"></a>后续步骤
-- 查看新的[订阅管理门户](https://manage.visualstudio.com) UI 及其新功能
-- 详细了解 [CAST Highlight](vs-cast.md)
-- 请务必返回此处查看，了解有关 Visual Studio 订阅中新增功能的最新信息！

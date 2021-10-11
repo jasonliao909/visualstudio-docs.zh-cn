@@ -14,12 +14,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: <= vs-2019
-ms.openlocfilehash: 65b514ea9854c91c1f245ddcb2b3365b7730af74
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3865c3fabbede28e3a6c701229518ce2a7f6e716
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122077824"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635589"
 ---
 # <a name="create-a-vuejs-application-using-nodejs-tools-for-visual-studio"></a>使用针对 Visual Studio 的 Node.js 工具创建 Vue.js 应用程序
 
@@ -75,7 +75,7 @@ Vue.js 提供官方 CLI，快速搭建项目基架。 如果想要使用 CLI 创
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果开始窗口未打开，请选择“文件” > “开始窗口” 。 键入“Web 应用”，选择“C#”作为语言，然后选择“ASP.NET Core 空”，再选择“下一步”。 在下一个屏幕上，将项目命名为“client-app”，然后选择“下一步”。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     从顶部菜单栏中选择“文件”   > “新建”   > “项目”  。 在“新建项目”对话框的左侧窗格中，展开“Visual C#”，然后选择“Web”    。 在中间窗格中，选择“ASP.NET Core Web 应用程序”，键入名称“client-app”，然后选择“确定”    。

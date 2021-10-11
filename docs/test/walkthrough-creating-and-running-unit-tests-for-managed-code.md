@@ -16,12 +16,12 @@ ms.technology: vs-ide-test
 ms.workload:
 - dotnet
 author: mikejo5000
-ms.openlocfilehash: 9b515e9d5311556b6eed8c6417f372e2cc861d94
-ms.sourcegitcommit: e6aeefef5b659a56e6e433d155bfd269c46bceb0
+ms.openlocfilehash: ccedcea78a1e05342c254cfc18cd2ca0523faec6
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/20/2021
-ms.locfileid: "122603562"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635655"
 ---
 # <a name="walkthrough-create-and-run-unit-tests-for-managed-code"></a>演练：创建并运行托管代码的单元测试
 
@@ -61,7 +61,7 @@ ms.locfileid: "122603562"
 
 4. 将项目命名为“Bank”，然后单击“下一步” 。
 
-   选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+   选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    将创建 Bank 项目并将其显示在“解决方案资源管理器”中，而且将在代码编辑器中打开 Program.cs 文件   。
 
@@ -174,7 +174,7 @@ ms.locfileid: "122603562"
 
 3. 将项目命名为“BankTests”，然后单击“下一步” 。
 
-4. 选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+4. 选择建议的目标框架或 .NET 6，然后选择“创建”。
 
    将“BankTests”  项目添加到“Bank”  解决方案。
 
