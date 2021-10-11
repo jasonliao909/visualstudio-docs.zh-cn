@@ -2,7 +2,7 @@
 title: 配置 Windows 防火墙以便进行远程调试 | Microsoft Docs
 description: 配置 Windows 防火墙以便进行远程调试。 配置用于远程调试的端口。 排查远程调试连接的问题。
 ms.custom: SEO-VS-2020
-ms.date: 10/31/2018
+ms.date: 09/10/2021
 ms.topic: how-to
 ms.assetid: 66e3230a-d195-4473-bbce-8ca198516014
 author: mikejo5000
@@ -11,12 +11,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 608cbc78cd344ab2dd05bc1c7c993a4b69818715
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.openlocfilehash: aa255a92d6f0cbe6aa5e9a39ab496415a4a72a46
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980899"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427299"
 ---
 # <a name="configure-windows-firewall-for-remote-debugging"></a>配置 Windows 防火墙以便进行远程调试
 
@@ -55,15 +55,43 @@ Visual Studio 和远程调试器会尝试在安装或启动期间打开正确的
 
 对于 Windows 防火墙，你可以使用 PowerShell 命令（如 [New-NetFirewallRule](/powershell/module/netsecurity/new-netfirewallrule)）。
 
+::: moniker range="vs-2022"
+以下示例为远程计算机上的远程调试器打开端口 4026。 需要使用的路径可能有所不同。
+
+```ps
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe" -LocalPort 4026 -Protocol TCP -Authentication Required -Action Allow
+```
+::: moniker-end
+::: moniker range="vs-2019"
 下面的示例为远程计算机上的远程调试器打开端口 4024。 需要使用的路径可能有所不同。
 
 ```ps
-New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
+New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe" -LocalPort 4024 -Protocol TCP -Authentication Required -Action Allow
 ```
+::: moniker-end
 
 ### <a name="ports-on-the-remote-computer-that-enable-remote-debugging"></a>远程计算机上支持远程调试的端口
 
 为进行远程调试，必须在远程计算机上打开以下端口：
+
+::: moniker range="vs-2022"
+
+|**端口**|**传入/传出**|**协议**|**说明**|
+|-|-|-|-|
+|4026|传入|TCP|适用于 VS 2022。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|4025|传入|TCP|适用于 VS 2022。 此端口仅用于从 64 位版本的远程调试器中远程调试 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|3702|传出|UDP|（可选）进行远程调试器发现的必需项。|
+
+::: moniker-end
+::: moniker range="vs-2019"
+
+|**端口**|**传入/传出**|**协议**|**说明**|
+|-|-|-|-|
+|4024|传入|TCP|用于 VS 2019。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|4025|传入|TCP|用于 VS 2019。 此端口仅用于从 64 位版本的远程调试器中远程调试 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
+|3702|传出|UDP|（可选）进行远程调试器发现的必需项。|
+
+::: moniker-end
 
 ::: moniker range="vs-2017"
 
@@ -75,15 +103,7 @@ New-NetFirewallRule -DisplayName "msvsmon" -Direction Inbound -Program "Program 
 
 ::: moniker-end
 
-::: moniker range=">= vs-2019"
 
-|**端口**|**传入/传出**|**协议**|**说明**|
-|-|-|-|-|
-|4024|传入|TCP|用于 VS 2019。 端口号针对每个 Visual Studio 版本递增 2。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
-|4025|传入|TCP|用于 VS 2019。 端口号针对每个 Visual Studio 版本递增 2。 此端口仅用于从 64 位版本的远程调试器中远程调试 32 位进程。 有关详细信息，请参阅 [Visual Studio 远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)。|
-|3702|传出|UDP|（可选）进行远程调试器发现的必需项。|
-
-::: moniker-end
 
 如果在“工具” > ”选项” > “调试”下选择“使用托管兼容模式”，请打开这些附加远程调试器端口。    调试器托管兼容模式支持旧版 Visual Studio 2010 版本的调试器。
 

@@ -2,7 +2,7 @@
 title: 教程：Visual Basic 入门
 description: 了解如何在 Visual Studio 中逐步创建 Visual Basic 控制台应用。
 ms.custom: vs-acquisition,  get-started
-ms.date: 08/13/2021
+ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
 ms.topic: tutorial
@@ -14,12 +14,12 @@ dev_langs:
 - vb
 ms.workload:
 - multiple
-ms.openlocfilehash: b9b652e792c6fd1623676c50eb8737e5877b68e3
-ms.sourcegitcommit: 4cf966e03cdce4c520f6d4bde0b2711c099e0edd
+ms.openlocfilehash: 2729900aa714e906a4dc32c2fa0d9a8985eb4d47
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122188710"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128431530"
 ---
 # <a name="tutorial-get-started-with-visual-basic-in-visual-studio"></a>教程：Visual Studio 中的 Visual Basic 入门
 
@@ -31,15 +31,9 @@ ms.locfileid: "122188710"
 
 ::: moniker-end
 
-::: moniker range="vs-2019"
+::: moniker range=">=vs-2019"
 
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/downloads)页免费安装。
-
-::: moniker-end
-
-::: moniker range="vs-2022"
-
-如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
 
 ::: moniker-end
 
@@ -79,7 +73,7 @@ ms.locfileid: "122188710"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
@@ -88,32 +82,69 @@ ms.locfileid: "122188710"
 
 1. 在“开始”窗口上，选择“创建新项目”  。
 
-   ![查看“创建新项目”窗口](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
+   ![显示 Visual Studio“开始”窗口的屏幕截图，其中选择了“创建新项目”。](../../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
 1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，然后从“项目类型”列表中选择“控制台”。
 
    应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
 
-   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="为“控制台应用程序”选择 Visual Basic 模板":::
+   :::image type="content" source="./media/vs-2019/vb-create-new-project-console-net-core.png" alt-text="显示“创建新项目”窗口的屏幕截图，其中在“语言”、“平台”和“项目类型”筛选器中分别选择了“Visual Basic”、“Windows”和“控制台”，并且“控制台应用程序”项目模板处于选中状态。":::
 
    > [!NOTE]
    > 如果未看到“控制台应用程序”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
    >
-   > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
+   > ![显示“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接的屏幕截图。](../../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载。
+   > 然后，在 Visual Studio 安装程序中，选择“.NET Core 跨平台开发”工作负载  。
    >
-   > ![Visual Studio 安装程序中的 .NET Core 跨平台开发工作负荷](../../get-started/media/dot-net-core-xplat-dev-workload.png)
+   > ![显示 Visual Studio 安装程序中“.NET Core 跨平台开发”工作负载的屏幕截图。](../../get-started/media/dot-net-core-xplat-dev-workload.png)
    >
    > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
 
 1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“下一步”。
 
-   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="在“配置新项目”窗口中，将项目命名为“WhatIsYourName”":::
+   :::image type="content" source="./media/vs-2019/vb-name-your-project-whatname.png" alt-text="显示“配置新项目”窗口的屏幕截图，其中“项目名称”字段已设置为“WhatIsYourName”。":::
 
 1. 在“附加信息”窗口中，应已为目标框架选择“.NET Core 3.1” 。 如果未选择，则请选择“.NET Core 3.1”。 然后，选择“创建”。
 
-   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="在“附加信息”窗口中，确保已选择“.NET Core 3.1”":::
+   :::image type="content" source="./media/vs-2019/vb-target-framework.png" alt-text="显示“其他信息”窗口的屏幕截图，其中在“目标框架”字段中选择了“.NET Core 3.1”。":::
+
+   此时，Visual Studio 将打开新项目。
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 打开 Visual Studio。
+
+1. 在“开始”窗口上，选择“创建新项目”  。
+
+   :::image type="content" source="media/vs-2022/create-new-project-dark-theme.png" alt-text="显示 Visual Studio“开始”窗口的屏幕截图，其中选择了“创建新项目”。":::
+
+1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，并从“项目类型”列表中选择“控制台” 。
+
+   应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
+
+   :::image type="content" source="media/vs-2022/vb-create-new-project-console-net-core.png" alt-text="显示“创建新项目”窗口的屏幕截图，其中在“语言”、“平台”和“项目类型”筛选器中分别选择了“Visual Basic”、“Windows”和“控制台”，并且“控制台应用程序”项目模板处于选中状态。":::
+
+   > [!NOTE]
+   > 如果未看到“控制台应用程序”模板，则可以通过“创建新项目”窗口安装该模板 。 在“找不到所需内容?”消息中，选择“安装更多工具和功能”链接   。
+   >
+   > :::image type="content" source="media/vs-2022/not-finding-what-looking-for.png" alt-text="显示“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接的屏幕截图。":::
+   >
+   > 然后在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
+   >
+   > :::image type="content" source="media/vs-2022/dot-net-core-xplat-dev-workload.png" alt-text="显示 Visual Studio 安装程序中的“.NET 桌面开发”工作负载的屏幕截图。":::
+   >
+   > 之后，在 Visual Studio 安装程序中选择“修改”按钮  。 系统可能会提示你保存所有内容；如果出现提示，请按照指示进行操作。 接下来，选择“继续”，以安装工作负载  。 然后，返回到“[创建项目](#create-a-project)”过程中的步骤 2。
+
+1. 在“配置新项目”窗口中，在“项目名称”框中键入或输入“WhatIsYourName”。 然后，选择“下一步”。
+
+   :::image type="content" source="media/vs-2022/vb-name-your-project-whatname.png" alt-text="显示“配置新项目”窗口的屏幕截图，其中“项目名称”字段已设置为“WhatIsYourName”。":::
+
+1. 在“其他信息”窗口中，应已选择“.NET 6.0”作为目标框架 。 如果未选择，请选择“.NET 6.0”。 然后，选择“创建”。
+
+   :::image type="content" source="media/vs-2022/vb-target-framework.png" alt-text="显示“其他信息”窗口的屏幕截图，其中在“框架”字段中选择了“.NET 6.0”。":::
 
    此时，Visual Studio 将打开新项目。
 
@@ -152,7 +183,7 @@ ms.locfileid: "122188710"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在 WhatIsYourName 项目中，立即在 `Sub Main(args As String())` 行后的左括号和 `End Sub` 行之间，输入以下 Visual Basic 代码：
 
@@ -167,13 +198,40 @@ ms.locfileid: "122188710"
 
     此代码替换现有的 <xref:System.Console.WriteLine%2A>、<xref:System.Console.Write%2A> 和 <xref:System.Console.ReadKey%2A> 语句。
 
-   ![显示“What Is Your Name”代码的代码窗口](./media/vs-2019/vb-codewindow-what-name-dark.png)
+   ![显示 Visual Basic 代码编辑器内加载的“WhatIsYourName”项目中的“Program.vb”文件代码的屏幕截图。](./media/vs-2019/vb-codewindow-what-name-dark.png)
 
 1. 使用绿色“开始”按钮，或按“F5”生成并运行第一个应用。
 
 1. 控制台窗口打开时，输入名字。 控制台窗口应如以下屏幕快照所示：
 
-   ![显示“What Is Your Name”、时间和日期以及“按任意键继续”消息的控制台窗口](media/vb-console-what-name.png)
+   ![显示控制台窗口的屏幕截图，其中显示了“What Is Your Name”、时间和日期以及“Press any key to continue”消息。](media/vb-console-what-name.png)
+
+1. 按任意键关闭控制台窗口。
+
+ ::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在 WhatIsYourName 项目的 Program.vb 文件中，在位于 `Sub Main(args As String())` 行和 `End Sub` 行之间的左括号后面紧接着输入以下 Visual Basic 代码 ：
+
+   ```vb
+   Console.WriteLine(vbCrLf + "What is your name? ")
+   Dim name = Console.ReadLine()
+   Dim currentDate = DateTime.Now
+   Console.WriteLine($"{vbCrLf}Hello, {name}, on {currentDate:d} at {currentDate:t}!")
+   Console.Write(vbCrLf + "Press any key to exit... ")
+   Console.ReadKey(True)
+   ```
+
+   此代码将替换现有的 <xref:System.Console.WriteLine%2A> 语句。
+
+   :::image type="content" source="media/vs-2022/vb-codewindow-what-name-dark.png" alt-text="显示 Visual Basic 代码编辑器内加载的“WhatIsYourName”项目中的“Program.vb”文件代码的屏幕截图。":::
+
+1. 使用绿色“开始”按钮，或按“F5”生成并运行第一个应用。
+
+1. 控制台窗口打开时，输入名字。 控制台窗口应如以下屏幕快照所示：
+
+   :::image type="content" source="media/vs-2022/vb-console-what-name.png" alt-text="显示控制台窗口的屏幕截图，其中显示了“What Is Your Name”、时间和日期以及“Press any key to continue”消息。":::
 
 1. 按任意键关闭控制台窗口。
 
@@ -214,7 +272,7 @@ ms.locfileid: "122188710"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 1. 在“开始”窗口上，选择“创建新项目”。
 
@@ -245,11 +303,50 @@ ms.locfileid: "122188710"
 
    代码窗口应如以下屏幕截图所示：
 
-   ![显示“CalculateThis”代码的代码窗口](media/vb-codewindow-calculate-this.png)
+   ![显示 Visual Basic 代码编辑器内加载的“CalculateThis”项目中的“Program.vb”文件代码的屏幕截图。](media/vb-codewindow-calculate-this.png)
 
 1. 单击“CalculateThis”运行程序。 控制台窗口应如以下屏幕快照所示：
 
-    ![显示“CalculateThis”应用的控制台窗口，其中提示了要执行的操作。](media/vb-console-calculate-this.png)
+    ![显示 CalculateThis 应用的控制台窗口的屏幕截图，其中提示了要执行的操作。](media/vb-console-calculate-this.png)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+1. 在“开始”窗口上，选择“创建新项目”。
+
+1. 在“创建新项目”窗口中，从“语言”列表中选择“Visual Basic”。 接下来，从“平台”列表中选择“Windows”，并从“项目类型”列表中选择“控制台” 。
+
+1. 应用语言、平台和项目类型筛选器之后，选择“控制台应用程序”模板，然后选择“下一步” 。
+
+   然后，在“配置新项目”窗口中，在“项目名称”框中键入或输入“CalculateThis”。 然后，选择“下一步”。
+
+1. 在“其他信息”窗口中，应已选择“.NET 6.0”作为目标框架 。 如果未选择，请选择“.NET 6.0”。 然后，选择“创建”。
+
+1. 在 Program.vb 中的 `Module Program` 行和 `End Module` 行之间输入以下代码：
+
+   ```vb
+   Public num1 As Integer
+   Public num2 As Integer
+   Public answer As Integer
+   Sub Main()
+       Console.WriteLine("Type a number and press Enter")
+       num1 = Console.ReadLine()
+       Console.WriteLine("Type another number to add to it and press Enter")
+       num2 = Console.ReadLine()
+       answer = num1 + num2
+       Console.WriteLine("The answer is " & answer)
+       Console.ReadLine()
+   End Sub
+   ```
+
+   代码窗口应如以下屏幕截图所示：
+
+   :::image type="content" source="media/vs-2022/vb-codewindow-calculate-this.png" alt-text="显示 Visual Basic 代码编辑器内加载的“CalculateThis”项目中的“Program.vb”文件代码的屏幕截图。":::
+
+1. 选择“CalculateThis”旁边的绿色“启动”按钮以运行程序。 控制台窗口应如以下屏幕快照所示：
+
+   :::image type="content" source="media/vs-2022/vb-console-calculate-this.png" alt-text="显示 CalculateThis 应用的控制台窗口的屏幕截图，其中提示了要执行的操作。":::
 
 ::: moniker-end
 

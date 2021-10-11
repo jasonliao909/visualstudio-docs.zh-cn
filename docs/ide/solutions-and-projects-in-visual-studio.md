@@ -2,7 +2,7 @@
 title: 什么是 Visual Studio 解决方案和项目？
 description: 了解 Visual Studio 项目和解决方案、如何从模板创建新项目，以及如何在解决方案资源管理器中查看和管理项目。
 ms.custom: SEO-VS-2020, contperf-fy21q2
-ms.date: 12/31/2020
+ms.date: 09/14/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.openproject
@@ -20,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3c1f9ca139f60fa5d25874745af0e263af71d717
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 11836eda644bfda367a456751c59e93a8d49af58
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123614"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128426343"
 ---
 # <a name="what-are-solutions-and-projects-in-visual-studio"></a>Visual Studio 中的解决方案和项目有哪些？
 
@@ -80,7 +80,7 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 
 ## <a name="solution-explorer"></a>“解决方案资源管理器”
 
-创建新项目之后，可使用“解决方案资源管理器”查看和管理项目和解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的解决方案资源管理器：
+创建新项目后，可以使用[解决方案资源管理器](use-solution-explorer.md)来查看和管理项目与解决方案及其关联项。 下图显示具有一个包含两个项目的 C# 解决方案的解决方案资源管理器：
 
 ::: moniker range="vs-2017"
 
@@ -98,7 +98,7 @@ Visual Studio 采用两种文件类型（.sln 和 .suo）来存储解决方案�
 
 ::: moniker-end
 
-可以从“解决方案资源管理器”中的各种项目上的右键单击上下文菜单中获取多个菜单命令。 这些命令包括生成项目、管理 NuGet 包、添加引用、重命名文件和运行测试，此处仅举几例。
+可以从“解决方案资源管理器”中的各种项目上的右键单击上下文菜单中获取多个菜单命令。 这些命令包括生成项目、管理 NuGet 包、添加引用、重命名文件和运行测试，此处仅举几例。 有关详细信息，请参阅[如何使用解决方案资源管理器](use-solution-explorer.md)。
 
 对于 ASP.NET Core 项目，你可以自定义如何将文件嵌套在“解决方案资源管理器”中。 有关详细信息，请参阅[在解决方案资源管理器中自定义文件嵌套](file-nesting-solution-explorer.md)
 

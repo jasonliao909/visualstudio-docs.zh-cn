@@ -5,7 +5,7 @@ ms.custom:
 - remotedebugging
 - seodec18
 - SEO-VS-2020
-ms.date: 7/26/2021
+ms.date: 09/10/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.remote.overview
@@ -24,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5e10ac45c0aee1a7298e06efe36e3334295257b7
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4c1e1f0cca6fc29f3dfc29e87d10c5ee324700f6
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122058260"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427135"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。
@@ -62,11 +62,18 @@ ms.locfileid: "122058260"
 
 1. 在与你的 Visual Studio 版本匹配的目录中找到 msvsmon.exe：
 
-   ::: moniker range=">=vs-2019"
+   ::: moniker range=">=vs-2022"
 
-   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
+   Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe
+
+   Program Files\Microsoft Visual Studio\2022\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe
+
+   ::: moniker-end
+   ::: moniker range="vs-2019"
 
    *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x64\msvsmon.exe*
+
+   *Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\Common7\IDE\Remote Debugger\x86\msvsmon.exe*
 
    ::: moniker-end
    ::: moniker range="vs-2017"
