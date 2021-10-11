@@ -2,7 +2,7 @@
 title: 使用调试器附加到运行的进程
 description: 了解如何将 Visual Studio 调试器附加到正在本地或远程计算机上运行的进程上。
 ms.custom: SEO-VS-2020
-ms.date: 06/28/2021
+ms.date: 09/10/2021
 ms.topic: conceptual
 f1_keywords:
 - vs.debug.processes.attach
@@ -30,12 +30,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cc725e1c3a92b4295c2f354cf7f7506773ada9d3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: eba03a158d4e07b31685293561ab84c19602a7d5
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122121833"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427325"
 ---
 # <a name="attach-to-running-processes-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器附加到正在运行的进程
 
@@ -76,7 +76,7 @@ ms.locfileid: "122121833"
    如果使用的是“默认”连接类型，可以手动选择要附加到的代码的类型。 否则，“选择”选项可能会被禁用。
 
    手动选择代码类型：
-   1. 单击“选择”。
+   1. 单击“选择”  。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型” 。
       如果在尝试附加到列表中的进程时失败，可以使用[“选择代码类型”](../debugger/select-code-type-dialog-box.md)对话框来帮助[排查](#BKMK_Troubleshoot_attach_errors)问题。
    1. 选择要调试的代码类型。
@@ -108,16 +108,22 @@ ms.locfileid: "122121833"
 
      确保 Visual Studio 将所需的端口添加到计算机名称中，其格式为：\<remote computer name>:port
 
-     ::: moniker range=">= vs-2019"
+     ::: moniker range=">= vs-2022"
 
      > [!NOTE]
-     > 如果无法使用远程计算机名称进行连接，请尝试使用 IP 和端口地址（例如 `123.45.678.9:4022`）。 4024 是 Visual Studio 2019 x64 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+     > 如果无法使用远程计算机名称进行连接，请尝试使用 IP 和端口地址（例如 `123.45.678.9:4022`）。 4026 是 Visual Studio 2022 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+
+     ::: moniker-end
+     ::: moniker range="vs-2019"
+
+     > [!NOTE]
+     > 如果无法使用远程计算机名称进行连接，请尝试使用 IP 和端口地址（例如 `123.45.678.9:4022`）。 4024 是 Visual Studio 2019 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
 
      ::: moniker-end
      ::: moniker range="vs-2017"
 
      > [!NOTE]
-     > 如果无法使用远程计算机名称进行连接，请尝试使用 IP 和端口地址（例如 `123.45.678.9:4022`）。 4022 是 Visual Studio 2017 x64 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
+     > 如果无法使用远程计算机名称进行连接，请尝试使用 IP 和端口地址（例如 `123.45.678.9:4022`）。 4022 是 Visual Studio 2017 远程调试器的默认端口。 有关其他远程调试器端口分配，请参阅[远程调试器端口分配](remote-debugger-port-assignments.md)。
 
      ::: moniker-end
 
@@ -147,7 +153,7 @@ ms.locfileid: "122121833"
    如果使用的是“默认”连接类型，可以手动选择要附加到的代码的类型。 否则，“选择”选项可能会被禁用。
 
    手动选择代码类型：
-   1. 单击“选择”。
+   1. 单击“选择”  。
    1. 在“选择代码类型”对话框中，选择“调试这些代码类型” 。
       如果在尝试附加到列表中的进程时失败，可以使用[“选择代码类型”](../debugger/select-code-type-dialog-box.md)对话框来帮助[排查](#BKMK_Troubleshoot_attach_errors)问题。
    1. 选择“确定”。

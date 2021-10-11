@@ -1,6 +1,7 @@
 ---
 title: 使用 Visual Basic 创建 Windows 窗体应用
 description: 了解如何在 Visual Studio 中使用 Visual Basic 分步创建 Windows 窗体应用。
+ms.custom: vs-acquisition, get-started
 ms.date: 09/27/2019
 ms.topic: tutorial
 ms.devlang: vb
@@ -12,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: ba22da795a0a94033d252f82a48989b3c24f22e8
-ms.sourcegitcommit: 3d1143b007bf0ead80bf4cb3867bf89ab0ab5b53
+ms.openlocfilehash: a2724d78dfdd488c5e367a6621d7ad0eb29f0325
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/02/2021
-ms.locfileid: "123398634"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128429090"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 
@@ -84,7 +85,7 @@ ms.locfileid: "123398634"
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”  工作负载。
+   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 开发工作负载](../ide/media/install-dot-net-desktop-env.png)
    >

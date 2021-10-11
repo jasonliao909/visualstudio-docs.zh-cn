@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: f853ed9d-3543-4f5f-a754-92381ee03523
-ms.date: 10/08/2021
+ms.date: 09/30/2021
 ms.topic: how-to
 description: 了解当你看到关于 Microsoft 已删除某个订阅的通知时意味着什么。
-ms.openlocfilehash: 2d19598081b2aa27eb9f3666348e9732a67773ad
-ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
+ms.openlocfilehash: 8257c93eefe6bd72ec38e98b7978c475bb3e997f
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "129704680"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129349346"
 ---
 # <a name="why-does-my-dashboard-shows-microsoft-removed-a-subscriber"></a>为什么我的仪表板显示 Microsoft 删除了订阅者？ 
 在[管理门户](https://manage.visualstudio.com)上的仪表板的“最近的更改”部分，你可能会看到订阅已删除，原因显示为“帐户已关闭”。  出现这种情况的原因有两个。  

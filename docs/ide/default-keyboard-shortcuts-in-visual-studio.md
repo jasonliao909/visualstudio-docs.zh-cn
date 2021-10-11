@@ -1,8 +1,8 @@
 ---
-title: 默认键盘快捷方式
+title: 键盘快捷方式
 description: 了解 Visual Studio 中的默认键盘快捷方式，以便通过它们访问各种命令和窗口。
 ms.custom: SEO-VS-2020
-ms.date: 08/23/2021
+ms.date: 09/14/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -16,14 +16,14 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 6744a02b05bf38094c7c58a40862fa1324ea9069
-ms.sourcegitcommit: 00a9b421927ac9de60e96b2ce6618aa0733d88b1
+ms.openlocfilehash: f78b1c7453f0aa331239bfa26c6d1abda1c1289c
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/24/2021
-ms.locfileid: "122773637"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128430666"
 ---
-# <a name="default-keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的默认键盘快捷方式
+# <a name="keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的键盘快捷方式
 
 通过选择相应的键盘快捷方式，可访问 Visual Studio 中的各种[命令](reference/visual-studio-commands.md)和窗口。 本页列出了常规配置文件的默认命令快捷方式，安装 Visual Studio 时可能已选择该配置文件。 无论选择哪个配置文件，都可以通过打开“选项”对话框，展开“环境”节点，然后选择“键盘”，[认识命令的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)。 你还可以为任意给定命令分配不同的快捷键，以自定义你的快捷键。
 

@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 3b7872707c450c393c5bbeb654d65c0dbee60052
-ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+ms.openlocfilehash: 7c6a4137046456321e54a53e58a96d1dbfdf8fe1
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/27/2021
-ms.locfileid: "123096948"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427377"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>启动 Compose 服务的子集
 
@@ -79,7 +79,8 @@ services:
 
 ![“启动设置对话框的屏幕截图”](media/launch-settings/launch-settings-create-profile.png)
 
-Docker Compose 配置文件部分仅在 docker-compose.yml 文件中定义了配置文件时才会出现。
+>[!NOTE]
+> Docker Compose 配置文件部分仅在 docker-compose.yml 文件中定义了配置文件时才会出现。
 
 下一个示例演示在单个服务之间进行选择，而不是筛选 Compose 配置文件中的服务。 在这里，我们展示创建名为 `test2` 的新启动配置文件后对话框的外观，该配置文件仅启动五个服务中的两个，即包含调试的 `webapplication1` 和不包含调试的 `webapplication2`。  此启动配置文件还会在应用程序启动时启动浏览器并在其中打开 `webapplication1` 的主页。 
 
@@ -170,9 +171,9 @@ Docker Compose 配置文件部分仅在 docker-compose.yml 文件中定义了配
 |composeProfile - includes | 构成启动配置文件的 Compose 配置文件名称列表。|
 |composeProfile - serviceActions | 列出选定的 Compose 配置文件、服务以及每个服务的启动操作|
 |serviceActions | 列出选定的服务和启动操作。|
-|composeLaunchServiceName| 如果指定了 DockerLaunchAction 或 DockerLaunchBrowser，则 DockerServiceName 为应启动的服务名称。 使用此属性来确定将要启动的 Docker Compose 文件中的服务。|
 |composeLaunchAction| 指定要针对 F5 或 Ctrl+F5 执行的启动操作  。 允许的值为 None、LaunchBrowser 和 LaunchWCFTestClient。|
 |composeLaunchUrl| 启动浏览器时将使用的 URL。 有效的替换令牌为“{ServiceIPAddress}”、“{ServicePort}”和“{Scheme}”。 例如：{Scheme}://{ServiceIPAddress}:{ServicePort}|
+|composeLaunchServiceName| 指定用于替换 composeLaunchUrl 中的令牌的服务。|
 
 ## <a name="next-steps"></a>后续步骤
 

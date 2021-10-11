@@ -19,12 +19,12 @@ helpviewer_keywords:
 - conversion, projects
 - asset compatibility
 - projects, conversion
-ms.openlocfilehash: d5b562df4d644b21e306c73aedba756d33947797
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: bef0f184ba2c5ae0f3b2c163fe71a6833cdfecf7
+ms.sourcegitcommit: 50b0db7f38c8eded41c6bca83ebe71ee5d74afe9
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306405"
+ms.lasthandoff: 09/29/2021
+ms.locfileid: "129206898"
 ---
 # <a name="project-migration-and-upgrade-reference-for-visual-studio"></a>Visual Studio 的项目迁移和升级参考
 
@@ -244,7 +244,7 @@ Visual Studio 的每个新版本都支持大部分项目、文件和其他资产
 | 可移植类库 (PCL) | 当前不支持可移植类库（或 PCL）。 Visual Studio 2019 将仍然会打开并生成它们，但是不可能创建新的 PCL 项目。 建议将 PCL 项目中的代码迁移到 .NET Standard 项目。<br/><br/>默认情况下将不再包含 PCL 支持，但在 Visual Studio 的“单个组件”选项卡上可以使用。 |
 | Python 工作负荷 | Visual Studio 2019 删除了 Python Windows IoT Core 应用的支持。 在 Visual Studio 2022 中没有相应的功能，因此，此类项目没有自动迁移路径。<br/><br/>可以继续使用 Visual Studio 2017。 |
 | R Tools for Visual Studio | 已从 Visual Studio 2019 的数据科学工作负载中删除了针对 Visual Studio 的 R 工具。<br/><br/>可以继续使用 Visual Studio 2017 或替代产品（例如 RStudio）。 |
-| Service Fabric (sfproj) | 可在 Visual Studio 2015、Visual Studio 2017 或 Visual Studio 2019 中打开 Service Fabric 应用程序项目，除非 Service Fabric 应用程序项目引用 ASP.NET Core 服务项目。 来自 Visual Studio 2015 在 Visual Studio 2017 或 Visual Studio 2019 中打开的 Service Fabric 项目从 xproj 格式单向迁移到 csproj。 请参阅此表前面的“.NET Core 项目 (xproj)”。 |
+| Service Fabric (sfproj) | 在 Visual Studio 2017 或 Visual Studio 2019 中创建的 Service Fabric 应用程序项目无需经过更改就能在 Visual Studio 2022 中打开。<br/>在不使用“优化 ARM 部署的项目布局”选项的情况下在 Visual Studio 2022 中创建的 Service Fabric 应用程序项目可以在 Visual Studio 2019 16.5 或更高版本中打开。<br/>在使用“优化 ARM 部署的项目布局”选项的情况下在 Visual Studio 2022 中创建的 Service Fabric 应用程序项目可以在 Visual Studio 2019 16.10 或更高版本中打开。|
 | SharePoint 2010 | 使用 Visual Studio 2022 打开 SharePoint 解决方案项目时，它将升级为 SharePoint 2016 或 SharePoint 2019。 “.NET 桌面开发”工作负载必须安装到 Visual Studio 中，以便升级。<br/><br/>有关如何升级 SharePoint 项目的详细信息，请参阅[升级和更新 SharePoint](/sharepoint/upgrade-and-update/upgrade-and-update)。|
 | SharePoint 2016 | 不能在 Visual Studio 2022 中打开 Office 开发人员工具预览版 2 中创建的 SharePoint 加载项项目。 若要解除此限制，需要在 csproj vbproj 文件中将 `MinimumVisualStudioVersion` 更新到 12.0 并将 `MinimumOfficeToolsVersion` 更新到 12.2。 |
 | Silverlight | Visual Studio 2022 不支持 Silverlight 项目。 若要继续使用 Silverlight 应用程序，请继续使用 Visual Studio 2015。 |
@@ -252,7 +252,7 @@ Visual Studio 的每个新版本都支持大部分项目、文件和其他资产
 | SQL Server Reporting Services 和 SQL Server Analysis Services（SSRS、SSDT、SSAS、MSAS） | 通过 Visual Studio 库中的两个扩展提供对这些项目类型的支持：[Microsoft Analysis Services 建模项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftAnalysisServicesModelingProjects)和 [Microsoft Reporting Services 项目](https://marketplace.visualstudio.com/items?itemName=ProBITools.MicrosoftReportProjectsforVisualStudio)。 Visual Studio 2019 的数据存储和处理工作负载中还包括 SSDT 支持。 有关详细信息，请参阅[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) 页。 |
 | SQL Server Integration Services (SSIS) | Visual Studio 2019 的支持现已推出。 有关详细信息，请参阅商城上的[下载并安装 SQL Server Data Tools (SSDT) for Visual Studio](/sql/ssdt/download-sql-server-data-tools-ssdt) 页、[SQL Server Integration Services (SSIS)](https://techcommunity.microsoft.com/t5/SQL-Server-Integration-Services/bg-p/SSIS) 团队博客和 [SQL Server Integration Services 项目](https://marketplace.visualstudio.com/items?itemName=SSIS.SqlServerIntegrationServicesProjects&ssr=false#overview)页。 |
 | 测试窗口扩展 | 在 Visual Studio 2019 中，删除了一些以前标记为公开但从未正式记录过的测试窗口 API。 在 Visual Studio 2017 中，广泛可见的 API 被标记为已弃用，以便为扩展维护人员提供早期警告。 据我们所知，很少有扩展依赖这些 API。 有关详细信息和更新，请查看[已弃用的与测试相关的 API 完整列表](https://github.com/Microsoft/vstest/issues/1830)。 如果这会影响你的方案，请在[开发人员社区](https://aka.ms/feedback/suggest?space=8)上告诉我们。 |
-| Visual C++ | Visual Studio 2022 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2019 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 选择继续使用原始编译器和工具集意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
+| Visual C++ | Visual Studio 2022 可用于在 Visual Studio 的早期版本中（追溯到 Visual Studio 2010）创建的项目中工作。 首次打开项目时，可以选择升级到最新的编译器和工具集，或者继续使用原始编译器和工具集。 如果选择继续使用原始编译器和工具集，Visual Studio 2022 将不会修改项目文件，并使用早期版本 Visual Studio 安装中的工具集来生成项目。 选择继续使用原始编译器和工具集意味着你仍可以在 Visual Studio 的原始版本中打开项目（如有必要）。 有关详细信息，请参阅 [使用 Visual Studio 中的本机多重目标生成旧项目](/cpp/porting/use-native-multi-targeting)。 |
 | Visual Studio 扩展性/VSIX | 更新 MinimumVersion 14.0 或更低版本中的项目以声明 MinimumVersion 15.0，这样可防止在早期版本的 Visual Studio 中打开该项目。 若要允许在早期版本中打开项目，请将 MinimumVersion 设置为 `$(VisualStudioVersion)`。 另请参阅[如何：将扩展性项目迁移到 Visual Studio 2017](../extensibility/how-to-migrate-extensibility-projects-to-visual-studio-2017.md)。 |
 | Visual Studio 实验室管理工具版 | 你可以使用 Microsoft 测试管理器或 Visual Studio 2010 SP1 及更高版本打开在以上任一版本中创建的环境。 但对于 Visual Studio 2010 SP1，在可以创建环境之前，Microsoft 测试管理器的版本必须与 Team Foundation Server 的版本匹配。 |
 | Visual Studio Tools for Apache Cordova | 在 Visual Studio 2019 中删除了对 Apache Cordova 的支持。 在 Visual Studio 2022 中没有相应的功能，因此，此类项目没有自动迁移路径。<br/><br/>可以将 Cordova 工具用于 Visual Studio Code 扩展（其为最新版本的 Cordova 提供支持），也可以继续使用 Visual Studio 2017。 |

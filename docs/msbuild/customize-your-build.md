@@ -2,7 +2,7 @@
 title: 自定义生成 | Microsoft Docs
 description: 了解多个可用于对使用标准生成过程的 MSBuild 项目进行自定义的扩展性挂钩。
 ms.custom: SEO-VS-2020
-ms.date: 06/13/2019
+ms.date: 09/13/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - MSBuild, transforms
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 89ea3e2b08507e2bf6724f12951e0a35d76dfd08
-ms.sourcegitcommit: 42aec4a2ea6dec67dbe4c93bcf0fa1116a4b93d9
+ms.openlocfilehash: dd38a7b9c331b72f665d058e4c7786b1babaf487
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/26/2021
-ms.locfileid: "122980683"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128428719"
 ---
 # <a name="customize-your-build"></a>自定义生成
 
@@ -31,9 +31,7 @@ ms.locfileid: "122980683"
 
 ## <a name="directorybuildprops-and-directorybuildtargets"></a>Directory.Build.props 和 Directory.Build.targets
 
-在 MSBuild 15 版之前，如果要向解决方案中的项目提供新的自定义属性，必须手动向解决方案中的每个项目文件添加一个针对该属性的引用。 另外，还必须在 .props 文件中定义属性，然后在解决方案的每个项目中显式导入该 .props 文件。
-
-但现在，通过在包含源的根文件夹的名为 Directory.Build.props 的单个文件中定义一个新属性，只需一步即可向每个项目添加该属性。 在 MSBuild 运行时，Microsoft.Common.props 会搜索 Directory.Build.props 文件的目录结构（Microsoft.Common.targets 将查找 Directory.Build.targets）。 如果找到，就会导入该属性。 Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。
+通过在包含源的根文件夹中名为 Directory.Build.props 的单个文件内定义一个新属性，可以向每个项目添加该属性。 在 MSBuild 运行时，Microsoft.Common.props 会搜索 Directory.Build.props 文件的目录结构（Microsoft.Common.targets 将查找 Directory.Build.targets）。 如果找到了一个文件，它将导入该文件并读取其中定义的属性。 Directory.Build.props 是用户定义文件，对目录下的项目提供自定义选项。
 
 > [!NOTE]
 > 基于 Linux 的文件系统区分大小写。 请确保 Directory.Build.props 文件名的大小写完全匹配，否则将不会在生成流程中检测到它。
@@ -111,10 +109,10 @@ Directory.Build.props 中设置的属性可能会在项目文件或导入文件�
 
 MSBuild 的常规方法汇总如下：
 
-- 对于任何给定的项目，MSBuild 在解决方案结构中向上查找第一个 Directory.Build.props，将其与默认项合并，然后停止扫描
-- 如果要找到并合并多个级别，则从“内部”文件 [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove)（如上所示）“外部”文件
-- 如果“外部”文件本身不会再导入其上的内容，则扫描在此处停止
-- 要控制扫描/合并过程，请使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`
+- 对于任何给定的项目，MSBuild 将在解决方案结构中向上查找第一个 Directory.Build.props，将其与默认项合并，然后停止扫描。
+- 如果你要查找并合并多个级别，请从“内部”文件 [`<Import...>`](../msbuild/property-functions.md#msbuild-getpathoffileabove)（如上所示）“外部”文件。
+- 如果“外部”文件本身不会再导入其上的内容，则扫描在此处停止。
+- 若要控制扫描/合并过程，请使用 `$(DirectoryBuildPropsPath)` 和 `$(ImportDirectoryBuildProps)`。
 
 或再简单点：不能导入任何内容的第一个 Directory.Build.props 即为 MSBuild 停止的位置。
 

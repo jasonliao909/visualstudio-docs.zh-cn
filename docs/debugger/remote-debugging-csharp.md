@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4d650fe2f99dcbaa58e0d786e9981ca35ef1a265
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4bce1ee0c6dd5af379856ae86292fd682964d1b7
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122112541"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427159"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C# 或 Visual Basic 项目
 若要调试已部署到另一台计算机上的 Visual Studio 应用程序，请在部署了应用的计算机上安装并运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后运行应用。
@@ -76,7 +76,10 @@ Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pa
 6. 选择“使用远程计算机”，然后在文本框中键入“yourmachinename:port” 。 （端口号显示在远程调试器窗口中。 端口号在每个版本的 Visual Studio 中递增 2）。
 
     在此示例中，使用：
-    ::: moniker range=">=vs-2019"
+    ::: moniker range="vs-2022"
+    Visual Studio 2019 上的 MJO-DL:4026
+    ::: moniker-end
+    ::: moniker range="vs-2019"
     Visual Studio 2019 上的 MJO-DL:4024
     ::: moniker-end
     ::: moniker range="vs-2017"
@@ -94,7 +97,7 @@ Windows 7 和更高版本（非电话）以及从 Windows Server 2008 Service Pa
     > [!CAUTION]
     > 不要对代码进行更改或重新生成（否则必须重复此步骤）。 复制到远程计算机的可执行文件必须与你的本地源和符号完全匹配。
 
-    可手动复制项目，使用 XCopy、Robocopy、Powershell 或其他选项。
+    可手动复制项目，使用 XCopy、Robocopy、PowerShell 或其他选项。
 
 11. 请确保远程调试器正在目标计算机上运行（如果没有，请在“开始”菜单中搜索“远程调试器”） 。 远程调试器窗口如下所示。
 

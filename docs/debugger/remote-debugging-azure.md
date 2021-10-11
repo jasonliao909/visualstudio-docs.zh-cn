@@ -2,7 +2,7 @@
 title: IIS 和 Azure 上的远程调试 ASP.NET Core |Microsoft Docs
 description: 了解如何设置和配置 Visual Studio ASP.NET Core 应用，使用 Azure 将其部署到 IIS，并从 Visual Studio 连接远程调试器。
 ms.custom: remotedebugging
-ms.date: 05/06/2020
+ms.date: 08/27/2021
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -13,12 +13,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 0f0a2713ac8e74a9cc77dd23e016674043287cab
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 34600e60c5f27ca7a0a1d34142802ee0a3a6b453
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097015"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427312"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Azure 中的 IIS 上的 Visual Studio 中远程调试 ASP.NET Core
 
@@ -130,9 +130,9 @@ ms.locfileid: "122097015"
 
 * 如果需要帮助确保在 IIS 中正确设置、部署和运行应用，以便进行调试，请按照本主题中的所有步骤进行操作。
 
-  * 在开始之前，请按照[安装和运行 IIS](/azure/virtual-machines/windows/quick-create-portal) 中所述的所有步骤进行操作。
+  * 在开始之前，请按照[创建 Windows 虚拟机](/azure/virtual-machines/windows/quick-create-portal)中所述的全部步骤操作，其中包括 IIS Web 服务器的安装步骤。
 
-  * 在网络安全组中打开端口 80 时，还应为远程调试器打开[正确的端口](#bkmk_openports)（4024 或 4022）。 这样一来，以后就不必打开它。 如果使用的是 Web 部署，还应打开端口 8172。
+  * 请确保在 Azure [网络安全组](/azure/virtual-machines/windows/nsg-quickstart-portal)中打开端口 80。 确认端口 80 已打开后，还要为远程调试器打开[正确的端口](#bkmk_openports)（4026、4024 或 4022）。 这样一来，以后就不必打开它。 如果使用的是 Web 部署，还应打开端口 8172。
 
 ### <a name="update-browser-security-settings-on-windows-server"></a>更新 Windows Server 上的浏览器安全设置
 
@@ -149,7 +149,7 @@ ms.locfileid: "122097015"
 
 1. 在托管系统上安装 .NET Core 托管捆绑包。 捆绑包可安装 .NET Core 运行时、.NET Core 库和 ASP.NET Core 模块。 有关更深入的说明，请参阅[发布到 IIS](/aspnet/core/publishing/iis?tabs=aspnetcore2x#iis-configuration)。
 
-    对 .NET Core 3，安装 [.NET Core 托管捆绑包](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)。
+    对于当前的 .NET Core 托管捆绑包，请安装 [ASP.NET Core 托管捆绑包](https://dotnet.microsoft.com/permalink/dotnetcore-current-windows-runtime-bundle-installer)。
     对 .NET Core 2，安装 [.NET Core Windows Server 托管捆绑包](https://aka.ms/dotnetcore-2-windowshosting)。
 
     > [!NOTE]
@@ -251,7 +251,10 @@ ms.locfileid: "122097015"
 
     确保 Visual Studio 将所需的端口添加到计算机名称中，其格式为：\<remote computer name>:port
 
-    ::: moniker range=">=vs-2019"
+    ::: moniker range=">=vs-2022"
+    在 Visual Studio 2022 中应看到 \<remote computer name>:4026
+    ::: moniker-end
+    ::: moniker range="vs-2019"
     在 Visual Studio 2019 中应看到 \<remote computer name>:4024
     ::: moniker-end
     ::: moniker range="vs-2017"
@@ -292,7 +295,17 @@ ms.locfileid: "122097015"
 
     应在 Visual Studio 中命中断点。
 
-### <a name="troubleshooting-open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 排除故障：在 Windows Server 上打开必需端口
+## <a name="troubleshooting-iis-deployment"></a>IIS 部署故障排除
+
+- 如果无法使用主机名连接到主机，请尝试改用 IP 地址。
+- 确保远程服务器上已打开所需的端口。
+- 对于 ASP.NET Core，需要确保将 DefaultAppPool 的应用程序池字段设置为“无托管代码” 。
+- 验证应用中使用的 ASP.NET 版本是否与服务器上安装的版本相同。 对于你的应用，你可在“属性”页面上查看和设置版本。 若要将应用设置为其他版本，必须安装该版本。
+- 如果应用尝试打开，但显示证书警告，请选择信任站点。 如果你已关闭警告，则可在项目中编辑发布配置文件（*.pubxml 文件），并添加以下元素（仅供测试用）：`<AllowUntrustedCertificate>true</AllowUntrustedCertificate>`
+- 如果在 Visual Studio 中无法启动应用，请在 IIS 中启动应用来测试它是否正确部署。
+- 在 Visual Studio 的“输出”窗口中查看状态信息，并查看你的错误消息。
+
+### <a name="open-required-ports-on-windows-server"></a><a name="bkmk_openports"></a> 在 Windows Server 上打开所需的端口
 
 在大多数设置中，必需端口通过安装 ASP.NET 和远程调试器来打开。 但是，如果正在排查部署问题，而且应用受防火墙保护，则你可能需要验证是否打开了正确的端口。
 
@@ -301,7 +314,10 @@ ms.locfileid: "122097015"
 必需端口：
 
 * 80 - 对于 IIS 是必需的
-::: moniker range=">=vs-2019"
+::: moniker range=">=vs-2022"
+* 4026 - 从 Visual Studio 2022 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
+::: moniker-end
+::: moniker range="vs-2019"
 * 4024 - 从 Visual Studio 2019 进行远程调试时必需（有关详细信息，请参阅[远程调试器端口分配](../debugger/remote-debugger-port-assignments.md)）。
 ::: moniker-end
 ::: moniker range="vs-2017"

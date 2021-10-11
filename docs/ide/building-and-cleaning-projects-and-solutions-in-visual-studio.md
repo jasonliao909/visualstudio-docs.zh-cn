@@ -2,7 +2,7 @@
 title: 生成和清理项目和解决方案
 description: 了解如何生成、重新生成或清除解决方案中的所有或部分项目/项目项。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/14/2021
 ms.technology: vs-ide-compile
 ms.topic: conceptual
 f1_keywords:
@@ -25,12 +25,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: ba53fefcc5d29cb47bd3a6912ad7af34dd8deabb
-ms.sourcegitcommit: ae6d47b09a439cd0e13180f5e89510e3e347fd47
+ms.openlocfilehash: 81bf65489fe97dab1a331b8b7d22f8ac05520312
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99850381"
+ms.lasthandoff: 09/24/2021
+ms.locfileid: "128427741"
 ---
 # <a name="build-and-clean-projects-and-solutions-in-visual-studio"></a>在 Visual Studio 中生成和清理项目和解决方案
 
@@ -48,7 +48,7 @@ ms.locfileid: "99850381"
 
 2. 在菜单栏上选择“生成”，然后选择下列命令之一：
 
-    - 选择“生成”或“生成解决方案”，仅编译自最近生成以来更改过的项目文件和组件。
+    - 选择“生成”或“生成解决方案”，或者按 Ctrl+Shift+B，以便仅编译自最新生成以来更改过的项目文件和组件    。
 
         > [!NOTE]
         > 当解决方案包括多个项目时，“生成”命令将变成“生成解决方案”。
@@ -83,11 +83,11 @@ ms.locfileid: "99850381"
 
     - 在菜单栏上，依次选择“生成” > “生成解决方案”(Ctrl+Shift+B)    。
 
-    清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。 默认情况下，此复选框已清除。
+    清理此复选框后，运行以上任一命令时，会生成所有项目、项目依赖项和解决方案文件。
 
 ## <a name="to-build-only-the-selected-visual-c-project"></a>仅生成选定的 Visual C++ 项目
 
-选择 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，然后在菜单栏上选择“生成” > “仅项目”，再选择下列某个命令 ：
+选择 C++ 项目，在菜单栏上选择“生成” > “仅项目”，然后选择以下命令之一 ：
 
 - **仅生成** *ProjectName*
 
@@ -97,11 +97,11 @@ ms.locfileid: "99850381"
 
 - 仅链接 **ProjectName** 
 
-这些命令仅适用于所选的 [!INCLUDE[vcprvc](../code-quality/includes/vcprvc_md.md)] 项目，而不会生成、重新生成、清理或链接任何项目依赖项或解决方案文件。 根据 [!INCLUDE[vsprvs](../code-quality/includes/vsprvs_md.md)] 的版本，“仅项目”子菜单可能包含更多命令。
+这些命令仅适用于所选的 C++ 项目，而不会生成、重新生成、清理或链接任何项目依赖项或解决方案文件。 根据使用的 Visual Studio 版本，“仅项目”子菜单可能包含其他命令。
 
 ## <a name="to-compile-multiple-c-project-items"></a>编译多个 C++ 项目项
 
-在“解决方案资源管理器”中，选择多个具有可编译操作的文件，打开某个文件的快捷菜单，然后选择“编译”。
+在“解决方案资源管理器”中，选择多个具有可编译操作的文件，打开其中一个文件的快捷菜单，然后选择“编译”或按 Ctrl+F7   。
 
 如果文件具有依赖项，则按依赖顺序编译文件。 如果编译时无法提供文件所需的预编译标头，编译操作将失败。 编译操作使用当前的活动解决方案配置。
 
