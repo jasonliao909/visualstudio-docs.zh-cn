@@ -2,7 +2,7 @@
 title: 选项, 文本编辑器, C/C++, 视图
 description: 了解如何使用 C/C++ 部分中的“查看”页面在 Visual Studio 中更改代码波形曲线、无效代码、大纲显示等的默认行为。
 ms.custom: SEO-VS-2020
-ms.date: 10/29/2018
+ms.date: 10/08/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.View
@@ -13,12 +13,12 @@ ms.author: corob
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 68d08953ca3c493f3b3e42dd4ddd84bc19bdfd6e
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: 733598702bfdd05de04249e19f4005af8af60d10
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041069"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704592"
 ---
 # <a name="options-text-editor-cc-view"></a>选项, 文本编辑器, C/C++, 视图
 
@@ -42,11 +42,21 @@ ms.locfileid: "96041069"
 
 - **非活动代码不透明度百分比** - 非活动代码块的不透明度百分比。
 
+## <a name="intellisense-error-fix-suggestions"></a>IntelliSense 错误修复建议
+
+- 启用 IntelliSense 错误修复建议 - 针对 IntelliSense 错误启用建议的修补程序。
+
+- 最大 IntelliSense 错误修复建议线程数 - 用于查找 IntelliSense 错误修复建议的最大并发线程数。
+
+- 最大 IntelliSense 错误修复错误数 - 要查找的最大 IntelliSense 错误修复数。
+
 ## <a name="miscellaneous"></a>杂项
 
 - **枚举注释任务** - 扫描开放源文件以查找 VS 令牌并在“任务列表”窗口中报告它们。
 
 - **突出显示匹配的令牌** - 突出显示与光标所在位置匹配的封闭括号或语法。
+
+- 配色方案 - 各种默认配色方案，适用于特定于 C/C+ + 的自定义颜色。
 
 ## <a name="outlining"></a>大纲显示
 

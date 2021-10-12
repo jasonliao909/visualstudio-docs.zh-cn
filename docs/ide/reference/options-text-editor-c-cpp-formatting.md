@@ -2,7 +2,7 @@
 title: 选项，文本编辑器，C/C++，格式设置
 description: 了解在使用 C 和 C++ 进行编程时，如何使用“格式设置选项”页面及其子页面来设置代码编辑器中的代码格式设置选项。
 ms.custom: SEO-VS-2020
-ms.date: 04/30/2018
+ms.date: 10/08/2021
 ms.topic: reference
 f1_keywords:
 - VS.ToolsOptionsPages.Text_Editor.C/C++.Formatting.General
@@ -18,12 +18,12 @@ ms.author: tglee
 manager: markl
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 264485fd8f20ee31046035dba7b208795d0d91b0
-ms.sourcegitcommit: 967c2f8c1b3f805cf42c0246389517689d971b53
+ms.openlocfilehash: b89e3949a5002d7194939f4edc1bd5c185e145d1
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 11/25/2020
-ms.locfileid: "96041082"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704696"
 ---
 # <a name="options-text-editor-cc-formatting"></a>选项，文本编辑器，C/C++，格式
 
@@ -60,7 +60,7 @@ ms.locfileid: "96041082"
 
 当你键入内容时，Visual Studio 默认在背景应用格式中运行 clangformat.exe。 此外，还可指定仅针对“设置文档格式(Ctrl+K, Ctrl+D)”或“设置选定内容格式(Ctrl+K, Ctrl+F)”这两个手动调用的格式命令运行它。
 
-## <a name="indentation-new-lines-spacing-wrapping-pages"></a>“缩进”、“新行”和“间距换行”页面
+## <a name="indentation-new-lines-spacing-wrapping-pages"></a>“缩进”、“新行”、“间距”和“换行”页面
 
 这些页面支持各种格式自定义；但如果启用了 ClangFormat，则忽略这些页面。
 
