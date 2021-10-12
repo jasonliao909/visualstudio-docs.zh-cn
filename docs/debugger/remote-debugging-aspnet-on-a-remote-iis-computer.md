@@ -12,12 +12,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
 - dotnetcore
-ms.openlocfilehash: bc4c527506c80aaf8d4a0d60a31bd1d2adb4d31f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 376a0f438e17d1023644e545812c50cf35b34dca
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427221"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635927"
 ---
 # <a name="remote-debug-aspnet-core-on-a-remote-iis-computer-in-visual-studio"></a>在 Visual Studio 中远程调试远程 IIS 计算机上的 ASP.NET Core
 
@@ -60,7 +60,7 @@ ms.locfileid: "128427221"
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果开始窗口未打开，请选择“文件” > “开始窗口” 。 键入“Web 应用”，选择“C#”作为语言，然后选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，将项目命名为“MyASPApp”，然后选择“下一步”。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在 Visual Studio 2017 中，选择“文件”>“新建”>“项目”，然后选择“Visual C#”>“Web”>“ASP.NET Core Web 应用程序” 。 在“ASP.NET Core 模板”部分中，选择“Web 应用程序(模型-视图-控制器)”。 确保选择了 ASP.NET Core 2.1，未选择“启用 Docker 支持”，并且“身份验证”设置为“无身份验证”  。 将项目命名为“MyASPApp”。
