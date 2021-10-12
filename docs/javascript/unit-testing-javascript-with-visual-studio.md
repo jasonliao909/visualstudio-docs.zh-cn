@@ -12,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: ca274240c7482b911997470ddaf042158dbecd9d
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: c2a11d163416febf50bb1c4947a069733dd8ae21
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432722"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560875"
 ---
 # <a name="unit-testing-javascript-and-typescript-in-visual-studio"></a>在 Visual Studio 中对 JavaScript 和 TypeScript 代码进行单元测试
 
@@ -33,6 +33,16 @@ ms.locfileid: "128432722"
 有关 ASP.NET Core 和 JavaScript 或 TypeScript，请参阅[编写 ASP.NET Core 单元测试](#write-unit-tests-for-aspnet-core)。
 
 如果你常用的框架不受支持，请参阅[添加对单元测试框架的支持](#addingFramework)，获取有关添加支持的信息。
+
+::: moniker range=">=vs-2022"
+## <a name="write-unit-tests-for-a-cli-based-project-esproj"></a>为基于 CLI 的项目 (.esproj) 编写单元测试
+
+Visual Studio 2022 中支持的基于 CLI 的项目可使用测试资源管理器。 Jest 是用于 React 和 Vue 项目的内置测试框架，Karma 和 Jasmine 用于 Angular 项目。 默认情况下，你将能够运行每个框架提供的默认测试以及你编写的任何其他测试。  只需在测试资源管理器中点击“运行”按钮即可。 如果尚未打开测试资源管理器，请在菜单栏中选择“测试” > “测试资源管理器”以找到它。
+
+需要 Node.js 开发工作负载才能为基于 CLI 的项目支持单元测试。
+
+还支持 Mocha 和 Tape 测试库。 若要使用其中一种测试库，只需将 package.json 中的默认测试库更改为相应的测试库的包即可。
+::: moniker-end
 
 ## <a name="write-unit-tests-in-a-nodejs-project"></a>在 Node.js 项目中编写单元测试
 

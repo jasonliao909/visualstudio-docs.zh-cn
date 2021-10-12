@@ -14,16 +14,16 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 97108256dbfbd35e52f22a88eab16cdff9a6b825
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 147931e623f6663d13be8b7fbee722e96c83187b
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128424785"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561147"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教程：在 Visual Studio 中使用 XAML 和 C&#35 创建第一个通用 Windows 平台应用程序；
 
-在这个 Visual Studio 集成开发环境 (IDE) 简介中，你将创建能在任何 Windows 10 设备上运行的“Hello World”应用。 为此，将使用通用 Windows 平台 (UWP) 项目模板、Extensible Application Markup Language (XAML) 和 C# 编程语言。
+在这个 Visual Studio 集成开发环境 (IDE) 简介中，你将创建能在任何 Windows 10 或更高版本设备上运行的“Hello World”应用。 为此，将使用通用 Windows 平台 (UWP) 项目模板、Extensible Application Markup Language (XAML) 和 C# 编程语言。
 
 ::: moniker range="vs-2017"
 如果尚未安装 Visual Studio，请转到 [Visual Studio 下载](https://visualstudio.microsoft.com/vs/older-downloads/?utm_medium=microsoft&utm_source=docs.microsoft.com&utm_campaign=vs+2017+download)页免费安装。
@@ -304,7 +304,7 @@ ms.locfileid: "128424785"
 
 1. 单击“Hello world”按钮  。
 
-   Windows 10 设备将直接说“Hello, World!”
+   Windows 10 或更高版本设备将逐字说“Hello, World!”
 
 1. 要关闭应用，请在工具栏中单击“停止调试”按钮  （或者，从菜单栏中选择“调试” > “停止调试”或按 Shift+F5。  ）
 
@@ -324,7 +324,7 @@ ms.locfileid: "128424785"
 
 1. 单击“Hello world”按钮  。
 
-   Windows 10 设备将直接说“Hello, World!”
+   Windows 10 或更高版本设备将逐字说“Hello, World!”
 
 1. 要关闭应用，请在工具栏中单击“停止调试”按钮  （或者，从菜单栏中选择“调试” > “停止调试”或按 Shift+F5。  ）
 
@@ -346,7 +346,7 @@ ms.locfileid: "128424785"
 
 1. 选择“Hello world”按钮。
 
-   Windows 10 设备将逐字说“Hello, World!”。
+   Windows 10 或更高版本设备将逐字说“Hello, World!”。
 
 1. 要关闭应用，请在工具栏中选择“停止调试”按钮。 （或者，从菜单栏中选择“调试” > “停止调试”或按 Shift+F5。  ）
 

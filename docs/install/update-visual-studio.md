@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: f5dfb3ec8ffd6bb05943c763611c167cfe2021d6
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0cee8215f049b0a6a50e94797ac3556deeaaacaf
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432304"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561017"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -94,7 +94,7 @@ ms.locfileid: "128432304"
 1. 打开安装程序。 Visual Studio 安装程序可能需要更新才能继续。
 
    > [!NOTE]
-   > 在运行 Windows 10 的计算机上，可以在字母“V”  下找到“Visual Studio 安装程序”  ，也可以在字母“M”  下找到“Microsoft Visual Studio 安装程序”  。
+   > 在运行 Windows 10 或更高版本的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
 
 1. 在安装程序中的“产品”  页上，查找先前已安装的 Visual Studio 版本。
 
@@ -150,7 +150,7 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 1. 打开安装程序。 可能需要先更新安装程序，然后才能继续操作。 如果是这种情况，系统会提示你更新安装程序。
 
    > [!NOTE]
-   > 在运行 Windows 10 的计算机上，可以在字母“V”  下找到“Visual Studio 安装程序”  ，也可以在字母“M”  下找到“Microsoft Visual Studio 安装程序”  。
+   > 在运行 Windows 10 或更高版本的计算机上，可以在字母“V”下找到“Visual Studio 安装程序”，也可以在字母“M”下找到“Microsoft Visual Studio 安装程序”。
 
 1. 在安装程序中的“产品”  页上，查找先前已安装的 Visual Studio 版本。
 

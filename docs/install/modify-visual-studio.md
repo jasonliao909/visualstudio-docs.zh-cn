@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 692b1aedf5c55d2162a28e96ae9cdbdadd9529e6
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0e679e903c797d78403d2123ddecee5d8bc22fda
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430222"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561108"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作负载、组件和语言包
 
@@ -55,7 +55,7 @@ ms.locfileid: "128430222"
 
 1. 在计算机上找到 Visual Studio 安装程序。
 
-     例如，在运行 Windows 10 的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出    。
+     例如，在运行 Windows 10 或更高版本的计算机上，选择“开始”，然后滚动到字母“V”，它作为“Visual Studio 安装程序”在那里列出  。
 
      ![显示 Windows 10 的“开始”菜单中 Visual Studio 安装程序条目的屏幕截图。](media/locate-the-visual-studio-installer.png "找到 Microsoft Visual Studio 安装程序")
 
