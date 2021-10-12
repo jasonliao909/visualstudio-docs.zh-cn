@@ -4,20 +4,20 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 0a02232c-437f-4c48-85c1-93ca7887236b
-ms.date: 03/19/2021
+ms.date: 10/08/2021
 ms.topic: how-to
 description: 了解订阅中包含哪些权益，以及如何激活这些权益。
-ms.openlocfilehash: 2574ecf1612fc82093f9c9a7d1dbf2cd0366382c
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 1943fc0f4b10fa6fcdc4e9dcfb464febce23f2d9
+ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430490"
+ms.lasthandoff: 10/09/2021
+ms.locfileid: "129704728"
 ---
 # <a name="about-your-subscription-benefits"></a>关于订阅权益
 作为 Visual Studio 订阅者，你有权访问各种权益，具体取决于你的订阅级别。 权益有几个需要注意的重要事项。
 
-## <a name="benefits-that-vary-based-on-your-subscription"></a>因订阅而异的权益 
+## <a name="benefits-vary-based-on-your-subscription"></a>因订阅而异的权益 
 订阅中包含的权益取决于你拥有的订阅类型。 若要查看各种订阅中包含的权益，请访问我们的 [Visual Studio 订阅权益页面](https://visualstudio.microsoft.com/vs/benefits/)。 可以按订阅级别和权益类别筛选视图，以获取所需的特定信息。 
 
 还可以使用此站点上的文章来确定你的订阅中是否包含特定权益。 涵盖权益的每篇文章都包含“资格”部分，其中显示了所包含的订阅。
