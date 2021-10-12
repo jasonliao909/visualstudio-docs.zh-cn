@@ -15,12 +15,12 @@ ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 1fa5515ea3c103579ca2df8de954e88a07cbbe29
-ms.sourcegitcommit: 5f1e0171626e13bb2c5a6825e28dde48061208a4
+ms.openlocfilehash: 6ea712fa37a79542f26f110c0aa60ca45a6ebaab
+ms.sourcegitcommit: 92be6860ccffc03799833c76084d85f67efe5c57
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/09/2021
-ms.locfileid: "129704574"
+ms.lasthandoff: 10/05/2021
+ms.locfileid: "129527408"
 ---
 # <a name="visual-studio-docs-whats-new-for-september-2021"></a>Visual Studio 文档：2021 年 9 月新增功能
 
@@ -236,7 +236,7 @@ ms.locfileid: "129704574"
 **新文章**
 
 - [Visual Studio 2022（预览版）中的新增功能](./whats-new-visual-studio-2022.md)
-- [报告问题：状态和常见问题解答](./how-to-report-a-problem-with-visual-studio.md)
+- [报告问题：状态和常见问题解答](./report-a-problem.yml)
 
 **更新的文章**
 - [在文件中查找](./find-in-files.md) - 添加了“多个搜索”部分，以及常规更新
