@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: a33871a9a80dfcb6260f57e504c72ae2f72077bd
-ms.sourcegitcommit: 5654b7a57a9af111a6f29239212d76086bc745c9
+ms.openlocfilehash: 4a6afc117b2457b9be9a3aeb3703695fe2e1a230
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101750796"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129638768"
 ---
 ## <a name="prerequisites"></a>先决条件
 
@@ -27,7 +27,7 @@ ms.locfileid: "101750796"
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果开始窗口未打开，请选择“文件” > “开始窗口” 。 在搜索框中键入“Web 应用”，选择“C#”作为语言，然后选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，将项目命名为“MyASPApp”，然后选择“下一步”。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在 Visual Studio 2017 中，选择“文件” > “新建项目”，然后选择“Visual C#” > “.NET Core”，再选择“ASP.NET Core Web 应用程序”    。 系统出现提示时，请选择“Web 应用程序(模型-视图-控制器)”模板，确保选中“无身份验证”，然后选择“确定”。
