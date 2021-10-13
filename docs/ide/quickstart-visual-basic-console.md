@@ -186,11 +186,11 @@ ms.locfileid: "128427793"
 
 选择 Visual Basic 项目模板并为项目命名后，Visual Studio 会创建一个简单的“Hello World!” 应用程序。 Program.vb 文件包含默认代码，该代码调用 <xref:System.Console.WriteLine%2A> 方法以在控制台窗口中 显示文本字符串“Hello World!”。
 
-:::image type=&quot;content&quot; source=&quot;media/vs-2022/vb-console-hello-world-template.png&quot; alt-text=&quot;显示 Program.vb 文件中默认“Hello World”代码的屏幕截图。&quot;:::
+:::image type="content" source="media/vs-2022/vb-console-hello-world-template.png" alt-text="显示 Program.vb 文件中默认“Hello World”代码的屏幕截图。":::
 
 选择“HelloWorld”按钮或按 Ctrl+F5，以在调试模式下运行默认“HelloWorld”代码  。
 
-:::image type=&quot;content&quot; source=&quot;media/vs-2022/vb-console-hello-world-button.png&quot; alt-text=&quot;显示 Visual Studio 工具栏中突出显示的“HelloWorld”按钮的屏幕截图。&quot;:::
+:::image type="content" source="media/vs-2022/vb-console-hello-world-button.png" alt-text="显示 Visual Studio 工具栏中突出显示的“HelloWorld”按钮的屏幕截图。":::
 
 当应用程序在 Microsoft Visual Studio 调试控制台中运行时，控制台窗口会一直保持打开状态，直到你按下某个键。 
 
