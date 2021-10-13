@@ -596,7 +596,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ![显示 Visual Studio 中的“重命名”操作的屏幕截图。](media/rename-quick-action.png)
    ::: moniker-end
    ::: moniker range=">=vs-2022&quot;
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/rename.png&quot; alt-text=&quot;显示 Visual Studio 中的“重命名”操作的屏幕截图。&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/rename.png" alt-text="显示 Visual Studio 中的“重命名”操作的屏幕截图。" border="false":::
    ::: moniker-end
 
    该变量会在整个项目中进行重命名，本例中只有两处。
@@ -615,7 +615,7 @@ Visual Studio 有三个版本：社区版、专业版和企业版。 请参阅[�
    ![显示 Visual Studio 中的 IntelliSense 列表成员的屏幕截图。](media/intellisense-list-members.png)
    ::: moniker-end
    ::: moniker range=">=vs-2022&quot;
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/intellisense-list-members.png&quot; alt-text=&quot;显示 Visual Studio 中的 IntelliSense 列表成员的屏幕截图。&quot; border=&quot;false&quot;:::
+   :::image type="content" source="media/vs-2022/intellisense-list-members.png" alt-text="显示 Visual Studio 中的 IntelliSense 列表成员的屏幕截图。" border="false":::
    ::: moniker-end
 
 1. 选择名为“Now”的成员，它是类的属性。 双击“Now”，或将其选中并按 Tab 键 。
