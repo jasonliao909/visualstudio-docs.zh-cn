@@ -18,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-modeling
 ms.workload:
 - multiple
-ms.openlocfilehash: ce1a760bd51a9d3476354cdd63fdcebcad311552
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4b396d1f348ef3fc002979026168b325341c691e
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122085619"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635875"
 ---
 # <a name="scenario-change-your-design-using-visualization-and-modeling"></a>方案：使用可视化和建模更改设计
 
@@ -221,7 +221,7 @@ Visual Studio 建模图与 Team Foundation Server 集成在一起，方便你更
 
 - [图表、仪表板和小组件 (Azure DevOps Services)](/azure/devops/report/dashboards/overview?view=vsts&preserve-view=true)
 
-- [使用 Project 创建积压工作 (backlog) 和任务](/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
+- [使用 Project 创建积压工作 (backlog) 和任务](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 
 ### <a name="test-validate-and-check-in-code"></a><a name="TestValidateCheckInCode"></a> 测试、验证和签入代码
 
