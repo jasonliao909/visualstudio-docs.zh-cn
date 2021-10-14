@@ -1,7 +1,7 @@
 ---
 title: 了解解决方案资源管理器
 description: 了解如何在 Visual Studio 中使用解决方案资源管理器工具窗口创建和管理文件、项目以及解决方案。
-ms.date: 09/23/2021
+ms.date: 09/30/2021
 ms.topic: conceptual
 ms.custom: contperf-fy22q1
 f1_keywords:
@@ -14,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 3daeaa66024db2b3053dd81b205e48b0e215e310
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a68e4a5bf7b46c45aaf7061e1b994621d975a371
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429335"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129339569"
 ---
 # <a name="learn-about-solution-explorer"></a>了解解决方案资源管理器
 
@@ -59,7 +59,7 @@ ms.locfileid: "128429335"
 - “返回”按钮，用于在搜索结果之间切换
 - “转发”按钮，用于在搜索结果之间切换
 - “主页”按钮，用于返回默认视图
-- “切换”按钮，用于在解决方案和可用视图之间切换
+- “切换视图”按钮，用于在解决方案和可用视图之间切换
 - “挂起的更改筛选器”按钮和下拉菜单，用于查看打开的文件或具有挂起的更改的文件
 - “与活动文档同步”按钮，用于在代码编辑器中查找文件
 - “刷新”按钮，仅在选择依赖项（例如函数或包）时出现

@@ -2,7 +2,7 @@
 title: 键盘快捷方式
 description: 了解 Visual Studio 中的默认键盘快捷方式，以便通过它们访问各种命令和窗口。
 ms.custom: SEO-VS-2020
-ms.date: 09/14/2021
+ms.date: 09/23/2021
 ms.topic: reference
 helpviewer_keywords:
 - shortcut keys [Visual Studio], keyboard binding schemes
@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: f78b1c7453f0aa331239bfa26c6d1abda1c1289c
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 75c7ddb84d561c123a7bb7bc1bc4a41df2a711b8
+ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430666"
+ms.lasthandoff: 10/01/2021
+ms.locfileid: "129339624"
 ---
 # <a name="keyboard-shortcuts-in-visual-studio"></a>Visual Studio 中的键盘快捷方式
 
@@ -48,8 +48,17 @@ ms.locfileid: "128430666"
 > [!NOTE]
 > 通过打开“选项”对话框，展开“环境”节点，然后选择“键盘”，可以[查找任何命令的快捷方式](identifying-and-customizing-keyboard-shortcuts-in-visual-studio.md)  。
 
+- [生成](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build-popular-shortcuts)
+- [调试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug-popular-shortcuts)
+- [编辑](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit-popular-shortcuts)
+- [文件](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file-popular-shortcuts)
+- [项目](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project-popular-shortcuts)
+- [重构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor-popular-shortcuts)
+- [工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools-popular-shortcuts)
+- [视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view-popular-shortcuts)
+- [窗口](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window-popular-shortcuts)
 
-#### <a name="build-popular-shortcuts"></a>生成：常用快捷方式
+#### <a name="build-popular-shortcuts"></a><a name="bkmk_build-popular-shortcuts"></a> 生成：常用快捷方式
 
 |命令|键盘快捷键 |命令 ID|
 |-|-|-|
@@ -58,7 +67,7 @@ ms.locfileid: "128430666"
 |Compile|**Ctrl+F7** | 生成.编译 |
 |对解决方案运行代码分析|**Alt+F11**| 生成.对解决方案运行代码分析 |
 
-#### <a name="debug-popular-shortcuts"></a>调试：常用快捷方式
+#### <a name="debug-popular-shortcuts"></a><a name="bkmk_debug-popular-shortcuts"></a> 调试：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
@@ -78,7 +87,7 @@ ms.locfileid: "128430666"
 |停止调试|**Shift+F5**| 调试.停止调试 |
 |切换断点|**F9**| 调试.切换断点 |
 
-#### <a name="edit-popular-shortcuts"></a>编辑：常用快捷方式
+#### <a name="edit-popular-shortcuts"></a><a name="bkmk_edit-popular-shortcuts"></a> 编辑：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
@@ -129,7 +138,7 @@ ms.locfileid: "128430666"
 |字词 - 删除至结尾|**Ctrl+Delete** [文本编辑器]| 编辑.字删除直至结尾处 |
 |字词 - 删除至开头|**Ctrl+Backspace** [文本编辑器]| 编辑.字删除直至开始处 |
 
-#### <a name="file-popular-shortcuts"></a>文件：常用快捷方式
+#### <a name="file-popular-shortcuts"></a><a name="bkmk_file-popular-shortcuts"></a> 文件：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
@@ -145,26 +154,26 @@ ms.locfileid: "128430666"
 |保存选定项|**Ctrl+S**| 文件.保存选定项 |
 |在浏览器中查看|**Ctrl+Shift+W**| 文件.在浏览器中查看 |
 
-#### <a name="project-popular-shortcuts"></a>项目：常用快捷方式
+#### <a name="project-popular-shortcuts"></a><a name="bkmk_project-popular-shortcuts"></a> 项目：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
 |添加现有项|**Shift+Alt+A**| 项目.添加现有项 |
 |添加新项|**Ctrl+Shift+A**| 项目.添加新项 |
 
-#### <a name="refactor-popular-shortcuts"></a>重构：常用快捷方式
+#### <a name="refactor-popular-shortcuts"></a><a name="bkmk_refactor-popular-shortcuts"></a> 重构：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
 |提取方法|**Ctrl+R、Ctrl+M**| 重构.提取方法 |
 
-#### <a name="tools-popular-shortcuts"></a>工具：常用快捷方式
+#### <a name="tools-popular-shortcuts"></a><a name="bkmk_tools-popular-shortcuts"></a> 工具：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
 |附加到进程|**Ctrl+Alt+P**| 工具.附加到进程 |
 
-#### <a name="view-popular-shortcuts"></a>视图：常用快捷方式
+#### <a name="view-popular-shortcuts"></a><a name="bkmk_view-popular-shortcuts"></a> 视图：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
@@ -185,7 +194,7 @@ ms.locfileid: "128430666"
 |查看代码|**Enter** [类图]<br /><br />或 **F7** [设置设计器]| 视图.查看代码 |
 |视图设计器|**Shift+F7** [HTML 编辑器源视图]| 视图.视图设计器 |
 
-#### <a name="window-popular-shortcuts"></a>窗口：常用快捷方式
+#### <a name="window-popular-shortcuts"></a><a name="bkmk_window-popular-shortcuts"></a> 窗口：常用快捷方式
 
 |命令|键盘快捷方式 [特殊上下文]|命令 ID|
 |-|-|-|
@@ -200,46 +209,53 @@ ms.locfileid: "128430666"
 
 这些键盘快捷键为全局快捷键，这意味着你可以在任何 Visual Studio 窗口具有焦点时使用它们。
 
-- [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze)
-- [编辑](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit)
-- [Project](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project)
-- [测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test)
-- [体系结构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture)
-- [编辑器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext)
-- [项目和解决方案上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext)
-- [测试资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
-- [生成](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build)
-- [文件](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file)
-- [重构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor)
-- [工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools)
-- [类视图上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview)
-- [帮助](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help)
+- [分析](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_analyze-global-shortcuts)
+- [体系结构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_architecture-global-shortcuts)
+- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure-global-shortcuts)
+- [生成](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_build-global-shortcuts)
+- [类视图上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_classview-global-shortcuts)
+- [调试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug-global-shortcuts)
+- [调试上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger-global-shortcuts)
+- [诊断中心](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics-global-shortcuts)
+- [编辑](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_edit-global-shortcuts)
+- [编辑器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_editorContext-global-shortcuts)
+- [文件](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_file-global-shortcuts)
+- [帮助](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_help-global-shortcuts)
+- [负载测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest-global-shortcuts)
+- [其他上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext-global-shortcuts)
+- [项目](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_project-global-shortcuts)
+- [项目和解决方案上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_projectContext-global-shortcuts)
+- [重构](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_refactor-global-shortcuts)
 - [解决方案资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solutionexplorerGLOBAL)
-- [视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view)
-- [调试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debug)
-- [负载测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_loadtest)
-- [团队](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team)
-- [窗口](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window)
-- [调试器上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_debugger)
-- [其他上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_otherContext)
-- [Team Foundation 上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext)
-- [Azure](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windowsazure)
-- [诊断中心](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_diagnostics)
+- [团队](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team-global-shortcuts)
+- [Team Foundation 上下文菜单](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_TFcontext-global-shortcuts)
+- [测试](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test-global-shortcuts)
+- [测试资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_testexplorerGLOBAL)
+- [工具](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_tools-global-shortcuts)
+- [视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view-global-shortcuts)
+- [窗口](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_window-global-shortcuts)
 
-### <a name="analyze"></a><a name="bkmk_analyze"></a>分析
+### <a name="analyze-global-shortcuts"></a><a name="bkmk_analyze-global-shortcuts"></a> 分析：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |向后导航|**Shift+Alt+3**| 分析.向后定位 |
 |向前导航|**Shift+Alt+4**| 分析.向前定位 |
 
-### <a name="architecture"></a><a name="bkmk_architecture"></a>体系结构
+### <a name="architecture-global-shortcuts"></a><a name="bkmk_architecture-global-shortcuts"></a> 体系结构：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |新建关系图|**Ctrl+\\、Ctrl+N**| 体系结构.新建关系图 |
 
-### <a name="build"></a><a name="bkmk_build"></a>生成
+### <a name="azure-global-shortcuts"></a><a name="bkmk_windowsazure-global-shortcuts"></a> Azure：全局快捷方式
+
+|命令|键盘快捷键|命令 ID|
+|-|-|-|
+|重试移动服务脚本操作|**Ctrl+Num \*、Ctrl+R**| WindowsAzure.重试移动服务脚本操作 |
+|显示移动服务脚本错误详细信息|**Ctrl+Num \*、Ctrl+D**| WindowsAzure.显示移动服务脚本错误详细信息 |
+
+### <a name="build-global-shortcuts"></a><a name="bkmk_build-global-shortcuts"></a> 生成：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -249,13 +265,13 @@ ms.locfileid: "128430666"
 |Compile|**Ctrl+F7**| 生成.编译 |
 |对解决方案运行代码分析|**Alt+F11**| 生成.对解决方案运行代码分析 |
 
-### <a name="class-view-context-menus"></a><a name="bkmk_classview"></a>类视图上下文菜单
+### <a name="class-view-context-menus-global-shortcuts"></a><a name="bkmk_classview-global-shortcuts"></a> 类视图上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |属性|**Alt+Enter**| 类视图上下文菜单.类视图多选项目引用项.属性 |
 
-### <a name="debug"></a><a name="bkmk_debug"></a>调试
+### <a name="debug-global-shortcuts"></a><a name="bkmk_debug-global-shortcuts"></a> 调试：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -326,7 +342,7 @@ ms.locfileid: "128430666"
 |监视 3|**Ctrl+Alt+W、3**| 调试.监视3 |
 |监视 4|**Ctrl+Alt+W、4**| 调试.监视4 |
 
-### <a name="debugger-context-menus"></a><a name="bkmk_debugger"></a>调试器上下文菜单
+### <a name="debugger-context-menus-global-shortcuts"></a><a name="bkmk_debugger-global-shortcuts"></a> 调试器上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -334,13 +350,13 @@ ms.locfileid: "128430666"
 |转到反汇编|**Alt+F9、A**| 调试器上下文菜单.断点窗口.转到反汇编 |
 |转到源代码|**Alt+F9、S**| 调试器上下文菜单.断点窗口.转到源代码 |
 
-### <a name="diagnostics-hub"></a><a name="bkmk_diagnostics"></a>诊断中心
+### <a name="diagnostics-hub-global-shortcuts"></a><a name="bkmk_diagnostics-global-shortcuts"></a> 诊断中心：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |停止收集|**Ctrl+Alt+F2**| 诊断中心.停止收集 |
 
-### <a name="edit"></a><a name="bkmk_edit"></a>编辑
+### <a name="edit-global-shortcuts"></a><a name="bkmk_edit-global-shortcuts"></a> 编辑：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -400,7 +416,7 @@ ms.locfileid: "128430666"
 |环绕|**Ctrl+K、Ctrl+S**| 编辑.外侧代码 |
 |撤消|**Ctrl+Z**<br /><br /> or<br /><br /> **Alt+Backspace**| 编辑.取消 |
 
-### <a name="editor-context-menus"></a><a name="bkmk_editorContext"></a>编辑器上下文菜单
+### <a name="editor-context-menus-global-shortcuts"></a><a name="bkmk_editorContext-global-shortcuts"></a> 编辑器上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -413,7 +429,7 @@ ms.locfileid: "128430666"
 |切换标头代码文件|**Ctrl+K、Ctrl+O**（字母“O”）| 编辑器上下文菜单.代码窗口.切换标头代码文件 |
 |查看调用层次结构|**Ctrl+K、Ctrl+T**<br /><br /> or<br /><br /> **Ctrl+K、T**| 编辑器上下文菜单.代码窗口.查看调用层次结构 |
 
-### <a name="file"></a><a name="bkmk_file"></a>文件
+### <a name="file-global-shortcuts"></a><a name="bkmk_file-global-shortcuts"></a> 文件：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -429,7 +445,7 @@ ms.locfileid: "128430666"
 |保存选定项|**Ctrl+S**| 文件.保存选定项 |
 |在浏览器中查看|**Ctrl+Shift+W**| 文件.在浏览器中查看 |
 
-### <a name="help"></a><a name="bkmk_help"></a>帮助
+### <a name="help-global-shortcuts"></a><a name="bkmk_help-global-shortcuts"></a> 帮助：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -438,19 +454,19 @@ ms.locfileid: "128430666"
 |查看帮助|**Ctrl+F1**| Help.ViewHelp |
 |窗口帮助|**Shift+F1**| 帮助.窗口帮助 |
 
-### <a name="load-test"></a><a name="bkmk_loadtest"></a>负载测试
+### <a name="load-test-global-shortcuts"></a><a name="bkmk_loadtest-global-shortcuts"></a> 负载测试：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |跳至计数器窗格|**Ctrl+R、Q**| 负载测试.跳至计数器窗格 |
 
-### <a name="other-context-menus"></a><a name="bkmk_otherContext"></a>其他上下文菜单
+### <a name="other-context-menus-global-shortcuts"></a><a name="bkmk_otherContext-global-shortcuts"></a> 其他上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |添加新关系图|插入| 其他上下文菜单.Microsoft 数据实体设计上下文.添加新关系图 |
 
-### <a name="project"></a><a name="bkmk_project"></a>项目
+### <a name="project-global-shortcuts"></a><a name="bkmk_project-global-shortcuts"></a> 项目：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -462,14 +478,14 @@ ms.locfileid: "128430666"
 |发布选定的文件|依次按 Alt+; 和 Alt+P| 项目.发布选定文件 |
 |替换服务器中的选定文件|依次按 Alt+; 和 Alt+R| 项目.替换服务器上的选定文件 |
 
-### <a name="project-and-solution-context-menus"></a><a name="bkmk_projectContext"></a>项目和解决方案上下文菜单
+### <a name="project-and-solution-context-menus-global-shortcuts"></a><a name="bkmk_projectContext-global-shortcuts"></a> 项目和解决方案上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |下移|**Alt+向下键**| 项目和解决方案上下文菜单.项.下移 |
 |上移|**Alt+向上键**| 项目和解决方案上下文菜单.项.上移 |
 
-### <a name="refactor"></a><a name="bkmk_refactor"></a>重构
+### <a name="refactor-global-shortcuts"></a><a name="bkmk_refactor-global-shortcuts"></a> 重构：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -480,7 +496,7 @@ ms.locfileid: "128430666"
 |重命名|**Ctrl+R、Ctrl+R**| 重构.重命名 |
 |重新排列参数|**Ctrl+R、Ctrl+O**（字母“O”）| 重构.重新排列参数 |
 
-### <a name="solution-explorer"></a><a name="bkmk_solutionexplorerGLOBAL"></a>解决方案资源管理器
+### <a name="solution-explorer-global-shortcuts"></a><a name="bkmk_solutionexplorerGLOBAL"></a> 解决方案资源管理器：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -488,7 +504,7 @@ ms.locfileid: "128430666"
 |挂起的更改筛选器|**Ctrl+[** 、**P**<br /><br /> or<br /><br /> **Ctrl+[** 、**Ctrl+P**| 解决方案资源管理器.挂起更改筛选器 |
 |与活动文档同步|**Ctrl+[** 、**S**<br /><br /> or<br /><br /> **Ctrl+[** 、**Ctrl+S**| 解决方案资源管理器.与活动文档同步 |
 
-### <a name="team"></a><a name="bkmk_team"></a>团队
+### <a name="team-global-shortcuts"></a><a name="bkmk_team-global-shortcuts"></a> 团队：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -497,7 +513,7 @@ ms.locfileid: "128430666"
 |转到 git 提交|**Ctrl+0**（数字“0”）、**Ctrl+O**（字母“O”）<br /><br /> or<br /><br /> **Ctrl+0、O**| 团队.Git.转到 Git 提交 |
 |团队资源管理器搜索|**Ctrl+'**| 团队.团队资源管理器搜索 |
 
-### <a name="team-foundation-context-menus"></a><a name="bkmk_TFcontext"></a>Team Foundation 上下文菜单
+### <a name="team-foundation-context-menus-global-shortcuts"></a><a name="bkmk_TFcontext-global-shortcuts"></a> Team Foundation 上下文菜单：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -512,14 +528,14 @@ ms.locfileid: "128430666"
 |转到 Web 访问|**Ctrl+0**（数字“0”）、**Ctrl+A**<br /><br /> or<br /><br /> **Ctrl+0、A**| Team Foundation 上下文菜单.命令.转到 Web 访问 |
 |转到工作项|**Ctrl+0**（数字“0”）、**Ctrl+W**<br /><br /> or<br /><br /> **Ctrl+0、W**| Team Foundation 上下文菜单.命令.转到工作项 |
 
-### <a name="test"></a><a name="bkmk_test"></a>测试
+### <a name="test-global-shortcuts"></a><a name="bkmk_test-global-shortcuts"></a> 测试：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
 |使用编码的 UI 测试生成器|**Ctrl+\\、Ctrl+C**| 测试.使用编码的 UI 测试生成器 |
 |使用现有的操作录制|**Ctrl+\\、Ctrl+A**| 测试.使用现有的操作录制 |
 
-### <a name="test-explorer"></a><a name="bkmk_testexplorerGLOBAL"></a>测试资源管理器
+### <a name="test-explorer-global-shortcuts"></a><a name="bkmk_testexplorerGLOBAL"></a> 测试资源管理器：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -533,7 +549,7 @@ ms.locfileid: "128430666"
 |打开选项卡|Ctrl+E、L| LiveUnitTesting.OpenTab |
 |代码覆盖率结果|**Ctrl+E、C**| Test.CodeCoverageResults |
 
-### <a name="tools"></a><a name="bkmk_tools"></a>工具
+### <a name="tools-global-shortcuts"></a><a name="bkmk_tools-global-shortcuts"></a> 工具：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -541,7 +557,7 @@ ms.locfileid: "128430666"
 |代码片段管理器|**Ctrl+K、Ctrl+B**| 工具.代码段管理器 |
 |强制 GC|**Ctrl+Shift+Alt+F12、Ctrl+Shift+Alt+F12**| 工具.强制 GC |
 
-### <a name="view"></a><a name="bkmk_view"></a>视图
+### <a name="view-global-shortcuts"></a><a name="bkmk_view-global-shortcuts"></a> 视图：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -591,7 +607,7 @@ ms.locfileid: "128430666"
 |缩小|**Ctrl+Shift+,**| 视图.缩小 |
 |显示测试资源管理器|Ctrl+E、T| TestExplorer.ShowTestExplorer |
 
-### <a name="window"></a><a name="bkmk_window"></a>窗口
+### <a name="window-global-shortcuts"></a><a name="bkmk_window-global-shortcuts"></a> Windows：全局快捷方式
 
 |命令|键盘快捷键|命令 ID|
 |-|-|-|
@@ -622,17 +638,58 @@ ms.locfileid: "128430666"
 |解决方案资源管理器搜索|**Ctrl+;**| 窗口.解决方案资源管理器搜索 |
 |窗口搜索|**Alt+`**| 窗口.窗口搜索 |
 
-### <a name="azure"></a><a name="bkmk_windowsazure"></a>Azure
-
-|命令|键盘快捷键|命令 ID|
-|-|-|-|
-|重试移动服务脚本操作|**Ctrl+Num \*、Ctrl+R**| WindowsAzure.重试移动服务脚本操作 |
-|显示移动服务脚本错误详细信息|**Ctrl+Num \*、Ctrl+D**| WindowsAzure.显示移动服务脚本错误详细信息 |
-
 ## <a name="context-specific-shortcuts"></a>上下文特定的快捷方式
+这些键盘快捷方式是特定于上下文的，这意味着你可以在 Visual Studio 中使用特定于项目类型、编程语言或平台的菜单和项目。
 
+- [ADO.NET 实体数据模型设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_adonet-entity-data-model-designer-context-specific-shortcuts)
+- [类图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_class-diagram-context-specific-shortcuts)
+- [编码的 UI 测试编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_coded-ui-test-editor-context-specific-shortcuts)
+- [数据集编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dataset-editor-context-specific-shortcuts)
+- [差异查看器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_difference-viewer-context-specific-shortcuts)
+- [DOM 资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_dom-explorer-context-specific-shortcuts)
+- [F# Interactive](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_f-interactive-context-specific-shortcuts)
+- [关系图文档编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graph-document-editor-context-specific-shortcuts)
+- [图形诊断](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_graphics-diagnostics-context-specific-shortcuts)
+- [HTML 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_html-editor-context-specific-shortcuts)
+- [HTML 编辑器设计视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_html-editor-design-view-context-specific-shortcuts)
+- [HTML 编辑器源视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_html-editor-source-view-context-specific-shortcuts)
+- [层关系图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_layer-diagram-context-specific-shortcuts)
+- [托管资源编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_managed-resources-editor-context-specific-shortcuts)
+- [合并编辑器窗口](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_merge-editor-window-context-specific-shortcuts)
+- [Microsoft SQL Server Data Tools，架构比较](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_microsoft-sql-server-data-tools-schema-compare-context-specific-shortcuts)
+- [Microsoft SQL Server Data Tools，表设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_microsoft-sql-server-data-tools-table-designer-context-specific-shortcuts)
+- [Microsoft SQL Server Data Tools，T-SQL 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_microsoft-sql-server-data-tools-t-sql-editor-context-specific-shortcuts)
+- [Microsoft SQL Server Data Tools，T-SQL PDW 编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_microsoft-sql-server-data-tools-t-sql-pdw-editor-context-specific-shortcuts)
+- [Page Inspector](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_page-inspector-context-specific-shortcuts)
+- [查询设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_query-designer-context-specific-shortcuts)
+- [查询结果](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_query-results-context-specific-shortcuts)
+- [报表设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_report-designer-context-specific-shortcuts)
+- [序列图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_sequence-diagram-context-specific-shortcuts)
+- [设置设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_settings-designer-context-specific-shortcuts)
+- [解决方案资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_solution-explorer-context-specific-shortcuts)
+- [Team Explorer](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_team-explorer-context-specific-shortcuts)
+- [测试资源管理器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_test-explorer-context-specific-shortcuts)
+- [文本编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_text-editor-context-specific-shortcuts)
+- [UML 活动图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_uml-activity-diagram-context-specific-shortcuts)
+- [UML 类图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_uml-class-diagram-context-specific-shortcuts)
+- [UML 组件图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_uml-component-diagram-context-specific-shortcuts)
+- [UML 用例图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_uml-use-case-diagram-context-specific-shortcuts)
+- [VC 快捷键编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vc-accelerator-editor-context-specific-shortcuts)
+- [VC 对话框编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vc-dialog-editor-context-specific-shortcuts)
+- [VC 图像编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vc-image-editor-context-specific-shortcuts)
+- [VC 字符串编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_vc-string-editor-context-specific-shortcuts)
+- [视图设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_view-designer-context-specific-shortcuts)
+- [Visual Studio](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_visual-studio-context-specific-shortcuts)
+- [Windows Forms Designer — Windows 窗体设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_windows-forms-designer-context-specific-shortcuts)
+- [工作项编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_work-item-editor-context-specific-shortcuts)
+- [工作项查询视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_work-item-query-view-context-specific-shortcuts)
+- [工作项结果视图](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_work-item-results-view-context-specific-shortcuts)
+- [工作流设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_workflow-designer-context-specific-shortcuts)
+- [XAML 设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xaml-ui-designer-context-specific-shortcuts)
+- [XML（文本）编辑器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xml-text-editor-context-specific-shortcuts)
+- [XML 架构设计器](../ide/default-keyboard-shortcuts-in-visual-studio.md#bkmk_xml-schema-designer-context-specific-shortcuts)
 
-### <a name="adonet-entity-data-model-designer"></a>ADO.NET 实体数据模型设计器
+### <a name="adonet-entity-data-model-designer-context-specific-shortcuts"></a><a name="bkmk_adonet-entity-data-model-designer-context-specific-shortcuts"></a> ADO.NET 实体数据模型设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -649,7 +706,7 @@ ms.locfileid: "128430666"
 |实体数据模型浏览器|**Ctrl+1**| 视图.实体数据模型资源浏览器 |
 |实体数据模型映射详细信息|**Ctrl+2**| 视图.实体数据模型映射详细信息 |
 
-### <a name="class-diagram"></a>类图
+### <a name="class-diagram-context-specific-shortcuts"></a><a name="bkmk_class-diagram-context-specific-shortcuts"></a> 类图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -664,7 +721,7 @@ ms.locfileid: "128430666"
 |从关系图中删除|**删除**| 编辑.从关系图中移除 |
 |查看代码|Enter| 视图.查看代码 |
 
-### <a name="coded-ui-test-editor"></a>编码的 UI 测试编辑器
+### <a name="coded-ui-test-editor-context-specific-shortcuts"></a><a name="bkmk_coded-ui-test-editor-context-specific-shortcuts"></a> 编码的 UI 测试编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -678,7 +735,7 @@ ms.locfileid: "128430666"
 |移动代码|**Ctrl+Alt+C**| 其他上下文菜单.UI 测试编辑器上下文菜单.移动代码 |
 |拆分成新方法|**Ctrl+Shift+T**| 其他上下文菜单.UI 测试编辑器上下文菜单.拆分成新方法 |
 
-### <a name="dataset-editor"></a>数据集编辑器
+### <a name="dataset-editor-context-specific-shortcuts"></a><a name="bkmk_dataset-editor-context-specific-shortcuts"></a> 数据集编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -688,7 +745,7 @@ ms.locfileid: "128430666"
 |插入列|插入| OtherContextMenus.ColumnContext.InsertColumn |
 |列|**Ctrl+L**| OtherContextMenus.DbTableContext.Add.Column |
 
-### <a name="difference-viewer"></a>差异查看器
+### <a name="difference-viewer-context-specific-shortcuts"></a><a name="bkmk_difference-viewer-context-specific-shortcuts"></a> 差异查看器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -707,7 +764,7 @@ ms.locfileid: "128430666"
 |添加注释|**Ctrl+Shift+K**| 编辑器上下文菜单.代码窗口.添加注释 |
 |编辑本地文件|**Ctrl+Shift+P**| 编辑器上下文菜单.代码窗口.编辑本地文件 |
 
-### <a name="dom-explorer"></a>DOM 资源管理器
+### <a name="dom-explorer-context-specific-shortcuts"></a><a name="bkmk_dom-explorer-context-specific-shortcuts"></a> DOM 资源管理器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -718,7 +775,7 @@ ms.locfileid: "128430666"
 |选择元素|**Ctrl+B**| DOM 资源管理器.选择元素 |
 |显示布局|**Ctrl+Shift+I**| DOM 资源管理器.显示布局 |
 
-### <a name="f-interactive"></a>F# 交互
+### <a name="f-interactive-context-specific-shortcuts"></a><a name="bkmk_f-interactive-context-specific-shortcuts"></a> F# 交互窗口：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -727,7 +784,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |取消交互式评估|**Ctrl+Break**| 其他上下文菜单.FSI 控制台上下文.取消交互评估 |
 
-### <a name="graph-document-editor"></a>关系图文档编辑器
+### <a name="graph-document-editor-context-specific-shortcuts"></a><a name="bkmk_graph-document-editor-context-specific-shortcuts"></a> 关系图文档编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -742,7 +799,7 @@ ms.locfileid: "128430666"
 |删除|**删除**| 体系结构上下文菜单.定向关系图上下文菜单.删除 |
 |重命名|F2| 体系结构上下文菜单.定向关系图上下文菜单.重命名 |
 
-### <a name="graphics-diagnostics"></a>图形诊断
+### <a name="graphics-diagnostics-context-specific-shortcuts"></a><a name="bkmk_graphics-diagnostics-context-specific-shortcuts"></a> 图形诊断：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -759,7 +816,7 @@ ms.locfileid: "128430666"
 |放大|**Shift+Alt+=**| Graphics.ZoomIn |
 |缩小|**Shift+Alt+-**| Graphics.ZoomOut |
 
-### <a name="html-editor"></a>HTML 编辑器
+### <a name="html-editor-context-specific-shortcuts"></a><a name="bkmk_html-editor-context-specific-shortcuts"></a> HTML 编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -768,7 +825,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |转到控制器|**Ctrl+M、Ctrl+G**| 其他上下文菜单.HTML 上下文.转到控制器 |
 
-### <a name="html-editor-design-view"></a>HTML 编辑器设计视图
+### <a name="html-editor-design-view-context-specific-shortcuts"></a><a name="bkmk_html-editor-design-view-context-specific-shortcuts"></a> HTML 编辑器设计视图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -794,7 +851,7 @@ ms.locfileid: "128430666"
 |查看标记|**Shift+F7**| 视图.查看标记 |
 |上一个选项卡|**Ctrl+PgUp**| 窗口.上一选项卡 |
 
-### <a name="html-editor-source-view"></a>HTML 编辑器源视图
+### <a name="html-editor-source-view-context-specific-shortcuts"></a><a name="bkmk_html-editor-source-view-context-specific-shortcuts"></a> HTML 编辑器源视图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -807,7 +864,7 @@ ms.locfileid: "128430666"
 |视图设计器|**Shift+F7**| 视图.视图设计器 |
 |上一个选项卡|**Ctrl+PgUp**| 窗口.上一选项卡 |
 
-### <a name="layer-diagram"></a>层关系图
+### <a name="layer-diagram-context-specific-shortcuts"></a><a name="bkmk_layer-diagram-context-specific-shortcuts"></a> 层关系图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -816,7 +873,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |删除|**Shift+Delete**| 编辑.删除 |
 
-### <a name="managed-resources-editor"></a>托管资源编辑器
+### <a name="managed-resources-editor-context-specific-shortcuts"></a><a name="bkmk_managed-resources-editor-context-specific-shortcuts"></a> 托管资源编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -834,7 +891,7 @@ ms.locfileid: "128430666"
 |其他|**Ctrl+6**| 资源.其他 |
 |字符串|**Ctrl+1**| 资源.字符串 |
 
-### <a name="merge-editor-window"></a>合并编辑器窗口
+### <a name="merge-editor-window-context-specific-shortcuts"></a><a name="bkmk_merge-editor-window-context-specific-shortcuts"></a> 合并编辑器窗口：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -845,7 +902,7 @@ ms.locfileid: "128430666"
 |在结果窗口上设置焦点|**Alt+2**| Team Foundation 上下文菜单.合并上下文菜单.在结果窗口上设置焦点 |
 |在右侧窗口上设置焦点|**Alt+3**| Team Foundation 上下文菜单.合并上下文菜单.在右侧窗口上设置焦点 |
 
-### <a name="microsoft-sql-server-data-tools-schema-compare"></a>Microsoft SQL Server Data Tools，架构比较
+### <a name="microsoft-sql-server-data-tools-schema-compare-context-specific-shortcuts"></a><a name="bkmk_microsoft-sql-server-data-tools-schema-compare-context-specific-shortcuts"></a> Microsoft SQL Server Data Tools，架构比较：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -859,7 +916,7 @@ ms.locfileid: "128430666"
 |SSDT 架构比较 - 停止|**Alt+Break**| SQL.SSDT 架构比较停止 |
 |SSDT 架构比较 - 写入更新|**Shift+Alt+U**| SQL.SSDT 架构比较写入更新 |
 
-### <a name="microsoft-sql-server-data-tools-table-designer"></a>Microsoft SQL Server Data Tools，表设计器
+### <a name="microsoft-sql-server-data-tools-table-designer-context-specific-shortcuts"></a><a name="bkmk_microsoft-sql-server-data-tools-table-designer-context-specific-shortcuts"></a> Microsoft SQL Server Data Tools，表设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -873,7 +930,7 @@ ms.locfileid: "128430666"
 |重命名|F2<br /><br /> or<br /><br /> **Ctrl+R、R**<br /><br /> or<br /><br /> **Ctrl+R、Ctrl+R**| SQL.重命名 |
 |在脚本面板中查看文件|**Shift+Alt+PgDn**| |
 
-### <a name="microsoft-sql-server-data-tools-t-sql-editor"></a>Microsoft SQL Server Data Tools，T-SQL 编辑器
+### <a name="microsoft-sql-server-data-tools-t-sql-editor-context-specific-shortcuts"></a><a name="bkmk_microsoft-sql-server-data-tools-t-sql-editor-context-specific-shortcuts"></a> Microsoft SQL Server Data Tools，T-SQL 编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -897,7 +954,7 @@ ms.locfileid: "128430666"
 |T SQL 编辑器 - 克隆查询|**Ctrl+Alt+N**|SQL.TSqlEditorCloneQuery |
 |T SQL 编辑器 - 数据库组合|**Shift+Alt+PgDn**|SQL.TSqlEditorDatabaseCombo |
 
-### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor"></a>Microsoft SQL Server Data Tools，T-SQL PDW 编辑器
+### <a name="microsoft-sql-server-data-tools-t-sql-pdw-editor-context-specific-shortcuts"></a><a name="bkmk_microsoft-sql-server-data-tools-t-sql-pdw-editor-context-specific-shortcuts"></a> Microsoft SQL Server Data Tools，T-SQL PDW 编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -915,7 +972,7 @@ ms.locfileid: "128430666"
 |T SQL 编辑器 - 克隆查询|**Ctrl+Alt+N**|SQL.TSqlEditorCloneQuery |
 |T SQL 编辑器 - 克隆查询|**Shift+Alt+PgDn**|SQL.TSqlEditorCloneQuery |
 
-### <a name="page-inspector"></a>Page Inspector
+### <a name="page-inspector-context-specific-shortcuts"></a><a name="bkmk_page-inspector-context-specific-shortcuts"></a> Page Inspector：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -924,7 +981,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |最小化|**F12**| PageInspector.最小化 |
 
-### <a name="query-designer"></a>查询设计器
+### <a name="query-designer-context-specific-shortcuts"></a><a name="bkmk_query-designer-context-specific-shortcuts"></a> 查询设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -940,7 +997,7 @@ ms.locfileid: "128430666"
 |结果|**Ctrl+4**| 查询设计器.结果 |
 |Sql|**Ctrl+3**| 查询设计器.SQL |
 
-### <a name="query-results"></a>查询结果
+### <a name="query-results-context-specific-shortcuts"></a><a name="bkmk_query-results-context-specific-shortcuts"></a> 查询结果：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -951,7 +1008,7 @@ ms.locfileid: "128430666"
 |查询结果刷新|**Shift+Alt+R**| SQL.查询结果刷新 |
 |查询结果停止|**Alt+Break**| SQL.查询结果停止 |
 
-### <a name="report-designer"></a>报表设计器
+### <a name="report-designer-context-specific-shortcuts"></a><a name="bkmk_report-designer-context-specific-shortcuts"></a> 报表设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -980,7 +1037,7 @@ ms.locfileid: "128430666"
 |选项卡左侧|**Shift+Tab**| 编辑.左缩进 |
 |数据源|**Ctrl+Alt+D**| 视图.报告数据 |
 
-### <a name="sequence-diagram"></a>序列图
+### <a name="sequence-diagram-context-specific-shortcuts"></a><a name="bkmk_sequence-diagram-context-specific-shortcuts"></a> 序列图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -990,7 +1047,7 @@ ms.locfileid: "128430666"
 |导航到代码|**F12**| 体系结构设计器.序列.导航到代码 |
 |删除|**Shift+Del**| 编辑.删除 |
 
-### <a name="settings-designer"></a>设置设计器
+### <a name="settings-designer-context-specific-shortcuts"></a><a name="bkmk_settings-designer-context-specific-shortcuts"></a> 设置设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1002,7 +1059,7 @@ ms.locfileid: "128430666"
 |取消选择|**Esc**| 编辑.取消选定 |
 |查看代码|**F7**| 视图.查看代码 |
 
-### <a name="solution-explorer"></a>“解决方案资源管理器”
+### <a name="solution-explorer-context-specific-shortcuts"></a><a name="bkmk_solution-explorer-context-specific-shortcuts"></a> 解决方案资源管理器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1011,7 +1068,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |在页面检查器中查看|**Ctrl+K、Ctrl+G**| 类视图上下文菜单.类视图项目.查看.在 Page Inspector 中查看 |
 
-### <a name="team-explorer"></a>Team Explorer
+### <a name="team-explorer-context-specific-shortcuts"></a><a name="bkmk_team-explorer-context-specific-shortcuts"></a> 团队资源管理器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1039,7 +1096,7 @@ ms.locfileid: "128430666"
 |TFS 上下文我的工作页 - 新建已链接 wi|**Shift+Alt+L**| Team Foundation 上下文菜单.我的工作页正在进行.Tfs 上下文我的工作页新建链接 WI |
 |刷新|**F5**| 视图.刷新 |
 
-### <a name="test-explorer"></a>测试资源管理器
+### <a name="test-explorer-context-specific-shortcuts"></a><a name="bkmk_test-explorer-context-specific-shortcuts"></a> 测试资源管理器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1048,7 +1105,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |打开测试|**F12**| 测试资源管理器.打开测试 |
 
-### <a name="text-editor"></a>文本编辑器
+### <a name="text-editor-context-specific-shortcuts"></a><a name="bkmk_text-editor-context-specific-shortcuts"></a> 测试编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1170,7 +1227,7 @@ ms.locfileid: "128430666"
 |TFS 批注 - 移动下一个区域| **Alt+PgDn** | Team Foundation 上下文菜单.批注.Tfs 批注移动下一个区域 |
 |TFS 批注 - 移动上一个区域| **Alt+PgUp** | Team Foundation 上下文菜单.批注.Tfs 批注移动上一个区域 |
 
-### <a name="uml-activity-diagram"></a>UML 活动图
+### <a name="uml-activity-diagram-context-specific-shortcuts"></a><a name="bkmk_uml-activity-diagram-context-specific-shortcuts"></a> UML 活动图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1179,7 +1236,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |删除|**Shift+Del**| 编辑.删除 |
 
-### <a name="uml-class-diagram"></a>UML 类图
+### <a name="uml-class-diagram-context-specific-shortcuts"></a><a name="bkmk_uml-class-diagram-context-specific-shortcuts"></a> UML 类图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1188,7 +1245,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |从模型中删除|**Shift+Del**| 编辑.从模型中删除 |
 
-### <a name="uml-component-diagram"></a>UML 组件图
+### <a name="uml-component-diagram-context-specific-shortcuts"></a><a name="bkmk_uml-component-diagram-context-specific-shortcuts"></a> UML 组件图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1197,7 +1254,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |从模型中删除|**Shift+Del**| 编辑.从模型中删除 |
 
-### <a name="uml-use-case-diagram"></a>UML 用例图
+### <a name="uml-use-case-diagram-context-specific-shortcuts"></a><a name="bkmk_uml-use-case-diagram-context-specific-shortcuts"></a> UML 用例图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1206,7 +1263,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |从模型中删除|**Shift+Del**| 编辑.从模型中删除 |
 
-### <a name="vc-accelerator-editor"></a>VC 快捷键编辑器
+### <a name="vc-accelerator-editor-context-specific-shortcuts"></a><a name="bkmk_vc-accelerator-editor-context-specific-shortcuts"></a> VC 快捷方式编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1216,7 +1273,7 @@ ms.locfileid: "128430666"
 |新建加速器|插入| 编辑.新建快捷键 |
 |键入的下一个密钥|**Ctrl+W**| 编辑.键入的下一个键 |
 
-### <a name="vc-dialog-editor"></a>VC 对话框编辑器
+### <a name="vc-dialog-editor-context-specific-shortcuts"></a><a name="bkmk_vc-dialog-editor-context-specific-shortcuts"></a> VC 对话框编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1253,7 +1310,7 @@ ms.locfileid: "128430666"
 |测试对话框|**Ctrl+T**| 格式.测试对话框 |
 |切换参考线|**Ctrl+G**| 格式.切换辅助线 |
 
-### <a name="vc-image-editor"></a>VC 图像编辑器
+### <a name="vc-image-editor-context-specific-shortcuts"></a><a name="bkmk_vc-image-editor-context-specific-shortcuts"></a> VC 图像编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1298,7 +1355,7 @@ ms.locfileid: "128430666"
 |放大|**Ctrl+Shift+.**<br /><br /> or<br /><br /> **Ctrl+向上键**| 图像.放大 |
 |缩小|**Ctrl+Shift+,**<br /><br /> or<br /><br /> **Ctrl+向下键**| 图像.缩小 |
 
-### <a name="vc-string-editor"></a>VC 字符串编辑器
+### <a name="vc-string-editor-context-specific-shortcuts"></a><a name="bkmk_vc-string-editor-context-specific-shortcuts"></a> VC 字符串编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1307,7 +1364,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |新字符串|插入| 编辑.新建字符串 |
 
-### <a name="view-designer"></a>视图设计器
+### <a name="view-designer-context-specific-shortcuts"></a><a name="bkmk_view-designer-context-specific-shortcuts"></a> 视图设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1323,7 +1380,7 @@ ms.locfileid: "128430666"
 |结果|**Ctrl+4**| 查询设计器.结果 |
 |Sql|**Ctrl+3**| 查询设计器.SQL |
 
-### <a name="visual-studio"></a>Visual Studio
+### <a name="visual-studio-context-specific-shortcuts"></a><a name="bkmk_visual-studio-context-specific-shortcuts"></a> Visual Studio：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1332,7 +1389,7 @@ ms.locfileid: "128430666"
 |-|-|-|
 |隐藏方法窗格|**Ctrl+1**| 其他上下文菜单.或设计器上下文.隐藏方法窗格 |
 
-### <a name="windows-forms-designer"></a>Windows Forms Designer — Windows 窗体设计器
+### <a name="windows-forms-designer-context-specific-shortcuts"></a><a name="bkmk_windows-forms-designer-context-specific-shortcuts"></a> Windows 窗体设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1364,7 +1421,7 @@ ms.locfileid: "128430666"
 |向上调整控件大小|**Ctrl+Shift+向上键**| 编辑.向上调整控件大小 |
 |选项卡左侧|**Shift+Tab**| 编辑.左缩进 |
 
-### <a name="work-item-editor"></a>工作项编辑器
+### <a name="work-item-editor-context-specific-shortcuts"></a><a name="bkmk_work-item-editor-context-specific-shortcuts"></a> 工作项编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1375,7 +1432,7 @@ ms.locfileid: "128430666"
 |刷新工作项|**F5**| 编辑.刷新工作项 |
 |新链接的工作项|**Shift+Alt+L**| 团队.新建链接工作项 |
 
-### <a name="work-item-query-view"></a>工作项查询视图
+### <a name="work-item-query-view-context-specific-shortcuts"></a><a name="bkmk_work-item-query-view-context-specific-shortcuts"></a> 工作项查询视图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1389,7 +1446,7 @@ ms.locfileid: "128430666"
 |刷新|**F5**| 团队.刷新 |
 |切换|**Shift+Alt+V**| 窗口.切换 |
 
-### <a name="work-item-results-view"></a>工作项结果视图
+### <a name="work-item-results-view-context-specific-shortcuts"></a><a name="bkmk_work-item-results-view-context-specific-shortcuts"></a> 工作项结果视图：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1405,7 +1462,7 @@ ms.locfileid: "128430666"
 |刷新|**F5**| 团队.刷新 |
 |切换|**Shift+Alt+V**| 窗口.切换 |
 
-### <a name="workflow-designer"></a>工作流设计器
+### <a name="workflow-designer-context-specific-shortcuts"></a><a name="bkmk_workflow-designer-context-specific-shortcuts"></a> 工作流设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1436,7 +1493,7 @@ ms.locfileid: "128430666"
 |放大|**Ctrl+Num +**| 工作流设计器.放大 |
 |缩小|**Ctrl+Num -**| 工作流设计器.缩小 |
 
-### <a name="xaml-ui-designer"></a>XAML 设计器
+### <a name="xaml-ui-designer-context-specific-shortcuts"></a><a name="bkmk_xaml-ui-designer-context-specific-shortcuts"></a> XAML UI 设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1461,7 +1518,7 @@ ms.locfileid: "128430666"
 |右侧边缘右移|**Ctrl+Shift+Alt+.**| 视图.向右移动右边缘 |
 |显示属性标记菜单|**Ctrl+空格键**| View.ShowPropertyMarkerMenu |
 
-### <a name="xml-text-editor"></a>XML（文本）编辑器
+### <a name="xml-text-editor-context-specific-shortcuts"></a><a name="bkmk_xml-text-editor-context-specific-shortcuts"></a> XML（文本）编辑器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
@@ -1471,7 +1528,7 @@ ms.locfileid: "128430666"
 |启动 XSLT（调试）|**Alt+F5**| XML.启动 XSLT (调试) |
 |启动 XSLT（不调试）|**Ctrl+Alt+F5**| XML.启动 XSLT (不调试) |
 
-### <a name="xml-schema-designer"></a>XML 架构设计器
+### <a name="xml-schema-designer-context-specific-shortcuts"></a><a name="bkmk_xml-schema-designer-context-specific-shortcuts"></a> XML 架构设计器：特定于上下文的快捷方式
 
 特定于此上下文的快捷方式如下：
 
