@@ -10,12 +10,12 @@ user.type: admin
 tags: primary, contact
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: 76b2f2630865d9bc95df75a0e940a940045ba3af
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 4d672d099f95d054cdd2bfc1f1184afc1ff10fac
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339690"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129585222"
 ---
 ## <a name="our-primary-contact-left-and-im-the-new-one-how-can-i-update-the-contact-info"></a>我们的主要联系人离开了，我是新的主要联系人。 如何更新联系人信息？
 
@@ -28,6 +28,4 @@ ms.locfileid: "129339690"
 ## <a name="how-can-i-update-the-primary-contact-on-the-admin-portal"></a>如何在管理门户上更新主要联系人？
 更新主要联系人信息后，请登录到管理门户，确认以前的主要联系人不再列出。 请确保至少有两个当前的超级管理员可以删除已离开的主要联系人。
 
-> [!IMPORTANT] 
->
-> 按照设计，协议上必须始终有两个超级管理员。
+注意：按照设计，协议上必须始终有两个超级管理员。

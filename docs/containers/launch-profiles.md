@@ -1,5 +1,5 @@
 ---
-title: 管理 Docker Compose 项目的启动配置文件
+title: 启动 Docker Compose 服务的子集
 description: 了解如何使用 Docker Compose 启动配置文件，以及如何控制在 Visual Studio 中使用 Docker Compose 时要启动的服务。
 author: ghogen
 manager: jmartens
@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.date: 05/10/2021
 ms.author: ghogen
 monikerRange: '>=vs-2019'
-ms.openlocfilehash: 7c6a4137046456321e54a53e58a96d1dbfdf8fe1
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: d91e58a554847fa5a713b120d2896c2e8120b2a8
+ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427377"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129595139"
 ---
 # <a name="launch-a-subset-of-compose-services"></a>启动 Compose 服务的子集
 

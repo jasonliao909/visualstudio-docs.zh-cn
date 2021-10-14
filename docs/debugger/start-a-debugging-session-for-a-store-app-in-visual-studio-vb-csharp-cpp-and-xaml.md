@@ -1,7 +1,6 @@
 ---
 title: 启动 UWP 应用的调试会话 | Microsoft Docs
 description: 启动通用 Windows 平台 (UWP) 应用的 Visual Studio 调试会话。 配置调试会话并选择启动应用的方式。
-ms.custom: SEO-VS-2020
 ms.date: 11/20/2018
 ms.topic: how-to
 f1_keywords:
@@ -37,12 +36,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 073b29afe8af9b6b23d7eda1b30631018674e9c5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7f9efc6ca37d391ff14be044db37af6117cbe943
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122146714"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969705"
 ---
 # <a name="start-a-debugging-session-for-a-uwp-app"></a>启动 UWP 应用的调试会话
 

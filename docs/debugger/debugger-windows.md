@@ -1,7 +1,6 @@
 ---
 title: 使用调试器窗口检查数据 | Microsoft Docs
 description: 有多种类型的调试器窗口可提供你的信息。 本文提供类型列表。 对于每个类型，都有一个提供详细信息的链接。
-ms.custom: SEO-VS-2020
 ms.date: 04/25/2018
 ms.topic: conceptual
 ms.assetid: 4c6fe8f1-b015-4989-bb31-72ebac390026
@@ -11,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 52093660a867ddac2080c68480d1138bbb6ecf12
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c4d8f0999a415efe09e1486f0a2816efa950e63f
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080934"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970628"
 ---
 # <a name="inspect-data-using-debugger-windows-in-visual-studio"></a>在 Visual Studio 中使用调试器窗口检查数据
 

@@ -1,7 +1,6 @@
 ---
 title: 分析 XAML 应用中的资源消耗情况
 description: 使用应用程序时间线配置文件查找 XAML 应用程序中的性能问题。 可分析各种方案中各项任务所耗的时间。
-ms.custom: SEO-VS-2020
 ms.date: 11/01/2018
 ms.topic: conceptual
 ms.assetid: df7d854b-0a28-45a9-8a64-c015a4327701
@@ -11,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: da90e8325caf591759cf7914e89dac06d68de21d
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3440e7e2f8f6b164a9383d61868b4bcdd3afebb8
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122039821"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968104"
 ---
 # <a name="analyze-resource-consumption-and-ui-thread-activity-xaml"></a>分析资源消耗情况和 UI 线程活动 (XAML)
 

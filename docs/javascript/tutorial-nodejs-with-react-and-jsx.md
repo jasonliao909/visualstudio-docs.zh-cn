@@ -13,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: dcff5a9ec52f6b5c8c4c94cef374120868a11f55
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 775e461afd78c88e004d09ce2561dad716d3c032
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339946"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129560953"
 ---
 # <a name="tutorial-create-a-nodejs-and-react-app-in-visual-studio"></a>教程：在 Visual Studio 中创建 Node.js 和 React 应用
 
@@ -34,7 +34,7 @@ ms.locfileid: "129339946"
 
 ::: moniker range=">=vs-2022"
 > [!IMPORTANT]
-> 从 Visual Studio 2022 开始，你也可以使用新的 [.esproj 项目类型](https://devblogs.microsoft.com/visualstudio/the-new-javascript-typescript-experience-in-vs-2022-preview-3/)[创建 React 项目](../javascript/tutorial-create-react-app.md)。 本教程中的说明包含仅适用于 Node.js 项目类型 (.njsproj) 的某些信息。
+> 从 Visual Studio 2022 开始，你也可以使用新的[基于 CLI 的项目类型](https://devblogs.microsoft.com/visualstudio/the-new-javascript-typescript-experience-in-vs-2022-preview-3/)[创建 React 项目](../javascript/tutorial-create-react-app.md)。 本文中的某些信息仅适用于 Node.js 项目类型 (.njsproj)。
 ::: moniker-end
 
 在开始之前，下面是一个快速 FAQ，介绍一些关键概念：

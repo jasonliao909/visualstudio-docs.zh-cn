@@ -3,20 +3,19 @@ title: 快速入门 - 使用 Cookiecutter 创建 Python 项目
 description: 在此快速入门教程中，使用 Cookiecutter 模板创建适合 Python 的 Visual Studio 项目。
 ms.date: 02/25/2019
 ms.topic: quickstart
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 26e65a7aeee0d24b3c75b7251d6e4072103500f8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c124610bab413b59ec2dc00798f8bc63b7221eb5
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122100538"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968340"
 ---
 # <a name="quickstart-create-a-project-from-a-cookiecutter-template"></a>快速入门：通过 Cookiecutter 模板创建项目
 

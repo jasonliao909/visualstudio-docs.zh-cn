@@ -2,25 +2,24 @@
 title: 安装脱机安装所需的证书
 description: 了解如何安装 Visual Studio 脱机安装的证书。
 ms.date: 03/29/2021
-ms.custom: seodec18, SEO-VS-2020
 ms.topic: how-to
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 9750A3F3-89C7-4A8F-BA75-B0B06BD772C2
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 6dc4137157e2fa5136a0b8c86c5cf72f284a9eb7
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: e53989e5872d7bb34317285ce022d630b2de0835
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307371"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968091"
 ---
 # <a name="install-certificates-required-for-visual-studio-offline-installation"></a>安装 Visual Studio 脱机安装所需的证书
 

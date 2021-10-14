@@ -3,20 +3,19 @@ title: 编写 Python 的 C++ 扩展
 description: 本文分步介绍如何使用 Visual Studio、CPython 和 PyBind11（包括混合模式调试）创建适用于 Python 的 C++ 扩展。
 ms.date: 05/11/2021
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a93dee3e00df6b98afe41306af079302e1017bc4
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7c13b56476872b20a6f460c3201153066a53e1ff
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140292"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967595"
 ---
 # <a name="create-a-c-extension-for-python"></a>创建适用于 Python 的 C++ 扩展
 

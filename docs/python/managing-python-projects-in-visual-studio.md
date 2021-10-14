@@ -3,20 +3,19 @@ title: 管理 Python 应用程序项目
 description: Visual Studio 中的项目管理文件之间的依赖项和应用程序中的关系复杂性。
 ms.date: 03/18/2019
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 97caa4f5677ec9357db1a0756f96cd37476ef66c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9845fd829333f945bcda0b842f5be056152bbfe6
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054439"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968406"
 ---
 # <a name="python-projects-in-visual-studio"></a>Visual Studio 中的 Python 项目
 

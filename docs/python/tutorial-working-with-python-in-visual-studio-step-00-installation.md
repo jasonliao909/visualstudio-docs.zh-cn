@@ -4,20 +4,20 @@ titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 的核心教程的第 0 步（安装前提条件）。
 ms.date: 09/14/2021
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
 ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 1e712d5df44dd87f07b50b243e8e63ed9e1ad0bf
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 94639ec83d77e8a6c229a9fdb9109eff1242a87e
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429711"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971343"
 ---
 # <a name="install-python-support-in-visual-studio"></a>在 Visual Studio 中安装 Python 支持
 

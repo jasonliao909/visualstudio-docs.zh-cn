@@ -3,21 +3,20 @@ title: 快速入门 — 打开 Python 代码文件夹
 description: 在此快速入门中，无需使用 Visual Studio 项目即可从文件夹中打开并运行 Python 代码（仅限 Visual Studio 2019）。
 ms.date: 03/12/2019
 ms.topic: quickstart
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 monikerRange: '>= vs-2019'
-ms.openlocfilehash: 6553ffcc80dbe650b3b1775292599bc20d67cbfd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: ed6ccd85c03b7cd512d0751fd44f42191724adf7
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076134"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971356"
 ---
 # <a name="quickstart-open-and-run-python-code-in-a-folder"></a>快速入门：打开并运行文件夹中的 Python 代码
 

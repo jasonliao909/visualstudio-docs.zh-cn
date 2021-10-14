@@ -3,21 +3,20 @@ title: 为 Python Web 应用配置 IIS
 description: 如何将 Python Web 应用配置为使用 Windows 虚拟机中的 Internet Information Services 运行。
 ms.date: 12/06/2018
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
 - azure
-ms.openlocfilehash: 86d4d897fb7ea4000ed60f4c9c1047a21ab74c7f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 07eb420ecab7680ea76789e313b4996ff5b4bcda
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156651"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971447"
 ---
 # <a name="configure-python-web-apps-for-iis"></a>为 Python Web 应用配置 IIS
 

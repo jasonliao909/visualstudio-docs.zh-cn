@@ -1,7 +1,6 @@
 ---
 title: 准备调试 Windows 窗体应用 | Microsoft Docs
 description: 执行调试 Windows 窗体应用程序的准备步骤，这些应用程序由 Visual Studio 中的 Windows 窗体项目模板创建。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -22,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 686b1e6666bb32b1159c3440c33ae3773fac251c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1cfb5f91196b941dfc14fce1e76bb74cf73a7942
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065733"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971708"
 ---
 # <a name="debugging-preparation-windows-forms-applications"></a>调试准备：Windows 窗体应用程序
 

@@ -1,7 +1,6 @@
 ---
 title: 扩展生成过程
 description: 了解修改生成过程的各种方式，以便可以控制和自定义项目的生成方式。
-ms.custom: seodec18, SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +15,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: db2b813937c4966dd4acd37b6e053cbe533e993c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4a4c3c474dc998da0a25c46001d78f3daeece9bd
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122136932"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968078"
 ---
 # <a name="how-to-extend-the-visual-studio-build-process"></a>如何：扩展 Visual Studio 生成过程
 

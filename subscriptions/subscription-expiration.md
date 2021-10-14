@@ -7,12 +7,12 @@ ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
 ms.date: 09/20/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅到期后会怎样
-ms.openlocfilehash: abc20ca49b51a2c4eae748bfae1051771a38284d
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 5c8b653d60b06c5c45d06ede5afb418315ef52d9
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375671"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972786"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>订阅到期后会怎样
 Visual Studio 订阅有特定的有效期，除非续订，否则它们将会到期。  当订阅到期时，订阅提供的权益会以不同的方式受到影响。  本文将介绍到期如何影响 Visual Studio 订阅的各个方面。 
@@ -31,7 +31,7 @@ Visual Studio 订阅有特定的有效期，除非续订，否则它们将会到
 在订阅到期后，并非所有权益都以相同的方式受到影响。  在订阅到期后，无法激活任何权益。  你之前激活过的权益可能仍有效。  
 
 ### <a name="visual-studio-ide"></a>Visual Studio IDE
-大多数订阅都为 Visual Studio IDE 提供永久许可。 下载 Visual Studio [许可白皮书](https://aka.ms/vslicensing)，以确定你的订阅是否有资格获得永久使用权。  如果你的订阅有资格获得永久使用权，你将继续有权访问 IDE 的当前版本，但不会收到未来版本的更新。 若要在到期后继续使用 IDE，则需要在订阅到期前转到[产品密钥页](https://my.visualstudio.com/productkeys)并下载产品密钥。  在领取密钥后，你需要[输入密钥](https://docs.microsoft.com/visualstudio/ide/how-to-unlock-visual-studio?view=vs-2019#enter-a-product-key)来激活 IDE 安装。  
+大多数订阅都为 Visual Studio IDE 提供永久许可。 下载 Visual Studio [许可白皮书](https://aka.ms/vslicensing)，以确定你的订阅是否有资格获得永久使用权。  如果你的订阅有资格获得永久使用权，你将继续有权访问 IDE 的当前版本，但不会收到未来版本的更新。 若要在到期后继续使用 IDE，则需要在订阅到期前转到[产品密钥页](https://my.visualstudio.com/productkeys)并下载产品密钥。  在领取密钥后，你需要[输入密钥](/visualstudio/ide/how-to-unlock-visual-studio#enter-a-product-key)来激活 IDE 安装。  
 
 ### <a name="azure-devops"></a>Azure DevOps
 通过 Visual Studio 订阅获取的 Azure DevOps 将不可用。  

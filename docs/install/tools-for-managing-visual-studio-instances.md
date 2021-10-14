@@ -3,25 +3,24 @@ title: 用于检测和管理 Visual Studio 实例的工具
 titleSuffix: ''
 description: 了解可用于在客户端计算机上检测和管理 Visual Studio 安装的工具。
 ms.date: 04/06/2021
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 85686707-14C0-4860-9B7A-66485D43D241
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 914449fe1db792614af1f9ed22464cb9fdb91481
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2865d117d3379f0d07b8bb6fb4c7631e51059b70
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306886"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972305"
 ---
 # <a name="tools-for-detecting-and-managing-visual-studio-instances"></a>用于检测和管理 Visual Studio 实例的工具
 

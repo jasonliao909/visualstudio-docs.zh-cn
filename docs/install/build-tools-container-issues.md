@@ -2,22 +2,21 @@
 title: 容器的已知问题
 description: 详细了解将 Visual Studio 生成工具安装到 Windows 容器时可能会出现的已知问题。
 ms.date: 02/18/2020
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 140083f1-05bc-4014-949e-fb5802397c7a
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a56d820805fa97f3672480c063ebfcc0fdc96fb6
-ms.sourcegitcommit: 0499d813d5c24052c970ca15373d556a69507250
+ms.openlocfilehash: c73bb14065a28e0bdfd15c80d25562b6d884e63c
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113046087"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969471"
 ---
 # <a name="known-issues-for-containers"></a>容器的已知问题
 

@@ -1,7 +1,6 @@
 ---
 title: 在调试器中使用转储文件 | Microsoft Docs
 description: 转储文件是正在执行的应用和已加载的模块的快照。 如果没有对应用的调试访问权限，请考虑创建转储文件。
-ms.custom: SEO-VS-2020
 ms.date: 11/05/2018
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f446b1d7e23245739a94b1b7c99fecefb0d00c85
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 97111878fc818addde3673336b02b928d90758f5
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090247"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970069"
 ---
 # <a name="dump-files-in-the-visual-studio-debugger"></a>Visual Studio 调试器中的转储文件
 

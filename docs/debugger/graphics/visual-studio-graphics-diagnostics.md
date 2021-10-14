@@ -1,7 +1,6 @@
 ---
 title: 图形诊断 | Microsoft Docs
 description: Visual Studio 图形诊断是一组用于日志记录和分析 Direct3D 活动的工具。 使用它们来故障排除呈现和性能问题。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 f1_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 04cc77650572f5e3539d4b53e4602e4c16259b61
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2b109a01795a48e48d2062df318e4c3d0cd0a638
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090832"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970732"
 ---
 # <a name="visual-studio-graphics-diagnostics"></a>Visual Studio 图形诊断
 >[!NOTE]

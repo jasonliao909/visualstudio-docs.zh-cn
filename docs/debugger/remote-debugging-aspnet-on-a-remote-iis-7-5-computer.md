@@ -3,7 +3,6 @@ title: 远程调试 IIS 计算机上的 ASP.NET
 description: 了解如何设置和配置 Visual Studio ASP.NET MVC 4.5.2 应用程序，将其部署到 IIS，并从 Visual Studio 附加远程调试器。
 ms.custom:
 - remotedebugging
-- seodec18
 ms.date: 08/31/2021
 ms.topic: conceptual
 ms.assetid: 9cb339b5-3caf-4755-aad1-4a5da54b2a23
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 406f05fbb5d1517fd953c8732eaa8f4ac9522b3d
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ec4a8fbd274671b4f2273087cfd59a4434ddd76f
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427234"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972461"
 ---
 # <a name="remote-debug-aspnet-on-a-remote-iis-computer"></a>远程调试远程 IIS 计算机上的 ASP.NET
 

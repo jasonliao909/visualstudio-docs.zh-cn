@@ -1,7 +1,6 @@
 ---
 title: 调试 ASP.NET Core
 description: 使用 Visual Studio 调试器调试 ASP.NET Core
-ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 8f4455a8cfcbc62cc06e48692a2d19b55d1686bf
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 18d108b61e047151daf197832c81836b2e33b38a
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065288"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972578"
 ---
 # <a name="quickstart-debug-aspnet-core-with-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 ASP.NET Core
 

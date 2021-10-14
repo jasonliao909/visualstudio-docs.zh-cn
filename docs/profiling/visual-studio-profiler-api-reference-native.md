@@ -2,7 +2,6 @@
 title: Visual Studio 探查器 API 参考（本机）
 description: 了解如何通过 Visual Studio 探查器 API 以编程方式控制收集的数据量，并在分析期间插入时间戳和分析标记。
 titleSuffix: ''
-ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -16,12 +15,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - cplusplus
-ms.openlocfilehash: e782ced3a2760af780f70f586fb79329da68394c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: edcc3bb968504d63b18adad2217f23c5a8bb5889
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140695"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973033"
 ---
 # <a name="visual-studio-profiler-api-reference-native"></a>Visual Studio 探查器 API 参考（本机）
 Visual Studio 探查器 API 允许你以编程方式控制收集的数据量，并在分析期间插入时间戳和分析标记。 若要使用本机 API，请包含 VSPerf.h 头文件，并在项目中添加 VSPerf.lib。

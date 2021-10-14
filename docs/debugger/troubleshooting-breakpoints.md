@@ -1,7 +1,6 @@
 ---
 title: 在调试器中对断点进行故障排除 | Microsoft Docs
 description: 如果断点已禁用或无法设置，它将显示为空心圆圈。 在此处查看有关设置断点时可能发生的问题的信息。
-ms.custom: SEO-VS-2020
 ms.date: 01/23/2018
 ms.topic: troubleshooting
 author: mikejo5000
@@ -10,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 0caeb4a9a37497922af5c5b7d94f539859644c02
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1077ffa06cd10582ee373bb7545535d0faddb78b
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122096812"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972474"
 ---
 # <a name="troubleshoot-breakpoints-in-the-visual-studio-debugger"></a>在 Visual Studio 调试器中对断点进行故障排除
 

@@ -1,7 +1,6 @@
 ---
 title: 首先了解分析工具
 description: 简要了解 Visual Studio 中提供的各种诊断工具。
-ms.custom: ''
 ms.date: 09/23/2021
 ms.topic: conceptual
 f1_keywords:
@@ -17,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 286a85101e34e91c4be6837e06010c244ad17307
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: f52ff112713beffd388b533c6ecea71c64cb4ec6
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428745"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973072"
 ---
 # <a name="first-look-at-profiling-tools"></a>首先了解分析工具
 

@@ -1,7 +1,6 @@
 ---
 title: 分析内存使用情况
 description: 了解可用于查找内存泄露和内存低效使用情况的工具，例如内存使用情况工具和 .NET 对象分配工具。
-ms.custom: SEO-VS-2020
 ms.date: 10/12/2020
 ms.topic: conceptual
 author: mikejo5000
@@ -10,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ec323cea6d2a5e5ed41b226a3994b5084a70968c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 24cb23e359b3cf74e35c0a5428036e13ad4c3658
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122131984"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973085"
 ---
 # <a name="analyze-memory-usage"></a>分析内存使用情况
 
@@ -33,7 +32,7 @@ C++ 开发人员可以使用集成了调试器的或非调试器的内存使用�
 - [使用调试器分析内存使用情况](../profiling/memory-usage.md)
 - [分析不调试的内存使用情况](../profiling/memory-usage-without-debugging2.md)
 
-可 Windows 7 及更高版本中使用不带调试器的分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本。
+可 Windows 7 及更高版本中使用不带调试器的分析工具。 要运行带调试器的分析工具（“诊断工具”窗口），需具备 Windows 8 及更高版本  。
 
 ## <a name="blogs-and-videos"></a>博客和视频
 

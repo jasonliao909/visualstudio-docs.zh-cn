@@ -1,7 +1,6 @@
 ---
 title: 指定用于调试的 .NET Framework 版本 | Microsoft Docs
 description: 指定用于调试的早期 .NET Framework 版本。 Visual Studio 调试器支持调试 .NET Framework 的早期版本和当前版本。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: b434116a835f5e86e1e579a2e6fb4d4c9be1452e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9cfa2b42aed6d0ade01918c0d719e17fb4ac5350
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128138"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971226"
 ---
 # <a name="specify-an-older-net-framework-version-for-debugging-c-visual-basic-f"></a>指定用于调试的早期 .NET Framework 版本（C#、Visual Basic、F#）
 

@@ -5,21 +5,20 @@ description: 在此快速入门教程中，利用 Visual Studio 和 Flask 框架
 ms.date: 09/14/2021
 ms.technology: vs-python
 ms.topic: quickstart
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.custom:
 - vs-acquisition
-- SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 817a7fed100c9095468c3c481417a3f53104c3ee
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: beb86c395735c2015eae64866aaf36aefbf9a507
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429377"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971616"
 ---
 # <a name="quickstart-create-your-first-python-web-app-using-visual-studio"></a>快速入门：使用 Visual Studio 创建第一个 Python Web 应用
 

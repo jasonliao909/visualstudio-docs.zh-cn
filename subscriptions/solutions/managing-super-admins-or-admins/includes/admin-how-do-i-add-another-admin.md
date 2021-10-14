@@ -10,12 +10,12 @@ user.type: admin
 tags: super, admin
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: ad46fe4b77cd6d96d329ea0eb9dab01284852cd7
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 921f70c7415402cc3da531354e1dbe5449eb9b12
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339691"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129585186"
 ---
 ## <a name="how-to-add-another-super-admin-or-admin"></a>如何添加另一个超级管理员或管理员
 
@@ -25,12 +25,10 @@ ms.locfileid: "129339691"
 
 1. 请确保你已被添加为超级管理员。
 2. 在管理门户顶部，浏览到“管理管理员”页，然后从下拉菜单中选择相应的协议。
-3. 选择 **添加** 。
+3. 选择“添加”。
 4. 填写所需的字段。
 
-> [!NOTE]
-> 
-> 对于超级管理员角色，请确保选中此框。
+注意：对于超级管理员角色，请确保选中此框。
 
 ## <a name="more-information"></a>更多信息
 

@@ -2,7 +2,6 @@
 description: 当尝试运行 Visual Studio 远程调试监视器 (msvsmon) 的用户不具有本地计算机上的帐户时，会发生此错误。
 title: 远程计算机上的 Microsoft Visual Studio 远程调试监视器没有连接到此计算机的权限
 titleSuffix: ''
-ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: error-reference
 f1_keywords:
@@ -21,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: c47e28d061b710c8a4782852f7b3e736bf9520ef
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d9da7bd57c8032e1cb795550b040c53450a2c6b3
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134072"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972617"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-does-not-have-permission-to-connect-to-this-computer"></a>错误：远程计算机上的 Microsoft Visual Studio 远程调试监视器没有连接到此计算机的权限
 

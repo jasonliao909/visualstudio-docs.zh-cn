@@ -1,7 +1,6 @@
 ---
 title: CPU 采样初学者指南
 description: 了解 Visual Studio 分析工具如何揭示应用程序中函数所用时间，这可引导你关注能提高应用程序速度的方面。
-ms.custom: SEO-VS-2020
 ms.date: 02/27/2017
 ms.topic: how-to
 f1_keywords:
@@ -18,12 +17,12 @@ ms.technology: vs-ide-debug
 monikerRange: vs-2017
 ms.workload:
 - multiple
-ms.openlocfilehash: 8187b7543ba603cd23239a463b1ae9875e46c09e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 99024c3a7d214ebb0f494689972f36e0d240c392
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108117"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969068"
 ---
 # <a name="beginners-guide-to-cpu-sampling"></a>CPU 采样初学者指南
 可使用 Visual Studio 分析工具来分析应用程序中的性能问题。 此过程显示如何使用 **采样** 数据。

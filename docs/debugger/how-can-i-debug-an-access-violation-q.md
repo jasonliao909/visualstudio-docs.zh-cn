@@ -1,7 +1,6 @@
 ---
 title: 调试 c + + 访问冲突 | Microsoft Docs
 description: 如果有多个指针是候选项，请参阅故障排除访问冲突问题的提示。 最新版本的 Visual Studio 命名错误指针。
-ms.custom: SEO-VS-2020
 ms.date: 02/05/2019
 ms.topic: how-to
 f1_keywords:
@@ -21,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: ae42f11fa04f3f4fa2121756a382f7a8676778ec
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: eeef6a34125a6de3ed58492c444af8737f0cf644
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080801"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970719"
 ---
 # <a name="how-can-i-debug-a-c-access-violation"></a>如何调试 C++ 访问冲突？
 

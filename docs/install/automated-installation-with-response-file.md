@@ -2,26 +2,25 @@
 title: 通过响应文件自动执行安装
 description: 了解如何创建 JSON 响应文件，以便自动安装 Visual Studio
 ms.date: 03/30/2019
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - response file
 - automate
 - installation
 - command-line
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: fe1d1a3c5ec13995cb69fff6ba6ec74c7a6c90d9
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2ad995b0ef2c293730ab4c98b4eec279c8bdff1d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307712"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969575"
 ---
 # <a name="automate-installs-by-using-settings-in-a-response-file"></a>使用响应文件中的设置自动安装
 

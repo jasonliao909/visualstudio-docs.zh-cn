@@ -2,7 +2,6 @@
 title: 创建您的第一个 Node.js 应用程序
 ms.custom:
 - vs-acquisition
-- SEO-VS-2020
 description: 本快速入门中，将在 Visual Studio 中创建 Node.js 应用
 ms.date: 09/14/2021
 ms.technology: vs-javascript
@@ -16,12 +15,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: fceecc9110a0ae15edf4d702e5c4db19cf129905
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: c95e8aa7daa93fee7c2cc4e27ed21c377d62afbf
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430135"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971603"
 ---
 # <a name="quickstart-create-your-first-nodejs-app-with-visual-studio"></a>快速入门：使用 Visual Studio 创建你的第一个 Node.js 应用
 

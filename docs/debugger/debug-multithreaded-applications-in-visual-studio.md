@@ -1,7 +1,6 @@
 ---
 title: 调试多线程应用程序 | Microsoft Docs
 description: 在 Visual Studio 中调试多线程应用程序。 查看有关调试多线程应用的工具和其他文章。
-ms.custom: SEO-VS-2020
 ms.date: 11/06/2018
 ms.topic: conceptual
 f1_keywords:
@@ -24,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6a3c3b20117061f06d7f5e65e1cd9ec4fbd0b814
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 70559b55eee8d4c521ec6bc31e16893e89ef3b3c
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105396"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973163"
 ---
 # <a name="debug-multithreaded-applications-in-visual-studio"></a>在 Visual Studio 中调试多线程应用程序
 线程是操作系统向其授予处理器时间的指令序列。 在操作系统中运行的每个进程都包含至少一个线程。 包含多个线程的进程称为多线程。

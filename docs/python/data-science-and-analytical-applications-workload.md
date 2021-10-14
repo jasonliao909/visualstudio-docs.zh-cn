@@ -3,19 +3,19 @@ title: 数据科学和分析应用程序工作负载
 description: 此 Visual Studio 工作负载汇集了 Python、F# 及其各自的运行时分发版本，包括 Anaconda。 （R 也仅包含在 Visual Studio 2017 中。）
 ms.date: 07/28/2021
 ms.topic: overview
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d33a33cacd1c5fb6c2d7cd4c45a14fa32d2cc1bc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 10e557b940b40ebe2a32a4a75663a0af8ea4fd99
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140500"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970446"
 ---
 # <a name="install-data-science-support-in-visual-studio"></a>在 Visual Studio 中安装数据科学支持
 

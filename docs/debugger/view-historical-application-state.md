@@ -1,7 +1,6 @@
 ---
 title: 使用 IntelliTrace 查看上一应用状态
 description: 了解如何拍摄快照和使用 IntelliTrace 单步后退查看快照
-ms.custom: seodec18
 ms.date: 09/19/2018
 ms.topic: tutorial
 ms.assetid: 7c60d929-d993-49dc-9db3-43b30be9912b
@@ -11,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 58070781e70c3da977d3d6db5e5e5a6b71f0796b
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: c8f3c623bbe4238c4c457df1824f23d395bd7422
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426785"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970186"
 ---
 # <a name="inspect-previous-app-states-using-intellitrace-step-back-in-visual-studio-visual-studio-enterprise"></a>在 Visual Studio (Visual Studio Enterprise) 中，使用 IntelliTrace 单步后退来检查旧应用状态
 

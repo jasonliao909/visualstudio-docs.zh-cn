@@ -3,20 +3,19 @@ title: 如何应用 Python 搜索路径
 description: Visual Studio 提供了一种更具体的方法来指定环境和项目的搜索路径，以避免使用系统范围的变量。
 ms.date: 03/13/2019
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7a4aeb23ede17eddc1b9af1fba271566699ad19f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d19506ab58e2003c5f0ae3b880dcdfa615c8f514
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027235"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972838"
 ---
 # <a name="how-visual-studio-uses-python-search-paths"></a>Visual Studio 如何使用 Python 搜索路径
 

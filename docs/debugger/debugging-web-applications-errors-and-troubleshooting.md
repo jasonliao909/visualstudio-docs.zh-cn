@@ -1,7 +1,6 @@
 ---
 title: 调试 Web 应用 - 错误和疑难解答
 description: 查找指向可帮助调试 Web 应用程序的引用页面（例如故障排除页面和描述你可能遇到的每个错误的页面）的链接。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 dev_langs:
@@ -29,12 +28,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6401be18025597b64d46824ee224ade232e9dbe2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0af68b458c037858cd4fd0251f37ea063b50d584
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122113008"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969809"
 ---
 # <a name="debugging-web-applications-errors-and-troubleshooting"></a>调试 Web 应用程序：错误和疑难解答
 当尝试调试 Web 应用程序时，可能遇到下列错误。

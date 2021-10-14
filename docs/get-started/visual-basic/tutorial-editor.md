@@ -3,7 +3,6 @@ title: Visual Basic 开发人员编辑功能简介
 description: 这一 10 分钟的 Visual Studio 代码编辑器简介演示了如何使用 Visual Studio 更轻松地编写、导航和理解 Visual Basic 代码。
 ms.custom:
 - vs-acquisition
-- seodec18
 - get-started
 ms.date: 09/14/2021
 ms.technology: vs-ide-general
@@ -15,12 +14,12 @@ dev_langs:
 - VB
 ms.workload:
 - dotnet
-ms.openlocfilehash: efc84a54a866082791f3c367bbf1fe08d52ae91f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: cad5a842a0a5da29cde8df75869677e406f17414
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431033"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970615"
 ---
 # <a name="learn-to-use-the-code-editor-with-visual-basic"></a>了解如何将代码编辑器用于 Visual Basic
 

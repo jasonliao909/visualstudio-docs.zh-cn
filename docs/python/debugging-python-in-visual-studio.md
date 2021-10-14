@@ -3,20 +3,19 @@ title: 调试 Python 代码
 description: Visual Studio 为 Python 代码提供丰富的调试，包括设置断点、单步执行、检查值、查看异常以及在交互窗口中进行调试。
 ms.date: 05/12/2020
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3ef8fc7ef3de032d4c4fba25e0e3b64a47b76ac1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a0233c23973517203fd4a7af0e530c77fa2c1c38
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156625"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971486"
 ---
 # <a name="debug-your-python-code"></a>调试 Python 代码
 

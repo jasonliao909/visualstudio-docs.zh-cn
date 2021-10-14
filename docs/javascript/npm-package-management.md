@@ -1,7 +1,6 @@
 ---
 title: 管理 npm 包
 description: Visual Studio 可帮助你使用 Node.js 包管理器 (npm) 来管理包
-ms.custom: seodec18
 ms.date: 10/1/2021
 ms.topic: how-to
 ms.devlang: javascript
@@ -13,12 +12,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: 46b5284f91fdce4b073f8ac7b8e78569b353452c
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: 5fca7b9e2593dc2b3f892f68a55f92f427c90b83
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129560892"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969315"
 ---
 # <a name="manage-npm-packages-in-visual-studio"></a>在 Visual Studio 中管理 npm 包
 

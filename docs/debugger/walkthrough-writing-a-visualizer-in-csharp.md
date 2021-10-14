@@ -1,7 +1,6 @@
 ---
 title: 使用 C# 编写可视化工具 | Microsoft Docs
 description: 按照演练进行操作，使用 C# 创建简单的可视化工具。 它显示使用和不使用可视化工具项模板所需的步骤。
-ms.custom: SEO-VS-2020
 ms.date: 07/02/2021
 ms.topic: conceptual
 dev_langs:
@@ -16,12 +15,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 6534f9c5c6d1fe4f5911358a425073426caa83bd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 75a7032185a7ed9db6fd2f11b28c597ab6c9dfbe
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122035912"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968158"
 ---
 # <a name="walkthrough-writing-a-visualizer-in-c"></a>演练：使用 C\# 编写可视化工具
 
@@ -41,7 +40,7 @@ ms.locfileid: "122035912"
 * 创建一个新类库项目。
 
     ::: moniker range=">=vs-2019"
-    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)” 。 单击“下一步”  。 在出现的对话框中，键入名称 `MyFirstVisualizer`，然后单击“创建”。
+    依次选择“文件” > “新建” > “项目”    。 在“语言”下拉列表中，选择“C#”。 在“搜索”框中，键入“类库”，然后选择“类库(.NET Framework)” 。 单击“下一步”。  在出现的对话框中，键入名称 `MyFirstVisualizer`，然后单击“创建”。
 
     对于可视化工具项目，请确保选择的是 .NET Framework 类库而不是 .NET。 虽然可视化工具需为 .NET Framework，但调用的应用可以是 .NET。
     ::: moniker-end
@@ -253,7 +252,7 @@ ms.locfileid: "122035912"
    >[!NOTE]
    >如果使用 .NET Framework 测试控制台应用，请确保创建 .NET Framework 类库项目。
 
-1. 单击“下一步”  。 在出现的对话框中，键入名称 `MyDataObject`，然后单击“创建”。
+1. 单击“下一步”。  在出现的对话框中，键入名称 `MyDataObject`，然后单击“创建”。
 
 1. （仅限 .NET Standard 类库）在解决方案资源管理器中，右键单击项目并选择“编辑项目文件”。 将 `<TargetFramework>` 值更改为 `netstandard2.0`。
 

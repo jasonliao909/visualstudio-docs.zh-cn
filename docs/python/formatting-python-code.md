@@ -3,20 +3,19 @@ title: 设置 Python 代码格式
 description: Visual Studio 可以自动重新设置 Python 代码的格式，包括间距、语句、换行和注释。
 ms.date: 03/13/2019
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 55e8812004cb652512eb946218a969679ad399bc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3bc8c0a537c8068100c959980d7b34f1bddd30b4
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122060760"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968704"
 ---
 # <a name="format-python-code"></a>设置 Python 代码格式
 
