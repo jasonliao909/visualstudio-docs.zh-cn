@@ -1,7 +1,6 @@
 ---
 title: 演练：调试因着色引起的呈现错误 | Microsoft Docs
 description: 执行调查，查找着色器 bug。 它演示如何使用 Visual Studio 图形诊断，包括图形像素历史记录和 HLSL 调试器。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 ms.assetid: 01875b05-cc7b-4add-afba-f2b776f86974
@@ -11,12 +10,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 6f359715bebdab4323bba21637f8a3f4be0f98f1
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 9ac57e78d1aef378be3e262731e3c0bdf50ad41f
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122133908"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971317"
 ---
 # <a name="walkthrough-debugging-rendering-errors-due-to-shading"></a>演练：调试因着色引起的呈现错误
 本演练演示了如何使用 [!INCLUDE[vsprvs](../../code-quality/includes/vsprvs_md.md)] 图形诊断工具调查由于着色器 Bug 而错误着色的对象。

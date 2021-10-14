@@ -3,7 +3,6 @@ title: 在 Azure 虚拟机上使用 Visual Studio
 titleSuffix: ''
 description: 了解如何在 Azure 虚拟机上使用 Visual Studio
 ms.date: 11/17/2020
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - azure services
@@ -17,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: e099737ad358478a30f23d160763c5c2aed9f792
-ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
+ms.openlocfilehash: cff02fe30a029e4c3a5ef5d9f08bd4ab2686dcb2
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "129680000"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973124"
 ---
 # <a name="visual-studio-images-on-azure"></a>Azure 上的 Visual Studio 映像
 

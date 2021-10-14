@@ -4,20 +4,19 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中的 Flask 基础知识演练，包括先决条件、Git 和虚拟环境。
 ms.date: 01/07/2019
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 528471301c1de6d44d5de6464fa24c81f13b8b36
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8c4a7839805ffa0d3421cac692ef92f067cce3e0
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054504"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968457"
 ---
 # <a name="tutorial-get-started-with-the-flask-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Flask Web 框架
 

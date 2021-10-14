@@ -4,19 +4,18 @@ description: 在 Windows 上通过使用 Visual Studio 排查在使用 Visual St
 ms.technology: vs-container-tools
 author: ghogen
 manager: jmartens
-ms.custom: seodec18
 ms.assetid: 346f70b9-7b52-4688-a8e8-8f53869618d3
 ms.devlang: dotnet
 ms.topic: troubleshooting
 ms.workload: multiple
 ms.date: 01/27/2020
 ms.author: ghogen
-ms.openlocfilehash: 760fd0c4d3a9593dbfcc4f78e3279a1ba7e2570f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 5bead44960453af7410d89cea4b5eca05945a6fb
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097977"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970212"
 ---
 # <a name="troubleshoot-visual-studio-development-with-docker"></a>使用 Docker 排查 Visual Studio 开发方面的问题
 

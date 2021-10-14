@@ -10,12 +10,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 12/05/2019
   ms.author: ghogen
-  ms.openlocfilehash: c0edb595d8e03495c43c76cd191dcf3ab01c4341
-  ms.sourcegitcommit: aef3e3f99e022675d339b7fe381cb37202be5be2
+  ms.openlocfilehash: b7d3357b71dfdc255f5038259e2db74ec41e1798
+  ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/24/2021
-  ms.locfileid: "122785629"
+  ms.lasthandoff: 10/13/2021
+  ms.locfileid: "129969926"
 landingContent:
 - title: 部署到 Azure App Service
   linkLists:
@@ -26,11 +26,9 @@ landingContent:
     - text: 将 ASP.NET Web 应用部署到 Azure
       url: /aspnet/core/tutorials/publish-to-azure-webapp-using-vs
     - text: 使用 Visual Studio 和 Git 持续部署到 Azure
-      url: /aspnet/core/host-and-deploy/azure-apps/azure-continuous-deployment
+      url: /azure/app-service/deploy-continuous-deployment
     - text: 使用 Azure Pipelines 对 Azure进行持续部署
       url: /azure/devops/pipelines/get-started-yaml
-    - text: 将 ASP.NET Web 应用部署到 Azure VM
-      url: /azure/virtual-machines/windows/publish-web-app-from-visual-studio
 - title: Azure 应用服务、逻辑应用和 Azure Functions
   linkLists:
   - linkListType: tutorial
@@ -54,7 +52,7 @@ landingContent:
     - text: Visual Studio 中的容器工具
       url: ../containers/overview.md
     - text: Kubernetes 工具
-      url: /visualstudio/bridge/bridge-to-kubernetes
+      url: /visualstudio/bridge/overview-bridge-to-kubernetes
 - title: 调试 Azure 服务并分析性能
   linkLists:
   - linkListType: tutorial

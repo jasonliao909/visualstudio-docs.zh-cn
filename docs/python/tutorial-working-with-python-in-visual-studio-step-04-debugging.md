@@ -4,20 +4,19 @@ titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程的第 4 步，介绍了如何在调试器中运行 Python 代码。
 ms.date: 01/28/2019
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: d4ec2aacb6ba0eb06e6603928da623c7b5bb9d7c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 12035222cb7cbb5b9141ab13d3d6605458a9a7aa
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027287"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969276"
 ---
 # <a name="step-4-run-code-in-the-debugger"></a>步骤 4：在调试器中运行代码
 

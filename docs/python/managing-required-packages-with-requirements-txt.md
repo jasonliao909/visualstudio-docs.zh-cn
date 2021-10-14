@@ -3,20 +3,19 @@ title: 使用 requirements.txt 管理包依赖项
 description: requirements.txt 文件描述了项目的依赖项。 如果收到包含 requirements.txt 文件的项目，你将可以在一个步骤中轻松安装这些依赖关系。
 ms.date: 03/18/2019
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18, SEO-VS-2020
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 46d687b0684472300511ca9d6ff17dcbf34c925e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7d6e8ea17a54a0d9b1b96c255fb30977185b6697
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054426"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968353"
 ---
 # <a name="manage-required-packages-with-requirementstxt"></a>使用 requirements.txt 管理所需的包
 

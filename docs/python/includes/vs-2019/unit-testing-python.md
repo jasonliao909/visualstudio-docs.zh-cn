@@ -3,20 +3,19 @@ title: 单元测试 Python 代码
 description: 在 Visual Studio 中为 Python 代码设置单元测试，以充分利用测试资源管理器功能来发现、运行和调试测试。
 ms.date: 09/18/2019
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 06c6fcec211cad4944c556aaddc29952dee40d2e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 67397ac209d282458e78b4ddecb903858506129d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156394"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968305"
 ---
 ## <a name="select-the-test-framework-for-a-python-project"></a>选择适用于 Python 项目的测试框架
 

@@ -2,7 +2,7 @@
 title: Visual Studio 集成 (MSBuild)
 titleSuffix: ''
 description: 了解 Visual Studio 如何以 MSBuild 格式托管项目，即使它们是由不同的工具编写的，并且有自定义的生成过程。
-ms.custom: seodec18, SEO-VS-2020
+ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: conceptual
 helpviewer_keywords:
@@ -22,12 +22,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: 39be49e26329e60e7c75f2c3b52d35e366d2266a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 8c2ea012fecdc5d97c69da09969d0c29b4b93503
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108194"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970498"
 ---
 # <a name="visual-studio-integration-msbuild"></a>Visual Studio 集成 (MSBuild)
 

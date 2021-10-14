@@ -3,20 +3,19 @@ title: 快速入门 - 使用模板创建 Python 项目
 description: 在此快速入门教程中，使用基本 Flask 应用的内置模板创建适合 Python 的 Visual Studio 项目。
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: c77f8c52e62772cbef61f7ae07f29a2594e608c0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 4e8b605a66b4b7c7e16873d84efb150abfa6620d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156495"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971330"
 ---
 # <a name="quickstart-create-a-python-project-from-a-template-in-visual-studio"></a>快速入门：从 Visual Studio 中的模板创建 Python 项目
 

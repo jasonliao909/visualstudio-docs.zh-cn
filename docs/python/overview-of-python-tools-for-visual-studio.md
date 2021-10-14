@@ -4,20 +4,19 @@ titleSuffix: ''
 description: Visual Studio 中的 Python 功能摘要，这些功能让 Visual Studio 成为 Windows 上卓越的 Python IDE（也称为针对 Visual Studio 的 Python 工具，PTVS）。
 ms.date: 06/05/2019
 ms.topic: overview
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 3743c61b44c90eb3f9de4dfbc19cc8f1316a4405
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 21022e8e562c83eb5e9dd0b911110089d6c51d6e
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129430594"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967647"
 ---
 # <a name="work-with-python-in-visual-studio-on-windows"></a>在 Windows 上的 Visual Studio 中使用 Python
 

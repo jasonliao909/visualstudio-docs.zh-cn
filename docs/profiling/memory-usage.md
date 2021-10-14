@@ -1,7 +1,6 @@
 ---
 title: 衡量应用中的内存使用情况
 description: 在使用集成了调试器的诊断工具进行调试时，查找内存泄漏和低效内存。
-ms.custom: seodec18
 ms.date: 04/25/2018
 ms.topic: tutorial
 author: mikejo5000
@@ -10,12 +9,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 70fc947cc707fa397088f6dbc75542884de5696a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3dd1ff6dd9234bf50f790d20dbcdabe2bdf1ce13
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122141722"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970511"
 ---
 # <a name="measure-memory-usage-in-visual-studio"></a>在 Visual Studio 中衡量内存使用情况
 
@@ -111,7 +110,7 @@ ms.locfileid: "122141722"
    报告会出现在单独的窗口中。
 
 ### <a name="managed-types-reports"></a>托管类型报告
- 在内存使用率摘要表中选择“对象(差异)”  或“分配(差异)”  单元格的当前链接。
+ 在内存使用率摘要表中，选择“对象(差异)”或“分配(差异)”单元格的当前链接 。
 
  ![调试器托管类型报表 &#45; 根路径](../profiling/media/dbgdiag_mem_managedtypesreport_pathstoroot.png "DBGDIAG_MEM_ManagedTypesReport_PathsToRoot")
 
@@ -130,7 +129,7 @@ ms.locfileid: "122141722"
  **“实例”** 视图显示上部窗格的快照中所选对象的实例。 “根的路径”和“引用的对象”窗格显示引用所选实例的对象以及所选实例引用的类型   。 当调试器在拍摄快照的点停止时，可将鼠标悬停在“值”单元格上方，从而在工具提示中显示对象的值  。
 
 ### <a name="native-type-reports"></a>本机类型报告
- 在“诊断工具”  窗口的内存使用率摘要表中选择“分配(差异)”  或“堆大小(差异)”  单元格的当前链接。
+ 在“诊断工具”窗口的内存使用率摘要表中，选择“分配(差异)”或“堆大小(差异)”单元格的当前链接  。
 
  ![本机类型视图](../profiling/media/dbgdiag_mem_native_typesview.png "DBGDIAG_MEM_Native_TypesView")
 

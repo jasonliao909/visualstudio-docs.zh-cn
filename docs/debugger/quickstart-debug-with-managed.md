@@ -1,7 +1,6 @@
 ---
 title: 调试托管代码 | Microsoft Docs
 description: 使用 Visual Studio 调试器调试 C# 或 Visual Basic
-ms.custom: mvc
 ms.date: 03/18/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 9387d4a7ef763357d79b9d185e79de9229735afb
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: b3c4f20d3b6e7e77296a9a665678aa901d51d723
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635966"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967907"
 ---
 # <a name="quickstart-debug-with-c-or-visual-basic-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C# 或 Visual Basic
 
@@ -29,7 +28,7 @@ Visual Studio 调试器提供了许多强大的功能以帮助调试应用。 �
 1. 打开 Visual Studio 并创建一个新项目。
 
     ::: moniker range=">=vs-2019"
-    如果开始窗口未打开，请选择“文件” > “开始窗口” 。 在“开始”窗口上，选择“创建新项目”  。
+    如果开始窗口未打开，请选择“文件” > “开始窗口” 。 在“开始”窗口上，选择“创建新项目”。
 
     在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows 。
 

@@ -3,20 +3,19 @@ title: Python 环境窗口引用
 description: 在 Visual Studio 的 Python 环境窗口中出现的每个选项卡的详细信息。
 ms.date: 03/18/2019
 ms.topic: reference
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a05288608c60ce76df7193543467b4a27c629dca
-ms.sourcegitcommit: 541871db9065c4fb1b21c24f980c563991b183c7
+ms.openlocfilehash: 3b147be3b4f17788f3fd5570abb739344387c774
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129431687"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972994"
 ---
 # <a name="python-environments-window-tabs-reference"></a>“Python 环境”窗口选项卡引用
 

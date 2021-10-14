@@ -2,22 +2,21 @@
 title: 使用最小脱机布局更新 Visual Studio
 description: 了解如何使用最小脱机布局更新 Visual Studio。
 ms.date: 05/18/2021
-ms.custom: seodec18
 ms.topic: how-to
 ms.assetid: ''
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 1c3a6254c3205038be3d56c64de091e659d2bbd5
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: ceb9094d303bc1cd1409338d4d7987248e6c2d1e
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112306730"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967881"
 ---
 # <a name="update-visual-studio-using-a-minimal-offline-layout"></a>使用最小脱机布局更新 Visual Studio
 

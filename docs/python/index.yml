@@ -8,15 +8,15 @@ metadata:
   ms.technology: vs-python
   ms.topic: landing-page
   ms.collection: collection
-  author: JoshuaPartlow
-  ms.author: joshuapa
+  author: rjmolyneaux
+  ms.author: rmolyneaux
   ms.date: 09/23/2019
-  ms.openlocfilehash: e85bdedfc91c949213528718d147a7f1890964ce
-  ms.sourcegitcommit: 6cfffa72af599a9d667249caaaa411bb28ea69fd
+  ms.openlocfilehash: b021fd52bd3431184a0b4117689eee1280d31799
+  ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/02/2020
-  ms.locfileid: "71322474"
+  ms.lasthandoff: 10/13/2021
+  ms.locfileid: "129968678"
 landingContent:
 - title: 关于 Visual Studio 中的 Python 支持
   linkLists:
@@ -26,7 +26,7 @@ landingContent:
       url: overview-of-python-tools-for-visual-studio.md
     - text: 学习 Visual Studio IDE 教程
       url: visual-studio-ide.md
-- title: Python 入门
+- title: 开始使用 Python
   linkLists:
   - linkListType: get-started
     links:

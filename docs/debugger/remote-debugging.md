@@ -3,7 +3,6 @@ title: 远程调试 | Microsoft Docs
 description: 使用 Visual Studio 远程调试器来调试已部署到另一他计算机上的 Visual Studio 应用程序。
 ms.custom:
 - remotedebugging
-- seodec18
 - SEO-VS-2020
 ms.date: 09/10/2021
 ms.topic: conceptual
@@ -24,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4c1e1f0cca6fc29f3dfc29e87d10c5ee324700f6
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ddae69c5261b63ef0e62fded1f94de448f82b984
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427135"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972383"
 ---
 # <a name="remote-debugging"></a>Remote Debugging
 你可以调试已部署在另一台计算机的 Visual Studio 应用程序。 要进行此操作，可使用 Visual Studio 远程调试器。

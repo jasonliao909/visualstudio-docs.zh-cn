@@ -2,7 +2,6 @@
 title: 创建脱机安装
 description: 了解如何在 Internet 连接不可靠或带宽较低时脱机安装 Visual Studio。
 ms.date: 4/16/2021
-ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - offline installation [Visual Studio]
@@ -16,12 +15,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 824488d3150f810268154a7f40a1be4245ba9d90
-ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
+ms.openlocfilehash: 3b99ac051d55cc97d32e2378de234b845af1525e
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "129680065"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969419"
 ---
 # <a name="create-an-offline-installation-of-visual-studio"></a>创建 Visual Studio 的脱机安装
 

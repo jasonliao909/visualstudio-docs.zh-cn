@@ -4,20 +4,19 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，具体演示了如何提供静态文件、将页面添加到应用，并使用模板继承
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 286f32477e67013b9766eba18b7ae0325e905d84
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 7b1a46d85ca320c8bc87a619e759d0b12bf24a80
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122038508"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968613"
 ---
 # <a name="step-3-serve-static-files-add-pages-and-use-template-inheritance-with-django-app"></a>步骤 3：通过 Django 应用提供静态文件、添加页面和使用模板继承
 

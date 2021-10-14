@@ -2,7 +2,6 @@
 title: 在防火墙或代理服务器背后安装和使用
 description: 如果组织使用防火墙或代理服务器，请检查希望添加到允许列表或打开的域 URL、端口和协议
 ms.date: 05/07/2021
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - network installation, Visual Studio
@@ -17,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 67e7da30258b7feaf5b2a1ed6b5d58ed1da6e893
-ms.sourcegitcommit: 2430a38f23ac17b65dd8d3baa806e90433aba24f
+ms.openlocfilehash: f78c6747262da16d881e4b783858a9aaa296924d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/04/2021
-ms.locfileid: "115094230"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973098"
 ---
 # <a name="install-and-use-visual-studio-and-azure-services-behind-a-firewall-or-proxy-server"></a>在防火墙或代理服务器后面安装和使用 Visual Studio 和 Azure 服务
 

@@ -3,20 +3,19 @@ title: 通过 Python 使用 CookieCutter 模板
 description: Visual Studio 支持图形 Cookiecutter 扩展，以发现 Python 代码的模板并从这些模板创建项目。
 ms.date: 01/28/2019
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 204e10f06dfa298e001d89781941c5638c80175b
-ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
+ms.openlocfilehash: 19f7ab85b330a0f3627a89a94aa22626cadd0a80
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129439907"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969263"
 ---
 # <a name="use-the-cookiecutter-extension"></a>使用 Cookiecutter 扩展
 

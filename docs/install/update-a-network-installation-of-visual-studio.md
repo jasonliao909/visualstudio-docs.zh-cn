@@ -2,7 +2,6 @@
 title: 更新基于网络的安装
 description: 了解如何使用 --layout 命令更新基于网络的 Visual Studio 安装
 ms.date: 05/26/2021
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
@@ -15,12 +14,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 68f5b913c8fab2dd06d724840bf128c0a13f3025
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: bf6a4957d09c797a80aff746456b2288a3187967
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635805"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970862"
 ---
 # <a name="update-a-network-based-installation-of-visual-studio"></a>更新基于网络的 Visual Studio 安装
 

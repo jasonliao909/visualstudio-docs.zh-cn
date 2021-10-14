@@ -1,7 +1,6 @@
 ---
 title: 教程：调试 C# 和 C++ 代码（混合模式）
 description: 了解如何使用混合模式调试来调试 .NET Core 或 .NET Framework 应用中的本机 DLL
-ms.custom: seodec18
 ms.date: 11/02/2018
 ms.topic: tutorial
 dev_langs:
@@ -16,12 +15,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 1b2b4419afdd6f44f9d70a3f3ab23c9ce75c86bb
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: ceeee6374a2d82b70d6aa9b8fe936c0434e36e12
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635368"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971746"
 ---
 # <a name="tutorial-debug-c-and-c-in-the-same-debugging-session"></a>教程：在同一个调试会话中调试 C# 和 C++
 

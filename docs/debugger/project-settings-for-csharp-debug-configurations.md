@@ -1,7 +1,6 @@
 ---
 title: C# 调试配置的项目设置 | Microsoft Docs
 description: 了解如何使用项目属性页面的“调试”选项卡和“生成”选项卡在 Visual Studio 中更改 C# 调试配置的项目设置。
-ms.custom: SEO-VS-2020
 ms.date: 11/21/2018
 ms.topic: reference
 dev_langs:
@@ -23,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 002d95684ffa7167ff0ff5bb10158f3e23622314
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2f06e853ec236c979e2881b8243363964cee53b7
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105101"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971709"
 ---
 # <a name="project-settings-for--c-debug-configurations"></a>C# 调试配置的项目设置
 

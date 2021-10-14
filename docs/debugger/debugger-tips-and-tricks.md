@@ -1,7 +1,6 @@
 ---
 title: 调试器中的提示和技巧
 description: 了解 Visual Studio 调试器支持的一些鲜为人知的功能
-ms.custom: seodec18
 ms.date: 06/15/2018
 ms.topic: conceptual
 helpviewer_keywords:
@@ -15,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 55beb1375dd4f1befa8a18ee404dbc2b0e10d0f8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 870e0aaccba071e1dd79f5c03694d4e5a4454461
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122081013"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969874"
 ---
 # <a name="learn-productivity-tips-and-tricks-for-the-debugger-in-visual-studio"></a>了解 Visual Studio 调试器在工作效率方面的提示和技巧
 

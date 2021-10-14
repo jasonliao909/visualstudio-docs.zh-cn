@@ -2,25 +2,24 @@
 title: 控制对部署的更新
 description: 了解从网络安装时，如何更改 Visual Studio 查找更新的位置。
 ms.date: 04/06/2021
-ms.custom: seodec18
 ms.topic: conceptual
 helpviewer_keywords:
 - '{{PLACEHOLDER}}'
 - '{{PLACEHOLDER}}'
 ms.assetid: 35C7AB05-07D5-4B38-BCAC-AB88444E7368
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f15281db55381dadbfd3370eb10a04feeab9c3a5
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: 2a4e123e83ab8e6adbc23998a0c927e1f9e98bc0
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307565"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969497"
 ---
 # <a name="control-updates-to-network-based-visual-studio-deployments"></a>控制对基于网络的 Visual Studio 部署的更新
 

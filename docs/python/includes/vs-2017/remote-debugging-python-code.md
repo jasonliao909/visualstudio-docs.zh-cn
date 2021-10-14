@@ -3,20 +3,19 @@ title: 在远程 Linux 计算机上调试 Python 代码
 description: 使用 Visual Studio 调试在远程 Linux 计算机上运行的 Python 代码，包括必要的配置步骤、安全性和故障排除。
 ms.date: 12/06/2018
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 7d625edfafbbf0f7cf1bdbfbf16697d401c8ec63
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e8fd26b710481ada2bf43ca80990d6a31aec0876
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122140516"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970396"
 ---
 Visual Studio 可在 Windows 计算机本地和远程启动和调试 Python 应用程序（请参阅[远程调试](../../../debugger/remote-debugging.md)）。 它还可使用 [ptvsd 库](https://pypi.python.org/pypi/ptvsd)在其他操作系统、设备或除 CPython 外的 Python 实现中进行远程调试。
 

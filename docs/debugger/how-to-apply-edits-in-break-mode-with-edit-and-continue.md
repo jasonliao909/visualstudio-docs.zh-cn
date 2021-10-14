@@ -1,7 +1,6 @@
 ---
 title: 如何：使用“编辑并继续”在中断模式下应用编辑 |Microsoft Docs
 description: 了解如何在中断模式下使用“编辑并继续”编辑 Visual Basic 代码。 可以通过多种方式进入中断模式。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -25,12 +24,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 4dfe838e4539b0d23ec20c087e548896195da104
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c05f26d64eef404ac7b26fdba206a56e6c9a9f43
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122090767"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969731"
 ---
 # <a name="how-to-apply-edits-in-break-mode-with-edit-and-continue-visual-basic"></a>如何：使用“编辑并继续”在中断模式下应用编辑 (Visual Basic)
 可以在中断模式下使用“编辑并继续”编辑代码，然后不必停止和重新启动执行即可继续。

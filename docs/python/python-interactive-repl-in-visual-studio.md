@@ -3,20 +3,19 @@ title: Python 交互式窗口 (REPL)
 description: 使用交互式窗口 (REPL) 在 Visual Studio 中进行快速 Python 代码开发。
 ms.date: 02/11/2019
 ms.topic: how-to
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: db046648d78caeb1ec779ae556709806d72dc55c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 3000cf5f02e4519f6218bdd9be7633434482a029
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076212"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972981"
 ---
 # <a name="work-with-the-python-interactive-window"></a>使用 Python 交互窗口
 

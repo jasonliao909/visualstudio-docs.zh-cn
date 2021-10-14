@@ -9,12 +9,12 @@ metadata:
   ms.topic: landing-page
   ms.date: 11/25/2019
   ms.author: ghogen
-  ms.openlocfilehash: d5a3f01af79b41ec219fd0ff959933e2798f1cfd
-  ms.sourcegitcommit: 8f8804b885c3a68f20bf0e9fe3729f2764145815
+  ms.openlocfilehash: 8e1fcd00afd4e759f650a03214312e4f08c02fdf
+  ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 08/27/2021
-  ms.locfileid: "123096753"
+  ms.lasthandoff: 10/13/2021
+  ms.locfileid: "129969627"
 landingContent:
 - title: 容器工具
   linkLists:
@@ -79,7 +79,7 @@ landingContent:
   - linkListType: quickstart
     links:
     - text: 将 Kubernetes 桥接用于 Visual Studio
-      url: /visualstudio/bridge/bridge-to-kubernetes
+      url: /visualstudio/bridge/overview-bridge-to-kubernetes
   - linkListType: overview
     links:
     - text: Kubernetes 桥接的工作原理

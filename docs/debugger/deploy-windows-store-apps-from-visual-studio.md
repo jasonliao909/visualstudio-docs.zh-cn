@@ -1,7 +1,6 @@
 ---
 title: 部署 UWP 应用 | Microsoft Docs
 description: 从 Visual Studio 部署通用 Windows 平台 (UWP) 应用。 指定本地或远程目标设备以进行部署。 了解部署选项。
-ms.custom: SEO-VS-2020
 ms.date: 01/16/2018
 ms.topic: conceptual
 dev_langs:
@@ -15,12 +14,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: 686448117cdb112c9136091a951853b275947ea6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: e8b785a71bc096a1bcb74f1be2a14cc2ba2c9f5d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122080947"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969822"
 ---
 # <a name="deploy-uwp-apps-from-visual-studio"></a>从 Visual Studio 部署 UWP 应用
 

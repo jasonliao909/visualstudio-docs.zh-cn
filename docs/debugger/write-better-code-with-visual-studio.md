@@ -3,7 +3,6 @@ title: 调试技术和工具
 description: 使用 Visual Studio 修复异常、错误并改进代码，从而编写效果更佳、bug 更少的代码
 ms.custom:
 - debug-experiment
-- seodec18
 ms.date: 02/14/2020
 ms.topic: conceptual
 helpviewer_keywords:
@@ -14,12 +13,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ea1c016caed0071e1a63ea9e21e33047a32cdb82
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 58f60e6c63057e115342e91e3ee50c880411e793
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635901"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972487"
 ---
 # <a name="debugging-techniques-and-tools-to-help-you-write-better-code"></a>有助于编写更佳代码的调试技术和工具
 

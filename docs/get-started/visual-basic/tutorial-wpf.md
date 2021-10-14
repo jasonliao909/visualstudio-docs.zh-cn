@@ -1,7 +1,7 @@
 ---
 title: 使用 Visual Basic 和 WPF 生成 Hello World 应用
 description: 使用 Visual Basic 在 Visual Studio 中通过 Windows Presentation Foundation (WPF) UI 框架创建简单的 Windows Desktop .NET 应用。
-ms.custom: vs-acquisition, seodec18, get-started
+ms.custom: vs-acquisition, get-started
 ms.date: 09/14/2021
 ms.technology: vs-ide-general
 ms.prod: visual-studio-windows
@@ -14,12 +14,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - dotnet
-ms.openlocfilehash: b33078255f2a85bc9067e3c9b7a8b4e0412b8fe6
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: e96d0b52af0931c8d239d77381682d08c1b95462
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431151"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972877"
 ---
 # <a name="tutorial-create-a-simple-application-with-visual-basic"></a>教程：使用 Visual Basic 创建简单应用
 
@@ -166,7 +166,7 @@ XAML 标记应如下面的示例所示：
 
    :::image type="content" source="media/vs-2022/explore-ide-textblock-toolbox.png" alt-text="显示“工具箱”窗口的屏幕截图，其中突出显示了常用 WPF 控件列表中的 TextBlock 控件。":::
 
-1. 通过选择“TextBlock”项并将其拖到设计图面的窗口中，将 TextBlock 控件添加到设计图面中。 把控件居中到窗口的顶部附近。 你可以使用参考线将控件居中。
+1. 通过选择“TextBlock”项并将其拖到设计图面的窗口中，将 TextBlock 控件添加到设计图面中。 把控件居中到窗口的顶部附近。 可以使用参考线将控件居中。
 
 你的窗口应类似于下图：
 
@@ -350,7 +350,7 @@ IsChecked="True"
 
    将出现“中断模式”窗口，“输出”窗口指示发生 IOException :“找不到资源 'mainwindow.xaml'”。
 
-   :::image type="content" source="media/vs-2022/explore-ide-ioexception.png" alt-text="显示“异常未处理”窗口的屏幕截图，其中包含一条 System.IO.Exception 消息，内容为“无法定位资源 mainwindow.xaml”。":::
+   :::image type=&quot;content&quot; source=&quot;media/vs-2022/explore-ide-ioexception.png&quot; alt-text=&quot;显示“异常未处理”窗口的屏幕截图，其中包含一条 System.IO.Exception 消息，内容为“无法定位资源 mainwindow.xaml”。&quot;:::
 
 1. 依次选择“调试”>“停止调试”，停止调试器 。
 
@@ -380,7 +380,7 @@ IsChecked="True"
 
 ::: moniker range=">=vs-2022"
 
-:::image type="content" source="media/vs-2022/explore-ide-wpf-running-app.png" alt-text="Greetings 窗口的屏幕截图，其中显示了 TextBlock、RadioButtons 和按钮控件，并选择了“Hello”单选按钮。":::
+:::image type="content" source="media/vs-2022/explore-ide-wpf-running-app.png" alt-text="Greetings 窗口的屏幕截图，其中显示了 TextBlock、RadioButtons 和 Button 控件，并选择了“Hello”单选按钮。":::
 
 ::: moniker-end
 

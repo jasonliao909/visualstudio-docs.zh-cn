@@ -4,8 +4,8 @@ title: 面向 Python 开发人员的 Visual Studio 概述
 titleSuffix: ''
 ms.date: 03/13/2019
 ms.topic: overview
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
 dev_langs:
@@ -13,12 +13,12 @@ dev_langs:
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: a81616e50cc4f7a3aab5fc4ccfa52d378eeb34d5
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f58b8409e846521b2590720911047d0d6702c107
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122027274"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971369"
 ---
 # <a name="welcome-to-the-visual-studio-ide--python"></a>欢迎使用 Visual Studio IDE | Python
 

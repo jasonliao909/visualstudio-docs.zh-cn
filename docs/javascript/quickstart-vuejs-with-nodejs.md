@@ -1,7 +1,6 @@
 ---
 title: 快速入门：创建第一个 Vue.js 应用
 description: 在此快速入门中，将使用针对 Visual Studio 的 Node.js 工具在 Visual Studio 中创建 Vue.js 应用
-ms.custom: ''
 ms.date: 10/31/2019
 ms.topic: quickstart
 ms.devlang: javascript
@@ -14,12 +13,12 @@ dev_langs:
 ms.workload:
 - nodejs
 monikerRange: <= vs-2019
-ms.openlocfilehash: c008c1e251eb8e0f1a3440469a63f63060b3ec6e
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 54752b44463b14ee0619300277bfc388abfd4203
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122061488"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970849"
 ---
 # <a name="quickstart-use-visual-studio-to-create-your-first-vuejs-app"></a>快速入门：使用 Visual Studio 创建第一个 Vue.js 应用
 

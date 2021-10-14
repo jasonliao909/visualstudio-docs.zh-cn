@@ -1,7 +1,6 @@
 ---
 title: 启用和禁用“编辑并继续” | Microsoft Docs
 description: 了解如何在设计时在 Visual Studio 的“选项”中禁用和启用“编辑并继续”。 “编辑并继续”仅在调试版本中起作用。
-ms.custom: SEO-VS-2020
 ms.date: 10/04/2018
 ms.topic: how-to
 dev_langs:
@@ -28,12 +27,12 @@ ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
 - cplusplus
-ms.openlocfilehash: 38e04715f7ab58085bbda601fb25e5bd30b5dfbe
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: bbdf7536fa08ab10c841989572c919cfed591cc7
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128398"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129968977"
 ---
 # <a name="how-to-enable-and-disable-edit-and-continue-c-vb-c"></a>如何：启用和禁用“编辑并继续”（C#、VB、C++）
 

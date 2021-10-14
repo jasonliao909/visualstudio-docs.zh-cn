@@ -1,24 +1,22 @@
 ---
 title: 初探调试器
 description: 开始使用 Visual Studio 调试器调试应用程序
-ms.custom: ''
-ms.date: 09/23/2021
 ms.topic: conceptual
+ms.date: 09/23/2021
 helpviewer_keywords:
 - debugger
-ms.assetid: c763d706-3213-494f-b4d2-990b6e1ec456
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: afb737484fef3df525596e66159b2d206dc08880
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 416f49e5c02ffddfb4dfff449a1e21986b828c9d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427351"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970756"
 ---
 # <a name="first-look-at-the-visual-studio-debugger"></a>初步了解 Visual Studio 调试器
 

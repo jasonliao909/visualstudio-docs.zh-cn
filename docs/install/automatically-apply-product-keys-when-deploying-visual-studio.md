@@ -2,22 +2,21 @@
 title: 自动应用产品密钥
 description: 了解如何在部署 Visual Studio 时以编程方式应用产品密钥。
 ms.date: 09/24/2019
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: d79260be-6234-4fd3-89b5-a9756b4a93c1
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: a78da89d8e8ce4251bc9288270628bfe784eca7a
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: c296bc417fb29f85f149868ff1cb0c2ad32d6f12
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307708"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969484"
 ---
 # <a name="automatically-apply-product-keys-when-deploying-visual-studio"></a>在部署 Visual Studio 时自动应用产品密钥
 

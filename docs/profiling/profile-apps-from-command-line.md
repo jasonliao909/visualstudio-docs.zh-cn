@@ -1,8 +1,7 @@
 ---
 title: 从命令行测量性能
 description: 从命令行测量应用程序中的 CPU 性能和托管内存使用情况。
-ms.custom: ''
-ms.date: 09/13/2021
+ms.date: 9/13/2021
 ms.topic: conceptual
 helpviewer_keywords:
 - Profiling Tools, command-line
@@ -15,12 +14,12 @@ ms.technology: vs-ide-debug
 monikerRange: '>= vs-2019'
 ms.workload:
 - multiple
-ms.openlocfilehash: 5ebc503d8b1733968b94f09256b139b84296c708
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: b3a39afabf3b33b148c90c7a4e7c9f03955cacde
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428706"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973059"
 ---
 # <a name="measure-application-performance-from-the-command-line"></a>从命令行测量应用程序性能
 

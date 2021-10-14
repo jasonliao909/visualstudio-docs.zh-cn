@@ -1,7 +1,6 @@
 ---
 title: 在异常发生后检查系统代码 | Microsoft Docs
 description: 了解如何检查系统调用中的代码以查找异常的原因。 即使未加载系统代码的符号，该过程也适用。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -19,12 +18,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a8d6433602d40fc9ff846b7d7f9ee63299c71d54
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0d3296c67fa857b457330bb3f8dcfb074a74efb3
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122128411"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970602"
 ---
 # <a name="how-to-examine-system-code-after-an-exception"></a>如何：在发生异常后检查系统代码
 发生异常时，你可能需要检查系统调用内部的代码，以确定该异常的起因。 如果你没有为系统代码加载符号，或者启用了“仅我的代码”，则下面的步骤说明了如何执行此操作。

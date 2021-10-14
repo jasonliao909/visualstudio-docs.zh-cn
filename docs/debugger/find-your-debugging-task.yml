@@ -2,7 +2,6 @@
 metadata:
   title: 常见问题解答 - 查找调试功能
   description: 常见问题解答有助于你识别可帮助你调试应用的调试器功能
-  ms.custom: ''
   ms.date: 10/01/2019
   ms.topic: conceptual
   helpviewer_keywords:
@@ -12,12 +11,12 @@ metadata:
   manager: jmartens
   ms.workload:
   - multiple
-  ms.openlocfilehash: be2f8aa5e625015aec444a76d71433d02da578df
-  ms.sourcegitcommit: d4887ef2ca97c55e2dad9f179eec2c9631d91c95
+  ms.openlocfilehash: 52bd15e9e39a4aea52df83dda267e207fa4ddd41
+  ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 05/06/2021
-  ms.locfileid: "108800416"
+  ms.lasthandoff: 10/13/2021
+  ms.locfileid: "129969601"
 title: 常见问题解答 - 在 Visual Studio 中查找所需的调试功能
 summary: >
   如果需要帮助你将调试任务映射到相关 Visual Studio 调试器的正确功能，请使用本文中提供的链接。 此处的任务列表包括常见任务，如暂停代码调试、检查变量以及将消息发送到“输出”窗口  。 如果需要大致了解调试器功能，请改为参阅[初探调试器](debugger-feature-tour.md)。

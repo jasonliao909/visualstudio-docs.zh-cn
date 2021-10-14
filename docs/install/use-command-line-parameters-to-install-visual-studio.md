@@ -3,7 +3,6 @@ title: 使用命令行参数安装 Visual Studio
 titleSuffix: ''
 description: 了解如何使用命令行参数来控制或自定义 Visual Studio 安装。
 ms.date: 4/16/2021
-ms.custom: seodec18
 ms.topic: conceptual
 f1_keywords:
 - command-line parameters
@@ -17,12 +16,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: f9d4f58a4bd4035e097925454b48267f07bb7b6a
-ms.sourcegitcommit: 7a6358d7c7de0a7b9b9553801e72d91d972b0c94
+ms.openlocfilehash: f649e6c58960dc1e6d32701e54b8f3b84217e025
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/08/2021
-ms.locfileid: "129680013"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967868"
 ---
 # <a name="use-command-line-parameters-to-install-visual-studio"></a>使用命令行参数安装 Visual Studio
 

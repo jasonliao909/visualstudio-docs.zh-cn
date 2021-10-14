@@ -1,7 +1,6 @@
 ---
 title: 使用调试器管理异常 | Microsoft Docs
 description: 了解如何指定调试器中断的异常、希望调试器在何时中断以及如何处理中断。
-ms.custom: SEO-VS-2020
 ms.date: 10/09/2018
 ms.topic: how-to
 f1_keywords:
@@ -35,12 +34,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: a9816262561a461e925939c8e15b1394e58d6c7f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 806c597a3112352d89ef2abd22de34414bb91a04
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105304"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970225"
 ---
 # <a name="manage-exceptions-with-the-debugger-in-visual-studio"></a>在 Visual Studio 中使用调试器管理异常
 

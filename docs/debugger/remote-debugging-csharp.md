@@ -3,7 +3,6 @@ title: 远程调试 C# 或 VB 项目 | Microsoft Docs
 description: 遵循以下分步说明，了解如何从远程计算机调试 Visual Studio C# 或 Visual Basic 应用程序。
 ms.custom:
 - remotedebugging"=
-- seodec18
 ms.date: 08/14/2018
 ms.topic: conceptual
 dev_langs:
@@ -21,12 +20,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 4bce1ee0c6dd5af379856ae86292fd682964d1b7
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 3a4395e54b5bf9a1e10840266496922e432a0816
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427159"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970095"
 ---
 # <a name="remote-debugging-a-c-or-visual-basic-project-in-visual-studio"></a>在 Visual Studio 中远程调试 C# 或 Visual Basic 项目
 若要调试已部署到另一台计算机上的 Visual Studio 应用程序，请在部署了应用的计算机上安装并运行远程工具，将项目配置为从 Visual Studio 连接到远程计算机，然后运行应用。

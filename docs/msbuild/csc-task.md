@@ -21,12 +21,12 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: cae7ff3a8c413051e38d9a6c5209717d1b5b481f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 146b4255c6718a62162d13f03e4a671759fadf5d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122123419"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972279"
 ---
 # <a name="csc-task"></a>Csc 任务
 
@@ -63,7 +63,7 @@ ms.locfileid: "122123419"
 | `MainEntryPoint` | 可选 `String` 参数。<br /><br /> 指定 `Main` 方法的位置。 有关详细信息，请参阅 [-main（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/main-compiler-option)。 |
 | `ModuleAssemblyName` | 可选 `String` 参数。<br /><br /> 指定此模块所属程序集的名称。 |
 | `NoConfig` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则告知编译器不使用 csc.rsp 文件进行编译  。 有关详细信息，请参阅 [-noconfig（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/noconfig-compiler-option)。 |
-| `NoLogo` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则禁止显示编译器横幅信息。 有关详细信息，请参阅 [-nologo（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/nologo-compiler-option)。 |
+| `NoLogo` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则禁止显示编译器横幅信息。 有关详细信息，请参阅 [-nologo（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/miscellaneous#nologo)。 |
 | `NoStandardLib` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则防止导入 mscorlib.dll，这定义了整个 System 命名空间。  如果你想要定义或创建自己的 System 命名空间和对象，请使用此参数。 有关详细信息，请参阅 [-nostdlib（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/nostdlib-compiler-option)。 |
 | `NoWin32Manifest` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则不包括默认的 Win32 清单。 |
 | `Optimize` | 可选 `Boolean` 参数。<br /><br /> 如果为 `true`，则启用优化。 如果为 `false`，则禁用优化。 有关详细信息，请参阅 [-optimize（C# 编译器选项）](/dotnet/csharp/language-reference/compiler-options/optimize-compiler-option)。 |

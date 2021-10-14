@@ -2,7 +2,7 @@
 title: IIS 和 Azure 上的远程调试 ASP.NET Core |Microsoft Docs
 description: 了解如何设置和配置 Visual Studio ASP.NET Core 应用，使用 Azure 将其部署到 IIS，并从 Visual Studio 连接远程调试器。
 ms.custom: remotedebugging
-ms.date: 08/27/2021
+ms.date: 10/05/2021
 ms.topic: conceptual
 ms.assetid: a6c04b53-d1b9-4552-a8fd-3ed6f4902ce6
 author: mikejo5000
@@ -13,16 +13,18 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: 34600e60c5f27ca7a0a1d34142802ee0a3a6b453
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a13b848050b9d6fff8006fca586527e129bce7af
+ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427312"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129635934"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Azure 中的 IIS 上的 Visual Studio 中远程调试 ASP.NET Core
 
 本指南说明如何设置和配置 Visual Studio ASP.NET Core 应用，使用 Azure 将其部署到 IIS，并从 Visual Studio 附加远程调试器。
+
+对于 IIS 方案，不支持 Linux。
 
 在 Azure 上进行远程调试的建议方法取决于具体场景：
 
@@ -47,7 +49,7 @@ ms.locfileid: "128427312"
 ## <a name="prerequisites"></a>先决条件
 
 ::: moniker range=">=vs-2019"
-需要安装 Visual Studio 2019 才能执行本文所述的步骤。
+需要安装 Visual Studio 2019 或更高版本才能执行本文所述的步骤。
 ::: moniker-end
 ::: moniker range="vs-2017"
 需要安装 Visual Studio 2017 才能执行本文所述的步骤。
@@ -64,7 +66,7 @@ ms.locfileid: "128427312"
     ::: moniker range=">=vs-2019"
     在 Visual Studio 2019 中的“启动”窗口上，选择“新建项目”。 如果开始窗口未打开，请选择“文件” > “开始窗口” 。 键入“Web 应用”，选择“C#”作为语言，然后选择“ASP.NET Core Web 应用程序(模型-视图-控制器)”，再选择“下一步”。 在下一个屏幕上，将项目命名为“MyASPApp”，然后选择“下一步”。
 
-    选择建议的目标框架 (.NET Core 3.1) 或 .NET 5，然后选择“创建”。
+    选择建议的目标框架或 .NET 6，然后选择“创建”。
     ::: moniker-end
     ::: moniker range="vs-2017"
     在 Visual Studio 2017 中，选择“文件”>“新建”>“项目”，然后选择“Visual C#”>“Web”>“ASP.NET Core Web 应用程序” 。 在“ASP.NET Core 模板”部分中，选择“Web 应用程序(模型-视图-控制器)”。 确保选择了 ASP.NET Core 2.1，未选择“启用 Docker 支持”，并且“身份验证”设置为“无身份验证”  。 将项目命名为“MyASPApp”。
@@ -76,6 +78,21 @@ ms.locfileid: "128427312"
 
 在 Visual Studio 中，你可以快速将应用发布和调试为完全预配的 IIS 实例。 但是，IIS 的配置是预设的，不能对其进行自定义。 有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 （如果需要自定义 IIS，请尝试在 [Azure VM](#remote_debug_azure_vm) 上进行调试。）
 
+::: moniker range=">= vs-2022"
+
+1. 使用“发布”窗口创建 Azure 应用服务的发布配置文件。
+
+1. 在配置文件中，选择“托管”下的“...”菜单 。 选择“附加调试器”选项。
+
+   Visual Studio 尝试将远程调试器附加到配置文件要发布到 Azure 应用服务 (Windows) 的实例。
+
+   :::image type="content" source="../debugger/media/attach-debugger-publish-profile.png" alt-text="“发布摘要”页中的附加调试器选项的屏幕截图。":::
+
+> [!NOTE]
+> 在 Visual Studio 2022 中，已弃用 Cloud Explorer。 Cloud Explorer 提供了之前远程调试 Azure 应用服务的方法。
+
+::: moniker-end
+::: moniker range="<= vs-2019"
 #### <a name="to-deploy-the-app-and-remote-debug-using-cloud-explorer"></a>使用 Cloud Explorer 部署应用和远程调试
 
 1. 在 Visual Studio 中，右键单击项目节点，然后选择“发布”。
@@ -84,17 +101,11 @@ ms.locfileid: "128427312"
 
 1. 创建新的发布配置文件。
 
-    ::: moniker range=">=vs-2019"
     从“发布”对话框中选择“Azure”，然后选择“下一步”。 然后，选择“Azure 应用服务(Windows)”，选择“下一步”，然后按照提示创建配置文件。
 
-    :::image type="content" source="../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png" alt-text="使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure":::
-    ::: moniker-end
-    ::: moniker range="vs-2017"
+    ![使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](../debugger/media/vs-2019/remotedbg-azure-app-service-profile.png)
 
-    从“发布”对话框中选择“Azure 应用服务”，选择“新建”并按照提示创建配置文件  。
-
-    ![发布到 Azure 应用服务](../debugger/media/remotedbg_azure_app_service_profile.png)
-    ::: moniker-end
+    在 Visual Studio 2017 中，从“发布”对话框中选择“Azure 应用服务”，选择“新建”并按照提示创建配置文件  。
 
     有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。
 
@@ -102,7 +113,7 @@ ms.locfileid: "128427312"
 
    调试应用需要“调试”配置。
 
-1. 打开“Cloud Explorer”（“视图” > “Cloud Explorer”），右键单击应用服务实例，然后选择“附加调试器”   。
+1. 打开“Cloud Explorer”（“视图”>“Cloud Explorer”），右键单击应用服务实例，然后选择“附加调试器”   。
 
    如果 Cloud Explorer 不可用，则改为打开服务器资源管理器。 然后右键单击服务器资源管理器中的应用服务实例，选择“附加调试器”。
 
@@ -111,6 +122,8 @@ ms.locfileid: "128427312"
     应在 Visual Studio 中命中断点。
 
     就这么简单！ 本主题中的其余步骤适用于 Azure VM 上的远程调试。
+
+::: moniker-end
 
 ## <a name="remote-debug-aspnet-core-on-an-azure-vm"></a><a name="remote_debug_azure_vm"></a> 远程调试 Azure VM 上的 ASP.NET Core
 

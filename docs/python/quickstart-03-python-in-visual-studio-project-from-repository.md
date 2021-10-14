@@ -3,20 +3,19 @@ title: 快速入门 - 克隆 Python 代码存储库
 description: 在此快速入门教程中，将使用 Visual Studio 团队资源管理器进行 Python koans 存储库克隆，从而在 Visual Studio 中创建 Python 项目。
 ms.date: 12/06/2018
 ms.topic: quickstart
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 6ec913b78094ac9ad6649e019548e3785b939ba8
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1846e7795fe1f6223ad852041f9a5a2b58a7aae7
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122076173"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972253"
 ---
 # <a name="quickstart-clone-a-repository-of-python-code-in-visual-studio"></a>快速入门：在 Visual Studio 中克隆 Python 代码存储库
 

@@ -4,20 +4,19 @@ titleSuffix: ''
 description: Visual Studio 项目上下文中 Django 基础知识的演练，演示 Visual Studio 如何为 Django 开发提供支持。
 ms.date: 11/19/2018
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: bd3bb5bd5b9ac4864c9eb38f290d34d7cdd7fc1f
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 2900e9bd4228d6cc45bdaec05db33d4dbbd0e4ab
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122156612"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972266"
 ---
 # <a name="tutorial-get-started-with-the-django-web-framework-in-visual-studio"></a>教程：在 Visual Studio 中开始使用 Django Web 框架
 

@@ -1,7 +1,6 @@
 ---
 title: 在调试器中查看反汇编代码 | Microsoft Docs
 description: 在 Visual Studio 中使用“反汇编”窗口显示与编译器创建的指令相对应的汇编代码。
-ms.custom: SEO-VS-2020
 ms.date: 10/30/2018
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: cc563c6ffc7a97af684edb49b9bb7466ed7bd24a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 6f7de22f7eb51f5a364d588cd7f37ce5789a2306
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122051841"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970693"
 ---
 # <a name="view-disassembly-code-in-the-visual-studio-debugger-c-c-visual-basic-f"></a>在 Visual Studio 调试器中查看反汇编代码（C#、C++、Visual Basic、F#）
 

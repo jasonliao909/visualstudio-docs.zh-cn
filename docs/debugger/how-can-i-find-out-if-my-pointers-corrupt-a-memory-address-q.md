@@ -1,7 +1,6 @@
 ---
 title: 查明指针是否损坏了内存地址 | Microsoft Docs
 description: 若要确定指针是否损坏内存，可以查找堆损坏，并且可以设置数据断点以了解如何修改某个值。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -23,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 5fd0e82aa4f66838025c5aa235a9ca9a6bfe6ec0
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 30cd06e52314d2daac3d3e9ce73216ec70b424ba
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030784"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969744"
 ---
 # <a name="how-can-i-find-out-if-my-pointers-corrupt-a-memory-address"></a>如何查明指针是否损坏了内存地址？
 ## <a name="problem-description"></a>问题描述

@@ -1,7 +1,6 @@
 ---
 title: 分析 CPU 使用情况数据（C#、Visual Basic）
 description: 使用 CPU 使用情况诊断工具衡量 C++ 和 Visual Basic 中的应用性能
-ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - dotnet
-ms.openlocfilehash: 1450cea98601c551545fb74f7aa925701f43068f
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: e3bfc29b25a57229a2848b568a11cf864e49a853
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635836"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972292"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-c-visual-basic"></a>快速入门：在 Visual Studio 中分析 CPU 使用情况数据（C#、Visual Basic）
 
@@ -42,7 +41,7 @@ Visual Studio 提供了许多强大的功能来帮助你分析应用程序中的
    ::: moniker range=">=vs-2019"
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-   在“开始”窗口上，选择“创建新项目”  。
+   在“开始”窗口上，选择“创建新项目”。
 
    在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C#”或“Visual Basic”，然后从“平台”列表中选择“Windows”    。
 

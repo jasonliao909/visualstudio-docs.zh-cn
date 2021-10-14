@@ -1,7 +1,6 @@
 ---
 title: 分析 CPU 使用情况数据 (ASP.NET Core)
 description: 使用 CPU 使用情况诊断工具衡量 ASP.NET Core 应用中的应用性能
-ms.custom: mvc
 ms.date: 02/14/2020
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - aspnet
-ms.openlocfilehash: 3e3b9207536073b2ca42d4b0e488a7374a6dbfb1
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 05841860e096186706966e96b55357883fbf606b
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635849"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970459"
 ---
 # <a name="quickstart-analyze-cpu-usage-data-in-visual-studio-aspnet-core"></a>快速入门：在 Visual Studio 中分析 CPU 使用率数据 (ASP.NET Core)
 

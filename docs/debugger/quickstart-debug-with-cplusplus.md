@@ -1,7 +1,6 @@
 ---
 title: 调试 C++
 description: 使用 Visual Studio 调试器调试本机代码
-ms.custom: mvc
 ms.date: 08/06/2018
 ms.topic: quickstart
 helpviewer_keywords:
@@ -13,12 +12,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - cplusplus
-ms.openlocfilehash: 0292e73f952a05652142b8e146d21915af73bde2
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0efe8b1806602ffa977a860fd5954c6cd24763e7
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105023"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129970043"
 ---
 # <a name="quickstart-debug-with-c-using-the-visual-studio-debugger"></a>快速入门：使用 Visual Studio 调试器调试 C++
 

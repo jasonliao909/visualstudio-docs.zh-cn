@@ -4,20 +4,20 @@ titleSuffix: ''
 description: 在 Visual Studio 中使用 Python 功能的核心教程概述和第 1 步，包括系统必备组件和创建新的 Python 项目。
 ms.date: 09/14/2021
 ms.topic: tutorial
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
 ms.custom: vs-acquisition
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 50894927535010efcee70a079f935176590ba653
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 2f26f10754de6addcab2815eecfffa394296e6bc
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429277"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129967608"
 ---
 # <a name="tutorial-work-with-python-in-visual-studio"></a>教程：在 Visual Studio 中使用 Python
 

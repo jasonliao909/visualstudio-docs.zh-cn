@@ -2,7 +2,6 @@
 title: 在无需解决方案或项目的情况下在 Visual Studio 中编写 JavaScript 代码
 titleSuffix: ''
 description: Visual Studio 支持创建代码，而无需依赖于项目文件或解决方案文件
-ms.custom: seodec18
 ms.date: 09/24/2018
 ms.topic: how-to
 ms.devlang: javascript
@@ -14,12 +13,12 @@ dev_langs:
 - JavaScript
 ms.workload:
 - nodejs
-ms.openlocfilehash: c1cad687f73af5eb59f23a2d176e5b8facd3da40
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: f0d86db6369b33a7cc763b5567ff42ec88440e5f
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122028015"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969289"
 ---
 # <a name="develop-javascript-and-typescript-code-in-visual-studio-without-solutions-or-projects"></a>在 Visual Studio 中开发 JavaScript 和 TypeScript 代码，而无需解决方案或项目
 

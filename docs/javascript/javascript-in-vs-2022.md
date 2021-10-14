@@ -13,12 +13,12 @@ author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 monikerRange: '>= vs-2022'
-ms.openlocfilehash: 9aa0c1166de701f5885b25391a42b82b9c670919
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 9b4ff4d4f0e345cd9cb69c98355d929f6209da09
+ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129349349"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129561069"
 ---
 # <a name="javascript-and-typescript-in-visual-studio-2022"></a>Visual Studio 2022 中的 JavaScript 和 TypeScript
 
@@ -49,6 +49,6 @@ TypeScript SDK 已在 Visual Studio 2022 中弃用。 依赖于该 SDK 的现有
 
 ## <a name="project-templates"></a>项目模板 
 
-从 Visual Studio 2022 开始，会有一个新的 JavaScript/TypeScript 项目类型 (.esproj)，你可以使用该类型在 Visual Studio 中创建单独的 Angular、React 和 Vue 项目。 这些项目使用已安装在本地计算机上的框架 CLI 工具创建，因此模板版本取决于你。  
+从 Visual Studio 2022 开始，会有一个新的 JavaScript/TypeScript 项目类型 (.esproj)，你可以使用该类型在 Visual Studio 中创建单独的 Angular、React 和 Vue 项目。 这些前端项目使用已安装在本地计算机上的框架 CLI 工具创建，因此模板版本取决于你。  
 
-在这些新项目中，你将能够运行 JavaScript 和 TypeScript 单元测试，使用 npm 管理器轻松添加和连接 ASP.NET Core API 项目并下载 npm 模块。 查看一些快速入门和教程即可开始操作。 如果需要详细信息，可参阅[此博客文章](https://devblogs.microsoft.com/visualstudio/the-new-javascript-typescript-experience-in-vs-2022-preview-3/)。
+在这些新项目中，你可以运行 JavaScript 和 TypeScript 单元测试，使用 npm 管理器轻松添加和连接 ASP.NET Core API 项目并下载 npm 模块。 查看一些快速入门和教程即可开始操作。 如果需要详细信息，可参阅[此博客文章](https://devblogs.microsoft.com/visualstudio/the-new-javascript-typescript-experience-in-vs-2022-preview-3/)。

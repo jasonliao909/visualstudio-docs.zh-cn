@@ -1,7 +1,6 @@
 ---
 title: 调试前台应用时使用调试器窗口 | Microsoft Docs
 description: 如果要调试的程序必须留在前台，请使用远程调试以避免将其置于后台。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 f1_keywords:
@@ -24,12 +23,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e8135bb76d8e3c6ae21e2287966b8478f9db6c07
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 07d5747e6b4d6dccf02d9aa5b8c92f4569f96bf1
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122105205"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972565"
 ---
 # <a name="how-can-i-use-debugger-windows-while-debugging-a-foreground-program"></a>调试前台程序时如何使用调试器窗口？
 ## <a name="problem-description"></a>问题描述

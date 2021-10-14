@@ -1,7 +1,6 @@
 ---
 title: 在用户帐户下运行工作进程 | Microsoft Docs
 description: 设置计算机，以便可以在 Visual Studio 中的用户帐户下运行 ASP.NET 工作进程 (aspnet_wp.exe or w3wp.exe)。
-ms.custom: SEO-VS-2020
 ms.date: 11/04/2016
 ms.topic: how-to
 dev_langs:
@@ -22,12 +21,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: e9bf2b73d83f2a55bc9b8c370eff6036265dcea6
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 0c9e9812bb2a657d95f0a5a2d477d49995f79bb3
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122097189"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129971651"
 ---
 # <a name="how-to-run-the-worker-process-under-a-user-account"></a>如何：在用户帐户下运行工作进程
 若要设置计算机以便在某个用户帐户下运行 [!INCLUDE[vstecasp](../code-quality/includes/vstecasp_md.md)] 辅助进程（aspnet_wp.exe 或 w3wp.exe），请执行下列步骤。

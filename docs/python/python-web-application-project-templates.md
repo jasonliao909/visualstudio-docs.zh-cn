@@ -3,20 +3,19 @@ title: Python 的 Web 应用程序模板
 description: Visual Studio 使用 Bottle、Flask 和 Django 框架为 Python Web 应用程序提供模板；支持包括调试配置和发布到 Azure 应用程序服务。
 ms.date: 01/28/2019
 ms.topic: conceptual
-author: JoshuaPartlow
-ms.author: joshuapa
+author: rjmolyneaux
+ms.author: rmolyneaux
 manager: jmartens
 ms.technology: vs-python
-ms.custom: seodec18
 ms.workload:
 - python
 - data-science
-ms.openlocfilehash: 5e587682bd8e4257d14c0c6602cf45255effeede
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 56a9f0bc78d942d34ce0a2aadfd9f7a59becd7c8
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122054361"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129972903"
 ---
 # <a name="python-web-application-project-templates"></a>Python Web 应用程序项目模板
 
@@ -64,7 +63,7 @@ Visual Studio 中的 Python 支持在 Bottle、Flask 和 Django 框架中通过�
 | --- | --- |
 | **Bottle Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中，并通过 app.py 中的代码进行处理   。 单个页面的路由包含在 routes.py 中，views 文件夹包含页面模板   。|
 | **Django Web 项目** | 生成一个 Django 项目和一个 Django 应用，其中包含三个页面、身份验证支持和一个 SQLite 数据库（但没有数据模型）。 有关详细信息，请参阅 [Django 模板](python-django-web-application-project-template.md)和[学习 Django 步骤 4](learn-django-in-visual-studio-step-04-full-django-project-template.md)。 |
-| **Flask Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中  。 views.py 中的代码处理路由，页面模板使用 templates 文件夹中包含的 Jinja 引擎   。 runserver.py 文件提供启动代码  。 查看 
+| **Flask Web 项目** | 生成一个应用，其静态文件包含在 static 文件夹中  。 views.py 中的代码处理路由，页面模板使用 templates 文件夹中包含的 Jinja 引擎   。 runserver.py 文件提供启动代码  。 请参阅 
 
 ::: moniker range="vs-2017"
 ### <a name="polls-group"></a>投票组

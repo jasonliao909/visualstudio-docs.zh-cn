@@ -2,7 +2,6 @@
 title: 远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行 |Microsoft Docs
 titleSuffix: ''
 description: 如果正在“无身份验证”模式下进行调试，而启动 msvsmon 的用户不是运行 Visual Studio 的用户，则会收到此消息。
-ms.custom: seodec18
 ms.date: 11/04/2016
 ms.topic: error-reference
 dev_langs:
@@ -23,12 +22,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: 43b25b58a93a4dcfde6bb927c32e6c6a416f917a
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: a491fee3c58841aafd36933b58f91eee5d6dfa87
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122065652"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969939"
 ---
 # <a name="error-the-microsoft-visual-studio-remote-debugging-monitor-on-the-remote-computer-is-running-as-a-different-user"></a>错误：远程计算机上的 Microsoft Visual Studio 远程调试监视器正在以其他用户身份运行 |Microsoft Docs
 当尝试执行远程调试时，您可能会收到如下错误信息：

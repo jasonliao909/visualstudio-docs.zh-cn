@@ -2,22 +2,21 @@
 title: 安装的命令行参数示例
 description: 自定义这些示例，以创建自己的 Visual Studio 命令行安装。
 ms.date: 03/30/2019
-ms.custom: seodec18
 ms.topic: conceptual
 ms.assetid: 837F31AA-F121-46e9-9996-F8BCE768E579
-author: j-martens
-ms.author: jmartens
+author: anandmeg
+ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 5685de34235dcd9b903cbf5be6371ebf3f1e84c3
-ms.sourcegitcommit: 5fb4a67a8208707e79dc09601e8db70b16ba7192
+ms.openlocfilehash: bba8646ece080a66098555dc4b0ec5310c35a556
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112307539"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969445"
 ---
 # <a name="command-line-parameter-examples-for-visual-studio-installation"></a>Visual Studio 安装的命令行参数示例
 
