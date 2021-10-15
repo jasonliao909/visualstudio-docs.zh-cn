@@ -1468,12 +1468,10 @@
           href: ide/how-to-report-a-problem-with-visual-studio.md
         - name: 快速修复性能问题
           href: ide/how-to-increase-chances-of-performance-issue-being-fixed.md
-        - name: 使用调用堆栈创建小型转储
-          href: ide/report-a-problem-minidumps.md
         - name: 为 MSBuild 问题创建日志
           href: ide/msbuild-logs.md
-        - name: 使用 PerfView 收集 ETL 跟踪
-          href: ide/report-a-problem-perfview.md
+        - name: 收集 ETL 跟踪并创建小型转储
+          href: ide/report-a-problem-perfview-minidumps.md
     - name: 功能建议
       href: ide/suggest-a-feature.md
     - name: 开发者社区指南

@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 03/24/2021
 ms.faqid: q2_4
-ms.openlocfilehash: bf585013ecf2fd4c0233c7fa31a6462477769a19
-ms.sourcegitcommit: f2916d8fd296b92cc402597d1d1eecda4f6cccbf
+ms.openlocfilehash: a4bde2cb7df7feec1932c7116a089e4d6ad477ecc5b2247599b43453d38257d0
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105105111"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121381214"
 ---
 ## <a name="where-can-i-find-older-versions-of-visual-studio"></a>可以在哪里找到 Visual Studio 的旧版本？ 
 

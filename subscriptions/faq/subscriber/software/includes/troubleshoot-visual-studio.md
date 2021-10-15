@@ -8,10 +8,10 @@ ms.author: cabuschl
 ms.date: 09/20/2021
 ms.faqid: q2_6
 ms.openlocfilehash: 6d89ab5fad089ce79d004c81b61fd49a664f9e2c
-ms.sourcegitcommit: da5efd7698e357c59ba9b7dbbcaaceb5d1cfade2
+ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/23/2021
+ms.lasthandoff: 09/24/2021
 ms.locfileid: "128319766"
 ---
 ## <a name="how-do-i-troubleshoot-problems-with-visual-studio"></a>如何解决与 Visual Studio 有关的问题？ 

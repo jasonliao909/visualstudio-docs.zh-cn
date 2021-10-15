@@ -7,12 +7,12 @@ author: CaityBuschlen
 ms.author: cabuschl
 ms.date: 01/29/2021
 ms.faqid: q2_5
-ms.openlocfilehash: aaea471aa833ef459d77327cc802f983be824824
-ms.sourcegitcommit: cfeffe2364275a347db0ba2dce36d8e80001c081
+ms.openlocfilehash: 1e24a0f02b182a29fde5f74b1f02c8f2c19841f26176eecfc34a3d7a2977fae3
+ms.sourcegitcommit: c72b2f603e1eb3a4157f00926df2e263831ea472
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 01/30/2021
-ms.locfileid: "99105327"
+ms.lasthandoff: 08/12/2021
+ms.locfileid: "121381212"
 ---
 ## <a name="where-are-my-product-keys"></a>我的产品密钥位于何处？ 
 

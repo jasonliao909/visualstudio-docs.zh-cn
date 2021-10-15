@@ -6,23 +6,22 @@ keywords: ''
 author: anandmeg
 ms.author: meghaanand
 manager: jmartens
-ms.date: 08/10/2021
+ms.date: 10/12/2021
 ms.topic: reference
 helpviewer_keywords:
 - workload ID, Visual Studio
 - component ID, Visual Studio
 - install Visual Studio, administrator guide
-ms.custom: seodec18
 ms.assetid: 34e19ef1-abfb-44fd-aad2-33c5d7874482
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
 open_to_public_contributors: false
-ms.openlocfilehash: 5b68dc5de33b914e241680581fd70ce98774a9fc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: d5acfc9ac5ffd6491e807049afbd12a53715868d
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122150789"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969328"
 ---
 # <a name="visual-studio-workload-and-component-ids"></a>Visual Studio 工作负荷和组件 ID
 
@@ -49,7 +48,7 @@ ms.locfileid: "122150789"
 
 ::: moniker-end
 
-::: moniker range=">=vs-2019"
+::: moniker range="vs-2019"
 
 已针对[版本 16.11](/visualstudio/releases/2019/release-notes/) 进行更新
 
@@ -67,6 +66,25 @@ ms.locfileid: "122150789"
 
 > [!NOTE]
 > 有关上一个版本的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2017 工作负载和组件 ID](workload-and-component-ids.md?view=vs-2017&preserve-view=true)
+
+::: moniker-end
+
+::: moniker range=">=vs-2022"
+
+| **版本** | **ID** | **说明** |
+| ----------- | ------ | --------------- |
+| [Visual&nbsp;Studio Enterprise&nbsp;2022](workload-component-id-vs-enterprise.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.Enterprise | 面向任何规模的团队的工作效率和协作的 Microsoft DevOps 解决方案 |
+| [Visual&nbsp;Studio Professional&nbsp;2022](workload-component-id-vs-professional.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.Professional | 面向小团队的开发人员工具和服务 |
+| [Visual&nbsp;Studio Community&nbsp;2022](workload-component-id-vs-community.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.Community | 面向学生、开源和个人开发人员的功能完备的免费 IDE |
+| [Visual&nbsp;Studio Team&nbsp;Explorer&nbsp;2022](workload-component-id-vs-team-explorer.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.TeamExplorer | 与 Team Foundation Server 和 Azure DevOps Services 交互，不包含 Visual Studio 开发人员工具集 |
+| [Visual&nbsp;Studio Build&nbsp;Tools&nbsp;2022](workload-component-id-vs-build-tools.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.BuildTools | 使用 Visual Studio 生成工具，无需借助 Visual Studio IDE，即可生成本机和托管的基于 MSBuild 的应用程序。 这些选项用于安装 Visual C++ 编译器和库、MFC、ATL 以及 C++/CLI 支持。 |
+| [Visual&nbsp;Studio Test&nbsp;Agent&nbsp;2022](workload-component-id-vs-test-agent.md?view=vs-2022&preserve-view=true)  | Microsoft.VisualStudio.Product.TestAgent | 支持运行自动测试和远程加载测试 |
+| [Visual&nbsp;Studio Load&nbsp;Test&nbsp;Controller 2022](workload-component-id-vs-test-controller.md?view=vs-2022&preserve-view=true) | Microsoft.VisualStudio.Product.TestController | 将自动测试分发到多台计算机 |
+
+有关如何使用这些列表的详细信息，请参阅[使用命令行参数安装 Visual Studio](use-command-line-parameters-to-install-visual-studio.md?view=vs-2022&preserve-view=true) 页和[更新 Visual Studio 2022 的 Visual Studio 扩展](../extensibility/migration/update-visual-studio-extension.md)页。
+
+> [!NOTE]
+> 有关上一个版本的工作负载和组件 ID 的列表，请参阅 [Visual Studio 2019 工作负载和组件 ID](workload-and-component-ids.md?view=vs-2019&preserve-view=true)
 
 ::: moniker-end
 
