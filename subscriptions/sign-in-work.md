@@ -4,24 +4,22 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: f39a2672-c283-4755-93d3-31c7c7a032d0
-ms.date: 02/19/2021
+ms.date: 10/13/2021
 ms.topic: how-to
 description: 了解如何使用工作或学校帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: 82ab031d644055148aad2650069a31cd945c55f9
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 827176cd4ca8d3dd6c7df84b9bba57948778c8d1
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428967"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010842"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-work-or-school-account"></a>使用工作或学校帐户登录到 Visual Studio 订阅 
-
 登录到 Visual Studio 订阅的步骤取决于你所使用的帐户类型。  例如，你可能正在使用由你的公司或学校提供的 Microsoft 帐户 (MSA) 或电子邮件地址。  自 2019 年 1 月起，现还可使用 GitHub 帐户登录某些订阅。 
 
 本文将提供使用工作或学校提供的电子邮件地址登录的步骤。
 
 ## <a name="signing-in-with-your-work-or-school-account"></a>使用你的工作或学校帐户登录
-
 1. 请访问 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 2. 输入向新 Visual Studio 订阅分配的电子邮件地址。
 
@@ -39,7 +37,6 @@ ms.locfileid: "128428967"
 此外，还可以在用户名下右上角看到当前选择的订阅。  它将显示“正在显示:”，后跟订阅。  如果你有多个订阅，则可以单击下拉箭头并选择要使用的订阅。
 
 ## <a name="using-your-microsoft-account-msa-to-sign-in-to-a-work-or-school-account"></a>使用 Microsoft 帐户 (MSA) 登录到工作或学校帐户
-
 1. 转到 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 2. 输入向新 Visual Studio 订阅分配的电子邮件地址
 

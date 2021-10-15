@@ -18,12 +18,12 @@ author: TerryGLee
 ms.author: tglee
 manager: jmartens
 ms.technology: vs-ide-general
-ms.openlocfilehash: eaab9f7fbadaca22aac88ec62d0331f6dee995fa
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 484c05c988351d729be1e4d37763b62e99794ed5
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122086230"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130015986"
 ---
 # <a name="capabilities-of-dotfuscator"></a>Dotfuscator 的功能
 
@@ -33,7 +33,7 @@ Dotfuscator Community 是 .NET 应用程序的后期生成系统。
 使用它，Visual Studio 用户可[模糊处理程序集][obfuscation]，还可将[主动防御措施][checks]注入应用程序 - 全部都无需 Dotfuscator 访问原始源代码。
 Dotfuscator 以多种方式保护应用程序，并创建了分层保护策略。
 
-Dotfuscator Community 支持各种 .NET 程序集和应用程序类型，包括[通用 Windows 平台 (UWP)][uwp] 和 [Xamarin][xamarin]。
+Dotfuscator Community 支持各种 .NET 程序集和应用程序类型，包括通用 Windows 平台 (UWP) 和 [Xamarin][xamarin]。
 
 ## <a name="intellectual-property-protection"></a>知识产权保护
 
@@ -66,7 +66,6 @@ Dotfuscator Community 可将[应用程序验证代码][checks]插入程序集（
 <!-- Copyright © 2019 PreEmptive Solutions, LLC -->
 
 [assemblies]:  /dotnet/standard/assembly-format
-[uwp]:  https://www.preemptive.com/blog/article/856-uwp-applications-in-dotfuscator-ce/91-dotfuscator-ce
 [xamarin]:  https://www.preemptive.com/obfuscating-xamarin-with-dotfuscator
 
 [upgrades]:  upgrades.md

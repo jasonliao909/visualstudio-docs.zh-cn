@@ -7,12 +7,12 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jmartens
-ms.openlocfilehash: 8dc1db07e8ef3e29f36219c468d26dfe1c535407
-ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
+ms.openlocfilehash: 5b54c4a609d6e84abbedbf08d5f57f81073a3f4e
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129439790"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010972"
 ---
 # <a name="team-explorer-reference"></a>团队资源管理器参考
 
@@ -77,7 +77,8 @@ ms.locfileid: "129439790"
 - [使用查询编辑器来列出和管理查询](/azure/devops/boards/queries/using-queries)
 - [组织查询文件夹并设置查询权限](/azure/devops/boards/queries/set-query-permissions)
 - [在 Excel 中打开查询](/azure/devops/boards/backlogs/office/bulk-add-modify-work-items-excel)
-- [在 Project 中打开查询](/azure/devops/boards/backlogs/create-your-backlog)
+
+- [在 Project 中打开查询](/previous-versions/azure/devops/boards/backlogs/office/create-your-backlog-tasks-using-project)
 - [使用 Outlook 以电子邮件的形式发送查询结果列表](/azure/devops/boards/queries/share-plans)
 - [在 Excel 中从查询创建报表](/azure/devops/report/excel/create-status-and-trend-excel-reports)（仅针对 TFS）
 

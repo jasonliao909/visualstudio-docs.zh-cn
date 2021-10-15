@@ -16,12 +16,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - uwp
-ms.openlocfilehash: a3695aa387e9bb51c7918b95d0092c41f1f894fd
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 29de5f0ff7d0ae040923bd24f1db712f39e15cf6
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122030628"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010738"
 ---
 # <a name="run-uwp-apps-in-the-simulator"></a>在模拟器中运行 UWP 应用
 
@@ -102,7 +102,7 @@ Visual Studio 的 UWP 应用模拟器并非运行在本地计算机上的某个�
  屏幕的大小和分辨率以 *屏幕宽度（以英寸为单位）、像素宽度 X 像素高度* 形式列出。 注意，同时模拟屏幕大小和分辨率。 模拟器上的位置坐标将转换为所选设备大小和分辨率。
 
 > [!NOTE]
-> 可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 有关详细信息，请参阅[设计和 UI 简介](/windows/uwp/layout/design-and-ui-intro)。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。
+> 可在应用程序中保存位图的缩放版本，而 Windows 将加载适合当前比例的图像。 但是，如果更改模拟器分辨率，以使 Windows 选取不同图像以适合该分辨率，则必须停止再重新启动调试会话才能查看新图像。
 
 ## <a name="capture-a-screenshot-of-your-app-for-submission-to-microsoft-store"></a><a name="BKMK_Capture_a_screenshot_of_your_app_for_submission_to_the_Microsoft_Store"></a> 捕获应用的屏幕快照以提交到 Microsoft Store
  向 Microsoft Store 提交应用时，必须包含该应用的屏幕快照。

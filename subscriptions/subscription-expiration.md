@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: b6fbfa3e-654a-462f-8e22-e313b6ea617f
-ms.date: 09/20/2021
+ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解 Visual Studio 订阅到期后会怎样
-ms.openlocfilehash: 5c8b653d60b06c5c45d06ede5afb418315ef52d9
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 1a892bdf19d183a100c9019a621afac746a9d57a
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129972786"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011037"
 ---
 # <a name="what-happens-when-your-subscription-expires"></a>订阅到期后会怎样
 Visual Studio 订阅有特定的有效期，除非续订，否则它们将会到期。  当订阅到期时，订阅提供的权益会以不同的方式受到影响。  本文将介绍到期如何影响 Visual Studio 订阅的各个方面。 

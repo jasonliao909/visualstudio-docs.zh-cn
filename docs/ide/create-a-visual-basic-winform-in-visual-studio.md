@@ -13,12 +13,12 @@ dev_langs:
 - VB
 ms.workload:
 - multiple
-ms.openlocfilehash: a2724d78dfdd488c5e367a6621d7ad0eb29f0325
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 5c7d04f833f97e3932119ceb6ed1a7a79e894bb7
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429090"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011064"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-visual-basic"></a>在 Visual Studio 中使用 Visual Basic 创建 Windows 窗体应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "128429090"
 
 ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
@@ -70,7 +70,7 @@ ms.locfileid: "128429090"
 
 1. 打开 Visual Studio。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+1. 在“开始”窗口上，选择“创建新项目”。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
