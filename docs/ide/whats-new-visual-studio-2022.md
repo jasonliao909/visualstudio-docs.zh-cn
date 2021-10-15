@@ -2,7 +2,7 @@
 title: Visual Studio 2022（预览版）中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 09/17/2021
+ms.date: 10/12/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,16 +14,16 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 54e2c1984257b30587d4a9fc14deb75b4f07b916
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 519c5ea88164ccd3a46d7e6bf46ae56399e7d5b2
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128432633"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129969588"
 ---
 # <a name="whats-new-in-visual-studio-2022-preview"></a>Visual Studio 2022（预览版）中的新增功能
 
-更新了 17.0 预览版 4 版本。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
+更新了 17.0 预览版 5/候选发布 (RC)。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
 >[下载 Visual Studio 2022 预览版](https://visualstudio.microsoft.com/vs/preview/vs2022/)

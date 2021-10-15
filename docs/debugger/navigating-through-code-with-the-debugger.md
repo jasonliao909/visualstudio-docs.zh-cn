@@ -1,5 +1,5 @@
 ---
-title: 使用调试器导航代码 | Microsoft Docs
+title: 使用调试器导航代码
 description: 了解如何使用 Visual Studio 调试程序对代码进行故障排除。 主题包括：进入中断模式、逐句执行代码和运行到目标。
 ms.custom: SEO-VS-2020
 ms.date: 09/23/2021
@@ -10,19 +10,18 @@ helpviewer_keywords:
 - stepping
 - debugging [Visual Studio], execution control
 - execution, controlling in debugger
-ms.assetid: 759072ba-4aaa-447e-8e51-0dd1456fe896
 author: mikejo5000
 ms.author: mikejo
 manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: ab1298a0c6721d4044187e2582c2dbdd5e14326f
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 10682e086b705c3e311affe417ddd670fb8eb8ba
+ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427273"
+ms.lasthandoff: 10/13/2021
+ms.locfileid: "129973150"
 ---
 # <a name="navigate-through-code-with-the-visual-studio-debugger"></a>使用 Visual Studio 调试器浏览代码
 
