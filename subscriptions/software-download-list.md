@@ -1,21 +1,20 @@
 ---
 title: Visual Studio 订阅中提供哪些软件下载？ | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: cabuschl
+manager: cabuschl
 ms.assetid: c2878e28-eb5d-4adb-8d7d-a95ffea703a9
-ms.date: 02/19/2021
+ms.date: 10/13/2021
 ms.topic: how-to
 description: 查找 Visual Studio 订阅随附的软件下载列表。
-ms.openlocfilehash: 27041dd3a20dd6a1dd4a2dbc488b6a4d2eab012b
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 887ca029e943e769be21470dcf318b3ff31a4a27
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431627"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011024"
 ---
 # <a name="what-software-is-available-for-download"></a>有什么软件可供下载？
-
 可供使用的[软件下载列表](https://download.microsoft.com/download/1/5/4/15454442-CF17-47B9-A65D-DF84EF88511B/Visual_Studio_by_Subscription_Level.xlsx)取决于你正在使用的订阅。  如果有多个与同一登录地址关联的订阅，则无论你正在查看哪个订阅，都会看到最高级别订阅中包含的下载内容。  例如，如果你拥有 Visual Studio Enterprise 标准订阅和 Visual Studio Professional 订阅，则会看到企业订阅可用的完整下载列表。  要查看订阅列表，请访问 [https://my.visualstudio.com/subscriptions](https://my.visualstudio.com/subscriptions?wt.mc_id=o~msft~docs)。
 
 如果已具有 Visual Studio 订阅：

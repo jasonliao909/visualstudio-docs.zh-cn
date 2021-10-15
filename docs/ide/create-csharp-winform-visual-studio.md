@@ -13,12 +13,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 2b0f9c7ebcdf89ae193118afa5f90af4efb1f4b5
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 282dd4fb2fc1f3f68d3f4c4b6b5d5d0b17f5e947
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428732"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011414"
 ---
 # <a name="create-a-windows-forms-app-in-visual-studio-with-c"></a>在 Visual Studio 中使用 C\# 创建 Windows 窗体应用
 
@@ -41,7 +41,7 @@ ms.locfileid: "128428732"
 
 ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
+如果尚未安装 Visual Studio，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
 > [!NOTE]
 > 本教程中的部分屏幕截图使用深色主题。 如果没有深色主题但想要使用，请参阅[个性化设置 Visual Studio IDE 和编辑器](../ide/quickstart-personalize-the-ide.md)页面，了解具体方法。
@@ -70,7 +70,7 @@ ms.locfileid: "128428732"
 
 1. 打开 Visual Studio。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+1. 在“开始”窗口上，选择“创建新项目”。
 
    ![查看“创建新项目”窗口](../get-started/media/vs-2019/create-new-project-dark-theme.png)
 
@@ -85,7 +85,7 @@ ms.locfileid: "128428732"
    >
    > ![“创建新项目”窗口内“找不到所需内容”消息中的“安装更多工具和功能”链接](../get-started/media/vs-2019/not-finding-what-looking-for.png)
    >
-   > 然后在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
+   > 接下来，在 Visual Studio 安装程序中，选择“.NET 桌面开发”工作负载。
    >
    > ![Visual Studio 安装程序中的 .NET Core 开发工作负载](../ide/media/install-dot-net-desktop-env.png)
    >

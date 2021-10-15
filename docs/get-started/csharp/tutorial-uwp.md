@@ -14,12 +14,12 @@ dev_langs:
 - CSharp
 ms.workload:
 - multiple
-ms.openlocfilehash: 147931e623f6663d13be8b7fbee722e96c83187b
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: 73bb85c58b0dacf22b55141c74b59acadbc472ce
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129561147"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130015973"
 ---
 # <a name="tutorial-create-your-first-universal-windows-platform-application-in-visual-studio-with-xaml-and-c35"></a>教程：在 Visual Studio 中使用 XAML 和 C&#35 创建第一个通用 Windows 平台应用程序；
 
@@ -357,7 +357,7 @@ ms.locfileid: "129561147"
 恭喜你完成本教程！ 我们希望你能了解一些与 UWP 和 Visual Studio IDE 有关的基础知识。 要更加深入地了解，请继续学习下面的教程：
 
 > [!div class="nextstepaction"]
-> [创建用户界面](/windows/uwp/design/basics/xaml-basics-ui)
+> [创建用户界面](/visualstudio/xaml-tools/creating-a-ui-by-using-xaml-designer-in-visual-studio)
 
 ## <a name="see-also"></a>请参阅
 
