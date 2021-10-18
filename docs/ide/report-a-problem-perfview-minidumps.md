@@ -1,7 +1,7 @@
 ---
 description: PerfView 是一个基于 Windows 事件跟踪创建 ETL（事件跟踪日志）文件的工具，可用于排查 Visual Studio 存在的某些类型的问题。
 title: 使用 PerfView 收集 ETL 跟踪，以及创建用于所有调用堆栈的小型转储
-ms.date: 10/11/2021
+ms.date: 10/12/2021
 ms.topic: how-to
 helpviewer_keywords:
 - perfview
@@ -18,12 +18,12 @@ dev_langs:
 ms.workload:
 - multiple
 ms.description: Collect ETL traces using perfview.exe and create minidumps to send to Microsoft, for troubleshooting issues with Visual Studio
-ms.openlocfilehash: 575ca63a4064de5f7d342495b9ad21a5a9d2a7e8
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 45260d0e265f1c1104dad872528a7489994964da
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129973608"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010647"
 ---
 # <a name="collect-an-etl-trace-with-perfview-and-create-minidumps-with-all-call-stacks"></a>使用 PerfView 收集 ETL 跟踪，以及创建用于所有调用堆栈的小型转储
 
@@ -61,7 +61,7 @@ PerfView 只能存储适合其缓冲区的最新数据。 因此，尝试在 Vis
 1. 从主菜单中，选择“调试” > “附加到进程”。
 1. 勾选相关的“托管”和“本机”复选框，然后按“附加”。
 
-   ![附加到进程](../ide/media/attach-to-process.png)
+   ![屏幕截图显示“附加到进程”对话框中选中的代码类型。](../ide/media/attach-to-process.png)
 
 1. 从正在运行的进程列表中选择要附加的其他 Visual Studio 实例。
 1. 从主菜单中，选择“调试” > “全部中断”。
