@@ -1,5 +1,5 @@
 ---
-title: 缺少订阅
+title: 我缺少某些订阅。 它们去哪里了？
 description: 超级管理员或管理员发现某些订阅已删除，但他们不知道谁删除了这些订阅。
 ms.topic: include
 ms.assetid: 002442ae-e4c0-4a05-853b-fb32516b1bbc
@@ -10,12 +10,12 @@ user.type: admin
 tags: missing
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: 1502ea473cde56c0701a87e00c180d2a4f74db41
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 44bee19b1f076ae1f2f6609e6a4ee82f7232982c
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013307"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130019248"
 ---
 ## <a name="some-subscriptions-are-missing-that-i-didnt-delete-where-did-the-subscriptions-go"></a>缺少不是我删除的某些订阅。 这些订阅在哪里？
 作为超级管理员或管理员，当你具有适当的权限时，你可以在任何协议中添加、编辑或删除订阅者。 

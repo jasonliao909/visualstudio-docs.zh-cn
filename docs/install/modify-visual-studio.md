@@ -18,12 +18,12 @@ ms.workload:
 - multiple
 ms.prod: visual-studio-windows
 ms.technology: vs-installation
-ms.openlocfilehash: 0e679e903c797d78403d2123ddecee5d8bc22fda
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: 845355d71670c98952b414ebe7b5f04901823ebf
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129561108"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011258"
 ---
 # <a name="modify-visual-studio-workloads-components-and-language-packs"></a>修改 Visual Studio 工作负载、组件和语言包
 
@@ -191,7 +191,7 @@ ms.locfileid: "129561108"
 
 1. 选择“修改”  。
 
-1. 安装完修改后的工作负载或组件后，从 Visual Studio 安装程序中选择“启动”以打开 Visual Studio 2022 预览版。
+1. 安装完修改后的工作负载或组件后，从 Visual Studio 安装程序中选择“启动”来打开 Visual Studio 2022 RC。
 
 ::: moniker-end
 

@@ -2,7 +2,7 @@
 title: 管理项目和解决方案属性
 description: 了解如何在 Visual Studio 中管理项目属性和解决方案属性。
 ms.custom: SEO-VS-2020
-ms.date: 11/04/2016
+ms.date: 09/02/2021
 ms.topic: conceptual
 author: TerryGLee
 ms.author: tglee
@@ -10,16 +10,21 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: e67a0bde42854e39b21670e612ebf4b42015cf54
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1b016a52efaf247f2556c44905a81cd5af00a525
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122069452"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011440"
 ---
 # <a name="manage-project-and-solution-properties"></a>管理项目和解决方案属性
 
-项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。 右键单击“解决方案资源管理器”中的项目节点并选择“属性”，或者在菜单栏上的搜索框中键入“属性”并从结果中选择“属性窗口”，即可访问项目属性。
+项目具有一些控制编译、调试、测试和部署的很多方面的属性。 有些属性在所有项目类型中是通用的，而有些则只用于特定语言或平台。
+
+> [!TIP]
+> 在 [Visual Studio 2022 RC](/visualstudio/releases/2022/release-notes-preview) 中，我们向项目属性添加了新的功能，还刷新了其用户界面。 若要了解详细信息，请参阅[改良版项目属性 UI](https://devblogs.microsoft.com/visualstudio/revamped-project-properties-ui/) 博客文章。
+
+右键单击解决方案资源管理器中的项目节点并选择“属性”，或者在菜单栏上的搜索框中键入“属性”并从结果中选择“属性窗口”，即可访问项目属性   。
 
 ![项目上下文菜单](../ide/media/vs2015_proj_prop_menu.gif)
 

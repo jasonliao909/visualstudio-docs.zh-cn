@@ -7,12 +7,12 @@ ms.assetid: 71af88da-b9fa-4d12-999c-7d461f3df0ec
 ms.date: 02/19/2021
 ms.topic: conceptual
 description: 订阅的详细信息通过 Microsoft for Startups 计划提供。
-ms.openlocfilehash: bfe0157323243f0c226613f14e15297b3e945110
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: dbf36a79b53b2debe101097e297bb41eb5ed7ee5
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375716"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011349"
 ---
 # <a name="visual-studio-subscriptions-offered-to-startups"></a>向初创企业提供的 Visual Studio 订阅
 加入 Microsoft for Startups 计划的合格初创企业可以获得 5 个 [Visual Studio Enterprise 月度云订阅](https://visualstudio.microsoft.com/vs/pricing/)。 
@@ -50,4 +50,5 @@ ms.locfileid: "128375716"
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-[了解有关 Microsoft for Startups 的详细信息](https://startups.microsoft.com)
+- [了解有关 Microsoft for Startups 的详细信息](https://startups.microsoft.com)
+- [Microsoft for Startups 博客](https://startups.microsoft.com/Blog?search=Microsoft%20for%20Startups)

@@ -4,21 +4,21 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 34eaceda-f5db-41d6-bc23-ecf55fe1768e
-ms.date: 04/22/2021
+ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解管理员删除 Visual Studio 订阅后会发生什么情况。
-ms.openlocfilehash: 38329dacb9e0e16709adc9efacbfeef0582c0709
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 731992def5e44aebb07d95d26b4a3b40e585c166
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431476"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010712"
 ---
 # <a name="what-happens-when-an-admin-removes-my-subscription"></a>管理员删除订阅后会发生什么情况？
 如果你的 Visual Studio 订阅由你的工作或学校组织中的管理员分配给你，则他们可能会在某个时间点删除该订阅。  原因可能包括对作业角色或组织购买计划的更改。  如果管理员删除你的订阅，本文将概述你可能会遇到的情况。  
 
 > [!TIP]
-> 如果你的管理员删除你的订阅，则他们可能会计划向你颁发其他订阅。  如果你收到订阅已删除的通知，你可能想要联系你的管理员以查看是否有另一个订阅可用。  
+> 如果你的管理员删除你的订阅，则他们可能会计划向你颁发其他订阅。  如果你收到订阅已删除的通知，你可能想要联系你的管理员以查看是否有另一个订阅可用。 访问[订阅者门户](https://my.visualstudio.com)，然后单击右上角的“联系我的管理员”按钮。 
 
 ## <a name="how-do-my-benefits-change"></a>我的权益如何变化？
 你将看到的针对特定权益的更改取决于权益本身。  我们将查看一些示例，并讨论需要执行哪些步骤才能确保你有权访问 Azure 资产等功能。 

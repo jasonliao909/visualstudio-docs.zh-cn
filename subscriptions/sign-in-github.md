@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 1bdcb3c9-bba1-4e25-a609-9d7e539d78e0
-ms.date: 03/08/2021
+ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解如何使用 GitHub 帐户登录到 Visual Studio 订阅。
-ms.openlocfilehash: d57eb9c68a21fd7e68eda23efa3b194f8f0fb203
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a1108bbacde08a08da7e744095b8acabb147c24c
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428245"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011362"
 ---
 # <a name="signing-in-to-visual-studio-subscriptions-with-your-github-account"></a>使用 GitHub 帐户登录到 Visual Studio 订阅 
 登录到 Visual Studio 订阅的步骤取决于你所使用的帐户类型。 例如，你可能正在使用由你的公司或学校提供的 Microsoft 帐户 (MSA) 或电子邮件地址。 自 2019 年 1 月起，现还可使用 GitHub 帐户登录某些订阅。 
@@ -20,7 +20,6 @@ ms.locfileid: "128428245"
 本文将提供使用 GitHub 帐户登录的步骤。
 
 ## <a name="signing-in-with-your-github-account"></a>使用 GitHub 帐户登录
-
 借助 GitHub 标识支持，可使用现有的 GitHub 帐户作为新的或现有的 Microsoft 帐户的凭据，将 GitHub 帐户与 Microsoft 帐户链接。 
 
 使用 GitHub 登录时，Microsoft 会检查与 GitHub 帐户关联的任何电子邮件地址是否与现有的个人或企业 Microsoft 帐户相匹配。 如果地址与企业帐户匹配，系统会提示你改为登录该帐户。 如果地址与个人帐户匹配，我们会将你的 GitHub 帐户添加为该个人帐户的登录方法。
@@ -73,4 +72,4 @@ ms.locfileid: "128428245"
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-成功登录到订阅门户后，建议访问 https://my.visualstudio.com/benefits 上的“权益”页，并浏览适合你的强大工具、服务和产品。
+成功登录到订阅门户后，建议访问[权益页](https://my.visualstudio.com/benefits)，并浏览适合你的强大工具、服务和产品。

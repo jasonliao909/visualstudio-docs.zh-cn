@@ -7,18 +7,22 @@ ms.topic: reference
 ms.author: kaelli
 author: KathrynEE
 ms.manager: jmartens
-ms.openlocfilehash: 5b54c4a609d6e84abbedbf08d5f57f81073a3f4e
-ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
+monikerRange: <=vs-2019
+ms.openlocfilehash: 37c44dbf52b941c1a2d88c4cec4d6536f4988a09
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
 ms.lasthandoff: 10/14/2021
-ms.locfileid: "130010972"
+ms.locfileid: "130015999"
 ---
 # <a name="team-explorer-reference"></a>团队资源管理器参考
 
 本文提供关于团队资源管理器中各种功能的 Azure DevOps 文章的链接。
 
 使用“团队资源管理器”工具窗口与其他团队成员协调代码工作，以开发项目，并管理分配给你、你的团队或项目的工作。 团队资源管理器将 Visual Studio 连接到 Git 和 GitHub 存储库、Team Foundation 版本控制 (TFVC) 存储库以及 [Azure DevOps Services](/azure/devops/user-guide/what-is-azure-devops-services) 或本地 [Azure DevOps Server](/azure/devops/index-all)（以前称为 TFS）上托管的项目。 你可管理源代码、工作项和生成。
+
+> [!IMPORTANT]
+> 从 Visual Studio 2019 [版本 16.8](/visualstudio/releases/2019/release-notes-history) 发布开始，默认使用 Git 版本控制体验。 若要详细了解它如何与团队资源管理器进行比较，请参阅 [Git 和团队资源管理器的并行比较](../../version-control/git-team-explorer-feature-comparison.md)页。
 
 ## <a name="home-page"></a>主页
 

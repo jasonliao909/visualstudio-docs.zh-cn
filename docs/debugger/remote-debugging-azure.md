@@ -13,12 +13,12 @@ ms.workload:
 - aspnet
 - dotnetcore
 - azure
-ms.openlocfilehash: a13b848050b9d6fff8006fca586527e129bce7af
-ms.sourcegitcommit: aaa3146356421d921714c29ffd586083570ade3d
+ms.openlocfilehash: 148daa4649e3b5280b61e6223c07fef328ef8be6
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/07/2021
-ms.locfileid: "129635934"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130016014"
 ---
 # <a name="remote-debug-aspnet-core-on-iis-in-azure-in-visual-studio"></a>在 Azure 中的 IIS 上的 Visual Studio 中远程调试 ASP.NET Core
 
@@ -74,9 +74,9 @@ ms.locfileid: "129635934"
 
 1. 打开 About.cshtml.cs 文件，并在 `OnGet` 方法中设置断点（在较旧的模板中，改为打开 HomeController.cs 并在 `About()` 方法中设置断点）。
 
-## <a name="remote-debug-aspnet-core-on-an-azure-app-service"></a><a name="remote_debug_azure_app_service"></a>远程调试 Azure 应用服务上的 ASP.NET Core
+## <a name="remote-debug-aspnet-core-on-an-azure-app-service-windows"></a><a name="remote_debug_azure_app_service"></a> 在 Azure 应用服务上远程调试 ASP.NET Core (Windows)
 
-在 Visual Studio 中，你可以快速将应用发布和调试为完全预配的 IIS 实例。 但是，IIS 的配置是预设的，不能对其进行自定义。 有关详细说明，请参阅[使用 Visual Studio 将 ASP.NET Core Web 应用部署到 Azure](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs)。 （如果需要自定义 IIS，请尝试在 [Azure VM](#remote_debug_azure_vm) 上进行调试。）
+通过 Visual Studio，可将应用快速发布到 Windows 上的 Azure 应用服务并快速对其进行调试，这基于完全预配的 IIS 实例。 如果你在 VM 上托管 IIS，请尝试在 [Azure VM](#remote_debug_azure_vm) 上进行调试。
 
 ::: moniker range=">= vs-2022"
 

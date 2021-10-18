@@ -15,12 +15,12 @@ ms.prod: visual-studio-windows
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 6ea712fa37a79542f26f110c0aa60ca45a6ebaab
-ms.sourcegitcommit: 92be6860ccffc03799833c76084d85f67efe5c57
+ms.openlocfilehash: 684b2c97885daee160ff8f539a65c501acded7fa
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/05/2021
-ms.locfileid: "129527408"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011518"
 ---
 # <a name="visual-studio-docs-whats-new-for-september-2021"></a>Visual Studio 文档：2021 年 9 月新增功能
 
@@ -80,7 +80,7 @@ ms.locfileid: "129527408"
 - [如何：更改生成输出目录](./how-to-change-the-build-output-directory.md)
   - 针对 Visual Studio 2022 预览版进行查看并在需要时更新
   - 更新适用于 Dev17 的生成配置文章
-- [如何：配置项目以面向目标平台](./how-to-configure-projects-to-target-platforms.md) - 针对 Visual Studio 2022 预览版进行查看并在需要时更新
+- [如何：配置项目以面向目标平台](./how-to-configure-projects-to-target-platforms.md) - 针对 Visual Studio 2022 RC 进行查看并在需要时更新
 - [了解解决方案资源管理器](./use-solution-explorer.md) - 添加解决方案资源管理器上下文菜单信息
 
 ## <a name="install"></a>安装
@@ -236,7 +236,7 @@ ms.locfileid: "129527408"
 **新文章**
 
 - [Visual Studio 2022（预览版）中的新增功能](./whats-new-visual-studio-2022.md)
-- [报告问题：状态和常见问题解答](./report-a-problem.yml)
+- [报告问题：状态和常见问题解答](./how-to-report-a-problem-with-visual-studio.md)
 
 **更新的文章**
 - [在文件中查找](./find-in-files.md) - 添加了“多个搜索”部分，以及常规更新
