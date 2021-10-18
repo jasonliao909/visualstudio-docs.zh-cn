@@ -1,8 +1,8 @@
 ---
-title: Visual Studio 2022（预览版）中的新增功能
+title: Visual Studio 2022 中的新增功能
 titleSuffix: ''
 description: 了解 Visual Studio 2022 预览版中的新增功能。
-ms.date: 10/12/2021
+ms.date: 10/13/2021
 helpviewer_keywords:
 - Visual Studio, what's new
 - what's new [Visual Studio]
@@ -14,21 +14,21 @@ ms.prod: visual-studio-dev17
 ms.topic: conceptual
 ms.workload:
 - multiple
-ms.openlocfilehash: 519c5ea88164ccd3a46d7e6bf46ae56399e7d5b2
-ms.sourcegitcommit: 8fae163333e22a673fd119e1d2da8a1ebfe0e51a
+ms.openlocfilehash: 0c82c1c83f4575000e107f506fe1d746723c652a
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/13/2021
-ms.locfileid: "129969588"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010829"
 ---
-# <a name="whats-new-in-visual-studio-2022-preview"></a>Visual Studio 2022（预览版）中的新增功能
+# <a name="whats-new-in-visual-studio-2022"></a>Visual Studio 2022 中的新增功能
 
 更新了 17.0 预览版 5/候选发布 (RC)。 参阅[完整的发行说明](/visualstudio/releases/2022/release-notes-preview/) | 查看[产品路线图](/visualstudio/productinfo/vs-roadmap/)
 
 >[!div class="button"]
->[下载 Visual Studio 2022 预览版](https://visualstudio.microsoft.com/vs/preview/vs2022/)
+>[下载 Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads/)
 
-使用 Visual Studio，你将始终获得可供任何开发人员、应用和平台使用的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此最新版本（当前为预览版）都有很多让你惊艳的地方。
+使用 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/vs/preview/)，你将始终获得可供任何开发人员、应用和平台使用的一流工具和服务。 无论是首次使用 Visual Studio 还是已经使用多年，此最新版本都有很多让你惊艳的地方！
 
 ## <a name="performance-improvements"></a>性能改进
 
@@ -50,7 +50,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ### <a name="better-dev-tools-for-c-and-net-and-hot-reload"></a>适用于 C++、.NET 和热重载的更佳开发工具
 
-[Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) 包括更好的跨平台应用开发工具和最新版本的 C++ 生成工具。 同时，我们正在更新热重载，以便可以在应用程序运行时编辑 C++ 或 .NET 项目。 有关详细信息，请参阅[在 Visual Studio 2022 中使用热重载加速 .NET 和 C++ 开发](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/)博客文章。
+[Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/) 包括更好的跨平台应用开发工具和最新版本的 C++ 生成工具，以便提供 C++20 支持。 同时，我们正在更新热重载，以便可以在应用程序运行时编辑 C++ 或 .NET 项目。 有关详细信息，请参阅[在 Visual Studio 2022 中使用热重载加速 .NET 和 C++ 开发](https://devblogs.microsoft.com/visualstudio/speed-up-your-dotnet-and-cplusplus-development-with-hot-reload-in-visual-studio-2022/)博客文章。
 
 ### <a name="updates-for-blazor--razor-editors--hot-reload-for-aspnet"></a>对 Blazor 和 Razor 编辑器 + 适用于 ASP.NET 的热重载的更新
 
@@ -94,6 +94,7 @@ Windows 上的 Visual Studio 2022 现在是 64 位应用程序。 这意味着�
 
 ## <a name="see-also"></a>请参阅
 
+* [Visual Studio 2022 RC（候选发布版本）](https://devblogs.microsoft.com/visualstudio/join-us-november-8th-for-the-launch-of-visual-studio-2022/)
 * [Visual Studio 2022 预览版 4](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-4-is-now-available/)
 * [Visual Studio 2022 预览版 3](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-3-now-available/)
 * [Visual Studio 2022 预览版 2](https://devblogs.microsoft.com/visualstudio/visual-studio-2022-preview-2-is-out/)

@@ -8,12 +8,12 @@ ms.topic: include
 ms.date: 09/10/2021
 ms.author: mikejo
 ms.custom: include file
-ms.openlocfilehash: fe24fbc1a4b9a5ae4cf78549b614a70db3aa1139
-ms.sourcegitcommit: f07b737f43a29e30d040cc5793437f462fedb595
+ms.openlocfilehash: e000a1d36ffa1e653511fb4f6a53f2d29e763d46
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/20/2021
-ms.locfileid: "128036949"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130016013"
 ---
 在要调试的远程设备或服务器上（而不是 Visual Studio 计算机上），请从下表中的链接下载并安装正确的远程工具版本。
 
@@ -24,7 +24,7 @@ ms.locfileid: "128036949"
 
 |Version|链接|说明|
 |-|-|-|
-|Visual Studio 2022 预览版|[预览版远程工具](https://visualstudio.microsoft.com/vs/preview/)|兼容所有 Visual Studio 2022 版本。 下载与设备操作系统（x86、x64 或 ARM64）匹配的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)，获取有关下载远程工具的帮助。|
+|Visual Studio 2022 RC|[预览版远程工具](https://visualstudio.microsoft.com/vs/preview/)|兼容所有 Visual Studio 2022 版本。 下载与设备操作系统（x86、x64 或 ARM64）匹配的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)，获取有关下载远程工具的帮助。|
 |Visual Studio 2019|[远程工具](https://visualstudio.microsoft.com/downloads#remote-tools-for-visual-studio-2019)|兼容所有 Visual Studio 2019 版本。 下载与设备操作系统（x86、x64 或 ARM64）匹配的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)，获取有关下载远程工具的帮助。|
 |Visual Studio 2017|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202017)|兼容所有 Visual Studio 2017 版本。 下载与设备操作系统（x86、x64 或 ARM64）匹配的版本。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)，获取有关下载远程工具的帮助。|
 |Visual Studio 2015|[远程工具](https://my.visualstudio.com/Downloads?q=remote%20tools%20visual%20studio%202015)|Visual Studio 2015 的远程工具可从 My.VisualStudio.com 获取。 如果出现提示，请加入免费的 [Visual Studio Dev Essentials](https://visualstudio.microsoft.com/dev-essentials/) 计划，或使用 Visual Studio 订阅 ID 登录。 在 Windows 服务器上，请参阅[取消阻止文件下载](../../debugger/remote-debugging-unblock-file-download.md)，获取有关下载远程工具的帮助。|
