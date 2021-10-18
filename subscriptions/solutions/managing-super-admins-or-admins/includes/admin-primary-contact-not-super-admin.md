@@ -1,5 +1,5 @@
 ---
-title: 我是主要联系人，但不是超级管理员。
+title: 如果我是主要联系人，那么我如何成为超级管理员？
 description: 主要联系人正尝试确定他们是否应拥有超级管理员权限
 ms.topic: include
 ms.assetid: d204a061-9a4e-408c-a967-bf2b815d0bf8
@@ -10,12 +10,12 @@ user.type: admin
 tags: manage, agreement, sign in, primary, super
 subscription.type: vl, cloud, retail, partner
 sap.id: 8789faa7-9d29-25d8-018a-4f6ecee827c8
-ms.openlocfilehash: 3ef7df69b30eba13e1a4c70e10de2d86cfb42fc6
-ms.sourcegitcommit: 65a1b6aae8387735f05a83b45e1a6865e9805e1f
+ms.openlocfilehash: 165b48c194e72df3063fa075a89e7ee9bd5f7b21
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/01/2021
-ms.locfileid: "129339689"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130019307"
 ---
 ## <a name="im-the-primary-contact-but-im-not-a-super-admin-how-do-i-fix-this"></a>我是主要联系人，但不是超级管理员。如何解决此问题？
 

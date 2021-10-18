@@ -4,26 +4,26 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 176c7f11-b19d-49e9-a6dd-b2e5da5e8480
-ms.date: 02/19/2021
+ms.date: 10/13/2021
 ms.topic: conceptual
 description: 了解登录 Visual Studio 订阅时可能出现的问题
-ms.openlocfilehash: 8332650ed955c0da38350a2111dcb5778026d2df
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 2613a80eb6439e9ce152ad1ba23098e1ffb92209
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428201"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011375"
 ---
 # <a name="issues-signing-in-to-visual-studio-subscriptions"></a>登录 Visual Studio 订阅时遇到的问题
-若要使用 Visual Studio 订阅，必须先登录。  根据订阅，你可能已使用 Microsoft 帐户 (MSA) 或 Azure Active Directory (AAD) 标识进行设置。  本文讨论了在登录订阅时可能遇到的一些问题。
+若要使用 Visual Studio 订阅，必须先登录。  根据订阅，你可能已使用 Microsoft 帐户 (MSA) 或 Azure Active Directory (Azure AD) 标识进行设置。  本文讨论了在登录订阅时可能遇到的一些问题。
 
 ## <a name="microsoft-accounts-msa-cannot-be-created-using-workschool-email-addresses"></a>无法使用工作/学校电子邮件地址创建 Microsoft 帐户 (MSA)
-在 Azure AD 中配置电子邮件域时，不再允许使用工作/学校电子邮件地址创建新的个人 Microsoft 帐户 (MSA)。 这是什么意思呢？ 如果你的组织使用的是 Microsoft 365 或来自 Microsoft 的其他依赖 Azure AD 的业务服务，且你已向 Azure AD 租户添加了域名，则用户将无法再使用你域中的电子邮件地址创建新的个人 Microsoft 帐户。
+在 Azure AD 中配置电子邮件域时，无法再使用工作/学校电子邮件地址创建新的个人 Microsoft 帐户 (MSA)。 这是什么意思呢？ 如果你的组织使用的是 Microsoft 365 或来自 Microsoft 的其他依赖 Azure AD 的业务服务，且你已向 Azure AD 租户添加了域名，则用户将无法再使用你域中的电子邮件地址创建新的个人 Microsoft 帐户。
 
 ### <a name="why-was-this-change-made"></a>为什么要进行此更改？
 将工作地址作为用户名的个人 Microsoft 帐户会出现许多最终用户和 IT 部门的问题。 例如：
 - 用户可能会认为他们的个人 Microsoft 帐户符合业务要求，并且当他们将业务文档保存到 OneDrive 中时，也是满足符合性的
-- 离开组织的用户通常会失去对其工作电子邮件地址的访问权限。 当他们这样做时，如果忘记密码，则可能无法找回他们的个人 Microsoft 帐户。 另一方面，IT 部门可以重置密码并进入前雇员的个人帐户。
+- 离开组织的用户通常会失去对其工作电子邮件地址的访问权限。 当他们这样做时，如果忘记密码，则可能无法找回他们的个人 Microsoft 帐户。 相反，IT 部门可以重置密码并进入前雇员的个人帐户。
 - IT 部门对帐户所有权和安全性有一种错觉。 但用户只需将代码往返到工作电子邮件地址一次，则可以在将来随时重命名其帐户。
 
 对于拥有两个具有相同电子邮件地址的帐户（一个 Azure AD 和一个 Microsoft 帐户），情况尤其令人困惑。

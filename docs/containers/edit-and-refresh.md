@@ -9,12 +9,12 @@ ms.topic: how-to
 ms.workload: multiple
 ms.date: 03/08/2021
 ms.technology: vs-container-tools
-ms.openlocfilehash: 7faf85d07d0c6de4f559e038b47e1935886ac0c3
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1e6ff0539e46f38a5a81631c5a38ab6f792a7b15
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122122093"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011011"
 ---
 # <a name="debug-apps-in-a-local-docker-container"></a>在本地 Docker 容器中调试应用
 
@@ -43,7 +43,7 @@ Visual Studio 提供了一种一致方法来开发 Docker 容器，并在本地�
 
 ::: moniker range="vs-2022"
 
-* 安装了 Web 开发工作负载的 [Visual Studio 2022 预览版]()
+* 安装了“Web 开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/downloads)
 
 ::: moniker-end
 

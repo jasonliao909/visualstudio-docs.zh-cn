@@ -15,12 +15,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 22224b405f8e6cce41b99e36936bb2449f7827ea
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 1ccbcddfaff619a56299279583fe14a0326519dc
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128426421"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011505"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C# 代码
 
@@ -40,7 +40,7 @@ ms.locfileid: "128426421"
 
 ::: moniker range=">=vs-2022"
 
-必须安装 Visual Studio 2022 Preview 且具有“.NET 桌面开发”工作负载。
+必须安装 Visual Studio 2022 RC 且具有“.NET 桌面开发”工作负载。
 
 ::: moniker-end
 
@@ -104,7 +104,7 @@ ms.locfileid: "128426421"
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+1. 在“开始”窗口上，选择“创建新项目”。
 
 1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择 C#，然后从“平台”列表中选择 Windows 。 
 

@@ -1,5 +1,5 @@
 ---
-title: 解决批量上传问题
+title: 如何解决批量上传问题？
 description: 超级管理员或管理员认为他们向新协议分配了用户，但他们将用户添加到了错误的协议。
 ms.topic: include
 ms.assetid: 273f5f7a-739e-4de0-b7f7-d0bdd616e059
@@ -10,12 +10,12 @@ user.type: admin
 tags: bulk, upload
 subscription.type: vl, cloud, retail, partner
 sap.id: b84fffb5-3363-eb7d-224e-1c63faf4067b
-ms.openlocfilehash: a8338378828ad9297004d1bf41ea77346405c39f
-ms.sourcegitcommit: 364e106fcbf4fb6af534e81d8b700901f79f4ec8
+ms.openlocfilehash: 451629c284ae4e6630e461dc67e74c28b0c2ddfb
+ms.sourcegitcommit: 485f0f6f578568ee31b2ac093e32a6d01dc9c1c5
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/26/2021
-ms.locfileid: "129013277"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130019392"
 ---
 ## <a name="how-do-i-fix-a-bulk-upload-to-use-the-correct-agreement"></a>我如何解决批量上传问题，以使用正确的协议？
 

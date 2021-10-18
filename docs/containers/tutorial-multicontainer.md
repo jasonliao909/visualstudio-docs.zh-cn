@@ -7,12 +7,12 @@ ms.author: ghogen
 ms.date: 09/17/2021
 ms.technology: vs-container-tools
 ms.topic: tutorial
-ms.openlocfilehash: b23d59528c68f52e059ec485f66c28ac6d161acd
-ms.sourcegitcommit: 2eb12954b7b0ac9508fff11a86c54e880f3d104f
+ms.openlocfilehash: c6ec7410c01dfb6a3d020ceaa7973c55dd087fa5
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129439822"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011128"
 ---
 # <a name="tutorial-create-a-multi-container-app-with-docker-compose"></a>教程：使用 Docker Compose 创建多容器应用
 
@@ -36,7 +36,7 @@ ms.locfileid: "129439822"
 ::: moniker range=">=vs-2022"
 
 * [Docker Desktop](https://hub.docker.com/editions/community/docker-ce-desktop-windows)
-* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET 跨平台开发”工作负载的 [Visual Studio 2022 预览版](https://visualstudio.microsoft.com/vs/preview/)。 这包括 .NET Core 3.1 和 .NET 6 开发工具。
+* 安装了“Web 开发”、“Azure 工具”工作负载和/或“.NET 跨平台开发”工作负载的 [Visual Studio 2022 RC](https://visualstudio.microsoft.com/vs/preview/)  。 这包括 .NET Core 3.1 和 .NET 6 开发工具。
 * 用于使用 .NET 5 进行开发的 [.NET 5 开发工具](https://dotnet.microsoft.com/download/dotnet-core/5.0)。
 ::: moniker-end
 

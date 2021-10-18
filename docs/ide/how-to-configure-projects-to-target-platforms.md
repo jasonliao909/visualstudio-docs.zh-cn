@@ -20,12 +20,12 @@ ms.author: ghogen
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: b74eb7d0220867b80337b89ef70506bac31b7f6a
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 8629b33b60818651a19945e1683a557a7b1b9e46
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128429012"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130010699"
 ---
 # <a name="how-to-configure-projects-to-target-platforms"></a>如何：将项目配置为面向平台
 
@@ -33,7 +33,7 @@ ms.locfileid: "128429012"
 
 ::: moniker range="vs-2022"
 > [!NOTE]
-> Visual Studio 2022 预览版作为 64 位应用程序运行。 这完全独立于可以在 Visual Studio 中针对你的项目面向的平台。 可以使用任何版本的 Visual Studio 同时面向 32 位和 64 位平台。
+> Visual Studio 2022 RC 作为 64 位应用程序运行。 这完全独立于可以在 Visual Studio 中针对你的项目面向的平台。 可以使用任何版本的 Visual Studio 同时面向 32 位和 64 位平台。
 ::: moniker-end
 ::: moniker range="<=vs-2019"
 > [!NOTE]

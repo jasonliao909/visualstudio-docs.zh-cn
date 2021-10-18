@@ -2,7 +2,7 @@
 title: 进程遇到不可恢复的错误
 description: 了解可能会在 Visual Studio 正常运行过程中遇到不可恢复的错误的进程。
 ms.custom: SEO-VS-2020
-ms.date: 09/10/2020
+ms.date: 10/14/2021
 ms.topic: troubleshooting
 helpviewer_keywords:
 - unrecoverable error
@@ -13,16 +13,21 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 97cd6a5d85cd35c4365d9a71c97b8b2d20e05153
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 040e767f5c0bfd064b5e604d1975a1a5415b1867
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122078214"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087431"
 ---
 # <a name="visual-studio-unrecoverable-process-error"></a>Visual Studio 无法恢复的处理器错误
 
+::: moniker range="<=vs-2019"
 Visual Studio 使用多个进程外的进程来运行必需的后台任务，如实时单元测试、代码分析器等。 在进程外运行这些进程可提供 Visual Studio 性能优势，例如运行长且资源密集的作业时，Visual Studio 可更快响应。 此外，由于 Visual Studio 是一个 32 位进程，在进程外运行进程可为内存密集型作业提供更大的操作内存空间。
+:::moniker-end
+:::moniker range=">=vs-2022"
+Visual Studio 使用多个进程外的进程来运行必需的后台任务，如实时单元测试、代码分析器等。 在进程外运行这些进程可提供 Visual Studio 性能优势，例如运行长且资源密集的作业时，Visual Studio 可更快响应。
+:::moniker-end
 
 如果 ServiceHub.RoslynCodeAnalysisService.exe 或 ServiceHub.RoslynCodeAnalysisService32.exe 进程出于某种原因结束，弹出信息栏会显示以下消息   ：
 

@@ -14,12 +14,12 @@ ms.author: mikejo
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 2517df9763a824449a96ce13c5f8e70e350dd7fc
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: c1a469e303ec112cd0a025edb87587bf0816ff99
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122139007"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011492"
 ---
 # <a name="tutorial-learn-to-debug-c-code-using-visual-studio"></a>教程：了解如何使用 Visual Studio 调试 C++ 代码
 
@@ -62,7 +62,7 @@ ms.locfileid: "122139007"
 
 ::: moniker range="vs-2022"
 
-如果尚未安装 Visual Studio 2022 预览版，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/vs/preview/vs2022)页免费安装。
+如果尚未安装 Visual Studio 2022 RC，请转到 [Visual Studio 2022 预览版下载](https://visualstudio.microsoft.com/downloads)页免费安装。
 
 ::: moniker-end
 
@@ -94,7 +94,7 @@ ms.locfileid: "122139007"
 
    如果开始窗口未打开，请选择“文件”>“开始窗口”   。
 
-1. 在“开始”窗口上，选择“创建新项目”  。
+1. 在“开始”窗口上，选择“创建新项目”。
 
 1. 在“创建新项目”窗口的搜索框中输入或键入“控制台”   。 接下来，从“语言”列表中选择“C++”，然后从“平台”列表中选择“Windows”   。 
 

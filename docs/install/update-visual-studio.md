@@ -17,12 +17,12 @@ ms.author: meghaanand
 manager: jmartens
 ms.workload:
 - multiple
-ms.openlocfilehash: 0cee8215f049b0a6a50e94797ac3556deeaaacaf
-ms.sourcegitcommit: d63ba1eff845d41ca095efb14b499ea96c4b6eba
+ms.openlocfilehash: 284f4a49f1caf10f6cae3a28f3f4f0ef2578e432
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129561017"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011245"
 ---
 # <a name="update-visual-studio-to-the-most-recent-release"></a>请将 Visual Studio 更新到最新版本
 
@@ -338,9 +338,9 @@ Visual Studio 自身或安装的任何组件有更新时，以及 Visual Studio 
 
 ### <a name="open-visual-studio"></a>打开 Visual Studio
 
-1. 在 Windows 的“开始”菜单上，选择“Visual Studio 2022 Preview” 。
+1. 在 Windows 的“开始”菜单上，选择“Visual Studio 2022 RC” 。
 
-    ![显示 Windows 10 的“开始”菜单中 Visual Studio 2022 Preview 条目的屏幕截图。](media/vs-2022/ide-start-menu.png "从 Windows 打开 Visual Studio 2022 Preview")
+    ![显示 Windows 10 的“开始”菜单中 Visual Studio 2022 RC 条目的屏幕截图。](media/vs-2022/ide-start-menu.png "从 Windows 打开 Visual Studio 2022 RC")
 
 1. 在“开始”窗口中的“开始”下，选择任意选项以打开 Visual Studio IDE。
 

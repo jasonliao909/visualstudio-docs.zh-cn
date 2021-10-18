@@ -10,19 +10,19 @@ manager: jmartens
 ms.technology: vs-ide-general
 ms.workload:
 - multiple
-ms.openlocfilehash: 8dd4e56ececf68b9bd53b5530f8ccfe0c906a975
-ms.sourcegitcommit: 7c06c7e4f0a69d90b21dcf4d5c5b5caa17464bf5
+ms.openlocfilehash: abe73264f3bd2a2327d5b4caabda45cc1744055f
+ms.sourcegitcommit: 72f8ce4992cc62c4833e6dcb0f79febb328c44be
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/19/2021
-ms.locfileid: "122464828"
+ms.lasthandoff: 10/14/2021
+ms.locfileid: "130011401"
 ---
 # <a name="how-to-personalize-the-visual-studio-ide-and-the-editor"></a>如何：个性化设置 Visual Studio IDE 和编辑器
 
 本操作指南文章介绍了如何将 Visual Studio 颜色主题从默认的蓝色主题自定义为深色主题。 然后，介绍如何在代码编辑器中为两种不同类型的文本自定义颜色。
 
 > [!NOTE]
-> 在 [Visual Studio 2022 预览版](/visualstudio/releases/2022/release-notes-preview)中，我们改进了颜色主题功能，以与 Windows 设置相融合。 若要了解详细信息，请参阅[适用于 Visual Studio 的灵活主题设置功能](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/)博客文章。
+> 在 [Visual Studio 2022 RC](/visualstudio/releases/2022/release-notes-preview) 中，我们改进了颜色主题功能，来与 Windows 设置契合。 若要了解详细信息，请参阅[适用于 Visual Studio 的灵活主题设置功能](https://devblogs.microsoft.com/visualstudio/flexible-theming-visual-studio/)博客文章。
 
 ::: moniker range="vs-2017"
 
