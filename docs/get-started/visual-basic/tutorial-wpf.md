@@ -350,7 +350,7 @@ IsChecked="True"
 
    将出现“中断模式”窗口，“输出”窗口指示发生 IOException :“找不到资源 'mainwindow.xaml'”。
 
-   :::image type=&quot;content&quot; source=&quot;media/vs-2022/explore-ide-ioexception.png&quot; alt-text=&quot;显示“异常未处理”窗口的屏幕截图，其中包含一条 System.IO.Exception 消息，内容为“无法定位资源 mainwindow.xaml”。&quot;:::
+   :::image type="content" source="media/vs-2022/explore-ide-ioexception.png" alt-text="显示“异常未处理”窗口的屏幕截图，其中包含一条 System.IO.Exception 消息，内容为“无法定位资源 mainwindow.xaml”。":::
 
 1. 依次选择“调试”>“停止调试”，停止调试器 。
 
