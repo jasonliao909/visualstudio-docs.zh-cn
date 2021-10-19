@@ -1,25 +1,25 @@
 ---
 title: 如何在 Visual Studio 订阅中使用连接的标识 | Microsoft Docs
 author: evanwindom
-ms.author: lank
-manager: lank
+ms.author: cabuschl
+manager: cabuschl
 ms.assetid: 50ce0445-ef1a-4e92-b9d0-aebb2155a111
-ms.date: 02/19/2021
+ms.date: 10/14/2021
 ms.topic: conceptual
 robots: noindex, nofollow
 description: 了解如何使用已连接的 Microsoft 帐户和 Azure Active Directory 标识
-ms.openlocfilehash: 6c666f50fee33d4277b32cc70ea37db5115dcdf4
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 2e6c0ffc4c2173f9f80b30c6ab0e8deffd19afe9
+ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128427451"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130030227"
 ---
 # <a name="how-to-use-connected-identities-in-visual-studio-subscriptions"></a>如何在 Visual Studio 订阅中使用连接的标识
 如果你通过工作或学校收到 Visual Studio 订阅，并使用你的 Microsoft 帐户 (MSA) 登录，则你的订阅管理员可能会将你的 MSA 连接到组织的 Azure Active Directory (Azure AD) 中的标识。  这会改变你访问订阅中包含的一些权益的方式。 
 
 ## <a name="overview-of-connected-ids"></a>连接的 ID 概述
-组织越来越多地转向基于 Azure AD 的标识，从而为自动管理订阅提供改进的安全性和支持。  如果你的订阅使用 MSA（如 @outlook.com 或其他个人电子邮件地址），则管理员可能会将登录电子邮件更改为你的 Azure AD 标识。  这会改变如何登录到订阅者门户 https://my.visualstudio.com ，但可能不会更改你访问所有权益的方式。  
+组织越来越多地转向基于 Azure AD 的标识，从而为自动管理订阅提供改进的安全性和支持。  如果你的订阅使用 MSA（如 @outlook.com 或其他个人电子邮件地址），则管理员可能会将登录电子邮件更改为你的 Azure AD 标识。  这会改变登录到订阅者门户 https://my.visualstudio.com 的方式，但可能不会更改你访问所有权益的方式。  
 
 如果管理员连接你的 MSA 和 Azure AD 标识，你将收到一封电子邮件，告知你使用 Azure AD 标识（而不是 MSA）开始访问 Visual Studio 订阅。 
 
@@ -33,11 +33,11 @@ ms.locfileid: "128427451"
 若要获取 Visual Studio 订阅中提供的许多权益（如 Pluralsight、LinkedIn 和 CloudPilot 等），你实际上会在合作伙伴的网站上创建用户帐户。  对于这些帐户，你应继续使用创建帐户时所用的标识。  例如，如果使用 MSA 激活了 Pluralsight 权益，无论用于登录到订阅者门户的标识如何，都应在进行 Pluralsight 培训时继续使用 MSA。  
 
 ## <a name="use-an-alternate-identity-to-access-your-subscription"></a>使用备用标识访问订阅
-在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。 我们已经将此功能扩展到 Azure Active Directory (Azure AD) 中的工作或学校帐户。  有关使用备用帐户的详细信息，请查看我们的[备用标识](vs-alternate-identity.md)文章。 
+在 Visual Studio 订阅中添加备用帐户后，可使用与订阅分配到的标识不同的标识享受订阅权益（如 Azure DevOps 和 Azure）。 在过去，仅当 Visual Studio (VS) 订阅已分配到 Microsoft 帐户 (MSA) 时此功能才可用。 我们已经将此功能扩展到 Azure AD 中的工作或学校帐户。  有关使用备用帐户的详细信息，请查看我们的[备用标识](vs-alternate-identity.md)文章。 
 
 ## <a name="frequently-asked-questions"></a>常见问题
 ### <a name="q-how-can-i-contact-my-admin-about-this"></a>问：如何联系管理员以了解这一点？
-答：有关联系管理员的信息，请参阅[联系订阅管理员](contact-my-admin.md)一文。  
+答：找到订阅者门户的顶部的“联系管理员”按钮。 有关联系管理员的详细信息，请参阅[联系订阅管理员](contact-my-admin.md)一文。  
 
 ### <a name="q-im-an-admin--how-do-i-use-this"></a>问：我是管理员。如何使用此功能？
 答：实现连接标识非常简单。  有关详细信息，请查看[此文章](personal-email-sign-ins.md)。 

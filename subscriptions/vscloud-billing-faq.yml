@@ -5,15 +5,15 @@ metadata:
   ms.author: cabuschl
   manager: cabuschl
   ms.assetid: 21e0471d-ad59-4d21-9c6f-13f7147569af
-  ms.date: 03/05/2021
+  ms.date: 10/18/2021
   ms.topic: conceptual
   description: 云订阅的计费问题。
-  ms.openlocfilehash: 1cdbedf7abe29ab63143e8b9f5567c11b818dbcd
-  ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+  ms.openlocfilehash: 40bd954902a7fbd31dcf403d17fa2f6778d8c5e6
+  ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
   ms.translationtype: HT
   ms.contentlocale: zh-CN
-  ms.lasthandoff: 09/24/2021
-  ms.locfileid: "128428784"
+  ms.lasthandoff: 10/19/2021
+  ms.locfileid: "130151884"
 title: Visual Studio 云订阅计费常见问题解答
 summary: >
   请确保[比较云订阅权益和定价](https://visualstudio.microsoft.com/vs/pricing/)，了解每种 Visual Studio 订阅的权益，云订阅与标准 Visual Studio 订阅之间的不同之处，以及订阅者权益的相关详细信息等。

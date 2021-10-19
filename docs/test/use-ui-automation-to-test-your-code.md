@@ -19,14 +19,14 @@ manager: jmartens
 ms.technology: vs-ide-test
 ms.workload:
 - multiple
-ms.openlocfilehash: 5bf9a17a86c336b3dad1bd3b97c8f7c30b35c888
-ms.sourcegitcommit: be12c22a030f299fc4d0960f85b20971434fafed
+ms.openlocfilehash: a908d28c6596e14adcdf17c17edab3c6167d8fc4
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/30/2021
-ms.locfileid: "123160088"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087405"
 ---
-# <a name="use-coded-ui-test-to-test-your-code"></a>使用编码的 UI 测试来测试代码
+# <a name="use-coded-ui-tests-to-test-your-code"></a>使用编码的 UI 测试来测试代码
 
 编码的 UI 测试 (CUIT) 通过其用户界面 (UI) 驱动应用程序。 这些测试包括对 UI 控件的功能测试。 它们使你可以验证整个应用程序（包括其用户界面）是否正常运行。 编码的 UI 测试对于在用户界面中存在验证或其他逻辑（例如在网页中）的情况非常有用。 它们也经常用于自动化现有的手动测试。
 

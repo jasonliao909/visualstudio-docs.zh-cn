@@ -4,22 +4,20 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: c4b13464-76be-40f1-ad60-ed79ee264b12
-ms.date: 10/06/2021
+ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解如何下载并安装包含在 Visual Studio 订阅中的 Visual Studio IDE
-ms.openlocfilehash: 333ae5af74a4b91bb78194a5640df122f38412f5
-ms.sourcegitcommit: ff81d69902e869b227d9ceb6e95023d1c63425b1
+ms.openlocfilehash: cb11004982cc0780118c0cb8144538c55d4986bb
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 10/06/2021
-ms.locfileid: "129598096"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152093"
 ---
 # <a name="the-visual-studio-ide"></a>Visual Studio IDE
-
 作为 Visual Studio 订阅者，你可以访问 Visual Studio IDE。  具体版本将取决于你的订阅级别。  在订阅者门户的[权益](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)页上，该权益将以磁贴形式显示在“工具”类别中。
 
 ## <a name="activation-steps"></a>激活步骤
-
 *（此示例将使用 Visual Studio Enterprise。）*
 
 下载 IDE：
@@ -59,7 +57,6 @@ ms.locfileid: "129598096"
 
 
 ## <a name="eligibility"></a>资格
-
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准、月度云）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 可用       |  是          |
@@ -87,7 +84,7 @@ ms.locfileid: "129598096"
 - 搜索 Stack Overflow [标记有 visual-studio 的公共问答](https://stackoverflow.com/questions/tagged/visual-studio?tab=Newest)，以获取对已提问题的解答，或者注册一个帐户并提出新问题。
 
 ### <a name="technical-support-incidents"></a>技术支持事件
-如果你已用尽上述选项但仍没有答案，请访问[订阅门户权益页](https://my.visualstudio.com/Benefits)并单击“支持”选项卡上的“技术支持权益”磁贴，以激活 Visual Studio 技术支持票证。阅读有关[技术支持权益](https://docs.microsoft.com/visualstudio/subscriptions/vs-tech-support)的详细信息。 （并非所有订阅都提供技术支持。 [比较 Visual Studio 订阅权益](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)以找出订阅中包含的内容。）
+如果你已用尽上述选项但仍没有答案，请访问[订阅门户权益页](https://my.visualstudio.com/Benefits)并单击“支持”选项卡上的“技术支持权益”磁贴，以激活 Visual Studio 技术支持票证。阅读有关[技术支持权益](vs-tech-support.md)的详细信息。 （并非所有订阅都提供技术支持。 [比较 Visual Studio 订阅权益](https://visualstudio.microsoft.com/vs/benefits/#azure?cat=visual-studio-enterprise-subscription)以找出订阅中包含的内容。）
 
 ### <a name="visual-studio-subscription-support"></a>Visual Studio 订阅支持
 Visual Studio 订阅支持提供有关销售、订阅、帐户和计费方面的帮助。 请联系 [Visual Studio 订阅支持](https://my.visualstudio.com/gethelp)。

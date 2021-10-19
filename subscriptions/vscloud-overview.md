@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: af1f7888-6942-4515-9475-0928ecf49dab
-ms.date: 02/19/2021
+ms.date: 10/18/2021
 ms.topic: overview
 description: 按月或按年租赁 Visual Studio Professional 或 Visual Studio Enterprise，无需任何长期协定。
-ms.openlocfilehash: 08793055c369ad231d8079f38d2113989e76d5a1
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: ec6c001781b55f5848db720a9e68ae74e6aa5d74
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375649"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151860"
 ---
 # <a name="buy-visual-studio-professional-and-visual-studio-enterprise-cloud-subscriptions"></a>购买 Visual Studio Professional 和 Visual Studio Enterprise 云订阅
 可从 [Visual Studio Marketplace](https://marketplace.visualstudio.com) 购买 [Visual Studio Professional 和 Visual Studio Enterprise 订阅](https://visualstudio.microsoft.com/subscriptions/)。 这些称为“云订阅”。

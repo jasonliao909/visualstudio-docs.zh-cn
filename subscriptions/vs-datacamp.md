@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: fc33d419-78cf-485e-b558-5b7efa900f14
-ms.date: 03/17/2021
+ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关所选 Visual Studio 订阅中随附的 DataCamp 培训订阅。
-ms.openlocfilehash: bfa26eaeb26df833953430a3514cf77e2e7f3e3d
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 94861eedcc0db99cf69d9ca44926ce036567398e
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375707"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152114"
 ---
 # <a name="the-datacamp-training-benefit-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 DataCamp 培训权益
 符合条件的 Visual Studio 订阅包括 DataCamp 订阅。  借助 DataCamp，可以通过浏览器舒适地学习需要的所有数据科学技能。 可以选择学习的时间和内容。 无需安装任何软件并且没有任何特殊硬件要求，学习数据科学比以往更加简单。

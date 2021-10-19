@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 08/20/2021
+ms.date: 10/14/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 Azure 开发测试个人额度权益。
-ms.openlocfilehash: a783d0b95c8b64474e19bfae412378c17583a633
-ms.sourcegitcommit: b12a38744db371d2894769ecf305585f9577792f
+ms.openlocfilehash: b76d87792fc96021206552e14c78634b546f55f0
+ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/13/2021
-ms.locfileid: "127832641"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130030279"
 ---
 # <a name="use-microsoft-azure-in-visual-studio-subscriptions"></a>在 Visual Studio 订阅中使用 Microsoft Azure
 Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过[每月 Azure 开发测试个人额度](https://azure.microsoft.com/pricing/member-offers/msdn-benefits-details/)，可将 Azure 用作开发/测试的个人沙盒。  你可以预配虚拟机、云服务和其他 Azure 资源。  信用额度因订阅级别而异。
@@ -61,7 +61,6 @@ Visual Studio 订阅者无需额外付费即可使用 Microsoft Azure。  通过
 
 
 ## <a name="convert-your-azure-subscription-to-pay-as-you-go"></a>将 Azure 订阅转换为即用即付类型
-
 如果不再需要 Visual Studio 订阅或额度，但要继续使用 Azure 资源，请[将资源移到另一个 Azure 订阅](/azure/azure-resource-manager/management/move-resource-group-and-subscription)，或通过[删除支出限制](/azure/cost-management-billing/manage/spending-limit#remove-the-spending-limit-in-azure-portal)将 Azure 订阅转换为即用即付定价。 
 
 如果你未执行上述任何操作，你的 Azure 订阅会在电子邮件通知中的指定时间被禁用。  如果禁用了订阅，则可以按照[这些步骤](https://docs.microsoft.com/azure/cost-management-billing/manage/switch-azure-offer)将其重新启用为即用即付订阅。

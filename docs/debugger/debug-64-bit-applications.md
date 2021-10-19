@@ -19,12 +19,13 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: dc3a841d97b3479eb30d26d66608827e1a771d20
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+monikerRange: <=vs-2019
+ms.openlocfilehash: 3bbd25ff970685ef511488ad29ea7d9ffcaf4f42
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122066819"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087444"
 ---
 # <a name="debug-64-bit-applications"></a>调试 64 位应用程序
 您可以调试运行于本地计算机或远程计算机上的 64 位应用程序。
@@ -47,11 +48,11 @@ ms.locfileid: "122066819"
 4. 开始调试。 此体验应该与调试 32 位配置的应用程序的体验相同。 如果出现错误，请参阅下面的“疑难解答”一节。
 
 ## <a name="troubleshooting-64-bit-debugging"></a>64 位调试疑难解答
- 可能会出现错误：“64 位调试操作花费的时间比预期要长。” 在这种情况下，则说明 Visual Studio 已向 64 位版本的 msvsmon.exe 发送请求，返回该请求的结果花费了较长的时间。
+ 可能会出现错误：“64 位调试操作花费的时间比预期要长。” 或者“调试器操作花费的时间比预期要长”。 在这种情况下，则说明 Visual Studio 已向 msvsmon.exe 发送请求，返回该请求的结果花费了较长的时间。
 
  出现此错误的主要原因有两个：
 
-- 你的计算机上所安装的网络安全软件导致网络堆栈不可靠，并且该网络安全软件已删除通过 localhost 的数据包。 请尝试禁用全部的网络安全软件，然后查看该问题是否解决。 如果问题解决，那么请发送报告给你的网络安全软件供应商，说明该软件正在干扰 localhost 通信。
+- 你的计算机上所安装的网络安全软件导致网络堆栈不可靠，并且该网络安全软件已删除通过 localhost 的数据包。 请尝试禁用全部的网络安全软件，然后查看该问题是否解决。 如果问题解决，那么请发送报告给你的网络安全软件供应商，说明该软件正在干扰 localhost 通信。 Visual Studio 2019 及更高版本不应发生此情况，因为这些版本不会将套接字用于此通信。
 
 - 你遇到了 Visual Studio 无响应或其他性能问题。 如果该问题定期发生，你可收集 Visual Studio (devenv.exe) 和辅助进程 (msvsmon.exe) 的转储并将其发送给 Microsoft。 有关报告问题的详细信息，请参阅 [How to Report a Problem with Visual Studio](../ide/how-to-report-a-problem-with-visual-studio.md)。
 

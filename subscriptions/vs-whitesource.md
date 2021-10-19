@@ -4,22 +4,20 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 5e5d3f1a-533d-42eb-960e-01bb6bc7ca16
-ms.date: 03/17/2021
+ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解如何激活 Visual Studio 订阅中包含的 WhiteSource Bolt 订阅。
-ms.openlocfilehash: b99f6924ec09a444d3f7b7a2d9b3a4fb6031d6f8
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: b634346d4d16f3a53324d616914e6ec0201bb629
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375662"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130151910"
 ---
 # <a name="whitesource-bolt-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 WhiteSource Bolt
-
 查找和修复开源漏洞，在内部版本中生成所有开源组件的综合清单和许可报告。 Visual Studio Enterprise 订阅接收六个月的无限制扫描。
 
 ## <a name="activation-steps"></a>激活步骤
-
 1. 若要激活 WhiteSource Bolt 权益，请登录到 [https://my.visualstudio.com/benefits](https://my.visualstudio.com/benefits?wt.mc_id=o~msft~docs)。
 
 2. 在“工具”部分中找到“WhiteSource Bolt”磁贴，然后单击“权益”磁贴底部的“获取代码”  链接。
@@ -39,7 +37,6 @@ ms.locfileid: "128375662"
 9. 有关详细信息，请访问 WhiteSource Bolt [常见问题解答页面](https://bolt.whitesourcesoftware.com/azure/faq/)。 
 
 ## <a name="eligibility"></a>资格
-
 | 订阅级别                                                 |     信道                                            | 好处                                                          | 是否续订？    |
 |--------------------------------------------------------------------|---------------------------------------------------------|------------------------------------------------------------------|---------------|
 | Visual Studio Enterprise（标准）   | VL、Azure、零售、所选 NFR<sup>1</sup> | 6 个月       |  是       |

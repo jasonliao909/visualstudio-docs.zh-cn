@@ -4,21 +4,25 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 8470f035-2a82-4052-9a12-6f24ce796861
-ms.date: 02/19/2021
+ms.date: 10/14/2021
 ms.topic: overview
 description: 了解 Visual Studio 订阅门户为你提供的所有权益
-ms.openlocfilehash: 7d03b4e0f77673fbd45239486a55f886ae06f881
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: a45af3cfe098ef79ae383b1c413cf0e5253aec84
+ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128428811"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130030201"
 ---
 # <a name="using-the-subscriber-portal---myvisualstudiocom"></a>使用订阅者门户 - my.visualstudio.com
-
 Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 为一体化资源，可利用通过 Visual Studio 订阅提供的所有权益。
 
-需要通过与订阅相关联的身份进行登录才能使用该门户。  这可能是你的 Microsoft 帐户 (MSA) 或组织（如工作单位或学校）提供给你的电子邮件地址。  了解[登录](./index.yml)。
+需要通过与订阅相关联的身份进行登录才能使用该门户。  这可能是你的 Microsoft 帐户 (MSA) 或组织（如工作单位或学校）提供给你的电子邮件地址。  现在还可使用 GitHub 凭据登录。
+
+了解如何：
+- [通过 MSA 登录](sign-in-msa.md)
+- [使用工作/学校帐户登录](sign-in-work.md)
+- [使用 GitHub 登录](sign-in-github.md)
 
 门户分为六页。  每一页均提供了对订阅中包含的不同产品或服务的访问权限。  这六页分别为权益、下载、产品密钥、订阅、支持和市场。
 
@@ -46,11 +50,9 @@ Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio
 “订阅”页为你提供以下功能：查看所拥有的订阅、在订阅之间切换、续订订阅，以及激活新的订阅。 此外，还可以将使用 Microsoft 帐户访问的订阅与备用帐户关联，此备用帐户已与现有 Visual Studio IDE、Azure DevOps 或 Azure 资源关联。
 
 ## <a name="support"></a>支持
-
 除了在“权益”页的“支持”类别中找到的各个权益，“支持”页还提供了对资源的访问权限，用以帮助你充分利用 Visual Studio 订阅。 访问[支持资源](https://aka.ms/vssubscriberhelp)以解决技术问题或与订阅销售、帐户和计费相关的问题。
 
 ## <a name="marketplace"></a>[市场](https://marketplace.visualstudio.com/)
-
 需要续订 Visual Studio 云订阅？  想要下载 Visual Studio 系列产品的最新扩展？  市场有助于用户查找增强 Azure DevOps、Azure DevOps Server 和 Visual Studio Code 的扩展、工具和服务。 甚至可以成为发布者，在市场上发布你自己的扩展。
 
 ## <a name="see-also"></a>请参阅
@@ -60,4 +62,5 @@ Visual Studio 订阅门户 [https://my.visualstudio.com](https://my.visualstudio
 - [Microsoft 365 文档](/microsoft-365/)
 
 ## <a name="next-steps"></a>后续步骤
-在 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 登录门户网站，查看你的权益。  还可以了解有关使用 [Microsoft 帐户](sign-in-msa.md) (MSA)、[工作或学校帐户](sign-in-work.md)，甚至是 [GitHub 帐户](sign-in-github.md)登录门户网站的详细信息。
+- 在 [https://my.visualstudio.com](https://my.visualstudio.com?wt.mc_id=o~msft~docs) 登录门户网站，查看你的权益。  还可以了解有关使用 [Microsoft 帐户](sign-in-msa.md) (MSA)、[工作或学校帐户](sign-in-work.md)，甚至是 [GitHub 帐户](sign-in-github.md)登录门户网站的详细信息。
+- [将备用 ID ](vs-alternate-identity.md) 添加到订阅，允许使用 MSA 和工作/学校帐户访问。 

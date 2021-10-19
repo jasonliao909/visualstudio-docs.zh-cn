@@ -14,26 +14,30 @@ manager: jmartens
 ms.technology: msbuild
 ms.workload:
 - multiple
-ms.openlocfilehash: b9e2e3acd40bb5a5b7f45b636b3539b5c24f7f29
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1703f915203a7e91176117571442b2d1b171d76e
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122108481"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087379"
 ---
 # <a name="msbuild"></a>MSBuild
 
 Microsoft 生成引擎是一个用于生成应用程序的平台。 此引擎（也称为 MSBuild）为项目文件提供了一个 XML 架构，用于控制生成平台处理和生成软件的方式。 Visual Studio 会使用 MSBuild，但 MSBuild 不依赖于 Visual Studio。 通过在项目或解决方案文件中调用 msbuild.exe，可以在未安装 Visual Studio 的环境中安排和生成产品。
 
- Visual Studio 使用 MSBuild 来加载和生成托管项目。 Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含 MSBuild XML 代码，当你使用 IDE 来生成项目时，此代码就会运行。 Visual Studio 项目会导入所有必要的设置和生成过程来执行典型的开发工作，但你可以从 Visual Studio 内或通过使用 XML 编辑器对其进行扩展或修改。
+Visual Studio 使用 MSBuild 来加载和生成托管项目。 Visual Studio 中的项目文件（.csproj、.vbproj、vcxproj 等）包含 MSBuild XML 代码，当你使用 IDE 来生成项目时，此代码就会运行。 Visual Studio 项目会导入所有必要的设置和生成过程来执行典型的开发工作，但你可以从 Visual Studio 内或通过使用 XML 编辑器对其进行扩展或修改。
 
- 有关适用于 C++ 的 MSBuild 的信息，请参阅 [MSBuild (C++)](/cpp/build/msbuild-visual-cpp)。
+::: moniker range=">=vs-2022"
+从 Visual Studio 2022 开始，当你在 Visual Studio 中生成时，将使用 64 位版本的 MSBuild。
+::: moniker-end
 
- 下面的示例介绍了什么情况下可从命令行调用 MSBuild 而不是 Visual Studio IDE 来运行生成。
+有关适用于 C++ 的 MSBuild 的信息，请参阅 [MSBuild (C++)](/cpp/build/msbuild-visual-cpp)。
+
+下面的示例介绍了什么情况下可从命令行调用 MSBuild 而不是 Visual Studio IDE 来运行生成。
 
 - 未安装 Visual Studio。 （[下载 MSBuild 而不下载 Visual Studio](https://visualstudio.microsoft.com/downloads/?q=build+tools)。）
 
-- 你想要使用 64 位版本的 MSBuild。 通常情况下不必使用此版本的 MSBuild，但它可以让 MSBuild 访问更多内存。
+- 你需要使用 64 位版本的 MSBuild，你现在使用的是 Visual Studio 2019 或更早版本。 通常情况下不必使用此版本的 MSBuild，但它可以让 MSBuild 访问更多内存。
 
 - 你想要在多个进程中运行同一生成。 不过，对于 C++ 和 C# 中的项目，你可以使用 IDE 实现相同的结果。
 
