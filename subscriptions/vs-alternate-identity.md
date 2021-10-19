@@ -4,15 +4,15 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 86f2856c-8adf-4085-9962-f4136679e5ed
-ms.date: 02/19/2021
+ms.date: 10/14/2021
 ms.topic: conceptual
 description: 如何为 Visual Studio 订阅添加用于登录 Azure DevOps 和 Azure 的备用标识
-ms.openlocfilehash: 956d891712a6dcc6ad350b618008a735ca1bd4b2
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 0b23ec3e6b65beb801660cf47ee88bb0dec7a28d
+ms.sourcegitcommit: a8e6a8c6ca36dc76cdc44d1db934eae43470b5fa
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128431005"
+ms.lasthandoff: 10/15/2021
+ms.locfileid: "130030240"
 ---
 # <a name="identities-for-visual-studio-subscribers"></a>Visual Studio 订阅者标识
 激活 Visual Studio 订阅时，我们会将用户激活期间使用的标识（或登录名）与 Visual Studio 订阅关联起来。 这样，我们便能在 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)、Azure DevOps 和 Azure 中识别你。
@@ -52,7 +52,7 @@ ms.locfileid: "128431005"
 
 * 检查是否拥有包含 [Azure DevOps 权益](vs-azure-devops.md#eligibility)的有效 Visual Studio 订阅。
 
-* 确认使用的登录名/标识是 Visual Studio 订阅的主要或备用标识。
+* 确认使用的登录名/标识是 Visual Studio 订阅的主要或备用标识。  例如，许多人还会有一个与其他登录 ID 相关联的 Visual Studio Dev Essentials 成员身份。  尝试登录到具有该 ID 的其他订阅将失败，除非这些订阅与该电子邮件地址相关联。
 
 * 登录 Azure DevOps 前，至少先访问一次 [Visual Studio 订阅者门户](https://my.visualstudio.com?wt.mc_id=o~msft~docs)。
 

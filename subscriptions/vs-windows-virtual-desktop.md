@@ -4,19 +4,21 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabuschl
 ms.assetid: 872c5746-5357-4764-949b-aa525a0adf1a
-ms.date: 03/17/2021
+ms.date: 10/18/2021
 ms.topic: conceptual
 description: 了解如何通过 Visual Studio 订阅利用 Microsoft Windows 虚拟桌面
-ms.openlocfilehash: 926eb94e140fda630439083c39d733c3ff366886
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: f413efe09ad3466fe3341602a7637faba6d2aa33
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128375640"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152174"
 ---
 # <a name="access-windows-virtual-desktop-in-subscriptions"></a>在订阅中访问 Windows 虚拟桌面 
 Visual Studio 订阅者现在可以将其 Azure 开发/测试个人额度用于 Microsoft Windows 虚拟桌面服务。  
+
 Windows 虚拟桌面是在云中运行的综合性桌面和应用虚拟化服务。 这是唯一一种可提供简化管理、多会话 Windows 10、对 Microsoft 365 企业应用版的优化以及对远程桌面服务 (RDS) 环境的支持的虚拟桌面基础结构 (VDI)。 只需几分钟即可在 Azure 上部署和缩放 Windows 桌面和应用，并获得内置的安全性和符合性功能。
+
 下面是在 Azure 中运行 Windows 虚拟桌面时可以执行的操作：
 - 设置多会话 Windows 10 部署，使整个 Windows 10 操作系统获得可伸缩性
 - 虚拟化 Microsoft 365 应用企业版，并对其进行优化，使其可在多用户虚拟场景中运行

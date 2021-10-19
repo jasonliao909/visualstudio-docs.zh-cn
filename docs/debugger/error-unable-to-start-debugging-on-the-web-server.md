@@ -28,12 +28,12 @@ manager: jmartens
 ms.technology: vs-ide-debug
 ms.workload:
 - multiple
-ms.openlocfilehash: f3326bf39a43e0bf065e0a0b76288f915705d07c
-ms.sourcegitcommit: 68897da7d74c31ae1ebf5d47c7b5ddc9b108265b
+ms.openlocfilehash: 1684e09a249b67d03df471c4aacbf235aedc6615
+ms.sourcegitcommit: 3cfe24a74b611440b831d9591e067874c51a3bfb
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "122134033"
+ms.lasthandoff: 10/18/2021
+ms.locfileid: "130087366"
 ---
 # <a name="error-unable-to-start-debugging-on-the-web-server"></a>错误：无法在 Web 服务器上启动调试
 
@@ -99,7 +99,7 @@ ms.locfileid: "122134033"
 
 若要在本地进行调试，请在 Visual Studio 中打开项目属性，并确保将项目配置为连接到正确的 Web 服务器和 URL。 (打开 **属性 > Web > 服务器** 或 **属性 > 调试** 具体取决于您的项目类型。)
 
-进行本地调试时可能发生此错误，因为 Visual Studio 是一个 32 位应用程序中，需要使用 64 位版远程调试器来调试 64 位应用程序。 检查 IIS 上的应用程序池，确保“启用 32 位应用程序”设置为 `true`，重启 IIS 然后重试。
+使用 32 位版本 Visual Studio 进行本地调试时可能会出现此错误（32 位版本 Visual Studio 使用 64 位版本的远程调试器来调试 64 位应用程序）。 Visual Studio 2019 及更早版本是 32 位应用程序。 检查 IIS 上的应用程序池，确保“启用 32 位应用程序”设置为 `true`，重启 IIS 然后重试。
 
 此外，如果你使用HOSTS文件，请确保配置正确。 例如，HOSTS文件中必须包含相同的项目 URL 在项目属性中，**属性 > Web > 服务器** 或 **属性 > 调试**，具体取决于项目类型。
 

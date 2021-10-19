@@ -4,18 +4,17 @@ author: evanwindom
 ms.author: cabuschl
 manager: cabushcl
 ms.assetid: badd1d4a-90a6-46de-a037-945a91e6019b
-ms.date: 03/17/2021
+ms.date: 10/18/2021
 ms.topic: how-to
 description: 了解有关 Visual Studio 订阅中包含的 Visual Studio App Center 权益。
-ms.openlocfilehash: 51d817bd5b883222700ff77ce8f12ea63db6d7ba
-ms.sourcegitcommit: 8e74969ff61b609c89b3139434dff5a742c18ff4
+ms.openlocfilehash: 604ee2a5d6f6ea6e93de18dca402c6ff4a60679a
+ms.sourcegitcommit: 6c847aedf0f943e253a4c2f0e4b516b953168bc7
 ms.translationtype: HT
 ms.contentlocale: zh-CN
-ms.lasthandoff: 09/24/2021
-ms.locfileid: "128430998"
+ms.lasthandoff: 10/19/2021
+ms.locfileid: "130152181"
 ---
 # <a name="visual-studio-app-center-in-visual-studio-subscriptions"></a>Visual Studio 订阅中的 Visual Studio App Center
-
 App Center 是针对应用的任务控制。
 
 - 自动生成应用，在实际设备上进行测试，然后将其分发给 beta 版本测试人员
